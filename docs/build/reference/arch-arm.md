@@ -11,7 +11,7 @@ ms.locfileid: "57424992"
 ---
 # <a name="arch-arm"></a>/arch(ARM)
 
-ARM에서 코드 생성 아키텍처를 지정합니다. 참고 항목 [(x86) /arch](../../build/reference/arch-x86.md) 하 고 [(x64) /arch](../../build/reference/arch-x64.md)합니다.
+ARM에서 코드 생성 아키텍처를 지정합니다. [(x86) /arch](../../build/reference/arch-x86.md)과 [(x64) /arch](../../build/reference/arch-x64.md)도 참조합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,7 +37,7 @@ ARM VFPv4 명령을 사용하도록 설정합니다. 이 옵션을 지정하지 
 
 1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
-1. 선택 된 **C/c + +** 폴더입니다.
+1. 선택 된 **C/C++** 폴더입니다.
 
 1. 선택 된 **명령줄** 속성 페이지.
 
