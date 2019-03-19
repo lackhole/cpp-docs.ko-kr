@@ -123,7 +123,7 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
 
    디렉터리 경로를 찾으려면 속성 값 드롭다운 목록 상자를 열고 **편집**을 선택합니다. 에 **Additional Include Directories** 대화 상자의 텍스트 상자에서 빈 줄을 선택 하 고 선택한 다음 줄임표 단추 (**...** ) 줄의 끝입니다. **디렉터리 선택** 대화 상자에서 **MathFuncsLib** 디렉터리를 선택하고 **폴더 선택** 단추를 선택하여 선택 내용을 저장한 후 대화 상자를 닫습니다. **추가 포함 디렉터리** 대화 상자에서 **확인** 단추를 선택한 후 **속성 페이지** 대화 상자에서 **확인** 단추를 선택하여 프로젝트에 변경 내용을 저장합니다.
 
-1. 이제 사용할 수 있습니다 합니다 `MyMathFuncs` 클래스를 포함 하 여이 앱에는 `#include "MathFuncsLib.h"` 코드에서 헤더입니다. 내용을 바꿉니다 `MyExecRefsLib.cpp` 이 코드를 사용 하 여:
+1. 이제 사용할 수 있습니다 합니다 `MyMathFuncs` 클래스를 포함 하여 이 앱에는 `#include "MathFuncsLib.h"` 코드에서 헤더입니다. 내용을 바꿉니다 `MyExecRefsLib.cpp` 이 코드를 사용 하 여:
 
    [!code-cpp[NVC_Walkthrough_Create_Static_Lib#120](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_3.cpp)]
 
