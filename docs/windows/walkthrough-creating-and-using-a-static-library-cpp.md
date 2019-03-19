@@ -127,7 +127,7 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
 
    [!code-cpp[NVC_Walkthrough_Create_Static_Lib#120](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_3.cpp)]
 
-1. 선택 하 여 실행 파일을 빌드합니다 **빌드합니다** > **솔루션 빌드** 메뉴 모음에서.
+1. 선택 하 여 실행 파일을 빌드합니다 **빌드** > **솔루션 빌드** 메뉴 모음에서.
 
 ##  <a name="RunApp"></a> 앱 실행
 
