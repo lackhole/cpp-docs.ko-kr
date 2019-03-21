@@ -10,12 +10,12 @@ helpviewer_keywords:
 - C++ Support Library, marshaling
 - marshaling, about marshaling
 ms.assetid: 997dd4bc-5f98-408f-b890-f35de9ce3bb8
-ms.openlocfilehash: 9b4bdcb8a6e691d8f9f0f0f0c2e7d852b4885ea6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9e3b8f561ce6609eb2afedb527a16c4803f69c53
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486283"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746827"
 ---
 # <a name="overview-of-marshaling-in-c"></a>C++ 마샬링 개요
 
@@ -38,28 +38,28 @@ C:\\Program Files (x86)\\Microsoft Visual Studio\\Preview\\Enterprise\\VC\\Tools
 
 |형식에서|입력|마샬링 메서드|파일 포함|
 |---------------|-------------|--------------------|------------------|
-|System:: string ^|const char \*|marshal_context|marshal.h|
-|const char \*|System:: string ^|marshal_as|marshal.h|
-|Char \*|System:: string ^|marshal_as|marshal.h|
-|System:: string ^|const wchar_t\*|marshal_context|marshal.h|
-|const wchar_t \*|System:: string ^|marshal_as|marshal.h|
-|wchar_t \*|System:: string ^|marshal_as|marshal.h|
+|System::String^|const char \*|marshal_context|marshal.h|
+|const char \*|System::String^|marshal_as|marshal.h|
+|Char \*|System::String^|marshal_as|marshal.h|
+|System::String^|const wchar_t\*|marshal_context|marshal.h|
+|const wchar_t \*|System::String^|marshal_as|marshal.h|
+|wchar_t \*|System::String^|marshal_as|marshal.h|
 |System::IntPtr|HANDLE|marshal_as|marshal_windows.h|
 |HANDLE|System::IntPtr|marshal_as|marshal_windows.h|
-|System:: string ^|BSTR|marshal_context|marshal_windows.h|
-|BSTR|System:: string ^|marshal_as|marshal.h|
-|System:: string ^|bstr_t|marshal_as|marshal_windows.h|
-|bstr_t|System:: string ^|marshal_as|marshal_windows.h|
-|System:: string ^|std:: string|marshal_as|marshal_cppstd.h|
-|std:: string|System:: string ^|marshal_as|marshal_cppstd.h|
-|System:: string ^|std:: wstring|marshal_as|marshal_cppstd.h|
-|std:: wstring|System:: string ^|marshal_as|marshal_cppstd.h|
-|System:: string ^|CStringT\<char >|marshal_as|marshal_atl.h|
-|CStringT\<char >|System:: string ^|marshal_as|marshal_atl.h|
-|System:: string ^|CStringT < wchar_t >|marshal_as|marshal_atl.h|
-|CStringT < wchar_t >|System:: string ^|marshal_as|marshal_atl.h|
-|System:: string ^|CComBSTR|marshal_as|marshal_atl.h|
-|CComBSTR|System:: string ^|marshal_as|marshal_atl.h|
+|System::String^|BSTR|marshal_context|marshal_windows.h|
+|BSTR|System::String^|marshal_as|marshal.h|
+|System::String^|bstr_t|marshal_as|marshal_windows.h|
+|bstr_t|System::String^|marshal_as|marshal_windows.h|
+|System::String^|std::string|marshal_as|marshal_cppstd.h|
+|std::string|System::String^|marshal_as|marshal_cppstd.h|
+|System::String^|std::wstring|marshal_as|marshal_cppstd.h|
+|std::wstring|System::String^|marshal_as|marshal_cppstd.h|
+|System::String^|CStringT\<char>|marshal_as|marshal_atl.h|
+|CStringT\<char>|System::String^|marshal_as|marshal_atl.h|
+|System::String^|CStringT<wchar_t>|marshal_as|marshal_atl.h|
+|CStringT<wchar_t>|System::String^|marshal_as|marshal_atl.h|
+|System::String^|CComBSTR|marshal_as|marshal_atl.h|
+|CComBSTR|System::String^|marshal_as|marshal_atl.h|
 
 마샬링 형식을 네이티브로 관리 되는 데이터를 마샬링하는 네이티브 형식으로 변환 하는 정리 자동에 대 한 소멸자가 없는 경우에 컨텍스트에 필요 합니다. 마샬링 컨텍스트는 해당 소멸자에서 할당 된 기본 데이터 형식을 제거합니다. 따라서 컨텍스트에서 삭제 될 때까지 컨텍스트를 필요로 하는 변환은 잘못 됩니다. 마샬링된 값을 저장 하려면 고유한 변수 값을 복사 해야 합니다.
 
@@ -70,11 +70,11 @@ C:\\Program Files (x86)\\Microsoft Visual Studio\\Preview\\Enterprise\\VC\\Tools
 
 `#include "msclr\marshal_cppstd.h"`
 
-마샬링 라이브러리는 확장 가능 하므로 고유한 마샬링 형식을 추가할 수 있습니다. 마샬링 라이브러리를 확장 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 마샬링 라이브러리 확장](../dotnet/how-to-extend-the-marshaling-library.md)합니다.
+마샬링 라이브러리는 확장 가능 하므로 고유한 마샬링 형식을 추가할 수 있습니다. 마샬링 라이브러리를 확장 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 마샬링 라이브러리 확장명](../dotnet/how-to-extend-the-marshaling-library.md)합니다.
 
 이전 버전에서 사용 하 여 데이터를 마샬링할 수 없습니다 [플랫폼 호출](/dotnet/framework/interop/consuming-unmanaged-dll-functions)합니다. 에 대 한 자세한 내용은 `PInvoke`를 참조 하세요 [관리 코드에서 네이티브 함수 호출](../dotnet/calling-native-functions-from-managed-code.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 지원 라이브러리](../dotnet/cpp-support-library.md)<br/>
 [방법: 마샬링 라이브러리 확장](../dotnet/how-to-extend-the-marshaling-library.md)

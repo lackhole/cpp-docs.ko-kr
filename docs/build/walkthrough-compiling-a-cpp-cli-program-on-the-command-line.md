@@ -1,22 +1,19 @@
 ---
-title: '연습: 명령줄에서 C++/CLI 프로그램 컴파일'
+title: '연습: 컴파일 C + + /cli 프로그램 명령줄에서'
 ms.date: 09/24/2018
 ms.assetid: cef41c88-faf9-439d-8423-25aa3f5674dd
-ms.openlocfilehash: e8841600fd61aacfe5b942ac4a4305619dff7e90
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c90d2c915db7264dc1b4e4807803e063c2a24fc7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451027"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811929"
 ---
-# <a name="walkthrough-compiling-a-ccli-program-on-the-command-line"></a>연습: 명령줄에서 C++/CLI 프로그램 컴파일
+# <a name="walkthrough-compiling-a-ccli-program-on-the-command-line"></a>연습: 컴파일 C + + /cli 프로그램 명령줄에서
 
 CLR(공용 언어 런타임)을 대상으로 하는 Visual C++ 프로그램을 만들어 .NET Framework를 사용하여 명령줄에서 빌드할 수 있습니다. Visual C++은 .NET 프로그래밍 모델을 대상으로 하는 추가 형식 및 연산자가 있는 C++/CLI 프로그래밍 언어를 지원합니다. C +에 대 한 일반 정보에 대 한 + CLI 언어 참조 [.NET 프로그래밍을 사용 하 여 C++ /cli (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
 이 연습에서는 텍스트 편집기를 사용하여 기본적인 C++/CLI 프로그램을 만든 다음 명령줄에서 컴파일합니다. 여기에 나와 있는 내용을 입력하는 대신 C++/CLI 프로그램을 직접 사용할 수도 있고 다른 도움말 문서의 C++/CLI 코드 샘플을 사용할 수도 있습니다. 이 방법은 구축 하 고 UI 요소가 없는 소형 모듈을 테스트 하는 데 유용 합니다.)
-
-> [!NOTE]
-> 또한 Visual Studio IDE를 사용하여 C++/CLI 프로그램을 컴파일할 수 있습니다. 자세한 내용은 [연습: Visual Studio에서 CLR을 대상으로 하는 C++ 프로그램 컴파일](../ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md)합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -26,11 +23,11 @@ C++ 언어의 기본적인 사항을 알고 있습니다.
 
 다음 단계는 .NET Framework 클래스를 사용하는 C++/CLI 콘솔 응용 프로그램을 컴파일하는 방법을 보여줍니다.
 
-컴파일하려면 C++ /cli를 사용 해야 CLI를 [/clr](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션입니다. Visual C++ 컴파일러는 MSIL 코드를 포함하거나 MSIL 코드와 네이티브 코드가 혼합되어 있는 .exe 파일을 생성하여 필수 .NET Framework 라이브러리에 연결합니다.
+컴파일하려면 C++ /cli를 사용 해야 CLI를 [/clr](reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션입니다. MSVC 컴파일러는 MSIL 코드를 포함 하는.exe 파일을 생성-MSIL과 네이티브 코드를 혼합 하거나-필요한.NET Framework 라이브러리에 연결 합니다.
 
 ### <a name="to-compile-a-ccli-application-on-the-command-line"></a>명령줄에서 C++/CLI 응용 프로그램을 컴파일하려면
 
-1. 엽니다는 **개발자 명령 프롬프트** 창입니다. 특정 지침은 [개발자 명령 프롬프트 창을 열려면](../build/building-on-the-command-line.md#developer_command_prompt)합니다.
+1. 엽니다는 **개발자 명령 프롬프트** 창입니다. 특정 지침은 [개발자 명령 프롬프트 창을 열려면](building-on-the-command-line.md#developer_command_prompt)합니다.
 
    컴퓨터 운영 체제 및 구성에 따라 코드를 정상적으로 컴파일하려면 관리자 자격 증명이 필요할 수 있습니다. 명령 프롬프트 창을 관리자 권한으로을 실행 하려면 명령 프롬프트에 대 한 바로 가기 메뉴를 열고 선택한 단추로 **자세한** > **관리자 권한으로 실행**합니다.
 
@@ -64,5 +61,5 @@ C++ 언어의 기본적인 사항을 알고 있습니다.
 ## <a name="see-also"></a>참고자료
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
-[C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)<br/>
-[컴파일러 옵션](../build/reference/compiler-options.md)
+[프로젝트 및 빌드 시스템](projects-and-build-systems-cpp.md)<br/>
+[MSVC 컴파일러 옵션](reference/compiler-options.md)

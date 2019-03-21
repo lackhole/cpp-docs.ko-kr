@@ -8,12 +8,12 @@ f1_keywords:
 - VC.Project.VCXDCMakeTool.UseUnicodeResponseFiles
 helpviewer_keywords:
 - Unicode, Visual C++
-ms.openlocfilehash: cb21165e51960c0ca2f728381413c1a7260c9f83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 71458ab345670c0a5715576a7da80c4e6ff2955b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494980"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807513"
 ---
 # <a name="unicode-support-in-the-compiler-and-linker"></a>컴파일러 및 링커에서의 유니코드 지원
 
@@ -45,8 +45,8 @@ ms.locfileid: "50494980"
 
 ## <a name="asm-and-cod-dumps"></a>.asm 및.cod 덤프
 
-.asm 및.cod 덤프는 MASM 사용 하 여 호환성을 위해 기본적으로 ANSI입니다. 사용 하 여 [하려면 /FAu](../../build/reference/fa-fa-listing-file.md) u t F-8을 출력 합니다. 지정 하는 경우 사용자에 게 유의 **/FAs**, 혼합된 소스가 직접 인쇄를 하 고 예를 들어 소스 코드가 u t F-8 이며 지정 하지 않은 경우 잘못 된 표시 될 수 있습니다 **/FAsu**합니다.
+.asm 및.cod 덤프는 MASM 사용 하 여 호환성을 위해 기본적으로 ANSI입니다. 사용 하 여 [하려면 /FAu](fa-fa-listing-file.md) u t F-8을 출력 합니다. 지정 하는 경우 사용자에 게 유의 **/FAs**, 혼합된 소스가 직접 인쇄를 하 고 예를 들어 소스 코드가 u t F-8 이며 지정 하지 않은 경우 잘못 된 표시 될 수 있습니다 **/FAsu**합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[명령줄에서 C/C++ 코드 빌드](../../build/building-on-the-command-line.md)
+[명령줄에서 MSVC 도구 집합을 사용 하 여](../building-on-the-command-line.md)

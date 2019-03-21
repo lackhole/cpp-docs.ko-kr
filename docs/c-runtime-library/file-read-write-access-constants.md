@@ -10,12 +10,12 @@ helpviewer_keywords:
 - constants [C++], file attributes
 - file read/write access constants
 ms.assetid: 56cd1d22-39a5-4fcf-bea2-7046d249e8ee
-ms.openlocfilehash: 7bf16271c0d58e3d87e4c24795ec0bd1ee1ccb89
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0dfbc925c5252724cbb1caad58470849915242a9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666181"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746073"
 ---
 # <a name="file-readwrite-access-constants"></a>파일 읽기/쓰기 액세스 상수
 
@@ -25,7 +25,7 @@ ms.locfileid: "50666181"
 #include <stdio.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이러한 상수는 파일에 대해 요청된 액세스 형식("a", "r" 또는 "w")을 지정합니다. [변환 모드](../c-runtime-library/file-translation-constants.md)("b" 또는 "t") 및 [디스크에 커밋 모드](../c-runtime-library/commit-to-disk-constants.md)("c" 또는 "n") 둘 다 액세스 형식으로 지정할 수 있습니다.
 

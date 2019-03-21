@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - task class
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
-ms.openlocfilehash: c1dc146f03b4ed5c0d9d82736959df3097f41199
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 99676ac0fff9584cd8453562f8918f6cadd66666
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289301"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278540"
 ---
 # <a name="task-class-concurrency-runtime"></a>작업 클래스(동시성 런타임)
 
@@ -112,7 +112,7 @@ void get() const;
 작업이 취소 되 면 호출 `get` 시킵니다를 [task_canceled](task-canceled-class.md) 예외입니다. 작업에서 다른 예외가 발생하거나 예외가 선행 작업에서 전파된 경우 `get`에 대한 호출은 해당 예외를 throw합니다.
 
 > [!IMPORTANT]
->  유니버설 Windows 플랫폼 (UWP) 앱에서 호출 하지 마세요 [concurrency::task::wait](#wait) 하거나 `get` ( `wait` 호출 `get`) STA에서 실행 되는 코드에서 그렇지 않으면 런타임에서 throw [concurrency:: invalid_operation](invalid-operation-class.md) 있으므로 이러한 메서드는 현재 스레드를 차단 하 고 응용 프로그램에서 응답 하지 않게 될 수 있습니다. 그러나 호출할 수는 `get` 결과 즉시 사용할 수 있으므로 작업 기반 연속에서 선행 작업의 결과 수신 하는 방법입니다.
+>  유니버설 Windows 플랫폼 (UWP) 앱에서 호출 하지 마세요 [concurrency::task::wait](#wait) 하거나 `get` ( `wait` 호출 `get`) 사용자 인터페이스 스레드에서 실행 되는 코드에서. 그렇지 않으면 런타임에서 throw [concurrency:: invalid_operation](invalid-operation-class.md) 있으므로 이러한 메서드는 현재 스레드를 차단 하 고 응용 프로그램에서 응답 하지 않게 될 수 있습니다. 그러나 호출할 수는 `get` 결과 즉시 사용할 수 있으므로 작업 기반 연속에서 선행 작업의 결과 수신 하는 방법입니다.
 
 ##  <a name="is_apartment_aware"></a> is_apartment_aware
 
@@ -350,7 +350,7 @@ task_status wait() const;
 ### <a name="remarks"></a>설명
 
 > [!IMPORTANT]
->  유니버설 Windows 플랫폼 (UWP) 앱에서 호출 하지 마십시오 `wait` STA에서 실행 되는 코드에서 호출하는 경우 이 메서드가 현재 스레드를 차단하고 앱이 응답하지 않게 만들 수 있기 때문에 런타임에서 [concurrency::invalid_operation](invalid-operation-class.md) 을 throw합니다. 그러나 [concurrency::task::get](#get) 메서드를 호출하여 작업 기반 연속에서 선행 작업의 결과를 받을 수 있습니다.
+>  유니버설 Windows 플랫폼 (UWP) 앱에서 호출 하지 마십시오 `wait` 사용자 인터페이스 스레드에서 실행 되는 코드에 있습니다. 호출하는 경우 이 메서드가 현재 스레드를 차단하고 앱이 응답하지 않게 만들 수 있기 때문에 런타임에서 [concurrency::invalid_operation](invalid-operation-class.md) 을 throw합니다. 그러나 [concurrency::task::get](#get) 메서드를 호출하여 작업 기반 연속에서 선행 작업의 결과를 받을 수 있습니다.
 
 ## <a name="see-also"></a>참고자료
 

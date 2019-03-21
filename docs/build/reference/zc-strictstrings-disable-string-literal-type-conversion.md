@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: b7eb3f3b-82c1-48a2-8e63-66bad7397b46
-ms.openlocfilehash: d0fe7a7aa956ebc7662754b039389983d75ff590
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 954088955a3f1530bb298aadbc35c7dd74150b7a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668717"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822313"
 ---
 # <a name="zcstrictstrings-disable-string-literal-type-conversion"></a>/Zc:strictStrings(문자열 리터럴 형식 변환 사용 안 함)
 
@@ -55,7 +55,9 @@ int main() {
 }
 ```
 
-`auto`를 사용하여 문자열 포인터를 선언하면 컴파일러에서는 올바른 `const` 포인터 형식 선언을 만듭니다. `const` 포인터의 내용을 수정하려는 시도는 컴파일러에서 오류로 보고합니다.
+
+  `auto`를 사용하여 문자열 포인터를 선언하면 컴파일러에서는 올바른 `const` 포인터 형식 선언을 만듭니다. 
+  `const` 포인터의 내용을 수정하려는 시도는 컴파일러에서 오류로 보고합니다.
 
 > [!NOTE]
 > Visual Studio 2013의 c + + 표준 라이브러리를 지원 하지 않습니다 합니다 **/zc: strictstrings** 디버그에서 컴파일러 옵션을 빌드합니다. 여러 보이면 [C2665](../../error-messages/compiler-errors-2/compiler-error-c2665.md) 빌드에서 오류 출력을이 원인일 수 있습니다.
@@ -64,7 +66,7 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
 
@@ -72,4 +74,4 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 ## <a name="see-also"></a>참고자료
 
-[/Zc(규칙)](../../build/reference/zc-conformance.md)<br/>
+[/Zc(규칙)](zc-conformance.md)<br/>

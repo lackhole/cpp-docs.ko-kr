@@ -14,12 +14,12 @@ helpviewer_keywords:
 - -GS compiler option [C++]
 - buffers [C++], avoiding overruns
 ms.assetid: 8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e
-ms.openlocfilehash: 6681ff09b846011af1b500f88a535c208d0bc1c1
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 10afa874092eb563903ba5f49c6add136afc869c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57417600"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820236"
 ---
 # <a name="gs-buffer-security-check"></a>/GS(버퍼 보안 검사)
 
@@ -96,7 +96,7 @@ X86에서 함수에 예외 처리기를 사용 하는 경우 컴파일러는 예
 
 - GS 버퍼를 포함 하지 않는 함수입니다.
 
-- 최적화 ([/O 옵션](../../build/reference/o-options-optimize-code.md))를 사용할 수 없습니다.
+- 최적화 ([/O 옵션](o-options-optimize-code.md))를 사용할 수 없습니다.
 
 - 가변 인수 목록 (...)는 함수입니다.
 
@@ -116,7 +116,7 @@ X86에서 함수에 예외 처리기를 사용 하는 경우 컴파일러는 예
 
 1. **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성**합니다.
 
-   자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+   자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 에 **속성 페이지** 대화 상자에서 클릭 합니다 **C/c + +** 폴더입니다.
 
@@ -157,5 +157,5 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

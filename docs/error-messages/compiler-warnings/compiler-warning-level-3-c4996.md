@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4996
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
-ms.openlocfilehash: cbb93bdba5853ed47bc3326d47bbb3c65ad7ce41
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef1bc46b64ccbe1374fd795a9b5d56e091b47f48
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472178"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57816427"
 ---
 # <a name="compiler-warning-level-3-c4996"></a>컴파일러 경고 (수준 3) C4996
 
@@ -45,7 +45,7 @@ ms.locfileid: "50472178"
 
 Visual Studio IDE에 전체 프로젝트에 대 한 경고를 끄려면:
 
-- 엽니다는 **속성 페이지** 프로젝트 대화 상자. 속성 페이지 대화 상자를 사용 하는 방법에 대 한 자세한 내용은 [속성 페이지](../../ide/property-pages-visual-cpp.md)합니다.
+- 엽니다는 **속성 페이지** 프로젝트 대화 상자. 속성 페이지 대화 상자를 사용 하는 방법에 대 한 자세한 내용은 [속성 페이지](../../build/reference/property-pages-visual-cpp.md)합니다.
 - 선택 된 **구성 속성**, **C/c + +** 를 **고급** 페이지입니다.
 - 편집 된 **특정 경고 사용 안 함** 추가할 속성 `4996`합니다. 선택할 **확인** 변경 내용을 적용 하려면.
 
@@ -53,7 +53,7 @@ Visual Studio IDE에 전체 프로젝트에 대 한 경고를 끄려면:
 
 Visual Studio에서 전처리기 매크로 정의 합니다.
 
-- 엽니다는 **속성 페이지** 프로젝트 대화 상자. 속성 페이지 대화 상자를 사용 하는 방법에 대 한 자세한 내용은 [속성 페이지](../../ide/property-pages-visual-cpp.md)합니다.
+- 엽니다는 **속성 페이지** 프로젝트 대화 상자. 속성 페이지 대화 상자를 사용 하는 방법에 대 한 자세한 내용은 [속성 페이지](../../build/reference/property-pages-visual-cpp.md)합니다.
 - 확장 **구성 속성 > C/c + + > 전처리기**합니다.
 - 에 **전처리기 정의** 속성 매크로 이름을 추가 합니다. **확인** 을 선택하여 저장한 다음 프로젝트를 다시 빌드합니다.
 
@@ -81,7 +81,7 @@ Microsoft의 C99 및 c++03 규칙 전역 함수 구현이 정의 된 이름에 �
 
 이 문제를 해결 하려면 함수 또는 변수를 사용 하 여 권장 *safe_version* 대신 합니다. 버퍼 덮어쓰기 불가능 또는 코드에서 발생 하는 overread 이식성 이유로 코드를 변경할 수 없습니다를 확인 한 경우 경고를 해제할 수 있습니다.
 
-CRT에서 이러한 함수에 대 한 사용 중단 경고를 해제 하려면 정의  **\_CRT\_SECURE\_아니오\_경고**합니다. 사용 되지 않는 전역 변수에 대 한 경고를 해제 하려면 정의  **\_CRT\_SECURE\_아니오\_경고\_GLOBALS**합니다. 이러한 사용 되지 않는 함수 및 전역 변수에 대 한 자세한 내용은 참조 하세요. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md) 하 고 [안전한 라이브러리: c + + 표준 라이브러리](../../standard-library/safe-libraries-cpp-standard-library.md)합니다.
+CRT에서 이러한 함수에 대 한 사용 중단 경고를 해제 하려면 정의  **\_CRT\_SECURE\_아니오\_경고**합니다. 사용 되지 않는 전역 변수에 대 한 경고를 해제 하려면 정의  **\_CRT\_SECURE\_아니오\_경고\_GLOBALS**합니다. 이러한 사용 되지 않는 함수 및 전역 변수에 대 한 자세한 내용은 참조 하세요. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md) 고 [안전한 라이브러리: C + + 표준 라이브러리](../../standard-library/safe-libraries-cpp-standard-library.md)합니다.
 
 ### <a name="unsafe-standard-library-functions"></a>안전 하지 않은 표준 라이브러리 함수
 
@@ -279,7 +279,7 @@ int main() {
 }
 ```
 
-## <a name="example-user-defined-deprecated-function"></a>예: 사용 되지 않는 사용자 정의 함수
+## <a name="example-user-defined-deprecated-function"></a>예제: 사용 되지 않는 사용자 정의 함수
 
 특정 함수의 사용을 더 이상 권장 하는 경우 호출자에 게 경고 하기 위해 사용자 고유의 코드에서 사용 되지 않는 특성을 사용할 수 없습니다. 이 예제에서는 C4996 함수 사용 되는 줄과 사용 되지 않는 함수를 선언 하는 줄에 대해 생성 됩니다.
 

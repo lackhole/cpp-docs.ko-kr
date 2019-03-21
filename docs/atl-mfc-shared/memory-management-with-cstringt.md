@@ -14,12 +14,12 @@ helpviewer_keywords:
 - strings [C++], memory management
 - CStringT class, memory management
 ms.assetid: 88b8342d-19b5-48c4-9cf6-e4c44cece21e
-ms.openlocfilehash: f45aac11f0c42aecf8c72cf6f7d1630d50b780f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 189d15df17ac28528ebbcc41879871e3426f48fb
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598021"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748634"
 ---
 # <a name="memory-management-with-cstringt"></a>CStringT 사용한 메모리 관리
 
@@ -31,9 +31,8 @@ ms.locfileid: "50598021"
 
 - [사용자 지정 문자열 관리자 구현(고급 방법)](../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md)
 
-- [CFixedStringT: 예제 사용자 지정 문자열 관리자의](../atl-mfc-shared/cfixedstringt-example-of-a-custom-string-manager.md)
+- [CFixedStringT: 사용자 지정 문자열 관리자의 예](../atl-mfc-shared/cfixedstringt-example-of-a-custom-string-manager.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CustomString 샘플](../visual-cpp-samples.md)
-

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1301
 ms.assetid: 760da428-7182-4b25-b20a-de90d4b9a9cd
-ms.openlocfilehash: b112c4498913c18d82ce8fbc4f6c6d211b906263
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6a82d7756f1460c56d87a3d7b1360c140de19827
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431241"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812098"
 ---
 # <a name="linker-tools-error-lnk1301"></a>링커 도구 오류 LNK1301
 
@@ -29,7 +29,7 @@ LTCG clr 모듈이 /LTCG:parameter를 사용 하 여 호환 되지 않습니다.
 
 - [/clr(공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md)
 
-- [프로필 기반 최적화](../../build/reference/profile-guided-optimizations.md)
+- [프로필 기반 최적화](../../build/profile-guided-optimizations.md)
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면
 

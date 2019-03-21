@@ -1,17 +1,17 @@
----
+﻿---
 title: Windows XP 용 프로그램 구성
 ms.date: 02/02/2018
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
-ms.openlocfilehash: 73fc66c358f2bfa390177557da2f114f225cec1a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 989a4e2c7e91c05498902bf1c5cb9d838ee47c3b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582743"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814295"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Windows XP 용 프로그램 구성
 
-Visual Studio에서는 여러 플랫폼 도구 집합을 지원 하므로 운영 체제 및 런타임 라이브러리 기본 도구 집합에서 지원 되지 않는 대상 수 있습니다. 예를 들어, 플랫폼 도구 집합을 전환 하 여 사용할 수 있습니다 c++11, c++14 및 Visual Studio에서 Visual C++ 컴파일러에서 지원 되는 C++ 17 개의 언어 향상 된 Windows XP 및 Windows Server 2003을 대상으로 하는 앱을 만듭니다. 또한 이전 플랫폼 도구 집합을 사용 하 여 이진 호환 레거시 코드를 유지 하 고 여전히 Visual Studio IDE의 최신 기능을 활용 하기 위해 수 있습니다.
+Visual Studio에서는 여러 플랫폼 도구 집합을 지원 하므로 운영 체제 및 런타임 라이브러리 기본 도구 집합에서 지원 되지 않는 대상 수 있습니다. 예를 들어, 플랫폼 도구 집합을 전환 하 여 사용할 수 있습니다 c++11, c++14 및 Visual Studio의 MSVC 컴파일러에서 지원 되는 C + + 17 개의 언어 향상 된 Windows XP 및 Windows Server 2003을 대상으로 하는 앱을 만듭니다. 또한 이전 플랫폼 도구 집합을 사용 하 여 이진 호환 레거시 코드를 유지 하 고 여전히 Visual Studio IDE의 최신 기능을 활용 하기 위해 수 있습니다.
 
 ## <a name="install-the-windows-xp-platform-toolset"></a>Windows XP 플랫폼 도구 집합 설치
 

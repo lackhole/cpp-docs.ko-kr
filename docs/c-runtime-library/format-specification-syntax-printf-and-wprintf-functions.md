@@ -9,12 +9,12 @@ helpviewer_keywords:
 - width fields, printf function
 - precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
-ms.openlocfilehash: cb7d99077a082323a6662d29c0386cd1d416297c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bccbe435d926a75990a4ca35b98c9b352dd40e8b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665337"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740310"
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>형식 사양 구문: printf 및 wprintf 함수
 
@@ -74,7 +74,7 @@ ms.locfileid: "50665337"
 |**p**|포인터 유형|인수를 16진수로 된 주소로 표시합니다.|
 |**s**|문자열|`printf` 함수와 함께 사용될 때 단일 바이트 또는 멀티바이트 문자열을 지정하고, `wprintf` 함수와 함께 사용될 때는 와이드 문자열을 지정합니다. 첫 번째 null 문자 직전까지 또는 *precision* 값에 도달할 때까지 문자가 표시됩니다.|
 |**S**|문자열|`printf` 함수와 함께 사용될 때 와이드 문자열을 지정하고, `wprintf` 함수와 함께 사용될 때는 단일 바이트 또는 멀티바이트 문자열을 지정합니다. 첫 번째 null 문자 직전까지 또는 *precision* 값에 도달할 때까지 문자가 표시됩니다.|
-|**Z**|`ANSI_STRING` 또는 `UNICODE_STRING` 구조체|[ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-_string) 또는 [UNICODE_STRING](https://msdn.microsoft.com/library/windows/hardware/ff564879.aspx) 구조체의 주소가 인수로 전달될 때 구조체의 `Buffer` 필드에서 가리키는 버퍼에 포함되는 문자열을 표시합니다. **w**의 *size* 한정자 접두사를 사용하여 `UNICODE_STRING` 인수를 지정합니다(예: `%wZ`). 구조체의 `Length` 필드를 문자열의 길이(바이트 단위)로 설정해야 합니다. 구조체의 `MaximumLength` 필드를 버퍼의 길이(바이트 단위)로 설정해야 합니다.<br /><br /> 일반적으로 **Z** 형식 문자는 `dbgPrint` 및 `kdPrint` 등의 변환 사양을 사용하는 드라이버 디버깅 함수에서만 사용됩니다.|
+|**Z**|`ANSI_STRING` 또는 `UNICODE_STRING` 구조체|[ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-_string) 또는 [UNICODE_STRING](/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_unicode_string) 구조체의 주소가 인수로 전달될 때 구조체의 `Buffer` 필드에서 가리키는 버퍼에 포함되는 문자열을 표시합니다. **w**의 *size* 한정자 접두사를 사용하여 `UNICODE_STRING` 인수를 지정합니다(예: `%wZ`). 구조체의 `Length` 필드를 문자열의 길이(바이트 단위)로 설정해야 합니다. 구조체의 `MaximumLength` 필드를 버퍼의 길이(바이트 단위)로 설정해야 합니다.<br /><br /> 일반적으로 **Z** 형식 문자는 `dbgPrint` 및 `kdPrint` 등의 변환 사양을 사용하는 드라이버 디버깅 함수에서만 사용됩니다.|
 
 Visual Studio 2015부터 부동 소수점 변환 지정자(**a**, **A**, **e**, **E**, **f**, **F**, **g**, **G**)에 해당하는 인수가 제한 없음, 무한 또는 NAN인 경우 형식이 지정된 출력은 C99 표준을 따릅니다. 이 표에는 형식이 지정된 출력이 나와 있습니다.
 
@@ -115,7 +115,7 @@ Visual Studio 2015 이전에는 CRT에서 제한 없음, 무한 및 NAN 값의 �
 
 ### <a name="flag-characters"></a>플래그 문자
 
-|플래그|의미|기본|
+|플래그|의미|기본값|
 |----------|-------------|-------------|
 |**-**|지정한 필드 너비 내에서 결과를 왼쪽에 맞춰 표시합니다.|오른쪽에 맞춰 표시합니다.|
 |**+**|부호 있는 형식에는 기호(+ 또는 –)를 사용하여 출력 값에 접두사를 추가합니다.|부호 있는 음수 값(-)에 대해서만 기호가 표시됩니다.|
@@ -157,7 +157,7 @@ Visual Studio 2015 이전에는 CRT에서 제한 없음, 무한 및 NAN 값의 �
 
 ### <a name="how-precision-values-affect-type"></a>전체 자릿수 값이 형식에 영향을 주는 방식
 
-|형식|의미|기본|
+|형식|의미|기본값|
 |----------|-------------|-------------|
 |**a**, **A**|정밀도는 소수점 뒤의 자릿수를 지정합니다.|기본 전체 자릿수는 13입니다. 전체 자릿수가 0인 경우 **#** 플래그를 사용하지 않으면 소수점이 인쇄되지 않습니다.|
 |**c**, **C**|전체 자릿수가 적용되지 않습니다.|문자가 출력됩니다.|

@@ -14,16 +14,16 @@ helpviewer_keywords:
 - frame window classes [MFC], created by application wizards
 - CMainFrame class [MFC]
 ms.assetid: 9947df73-4470-49a0-ac61-7b6ee401a74e
-ms.openlocfilehash: a0610ae901b817a1c8f7707d9ba87c15d634e134
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 46da8fc0cb98406bdf97285d7c6f824afd61c4bb
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298063"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808354"
 ---
 # <a name="frame-window-classes-created-by-the-application-wizard"></a>응용 프로그램 마법사로 만든 프레임 창 클래스
 
-사용 하는 경우는 [응용 프로그램 마법사](../ide/creating-desktop-projects-by-using-application-wizards.md) 응용 프로그램, 문서 및 뷰 클래스 외에도 기본 응용 프로그램을 만드는 응용 프로그램 마법사는 응용 프로그램의 주 프레임 창에 대 한 파생된 프레임 창 클래스를 만듭니다. 클래스 라고 `CMainFrame` 포함 된 파일과 기본적으로는 해당 이름이 지정 됩니다. H와 해당 합니다. CPP 합니다.
+프로젝트를 새 MFC를 만들 수는 경우는 **새 프로젝트** 대화 상자에서 응용 프로그램, 문서 및 뷰 클래스를 실행 하는 것 외에도 응용 프로그램 마법사는 응용 프로그램의 주 프레임 창에 대 한 파생된 프레임 창 클래스를 만듭니다. 클래스 라고 `CMainFrame` 포함 된 파일과 기본적으로는 해당 이름이 지정 됩니다. H와 해당 합니다. CPP 합니다.
 
 응용 프로그램이 SDI와 경우에 `CMainFrame` 클래스에서 파생 된 클래스 [CFrameWnd](../mfc/reference/cframewnd-class.md)합니다.
 
@@ -36,4 +36,5 @@ ms.locfileid: "57298063"
 ## <a name="see-also"></a>참고자료
 
 [프레임 창 클래스](../mfc/frame-window-classes.md)<br/>
-[MFC 프로그램 또는 컨트롤 소스 및 헤더 파일](../ide/mfc-program-or-control-source-and-header-files.md)
+[MFC 프로그램 또는 컨트롤 소스 및 헤더 파일](../build/reference/mfc-program-or-control-source-and-header-files.md)
+

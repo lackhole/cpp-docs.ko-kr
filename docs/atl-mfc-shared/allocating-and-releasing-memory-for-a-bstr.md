@@ -11,12 +11,12 @@ helpviewer_keywords:
 - memory deallocation, BSTR memory
 - strings [C++], releasing
 ms.assetid: 98041e29-3442-4a02-b425-7a4a13e9cc84
-ms.openlocfilehash: cfa921758122dfadb7b008740a14e352456a180f
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: adc3e1efd032bb3e3e45381da24c5a5b59852375
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518192"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747140"
 ---
 # <a name="allocating-and-releasing-memory-for-a-bstr"></a>BSTR에 대해 메모리 할당 및 해제
 
@@ -40,10 +40,9 @@ ms.locfileid: "51518192"
 
    [!code-cpp[NVC_ATLMFC_Utilities#196](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_5.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CStringT::AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring)<br/>
 [SysAllocString](/windows/desktop/api/oleauto/nf-oleauto-sysallocstring)<br/>
 [SysFreeString](/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)
-

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - MBCS [C++], enabling
 - Unicode [C++], enabling
 ms.assetid: b077f4ca-5865-40ef-a46e-d9e4d686ef21
-ms.openlocfilehash: 51d85991fdab273d1cdad4e99400d1ad8ed6324c
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 22f2dba49e894e93cb6791d76a65730f3269199e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627464"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748010"
 ---
 # <a name="international-enabling"></a>국가별 사용
 
@@ -27,7 +27,7 @@ ms.locfileid: "53627464"
 
    - MFC 이식 가능한 환경 중 하나에서 동일한 이식 가능한 런타임 함수를 사용 합니다.
 
-   - 리터럴 문자열 및 문자를 환경 중 하나에서 이식 가능 하도록 사용 하는 `_T` 매크로입니다. 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)합니다.
+   - 리터럴 문자열 및 문자를 환경 중 하나에서 이식 가능 하도록 사용 하는 `_T` 매크로입니다. 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조하십시오.
 
    - Mbcs 문자열 구문 분석 하는 경우에 주의 해야 합니다. 유니코드에서 이러한 예방 조치 필요 하지 않습니다. 자세한 내용은 [MBCS 프로그래밍 팁](../text/mbcs-programming-tips.md)합니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "53627464"
 > [!NOTE]
 >  유럽 및 MBCS 문자 집합 일부 문자를 0x80 보다 큰 문자 코드를 사용 하 여 악센트 부호가 있는 문자 같은 경우 0x80 보다 큰이 문자 부호 확장으로 변환 하는 경우는 대부분의 코드는 부호 있는 문자를 사용 하므로 **int**합니다. 이 문제가 있는 경우 배열 인덱싱에 대 한 부호 확장 하는 문자, 음수로 인덱스 배열 외부에 있으므로 일본어 같은 MBCS를 사용 하는 언어 역시 고유 합니다. 문자를 1 또는 2 바이트로 구성 될 수, 때문에 동시에 두 바이트에 항상 처리 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [유니코드 및 MBCS](../text/unicode-and-mbcs.md)<br/>
 [국제화 전략](../text/internationalization-strategies.md)

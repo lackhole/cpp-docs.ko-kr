@@ -6,12 +6,12 @@ helpviewer_keywords:
 - STL/CLR, containers
 - containers, STL/CLR
 ms.assetid: 34ca8031-2041-46b9-aed9-29082d1972ea
-ms.openlocfilehash: 1787e18cb36c77429cd4957bab167c77d5e25d8c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 511ea14d02b77e237ae9768776c4ff3eb97982ed
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496085"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744360"
 ---
 # <a name="stlclr-containers"></a>STL/CLR 컨테이너
 
@@ -310,6 +310,6 @@ STL/CLR 컨테이너 값 의미 체계에 작동합니다. 컨테이너에 요�
 
 일반 전화를 하거나 erase 핸들 개체의 컨테이너의 메서드, 개체 핸들을 참조 하는 메모리에서 해제 되지 않습니다. 명시적으로 개체를 삭제 하거나, 관리 되는 힙에 저장 된이 개체는 개체가 더 이상 사용 되는 확인 되 면 메모리를 확보 하기 가비지 수집기를 허용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

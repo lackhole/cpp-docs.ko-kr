@@ -7,12 +7,12 @@ helpviewer_keywords:
 - GAC (global assembly cache), loading native DLLs
 - native DLLs [C++]
 ms.assetid: 25e8d78a-b197-4269-b4e9-237a544ab3c8
-ms.openlocfilehash: 1b11ebfae704ca1529113a00b463df728c85fe60
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b4b886dfef3185c1b3084ed02abcef1ad2630c11
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641365"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746489"
 ---
 # <a name="how-to-add-native-dll-to-global-assembly-cache"></a>방법: 전역 어셈블리 캐시에 네이티브 DLL 추가
 
@@ -28,6 +28,6 @@ COM이 아닌 네이티브 DLL을 전역 어셈블리 캐시에 넣을 수 있�
 /ASSEMBLYLINKRESOURCE:MyComponent.dll
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - 64-bit compiler [C++], porting 32-bit code
 - Win64 [C++]
 ms.assetid: d17fb838-7513-4e2d-8b27-a1666f17ad76
-ms.openlocfilehash: c74766c86048f6dd7358d16b8d5d1f2b493450c1
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 937c00b7d3c40d9a5b92d53582ab1ebf4418ebc7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414423"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816115"
 ---
 # <a name="common-visual-c-64-bit-migration-issues"></a>일반적인 Visual C++ 64비트 마이그레이션 문제
 
@@ -42,11 +42,11 @@ Visual C++를 사용하여 64비트 Windows 운영 체제에서 실행되는 응
 
 자세한 내용은 다음을 참조하세요.
 
-- [컴파일러 옵션](../build/reference/compiler-options.md)
+- [MSVC 컴파일러 옵션](reference/compiler-options.md)
 
 - [마이그레이션 팁](/windows/desktop/WinProg64/migration-tips)
 
 ## <a name="see-also"></a>참고자료
 
-[64비트, x64 대상을 위한 Visual C++ 구성](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[64 비트 x64에 대 한 c + + 프로젝트 구성 대상](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [Visual C++ 포팅 및 업그레이드 가이드](../porting/visual-cpp-porting-and-upgrading-guide.md)

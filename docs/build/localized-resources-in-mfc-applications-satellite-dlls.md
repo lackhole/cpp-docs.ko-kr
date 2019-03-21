@@ -12,16 +12,16 @@ helpviewer_keywords:
 - resource-only DLLs [C++], MFC applications
 - satellite DLLs [C++]
 ms.assetid: 3a1100ae-a9c8-47b5-adbd-cbedef5992ef
-ms.openlocfilehash: d479599acceac29f0f2ee54857c663c81a919acf
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c593d0bae6fc23cfd765116c44b07caa2a6d8ccf
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420403"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821328"
 ---
 # <a name="localized-resources-in-mfc-applications-satellite-dlls"></a>MFC 응용 프로그램의 지역화 된 리소스: 위성 Dll
 
-MFC 버전 7.0 이상 위성 Dll 여러 언어로 지역화 된 응용 프로그램을 만드는 데 도움이 되는 기능에 대 한 향상 된 지원을 제공 합니다. 위성 DLL은는 [리소스 전용 DLL](../build/creating-a-resource-only-dll.md) 특정 언어에 대해 지역화 된 응용 프로그램의 리소스를 포함 하는 합니다. 응용 프로그램 실행을 시작할 때 MFC 환경에 가장 적합 한 지역화 된 리소스를 자동으로 로드 합니다. 예를 들어 두 위성 리소스는 독일어로 번역을 포함 하며 다른을 프랑스어 번역을 포함 하는 Dll 사용 하 여 영어 리소스를 사용 하 여 응용 프로그램에 있을 수 있습니다. 응용 프로그램 영어 시스템에서 실행 되 면 영어 리소스를 사용 합니다. 프랑스어 리소스를 사용 하 여 프랑스어 시스템을 실행 하는 경우 독일어 시스템에서 실행할 경우 독일어 리소스를 사용 합니다.
+MFC 버전 7.0 이상 위성 Dll 여러 언어로 지역화 된 응용 프로그램을 만드는 데 도움이 되는 기능에 대 한 향상 된 지원을 제공 합니다. 위성 DLL은는 [리소스 전용 DLL](creating-a-resource-only-dll.md) 특정 언어에 대해 지역화 된 응용 프로그램의 리소스를 포함 하는 합니다. 응용 프로그램 실행을 시작할 때 MFC 환경에 가장 적합 한 지역화 된 리소스를 자동으로 로드 합니다. 예를 들어 두 위성 리소스는 독일어로 번역을 포함 하며 다른을 프랑스어 번역을 포함 하는 Dll 사용 하 여 영어 리소스를 사용 하 여 응용 프로그램에 있을 수 있습니다. 응용 프로그램 영어 시스템에서 실행 되 면 영어 리소스를 사용 합니다. 프랑스어 리소스를 사용 하 여 프랑스어 시스템을 실행 하는 경우 독일어 시스템에서 실행할 경우 독일어 리소스를 사용 합니다.
 
 위성 DLL을 로드 하려고 하는 MFC MFC 응용 프로그램에서 지역화 된 리소스를 지원 하기 위해이 특정 언어에 지역화 된 리소스를 포함 하 합니다. 위성 Dll 라고 *ApplicationNameXXX*.dll, 여기서 *ApplicationName* .exe 또는.dll MFC를 사용 하 여 이름 및 *XXX* 언어에 대 한 세 문자로 된 코드는 리소스 (예: '한국어' 또는 'DEU').
 
@@ -53,5 +53,5 @@ MFC 위성 Dll을 찾을 수 없는 경우 응용 프로그램 자체에 포함 
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](../build/dlls-in-visual-cpp.md)<br/>
+[Visual C++의 DLL](dlls-in-visual-cpp.md)<br/>
 [TN057: 지역화 된 MFC 구성 요소](../mfc/tn057-localization-of-mfc-components.md)

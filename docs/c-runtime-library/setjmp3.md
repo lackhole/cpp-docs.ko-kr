@@ -19,12 +19,12 @@ helpviewer_keywords:
 - _setjmp3 function
 - setjmp3 function
 ms.assetid: 6129c2f3-8bac-4fdb-a827-44e1eebba500
-ms.openlocfilehash: 4509738f8e0128e2f9277e744a5965f557f65439
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2c89acf1de88b831d70a0f438cdf14148a48632
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564010"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741810"
 ---
 # <a name="setjmp3"></a>_setjmp3
 
@@ -55,7 +55,7 @@ int _setjmp3(
 
 항상 0을 반환합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 함수는 C++ 프로그램에서는 사용하지 마세요. C++을 지원하지 않는 내장 함수입니다. `setjmp`를 사용하는 방법에 대한 자세한 내용은 [setjmp/longjmp 사용](../cpp/using-setjmp-longjmp.md)을 참조하세요.
 

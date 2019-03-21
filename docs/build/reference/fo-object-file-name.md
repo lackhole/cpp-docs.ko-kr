@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /Fo compiler option [C++]
 - -Fo compiler option [C++]
 ms.assetid: 0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6
-ms.openlocfilehash: bcb0f96eba277b65e3478843ca0e1666f9c404aa
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a8f2c1a196f18e6d310fd41d4dbed751440a4c20
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418362"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57819666"
 ---
 # <a name="fo-object-file-name"></a>/Fo(개체 파일 이름)
 
@@ -34,7 +34,7 @@ ms.locfileid: "57418362"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -56,7 +56,7 @@ CL /FoB:\OBJECT\ THIS.C
 
 ## <a name="see-also"></a>참고자료
 
-[출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[경로 이름 지정](../../build/reference/specifying-the-pathname.md)
+[출력 파일(/F) 옵션](output-file-f-options.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[경로 이름 지정](specifying-the-pathname.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 버퍼 오버플로
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +6,12 @@ helpviewer_keywords:
 - buffer overflows [C++]
 - MBCS [C++], buffer overflow
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
-ms.openlocfilehash: 97488f3023481c20599e8cf5201fbce68dd23516
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f9864e6b49446ea68d82e76e877ce9c677b893d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566503"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741375"
 ---
 # <a name="buffer-overflow"></a>버퍼 오버플로
 
@@ -23,7 +23,7 @@ while( cb < sizeof( rgch ) )
     rgch[ cb++ ] = *sz++;
 ```
 
-마지막 바이트가 복사될 때 선행 바이트만 복사된 것인지 의문을 가져야 합니다. 다음 예는 버퍼 오버플로가 발생할 수 있으므로 문제가 해결된 것은 아닙니다.
+여기서 문제는 마지막 바이트는 선행 바이트를 복사 했습니다. 다음 예는 버퍼 오버플로가 발생할 수 있으므로 문제가 해결된 것은 아닙니다.
 
 ```cpp
 cb = 0;
@@ -53,6 +53,6 @@ while( (cb + _mbclen( sz )) <= sizeof( rgch ) )
 _mbsnbcpy( rgch, sz, sizeof( rgch ) );
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [멀티바이트 문자 집합(MBCS) 프로그래밍 팁](../text/mbcs-programming-tips.md)

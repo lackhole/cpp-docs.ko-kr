@@ -53,12 +53,12 @@ helpviewer_keywords:
 - _exec function
 - _texecvpe function
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
-ms.openlocfilehash: 4974571764c22b26e84e93c68d679afc8a1cea73
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 72300f754015e54daf14863ca2ae677bde8f7d1a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573370"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746203"
 ---
 # <a name="exec-wexec-functions"></a>_exec, _wexec 함수
 
@@ -80,7 +80,7 @@ ms.locfileid: "50573370"
 |`p`|`PATH` 환경 변수는 실행할 파일을 찾는 데 사용됩니다.|
 |`v`|명령줄 인수에 대한 포인터의 배열인 `argv`가 `_exec`로 전달됩니다. 새 프로세스의 매개 변수 개수가 가변적인 경우 일반적으로 사용됩니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `_exec` 함수는 새 프로세스를 로드하고 실행합니다. 모든 `_exec` 함수는 동일한 운영 체제 함수([CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa))를 사용합니다. `_exec` 함수는 멀티바이트 문자열 인수를 적절하게 자동으로 처리하여 현재 사용 중인 멀티바이트 코드 페이지에 따라 멀티바이트 문자 시퀀스를 인식합니다. `_wexec` 함수는 `_exec` 함수의 와이드 문자 버전입니다. `_wexec` 함수는 멀티바이트 문자열을 처리하지 않는다는 점만 제외하면 자신의 `_exec` 패밀리 대응 함수와 동일하게 작동합니다.
 
@@ -121,7 +121,7 @@ ms.locfileid: "50573370"
 
 `_exec` 호출은 열린 파일의 변환 모드를 유지하지 않습니다. 새 프로세스가 호출 프로세스에서 상속된 파일을 사용해야 하는 경우 [_setmode](../c-runtime-library/reference/setmode.md) 루틴을 사용하여 이러한 파일의 변환 모드를 원하는 모드로 설정합니다. `fflush` 함수 호출 전에 모든 스트림을 명시적으로 플러시하거나(`_flushall` 또는 `_exec` 사용) 닫아야 합니다. `_exec` 루틴에 대한 호출로 생성된 새 프로세스에서 신호 설정은 유지되지 않습니다. 신호 설정은 새 프로세스에서 기본값으로 다시 설정됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 // crt_args.c

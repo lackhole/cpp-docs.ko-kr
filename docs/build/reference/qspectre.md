@@ -5,12 +5,12 @@ f1_keywords:
 - /Qspectre
 helpviewer_keywords:
 - /Qspectre
-ms.openlocfilehash: af04a905fdb3b509a90249c6d55a28ccdaa39318
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42adff6564dc1c2ef47abffe9f9e6e630279ea7d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507317"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812462"
 ---
 # <a name="qspectre"></a>/Qspectre
 
@@ -28,15 +28,15 @@ ms.locfileid: "50507317"
 
 초기 릴리스에서는 **/Qspectre** 최적화 된 코드에만 작동 하는 옵션입니다. Visual Studio 2017 버전 15.7 이상의 경우에 **/Qspectre** 옵션은 모든 최적화 수준에서 지원 됩니다.
 
-Microsoft Visual c + + 라이브러리 스펙터 완화를 사용 하 여 버전에서 사용할 수 있습니다. Visual Studio 설치 관리자에서 Visual Studio 2017에 대 한 스펙터 완화 라이브러리를 다운로드할 수 있습니다. 있는 합니다 **개별 구성 요소** 탭 **컴파일러, 빌드 도구 및 런타임**, 이름에 "라이브러리에 대 한 스펙터"를 포함 하 고 있습니다. Visual c + + 런타임의 하위 집합에 대 한 DLL 및 정적 런타임 라이브러리 사용 하도록 설정 하는 완화를 사용 하 여 사용할: VC + + 시작 코드 "," vcruntime140 "," msvcp140 "," concrt140, "및" vcamp140 합니다. Dll 응용 프로그램 지역 배포만 지원 됩니다. Visual c + + 2017 런타임 라이브러리 재배포 가능 패키지의 내용은 수정 되지 않은 합니다. MFC 및 ATL에 대 한 스펙터 완화 라이브러리를 설치할 수도 있습니다는 **개별 구성 요소** 탭에서 **Sdk, 라이브러리 및 프레임 워크**합니다.
+Microsoft Visual c + + 라이브러리 스펙터 완화를 사용 하 여 버전에서 사용할 수 있습니다. Visual Studio 설치 관리자에서 Visual Studio 2017에 대 한 스펙터 완화 라이브러리를 다운로드할 수 있습니다. 있는 합니다 **개별 구성 요소** 탭 **컴파일러, 빌드 도구 및 런타임**, 이름에 "라이브러리에 대 한 스펙터"를 포함 하 고 있습니다. DLL 및 정적 런타임 라이브러리 사용 하도록 설정 하는 완화를 사용 하 여 모두 Visual c + + 런타임의 하위 집합에 제공 됩니다. VC + + 시작 코드, vcruntime140, msvcp140, concrt140, 및 vcamp140 합니다. Dll 응용 프로그램 지역 배포만 지원 됩니다. Visual c + + 2017 런타임 라이브러리 재배포 가능 패키지의 내용은 수정 되지 않은 합니다. MFC 및 ATL에 대 한 스펙터 완화 라이브러리를 설치할 수도 있습니다는 **개별 구성 요소** 탭에서 **Sdk, 라이브러리 및 프레임 워크**합니다.
 
-### <a name="applicability"></a>적용 가능성
+### <a name="applicability"></a>적용 대상
 
 트러스트 경계를 교차 하는 데이터에서 작동 하는 코드를 사용 하는 것이 좋습니다 경우는 **/Qspectre** 다시 빌드하고 다시 가능한 한 빨리이 문제를 완화 하기 위해 코드를 배포 하는 옵션입니다. 트러스트 경계를 교차 하는 데이터에서 작동 하는 코드의 예로 실행에 영향을 줄 수 있는 신뢰할 수 없는 입력을 로드 하는 코드, 원격 프로시저는 코드를 호출, 신뢰할 수 없는 입력 또는 파일을 구문 분석 또는 다른 로컬 간 프로세스를 사용 하 여 예를 들어, 통신 (IPC) 인터페이스입니다. 표준 샌드 박싱 기술 충분 하지 않을 수 있습니다. 에 샌드박스 코드 트러스트 경계를 넘어서지 않는 결정 하기 전에 신중 하 게 조사 해야 합니다.
 
 ### <a name="availability"></a>가용성
 
-합니다 **/Qspectre** 옵션은 2018 년 1 월 23 일 이후에 만든 모든 업데이트를 Microsoft Visual c + + 컴파일러 (MSVC) 및 Visual Studio 2017 버전 15.5.5에서에서 사용할 수 있습니다. Visual Studio 설치 관리자를 사용 하 여 컴파일러를 업데이트 하 고 개별 구성 요소로 스펙터 완화 라이브러리를 설치 합니다. 합니다 **/Qspectre** 옵션 패치를 통해 Visual Studio 2015 업데이트 3에서 제공 됩니다. 자세한 내용은 [KB 4338871](https://support.microsoft.com/help/4338871)합니다.
+합니다 **/Qspectre** 옵션은 2018 년 1 월 23 일 이후에 만든 모든 업데이트가 Microsoft MSVC 컴파일러 (MSVC) Visual Studio 2017 버전 15.5.5에 사용할 수 있습니다. Visual Studio 설치 관리자를 사용 하 여 컴파일러를 업데이트 하 고 개별 구성 요소로 스펙터 완화 라이브러리를 설치 합니다. 합니다 **/Qspectre** 옵션 패치를 통해 Visual Studio 2015 업데이트 3에서 제공 됩니다. 자세한 내용은 [KB 4338871](https://support.microsoft.com/help/4338871)합니다.
 
 모든 버전의 Visual Studio 2017 버전 15.5 및 모든 미리 보기의 Visual Studio 2017 버전 15.6 문서화 되지 않은 옵션이 **/d2guardspecload**에 초기 동작에는 해당 **/Qspectre**. 사용할 수 있습니다 **/d2guardspecload** 이러한 버전의 컴파일러에서 코드를 동일한 완화를 적용 합니다. 사용 하 여 빌드를 업데이트 하세요 **/Qspectre** ; 옵션을 지 원하는 컴파일러에서는 **/Qspectre** 컴파일러의 이후 버전에서 새 완화 옵션을 지원할 수도 있습니다.
 
@@ -58,7 +58,7 @@ Microsoft Visual c + + 라이브러리 스펙터 완화를 사용 하 여 버전
 - 에 대 한 visual c + + ATL \[(x64 x86) | ARM | ARM64] 스펙터 완화를 사용 하 여
 - 에 대 한 visual c + + MFC \[x86 x64 | ARM | ARM64] 스펙터 완화를 사용 하 여
 
-사용 하 여 코드를 작성 하는 경우 **/Qspectre** 이러한 라이브러리에는 없는 설치, 빌드 시스템 보고서 **경고 MSB8038: 스펙터 완화 설정 되어 있지만 스펙터 완화 된 라이브러리를 찾을 수 없습니다**합니다. MFC 또는 ATL 코드 빌드가 실패 하 고 링커와 같은 오류를 보고 하는 경우 **심각한 오류 LNK1104: 'oldnames.lib' 파일을 열 수 없습니다.**, 이러한 누락 된 라이브러리를 일으킬 수 있습니다.
+사용 하 여 코드를 작성 하는 경우 **/Qspectre** 없는 이러한 라이브러리를 설치 하 고 빌드 시스템 보고서 **MSB8038 경고: 스펙터 완화 설정 되어 있지만 스펙터 완화 된 라이브러리를 찾을 수 없는**합니다. MFC 또는 ATL 코드 빌드가 실패 하 고 링커와 같은 오류를 보고 하는 경우 **심각한 오류 LNK1104: 'oldnames.lib' 파일을 열 수 없습니다.**, 이러한 누락 된 라이브러리를 일으킬 수 있습니다.
 
 ### <a name="additional-information"></a>추가 정보
 
@@ -66,7 +66,7 @@ Microsoft Visual c + + 라이브러리 스펙터 완화를 사용 하 여 버전
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
 
@@ -78,6 +78,6 @@ Microsoft Visual c + + 라이브러리 스펙터 완화를 사용 하 여 버전
 
 ## <a name="see-also"></a>참고자료
 
-[/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[/Q 옵션(하위 수준 작업)](q-options-low-level-operations.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

@@ -6,12 +6,12 @@ f1_keywords:
 - VCCORLIB/Namespace not found::Platform
 - VCCORLIB/Namespace not found::Platform::Value
 ms.assetid: 774df45d-f8a7-45a3-ae24-eecc3c681040
-ms.openlocfilehash: 4cca648b3b81dbf0d9f8d3e5f87625464f1d8385
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 24e70ad646e2673869b135e8cc7657910b9b499c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625046"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747062"
 ---
 # <a name="platformibox-interface"></a>Platform::IBox 인터페이스
 
@@ -68,6 +68,6 @@ boxed 값의 형식입니다.
 
 예를 들어 참조 [Boxing](../cppcx/boxing-c-cx.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

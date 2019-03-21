@@ -17,12 +17,12 @@ helpviewer_keywords:
 - signal constants
 - SIGILL constant
 ms.assetid: a3b39281-dae7-4e44-8d68-e6a610c669dd
-ms.openlocfilehash: 1046a12fa0f250b348e6ff171c8865e3eb5ff4b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e9953e967d1c94ae56dfc1063fb0deafa342631c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482667"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738723"
 ---
 # <a name="signal-constants"></a>신호 상수
 
@@ -32,7 +32,7 @@ ms.locfileid: "50482667"
 #include <signal.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `sig` 인수는 아래에 나열된 매니페스트 상수 중 하나여야 합니다(SIGNAL.H에 정의).
 

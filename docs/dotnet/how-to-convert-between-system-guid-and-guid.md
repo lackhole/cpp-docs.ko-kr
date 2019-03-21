@@ -1,5 +1,5 @@
 ---
-title: '방법: System::Guid 및 _GUID 사이에 변환'
+title: '방법: System:: guid 및 _GUID 사이'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - GUID, converting to System::GUID
 - System::GUID, converting to GUID
 ms.assetid: 022c934c-3395-4f04-b498-85ad9bf8c646
-ms.openlocfilehash: 7aa89557c1aeac4b7093ff6fc0bbd3937e99b0b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e74a95eea1018916dcdef6b133ef1f0ab0533f96
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635697"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747750"
 ---
-# <a name="how-to-convert-between-systemguid-and-guid"></a>방법: System::Guid 및 _GUID 사이에 변환
+# <a name="how-to-convert-between-systemguid-and-guid"></a>방법: System:: guid 및 _GUID 사이
 
 다음 코드 샘플에 간에 변환 하는 방법을 보여 줍니다는 <xref:System.Guid> 및 `_GUID`합니다.
 
@@ -65,6 +65,6 @@ int main() {
 11111111-2222-3333-4455-555555555555
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

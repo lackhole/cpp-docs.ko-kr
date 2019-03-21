@@ -7,16 +7,16 @@ helpviewer_keywords:
 - __delayLoadHelper2 function
 - helper functions, what's changed
 ms.assetid: 99f0be69-105d-49ba-8dd5-3be7939c0c72
-ms.openlocfilehash: 25c59d37b753c80014b566fd925363cae71798be
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: cd6e842fd6d35e05f2d5a9f906713f0d85d3b80d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426526"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808003"
 ---
 # <a name="changes-in-the-dll-delayed-loading-helper-function-since-visual-c-60"></a>Visual C++ 6.0 이후 DLL 지연 로드 도우미 함수의 변경 내용
 
-사용자 도우미 함수를 정의 하면 영향을 받을 수 또는 컴퓨터에 여러 버전의 Visual c + +를 있는 경우에 DLL에 대 한 변경 내용을 지연 로드 도우미 함수의 합니다. 예를 들면,
+사용자 도우미 함수를 정의 하면 영향을 받을 수 또는 컴퓨터에 여러 버전의 Visual c + +를 있는 경우에 DLL에 대 한 변경 내용을 지연 로드 도우미 함수의 합니다. 예를 들어:
 
 - **__delayLoadHelper** 이제 **__delayLoadHelper2**
 
@@ -33,7 +33,7 @@ ms.locfileid: "57426526"
 
 컴퓨터에 있는 여러 버전의 Visual c + +가 하는 경우 링커 delayimp.lib 일치 하는지 확인 합니다. 보고 하거나 링커 오류가 발생 하면 불일치가 있으면 `___delayLoadHelper2@8` 또는 `___delayLoadHelper@8` 는 확인 되지 않은 외부 기호입니다. 전자는 이전 delayimp.lib 사용 하 여 새 링커를 의미 하 고 새 delayimp.lib 사용 하 여 이전 링커는 후자 의미 키를 누릅니다.
 
-확인 되지 않은 링커 오류가 발생 하는 경우 실행할 [/linkermember dumpbin](../../build/reference/linkermember.md): delayimp.lib 도우미 함수는 도우미 함수가 대신 정의 된 참조를 포함 해야 하는 1입니다. 도우미 함수는 개체 파일에 정의할 수 있습니다. 실행할 [dumpbin /symbols](../../build/reference/symbols.md) 찾아 `delayLoadHelper(2)`합니다.
+확인 되지 않은 링커 오류가 발생 하는 경우 실행할 [/linkermember dumpbin](linkermember.md): delayimp.lib 도우미 함수는 도우미 함수가 대신 정의 된 참조를 포함 해야 하는 1입니다. 도우미 함수는 개체 파일에 정의할 수 있습니다. 실행할 [dumpbin /symbols](symbols.md) 찾아 `delayLoadHelper(2)`합니다.
 
 그런 다음 Visual c + + 6.0 링커를 사용 해야 합니다 알고 있는 경우:
 
@@ -51,7 +51,7 @@ ms.locfileid: "57426526"
 
 ## <a name="load-all-imports-for-a-delay-loaded-dll"></a>지연 로드 된 DLL에 대 한 모든 가져오기 로드
 
-링커 지연 로드로 지정 된 DLL에서 가져온 모든를 로드할 수 있습니다. 참조 [지연 로드 된 DLL에 대 한 모든 가져오기 로드](../../build/reference/loading-all-imports-for-a-delay-loaded-dll.md) 자세한 내용은 합니다.
+링커 지연 로드로 지정 된 DLL에서 가져온 모든를 로드할 수 있습니다. 참조 [지연 로드 된 DLL에 대 한 모든 가져오기 로드](loading-all-imports-for-a-delay-loaded-dll.md) 자세한 내용은 합니다.
 
 ## <a name="see-also"></a>참고자료
 

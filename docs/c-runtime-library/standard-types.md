@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CRT_REPORT_HOOK type
 - _finddata_t type
 ms.assetid: 23312dd2-4a6a-4d70-9b48-2a5d0d8c9f28
-ms.openlocfilehash: dd508095508cf9d0d04778b06d6296296649f710
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85ebe9052d9e8bd18dfc9b3b123871e2e5acda4e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565323"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740464"
 ---
 # <a name="standard-types"></a>표준 형식
 
@@ -173,7 +173,7 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 
 ### <a name="fixed-width-integral-types-stdinth"></a>고정 너비 정수 계열 형식(stdint.h)
 
-|이름|해당하는 기본 제공 형식|
+|name|해당하는 기본 제공 형식|
 |----------|-------------------------------|
 |int8\_t, uint8\_t|signed char, unsigned char|
 |int16\_t, uint16\_t|short, unsigned short|

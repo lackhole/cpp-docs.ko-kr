@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - IAtlStringMgr class, using
 ms.assetid: 64ab7da9-47c1-4c4a-9cd7-4cc37e7f3f57
-ms.openlocfilehash: 824e9b1b71615bd3fc488052d5e713dee2e0d015
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3854ffe205aa8e6cb9cfb800b9aa1473094fffaf
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524822"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743395"
 ---
 # <a name="implementation-of-a-custom-string-manager-advanced-method"></a>사용자 지정 문자열 관리자 구현 (고급 방법)
 
@@ -29,7 +29,6 @@ ms.locfileid: "50524822"
 
    할당 하는 경우는 `CStringData` 구조를 버퍼에 허용 되는 공유 유형을 반영 하도록이 필드를 설정 해야 합니다. 대부분의 구현에 대 한 하나에이 값을 설정 합니다. 따라서 일반적인 쓰기 시 복사 공유 동작 합니다. 그러나 문자열 상사가 문자열 버퍼를 공유 하는 것을 지원 하지 않으면,이 필드를 잠긴 상태로 설정 합니다. 이렇게 하면 `CStringT` 에이 버퍼를 사용 하 여 인스턴스의 `CStringT` 는 할당 된 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CStringT를 사용한 메모리 관리](../atl-mfc-shared/memory-management-with-cstringt.md)
-

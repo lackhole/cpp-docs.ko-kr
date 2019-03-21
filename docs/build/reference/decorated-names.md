@@ -6,12 +6,12 @@ helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-ms.openlocfilehash: d9d3db9a3db1943581e5fd603ba85777cb49b863
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3fae232e6ca886195315002f4e65063d8a23ddc8
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423315"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815426"
 ---
 # <a name="decorated-names"></a>데코레이팅된 이름
 
@@ -67,7 +67,7 @@ C 함수에 대한 장식 형식은 다음 표와 같이 선언에 사용되는 
 
 #### <a name="to-use-a-listing-to-view-decorated-names"></a>목록을 사용하여 데코레이트된 이름 표시
 
-1. 데이터, 개체 또는 함수 정의 나 프로토타입이 포함 된 소스 파일을 컴파일하여 목록을 생성 합니다 [파일 형식이 나열](../../build/reference/fa-fa-listing-file.md) 소스 코드를 사용 하 여 어셈블리를 설정 하는 컴파일러 옵션 (**/FAs**).
+1. 데이터, 개체 또는 함수 정의 나 프로토타입이 포함 된 소스 파일을 컴파일하여 목록을 생성 합니다 [파일 형식이 나열](fa-fa-listing-file.md) 소스 코드를 사용 하 여 어셈블리를 설정 하는 컴파일러 옵션 (**/FAs**).
 
    예를 들어 입력 `cl /c /FAs example.cpp` 목록 파일을 생성 하려면 개발자 명령 프롬프트에서 example.asm 합니다.
 
@@ -94,5 +94,5 @@ is :- "private: void __thiscall a::func1(int)"
 
 ## <a name="see-also"></a>참고자료
 
-[빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
+[추가 MSVC 빌드 도구](c-cpp-build-tools.md)<br/>
 [extern을 사용하여 링크 지정](../../cpp/using-extern-to-specify-linkage.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - /SYMBOLS dumpbin option
 - -SYMBOLS dumpbin option
 ms.assetid: 34bcae90-4561-4c77-a80c-065508dec39a
-ms.openlocfilehash: 4aa6702cfa13523d64553041af4a18270d9babb3
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a47b7da9f0b01353ef15e8b5c070c19e7c521c37
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57421482"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822550"
 ---
 # <a name="symbols"></a>/SYMBOLS
 
@@ -66,8 +66,8 @@ String Table Size = 0x10 bytes
 
 번호가 매겨진된 줄에서 마지막 열은 기호 이름, 둘 다 데코레이팅된 및 데코 레이트 되지 않은 합니다.
 
-[/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션은 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션으로 만든 파일에만 사용할 수 있습니다.
+[/HEADERS](headers.md) DUMPBIN 옵션은 [/GL](gl-whole-program-optimization.md) 컴파일러 옵션으로 만든 파일에만 사용할 수 있습니다.
 
 ## <a name="see-also"></a>참고자료
 
-[DUMPBIN 옵션](../../build/reference/dumpbin-options.md)
+[DUMPBIN 옵션](dumpbin-options.md)

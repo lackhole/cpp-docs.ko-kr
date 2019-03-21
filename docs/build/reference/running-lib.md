@@ -26,12 +26,12 @@ helpviewer_keywords:
 - semicolon, command files
 - / command files
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
-ms.openlocfilehash: 8fdfeb16d41f51262cbd3a3814699a7b8dbc5fe4
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: e95427b571cd14ad39a7ba4f368b90e806f13862
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57413331"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57820366"
 ---
 # <a name="running-lib"></a>LIB 실행
 
@@ -66,7 +66,7 @@ LIB를 실행 하려면 명령을 입력 하 여 `lib` 옵션 및 작업에 대 
 
 런타임에 lib.exe 실패 하는 경우 사용할 수 있습니다 **/ERRORREPORT** 이러한 내부 오류에 대 한 Microsoft로 정보를 보내도록 합니다.
 
-에 대 한 자세한 내용은 **/ERRORREPORT**를 참조 하십시오 [/errorReport (내부 컴파일러 오류 보고)](../../build/reference/errorreport-report-internal-compiler-errors.md)합니다.
+에 대 한 자세한 내용은 **/ERRORREPORT**를 참조 하십시오 [/errorReport (내부 컴파일러 오류 보고)](errorreport-report-internal-compiler-errors.md)합니다.
 
 > **/LTCG**
 
@@ -90,10 +90,10 @@ LIB 저작권 메시지 및 버전 번호를 표시 하지 않습니다 하 고 
 
 > **/WX**[**:NO**]
 
-경고를 오류로 처리 합니다. 참조 [/WX (링커 경고를 오류로 처리)](../../build/reference/wx-treat-linker-warnings-as-errors.md) 자세한 내용은 합니다.
+경고를 오류로 처리 합니다. 참조 [/WX (링커 경고를 오류로 처리)](wx-treat-linker-warnings-as-errors.md) 자세한 내용은 합니다.
 
 다른 옵션은 LIB의 특정 모드에만 적용 됩니다. 이러한 옵션은 각 모드를 설명 하는 섹션에서 설명 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[LIB 참조](../../build/reference/lib-reference.md)
+[LIB 참조](lib-reference.md)

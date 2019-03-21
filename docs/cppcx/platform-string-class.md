@@ -19,12 +19,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::String
 ms.assetid: 72dd04a4-a694-40d3-b899-eaa0b503eab8
-ms.openlocfilehash: ef9838fa8a6a34eac1d2d3531ff93fb124c81d4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ac9ee843f5f11d4a42377b16ec77b266238fc461
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607040"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746190"
 ---
 # <a name="platformstring-class"></a>Platform::String 클래스
 
@@ -98,7 +98,7 @@ String 클래스에 다음과 같은 연산자입니다.
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **헤더** vccorlib.h(기본적으로 포함)
 
@@ -164,9 +164,13 @@ String^ Concat( String^ str1, String^ str2);
 
 ### <a name="return-value"></a>반환 값
 
-`str1` 값과 `str2` 값의 연결을 값으로 하는 새로운 String^ 개체입니다.
 
-`str1`가 `null`이고 `str2`이l 아니면 `str1`가 반환됩니다. `str2`가 `null`이고 `str1`이l 아니면 `str2`가 반환됩니다. `str1`과 `str2`가 모두 `null`이면 빈 문자열(L"")이 반환됩니다.
+  `str1` 값과 `str2` 값의 연결을 값으로 하는 새로운 String^ 개체입니다.
+
+
+  `str1`가 `null`이고 `str2`이l 아니면 `str1`가 반환됩니다. 
+  `str2`가 `null`이고 `str1`이l 아니면 `str2`가 반환됩니다. 
+  `str1`과 `str2`가 모두 `null`이면 빈 문자열(L"")이 반환됩니다.
 
 ## <a name="data"></a>  String:: data 메서드
 
@@ -184,7 +188,8 @@ const char16* Data();
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 사용하여 `Platform::String^`에서 `wchar_t*`로 변환합니다. `String` 개체가 범위를 벗어나는 경우 데이터 포인터의 유효성이 더 이상 보장되지 않습니다. 원래의 수명 넘어서는 데이터를 저장할 `String` 개체를 사용 하 여 [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) 직접 할당 한 메모리로 배열을 복사 합니다.
+이 메서드를 사용하여 `Platform::String^`에서 `wchar_t*`로 변환합니다. 
+  `String` 개체가 범위를 벗어나는 경우 데이터 포인터의 유효성이 더 이상 보장되지 않습니다. 원래의 수명 넘어서는 데이터를 저장할 `String` 개체를 사용 하 여 [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) 직접 할당 한 메모리로 배열을 복사 합니다.
 
 ## <a name="dispose"></a>  String:: dispose 메서드
 
@@ -333,7 +338,7 @@ bool String::operator+( String^ str1, String^ str2);
 
 ### <a name="remarks"></a>설명
 
-이 연산자는 두 피연산자의 데이터가 들어 있는 `String^` 개체를 만듭니다. 매우 높은 성능이 중요하지 않은 경우 편의를 위해 이를 사용합니다. 함수에서 "`+`"를 몇 번 호출하는 것은 그렇게 눈에 띄지 않지만 대행 개체나 텍스트 데이터를 연속해서 조작하는 경우 표준 C++ 매커니즘과 형식을 사용하세요.
+이 연산자는 두 피연산자의 데이터가 들어 있는 `String^` 개체를 만듭니다. 매우 높은 성능이 중요하지 않은 경우 편의를 위해 이를 사용합니다. 함수에서 "`+`"를 몇 번 호출하는 것은 그렇게 눈에 띄지 않지만 대행 개체나 텍스트 데이터를 연속해서 조작하는 경우 표준 C++ 매커니즘과 형식을 사용하십시오.
 
 ##  <a name="operator-equality"></a> String:: operator = = 연산자
 
@@ -496,6 +501,6 @@ String^ String::ToString();
 
 `String` 현재 문자열과 동일한 값인 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

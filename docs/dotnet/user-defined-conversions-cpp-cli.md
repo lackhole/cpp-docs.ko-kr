@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - user-defined conversions [C++]
 ms.assetid: 8010fd59-2775-4e9a-a6ed-58055032d66f
-ms.openlocfilehash: 047b2cc0ebc65d29f5f25d1bdf50b68da58c75d0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cd3b27e0667b5ab9707db4b2cce2d7eef4611219
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553730"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743190"
 ---
 # <a name="user-defined-conversions-ccli"></a>사용자 정의 변환(C++/CLI)
 
@@ -319,6 +319,6 @@ int main() {
 2000
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)
+[클래스 및 구조체(C++)](../windows/classes-and-structs-cpp-component-extensions.md)

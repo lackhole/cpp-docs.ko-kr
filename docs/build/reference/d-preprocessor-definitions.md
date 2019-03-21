@@ -13,12 +13,12 @@ helpviewer_keywords:
 - -D compiler option [C++]
 - D compiler option [C++]
 ms.assetid: b53fdda7-8da1-474f-8811-ba7cdcc66dba
-ms.openlocfilehash: 089f34f6daa606ed2869852a04ee76c6bda8fe25
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 18bbdb980c63b3c04b432602afb2402c5e2c42e7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424680"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812085"
 ---
 # <a name="d-preprocessor-definitions"></a>/D(전처리기 정의)
 
@@ -62,9 +62,9 @@ CL /DTEST=%% TEST.C
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 왼쪽된 창에서 선택 **구성 속성**, **C/c + +** 하십시오 **전처리기**합니다.
+1. 왼쪽된 창에서 선택 **구성 속성**, **C/C++** 하십시오 **전처리기**합니다.
 
 1. 오른쪽 열에 있는 오른쪽 창에는 **전처리기 정의** 속성을 드롭다운 메뉴를 열고 선택 **편집**합니다.
 
@@ -97,8 +97,8 @@ TEST defined 1
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[/U, /u(기호 정의 해제)](../../build/reference/u-u-undefine-symbols.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[/U, /u(기호 정의 해제)](u-u-undefine-symbols.md)<br/>
 [#undef 지시문(C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br/>
 [#define 지시문(C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)

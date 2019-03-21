@@ -6,12 +6,12 @@ helpviewer_keywords:
 - delayed loading of DLLs, constraints
 - DLLs [C++], constraints
 ms.assetid: 0097ff65-550f-4a4e-8ac3-39bf6404f926
-ms.openlocfilehash: 0be2c9e0681018bb61f433f77df8fdd77ba741a5
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: e37890fcd757a52ddeff0ccd79289bbc0c35e042
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420494"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816583"
 ---
 # <a name="constraints-of-delay-loading-dlls"></a>DLL 지연 로드의 제약 조건
 
@@ -21,7 +21,7 @@ ms.locfileid: "57420494"
 
 - Kernel32.dll 지연 로드는 지원되지 않습니다. 이 DLL은 지연 로드 수행을 위한 지연 로드 도우미 루틴에 필요합니다.
 
-- [바인딩](../../build/reference/binding-imports.md) 항목의 전달 된 지원 되지 않습니다.
+- [바인딩](binding-imports.md) 항목의 전달 된 지원 되지 않습니다.
 
 - 지연 로드된 DLL의 진입점에서 프로세스별 초기화가 발생하는 경우 DLL 지연 로드로 인해 동일한 동작의 프로세스가 발생하지 않을 수 있습니다. 사용 하 여 선언 된 정적 TLS (스레드 로컬 저장소)를 포함 하는 경우도 [__declspec (thread)](../../cpp/thread.md)를 통해 DLL이 로드 될 때 처리 되지 않은 `LoadLibrary`합니다. 
   `TlsAlloc`, `TlsFree`, `TlsGetValue` 및 `TlsSetValue`를 사용하는 동적 TLS는 정적 또는 지연 로드된 DLL에 계속해서 사용할 수 있습니다.
@@ -34,7 +34,7 @@ ms.locfileid: "57420494"
 
 ## <a name="see-also"></a>참고자료
 
-[링커의 지연 로드된 DLL 지원](../../build/reference/linker-support-for-delay-loaded-dlls.md)<br/>
+[링커의 지연 로드된 DLL 지원](linker-support-for-delay-loaded-dlls.md)<br/>
 [LoadLibrary 함수](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya)<br/>
 [GetModuleHandle 함수](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea)<br/>
 [GetProcAddress 함수](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)<br/>

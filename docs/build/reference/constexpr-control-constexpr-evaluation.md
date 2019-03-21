@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -constexpr control constexpr evaluation [C++]
 - constexpr control constexpr evaluation [C++]
 ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
-ms.openlocfilehash: 49a9566ec0725b63330af3a41afb871c3be3cc27
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 178acc548fb9c89dcfde104d2a12d85637440e28
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414653"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810187"
 ---
 # <a name="constexpr-control-constexpr-evaluation"></a>/constexpr (컨트롤 constexpr 평가)
 
@@ -36,7 +36,7 @@ ms.locfileid: "57414653"
 
 ## <a name="remarks"></a>설명
 
-합니다 **/constexpr** 컴파일러 옵션 제어의 컴파일 시간 계산이 **constexpr** 식입니다. 평가 단계, 재귀 수준 및 backtrace 깊이 컴파일러에서 너무 많은 시간을 소비 하지 못하도록 제어 됩니다 **constexpr** 평가 합니다. 대 한 자세한 내용은 합니다 **constexpr** 언어 요소를 참조 하세요 [constexpr (c + +)](../../cpp/constexpr-cpp.md)합니다.
+합니다 **/constexpr** 컴파일러 옵션 제어의 컴파일 시간 계산이 **constexpr** 식입니다. 평가 단계, 재귀 수준 및 backtrace 깊이 컴파일러에서 너무 많은 시간을 소비 하지 못하도록 제어 됩니다 **constexpr** 평가 합니다. 대 한 자세한 내용은 합니다 **constexpr** 언어 요소를 참조 하세요 [constexpr (C++)](../../cpp/constexpr-cpp.md)합니다.
 
 합니다 **/constexpr** 옵션은 Visual Studio 2015부터 사용할 수 있습니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "57414653"
 
 1. 프로젝트를 엽니다 **속성 페이지** 대화 상자.
 
-2. 아래 **구성 속성**를 확장 합니다 **C/c + +** 폴더 선택한를 **명령줄** 속성 페이지.
+2. 아래 **구성 속성**를 확장 합니다 **C/C++** 폴더 선택한를 **명령줄** 속성 페이지.
 
 3. 입력할 **/constexpr** 컴파일러 옵션에 **추가 옵션** 상자입니다. 선택 **확인** 하거나 **적용** 변경 내용을 저장 합니다.
 
@@ -54,5 +54,5 @@ ms.locfileid: "57414653"
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

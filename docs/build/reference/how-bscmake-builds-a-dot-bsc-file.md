@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - browse information files (.bsc), building
 ms.assetid: 8512b33e-c856-44a2-87bd-01ab10b52a95
-ms.openlocfilehash: e691e6ee2dcda0fb04735705078f1ed2ff139301
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 6f721641e021396f112bfe4c075ca0f524100d1f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57425590"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821237"
 ---
 # <a name="how-bscmake-builds-a-bsc-file"></a>BSCMAKE에서 .Bsc 파일을 빌드하는 방법
 
@@ -25,4 +25,4 @@ BSCMAKE /o 옵션으로 지정한 이름을 가진.bsc 파일을 찾습니다. /
 
 ## <a name="see-also"></a>참고자료
 
-[.Bsc 파일 빌드](../../build/reference/building-a-dot-bsc-file.md)
+[.Bsc 파일 빌드](building-a-dot-bsc-file.md)

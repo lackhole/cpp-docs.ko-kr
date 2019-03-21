@@ -9,16 +9,16 @@ helpviewer_keywords:
 - ERRORREPORT linker option
 - -ERRORREPORT linker option
 ms.assetid: f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28
-ms.openlocfilehash: 97d36e9db342e5873fc76a156b879e03af880dbf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 26cc157cb7247a3a2ea7c10b415df1160540c9ad
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447247"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818026"
 ---
 # <a name="errorreport-report-internal-linker-errors"></a>/ERRORREPORT(내부 링커 오류 보고)
 
-> **/errorreport:**[ **none** | **프롬프트** | **큐** | **보내기** ]
+> **/errorreport:**[ **none** | **prompt** | **queue** | **send** ]
 
 ## <a name="arguments"></a>인수
 
@@ -42,7 +42,7 @@ Windows 오류 보고 서비스 설정에 따라 보고를 사용 하는 경우 
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 엽니다는 **구성 속성** > **링커** > **고급** 속성 페이지.
 
@@ -54,6 +54,6 @@ Windows 오류 보고 서비스 설정에 따라 보고를 사용 하는 경우 
 
 ## <a name="see-also"></a>참고자료
 
-[/errorReport(내부 컴파일러 오류 보고)](../../build/reference/errorreport-report-internal-compiler-errors.md)<br/>
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[/errorReport(내부 컴파일러 오류 보고)](errorreport-report-internal-compiler-errors.md)<br/>
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

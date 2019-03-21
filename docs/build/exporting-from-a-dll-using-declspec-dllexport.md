@@ -10,12 +10,12 @@ helpviewer_keywords:
 - export directives [C++]
 - exporting DLLs [C++], __declspec(dllexport) keyword
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
-ms.openlocfilehash: 48592fd6162ee354d82e73228e8b144ef0f354ed
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3b6b9733776f30fc8dcbfeee709b7d24e0f0187b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420586"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810239"
 ---
 # <a name="exporting-from-a-dll-using-declspecdllexport"></a>__declspec(dllexport)을 사용하여 DLL에서 내보내기
 
@@ -49,7 +49,7 @@ class __declspec(dllexport) CExampleExport : public CObject
 #define DllExport   __declspec( dllexport )
 ```
 
-**__declspec (dllexport)** 함수 이름을 DLL의 내보내기 테이블에 저장 합니다. 테이블의 크기를 최적화 하려면를 참조 하세요 [이름 대신 서 수를 사용 하 여 DLL에서 함수 내보내기](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)합니다.
+**__declspec (dllexport)** 함수 이름을 DLL의 내보내기 테이블에 저장 합니다. 테이블의 크기를 최적화 하려면를 참조 하세요 [이름 대신 서 수를 사용 하 여 DLL에서 함수 내보내기](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)합니다.
 
 > [!NOTE]
 >  DLL 소스 코드를 Win16에서에서 Win32로 이식 하는 경우 대체의 인스턴스마다 **__export** 사용 하 여 **__declspec (dllexport)** 합니다.
@@ -58,28 +58,28 @@ class __declspec(dllexport) CExampleExport : public CObject
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [.def 파일을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)
+- [.def 파일을 사용하여 DLL에서 내보내기](exporting-from-a-dll-using-def-files.md)
 
-- [AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기](../build/exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기](exporting-and-importing-using-afx-ext-class.md)
 
-- [C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [C 함수를 C 또는 C++ 언어 실행 파일에서 사용할 수 있도록 내보내기](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C 함수를 C 또는 C++ 언어 실행 파일에서 사용할 수 있도록 내보내기](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [사용할 내보내기 방법 결정](../build/determining-which-exporting-method-to-use.md)
+- [사용할 내보내기 방법 결정](determining-which-exporting-method-to-use.md)
 
-- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL 초기화](../build/run-time-library-behavior.md#initializing-a-dll)
+- [DLL 초기화](run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
 - [__Declspec 키워드](../cpp/declspec.md)
 
-- [인라인 함수 가져오기 및 내보내기](../build/importing-and-exporting-inline-functions.md)
+- [인라인 함수 가져오기 및 내보내기](importing-and-exporting-inline-functions.md)
 
-- [상호 가져오기](../build/mutual-imports.md)
+- [상호 가져오기](mutual-imports.md)
 
 ## <a name="see-also"></a>참고자료
 
-[DLL에서 내보내기](../build/exporting-from-a-dll.md)
+[DLL에서 내보내기](exporting-from-a-dll.md)

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - InputIterator Class
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-ms.openlocfilehash: d01519870d52a51a18e25f73d5caa853d90a8792
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f5cd6afa591ba2a03fbfe492e566b0fc938ae396
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455239"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745793"
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform::Collections::InputIterator 클래스
 
@@ -58,7 +58,7 @@ InputIterator 템플릿 클래스의 형식 이름입니다.
 |[InputIterator::operator== 연산자](#operator-equality)|현재 InputIterator가 지정된 InputIterator와 같은지 여부를 나타냅니다.|
 |[InputIterator::operator-> 연산자](#operator-arrow)|현재 InputIterator가 참조하는 요소의 주소를 검색합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `InputIterator`
 
@@ -81,7 +81,7 @@ explicit InputIterator(Windows::Foundation::Collections<X>^ iter);
 
 ### <a name="parameters"></a>매개 변수
 
-*Iter*<br/>
+*iter*<br/>
 반복기 개체입니다.
 
 ## <a name="operator-arrow"></a>  InputIterator::operator-&gt; Operator
@@ -98,7 +98,7 @@ pointer operator->() const;
 
 현재 InputIterator가 지정하는 요소의 주소입니다.
 
-## <a name="operator-dereference"></a>  Inputiterator:: Operator\* 연산자
+## <a name="operator-dereference"></a>  InputIterator::operator\* Operator
 
 현재 InputIterator가 지정하는 요소에 대한 참조를 검색합니다.
 
@@ -150,7 +150,7 @@ InputIterator operator++(int);
 
 첫 번째 InputIterator 구문은 현재 InputIterator를 사전에 증가시킵니다.
 
-두 번째 구문은 현재 InputIterator를 사후에 증가시킵니다. 두 번째 구문의 `int` 형식은 실제 정수 피연산자가 아니라 후위 증가 연산을 나타냅니다.
+두 번째 구문은 현재 InputIterator를 사후에 증가시킵니다. 두 번째 구문의 `int` 형식은 실제 정수 연산자가 아니라 후위 증가 연산을 나타냅니다.
 
 ## <a name="operator-inequality"></a>  Inputiterator:: Operator! = 연산자
 
@@ -171,6 +171,6 @@ bool operator!=(const InputIterator& other) const;
 
 **true 이면** 현재 inputiterator가 같지 않은 경우 *다른*이 고, 그렇지 않으면 **false**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

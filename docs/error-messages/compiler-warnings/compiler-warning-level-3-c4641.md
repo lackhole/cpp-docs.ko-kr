@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4641
 ms.assetid: 28fe5c3e-6039-42da-9100-1312b5b15aea
-ms.openlocfilehash: eea1f28c55c8beef5fada10080ebaac9371c94e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9357088106a45026eae543f8627ea59988e73995
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477482"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818507"
 ---
 # <a name="compiler-warning-level-3-c4641"></a>컴파일러 경고(수준 3) C4641
 
@@ -19,7 +19,7 @@ XML 문서 주석에 모호한 상호 참조가 있습니다.
 
 컴파일러는 참조를 명확 하 게 확인할 수 없습니다. 이 경고를 해결 하려면 참조를 명확 하 게 하는 데 필요한 매개 변수 정보를 지정 합니다.
 
-자세한 내용은 [XML Documentation](../../ide/xml-documentation-visual-cpp.md)을 참조하세요.
+자세한 내용은 [XML Documentation](../../build/reference/xml-documentation-visual-cpp.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

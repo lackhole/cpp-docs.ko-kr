@@ -1,5 +1,5 @@
 ---
-title: '방법: C++ Interop를 사용하여 콜백 및 대리자 마샬링'
+title: '방법: C + + Interop를 사용 하 여 콜백 및 대리자 마샬링'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - marshaling [C++], callbacks and delegates
 - callbacks [C++], marshaling
 ms.assetid: 2313e9eb-5df9-4367-be0f-14b4712d8d2d
-ms.openlocfilehash: b72b99798a2c719f1ba919478132c7133fd71ca1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d3814ffbcd23168a9727b1b1d73e2c825639a9c5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615724"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739225"
 ---
-# <a name="how-to-marshal-callbacks-and-delegates-by-using-c-interop"></a>방법: C++ Interop를 사용하여 콜백 및 대리자 마샬링
+# <a name="how-to-marshal-callbacks-and-delegates-by-using-c-interop"></a>방법: C + + Interop를 사용 하 여 콜백 및 대리자 마샬링
 
 이 항목에서는 마샬링하는 방법을 보여 줍니다 및 Visual c + +를 사용 하 여 관리 및 비관리 코드 간에 대리자 (콜백을 관리 되는 버전).
 
@@ -139,6 +139,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

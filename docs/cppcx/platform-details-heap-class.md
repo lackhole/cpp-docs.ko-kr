@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details::Heap Class
 ms.assetid: d6dcf9c0-8036-433f-9eb8-c53ec49b0993
-ms.openlocfilehash: 656a9b1b018d6f04f0182d1d8decd54a92cf5fae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 26d576bfb2c079c383f7951a362c69f1cef0f6f1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466120"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743161"
 ---
 # <a name="platformdetailsheap-class"></a>Platform::Details::Heap 클래스
 
@@ -28,7 +28,7 @@ ref class Heap sealed;
 
 이 클래스는 브라우저에서 감사될 수 있으므로 보완용으로만 제공됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Platform`
 
@@ -38,6 +38,6 @@ ref class Heap sealed;
 
 **네임스페이스:** Platform::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

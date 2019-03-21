@@ -8,12 +8,12 @@ helpviewer_keywords:
 - exporting DLLs [C++], C functions in C++ executables
 - exporting functions [C++], C functions in C++ executables
 ms.assetid: b51d6e5e-37cf-4c1c-b0bf-fcf188c82f00
-ms.openlocfilehash: 0d459c0116a657e12eafa09b50b1a855243f96ea
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: b7ba2ed30615efb3b05e71cecf0ea69898feb8ba
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416503"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812436"
 ---
 # <a name="exporting-c-functions-for-use-in-c-or-c-language-executables"></a>C 함수를 C 또는 C++ 언어 실행 파일에서 사용할 수 있도록 내보내기
 
@@ -46,24 +46,24 @@ extern "C" {
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [.def 파일을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)
+- [.def 파일을 사용하여 DLL에서 내보내기](exporting-from-a-dll-using-def-files.md)
 
-- [__declspec(dllexport)을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__declspec(dllexport)을 사용하여 DLL에서 내보내기](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기](../build/exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기](exporting-and-importing-using-afx-ext-class.md)
 
-- [사용할 내보내기 방법 결정](../build/determining-which-exporting-method-to-use.md)
+- [사용할 내보내기 방법 결정](determining-which-exporting-method-to-use.md)
 
-- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL 초기화](../build/run-time-library-behavior.md#initializing-a-dll)
+- [DLL 초기화](run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [데코레이팅된 이름](../build/reference/decorated-names.md)
+- [데코레이팅된 이름](reference/decorated-names.md)
 
 - [extern을 사용하여 링크 지정](../cpp/using-extern-to-specify-linkage.md)
 
 ## <a name="see-also"></a>참고자료
 
-[DLL에서 내보내기](../build/exporting-from-a-dll.md)
+[DLL에서 내보내기](exporting-from-a-dll.md)

@@ -30,7 +30,6 @@ f1_keywords:
 - C4455
 - C4456
 - C4457
-- C4458
 - C4459
 - C4472
 - C4474
@@ -99,7 +98,6 @@ helpviewer_keywords:
 - C4455
 - C4456
 - C4457
-- C4458
 - C4459
 - C4472
 - C4474
@@ -140,12 +138,12 @@ helpviewer_keywords:
 - C4594
 - C4595
 ms.assetid: b07850a5-ae89-48ea-bf9a-f0e30939f9b9
-ms.openlocfilehash: 14195271fa0e5e399b801fd36803db4731e690f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 990560e2c05f66a010382f736735c19c17d4dc28
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491301"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816622"
 ---
 # <a name="compiler-warnings-c4400-through-c4599"></a>컴파일러 경고 C4400 ~ C4599
 
@@ -186,8 +184,8 @@ ms.locfileid: "50491301"
 |컴파일러 경고 (수준 1) C4426|헤더를 포함 한 후 변경 된 최적화 플래그 #pragma optimize () 때문일 수 있습니다.|
 |컴파일러 경고 (수준 1) C4427|'*연산자*': 상수 분할, 정의 되지 않은 동작의에서 오버플로|
 |[컴파일러 경고(수준 4) C4429](../../error-messages/compiler-warnings/compiler-warning-level-4-c4429.md)|가능한 불완전 하거나 형식이 잘못 된 유니버설 문자 이름|
-|[컴파일러 경고 (Error) C4430](../../error-messages/compiler-warnings/compiler-warning-c4430.md)|형식 지정자가 없습니다. int로 가정합니다. 참고: c + + 기본 int를 지원 하지 않습니다.|
-|[컴파일러 경고(수준 4) C4431](../../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md)|형식 지정자가 없습니다. int로 가정합니다. 참고: C에서는 더 이상 기본 int를 지원하지 않습니다.|
+|[컴파일러 경고 (Error) C4430](../../error-messages/compiler-warnings/compiler-warning-c4430.md)|형식 지정자가 없습니다. int로 가정합니다. 참고: C + + 기본 int를 지원 하지 않습니다.|
+|[컴파일러 경고(수준 4) C4431](../../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md)|형식 지정자가 없습니다. int로 가정합니다. 참고: C 기본 int를 더 이상 지원|
 |[컴파일러 경고(수준 4) C4434](../../error-messages/compiler-warnings/compiler-warning-level-4-c4434.md)|정적 생성자는 private 액세스 가능성이; 있어야 합니다. 개인 액세스로 변경합니다.|
 |[컴파일러 경고(수준 4) C4435](../../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md)|'*derived_class*': 가상 기본으로 인해/vd2의 개체 레이아웃이 변경 됩니다 '*base_class*'|
 |[컴파일러 경고(수준 1) C4436](../../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md)|동적\_캐스팅에서 가상 기본 '*base_class*'to'*derived_class*' 생성자 또는 소멸자가 부분적으로 생성 된 개체를 사용 하 여 실패할 수 있습니다|
@@ -205,9 +203,9 @@ ms.locfileid: "50491301"
 |컴파일러 경고 C4448|'*형식*1'에 없는 메타 데이터에 지정 된 기본 인터페이스입니다. 선택 합니다. '*type2*'에 런타임에 실패할 수 있습니다.|
 |컴파일러 경고 C4449|'*형식*'에서는 unsealed 형식이 '[WebHostHidden]'으로 표시 됨|
 |컴파일러 경고 C4450|'*type1*'로 표시 되어야 합니다 '[WebHostHidden]'에서 파생 되므로'*type2*'|
-|컴파일러 경고 (수준 4) C4451|'classname1::member': ref 클래스 'classname2::member'이 컨텍스트 내에서 사용 될 수 있습니다 컨텍스트 간에 개체의 잘못 된 마샬링|
+|컴파일러 경고 (수준 4) C4451|'classname1::member': 컨텍스트 간에 개체의 잘못 된 마샬링 ref 클래스 'classname2::member'이 컨텍스트 내에서 사용 될 수 있습니다.|
 |컴파일러 경고 (수준 1) C4452|'*식별자*': public 형식은 전역 범위에 있을 수 없습니다. 출력.winmd 파일 이름의 자식인 네임 스페이스에 있어야 합니다.|
-|컴파일러 경고 (수준 1) C4453|'*형식*': '[WebHostHidden]' 형식이 아닌 public 형식의 게시 된 표면에 사용할 수 없습니다는 '[WebHostHidden]'|
+|컴파일러 경고 (수준 1) C4453|'*type*': '[WebHostHidden]' 형식이 아닌 public 형식의 게시 된 표면에 사용할 수 없습니다는 '[WebHostHidden]'|
 |컴파일러 경고 (수준 1) C4454|'*함수*' [defaultoverload] 지정 하지 않고 포함 된 입력된 매개 변수의 수 이상으로 오버 로드 합니다. 선택 '*선언*' 기본 오버 로드로|
 |컴파일러 경고 (수준 1) C4455|' 연산자 *연산자*': 밑줄로 시작 하지 않는 리터럴 접미사 식별자는 예약 되어 있습니다.|
 |[컴파일러 경고(수준 4) C4456](compiler-warning-level-4-c4456.md)|선언의 '*식별자*' 이전 로컬 선언을 숨깁니다.|
@@ -242,7 +240,7 @@ ms.locfileid: "50491301"
 |컴파일러 경고 (수준 1) C4491|'*이름을*': IDL 버전 형식이 잘못 되었습니다에|
 |컴파일러 경고 (수준 1, 오류) C4492|'*function1*': 일치 기본 ref 클래스 메서드 '*function2*', 'override' 표시 되지 않지만|
 |컴파일러 경고 (수준 3, 오류) C4493|삭제 식은 효과가 없습니다 소멸자 '*형식*' 'public' 액세스 가능성이 없는|
-|컴파일러 경고 (수준 1) C4494|'*함수*': 포인터 또는 참조 하지는 함수 반환 형식 때문에 (allocator)를 무시 합니다.|
+|컴파일러 경고 (수준 1) C4494|'*함수*'. 포인터 또는 참조 하지는 함수 반환 형식 때문에 (allocator)를 무시 합니다.|
 |컴파일러 경고 C4495|비표준 확장이 사용 '_': 명시적 기본 클래스 이름으로 대체|
 |컴파일러 경고 C4496|'for each' 비표준 확장이 사용: ranged-for 문으로 대체|
 |컴파일러 경고 C4497|비표준 확장이 사용 되는 'sealed': '최종'으로 바꾸기|
@@ -273,7 +271,7 @@ ms.locfileid: "50491301"
 |[컴파일러 경고(수준 1) C4532](../../error-messages/compiler-warnings/compiler-warning-level-1-c4532.md)|'continue': 종료 처리 하는 동안 ' __finally/finally ' 블록 밖으로 점프 동작이 정의 되지 않았습니다|
 |[컴파일러 경고(수준 1) C4533](../../error-messages/compiler-warnings/compiler-warning-level-1-c4533.md)|초기화의 '*변수에*'의해 생략 되었습니다.'*goto 레이블*'|
 |[컴파일러 경고(수준 3) C4534](../../error-messages/compiler-warnings/compiler-warning-level-3-c4534.md)|'*생성자*'됩니다 ' 클래스/구조체 '에 대 한 기본 생성자를 '*식별자*' 인해 기본 인수|
-|[컴파일러 경고(수준 3) C4535](../../error-messages/compiler-warnings/compiler-warning-level-3-c4535.md)|호출 _set_se_translator /EHa 필요|
+|[컴파일러 경고(수준 3) C4535](../../error-messages/compiler-warnings/compiler-warning-level-3-c4535.md)|calling _set_se_translator() requires /EHa|
 |[컴파일러 경고(수준 4) C4536](../../error-messages/compiler-warnings/compiler-warning-level-4-c4536.md)|'*typename*': 형식-이름이 메타 데이터 한계인 초과 '*character_limit*' 문자|
 |[컴파일러 경고(수준 1) C4537](../../error-messages/compiler-warnings/compiler-warning-level-1-c4537.md)|'*개체*': '.' 비 UDT 형식에 적용|
 |[컴파일러 경고(수준 3) C4538](../../error-messages/compiler-warnings/compiler-warning-level-3-c4538.md)|'*형식*':이 형식에서 const/volatile 한정자는 지원 되지 않습니다|
@@ -306,7 +304,7 @@ ms.locfileid: "50491301"
 |컴파일러 경고 (수준 3) C4569|'*함수*': 멤버가 명시적 재정의의 시그니처와 일치|
 |[컴파일러 경고(수준 3) C4570](../../error-messages/compiler-warnings/compiler-warning-level-3-c4570.md)|'*형식*': 명시적으로 선언 되지 추상 않았지만 추상 함수를가지고|
 |[컴파일러 경고(수준 4) C4571](../../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md)|Visual c + + 7.1; 변경 알림:부터 의미 체계 구조적된 예외 (SEH) 변경 되었습니다.|
-|[컴파일러 경고(수준 1) C4572](../../error-messages/compiler-warnings/compiler-warning-level-1-c4572.md)|'...'를 사용 합니다 /clr [ParamArray] 특성은 사용 되지 않습니다. 대신|
+|[컴파일러 경고(수준 1) C4572](../../error-messages/compiler-warnings/compiler-warning-level-1-c4572.md)|[ParamArray] 특성은 사용 되지 않습니다 /clr을 사용 하 여 '...' 대신|
 |컴파일러 경고 (수준 1) C4573|사용 '*람다 함수*' 컴파일러 'this'이 하지만 캡처에 필요한 현재 기본 캡처 모드를 허용 하지 않습니다|
 |컴파일러 경고 (수준 4) C4574|'*식별자*'0 '으로 정의 된': '#if 식별자'를 사용 하려고 했습니까?|
 |컴파일러 경고 (수준 1) C4575|와 호환 되지 않는 ' __vectorcall'는 ' / clr' 옵션: '__stdcall'으로 변환|
@@ -318,8 +316,8 @@ ms.locfileid: "50491301"
 |컴파일러 경고 (수준 4) C4582|'*형식*': 생성자가 암시적으로 호출 되지 않습니다|
 |컴파일러 경고 (수준 4) C4583|'*형식*': 소멸자가 암시적으로 호출 되지 않습니다|
 |[컴파일러 경고(수준 1) C4584](../../error-messages/compiler-warnings/compiler-warning-level-1-c4584.md)|'*class1*': 기본 클래스 '*class2*'의 기본 클래스는 이미'*class3*'|
-|컴파일러 경고 (수준 1, 오류) C4585|'*클래스*': 'public ref class' sealed 여야 하거나 또는 기존의에서 파생 되는 WinRT 클래스 봉인 되지 않은|
-|컴파일러 경고 (수준 1, 오류) C4586|'*형식*': public 형식은 'Windows' 라는 최상위 네임 스페이스에서 선언할 수 없습니다|
+|컴파일러 경고 (수준 1, 오류) C4585|'*class*': WinRT 'public ref 클래스' sealed 여야 하거나 또는 기존의 봉인 되지 않은 클래스에서 파생|
+|컴파일러 경고 (수준 1, 오류) C4586|'*type*': 공용 형식 'Windows' 라는 최상위 네임 스페이스에서 선언할 수 없습니다.|
 |컴파일러 경고 (수준 1) C4587|'*anonymous_structure*': 동작 변경: 생성자가 더 이상 암시적으로 호출|
 |컴파일러 경고 (수준 1) C4588|'*anonymous_structure*': 동작 변경: 소멸자가 더 이상 암시적으로 호출 되 고 없습니다.|
 |컴파일러 경고 (수준 1) C4591|'constexpr' 호출 깊이 제한인 *번호* 초과 (/ constexpr:depth\<번호 >)|

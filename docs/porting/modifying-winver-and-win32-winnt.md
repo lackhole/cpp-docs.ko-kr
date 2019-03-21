@@ -5,18 +5,18 @@ helpviewer_keywords:
 - WINVER in an upgraded Visual C++ project
 - _WIN32_WINNT in an upgraded Visual C++ project
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
-ms.openlocfilehash: 3381b6657f78144e7804112135c437824d8555fe
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: a936a54620590d4dc21f43acd50abdc49d77ffa8
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332247"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748738"
 ---
 # <a name="modifying-winver-and-win32winnt"></a>WINVER 및 _WIN32_WINNT 수정
 
 Visual C++에서는 더 이상 Windows 95, Windows 98, Windows ME, Windows NT 또는 Windows 2000을 대상으로 지정할 수 없습니다. **WINVER** 또는 **_WIN32_WINNT** 매크로가 이러한 Windows 버전 중 하나에 할당되어 있으면 해당 매크로를 수정해야 합니다. **WINVER** 또는 **_WIN32_WINNT** 매크로가 더 이상 지원되지 않는 Windows 버전에 할당되어 있는 경우 이전 버전의 Visual C++를 사용하여 만든 프로젝트를 업그레이드하면 해당 매크로와 관련된 컴파일 오류가 표시될 수 있습니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 매크로를 수정하려면 헤더 파일(예: Windows를 대상으로 하는 프로젝트를 만들 때 포함된 targetver.h)에서 다음 줄을 추가합니다.
 
@@ -49,9 +49,10 @@ Visual C++에서는 더 이상 Windows 95, Windows 98, Windows ME, Windows NT �
 찾고 있는 SDKDDKVer.h의 복사본에 나열된 이러한 모든 Windows 버전이 표시되지 않는 경우 이전 버전의 Windows SDK를 사용하고 있을 수 있습니다. 기본적으로 Visual Studio 2017의 Win32 프로젝트는 Windows 10 SDK를 사용합니다.
 
 > [!NOTE]
-> 내부 MFC 헤더를 응용 프로그램에 포함하는 경우에는 값 작동 여부가 보장되지 않습니다.
+> 내부 MFC 헤더를 애플리케이션에 포함하는 경우에는 값 작동 여부가 보장되지 않습니다.
 
-`/D` 컴파일러 옵션을 사용하여 이 매크로를 정의할 수도 있습니다. 자세한 내용은 [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md)을 참조하세요.
+
+  `/D` 컴파일러 옵션을 사용하여 이 매크로를 정의할 수도 있습니다. 자세한 내용은 [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md)을 참조하세요.
 
 이러한 매크로의 의미에 대한 자세한 내용은 [Windows 헤더 사용](/windows/desktop/WinProg/using-the-windows-headers)을 참조하세요.
 

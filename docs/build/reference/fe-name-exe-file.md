@@ -10,12 +10,12 @@ helpviewer_keywords:
 - /Fe compiler option [C++]
 - Fe compiler option [C++]
 ms.assetid: 49f594fd-5e94-45fe-a1bf-7c9f2abb6437
-ms.openlocfilehash: cac4dc0908c86574ef5b57c4436f734f94c0bb49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5901ef1997cfea84c97b6d91b30335ff7dbc1d9f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473413"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818052"
 ---
 # <a name="fe-name-exe-file"></a>/Fe(EXE 파일 이름 지정)
 
@@ -23,7 +23,7 @@ ms.locfileid: "50473413"
 
 ## <a name="syntax"></a>구문
 
-> **/Fe**[_pathname_] **/Fe:** _경로 이름_
+> **/Fe**[_pathname_] **/Fe:** _pathname_
 
 ### <a name="arguments"></a>인수
 
@@ -40,11 +40,11 @@ ms.locfileid: "50473413"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 엽니다는 **구성 속성** > **링커** > **일반** 속성 페이지.
 
-1. 수정 된 **출력 파일** 속성입니다. 선택할 **확인** 변경 내용을 저장 합니다.
+1. 수정 된 **출력 파일** 속성입니다. **확인**을 선택하여 변경 내용을 저장합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
@@ -68,7 +68,7 @@ CL /FeC:\BIN\ *.C
 
 ## <a name="see-also"></a>참고자료
 
-[출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[경로 이름 지정](../../build/reference/specifying-the-pathname.md)<br/>
+[출력 파일(/F) 옵션](output-file-f-options.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[경로 이름 지정](specifying-the-pathname.md)<br/>

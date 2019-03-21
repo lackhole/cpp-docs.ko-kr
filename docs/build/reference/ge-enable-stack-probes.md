@@ -12,12 +12,12 @@ helpviewer_keywords:
 - stack checking calls
 - Ge compiler option [C++]
 ms.assetid: 4b54deae-4e3c-4bfa-95f3-ba23590f7258
-ms.openlocfilehash: 34799529517e0263f71ce4f6f29537bf4b59056f
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a785ec041370e0bcbb2ce8b698bfba89235a0a0c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57415424"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812137"
 ---
 # <a name="ge-enable-stack-probes"></a>/Ge(스택 조사 사용)
 
@@ -31,15 +31,15 @@ ms.locfileid: "57415424"
 
 ## <a name="remarks"></a>설명
 
-이 메커니즘은 스택 프로브 기능을 다시 작성할 때 유용 합니다. 사용 하는 것이 좋습니다 [/Gh (_penter 후크 함수 사용)](../../build/reference/gh-enable-penter-hook-function.md) 스택 프로브를 다시 작성 하는 대신 합니다.
+이 메커니즘은 스택 프로브 기능을 다시 작성할 때 유용 합니다. 사용 하는 것이 좋습니다 [/Gh (_penter 후크 함수 사용)](gh-enable-penter-hook-function.md) 스택 프로브를 다시 작성 하는 대신 합니다.
 
-[/Gs (컨트롤 스택 검사 호출)](../../build/reference/gs-control-stack-checking-calls.md) 동일한 효과가 있습니다.
+[/Gs (컨트롤 스택 검사 호출)](gs-control-stack-checking-calls.md) 동일한 효과가 있습니다.
 
-**/Ge** 는 사용 되지 않습니다; Visual Studio 2005부터 컴파일러가 자동으로 스택 검사를 수행 합니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](../../build/reference/compiler-options-listed-by-category.md)합니다.
+**/Ge** 는 사용 되지 않습니다; Visual Studio 2005부터 컴파일러가 자동으로 스택 검사를 수행 합니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -53,5 +53,5 @@ ms.locfileid: "57415424"
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

@@ -1,18 +1,18 @@
 ---
-title: '방법: 클래스 및 구조체 정의 및 사용(C++/CLI)'
+title: '방법: 클래스 및 구조체 정의 및 사용 (C + + /cli CLI)'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - structs [C++]
 - classes [C++], instantiating
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
-ms.openlocfilehash: 028e8622c034920e993444458c52536d2e3ec6de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2c43234ca05c661d8f3d920b1129256a7550a5e2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436163"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751832"
 ---
-# <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>방법: 클래스 및 구조체 정의 및 사용(C++/CLI)
+# <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>방법: 클래스 및 구조체 정의 및 사용 (C + + /cli CLI)
 
 이 문서에서는 정의 및 사용자 정의 참조 형식 및 C + 값 형식을 사용 하는 방법을 보여 줍니다. + CLI입니다.
 
@@ -220,7 +220,8 @@ in Public_Class
 
 ##  <a name="BKMK_Member_visibility"></a> 멤버 표시 유형
 
-`public`, `protected` 및 `private` 액세스 지정자 쌍을 사용하여 어셈블리 외부에서 public 클래스의 멤버에 액세스하는 것과 다르게 동일한 어셈블리 내에서 public 클래스의 멤버에 액세스할 수 있습니다.
+
+  `public`, `protected` 및 `private` 액세스 지정자 쌍을 사용하여 어셈블리 외부에서 public 클래스의 멤버에 액세스하는 것과 다르게 동일한 어셈블리 내에서 public 클래스의 멤버에 액세스할 수 있습니다.
 
 이 표에서는 다양한 액세스 지정자의 효과를 요약하여 보여 줍니다.
 
@@ -734,7 +735,8 @@ class classname {
 
 CLR 가비지 수집기는 사용하지 않은 관리되는 개체를 삭제하고 더 이상 필요하지 않은 경우 메모리를 해제합니다. 그러나 형식에서 가비지 수집기가 해제하는 방법을 알지 못하는 리소스를 사용할 수도 있습니다. 이러한 리소스를 관리되지 않는 리소스(예: 네이티브 파일 핸들)라고 합니다. 종료자에서 관리되지 않는 리소스는 모두 해제하는 것이 좋습니다. 관리되는 리소스는 가비지 수집기에 의해 불명확하게 해제되므로 종료자에서 관리되는 리소스가 안전하다고 할 수 없습니다. 이는 가비지 수집기가 이미 관리되는 리소스를 정리했을 수도 있기 때문입니다.
 
-Visual C++ 종료자와 <xref:System.Object.Finalize%2A> 메서드는 같지 않습니다. CLR 문서는 종료자와 <xref:System.Object.Finalize%2A> 메서드를 같은 뜻으로 사용합니다. <xref:System.Object.Finalize%2A> 메서드는 클래스 상속 체인의 각 종료자를 호출하는 가비지 수집기에 의해 호출됩니다. Visual C++ 소멸자와 달리 파생 클래스 종료자가 호출되면 컴파일러는 모든 기본 클래스의 종료자를 호출하지 않습니다.
+Visual C++ 종료자와 <xref:System.Object.Finalize%2A> 메서드는 같지 않습니다. CLR 문서는 종료자와 <xref:System.Object.Finalize%2A> 메서드를 같은 뜻으로 사용합니다. 
+  <xref:System.Object.Finalize%2A> 메서드는 클래스 상속 체인의 각 종료자를 호출하는 가비지 수집기에 의해 호출됩니다. Visual C++ 소멸자와 달리 파생 클래스 종료자가 호출되면 컴파일러는 모든 기본 클래스의 종료자를 호출하지 않습니다.
 
 Visual C++ 컴파일러는 리소스의 명확한 해제를 지원하므로 <xref:System.IDisposable.Dispose%2A> 또는 <xref:System.Object.Finalize%2A> 메서드를 구현하지 마십시오. 그러나 이러한 메서드에 익숙한 경우 Visual C++ 종료자 및 소멸자가 <xref:System.IDisposable.Dispose%2A> 패턴에 매핑하도록 종료자를 호출하는 방법은 다음과 같습니다.
 
@@ -785,7 +787,8 @@ ref struct A {
 
 소멸자의 존재가 종료자의 존재를 의미하지는 않습니다. 그러나 종료자의 존재는 소멸자를 정의해야 하고 해당 소멸자에서 종료자를 호출해야 함을 의미합니다. 이는 관리되지 않은 리소스의 명확한 해제를 제공합니다.
 
-<xref:System.GC.SuppressFinalize%2A>를 통해 소멸자를 호출하여 개체의 종료를 막습니다. 소멸자가 호출되지 않으면 해당 형식의 종료자가 결국 가비지 수집기에 의해 호출됩니다.
+
+  <xref:System.GC.SuppressFinalize%2A>를 통해 소멸자를 호출하여 개체의 종료를 막습니다. 소멸자가 호출되지 않으면 해당 형식의 종료자가 결국 가비지 수집기에 의해 호출됩니다.
 
 소멸자를 호출하여 개체의 리소스를 명확하게 정리하면 CLR이 불명확하게 개체를 종료하는 것에 비해 성능을 향상시킬 수 있습니다.
 
@@ -803,7 +806,8 @@ Visual c + +로 작성 된 개이고 사용 하 여 컴파일된 코드 **/clr**
 
 다른 언어로 작성된 클라이언트에 의해 형식이 사용 중인 경우 소멸자가 다음과 같이 호출됩니다.
 
-- <xref:System.IDisposable.Dispose%2A>에 대한 호출인 경우
+- 
+  <xref:System.IDisposable.Dispose%2A>에 대한 호출인 경우
 
 - 형식의 `Dispose(void)`에 대한 호출인 경우
 
@@ -912,7 +916,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)<br/>
-[클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)
+[클래스 및 구조체(C++)](../windows/classes-and-structs-cpp-component-extensions.md)<br/>
+[클래스 및 구조체(C++)](../windows/classes-and-structs-cpp-component-extensions.md)

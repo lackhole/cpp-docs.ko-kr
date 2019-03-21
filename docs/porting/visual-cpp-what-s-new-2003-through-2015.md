@@ -2,12 +2,12 @@
 title: Visual C++ 2003 ~ 2015의 새로운 기능
 ms.date: 11/04/2016
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: bc0092aeb8910f960befc174c1f71ce05c4eb131
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: fdd1d2c2183d06defe413340b8aef05c5bd61750
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894356"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749154"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ 2003 ~ 2015의 새로운 기능
 
@@ -1570,7 +1570,8 @@ C++11 명시적 변환 연산자, 이니셜라이저 목록, 범위가 지정된
 - 자동 벡터화 도우미에서 더 많은 C++ 패턴을 인식하고 최적화하므로 코드를 더 빠르게 실행할 수 있습니다.
 - ARM 플랫폼 및 Atom 마이크로 아키텍처 코드 품질이 향상되었습니다.
 - __vectorcall 호출 규칙이 추가되었습니다. 백터 레지스터를 사용하는 __vectorcall 호출 규칙을 통해 벡터 형식 인수를 전달합니다.
-- 새 링커 옵션이 제공됩니다. `/Gw`(컴파일러) 및 `/Gy`(어셈블러) 스위치를 사용하면 링커 최적화에서 간결한 이진 파일을 생성할 수 있습니다.
+- 새 링커 옵션이 제공됩니다. 
+  `/Gw`(컴파일러) 및 `/Gy`(어셈블러) 스위치를 사용하면 링커 최적화에서 간결한 이진 파일을 생성할 수 있습니다.
 - C++ AMP 공유 메모리를 지원하여 CPU와 GPU 간의 데이터 복사를 줄이거나 제거합니다.
 
 ### <a name="profile-guided-optimization-pgo-enhancements"></a>향상된 PGO(프로필 기반 최적화)
@@ -1743,7 +1744,7 @@ Visual Studio 2012에서는 **병렬 태스크** 창과 **병렬 스택** 창 �
 
 **참조 강조 표시** 기호를 선택하면 현재 파일에서 기호의 모든 인스턴스가 강조 표시됩니다. **Ctrl**+**Shift**+**위쪽 화살표** 또는 **Ctrl**+**Shift**+**아래쪽 화살표**를 눌러 강조 표시된 참조 간에 이동합니다. 이 기능은 **텍스트 편집기** > **C/C++** > **고급** 아래의 **옵션** 대화 상자에서 해제할 수 있습니다.
 
-### <a name="application-lifecycle-management-tools"></a>애플리케이션 수명 주기 관리 도구
+### <a name="application-lifecycle-management-tools"></a>Application Lifecycle Management 도구
 
 #### <a name="static-code-analysis"></a>정적 코드 분석
 

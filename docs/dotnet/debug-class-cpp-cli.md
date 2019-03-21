@@ -1,4 +1,4 @@
-﻿---
+---
 title: Debug 클래스(C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +6,12 @@ helpviewer_keywords:
 - .NET Framework [C++], Debug class
 - Debug class
 ms.assetid: 076bd528-1b6f-4e8a-a372-eb5849cf969a
-ms.openlocfilehash: ae400783112ca44a75f1224a9e8d6ebe52414070
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3a262a0d2ef429cb94f4648eb7c7180e7b130279
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662477"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743615"
 ---
 # <a name="debug-class-ccli"></a>Debug 클래스(C++/CLI)
 
@@ -91,6 +91,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

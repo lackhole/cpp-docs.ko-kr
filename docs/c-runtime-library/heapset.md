@@ -22,12 +22,12 @@ helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - _heapset function
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
-ms.openlocfilehash: c93624b8b56fb53eb15263dbd0d203cd9130eacf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 41c39914964de74401dcdef847b2c44f623af249
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528195"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742118"
 ---
 # <a name="heapset"></a>_heapset
 
@@ -62,7 +62,7 @@ int _heapset(
 
 또한 오류가 발생하는 경우 `_heapset` 는 `errno` 를 `ENOSYS`로 설정합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `_heapset` 함수는 실수로 덮어쓴 사용 가능한 메모리 위치 또는 노드를 표시합니다.
 
@@ -76,7 +76,7 @@ int _heapset(
 
 호환성에 대한 자세한 내용은 소개 단원의 [호환성](../c-runtime-library/compatibility.md) 부분을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 // crt_heapset.c

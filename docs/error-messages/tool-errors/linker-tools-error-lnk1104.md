@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1104
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
-ms.openlocfilehash: 0c5c0b84ad66fb44dad171710ff8915ca22b8ccf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eadeeb7ac19e3975a37a1364502b33400018cb05
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462792"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818273"
 ---
 # <a name="linker-tools-error-lnk1104"></a>링커 도구 오류 LNK1104
 
@@ -35,11 +35,11 @@ ms.locfileid: "50462792"
 
 이전 버전의 Visual Studio를 사용 하 여 만든 프로젝트를 빌드하는 경우 플랫폼 도구 집합 및 해당 버전에 대 한 라이브러리를 설치할 수 없습니다. Msvcr100.lib, 같은 버전 관리 된 라이브러리 이름에 대 한 오류 메시지가 발생 하는 경우 원인 때문일 수 있습니다. 이 문제를 해결 하려면 두 가지 옵션이 있습니다:를 설치한 후 현재 플랫폼 도구 집합을 사용 하도록 프로젝트를 업그레이드할 수 있습니다 또는 이전 도구 집합을 설치 하 고 변경 하지 않고 프로젝트를 빌드할 수 있습니다. 자세한 내용은 [이전 버전의 Visual c + +에서 프로젝트 업그레이드](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md) 하 고 [이전 프로젝트를 빌드하려면 Visual Studio의 네이티브 멀티 타기 팅을 사용](../../porting/use-native-multi-targeting.md)합니다.
 
-새 대상 플랫폼 및 구성에 대 한를 빌드할 때이 오류를 표시 하는 프로젝트 구성 또는 플랫폼 도구 집합에 대 한 라이브러리를 설치할 수 있습니다. 있는지 확인 합니다 **플랫폼 도구 집합** 및 **Windows SDK 버전** 에 지정 된 합니다 [의 일반 속성 페이지](../../ide/general-property-page-project.md) 프로젝트에 설치 되어 있는지 확인 필수 라이브러리에서 사용할 수는 **라이브러리 디렉터리** 에 지정 된 합니다 [VC + + Directories Property Page](../../ide/vcpp-directories-property-page.md) 구성 설정에 대 한 합니다. 디버그에 대 한 별도 설정이 및 32 비트 및 64 비트 구성 뿐만 아니라 소매 구성을 하나 빌드의 작동 하지만 오류가 발생 하면 다른 경우 세워야 설정이 올바른지, 그리고 필요한 도구 및 라이브러리에 대해 설치 된 모든 빌드할 구성입니다.
+새 대상 플랫폼 및 구성에 대 한를 빌드할 때이 오류를 표시 하는 프로젝트 구성 또는 플랫폼 도구 집합에 대 한 라이브러리를 설치할 수 있습니다. 있는지 확인 합니다 **플랫폼 도구 집합** 및 **Windows SDK 버전** 에 지정 된 합니다 [의 일반 속성 페이지](../../build/reference/general-property-page-project.md) 프로젝트에 설치 되어 있는지 확인 필수 라이브러리에서 사용할 수는 **라이브러리 디렉터리** 에 지정 된 합니다 [VC + + Directories Property Page](../../build/reference/vcpp-directories-property-page.md) 구성 설정에 대 한 합니다. 디버그에 대 한 별도 설정이 및 32 비트 및 64 비트 구성 뿐만 아니라 소매 구성을 하나 빌드의 작동 하지만 오류가 발생 하면 다른 경우 세워야 설정이 올바른지, 그리고 필요한 도구 및 라이브러리에 대해 설치 된 모든 빌드할 구성입니다.
 
-Visual Studio IDE 프로젝트를 빌드하는 다른 컴퓨터에서 복사 된를 사용 하는 경우 라이브러리에 대 한 설치 위치는 달라질 수 있습니다. 확인 합니다 **라이브러리 디렉터리** 속성에는 [VC + + Directories Property Page](../../ide/vcpp-directories-property-page.md) 프로젝트에 대 한 하 고 필요한 경우 업데이트 합니다. 참조를 편집 하려면 IDE에서 설정 된 현재 라이브러리 경로 대 한 드롭다운 컨트롤을 선택 합니다 **라이브러리 디렉터리** 속성 선택 **편집**합니다. **값을 평가** 부분을 **라이브러리 디렉터리** 대화 검색 라이브러리 파일에 대 한 현재 경로 나열 합니다.
+Visual Studio IDE 프로젝트를 빌드하는 다른 컴퓨터에서 복사 된를 사용 하는 경우 라이브러리에 대 한 설치 위치는 달라질 수 있습니다. 확인 합니다 **라이브러리 디렉터리** 속성에는 [VC + + Directories Property Page](../../build/reference/vcpp-directories-property-page.md) 프로젝트에 대 한 하 고 필요한 경우 업데이트 합니다. 참조를 편집 하려면 IDE에서 설정 된 현재 라이브러리 경로 대 한 드롭다운 컨트롤을 선택 합니다 **라이브러리 디렉터리** 속성 선택 **편집**합니다. **값을 평가** 부분을 **라이브러리 디렉터리** 대화 검색 라이브러리 파일에 대 한 현재 경로 나열 합니다.
 
-이 오류는 Windows SDK의 경로 만료 된 경우에 발생할 수 있습니다. Visual Studio의 버전 보다 최신 Windows SDK의 버전을 설치한 경우 경로에 지정 되었는지 확인 합니다 [VC + + Directories Property Page](../../ide/vcpp-directories-property-page.md) 새 SDK와 일치 하도록 업데이트 됩니다. 개발자 명령 프롬프트를 사용 하는 경우 환경 변수를 초기화 하는 배치 파일을 새 SDK 경로 대 한 업데이트 되었는지 확인 합니다. 업데이트 된 Sdk를 설치 하려면 Visual Studio 설치 관리자를 사용 하 여이 문제를 방지할 수 있습니다.
+이 오류는 Windows SDK의 경로 만료 된 경우에 발생할 수 있습니다. Visual Studio의 버전 보다 최신 Windows SDK의 버전을 설치한 경우 경로에 지정 되었는지 확인 합니다 [VC + + Directories Property Page](../../build/reference/vcpp-directories-property-page.md) 새 SDK와 일치 하도록 업데이트 됩니다. 개발자 명령 프롬프트를 사용 하는 경우 환경 변수를 초기화 하는 배치 파일을 새 SDK 경로 대 한 업데이트 되었는지 확인 합니다. 업데이트 된 Sdk를 설치 하려면 Visual Studio 설치 관리자를 사용 하 여이 문제를 방지할 수 있습니다.
 
 ### <a name="cannot-open-a-third-party-library-file"></a>타사 라이브러리 파일을 열 수 없습니다.
 
@@ -51,7 +51,7 @@ Visual Studio IDE 프로젝트를 빌드하는 다른 컴퓨터에서 복사 된
 
 - 라이브러리 설치 되지 않은 다른 라이브러리에 종속 될 수 있습니다.
 
-경로 문제를 해결 하려면 LIB 환경 변수 설정 되 고 빌드하면 모든 구성에 사용할 라이브러리에 대 한 모든 디렉터리를 포함 하는지 확인 합니다. LIB 변수에 설정한 IDE에는 **라이브러리 디렉터리** 속성에는 [VC + + Directories Property Page](../../ide/vcpp-directories-property-page.md). 필요한 라이브러리를 포함 하는 모든 디렉터리 빌드하면 모든 구성에 대 한 여기에 나열 되어 있는지 확인 합니다.
+경로 문제를 해결 하려면 LIB 환경 변수 설정 되 고 빌드하면 모든 구성에 사용할 라이브러리에 대 한 모든 디렉터리를 포함 하는지 확인 합니다. LIB 변수에 설정한 IDE에는 **라이브러리 디렉터리** 속성에는 [VC + + Directories Property Page](../../build/reference/vcpp-directories-property-page.md). 필요한 라이브러리를 포함 하는 모든 디렉터리 빌드하면 모든 구성에 대 한 여기에 나열 되어 있는지 확인 합니다.
 
 라이브러리 디렉터리를 제공 하는 경우 표준 라이브러리 디렉터리를 재정의 하는, 사용할 수는 [/LIBPATH](../../build/reference/libpath-additional-libpath.md) 옵션 명령줄 또는 IDE에서 사용할 수는 **추가 라이브러리 디렉터리** 속성을 **구성 속성 > 링커 > 일반** 프로젝트 속성 페이지.
 
@@ -59,7 +59,7 @@ Visual Studio IDE 프로젝트를 빌드하는 다른 컴퓨터에서 복사 된
 
 ### <a name="cannot-open-a-file-built-by-your-project"></a>프로젝트를 통해 빌드된 파일을 열 수 없습니다.
 
-하는 경우이 오류가 나타날 수 있습니다 파일 *filename* 솔루션 하 여 작성 됩니다 있지만 링커 액세스 하려고 할 때 아직 존재 하지 않습니다. 이 하나의 프로젝트가 다른 프로젝트에 따라 달라 집니다 하지만 프로젝트가 올바른 순서로 빌드되지 않는 경우 발생할 수 있습니다. 이 문제를 해결 하려면 누락 된 파일을 필요할 때 까지는 빌드는 하므로 파일을 사용 하는 프로젝트에 프로젝트 참조 설정 되어 있는지 확인 합니다. 자세한 내용은 [Visual c + + 프로젝트에서 참조 추가](../../ide/adding-references-in-visual-cpp-projects.md) 하 고 [프로젝트의 참조 관리](/visualstudio/ide/managing-references-in-a-project)합니다.
+하는 경우이 오류가 나타날 수 있습니다 파일 *filename* 솔루션 하 여 작성 됩니다 있지만 링커 액세스 하려고 할 때 아직 존재 하지 않습니다. 이 하나의 프로젝트가 다른 프로젝트에 따라 달라 집니다 하지만 프로젝트가 올바른 순서로 빌드되지 않는 경우 발생할 수 있습니다. 이 문제를 해결 하려면 누락 된 파일을 필요할 때 까지는 빌드는 하므로 파일을 사용 하는 프로젝트에 프로젝트 참조 설정 되어 있는지 확인 합니다. 자세한 내용은 [Visual c + + 프로젝트에서 참조 추가](../../build/adding-references-in-visual-cpp-projects.md) 하 고 [프로젝트의 참조 관리](/visualstudio/ide/managing-references-in-a-project)합니다.
 
 ### <a name="cannot-open-file-cprogramobj"></a>파일을 열 수 없습니다. ' c:\\Program.obj'
 
@@ -67,7 +67,7 @@ Visual Studio IDE 프로젝트를 빌드하는 다른 컴퓨터에서 복사 된
 
 명령줄 빌드에 대 한이 문제를 해결 하려면 다음을 확인 합니다 [/LIBPATH](../../build/reference/libpath-additional-libpath.md) 매개 변수, LIB 환경 변수에 지정 된 경로 및 경로 명령줄에 지정 된 옵션 및 따옴표 모든 경로 사용 해야 합니다. 공백을 포함 하는 합니다.
 
-IDE에서이 문제를 해결 하려면 다음을 확인 합니다 **라이브러리 디렉터리** 속성에는 [구성 속성 > VC + + 디렉터리](../../ide/vcpp-directories-property-page.md) 속성 페이지에서를 **추가 라이브러리 디렉터리** 속성에는 **구성 속성 > 링커 > 일반** 속성 페이지 및 **추가 종속성** 속성에는 **구성 속성 > 링커 > 입력** 프로젝트 속성 페이지. 필요한 경우 필요한 라이브러리가 포함 된 모든 디렉터리 경로 큰따옴표에 래핑됩니다 있는지 확인 합니다.
+IDE에서이 문제를 해결 하려면 다음을 확인 합니다 **라이브러리 디렉터리** 속성에는 [구성 속성 > VC + + 디렉터리](../../build/reference/vcpp-directories-property-page.md) 속성 페이지에서를 **추가 라이브러리 디렉터리** 속성에는 **구성 속성 > 링커 > 일반** 속성 페이지 및 **추가 종속성** 속성에는 **구성 속성 > 링커 > 입력** 프로젝트 속성 페이지. 필요한 경우 필요한 라이브러리가 포함 된 모든 디렉터리 경로 큰따옴표에 래핑됩니다 있는지 확인 합니다.
 
 ### <a name="other-common-issues"></a>다른 일반적인 문제
 
@@ -81,7 +81,7 @@ IDE에서이 문제를 해결 하려면 다음을 확인 합니다 **라이브�
 
 이 오류가 나타날 수 있습니다 때에 대 한 경로 *filename* 260 자 보다 더 확장 됩니다. 이름을 변경 하거나 필요한 파일의 경로를 단축 하는 데 필요한 경우에 디렉터리 구조를 다시 정렬 합니다.
 
-파일이 너무 큽니다.이 오류가 발생할 수 있습니다. 라이브러리 또는 개체 파일 보다 크기가 1gb 32 비트 링커에 대 한 문제가 발생할 수 있습니다. 이 문제에 대 한 가능한 해결 64 비트 도구 집합을 사용 하는 것입니다. 명령줄에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 명령줄에서 64 비트 Visual c + + 도구를 사용 하도록 설정](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)합니다. IDE에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 [64 비트 컴파일러 및 도구를 사용 하 여 MSBuild를 사용 하 여](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project) 하 고이 Stack Overflow 게시물: [amd64 네이티브 도구 체인을 사용 하 여 Visual Studio를 확인 하는 방법을](http://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055)합니다.
+파일이 너무 큽니다.이 오류가 발생할 수 있습니다. 라이브러리 또는 개체 파일 보다 크기가 1gb 32 비트 링커에 대 한 문제가 발생할 수 있습니다. 이 문제에 대 한 가능한 해결 64 비트 도구 집합을 사용 하는 것입니다. 명령줄에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 명령줄에서 64 비트 Visual c + + 도구를 사용 하도록 설정](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)합니다. IDE에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 [64 비트 컴파일러 및 도구를 사용 하 여 MSBuild를 사용 하 여](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project) 및이 Stack Overflow 게시물: [Visual Studio amd64 네이티브 도구 체인을 사용 하는 방법을](http://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055)합니다.
 
 권한이 부족 하 여 파일에 액세스 하는 경우이 오류가 발생할 수 있습니다 *filename*합니다. 이 라이브러리 파일을 보호 된 시스템 디렉터리에 액세스 하려면 일반 사용자 계정 및 시도 사용 하거나 자신의 원래 사용 권한을 가진 다른 사용자가에서 복사 된 파일을 사용 하는 경우에 발생할 수 있습니다 설정 합니다. 이 문제를 해결 하려면 파일을 쓰기 가능한 프로젝트 디렉터리로 이동 합니다. 파일 쓰기 가능한 디렉터리에 액세스할 수 있는 권한이 있지만 경우 관리자 명령 프롬프트를 사용 하 여 수 있으며 파일의 소유권을 takeown.exe 명령을 실행할 수 있습니다.
 

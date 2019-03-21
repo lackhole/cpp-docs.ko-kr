@@ -2,12 +2,12 @@
 title: 형식 시스템(C++/CX)
 ms.date: 02/03/2017
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe
-ms.openlocfilehash: 9c8e09dded3743d5928fd1a4db797c6e647ec465
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fbc7a178621624e396c80509703ce1b5b4c19162
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445985"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745956"
 ---
 # <a name="type-system-ccx"></a>형식 시스템(C++/CX)
 
@@ -17,15 +17,15 @@ Windows 런타임 아키텍처를 사용 하 여 다음을 사용할 수 있습�
 
 C++/CX 언어 프로젝션 및 작동 방법에 대한 자세한 내용은 다음 블로그 게시물을 참조하세요.
 
-1. [C++/CX 파트 0/\[n\]: 소개](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction)
+1. [C + + /CX 파트 0 / \[n\]: 소개](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction)
 
-1. [C++/CX 파트 1\[n\]: 간단한 클래스](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class)
+1. [C + + /CX 파트 1 \[n\]: 간단한 클래스](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class)
 
-1. [C++/CX 파트 2/\[n\]: 유형](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats)
+1. [C + + /CX 파트 2 \[n\]: 유형](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats)
 
-1. [C++/CX 파트 3\[n\]: 작성 중](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)
+1. [C + + /CX 파트 3 \[n\]: 공사중](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)
 
-1. [C++/CX 파트 4/\[n\]: 정적 멤버 함수](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions)
+1. [C + + /CX 파트 4 \[n\]: 정적 멤버 함수](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions)
 
 ## <a name="windows-metadata-winmd-files"></a>Windows 메타데이터(.winmd) 파일
 
@@ -179,6 +179,6 @@ Windows 런타임 시스템 형식에서 사용 되는 동일한 특성을 사�
 
 자세한 내용은 [형식 및 멤버를 사용 중단](../cppcx/deprecating-types-and-members-c-cx.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)

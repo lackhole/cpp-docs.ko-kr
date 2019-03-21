@@ -9,12 +9,12 @@ helpviewer_keywords:
 - calling native functions from managed code
 - interop [C++], calling native functions from managed code
 ms.assetid: 982cef18-20d9-42b4-8242-a77fa65f2e36
-ms.openlocfilehash: 97b0221a4ec73be41bb5ba052607dfb5ced233c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 285bfabbd5935df303a39ada11c388713ae24f34
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462040"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743253"
 ---
 # <a name="calling-native-functions-from-managed-code"></a>관리 코드에서 네이티브 함수 호출
 
@@ -225,6 +225,6 @@ PInvoke는 오버 헤드가 발생의 10과 30 사이의 x86 명령을 호출 �
 
 성능 향상을 위해 호출당 데이터를 더 적게 마샬링하는 호출을 많이 하는 대신 최대한 많은 데이터를 마샬링하는 PInvoke 호출을 더 적은 경우
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [네이티브 및 .NET 상호 운용성](../dotnet/native-and-dotnet-interoperability.md)

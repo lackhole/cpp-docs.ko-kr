@@ -9,12 +9,12 @@ helpviewer_keywords:
 - EXPORT linker option
 - -EXPORT linker option
 ms.assetid: 0920fb44-a472-4091-a8e6-73051f494ca0
-ms.openlocfilehash: 86e2dadbfcdc31d5d5f5fe3121c33f9011c14ab5
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 7c4f4621bbccd4285bcf4eca07d2544d53d14f6c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414385"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57819856"
 ---
 # <a name="export-exports-a-function"></a>/EXPORT(함수 내보내기)
 
@@ -36,7 +36,7 @@ ms.locfileid: "57414385"
 
 1. [__declspec (dllexport)](../../cpp/dllexport-dllimport.md) 소스 코드
 
-1. [내보내기를](../../build/reference/exports.md) .def 파일에서 문
+1. [내보내기를](exports.md) .def 파일에서 문
 
 1. LINK 명령에는 /EXPORT 사양
 
@@ -44,7 +44,7 @@ ms.locfileid: "57414385"
 
 동일한 프로그램에서 이러한 모든 메서드를 사용할 수 있습니다. 링크 내보내기를 포함 하는 프로그램을 빌드할 때 문제가 빌드에서.exp 파일을 사용 하지 않으면 가져오기 라이브러리도를 만듭니다.
 
-LINK 사용 하 여 데코 레이트 형식의 식별자입니다. .Obj 파일을 만들 때 컴파일러에서 식별자를 데코레이팅합니다. 하는 경우 *entryname* 해당 데코 레이트 되지 않은 링커 지정 됩니다 (소스 코드에 표시) 된 대로 양식의 링크 이름 일치 시 키 려 합니다. 고유한 일치를 찾을 수 없으면 링크는 오류 메시지를 발급 합니다. 사용 하 여는 [DUMPBIN](../../build/reference/dumpbin-reference.md) 가져올 도구는 [데코 레이트 된 이름](../../build/reference/decorated-names.md) 을 링커에 지정 해야 할 때 식별자의 형식입니다.
+LINK 사용 하 여 데코 레이트 형식의 식별자입니다. .Obj 파일을 만들 때 컴파일러에서 식별자를 데코레이팅합니다. 하는 경우 *entryname* 해당 데코 레이트 되지 않은 링커 지정 됩니다 (소스 코드에 표시) 된 대로 양식의 링크 이름 일치 시 키 려 합니다. 고유한 일치를 찾을 수 없으면 링크는 오류 메시지를 발급 합니다. 사용 하 여는 [DUMPBIN](dumpbin-reference.md) 가져올 도구는 [데코 레이트 된 이름](decorated-names.md) 을 링커에 지정 해야 할 때 식별자의 형식입니다.
 
 > [!NOTE]
 > 데코 레이트 된 형식의 선언 된 C 식별자를 지정 하지 마세요 `__cdecl` 또는 `__stdcall`합니다.
@@ -58,7 +58,7 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 
@@ -70,5 +70,5 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

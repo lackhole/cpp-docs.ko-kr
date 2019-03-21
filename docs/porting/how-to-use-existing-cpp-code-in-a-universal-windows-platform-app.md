@@ -2,24 +2,24 @@
 title: '방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용'
 ms.date: 08/21/2018
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-ms.openlocfilehash: 55fb1f3fa89f192c83effb755966158394d2fbcf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a4633b74591e16f22def44ff5875557f2909043
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528715"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745518"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용
 
-데스크톱 프로그램을 UWP 환경에서 실행되게 하는 가장 쉬운 방법은 데스크톱 브리지 기술을 사용하는 것입니다. 여기에는 코드를 변경할 필요 없이 기존 응용 프로그램을 UWP 앱으로 패키징하는 데스크톱 앱 변환기가 포함됩니다. 자세한 내용은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
+데스크톱 프로그램을 UWP 환경에서 실행되게 하는 가장 쉬운 방법은 데스크톱 브리지 기술을 사용하는 것입니다. 여기에는 코드를 변경할 필요 없이 기존 애플리케이션을 UWP 앱으로 패키징하는 데스크톱 앱 변환기가 포함됩니다. 자세한 내용은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
 
 이 항목의 나머지 부분에서는 C++ 라이브러리(DLL 및 정적 라이브러리)를 UWP(유니버설 Windows 플랫폼)로 포팅하는 방법을 설명합니다. 여러 UWP 앱에서 핵심 C++ 논리를 사용할 수 있도록 이 작업을 수행하는 것이 좋습니다.
 
-UWP 앱은 보호된 환경에서 실행되며 이에 따라 플랫폼의 보안을 손상시킬 수 있는 많은 Win32, COM 및 CRT API 호출이 허용되지 않습니다. `/ZW` 옵션을 사용하는 경우 컴파일러는 이러한 호출을 검색하고 오류를 생성할 수 있습니다. 응용 프로그램에서 앱 인증 키트를 사용하여 금지된 API를 호출하는 코드를 검색할 수 있습니다. 자세한 내용은 [Windows 앱 인증 키트](/windows/uwp/debug-test-perf/windows-app-certification-kit)를 참조하세요.
+UWP 앱은 보호된 환경에서 실행되며 이에 따라 플랫폼의 보안을 손상시킬 수 있는 많은 Win32, COM 및 CRT API 호출이 허용되지 않습니다. `/ZW` 옵션을 사용하는 경우 컴파일러는 이러한 호출을 검색하고 오류를 생성할 수 있습니다. 애플리케이션에서 앱 인증 키트를 사용하여 금지된 API를 호출하는 코드를 검색할 수 있습니다. 자세한 내용은 [Windows 앱 인증 키트](/windows/uwp/debug-test-perf/windows-app-certification-kit)를 참조하세요.
 
 라이브러리의 소스 코드를 사용할 수 있는 경우 금지된 API 호출을 제거할 수 있습니다. 허용되거나 금지되는 API 목록을 비롯한 자세한 내용은 [UWP 앱용 Win32 및 COM API](/uwp/win32-and-com/win32-and-com-for-uwp-apps) 및 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요. 일부 대안은 [UWP 앱에서 Windows API의 대안](/uwp/win32-and-com/alternatives-to-windows-apis-uwp)에서 찾을 수 있습니다.
 
-유니버설 Windows 프로젝트의 참조를 클래식 데스크톱 라이브러리에 추가하려고 하면 라이브러리가 호환되지 않는다는 오류 메시지가 표시됩니다. 정적 라이브러리의 경우 클래식 Win32 응용 프로그램에서와 마찬가지로 라이브러리(.lib 파일)를 링커 입력에 추가하기만 하여 라이브러리에 링크할 수 있습니다. 바이너리만 사용할 수 있는 라이브러리의 경우 이것이 유일한 옵션입니다. 정적 라이브러리는 앱의 실행 파일에 링크되지만 UWP 앱에서 사용하는 Win32 DLL은 프로젝트에 포함하고 콘텐츠로 표시하여 앱에 패키지해야 합니다. UWP 앱에서 Win32 DLL을 로드하려면 `LoadLibrary` 또는 `LoadLibraryEx` 대신 [LoadPackagedLibrary](/windows/desktop/api/winbase/nf-winbase-loadpackagedlibrary)도 호출해야 합니다.
+유니버설 Windows 프로젝트의 참조를 클래식 데스크톱 라이브러리에 추가하려고 하면 라이브러리가 호환되지 않는다는 오류 메시지가 표시됩니다. 정적 라이브러리의 경우 클래식 Win32 애플리케이션에서와 마찬가지로 라이브러리(.lib 파일)를 링커 입력에 추가하기만 하여 라이브러리에 링크할 수 있습니다. 바이너리만 사용할 수 있는 라이브러리의 경우 이것이 유일한 옵션입니다. 정적 라이브러리는 앱의 실행 파일에 링크되지만 UWP 앱에서 사용하는 Win32 DLL은 프로젝트에 포함하고 콘텐츠로 표시하여 앱에 패키지해야 합니다. UWP 앱에서 Win32 DLL을 로드하려면 `LoadLibrary` 또는 `LoadLibraryEx` 대신 [LoadPackagedLibrary](/windows/desktop/api/winbase/nf-winbase-loadpackagedlibrary)도 호출해야 합니다.
 
 DLL 또는 정적 라이브러리의 소스 코드가 있는 경우 `/ZW`를 사용하여 UWP 프로젝트로 다시 컴파일할 수 있습니다. 이렇게 하면 **솔루션 탐색기**를 사용하여 참조를 추가하고 C++ UWP 앱에서 사용할 수 있습니다. DLL의 경우 내보내기 라이브러리에 링크합니다.
 
@@ -52,7 +52,7 @@ UWP로 포팅하려는 기존 COM 라이브러리가 있는 경우 [WRL(Windows 
 
 ##  <a name="BK_Win32DLL"></a>UWP 앱에서 Win32 DLL 사용하기
 
-보안과 안정성을 높이기 위해 유니버설 Windows 앱은 제한된 런타임 환경에서 실행되므로 클래식 Windows 데스크톱 응용 프로그램에서 사용하듯이 네이티브 DLL을 사용할 수 없습니다. DLL의 소스 코드가 있는 경우 UWP에서 실행되도록 코드를 이식할 수 있습니다. 먼저 프로젝트를 UWP 프로젝트로 식별하기 위해 몇 가지 프로젝트 설정과 프로젝트 파일 메타데이터를 변경합니다. C++/CX를 사용하도록 설정하는 `/ZW` 옵션을 사용하여 라이브러리 코드를 컴파일해야 합니다. 특정 API 코드는 해당 환경과 관련된 더 엄격한 제어 때문에 UWP 앱에서 허용되지 않습니다. [UWP 앱용 Win32 및 COM API](/uwp/win32-and-com/win32-and-com-for-uwp-apps)를 참조하세요.
+보안과 안정성을 높이기 위해 유니버설 Windows 앱은 제한된 런타임 환경에서 실행되므로 클래식 Windows 데스크톱 애플리케이션에서 사용하듯이 네이티브 DLL을 사용할 수 없습니다. DLL의 소스 코드가 있는 경우 UWP에서 실행되도록 코드를 이식할 수 있습니다. 먼저 프로젝트를 UWP 프로젝트로 식별하기 위해 몇 가지 프로젝트 설정과 프로젝트 파일 메타데이터를 변경합니다. C++/CX를 사용하도록 설정하는 `/ZW` 옵션을 사용하여 라이브러리 코드를 컴파일해야 합니다. 특정 API 코드는 해당 환경과 관련된 더 엄격한 제어 때문에 UWP 앱에서 허용되지 않습니다. [UWP 앱용 Win32 및 COM API](/uwp/win32-and-com/win32-and-com-for-uwp-apps)를 참조하세요.
 
 **__declspec(dllexport)** 을 사용하여 함수를 노출하는 네이티브 DLL이 있는 경우에는 다음 절차가 적용됩니다.
 
@@ -153,7 +153,7 @@ UWP로 포팅하려는 기존 COM 라이브러리가 있는 경우 [WRL(Windows 
 
 5. 미리 컴파일된 헤더 파일 이름이 올바른지 확인합니다. **미리 컴파일된 헤더** 섹션에서 **미리 컴파일된 헤더 파일**을 pch.h에서 stdafx.h로 변경합니다. 이렇게 하지 않으면 다음과 같은 오류가 표시됩니다.
 
-   > 오류 C2857: /Ycpch.h 명령줄 옵션으로 지정한 '#include' 문이 소스 파일에 없습니다.
+   > error C2857: '#include' statement specified with the /Ycpch.h command-line option was not found in the source file(오류 C2857: /Ycpch.h 명령줄 옵션과 함께 지정된 '#include' 문을 소스 파일에서 찾을 수 없습니다.)
 
    문제는 유니버설 Windows 프로젝트가 미리 컴파일된 헤더 파일에 다른 명명 규칙을 사용한다는 것입니다.
 

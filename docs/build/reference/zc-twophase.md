@@ -9,12 +9,12 @@ helpviewer_keywords:
 - twoPhase
 - disable two-phase name lookup
 - /Zc:twoPhase
-ms.openlocfilehash: d5a53db5a5c0ae9c4cfec76e57f628499c8955c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ebd577bc25a2789e3a6b328a4c9cd2e1596d04da
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648762"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821406"
 ---
 # <a name="zctwophase--disable-two-phase-name-lookup"></a>/Zc: twophase-(2 단계 이름 조회 사용 안 함)
 
@@ -162,7 +162,7 @@ typename T::template X<T>::TYPE func(typename T::TYPE)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
 
@@ -170,4 +170,4 @@ typename T::template X<T>::TYPE func(typename T::TYPE)
 
 ## <a name="see-also"></a>참고자료
 
-[/Zc(규칙)](../../build/reference/zc-conformance.md)<br/>
+[/Zc(규칙)](zc-conformance.md)<br/>

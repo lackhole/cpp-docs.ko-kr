@@ -7,12 +7,12 @@ helpviewer_keywords:
 - attributes [C++/CLI], frequently asked questions
 - FAQs (frequently asked questions), attributed programming [C++]
 ms.assetid: a1b8349f-7f51-43c4-95ea-4edb6e5f243f
-ms.openlocfilehash: b273ad71c3c6eaed69fc715401219200f26f87eb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 89c37b2fe81a414bdd02d73e3c3dfd5205a03831
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434985"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815881"
 ---
 # <a name="attribute-programming-faq"></a>특성 프로그래밍 FAQ
 
@@ -122,7 +122,7 @@ class CMyClass
 
 ##  <a name="vcconattributeprogrammmingfaqanchor6"></a> 특성 사용된 프로젝트에.idl 파일을 사용 하는 방법
 
-특성 사용 ATL 프로젝트에서 사용 하려는.idl 파일이 있을 수 있습니다. 사용이 경우에 [importidl](importidl.md) 특성,.h 파일.idl 파일을 컴파일할 (참조는 [MIDL Property Pages](../../ide/midl-property-pages.md) 프로젝트의 **속성 페이지** 대화 상자), 및 그런 다음 프로젝트에.h 파일을 포함 합니다.
+특성 사용 ATL 프로젝트에서 사용 하려는.idl 파일이 있을 수 있습니다. 사용이 경우에 [importidl](importidl.md) 특성,.h 파일.idl 파일을 컴파일할 (참조는 [MIDL Property Pages](../../build/reference/midl-property-pages.md) 프로젝트의 **속성 페이지** 대화 상자), 및 그런 다음 프로젝트에.h 파일을 포함 합니다.
 
 ##  <a name="vcconattributeprogrammmingfaqanchor7"></a> 특성에 의해 삽입 된 코드를 수정할 수 있나요?
 

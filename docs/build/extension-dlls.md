@@ -15,12 +15,12 @@ helpviewer_keywords:
 - extension DLLs [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
-ms.openlocfilehash: 28954ff1c77b7dcc530392fce095ed9df5c29cbf
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: eca33b60b8fa6ba812bf5fa68520f51ceb1d164b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414566"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820444"
 ---
 # <a name="mfc-extension-dlls"></a>MFC 확장명 Dll
 
@@ -116,7 +116,7 @@ MFCxx.dll은 대개 마지막 리소스 및 클래스 목록에 있습니다. MF
 
 ### <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [MFC 확장 DLL 초기화](../build/run-time-library-behavior.md#initializing-extension-dlls)
+- [MFC 확장 DLL 초기화](run-time-library-behavior.md#initializing-extension-dlls)
 
 ### <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
@@ -124,12 +124,12 @@ MFCxx.dll은 대개 마지막 리소스 및 클래스 목록에 있습니다. MF
 
 - [MFC의 DLL 버전](../mfc/tn033-dll-version-of-mfc.md)
 
-- [정적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-statically-linked-to-mfc.md)
+- [정적으로 MFC에 링크 된 기본 MFC Dll](regular-dlls-statically-linked-to-mfc.md)
 
-- [동적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [동적으로 MFC에 링크 된 기본 MFC Dll](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [기본 MFC DLL에서 데이터베이스, OLE 및 소켓 MFC 확장명 DLL 사용](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [기본 MFC DLL에서 데이터베이스, OLE 및 소켓 MFC 확장명 DLL 사용](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](../build/dlls-in-visual-cpp.md)
+[Visual C++의 DLL](dlls-in-visual-cpp.md)

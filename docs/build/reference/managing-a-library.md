@@ -40,12 +40,12 @@ helpviewer_keywords:
 - LIST library manager option
 - /CONVERT library manager option
 ms.assetid: f56a8b85-fbdc-4c09-8d8e-00f0ffe1da53
-ms.openlocfilehash: fb06fdf0298d627f289448930b490fb0660e381d
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 74b8cf198d46f83de327c68ac5f883bd75e5db80
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57419615"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812046"
 ---
 # <a name="managing-a-library"></a>라이브러리 관리
 
@@ -64,7 +64,7 @@ LIB 기본적으로 첫 번째 개체 또는 라이브러리 파일 및 확장�
 다음 옵션을 빌드하고 라이브러리 수정에 적용 됩니다.
 
 **/LIBPATH:** *dir*<br/>
-환경 라이브러리 경로를 재정의합니다. 자세한 내용은 링크에 대 한 설명을 참조 하세요 [/LIBPATH](../../build/reference/libpath-additional-libpath.md) 옵션입니다.
+환경 라이브러리 경로를 재정의합니다. 자세한 내용은 링크에 대 한 설명을 참조 하세요 [/LIBPATH](libpath-additional-libpath.md) 옵션입니다.
 
 **/LIST**<br/>
 표준 출력으로 출력 라이브러리에 대 한 정보를 표시합니다. 출력을 파일로 리디렉션할 수 있습니다. /LIST을 사용 하 여 수정 하지 않고 기존 라이브러리의 콘텐츠를 결정할 수 있습니다.
@@ -73,7 +73,7 @@ LIB 기본적으로 첫 번째 개체 또는 라이브러리 파일 및 확장�
 가져오기 라이브러리를 빌드할 때 작성 중인 가져오기 라이브러리 DLL의 이름을 지정 합니다.
 
 **/NODEFAULTLIB**<br/>
-외부 참조를 확인할 때 검색 하는 라이브러리 목록에서 하나 이상의 기본 라이브러리를 제거 합니다. 참조 [/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md) 자세한 내용은 합니다.
+외부 참조를 확인할 때 검색 하는 라이브러리 목록에서 하나 이상의 기본 라이브러리를 제거 합니다. 참조 [/NODEFAULTLIB](nodefaultlib-ignore-libraries.md) 자세한 내용은 합니다.
 
 **/OUT:** *filename*<br/>
 기본 출력 파일 이름을 재정의합니다. 기본적으로 출력 라이브러리, 명령줄 및 확장에서 첫 번째 라이브러리 또는 개체 파일의 기본 이름 사용 하 여 현재 디렉터리에 만들어집니다. lib 합니다.
@@ -82,7 +82,7 @@ LIB 기본적으로 첫 번째 개체 또는 라이브러리 파일 및 확장�
 지정 된 생략 *개체* 출력 라이브러리에서. LIB 모든 개체 (개체 파일 또는 라이브러리)를 결합 하 고 다음 /REMOVE로 지정 된 개체를 삭제 하 여 출력 라이브러리를 만듭니다.
 
 **/ 하위 시스템:**{0}**콘솔** &AMP;#124; **EFI_APPLICATION** &AMP;#124; **EFI_BOOT_SERVICE_DRIVER** &AMP;#124; **EFI_ROM** &AMP;#124; **EFI_RUNTIME_DRIVER** &AMP;#124; **네이티브** &AMP;#124; **POSIX** &AMP;#124; **WINDOWS** &AMP;#124; **WINDOWSCE**} [, #[. # #]]<br/>
-운영 시스템에 연결 하 여 출력 라이브러리를 생성 하는 프로그램을 실행 하는 방법을 알려줍니다. 자세한 내용은 링크에 대 한 설명을 참조 하세요 [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) 옵션입니다.
+운영 시스템에 연결 하 여 출력 라이브러리를 생성 하는 프로그램을 실행 하는 방법을 알려줍니다. 자세한 내용은 링크에 대 한 설명을 참조 하세요 [/SUBSYSTEM](subsystem-specify-subsystem.md) 옵션입니다.
 
 LIB 옵션이 명령줄에서 지정 된 대/소문자 구분 하지 않습니다.
 
@@ -101,4 +101,4 @@ LIB 옵션이 명령줄에서 지정 된 대/소문자 구분 하지 않습니�
 
 ## <a name="see-also"></a>참고자료
 
-[LIB 참조](../../build/reference/lib-reference.md)
+[LIB 참조](lib-reference.md)

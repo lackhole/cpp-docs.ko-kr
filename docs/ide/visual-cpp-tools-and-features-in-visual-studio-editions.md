@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual C++, versions
 - editions [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
-ms.openlocfilehash: 7f40e59ae3e5e883827a212a16d1dd19822dc136
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3e5b173741700ed6cccf95b479eb5693a62ed02e
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463754"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57810486"
 ---
 # <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual Studio 버전의 Visual C++ 도구 및 기능
 
@@ -68,7 +68,7 @@ ms.locfileid: "50463754"
 |빈 프로젝트||X|X|X|
 |메이크파일 프로젝트||X|X|X|
 |MFC ActiveX 컨트롤|||X|X|
-|MFC 응용 프로그램|||X|X|
+|MFC 애플리케이션|||X|X|
 |MFC DLL|||X|X|
 |테스트 프로젝트|X|X|X|X|
 |Win32 콘솔 응용 프로그램||X|X|X|
@@ -106,7 +106,7 @@ ms.locfileid: "50463754"
 |관리 디버깅||X|X|X|
 |GPU 사용량|X||X|X|
 |메모리 사용량|X||X|X|
-|원격 디버깅|X|X|X|X|
+|Remote Debugging|X|X|X|X|
 |SQL 디버깅|||X|X|
 |정적 코드 분석|제한됨|제한됨|X|X|
 
@@ -163,8 +163,8 @@ ms.locfileid: "50463754"
 ||||||
 |-|-|-|-|-|
 |도구|Visual Studio Express for Windows|Visual Studio Express for Windows Desktop|Visual Studio Professional/Community|Visual Studio Enterprise|
-|단위 테스트(네이티브 프레임워크)|X|X|X|X|
-|단위 테스트(관리되는 프레임워크)||X|X|X|
+|유닛 테스트(네이티브 프레임워크)|X|X|X|X|
+|유닛 테스트(관리되는 프레임워크)||X|X|X|
 |코드 검사||||X|
 |수동 테스트||||X|
 |예비 테스트||||X|
@@ -176,5 +176,5 @@ ms.locfileid: "50463754"
 
 [Visual Studio 설치](/visualstudio/install/install-visual-studio)<br/>
 [Visual Studio의 새로운 기능](/visualstudio/ide/whats-new-in-visual-studio)<br/>
-[Visual C++ 프로젝트 형식](../ide/visual-cpp-project-types.md)<br/>
+[Visual C++ 프로젝트 형식](../build/reference/visual-cpp-project-types.md)<br/>
 [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686)<br/>

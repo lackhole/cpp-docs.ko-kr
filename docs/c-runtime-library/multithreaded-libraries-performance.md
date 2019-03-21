@@ -7,12 +7,12 @@ helpviewer_keywords:
 - performance, multithreading
 - multithreaded libraries
 ms.assetid: faa5d808-087c-463d-8f0d-8c478d137296
-ms.openlocfilehash: f73aa99d1800fc81408b739e556bc7845b348a80
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48f491b6d82acb566669302e4d607e85faf9012a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587566"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748367"
 ---
 # <a name="multithreaded-libraries-performance"></a>다중 스레드 라이브러리 성능
 
@@ -30,7 +30,7 @@ ms.locfileid: "50587566"
 
 - 공통 코드 페이지에 대한 최적화는 많은 짧은 작업의 비용을 절감합니다.
 
-- [_CRT_DISABLE_PERFCRIT_LOCKS](../c-runtime-library/crt-disable-perfcrit-locks.md)를 정의하면 모든 I/O 작업이 단일 스레드 I/O 모델을 가정하고 함수의 _nolock 형태를 사용하게 됩니다. 이로 인해 상당히 I/O를 기반으로 하는 단일 스레드 응용 프로그램의 성능이 향상됩니다.
+- [_CRT_DISABLE_PERFCRIT_LOCKS](../c-runtime-library/crt-disable-perfcrit-locks.md)를 정의하면 모든 I/O 작업이 단일 스레드 I/O 모델을 가정하고 함수의 _nolock 형태를 사용하게 됩니다. 이로 인해 상당히 I/O를 기반으로 하는 단일 스레드 애플리케이션의 성능이 향상됩니다.
 
 - CRT 힙 핸들을 노출하면 CRT 힙에 대해 Windows LFH(낮은 조각화 힙)가 가능해져 규모가 큰 시나리오에서 성능이 상당히 개선될 수 있습니다.
 

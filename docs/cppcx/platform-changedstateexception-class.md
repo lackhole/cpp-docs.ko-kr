@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::ChangedStateException
 ms.assetid: f894beac-9e80-4fac-ac25-89f1dbc0a6a4
-ms.openlocfilehash: 749e242db37944f0c4dcbfb785028b01a0604f14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79181702c95f8c666b06bdb26319ccb06e55db0a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581681"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749297"
 ---
 # <a name="platformchangedstateexception-class"></a>Platform::ChangedStateException 클래스
 
@@ -37,10 +37,10 @@ public ref class ChangedStateException : COMException,    IException,    IPrinta
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **메타데이터:** platform.winmd
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform::COMException 클래스](../cppcx/platform-comexception-class.md)

@@ -1,6 +1,6 @@
 ---
 title: '&lt;system_error&gt; 함수'
-ms.date: 11/04/2016
+ms.date: 03/15/2019
 f1_keywords:
 - system_error/std::generic_category
 - system_error/std::make_error_code
@@ -12,26 +12,26 @@ helpviewer_keywords:
 - std::make_error_code
 - std::make_error_condition
 - std::system_category
-ms.openlocfilehash: 24890830456e3c1026b02960aa650a43da3b6067
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 78be83af678b553babbf1cde3d96c1507940b611
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554390"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58172909"
 ---
 # <a name="ltsystemerrorgt-functions"></a>&lt;system_error&gt; 함수
 
 ||||
 |-|-|-|
 |[generic_category](#generic_category)|[make_error_code](#make_error_code)|[make_error_condition](#make_error_condition)|
-|[system_category](#system_category)|
+|[system_category](#system_category)|||
 
-## <a name="generic_category"></a>  generic_category
+## <a name="generic_category"></a> generic_category
 
 일반 오류의 범주를 나타냅니다.
 
 ```cpp
-extern const error_category& generic_category();
+const error_category& generic_category() noexcept;
 ```
 
 ### <a name="remarks"></a>설명
@@ -43,14 +43,13 @@ extern const error_category& generic_category();
 오류 코드 개체를 만듭니다.
 
 ```cpp
-error_code make_error_code(generic_errno _Errno);
+error_code make_error_code(std::errc error) noexcept;
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|---------------|-----------------|
-|*_Errno*|오류 코드 개체에 저장할 열거형 값입니다.|
+*error*\
+`std::errc` 오류 코드 개체에 저장할 열거형 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -63,14 +62,13 @@ error_code make_error_code(generic_errno _Errno);
 오류 조건 개체를 만듭니다.
 
 ```cpp
-error_condition make_error_condition(generic_errno _Errno);
+error_condition make_error_condition(std::errc error) noexcept;
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|---------------|-----------------|
-|*_Errno*|오류 조건 개체에 저장할 열거형 값입니다.|
+*error*\
+`std::errc` 오류 코드 개체에 저장할 열거형 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -83,7 +81,7 @@ error_condition make_error_condition(generic_errno _Errno);
 하위 수준 시스템 오버플로로 인해 발생하는 오류의 범주를 나타냅니다.
 
 ```cpp
-extern const error_category& system_category();
+const error_category& system_category() noexcept;
 ```
 
 ### <a name="remarks"></a>설명
@@ -92,4 +90,4 @@ extern const error_category& system_category();
 
 ## <a name="see-also"></a>참고자료
 
-[<system_error>](../standard-library/system-error.md)<br/>
+[\<system_error>](../standard-library/system-error.md)<br/>

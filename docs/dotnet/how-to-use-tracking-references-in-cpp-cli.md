@@ -1,19 +1,19 @@
 ---
-title: '방법: C++/CLI에서 추적 참조 사용'
+title: '방법: 사용 하 여 추적 참조 C + + /cli CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CLR types, passing by reference
 ms.assetid: d91e471c-34ff-4786-9e0d-c6db0494b946
-ms.openlocfilehash: 8b95f6e3a5d98676134622e5c8805c6c031a1a80
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cf4d528fe23ee6959b770bfce859d24d2f3403cf
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454789"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746242"
 ---
-# <a name="how-to-use-tracking-references-in-ccli"></a>방법: C++/CLI에서 추적 참조 사용
+# <a name="how-to-use-tracking-references-in-ccli"></a>방법: 사용 하 여 추적 참조 C + + /cli CLI
 
-이 문서에서는 C + 추적 참조 (%)을 사용 하는 방법을 보여 줍니다. + CLI를 공용 언어 런타임 (CLR) 형식을 참조로 전달 합니다.
+이 문서에서는 추적 참조 (%)를 사용 하는 방법을 보여 줍니다. C + + /cli CLI를 공용 언어 런타임 (CLR) 형식을 참조로 전달 합니다.
 
 ## <a name="to-pass-clr-types-by-reference"></a>CLR 형식을 참조로 전달 하려면
 
@@ -341,6 +341,6 @@ T %
 T &
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [추적 참조 연산자](../windows/tracking-reference-operator-cpp-component-extensions.md)

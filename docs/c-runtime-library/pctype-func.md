@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - __pctype_func
 ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
-ms.openlocfilehash: fc0f4b0be80534744beda1fe7595293ceb002924
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a152f3612373189c964aaca005fe3b989eec8694
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444228"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742028"
 ---
 # <a name="pctypefunc"></a>__pctype_func
 
@@ -39,7 +39,7 @@ const unsigned short *__pctype_func(
 
 문자 분류 정보 배열에 대한 포인터입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 문자 분류 테이블의 정보는 내부 전용이며, `char` 형식의 문자를 분류하는 다양한 함수에 사용됩니다. 자세한 내용은 [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)의 `Remarks` 섹션을 참조하세요.
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - user accounts [C++]
 - administrator (not running as) [C++]
 ms.assetid: e48a03ec-d345-49f6-809a-1a291eecbc81
-ms.openlocfilehash: bb67c4cf2f166a8dd67d14b9f61b23241fe442fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dc06e2dc58d28c34a646ccffc0be90368b3297f5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607885"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747036"
 ---
 # <a name="running-as-a-member-of-the-users-group"></a>사용자 그룹의 멤버로 실행
 
@@ -51,6 +51,6 @@ ms.locfileid: "50607885"
 
 디버깅 그룹의 멤버가 되면 관리자가 아닌 권한으로도 Visual Studio 내에서 실행하는 네이티브 및 관리되지 않는 모든 응용 프로그램을 디버깅할 수 있습니다. 여기에는 프로세스에 연결 명령을 사용하여 실행 중인 응용 프로그램에 연결하는 기능이 포함됩니다. 그러나 다른 사용자가 실행한 네이티브 또는 관리되는 응용 프로그램을 디버깅하려면 관리자 그룹의 멤버가 되어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [보안 모범 사례](security-best-practices-for-cpp.md)

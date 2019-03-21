@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0025
 ms.assetid: 57725c78-bc63-44f3-9667-2969b2d7c41d
-ms.openlocfilehash: 5cc6a042c04bc205dd3cf2242d48f2572a51885c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5f3699dce75a20b9cc6e1d712bc5702543ab7b6c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599685"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814568"
 ---
 # <a name="project-build-error-prj0025"></a>프로젝트 빌드 오류 PRJ0025
 
@@ -23,4 +23,4 @@ ms.locfileid: "50599685"
 
 이 오류에 대 한 확인 빌드 규칙의 콘텐츠를 업데이트 하거나 빌드를 ANSI를 사용 하거나 코드 페이지를 컴퓨터에 설치 하 고 시스템 기본값으로 설정 하는 이벤트입니다.
 
-자세한 방법은 사용자 지정 빌드 단계 및 빌드 이벤트를 참조 하십시오 [사용자 지정 빌드 단계 및 빌드 이벤트 이해](../../ide/understanding-custom-build-steps-and-build-events.md)합니다.
+자세한 방법은 사용자 지정 빌드 단계 및 빌드 이벤트를 참조 하십시오 [사용자 지정 빌드 단계 및 빌드 이벤트 이해](../../build/understanding-custom-build-steps-and-build-events.md)합니다.

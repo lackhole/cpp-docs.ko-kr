@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - CFixedStringT class, using a custom string manager
 ms.assetid: 1cf11fd7-51b8-4b94-87af-02bc25f47dd6
-ms.openlocfilehash: d35c4c998a6e5913cd972312c511b2a102480c81
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2b6da5d4166b220ef63500d0154ab32dc72b40f4
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663166"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740709"
 ---
 # <a name="cfixedstringt-example-of-a-custom-string-manager"></a>CFixedStringT: 사용자 지정 문자열 관리자의 예
 
@@ -17,9 +17,9 @@ ATL 라이브러리 구현 클래스에서 사용 하는 사용자 지정 문자
 
 에 대 한 생성자 `CFixedStringMgr` 세 매개 변수를 사용 합니다.
 
-- *pData:* 고정에 대 한 포인터 `CStringData` 사용할 구조입니다.
+- *pData:* 고정된 포인터로 `CStringData` 사용할 구조입니다.
 
-- *nChars:* 문자의 최대 수는 `CStringData` 구조를 포함할 수 있습니다.
+- *nChars:* 최대 문자 수는 `CStringData` 구조를 포함할 수 있습니다.
 
 - *pMgr:* 에 대 한 포인터를 `IAtlStringMgr` 인터페이스의 "백업 문자열 관리자"입니다.
 
@@ -61,7 +61,6 @@ ATL 라이브러리 구현 클래스에서 사용 하는 사용자 지정 문자
 
 **헤더:** cstringt.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CStringT를 사용한 메모리 관리](../atl-mfc-shared/memory-management-with-cstringt.md)
-

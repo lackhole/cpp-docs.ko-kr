@@ -10,12 +10,12 @@ helpviewer_keywords:
 - __stdcall keyword [C++]
 - DLL functions [C++], calling
 ms.assetid: 282f7fbf-a0f2-4b9f-b277-1982710be56c
-ms.openlocfilehash: 88705b2a33e3eb82043d93c534477fce96849502
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 1e4f1a538da2394c6cead6ea011faf126b022a3f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57417605"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814971"
 ---
 # <a name="calling-dll-functions-from-visual-basic-applications"></a>Visual Basic 응용 프로그램에서 DLL 함수 호출
 
@@ -33,7 +33,7 @@ int __stdcall func (int a, double b)
 
 C 호출 규칙 (`__cdecl`)의 이름으로 데코 레이트 `_func`합니다.
 
-데코레이팅된 이름을 가져오려면 [/map](../build/reference/map-generate-mapfile.md)합니다. 이용 **__declspec (dllexport)** 다음을 수행 합니다.
+데코레이팅된 이름을 가져오려면 [/map](reference/map-generate-mapfile.md)합니다. 이용 **__declspec (dllexport)** 다음을 수행 합니다.
 
 - C 호출 규칙을 사용 하 여 함수를 내보내는 경우 (`__cdecl`), 선행 밑줄을 제거 ( **\_** ) 패키지를 내보낸 경우 이름입니다.
 
@@ -58,18 +58,18 @@ Visual Basic로 작성 된 프로그램에서 호출할 Dll에 대 한이 항목
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [DLL에서 내보내기](../build/exporting-from-a-dll.md)
+- [DLL에서 내보내기](exporting-from-a-dll.md)
 
-- [사용 하 여 DLL에서 내보내기. DEF 파일](../build/exporting-from-a-dll-using-def-files.md)
+- [사용 하 여 DLL에서 내보내기. DEF 파일](exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec (dllexport)을 사용 하 여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__Declspec (dllexport)을 사용 하 여 DLL에서 내보내기](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [C + + 함수 C 언어 실행 파일에서 사용할 수 있도록 내보내기](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C + + 함수 C 언어 실행 파일에서 사용할 수 있도록 내보내기](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [사용할 내보내기 방법 결정](../build/determining-which-exporting-method-to-use.md)
+- [사용할 내보내기 방법 결정](determining-which-exporting-method-to-use.md)
 
-- [데코레이팅된 이름](../build/reference/decorated-names.md)
+- [데코레이팅된 이름](reference/decorated-names.md)
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](../build/dlls-in-visual-cpp.md)
+[Visual C++의 DLL](dlls-in-visual-cpp.md)

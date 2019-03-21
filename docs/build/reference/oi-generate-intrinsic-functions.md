@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -Oi compiler option [C++]
 - generate intrinsic functions compiler option [C++]
 ms.assetid: fa4a3bf6-0ed8-481b-91c0-add7636132b4
-ms.openlocfilehash: 1dc7f5f183e7dffb65c31ebb9bc47b30776b81e3
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: f3afedade6f99129c21069e5117daa4ceb616cc2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422119"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811890"
 ---
 # <a name="oi-generate-intrinsic-functions"></a>/Oi(내장 함수 만들기)
 
@@ -41,7 +41,7 @@ ms.locfileid: "57422119"
 
 내장 부동 소수점 함수에 입력된 값에 특수 한 검사를 수행 하 고 따라서 제한 된 범위의 입력에서 작동를 마십시오 다른 예외 처리와 같은 이름 가진 라이브러리 루틴과 경계 조건. IEEE 예외 처리의 손실과 손실 의미 실제 내장 형식을 사용 하 여 `_matherr` 고 `errno` 기능 후자 ANSI 규칙의 손실을 의미 합니다. 그러나, 내장 형식은 수 상당히 프로그램의 속도를 부동 소수점를 많이 사용 되며 대부분의 프로그램에 대 한 규칙과 관련 된 문제를 작은 실제 값의 합니다.
 
-사용할 수는 [Za](../../build/reference/za-ze-disable-language-extensions.md) 컴파일러 옵션을 실제 내장 부동 소수점 옵션 생성을 재정의 합니다. 이 경우에는 함수가 인수를 프로그램 스택으로 푸시하는 대신 부동 소수점 칩으로 직접 전달하는 라이브러리 루틴으로 생성됩니다.
+사용할 수는 [Za](za-ze-disable-language-extensions.md) 컴파일러 옵션을 실제 내장 부동 소수점 옵션 생성을 재정의 합니다. 이 경우에는 함수가 인수를 프로그램 스택으로 푸시하는 대신 부동 소수점 칩으로 직접 전달하는 라이브러리 루틴으로 생성됩니다.
 
 **END x86 특정**
 
@@ -49,7 +49,7 @@ ms.locfileid: "57422119"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "57422119"
 
 ## <a name="see-also"></a>참고자료
 
-[/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
+[/O 옵션(코드 최적화)](o-options-optimize-code.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
 [컴파일러 내장 함수](../../intrinsics/compiler-intrinsics.md)

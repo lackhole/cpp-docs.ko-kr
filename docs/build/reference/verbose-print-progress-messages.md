@@ -13,12 +13,12 @@ helpviewer_keywords:
 - dependencies [C++], dependency information in linker output
 - VERBOSE linker option
 ms.assetid: 9c347d98-4c37-4724-a39e-0983934693ab
-ms.openlocfilehash: 290d2e5c5c5a87042ee805cdaed90cce4418a389
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 7aed1e17034b40ffdad4da4136fc5a64361b3d77
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423756"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809147"
 ---
 # <a name="verbose-print-progress-messages"></a>/VERBOSE(진행 메시지 표시)
 
@@ -33,16 +33,16 @@ ms.locfileid: "57423756"
 |옵션|설명|
 |------------|-----------------|
 |/VERBOSE|연결 프로세스에 대 한 세부 정보를 표시 합니다.|
-|/VERBOSE:ICF|사용할 때 발생 하는 링커 작업에 대 한 정보를 표시할 [/opt: icf](../../build/reference/opt-optimizations.md)합니다.|
+|/VERBOSE:ICF|사용할 때 발생 하는 링커 작업에 대 한 정보를 표시할 [/opt: icf](opt-optimizations.md)합니다.|
 |/VERBOSE:INCR|증분적인 링크 프로세스에 대한 정보를 표시합니다.|
 |/VERBOSE:LIB|검색된 라이브러리만 나타내는 진행률 메시지를 표시합니다.<br /><br /> 라이브러리 검색 프로세스를 포함 하 고 각 라이브러리 및 개체 이름 (전체 경로)를 나열 하는 표시 되는 정보, 라이브러리 및 기호를 참조 하는 개체의 목록에서 기호를 확인할 수 있습니다.|
-|/VERBOSE:REF|사용할 때 발생 하는 링커 작업에 대 한 정보를 표시 [/opt: ref](../../build/reference/opt-optimizations.md)합니다.|
-|/VERBOSE:SAFESEH|때 안전한 예외 처리와 호환 되지 않는 모듈에 대 한 정보를 표시 [/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md) 지정 하지 않으면.|
+|/VERBOSE:REF|사용할 때 발생 하는 링커 작업에 대 한 정보를 표시 [/opt: ref](opt-optimizations.md)합니다.|
+|/VERBOSE:SAFESEH|때 안전한 예외 처리와 호환 되지 않는 모듈에 대 한 정보를 표시 [/SAFESEH](safeseh-image-has-safe-exception-handlers.md) 지정 하지 않으면.|
 |/VERBOSE:UNUSEDLIBS|이미지를 만들 때 사용되지 않은 모든 라이브러리 파일에 대한 정보를 표시합니다.|
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 확장 된 **링커** 폴더입니다.
 
@@ -56,5 +56,5 @@ ms.locfileid: "57423756"
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - module definition files
 - /DEF linker option
 ms.assetid: 6497fa68-65f0-48ca-8f66-b87166fc631a
-ms.openlocfilehash: 4b6490186e2faf289844f7fb6b84f5a1c27b10a5
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c08412fb50835485e7941b2bb1db088943387b71
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423506"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807444"
 ---
 # <a name="def-specify-module-definition-file"></a>/DEF(모듈 정의 파일 지정)
 
@@ -31,11 +31,11 @@ ms.locfileid: "57423506"
 
 ## <a name="remarks"></a>설명
 
-/DEF 옵션으로 모듈 정의 파일 (.def)을 링커에 전달 합니다. .Def 파일 하나만 링크를 지정할 수 있습니다. .Def 파일에 대 한 자세한 내용은 참조 하세요 [모듈 정의 파일](../../build/reference/module-definition-dot-def-files.md)합니다.
+/DEF 옵션으로 모듈 정의 파일 (.def)을 링커에 전달 합니다. .Def 파일 하나만 링크를 지정할 수 있습니다. .Def 파일에 대 한 자세한 내용은 참조 하세요 [모듈 정의 파일](module-definition-dot-def-files.md)합니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 클릭 합니다 **링커** 폴더입니다.
 
@@ -51,5 +51,5 @@ ms.locfileid: "57423506"
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

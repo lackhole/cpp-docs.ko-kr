@@ -12,12 +12,12 @@ helpviewer_keywords:
 - ERROR_SEVERITY_ERROR exception
 - ERROR_MOD_NOT_FOUND exception
 ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
-ms.openlocfilehash: 9c86d99b365994870b991967b6cab6e6ee5c5088
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: f80b99943b103dcf90c05d59df3169e0e05d79f4
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422990"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811669"
 ---
 # <a name="exceptions-cc"></a>예외(C/C++)
 
@@ -41,8 +41,8 @@ Throw 된 예외 코드는 표준 VcppException (ERROR_SEVERITY_ERROR, ERROR_MOD
 
 또한 grAttrs 필드에 잘못 된 비트가 설정 된 경우는 ERROR_INVALID_PARAMETER 예외가 발생 합니다. 이 예외는에 대 한 모든 용도 치명적입니다.
 
-참조 [구조체 및 상수 정의](../../build/reference/structure-and-constant-definitions.md) 자세한 내용은 합니다.
+참조 [구조체 및 상수 정의](structure-and-constant-definitions.md) 자세한 내용은 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[오류 처리 및 알림](../../build/reference/error-handling-and-notification.md)
+[오류 처리 및 알림](error-handling-and-notification.md)

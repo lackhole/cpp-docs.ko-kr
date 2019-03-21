@@ -3,12 +3,12 @@ title: /USEPROFILE (LTCG 사용 하 여 사용 하 여 PGO 데이터)
 ms.date: 03/14/2018
 f1_keywords:
 - USEPROFILE
-ms.openlocfilehash: 4b780bed3b92b874f2bf18fb0235e8e2baf95ae9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7bc0033ae5ef512cbd2e2063c5cb9bd9b061c180
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550633"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816531"
 ---
 # <a name="useprofile-run-pgo-in-thread-safe-mode"></a>/USEPROFILE (스레드 안전 모드에서 PGO 실행)
 
@@ -20,10 +20,10 @@ ms.locfileid: "50550633"
 
 ### <a name="arguments"></a>인수
 
-**적극적인**<br/>
+**AGGRESSIVE**<br/>
 이 인수는 최적화 된 코드를 생성 하는 동안 적극적으로 속도 최적화를 사용 해야 함을 지정 합니다.
 
-**PGD**=*파일 이름*<br/>
+**PGD**=*filename*<br/>
 .pgd 파일의 기본 파일 이름을 지정합니다. 기본적으로 링커는.pgd 확장명을 가진 기본 실행 파일 이름을 사용합니다.
 
 ## <a name="remarks"></a>설명
@@ -38,7 +38,7 @@ ms.locfileid: "50550633"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **최적화** 속성 페이지.
 
@@ -46,7 +46,7 @@ ms.locfileid: "50550633"
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 
-1. 입력 된 **/USEPROFILE** 옵션 및 선택적 인수에는 **추가 옵션** 상자. 선택할 **확인** 변경 내용을 저장 합니다.
+1. 입력 된 **/USEPROFILE** 옵션 및 선택적 인수에는 **추가 옵션** 상자. **확인**을 선택하여 변경 내용을 저장합니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 
@@ -56,5 +56,5 @@ ms.locfileid: "50550633"
 
 [/GENPROFILE 및 /fastgenprofile은](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
 [/LTCG](ltcg-link-time-code-generation.md)<br/>
-[프로필 기반 최적화](../../build/reference/profile-guided-optimizations.md)<br/>
-[프로필 기반 최적화 환경 변수](../../build/reference/environment-variables-for-profile-guided-optimizations.md)<br/>
+[프로필 기반 최적화](../profile-guided-optimizations.md)<br/>
+[프로필 기반 최적화 환경 변수](../environment-variables-for-profile-guided-optimizations.md)<br/>

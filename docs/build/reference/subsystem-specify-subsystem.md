@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -SUBSYSTEM linker option
 - subsystem specifications
 ms.assetid: d7b133cf-cf22-4da8-ab46-6552702c0b9b
-ms.openlocfilehash: 0b6a8a841cefcd519cbeeae9f3355d72e1bbf286
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: ecda3443d0422af4d5ceec9282d86590c53af2f5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57417010"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821263"
 ---
 # <a name="subsystem-specify-subsystem"></a>/SUBSYSTEM(하위 시스템 지정)
 
@@ -42,7 +42,7 @@ Win32 문자 모드 응용 프로그램입니다. 운영 체제는 콘솔 응용
 Extensible Firmware Interface 하위 시스템입니다. 자세한 내용은 EFI 사양을 참조 하십시오. 예를 들어 Intel 웹 사이트를 참조 하세요. 최소 버전 및 기본 버전은 1.0입니다.
 
 **네이티브**<br/>
-Windows nt 커널 모드 드라이버입니다. 이 옵션은 일반적으로 Windows 시스템 구성 요소에 대해 예약 됩니다. 하는 경우 [/driver: wdm](../../build/reference/driver-windows-nt-kernel-mode-driver.md) 가 지정 된 네이티브 기본값입니다.
+Windows nt 커널 모드 드라이버입니다. 이 옵션은 일반적으로 Windows 시스템 구성 요소에 대해 예약 됩니다. 하는 경우 [/driver: wdm](driver-windows-nt-kernel-mode-driver.md) 가 지정 된 네이티브 기본값입니다.
 
 **POSIX**<br/>
 Windows NT의 POSIX 하위 시스템으로 실행 되는 응용 프로그램입니다.
@@ -73,7 +73,7 @@ Windows NT의 POSIX 하위 시스템으로 실행 되는 응용 프로그램입�
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 링커 폴더를 선택 합니다.
 
@@ -87,5 +87,5 @@ Windows NT의 POSIX 하위 시스템으로 실행 되는 응용 프로그램입�
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

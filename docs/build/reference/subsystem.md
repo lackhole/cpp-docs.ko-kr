@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -SUBSYSTEM editbin option
 - SUBSYSTEM editbin option
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215
-ms.openlocfilehash: 5fda93951918357de5441022f1cc6ea81a522ef6
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: b13313d57226719086cb73584543488f842057c1
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57415138"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820496"
 ---
 # <a name="subsystem"></a>/SUBSYSTEM
 
@@ -66,10 +66,10 @@ WINDOWSCE 하위 시스템은 앱이 Windows CE 커널 버전이 있는 장치�
 - 
   `major` 및 `minor` 값은 0에서 65,535 사이여야 합니다.
 
-하위 시스템 선택은 프로그램의 기본 시작 주소에 영향을 줍니다. 자세한 내용은 [/ENTRY (진입점 기호)](../../build/reference/entry-entry-point-symbol.md), linker /ENTRY:*함수* 옵션입니다.
+하위 시스템 선택은 프로그램의 기본 시작 주소에 영향을 줍니다. 자세한 내용은 [/ENTRY (진입점 기호)](entry-entry-point-symbol.md), linker /ENTRY:*함수* 옵션입니다.
 
-각 하위 시스템의 주 및 부 버전 번호에 대 한 최소 및 기본 값을 비롯 한 자세한 내용은 참조는 [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) 링커 옵션입니다.
+각 하위 시스템의 주 및 부 버전 번호에 대 한 최소 및 기본 값을 비롯 한 자세한 내용은 참조는 [/SUBSYSTEM](subsystem-specify-subsystem.md) 링커 옵션입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[EDITBIN 옵션](../../build/reference/editbin-options.md)
+[EDITBIN 옵션](editbin-options.md)

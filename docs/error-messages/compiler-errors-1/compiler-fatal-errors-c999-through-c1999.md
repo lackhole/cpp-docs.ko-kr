@@ -160,14 +160,13 @@ helpviewer_keywords:
 - C1852
 - C1901
 - C1903
-- C1904
 ms.assetid: 6c8df109-7594-48ed-987a-97d9fe2b04af
-ms.openlocfilehash: edf2227bd0a542ce9ca5e8a6a3f908347bd816e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1159a635f0c7a61e591b4d96c4e55bd2baf44782
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677333"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814451"
 ---
 # <a name="compiler-fatal-errors-c999-through-c1999"></a>심각한 컴파일러 오류(C999~C1999)
 
@@ -224,7 +223,7 @@ ms.locfileid: "50677333"
 |심각한 오류 C1063|컴파일러 한계: 컴파일러 스택 오버플로입니다.|
 |[심각한 오류 C1064](../../error-messages/compiler-errors-1/fatal-error-c1064.md)|컴파일러 한계: 내부 버퍼에서 토큰 오버플로가 발생했습니다.|
 |[심각한 오류 C1065](../../error-messages/compiler-errors-1/fatal-error-c1065.md)|컴파일러 한계: 태그가 부족합니다.|
-|[심각한 오류 C1067](../../error-messages/compiler-errors-1/fatal-error-c1067.md)|컴파일러 한계: 형식 레코드 크기의 64K 한도를 초과했습니다.|
+|[심각한 오류 C1067](../../error-messages/compiler-errors-1/fatal-error-c1067.md)|컴파일러 한계: 형식 레코드 크기의 64k 제한이 초과 되었습니다.|
 |심각한 오류 C1068|'*file*' 파일을 열 수 없습니다.|
 |심각한 오류 C1069|컴파일러 명령줄을 읽을 수 없습니다.|
 |심각한 오류 C1070|'*file*' 파일에서 #if/#endif 쌍이 짝이 맞지 않습니다.|
@@ -234,7 +233,7 @@ ms.locfileid: "50677333"
 |[심각한 오류 C1075](../../error-messages/compiler-errors-1/fatal-error-c1075.md)|파일 끝에 있는 왼쪽 *token* 의 짝이 맞지 않습니다.|
 |[심각한 오류 C1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md)|컴파일러 한계: 내부 힙 한계에 도달했습니다. /Zm을 사용하여 한계를 더 높게 지정하세요.|
 |심각한 오류 C1077|컴파일러 한계: 명령줄 옵션을 *number* 개보다 많이 지정할 수 없습니다.|
-|[심각한 오류 C1079](../../error-messages/compiler-errors-1/fatal-error-c1079.md)|컴파일러 한계: PCH 파일 크기 한계를 초과했습니다.|
+|[심각한 오류 C1079](../../error-messages/compiler-errors-1/fatal-error-c1079.md)|컴파일러 한계: PCH 파일 크기 제한 초과|
 |[심각한 오류 C1080](../../error-messages/compiler-errors-1/fatal-error-c1080.md)|컴파일러 한계: 명령줄 옵션이 *number* 자 한계를 초과했습니다.|
 |[심각한 오류 C1081](../../error-messages/compiler-errors-1/fatal-error-c1081.md)|'*file*': 파일 이름이 너무 깁니다.|
 |심각한 오류 C1082|*type* 파일을 닫을 수 없습니다.'*file*': *message*|
@@ -265,7 +264,7 @@ ms.locfileid: "50677333"
 |심각한 오류 C1111|템플릿/제네릭 매개 변수가 너무 많습니다.|
 |심각한 오류 C1112|컴파일러 한계: `'number`'개로 너무 많습니다. *number* 개만 사용할 수 있습니다.|
 |[심각한 오류 C1113](../../error-messages/compiler-errors-1/fatal-error-c1113.md)|#using이 '*file*'에서 실패했습니다.|
-|심각한 오류 C1114|'*file*': WinRT는 관리되는 어셈블리의 #using을 지원하지 않습니다.|
+|심각한 오류 C1114|'*file*': WinRT 지원 하지 않습니다 # 관리 되는 어셈블리의 using|
 |[심각한 오류 C1120](../../error-messages/compiler-errors-1/fatal-error-c1120.md)|'*function*'에 대한 GetProcAddress 호출이 실패했습니다.|
 |[심각한 오류 C1121](../../error-messages/compiler-errors-1/fatal-error-c1121.md)|CryptoAPI에 대한 호출이 실패했습니다.|
 |[심각한 오류 C1126](../../error-messages/compiler-errors-1/fatal-error-c1126.md)|자동 할당이 *size*를 초과합니다.|

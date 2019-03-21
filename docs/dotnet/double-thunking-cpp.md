@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /clr compiler option [C++], double thunking
 - interoperability [C++], double thunking
 ms.assetid: a85090b2-dc3c-498a-b40c-340db229dd6f
-ms.openlocfilehash: dc36679a9457939bb5fb110219b2ddfbf05c643e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f34af20ed3dd2c48659bdbf7794c443920dbb4e9
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546408"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278400"
 ---
 # <a name="double-thunking-c"></a>이중 썽킹(C++)
 
@@ -27,7 +27,7 @@ ms.locfileid: "50546408"
 
 마찬가지로, 내보내는 경우 ([dllexport, dllimport](../cpp/dllexport-dllimport.md)) 관리 되는 함수 네이티브 진입점이 생성 되 고 네이티브 진입점을 통해를 가져오고 해당 함수를 호출 하는 모든 함수를 호출 합니다. 이 경우 이중 썽킹를 방지 하려면 기본 내보내기/가져오기 의미 체계를 사용 하지 마십시오 통해 메타 데이터를 간단히 참조할 `#using` (참조 [#using 지시문](../preprocessor/hash-using-directive-cpp.md)).
 
-불필요 한 이중 썽킹 줄이기 위해 컴파일러 업데이트 되었습니다. 으로 모든 함수는 시그니처 (반환 형식 포함)에서 관리 되는 유형으로 암시적으로 표시 됩니다 예를 들어 `__clrcall`합니다. 이중 썽크 제거에 대 한 자세한 내용은 참조 하세요. [ https://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx ](https://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx)합니다.
+불필요 한 이중 썽킹 줄이기 위해 컴파일러 업데이트 되었습니다. 으로 모든 함수는 시그니처 (반환 형식 포함)에서 관리 되는 유형으로 암시적으로 표시 됩니다 예를 들어 `__clrcall`합니다.
 
 ## <a name="example"></a>예제
 
@@ -137,6 +137,6 @@ int main() {
 after calling struct S
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [혼합형(네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md)

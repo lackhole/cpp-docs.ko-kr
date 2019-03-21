@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -IGNOREIDL linker option
 - /IGNOREIDL linker option
 ms.assetid: 29514098-6a1c-4317-af2f-1dc268972780
-ms.openlocfilehash: 1a78f99f61bbeff9c5d617fce374925d0541aafd
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 210778adecd87ffdd5f2702c10106f12bd5a1b79
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423159"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820431"
 ---
 # <a name="ignoreidl-don39t-process-attributes-into-midl"></a>/IGNOREIDL (Don&#39;t 프로세스 특성을 MIDL로)
 
@@ -28,7 +28,7 @@ ms.locfileid: "57423159"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 클릭 합니다 **링커** 폴더입니다.
 
@@ -42,9 +42,9 @@ ms.locfileid: "57423159"
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)<br/>
-[/IDLOUT(MIDL 출력 파일 이름 지정)](../../build/reference/idlout-name-midl-output-files.md)<br/>
-[/TLBOUT(.TLB 파일 이름 지정)](../../build/reference/tlbout-name-dot-tlb-file.md)<br/>
-[/MIDL(MIDL 명령줄 옵션 지정)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)<br/>
+[/IDLOUT(MIDL 출력 파일 이름 지정)](idlout-name-midl-output-files.md)<br/>
+[/TLBOUT(.TLB 파일 이름 지정)](tlbout-name-dot-tlb-file.md)<br/>
+[/MIDL(MIDL 명령줄 옵션 지정)](midl-specify-midl-command-line-options.md)<br/>
 [특성을 사용하는 프로그램 빌드](../../windows/building-an-attributed-program.md)

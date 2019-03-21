@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - bad_alloc class
 ms.assetid: 6429a8e6-5a49-4907-8d56-f4a4ec8131d0
-ms.openlocfilehash: 1ebb427277c985fdab711d5bd84dcea54898a83b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 63b474d0209a5cc385de9dc11b56d5de8382a9cf
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515611"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751533"
 ---
 # <a name="badalloc-class"></a>bad_alloc 클래스
 
@@ -68,7 +68,7 @@ bad allocation
 
 **헤더:** \<new>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [exception 클래스](../standard-library/exception-class.md)<br/>
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

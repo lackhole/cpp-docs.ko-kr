@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - VectorIterator Class
 ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
-ms.openlocfilehash: 8e776e0f5d479ee8633efa647ac41e6b1b5f9c0e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 448ce9e9c6c937d5f95640dca8fa2d2ed20bb4b8
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595600"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743227"
 ---
 # <a name="platformcollectionsvectoriterator-class"></a>Platform::Collections::VectorIterator 클래스
 
@@ -70,7 +70,7 @@ VectorIterator 템플릿 클래스의 형식 이름입니다.
 |[VectorIterator::operator-> 연산자](#operator-arrow)|현재 VectorIterator가 참조하는 요소의 주소를 검색합니다.|
 |[VectorIterator::operator>= 연산자](#operator-greater-than-or-equal)|현재 VectorIterator가 지정된 VectorIterator보다 크거나 같은지 여부를 나타냅니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `VectorIterator`
 
@@ -208,7 +208,7 @@ VectorIterator operator++(int);
 
 첫 번째 VectorIterator 구문은 현재 VectorIterator를 사전에 증가시킵니다.
 
-두 번째 구문은 현재 VectorIterator를 사후에 증가시킵니다. 두 번째 구문의 `int` 형식은 실제 정수 피연산자가 아니라 후위 증가 연산을 나타냅니다.
+두 번째 구문은 현재 VectorIterator를 사후에 증가시킵니다. 두 번째 구문의 `int` 형식은 실제 정수 연산자가 아니라 후위 증가 연산을 나타냅니다.
 
 ## <a name="operator-inequality"></a>  Vectoriterator:: Operator! = 연산자
 
@@ -408,6 +408,6 @@ IVector\<T > 개체입니다.
 
 첫 번째 구문 예제에서는 기본 생성자를 호출합니다. 두 번째 구문 예제 IVector에서 VectorIterator를 만드는 데 사용 되는 명시적 생성자가\<T > 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

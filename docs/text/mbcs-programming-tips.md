@@ -1,20 +1,18 @@
-﻿---
+---
 title: 멀티바이트 문자 집합(MBCS) 프로그래밍 팁
 ms.date: 11/04/2016
-f1_keywords:
-- _mbcs
 helpviewer_keywords:
 - programming [C++], MBCS
 - character sets [C++], multibyte
 - MBCS [C++], programming
 - multibyte characters [C++]
 ms.assetid: d8ad36b8-917f-474e-8adb-69462adecd17
-ms.openlocfilehash: 70669f67b78ee4ea4f8073b78d2b9589e56a6356
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 420e376d3a66c8f8115732692089f4254847bc0d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552622"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808251"
 ---
 # <a name="mbcs-programming-tips"></a>멀티바이트 문자 집합(MBCS) 프로그래밍 팁
 
@@ -34,6 +32,6 @@ ms.locfileid: "50552622"
 
 - [버퍼 오버플로](../text/buffer-overflow.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [멀티바이트 문자 집합(MBCS) 지원](../text/support-for-multibyte-character-sets-mbcss.md)

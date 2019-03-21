@@ -9,12 +9,12 @@ helpviewer_keywords:
 - LIBPATH environment variable
 - environment variables, CL compiler
 ms.assetid: 2606585b-a681-42ee-986e-1c9a2da32108
-ms.openlocfilehash: 47d6966cdc821cee4bd9ffd61b36c0c79143b6c2
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a15bedc0a5aa8215356a98c3635a2edd1f3cfc5f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57412460"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807964"
 ---
 # <a name="cl-environment-variables"></a>CL 환경 변수
 
@@ -30,13 +30,13 @@ CL를 설정할 수 있습니다 또는 \_CL\_ 다음 구문을 사용 하 여 �
 
 > SET CL=[ [*option*] ... [*file*] ...] [/link *link-opt* ...] SET \_CL\_=[ [*option*] ... [*file*] ...] [/link *link-opt* ...]
 
-CL에 대 한 인수에 대 한 내용은 및 \_CL\_ 환경 변수를 참조 하십시오 [컴파일러 명령줄 구문](../../build/reference/compiler-command-line-syntax.md)합니다.
+CL에 대 한 인수에 대 한 내용은 및 \_CL\_ 환경 변수를 참조 하십시오 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)합니다.
 
 이러한 환경 변수를 사용하여 가장 자주 사용하는 파일 및 옵션을 정의하고 명령줄을 사용하여 특정 용도에 맞는 특정 파일 및 옵션을 정의할 수 있습니다. CL 및 \_CL\_ 환경 변수는 1024 자 (명령줄 입력된 제한)로 제한 합니다.
 
 등호 기호(=)를 사용하는 기호를 정의할 때는 /D 옵션을 사용할 수 없습니다. 등호 기호에 대신 숫자 기호(#)를 사용할 수 있습니다. 따라서에서 CL를 사용할 수 있습니다 또는 \_CL\_ 명시적 값으로 전처리기 상수를 정의 하는 환경 변수-예를 들어 `/DDEBUG#1` 정의 하려면 `DEBUG=1`합니다.
 
-관련 정보를 참조 하세요 [환경 변수 설정](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md)합니다.
+관련 정보를 참조 하세요 [환경 변수 설정](../setting-the-path-and-environment-variables-for-command-line-builds.md)합니다.
 
 ## <a name="examples"></a>예제
 
@@ -58,5 +58,5 @@ CL에 대 한 인수에 대 한 내용은 및 \_CL\_ 환경 변수를 참조 하
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)
+[컴파일러 옵션 설정](compiler-command-line-syntax.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)

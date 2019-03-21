@@ -10,12 +10,12 @@ helpviewer_keywords:
 - bsc files, building
 - BSCMAKE
 ms.assetid: b97ad994-1355-4809-98db-6abc12c6fb13
-ms.openlocfilehash: 1dd89047b8fa6a415e7e19dd69ca3f499887299f
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 4303e48e3d02f0f69b177e8a888157a6f90aaa89
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416255"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822355"
 ---
 # <a name="bscmake-reference"></a>BSCMAKE 참조
 
@@ -33,18 +33,18 @@ Microsoft Browse Information Maintenance Utility(BSCMAKE.EXE)에서는 컴파일
 
 이 단원에 포함된 항목은 다음과 같습니다.
 
-- [찾아보기 정보 파일 빌드: 개요](../../build/reference/building-browse-information-files-overview.md)
+- [찾아보기 정보 파일 빌드: 개요](building-browse-information-files-overview.md)
 
-- [.Bsc 파일 빌드](../../build/reference/building-a-dot-bsc-file.md)
+- [.Bsc 파일 빌드](building-a-dot-bsc-file.md)
 
-- [BSCMAKE 명령줄](../../build/reference/bscmake-command-line.md)
+- [BSCMAKE 명령줄](bscmake-command-line.md)
 
-- [BSCMAKE 명령 파일](../../build/reference/bscmake-command-file-response-file.md)
+- [BSCMAKE 명령 파일](bscmake-command-file-response-file.md)
 
-- [BSCMAKE 옵션](../../build/reference/bscmake-options.md)
+- [BSCMAKE 옵션](bscmake-options.md)
 
-- [BSCMAKE 종료 코드](../../build/reference/bscmake-exit-codes.md)
+- [BSCMAKE 종료 코드](bscmake-exit-codes.md)
 
 ## <a name="see-also"></a>참고자료
 
-[C/C++ 빌드 도구](../../build/reference/c-cpp-build-tools.md)
+[추가 MSVC 빌드 도구](c-cpp-build-tools.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - browse information files (.bsc)
 - browse information files (.bsc), creating
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
-ms.openlocfilehash: 02f2107469e2fbbc4ea3591e1211e600d16fb9e9
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 4f12bd25ca3ab718a845dbb04aba3169cc6d4b19
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57413019"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820624"
 ---
 # <a name="building-browse-information-files-overview"></a>찾아보기 정보 파일 빌드: 개요
 
@@ -20,18 +20,18 @@ ms.locfileid: "57413019"
 
 .Sbr 및.bsc 파일을 생성 시간이, Visual c + + 기본적으로 이러한 함수를 설정 하도록 합니다. 현재 정보를 검색 하려는 경우 찾아보기 옵션을 설정 하 고 프로젝트를 다시 작성 해야 합니다.
 
-사용 하 여 [/FR](../../build/reference/fr-fr-create-dot-sbr-file.md) 하거나 [/Fr](../../build/reference/fr-fr-create-dot-sbr-file.md) .sbr 파일을 만드는 컴파일러에 지시 합니다. .Bsc 파일을 만들려면 호출할 수 있습니다 [BSCMAKE](../../build/reference/bscmake-command-line.md) 명령줄에서. BSCMAKE를 사용 하 여 명령줄에서 보다 자세히 제어할 찾아보기 정보 파일 조작 제공 합니다. 참조 [BSCMAKE 참조](../../build/reference/bscmake-reference.md) 자세한 내용은 합니다.
+사용 하 여 [/FR](fr-fr-create-dot-sbr-file.md) 하거나 [/Fr](fr-fr-create-dot-sbr-file.md) .sbr 파일을 만드는 컴파일러에 지시 합니다. .Bsc 파일을 만들려면 호출할 수 있습니다 [BSCMAKE](bscmake-command-line.md) 명령줄에서. BSCMAKE를 사용 하 여 명령줄에서 보다 자세히 제어할 찾아보기 정보 파일 조작 제공 합니다. 참조 [BSCMAKE 참조](bscmake-reference.md) 자세한 내용은 합니다.
 
 > [!TIP]
 >  .Sbr 파일 생성에 선택할 수 있지만 해제.bsc 파일 생성을 그대로 둡니다. 이 제공 빠른 빌드 하지만.bsc 파일 생성 설정 하 고 프로젝트를 작성 하 여 새.bsc 파일을 신속 하 게 만들 수 있습니다.
 
 시간, 메모리 및.bsc 파일의 크기를 줄여.bsc 파일을 빌드하는 데 필요한 디스크 공간을 줄일 수 있습니다.
 
-참조 [일반 속성 페이지 (프로젝트)](../../ide/general-property-page-project.md) 개발 환경에서 브라우저 파일을 작성 하는 방법에 대 한 정보에 대 한 합니다.
+참조 [일반 속성 페이지 (프로젝트)](general-property-page-project.md) 개발 환경에서 브라우저 파일을 작성 하는 방법에 대 한 정보에 대 한 합니다.
 
 ### <a name="to-create-a-smaller-bsc-file"></a>더 작은.bsc 파일을 만들려면
 
-1. 사용 하 여 [BSCMAKE 명령줄 옵션](../../build/reference/bscmake-options.md) 에 찾아보기 정보 파일에서 정보를 제외 합니다.
+1. 사용 하 여 [BSCMAKE 명령줄 옵션](bscmake-options.md) 에 찾아보기 정보 파일에서 정보를 제외 합니다.
 
 1. 하나 이상의.sbr 파일 컴파일 또는 어셈블할 때 로컬 기호를 생략 합니다.
 
@@ -45,5 +45,5 @@ ms.locfileid: "57413019"
 
 ## <a name="see-also"></a>참고자료
 
-[빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
-[BSCMAKE 참조](../../build/reference/bscmake-reference.md)
+[추가 MSVC 빌드 도구](c-cpp-build-tools.md)<br/>
+[BSCMAKE 참조](bscmake-reference.md)

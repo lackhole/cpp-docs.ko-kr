@@ -1,5 +1,5 @@
 ---
-title: Visual Studio의 Visual C++
+title: Visual Studio의 C++
 description: Visual C++는 Visual Studio IDE에 있는 Microsoft C++ 컴파일러, 코드 편집기 및 관련 도구의 이름입니다. Visual C++를 사용하여 Windows, Linux, Android 및 iOS 프로그램을 개발합니다.
 ms.date: 09/26/2018
 ms.technology: cpp-ide
@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 0dd7cc2aebb9ff0f95d11c839a104b94b3d37db6
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: 475f9394d9a12d05c95bc73ec451fbfe6fc4b052
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809653"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57814412"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio의 Visual C++
 
@@ -71,11 +71,14 @@ C++를 배우기 시작합니다.
 
 ## <a name="c-development-tools"></a>C++ 개발 도구
 
-[IDE 및 개발 도구](ide/ide-and-tools-for-visual-cpp-development.md)<br/>
+[Visual Studio에서 C++ 개발 개요](overview-of-cpp-development.md)<br/>
 Visual Studio IDE를 사용하여 프로젝트 만들기, 코드 편집, 라이브러리에 연결, 컴파일, 디버그, 단위 테스트 만들기, 정적 분석 수행, 배포 등의 작업을 수행하는 방법입니다.
 
-[컴파일러 및 빌드 도구](build/building-c-cpp-programs.md)<br/>
-Microsoft C++ 컴파일러 및 링커 옵션, 오류 메시지, 명령줄 예제, 다양한 플랫폼 구성 및 빌드 참조 항목입니다.
+[프로젝트 및 빌드 시스템](build/projects-and-build-systems-cpp.md)<br/>
+MSVC 컴파일러 및 링커 옵션을 사용하여 Visual Studio C++ 프로젝트, CMake 프로젝트 및 기타 프로젝트를 만들고 구성하는 방법입니다.
+
+[C++ 코드 작성 및 리팩터링](ide/writing-and-refactoring-code-cpp.md)<br/>
+C++ 편집기의 생산성 기능을 사용하여 코드를 리팩터링, 탐색 및 작성하는 방법입니다.
 
 [네이티브 코드 디버그](/visualstudio/debugger/debugging-native-code)<br/>
 C++ 프로젝트에서 Visual Studio 디버거를 사용합니다.

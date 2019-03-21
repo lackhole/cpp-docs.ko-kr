@@ -9,12 +9,12 @@ helpviewer_keywords:
 - keywords [C++]
 - Managed Extensions for C++, replacement syntax
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
-ms.openlocfilehash: 3b29b2e8b00aa436d1687cdbbd5f299f4787c71b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e9586244c9e2293ba6b484efb158fc3a2529c0ea
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432362"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57814490"
 ---
 # <a name="component-extensions-for-net-and-uwp"></a>.NET 및 UWP 용 구성 요소 확장
 
@@ -39,8 +39,8 @@ C + + /cli CX 확장은 하위 집합 C + + /cli CLI입니다. 생성 되는 코
 
 |키워드|상황에 맞는지 여부|용도|참조|
 |-------------|-----------------------|-------------|---------------|
-|**ref 클래스**<br /><br /> **ref 구조체**|아니요|클래스를 선언합니다.|[클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)|
-|**값 클래스**<br /><br /> **값 구조체**|아니요|값 클래스를 선언합니다.|[클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)|
+|**ref 클래스**<br /><br /> **ref 구조체**|아니요|클래스를 선언합니다.|[클래스 및 구조체(C++)](../windows/classes-and-structs-cpp-component-extensions.md)|
+|**값 클래스**<br /><br /> **값 구조체**|아니요|값 클래스를 선언합니다.|[클래스 및 구조체(C++)](../windows/classes-and-structs-cpp-component-extensions.md)|
 |**인터페이스 클래스**<br /><br /> **인터페이스 구조체**|아니요|인터페이스를 선언합니다.|[인터페이스 클래스](../windows/interface-class-cpp-component-extensions.md)|
 |**enum 클래스**<br /><br /> **enum 구조체**|아니요|열거형을 선언합니다.|[enum 클래스](../windows/enum-class-cpp-component-extensions.md)|
 |**속성**|예|속성을 선언합니다.|[속성](../windows/property-cpp-component-extensions.md)|
@@ -64,7 +64,7 @@ C + + /cli CX 확장은 하위 집합 C + + /cli CLI입니다. 생성 되는 코
 
 |키워드|상황에 맞는지 여부|용도|
 |-------------|-----------------------|-------------|
-|**제네릭**|아니요|제네릭 형식을 선언합니다.|
+|**generic**|아니요|제네릭 형식을 선언합니다.|
 |**where**|예|제네릭 형식 매개 변수에 적용되는 제약 조건을 지정합니다.|
 
 ## <a name="miscellaneous-keywords"></a>기타 키워드
@@ -83,15 +83,17 @@ C + + /cli CX 확장은 하위 집합 C + + /cli CLI입니다. 생성 되는 코
 
 ## <a name="template-constructs"></a>템플릿 구문
 
-다음 언어 구문은 키워드 대신 템플릿으로 구현됩니다. `/ZW` 컴파일러 옵션을 지정하는 경우 `lang` 네임스페이스에 정의됩니다. `/clr` 컴파일러 옵션을 지정하는 경우 `cli` 네임스페이스에 정의됩니다.
+다음 언어 구문은 키워드 대신 템플릿으로 구현됩니다. 
+  `/ZW` 컴파일러 옵션을 지정하는 경우 `lang` 네임스페이스에 정의됩니다. 
+  `/clr` 컴파일러 옵션을 지정하는 경우 `cli` 네임스페이스에 정의됩니다.
 
 |키워드|용도|참조|
 |-------------|-------------|---------------|
 |**array**|배열을 선언합니다.|[배열](../windows/arrays-cpp-component-extensions.md)|
 |**interior_ptr**|(CLR에만 해당) 참조 형식의 데이터를 가리킵니다.|[interior_ptr(C++/CLI)](../windows/interior-ptr-cpp-cli.md)|
-|**pin_ptr**|(CLR에만 해당) 가비지 컬렉션 시스템을 일시적으로 표시하지 않도록 CLR 참조 형식을 가리킵니다.|[pin_ptr(C++/CLI)](../windows/pin-ptr-cpp-cli.md)|
+|**pin_ptr**|(CLR에만 해당) 가비지 수집 시스템을 일시적으로 표시하지 않도록 CLR 참조 형식을 가리킵니다.|[pin_ptr(C++/CLI)](../windows/pin-ptr-cpp-cli.md)|
 |**safe_cast**|런타임 형식에 대한 최적의 캐스팅 메서드를 확인하고 실행합니다.|[safe_cast](../windows/safe-cast-cpp-component-extensions.md)|
-|**typeid**|(CLR에만 해당) 지정된 형식 또는 개체를 설명하는 <xref:System.Type?displayProperty=fullName>개체를 검색합니다.|[typeid](../windows/typeid-cpp-component-extensions.md)|
+|**typeid(C++ 구성 요소 확장)**|(CLR에만 해당) 지정된 형식 또는 개체를 설명하는 <xref:System.Type?displayProperty=fullName>개체를 검색합니다.|[typeid(C++ 구성 요소 확장)](../windows/typeid-cpp-component-extensions.md)|
 
 ## <a name="declarators"></a>선언자
 
@@ -111,7 +113,7 @@ C + + /cli CX 확장은 하위 집합 C + + /cli CLI입니다. 생성 되는 코
 |[__identifier(C++/CLI)](../windows/identifier-cpp-cli.md)|(Windows 런타임 및 CLR) 식별자로 키워드를 사용할 수 있습니다.|
 |[가변 인수 목록(...)(C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)|(Windows 런타임 및 CLR) 가변 개수의 인수를 사용 하는 함수를 사용 하도록 설정 합니다.|
 |[C++ 네이티브 형식에 해당하는 .NET Framework(C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md)|C++ 정수 계열 형식 대신 사용되는 CLR 유형을 나열합니다.|
-|[appdomain](../cpp/appdomain.md) **__declspec** 한정자|**__declspec** 정적 및 전역 변수가 appdomain 별로 존재를 규정 하는 한정자입니다.|
+|[appdomain](../cpp/appdomain.md) **__declspec** modifier|**__declspec** 정적 및 전역 변수가 appdomain 별로 존재를 규정 하는 한정자입니다.|
 |[/Clr을 사용한 C 스타일 캐스트 (C + + /cli CLI)](../windows/c-style-casts-with-clr-cpp-cli.md)|C 스타일 캐스트가 해석되는 방법을 설명합니다.|
 |[__clrcall](../cpp/clrcall.md) 호출 규칙|CLR 규격 호출 규칙을 나타냅니다.|
 |`__cplusplus_cli`|[미리 정의된 매크로](../preprocessor/predefined-macros.md)|
@@ -122,13 +124,14 @@ C + + /cli CX 확장은 하위 집합 C + + /cli CLI입니다. 생성 되는 코
 |[Boxing](../windows/boxing-cpp-component-extensions.md)|값 형식이 boxing되는 조건을 보여 줍니다.|
 |[형식 특성에 대 한 컴파일러 지원](../windows/compiler-support-for-type-traits-cpp-component-extensions.md)|컴파일 시간에 형식의 특성을 검색하는 방법을 설명합니다.|
 |[관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md) pragma|관리되는 함수와 관리되지 않는 함수가 동일한 모듈에 공존하는 방법을 보여 줍니다.|
-|[프로세스](../cpp/process.md) **__declspec** 한정자|**__declspec** 정적 및 전역 변수가 process 별로 존재를 규정 하는 한정자입니다.|
+|[process](../cpp/process.md) **__declspec** modifier|**__declspec** 정적 및 전역 변수가 process 별로 존재를 규정 하는 한정자입니다.|
 |[리플렉션(C++/CLI)](../dotnet/reflection-cpp-cli.md)|런타임 형식 정보의 CLR 버전을 보여 줍니다.|
-|[String](../windows/string-cpp-component-extensions.md)|<xref:System.String>로 문자열 리터럴의 컴파일러 변환을 설명합니다.|
+|[String](../windows/string-cpp-component-extensions.md)|
+  <xref:System.String>로 문자열 리터럴의 컴파일러 변환을 설명합니다.|
 |[형식 전달(C++/CLI)](../windows/type-forwarding-cpp-cli.md)|클라이언트 코드를 다시 컴파일할 필요가 없도록 전달 어셈블리의 형식을 다른 어셈블리로 이동할 수 있습니다.|
 |[사용자 정의 특성](../windows/user-defined-attributes-cpp-component-extensions.md)|사용자 정의 특성을 보여 줍니다.|
 |[#using 지시문](../preprocessor/hash-using-directive-cpp.md)|외부 어셈블리를 가져옵니다.|
-|[XML 문서](../ide/xml-documentation-visual-cpp.md)|XML 기반 코드 문서를 사용 하 여 설명 [/doc (문서 주석 처리) (C/c + +)](../build/reference/doc-process-documentation-comments-c-cpp.md)|
+|[XML 문서](../build/reference/xml-documentation-visual-cpp.md)|XML 기반 코드 문서를 사용 하 여 설명 [/doc (문서 주석 처리) (C/c + +)](../build/reference/doc-process-documentation-comments-c-cpp.md)|
 
 ## <a name="see-also"></a>참고 항목
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - constants [C++], file translation mode
 - file translation [C++]
 ms.assetid: 49b13bf3-442e-4d19-878b-bd1029fa666a
-ms.openlocfilehash: d98a74c820023ac8684f54413c0e81c58eba7b0b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef9b986753de05c45b3071e55f9b163fa5a6a7da
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443292"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743327"
 ---
 # <a name="file-translation-constants"></a>파일 변환 상수
 
@@ -26,7 +26,7 @@ ms.locfileid: "50443292"
 #include <stdio.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이러한 상수는 변환 모드(**"b"** 또는 **"t"**)를 지정합니다. 이 모드는 액세스 형식(**"r"**, **"w"**, **"a"**, **"r+"**, **"w+"**, **"a+"**)을 지정하는 문자열에 포함됩니다.
 

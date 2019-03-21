@@ -6,12 +6,12 @@ helpviewer_keywords:
 - -CGTHREADS linker option
 - CGTHREADS linker option
 ms.assetid: 4b52cfdb-3702-470b-9580-fabeb1417488
-ms.openlocfilehash: e2e1a51dcff46601034ed18292e9c4dcf4bd7d5c
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: b778802d3fffcaafc0cf01ac46ae85c4efbef95c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57413942"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809537"
 ---
 # <a name="cgthreads-compiler-threads"></a>/CGTHREADS(컴파일러 스레드)
 
@@ -30,13 +30,13 @@ ms.locfileid: "57413942"
 
 ## <a name="remarks"></a>설명
 
-합니다 **/CGTHREADS** 옵션 경우 링크 타임 컴파일의 최적화 및 코드 생성 단계에 대해 병렬로 스레드 cl.exe 사용의 최대 수를 지정 코드를 생성 ([/LTCG](../../build/reference/ltcg-link-time-code-generation.md))은 지정 합니다. 기본적으로 cl.exe에서는 4 개의 스레드 처럼 **/CGTHREADS:4** 지정 되었습니다. 더 많은 프로세서 코어를 사용할 수 있는 경우에는 더 큰 `number` 값으로 인해 빌드 시간이 줄어들 수 있습니다.
+합니다 **/CGTHREADS** 옵션 경우 링크 타임 컴파일의 최적화 및 코드 생성 단계에 대해 병렬로 스레드 cl.exe 사용의 최대 수를 지정 코드를 생성 ([/LTCG](ltcg-link-time-code-generation.md))은 지정 합니다. 기본적으로 cl.exe에서는 4 개의 스레드 처럼 **/CGTHREADS:4** 지정 되었습니다. 더 많은 프로세서 코어를 사용할 수 있는 경우에는 더 큰 `number` 값으로 인해 빌드 시간이 줄어들 수 있습니다.
 
-빌드에 여러 수준의 병렬 처리를 지정할 수 있습니다. Msbuild.exe 스위치인 **/maxcpucount** 병렬로 실행할 수 있는 MSBuild 프로세스의 수를 지정 합니다. 합니다 [/MP (여러 프로세스로 빌드)](../../build/reference/mp-build-with-multiple-processes.md) 컴파일러 플래그는 동시에 소스 파일을 컴파일하는 cl.exe 프로세스의 수를 지정 합니다. 합니다 [/cgthreads](../../build/reference/cgthreads-code-generation-threads.md) 컴파일러 옵션 각 cl.exe 프로세스에서 사용 되는 스레드 수를 지정 합니다. 프로세서는 프로세서 코어와 동일한 수의 스레드를 동시에 실행할 수 있으므로 이러한 모든 옵션에 대해 동시에 더 큰 값을 지정하는 것은 유용하지 않으며 오히려 역효과가 일어날 수 있습니다. 병렬로 프로젝트를 빌드하는 방법에 대 한 자세한 내용은 참조 하세요. [병렬로 여러 프로젝트 빌드](/visualstudio/msbuild/building-multiple-projects-in-parallel-with-msbuild)합니다.
+빌드에 여러 수준의 병렬 처리를 지정할 수 있습니다. Msbuild.exe 스위치인 **/maxcpucount** 병렬로 실행할 수 있는 MSBuild 프로세스의 수를 지정 합니다. 합니다 [/MP (여러 프로세스로 빌드)](mp-build-with-multiple-processes.md) 컴파일러 플래그는 동시에 소스 파일을 컴파일하는 cl.exe 프로세스의 수를 지정 합니다. 합니다 [/cgthreads](cgthreads-code-generation-threads.md) 컴파일러 옵션 각 cl.exe 프로세스에서 사용 되는 스레드 수를 지정 합니다. 프로세서는 프로세서 코어와 동일한 수의 스레드를 동시에 실행할 수 있으므로 이러한 모든 옵션에 대해 동시에 더 큰 값을 지정하는 것은 유용하지 않으며 오히려 역효과가 일어날 수 있습니다. 병렬로 프로젝트를 빌드하는 방법에 대 한 자세한 내용은 참조 하세요. [병렬로 여러 프로젝트 빌드](/visualstudio/msbuild/building-multiple-projects-in-parallel-with-msbuild)합니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성**를 **링커** 폴더입니다.
 
@@ -50,5 +50,5 @@ ms.locfileid: "57413942"
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션](../../build/reference/linker-options.md)<br/>
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)
+[MSVC 링커 옵션](linker-options.md)<br/>
+[MSVC 링커 참조](linking.md)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - delayed loading of DLLs, notification hooks
 ms.assetid: e9c291ed-2f2d-4319-a171-09800625256f
-ms.openlocfilehash: 1e4dc6331e2a957c0268e686fff7dbb3f7eb0b24
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 884d8e8479b7cad28d99e19adfac4d05dbeec5f5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426552"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818312"
 ---
 # <a name="notification-hooks"></a>알림 후크
 
@@ -77,8 +77,8 @@ ExternC
 PfnDliHook   __pfnDliFailureHook2;
 ```
 
-알림을 전달 된 **DelayLoadInfo** 알림 값과 함께 후크 함수에 구조체. 이 데이터는 지연 로드 도우미 루틴에서 사용 되는 동일 합니다. 알림 값에 정의 된 값 중 하나가 됩니다 [구조체 및 상수 정의](../../build/reference/structure-and-constant-definitions.md)합니다.
+알림을 전달 된 **DelayLoadInfo** 알림 값과 함께 후크 함수에 구조체. 이 데이터는 지연 로드 도우미 루틴에서 사용 되는 동일 합니다. 알림 값에 정의 된 값 중 하나가 됩니다 [구조체 및 상수 정의](structure-and-constant-definitions.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[오류 처리 및 알림](../../build/reference/error-handling-and-notification.md)
+[오류 처리 및 알림](error-handling-and-notification.md)

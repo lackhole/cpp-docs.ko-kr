@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::Details
 ms.assetid: d5ac76ee-b568-4841-882f-738ed6fa4f1e
-ms.openlocfilehash: b61470d865f751957d796bed7ebf23c24037dd51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f7885397a56391581f9e3d0fe985311164d0219
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567208"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746008"
 ---
 # <a name="platformcollectionsdetails-namespace"></a>Platform::Collections::Details 네임스페이스
 
@@ -26,7 +26,7 @@ namespace Platform {  namespace Collections {    namespace Details {}}}
 
 이 네임스페이스의 멤버는 collection.h에 정의되며 개체 브라우저에 표시되지 않습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [Platform::Collections 네임스페이스](../cppcx/platform-collections-namespace.md)
 
@@ -36,6 +36,6 @@ namespace Platform {  namespace Collections {    namespace Details {}}}
 
 **네임스페이스:** Platform::Collection::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

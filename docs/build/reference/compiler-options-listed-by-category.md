@@ -4,12 +4,12 @@ ms.date: 11/12/2018
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: 63b621bf99a1aeada10706badfe19cde417d7233
-ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
+ms.openlocfilehash: d3ebfbc3661ba648c2fdb73c697db42735faf422
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56676502"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816336"
 ---
 # <a name="compiler-options-listed-by-category"></a>컴파일러 옵션 범주별 목록
 
@@ -118,9 +118,9 @@ ms.locfileid: "56676502"
 |[/vms](vmm-vms-vmv-general-purpose-representation.md)|단일 상속을 선언합니다.|
 |[/vmv](vmm-vms-vmv-general-purpose-representation.md)|가상 상속을 선언합니다.|
 |[/Z7](z7-zi-zi-debug-information-format.md)|C 7.0 호환 디버깅 정보를 생성 합니다.|
-|[/Za](za-ze-disable-language-extensions.md)|언어 확장을 사용하지 않습니다.|
+|[/Za](za-ze-disable-language-extensions.md)|C89 언어 확장을 사용 하지 않도록 설정 합니다.|
 |[/Zc](zc-conformance.md)|[/Ze](za-ze-disable-language-extensions.md)에서 표준 동작을 지정합니다.|
-|[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. 언어 확장을 사용합니다.|
+|[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. C89 언어 확장을 사용 합니다.|
 |[/Zf](zf.md)|PDB 병렬 빌드에서 생성 시간을 개선합니다.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|편집하며 계속하기와 호환되는 프로그램 데이터베이스에 디버깅 정보를 포함합니다. (x86 전용)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|완전한 디버깅 정보를 생성합니다.|
@@ -159,7 +159,7 @@ ms.locfileid: "56676502"
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|
 |[/HELP](help-compiler-command-line-help.md)|컴파일러 옵션을 나열합니다.|
 |[/J](j-default-char-type-is-unsigned.md)|기본 `char` 형식을 변경합니다.|
-|[/JMC](jmc.md)|네이티브 c + + 내 코드만 디버깅 옵션을 지원합니다.|
+|[/JMC](jmc.md)|네이티브 C++ 내 코드만 디버깅 옵션을 지원합니다.|
 |[/kernel](kernel-create-kernel-mode-binary.md)|컴파일러와 링커는 Windows 커널에서 실행할 수 있는 이진 파일을 만듭니다.|
 |[/MP](mp-build-with-multiple-processes.md)|여러 개의 소스 파일을 동시에 빌드합니다.|
 |[/nologo](nologo-suppress-startup-banner-c-cpp.md)|초기 화면 배너를 표시하지 않습니다.|
@@ -168,7 +168,7 @@ ms.locfileid: "56676502"
 |[/Tc](tc-tp-tc-tp-specify-source-file-type.md)|C 소스 파일을 지정합니다.|
 |[/TC](tc-tp-tc-tp-specify-source-file-type.md)|3. 모든 원본 파일 지정|
 |[/Tp](tc-tp-tc-tp-specify-source-file-type.md)|C++ 소스 파일을 지정합니다.|
-|[/TP](tc-tp-tc-tp-specify-source-file-type.md)|모든 원본 파일은 c + +를 지정 합니다.|
+|[/TP](tc-tp-tc-tp-specify-source-file-type.md)|모든 원본 파일은 C++를 지정 합니다.|
 |[/V](v-version-number.md)|더 이상 사용되지 않습니다. 버전 문자열을 설정합니다.|
 |[/w](compiler-option-warning-level.md)|모든 경고를 사용하지 않습니다.|
 |[/W0, /W1, /W2, /W3, /W4](compiler-option-warning-level.md)|출력 경고 수준을 설정합니다.|
@@ -193,7 +193,7 @@ ms.locfileid: "56676502"
 |[/validate-charset](validate-charset-validate-for-compatible-characters.md)|만 호환 문자에 대 한 utf-8 파일의 유효성을 검사 합니다.|
 |[/diagnostics](diagnostics-compiler-diagnostic-options.md)|진단 메시지의 형식을 제어합니다.|
 |[/permissive-](permissive-standards-conformance.md)|표준 준수 모드를 설정 합니다.|
-|[/std](std-specify-language-standard-version.md)|C + + 표준 버전 호환성 선택기입니다.|
+|[/std](std-specify-language-standard-version.md)|C++ 표준 버전 호환성 선택기입니다.|
 
 ## <a name="deprecated-and-removed-compiler-options"></a>사용 되지 않는 컴파일러 옵션
 
@@ -218,5 +218,5 @@ ms.locfileid: "56676502"
 ## <a name="see-also"></a>참고자료
 
 [C/C++ 빌드 참조](c-cpp-building-reference.md)<br/>
-[컴파일러 옵션](compiler-options.md)<br/>
-[컴파일러 옵션 설정](setting-compiler-options.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>

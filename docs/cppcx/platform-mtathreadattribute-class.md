@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::MTAThreadAttribute Class
 ms.assetid: bfc546a7-4333-4407-85b4-4721565e1f44
-ms.openlocfilehash: 07a20457df1bb9124b965cfae27d30e9f31d7531
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4564def412834ae0586292e8aa533d3b2bd0d679
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528078"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745267"
 ---
 # <a name="platformmtathreadattribute-class"></a>Platform::MTAThreadAttribute 클래스
 
-응용 프로그램의 스레딩 모델이 MTA(다중 스레드 아파트)임을 나타냅니다.
+애플리케이션의 스레딩 모델이 MTA(다중 스레드 아파트)임을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -52,7 +52,7 @@ MTAThreadAttribute 특성에서 상속 [platform:: object 클래스](../cppcx/pl
 
 **메타데이터:** platform.winmd
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 ## <a name="ctor"></a> MTAThreadAttribute 생성자
 
@@ -111,6 +111,6 @@ public:String^ ToString();
 
 현재 개체를 나타내는 문자열입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

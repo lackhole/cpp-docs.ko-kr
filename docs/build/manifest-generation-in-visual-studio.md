@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - manifests [C++]
 ms.assetid: 0af60aa9-d223-42cd-8426-b3fc543a2a81
-ms.openlocfilehash: 69e1868990358aeb4d790366b3a0bfa8d8999823
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: eabd488e581357ec1386b20597c1987e4c8b2c19
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414751"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809732"
 ---
 # <a name="manifest-generation-in-visual-studio"></a>Visual Studio에서 매니페스트 생성
 
@@ -27,11 +27,8 @@ Visual Studio에서 빌드 시스템에서 매니페스트를 최종 이진 응�
 
 1. 매니페스트 도구에서 생성 된 매니페스트와 동일한 이진 파일에 포함 된 매니페스트가 이면 다음 빌드 단계를 빌드는 계속 됩니다.
 
-텍스트 리소스로 최종 이진에 포함 된 매니페스트 및 최종 이진 파일로 Visual Studio에서 열어 볼 수 있습니다. 매니페스트에 올바른 라이브러리를 가리키는지을 보장 하려면에 설명 된 단계를 수행 [Visual c + + 응용 프로그램의 종속성 이해](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md) 에 설명 된 제안에 따라 또는 [문제해결](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md) 섹션입니다.
+텍스트 리소스로 최종 이진에 포함 된 매니페스트 및 최종 이진 파일로 Visual Studio에서 열어 볼 수 있습니다. 매니페스트에 올바른 라이브러리를 가리키는지을 보장 하려면에 설명 된 단계를 수행 [Visual c + + 응용 프로그램의 종속성 이해](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md) 에 설명 된 제안에 따라 또는 [문제해결](troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md) 섹션입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[방법: C/C++ 애플리케이션에 매니페스트 포함](../build/how-to-embed-a-manifest-inside-a-c-cpp-application.md)<br/>
-[전용 어셈블리에 대 한](/windows/desktop/SbsCs/about-private-assemblies-)<br/>
-[매니페스트 도구](/windows/desktop/SbsCs/mt-exe)<br/>
-[ 프로그램의 매니페스트 생성 이해](../build/understanding-manifest-generation-for-c-cpp-programs.md)
+[ 프로그램의 매니페스트 생성 이해](understanding-manifest-generation-for-c-cpp-programs.md)

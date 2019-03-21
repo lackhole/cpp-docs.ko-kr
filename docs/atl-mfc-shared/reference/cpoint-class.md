@@ -11,12 +11,12 @@ helpviewer_keywords:
 - POINT structure
 - CPoint class
 ms.assetid: a6d4db93-35cc-444d-9221-c3e160f6edaa
-ms.openlocfilehash: 4f6ab15f80ac448b4e7383e2db92f22262c20d08
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: cab7aef6fab025174dedb0bf75ee43c49ead0d88
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178071"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740396"
 ---
 # <a name="cpoint-class"></a>CPoint 클래스
 
@@ -46,12 +46,12 @@ class CPoint : public tagPOINT
 
 |이름|설명|
 |----------|-----------------|
-|[CPoint::operator-](#operator_-)|차를 반환을 `CPoint` 및 크기를 또는 지점 또는 두 지점 또는 음수 크기에 따라 오프셋 사이의 크기 차이의 부정입니다.|
-|[CPoint::operator! =](#operator_neq)|두 점 사이의 같지 않은지 확인 합니다.|
+|[CPoint::operator -](#operator_-)|차를 반환을 `CPoint` 및 크기를 또는 지점 또는 두 지점 또는 음수 크기에 따라 오프셋 사이의 크기 차이의 부정입니다.|
+|[CPoint::operator !=](#operator_neq)|두 점 사이의 같지 않은지 확인 합니다.|
 |[CPoint::operator +](#operator_add)|합계를 반환 합니다는 `CPoint` 및 크기 또는 지점 또는 `CRect` 크기 만큼 오프셋 합니다.|
 |[CPoint::operator + =](#operator_add_eq)|오프셋 `CPoint` 크기나 지점을 추가 하 여 합니다.|
-|[CPoint::operator =](#operator_-_eq)|오프셋 `CPoint` 크기 또는 포인트를 뺀 값으로.|
-|[CPoint::operator = =](#operator_eq_eq)|두 점 사이의 같은지 확인 합니다.|
+|[CPoint::operator -=](#operator_-_eq)|오프셋 `CPoint` 크기 또는 포인트를 뺀 값으로.|
+|[CPoint::operator ==](#operator_eq_eq)|두 점 사이의 같은지 확인 합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -65,7 +65,7 @@ A `CPoint` 개체 수 아무 곳에 나 사용을 `POINT` 구조를 사용 합�
 > [!NOTE]
 >  공유 유틸리티 클래스에 대 한 자세한 (같은 `CPoint`)를 참조 하세요 [공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `tagPOINT`
 
@@ -90,10 +90,12 @@ CPoint(LPARAM dwPoint) throw();
 ### <a name="parameters"></a>매개 변수
 
 *initX*<br/>
-`x`의 `CPoint` 멤버 값을 지정합니다.
+
+  `x`의 `CPoint` 멤버 값을 지정합니다.
 
 *initY*<br/>
-`y`의 `CPoint` 멤버 값을 지정합니다.
+
+  `y`의 `CPoint` 멤버 값을 지정합니다.
 
 *initPt*<br/>
 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 나 `CPoint` 초기화 하는 데 사용 하는 값을 지정 하는 `CPoint`합니다.
@@ -147,10 +149,10 @@ void Offset(SIZE size) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*사분면*<br/>
+*xOffset*<br/>
 오프셋할 크기를 지정 합니다 `x` 의 멤버는 `CPoint`합니다.
 
-*y 오프셋*<br/>
+*yOffset*<br/>
 오프셋할 크기를 지정 합니다 `y` 의 멤버는 `CPoint`합니다.
 
 *point*<br/>
@@ -163,7 +165,7 @@ void Offset(SIZE size) throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#28](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_1.cpp)]
 
-##  <a name="operator_eq_eq"></a>  CPoint::operator = =
+##  <a name="operator_eq_eq"></a>  CPoint::operator ==
 
 두 점 사이의 같은지 확인 합니다.
 
@@ -184,7 +186,7 @@ BOOL operator==(POINT point) const throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#29](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_2.cpp)]
 
-##  <a name="operator_neq"></a>  CPoint::operator! =
+##  <a name="operator_neq"></a>  CPoint::operator !=
 
 두 점 사이의 같지 않은지 확인 합니다.
 
@@ -205,7 +207,7 @@ BOOL operator!=(POINT point) const throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#30](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_3.cpp)]
 
-##  <a name="operator_add_eq"></a>  CPoint::operator + =
+##  <a name="operator_add_eq"></a>  CPoint::operator +=
 
 크기를 추가 하는 첫 번째 오버 로드는 `CPoint`합니다.
 
@@ -234,7 +236,7 @@ void operator+=(POINT point) throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#31](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_4.cpp)]
 
-##  <a name="operator_-_eq"></a>  CPoint::operator =
+##  <a name="operator_-_eq"></a>  CPoint::operator -=
 
 첫 번째 오버 로드에서 크기를 뺍니다는 `CPoint`합니다.
 
@@ -298,7 +300,7 @@ A `CPoint` 크기에서 오프셋 된를 `CPoint` 는 지점에서 오프셋 된
 
 [!code-cpp[NVC_ATLMFC_Utilities#33](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_6.cpp)]
 
-##  <a name="operator_-"></a>  CPoint::operator-
+##  <a name="operator_-"></a>  CPoint::operator -
 
 뺄 처음 두 오버 로드 중 하나를 사용 하는 `CPoint` 또는 `CSize` 에서 개체 `CPoint`합니다.
 
@@ -340,11 +342,10 @@ A `CSize` 두 점 사이의 차이 나타내는 `CPoint` 크기의 부정 만큼
 
 [!code-cpp[NVC_ATLMFC_Utilities#34](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_7.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [POINT 구조체](/windows/desktop/api/windef/ns-windef-tagpoint)<br/>
 [CRect 클래스](../../atl-mfc-shared/reference/crect-class.md)<br/>
 [CSize 클래스](../../atl-mfc-shared/reference/csize-class.md)
-

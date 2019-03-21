@@ -8,12 +8,12 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - dynamically linked DLLs [C++]
 ms.assetid: b4f7ab92-8723-42a5-890e-214f4e29dcd0
-ms.openlocfilehash: 548fbde379937ab4d915f08a43a8b865e071d688
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3bfed5f75dab4c501708950fdb99f53c40ec142c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57413175"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821302"
 ---
 # <a name="regular-mfc-dlls-dynamically-linked-to-mfc"></a>동적으로 MFC에 링크 된 기본 MFC Dll
 
@@ -83,18 +83,18 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [기본 MFC Dll 초기화](../build/run-time-library-behavior.md#initializing-regular-dlls)
+- [기본 MFC Dll 초기화](run-time-library-behavior.md#initializing-regular-dlls)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [동적으로 MFC에 링크 된 기본 MFC DLL의 모듈 상태](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)
+- [동적으로 MFC에 링크 된 기본 MFC DLL의 모듈 상태](module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)
 
 - [MFC 모듈 상태 데이터 관리](../mfc/managing-the-state-data-of-mfc-modules.md)
 
-- [기본 MFC DLL에서 데이터베이스, OLE 및 소켓 MFC 확장명 DLL 사용](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [기본 MFC DLL에서 데이터베이스, OLE 및 소켓 MFC 확장명 DLL 사용](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
 - [DLL의 일부로 MFC 사용](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
 ## <a name="see-also"></a>참고자료
 
-[DLL의 종류](../build/kinds-of-dlls.md)
+[DLL의 종류](kinds-of-dlls.md)

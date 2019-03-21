@@ -1,5 +1,5 @@
 ---
-title: '방법: C++ Interop를 사용하여 COM 문자열 마샬링'
+title: '방법: C + + Interop를 사용 하 여 COM 문자열 마샬링'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - data marshaling [C++], strings
 - COM [C++], marshaling strings
 ms.assetid: 06590759-bf99-4e34-a3a9-4527ea592cc2
-ms.openlocfilehash: 664c9ed973e2dff4467d13742390da8a944eb87a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: baf3a2e6720cd2f72606cf5089e0409df602fee6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559122"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751520"
 ---
-# <a name="how-to-marshal-com-strings-using-c-interop"></a>방법: C++ Interop를 사용하여 COM 문자열 마샬링
+# <a name="how-to-marshal-com-strings-using-c-interop"></a>방법: C + + Interop를 사용 하 여 COM 문자열 마샬링
 
 이 항목에서는 BSTR (COM 프로그래밍에서 선호 하는 기본 문자열 형식) 수 있는 방법을 보여 줍니다. 그 반대로 관리 되지 않는 함수에 관리 되는 전달 합니다. 다른 문자열 형식 상호 작용을 하기 위한 다음 항목을 참조 합니다.
 
@@ -102,6 +102,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

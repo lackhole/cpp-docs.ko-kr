@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Zc compiler options (C++)
 - /Zc:inline
 ms.assetid: a4c94224-1d73-4bea-a9d5-4fa73dc924df
-ms.openlocfilehash: 6855773c6ec807a7488fa5604ddee7fd43983135
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 06bdb3300aae88c6c4c8f7e66af658f47548ac5a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441238"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820522"
 ---
 # <a name="zcinline-remove-unreferenced-comdat"></a>/Zc:inline(참조되지 않은 COMDAT 제거)
 
@@ -27,7 +27,7 @@ COMDAT이거나 내부 링크만 있는 참조되지 않은 함수 또는 데이
 
 ## <a name="remarks"></a>설명
 
-때 **/zc: inline** 를 지정 하면 컴파일러는 참조 되지 않은 COMDAT 함수 또는 데이터 나 내부 링크만 있는 데이터 또는 함수에 대 한 기호 정보를 내보내지 않습니다. 이 최적화를 간소화 하 릴리스 빌드에서 링커에 의해 수행 된 작업의 일부 때나 링커 옵션 [/opt: ref](../../build/reference/opt-optimizations.md) 지정 됩니다. 컴파일러가 이러한 최적화를 수행하면 .obj f파일의 크기를 크게 줄이고 링커 속도를 상당히 높일 수 있습니다. 최적화는 사용 하지 않도록 설정 하는 경우에이 컴파일러 옵션 사용 되지 않습니다 ([/Od](../../build/reference/od-disable-debug.md)) 때나 [/GL (전체 프로그램 최적화)](../../build/reference/gl-whole-program-optimization.md) 지정 됩니다.
+때 **/zc: inline** 를 지정 하면 컴파일러는 참조 되지 않은 COMDAT 함수 또는 데이터 나 내부 링크만 있는 데이터 또는 함수에 대 한 기호 정보를 내보내지 않습니다. 이 최적화를 간소화 하 릴리스 빌드에서 링커에 의해 수행 된 작업의 일부 때나 링커 옵션 [/opt: ref](opt-optimizations.md) 지정 됩니다. 컴파일러가 이러한 최적화를 수행하면 .obj f파일의 크기를 크게 줄이고 링커 속도를 상당히 높일 수 있습니다. 최적화는 사용 하지 않도록 설정 하는 경우에이 컴파일러 옵션 사용 되지 않습니다 ([/Od](od-disable-debug.md)) 때나 [/GL (전체 프로그램 최적화)](gl-whole-program-optimization.md) 지정 됩니다.
 
 기본적으로이 옵션은 해제 되어 (**/Zc:inline-**). [/ permissive-](permissive-standards-conformance.md) 옵션이 사용 되지 않습니다 **/zc: inline**합니다.
 
@@ -123,7 +123,7 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **언어** 속성 페이지.
 
@@ -131,4 +131,4 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 ## <a name="see-also"></a>참고자료
 
-[/Zc(규칙)](../../build/reference/zc-conformance.md)<br/>
+[/Zc(규칙)](zc-conformance.md)<br/>

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-ms.openlocfilehash: 6bdcf97c921dc45939ab9ddf18f1d624c2fd83b8
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 78b9ae467d3504f3922c540a3e4cd100322d8f4e
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850300"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57808393"
 ---
 # <a name="application-information-and-management"></a>응용 프로그램 정보 및 관리
 
@@ -208,7 +208,8 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 
 ##  <a name="afxfreelibrary"></a>  AfxFreeLibrary
 
-`AfxFreeLibrary` 및 `AfxLoadLibrary`는 각 코딩된 라이브러리 모듈에 대한 참조 횟수를 유지 관리합니다.
+
+  `AfxFreeLibrary` 및 `AfxLoadLibrary`는 각 코딩된 라이브러리 모듈에 대한 참조 횟수를 유지 관리합니다.
 
 ```
 BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
@@ -229,7 +230,8 @@ BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
 
 라이브러리 모듈을 매핑 해제하기 전에 시스템은 DLL이 이를 사용하는 프로세스에서 분리할 수 있게 해줍니다. 이렇게 하면 DLL이 현재 프로세스를 대신해서 할당된 리소스를 정리할 수 있는 기회가 부여됩니다. 진입점 함수가 반환된 다음 라이브러리 모듈은 현재 프로세스의 주소 공간에서 제거됩니다.
 
-`AfxLoadLibrary`를 사용해서 DLL 모듈을 매핑합니다.
+
+  `AfxLoadLibrary`를 사용해서 DLL 모듈을 매핑합니다.
 
 사용 해야 `AfxFreeLibrary` 하 고 `AfxLoadLibrary` (Win32 함수 대신 `FreeLibrary` 고 `LoadLibrary`) 응용 프로그램에서 여러 스레드를 사용 하는 경우. 사용 하 여 `AfxLoadLibrary` 고 `AfxFreeLibrary` 되도록 MFC 확장 DLL을 로드 하거나 언로드할 전역 MFC 상태가 손상 되지 않습니다 때 실행 되는 시작 및 종료 코드입니다.
 
@@ -525,7 +527,8 @@ CKeyboardManager* afxKeyboardManager;
 
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary
 
-`AfxLoadLibrary`를 사용해서 DLL 모듈을 매핑합니다.
+
+  `AfxLoadLibrary`를 사용해서 DLL 모듈을 매핑합니다.
 
 ```
 HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
@@ -542,7 +545,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 
 - 응용 프로그램 로드는 디렉터리입니다.
 
-- 현재 디렉터리
+- 현재 디렉터리입니다.
 
 - **Windows 95/98:** Windows 시스템 디렉터리입니다. **Windows NT:** 32 비트 Windows 시스템 디렉터리입니다. 이 디렉터리의 이름은 SYSTEM32입니다.
 
@@ -711,7 +714,7 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 
 일반적으로 사용 되는 레지스트리를 액세스 하는 응용 프로그램, Windows Vista 이전 합니다 **HKEY_CLASSES_ROOT** 노드. 그러나 Windows Vista 또는 이후 운영 체제를 사용 하 여 HKCR에 관리자 권한 모드로 응용 프로그램을 실행 해야 합니다.
 
-이 메서드를 읽고 레지스트리에 HKCU에 대 한 레지스트리 액세스 HKCR에서 리디렉션하여 관리자 모드에서 실행 하지 않고 응용을 프로그램을 수 있습니다. 자세한 내용은 [Linker Property Pages](../../ide/linker-property-pages.md)을 참조하세요.
+이 메서드를 읽고 레지스트리에 HKCU에 대 한 레지스트리 액세스 HKCR에서 리디렉션하여 관리자 모드에서 실행 하지 않고 응용을 프로그램을 수 있습니다. 자세한 내용은 [Linker Property Pages](../../build/reference/linker-property-pages.md)을 참조하세요.
 
 프레임 워크에 대 한 액세스를 HKCR에서 리디렉션합니다 레지스트리 리디렉션을 사용 하도록 설정 하면 **HKEY_CURRENT_USER\Software\Classes**합니다. MFC 및 ATL 프레임 리디렉션 영향을 받습니다.
 

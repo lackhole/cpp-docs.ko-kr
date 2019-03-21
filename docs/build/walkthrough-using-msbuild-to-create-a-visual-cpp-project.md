@@ -1,19 +1,19 @@
 ---
-title: '연습: MSBuild를 사용하여 Visual C++ 프로젝트 만들기'
+title: '연습: MSBuild를 사용 하 여 Visual c + + 프로젝트를 만들려면'
 ms.date: 09/24/2018
 f1_keywords:
 - msbuild.cpp.walkthrough.createproject
 helpviewer_keywords:
 - 'msbuild (c++), walkthrough: create a project'
 ms.assetid: 52350d1c-c373-4868-923c-5e8be6f67adb
-ms.openlocfilehash: c5ccacb5e68c4f950d4ffa731fbc83decc4f10fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c7b038ede8c03f7016c5e9f81a9db785c49da448
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677217"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57813918"
 ---
-# <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>연습: MSBuild를 사용하여 Visual C++ 프로젝트 만들기
+# <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>연습: MSBuild를 사용 하 여 Visual c + + 프로젝트를 만들려면
 
 이 연습에서는 명령 프롬프트에서 Visual C++ 프로젝트를 빌드하려면 MSBuild를 사용 하는 방법에 설명 합니다. C++ 소스 파일 및 Visual C++ 콘솔 응용 프로그램에 대 한 XML 기반 프로젝트 파일을 만드는 방법을 알아봅니다. 프로젝트를 빌드한 후 빌드 프로세스를 사용자 지정 하는 방법을 배웁니다.
 
@@ -265,8 +265,8 @@ Visual C++ 11.0 Windows XP 도구 집합을 사용 하 여 프로젝트를 다�
 
 MSBuild는 빌드 프로세스에 맞게 다양 한 방법을 제공 합니다. 다음 항목에는 MSBuild 프로젝트에 사용자 지정 빌드 단계, 도구 및 이벤트를 추가 하는 방법을 보여 줍니다.
 
-- [방법: MSBuild 프로젝트에 사용자 지정 빌드 단계 추가](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)
+- [방법: MSBuild 프로젝트에 사용자 지정 빌드 단계 추가](how-to-add-a-custom-build-step-to-msbuild-projects.md)
 
-- [방법: MSBuild 프로젝트에 사용자 지정 빌드 도구 추가](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)
+- [방법: MSBuild 프로젝트에 사용자 지정 빌드 도구 추가](how-to-add-custom-build-tools-to-msbuild-projects.md)
 
-- [방법: MSBuild 프로젝트에서 빌드 이벤트 사용](../build/how-to-use-build-events-in-msbuild-projects.md)
+- [방법: MSBuild 프로젝트에서 빌드 이벤트 사용](how-to-use-build-events-in-msbuild-projects.md)

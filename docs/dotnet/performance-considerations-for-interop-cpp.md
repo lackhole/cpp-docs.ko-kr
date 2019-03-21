@@ -8,12 +8,12 @@ helpviewer_keywords:
 - mixed assemblies [C++], performance considerations
 - interoperability [C++], performance considerations
 ms.assetid: bb9a282e-c3f8-40eb-a2fa-45d80d578932
-ms.openlocfilehash: addf3fbc5f6261800ceebf6e8bb1abe1a64f245e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c6b4456d9c75061c9a8c93f37f98b58f92adc899
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478210"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741851"
 ---
 # <a name="performance-considerations-for-interop-c"></a>Interop에 대한 성능 고려 사항(C++)
 
@@ -53,6 +53,6 @@ C + + Interop 마샬링 데이터를 제공 해야 합니다 명시적으로 장
 
 C + + Interop에 대 한 자세한 내용은 참조 하세요. [c + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [혼합형(네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md)

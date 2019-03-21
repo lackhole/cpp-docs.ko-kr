@@ -34,12 +34,12 @@ helpviewer_keywords:
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-ms.openlocfilehash: 5e9d4b5c28adceb52078c13dbf18170e7a2b19e5
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: fadb430d570e516d915d520f06e4c247b131c3db
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178755"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739434"
 ---
 # <a name="crect-class"></a>CRect 클래스
 
@@ -76,7 +76,7 @@ class CRect : public tagRECT
 |[CRect::MoveToX](#movetox)|이동 `CRect` 에 지정 된 x 좌표입니다.|
 |[CRect::MoveToXY](#movetoxy)|이동 `CRect` 에 지정 된 x 및 y 좌표입니다.|
 |[CRect::MoveToY](#movetoy)|이동 `CRect` 에서 지정 된 y-좌표입니다.|
-|[Crect:: Normalizerect](#normalizerect)|너비와 높이 표준화 `CRect`합니다.|
+|[CRect::NormalizeRect](#normalizerect)|너비와 높이 표준화 `CRect`합니다.|
 |[CRect::OffsetRect](#offsetrect)|이동 `CRect` 지정한 오프셋에서.|
 |[CRect::PtInRect](#ptinrect)|지정 된 위치 내에 있는지 여부를 확인 `CRect`합니다.|
 |[CRect::SetRect](#setrect)|차원의 설정 `CRect`합니다.|
@@ -91,19 +91,19 @@ class CRect : public tagRECT
 
 |이름|설명|
 |----------|-----------------|
-|[CRect::operator-](#operator_-)|지정 된 오프셋을 뺍니다 `CRect` 압축 또는 `CRect` 결과 반환 하 고 `CRect`입니다.|
-|[LPCRECT CRect::operator](#operator_lpcrect)|`CRect`를 `LPCRECT`로 변환합니다.|
-|[LPRECT CRect::operator](#operator_lprect)|`CRect`를 `LPRECT`로 변환합니다.|
-|[CRect::operator! =](#operator_neq)|확인 여부를 `CRect` 사각형와 같지 않습니다.|
+|[CRect::operator -](#operator_-)|지정 된 오프셋을 뺍니다 `CRect` 압축 또는 `CRect` 결과 반환 하 고 `CRect`입니다.|
+|[CRect::operator LPCRECT](#operator_lpcrect)|`CRect`를 `LPCRECT`로 변환합니다.|
+|[CRect::operator LPRECT](#operator_lprect)|`CRect`를 `LPRECT`로 변환합니다.|
+|[CRect::operator !=](#operator_neq)|확인 여부를 `CRect` 사각형와 같지 않습니다.|
 |[CRect::operator &amp;](#operator_amp)|교차 부분을 만듭니다 `CRect` 사각형 및 결과 반환 하 고 `CRect`입니다.|
 |[CRect::operator &amp;=](#operator_amp_eq)|집합 `CRect` 의 교집합 같음 `CRect` 및 사각형입니다.|
 |[CRect::operator&#124;](#operator_or)|합집합을 만듭니다 `CRect` 사각형 및 결과 반환 하 고 `CRect`입니다.|
 |[CRect::operator &#124;=](#operator_or_eq)|집합 `CRect` 합한 같음 `CRect` 및 사각형입니다.|
 |[CRect::operator +](#operator_add)|지정 된 오프셋을 추가 `CRect` 를 확장 하거나 `CRect` 결과 반환 합니다. `CRect`합니다.|
-|[CRect::operator + =](#operator_add_eq)|지정한 오프셋을 추가 `CRect` 를 확장 또는 `CRect`합니다.|
+|[CRect::operator +=](#operator_add_eq)|지정한 오프셋을 추가 `CRect` 를 확장 또는 `CRect`합니다.|
 |[CRect::operator =](#operator_eq)|사각형의 크기를 복사 `CRect`합니다.|
-|[CRect::operator =](#operator_-_eq)|지정 된 오프셋을 뺍니다 `CRect` 압축 또는 `CRect`합니다.|
-|[CRect::operator = =](#operator_eq_eq)|결정 하는지 여부를 `CRect` 사각형에 같습니다.|
+|[CRect::operator -=](#operator_-_eq)|지정 된 오프셋을 뺍니다 `CRect` 압축 또는 `CRect`합니다.|
+|[CRect::operator ==](#operator_eq_eq)|결정 하는지 여부를 `CRect` 사각형에 같습니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -122,7 +122,7 @@ class CRect : public tagRECT
 
 사용 하 여이 오버 로드 `CRect` 연산자는 첫 번째 피연산자 이어야 합니다는 `CRect`; 두 일 수 있습니다를 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 `CRect` 개체.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `tagRECT`
 
@@ -312,10 +312,10 @@ CRect(POINT topLeft, POINT bottomRight) throw();
 *size*<br/>
 생성할 사각형의 오른쪽 아래 모퉁이를 왼쪽 위 모서리에서 치환을 지정 합니다.
 
-*왼쪽 맨 위*<br/>
+*topLeft*<br/>
 왼쪽 위 위치를 지정 `CRect`합니다.
 
-*오른쪽 맨 아래*<br/>
+*bottomRight*<br/>
 오른쪽 아래 위치를 지정 `CRect`합니다.
 
 ### <a name="remarks"></a>설명
@@ -733,7 +733,7 @@ void MoveToY(int y) throw();
    ASSERT(rect == CRect(0, 10, 100, 110));
 ```
 
-##  <a name="normalizerect"></a>  Crect:: Normalizerect
+##  <a name="normalizerect"></a>  CRect::NormalizeRect
 
 정규화 `CRect` 높이 너비는 양의 수 있도록 합니다.
 
@@ -806,7 +806,7 @@ operator LPCRECT() const throw();
 
 주소 않아도이 함수를 사용 하는 경우 (**&**) 연산자. 전달 하는 경우이 연산자 자동으로 사용을 `CRect` 필요로 하는 함수 개체는 `LPCRECT`합니다.
 
-##  <a name="operator_lprect"></a>  LPRECT CRect::operator
+##  <a name="operator_lprect"></a>  CRect::operator LPRECT
 
 변환 된 `CRect` 에 [LPRECT](../../mfc/reference/data-types-mfc.md).
 
@@ -845,7 +845,7 @@ void operator=(const RECT& srcRect) throw();
    ASSERT(rect2 == CRect(0, 0, 127, 168));
 ```
 
-##  <a name="operator_eq_eq"></a>  CRect::operator = =
+##  <a name="operator_eq_eq"></a>  CRect::operator ==
 
 결정 여부 `rect` 같은지를 `CRect` 해당 왼쪽 및 오른쪽 아래 모퉁이의 좌표를 비교 하 여 합니다.
 
@@ -885,7 +885,7 @@ test.bottom = 25;
 ASSERT(rect1 == test);
 ```
 
-##  <a name="operator_neq"></a>  CRect::operator! =
+##  <a name="operator_neq"></a>  CRect::operator !=
 
 결정 여부 *rect* 같지 않은 `CRect` 해당 왼쪽 및 오른쪽 아래 모퉁이의 좌표를 비교 하 여.
 
@@ -925,7 +925,7 @@ test.bottom = 25;
 ASSERT(rect3 != test);
 ```
 
-##  <a name="operator_add_eq"></a>  CRect::operator + =
+##  <a name="operator_add_eq"></a>  CRect::operator +=
 
 처음 두 오버 로드를 이동 `CRect` 지정한 오프셋에서.
 
@@ -963,7 +963,7 @@ A [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 나 [CSize](csi
    ASSERT(rect1 == rect2);
 ```
 
-##  <a name="operator_-_eq"></a>  CRect::operator =
+##  <a name="operator_-_eq"></a>  CRect::operator -=
 
 처음 두 오버 로드를 이동 `CRect` 지정한 오프셋에서.
 
@@ -1099,7 +1099,7 @@ A [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 나 [CSize](csi
    ASSERT(rectResult == rect2);
 ```
 
-##  <a name="operator_-"></a>  CRect::operator-
+##  <a name="operator_-"></a>  CRect::operator -
 
 처음 두 오버 로드를 반환을 `CRect` 개체와 같음 `CRect` 지정한 오프셋에 의해 치환입니다.
 
@@ -1178,7 +1178,7 @@ A `CRect` 의 교집합입니다 `CRect` 하 고 *rect2*합니다.
    ASSERT(rectResult == rect3);
 ```
 
-##  <a name="operator_or"></a>  CRect::operator&#124;
+##  <a name="operator_or"></a>  CRect::operator &#124;
 
 반환 된 `CRect` 의 합집합입니다 `CRect` 하 고 *rect2*.
 
@@ -1499,9 +1499,8 @@ int Width() const throw();
    ASSERT(nWid == 60);
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CPoint 클래스](cpoint-class.md)<br/>
 [CSize 클래스](csize-class.md)<br/>
 [RECT](/windows/desktop/api/windef/ns-windef-tagrect)
-

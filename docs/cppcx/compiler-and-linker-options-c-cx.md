@@ -2,12 +2,12 @@
 title: 컴파일러 및 링커 옵션(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: ecfadce8-3a3f-40cc-bb01-b4731f8d2fcb
-ms.openlocfilehash: 2165d802e6ff4bd530acac7c1ba6185c732a6499
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cc1964c57d6700995bb283c245e4c63c8e9e313b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577291"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750912"
 ---
 # <a name="compiler-and-linker-options-ccx"></a>컴파일러 및 링커 옵션(C++/CX)
 
@@ -41,6 +41,6 @@ ms.locfileid: "50577291"
 
 **/ZW**를 사용하면 컴파일러는 CRT(C 런타임)의 DLL 버전에 자동으로 연결됩니다. 정적 라이브러리 버전에 연결에 허용 되지 않습니다 및 모든 유니버설 Windows 플랫폼 앱에서 허용 되지 않는 CRT 함수를 사용 하면 컴파일 타임 오류가 발생 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [앱 및 라이브러리 빌드](../cppcx/building-apps-and-libraries-c-cx.md)

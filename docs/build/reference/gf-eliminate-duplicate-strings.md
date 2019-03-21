@@ -14,12 +14,12 @@ helpviewer_keywords:
 - GF compiler option [C++]
 - strings [C++], pooling
 ms.assetid: bb7b5d1c-8e1f-453b-9298-8fcebf37d16c
-ms.openlocfilehash: c85379cf1a514cafcd2f840673fc9c7b2d415ba4
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 2f2bec446fcec522857b4c05a34311e6c26c9b75
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57425668"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812319"
 ---
 # <a name="gf-eliminate-duplicate-strings"></a>/GF(중복 문자열 제거)
 
@@ -45,16 +45,16 @@ char *t = "This is a character buffer";
 ```
 
 > [!NOTE]
->  [/ZI](../../build/reference/z7-zi-zi-debug-information-format.md) 편집 하며 계속 하기를 사용 하는 옵션을 자동으로 설정 된 **/GF** 옵션입니다.
+>  [/ZI](z7-zi-zi-debug-information-format.md) 편집 하며 계속 하기를 사용 하는 옵션을 자동으로 설정 된 **/GF** 옵션입니다.
 
 > [!NOTE]
->  합니다 **/GF** 컴파일러 옵션은 각 고유 문자열에 대 한 주소 지정 가능 섹션을 만듭니다. 및 개체 파일을 기본적으로 최대 65,536 개의 주소 지정 가능 섹션을 포함할 수 있습니다. 65,536 개 이상의 문자열을 포함 하는 프로그램을 사용 합니다 [/bigobj](../../build/reference/bigobj-increase-number-of-sections-in-dot-obj-file.md) 컴파일러 옵션을 더 많은 섹션을 만듭니다.
+>  합니다 **/GF** 컴파일러 옵션은 각 고유 문자열에 대 한 주소 지정 가능 섹션을 만듭니다. 및 개체 파일을 기본적으로 최대 65,536 개의 주소 지정 가능 섹션을 포함할 수 있습니다. 65,536 개 이상의 문자열을 포함 하는 프로그램을 사용 합니다 [/bigobj](bigobj-increase-number-of-sections-in-dot-obj-file.md) 컴파일러 옵션을 더 많은 섹션을 만듭니다.
 
-**/GF** 때 적용 됩니다 [/o1](../../build/reference/o1-o2-minimize-size-maximize-speed.md) 하거나 **/o2** 사용 됩니다.
+**/GF** 때 적용 됩니다 [/o1](o1-o2-minimize-size-maximize-speed.md) 하거나 **/o2** 사용 됩니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -68,5 +68,5 @@ char *t = "This is a character buffer";
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

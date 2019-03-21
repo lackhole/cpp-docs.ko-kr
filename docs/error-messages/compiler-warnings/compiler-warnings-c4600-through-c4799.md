@@ -57,14 +57,13 @@ f1_keywords:
 - C4767
 - C4770
 - C4792
-- C4794
 ms.assetid: 22bd4392-f3be-445c-9f23-6126aebac901
-ms.openlocfilehash: 02b679e3cfb91b09db381b014ba2f3d3d0e5b02a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4acc36fcf7508bdcfcc1bd936110df4c32c47ae2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553156"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810083"
 ---
 # <a name="compiler-warnings-c4600-through-c4799"></a>컴파일러 경고 C4600 ~ C4799
 
@@ -147,7 +146,7 @@ ms.locfileid: "50553156"
 |컴파일러 경고 (수준 4) C4681|'class': coclass가 이벤트 소스인 기본 인터페이스를 지정 하지 않습니다|
 |컴파일러 경고 (수준 4) C4682|'parameter': 방향 매개 변수 특성을 지정 하지, 기본적으로 [in]|
 |[컴파일러 경고(수준 1) C4683](../../error-messages/compiler-warnings/compiler-warning-level-1-c4683.md)|'function': 이벤트 소스에 'out'-매개 변수 여러 이벤트 처리기를 후크 하는 경우 주의|
-|[컴파일러 경고(수준 1) C4684](../../error-messages/compiler-warnings/compiler-warning-level-1-c4684.md)|'attribute': 경고!! 특성으로 인해 잘못 된 코드가 생성 될 수 있습니다: 주의 하 여 사용|
+|[컴파일러 경고(수준 1) C4684](../../error-messages/compiler-warnings/compiler-warning-level-1-c4684.md)|' attribute': 경고!! 특성으로 인해 잘못 된 코드가 생성 될 수 있습니다: 주의 하 여 사용|
 |컴파일러 경고 (수준 1) C4685|템플릿 매개 변수를 분석하는 경우 '> >'가 있어야 하는데 '>>'가 왔습니다.|
 |[컴파일러 경고(수준 3) C4686](../../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md)|'user-defined type': 동작과 UDT 반환 호출 규칙이 변경되었을 수 있습니다.|
 |[컴파일러 경고 (Error) C4687](../../error-messages/compiler-warnings/compiler-warning-c4687.md)|'class': 봉인된 추상 클래스는 'interface' 인터페이스를 구현할 수 없습니다|
@@ -194,7 +193,7 @@ ms.locfileid: "50553156"
 |[컴파일러 경고(수준 1) C4743](../../error-messages/compiler-warnings/compiler-warning-level-1-c4743.md)|'type'에서 'file1' 및 'file2' 크기가 다른: 수와 바이트 수입니다.|
 |[컴파일러 경고(수준 1) C4744](../../error-messages/compiler-warnings/compiler-warning-level-1-c4744.md)|'var'에서 'file1' 및 'file2' 형식이 다르면: 'type1' 및 'type2'|
 |[컴파일러 경고 C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile 액세스 '*식을*' 하려면 /volatile:\<iso&#124;ms > __iso_volatile_load/store 내장 함수를 사용해 설정 합니다.|
-|[컴파일러 경고(수준 1) C4747](../../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md)|관리 되는 '진입점' 호출: DLL 진입점 및 DLL 진입점에서에 도달 하는 호출을 포함 하 여, 로더 잠금 상태에서 관리 되는 코드를 실행할 수 있습니다|
+|[컴파일러 경고(수준 1) C4747](../../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md)|관리 되는 호출 ' 진입점 ': DLL 진입점 및 DLL 진입점에서에 도달 하는 호출을 포함 하 여, 로더 잠금 상태에서 관리 되는 코드를 실행할 수 있습니다.|
 |컴파일러 경고 (수준 4) C4749|조건부로 지원 됨: offsetof가 비표준 레이아웃이 아닌 형식 '*형식*'|
 |컴파일러 경고 (수준 1) C4750|'identifier': 루프에 인라이닝된 _alloca()를 사용하는 함수|
 |컴파일러 경고 (수준 4) C4751|/arch: avx intel (r) 스트리밍 SIMD 확장 인라인 ASM에 포함 된 적용 되지 않습니다.|

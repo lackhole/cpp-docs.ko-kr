@@ -1,5 +1,5 @@
 ---
-title: '시간 값 서식 지정: 범용 클래스'
+title: 시간 값의 서식을 지정 합니다. 범용 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - dates, calculating intervals
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - time [C++], formatting
 - formatting [C++], time
 ms.assetid: 7fcfee24-f874-4a4d-95b3-adc19a0f2df0
-ms.openlocfilehash: 48290adbc3e0e7f3cbe9a5a8e0569a5b61833e8c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bab93638d81e8e4e5d6f7ce71bf6a3180fa7f7e5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478665"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739177"
 ---
-# <a name="formatting-time-values-general-purpose-classes"></a>시간 값 서식 지정: 범용 클래스
+# <a name="formatting-time-values-general-purpose-classes"></a>시간 값의 서식을 지정 합니다. 범용 클래스
 
 다음 절차에는 시간 값의 서식을 지정 하는 방법을 보여 줍니다.
 
@@ -24,11 +24,10 @@ ms.locfileid: "50478665"
 
    [!code-cpp[NVC_ATLMFC_Utilities#175](../atl-mfc-shared/codesnippet/cpp/formatting-time-values-general-purpose-classes_1.cpp)]
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [일반 날짜 및 시간 프로그래밍 MFC의](../atl-mfc-shared/date-and-time.md)
 
 - [SYSTEMTIME 사용](../atl-mfc-shared/date-and-time-systemtime-support.md)
 
 - [날짜 및 시간 프로그래밍 자동화 지원](../atl-mfc-shared/date-and-time-automation-support.md)
-

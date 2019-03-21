@@ -7,38 +7,38 @@ helpviewer_keywords:
 - .netmodules
 - modules, Visual C++
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
-ms.openlocfilehash: 050736e5536a1e38b73524f31491b3a01dc99193
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fcba363cff567c69ac0fbd0a541953dfe2c8e910
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443579"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818104"
 ---
 # <a name="netmodule-files-as-linker-input"></a>링커 입력 파일로 사용하는 .netmodule 파일
 
 link.exe에서는 이제 MSIL .obj 및 .netmodules가 입력으로 사용됩니다. 링커에 의해 생성 된 출력 파일이 의존 하지 않는 런타임.obj 또는 링커에 입력 된.netmodules에.netmodule 또는 어셈블리.
 
-.netmodules는 Visual c + + 컴파일러에서 생성 됩니다 [/LN (MSIL 모듈 만들기)](../../build/reference/ln-create-msil-module.md) 또는 사용 하 여 링커에 의해 [/NOASSEMBLY (MSIL 모듈 만들기)](../../build/reference/noassembly-create-a-msil-module.md)합니다. 컴파일한 후.objs Visual c + + 컴파일에서 항상 만들어집니다. 다른 Visual Studio 컴파일러를 사용 합니다 **/target: module** 컴파일러 옵션입니다.
+.netmodules MSVC 컴파일러에 의해 만들어집니다 [/LN (MSIL 모듈 만들기)](ln-create-msil-module.md) 또는 사용 하 여 링커에 의해 [/NOASSEMBLY (MSIL 모듈 만들기)](noassembly-create-a-msil-module.md)합니다. 컴파일한 후.objs Visual c + + 컴파일에서 항상 만들어집니다. 다른 Visual Studio 컴파일러를 사용 합니다 **/target: module** 컴파일러 옵션입니다.
 
 에 전달 해야 링커.obj 파일 Visual c + + 컴파일에서.netmodule를 생성 합니다. .Netmodule를 전달 하기 때문에 더 이상 지원 되지 합니다 **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않는 합니다.
 
-명령줄에서 링커를 실행 하는 방법에 대 한 자세한 내용은 [링커 명령줄 구문](../../build/reference/linker-command-line-syntax.md)를 [명령줄에서 빌드 C/c + + 코드](../../build/building-on-the-command-line.md), 및 [경로 및 환경 변수 설정 명령줄 빌드](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md)합니다.
+명령줄에서 링커를 실행 하는 방법에 대 한 자세한 내용은 [링커 명령줄 구문](linking.md)를 [명령줄에서 MSVC 도구 집합을 사용 하 여](../building-on-the-command-line.md), 및 [경로 및 환경 변수 설정 명령줄 빌드에 대 한](../setting-the-path-and-environment-variables-for-command-line-builds.md)합니다.
 
-사용 하 여 Visual c + + 컴파일러로 컴파일된 링커에.netmodule 또는.dll 파일을 전달 **/clr** 링커 오류가 발생할 수 있습니다. 자세한 내용은 [.netmodule 입력 파일 형식 선택](../../build/reference/choosing-the-format-of-netmodule-input-files.md)합니다.
+MSVC 컴파일러를 사용 하 여 서 컴파일된 링커에.netmodule 또는.dll 파일을 전달 **/clr** 링커 오류가 발생할 수 있습니다. 자세한 내용은 [.netmodule 입력 파일 형식 선택](choosing-the-format-of-netmodule-input-files.md)합니다.
 
 로 컴파일된 MSIL.obj 파일 뿐만 아니라 네이티브.obj 파일을 허용 하는 링커 **/clr**합니다. 동일한 빌드에서 혼합된 컴파일한 후.objs를 전달 하는 경우 결과 출력 파일의 검증 가능성은 기본적으로 같아야 가장 낮은 수준의 검증 가능성 입력 모듈.
 
 현재 두 개 이상의 어셈블리로 구성된 응용 프로그램이 있고 이 응용 프로그램을 하나의 어셈블리에 포함하려면 어셈블리를 다시 컴파일한 후 .objs 또는 .netmodules를 링크하여 단일 어셈블리를 생성해야 합니다.
 
-사용 하 여 항목을 지정 해야 합니다 [/ENTRY (진입점 기호)](../../build/reference/entry-entry-point-symbol.md) 실행 가능 이미지를 만들 때.
+사용 하 여 항목을 지정 해야 합니다 [/ENTRY (진입점 기호)](entry-entry-point-symbol.md) 실행 가능 이미지를 만들 때.
 
-MSIL.obj 또는.netmodule 파일에 연결 하는 경우 사용 하 여 [/LTCG (링크 타임 코드 생성)](../../build/reference/ltcg-link-time-code-generation.md), 그렇지 않으면 링커에서 MSIL.obj 또는.netmodule를 발견 하면, 다시 시작 됩니다 /LTCG을 사용해 서 링크 합니다.
+MSIL.obj 또는.netmodule 파일에 연결 하는 경우 사용 하 여 [/LTCG (링크 타임 코드 생성)](ltcg-link-time-code-generation.md), 그렇지 않으면 링커에서 MSIL.obj 또는.netmodule를 발견 하면, 다시 시작 됩니다 /LTCG을 사용해 서 링크 합니다.
 
 MSIL .obj 또는 .netmodule 파일은 cl.exe로도 전달할 수 있습니다.
 
-입력 MSIL .obj 또는 .netmodule 파일은 포함된 리소스를 가질 수 없습니다. 리소스를 사용 하 여 출력 파일 (모듈 또는 어셈블리)에 포함 된 [/ASSEMBLYRESOURCE (관리 되는 리소스 포함)](../../build/reference/assemblyresource-embed-a-managed-resource.md) 링커 옵션 또는 합니다 **/resource** 다른 Visual Studio 컴파일러에서 컴파일러 옵션입니다.
+입력 MSIL .obj 또는 .netmodule 파일은 포함된 리소스를 가질 수 없습니다. 리소스를 사용 하 여 출력 파일 (모듈 또는 어셈블리)에 포함 된 [/ASSEMBLYRESOURCE (관리 되는 리소스 포함)](assemblyresource-embed-a-managed-resource.md) 링커 옵션 또는 합니다 **/resource** 다른 Visual Studio 컴파일러에서 컴파일러 옵션입니다.
 
-MSIL 링크를 수행 하는 경우 및도 지정 하지 않는 경우 [/LTCG (링크 타임 코드 생성)](../../build/reference/ltcg-link-time-code-generation.md), 링크를 다시 시작 되는 정보 메시지가 표시 됩니다. 이 메시지를 MSIL 링크를 사용 하 여 링커 성능이 향상 되지만 무시, 명시적으로 지정할 **/LTCG**합니다.
+MSIL 링크를 수행 하는 경우 및도 지정 하지 않는 경우 [/LTCG (링크 타임 코드 생성)](ltcg-link-time-code-generation.md), 링크를 다시 시작 되는 정보 메시지가 표시 됩니다. 이 메시지를 MSIL 링크를 사용 하 여 링커 성능이 향상 되지만 무시, 명시적으로 지정할 **/LTCG**합니다.
 
 ## <a name="example"></a>예제
 
@@ -98,5 +98,5 @@ caught non System exception in C++ source code file
 
 ## <a name="see-also"></a>참고자료
 
-- [LINK 입력 파일](../../build/reference/link-input-files.md)
-- [링커 옵션](../../build/reference/linker-options.md)
+- [LINK 입력 파일](link-input-files.md)
+- [MSVC 링커 옵션](linker-options.md)

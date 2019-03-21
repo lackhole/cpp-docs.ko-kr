@@ -20,12 +20,12 @@ helpviewer_keywords:
 - executable files [C++], base address
 - at sign symbol for base address
 ms.assetid: 00b9f6fe-0bd2-4772-a69c-7365eb199069
-ms.openlocfilehash: 87fdceea4ac71fe4bf0a53d7ae8e473bc97a01d7
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: dc6380903af0be2e6696ca3589813c249f71dd05
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416750"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812280"
 ---
 # <a name="base-base-address"></a>/BASE(기준 주소)
 
@@ -38,9 +38,9 @@ ms.locfileid: "57416750"
 ## <a name="remarks"></a>설명
 
 > [!NOTE]
-> 보안상의 이유로 Microsoft에서 권장 합니다 [/DYNAMICBASE](../../build/reference/dynamicbase-use-address-space-layout-randomization.md) 실행 파일에 대 한 기본 주소를 지정 하는 대신 옵션입니다. 이 Windows의 주소 공간 레이아웃 불규칙화 (ASLR) 기능을 사용 하 여 로드 시 임의로 지정할 수 있는 실행 가능 이미지를 생성 합니다. /DYNAMICBASE 옵션을 기본적으로 켜져 있습니다.
+> 보안상의 이유로 Microsoft에서 권장 합니다 [/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md) 실행 파일에 대 한 기본 주소를 지정 하는 대신 옵션입니다. 이 Windows의 주소 공간 레이아웃 불규칙화 (ASLR) 기능을 사용 하 여 로드 시 임의로 지정할 수 있는 실행 가능 이미지를 생성 합니다. /DYNAMICBASE 옵션을 기본적으로 켜져 있습니다.
 
-/ 기본 옵션.exe 또는 DLL 파일의 기본 위치를 재정의 하는 프로그램에 대 한 기본 주소를 설정 합니다. .Exe 파일에 대 한 기본 기준 주소는 32 비트 이미지에 대 한 0x400000 인지 64 비트 이미지용 0x140000000 합니다. DLL에 대 한 기본 기준 주소는 32 비트 이미지에 대 한 0x10000000 또는 64 비트 이미지용 0x180000000 합니다. 주소 공간 레이아웃 불규칙화 (ASLR) 지원 하지 않는 또는 /dynamicbase: no 옵션을 설정한 경우 운영 체제에서 운영 체제는 먼저 지정 된 프로그램 또는 기본 기준 주소를 부하를 시도 합니다. 사용할 수 있는 충분 한 공간이 없으면 시스템 프로그램을 재배치 됩니다. 재배치를 방지 하려면 사용 합니다 [/fixed](../../build/reference/fixed-fixed-base-address.md) 옵션입니다.
+/ 기본 옵션.exe 또는 DLL 파일의 기본 위치를 재정의 하는 프로그램에 대 한 기본 주소를 설정 합니다. .Exe 파일에 대 한 기본 기준 주소는 32 비트 이미지에 대 한 0x400000 인지 64 비트 이미지용 0x140000000 합니다. DLL에 대 한 기본 기준 주소는 32 비트 이미지에 대 한 0x10000000 또는 64 비트 이미지용 0x180000000 합니다. 주소 공간 레이아웃 불규칙화 (ASLR) 지원 하지 않는 또는 /dynamicbase: no 옵션을 설정한 경우 운영 체제에서 운영 체제는 먼저 지정 된 프로그램 또는 기본 기준 주소를 부하를 시도 합니다. 사용할 수 있는 충분 한 공간이 없으면 시스템 프로그램을 재배치 됩니다. 재배치를 방지 하려면 사용 합니다 [/fixed](fixed-fixed-base-address.md) 옵션입니다.
 
 링커 오류가 발생 하는 경우 *주소* 64k의 배수가 아닙니다. 필요에 따라 프로그램의 크기를 지정할 수 있습니다. 프로그램에서 지정한 크기에 맞지 않는 경우 링커에서 경고를 표시 합니다.
 
@@ -62,11 +62,11 @@ two    0x28100000    0x00300000    ; for DLLTWO.DLL
 link dlltwo.obj /dll /base:@dlls.txt,two
 ```
 
-기본 주소를 설정 하는 또 다른 방법은 사용 하는 것을 *기본* 인수에는 [이름](../../build/reference/name-c-cpp.md) 또는 [라이브러리](../../build/reference/library.md) 문. /BASE 및 [/DLL](../../build/reference/dll-build-a-dll.md) 옵션 함께 동일 합니다 **라이브러리** 문입니다.
+기본 주소를 설정 하는 또 다른 방법은 사용 하는 것을 *기본* 인수에는 [이름](name-c-cpp.md) 또는 [라이브러리](library.md) 문. /BASE 및 [/DLL](dll-build-a-dll.md) 옵션 함께 동일 합니다 **라이브러리** 문입니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **고급** 속성 페이지.
 
@@ -78,5 +78,5 @@ link dlltwo.obj /dll /base:@dlls.txt,two
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

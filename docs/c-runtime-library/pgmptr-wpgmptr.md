@@ -12,12 +12,12 @@ helpviewer_keywords:
 - _pgmptr function
 - pgmptr function
 ms.assetid: 4d44b515-0eff-4136-8bc4-684195f218f5
-ms.openlocfilehash: c59134afc3b4d0f6360984c67dede28c27010bae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6991dfe90e58352b26d7c914e1601a68674b8a5b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597536"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749869"
 ---
 # <a name="pgmptr-wpgmptr"></a>_pgmptr, _wpgmptr
 
@@ -30,7 +30,7 @@ extern char *_pgmptr;
 extern wchar_t *_wpgmptr;
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 프로그램이 명령 인터프리터(Cmd.exe)에서 실행될 때 `_pgmptr`은 자동으로 실행 파일의 전체 경로로 초기화됩니다. 예를 들어 Hello.exe가 C:\BIN에 있고 C:\BIN이 경로에 있는 경우 다음을 실행하면 `_pgmptr`이 C:\BIN\Hello.exe로 설정됩니다.
 
@@ -54,7 +54,7 @@ C> hello
 |--------------|---------------------|
 |`_pgmptr`, `_wpgmptr`|\<stdlib.h>|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 프로그램에서는 `_pgmptr`의 사용을 보여 줍니다.
 

@@ -1,17 +1,17 @@
 ---
-title: '방법: 대리자 정의 및 사용(C++/CLI)'
+title: '방법: 대리자 정의 및 사용 (C + + /cli CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - delegates
 ms.assetid: 1cdf3420-89c1-47c0-b796-aa984020e0f8
-ms.openlocfilehash: 3254f01a2d6399626ad78bb742a2cfd861d095ba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4f6b13d2adf9acb17d97876ae2fe5b693f682a5b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484762"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748712"
 ---
-# <a name="how-to-define-and-use-delegates-ccli"></a>방법: 대리자 정의 및 사용(C++/CLI)
+# <a name="how-to-define-and-use-delegates-ccli"></a>방법: 대리자 정의 및 사용 (C + + /cli CLI)
 
 이 문서에서는 C + 대리자 정의 및 사용 하는 방법을 보여 줍니다. + CLI입니다.
 
@@ -502,6 +502,6 @@ int main() {
 14
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [delegate(C++ 구성 요소 확장)](../windows/delegate-cpp-component-extensions.md)

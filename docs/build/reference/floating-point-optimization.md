@@ -1,13 +1,13 @@
 ---
-title: Microsoft Visual c + + 부동 소수점 최적화
+title: MSVC 부동 소수점 최적화
 ms.date: 03/09/2018
 ms.topic: conceptual
-ms.openlocfilehash: 6e297cebb4982b293e86885815436c4120d903cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 78c5c310f2f348b5cfa5a92feb65e265d28560d9
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504301"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814373"
 ---
 # <a name="microsoft-visual-c-floating-point-optimization"></a>Microsoft Visual c + + 부동 소수점 최적화
 
@@ -36,11 +36,11 @@ float KahanSum( const float A[], int n )
 
 네이티브 c + + 컴파일러에 부동 소수점 산술 실수 산술와 동일한 대 수 규칙을 따르는지 한다고 생각할 수 있습니다. 이러한 컴파일러 있습니다 다음 잘못 생각 하는
 
-> C = 합계-Y T = = > (sum + Y)-합계-Y = = > 0;
+> C = T - sum - Y ==> (sum+Y)-sum-Y ==> 0;
 
 즉, C의 인식 된 값은 항상 상수 0입니다. 그런 다음 후속 식에 상수 값이이 전파 됩니다을 하는 경우 루프 본문 단순 합계 줄어듭니다. 정확히 말해서
 
-> Y = A [i]-C = = > Y = [i]<br/>T = 합계 + Y = = > T = 합계 + A [i]<br/>합계 = T = = > 합계 = 합계 + A [i]
+> Y = A[i] - C ==> Y = A[i]<br/>T = sum + Y ==> T = sum + A[i]<br/>sum = T ==> sum = sum + A[i]
 
 논리 변환 하 여 원시 컴파일러에 따라서는 `KahanSum` 함수 됩니다.
 
@@ -187,7 +187,7 @@ a = (float)z;
 
 Fp를 명시적으로 요청: 명령줄 컴파일러를 사용 하 여를 사용 하 여 정확한 모드는 [/fp: 정확한](fp-specify-floating-point-behavior.md) 전환:
 
-> cl /fp: 정확한 source.cpp
+> cl /fp:precise source.cpp
 
 이렇게 하면 fp를 사용 하도록 컴파일러에: source.cpp 파일에 대 한 코드를 생성할 때 정확한 의미 합니다. Fp: 정확한 모델 사용 하 여 함수에서 함수 별로 호출 될 수도 있습니다는 [float_control 컴파일러 pragma](#the-float-control-pragma)합니다.
 
@@ -825,7 +825,7 @@ float dotProduct( float x[], float y[],int n )
 
 Fp: 엄격한 부동 소수점 모드를 사용 하 여 설정 합니다 [/fp: strict](fp-specify-floating-point-behavior.md) 다음과 같은 명령줄 컴파일러 스위치:
 
-> cl /fp: strict source.cpp
+> cl /fp:strict source.cpp
 
 이 예제에서는 fp를 사용 하도록 컴파일러에 지시 합니다: source.cpp 파일에 대 한 코드를 생성할 때 엄격한 의미 합니다. Fp: 엄격한 모델로 사용 하 여 함수에서 함수 별로 호출 될 수도 있습니다는 `float_control` 컴파일러 pragma입니다.
 
@@ -952,11 +952,11 @@ Pragma를 호출 `float_control(precise, on)` 하면 및 `float_control(precise,
 ||||||
 |-|-|-|-|-|
 ||float_control(precise)|float_control(except)|fp_contract|fenv_access|
-|/fp: strict|위치|위치|해제|위치|
-|/fp: strict /fp: 제외한-|위치|해제|해제|위치|
-|/fp: 정확 하 게|위치|해제|위치|해제|
-|/fp: 정확한 /fp: 제외 하 고|위치|위치|위치|해제|
-|/fp:fast|해제|해제|위치|해제|
+|/fp:strict|On|On|해제|On|
+|/fp:strict /fp:except-|On|해제|해제|On|
+|/fp:precise|On|해제|On|해제|
+|/fp:precise /fp:except|On|On|On|해제|
+|/fp:fast|해제|해제|On|해제|
 
 예를 들어, 다음을 명시적으로 활성화 /fp: fast 의미 합니다.
 
@@ -1088,4 +1088,4 @@ catch(float_exception)
 
 ## <a name="see-also"></a>참고자료
 
-[코드 최적화](optimizing-your-code.md)<br/>
+[코드 최적화](../optimizing-your-code.md)<br/>

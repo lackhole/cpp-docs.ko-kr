@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /Zp compiler option [C++]
 - -Zp compiler option [C++]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
-ms.openlocfilehash: d1821d8dc5eab202a918893a1e7895151629b551
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: d30e61137fc5ff8f6a5501ac7815edafc18f7680
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627529"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807691"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp(구조체 멤버 맞춤)
 
@@ -24,7 +24,7 @@ ms.locfileid: "53627529"
 
 ## <a name="syntax"></a>구문
 
-> **/Zp**[**1**|**2**|**4**|**8** | **16**]
+> **/Zp**[**1**|**2**|**4**|**8**|**16**]
 
 ## <a name="remarks"></a>설명
 
@@ -53,11 +53,11 @@ ms.locfileid: "53627529"
 
 - [__unaligned](../../cpp/unaligned.md)
 
-- [구조체 맞춤 예제](../../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 전용)
+- [/ALIGN(섹션 맞춤)](align-section-alignment.md)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **C/c + +** > **코드 생성** 속성 페이지.
 
@@ -67,7 +67,7 @@ ms.locfileid: "53627529"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StructMemberAlignment%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [컴파일러 옵션](../../build/reference/compiler-options.md)
-- [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+- [MSVC 컴파일러 옵션](compiler-options.md)
+- [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

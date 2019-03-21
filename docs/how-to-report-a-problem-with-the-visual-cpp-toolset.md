@@ -4,12 +4,12 @@ ms.date: 06/21/2018
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 7758905f6db537260ec9e8b6e516bfa409e97ad2
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: 50b1005c7734b62941cbda087161d5ec41a0d026
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809739"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57808042"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ 도구 집합 또는 설명서의 문제를 보고하는 방법
 
@@ -43,7 +43,7 @@ Microsoft Visual C++ 컴파일러, 링커 또는 기타 도구 및 라이브러�
 
 #### <a name="to-report-the-full-version-of-the-compiler-youre-using"></a>사용 중인 컴파일러의 전체 버전을 보고하려면
 
-1. 프로젝트를 빌드하는 데 사용된 Visual Studio 버전 및 구성 아키텍처와 일치하는 **개발자 명령 프롬프트**를 엽니다. 예를 들어 x64 대상에 x64 Visual Studio 2017을 사용하여 빌드하는 경우 **VS 2017용 x64 Native Tools 명령 프롬프트**를 선택합니다. 자세한 내용은 [개발자 명령 프롬프트 바로 가기](build/building-on-the-command-line.md#developer-command-prompt-shortcuts)를 참조하세요.
+1. 프로젝트를 빌드하는 데 사용된 Visual Studio 버전 및 구성 아키텍처와 일치하는 **개발자 명령 프롬프트**를 엽니다. 예를 들어 x64 대상에 x64 Visual Studio 2017을 사용하여 빌드하는 경우 **VS 2017용 x64 Native Tools 명령 프롬프트**를 선택합니다. 자세한 내용은 [개발자 명령 프롬프트 바로 가기](build/building-on-the-command-line.md#developer_command_prompt_shortcuts)를 참조하세요.
 
 1. 개발자 명령 프롬프트 콘솔 창에서 **cl /Bv** 명령을 입력합니다.
 
@@ -398,4 +398,3 @@ C++ 컴파일러, 링커, 기타 도구 및 라이브러리와 관련된 문제�
 GitHub 문제를 사용하여 설명서에 보고된 문제를 추적합니다. 이제 작성자 및 제품 팀과 훨씬 더 다양한 방식으로 상호 작용할 수 있는 콘텐츠 페이지에서 직접 GitHub 문제를 만들 수 있습니다. 문서, 잘못된 코드 샘플, 혼란스러운 설명, 중요한 누락 또는 오타가 있는 문제가 있으면 편안하게 알려주세요. 페이지 아래쪽으로 스크롤하고 **로그인을 선택하여 설명서 피드백을 제공**합니다. 아직 GitHub 계정이 없는 경우 해당 계정을 만들어야 하지만, 일단 계정이 만들어졌으면 보고된 문제에 대한 변경 내용이 있을 경우 설명서 문제와 해당 상태를 모두 확인하고 알림을 받을 수 있습니다. 자세한 내용은 [새로운 피드백 시스템이 docs.microsoft.com에 제공됩니다](/teamblog/a-new-feedback-system-is-coming-to-docs)를 참조하세요.
 
 설명서 피드백 단추를 사용하여 GitHub에 설명서 문제를 만들면, 문제를 만든 페이지에 대한 일부 정보가 해당 문제에 자동으로 채워져 문제가 있는 위치를 알 수 있습니다. 이 정보는 편집하지 마세요. 잘못된 항목 및 원하는 경우 제안된 해결 방법에 대한 세부 정보를 추가하기만 하면 됩니다. [설명서는 오픈 소스](https://github.com/MicrosoftDocs/cpp-docs/)이므로 실제로 수정하고 직접 제안하려는 경우 그렇게 할 수 있습니다. 설명서에 기여할 수 있는 방법에 대한 자세한 내용은 GitHub의 [기여 가이드](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md)를 참조하세요.
-

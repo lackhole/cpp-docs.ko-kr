@@ -2,12 +2,12 @@
 title: CLR 통합(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 76e213cf-2f3d-4181-b35b-9fd25d5b307c
-ms.openlocfilehash: 7b14d8067625719b337e2c830b739269ef96dccd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df0c5e9cfaf9a4148c8d16b68ee04b4e9ce82e6a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461817"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749025"
 ---
 # <a name="clr-integration-ccx"></a>CLR 통합(C++/CX)
 
@@ -69,6 +69,6 @@ Visual c + + 또는 C# 컴파일러는.winmd 파일을 읽을 때 자동으로 �
 
 IReference\<T >는 Windows 런타임에서 매핑됩니다\<T >.net에서.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [다른 언어와 상호 운용](../cppcx/interoperating-with-other-languages-c-cx.md)

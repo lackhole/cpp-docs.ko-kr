@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /MP compiler option (C++)
 - MP compiler option (C++)
 - cl.exe compiler, multi-process build
-ms.openlocfilehash: d0a3e50ca75535d505e46c0e454a8e0902b1ffb1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a66f6f6f1f4ce77e33df992b915be9ca5dcce70
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562086"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808458"
 ---
 # <a name="mp-build-with-multiple-processes"></a>/MP(여러 프로세스로 빌드)
 
@@ -50,10 +50,10 @@ ms.locfileid: "50562086"
 |옵션 또는 언어 기능|설명|
 |--------------------------------|-----------------|
 |[#import](../../preprocessor/hash-import-directive-cpp.md) 전처리기 지시문|형식 라이브러리의 형식을 C++ 클래스로 변환한 다음 헤더 파일에 이러한 클래스를 기록합니다.|
-|[/E](../../build/reference/e-preprocess-to-stdout.md), [/EP](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)|전처리기 출력을 표준 출력에 복사합니다(**stdout**).|
-|[/Gm](../../build/reference/gm-enable-minimal-rebuild.md)|증분 다시 빌드를 사용합니다.|
-|[/showIncludes](../../build/reference/showincludes-list-include-files.md)|포함 파일의 목록을 표준 오류에 기록합니다(**stderr**).|
-|[/Yc](../../build/reference/yc-create-precompiled-header-file.md)|미리 컴파일된 헤더 파일을 만듭니다.|
+|[/E](e-preprocess-to-stdout.md), [/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|전처리기 출력을 표준 출력에 복사합니다(**stdout**).|
+|[/Gm](gm-enable-minimal-rebuild.md)|증분 다시 빌드를 사용합니다.|
+|[/showIncludes](showincludes-list-include-files.md)|포함 파일의 목록을 표준 오류에 기록합니다(**stderr**).|
+|[/Yc](yc-create-precompiled-header-file.md)|미리 컴파일된 헤더 파일을 만듭니다.|
 
 ## <a name="diagnostic-messages"></a>진단 메시지
 
@@ -61,7 +61,7 @@ ms.locfileid: "50562086"
 
 |진단 메시지|설명|컴파일러 동작|
 |------------------------|-----------------|-----------------------|
-|**C2813**|**#import** 지시문은 **/MP** 옵션과 호환되지 않습니다.|[컴파일러 경고 수준](../../build/reference/compiler-option-warning-level.md) 옵션에서 달리 지정하지 않는 한 컴파일이 종료됩니다.|
+|**C2813**|**#import** 지시문은 **/MP** 옵션과 호환되지 않습니다.|[컴파일러 경고 수준](compiler-option-warning-level.md) 옵션에서 달리 지정하지 않는 한 컴파일이 종료됩니다.|
 |**D9014**|잘못 된 값을 지정 합니다 *processMax* 인수입니다.|컴파일러는 잘못된 값을 무시하고 값을 1이라고 가정합니다.|
 |**D9030**|지정한 옵션이 **/MP**와 호환되지 않습니다.|컴파일러는 **/MP** 옵션을 무시합니다.|
 
@@ -99,7 +99,7 @@ ms.locfileid: "50562086"
 
 프로세스를 컴파일에 사용할 수 있을 때 소스 파일이 컴파일됩니다. 프로세스보다 파일이 더 많은 경우 첫 번째 파일 집합이 사용 가능한 프로세스에 의해 컴파일됩니다. 프로세스가 이전 파일의 처리를 완료하고 나머지 파일 중 하나에 대해 작업할 준비가 될 때 나머지 파일이 처리됩니다.
 
-명령줄에서 같은 소스 파일을 여러 번 지정하지 마세요. 예를 들어, 특정 도구가 프로젝트의 종속성 정보를 기반으로 하는 [makefile](../../build/contents-of-a-makefile.md) 을 자동으로 만들 경우 이러한 일이 발생할 수 있습니다. **/MP** 옵션을 지정하지 않는 경우, 컴파일러는 파일 목록을 순차적으로 처리하고 나타나는 각 파일을 다시 컴파일합니다. 그러나 **/MP** 옵션을 지정하는 경우, 서로 다른 컴파일러가 동시에 같은 파일을 컴파일할 수 있습니다. 따라서 서로 다른 컴파일러가 동시에 동일한 출력 파일에 쓰려고 시도합니다. 하나의 컴파일러가 출력 파일에 대한 배타적인 쓰기 권한을 획득하고 성공하면, 나머지 컴파일러는 파일 액세스 오류와 함께 실패하게 됩니다.
+명령줄에서 같은 소스 파일을 여러 번 지정하지 마세요. 예를 들어, 특정 도구가 프로젝트의 종속성 정보를 기반으로 하는 [makefile](contents-of-a-makefile.md) 을 자동으로 만들 경우 이러한 일이 발생할 수 있습니다. **/MP** 옵션을 지정하지 않는 경우, 컴파일러는 파일 목록을 순차적으로 처리하고 나타나는 각 파일을 다시 컴파일합니다. 그러나 **/MP** 옵션을 지정하는 경우, 서로 다른 컴파일러가 동시에 같은 파일을 컴파일할 수 있습니다. 따라서 서로 다른 컴파일러가 동시에 동일한 출력 파일에 쓰려고 시도합니다. 하나의 컴파일러가 출력 파일에 대한 배타적인 쓰기 권한을 획득하고 성공하면, 나머지 컴파일러는 파일 액세스 오류와 함께 실패하게 됩니다.
 
 ### <a name="using-type-libraries-import"></a>형식 라이브러리 사용(#import)
 
@@ -113,7 +113,7 @@ ms.locfileid: "50562086"
 
 #### <a name="the-msbuildexe-tool"></a>MSBUILD.exe 도구
 
-Visual Studio에서 사용 하 여 [MSBuild.exe](/visualstudio/msbuild/msbuild-reference) 솔루션 및 프로젝트를 개발 하기 위한 도구입니다. **/maxcpucount:**_번호_ (또는 **/m:**_번호_) MSBuild.exe 도구의 명령줄 옵션에서 여러 프로젝트를 빌드할 수는 동일한 시간입니다. **/MP** 컴파일러 옵션은 여러 컴파일 단위를 동시에 빌드할 수 있습니다. 응용 프로그램에 대해 적절한 경우 **/MP** 와 **/maxcpucount**중 하나 또는 둘 모두를 사용하여 솔루션의 빌드 시간을 개선할 수 있습니다.
+Visual Studio에서 사용 하 여 [MSBuild.exe](/visualstudio/msbuild/msbuild-reference) 솔루션 및 프로젝트를 개발 하기 위한 도구입니다. **/maxcpucount:**_번호_ (또는 **/m:**_번호_) MSBuild.exe 도구의 명령줄 옵션에서 여러 프로젝트를 빌드할 수는 동일한 시간입니다. **/MP** 컴파일러 옵션은 여러 컴파일 단위를 동시에 빌드할 수 있습니다. 애플리케이션에 대해 적절한 경우 **/MP** 와 **/maxcpucount**중 하나 또는 둘 모두를 사용하여 솔루션의 빌드 시간을 개선할 수 있습니다.
 
 솔루션의 빌드 시간은 부분적으로 빌드를 수행 하는 프로세스의 수에 따라 다릅니다. *수* 인수를 [/maxcpucount](/visualstudio/msbuild/msbuild-command-line-reference) MSBuild 옵션 동시에 빌드할 프로젝트의 최대 수를 지정 합니다. 마찬가지로, 합니다 *processMax* 의 인수는 **/MP** 컴파일러 옵션을 동시에 빌드할 컴파일 단위의 최대 수를 지정 합니다. 경우는 **/maxcpucount** 옵션을 지정 *P* 프로젝트 및 **/MP** 옵션 지정 *C* 처리 하 고, 최대 *P*  x *C* 프로세스가 동시에 실행 합니다.
 
@@ -131,6 +131,6 @@ MSBuild를 사용할지 여부를 결정 하기 위한 지침은 또는 **/MP** 
 
 ## <a name="see-also"></a>참고자료
 
-[#import 지시문](../../preprocessor/hash-import-directive-cpp.md)<br/>
+[#import Directive](../../preprocessor/hash-import-directive-cpp.md)<br/>
 [명령줄 참조](/visualstudio/msbuild/msbuild-command-line-reference)<br/>
 [/Zf(더 빠른 PDB 생성)](zf.md)<br/>

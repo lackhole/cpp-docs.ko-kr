@@ -1,19 +1,19 @@
 ---
-title: '방법: 네이티브 코드에서 MSIL이 throw한 예외 catch'
+title: '방법: MSIL에서 Throw 하는 네이티브 코드에서 예외를 catch 합니다.'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - exceptions, catching
 - catching exceptions, thrown from MSIL
 - MSIL, catching exceptions in native code
 ms.assetid: c15afd2b-8505-43bf-8a4a-f1d41532a124
-ms.openlocfilehash: 73c9a9af66a6e292c76b96ec47a5853684e602f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: acb3ba1ab6d10decba10b899861007abfff03359
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635614"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748725"
 ---
-# <a name="how-to-catch-exceptions-in-native-code-thrown-from-msil"></a>방법: 네이티브 코드에서 MSIL이 throw한 예외 catch
+# <a name="how-to-catch-exceptions-in-native-code-thrown-from-msil"></a>방법: MSIL에서 Throw 하는 네이티브 코드에서 예외를 catch 합니다.
 
 네이티브 코드에서 MSIL에서 네이티브 c + + 예외를 catch 할 수 있습니다.  CLR 예외를 catch 할 수 있습니다 `__try` 고 `__except`입니다.
 
@@ -77,6 +77,6 @@ error
 caught an exception
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [예외 처리](../windows/exception-handling-cpp-component-extensions.md)

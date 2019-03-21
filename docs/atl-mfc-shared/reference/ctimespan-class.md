@@ -23,12 +23,12 @@ helpviewer_keywords:
 - shared classes, CTimeSpan
 - time, elapsed
 ms.assetid: ee1e42f6-1839-477a-8435-fb26ad475140
-ms.openlocfilehash: 6ab22b9a093a1aa9c8ae0249c036ea2bf89065f6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3c80260c1f57e49a34b4e9f3331f4d0d69ab30ce
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641874"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752326"
 ---
 # <a name="ctimespan-class"></a>CTimeSpan 클래스
 
@@ -67,9 +67,9 @@ class CTimeSpan
 
 |||
 |-|-|
-|[연산자 +-](#operator_add_-)|더하고 빼는 `CTimeSpan` 개체입니다.|
-|[operator + = =](#operator_add_eq_-_eq)|더하고 빼는 `CTimeSpan` 개체를이 `CTimeSpan`합니다.|
-|[연산자 = = < 등입니다.](#ctimespan_comparison_operators)|두 개의 상대 시간 값을 비교합니다.|
+|[operator + -](#operator_add_-)|더하고 빼는 `CTimeSpan` 개체입니다.|
+|[operator += -=](#operator_add_eq_-_eq)|더하고 빼는 `CTimeSpan` 개체를이 `CTimeSpan`합니다.|
+|[operator == < etc.](#ctimespan_comparison_operators)|두 개의 상대 시간 값을 비교합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -104,7 +104,7 @@ bool operator>=(CTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*<br/>
+*span*<br/>
 비교할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -138,7 +138,7 @@ CTimeSpan(
 *time*<br/>
 A **__time64_t** 시간 값에서 시간 범위를 시간 (초)입니다.
 
-*lDays*하십시오 *nHours*하십시오 *nMins*, *nSecs*<br/>
+*lDays*, *nHours*, *nMins*, *nSecs*<br/>
 일, 시간, 분 및 초, 각각.
 
 ### <a name="remarks"></a>설명
@@ -178,7 +178,7 @@ CString Format(UINT nID) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*벗어나거나*, *pszFormat*<br/>
+*pFormat*, *pszFormat*<br/>
 유사한 문자열 서식의 `printf` 문자열 서식을 지정 합니다. 서식 코드 앞에 백분율 (`%`)에 서명, 해당 바뀝니다 `CTimeSpan` 구성 요소입니다. 반환된 된 문자열에 형식 문자열에 다른 문자 변경 되지 않고 복사 됩니다. 값 및 서식 지정 코드의 의미를 `Format` 다음과 같습니다.
 
 - **%D** 총이 일 수 `CTimeSpan`
@@ -334,7 +334,7 @@ LONGLONG GetTotalSeconds() const throw();
 
 예를 참조 하세요 [GetTotalHours](#gettotalhours)합니다.
 
-##  <a name="operator_add_-"></a>  CTimeSpan::operator +,-
+##  <a name="operator_add_-"></a>  CTimeSpan::operator +, -
 
 더하고 빼는 `CTimeSpan` 개체입니다.
 
@@ -345,7 +345,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*<br/>
+*span*<br/>
 에 추가할 값을 `CTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -360,7 +360,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#167](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_7.cpp)]
 
-##  <a name="operator_add_eq_-_eq"></a>  CTimeSpan::operator + =, =
+##  <a name="operator_add_eq_-_eq"></a>  CTimeSpan::operator +=, -=
 
 더하고 빼는 `CTimeSpan` 개체를이 `CTimeSpan`합니다.
 
@@ -371,7 +371,7 @@ CTimeSpan& operator-=(CTimeSpan span) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*<br/>
+*span*<br/>
 에 추가할 값을 `CTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -406,7 +406,7 @@ CArchive& Serialize64(CArchive& ar);
 
 업데이트 된 `CArchive` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
 [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)<br/>
@@ -416,4 +416,3 @@ CArchive& Serialize64(CArchive& ar);
 [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

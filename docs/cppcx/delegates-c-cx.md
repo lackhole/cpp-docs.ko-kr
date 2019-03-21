@@ -2,12 +2,12 @@
 title: 대리자(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38
-ms.openlocfilehash: cb23c5d1ae35a56a827bc2436dbdd81b53dd1224
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: e2158adad288045c9a98889dbe97e834dc93ea71
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57415281"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745594"
 ---
 # <a name="delegates-ccx"></a>대리자(C++/CX)
 
@@ -130,7 +130,7 @@ C++/CX의 제네릭 대리자에는 제네릭 클래스의 선언과 유사한 �
 
 .NET의 이벤트 처리기에 익숙하지 않다면 권장되는 방법은 실행하기 전에 이벤트의 로컬 복사본을 만드는 것입니다. 이렇게 함으로써 이벤트가 호출되기 전에 이벤트 처리기가 제거될 수 있는 경합 상태를 피할 수 있습니다. C++/CX에서는 이벤트 처리기가 추가 또는 제거될 때 새 처리기 목록이 생성되므로 이렇게 할 필요가 없습니다. 이벤트를 호출하기 전에 처리기 목록에서 C++ 개체가 참조 횟수를 증가시키므로 모든 처리기가 유효하도록 보장됩니다. 그러나 이는 한편으로 소비 스레드에서 이벤트 처리기를 제거했는데 게시 개체가 현재는 만료된 해당 목록 복사본에서 아직 작동 중인 경우 해당 처리기를 여전히 호출할 수 있음을 의미합니다. 이 게시 개체는 다음에 이벤트를 발생시킬 때까지 업데이트된 목록을 가져올 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
 [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>

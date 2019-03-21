@@ -21,12 +21,12 @@ helpviewer_keywords:
 - Gv compiler option [C++]
 - /Gr compiler option [C++]
 ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
-ms.openlocfilehash: 8eba665e34fc3b949283557461e33348106fd532
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7c4f7e6edb020f5c8d2abf80f14df33e18a915c5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451517"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817467"
 ---
 # <a name="gd-gr-gv-gz-calling-convention"></a>/Gd, /Gr, /Gv, /Gz(호출 규칙)
 
@@ -51,14 +51,14 @@ ms.locfileid: "50451517"
 
 가변 개수의 인수를 사용 하는 함수 표시 되어야 합니다 `__cdecl`합니다.
 
-**/Gd**, **/Gr**, **/Gv** 하 고 **/Gz** 와 호환 되지 않습니다 [/clr: safe](../../build/reference/clr-common-language-runtime-compilation.md) 또는 **/clr: pure**. **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다.
+**/Gd**, **/Gr**, **/Gv** 하 고 **/Gz** 와 호환 되지 않습니다 [/clr: safe](clr-common-language-runtime-compilation.md) 또는 **/clr: pure**. **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다.
 
 > [!NOTE]
 > X86에 대해 기본적으로 프로세서, c + + 멤버 함수 사용 [__thiscall](../../cpp/thiscall.md)합니다.
 
 모든 프로세서에는 명시적으로 표시 하는 멤버 함수에 대 한 `__cdecl`, `__fastcall`를 `__vectorcall`, 또는 `__stdcall` 해당 아키텍처에서 무시 되지 않을 경우 지정된 된 호출 규칙을 사용 합니다. 가변 개수의 인수를 사용 하 여 항상 사용 하는 멤버 함수는 `__cdecl` 호출 규칙입니다.
 
-이러한 컴파일러 옵션은 c + + 메서드와 함수의 이름 데코레이션에 영향을 주지 않습니다. 로 선언 되지 않은 `extern "C"`, c + + 메서드와 함수는 다른 이름 데코레이션 구성표를 사용 합니다. 자세한 내용은 [데코 레이트 된 이름](../../build/reference/decorated-names.md)합니다.
+이러한 컴파일러 옵션은 c + + 메서드와 함수의 이름 데코레이션에 영향을 주지 않습니다. 로 선언 되지 않은 `extern "C"`, c + + 메서드와 함수는 다른 이름 데코레이션 구성표를 사용 합니다. 자세한 내용은 [데코 레이트 된 이름](decorated-names.md)합니다.
 
 호출 규칙에 대 한 자세한 내용은 참조 하세요. [호출 규칙](../../cpp/calling-conventions.md)합니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "50451517"
 
 X86 프로세서에서는 모든 함수 인수는 스택에 전달 오른쪽에서 왼쪽으로 합니다. ARM 및 x64 아키텍처에서 일부 인수는 레지스터로 전달 되 고 나머지는 오른쪽에서 왼쪽으로 스택에 전달 됩니다. 호출 루틴은 스택에서 인수를 꺼냅니다.
 
-C의 경우는 `__cdecl` 명명 규칙에서는 함수 이름 앞에 밑줄 ( `_` ); 없습니다 대/소문자 변환은 수행 됩니다. 로 선언 되지 않은 `extern "C"`, c + + 함수를 다른 이름 데코레이션 구성표를 사용 합니다. 자세한 내용은 [데코 레이트 된 이름](../../build/reference/decorated-names.md)합니다.
+C의 경우는 `__cdecl` 명명 규칙에서는 함수 이름 앞에 밑줄 ( `_` ); 없습니다 대/소문자 변환은 수행 됩니다. 로 선언 되지 않은 `extern "C"`, c + + 함수를 다른 이름 데코레이션 구성표를 사용 합니다. 자세한 내용은 [데코 레이트 된 이름](decorated-names.md)합니다.
 
 ## <a name="fastcall-specifics"></a>__fastcall 특성
 
@@ -99,7 +99,7 @@ C의 경우는 `__vectorcall` 명명 규칙은 함수 이름 뒤에 두 개의 a
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **C/c + +** > **고급** 속성 페이지.
 
@@ -111,5 +111,5 @@ C의 경우는 `__vectorcall` 명명 규칙은 함수 이름 뒤에 두 개의 a
 
 ## <a name="see-also"></a>참고자료
 
-- [컴파일러 옵션](../../build/reference/compiler-options.md)
-- [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+- [MSVC 컴파일러 옵션](compiler-options.md)
+- [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

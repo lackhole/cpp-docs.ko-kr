@@ -10,12 +10,12 @@ helpviewer_keywords:
 - cl.exe compiler [C++], compiling without linking
 - cl.exe compiler [C++], controlling linker
 ms.assetid: eae47ef7-09eb-40c9-b318-7c714cd452fc
-ms.openlocfilehash: 4e65801fcddef739f3fabe88b2b940602fde965a
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: f8d8c5e1b0ca4d2a35a57683fea2e6de12747860
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57412733"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821485"
 ---
 # <a name="cl-invokes-the-linker"></a>CL에서의 링커 호출
 
@@ -28,7 +28,7 @@ ms.locfileid: "57412733"
 |/Zg|함수 프로토타입 생성|
 |/Zs|구문 검사|
 
-연결 하는 방법에 대 한 세부 정보를 참조 하세요 [링커 옵션](../../build/reference/linker-options.md)합니다.
+연결 하는 방법에 대 한 세부 정보를 참조 하세요 [MSVC 링커 옵션](linker-options.md)합니다.
 
 ## <a name="example"></a>예제
 
@@ -46,7 +46,7 @@ ms.locfileid: "57412733"
 CL MAIN.c MOD1.C MOD2.C MYGRAPH.lib
 ```
 
-CL C 소스 파일 먼저 컴파일하고 MAIN.obj, MOD1.obj 및 MOD2.obj 개체 파일을 만듭니다. 컴파일러는 각.obj 파일의 표준 라이브러리의 이름을 배치합니다. 자세한 내용은 참조 하세요. [런타임 라이브러리 사용](../../build/reference/md-mt-ld-use-run-time-library.md)합니다.
+CL C 소스 파일 먼저 컴파일하고 MAIN.obj, MOD1.obj 및 MOD2.obj 개체 파일을 만듭니다. 컴파일러는 각.obj 파일의 표준 라이브러리의 이름을 배치합니다. 자세한 내용은 참조 하세요. [런타임 라이브러리 사용](md-mt-ld-use-run-time-library.md)합니다.
 
 CL 링커 합니다, 이름과 함께.obj 파일의 이름을 전달합니다. 링커가 외부 참조를 다음과 같이 해결합니다.
 
@@ -58,5 +58,5 @@ CL 링커 합니다, 이름과 함께.obj 파일의 이름을 전달합니다. �
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[컴파일러 옵션 설정](compiler-command-line-syntax.md)

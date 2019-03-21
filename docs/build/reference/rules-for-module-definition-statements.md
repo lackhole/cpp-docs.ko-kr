@@ -7,12 +7,12 @@ helpviewer_keywords:
 - module definition files, statement syntax
 - module definition files
 ms.assetid: f65cd3a7-65d7-4d06-939f-a8b1ecd50f2d
-ms.openlocfilehash: 6d6528b81777711e52153e19a656619a2895b0d6
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: f6269ad2d5bf3952e485f2ca5e5d1f411c5f1e0c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424758"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821276"
 ---
 # <a name="rules-for-module-definition-statements"></a>모듈 정의 문의 규칙
 
@@ -34,8 +34,8 @@ ms.locfileid: "57424758"
 
 - 숫자 인수는 10 진수로 지정 또는 16 진수입니다.
 
-- 문자열 인수를 일치 하는 경우는 [예약어](../../build/reference/reserved-words.md), 큰따옴표 (")에 묶어야 합니다.
+- 문자열 인수를 일치 하는 경우는 [예약어](reserved-words.md), 큰따옴표 (")에 묶어야 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[모듈 정의(.Def) 파일](../../build/reference/module-definition-dot-def-files.md)
+[모듈 정의(.Def) 파일](module-definition-dot-def-files.md)

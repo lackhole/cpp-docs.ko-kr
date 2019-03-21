@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -QIfist compiler option [C++]
 - /QIfist compiler option [C++]
 ms.assetid: 1afd32a5-f658-4b66-85f4-e0ce4cb955bd
-ms.openlocfilehash: 0b0dba0fec21b3c0ab03555ae90497f212ab6315
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 7af88c91793688d23cf35177ae7a5250b04832a8
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422210"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816596"
 ---
 # <a name="qifist-suppress-ftol"></a>/QIfist(_ftol 사용 안 함)
 
@@ -42,16 +42,16 @@ ms.locfileid: "57422210"
 
 사용할 수는 [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md) C 런타임 함수 FPU의 반올림 동작을 수정 합니다. 반올림 모드 FPU의 기본값은 "가장 가까운 쪽으로 반올림"입니다. 사용 하 여 **/QIfist** 위험이 있지만 응용 프로그램의 성능을 향상 시킬 수 있습니다. 반올림 모드를 사용 하 여 빌드한 코드를 기반으로 신뢰 하기 전에 영향을 받는 코드 부분을 철저히 테스트 해야 **/QIfist** 프로덕션 환경에서.
 
-[/arch (x86)](../../build/reference/arch-x86.md) 하 고 **/QIfist** 는 동일한 compiland에서 사용할 수 없습니다.
+[/arch (x86)](arch-x86.md) 하 고 **/QIfist** 는 동일한 compiland에서 사용할 수 없습니다.
 
 > [!NOTE]
 >  **/Qifist** 는 실제로 기본적으로 비트도 부동 소수점을 부동으로 영향을 가리키지 반올림 (하는 발생 모든 계산 후), C-스타일 (0)으로 반올림 하는 것에 대 한 플래그를 설정 하면 부동 소수점 계산 달라질 수 있습니다. **/Qifist** 코드가 부동 소수점 숫자의 소수 부분을 자르기의 예상된 동작으로 사용할 수 해야 합니다. 확실 하지 않은 경우 사용 하지 마세요 **/QIfist**합니다.
 
-합니다 **/QIfist** 옵션 Visual Studio 2005부터 사용 되지 않습니다. 컴파일러 크게 향상 되었습니다 float에서 int 변환 속도입니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](../../build/reference/compiler-options-listed-by-category.md)합니다.
+합니다 **/QIfist** 옵션 Visual Studio 2005부터 사용 되지 않습니다. 컴파일러 크게 향상 되었습니다 float에서 int 변환 속도입니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -65,6 +65,6 @@ ms.locfileid: "57422210"
 
 ## <a name="see-also"></a>참고자료
 
-[/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[/Q 옵션(하위 수준 작업)](q-options-low-level-operations.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - projects [C++], adding functionality
 - class wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-ms.openlocfilehash: d96b02317f88abd426ceaca4a239e59b2c88b585
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 87c46be17c20bf9d592dd2b5c537897fa629e9c2
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629868"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57822576"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>코드 마법사로 기능 추가(C++)
 
@@ -73,6 +73,5 @@ Visual C++ 코드 마법사에 액세스할 수 있는 세 가지 위치가 있�
 
 [가상 함수 재정의](../ide/overriding-a-virtual-function-visual-cpp.md)<br>
 [클래스 구조 탐색](../ide/navigating-the-class-structure-visual-cpp.md)<br>
-[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../ide/creating-desktop-projects-by-using-application-wizards.md)<br>
-[Visual C++ 프로젝트 형식](../ide/visual-cpp-project-types.md)<br>
-[Visual C++ 프로젝트용 파일 형식](../ide/file-types-created-for-visual-cpp-projects.md)
+[Visual C++ 프로젝트 형식](../build/reference/visual-cpp-project-types.md)<br>
+[Visual C++ 프로젝트용 파일 형식](../build/reference/file-types-created-for-visual-cpp-projects.md)

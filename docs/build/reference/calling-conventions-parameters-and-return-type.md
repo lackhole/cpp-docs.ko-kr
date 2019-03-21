@@ -6,12 +6,12 @@ helpviewer_keywords:
 - helper functions, calling conventions
 - helper functions, return types
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
-ms.openlocfilehash: 15631b305246cbfd7dcd8081cb1ee488bf225fec
-ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
+ms.openlocfilehash: a85825eb49b1f8faab7862e902b226c1c1fb6d58
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264805"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812969"
 ---
 # <a name="calling-conventions-parameters-and-return-type"></a>호출 규칙, 매개 변수, 반환 형식
 
@@ -29,7 +29,7 @@ FARPROC WINAPI __delayLoadHelper2(
 *pidd*<br/>
 A `const` 에 대 한 포인터를 `ImgDelayDescr` 포함 하는 다양 한 가져오기 관련 데이터, 바인딩 정보에 대 한 타임 스탬프 및 설명자 콘텐츠에 대 한 추가 정보를 제공 하는 특성 집합의 오프셋입니다. 현재는 하나의 특성만 `dlattrRva`를 나타내는 설명자의 주소가 상대 가상 주소입니다. 자세한 내용은 참조의 선언과 *delayimp.h*합니다.
 
-정의 대해서는 `PCImgDelayDescr` 구조체를 참조 하십시오 [구조체 및 상수 정의](../../build/reference/structure-and-constant-definitions.md)합니다.
+정의 대해서는 `PCImgDelayDescr` 구조체를 참조 하십시오 [구조체 및 상수 정의](structure-and-constant-definitions.md)합니다.
 
 *ppfnIATEntry*<br/>
 가져온 함수의 주소로 업데이트 되는 지연 로드 가져오기 주소 테이블 (IAT)의 슬롯 포인터입니다. 도우미 루틴은이 위치에 반환 되는 동일한 값을 저장 해야 합니다.
@@ -138,4 +138,4 @@ const PfnDliHook __pfnDliNotifyHook2 = delayHook;
 
 ## <a name="see-also"></a>참고자료
 
-[도우미 함수 이해](../../build/reference/understanding-the-helper-function.md)
+[도우미 함수 이해](understanding-the-helper-function.md)

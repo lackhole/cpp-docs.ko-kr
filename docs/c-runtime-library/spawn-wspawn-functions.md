@@ -45,12 +45,12 @@ helpviewer_keywords:
 - tspawnlpe function
 - _tspawnle function
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
-ms.openlocfilehash: caaa3fb40a75292bd32e14ddec33b504e0c1296b
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 044aaee376be02d0d3734ea8982a8c4db47f7d39
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693716"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748049"
 ---
 # <a name="spawn-wspawn-functions"></a>_spawn, _wspawn 함수
 
@@ -72,7 +72,7 @@ ms.locfileid: "51693716"
 | `p`  | `PATH` 환경 변수는 실행할 파일을 찾는 데 사용됩니다.  |
 | `v`  | 명령줄 인수에 대한 포인터 배열인 `argv`가 `_spawn` 함수에 전달됩니다. 이 접미사는 일반적으로 새로운 프로세스에 대한 여러 매개 변수가 가변적일 때 사용됩니다.  |
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `_spawn` 함수는 각각 새로운 프로세스를 만들고 실행합니다. 이러한 함수는 현재 사용 중인 멀티바이트 코드 페이지에 따라 멀티바이트 문자 시퀀스를 인식하며 멀티바이트 문자열 인수를 자동으로 적절하게 처리합니다. `_wspawn` 함수는 `_spawn` 함수의 와이드 문자 버전으로, 멀티바이트 문자열을 처리하지 않습니다. 그 외에는 `_wspawn` 함수가 `_spawn`의 상응 함수와 동일하게 동작합니다.
 
@@ -137,13 +137,13 @@ ms.locfileid: "51693716"
 
 ## <a name="redirecting-output"></a>출력 리디렉션
 
-DLL 또는 GUI 응용 프로그램에서 `_spawn`을 호출하며 출력을 파이프로 리디렉션하려는 경우 두 가지 옵션이 있습니다.
+DLL 또는 GUI 애플리케이션에서 `_spawn`을 호출하며 출력을 파이프로 리디렉션하려는 경우 두 가지 옵션이 있습니다.
 
 - Win32 API를 사용하여 파이프를 만든 다음 [AllocConsole](/windows/console/allocconsole)을 호출하고, 시작 구조에서 핸들 값을 설정하고, [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)를 호출합니다.
 
 - 그런 다음 [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)을 호출합니다. 이 함수는 **cmd.exe /c** 또는 **command.exe /c**를 사용하여 파이프를 만들고 앱을 호출합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 // crt_spawn.c

@@ -19,12 +19,12 @@ helpviewer_keywords:
 - _local_unwind2 function
 - local_unwind2 function
 ms.assetid: 44f1fa82-e01e-490f-a6e6-18fc6811c28c
-ms.openlocfilehash: 8ae5c3937c9dedc54f0a936b91963419d59f79cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c62763ecbdd2c05e8cd7b6733ec1df4254362527
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535410"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744002"
 ---
 # <a name="localunwind2"></a>_local_unwind2
 
@@ -47,7 +47,7 @@ void _local_unwind2(
 *stop*<br/>
 [in] `_local_unwind2`가 정지해야 하는 위치를 나타내는 어휘 수준입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 메서드는 런타임 환경에서 사용됩니다. 이 메서드를 사용자의 코드에서 호출하지 마세요.
 

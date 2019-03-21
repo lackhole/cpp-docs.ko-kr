@@ -1,41 +1,41 @@
 ---
-title: C + + 콘솔 앱 프로젝트 만들기
-description: Visual c + +에서 Hello World 콘솔 앱 만들기
+title: C++ 콘솔 앱 프로젝트 만들기
+description: Visual C++에서 Hello World 콘솔 앱 만들기
 ms.custom: mvc
 ms.date: 12/12/2017
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 5722dcc06f5141818910e44a6160d12bcd4eaecd
-ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
+ms.openlocfilehash: 3bbbd40534e3e429d68dbb6205134c57db40c851
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977760"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817727"
 ---
-# <a name="create-a-c-console-app-project"></a>C + + 콘솔 앱 프로젝트 만들기
+# <a name="create-a-c-console-app-project"></a>C++ 콘솔 앱 프로젝트 만들기
 
-C + + 프로그래머는 가리킨 일반적인 시작 "Hello, world!" 명령줄에서 실행 되는 응용 프로그램입니다. 이것이 무엇을 만든 Visual Studio에서이 단계에서는입니다.
+C++ 프로그래머의 일반적인 시작점은 명령줄에서 실행되는 "Hello, world!" 애플리케이션입니다. 이것이 무엇을 만든 Visual Studio에서이 단계에서는입니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 데스크톱 개발을 사용 하 여 Visual Studio를 설치 하 고 컴퓨터에서 실행 중인 c + + 워크 로드가 합니다. 아직 설치 되지 않은 경우 [Visual Studio 2017의 c + + 설치 지원](../build/vscpp-step-0-installation.md)합니다.
+- 컴퓨터에서 설치되고 실행 중인 C++ 워크로드를 사용하여 데스크톱 개발을 위해 Visual Studio를 설치합니다. 아직 설치되지 않은 경우 [Visual Studio 2017에서 C++ 지원 설치](vscpp-step-0-installation.md)를 참조하세요.
 
 ## <a name="create-your-app-project"></a>앱 프로젝트 만들기
 
-Visual Studio는 *프로젝트*를 사용하여 앱에 대한 코드를 구성하고 *솔루션*을 사용하여 프로젝트를 구성합니다. 모든 옵션, 구성 및 앱을 빌드하는 데 사용 되는 규칙을 포함 하 고 프로젝트의 모든 파일 및 외부 파일 간의 관계를 관리 하는 프로젝트입니다. 앱을 만들려면 먼저 만들어야 새 프로젝트 및 솔루션을 합니다.
+Visual Studio는 *프로젝트*를 사용하여 앱에 대한 코드를 구성하고 *솔루션*을 사용하여 프로젝트를 구성합니다. 프로젝트는 앱을 빌드하는 데 사용되는 모든 옵션, 구성 및 규칙을 포함하고, 프로젝트의 모든 파일과 외부 파일 간의 관계를 관리합니다. 앱을 만들려면 먼저 새 프로젝트 및 솔루션을 만듭니다.
 
 1. Visual Studio에서 엽니다는 **파일** 메뉴 선택 **새로 만들기 > 프로젝트** 열려는 합니다 **새 프로젝트** 대화 합니다.
 
-   ![새 프로젝트 대화 상자를 엽니다](../build/media/vscpp-file-new-project.gif "새 프로젝트 대화 상자를 열려면")
+   ![새 프로젝트 대화 상자를 엽니다](media/vscpp-file-new-project.gif "새 프로젝트 대화 상자를 열려면")
 
 1. 에 **새 프로젝트** 대화 상자에서 **설치 됨**, **Visual c + +** 아직 선택 되지 않은 경우 다음을 선택 합니다 **빈 프로젝트** 템플릿입니다. 에 **이름을** 필드를 입력 합니다 *HelloWorld*합니다. 선택할 **확인** 프로젝트를 만듭니다.
 
-   ![새 프로젝트를 만들고 이름을](../build/media/vscpp-concierge-project-name-callouts.png "이름 및 새 프로젝트를 만들려면")
+   ![새 프로젝트를 만들고 이름을](media/vscpp-concierge-project-name-callouts.png "이름 및 새 프로젝트를 만들려면")
 
 Visual Studio를 만들고 소스 코드 파일을 추가 하려면 원하는 앱의 종류에 대 한 특수화 준비가 새로 만든 빈 프로젝트를 만듭니다. 다음에 수행 합니다.
 
-[문제를 실행 합니다.](#create-your-app-project-issues)
+[문제가 발생했습니다.](#create-your-app-project-issues)
 
 ## <a name="make-your-project-a-console-app"></a>콘솔 앱 프로젝트 만들기
 
@@ -43,13 +43,13 @@ Visual Studio는 Windows 및 기타 플랫폼에 대 한 모든 종류의 앱 �
 
 1. Visual Studio에서 엽니다는 **프로젝트** 메뉴 선택 **속성** 열려는 합니다 **HelloWorld 속성 페이지** 대화 합니다.
 
-1. 에 **속성 페이지** 대화 상자 아래에 있는 **구성 속성**를 선택 **링커**, **시스템**, 선택한 후 편집 상자 옆에 합니다 **하위 시스템** 속성입니다. 표시 되는 드롭다운 메뉴에서 선택 **콘솔 (/ /SUBSYSTEM: CONSOLE)** 합니다. 선택할 **확인** 변경 내용을 저장 합니다.
+1. 에 **속성 페이지** 대화 상자 아래에 있는 **구성 속성**를 선택 **링커**, **시스템**, 선택한 후 편집 상자 옆에 합니다 **하위 시스템** 속성입니다. 표시 되는 드롭다운 메뉴에서 선택 **콘솔 (/ /SUBSYSTEM: CONSOLE)** 합니다. **확인**을 선택하여 변경 내용을 저장합니다.
 
-   ![속성 페이지 대화 상자를 엽니다](../build/media/vscpp-properties-linker-subsystem.gif "속성 페이지 대화 상자를 열려면")
+   ![속성 페이지 대화 상자를 엽니다](media/vscpp-properties-linker-subsystem.gif "속성 페이지 대화 상자를 열려면")
 
 Visual Studio는 이제 콘솔 창에서 실행 하 여 프로젝트를 빌드할 알고 있습니다. 다음으로, 소스 코드 파일을 추가 하 고 앱에 대 한 코드를 입력 합니다.
 
-[문제를 실행 합니다.](#make-your-project-a-console-app-issues)
+[문제가 발생했습니다.](#make-your-project-a-console-app-issues)
 
 ## <a name="add-a-source-code-file"></a>소스 코드 파일을 추가 합니다.
 
@@ -57,11 +57,11 @@ Visual Studio는 이제 콘솔 창에서 실행 하 여 프로젝트를 빌드�
 
 1. 에 **새 항목 추가** 대화 상자에서 **Visual c + +** 아래에 있는 **설치 된** 아직 선택 하지 않은 경우. 가운데 창에서 선택 **c + + 파일 (.cpp)** 합니다. 변경 된 **이름을** 하 *HelloWorld.cpp*합니다. 선택할 **추가** 파일을 만들고 대화 상자를 닫습니다.
 
-   ![HelloWorld.cpp에 대 한 소스 파일을 추가](../build/media/vscpp-add-new-item.gif "HelloWorld.cpp에 대 한 원본 파일을 추가 합니다.")
+   ![HelloWorld.cpp에 대 한 소스 파일을 추가](media/vscpp-add-new-item.gif "HelloWorld.cpp에 대 한 원본 파일을 추가 합니다.")
 
 Visual studio 새 비어 있는 소스 코드 파일을 만들고 소스 코드를 입력 하 고 편집기 창에서 열립니다.
 
-[문제를 실행 합니다.](#add-a-source-code-file-issues)
+[문제가 발생했습니다.](#add-a-source-code-file-issues)
 
 ## <a name="add-code-to-the-source-file"></a>소스 파일에 코드 추가
 
@@ -79,11 +79,11 @@ Visual studio 새 비어 있는 소스 코드 파일을 만들고 소스 코드�
 
    코드는 편집기 창에서 다음과 같이 표시 됩니다.
 
-   ![Hello World 코드 편집기에서](../build/media/vscpp-hello-world-editor.png "Hello World 코드 편집기에서")
+   ![Hello World 코드 편집기에서](media/vscpp-hello-world-editor.png "Hello World 코드 편집기에서")
 
 코드 편집기에서 다음과 같이 표시 하는 경우 다음 단계로 이동 하 여 앱을 빌드할 준비가입니다.
 
-[문제를 실행 합니다.](#add-a-source-code-file-issues)
+[문제가 발생했습니다.](#add-a-source-code-file-issues)
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - case, converting
 - characters, converting
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
-ms.openlocfilehash: 8a6a1a69147c135ce539393e535f0e1f2d03ccfa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 17d80507462b3eb0fdfb5d9e41da6162947bd3de
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580764"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742538"
 ---
 # <a name="to-functions"></a>to 함수
 
@@ -36,7 +36,7 @@ ms.locfileid: "50580764"
 |[__toascii](../c-runtime-library/reference/toascii-toascii.md)|[toupper, _toupper, towupper](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)|
 |[tolower, _tolower, towlower](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)||
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **to** 함수 및 매크로 변환은 다음과 같이 수행됩니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "50580764"
 
 - 대상 대/소문자에 해당하는 와이드 문자가 있는 경우(즉, `iswlower` 또는 **iswupper**이 각각 0이 아닌 경우)
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 // crt_toupper.c

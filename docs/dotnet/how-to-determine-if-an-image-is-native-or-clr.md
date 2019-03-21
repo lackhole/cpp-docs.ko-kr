@@ -1,5 +1,5 @@
 ---
-title: '방법: 이미지가 네이티브인지 CLR인지 확인'
+title: '방법: 이미지가 네이티브 인지 CLR 인지 확인 합니다.'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,18 +8,18 @@ helpviewer_keywords:
 - /clr compiler option [C++], detecting use in compilation
 - common language runtime, /clr compiler option
 ms.assetid: 5a854822-6172-4b22-b236-320165412568
-ms.openlocfilehash: ad8603827f5d1c951411403a62f8ffff58bfca88
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 541581e0f172c8ce2601e2e476ccd03a49757f80
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637400"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747231"
 ---
-# <a name="how-to-determine-if-an-image-is-native-or-clr"></a>방법: 이미지가 네이티브인지 CLR인지 확인
+# <a name="how-to-determine-if-an-image-is-native-or-clr"></a>방법: 이미지가 네이티브 인지 CLR 인지 확인 합니다.
 
 공용 언어 런타임에서 사용 하는 것에 대 한 이미지가 빌드 되었는지 여부를 결정 하는 한 가지 방법은 **dumpbin**[/CLRHEADER](../build/reference/clrheader.md)합니다.
 
-또한 프로그래밍 방식으로 이미지를 공용 언어 런타임에 대해 빌드된 여부를 확인할 수 있습니다. 자세한 내용은 [방법: /clr 컴파일 감지](../dotnet/how-to-detect-clr-compilation.md)합니다.
+또한 프로그래밍 방식으로 이미지를 공용 언어 런타임에 대해 빌드된 여부를 확인할 수 있습니다. 자세한 내용은 [방법: /Clr 컴파일 감지](../dotnet/how-to-detect-clr-compilation.md)합니다.
 
 ## <a name="example"></a>예제
 
@@ -81,6 +81,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -1,19 +1,19 @@
 ---
-title: '방법: Windows Forms DDX-DDV 데이터 바인딩 수행'
+title: '방법: Windows Forms 바인딩 DDX-DDV 데이터'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC [C++], hosting a Windows Forms Control
 - Windows Forms [C++], MFC support
 ms.assetid: b2957370-cf1f-4779-94ac-228cd393686c
-ms.openlocfilehash: 793d6728c7726028c02b885784f122792d84dd2e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 558c763fd18cd1569ff23435bf6156b3117f117d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456437"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740956"
 ---
-# <a name="how-to-do-ddxddv-data-binding-with-windows-forms"></a>방법: Windows Forms에서 DDX/DDV 데이터 바인딩 수행
+# <a name="how-to-do-ddxddv-data-binding-with-windows-forms"></a>방법: 바인딩 Windows Forms에서 DDX/DDV 데이터
 
 [DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol) 호출 [CWinFormsControl::CreateManagedControl](../mfc/reference/cwinformscontrol-class.md#createmanagedcontrol) 리소스 컨트롤 id입니다. 일치 하는 컨트롤을 만들려면 사용 하는 경우 `DDX_ManagedControl` 에 대 한는 `CWinFormsControl` 컨트롤 (마법사에서 생성 된 코드에서)를 호출 하지 않아야 `CreateManagedControl` 동일한 컨트롤에 대 한 명시적으로 합니다.
 
@@ -82,7 +82,7 @@ m_MyControl.GetControl()->textBox1->Text = "hello";
 
 이제 작성 하 고 응용 프로그램을 실행할 수 있습니다. 텍스트 상자에 텍스트 응용 프로그램을 닫으면 팝업 메시지 상자에 표시를 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWinFormsControl 클래스](../mfc/reference/cwinformscontrol-class.md)<br/>
 [DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol)<br/>

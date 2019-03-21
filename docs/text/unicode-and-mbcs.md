@@ -1,8 +1,6 @@
-﻿---
+---
 title: 유니코드 및 MBCS
 ms.date: 11/04/2016
-f1_keywords:
-- _mbcs
 helpviewer_keywords:
 - MBCS [C++], Unicode
 - MFC [C++], character sets
@@ -13,12 +11,12 @@ helpviewer_keywords:
 - multibyte characters [C++]
 - runtime [C++], language portability
 ms.assetid: 677baec6-71b4-4579-94df-64f18bc117c4
-ms.openlocfilehash: 3296b5204faec393d3d503dc106733f97b32b248
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e884dcfaa22bf720e9579bf2d5d866d595501887
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582600"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820782"
 ---
 # <a name="unicode-and-mbcs"></a>유니코드 및 MBCS
 
@@ -41,7 +39,7 @@ MFC(Microsoft Foundation Class) 라이브러리, Visual C++의 C 런타임 라�
 
 ASCII 문자 집합은 모든 멀티바이트 문자 집합의 부분 집합으로 정의됩니다. 많은 멀티바이트 문자 집합에서 0x00 - 0x7F 범위의 각 문자는 ASCII 문자 집합 내의 동일한 값을 가진 문자와 같습니다. 예를 들어, ASCII 및 MBCS 문자열 모두에서 1바이트 NULL 문자('\0')는 0x00 값을 가지며 종료 null 문자를 가리킵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [텍스트 및 문자열](../text/text-and-strings-in-visual-cpp.md)<br/>
 [국가별 사용](../text/international-enabling.md)

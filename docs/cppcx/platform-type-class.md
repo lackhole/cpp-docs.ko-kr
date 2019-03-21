@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Type Class
 ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
-ms.openlocfilehash: 8df41f8845bad0847e8835c1c6c3a1019d2621d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 73338e5b4c723c7f66dbecaea5add3b197f3493d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517067"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744034"
 ---
 # <a name="platformtype-class"></a>Platform::Type 클래스
 
@@ -29,7 +29,7 @@ public ref class Platform::Type :
 
 ### <a name="remarks"></a>설명
 
-`Type` 클래스는 개체의 런타임 형식을 기반으로 분기하는 `if` 또는 `switch` 문을 사용하여 처리를 지시해야 하는 응용 프로그램에서 유용합니다. 형식의 범주를 설명 하는 형식 코드를 사용 하 여 검색 되는 [type:: gettypecode](#gettypecode) 멤버 함수입니다.
+`Type` 클래스는 개체의 런타임 형식을 기반으로 분기하는 `if` 또는 `switch` 문을 사용하여 처리를 지시해야 하는 애플리케이션에서 유용합니다. 형식의 범주를 설명 하는 형식 코드를 사용 하 여 검색 되는 [type:: gettypecode](#gettypecode) 멤버 함수입니다.
 
 ## <a name="public-methods"></a>public 메서드
 
@@ -57,7 +57,7 @@ public ref class Platform::Type :
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **메타데이터:** platform.winmd
 
@@ -104,7 +104,8 @@ Platform::TypeCode 열거형 값의 하나입니다.
 
 ### <a name="remarks"></a>설명
 
-`typeid` 속성은 GetTypeCode() 멤버 메서드에 해당합니다.
+
+  `typeid` 속성은 GetTypeCode() 멤버 메서드에 해당합니다.
 
 ## <a name="tostring"></a> Type::ToString 메서드
 
@@ -120,6 +121,6 @@ Platform::String^ ToString();
 
 이름으로 해당 메타 데이터에 지정 된 형식입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

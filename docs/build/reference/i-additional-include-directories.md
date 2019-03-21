@@ -14,12 +14,12 @@ helpviewer_keywords:
 - set include directories
 - include directories, compiler option [C++]
 ms.assetid: 3e9add2a-5ed8-4d15-ad79-5b411e313a49
-ms.openlocfilehash: 72f871b99602c63e3edaea719faf5de6d4451515
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 6ec8b15e77fec5214013c484e617904ed29e8197
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57412850"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807639"
 ---
 # <a name="i-additional-include-directories"></a>/I (추가 포함 디렉터리)
 
@@ -38,7 +38,7 @@ ms.locfileid: "57412850"
 
 둘 이상의 디렉터리를 추가 하려면이 옵션을 두 번 이상 사용 합니다. 지정된 된 include 파일을 찾을 때까지만 디렉터리가 검색 됩니다.
 
-이 옵션을 사용할 수는 ([/X (표준 포함 경로 무시)](../../build/reference/x-ignore-standard-include-paths.md)) 옵션입니다.
+이 옵션을 사용할 수는 ([/X (표준 포함 경로 무시)](x-ignore-standard-include-paths.md)) 옵션입니다.
 
 컴파일러는 다음 순서 대로 디렉터리를 검색합니다.
 
@@ -50,9 +50,9 @@ ms.locfileid: "57412850"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **일반** 속성 페이지.
+1. 선택 된 **구성 속성** > **C/C++** > **일반** 속성 페이지.
 
 1. 수정 된 **Additional Include Directories** 속성입니다.
 
@@ -70,5 +70,5 @@ CL /I \INCLUDE /I\MY\INCLUDE MAIN.C
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

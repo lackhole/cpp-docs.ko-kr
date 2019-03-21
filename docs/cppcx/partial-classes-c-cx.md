@@ -2,12 +2,12 @@
 title: Partial 클래스(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: 69d93575-636c-4564-8cca-6dfba0c7e328
-ms.openlocfilehash: feee9033662b118e7c6b25a9b5cae50020c2ae79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 71df19e98192a7704d4528fe730ce79977383a9b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605454"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740431"
 ---
 # <a name="partial-classes-ccx"></a>Partial 클래스(C++/CX)
 
@@ -95,7 +95,7 @@ partial 클래스는 번역 단위를 벗어날 수 없습니다.
 
 [!code-cpp[cx_partial#09](../cppcx/codesnippet/CPP/partialclassexample/address.h#09)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
 [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>

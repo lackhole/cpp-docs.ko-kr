@@ -1,16 +1,16 @@
 ---
 title: ARM64 예외 처리
 ms.date: 11/19/2018
-ms.openlocfilehash: a4d4adcc365c1e9caf7faa0e225fabe133d0a6eb
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 921029704e4bf5adabfbe0a82387dadc911b9036
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176681"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816154"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 예외 처리
 
-ARM64에서 Windows 동일한 구조적된 예외 처리 비동기 하드웨어에서 생성 된 예외와 동기 소프트웨어에서 생성 된 예외에 대 한 메커니즘을 사용 합니다. 언어별 예외 처리기가 언어 도우미 함수를 사용하여 Windows의 구조적 예외 처리를 기반으로 작성됩니다. 이 문서는 ARM64, Microsoft ARM 어셈블러 및 Visual c + + 컴파일러에서 생성 되는 코드에서 사용 하는 언어 도우미에는 Windows에서 처리 하는 예외를 설명 합니다.
+ARM64에서 Windows 동일한 구조적된 예외 처리 비동기 하드웨어에서 생성 된 예외와 동기 소프트웨어에서 생성 된 예외에 대 한 메커니즘을 사용 합니다. 언어별 예외 처리기가 언어 도우미 함수를 사용하여 Windows의 구조적 예외 처리를 기반으로 작성됩니다. 이 문서는 ARM64, Microsoft ARM 어셈블러 및 MSVC 컴파일러에서 생성 되는 코드에서 사용 하는 언어 도우미에는 Windows에서 처리 하는 예외를 설명 합니다.
 
 ## <a name="goals-and-motivation"></a>목표 및 동기
 
@@ -44,7 +44,7 @@ ARM64에서 Windows 동일한 구조적된 예외 처리 비동기 하드웨어�
 
 1. 에필로그에서 조건부 코드가 없는 합니다.
 
-1. 프레임 포인터 레지스터 전용: sp 프롤로그의 다른 레지스터 (r29)에 저장 하는 경우 등록 하는 함수 전체에서 그대로 유지 됩니다 언제 든 지 원본 sp를 복구할 수 있도록 합니다.
+1. 전용된 프레임 포인터 레지스터 합니다. 언제 든 지 원본 sp를 복구할 수 있도록 sp 프롤로그에 등록 하는 다른 레지스터 (r29)에 저장 된 경우 함수 전체에서 그대로 남아 있습니다.
 
 1. Sp 다른 레지스터에 저장 하지 않으면 모든 조작 스택 포인터의 프롤로그 및 에필로그 내에서 엄격 하 게 발생 합니다.
 
@@ -52,7 +52,7 @@ ARM64에서 Windows 동일한 구조적된 예외 처리 비동기 하드웨어�
 
 ## <a name="arm64-stack-frame-layout"></a>ARM64 스택 프레임 레이아웃
 
-![스택 프레임 레이아웃](../build/media/arm64-exception-handling-stack-frame.png "스택 프레임 레이아웃")
+![스택 프레임 레이아웃](media/arm64-exception-handling-stack-frame.png "스택 프레임 레이아웃")
 
 연결 프레임 함수에 대 한 최적화 고려 사항에 따라 로컬 변수 영역에서 다른 위치에 있는 fp 및 lr 쌍을 저장할 수 있습니다. 목표는 프레임 포인터 (r29) 또는 스택 포인터 (sp)에 따라 하나의 단일 명령으로 연결할 수 있는 지역 수를 최대화 하는 것입니다. 그러나 한 `alloca` 함수 연결 되어야 합니다 및 r29 스택의 맨 아래를 가리켜야 합니다. 더 나은 레지스터 쌍-주소 지정-모드 검사를 허용 하려면 비휘발성 영역 로컬 영역 스택의 맨 위에 있는 놓이는 aave를 등록 합니다. 가장 효율적인 프롤로그 시퀀스의 몇 가지를 보여 주는 예제는 다음과 같습니다. 쉽게 구별할 수 있도록 캐시 효율 향상을 위해 모든 정식 프롤로그에서 호출 수신자 저장 레지스터를 저장 하는 순서는 "성장" 순서로 지정 됩니다. `#framesz` 아래 전체 스택 (alloca 영역 제외)의 크기를 나타냅니다. `#localsz` 및 `#outsz` 로컬 영역 크기를 나타냅니다 (저장을 포함 하 여 영역을 \<r29, lr > 쌍) 및 매개 변수 크기를 각각 나가는 합니다.
 
@@ -187,7 +187,7 @@ ARM64에서 Windows 동일한 구조적된 예외 처리 비동기 하드웨어�
 
 ARM64 용 각.pdata 레코드는 길이가 8 바이트입니다. 각 함수의 32 비트 RVA를 잠시 뒤, 첫 번째 단어의 시작 레코드 위치의 일반 형식은 가변 길이.xdata 블록에 대 한 포인터 또는 정식 함수 해제 시퀀스를 설명 하는 압축 된 단어를 포함 합니다.
 
-![.pdata 레코드 레이아웃](../build/media/arm64-exception-handling-pdata-record.png ".pdata 레코드 레이아웃")
+![.pdata 레코드 레이아웃](media/arm64-exception-handling-pdata-record.png ".pdata 레코드 레이아웃")
 
 필드는 다음과 같습니다.
 
@@ -203,7 +203,7 @@ ARM64 용 각.pdata 레코드는 길이가 8 바이트입니다. 각 함수의 3
 
 압축된 해제 형식만으로는 함수 해제를 설명하는 데 부족한 경우에는 가변 길이 .xdata 레코드를 만들어야 합니다. 이 레코드의 주소는 .pdata 레코드의 두 번째 단어에 저장됩니다. .Xdata의 형식은 압축 된 가변 길이 단어 집합으로 다음과 같습니다.
 
-![.xdata 레코드 레이아웃](../build/media/arm64-exception-handling-xdata-record.png ".xdata 레코드 레이아웃")
+![.xdata 레코드 레이아웃](media/arm64-exception-handling-xdata-record.png ".xdata 레코드 레이아웃")
 
 이 데이터는 네 개의 섹션으로 나뉩니다.
 
@@ -306,17 +306,17 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 |`end`|            11100100: 해제 코드의 끝입니다. 의미 에필로그에 만료 됩니다. |
 |`end_c`|        11100101: 현재 연결 된 범위에서 해제 코드의 끝입니다. |
 |`save_next`|        11100110: 다음 비휘발성 Int를 저장 하거나 FP 쌍을 등록 합니다. |
-|`arithmetic(add)`|    11100111' 000zxxxx: lr 쿠키 reg(z) 추가할 (0 = x28, 1 = sp); lr, lr, reg(z) 추가 |
-|`arithmetic(sub)`|    11100111' 001zxxxx: lr에서 쿠키 reg(z) 하위 (0 = x28, 1 = sp); lr, lr, reg(z) 하위 |
-|`arithmetic(eor)`|    11100111' 010zxxxx: reg(z) 쿠키를 사용 하 여 eor lr (0 = x28, 1 = sp); eor lr, lr reg(z) |
+|`arithmetic(add)`|    11100111'000zxxxx: add cookie reg(z) to lr (0=x28, 1=sp); add lr, lr, reg(z) |
+|`arithmetic(sub)`|    11100111'001zxxxx: sub cookie reg(z) from lr (0=x28, 1=sp); sub lr, lr, reg(z) |
+|`arithmetic(eor)`|    11100111'010zxxxx: eor lr with cookie reg(z) (0=x28, 1=sp); eor lr, lr, reg(z) |
 |`arithmetic(rol)`|    11100111' 0110xxxx: 쿠키 reg (x28);를 사용 하 여 lr의 시뮬레이션 된 rol xip0 neg x28; = lr ror xip0 |
-|`arithmetic(ror)`|    11100111' 100zxxxx: reg(z) 쿠키를 사용 하 여 ror lr (0 = x28, 1 = sp); ror lr, lr reg(z) |
-| |            11100111: xxxz---:---예약 |
+|`arithmetic(ror)`|    11100111'100zxxxx: ror lr with cookie reg(z) (0=x28, 1=sp); ror lr, lr, reg(z) |
+| |            11100111: xxxz----: ---- reserved |
 | |              11101xxx: asm 루틴에 대해서만 생성 사용자 지정 스택 사례에 대 한 예약 |
-| |              11101001: MSFT_OP_TRAP_FRAME에 대 한 사용자 지정 스택 |
-| |              11101010: MSFT_OP_MACHINE_FRAME에 대 한 사용자 지정 스택 |
-| |              11101011: MSFT_OP_CONTEXT에 대 한 사용자 지정 스택 |
-| |              1111xxxx: 예약 |
+| |              11101001: 사용자 지정 MSFT_OP_TRAP_FRAME 스택 |
+| |              11101010: 사용자 지정 MSFT_OP_MACHINE_FRAME 스택 |
+| |              11101011: 사용자 지정 MSFT_OP_CONTEXT 스택 |
+| |              1111xxxx: reserved |
 
 여러 바이트를 포함 하는 큰 값을 사용 하 여 지침, 가장 중요 한 비트가 먼저 저장 됩니다. 위의 해제 코드는 코드의 첫 번째 바이트를 단순히 조회 하 여 해제 코드의 바이트의 총 크기를 알 수 있기 되도록 설계 되었습니다. 각 해제 코드 프롤로그/에필로그의 명령에 매핑된 정확히는 프롤로그 또는 에필로그의 크기를 계산을 수행 해야 하는 조회 테이블 또는 유사한 장치를 사용 하 여 확인을 끝으로 시퀀스의 시작 부분에서 설명 시간 cor 응답 opcode 값이 있습니다.
 
@@ -334,7 +334,7 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 
 압축된.pdata 레코드의 형식은 다음과 같은 데이터가 해제:
 
-![.pdata 레코드 압축 된 해제 데이터](../build/media/arm64-exception-handling-packed-unwind-data.png ".pdata 레코드 압축 된 해제 데이터")
+![.pdata 레코드 압축 된 해제 데이터](media/arm64-exception-handling-packed-unwind-data.png ".pdata 레코드 압축 된 해제 데이터")
 
 필드는 다음과 같습니다.
 
@@ -359,28 +359,28 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 
 0 단계: 각 영역의 크기를 사전 계산을 수행 합니다.
 
-1 단계: Int 호출 수신자 저장 레지스터를 저장 합니다.
+1단계: Int 호출 수신자 저장 레지스터를 저장 합니다.
 
-2 단계:이 단계는 초기 섹션의 4 형식에 대 한 특정 합니다. lr은 Int 영역의 끝에 저장 됩니다.
+2단계: 이 단계는 초기 섹션의 4 형식에 대 한 특정입니다. lr은 Int 영역의 끝에 저장 됩니다.
 
-3 단계: FP 호출 수신자 저장 레지스터를 저장 합니다.
+3단계: FP 호출 수신자 저장 레지스터를 저장 합니다.
 
-4 단계: 홈 매개 변수 영역의 입력된 인수를 저장 합니다.
+4단계: 홈 매개 변수 영역의 입력된 인수를 저장 합니다.
 
-5 단계: 로컬 영역을 비롯 한 나머지 스택에 할당 \<r29, lr > 쌍 및 나가는 매개 변수 영역입니다. 5a 정식 유형 1에 해당합니다. 5b 5c와 정식 유형 2에 대 한입니다. 5d 및 5e 두 유형 3에 대 한 4를 입력 합니다.
+5단계: 로컬 영역을 비롯 한 나머지 스택에 할당 \<r29, lr > 쌍 및 나가는 매개 변수 영역입니다. 5a 정식 유형 1에 해당합니다. 5b 5c와 정식 유형 2에 대 한입니다. 5d 및 5e 두 유형 3에 대 한 4를 입력 합니다.
 
-단계 #|플래그 값|# 명령|opcode|해제 코드
+단계 #|플래그 값|# 명령|Opcode|해제 코드
 -|-|-|-|-
 0|||`#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz`|
-1|0 < **regI** < = 10|RegI / 2 + **RegI** %2|`stp r19,r20,[sp,#savsz]!`<br/>`stp r21,r22,[sp,16]`<br/>`...`|`save_regp_x`<br/>`save_regp`<br/>`...`
-2|**CR**01 = = *|1|`str lr,[sp, #intsz-8]`\*|`save_reg`
-3|0 < **RegF** < = 7|(RegF + 1) / 2 +<br/>(RegF + 1) %2).|`stp d8,d9,[sp, #intsz]`\*\*<br/>`stp d10,d11,[sp, #intsz+16]`<br/>`...`<br/>`str d(8+RegF),[sp, #intsz+#fpsz-8]`|`save_fregp`<br/>`...`<br/>`save_freg`
-4|**H** = = 1|4|`stp r0,r1,[sp, #intsz+#fpsz]`<br/>`stp r2,r3,[sp, #intsz+#fpsz+16]`<br/>`stp r4,r5,[sp, #intsz+#fpsz+32]`<br/>`stp r6,r7,[sp, #intsz+#fpsz+48]`|`nop`<br/>`nop`<br/>`nop`<br/>`nop`
-5a|**CR** 11 = = & & #locsz<br/> < = 512|2|`stp r29,lr,[sp,-#locsz]!`<br/>`mov r29,sp`\*\*\*|`save_fplr_x`<br/>`set_fp`
-5b|**CR** 11 = = &AMP; &AMP;<br/>512 < #locsz < 4088 =|3|`sub sp,sp, #locsz`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`save_fplr`<br/>`set_fp`
-5c|**CR** 11 = = & & #locsz > 4088|4|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp`
-5d|(**CR** 00 = = \| \| **CR**01 = =) &AMP; &AMP;<br/>#locsz < 4088 =|1|`sub sp,sp, #locsz`|`alloc_s`/`alloc_m`
-5e|(**CR** 00 = = \| \| **CR**01 = =) &AMP; &AMP;<br/>#locsz > 4088|2|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
+1|0 < **RegI** <= 10|RegI / 2 + **RegI** %2|`stp r19,r20,[sp,#savsz]!`<br/>`stp r21,r22,[sp,16]`<br/>`...`|`save_regp_x`<br/>`save_regp`<br/>`...`
+2|**CR**==01*|1|`str lr,[sp, #intsz-8]`\*|`save_reg`
+3|0 < **RegF** <=7|(RegF + 1) / 2 +<br/>(RegF + 1) % 2)|`stp d8,d9,[sp, #intsz]`\*\*<br/>`stp d10,d11,[sp, #intsz+16]`<br/>`...`<br/>`str d(8+RegF),[sp, #intsz+#fpsz-8]`|`save_fregp`<br/>`...`<br/>`save_freg`
+4|**H** == 1|4|`stp r0,r1,[sp, #intsz+#fpsz]`<br/>`stp r2,r3,[sp, #intsz+#fpsz+16]`<br/>`stp r4,r5,[sp, #intsz+#fpsz+32]`<br/>`stp r6,r7,[sp, #intsz+#fpsz+48]`|`nop`<br/>`nop`<br/>`nop`<br/>`nop`
+5a|**CR** == 11 && #locsz<br/> <= 512|2|`stp r29,lr,[sp,-#locsz]!`<br/>`mov r29,sp`\*\*\*|`save_fplr_x`<br/>`set_fp`
+5b|**CR** == 11 &&<br/>512 < #locsz <= 4088|3|`sub sp,sp, #locsz`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`save_fplr`<br/>`set_fp`
+5c|**CR** == 11 && #locsz > 4088|4|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp`
+5d|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz <= 4088|1|`sub sp,sp, #locsz`|`alloc_s`/`alloc_m`
+5e|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz > 4088|2|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
 
 \* 하는 경우 **CR** 01 = = 및 **RegI** 홀수가, 2 단계 및 1 단계의 마지막 save_rep 하나 save_regp에 병합 됩니다.
 
@@ -531,7 +531,7 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 
 ## <a name="examples"></a>예제
 
-### <a name="example-1-frame-chained-compact-form"></a>예제 1: 연결 프레임 압축 형식
+### <a name="example-1-frame-chained-compact-form"></a>예제 1: 프레임 체인, compact 형식
 
 ```asm
 |Foo|     PROC
@@ -549,7 +549,7 @@ ULONG ComputeXdataSize(PULONG *Xdata)
     ;Flags[SingleProEpi] functionLength[492] RegF[0] RegI[1] H[0] frameChainReturn[Chained] frameSize[2080]
 ```
 
-### <a name="example-2-frame-chained-full-form-with-mirror-prolog--epilog"></a>예제 2: 프레임 연결 전체 형식 미러 프롤로그 및 에필로그
+### <a name="example-2-frame-chained-full-form-with-mirror-prolog--epilog"></a>예제 2: 프레임 체인, 미러 프롤로그 및 에필로그를 사용 하 여 전체 형식
 
 ```asm
 |Bar|     PROC
@@ -627,4 +627,4 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 ## <a name="see-also"></a>참고자료
 
 [ARM64 ABI 규칙 개요](arm64-windows-abi-conventions.md)<br/>
-[ARM 예외 처리](../build/arm-exception-handling.md)
+[ARM 예외 처리](arm-exception-handling.md)

@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Os compiler option [C++]
 - -Os compiler option [C++]
 ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2
-ms.openlocfilehash: c2abf23c15e6550a6d115f2e2b41a9c59de5fa3a
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: d4e8d062685a543c428f0c86a22c17c8faf017ad
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424641"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814254"
 ---
 # <a name="os-ot-favor-small-code-favor-fast-code"></a>/Os, /OT(크기 우선 코드, 속도 우선 코드)
 
@@ -39,12 +39,12 @@ ms.locfileid: "57424641"
 
 **/Os** (크기 우선 코드) 속도 보다 크기 우선. 컴파일러에 지시 하 여 Exe 및 Dll의 크기를 최소화 합니다. 컴파일러는 기계어 코드로의 기능적으로 비슷하지만 순서에 여러 C 및 c + + 구문의 줄일 수 있습니다. 경우에 따라 이러한 차이 크기와 속도의 균형을 제공합니다. 합니다 **/Os** 하 고 **/Ot** 옵션 둘 중 하나에 대 한 기본 설정을 지정할 수 있습니다.
 
-**/Ot** (크기 우선 코드) 크기 보다 속도 우선. 컴파일러에 지시 하 여 Exe 및 Dll의 속도 최대화 합니다. (이것이 기본값입니다.) 컴파일러는 기계어 코드로의 기능적으로 비슷하지만 순서에 여러 C 및 c + + 구문의 줄일 수 있습니다. 경우에 따라 이러한 차이 크기와 속도의 균형을 제공합니다. 속도 최대화 /Ot 옵션이 포함 됩니다 ([/o2](../../build/reference/o1-o2-minimize-size-maximize-speed.md)) 옵션입니다. 합니다 **/o2** 옵션 매우 빠르게 코드를 생성 하기 위해 몇 가지 옵션을 결합 합니다.
+**/Ot** (크기 우선 코드) 크기 보다 속도 우선. 컴파일러에 지시 하 여 Exe 및 Dll의 속도 최대화 합니다. (이것이 기본값입니다.) 컴파일러는 기계어 코드로의 기능적으로 비슷하지만 순서에 여러 C 및 c + + 구문의 줄일 수 있습니다. 경우에 따라 이러한 차이 크기와 속도의 균형을 제공합니다. 속도 최대화 /Ot 옵션이 포함 됩니다 ([/o2](o1-o2-minimize-size-maximize-speed.md)) 옵션입니다. 합니다 **/o2** 옵션 매우 빠르게 코드를 생성 하기 위해 몇 가지 옵션을 결합 합니다.
 
-사용 하는 경우 **/Os** 하거나 **/Ot**에 지정 해야 합니다 [/Og](../../build/reference/og-global-optimizations.md) 코드를 최적화 하려면.
+사용 하는 경우 **/Os** 하거나 **/Ot**에 지정 해야 합니다 [/Og](og-global-optimizations.md) 코드를 최적화 하려면.
 
 > [!NOTE]
->  프로 파일링 테스트 실행에서 수집 되는 정보를 지정 하는 경우 적용에서 되는 최적화 덮어씁니다 **/Ob**를 **/Os**, 또는 **/Ot**합니다. 자세한 내용은 [프로필 기반 최적화](../../build/reference/profile-guided-optimizations.md)합니다.
+>  프로 파일링 테스트 실행에서 수집 되는 정보를 지정 하는 경우 적용에서 되는 최적화 덮어씁니다 **/Ob**를 **/Os**, 또는 **/Ot**합니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)합니다.
 
 **x86 특정**
 
@@ -86,7 +86,7 @@ sub    eax, ecx
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -100,6 +100,6 @@ sub    eax, ecx
 
 ## <a name="see-also"></a>참고자료
 
-[/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[/O 옵션(코드 최적화)](o-options-optimize-code.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

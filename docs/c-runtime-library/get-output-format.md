@@ -20,12 +20,12 @@ helpviewer_keywords:
 - get_output_format function
 - _get_output_format function
 ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
-ms.openlocfilehash: a78ffb1c7fd32db3092bcf1d2297a0be6fa9f47b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60e209f6f8b723bfae1a4b434750b6237dc6479d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518796"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751429"
 ---
 # <a name="getoutputformat"></a>_get_output_format
 
@@ -44,7 +44,7 @@ unsigned int _get_output_format();
 
 출력 형식 플래그의 현재 값입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 출력 형식 플래그는 형식이 지정된 I/O의 기능을 제어합니다. 현재 플래그는 두 가지 가능한 값인 0과 `_TWO_DIGIT_EXPONENT`를 사용합니다. `_TWO_DIGIT_EXPONENT` 가 설정된 경우 부동 소수점 숫자는 세 번째 숫자가 지수의 크기에 따라 필요한 경우가 아닌 한 지수에 두 자리 숫자로 인쇄됩니다. 플래그가 0이면 부동 소수점 출력은 필요한 경우 0을 사용하여 세 자리에 값을 채워 지수의 세 자리를 표시합니다.
 

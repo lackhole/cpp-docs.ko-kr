@@ -1,19 +1,19 @@
 ---
-title: '방법: 대화 상자에 사용자 정의 컨트롤 및 호스트 만들기'
+title: '방법: 대화 상자에서 사용자 정의 컨트롤 및 호스트 만들기'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC [C++], hosting a Windows Forms Control
 - Windows Forms [C++], MFC support
 ms.assetid: 03a53032-2f03-4fa2-b567-031615a26011
-ms.openlocfilehash: ccb7219b9c7b3a64da61a77097b147424a92a701
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bdf7e2f4961a16e6538c7bbcc690ef44ba87fcaf
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649997"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751494"
 ---
-# <a name="how-to-create-the-user-control-and-host-in-a-dialog-box"></a>방법: 대화 상자에 사용자 정의 컨트롤 및 호스트 만들기
+# <a name="how-to-create-the-user-control-and-host-in-a-dialog-box"></a>방법: 대화 상자에서 사용자 정의 컨트롤 및 호스트 만들기
 
 이 문서의 단계는 만들려는 대화 상자 기반 가정 ([CDialog 클래스](../mfc/reference/cdialog-class.md)) 수 있지만 Microsoft Foundation 클래스 (MFC) 프로젝트를 추가할 수도 Windows Forms 컨트롤에 대 한 지원을 기존 MFC 대화 상자.
 
@@ -115,6 +115,6 @@ ms.locfileid: "50649997"
 
    에 **디버그** 메뉴에서 클릭 **디버깅 하지 않고 시작**합니다. MFC 대화 상자에는 Windows Forms 컨트롤을 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 대화 상자에서 Windows Form 사용자 정의 컨트롤 호스팅](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)

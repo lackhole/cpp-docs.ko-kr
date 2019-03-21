@@ -7,16 +7,16 @@ helpviewer_keywords:
 - .NET applications [C++]
 - Visual C++, .NET programming
 ms.assetid: 2c7f3b0f-a266-4f0e-b318-d6f1371e04a9
-ms.openlocfilehash: 40978bff010fbb1640398c3248c595b3ae04289f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 21a45dbff2b02ccce5444706c158e5bdcc6e6cc2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470150"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749817"
 ---
 # <a name="net-programming-with-ccli-visual-c"></a>C++/CLI를 사용한 .NET 프로그래밍 (Visual C++)
 
-**Visual Studio 2015**: 기본적으로 Visual Studio 2015를 사용 하 여 만든 CLR 프로젝트는.NET Framework 4.5.2를 대상입니다. 새 프로젝트를 만들 때 .NET Framework 4.6을 대상으로 지정하려면 **새 프로젝트** 대화 상자의 위쪽 가운데에 있는 드롭다운에서 대상 프레임워크를 변경합니다. 기존 프로젝트의 대상 프레임워크를 변경하려면 프로젝트를 닫고 프로젝트 파일(.vcxproj)을 편집한 다음 대상 프레임워크 버전의 값을 4.6으로 변경합니다. 다음에 프로젝트를 열 때 설정이 적용됩니다.
+**Visual Studio 2015**: 기본적으로 Visual Studio 2015를 사용하여 만든 CLR 프로젝트는 .NET Framework 4.5.2를 대상으로 합니다. 새 프로젝트를 만들 때 .NET Framework 4.6을 대상으로 지정하려면 **새 프로젝트** 대화 상자의 위쪽 가운데에 있는 드롭다운에서 대상 프레임워크를 변경합니다. 기존 프로젝트의 대상 프레임워크를 변경하려면 프로젝트를 닫고 프로젝트 파일(.vcxproj)을 편집한 다음 대상 프레임워크 버전의 값을 4.6으로 변경합니다. 다음에 프로젝트를 열 때 설정이 적용됩니다.
 
 **Visual Studio 2017**: Visual Studio 2017에서 기본 framework 4.6.1 이며 Framework 버전 선택기에서 아래쪽에 **새 프로젝트 대화 상자**합니다. C + + /cli CLI 자체 기본으로 설치 되지 않습니다. 구성 요소를 설치 하려면 Visual Studio 설치 관리자를 열고 선택 하 고 C + + /cli Visual c + + CLI 구성 요소입니다.
 
@@ -60,6 +60,6 @@ ms.locfileid: "50470150"
 
 [Boxing(C++/CLI)](../dotnet/boxing-cpp-cli.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [네이티브 및 .NET 상호 운용성](../dotnet/native-and-dotnet-interoperability.md)

@@ -21,12 +21,12 @@ helpviewer_keywords:
 - strings [C++], class CString
 - literal strings [C++], class CStringT
 ms.assetid: 3b33125b-1684-4542-a3a7-b00de7d0419e
-ms.openlocfilehash: 1f0764dd7231492a2addef6359318aa436869a31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f4d300bccb6387c510dc16d55eda17de20b4b134
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626683"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742575"
 ---
 # <a name="strings-atlmfc"></a>문자열 (ATL/MFC)
 
@@ -48,7 +48,6 @@ CString, CStringT의 기본 구현을 사용하여 프로그래밍에 대해 설
 [MFC 개념](../mfc/mfc-concepts.md)<br/>
 MFC 라이브러리를 사용하여 프로그래밍하는데 도움이 되는 개념 및 작업 기반 항목들을 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL/MFC 공유 클래스](../atl-mfc-shared/atl-mfc-shared-classes.md)
-

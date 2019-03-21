@@ -10,12 +10,12 @@ helpviewer_keywords:
 - LoadLibrary method
 - explicit linking [C++]
 ms.assetid: b4535d19-6243-4146-a31a-a5cca4c7c9e3
-ms.openlocfilehash: 7c0b63d80a8b4b03b55d6e50af6c08a8de0937de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96b8c0ce1116dbb08260573f25f941ca54169127
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596552"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822420"
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary 및 AfxLoadLibrary
 
@@ -30,22 +30,22 @@ MFC 확장명 Dll을 로드 하는 MFC 응용 프로그램을 사용 하는 권�
 Windows에서 DLL을 로드할 수 없는 경우 프로세스 오류 로부터 복구를 시도할 수 있습니다. 예를 들어 프로세스 오류의 사용자에 게 알림 및 DLL에 다른 경로 지정 하는 사용자에 게 요청 수입니다.
 
 > [!IMPORTANT]
-> 모든 Dll의 전체 경로 지정 해야 합니다. 파일을 로드 하는 경우 현재 디렉터리가 먼저 검색 됩니다. 파일의 경로 지정 하지 않으면 의도 하지 않은 파일을 로드할 수 있습니다. 이 문제를 방지 하는 또 다른 방법은 사용 하는 것은 [/DEPENDENTLOADFLAG](../build/reference/dependentloadflag.md) 링커 옵션입니다.
+> 모든 Dll의 전체 경로 지정 해야 합니다. 파일을 로드 하는 경우 현재 디렉터리가 먼저 검색 됩니다. 파일의 경로 지정 하지 않으면 의도 하지 않은 파일을 로드할 수 있습니다. 이 문제를 방지 하는 또 다른 방법은 사용 하는 것은 [/DEPENDENTLOADFLAG](reference/dependentloadflag.md) 링커 옵션입니다.
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [DLL에 암시적으로 연결 하는 방법](../build/linking-an-executable-to-a-dll.md#linking-implicitly)
+- [DLL에 실행 파일 링크](linking-an-executable-to-a-dll.md#linking-implicitly)
 
-- [사용할 링크 방법 결정](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [DLL에 실행 파일 링크](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
 - [동적 연결 라이브러리 순서](/windows/desktop/Dlls/dynamic-link-library-search-order)
 
-- [FreeLibrary 및 AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)
+- [FreeLibrary 및 AfxFreeLibrary](freelibrary-and-afxfreelibrary.md)
 
-- [GetProcAddress](../build/getprocaddress.md)
+- [GetProcAddress](getprocaddress.md)
 
 ## <a name="see-also"></a>참고자료
 
-- [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)
+- [Visual C++의 DLL](dlls-in-visual-cpp.md)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Unicode, string objects
 ms.assetid: 0b53a542-eeb1-4108-9ada-6700645b6f8f
-ms.openlocfilehash: cbc48008cd7b30f1630fc4ec2c30214e3c448c27
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b247e97f5aa6b5e85a6a6b6f57a64224a9e0f435
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595067"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747179"
 ---
 # <a name="string-data-management"></a>문자열 데이터 관리
 
@@ -23,7 +23,7 @@ Visual c + + 문자열 데이터를 관리 하는 여러 방법을 제공 합니
 
 - 클래스 [CStringT 클래스](../atl-mfc-shared/reference/cstringt-class.md)와 동일한 기능을 사용 하 여 MFC에 독립적인 문자열 개체를 제공 하는 `CString`
 
-거의 모든 프로그램이 문자열 데이터를 사용 하 여 작동 합니다. MFC의 `CString` 클래스 유연한 문자열 처리를 위한 최선의 솔루션 경우가 많습니다. 버전 7.0부터 `CString` 프로그램 MFC / MFC에 관계 없이 사용할 수 있습니다. 런타임 라이브러리 및 `CString` 유니코드 또는 MBCS 프로그래밍와 같이 멀티 바이트 (와이드) 문자를 포함 하는 문자열을 지원 합니다.
+거의 모든 프로그램이 문자열 데이터를 사용하여 작업합니다. MFC의 `CString` 클래스 유연한 문자열 처리를 위한 최선의 솔루션 경우가 많습니다. 버전 7.0부터 `CString` 프로그램 MFC / MFC에 관계 없이 사용할 수 있습니다. 런타임 라이브러리 및 `CString` 유니코드 또는 MBCS 프로그래밍와 같이 멀티 바이트 (와이드) 문자를 포함 하는 문자열을 지원 합니다.
 
 이 문서에서는 문자열 조작에 관련 된 클래스 라이브러리를 제공 하는 범용 서비스를 설명 합니다. 이 문서에서 다루는 항목은 다음과 같습니다.
 
@@ -83,7 +83,6 @@ MFC 버전 4.0부터 때 [CStringT 클래스](../atl-mfc-shared/reference/cstrin
 
 사용할 수는 `CString` 멤버 함수 [CSimpleStringT::LockBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) 및 [CSimpleStringT::UnlockBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) 하거나 참조 횟수를 사용 하지 않도록 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [일반 MFC 항목](../mfc/general-mfc-topics.md)
-

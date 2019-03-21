@@ -9,12 +9,12 @@ helpviewer_keywords:
 - projects [C++], deploying programs
 - application deployment [C++], walkthroughs
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
-ms.openlocfilehash: 7170fe3ae058f832e452089021d9f863f1791f14
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 051ef3aa8c691a2191d25183ef96f17b557a47c1
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657515"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57820210"
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>연습: 프로그램 배포(C++)
 
@@ -77,5 +77,5 @@ ms.locfileid: "53657515"
 ## <a name="see-also"></a>참고 항목
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
-[C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)<br/>
+[프로젝트 및 빌드 시스템](../build/projects-and-build-systems-cpp.md)<br/>
 [데스크톱 애플리케이션 배포](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>

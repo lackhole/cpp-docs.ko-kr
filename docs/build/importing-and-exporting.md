@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DLLs [C++], exporting from
 - __declspec(dllimport) keyword [C++]
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
-ms.openlocfilehash: 1aaf18003f831ca94ecd90dafb472ecb894b8a60
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 882010cd28c291e9f49ca0f7dd9d646c70130184
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424797"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815829"
 ---
 # <a name="importing-and-exporting"></a>가져오기 및 내보내기
 
@@ -27,7 +27,7 @@ ms.locfileid: "57424797"
 
 모듈 정의 (.def) 파일은 DLL의 다양 한 특성을 설명 하는 하나 이상의 모듈 문이 들어 있는 텍스트 파일입니다. 사용 하지 않는 경우 **__declspec (dllimport)** 또는 **__declspec (dllexport)** DLL을 DLL의 함수를 내보내려면.def 파일이 필요 합니다.
 
-.Def 파일을 사용할 수 있습니다 [응용 프로그램으로 가져오기](../build/importing-using-def-files.md) 나 [DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)합니다.
+.Def 파일을 사용할 수 있습니다 [응용 프로그램으로 가져오기](importing-using-def-files.md) 나 [DLL에서 내보내기](exporting-from-a-dll-using-def-files.md)합니다.
 
 ## <a name="using-declspec"></a>__Declspec를 사용 하 여
 
@@ -41,10 +41,10 @@ Win32 이식 가능한 실행 파일 형식으로 가져오기를 수정 하기 
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [응용 프로그램으로 가져오기](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL에서 내보내기](../build/exporting-from-a-dll.md)
+- [DLL에서 내보내기](exporting-from-a-dll.md)
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](../build/dlls-in-visual-cpp.md)
+[Visual C++의 DLL](dlls-in-visual-cpp.md)

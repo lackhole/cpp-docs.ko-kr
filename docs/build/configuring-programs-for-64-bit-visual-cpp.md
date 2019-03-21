@@ -1,5 +1,5 @@
 ---
-title: 64비트 및 x64를 위한 Visual C++ 설정
+title: 64 비트 x64에 대 한 c + + 프로젝트 구성 대상
 ms.date: 11/04/2016
 helpviewer_keywords:
 - 64-bit compiler [C++], options
@@ -8,26 +8,26 @@ helpviewer_keywords:
 - programming [C++], 64-bit
 - Visual C++, 64-bit hardware
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
-ms.openlocfilehash: c0c3620f4e5fea864fda1fd3d6b046fa3f485085
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c56cd34ecbc6615b0acebde6c40c658ca0c436a4
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57417543"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818117"
 ---
-# <a name="configure-visual-c-for-64-bit-x64-targets"></a>64비트 및 x64를 위한 Visual C++ 설정
+# <a name="configure-c-projects-for-64-bit-x64-targets"></a>64 비트 x64에 대 한 c + + 프로젝트 구성 대상
 
 이 단원에는 Visual C++ 빌드 도구를 사용하여 64비트 하드웨어를 대상으로 지정하는 방법에 대한 항목이 포함되어 있습니다.
 
 ## <a name="in-this-section"></a>단원 내용
 
-- [방법: X64을 64 비트 대상 Visual C++ 프로젝트 구성 플랫폼](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
+- [방법: X64을 64 비트 대상 Visual C++ 프로젝트 구성 플랫폼](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
-- [방법: 명령줄에서 64 비트 Visual C++ 도구를 사용 하도록 설정](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
+- [방법: 명령줄에서 64 비트 Visual C++ 도구를 사용 하도록 설정](how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
-- [일반적인 Visual C++ 64비트 마이그레이션 문제](../build/common-visual-cpp-64-bit-migration-issues.md)
+- [일반적인 Visual C++ 64비트 마이그레이션 문제](common-visual-cpp-64-bit-migration-issues.md)
 
-- [x64 소프트웨어 규칙](../build/x64-software-conventions.md)
+- [x64 소프트웨어 규칙](x64-software-conventions.md)
 
 ## <a name="related-sections"></a>관련 단원
 
@@ -35,9 +35,9 @@ ms.locfileid: "57417543"
 
 [align(C++)](../cpp/align-cpp.md)
 
-[/clr(공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)
+[/clr(공용 언어 런타임 컴파일)](reference/clr-common-language-runtime-compilation.md)
 
-[/favor(아키텍처에 맞게 최적화)](../build/reference/favor-optimize-for-architecture-specifics.md)
+[/favor(아키텍처에 맞게 최적화)](reference/favor-optimize-for-architecture-specifics.md)
 
 [64비트 Windows에 대한 프로그래밍 가이드](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)
 
@@ -47,4 +47,4 @@ ms.locfileid: "57417543"
 
 ## <a name="see-also"></a>참고자료
 
-[C/C++ 프로그램 빌드](building-c-cpp-programs.md)
+[프로젝트 및 빌드 시스템](projects-and-build-systems-cpp.md)

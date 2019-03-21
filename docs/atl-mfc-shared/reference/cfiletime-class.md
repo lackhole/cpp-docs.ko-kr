@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CFileTime class
 - shared classes, CFileTime
 ms.assetid: 1a358a65-1383-4124-b0d4-59b026e6860f
-ms.openlocfilehash: 42c89bcfa064bbb151f9d110cbd25763dbd44185
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 07b888b031a38dc2f09404a14e729e26b3eaa019
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893940"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746099"
 ---
 # <a name="cfiletime-class"></a>CFileTime 클래스
 
@@ -101,7 +101,7 @@ class CFileTime :  public FILETIME
 
 **참고** 일부 파일 시스템 만들기를 기록할 수 및 마지막 액세스 시간 및 모든 파일 시스템에 동일한 방식으로 기록 합니다. 예제에서는 Windows NT FAT 파일 시스템 만들기에 대 한 10 밀리초 해상도 포함 하는 시간, 쓰기 시간 2 초의 해상도 가진 및 액세스 시간 1 일 (액세스 날짜)의 해상도 합니다. NTFS 액세스 시간에 1 시간의 확인을 기능이 있습니다. 또한 FAT 현지 시간으로 디스크에 대 한 번이 기록 되지만 NTFS utc에서 시간 디스크에 기록 합니다. 자세한 내용은 [파일을 시간](/windows/desktop/SysInfo/file-times)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `FILETIME`
 
@@ -380,7 +380,7 @@ bool operator==(CFileTime ft) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *ft*<br/>
-비교할 `CFileTime` 개체입니다.
+`CFileTime` 비교할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -473,7 +473,7 @@ static const ULONGLONG Week = Day* 7;
 
 예를 참조 하세요 [CFileTime::Millisecond](#millisecond)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
 [CFileTimeSpan 클래스](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>

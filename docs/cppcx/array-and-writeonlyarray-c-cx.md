@@ -2,12 +2,12 @@
 title: Array 및 WriteOnlyArray(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
-ms.openlocfilehash: 44dc57d834272a1d78b0825ac5208d3b251aef6b
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: fd616487bd3c11544f12e84a7dc64f41e63d501a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420702"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739419"
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Array 및 WriteOnlyArray(C++/CX)
 
@@ -87,7 +87,7 @@ Windows 런타임 형식 시스템에서는 가변 배열의 개념이 지원되
 
 일반적으로 ref 클래스에서는 `Platform::Array` 형식을 속성으로 노출하지 않아야 합니다. 클라이언트 코드가 단일 요소에만 액세스하려고 하는 경우에도 전체 배열이 반환되기 때문입니다. public ref 클래스에서 시퀀스 컨테이너를 속성으로 노출해야 하는 경우 [Windows::Foundation::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) 를 선택하는 것이 더 낫습니다. 메타데이터에 게시되지 않는 전용 또는 내부 API에서는 [std::vector](../standard-library/vector-class.md)와 같은 표준 C++ 컨테이너를 사용하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
 [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - enable exception handling compiler option [C++]
 - GX compiler option [C++]
 ms.assetid: 933b43ba-de77-4ff8-a48b-7074de90bc1c
-ms.openlocfilehash: 4ac2b86c19845a092c743c484ad48d0cd0b6fb35
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 43be8f6d0f080f0d85568ce5b089751fc68f0e8e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416035"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815465"
 ---
 # <a name="gx-enable-exception-handling"></a>/GX(예외 처리 사용)
 
@@ -30,7 +30,7 @@ ms.locfileid: "57416035"
 
 ## <a name="remarks"></a>설명
 
-**/GX** 는 사용 되지 않습니다. 해당 사용 [/EHsc](../../build/reference/eh-exception-handling-model.md) 옵션을 사용 합니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요. 합니다 **컴파일러 옵션 및 사용 되지 않음** 섹션 [컴파일러 옵션 범주별 목록](../../build/reference/compiler-options-listed-by-category.md)합니다.
+**/GX** 는 사용 되지 않습니다. 해당 사용 [/EHsc](eh-exception-handling-model.md) 옵션을 사용 합니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요. 합니다 **컴파일러 옵션 및 사용 되지 않음** 섹션 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)합니다.
 
 기본적으로 **/EHsc**는 해당 **/GX**, Visual Studio 개발 환경을 사용 하 여 컴파일하는 경우 적용 됩니다. 명령줄 도구를 사용 하는 경우 예외 처리 하지 않아도 지정 됩니다. 에 해당 하는 이것이 **/GX-** 합니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "57416035"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 탐색 창에서 선택 **구성 속성**, **C/c + +** 하십시오 **명령줄**합니다.
 
@@ -50,6 +50,6 @@ ms.locfileid: "57416035"
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[/EH(예외 처리 모델)](../../build/reference/eh-exception-handling-model.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[/EH(예외 처리 모델)](eh-exception-handling-model.md)

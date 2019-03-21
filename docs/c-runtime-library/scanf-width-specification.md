@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - scanf function, width specification
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c
-ms.openlocfilehash: e4608d46664dad3e04d37a82368cc6e7173106f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1431002a7e7d0054ac20c05c76b05cabc96177c5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445164"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743269"
 ---
 # <a name="scanf-width-specification"></a>scanf 너비 사양
 
@@ -79,7 +79,7 @@ wscanf_s(L"%hC", &x, 2);    // Read a single-byte character
 
 ## <a name="reading-undelimited-strings"></a>구분되지 않은 문자열 읽기
 
-공백 문자로 구분되지 않은 문자열을 읽으려면 대괄호(**[ ]**)로 둘러싸인 문자 집합이 **s**(문자열) 형식 문자를 대신할 수 있습니다. 대괄호로 둘러싸인 문자 집합을 제어 문자열이라고 합니다. 해당 입력된 필드는 제어 문자열에 나타나지 않는 첫 번째 문자까지 읽힙니다. 집합의 첫 번째 문자가 캐럿(**^**)이면 반대로 적용됩니다. 즉, 문자 집합의 나머지 부분에 나타나는 않는 첫 번째 문자까지 입력 필드가 읽힙니다.
+공백 문자로 구분되지 않은 문자열을 읽으려면 대괄호(**[ ]**)로 둘러싸인 문자 집합이 **s**(문자열) 형식 문자를 대신할 수 있습니다. 대괄호로 둘러싸인 문자 집합을 제어 문자열이라고 합니다. 해당 입력된 필드는 제어 문자열에 나타나지 않는 첫 번째 문자까지 읽힙니다. 세트의 첫 번째 문자가 캐럿(**^**)이면 영향이 취소됩니다. 입력 필드는 나머지 문자 세트에 나타나는 첫 번째 문자까지 읽힙니다.
 
 **%[a-z]** 및 **%[z-a]** 는 **%[abcde...z]** 와 동일한 것으로 해석됩니다. 이는 공통 `scanf` 함수 확장이지만 ANSI 표준에는 이러한 확장이 필요하지 않습니다.
 

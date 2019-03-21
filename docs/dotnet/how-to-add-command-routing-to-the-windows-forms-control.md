@@ -1,19 +1,19 @@
 ---
-title: '방법: Windows Forms 컨트롤에 명령 라우팅 추가'
+title: '방법: 추가 명령 라우팅에 Windows Forms 컨트롤'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - command routing [C++], adding to Windows Forms controls
 - Windows Forms controls [C++], command routing
 ms.assetid: bf138ece-b463-442a-b0a0-de7063a760c0
-ms.openlocfilehash: b3f93574e007fdb1b7d4009d85c573223091adf9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f633cf744314833409a3ffeacf8c850429e099c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447114"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750300"
 ---
-# <a name="how-to-add-command-routing-to-the-windows-forms-control"></a>방법: Windows Forms 컨트롤에 명령 라우팅 추가
+# <a name="how-to-add-command-routing-to-the-windows-forms-control"></a>방법: 추가 명령 라우팅에 Windows Forms 컨트롤
 
 [CWinFormsView](../mfc/reference/cwinformsview-class.md) MFC 명령 (예: 프레임 메뉴 항목 및 도구 모음 단추)를 처리할 수 있도록 사용자 정의 컨트롤을 명령과 업데이트 명령 UI 메시지를 라우팅합니다.
 
@@ -21,11 +21,11 @@ ms.locfileid: "50447114"
 
 `CWinFormsView` 관리 되는 사용자 정의 컨트롤에 전달 하 여 몇 가지 공통 MFC 뷰 알림을 처리 합니다. 이러한 알림을 포함 합니다 [OnInitialUpdate](../mfc/reference/iview-interface.md#oninitialupdate)를 [OnUpdate](../mfc/reference/iview-interface.md#onupdate) 하 고 [OnActivateView](../mfc/reference/iview-interface.md#onactivateview) 메서드.
 
-이 항목에서는 이전에 완료 했다고 가정 [방법: 대화 상자에서 사용자 정의 컨트롤 및 호스트 만들기](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) 하 고 [방법: 사용자 컨트롤 및 호스트 MDI 뷰 만들기](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md)합니다.
+이 항목에서는 이전에 완료 했다고 가정 [방법: 대화 상자에서 사용자 정의 컨트롤 및 호스트 만들기](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) 고 [방법: 사용자 정의 컨트롤 및 호스트 MDI 뷰 만들기](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md)합니다.
 
 ### <a name="to-create-the-mfc-host-application"></a>MFC 호스트 응용 프로그램을 만들려면
 
-1. 만든 Windows Forms 컨트롤 라이브러리를 엽니다 [방법: 대화 상자에서 사용자 정의 컨트롤 및 호스트 만들기](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md)합니다.
+1. 만든 Windows Forms 컨트롤 라이브러리를 열고 [방법: 대화 상자에서 사용자 정의 컨트롤 및 호스트 만들기](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md)합니다.
 
 1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 여 수행할 수 있는 mfcmifc80.dll에 대 한 참조를 추가 **솔루션 탐색기**을 선택 하면 **추가**에 **참조**를 찾아 다음 Microsoft Visual Studio 10.0\VC\atlmfc\lib 합니다.
 
@@ -41,7 +41,7 @@ ms.locfileid: "50447114"
     partial class UserControl1
     ```
 
-   다음과 같이 변경
+   아래와 같이 변환합니다.
 
     ```
     partial class UserControl1 : System.Windows.Forms.UserControl, ICommandTarget
@@ -70,7 +70,7 @@ ms.locfileid: "50447114"
     }
     ```
 
-1. 만든 MFC 응용 프로그램을 엽니다 [방법: 사용자 컨트롤 및 호스트 MDI 뷰 만들기](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md)합니다.
+1. 만든 MFC 응용 프로그램을 열고 [방법: 사용자 정의 컨트롤 및 호스트 MDI 뷰 만들기](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md)합니다.
 
 1. 호출 하는 메뉴 옵션을 추가 `singleMenuHandler`합니다.
 
@@ -88,7 +88,7 @@ ms.locfileid: "50447114"
 
    추가한 메뉴 옵션을 선택 합니다. .Dll의 메서드가 호출 되도록 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows Forms 사용자 정의 컨트롤을 MFC 뷰로 호스팅](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)<br/>
 [ICommandSource 인터페이스](../mfc/reference/icommandsource-interface.md)<br/>

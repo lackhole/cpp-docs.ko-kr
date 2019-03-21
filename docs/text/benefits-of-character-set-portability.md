@@ -5,12 +5,12 @@ helpviewer_keywords:
 - character sets [C++], benefits
 - portability [C++], character sets
 ms.assetid: bd60b925-1498-4e4f-897b-4c8ce66edcf7
-ms.openlocfilehash: 446d59fe62999e5be652be5efabb53fd907fcd88
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ca7e46cabb2d98a64a244863f8574a3e9e2a456
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631351"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750007"
 ---
 # <a name="benefits-of-character-set-portability"></a>문자 집합 이식성의 이점
 
@@ -20,7 +20,7 @@ ms.locfileid: "50631351"
 
 - 유니코드를 사용한 Windows 응용 프로그램은 보다 효율적입니다. Windows가 유니코드를 사용하고 운영체제와 주고 받는 유니코드가 아닌 문자열은 변환되어야 하므로 이 경우 오버 헤드가 발생합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [유니코드 및 MBCS](../text/unicode-and-mbcs.md)<br/>
 [유니코드 지원](../text/support-for-unicode.md)

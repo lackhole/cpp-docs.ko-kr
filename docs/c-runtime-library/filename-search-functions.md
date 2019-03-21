@@ -17,12 +17,12 @@ helpviewer_keywords:
 - find function
 - _wfind function
 ms.assetid: 2bc2f8ef-44e4-4271-b3e8-666d36fde828
-ms.openlocfilehash: f5f0629b97c3f3731e3916af36c9c8e40176462a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aebdf2e5aaf6d59e5ee39af05540604206ec6c23
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621652"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740544"
 ---
 # <a name="filename-search-functions"></a>파일 이름 검색 함수
 
@@ -103,7 +103,7 @@ ms.locfileid: "50621652"
 
 `_fsize_t`는 `unsigned long`(32비트)에 대한 `typedef`입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 // crt_find.c

@@ -4,12 +4,12 @@ ms.date: 10/17/2018
 helpviewer_keywords:
 - verifiable assemblies [C++], with SQL Server
 ms.assetid: 5248a60d-aa88-4ff3-b30a-b791c3ea2de9
-ms.openlocfilehash: a977aa81a598e1698dfbc1c5679b85378b7ba6fc
-ms.sourcegitcommit: d04dfe95801bafcbd5371e40e626fe5c678343b8
+ms.openlocfilehash: 27dec67cc0932a784cdd041ba346bb8c635b280d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389931"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747698"
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server에 안정형 어셈블리 사용(C++/CLI)
 
@@ -19,7 +19,7 @@ ms.locfileid: "52389931"
 
 SQL Server transact-sql (T-SQL)을 SQL Server에 안정형 어셈블리를 설치할 수 있도록 확장을 제공 합니다. SQL Server 사용 권한 집합에는 다음과 같은 수준의 보안을 사용 하 여 보안 컨텍스트를 지정합니다.
 
-- 무제한 모드:; 위험은 사용자 고유의 코드를 실행 합니다. 코드 형식 안전성이 될 필요가 없습니다.
+- 무제한 모드: 사용자 고유의 위험이; 코드를 실행 합니다. 코드 형식 안전성이 될 필요가 없습니다.
 
 - 안전 모드: 형식이 안전한 코드를 실행 /clr: safe를 사용 하 여 컴파일됩니다.
 
@@ -76,6 +76,6 @@ SQL 쿼리 분석기 또는 sqlcmd.exe 유틸리티를 사용 하 여 명령줄�
 sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[클래스 및 구조체](../cpp/classes-and-structs-cpp.md)
+[클래스 및 구조체(C++)](../cpp/classes-and-structs-cpp.md)

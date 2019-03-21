@@ -8,12 +8,12 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: eb5e10b7-d615-4bc7-908d-e3e99b7b1d5f
-ms.openlocfilehash: 0ad5c82d72a3cd9b4801274aefd40d96afdbcdd1
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: ab9b980cbb3e89eebee945e90c54f23d6717a1a4
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57425057"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816479"
 ---
 # <a name="mfc-extension-dlls-overview"></a>MFC 확장명 Dll: 개요
 
@@ -27,22 +27,22 @@ AFXDLL 용어 Visual c + + 설명서에 더 이상 사용 되는 참고 합니�
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [MFC 확장 DLL 초기화](../build/run-time-library-behavior.md#initializing-extension-dlls)
+- [MFC 확장 DLL 초기화](run-time-library-behavior.md#initializing-extension-dlls)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [MFC 확장명 DLL](../build/extension-dlls.md)
+- [MFC 확장명 DLL](extension-dlls.md)
 
-- [기본 MFC DLL에서 데이터베이스, OLE 및 소켓 MFC 확장명 DLL 사용](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [기본 MFC DLL에서 데이터베이스, OLE 및 소켓 MFC 확장명 DLL 사용](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
-- [비 MFC DLL: 개요](../build/non-mfc-dlls-overview.md)
+- [비 MFC DLL: 개요](non-mfc-dlls-overview.md)
 
-- [정적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-statically-linked-to-mfc.md)
+- [정적으로 MFC에 링크 된 기본 MFC Dll](regular-dlls-statically-linked-to-mfc.md)
 
-- [동적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [동적으로 MFC에 링크 된 기본 MFC Dll](regular-dlls-dynamically-linked-to-mfc.md)
 
 - [MFC DLL 만들기](../mfc/reference/mfc-dll-wizard.md)
 
 ## <a name="see-also"></a>참고자료
 
-[DLL의 종류](../build/kinds-of-dlls.md)
+[DLL의 종류](kinds-of-dlls.md)

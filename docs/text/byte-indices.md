@@ -1,16 +1,16 @@
-﻿---
+---
 title: 바이트 인덱스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MBCS [C++], byte indices
 - byte indices [C++]
 ms.assetid: f6e7774a-86c6-41c2-89e3-74fd46432e47
-ms.openlocfilehash: 4e19868e5297e1c1615efabde2aee418bc53c51e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5305a977c23d7a978a89c84809cc6fab8c5731eb
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448817"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751598"
 ---
 # <a name="byte-indices"></a>바이트 인덱스
 
@@ -34,7 +34,7 @@ ms.locfileid: "50448817"
 
    이렇게 하면 선행 바이트를 인덱싱하여 올바른 `character`를 얻을 수 있습니다. `_mbclen` 함수는 1바이트인지 2 바이트인지에 대한 크기를 판단하여 처리합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [멀티바이트 문자 집합(MBCS) 프로그래밍 팁](../text/mbcs-programming-tips.md)<br/>
 [문자열의 마지막 문자](../text/last-character-in-a-string.md)

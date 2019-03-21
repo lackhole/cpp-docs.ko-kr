@@ -9,12 +9,12 @@ helpviewer_keywords:
 - L_tmpnam constant
 - TMP_MAX constant
 ms.assetid: ab19fd0c-b5b7-49f7-b23d-da9dfbcf0c1f
-ms.openlocfilehash: 21b56a05b60067e04d0d3864a135ed5eccacfddc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 680ce31065711684dcbe3077e3114ed6efec5704
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609718"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743777"
 ---
 # <a name="tmpmax-ltmpnam"></a>TMP_MAX, L_tmpnam
 
@@ -24,7 +24,7 @@ ms.locfileid: "50609718"
 #include <stdio.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `TMP_MAX`는 `tmpnam` 함수가 생성할 수 있는 고유한 파일 이름의 최대 수입니다. `L_tmpnam`은 `tmpnam`에 의해 생성되는 임시 파일 이름의 길이입니다.
 

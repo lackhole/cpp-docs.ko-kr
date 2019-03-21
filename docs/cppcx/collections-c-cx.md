@@ -2,12 +2,12 @@
 title: 컬렉션(C++/CX)
 ms.date: 11/19/2018
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
-ms.openlocfilehash: 155f14a2948215afb918e15c345cfa83f630db9e
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 850ac0f4801a13a5407f8fe008740bbfa21cc02c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423523"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745428"
 ---
 # <a name="collections-ccx"></a>컬렉션(C++/CX)
 
@@ -143,7 +143,7 @@ STL  `const` 임의 액세스 반복기의 요구 사항을 충족하는 STL 반
 
 [Windows::Foundation::Collections::VectorChangedEventHandler](/uwp/api/windows.foundation.collections.vectorchangedeventhandler) 및 [Windows::Foundation::Collections::MapChangedEventHandler](/uwp/api/windows.foundation.collections.mapchangedeventhandler) 대리자는 컬렉션 변경 이벤트에 대한 이벤트 처리기의 서명을 지정합니다. [Windows::Foundation::Collections::CollectionChange](/uwp/api/windows.foundation.collections.collectionchange) public enum 클래스와 `Platform::Collection::Details::MapChangedEventArgs` 및 `Platform::Collections::Details::VectorChangedEventArgs` ref 클래스는 이벤트의 원인을 확인하기 위해 이벤트 인수를 저장합니다. 합니다 `*EventArgs` 형식에 정의 된 합니다 `Details` 네임 스페이스를 생성 하거나 사용 하는 경우 명시적으로 사용할 필요가 없기 때문에 `Map` 또는 `Vector`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
 [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>

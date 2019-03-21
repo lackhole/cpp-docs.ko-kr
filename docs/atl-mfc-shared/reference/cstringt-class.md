@@ -80,12 +80,12 @@ helpviewer_keywords:
 - shared classes, CStringT
 - CStringT class
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
-ms.openlocfilehash: bd8fefd3424ab5ec422adb352972ba846e45139d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 9566830de4d3af8f34e8efa5e5ef468acae1fba5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525498"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750873"
 ---
 # <a name="cstringt-class"></a>CStringT 클래스
 
@@ -114,7 +114,7 @@ String 클래스의 문자 형식입니다. 다음 중 하나일 수 있습니�
 *StringTraits*<br/>
 String 클래스 C 런타임 (CRT) 라이브러리 지원 및 문자열 리소스가 있는 경우 결정 합니다. 다음 중 하나일 수 있습니다.
 
-- **StrTraitATL < wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; **char** &#124;  **TCHAR >>**
+- **StrTraitATL< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; **char** &#124; **TCHAR > >**
 
    클래스에 필요한 CRT 지원 및 리소스 문자열에 지정 된 모듈에 대해 검색 `m_hInstResource` (응용 프로그램의 모듈 클래스의 멤버).
 
@@ -122,7 +122,7 @@ String 클래스 C 런타임 (CRT) 라이브러리 지원 및 문자열 리소�
 
    클래스에는 CRT 지원 및 리소스 문자열에 지정 된 모듈에 대해 검색 않아도 `m_hInstResource` (응용 프로그램의 모듈 클래스의 멤버).
 
-- **StrTraitMFC < wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; **char** &#124;  **TCHAR >>**
+- **StrTraitMFC< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; **char** &#124; **TCHAR > >**
 
    클래스는 CRT 지원 및 표준 MFC 검색 알고리즘을 사용 하 여 리소스 문자열을 검색 해야 합니다.
 
@@ -137,7 +137,7 @@ String 클래스 C 런타임 (CRT) 라이브러리 지원 및 문자열 리소�
 |이름|설명|
 |----------|-----------------|
 |[CStringT::CStringT](#cstringt)|생성 된 `CStringT` 다양 한 방법으로 개체입니다.|
-|[CStringT:: ~ CStringT](#_dtorcstringt)|`CStringT` 개체를 제거합니다.|
+|[CStringT::~CStringT](#_dtorcstringt)|`CStringT` 개체를 제거합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -186,7 +186,7 @@ String 클래스 C 런타임 (CRT) 라이브러리 지원 및 문자열 리소�
 |[CStringT::operator +](#operator_add)|두 문자열 또는 문자 및 문자열을 연결합니다.|
 |[CStringT::operator + =](#operator_add_eq)|기존 문자열의 끝에 새 문자열을 연결합니다.|
 |[CStringT::operator = =](#operator_eq_eq)|두 문자열이 논리적으로 같은지 여부를 결정 합니다.|
-|[CStringT::operator! =](#operator_neq)|두 문자열이 없는 경우 논리적으로 같은지 확인 합니다.|
+|[CStringT::operator !=](#operator_neq)|두 문자열이 없는 경우 논리적으로 같은지 확인 합니다.|
 |[CStringT::operator &lt;](#operator_lt)|연산자의 좌 변에 있는 문자열 미만 있는지 여부를 결정 오른쪽에 있는 문자열입니다.|
 |[CStringT::operator &gt;](#operator_gt)|연산자의 좌 변에 있는 문자열은 오른쪽에 문자열 보다 큰 경우를 결정 합니다.|
 |[CStringT::operator &lt;=](#operator_lt_eq)|연산자의 좌 변에 있는 문자열 오른쪽에 문자열 보다 작거나 인지 확인 합니다.|
@@ -263,7 +263,7 @@ MFC 기반 응용 프로그램 내에서 사용 가능한 다음 문자열 형�
 > [!NOTE]
 >  이전에 문서화 되지 않은 메서드를 사용 하는 코드 `CString` (같은 `AssignCopy`)의 문서화 된 다음 메서드를 사용 하는 코드를 사용 하 여 바꾸어야 `CStringT` (같은 `GetBuffer` 또는 `ReleaseBuffer`). 이러한 메서드는 상속 `CSimpleStringT`합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)
 
@@ -561,7 +561,7 @@ TCHAR (ANSI 및 유니코드 문자열)에 대 한 합니다.
 *SystemString*<br/>
 해야 `System::String`, 및 /clr을 사용 하 여 프로젝트를 컴파일해야 합니다.
 
-*pstring이*<br/>
+*pString*<br/>
 에 대 한 핸들을 `CStringT` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -570,7 +570,7 @@ TCHAR (ANSI 및 유니코드 문자열)에 대 한 합니다.
 
 - `CStringT`( `LPCSTR` `lpsz` ): 유니코드 생성 `CStringT` ANSI 문자열에서. 또한 아래 예제와 같이 문자열 리소스를 로드 하려면이 생성자를 사용할 수 있습니다.
 
-- `CStringT(` `LPCWSTR` `lpsz` ): 생성 된 `CStringT` 유니코드 문자열에서.
+- `CStringT(` `LPCWSTR` `lpsz` ): 생성 된 `CStringT` 유니코드 문자열에서입니다.
 
 - `CStringT`( `const unsigned char*` `psz` ): 생성할 수는 `CStringT` 에 대 한 포인터에서 **unsigned char**합니다.
 
@@ -588,7 +588,7 @@ TCHAR (ANSI 및 유니코드 문자열)에 대 한 합니다.
 
 [!code-cpp[NVC_ATLMFC_Utilities#112](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_7.cpp)]
 
-##  <a name="_dtorcstringt"></a>  CStringT:: ~ CStringT
+##  <a name="_dtorcstringt"></a>  CStringT::~CStringT
 
 제거 된 `CStringT` 개체입니다.
 
@@ -797,7 +797,7 @@ void FormatV(PCXSTR pszFormat, va_list args);
 *pszFormat*<br/>
 형식 컨트롤 문자열을 가리킵니다. 수 삽입에 대 한 검색 하 고 그에 따라 서식이 지정 합니다. 서식 문자열은 런타임 함수와 유사한 `printf`-매개 변수는 임의의 순서로 삽입할 수 있도록 점을 제외 하 고 형식 문자열 스타일입니다.
 
-*인수*<br/>
+*args*<br/>
 인수 목록에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -1043,7 +1043,7 @@ friend CStringT operator+(wchar_t ch1, const CStringT& str2,);
 *ch1*<br/>
 연결 문자열을 사용 하 여 ANSI 또는 유니코드 문자입니다.
 
-*c h 2*<br/>
+*ch2*<br/>
 연결 문자열을 사용 하 여 ANSI 또는 유니코드 문자입니다.
 
 *str1*<br/>
@@ -1069,7 +1069,7 @@ friend CStringT operator+(wchar_t ch1, const CStringT& str2,);
 
 [!code-cpp[NVC_ATLMFC_Utilities#140](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_24.cpp)]
 
-##  <a name="operator_add_eq"></a>  CStringT::operator + =
+##  <a name="operator_add_eq"></a>  CStringT::operator +=
 
 문자열의 끝에 문자를 연결합니다.
 
@@ -1125,7 +1125,7 @@ CStringT& operator+=(const VARIANT& var);
 
 [!code-cpp[NVC_ATLMFC_Utilities#141](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_25.cpp)]
 
-##  <a name="operator_eq_eq"></a>  CStringT::operator = =
+##  <a name="operator_eq_eq"></a>  CStringT::operator ==
 
 두 문자열은 논리적으로 동일한 지 여부를 결정 합니다.
 
@@ -1144,7 +1144,7 @@ friend bool operator==(XCHAR ch1, const CStringT& str2,) throw();
 *ch1*<br/>
 비교에 대 한 ANSI 또는 유니코드 문자입니다.
 
-*c h 2*<br/>
+*ch2*<br/>
 비교에 대 한 ANSI 또는 유니코드 문자입니다.
 
 *str1*<br/>
@@ -1167,7 +1167,7 @@ Null로 끝나는 문자열 비교에 대 한 포인터입니다.
 
 [!code-cpp[NVC_ATLMFC_Utilities#142](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_26.cpp)]
 
-##  <a name="operator_neq"></a>  CStringT::operator! =
+##  <a name="operator_neq"></a>  CStringT::operator !=
 
 논리적으로 없습니다 두 문자열이 같은지 확인 합니다.
 
@@ -1186,7 +1186,7 @@ friend bool operator!=(XCHAR ch1, const CStringT& str2,) throw();
 *ch1*<br/>
 연결 문자열을 사용 하 여 ANSI 또는 유니코드 문자입니다.
 
-*c h 2*<br/>
+*ch2*<br/>
 연결 문자열을 사용 하 여 ANSI 또는 유니코드 문자입니다.
 
 *str1*<br/>
@@ -1728,9 +1728,8 @@ CStringT& TrimRight();
 
 [!code-cpp[NVC_ATLMFC_Utilities#138](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_42.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)<br/>
 [CSimpleStringT 클래스](../../atl-mfc-shared/reference/csimplestringt-class.md)
-

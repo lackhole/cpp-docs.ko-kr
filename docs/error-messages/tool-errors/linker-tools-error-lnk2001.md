@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2001
 ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
-ms.openlocfilehash: dba197be71fc77af6d95c2ec62053928ac1627cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 824fa9108e6322b1bcf77d6c28c7fb843b743833
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631662"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808107"
 ---
 # <a name="linker-tools-error-lnk2001"></a>링커 도구 오류 LNK2001
 
@@ -47,9 +47,9 @@ ms.locfileid: "50631662"
 
 이 오류는 ATL 프로젝트의 릴리스 버전 빌드 CRT 시작 코드가 필요 하다는 메시지를 생성 하는 경우에 발생할 수 있습니다. 이 문제를 해결 하려면 다음 중 하나를 수행
 
-- 제거 `_ATL_MIN_CRT` 전처리기의 목록에서 CRT 시작 코드를 포함할 수 있도록 정의 합니다. 참조 [일반 속성 페이지 (프로젝트)](../../ide/general-property-page-project.md) 자세한 내용은 합니다.
+- 제거 `_ATL_MIN_CRT` 전처리기의 목록에서 CRT 시작 코드를 포함할 수 있도록 정의 합니다. 참조 [일반 속성 페이지 (프로젝트)](../../build/reference/general-property-page-project.md) 자세한 내용은 합니다.
 
-- 가능 하면 CRT 시작 코드는 CRT 함수에 대 한 호출을 제거 합니다. 대신에 해당 하는 Win32를 사용 합니다. 사용 예를 들어 `lstrcmp` 대신 `strcmp`합니다. CRT 시작 코드를 필요로 하는 알려진된 함수를 사용 하는 문자열을 부동 소수점 함수 같습니다.
+- 가능 하면 CRT 시작 코드는 CRT 함수에 대 한 호출을 제거 합니다. 대신에 해당 하는 Win32를 사용 합니다. 예를 들어 `strcmp` 대신 `lstrcmp`을 사용합니다. CRT 시작 코드를 필요로 하는 알려진된 함수를 사용 하는 문자열을 부동 소수점 함수 같습니다.
 
 ### <a name="compilation-and-link-issues"></a>컴파일 및 연결 문제
 

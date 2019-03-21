@@ -22,12 +22,12 @@ helpviewer_keywords:
 - SAFEARRAY, marshaling
 - ADO.NET [C++], marshaling SAFEARRAY types
 ms.assetid: b0cd987d-1ea7-4f76-ba01-cbd52503d06d
-ms.openlocfilehash: 896cad4d3a679cd1832b073f4b1f355a70a608d5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b258e574b912b1c32e5ffae7ba29cfc5f9903685
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638479"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749349"
 ---
 # <a name="data-access-using-adonet-ccli"></a>ADO.NET을 사용하여 데이터 액세스(C++/CLI)
 
@@ -43,7 +43,7 @@ ADO.NET에서 언어 런타임 (CLR (공용)를 실행합니다. 따라서 ADO.N
 
 이 예제에서는 클래스 DatabaseClass 만들어집니다 ADO.NET을 사용 하 여 상호 작용 하도록 <xref:System.Data.DataTable> 개체입니다. 이 클래스는 네이티브 c + + `class` (비교 했을 때를 `ref class` 또는 `value class`). 이 네이티브 코드에서이 클래스를 사용 하려고 하 고 네이티브 코드에서 관리 되는 형식을 사용할 수 없습니다 때문에 필요. 이 클래스는 표시 된 대로 CLR을 대상으로 컴파일될는 `#pragma managed` 클래스 선언 앞에 지시문입니다. 이 지시문에 대 한 자세한 내용은 참조 하세요. [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)합니다.
 
-DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 대 한 자세한 내용은 `gcroot`를 참조 하세요 [방법: 네이티브 형식에 처리 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.
+DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 에 대 한 자세한 `gcroot`를 참조 하세요 [방법: 네이티브 형식으로 핸들 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.
 
 이 예제의 코드의 나머지 부분으로 표시 됩니다 네이티브 c + + 코드는 합니다 `#pragma unmanaged` 지시문 앞 `main`합니다. 이 예제에서는에서는 DatabaseClass의 새 인스턴스를 만들고 테이블을 만들고 테이블에 일부 행을 입력 하는 메서드를 호출 합니다. 네이티브 c + + 문자열 StringCol 데이터베이스 열에 대 한 값으로 전달 되는 참고 합니다. Databaseclass 내에서 이러한 문자열의 마샬링 기능을 사용 하 여 관리 되는 문자열 마샬링되는 <xref:System.Runtime.InteropServices?displayProperty=fullName> 네임 스페이스입니다. 메서드 특히, <xref:System.Runtime.InteropServices.Marshal.PtrToStringAnsi%2A> 마샬링하는 데 사용 되는 `char *` 를 <xref:System.String>, 및 메서드 <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> 마샬링하는 데 사용 됩니다는 <xref:System.String> 를 `char *`.
 
@@ -169,7 +169,7 @@ COM 문자열을 추가 하는 방법을 보여 줍니다 (`BSTR`) 데이터베�
 
 이 예제에서는 클래스 DatabaseClass 만들어집니다 ADO.NET을 사용 하 여 상호 작용 하도록 <xref:System.Data.DataTable> 개체입니다. 이 클래스는 네이티브 c + + `class` (비교 했을 때를 `ref class` 또는 `value class`). 이 네이티브 코드에서이 클래스를 사용 하려고 하 고 네이티브 코드에서 관리 되는 형식을 사용할 수 없습니다 때문에 필요. 이 클래스는 표시 된 대로 CLR을 대상으로 컴파일될는 `#pragma managed` 클래스 선언 앞에 지시문입니다. 이 지시문에 대 한 자세한 내용은 참조 하세요. [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)합니다.
 
-DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 대 한 자세한 내용은 `gcroot`를 참조 하세요 [방법: 네이티브 형식에 처리 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.
+DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 에 대 한 자세한 `gcroot`를 참조 하세요 [방법: 네이티브 형식으로 핸들 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.
 
 이 예제의 코드의 나머지 부분으로 표시 됩니다 네이티브 c + + 코드는 합니다 `#pragma unmanaged` 지시문 앞 `main`합니다. 이 예제에서는에서는 DatabaseClass의 새 인스턴스를 만들고 테이블을 만들고 테이블에 일부 행을 입력 하는 메서드를 호출 합니다. COM 문자열 StringCol 데이터베이스 열에 대 한 값으로 전달 되는 참고 합니다. Databaseclass 내에서 이러한 문자열의 마샬링 기능을 사용 하 여 관리 되는 문자열 마샬링되는 <xref:System.Runtime.InteropServices?displayProperty=fullName> 네임 스페이스입니다. 메서드 특히, <xref:System.Runtime.InteropServices.Marshal.PtrToStringBSTR%2A> 마샬링하는 데 사용 되는 `BSTR` 를 <xref:System.String>, 및 메서드 <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> 마샬링하는 데 사용 됩니다는 <xref:System.String> 를 `BSTR`.
 
@@ -303,7 +303,7 @@ StringCol: This is string 2.
 
 이 예제에서는 클래스 DatabaseClass 만들어집니다 ADO.NET을 사용 하 여 상호 작용 하도록 <xref:System.Data.DataTable> 개체입니다. 이 클래스는 네이티브 c + + `class` (비교 했을 때를 `ref class` 또는 `value class`). 이 네이티브 코드에서이 클래스를 사용 하려고 하 고 네이티브 코드에서 관리 되는 형식을 사용할 수 없습니다 때문에 필요. 이 클래스는 표시 된 대로 CLR을 대상으로 컴파일될는 `#pragma managed` 클래스 선언 앞에 지시문입니다. 이 지시문에 대 한 자세한 내용은 참조 하세요. [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)합니다.
 
-DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 대 한 자세한 내용은 `gcroot`를 참조 하세요 [방법: 네이티브 형식에 처리 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.
+DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 에 대 한 자세한 `gcroot`를 참조 하세요 [방법: 네이티브 형식으로 핸들 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.
 
 이 예제의 코드의 나머지 부분으로 표시 됩니다 네이티브 c + + 코드는 합니다 `#pragma unmanaged` 지시문 앞 `main`합니다. 이 예제에서는에서는 DatabaseClass의 새 인스턴스를 만들고 테이블을 만들고 테이블에 일부 행을 입력 하는 메서드를 호출 합니다. C + + 유니코드 문자열 StringCol 데이터베이스 열에 대 한 값으로 전달 되는 참고 합니다. Databaseclass 내에서 이러한 문자열의 마샬링 기능을 사용 하 여 관리 되는 문자열 마샬링되는 <xref:System.Runtime.InteropServices?displayProperty=fullName> 네임 스페이스입니다. 메서드 특히, <xref:System.Runtime.InteropServices.Marshal.PtrToStringUni%2A> 마샬링하는 데 사용 되는 `wchar_t *` 를 <xref:System.String>, 및 메서드 <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalUni%2A> 마샬링하는 데 사용 됩니다는 <xref:System.String> 를 `wchar_t *`.
 
@@ -429,7 +429,7 @@ StringCol: This is string 2.
 
 이 예제에서는 클래스 DatabaseClass 만들어집니다 ADO.NET을 사용 하 여 상호 작용 하도록 <xref:System.Data.DataTable> 개체입니다. 이 클래스는 네이티브 c + + `class` (비교 했을 때를 `ref class` 또는 `value class`). 이 네이티브 코드에서이 클래스를 사용 하려고 하 고 네이티브 코드에서 관리 되는 형식을 사용할 수 없습니다 때문에 필요. 이 클래스는 표시 된 대로 CLR을 대상으로 컴파일될는 `#pragma managed` 클래스 선언 앞에 지시문입니다. 이 지시문에 대 한 자세한 내용은 참조 하세요. [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)합니다.
 
-DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 대 한 자세한 내용은 `gcroot`를 참조 하세요 [방법: 네이티브 형식에 처리 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.
+DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 에 대 한 자세한 `gcroot`를 참조 하세요 [방법: 네이티브 형식으로 핸들 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.
 
 이 예제의 코드의 나머지 부분으로 표시 됩니다 네이티브 c + + 코드는 합니다 `#pragma unmanaged` 지시문 앞 `main`합니다. 이 예제에서는에서는 DatabaseClass의 새 인스턴스를 만들고 테이블을 만들고 테이블에 일부 행을 입력 하는 메서드를 호출 합니다. 해당 네이티브 참고 `VARIANT` 형식 ObjectCol 데이터베이스 열에 대 한 값으로 전달 되는 합니다. Databaseclass 내에서 이러한 `VARIANT` 형식은 관리 되는 개체의 마샬링 기능을 사용 하 여 마샬링됩니다는 <xref:System.Runtime.InteropServices?displayProperty=fullName> 네임 스페이스입니다. 메서드 특히, <xref:System.Runtime.InteropServices.Marshal.GetObjectForNativeVariant%2A> 마샬링하는 데 사용 되는 `VARIANT` 에 <xref:System.Object>, 및 메서드 <xref:System.Runtime.InteropServices.Marshal.GetNativeVariantForObject%2A> 마샬링하는 데 사용 됩니다는 <xref:System.Object> 를 `VARIANT`.
 
@@ -570,7 +570,7 @@ ObjectCol: 42
 
 이 예제에서는 클래스 DatabaseClass 만들어집니다 ADO.NET을 사용 하 여 상호 작용 하도록 <xref:System.Data.DataTable> 개체입니다. 이 클래스는 네이티브 c + + `class` (비교 했을 때를 `ref class` 또는 `value class`). 이 네이티브 코드에서이 클래스를 사용 하려고 하 고 네이티브 코드에서 관리 되는 형식을 사용할 수 없습니다 때문에 필요. 이 클래스는 표시 된 대로 CLR을 대상으로 컴파일될는 `#pragma managed` 클래스 선언 앞에 지시문입니다. 이 지시문에 대 한 자세한 내용은 참조 하세요. [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)합니다.
 
-DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 대 한 자세한 내용은 `gcroot`를 참조 하세요 [방법: 네이티브 형식에 처리 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.
+DatabaseClass 클래스의 private 멤버를 확인 합니다. `gcroot<DataTable ^> table`합니다. 네이티브 형식에는 관리 되는 형식이 포함 될 수 없습니다는 `gcroot` 키워드는 필요 합니다. 에 대 한 자세한 `gcroot`를 참조 하세요 [방법: 네이티브 형식으로 핸들 선언](../dotnet/how-to-declare-handles-in-native-types.md)합니다.
 
 이 예제의 코드의 나머지 부분으로 표시 됩니다 네이티브 c + + 코드는 합니다 `#pragma unmanaged` 지시문 앞 `main`합니다. 이 예제에서는에서는 DatabaseClass의 새 인스턴스를 만들고 테이블을 만들고 테이블에 일부 행을 입력 하는 메서드를 호출 합니다. 해당 네이티브 참고 `SAFEARRAY` 형식 ArrayIntsCol 데이터베이스 열에 대 한 값으로 전달 되는 합니다. Databaseclass 내에서 이러한 `SAFEARRAY` 형식은 관리 되는 개체의 마샬링 기능을 사용 하 여 마샬링됩니다는 <xref:System.Runtime.InteropServices?displayProperty=fullName> 네임 스페이스입니다. 메서드 특히, <xref:System.Runtime.InteropServices.Marshal.Copy%2A> 마샬링하는 데 사용 되는 `SAFEARRAY` 정수 및 메서드의 관리 되는 배열에 <xref:System.Runtime.InteropServices.Marshal.Copy%2A> 정수의 관리 되는 배열을 마샬링하는 데 사용 되는 `SAFEARRAY`합니다.
 
@@ -725,7 +725,7 @@ ADO.NET 관련 보안 문제에 대 한 자세한 내용은 [ADO.NET 응용 프�
 |-------------|-----------------|
 |[ADO.NET](/dotnet/framework/data/adonet/index)|ADO.NET의.NET 프로그래머에 게 데이터 액세스 서비스를 노출 하는 클래스 집합에 간략하게 설명 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 

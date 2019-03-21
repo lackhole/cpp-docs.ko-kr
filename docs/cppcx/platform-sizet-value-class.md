@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::SizeT Struct
 ms.assetid: 0803612c-8ba1-430c-9b7b-1bebae88608d
-ms.openlocfilehash: 02fe62165ce40d267f156eaeb3ad93f636c9ab73
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f81cb9e1fc2ef7a74cb3878c369e4d7d14e3d90
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604219"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751559"
 ---
 # <a name="platformsizet-value-class"></a>Platform::SizeT 값 클래스
 
@@ -36,11 +36,11 @@ public ref class SizeT sealed : ValueType
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **메타데이터:** platform.winmd
 
-## <a name="ctor"></a>  Sizet:: Sizet 생성자
+## <a name="ctor"></a>  SizeT::SizeT constructor
 
 지정된 값을 사용하여 SizeT의 새 인스턴스를 초기화합니다.
 
@@ -52,12 +52,12 @@ SizeT( uint32 value1 );   SizeT( void* value2 );
 
 ### <a name="parameters"></a>매개 변수
 
-*Value1*<br/>
+*value1*<br/>
 부호 없는 32비트 값입니다.
 
-*Value2*<br/>
+*value2*<br/>
 부호 없는 32비트 값에 대한 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

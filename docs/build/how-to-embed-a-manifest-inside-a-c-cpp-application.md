@@ -6,16 +6,16 @@ helpviewer_keywords:
 - embedding manifests
 - makefiles, updating to embed manifest
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
-ms.openlocfilehash: b1bff23c91b465d697cc52a2b893ece5be3764b1
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 332d6d75080be3fdde6b8238ab79b8e5b1d1121e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57412902"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809784"
 ---
 # <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>방법: C/c + + 응용 프로그램에 매니페스트 포함
 
-C/c + + 응용 프로그램 (또는 라이브러리)이 대부분의 시나리오에서 올바른 런타임 동작을 보장 하므로 최종 이진 포함 된 매니페스트는 것이 좋습니다. 기본적으로 Visual Studio 소스 파일에서 프로젝트를 빌드할 때 매니페스트를 포함 하려고 참조 [Visual Studio에서 매니페스트 생성](../build/manifest-generation-in-visual-studio.md) 자세한 내용은 합니다. 그러나를 nmake를 사용 하 여 응용 프로그램을 빌드하는 경우 일부 기존 메이크파일으로 변경이 필요 합니다. 이 섹션에서는 자동으로 최종 이진에는 매니페스트를 포함 하도록 기존 메이크파일을 변경 하는 방법에 설명 합니다.
+C/c + + 응용 프로그램 (또는 라이브러리)이 대부분의 시나리오에서 올바른 런타임 동작을 보장 하므로 최종 이진 포함 된 매니페스트는 것이 좋습니다. 기본적으로 Visual Studio 소스 파일에서 프로젝트를 빌드할 때 매니페스트를 포함 하려고 참조 [Visual Studio에서 매니페스트 생성](manifest-generation-in-visual-studio.md) 자세한 내용은 합니다. 그러나를 nmake를 사용 하 여 응용 프로그램을 빌드하는 경우 일부 기존 메이크파일으로 변경이 필요 합니다. 이 섹션에서는 자동으로 최종 이진에는 매니페스트를 포함 하도록 기존 메이크파일을 변경 하는 방법에 설명 합니다.
 
 ## <a name="two-approaches"></a>두 가지 방법
 
@@ -255,4 +255,4 @@ $(_VC_MANIFEST_BASENAME).auto.manifest :
 
 ## <a name="see-also"></a>참고자료
 
-[ 프로그램의 매니페스트 생성 이해](../build/understanding-manifest-generation-for-c-cpp-programs.md)
+[ 프로그램의 매니페스트 생성 이해](understanding-manifest-generation-for-c-cpp-programs.md)

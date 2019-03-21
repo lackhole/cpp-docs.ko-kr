@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::OutOfBoundsException
 ms.assetid: 96f8bf75-1207-4049-964b-7771822cadf3
-ms.openlocfilehash: f3bc2e45cdb205a70128f976674ef7794a02eabf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f5165c0394726e0f6606f5261ba6306d8408948
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544492"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747218"
 ---
 # <a name="platformoutofboundsexception-class"></a>Platform::OutOfBoundsException 클래스
 
@@ -35,10 +35,10 @@ public ref class OutOfBoundsException : COMException,    IException,    IPrintab
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **메타데이터:** platform.winmd
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform::COMException 클래스](../cppcx/platform-comexception-class.md)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - user-defined operators under /clr
 ms.assetid: 42f93b4a-6de4-4e34-b07b-5a62ac014f2c
-ms.openlocfilehash: 17f2f05ba6a8854a69fd2dd449a94d6b86a66d7b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 462d0d2819d4c65b0e37d39f24566a7152a44cf3
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480017"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739991"
 ---
 # <a name="user-defined-operators-ccli"></a>사용자 정의 연산자(C++/CLI)
 
@@ -19,7 +19,7 @@ ms.locfileid: "50480017"
 
 - 핸들 (`type` ^) 바깥쪽 형식의 인스턴스로.
 
-- 참조 형식 간접 (`type`^ & 또는 형식 ^ %) 바깥쪽 형식의 인스턴스에 대 한 핸들을 합니다.
+- 참조 형식 간접 (`type`^ & 또는 형식 ^ %) 포함 하는 형식 인스턴스 핸들입니다.
 
 값 형식 정적 사용자 정의 연산자의 매개 변수 중 하나 중 이어야 합니다.
 
@@ -163,6 +163,6 @@ int main() {
 30
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)
+[클래스 및 구조체(C++)](../windows/classes-and-structs-cpp-component-extensions.md)

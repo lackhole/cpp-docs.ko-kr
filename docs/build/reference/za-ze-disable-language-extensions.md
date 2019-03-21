@@ -18,12 +18,12 @@ helpviewer_keywords:
 - Disable Language Extensions compiler option
 - Ze compiler option [C++]
 ms.assetid: 65e49258-7161-4289-a176-7c5c0656b1a2
-ms.openlocfilehash: 71718aed7853e7d09b15734bad6a350f9a19fd5e
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 1db1dbdba4829ccf939cdc4f07ccfefe2474a35d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422834"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812306"
 ---
 # <a name="za-ze-disable-language-extensions"></a>/Za, /Ze(언어 확장명 사용 안 함)
 
@@ -51,7 +51,7 @@ Visual c + +를 사용 하 여 규칙과 관련 된 문제에 대 한 자세한 
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 탐색 창에서 선택 **구성 속성** > **C/c + +** > **언어**합니다.
 
@@ -64,7 +64,6 @@ Visual c + +를 사용 하 여 규칙과 관련 된 문제에 대 한 자세한 
 ## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](compiler-options.md)<br/>
-[컴파일러 옵션 설정](setting-compiler-options.md)<br/>
 [/Zc(규칙)](zc-conformance.md)<br/>
 [/permissive-(표준 준수)](permissive-standards-conformance.md)<br/>
 [/std(언어 표준 버전 지정)](std-specify-language-standard-version.md)<br/>

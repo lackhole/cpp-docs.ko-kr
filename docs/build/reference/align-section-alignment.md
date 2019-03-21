@@ -11,22 +11,22 @@ helpviewer_keywords:
 - -ALIGN linker option
 - section alignment
 - sections
-ms.openlocfilehash: b68ec42db9c927fe8f56dad8f5670059359a1843
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d8d2e6a859c68af473d49dc04b76f0a15056aa56
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665792"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57809472"
 ---
 # <a name="align-section-alignment"></a>/ALIGN(섹션 맞춤)
 
 ## <a name="syntax"></a>구문
 
-> **/ALIGN**[**:**_번호_]
+> **/ALIGN**[**:**_number_]
 
 ### <a name="arguments"></a>인수
 
-*수*<br/>
+*number*<br/>
 바이트 맞춤 값입니다.
 
 ## <a name="remarks"></a>설명
@@ -35,13 +35,13 @@ ms.locfileid: "50665792"
 
 장치 드라이버 등의 응용 프로그램을 작성 하는 경우가 아니면 맞춤을 수정 하지 않아도 됩니다.
 
-맞춤 매개 변수를 사용 하 여 특정 섹션의 맞춤을 수정 하는 것이 가능 합니다 [/section](../../build/reference/section-specify-section-attributes.md) 옵션.
+맞춤 매개 변수를 사용 하 여 특정 섹션의 맞춤을 수정 하는 것이 가능 합니다 [/section](section-specify-section-attributes.md) 옵션.
 
 지정 된 맞춤 값은 최대 섹션 맞춤 보다 작을 수 없습니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 
@@ -53,5 +53,5 @@ ms.locfileid: "50665792"
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

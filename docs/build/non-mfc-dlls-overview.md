@@ -5,12 +5,12 @@ helpviewer_keywords:
 - non-MFC DLLs [C++]
 - DLLs [C++], non-MFC
 ms.assetid: 1ed5d1ee-e20c-47d7-801d-87ea26a73842
-ms.openlocfilehash: 2363d9ab13e120ab72a30628a7c37c411e8de3a2
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 14cbdadd8c66d6fdf282f644102a6d4a783893b5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414527"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809290"
 ---
 # <a name="non-mfc-dlls-overview"></a>비 MFC Dll: 개요
 
@@ -20,22 +20,22 @@ ms.locfileid: "57414527"
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [연습: 동적 연결 라이브러리 만들기 및 사용](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)
+- [연습: 동적 연결 라이브러리 만들기 및 사용](walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)
 
-- [DLL에서 내보내기](../build/exporting-from-a-dll.md)
+- [DLL에서 내보내기](exporting-from-a-dll.md)
 
-- [DLL에 실행 파일 링크](../build/linking-an-executable-to-a-dll.md)
+- [DLL에 실행 파일 링크](linking-an-executable-to-a-dll.md)
 
-- [DLL 초기화](../build/run-time-library-behavior.md#initializing-a-dll)
+- [DLL 초기화](run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [정적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-statically-linked-to-mfc.md)
+- [정적으로 MFC에 링크 된 기본 MFC Dll](regular-dlls-statically-linked-to-mfc.md)
 
-- [동적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [동적으로 MFC에 링크 된 기본 MFC Dll](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC 확장명 DLL: 개요](../build/extension-dlls-overview.md)
+- [MFC 확장명 DLL: 개요](extension-dlls-overview.md)
 
 ## <a name="see-also"></a>참고자료
 
-[DLL의 종류](../build/kinds-of-dlls.md)
+[DLL의 종류](kinds-of-dlls.md)

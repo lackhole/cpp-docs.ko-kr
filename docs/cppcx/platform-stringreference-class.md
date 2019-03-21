@@ -9,12 +9,12 @@ f1_keywords:
 - VCCORLIB/Platform::StringReference::GetHSTRING
 - VCCORLIB/Platform::StringReference::GetString
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
-ms.openlocfilehash: 09b15a1530661ce537c9d2aab333a1a17fa52ff9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7b6ab42dc630ce7e0014534064e8f1ce6da00857
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498386"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750925"
 ---
 # <a name="platformstringreference-class"></a>Platform::StringReference 클래스
 
@@ -58,7 +58,7 @@ class StringReference
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **헤더:** vccorlib.h
 
@@ -144,7 +144,8 @@ StringReference& operator=(const ::default::char16* __strArg);
 
 ### <a name="return-value"></a>반환 값
 
-`StringReference` 형식의 개체에 대한 참조입니다.
+
+  `StringReference` 형식의 개체에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -163,7 +164,8 @@ __declspec(no_release_return) __declspec(no_refcount)
 
 ### <a name="return-value"></a>반환 값
 
-`Platform::String` 형식의 개체에 대한 핸들입니다.
+
+  `Platform::String` 형식의 개체에 대한 핸들입니다.
 
 ## <a name="ctor"></a>  StringReference::StringReference 생성자
 
@@ -193,6 +195,6 @@ StringReference(const ::default::char16* __strArg, size_t __lenArg);
 
 이 생성자의 첫 번째 버전은 기본 생성자입니다. 두 번째 버전은 `StringReference` 매개 변수로 지정된 개체에서 새 `__fstrArg` 인스턴스 클래스를 초기화합니다. 세 번째 및 네 번째 오버로드는 char16 값의 배열에서 새 `StringReference` 인스턴스를 초기화합니다. char16은 16비트 유니코드 텍스트 문자를 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform::StringReference 클래스](../cppcx/platform-stringreference-class.md)

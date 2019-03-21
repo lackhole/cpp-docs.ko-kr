@@ -2,12 +2,12 @@
 title: Ref 클래스 및 구조체(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3d736b82-0bf0-48cf-bac1-cc9d110b70d1
-ms.openlocfilehash: a817529f24f1df3a3258b4596cd4d14533356a02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e9ac14762dba580967fbecd245a81a4ff4356b64
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456227"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741837"
 ---
 # <a name="ref-classes-and-structs-ccx"></a>Ref 클래스 및 구조체(C++/CX)
 
@@ -69,7 +69,7 @@ ref 클래스에는 `public`, `protected`및 `private` 함수 멤버가 포함�
 
 ref 구조체는 기본적으로 멤버의 액세스 가능성이 `public` 이라는 점을 제외하고 ref 클래스와 동일합니다.
 
-`public` ref 클래스 또는 ref 구조체는 메타 데이터로 내보내집니다 하지만 다른 유니버설 Windows 플랫폼 앱 및 Windows 런타임 구성 요소에서 사용할 수 있으려면 public 또는 protected 생성자가 하나 이상 있어야 합니다. ABI(응용 프로그램 이진 인터페이스)를 통한 추가 파생을 방지하려면 public 생성자가 있는 public ref 클래스도 `sealed` 로 선언되어야 합니다.
+`public` ref 클래스 또는 ref 구조체는 메타 데이터로 내보내집니다 하지만 다른 유니버설 Windows 플랫폼 앱 및 Windows 런타임 구성 요소에서 사용할 수 있으려면 public 또는 protected 생성자가 하나 이상 있어야 합니다. ABI(애플리케이션 이진 인터페이스)를 통한 추가 파생을 방지하려면 public 생성자가 있는 public ref 클래스도 `sealed` 로 선언되어야 합니다.
 
 공용 멤버 선언할 수 없습니다 const로 Windows 런타임 형식 시스템을 지원 하지 않으므로 const입니다. 정적 속성을 사용하여 상수 값으로 public 데이터 멤버를 선언할 수 있습니다.
 
@@ -127,7 +127,7 @@ C + public 또는 protected 생성자가 있는 ref 클래스 + CX 선언 해야
 
 [!code-cpp[cx_classes#09](../cppcx/codesnippet/CPP/classesstructs/class1.h#09)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
 [값 클래스 및 구조체](../cppcx/value-classes-and-structs-c-cx.md)<br/>

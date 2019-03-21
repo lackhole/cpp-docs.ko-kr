@@ -13,12 +13,12 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-ms.openlocfilehash: 5a908fc49776eaca68d9a79fb679b759155853d9
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 124f54f46e71ac8fb8511d12fba43ab77d04c32e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418856"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822467"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr(공용 언어 런타임 컴파일)
 
@@ -47,11 +47,11 @@ ms.locfileid: "57418856"
 
 - **noAssembly**
 
-   **/clr:noAssembly 되지**합니다. 대신 [/LN (Create MSIL Module)](../../build/reference/ln-create-msil-module.md) 를 사용하세요.
+   **/clr:noAssembly 되지**합니다. 대신 [/LN (Create MSIL Module)](ln-create-msil-module.md) 를 사용하세요.
 
    어셈블리 매니페스트를 출력 파일에 삽입하지 않도록 지정합니다. 기본적으로 **noAssembly** 옵션은 적용되지 않습니다.
 
-   매니페스트에 어셈블리 메타데이터가 없는 관리되는 프로그램을 *모듈*이라고 합니다. **noAssembly** 옵션은 모듈을 생성하는 데만 사용할 수 있습니다. [/c](../../build/reference/c-compile-without-linking.md) 및 **/clr:noAssembly**를 사용하여 컴파일하는 경우 링커 단계에서 [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md) 옵션을 지정하여 모듈을 만듭니다.
+   매니페스트에 어셈블리 메타데이터가 없는 관리되는 프로그램을 *모듈*이라고 합니다. **noAssembly** 옵션은 모듈을 생성하는 데만 사용할 수 있습니다. [/c](c-compile-without-linking.md) 및 **/clr:noAssembly**를 사용하여 컴파일하는 경우 링커 단계에서 [/NOASSEMBLY](noassembly-create-a-msil-module.md) 옵션을 지정하여 모듈을 만듭니다.
 
    Visual C++ 2005 이전은, **/clr:noAssembly** 에 **/LD**가 필요합니다. **/clr:noAssembly** 를 지정할 때 **/LD**가 암시됩니다.
 
@@ -65,27 +65,27 @@ ms.locfileid: "57418856"
 
 ## <a name="remarks"></a>설명
 
-관리 코드는 CLR에서 검사 및 관리할 수 있는 코드입니다. 관리 코드는 관리되는 개체에 액세스할 수 있습니다. 자세한 내용은 [/clr Restrictions](../../build/reference/clr-restrictions.md)을 참조하십시오.
+관리 코드는 CLR에서 검사 및 관리할 수 있는 코드입니다. 관리 코드는 관리되는 개체에 액세스할 수 있습니다. 자세한 내용은 [/clr Restrictions](clr-restrictions.md)을 참조하십시오.
 
 관리되는 형식을 정의 및 사용하는 애플리케이션을 개발하는 방법에 대한 자세한 내용은 [Component Extensions for Runtime Platforms](../../windows/component-extensions-for-runtime-platforms.md).
 
 **/clr** 을 사용하여 컴파일된 응용 프로그램은 관리되는 데이터를 포함할 수도 있고, 포함하지 않을 수도 있습니다.
 
-관리 되는 응용 프로그램에서 디버깅을 사용 하려면 참조 [/ASSEMBLYDEBUG (DebuggableAttribute 추가)](../../build/reference/assemblydebug-add-debuggableattribute.md)합니다.
+관리 되는 응용 프로그램에서 디버깅을 사용 하려면 참조 [/ASSEMBLYDEBUG (DebuggableAttribute 추가)](assemblydebug-add-debuggableattribute.md)합니다.
 
 CLR 형식만 가비지 수집 힙에 인스턴스화됩니다. 자세한 내용은 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md)합니다. 함수를 네이티브 코드로 컴파일하려면 `unmanaged` pragma를 사용합니다. 자세한 내용은 [관리 되는, 관리 되지 않는](../../preprocessor/managed-unmanaged.md)합니다.
 
-기본적으로 **/clr** 은 적용되지 않습니다. **/clr** 이 적용되는 경우 **/MD** 도 적용됩니다. 자세한 내용은 [/MD, /MT, /LD(런타임 라이브러리 사용)](../../build/reference/md-mt-ld-use-run-time-library.md)를 참조하세요. **/MD** 는 표준 헤더(.h) 파일에서 동적으로 연결된 다중 스레드 버전의 런타임 루틴이 선택되도록 합니다. CLR 가비지 수집기는 보조 스레드에서 종료자를 실행하므로 관리되는 프로그래밍에 다중 스레딩이 필요합니다.
+기본적으로 **/clr** 은 적용되지 않습니다. **/clr** 이 적용되는 경우 **/MD** 도 적용됩니다. 자세한 내용은 [/MD, /MT, /LD(런타임 라이브러리 사용)](md-mt-ld-use-run-time-library.md)를 참조하세요. **/MD** 는 표준 헤더(.h) 파일에서 동적으로 연결된 다중 스레드 버전의 런타임 루틴이 선택되도록 합니다. CLR 가비지 수집기는 보조 스레드에서 종료자를 실행하므로 관리되는 프로그래밍에 다중 스레딩이 필요합니다.
 
-사용 하 여 컴파일하면 **/c**를 사용 하 여 결과 출력 파일의 CLR 형식을 지정할 수 있습니다 [/CLRIMAGETYPE](../../build/reference/clrimagetype-specify-type-of-clr-image.md)합니다.
+사용 하 여 컴파일하면 **/c**를 사용 하 여 결과 출력 파일의 CLR 형식을 지정할 수 있습니다 [/CLRIMAGETYPE](clrimagetype-specify-type-of-clr-image.md)합니다.
 
-**/clr** 은 **/EHa**를 암시하며, 다른 **/EH** 옵션은 **/clr**에 대해 지원되지 않습니다. 자세한 내용은 [/EH(예외 처리 모델)](../../build/reference/eh-exception-handling-model.md)를 참조하세요.
+**/clr** 은 **/EHa**를 암시하며, 다른 **/EH** 옵션은 **/clr**에 대해 지원되지 않습니다. 자세한 내용은 [/EH(예외 처리 모델)](eh-exception-handling-model.md)를 참조하세요.
 
-파일의 CLR 이미지 형식을 결정하는 방법에 대한 자세한 내용은 [/CLRHEADER](../../build/reference/clrheader.md)를 참조하세요.
+파일의 CLR 이미지 형식을 결정하는 방법에 대한 자세한 내용은 [/CLRHEADER](clrheader.md)를 참조하세요.
 
 링커의 지정된 호출에 전달되는 모든 모듈은 동일한 런타임 라이브러리 컴파일러 옵션(**/MD** or **/LD**)을 사용하여 컴파일해야 합니다.
 
-어셈블리에 리소스를 포함하려면 [/ASSEMBLYRESOURCE](../../build/reference/assemblyresource-embed-a-managed-resource.md) 링커 옵션을 사용합니다. [/DELAYSIGN](../../build/reference/delaysign-partially-sign-an-assembly.md), [/KEYCONTAINER](../../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md)및 [/KEYFILE](../../build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) 링커 옵션을 사용하여 어셈블리를 만드는 방법을 사용자 지정할 수도 있습니다.
+어셈블리에 리소스를 포함하려면 [/ASSEMBLYRESOURCE](assemblyresource-embed-a-managed-resource.md) 링커 옵션을 사용합니다. [/DELAYSIGN](delaysign-partially-sign-an-assembly.md), [/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md)및 [/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) 링커 옵션을 사용하여 어셈블리를 만드는 방법을 사용자 지정할 수도 있습니다.
 
 **/clr** 을 사용하는 경우 `_MANAGED` 기호가 1로 정의됩니다. 자세한 내용은 [Predefined Macros](../../preprocessor/predefined-macros.md)을 참조하십시오.
 
@@ -105,5 +105,5 @@ class {} x;
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

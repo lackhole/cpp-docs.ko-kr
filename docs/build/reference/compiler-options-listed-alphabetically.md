@@ -3,12 +3,12 @@ title: 컴파일러 옵션 사전순 목록
 ms.date: 08/20/2018
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 73236485026b82895426a2651b48a83fc35ce8b7
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 6175d62938534e790fb60b300ff55ad031da5801
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57415879"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811942"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
@@ -164,6 +164,5 @@ ms.locfileid: "57415879"
 
 ## <a name="see-also"></a>참고자료
 
-[C/C++ 빌드 참조](c-cpp-building-reference.md)<br/>
-[컴파일러 옵션](compiler-options.md)<br/>
-[컴파일러 옵션 설정](setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

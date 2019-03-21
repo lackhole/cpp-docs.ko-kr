@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::WriteOnlyArray Class
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
-ms.openlocfilehash: ff339bc2b144e22d7177638424dd8e617eecfb3b
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: fb582106fe2f18e939f11180048a125c683ca2f6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330621"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744400"
 ---
 # <a name="platformwriteonlyarray-class"></a>Platform::WriteOnlyArray 클래스
 
@@ -39,14 +39,14 @@ private ref class WriteOnlyArray<T, 1>
 
 |이름|설명|
 |----------|-----------------|
-|[Writeonlyarray:: Begin](#begin)|배열의 첫 번째 요소를 가리키는 반복기입니다.|
-|[Writeonlyarray:: Data](#data)|데이터 버퍼에 대한 포인터입니다.|
-|[Writeonlyarray:: End](#end)|배열의 마지막 요소를 지난 요소를 가리키는 반복기입니다.|
-|[Writeonlyarray:: Fastpass](#fastpass)|시스템에서 투명하게 수행되는 최적화인 FastPass 메커니즘을 배열이 사용할 수 있는지 여부를 나타냅니다. 이 메서드는 코드에 사용하지 마세요.|
-|[Writeonlyarray:: Length](#length)|배열의 요소 수를 반환합니다.|
-|[Writeonlyarray:: Set](#set)|지정한 요소를 지정한 값으로 설정합니다.|
+|[WriteOnlyArray::begin](#begin)|배열의 첫 번째 요소를 가리키는 반복기입니다.|
+|[WriteOnlyArray::Data](#data)|데이터 버퍼에 대한 포인터입니다.|
+|[WriteOnlyArray::end](#end)|배열의 마지막 요소를 지난 요소를 가리키는 반복기입니다.|
+|[WriteOnlyArray::FastPass](#fastpass)|시스템에서 투명하게 수행되는 최적화인 FastPass 메커니즘을 배열이 사용할 수 있는지 여부를 나타냅니다. 이 메서드는 코드에 사용하지 마세요.|
+|[WriteOnlyArray::Length](#length)|배열의 요소 수를 반환합니다.|
+|[WriteOnlyArray::set](#set)|지정한 요소를 지정한 값으로 설정합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `WriteOnlyArray`
 
@@ -54,9 +54,9 @@ private ref class WriteOnlyArray<T, 1>
 
 컴파일러 옵션: **/ZW**
 
-**메타데이터:** Platform.winmd
+**메타 데이터:** Platform.winmd
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 ## <a name="begin"></a>  WriteOnlyArray::begin 메서드
 
@@ -177,7 +177,8 @@ T& set(
 설정할 요소의 인덱스입니다.
 
 *valueArg*<br/>
-`indexArg`에서 설정할 값입니다.
+
+  `indexArg`에서 설정할 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -187,7 +188,7 @@ T& set(
 
 HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)<br/>
 [C++로 Windows Runtime 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

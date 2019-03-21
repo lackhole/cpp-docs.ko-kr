@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - shared classes, classes
 ms.assetid: ca8b4b6b-744d-430b-b31f-d5b2f17bf210
-ms.openlocfilehash: 9943a9b56b660165f8ecfd46f0a69107ecaa632c
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 5376a87aac2b82615cd48f80e0e95208b8132bf0
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177917"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750483"
 ---
 # <a name="classes-shared-by-mfc-and-atl"></a>MFC와 ATL에서 공유 하는 클래스
 
@@ -34,7 +34,6 @@ ms.locfileid: "53177917"
 |[CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)|되는 시간 기간 시간 (초)의 숫자와 내부적으로 저장 됩니다.|atltime.h|
 |[IAtlStringMgr](../../atl-mfc-shared/reference/iatlstringmgr-class.md)|인터페이스를 나타내는 `CStringT` 메모리 관리자입니다.|atlsimpstr.h|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

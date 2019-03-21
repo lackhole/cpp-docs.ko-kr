@@ -29,12 +29,12 @@ helpviewer_keywords:
 - extensions
 - compl method
 ms.assetid: e811a74a-45ba-4c00-b206-2f2321b8689a
-ms.openlocfilehash: b4025413fcf6389249fc011da020c0cd7c6f4519
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dab8ac23be8b66ca84c57514c6c04e94dddebaae
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447439"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813892"
 ---
 # <a name="microsoft-extensions-to-c-and-c"></a>C 및 c + +에 대 한 Microsoft 확장
 
@@ -278,11 +278,11 @@ void func ()
 
 - &#124;&#124;(또는)
 
-- &#124;(or_eq) =
+- &#124;= (or_eq)
 
 - ^ (비트 xor)
 
-- ^ = (xor_eq)
+- ^= (xor_eq)
 
 ## <a name="address-of-string-literal-has-type-const-char--not-const-char--"></a>리터럴 문자열의 주소에 const char [형식에서 const char (*)]
 
@@ -300,6 +300,6 @@ int main()
 
 ## <a name="see-also"></a>참고자료
 
-- [/Za, /Ze(언어 확장 사용 안 함)](../../build/reference/za-ze-disable-language-extensions.md)
-- [컴파일러 옵션](../../build/reference/compiler-options.md)
-- [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+- [/Za, /Ze(언어 확장 사용 안 함)](za-ze-disable-language-extensions.md)
+- [MSVC 컴파일러 옵션](compiler-options.md)
+- [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

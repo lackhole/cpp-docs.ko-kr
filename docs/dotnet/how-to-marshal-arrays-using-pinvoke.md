@@ -1,5 +1,5 @@
 ---
-title: '방법: PInvoke를 사용하여 배열 마샬링'
+title: '방법: PInvoke를 사용 하는 배열 마샬링'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - interop [C++], arrays
 - data marshaling [C++], arrays
 ms.assetid: a1237797-a2da-4df4-984a-6333ed3af406
-ms.openlocfilehash: bd349fb1eca63fc336a30f4f23ae337d1191bb26
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60b49135928e3dadffc2a3c7a422646d2f3a768d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628516"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752313"
 ---
-# <a name="how-to-marshal-arrays-using-pinvoke"></a>방법: PInvoke를 사용하여 배열 마샬링
+# <a name="how-to-marshal-arrays-using-pinvoke"></a>방법: PInvoke를 사용 하는 배열 마샬링
 
 이 항목에서는 C 스타일 문자열 CLR 문자열 형식을 사용 하 여 호출 하는 방법을 네이티브 함수에 설명 <xref:System.String> 지원.NET Framework 플랫폼 호출을 사용 합니다. Visual c + + 프로그래머는 P/Invoke 제공 거의 컴파일 타임 오류를 보고, 형식이 안전한 아니며 구현 되기 번거로울 수 있습니다 (가능한 경우) 대신 c + + Interop 기능을 사용 하는 것이 좋습니다. P/Invoke가 유일한 옵션인 관리 되지 않는 API는 DLL로 패키지 하 고 소스 코드를 사용할 수 없는 경우 (참조이 고, 그렇지 [c + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)).
 
@@ -79,6 +79,6 @@ int main() {
 
 기존를 통해 관리 되는 코드에 노출 되지 않습니다 없는 부분 DLL #include 지시문입니다. 사실, DLL를 실행할 때만 액세스 하므로 문제 함수를 사용 하 여 가져온 <xref:System.Runtime.InteropServices.DllImportAttribute> 컴파일 시 검색 되지 것입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++에서 명시적 PInvoke 사용(DllImport 특성)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

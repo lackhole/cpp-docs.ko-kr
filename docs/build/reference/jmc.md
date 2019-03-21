@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -JMC compiler option [C++]
 - User code, debugging
 - JMC compiler option [C++]
-ms.openlocfilehash: d1950ff4a973ddbd23ff902ba4afb0d45dacb0e5
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c107ad7107d2a65ed19719933aa127c0557916ce
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57417764"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808055"
 ---
 # <a name="jmc-just-my-code-debugging"></a>/ JMC (내 코드만 디버깅)
 
@@ -36,9 +36,9 @@ Visual Studio [Just My Code](/visualstudio/debugger/just-my-code) 설정은 시�
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **일반** 속성 페이지.
+1. 선택 된 **구성 속성** > **C/C++** > **일반** 속성 페이지.
 
 1. 수정 된 **방금 내 코드 디버깅을 지원** 속성입니다.
 
@@ -48,5 +48,5 @@ Visual Studio [Just My Code](/visualstudio/debugger/just-my-code) 설정은 시�
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>

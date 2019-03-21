@@ -3,12 +3,12 @@ title: / POGOSAFEMODE (스레드 안전 모드에서 PGO 실행)
 ms.date: 03/14/2018
 f1_keywords:
 - POGOSAFEMODE
-ms.openlocfilehash: f210884d693ef0d778943580b9c5a7b2ec2ea336
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bbb328bf67d7823305a43f1d61252747cf5ea29e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544432"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821289"
 ---
 # <a name="pogosafemode-run-pgo-in-thread-safe-mode"></a>/ POGOSAFEMODE (스레드 안전 모드에서 PGO 실행)
 
@@ -26,11 +26,11 @@ ms.locfileid: "50544432"
 
 기본적으로 PGO 프로 파일링은 빠른 모드로 작동 합니다. **/ POGOSAFEMODE** 는 안전 모드를 사용 하려는 경우에 필요 합니다.
 
-안전 모드에서 PGO 프로 파일링을 실행 하려면 하나를 사용 해야 **/GENPROFILE: 정확한** (기본 설정), 환경 변수를 사용 하거나 [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md) 링커 스위치 또는 **/POGOSAFEMODE**시스템에 따라 합니다. 수행 하는 경우 x64에서 프로 파일링 컴퓨터 링커 스위치를 사용 해야 합니다. 수행 하는 경우 x86에서 프로 파일링 컴퓨터 링커 스위치를 사용 하거나 PGO 계측 프로세스를 시작 하기 전에 환경 변수 값으로 정의할 수 있습니다.
+안전 모드에서 PGO 프로 파일링을 실행 하려면 하나를 사용 해야 **/GENPROFILE: 정확한** (기본 설정), 환경 변수를 사용 하거나 [PogoSafeMode](../environment-variables-for-profile-guided-optimizations.md) 링커 스위치 또는 **/POGOSAFEMODE**시스템에 따라 합니다. 수행 하는 경우 x64에서 프로 파일링 컴퓨터 링커 스위치를 사용 해야 합니다. 수행 하는 경우 x86에서 프로 파일링 컴퓨터 링커 스위치를 사용 하거나 PGO 계측 프로세스를 시작 하기 전에 환경 변수 값으로 정의할 수 있습니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **최적화** 속성 페이지.
 
@@ -38,7 +38,7 @@ ms.locfileid: "50544432"
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 
-1. 입력 된 **/POGOSAFEMODE** 옵션에 **추가 옵션** 상자입니다. 선택할 **확인** 변경 내용을 저장 합니다.
+1. 입력 된 **/POGOSAFEMODE** 옵션에 **추가 옵션** 상자입니다. **확인**을 선택하여 변경 내용을 저장합니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 
@@ -48,5 +48,5 @@ ms.locfileid: "50544432"
 
 [/GENPROFILE 및 /fastgenprofile은](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
 [/LTCG](ltcg-link-time-code-generation.md)<br/>
-[프로필 기반 최적화](../../build/reference/profile-guided-optimizations.md)<br/>
-[프로필 기반 최적화 환경 변수](../../build/reference/environment-variables-for-profile-guided-optimizations.md)<br/>
+[프로필 기반 최적화](../profile-guided-optimizations.md)<br/>
+[프로필 기반 최적화 환경 변수](../environment-variables-for-profile-guided-optimizations.md)<br/>

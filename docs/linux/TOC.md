@@ -4,7 +4,7 @@
 # [새 Linux 프로젝트 만들기](create-a-new-linux-project.md)
 # [원격 Linux 컴퓨터에 연결](connect-to-your-remote-linux-computer.md)
 # [Linux 프로젝트 배포, 실행 및 디버그](deploy-run-and-debug-your-linux-project.md)
-# [자습서: Visual Studio에서 C++ 플랫폼 간 프로젝트 만들기](../ide/get-started-linux-cmake.md)
+# [자습서: Visual Studio에서 C++ 플랫폼 간 프로젝트 만들기](../build/get-started-linux-cmake.md)
 # [Linux 프로젝트 속성 페이지 참조](prop-pages-linux.md)
 ## [일반 속성(Linux)](prop-pages/general-linux.md)
 ## [디버깅 속성(Linux)](prop-pages/debugging-linux.md)

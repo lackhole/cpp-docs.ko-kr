@@ -1,18 +1,18 @@
 ---
 title: '&lt;system_error&gt;'
-ms.date: 11/04/2016
+ms.date: 03/15/2019
 f1_keywords:
 - <system_error>
 - system_error
 helpviewer_keywords:
 - system_error header
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
-ms.openlocfilehash: cb4870a22fd06039751f87f26dfa40e8ddcf2500
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9bba893f63ca935e0feeb891faa4e141e1958306
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662763"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58172987"
 ---
 # <a name="ltsystemerrorgt"></a>&lt;system_error&gt;
 
@@ -30,12 +30,6 @@ ms.locfileid: "50662763"
 |-|-|
 |[generic_category](../standard-library/system-error-functions.md#generic_category)|일반 오류의 범주를 나타냅니다.|
 |[system_category](../standard-library/system-error-functions.md#system_category)|하위 수준 시스템 오버플로로 인해 발생하는 오류의 범주를 나타냅니다.|
-
-### <a name="typedefs"></a>형식 정의
-
-|형식 이름|설명|
-|-|-|
-|[generic_errno](../standard-library/system-error-typedefs.md#generic_errno)|`<errno.h>`에서 Posix에 의해 정의되는 모든 오류 코드 매크로의 심볼 이름을 제공하는 열거형을 나타내는 형식입니다.|
 
 ### <a name="functions"></a>함수
 

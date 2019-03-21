@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -fp compiler option [C++]
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
-ms.openlocfilehash: c571bf104fd7e8f6a287c3dd35c444d904b4b7e8
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 616efc0980c6ddadfee078dbe7a382372c5636ec
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894096"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818169"
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/fp (부동 소수점 동작 지정)
 
@@ -51,7 +51,7 @@ ms.locfileid: "54894096"
 
 #### <a name="fast"></a>빠른
 
-합니다 **/fp:fast** 옵션을 사용 하면 컴파일러를 다시 정렬, 결합, 아니면 속도 및 공간에 대 한 부동 소수점 코드를 최적화 하는 부동 소수점 작업을 간소화 합니다. 컴파일러는 대입문에서 반올림을 생략할 수, 대입문 또는 함수 호출 합니다. 작업 순서를 변경 또는 이러한 변형을 만들 띄는 다른 반올림 동작을 수행 하는 경우에 연관 및 분배 법칙을 사용 하 여 예를 들어, 대 수 변형을 수행할 수 있습니다. 이러한 향상 된 최적화 때문에 일부 부동 소수점 계산의 결과에서 다른 생성 된 달라질 **/fp** 옵션입니다. 특수 값 (NaN, + infinity,-infinity,-0.0) 전파할 수 없습니다 또는 IEEE-754 표준에 따라 엄격 하 게 동작 합니다. 부동 소수점 축약에서 생성 될 수 있습니다 **/fp:fast**합니다. 컴파일러에서 기본 아키텍처를 기준으로 여전히 바인딩되어 **/fp:fast**에 추가 최적화를 사용 하 여 사용할 수는 [/arch](../../build/reference/arch-minimum-cpu-architecture.md) 옵션입니다.
+합니다 **/fp:fast** 옵션을 사용 하면 컴파일러를 다시 정렬, 결합, 아니면 속도 및 공간에 대 한 부동 소수점 코드를 최적화 하는 부동 소수점 작업을 간소화 합니다. 컴파일러는 대입문에서 반올림을 생략할 수, 대입문 또는 함수 호출 합니다. 작업 순서를 변경 또는 이러한 변형을 만들 띄는 다른 반올림 동작을 수행 하는 경우에 연관 및 분배 법칙을 사용 하 여 예를 들어, 대 수 변형을 수행할 수 있습니다. 이러한 향상 된 최적화 때문에 일부 부동 소수점 계산의 결과에서 다른 생성 된 달라질 **/fp** 옵션입니다. 특수 값 (NaN, + infinity,-infinity,-0.0) 전파할 수 없습니다 또는 IEEE-754 표준에 따라 엄격 하 게 동작 합니다. 부동 소수점 축약에서 생성 될 수 있습니다 **/fp:fast**합니다. 컴파일러에서 기본 아키텍처를 기준으로 여전히 바인딩되어 **/fp:fast**에 추가 최적화를 사용 하 여 사용할 수는 [/arch](arch-minimum-cpu-architecture.md) 옵션입니다.
 
 아래 **/fp:fast**, 컴파일러는 기본 부동 소수점 환경에서 실행 되도록 코드를 생성 하 고 부동 소수점 환경을 액세스할 수 없거나 런타임에 수정 가정 합니다. 즉,는 코드는 부동 소수점 예외를 마스크 해제, 읽기 또는 부동 소수점 상태 레지스터를 작성 하거나 변경 하지 반올림 모드 가정 합니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "54894096"
 
 여러 **/fp** 동일한 컴파일러 명령줄 옵션을 지정할 수 있습니다. 중 하나만 **/fp: strict**를 **/fp:fast**, 및 **/fp: 정확한** 옵션은 한 번에 적용할 수 있습니다. 명령줄에서 다음이 옵션 중 하나 이상 지정은 뒷부분에 나오는 옵션이 우선 하 고 컴파일러 경고를 생성 합니다. **/fp: strict** 및 **/fp: 제외한** 옵션이 호환 되지 않습니다. **/clr**합니다.
 
-합니다 [/Za](../../build/reference/za-ze-disable-language-extensions.md) 옵션 (ANSI 호환성)와 호환 되지 않습니다 **/fp**합니다.
+합니다 [/Za](za-ze-disable-language-extensions.md) 옵션 (ANSI 호환성)와 호환 되지 않습니다 **/fp**합니다.
 
 ### <a name="using-pragmas-to-control-floating-point-behavior"></a>부동 소수점 동작을 제어 하는 Pragma를 사용 하 여
 
@@ -75,9 +75,9 @@ ms.locfileid: "54894096"
 
 ||float_control(precise)|float_control(except)|fenv_access|fp_contract|
 |-|-|-|-|-|
-|**/fp:fast**|해제|해제|해제|위치|
-|**/fp:precise**|위치|해제|해제|위치|
-|**/fp:strict**|위치|위치|위치|해제|
+|**/fp:fast**|해제|해제|해제|On|
+|**/fp:precise**|On|해제|해제|On|
+|**/fp:strict**|On|On|On|해제|
 
 ### <a name="the-default-floating-point-environment"></a>기본 부동 소수점 환경
 
@@ -256,7 +256,7 @@ float casting(float a, float b)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **코드 생성** 속성 페이지.
 
@@ -268,6 +268,6 @@ float casting(float a, float b)
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](compiler-options.md)<br/>
-[컴파일러 옵션 설정](setting-compiler-options.md)<br/>
-[Microsoft Visual c + + 부동 소수점 최적화](floating-point-optimization.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[MSVC 부동 소수점 최적화](floating-point-optimization.md)<br/>

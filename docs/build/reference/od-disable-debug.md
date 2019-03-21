@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -Od compiler option [C++]
 - disable (debug) compiler option [C++]
 ms.assetid: b1ac31b7-e086-4eeb-be5e-488f7513f5f5
-ms.openlocfilehash: 386113c7926085aa7e82e23768556372014a8cc8
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 83ece0865eb74a4e9e292b78733df9d24602fe1d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426253"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57806768"
 ---
 # <a name="od-disable-debug"></a>/Od(디버그 비활성화)
 
@@ -31,11 +31,11 @@ ms.locfileid: "57426253"
 
 ## <a name="remarks"></a>설명
 
-이 옵션은 기본값입니다. 때문에 **/Od** 코드 이동 하지 않습니다. 디버깅 프로세스를 간소화 합니다. 디버깅에 대 한 컴파일러 옵션에 대 한 자세한 내용은 참조 하세요. [/z7, /Zi, /ZI (디버그 정보 형식)](../../build/reference/z7-zi-zi-debug-information-format.md)합니다.
+이 옵션은 기본값입니다. 때문에 **/Od** 코드 이동 하지 않습니다. 디버깅 프로세스를 간소화 합니다. 디버깅에 대 한 컴파일러 옵션에 대 한 자세한 내용은 참조 하세요. [/z7, /Zi, /ZI (디버그 정보 형식)](z7-zi-zi-debug-information-format.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -49,7 +49,7 @@ ms.locfileid: "57426253"
 
 ## <a name="see-also"></a>참고자료
 
-[/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[/Z7, /Zi, /ZI(디버깅 정보 형식)](../../build/reference/z7-zi-zi-debug-information-format.md)
+[/O 옵션(코드 최적화)](o-options-optimize-code.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[/Z7, /Zi, /ZI(디버깅 정보 형식)](z7-zi-zi-debug-information-format.md)

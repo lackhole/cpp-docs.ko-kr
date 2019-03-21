@@ -11,12 +11,12 @@ helpviewer_keywords:
 - MFC, date and time
 - hour values representation
 ms.assetid: 695853ed-b614-4575-b793-b8c287372038
-ms.openlocfilehash: b8460d50a0c6cbd4b213e45c62d8d6cadae68544
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd63b400cad6efc3b3899c17a3bf835596b4008c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548189"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750392"
 ---
 # <a name="date-type"></a>날짜 형식
 
@@ -62,10 +62,9 @@ Automation에서 이러한 날짜 및 시간 형식으로 작업 하는 경우 �
 > [!CAUTION]
 >  6:00 AM은 항상 소수 자릿수 값 0.25 인지에 관계 없이 일을 나타내는 정수 양수 (1899 년 12 월 30 일) 후 표현 또는 1899 년 12 월 30 일) (이전 음수 이면 간단한 부동 지점 비교는 잘못 정렬 하기 때문에 note 모든 날짜 오전 6:로 1899 년 12 월 30 일 이전의 날짜를 나타내는 *나중에* 는 같은 날 오전 7 시를 나타내는 날짜 보다 합니다.
 
-날짜와 관련 된 문제에 대 한 자세한 정보 및 `COleDateTime` 형식에서 찾을 수 있습니다 [COleDateTime 클래스](../atl-mfc-shared/reference/coledatetime-class.md) 하 고 [날짜 및 시간: 자동화 지원](../atl-mfc-shared/date-and-time-automation-support.md)합니다.
+날짜와 관련 된 문제에 대 한 자세한 정보 및 `COleDateTime` 형식에서 찾을 수 있습니다 [COleDateTime 클래스](../atl-mfc-shared/reference/coledatetime-class.md) 고 [날짜 및 시간: 자동화 지원을](../atl-mfc-shared/date-and-time-automation-support.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [날짜 및 시간](../atl-mfc-shared/date-and-time.md)<br/>
 [COleDateTime 클래스](../atl-mfc-shared/reference/coledatetime-class.md)
-

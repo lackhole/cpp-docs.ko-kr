@@ -2,16 +2,16 @@
 title: /arch(x86)
 ms.date: 11/04/2016
 ms.assetid: 9dd5a75d-06e4-4674-aade-33228486078d
-ms.openlocfilehash: e2aba6dc18db621710b5293f9f970fa5f453b8a9
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a429824a7c22aa9aba460481394785d31b92a5ef
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57421809"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812254"
 ---
 # <a name="arch-x86"></a>/arch(x86)
 
-x86에서 코드 생성 아키텍처를 지정합니다. 도 참조 하세요 [(x64) /arch](../../build/reference/arch-x64.md) 하 고 [/arch (ARM)](../../build/reference/arch-arm.md)합니다.
+x86에서 코드 생성 아키텍처를 지정합니다. [(x64) /arch](arch-x64.md)과 [/arch (ARM)](arch-arm.md)도 참조합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,9 +48,9 @@ SSE 및 SSE2 명령을 사용하는 것 이외에 컴파일러는 SSE 및 SSE2�
 
 X86 컴파일러 생성 기본적으로 SSE2 명령을 사용 하는 코드를 지정 해야 합니다 **/arch:ia32** x86에 대 한 SSE 및 sse2 명령을 생성 하지 않으려면 프로세서.
 
-**/arch** 만 코드를 네이티브 함수에 대 한 생성에 영향을 줍니다. 사용 하는 경우 [/clr](../../build/reference/clr-common-language-runtime-compilation.md) 를 컴파일하려면 **/arch** 에 관리 되는 함수에 대 한 코드 생성에 영향을 주지 않습니다.
+**/arch** 만 코드를 네이티브 함수에 대 한 생성에 영향을 줍니다. 사용 하는 경우 [/clr](clr-common-language-runtime-compilation.md) 를 컴파일하려면 **/arch** 에 관리 되는 함수에 대 한 코드 생성에 영향을 주지 않습니다.
 
-**/arch** 하 고 [/QIfist](../../build/reference/qifist-suppress-ftol.md) 는 동일한 compiland에서 사용할 수 없습니다. 특히 FP 제어 단어를 수정하는 데 `_controlfp`를 사용하지 않으면 런타임 시작 코드는 x87 FPU 제어 단어 정밀도 제어 필드를 53비트로 설정합니다. 따라서 식의 모든 float 및 double 연산에서는 53비트 significand와 15비트 지수를 사용합니다. 그러나 SSE 단정밀도 연산에서는 24비트 significand와 8비트 지수를 사용하고 SSE2 배정밀도 연산에서는 53비트 significand 및 11비트 지수를 사용합니다. 자세한 내용은 [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md)를 참조하세요. 이러한 차이점은 하나의 식 트리에서도 발생할 수 있지만 각 하위 식 이후 사용자 할당이 수행되는 경우에는 가능하지 않습니다. 다음을 살펴보세요.
+**/arch** 하 고 [/QIfist](qifist-suppress-ftol.md) 는 동일한 compiland에서 사용할 수 없습니다. 특히 FP 제어 단어를 수정하는 데 `_controlfp`를 사용하지 않으면 런타임 시작 코드는 x87 FPU 제어 단어 정밀도 제어 필드를 53비트로 설정합니다. 따라서 식의 모든 float 및 double 연산에서는 53비트 significand와 15비트 지수를 사용합니다. 그러나 SSE 단정밀도 연산에서는 24비트 significand와 8비트 지수를 사용하고 SSE2 배정밀도 연산에서는 53비트 significand 및 11비트 지수를 사용합니다. 자세한 내용은 [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md)를 참조하세요. 이러한 차이점은 하나의 식 트리에서도 발생할 수 있지만 각 하위 식 이후 사용자 할당이 수행되는 경우에는 가능하지 않습니다. 다음을 살펴보세요.
 
 ```cpp
 r = f1 * f2 + d;  // Different results are possible on SSE/SSE2.
@@ -66,7 +66,7 @@ r = t + d;     // This should produce the same overall result
 
 ### <a name="to-set-this-compiler-option-for-avx-avx2-ia32-sse-or-sse2-in-visual-studio"></a>Visual Studio에서 AVX, AVX2, IA32, SSE 또는 SSE2에 대한 컴파일러 옵션을 설정하려면 
 
-1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성**를 **C/c + +** 폴더입니다.
 
@@ -80,6 +80,6 @@ r = t + d;     // This should produce the same overall result
 
 ## <a name="see-also"></a>참고자료
 
-[/arch(최소 CPU 아키텍처)](../../build/reference/arch-minimum-cpu-architecture.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[/arch(최소 CPU 아키텍처)](arch-minimum-cpu-architecture.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

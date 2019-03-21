@@ -19,12 +19,12 @@ helpviewer_keywords:
 - _except_handler3 function
 - except_handler3 function
 ms.assetid: b0c64898-0ae5-48b7-9724-80135a0813e2
-ms.openlocfilehash: 144bf25495d803a4db42ab45fcb0b101b09fe7cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0dfe007d7b444401accbf547674f96f7f7d54ac1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613865"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741308"
 ---
 # <a name="excepthandler3"></a>_except_handler3
 
@@ -59,7 +59,7 @@ int _except_handler3(
 
 예외를 해제해야 하는 경우 `DISPOSITION_DISMISS`를 반환합니다. 예외 캡슐화 처리기 수준까지 예외를 전달해야 하는 경우 `DISPOSITION_CONTINUE_SEARCH`를 반환합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 메서드가 적절한 예외 처리기를 찾으면 예외를 처리기에 전달합니다. 이 경우에 이 메서드는 자신을 호출한 코드로 반환되지 않으며 반환 값은 관계가 없습니다.
 

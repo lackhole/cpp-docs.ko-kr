@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -Wp64 compiler option [C++]
 - Wp64 compiler option [C++]
 ms.assetid: 331ae5aa-e627-4d03-8f63-dd2c2d76dadd
-ms.openlocfilehash: b158fb93cb5ea0b43124efe06edb53aebcc0d104
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 5a3cdaf85fa4dc05ece54fc630cb69fc93650e6b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57425577"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813944"
 ---
 # <a name="wp64-detect-64-bit-portability-issues"></a>/Wp64(64비트 이식성 문제 검색)
 
@@ -30,10 +30,10 @@ ms.locfileid: "57425577"
 
 ## <a name="remarks"></a>설명
 
-기본적으로 Visual Studio 2013, Visual Studio의 버전에서을 **/wp64** 32 비트 x86을 작성 하는 Visual c + + 컴파일러에서 컴파일러 옵션은 해제 되어 코드에서 Visual c + + 컴파일러에서를 작성 하는 64 비트, x64 및 코드입니다.
+기본적으로 Visual Studio 2013, Visual Studio의 버전에서을 **/wp64** 32 비트 x86 빌드는 MSVC 컴파일러에서 컴파일러 옵션은 해제 되어 코드에서 MSVC 컴파일러에서를 작성 하는 64 비트, x64 및 코드.
 
 > [!IMPORTANT]
->  [/Wp64](../../build/reference/wp64-detect-64-bit-portability-issues.md) 컴파일러 옵션 및 [__w64](../../cpp/w64.md) 키워드는 Visual Studio 2010 및 Visual Studio 2012에서 더 이상 사용되지 않으며 Visual Studio 2013부터는 지원되지 않습니다. 이 스위치를 사용하는 프로젝트를 변환하면 변환 중에 스위치가 마이그레이션되지 않습니다. Visual Studio 2010 또는 Visual Studio 2012에서 이 옵션을 사용하려면 프로젝트 속성의 **명령줄** 섹션에서 **추가 옵션** 아래에 컴파일러 스위치를 입력해야 합니다. 명령줄에서 **/Wp64** 컴파일러 옵션을 사용하면 컴파일러에서 명령줄 경고 D9002를 표시합니다. 64비트 이식성 문제를 검색하기 위해 이 옵션과 키워드를 사용하는 대신 64비트 플랫폼을 대상으로 하는 Visual C++ 컴파일러를 사용하고 [/W4](../../build/reference/compiler-option-warning-level.md) 옵션을 지정합니다. 자세한 내용은 [구성 Visual c + + 64 비트 x64 대상](../../build/configuring-programs-for-64-bit-visual-cpp.md)합니다.
+>  [/Wp64](wp64-detect-64-bit-portability-issues.md) 컴파일러 옵션 및 [__w64](../../cpp/w64.md) 키워드는 Visual Studio 2010 및 Visual Studio 2012에서 더 이상 사용되지 않으며 Visual Studio 2013부터는 지원되지 않습니다. 이 스위치를 사용하는 프로젝트를 변환하면 변환 중에 스위치가 마이그레이션되지 않습니다. Visual Studio 2010 또는 Visual Studio 2012에서 이 옵션을 사용하려면 프로젝트 속성의 **명령줄** 섹션에서 **추가 옵션** 아래에 컴파일러 스위치를 입력해야 합니다. 명령줄에서 **/Wp64** 컴파일러 옵션을 사용하면 컴파일러에서 명령줄 경고 D9002를 표시합니다. 이 옵션과 키워드를 사용 하 여 64 비트 이식성 문제를 감지, 대신 64 비트 플랫폼을 대상으로 하는 MSVC 컴파일러를 사용 하 고 지정 된 [/w4](compiler-option-warning-level.md) 옵션입니다. 자세한 내용은 [64 비트 x64 프로젝트 구성 c + + 대상](../configuring-programs-for-64-bit-visual-cpp.md)합니다.
 
 다음 유형의 변수는 64비트 운영 체제에서 사용되는 것처럼 32비트 운영 체제에서 테스트됩니다.
 
@@ -43,13 +43,13 @@ ms.locfileid: "57425577"
 
 - 포인터
 
-64 비트 x64를 작성 하는 컴파일러를 사용 하 여 응용 프로그램을 정기적으로 컴파일하는 경우 코드를 비활성화 하는 것 **/wp64** 에 32 비트 컴파일 64 비트 컴파일러가 모든 문제를 검색할 수 있으므로 합니다. 대상 Windows 64 비트 운영 체제 하는 방법에 대 한 자세한 내용은 참조 하세요. [구성 Visual c + + 64 비트 x64 대상](../../build/configuring-programs-for-64-bit-visual-cpp.md)합니다.
+64 비트 x64를 작성 하는 컴파일러를 사용 하 여 응용 프로그램을 정기적으로 컴파일하는 경우 코드를 비활성화 하는 것 **/wp64** 에 32 비트 컴파일 64 비트 컴파일러가 모든 문제를 검색할 수 있으므로 합니다. 대상 Windows 64 비트 운영 체제 하는 방법에 대 한 자세한 내용은 참조 하세요. [64 비트 x64 프로젝트 구성 c + + 대상](../configuring-programs-for-64-bit-visual-cpp.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
 1. 프로젝트 **속성 페이지** 대화 상자를 엽니다.
 
-   자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+   자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -63,6 +63,6 @@ ms.locfileid: "57425577"
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[64비트, x64 대상을 위한 Visual C++ 구성](../../build/configuring-programs-for-64-bit-visual-cpp.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[64 비트 x64에 대 한 c + + 프로젝트 구성 대상](../configuring-programs-for-64-bit-visual-cpp.md)

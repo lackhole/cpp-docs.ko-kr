@@ -10,12 +10,12 @@ helpviewer_keywords:
 - setlocale function
 - locale routines
 ms.assetid: 442f8112-9288-44d7-be3c-15d22652093a
-ms.openlocfilehash: b5096d0b0f0990a89789993a12f383d060b91b3e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 89ff4b694137c7002ecb5f6a844c75ab403e6e2f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571485"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744387"
 ---
 # <a name="locale"></a>로캘
 
@@ -29,7 +29,7 @@ ms.locfileid: "50571485"
 
 ## <a name="locale-dependent-routines"></a>로캘 종속 루틴
 
-|루틴|사용|**setlocale** 범주 설정 종속성|
+|루틴에서 반환된 값|기능|**setlocale** 범주 설정 종속성|
 |-------------|---------|---------------------------------------------|
 |[atof, _atof_l, _wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|문자를 부동 소수점 값으로 변환합니다.|**LC_NUMERIC**|
 |[atoi, _atoi_l, _wtoi, _wtoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|문자를 정수 값으로 변환합니다.|**LC_NUMERIC**|

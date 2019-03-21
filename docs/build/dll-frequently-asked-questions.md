@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DLLs [C++], frequently asked questions
 - FAQs [C++], DLLs
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
-ms.openlocfilehash: 17acde51d3fa9a7fabf14de748fd60b126b8b8f3
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 33a0c9dd1abbfb9375ce1aef53fd152a521ac97d
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418843"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57821939"
 ---
 # <a name="dll-frequently-asked-questions"></a>DLL 관련 질문과 대답
 
@@ -59,9 +59,9 @@ MFC DLL를 시작 하는 동안 새 MFC 스레드를 만드는 응용 프로그�
 
 DLL이 MFC 일반 변경에 정적으로 연결 된 기본 MFC DLL을 MFC에 동적으로 연결 되는 MFC DLL 파일 크기를 줄입니다.
 
-DLL에 내보내기 함수가 많은 경우 함수를 내보내려면.def 파일을 사용 (사용 하는 대신 **__declspec (dllexport)**).def 파일을 사용 하 여 [NONAME 특성](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) 각 함수를 내보냅니다. NONAME 특성 파일 크기를 줄일 수 있는 DLL의 내보내기 테이블에 저장할 함수 이름이 아닌 서 수 값을 사용 하면 됩니다.
+DLL에 내보내기 함수가 많은 경우 함수를 내보내려면.def 파일을 사용 (사용 하는 대신 **__declspec (dllexport)**).def 파일을 사용 하 여 [NONAME 특성](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) 각 함수를 내보냅니다. NONAME 특성 파일 크기를 줄일 수 있는 DLL의 내보내기 테이블에 저장할 함수 이름이 아닌 서 수 값을 사용 하면 됩니다.
 
-응용 프로그램이 로드 하는 경우 응용 프로그램에 암시적으로 링크 된 Dll 로드 됩니다. 로드 시 성능을 향상 하려면 다른 Dll로 나누는 시도 합니다. 즉 하나의 DLL 로드 한 후 즉시 호출 응용 프로그램에 필요한 모든 함수 및 호출 응용 프로그램을 암시적으로 해당 DLL에 링크 합니다. 다른 함수 호출 응용 프로그램 즉시 필요 하지 않은 다른 DLL에 포함 시키고 응용 프로그램이 명시적으로 링크 해당 DLL에 대 한 합니다. 자세한 내용은 [사용할 링크 방법 결정](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)합니다.
+응용 프로그램이 로드 하는 경우 응용 프로그램에 암시적으로 링크 된 Dll 로드 됩니다. 로드 시 성능을 향상 하려면 다른 Dll로 나누는 시도 합니다. 즉 하나의 DLL 로드 한 후 즉시 호출 응용 프로그램에 필요한 모든 함수 및 호출 응용 프로그램을 암시적으로 해당 DLL에 링크 합니다. 다른 함수 호출 응용 프로그램 즉시 필요 하지 않은 다른 DLL에 포함 시키고 응용 프로그램이 명시적으로 링크 해당 DLL에 대 한 합니다. 자세한 내용은 [DLL에 실행 파일 링크](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)합니다.
 
 ## <a name="memory_leak"></a> 있습니다&#39;가 기본 MFC DLL 하지만 코드에서 메모리 누수 문제가 있습니다. 메모리 누수는 어떻게 찾을 수 있습니까?
 
@@ -69,4 +69,4 @@ DLL에 내보내기 함수가 많은 경우 함수를 내보내려면.def 파일
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](../build/dlls-in-visual-cpp.md)
+[Visual C++의 DLL](dlls-in-visual-cpp.md)

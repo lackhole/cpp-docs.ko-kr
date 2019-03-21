@@ -8,12 +8,12 @@ helpviewer_keywords:
 - security [C++]
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-ms.openlocfilehash: 6816a7ffbc09d0e01659dd56282e238fdbfc4a27
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 81a15f7a34ebe6c4c101932074c63cb1c7f7fd26
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462307"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742475"
 ---
 # <a name="security-best-practices-for-c"></a>C++의 최선의 보안 구현 방법
 
@@ -48,7 +48,8 @@ ms.locfileid: "50462307"
 
 [SafeInt 라이브러리](../windows/safeint-library.md) 정수 오버플로 및 응용 프로그램 수학 연산을 수행할 때 발생할 수 있는 다른 악용 가능한 오류를 방지할 수 있습니다. `SafeInt` 라이브러리에 포함 합니다 [SafeInt 클래스](../windows/safeint-class.md)의 [SafeIntException 클래스](../windows/safeintexception-class.md), 및 여러 [SafeInt 함수](../windows/safeint-functions.md).
 
-`SafeInt` 클래스는 정수 오버플로 및 0으로 나누기 악용으로부터 보호합니다. 서로 다른 형식의 값 간의 비교를 처리하는 데 사용할 수 있습니다. 두 가지 오류 처리 정책을 제공합니다. 기본 정책은 `SafeInt` 클래스가 `SafeIntException` 클래스 예외를 발생시켜 산술 연산을 완료할 수 없는 이유를 보고하기 위한 것입니다. 두 번째 정책은 `SafeInt` 클래스가 프로그램 실행을 중지하기 위한 것입니다. 사용자 지정 정책을 정의할 수도 있습니다.
+
+  `SafeInt` 클래스는 정수 오버플로 및 0으로 나누기 악용으로부터 보호합니다. 서로 다른 형식의 값 간의 비교를 처리하는 데 사용할 수 있습니다. 두 가지 오류 처리 정책을 제공합니다. 기본 정책은 `SafeInt` 클래스가 `SafeIntException` 클래스 예외를 발생시켜 산술 연산을 완료할 수 없는 이유를 보고하기 위한 것입니다. 두 번째 정책은 `SafeInt` 클래스가 프로그램 실행을 중지하기 위한 것입니다. 사용자 지정 정책을 정의할 수도 있습니다.
 
 각 `SafeInt` 함수는 악용 가능한 오류로부터 하나의 산술 연산을 보호합니다. 동일한 형식으로 변환하지 않고 두 가지 종류의 매개 변수를 사용할 수 있습니다. 여러 개의 산술 연산을 보호하려면 `SafeInt` 클래스를 사용합니다.
 
@@ -93,8 +94,8 @@ Administrators 그룹에 속하는 Windows 사용자 계정을 사용하면 개�
 
 식별할 투기적 실행 쪽 채널 하드웨어 취약점으로 인 한 c + + 소프트웨어에서 위협을 완화 하는 방법에 대 한 정보를 참조 하세요 [잘못 된 실행 쪽 채널에 대 한 c + + 개발자 지침](developer-guidance-speculative-execution.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 <xref:System.Security> <br/>
 [보안](/dotnet/standard/security/index)<br/>
-[UAC(사용자 계정 컨트롤)가 응용 프로그램에 주는 영향](how-user-account-control-uac-affects-your-application.md)
+[UAC(사용자 계정 컨트롤)가 애플리케이션에 주는 영향](how-user-account-control-uac-affects-your-application.md)

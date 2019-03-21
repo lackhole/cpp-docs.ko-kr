@@ -10,14 +10,14 @@ helpviewer_keywords:
 - interop [C++], partially trusted applications
 - /clr compiler option [C++], partially trusted applications
 ms.assetid: 4760cd0c-4227-4f23-a7fb-d25b51bf246e
-ms.openlocfilehash: fb65c8ff3dc4c3b03fa319fd1e7a6eb95f11bef2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: afdfb8ca11753d7def9d7da6f431082b1a90c345
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445970"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743751"
 ---
-# <a name="how-to-create-a-partially-trusted-application-by-removing-dependency-on-the-crt-library-dll"></a>방법: CRT 라이브러리 DLL에 대한 종속성을 제거하여 부분적으로 신뢰할 수 있는 응용 프로그램 만들기
+# <a name="how-to-create-a-partially-trusted-application-by-removing-dependency-on-the-crt-library-dll"></a>방법: CRT 라이브러리 DLL에 대 한 종속성을 제거 하 여 부분적으로 신뢰할 수 있는 응용 프로그램 만들기
 
 이 항목에서는 Visual c + +를 사용 하 여 msvcm90.dll에 대 한 종속성을 제거 하 여 부분적으로 신뢰할 수 있는 공용 언어 런타임 응용 프로그램을 만드는 방법을 설명 합니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "50445970"
 
 1. 링커 입력된 종속성 ptrustm 라이브러리 중 하나를 추가 합니다. 릴리스 모드에서 응용 프로그램을 작성 하는 경우 ptrustm.lib를 사용 합니다. 디버그 모드에 대 한 사용 ptrustmd.lib를 연결 해야 합니다. Visual Studio 개발 환경을 사용 하 여 수행 하거나 프로그래밍 방식으로 참조 하는 방법에 대 한 내용은 [합니다. 링커 입력 파일로 파일을 lib](../build/reference/dot-lib-files-as-linker-input.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [혼합형(네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md)<br/>
 [혼합형 어셈블리 초기화](../dotnet/initialization-of-mixed-assemblies.md)<br/>

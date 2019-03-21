@@ -11,12 +11,12 @@ helpviewer_keywords:
 - dates [C++], MFC
 - formatting [C++], time
 ms.assetid: 201528e4-2ffa-48fc-af8f-203aa86d942a
-ms.openlocfilehash: e4aac4078ce6d75fb1613c158cdf790f2a596a01
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: be8462858585a5530f360dae97e155b4967239b0
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893498"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750352"
 ---
 # <a name="date-and-time-systemtime-support"></a>날짜 및 시간: SYSTEMTIME 지원
 
@@ -44,6 +44,6 @@ MFC는 MS-DOS 스타일의 시간 인수를 가져오는 `CTime` 생성자를 �
 
 - [날짜 및 시간 프로그래밍 자동화 지원](../atl-mfc-shared/date-and-time-automation-support.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [날짜 및 시간](../atl-mfc-shared/date-and-time.md)

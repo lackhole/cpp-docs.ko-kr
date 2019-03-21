@@ -1,17 +1,17 @@
 ---
-title: '방법: Unbox'
+title: '방법: unbox'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - unboxing
 ms.assetid: 75794696-9275-47bf-9a7d-5abe6585ab91
-ms.openlocfilehash: b2919ecce254a81d6a140fc7906d28646b50ab8e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae80497a24b090bc5866b3cfb22748b20adda223
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618532"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747945"
 ---
-# <a name="how-to-unbox"></a>방법: Unbox
+# <a name="how-to-unbox"></a>방법: unbox
 
 Unbox 값을 수정 하는 방법을 보여 줍니다.
 
@@ -39,6 +39,6 @@ int main() {
 14
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Boxing](../windows/boxing-cpp-component-extensions.md)

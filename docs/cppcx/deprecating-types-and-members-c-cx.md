@@ -2,12 +2,12 @@
 title: 형식 및 멤버가 사용되지 않도록 지정(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: b20b01c1-a439-4ff0-8cf3-d7280c492813
-ms.openlocfilehash: 1e29f2ff73d6fb6fd499052d9f9255f8b1a659c7
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 7f488dfa522c0b48c75150d40584b0946baae806
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51325850"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748452"
 ---
 # <a name="deprecating-types-and-members-ccx"></a>형식 및 멤버가 사용되지 않도록 지정(C++/CX)
 
@@ -54,7 +54,7 @@ public:
 |구조체 필드|
 |매개 변수가 있는 생성자|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
 [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>

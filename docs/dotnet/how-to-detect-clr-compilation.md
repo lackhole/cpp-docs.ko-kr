@@ -1,19 +1,19 @@
 ---
-title: 방법:-clr 컴파일 감지
+title: '방법: -Clr 컴파일 감지'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - compilation, detecting /clr
 - /clr compiler option [C++], detecting use of
 ms.assetid: a9310045-4810-4637-a64a-0b31a08791c1
-ms.openlocfilehash: 600c74bfda6673295269902021afcecd95b90077
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0b02be1bcd0afc9fd857e689ceafdcab5eaf05d1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590829"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746515"
 ---
-# <a name="how-to-detect-clr-compilation"></a>방법: /clr 컴파일 감지
+# <a name="how-to-detect-clr-compilation"></a>방법: /Clr 컴파일 감지
 
 사용 된 `_MANAGED` 또는 `_M_CEE` 모듈을 사용 하 여 컴파일된 경우 참조 하는 매크로 **/clr**. 자세한 내용은 [/clr(공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)을 참조하세요.
 
@@ -35,6 +35,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

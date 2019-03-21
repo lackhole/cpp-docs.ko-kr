@@ -6,12 +6,12 @@ helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: fb77230d5cc27c1fba1f7df1404150fada36d43a
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c1f59c704e96ade82295f4ae88265f549987e981
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416451"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813970"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 만들기 및 사용자 고유의 동적 링크 라이브러리 (c + +)를 사용 합니다.
 
@@ -29,11 +29,11 @@ ms.locfileid: "57416451"
 
 - 완성된 된 앱을 실행 합니다.
 
-DLL를 정적으로 연결 된 라이브러리와 같은 _내보냅니다_ 변수, 함수 및 리소스 이름과 앱 _가져옵니다_ 해당 이름을 해당 변수, 함수 및 리소스를 사용 합니다. 정적으로 연결 된 라이브러리에 Windows 앱에서 가져오기를 로드 시 또는 링크 타임에 연결 하는 대신 런타임 시 DLL에서 내보내기에 연결 됩니다. Windows에는 이러한 연결을 설정 하는 표준 c + + 컴파일 모델에 속하지 않는 추가 정보가 필요 합니다. Visual c + + 컴파일러는 c + +가 추가 정보를 제공 하는 데에 몇 가지 Microsoft 전용 확장을 구현 합니다. 이러한 확장으로 설명 합니다.
+DLL를 정적으로 연결 된 라이브러리와 같은 _내보냅니다_ 변수, 함수 및 리소스 이름과 앱 _가져옵니다_ 해당 이름을 해당 변수, 함수 및 리소스를 사용 합니다. 정적으로 연결 된 라이브러리에 Windows 앱에서 가져오기를 로드 시 또는 링크 타임에 연결 하는 대신 런타임 시 DLL에서 내보내기에 연결 됩니다. Windows에는 이러한 연결을 설정 하는 표준 c + + 컴파일 모델에 속하지 않는 추가 정보가 필요 합니다. MSVC 컴파일러는 c + +가 추가 정보를 제공 하는 데에 몇 가지 Microsoft 전용 확장을 구현 합니다. 이러한 확장으로 설명 합니다.
 
 이 연습에서는 두 Visual Studio 솔루션 DLL을 작성 하는 하나 및 클라이언트 앱을 작성 하는 것입니다. DLL은 플랫폼 호출 및 규칙 연결 일치할 다른 언어를 사용 하 여 빌드한 앱에서 호출 될 수 있으므로 C 호출 규칙을 사용 합니다. 클라이언트 앱에서는 _암시적 링크_, Windows가 로드 시 DLL에 대 한 앱을 연결 하는 위치입니다. 이 연결 앱을 정적으로 연결 된 라이브러리의 함수 처럼 DLL에서 제공한 함수를 호출할 수 있습니다.
 
-이 연습에서는 몇 가지 일반적인 상황을 다루지 않습니다. 다른 프로그래밍 언어에서 c + + Dll 사용을 표시 하지 않습니다. 리소스 전용 DLL을 만드는 방법을 표시 되지는 않습니다. 또한 런타임 시 아닌 로드 시 Dll을 로드 하려고 명시적 링크의 사용도 표시 되지 않습니다. 안심할 수, Visual c + +를 사용 하 여 이러한 모든 작업을 수행할 수 있습니다. Dll에 대 한 자세한 정보 링크를 참조 하세요 [Visual c + +에서 Dll](../build/dlls-in-visual-cpp.md)합니다. 암시적 링크 및 명시적 링크에 대 한 자세한 내용은 참조 하세요. [사용할 링크 방법 결정](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)합니다. 프로그래밍 언어 C 링크 규칙을 사용 하는 언어 사용에 대 한 c + + Dll을 만드는 방법에 대 한 자세한 내용은 [C 언어 실행 파일에서 사용 하기 위해 c + + 함수 내보내기](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)합니다. .NET 언어 사용에 대 한 Dll을 만드는 방법에 대 한 자세한 내용은 [Visual Basic 응용 프로그램에서 DLL 함수 호출](../build/calling-dll-functions-from-visual-basic-applications.md)합니다.
+이 연습에서는 몇 가지 일반적인 상황을 다루지 않습니다. 다른 프로그래밍 언어에서 c + + Dll 사용을 표시 하지 않습니다. 리소스 전용 DLL을 만드는 방법을 표시 되지는 않습니다. 또한 런타임 시 아닌 로드 시 Dll을 로드 하려고 명시적 링크의 사용도 표시 되지 않습니다. 안심할 수, Visual c + +를 사용 하 여 이러한 모든 작업을 수행할 수 있습니다. Dll에 대 한 자세한 정보 링크를 참조 하세요 [Visual c + +에서 Dll](dlls-in-visual-cpp.md)합니다. 암시적 링크 및 명시적 링크에 대 한 자세한 내용은 참조 하세요. [사용할 링크 방법 결정](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)합니다. 프로그래밍 언어 C 링크 규칙을 사용 하는 언어 사용에 대 한 c + + Dll을 만드는 방법에 대 한 자세한 내용은 [C 언어 실행 파일에서 사용 하기 위해 c + + 함수 내보내기](exporting-cpp-functions-for-use-in-c-language-executables.md)합니다. .NET 언어 사용에 대 한 Dll을 만드는 방법에 대 한 자세한 내용은 [Visual Basic 응용 프로그램에서 DLL 함수 호출](calling-dll-functions-from-visual-basic-applications.md)합니다.
 
 이 연습에서는 Visual Studio 2017을 사용 하지만 코드 및 지침의 대부분 이전 버전에 적용 됩니다. 새 프로젝트를 빌드하는 단계는 Visual Studio 2017 버전 15.3부터 변경 합니다. 이 연습에는 최신 및 이전 버전에 대 한 프로젝트를 만드는 방법을 설명 합니다. Visual Studio의 버전과 일치 하는 단계를 찾습니다.
 
@@ -400,7 +400,4 @@ DLL 및 클라이언트 응용 프로그램을 만든 했으므로 실험할 수
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](../build/dlls-in-visual-cpp.md)<br/>
-[데스크톱 응용 프로그램 배포](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>
-[연습: 프로그램 배포(C++)](../ide/walkthrough-deploying-your-program-cpp.md)<br/>
-[Visual Basic 응용 프로그램에서 DLL 함수 호출](../build/calling-dll-functions-from-visual-basic-applications.md)
+[Visual Basic 응용 프로그램에서 DLL 함수 호출](calling-dll-functions-from-visual-basic-applications.md)

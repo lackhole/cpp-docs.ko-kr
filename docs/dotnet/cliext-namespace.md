@@ -10,17 +10,17 @@ helpviewer_keywords:
 - namespaces [C++], STL/CLR
 - cliext namespace
 ms.assetid: 75a0c1f8-6e21-46d5-adaf-899845c15b38
-ms.openlocfilehash: fd85fc67a2dcd13c5b2d597dee23edc6938846ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9b74bfa66045d4c44f7715d25b28c675f79a667f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623745"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741331"
 ---
 # <a name="cliext-namespace"></a>cliext 네임스페이스
 
 `cliext` 네임 스페이스 STL/CLR 라이브러리의 모든 형식을 포함 합니다. 이러한 모든 형식 및 STL/CLR 형식에 대 한 자세한 정보에 대 한 링크 목록을 참조 하세요 [STL/CLR 라이브러리 참조](../dotnet/stl-clr-library-reference.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [STL/CLR 라이브러리 참조](../dotnet/stl-clr-library-reference.md)

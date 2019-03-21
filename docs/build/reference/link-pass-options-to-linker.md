@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -link compiler option [C++]
 - cl.exe compiler [C++], passing options to linker
 ms.assetid: 16902a94-c094-4328-841f-3ac94ca04848
-ms.openlocfilehash: f5e57a19f337653cdab6f66404b9458e1e7fed0d
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 7f40841b82db9f46019ce2a96a61a1a0f622b6d5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57412837"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813438"
 ---
 # <a name="link-pass-options-to-linker"></a>/link(옵션을 링커로 전달)
 
@@ -35,11 +35,11 @@ ms.locfileid: "57412837"
 
 ## <a name="remarks"></a>설명
 
-합니다 **/l i n** 옵션 및 링커 옵션으로 모든 파일 이름 및 CL 옵션 뒤에 나타나야 합니다. 사이 공백을 않습니다 **/l i n** 고 `linkeroptions`입니다. 자세한 내용은 [링커 옵션 설정](../../build/reference/setting-linker-options.md)합니다.
+합니다 **/l i n** 옵션 및 링커 옵션으로 모든 파일 이름 및 CL 옵션 뒤에 나타나야 합니다. 사이 공백을 않습니다 **/l i n** 고 `linkeroptions`입니다. 자세한 내용은 [MSVC 링커 참조](linking.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 클릭 합니다 **링커** 폴더입니다.
 
@@ -53,5 +53,5 @@ ms.locfileid: "57412837"
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

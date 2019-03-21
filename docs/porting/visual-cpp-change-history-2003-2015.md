@@ -4,12 +4,12 @@ ms.date: 08/30/2017
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: b1070a330e40c0bf73f3713783b3f126d0848cbc
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: dcae15ade3bd155e16149cc56981f79abb245e16
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525524"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740381"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ 변경 기록 2003 - 2015
 
@@ -384,7 +384,8 @@ Visual Studio 2017에 대한 자세한 내용은 [Visual Studio 2017의 Visual C
 
 - **launch::any 및 launch::sync 정책**
 
-   비표준 `launch::any` 및 `launch::sync` 정책이 제거되었습니다. 대신 `launch::any`의 경우 `launch:async | launch:deferred`를 사용합니다. `launch::sync`에 대해 `launch::deferred`를 사용합니다. [launch 열거형](../standard-library/future-enums.md#launch)을 참조하세요.
+   비표준 `launch::any` 및 `launch::sync` 정책이 제거되었습니다. 대신 `launch::any`의 경우 `launch:async | launch:deferred`를 사용합니다. 
+  `launch::sync`에 대해 `launch::deferred`를 사용합니다. [launch 열거형](../standard-library/future-enums.md#launch)을 참조하세요.
 
 ####  <a name="BK_MFC"></a> MFC 및 ATL
 
@@ -957,7 +958,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
     ...
     ```
 
-- **명시적 특수화의 저장소 클래스가 무시됩니다.**
+- **명시적 특수화의 스토리지 클래스가 무시됩니다.**
 
    다음 코드에서 정적 스토리지 클래스 지정자가 무시됩니다.
 
@@ -1047,7 +1048,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 - **오버로드된 함수에 대한 모호한 호출**
 
-   다음 코드는 C266을 생성합니다. ‘N::bind’: 오버로드된 함수에 대한 모호한 호출
+   다음 코드는 C266을 생성합니다. 'N::bind': 오버로드된 함수에 대한 모호한 호출
 
     ```cpp
     template<typename R, typename T, typename T1, typename A1>
@@ -1190,7 +1191,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 - **MFC 예외는 복사할 수 없으므로 값으로 catch할 수 없음**
 
-   이제 MFC 애플리케이션의 다음 코드는 오류 C2316을 발생시킵니다. ‘D’: 소멸자 및(또는) 복사 생성자가 액세스할 수 없는 상태이거나 삭제되었으므로 catch될 수 없습니다.
+   이제 MFC 애플리케이션의 다음 코드로 인해 오류 C2316이 발생합니다. 'D': 소멸자로 Catch할 수 없거나 복사 생성자에 액세스할 수 없거나 복사 생성자를 삭제할 수 없습니다.
 
     ```cpp
     struct B {
@@ -1336,7 +1337,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 - **NSDMI(비정적 데이터 멤버 초기화)에서 잘못된 복사 초기화 수정**
 
-   다음 코드는 오류 C2664를 생성합니다. ‘S1::S1(S1 &&)’: 인수 1을 ‘bool’에서 ‘const S1 &’로 변환할 수 없습니다.
+   다음 코드는 오류 C2664를 생성합니다. 'S1::S1(S1 &&)': 인수 1을 'bool'에서 'const S1 &'로 변환할 수 없습니다.
 
     ```cpp
     struct S1 {
@@ -1358,7 +1359,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 - **decltype 문의 내부에서 생성자 액세스**
 
-   다음 코드는 C2248을 생성합니다. ‘S::S’: 클래스 ‘S’에서 선언된 전용 멤버에 액세스할 수 없습니다.
+   다음 코드는 C2248을 생성합니다. 'S::S': 클래스 'S'에서 선언된 비공개 멤버에 액세스할 수 없습니다.
 
     ```cpp
     class S {
@@ -1480,7 +1481,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 - **파생된 ctor의 본문에서 보호된 기본 ctor를 호출할 수 없습니다.**
 
-   다음 코드는 오류 C2248을 생성합니다. ‘S1::S1’: 클래스 ‘S1’에서 선언된 보호된 멤버에 액세스할 수 없습니다.
+   다음 코드는 오류 C2248을 생성합니다. 'S1::S1': 클래스 'S1'에서 선언된 보호된 멤버에 액세스할 수 없습니다.
 
     ```cpp
     struct S1 {
@@ -2472,7 +2473,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
    이 변경과 관련된 컴파일러 진단은 없습니다.
 
-   예
+   예제
 
     ```cpp
     #include <type_traits>
@@ -2899,7 +2900,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
     };
     ```
 
-   Visual Studio 2013 이전에 이 코드는 다음 메시지를 출력합니다. "경고 C4370: 'S2': 압축 기능이 향상되어 이전 버전의 컴파일러에서 클래스 레이아웃이 변경되었습니다."
+   Visual Studio 2013 이전에 이 코드는 다음과 같은 메시지를 출합니다. "경고 C4370: 'S2' : 압축 기능이 향상되어 이전 버전의 컴파일러에서 클래스 레이아웃이 변경되었습니다."
 
    x86 컴파일러에는 모든 버전의 컴파일러에서 동일한 차선의 레이아웃 문제가 있습니다. 예를 들어 이 코드가 x86에 대해 컴파일되면
 
@@ -2911,7 +2912,8 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
     };
     ```
 
-   `sizeof(S)`의 결과는 24입니다. 그러나 x64에 대해 언급된 해결 방법을 사용하는 경우 16으로 줄어들 수 있습니다.
+   
+  `sizeof(S)`의 결과는 24입니다. 그러나 x64에 대해 언급된 해결 방법을 사용하는 경우 16으로 줄어들 수 있습니다.
 
     ```cpp
     struct dummy {
@@ -2929,9 +2931,11 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _ITERATOR_DEBUG_LEVEL의 불일치와 RuntimeLibrary 불일치를 감지합니다. 컴파일러 옵션 `/MT`(정적 릴리스), `/MTd`(정적 디버그), `/MD`(동적 릴리스) 및 `/MDd`(동적 디버그)가 혼합되면 이러한 현상이 발생합니다.
 
-- 코드에서 이전 릴리스의 시뮬레이트된 별칭 템플릿을 승인하는 경우 이를 변경해야 합니다. 예를 들어 `allocator_traits<A>::rebind_alloc<U>::other` 대신에 이제는 `allocator_traits<A>::rebind_alloc<U>`로 지정해야 합니다. `ratio_add<R1, R2>::type`이 더 이상 필요하지 않고 `ratio_add<R1, R2>`로 지정하는 것이 좋지만 감소된 비율에 대한 "type" typedef가 있으려면(이미 감소된 경우 같은 형식) `ratio<N, D>`가 필요하기 때문에 전자가 계속 컴파일됩니다.
+- 코드에서 이전 릴리스의 시뮬레이트된 별칭 템플릿을 승인하는 경우 이를 변경해야 합니다. 예를 들어 `allocator_traits<A>::rebind_alloc<U>::other` 대신에 이제는 `allocator_traits<A>::rebind_alloc<U>`로 지정해야 합니다. 
+  `ratio_add<R1, R2>::type`이 더 이상 필요하지 않고 `ratio_add<R1, R2>`로 지정하는 것이 좋지만 감소된 비율에 대한 "type" typedef가 있으려면(이미 감소된 경우 같은 형식) `ratio<N, D>`가 필요하기 때문에 전자가 계속 컴파일됩니다.
 
-- `#include <algorithm>` 또는 `std::min()`를 호출하는 경우 `std::max()`을 사용해야 합니다.
+- 
+  `#include <algorithm>` 또는 `std::min()`를 호출하는 경우 `std::max()`을 사용해야 합니다.
 
 - 기존 코드에서 이전 릴리스의 시뮬레이트된 범위가 지정된 열거형을 사용하는 경우(범위가 지정되지 않은 일반적인 열거형이 네임스페이스에 래핑됨) 이를 변경해야 합니다. 예를 들어 `std::future_status::future_status` 형식을 참조한 경우 이제는 `std::future_status`로 지정해야 합니다. 그러나 대부분의 코드는 영향을 받지 않습니다. 예를 들어 `std::future_status::ready`는 계속 컴파일됩니다.
 
@@ -2963,9 +2967,10 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 ### <a name="mfc-and-atl"></a>MFC 및 ATL
 
-- **Visual Studio 2013만 해당**: 유니코드가 일반화되고 MBCS의 사용이 크게 줄었기 때문에 MFC MBCS 라이브러리는 Visual Studio에 포함되지 않습니다. 여러 새로운 컨트롤과 메시지가 유니코드 전용이기 때문에 이 변경으로 인해 MFC는 Windows SDK 자체와 보다 밀접한 관계로 유지됩니다. 그러나 MFC MBCS 라이브러리를 계속 사용해야 하는 경우 MSDN 다운로드 센터의 [Visual Studio 2013용 멀티바이트 MFC 라이브러리](https://www.microsoft.com/download/details.aspx?id=40770)에서 다운로드할 수 있습니다. Visual C++ 재배포 가능 패키지에는 이 라이브러리가 계속 포함됩니다.  (참고: MBCS DLL은 Visual Studio 2015 이상의 C++ 설치 구성 요소에 포함됩니다).
+- **Visual Studio 2013 전용**: 유니코드가 일반화되고 MBCS의 사용이 크게 줄었기 때문에 MFC MBCS 라이브러리는 Visual Studio에 포함되지 않습니다. 여러 새로운 컨트롤과 메시지가 유니코드 전용이기 때문에 이 변경으로 인해 MFC는 Windows SDK 자체와 보다 밀접한 관계로 유지됩니다. 그러나 MFC MBCS 라이브러리를 계속 사용해야 하는 경우 MSDN 다운로드 센터의 [Visual Studio 2013용 멀티바이트 MFC 라이브러리](https://www.microsoft.com/download/details.aspx?id=40770)에서 다운로드할 수 있습니다. Visual C++ 재배포 가능 패키지에는 이 라이브러리가 계속 포함됩니다.  (참고: MBCS DLL은 Visual Studio 2015 이상의 C++ 설치 구성 요소에 포함됩니다).
 
-- MFC 리본에 대한 접근성이 변경되었습니다.  한 수준의 아키텍처 대신 이제 계층적 아키텍처가 있습니다. `CRibbonBar::EnableSingleLevelAccessibilityMode()`를 호출하여 기존 동작을 계속 사용할 수 있습니다.
+- MFC 리본에 대한 접근성이 변경되었습니다.  한 수준의 아키텍처 대신 이제 계층적 아키텍처가 있습니다. 
+  `CRibbonBar::EnableSingleLevelAccessibilityMode()`를 호출하여 기존 동작을 계속 사용할 수 있습니다.
 
 - `CDatabase::GetConnect` 메서드가 제거되었습니다. 보안을 강화하기 위해 이제 연결 문자열이 암호화되어 저장되며 필요할 경우에만 해독됩니다. 연결 문자열은 일반 텍스트로 반환될 수 없습니다.  `CDatabase::Dump` 메서드를 사용하여 문자열을 가져올 수 있습니다.
 
@@ -3417,7 +3422,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
    `CFrameWnd::GetMenuBarInfo` 메서드는 이제 비가상 메서드입니다. 자세한 내용은 Windows SDK의 **GetMenuBarInfo 함수**를 참조하세요.
 
-- MFC ISAPI 지원: MFC에서 ISAPI(Internet Server Application Programming Interface)를 사용한 애플리케이션 빌드를 더 이상 지원하지 않습니다. ISAPI 애플리케이션을 빌드하려는 경우 ISAPI 확장을 직접 호출합니다.
+- MFC ISAPI 지원: MFC에서는 ISAPI(Internet Server Application Programming Interface)를 사용하여 애플리케이션을 빌드하도록 더 이상 지원하지 않습니다. ISAPI 애플리케이션을 빌드하려는 경우 ISAPI 확장을 직접 호출합니다.
 
 - 사용되지 않는 ANSI API: 여러 MFC 메서드의 ANSI 버전이 사용되지 않습니다. 이후 애플리케이션에서는 해당 메서드의 유니코드 버전을 사용합니다. 자세한 내용은 **Windows Vista 공용 컨트롤의 빌드 요구 사항**을 참조하세요.
 

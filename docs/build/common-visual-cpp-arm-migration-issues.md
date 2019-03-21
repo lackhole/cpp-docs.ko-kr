@@ -2,12 +2,12 @@
 title: 일반적인 Visual C++ ARM 마이그레이션 문제
 ms.date: 11/04/2016
 ms.assetid: 0f4c434e-0679-4331-ba0a-cc15dd435a46
-ms.openlocfilehash: 6aea623bc9f096265decbe91ccdc5d5f1f6ecef1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a39e1d5e26a62cafa093067bb42f33178a1af6af
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618515"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816258"
 ---
 # <a name="common-visual-c-arm-migration-issues"></a>일반적인 Visual C++ ARM 마이그레이션 문제
 
@@ -92,7 +92,7 @@ Handle::acquire(operator->(memory_handle), operator*(p));
 
 ### <a name="volatile-keyword-default-behavior"></a>volatile 키워드 기본 동작
 
-MSVC 컴파일러 지원의 두 가지 서로 다른 해석 된 `volatile` 컴파일러 스위치를 사용 하 여 지정할 수 있는 저장소 한정자입니다. 합니다 [찾는데](../build/reference/volatile-volatile-keyword-interpretation.md) 스위치 해당 아키텍처에는 강력한 메모리 모델 때문에 x86 및 x64에 대 한 일반적인 경우 된 대로 강력한 순서를 보장 하는 휘발성 의미 체계를 확장 하는 Microsoft를 선택 합니다. 합니다 [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) 스위치 강력한 순서를 보장 하지 않습니다는 c + +에 엄격한 표준 volatile 의미를 선택 합니다.
+MSVC 컴파일러 지원의 두 가지 서로 다른 해석 된 `volatile` 컴파일러 스위치를 사용 하 여 지정할 수 있는 저장소 한정자입니다. 합니다 [찾는데](reference/volatile-volatile-keyword-interpretation.md) 스위치 해당 아키텍처에는 강력한 메모리 모델 때문에 x86 및 x64에 대 한 일반적인 경우 된 대로 강력한 순서를 보장 하는 휘발성 의미 체계를 확장 하는 Microsoft를 선택 합니다. 합니다 [/volatile:iso](reference/volatile-volatile-keyword-interpretation.md) 스위치 강력한 순서를 보장 하지 않습니다는 c + +에 엄격한 표준 volatile 의미를 선택 합니다.
 
 ARM 아키텍처에는 기본값인 **/volatile:iso** 때문에 ARM 프로세서 약하게 메모리 모델을 정렬 하 고 ARM 소프트웨어의 확장 된 의미 체계에 의존 하지 레거시 없기 때문 **찾는데**  없는 일반적으로 수행 하는 소프트웨어와의 인터페이스입니다. 그러나 때로는 불편 또는 확장된 의미 체계를 사용 하는 ARM 프로그램을 컴파일하려면도 필수입니다. 예를 들어, ISO c + + 의미 체계를 사용 하는 프로그램을 이식 하 지나치게 높은 비용이 들 수 있습니다 또는 드라이버 소프트웨어 제대로 작동 하려면 기존의 의미 체계를 준수 해야 할 수 있습니다. 이러한 경우에 사용할 수 있습니다 합니다 **찾는데** 전환; 그러나 ARM 대상에 기존 volatile 의미 체계를 다시 만듭니다 컴파일러 삽입 해야 각 읽기 또는 쓰기의 메모리 장벽을 `volatile` 적용할 변수 강력한 순서 성능이 저하 될 수는 있습니다.
 
@@ -100,4 +100,4 @@ X86 및 x64 아키텍처에서 기본값은 **찾는데** 대부분의 MSVC를 �
 
 ## <a name="see-also"></a>참고자료
 
-[ARM 프로세서에 대한 Visual C++ 구성](../build/configuring-programs-for-arm-processors-visual-cpp.md)
+[ARM 프로세서에 대한 Visual C++ 구성](configuring-programs-for-arm-processors-visual-cpp.md)

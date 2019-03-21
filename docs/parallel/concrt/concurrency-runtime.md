@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ConcRT (see Concurrency Runtime)
 - Concurrency Runtime
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
-ms.openlocfilehash: 245984d9702c997f16601bf5e2a9bd049ae5fed9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6f7b70dcbee639bdd44a195709bddde9e06dee21
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258335"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278556"
 ---
 # <a name="concurrency-runtime"></a>동시성 런타임
 
@@ -99,7 +99,6 @@ C++용 동시성 런타임은 강력하고 확장 가능하며 응답성이 높�
 |||
 |-|-|
 |[Hilo의 비동기 프로그래밍 패턴 및 팁(C++ 및 XAML을 사용하는 Windows 스토어 앱)](https://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|C + + 및 XAML을 사용 하는 Windows 런타임 앱 인 hilo에서 비동기 작업을 구현 하려면 동시성 런타임을 사용 하는 방법에 대해 알아봅니다.|
-|[Visual Studio 2010의 동시성 런타임 및 병렬 패턴 라이브러리에 대한 코드 샘플](http://go.microsoft.com/fwlink/p/?linkid=183875)|동시성 런타임을 보여 주는 샘플 애플리케이션 및 유틸리티를 제공합니다.|
 |[네이티브 코드 블로그의 병렬 프로그래밍](http://go.microsoft.com/fwlink/p/?linkid=183873)|동시성 런타임의 병렬 프로그래밍에 대한 자세한 추가 블로그 기사를 제공합니다.|
 |[C++ 및 네이티브 코드 포럼에서 병렬 컴퓨팅](http://go.microsoft.com/fwlink/p/?linkid=183874)|동시성 런타임에 대한 커뮤니티 토론에 참여할 수 있습니다.|
 |[병렬 프로그래밍](/dotnet/standard/parallel-programming/index)|.NET Framework에서 사용할 수 있는 병렬 프로그래밍 모델에 설명 합니다.|

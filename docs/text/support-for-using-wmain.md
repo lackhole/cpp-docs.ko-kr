@@ -8,12 +8,12 @@ helpviewer_keywords:
 - wWinMain function
 - wmain function
 ms.assetid: 41213c41-668c-40a4-8a1e-77d9eded720d
-ms.openlocfilehash: 4ef970174a56361fdbd2102f363b4849ad4af9f3
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: f4705e65551b57e3e52c0c8f060032a93280f67d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894187"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745138"
 ---
 # <a name="support-for-using-wmain"></a>wmain 사용 지원
 
@@ -30,7 +30,7 @@ wmain( int argc, wchar_t *argv[ ], wchar_t *envp[ ] )
 
 마찬가지로 프로그램에서 **wmain** 함수를 사용하면 프로그램이 시작될 때 와이드 문자 환경이 만들어지고 `_wenviron` 전역 변수가 해당 환경을 가리킵니다. `_putenv`이나 `getenv`의 첫 번째 호출에서 MBCS(ASCII) 환경이 만들어지고, 이는 `_environ` 전역 변수가 가리킵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [유니코드 지원](../text/support-for-unicode.md)<br/>
 [유니코드 프로그래밍 요약](../text/unicode-programming-summary.md)<br/>

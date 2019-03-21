@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /ALLOWBIND editbin option
 - -ALLOWBIND editbin option
 ms.assetid: eaadbb8c-4339-4281-9a75-3a1ce2352ff8
-ms.openlocfilehash: 8f59cc83c06bbaaccba911c44835247253cb264b
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 4cb7e5a3627d865e2f2193dee096c72cced75f5f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416893"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57819820"
 ---
 # <a name="allowbind"></a>/ALLOWBIND
 
@@ -30,8 +30,8 @@ DLL을 바인딩할 수 있는지 여부를 지정합니다.
 
 사용 하 여 **/allowbind: no** Bind.exe에서 DLL 바인딩 방지 하기 위해.
 
-자세한 내용은 참조는 [여 /ALLOWBIND](../../build/reference/allowbind-prevent-dll-binding.md) 링커 옵션입니다.
+자세한 내용은 참조는 [여 /ALLOWBIND](allowbind-prevent-dll-binding.md) 링커 옵션입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[EDITBIN 옵션](../../build/reference/editbin-options.md)
+[EDITBIN 옵션](editbin-options.md)

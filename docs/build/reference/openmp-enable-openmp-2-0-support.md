@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /openmp compiler option [C++]
 - -openmp compiler option [C++]
 ms.assetid: 9082b175-18d3-4378-86a7-c0eb95664e13
-ms.openlocfilehash: bea51c7af41df666fd441555daa0d8d8387377ac
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: f1edcc6d29a5b84106b3a5fd91d2446c34e0f7b9
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414137"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807470"
 ---
 # <a name="openmp-enable-openmp-20-support"></a>/openmp(OpenMP 2.0 지원 활성화)
 
@@ -29,7 +29,7 @@ ms.locfileid: "57414137"
 
 `#pragma omp` 지정 하는 데 사용 됩니다 [지시문](../../parallel/openmp/reference/openmp-directives.md) 하 고 [절](../../parallel/openmp/reference/openmp-clauses.md)합니다. 하는 경우 **/openmp** 지정 하지 않으면 컴파일, 컴파일러는 OpenMP 절 및 지시문을 무시 합니다. [OpenMP 함수](../../parallel/openmp/reference/openmp-functions.md) 경우에도 컴파일러에서 처리 하는 호출 **/openmp** 지정 하지 않으면.
 
-응용 프로그램을 컴파일하면 **/openmp** 하 고 **/clr** 여러 응용 프로그램 도메인을 지원 하지 않으므로 단일 응용 프로그램 도메인 프로세스에서 실행할 수 있습니다. 즉, 실행 되는 모듈 생성자 (.cctor) 감지 합니다 프로세스를 사용 하 여 컴파일된 **/openmp** 기본이 아닌 런타임에 응용 프로그램을 로드 하는 경우. 자세한 내용은 [appdomain](../../cpp/appdomain.md)를 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md), 및 [혼합 어셈블리 초기화](../../dotnet/initialization-of-mixed-assemblies.md)합니다.
+응용 프로그램을 컴파일하면 **/openmp** 하 고 **/clr** 여러 응용 프로그램 도메인을 지원 하지 않으므로 단일 응용 프로그램 도메인 프로세스에서 실행할 수 있습니다. 즉, 실행 되는 모듈 생성자 (.cctor) 감지 합니다 프로세스를 사용 하 여 컴파일된 **/openmp** 기본이 아닌 런타임에 응용 프로그램을 로드 하는 경우. 자세한 내용은 [appdomain](../../cpp/appdomain.md)를 [/clr (공용 언어 런타임 컴파일)](clr-common-language-runtime-compilation.md), 및 [혼합 어셈블리 초기화](../../dotnet/initialization-of-mixed-assemblies.md)합니다.
 
 사용 하 여 컴파일된 응용 프로그램을 로드 하려고 하면 **/openmp** 하 고 **/clr** 기본이 아닌 응용 프로그램 도메인에는 <xref:System.TypeInitializationException> 디버거 외부에서 예외가 throw 됩니다 및 디버거에서 OpenMPWithMultipleAppdomainsException 예외가 throw 됩니다.
 
@@ -45,7 +45,7 @@ Microsoft 작성 하지 않는 조언 **/openmp** 부분적으로 허용 하는 
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **구성 속성** 노드를 확장합니다.
 
@@ -113,5 +113,5 @@ int main(int argc, char* argv[]) {
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
