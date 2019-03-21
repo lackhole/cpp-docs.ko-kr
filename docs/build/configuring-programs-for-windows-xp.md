@@ -1,4 +1,4 @@
----
+﻿---
 title: Windows XP 용 프로그램 구성
 ms.date: 02/02/2018
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
