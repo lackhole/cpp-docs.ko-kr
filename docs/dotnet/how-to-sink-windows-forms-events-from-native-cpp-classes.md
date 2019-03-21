@@ -1,5 +1,5 @@
 ---
-title: '방법: 네이티브 C++ 클래스에서 Windows Forms 이벤트 싱크'
+title: '방법: 네이티브 c + + 클래스에서 Windows Forms 이벤트 싱크'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - event handling, .NET/native interop
 - event handling, Windows Forms in C++
 ms.assetid: 6e30ddee-d058-4c8d-9956-2a43d86f19d5
-ms.openlocfilehash: 1bc601a4dbd7a51695b6964ab4d0ee47531c1b2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d02bcea4efce03c8fb11650d344468236737cfbd
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555911"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738785"
 ---
-# <a name="how-to-sink-windows-forms-events-from-native-c-classes"></a>방법: 네이티브 C++ 클래스에서 Windows Forms 이벤트 싱크
+# <a name="how-to-sink-windows-forms-events-from-native-c-classes"></a>방법: 네이티브 c + + 클래스에서 Windows Forms 이벤트 싱크
 
 Windows Forms 컨트롤 또는 MFC 매크로 map 형식 사용 하 여 다른 폼에서 발생 하는 관리 되는 이벤트에서 콜백을 받으려면를 네이티브 c + + 클래스를 사용할 수 있습니다. 뷰 및 대화 상자에 이벤트를 싱크하기 컨트롤에 대 한 동일한 작업을 수행 하는 것과 비슷합니다.
 
@@ -25,7 +25,7 @@ Windows Forms 컨트롤 또는 MFC 매크로 map 형식 사용 하 여 다른 �
 
 - 사용 하 여 대리자 맵에 [BEGIN_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#begin_delegate_map)를 [END_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#end_delegate_map), 및 [EVENT_DELEGATE_ENTRY](../mfc/reference/delegate-and-interface-maps.md#event_delegate_entry)합니다.
 
-이 샘플에서 수행한 작업을 계속 [방법: Windows forms에서 DDX/DDV 데이터 바인딩 수행](../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md)합니다.
+이 샘플에서 수행한 작업을 계속 [방법: Windows Forms에서 DDX/DDV 데이터 바인딩 수행](../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md)합니다.
 
 이제 MFC 컨트롤 연결 (`m_MyControl`) 라는 관리 되는 이벤트 처리기 대리자를 사용 하 여 `OnClick` 관리 되는 항목에 대 한 <xref:System.Windows.Forms.Control.Click> 이벤트입니다.
 
@@ -57,7 +57,7 @@ Windows Forms 컨트롤 또는 MFC 매크로 map 형식 사용 하 여 다른 �
     }
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MAKE_DELEGATE](../mfc/reference/delegate-and-interface-maps.md#make_delegate)<br/>
 [BEGIN_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#begin_delegate_map)<br/>

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - reference types, C++ stack semantics for
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
-ms.openlocfilehash: b2d2d5991f7b52727b366214b8ca9ed4d8e14956
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ba17a56c5274295c44cdc5aa651380d1e6c83d3
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607862"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740929"
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>참조 형식에 대한 C++ 스택 의미 체계
 
@@ -27,7 +27,7 @@ Visual c + + 2005 이전 참조 형식의 인스턴스를 만들 수 있었습�
 
 컴파일러는 참조 형식에 대 한 기본 대입 연산자를 생성 하지 않습니다. 대입 연산자를 사용 하면 스택 의미 체계를 사용 하 여 개체를 만들고 스택 의미 체계를 사용 하 여 만든 기존 개체를 사용 하 여 초기화할 수 있습니다. 대입 연산자는 참조 형식에 대 한 다음과 같은 형식의 시그니처가: `void operator=( R% ){}`합니다.
 
-스택 의미 체계를 사용 하 여 참조 형식에 대 한 중요 한 리소스를 해제 하는 형식의 소멸자를 명시적으로 소멸자를 호출 필요가 없습니다 (호출 또는 `delete`). 참조 형식에서 소멸자에 대 한 자세한 내용은 참조 하세요. [방법의 소멸자 및 종료자: 클래스 및 구조체 정의 및 사용 (C + + /cli CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)합니다.
+스택 의미 체계를 사용 하 여 참조 형식에 대 한 중요 한 리소스를 해제 하는 형식의 소멸자를 명시적으로 소멸자를 호출 필요가 없습니다 (호출 또는 `delete`). 참조 형식에서 소멸자에 대 한 자세한 내용은 참조 하세요. [소멸자 및 종료자 방법에서: 클래스 및 구조체 정의 및 사용 (C + + /cli CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)합니다.
 
 컴파일러에서 생성 된 할당 연산자는 다음 내용을 추가 하 여 일반적인 표준 c + + 규칙을 따릅니다.
 
@@ -111,6 +111,6 @@ int main() {
 13
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)
+[클래스 및 구조체(C++)](../windows/classes-and-structs-cpp-component-extensions.md)

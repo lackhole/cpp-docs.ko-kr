@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::NotImplementedException
 ms.assetid: 6da26cc2-dde8-4aea-aa85-67aac55cf97b
-ms.openlocfilehash: 26e8900a10b25507f5091d9cc1f724c73ece7dfd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5262aaf85c73e2ff09259fe350e8b5600c68be95
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467589"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749362"
 ---
 # <a name="platformnotimplementedexception-class"></a>Platform::NotImplementedException 클래스
 
@@ -35,10 +35,10 @@ public ref class NotImplementedException : COMException,    IException,    IPrin
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **메타데이터:** platform.winmd
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform::COMException 클래스](../cppcx/platform-comexception-class.md)

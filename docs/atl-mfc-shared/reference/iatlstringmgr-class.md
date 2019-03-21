@@ -14,12 +14,12 @@ helpviewer_keywords:
 - memory, managing
 - IAtlStringMgr class
 ms.assetid: 722f0346-a770-4aa7-8f94-177be8dba823
-ms.openlocfilehash: de0bd720d1806c7950fa9aecc2db6e72aeb1fb4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 978d33c719b9cb8c2708dc97fa78874534dfd748
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493939"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749960"
 ---
 # <a name="iatlstringmgr-class"></a>IAtlStringMgr 클래스
 
@@ -37,11 +37,11 @@ __interface IAtlStringMgr
 
 |||
 |-|-|
-|[할당](#allocate)|새 문자열 데이터 구조를 할당 하려면이 메서드를 호출 합니다.|
+|[Allocate](#allocate)|새 문자열 데이터 구조를 할당 하려면이 메서드를 호출 합니다.|
 |[Clone](#clone)|새 문자열 관리자의 다른 인스턴스 사용에 대 한 포인터를 반환 하려면이 메서드를 호출 `CSimpleStringT`합니다.|
 |[무료](#free)|이 메서드는 문자열 데이터 구조를 호출 합니다.|
 |[GetNilString](#getnilstring)|에 대 한 포인터를 반환 합니다 `CStringData` 빈 문자열 개체에서 사용 되는 개체입니다.|
-|[다시 할당](#reallocate)|문자열 데이터 구조를 다시 할당 하려면이 메서드를 호출 합니다.|
+|[Reallocate](#reallocate)|문자열 데이터 구조를 다시 할당 하려면이 메서드를 호출 합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -181,7 +181,7 @@ CStringData* Reallocate(
 > [!NOTE]
 > 사용 예제를 보려면 [메모리 관리 및 CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)

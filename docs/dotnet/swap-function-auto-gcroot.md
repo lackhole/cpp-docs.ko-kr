@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - swap function
 ms.assetid: 2fe8146b-a7f7-445a-9ae9-53b5556be701
-ms.openlocfilehash: 084749bc92491593995904b6707ca94f6545981f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ed4e3f946f314819e6c562d489050182a975b7b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484281"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748504"
 ---
 # <a name="swap-function-autogcroot"></a>swap 함수(auto_gcroot)
 
@@ -31,10 +31,10 @@ void swap(
 
 #### <a name="parameters"></a>매개 변수
 
-*_ 왼쪽*<br/>
+*_left*<br/>
 `auto_gcroot`입니다.
 
-*(_r)*<br/>
+*_right*<br/>
 다른 `auto_gcroot`합니다.
 
 ## <a name="example"></a>예제
@@ -70,7 +70,7 @@ s1 = 'string two', s2 = 'string one'
 
 **Namespace** msclr
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [auto_gcroot](../dotnet/auto-gcroot.md)<br/>
 [auto_gcroot::swap](../dotnet/auto-gcroot-swap.md)

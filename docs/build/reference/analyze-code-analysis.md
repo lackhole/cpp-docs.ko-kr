@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -analyze compiler option [C++]
 - analyze compiler option [C++]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
-ms.openlocfilehash: 057fabe9612f84af07649d7a4f7bbf6d83e01f6c
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 63cfd2bd206a361301c75110a684e1d2c642a1f2
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426214"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57819508"
 ---
 # <a name="analyze-code-analysis"></a>/analyze(코드 분석)
 
@@ -32,7 +32,7 @@ ms.locfileid: "57426214"
 
 /analyze 결과적으로 기본 모드에서 분석 합니다. 분석 출력으로 이동 합니다 **출력** 다른 오류 메시지와 마찬가지로 창입니다. 사용 하 여 **/analyze-** 에 분석을 명시적으로 해제 합니다.
 
-/analyze: WX 지정 **/analyze: WX-** 사용 하 여 컴파일하는 경우 즉 코드 분석 경고는 오류로 처리 하지 **/WX**합니다. 자세한 내용은 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX(경고 수준)](../../build/reference/compiler-option-warning-level.md)를 참조하세요.
+/analyze: WX 지정 **/analyze: WX-** 사용 하 여 컴파일하는 경우 즉 코드 분석 경고는 오류로 처리 하지 **/WX**합니다. 자세한 내용은 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX(경고 수준)](compiler-option-warning-level.md)를 참조하세요.
 
 /analyze: log `filename` 자세한 분석기 결과 지정 된 파일에 XML로 작성 된 `filename`합니다.
 
@@ -75,11 +75,11 @@ set Esp.Extensions=CppCoreCheck.dll
 
 ## <a name="remarks"></a>설명
 
-자세한 내용은 [C/c + + 개요에 대 한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) 하 고 [C/c + + 경고에 대 한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-warnings)합니다.
+자세한 내용은 [C/C++ 개요에 대 한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) 하 고 [C/C++ 경고에 대 한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-warnings)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **구성 속성** 노드를 확장합니다.
 
@@ -95,5 +95,5 @@ set Esp.Extensions=CppCoreCheck.dll
 
 ## <a name="see-also"></a>참고자료
 
-- [컴파일러 옵션](../../build/reference/compiler-options.md)
-- [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+- [MSVC 컴파일러 옵션](compiler-options.md)
+- [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

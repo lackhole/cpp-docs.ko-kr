@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - CStringT class, using
 ms.assetid: 3a9fffb1-6f90-482a-ab69-4003e6084cb5
-ms.openlocfilehash: 60c741ec71e8637650a75d03322e98dc7c361c90
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49b21d8a267eb2e8cf8c806ef21b4dd8ab36a1ff
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554289"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740856"
 ---
 # <a name="using-cstringt"></a>CStringT 사용
 
@@ -28,7 +28,6 @@ ms.locfileid: "50554289"
 [CStringT 클래스](../atl-mfc-shared/reference/cstringt-class.md)합니다.<br/>
 공유에 대한 참조 정보를 제공하는 `CStringT` 클래스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
-

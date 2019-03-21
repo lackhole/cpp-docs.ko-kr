@@ -11,12 +11,12 @@ helpviewer_keywords:
 - executable files [C++], linking to DLLs
 - loading DLLs [C++]
 ms.assetid: 7592e276-dd6e-4a74-90c8-e1ee35598ea3
-ms.openlocfilehash: 998ec23d2d0f16069783529aebafc8b91bb15834
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: fc7a676059af17e7a42189c7c15ca157a081e08a
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418812"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57818364"
 ---
 # <a name="link-an-executable-to-a-dll"></a>DLL에 실행 파일 링크
 
@@ -30,7 +30,7 @@ ms.locfileid: "57418812"
 
 <a name="determining-which-linking-method-to-use"></a>
 
-## <a name="determine-which-linking-method-to-use"></a>사용할 링크 방법 결정
+## <a name="link-an-executable-to-a-dll"></a>DLL에 실행 파일 링크
 
 암시적 링크 또는 명시적 링크를 사용할 것인지는 응용 프로그램에 대 한 확인 해야 하는 아키텍처 의사 결정입니다. 각 메서드에 장단점이 있습니다.
 
@@ -70,13 +70,13 @@ ms.locfileid: "57418812"
 
 <a name="linking-implicitly"></a>
 
-## <a name="how-to-link-implicitly-to-a-dll"></a>DLL에 암시적으로 연결 하는 방법
+## <a name="link-an-executable-to-a-dll"></a>DLL에 실행 파일 링크
 
 암시적 연결 하 여 DLL을 사용 하려면 클라이언트 실행 파일은 DLL의 공급자에서 이러한 파일을 구해야 합니다.
 
 - 하나 이상의 헤더 파일 (.h) 내보낸된 데이터, 함수 및/또는 c + + DLL의 클래스 선언이 들어 있는입니다. 클래스, 함수 및 DLL에서 내보낸 데이터 모두 표시 되어야 합니다 `__declspec(dllimport)` 헤더 파일에 있습니다. 자세한 내용은 [dllexport, dllimport](../cpp/dllexport-dllimport.md)합니다.
 
-- 실행 파일에 연결 하는 가져오기 라이브러리입니다. 링커는 DLL을 빌드할 때 가져오기 라이브러리를 만듭니다. 자세한 내용은 참조 하세요. [합니다. LIB 파일](../build/reference/dot-lib-files-as-linker-input.md)합니다.
+- 실행 파일에 연결 하는 가져오기 라이브러리입니다. 링커는 DLL을 빌드할 때 가져오기 라이브러리를 만듭니다. 자세한 내용은 참조 하세요. [합니다. LIB 파일](reference/dot-lib-files-as-linker-input.md)합니다.
 
 - 실제 DLL 파일입니다.
 
@@ -139,10 +139,10 @@ HRESULT LoadAndCallSomeFunction(DWORD dwParam1, UINT * puParam2)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [가져오기 라이브러리 및 내보내기 파일을 사용한 작업](../build/reference/working-with-import-libraries-and-export-files.md)
+- [가져오기 라이브러리 및 내보내기 파일을 사용한 작업](reference/working-with-import-libraries-and-export-files.md)
 
 - [동적 연결 라이브러리 순서](/windows/desktop/Dlls/dynamic-link-library-search-order)
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](../build/dlls-in-visual-cpp.md)
+[Visual C++의 DLL](dlls-in-visual-cpp.md)

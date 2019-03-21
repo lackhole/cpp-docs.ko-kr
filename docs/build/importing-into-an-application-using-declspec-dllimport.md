@@ -1,5 +1,5 @@
 ---
-title: __declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기
+title: __Declspec (dllimport)을 사용 하 여 응용 프로그램으로 가져오기
 ms.date: 11/04/2016
 f1_keywords:
 - __declspec
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 - importing DLLs [C++], __declspec(dllimport)
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42
-ms.openlocfilehash: ef01c2905dea215a1a52333ae5611ec58c5f5af4
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 30e0f6517f2d749962c5cf49dddb1662c9ccf129
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57419220"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810226"
 ---
-# <a name="importing-into-an-application-using-declspecdllimport"></a>__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기
+# <a name="import-into-an-application-using-declspecdllimport"></a>__Declspec (dllimport)을 사용 하 여 응용 프로그램으로 가져오기
 
 DLL에서 정의 된 공용 기호를 사용 하는 프로그램을 가져오는 라고 합니다. Dll을 사용 하 여 빌드를 사용 하는 응용 프로그램 사용에 대 한 헤더 파일을 만들 때 **__declspec (dllimport)** 의 공용 기호를 선언 합니다. 키워드 **__declspec (dllimport)** 또는.def 파일을 사용 하 여 내보내면 든 관계 없이 작동 합니다 **__declspec (dllexport)** 키워드입니다.
 
@@ -45,14 +45,14 @@ class CLASS_DECLSPEC CExampleA : public CObject
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [DLL 초기화](../build/run-time-library-behavior.md#initializing-a-dll)
+- [DLL 초기화](run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [인라인 함수 가져오기 및 내보내기](../build/importing-and-exporting-inline-functions.md)
+- [인라인 함수 가져오기 및 내보내기](importing-and-exporting-inline-functions.md)
 
-- [상호 가져오기](../build/mutual-imports.md)
+- [상호 가져오기](mutual-imports.md)
 
 ## <a name="see-also"></a>참고자료
 
-[애플리케이션으로 가져오기](../build/importing-into-an-application.md)
+[애플리케이션으로 가져오기](importing-into-an-application.md)

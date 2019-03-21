@@ -8,16 +8,16 @@ helpviewer_keywords:
 - -SECTION linker option
 - section attributes
 - /SECTION linker option
-ms.openlocfilehash: d86dca297940da4978fe42270f444acc5f11fd82
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8fb73043c9c185adee0859bb81098eab022430c2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543700"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816557"
 ---
 # <a name="section-specify-section-attributes"></a>/SECTION(섹션 특성 지정)
 
-> **/ 섹션 내용**_이름_, [[**!**] {**DEKPRSW**}] [**, ALIGN =**_번호_]
+> **/SECTION:**_name_,[[**!**]{**DEKPRSW**}][**,ALIGN=**_number_]
 
 ## <a name="remarks"></a>설명
 
@@ -66,20 +66,20 @@ A *섹션* 이식 가능한 실행 파일 (PE) 파일의 명명된 된 연속 �
 |E|실행|섹션을 실행할 수 있습니다.|
 |R|읽기|데이터에서 읽을 수 있습니다.|
 |W|Write|데이터를 쓸 수 있습니다.|
-|S|공유|이미지를 로드 하는 모든 프로세스에서 섹션을 공유 합니다.|
+|S|Shared|이미지를 로드 하는 모든 프로세스에서 섹션을 공유 합니다.|
 |D|무시할 수|삭제 가능한으로 섹션을 표시합니다.|
 |K|캐시할 수|섹션을 캐시할 수 없는 것으로 표시|
 |P|페이지로 나눌 수 있는|섹션을 페이징할 수 없는 것으로 표시|
 
-K 및 P 섹션 플래그에 해당 하는 부정적인 의미에서 사용 되는 일반적인 하지 않습니다. 지정 하면 둘 중.text 섹션에서 사용 하는 **/SECTION:.text, K** 옵션을 실행 하는 경우 섹션 플래그에서의 차이가 없습니다 [DUMPBIN](../../build/reference/dumpbin-options.md) 사용 하 여는 [/HEADERS](../../build/reference/headers.md)옵션도 있습니다. 섹션을 암시적으로 이미 캐시 되었습니다. 기본값을 제거 하려면 지정 **/SECTION:.text 합니다! K** 대신 합니다. DUMPBIN 섹션 특성을 "캐시 되지 않습니다."를 포함 하 여 표시
+K 및 P 섹션 플래그에 해당 하는 부정적인 의미에서 사용 되는 일반적인 하지 않습니다. 지정 하면 둘 중.text 섹션에서 사용 하는 **/SECTION:.text, K** 옵션을 실행 하는 경우 섹션 플래그에서의 차이가 없습니다 [DUMPBIN](dumpbin-options.md) 사용 하 여는 [/HEADERS](headers.md)옵션도 있습니다. 섹션을 암시적으로 이미 캐시 되었습니다. 기본값을 제거 하려면 지정 **/SECTION:.text 합니다! K** 대신 합니다. DUMPBIN 섹션 특성을 "캐시 되지 않습니다."를 포함 하 여 표시
 
 E, R, W 설정 되지 않은 PE 파일의 섹션 아마도 올바르지 않습니다.
 
-합니다 **ALIGN =**_번호_ 인수를 사용 하면 특정 섹션에 대 한 맞춤 값을 지정할 수 있습니다. 합니다 _번호_ 인수 (바이트)에서 이며 2의 거듭제곱 이어야 합니다. 참조 [/align](../../build/reference/align-section-alignment.md) 자세한 내용은 합니다.
+합니다 **ALIGN =**_번호_ 인수를 사용 하면 특정 섹션에 대 한 맞춤 값을 지정할 수 있습니다. 합니다 _번호_ 인수 (바이트)에서 이며 2의 거듭제곱 이어야 합니다. 참조 [/align](align-section-alignment.md) 자세한 내용은 합니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 
@@ -91,5 +91,5 @@ E, R, W 설정 되지 않은 PE 파일의 섹션 아마도 올바르지 않습�
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

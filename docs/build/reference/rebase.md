@@ -11,12 +11,12 @@ helpviewer_keywords:
 - executable files [C++], base address
 - /REBASE editbin option [C++]
 ms.assetid: 3f89d874-af5c-485b-974b-fd205f6e1a4b
-ms.openlocfilehash: f0b581dfc116e25228a9aa9133c4de027e194799
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 42cbcb911fcd0aa7753d84aae5523d28371b9972
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422041"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815404"
 ---
 # <a name="rebase"></a>/다시 지정
 
@@ -26,7 +26,7 @@ ms.locfileid: "57422041"
 
 ## <a name="remarks"></a>설명
 
-이 옵션에 지정된 된 파일에 대 한 기본 주소를 설정합니다. EDITBIN은 64KB까지 반올림 하는 각 파일의 크기에 따라 연속적인 주소 공간에서 새 기본 주소를 할당 합니다. 기본 주소에 대 한 자세한 내용은 참조는 [기본 주소](../../build/reference/base-base-address.md) (/ 기본) 링커 옵션입니다.
+이 옵션에 지정된 된 파일에 대 한 기본 주소를 설정합니다. EDITBIN은 64KB까지 반올림 하는 각 파일의 크기에 따라 연속적인 주소 공간에서 새 기본 주소를 할당 합니다. 기본 주소에 대 한 자세한 내용은 참조는 [기본 주소](base-base-address.md) (/ 기본) 링커 옵션입니다.
 
 프로그램 실행 파일과 Dll을 지정 합니다 *파일* 기반 하는 순서로 EDITBIN 명령줄의 인수입니다. 하나 이상의 선택적으로 지정할 수 있습니다 *한정자*각각 쉼표로 구분 (**,**):
 
@@ -38,4 +38,4 @@ ms.locfileid: "57422041"
 
 ## <a name="see-also"></a>참고자료
 
-[EDITBIN 옵션](../../build/reference/editbin-options.md)
+[EDITBIN 옵션](editbin-options.md)

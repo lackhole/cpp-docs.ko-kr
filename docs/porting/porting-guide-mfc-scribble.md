@@ -2,12 +2,12 @@
 title: '포팅 가이드: MFC Scribble'
 ms.date: 11/19/2018
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-ms.openlocfilehash: 353dc8fb42b73ec7e0ee748ef9fefd030c073703
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 436dd27d8c2669e21ddc8a9e453f369cdd14f70c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175654"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741302"
 ---
 # <a name="porting-guide-mfc-scribble"></a>포팅 가이드: MFC Scribble
 
@@ -17,7 +17,7 @@ ms.locfileid: "52175654"
 
 ## <a name="mfc-scribble"></a>MFC Scribble
 
-MFC Scribble은 다양한 버전의 Visual C++에 포함된 잘 알려진 샘플입니다. MFC의 기본 기능 중 일부를 보여 주는 간단한 그리기 응용 프로그램입니다. 관리 코드 및 네이티브 코드 버전을 포함하여 다양한 버전으로 제공됩니다. 이 예제에서는 Visual Studio 2005에서 네이티브 코드로 작성된 이전 버전의 Scribble을 찾아 Visual Studio 2017에서 열었습니다.
+MFC Scribble은 다양한 버전의 Visual C++에 포함된 잘 알려진 샘플입니다. MFC의 기본 기능 중 일부를 보여 주는 간단한 그리기 애플리케이션입니다. 관리 코드 및 네이티브 코드 버전을 포함하여 다양한 버전으로 제공됩니다. 이 예제에서는 Visual Studio 2005에서 네이티브 코드로 작성된 이전 버전의 Scribble을 찾아 Visual Studio 2017에서 열었습니다.
 
 업그레이드하기 전에 Windows 데스크톱 작업이 설치되어 있는지 확인합니다. Visual Studio 설치 관리자(vs_installer.exe)를 엽니다. 설치 관리자를 여는 한 가지 방법은 **파일** > **새 프로젝트**를 선택하고 **Visual Studio 설치 관리자 열기**가 보일 때까지 설치된 템플릿 목록의 아래쪽으로 스크롤하는 것입니다. 설치 관리자를 열면 사용 가능한 작업이 모두 표시됩니다. **Windows 데스크톱** 워크로드의 확인란이 선택되어 있지 않으면 확인란을 선택하고 창의 맨 아래에 있는 **수정** 단추를 클릭합니다.
 
@@ -65,7 +65,7 @@ Scribble 프로젝트는 유니코드 문자를 사용하여 컴파일되도록 
 _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
 ```
 
-이는 오류가 아니라 경고이며, Visual C++ 프로젝트를 업그레이드할 때 흔히 발생합니다. 응용 프로그램이 실행되는 가장 낮은 버전의 Windows를 정의하는 매크로입니다. 경고를 무시하는 경우 현재 버전의 Windows를 의미하는 기본값 _WIN32_WINNT_MAXVER을 수락하는 것입니다. 가능한 값의 테이블은 [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers)(Windows 헤더 사용)을 참조하세요. 예를 들어 Vista부터 모든 버전에서 실행되도록 설정할 수 있습니다.
+이는 오류가 아니라 경고이며, Visual C++ 프로젝트를 업그레이드할 때 흔히 발생합니다. 애플리케이션이 실행되는 가장 낮은 버전의 Windows를 정의하는 매크로입니다. 경고를 무시하는 경우 현재 버전의 Windows를 의미하는 기본값 _WIN32_WINNT_MAXVER을 수락하는 것입니다. 가능한 값의 테이블은 [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers)(Windows 헤더 사용)을 참조하세요. 예를 들어 Vista부터 모든 버전에서 실행되도록 설정할 수 있습니다.
 
 ```cpp
 #define _WIN32_WINNT _WIN32_WINNT_VISTA
@@ -83,9 +83,9 @@ _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
 
 ## <a name="next-steps"></a>다음 단계
 
-Scribble은 작고 간단한 Windows 데스크톱 응용 프로그램이며 변환하기 어렵지 않았습니다. 마찬가지로, 대부분의 작고 간단한 앱은 쉽게 새 버전으로 변환됩니다.  많은 줄의 코드, 최신 엔지니어링 표준에 부합되지 않는 레거시 코드, 여러 프로젝트와 라이브러리, 사용자 지정 빌드 단계를 포함하는 더 복잡한 응용 프로그램이나 복잡한 스크립팅된 자동화 빌드의 경우 업그레이드하는 데 더 오랜 시간이 걸립니다. [다음 예제](../porting/porting-guide-com-spy.md)인 COM Spy라는 ATL/COM 응용 프로그램으로 계속합니다.
+Scribble은 작고 간단한 Windows 데스크톱 애플리케이션이며 변환하기 어렵지 않았습니다. 마찬가지로, 대부분의 작고 간단한 앱은 쉽게 새 버전으로 변환됩니다.  많은 줄의 코드, 최신 엔지니어링 표준에 부합되지 않는 레거시 코드, 여러 프로젝트와 라이브러리, 사용자 지정 빌드 단계를 포함하는 더 복잡한 애플리케이션이나 복잡한 스크립팅된 자동화 빌드의 경우 업그레이드하는 데 더 오랜 시간이 걸립니다. [다음 예제](../porting/porting-guide-com-spy.md)인 COM Spy라는 ATL/COM 애플리케이션으로 계속합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[포팅 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[이식 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [다음 예제: COM Spy](../porting/porting-guide-com-spy.md)

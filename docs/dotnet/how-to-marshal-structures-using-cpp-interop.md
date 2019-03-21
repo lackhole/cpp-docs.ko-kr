@@ -1,5 +1,5 @@
 ---
-title: '방법: C++ Interop를 사용하여 구조체 마샬링'
+title: '방법: C + + Interop를 사용 하 여 구조체 마샬링'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - interop [C++], structures
 - marshaling [C++], structures
 ms.assetid: c2080200-f983-4d6e-a557-cd870f060a54
-ms.openlocfilehash: c44b23bf0f73191b86b4970c57313d9bc38c8b7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93aeabc3fe984bee8a9281281320d61dccd182bf
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521331"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739390"
 ---
-# <a name="how-to-marshal-structures-using-c-interop"></a>방법: C++ Interop를 사용하여 구조체 마샬링
+# <a name="how-to-marshal-structures-using-c-interop"></a>방법: C + + Interop를 사용 하 여 구조체 마샬링
 
 이 항목에서는 Visual c + + 상호 운용성의 한 측면을 보여 줍니다. 자세한 내용은 [c + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다.
 
@@ -24,7 +24,7 @@ ms.locfileid: "50521331"
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 값 및 참조에 의해 관리 되는 구조체를 관리 되지 않는 함수에 전달 하는 방법을 보여 줍니다. 만 간단 하 고 기본 데이터 형식을 포함 하는이 예제의 구조 때문에 (참조 [Blittable 형식 및 비 Blittable 형식](/dotnet/framework/interop/blittable-and-non-blittable-types)), 특별 한 마샬링가 필요 합니다. 참조 포인터를 포함 하는 것과 같은 비 blittable 구조를 마샬링할 [방법: 마샬링 포함 된 포인터를 사용 하 여 c + + Interop](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md)합니다.
+다음 예제에서는 값 및 참조에 의해 관리 되는 구조체를 관리 되지 않는 함수에 전달 하는 방법을 보여 줍니다. 만 간단 하 고 기본 데이터 형식을 포함 하는이 예제의 구조 때문에 (참조 [Blittable 형식 및 비 Blittable 형식](/dotnet/framework/interop/blittable-and-non-blittable-types)), 특별 한 마샬링가 필요 합니다. 참조 포인터를 포함 하는 것과 같은 비 blittable 구조를 마샬링할 [방법: C + + Interop를 사용 하 여 포인터를 포함 하는 마샬링](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md)합니다.
 
 ```
 // PassStruct1.cpp
@@ -82,7 +82,7 @@ int main() {
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 값 및 참조에 의해 관리 되지 않는 구조체를 관리 되는 함수에 전달 하는 방법을 보여 줍니다. 만 간단 하 고 기본 데이터 형식을 포함 하는이 예제의 구조 때문에 (참조 [Blittable 형식 및 비 Blittable 형식](/dotnet/framework/interop/blittable-and-non-blittable-types)), 특별 한 마샬링가 필요 합니다. 참조 포인터를 포함 하는 것과 같은 비 blittable 구조를 마샬링할 [방법: 마샬링 포함 된 포인터를 사용 하 여 c + + Interop](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md)합니다.
+다음 예제에서는 값 및 참조에 의해 관리 되지 않는 구조체를 관리 되는 함수에 전달 하는 방법을 보여 줍니다. 만 간단 하 고 기본 데이터 형식을 포함 하는이 예제의 구조 때문에 (참조 [Blittable 형식 및 비 Blittable 형식](/dotnet/framework/interop/blittable-and-non-blittable-types)), 특별 한 마샬링가 필요 합니다. 참조 포인터를 포함 하는 것과 같은 비 blittable 구조를 마샬링할 [방법: C + + Interop를 사용 하 여 포인터를 포함 하는 마샬링](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md)합니다.
 
 ```
 // PassStruct2.cpp
@@ -147,6 +147,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

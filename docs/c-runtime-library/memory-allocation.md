@@ -8,12 +8,12 @@ helpviewer_keywords:
 - memory, managing
 - memory, allocation
 ms.assetid: b4470556-a128-4782-9943-2ccf7a7d9979
-ms.openlocfilehash: e77548e9f85057f8e8a1c92e4a0aa904a58e14a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bcc9865b149c2289f99f6ee13f31179ae58a15e1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618779"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742797"
 ---
 # <a name="memory-allocation"></a>메모리 할당
 
@@ -21,7 +21,7 @@ ms.locfileid: "50618779"
 
 ## <a name="memory-allocation-routines"></a>메모리 할당 루틴
 
-|루틴|사용|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[_alloca](../c-runtime-library/reference/alloca.md), [_malloca](../c-runtime-library/reference/malloca.md)|스택에서 메모리 할당|
 |[calloc](../c-runtime-library/reference/calloc.md)|할당된 블록에서 모든 바이트를 0으로 초기화하는 배열에 스토리지 할당|

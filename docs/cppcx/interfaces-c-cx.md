@@ -2,12 +2,12 @@
 title: 인터페이스(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
-ms.openlocfilehash: 33fe0df457a4f1bab3a7cffab585501364d5750c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04aaf25817cade47e89f0a06c423b68538d947b4
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626631"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740750"
 ---
 # <a name="interfaces-ccx"></a>인터페이스(C++/CX)
 
@@ -95,7 +95,7 @@ C + + /CX는 `generic` 키워드 매개 변수가 있는 Windows 런타임 형�
 
 - 템플릿 기반 ref 클래스는 private여야 하며, 제네릭 인터페이스를 구현할 수 있고 템플릿 매개 변수를 전달할 수 있습니다 *T* 제네릭 인수 *T*합니다. 템플릿 기반 ref 클래스의 각 인스턴스화 자체가 ref 클래스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
 [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>

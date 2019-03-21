@@ -4,12 +4,12 @@ ms.date: 11/26/2018
 f1_keywords:
 - VC.Project.VCCLCompilerTool.SDLCheck
 ms.assetid: 3dcf86a0-3169-4240-9f29-e04a9f535826
-ms.openlocfilehash: dd37dae4927531b86cfdac274493b945b066760a
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 0618b796d492395c3e0e5413047ac0260082baff
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57413097"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814204"
 ---
 # <a name="sdl-enable-additional-security-checks"></a>/sdl(추가 보안 검사 사용)
 
@@ -23,7 +23,7 @@ ms.locfileid: "57413097"
 
 ## <a name="remarks"></a>설명
 
-**/sdl** 에서 제공 하는 기준 보안 검사의 상위 집합을 활성화 [/GS](../../build/reference/gs-buffer-security-check.md) 재정의 **/GS-** 합니다. 기본적으로 **/sdl** 꺼져 있습니다. **/sdl-** 추가 보안 검사를 사용 하지 않도록 설정 합니다.
+**/sdl** 에서 제공 하는 기준 보안 검사의 상위 집합을 활성화 [/GS](gs-buffer-security-check.md) 재정의 **/GS-** 합니다. 기본적으로 **/sdl** 꺼져 있습니다. **/sdl-** 추가 보안 검사를 사용 하지 않도록 설정 합니다.
 
 ## <a name="compile-time-checks"></a>컴파일 시 검사
 
@@ -67,7 +67,7 @@ ms.locfileid: "57413097"
 
 #### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **C/c + +** 폴더입니다.
 
@@ -75,5 +75,5 @@ ms.locfileid: "57413097"
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

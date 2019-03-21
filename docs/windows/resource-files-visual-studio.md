@@ -24,12 +24,12 @@ helpviewer_keywords:
 - files [C++], editable types
 - resource editing
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-ms.openlocfilehash: bd73db481659573d51e4abd56da9689e2e8ade25
-ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
+ms.openlocfilehash: 3de2010cca04d007bf61bf8c139cbc69d790e579
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56676437"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563006"
 ---
 # <a name="resource-files-c"></a>리소스 파일(C++)
 
@@ -121,9 +121,9 @@ Windows XP 또는 Windows Vista 응용 프로그램의 경우 매니페스트 �
 
 1. 확장 된 **리소스 파일** 다음 폴더:
 
-   - 텍스트 편집기를 열려면.manifest 파일을 두 번 클릭 합니다.
+   - 텍스트 편집기를 열려면 두 번 클릭 합니다 *.manifest* 파일입니다.
 
-   - 다른 편집기를 열려면.manifest 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 **연결 프로그램...** . 사용 하 여 선택한 편집기를 지정할 **열려**합니다.
+   - 다른 편집기를 열려면 마우스 오른쪽 단추로 클릭 합니다 *.manifest* 파일을 선택 **사용 하 여 열고**합니다. 편집기를 사용 하 여 선택한 지정할 **열려**합니다.
 
 ## <a name="requirements"></a>요구 사항
 

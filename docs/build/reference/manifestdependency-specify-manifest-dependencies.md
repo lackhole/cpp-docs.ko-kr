@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /MANIFESTDEPENDENCY linker option
 - -MANIFESTDEPENDENCY linker option
 ms.assetid: e4b68313-33a2-4c3e-908e-ac2b9f7d6a73
-ms.openlocfilehash: debff86b506545862ce4054bf4e210cdb8a29185
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 676059b8d398fd108d8f8fc163c85a3da3c657b4
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418401"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812228"
 ---
 # <a name="manifestdependency-specify-manifest-dependencies"></a>/MANIFESTDEPENDENCY(매니페스트 종속성 지정)
 
@@ -25,7 +25,7 @@ ms.locfileid: "57418401"
 
 /MANIFESTDEPENDENCY에 배치 될 특성을 지정할 수는 \<종속성 > 매니페스트 파일의 섹션입니다.
 
-참조 [/MANIFEST (만들기-Side-by-side 어셈블리 매니페스트)](../../build/reference/manifest-create-side-by-side-assembly-manifest.md) 매니페스트 파일을 만드는 방법에 대 한 정보에 대 한 합니다.
+참조 [/MANIFEST (만들기-Side-by-side 어셈블리 매니페스트)](manifest-create-side-by-side-assembly-manifest.md) 매니페스트 파일을 만드는 방법에 대 한 정보에 대 한 합니다.
 
 대 한 자세한 내용은 합니다 \<종속성 > 섹션에서는 매니페스트 파일 참조 [게시자 구성 파일](/windows/desktop/SbsCs/publisher-configuration-files)합니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "57418401"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **매니페스트 파일** 속성 페이지.
 
@@ -73,5 +73,5 @@ ms.locfileid: "57418401"
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

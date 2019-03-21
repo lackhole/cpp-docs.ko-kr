@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - error handling, and notification
 ms.assetid: b621cf60-d869-451a-b05e-dc86d78addaa
-ms.openlocfilehash: 7aae4d68b272a6c12233f283d4b263648062b7c1
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 29fe46e15712609ec0c4f268749aaefed103117e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418947"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812943"
 ---
 # <a name="error-handling-and-notification"></a>오류 처리 및 알림
 
 알림 및 오류 처리에 대 한 자세한 내용은 참조 하세요. [도우미 함수 이해](understanding-the-helper-function.md)합니다.
 
-후크 함수에 대 한 자세한 내용은 참조 하세요. [구조체 및 상수 정의](../../build/reference/structure-and-constant-definitions.md)합니다.
+후크 함수에 대 한 자세한 내용은 참조 하세요. [구조체 및 상수 정의](structure-and-constant-definitions.md)합니다.
 
 프로그램이 Dll 지연 로드를 사용 하는 경우 하므로 처리 해야 오류 안정적으로 프로그램 실행 되는 동안 발생 하는 실패 하면 처리 되지 않은 예외가 발생 합니다. 오류 처리는 두 부분으로 구성 됩니다.
 
@@ -27,12 +27,12 @@ ms.locfileid: "57418947"
 
 다음 항목에는 오류 처리 및 알림 설명합니다.
 
-- [알림 후크](../../build/reference/notification-hooks.md)
+- [알림 후크](notification-hooks.md)
 
-- [오류 후크](../../build/reference/failure-hooks.md)
+- [오류 후크](failure-hooks.md)
 
-- [예외](../../build/reference/exceptions-c-cpp.md)
+- [예외](exceptions-c-cpp.md)
 
 ## <a name="see-also"></a>참고자료
 
-[링커의 지연 로드된 DLL 지원](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[링커의 지연 로드된 DLL 지원](linker-support-for-delay-loaded-dlls.md)

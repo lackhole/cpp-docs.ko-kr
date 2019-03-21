@@ -2,12 +2,12 @@
 title: /INTEGRITYCHECK(시그니처 확인 필요)
 ms.date: 11/04/2016
 ms.assetid: 9e738825-2c98-40cd-8ad2-5d0d9c14893e
-ms.openlocfilehash: ad4420847be7c8bbcaa9fda4c5b7dfda818e7f27
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 446ebe3afc06b8db8cc9f36b289c1e5c3ef5f117
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57419603"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813684"
 ---
 # <a name="integritycheck-require-signature-check"></a>/INTEGRITYCHECK(시그니처 확인 필요)
 
@@ -25,7 +25,7 @@ ms.locfileid: "57419603"
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **구성 속성** 노드를 확장합니다.
 
@@ -37,8 +37,8 @@ ms.locfileid: "57419603"
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)<br/>
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)<br/>
 [강제 무결성 서명의 PE (이식 가능) 파일](http://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)<br/>
 [커널 모드 코드 서명 연습](https://msdn.microsoft.com/windows/hardware/gg487328.aspx)<br/>
 [Windows 7 및 Windows Server 2008의 AppInit Dll](https://msdn.microsoft.com/windows/hardware/gg463040.aspx)

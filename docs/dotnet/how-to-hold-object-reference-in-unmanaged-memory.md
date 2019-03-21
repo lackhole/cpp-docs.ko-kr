@@ -1,5 +1,5 @@
 ---
-title: '방법: 관리되지 않는 메모리에 개체 참조 유지'
+title: '방법: 관리 되지 않는 메모리에 개체 참조 유지'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - references, to objects in native functions
 - gcroot keyword [C++], object reference in native function
 ms.assetid: a61eb8ce-3982-477d-8d3d-2173fd57166d
-ms.openlocfilehash: 50afaa16f2e0976cf6a90bef09e652b4dc54582a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d8dc341d1fe2c61eba098abec9258a2c6dade79
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478080"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747984"
 ---
-# <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>방법: 관리되지 않는 메모리에 개체 참조 유지
+# <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>방법: 관리 되지 않는 메모리에 개체 참조 유지
 
 래핑하는 gcroot.h를 사용할 수 있습니다 <xref:System.Runtime.InteropServices.GCHandle>, 관리 되지 않는 메모리에 CLR 개체 참조를 유지할 수 있습니다. 사용할 수 있습니다 `GCHandle` 직접.
 
@@ -94,6 +94,6 @@ int main() {
 StringWrapper::m_handle == ManagedString
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4075
 ms.assetid: f39ad3f9-c263-4cf0-9d70-259fc56ac96d
-ms.openlocfilehash: bba0fa85a3f2590c84cbb6f78fac7e49386d35a9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf22e7c78dce6949c357d7ad4a0c76209c88eef3
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548254"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809901"
 ---
 # <a name="linker-tools-warning-lnk4075"></a>링커 도구 경고 LNK4075
 
@@ -21,7 +21,7 @@ ms.locfileid: "50548254"
 
 상호 배타적인 링커 옵션 지정 됩니다.  링커 옵션을 확인 합니다.  링커 옵션을 지정 하는 프로젝트를 빌드하는 방법에 따라 달라 집니다.
 
-- 개발 환경에서 작성 하는 경우 프로젝트에 대 한 링커 속성 페이지의 모양과 링커 옵션을 모두 지정 된 위치를 참조 하세요.  참조 [프로젝트 속성 작업](../../ide/working-with-project-properties.md) 자세한 내용은 합니다.
+- 개발 환경에서 작성 하는 경우 프로젝트에 대 한 링커 속성 페이지의 모양과 링커 옵션을 모두 지정 된 위치를 참조 하세요.  참조 [컴파일러를 설정 하 고 빌드 속성](../../build/working-with-project-properties.md) 자세한 내용은 합니다.
 
 - 명령줄에서 빌드하는 경우 지정 된 링커 옵션을 확인 합니다.
 

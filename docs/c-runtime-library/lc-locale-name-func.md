@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - ___lc_locale_name_func
 ms.assetid: ef858308-872e-43de-95e0-9b1b4084343e
-ms.openlocfilehash: 17724fe5335ba54d7e32ed7851b6a35b132b1086
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88ce07ca3fece558c23f4fcd9a12949f184b7532
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639844"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741060"
 ---
 # <a name="lclocalenamefunc"></a>___lc_locale_name_func
 
@@ -38,9 +38,9 @@ wchar_t** ___lc_locale_name_func(void);
 
 스레드의 현재 로캘 이름이 포함된 문자열에 대한 포인터입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-`___lc_locale_name_func`는 다른 CRT 함수가 CRT 데이터의 스레드 로컬 저장소에서 현재 로캘 이름을 가져오기 위해 사용하는 내부 CRT 함수입니다. [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) 함수 또는 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 함수를 사용하면 이 정보를 사용할 수 있습니다.
+`___lc_locale_name_func`는 다른 CRT 함수가 CRT 데이터의 스레드 로컬 스토리지에서 현재 로캘 이름을 가져오기 위해 사용하는 내부 CRT 함수입니다. [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) 함수 또는 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 함수를 사용하면 이 정보를 사용할 수 있습니다.
 
 내부 CRT 함수는 구현과 관련되어 있으며 각 릴리스 시 변경될 수 있습니다. 따라서 사용자 코드에는 사용하지 않는 것이 좋습니다.
 

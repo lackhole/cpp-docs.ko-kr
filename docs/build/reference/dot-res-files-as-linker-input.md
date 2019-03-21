@@ -7,12 +7,12 @@ helpviewer_keywords:
 - linking [C++], resource files
 - resource files, linking
 ms.assetid: 9c37ab00-97df-4d9a-91cd-6bf132970683
-ms.openlocfilehash: 6fdd7b8b32d08da639263c091034c1bc8694cd87
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 68bb9da55faa7e41d743e1f3a45ca4b79f7f2242
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426565"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814219"
 ---
 # <a name="res-files-as-linker-input"></a>링커 입력 파일로 사용하는 .Res 파일
 
@@ -20,5 +20,5 @@ ms.locfileid: "57426565"
 
 ## <a name="see-also"></a>참고자료
 
-[LINK 입력 파일](../../build/reference/link-input-files.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[LINK 입력 파일](link-input-files.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

@@ -9,16 +9,16 @@ helpviewer_keywords:
 - preprocessor output, copy to stdout
 - preprocessor output
 ms.assetid: ddbb1725-d950-4978-ab2f-30a5cd7b778c
-ms.openlocfilehash: f0a0d692cd7eaf59aa0c53ecf4436b4c507439a3
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 710be7e1dfc4de89bc1eed3e23e4803c561da10c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57425486"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817360"
 ---
 # <a name="e-preprocess-to-stdout"></a>/E(stdout으로 전처리)
 
-C 및 c + + 소스 파일을 전처리 하 고 표준 출력 장치에 전처리 된 파일을 복사 합니다.
+C 및 C++ 소스 파일을 전처리 하 고 표준 출력 장치에 전처리 된 파일을 복사 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,15 +28,15 @@ C 및 c + + 소스 파일을 전처리 하 고 표준 출력 장치에 전처리
 
 ## <a name="remarks"></a>설명
 
-이 프로세스에서는 모든 전처리기 지시문이 실행 되 하 고 매크로 확장을 수행 하는 주석이 제거 됩니다. 전처리 된 출력에서 메모를 유지 하려면 사용 합니다 [/C (유지 전처리 중에 주석)](../../build/reference/c-preserve-comments-during-preprocessing.md) 컴파일러 옵션을 함께 합니다.
+이 프로세스에서는 모든 전처리기 지시문이 실행 되 하 고 매크로 확장을 수행 하는 주석이 제거 됩니다. 전처리 된 출력에서 메모를 유지 하려면 사용 합니다 [/C (유지 전처리 중에 주석)](c-preserve-comments-during-preprocessing.md) 컴파일러 옵션을 함께 합니다.
 
 **/E** 추가 `#line` 지시문 및 조건부 컴파일 용 전처리기 지시문에 의해 제거 된 줄 및 포함된 된 파일의 끝 부분에서 출력 합니다. 이러한 지시어는 전처리 된 파일의 줄 번호 다시 매기기입니다. 결과적으로, 오류 처리의 이후 단계 중에 생성 된 전처리 된 파일의 줄이 아니라 원래 소스 파일의 줄 번호를 참조 하십시오.
 
-합니다 **/E** 옵션은 컴파일을 억제 합니다. 컴파일에 대 한 전처리 된 파일을 다시 제출 해야 합니다. **/E** 출력 파일을 표시 하지 합니다 **/FA**를 **/Fa**, 및 **/Fm** 옵션입니다. 자세한 내용은 [/FA, /Fa (목록 파일)](../../build/reference/fa-fa-listing-file.md) 하 고 [/Fm (맵 파일 이름)](../../build/reference/fm-name-mapfile.md)합니다.
+합니다 **/E** 옵션은 컴파일을 억제 합니다. 컴파일에 대 한 전처리 된 파일을 다시 제출 해야 합니다. **/E** 출력 파일을 표시 하지 합니다 **/FA**를 **/Fa**, 및 **/Fm** 옵션입니다. 자세한 내용은 [/FA, /Fa (목록 파일)](fa-fa-listing-file.md) 하 고 [/Fm (맵 파일 이름)](fm-name-mapfile.md)합니다.
 
-표시 하지 않으려면 `#line` 지시문을 사용 합니다 [/EP (#line 지시문 없이 stdout로 전처리)](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 옵션을 사용 합니다.
+표시 하지 않으려면 `#line` 지시문을 사용 합니다 [/EP (#line 지시문 없이 stdout로 전처리)](ep-preprocess-to-stdout-without-hash-line-directives.md) 옵션을 사용 합니다.
 
-대신 파일로 전처리 된 출력을 보내도록 `stdout`를 사용 합니다 [/P (파일로 전처리)](../../build/reference/p-preprocess-to-a-file.md) 옵션을 사용 합니다.
+대신 파일로 전처리 된 출력을 보내도록 `stdout`를 사용 합니다 [/P (파일로 전처리)](p-preprocess-to-a-file.md) 옵션을 사용 합니다.
 
 표시 하지 않으려면 `#line` 지시문과 송신 전처리 된 출력 파일을 사용 하 여 **/P** 하 고 **/EP** 함께 합니다.
 
@@ -62,7 +62,7 @@ cl -E test.cpp > test2.cpp
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -84,5 +84,5 @@ CL /E /C ADD.C
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

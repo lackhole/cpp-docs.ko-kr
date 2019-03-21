@@ -11,12 +11,12 @@ helpviewer_keywords:
 - PDB files, stripping private symbols
 - PDBSTRIPPED linker option
 ms.assetid: 9b9e0070-6a13-4142-8180-19c003fbbd55
-ms.openlocfilehash: c0a79eb8d1c00be2b855ec08ffe44f4e7d7a2e05
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3ed36eca727a15a3c70bc51a07cd3c143d7f66da
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57412629"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815218"
 ---
 # <a name="pdbstripped-strip-private-symbols"></a>/PDBSTRIPPED(전용 기호 제거)
 
@@ -31,7 +31,7 @@ ms.locfileid: "57412629"
 
 ## <a name="remarks"></a>설명
 
-/PDBSTRIPPED 옵션 PDB 파일을 생성 하는 옵션 컴파일러 또는 링커를 사용 하 여 프로그램 이미지를 빌드하면 두 번째 프로그램 데이터베이스 (PDB) 파일을 만듭니다 ([/debug](../../build/reference/debug-generate-debug-info.md)를 [/z7](../../build/reference/z7-zi-zi-debug-information-format.md), /Zd 또는 /Zi). 이 두 번째 PDB 파일에서는 고객에게 제공하지 않을 기호가 생략됩니다. 두 번째 PDB 파일의 내용만 포함 됩니다.
+/PDBSTRIPPED 옵션 PDB 파일을 생성 하는 옵션 컴파일러 또는 링커를 사용 하 여 프로그램 이미지를 빌드하면 두 번째 프로그램 데이터베이스 (PDB) 파일을 만듭니다 ([/debug](debug-generate-debug-info.md)를 [/z7](z7-zi-zi-debug-information-format.md), /Zd 또는 /Zi). 이 두 번째 PDB 파일에서는 고객에게 제공하지 않을 기호가 생략됩니다. 두 번째 PDB 파일의 내용만 포함 됩니다.
 
 - 공용 기호
 
@@ -53,7 +53,7 @@ PDB 파일을 만들지 /PDBSTRIPPED 무시 됩니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 클릭 합니다 **링커** 폴더입니다.
 
@@ -67,5 +67,5 @@ PDB 파일을 만들지 /PDBSTRIPPED 무시 됩니다.
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

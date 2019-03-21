@@ -8,12 +8,12 @@ helpviewer_keywords:
 - TRUNCATE constant
 - _TRUNCATE constant
 ms.assetid: ad093dbf-1aa5-4bd2-9268-efc68afd8434
-ms.openlocfilehash: 69dc495083bc7fffd925e42163473c64452cb402
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5a341f1828bad9f5562c10036779245ac88c79e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544263"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743192"
 ---
 # <a name="truncate"></a>_TRUNCATE
 
@@ -25,7 +25,7 @@ ms.locfileid: "50544263"
 #include <stdlib.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `_TRUNCATE`는 다음 함수에 `count` 매개 변수로 전달될 때 잘라내기 동작을 가능하게 만듭니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "50544263"
 
 [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md)
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 // crt_truncate.c

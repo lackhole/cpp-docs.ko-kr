@@ -7,12 +7,12 @@ helpviewer_keywords:
 - noncreatable ATL objects
 - ATL projects, noncreatable objects
 ms.assetid: 80d0bca2-dea0-4801-9a85-6243124437f6
-ms.openlocfilehash: da1d5c43d86d95d7eff9b6830b83b61737d3030f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 966c7c1e42cd707726a8ca65bb80914c29ad582e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267071"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814503"
 ---
 # <a name="making-an-atl-object-noncreatable"></a>ATL 개체 수 없도록 설정 만들기
 
@@ -37,8 +37,7 @@ ms.locfileid: "57267071"
 ## <a name="see-also"></a>참고자료
 
 [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)<br/>
-[Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)<br/>
-[애플리케이션 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[Visual C++ 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
 [ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)

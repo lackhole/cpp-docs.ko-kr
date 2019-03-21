@@ -6,19 +6,19 @@ helpviewer_keywords:
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-ms.openlocfilehash: 71a76da9f4eadfdca0d69873b821f4ea8eb8fc05
-ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
+ms.openlocfilehash: 8edc860db453c4ee9e0dd3fdacb18bbde662accb
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56676424"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562967"
 ---
 # <a name="working-with-resource-files"></a>리소스 파일 작업
 
 > [!WARNING]
 > 이 섹션의 내용은 C++로 작성된 Windows 데스크톱 애플리케이션에 적용됩니다.
 >
-> C + +로 작성 된 유니버설 Windows 플랫폼 앱의 리소스에 대 한 자세한 내용은 [앱 리소스 정의](/windows/uwp/app-resources/), 또는 리소스를 추가 하려면 C + + (관리) CLI 프로젝트를 참조 하십시오 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에서 합니다 *.NET Framework Developer's Guide*합니다.
+> C + +로 작성 된 유니버설 Windows 플랫폼 앱의 리소스에 대 한 자세한 내용은 [앱 리소스 정의](/windows/uwp/app-resources/), 또는 리소스를 추가 하려면 C + + (관리) CLI 프로젝트를 참조 하십시오 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에서 .NET Framework 개발자 가이드입니다.
 
 리소스와 같은 다양 한 범위의 요소를 구성할 수 있습니다.
 
@@ -28,6 +28,9 @@ ms.locfileid: "56676424"
 - 메뉴 및 대화 상자 리소스입니다.
 
 프로젝트에 새 리소스를 추가하고 적절한 리소스 편집기를 사용하여 리소스를 수정할 수 있습니다. 대부분의 Visual C++ 마법사에서는 프로젝트에 대해 .rc 파일을 자동으로 생성합니다.
+
+> [!NOTE]
+> 합니다 **리소스 편집기** 하 고 **리소스 뷰** Express 버전에서는 사용할 수 없습니다.
 
 관리 되는 프로젝트에 리소스 파일을 수동으로 추가, 참조 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)합니다. 이 문서에서는 리소스에 액세스, 정적 리소스 표시, 속성에 리소스 문자열을 할당 하는 방법을 포함 합니다.
 

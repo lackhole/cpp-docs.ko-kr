@@ -1,5 +1,5 @@
 ---
-title: '방법: System::String을 wchar_t* 또는 char*로 변환'
+title: '방법: System:: string을 wchar_t * 또는 char * 변환합니다'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - wchart type, converting System::String
 - char data type, converting System::String to
 ms.assetid: 385da01b-5649-4543-8076-e3e251243ff0
-ms.openlocfilehash: 26e9f5511c0205a3c484b85381fddde802f5469a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c9bf8a6af2d48c4b2624b91e2e85f78c63aee6de
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550503"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738814"
 ---
-# <a name="how-to-convert-systemstring-to-wchart-or-char"></a>방법: System::String을 wchar_t* 또는 char*로 변환
+# <a name="how-to-convert-systemstring-to-wchart-or-char"></a>방법: System:: string을 wchar_t * 또는 char * 변환합니다
 
 사용할 수 있습니다 `PtrToStringChars` 변환할 Vcclr.h에서 <xref:System.String> 네이티브 `wchar_t *` 또는 `char *`합니다.  이 항상 CLR 문자열은 내부적으로 유니코드 있으므로 와이드 유니코드 문자열 포인터를 반환 합니다. 다음 예제에서와 같이 와이드 문자열에서 변환할 수 있습니다.
 
@@ -64,6 +64,6 @@ Hello
 Hello
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Agile
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-ms.openlocfilehash: 9350d94fdff615056fca193d654b2bb001d78d72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86a535bc106e17b276dc5f42a59773aa0de8c361
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471203"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749279"
 ---
 # <a name="platformagile-class"></a>Platform::Agile 클래스
 
@@ -66,7 +66,7 @@ Agile이 아닌 클래스의 형식 이름입니다.
 |[Agile::operator->](#operator-arrow)|현재 Agile 개체가 나타내는 개체에 대한 핸들을 검색합니다.|
 |[Agile::operator=](#operator-assign)|지정한 값을 현재 Agile 개체에 할당합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Object`
 
@@ -78,7 +78,7 @@ Agile이 아닌 클래스의 형식 이름입니다.
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **헤더:** agile.h
 
@@ -154,7 +154,8 @@ T^* GetAddressOf() throw();
 
 ### <a name="return-value"></a>반환 값
 
-`T` 형식의 개체에 대한 핸들의 주소입니다.
+
+  `T` 형식의 개체에 대한 핸들의 주소입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -239,7 +240,8 @@ T^ operator=( IUnknown* lp ) throw();
 
 ### <a name="return-value"></a>반환 값
 
-`T` 형식의 개체에 대한 핸들입니다.
+
+  `T` 형식의 개체에 대한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -247,6 +249,6 @@ T^ operator=( IUnknown* lp ) throw();
 
 할당 연산은 현재 Agile 개체의 컨텍스트를 자동으로 유지합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

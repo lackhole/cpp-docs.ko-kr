@@ -24,12 +24,12 @@ helpviewer_keywords:
 - Ob0 compiler option [C++]
 - inline expansion, compiler option
 ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
-ms.openlocfilehash: 6406b604ab74d29d8bc6c9bc0920fd0cf0bd055b
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 6bf16e5725916e81e64d80c0a1f96bf502c8826c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426149"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807504"
 ---
 # <a name="ob-inline-function-expansion"></a>/Ob(인라인 함수 확장)
 
@@ -51,7 +51,7 @@ ms.locfileid: "57426149"
 기본값입니다. 
   `inline`, `__inline` 또는 `__forceinline`으로 표시된 함수와 컴파일러에서 선택한 기타 함수를 확장합니다.
 
-**/ Ob2** 때 적용 됩니다 [/o1, / o2 (크기 최소화, 속도 최대화)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) 하거나 [/Ox (사용 가장 속도 최적화)](../../build/reference/ox-full-optimization.md) 사용 됩니다.
+**/ Ob2** 때 적용 됩니다 [/o1, / o2 (크기 최소화, 속도 최대화)](o1-o2-minimize-size-maximize-speed.md) 하거나 [/Ox (사용 가장 속도 최적화)](ox-full-optimization.md) 사용 됩니다.
 
 이 옵션을 사용 하려면 사용 하 여 최적화를 활성화 **/o1**를 **/o2**를 **/Ox**, 또는 **/Og**합니다.
 
@@ -62,11 +62,11 @@ ms.locfileid: "57426149"
 사용할 수는 `#pragma` [auto_inline](../../preprocessor/auto-inline.md) 함수를 인라인 확장 후보 고려 대상에서 제외할 지시문입니다. 또한 참조를 `#pragma` [내장](../../preprocessor/intrinsic.md) 지시문입니다.
 
 > [!NOTE]
-> 프로 파일링 테스트 실행에서 수집 되는 정보를 지정 하는 경우 적용에서 되는 최적화를 재정의 **/Ob**하십시오 **/Os**, 또는 **/Ot**합니다. 자세한 내용은 [프로필 기반 최적화](../../build/reference/profile-guided-optimizations.md)합니다.
+> 프로 파일링 테스트 실행에서 수집 되는 정보를 지정 하는 경우 적용에서 되는 최적화를 재정의 **/Ob**하십시오 **/Os**, 또는 **/Ot**합니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 확장 **구성 속성**를 **C/c + +** 를 선택 하 고 **최적화**합니다.
 
@@ -78,6 +78,6 @@ ms.locfileid: "57426149"
 
 ## <a name="see-also"></a>참고자료
 
-[/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[/O 옵션(코드 최적화)](o-options-optimize-code.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

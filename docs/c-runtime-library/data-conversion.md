@@ -7,12 +7,12 @@ helpviewer_keywords:
 - data conversion routines [C++]
 - converting data
 ms.assetid: b15b5268-7467-49f1-bf95-5299b598f94c
-ms.openlocfilehash: 80acfefa7368d293b466230a26b6a609597166fe
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 37c969ea327325ea84ce22c8d993a9332f6ddc9d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331154"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416711"
 ---
 # <a name="data-conversion"></a>데이터 변환
 
@@ -20,7 +20,7 @@ ms.locfileid: "51331154"
 
 ## <a name="data-conversion-routines"></a>데이터 변환 루틴
 
-|루틴에서 반환된 값|사용|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|정수의 절대값 찾기|
 |[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|문자열을 **float**로 변환|
@@ -49,7 +49,7 @@ ms.locfileid: "51331154"
 |[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)|문자열을 로캘별 정보를 기준으로 정렬된 형식으로 변환합니다.|
 |[toascii, __toascii](../c-runtime-library/reference/toascii-toascii.md)|문자를 ASCII 코드로 변환|
 |[tolower, _tolower, towlower, _tolower_l, _towlower_l](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md), [_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l](../c-runtime-library/reference/mbctolower-mbctolower-l-mbctoupper-mbctoupper-l.md)|문자를 테스트하고 소문자(현재 대문자인 경우)로 변환|
-|[tolower, _tolower, towlower, _tolower_l, _towlower_l](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)|문자를 무조건 소문자로 변환|[System::String::ToLower](https://msdn.microsoft.com/library/system.string.tolower.aspx)|
+|[tolower, _tolower, towlower, _tolower_l, _towlower_l](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)|문자를 무조건 소문자로 변환|
 |[toupper, _toupper, towupper, _toupper_l, _towupper_l](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md), [_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l](../c-runtime-library/reference/mbctolower-mbctolower-l-mbctoupper-mbctoupper-l.md)|문자를 테스트하고 대문자(현재 소문자인 경우)로 변환|
 |[toupper, _toupper, towupper, _toupper_l, _towupper_l](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)|문자를 무조건 대문자로 변환|
 |[wcstombs, _wcstombs_l](../c-runtime-library/reference/wcstombs-wcstombs-l.md), [wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)|와이드 문자의 시퀀스를 해당되는 멀티바이트 문자의 시퀀스로 변환합니다.|

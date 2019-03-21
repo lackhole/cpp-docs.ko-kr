@@ -1,8 +1,6 @@
-﻿---
+---
 title: tchar.h의 제네릭 텍스트 매핑
 ms.date: 11/04/2016
-f1_keywords:
-- tchar.h
 helpviewer_keywords:
 - mapping generic-text
 - generic-text mappings [C++]
@@ -12,12 +10,12 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-ms.openlocfilehash: 59df523cc553881186921a878d131a109ae3cf27
-ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
+ms.openlocfilehash: 779702aa33e2aa24bf5a380bd8435745cc0aadbd
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53978298"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822641"
 ---
 # <a name="generic-text-mappings-in-tcharh"></a>tchar.h의 제네릭 텍스트 매핑
 
@@ -32,9 +30,8 @@ tchar.h를 사용하여 같은 소스 코드를 가지고 싱글, 멀티바이�
 1. tchar.h에 구현된 형식에 안전한 인라인 타입의 작은 함수(thunk)를 사용합니다. 이는 기본 동작입니다.
 
 1. 명령줄에서 `_MB_MAP_DIRECT`를 정의하여 tchar.h의 매크로를 직접 사용하십시오. 이렇게 하려면 형식을 수동으로 일치시켜야 합니다. 가장 빠른 방법이지만 형식이 안전하지 않습니다.
-2. 명령줄에서 `_MB_MAP_DIRECT`를 정의하여 tchar.h의 매크로를 직접 사용하십시오. 이렇게 하려면 형식을 수동으로 일치시켜야 합니다. 가장 빠른 방법이지만 형식이 안전하지 않습니다.
 
-3. tchar.h에 구현된 정적 라이브러리의 형식에 안전한 인라인 타입 작은 함수(thunk)를 사용합니다. 이렇게 하려면 명령줄에서 `_NO_INLINING` 상수를 정의합니다. 이는 속도가 가장 느리지만 형식이 가장 안전 방법입니다.
+1. tchar.h에 구현된 정적 라이브러리의 형식에 안전한 인라인 타입 작은 함수(thunk)를 사용합니다. 이렇게 하려면 명령줄에서 `_NO_INLINING` 상수를 정의합니다. 이는 속도가 가장 느리지만 형식이 가장 안전 방법입니다.
 
 ### <a name="preprocessor-directives-for-generic-text-mappings"></a>일반 텍스트 매핑용 전처리기 지시문
 
@@ -52,7 +49,7 @@ tchar.h를 사용하여 같은 소스 코드를 가지고 싱글, 멀티바이�
 |--------------------------------------|----------------------------------------|------------------------|---------------------------|
 |`_TCHAR`|**char**|**char**|**wchar_t**|
 |`_TINT`|**int**|**unsigned int**|`wint_t`|
-|`_TSCHAR`|**(signed) char**|**(signed) char**|**wchar_t**|
+|`_TSCHAR`|**signed) char**|**signed) char**|**wchar_t**|
 |`_TUCHAR`|**unsigned char**|**unsigned char**|**wchar_t**|
 |`_TXCHAR`|**char**|**unsigned char**|**wchar_t**|
 |`_T` 또는 `_TEXT`|효과 없음(전처리기에 의해 제거됨)|효과 없음(전처리기에 의해 제거됨)|`L` (유니코드 문자열로 변환)|
@@ -92,7 +89,7 @@ RetVal = strrev(szString);
 
 따라서 하나의 소스 코드 파일을 작성하고 유지 관리하면 컴파일을 통해 세 가지 문자 집합 중 특정 루틴을 선택적으로 실행할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [텍스트 및 문자열](../text/text-and-strings-in-visual-cpp.md)<br/>
 [_MBCS 코드와 TCHAR.H 데이터 형식 사용](../text/using-tchar-h-data-types-with-mbcs-code.md)

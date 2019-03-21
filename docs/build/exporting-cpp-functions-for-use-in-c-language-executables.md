@@ -7,12 +7,12 @@ helpviewer_keywords:
 - exporting functions [C++], C++ functions in C executables
 - functions [C++], exporting
 ms.assetid: 80b9e982-f52d-4312-a891-f73cc69f3c2b
-ms.openlocfilehash: 86d771f8dcb9ee1ef137b7766f249a1dda7257db
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a694b77e3730ab82ec1698076cc66729ff115cdc
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426487"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814022"
 ---
 # <a name="exporting-c-functions-for-use-in-c-language-executables"></a>C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기
 
@@ -26,26 +26,26 @@ extern "C" __declspec( dllexport ) int MyFunc(long parm1);
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [.def 파일을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)
+- [.def 파일을 사용하여 DLL에서 내보내기](exporting-from-a-dll-using-def-files.md)
 
-- [__declspec(dllexport)을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__declspec(dllexport)을 사용하여 DLL에서 내보내기](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기](../build/exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기](exporting-and-importing-using-afx-ext-class.md)
 
-- [C 함수를 C 또는 C++ 언어 실행 파일에서 사용할 수 있도록 내보내기](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C 함수를 C 또는 C++ 언어 실행 파일에서 사용할 수 있도록 내보내기](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [사용할 내보내기 방법 결정](../build/determining-which-exporting-method-to-use.md)
+- [사용할 내보내기 방법 결정](determining-which-exporting-method-to-use.md)
 
-- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](importing-into-an-application-using-declspec-dllimport.md)
 
-- [DLL 초기화](../build/run-time-library-behavior.md#initializing-a-dll)
+- [DLL 초기화](run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [데코레이팅된 이름](../build/reference/decorated-names.md)
+- [데코레이팅된 이름](reference/decorated-names.md)
 
 - [extern을 사용하여 링크 지정](../cpp/using-extern-to-specify-linkage.md)
 
 ## <a name="see-also"></a>참고자료
 
-[DLL에서 내보내기](../build/exporting-from-a-dll.md)
+[DLL에서 내보내기](exporting-from-a-dll.md)

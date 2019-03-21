@@ -7,12 +7,12 @@ helpviewer_keywords:
 - template libraries
 - libraries, Standard C++
 ms.assetid: a37d3ba3-58af-47c7-9ee2-441ccd7b77ee
-ms.openlocfilehash: b6886f87aefdf57706a1850595986b779c1f2357
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea8bae08def17093a2e663bb21dfe617ae851651
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575953"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752300"
 ---
 # <a name="c-standard-library-reference"></a>C++ 표준 라이브러리 참조
 
@@ -30,4 +30,3 @@ iostream 프로그래밍에 대한 개요를 제공합니다.
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
 코드 예제를 포함하여 C++ 표준 라이브러리 헤더 파일에 대해 설명하는 참조 항목에 대한 링크를 제공합니다.
-

@@ -4,12 +4,12 @@ ms.date: 09/01/2017
 helpviewer_keywords:
 - UNIX [C++]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
-ms.openlocfilehash: e930702862149de4dae65aab2f880f35850e0687
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0cffdc2be00b4af9badbbbc80bcfef48b3f76e19
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597550"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57818377"
 ---
 # <a name="introduction-to-visual-c-for-unix-users"></a>UNIX 사용자를 위한 Visual C++ 소개
 
@@ -37,13 +37,13 @@ Visual Studio 디버거, IntelliSense 코드 조회 및 명령문 완성, 비주
 
 ## <a name="importing-your-existing-code"></a>기존 코드 가져오기
 
-C++ 컴파일러를 사용하여 메이크파일을 포함하거나 포함하지 않고 컴파일하도록 설정된 기존 코드를 빌드하고 Visual Studio 프로젝트에 배치할 수 있습니다. 자세한 내용은 [방법: 기존 코드로 C++ 프로젝트 만들기](../ide/how-to-create-a-cpp-project-from-existing-code.md)를 참조하세요.
+C++ 컴파일러를 사용하여 메이크파일을 포함하거나 포함하지 않고 컴파일하도록 설정된 기존 코드를 빌드하고 Visual Studio 프로젝트에 배치할 수 있습니다. 자세한 내용은 [방법: 기존 코드에서 C++ 프로젝트 만들기](../build/how-to-create-a-cpp-project-from-existing-code.md)를 참조하세요.
 
 ## <a name="creating-a-new-project"></a>새 프로젝트 만들기
 
 개발 환경에서 새 프로젝트를 만들 수 있습니다. Visual Studio에서는 여러 일반적인 프로젝트에 대한 표준 코드를 제공하는 다양한 템플릿을 제공합니다. 애플리케이션 마법사를 사용하여 다양한 애플리케이션 형식에 대한 코드 개요로 프로젝트를 생성할 수 있습니다.
 
-**콘솔 응용 프로그램(Win32) 마법사**를 사용하면 빈 프로젝트로 시작할 수 있습니다. **빈 프로젝트** 확인란을 선택합니다. 나중에 프로젝트에 새 파일과 기존 파일을 추가할 수 있습니다.
+**콘솔 애플리케이션(Win32) 마법사**를 사용하면 빈 프로젝트로 시작할 수 있습니다. **빈 프로젝트** 확인란을 선택합니다. 나중에 프로젝트에 새 파일과 기존 파일을 추가할 수 있습니다.
 
 프로젝트를 만들 때 프로젝트에 이름을 지정해야 합니다. 기본적으로 프로젝트 이름은 프로젝트에서 빌드된 DLL(동적 연결 라이브러리) 또는 실행 파일의 이름과 같습니다. 자세한 내용은 [솔루션 및 프로젝트 만들기](/visualstudio/ide/creating-solutions-and-projects)를 참조하세요.
 
@@ -51,13 +51,14 @@ C++ 컴파일러를 사용하여 메이크파일을 포함하거나 포함하지
 
 Microsoft Visual C++ 컴파일러는 Windows 운영 체제에 대한 프로그래밍을 지원하기 위해 표준 C++ 프로그래밍 언어에 대한 몇 가지 확장을 구현합니다. 이러한 확장은 특히 스토리지 클래스 특성, 함수 호출 규칙 및 기본 주소를 지정하는 데 사용됩니다. 지원되는 C++ 확장의 전체 목록은 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)를 참조하세요.
 
-`/Za` 컴파일러 옵션을 통해 C++에 대한 모든 Microsoft 전용 확장을 사용하지 않도록 설정할 수 있습니다. 이 옵션은 여러 플랫폼에서 실행할 코드를 작성하려는 경우에 권장됩니다. `/Za` 컴파일러 옵션에 대한 자세한 내용은 [/Za, /Ze(언어 확장명 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md)를 참조하세요. C++ 컴파일러 규칙에 대한 자세한 내용은 [Visual C++ 언어 규칙](../visual-cpp-language-conformance.md) 및 [비표준 동작](../cpp/nonstandard-behavior.md)을 참조하세요.
+
+  `/Za` 컴파일러 옵션을 통해 C++에 대한 모든 Microsoft 전용 확장을 사용하지 않도록 설정할 수 있습니다. 이 옵션은 여러 플랫폼에서 실행할 코드를 작성하려는 경우에 권장됩니다. `/Za` 컴파일러 옵션에 대한 자세한 내용은 [/Za, /Ze(언어 확장명 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md)를 참조하세요. C++ 컴파일러 규칙에 대한 자세한 내용은 [Visual C++ 언어 규칙](../visual-cpp-language-conformance.md) 및 [비표준 동작](../cpp/nonstandard-behavior.md)을 참조하세요.
 
 ## <a name="precompiled-headers"></a>미리 컴파일된 헤더
 
 Microsoft C 및 C++ 컴파일러는 인라인 코드를 포함하여 모든 C 또는 C++ 코드를 미리 컴파일하는 옵션을 제공합니다. 이 성능 기능을 사용하여 안정적인 코드 본문을 컴파일하고, 코드의 컴파일된 상태를 파일에 저장하고, 후속 컴파일 중 미리 컴파일된 코드와 아직 개발 중인 코드를 결합할 수 있습니다. 안정적인 코드는 다시 컴파일할 필요가 없기 때문에 각 후속 컴파일 속도가 향상됩니다.
 
-기본적으로 미리 컴파일된 코드는 stdafx.h 및 stdafx.cpp 파일에서 모두 지정됩니다. **미리 컴파일된 헤더** 옵션을 선택 취소하지 않으면 **새 프로젝트** 마법사가 자동으로 이러한 파일을 만듭니다. 미리 컴파일된 헤더에 대한 자세한 내용은 [미리 컴파일된 헤더 파일 만들기](../build/reference/creating-precompiled-header-files.md)를 참조하세요.
+기본적으로 미리 컴파일된 코드는 stdafx.h 및 stdafx.cpp 파일에서 모두 지정됩니다. **미리 컴파일된 헤더** 옵션을 선택 취소하지 않으면 **새 프로젝트** 마법사가 자동으로 이러한 파일을 만듭니다. 미리 컴파일된 헤더에 대한 자세한 내용은 [미리 컴파일된 헤더 파일 만들기](../build/creating-precompiled-header-files.md)를 참조하세요.
 
 ## <a name="related-sections"></a>관련 단원
 
@@ -65,4 +66,4 @@ Microsoft C 및 C++ 컴파일러는 인라인 코드를 포함하여 모든 C �
 
 ## <a name="see-also"></a>참고 항목
 
-[C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)
+[프로젝트 및 빌드 시스템](../build/projects-and-build-systems-cpp.md)

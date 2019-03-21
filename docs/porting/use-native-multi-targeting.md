@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++ native multi-targeting
 - upgrading Visual C++ applications, retargeting
 ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
-ms.openlocfilehash: a4bb059b13f2001c6691e8d051106aa5e11eccbd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57f7450537f7609cbc66f8adf0bc868631e15f3a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429155"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740825"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드
 
@@ -52,7 +52,7 @@ Visual Studio 2008에는 **VCBuild**라는 C++에 대한 자체 전용 빌드 �
 
 업그레이드가 완료될 때 로그 보고서에 프로젝트에 대한 오류 또는 경고가 있으면 이를 주의해서 검토합니다. **VCBuild**에서 **MSBuild**로 변환하면 문제가 발생할 수 있습니다. 보고서에 나열된 작업 항목을 이해하고 구현해야 합니다. **VCBuild**에서 **MSBuild**로 변환할 때 발생할 수 있는 업그레이드 로그 보고서 및 문제에 대한 자세한 내용은 이 [C++ 네이티브 멀티 타기팅](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) 블로그 게시물을 참조하세요.
 
-프로젝트 업그레이드가 완료되고 로그 파일에서 문제를 수정한 경우 솔루션은 실제로 최신 도구 집합을 대상으로 지정합니다. 마지막 단계로 Visual Studio 2008 도구 집합을 사용하도록 솔루션에서 각 프로젝트에 대한 속성을 변경합니다. 솔루션이 현재 버전의 Visual Studio에 로드된 경우 솔루션의 각 프로젝트에 대해 프로젝트 **속성 페이지** 대화 상자를 엽니다. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. **속성 페이지** 대화 상자에서 **구성** 드롭다운 값을 **모든 구성**으로 변경합니다. **구성 속성**에서 **일반**을 선택하고 **플랫폼 도구 집합**을 **Visual Studio 2008(v90)** 로 변경합니다.
+프로젝트 업그레이드가 완료되고 로그 파일에서 문제를 수정한 경우 솔루션은 실제로 최신 도구 집합을 대상으로 지정합니다. 마지막 단계로 Visual Studio 2008 도구 집합을 사용하도록 솔루션에서 각 프로젝트에 대한 속성을 변경합니다. 솔루션이 현재 버전의 Visual Studio에 로드된 경우 솔루션의 각 프로젝트에 대해 프로젝트 **속성 페이지** 대화 상자를 엽니다. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **속성**을 선택합니다. **속성 페이지** 대화 상자에서 **구성** 드롭다운 값을 **모든 구성**으로 변경합니다. **구성 속성**에서 **일반**을 선택하고 **플랫폼 도구 집합**을 **Visual Studio 2008(v90)** 로 변경합니다.
 
 이와 같이 변경한 후 Visual Studio 2008 컴파일러 및 라이브러리는 현재 버전의 Visual Studio에서 솔루션을 빌드할 때 프로젝트 이진 파일을 생성하는 데 사용됩니다.
 

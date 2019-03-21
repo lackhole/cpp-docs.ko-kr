@@ -5,12 +5,12 @@ helpviewer_keywords:
 - 32-bit code porting
 - upgrading Visual C++ applications, 32-bit code
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
-ms.openlocfilehash: 3b9740c47e7fc0b449bf53a11a0ba7a4486a9ce4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8848dca10a75bec6f5ff6251a3af5be8e9a7b6e6
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592818"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57816375"
 ---
 # <a name="upgrading-projects-from-earlier-versions-of-visual-c"></a>이전 버전의 Visual C++에서 프로젝트 업그레이드
 
@@ -33,9 +33,18 @@ ms.locfileid: "50592818"
 
 대상 Windows 버전을 업데이트하는 방법에 대한 자세한 내용은 [WINVER 및 _WIN32_WINNT 수정](../porting/modifying-winver-and-win32-winnt.md)을 참조하세요.
 
+## <a name="in-this-section"></a>단원 내용
+
+[코드를 유니버설 CRT로 업그레이드](upgrade-your-code-to-the-universal-crt.md)<br/>
+[WINVER 및 _WIN32_WINNT 수정](modifying-winver-and-win32-winnt.md)<br/>
+[라이브러리 내부 요소에 대한 종속성 해결](fix-your-dependencies-on-library-internals.md)<br/>
+[부동 소수점 마이그레이션 문제](floating-point-migration-issues.md)<br/>
+[Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](use-native-multi-targeting.md)<br/>
+[Visual C++ 기능은 Visual Studio 2019 미리 보기에서 사용되지 않음](features-deprecated-in-visual-studio.md)<br/>
+[빌드 시스템 변경 내용](build-system-changes.md)<br/>
+
 ## <a name="see-also"></a>참고 항목
 
-[빌드 시스템 변경 내용](../build/build-system-changes.md)<br/>
 [Visual Studio 2017의 Visual C++에 대한 새로운 기능](../what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual C++ 변경 기록 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
 [비표준 동작](../cpp/nonstandard-behavior.md)

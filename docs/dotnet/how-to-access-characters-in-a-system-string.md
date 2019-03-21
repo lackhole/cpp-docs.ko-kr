@@ -1,5 +1,5 @@
 ---
-title: '방법: System::String의 문자에 액세스'
+title: '방법: system:: string의 문자 액세스'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - examples [C++], strings
 - strings [C++], accessing characters
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
-ms.openlocfilehash: 6ecd3ed09e31e99898143e30ffe70c1c14aea9f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 68444b337710515ccf8ecb98157d144493978ecd
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667049"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738455"
 ---
-# <a name="how-to-access-characters-in-a-systemstring"></a>방법: System::String의 문자에 액세스
+# <a name="how-to-access-characters-in-a-systemstring"></a>방법: system:: string의 문자 액세스
 
 문자에 액세스할 수 있습니다는 <xref:System.String> 관리 되지 않는 고성능 호출에 대 한 개체 사용 하는 함수의 `wchar_t*` 문자열입니다. 메서드 생성의 첫 번째 문자는 내부 포인터는 <xref:System.String> 개체입니다. 이 포인터 수 직접 조작 또는 고정 되며 일반적인 필요한 함수에 전달 된 `wchar_t` 문자열입니다.
 
@@ -99,6 +99,6 @@ void deleteNode( ListNode ^ list, Int32 e ) {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

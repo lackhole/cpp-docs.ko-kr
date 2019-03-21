@@ -13,12 +13,12 @@ helpviewer_keywords:
 - banners, suppressing startup
 - NOLOGO linker option
 ms.assetid: 3b20dddd-eca6-4545-a331-9f70bf720197
-ms.openlocfilehash: 1b966c1f7af556a85aadcafaa8ed43da5b3f75df
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 0ef0c6f8e0073e7450daa8d0433ce4d6e82ceab8
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422158"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812501"
 ---
 # <a name="nologo-suppress-startup-banner-linker"></a>/NOLOGO(시작 배너 표시 안 함)(링커)
 
@@ -30,7 +30,7 @@ ms.locfileid: "57422158"
 
 /NOLOGO 옵션 저작권 메시지 및 버전 번호를 표시를 하지 않습니다.
 
-이 옵션에는 명령 파일의 에코 하지 않습니다. 자세한 내용은 참조 하세요 [LINK 명령 파일](../../build/reference/link-command-files.md)합니다.
+이 옵션에는 명령 파일의 에코 하지 않습니다. 자세한 내용은 참조 하세요 [LINK 명령 파일](linking.md)합니다.
 
 기본적으로이 정보는 출력 창에 링커를 통해 전송 됩니다. 명령줄에서 클래스는 표준 출력으로 전송 되 고 파일로 리디렉션할 수 있습니다.
 
@@ -44,5 +44,5 @@ ms.locfileid: "57422158"
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: PInvoke를 사용하여 구조체 마샬링'
+title: '방법: PInvoke를 사용 하는 구조체 마샬링'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - interop [C++], structures
 - marshaling [C++], structures
 ms.assetid: 35997e6f-9251-4af3-8c6e-0712d64d6a5d
-ms.openlocfilehash: e79eb343f81cf2d66e394be7561d2c9727c4c9ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d5c64a3e93cd85d7e38bac7c0ea3fa3c3301abc9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429112"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747997"
 ---
-# <a name="how-to-marshal-structures-using-pinvoke"></a>방법: PInvoke를 사용하여 구조체 마샬링
+# <a name="how-to-marshal-structures-using-pinvoke"></a>방법: PInvoke를 사용 하는 구조체 마샬링
 
 이 문서에서는 어떻게 네이티브 함수를 P/Invoke를 사용 하 여 관리 되는 함수에서 C 스타일 구조체를 호출할 수 있습니다. 대신 c + + Interop 기능을 사용 하는 것이 좋습니다 하지만 P/Invoke P/Invoke 거의 컴파일 타임 오류 보고를 제공 하기 때문에 형식이 안전한 아니며 관리 되지 않는 API는 DLL로 패키지 하 고 소스 코드에는 없는 경우 구현 되기 번거로울 수 있습니다. P/Invoke를 사용할 수 있는 유일한 옵션입니다. 다음 문서를 참조 하십시오.
 
@@ -131,6 +131,6 @@ int main() {
 [managed] x=50 y=50
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++에서 명시적 PInvoke 사용(DllImport 특성)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

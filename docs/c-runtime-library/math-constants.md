@@ -22,12 +22,12 @@ helpviewer_keywords:
 - M_SQRT2 constant
 - M_LN2 constant
 ms.assetid: db533c3f-6ae8-4520-9d35-c8fabbef3529
-ms.openlocfilehash: dae30ca5e44d00f5480431d5de2ea856047e0590
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd17004585e0238f36b939b19379ef62e349fac9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531983"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744159"
 ---
 # <a name="math-constants"></a>Math 상수
 
@@ -41,7 +41,7 @@ ms.locfileid: "50531983"
 #include <math.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 지정된 식의 값에 대해 다음 기호가 정의됩니다.
 

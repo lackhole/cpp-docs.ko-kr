@@ -1,8 +1,6 @@
-﻿---
+---
 title: Visual C++에서 MBCS 지원
 ms.date: 11/04/2016
-f1_keywords:
-- _mbcs
 helpviewer_keywords:
 - tools [C++], MBCS support
 - Asian languages [C++]
@@ -22,12 +20,12 @@ helpviewer_keywords:
 - Input Method Editor [C++]
 - MBCS [C++], enabling
 ms.assetid: 6179f6b7-bc61-4a48-9267-fb7951223e38
-ms.openlocfilehash: 0108068f15132fea38189e17371490a7c0dd5d8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f57e9feac7f129b3fb8653c7b1a2eacb021bf29
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465236"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818247"
 ---
 # <a name="mbcs-support-in-visual-c"></a>Visual C++에서 MBCS 지원
 
@@ -61,7 +59,7 @@ Visual C++ 디버거를 이용해 IME 메시지에 중단점을 설정할 수 �
 
 Spy++ 및 리소스 편집 도구와 같은 Visual C++ Windows 기반 도구는 IME 문자열을 완전하게 지원합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MBCS(멀티바이트 문자 집합) 지원](../text/support-for-multibyte-character-sets-mbcss.md)<br/>
+[멀티바이트 문자 집합(MBCS) 지원](../text/support-for-multibyte-character-sets-mbcss.md)<br/>
 [MBCS 프로그래밍 팁](../text/mbcs-programming-tips.md)

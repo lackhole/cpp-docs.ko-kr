@@ -35,12 +35,12 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-ms.openlocfilehash: d3c8a747c1e66490c333ff050c7bfa6e6f723a87
-ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
+ms.openlocfilehash: 0de53b102cf06d8b4541f54f961f84408664caed
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954902"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562798"
 ---
 # <a name="how-to-manage-symbols"></a>방법: 기호 관리
 
@@ -57,7 +57,7 @@ ms.locfileid: "56954902"
 
 기호 이름에 대한 제한은 다음과 같습니다.
 
-- 모든 [기호](../windows/symbols-resource-identifiers.md) 응용 프로그램의 범위 내에서 고유 해야 합니다. 이렇게 하면 헤더 파일에서 기호 정의 충돌을 방지할 수 있습니다.
+- 모든 [기호](../windows/symbols-resource-identifiers.md) 헤더 파일에서 기호 정의 충돌을 방지 하기 위해 응용 프로그램의 범위 내에서 고유 해야 합니다.
 
 - 기호 이름에 유효한 문자는 A-Z, a-z, 0-9 및 밑줄(_)입니다.
 
@@ -65,12 +65,14 @@ ms.locfileid: "56954902"
 
 - 기호 이름에 공백이 없어야 합니다.
 
-- 기호 이름은 대/소문자 구분, 아니지만 첫 번째 기호 정의의 대/소문자는 유지 합니다. 기호를 정의하는 헤더 파일은 리소스 컴파일러/편집기 및 C++ 프로그램에서 리소스 파일에 정의된 리소스를 참조하는 데 사용됩니다. 대/소문자만 다른 두 기호 이름에 대해 C++ 프로그램은 별도의 두 기호로 보지만 리소스 컴파일러/편집기는 두 이름이 하나의 단일 기호를 나타내는 것으로 봅니다.
+- 기호 이름은 대/소문자 구분, 아니지만 첫 번째 기호 정의의 대/소문자는 유지 합니다.
+
+   기호를 정의하는 헤더 파일은 리소스 컴파일러/편집기 및 C++ 프로그램에서 리소스 파일에 정의된 리소스를 참조하는 데 사용됩니다. 대/소문자만 다른 두 기호 이름에 대해 C++ 프로그램은 별도의 두 기호로 보지만 리소스 컴파일러/편집기는 두 이름이 하나의 단일 기호를 나타내는 것으로 봅니다.
 
 > [!NOTE]
 > 표준 기호 이름 체계를 따르지 않으면 (아래 keyword 되며 기호 이름이 리소스 스크립트 파일을 빌드하는 동안 리소스 스크립트 컴파일러에 알려진 키워드 하면 임의의 오류가 발생할 때 동일 하도록 진단 하기가 어렵습니다. 이를 방지하려면 표준 이름 지정 체계를 준수하세요.
 
-기호 이름에는 해당 이름이 나타내는 리소스 또는 개체의 종류를 나타내는 설명 접두사가 있습니다. 이러한 설명 접두사는 텍스트 조합 ID로 시작합니다. 다음 표에 표시 된 기호 명명 규칙을 사용 하는 Microsoft Foundation Class 라이브러리 (MFC):
+기호 이름에는 해당 이름이 나타내는 리소스 또는 개체의 종류를 나타내는 설명 접두사가 있습니다. 이러한 설명 접두사는 텍스트 조합 ID로 시작합니다. Microsoft Foundation 클래스 (MFC) 라이브러리 명명 규칙은 다음 표에 표시 된 기호를 사용 합니다.
 
 |범주|접두사|사용|
 |--------------|------------|---------|
@@ -83,7 +85,7 @@ ms.locfileid: "56954902"
 
 ### <a name="to-change-a-symbol-name-id"></a>기호 이름 (ID)를 변경 하려면
 
-1. [리소스 뷰](../windows/resource-view-window.md), 리소스를 선택 합니다.
+1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources), 리소스를 선택 합니다.
 
 1. 에 **속성** 창에서 새 기호 이름을 입력 하거나 기존 기호 목록에서 선택 합니다 **ID** 상자입니다.
 
@@ -103,11 +105,11 @@ ms.locfileid: "56954902"
 -3456
 ```
 
-리소스(액셀러레이터 키, 비트맵, 커서, 대화 상자, 아이콘, 메뉴, 문자열 테이블 및 버전 정보)에 대한 기호 값은 0에서 32,767 사이의 10진수여야 하며 16진수일 수 없습니다. 대화 상자 컨트롤이나 문자열 테이블의 개별 문자열 같이 리소스 일부에 대한 기호 값은 0에서 65,534 사이이거나 -32,768에서 32,767 사이일 수 있습니다.
+액셀러레이터 키, 비트맵, 커서, 대화 상자, 아이콘, 메뉴, 문자열 테이블 및 버전 정보를 0에서 32,767 사이의 10 진수 숫자 여야 16 진수일 수 없습니다 등의 리소스에 대 한 기호 값입니다. 대화 상자 컨트롤이나 문자열 테이블의 개별 문자열 같이 리소스 일부에 대한 기호 값은 0에서 65,534 사이이거나 -32,768에서 32,767 사이일 수 있습니다. 숫자 범위에 대 한 자세한 내용은 참조 하세요. [TN023: 표준 MFC 리소스](../mfc/tn023-standard-mfc-resources.md)합니다.
 
-리소스 기호는 16 비트 숫자입니다. 부호 있는 숫자나 부호 없는 입력할 수 있습니다, 부호 없는 정수로 내부적으로 사용 하는 반면 합니다. 따라서 음수는 해당 양수 값으로 캐스팅됩니다.
+리소스 기호는 16 비트 숫자입니다. 그러나 부호 있는 숫자나 부호 없는 입력할 수 있습니다, 사용 내부적으로 부호 없는 정수로 음수는 해당 양수 값으로 캐스팅 됩니다 있도록 합니다.
 
-다음은 기호 값에 대한 몇 가지 제한 사항입니다.
+기호 값의 일부 제한은 다음과 같습니다.
 
 - Visual Studio 개발 환경 및 MFC에서는 일부 숫자 범위를 특별한 용도로 사용합니다. 가장 중요한 비트 세트를 사용하는 모든 숫자(부호에 따라 -32,768 ~ -1 또는 32,768 ~ 65,534)는 MFC에 의해 예약되었습니다.
 
@@ -125,11 +127,9 @@ ms.locfileid: "56954902"
 
 - 응용 프로그램에 식으로 정의된 기호를 포함하는 기존 파일이 있을 수 있습니다.
 
-숫자 범위에 대 한 자세한 내용은 참조 하세요. [TN023: 표준 MFC 리소스](../mfc/tn023-standard-mfc-resources.md)합니다.
-
 ### <a name="to-change-a-symbol-value"></a>기호 값을 변경 하려면
 
-1. [리소스 뷰](../windows/resource-view-window.md), 리소스를 선택 합니다.
+1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources), 리소스를 선택 합니다.
 
 1. 에 **속성** 창, 형식 기호 이름 뒤에 등호 기호와 정수를 합니다 **ID** 상자 예를 들어:
 
@@ -149,12 +149,12 @@ ms.locfileid: "56954902"
 
 1. 기호 이름 또는 값에 제공 된 상자에서 편집 합니다 **기호 변경** 대화 상자.
 
-   > [!NOTE]
-   > 리소스 또는 개체에 할당 되는 기호를 변경 하려면 리소스 편집기를 사용 해야 하거나 **속성** 창입니다.
+> [!NOTE]
+> 리소스 또는 개체에 할당 되는 기호를 변경 하려면 리소스 편집기를 사용 해야 하거나 **속성** 창입니다.
 
 ### <a name="to-delete-an-unassigned-unused-symbol"></a>할당되지 않은(사용되지 않은) 기호를 삭제하려면
 
-에 [리소스 기호 대화 상자](../windows/resource-symbols-dialog-box.md), 삭제 및 선택 하려는 기호를 선택 **삭제**합니다.
+에 **리소스 기호** 대화 상자에서 기호를 삭제 하 고 선택 하려는 선택 **삭제**합니다.
 
 > [!NOTE]
 > 리소스 파일에는 사용 되지 않은 기호를 삭제 하기 전에 컴파일 시간에 포함 된 리소스 파일 또는 프로그램의 다른 곳에서 사용 되지 않습니다 해야 합니다.
@@ -185,7 +185,7 @@ ms.locfileid: "56954902"
 
 ### <a name="to-include-shared-read-only-symbols-in-your-resource-file"></a>리소스 파일에 공유(읽기 전용) 기호를 포함하려면
 
-1. [리소스 뷰](../windows/resource-view-window.md).rc 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 [리소스 내용](../windows/resource-includes-dialog-box.md) 바로 가기 메뉴에서.
+1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 선택 [리소스 내용](../windows/resource-includes-dialog-box.md)합니다.
 
 1. 에 **읽기 전용 기호 지시문** 상자를 사용 하 여는 `#include` 컴파일러 지시문을 읽기 전용 기호를 저장할 파일을 지정 합니다.
 
@@ -204,7 +204,7 @@ ms.locfileid: "56954902"
 
 ### <a name="to-change-the-name-of-the-resource-symbol-header-file"></a>리소스 기호 헤더 파일의 이름을 변경하려면
 
-1. [리소스 뷰](../windows/resource-view-window.md).rc 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 [리소스 내용](../windows/resource-includes-dialog-box.md) 바로 가기 메뉴에서.
+1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 선택 [리소스 내용](../windows/resource-includes-dialog-box.md)합니다.
 
 1. 에 **기호 헤더 파일** 포함 파일에 대 한 새 이름을 입력 합니다.
 

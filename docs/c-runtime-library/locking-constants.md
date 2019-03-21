@@ -19,12 +19,12 @@ helpviewer_keywords:
 - _LK_RLCK constant
 - LK_LOCK constant
 ms.assetid: c3dc92c8-60e3-4d29-9f50-5d217627c8ad
-ms.openlocfilehash: 721e2433a6d7a76ad73b0f52f033c3e04cab8f6d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d559a68e8fede6e0b6dd40505a041b14da703681
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526332"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738496"
 ---
 # <a name="locking-constants"></a>_locking 상수
 
@@ -34,7 +34,7 @@ ms.locfileid: "50526332"
 #include <sys/locking.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `_locking` 함수 호출에서 *mode* 인수는 수행할 잠금 작업을 지정합니다.
 

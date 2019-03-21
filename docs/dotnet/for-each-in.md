@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - for each keyword [C++]
 ms.assetid: 0c3a364b-2747-43f3-bb8d-b7d3b7023f79
-ms.openlocfilehash: 61ddf4f8dd4042f7be0b892b4fe239caa932a85e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5ee72e557c62e3db2eeb5dac4811133719183f6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532751"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746313"
 ---
 # <a name="for-each-in"></a>for each, in
 
@@ -26,7 +26,7 @@ ms.locfileid: "50532751"
 ### <a name="syntax"></a>구문
 
 > **각각에 대해 (** *형식을* *식별자* **에서** *식* **) {**<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;*문*<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;*statements*<br/>
 > **}**
 
 ### <a name="parameters"></a>매개 변수
@@ -37,15 +37,16 @@ ms.locfileid: "50532751"
 *identifier*<br/>
 반복 변수는 컬렉션 요소를 나타냅니다.  때 `identifier` 되는 [추적 참조 연산자](../windows/tracking-reference-operator-cpp-component-extensions.md), 요소를 수정할 수 있습니다.
 
-*식*<br/>
+*expression*<br/>
 배열 식 또는 컬렉션입니다. 컬렉션 요소는 컴파일러가 `identifier` 형식으로 변환할 수 있어야 합니다.
 
-*문*<br/>
+*statements*<br/>
 실행할 하나 이상의 문입니다.
 
 ### <a name="remarks"></a>설명
 
-`for each` 문은 컬렉션을 반복하는 데 사용됩니다. 컬렉션의 요소를 수정할 수 있지만 요소를 추가하거나 삭제할 수 없습니다.
+
+  `for each` 문은 컬렉션을 반복하는 데 사용됩니다. 컬렉션의 요소를 수정할 수 있지만 요소를 추가하거나 삭제할 수 없습니다.
 
 합니다 *문을* 배열 또는 컬렉션의 각 요소에 대해 실행 됩니다. 컬렉션의 모든 요소에 대해 반복이 완료된 후 제어가 `for each` 블록 다음 문으로 전달됩니다.
 
@@ -55,11 +56,11 @@ ms.locfileid: "50532751"
 
 - [for each를 사용하여 C++ 표준 라이브러리 컬렉션 반복](../dotnet/iterating-over-stl-collection-by-using-for-each.md)
 
-- [방법: for each로 배열 반복](../dotnet/how-to-iterate-over-arrays-with-for-each.md)
+- [방법: For each로 배열 반복](../dotnet/how-to-iterate-over-arrays-with-for-each.md)
 
-- [방법: for each로 제네릭 컬렉션 반복](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)
+- [방법: For each로 제네릭 컬렉션 반복](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)
 
-- [방법: for each로 사용자 정의 컬렉션 반복](../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md)
+- [방법: For each를 사용 하 여 사용자 정의 컬렉션 반복](../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md)
 
 ## <a name="windows-runtime"></a>Windows 런타임
 
@@ -107,11 +108,11 @@ Testing
 
 ## <a name="common-language-runtime"></a>공용 언어 런타임
 
-**주의**
+**설명**
 
 CLR 구문은 동일 합니다 **모든 런타임** 구문을 다음과 같이 제외 합니다.
 
-*식*<br/>
+*expression*<br/>
 관리되는 배열 식 또는 컬렉션입니다. 컬렉션 요소는 컴파일러에서 변환할 수 있도록 해야 합니다. <xref:System.Object> 에 *식별자* 형식입니다.
 
 *식* 를 구현 하는 형식으로 계산 될 <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, 또는 정의 하는 형식을 `GetEnumerator` 구현 하는 형식을 반환 하거나 하는 메서드가 <xref:System.Collections.IEnumerator> 에정의된메서드의모든선언또는`IEnumerator`.
@@ -157,6 +158,6 @@ abcd
 Testing
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

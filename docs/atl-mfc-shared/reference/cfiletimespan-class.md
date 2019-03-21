@@ -11,12 +11,12 @@ helpviewer_keywords:
 - shared classes, CFileTimeSpan
 - CFileTimeSpan class
 ms.assetid: 5856fb39-9c82-4027-8ccf-8760890491ec
-ms.openlocfilehash: 8d384ced5de588a348eb72b9852697694b370ee4
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 001e6ddc78a41e118949e9b750b78609f3ff9e92
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894161"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746437"
 ---
 # <a name="cfiletimespan-class"></a>CFileTimeSpan 클래스
 
@@ -305,7 +305,7 @@ void SetTimeSpan(LONGLONG nSpan) throw();
 *nSpan*<br/>
 밀리초 단위의 시간 범위에 대 한 새 값입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
 [CFileTime 클래스](../../atl-mfc-shared/reference/cfiletime-class.md)<br/>

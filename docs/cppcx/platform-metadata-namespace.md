@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Metadata Namespace
 ms.assetid: e3e114d8-a4b0-47f0-865a-9ce9d7212e86
-ms.openlocfilehash: 39a4709c8f66c4dcc2ee5185f2a1df27b0666445
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9626b3a9d28d28fd52a0d2295af8fda8855cd90c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462870"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739459"
 ---
 # <a name="platformmetadata-namespace"></a>Platform::Metadata 네임스페이스
 
@@ -37,7 +37,7 @@ namespace Platform {
 |[Platform::Metadata::FlagsAttribute Attribute](../cppcx/platform-metadata-flagsattribute-attribute.md)Flags|열거형을 비트 필드의 열거형으로 선언합니다.<br /><br /> 다음 예제에서는 열거형에 `Flags` 특성을 적용하는 방법을 보여 줍니다.<br /><br /> `[Flags] enum class MyEnumeration { enumA = 1, enumB = 2, enumC = 3}`|
 |[Platform::Metadata::RuntimeClassNameAttribute](../cppcx/platform-metadata-runtimeclassname.md)|private ref 클래스에 유효한 런타임 클래스 이름이 있는지 확인합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Platform`
 
@@ -45,8 +45,8 @@ namespace Platform {
 
 **메타데이터:** platform.winmd
 
-**네임스페이스:** Platform::Metadata
+**네임스페이스:** Platform:: metadata
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

@@ -5,21 +5,22 @@ helpviewer_keywords:
 - warnings, compiler
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-ms.openlocfilehash: 48c18ce5af758e1329f149bc49969dad733af88f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e189ead864fe2be6e0ccb3bc76a58f2441740076
+ms.sourcegitcommit: a901c4acbfc80ca10663d37c09921f04c5b6dd17
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651375"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58142549"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>기본적으로 해제 되어 있는 컴파일러 경고
-컴파일러는 대부분의 개발자 표시 하지 않으려는 때문에 기본적으로 해제 되어 있는 경고를 포함 합니다. 일부 경우에는 선택 하는 스타일을 나타내는 일반적인 관용구 이전 코드에서 되거나 언어에 대 한 Microsoft 확장을 활용 합니다. 다른 경우에 영역 프로그래머에 게 예기치 않은 또는 정의 되지 않은 동작이 발생할 수 있는 잘못 된 가정을 자주 확인 되는 위치를 나타냅니다. 이러한 경고의 일부는 매우 라이브러리 헤더에서 노이즈가 발생할 수 있습니다. C 런타임 라이브러리 및 c + + 표준 라이브러리는 경고 수준 에서만 경고 없이 내보낼 [/w4](../build/reference/compiler-option-warning-level.md)합니다.
+
+컴파일러는 대부분의 개발자 액세스 하지 유용 하지 때문에 기본적으로 해제 되어 있는 경고를 지원 합니다. 경우에 따라 이전 코드에서 일반적인 관용구 또는 선택 하는 스타일에 대 한 경고는 합니다. 언어에 대 한 Microsoft 확장 사용에 대 한 다른 경고는입니다. 다른 경우에 영역 프로그래머에 게 예기치 않은 또는 정의 되지 않은 동작이 발생할 수 있는 잘못 된 가정을 자주 확인 되는 위치를 나타냅니다. 사용 하도록 설정 하는 경우 라이브러리 헤더에 여러 번 나타날 수 있습니다 이러한 경고 중. C 런타임 라이브러리 및 c + + 표준 라이브러리는 경고 수준 에서만 경고 없이 내보낼 [/w4](../build/reference/compiler-option-warning-level.md)합니다.
 
 ## <a name="enable-warnings-that-are-off-by-default"></a>기본적으로 해제 되어 있는 경고를 사용 하도록 설정
 
 일반적으로 기본적으로 해제 되어 다음 옵션 중 하나를 사용 하 여 경고를 설정할 수 있습니다.
 
-- **#pragma 경고 (기본값:** *warning_number* **)**
+- **#pragma warning(default :** *warning_number* **)**
 
    지정된 된 경고 (*warning_number*) 기본 수준에서 사용 가능 합니다. 경고 설명서에 경고의 기본 수준이 포함되어 있습니다.
 
@@ -33,7 +34,7 @@ ms.locfileid: "50651375"
 
 - [/w*Lnnnn*](../build/reference/compiler-option-warning-level.md)
 
-   이 경고를 통해 *nnnn* 수준 *L*합니다.
+   이 옵션을 사용 하면 경고 *nnnn* 수준 *L*합니다.
 
 ## <a name="warnings-that-are-off-by-default"></a>기본적으로 해제 되어 있는 경고
 
@@ -43,7 +44,8 @@ ms.locfileid: "50651375"
 |-|-|
 |[C4061](../error-messages/compiler-warnings/compiler-warning-level-4-c4061.md) (수준 4)|열거자 '*식별자*열거형의 스위치' 에서'*열거형*' case 레이블에 의해 명시적으로 처리 하지 않습니다|
 |[C4062](../error-messages/compiler-warnings/compiler-warning-level-4-c4062.md) (수준 4)|열거자 '*식별자*열거형의 스위치' 에서'*열거형*' 처리 되지 않습니다|
-|C4191(수준 3)|'*연산자*': 안전 하지 않은 변환 '*type_of_expression*'to'*type_required*'|
+| [C4165](../error-messages/compiler-warnings/compiler-warning-level-1-c4165.md) (수준 1) | 'Bool'; 'HRESULT' 변환 되는 원하는 작업 인지 입니까? |
+| [C4191](../error-messages/compiler-warnings/compiler-warning-level-3-c4191.md) (수준 3)|'*연산자*': 안전 하지 않은 변환 '*type_of_expression*'to'*type_required*'|
 |[C4242](../error-messages/compiler-warnings/compiler-warning-level-4-c4242.md) (수준 4)|'*식별자*': 변환할 '*type1*'to'*type2*', 데이터 손실 될 수 있습니다|
 |[C4254](../error-messages/compiler-warnings/compiler-warning-level-4-c4254.md) (수준 4)|'*연산자*': 변환할 '*type1*'to'*type2*', 데이터 손실 될 수 있습니다|
 |[C4255](../error-messages/compiler-warnings/compiler-warning-level-4-c4255.md) (수준 4)|'*함수*': 함수 프로토타입을 입력 하지 않았습니다. '()'에서 '(void)'로 변환|
@@ -64,7 +66,7 @@ ms.locfileid: "50651375"
 |C4388 (수준 4)|signed 또는 unsigned가 일치하지 않습니다.|
 |[C4412](../error-messages/compiler-warnings/compiler-warning-level-2-c4412.md) (수준 2)|'*함수*': 함수 시그니처에 형식 '*형식*'; C + + 개체는 순수 코드 간에 전달 하는 안전 하지 않은 혼합형 / 네이티브|
 |C4426 (수준 1)|헤더를 포함 한 후 변경 된 최적화 플래그 #pragma optimize () 때문일 수 있습니다 <sup>14.1</sup>|
-|[C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (수준 4)|'*class1*': 가상 기본으로 인해/vd2의 개체 레이아웃이 변경 됩니다 '*class2*'|
+|[C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (수준 4)|'*class1*' : 가상 기본으로 인해/vd2의 개체 레이아웃이 변경 됩니다 '*class2*'|
 |[C4437](../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md) (수준 4)|가상 기본 사이의 dynamic_cast가 '*class1*'to'*class2*' 일부 컨텍스트에서 실패할 수 있습니다|
 |C4444 (수준 3)|이 컨텍스트에서는 최상위 '__unaligned'가 구현되지 않았습니다.|
 |[C4464](../error-messages/compiler-warnings/c4464.md) (수준 4)|include에 상대 경로 '..'|
@@ -97,6 +99,7 @@ ms.locfileid: "50651375"
 |[C4626](../error-messages/compiler-warnings/compiler-warning-level-4-c4626.md) (수준 4)|'derived class': 기본 클래스의 대입 연산자에 액세스할 수 없으므로 대입 연산자를 생성할 수 없습니다.|
 |[C4628](../error-messages/compiler-warnings/compiler-warning-level-1-c4628.md) (수준 1)|-Ze에는 digraph가 지원되지 않습니다. 문자 시퀀스 '*digraph*'에 대 한 대체 토큰으로 해석 되지 않는'*char*'|
 |[C4640](../error-messages/compiler-warnings/compiler-warning-level-3-c4640.md) (수준 3)|'*인스턴스*': 지역 정적 개체를 생성할 때 스레드로부터 안전한 아닙니다.|
+| C4643 (수준 4) | 정방향 선언 '*식별자*' 네임 스페이스 표준 c + + 표준에서 허용 되지 않습니다. <sup>15.8</sup> |
 |C4647 (수준 3)|동작 변경: __is_pod (*형식*) 이전 버전에 다른 값|
 |C4654 (수준 4)|앞에 배치 하는 코드에는 미리 컴파일된 헤더 포함 줄은 무시 됩니다. 미리 컴파일된 헤더에 코드를 추가 합니다. <sup>14.1</sup>|
 |[C4668](../error-messages/compiler-warnings/compiler-warning-level-4-c4668.md) (수준 4)|'*기호*'에 대해 '0'으로 바꾸기 전처리기 매크로로 정의 되지 않은'*지시문*'|
@@ -112,7 +115,9 @@ ms.locfileid: "50651375"
 |C4774 (수준 4)|'*문자열*': 서식 문자열 인수에 예상 *번호* 이 문자열 리터럴|
 |C4777 (수준 4)|'*함수*': 서식 문자열 '*문자열*'형식의 인수가 필요 합니다.'*type1*', 하지만 variadic 인수 *번호* 형식이 '*type2*'|
 |C4786 (수준 3)|'*기호*': 개체 이름이 잘렸습니다 '*번호*' 디버그 정보에는 문자|
+| [C4800](../error-messages/compiler-warnings/compiler-warning-level-3-c4800.md) (수준 4) | 암시적 변환에서 '*형식*' bool로 합니다. 가능한 정보 손실 <sup>16.0</sup> |
 |[C4820](../error-messages/compiler-warnings/compiler-warning-level-4-c4820.md) (수준 4)|'*바이트*'바이트 채움 문자가 추가 됨' 구문 뒤*member_name*'|
+| [C4822](../error-messages/compiler-warnings/compiler-warning-level-1-c4822.md) (수준 1) | '*멤버*': 지역 클래스 멤버 함수에 본문이 없습니다. |
 |C4826 (수준 2)|변환에서 '*type1*'to'*type2*' 부호가 확장 됩니다. 이 예기치 않은 런타임 동작이 발생할 수 있습니다.|
 |C4837 (수준 4)|삼중 자가 발견 되었습니다. '?? *문자*'로 대체'*문자*'|
 |C4841 (수준 4)|비표준 확장이 사용 됨: 복합 멤버 지정 자가 offsetof에에서 사용|
@@ -150,6 +155,10 @@ ms.locfileid: "50651375"
 <sup>15.3</sup> 이 경고는 Visual Studio 2017 버전 15.3부터 사용할 수 있습니다.<br/>
 <sup>15.5</sup> 이 경고는 Visual Studio 2017 버전 15.5부터 사용할 수 있습니다.<br/>
 <sup>15.7</sup> 이 경고는 Visual Studio 2017 버전 15.7부터 사용할 수 있습니다.<br/>
+<sup>15.8</sup> 이 경고는 Visual Studio 2017 버전 15.8부터 사용할 수 있습니다.<br/>
+::: moniker range=">= vs-2019"
+<sup>16.0</sup> 이 경고는 Visual Studio 2019 RTM부터 사용할 수 있습니다.<br/>
+::: moniker-end
 <sup>권한</sup> 하지 않는 한이 경고는 해제 되어 합니다 [관대 한 /-](../build/reference/permissive-standards-conformance.md) 컴파일러 옵션을 설정 합니다.<br/>
 
 ## <a name="warnings-off-by-default-in-earlier-versions"></a>이전 버전에서 기본적으로 해제 경고
@@ -167,7 +176,7 @@ ms.locfileid: "50651375"
 
 |||
 |-|-|
-|[C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (수준 4)|형식 지정자가 없습니다. int로 가정합니다. 참고: C에서는 더 이상 기본 int를 지원하지 않습니다.|
+|[C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (수준 4)|형식 지정자가 없습니다. int로 가정합니다. 참고: C 기본 int를 더 이상 지원|
 
 ## <a name="see-also"></a>참고 항목
 

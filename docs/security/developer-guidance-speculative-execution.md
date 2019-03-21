@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Spectre
 - CVE-2017-5753
 - Speculative Execution
-ms.openlocfilehash: 94e55f08e4ff427aef0c93bf74c711a6fd935d0a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 20e6d45c088fe92fa736539e485d6807802b368a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631037"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750548"
 ---
 # <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>투기적 실행 쪽 채널에 대 한 c + + 개발자 지침
 
@@ -310,7 +310,7 @@ A *추론 장벽을* 아키텍처 경로 따라 계속에서 투기적 실행을
 
 |아키텍처|추론 장벽을 CVE 2017-5753에 대해 내장 함수|추론 장벽을 CVE-2018-3639 내장 함수|
 |----------------|----------------|----------------|
-|x86 x64|_mm_lfence()|_mm_lfence()|
+|x86/x64|_mm_lfence()|_mm_lfence()|
 |ARM|현재 사용할 수 없음|__dsb(0)|
 |ARM64|현재 사용할 수 없음|__dsb(0)|
 
@@ -356,7 +356,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 투기적 실행 쪽 채널 취약성을 완화 하기 위해 사용할 수 있는 또 다른 방법은 메모리에서 중요 한 정보를 제거 하는 것입니다. 소프트웨어 개발자는 투기적 실행 하는 동안 중요 한 정보에 액세스할 수 없는 응용 프로그램을 리팩터링 하는 기회 찾을 수 있습니다. 이 별도 프로세스에 중요 한 정보를 격리 하는 응용 프로그램의 디자인을 리팩터링에서 수행할 수 있습니다. 예를 들어, 웹 브라우저 응용 프로그램을 하나의 프로세스 투기적 실행을 통해 크로스-원본 데이터에 액세스할 수 없도록 방지 하는 별도 프로세스에 사용 하 여 각 웹 연결 된 데이터를 격리 하려고 할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [투기적 실행 사이드 채널 취약성을 완화 하기 위한 지침](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)<br/>
 [투기적 실행 쪽 채널 하드웨어 취약성을 완화 하기](https://blogs.technet.microsoft.com/srd/2018/03/15/mitigating-speculative-execution-side-channel-hardware-vulnerabilities/)

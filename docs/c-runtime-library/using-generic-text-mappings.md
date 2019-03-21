@@ -27,22 +27,22 @@ helpviewer_keywords:
 - UNICODE constant
 - _T type
 ms.assetid: 2848121c-e51f-4b9b-a2e6-833ece4b0cb3
-ms.openlocfilehash: b39e8563797ca0b57b54d2c85f851c8c45b29905
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aa6827607430bf8f0db37997bac0223833fcd171
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471450"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747932"
 ---
 # <a name="using-generic-text-mappings"></a>일반 텍스트 매핑 사용
 
 **Microsoft 전용**
 
-Microsoft 런타임 라이브러리는 다양한 해외 시장을 겨냥하여 코드 개발을 간소화하기 위해 다양한 데이터 형식, 루틴 및 기타 개체에 대해 Microsoft 전용 "일반 텍스트" 매핑을 제공합니다. 이러한 매핑은 TCHAR.H에 정의됩니다. 이러한 이름 매핑을 사용하면 `#define` 문을 사용하여 정의하는 매니페스트 상수에 따라, 세 가지 종류의 문자 집합, 즉 ASCII(SBCS), MBCS 또는 유니코드용으로 컴파일할 수 있는 일반 코드를 쓸 수 있습니다. 제네릭 텍스트 매핑은 ANSI와 호환되지 않는 Microsoft 확장입니다.
+Microsoft 런타임 라이브러리는 다양한 해외 시장을 겨냥하여 코드 개발을 간소화하기 위해 다양한 데이터 형식, 루틴 및 기타 개체에 대해 Microsoft 전용 "일반 텍스트" 매핑을 제공합니다. 이러한 매핑은 TCHAR.H에 정의됩니다. 다음과 같은 이름 매핑을 사용하여 세 종류의 문자 세트에 대해 컴파일될 수 있는 제네릭 코드를 작성할 수 있습니다. 여기서 세 가지 문자 세트는 `#define` 문을 사용하여 정의한 매니페스트 상수에 따라 ASCII (SBCS), MBCS 또는 유니코드입니다. 제네릭 텍스트 매핑은 ANSI와 호환되지 않는 Microsoft 확장입니다.
 
 ### <a name="preprocessor-directives-for-generic-text-mappings"></a>일반 텍스트 매핑용 전처리기 지시문
 
-|#define|컴파일 버전|예|
+|#define|컴파일 버전|예제|
 |--------------|----------------------|-------------|
 |`_UNICODE`|유니코드(와이드 문자)|`_tcsrev`는 `_wcsrev`에 매핑됩니다.|
 |`_MBCS`|멀티바이트 문자|`_tcsrev`는 `_mbsrev`에 매핑됩니다.|

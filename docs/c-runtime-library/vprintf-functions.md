@@ -15,12 +15,12 @@ helpviewer_keywords:
 - vprintf function
 - formatted text [C++]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
-ms.openlocfilehash: da4f2c8586085e57925d277c452d6ed28db467d5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c45197c9008c2d0b6a0519d947ca75f55a7960fd
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573240"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747848"
 ---
 # <a name="vprintf-functions"></a>vprintf 함수
 
@@ -35,7 +35,7 @@ ms.locfileid: "50573240"
 |[_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l](../c-runtime-library/reference/vsprintf-p-vsprintf-p-l-vswprintf-p-vswprintf-p-l.md)|[vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](../c-runtime-library/reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md)|
 |[_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|[_vsnprintf, _vsnwprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md)|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `vprintf` 함수는 다음 표에 나열된 상대 함수와 비슷합니다. 그러나 각 `vprintf` 함수는 인수 목록에 대한 포인터를 수락하지만 각 상대 함수는 인수 목록을 수락합니다.
 
@@ -43,30 +43,30 @@ ms.locfileid: "50573240"
 
 |함수|상대 함수|출력 대상|매개 변수 유효성 검사|위치 매개 변수 지원|
 |--------------|--------------------------|------------------------|--------------------------|----------------------------------|
-|`_vcprintf`|[_cprintf](../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|콘솔|Null인지 확인합니다.|아니요|
-|`_vcwprintf`|[_cwprintf](../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|콘솔|Null인지 확인합니다.|아니요|
-|`vfprintf`|[fprintf](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*Stream*|Null인지 확인합니다.|아니요|
+|`_vcprintf`|[_cprintf](../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|콘솔|Null인지 확인합니다.|no|
+|`_vcwprintf`|[_cwprintf](../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|콘솔|Null인지 확인합니다.|no|
+|`vfprintf`|[fprintf](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*Stream*|Null인지 확인합니다.|no|
 |**vfprintf_p**|[fprintf_p](../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)|*Stream*|Null 및 유효한 형식인지 확인합니다.|예|
-|`vfprintf_s`|[fprintf_s](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*Stream*|Null 및 유효한 형식인지 확인합니다.|아니요|
-|`vfwprintf`|[fwprintf](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*Stream*|Null인지 확인합니다.|아니요|
+|`vfprintf_s`|[fprintf_s](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*Stream*|Null 및 유효한 형식인지 확인합니다.|no|
+|`vfwprintf`|[fwprintf](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*Stream*|Null인지 확인합니다.|no|
 |**vfwprintf_p**|[fwprintf_p](../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)|*Stream*|Null 및 유효한 형식인지 확인합니다.|예|
-|`vfwprintf_s`|[fwprintf_s](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*Stream*|Null 및 유효한 형식인지 확인합니다.|아니요|
-|`vprintf`|[printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)|`Stdout`|Null인지 확인합니다.|아니요|
+|`vfwprintf_s`|[fwprintf_s](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*Stream*|Null 및 유효한 형식인지 확인합니다.|no|
+|`vprintf`|[printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)|`Stdout`|Null인지 확인합니다.|no|
 |**vprintf_p**|[printf_p](../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)|`Stdout`|Null 및 유효한 형식인지 확인합니다.|예|
-|`vprintf_s`|[printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`Stdout`|Null 및 유효한 형식인지 확인합니다.|아니요|
+|`vprintf_s`|[printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`Stdout`|Null 및 유효한 형식인지 확인합니다.|no|
 |`vwprintf`|[wprintf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)|`Stdout`|Null인지 확인합니다.|아니요|
 |**vwprintf_p**|[wprintf_p](../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)|`Stdout`|Null 및 유효한 형식인지 확인합니다.|예|
-|`vwprintf_s`|[wprintf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`Stdout`|Null 및 유효한 형식인지 확인합니다.|아니요|
-|**vsprintf**|[sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|아니요|
+|`vwprintf_s`|[wprintf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`Stdout`|Null 및 유효한 형식인지 확인합니다.|no|
+|**vsprintf**|[sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|no|
 |**vsprintf_p**|[sprintf_p](../c-runtime-library/reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)|*buffer*로 가리키는 메모리|Null 및 유효한 형식인지 확인합니다.|예|
-|`vsprintf_s`|[sprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|*buffer*로 가리키는 메모리|Null 및 유효한 형식인지 확인합니다.|아니요|
-|`vswprintf`|[swprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|아니요|
+|`vsprintf_s`|[sprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|*buffer*로 가리키는 메모리|Null 및 유효한 형식인지 확인합니다.|no|
+|`vswprintf`|[swprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|no|
 |**vswprintf_p**|[swprintf_p](../c-runtime-library/reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)|*buffer*로 가리키는 메모리|Null 및 유효한 형식인지 확인합니다.|예|
-|`vswprintf_s`|[swprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|*buffer*로 가리키는 메모리|Null 및 유효한 형식인지 확인합니다.|아니요|
-|`_vscprintf`|[_vscprintf](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|아니요|
-|`_vscwprintf`|[_vscwprintf](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|아니요|
-|`_vsnprintf`|[_snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|아니요|
-|`_vsnwprintf`|[_snwprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|아니요|
+|`vswprintf_s`|[swprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|*buffer*로 가리키는 메모리|Null 및 유효한 형식인지 확인합니다.|no|
+|`_vscprintf`|[_vscprintf](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|no|
+|`_vscwprintf`|[_vscwprintf](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|no|
+|`_vsnprintf`|[_snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|no|
+|`_vsnwprintf`|[_snwprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|*buffer*로 가리키는 메모리|Null인지 확인합니다.|no|
 
 `argptr` 인수 형식은 VARARGS.H 및 STDARG.H에 정의된 `va_list`입니다. `argptr` 변수는 **va_start**에 의해 초기화되어야 하고 후속 `va_arg` 호출로 다시 초기화할 수 있습니다. `argptr`은 인수 목록의 맨 처음을 가리킵니다. 이러한 인수는 *format* 인수에 지정된 해당 사양에 따라 출력을 위해 변환 및 전송됩니다. *format*은 [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)에 대한 *format* 인수와 같은 양식 및 함수를 갖습니다. 이러한 함수는 `va_end`를 호출하지 않습니다. 각 `vprintf` 함수에 대한 자세한 설명을 보려면 앞의 표에 나열된 상대 함수에 대한 설명을 참조하세요.
 

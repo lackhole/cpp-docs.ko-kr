@@ -1,19 +1,19 @@
 ---
-title: 멤버 Access Control(C++)
+title: 멤버 액세스 제어(C++)
 ms.date: 11/19/2018
 helpviewer_keywords:
 - access control [C++]
 - member access [C++]
 - member-access control [C++]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
-ms.openlocfilehash: 546b23b939078c723084bdfc659ff4fd3216b479
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 367ee5183498453b9ce647c8e91ad1194f90fbd2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176227"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740275"
 ---
-# <a name="member-access-control-c"></a>멤버 Access Control(C++)
+# <a name="member-access-control-c"></a>멤버 액세스 제어(C++)
 
 액세스 제어를 사용 하면 분리할 수는 [공개](../cpp/public-cpp.md) 에서 클래스의 인터페이스는 [개인](../cpp/private-cpp.md) 구현 세부 정보 및 [보호](../cpp/protected-cpp.md) 멤버에 대해서만 사용 하 여 파생된 클래스입니다. 액세스 지정자는 다음 액세스 지정자가 나타날 때까지 해당 액세스 지정자 뒤에 선언된 모든 멤버에 적용됩니다.
 
@@ -37,7 +37,7 @@ protected:      // Declare protected function for derived classes only.
 
 기본 액세스가 **사설** 클래스에서 및 **공용** 구조체 또는 공용 구조체에서. 클래스의 액세스 지정자는 순서에 관계없이 여러 번 사용할 수 있습니다. 클래스 형식 개체의 저장소 할당은 구현에 따라 다르지만 액세스 지정자 사이의 더 높은 메모리 주소가 연속적으로 멤버에 할당됩니다.
 
-## <a name="member-access-control"></a>멤버 액세스 제어
+## <a name="member-access-control"></a>멤버 Access Control
 
 |액세스 형식|의미|
 |--------------------|-------------|
@@ -50,7 +50,7 @@ protected:      // Declare protected function for derived classes only.
 > [!NOTE]
 >  액세스 제어는 모든 이름(멤버 함수, 멤버 데이터, 중첩 클래스 및 열거자)에 동일하게 적용 가능합니다.
 
-## <a name="access-control-in-derived-classes"></a>파생 클래스의 액세스 제어
+## <a name="access-control-in-derived-classes"></a>파생 클래스의 Access Control
 
 파생 클래스에서 액세스할 수 있는 기본 클래스의 멤버는 두 가지 요인으로 인해 결정됩니다. 이와 동일한 요인이 파생 클래스의 상속된 멤버에 대한 액세스도 결정합니다.
 
@@ -62,7 +62,7 @@ protected:      // Declare protected function for derived classes only.
 
 ### <a name="member-access-in-base-class"></a>기본 클래스의 멤버 액세스
 
-|private|protected|공용|
+|private|protected|Public|
 |-------------|---------------|------------|
 |파생 액세스에 관계없이 항상 액세스할 수 없음|전용 파생을 사용하는 경우 파생 클래스에서 전용|전용 파생을 사용하는 경우 파생 클래스에서 전용|
 ||보호된 파생을 사용하는 경우 파생 클래스에서 보호됨|보호된 파생을 사용하는 경우 파생 클래스에서 보호됨|
@@ -112,9 +112,11 @@ int main()
 }
 ```
 
-`DerivedClass1`에서는 `PublicFunc`가 공용 기본 클래스이므로 멤버 함수 `ProtectedFunc`가 공용 멤버이고 `BaseClass`가 보호된 멤버입니다. `PrivateFunc`는 `BaseClass` 전용이며 모든 파생 클래스에서 액세스할 수 없습니다.
 
-`DerivedClass2`에서는 `PublicFunc`가 전용 기본 클래스이므로 `ProtectedFunc` 및 `BaseClass` 함수가 전용 멤버로 간주됩니다. 여기서도 `PrivateFunc`는 `BaseClass` 전용이며 모든 파생 클래스에서 액세스할 수 없습니다.
+  `DerivedClass1`에서는 `PublicFunc`가 공용 기본 클래스이므로 멤버 함수 `ProtectedFunc`가 공용 멤버이고 `BaseClass`가 보호된 멤버입니다. `PrivateFunc`는 `BaseClass` 전용이며 모든 파생 클래스에서 액세스할 수 없습니다.
+
+
+  `DerivedClass2`에서는 `PublicFunc`가 전용 기본 클래스이므로 `ProtectedFunc` 및 `BaseClass` 함수가 전용 멤버로 간주됩니다. 여기서도 `PrivateFunc`는 `BaseClass` 전용이며 모든 파생 클래스에서 액세스할 수 없습니다.
 
 파생 클래스는 기본 클래스 액세스 지정자 없이 선언할 수 있습니다. 이러한 경우에 파생 파생된 클래스 선언에서 사용 하는 경우 개인 비율은 합니다 **클래스** 키워드입니다. 파생은 파생된 클래스 선언에서 사용 하는 경우에 공용으로 간주 됩니다 합니다 **구조체** 키워드입니다. 예를 들어, 다음 코드는
 
@@ -187,7 +189,8 @@ int Derived2::ShowCount()
 }
 ```
 
-위 코드에서는 액세스 제어가 `Derived2`에 대한 포인터를 `Base`에 대한 포인터로 변환하지 못하도록 합니다. **이렇게** 포인터는 암시적으로 형식이 `Derived2 *`합니다. 선택 하는 `CountOf` 함수를 **이** 형식으로 변환 해야 `Base *`합니다. `Base`가 `Derived2`에 대한 전용 간접 기본 클래스이므로 이러한 변환이 허용되지 않습니다. 직접 파생 클래스에 대한 포인터에 대해서만 전용 기본 클래스 형식으로 변환할 수 있습니다. 따라서 `Derived1 *`형식의 포인터를 `Base *` 형식으로 변환할 수 있습니다.
+위 코드에서는 액세스 제어가 `Derived2`에 대한 포인터를 `Base`에 대한 포인터로 변환하지 못하도록 합니다. **이렇게** 포인터는 암시적으로 형식이 `Derived2 *`합니다. 선택 하는 `CountOf` 함수를 **이** 형식으로 변환 해야 `Base *`합니다. 
+  `Base`가 `Derived2`에 대한 전용 간접 기본 클래스이므로 이러한 변환이 허용되지 않습니다. 직접 파생 클래스에 대한 포인터에 대해서만 전용 기본 클래스 형식으로 변환할 수 있습니다. 따라서 `Derived1 *`형식의 포인터를 `Base *` 형식으로 변환할 수 있습니다.
 
 선택하기 위한 포인터, 참조 또는 개체를 사용하지 않고 `CountOf` 함수를 명시적으로 호출하면 변환이 수행되지 않습니다. 따라서 호출이 허용됩니다.
 
@@ -237,8 +240,9 @@ int main()
 ![상속 그래프의 경로 따라 액세스](../cpp/media/vc38v91.gif "상속 그래프의 경로 따라 액세스") <br/>
 상속 그래프의 경로를 따라 액세스
 
-그림에서 클래스 `VBase`에 선언된 이름은 언제나 클래스 `RightPath`를 통해 도달됩니다.  `RightPath`는 `VBase`를 공용 기본 클래스로 선언하지만, `LeftPath`는 `VBase`를 비공개로 선언합니다. 따라서, 오른쪽 경로를 보다 쉽게 액세스할 수 있습니다.
+그림에서 클래스 `VBase`에 선언된 이름은 언제나 클래스 `RightPath`를 통해 도달됩니다.  
+  `RightPath`는 `VBase`를 공용 기본 클래스로 선언하지만, `LeftPath`는 `VBase`를 비공개로 선언합니다. 따라서, 오른쪽 경로를 보다 쉽게 액세스할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)

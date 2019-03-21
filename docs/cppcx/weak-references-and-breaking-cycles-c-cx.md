@@ -2,12 +2,12 @@
 title: 약한 참조 및 순환 중단(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 1acb6402-05f0-4951-af94-0e9dab41c53e
-ms.openlocfilehash: e035f298100408bd16b1087439d3ce5ac057fd2c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 252c9c1d2af0bc6911beca094d97f46e681ba2f6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572902"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747075"
 ---
 # <a name="weak-references-and-breaking-cycles-ccx"></a>약한 참조 및 순환 중단(C++/CX)
 
@@ -53,5 +53,4 @@ Class1::Class1()
 
 이벤트 처리기가 `DisconnectedException`을 throw하면 이벤트가 구독자 목록에서 처리기를 제거합니다.
 
-## <a name="see-also"></a>참고 항목
-
+## <a name="see-also"></a>참고자료

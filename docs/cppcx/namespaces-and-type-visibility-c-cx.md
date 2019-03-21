@@ -2,12 +2,12 @@
 title: 네임스페이스 및 형식 표시 유형(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-ms.openlocfilehash: 02a73f84314d4406c5fb8e9b8635a307c30e4c3d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 54bac3492991d0bd849f7476cc87a1336108bd52
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693896"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739302"
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>네임스페이스 및 형식 표시 유형(C++/CX)
 
@@ -48,12 +48,12 @@ C + + /cli CX 투영을 Windows 런타임 형식 시스템의 일부로 이러�
 
 |||
 |-|-|
-|**네임스페이스**|**설명**|
+|**Namespace**|**설명**|
 |default|기본 제공되는 숫자 및 char16 형식을 포함하고 있습니다. 이러한 형식은 모든 네임스페이스에서 범위 내에 있는 것으로 간주되므로 `using` 문이 필요하지 않습니다.|
 |플랫폼|와 같은 Windows 런타임 형식에 해당 하는 주로 공용 형식이 포함 되어 있습니다 `Array<T>`, `String`를 `Guid`, 및 `Boolean`합니다. `Platform::Agile<T>` 및 `Platform::Box<T>`와 같은 특수한 도우미 형식도 포함합니다.|
 |Platform::Collections|Windows 런타임 컬렉션 인터페이스를 구현 하는 구체적 컬렉션 클래스를 포함 `IVector`, `IMap`등입니다. 이러한 형식은 platform.winmd가 아니라 헤더 파일인 collection.h에 정의되어 있습니다.|
 |Platform::Details|컴파일러가 사용하며 공용으로는 사용되지 않는 형식을 포함합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 시스템(C++/CX)](../cppcx/type-system-c-cx.md)

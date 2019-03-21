@@ -30,20 +30,14 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: ce1cf1f6d0010475192ecf7ef3ce2416fac51dfd
-ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
+ms.openlocfilehash: 28127ea89fdba1b70988ced1d6004c0f914c66e2
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56676411"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563045"
 ---
 # <a name="how-to-manage-resources-c"></a>방법: 관리 리소스 (c + +)
-
-하 여 프로젝트에 대 한 리소스를 관리할 수 있습니다.
-
-- 복사한 리소스를 편집 합니다.
-
-- 리소스 가져오기 및 내보내기입니다.
 
 ## <a name="copy-and-edit-resources"></a>복사 및 편집 리소스
 
@@ -54,7 +48,7 @@ ms.locfileid: "56676411"
 > [!NOTE]
 > Visual c + + 응용 프로그램에서 사용할 수 있는 샘플 리소스 파일을 포함 합니다. 자세한 내용은 참조 하세요. [클립 아트. 일반적인 리소스](https://github.com/Microsoft/VCSamples)합니다.
 
-프로젝트 외부에서 열려 있는.rc 파일 간에 끌어서 놓기 메서드를 사용할 수 있습니다.
+및 삭제, 복사, 잘라내기를 끌거나 수 간의 프로젝트에서 리소스 파일에 붙여 넣습니다 (**리소스 뷰**) 및 문서 창에서 독립 실행형.rc 파일을 엽니다. 이전 버전의 제품에서이 수행할 수 있습니다. 프로젝트 외부에서 열려 있는.rc 파일 간에 끌어서 놓기 메서드만을 사용 합니다.
 
 ### <a name="to-copy-resources"></a>리소스 복사
 
@@ -78,9 +72,6 @@ ms.locfileid: "56676411"
       1. 리소스를 붙여 하려는 리소스 파일을 마우스 오른쪽 단추로 클릭 (예를 들어 *Source2.rc*) 선택한 **붙여**합니다.
 
 > [!NOTE]
-> 및 삭제, 복사, 잘라내기를 끌거나 수 간의 프로젝트에서 리소스 파일에 붙여 넣습니다 (**리소스 뷰**) 및 독립 실행형.rc 파일 (문서 창에서 열기). 이전 버전의 제품에서이 수행할 수 있습니다.
-
-> [!NOTE]
 > 기호 이름이 나 기존 파일의 값을 사용 하 여 충돌을 방지 하려면 Visual c + + 변경 될 수 있습니다 되는 리소스의 기호 값 또는 기호 이름 및 값 새 파일에 복사 하면 됩니다.
 
 리소스에서 복사하는 동안 언어 속성이나 조건 속성 또는 두 가지 모두를 변경할 수 있습니다.
@@ -95,17 +86,17 @@ ms.locfileid: "56676411"
 IDD_AboutBox (Finnish - XX33)
 ```
 
-기존 리소스를 복사하고 해당 언어 또는 조건을 변경하려면
+### <a name="to-copy-an-existing-resource-and-change-its-language-or-condition"></a>기존 리소스를 복사하고 해당 언어 또는 조건을 변경하려면
 
-1. .Rc 파일 또는 합니다 [리소스 뷰](../windows/resource-view-window.md) 창에서 복사 하 고 선택 하려는 리소스를 마우스 오른쪽 단추로 클릭 **복사본 삽입**합니다. 그리고 다음을 설정 합니다.
+에 *.rc* 파일 또는 [리소스 뷰](../windows/resource-view-window.md) 창에서 복사 하 고 선택 하려는 리소스를 마우스 오른쪽 단추로 클릭 **복사본 삽입**합니다. 그리고 다음을 설정 합니다.
 
-   - 에 대 한 합니다 **언어** 목록 상자에서 언어를 선택 합니다.
+- 에 대 한 합니다 **언어** 목록 상자에서 언어를 선택 합니다.
 
-   - 에 **조건을** 상자에서 조건을 입력 합니다.
+- 에 **조건을** 상자에서 조건을 입력 합니다.
 
 ### <a name="to-edit-resources"></a>리소스를 편집 하려면
 
-관리 되는 리소스 (.resx) 파일에는 XML 파일입니다. 관리 되는 리소스 파일에서 프로젝트에 추가 되는 경우는 **새 항목 추가** 대화 상자를 **관리 되는 리소스 편집기** 기본적으로 열립니다.
+관리 되는 리소스 (.resx) 파일은 XML 파일입니다. 관리 되는 리소스 파일에서 프로젝트에 추가 되는 경우는 **새 항목 추가** 대화 상자를 **관리 되는 리소스 편집기** 기본적으로 열립니다.
 
 ## <a name="import-and-export-resources"></a>가져오기 및 내보내기 리소스
 

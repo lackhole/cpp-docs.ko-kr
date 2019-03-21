@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CString objects, assignment semantics
 - assignment statements, assigning CString objects
 ms.assetid: d4023480-526f-499a-85f6-324b4de5b85f
-ms.openlocfilehash: f563b24a9df61a91711433a4e4987f8f800545ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b5398f8a0f17ffcc93c7f5f6158ecc56606e9279
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657797"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750183"
 ---
 # <a name="cstring-semantics"></a>CString 의미 체계
 
@@ -23,7 +23,6 @@ ms.locfileid: "50657797"
 
 참고 예제에서는 두 `CString` 동일한 문자열 멀 기 때문에 개체 "equal" 라고 합니다. `CString` 클래스에는 같음 연산자 오버 로드 (`==`) 두 개를 비교 하 `CString` 개체 id (주소) 하는 대신 해당 값 (내용)에 기반 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
-

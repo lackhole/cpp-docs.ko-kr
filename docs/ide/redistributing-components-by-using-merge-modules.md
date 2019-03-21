@@ -5,16 +5,16 @@ helpviewer_keywords:
 - merge modules, using
 - redistributing applications, using merge modules
 ms.assetid: 93b84211-bf9b-4a78-9f22-474ac2ef7840
-ms.openlocfilehash: 8fa717f376017560c4bd2e9012bd25c5190da563
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b98bcad0d8df26796cb6e2a2c29d90a7a20aadd1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676462"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741419"
 ---
 # <a name="redistributing-components-by-using-merge-modules"></a>병합 모듈을 사용하여 구성 요소 재배포
 
-Visual Studio에는 응용 프로그램으로 재배포할 권한이 있는 각 Visual C++ 구성 요소에 대한 [병합 모듈](/windows/desktop/Msi/about-merge-modules)이 포함됩니다. 병합 모듈이 Windows Installer 설치 파일에서 컴파일되면 특정 플랫폼이 있는 컴퓨터에 특정 DLL을 배포할 수 있습니다. 설치 파일에서 병합 모듈을 응용 프로그램의 필수 구성 요소로 지정합니다. Visual Studio가 설치되면 병합 모듈이 \Program Files\Common Files\Merge Modules\\\에 설치됩니다. (디버그가 아닌 버전의 Visual C++ DLL만 재배포할 수 있습니다.) 자세한 내용과 재배포 권한이 있는 병합 모듈 목록 링크는 [Visual C++ 파일 재배포](../ide/redistributing-visual-cpp-files.md)를 참조하세요.
+Visual Studio에는 애플리케이션으로 재배포할 권한이 있는 각 Visual C++ 구성 요소에 대한 [병합 모듈](/windows/desktop/Msi/about-merge-modules)이 포함됩니다. 병합 모듈이 Windows Installer 설치 파일에서 컴파일되면 특정 플랫폼이 있는 컴퓨터에 특정 DLL을 배포할 수 있습니다. 설치 파일에서 병합 모듈을 응용 프로그램의 필수 구성 요소로 지정합니다. Visual Studio가 설치되면 병합 모듈이 \Program Files\Common Files\Merge Modules\\\에 설치됩니다. (디버그가 아닌 버전의 Visual C++ DLL만 재배포할 수 있습니다.) 자세한 내용과 재배포 권한이 있는 병합 모듈 목록 링크는 [Visual C++ 파일 재배포](../ide/redistributing-visual-cpp-files.md)를 참조하세요.
 
 병합 모듈을 사용하여 재배포 가능 Visual C++ DLL을 %SYSTEMROOT%\system32\ 폴더에 설치할 수 있습니다. (Visual Studio 자체가 이 기법을 사용합니다.) 그러나 설치하는 사용자가 관리자 권한이 없는 경우 이 폴더에 설치되지 않습니다.
 

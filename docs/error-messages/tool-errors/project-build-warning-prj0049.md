@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - PRJ0049
 ms.assetid: 8b38afa1-e080-4efd-ae89-776cfd044413
-ms.openlocfilehash: a451b7fe7b2f7cd89f8898232badf0d3b7e9f138
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fba3de0be764aa56b56ed22c6a9fde9366295456
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447218"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816232"
 ---
 # <a name="project-build-warning-prj0049"></a>프로젝트 빌드 경고 PRJ0049
 
@@ -21,7 +21,7 @@ Visual Studio 2008을 사용 하 여 만든 응용 프로그램 대상.NET Frame
 
 1. 다음 중 하나를 선택합니다.
 
-   - 프로젝트의 대상된 프레임 워크를 변경 **속성 페이지** 대화 상자는 최소 프레임 워크 버전의 모든 참조 된 어셈블리 및 프로젝트와 같거나 이후일 것입니다. 자세한 내용은 [참조 추가](../../ide/adding-references-in-visual-cpp-projects.md)합니다.
+   - 프로젝트의 대상된 프레임 워크를 변경 **속성 페이지** 대화 상자는 최소 프레임 워크 버전의 모든 참조 된 어셈블리 및 프로젝트와 같거나 이후일 것입니다. 자세한 내용은 [참조 추가](../../build/adding-references-in-visual-cpp-projects.md)합니다.
 
    - 어셈블리 또는 프로젝트 대상된 프레임 워크 보다 나중에 최소 프레임 워크 버전에 대 한 참조를 제거 합니다. 이러한 항목을 프로젝트의 경고 아이콘을 사용 하 여 표시 됩니다 **속성 페이지**합니다.
 

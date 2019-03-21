@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::IntPtr Struct
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
-ms.openlocfilehash: eda65255aa76d6a801bdc0f80c437a9dc975d8f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8101fa2c82a0ac3e3b573384d14d9a7eff6ecf61
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449142"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747114"
 ---
 # <a name="platformintptr-value-class"></a>Platform::IntPtr 값 클래스
 
@@ -42,7 +42,7 @@ IntPtr에는 다음과 같은 멤버가 있습니다.
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **메타데이터:** platform.winmd
 
@@ -73,10 +73,10 @@ static IntPtr::operator IntPtr( void* value1);   static IntPtr::operator IntPtr(
 
 ### <a name="parameters"></a>매개 변수
 
-*Value1*<br/>
+*value1*<br/>
 핸들 또는 IntPtr에 대한 포인터입니다.
 
-*Value2*<br/>
+*value2*<br/>
 IntPtr로 변환될 수 있는 32비트 정수입니다.
 
 *value3*<br/>
@@ -100,6 +100,6 @@ int32 IntPtr::ToInt32();
 
 32비트 정수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

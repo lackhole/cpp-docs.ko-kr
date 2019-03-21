@@ -32,12 +32,12 @@ helpviewer_keywords:
 - strings [C++], formatting
 - strings [C++], special characters
 ms.assetid: f71ab8de-3068-4e29-8e28-5a33d18dd416
-ms.openlocfilehash: d040c09b36c2b46036744c8a263802da48cd8e60
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.openlocfilehash: bea53c33ef723cf8c98d0c542d24389e730c092a
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210798"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563305"
 ---
 # <a name="string-editor-c"></a>문자열 편집기 (c + +)
 
@@ -56,7 +56,7 @@ ms.locfileid: "57210798"
 
 ### <a name="to-find-a-string-resource-in-the-string-table"></a>문자열 테이블의 문자열 리소스를 찾으려면
 
-1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](../windows/resource-view-window.md)합니다.
+1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
 
 1. 메뉴로 이동 **편집할** > **찾기 및 바꾸기** 선택 **찾기**합니다.
 
@@ -77,9 +77,9 @@ ms.locfileid: "57210798"
 
 합니다 **문자열 편집기** 이미 사용 하는 ID를 사용 하지 않는 했는지 확인 합니다. ID를 이미 선택 하면 사용에서 된 **문자열 편집기** 를 표시 하 고 예를 들어 일반 고유 ID를 할당 `IDS_STRING58113`합니다.
 
-문자열 테이블 엔트리를 추가 합니다.
+#### <a name="to-add-a-string-table-entry"></a>문자열 테이블 항목을 추가 하려면
 
-1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](../windows/resource-view-window.md)합니다.
+1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
 
 1. 문자열 테이블 내에서 마우스 오른쪽 단추로 클릭 하 고 선택 **새 문자열**합니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "57210798"
    > [!NOTE]
    > Null 문자열은 Windows 문자열 테이블에서 허용 되지 않습니다. 묻는 메시지를 받게가 null 문자열을 문자열 테이블에 항목을 만들면 **이 테이블 엔트리에 대해 문자열을 입력 하십시오**합니다.
 
-문자열 테이블 엔트리를 삭제 합니다.
+#### <a name="to-delete-a-string-table-entry"></a>문자열 테이블 항목을 삭제 하려면
 
 삭제 하 고 다음 중 하나를 수행 하려는 항목을 선택 합니다.
 
@@ -110,7 +110,7 @@ ms.locfileid: "57210798"
 
 1. 대상 커서를 놓고 **문자열 편집기** 창입니다.
 
-1. 문자열을 이동 하려는.rc 파일에서 마우스 오른쪽 단추로 클릭 하 고 선택 **붙여넣기**합니다.
+1. 에 *.rc* 문자열을 이동 하 마우스 오른쪽 단추로 클릭 한 다음 선택 하려는 파일 **붙여넣기**합니다.
 
 > [!NOTE]
 > 경우는 **ID** 또는 **값** 기존 이동한 문자열 충돌 **ID** 하거나 **값** 에 대상 파일 중 하나는 **ID** 나 **값** 이동한 문자열 변경 합니다.
@@ -122,9 +122,9 @@ ms.locfileid: "57210798"
 > [!NOTE]
 >  문자열의 속성을 편집할 수도 있습니다는 [속성 창](/visualstudio/ide/reference/properties-window)합니다.
 
-해당 식별자 또는 문자열이 변경:
+#### <a name="to-change-a-string-or-its-identifier"></a>문자열 또는 식별자를 변경 하려면
 
-1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](../windows/resource-view-window.md)합니다.
+1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
 
 1. 편집 하 고 두 번 클릭 하려는 문자열을 선택 합니다 **ID**를 **값**, 또는 **캡션** 을 열 수:
 
@@ -134,9 +134,9 @@ ms.locfileid: "57210798"
 
    - 편집을 입력 합니다 **캡션** 열입니다.
 
-여러 문자열 리소스의 caption 속성 변경:
+#### <a name="to-change-the-caption-property-of-multiple-string-resources"></a>여러 문자열 리소스의 caption 속성을 변경 하려면
 
-1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](../windows/resource-view-window.md)합니다.
+1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
 
 1. 누른 변경 하려는 문자열을 선택 합니다 **Ctrl** 키를 선택 합니다.
 
@@ -146,7 +146,7 @@ ms.locfileid: "57210798"
 
 ### <a name="to-add-formatting-or-special-characters-to-a-string-resource"></a>문자열 리소스에 형식 지정 또는 특수 문자를 추가 하려면
 
-1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](../windows/resource-view-window.md)합니다.
+1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
 
 1. 수정 하려는 문자열을 선택 합니다.
 

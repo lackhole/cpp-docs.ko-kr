@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 50f3e7a79b80514b6c28bd9aee86c720d6e20cf6
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: e24dd53f9c805f57ce974a81a4963434f1868095
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57413916"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821211"
 ---
 # <a name="zc-conformance"></a>/Zc(규칙)
 
@@ -55,5 +55,5 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](compiler-options.md)<br/>
-[컴파일러 옵션 설정](setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

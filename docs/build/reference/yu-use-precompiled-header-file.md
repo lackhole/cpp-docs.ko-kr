@@ -11,12 +11,12 @@ helpviewer_keywords:
 - .pch files, use existing
 - precompiled header files, use existing
 ms.assetid: 24f1bd0e-b624-4296-a17e-d4b53e374e1f
-ms.openlocfilehash: 49cc7a67a8b25e515d352d481b6ede8d521e51e1
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c0dcb045450d6e6eca31b8c76a92726e62400656
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424121"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810122"
 ---
 # <a name="yu-use-precompiled-header-file"></a>/Yu(미리 컴파일된 헤더 파일 사용)
 
@@ -45,7 +45,7 @@ ms.locfileid: "57424121"
 
 명령줄에서 없습니다 사이 공백을 **/Yu** 고 `filename`입니다.
 
-지정 하는 경우는 **/Yu** 옵션 없이 소스 프로그램 파일 이름 포함 해야 합니다는 [#pragma hdrstop](../../preprocessor/hdrstop.md) 미리 컴파일된 헤더.pch 파일의 파일 이름을 지정 하는 pragma입니다. 이 경우 컴파일러에서 라는 미리 컴파일된 헤더 (.pch 파일)를 사용할지 [/Fp (이름입니다. Pch 파일)](../../build/reference/fp-name-dot-pch-file.md)합니다. 컴파일러는 해당 pragma의 위치를 건너뛰고 pragma를 사용 하면 지정 된 미리 컴파일된 헤더 파일의 컴파일된 상태를 복원만 pragma 뒤에 오는 코드를 컴파일합니다. 하는 경우 **#pragma hdrstop** 확장명이.pch 인 소스 파일의 기본 이름에서 파생 된 이름으로 파일의 컴파일러는 파일 이름을 지정 하지 않습니다. 사용할 수도 있습니다는 **/Fp** 다른.pch 파일을 지정 하는 옵션입니다.
+지정 하는 경우는 **/Yu** 옵션 없이 소스 프로그램 파일 이름 포함 해야 합니다는 [#pragma hdrstop](../../preprocessor/hdrstop.md) 미리 컴파일된 헤더.pch 파일의 파일 이름을 지정 하는 pragma입니다. 이 경우 컴파일러에서 라는 미리 컴파일된 헤더 (.pch 파일)를 사용할지 [/Fp (이름입니다. Pch 파일)](fp-name-dot-pch-file.md)합니다. 컴파일러는 해당 pragma의 위치를 건너뛰고 pragma를 사용 하면 지정 된 미리 컴파일된 헤더 파일의 컴파일된 상태를 복원만 pragma 뒤에 오는 코드를 컴파일합니다. 하는 경우 **#pragma hdrstop** 확장명이.pch 인 소스 파일의 기본 이름에서 파생 된 이름으로 파일의 컴파일러는 파일 이름을 지정 하지 않습니다. 사용할 수도 있습니다는 **/Fp** 다른.pch 파일을 지정 하는 옵션입니다.
 
 지정 하는 경우는 **/Yu** 파일 이름 없이 옵션을 지정 하지는 **hdrstop** pragma에 오류 메시지가 생성 되 고 컴파일이 성공 합니다.
 
@@ -55,15 +55,15 @@ ms.locfileid: "57424121"
 
 미리 컴파일된 헤더에 대 한 자세한 내용은 다음을 참조 하세요.
 
-- [/Y(미리 컴파일된 헤더)](../../build/reference/y-precompiled-headers.md)
+- [/Y(미리 컴파일된 헤더)](y-precompiled-headers.md)
 
-- [미리 컴파일된 헤더 파일 만들기](../../build/reference/creating-precompiled-header-files.md)
+- [미리 컴파일된 헤더 파일](../creating-precompiled-header-files.md)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 지정할 [/Yc (미리 컴파일된 헤더 파일 만들기)](../../build/reference/yc-create-precompiled-header-file.md) 프로젝트에서.cpp 파일입니다.
+1. 지정할 [/Yc (미리 컴파일된 헤더 파일 만들기)](yc-create-precompiled-header-file.md) 프로젝트에서.cpp 파일입니다.
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -88,7 +88,7 @@ ms.locfileid: "57424121"
 
 명령줄을 사용 하 여 컴파일된 `CL /YuMYAPP.H PROG.CPP`, 컴파일러는 세 가지를 처리 하지 않습니다 문은 하지만 MYAPP.pch 사용 하 여 미리 컴파일된 코드 파일 (및 모든 파일)의 세 가지를 모두 전처리에 포함 된 저장 함으로써 포함 합니다.
 
-사용할 수는 [/Fp (이름입니다. Pch 파일)](../../build/reference/fp-name-dot-pch-file.md) 옵션을 **/Yu** 이름 중 하나는 파일 이름 인수를 다른 경우.pch 파일의 이름을 지정 하는 옵션 **/Yc** 또는 같은 소스 파일의 기본 이름을 다음:
+사용할 수는 [/Fp (이름입니다. Pch 파일)](fp-name-dot-pch-file.md) 옵션을 **/Yu** 이름 중 하나는 파일 이름 인수를 다른 경우.pch 파일의 이름을 지정 하는 옵션 **/Yc** 또는 같은 소스 파일의 기본 이름을 다음:
 
 ```
 CL /YuMYAPP.H /FpMYPCH.pch PROG.CPP
@@ -98,5 +98,5 @@ CL /YuMYAPP.H /FpMYPCH.pch PROG.CPP
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

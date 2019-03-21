@@ -1,5 +1,5 @@
 ---
-title: '방법: PInvoke를 사용하여 함수 포인터 마샬링'
+title: '방법: PInvoke를 사용 하는 함수 포인터 마샬링'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - platform invoke [C++], callbacks and delegates
 - marshaling [C++], callbacks and delegates
 ms.assetid: dcf396fd-a91d-49c0-ab0b-1ea160668a89
-ms.openlocfilehash: 2f12c86b7e32955622a4a2c598d01057e303a329
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 031bda0f93d6a95aa3c774553aefca0647d0518c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435609"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742875"
 ---
-# <a name="how-to-marshal-function-pointers-using-pinvoke"></a>방법: PInvoke를 사용하여 함수 포인터 마샬링
+# <a name="how-to-marshal-function-pointers-using-pinvoke"></a>방법: PInvoke를 사용 하는 함수 포인터 마샬링
 
 이 항목에서는 관리 되는 대리자를 설명 합니다. 관리 되지 않는.NET Framework P/Invoke 기능을 사용 하 여 functions와의 상호 운용 하는 경우 함수 포인터 대신 사용할 수 있습니다. 그러나 Visual c + + 프로그래머는 (가능한 경우) 대신 c + + Interop 기능을 사용 하는 것이 좋습니다 P/Invoke 거의 컴파일 타임 오류를 보고, 형식이 안전한 아니며 구현 되기 번거로울 수 있습니다. 관리 되지 않는 API는 DLL로 패키지 하 고 소스 코드를 사용할 수 없는 경우 P/Invoke 유일한 옵션입니다. 그렇지 않은 경우 다음 항목을 참조 합니다.
 
@@ -87,6 +87,6 @@ int main() {
 
 사용 하 여 기존의 관리 되는 코드에 노출 되지 않습니다 없는 부분 DLL #include 지시문입니다. 사실, DLL은 액세스 런타임에 되므로 문제 함수를 사용 하 여 가져온 <xref:System.Runtime.InteropServices.DllImportAttribute> 컴파일 시 검색 되지 것입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++에서 명시적 PInvoke 사용(DllImport 특성)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

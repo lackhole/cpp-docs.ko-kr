@@ -1,17 +1,17 @@
 ---
-title: '방법: C++/CLI에서 safe_cast 사용'
+title: '방법: Safe_cast를 사용 하 여 C + + /cli CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - safe_cast keyword [C++], upcasting
 ms.assetid: 0fbc87d8-ecdf-4cd5-81f4-0d8cc18e2aff
-ms.openlocfilehash: 30aee0407e41533d34a860f3cedceb0be5b7b881
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1fd1b2d698af44ab841aeb6e205b750beb30ae0d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657004"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739350"
 ---
-# <a name="how-to-use-safecast-in-ccli"></a>방법: C++/CLI에서 safe_cast 사용
+# <a name="how-to-use-safecast-in-ccli"></a>방법: Safe_cast를 사용 하 여 C + + /cli CLI
 
 이 문서에서는 safe_cast C + + 응용 프로그램입니다. C + safe_cast에 대 한 자세한 + /CX에서는 참조 [safe_cast](../windows/safe-cast-cpp-component-extensions.md)합니다.
 
@@ -329,6 +329,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [safe_cast](../windows/safe-cast-cpp-component-extensions.md)

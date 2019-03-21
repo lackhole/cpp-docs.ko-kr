@@ -21,12 +21,12 @@ helpviewer_keywords:
 - tzname function
 - time-zone variables
 ms.assetid: d06c7292-6b99-4aba-b284-16a96570c856
-ms.openlocfilehash: ad28ce701a4c6aa60208ed0cefe8f7dc06ef55a7
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 3f9f78d0798140399960cade7ead408f958450ba
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51325914"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748257"
 ---
 # <a name="daylight-dstbias-timezone-and-tzname"></a>_daylight, _dstbias, _timezone 및 _tzname
 
@@ -50,7 +50,7 @@ extern long _timezone;
 extern char *_tzname[2];
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `_ftime`, `localtime` 또는 `_tzset` 호출 시 `_daylight`, `_dstbias`, `_timezone` 및 `_tzname` 값은 `TZ` 환경 변수 값에 따라 결정됩니다. `TZ` 값을 명시적으로 설정하지 않으면 `_tzname[0]` 및 `_tzname[1]`에는 각각 기본 설정인 "PST" 및 "PDT"가 포함됩니다.  시간 조작 함수([_tzset](../c-runtime-library/reference/tzset.md), [_ftime](../c-runtime-library/reference/ftime-ftime32-ftime64.md) 및 [localtime](../c-runtime-library/reference/localtime-localtime32-localtime64.md))는 운영 체제에 각 변수의 기본값을 쿼리하여 `_daylight`, `_dstbias` 및 `_timezone` 값을 설정하려고 합니다. 시간대 전역 변수 값은 다음 표에 나와 있습니다.
 

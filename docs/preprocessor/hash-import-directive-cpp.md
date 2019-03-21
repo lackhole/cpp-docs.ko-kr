@@ -12,12 +12,12 @@ helpviewer_keywords:
 - preprocessor, directives
 - COM, type library header file
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
-ms.openlocfilehash: 8029adfd5b4f27e097df693c85ee0d711a13dc4e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a7dc30d3e5869e9b0f534a4769d4517a0514c144
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612370"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822628"
 ---
 # <a name="import-directive-c"></a>#import 지시문 (C++)
 
@@ -121,14 +121,14 @@ Byref 매개 변수를 사용 하는 dispinterface 속성을 가져올 경우 #i
 
 - 때 **#import** 은 처리, 컴파일러는 먼저 확인 헤더가 존재 하며 최신 상태 인지 하는 경우. 그렇다면 다시 만들 필요가 없습니다.
 
-합니다 **#import** 지시문도 최소 다시 빌드에 참여 하 고 미리 컴파일된 헤더 파일에 배치할 수 있습니다. 참조 [미리 컴파일된 헤더 파일 만들기](../build/reference/creating-precompiled-header-files.md) 자세한 내용은 합니다.
+합니다 **#import** 지시문도 최소 다시 빌드에 참여 하 고 미리 컴파일된 헤더 파일에 배치할 수 있습니다. 참조 [미리 컴파일된 헤더 파일 만들기](../build/creating-precompiled-header-files.md) 자세한 내용은 합니다.
 
 ###  <a name="_predir_the_primary_type_library_header_file"></a> 기본 형식 라이브러리 헤더 파일
 기본 형식 라이브러리 헤더 파일은 다음과 같은 7개의 섹션으로 구성됩니다.
 
-- 제목 상용구: 주석, COMDEF.H용 `#include` 문(헤더에 사용되는 일부 표준 매크로 정의) 및 다른 기타 설정 정보로 구성됩니다.
+- 제목 상용구: 주석의 구성 `#include` COMDEF에 대 한 문입니다. (헤더에 사용 되는 일부 표준 매크로 정의)는 시간, 및 다른 기타 설정 정보입니다.
 
-- 정방향 참조 및 typedef: `struct IMyInterface` 및 typedef와 같은 구조체 선언으로 구성됩니다.
+- 정방향 참조 및 typedef: 와 같은 구조체 선언 이루어져 `struct IMyInterface` 및 typedef입니다.
 
 - 스마트 포인터 선언: 템플릿 클래스 `_com_ptr_t` 는 인터페이스 포인터를 캡슐화 하 고 호출 하지 않아도 스마트 포인터 구현 `AddRef`를 `Release`, `QueryInterface` 함수입니다. 또한 새 COM 개체를 만들 경우 `CoCreateInstance` 호출을 숨깁니다. 이 섹션에서는 매크로 문 `_COM_SMARTPTR_TYPEDEF` 의 템플릿 특수화가 될 COM 인터페이스의 typedef를 설정 하는 [_com_ptr_t](../cpp/com-ptr-t-class.md) 템플릿 클래스입니다. 인터페이스에 대 한 예를 들어 `IMyInterface`, 합니다. TLH 파일에 포함 됩니다.
 
@@ -142,15 +142,16 @@ Byref 매개 변수를 사용 하는 dispinterface 속성을 가져올 경우 #i
     typedef _com_ptr_t<_com_IIID<IMyInterface, __uuidof(IMyInterface)> > IMyInterfacePtr;
     ```
 
-   `IMyInterfacePtr` 형식은 원시 인터페이스 포인터 `IMyInterface*` 대신 사용할 수 있습니다. 따라서 다양 한 호출 하지 않아도 됩니다 `IUnknown` 멤버 함수
+   
+  `IMyInterfacePtr` 형식은 원시 인터페이스 포인터 `IMyInterface*` 대신 사용할 수 있습니다. 따라서 다양 한 호출 하지 않아도 됩니다 `IUnknown` 멤버 함수
 
 - Typeinfo 선언: 주로 클래스 정의와에서 반환 되는 개별 typeinfo 항목을 노출 시키는 기타 항목으로 구성 됩니다 `ITypeLib:GetTypeInfo`합니다. 이 섹션에서 형식 라이브러리의 각 typeinfo는 `TYPEKIND` 정보에 종속적인 형식의 헤더에 반영됩니다.
 
-- 선택적 기존 형식 GUID 정의: 명명된 GUID 상수의 초기화를 포함합니다. 형식 이름의 이들은 `CLSID_CoClass` 및 `IID_Interface`, MIDL 컴파일러에 의해 생성 된 비슷합니다.
+- 선택적 기존 형식 GUID 정의: 명명 된 GUID 상수의 초기화를 포함합니다. 형식 이름의 이들은 `CLSID_CoClass` 및 `IID_Interface`, MIDL 컴파일러에 의해 생성 된 비슷합니다.
 
 - 보조 형식 라이브러리 헤더에 대한 `#include` 문입니다.
 
-- 바닥글 상용구: 현재 `#pragma pack(pop)`을 포함합니다.
+- 바닥글 상용구: 현재 포함 `#pragma pack(pop)`합니다.
 
 지정 된 이름과 네임 스페이스에 묶이지 제목 상용구과 바닥글 상용구 섹션을 제외한 모든 섹션을 `library` 원본 IDL 파일의 문. 네임스페이스 이름으로 명시적으로 한정하거나 다음 문을 포함하여 형식 라이브러리 헤더의 이름을 사용할 수 있습니다.
 

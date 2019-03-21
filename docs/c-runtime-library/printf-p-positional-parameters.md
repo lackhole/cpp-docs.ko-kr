@@ -13,12 +13,12 @@ helpviewer_keywords:
 - _printf_p function, positional parameters
 - printf_p function, positional parameters
 ms.assetid: beb4fd85-a7aa-4665-9085-2c907a5b9ab0
-ms.openlocfilehash: 2801f1b4c61247ebb9a1402b6244f0c63c2b7dd2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6ee84a68b2f40e535ed1dc76e4617a21bb29a6e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498035"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751468"
 ---
 # <a name="printfp-positional-parameters"></a>printf_p 위치 매개 변수
 
@@ -64,7 +64,7 @@ _printf_p("%2$s %1$s", "November", "10");
 10 November
 ```
 
-기존의 형식 문자열과 달리, 위치 매개 변수는 한 형식 문자열에 두 번 이상 사용될 수 있습니다. 예를 들어 개체에 적용된
+기존의 형식 문자열과 달리, 위치 매개 변수는 한 형식 문자열에 두 번 이상 사용될 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```C
 _printf_p("%1$d times %1$d is %2$d", 10, 100);
@@ -80,7 +80,7 @@ _printf_p("%1$d times %1$d is %2$d", 10, 100);
 
 ### <a name="width-and-precision"></a>너비 및 전체 자릿수
 
-`*n$`를 사용하여 위치 매개 변수를 너비 또는 전체 자릿수로 지정할 수 있습니다. 여기서 `n`은 매개 변수 목록에서 너비 또는 전체 자릿수 매개 변수의 위치입니다. 너비 또는 전체 자릿수 값의 위치는 \* 기호 바로 다음에 나와야 합니다. 예를 들어 개체에 적용된
+`*n$`를 사용하여 위치 매개 변수를 너비 또는 전체 자릿수로 지정할 수 있습니다. 여기서 `n`은 매개 변수 목록에서 너비 또는 전체 자릿수 매개 변수의 위치입니다. 너비 또는 전체 자릿수 값의 위치는 \* 기호 바로 다음에 나와야 합니다. 예를 들면 다음과 같습니다.
 
 ```C
 _printf_p("%1$*2$s","Hello", 10);
@@ -96,7 +96,7 @@ _printf_p("%2$*1$s", 10, "Hello");
 
 위치 매개 변수는 동일한 형식 문자열에서 비 위치 매개 변수와 함께 혼합할 수 없습니다. 위치 형식이 사용되는 경우 모든 형식 지정자는 위치 서식을 사용해야 합니다. 그러나 `printf_p` 및 관련 함수는 비 위치 매개 변수를 포함하는 형식 문자열에서 계속해서 비 위치 매개 변수를 지합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // positional_args.c

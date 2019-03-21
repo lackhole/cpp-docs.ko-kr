@@ -21,12 +21,12 @@ helpviewer_keywords:
 - _sys_nerr global variable
 - sys_nerr global variable
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369
-ms.openlocfilehash: 50b44c659aac66dbaddad711cceef635f277d2c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57d04fe5867c6a969b6aeca40f26b18b5dcd7a61
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487727"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750782"
 ---
 # <a name="errno-doserrno-syserrlist-and-sysnerr"></a>errno, _doserrno, _sys_errlist 및 _sys_nerr
 
@@ -41,7 +41,7 @@ ms.locfileid: "50487727"
 #define _sys_nerr (*__sys_nerr())
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `errno`와 `_doserrno`는 모두 프로그램을 시작하는 동안 런타임에 0으로 설정됩니다. `errno`는 오류가 발생한 시스템 수준 호출에서 설정됩니다. `errno`에 설정된 마지막 호출에 대한 값이 있으므로 이후 호출에 의해 이 값이 변경될 수도 있습니다. 오류에 대해 `errno`를 설정하는 런타임 라이브러리 호출은 성공 시 `errno`를 지우지 않습니다. 설정할 수 있는 호출 바로 전에 `errno`를 호출하여 항상 `_set_errno(0)`를 지우고 호출 후 바로 확인하세요.
 
@@ -69,7 +69,7 @@ ms.locfileid: "50487727"
 |`ENXIO`|해당 디바이스 또는 주소 없음|6|
 |`E2BIG`|인수 목록이 너무 김|7|
 |`ENOEXEC`|실행 형식 오류|8|
-|`EBADF`|잘못된 파일 번호|10|
+|`EBADF`|잘못된 파일 번호|9|
 |`ECHILD`|생성된 프로세스 없음|10|
 |`EAGAIN`|추가 프로세스가 없거나 메모리가 부족하거나 최대 중첩 수주에 도달함|11|
 |`ENOMEM`|메모리 부족|12|

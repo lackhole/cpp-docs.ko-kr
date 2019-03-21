@@ -10,12 +10,12 @@ helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 - function calls [C++], importing
 ms.assetid: 6b53c616-0c6d-419a-8e2a-d2fff20510b3
-ms.openlocfilehash: 055edf4efc066695abb60a09b84cb1b13302af9c
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 8635cf5d389f72972f471a4fd53ed56c3497bfe9
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423965"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811734"
 ---
 # <a name="importing-function-calls-using-declspecdllimport"></a>__declspec(dllimport)을 사용하여 함수 호출 가져오기
 
@@ -74,4 +74,4 @@ call DWORD PTR __imp_func1
 
 ## <a name="see-also"></a>참고자료
 
-[애플리케이션으로 가져오기](../build/importing-into-an-application.md)
+[애플리케이션으로 가져오기](importing-into-an-application.md)

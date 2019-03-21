@@ -25,12 +25,12 @@ helpviewer_keywords:
 - RTCc compiler option
 - -RTCc compiler option [C++]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
-ms.openlocfilehash: 3ac70904332f5f05463b317f02a2ab8d3bfc7bb3
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a830ff5b8ba4b7fcd95eb462f899f2eadce6de11
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424615"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815894"
 ---
 # <a name="rtc-run-time-error-checks"></a>/RTC(런타임 오류 검사)
 
@@ -53,7 +53,7 @@ ms.locfileid: "57424615"
 **c**<br/>
 값에 보고서는 더 작은 데이터 형식 및 데이터 손실의 결과에 할당 됩니다. 예를 들어, 값 형식 `short 0x101` 형식의 변수에 할당 된 `char`합니다.
 
-이 옵션으로 경우 보고 있는 있습니다 예를 들어 truncate의 처음 8 비트를 하려는 경우는 `int` 로 반환 된 `char`합니다. 때문에 **/RTC** `c` 런타임 오류가 발생의 결과로 런타임 오류를 방지 하는 데 필요한 정보 가릴 수 정보가 할당으로 인해 손실 된 경우 **/RTC** `c`. 예를 들면,
+이 옵션으로 경우 보고 있는 있습니다 예를 들어 truncate의 처음 8 비트를 하려는 경우는 `int` 로 반환 된 `char`합니다. 때문에 **/RTC** `c` 런타임 오류가 발생의 결과로 런타임 오류를 방지 하는 데 필요한 정보 가릴 수 정보가 할당으로 인해 손실 된 경우 **/RTC** `c`. 예를 들어:
 
 ```
 #include <crtdbg.h>
@@ -75,7 +75,7 @@ int main() {
 
 - 로컬 변수를 0이 아닌 값으로 초기화 합니다. 이렇게 하면 디버그 모드에서 실행 하는 경우에 표시 되지 않는 버그를 식별 합니다. 스택 변수 컴파일러 최적화는 릴리스 빌드에서 스택 변수 때문에 릴리스 빌드에 비해 디버그 빌드에서 0 계속 되도록 레이아웃이 있습니다. 일단 프로그램에는 해당 스택 영역 사용 되었으면, 컴파일러에서 0으로 다시 설정 되지 않습니다. 따라서 동일한 스택 영역을 사용 하는 후속, 초기화 되지 않은 스택 변수 값이 스택 메모리 이전 사용에서 남은 반환할 수 있습니다.
 
-- 배열과 같은 로컬 변수의 언더런 및 오버런 감지 합니다. **/RTC** `s` 컴파일러 패딩 구조체 내에서 발생 하는 메모리에 액세스할 때 오버런을 탐지 하지 못합니다. 안쪽 여백을 사용 하 여 발생할 수 있습니다 [맞춤](../../cpp/align-cpp.md)를 [/Zp (구조체 멤버 맞춤)](../../build/reference/zp-struct-member-alignment.md), 또는 [팩](../../preprocessor/pack.md), 컴파일러에 안쪽 여백을 추가 하는 방식에서 구조 요소를 정렬 하는 경우.
+- 배열과 같은 로컬 변수의 언더런 및 오버런 감지 합니다. **/RTC** `s` 컴파일러 패딩 구조체 내에서 발생 하는 메모리에 액세스할 때 오버런을 탐지 하지 못합니다. 안쪽 여백을 사용 하 여 발생할 수 있습니다 [맞춤](../../cpp/align-cpp.md)를 [/Zp (구조체 멤버 맞춤)](zp-struct-member-alignment.md), 또는 [팩](../../preprocessor/pack.md), 컴파일러에 안쪽 여백을 추가 하는 방식에서 구조 요소를 정렬 하는 경우.
 
 - 스택 포인터 손상 감지 하는 스택 포인터 확인 합니다. 스택 포인터 손상 호출 규칙 불일치 때문일 수 있습니다. 예를 들어 함수 포인터를 사용 하면 함수 호출으로 내보낸 DLL에 [__stdcall](../../cpp/stdcall.md) 함수에 대 한 포인터를 선언 하지만 [__cdecl](../../cpp/cdecl.md)합니다.
 
@@ -95,17 +95,17 @@ c = a;  // No run-time error with /RTCu
 
 ## <a name="remarks"></a>설명
 
-런타임 오류 검사는 실행 중인 코드에서 문제를 발견 하는 방법 자세한 내용은 참조 하세요. [방법: 네이티브 런타임 검사 사용](/visualstudio/debugger/how-to-use-native-run-time-checks)합니다.
+런타임 오류 검사는 실행 중인 코드에서 문제를 발견 하는 방법 자세한 내용은 참조 하세요. [방법: 네이티브 런타임 검사 사용](/visualstudio/debugger/how-to-use-native-run-time-checks)을 참조하세요.
 
 프로그램 중 하나를 사용 하 여 명령줄에서 컴파일하는 경우는 **/RTC** 컴파일러 옵션, pragma [최적화](../../preprocessor/optimize.md) 코드의 지침에 자동으로 실패 합니다. 즉, 런타임 오류 검사 (최적화) 릴리스 빌드에서 사용할 수 없습니다.
 
-기능을 사용할지 **/RTC** 개발 빌드; **/RTC** 정품 빌드에 쓰일 수 없습니다. **/RTC** 컴파일러 최적화를 사용 하 여 사용할 수 없습니다 ([/O 옵션 (코드 최적화)](../../build/reference/o-options-optimize-code.md)). 프로그램 이미지를 사용 하 여 빌드한 **/RTC** 약간 크고 사용 하 여 빌드된 이미지 보다 약간 느리지만 됩니다 **/Od** (최대 5% 보다 느림을 **/Od** 빌드).
+기능을 사용할지 **/RTC** 개발 빌드; **/RTC** 정품 빌드에 쓰일 수 없습니다. **/RTC** 컴파일러 최적화를 사용 하 여 사용할 수 없습니다 ([/O 옵션 (코드 최적화)](o-options-optimize-code.md)). 프로그램 이미지를 사용 하 여 빌드한 **/RTC** 약간 크고 사용 하 여 빌드된 이미지 보다 약간 느리지만 됩니다 **/Od** (최대 5% 보다 느림을 **/Od** 빌드).
 
-__MSVC_RUNTIME_CHECKS 전처리기 지시문을 사용할 때 정의 됩니다 **/RTC** 옵션 또는 [/GZ](../../build/reference/gz-enable-stack-frame-run-time-error-checking.md)합니다.
+__MSVC_RUNTIME_CHECKS 전처리기 지시문을 사용할 때 정의 됩니다 **/RTC** 옵션 또는 [/GZ](gz-enable-stack-frame-run-time-error-checking.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -120,6 +120,6 @@ __MSVC_RUNTIME_CHECKS 전처리기 지시문을 사용할 때 정의 됩니다 *
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
 [방법: 네이티브 런타임 검사 사용](/visualstudio/debugger/how-to-use-native-run-time-checks)

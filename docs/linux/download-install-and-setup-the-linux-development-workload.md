@@ -1,18 +1,22 @@
 ---
 title: Visual Studio에서 C++ Linux 워크로드 설치
 description: Visual Studio에서 C++에 대한 Linux 워크로드를 다운로드하고, 설치하고, 설정하는 방법을 설명합니다.
-ms.date: 02/06/2019
+ms.date: 03/05/2019
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: c01c8ddeeb8439a7610c0f6c7c11b608ab3675d8
-ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
+ms.openlocfilehash: 74155724abb3a0e02cc27dd8a8d144f142ee4b6f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763890"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747724"
 ---
-# <a name="download-install-and-setup-the-linux-workload"></a>Linux 작업 다운로드, 설치, 설정
+# <a name="download-install-and-set-up-the-linux-workload"></a>Linux 워크로드 다운로드, 설치 및 설정
 
-Windows에서 Visual Studio IDE를 사용하여 Linux 물리적 컴퓨터, 가상 머신 또는 [Linux용 Windows 하위 시스템](/windows/wsl/about)에서 실행되는 C++ 프로젝트를 작성, 편집 및 디버그할 수 있습니다. 이러한 시나리오에서는 먼저 **C++를 사용한 Linux 개발** 워크로드를 설치합니다.
+Windows에서 Visual Studio 2017 IDE를 사용하여 Linux 물리적 컴퓨터, 가상 머신 또는 [Linux용 Windows 하위 시스템](/windows/wsl/about)에서 실행되는 C++ 프로젝트를 만들고, 편집하고, 디버그할 수 있습니다. 
+
+CMake 또는 다른 빌드 시스템을 Visual Studio 프로젝트로 변환할 필요 없이 해당 시스템을 사용하는 기존 코드 베이스에서 작업할 수 있습니다. 코드 베이스가 플랫폼 간 기반인 경우 Visual Studio 내에서 Windows와 Linux를 모두 대상으로 할 수 있습니다. 예를 들어 Visual Studio를 사용하여 Windows에서 코드를 편집하고, 디버그하고, 프로파일링한 다음, 신속하게 Linux에서 프로젝트의 대상을 변경하여 추가 테스트를 수행할 수 있습니다. Linux 헤더 파일은 Visual Studio에서 전체 IntelliSense를 지원하기 위해 해당 파일을 사용하는 로컬 머신에 자동으로 복사됩니다(문 완성, 정의로 이동 등).
+ 
+이러한 시나리오에서는 **C++를 사용한 Linux 개발** 워크로드가 필요합니다. 
 
 ## <a name="visual-studio-setup"></a>Visual Studio 설치
 
@@ -22,6 +26,8 @@ Windows에서 Visual Studio IDE를 사용하여 Linux 물리적 컴퓨터, 가�
    ![Linux 개발용 Visual C++ 워크로드](media/linuxworkload.png)
 
 1. CMake를 사용하거나 IoT 또는 임베디드 플랫폼을 대상으로 하는 경우 오른쪽의 **설치 세부 정보** 창으로 이동하고 **C++를 사용한 Linux 개발** 아래의 **옵션 구성 요소** 확장한 후 필요한 구성 요소를 선택합니다.
+
+    **Visual Studio 2017 버전 15.4 이상**<br/>: Visual Studio에 대한 Linux C++ 워크로드를 설치하면 Linux용 CMake 지원이 기본적으로 선택됩니다.
 
 1. **수정**을 클릭하여 설치를 계속합니다.
 
@@ -63,3 +69,6 @@ Fedora를 실행하는 대상 시스템은 **dnf** 패키지 설치 프로그램
 
    그러면 서비스가 시작되고 백그라운드에서 실행되므로 연결을 허용할 준비가 됩니다.
 
+## <a name="ensure-you-have-cmake-38-on-the-remote-linux-machine"></a>원격 Linux 머신에서 CMake 3.8을 설치했는지 확인합니다.
+
+Linux distro에 이전 버전의 CMake가 있을 수 있습니다. Visual Studio에서 CMake가 지원되려면 CMake 3.8에 도입된 서버 모드 지원이 필요합니다. Microsoft 제공 CMake 변형의 경우 [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases)에서 미리 빌드된 최신 바이너리를 Linux 머신에 다운로드합니다.

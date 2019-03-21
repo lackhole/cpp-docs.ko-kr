@@ -31,14 +31,13 @@ f1_keywords:
 - C4380
 - C4387
 - C4388
-- C4396
 ms.assetid: 170248db-7bf2-4823-92d9-437b04c1290d
-ms.openlocfilehash: 02340234fc504773a29b3d83ae606cd1eb4e09f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9cca32973ead1d7d88e37c4745491c8d5f181e0b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455997"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810512"
 ---
 # <a name="compiler-warnings-c4200-through-c4399"></a>컴파일러 경고 C4200 ~ C4399
 
@@ -175,7 +174,7 @@ ms.locfileid: "50455997"
 |[컴파일러 경고(수준 2) C4356](../../error-messages/compiler-warnings/compiler-warning-level-2-c4356.md)|'*멤버*': 파생된 클래스를 통해 정적 데이터 멤버를 초기화할 수 없습니다|
 |[컴파일러 경고(수준 3) C4357](../../error-messages/compiler-warnings/compiler-warning-level-3-c4357.md)|매개 변수 배열 인수 대리자에 대 한 정식 인수 목록에 '*위임할*'를 생성할 때 무시'*함수*'|
 |[컴파일러 경고(수준 1) C4358](../../error-messages/compiler-warnings/compiler-warning-level-1-c4358.md)|'*연산자*': 결합된 대리자의 반환 형식은 'void' 되지 않으면 반환된 값 정의 되지 않습니다.|
-|[컴파일러 경고(수준 3) C4359](../../error-messages/compiler-warnings/compiler-warning-level-3-c4359.md)|'*형식*': 맞춤 지정 자가 실제 맞춤 보다 작습니다 ('*맞춤*'), 무시 됩니다.|
+|[컴파일러 경고(수준 3) C4359](../../error-messages/compiler-warnings/compiler-warning-level-3-c4359.md)|'*type*': 맞춤 지정 자가 실제 맞춤 보다 작습니다 ('*맞춤*'), 무시 됩니다.|
 |컴파일러 경고 (수준 2) C4362|'*형식*': 맞춤 8 바이트 보다 큰 CLR에서 지원 되지 않습니다|
 |[컴파일러 경고(수준 1) C4364](../../error-messages/compiler-warnings/compiler-warning-level-1-c4364.md)|#using 어셈블리에 대 한 '*어셈블리*'에서 이전에 표시'*위치*' ('*line_number*') 없이으로\_friend 특성;\_friend 하지 적용|
 |[컴파일러 경고(수준 4) C4365](../../error-messages/compiler-warnings/compiler-warning-level-4-c4365.md)|'*식을*': 변환할 '*type1*'to'*type2*', signed 또는 unsigned 일치 하지 않습니다.|
@@ -192,7 +191,7 @@ ms.locfileid: "50455997"
 |[컴파일러 경고(수준 1) C4377](../../error-messages/compiler-warnings/compiler-warning-level-1-c4377.md)|네이티브 형식은 기본적으로 private입니다. -d1PrivateNativeTypes는 사용 되지 않습니다.|
 |[컴파일러 경고(수준 1) C4378](../../error-messages/compiler-warnings/compiler-warning-level-1-c4378.md)|이니셜라이저를 실행 하는 함수 포인터를 가져와야 합니다. resolvemethodhandle|
 |[컴파일러 경고(수준 1) C4379](../../error-messages/compiler-warnings/compiler-warning-level-1-c4379.md)|버전 '*version_number*' 공용 언어 런타임에서이 컴파일러에서 지원 되지 않습니다. 이 버전을 사용 하 여 예기치 않은 결과가 발생할 수 있습니다.|
-|컴파일러 경고 (수준 1, 오류) C4380|'*클래스*': 기본 생성자를 사용 되지 않을 수 없습니다.|
+|컴파일러 경고 (수준 1, 오류) C4380|'*class*': 기본 생성자를 사용 되지 않을 수 없습니다.|
 |[컴파일러 경고(수준 1) C4381](../../error-messages/compiler-warnings/compiler-warning-level-1-c4381.md)|'*function1*': public이 아닌 메서드에 의해 인터페이스 메서드를 구현할 수는 '*function2*'|
 |[컴파일러 경고(수준 1) C4382](../../error-messages/compiler-warnings/compiler-warning-level-1-c4382.md)|throw '*형식*': __clrcall 소멸자 또는 복사 생성자를 사용 하 여 형식 /clr에서 낼 수 있습니다: 순수 모듈|
 |[컴파일러 경고(수준 1) C4383](../../error-messages/compiler-warnings/compiler-warning-level-1-c4383.md)|'*instance_dereference_operator*': 사용자 정의 하는 경우에 대 한 핸들 역참조의 의미가 변경할 수 '*instance_dereference_operator*' 연산자가; 연산자는 static로 쓰기 피연산자에 대 한 명시적 함수|

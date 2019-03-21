@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - commit-to-disk constants
 ms.assetid: 0b903b23-b4fa-431e-a937-51d95f695ecf
-ms.openlocfilehash: f4da66c913cd8a046257158e837e5bdb20ed71c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c02b18e5a4a731957a7c74cc45e6e181fe23fad8
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581399"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750613"
 ---
 # <a name="commit-to-disk-constants"></a>디스크에 커밋 상수
 
@@ -23,7 +23,7 @@ ms.locfileid: "50581399"
 #include <stdio.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이러한 Microsoft 전용 상수는 열려 있는 파일과 연결된 버퍼가 운영 체제 버퍼 또는 디스크에 플러시되는지 여부를 지정합니다. 모드는 읽기/쓰기 액세스 형식을 지정하는 문자열에 포함됩니다(**"r"**, **"w"**, **"a"**, **"r+"**, **"w+"**, **"a+"**).
 

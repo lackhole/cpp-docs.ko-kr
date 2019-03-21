@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - data alignment [C++]
 ms.assetid: 35ac3d2d-a4b3-421b-954f-b7372b1f18e1
-ms.openlocfilehash: 7d835545bdc1f94de56846f35d510927c06c2560
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 92b8df81751e01e655e348d5f090705e5194312b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520287"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738822"
 ---
 # <a name="data-alignment"></a>데이터 맞춤
 
@@ -19,7 +19,7 @@ ms.locfileid: "50520287"
 
 ## <a name="data-alignment-routines"></a>데이터 정렬 루틴
 
-|루틴에서 반환된 값|사용|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[_aligned_free](../c-runtime-library/reference/aligned-free.md)|[_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) 또는 [_aligned_offset_malloc](../c-runtime-library/reference/aligned-offset-malloc.md)를 사용하여 할당된 메모리 블록을 해제합니다.|
 |[_aligned_free_dbg](../c-runtime-library/reference/aligned-free-dbg.md)|[_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) 또는 [_aligned_offset_malloc](../c-runtime-library/reference/aligned-offset-malloc.md)를 사용하여 할당된 메모리 블록을 해제합니다(디버그에만 해당).|

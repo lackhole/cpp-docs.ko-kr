@@ -11,16 +11,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::STAThreadAttribute Class
 ms.assetid: f97960fc-e673-4d9e-910a-54c8415411c4
-ms.openlocfilehash: 9073dc6e802aa2ed6bfa4fde2a09dd8a0864687b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05fb2879839c504f49f56e25ffe28329aa969c69
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555662"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743580"
 ---
 # <a name="platformstathreadattribute-class"></a>Platform::STAThreadAttribute 클래스
 
-응용 프로그램에 대한 스레딩 모델이 STA(단일 스레드 아파트)임을 나타냅니다.
+애플리케이션에 대한 스레딩 모델이 STA(단일 스레드 아파트)임을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -54,7 +54,7 @@ STAThreadAttribute 특성에서 상속 [platform:: object 클래스](../cppcx/pl
 
 **헤더:** collection.h
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 ## <a name="ctor"></a> STAThreadAttribute constructor
 
@@ -113,6 +113,6 @@ public:String^ ToString();
 
 현재 개체를 나타내는 문자열입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

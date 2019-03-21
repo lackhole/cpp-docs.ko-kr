@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0019
 ms.assetid: 5390a62b-aacf-4bc8-b9d7-08f1e0233423
-ms.openlocfilehash: d99750efcfc400cc85a865ebd30a8c2a3da1d07e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e97d9488df0eeb666cb78354d0363c2a359a159d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620795"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808094"
 ---
 # <a name="project-build-error-prj0019"></a>프로젝트 빌드 오류 PRJ0019
 
@@ -21,6 +21,6 @@ ms.locfileid: "50620795"
 
 도구 오류 메시지가 없는 오류 코드를 반환 하는 경우에 PRJ0019 나타납니다. 이 경우 발생할 수 있습니다, 예를 들어, MIDL 출력을 nul로 리디렉션 있습니다.
 
-참조 [사용자 지정 빌드 단계 문제 해결 및 빌드 이벤트](../../ide/troubleshooting-build-customizations.md) 자세한 내용은 합니다.
+참조 [사용자 지정 빌드 단계 문제 해결 및 빌드 이벤트](../../build/troubleshooting-build-customizations.md) 자세한 내용은 합니다.
 
 관리 액세스가 필요한 사용자 그룹의 구성원으로 실행 하는 경우이 오류가 발생할 수 있습니다. 자세한 내용은 [Users 그룹의 멤버로 실행](../../security/running-as-a-member-of-the-users-group.md)합니다.

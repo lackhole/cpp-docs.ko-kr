@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-ms.openlocfilehash: bf7d73e1e50bb77a84267f3a5388c07a49c54c79
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: 64c70b619380d7c2ed4aaaecad3ee01a1d0f79c7
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809700"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743814"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid 값 클래스
 
@@ -91,28 +91,28 @@ Guid(
 다음 2 바이트는 `GUID`합니다.
 
 *d*<br/>
-`GUID`의 다음 바이트입니다.
+다음 바이트를 `GUID`입니다.
 
 *e*<br/>
-`GUID`의 다음 바이트입니다.
+다음 바이트를 `GUID`입니다.
 
 *f*<br/>
-`GUID`의 다음 바이트입니다.
+다음 바이트를 `GUID`입니다.
 
 *g*<br/>
-`GUID`의 다음 바이트입니다.
+다음 바이트를 `GUID`입니다.
 
 *h*<br/>
-`GUID`의 다음 바이트입니다.
+다음 바이트를 `GUID`입니다.
 
 *i*<br/>
-`GUID`의 다음 바이트입니다.
+다음 바이트를 `GUID`입니다.
 
 *j*<br/>
-`GUID`의 다음 바이트입니다.
+다음 바이트를 `GUID`입니다.
 
 *k*<br/>
-`GUID`의 다음 바이트입니다.
+다음 바이트를 `GUID`입니다.
 
 *m*<br/>
 A `GUID` 형태로 [GUID 구조체](https://msdn.microsoft.com/library/windows/desktop/aa373931)합니다.
@@ -148,7 +148,7 @@ True 이면 두 `Platform::Guid` 인스턴스는 서로 같습니다.
 
 ## <a name="operator-inequality"></a> Guid::operator! = 연산자
 
-두 `Platform::Guid` 인스턴스가 다른지 비교합니다.
+두 `Platform::Guid` 인스턴스가 같지 않은지 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -206,6 +206,6 @@ const GUID& Platform::Guid::operator();
 
 A [GUID 구조체](https://msdn.microsoft.com/library/windows/desktop/aa373931)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

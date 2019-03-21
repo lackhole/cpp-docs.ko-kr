@@ -8,12 +8,12 @@ helpviewer_keywords:
 - '#include directive'
 - include directive (#include)
 ms.assetid: 17067dc0-8db1-4f2d-b43e-ec12ecf83238
-ms.openlocfilehash: da68f71d2a3830cdd86870d8ef072c3fb04933db
-ms.sourcegitcommit: 45835842604602a011813d0cd70abc5df91b89ed
+ms.openlocfilehash: 67a44574a5a72a7b7addc0ed3d7b51cd3eb5b984
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750407"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821391"
 ---
 # <a name="include-directive-cc"></a>#include 지시문 (C/C++)
 
@@ -49,7 +49,7 @@ ms.locfileid: "50750407"
 
 include 파일이 중첩되고 명령줄에서 컴파일이 실행될 경우 디렉터리 검색은 부모 파일의 디렉터리에서 시작하여 상위 부모 파일의 디렉터리로 진행됩니다. 즉, 현재 처리 중인 소스가 포함된 디렉터리를 기준으로 검색이 시작됩니다. 로 지정 되는 디렉터리로 이동 하 여 검색 파일이 없으면 합니다 [/I (추가 포함 디렉터리)](../build/reference/i-additional-include-directories.md) 컴파일러 옵션입니다. 마지막으로 INCLUDE 환경 변수에 지정된 디렉터리가 검색됩니다.
 
-Visual Studio 개발 환경에서 INCLUDE 환경 변수는 무시 됩니다. 포함 파일에 대 한 검색 되는 디렉터리를 설정 하는 방법에 대 한 자세한-LIB 환경 변수에 적용 됩니다-참조 [VC + + Directories Property Page](../ide/vcpp-directories-property-page.md)합니다.
+Visual Studio 개발 환경에서 INCLUDE 환경 변수는 무시 됩니다. 포함 파일에 대 한 검색 되는 디렉터리를 설정 하는 방법에 대 한 자세한-LIB 환경 변수에 적용 됩니다-참조 [VC + + Directories Property Page](../build/reference/vcpp-directories-property-page.md)합니다.
 
 다음 예제는 꺾쇠 괄호를 사용한 파일 포함을 보여 줍니다.
 

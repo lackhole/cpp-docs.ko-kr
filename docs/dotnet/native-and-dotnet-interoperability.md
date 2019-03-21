@@ -14,12 +14,12 @@ helpviewer_keywords:
 - Visual C++, interoperability
 - native code [C++], .NET interoperatibility
 ms.assetid: f3ec6c99-c745-4256-b95b-f1d12ba17a5a
-ms.openlocfilehash: 23824cb28347bc17d7ac26bb09c9f6f55b1eb175
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae5a4583d5f074b98e346ba090246f533b80803d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666078"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742147"
 ---
 # <a name="native-and-net-interoperability"></a>네이티브 및 .NET 상호 운용성
 
@@ -36,5 +36,4 @@ MFC Windows Forms 지원 클래스를 사용하여 MFC 응용 프로그램 내�
 [관리 코드에서 네이티브 함수 호출](../dotnet/calling-native-functions-from-managed-code.md)<br/>
 .NET 응용 프로그램에서 CLR가 아닌 DLL을 사용하는 방법에 대해 설명합니다.
 
-## <a name="see-also"></a>참고 항목
-
+## <a name="see-also"></a>참고자료

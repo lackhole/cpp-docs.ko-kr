@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -DISASM dumpbin option
 - DISASM dumpbin option
 - /DISASM dumpbin option
-ms.openlocfilehash: 77f6f05029ec4480afb2180eab0bb57838d643a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 10e8187e896b3922438a8cf2dafa0aec4c91f904
+ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462948"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57822537"
 ---
 # <a name="disasm"></a>/DISASM
 
@@ -36,8 +36,8 @@ DUMPBIN 출력에 있는 코드 섹션의 디스어셈블리를 인쇄 합니다
 
 **/DISASM** 네이티브, 관리 되지 않는 이미지에만 사용 해야 합니다. 관리 코드에 해당 하는 도구는 [ILDASM](/dotnet/framework/tools/ildasm-exe-il-disassembler)합니다.
 
-만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션에서 생성 된 파일에 사용할 수는 [/GL (전체 프로그램 최적화)](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.
+만 [/HEADERS](headers.md) DUMPBIN 옵션에서 생성 된 파일에 사용할 수는 [/GL (전체 프로그램 최적화)](gl-whole-program-optimization.md) 컴파일러 옵션입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[DUMPBIN 옵션](../../build/reference/dumpbin-options.md)
+[DUMPBIN 옵션](dumpbin-options.md)

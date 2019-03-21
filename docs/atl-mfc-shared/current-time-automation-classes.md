@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Automation classes, current time
 - time, getting current
 ms.assetid: cc967f17-1189-4cf3-85f9-1969462d5f72
-ms.openlocfilehash: 97984376057462daaebbf949e96131e91928a1ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f1183bc5fd42a59c73556d6fdecfd45c781e8cd7
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596575"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739722"
 ---
 # <a name="current-time-automation-classes"></a>현재 시간: 자동화 클래스
 
@@ -27,6 +27,6 @@ ms.locfileid: "50596575"
 
    [!code-cpp[NVC_ATLMFC_Utilities#177](../atl-mfc-shared/codesnippet/cpp/current-time-automation-classes_1.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [날짜 및 시간: 자동화 지원](../atl-mfc-shared/date-and-time-automation-support.md)

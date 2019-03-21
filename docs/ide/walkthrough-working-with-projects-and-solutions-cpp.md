@@ -7,12 +7,12 @@ helpviewer_keywords:
 - projects [C++]
 - solutions [C++], about solutions
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
-ms.openlocfilehash: 968e4981a28d646b75335ee380635fd8f8e863e3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 9408938b670d8130305f2e1c1258fc6fcb9875bb
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519233"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57820067"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>연습: 프로젝트 및 솔루션 작업(C++)
 
@@ -22,7 +22,7 @@ Visual Studio에서는 프로젝트와 솔루션으로 작업을 구성합니다
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-이 연습을 완료하려면 Visual Studio 2017 버전 15.3 이상이 필요합니다. 복사본이 필요한 경우, [Visual Studio에서 C++ 지원 설치](../build/vscpp-step-0-installation.md)에 대한 간단한 가이드를 참조하세요. 아직 설치하지 않았다면 "Hello, World" 자습서를 통해 설치한 후, 다음 단계를 수행하여 Visual C++가 올바르게 설치되었고 완전히 작동하는지 확인합니다.
+이 연습을 완료하려면 Visual Studio 2017 버전 15.3 이상이 필요합니다. 복사본이 필요한 경우 다음과 같은 간단한 가이드를 참조하세요. [Visual Studio에서 C++ 지원을 설치합니다](../build/vscpp-step-0-installation.md). 아직 설치하지 않았다면 "Hello, World" 자습서를 통해 설치한 후, 다음 단계를 수행하여 Visual C++가 올바르게 설치되었고 완전히 작동하는지 확인합니다.
 
 C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디버거가 사용되는 용도를 파악하면 도움이 됩니다. 이 자습서에서는 Windows 및 메뉴, 대화 상자를 사용하는 방법에 익숙하다고 가정합니다.
 
@@ -36,10 +36,10 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
 1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **설치됨**을 확장하고, 아직 열려 있지 않은 경우 **Visual C++** 를 선택합니다.
 
-1. 가운데 창의 설치된 템플릿 목록에서 **Windows 콘솔 응용 프로그램**을 선택합니다.
+1. 가운데 창의 설치된 템플릿 목록에서 **Windows 콘솔 애플리케이션**을 선택합니다.
 
    > [!NOTE]
-   > 이전 버전의 Visual Studio에서는 설치된 템플릿을 **Win32 콘솔 응용 프로그램**이라고 합니다.
+   > 이전 버전의 Visual Studio에서는 설치된 템플릿을 **Win32 콘솔 애플리케이션**이라고 합니다.
 
 1. **이름** 상자에 프로젝트의 이름을 입력합니다. 이 예에서는 *Game*을 입력합니다.
 
@@ -83,11 +83,13 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
       생성자를 수정하여 *players*라고 명명된 `int` 형식의 매개 변수 하나를 사용합니다.
 
-      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]--> `Cardgame(int players);`
+      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->
+      `Cardgame(int players);`
 
    - 기본 소멸자 뒤에 매개 변수를 사용하지 않고 `totalParticipants` 값을 반환하는 *GetParticipants*라는 `static int` 멤버 함수에 대한 인라인 선언을 추가합니다.
 
-      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#102](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_3.h)]--> `static int GetParticipants() { return totalParticipants; }`
+      <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#102](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_3.h)]-->
+      `static int GetParticipants() { return totalParticipants; }`
 
    변경한 후 Cardgame.h 파일은 아래 코드와 유사합니다.
 
@@ -221,4 +223,4 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 ## <a name="see-also"></a>참고 항목
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
-[C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)<br/>
+[프로젝트 및 빌드 시스템](../build/projects-and-build-systems-cpp.md)<br/>

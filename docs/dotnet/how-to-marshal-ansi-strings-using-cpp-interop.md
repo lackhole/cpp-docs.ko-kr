@@ -1,5 +1,5 @@
 ---
-title: '방법: C++ Interop를 사용하여 ANSI 문자열 마샬링'
+title: '방법: C + + Interop를 사용 하 여 ANSI 문자열 마샬링'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - C++ Interop, strings
 - data marshaling [C++], strings
 ms.assetid: 5eda2eb6-5140-40f0-82cf-7ce171fffb45
-ms.openlocfilehash: 272e64a5dd8faf103daf3ab7fa17449bf3dbb7ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b73d8ed403ab0bbad7703f66f0d8d4ac23bb7766
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570504"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748036"
 ---
-# <a name="how-to-marshal-ansi-strings-using-c-interop"></a>방법: C++ Interop를 사용하여 ANSI 문자열 마샬링
+# <a name="how-to-marshal-ansi-strings-using-c-interop"></a>방법: C + + Interop를 사용 하 여 ANSI 문자열 마샬링
 
 이 항목에서는 ANSI 문자열 수 있는 방법을 보여 줍니다..NET Framework c + + Interop를 사용 하 여 전달 <xref:System.String> ANSI로 변환에는 추가 단계 이므로 유니코드 형식으로 문자열을 나타냅니다. 다른 문자열 형식 상호 작용을 하기 위한 다음 항목을 참조 합니다.
 
@@ -96,6 +96,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

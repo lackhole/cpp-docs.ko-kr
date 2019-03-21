@@ -2,12 +2,12 @@
 title: ARM ABI 규칙 개요
 ms.date: 07/11/2018
 ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
-ms.openlocfilehash: d25cba2800348ca1ae45c5bb59163816a4eefa02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 17f2598912879d0eb54fd189e1fae541ba2f874f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436025"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57810460"
 ---
 # <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABI 규칙 개요
 
@@ -23,7 +23,7 @@ Windows on ARM은 항상 ARMv7 아키텍처에서 실행된다고 가정합니�
 
 ## <a name="endianness"></a>endian
 
-Windows on ARM은 little endian 모드에서 실행됩니다. Visual C++ 컴파일러와 Windows 런타임에서는 항상 little endian 데이터를 사용해야 합니다. ARM ISA(명령 집합 아키텍처)의 SETEND 명령은 사용자 모드 코드도 현재 endian을 변경하도록 허용하지만 이 작업은 응용 프로그램에 위험하므로 수행하지 않는 것이 좋습니다. big endian 모드에서 예외가 생성되면 동작을 예측할 수 없으며 사용자 모드에서 응용 프로그램 오류가 발생하거나 커널 모드에서 버그 검사가 수행될 수 있습니다.
+Windows on ARM은 little endian 모드에서 실행됩니다. MSVC 컴파일러와 Windows 런타임 항상 little endian 데이터를 기대합니다. ARM ISA(명령 집합 아키텍처)의 SETEND 명령은 사용자 모드 코드도 현재 endian을 변경하도록 허용하지만 이 작업은 응용 프로그램에 위험하므로 수행하지 않는 것이 좋습니다. big endian 모드에서 예외가 생성되면 동작을 예측할 수 없으며 사용자 모드에서 응용 프로그램 오류가 발생하거나 커널 모드에서 버그 검사가 수행될 수 있습니다.
 
 ## <a name="alignment"></a>맞춤
 
@@ -137,7 +137,7 @@ Windows에서는 VFPv3-D32 보조 프로세서가 지원되는 ARM 변형만을 
 
 variadic이 아닌 함수의 경우 Windows on ARM ABI는 매개 변수 전달에 대한 ARM 규칙을 따릅니다. 여기에는 VFP 및 고급 SIMD 확장이 포함됩니다. 이러한 규칙에 따라 합니다 [ARM 아키텍처에 대 한 프로시저 호출 표준](http://infocenter.arm.com/help/topic/com.arm.doc.ihi0042c/IHI0042C_aapcs.pdf)VFP 확장을 사용 하 여 통합 합니다. 기본적으로 처음 4개 정수와 최대 8개의 부동 소수점 또는 벡터 인수가 레지스터로 전달되며 추가 인수는 스택에 전달됩니다. 인수는 다음 절차를 통해 레지스터나 스택에 할당됩니다.
 
-### <a name="stage-a-initialization"></a>A: 초기화 단계
+### <a name="stage-a-initialization"></a>A: 단계 초기화
 
 초기화는 인수 전달이 시작되기 전에 정확히 한 번 수행됩니다.
 
@@ -149,7 +149,7 @@ variadic이 아닌 함수의 경우 Windows on ARM ABI는 매개 변수 전달�
 
 1. 메모리에서 결과를 반환하는 함수를 호출하면 결과의 주소가 r0에 배치되고 NCRN은 r1로 설정됩니다.
 
-### <a name="stage-b-pre-padding-and-extension-of-arguments"></a>단계 b: 사전 채우기 및 인수 확장명
+### <a name="stage-b-pre-padding-and-extension-of-arguments"></a>단계 b: 미리 안쪽 여백 및 인수 확장명
 
 목록의 각 인수에 대해 다음 목록에서 일치하는 첫 번째 규칙이 적용됩니다.
 
@@ -205,15 +205,16 @@ Windows의 기본 커널 모드 스택은 3개 페이지(12KB)입니다. 커널 
 
 ## <a name="stack-walking"></a>스택 워크
 
-사용 하도록 설정 하는 프레임 포인터를 사용 하 여 Windows 코드가 컴파일되면 ([/Oy (프레임 포인터 생략)](../build/reference/oy-frame-pointer-omission.md)) 빠른 스택 워크를 사용 하도록 설정 합니다. 일반적으로 r11 레지스터는 체인의 다음 링크를 가리킵니다. 이 링크는 포인터를 스택의 이전 프레임 및 반환 주소로 지정하는 {r11, lr} 쌍입니다. 프로파일링 및 추적 개선을 위해 코드에서 프레임 포인터도 사용하도록 설정하는 것이 좋습니다.
+사용 하도록 설정 하는 프레임 포인터를 사용 하 여 Windows 코드가 컴파일되면 ([/Oy (프레임 포인터 생략)](reference/oy-frame-pointer-omission.md)) 빠른 스택 워크를 사용 하도록 설정 합니다. 일반적으로 r11 레지스터는 체인의 다음 링크를 가리킵니다. 이 링크는 포인터를 스택의 이전 프레임 및 반환 주소로 지정하는 {r11, lr} 쌍입니다. 프로파일링 및 추적 개선을 위해 코드에서 프레임 포인터도 사용하도록 설정하는 것이 좋습니다.
 
 ## <a name="exception-unwinding"></a>예외 해제
 
 해제 코드를 사용하여 예외 처리 중의 스택 해제를 사용하도록 설정합니다. 해제 코드는 실행 가능 이미지의 .xdata 섹션에 저장되는 바이트 시퀀스로, 함수 프롤로그 및 에필로그 코드의 작동을 요약하여 설명하므로 호출자 스택 프레임 해제를 준비하기 위해 적용된 함수 프롤로그를 실행 취소할 수 있습니다.
 
-ARM EABI는 해제 코드를 사용하는 예외 해제 모델을 지정합니다. 그러나 프로세서가 함수의 프롤로그 또는 에필로그 중간에 포함된 사례를 처리해야 하는 Windows의 해제에는 이 사양만으로는 부족합니다. ARM 예외 데이터 및 해제에 Windows에 대 한 자세한 내용은 참조 하세요 [ARM 예외 처리](../build/arm-exception-handling.md)합니다.
+ARM EABI는 해제 코드를 사용하는 예외 해제 모델을 지정합니다. 그러나 프로세서가 함수의 프롤로그 또는 에필로그 중간에 포함된 사례를 처리해야 하는 Windows의 해제에는 이 사양만으로는 부족합니다. ARM 예외 데이터 및 해제에 Windows에 대 한 자세한 내용은 참조 하세요 [ARM 예외 처리](arm-exception-handling.md)합니다.
 
-`RtlAddFunctionTable` 및 관련 함수 호출에 지정된 동적 함수 테이블을 사용하여 동적으로 생성된 코드를 설명하는 것이 좋습니다. 그러면 생성된 코드가 예외 처리에 참여할 수 있습니다.
+
+  `RtlAddFunctionTable` 및 관련 함수 호출에 지정된 동적 함수 테이블을 사용하여 동적으로 생성된 코드를 설명하는 것이 좋습니다. 그러면 생성된 코드가 예외 처리에 참여할 수 있습니다.
 
 ## <a name="cycle-counter"></a>사이클 카운터
 
@@ -223,5 +224,5 @@ Windows를 실행하는 ARM 프로세서는 사이클 카운터를 지원해야 
 
 ## <a name="see-also"></a>참고자료
 
-[일반적인 Visual C++ ARM 마이그레이션 문제](../build/common-visual-cpp-arm-migration-issues.md)<br/>
-[ARM 예외 처리](../build/arm-exception-handling.md)
+[일반적인 Visual C++ ARM 마이그레이션 문제](common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM 예외 처리](arm-exception-handling.md)

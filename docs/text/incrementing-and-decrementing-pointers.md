@@ -1,4 +1,4 @@
-﻿---
+---
 title: 문자 단위로 포인터 값 증감시키기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +7,12 @@ helpviewer_keywords:
 - pointers [C++], multibyte characters
 - decrementing pointers
 ms.assetid: 0872b4a0-e2bd-4004-8319-070efb76f2fd
-ms.openlocfilehash: 1899e3153300bbfbfce068d29351de601f336b6d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cdaee3d13a8ceab47f62100953a0eb6e51bfc255
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567091"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746801"
 ---
 # <a name="incrementing-and-decrementing-pointers"></a>문자 단위로 포인터 값 증감시키기
 
@@ -26,7 +26,7 @@ ms.locfileid: "50567091"
     sz1++;
     ```
 
-   다음처럼 사용하세요.
+   다음과 같이 사용하십시오.
 
     ```cpp
     sz1 = _mbsinc( sz1 );
@@ -40,7 +40,8 @@ ms.locfileid: "50567091"
     sz2--;
     ```
 
-   다음처럼 사용하세요.
+   다음과 같이 사용하십시오.
+
     ```cpp
     sz2 = _mbsdec( sz2Head, sz2 );
     ```
@@ -52,12 +53,10 @@ ms.locfileid: "50567091"
     ```
 
    포인터는 선행 바이트 값 범위 안에 있는 유효한 포인터여야 합니다.
-   
-- `_mbsdec`를 호출할 때 더 빠른 성능을 원한다면 이전 문자에 대한 포인터를 유지하는 것도 한 방법입니다.
 
 - `_mbsdec`를 호출할 때 더 빠른 성능을 원한다면 이전 문자에 대한 포인터를 유지하는 것도 한 방법입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [멀티바이트 문자 집합(MBCS) 프로그래밍 팁](../text/mbcs-programming-tips.md)<br/>
 [바이트 인덱스](../text/byte-indices.md)

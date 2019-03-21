@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - static libraries, MFC
 ms.assetid: c3f62b0e-3f13-42c5-9859-d3890d0c3e1d
-ms.openlocfilehash: de23c59fdb59f6f40e256589c5450a8118bb8e5c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: be4fff19b812ef3dfdafc3270b4923a02e456cee
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281254"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820574"
 ---
 # <a name="application-type-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 애플리케이션 종류
 
@@ -101,4 +101,4 @@ ms.locfileid: "57281254"
 ## <a name="see-also"></a>참고자료
 
 [MFC 응용 프로그램 마법사](../../mfc/reference/mfc-application-wizard.md)<br/>
-[Visual C++ 프로젝트용 파일 형식](../../ide/file-types-created-for-visual-cpp-projects.md)
+[Visual C++ 프로젝트용 파일 형식](../../build/reference/file-types-created-for-visual-cpp-projects.md)

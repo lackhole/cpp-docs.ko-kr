@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - heap contention
 ms.assetid: 797129d7-5f8c-4b0e-8974-bb93217e9ab5
-ms.openlocfilehash: c28e5ba01cc2bb1e3cae19087a67cf97e6ac415f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 45510607a63759aad9444959716bef164eda1492
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536788"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743273"
 ---
 # <a name="avoidance-of-heap-contention"></a>힙 경합 방지
 
@@ -31,7 +31,6 @@ MFC와 ATL에서 제공 하는 기본 문자열 관리자는 전역 힙 기반�
 
 더 복잡 한 스레드 프로시저에 대 한 스레드 로컬 저장소 (TLS) 슬롯에서 스레드의 문자열 관리자에 대 한 포인터를 저장 하는 것이 편리할 수 있습니다. 이렇게 하면 스레드 문자열 관리자에 액세스 하려면 스레드 프로시저에 의해 호출 함수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CStringT를 사용한 메모리 관리](../atl-mfc-shared/memory-management-with-cstringt.md)
-

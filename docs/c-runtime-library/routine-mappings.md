@@ -8,12 +8,12 @@ helpviewer_keywords:
 - TCHAR.H data types, list of routine mappings
 - generic-text mappings
 ms.assetid: 38f33d3b-0f7b-430d-8a4f-75e27c6f1c42
-ms.openlocfilehash: d07e759c67aa1a38f64272a6a974c8980d7ba71a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60a05b8102df1ecb9bb6f66eda15ff10cb12b32a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466302"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746893"
 ---
 # <a name="routine-mappings"></a>루틴 매핑
 
@@ -21,7 +21,7 @@ ms.locfileid: "50466302"
 
 다음 표의 왼쪽 열에 나열된 개별 루틴에 대한 자세한 내용은 이 설명서에서 확인할 수 없습니다. 그러나 해당하는 `SBCS`, `_MBCS` 또는 `_UNICODE` 관련 루틴에 대한 정보를 쉽게 조회할 수 있습니다. 아래에 나열된 제네릭 텍스트 루틴을 조회하려면 **도움말** 메뉴의 **검색** 명령을 사용하세요.
 
-자세한 내용은 [TCHAR.H의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조하세요.
+자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - hosting Windows Forms control [C++]
 - Windows Forms [C++], MFC support
 ms.assetid: 9f66ee52-b7cb-4ffd-8306-392a5da990d8
-ms.openlocfilehash: 921e6fac32d37f8976d53d49adab72fb27ab5e99
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 56cf00da71fe6c47e39de2a8fc06df572a301a61
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632221"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748569"
 ---
 # <a name="hosting-a-windows-form-user-control-in-an-mfc-dialog-box"></a>MFC 대화 상자에서 Windows Form 사용자 정의 컨트롤 호스팅
 
@@ -26,7 +26,7 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
 
 [방법: 대화 상자에 사용자 정의 컨트롤 및 호스트 만들기](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md)
 
-[방법: Windows Forms에서 DDX/DDV 데이터 바인딩 수행](../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md)
+[방법: 바인딩 Windows Forms에서 DDX/DDV 데이터](../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md)
 
 [방법: 네이티브 C++ 클래스에서 Windows Forms 이벤트 싱크](../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
 
@@ -34,7 +34,7 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
 
 [CWinFormsControl 클래스](../mfc/reference/cwinformscontrol-class.md) &#124; [CDialog 클래스](../mfc/reference/cdialog-class.md) &#124; [CWnd 클래스](../mfc/reference/cwnd-class.md)&#124; <xref:System.Windows.Forms.Control>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC에서 Windows Form 사용자 정의 컨트롤 사용](../dotnet/using-a-windows-form-user-control-in-mfc.md)<br/>
 [Windows Forms/MFC 프로그래밍의 차이점](../dotnet/windows-forms-mfc-programming-differences.md)<br/>

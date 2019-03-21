@@ -7,12 +7,12 @@ helpviewer_keywords:
 - STL/CLR, redistribution
 - cliext directory
 ms.assetid: a9d9ca00-7bf2-48c1-b205-3ae6f8c25f82
-ms.openlocfilehash: d5a2f3f9ceb62cf127d63c15131bf99646ebae4a
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: b3c25a40fdb5bade02e112b13d16420b248a177f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809622"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750951"
 ---
 # <a name="stlclr-library-reference"></a>STL/CLR 라이브러리 참조
 
@@ -61,6 +61,6 @@ C + + 어셈블리를 작성 하는 여러 STL/CLR 컨테이너의 요소를 표
 |[set(STL/CLR)](../dotnet/set-stl-clr.md)|[stack(STL/CLR)](../dotnet/stack-stl-clr.md)|
 |[utility(STL/CLR)](../dotnet/utility-stl-clr.md)|[vector(STL/CLR)](../dotnet/vector-stl-clr.md)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

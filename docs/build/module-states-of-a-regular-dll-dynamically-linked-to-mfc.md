@@ -8,12 +8,12 @@ helpviewer_keywords:
 - module states [C++], regular MFC DLLs dynamically linked to
 - DLLs [C++], module states
 ms.assetid: b4493e79-d25e-4b7f-a565-60de5b32c723
-ms.openlocfilehash: a47b2a11db9dfc08b84cc9cba07a62a91ac1a805
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3ab51ca8097bd5ec27e8e7cfd8b8f19d76195664
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420182"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822147"
 ---
 # <a name="module-states-of-a-regular-mfc-dll-dynamically-linked-to-mfc"></a>동적으로 MFC에 링크 된 기본 MFC DLL의 모듈 상태
 
@@ -37,10 +37,10 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 
 - [MFC 모듈 상태 데이터 관리](../mfc/managing-the-state-data-of-mfc-modules.md)
 
-- [동적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [동적으로 MFC에 링크 된 기본 MFC Dll](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC 확장명 DLL](../build/extension-dlls-overview.md)
+- [MFC 확장명 DLL](extension-dlls-overview.md)
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](../build/dlls-in-visual-cpp.md)
+[Visual C++의 DLL](dlls-in-visual-cpp.md)

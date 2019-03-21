@@ -5,12 +5,12 @@ helpviewer_keywords:
 - symbols [C++], predefined IDs
 - predefined symbol IDs
 ms.assetid: 91a5d610-1a04-47e8-b8a4-63ad650a90df
-ms.openlocfilehash: 7d3581a9f6f2a2080f72634a01d3417ffecf82a4
-ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
+ms.openlocfilehash: 22337e812936a90f8d7c4ead33989e1e0c4d39f0
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954915"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562759"
 ---
 # <a name="predefined-symbol-ids"></a>미리 정의된 기호 ID
 
@@ -18,7 +18,7 @@ ms.locfileid: "56954915"
 
 이러한 기호 ID는 리소스 작업을 할 때 중요해집니다. 액셀러레이터 키 테이블을 편집 하 고 그 중 일부가 이미 가상 키와 연결 하는 경우 사용할 수 있습니다. 통해 사용할 하기도 합니다 [속성 창](/visualstudio/ide/reference/properties-window)합니다. 미리 정의 된 기호 Id 중 하나를 새 리소스에 할당할 수 있습니다 또는 및 ID는 해당 키 조합과 자동으로 연결 하는 기호를 사용 하 여 관련 기능에 액셀러레이터 키를 할당할 수 있습니다.
 
-다음 라이브러리에는 프로젝트의 일부로 나타나는 미리 정의된 기호가 있습니다.
+라이브러리는 미리 정의 된 프로젝트의 일부로 표시 되는 기호:
 
 - [미리 정의된 ATL 기호](../windows/atl-predefined-symbols.md)
 

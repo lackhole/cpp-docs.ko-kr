@@ -17,12 +17,12 @@ helpviewer_keywords:
 - __wargv
 - __argc
 ms.assetid: 17001b0a-04ad-4762-b3a6-c54847f02d7c
-ms.openlocfilehash: de0c4783b30764350eea35007583c1481ab01024
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f428d81215193361a409473a411eb5c4d91fa997
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575320"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743303"
 ---
 # <a name="argc-argv-wargv"></a>__argc, __argv, __wargv
 
@@ -36,7 +36,7 @@ extern char ** __argv;
 extern wchar_t ** __wargv;
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `main` 함수를 사용하는 프로그램에서 `__argc` 및 `__argv`는 프로그램 시작에 사용되는 명령줄을 사용하여 프로그램 시작 시 초기화됩니다. 해당 명령줄이 개별 인수로 구문 분석되고 와일드카드가 확장됩니다. 인수의 수가 `__argc`에 할당되고 인수 문자열이 힙에서 할당되며 인수 배열에 대한 포인터가 `__argv`에 할당됩니다. 와이드 문자 및 `wmain` 함수를 사용하도록 컴파일된 프로그램에서 인수는 구문 분석되고 와일드카드는 와이드 문자열로 확장되며 인수 문자열의 배열에 대한 포인터는 `__wargv`에 할당됩니다.
 

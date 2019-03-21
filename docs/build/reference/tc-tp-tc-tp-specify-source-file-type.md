@@ -14,12 +14,12 @@ helpviewer_keywords:
 - Tc compiler option [C++]
 - /Tp compiler option [C++]
 - -Tp compiler option [C++]
-ms.openlocfilehash: e435b48359a708408ff8659e53c9e7c4f7e80261
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f7ee51c858c9f90440cf0c2b21799ef7473cf6da
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619117"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813866"
 ---
 # <a name="tc-tp-tc-tp-specify-source-file-type"></a>/Tc, /Tp, /TC, /TP(소스 파일 형식 지정)
 
@@ -31,7 +31,7 @@ ms.locfileid: "50619117"
 
 > **/Tc** _filename_
 >  **/Tp** _filename_
->  **/TC** 
+>  **/TC**
 >  **/TP**
 
 ## <a name="arguments"></a>인수
@@ -43,11 +43,11 @@ C 또는 c + + 소스 파일입니다.
 
 기본적으로 **CL** .c 확장명을 가진 파일은 C 소스 파일을.cpp 또는.cxx 확장명을 사용 하 여 파일은 c + + 소스 파일 가정 합니다.
 
-때 중 하나를 **TC** 또는 **Tc** 옵션을 지정 하면 모든 사양의 [/zc: wchar_t (wchar_t는 네이티브 형식임)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 옵션이 무시 됩니다.
+때 중 하나를 **TC** 또는 **Tc** 옵션을 지정 하면 모든 사양의 [/zc: wchar_t (wchar_t는 네이티브 형식임)](zc-wchar-t-wchar-t-is-native-type.md) 옵션이 무시 됩니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **고급** 속성 페이지.
 
@@ -61,13 +61,13 @@ C 또는 c + + 소스 파일입니다.
 
 이 CL 명령줄 MAIN.c, TEST.prg, 및 COLLATE.prg는 모든 C 소스 파일을 지정 합니다. CL PRINT.prg 인식 되지 않습니다.
 
-> CL 주입니다. C /TcTEST.PRG /TcCOLLATE.PRG 인쇄 합니다. PRG
+> CL MAIN.C /TcTEST.PRG /TcCOLLATE.PRG PRINT.PRG
 
 CL 명령줄이 TEST1.c, TEST2.cxx, TEST3.huh, 및 TEST4.o c + + 파일로 컴파일됩니다 TEST5.z C 파일로 컴파일될 되도록 지정 합니다.
 
-> CL TEST1입니다. C TEST2입니다. CXX TEST3 합니다. 멋지지 않나요 TEST4 합니다. O /Tc TEST5 합니다. Z /TP
+> CL TEST1.C TEST2.CXX TEST3.HUH TEST4.O /Tc TEST5.Z /TP
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

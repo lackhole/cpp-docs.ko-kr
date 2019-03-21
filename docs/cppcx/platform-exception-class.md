@@ -10,16 +10,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Exception Class
 ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
-ms.openlocfilehash: 8579b3506d727f5c4faeb56a9c1f3ea88b7a4b6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d37d55c56e3c23d8d9129c985cb4272d2e3ee47a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464963"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743424"
 ---
 # <a name="platformexception-class"></a>Platform::Exception 클래스
 
-응용 프로그램을 실행할 때 나타나는 오류를 나타냅니다. 사용자 지정 예외 클래스는 `Platform::Exception`에서 파생될 수 없습니다. 사용자 지정 예외가 필요한 경우 `Platform::COMException` 을 사용하고 앱 관련 HRESULT를 지정할 수 있습니다.
+애플리케이션을 실행할 때 나타나는 오류를 나타냅니다. 사용자 지정 예외 클래스는 `Platform::Exception`에서 파생될 수 없습니다. 사용자 지정 예외가 필요한 경우 `Platform::COMException` 을 사용하고 앱 관련 HRESULT를 지정할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -62,7 +62,7 @@ Exception 클래스에는 다음과 같은 속성도 있습니다.
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **메타데이터:** platform.winmd
 
@@ -151,6 +151,6 @@ Windows 런타임에서 발생하는 예외의 경우, 이것은 오류에 대�
 
 Windows 8,이 속성은 읽기 전용 하므로 해당 버전의 Windows 런타임 예외 HRESULTS로만 abi 전반에서 전송 됩니다. Windows 8.1에서는 다양한 예외 정보가 ABI 전체에 전송되며 다른 구성 요소에서 프로그래밍 방식으로 액세스할 수 있는 사용자 지정 메시지를 제공할 수 있습니다. 자세한 내용은 [예외 (C + + /cli CX)](../cppcx/exceptions-c-cx.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

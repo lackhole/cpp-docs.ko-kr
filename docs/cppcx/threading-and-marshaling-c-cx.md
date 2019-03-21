@@ -8,12 +8,12 @@ helpviewer_keywords:
 - agility, C++/CX
 - C++/CX, threading issues
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
-ms.openlocfilehash: ddf59e8df82b1ec98f4e1fabe9917027bdf0c75b
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c5bce60e564bef490bcfafd6f8559dffe5fd4f1d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426760"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751702"
 ---
 # <a name="threading-and-marshaling-ccx"></a>스레딩 및 마샬링(C++/CX)
 
@@ -122,7 +122,7 @@ unsealed 클래스에는 컴파일러가 파생된 클래스의 이러한 특성
 
 스레딩 및 마샬링 정보를 제 3 자 Windows 런타임 구성 요소에 필요한 구성 요소에 대 한 앱 매니페스트 등록 정보에 지정 됩니다. 확인 하는 모든 Windows 런타임 구성 요소 agile 하는 것이 좋습니다. 이렇게 하면 클라이언트 코드가 응용 프로그램의 모든 스레드에서 구성 요소를 호출할 수 있고 마샬링이 없는 직접 호출이므로 이러한 호출의 성능이 개선됩니다. 이와 같은 방식으로 클래스를 작성하면 클라이언트 코드가 `Platform::Agile<T>` 로 클래스를 사용할 필요가 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ThreadingModel](/uwp/api/Windows.Foundation.Metadata.ThreadingModel)<br/>
 [MarshallingBehavior](/uwp/api/windows.foundation.metadata.marshalingbehaviorattribute)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - DLL conflicts [C++]
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460
-ms.openlocfilehash: c90303db63724bbcf584340147555814d9a92f83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 31f9d9aceba167b516c9d37724e240f1bc4586e1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562775"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749904"
 ---
 # <a name="potential-errors-passing-crt-objects-across-dll-boundaries"></a>DLL 경계를 넘어 CRT 개체를 전달할 때 발생할 수 있는 오류
 
@@ -27,7 +27,7 @@ CRT 라이브러리 복사본마다 별도의 고유한 상태가 앱 또는 DLL
 
 또한 CRT 라이브러리 복사본마다 자체 힙 관리자가 있기 때문에 한 CRT 라이브러리에서 메모리를 할당한 다음 다른 CRT 라이브러리 복사본에 의해 해제되도록 DLL 경계를 넘어 포인터를 전달하는 것은 힙 손상의 잠재적 원인이 될 수 있습니다. DLL이 경계를 넘어 CRT 개체를 전달하거나 메모리를 할당한 다음 DLL 외부에서 해제되도록 DLL을 디자인하면 DLL과 동일한 CRT 라이브러리 복사본을 사용하도록 DLL의 앱 클라이언트를 제한하게 됩니다. DLL 및 해당 클라이언트는 일반적으로 로드 타임에 둘 다 동일한 버전의 CRT DLL에 연결된 경우에만 동일한 CRT 라이브러리 복사본을 사용합니다. Windows 10의 Visual Studio 2015 이상에서 사용되는 유니버설 CRT 라이브러리의 DLL 버전은 이제 중앙에서 배포된 Windows 구성 요소인 ucrtbase.dll이므로 Visual Studio 2015 및 이상 버전으로 빌드한 앱에 대해 동일합니다. 그러나 CRT 코드가 동일하더라도 한 힙에 할당된 메모리를 다른 힙을 사용하는 구성 요소로 전달할 수 없습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ### <a name="description"></a>설명
 
@@ -69,7 +69,7 @@ int main(void)
 this is a string
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ### <a name="description"></a>설명
 

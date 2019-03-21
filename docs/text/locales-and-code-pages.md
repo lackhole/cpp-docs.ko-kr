@@ -1,4 +1,4 @@
-﻿---
+---
 title: 지역화 및 코드 페이지
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - code pages [C++], locales
 - conventions [C++], international character support
 ms.assetid: bd937361-b6d3-4c98-af95-beb7c903187b
-ms.openlocfilehash: 0015e0a7a81abbd3472a8c845a9b8c0d8caf4618
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0cfc7f192b65738984feb1933ea720fdf18fc6d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610539"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750717"
 ---
 # <a name="locales-and-code-pages"></a>지역화 및 코드 페이지
 
-로캘 ID는 특정 지역에 대한 지리적 규칙 및 언어를 반영합니다. 특정 언어는 하개 이상의 국가나 지역에서 통용될 수 있습니다. 예를 들어 포르투갈어는 포르투갈 뿐만 아니라 브라질에서도 통용됩니다. 반대로 하나의 국가 및 지역에 여러개의 공식 언어가 통용될 수 있습니다. 예를 들어 캐나다는 영어와 프랑스, 두 가지 언어가 통용됩니다. 따라서 캐나다는 두 개의 고유 로캘, 캐나다 영어와 캐나다 프랑스어가 있습니다. 일부 로캘 종속 범주에는 날짜 형식 및 통화 값 형식 표시가 포함됩니다.
+로캘 ID는 특정 지역에 대한 지리적 규칙 및 언어를 반영합니다. 특정 언어는 하개 이상의 국가나 지역에서 통용될 수 있습니다. 예를 들어 포르투갈어는 포르투갈 뿐만 아니라 브라질에서도 통용됩니다. 반대로 하나의 국가 및 지역에 여러개의 공식 언어가 통용될 수 있습니다. 예를 들어 캐나다에서는: 영어와 프랑스어를 제공 합니다. 따라서 캐나다에 두 개의 고유 로캘: 캐나다 영어와 프랑스어 (캐나다)입니다. 일부 로캘 종속 범주에는 날짜 형식 지정 및 통화 값의 형식 표시가 포함됩니다.
 
 언어는 텍스트 및 데이터 형식 규칙을 결정하고 국가 및 지역은 지역 규칙을 결정합니다. 모든 언어는 알파벳 이외의 고유 문자, 예를 들어 문장 부호나 숫자와 같은 문자가 포함된 코드 페이지를 포함합니다. 코드 페이지는 문자 집합이며 언어와 관련 있습니다. 따라서 [로캘](../c-runtime-library/locale.md)이란 언어, 국가 및 지역, 코드 페이지의 고유한 조합을 말합니다. [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 함수를 이용해 런타임시 로캘 및 코드 페이지 설정을 변경할 수 있습니다.
 
@@ -42,7 +42,7 @@ C 런타임 라이브러리는 로캘 및 멀티 바이트, 이 두 가지 유�
 
 C 런타임 함수 `setlocale`은 현재 프로그램에서 로캘 정보 일부 또는 전체에 대해 설정, 변경 또는 질의합니다. [_wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 루틴은 `setlocale`의 와이드 문자 버전입니다. `_wsetlocale` 는 인수와 반환값 모두 와이드 문자 문자열을 다룹니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [유니코드 및 MBCS](../text/unicode-and-mbcs.md)<br/>
 [문자 집합 이식성의 이점](../text/benefits-of-character-set-portability.md)

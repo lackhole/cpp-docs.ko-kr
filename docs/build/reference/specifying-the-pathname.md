@@ -6,12 +6,12 @@ helpviewer_keywords:
 - cl.exe compiler, output files
 - output files, specifying pathnames
 ms.assetid: 7a6595ce-3383-44ae-957a-466bfa29c343
-ms.openlocfilehash: 07afcd102b2b1839b3925ad1e6905507ea316361
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: dcff3610255c40f4e06201e52a53eb5dd965a4be
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423328"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821354"
 ---
 # <a name="specifying-the-pathname"></a>경로 이름 지정
 
@@ -38,6 +38,6 @@ CL /FmPRN HELLO.CPP
 
 ## <a name="see-also"></a>참고자료
 
-[출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[출력 파일(/F) 옵션](output-file-f-options.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

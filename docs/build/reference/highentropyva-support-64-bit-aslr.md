@@ -2,12 +2,12 @@
 title: /HIGHENTROPYVA(64비트 ASLR 지원)
 ms.date: 06/12/2018
 ms.assetid: fe35f9f7-d28e-4694-9aeb-a79db06168e0
-ms.openlocfilehash: a8bd1b2231530c0f1632b244edaf36ee14ed65b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ecbbf8bbd8e74f80f2f5b2d7df0d2ef544112fc
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534799"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822004"
 ---
 # <a name="highentropyva-support-64-bit-aslr"></a>/HIGHENTROPYVA(64비트 ASLR 지원)
 
@@ -15,7 +15,7 @@ ms.locfileid: "50534799"
 
 ## <a name="syntax"></a>구문
 
-> **/ HIGHENTROPYVA**[**: NO**]
+> **/HIGHENTROPYVA**[**:NO**]
 
 ## <a name="remarks"></a>설명
 
@@ -27,7 +27,7 @@ ms.locfileid: "50534799"
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 
@@ -35,8 +35,8 @@ ms.locfileid: "50534799"
 
 ## <a name="see-also"></a>참고자료
 
-- [링커 옵션 설정](../../build/reference/setting-linker-options.md)
-- [링커 옵션](../../build/reference/linker-options.md)
+- [MSVC 링커 참조](linking.md)
+- [MSVC 링커 옵션](linker-options.md)
 - [/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md)
 - [/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md)
 - [Windows ISV 소프트웨어 보안 방어](https://msdn.microsoft.com/library/bb430720.aspx)

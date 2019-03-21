@@ -6,12 +6,12 @@ helpviewer_keywords:
 - 64-bit programming [C++], configuring projects
 - project configurations [C++]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
-ms.openlocfilehash: 17255a5671880063f030ed0087c1fa839c5a14ef
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 21c812efd101c64e250a545d2a40df6adc31c414
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57421378"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813957"
 ---
 # <a name="how-to-configure-visual-c-projects-to-target-64-bit-x64-platforms"></a>방법: X64을 64 비트 대상 Visual c + + 프로젝트 구성 플랫폼
 
@@ -21,7 +21,7 @@ C + + 대상 응용 프로그램을 64 비트, x64 플랫폼 설정 하려면 Vi
 
 1. 구성하려는 C++ 프로젝트를 엽니다.
 
-1. 해당 프로젝트의 속성 페이지를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.
+1. 해당 프로젝트의 속성 페이지를 엽니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](working-with-project-properties.md)합니다.
 
    > [!NOTE]
    > .NET 프로젝트에 대 한 확인 합니다 **구성 속성** 에서 노드 또는 해당 자식 노드 중 하나를 선택 합니다  **\<Projectname > 속성 페이지** 대화 상자 고, 그렇지 않으면 합니다  **Configuration Manager** 단추를 사용할 수 있습니다.
@@ -43,21 +43,20 @@ C + + 대상 응용 프로그램을 64 비트, x64 플랫폼 설정 하려면 Vi
 
 - 64비트 플랫폼을 대상으로 하도록 프로젝트를 설정하는 동안 **새 솔루션 플랫폼** 대화 상자가 열리는 경우 **다음에서 설정 복사** 드롭다운 목록에서 **Win32**를 선택합니다. 다음 프로젝트 설정이 프로젝트 수준에서 자동으로 업데이트됩니다.
 
-  - [/MACHINE](../build/reference/machine-specify-target-platform.md) 링커 옵션이 **/MACHINE:X64**로 설정됩니다.
+  - [/MACHINE](reference/machine-specify-target-platform.md) 링커 옵션이 **/MACHINE:X64**로 설정됩니다.
 
-  - **출력 등록** 이 꺼집니다. 자세한 내용은 [Linker Property Pages](../ide/linker-property-pages.md)을 참조하세요.
+  - **출력 등록** 이 꺼집니다. 자세한 내용은 [Linker Property Pages](reference/linker-property-pages.md)을 참조하세요.
 
-  - **대상 환경** 이 **/env x64**로 설정됩니다. 자세한 내용은 참조 하세요. [MIDL Property Pages: 일반](../ide/midl-property-pages-general.md)합니다.
+  - **대상 환경** 이 **/env x64**로 설정됩니다. 자세한 내용은 참조 하세요. [MIDL Property Pages: 일반](reference/midl-property-pages-general.md)합니다.
 
-  - **매개 변수 유효성 검사** 가 초기화되어 기본값으로 다시 설정됩니다. 자세한 내용은 참조 하세요. [MIDL Property Pages: 고급](../ide/midl-property-pages-advanced.md)합니다.
+  - **매개 변수 유효성 검사** 가 초기화되어 기본값으로 다시 설정됩니다. 자세한 내용은 참조 하세요. [MIDL Property Pages: 고급](reference/midl-property-pages-advanced.md)합니다.
 
-  - **디버그 정보 형식** 이 Win32 프로젝트 구성에서 **/ZI** 로 설정되면 64비트 프로젝트 구성에서는 **/Zi** 로 설정됩니다. 자세한 내용은 [/Z7, /Zi, /ZI(디버그 정보 형식)](../build/reference/z7-zi-zi-debug-information-format.md)를 참조하세요.
+  - **디버그 정보 형식** 이 Win32 프로젝트 구성에서 **/ZI** 로 설정되면 64비트 프로젝트 구성에서는 **/Zi** 로 설정됩니다. 자세한 내용은 [/Z7, /Zi, /ZI(디버그 정보 형식)](reference/z7-zi-zi-debug-information-format.md)를 참조하세요.
 
   > [!NOTE]
   > 이러한 프로젝트 속성이 파일 수준에서 재정의된 경우에는 어떠한 속성도 변경되지 않습니다.
 
 ## <a name="see-also"></a>참고자료
 
-[.NET framework에 대한 64비트 응용 프로그램](/dotnet/framework/64-bit-apps)<br/>
-[64비트, x64 대상을 위한 Visual C++ 구성](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[64 비트 x64에 대 한 c + + 프로젝트 구성 대상](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [64비트 응용 프로그램 디버그](/visualstudio/debugger/debug-64-bit-applications)

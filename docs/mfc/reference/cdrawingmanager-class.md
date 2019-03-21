@@ -56,12 +56,12 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SetPixel
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-ms.openlocfilehash: a729c8d32c851c4401a0af7dd7323912a476530f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f14b21c97e5a36d5107e7db526e4153446ae2a01
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293448"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278537"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager 클래스
 
@@ -617,7 +617,7 @@ static COLORREF __stdcall HLStoRGB_ONE(
 
 ### <a name="remarks"></a>설명
 
-HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](http://go.microsoft.com/fwlink/p/?linkid=119126)합니다.
+HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](/windows/desktop/uxguide/vis-color)합니다.
 
 이 메서드는 `CDrawingManager::HLStoRGB_TWO` 메서드가 동일한 작업을 수행 하지만 서로 다른 값이 필요 합니다 *H* 매개 변수입니다. 이 메서드에서 *H* 원의 비율입니다. 에 `CDrawingManager::HLStoRGB_TWO` 메서드를 *H* 가 값 0을 모두 나타내는 빨간색부터 360 사이입니다. 예를 들어 `HLStoRGB_ONE`에 대 한 0.25 *H* 사용 하 여 90 값과 동일 `HLStoRGB_TWO`.
 
@@ -649,7 +649,7 @@ static COLORREF __stdcall HLStoRGB_TWO(
 
 ### <a name="remarks"></a>설명
 
-HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](http://go.microsoft.com/fwlink/p/?linkid=119126)합니다.
+HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](/windows/desktop/uxguide/vis-color)합니다.
 
 이 메서드는 [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) 메서드가 동일한 작업을 수행 하지만 서로 다른 값이 필요 합니다 *H* 매개 변수입니다. 이 메서드에서 *H* 가 값 0을 모두 나타내는 빨간색부터 360 사이입니다. 에 [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) 메서드를 *H* 원의 비율입니다. 예를 들어 `HLStoRGB_ONE`에 대 한 0.25 *H* 사용 하 여 90 값과 동일 `HLStoRGB_TWO`.
 
@@ -679,7 +679,7 @@ static COLORREF __stdcall HSVtoRGB(
 
 ### <a name="remarks"></a>설명
 
-HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](http://go.microsoft.com/fwlink/p/?linkid=119126)합니다.
+HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](/windows/desktop/uxguide/vis-color)합니다.
 
 ##  <a name="huetorgb"></a>  CDrawingManager::HuetoRGB
 
@@ -864,7 +864,7 @@ static void __stdcall RGBtoHSL(
 
 ### <a name="remarks"></a>설명
 
-HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](http://go.microsoft.com/fwlink/p/?linkid=119126)합니다.
+HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](/windows/desktop/uxguide/vis-color)합니다.
 
 반환된 된 값에 대 한 *H* 0-1 위치 0과 1을 모두 나타내며 빨간색 분수로 표시 됩니다. 반환된 값은 *S* 하 고 *L* 는 0과 1 사이의 숫자입니다.
 
@@ -896,7 +896,7 @@ static void __stdcall RGBtoHSV(
 
 ### <a name="remarks"></a>설명
 
-HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](http://go.microsoft.com/fwlink/p/?linkid=119126)합니다.
+HSV (색상, 채도 및 값), (색상, 채도 및 명도), HSL 또는 RGB (빨강, 녹색 및 파랑) 색을 나타낼 수 있습니다. 색의 다양 한 표현에 대 한 자세한 내용은 참조 하세요. [Color](/windows/desktop/uxguide/vis-color)합니다.
 
 반환된 된 값에 대 한 *H* 는 0과 360 사이의 숫자 0과 360 모두 여기서 red를 나타냅니다. 반환 값 *S* 하 고 *V* 는 0과 1 사이의 숫자입니다.
 

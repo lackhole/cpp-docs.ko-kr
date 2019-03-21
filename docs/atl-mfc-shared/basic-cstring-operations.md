@@ -9,12 +9,12 @@ helpviewer_keywords:
 - string comparison, CString operations
 - characters, accessing in CStrings
 ms.assetid: 41db66b2-9427-4bb3-845a-9b6869159a6c
-ms.openlocfilehash: b387cbb8671dda0aca63da9b57dd694e478b62a9
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 08c496038efc9e24e1c1610da07b6824c3a50b64
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523132"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746216"
 ---
 # <a name="basic-cstring-operations"></a>기본 CString 작업
 
@@ -85,7 +85,7 @@ C 스타일 리터럴 문자열을 지정할 수 있습니다는 `CString` 하�
 
 ##  <a name="_core_converting_cstring_objects"></a> CString 개체 변환
 
-CString 개체를 다른 문자열 형식으로 변환 하는 방법에 대 한 내용은 [방법: 다양 한 문자열 형식 간의 변환](../text/how-to-convert-between-various-string-types.md)합니다.
+CString 개체를 다른 문자열 형식으로 변환 하는 방법에 대 한 내용은 [방법: 다양 한 문자열 형식 간 변환](../text/how-to-convert-between-various-string-types.md)합니다.
 
 ## <a name="using-cstring-with-wcout"></a>Wcout CString 사용
 
@@ -99,10 +99,9 @@ wcout << (const wchar_t*) cs << endl;
 
 캐스트를 사용 하지 않고 `cs` 로 처리 됩니다는 `void*` 고 `wcout` 개체의 주소를 출력 합니다. 이 문제는 c + + 표준 템플릿 인수 감소 및 오버 로드 확인의 올바른 자체는 및와 호환 되는 간에 미묘한 상호 작용을 통해 발생 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CStringT 클래스](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 [템플릿 특수화](../cpp/template-specialization-cpp.md)<br/>
 [방법: 다양한 문자열 형식 간 변환](../text/how-to-convert-between-various-string-types.md)
-

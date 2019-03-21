@@ -6,12 +6,12 @@ ms.date: 12/12/2017
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
-ms.openlocfilehash: 09780d5823190eb4cb3b4ad13bb60e33808e4987
-ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
+ms.openlocfilehash: 59813a553a9034503d8bf432400db31e6e3d9478
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977734"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813549"
 ---
 # <a name="build-and-run-a-c-console-app-project"></a>C + + 콘솔 앱 프로젝트 빌드 및 실행
 
@@ -19,29 +19,29 @@ C + + 콘솔 앱 프로젝트를 만들고 코드를 입력 했을 때 빌드 �
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 데스크톱 개발을 사용 하 여 Visual Studio를 설치 하 고 컴퓨터에서 실행 중인 c + + 워크 로드가 합니다. 아직 설치 되지 않은 경우의 단계를 따릅니다 [Visual Studio에서 c + + 설치 지원](../build/vscpp-step-0-installation.md)합니다.
+- 컴퓨터에서 설치되고 실행 중인 C++ 워크로드를 사용하여 데스크톱 개발을 위해 Visual Studio를 설치합니다. 아직 설치 되지 않은 경우의 단계를 따릅니다 [Visual Studio에서 c + + 설치 지원](vscpp-step-0-installation.md)합니다.
 
-- "Hello, World!" 만들기 프로젝트 및 소스 코드를 입력 합니다. 이 아직 수행 하지 않았다면의 단계를 따릅니다 [c + + 콘솔 앱 프로젝트를 만들고](../build/vscpp-step-1-create.md)합니다.
+- "Hello, World!" 만들기 프로젝트 및 소스 코드를 입력 합니다. 이 아직 수행 하지 않았다면의 단계를 따릅니다 [c + + 콘솔 앱 프로젝트를 만들고](vscpp-step-1-create.md)합니다.
 
 Visual Studio이 다음과 같은 경우을 빌드하고 앱을 실행 합니다.
 
-   ![새 프로젝트를 빌드할 준비가](../build/media/vscpp-ready-to-build.png "새 프로젝트를 빌드할 준비가 되었습니다.")
+   ![새 프로젝트를 빌드할 준비가](media/vscpp-ready-to-build.png "새 프로젝트를 빌드할 준비가 되었습니다.")
 
 ## <a name="build-and-run-your-code-in-visual-studio"></a>빌드 및 Visual Studio에서 코드를 실행 합니다.
 
-1. 프로젝트를 빌드하려면 선택 **솔루션 빌드** 에서 합니다 **빌드** 메뉴. 합니다 **출력** 창 빌드 프로세스의 결과 표시 합니다.
+1. 프로젝트를 빌드하려면 **빌드** 메뉴에서 **솔루션 빌드**를 선택합니다. **출력** 창은 빌드 프로세스의 결과를 보여줍니다.
 
-   ![프로젝트를 빌드할](../build/media/vscpp-build-solution.gif "프로젝트 빌드")
+   ![프로젝트 빌드](media/vscpp-build-solution.gif "프로젝트 빌드")
 
-1. 메뉴 모음에서 코드를 실행 하려면 **디버그**하십시오 **디버깅 하지 않고 시작**합니다.
+1. 코드를 실행하려면 메뉴 모음에서 **디버그**, **디버깅하지 않고 시작**을 선택합니다.
 
-   ![프로젝트를 시작 합니다](../build/media/vscpp-start-without-debugging.gif "프로젝트 시작")
+   ![프로젝트 시작](media/vscpp-start-without-debugging.gif "프로젝트 시작")
 
-   콘솔 창이 열리고 응용 프로그램을 실행 합니다. Visual Studio에서 콘솔 앱을 시작 하면 코드를 실행 한 다음 인쇄 "계속 하려면 아무 키나 누릅니다. . ." 하면 출력을 볼 수 있도록 합니다.
+   콘솔 창이 열린 다음, 앱을 실행합니다. Visual Studio에서 콘솔 앱을 시작하면 코드를 실행한 다음, "계속하려면 아무 키나 누르세요. . "를 표시하여 출력을 볼 수 있도록 합니다.
 
-지금까지 회원님이 만든 첫 번째 "Hello, world!" Visual Studio에서 콘솔 앱! 콘솔 창을 닫고 Visual Studio로 돌아와서 키를 누릅니다.
+지금까지 Visual Studio에서 첫 번째 "Hello, world!" 콘솔 앱을 만들었습니다. 키를 눌러서 콘솔 창을 닫고 Visual Studio로 돌아갑니다.
 
-[문제를 실행 합니다.](#build-and-run-your-code-in-visual-studio-issues)
+[문제가 발생했습니다.](#build-and-run-your-code-in-visual-studio-issues)
 
 ## <a name="run-your-code-in-a-command-window"></a>명령 창에서 코드를 실행 합니다.
 
@@ -55,11 +55,11 @@ Visual Studio이 다음과 같은 경우을 빌드하고 앱을 실행 합니다
 
 1. 명령 프롬프트 창에서 마우스 오른쪽 단추를 앱에 경로 명령 프롬프트에 붙여 넣습니다. Enter 키를 눌러 앱을 실행 합니다.
 
-   ![명령 프롬프트에서 앱 실행](../build/media/vscpp-run-in-cmd.gif "명령 프롬프트에서 앱을 실행 합니다.")
+   ![명령 프롬프트에서 앱 실행](media/vscpp-run-in-cmd.gif "명령 프롬프트에서 앱을 실행 합니다.")
 
 축, 작성 하 고 Visual Studio에서 콘솔 앱을 실행 했습니다!
 
-[문제를 실행 합니다.](#run-your-code-in-a-command-window-issues)
+[문제가 발생했습니다.](#run-your-code-in-a-command-window-issues)
 
 ## <a name="next-steps"></a>다음 단계
 

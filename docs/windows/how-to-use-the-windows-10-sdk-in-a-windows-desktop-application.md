@@ -1,16 +1,16 @@
-﻿---
-title: '방법: Windows 데스크톱 응용 프로그램에서 Windows 10 SDK 사용'
+---
+title: '방법: Windows 10을 사용 하 여 Windows 데스크톱 응용 프로그램에서 SDK'
 ms.custom: get-started-article
 ms.date: 07/12/2018
 ms.assetid: eed6421e-9355-44a6-9582-3f1d453a6d44
-ms.openlocfilehash: ed860a229866991b01266093058b71cc2ae84986
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 25ef3674a7ab741f20a07d6e65d1b5524fb88d5f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669120"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809927"
 ---
-# <a name="how-to-use-the-windows-10-sdk-in-a-windows-desktop-application"></a>방법: Windows 데스크톱 응용 프로그램에서 Windows 10 SDK 사용
+# <a name="how-to-use-the-windows-10-sdk-in-a-windows-desktop-application"></a>방법: Windows 10을 사용 하 여 Windows 데스크톱 응용 프로그램에서 SDK
 
 Visual Studio 2017에 클래식 Windows 데스크톱 프로젝트를 만들 때 설정은 기본적으로 C++ 데스크톱 작업 설치 또는 마지막으로 업데이트되었을 때 설치된 Windows 10 SDK의 버전으로 만들 수 있습니다. 이 버전의 Windows SDK는 Windows 7 이상과 호환입니다. 참조 [Windows 헤더를 사용 하 여](/windows/desktop/WinProg/using-the-windows-headers) Windows의 특정 버전을 대상으로 하는 방법에 대 한 자세한 내용은 합니다.
 
@@ -24,7 +24,7 @@ Visual Studio 2015 및 Windows 10 SDK부터는 CRT 라이브러리가 두 부분
 
 2. 프로젝트 노드에 대한 바로 가기 메뉴를 열고 **SDK 버전 대상 다시 지정**을 선택합니다.
 
-   ![SDK 버전 대상 다시 지정](../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")
+   ![Retarget SDK Version](../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")
 
    **솔루션 작업 검토** 대화 상자가 나타납니다.
 
@@ -38,9 +38,9 @@ Visual Studio 2015 및 Windows 10 SDK부터는 CRT 라이브러리가 두 부분
 
    `Retargeting End: 1 completed, 0 failed, 0 skipped`
 
-4. 프로젝트 속성을 열고 **구성 속성, 일반** 섹션에서 **Windows 대상 플랫폼 버전**의 값을 확인합니다. 여기서 이 값을 변경하면 이 절차를 따르는 것과 효과가 같습니다. [General Property Page (Project)](../ide/general-property-page-project.md)을 참조하세요.
+4. 프로젝트 속성을 열고 **구성 속성, 일반** 섹션에서 **Windows 대상 플랫폼 버전**의 값을 확인합니다. 여기서 이 값을 변경하면 이 절차를 따르는 것과 효과가 같습니다. [General Property Page (Project)](../build/reference/general-property-page-project.md)을 참조하세요.
 
-   ![대상 플랫폼 버전](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
+   ![Target Platform Version](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
 
    이 작업은 헤더 파일 및 라이브러리 파일에 대한 경로가 포함된 프로젝트 매크로의 값을 변경합니다. 에 변경 내용을 확인 하려면를 **Visual c + + 디렉터리** 부분을 **프로젝트 속성** 대화 상자에서와 같은 속성 중 하나를 선택 합니다 **포함 디렉터리**, 하기로 드롭다운 목록을 열고 \<편집 >. **포함 디렉터리** 대화 상자가 나타납니다.
 
@@ -48,7 +48,7 @@ Visual Studio 2015 및 Windows 10 SDK부터는 CRT 라이브러리가 두 부분
 
    선택 합니다 **매크로 >>** 단추 및 새 값을 모두 보려면 Windows SDK 매크로 매크로 목록 아래로 스크롤합니다.
 
-   ![Windows SDK 매크로](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")
+   ![Windows SDK Macros](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")
 
 5. 필요에 따라 다른 프로젝트에 대해 이 작업을 반복하고 솔루션을 다시 빌드합니다.
 

@@ -2,12 +2,12 @@
 title: 정적 라이브러리(C++/CX)
 ms.date: 02/03/2017
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
-ms.openlocfilehash: 4c423f9e59b7597782acfa4c98db3c9bff747098
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 242ba10b29a8efe0c3e9580f1d0d0c3be529a7d2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437965"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738940"
 ---
 # <a name="static-libraries-ccx"></a>정적 라이브러리(C++/CX)
 
@@ -31,6 +31,6 @@ public `ref` 클래스, 공용 인터페이스 클래스 또는 공용 값 클�
 
 정적 라이브러리가 라이브러리 자체의 외부에 사용 되는 Windows 런타임 구성 요소를 생성 하지 않는 경우에 경고를 안전 하 게 무시할 수 있습니다. 라이브러리에 정의된 구성 요소가 라이브러리에 사용되지 않는 경우 링커는 공용 메타 데이터에 형식 정보가 있는 경우에도 구현을 최적화할 수 있습니다. 즉, 정적 라이브러리의 공용 구성 요소는 컴파일되지만 런타임에 활성화되지 않습니다. 이러한 이유로 모든 Windows 런타임 구성 요소는 사용을 위한 다른 구성 요소나 앱에서 동적 연결 라이브러리 (DLL)에 구현 되어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [스레딩 및 마샬링](../cppcx/threading-and-marshaling-c-cx.md)

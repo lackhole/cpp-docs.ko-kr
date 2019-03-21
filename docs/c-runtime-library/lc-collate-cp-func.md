@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - ___lc_collate_cp_func
 ms.assetid: 46ccc084-7ac9-4e5d-9138-e12cb5845615
-ms.openlocfilehash: 37254177ab57212dd57e476716d1dc07d59d7239
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fac8b7ba2e9568dd53509e5cccbb96a6b2f1df8d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521244"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738888"
 ---
 # <a name="lccollatecpfunc"></a>___lc_collate_cp_func
 
@@ -38,9 +38,9 @@ UINT ___lc_codepage_func(void);
 
 스레드의 현재 데이터 정렬 코드 페이지입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-`___lc_collate_cp_func`는 다른 CRT 함수가 CRT 데이터의 스레드 로컬 저장소에서 현재 데이터 정렬 코드 페이지를 가져오기 위해 사용하는 내부 CRT 함수입니다. [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) 함수를 사용하면 이 정보를 사용할 수 있습니다.
+`___lc_collate_cp_func`는 다른 CRT 함수가 CRT 데이터의 스레드 로컬 스토리지에서 현재 데이터 정렬 코드 페이지를 가져오기 위해 사용하는 내부 CRT 함수입니다. [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) 함수를 사용하면 이 정보를 사용할 수 있습니다.
 
 내부 CRT 함수는 구현과 관련되어 있으며 각 릴리스 시 변경될 수 있습니다. 따라서 사용자 코드에는 사용하지 않는 것이 좋습니다.
 

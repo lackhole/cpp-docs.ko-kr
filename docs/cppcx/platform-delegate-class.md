@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Delegate Class
 ms.assetid: 82b21271-768f-4193-9ca2-be68ddfd546e
-ms.openlocfilehash: 1b4a4955bbff53e6e0c5606f2900e22cc69146cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6a509827b3b8e14b6d28995b5b4ca468ee9a662e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446230"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741178"
 ---
 # <a name="platformdelegate-class"></a>Platform::Delegate 클래스
 
@@ -38,10 +38,10 @@ Delegate 클래스에는 [Platform::Object Class](../cppcx/platform-object-class
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **메타데이터:** platform.winmd
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

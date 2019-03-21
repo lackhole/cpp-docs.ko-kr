@@ -2,12 +2,12 @@
 title: 이벤트(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-ms.openlocfilehash: 68b9e70b13f0996c43c24e6670c4d0a052c194cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e7e8616831e66a7f59ed849fc92ef2553aadb5b
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579129"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745087"
 ---
 # <a name="events-ccx"></a>이벤트(C++/CX)
 
@@ -58,7 +58,7 @@ ref 클래스 또는 인터페이스에서 이벤트를 선언할 수 있으며,
 
 이벤트 원본이 이벤트 수신기에서 이벤트 처리기를 호출하는 순서는 정확하지 않으며 호출에 따라 달라질 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
 [대리자](../cppcx/delegates-c-cx.md)<br/>

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DLLs [C++], types
 - DLLs [C++], MFC
 ms.assetid: f6a30db9-6138-4b2c-90cc-a17855e499a6
-ms.openlocfilehash: fb63814161fb72121a34d2857b6fada3866e505a
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: f4aa8b1be7cd9ad32b10f12c5d1dfd3ae86adc1d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424810"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820288"
 ---
 # <a name="kinds-of-dlls"></a>DLL 종류
 
@@ -31,13 +31,13 @@ MFC 라이브러리 자체는 여러 MFC DLL 마법사를 사용 하 여 Dll 또
 
 ### <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [비 MFC DLL: 개요](../build/non-mfc-dlls-overview.md)
+- [비 MFC DLL: 개요](non-mfc-dlls-overview.md)
 
-- [정적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-statically-linked-to-mfc.md)
+- [정적으로 MFC에 링크 된 기본 MFC Dll](regular-dlls-statically-linked-to-mfc.md)
 
-- [동적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [동적으로 MFC에 링크 된 기본 MFC Dll](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC 확장명 DLL: 개요](../build/extension-dlls-overview.md)
+- [MFC 확장명 DLL: 개요](extension-dlls-overview.md)
 
 - [사용할 DLL 종류 결정](#_core_which_kind_of_dll_to_use)
 
@@ -59,14 +59,14 @@ DLL 동적으로 MFC에 링크 하는 경우 DLL을 사용 하 여 MFC Dll은 �
 
 ### <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [비 MFC DLL: 개요](../build/non-mfc-dlls-overview.md)
+- [비 MFC DLL: 개요](non-mfc-dlls-overview.md)
 
-- [정적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-statically-linked-to-mfc.md)
+- [정적으로 MFC에 링크 된 기본 MFC Dll](regular-dlls-statically-linked-to-mfc.md)
 
-- [동적으로 MFC에 링크 된 기본 MFC Dll](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [동적으로 MFC에 링크 된 기본 MFC Dll](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC 확장명 DLL: 개요](../build/extension-dlls-overview.md)
+- [MFC 확장명 DLL: 개요](extension-dlls-overview.md)
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](../build/dlls-in-visual-cpp.md)
+[Visual C++의 DLL](dlls-in-visual-cpp.md)

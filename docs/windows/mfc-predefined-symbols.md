@@ -9,12 +9,12 @@ helpviewer_keywords:
 - databases [C++], MFC programming model
 - Windows programming MFC symbols [C++]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-ms.openlocfilehash: 329d56f4a8e0e9992cb78987c559f74c7349f681
-ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
+ms.openlocfilehash: c60c75275ca565b332c33848d27c134deb90a5c6
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954954"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563210"
 ---
 # <a name="mfc-predefined-symbols"></a>미리 정의된 MFC 기호
 
@@ -236,7 +236,7 @@ MFC 프로젝트는 항상 windows를 지 원하는 여러 헤더 파일을 포�
 
 이러한 기호는 MFC 지원 파일의 일부 이기도 하지만 표준 Windows 응용 프로그램 기능 및 동작을 지원 합니다. 이러한 기호는 메뉴를 사용 하 여 사용 됩니다.
 
-메뉴를 사용 하는 경우는 **메뉴 편집기**, 이러한 기호에 표시 됩니다는 **속성 창** 일반적인 메뉴 명령과 사용 하 여 연결 합니다. 예를 들어 응용 프로그램에 **파일** 메뉴를는 **종료** 명령, 명령이 기호 ID_APP_EXIT 연관 됩니다에 [속성 창](/visualstudio/ide/reference/properties-window)합니다.
+메뉴를 사용 하는 경우는 **메뉴 편집기**, 이러한 기호에 표시 됩니다는 **속성** 일반적인 메뉴 명령과 사용 하 여 연결 된 창입니다. 예를 들어 응용 프로그램에 **파일** 메뉴를는 **종료** 명령, 명령이 기호 ID_APP_EXIT 연관 됩니다에 [속성 창](/visualstudio/ide/reference/properties-window)합니다.
 
 ||||
 |-|-|-|

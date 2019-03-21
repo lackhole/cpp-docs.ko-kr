@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - VectorView Class
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-ms.openlocfilehash: 4f4a5cbd2f1b6c06b339950307dbb333fc6392ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02b5e15a816ec057bfb0a8201b7591e628c3ea2c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658187"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745294"
 ---
 # <a name="platformcollectionsvectorview-class"></a>Platform::Collections::VectorView 클래스
 
@@ -60,7 +60,7 @@ template <typename T, typename E>
 |[VectorView::IndexOf](#indexof)|현재 VectorView에서 지정한 항목을 검색하고 있는 경우 항목의 인덱스를 반환합니다.|
 |[VectorView::Size](#size)|현재 VectorView 개체의 요소 수를 반환합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `VectorView`
 
@@ -110,7 +110,8 @@ VectorView 개체의 특정 요소를 지정하는 0부터 시작하는 부호 �
 
 ### <a name="return-value"></a>반환 값
 
-`index` 매개 변수로 지정된 요소입니다. 요소 형식은 VectorView 템플릿 매개 변수로 지정 *T*합니다.
+
+  `index` 매개 변수로 지정된 요소입니다. 요소 형식은 VectorView 템플릿 매개 변수로 지정 *T*합니다.
 
 ## <a name="getmany"></a>  Vectorview:: Getmany 메서드
 
@@ -274,7 +275,7 @@ A [std:: array](../standard-library/array-class-stl.md) 현재 VectorView를 초
 *last*<br/>
 현재 VectorView를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. 유형의 `last` 이용 하 여 전달 됩니다 *완벽 전달*합니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)<br/>
 [C++로 Windows Runtime 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

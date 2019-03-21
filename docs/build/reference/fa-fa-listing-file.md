@@ -16,12 +16,12 @@ helpviewer_keywords:
 - listing file type
 - assembly-only listing
 ms.assetid: c7507d0e-c69d-44f9-b8e2-d2c398697402
-ms.openlocfilehash: 610c94646b82783a49ca6de6bc443e99a3c137bc
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: b78704ea12365d9e10222d75c6807517f7cdb893
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420910"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812514"
 ---
 # <a name="fa-fa-listing-file"></a>/FA, /Fa(목록 파일)
 
@@ -75,7 +75,7 @@ ms.locfileid: "57420910"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **출력 파일** 속성 페이지.
 
@@ -98,7 +98,7 @@ CL /FAcs HELLO.CPP
 
 ## <a name="see-also"></a>참고자료
 
-[출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[경로 이름 지정](../../build/reference/specifying-the-pathname.md)
+[출력 파일(/F) 옵션](output-file-f-options.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[경로 이름 지정](specifying-the-pathname.md)

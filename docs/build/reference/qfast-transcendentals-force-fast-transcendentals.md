@@ -7,12 +7,12 @@ helpviewer_keywords:
 - /Qfast_transcendentals
 - Force Fast Transcendentals
 ms.assetid: 4de24bd1-38e6-49d4-9a05-04c9937d24ac
-ms.openlocfilehash: d96b2c93e9fc8be73ef43f63fc0a6328661df442
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 383a915721d627367ca2ca035957df947996bbe2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414202"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818351"
 ---
 # <a name="qfasttranscendentals-force-fast-transcendentals"></a>/Qfast_transcendentals(빠른 초월수 강제 적용)
 
@@ -28,11 +28,11 @@ ms.locfileid: "57414202"
 
 이 컴파일러 옵션은 초월수 함수 실행 속도 개선 하기 위해 인라인 코드를 변환할 수 있습니다. 이 옵션은 함께 사용 하는 경우에 효과가 **/fp: 제외한** 또는 **/fp: 정확한**합니다. 기본 동작에서 이미 초월 함수에 대 한 인라인 코드를 생성할 **/fp:fast**합니다.
 
-이 옵션을 사용 하 여 호환 되지 **/fp: strict**합니다. 참조 [/fp (부동 소수점 동작 지정)](../../build/reference/fp-specify-floating-point-behavior.md) 부동 소수점 컴파일러 옵션에 대 한 자세한 내용은 합니다.
+이 옵션을 사용 하 여 호환 되지 **/fp: strict**합니다. 참조 [/fp (부동 소수점 동작 지정)](fp-specify-floating-point-behavior.md) 부동 소수점 컴파일러 옵션에 대 한 자세한 내용은 합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -46,6 +46,6 @@ ms.locfileid: "57414202"
 
 ## <a name="see-also"></a>참고자료
 
-[/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[/Q 옵션(하위 수준 작업)](q-options-low-level-operations.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

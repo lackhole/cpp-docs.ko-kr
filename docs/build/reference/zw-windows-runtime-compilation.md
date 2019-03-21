@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -ZW
 - Windows Runtime compiler option
 ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248
-ms.openlocfilehash: 944d66de3c029d9731a225281b4e592c477806e9
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a16482cf8d21651db9486ab19c347a4ccadf5279
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57417985"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809433"
 ---
 # <a name="zw-windows-runtime-compilation"></a>/ZW(Windows Runtime 컴파일)
 
@@ -34,7 +34,7 @@ ms.locfileid: "57417985"
 ## <a name="arguments"></a>인수
 
 **nostdlib**<br/>
-Platform.winmd, Windows.Foundation.winmd 및 기타 기본 Windows 메타데이터(.winmd) 파일이 컴파일에 자동으로 포함되지 않음을 나타냅니다. 대신 사용 해야 합니다는 [/FU (Name Forced #using 파일)](../../build/reference/fu-name-forced-hash-using-file.md) 컴파일러 옵션을 명시적으로 Windows 메타 데이터 파일을 지정 합니다.
+Platform.winmd, Windows.Foundation.winmd 및 기타 기본 Windows 메타데이터(.winmd) 파일이 컴파일에 자동으로 포함되지 않음을 나타냅니다. 대신 사용 해야 합니다는 [/FU (Name Forced #using 파일)](fu-name-forced-hash-using-file.md) 컴파일러 옵션을 명시적으로 Windows 메타 데이터 파일을 지정 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -44,7 +44,7 @@ Platform.winmd, Windows.Foundation.winmd 및 기타 기본 Windows 메타데이�
 
 - Windows 런타임 개체의 참조 횟수 및 해당 참조 횟수가 0이 되 면 개체의 삭제 자동 자동입니다.
 
-Incremental linker를 사용 하 여.obj 파일에 포함 된 Windows 메타 데이터를 지원 하지 않으므로 합니다 **/ZW** 옵션을 합니다 [/Gm (최소 다시 빌드 사용)](../../build/reference/gm-enable-minimal-rebuild.md) 옵션이 호환 되지 않습니다. **/ZW** .
+Incremental linker를 사용 하 여.obj 파일에 포함 된 Windows 메타 데이터를 지원 하지 않으므로 합니다 **/ZW** 옵션을 합니다 [/Gm (최소 다시 빌드 사용)](gm-enable-minimal-rebuild.md) 옵션이 호환 되지 않습니다. **/ZW** .
 
 자세한 내용은 [Visual c + + 언어 참조](../../cppcx/visual-c-language-reference-c-cx.md)합니다.
 
@@ -52,5 +52,5 @@ Incremental linker를 사용 하 여.obj 파일에 포함 된 Windows 메타 데
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

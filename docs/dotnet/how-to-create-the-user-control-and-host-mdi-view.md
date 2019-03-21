@@ -6,18 +6,18 @@ helpviewer_keywords:
 - MFC [C++], Windows Forms Controls
 - Windows Forms [C++], MFC support
 ms.assetid: 625b5821-f923-4701-aca0-c1a4ceca4f63
-ms.openlocfilehash: c2705ef1938684d8521316436fccaae367629584
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d535fce47be5504f6f521cda1267344206287da
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509124"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738766"
 ---
 # <a name="how-to-create-the-user-control-and-host-mdi-view"></a>방법: 사용자 정의 컨트롤 및 호스트 MDI 뷰 만들기
 
 다음 단계에는.NET Framework 사용자 정의 컨트롤을 만들고 컨트롤 클래스 라이브러리 (특히 Windows 컨트롤 라이브러리 프로젝트의 경우) 사용자 정의 컨트롤을 작성 한 다음 프로젝트를 어셈블리로 컴파일합니다 하는 방법을 보여 줍니다. 컨트롤에서 파생 된 클래스를 사용 하는 MFC 응용 프로그램에서 사용할 수 있습니다 [CView 클래스](../mfc/reference/cview-class.md) 하 고 [CWinFormsView 클래스](../mfc/reference/cwinformsview-class.md)합니다.
 
-Windows Forms 사용자 정의 컨트롤을 만들고 컨트롤 클래스 라이브러리를 작성 하는 방법에 대 한 정보를 참조 하세요 [방법: 합성 컨트롤 제작](/dotnet/framework/winforms/controls/how-to-author-composite-controls)합니다.
+Windows Forms 사용자 정의 컨트롤을 만들고 컨트롤 클래스 라이브러리를 작성 하는 방법에 대 한 정보를 참조 하세요. [방법: 사용자 컨트롤 작성](/dotnet/framework/winforms/controls/how-to-author-composite-controls)합니다.
 
 > [!NOTE]
 >  일부 경우에는 타사 Grid 컨트롤 같은 Windows Forms 컨트롤, 동작할 수 있습니다 하지 안정적으로 MFC 응용 프로그램에서 호스트 되는 경우. 권장된 해결 방법을 MFC 응용 프로그램에 Windows Forms 사용자 정의 컨트롤을 배치 하 고 사용자 정의 컨트롤 내에서 타사 표 형태 컨트롤을 배치 하는 것입니다.
@@ -101,6 +101,6 @@ Windows Forms 사용자 정의 컨트롤을 만들고 컨트롤 클래스 라이
 
    에 **디버그** 메뉴에서 클릭 **디버깅 하지 않고 시작**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows Forms 사용자 정의 컨트롤을 MFC 뷰로 호스팅](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)

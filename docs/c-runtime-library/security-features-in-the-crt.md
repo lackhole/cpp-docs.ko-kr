@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CRT, security enhancements
 - parameters [C++], validation
 ms.assetid: d9568b08-9514-49cd-b3dc-2454ded195a3
-ms.openlocfilehash: a6ebbb09bc724fe1d3b2f06a27cb6708acb7566b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cf8bee39d6ec0f41049586d3861dcf450b7b2aaa
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538361"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746945"
 ---
 # <a name="security-features-in-the-crt"></a>CRT의 보안 기능
 
@@ -72,7 +72,7 @@ strcpy(szBuf, "test"); // warning: deprecated
 
 - 자세한 내용은 [매개 변수 유효성 검사](../c-runtime-library/parameter-validation.md)를 참조하세요.
 
-- 개발자가 잘못된 매개 변수에 대한 처리기에도 액세스할 수 있습니다. 잘못된 매개 변수가 발견되면 CRT는 응용 프로그램을 어설션 및 종료하는 대신 [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) 함수를 사용하여 이러한 문제를 확인하는 방법을 제공합니다.
+- 개발자가 잘못된 매개 변수에 대한 처리기에도 액세스할 수 있습니다. 잘못된 매개 변수가 발견되면 CRT는 애플리케이션을 어설션 및 종료하는 대신 [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) 함수를 사용하여 이러한 문제를 확인하는 방법을 제공합니다.
 
 - `Sized Buffers`. 안전한 함수를 사용하려면 버퍼에 쓰는 모든 함수에 버퍼 크기를 전달해야 합니다. 안전한 버전은 버퍼에 쓰기 전에 버퍼가 충분히 큰지 검증하여 악의적인 코드가 실행되게 만들 수 있는 위험한 버퍼 오버런 오류를 방지하는 데 도움을 줍니다. 이러한 함수는 일반적으로 `errno` 형식의 오류 코드를 반환하고 버퍼 크기가 너무 작을 경우 잘못된 매개 변수 처리기를 호출합니다. `gets`와 같이 입력 버퍼에서 읽는 함수에는 최대 크기를 지정해야 하는 안전한 버전이 있습니다.
 

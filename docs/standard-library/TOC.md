@@ -405,7 +405,6 @@
 #### [<system_error> 함수](system-error-functions.md)
 #### [<system_error> 연산자](system-error-operators.md)
 #### [<system_error> 열거형](system-error-enums.md)
-#### [<system_error> 형식 정의](system-error-typedefs.md)
 #### [error_category 클래스](error-category-class.md)
 #### [error_code 클래스](error-code-class.md)
 #### [error_condition 클래스](error-condition-class.md)

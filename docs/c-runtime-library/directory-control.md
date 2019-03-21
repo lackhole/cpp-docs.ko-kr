@@ -7,12 +7,12 @@ helpviewer_keywords:
 - controls [C++], directory
 - directory control routines
 ms.assetid: a72dcf6f-f366-4d20-8850-0e19cc53ca18
-ms.openlocfilehash: b7a6eb9a74467932dcb8743d31e934d551de4246
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 327647ee2eee7e149ec0e9ebfc71883a8a3643d5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546442"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748582"
 ---
 # <a name="directory-control"></a>디렉터리 제어
 
@@ -20,7 +20,7 @@ ms.locfileid: "50546442"
 
 ## <a name="directory-control-routines"></a>디렉터리 제어 루틴
 
-|루틴에서 반환된 값|사용|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[_chdir, _wchdir](../c-runtime-library/reference/chdir-wchdir.md)|현재 작업 디렉터리를 변경합니다.|
 |[_chdrive](../c-runtime-library/reference/chdrive.md)|현재 드라이브를 변경합니다.|

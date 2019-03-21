@@ -9,12 +9,12 @@ helpviewer_keywords:
 - date functions
 - time functions
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
-ms.openlocfilehash: 67b993325c7f9c649d1509ce2c1ecf09a2404bc8
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: b763361d2cdd732025e492a25ac63fc01f06c2b8
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328931"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739735"
 ---
 # <a name="time-management"></a>시간 관리
 
@@ -24,7 +24,7 @@ ms.locfileid: "51328931"
 
 ### <a name="time-routines"></a>시간 루틴
 
-|함수|사용|
+|함수|기능|
 |--------------|---------|
 |[asctime, _wasctime](../c-runtime-library/reference/asctime-wasctime.md), [asctime_s, _wasctime_s](../c-runtime-library/reference/asctime-s-wasctime-s.md)|**struct tm** 형식의 시간을 문자열로 변환합니다. **_s** 접미사가 있는 버전의 함수가 더 안전합니다.|
 |[clock](../c-runtime-library/reference/clock.md)|프로세스의 경과된 벽시계 시간을 반환합니다.|

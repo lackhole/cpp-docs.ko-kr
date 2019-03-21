@@ -1,4 +1,4 @@
-﻿---
+---
 title: noinline
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +7,12 @@ helpviewer_keywords:
 - noinline __declspec keyword
 - __declspec keyword [C++], noinline
 ms.assetid: f259d55b-dec7-4bde-8cf9-14521e4fdc42
-ms.openlocfilehash: 3a8dce21aa707a1a52c647c9efee5ab806511ca8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e155726ad1f2f3f6f0501d3aebf7fa14e620d6bd
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454563"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742481"
 ---
 # <a name="noinline"></a>noinline
 
@@ -34,9 +34,8 @@ class X {
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [__declspec](../cpp/declspec.md)<br/>
 [C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [inline, __inline, \__forceinline](inline-functions-cpp.md)
-

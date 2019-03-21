@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
-ms.openlocfilehash: 4a37542bd69926572e44322c406862117560affe
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: f9d339860e9d2bdb8d66f6b7f8f49d3993b2d5cf
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175771"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820743"
 ---
 # <a name="c-attributes-for-com-and-net"></a>COM 및.NET에 대한 C++ 특성
 
@@ -49,7 +49,7 @@ class CMyReceiver
 
 ## <a name="basic-mechanics-of-attributes"></a>특성의 기본 메커니즘
 
-프로젝트에 특성을 삽입 하는 방법은 세 가지가 있습니다. 첫째, 삽입할 수 있습니다 이러한 수동으로 소스 코드입니다. 둘째,이 프로젝트에서 개체의 속성 표를 사용 하 여 삽입할 수 있습니다. 마지막으로, 다양 한 마법사를 사용 하 여 삽입할 수 있습니다. 사용 하 여 대 한 자세한 내용은 합니다 **속성** 창 및 다양 한 마법사를 참조 하십시오 [Creating and Managing Visual C++ Projects](../../ide/creating-and-managing-visual-cpp-projects.md)합니다.
+프로젝트에 특성을 삽입 하는 방법은 세 가지가 있습니다. 첫째, 삽입할 수 있습니다 이러한 수동으로 소스 코드입니다. 둘째,이 프로젝트에서 개체의 속성 표를 사용 하 여 삽입할 수 있습니다. 마지막으로, 다양 한 마법사를 사용 하 여 삽입할 수 있습니다. 사용 하 여 대 한 자세한 내용은 합니다 **속성** 창 및 다양 한 마법사를 참조 하십시오 [Creating and Managing Visual C++ Projects](../../build/creating-and-managing-visual-cpp-projects.md)합니다.
 
 로 이전에 프로젝트를 빌드할 때 컴파일러 구문 분석 각 C++ 소스 파일을 개체 파일을 생성 합니다. 그러나 컴파일러는 특성을 발견 하면 해당 구문 분석 되 고 구문적으로 확인 합니다. 컴파일러가 다음 동적으로 공급자를 호출할 특성 코드를 삽입 하거나 컴파일 타임에 기타 수정 작업을 확인 합니다. 공급자 구현 형식 특성에 따라 다릅니다. 예를 들어, ATL 관련 특성 Atlprov.dll 여 구현 됩니다.
 

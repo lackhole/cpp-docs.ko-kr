@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0003
 ms.assetid: fc5a84bb-c6d3-41d6-8dd6-475455820778
-ms.openlocfilehash: 9a116f41efc791ed90fbac8065bc339172c9ea9d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6530045870573921cf626ceeec4c1dca10cdbfb
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572390"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816180"
 ---
 # <a name="project-build-error-prj0003"></a>프로젝트 빌드 오류 PRJ0003
 
@@ -27,7 +27,7 @@ ms.locfileid: "50572390"
 
 - 보안 권한이 부족 합니다. 보안 권한이 있는지 확인 합니다.
 
-- 에 지정 된 실행 파일 경로 **VC + + 디렉터리** 실행 하려고 하는 도구의 경로 포함 하지 않습니다. 내용은 [프로젝트 속성 사용](../../ide/working-with-project-properties.md)
+- 에 지정 된 실행 파일 경로 **VC + + 디렉터리** 실행 하려고 하는 도구의 경로 포함 하지 않습니다. 내용은 [컴파일러 설정 및 빌드 속성](../../build/working-with-project-properties.md)
 
 - 메이크파일 프로젝트에 대 한 중 하나에서 실행 하는 명령을 누락 **명령줄 빌드** 하거나 **다시 빌드 명령줄**합니다.
 

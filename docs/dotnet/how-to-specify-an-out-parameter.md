@@ -1,19 +1,19 @@
 ---
-title: '방법: out 매개 변수 지정'
+title: '방법: Out 지정 매개 변수'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - function parameters
 - out parameters
 ms.assetid: 02862448-603c-4e9d-a5c5-b45fe38446e3
-ms.openlocfilehash: 8c3499a2916eda7ab96f7958df190c803206741e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 901257b92aaa5e13e6e79d612ca590b734e15881
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437083"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747487"
 ---
-# <a name="how-to-specify-an-out-parameter"></a>방법: out 매개 변수 지정
+# <a name="how-to-specify-an-out-parameter"></a>방법: Out 지정 매개 변수
 
 이 샘플에는 함수 매개 변수는 out 매개 변수를 지정 하는 방법 및 C# 프로그램에서 해당 함수를 호출 하는 방법을 보여 줍니다.
 
@@ -55,6 +55,6 @@ class TestClass {
 a string
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

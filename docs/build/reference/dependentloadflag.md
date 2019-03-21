@@ -10,12 +10,12 @@ helpviewer_keywords:
 - linker [C++], DEPENDENTLOADFLAG
 - DEPENDENTLOADFLAG linker option
 - /DEPENDENTLOADFLAG linker option
-ms.openlocfilehash: 0bdf2542d641f751f40757079eb576f2c97540dc
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 94998e06f23a7e70524221d3cb75166b5d3f2c44
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326162"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57815972"
 ---
 # <a name="dependentloadflag-set-default-dependent-load-flags"></a>/ DEPENDENTLOADFLAG (집합 기본 종속 로드가 플래그)
 
@@ -23,7 +23,7 @@ ms.locfileid: "51326162"
 
 ## <a name="syntax"></a>구문
 
-> **/ DEPENDENTLOADFLAG**[**:**_loadflags_]
+> **/DEPENDENTLOADFLAG**[**:**_loadflags_]
 
 ### <a name="arguments"></a>인수
 
@@ -42,7 +42,7 @@ ms.locfileid: "51326162"
 
 ### <a name="to-set-the-dependentloadflag-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 DEPENDENTLOADFLAG 링커 옵션을 설정 하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 
@@ -54,9 +54,9 @@ ms.locfileid: "51326162"
 
 ## <a name="see-also"></a>참고자료
 
-- [링커 옵션 설정](setting-linker-options.md)
-- [링커 옵션](linker-options.md)
-- [DLL에 암시적으로 연결 하는 방법](../linking-an-executable-to-a-dll.md#linking-implicitly)
-- [사용할 링크 방법 결정](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [MSVC 링커 참조](linking.md)
+- [MSVC 링커 옵션](linker-options.md)
+- [DLL에 실행 파일 링크](../linking-an-executable-to-a-dll.md#linking-implicitly)
+- [DLL에 실행 파일 링크](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 - [LoadLibraryEx](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa)
 - [동적 연결 라이브러리 순서](/windows/desktop/Dlls/dynamic-link-library-search-order)

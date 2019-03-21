@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 73abc426-dab0-45e2-be85-0f9a14206cc2
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 3cefe34eef1a30274ba2e9e362e2f61458f10e38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cb23106648e3325755a857d0b962112e9bdcfac4
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565921"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822602"
 ---
 # <a name="clrunmanagedcodecheck-remove-suppressunmanagedcodesecurityattribute"></a>/CLRUNMANAGEDCODECHECK (제거 SuppressUnmanagedCodeSecurityAttribute)
 
@@ -23,7 +23,7 @@ ms.locfileid: "50565921"
 
 ## <a name="syntax"></a>구문
 
-> **/CLRUNMANAGEDCODECHECK**[**: NO**]
+> **/CLRUNMANAGEDCODECHECK**[**:NO**]
 
 ## <a name="remarks"></a>설명
 
@@ -39,7 +39,7 @@ ms.locfileid: "50565921"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **구성 속성** 노드를 확장합니다.
 
@@ -55,5 +55,5 @@ ms.locfileid: "50565921"
 
 ## <a name="see-also"></a>참고자료
 
-- [링커 옵션 설정](../../build/reference/setting-linker-options.md)
-- [링커 옵션](../../build/reference/linker-options.md)
+- [MSVC 링커 참조](linking.md)
+- [MSVC 링커 옵션](linker-options.md)

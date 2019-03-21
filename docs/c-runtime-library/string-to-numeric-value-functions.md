@@ -16,12 +16,12 @@ helpviewer_keywords:
 - parsing, numeric strings
 - string conversion, to numeric values
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
-ms.openlocfilehash: d3e53c665378efdd63a373027f4edd6b7fb90ad3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f24b75c2fdb3aa0d84b16874d2d01f1cb96d4b9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544575"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743893"
 ---
 # <a name="string-to-numeric-value-functions"></a>문자열을 숫자 값으로 변환하는 함수
 
@@ -35,7 +35,7 @@ ms.locfileid: "50544575"
 
 - [_strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l](../c-runtime-library/reference/strtoui64-wcstoui64-strtoui64-l-wcstoui64-l.md)
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **strtod** 패밀리의 각 함수는 null로 끝나는 문자열을 숫자 값으로 변환합니다. 사용할 수 있는 함수는 다음 표에 나와 있습니다.
 

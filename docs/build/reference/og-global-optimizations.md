@@ -13,16 +13,16 @@ helpviewer_keywords:
 - common subexpression elimination
 - Og compiler option [C++]
 ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
-ms.openlocfilehash: e8032d7dbd771ca1527c6515a779b0f532a2c658
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 5e45273b6b609f1bf78504a519c1fb98e2147f76
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420871"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818533"
 ---
 # <a name="og-global-optimizations"></a>/Og(전역 최적화)
 
-더 이상 사용되지 않습니다. 로컬 및 전역 최적화를 제공 합니다. 자동 레지스터 할당 및 최적화를 반복 합니다. 하나를 사용 하는 것이 좋습니다 [/o1 (크기 최소화)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) 하거나 [/o2 (속도 최대화)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) 대신 합니다.
+더 이상 사용되지 않습니다. 로컬 및 전역 최적화를 제공 합니다. 자동 레지스터 할당 및 최적화를 반복 합니다. 하나를 사용 하는 것이 좋습니다 [/o1 (크기 최소화)](o1-o2-minimize-size-maximize-speed.md) 하거나 [/o2 (속도 최대화)](o1-o2-minimize-size-maximize-speed.md) 대신 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,7 +30,7 @@ ms.locfileid: "57420871"
 
 ## <a name="remarks"></a>설명
 
-**/Og** 는 사용 되지 않습니다. 이제 이러한 최적화는 기본적으로 일반적으로 사용 됩니다. 최적화에 대 한 자세한 내용은 참조 하세요. [/o1, / o2 (크기 최소화, 속도 최대화)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) 하거나 [/Ox (사용 가장 속도 최적화)](../../build/reference/ox-full-optimization.md)합니다.
+**/Og** 는 사용 되지 않습니다. 이제 이러한 최적화는 기본적으로 일반적으로 사용 됩니다. 최적화에 대 한 자세한 내용은 참조 하세요. [/o1, / o2 (크기 최소화, 속도 최대화)](o1-o2-minimize-size-maximize-speed.md) 하거나 [/Ox (사용 가장 속도 최적화)](ox-full-optimization.md)합니다.
 
 최적화는에서 사용할 수 있습니다 **/Og**:
 
@@ -76,11 +76,11 @@ ms.locfileid: "57420871"
    > [!NOTE]
    > 사용 하 여 함수에서 함수 별로 전역 최적화를 사용 하지 않도록 설정 하거나 설정할 수 있습니다 합니다 `optimize` 함께 pragma는 `g` 옵션입니다.
 
-관련 정보를 참조 하세요 [/Oi (내장 함수 생성)](../../build/reference/oi-generate-intrinsic-functions.md) 하 고 [/Ox (사용 가장 속도 최적화)](../../build/reference/ox-full-optimization.md)합니다.
+관련 정보를 참조 하세요 [/Oi (내장 함수 생성)](oi-generate-intrinsic-functions.md) 하 고 [/Ox (사용 가장 속도 최적화)](ox-full-optimization.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -94,8 +94,4 @@ ms.locfileid: "57420871"
 
 ## <a name="see-also"></a>참고자료
 
-[/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)
-
-[컴파일러 옵션](../../build/reference/compiler-options.md)
-
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

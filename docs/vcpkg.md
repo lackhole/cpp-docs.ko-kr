@@ -3,15 +3,15 @@ title: vcpkg-- Windows, Linux 및 MacOS용 C++ 패키지 관리자
 description: vcpkg는 Windows에서 오픈 소스 C++ 라이브러리 획득 및 설치를 크게 간소화하는 명령줄 패키지 관리자입니다.
 author: mikeblome
 ms.author: mblome
-ms.date: 02/22/2019
+ms.date: 03/18/2019
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: dc07086f271c9789629b335b58758b88e8e3d4e8
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: 2ca1b88f492d96f8a08d296cab7f35f3b72409c9
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809713"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58172883"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux 및 MacOS용 C++ 패키지 관리자
 
@@ -19,7 +19,7 @@ vcpkg는 Windows, Linux 및 MacOS에서 타사 라이브러리 획득 및 설치
 
 ## <a name="simple-yet-flexible"></a>단순하면서도 유연한
 
-하나의 명령으로 소스를 다운로드하고 라이브러리를 구축할 수 있습니다. vcpkg는 그 자체가 GitHub에서 사용할 수 있는 오픈 소스 프로젝트입니다. 원하는 어떤 방식으로든 개별 클론을 사용자 지정할 수 있습니다. 예를 들어 다른 라이브러리 또는 공용 카탈로그에서 발견되는 것과는 다른 버전의 라이브러리를 지정할 수 있습니다. 단일 컴퓨터에서 각각 라이브러리 및/또는 컴파일 스위치의 사용자 지정 집합을 생성하는 vcpkg 클론을 여러 개 지정할 수 있습니다. 각 복제본은 자체 계층에서만 작동하는 vcpkg.exe의 자체 복사본을 가진 독립적이고 x 복사 가능한 환경입니다. vcpkg는 어떤 환경 변수에도 추가되지 않으며 Windows 레지스트리 또는 Visual Studio에 종속되지 않습니다.
+하나의 명령으로 소스를 다운로드하고 라이브러리를 구축할 수 있습니다. vcpkg는 그 자체가 GitHub에서 사용할 수 있는 오픈 소스 프로젝트입니다. 원하는 어떤 방식으로든 개별 클론을 사용자 지정할 수 있습니다. 예를 들어 다른 라이브러리 또는 공용 카탈로그에서 발견되는 것과는 다른 버전의 라이브러리를 지정할 수 있습니다. 단일 컴퓨터에서 각각 라이브러리 및/또는 컴파일 스위치의 사용자 지정 집합을 생성하는 vcpkg 클론을 여러 개 지정할 수 있습니다. 각 복제본은 자체 계층에서만 작동하는 vcpkg.exe의 자체 복사본이 포함된 자체 포함 환경입니다. vcpkg는 어떤 환경 변수에도 추가되지 않으며 Windows 레지스트리 또는 Visual Studio에 종속되지 않습니다.
 
 ## <a name="sources-not-binaries"></a>소스는 이진 파일 아님
 

@@ -36,12 +36,12 @@ helpviewer_keywords:
 - strings [C++], ATL class
 - CSimpleStringT class
 ms.assetid: 15814fcb-5b8f-4425-a97e-3b61fc9b48d8
-ms.openlocfilehash: 93cb3ae0b2f358f64f0d6de26899d1b08f275b7b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1ec28ed5b2f5428cabcf7570c7ac53904e9a64f0
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579285"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748231"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT 클래스
 
@@ -79,7 +79,7 @@ String 클래스의 문자 형식입니다. 다음 중 하나일 수 있습니�
 |이름|설명|
 |----------|-----------------|
 |[CSimpleStringT::CSimpleStringT](#ctor)|생성 `CSimpleStringT` 다양 한 방법으로 개체입니다.|
-|[CSimpleStringT:: ~ CSimpleStringT](#dtor)|소멸자|
+|[CSimpleStringT::~CSimpleStringT](#dtor)|소멸자|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -116,7 +116,7 @@ String 클래스의 문자 형식입니다. 다음 중 하나일 수 있습니�
 |----------|-----------------|
 |[CSimpleStringT::operator PCXSTR](#operator_pcxstr)|에 저장 된 문자에 직접 액세스를 `CSimpleStringT` C 스타일 문자열로 개체입니다.|
 |[CSimpleStringT::operator\[\]](#operator_at)|지정된 된 위치에 문자를 반환 합니다-에 대 한 연산자 대체 `GetAt`합니다.|
-|[CSimpleStringT::operator + =](#operator_add_eq)|기존 문자열의 끝에 새 문자열을 연결합니다.|
+|[CSimpleStringT::operator +=](#operator_add_eq)|기존 문자열의 끝에 새 문자열을 연결합니다.|
 |[CSimpleStringT::operator =](#operator_eq)|새 값을 할당 한 `CSimpleStringT` 개체입니다.|
 
 ### <a name="remarks"></a>설명
@@ -322,7 +322,7 @@ void Empty() throw();
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [문자열: CString 예외 정리](../cstring-exception-cleanup.md)합니다.
+자세한 내용은 참조 하세요. [문자열: CString 예외 정리](../cstring-exception-cleanup.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -740,7 +740,7 @@ XCHAR operator[](int iChar) const;
 > [!NOTE]
 >  첨자를 사용할 수 있습니다 (**[]**)에 있는 문자의 값을 검색할 연산자를 `CSimpleStringT`, 하지만 있는 문자의 값을 변경 하려면 사용할 수 없습니다를 `CSimpleStringT`입니다.
 
-##  <a name="operator_add_eq"></a>  CSimpleStringT::operator + =
+##  <a name="operator_add_eq"></a>  CSimpleStringT::operator +=
 
 기존 문자열의 끝에 새 문자열 또는 문자를 조인합니다.
 
@@ -1175,7 +1175,7 @@ void UnlockBuffer() throw();
 
 합니다 `CSimpleStringT` 소멸자를 자동으로 호출 `UnlockBuffer` 소멸자가 호출 될 때 버퍼 잠겨 있지는 되도록 합니다. 이 방법의 예제를 참조 하세요 [LockBuffer](#lockbuffer)합니다.
 
-##  <a name="dtor"></a>  CSimpleStringT:: ~ CSimpleStringT
+##  <a name="dtor"></a>  CSimpleStringT::~CSimpleStringT
 
 `CSimpleStringT` 개체를 제거합니다.
 
@@ -1189,7 +1189,7 @@ void UnlockBuffer() throw();
 
 삭제 하려면이 메서드를 호출 합니다 `CSimpleStringT` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)

@@ -2,12 +2,12 @@
 title: '포팅 가이드: Spy++'
 ms.date: 11/19/2018
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: 5bd69853b13d58ff79910eafcc601b0507d5a9ad
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: b28de2396ba94578a8d06038a1191be42dce49ea
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177006"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751376"
 ---
 # <a name="porting-guide-spy"></a>포팅 가이드: Spy++
 
@@ -280,7 +280,7 @@ END_MESSAGE_MAP()
 (static_cast< LRESULT (AFX_MSG_CALL CWnd::*)(CPoint) > (&ThisClass :: OnNcHitTest)) },
 ```
 
-문제는 멤버 함수 형식에 대한 포인터의 불일치와 관련이 있습니다. 클래스 형식인 `CHotLinkCtrl`에서 클래스 형식인 `CWnd`로의 변환은 유효한 파생 형식-기본 형식 변환이기 때문에 문제가 아닙니다. 문제는 반환 형식 UINT 및 LRESULT입니다. LRESULT는 대상 이진 형식에 따라 64비트 포인터 또는 32비트 포인터인 LONG_PTR로 확인되므로 UINT는 이 형식으로 변환되지 않습니다. 이 문제는 Visual Studio 2005에서 64비트 호환성 변경의 일부로 많은 메시지 맵 메서드의 반환 형식이 UINT에서 LRESULT로 변경되었기 때문에 2005 이전에 작성된 코드를 업그레이드하는 경우에 자주 발생합니다. 다음 코드에서 반환 형식을 UINT에서 LRESULT로 변경합니다.
+문제는 멤버 함수 형식에 대한 포인터의 불일치와 관련이 있습니다. 클래스 형식인 `CHotLinkCtrl`에서 클래스 형식인 `CWnd`로의 변환은 유효한 파생 형식-기본 형식 변환이기 때문에 문제가 아닙니다. 문제는 반환 형식인 UINT 및 LRESULT입니다. LRESULT는 대상 이진 형식에 따라 64비트 포인터 또는 32비트 포인터인 LONG_PTR로 확인되므로 UINT는 이 형식으로 변환되지 않습니다. 이 문제는 Visual Studio 2005에서 64비트 호환성 변경의 일부로 많은 메시지 맵 메서드의 반환 형식이 UINT에서 LRESULT로 변경되었기 때문에 2005 이전에 작성된 코드를 업그레이드하는 경우에 자주 발생합니다. 다음 코드에서 반환 형식을 UINT에서 LRESULT로 변경합니다.
 
 ```cpp
 afx_msg UINT OnNcHitTest(CPoint point);
@@ -292,7 +292,7 @@ afx_msg UINT OnNcHitTest(CPoint point);
 afx_msg LRESULT OnNcHitTest(CPoint point);
 ```
 
-CWnd에서 파생된 서로 다른 클래스에 이 함수가 모두 10개 정도 있기 때문에 편집기에서 해당 함수에 커서가 있을 때 **정의로 이동**(키보드: **F12**) 및 **선언으로 이동**(키보드: **Ctrl**+**F12**)을 사용하여 찾고, **기호 찾기** 도구 창에서 함수로 이동하면 도움이 됩니다. 일반적으로 **정의로 이동**이 둘 중에서 더 유용합니다. **선언으로 이동**은 friend 클래스 선언이나 정방향 참조와 같은 정의하는 클래스 선언 이외의 선언을 찾습니다.
+CWnd에서 파생된 다른 클래스에서 이 함수가 10번 발생하기 때문에 커서가 편집기에 있는 함수에 있을 때 **정의로 이동**(키보드: **F12**) 및 **선언으로 이동**(키보드: **Ctrl**+**F12**)을 사용하여 다음을 찾아서 **기호 찾기** 도구 창으로부터 이동하는 것이 유용합니다. 일반적으로 **정의로 이동**이 둘 중에서 더 유용합니다. **선언으로 이동**은 friend 클래스 선언이나 정방향 참조와 같은 정의하는 클래스 선언 이외의 선언을 찾습니다.
 
 ##  <a name="mfc_changes"></a> 9단계. MFC 변경
 
@@ -542,7 +542,7 @@ wsprintf(szTmp, "%d.%2.2d.%4.4d", rmj, rmm, rup);
 wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
 ```
 
-\_T 매크로는 문자열 리터럴이 MBCS 또는 UNICODE 설정에 따라 **char** 문자열이나 **wchar_t** 문자열로 컴파일되게 하는 효과가 있습니다. Visual Studio에서 모든 문자열을 \_T로 바꾸려면 먼저 **빠른 바꾸기**(키보드: **Ctrl**+**F**) 상자 또는 **파일에서 바꾸기**(키보드: **Ctrl**+**Shift**+**H**)를 연 다음, **정규식 사용** 확인란을 선택합니다. `((\".*?\")|('.+?'))`를 검색 텍스트로 입력하고 `_T($1)`를 바꿀 텍스트로 입력합니다. \_T 매크로가 일부 문자열 앞뒤에 이미 있는 경우 이 절차에서 다시 추가하며, `#include`를 사용하는 경우와 같이 \_T를 원하지 않는 경우도 있으므로 **모두 바꾸기** 대신 **다음 바꾸기**를 사용하는 것이 가장 좋습니다.
+\_T 매크로는 문자열 리터럴이 MBCS 또는 UNICODE 설정에 따라 **char** 문자열이나 **wchar_t** 문자열로 컴파일되게 하는 효과가 있습니다. Visual Studio에서 \_T로 모든 문자열을 바꾸려면 먼저 **빠른 바꾸기**(키보드: **Ctrl**+**F**) 상자 또는 **파일에서 바꾸기**(키보드: **Ctrl**+**Shift**+**H**)를 연 다음, **정규식 사용** 확인란을 선택합니다. `((\".*?\")|('.+?'))`를 검색 텍스트로 입력하고 `_T($1)`를 바꿀 텍스트로 입력합니다. \_T 매크로가 일부 문자열 앞뒤에 이미 있는 경우 이 절차에서 다시 추가하며, `#include`를 사용하는 경우와 같이 \_T를 원하지 않는 경우도 있으므로 **모두 바꾸기** 대신 **다음 바꾸기**를 사용하는 것이 가장 좋습니다.
 
 이 특정 함수 [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa)는 실제로 Windows 헤더에서 정의되며, 해당 설명서에서 가능한 버퍼 오버런으로 인해 사용하지 않도록 권장합니다. `szTmp` 버퍼에 대한 크기가 지정되지 않으므로 함수에서 버퍼가 기록되는 모든 데이터를 포함할 수 있는지 확인할 방법이 없습니다. 보안 CRT로 포팅하는 방법에 대한 다음 섹션을 참조하세요. 여기서는 다른 유사한 문제를 해결합니다. 결국 [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)로 바꾸었습니다.
 
@@ -673,5 +673,5 @@ int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const
 
 ## <a name="see-also"></a>참고 항목
 
-[포팅 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[이식 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [이전 사례 연구: COM Spy](../porting/porting-guide-com-spy.md)

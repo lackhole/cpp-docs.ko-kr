@@ -12,12 +12,12 @@ helpviewer_keywords:
 - c compiler option [C++]
 - /c compiler option [C++]
 ms.assetid: 944567ca-16bc-4728-befe-d414a7787f26
-ms.openlocfilehash: 5502cfda1afe05d8e4944de870349a8db2860f92
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c5854fd1255ab509d8778828de25638dd821d74b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416789"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57821445"
 ---
 # <a name="c-preserve-comments-during-preprocessing"></a>/C(전처리 중에 주석 유지)
 
@@ -31,7 +31,7 @@ ms.locfileid: "57416789"
 
 ## <a name="remarks"></a>설명
 
-이 컴파일러 옵션에 필요 합니다 **/E**, **/P**, 또는 **/EP** 옵션입니다.
+**/E**, **/P**, 또는 **/EP**와 같은 컴파일러 옵션이 필요합니다.
 
 다음 코드 샘플에는 소스 코드 주석이 표시 됩니다.
 
@@ -50,7 +50,7 @@ int i;   // a variable
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -64,8 +64,8 @@ int i;   // a variable
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[/E(stdout으로 전처리)](../../build/reference/e-preprocess-to-stdout.md)<br/>
-[/P(파일로 전처리)](../../build/reference/p-preprocess-to-a-file.md)<br/>
-[/EP(#line 지시문 없이 stdout으로 전처리)](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[/E(stdout으로 전처리)](e-preprocess-to-stdout.md)<br/>
+[/P(파일로 전처리)](p-preprocess-to-a-file.md)<br/>
+[/EP(#line 지시문 없이 stdout으로 전처리)](ep-preprocess-to-stdout-without-hash-line-directives.md)

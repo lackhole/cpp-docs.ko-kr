@@ -11,12 +11,12 @@ helpviewer_keywords:
 - character sets [C++], international programming strategies
 - localization [C++], character sets
 ms.assetid: b09d9854-0709-4b9a-a00c-b0b8bc4199b1
-ms.openlocfilehash: 91f4805152944202b7d3f7f45fce494f7e9d81af
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: f8c5cec680072ffa34b1ee0bef9e09231de5f1ac
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626684"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745455"
 ---
 # <a name="internationalization-strategies"></a>국제화 전략
 
@@ -36,7 +36,7 @@ ms.locfileid: "53626684"
 
 이러한 주제의 나머지 부분에서는 MBCS 또는 유니코드로 빌드할 수 있는 완전히 이식 가능한 코드 작성에 중점을 둡니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [유니코드 및 MBCS](../text/unicode-and-mbcs.md)<br/>
 [로캘 및 코드 페이지](../text/locales-and-code-pages.md)

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - Date data type, MFC encapsulation of
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
-ms.openlocfilehash: 7bcf4c50577cf7211f90415143edac9fd0df1d5b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: feef238be96d9a04c2c41e6955efec8b23cf6a89
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509333"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748491"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan 클래스
 
@@ -72,11 +72,11 @@ class COleDateTimeSpan
 
 |||
 |-|-|
-|[연산자 +,-](#operator_add_-)|추가, 빼기, 및에 대 한 로그인을 변경할 `COleDateTimeSpan` 값입니다.|
-|[operator + =, =](#operator_add_eq_-_eq)|더하기 및 빼기는 `COleDateTimeSpan` 값이 `COleDateTimeSpan` 값입니다.|
+|[operator +, -](#operator_add_-)|추가, 빼기, 및에 대 한 로그인을 변경할 `COleDateTimeSpan` 값입니다.|
+|[operator +=, -=](#operator_add_eq_-_eq)|더하기 및 빼기는 `COleDateTimeSpan` 값이 `COleDateTimeSpan` 값입니다.|
 |[operator =](#operator_eq)|복사본을 `COleDateTimeSpan` 값입니다.|
-|[연산자 = =, <, < =](#coledatetimespan_relational_operators)|두 개를 비교 `COleDateTimeSpan` 값입니다.|
-|[연산자 double](#operator_double)|이 변환 `COleDateTimeSpan` 값을 **double**합니다.|
+|[operator ==, <, <=](#coledatetimespan_relational_operators)|두 개를 비교 `COleDateTimeSpan` 값입니다.|
+|[operator double](#operator_double)|이 변환 `COleDateTimeSpan` 값을 **double**합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -93,7 +93,7 @@ class COleDateTimeSpan
 
 `COleDateTimeSpan` 해당 도우미 클래스가 사용 됩니다 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md)합니다. `COleDateTime` 캡슐화 된 `DATE` OLE 자동화의 데이터 형식입니다. `COleDateTime` 절대 시간 값을 나타냅니다. 모든 `COleDateTime` 계산 관련 `COleDateTimeSpan` 값입니다. 이러한 클래스 간의 관계 간의 비슷합니다 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 하 고 [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)합니다.
 
-대 한 자세한 내용은 합니다 `COleDateTime` 및 `COleDateTimeSpan` 문서를 참조 하는 클래스 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.
+에 대 한 자세한 합니다 `COleDateTime` 하 고 `COleDateTimeSpan` 클래스 문서를 참조 하세요. [날짜 및 시간: 자동화 지원을](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -147,7 +147,7 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 *dblSpanSrc*<br/>
 복사할 새 일 수가 `COleDateTimeSpan` 개체입니다.
 
-*lDays*하십시오 *nHours*하십시오 *nMins*, *nSecs*<br/>
+*lDays*, *nHours*, *nMins*, *nSecs*<br/>
 복사할 새 날짜 및 시간 값을 나타내며 `COleDateTimeSpan` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -162,7 +162,7 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 
 새 상태 `COleDateTimeSpan` 개체에 잘못 설정 됩니다.
 
-에 대 한 범위에 대 한 자세한 내용은 `COleDateTimeSpan` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.
+에 대 한 범위에 대 한 자세한 내용은 `COleDateTimeSpan` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원을](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -179,7 +179,7 @@ CString Format(UINT nID) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*벗어나거나*<br/>
+*pFormat*<br/>
 유사한 문자열 서식의 `printf` 문자열 서식을 지정 합니다. 서식 코드 앞에 백분율 (`%`)에 서명, 해당 바뀝니다 `COleDateTimeSpan` 구성 요소입니다. 반환된 된 문자열에 형식 문자열에 다른 문자 변경 되지 않고 복사 됩니다. 값 및 서식 지정 코드의 의미를 `Format` 다음과 같습니다.
 
 - **%H** 현재 날짜 시간
@@ -207,10 +207,10 @@ CString Format(UINT nID) const;
 
 이 함수에 대 한 폼에 대 한 간단한 설명은 다음과 같습니다.
 
-**형식 (** *벗어나거나* **)**<br/>
+**Format(** *pFormat* **)**<br/>
 이 폼에서와 같이 백분율 기호 (%) 뒤에 나오는 특별 한 서식 지정 코드를 포함 하는 형식 문자열을 사용 하 여 값의 서식을 지정 `printf`합니다. 서식 문자열은 함수에 매개 변수로 전달 됩니다.
 
-**형식 (** *nID* **)**<br/>
+**Format(** *nID* **)**<br/>
 이 폼에서와 같이 백분율 기호 (%) 뒤에 나오는 특별 한 서식 지정 코드를 포함 하는 형식 문자열을 사용 하 여 값의 서식을 지정 `printf`합니다. 서식 문자열 리소스입니다. 이 문자열 리소스의 ID 매개 변수로 전달 됩니다.
 
 ### <a name="example"></a>예제
@@ -403,7 +403,7 @@ enum DateTimeSpanStatus{
 
 에 잘못 된 상태를 설정할 수 있는 작업에 대 한 자세한 내용은 참조 하세요. [COleDateTimeSpan::operator +,-](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_-) 하 고 [COleDateTimeSpan::operator + =,-=](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_eq_-_eq)합니다.
 
-에 대 한 범위에 대 한 자세한 내용은 `COleDateTimeSpan` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.
+에 대 한 범위에 대 한 자세한 내용은 `COleDateTimeSpan` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원을](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.
 
 ##  <a name="gettotaldays"></a>  COleDateTimeSpan::GetTotalDays
 
@@ -603,7 +603,7 @@ enum DateTimeSpanStatus{
 > [!CAUTION]
 >  이 데이터 멤버는 고급 프로그래밍 시나리오입니다. 인라인 멤버 함수를 사용 해야 [GetStatus](#getstatus) 하 고 [SetStatus](#setstatus)합니다. 참조 `SetStatus` 이 데이터 멤버를 명시적으로 설정 하는 것에 대 한 추가 주의 사항에 대 한 합니다.
 
-에 대 한 범위에 대 한 자세한 내용은 `COleDateTimeSpan` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.
+에 대 한 범위에 대 한 자세한 내용은 `COleDateTimeSpan` 문서를 참조 하는 값을 [날짜 및 시간: 자동화 지원을](../../atl-mfc-shared/date-and-time-automation-support.md)합니다.
 
 ##  <a name="operator_eq"></a>  COleDateTimeSpan::operator =
 
@@ -617,7 +617,7 @@ COleDateTimeSpan& operator=(double dblSpanSrc) throw();
 
 이 오버 로드 된 할당 연산자 복사 원본 날짜/시간 범위 값이 `COleDateTimeSpan` 개체입니다.
 
-##  <a name="operator_add_-"></a>  COleDateTimeSpan::operator +,-
+##  <a name="operator_add_-"></a>  COleDateTimeSpan::operator +, -
 
 추가, 빼기, 및에 대 한 로그인을 변경할 `COleDateTimeSpan` 값입니다.
 
@@ -641,7 +641,7 @@ Null이 고, 결과의 상태를 피연산자 중 하나 이면 `COleDateTimeSpa
 
 [!code-cpp[NVC_ATLMFC_Utilities#23](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_10.cpp)]
 
-##  <a name="operator_add_eq_-_eq"></a>  COleDateTimeSpan::operator + =, =
+##  <a name="operator_add_eq_-_eq"></a>  COleDateTimeSpan::operator +=, -=
 
 더하기 및 빼기는 `COleDateTimeSpan` 값이 `COleDateTimeSpan` 값입니다.
 
@@ -662,7 +662,7 @@ COleDateTimeSpan& operator-=(const COleDateTimeSpan dateSpan) throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#24](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_11.cpp)]
 
-##  <a name="operator_double"></a>  Double COleDateTimeSpan::operator
+##  <a name="operator_double"></a>  COleDateTimeSpan::operator double
 
 이 변환 `COleDateTimeSpan` 값을 **double**합니다.
 
@@ -684,7 +684,7 @@ void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*lDays*하십시오 *nHours*하십시오 *nMins*, *nSecs*<br/>
+*lDays*, *nHours*, *nMins*, *nSecs*<br/>
 이에 복사할 날짜 범위 및 시간 범위 값을 나타내는 `COleDateTimeSpan` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -751,11 +751,10 @@ enum DateTimeSpanStatus{
 
 [!code-cpp[NVC_ATLMFC_Utilities#22](../../atl-mfc-shared/codesnippet/cpp/coledatetimespan-class_13.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md)<br/>
 [CTime 클래스](../../atl-mfc-shared/reference/ctime-class.md)<br/>
 [CTimeSpan 클래스](../../atl-mfc-shared/reference/ctimespan-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

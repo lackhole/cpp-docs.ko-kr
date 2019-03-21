@@ -5,12 +5,12 @@ helpviewer_keywords:
 - ErrLook tool
 - Error lookup tool
 ms.assetid: 6040ffc1-2355-4a45-8998-84cbcba4ca91
-ms.openlocfilehash: 598e3d938645e3d024b2409d97b4b8f082ee2d85
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c8afcafa7d1b8cd666eb5b02f09a14782f8621ca
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621470"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813372"
 ---
 # <a name="errlook-reference"></a>ERRLOOK 참조
 
@@ -20,19 +20,19 @@ ms.locfileid: "50621470"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[값 편집 컨트롤](../../build/reference/value-edit-control.md)<br/>
+[값 편집 컨트롤](value-edit-control.md)<br/>
 ERRLOOK에서 값 편집 컨트롤을 설명합니다.
 
-[오류 메시지 편집 컨트롤](../../build/reference/error-message-edit-control.md)<br/>
+[오류 메시지 편집 컨트롤](error-message-edit-control.md)<br/>
 ERRLOOK에서 오류 메시지 편집 컨트롤을 설명합니다.
 
-[모듈 단추](../../build/reference/modules-button.md)<br/>
+[모듈 단추](modules-button.md)<br/>
 ERRLOOK 모듈 단추를 설명합니다.
 
-[찾기 단추](../../build/reference/look-up-button.md)<br/>
+[찾기 단추](look-up-button.md)<br/>
 ERRLOOK Look Up 단추를 설명합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[ 빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
+[추가 MSVC 빌드 도구](c-cpp-build-tools.md)<br/>
 Visual c + +에서 제공 하는 도구를 빌드는 C/c + + 항목의 링크를 제공 합니다.

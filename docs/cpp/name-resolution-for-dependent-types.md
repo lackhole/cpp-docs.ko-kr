@@ -11,7 +11,7 @@ ms.locfileid: "50563155"
 ---
 # <a name="name-resolution-for-dependent-types"></a>종속적인 형식에 대한 이름 확인
 
-사용 하 여 **typename** 지정된 된 정규화 이름이 형식을 식별 하는 컴파일러에 지시 하는 템플릿 정의의 정규화 된 이름에 대 한 합니다. 자세한 내용은 [typename](../cpp/typename.md)합니다.
+템플릿 정의의 정규화된 이름에 **typename**을 사용하여 지정된 정규화 이름이 형식을 식별한다는 것을 컴파일러에 지시합니다. 자세한 내용은 [typename](../cpp/typename.md)을 참조하십시오.
 
 ```cpp
 // template_name_resolution1.cpp
@@ -90,7 +90,7 @@ Int MyNamespace::myFunction
 
 ### <a name="template-disambiguation"></a>템플릿 명확성
 
-Visual Studio 2012는 C + + 11/03 98/표준에 대 한 규칙 "템플릿" 키워드를 사용 하 여 명확성을 적용합니다. 다음 예제에서는 Visual c + + 2010는 표준에 맞지 않는 줄 및 표준에 맞는 줄 수락 합니다.  Visual Studio 2012에는 표준에 맞는 줄만 허용합니다.
+Visual Studio 2012의 Visual C++는 "템플릿" 키워드를 사용하여 명확성에 대한 C++ 98/03/11 표준 규칙을 적용합니다. 다음 예제에서 Visual C++ 2010은 표준에 맞지 않는 줄과 표준에 맞는 줄을 모두 허용합니다.  Visual Studio 2012의 Visual C++는 표준에 맞는 줄만 허용합니다.
 
 ```cpp
 #include <iostream>
@@ -121,6 +121,6 @@ int main() {
 
 기본적으로 C++에서는 `AY::Rebind`가 템플릿이 아니며 컴파일러에서 다음 " `<`"을 less-than으로 해석한다고 가정하기 때문에 명확성 규칙 준수가 필요합니다. C++에 `Rebind`가 템플릿이라는 것을 인지시켜 "`<`"을 꺾쇠로 올바르게 구문 분석할 수 있도록 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [이름 확인](../cpp/templates-and-name-resolution.md)

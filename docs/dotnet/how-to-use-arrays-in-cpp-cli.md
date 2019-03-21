@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - arrays [C++], single-dimension
 ms.assetid: 301cfb3e-199f-42c8-8151-629dce9e87f3
-ms.openlocfilehash: b0a13441bc3532884dbbd32f28d57c15e352c3ef
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3043a277ddca41bc6519d6f127f8a98c07c418d2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414605"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747542"
 ---
 # <a name="how-to-use-arrays-in-ccli"></a>방법: 배열을 사용 하 여 C + + /cli CLI
 
@@ -618,6 +618,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[배열](../windows/arrays-cpp-component-extensions.md)
+[배열(C++)](../windows/arrays-cpp-component-extensions.md)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - CStringT class, exporting strings
 ms.assetid: bdfc441e-8d2a-461c-9885-46178066c09f
-ms.openlocfilehash: 8c46ae040e64b999c570e99f3bd18cc7d5bc36a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a4ee73d2ae5cfb7bf9834fb23eed8470b7d29445
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432450"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57750235"
 ---
 # <a name="exporting-string-classes-using-cstringt"></a>CStringT를 사용 하 여 문자열 클래스 내보내기
 
@@ -53,8 +53,7 @@ AfxStr.h, 이전으로 바꿉니다 `CString`, `CStringA`, 및 `CStringW` 다음
 
 [CStringT 클래스](../atl-mfc-shared/reference/cstringt-class.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CStringT 사용](../atl-mfc-shared/using-cstringt.md)<br/>
 [CString 사용](../atl-mfc-shared/using-cstring.md)
-

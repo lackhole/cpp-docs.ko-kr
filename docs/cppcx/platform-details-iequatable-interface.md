@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details::IEquatable Interface
 ms.assetid: 72f15f55-f7a4-4cca-aeba-2d5a9996818c
-ms.openlocfilehash: fe17d111ffe39c1fb7a824ffc0e5c9d39621e311
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a0da4d82bc0d2a06fa73519aedf2e22ae89f3900
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540116"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57745254"
 ---
 # <a name="platformdetailsiequatable-interface"></a>Platform::Details::IEquatable 인터페이스
 
@@ -28,7 +28,7 @@ interface class IEquatable;
 
 이 인터페이스는 브라우저에서 감사될 수 있으므로 보완용으로만 제공됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Platform`
 
@@ -38,6 +38,6 @@ interface class IEquatable;
 
 **네임스페이스:** Platform::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

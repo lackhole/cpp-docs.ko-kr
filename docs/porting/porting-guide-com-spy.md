@@ -2,12 +2,12 @@
 title: '포팅 가이드: COM Spy'
 ms.date: 11/04/2016
 ms.assetid: 24aa0d52-4014-4acb-8052-f4e2e4bbc3bb
-ms.openlocfilehash: 67dbcc815404c26535763239eddb176fcecf03f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca81b240a102195109c0ad6ef05bfaed10306704
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441790"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751689"
 ---
 # <a name="porting-guide-com-spy"></a>포팅 가이드: COM Spy
 
@@ -122,7 +122,7 @@ for (i=0;i<static_cast<UINT>(lCount);i++)
 이러한 경고는 동일한 이름의 매개 변수가 있는 함수에서 변수가 선언되어 잠재적으로 코드가 모호해질 수 있는 경우입니다. 지역 변수의 이름을 변경하여 이 문제를 해결했습니다.
 
 ### <a name="step-3-testing-and-debugging"></a>3단계. 테스트 및 디버깅
-먼저 다양한 메뉴 및 명령을 실행한 후 응용 프로그램을 닫아 앱을 테스트했습니다. 발견된 문제는 앱을 닫을 때 발생하는 디버그 어설션뿐이었습니다. 이 문제는 응용 프로그램의 기본 COM 구성 요소인 `CSpyCon` 개체의 기본 클래스인 `CWindowImpl`의 소멸자에서 나타났습니다. atlwin.h의 다음 코드에서 어설션 오류가 발생했습니다.
+먼저 다양한 메뉴 및 명령을 실행한 후 애플리케이션을 닫아 앱을 테스트했습니다. 발견된 문제는 앱을 닫을 때 발생하는 디버그 어설션뿐이었습니다. 이 문제는 애플리케이션의 기본 COM 구성 요소인 `CSpyCon` 개체의 기본 클래스인 `CWindowImpl`의 소멸자에서 나타났습니다. atlwin.h의 다음 코드에서 어설션 오류가 발생했습니다.
 
 ```cpp
 virtual ~CWindowImplRoot()
@@ -152,7 +152,7 @@ STDMETHODIMP CDog::Wag(LONG* lDuration)
 }
 ```
 
-빌드 및 등록하고(관리자 권한으로 Visual Studio를 실행하려면 필요함), Windows 제어판의 **서비스 구성 요소** 응용 프로그램을 사용하여 활성화했습니다. C# Windows Forms 프로젝트를 만들고 도구 상자에서 폼으로 단추를 끌어다 놓은 다음 click 이벤트 처리기에 대해 단추를 두 번 클릭했습니다. 다음 코드를 추가하여 `Dog` 구성 요소를 인스턴스화했습니다.
+빌드 및 등록하고(관리자 권한으로 Visual Studio를 실행하려면 필요함), Windows 제어판의 **서비스 구성 요소** 애플리케이션을 사용하여 활성화했습니다. C# Windows Forms 프로젝트를 만들고 도구 상자에서 폼으로 단추를 끌어다 놓은 다음 click 이벤트 처리기에 대해 단추를 두 번 클릭했습니다. 다음 코드를 추가하여 `Dog` 구성 요소를 인스턴스화했습니다.
 
 ```cpp
 private void button1_Click(object sender, EventArgs e)
@@ -166,6 +166,6 @@ private void button1_Click(object sender, EventArgs e)
 
 ## <a name="see-also"></a>참고 항목
 
-[포팅 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[이식 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [다음 예제: Spy++](../porting/porting-guide-spy-increment.md)<br/>
 [이전 예제: MFC Scribble](../porting/porting-guide-mfc-scribble.md)

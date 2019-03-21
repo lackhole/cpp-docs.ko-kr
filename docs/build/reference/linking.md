@@ -1,26 +1,89 @@
 ---
-title: 연결
-ms.date: 11/04/2016
+title: MSVC 링커 참조
+ms.date: 12/10/2018
 ms.assetid: bb736587-d13b-4f3c-8982-3cc2c015c59c
-ms.openlocfilehash: b4a02fbc27c766dfaf6e3923a96923274fb3cee5
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3a9eebef0a264b0131311b5ca96011a4d56264a1
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57412599"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820379"
 ---
 # <a name="linking"></a>연결
 
-링커를 사용 하 여에 대 한 내용은 다음 섹션을 참조 합니다.
+C + + 프로젝트에는 *연결* 컴파일러는 개체 파일 (*.obj)로 소스 코드를 컴파일한 후 단계를 수행 합니다. 링커 (link.exe) 개체 파일을 단일 실행 파일을 결합합니다. 
 
-- [링커 옵션 설정](../../build/reference/setting-linker-options.md)
+내부 또는 Visual Studio 외부에서 링커 옵션을 설정할 수 있습니다. 링커 옵션에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 여 액세스 하는 Visual Studio 내 **솔루션 탐색기** 선택 하 고 **속성** 속성 페이지를 표시 합니다. 선택할 **링커** 노드를 확장 하 고 모든 옵션을 보려면 왼쪽된 창에서. 
 
-- [링커 옵션](../../build/reference/linker-options.md)
 
-- [모듈 정의 (.def) 파일](../../build/reference/module-definition-dot-def-files.md)
+## <a name="linker-command-line-syntax"></a>링커 명령줄 구문
 
-- [링커의 지연 로드된 DLL 지원](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+Visual Studio 외부에서 링크를 실행 하는 경우에 하나 이상의 방법으로 입력을 지정할 수 있습니다.
+
+- 명령줄에서 설정
+
+- 명령 파일을 사용 하 여
+
+- 환경 변수에서
+
+LINK를 실행하면 LINK 환경 변수에 지정된 옵션이 먼저 처리된 다음 명령줄과 명령 파일에 지정된 옵션이 순서대로 처리됩니다. 서로 다른 인수를 사용하여 동일한 옵션을 반복하는 경우에는 마지막으로 처리된 옵션이 가장 우선합니다.
+
+옵션은 전체 빌드에 적용되지만 특정 입력 파일에는 옵션이 적용되지 않을 수도 있습니다.
+
+링크를 실행 합니다. EXE, 다음 명령 구문을 사용 합니다.
+
+```
+LINK arguments
+```
+
+`arguments` 옵션과 파일 이름이 포함 되며 순서에 관계 없이 지정할 수 있습니다. 처리 된 가장 먼저 다음 파일은 옵션입니다. 인수를 구분 하려면 하나 이상의 공백이 나 탭을 사용 합니다.
+
+> [!NOTE]
+>  이 도구는 Visual Studio 명령 프롬프트에서만 시작할 수 있습니다. 시스템 명령 프롬프트 또는 파일 탐색기에서는 시작할 수 없습니다.
+
+## <a name="command-line"></a>명령줄
+
+명령줄에서 옵션 구성 옵션 지정자를 대시 (-) 또는 슬래시 (/) 옵션의 이름이 차례로 나옵니다. 옵션 이름은 약식으로 표기할 수 없습니다. 콜론 (:) 뒤에 지정 된 인수를 사용 하는 몇 가지 옵션입니다. 공백 또는 탭 수를 옵션 사양 내에서 제외 하 고 /COMMENT 옵션에서 따옴표 붙은 문자열 내에서. 10 진수 또는 C 언어 표기법으로 숫자 인수를 지정 합니다. 옵션 이름 및 해당 키워드 또는 filename 인수는 대 소문자를 구분 하지 않지만 인수로 식별자가 대/소문자 구분 합니다.
+
+파일을 링커에 전달할 링크 명령 후 명령줄에서 파일 이름을 지정 합니다. 에 파일 이름을 사용 하 여 절대 또는 상대 경로 지정할 수 있습니다 및 파일 이름에 와일드 카드를 사용할 수 있습니다. 점 (.) 및 파일 이름 확장명을 생략 하면 링크는.obj 파일을 찾기 위해 가정 합니다. 링크 또는 사용 하지 파일 이름 확장명의 부족을 통해 파일의 콘텐츠에 대 한 가정 검사 하 여 파일의 형식을 결정 하 고 적절 하 게 처리 합니다.
+
+link.exe 성공 (오류 없음)에 대 한 0을 반환합니다.  링커, 링크를 중지 하는 오류 번호를 반환 합니다.  예를 들어 링커가 LNK1104를 생성할 경우에 링커가 1104를 반환 합니다.  따라서 링커에서 오류로 반환 되는 최저 오류 번호는 1000 개입니다.  반환 값이 128 나타내는 운영 체제 또는.config 파일에 구성 문제가 로더가는 link.exe 또는 c2.dll을 로드 되지 않았습니다.
+
+## <a name="link-command-files"></a>LINK 명령 파일
+
+명령 파일의 형태로 링크에 명령줄 인수를 전달할 수 있습니다. 링커 명령 파일을 지정 하려면 다음 구문을 사용 합니다.
+
+> **링크 \@**  <em>commandfile</em>
+
+합니다 *commandfile* 텍스트 파일의 이름입니다. 없는 공백 또는 탭 간 허용 되는 at 기호 (**\@**) 및 파일 이름입니다. 기본 확장명이 없습니다. 전체 파일 이름 확장명을 포함 하 여 지정 해야 합니다. 와일드 카드를 사용할 수 없습니다. 파일을 사용 하 여 절대 또는 상대 경로 지정할 수 있습니다. 링크 파일을 검색 하는 환경 변수를 사용 하지 않습니다.
+
+명령 파일의 인수 수 구분 공백이 나 탭 (대로 명령줄에서) 및 줄 바꿈 문자입니다.
+
+명령 파일의 명령줄의 일부나 전부를 지정할 수 있습니다. LINK 명령의 명령 파일을 여러 개 사용할 수 있습니다. 링크는 명령줄에 해당 위치에 지정 된 것 처럼 명령 파일 입력을 허용 합니다. 명령 파일을 중첩할 수 없습니다. 링크 하지 않는 한 명령 파일의 내용을 에코 합니다 [/NOLOGO](nologo-suppress-startup-banner-linker.md) 옵션을 지정 합니다.
+
+## <a name="example"></a>예제
+
+DLL을 작성 하려면 다음 명령을 명령 파일에 있는 개체 파일 및 라이브러리의 이름을 전달 하 고 세 번째 /EXPORTS 옵션의 사양에 대 한 파일에 명령을 사용 하 여 키를 누릅니다.
+
+```cmd
+link /dll @objlist.txt @liblist.txt @exports.txt
+```
+
+## <a name="link-environment-variables"></a>LINK 환경 변수
+
+LINK 도구는 다음과 같은 환경 변수를 사용합니다.
+
+- 링크 및 \_링크\_정의 합니다. 링크 도구 옵션 및 링크 환경 변수에 정의 된 인수 앞에 추가 옵션을 추가 하 고에 정의 된 인수를 \_링크\_ 환경 변수를 처리 하기 전에 명령줄 인수입니다.
+
+- LIB(정의된 경우). LINK 도구는 개체, 라이브러리 또는 명령줄에서 또는 지정 된 기타 파일을 검색할 때 LIB 경로 사용 합니다 [/base](base-base-address.md) 옵션입니다. 또한 LIB 경로를 사용하여 개체에 명명된 .pdb 파일을 찾습니다. LIB 변수에는 하나 이상의 경로 사양이 세미콜론으로 구분되어 포함될 수 있습니다. 한 경로는 Visual C++ 설치의 \lib 하위 디렉터리를 가리켜야 합니다.
+
+- PATH(도구가 CVTRES를 실행해야 하고 LINK 자체와 동일한 디렉터리에서 파일을 찾을 수 없는 경우). LINK가 .res 파일을 연결하려면 CVTRES가 필요합니다. PATH는 Visual C++ 설치의 \bin 하위 디렉터리를 가리켜야 합니다.
+
+- TMP(OMF 또는 .res 파일을 연결할 때 디렉터리 지정)
 
 ## <a name="see-also"></a>참고자료
 
-[C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md)
+[C/c + + 빌드 참조](c-cpp-building-reference.md)
+[MSVC 링커 옵션](linker-options.md)
+[모듈 정의 (.def) 파일](module-definition-dot-def-files.md)
+[링커의 지원 지연 로드 된 Dll](linker-support-for-delay-loaded-dlls.md)

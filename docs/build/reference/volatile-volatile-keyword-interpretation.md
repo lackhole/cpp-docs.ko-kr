@@ -13,12 +13,12 @@ helpviewer_keywords:
 - volatile compiler option
 - -volatile compiler option [C++]
 ms.assetid: 9d08fcc6-5bda-44c8-8151-8d8d54f164b8
-ms.openlocfilehash: da2d981d9fcca6be66a7fd495e7c76670ed8e3ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02871622242930d7419fda16f4d106fccb2056f0
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502520"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57819495"
 ---
 # <a name="volatile-volatile-keyword-interpretation"></a>/volatile(volatile 키워드 해석)
 
@@ -46,7 +46,7 @@ Microsoft 확장 선택 `volatile` 의미 체계를 memory ordering 보장 ISO �
 
 ### <a name="to-set-the-volatile-compiler-option-in-visual-studio"></a>/Volatile를 설정 하려면 Visual Studio에서 컴파일러 옵션
 
-1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
 
@@ -55,5 +55,5 @@ Microsoft 확장 선택 `volatile` 의미 체계를 memory ordering 보장 ISO �
 ## <a name="see-also"></a>참고자료
 
 [volatile](../../cpp/volatile-cpp.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

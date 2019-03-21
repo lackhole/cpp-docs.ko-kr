@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MBCS [C++], locale code page
 ms.assetid: da9150de-70ea-4d2f-90e6-ddb9202dd80b
-ms.openlocfilehash: 79d053029edcb357f791dade1ec20f562dce3c16
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 68a0fdf0bdb573b40d347e05a7449affda55d8e5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614994"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738834"
 ---
 # <a name="interpretation-of-multibyte-character-sequences"></a>멀티바이트 문자 시퀀스 해석
 
@@ -19,7 +19,7 @@ Microsoft 런타임 라이브러리에 있는 대부분의 멀티바이트 문�
 
 ## <a name="locale-dependent-multibyte-routines"></a>로캘 종속 멀티바이트 루틴
 
-|루틴에서 반환된 값|사용|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[_mbclen, mblen, _mblen_l](../c-runtime-library/reference/mbclen-mblen-mblen-l.md)|멀티바이트 문자의 바이트 수의 유효성을 검사하고 해당 수를 반환합니다.|
 |[strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)|멀티바이트 문자열: 문자열에 있는 각 문자의 유효성을 검사하고 문자열 길이를 반환합니다. 와이드 문자열: 문자열 길이를 반환합니다.|

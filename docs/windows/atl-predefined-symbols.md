@@ -5,18 +5,18 @@ helpviewer_keywords:
 - symbols [C++], ATL predefined
 - ATL symbols
 ms.assetid: 60d8f4e6-6ed9-47f3-9051-e4bf34384456
-ms.openlocfilehash: 16991746c5c858310466f7eebd91a8478d2dcc5c
-ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
+ms.openlocfilehash: 2abbfb83f6d9b09a1c5dcc2afe1c48a6d2dff79a
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954850"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562876"
 ---
 # <a name="atl-predefined-symbols"></a>미리 정의된 ATL 기호
 
 이러한 기호 ATL 헤더 파일에서 정의 되지만 표준 Windows 응용 프로그램 기능 및 동작을 지원 합니다. 이러한 기호 대화 상자를 사용 하 여 주로 사용 됩니다.
 
-대화 상자 및 컨트롤을 사용 하 여 작업할 때에 [대화 상자 편집기](../windows/dialog-editor.md), 이러한 기호에 표시 됩니다는 **속성** 공용 컨트롤을 사용 하 여 연결 된 창입니다. 예를 들어 대화 상자에는 **취소** 단추를 명령 IDCANCEL 기호와 연결 되도록에 [속성 창](/visualstudio/ide/reference/properties-window)합니다.
+대화 상자 및 컨트롤을 사용 하 여 작업할 때에 [대화 상자 편집기](../windows/dialog-editor.md), 이러한 기호에 표시 됩니다는 [속성 창](/visualstudio/ide/reference/properties-window) 공용 컨트롤을 사용 하 여 연결 합니다. 예를 들어 대화 상자에는 **취소** 단추를 명령 IDCANCEL 기호와 연결 되도록에 **속성** 창.
 
 |||
 |-|-|

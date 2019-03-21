@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - Windows Forms [C++], compared to MFC
 ms.assetid: f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51
-ms.openlocfilehash: a284a74fe0b8cac0df43803951e3a5b5655f8189
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 998485a3384512f57cf35fc264e2321fa0996728
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593182"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742524"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC 프로그래밍의 차이점
 
@@ -54,6 +54,6 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
 
    MFC에 메커니즘을 업데이트 하는 명령입니다. 따라서 활성 뷰 또는 문서는 UI 요소 (예: 하거나 사용 하 고, 메뉴 항목이 나 도구 단추를 사용 하지 않도록 설정 하 고, 상태를 확인)의 상태를 담당 합니다. Windows Forms에 명령 업데이트 메커니즘의 해당 요소가 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC에서 Windows Form 사용자 정의 컨트롤 사용](../dotnet/using-a-windows-form-user-control-in-mfc.md)

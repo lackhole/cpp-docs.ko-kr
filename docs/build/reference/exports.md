@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - EXPORTS .def file statement
 ms.assetid: dbcd7579-b855-44c4-bd27-931e157657f7
-ms.openlocfilehash: b12548bafa9a0c580c5976cd7c4c54d8726e5ace
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 33b70c680bfc3db24f5326a2027fa9ec4740e3f2
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435677"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814139"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -28,7 +28,7 @@ EXPORTS
 
 내보내기에 대 한 구문을 *정의* 됩니다.
 
-> *entryname*\[__=__*internal_name*|*other_module.exported_name*] \[ **\@** _서_ \[ **NONAME**]] \[ \[ **개인**] | \[ **데이터**]]
+> *entryname*\[__=__*internal_name*|*other_module.exported_name*] \[**\@**_ordinal_ \[**NONAME**] ] \[ \[**PRIVATE**] | \[**DATA**] ]
 
 *entryname* 내보내려는 함수 또는 변수 이름입니다. 이는 필수입니다. 내보내는 이름이 DLL의 이름과 다를 경우 내보내기의 이름을 DLL에서 사용 하 여 지정할 *internal_name*합니다. 예를 들어 DLL이 함수 `func1`을 내보내고 호출자가 이 함수를 `func2`로 사용하도록 하려는 경우 다음과 같이 지정할 수 있습니다.
 
@@ -51,9 +51,9 @@ EXPORTS
    func2=other_module.#42
 ```
 
-C + + 함수에 대 한 이름 데코레이션을 사용 하는 Visual c + + 컴파일러를 데코 레이트 된 이름을 사용 하거나 해야 *internal_name* 사용 하 여 내보낸된 함수를 정의 하거나 `extern "C"` 소스 코드에서입니다. 컴파일러에는 또한 C 함수를 사용 하 여 데코 레이트 합니다 [__stdcall](../../cpp/stdcall.md) 밑줄을 사용 하 여 규칙을 호출 (\_) 접두사 및 접미사 구성는 at 기호 (\@) 뒤에 바이트 수 (10 진수)가 붙은 인수 목록입니다.
+C + + 함수에 대 한 이름 데코레이션을 사용 하는 MSVC 컴파일러를 데코 레이트 된 이름을 사용 하거나 해야 *internal_name* 사용 하 여 내보낸된 함수를 정의 하거나 `extern "C"` 소스 코드에서입니다. 컴파일러에는 또한 C 함수를 사용 하 여 데코 레이트 합니다 [__stdcall](../../cpp/stdcall.md) 밑줄을 사용 하 여 규칙을 호출 (\_) 접두사 및 접미사 구성는 at 기호 (\@) 뒤에 바이트 수 (10 진수)가 붙은 인수 목록입니다.
 
-컴파일러에서 생성 된 데코레이팅된 이름을 찾으려면 사용 합니다 [DUMPBIN](../../build/reference/dumpbin-reference.md) 도구 또는 링커 [/map](../../build/reference/map-generate-mapfile.md) 옵션입니다. 데코레이팅된 이름은 컴파일러별로 다릅니다. .DEF 파일의 데코레이팅된 이름을 내보내는 경우 DLL에 연결된 실행 파일도 동일한 버전의 컴파일러를 사용하여 빌드해야 합니다. 그래야 호출자의 데코레이팅된 이름이 .DEF 파일의 내보낸 이름과 일치하게 됩니다.
+컴파일러에서 생성 된 데코레이팅된 이름을 찾으려면 사용 합니다 [DUMPBIN](dumpbin-reference.md) 도구 또는 링커 [/map](map-generate-mapfile.md) 옵션입니다. 데코레이팅된 이름은 컴파일러별로 다릅니다. .DEF 파일의 데코레이팅된 이름을 내보내는 경우 DLL에 연결된 실행 파일도 동일한 버전의 컴파일러를 사용하여 빌드해야 합니다. 그래야 호출자의 데코레이팅된 이름이 .DEF 파일의 내보낸 이름과 일치하게 됩니다.
 
 사용할 수 있습니다 \@ *서* 숫자 및 함수 이름이 아니라 DLL의 내보내기 테이블로 이동 되도록 합니다. 많은 Windows DLL은 서수를 내보내 레거시 코드를 지원합니다. Windows DLL의 크기를 최소화할 수 있기 때문에 16비트 Windows 코드에서는 서수를 사용하는 것이 일반적입니다. DLL 클라이언트에서 레거시 지원에 서수를 사용할 필요가 없는 경우 서수별 함수를 내보내지 않는 것이 좋습니다. .LIB 파일에는 서수와 함수 간의 매핑이 포함되므로 DLL을 사용하는 프로젝트에서 일반적으로 하는 것처럼 함수 이름을 사용할 수 있습니다.
 
@@ -74,7 +74,7 @@ EXPORTS
 
 1. .DEF 파일의 `EXPORTS` 문
 
-1. [/내보내기](../../build/reference/export-exports-a-function.md) LINK 명령의 사양
+1. [/내보내기](export-exports-a-function.md) LINK 명령의 사양
 
 1. A [주석](../../preprocessor/comment-c-cpp.md) 폼의 소스 코드에 지시문 `#pragma comment(linker, "/export: definition ")`합니다. 다음 예제에서는 함수 선언 전에 #pragma comment 지시문 위치 `PlainFuncName` 데코 레이트 되지 않은 이름 및 `_PlainFuncName@4` 함수의 트 데코 레이 된 이름:
 
@@ -102,4 +102,4 @@ EXPORTS
 
 ## <a name="see-also"></a>참고자료
 
-[모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)
+[모듈 정의 문의 규칙](rules-for-module-definition-statements.md)

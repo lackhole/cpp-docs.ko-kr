@@ -4,12 +4,12 @@ ms.date: 01/22/2017
 helpviewer_keywords:
 - C++/CX namespaces
 ms.assetid: 5ebc0b49-1f22-48a7-90c4-a310bab9aba6
-ms.openlocfilehash: 6896691140a54955e98755ce9b0a7ca6af27d6bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a749220b4f1f735e9559d8e4aacca27d73fa5d76
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428316"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751650"
 ---
 # <a name="namespaces-reference-ccx"></a>네임스페이스 참조(C++/CX)
 
@@ -27,6 +27,6 @@ Windows 런타임 C +를 대상으로 하는 프로그램의 코딩을 간소화
 |[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)|사용자가 사용할 수 있는 형식과 컴파일러 인프라에서만 사용되는 내부 형식에 대한 설명을 포함합니다.|
 |[Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)|향상 된 기능과 Windows 런타임 확장에 대 한 설명은`Windows::Foundation::Collections` 네임 스페이스입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)

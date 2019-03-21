@@ -1,5 +1,5 @@
 ---
-title: 유니코드 및 MBCS(멀티바이트 문자 집합) 지원
+title: 유니코드 및 멀티바이트 문자 집합(MBCS) 지원
 ms.date: 1/09/2017
 helpviewer_keywords:
 - MFC [C++], character set support
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - Unicode [C++], string objects
 - strings [C++], Unicode
 - strings [C++], character set support
-ms.openlocfilehash: 8a7f79f9a75c2be4ee855d89b47b6b8e59a67d15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59e8759ffbe61b80c74d8b5aba5bc50886d6b23d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596653"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743914"
 ---
-# <a name="unicode-and-multibyte-character-set-mbcs-support"></a>유니코드 및 MBCS(멀티바이트 문자 집합) 지원
+# <a name="unicode-and-multibyte-character-set-mbcs-support"></a>유니코드 및 멀티바이트 문자 집합(MBCS) 지원
 
 예를 들어, 일본어 및 중국어와 일부 언어에서는 큰 문자 집합이. Microsoft Foundation 클래스 라이브러리 (MFC) 수를이 시장에 대 한 프로그래밍을 지원 큰 문자 집합을 처리 하는 두 가지 방법이 있습니다.
 
@@ -25,7 +25,7 @@ ms.locfileid: "50596653"
 
 - [멀티 바이트 문자 집합 (MBCS)](#mfc-support-for-mbcs-strings), **char** 단일 또는 더블 바이트 문자 및 로캘별 문자 집합에서 인코딩된 문자열을 기반으로 합니다.
 
-Microsoft가 새로운 개발에 대 한 유니코드 MFC 라이브러리를 권장 하 고 Visual Studio 2013 및 Visual Studio 2015에서 MBCS 라이브러리는 사용 되지 않는 합니다. 물론 이에 해당하는 경우는 더 이상 없습니다. Visual Studio 2017에서 MBCS 사용 되지 않음 경고가 제거 되었습니다.
+Microsoft가 새로운 개발에 대 한 유니코드 MFC 라이브러리를 권장 하 고 Visual Studio 2013 및 Visual Studio 2015에서 MBCS 라이브러리는 사용 되지 않는 합니다. 이제는 그렇지 않습니다. Visual Studio 2017에서 MBCS 사용 되지 않음 경고가 제거 되었습니다.
 
 ## <a name="mfc-support-for-unicode-strings"></a>유니코드 문자열에 대 한 MFC 지원
 
@@ -35,11 +35,11 @@ Microsoft가 새로운 개발에 대 한 유니코드 MFC 라이브러리를 권
 
 |||||
 |-|-|-|-|
-|UAFXCW.LIB|UAFXCW 합니다. PDB|UAFXCWD.LIB|UAFXCWD 합니다. PDB|
-|MFC*버전*U.LIB|MFC*버전*U.PDB|MFC*버전*U.DLL|MFC*버전*UD 합니다. LIB|
-|MFC*버전*UD 합니다. PDB|MFC*버전*UD 합니다. DLL|MFCS*버전*U.LIB|MFCS*버전*U.PDB|
-|MFCS*버전*UD 합니다. LIB|MFCS*버전*UD 합니다. PDB|MFCM*버전*U.LIB|MFCM*버전*U.PDB|
-|MFCM*version*U.DLL|MFCM*버전*UD 합니다. LIB|MFCM*버전*UD 합니다. PDB|MFCM*버전*UD 합니다. DLL|
+|UAFXCW.LIB|UAFXCW.PDB|UAFXCWD.LIB|UAFXCWD.PDB|
+|MFC*버전*U.LIB|MFC*version*U.PDB|MFC*버전*U.DLL|MFC*버전*UD 합니다. LIB|
+|MFC*version*UD.PDB|MFC*version*UD.DLL|MFCS*버전*U.LIB|MFCS*version*U.PDB|
+|MFCS*version*UD.LIB|MFCS*version*UD.PDB|MFCM*버전*U.LIB|MFCM*version*U.PDB|
+|MFCM*version*U.DLL|MFCM*버전*UD 합니다. LIB|MFCM*version*UD.PDB|MFCM*버전*UD 합니다. DLL|
 
 (*버전* 파일의 버전 번호를 나타내는 예를 들어, '140' 의미 버전 14.0입니다.)
 
@@ -93,7 +93,7 @@ Dbcs에서 지정 된 문자열은 싱글바이트 ANSI 문자만, 모든 더블
 
 마찬가지로, `CString` 메서드는 제네릭 데이터 형식 매핑을 사용 하 여 구현 됩니다. 모두 MBCS 및 유니코드를 사용 하려면 MFC 사용에 대 한 TCHAR **char** 또는 `wchar_t`에 대 한 LPTSTR **char** <strong>\*</strong> 또는 `wchar_t*`, 및 LPCTSTR 에대한**const char** <strong>\*</strong> 또는 `const wchar_t*`합니다. 이러한 MBCS 또는 유니코드 중 하나에 대 한 올바른 매핑을 확인 하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [문자열 조작](../c-runtime-library/string-manipulation-crt.md)

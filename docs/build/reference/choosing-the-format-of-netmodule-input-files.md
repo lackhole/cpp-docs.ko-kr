@@ -2,16 +2,16 @@
 title: .netmodule 입력 파일 형식 선택
 ms.date: 11/04/2016
 ms.assetid: 4653d1bd-300f-4083-86f5-d1a06f44e61c
-ms.openlocfilehash: ed492e47c09c05fc8ce2af3e19822cc5dde47b63
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: d48bfe84210143db333d1e6b081acf1aa66980cf
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420052"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807328"
 ---
 # <a name="choosing-the-format-of-netmodule-input-files"></a>.netmodule 입력 파일 형식 선택
 
-MSIL.obj 파일 (사용 하 여 컴파일된 [/clr](../../build/reference/clr-common-language-runtime-compilation.md))은.netmodule 파일로 사용할 수도 있습니다.  .obj 파일 메타 데이터 및 네이티브 기호를 포함합니다.  .netmodules에는 메타데이터만 포함됩니다.
+MSIL.obj 파일 (사용 하 여 컴파일된 [/clr](clr-common-language-runtime-compilation.md))은.netmodule 파일로 사용할 수도 있습니다.  .obj 파일 메타 데이터 및 네이티브 기호를 포함합니다.  .netmodules에는 메타데이터만 포함됩니다.
 
 /Addmodule 컴파일러 옵션을 통해 다른 Visual Studio 컴파일러는 MSIL.obj 파일 전달할 (하지만.obj 파일 결과 어셈블리의 일부가 되며 어셈블리와 함께 제공 되어야 주의).  예를 들어, Visual C# 및 Visual Basic /addmodule 컴파일러 옵션을 가집니다.
 
@@ -22,11 +22,11 @@ MSIL.obj 파일 (사용 하 여 컴파일된 [/clr](../../build/reference/clr-co
 
 다른 Visual Studio 컴파일러는 모듈에서 관리 되는 형식만 사용할 수 있습니다.
 
-다음 설명에 따라 Visual C++ 링커에 대한 모듈 입력으로 .netmodule 또는 .obj 파일을 사용해야 하는지 확인합니다.
+MSVC 링커에 대 한 모듈 입력으로.netmodule 또는.obj 파일을 사용 해야 하는지 여부를 확인 하려면 다음을 사용 합니다.
 
 - Visual C++ 이외의 Visual Studio 컴파일러로 빌드하는 경우 .netmodule을 생성하고 .netmodule을 링커에 대한 입력으로 사용합니다.
 
-- Visual C++ 컴파일러를 사용해서 모듈을 생성하는 중이고 모듈이 라이브러리 이외의 다른 항목을 빌드하는 데 사용될 경우, 컴파일러에서 생성된 .obj 파일을 링커에 대한 모듈 입력으로 사용하고, .netmodule 파일은 입력으로 사용하지 않습니다.
+- MSVC 컴파일러를 사용 하 여 모듈을 생성 하 고 모듈 이외의 라이브러리를 작성 하는 경우 링커에 대 한 모듈 입력으로 컴파일러에서 생성 된.obj 파일을 사용 하는 경우 입력으로.netmodule 파일을 사용 하지 마십시오.
 
 - 네이티브 (관리 되지 않는 한) 라이브러리를 빌드하는 모듈,.obj 파일을 링커에 대 한 모듈 입력으로 사용 하 고.lib 라이브러리 파일을 생성 합니다.
 
@@ -36,4 +36,4 @@ MSIL.obj 파일 (사용 하 여 컴파일된 [/clr](../../build/reference/clr-co
 
 ## <a name="see-also"></a>참고자료
 
-[링커 입력 파일로 사용하는 .netmodule 파일](../../build/reference/netmodule-files-as-linker-input.md)
+[링커 입력 파일로 사용하는 .netmodule 파일](netmodule-files-as-linker-input.md)

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - delayed loading of DLLs, specifying
 - /DELAYLOAD linker option
 ms.assetid: 94cbecfe-7a42-40d1-a618-9f2786bac0d8
-ms.openlocfilehash: b1ca214d8c840d9e993d5a89823b63868a664bec
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 2b6737abd76c03186881e83bbd2bf286be6ffe2f
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424888"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813229"
 ---
 # <a name="specifying-dlls-to-delay-load"></a>지연 로드할 DLL 지정
 
-사용 하 여 지연 Dll 로드 지정할 수 있습니다 합니다 [/delayload](../../build/reference/delayload-delay-load-import.md):`dllname` 링커 옵션입니다. 자체 버전의 도우미 함수를 사용하려는 경우가 아니면 delayimp.lib(데스크톱 응용 프로그램) 또는 dloadhelper.lib(스토어 앱)를 사용하여 프로그램을 연결해야 합니다.
+사용 하 여 지연 Dll 로드 지정할 수 있습니다 합니다 [/delayload](delayload-delay-load-import.md):`dllname` 링커 옵션입니다. 자체 버전의 도우미 함수를 사용하려는 경우가 아니면 delayimp.lib(데스크톱 응용 프로그램) 또는 dloadhelper.lib(스토어 앱)를 사용하여 프로그램을 연결해야 합니다.
 
 다음은 DLL 지연 로드의 간단한 예입니다.
 
@@ -37,4 +37,4 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[링커의 지연 로드된 DLL 지원](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[링커의 지연 로드된 DLL 지원](linker-support-for-delay-loaded-dlls.md)

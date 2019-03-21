@@ -11,12 +11,12 @@ helpviewer_keywords:
 - MFC DLLs [MFC]
 - DLLs [MFC], creating
 ms.assetid: 4e936031-7e39-4f40-a295-42a09c5ff264
-ms.openlocfilehash: f0fbc0b943865e4c6b4145618689a267224045bb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c0c8edfd26fc6abdcef1cbb2cfa93d88f9a37cde
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299286"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822706"
 ---
 # <a name="mfc-dll-wizard"></a>MFC DLL 마법사
 
@@ -40,9 +40,9 @@ Visual c + +를 사용 하 여 프로젝트에 개체 또는 컨트롤 MFC DLL �
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트 만들기 및 관리](../../ide/creating-and-managing-visual-cpp-projects.md)<br/>
-[속성 페이지(Visual C++)](../../ide/property-pages-visual-cpp.md)<br/>
-[프로젝트 속성 사용](../../ide/working-with-project-properties.md)<br/>
+[Visual C++ 프로젝트 만들기 및 관리](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[속성 페이지(Visual C++)](../../build/reference/property-pages-visual-cpp.md)<br/>
+[컴파일러 설정 및 빌드 속성](../../build/working-with-project-properties.md)<br/>
 [MFC 클래스](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [멤버 함수 추가](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [인터페이스 구현](../../ide/implementing-an-interface-visual-cpp.md)<br/>

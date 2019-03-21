@@ -10,12 +10,12 @@ helpviewer_keywords:
 - external names
 - -H compiler option [C++]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
-ms.openlocfilehash: bb7821587d6c0bbe06eb6baa02227955582eb76d
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: bdd3da8d3a5165262c00bc3475122e31f5770726
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420416"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811266"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H(외부 이름 길이 제한)
 
@@ -68,13 +68,13 @@ void func2(void) {}
 
 또한 사용할 때는 주의 해야 합니다 **/H** 컴파일러 미리 정의 된 식별자가 있으므로 옵션입니다. 식별자의 최대 길이가 너무 작은 경우 특정 미리 정의 된 식별자는 확인 되지 않은 뿐만 아니라 특정 라이브러리 함수 호출 됩니다. 예를 들어 경우는 `printf` 함수는 옵션과 **/H5** 기호 컴파일 타임에 지정 된 **있으면** 참조 하기 위해 만들어집니다 `printf`,이 확인할 수는 라이브러리입니다.
 
-이용 **/H** 와 호환 되지 않습니다 [/GL (전체 프로그램 최적화)](../../build/reference/gl-whole-program-optimization.md)합니다.
+이용 **/H** 와 호환 되지 않습니다 [/GL (전체 프로그램 최적화)](gl-whole-program-optimization.md)합니다.
 
-합니다 **/H** 옵션은 Visual Studio 2005부터 사용 되지 않습니다; 최대 길이 한도 증가 되었습니다 및 **/H** 더 이상 필요 합니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](../../build/reference/compiler-options-listed-by-category.md)합니다.
+합니다 **/H** 옵션은 Visual Studio 2005부터 사용 되지 않습니다; 최대 길이 한도 증가 되었습니다 및 **/H** 더 이상 필요 합니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
 
@@ -86,5 +86,5 @@ void func2(void) {}
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

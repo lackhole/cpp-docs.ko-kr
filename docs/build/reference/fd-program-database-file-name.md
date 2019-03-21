@@ -14,16 +14,16 @@ helpviewer_keywords:
 - .pdb files, creating
 - FD compiler option [C++]
 ms.assetid: 3977a9ed-f0ac-45df-bf06-01cedd2ba85a
-ms.openlocfilehash: 2c64a4ec0d7799d7bad698808e959d11e87cdc85
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c686de7dc9c9c20c404240db558d2ff66078ceb7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422444"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57808991"
 ---
 # <a name="fd-program-database-file-name"></a>/Fd(프로그램 데이터베이스 파일 이름)
 
-만든 프로그램 데이터베이스 (PDB) 파일에 대 한 파일 이름을 지정 [/z7, /Zi, /ZI (디버그 정보 형식)](../../build/reference/z7-zi-zi-debug-information-format.md)합니다.
+만든 프로그램 데이터베이스 (PDB) 파일에 대 한 파일 이름을 지정 [/z7, /Zi, /ZI (디버그 정보 형식)](z7-zi-zi-debug-information-format.md)합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,7 +43,7 @@ ms.locfileid: "57422444"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -65,7 +65,7 @@ CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP
 
 ## <a name="see-also"></a>참고자료
 
-[출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[경로 이름 지정](../../build/reference/specifying-the-pathname.md)
+[출력 파일(/F) 옵션](output-file-f-options.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[경로 이름 지정](specifying-the-pathname.md)

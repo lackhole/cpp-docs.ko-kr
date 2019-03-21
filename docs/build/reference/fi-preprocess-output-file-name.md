@@ -9,16 +9,16 @@ helpviewer_keywords:
 - /Fi compiler option (C++)
 - preprocessing output files, file name
 ms.assetid: 6d0ba983-a8b7-41ec-84f5-b4688ef8efee
-ms.openlocfilehash: 02d2a27f0a3d6b6aee6c2cd6f7161c9de718446d
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 990c48a72c3f6017d893ddf9b46bcbb737bfb634
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414029"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820197"
 ---
 # <a name="fi-preprocess-output-file-name"></a>/Fi (출력 파일 이름 전처리)
 
-출력 파일의 이름을 지정 합니다 [/P (파일로 전처리)](../../build/reference/p-preprocess-to-a-file.md) 컴파일러 옵션 전처리 된 출력을 씁니다.
+출력 파일의 이름을 지정 합니다 [/P (파일로 전처리)](p-preprocess-to-a-file.md) 컴파일러 옵션 전처리 된 출력을 씁니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,6 +48,6 @@ CL /P /FiMYPROCESS.I PROGRAM.CPP
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[/P(파일로 전처리)](../../build/reference/p-preprocess-to-a-file.md)<br/>
-[경로 이름 지정](../../build/reference/specifying-the-pathname.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[/P(파일로 전처리)](p-preprocess-to-a-file.md)<br/>
+[경로 이름 지정](specifying-the-pathname.md)

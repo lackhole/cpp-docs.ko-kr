@@ -13,12 +13,12 @@ helpviewer_keywords:
 - /U compiler option [C++]
 - U compiler option [C++]
 ms.assetid: 7bc0474f-6d1f-419b-807d-0d8816763b2a
-ms.openlocfilehash: 59522b462f2393dd3fd4d8afefe9cbbe0e519203
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: bfc03ebd5c900bf8bf81b4a50eed02111baf85ee
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57413045"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57822492"
 ---
 # <a name="u-u-undefine-symbols"></a>/U, /u(기호 정의 해제)
 
@@ -46,18 +46,18 @@ ms.locfileid: "57413045"
 
 |기호|기능|
 |------------|--------------|
-|_CHAR_UNSIGNED|기본 char 형식은 부호가 없습니다. 경우 정의 된 [/J](../../build/reference/j-default-char-type-is-unsigned.md) 옵션을 지정 합니다.|
-|_CPPRTTI|로 컴파일된 코드에 대해 정의 된 [/GR](../../build/reference/gr-enable-run-time-type-information.md) 옵션입니다.|
-|_CPPUNWIND|로 컴파일된 코드에 대해 정의 된 [/EHsc](../../build/reference/eh-exception-handling-model.md) 옵션입니다.|
-|_DLL|경우 정의 된 [/MD](../../build/reference/md-mt-ld-use-run-time-library.md) 옵션을 지정 합니다.|
+|_CHAR_UNSIGNED|기본 char 형식은 부호가 없습니다. 경우 정의 된 [/J](j-default-char-type-is-unsigned.md) 옵션을 지정 합니다.|
+|_CPPRTTI|로 컴파일된 코드에 대해 정의 된 [/GR](gr-enable-run-time-type-information.md) 옵션입니다.|
+|_CPPUNWIND|로 컴파일된 코드에 대해 정의 된 [/EHsc](eh-exception-handling-model.md) 옵션입니다.|
+|_DLL|경우 정의 된 [/MD](md-mt-ld-use-run-time-library.md) 옵션을 지정 합니다.|
 |_M_IX86|기본적으로 x86에 대해 600으로 정의 된 대상입니다.|
 |_MSC_VER|자세한 내용은 [Predefined Macros](../../preprocessor/predefined-macros.md)을 참조하십시오.|
 |_WIN32|WIN32 응용 프로그램에 대 한 정의. 항상 정의되어 있습니다.|
-|_MT|경우 정의 된 [/MD 또는 /MT](../../build/reference/md-mt-ld-use-run-time-library.md) 옵션을 지정 합니다.|
+|_MT|경우 정의 된 [/MD 또는 /MT](md-mt-ld-use-run-time-library.md) 옵션을 지정 합니다.|
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -72,9 +72,9 @@ ms.locfileid: "57413045"
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[/J(부호 없는 기본 문자 형식)](../../build/reference/j-default-char-type-is-unsigned.md)<br/>
-[/GR(런타임 형식 정보 사용)](../../build/reference/gr-enable-run-time-type-information.md)<br/>
-[/EH(예외 처리 모델)](../../build/reference/eh-exception-handling-model.md)<br/>
-[/MD, /MT, /LD(런타임 라이브러리 사용)](../../build/reference/md-mt-ld-use-run-time-library.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
+[/J(부호 없는 기본 문자 형식)](j-default-char-type-is-unsigned.md)<br/>
+[/GR(런타임 형식 정보 사용)](gr-enable-run-time-type-information.md)<br/>
+[/EH(예외 처리 모델)](eh-exception-handling-model.md)<br/>
+[/MD, /MT, /LD(런타임 라이브러리 사용)](md-mt-ld-use-run-time-library.md)

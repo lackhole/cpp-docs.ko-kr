@@ -6,12 +6,12 @@ helpviewer_keywords:
 - importing DLLs [C++], applications
 - applications [C++], importing into
 ms.assetid: 9d646466-e12e-4710-8ad9-c819c0375fcc
-ms.openlocfilehash: 41bd42ed51f1465db7487a120357fd27389f5b78
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 8fd15212a1ca5e31198c50ac2626755ac0171ae7
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57415551"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818468"
 ---
 # <a name="importing-into-an-application"></a>응용 프로그램으로 가져오기
 
@@ -23,14 +23,14 @@ ms.locfileid: "57415551"
 
 ## <a name="what-do-you-want-to-do"></a>수행할 작업
 
-- [__declspec (dllimport)을 사용하여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec (dllimport)을 사용하여 응용 프로그램으로 가져오기](importing-into-an-application-using-declspec-dllimport.md)
 
-- [__declspec (dllimport)을 사용하여 함수 호출 가져오기](../build/importing-function-calls-using-declspec-dllimport.md)
+- [__declspec (dllimport)을 사용하여 함수 호출 가져오기](importing-function-calls-using-declspec-dllimport.md)
 
-- [__declspec (dllimport)을 사용하여 데이터 가져오기](../build/importing-data-using-declspec-dllimport.md)
+- [__declspec (dllimport)을 사용하여 데이터 가져오기](importing-data-using-declspec-dllimport.md)
 
-- [DEF 파일을 사용하여 가져오기](../build/importing-using-def-files.md)
+- [DEF 파일을 사용하여 가져오기](importing-using-def-files.md)
 
 ## <a name="see-also"></a>참고자료
 
-[가져오기 및 내보내기](../build/importing-and-exporting.md)
+[가져오기 및 내보내기](importing-and-exporting.md)

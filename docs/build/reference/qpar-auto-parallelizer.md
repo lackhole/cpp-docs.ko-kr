@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration
 ms.assetid: 33ecf49d-c0d5-4f34-bce3-84ff03f38918
-ms.openlocfilehash: 8563382f9a95d9b7da49efdf1f12d517eae3da3d
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c1ddea73c5aa8d3e7e70b45834cb04154bf3b4bb
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416633"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57809563"
 ---
 # <a name="qpar-auto-parallelizer"></a>/Qpar(자동 평행화 도우미)
 
@@ -28,7 +28,7 @@ ms.locfileid: "57416633"
 
   `#pragma loop()` 지시문은 최적화 프로그램이 특정 루프를 평행화하는 데 사용할 수 있습니다. 자세한 내용은 [루프](../../preprocessor/loop.md)합니다.
 
-자동 병렬화에 대 한 출력 메시지를 사용 하는 방법에 대 한 정보를 참조 하세요 [/Qpar-report (자동 평행 화 도우미 보고 수준)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)합니다.
+자동 병렬화에 대 한 출력 메시지를 사용 하는 방법에 대 한 정보를 참조 하세요 [/Qpar-report (자동 평행 화 도우미 보고 수준)](qpar-report-auto-parallelizer-reporting-level.md)합니다.
 
 ### <a name="to-set-the-qpar-compiler-option-in-visual-studio"></a>Visual Studio에서 /Qpar 컴파일러 옵션을 설정하려면
 
@@ -45,9 +45,9 @@ ms.locfileid: "57416633"
 
 ## <a name="see-also"></a>참고자료
 
-[/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
-[/Qpar-report(자동 평행화 도우미 보고 수준)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
+[/Q 옵션(하위 수준 작업)](q-options-low-level-operations.md)<br/>
+[/Qpar-report(자동 평행화 도우미 보고 수준)](qpar-report-auto-parallelizer-reporting-level.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
 [#pragma loop()](../../preprocessor/loop.md)<br/>
 [네이티브 코드의 병렬 프로그래밍](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

@@ -5,12 +5,12 @@ ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 062052faf85b342629506a41c39b99a1b59502b9
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: b75a1903b3e0767f8aa009134a2b37a7d1a8e0d0
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809791"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57810473"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017의 Visual C++에 대한 새로운 기능
 
@@ -315,7 +315,7 @@ C++는 이제 Ctrl+Click **Go To Definition**을 지원하여 정의에 대한 �
 
 ## <a name="non-msbuild-projects-with-open-folder"></a>폴더 열기를 사용한 비 MSBuild 프로젝트에
 
-Visual Studio 2017에서는 솔루션 또는 프로젝트를 만들 필요 없이 소스 코드가 포함된 폴더에서 코딩, 빌드 및 디버그할 수 있는 **폴더 열기** 기능이 도입되었습니다. 이렇게 하면 프로젝트가 MSBuild 기반 프로젝트가 아닌 경우에도 Visual Studio를 훨씬 간단하게 시작할 수 있습니다. **폴더 열기**를 사용하면 Visual Studio에서 MSBuild 프로젝트에 이미 제공하는 강력한 코드 이해, 편집, 빌드 및 디버깅 기능에 액세스할 수 있습니다. 자세한 내용은 [Visual C++의 폴더 열기 프로젝트](ide/non-msbuild-projects.md)를 참조하세요.
+Visual Studio 2017에서는 솔루션 또는 프로젝트를 만들 필요 없이 소스 코드가 포함된 폴더에서 코딩, 빌드 및 디버그할 수 있는 **폴더 열기** 기능이 도입되었습니다. 이렇게 하면 프로젝트가 MSBuild 기반 프로젝트가 아닌 경우에도 Visual Studio를 훨씬 간단하게 시작할 수 있습니다. **폴더 열기**를 사용하면 Visual Studio에서 MSBuild 프로젝트에 이미 제공하는 강력한 코드 이해, 편집, 빌드 및 디버깅 기능에 액세스할 수 있습니다. 자세한 내용은 [C++용 폴더 열기 프로젝트](build/open-folder-projects-cpp.md)를 참조하세요.
 
 - 폴더 열기 환경이 개선되었습니다. 다음 json 파일을 통해 환경을 사용자 지정할 수 있습니다.
   - IntelliSense 및 검색 환경을 사용자 지정할 수 있는 CppProperties.json.
@@ -330,7 +330,7 @@ Visual Studio 2017에서는 솔루션 또는 프로젝트를 만들 필요 없�
 
 ## <a name="cmake-support-via-open-folder"></a>폴더 열기를 사용한 CMake 지원
 
-Visual Studio 2017에서는 MSBuild 프로젝트 파일(.vcxproj)로 변환하지 않고 CMake 프로젝트를 사용할 수 있는 지원이 도입되었습니다. 자세한 내용은 [Visual C++의 CMake 프로젝트](ide/cmake-tools-for-visual-cpp.md)를 참조하세요. **폴더 열기**로 CMake 프로젝트를 여는 경우 C++ 편집, 빌드, 디버깅 환경이 자동으로 구성됩니다.
+Visual Studio 2017에서는 MSBuild 프로젝트 파일(.vcxproj)로 변환하지 않고 CMake 프로젝트를 사용할 수 있는 지원이 도입되었습니다. 자세한 내용은 [Visual C++의 CMake 프로젝트](build/cmake-projects-in-visual-studio.md)를 참조하세요. **폴더 열기**로 CMake 프로젝트를 여는 경우 C++ 편집, 빌드, 디버깅 환경이 자동으로 구성됩니다.
 
 - C++ IntelliSense가 루트 폴더에 CppProperties.json 파일을 만들지 않아도 작동합니다. 이와 함께 CMake 파일과 CppProperties.json 파일에서 제공하는 구성을 서로 쉽게 전환할 수 있도록 새 드롭다운을 추가했습니다.
 
@@ -342,7 +342,7 @@ Visual Studio 2017에서는 MSBuild 프로젝트 파일(.vcxproj)로 변환하�
 
 **Visual Studio 2017 버전 15.5**: 기존 CMake 캐시 가져오기에 대한 지원이 추가되었습니다.
 
-**Visual Studio 2017 버전 15.7**: CMake 3.11, CMake 프로젝트의 코드 분석, 솔루션 탐색기의 대상 보기, 캐시 생성 옵션 및 단일 파일 컴파일에 대한 지원이 추가되었습니다. 자세한 내용은 [Visual Studio의 CMake 지원](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) 및 [Visual C++의 CMake 프로젝트](ide/cmake-tools-for-visual-cpp.md)를 참조하세요.
+**Visual Studio 2017 버전 15.7**: CMake 3.11, CMake 프로젝트의 코드 분석, 솔루션 탐색기의 대상 보기, 캐시 생성 옵션 및 단일 파일 컴파일에 대한 지원이 추가되었습니다. 자세한 내용은 [Visual Studio의 CMake 지원](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) 및 [Visual C++의 CMake 프로젝트](build/cmake-projects-in-visual-studio.md)를 참조하세요.
 
 ## <a name="windows-desktop-development-with-c"></a>C++를 사용한 Windows 데스크톱 개발
 

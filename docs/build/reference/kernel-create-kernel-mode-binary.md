@@ -5,12 +5,12 @@ f1_keywords:
 - /kernel
 - /kernel-
 ms.assetid: 6d7fdff0-c3d1-4b78-9367-4da588ce8b05
-ms.openlocfilehash: 33a0f4019d8ad278f5850c499ee552ee72279455
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: d065364cf6d3ae824098634c070f3651324aa52a
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414757"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816453"
 ---
 # <a name="kernel-create-kernel-mode-binary"></a>/kernel(커널 모드 이진 만들기)
 
@@ -46,7 +46,7 @@ Windows 커널에서 실행할 수 있는 이진 파일을 만듭니다.
 |RTTI|사용 안 함 모든 인스턴스를 `dynamic_cast` 하 고 `typeid` 키워드 하지 않으면 컴파일러 오류를 내보냅니다 `dynamic_cast` 정적으로 사용 됩니다.|
 |`new` 및 `delete`|명시적으로 정의 해야 합니다 `new()` 또는 `delete()` 연산자; 컴파일러도 아니고 런타임에서 default 정의 제공 합니다.|
 
-호출 규칙을 사용자 지정 된 [/GS](../../build/reference/gs-buffer-security-check.md) 빌드 옵션 및 모든 최적화가 사용 하는 경우 허용 됩니다 합니다 **/kernel** 옵션입니다. 인라인 처리 크게 영향을 받지 **/kernel**, 동일한 의미 체계는 컴파일러에서 적용 됩니다. 확인 하려는 경우는 `__forceinline` 인라인 한정자는 적용 해야 해당 경고, [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) 특정 알 수 있도록 설정할지 `__forceinline` 인라인 함수가 아닙니다.
+호출 규칙을 사용자 지정 된 [/GS](gs-buffer-security-check.md) 빌드 옵션 및 모든 최적화가 사용 하는 경우 허용 됩니다 합니다 **/kernel** 옵션입니다. 인라인 처리 크게 영향을 받지 **/kernel**, 동일한 의미 체계는 컴파일러에서 적용 됩니다. 확인 하려는 경우는 `__forceinline` 인라인 한정자는 적용 해야 해당 경고, [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) 특정 알 수 있도록 설정할지 `__forceinline` 인라인 함수가 아닙니다.
 
 컴파일러는 전달 하는 경우는 **/kernel** 스위치를 하는 미리 정의 라고 하는 전처리기 매크로 `_KERNEL_MODE` 이 고 값 **1**합니다. 이 조건에 따라 사용자 모드 또는 커널 모드 실행 환경 인지에 따라 코드를 컴파일하는 데 사용할 수 있습니다. 예를 들어, 다음 코드는 커널 모드 실행에 대해 컴파일할 때 클래스는 페이징할 메모리 세그먼트에 있어야 지정 합니다.
 
@@ -88,7 +88,7 @@ class NONPAGESECTION MyNonPagedClass
 
 ### <a name="to-set-the-kernel-compiler-option-in-visual-studio"></a>Visual Studio에서 /kernel 컴파일러 옵션을 설정 하려면
 
-1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **C/c + +** 폴더입니다.
 
@@ -98,5 +98,5 @@ class NONPAGESECTION MyNonPagedClass
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

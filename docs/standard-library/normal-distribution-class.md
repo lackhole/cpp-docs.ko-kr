@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-ms.openlocfilehash: e0df3359a27a216692f0127ab7f17e1e1fce469a
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: d0de31a20e06d9b8ff3789cc7ae1928c9a7b6b7d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519856"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743073"
 ---
 # <a name="normaldistribution-class"></a>normal_distribution 클래스
 
@@ -209,7 +209,7 @@ explicit normal_distribution(const param_type& parm);
 
 ### <a name="remarks"></a>설명
 
-**사전 조건:** `0.0 ≤ stddev`
+**사전 조건:** `0.0 < stddev`
 
 첫 번째 생성자는 저장된 `mean` 값이 *mean* 값을 보유하고 저장된 `stddev` 값이 *stddev* 값을 보유하고 있는 개체를 생성합니다.
 
@@ -244,7 +244,7 @@ struct param_type {
 
 ### <a name="remarks"></a>설명
 
-**사전 조건:** `0.0 ≤ stddev`
+**사전 조건:** `0.0 < stddev`
 
 이 구조를 인스턴스화 시에는 분포의 클래스 생성자로, 기존 분포의 저장된 매개 변수를 설정하기 위해서는 `param()` 멤버 함수로, 저장된 매개 변수 대신 사용하기 위해서는 `operator()`로 전달할 수 있습니다.
 

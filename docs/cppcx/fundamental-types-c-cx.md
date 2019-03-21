@@ -2,12 +2,12 @@
 title: 기본 형식(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: c9f82907-25f2-440b-91d6-afb8dbd46ea6
-ms.openlocfilehash: a6c068d58f0d7c173bff34726873b7a0f4f1d74c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2bd5be01b868fd3086c2064edfd4ca343db425be
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529131"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752365"
 ---
 # <a name="fundamental-types-ccx"></a>기본 형식(C++/CX)
 
@@ -54,6 +54,6 @@ ms.locfileid: "50529131"
 |UIntPtr|내부 전용입니다. 포인터로 사용되는 부호 없는 64비트 값입니다.|
 |IntPtr|내부 전용입니다.  포인터로 사용되는 부호 있는 64비트 값입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)

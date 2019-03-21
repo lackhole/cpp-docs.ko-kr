@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details::HeapEntryHandler Delegate
 ms.assetid: 97ba4e47-ac0f-47c6-a93c-67a21c0a16d3
-ms.openlocfilehash: 81dbec3d6e0bcc80b8104ddfc18fd37e7a95a76e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e7acdef091511982a2117f15cff1042037d7b2ac
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630388"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743500"
 ---
 # <a name="platformdetailsheapentryhandler-delegate"></a>Platform::Details::HeapEntryHandler 대리자
 
@@ -28,7 +28,7 @@ delegate HeapEntryHandler;
 
 이 클래스는 브라우저에서 감사될 수 있으므로 보완용으로만 제공됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Platform`
 
@@ -38,6 +38,6 @@ delegate HeapEntryHandler;
 
 **네임스페이스:** Platform::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

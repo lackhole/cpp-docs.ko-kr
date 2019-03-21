@@ -10,12 +10,12 @@ helpviewer_keywords:
 - delayimp.h
 - helper functions
 ms.assetid: 6279c12c-d908-4967-b0b3-cabfc3e91d3d
-ms.openlocfilehash: 955ae0ed8feac22da19eb13218e2332849477e29
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3ad193d0101507f43145c6af9f8e6200ab6fcdb5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57421383"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817997"
 ---
 # <a name="understanding-the-helper-function"></a>도우미 함수 이해
 
@@ -53,16 +53,16 @@ DLL 또는 가져오기의 이름에 따라 특정 처리를 수행 하려는 �
 
 다음 항목은 도우미 함수를 설명 합니다.
 
-- [Visual C++ 6.0 이후 DLL 지연 로드 도우미 함수의 변경 내용](../../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md)
+- [Visual C++ 6.0 이후 DLL 지연 로드 도우미 함수의 변경 내용](changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md)
 
-- [호출 규칙, 매개 변수, 반환 형식](../../build/reference/calling-conventions-parameters-and-return-type.md)
+- [호출 규칙, 매개 변수, 반환 형식](calling-conventions-parameters-and-return-type.md)
 
-- [구조체 및 상수 정의](../../build/reference/structure-and-constant-definitions.md)
+- [구조체 및 상수 정의](structure-and-constant-definitions.md)
 
-- [필요한 값 계산](../../build/reference/calculating-necessary-values.md)
+- [필요한 값 계산](calculating-necessary-values.md)
 
-- [지연 로드된 DLL 언로드](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md)
+- [지연 로드된 DLL 언로드](explicitly-unloading-a-delay-loaded-dll.md)
 
 ## <a name="see-also"></a>참고자료
 
-[링커의 지연 로드된 DLL 지원](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[링커의 지연 로드된 DLL 지원](linker-support-for-delay-loaded-dlls.md)

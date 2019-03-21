@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - robustness [CRT]
 ms.assetid: 7f1a87f8-eff9-4b76-ae9b-d133d3de6adf
-ms.openlocfilehash: 9244ba430efab01cd82b8ad773ad669470d67cff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c70c9a2bf0b95063fa3f679ca6c3053d2a4f2df5
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454706"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744579"
 ---
 # <a name="robustness"></a>견고성
 
@@ -19,7 +19,7 @@ ms.locfileid: "50454706"
 
 ## <a name="run-time-robustness-functions"></a>런타임 견고성 함수
 
-|함수|사용|
+|함수|기능|
 |--------------|---------|
 |[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|**new** 연산자에서 메모리 할당에 실패하는 경우 오류 처리 메커니즘에 제어를 전달합니다.|
 |[_set_se_translator](../c-runtime-library/reference/set-se-translator.md)|Win32 예외(C 구조적 예외)를 C++ 형식 예외로 처리합니다.|

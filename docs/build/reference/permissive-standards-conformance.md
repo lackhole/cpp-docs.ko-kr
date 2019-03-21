@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Standards conformance compiler options
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 85439598ae4c3e0f9ef923f21e701e0399aefa70
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5590996c7598016365bb122977084835830f95ab
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619299"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820795"
 ---
 # <a name="permissive--standards-conformance"></a>/ permissive-(표준 준수)
 
@@ -29,21 +29,21 @@ ms.locfileid: "50619299"
 
 이 옵션은 Visual Studio 2017 이상에 지원 됩니다.
 
-사용할 수는 **/ permissive-** 표준 준수 컴파일러 동작을 지정 하는 컴파일러 옵션입니다. 이 옵션 관대 한 동작을 사용 하지 않도록 설정 하 고 설정 합니다 [/Zc](../../build/reference/zc-conformance.md) 엄격한 규칙에 대 한 컴파일러 옵션입니다. 이 옵션에는 IDE에서 IntelliSense 엔진 밑줄 비준수 코드를 또한 수 있습니다.
+사용할 수는 **/ permissive-** 표준 준수 컴파일러 동작을 지정 하는 컴파일러 옵션입니다. 이 옵션 관대 한 동작을 사용 하지 않도록 설정 하 고 설정 합니다 [/Zc](zc-conformance.md) 엄격한 규칙에 대 한 컴파일러 옵션입니다. 이 옵션에는 IDE에서 IntelliSense 엔진 밑줄 비준수 코드를 또한 수 있습니다.
 
 기본적으로 **/ permissive-** 옵션은 Visual Studio 2017 버전 15.5 이상 버전에서 만든 새로운 프로젝트에서 설정 합니다. 이전 버전에서 기본적으로 설정 되지 않았습니다. 이 옵션이 설정 되어, 컴파일러 진단 오류를 생성 합니다. 또는 경고를 생성 하는 비표준 언어 경우 코드에서 발견 되 면, 몇 가지 일반적인 버그를 포함 하 여 사전에서-C + + 11 코드입니다.
 
 합니다 **/ permissive-** 옵션은 소프트웨어 개발 키트 (SDK) 또는 Windows Driver Kit (WDK), Windows Fall Creators SDK (10.0.16299.0)부터 같은 최신 Windows 키트, 헤더 파일의 거의 모든 호환입니다. 이전 버전의 SDK에서 컴파일하는 데 실패할 수 있습니다 **/ permissive-** 다양 한 소스 코드 표준을 따르도록 합니다. 컴파일러 및 다른 릴리스 타임 라인의 Sdk 출시 하므로 몇 가지 나머지 문제가 있습니다. 특정 헤더 파일 문제를 참조 하세요 [Windows 헤더 문제](#windows-header-issues) 아래.
 
-**생성-** 옵션 집합을 [/zc: strictstrings](../../build/reference/zc-conformance.md) 및 [/zc: rvaluecast](../../build/reference/zc-conformance.md) 옵션 준수 동작을 합니다. 비준수 동작 기본값이 됩니다. 특정 전달할 수 있습니다 **/Zc** 한 후 옵션 **/ permissive-** 이 동작을 재정의 하려면 명령줄에서.
+**생성-** 옵션 집합을 [/zc: strictstrings](zc-conformance.md) 및 [/zc: rvaluecast](zc-conformance.md) 옵션 준수 동작을 합니다. 비준수 동작 기본값이 됩니다. 특정 전달할 수 있습니다 **/Zc** 한 후 옵션 **/ permissive-** 이 동작을 재정의 하려면 명령줄에서.
 
-버전의 Visual Studio 2017 버전 15.3에서에서 컴파일러 시작 합니다 **생성-** 옵션 집합을 [/zc: ternary](../../build/reference/zc-ternary.md) 옵션입니다. 또한 컴파일러에서는 2 단계 이름 조회에 대 한 요구 사항을 자세히 구현합니다. 경우는 **관대 한 /-** 옵션을 설정 하면 컴파일러는 템플릿에 사용 되는 종속 및 종속 되지 않는 이름을 식별 함수 및 클래스 템플릿 정의 구문 분석 합니다. 이 릴리스에서 이름 종속성 분석만 수행 됩니다.
+버전의 Visual Studio 2017 버전 15.3에서에서 컴파일러 시작 합니다 **생성-** 옵션 집합을 [/zc: ternary](zc-ternary.md) 옵션입니다. 또한 컴파일러에서는 2 단계 이름 조회에 대 한 요구 사항을 자세히 구현합니다. 경우는 **관대 한 /-** 옵션을 설정 하면 컴파일러는 템플릿에 사용 되는 종속 및 종속 되지 않는 이름을 식별 함수 및 클래스 템플릿 정의 구문 분석 합니다. 이 릴리스에서 이름 종속성 분석만 수행 됩니다.
 
 환경별 확장 및 구현에 따라 남겨 두고 표준 언어 영역 받지 **/ permissive-** 합니다. 예를 들어 Microsoft 전용 `__declspec`, 호출 규칙 및 구조적된 예외 처리 키워드 및 컴파일러 별 pragma 지시문 또는 특성의 컴파일러로 플래그가 지정 되지 않습니다 **/ permissive-** 모드입니다.
 
-**/ permissive-** 옵션은 어떤 언어 구문이 됩니다 비준수를 확인 하려면 현재 컴파일러 버전의 규칙 지원을 사용 합니다. 옵션 c + + 표준의 특정 버전으로 코드를 준수 하는지 확인 하지 않습니다. 최신 초안 표준에 대 한 모든 구현 된 컴파일러 지원을 사용 하려면 사용 합니다 [/std:latest](../../build/reference/std-specify-language-standard-version.md) 옵션입니다. 현재 구현 된 c++17 표준에 컴파일러 지원을 제한 하려면 합니다 [/std: c + + 17](../../build/reference/std-specify-language-standard-version.md) 옵션입니다. 제한 된 c++14 표준와 비슷하도록 컴파일러 지원을 사용 합니다 [/std: c + + 14](../../build/reference/std-specify-language-standard-version.md) 옵션을 기본값인 합니다.
+**/ permissive-** 옵션은 어떤 언어 구문이 됩니다 비준수를 확인 하려면 현재 컴파일러 버전의 규칙 지원을 사용 합니다. 옵션 c + + 표준의 특정 버전으로 코드를 준수 하는지 확인 하지 않습니다. 최신 초안 표준에 대 한 모든 구현 된 컴파일러 지원을 사용 하려면 사용 합니다 [/std:latest](std-specify-language-standard-version.md) 옵션입니다. 현재 구현 된 c++17 표준에 컴파일러 지원을 제한 하려면 합니다 [/std: c + + 17](std-specify-language-standard-version.md) 옵션입니다. 제한 된 c++14 표준와 비슷하도록 컴파일러 지원을 사용 합니다 [/std: c + + 14](std-specify-language-standard-version.md) 옵션을 기본값인 합니다.
 
-모든 c++11, c++14 또는 C + + 17 표준을 준수 하지 코드는 Visual Studio 2017에서 Visual c + + 컴파일러에서 지원 됩니다. Visual Studio의 버전에 따라 합니다 **/ permissive-** 옵션에는 2 단계 이름 조회의 일부 측면에 대 한, 비 const 참조를 임시 바인딩, 직접 초기화로 복사 초기화를 처리 하는 방법, 허용 문제를 검색할 수 없는 경우 여러 개의 사용자 정의 변환을 초기화 또는 대체 토큰에서 논리 연산자에 대 한 및 기타 지원 되지 않는 규칙 영역입니다. Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstandard Behavior](../../cpp/nonstandard-behavior.md)을 참조하세요. 최대한 활용 가져오려고 **관대 한 /-**, Visual Studio 최신 버전으로 업데이트 합니다.
+모든 c++11, c++14 또는 C + + 17 표준을 준수 하지 코드는 Visual Studio 2017의 MSVC 컴파일러에 의해 지원 됩니다. Visual Studio의 버전에 따라 합니다 **/ permissive-** 옵션에는 2 단계 이름 조회의 일부 측면에 대 한, 비 const 참조를 임시 바인딩, 직접 초기화로 복사 초기화를 처리 하는 방법, 허용 문제를 검색할 수 없는 경우 여러 개의 사용자 정의 변환을 초기화 또는 대체 토큰에서 논리 연산자에 대 한 및 기타 지원 되지 않는 규칙 영역입니다. Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstandard Behavior](../../cpp/nonstandard-behavior.md)을 참조하세요. 최대한 활용 가져오려고 **관대 한 /-**, Visual Studio 최신 버전으로 업데이트 합니다.
 
 ### <a name="how-to-fix-your-code"></a>코드를 수정 하는 방법
 
@@ -425,7 +425,7 @@ int main()
    typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
    ```
 
-   범위가 지정 되지 않은 열거형의 정방향 선언은 Microsoft 확장입니다. 이 문제를 해결 하기 위해 컴파일 없이 cellularapi_oem.h를 포함 하는 파일을 **생성-** 옵션을 사용 하거나 사용 하 여를 [/wd](../../build/reference/compiler-option-warning-level.md) C4471 경고를 억제 하는 옵션입니다.
+   범위가 지정 되지 않은 열거형의 정방향 선언은 Microsoft 확장입니다. 이 문제를 해결 하기 위해 컴파일 없이 cellularapi_oem.h를 포함 하는 파일을 **생성-** 옵션을 사용 하거나 사용 하 여를 [/wd](compiler-option-warning-level.md) C4471 경고를 억제 하는 옵션입니다.
 
 - Um/omscript.h에서 문제 발생
 
@@ -464,5 +464,5 @@ Visual Studio 2017 버전 15.5 이전 버전에서는이 절차를 따르십시�
 
 ## <a name="see-also"></a>참고자료
 
-- [컴파일러 옵션](../../build/reference/compiler-options.md)
-- [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+- [MSVC 컴파일러 옵션](compiler-options.md)
+- [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

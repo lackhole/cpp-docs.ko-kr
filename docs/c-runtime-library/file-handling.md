@@ -8,12 +8,12 @@ helpviewer_keywords:
 - files [C++], opening
 - files [C++], manipulating
 ms.assetid: 48119e2e-e94f-4602-b08b-b72440f731d8
-ms.openlocfilehash: 085fc03677b4353aeb515a2f25dd0734935be442
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9bbd64b27a760969635d70ae7689d09afed2d729
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511880"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740421"
 ---
 # <a name="file-handling"></a>파일 처리
 
@@ -25,7 +25,7 @@ C 런타임 라이브러리에서는 한 번에 열 수 있는 파일의 수가 
 
 다음 루틴은 파일 설명자에 지정된 파일에서 작동합니다.
 
-|루틴에서 반환된 값|사용|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[_chsize](../c-runtime-library/reference/chsize.md),[_chsize_s](../c-runtime-library/reference/chsize-s.md)|파일 크기 변경|
 |[_filelength, _filelengthi64](../c-runtime-library/reference/filelength-filelengthi64.md)|파일 길이 가져오기|
@@ -40,7 +40,7 @@ C 런타임 라이브러리에서는 한 번에 열 수 있는 파일의 수가 
 
 다음 루틴은 경로 또는 파일 이름으로 지정된 파일에서 작동합니다.
 
-|루틴에서 반환된 값|사용|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[_access, _waccess](../c-runtime-library/reference/access-waccess.md), [_access_s, _waccess_s](../c-runtime-library/reference/access-s-waccess-s.md)|파일 권한 설정 확인|
 |[_chmod, _wchmod](../c-runtime-library/reference/chmod-wchmod.md)|파일 사용 권한 설정 변경|
@@ -58,7 +58,7 @@ C 런타임 라이브러리에서는 한 번에 열 수 있는 파일의 수가 
 
 다음 루틴은 파일을 엽니다.
 
-|루틴에서 반환된 값|사용|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md)|파일을 열고 열린 파일에 대한 포인터를 반환합니다.|
 |[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)|파일 공유로 스트림을 열고 열린 파일에 대한 포인터를 반환합니다.|
@@ -69,7 +69,7 @@ C 런타임 라이브러리에서는 한 번에 열 수 있는 파일의 수가 
 
 다음 루틴은 `FILE` 구조체, 파일 설명자 및 Win32 파일 핸들 사이에서 파일의 표현을 변경하는 방법을 제공합니다.
 
-|루틴에서 반환된 값|사용|
+|루틴에서 반환된 값|기능|
 |-------------|---------|
 |[_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)|하위 수준 I/O를 위해 이전에 연 파일에 스트림을 연결하고 열린 스트림에 대한 포인터를 반환합니다.|
 |[_fileno](../c-runtime-library/reference/fileno.md)|스트림에 연결된 파일 설명자를 가져옵니다.|

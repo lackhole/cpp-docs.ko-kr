@@ -12,12 +12,12 @@ helpviewer_keywords:
 - /NOENTRY linker option [C++]
 - DLLs [C++], creating
 ms.assetid: 0214dd41-35ad-43ab-b892-e636e038621a
-ms.openlocfilehash: 28a9e09c4a78623c2cda2f8802ba4e1c1435d093
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c750fd94e21eec39a25acf216a452faaa277bf7c
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423745"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57811454"
 ---
 # <a name="noentry-no-entry-point"></a>/NOENTRY(진입점 없음)
 
@@ -27,13 +27,13 @@ ms.locfileid: "57423745"
 
 ## <a name="remarks"></a>설명
 
-실행 코드가 없는 리소스 전용 DLL을 만들려면 /NOENTRY 옵션을 지정해야 합니다. 자세한 내용은 [Resource-Only DLL 만들기](../../build/creating-a-resource-only-dll.md)합니다.
+실행 코드가 없는 리소스 전용 DLL을 만들려면 /NOENTRY 옵션을 지정해야 합니다. 자세한 내용은 [Resource-Only DLL 만들기](../creating-a-resource-only-dll.md)합니다.
 
 이 옵션을 사용하면 LINK가 `_main`에 대한 참조를 DLL로 링크하는 것을 방지할 수 있습니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **링커** 폴더입니다.
 
@@ -47,6 +47,6 @@ ms.locfileid: "57423745"
 
 ## <a name="see-also"></a>참고자료
 
-[리소스 전용 DLL 만들기](../../build/creating-a-resource-only-dll.md)<br/>
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[리소스 전용 DLL 만들기](../creating-a-resource-only-dll.md)<br/>
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

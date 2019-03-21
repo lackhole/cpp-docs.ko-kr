@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /CLRHEADER dumpbin option
 - CLRHEADER dumpbin option
 ms.assetid: cf73424f-4541-47e2-b94e-69b95266ef2a
-ms.openlocfilehash: e35cf79cdaa10c9632e1c588e2b49f45cfbef283
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 6a1240e2d3ad2ac3a454c610a6f49d07e50951e5
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330855"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57820704"
 ---
 # <a name="clrheader"></a>/CLRHEADER
 
@@ -21,18 +21,18 @@ CLR 관련 정보를 표시 합니다.
 
 ## <a name="syntax"></a>구문
 
-> /CLRHEADER *파일*
+> /CLRHEADER *file*
 
 ### <a name="arguments"></a>인수
 
 *file*<br/>
-이미지 파일을 사용 하 여 빌드한 [/clr](../../build/reference/clr-common-language-runtime-compilation.md)합니다.
+이미지 파일을 사용 하 여 빌드한 [/clr](clr-common-language-runtime-compilation.md)합니다.
 
 ## <a name="remarks"></a>설명
 
 **/CLRHEADER** 모든 관리 되는 프로그램에서 사용할.NET 헤더에 대 한 정보를 표시 합니다. 출력 (바이트).NET 헤더 및 헤더 섹션의 크기와 위치를 보여 줍니다.
 
-만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션을 사용 하 여 생성 된 파일에 사용할 수 있습니다 합니다 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.
+[/HEADERS](headers.md) DUMPBIN 옵션은 [/GL](gl-whole-program-optimization.md) 컴파일러 옵션으로 만든 파일에만 사용할 수 있습니다.
 
 때 **/CLRHEADER** 는 /clr을 사용 하 여 컴파일된 파일에 있을 것을 **clr 헤더:** dumpbin 출력에는 섹션입니다. 변수의 **플래그** /clr 옵션을 사용 되었음을 나타냅니다.
 
@@ -44,4 +44,4 @@ CLR 관련 정보를 표시 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-- [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)
+- [DUMPBIN 옵션](dumpbin-options.md)

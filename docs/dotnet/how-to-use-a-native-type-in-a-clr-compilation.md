@@ -1,19 +1,19 @@
 ---
-title: 방법:-clr 컴파일에 네이티브 형식 사용
+title: '방법: -Clr 컴파일에 네이티브 형식 사용'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - compilation, native types in /clr
 - /clr compiler option [C++], using native types
 ms.assetid: 3a505c90-4adb-4942-9cf9-7d1fdcbc01e7
-ms.openlocfilehash: 0079be21b474858684e1abaaeb363820764a701d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9979113ac4ffc062ddfe8654279af03036984f38
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459957"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746034"
 ---
-# <a name="how-to-use-a-native-type-in-a-clr-compilation"></a>방법: /clr 컴파일에 네이티브 형식 사용
+# <a name="how-to-use-a-native-type-in-a-clr-compilation"></a>방법: /Clr 컴파일에 네이티브 형식 사용
 
 네이티브 형식을 정의할 수 있습니다는 **/clr** 컴파일 및 어셈블리 내에서 해당 네이티브 형식을 사용 하 여 모든 유효 합니다. 그러나 네이티브 형식을 참조 된 메타 데이터에서 사용 하기 위해 제공 됩니다.
 
@@ -61,6 +61,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

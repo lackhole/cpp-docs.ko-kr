@@ -2,12 +2,12 @@
 title: /Qpar-report(자동 병렬화 도우미 보고 수준)
 ms.date: 11/04/2016
 ms.assetid: 562673b9-02da-4bf8-bb64-70bc25ef4651
-ms.openlocfilehash: 4ab14f890d888664b2847f3e3d4b193d7c77da1a
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 25732900fa201258331dcb8eee96af9ba97a6def
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57419909"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57818390"
 ---
 # <a name="qpar-report-auto-parallelizer-reporting-level"></a>/Qpar-report(자동 병렬화 도우미 보고 수준)
 
@@ -44,7 +44,7 @@ ms.locfileid: "57419909"
 
 ## <a name="see-also"></a>참고자료
 
-[/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
+[/Q 옵션(하위 수준 작업)](q-options-low-level-operations.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>
 [네이티브 코드의 병렬 프로그래밍](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

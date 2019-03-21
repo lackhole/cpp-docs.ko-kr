@@ -2,12 +2,12 @@
 title: default 네임스페이스
 ms.date: 12/30/2016
 ms.assetid: 4712e9dc-57ba-43cc-811e-022e1dae4de8
-ms.openlocfilehash: ffea9e1132b4c66f38661392cbafb94635b318e1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60a47c9549ee40b419eb5f4aa84720f8dcd1c366
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558723"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739197"
 ---
 # <a name="default-namespace"></a>default 네임스페이스
 
@@ -50,6 +50,6 @@ namespace default;
 
 **헤더:** vccorlib.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)

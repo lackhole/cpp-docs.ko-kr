@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - Platform::WeakReference
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
-ms.openlocfilehash: 706877843602861d0dcf7f04a18999f30d3b77de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cadafcc227347bc2f55c8600ae63a5c0996aefae
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500442"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742089"
 ---
 # <a name="platformweakreference-class"></a>Platform::WeakReference 클래스
 
@@ -30,7 +30,7 @@ class WeakReference
 
 |멤버|설명|
 |------------|-----------------|
-|[Weakreference:: Weakreference](#ctor)|WeakReference 클래스의 새 인스턴스를 초기화합니다.|
+|[WeakReference::WeakReference](#ctor)|WeakReference 클래스의 새 인스턴스를 초기화합니다.|
 
 ### <a name="methods"></a>메서드
 
@@ -49,7 +49,7 @@ class WeakReference
 
 WeakReference 클래스 자체는 ref 클래스가 아니므로 Platform::Object^에서 상속하지 않으며 public 메서드의 시그니처에 사용될 수 없습니다.
 
-## <a name="operator-assign"></a> WeakReference::operator =
+## <a name="operator-assign"></a> WeakReference::operator=
 
 WeakReference에 값을 할당합니다.
 
@@ -130,6 +130,6 @@ WeakReference wr(mc);
 MyClass^ copy2 = wr.Resolve<MyClass>();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

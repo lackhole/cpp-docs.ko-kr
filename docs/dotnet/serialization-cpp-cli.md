@@ -9,12 +9,12 @@ helpviewer_keywords:
 - .NET Framework [C++], serialization
 - serialization [C++], about serialization
 ms.assetid: 869010ca-74e1-4989-b409-4643cdb94084
-ms.openlocfilehash: 74810328d654787be46794a31d857eb3fd0731ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 794a71ae9a146b691ba6a4377a7fdf2c3ddd3501
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478145"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741395"
 ---
 # <a name="serialization-ccli"></a>Serialization(C++/CLI)
 
@@ -51,6 +51,6 @@ private:
 
 두 특성 모두 해당 "짧은 이름"을 사용 하 여 참조할 수 있는지 확인 (**Serializable** 하 고 **NonSerialized**). 이에 설명 된 [Applying Attributes](/dotnet/standard/attributes/applying-attributes)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

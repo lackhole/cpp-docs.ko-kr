@@ -20,12 +20,12 @@ helpviewer_keywords:
 - lock function
 - _lock function
 ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
-ms.openlocfilehash: c2e57af90bb9b7c6a4ba0e9efdd1dc1dc0bdb985
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d29488c6dec15fb58eef24f50c1bfafefb8e85c6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606897"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741152"
 ---
 # <a name="lock"></a>_lock
 
@@ -47,7 +47,7 @@ void __cdecl _lock
 *locknum*<br/>
 [in] 가져올 잠금의 식별자입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 잠금을 이미 가져온 경우 이 메서드는 잠금을 가져오고 내부 CRT(C 런타임) 오류를 발생시킵니다. 이 메서드가 잠금을 가져올 수 없는 경우 오류가 발생한 상태로 종료되고 오류 코드가 `_RT_LOCK`으로 설정됩니다.
 

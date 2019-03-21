@@ -2,16 +2,16 @@
 title: ARM 예외 처리
 ms.date: 07/11/2018
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
-ms.openlocfilehash: f6df8afd453f7e71d1ecc2ebb188c079a3aad02a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: cbbec3f40df2765fa76399ce667ae30f4533b018
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694350"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814542"
 ---
 # <a name="arm-exception-handling"></a>ARM 예외 처리
 
-Windows on ARM은 하드웨어에서 생성하는 비동기식 예외 및 소프트웨어에서 생성하는 동기식 예외에 대해 동일한 구조적 예외 처리 메커니즘을 사용합니다. 언어별 예외 처리기가 언어 도우미 함수를 사용하여 Windows의 구조적 예외 처리를 기반으로 작성됩니다. 이 문서에서는 ARM, Microsoft ARM 어셈블러 및 Visual c + + 컴파일러에서 생성 되는 코드에서 사용 하는 언어 도우미에는 Windows에서의 예외 처리를 설명 합니다.
+Windows on ARM은 하드웨어에서 생성하는 비동기식 예외 및 소프트웨어에서 생성하는 동기식 예외에 대해 동일한 구조적 예외 처리 메커니즘을 사용합니다. 언어별 예외 처리기가 언어 도우미 함수를 사용하여 Windows의 구조적 예외 처리를 기반으로 작성됩니다. 이 문서에서는 ARM, Microsoft ARM 어셈블러 및 MSVC 컴파일러에서 생성 되는 코드에서 사용 하는 언어 도우미에는 Windows에서의 예외 처리를 설명 합니다.
 
 ## <a name="arm-exception-handling"></a>ARM 예외 처리
 
@@ -104,7 +104,7 @@ ARM의 모든 .pdata 레코드 길이는 8바이트입니다. 일반적인 레�
 
 |명령|Opcode가 있는 것으로 간주하는 경우|크기|Opcode|해제 코드|
 |-----------------|-----------------------------------|----------|------------|------------------|
-|1|*H*= = 1|16|`push {r0-r3}`|04|
+|1|*H*==1|16|`push {r0-r3}`|04|
 |2|*C*= = 1 또는 *L*= = 1 또는 *R*= = 0 또는 PF = = 1|16/32|`push {registers}`|80-BF/D0-DF/EC-ED|
 |3a|*C*= = 1 및 (*L*= = 0 및 *R*= = 1 및 PF = = 0)|16|`mov r11,sp`|C0-CF/FB|
 |3b|*C*= = 1 및 (*L*= = 1 또는 *R*= = 0 또는 PF = = 1)|32|`add r11,sp,#xx`|FC|
@@ -147,8 +147,8 @@ ARM의 모든 .pdata 레코드 길이는 8바이트입니다. 일반적인 레�
 |8|*C*= = 1 또는 (*L*= = 1 및 *H*= = 0) 또는 *R*= = 0 또는 *EF*= = 1|16/32|`pop   {registers}`|
 |9a|*H*= = 1 및 *L*= = 0|16|`add   sp,sp,#0x10`|
 |9b|*H*= = 1 및 *L*= = 1|32|`ldr   pc,[sp],#0x14`|
-|10a|*Ret*= = 1|16|`bx    reg`|
-|10b|*Ret*= = 2|32|`b     address`|
+|10a|*Ret*==1|16|`bx    reg`|
+|10b|*Ret*==2|32|`b     address`|
 
 접히지 않은 조정을 지정하는 경우에는 명령 6이 명시적 스택 조정이 됩니다. 때문에 *PF* 무관 *EF*, 명령 하나만 6, 5 또는 그 반대로 할 수 있습니다.
 
@@ -444,7 +444,7 @@ Epilogue:
 
    - *조정 스택* = 0 (스택 조정이 없음을 나타냄)
 
-### <a name="example-2-nested-function-with-local-allocation"></a>예제 2: 로컬 할당이 포함된 중첩 함수
+### <a name="example-2-nested-function-with-local-allocation"></a>예제 2: 로컬 할당을 사용 하 여 중첩 된 함수
 
 ```asm
 Prologue:
@@ -479,7 +479,7 @@ Epilogue:
 
    - *스택 조정* = 3 (0x0C/4 =)
 
-### <a name="example-3-nested-variadic-function"></a>예제 3: 중첩 variadic 함수
+### <a name="example-3-nested-variadic-function"></a>예제 3: 중첩된 Variadic 함수
 
 ```asm
 Prologue:
@@ -514,7 +514,7 @@ Epilogue:
 
    - *조정 스택* = 0 (스택 조정이 없음을 나타냄)
 
-### <a name="example-4-function-with-multiple-epilogues"></a>예제 4: 여러 에필로그가 포함된 함수
+### <a name="example-4-function-with-multiple-epilogues"></a>예제 4: 여러 에필로그를 사용 하 여 함수
 
 ```asm
 Prologue:
@@ -576,7 +576,7 @@ Epilogues:
 
    - 해제 코드 2 = 0xFF: end
 
-### <a name="example-5-function-with-dynamic-stack-and-inner-epilogue"></a>예제 5: 동적 스택과 내부 에필로그가 포함된 함수
+### <a name="example-5-function-with-dynamic-stack-and-inner-epilogue"></a>예제 5: 동적 스택과 내부 에필로그를 사용 하 여 함수
 
 ```asm
 Prologue:
@@ -626,7 +626,7 @@ Epilogue:
 
    - *코드 단어* 0x01, 해제 코드의 32 비트 단어 하나를 나타내는 =
 
-- 단어 1: 해제 코드 인덱스 0x00에서 시작되며 조건이 0x0E(항상)인 오프셋 0xC6(= 0x18C/2)의 에필로그 범위
+- 단어 1: 에필로그 범위 오프셋 0xC6 (= 0x18c/2)), 0x0E (항상)의 조건을 사용 하 여 해제 코드 인덱스 0x00에서 시작
 
 - 단어 2에서 시작되는 해제 코드(프롤로그/에필로그 간에 공유됨):
 
@@ -638,7 +638,7 @@ Epilogue:
 
    - 해제 코드 3 = 0xFD: end(에필로그의 16비트 명령으로 계산됨)
 
-### <a name="example-6-function-with-exception-handler"></a>예제 6: 예외 처리기가 있는 함수
+### <a name="example-6-function-with-exception-handler"></a>예제 6: 예외 처리기를 사용 하 여 함수
 
 ```asm
 Prologue:
@@ -739,5 +739,5 @@ Function:
 
 ## <a name="see-also"></a>참고자료
 
-[ARM ABI 규칙 개요](../build/overview-of-arm-abi-conventions.md)<br/>
-[일반적인 Visual C++ ARM 마이그레이션 문제](../build/common-visual-cpp-arm-migration-issues.md)
+[ARM ABI 규칙 개요](overview-of-arm-abi-conventions.md)<br/>
+[일반적인 Visual C++ ARM 마이그레이션 문제](common-visual-cpp-arm-migration-issues.md)

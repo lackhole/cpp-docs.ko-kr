@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MAX_ENV constant
 - _MAX_ENV constant
 ms.assetid: 5224f540-231c-47aa-be9a-467efd1db281
-ms.openlocfilehash: 49da6e50649905257b126c0c4d5f6746d3f330a2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 789d4e27de5b21a76bfd6155ec7f49135a21593a
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587631"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57739228"
 ---
 # <a name="environmental-constants"></a>환경 상수
 
@@ -20,7 +20,7 @@ ms.locfileid: "50587631"
 #include <stdlib.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 상수는 문자열에 대한 환경 길이를 정의합니다.
 

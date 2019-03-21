@@ -9,12 +9,12 @@ helpviewer_keywords:
 - containers [MFC], creating
 - OLE controls [MFC], containers
 ms.assetid: ec70e137-7c14-4940-bd0e-fd4edcc63ea5
-ms.openlocfilehash: f0d5fe419375535ab8c52378b9005df88634e99a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 759f118b6796dbf53ceaa898902a50d87466abeb
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275898"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814121"
 ---
 # <a name="creating-an-mfc-activex-control-container"></a>MFC ActiveX 컨트롤 컨테이너 만들기
 
@@ -39,4 +39,5 @@ MFC 프로그램 사용 하 여 컨테이너를 만드는 합니다 [MFC 응용 
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)
+[Visual C++ 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)
+

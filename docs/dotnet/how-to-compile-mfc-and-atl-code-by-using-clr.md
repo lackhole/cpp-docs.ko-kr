@@ -1,5 +1,5 @@
 ---
-title: 방법:-clr을 사용 하 여 MFC 및 ATL 코드 컴파일
+title: '방법: -Clr을 사용 하 여 MFC 및 ATL 코드 컴파일'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - interop [C++], /clr compiler option
 - extension DLLs [C++], /clr compiler option
 ms.assetid: 12464bec-33a4-482c-880a-c078de7f6ea5
-ms.openlocfilehash: e5e9f800d6316e3b4f1209ec62440ae42233fc13
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a24e82787eb0fce8ff668843e73de9f2d05e1ad
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638076"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751611"
 ---
-# <a name="how-to-compile-mfc-and-atl-code-by-using-clr"></a>방법: /clr을 사용하여 MFC 및 ATL 코드 컴파일
+# <a name="how-to-compile-mfc-and-atl-code-by-using-clr"></a>방법: MFC 및 ATL 코드 사용 하 여 /clr 컴파일
 
 이 항목에서는 공용 언어 런타임을 대상으로 기존 MFC 및 ATL 프로그램을 컴파일하는 방법을 설명 합니다.
 
@@ -78,6 +78,6 @@ ms.locfileid: "50638076"
 
 1. DllMain과 포함 된 파일에 대 한 호출에서 **솔루션 탐색기**파일을 마우스 오른쪽 단추로 클릭 한 다음 클릭 **속성**합니다. 아래 **구성 속성**, 노드 옆에 확장 **C/c + +** 선택한 **일반**합니다. 오른쪽 창에서 아래 **프로젝트 기본값**설정 **공용 언어 런타임 지원을 사용 하 여 컴파일** 하 **공용 언어 런타임 지원 안 함**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [혼합형(네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md)

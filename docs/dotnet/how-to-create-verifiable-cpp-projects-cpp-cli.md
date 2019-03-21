@@ -1,17 +1,17 @@
 ---
-title: '방법: 안정형 C++ 프로젝트 만들기(C++/CLI)'
+title: '방법: 안정형 c + + 프로젝트 만들기 (C + + /cli CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - verifiable assemblies [C++], creating
 - conversions, C++ projects
 - Visual C++ projects
 ms.assetid: 4ef2cc1a-e3e5-4d67-8d8d-9c614f8ec5d3
-ms.openlocfilehash: acd37469f0702b73cdb1386fcf43091c8d27aebb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: de3742717bf55c53ab4007aaed18b6ce687fbede
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630440"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57817381"
 ---
 # <a name="how-to-create-verifiable-c-projects-ccli"></a>방법: 안정형 c + + 프로젝트 만들기 (C + + /cli CLI)
 
@@ -28,7 +28,7 @@ Visual c + + 응용 프로그램 마법사에서 확인할 수 있는 프로젝�
 
 ### <a name="to-change-the-compiler-and-linker-settings"></a>컴파일러 및 링커 설정을 변경 하려면
 
-1. 프로젝트 속성 페이지를 표시 합니다. 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트 속성 페이지를 표시 합니다. 자세한 내용은 [컴파일러를 설정 하 고 빌드 속성](../build/working-with-project-properties.md)합니다.
 
 1. 에 **일반** 페이지를 **구성 속성** 노드를 설정 합니다 **공용 언어 런타임 지원** 속성을 **안전 MSIL 공용 언어 런타임 지원 (/: safe)** 합니다.
 
@@ -56,7 +56,7 @@ Visual c + + 응용 프로그램 마법사에서 확인할 수 있는 프로젝�
 
 1. _Tmain 프로젝트의 주.cpp 파일에서 main ()를 변경 합니다.
 
-1. 프로젝트 속성 페이지를 표시 합니다. 자세한 내용은 [프로젝트 속성 작업](../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트 속성 페이지를 표시 합니다. 자세한 내용은 [컴파일러를 설정 하 고 빌드 속성](../build/working-with-project-properties.md)합니다.
 
 1. 에 **고급** 페이지를 **링커** 노드를 입력 `Main` 으로 **진입점** 속성 값입니다.
 

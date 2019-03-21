@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - MapView Class
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
-ms.openlocfilehash: cd1865320d56d71481cdaf7055f796bfab26eeab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1e38865f1d43edac4fc895052f1ea1b5a54a34ab
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496382"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749258"
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform::Collections::MapView 클래스
 
@@ -66,7 +66,7 @@ MapView는의 구체적인 c + + 구현 합니다 [Windows::Foundation::Collecti
 |[MapView::Size](#size)|현재 MapView 개체의 요소 수를 반환합니다.|
 |[MapView::Split](#split)|원래 MapView 개체를 두 개의 MapView 개체로 분할합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `MapView`
 
@@ -132,7 +132,8 @@ MapView에서 요소를 찾는 데 사용되는 키입니다. 유형의 `key` ty
 
 ### <a name="return-value"></a>반환 값
 
-`key`와 쌍을 이루는 값입니다. 반환 값의 형식은 typename *V*합니다.
+
+  `key`와 쌍을 이루는 값입니다. 반환 값의 형식은 typename *V*합니다.
 
 ##  <a name="ctor"></a> Mapview:: Mapview 생성자
 
@@ -217,6 +218,6 @@ void Split(
 
 이 메서드는 작동하지 않으며, 아무 작업도 수행하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [플랫폼 Namespace](platform-namespace-c-cx.md)

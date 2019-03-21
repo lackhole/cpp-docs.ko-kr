@@ -11,18 +11,18 @@ helpviewer_keywords:
 - depends.exe
 - libraries [C++], application deployment issues
 ms.assetid: 62a44c95-c389-4c5f-82fd-07d7ef09dbf9
-ms.openlocfilehash: 8ed340bed62d3b2cfcf32e0b98f032c9146b6bb9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ed510e0d289349b1d7a0129a1c586b0bf1715b7e
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629270"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751481"
 ---
 # <a name="understanding-the-dependencies-of-a-visual-c-application"></a>Visual C++ 응용 프로그램의 종속성 이해
 
-응용 프로그램이 종속된 Visual C++ 라이브러리를 확인하려면 프로젝트 속성을 보면 됩니다. (이렇게 하려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 **속성 페이지** 대화 상자를 엽니다.) 종속성을 더욱 포괄적으로 파악할 수 있는 Dependency Walker(depends.exe)를 사용할 수도 있습니다.
+애플리케이션이 종속된 Visual C++ 라이브러리를 확인하려면 프로젝트 속성을 보면 됩니다. (이렇게 하려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 **속성 페이지** 대화 상자를 엽니다.) 종속성을 더욱 포괄적으로 파악할 수 있는 Dependency Walker(depends.exe)를 사용할 수도 있습니다.
 
-**속성 페이지** 대화 상자에서 **구성 속성**의 다양한 페이지를 검사하여 종속성을 확인할 수 있습니다. 예를 들어 프로젝트가 MFC 라이브러리를 사용하고 **MFC 사용**, **구성 속성**, **일반** 페이지의 **공유 DLL에서 MFC 사용**을 선택하는 경우, 런타임의 응용 프로그램은 mfc\<version>.dll 등의 MFC DLL에 종속됩니다. 응용 프로그램에서 MFC를 사용하지 않더라도 **다중 스레드 디버그 DLL(/MDd)** 의 **런타임 라이브러리** 값 또는 **구성 속성**, **C/C++**, **코드 생성** 페이지의 **다중 스레드 DLL(/MD)** 을 선택하면 CRT 라이브러리에 종속될 수 있습니다.
+**속성 페이지** 대화 상자에서 **구성 속성**의 다양한 페이지를 검사하여 종속성을 확인할 수 있습니다. 예를 들어 프로젝트가 MFC 라이브러리를 사용하고 **MFC 사용**, **구성 속성**, **일반** 페이지의 **공유 DLL에서 MFC 사용**을 선택하는 경우, 런타임의 애플리케이션은 mfc\<version&gt;.dll 등의 MFC DLL에 종속됩니다. 애플리케이션에서 MFC를 사용하지 않더라도 **다중 스레드 디버그 DLL(/MDd)** 의 **런타임 라이브러리** 값 또는 **구성 속성**, **C/C++**, **코드 생성** 페이지의 **다중 스레드 DLL(/MD)** 을 선택하면 CRT 라이브러리에 종속될 수 있습니다.
 
 응용 프로그램이 종속되는 DLL을 확인하는 더 포괄적인 방법은 Dependency Walker(depends.exe)를 사용하여 응용 프로그램을 여는 것입니다. [Dependency Walker](http://go.microsoft.com/fwlink/p/?LinkId=132640) 웹 사이트에서 도구를 다운로드할 수 있습니다.
 
@@ -34,4 +34,4 @@ depends.exe를 사용하여 종속성을 확인할 때 DLL이 다른 DLL이나 �
 
 ## <a name="see-also"></a>참고 항목
 
-[데스크톱 응용 프로그램 배포](../ide/deploying-native-desktop-applications-visual-cpp.md)
+[데스크톱 애플리케이션 배포](../ide/deploying-native-desktop-applications-visual-cpp.md)

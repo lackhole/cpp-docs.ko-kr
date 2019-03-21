@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, advanced features
 ms.assetid: 8a6681c5-6576-4b12-841a-6862beee76fa
-ms.openlocfilehash: 5643e1e9f4f558163c1c2a3b65070f90afdc7dba
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 44d85e7614f6a82af2e58f03a6d65d5d7740ab9b
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278225"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816440"
 ---
 # <a name="advanced-features-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 고급 기능
 
@@ -21,7 +21,7 @@ ms.locfileid: "57278225"
 
    F1 및 도움말 메뉴를 사용 하 여 또는 클릭 하 여 사용할 수 있는 상황에 맞는 도움말에 대 한 도움말 파일의 집합을 생성 한 **도움말** 대화 상자에서 단추입니다. 도움말을 지원하려면 도움말 컴파일러가 필요합니다. 도움말 컴파일러가 없으면 설치를 다시 실행하여 설치할 수 있습니다.
 
-   참조 [HTML 도움말: 프로그램에 대 한 상황에 맞는 도움말](../../mfc/html-help-context-sensitive-help-for-your-programs.md) 하 고 [도움말 파일 (HTML 도움말)](../../ide/help-files-html-help.md) 자세한 내용은 합니다.
+   참조 [HTML 도움말: 프로그램에 대 한 상황에 맞는 도움말](../../mfc/html-help-context-sensitive-help-for-your-programs.md) 하 고 [도움말 파일 (HTML 도움말)](../../build/reference/help-files-html-help.md) 자세한 내용은 합니다.
 
 - **인쇄 및 인쇄 미리 보기**
 

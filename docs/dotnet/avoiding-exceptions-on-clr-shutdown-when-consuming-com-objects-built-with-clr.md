@@ -9,12 +9,12 @@ helpviewer_keywords:
 - interoperability [C++], CLR shutdown exceptions
 - CLR shutdown exceptions [C++]
 ms.assetid: 41249d83-4b51-4e46-866f-27f475f2498c
-ms.openlocfilehash: 23af1d8b48a6579b8cc20261691c1f090dc858a2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bafcfb4e8a8abfecc8491220202b63971bef1ac8
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633443"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749245"
 ---
 # <a name="avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr"></a>/clr로 빌드한 COM 개체를 사용할 때 CLR 종료 시 예외 방지
 
@@ -22,6 +22,6 @@ CLR (공용 언어 런타임)가 종료 모드를 입력 한 후 네이티브 �
 
 이 해결 하려면 릴리스 메서드에서 호출 된 소멸자만 포함 네이티브 코드를 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [혼합형(네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md)

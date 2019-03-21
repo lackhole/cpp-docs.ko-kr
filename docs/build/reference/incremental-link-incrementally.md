@@ -12,12 +12,12 @@ helpviewer_keywords:
 - LINK tool [C++], options for full linking
 - incremental linking
 ms.assetid: 135656ff-94fa-4ad4-a613-22e1a2a5d16b
-ms.openlocfilehash: 60cec41173afc9955bddf9df0bd6796b5df6285c
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 189affe57694a8369e9cf7ac98815cc5888b69aa
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414085"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816141"
 ---
 # <a name="incremental-link-incrementally"></a>/INCREMENTAL(증분 링크)
 
@@ -54,7 +54,7 @@ ms.locfileid: "57414085"
 
 - /ORDER을 선택한 경우
 
-/ 증분 경우 암시적 [디버그/](../../build/reference/debug-generate-debug-info.md) 지정 됩니다.
+/ 증분 경우 암시적 [디버그/](debug-generate-debug-info.md) 지정 됩니다.
 
 또한 LINK에서는 다음과 같은 경우에 전체 링크를 수행합니다.
 
@@ -72,7 +72,7 @@ ms.locfileid: "57414085"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **링커** 폴더입니다.
 
@@ -86,5 +86,5 @@ ms.locfileid: "57414085"
 
 ## <a name="see-also"></a>참고자료
 
-[링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
-[링커 옵션](../../build/reference/linker-options.md)
+[MSVC 링커 참조](linking.md)<br/>
+[MSVC 링커 옵션](linker-options.md)

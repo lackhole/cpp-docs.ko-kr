@@ -2,12 +2,12 @@
 title: 열거형(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: 99fbbe28-c1cd-43af-9ead-60f90eba6e68
-ms.openlocfilehash: 54d542b9fea127101cc74d4f064a7598889c3bd7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f16a288a0b928b74ef42de5781fd1b54930927d6
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583161"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57752144"
 ---
 # <a name="enums-ccx"></a>열거형(C++/CX)
 
@@ -37,7 +37,7 @@ A `public enum class` 또는 `public enum struct` 선언은 내부 형식이 모
 
 [!code-cpp[cx_enums#04](../cppcx/codesnippet/CPP/cpp/class1.h#04)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
 [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>

@@ -16,25 +16,23 @@ helpviewer_keywords:
 - graphics [C++], custom brushes
 - custom brushes
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
-ms.openlocfilehash: 135509626e20044b0d4ec8e63d8916f4c537388e
-ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
+ms.openlocfilehash: bde951a2915bf980e09d94c16edc1a9b462c662e
+ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56336555"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57563331"
 ---
 # <a name="how-to-use-a-drawing-tool"></a>방법: 그리기 도구 사용
 
-합니다 **이미지** 편집기의 그리기 및 지우기 동일한 방식으로 작동 하는 도구에 자유롭게: 도구를 선택 및 필요한 경우 [전경색 및 배경색을 선택](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) 크기 및 모양 옵션입니다. 다음 이미지에 포인터를 이동 하 고 클릭 하거나 그리기 및 지우기으로 끌어 옵니다.
+합니다 **이미지 편집기** 자유 그리기 및 지우기 도구 모두 동일한 방식으로 작동 합니다. 도구를 선택 하 고 필요한 경우 [전경색 및 배경색을 선택](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) 크기 및 모양 옵션입니다. 다음 이미지에 포인터를 이동 하 고 클릭 하거나 그리기 및 지우기으로 끌어 옵니다.
 
 ## <a name="drawing-tools"></a>그리기 도구
 
-선택 하는 경우는 **지우개** 도구인 **브러시** 도구인 또는 **에 어 브러시** 도구, 옵션 선택기에는 해당 도구의 옵션이 표시 됩니다.
+그리기 도구 중에서 선택할 수 있습니다 합니다 **이미지 편집기** 도구 모음 또는 **이미지** 메뉴. 선택 하는 경우는 **지우개** 도구인 **브러시** 도구인 또는 **에 어 브러시** 도구, 옵션 선택기에는 해당 도구의 옵션이 표시 됩니다.
 
 > [!TIP]
-> 사용 하는 대신 합니다 **지우개** 도구인 있습니다 더 편리할 수 것 그리기 도구 중 하나를 사용 하 여 배경색으로 그리는 것입니다.
-
-그리기 도구 중에서 선택할 수 있습니다 합니다 **이미지 편집기** 도구 모음 또는 **이미지** 메뉴.
+>  단추 위에 커서를 올려 놓으면 도구 설명이 표시 합니다 [이미지 편집기 도구 모음](../windows/toolbar-image-editor-for-icons.md)합니다. 이러한 팁은 여기에 언급 된 특정 단추를 식별 하는 데 도움이 됩니다.
 
 ### <a name="to-select-and-use-a-drawing-tool-from-the-image-editor-toolbar"></a>선택 하 고 이미지 편집기 도구 모음에서 그리기 도구 사용
 
@@ -42,14 +40,14 @@ ms.locfileid: "56336555"
 
    - 합니다 **지우개** 마우스 왼쪽된 단추를 누를 때 현재 배경색을 사용 하 여 이미지 그리기 도구입니다.
 
+      > [!TIP]
+      > 사용 하는 대신 합니다 **지우개** 도구인 있습니다 더 편리할 수 것 그리기 도구 중 하나를 사용 하 여 배경색으로 그리는 것입니다.
+
    - 합니다 **연필** 도구 상수 1 픽셀 너비의 자유형 그립니다.
 
-   - 합니다 **브러시 도구의 모양 및 크기를 결정 하는 옵션 선택기**합니다.
+   - 합니다 **브러시** 도구에는 다양 한 형태와 규모에 있습니다.
 
    - 합니다 **에 어 브러시** 도구 색 픽셀 브러시의 중심을 임의로 분산 합니다.
-
-        > [!TIP]
-        >  단추 위에 커서를 올려 놓으면 도구 설명이 표시 합니다 [이미지 편집기 도구 모음](../windows/toolbar-image-editor-for-icons.md)합니다. 이러한 팁은 여기에 언급 된 특정 단추를 식별 하는 데 도움이 됩니다.
 
 1. 필요한 경우 색상 및 브러시를 선택 합니다.
 
@@ -63,19 +61,19 @@ ms.locfileid: "56336555"
 
 ### <a name="to-select-and-use-a-drawing-tool-from-the-image-menu"></a>선택 하 고 이미지 메뉴에서 그리기 도구 사용
 
-1. 선택 합니다 **이미지** 메뉴를 선택 합니다 **도구** 명령입니다.
+1. 메뉴로 이동 **이미지** > **도구**합니다.
 
 1. 연계 하위 메뉴를 사용 하려면이 도구를 선택 합니다.
 
 ## <a name="lines-or-closed-figures"></a>선 또는 닫힌된 그림
 
-선 그리기에 대 한 이미지 편집기 도구와 동일한 방식으로 닫힌된 그림 작동: 한 지점에 삽입점을 배치 및 다른 위치로 끕니다. 줄에 대 한 이러한 지점은 끝점입니다. 닫힌된 그림에서 이러한 지점은 그림 경계 사각형의 모퉁이 반대 됩니다.
+합니다 **이미지 편집기** 선 및 닫힌된 그림 그리기 도구는 동일한 방식으로 작동 합니다: 특정 시점에 삽입 포인터를 두고 다른 위치로 이동할입니다. 줄에 대 한 이러한 지점은 끝점입니다. 닫힌된 그림에서 이러한 지점은 그림 경계 사각형의 모퉁이 반대 됩니다.
 
 현재 브러시 선택에 따라 결정 되는 너비에서 선이 그려집니다 및 프레임된 그림 현재 두께 선택할 때 결정에 그려집니다. 선과 모든 그림을 모두 틀이 있고 채워진 그려집니다 왼쪽된 마우스 단추를 누르면 현재 전경색 또는 배경색 현재 마우스 오른쪽 단추를 누를 경우.
 
 ### <a name="to-draw-a-line"></a>선 그리기
 
-1. 에 [이미지 편집기 도구 모음](../windows/toolbar-image-editor-for-icons.md) (또는 합니다 **이미지** 메뉴에서 **도구** 명령), 선택는 **줄** 도구.
+1. 사용 하 여는 [이미지 편집기 도구 모음](../windows/toolbar-image-editor-for-icons.md) 메뉴로 이동 하거나 **이미지**> **도구** 선택 합니다 **줄** 도구.
 
 1. 필요한 경우 색상 및 브러시를 선택 합니다.
 
@@ -89,7 +87,7 @@ ms.locfileid: "56336555"
 
 ### <a name="to-draw-a-closed-figure"></a>닫힌된 그림 그리기를
 
-1. 에 **이미지 편집기** 도구 모음 (또는 **이미지** 메뉴에서 **도구** 명령)을 선택는 **닫힌 그림 그리기** 도구입니다.
+1. 사용 합니다 **이미지 편집기** 도구 모음이 나 메뉴 이동 **이미지** > **도구** 선택한를 **닫힌 그림 그리기** 도구입니다.
 
    합니다 **닫힌 그림 그리기** 도구는 각 단추에 표시 된 대로 그림을 만듭니다.
 
@@ -101,13 +99,13 @@ ms.locfileid: "56336555"
 
 ## <a name="custom-brushes"></a>사용자 지정 브러시
 
-사용자 지정 브러시는 선택 하 고와 같이 사용할 수 있는 이미지의 사각형 부분을 **이미지** 편집기의 바로 사용할 수 있는 브러시입니다. 선택 영역에서 수행할 수 있는 모든 작업을 사용자 지정 브러시도 수행할 수 있습니다.
+사용자 지정 브러시는 선택 하 고와 같이 사용할 수 있는 이미지의 사각형 부분을 **이미지 편집기**의 포함 되어 있는 브러시입니다. 선택 영역에서 수행할 수 있는 모든 작업을 사용자 지정 브러시도 수행할 수 있습니다.
 
 ### <a name="to-create-a-custom-brush-from-a-portion-of-an-image"></a>이미지의 일부에서 사용자 지정 브러시를 만들려면
 
-1. [이미지의 일부 선택](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) 브러시에 사용 하려는.
+1. 브러시에 사용 하려는 이미지의 일부를 선택 합니다.
 
-1. 포함 된 **Shift** 아래로 키 선택에서 선택 하 고 이미지를 끕니다. 또는 합니다 **이미지** 메뉴 선택 **사용 하 여 선택 항목을 브러시로**합니다.
+1. 저장 합니다 **Shift** 아래로 키, 선택 영역에서 선택 하 고 이미지에서 끌어 놓거나 메뉴로 이동 하 **이미지** > **사용 하 여 선택 항목을 브러시로**.
 
    선택한은 이미지에 색 선택 영역에 분산 하는 사용자 지정 브러시 됩니다. 선택 항목의 복사본은 끌기 경로 남아 있습니다. 끌면 더 느린, 많은 복사본이 만들어집니다.
 
@@ -120,9 +118,9 @@ ms.locfileid: "56336555"
 
 ### <a name="to-draw-custom-brush-shapes-in-the-background-color"></a>배경색에 사용자 지정 브러시 모양을 그리는
 
-1. [불투명 또는 투명 한 배경을 선택](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md)합니다.
+1. 불투명 또는 투명 한 배경을 선택 합니다.
 
-1. [배경색 설정](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) 그릴 원하는 색으로 합니다.
+1. 배경색 그릴 원하는 색으로 설정 합니다.
 
 1. 그리기를 사용자 지정 브러시를 배치 합니다.
 
@@ -142,7 +140,8 @@ ms.locfileid: "56336555"
 
 ## <a name="see-also"></a>참고 항목
 
-[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
-[그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)<br/>
-[색 작업](../windows/working-with-color-image-editor-for-icons.md)
+[방법: 아이콘 또는 기타 이미지 만들기](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[방법: 이미지 편집](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[방법: 색 작업](../windows/working-with-color-image-editor-for-icons.md)<br/>
+[액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>

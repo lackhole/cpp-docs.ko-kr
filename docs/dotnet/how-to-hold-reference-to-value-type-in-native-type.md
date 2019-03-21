@@ -1,19 +1,19 @@
 ---
-title: '방법: 값 형식에 대한 참조를 네이티브 형식에 저장'
+title: '방법: 값 형식에서 네이티브 형식에 대 한 참조를 보유 합니다.'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - value type reference in native type
 - reference to value type in native type
 ms.assetid: 1eabf8be-7d4f-4339-9027-48d5c4244483
-ms.openlocfilehash: 1219dbac5ba78229554aeb29cf9422e835ea8343
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3b1dfdc5a519bf51f16b7afbc25d49dc38b8f076
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470449"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57749011"
 ---
-# <a name="how-to-hold-reference-to-value-type-in-native-type"></a>방법: 값 형식에 대한 참조를 네이티브 형식에 저장
+# <a name="how-to-hold-reference-to-value-type-in-native-type"></a>방법: 값 형식에서 네이티브 형식에 대 한 참조를 보유 합니다.
 
 사용 하 여 `gcroot` 값 형식에 대 한 참조를 네이티브 형식에 저장할 boxed 형식에서입니다.
 
@@ -49,6 +49,6 @@ int main() {
 String in V: Hello
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -25,12 +25,12 @@ helpviewer_keywords:
 - .lib files
 - EXP files
 ms.assetid: 2fe4f30a-1dd6-4b05-84b5-0752e1dee354
-ms.openlocfilehash: 31570b1e6680b5af5f0a774c290eba20f3b5fdb0
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 37c3169b66e1120dbfdb3a69379430e9bc8a1586
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57413188"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57813489"
 ---
 # <a name="building-an-import-library-and-export-file"></a>가져오기 라이브러리 및 내보내기 파일 빌드
 
@@ -68,4 +68,4 @@ Note는.dll을 만들기 전에 예비 단계에서 가져오기 라이브러리
 
 ## <a name="see-also"></a>참고자료
 
-[가져오기 라이브러리 및 내보내기 파일을 사용한 작업](../../build/reference/working-with-import-libraries-and-export-files.md)
+[가져오기 라이브러리 및 내보내기 파일을 사용한 작업](working-with-import-libraries-and-export-files.md)

@@ -29,24 +29,24 @@ helpviewer_keywords:
 - /Es BSCMAKE option
 - Ei BSCMAKE option
 ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2
-ms.openlocfilehash: 7727f433ae68f26075645b35ff5edad43159ec67
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: bf4c3648079dff16481dbdd56b9a70093fd22d8d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57415411"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57812059"
 ---
 # <a name="bscmake-options"></a>BSCMAKE 옵션
 
 이 섹션에서는 BSCMAKE를 제어 하는 것에 대 한 사용 가능한 옵션을 설명 합니다. 여러 옵션에는 특정 정보를 포함 시키거나 제외 시켜 찾아보기 정보 파일의 내용을 제어 합니다. 제외 옵션을 더 빠르게 실행 BSCMAKE를 허용할 수 고.bsc 파일을 더 작게 될 수 있습니다. 옵션 이름은 대/소문자 구분 (제외한 **/help** 하 고 **/NOLOGO**).
 
-만 **/NOLOGO** 하 고 **/o** Visual Studio 개발 환경 내에서 사용할 수 있습니다.  참조 [Visual c + + 프로젝트 속성 설정](../../ide/working-with-project-properties.md) 에 대 한 정보에 대 한 프로젝트의 속성 페이지에 액세스 합니다.
+만 **/NOLOGO** 하 고 **/o** Visual Studio 개발 환경 내에서 사용할 수 있습니다.  참조 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md) 에 대 한 정보에 대 한 프로젝트의 속성 페이지에 액세스 합니다.
 
 **/Ei (** *filename*... **)**<br/>
 찾아보기 정보 파일에서 지정된 된 포함 파일의 콘텐츠를 제외합니다. 여러 파일을 지정 하려면 공백을 사용 하 여 이름을 구분 하 고 목록을 괄호로 묶습니다. 괄호가 하나만 지정 하는 경우에 필요 하지 않습니다 *filename*합니다. 사용 하 여 **/Ei** 함께 합니다 **/Es** 옵션에서 제외 되지 않은 파일을 제외할 **/Es**합니다.
 
 **/El**<br/>
-로컬 기호를 제외합니다. 기본 로컬 기호를 포함 하는 것입니다. 로컬 기호에 대 한 자세한 내용은 참조 하세요. [.sbr 파일 만들기](../../build/reference/creating-an-dot-sbr-file.md)합니다.
+로컬 기호를 제외합니다. 기본 로컬 기호를 포함 하는 것입니다. 로컬 기호에 대 한 자세한 내용은 참조 하세요. [.sbr 파일 만들기](creating-an-dot-sbr-file.md)합니다.
 
 **/Em**<br/>
 매크로 본문의 기호를 제외합니다. 사용 하 여 **/e m** 찾아보기 정보 파일에 매크로 이름만 포함 합니다. 기본은 매크로 이름 및 매크로 확장의 결과 포함 하는 것입니다.
@@ -60,7 +60,7 @@ ms.locfileid: "57415411"
 **/errorreport:**[**none** &#124; **prompt** &#124; **queue** &#124; **send**]<br/>
 Bscmake.exe의 내부 오류에 대 한 Microsoft로 정보를 보낼 수 있습니다.
 
-에 대 한 자세한 **/errorreport**를 참조 하십시오 [/errorReport (내부 컴파일러 오류 보고)](../../build/reference/errorreport-report-internal-compiler-errors.md)합니다.
+에 대 한 자세한 **/errorreport**를 참조 하십시오 [/errorReport (내부 컴파일러 오류 보고)](errorreport-report-internal-compiler-errors.md)합니다.
 
 **/HELP**<br/>
 BSCMAKE 명령줄 구문 요약 정보를 표시 합니다.
@@ -69,7 +69,7 @@ BSCMAKE 명령줄 구문 요약 정보를 표시 합니다.
 참조 되지 않은 기호를 포함합니다. BSCMAKE는 기본적으로 정의 되었지만 참조 되지 않는 모든 기호를 기록 하지 않습니다. .Sbr 파일을 압축 된 경우이 옵션은 컴파일러가 이미 참조 되지 않은 기호를 제거 하기 때문에 해당 입력된 파일에 대 한 효과가 없습니다.
 
 **/n**<br/>
-비증분 빌드를 강제로 수행합니다. 사용 하 여 **/n** .bsc 파일의 존재 여부와 상관 없이 찾아보기 정보 파일의 전체 빌드를 수행 하는 데.sbr 파일이 잘리지 않도록 방지 합니다. 참조 [BSCMAKE에서.bsc 파일을 빌드하는 방법](../../build/reference/how-bscmake-builds-a-dot-bsc-file.md)합니다.
+비증분 빌드를 강제로 수행합니다. 사용 하 여 **/n** .bsc 파일의 존재 여부와 상관 없이 찾아보기 정보 파일의 전체 빌드를 수행 하는 데.sbr 파일이 잘리지 않도록 방지 합니다. 참조 [BSCMAKE에서.bsc 파일을 빌드하는 방법](how-bscmake-builds-a-dot-bsc-file.md)합니다.
 
 **/NOLOGO**<br/>
 BSCMAKE 저작권 메시지를 표시 하지 않습니다.
@@ -94,4 +94,4 @@ BSCMAKE /n /S toolbox.h /o main.bsc file1.sbr file2.sbr file3.sbr
 
 ## <a name="see-also"></a>참고자료
 
-[BSCMAKE 참조](../../build/reference/bscmake-reference.md)
+[BSCMAKE 참조](bscmake-reference.md)

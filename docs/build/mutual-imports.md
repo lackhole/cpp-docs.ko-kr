@@ -14,12 +14,12 @@ helpviewer_keywords:
 - extension DLLs [C++], mutual imports
 - exporting DLLs [C++], mutual imports
 ms.assetid: 2cc29537-92ee-4d92-af39-8b8b3afd808f
-ms.openlocfilehash: c2d34c54491bb4b85311be3ba1ebdaed87437246
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: f01e69138a6ca1744645a1c2fa8525b7088e260d
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420689"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814555"
 ---
 # <a name="mutual-imports"></a>상호 가져오기
 
@@ -41,7 +41,7 @@ ms.locfileid: "57420689"
 
 다음 그림에서는 두 개의 상호 가져오기 Dll, DLL1 및 d l l 2에 대 한 솔루션을 보여 줍니다. 1 단계에서 DLL1 /DEF 옵션 집합을 사용 하 여 LIB를 실행 하는 것입니다. 1 단계 DLL1.lib, 가져오기 라이브러리 및 DLL1.exp를 생성합니다. 2 단계에서 가져오기 라이브러리를 빌드하는 데 d l l 2, d l l 2의 기호에 대 한 가져오기 라이브러리를 생성 합니다. 3 단계 DLL1.exp 및 DLL2.lib 입력으로 사용 하 여 DLL1를 빌드합니다. LIB d l l 2의 가져오기 라이브러리를 빌드하는 사용 하지 않았으므로 d l l 2에 대 한.exp 파일은 필요 하지는 참고 합니다.
 
-![상호 가져오기를 사용 하 여 두 개의 Dll에 연결할](../build/media/vc37yj1.gif "상호 가져오기를 사용 하 여 두 개의 Dll 연결")<br/>
+![상호 가져오기를 사용 하 여 두 개의 Dll에 연결할](media/vc37yj1.gif "상호 가져오기를 사용 하 여 두 개의 Dll 연결")<br/>
 상호 가져오기를 사용하여 두 개의 DLL 연결
 
 ## <a name="limitations-of-afxext"></a>_AFXEXT의 제한 사항
@@ -109,24 +109,24 @@ class CExampleA : public CObject
 
 ### <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [DLL에서 내보내기](../build/exporting-from-a-dll.md)
+- [DLL에서 내보내기](exporting-from-a-dll.md)
 
-- [.def 파일을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)
+- [.def 파일을 사용하여 DLL에서 내보내기](exporting-from-a-dll-using-def-files.md)
 
-- [__declspec(dllexport)을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__declspec(dllexport)을 사용하여 DLL에서 내보내기](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기](../build/exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기](exporting-and-importing-using-afx-ext-class.md)
 
-- [C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [사용할 내보내기 방법 결정](../build/determining-which-exporting-method-to-use.md)
+- [사용할 내보내기 방법 결정](determining-which-exporting-method-to-use.md)
 
-- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](importing-into-an-application-using-declspec-dllimport.md)
 
 ### <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [LIB 공익 사업 및 /DEF 옵션](../build/reference/lib-reference.md)
+- [LIB 공익 사업 및 /DEF 옵션](reference/lib-reference.md)
 
 ## <a name="see-also"></a>참고자료
 
-[가져오기 및 내보내기](../build/importing-and-exporting.md)
+[가져오기 및 내보내기](importing-and-exporting.md)

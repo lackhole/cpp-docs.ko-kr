@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options (C++)
 ms.assetid: e3d6058f-400d-4966-a3aa-800cfdf69cbf
-ms.openlocfilehash: 24f5ba7666e6b4a39787b9edac53142cdd1cd149
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a20123603030dfe719cd8990018f795df137981
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587042"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57814269"
 ---
 # <a name="zctrigraphs-trigraphs-substitution"></a>/Zc:trigraphs(삼중자 대체)
 
@@ -34,7 +34,7 @@ C/c + + 삼중 자 및 삼중 자를 사용 하는 방법을 보여 주는 예�
 
 ## <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
 
@@ -42,5 +42,5 @@ C/c + + 삼중 자 및 삼중 자를 사용 하는 방법을 보여 주는 예�
 
 ## <a name="see-also"></a>참고자료
 
-[/Zc(규칙)](../../build/reference/zc-conformance.md)<br/>
+[/Zc(규칙)](zc-conformance.md)<br/>
 [삼중자](../../c-language/trigraphs.md)<br/>

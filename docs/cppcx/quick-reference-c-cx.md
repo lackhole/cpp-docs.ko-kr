@@ -2,12 +2,12 @@
 title: 빠른 참조(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: ba457195-26e5-43aa-b99d-24a871e550f4
-ms.openlocfilehash: eb407a0264a68f9b89e4a180c8b151076fdd109a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0526c9083d177688146926598b79e66ca2f9723c
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445333"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742073"
 ---
 # <a name="quick-reference-ccx"></a>빠른 참조(C++/CX)
 
@@ -41,11 +41,11 @@ Windows 런타임에서 신뢰할 수 있는 운영 체제 환경 에서만에�
 |구조체 선언|`struct` *식별자* `{}`<br /><br /> (즉, POD(Plain Old Data) 구조체)|`value class` *식별자* `{}`<br /><br /> `value struct` *식별자* `{}`|기본 private 액세스 가능성이 있는 POD 구조체를 선언합니다.<br /><br /> 값 클래스는 Windows 메타데이터로 표현될 수 있지만 표준 C++ 클래스는 Windows 메타데이터로 표현될 수 없습니다.<br /><br /> 기본 public 액세스 가능성이 있는 POD 구조체를 선언합니다.<br /><br /> 값 구조체는 Windows 메타데이터로 표현될 수 있지만 표준 C++ 구조체는 Windows 메타데이터로 표현될 수 없습니다.|
 |인터페이스 선언|순수 가상 함수만 포함하는 추상 클래스입니다.|`interface class` *식별자* `{}`<br /><br /> `interface struct` *식별자* `{}`|기본 private 액세스 가능성이 있는 인터페이스를 선언합니다.<br /><br /> 기본 public 액세스 가능성이 있는 인터페이스를 선언합니다.|
 |대리자(delegate)|`std::function`|`public delegate` *return-type* *delegate-type-identifier* `(` *[ parameters ]* `);`|함수 호출과 같이 호출할 수 있는 개체를 선언합니다.|
-|이벤트(event)|(해당 없음)|`event` *delegate-type-identifier* *event-identifier* `;`<br /><br /> *delegate-type-identifier* *delegate-identifier* = `ref new`*delegate-type-identifier*`( this`*[, parameters]*`);`<br /><br /> *event-identifier* `+=` *delegate-identifier* `;`<br /><br /> 또는<br /><br /> `EventRegistrationToken` *token-identifier* = *obj*`.`*event-identifier*`+=`*delegate-identifier*`;`<br /><br /> 또는<br /><br /> `auto` *토큰 식별자* = *obj*합니다. *이벤트 식별자*`::add(`*대리자 식별자*`);`<br /><br /> *obj* `.` *event-identifier* `-=` *token-identifier* `;`<br /><br /> 또는<br /><br /> *obj* `.` *event-identifier* `::remove(` *token-identifier* `);`|이벤트가 발생한 경우에 호출되는 이벤트 처리기(대리자) 컬렉션을 저장하는 이벤트 개체를 선언합니다.<br /><br /> 이벤트 처리기를 만듭니다.<br /><br /> 이벤트 처리기를 추가합니다.<br /><br /> 이벤트 처리기를 추가하면 이벤트 토큰(*token-identifier*)이 반환됩니다. 이벤트 처리기를 명시적으로 제거하려면 나중에 사용하도록 이벤트 토큰을 저장해야 합니다.<br /><br /> 이벤트 처리기를 제거합니다.<br /><br /> 이벤트 처리기를 제거하려면 이벤트 처리기가 추가될 때 저장한 이벤트 토큰을 지정해야 합니다.|
+|이벤트(event)|(해당 없음)|`event` *delegate-type-identifier* *event-identifier* `;`<br /><br /> *delegate-type-identifier* *delegate-identifier* = `ref new`*delegate-type-identifier*`( this`*[, parameters]*`);`<br /><br /> *event-identifier* `+=` *delegate-identifier* `;`<br /><br /> 또는<br /><br /> `EventRegistrationToken` *token-identifier* = *obj*`.`*event-identifier*`+=`*delegate-identifier*`;`<br /><br /> 또는<br /><br /> `auto` *token-identifier* = *obj*. *event-identifier*`::add(`*delegate-identifier*`);`<br /><br /> *obj* `.` *event-identifier* `-=` *token-identifier* `;`<br /><br /> 또는<br /><br /> *obj* `.` *event-identifier* `::remove(` *token-identifier* `);`|이벤트가 발생한 경우에 호출되는 이벤트 처리기(대리자) 컬렉션을 저장하는 이벤트 개체를 선언합니다.<br /><br /> 이벤트 처리기를 만듭니다.<br /><br /> 이벤트 처리기를 추가합니다.<br /><br /> 이벤트 처리기를 추가하면 이벤트 토큰(*token-identifier*)이 반환됩니다. 이벤트 처리기를 명시적으로 제거하려면 나중에 사용하도록 이벤트 토큰을 저장해야 합니다.<br /><br /> 이벤트 처리기를 제거합니다.<br /><br /> 이벤트 처리기를 제거하려면 이벤트 처리기가 추가될 때 저장한 이벤트 토큰을 지정해야 합니다.|
 |속성|(해당 없음)|`property` *T* *identifier*;<br /><br /> `property` *T* *식별자* `[` *인덱스입니다.* `];`<br /><br /> `property` *T* `default[` *인덱스입니다.* `];`|클래스 또는 개체 멤버 함수가 데이터 멤버 또는 인덱싱된 배열 요소에 액세스하는 데 사용된 같은 구문을 사용하여 액세스됨을 선언합니다.<br /><br /> 클래스 또는 개체 멤버 함수의 속성을 선언합니다.<br /><br /> 개체 멤버 함수의 인덱싱된 속성을 선언합니다.<br /><br /> 클래스 멤버 함수의 인덱싱된 속성을 선언합니다.|
 |매개 변수화된 형식|템플릿|`generic <typename` *T* `> interface class` *식별자* `{}`<br /><br /> `generic <typename` *T* `> delegate` *[return-type]* *delegate-identifier* `() {}`|매개 변수화된 인터페이스 클래스를 선언합니다.<br /><br /> 매개 변수화된 대리자를 선언합니다.|
 |Nullable 값 형식|`boost::optional<T>`|[Platform:: ibox \<T >](../cppcx/platform-ibox-interface.md)|스칼라 형식의 변수 및 값 구조체가 `nullptr`값을 가질 수 있도록 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)

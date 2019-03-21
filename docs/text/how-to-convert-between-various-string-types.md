@@ -7,12 +7,12 @@ helpviewer_keywords:
 - string conversion [C++]
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-ms.openlocfilehash: 83a652192d2d9055fddffdec96eb91a2ebdd68a7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d943bb612d9027368bab4832f369db1d5f6165cc
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304225"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57743897"
 ---
 # <a name="how-to-convert-between-various-string-types"></a>방법: 다양 한 문자열 형식 간 변환
 
@@ -800,7 +800,7 @@ Hello, World! (CStringW)
 Hello, World! (basic_string)
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 및 MFC 문자열 변환 매크로](../atl/reference/string-conversion-macros.md)<br/>
 [C 스타일 문자열 관련 CString 작업](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>

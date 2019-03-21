@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::ArrayReference Class
 ms.assetid: 9ab3b15e-8a60-4600-8fcb-7d6c86284f4b
-ms.openlocfilehash: 4c297f033b78e1b7f9283f5becb9db974bb2b9ff
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 923f60e90517e377b99d5e29f38c48b2633c3c46
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522859"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742974"
 ---
 # <a name="platformarrayreference-class"></a>Platform::ArrayReference 클래스
 
@@ -51,7 +51,7 @@ class ArrayReference
 
 **지원 되는 최소 서버:** Windows Server 2012
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 **헤더:** vccorlib.h
 
@@ -96,13 +96,14 @@ ArrayReference& operator=(ArrayReference&& otherArg);
 
 ### <a name="return-value"></a>반환 값
 
-`ArrayReference` 형식의 개체에 대한 참조입니다.
+
+  `ArrayReference` 형식의 개체에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
 `Platform::ArrayReference`는 ref 클래스가 아닌 표준 C++ 클래스 템플릿입니다.
 
-## <a name="operator-call"></a>  ArrayReference::operator() 연산자
+## <a name="operator-call"></a>  ArrayReference::operator() Operator
 
 현재 변환 [platform:: arrayreference](../cppcx/platform-arrayreference-class.md) 개체를 다시는 [platform:: array](../cppcx/platform-array-class.md) 클래스입니다.
 
@@ -120,6 +121,6 @@ Array<TArg>^ operator ();
 
 [Platform:: arrayreference](../cppcx/platform-arrayreference-class.md) 하 고 [platform:: array](../cppcx/platform-array-class.md) 템플릿은 표준 c + + 클래스를 하지 ref 클래스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)

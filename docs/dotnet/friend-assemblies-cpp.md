@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - friend assemblies, Visual C++
 ms.assetid: 8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd
-ms.openlocfilehash: 8aa0b47c1de520693f43794df3ee10fea131c963
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0c09e0c29aacbf655652446caf90ab21d92103e8
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652623"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748209"
 ---
 # <a name="friend-assemblies-c"></a>Friend 어셈블리(C++)
 
@@ -17,13 +17,13 @@ ms.locfileid: "50652623"
 
 ## <a name="all-runtimes"></a>모든 런타임
 
-**주의**
+**설명**
 
 (이 언어 기능 모든 런타임에서 지원 되지 않습니다.)
 
 ## <a name="windows-runtime"></a>Windows 런타임
 
-**주의**
+**설명**
 
 (이 언어 기능 Windows 런타임에서 지원 되지 않습니다.)
 
@@ -33,7 +33,7 @@ ms.locfileid: "50652623"
 
 ## <a name="common-language-runtime"></a>공용 언어 런타임
 
-**주의**
+**설명**
 
 #### <a name="to-make-types-at-namespace-scope-or-global-scope-in-an-assembly-component-accessible-to-a-client-assembly-or-netmodule"></a>네임 스페이스 범위 또는 전역 범위에서 형식 어셈블리 구성 요소에 액세스할 수 있도록 클라이언트 어셈블리 또는.netmodule
 
@@ -157,15 +157,15 @@ public:
 
 구성 요소가 해당 공개 키를 지정 해야 함을 알 수 있습니다. 있습니다 다음 명령을 순차적으로 실행 키 쌍을 만들고 공개 키를 가져오려면 명령 프롬프트에서 하는 것이 좋습니다.
 
-**sn-d friend_assemblies.snk**
+**sn -d friend_assemblies.snk**
 
-**sn-k friend_assemblies.snk**
+**sn -k friend_assemblies.snk**
 
-**sn-i friend_assemblies.snk friend_assemblies.snk**
+**sn -i friend_assemblies.snk friend_assemblies.snk**
 
-**sn-pc friend_assemblies.snk key.publickey**
+**sn -pc friend_assemblies.snk key.publickey**
 
-**sn-tp key.publickey**
+**sn -tp key.publickey**
 
 다음 코드 예제에서는 강력한 이름의 구성 요소에는 전용 형식에 액세스합니다.
 
@@ -184,6 +184,6 @@ int main() {
 Class1::Test_Public
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

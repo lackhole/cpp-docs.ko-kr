@@ -5,23 +5,23 @@ helpviewer_keywords:
 - controls [C++], redistributing
 - controls [C++], distributing
 ms.assetid: eefbb7e4-d28c-4c35-98bf-d9540cfaae83
-ms.openlocfilehash: 6c1f75665d43d927e21a1fd7d365e1bde46c57a2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb4ef7b58f5ef596ac6484761ab891ceb8bb85ad
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551400"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744646"
 ---
 # <a name="redistributing-visual-c-activex-controls"></a>Visual C++ ActiveX 컨트롤 재배포
 
-Visual C++ 6.0은 다시 배포할 응용 프로그램에서 사용할 수 있는 ActiveX 컨트롤을 제공합니다. 이러한 컨트롤은 더 이상 Visual C++에 포함되지 않습니다. Visual C++ 6.0에 대한 사용권 계약에 따라 Visual C++에서 개발된 응용 프로그램으로 이러한 컨트롤을 재배포할 수 있습니다.
+Visual C++ 6.0은 다시 배포할 애플리케이션에서 사용할 수 있는 ActiveX 컨트롤을 제공합니다. 이러한 컨트롤은 더 이상 Visual C++에 포함되지 않습니다. Visual C++ 6.0에 대한 사용권 계약에 따라 Visual C++에서 개발된 애플리케이션으로 이러한 컨트롤을 재배포할 수 있습니다.
 
 > [!NOTE]
 >  Visual C++ 6.0은 Microsoft에서 더 이상 지원하지 않습니다.
 
 재배포 가능 Visual C++ 6.0 ActiveX 컨트롤 목록은 Visual C++ 6.0 제품 CD의 디스크 1에 있는 Common\Redist\Redist.txt를 참조하세요.
 
-응용 프로그램을 배포할 때는 ActiveX 컨트롤용 .ocx를 설치하고 등록해야 합니다(Regsvr32.exe 사용). 또한 대상 컴퓨터에 다음 시스템 파일의 최신 버전이 있는지 확인해야 합니다(별표는 파일을 등록해야 함을 나타냄).
+애플리케이션을 배포할 때는 ActiveX 컨트롤용 .ocx를 설치하고 등록해야 합니다(Regsvr32.exe 사용). 또한 대상 컴퓨터에 다음 시스템 파일의 최신 버전이 있는지 확인해야 합니다(별표는 파일을 등록해야 함을 나타냄).
 
 - Asycfilt.dll
 
