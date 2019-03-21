@@ -1,4 +1,4 @@
----
+﻿---
 title: /arch(x64)
 ms.date: 11/04/2016
 ms.assetid: ecda22bf-5bed-43f4-99fb-88aedd83d9d8
@@ -52,3 +52,4 @@ Intel 고급 벡터 확장명 2 명령을 사용하도록 설정합니다.
 [/arch(최소 CPU 아키텍처)](arch-minimum-cpu-architecture.md)<br/>
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+

@@ -1,4 +1,4 @@
-﻿# [C/C++ 빌드 참조](c-cpp-building-reference.md)
+# [C/C++ 빌드 참조](c-cpp-building-reference.md)
 # [C++ 프로젝트용 MSBuild 참조](msbuild-reference-cpp.md)
 ## [C++ 프로젝트용 MSBuild 내부](msbuild-visual-cpp-overview.md)
 ## [빌드 명령 및 속성에 대한 일반 매크로](common-macros-for-build-commands-and-properties.md)

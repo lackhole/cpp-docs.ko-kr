@@ -1,4 +1,4 @@
-﻿# [C/C++ 빌드 참조](c-cpp-building-reference.md)
+# [C/C++ 빌드 참조](c-cpp-building-reference.md)
 # [C++ 프로젝트용 MSBuild 참조](msbuild-reference-cpp.md)
 ## [C++ 프로젝트용 MSBuild 내부](msbuild-visual-cpp-overview.md)
 ## [빌드 명령 및 속성에 대한 일반 매크로](common-macros-for-build-commands-and-properties.md)
@@ -482,6 +482,11 @@
 # [컴파일러 오류 C999 ~ C2499](../../error-messages/compiler-errors-1/TOC.md)
 # [컴파일러 오류 C2500 ~ C3999](../../error-messages/compiler-errors-2/TOC.md)
 # [컴파일러 경고](../../error-messages/compiler-warnings/TOC.md)
+<<<<<<< HEAD
+# [도구 오류](../../error-messages/tool-errors/TOC.md)
+||||||| merged common ancestors
+# [도구 오류](../../error-messages/tool-errors/TOC.md)
+=======
 # [도구 오류](../../error-messages/tool-errors/TOC.md)
 # [C++용 XML 설명서](xml-documentation-visual-cpp.md)
 ## [C++ 문서 주석에 대한 권장 태그](recommended-tags-for-documentation-comments-visual-cpp.md)
@@ -504,3 +509,4 @@
 ## [.Xml 파일 처리](dot-xml-file-processing.md)
 ## [C++ 문서 태그의 구분 기호](delimiters-for-visual-cpp-documentation-tags.md)
 
+>>>>>>> d4619707c9ee3f2dd2fc2daf6589abff26c2eb06
