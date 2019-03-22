@@ -238,12 +238,12 @@ helpviewer_keywords:
 - Update method
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-ms.openlocfilehash: cb79bfe7cf0a30e0ff4ed2a4a6860bc3042983ee
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 4a24dada2f1211138449e65a8865810a46230970
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416543"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58329015"
 ---
 # <a name="crowset-class"></a>CRowset 클래스
 
@@ -275,7 +275,7 @@ class CRowset
 |[닫기](#close)|행 및 현재 릴리스 `IRowset` 인터페이스입니다.|
 |[Compare](#compare)|사용 하 여 책갈피 비교 하 여 두 [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85))합니다.|
 |[CRowset](#crowset)|새로 만듭니다 `CRowset` 개체를 사용 하 여 연결 (선택 사항)는 `IRowset` 인터페이스 매개 변수로 제공 합니다.|
-|[삭제](#delete)|사용 하 여 행 집합에서 행을 삭제 [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85))합니다.|
+|[삭제](#delete)|사용 하 여 행 집합에서 행을 삭제 [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85))합니다.|
 |[FindNextRow](#findnextrow)|지정한 책갈피를 다음에 나오는 다음 일치 하는 행을 찾습니다.|
 |[GetApproximatePosition](#getapproximateposition)|책갈피에 해당 하는 행의 대략적인 위치를 반환 합니다.|
 |[GetData](#getdata)|행 집합의 행 복사본에서 데이터를 검색합니다.|
@@ -386,7 +386,7 @@ CRowset(IRowset* pRowset);
 
 ## <a name="delete"></a> CRowset::Delete
 
-호출 [irowsetchange:: Deleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) 행 집합에서 현재 행을 삭제 하려고 합니다.
+호출 [irowsetchange:: Deleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)) 행 집합에서 현재 행을 삭제 하려고 합니다.
 
 ### <a name="syntax"></a>구문
 

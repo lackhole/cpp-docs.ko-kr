@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - storage classes [C++], basic concepts
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
-ms.openlocfilehash: 31f9ba4e16fa1216db4fb66c7b7faeca333f2c43
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e50e5da5ea24d59131f123bb0c772897f9a30218
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520321"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58329028"
 ---
 # <a name="storage-classes-c"></a>저장소 클래스(C++)
 
@@ -24,7 +24,7 @@ A *저장소 클래스* c + +의 컨텍스트에서 변수 선언 하는 개체�
 
 1. 합니다 [변경할 수 있는](../cpp/mutable-data-members-cpp.md) 키워드는 저장소 클래스 지정자로 간주 될 수 있습니다. 하지만 클래스 정의의 멤버 목록에만 사용할 수 있습니다.
 
-1. **Visual c + + 2010 이상:** 는 **자동** 키워드는 c + + 저장소 클래스 지정자를 사용 하는 더 이상 하며 **등록** 키워드가 사용 되지 않습니다. **Visual Studio 2017 버전 15.7 이상의:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 합니다 **등록** 키워드는 c + + 언어에서 제거 됩니다.
+1. **Visual c + + 2010 이상:** 합니다 **자동** 키워드는 c + + 저장소 클래스 지정자를 사용 하는 더 이상 하며 **등록** 키워드가 사용 되지 않습니다. **Visual Studio 2017 버전 15.7 이상의:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 합니다 **등록** 키워드는 c + + 언어에서 제거 됩니다.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
@@ -167,7 +167,7 @@ C++11부터 정적 지역 변수 초기화는 스레드로부터 안전이 보�
 
 선언의 **const** 사용 하 여 변수를 **extern** 저장소 클래스 하면 해당 변수가 외부 링크를 갖게 합니다. 초기화를 **extern const** 변수 정의 변환 단위에서 허용 됩니다. 정의하는 변환 단위 이외의 변환 단위에서 초기화하면 정의되지 않은 결과가 생성됩니다. 자세한 내용은 참조 하세요. [extern을 지정 하는 링크를 사용 하 여](../cpp/using-extern-to-specify-linkage.md)
 
-[/zc: externconstexpr](../build/reference/zc-externconstexpr.md) 컴파일러 옵션을 사용 하면 적용할 컴파일러 [외부 링크가]() 사용 하 여 선언 된 변수를 `extern constexpr`입니다. 이전 버전의 Visual Studio 및 기본적으로 이거나 **/Zc:externConstexpr-** 지정 된 경우 Visual Studio 내부 링크에 적용 됩니다 **constexpr** 경우에도 변수는 **extern** 키워드를 사용 합니다. 합니다 **/zc: externconstexpr** 옵션은 Visual Studio 2017 업데이트 15.6부터 사용할 수 있습니다. 기본적으로 꺼져 있습니다. /permissive-option /zc: externconstexpr 활성화 되지 않습니다.
+[/zc: externconstexpr](../build/reference/zc-externconstexpr.md) 컴파일러 옵션을 사용 하면 적용할 컴파일러 [외부 링크가](../c-language/external-linkage.md) 사용 하 여 선언 된 변수를 `extern constexpr`입니다. 이전 버전의 Visual Studio에서와 기본적으로 혹은 **/Zc:externConstexpr-** 가 지정된 경우 Visual Studio는 **extern** 키워드가 사용 중이라도 내부 링크를 **constexpr** 변수에 적용합니다. **/zc: externconstexpr** 옵션은 Visual Studio 2017 업데이트 15.6 부터 사용할 수 있으며 기본적으로는 꺼져 있습니다. /permissive- 옵션은 /zc: externconstexpr을 활성화하지 않습니다.
 
 다음 코드에서는 두 개의 **extern** 선언을 `DefinedElsewhere` (참조 하는 다른 변환 단위에 정의 된 이름) 및 `DefinedHere` (참조 하는 바깥쪽 범위에서 정의 된 이름):
 
@@ -186,7 +186,8 @@ int main() {
 
 ## <a name="thread_local"></a> thread_local (C + + 11)
 
-`thread_local` 지정자를 사용하여 선언된 변수는 변수가 생성된 스레드에서만 액세스할 수 있습니다. 변수는 스레드를 만들 때 생성되고 스레드를 삭제할 때 삭제됩니다. 각 스레드에 변수의 자체 복사본이 있습니다. Windows에 온 `thread_local` 기능적으로 Microsoft 전용 [__declspec (thread)](../cpp/thread.md) 특성입니다.
+
+  `thread_local` 지정자를 사용하여 선언된 변수는 변수가 생성된 스레드에서만 액세스할 수 있습니다. 변수는 스레드를 만들 때 생성되고 스레드를 제거할 때 제거됩니다. 각 스레드에 변수의 자체 복사본이 있습니다. Windows에 온 `thread_local` 기능적으로 Microsoft 전용 [__declspec (thread)](../cpp/thread.md) 특성입니다.
 
 ```cpp
 thread_local float f = 42.0; // Global namespace. Not implicitly static.
@@ -221,7 +222,7 @@ Windows에 온 `thread_local` 기능적으로 [__declspec (thread)](../cpp/threa
 
 ##  <a name="register"></a>  register
 
-**Visual Studio 2017 버전 15.3 이상** (사용할 수 없습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 합니다 **등록** 키워드는 더 이상 지원 되는 저장소 클래스입니다. 키워드는 나중에 사용할 표준에 여전히 예약 되어 있습니다.
+**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 합니다 **등록** 키워드는 더 이상 지원 되는 저장소 클래스입니다. 키워드는 나중에 사용할 표준에 여전히 예약 되어 있습니다.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - frame allocation [MFC]
 - frame variables [MFC]
 ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
-ms.openlocfilehash: bcd691f8e99b558fcadfc1cf51990b673c5b760c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1acf2ce89e18dd64c166103b59b5eb7007214efd
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262209"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328456"
 ---
 # <a name="memory-management-frame-allocation"></a>메모리 관리: 프레임 할당
 
@@ -37,7 +37,7 @@ ms.locfileid: "57262209"
 
 프레임 변수 개체를 정의할 때 해당 생성자 정의 발생 지점에 자동으로 호출 됩니다. 개체가 범위를 벗어나면 개체에 대 한 메모리를 회수 하기 전에 해당 소멸자가 자동으로 호출 됩니다. 자동 생성 및 소멸이 매우 유용한 수 있지만 특히 소멸자를 자동 호출을 알고 있어야 합니다.
 
-자동으로 삭제는 하는 프레임에서 개체를 할당 하는 이점이 있습니다. 프레임에서 개체를 할당 하면 메모리 누수를 일으키는 잊어버린된 개체에 걱정할 필요가 없습니다. (메모리 누수에 대 한 내용은 문서 참조 [MFC의 메모리 누수 탐지](/previous-versions/visualstudio/visual-studio-2010/c99kz476).) 프레임 할당의 단점은 범위 밖 프레임 변수를 사용할 수 없습니다. 프레임 할당과 힙 할당을 선택 하는 다른 요소 있다는 것 큰 구조와 개체에 대 한 자주 스택 공간이 제한 된 경우가 있으므로 저장소에 대 한 힙의 스택 대신 사용 하 여 합니다.
+자동으로 삭제는 하는 프레임에서 개체를 할당 하는 이점이 있습니다. 프레임에서 개체를 할당 하면 메모리 누수를 일으키는 잊어버린된 개체에 걱정할 필요가 없습니다. (메모리 누수에 대 한 내용은 문서 참조 [MFC의 메모리 누수 탐지](/previous-versions/visualstudio/visual-studio-2010/c99kz476(v=vs.100)).) 프레임 할당의 단점은 범위 밖 프레임 변수를 사용할 수 없습니다. 프레임 할당과 힙 할당을 선택 하는 다른 요소 있다는 것 큰 구조와 개체에 대 한 자주 스택 공간이 제한 된 경우가 있으므로 저장소에 대 한 힙의 스택 대신 사용 하 여 합니다.
 
 ## <a name="see-also"></a>참고자료
 

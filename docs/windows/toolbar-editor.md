@@ -50,12 +50,12 @@ helpviewer_keywords:
 - buttons [C++], tool tips
 - Toolbar editor [C++], creating tool tips
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
-ms.openlocfilehash: a138eb5aa40429696ca2efa4a67e1a1c5490f4fa
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 83402159d19f07cf94a0d00ccd79d68549b124e9
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563253"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328859"
 ---
 # <a name="toolbar-editor-c"></a>도구 모음 편집기 (c + +)
 
@@ -128,7 +128,7 @@ ms.locfileid: "57563253"
 
 #### <a name="to-create-a-new-toolbar-button"></a>새 도구 모음 단추를 만들려면
 
-1. [리소스 뷰](../windows/resource-view-window.md) 리소스 폴더를 확장 (예를 들어 *: Project1.rc*).
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources) 리소스 폴더를 확장 (예를 들어 *: Project1.rc*).
 
 1. 확장 된 **도구 모음** 폴더를 편집 하려면 도구 모음 선택 다음 하나를 수행 중:
 
@@ -138,7 +138,7 @@ ms.locfileid: "57563253"
 
 #### <a name="to-add-an-image-to-a-toolbar-as-a-button"></a>도구 모음에 단추와 이미지를 추가 하려면
 
-1. [리소스 뷰](../windows/resource-view-window.md)를 두 번 클릭 하 여 도구 모음을 엽니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)를 두 번 클릭 하 여 도구 모음을 엽니다.
 
 1. 다음으로, 도구 모음에 추가 하려는 이미지를 엽니다.
 

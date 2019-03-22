@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: da77e2ba93554cb65d4cc92353d05d54467b50d4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a4bd8546ba551ee37b9c03b5965a4079a3bd9f98
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269645"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328885"
 ---
 # <a name="c-amp-overview"></a>C++ AMP 개요
 
@@ -21,11 +21,15 @@ C + + Accelerated Massive Parallelism (c + + AMP)는 개별 그래픽 카드의 
 
 ## <a name="system-requirements"></a>시스템 요구 사항
 
-- Windows 7, Windows 8, Windows Server 2008 R2 또는 Windows Server 2012
+- Windows 7 이상
+
+- Windows Server 2008 R2 이상
 
 - DirectX 11 기능 수준 11.0 또는 이상 하드웨어
 
 - 소프트웨어 에뮬레이터 상의 디버깅, Windows 8 또는 Windows Server 2012가 필요 합니다. 하드웨어에서 디버깅하는 경우에는 사용 중인 그래픽 카드의 드라이버를 설치해야 합니다. 자세한 내용은 [GPU 코드 디버그](/visualstudio/debugger/debugging-gpu-code)합니다.
+
+- 참고: AMP 현재 ARM64에서 지원 되지 않습니다.
 
 ## <a name="introduction"></a>소개
 

@@ -3,7 +3,6 @@ title: 컴파일러 경고 C4200 ~ C4399
 ms.date: 11/17/2017
 f1_keywords:
 - C4203
-- C4274
 - C4277
 - C4279
 - C4298
@@ -12,7 +11,6 @@ f1_keywords:
 - C4303
 - C4314
 - C4315
-- C4316
 - C4317
 - C4318
 - C4321
@@ -22,22 +20,20 @@ f1_keywords:
 - C4328
 - C4330
 - C4338
-- C4343
 - C4352
 - C4362
 - C4367
 - C4370
-- C4373
 - C4380
 - C4387
 - C4388
 ms.assetid: 170248db-7bf2-4823-92d9-437b04c1290d
-ms.openlocfilehash: 9cca32973ead1d7d88e37c4745491c8d5f181e0b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: d79c9c12664f9920f03490b8cb53ec671d3d78a3
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810512"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328267"
 ---
 # <a name="compiler-warnings-c4200-through-c4399"></a>컴파일러 경고 C4200 ~ C4399
 
@@ -103,7 +99,7 @@ ms.locfileid: "57810512"
 |[컴파일러 경고(수준 1) C4269](../../error-messages/compiler-warnings/compiler-warning-level-1-c4269.md)|'*식별자*': 컴파일러에서 생성 된 기본 생성자를 사용 하 여 초기화 하는 'const' 자동 데이터 신뢰할 수 없는 결과 생성 합니다.|
 |[컴파일러 경고(수준 1) C4272](../../error-messages/compiler-warnings/compiler-warning-level-1-c4272.md)|'*함수*': __declspec (dllimport)을 표시 하는; 함수를 가져올 때 네이티브 호출 규칙을 지정 해야 합니다.|
 |[컴파일러 경고(수준 1) C4273](../../error-messages/compiler-warnings/compiler-warning-level-1-c4273.md)|'*함수*': 일관 되지 않은 dll 링크|
-|컴파일러 경고 (수준 1) C4274|#ident 무시 됩니다. #pragma 주석 (exestr, 'string')에 대 한 설명서를 참조 하세요.|
+|[컴파일러 경고 (수준 1) C4274](compiler-warning-level-1-c4274.md)|#ident 무시 됩니다. #pragma 주석 (exestr, 'string')에 대 한 설명서를 참조 하세요.|
 |[컴파일러 경고(수준 2) C4275](../../error-messages/compiler-warnings/compiler-warning-level-2-c4275.md)|dll 인터페이스가 아닌 '*classkey*' '*identifier1*'dll 인터페이스에 대 한 기준으로 사용'*classkey*' '*identifier2*'|
 |[컴파일러 경고(수준 1) C4276](../../error-messages/compiler-warnings/compiler-warning-level-1-c4276.md)|'*함수*': 프로토타입이 없는 제공; 매개 변수가 없는 것으로 간주|
 |컴파일러 경고 (수준 1) C4277|가져온된 항목 '*classname*::*멤버*' 데이터 멤버 및 함수 멤버에 있는 데이터 멤버가 무시 됩니다.|
@@ -140,7 +136,7 @@ ms.locfileid: "57810512"
 |[컴파일러 경고(수준 1) C4313](../../error-messages/compiler-warnings/compiler-warning-level-1-c4313.md)|'*함수*': '*format_specifier*'형식으로 문자열 충돌 인수를 사용 하 여'*argument_number*'형식의'*형식*'|
 |컴파일러 경고 C4314|pragma 매개 변수는 '32' 또는 '64' 이어야 합니다.|
 |컴파일러 경고 (수준 4) C4315|'*classname*': 'this'이 포인터 멤버에 대 한 '*멤버*'수 맞춰지지'*맞춤*' 생성자가 예상 대로|
-|컴파일러 경고 (수준 3) C4316|'*식별자*': 힙에 할당 된 개체를 정렬할 수 있습니다 '*맞춤*'|
+|[컴파일러 경고 (수준 3) C4316](compiler-warning-level-3-c4316.md)|'*식별자*': 힙에 할당 된 개체를 정렬할 수 있습니다 '*맞춤*'|
 |컴파일러 경고 (수준 1) C4317|'*printf_family*': 서식 문자열에 전달 된 인수가 부족 합니다.|
 |컴파일러 경고 C4318|memset에 길이로 상수 0을 전달합니다.|
 |[컴파일러 경고(수준 1) C4319](../../error-messages/compiler-warnings/compiler-warning-level-1-c4319.md)|'*연산자*': 0 확장 '*type1*'to'*type2*' 큰 크기의|
@@ -163,7 +159,7 @@ ms.locfileid: "57810512"
 |[컴파일러 경고(수준 4) C4339](../../error-messages/compiler-warnings/compiler-warning-level-4-c4339.md)|'*형식*': 정의 되지 않은 형식에서 검색 ' WinRT&#124;CLR' 메타 데이터-이 형식 사용 하면 런타임 예외가 발생할 수 있습니다|
 |[컴파일러 경고(수준 1) C4340](../../error-messages/compiler-warnings/compiler-warning-level-1-c4340.md)|'*값*': 음수 값으로 양의에서 래핑된 값|
 |[컴파일러 경고(수준 1) C4342](../../error-messages/compiler-warnings/compiler-warning-level-1-c4342.md)|동작 변경: '*함수*' 호출 되었지만 이전 버전에서는 멤버 연산자가 호출|
-|컴파일러 경고 (수준 4) C4343|#pragma optimize("g",off)는 /Og 옵션을 재정의합니다.|
+|[컴파일러 경고 (수준 4) C4343](compiler-warning-level-4-c4343.md)|#pragma optimize("g",off)는 /Og 옵션을 재정의합니다.|
 |[컴파일러 경고(수준 1) C4344](../../error-messages/compiler-warnings/compiler-warning-level-1-c4344.md)|동작 변경: 명시적 템플릿 인수 결과 호출에서 사용 하 여 '*함수*'|
 |[컴파일러 경고(수준 1) C4346](../../error-messages/compiler-warnings/compiler-warning-level-1-c4346.md)|'*이름을*': 종속 이름이 형식이 아닙니다.|
 |[컴파일러 경고(수준 1) C4348](../../error-messages/compiler-warnings/compiler-warning-level-1-c4348.md)|'*형식*': 기본 매개 변수 재정의: 매개 변수 '*parameter_number*'|
@@ -184,7 +180,7 @@ ms.locfileid: "57810512"
 |[컴파일러 경고(수준 1) C4369](../../error-messages/compiler-warnings/compiler-warning-level-1-c4369.md)|'*열거자*': 열거자 값 '*값*'로 표시할 수 없는'*형식*', 값은 '*new_value*'|
 |컴파일러 경고 C4370|'*classname*': 압축 기능이 향상 되어 컴파일러의 이전 버전에서 클래스 레이아웃이 변경 되었습니다|
 |[컴파일러 경고 (수준 3) C4371](../../error-messages/compiler-warnings/c4371.md)|'*classname*': 멤버를 잘 압축 했기 때문에 컴파일러의 이전 버전에서 클래스 레이아웃이 변경 될 수 있습니다 '*멤버*'|
-|컴파일러 경고 (수준 3) C4373|'*derived_class*::*함수*': 가상 함수 재정의*base_class*::*함수*', 이전 버전의 컴파일러 매개 변수는 const/volatile 한정자만 다릅니다 때 재정의 하지 않았습니다.|
+|[컴파일러 경고 (수준 3) C4373](compiler-warning-level-3-c4373.md)|'*derived_class*::*함수*': 가상 함수 재정의*base_class*::*함수*', 이전 버전의 컴파일러 매개 변수는 const/volatile 한정자만 다릅니다 때 재정의 하지 않았습니다.|
 |[컴파일러 경고(수준 1) C4374](../../error-messages/compiler-warnings/compiler-warning-level-1-c4374.md)|'*function1*': 인터페이스 메서드는 비가상 메서드에 의해 구현 되지 것입니다 '*function2*'|
 |[컴파일러 경고(수준 1) C4375](../../error-messages/compiler-warnings/compiler-warning-level-1-c4375.md)|public이 아닌 메서드 '*method2*'재정의 하지 않는'*method2*'|
 |[컴파일러 경고(수준 1) C4376](../../error-messages/compiler-warnings/compiler-warning-level-1-c4376.md)|액세스 지정자 '*old_specifier*:'는 지원 되지 않습니다: 사용 하십시오 '*new_specifier*:' 대신|
@@ -205,7 +201,7 @@ ms.locfileid: "57810512"
 |[컴파일러 경고(수준 1) C4393](../../error-messages/compiler-warnings/compiler-warning-level-1-c4393.md)|'*변수에*': const 영향을 주지 않습니다 '*리터럴*' 데이터 멤버; 무시|
 |[컴파일러 경고 C4394](../../error-messages/compiler-warnings/compiler-warning-c4394.md)|'*함수*': appdomain 별 기호는 __declspec('dllexport')로 표시할 수 없습니다|
 |[컴파일러 경고(수준 1) C4395](../../error-messages/compiler-warnings/compiler-warning-level-1-c4395.md)|'*함수*': initonly 데이터 멤버의 복사본에서 멤버 함수를 호출할 수는 '*멤버*'|
-|컴파일러 경고 (수준 2) C4396|'*함수*': friend 선언이 함수 템플릿의 특수화를 참조 하는 경우 인라인 지정자를 사용할 수 없습니다.|
+|[컴파일러 경고 (수준 2) C4396](compiler-warning-level-2-c4396.md)|'*함수*': friend 선언이 함수 템플릿의 특수화를 참조 하는 경우 인라인 지정자를 사용할 수 없습니다.|
 |[컴파일러 경고(수준 1) C4397](../../error-messages/compiler-warnings/compiler-warning-level-1-c4397.md)|DefaultCharSetAttribute가 무시 됩니다.|
 |[컴파일러 경고(수준 3) C4398](../../error-messages/compiler-warnings/compiler-warning-level-3-c4398.md)|'*변수*': appdomain이 여러 개 프로세스별 전역 개체가 제대로 작동 하지 않으면 __declspec (appdomain)를 사용 하는 것이 좋습니다.|
 |[컴파일러 경고(수준 1) C4399](../../error-messages/compiler-warnings/compiler-warning-level-1-c4399.md)|'*기호*': /clr으로 컴파일될 때 __declspec('dllimport')로 프로세스별 기호를 표시 되어야 합니다: 순수|

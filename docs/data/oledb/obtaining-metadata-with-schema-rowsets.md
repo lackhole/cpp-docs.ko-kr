@@ -6,12 +6,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, getting provider metadata
 - metadata, getting (OLE DB Templates)
 ms.assetid: 6b448461-82fb-4acf-816b-3cbb0ca1d186
-ms.openlocfilehash: 64502c19b55d42ab0ed7f6c2b8b1cf503e7795c8
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 9e61507a187f7625e7e90e2a0e3a1ce404573e29
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422674"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328872"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>스키마 행 집합을 사용하여 메타데이터 구하기
 
@@ -52,7 +52,7 @@ CRestrictions<CAccessor<CColumnsInfo>
 
 합니다 [CRestrictions](../../data/oledb/crestrictions-class.md) 클래스는 제한을 지원 제공 합니다. 스키마 행 집합의 인스턴스를 만든 후 호출 [crestrictions:: Open](../../data/oledb/crestrictions-open.md)합니다. 이 메서드는 지정하는 제한을 기반으로 결과 집합을 반환합니다.
 
-제한 지정, 참조 [부록 b: 스키마 행 집합](/previous-versions/windows/desktop/ms712921(v=vs.85)) 및 사용 하는 행 집합을 조회 합니다. 예를 들어 `CColumns` 에 해당 하는 [COLUMNS 행 집합](/previous-versions/windows/desktop/ms723052(v=vs.85)\(v%3dvs.85\));에서는 COLUMNS 행 집합에서 제한 열이 나열: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. 제한을 지정할 때 이 순서를 따라야 합니다.
+제한 지정, 참조 [부록 b: 스키마 행 집합](/previous-versions/windows/desktop/ms712921(v=vs.85)) 및 사용 하는 행 집합을 조회 합니다. 예를 들어 `CColumns` 에 해당 하는 [COLUMNS 행 집합](/previous-versions/windows/desktop/ms723052(v=vs.85));에서는 COLUMNS 행 집합에서 제한 열이 나열: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. 제한을 지정할 때 이 순서를 따라야 합니다.
 
 따라서 예를 들어 테이블 이름으로 제한 하려는 경우 TABLE_NAME는 세 번째 제한 열 및 호출 `Open`, 다음 예제에서와 같이 원하는 테이블 이름을 세 번째 제한 매개 변수로 지정 합니다.
 

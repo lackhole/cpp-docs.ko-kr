@@ -3,12 +3,12 @@ title: Visual Studio에서 CMake 빌드 설정 사용자 지정
 ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake build settings
-ms.openlocfilehash: aa840dd41ee6843afae80343e42ba62741bbcd80
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: dd34fbefcbc89c7c4aa93105ae5bad31ae4d5f01
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826395"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328300"
 ---
 # <a name="customize-cmake-build-settings"></a>CMake 빌드 설정 사용자 지정
 
@@ -53,19 +53,19 @@ JSON IntelliSense를 사용하면 `CMakeSettings.json` 파일을 편집할 수 �
 
 - **generator**: CMake **-G** 스위치에 매핑되고 사용할 생성기를 지정합니다. 이 속성은 다른 속성 값을 구성할 때 매크로(`${generator}`)로 사용할 수도 있습니다. Visual Studio에서 현재 지원하는 CMake 생성기는 다음과 같습니다.
 
-    - "Ninja"
-    - "Visual Studio 14 2015"
-    - "Visual Studio 14 2015 ARM"
-    - "Visual Studio 14 2015 Win64"
-    - "Visual Studio 15 2017"
-    - "Visual Studio 15 2017 ARM"
-    - "Visual Studio 15 2017 Win64"
+  - "Ninja"
+  - "Visual Studio 14 2015"
+  - "Visual Studio 14 2015 ARM"
+  - "Visual Studio 14 2015 Win64"
+  - "Visual Studio 15 2017"
+  - "Visual Studio 15 2017 ARM"
+  - "Visual Studio 15 2017 Win64"
 
-    Ninja는 유연성과 기능 대신 빠른 속도로 빌드하도록 설계되었으므로 기본값으로 설정됩니다. 그러나 일부 CMake 프로젝트는 Ninja를 사용하여 올바르게 빌드하지 못할 수도 있습니다. 이 경우 CMake에서 Visual Studio 프로젝트를 대신 생성하도록 지시할 수 있습니다.
+  Ninja는 유연성과 기능 대신 빠른 속도로 빌드하도록 설계되었으므로 기본값으로 설정됩니다. 그러나 일부 CMake 프로젝트는 Ninja를 사용하여 올바르게 빌드하지 못할 수도 있습니다. 이 경우 CMake에서 Visual Studio 프로젝트를 대신 생성하도록 지시할 수 있습니다.
 
-    Visual Studio 생성기를 지정하려면 주 메뉴에서 **CMake | CMake 설정 변경**을 선택하여 `CMakeSettings.json`을 엽니다. "Ninja"를 삭제하고 "V"를 입력합니다. 이렇게 하면 원하는 생성기를 선택할 수 있도록 IntelliSense가 활성화됩니다.
+  Visual Studio 생성기를 지정하려면 주 메뉴에서 **CMake | CMake 설정 변경**을 선택하여 `CMakeSettings.json`을 엽니다. "Ninja"를 삭제하고 "V"를 입력합니다. 이렇게 하면 원하는 생성기를 선택할 수 있도록 IntelliSense가 활성화됩니다.
 
-    활성 구성에서 Visual Studio 생성기를 지정하면 기본적으로 `-m -v:minimal` 인수를 사용하여 MSBuild.exe가 호출됩니다. `CMakeSettings.json` 파일 내에서 빌드를 사용자 지정하려면 `buildCommandArgs` 속성을 통해 빌드 시스템에 전달할 추가 [MSBuild 명령줄 인수](../build/msbuild-visual-cpp-overview.md)를 지정할 수 있습니다.
+  활성 구성에서 Visual Studio 생성기를 지정하면 기본적으로 `-m -v:minimal` 인수를 사용하여 MSBuild.exe가 호출됩니다. `CMakeSettings.json` 파일 내에서 빌드를 사용자 지정하려면 `buildCommandArgs` 속성을 통해 빌드 시스템에 전달할 추가 [MSBuild 명령줄 인수](../build/reference/msbuild-visual-cpp-overview.md)를 지정할 수 있습니다.
     
     ```json
     "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
@@ -132,7 +132,7 @@ usage: ninja [options] [targets...]
 |   -n       | 시험 실행을 수행합니다(명령을 실행하지 않고 성공한 것처럼 작동함)|
 |   -v       | 빌드하는 동안 모든 명령줄을 표시합니다.|
 |   -d MODE  | 디버깅을 사용하도록 설정합니다(-d list를 사용하여 모드를 나열함).|
-|   -t TOOL  | 하위 도구를 실행합니다(-t list를 사용하여 하위 도구를 나열함). 최상위 옵션을 종료합니다. 추가 플래그가 도구에 전달됩니다.|
+|   -t TOOL  | 하위 도구를 실행합니다(-t list를 사용하여 하위 도구를 나열함). 최상위 옵션과 종료 플래그는 도구에 전달할 추가|
 |   -w FLAG  | 경고를 조정합니다(-w list를 사용하여 경고를 표시함).|
 
 ## <a name="inherited-environments"></a>상속된 환경

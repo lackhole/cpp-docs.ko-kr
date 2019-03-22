@@ -14,18 +14,18 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-ms.openlocfilehash: c05dd9da5dd17b0e06ace750d34f2c5abcf94380
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 7ef8127b829b60d84af72874292c33ae1c7c4636
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827527"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58327583"
 ---
 # <a name="file-types-created-for-visual-studio-c-projects"></a>Visual Studio c + + 프로젝트용으로 만들어지는 파일 형식
 
 이 항목에서는 클래식 데스크톱 응용 프로그램에 대 한 Visual Studio 프로젝트와 연관 된 파일의 모든 형식을 설명 합니다. 프로젝트 형식 및 마법사에서 선택한 옵션에 따라 프로젝트에 포함되는 실제 파일이 달라집니다.
 
-- [프로젝트 및 솔루션 파일]()
+- [프로젝트 및 솔루션 파일](project-and-solution-files.md)
 
 - [CLR 프로젝트](files-created-for-clr-projects.md)
 
@@ -78,8 +78,8 @@ Visual Studio 프로젝트를 만들면 새 솔루션을 만들 수 있습니다
 |.vap|프로젝트|Visual Studio Analyzer 프로젝트 파일|
 |.vbg|솔루션|호환 가능한 프로젝트 그룹 파일|
 |.vbp, .vip, .vbproj|프로젝트|Visual Basic 프로젝트 파일|
-|.vcxitems|프로젝트|여러 C++ 프로젝트 간에 코드 파일을 공유하는 공유 항목 프로젝트입니다. 자세한 내용은 [프로젝트 파일 및 메이크파일]() 을 참조하세요.|
-|.vcxproj|프로젝트|Visual Studio 프로젝트 파일입니다. 자세한 내용은 [프로젝트 파일 및 메이크파일]() 을 참조하세요.|
+|.vcxitems|프로젝트|여러 C++ 프로젝트 간에 코드 파일을 공유하는 공유 항목 프로젝트입니다. 참조 [프로젝트 및 솔루션 파일](project-and-solution-files.md) 자세한 내용은 합니다.|
+|.vcxproj|프로젝트|Visual Studio 프로젝트 파일입니다. 참조 [프로젝트 및 솔루션 파일](project-and-solution-files.md) 자세한 내용은 합니다.|
 |.vcxproj.filters|프로젝트|솔루션 탐색기를 사용하여 프로젝트에 파일을 추가하는 경우 필터 파일은 솔루션 탐색기 트리 뷰에서 해당 파일 이름 확장명에 따라 파일이 추가되는 위치를 정의합니다.|
 |.vdproj|프로젝트|Visual Studio 배포 프로젝트 파일|
 |.vmx|프로젝트|매크로 프로젝트 파일|

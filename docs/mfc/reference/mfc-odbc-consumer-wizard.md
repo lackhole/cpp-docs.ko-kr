@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC ODBC Consumer Wizard
 - wizards [MFC]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-ms.openlocfilehash: 75d62eb5ce3d24322d7af5030fb8d723ffa8fedb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b6009a1e6b6100eabaa2ed05404217c0d2906be0
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259934"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328651"
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC 소비자 마법사
 
@@ -25,13 +25,13 @@ ms.locfileid: "57259934"
 
 - **데이터 원본**
 
-  합니다 **데이터 원본** 단추 지정된 된 ODBC 드라이버를 사용 하 여 지정 된 데이터 소스를 설정할 수 있습니다. 데이터 원본 파일 (DSN)에 대 한 자세한 내용은 참조 하세요. [파일 데이터 원본을](/previous-versions/windows/desktop/ms715401) ODBC SDK에 있습니다.
+  합니다 **데이터 원본** 단추 지정된 된 ODBC 드라이버를 사용 하 여 지정 된 데이터 소스를 설정할 수 있습니다. 데이터 원본 파일 (DSN)에 대 한 자세한 내용은 참조 하세요. [파일 데이터 원본을](/sql/odbc/reference/file-data-sources) ODBC SDK에 있습니다.
 
   합니다 **데이터 원본 선택** 대화 상자에 두 개의 탭이 있습니다.
 
   - **파일 데이터 원본** 탭:
 
-     합니다 **찾는 위치** 상자에서 데이터 원본으로 사용 될 파일을 선택할 수 있는 디렉터리를 지정 합니다. 기본값은 \Program Files\Common Files\ODBC\Data 원본입니다. 기존 파일 데이터 원본 (.dsn 파일) 기본 목록 상자에 표시 합니다. 데이터 원본 사용 하 여 미리 구성 하거나 설정할 수 있습니다는 **파일 DSN** 탭의 [ODBC 데이터 원본 관리자](/previous-versions/windows/desktop/ms714024), 또는이 대화 상자를 사용 하 여 새 보고서 만들기.
+     합니다 **찾는 위치** 상자에서 데이터 원본으로 사용 될 파일을 선택할 수 있는 디렉터리를 지정 합니다. 기본값은 \Program Files\Common Files\ODBC\Data 원본입니다. 기존 파일 데이터 원본 (.dsn 파일) 기본 목록 상자에 표시 합니다. 데이터 원본 사용 하 여 미리 구성 하거나 설정할 수 있습니다는 **파일 DSN** 탭의 [ODBC 데이터 원본 관리자](/sql/odbc/admin/odbc-data-source-administrator), 또는이 대화 상자를 사용 하 여 새 보고서 만들기.
 
      이 대화 상자에서 새 파일 데이터 원본을 만들려면 `New` ; DSN 이름을 지정 하는 **새 데이터 원본 만들기** 대화 상자가 나타납니다. 에 **새 데이터 원본 만들기** 대화 상자는 적절 한 드라이버를 선택 하 고 클릭 `Next`; 클릭 **찾아보기**, 선택한 (선택 해야 모든 파일을 데이터 소스로 사용할 파일의 이름 보기 DSN이 아닌 파일과 같은 파일을.xls); 클릭 `Next`를 클릭 하 고 **완료**합니다. (DSN이 아닌 파일을 선택 하면 드라이버 관련 대화 상자에서 "ODBC Microsoft Excel 설정" 파일 DSN을 변환 하는 등.)
 
@@ -40,13 +40,13 @@ ms.locfileid: "57259934"
 
      합니다 **DSN 이름을** 상자를 사용 하는 파일 데이터 원본에 대 한 이름을 지정할 수 있습니다. 예: Excel 파일에 대 한.xls 또는.mdb 파일 액세스에 대 한 적절 한 파일 확장명을 사용 하 여 DSN 이름을 끝나도록 해야 합니다.
 
-     Dsn에 대 한 자세한 내용은 참조 하세요. [파일 데이터 원본을](/previous-versions/windows/desktop/ms715401) ODBC SDK에 있습니다.
+     Dsn에 대 한 자세한 내용은 참조 하세요. [파일 데이터 원본을](/sql/odbc/reference/file-data-sources) ODBC SDK에 있습니다.
 
   - **데이터 소스 컴퓨터** 탭:
 
-     이 탭에는 시스템 및 사용자 데이터 원본을 나열합니다. 사용자 데이터 원본은이 컴퓨터에서 사용자와 관련이 있습니다. 시스템 데이터 원본 또는 시스템 전반에 걸쳐 서비스를이 컴퓨터에서 모든 사용자가 사용할 수 있습니다. 참조 [데이터 원본 컴퓨터](/previous-versions/windows/desktop/ms710952) ODBC sdk
+     이 탭에는 시스템 및 사용자 데이터 원본을 나열합니다. 사용자 데이터 원본은이 컴퓨터에서 사용자와 관련이 있습니다. 시스템 데이터 원본 또는 시스템 전반에 걸쳐 서비스를이 컴퓨터에서 모든 사용자가 사용할 수 있습니다. 참조 [데이터 원본 컴퓨터](/sql/odbc/reference/machine-data-sources) ODBC sdk
 
-     ODBC 데이터 원본에 대 한 자세한 내용은 참조 하세요. [데이터 원본](/previous-versions/windows/desktop/ms711688) ODBC SDK에 있습니다.
+     ODBC 데이터 원본에 대 한 자세한 내용은 참조 하세요. [데이터 원본](/sql/odbc/reference/data-sources) ODBC SDK에 있습니다.
 
   클릭 **확인** 완료 합니다. 합니다 **데이터베이스 개체 선택** 대화 상자가 나타납니다. 이 대화 상자에서 테이블을 선택 하거나 소비자가 사용할 보고 합니다. 참고 항목을 클릭 하는 동안 컨트롤 키를 눌러 여러 뷰 및 테이블과 선택할 수 있습니다. 클릭 **확인** 완료 합니다.
 
