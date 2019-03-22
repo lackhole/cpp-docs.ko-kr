@@ -37,12 +37,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HString::Set method
 - Microsoft::WRL::Wrappers::HString::~HString, destructor
 ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
-ms.openlocfilehash: 9d660f507f50c00c8ccd6f19505f09285ede9e60
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 19ef11a5d33e69bb77049e450df1b386528b7f7b
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893602"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356233"
 ---
 # <a name="hstring-class"></a>HString 클래스
 
@@ -90,7 +90,7 @@ Windows 런타임을 통해 문자열에 대 한 액세스를 제공 [HSTRING](/
 [HString::operator!=](#operator-inequality)  | 두 매개 변수가 같지 않은지를 나타냅니다.
 [HString::operator&lt;](#operator-less-than) | 첫 번째 매개 변수 인지 보다 작은 두 번째 매개 변수를 나타냅니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `HString`
 
@@ -180,14 +180,14 @@ HSTRING* GetAddressOf() throw()
 
 ### <a name="remarks"></a>설명
 
-이 작업 후에 기본 HSTRING 핸들의 문자열 값이 제거됩니다.
+이 작업 후에 기본 HSTRING 핸들의 문자열 값이 삭제됩니다.
 
 ## <a name="hstring"></a>HString::HString
 
 `HString` 클래스의 새 인스턴스를 초기화합니다.
 
 ```cpp
-HString(HSTRING hstr = nullptr) throw();
+HString() throw();
 HString(HString&& other) throw();
 ```
 

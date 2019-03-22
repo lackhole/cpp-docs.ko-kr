@@ -17,12 +17,12 @@ helpviewer_keywords:
 - exceptions, diagnosing odd behavior
 - compatibility, between assemblies
 ms.assetid: 679b8ed3-d966-4a0c-b627-2a3f3ec96b74
-ms.openlocfilehash: c61f3fdd434a1b746c024b1a98d1d71f04df7e5b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: b91918d526d83d4cf47436d02b7c67038576bafb
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746919"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356181"
 ---
 # <a name="managed-types-ccli"></a>관리되는 형식(C++/CLI)
 
@@ -46,19 +46,21 @@ int main(int, char*[], char*[]) {}
 
 |Visual c + + 형식|.NET Framework 형식|
 |-----------------------|-------------------------|
-|**bool**|**System.Boolean**|
-|**char 서명** (참조 [/J](../build/reference/j-default-char-type-is-unsigned.md) 자세한)|**System.SByte**|
-|**unsigned char**|**System.Byte**|
-|**wchar_t**|**System.Char**|
-|**이중** 고 **long double**|**System.Double**|
-|**float**|**System.Single**|
-|**int**, **int 서명**합니다 **long**, 및 **기호가 있는 long**|**System.Int32**|
-|**부호 없는 int** 고 **부호 없는 long**|**System.UInt32**|
-|**__int64** 고 **__int64 서명**|**System.Int64**|
-|**unsigned __int64**|**System.UInt64**|
-|**짧은** 고 **즉 서명**|**System.Int16**|
-|**unsigned short**|**System.UInt16**|
-|**void**|**System.Void**|
+|**void**|<xref:System.Void?displayProperty=nameWithType>|
+|**bool**|<xref:System.Boolean?displayProperty=nameWithType>|
+|**signed) char** |<xref:System.SByte?displayProperty=nameWithType>|
+|**unsigned char**|<xref:System.Byte?displayProperty=nameWithType>|
+|**wchar_t**|<xref:System.Char?displayProperty=nameWithType>|
+|**짧은** 고 **즉 서명**|<xref:System.Int16?displayProperty=nameWithType>|
+|**unsigned short**|<xref:System.UInt16?displayProperty=nameWithType>|
+|**int**, **int 서명**합니다 **long**, 및 **기호가 있는 long**|<xref:System.Int32?displayProperty=nameWithType>|
+|**부호 없는 int** 고 **부호 없는 long**|<xref:System.UInt32?displayProperty=nameWithType>|
+|**__int64** 고 **__int64 서명**|<xref:System.Int64?displayProperty=nameWithType>|
+|**unsigned __int64**|<xref:System.UInt64?displayProperty=nameWithType>|
+|**float**|<xref:System.Single?displayProperty=nameWithType>|
+|**이중** 고 **long double**|<xref:System.Double?displayProperty=nameWithType>|
+
+에 부호가 있거나 부호가 없는 기본 컴파일러 옵션에 대 한 자세한 내용은 **char**를 참조 하세요 [/J (기본 문자 형식이 부호가 없습니다)](../build/reference/j-default-char-type-is-unsigned.md)합니다.
 
 ## <a name="version_issues"></a> 네이티브 형식에 중첩 된 값 형식의 버전 문제
 

@@ -52,12 +52,12 @@ helpviewer_keywords:
 - C1505
 - C1901
 ms.assetid: 6c8df109-7594-48ed-987a-97d9fe2b04af
-ms.openlocfilehash: 6809ef1640c324e247bd20c83d4622fe27987ae6
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 17c456f6ab248964cbd19cd9695da290254ccf1b
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328248"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356220"
 ---
 # <a name="compiler-fatal-errors-c999-through-c1999"></a>심각한 컴파일러 오류(C999~C1999)
 
@@ -70,7 +70,7 @@ ms.locfileid: "58328248"
 |Error|메시지|
 |-----------|-------------|
 |[심각한 오류 C999](../../error-messages/compiler-errors-1/fatal-error-c999.md)|알 수 없는 메시지. 자세한 내용을 보려면 Visual C++ [도움말] 메뉴에서 [기술 지원] 명령을 선택하거나 기술 지원 도움말 파일을 참조하세요.|
-|[심각한 오류 C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|컴파일러에서 내부 오류가 발생했습니다.<br /><br /> (컴파일러 파일 '*file*', 줄 *number*)<br /><br /> 이 문제를 해결하려면 위 목록에 나오는 위치 부근의 프로그램을 단순화하거나 변경하세요. 자세한 내용을 보려면 Visual C++ [도움말] 메뉴에서 [기술 지원] 명령을 선택하거나 기술 지원 도움말 파일을 참조하세요.|
+|[심각한 오류 C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|컴파일러에서 내부 오류가 발생했습니다.<br /> (컴파일러 파일 '*file*', 줄 *number*)<br /> 이 문제를 해결하려면 위 목록에 나오는 위치 부근의 프로그램을 단순화하거나 변경하세요. 자세한 내용을 보려면 Visual C++ [도움말] 메뉴에서 [기술 지원] 명령을 선택하거나 기술 지원 도움말 파일을 참조하세요.|
 |[심각한 오류 C1002](../../error-messages/compiler-errors-1/fatal-error-c1002.md)|2번 패스에서 컴파일러의 힙 공간이 부족합니다.|
 |[심각한 오류 C1003](../../error-messages/compiler-errors-1/fatal-error-c1003.md)|오류 수가 *number*개를 초과했습니다. 컴파일을 중지합니다.|
 |[심각한 오류 C1004](../../error-messages/compiler-errors-1/fatal-error-c1004.md)|예기치 않은 파일의 끝이 나타났습니다.|
@@ -78,7 +78,7 @@ ms.locfileid: "58328248"
 |[심각한 오류 C1007](../../error-messages/compiler-errors-1/fatal-error-c1007.md)|인식할 수 없는 플래그 '*string*'이 '*option*'에 있습니다.|
 |[심각한 오류 C1008](../../error-messages/compiler-errors-1/fatal-error-c1008.md)|입력 파일을 지정하지 않았습니다.|
 |[심각한 오류 C1009](../../error-messages/compiler-errors-1/fatal-error-c1009.md)|컴파일러 한계: 매크로가 너무 많이 중첩되었습니다.|
-|[심각한 오류 C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. 추가 했는지 ' #include <*파일*>' 소스에?|
+|[심각한 오류 C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. 추가 했는지 ' #include \< *파일*>' 소스에?|
 |[심각한 오류 C1012](fatal-error-c1012.md)|괄호가 짝이 맞지 않습니다. '*character*"가 없습니다.|
 |[심각한 오류 C1013](fatal-error-c1013.md)|컴파일러 한계: 여는 괄호가 너무 많습니다.|
 |[심각한 오류 C1014](fatal-error-c1014.md)|포함 파일이 너무 많습니다. 수준 = *number*|
