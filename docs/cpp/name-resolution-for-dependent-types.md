@@ -40,7 +40,7 @@ int main()
 Name resolved by using typename keyword.
 ```
 
-종속 이름에 대 한 이름 조회 템플릿 정의의 두 컨텍스트에서 이름을 조사-다음 예제에서 검색 하는이 컨텍스트 `myFunction(char)`-및 템플릿 인스턴스화의 컨텍스트에서 합니다. 다음 예제에서는 템플릿이 main에서 인스턴스화될 때 따라서는 `MyNamespace::myFunction` 인스턴스화 시점에서 표시 되 고 더 나은 일치 항목으로 선택 됩니다. `MyNamespace::myFunction`의 이름이 바뀐 경우 `myFunction(char)`이 대신 호출됩니다.
+종속 이름에 대한 이름 검색은 템플릿 정의의 컨텍스트(다음 예제에서 `myFunction(char)`를 검색하는 컨텍스트) 및 템플릿 인스턴스화의 컨텍스트에서 이름을 조사합니다. 다음 예제에서는 템플릿이 main에서 인스턴스화되므로 `MyNamespace::myFunction`은 인스턴스화된 지점부터 표시되며 더 잘 일치하는 것으로 선택됩니다. `MyNamespace::myFunction`의 이름이 바뀐 경우 `myFunction(char)`이 대신 호출됩니다.
 
 모든 이름은 종속 이름인 것처럼 확인됩니다. 그러나 충돌 발생 가능성이 있을 경우 철저하게 정규화된 이름을 사용하는 것이 좋습니다.
 
