@@ -7,12 +7,12 @@ helpviewer_keywords:
 - mixed-mode applications, intermediate language
 - projects [C++], converting to intermediate language
 ms.assetid: 855f9e3c-4f09-4bfe-8eab-a45f68292be9
-ms.openlocfilehash: 46a12e6204113b00c209696bbdfd1093232d7521
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93eff646fb582e25ad70549afc714c5321e56079
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559678"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328586"
 ---
 # <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>혼합된 모드에서 순수 intermediate language로 프로젝트를 변환
 
@@ -80,19 +80,19 @@ ms.locfileid: "50559678"
    |[Boolean](/dotnet/api/system.boolean)|부울 값을 나타냅니다.|
    |[Byte](/dotnet/api/system.byte)|부호 없는 8비트 정수를 나타냅니다.|
    |[Char](/dotnet/api/system.char)|유니코드 문자를 나타냅니다.|
-   |[DateTime](/dotnet/api/system.datetime.datetime.aspx)|일반적으로 날짜와 시간으로 표시된 시간을 나타냅니다.|
+   |[DateTime](/dotnet/api/system.datetime)|일반적으로 날짜와 시간으로 표시된 시간을 나타냅니다.|
    |[Decimal](/dotnet/api/system.decimal)|10진수를 나타냅니다.|
-   |[double](/dotnet/api/system.double)|배정밀도 부동 소수점 숫자를 나타냅니다.|
+   |[Double](/dotnet/api/system.double)|배정밀도 부동 소수점 숫자를 나타냅니다.|
    |[Guid](/dotnet/api/system.guid)|GUID(Globally Unique IDentifier)를 나타냅니다.|
    |[Int16](/dotnet/api/system.int16)|부호 있는 16비트 정수를 나타냅니다.|
    |[Int32](/dotnet/api/system.int32)|부호 있는 32비트 정수를 나타냅니다.|
    |[Int64](/dotnet/api/system.int64)|부호 있는 64비트 정수를 나타냅니다.|
    |[IntPtr](/dotnet/api/system.intptr)|포인터나 핸들을 나타내는 데 사용되는 플랫폼별 형식입니다.|
-   |[SByte](/dotnet/api/system.byte.aspx)|8비트 부호 있는 정수를 나타냅니다.|
-   |[Single](/dotnet/api/system.single.aspx)|단정밀도 부동 소수점 숫자를 나타냅니다.|
+   |[SByte](/dotnet/api/system.byte)|8비트 부호 있는 정수를 나타냅니다.|
+   |[Single](/dotnet/api/system.single)|단정밀도 부동 소수점 숫자를 나타냅니다.|
    |[TimeSpan](/dotnet/api/system.timespan)|시간 간격을 나타냅니다.|
    |[UInt16](/dotnet/api/system.uint16)|16비트 부호 없는 정수를 나타냅니다.|
    |[UInt32](/dotnet/api/system.uint32)|32비트 부호 없는 정수를 나타냅니다.|
    |[UInt64](/dotnet/api/system.uint64)|64비트 부호 없는 정수를 나타냅니다.|
    |[UIntPtr](/dotnet/api/system.uintptr)|포인터나 핸들을 나타내는 데 사용되는 플랫폼별 형식입니다.|
-   |[void](/dotnet/api/system.void)|값을 반환 하지 않는 메서드를 나타냅니다. 즉, 메서드 void 반환 형식을 갖습니다.|
+   |[Void](/dotnet/api/system.void)|값을 반환 하지 않는 메서드를 나타냅니다. 즉, 메서드 void 반환 형식을 갖습니다.|

@@ -3,12 +3,12 @@ title: '방법: Winmdidl.exe 및 midlrt.exe를 사용 하 여 windows 메타 데
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 4be8ba11-c223-44ad-9256-7e1edae9a7bc
-ms.openlocfilehash: b81f6901e60f27ada27f14d7dbc7c10fa3faec34
-ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
+ms.openlocfilehash: b9016f05b82e3eb04474d370bd069e8008de5278
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54336561"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328717"
 ---
 # <a name="how-to-use-winmdidlexe-and-midlrtexe-to-create-h-files-from-windows-metadata"></a>방법: Winmdidl.exe 및 midlrt.exe를 사용 하 여 windows 메타 데이터에서.h 파일을 만들려면
 
@@ -18,7 +18,7 @@ Winmdidl.exe 및 midlrt.exe는 Windows 런타임 구성 요소 및 네이티브 
 
 - Windows 런타임 템플릿 라이브러리(WRL)를 사용하여 작성된 C++ 앱에서 사용자 지정 Windows 런타임 구성 요소를 사용할 수 있도록 사용자 지정 IDL 및 헤더 파일을 만드는 경우
 
-- Windows 런타임 구성 요소에서 사용자 정의 이벤트 형식에 대한 프록시와 스텁 파일을 생성하는 경우 자세한 내용은 [사용자 지정 이벤트 및 Windows 런타임 구성 요소에서 이벤트 접근자](/uwp/winrt-components/custom-events-and-event-accessors-in-windows-runtime-components)합니다.
+- Windows 런타임 구성 요소에서 사용자 정의 이벤트 형식에 대한 프록시와 스텁 파일을 생성하는 경우 자세한 내용은 [사용자 지정 이벤트 및 Windows 런타임 구성 요소에서 이벤트 접근자](/windows/uwp/winrt-components/custom-events-and-event-accessors-in-windows-runtime-components)합니다.
 
 이러한 도구는 사용자 지정 .winmd 파일을 구문 분석하는 데 필요합니다. Windows 운영 체제 구성 요소에 대한 .idl 및.h 파일이 이미 생성되어 있습니다. Windows 8.1는 기본적으로 \Program 파일 (x86) \Windows Kits\8.1\Include\winrt에 있는\\합니다.
 
@@ -75,4 +75,4 @@ Winmdidl.exe [/nologo] [/suppressversioncheck] [/time] [/outdir:dir] [/banner:fi
 
 Winmdidl 작업의 출력 파일은 입력 파일과 이름이 같지만 확장명이 .idl입니다.
 
-WRL에서 액세스할 수 있는 Windows 런타임 구성 요소를 개발하는 경우 .idl 및 .h 파일이 각 빌드에 생성되도록 빌드 후 단계로 winmdidl.exe 및 midlrt.exe를 실행할 수 있습니다. 예를 들어 참조 [Windows 런타임 구성 요소에서 이벤트 발생 시키기](/uwp/winrt-components/raising-events-in-windows-runtime-components)합니다.
+WRL에서 액세스할 수 있는 Windows 런타임 구성 요소를 개발하는 경우 .idl 및 .h 파일이 각 빌드에 생성되도록 빌드 후 단계로 winmdidl.exe 및 midlrt.exe를 실행할 수 있습니다. 예를 들어 참조 [Windows 런타임 구성 요소에서 이벤트 발생 시키기](/windows/uwp/winrt-components/raising-events-in-windows-runtime-components)합니다.

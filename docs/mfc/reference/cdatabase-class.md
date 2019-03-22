@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CDatabase [MFC], SetQueryTimeout
 - CDatabase [MFC], m_hdbc
 ms.assetid: bd0de70a-e3c3-4441-bcaa-bbf434426ca8
-ms.openlocfilehash: 0e523b2a145254cd9b7adf2b066605a679349f6c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ebc36d82af9bfe12ab30a86214e58610b5eaab95
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273450"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58329002"
 ---
 # <a name="cdatabase-class"></a>CDatabase 클래스
 
@@ -192,7 +192,7 @@ void Cancel();
 
 ### <a name="remarks"></a>설명
 
-MFC ODBC 클래스에 비동기 처리를 사용 하지는 note 비동기 작업을 수행 하려면 직접 ODBC API 함수를 호출 해야 [SQLSetConnectOption](/previous-versions/windows/desktop/ms713564)합니다. 자세한 내용은 [비동기 실행](/previous-versions/windows/desktop/ms713563) Windows SDK에 있습니다.
+MFC ODBC 클래스에 비동기 처리를 사용 하지는 note 비동기 작업을 수행 하려면 직접 ODBC API 함수를 호출 해야 [SQLSetConnectOption](/sql/odbc/reference/syntax/sqlsetconnectoption-function)합니다. 자세한 내용은 [비동기 실행](/sql/odbc/reference/develop-app/asynchronous-execution)합니다.
 
 ##  <a name="cantransact"></a>  CDatabase::CanTransact
 
@@ -327,7 +327,8 @@ DWORD GetBookmarkPersistence() const;
 
 ### <a name="remarks"></a>설명
 
-예를 들어 `CRecordset::GetBookmark`와 `CRecordset::Requery`를 차례로 호출하면 `GetBookmark`에서 가져온 책갈피가 더 이상 유효하지 않게 될 수 있습니다. `GetBookmarkPersistence`를 호출하기 전에 `CRecordset::SetBookmark`를 호출해야 합니다.
+예를 들어 `CRecordset::GetBookmark`와 `CRecordset::Requery`를 차례로 호출하면 `GetBookmark`에서 가져온 책갈피가 더 이상 유효하지 않게 될 수 있습니다. 
+  `GetBookmarkPersistence`를 호출하기 전에 `CRecordset::SetBookmark`를 호출해야 합니다.
 
 다음 테이블에는 `GetBookmarkPersistence`의 반환 값에 대해 결합할 수 있는 비트 마스크 값이 나와 있습니다.
 

@@ -32,12 +32,12 @@ helpviewer_keywords:
 - SetData method
 - FlushData method
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
-ms.openlocfilehash: 299cebd93a3d54ab747f5c58b22dbbf215a02e4c
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 452bd28e3ea061ecc30ef802290242e4cb830792
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426656"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328599"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl 클래스
 
@@ -90,7 +90,7 @@ class ATL_NO_VTABLE IRowsetChangeImpl : public BaseInterface
 
 |||
 |-|-|
-|[FlushData](#flushdata)|데이터 저장소에 커밋하는 공급자가 재정의 되 면 합니다.|
+|[FlushData](#flushdata)|데이터 저장소에 커밋하는 공급자가 재정의 합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -124,7 +124,7 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowsetchange:: Deleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowsetchange:: Deleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="insertrow"></a> IRowsetChangeImpl::InsertRow
 
@@ -161,7 +161,7 @@ STDMETHOD (SetData )(HROW hRow,
 
 ## <a name="flushdata"></a> IRowsetChangeImpl::FlushData
 
-데이터 저장소에 커밋하는 공급자가 재정의 되 면 합니다.
+데이터 저장소에 커밋하는 공급자가 재정의 합니다.
 
 ### <a name="syntax"></a>구문
 

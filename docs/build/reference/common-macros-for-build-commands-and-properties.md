@@ -1,6 +1,6 @@
 ---
-title: 빌드 명령 및 속성에 대한 일반 매크로
-ms.date: 05/29/2018
+title: MSBuild 명령 및 속성에 대 한 일반 매크로
+ms.date: 03/20/2019
 f1_keywords:
 - VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles
 - VC.Project.VCCLCompilerTool.XMLDocumentationFileName
@@ -90,26 +90,29 @@ helpviewer_keywords:
 - builds [C++], macros
 - $(FrameworkDir) macro
 - $(PlatformName) macro
+- $(PlatformShortName) macro
 - SolutionPath macro $(SolutionPath)
 ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
-ms.openlocfilehash: 669114691bc89c1e8136e07a949be57cda3d71b9
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 46fdd5e356ded96388a154ff459ef4cc3c02267f
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826647"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58327680"
 ---
-# <a name="common-macros-for-build-commands-and-properties"></a>빌드 명령 및 속성에 대한 일반 매크로
+# <a name="common-macros-for-msbuild-commands-and-properties"></a>MSBuild 명령 및 속성에 대 한 일반 매크로
 
-설치 옵션에 따라 Visual Studio에서는 수백 개의 매크로를 사용할 수 있습니다. 이러한 속성은 기본적으로 .props 또는 .targets 파일 또는 프로젝트 설정에서 설정된 MSBuild 속성에 해당합니다. 프로젝트의 **속성 페이지** 대화 상자에서 문자열이 허용되는 모든 위치에서 이러한 매크로를 사용할 수 있습니다. 이러한 매크로는 대/소문자를 구분하지 않습니다.
+설치 옵션에 따라 Visual Studio 게 수백 개의 매크로 제공할 수 있습니다 (MSBuild에 기반) Visual Studio 프로젝트에. 이러한 속성은 기본적으로 .props 또는 .targets 파일 또는 프로젝트 설정에서 설정된 MSBuild 속성에 해당합니다. 프로젝트의 **속성 페이지** 대화 상자에서 문자열이 허용되는 모든 위치에서 이러한 매크로를 사용할 수 있습니다. 이러한 매크로는 대/소문자를 구분하지 않습니다.
 
 ## <a name="view-the-current-properties-and-macros"></a>현재 속성 및 매크로 보기
 
-현재 사용 가능한 매크로를 표시하려면 **속성 페이지** 대화 상자의 속성 페이지에서 속성 행 끝에 있는 드롭다운 화살표를 선택합니다. **편집**을 사용할 수 있는 경우 해당 항목을 선택한 다음, 편집 대화 상자에서 **매크로** 단추를 선택합니다. Visual Studio에 표시되는 현재 속성 및 매크로 집합은 각각에 대한 현재 값과 함께 나열됩니다. 자세한 내용은 참조는 **Specifying User-Defined 값** 부분 [c + + 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)합니다.
+모든 현재 사용 가능한 매크로 표시 합니다 **속성 페이지** 대화 아래에 있는 **VC + + 디렉터리**, 속성 행의 끝에 있는 드롭다운 화살표를 선택 합니다. 클릭할 **편집** 을 선택한 다음 편집 대화 상자를 선택 합니다 **매크로** 단추입니다. Visual Studio에 표시되는 현재 속성 및 매크로 집합은 각각에 대한 현재 값과 함께 나열됩니다. 자세한 내용은 참조는 **Specifying User-Defined 값** 부분 [c + + 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)합니다.
+
+![VC + + 매크로 단추](../media/vcppdir_libdir_macros.png "매크로 메뉴")
 
 ## <a name="list-of-common-macros"></a>일반 매크로 목록
 
-이 표에서는 사용 가능한 매크로의 일반적으로 사용되는 하위 집합에 대해 설명합니다. 이 목록은 완전하지 않습니다. MSBuild 속성 정의를 .props, .targets 및 .vcxproj 파일의 매크로로 생성하고 사용하는 방법에 대한 자세한 내용은 [MSBuild 속성](/visualstudio/msbuild/msbuild-properties)을 참조하세요.
+이 표에서 자주 사용 되는 사용 가능한 매크로; 하위 집합 여기에 나열 되지 더 여러 가지가 있습니다. 로 이동 합니다 **매크로** 속성 및 프로젝트의 현재 값을 모두 보려면 대화 상자. MSBuild 속성 정의를 .props, .targets 및 .vcxproj 파일의 매크로로 생성하고 사용하는 방법에 대한 자세한 내용은 [MSBuild 속성](/visualstudio/msbuild/msbuild-properties)을 참조하세요.
 
 |매크로|설명|
 |-----------|-----------------|
@@ -122,6 +125,7 @@ ms.locfileid: "57826647"
 |**$(IntDir)**|중간 파일에 대해 지정된 디렉터리 경로입니다. 상대 경로인 경우 중간 파일은 프로젝트 디렉터리에 추가된 이 경로로 이동합니다. 이 경로의 끝에는 슬래시가 있어야 합니다. **Intermediate Directory** 속성에 대한 값으로 확인됩니다. **$(OutDir)** 을 사용하여 이 속성을 정의할 수 없습니다.|
 |**$(OutDir)**|출력 파일 디렉터리에 대한 경로입니다. 상대 경로인 경우 출력 파일은 프로젝트 디렉터리에 추가된 이 경로로 이동합니다. 이 경로의 끝에는 슬래시가 있어야 합니다. **Output Directory** 속성에 대한 값으로 확인됩니다. **$(IntDir)** 을 사용하여 이 속성을 정의할 수 없습니다.|
 |**$(Platform)**|현재 프로젝트 플랫폼의 이름(예: "Win32")입니다.|
+|**$(PlatformShortName)**|예를 들어, "x86" 또는 "x64" 현재 아키텍처의 짧은 이름입니다.|
 |**$(ProjectDir)**|프로젝트의 디렉터리(드라이브 + 경로로 정의됨)이며, 뒤의 백슬래시 '\\'를 포함합니다.|
 |**$(ProjectExt)**|프로젝트의 파일 확장명입니다. 파일 확장명 앞에 '.'을 포함합니다.|
 |**$(ProjectFileName)**|프로젝트의 파일 이름(기본 이름 + 파일 확장명으로 정의됨)입니다.|
@@ -162,6 +166,6 @@ Visual Studio 2008에서 Visual Studio 2010으로 가면서 C++ 빌드 시스템
 
 ## <a name="see-also"></a>참고자료
 
-- [C + +-visual Studio 프로젝트](../creating-and-managing-visual-cpp-projects.md)
+- [Visual Studio 프로젝트 - C++](../creating-and-managing-visual-cpp-projects.md)
 - [Visual C++ 이식 및 업그레이드 가이드](../../porting/visual-cpp-porting-and-upgrading-guide.md)
 - [잠재적인 업그레이드 문제 개요](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md)

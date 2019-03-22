@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CDBException [MFC], m_strError
 - CDBException [MFC], m_strStateNativeOrigin
 ms.assetid: eb9e1119-89f5-49a7-b9d4-b91cee1ccc82
-ms.openlocfilehash: e8a5195d4d2a3662d79d515c28dc66d1b0a27b24
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 755b89635eedd7808f900dc63cd3039845db1dd3
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295021"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328534"
 ---
 # <a name="cdbexception-class"></a>CDBException 클래스
 
@@ -132,7 +132,7 @@ SQL 맨 앞에 나오는 코드는 ODBC에서 정의 됩니다. AFX 맨 앞에 �
 
 문자열의 폼 "상태 %s, 네이티브 %ld, 원본 %s"를 순서 대로 형식 코드를 설명 하는 값으로 대체 됩니다 여기서 다음과 같습니다:::.
 
-- SQLSTATE, 5 문자 오류 코드가 포함 된 null로 끝나는 문자열을 반환 합니다 *szSqlState* ODBC 함수의 매개 변수가 `SQLError`합니다. 부록 A에서에서 SQLSTATE 값 나와 [ODBC 오류 코드](/previous-versions/windows/desktop/ms714687)를 *ODBC 프로그래머 참조*합니다. 예제: "S0022".
+- SQLSTATE, 5 문자 오류 코드가 포함 된 null로 끝나는 문자열을 반환 합니다 *szSqlState* ODBC 함수의 매개 변수가 `SQLError`합니다. 부록 A에서에서 SQLSTATE 값 나와 [ODBC 오류 코드](/previous-versions/windows/desktop/ms714687(v=vs.85))를 *ODBC 프로그래머 참조*합니다. 예제: "S0022".
 
 - 에 반환 된 원시 오류 코드, 데이터 원본에 특정 합니다 *pfNativeError* 의 매개 변수는 `SQLError` 함수입니다. 예제: 207.
 
@@ -140,13 +140,13 @@ SQL 맨 앞에 나오는 코드는 ODBC에서 정의 됩니다. AFX 맨 앞에 �
 
 프레임 워크가 오류 문자열을 해석 하 고 해당 구성 요소에 배치 `m_strStateNativeOrigin`같으면 `m_strStateNativeOrigin` 정보가 둘 이상의 오류를 오류 줄 바꿈 문자로 구분 됩니다. 프레임 워크에는 영숫자 오류 텍스트를 배치 `m_strError`합니다.
 
-이 문자열을 구성 하는 데 코드에 대 한 자세한 내용은 참조는 [SQLError](/previous-versions/windows/desktop/ms716312) 함수는 *ODBC 프로그래머 참조*합니다.
+이 문자열을 구성 하는 데 코드에 대 한 자세한 내용은 참조는 [SQLError](/previous-versions/windows/desktop/ms716312(v=vs.85)) 함수는 *ODBC 프로그래머 참조*합니다.
 
 ### <a name="example"></a>예제
 
-  ODBC에서: "상태: S0022, 네이티브: 207, 원본: [Microsoft] [ODBC SQL Server Driver] [SQL Server] 잘못 된 열 이름 'ColName'"
+  ODBC에서: "상태: S0022, 네이티브: 207, 원본:\[Microsoft]\[ODBC SQL Server Driver]\[SQL Server] 'ColName' 잘못 된 열 이름"
 
-`m_strStateNativeOrigin`의 경우 "상태: S0022, 네이티브: 207, 원본: [Microsoft] [ODBC SQL Server Driver] [SQL Server]"
+`m_strStateNativeOrigin`의 경우 "State:S0022,Native:207,Origin:\[Microsoft]\[ODBC SQL Server Driver]\[SQL Server]"
 
 `m_strError`의 경우 "잘못 된 열 이름 'ColName'"
 

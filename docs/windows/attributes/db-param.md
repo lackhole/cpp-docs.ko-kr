@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_param attribute
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
-ms.openlocfilehash: 58d6fa5026395b4be6663ab253cf9ffdfea01788
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2de051b099da5f179a7634cddfb359d85f4b1f83
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505042"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328794"
 ---
 # <a name="dbparam"></a>db_param
 
@@ -25,10 +25,10 @@ ms.locfileid: "50505042"
 
 ### <a name="parameters"></a>매개 변수
 
-*서 수*<br/>
+*ordinal*<br/>
 데이터를 바인딩할 행 집합의 필드에 해당 열 번호 (DBCOLUMNINFO 서 수).
 
-*가 paramtype과*<br/>
+*paramtype*<br/>
 (선택 사항) 형식 매개 변수에 설정입니다. 공급자의 데이터 원본에서 지원 되는 매개 변수 I/O 형식만 지원 합니다. 형식은 하나 이상의 DBPARAMIOENUM 값을 조합 합니다.
 
 - DBPARAMIO_INPUT 입력된 매개 변수입니다.
@@ -38,16 +38,16 @@ ms.locfileid: "50505042"
 - DBPARAMIO_NOTPARAM 접근자 매개 변수가 없습니다. 설정 `eParamIO` 행에서이 값을 접근자 받으라는 매개 변수가 무시 됩니다.
 
 *dbtype*<br/>
-(선택 사항) OLE DB [유형 표시기](/previous-versions/windows/desktop/ms711251) 열 항목에 대 한 합니다.
+(선택 사항) OLE DB [유형 표시기](/previous-versions/windows/desktop/ms711251(v=vs.85)) 열 항목에 대 한 합니다.
 
 *precision*<br/>
-(선택 사항) 열 항목에 사용할 전체 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bPrecision` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845)
+(선택 사항) 열 항목에 사용할 전체 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bPrecision` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
-*크기 조정*<br/>
-(선택 사항) 열 항목에 사용할 소수 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bScale` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845)
+*scale*<br/>
+(선택 사항) 열 항목에 사용할 소수 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bScale` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
 *status*<br/>
-(선택 사항) 이 칼럼의 상태를 저장 하는 데 사용 되는 멤버 변수입니다. 상태는 데이터 값 또는 NULL 등의 다른 값 열 값이 있는지 여부를 나타냅니다. 가능한 값을 참조 하세요 [상태](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference*합니다.
+(선택 사항) 이 칼럼의 상태를 저장 하는 데 사용 되는 멤버 변수입니다. 상태는 데이터 값 또는 NULL 등의 다른 값 열 값이 있는지 여부를 나타냅니다. 가능한 값을 참조 하세요 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 *length*<br/>
 (선택 사항) 멤버 변수 (바이트)에서 열의 크기를 보유 하는 데 사용 합니다.
@@ -56,7 +56,7 @@ ms.locfileid: "50505042"
 
 **db_param** 매개 변수를 정의 명령에서 사용할; 함께 사용할 따라서 `db_command`합니다. 예를 들어 사용할 수 있습니다 **db_param** SQL 쿼리 또는 저장된 프로시저의 매개 변수를 바인딩합니다. 물음표 (?)로 표시 되어 저장된 프로시저에서 매개 변수 및 매개 변수가 나타나는 순서 대로 데이터 멤버를 바인딩해야 합니다.
 
-**db_param** OLE DB에 참여할 수 있는 멤버 데이터를 구분 `ICommandWithParameters`-바인딩을 기반으로 합니다. 매개 변수 형식 (입력 또는 출력), OLE DB 형식, 정밀도, 배율, 상태 및 지정된 된 매개 변수의 길이 설정 합니다. 이 특성에는 OLE DB 소비자 매크로 BEGIN_PARAM_MAP 삽입... END_PARAM_MAP 합니다. 각 멤버를 사용 하 여 표시 합니다 **db_param** 특성을 COLUMN_ENTRY 형식의 구조에 하나의 항목을 차지 합니다.
+**db_param** OLE DB에 참여할 수 있는 멤버 데이터를 구분 `ICommandWithParameters`-바인딩을 기반으로 합니다. 매개 변수 형식 (입력 또는 출력), OLE DB 형식, 정밀도, 배율, 상태 및 지정된 된 매개 변수의 길이 설정 합니다. 이 특성에는 OLE DB 소비자 매크로 BEGIN_PARAM_MAP 삽입... END_PARAM_MAP. 각 멤버를 사용 하 여 표시 합니다 **db_param** 특성을 COLUMN_ENTRY 형식의 구조에 하나의 항목을 차지 합니다.
 
 **db_param** 함께에서 사용 되는 [db_table](db-table.md) 또는 [db_command](db-command.md) 특성입니다.
 

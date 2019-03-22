@@ -2,12 +2,12 @@
 title: Visual C++ 언어 참조(C++/CX)
 ms.date: 09/15/2017
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a
-ms.openlocfilehash: 319374447ba08dbf18fba91e4c24c0874d3b6ce2
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: ce0272499b653b9077a891e39e9b29797e7e051d
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422964"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328417"
 ---
 # <a name="visual-c-language-reference-ccx"></a>Visual C++ 언어 참조(C++/CX)
 
@@ -24,7 +24,7 @@ C + + /cli CX는 가까운 최대한 최신 c + + Windows 런타임 구성 요�
 
 - JavaScript 기반 Windows 앱에서 사용할 수 있는 c + + Windows 런타임 구성 요소입니다. 자세한 내용은 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)을 참조하세요.
 
-- Windows DirectX 게임 및 그래픽 위주 앱. 자세한 내용은 [DirectX를 사용 하 여 간단한 UWP 게임을 만들기](/windows/uwp/gaming/tutorial--create-your-first-metro-style-directx-game)합니다.
+- Windows DirectX 게임 및 그래픽 위주 앱. 자세한 내용은 [DirectX를 사용 하 여 간단한 UWP 게임을 만들기](/windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game)합니다.
 
 ## <a name="related-articles"></a>관련 문서
 
@@ -32,7 +32,7 @@ C + + /cli CX는 가까운 최대한 최신 c + + Windows 런타임 구성 요�
 |-|-|
 |[빠른 참조](../cppcx/quick-reference-c-cx.md)|테이블의 키워드 및 연산자 C + + /cli CX 합니다.|
 |[형식 시스템](../cppcx/type-system-c-cx.md)|설명 기본적인 C + + CX 형식 및 프로그래밍 구문을 있고 어떻게 사용 하 고 C + + /CX를 사용 하 고 Windows 런타임 형식을 만들.|
-|[앱 및 라이브러리 빌드](../cppcx/building-apps-and-libraries-c-cx.md)|IDE를 사용하여 정적 라이브러리 및 DLL에 대한 링크와 응용 프로그램을 빌드하는 방법을 설명합니다.|
+|[앱 및 라이브러리 빌드](../cppcx/building-apps-and-libraries-c-cx.md)|IDE를 사용 하 여 앱을 빌드하고 정적 라이브러리 및 Dll에 연결 하는 방법에 설명 합니다.|
 |[다른 언어와 상호 운용](../cppcx/interoperating-with-other-languages-c-cx.md)|에 대해 설명 하는 방법 C +를 사용 하 여 작성 된 구성 요소 + CX를 사용할 수 있습니다 JavaScript로 작성 된 구성 요소를 사용 하 여 관리 되는 언어 또는 Windows 런타임 c + + 템플릿 라이브러리입니다.|
 |[스레딩 및 마샬링](../cppcx/threading-and-marshaling-c-cx.md)|사용자가 만든 구성 요소의 스레딩 및 마샬링 동작을 지정하는 방법을 설명합니다.|
 |[네임 스페이스 참조](../cppcx/namespaces-reference-c-cx.md)|기본 네임스페이스, Platform 네임스페이스, Platform::Collections 및 관련 네임스페이스에 대한 참조 설명서입니다.|

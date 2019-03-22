@@ -32,12 +32,12 @@ helpviewer_keywords:
 - strings [C++], formatting
 - strings [C++], special characters
 ms.assetid: f71ab8de-3068-4e29-8e28-5a33d18dd416
-ms.openlocfilehash: bea53c33ef723cf8c98d0c542d24389e730c092a
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 6c855986d98f265f876f2acdd085eea46e057c93
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563305"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328898"
 ---
 # <a name="string-editor-c"></a>문자열 편집기 (c + +)
 
@@ -56,7 +56,7 @@ ms.locfileid: "57563305"
 
 ### <a name="to-find-a-string-resource-in-the-string-table"></a>문자열 테이블의 문자열 리소스를 찾으려면
 
-1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
+1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)합니다.
 
 1. 메뉴로 이동 **편집할** > **찾기 및 바꾸기** 선택 **찾기**합니다.
 
@@ -79,7 +79,7 @@ ms.locfileid: "57563305"
 
 #### <a name="to-add-a-string-table-entry"></a>문자열 테이블 항목을 추가 하려면
 
-1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
+1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)합니다.
 
 1. 문자열 테이블 내에서 마우스 오른쪽 단추로 클릭 하 고 선택 **새 문자열**합니다.
 
@@ -124,7 +124,7 @@ ms.locfileid: "57563305"
 
 #### <a name="to-change-a-string-or-its-identifier"></a>문자열 또는 식별자를 변경 하려면
 
-1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
+1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)합니다.
 
 1. 편집 하 고 두 번 클릭 하려는 문자열을 선택 합니다 **ID**를 **값**, 또는 **캡션** 을 열 수:
 
@@ -136,7 +136,7 @@ ms.locfileid: "57563305"
 
 #### <a name="to-change-the-caption-property-of-multiple-string-resources"></a>여러 문자열 리소스의 caption 속성을 변경 하려면
 
-1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
+1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)합니다.
 
 1. 누른 변경 하려는 문자열을 선택 합니다 **Ctrl** 키를 선택 합니다.
 
@@ -146,7 +146,7 @@ ms.locfileid: "57563305"
 
 ### <a name="to-add-formatting-or-special-characters-to-a-string-resource"></a>문자열 리소스에 형식 지정 또는 특수 문자를 추가 하려면
 
-1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
+1. 문자열 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)합니다.
 
 1. 수정 하려는 문자열을 선택 합니다.
 

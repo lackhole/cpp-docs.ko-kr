@@ -44,18 +44,18 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-ms.openlocfilehash: d180ed8d416483d1be5e2bbd52f1a8752996f3f9
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: e2816d99991fcd051c5bbfbe6f4be6a43db2ef2e
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627488"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328560"
 ---
 # <a name="interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement Intrinsic Functions
 
 **Microsoft 전용**
 
-Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement) 함수입니다.
+Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement) 함수입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -120,11 +120,14 @@ __int64 _InterlockedDecrement64_nf(
 
 사용되는 데이터 형식과 프로세서별 획득 또는 해제 의미 체계에 따라 다른 `_InterlockedDecrement`의 여러 변형이 있습니다.
 
-`_InterlockedDecrement` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedDecrement16`은 16비트 정수 값에 대해, `_InterlockedDecrement64`는 64비트 정수 값에 대해 작동합니다.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
+  `_InterlockedDecrement` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedDecrement16`은 16비트 정수 값에 대해, `_InterlockedDecrement64`는 64비트 정수 값에 대해 작동합니다.
 
-`lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 [맞춤](../cpp/align-cpp.md)합니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. 
+  `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
+
+
+  `lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 [맞춤](../cpp/align-cpp.md)합니다.
 
 이러한 루틴은 내장 함수로만 사용할 수 있습니다.
 
@@ -199,5 +202,5 @@ void __cdecl SimpleThread(void* pParam) {
 ## <a name="see-also"></a>참고 항목
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

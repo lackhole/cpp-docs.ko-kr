@@ -35,12 +35,12 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-ms.openlocfilehash: 0de53b102cf06d8b4541f54f961f84408664caed
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: f2edafb0b60cfafcf7ad53b8402ffc39a6fc2f7c
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562798"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328846"
 ---
 # <a name="how-to-manage-symbols"></a>방법: 기호 관리
 
@@ -85,7 +85,7 @@ ms.locfileid: "57562798"
 
 ### <a name="to-change-a-symbol-name-id"></a>기호 이름 (ID)를 변경 하려면
 
-1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources), 리소스를 선택 합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources), 리소스를 선택 합니다.
 
 1. 에 **속성** 창에서 새 기호 이름을 입력 하거나 기존 기호 목록에서 선택 합니다 **ID** 상자입니다.
 
@@ -129,7 +129,7 @@ ms.locfileid: "57562798"
 
 ### <a name="to-change-a-symbol-value"></a>기호 값을 변경 하려면
 
-1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources), 리소스를 선택 합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources), 리소스를 선택 합니다.
 
 1. 에 **속성** 창, 형식 기호 이름 뒤에 등호 기호와 정수를 합니다 **ID** 상자 예를 들어:
 
@@ -185,7 +185,7 @@ ms.locfileid: "57562798"
 
 ### <a name="to-include-shared-read-only-symbols-in-your-resource-file"></a>리소스 파일에 공유(읽기 전용) 기호를 포함하려면
 
-1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 선택 [리소스 내용](../windows/resource-includes-dialog-box.md)합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 선택 [리소스 내용](../windows/resource-includes-dialog-box.md)합니다.
 
 1. 에 **읽기 전용 기호 지시문** 상자를 사용 하 여는 `#include` 컴파일러 지시문을 읽기 전용 기호를 저장할 파일을 지정 합니다.
 
@@ -204,7 +204,7 @@ ms.locfileid: "57562798"
 
 ### <a name="to-change-the-name-of-the-resource-symbol-header-file"></a>리소스 기호 헤더 파일의 이름을 변경하려면
 
-1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 선택 [리소스 내용](../windows/resource-includes-dialog-box.md)합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 선택 [리소스 내용](../windows/resource-includes-dialog-box.md)합니다.
 
 1. 에 **기호 헤더 파일** 포함 파일에 대 한 새 이름을 입력 합니다.
 

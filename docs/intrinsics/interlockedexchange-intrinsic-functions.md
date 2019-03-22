@@ -44,12 +44,12 @@ helpviewer_keywords:
 - _InterlockedExchange intrinsic
 - _InterlockedExchange8_nf
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
-ms.openlocfilehash: ecf69b1e910dab9824131f26d8db1eb5615d6e18
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: bccf9f46a886a622c493485818601044afff232d
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627178"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328521"
 ---
 # <a name="interlockedexchange-intrinsic-functions"></a>_InterlockedExchangePointer Intrinsic Functions
 
@@ -152,11 +152,12 @@ __int64 _InterlockedExchange64_rel(
 
 ## <a name="return-value"></a>반환 값
 
-`Target`이 가리키는 초기 값을 반환합니다.
+
+  `Target`이 가리키는 초기 값을 반환합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|머리글|
+|내장 함수|아키텍처|헤더|
 |---------------|------------------|------------|
 |`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`, `_InterlockedExchange64`|x86, ARM, x64|\<intrin.h>|
 |`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM|\<intrin.h>|
@@ -164,13 +165,15 @@ __int64 _InterlockedExchange64_rel(
 
 ## <a name="remarks"></a>설명
 
-`_InterlockedExchange` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedExchange](/windows/desktop/api/winbase/nf-winbase-interlockedexchange) 함수입니다.
+`_InterlockedExchange` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedExchange](/windows/desktop/api/winnt/nf-winnt-interlockedexchange) 함수입니다.
 
 사용되는 데이터 형식과 프로세서별 획득 또는 해제 의미 체계에 따라 다른 `_InterlockedExchange`의 여러 변형이 있습니다.
 
-`_InterlockedExchange` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedExchange8`은 8비트 정수 값에 대해, `_InterlockedExchange16`은 16비트 정수 값에 대해, 그리고 `_InterlockedExchange64`는 64비트 정수 값에 대해 작동합니다.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
+  `_InterlockedExchange` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedExchange8`은 8비트 정수 값에 대해, `_InterlockedExchange16`은 16비트 정수 값에 대해, 그리고 `_InterlockedExchange64`는 64비트 정수 값에 대해 작동합니다.
+
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. 
+  `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
 
 HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcquire` 및 `_HLERelease` 접미사가 포함된 내장 함수는 하드웨어에서 잠금 쓰기 단계를 제거하여 성능을 향상시킬 수 있는 힌트를 프로세서에 포함합니다. HLE를 지원하지 않는 플랫폼에서 이러한 내장 함수를 호출하면 힌트는 무시됩니다.
 
@@ -185,5 +188,5 @@ HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcq
 ## <a name="see-also"></a>참고 항목
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

@@ -4,12 +4,12 @@ ms.date: 04/03/2017
 helpviewer_keywords:
 - module macros in MFC
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
-ms.openlocfilehash: 1d0cbd1f702a1d26dd2eaafd88efcfd61f52ff78
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 863350067c39fbc9cdb3d9d3a6c4448348d977de
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850218"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328768"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Dll을 관리 하기 위한 함수와 매크로
 
@@ -21,9 +21,9 @@ ms.locfileid: "55850218"
 |[AfxNetInitModule](#afxnetinitmodule)|MFC에 동적으로 연결 된 기본 MFC DLL에서 MFC 소켓 지원을 제공 합니다.|
 |[AfxGetAmbientActCtx](#afxgetambientactctx)|모듈별 상태 플래그의 현재 상태를 가져옵니다.|
 |[AfxGetStaticModuleState](#afxgetstaticmodulestate)|초기화 전에 및/또는 정리 후 이전 모듈 상태를 복원 하려면 모듈 상태를 설정 합니다.|
-|[AfxInitExtensionModule]()#afxinitextensionmodule|DLL을 초기화합니다.|
+|[AfxInitExtensionModule](#afxinitextensionmodule)|DLL을 초기화합니다.|
 |[AfxSetAmbientActCtx](#afxsetambientactctx)|MFC의 WinSxS 동작에 영향을 주는 모듈별 상태 플래그를 설정 합니다.|
-|[AfxTermExtensionModule]()#afxtermextensionmodule)|MFC 정리 MFC 확장명 DLL 때 허용 각 프로세스 DLL에서 분리 합니다.|
+|[AfxTermExtensionModule](#afxtermextensionmodule)|MFC 정리 MFC 확장명 DLL 때 허용 각 프로세스 DLL에서 분리 합니다.|
 
 ## <a name="afx_ext_class"></a>  AFX_EXT_CLASS
 
