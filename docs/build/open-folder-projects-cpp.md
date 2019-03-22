@@ -1,15 +1,15 @@
 ---
 title: Visual Studio에서 C++ 빌드 시스템에 대해 폴더 열기 지원
-ms.date: 01/21/2019
+ms.date: 03/21/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual C++
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: a7e352d7978ba5c973d779224639006fa984e4f0
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 2dedd56759b6bb49260221e22218da6f4300a970
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827217"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356090"
 ---
 # <a name="open-folder-projects-for-c"></a>C++의 폴더 열기 프로젝트
 
@@ -49,7 +49,7 @@ IntelliSense 및 검색 동작은 #include 경로, 컴파일러 스위치 및 �
       "includePath": [ "include" ],
       "defines": [ "_DEBUG" ],
       "compilerSwitches": "/std:c++17",
-      "intelliSenseMode": "msvc-x64",
+      "intelliSenseMode": "windows-msvc-x64",
       "forcedInclude": [ "pch.h" ],
       "undefines": []
     }
@@ -64,7 +64,7 @@ IntelliSense 및 검색 동작은 #include 경로, 컴파일러 스위치 및 �
 
 ![폴더 열기 구성 작업](media/open-folder-config-tasks.png)
 
-이 작업은 Visual Studio에서 루트 프로젝트 폴더에 만드는 .vs 폴더에서 `tasks.vs.json` 파일을 만들거나 엽니다. 이 파일에서 임의의 작업을 정의한 다음, 상황에 맞는 **솔루션 탐색기** 메뉴에서 호출할 수 있습니다. 다음 예제에서는 단일 작업을 정의하는 tasks.vs.json 파일을 보여 줍니다. `taskName`은 상황에 맞는 메뉴에 표시되는 이름을 정의합니다. `appliesTo`는 명령을 수행할 수 있는 파일을 정의합니다. `command` 속성은 콘솔에 대한 경로(Windows의 경우 cmd.exe)를 식별하는 COMSPEC 환경 변수를 참조합니다. CppProperties.json 또는 CMakeSettings.json에 선언된 환경 변수를 참조할 수도 있습니다. `args` 속성은 호출할 명령줄을 지정합니다. `${file}` 매크로는 **솔루션 탐색기**에서 선택한 파일을 검색합니다. 다음 예제에서는 현재 선택된 .cpp 파일의 파일 이름을 표시합니다.
+이 만듭니다 (또는 열립니다)는 **tasks.vs.json** Visual Studio 루트 프로젝트 폴더에 만드는.vs 폴더의 파일입니다. 이 파일에서 임의의 작업을 정의한 다음, 상황에 맞는 **솔루션 탐색기** 메뉴에서 호출할 수 있습니다. 다음 예제에서는 단일 작업을 정의하는 tasks.vs.json 파일을 보여 줍니다. `taskName`은 상황에 맞는 메뉴에 표시되는 이름을 정의합니다. `appliesTo`는 명령을 수행할 수 있는 파일을 정의합니다. `command` 속성은 콘솔에 대한 경로(Windows의 경우 cmd.exe)를 식별하는 COMSPEC 환경 변수를 참조합니다. CppProperties.json 또는 CMakeSettings.json에 선언된 환경 변수를 참조할 수도 있습니다. `args` 속성은 호출할 명령줄을 지정합니다. `${file}` 매크로는 **솔루션 탐색기**에서 선택한 파일을 검색합니다. 다음 예제에서는 현재 선택된 .cpp 파일의 파일 이름을 표시합니다.
 
 ```json
 {
@@ -87,7 +87,7 @@ tasks.vs.json이 저장되면 폴더의 .cpp 파일을 마우스 오른쪽 단�
 
 ### <a name="configure-debugging-parameters-with-launchvsjson"></a>launch.vs.json으로 디버깅 매개 변수 구성
 
-프로그램의 명령줄 인수를 사용자 지정하려면 **솔루션 탐색기**에서 실행 파일을 마우스 오른쪽 단추로 클릭하고 **디버그 및 시작 설정**을 선택합니다. 이렇게 하면 기존 `launch.vs.json` 파일이 열리거나, 이 파일이 없는 경우 선택한 프로그램에 대한 정보가 미리 채워진 새 파일이 만들어집니다.
+프로그램의 명령줄 인수를 사용자 지정하려면 **솔루션 탐색기**에서 실행 파일을 마우스 오른쪽 단추로 클릭하고 **디버그 및 시작 설정**을 선택합니다. 기존 열립니다 **launch.vs.json** 파일에 없는 경우 선택한 프로그램에 대 한 정보를 사용 하 여 미리 채워진 새 파일을 만듭니다.
 
 추가 인수를 지정하려면 다음 예제와 같이 `args` JSON 배열에 추가합니다.
 

@@ -1,14 +1,14 @@
 ---
 title: CppProperties.json 스키마 참조
-ms.date: 03/05/2019
+ms.date: 03/21/2019
 helpviewer_keywords:
 - CMake in Visual C++
-ms.openlocfilehash: fd655de3313dd95eb3fcefaeba21e703d32e860a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 43ffa0e92649fe233c6a743d4b64a2749cb28f5a
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826972"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356103"
 ---
 # <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json 스키마 참조
 
@@ -115,7 +115,9 @@ Visual Studio는 x86 및 x64 디버그와 릴리스에 대해 미리 정의된 �
 |`compilerSwitches`|IntelliSense 동작에 영향을 줄 수 있는 하나 이상의 추가 스위치|
 |`forcedInclude`|모든 컴파일 단위에 자동으로 포함될 헤더(MSVC에서 /FI에 매핑되거나 clang에서 -include에 매핑됨)|
 |`undefines`|정의되지 않은 매크로 목록(MSVC에서 /U에 매핑됨)|
-|`intelliSenseMode`|사용할 IntelliSense 엔진. MSVC, gcc 또는 Clang에 대한 아키텍처 특정 변형을 지정할 수 있습니다.<br/><br/>- msvc-x86(기본값)<br/>- msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
+|`intelliSenseMode`|사용할 IntelliSense 엔진. MSVC, gcc 또는 Clang에 대한 아키텍처 특정 변형을 지정할 수 있습니다.<br/><br/>-windows-msvc-x86 (기본값)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
+
+참고: 값 `msvc-x86` 고 `msvc-x64` 레거시의 이유로 지원 됩니다. 사용 하십시오는 `windows-msvc*` 변형 합니다.
 
 ## <a name="custom-configurations"></a>사용자 지정 구성
 
@@ -186,7 +188,7 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x86"
+      "intelliSenseMode": "windows-msvc-x86"
     },
     {
       "inheritEnvironments": [
@@ -199,7 +201,7 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x64"
+      "intelliSenseMode": "windows-msvc-x64"
     }
   ]
 }
@@ -227,7 +229,7 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x86"
+      "intelliSenseMode": "windows-msvc-x86"
     },
     {
       "environments": [
@@ -246,7 +248,7 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x64"
+      "intelliSenseMode": "windows-msvc-x64"
     }
   ]
 }

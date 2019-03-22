@@ -153,12 +153,12 @@ helpviewer_keywords:
 - C5105
 - C5106
 - C5107
-ms.openlocfilehash: 101181e72aaf30ca8bc1d0e4191649fcc4155a64
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 46bb439b490295b7f3279f06421d3fd6b8d6ba8b
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328345"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356259"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>컴파일러 경고 C4800 ~ C5999
 
@@ -169,7 +169,7 @@ ms.locfileid: "58328345"
 ## <a name="warning-messages"></a>경고 메시지
 
 |경고|메시지|
-|-------------|-------------|
+|-------------|------------|
 |[컴파일러 경고 (수준 4) C4800](compiler-warning-level-3-c4800.md)| 암시적 변환에서 '*형식*' bool로 합니다. 가능한 정보 손실 |
 |[컴파일러 경고(수준 1) C4803](compiler-warning-level-1-c4803.md)|'*메서드*': raise 메서드에 이벤트를 다른 저장소 클래스에 '*이벤트*'|
 |[컴파일러 경고(수준 1) C4804](compiler-warning-level-1-c4804.md)|'*작업*': 안전 하지 않은 작업에 사용 되는 ' bool' 형식 사용|

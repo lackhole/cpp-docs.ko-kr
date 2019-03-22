@@ -1,12 +1,12 @@
 ---
 title: ARM64 ABI 규칙 개요
-ms.date: 07/11/2018
-ms.openlocfilehash: 537f8cf5bb8db61854bea7f4624e3dd3176c6a59
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.date: 03/22/2019
+ms.openlocfilehash: 5dddc26285606b771a3939be19dff5b9ad53f3c7
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816544"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356194"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI 규칙 개요
 
@@ -191,7 +191,7 @@ Variadic이 아닌 함수에 대 한 Windows ABI는 매개 변수 전달에 대 
 
 적용 하 여 ARM ABI 다음 스택을 유지 되어야 16 바이트 모든 시간에 정렬 합니다. AArch64 오류 SP 관련 부하 또는 스토어를 이루어집니다 이며 SP 16 바이트가 아니라 때마다 정렬 스택 정렬을 생성 하는 하드웨어 기능을 포함 합니다. 항상 사용 하도록 설정 하는이 기능을 사용 하 여 Windows를 실행 합니다.
 
-4k 이상의 가치가 스택의 할당 하는 함수는 순서 대로 연결 최종 페이지 이전의 각 페이지에 없는 코드를 보장 수 "leap 통해" Windows 스택을 확장을 사용 하는 가드 페이지를 확인 해야 합니다. 일반적으로 이렇게는 `__chkstk` x8 16로 나눈 값의 총 스택 할당을 전달 하는 사용자 지정 호출 규칙에는 도우미입니다.
+4k 이상의 가치가 스택의 할당 하는 함수는 순서 대로 연결 최종 페이지 이전의 각 페이지에 없는 코드를 보장 수 "leap 통해" Windows 스택을 확장을 사용 하는 가드 페이지를 확인 해야 합니다. 일반적으로 이렇게는 `__chkstk` x15 16로 나눈 값의 총 스택 할당을 전달 하는 사용자 지정 호출 규칙에는 도우미입니다.
 
 ## <a name="red-zone"></a>빨간색 영역
 

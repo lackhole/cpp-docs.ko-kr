@@ -4,12 +4,12 @@ ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: b055a1e3ca1d43cc0a1633401c1a08a3d54c1a31
-ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
+ms.openlocfilehash: 84511c0712fffcacc1f90d4bde808620e0a0ab0f
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58278452"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356143"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio의 CMake 프로젝트
 
@@ -17,7 +17,7 @@ CMake는 여러 플랫폼에서 실행되는 빌드 프로세스를 정의하는
 
 Visual Studio 2015에서 Visual Studio 사용자는 [CMake 생성기](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html)를 사용하여 MSBuild 프로젝트 파일을 생성합니다. 그러면 IDE에서는 IntelliSense, 검색 및 컴파일에 사용합니다.
 
-Visual Studio 2017에서는 [플랫폼 간 CMake 프로젝트](../linux/cmake-linux-project.md)를 포함하여 CMake에 대한 풍부한 지원을 제공합니다. **CMake용 Visual C++ 도구** 구성 요소에서 **폴더 열기** 기능을 사용하여 IDE에서 IntelliSense 및 검색을 수행하는 데 CMake 프로젝트 파일(예: CMakeLists.txt)을 직접 사용할 수 있습니다. Ninja 및 Visual Studio 생성기 모두 지원됩니다. Visual Studio 생성기를 사용하는 경우 임시 프로젝트 파일이 생성되어 msbuild.exe에 전달되지만 IntelliSense 또는 검색을 위해 로드되지는 않습니다. 기존 CMake 캐시를 가져올 수 있습니다. Visual Studio는 자동으로 사용자 지정 변수를 추출하고 미리 채워진 `CMakeSettings.json` 파일을 만듭니다. 
+Visual Studio 2017에서는 [플랫폼 간 CMake 프로젝트](../linux/cmake-linux-project.md)를 포함하여 CMake에 대한 풍부한 지원을 제공합니다. **CMake용 Visual C++ 도구** 구성 요소에서 **폴더 열기** 기능을 사용하여 IDE에서 IntelliSense 및 검색을 수행하는 데 CMake 프로젝트 파일(예: CMakeLists.txt)을 직접 사용할 수 있습니다. Ninja 및 Visual Studio 생성기 모두 지원됩니다. Visual Studio 생성기를 사용하는 경우 임시 프로젝트 파일이 생성되어 msbuild.exe에 전달되지만 IntelliSense 또는 검색을 위해 로드되지는 않습니다. 기존 CMake 캐시를 가져올 수 있습니다. Visual Studio에서 자동으로 사용자 지정된 변수를 추출 하 고 미리 채워진 만듭니다 **CMakeSettings.json** 파일입니다. 
 
 ## <a name="installation"></a>설치
 
@@ -47,18 +47,18 @@ Visual Studio 2017에서는 [플랫폼 간 CMake 프로젝트](../linux/cmake-li
 
 ![CMake 대상 보기 단추](media/cmake-targets-view.png)
 
-Visual Studio는 `CMakeSettings.json`이라는 파일을 사용하여 Cmake.exe에 대한 환경 변수 또는 명령줄 옵션을 저장합니다. 또한 `CMakeSettings.json`을 사용하면 여러 CMake 빌드 구성을 정의하고 저장할 수 있으며 IDE에서 이들 사이를 편리하게 전환할 수 있습니다. 
+라는 파일을 사용 하 여 visual Studio **CMakeSettings.json** Cmake.exe 위한 명령줄 옵션 또는 환경 변수를 저장 합니다. **CMakeSettings.json** 또한 정의 여러 CMake를 저장 하 여 빌드 구성 및 편리 하 게 ide에서 사이 전환 합니다. 
 
-그렇지 않으면 CMake 프로젝트에서 처럼 `CMakeLists.txt`를 사용하여 소스 파일을 지정하고, 라이브러리를 찾고, 컴파일러와 링커 옵션을 설정하고, 기타 빌드 시스템 관련 정보를 지정합니다.
+그렇지 않은 경우 사용 합니다 **CMakeLists.txt** 하는 소스 파일 지정, 라이브러리를 검색, 컴파일러 및 링커 옵션을 설정 및 다른 빌드 시스템을 지정 하려면 CMake 프로젝트에서 관련 정보 마찬가지로 합니다.
 
-디버그 시 인수를 실행 파일에 전달해야 하는 경우 `launch.vs.json`이라는 다른 파일을 사용할 수 있습니다. 일부 시나리오에서는 Visual Studio에서 자동으로 이러한 파일을 생성합니다. 이는 수동으로 편집할 수 있습니다. 파일을 직접 만들 수도 있습니다.
+디버그 시 실행 파일에 인수를 전달 해야 하는 경우에 호출 하는 다른 파일을 사용할 수 있습니다 **launch.vs.json**합니다. 일부 시나리오에서는 Visual Studio에서 자동으로 이러한 파일을 생성합니다. 이는 수동으로 편집할 수 있습니다. 파일을 직접 만들 수도 있습니다.
 
 > [!NOTE]
-> 다른 종류의 폴더 열기 프로젝트의 경우 두 개의 추가 JSON 파일(`CppProperties.json` 및 `tasks.vs.json`)이 사용됩니다. 이 두 가지 모두 CMake 프로젝트와 관련이 없습니다.
+> 다른 종류의 폴더 열기 프로젝트에 대 한 두 개의 추가 JSON 파일이 사용 됩니다. **CppProperties.json** 하 고 **tasks.vs.json**합니다. 이 두 가지 모두 CMake 프로젝트와 관련이 없습니다.
 
 ## <a name="import-an-existing-cache"></a>기존 캐시 가져오기
 
-기존 CMakeCache.txt 파일을 가져오면 Visual Studio에서 자동으로 사용자 지정 변수를 추출하고 이에 따라 미리 채워진 [`CMakeSettings.json`](#cmake_settings) 파일을 만듭니다. 원래 캐시는 어떤 방식으로든 수정되지 않으며, 명령줄 또는 생성하는 데 사용된 도구 또는 IDE를 통해 계속 사용할 수 있습니다. 새 `CMakeSettings.json` 파일은 프로젝트의 루트 CMakeLists.txt와 함께 배치됩니다. Visual Studio에서는 설정 파일을 기반으로 하여 새 캐시를 생성합니다. **도구 | 옵션 | CMake | 일반** 대화 상자에서 자동 캐시 생성을 재정의할 수 있습니다.
+기존 CMakeCache.txt 파일을 가져올 때 Visual Studio 자동으로 사용자 지정된 변수를 추출 하 고 미리 채워진 만듭니다 [ **CMakeSettings.json** ](#cmake_settings) 파일 기반으로 합니다. 원래 캐시는 어떤 방식으로든 수정되지 않으며, 명령줄 또는 생성하는 데 사용된 도구 또는 IDE를 통해 계속 사용할 수 있습니다. 새 **CMakeSettings.json** 파일은 프로젝트의 루트 CMakeLists.txt와 함께 배치 됩니다. Visual Studio에서는 설정 파일을 기반으로 하여 새 캐시를 생성합니다. **도구 | 옵션 | CMake | 일반** 대화 상자에서 자동 캐시 생성을 재정의할 수 있습니다.
 
 캐시의 모든 항목을 가져오지는 않습니다.  생성기 및 컴파일러 위치와 같은 속성은 IDE에서 제대로 작동하는 것으로 알려진 기본값으로 대체됩니다.
 
@@ -88,7 +88,7 @@ CMake 프로젝트를 빌드하려면 다음과 같이 선택할 수 있습니�
 
 ![CMake 빌드 메뉴 명령](media/cmake-build-menu.png "CMake 빌드 명령 메뉴")
 
-`CMakeSettings.json` 파일을 사용하여 CMakeLists.txt 파일을 수정하지 않고도 빌드 구성, 환경 변수, 명령줄 인수 및 기타 설정을 사용자 지정할 수 있습니다. 자세한 내용은 [CMake 설정 사용자 지정](customize-cmake-settings.md)을 참조하세요.
+사용자 지정할 수 있습니다 빌드 구성, 환경 변수, 명령줄 인수 및 기타 설정을 사용 하 여 CMakeLists.txt 파일을 수정 하지 않고 합니다 **CMakeSettings.json** 파일입니다. 자세한 내용은 [CMake 설정 사용자 지정](customize-cmake-settings.md)을 참조하세요.
 
 빌드 결과가 예상한 대로 **출력 창** 및 **오류 목록**에 표시됩니다.
 
@@ -104,7 +104,7 @@ CMake 프로젝트를 디버그하려면 원하는 구성을 선택하고 **F5**
 
 **실행** 또는 **F5** 명령은 이전 빌드 이후 변경된 경우 프로젝트를 먼저 빌드합니다.
 
-`launch.vs.json` 파일의 속성을 설정하여 CMake 디버깅 세션을 사용자 지정할 수 있습니다. 자세한 내용은 [CMake 디버깅 세션 구성](configure-cmake-debugging-sessions.md)을 참조하세요.
+속성을 설정 하 여 디버깅 세션을 CMake를 사용자 지정할 수 있습니다 합니다 **launch.vs.json** 파일입니다. 자세한 내용은 [CMake 디버깅 세션 구성](configure-cmake-debugging-sessions.md)을 참조하세요.
 
 
 ## <a name="editing-cmakeliststxt-files"></a>CMakeLists.txt 파일 편집
@@ -120,13 +120,13 @@ CMakeLists.txt 파일을 편집하려면 **솔루션 탐색기**에서 파일을
 
 ## <a name="cmake-configure-step"></a>CMake 구성 단계
 
-`CMakeSettings.json` 또는 CMakeLists.txt 파일을 크게 변경하면 Visual Studio에서 자동으로 CMake 구성 단계를 다시 실행합니다. 구성 단계가 오류 없이 완료되는 경우 수집된 정보는 C++ IntelliSense 및 언어 서비스와 빌드/디버그 작업에서 사용할 수 있습니다.
+때 중요 한 변경에는 **CMakeSettings.json** CMakeLists.txt 파일에 Visual Studio 자동으로 다시 실행 된 CMake 또는 단계를 구성 합니다. 구성 단계가 오류 없이 완료되는 경우 수집된 정보는 C++ IntelliSense 및 언어 서비스와 빌드/디버그 작업에서 사용할 수 있습니다.
 
 여러 CMake 프로젝트에서 동일한 CMake 구성 이름(예: x86-Debug)을 사용하는 경우, 해당 구성을 선택할 때 해당 CMake 프로젝트 모두가 자체 빌드 루트 폴더에 빌드되고 구성됩니다. 해당 CMake 구성에 참여하는 모든 CMake 프로젝트에서 대상을 디버그할 수 있습니다.
 
    ![CMake 빌드 전용 메뉴 항목](media/cmake-build-only.png "CMake 빌드 전용 메뉴 항목")
 
-빌드 및 디버그 세션을 작업 영역에 있는 프로젝트의 하위 집합으로 제한하려면, 새 구성을 `CMakeSettings.json` 파일에 고유한 이름으로 만들어 해당 프로젝트에만 적용합니다. 해당 구성을 선택하면 지정된 프로젝트에 대해서만 IntelliSense 및 빌드/디버그 명령이 사용됩니다.
+빌드 제한 디버그 세션을 작업 영역에 있는 프로젝트의 하위 집합을 고유한 이름으로 새 구성을 만들려면 합니다 **CMakeSettings.json** 파일과 해당 프로젝트에만 적용 합니다. 해당 구성을 선택하면 지정된 프로젝트에 대해서만 IntelliSense 및 빌드/디버그 명령이 사용됩니다.
 
 ## <a name="troubleshooting-cmake-cache-errors"></a>CMake 캐시 오류 문제 해결
 
