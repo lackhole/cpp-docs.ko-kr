@@ -33,7 +33,7 @@ ms.locfileid: "57808991"
 
 ## <a name="remarks"></a>설명
 
-없이 **/Fd**, PDB 파일 이름을 VC 기본값으로*x*0.pdb, 여기서 *x* 사용 하 여 Visual c + +의 주 버전입니다.
+없이 **/Fd**, PDB 파일 이름을 VC 기본값으로*x*0.pdb, 여기서 *x* 사용 하 여 Visual C++의 주 버전입니다.
 
 컴파일러 VC 라는.pdb 파일을 만듭니다 (경로가 백슬래시로 끝나는) 파일 이름을 포함 하지 않는 경로 이름을 지정 하는 경우*x*0.pdb 지정된 된 디렉터리에 있습니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "57808991"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
