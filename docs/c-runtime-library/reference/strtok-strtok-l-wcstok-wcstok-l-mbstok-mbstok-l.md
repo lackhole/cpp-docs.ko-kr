@@ -1,6 +1,6 @@
 ---
 title: strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
-ms.date: 11/04/2016
+ms.date: 03/25/2019
 apiname:
 - _mbstok_l
 - _mbstok
@@ -45,12 +45,12 @@ helpviewer_keywords:
 - _tcstok_l function
 - strtok_l function
 ms.assetid: 904cb734-f0d7-4d77-ba81-4791ddf461ae
-ms.openlocfilehash: bb791c7049379f62b99804fa8f1cf3a57fe0b749
-ms.sourcegitcommit: 0064d37467f958dd6a5111f20d7660eaccd53ee9
+ms.openlocfilehash: 22dd01a0b2558c83ca1e25875a2ace7dd4ee15c0
+ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416964"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476918"
 ---
 # <a name="strtok-strtokl-wcstok-wcstokl-mbstok-mbstokl"></a>strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 
@@ -81,11 +81,11 @@ wchar_t *wcstok_l(
    _locale_t locale
 );
 unsigned char *_mbstok(
-   unsigned char*strToken,
+   unsigned char *strToken,
    const unsigned char *strDelimit
 );
 unsigned char *_mbstok_l(
-   unsigned char*strToken,
+   unsigned char *strToken,
    const unsigned char *strDelimit,
    _locale_t locale
 );
@@ -104,7 +104,7 @@ unsigned char *_mbstok_l(
 
 ## <a name="return-value"></a>반환 값
 
-다음 토큰에 대 한 포인터를 반환 *strToken*합니다. 돌아왔을 **NULL** 더 이상 토큰이 검색 되 면 합니다. 각 호출을 수정 *strToken* 반환된 된 토큰 뒤에 오는 첫 번째 구분 기호에 대 한 null 문자를 대체 하 여 합니다.
+다음 토큰에 대 한 포인터를 반환 *strToken*합니다. 이 함수는 반환 **NULL** 더 이상 토큰이 검색 되 면 합니다. 각 호출을 수정 *strToken* 반환된 된 토큰 뒤에 오는 첫 번째 구분 기호에 대 한 null 문자를 대체 하 여 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -115,7 +115,9 @@ unsigned char *_mbstok_l(
 
 첫 번째 호출에서 **strtok**, 함수는 선행 구분 기호를 건너뛰고 및 첫 번째 토큰에 대 한 포인터를 반환 합니다. *strToken*, null 문자로 토큰을 종료 합니다. 더 많은 토큰의 나머지 부분으로 분할할 수 있습니다 *strToken* 일련의 호출에 의해 **strtok**합니다. 호출할 때마다 **strtok** 수정 *strToken* 뒤에 null 문자를 삽입 하 여 합니다 **토큰** 해당 호출에서 반환 합니다. 다음 토큰을 읽어올 *strToken*, 호출 **strtok** 사용 하 여는 **NULL** 에 대 한 값을 *strToken* 인수. 합니다 **NULL** *strToken* 인수를 사용 하면 **strtok** 에서 수정 된 다음 토큰을 검색할 *strToken*합니다. 합니다 *strDelimit* 인수 구분 기호 집합이 달라질 수 있도록 다음에 대 한 호출에서 값을 사용할 수 있습니다.
 
-출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값의 설정이 적용 됩니다는 **LC_CTYPE** 로캘 범주 설정 합니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요.
+
+없는 이러한 함수의 버전은 **_l** 접미사가 로캘 종속 동작에 대 한 현재 로캘을 사용 합니다. 사용 하 여 버전 합니다 **_l** 접미사 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 > [!NOTE]
 > 각 함수는 스레드 로컬 정적 변수를 사용하여 문자열을 토큰으로 구문 분석합니다. 따라서 여러 스레드가 부적절한 영향을 주지 않고 이러한 함수를 동시에 호출할 수 있습니다. 그러나 단일 스레드 내에서 이러한 함수 중 하나로 호출을 인터리빙하면 데이터가 손상되고 부정확한 결과가 생성될 가능성이 높습니다. 다른 문자열을 구문 분석할 때는 문자열 하나의 구문 분석을 완료한 후에 다음 문자열의 구문 분석을 시작하세요. 또한 다른 함수가 호출되는 루프 내에서 이러한 함수 중 하나를 호출할 때의 위험 가능성도 고려하세요. 다른 함수가 이러한 함수 중 하나를 사용하게 되면 인터리빙된 호출 시퀀스가 수행되어 데이터가 손상됩니다.
