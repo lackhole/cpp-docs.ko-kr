@@ -6,12 +6,12 @@ helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: c1f59c704e96ade82295f4ae88265f549987e981
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 44a2f1da6a02444c79247178c34281e39731f0f3
+ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813970"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476931"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 만들기 및 사용자 고유의 동적 링크 라이브러리 (c + +)를 사용 합니다.
 
@@ -296,9 +296,11 @@ DLL을 사용 하는지 여부를 소유 하거나 타사 DLL 클라이언트 �
 
 1. 위쪽 창에서 두 번 클릭 합니다 **Additional Include Directories** 대화 상자 편집 컨트롤을 사용 하도록 설정 합니다.
 
-1. 편집 컨트롤에서의 위치로 경로 지정 합니다 **MathLibrary.h** 헤더 파일입니다. 이 경우 상대 경로 사용할 수 있습니다.
+1. 편집 컨트롤에서의 위치로 경로 지정 합니다 **MathLibrary.h** 헤더 파일입니다. 이 경우에 DLL 프로젝트에서.h 파일이 포함 된 폴더에 클라이언트 프로젝트에서.cpp 파일이 포함 된 폴더에서 상대 경로 사용할 수 있습니다. 클라이언트 프로젝트가 DLL 솔루션과 같은 폴더에 별도 솔루션의 경우 상대 경로 다음과 같습니다.
 
    `..\..\MathLibrary\MathLibrary`
+
+   동일한 솔루션에는 DLL과 클라이언트 프로젝트 또는 솔루션은 서로 다른 폴더에 상대 경로 적절히 조정 해야 합니다.
 
    ![추가 포함 디렉터리 속성에 헤더 위치를 추가](media/mathclient-additional-include-directories.png "Additional Include Directories 속성에 헤더 위치를 추가 합니다.")
 
