@@ -23,12 +23,12 @@ helpviewer_keywords:
 - symbols [C++], finding
 - resources [C++], searching for symbols
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
-ms.openlocfilehash: 74c70db5c04a6b56ec7bb2630c8d829151ec4225
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: cd2f05b4944e26d8a96b3f96e4e39fda0ad8ee48
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562837"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328391"
 ---
 # <a name="how-to-include-resources-at-compile-time-c"></a>방법: (C + +) 컴파일 타임에 리소스 포함
 
@@ -48,7 +48,7 @@ ms.locfileid: "57562837"
 
 하면 리소스를 추가할 수 다른 파일에서 프로젝트 컴파일 타임에 나열 합니다 **컴파일 시간 지시문** 상자에 **리소스 내용** 대화 상자. 사용 합니다 **리소스 내용** 프로젝트 환경의 기본 수정할 작업에서 프로젝트.rc 파일 및 모든 리소스를 모두 저장 대화 상자 [기호](../windows/symbols-resource-identifiers.md) 에서 `Resource.h`합니다.
 
-시작 하려면 열기를 **리소스 내용** .rc 파일에서 마우스 오른쪽 단추로 클릭 하 여 대화 상자 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)를 선택 **리소스 내용** 다음 속성 및:
+시작 하려면 열기를 **리소스 내용** .rc 파일에서 마우스 오른쪽 단추로 클릭 하 여 대화 상자 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)를 선택 **리소스 내용** 다음 속성 및:
 
 | 속성 | 설명 |
 |---|---|
@@ -65,7 +65,7 @@ ms.locfileid: "57562837"
 
 1. 고유한 파일 이름으로 리소스 스크립트 파일에 리소스를 배치합니다. 사용 하지 마세요 *projectname.rc*이므로 주 리소스 스크립트 파일에 사용 되는 파일의 이름입니다.
 
-1. 마우스 오른쪽 단추로 클릭 합니다 *.rc* 파일 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources) 선택한 **리소스 내용**합니다.
+1. 마우스 오른쪽 단추로 클릭 합니다 *.rc* 파일 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources) 선택한 **리소스 내용**합니다.
 
 1. 에 **컴파일 시간 지시문** 상자에서 추가 합니다 [#include](../preprocessor/hash-include-directive-c-cpp.md) 컴파일러 지시문을 개발 환경에서 주 리소스 파일에 새 리소스 파일을 포함 합니다.
 

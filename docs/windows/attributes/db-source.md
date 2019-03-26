@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_source attribute
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
-ms.openlocfilehash: 2bb15597be5ac4e1bb5f37fb2f12b74631e5a354
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a171e6a7eea5e10b47bf680545bc14618893b155
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592708"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328989"
 ---
 # <a name="dbsource"></a>db_source
 
@@ -26,7 +26,7 @@ ms.locfileid: "50592708"
 ### <a name="parameters"></a>매개 변수
 
 *db_source*<br/>
-데이터 원본에 연결할 때 사용할 연결 문자열입니다. 연결 문자열의 형식에 대해서 [연결 문자열 및 데이터 링크](/previous-versions/windows/desktop/ms718376) 에 Microsoft 데이터 액세스 구성 요소 (MDAC) SDK입니다.
+데이터 원본에 연결할 때 사용할 연결 문자열입니다. 연결 문자열의 형식에 대해서 [연결 문자열 및 데이터 링크](/previous-versions/windows/desktop/ms718376(v=vs.85)) 에 Microsoft 데이터 액세스 구성 요소 (MDAC) SDK입니다.
 
 *name*<br/>
 (선택 사항) 사용 하는 경우 **db_source** 클래스에서 *이름* 있는 데이터 원본 개체의 인스턴스를 **db_source** 특성 (예 1 참조)를 적용 합니다. 사용 하는 경우 **db_source** 메서드 구현에서 인라인 *이름* 데이터 액세스에 사용할 수 있는 변수 (로컬 메서드에) 원본 (예 2 참조). 이 전달할 *이름* 에 *source_name* 의 매개 변수 `db_command` 명령을 사용 하 여 데이터 원본에 연결할 합니다.

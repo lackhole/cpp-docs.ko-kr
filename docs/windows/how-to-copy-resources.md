@@ -30,12 +30,12 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: 28127ea89fdba1b70988ced1d6004c0f914c66e2
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 9867fdf260750d47421e699cdd0d7a58b02ce947
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563045"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328625"
 ---
 # <a name="how-to-manage-resources-c"></a>방법: 관리 리소스 (c + +)
 
@@ -52,7 +52,7 @@ ms.locfileid: "57563045"
 
 ### <a name="to-copy-resources"></a>리소스 복사
 
-1. 독립 실행형 두 리소스 파일을 엽니다 (참조 하는 방법 [리소스 스크립트 파일을 열려면](/how-to-create-a-resource-script-file#use-resource-script-files)). 예를 들어 열 *Source1.rc* 하 고 *Source2.rc*합니다.
+1. 두 리소스 파일을 모두 독립 실행형으로 엽니다. (참조 [리소스 스크립트 파일을 사용 하 여](how-to-create-a-resource-script-file.md#use-resource-script-files)). 예를 들어 열 *Source1.rc* 하 고 *Source2.rc*합니다.
 
 1. 내 첫 번째.rc 파일 중 하나:
 
@@ -88,7 +88,7 @@ IDD_AboutBox (Finnish - XX33)
 
 ### <a name="to-copy-an-existing-resource-and-change-its-language-or-condition"></a>기존 리소스를 복사하고 해당 언어 또는 조건을 변경하려면
 
-에 *.rc* 파일 또는 [리소스 뷰](../windows/resource-view-window.md) 창에서 복사 하 고 선택 하려는 리소스를 마우스 오른쪽 단추로 클릭 **복사본 삽입**합니다. 그리고 다음을 설정 합니다.
+에 *.rc* 파일 또는 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources) 창에서 복사 하 고 선택 하려는 리소스를 마우스 오른쪽 단추로 클릭 **복사본 삽입**합니다. 그리고 다음을 설정 합니다.
 
 - 에 대 한 합니다 **언어** 목록 상자에서 언어를 선택 합니다.
 
@@ -107,7 +107,7 @@ Visual C++에서 사용하도록 그래픽 리소스(비트맵, 아이콘, 커�
 
 ### <a name="to-import-a-resource-into-the-resource-script-file"></a>리소스 스크립트 파일에 리소스를 가져오려면
 
-1. [리소스 뷰](../windows/resource-view-window.md) 리소스를 추가 하 고 선택 하려는는 리소스 스크립트 (.rc) 파일의 노드를 마우스 오른쪽 단추로 클릭 **가져오기**합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources) 리소스를 추가 하 고 선택 하려는는 리소스 스크립트 (.rc) 파일의 노드를 마우스 오른쪽 단추로 클릭 **가져오기**합니다.
 
 1. 찾아 비트맵 (.bmp), 아이콘 (.ico), 커서 (.cur), html 파일 (.htm) 또는 가져올 다른 파일의 파일 이름을 선택 합니다.
 
@@ -118,7 +118,7 @@ Visual C++에서 사용하도록 그래픽 리소스(비트맵, 아이콘, 커�
 
 ### <a name="to-export-a-resource-for-use-outside-of-visual-c"></a>Visual c + + 외부에서 사용할 리소스를 내보내려면
 
-1. [리소스 뷰](../windows/resource-view-window.md), 내보내기 및 선택 하려는 리소스를 마우스 오른쪽 단추로 클릭 **내보내기**합니다. 현재 파일 이름을 그대로 사용 하거나 새 이름을 입력 수 있습니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources), 내보내기 및 선택 하려는 리소스를 마우스 오른쪽 단추로 클릭 **내보내기**합니다. 현재 파일 이름을 그대로 사용 하거나 새 이름을 입력 수 있습니다.
 
 1. 선택한 파일을 저장 하려는 폴더로 이동한 후 **내보내기**합니다.
 

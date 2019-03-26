@@ -14,12 +14,12 @@ helpviewer_keywords:
 - dialog boxes [C++], size
 - dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-ms.openlocfilehash: 51ff52aefb5586b4e301831dbdebeb783ec3c4c5
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 7e7cfcc206ce58ab401bcdb9c9ac6103c50e997f
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563209"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328638"
 ---
 # <a name="how-to-create-a-dialog-box-c"></a>방법: 만들기 대화 상자 (c + +)
 
@@ -34,7 +34,7 @@ ms.locfileid: "57563209"
 
 ### <a name="to-create-a-new-dialog-box"></a>새 대화 상자를 만들려면
 
-1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 선택 **리소스 추가**합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 선택 **리소스 추가**합니다.
 
 1. 에 **리소스 추가** 대화 상자에서 **대화** 에 **리소스 종류** 목록에서 선택한 **새로 만들기**합니다.
 

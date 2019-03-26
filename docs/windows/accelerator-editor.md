@@ -33,12 +33,12 @@ helpviewer_keywords:
 - keyboard shortcuts [C++], property changing
 - accelerator tables [C++], changing properties
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
-ms.openlocfilehash: f57c09d549a4ceb92db21c06499b4f6e71fc6a52
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 4ed283b9be2afdacfbc93c647c7633fb7802e7fd
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562942"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328404"
 ---
 # <a name="accelerator-editor-c"></a>액셀러레이터 키 편집기 (c + +)
 
@@ -116,7 +116,7 @@ C + + 프로젝트에서 직접 사용 하 여 현재 위치에서 편집 액셀
 
 ### <a name="to-edit-in-an-accelerator-table"></a>액셀러레이터 키 테이블에서 편집하려면
 
-1. 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
+1. 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)합니다.
 
 1. 테이블에서 항목을 선택 하 고 내부 편집을 활성화 하려면 선택 합니다.
 
@@ -132,7 +132,7 @@ C + + 프로젝트에서 직접 사용 하 여 현재 위치에서 편집 액셀
 
 ### <a name="to-find-an-entry-in-an-open-accelerator-table"></a>열린 액셀러레이터 키 테이블에서 항목을 찾으려면
 
-1. 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
+1. 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)합니다.
 
 1. 열 내용을 사전순으로 정렬 하려면 열 머리글을 선택 합니다. 예를 들어 선택할 **ID** 액셀러레이터 키 테이블의 모든 Id를 사전순으로 표시 합니다.
 
@@ -140,7 +140,7 @@ C + + 프로젝트에서 직접 사용 하 여 현재 위치에서 편집 액셀
 
 ### <a name="to-add-an-entry-to-an-accelerator-table"></a>액셀러레이터 키 테이블에 항목을 추가하려면
 
-1. 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
+1. 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)합니다.
 
 1. 액셀러레이터 키 테이블 내에서 마우스 오른쪽 단추로 클릭 하 고 선택 **새 액셀러레이터 키**, 또는 테이블의 맨 아래에 빈 행 항목을 선택 합니다.
 
@@ -155,7 +155,7 @@ C + + 프로젝트에서 직접 사용 하 여 현재 위치에서 편집 액셀
 
 ### <a name="to-delete-an-entry-from-an-accelerator-table"></a>액셀러레이터 키 테이블에서 항목을 삭제하려면
 
-1. 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
+1. 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)합니다.
 
 1. 를 삭제 하거나 길게 누른 하려는 항목을 선택 합니다 **Ctrl** 또는 **Shift** 여러 항목을 선택 하도록 선택 하는 동안 키입니다.
 
@@ -177,7 +177,7 @@ C + + 프로젝트에서 직접 사용 하 여 현재 위치에서 편집 액셀
 
 ### <a name="to-change-the-properties-of-multiple-accelerator-keys"></a>여러 액셀러레이터 키 속성을 변경 하려면
 
-1. 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)합니다.
+1. 액셀러레이터 키 테이블에서 해당 아이콘을 두 번 클릭 하 여 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)합니다.
 
 1. 액셀러레이터 키를 누른 채로 변경 하려면 선택 합니다 **Ctrl** 키를 선택 합니다.
 

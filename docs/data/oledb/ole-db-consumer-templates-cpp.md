@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB consumer templates [C++]
 - databases [C++], consumers
 ms.assetid: d3e42612-0bc0-4d65-9c32-0e8a7b219e82
-ms.openlocfilehash: f3b247660e65975630b9434685d0a12caf0fc257
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a93b0a48bc5996cbb96194762b9c03ea143556e2
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57419176"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328729"
 ---
 # <a name="ole-db-consumer-templates-c"></a>OLE DB 소비자 템플릿(C++)
 
@@ -24,7 +24,7 @@ OLE DB 소비자 템플릿은 OLE DB 버전 2.6 사양을 지원합니다. (OLE 
 
 - OLE DB 프로그래밍을 위한 네이티브 C/C++ 데이터 형식을 제공합니다.
 
-OLE DB 템플릿을 사용하려면 C++ 템플릿, COM 및 OLE DB 인터페이스에 대해 잘 알고 있어야 합니다. OLE DB에 익숙하지 참조 [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms718124(v=vs.85))합니다.
+OLE DB 템플릿을 사용하려면 C++ 템플릿, COM 및 OLE DB 인터페이스에 대해 잘 알고 있어야 합니다. OLE DB에 익숙하지 참조 [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server)합니다.
 
 OLE DB 템플릿은 새로운 개체 모델을 추가하는 대신 기존 OLE DB 개체 모델을 지원합니다. OLE DB 소비자 템플릿의 최상위 계층 클래스는 OLE DB 사양에 정의된 구성 요소와 유사합니다. OLE DB 소비자 템플릿의 디자인에는 행 집합의 여러 접근자와 같은 고급 기능이 포함됩니다. 템플릿과 다중 상속을 사용하면 라이브러리가 작고 유연해집니다.
 
@@ -61,4 +61,4 @@ OLE DB 소비자는 지역 변수로 데이터베이스 테이블의 열을 바�
 [OLE DB 프로그래밍](../../data/oledb/ole-db-programming.md)<br/>
 [데이터 액세스](../data-access-in-cpp.md)<br/>
 [OLE DB SDK 설명서](/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
-[OLE DB 프로그래머 참조](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)
+[SQL Server 용 Microsoft OLE DB 드라이버](/sql/connect/oledb/oledb-driver-for-sql-server)

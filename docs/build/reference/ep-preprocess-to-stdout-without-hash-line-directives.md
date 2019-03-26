@@ -20,7 +20,7 @@ ms.locfileid: "57807340"
 ---
 # <a name="ep-preprocess-to-stdout-without-line-directives"></a>/EP(#line 지시문 없이 stdout로 전처리)
 
-C 및 c + + 소스 파일을 전처리 하 고 표준 출력 장치에 전처리 된 파일을 복사 합니다.
+C 및 C++ 소스 파일을 전처리 하 고 표준 출력 장치에 전처리 된 파일을 복사 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,7 +44,7 @@ C 및 c + + 소스 파일을 전처리 하 고 표준 출력 장치에 전처리
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 

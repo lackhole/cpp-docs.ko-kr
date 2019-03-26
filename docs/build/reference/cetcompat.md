@@ -1,21 +1,21 @@
 ---
-title: / CETCOMPAT (제어 흐름 적용 기술이 호환)
+title: / CETCOMPAT (CET 섀도 스택 호환)
 ms.date: 02/19/2019
 f1_keywords:
 - /CETCOMPAT
 helpviewer_keywords:
 - /CETCOMPAT linker option
 - /CETCOMPAT
-ms.openlocfilehash: 1a01dd45667f64dbcbe11acaf1180835bd0d6e31
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 0ed5d9d4f9f4f4dc5cd4fc19df4179e86e430187
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809849"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356017"
 ---
-# <a name="cetcompat-control-flow-enforcement-technology-compatible"></a>/ CETCOMPAT (제어 흐름 적용 기술이 호환)
+# <a name="cetcompat-cet-shadow-stack-compatible"></a>/ CETCOMPAT (CET 섀도 스택 호환)
 
-사용 하 여 제어 흐름 적용 기술까지 (CET) 호환 가능으로 실행 가능 이미지를 표시할지 여부를 지정 합니다.
+제어 흐름 적용 기술 (CET) 섀도 스택와 호환 되는 실행 가능 이미지를 표시할지 여부를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -24,13 +24,13 @@ ms.locfileid: "57809849"
 ## <a name="arguments"></a>인수
 
 **NO**<br/>
-실행 파일이 표시 되지 않아야 CET 호환을 지정 합니다.
+실행 파일이 표시 되지 않아야 CET 섀도 스택 호환을 지정 합니다.
 
 ## <a name="remarks"></a>설명
 
-제어 흐름 적용 기술 (CET)는 특정 유형의 맬웨어 공격 으로부터 보호 하는 기능을 제공 하는 컴퓨터 프로세서 기능입니다. 자세한 내용은 [Intel 흐름 제어 적용 Technology Preview](https://software.intel.com/sites/default/files/managed/4d/2a/control-flow-enforcement-technology-preview.pdf)합니다.
+제어 흐름 적용 기술 (CET) 섀도 스택은 기반 맬웨어 공격 반환 지향된 프로그래밍 (ROP)를 방어 하는 기능을 제공 하는 컴퓨터 프로세서 기능. 자세한 내용은 [Intel 흐름 제어 적용 Technology Preview](https://software.intel.com/sites/default/files/managed/4d/2a/control-flow-enforcement-technology-preview.pdf)합니다.
 
-합니다 **/CETCOMPAT** 링커 옵션에는 이진 CET 호환으로 표시 하도록 링커에 지시 합니다. **/CETCOMPAT:NO** 으로 CET와 호환 되지 않는 이진 파일을 표시 합니다. 명령줄에서 두 옵션을 지정 하는 경우 지정 된 개가 사용 됩니다. 현재이 스위치는 x86 및 x64 아키텍처에 적용할 수만 있습니다.
+합니다 **/CETCOMPAT** 링커 옵션에는 이진 CET 섀도 스택 호환으로 표시 하도록 링커에 지시 합니다. **/CETCOMPAT:NO** 으로 CET 섀도 스택와 호환 되지 않는 이진 파일을 표시 합니다. 명령줄에서 두 옵션을 지정 하는 경우 지정 된 개가 사용 됩니다. 현재이 스위치는 x86 및 x64 아키텍처에 적용할 수만 있습니다.
 
 합니다 **/CETCOMPAT** 옵션은 Visual Studio 2019 Preview 3 도구 집합부터 사용할 수 있습니다.
 

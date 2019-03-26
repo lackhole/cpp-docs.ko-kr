@@ -42,12 +42,12 @@ helpviewer_keywords:
 - Image editor [C++], grid settings
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
-ms.openlocfilehash: 73fd4a8996bcfbaaf6fdd4018e524b66913d11cd
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 22fe458a72d970bb09687a53232f94b171e14a45
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563084"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328430"
 ---
 # <a name="image-editor-for-icons-c"></a>(C + +) 아이콘에 대 한 이미지 편집기
 
@@ -60,7 +60,7 @@ ms.locfileid: "57563084"
 
 사용할 수도 있습니다는 **이미지 편집기** 하며 [바이너리 편집기](binary-editor.md) 관리 되는 프로젝트에서에서 리소스 파일을 사용 하 합니다. 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기가 포함 된 리소스 편집을 지원 하지 않습니다.
 
-새 그래픽 리소스를 만들 수 있습니다 [기존 이미지를 가져올](/windows/how-to-copy-resources#import-and-export-resources) 편집에 대 한 다음 프로젝트에 추가 하 고 있습니다. 또한을 열고 프로젝트에 포함 되지 않는 이미지도 편집할 [독립 실행형 이미지 편집](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)합니다.
+새 그래픽 리소스를 만들 수 있습니다 [기존 이미지를 가져올](../windows/how-to-copy-resources.md#import-and-export-resources) 편집에 대 한 다음 프로젝트에 추가 하 고 있습니다. 또한을 열고 프로젝트에 포함 되지 않는 이미지도 편집할 [독립 실행형 이미지 편집](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)합니다.
 
 에 대 한 내용은 합니다 **이미지 편집기**를 참조 하는 방법 [아이콘 또는 다른 이미지를 만들](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), [이미지 편집](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), [그리기 도구를 사용 하 여](../windows/using-a-drawing-tool-image-editor-for-icons.md), [색 작업할](../windows/working-with-color-image-editor-for-icons.md), 및 [액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)합니다.
 
@@ -151,7 +151,7 @@ ms.locfileid: "57563084"
 
 Windows 응용 프로그램의 아이콘에 텍스트를 추가 하 고 텍스트의 글꼴 조작 하는 방법의 예는 다음과 같습니다.
 
-1. C + + Windows Forms 응용 프로그램을 만듭니다. 자세한 내용은 참조 하세요 [Windows 응용 프로그램 프로젝트를 만드는](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5)합니다. *app.ico* 파일은 기본적으로 프로젝트에 추가 됩니다.
+1. C + + Windows Forms 응용 프로그램을 만듭니다. 자세한 내용은 [방법: Windows Forms 응용 프로그램을 만들](/previous-versions/visualstudio/visual-studio-2008/s69bf10x(v%3dvs.90))합니다. *app.ico* 파일은 기본적으로 프로젝트에 추가 됩니다.
 
 1. **솔루션 탐색기**, 파일을 두 번 클릭 *app.ico*합니다. 합니다 **이미지 편집기** 열립니다.
 

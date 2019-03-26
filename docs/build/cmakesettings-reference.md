@@ -4,16 +4,16 @@ ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: d80829b1475e8718e1c4188ff4fb7d42a1d4b3b9
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 893bc5c8efe3fdae80a4a0de8204d391baa63d07
+ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827707"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356116"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings.json 스키마 참조
 
-`cmakesettings.json` 파일에는 Visual Studio가 CMake와 상호작용하여 지정된 플랫폼에 대한 프로젝트를 빌드하는 방법을 지정하는 정보가 포함되어 있습니다. 이 파일을 사용하여 cmake.exe 환경에 대한 환경 변수 또는 인수와 같은 정보를 저장합니다.
+합니다 **cmakesettings.json**' 파일에 지정된 된 플랫폼에 대 한 프로젝트를 빌드하려면 CMake를 사용 하 여 Visual Studio 작용 하는 방법을 지정 하는 정보가 포함 됩니다. 이 파일을 사용하여 cmake.exe 환경에 대한 환경 변수 또는 인수와 같은 정보를 저장합니다.
 
 ## <a name="environments"></a>환경
 

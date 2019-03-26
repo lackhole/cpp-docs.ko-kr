@@ -21,12 +21,12 @@ helpviewer_keywords:
 - data resources [C++]
 - resources [C++], creating
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
-ms.openlocfilehash: df693e87bc9a370409eb43155d3f976a9f00cdac
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 0adcefe2af9d17a1c42f64f25636e220f53706fc
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562863"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328755"
 ---
 # <a name="binary-editor-c"></a>바이너리 편집기 (c + +)
 
@@ -53,7 +53,7 @@ ms.locfileid: "57562863"
 
 ### <a name="to-open-a-windows-desktop-resource-for-binary-editing"></a>이진 편집을 위해 Windows 데스크톱 리소스를 열려면
 
-1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)에서 편집할 특정 리소스 파일을 선택합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)에서 편집할 특정 리소스 파일을 선택합니다.
 
 1. 리소스를 마우스 오른쪽 단추로 누르고 **이진 데이터 열기**합니다.
 

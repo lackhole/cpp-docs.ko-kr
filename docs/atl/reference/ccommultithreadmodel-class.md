@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CComMultiThreadModel class
 - threading [ATL]
 ms.assetid: db8f1662-2f7a-44b3-b341-ffbfb6e422a3
-ms.openlocfilehash: 6b77efffca127c79c665cb8dedb916b0874de038
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2ec83fc320d65f5f51c14f9523544972cd69c66c
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290731"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328690"
 ---
 # <a name="ccommultithreadmodel-class"></a>CComMultiThreadModel 클래스
 
@@ -157,7 +157,7 @@ typedef CComCriticalSection CriticalSection;
 
 ##  <a name="decrement"></a>  CComMultiThreadModel::Decrement
 
-Win32 함수를 호출 하는이 정적 함수 [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement)를 가리키는 변수의 값은 감소 *p*합니다.
+Win32 함수를 호출 하는이 정적 함수 [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement)를 가리키는 변수의 값은 감소 *p*합니다.
 
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw ();
@@ -178,7 +178,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw ();
 
 ##  <a name="increment"></a>  CComMultiThreadModel::Increment
 
-Win32 함수를 호출 하는이 정적 함수 [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement)를 가리키는 변수의 값이 증가 하는 *p*합니다.
+Win32 함수를 호출 하는이 정적 함수 [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement)를 가리키는 변수의 값이 증가 하는 *p*합니다.
 
 ```
 static ULONG WINAPI Increment(LPLONG p) throw ();

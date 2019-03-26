@@ -87,12 +87,12 @@ helpviewer_keywords:
 - graphics [C++], converting formats
 - images [C++], converting formats
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
-ms.openlocfilehash: 92eac69e6802a824c4b6e107d2ff3393e931a542
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 4191b1bd495a8908610b6e49c3dff676de2304dc
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563058"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328495"
 ---
 # <a name="how-to-create-an-icon-or-other-image"></a>방법: 아이콘 또는 다른 이미지 만들기
 
@@ -167,7 +167,7 @@ ms.locfileid: "57563058"
 
 #### <a name="to-create-a-new-icon-or-cursor"></a>새 아이콘 또는 커서를 만들려면
 
-1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 찾은 후 선택 **리소스 삽입**합니다. 에 기존 이미지 리소스가 이미 있는 경우에 *.rc* 파일인 단추로 cursor와 같은 합니다 **커서** 폴더를 선택 **커서 삽입**합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 찾은 후 선택 **리소스 삽입**합니다. 에 기존 이미지 리소스가 이미 있는 경우에 *.rc* 파일인 단추로 cursor와 같은 합니다 **커서** 폴더를 선택 **커서 삽입**합니다.
 
 1. 에 [리소스 삽입 대화 상자](../windows/add-resource-dialog-box.md)를 선택 **아이콘** 또는 **커서** 선택한 **새**합니다. 아이콘에 대 한이 작업은 32 × 32를 16 색 아이콘을 사용 하 여 아이콘 리소스를 만듭니다. 커서의 경우 32 × 32 단색 (2-색) 이미지가 생성 됩니다.
 
@@ -228,7 +228,7 @@ ms.locfileid: "57563058"
 
 #### <a name="to-create-a-256-color-icon-or-cursor"></a>256 색 아이콘이 나 커서를 만들려면
 
-1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 찾은 후 선택 **리소스 삽입**합니다. 에 기존 이미지 리소스가 이미 있는 경우에 *.rc* 파일인 단추로 cursor와 같은 합니다 **커서** 폴더를 선택 **커서 삽입**합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 찾은 후 선택 **리소스 삽입**합니다. 에 기존 이미지 리소스가 이미 있는 경우에 *.rc* 파일인 단추로 cursor와 같은 합니다 **커서** 폴더를 선택 **커서 삽입**합니다.
 
 1. 에 [리소스 삽입 대화 상자](../windows/add-resource-dialog-box.md)를 선택 **아이콘** 또는 **커서** 선택한 **새**합니다.
 
@@ -295,7 +295,7 @@ GIF 또는 JPEG 이미지를 열 수를 **이미지 편집기** 비트맵으로 
 
 ### <a name="to-add-a-new-image-resource-to-an-unmanaged-c-project"></a>관리 되지 않는 c + + 프로젝트에 새 이미지 리소스를 추가 하려면
 
-1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 찾은 후 선택 **리소스 삽입**합니다. 에 기존 이미지 리소스가 이미 있는 경우에 *.rc* 파일인 cursor와 같은 단순히 단추로 클릭 합니다 **커서** 폴더를 선택 **커서 삽입**합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 찾은 후 선택 **리소스 삽입**합니다. 에 기존 이미지 리소스가 이미 있는 경우에 *.rc* 파일인 cursor와 같은 단순히 단추로 클릭 합니다 **커서** 폴더를 선택 **커서 삽입**합니다.
 
 1. 에 [리소스 삽입 대화 상자](../windows/add-resource-dialog-box.md)를 만들려면 원하는 이미지 리소스의 유형을 선택 (**비트맵**예를 들어) 선택한 **새로 만들기**합니다.
 

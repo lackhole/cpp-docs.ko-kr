@@ -9,12 +9,12 @@ helpviewer_keywords:
 - class libraries, MFC
 - MFC, about MFC
 ms.assetid: 7101cb18-a681-495c-8f2b-069ad20c72f7
-ms.openlocfilehash: 364f29406b2c00d26ecc4cc69060ed8ec21b743b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 60c50eb25132a38c72be762ab96d8ee262f5b349
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291285"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328833"
 ---
 # <a name="mfc-desktop-applications"></a>MFC 데스크톱 응용 프로그램
 
@@ -85,7 +85,7 @@ MFC 사용 방법을 보여 주는 샘플에 대한 링크를 제공합니다.
 [Visual C++ 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
 ATL, MFC, OLE DB 템플릿, C 런타임 라이브러리, C++ 표준 라이브러리를 포함하여 Visual C++에 제공되는 다양한 라이브러리에 대한 링크를 제공합니다.
 
-[Visual Studio의 디버깅](/visualstudio/debugger/debugging-in-visual-studio.md)<br/>
+[Visual Studio의 디버깅](/visualstudio/debugger/debugging-in-visual-studio)<br/>
 Visual Studio 디버거를 사용하여 애플리케이션이나 저장 프로시저의 논리적 오류를 수정하는 방법을 설명하는 항목의 링크를 제공합니다.
 
 ## <a name="see-also"></a>참고자료

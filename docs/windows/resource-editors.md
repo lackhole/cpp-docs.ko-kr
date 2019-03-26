@@ -21,12 +21,12 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: 461322076e2de4e2cd89c6d39592989aecc75361
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: a0b5e3905daf72307702dbe4f05c2871cf768ac0
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563019"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328807"
 ---
 # <a name="resource-editors-c"></a>리소스 편집기 (c + +)
 
@@ -63,13 +63,13 @@ ms.locfileid: "57563019"
 > [!NOTE]
 > 사용 하 여 리소스의 속성을 수정할 수는 **속성** 창입니다.
 
-- 리소스의 속성을 편집 하려면 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources)을 편집 하 고 선택 하려는 리소스를 마우스 오른쪽 단추로 클릭 **속성**합니다.  그런 다음 합니다 [속성 창](/visualstudio/ide/reference/properties-window), 리소스의 속성을 변경 합니다.
+- 리소스의 속성을 편집 하려면 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)을 편집 하 고 선택 하려는 리소스를 마우스 오른쪽 단추로 클릭 **속성**합니다.  그런 다음 합니다 [속성 창](/visualstudio/ide/reference/properties-window), 리소스의 속성을 변경 합니다.
 
 - 리소스의 속성에 대 한 변경을 취소 하려면 리소스에 포커스를가지고 있는지 확인 **리소스 뷰** 선택한 **실행 취소** 에서 합니다 **편집** 메뉴.
 
 ### <a name="win32-resources"></a>Win32 리소스
 
-Win32 리소스에 액세스할 수 있습니다 합니다 [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources) 창입니다.
+Win32 리소스에 액세스할 수 있습니다 합니다 [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources) 창입니다.
 
 #### <a name="to-view-a-win32-resource-in-a-resource-editor"></a>리소스 편집기에서 Win32 리소스를 보려면
 
@@ -113,7 +113,7 @@ Win32 리소스에 액세스할 수 있습니다 합니다 [리소스 뷰](/wind
 
 ### <a name="to-preview-resources"></a>리소스를 미리 보려면
 
-1. [리소스 뷰](/windows/how-to-create-a-resource-script-file#create-resources) 또는 문서 창에 예를 들어, 리소스 선택 **IDD_ABOUTBOX**합니다.
+1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources) 또는 문서 창에 예를 들어, 리소스 선택 **IDD_ABOUTBOX**합니다.
 
 1. 에 [속성 창](/visualstudio/ide/reference/properties-window)를 선택 합니다 **속성 페이지** 단추입니다.
 
