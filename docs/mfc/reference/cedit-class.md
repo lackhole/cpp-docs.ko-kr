@@ -94,12 +94,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-ms.openlocfilehash: 6af054ea27233de2cc3b551bbec69c0ab3b4be9e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e1ca69382591dc7d3afe9b5871dfdebd64aedce4
+ms.sourcegitcommit: 0064d37467f958dd6a5111f20d7660eaccd53ee9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289964"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58417003"
 ---
 # <a name="cedit-class"></a>CEdit Class
 
@@ -570,11 +570,11 @@ UINT GetLimitText() const;
 
 ### <a name="return-value"></a>반환 값
 
-현재 텍스트 크기 제한 (바이트)이 `CEdit` 개체입니다.
+현재 텍스트 크기 제한, TCHARs이 `CEdit` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-텍스트 제한은 최대 양 (바이트)를가 편집 컨트롤에서 허용 하는 텍스트입니다.
+텍스트 제한은 TCHARs 편집 컨트롤을 받아들일 수 있는 텍스트의 최대 크기입니다.
 
 > [!NOTE]
 >  이 멤버 함수는 Windows 95 및 Windows NT 4.0부터 사용할 수 있습니다.
@@ -606,14 +606,14 @@ int GetLine(
 컨트롤을 편집 하는 여러 줄에서 검색할 줄 번호를 지정 합니다. 줄 번호는 0부터 시작 합니다. 첫 번째 줄을 지정 하는 값이 0입니다. 이 매개 변수는 단일 줄 편집 컨트롤에서 무시 됩니다.
 
 *lpszBuffer*<br/>
-줄의 복사본을 수신 하는 버퍼를 가리킵니다. 버퍼의 첫 번째 단어의 문자 버퍼에 복사할 수 있는 최대 수를 지정 해야 합니다.
+줄의 복사본을 수신 하는 버퍼를 가리킵니다. 버퍼의 첫 번째 단어 TCHARs 버퍼에 복사할 수 있는 최대 수를 지정 해야 합니다.
 
 *nMaxLength*<br/>
-버퍼에 복사할 수 있는 바이트의 최대 수를 지정 합니다. `GetLine` 이 값의 첫 번째 단어에 배치 *lpszBuffer* Windows 호출 하기 전에 합니다.
+버퍼에 복사할 수 있는 TCHAR 문자의 최대 수를 지정 합니다. `GetLine` 이 값의 첫 번째 단어에 배치 *lpszBuffer* Windows 호출 하기 전에 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-실제로 복사 된 바이트 수입니다. 줄 번호를 지정 하면 반환 값이 0 *nIndex* 줄 편집 컨트롤의 수보다 큽니다.
+실제로 복사된 문자 수입니다. 줄 번호를 지정 하면 반환 값이 0 *nIndex* 줄 편집 컨트롤의 수보다 큽니다.
 
 ### <a name="remarks"></a>설명
 
@@ -800,7 +800,7 @@ void LimitText(int nChars = 0);
 ### <a name="parameters"></a>매개 변수
 
 *nChars*<br/>
-사용자가 입력할 수 있는 텍스트의 길이 바이트 단위로 지정 합니다. 이 매개 변수가 0 이면 텍스트 길이가 UINT_MAX 바이트로 설정 됩니다. 이는 기본 동작입니다.
+(TCHARs)의 길이 입력할 수 있는 텍스트를 지정 합니다. 이 매개 변수가 0 이면 텍스트 길이가 UINT_MAX 바이트로 설정 됩니다. 이는 기본 동작입니다.
 
 ### <a name="remarks"></a>설명
 
