@@ -10,12 +10,12 @@ helpviewer_keywords:
 - porting to Win32 [C++]
 - Win32 applications [C++], migrating from UNIX
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
-ms.openlocfilehash: 325cdb86f61f658776c69057022c005c389492d3
-ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
+ms.openlocfilehash: 3146c94879532a5c58208369bb6d131a3a027c33
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57813905"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278478"
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX에서 Win32로 이식
 
@@ -38,12 +38,6 @@ UNIX 프로그래머가 일반적으로 고려하는 한 가지 옵션은 UNIX�
 [UNIX Custom Application Migration Guide](https://technet.microsoft.com/library/bb656290.aspx)(UNIX 사용자 지정 애플리케이션 마이그레이션 가이드)에서는 UNIX에서 Win32 환경으로의 코드 마이그레이션에 대한 기술 도움말을 제공합니다.
 
 [Unix Migration Project Guide](https://technet.microsoft.com/library/bb656287.aspx)(Unix 마이그레이션 프로젝트 가이드)에서는 UNIX에서 Win32로 많은 프로젝트를 마이그레이션하는 방법에 대한 개괄적인 도움말을 제공하여 UNIX 사용자 지정 애플리케이션 마이그레이션 가이드를 보완합니다. 이 가이드에서는 프로젝트 마이그레이션의 각 단계에서 고려해야 할 문제에 대해 조언합니다.
-
-### <a name="microsoft-windows-services-for-unix-sfu"></a>Microsoft Windows SFU(UNIX용 서비스)
-
-Microsoft Windows SFU(UNIX용 서비스)에서는 Windows를 기존 UNIX 기반 환경으로 통합하기 위한 다양한 플랫폼 간 서비스를 제공합니다. UNIX용 서비스는 파일 공유, 원격 액세스 및 관리, 암호 동기화, 공통 디렉터리 관리, 공통 유틸리티 집합 및 셸을 제공합니다.
-
-[Windows Services for UNIX](http://www.microsoft.com/downloads/details.aspx?FamilyID=896c9688-601b-44f1-81a4-02878ff11778&displaylang=en)
 
 ### <a name="interopsystemscom"></a>InteropSystems.com
 

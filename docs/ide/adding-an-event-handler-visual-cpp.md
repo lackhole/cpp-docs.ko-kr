@@ -10,12 +10,12 @@ helpviewer_keywords:
 - MSBuild, properties
 - event handler wizard [C++]
 ms.assetid: 050bebf0-a9e0-474b-905c-796fe5ac8fc3
-ms.openlocfilehash: 8e6b2511b00b7f949718e5b0d9fd793ac53d0d8b
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 96e5b8777bb8b0c976277a06e8ad49b3334921fb
+ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694519"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58328573"
 ---
 # <a name="add-an-event-handler"></a>이벤트 처리기 추가
 
@@ -25,7 +25,7 @@ ms.locfileid: "51694519"
 
 **대화 상자 컨트롤에 이벤트 처리기를 추가하려면:**
 
-1. [리소스 뷰](../windows/resource-view-window.md)에서 대화 상자 리소스를 두 번 클릭하여 [대화 상자 편집기](../windows/dialog-editor.md)의 컨트롤이 포함된 대화 상자 리소스를 엽니다.
+1. [리소스 뷰](../windows/how-to-create-a-resource-script-file.md#create-resources)에서 대화 상자 리소스를 두 번 클릭하여 [대화 상자 편집기](../windows/dialog-editor.md)의 컨트롤이 포함된 대화 상자 리소스를 엽니다.
 
 1. 알림 이벤트를 처리할 컨트롤을 마우스 오른쪽 단추로 클릭합니다.
 
