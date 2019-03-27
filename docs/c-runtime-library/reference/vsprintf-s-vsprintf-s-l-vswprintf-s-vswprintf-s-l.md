@@ -1,6 +1,6 @@
 ---
 title: vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l
-ms.date: 11/04/2016
+ms.date: 03/26/2019
 apiname:
 - _vswprintf_s_l
 - vsprintf_s
@@ -36,12 +36,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - _vswprintf_s_l function
 ms.assetid: 60e90518-57f0-4f1b-b732-f62a69702833
-ms.openlocfilehash: 055b2279be923712528463cb23ab3fd6b52897d7
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.openlocfilehash: 469a823d0f033a2f140d78a65cb0e69a3ef16d5c
+ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57211032"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508798"
 ---
 # <a name="vsprintfs-vsprintfsl-vswprintfs-vswprintfsl"></a>vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l
 
@@ -109,7 +109,7 @@ int vswprintf_s(
 
 ## <a name="return-value"></a>반환 값
 
-**vsprintf_s** 하 고 **vswprintf_s** 출력 오류가 발생 하면 null 종결 문자 또는 음수 값을 포함 하지 않고 작성 된 문자 수를 반환 합니다. 하는 경우 *버퍼* 하거나 *형식* 횟수가 0 이면 null 포인터인 경우 또는에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 형식 문자열이 잘못 된 서식 문자열을 포함 하는 경우 [ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 설정 **errno** 하 **EINVAL**합니다.
+**vsprintf_s** 하 고 **vswprintf_s** 출력 오류가 발생 하면 null 종결 문자 또는 음수 값을 포함 하지 않고 작성 된 문자 수를 반환 합니다. 하는 경우 *버퍼* 또는 *형식* 가 null 포인터인 경우 경우 *numberOfElements* 이 0 인 경우 형식 문자열에 잘못 된 형식 또는 문자를 잘못 된 매개 변수 처리기 에 설명 된 대로 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 설정 **errno** 하 **EINVAL**합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
