@@ -2,16 +2,16 @@
 title: 유니버설 Windows 플랫폼으로 포팅(C++)
 ms.date: 11/04/2016
 ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
-ms.openlocfilehash: 06543ce27fe4fed839a6f6b885259e8cc1b180c6
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 6bda600abfea04e1158f6ff993e04e5076e4c24b
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518543"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278465"
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>유니버설 Windows 플랫폼으로 포팅(C++)
 
-이 항목에서는 Windows 10 앱 플랫폼인 유니버설 Windows 플랫폼에 기존 C++ 코드를 이식하는 방법에 대한 정보를 찾을 수 있습니다. *유니버설* 이라는 용어는 코드가 데스크톱, 휴대폰, 태블릿 및 앞으로 제공될 장치(Windows 10 실행)를 비롯하여 Windows 10을 실행하는 모든 장치에서 실행될 수 있음을 의미합니다. Windows 10을 실행하는 모든 디바이스에서 제대로 작동하는 단일 XAML 기반 사용자 인터페이스 및 단일 프로젝트를 만듭니다. XAML의 동적 레이아웃 기능을 사용하여 앱 UI를 다른 디스플레이 크기에 맞출 수 있습니다.
+이 항목에서는 Windows 10 앱 플랫폼인 유니버설 Windows 플랫폼에 기존 C++ 코드를 이식하는 방법에 대한 정보를 찾을 수 있습니다. *유니버설* 이라는 용어는 코드가 데스크톱, 휴대폰, 태블릿 및 앞으로 제공될 디바이스(Windows 10 실행)를 비롯하여 Windows 10을 실행하는 모든 디바이스에서 실행될 수 있음을 의미합니다. Windows 10을 실행하는 모든 디바이스에서 제대로 작동하는 단일 XAML 기반 사용자 인터페이스 및 단일 프로젝트를 만듭니다. XAML의 동적 레이아웃 기능을 사용하여 앱 UI를 다른 디스플레이 크기에 맞출 수 있습니다.
 
 Windows 개발자 센터 설명서에는 유니버설 Windows 플랫폼으로 Windows 8.1 앱을 포팅하기 위한 가이드가 포함되어 있습니다. [Windows 런타임 8에서 UWP로 이동](/windows/uwp/porting/w8x-to-uwp-root)을 참조하세요. 이 가이드는 C# 코드에 주로 초점을 맞추고 있지만 대부분의 지침이 C++에도 적용됩니다. 다음 절차에는 보다 자세한 정보가 포함되어 있습니다.
 
@@ -21,9 +21,9 @@ Windows 개발자 센터 설명서에는 유니버설 Windows 플랫폼으로 Wi
 
 - [Windows 8.1 런타임 구성 요소를 UWP에 이식](#BK_81Component)
 
-클래식 데스크톱 Win32 DLL이 있는 상태에서 UWP 응용 프로그램에서 이 파일을 호출하려는 경우에도 이 작업을 수행할 수 있습니다. 이러한 절차를 사용하여 기존 클래식 Windows 데스크톱 C++ 응용 프로그램에 대한 UWP 사용자 인터페이스 레이어 또는 플랫폼 간 표준 C++ 코드를 만들 수 있습니다. [방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md)을 참조하세요.
+클래식 데스크톱 Win32 DLL이 있는 상태에서 UWP 애플리케이션에서 이 파일을 호출하려는 경우에도 이 작업을 수행할 수 있습니다. 이러한 절차를 사용하여 기존 클래식 Windows 데스크톱 C++ 애플리케이션에 대한 UWP 사용자 인터페이스 레이어 또는 플랫폼 간 표준 C++ 코드를 만들 수 있습니다. [방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md)을 참조하세요.
 
-## <a name="BK_81StoreApp"></a> Windows 8.1 스토어 앱을 UWP에 포팅
+## <a name="BK_81StoreApp"></a> Windows 8.1 스토어 앱을 UWP에 이식
 
 Windows 8.1 스토어 앱을 사용하는 경우 이러한 작업을 위해 UWP 및 Windows 10을 실행하는 모든 디바이스에서 다음 절차를 사용할 수 있습니다.  컴파일러 및 라이브러리 변경으로 인해 발생하는 모든 문제를 제거하려면 먼저 Visual Studio 2017에서 Windows 8.1 프로젝트로 빌드하는 것이 좋습니다. 작업을 완료한 후 이 작업을 Windows 10 UWP 프로젝트로 변환하는 두 가지 방법이 있습니다. 가장 쉬운 방법은(다음 절차에서 설명) 유니버설 Windows 프로젝트를 만들고 기존 코드를 복사하는 것입니다. Windows 8.1 데스크톱 및 Windows 8.1 Phone용 유니버설 프로젝트를 사용한 경우 프로젝트는 XAML의 두 개의 다른 레이아웃으로 시작되지만 디스플레이 크기에 맞게 조정되는 단일 동적 레이아웃으로 끝납니다.
 
@@ -74,7 +74,7 @@ Windows 8.1 스토어 앱에서 이미 작동되는 DLL 또는 Windows 런타임
 
 ### <a name="to-port-a-windows-81-runtime-component-to-the-uwp"></a>Windows 8.1 런타임 구성 요소를 UWP에 포팅하려면
 
-1. Visual Studio 2017의 **새 프로젝트** 대화 상자에서 **Windows 유니버설** 노드를 찾습니다. 이 노드가 표시되지 않으면 먼저 [Windows 10용 도구](http://go.microsoft.com/fwlink/p/?LinkID=617903) 를 설치합니다. **Windows 런타임 구성 요소** 템플릿을 선택하고 구성 요소에 이름을 지정한 다음 **확인** 단추를 선택합니다. 구성 요소 이름은 네임스페이스 이름으로 사용되므로 이전 프로젝트의 네임스페이스와 동일한 이름을 사용하려고 할 수 있습니다. 그러려면 이전과 다른 폴더에 프로젝트를 만들어야 합니다. 다른 이름을 선택하면 생성된 코드 파일에서 네임스페이스 이름을 업데이트할 수 있습니다.
+1. Visual Studio 2017의 **새 프로젝트** 대화 상자에서 **Windows 유니버설** 노드를 찾습니다. 이 노드가 표시되지 않으면 먼저 [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)를 설치하세요. **Windows 런타임 구성 요소** 템플릿을 선택하고 구성 요소에 이름을 지정한 다음 **확인** 단추를 선택합니다. 구성 요소 이름은 네임스페이스 이름으로 사용되므로 이전 프로젝트의 네임스페이스와 동일한 이름을 사용하려고 할 수 있습니다. 그러려면 이전과 다른 폴더에 프로젝트를 만들어야 합니다. 다른 이름을 선택하면 생성된 코드 파일에서 네임스페이스 이름을 업데이트할 수 있습니다.
 
 1. 프로젝트를 닫습니다.
 
