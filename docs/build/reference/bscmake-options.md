@@ -29,14 +29,17 @@ helpviewer_keywords:
 - /Es BSCMAKE option
 - Ei BSCMAKE option
 ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2
-ms.openlocfilehash: bf4c3648079dff16481dbdd56b9a70093fd22d8d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: b1d62e8d122cb4f08feef60d6936359b3e246749
+ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812059"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508783"
 ---
 # <a name="bscmake-options"></a>BSCMAKE 옵션
+
+> [!WARNING]
+> BSCMAKE는 Visual Studio와 함께 설치되지만 더 이상 IDE에서 사용되지 않습니다. Visual Studio 2008부터 찾아보기 및 기호 정보는 자동으로 솔루션 폴더의 SQL Server .sdf 파일에 저장됩니다.
 
 이 섹션에서는 BSCMAKE를 제어 하는 것에 대 한 사용 가능한 옵션을 설명 합니다. 여러 옵션에는 특정 정보를 포함 시키거나 제외 시켜 찾아보기 정보 파일의 내용을 제어 합니다. 제외 옵션을 더 빠르게 실행 BSCMAKE를 허용할 수 고.bsc 파일을 더 작게 될 수 있습니다. 옵션 이름은 대/소문자 구분 (제외한 **/help** 하 고 **/NOLOGO**).
 
