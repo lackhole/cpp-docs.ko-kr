@@ -1,6 +1,6 @@
 ---
 title: CDHtmlDialog 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CDHtmlDialog
 - AFXDHTML/CDHtmlDialog
@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: 5b3e34987b5d6b63ee302ba53e456c448ac3c3d2
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: bda980c26f9791e1d4f03026f7e118e69a4ab881
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57413955"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565807"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog 클래스
 
@@ -140,7 +140,7 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 |이름|설명|
 |----------|-----------------|
 |[CDHtmlDialog::CDHtmlDialog](#cdhtmldialog)|CDHtmlDialog 개체를 생성합니다.|
-|[CDHtmlDialog::~CDHtmlDialog](#cdhtmldialog__~cdhtmldialog)|CDHtmlDialog 개체를 제거합니다.|
+|[CDHtmlDialog::~CDHtmlDialog](#_dtorcdhtmldialog)|CDHtmlDialog 개체를 제거합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -352,7 +352,7 @@ virtual BOOL CreateControlSite(
 void DDX_DHtml_AxControl(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT& var);
 
 void DDX_DHtml_AxControl(
@@ -370,7 +370,7 @@ void DDX_DHtml_AxControl(
 *szId*<br/>
 ActiveX 컨트롤의 HTML 소스에서 object 태그의 ID 매개 변수의 값입니다.
 
-*dispid*<br/>
+*dispId*<br/>
 데이터를 교환 하려는 속성의 디스패치 ID입니다.
 
 *szPropName*<br/>
@@ -417,43 +417,43 @@ HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     CString& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     short& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     int& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     long& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     DWORD& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     float& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     double& value);
 ```
 
@@ -465,7 +465,7 @@ void DDX_DHtml_ElementText(
 *szId*<br/>
 HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
-*dispid*<br/>
+*dispId*<br/>
 데이터를 교환 하려는 HTML 요소의 디스패치 ID입니다.
 
 *값*<br/>
@@ -510,7 +510,7 @@ void DDX_DHtml_SelectIndex(
 에 대 한 포인터를 [CDataExchange](../../mfc/reference/cdataexchange-class.md) 개체입니다.
 
 *szId*<br/>
-HTML 컨트롤의 id 매개 변수에 대해 지정 된 값입니다.
+HTML 컨트롤의 지정 된 값 `id` 매개 변수입니다.
 
 *값*<br/>
 교환할 값입니다.
@@ -651,11 +651,11 @@ VARIANT GetControlProperty(
 
 VARIANT GetControlProperty(
     LPCTSTR szId,
-    DISPID dispid);
+    DISPID dispId);
 
 VARIANT GetControlProperty(
     IDispatch* pdispControl,
-    DISPID dispid);
+    DISPID dispId);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -669,7 +669,7 @@ ActiveX 컨트롤의 HTML ID입니다.
 *pdispControl*<br/>
 `IDispatch` ActiveX 컨트롤의 포인터입니다.
 
-*dispid*<br/>
+*dispId*<br/>
 속성의 디스패치 ID입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -802,7 +802,7 @@ template <class Q> HRESULT GetElementInterface(
 
 HRESULT GetElementInterface(
     LPCTSTR szElementId,
-    REFIID riid,
+    REFIID refiid,
     void** ppvObj);
 ```
 
@@ -814,7 +814,7 @@ HTML 요소의 ID입니다.
 *ppvObj*<br/>
 주소는 요소가 없으면 요청 된 인터페이스 포인터를 사용 하 여 채울 수 있는 포인터와 쿼리 성공 합니다.
 
-*riid*<br/>
+*refiid*<br/>
 요청된 된 인터페이스의 ID (IID) 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -827,12 +827,12 @@ HTML 요소의 ID입니다.
 
 ##  <a name="getelementproperty"></a>  CDHtmlDialog::GetElementProperty
 
-로 식별 된 속성의 값을 가져옵니다 *dispid* 으로 식별 되는 HTML 요소에서 *szElementId*합니다.
+로 식별 된 속성의 값을 가져옵니다 *dispId* 으로 식별 되는 HTML 요소에서 *szElementId*합니다.
 
 ```
 VARIANT GetElementProperty(
     LPCTSTR szElementId,
-    DISPID dispid);
+    DISPID dispId);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -840,7 +840,7 @@ VARIANT GetElementProperty(
 *szElementId*<br/>
 HTML 요소의 ID입니다.
 
-*dispid*<br/>
+*dispId*<br/>
 속성의 디스패치 ID입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1151,7 +1151,7 @@ E_NOTIMPL 반환.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현을 [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="onframewindowactivate"></a>  CDHtmlDialog::OnFrameWindowActivate
 
@@ -1245,12 +1245,12 @@ ActiveX 컨트롤의 속성을 새 값으로 설정합니다.
 ```
 void SetControlProperty(
     LPCTSTR szElementId,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT* pVar);
 
 void SetControlProperty(
     IDispatch* pdispControl,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT* pVar);
 
 void SetControlProperty(
@@ -1264,7 +1264,7 @@ void SetControlProperty(
 *szElementId*<br/>
 ActiveX 컨트롤의 HTML ID입니다.
 
-*dispid*<br/>
+*dispId*<br/>
 설정할 속성의 디스패치 ID입니다.
 
 *pVar*<br/>
@@ -1308,7 +1308,7 @@ HTML 요소의 속성을 설정 합니다.
 ```
 void SetElementProperty(
     LPCTSTR szElementId,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT* pVar);
 ```
 
@@ -1317,7 +1317,7 @@ void SetElementProperty(
 *szElementId*<br/>
 HTML 요소의 ID입니다.
 
-*dispid*<br/>
+*dispId*<br/>
 설정할 속성의 디스패치 ID입니다.
 
 *pVar*<br/>

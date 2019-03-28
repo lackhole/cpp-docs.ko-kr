@@ -1,16 +1,16 @@
 ---
 title: '&lt;hash_set&gt; 연산자'
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - hash_set/std::operator!=
 - hash_set/std::operator==
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
-ms.openlocfilehash: 3cb0b743eefa52b178a89be1c2cc766352bf4849
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 901070731d372904ae297a5360ec0da78d179468
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564842"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565586"
 ---
 # <a name="lthashsetgt-operators"></a>&lt;hash_set&gt; 연산자
 
@@ -153,7 +153,7 @@ The hash_sets s1 and s2 are not equal.
 The hash_sets s1 and s3 are equal.
 ```
 
-## <a name="neq_hash_multiset"></a>  operator!=(hash_multiset)
+## <a name="op_neq_hash_multiset"></a>  operator!=(hash_multiset)
 
 > [!NOTE]
 > 이 API는 더 이상 사용되지 않습니다. [unordered_set 클래스](../standard-library/unordered-set-class.md)를 대신 사용하는 것이 좋습니다.
@@ -219,7 +219,7 @@ The hash_multisets hs1 and hs2 are not equal.
 The hash_multisets hs1 and hs3 are equal.
 ```
 
-## <a name="eq_eq_hash_multiset"></a>  operator==(hash_multiset)
+## <a name="op_eq_eq_hash_multiset"></a>  operator==(hash_multiset)
 
 > [!NOTE]
 > 이 API는 더 이상 사용되지 않습니다. [unordered_set 클래스](../standard-library/unordered-set-class.md)를 대신 사용하는 것이 좋습니다.

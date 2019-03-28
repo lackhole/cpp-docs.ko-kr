@@ -1,16 +1,16 @@
 ---
-title: 공유 또는 resuse Visual Studio 프로젝트 설정-c + +
-ms.date: 11/28/2018
+title: 공유 하거나 Visual Studio 프로젝트 설정-c + +를 다시 사용
+ms.date: 03/27/2019
 helpviewer_keywords:
 - project properties [C++], reusable
-ms.openlocfilehash: 50e3795a4708a3c15ed25ee7ff6565470ef6989a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: b49c125e0341a2de68bbcd992dd8f9afaa99233d
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827942"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565128"
 ---
-# <a name="share-or-resuse-visual-studio-project-settings"></a>공유 또는 resuse Visual Studio 프로젝트 설정
+# <a name="share-or-reuse-visual-studio-project-settings"></a>공유 하거나 Visual Studio 프로젝트 설정을 다시 사용
 
 사용 하 여 여러 프로젝트에 다른 사용자와 공유 하거나 다시 사용할 수 있는 설정의 사용자 지정 그룹을 만들려면 **속성 관리자** 만들려는 *속성 시트* 유형의 각 설정을 저장할 (.props 파일) 재사용 하거나 다른 사용자와 공유할 수 있게 되기를 원하는 프로젝트입니다. 속성을 사용 하 여 시트는 훨씬 적은 오류가 발생 하기 쉬운 보다 "전역" 설정은 만드는 다른 방법입니다. 
 

@@ -1,6 +1,6 @@
 ---
 title: valarray 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - valarray/std::valarray
 - valarray/std::valarray::value_type
@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::valarray [C++], sum
 - std::valarray [C++], swap
 ms.assetid: 19b862f9-5d09-4003-8844-6ddd02c1a3a7
-ms.openlocfilehash: f38d431248c524a65b4a7a7126ba73b767a64173
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: efb186753de0e04bd01f9cc6e81c487084b88ac2
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525316"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565742"
 ---
 # <a name="valarray-class"></a>valarray 클래스
 
@@ -88,7 +88,7 @@ ms.locfileid: "51525316"
 |-|-|
 |[operator!](#op_not)|`valarray`에 있는 각 요소의 논리적 `NOT` 값을 가져오는 단항 연산자입니다.|
 |[operator%=](#op_mod_eq)|배열 요소를 요소별로 지정된 `valarray`나 요소 형식의 값으로 나눈 나머지를 가져옵니다.|
-|[operator&=](#op_amp_eq)|지정된 `valarray`의 해당 요소나 요소 형식의 값으로 배열에 있는 요소의 비트 `AND`를 가져옵니다.|
+|[operator&=](#op_and_eq)|지정된 `valarray`의 해당 요소나 요소 형식의 값으로 배열에 있는 요소의 비트 `AND`를 가져옵니다.|
 |[operator>>=](#op_gt_gt_eq)|`valarray` 피연산자의 각 요소에 대한 비트를 지정된 위치 수 또는 두 번째 `valarray`에 지정된 요소 양만큼 오른쪽으로 이동합니다|
 |[operator<<=](#op_lt_lt_eq)|`valarray` 피연산자의 각 요소에 대한 비트를 지정된 위치 수 또는 두 번째 `valarray`에 지정된 요소 양만큼 왼쪽으로 이동합니다|
 |[operator*=](#op_star_eq)|요소별로 지정된 `valarray`의 요소나 요소 형식의 값을 피연산자 `valarray`에 곱합니다.|
@@ -508,7 +508,7 @@ valarray: ( 0 -3 4 -7 1 -3 ).
 */
 ```
 
-## <a name="and_eq"></a>  valarray::operator&amp;=
+## <a name="op_and_eq"></a>  valarray::operator&amp;=
 
 지정된 valarray의 해당 요소나 요소 형식의 값으로 배열에 있는 요소의 비트 **AND**를 가져옵니다.
 
@@ -906,7 +906,7 @@ valarray: ( 2 0 4 2 6 4 8 6 ).
 */
 ```
 
-## <a name="valarray__operator-"></a>  valarray::operator-
+## <a name="operator-"></a>  valarray::operator-
 
 valarray의 각 요소에 -를 적용하는 단항 연산자입니다.
 
@@ -958,7 +958,7 @@ valarray: ( 0 0 2 -2 4 -4 6 -6 8 -8 ).
 */
 ```
 
-## <a name="valarray__operator-_eq"></a>  valarray::operator-=
+## <a name="operator-_eq"></a>  valarray::operator-=
 
 요소별로 지정된 valarray의 요소나 요소 형식의 값을 피연산자 valarray에서 뺍니다.
 
@@ -1276,7 +1276,7 @@ valarray<Type>& operator|=(const Type& right);
 
 ### <a name="remarks"></a>설명
 
-**XOR**로 지칭되는 배타적 논리 OR의 의미 체계에서는 *e*1 및 *e*2 요소가 지정되는 경우 *e*1 **XOR** *e*2는 요소 중 정확히 하나가 true이면 **true**이고 두 요소가 모두 false이거나 true이면 **false**입니다.
+논리, 라고 배타적 **XOR**, 의미 체계: 지정 된 요소가 *e*1 및 *e*2 *e*1 **XOR** *e*2 **true** 경우 요소 중 정확히 하나는 true입니다. **false** 두 요소 모두 false 또는 두 요소 모두 참인 경우.
 
 ### <a name="example"></a>예제
 
@@ -1849,10 +1849,10 @@ valarray(
 *개수*<br/>
 valarray에 지정할 요소의 수입니다.
 
-*val*<br/>
+*Val*<br/>
 valarray의 요소를 초기화하는 데 사용할 값입니다.
 
-*ptr*<br/>
+*Ptr*<br/>
 valarray의 요소를 초기화하는 데 사용할 값에 대한 포인터입니다.
 
 *오른쪽*<br/>

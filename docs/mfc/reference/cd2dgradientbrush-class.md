@@ -1,6 +1,6 @@
 ---
 title: CD2DGradientBrush 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CD2DGradientBrush
 - AFXRENDERTARGET/CD2DGradientBrush
@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CD2DGradientBrush [MFC], m_extendMode
 - CD2DGradientBrush [MFC], m_pGradientStops
 ms.assetid: 5bf133e6-16b7-4e3a-845d-0ce63fafe5ec
-ms.openlocfilehash: f49a3a1a1aaebed47b05bf003926379c6f0b8102
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2e04d714e3479224cfc4e207b70483786be33db8
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290978"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565466"
 ---
 # <a name="cd2dgradientbrush-class"></a>CD2DGradientBrush 클래스
 
@@ -42,7 +42,7 @@ class CD2DGradientBrush : public CD2DBrush;
 |이름|설명|
 |----------|-----------------|
 |[CD2DGradientBrush::CD2DGradientBrush](#cd2dgradientbrush)|CD2DGradientBrush 개체를 생성합니다.|
-|[CD2DGradientBrush::~CD2DGradientBrush](#cd2dgradientbrush__~cd2dgradientbrush)|소멸자입니다. D2D 그라데이션 브러시 개체 소멸 될 때 호출 됩니다.|
+|[CD2DGradientBrush::~CD2DGradientBrush](#_dtorcd2dgradientbrush)|소멸자입니다. D2D 그라데이션 브러시 개체 소멸 될 때 호출 됩니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 

@@ -1,6 +1,6 @@
 ---
 title: CMFCVisualManagerWindows7 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CMFCVisualManagerWindows7
 - AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7
@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCVisualManagerWindows7 Class [MFC]
 ms.assetid: e8d87df1-0c09-4b58-8ade-4e911f796e42
-ms.openlocfilehash: 296ccc0accdf2937406d9965118c1807aeb2604c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e729201f1a6b6fd41286cc6af2b8c08fc7ee697c
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269398"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565521"
 ---
 # <a name="cmfcvisualmanagerwindows7-class"></a>CMFCVisualManagerWindows7 클래스
 
@@ -34,7 +34,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |이름|설명|
 |----------|-----------------|
 |[CMFCVisualManagerWindows7::CMFCVisualManagerWindows7](#cmfcvisualmanagerwindows7)|기본 생성자입니다.|
-|[CMFCVisualManagerWindows7::~CMFCVisualManagerWindows7](#cmfcvisualmanagerwindows7__~cmfcvisualmanagerwindows7)|기본 소멸자입니다.|
+|[CMFCVisualManagerWindows7::~CMFCVisualManagerWindows7](#_dtorcmfcvisualmanagerwindows7)|기본 소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -42,7 +42,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |----------|-----------------|
 |`CMFCVisualManagerWindows7::CleanStyle`|현재 비주얼 스타일을 지우고 기본 비주얼 스타일을 다시 설정 합니다.|
 |`CMFCVisualManagerWindows7::CleanUp`|사용자 인터페이스에 개체를 모두 지우고 메뉴를 다시 설정 합니다.|
-|`CMFCVisualManagerWindows7::DrawNcBtn`|프레임에 비클라이언트 영역에서 단추를 그립니다. 그리도록이 메서드를 최소화 하는 프레임 워크 사용을 최대화 하 고 닫은 복원 단추 창 프레임의 오른쪽 위 모퉁이에서. 프로그램 아닌 Aero 테마를 사용 하는 경우에이 메서드 호출 되지 됩니다.|
+|`CMFCVisualManagerWindows7::DrawNcBtn`|프레임에 비클라이언트 영역에서 단추를 그립니다. 그리도록이 메서드를 최소화 하는 프레임 워크 사용을 최대화 하 고 닫은 복원 단추 창 프레임의 오른쪽 위 모퉁이에서. 이 메서드는 프로그램을 사용 하는 경우에 호출을 `Aero` 테마입니다.|
 |`CMFCVisualManagerWindows7::DrawNcText`|프레임에 비클라이언트 영역에서 텍스트를 그립니다. 이 메서드를 사용 하 여 프레임 창의 맨 위에 있는 제목 표시줄에 응용 프로그램 제목을 그릴 프레임 워크입니다.|
 |`CMFCVisualManagerWindows7::DrawSeparator`|에 구분 기호를 그립니다 합니다 [CMFCToolBar 클래스](../../mfc/reference/cmfctoolbar-class.md)합니다.|
 |`CMFCVisualManagerWindows7::GetRibbonBar`|검색 된 [CMFCRibbonBar 클래스](../../mfc/reference/cmfcribbonbar-class.md) 사용자 인터페이스를 사용 하 여 연결 합니다.|
@@ -173,7 +173,7 @@ virtual COLORREF GetRibbonEditBackgroundColor (
 virtual void OnFillMenuImageRect(
     CDC* pDC,
     CMFCToolBarButton* pButton,
-    CRect rect,
+    CRect rectangle,
     CMFCVisualManager::AFX_BUTTON_STATE state);
 ```
 
@@ -185,7 +185,7 @@ virtual void OnFillMenuImageRect(
 *pButton*<br/>
 [in] 에 대 한 포인터를 `CMFCToolBarButton`입니다. 프레임 워크는이 단추에 대 한 배경을 채웁니다.
 
-*rect*<br/>
+*rectangle*<br/>
 [in] 메뉴 단추 이미지 영역 경계를 지정 하는 사각형입니다.
 
 *state*<br/>

@@ -1,17 +1,17 @@
 ---
 title: 병렬 컨테이너 및 개체
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 helpviewer_keywords:
 - parallel objects
 - parallel containers
 - concurrent containers
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
-ms.openlocfilehash: b406bc194735a2796f03f1e9d6cf0cf2ae2e6f86
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: bcf3ead9fe945ecb2246fdb28b7f67cd51b1238b
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333295"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565950"
 ---
 # <a name="parallel-containers-and-objects"></a>병렬 컨테이너 및 개체
 
@@ -27,13 +27,13 @@ A *동시 개체* 동시에 구성 요소 간에 공유 됩니다. 병렬로 동
 
 동시 컨테이너:
 
-- [concurrent_vector 클래스](#ctor)
+- [concurrent_vector 클래스](#vector)
 
-   - [Concurrent_vector 차이점 및 벡터](#ctor)
+   - [Concurrent_vector 차이점 및 벡터](#vector-differences)
 
-   - [동시성 으로부터 안전한 작업](#ctor)
+   - [동시성 으로부터 안전한 작업](#vector-safety)
 
-   - [예외 안전성](#ctor)
+   - [예외 안전성](#vector-exceptions)
 
 - [concurrent_queue 클래스](#queue)
 
@@ -189,7 +189,7 @@ A *동시 개체* 동시에 구성 요소 간에 공유 됩니다. 병렬로 동
 
 [!code-cpp[concrt-unordered-map-structure#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_2.cpp)]
 
-사용 하는 예로 `concurrent_unordered_map` 를 매핑 수행 및 줄이기 병렬로 작업을 참조 하세요 [방법: 맵 수행 및 병렬 작업 줄이기](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md)합니다.
+사용 하는 예로 `concurrent_unordered_map` 를 매핑 수행 및 줄이기 병렬로 작업을 참조 하세요. [방법: 매핑 수행 및 병렬 작업 줄이기](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md)합니다.
 
 ###  <a name="map-differences"></a> Concurrent_unordered_map 차이점 및 unordered_map
 
@@ -293,7 +293,7 @@ A *동시 개체* 동시에 구성 요소 간에 공유 됩니다. 병렬로 동
 
 - [방법: combinable을 사용하여 성능 개선](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)
 
-- [방법: combinable을 사용하여 집합 결합](../../parallel/concrt/how-to-use-combinable-to-combine-sets.md)
+- [방법: combinable을 사용하여 세트 결합](../../parallel/concrt/how-to-use-combinable-to-combine-sets.md)
 
 [[맨 위로 이동](#top)]
 
@@ -305,7 +305,7 @@ A *동시 개체* 동시에 구성 요소 간에 공유 됩니다. 병렬로 동
 [방법: combinable을 사용하여 성능 개선](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br/>
 사용 하는 방법을 보여 줍니다는 `combinable` 클래스 공유 상태를 제거 하 고 성능을 향상 시키는 합니다.
 
-[방법: combinable을 사용하여 집합 결합](../../parallel/concrt/how-to-use-combinable-to-combine-sets.md)<br/>
+[방법: combinable을 사용하여 세트 결합](../../parallel/concrt/how-to-use-combinable-to-combine-sets.md)<br/>
 사용 하는 방법을 보여 줍니다는 `combine` 스레드 로컬 데이터 집합을 병합 하는 함수입니다.
 
 [PPL(병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>

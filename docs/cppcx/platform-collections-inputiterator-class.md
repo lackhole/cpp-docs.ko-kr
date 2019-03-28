@@ -1,18 +1,18 @@
 ---
 title: Platform::Collections::InputIterator 클래스
-ms.date: 12/30/2016
+ms.date: 03/27/2019
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::InputIterator::InputIterator
 helpviewer_keywords:
 - InputIterator Class
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-ms.openlocfilehash: f5cd6afa591ba2a03fbfe492e566b0fc938ae396
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 49b131b01fe3d9cad5f8366fd4cc0c110b5d060c
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745793"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565141"
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform::Collections::InputIterator 클래스
 
@@ -53,7 +53,7 @@ InputIterator 템플릿 클래스의 형식 이름입니다.
 |이름|설명|
 |----------|-----------------|
 |[InputIterator::operator!= 연산자](#operator-inequality)|현재 InputIterator가 지정된 InputIterator와 같지 않은지 여부를 나타냅니다.|
-|[InputIterator::operator* 연산자](#operator-decrement)|현재 InputIterator가 지정하는 요소에 대한 참조를 검색합니다.|
+|[InputIterator::operator* 연산자](#operator-dereference)|현재 InputIterator가 지정하는 요소에 대한 참조를 검색합니다.|
 |[InputIterator::operator++ 연산자](#operator-increment)|현재 InputIterator를 증가시킵니다.|
 |[InputIterator::operator== 연산자](#operator-equality)|현재 InputIterator가 지정된 InputIterator와 같은지 여부를 나타냅니다.|
 |[InputIterator::operator-> 연산자](#operator-arrow)|현재 InputIterator가 참조하는 요소의 주소를 검색합니다.|
@@ -76,12 +76,12 @@ InputIterator 클래스의 새 인스턴스를 초기화합니다.
 
 ```
 InputIterator();
-explicit InputIterator(Windows::Foundation::Collections<X>^ iter);
+explicit InputIterator(Windows::Foundation::Collections<X>^ iterator);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*iter*<br/>
+*iterator*<br/>
 반복기 개체입니다.
 
 ## <a name="operator-arrow"></a>  InputIterator::operator-&gt; Operator

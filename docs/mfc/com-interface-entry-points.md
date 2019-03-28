@@ -1,6 +1,6 @@
 ---
 title: COM 인터페이스 진입점
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 helpviewer_keywords:
 - entry points, COM interfaces
 - state management, OLE/COM interfaces
@@ -9,16 +9,16 @@ helpviewer_keywords:
 - MFC, managing state data
 - COM interfaces, entry points
 ms.assetid: 9e7421dc-0731-4748-9e1b-90acbaf26d77
-ms.openlocfilehash: 3c7b0067e66dfa8bc6f52bcd67637370f8c9a758
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: eb8fc425d6b9849f6367d9b207e5181652386be3
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288074"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58564738"
 ---
 # <a name="com-interface-entry-points"></a>COM 인터페이스 진입점
 
-COM 인터페이스의 멤버 함수를 사용 합니다 [METHOD_PROLOGUE](com-interface-entry-points.md#method_prologue) 내보낸된 인터페이스의 메서드를 호출할 때 적절 한 전역 상태를 유지 하는 매크로입니다.
+COM 인터페이스의 멤버 함수를 사용 합니다 `METHOD_PROLOGUE` 내보낸된 인터페이스의 메서드를 호출할 때 적절 한 전역 상태를 유지 하는 매크로입니다.
 
 인터페이스의 멤버 함수에서 구현 되는 일반적으로 `CCmdTarget`-파생된 개체의 자동 초기화를 제공 하려면이 매크로 이미 사용 된 `pThis` 포인터입니다. 예를 들어:
 

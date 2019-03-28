@@ -1,17 +1,17 @@
 ---
 title: basic_regex 클래스
-ms.date: 09/10/2018
+ms.date: 03/27/2019
 f1_keywords:
 - regex/std::basic_regex
 helpviewer_keywords:
 - basic_regex class
 ms.assetid: 8a18c6b4-f22a-4cfd-bc16-b4267867ebc3
-ms.openlocfilehash: 0799bbcbfb7cdbc1ee1755cf387de2aee46db027
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e3a38dc186a52c8431442d58bb10e56837396b07
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633407"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565453"
 ---
 # <a name="basicregex-class"></a>basic_regex 클래스
 
@@ -88,7 +88,7 @@ class basic_regex
 |-|-|
 |[assign](#assign)|정규식 개체에 값을 할당합니다.|
 |[flags](#flags)|구문 옵션 플래그를 반환합니다.|
-|[get_loc](#get_loc)|저장된 로캘 개체를 반환합니다.|
+|[getloc](#getloc)|저장된 로캘 개체를 반환합니다.|
 |[imbue](#imbue)|저장된 로캘 개체를 변경합니다.|
 |[mark_count](#mark_count)|일치하는 하위 식의 수를 반환합니다.|
 |[swap](#swap)|두 정규식 개체를 바꿉니다.|
@@ -391,7 +391,7 @@ locale_type imbue(locale_type loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*Loc*<br/>
+*loc*<br/>
 저장할 로캘 개체입니다.
 
 ### <a name="remarks"></a>설명

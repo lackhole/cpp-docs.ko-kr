@@ -1,6 +1,6 @@
 ---
 title: CD2DSolidColorBrush 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CD2DSolidColorBrush
 - AFXRENDERTARGET/CD2DSolidColorBrush
@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CD2DSolidColorBrush [MFC], m_colorSolid
 - CD2DSolidColorBrush [MFC], m_pSolidColorBrush
 ms.assetid: d4506637-acce-4f74-8a9b-f0a45571a735
-ms.openlocfilehash: 41d1d1b8c28335ae6207e41d696359295a83e646
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f225198193443c11d0294010a5fb71858514c81e
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291238"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565414"
 ---
 # <a name="cd2dsolidcolorbrush-class"></a>CD2DSolidColorBrush 클래스
 
@@ -50,7 +50,7 @@ class CD2DSolidColorBrush : public CD2DBrush;
 |이름|설명|
 |----------|-----------------|
 |[CD2DSolidColorBrush::CD2DSolidColorBrush](#cd2dsolidcolorbrush)|오버로드됨. CD2DSolidColorBrush 개체를 생성합니다.|
-|[CD2DSolidColorBrush::~CD2DSolidColorBrush](#cd2dsolidcolorbrush__~cd2dsolidcolorbrush)|소멸자입니다. D2D 단색 브러시 개체 소멸 될 때 호출 됩니다.|
+|[CD2DSolidColorBrush::~CD2DSolidColorBrush](#_dtorcd2dsolidcolorbrush)|소멸자입니다. D2D 단색 브러시 개체 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 

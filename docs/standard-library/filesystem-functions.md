@@ -1,6 +1,6 @@
 ---
 title: '&lt;filesystem&gt; 함수'
-ms.date: 09/10/2018
+ms.date: 03/27/2019
 f1_keywords:
 - FILESYSTEM/std::experimental::filesystem::absolute
 - FILESYSTEM/std::experimental::filesystem::canonical
@@ -84,12 +84,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::system_complete
 - std::experimental::filesystem::temp_directory_path
 - std::experimental::filesystem::u8path
-ms.openlocfilehash: 49a5b59234d92d2587abceff80382e477f66e762
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 11a1857052dd7c242993e8a19afe26aae3c97c06
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333311"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565693"
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;filesystem&gt; 함수
 
@@ -236,7 +236,7 @@ bool copy_file(const path& from, const path& to, copy_options opts, error_code& 
 
 이 함수는 반환 **true** 복사를 시도 하 여 성공, 그렇지 않은 경우 **false**합니다.
 
-## <a name="copy_symlink "></a>  copy_symlink
+## <a name="copy_symlink"></a>  copy_symlink
 
 ```cpp
 void copy_symlink(const path& from, const path& to);
@@ -266,7 +266,7 @@ bool create_directory(const path& pval, const path& attr, error_code& ec) noexce
 
 이 함수는 디렉터리를 만듭니다 *pval* 필요에 따라 합니다. 만 true를 반환 디렉터리를 실제로 만드는 경우 *pval*, 경우 기존 파일에서 사용 권한을 복사 *attr*를 사용 하거나 `perms::all` 없는 오버 로드에 대 한 *attr*  매개 변수입니다.
 
-## <a name="create_directory_symlink "></a>  create_directory_symlink
+## <a name="create_directory_symlink"></a>  create_directory_symlink
 
 ```cpp
 void create_directory_symlink(const path& to, const path& link);
@@ -284,7 +284,7 @@ void create_hard_link(const path& to, const path& link, error_code& ec) noexcept
 
 함수는 디렉터리 또는 파일에 하드 링크로 만듭니다 *에*입니다.
 
-## <a name="create_symlink "></a>  create_symlink
+## <a name="create_symlink"></a>  create_symlink
 
 ```cpp
 void create_symlink(const path& to,  const path& link);
@@ -379,7 +379,7 @@ bool is_character_file(const path& pval, error_code& ec) noexcept;
 
 첫 번째 함수는 `stat.type() == file_type::character`를 반환합니다. 반환할 함수 나머지 `is_character_file(status(pval))`합니다.
 
-## <a name="is_directory "></a>  is_directory
+## <a name="is_directory"></a>  is_directory
 
 ```cpp
 bool is_directory(file_status stat) noexcept;
@@ -419,7 +419,7 @@ bool is_other(const path& pval, error_code& ec) noexcept;
 
 첫 번째 함수는 `stat.type() == file_type::other`를 반환합니다. 반환할 함수 나머지 `is_other(status(pval))`합니다.
 
-## <a name="s_regular_file"></a>  is_regular_file
+## <a name="is_regular_file"></a>  is_regular_file
 
 ```cpp
 bool is_regular_file(file_status stat) noexcept;

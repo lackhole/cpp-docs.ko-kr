@@ -1,6 +1,6 @@
 ---
 title: IResourceManager 구조체
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - IResourceManager
 - CONCRTRM/concurrency::IResourceManager
@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - IResourceManager structure
 ms.assetid: 3dd5ec2c-fe53-4121-ae77-1bc1d1167ff4
-ms.openlocfilehash: 1f8f5992d9ce55100d193196a3c0f94b468ef892
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7afb37fb35040975d6e9471a1d12465e5163fafc
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275277"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565206"
 ---
 # <a name="iresourcemanager-structure"></a>IResourceManager 구조체
 
@@ -120,7 +120,7 @@ virtual ITopologyNode* GetFirstNode() const = 0;
 
 리소스 관리자에 의해 정의 된 열거 순서에서 첫 번째 노드.
 
-##  <a name="iresourcemanager__osversion"></a>  Iresourcemanager:: Osversion 열거형
+##  <a name="osversion"></a>  Iresourcemanager:: Osversion 열거형
 
 운영 체제 버전을 나타내는 열거 형식입니다.
 

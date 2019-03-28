@@ -1,6 +1,6 @@
 ---
 title: 할당 연산자
-ms.date: 03/05/2018
+ms.date: 03/27/2019
 f1_keywords:
 - =
 - '*='
@@ -31,18 +31,18 @@ helpviewer_keywords:
 - /= operator
 - <<= operator
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
-ms.openlocfilehash: 44211e43a0449c8a50ff03cac31eeed1fcc49a28
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 758c82f02d2b113f6c750f7f0ede662c97b646b0
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328476"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565482"
 ---
 # <a name="assignment-operators"></a>할당 연산자
 
 ## <a name="syntax"></a>구문
 
-*식을* *대입 연산자* *식*
+*expression* *assignment-operator* *expression*
 
 *할당 연산자* : 중<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>=&nbsp;&nbsp;&nbsp;*=&nbsp;&nbsp;&nbsp;/=&nbsp;&nbsp;&nbsp;%=&nbsp;&nbsp;&nbsp;+=&nbsp;&nbsp;&nbsp;-=&nbsp;&nbsp;&nbsp;\<\<=&nbsp;&nbsp;&nbsp;>>=&nbsp;&nbsp;&nbsp;&=&nbsp;&nbsp;&nbsp;^=&nbsp;&nbsp;&nbsp;\|=</strong>
@@ -57,7 +57,7 @@ ms.locfileid: "51328476"
 
 다음 표에 있는 모든 할당 연산자(= 연산자 제외)는 복합 할당 연산자입니다.
 
-### <a name="assignment-operators"></a>할당 연산자
+### <a name="assignment-operators-table"></a>할당 연산자 표
 
 |연산자|의미|
 |--------------|-------------|
@@ -73,7 +73,7 @@ ms.locfileid: "51328476"
 |**^=**|첫 번째 및 두 번째 피연산자의 비트 배타적 OR를 구하여 첫 번째 피연산자가 지정한 개체에 결과를 저장합니다.|
 |**\|=**|첫 번째 및 두 번째 피연산자의 비트 포함 OR를 구하여 첫 번째 피연산자가 지정한 개체에 결과를 저장합니다.|
 
-**연산자 키워드**
+### <a name="operator-keywords"></a>연산자 키워드
 
 세 복합 할당 연산자는 동일한 텍스트를 갖고 있습니다. 다음 창이 여기에 포함됩니다.
 
@@ -180,7 +180,7 @@ B = A;
 
 ## <a name="compound-assignment"></a>복합 할당
 
-테이블에 표시 되는 복합 대입 연산자 [대입 연산자](#assignment-operators), 형식에 지정 된 *e1* *op*= *e2*, 여기서 *e1* 를 수정 가능한 l-value가 아닌 **const** 형식 및 *e2* 다음 중 하나입니다.
+에 표시 된 복합 대입 연산자를는 [할당 연산자 표](#assignment-operators-table), 형식에 지정 된 *e1* *op*= *e2*, 여기서 *e1* 를 수정 가능한 l-value가 아닌 **const** 형식 및 *e2* 다음 중 하나입니다.
 
 - 산술 형식
 
@@ -192,7 +192,7 @@ B = A;
 
 ## <a name="result-of-assignment-operators"></a>할당 연산자의 결과
 
-할당 연산자는 할당된 후 왼쪽 피연산자에서 지정한 개체 값을 반환합니다. 결과 형식은 왼쪽 피연산자의 형식입니다. 할당 식의 결과는 항상 l-value입니다. 이러한 연산자는 오른쪽에서 왼쪽으로 결합됩니다. 왼쪽 피연산자는 수정 가능한 l-value여야 합니다.
+대입 연산자는 할당된 후 왼쪽 피연산자에서 지정한 개체 값을 반환합니다. 결과 형식은 왼쪽 피연산자의 형식입니다. 할당 식의 결과는 항상 l-value입니다. 이러한 연산자는 오른쪽에서 왼쪽으로 결합됩니다. 왼쪽 피연산자는 수정 가능한 l-value여야 합니다.
 
 ANSI C에서 할당 식의 결과는 l-value가 아닙니다. 따라서 올바른 C++ 식 `(a += b) += c`가 C에서는 올바르지 않습니다.
 
