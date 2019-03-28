@@ -1,6 +1,6 @@
 ---
 title: scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l
-ms.date: 11/04/2016
+ms.date: 03/26/2019
 apiname:
 - wscanf_s
 - _wscanf_s_l
@@ -42,12 +42,12 @@ helpviewer_keywords:
 - wscanf_s_l function
 - buffers [C++], avoiding overruns
 ms.assetid: 42cafcf7-52d6-404a-80e4-b056a7faf2e5
-ms.openlocfilehash: 0fcf2a9f3ac8585e71caa9f2cc990c7e303a2f5f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28697cac20181c3dda0581c7486ebb673aec1241
+ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528614"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508804"
 ---
 # <a name="scanfs-scanfsl-wscanfs-wscanfsl"></a>scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l
 
@@ -89,51 +89,51 @@ int _wscanf_s_l(
 
 ## <a name="return-value"></a>반환 값
 
-성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 반환 값은 **EOF** , 오류가 발생 한 파일의 끝 문자 또는 문자열의 끝 문자는 문자를 읽는 첫 번째 시도에서 발생 한 경우 또는 합니다. 하는 경우 *형식* 되는 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **scanf_s** 하 고 **wscanf_s** 반환 **EOF** 설정 하 고 **errno** 에 **EINVAL**.
+성공적으로 변환 하 고 할당 된 필드 수를 반환 합니다. 반환 값 혀 졌지만 할당 되지 않은 필드를 포함 하지 않습니다. 반환 값이 0 할당 된 필드가 없음을 나타냅니다. 반환 값은 **EOF** , 오류가 발생 한 파일의 끝 문자 또는 문자열의 끝 문자는 문자를 읽는 첫 번째 시도에서 발견 되 면 또는 합니다. 하는 경우 *형식* 되는 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **scanf_s** 하 고 **wscanf_s** 반환 **EOF** 설정 하 고 **errno** 에 **EINVAL**.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-합니다 **scanf_s** 함수는 표준 입력 스트림에서 데이터를 읽고 **stdin** 제공 하는 위치에 데이터를 쓰고 *인수*합니다. 각 *인수* 의 형식 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다 *형식*합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+합니다 **scanf_s** 함수는 표준 입력 스트림에서 데이터를 읽고 **stdin**에 씁니다 *인수*합니다. 각 *인수* 의 형식 지정자에 해당 하는 변수 형식에 대 한 포인터 여야 합니다 *형식*합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
 **wscanf_s** 의 와이드 문자 버전이 **scanf_s**; *형식* 인수를 **wscanf_s** 는 와이드 문자 문자열입니다. **wscanf_s** 하 고 **scanf_s** 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 작동 합니다. **scanf_s** 현재 UNICODE 스트림에서의 입력을 지원 하지 않습니다.
 
-접미사가 있는 이러한 함수 버전을 **_l** 접미사 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+접미사가 있는 이러한 함수 버전을 **_l** 접미사를 사용 하는 점을 제외 하면 동일 합니다 *로캘* 현재 스레드 로캘 대신 매개 변수.
 
-와 달리 **scanf** 및 **wscanf**, **scanf_s** 및 **wscanf_s** 버퍼 크기를 기준으로 모든 입력 형식의매개변수를지정해야**c**, **C**, **s**, **S**, 또는 컨트롤 집합에 포함 된 문자열 **[]** 합니다. 버퍼 크기는 버퍼 또는 변수에 대한 포인터 뒤에 바로 추가 매개 변수로 전달됩니다. 예를 들어 문자열을 읽고 있는 경우 해당 문자열에 대한 버퍼 크기가 다음과 같이 전달됩니다.
+와 달리 **scanf** 하 고 **wscanf**에 **scanf_s** 및 **wscanf_s** 일부 매개 변수에 대 한 버퍼 크기를 지정 해야 합니다. 모든 크기를 지정할 **c**, **C**를 **s**를 **S**, 또는 컨트롤 집합을 문자열 **[]** 매개 변수입니다. 문자 버퍼 크기는 추가 매개 변수로 전달 됩니다. 즉시 버퍼 또는 변수에 대 한 포인터를 따릅니다. 예를 들어 문자열을 읽는 경우 해당 문자열에 대 한 버퍼 크기를 같이 전달 됩니다.
 
 ```C
 char s[10];
 scanf_s("%9s", s, (unsigned)_countof(s)); // buffer size is 10, width specification is 9
 ```
 
-버퍼 크기에는 종료 null이 포함되어 있습니다. 너비 지정 필드를 사용하면 읽은 토큰이 버퍼에 맞는지 확인할 수 있습니다. 너비 지정 필드가 사용되지 않으며 읽은 토큰이 너무 커서 버퍼에 맞지 않는 경우 버퍼에는 아무것도 기록되지 않습니다.
+버퍼 크기를 터미널 null을 포함합니다. 확인 토큰 맞도록 버퍼에서에서 읽을 수 있는 너비 사양 필드를 사용할 수 있습니다. 토큰에 맞게 너무 큰 경우 아무 것도 쓰지 버퍼에 너비 사양 경우를 제외 합니다.
 
 > [!NOTE]
 > 크기 매개 변수는 형식 **unsigned**가 아닌 **size_t**합니다. 정적 캐스트를 사용 하 여 변환할를 **size_t** 값을 **부호 없는** 64 비트 빌드 구성 합니다.
 
-다음 예제에서는 버퍼 크기 매개 변수가 바이트가 아닌 문자의 최대 수를 설명한다는 사실을 보여 줍니다. 호출할에서 **wscanf_s**, 버퍼 형식에 의해 표시 되는 문자 너비 형식 지정자에 의해 표시 되는 문자 너비와 일치 하지 않습니다.
+버퍼 크기 매개 변수가 바이트가 아닌 문자의 최대 수를 설명합니다. 이 예제에서는 버퍼 유형의 너비 형식 지정자의 너비를 일치 하지 않습니다.
 
 ```C
 wchar_t ws[10];
 wscanf_s(L"%9S", ws, (unsigned)_countof(ws));
 ```
 
-합니다 **S** 형식 지정자는 "함수에 의해 지원 되는 기본 너비 반대" 인 문자 너비의 사용 함을 나타냅니다. 문자 너비는 싱글바이트이지만 함수는 더블바이트 문자를 지원합니다. 이 예제에서는 문자열에서 최대 9자의 싱글바이트 와이드 문자를 읽고 해당 문자를 더블바이트 와이드 문자 버퍼에 넣습니다. 문자는 싱글바이트 값으로 처리됩니다. 처음 두 문자는 `ws[0]`에 저장되고, 두 번째 두 문자는 `ws[1]`에 저장되는 방식입니다.
+합니다 **S** 형식 지정자 문자 너비의 "기본 너비 반대"에서 지 원하는 함수를 사용 하 여 의미 합니다. 문자 너비는 싱글바이트, 하지만 함수는 더블 바이트 문자를 지원 합니다. 이 예제에서는 최대 9 개의 단일 바이트 와이드 문자 문자열의 문자를 읽고 더블 바이트 와이드 문자 버퍼에 넣습니다. 문자는 싱글바이트 값으로 처리됩니다. 처음 두 문자는 `ws[0]`에 저장되고, 두 번째 두 문자는 `ws[1]`에 저장되는 방식입니다.
 
-문자의 경우 다음과 같이 단일 문자를 읽을 수 있습니다.
+이 예제에서는 단일 문자를 읽습니다.
 
 ```C
 char c;
 scanf_s("%c", &c, 1);
 ```
 
-null로 끝나는 문자열이 아닌 문자열에 대한 여러 문자를 읽을 때 정수는 너비 지정 및 버퍼 크기로 사용됩니다.
+Null로 끝나지 않는 문자열에 대 한 여러 문자를 읽을 때 정수는 너비 사양 및 버퍼 크기를 둘 다에 사용 됩니다.
 
 ```C
 char c[4];
-scanf_s("%4c", &c, (unsigned)_countof(c)); // not null terminated
+scanf_s("%4c", c, (unsigned)_countof(c)); // not null terminated
 ```
 
 자세한 내용은 [scanf 너비 사양](../../c-runtime-library/scanf-width-specification.md)을 참조하세요.
@@ -154,7 +154,7 @@ scanf_s("%4c", &c, (unsigned)_countof(c)); // not null terminated
 |**scanf_s**, **_scanf_s_l**|\<stdio.h>|
 |**wscanf_s**, **_wscanf_s_l**|\<stdio.h> 또는 \<wchar.h>|
 
-콘솔 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 콘솔을 사용 하 여 연결 된 표준 스트림 핸들 **stdin**하십시오 **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+콘솔은 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 표준 스트림 핸들 **stdin**하십시오 **stdout**, 및 **stderr** C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 합니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

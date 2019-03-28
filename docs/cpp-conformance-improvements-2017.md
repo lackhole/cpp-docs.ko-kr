@@ -1,18 +1,18 @@
 ---
 title: C++ 규칙 향상
-ms.date: 10/31/2018
+ms.date: 03/26/2019
 ms.technology: cpp-language
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 855322f09c9c8f5292c6e299f946c3cec5d9949a
-ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
+ms.openlocfilehash: b2c014534ce24b9796510195d6ae5a922fb484d8
+ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56809752"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508873"
 ---
-# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159update159"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#update_159)의 C++ 규칙 향상
+# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159improvements159"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#improvements_159)의 C++ 규칙 향상
 
 Microsoft Visual C++ 컴파일러는 일반화된 constexpr을 지원하고 집계에 NSDMI를 사용할 수 있기 때문에 이제 C++14 표준에 추가된 기능을 완벽히 갖췄습니다. 하지만 아직까지 C++11 표준 기능과 C++98 표준 기능이 몇 가지 부족합니다. 컴파일러의 현재 상태를 보여 주는 테이블은 [Visual C++ Language Conformance](visual-cpp-language-conformance.md)(Visual C++ 언어 규칙)를 참조하세요.
 
@@ -335,6 +335,45 @@ void bar(A<0> *p)
 ### <a name="c17-constexpr-for-chartraits-partial"></a>C++17 char_traits에 대한 constexpr(부분)
 
 [P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) 상수 식에서 `std::string_view`를 사용할 수 있도록 `std::traits_type` 멤버 함수 `length`, `compare` 및 `find`로 변경합니다. (Visual Studio 2017 버전 15.6에서 Clang/LLVM에 대해서만 지원됩니다. 버전 15.7 미리 보기 2에서 ClXX에 대해서도 지원이 거의 완료되었습니다.)
+
+## <a name="improvements_159"></a> Visual Studio 2017 버전 15.9의 개선 사항
+
+### <a name="left-to-right-evaluation-order-for-operators-----and-"></a>연산자 ->*, [], >>, <<의 왼쪽에서 오른쪽으로 계산 순서
+
+C++17부터 연산자 ->*, [], >> 및 \<\<의 피연산자는 왼쪽에서 오른쪽 순으로 계산해야 합니다. 컴파일러가 이 순서를 보장할 수 없는 두 가지 경우는 다음과 같습니다.
+- 피연산자 식 중 하나가 값으로 전달된 개체이거나 값으로 전달된 개체를 포함하는 경우, 또는
+- **/clr**을 사용하여 컴파일할 때 피연산자 중 하나가 개체 또는 배열 요소의 필드인 경우.
+
+컴파일러는 왼쪽에서 오른쪽으로 계산을 보장할 수 없는 경우 경고 [C4866](https://docs.microsoft.com/cpp/error-messages/compiler-warnings/c4866?view=vs-2017)을 생성합니다. 이 경고는 **/std:c++17** 이상이 지정된 경우에만 생성됩니다. 이러한 연산자의 왼쪽에서 오른쪽으로 순서 요구 사항이 C++17에서 도입되었기 때문입니다.
+
+이 경고를 해결하려면 먼저 피연산자 계산으로 순서에 종속되는 부작용이 발생하는 경우처럼 피연산자의 왼쪽에서 오른쪽으로 계산이 필요한지 고려합니다. 대부분의 경우 피연산자가 계산되는 순서는 눈에 띄는 영향을 미치지 않습니다. 계산 순서가 왼쪽에서 오른쪽이어야 하는 경우, 대신 const 참조로 피연산자를 전달할 수 있는지 여부를 고려합니다. 이렇게 변경하면 다음 코드 샘플에서 경고가 제거됩니다.
+
+```cpp
+// C4866.cpp
+// compile with: /w14866 /std:c++17
+
+class HasCopyConstructor
+{
+public:
+    int x;
+
+    HasCopyConstructor(int x) : x(x) {}
+    HasCopyConstructor(const HasCopyConstructor& h) : x(h.x) { }
+};
+
+int operator>>(HasCopyConstructor a, HasCopyConstructor b) { return a.x >> b.x; }
+
+// This version of operator>> does not trigger the warning:
+// int operator>>(const HasCopyConstructor& a, const HasCopyConstructor& b) { return a.x >> b.x; }
+
+int main()
+{
+    HasCopyConstructor a{ 1 };
+    HasCopyConstructor b{ 2 };
+
+    a>>b;        // C4866 for call to operator>>
+};
+```
 
 ## <a name="bug-fixes-in-visual-studio-versions-150-153update153-155update155-157update157-158update158-and-159update159"></a>Visual Studio 버전 15.0, [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), [15.8](#update_158) 및 [15.9](#update_159)의 버그 수정
 
