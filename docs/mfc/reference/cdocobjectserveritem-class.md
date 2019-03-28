@@ -1,25 +1,27 @@
 ---
 title: CDocObjectServerItem 클래스
-ms.date: 09/12/2018
+ms.date: 03/27/2019
 f1_keywords:
 - CDocObjectServerItem
 - AFXDOCOB/CDocObjectServerItem
 - AFXDOCOB/CDocObjectServerItem::CDocObjectServerItem
 - AFXDOCOB/CDocObjectServerItem::GetDocument
+- AFXDOCOB/CDocObjectServerItem::OnDoVerb
 - AFXDOCOB/CDocObjectServerItem::OnHide
 - AFXDOCOB/CDocObjectServerItem::OnShow
 helpviewer_keywords:
 - CDocObjectServerItem [MFC], CDocObjectServerItem
 - CDocObjectServerItem [MFC], GetDocument
+- CDocObjectServerItem [MFC], OnDoVerb
 - CDocObjectServerItem [MFC], OnHide
 - CDocObjectServerItem [MFC], OnShow
 ms.assetid: 530f7156-50c8-4806-9328-602c9133f622
-ms.openlocfilehash: f11c202e85453897f6ebf04d8dc165d2b733a406
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 66ff2326cd3d08b3f6c8399d7e948d6aab5074c3
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275276"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565625"
 ---
 # <a name="cdocobjectserveritem-class"></a>CDocObjectServerItem 클래스
 
@@ -49,7 +51,7 @@ class CDocObjectServerItem : public COleServerItem
 
 |이름|설명|
 |----------|-----------------|
-|[CDocObjectServerItem::OnDoVerb](#ondoverb)|DocObject 항목을 숨기려면 프레임 워크를 시도 하는 경우 예외가 throw 됩니다.|
+|[CDocObjectServerItem::OnDoVerb](#ondoverb)|동사를 실행 하기 위해 호출 됩니다.|
 |[CDocObjectServerItem::OnHide](#onhide)|DocObject 항목을 숨기려면 프레임 워크를 시도 하는 경우 예외가 throw 됩니다.|
 |[CDocObjectServerItem::OnShow](#onshow)|DocObject 항목 위치를 확인 하기 위해 프레임 워크에서 호출 활성화 합니다. 항목 DocObject 없으면 호출 [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onshow)합니다.|
 
@@ -108,6 +110,23 @@ COleServerDoc* GetDocument() const;
 ### <a name="remarks"></a>설명
 
 이 인수로 전달 하는 서버 문서에 대 한 액세스를 허용 합니다 [CDocObjectServerItem](#cdocobjectserveritem) 생성자입니다.
+
+##  <a name="ondoverb"></a>  CDocObjectServerItem::OnDoVerb
+
+지정된 된 동사를 실행 하기 위해 프레임 워크에서 호출 됩니다.
+
+```
+virtual void OnDoVerb(LONG iVerb);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*iVerb*<br/>
+실행 하는 동사를 지정 합니다. 가능한 값을 참조 하세요 [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK에 있습니다.
+
+### <a name="remarks"></a>설명
+
+기본 구현 호출 합니다 [은 OnShow](#onshow) 항목 DocObject OLEIVERB_INPLACEACTIVATE 또는 OLEIVERB_SHOW이 지정 된 경우 멤버 함수입니다. 항목 DocObject 아니거나 다른 동사를 지정 하는 경우 기본 구현 호출 [COleServerItem::OnDoVerb](../../mfc/reference/coleserveritem-class.md#ondoverb)합니다.
 
 ##  <a name="onhide"></a>  CDocObjectServerItem::OnHide
 

@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 2ba2c194-2c6c-40ff-9db4-e9dbe57e1f57
-ms.openlocfilehash: c21f89215e08523188eb32490d7b1d5506299fb5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9b2888c82ad9522925ffbd53923d3988863f56ca
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259453"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565362"
 ---
 # <a name="cwordarray-class"></a>CWordArray 클래스
 
@@ -292,7 +292,7 @@ void RemoveCommandRangeUIHandler(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 메시지 처리기에 의해 지정 된 명령 Id에 매핑된 그룹 제거 *cmdIDMin* 하 고 *cmdIDMax*, 명령 소스 개체에서.
+이 메서드는 메시지 처리기를 지정 된 명령 Id에 매핑된 그룹 제거 *cmdIDMin* 하 고 *cmdIDMax*, 명령 소스 개체에서.
 
 ##  <a name="removecommandrangeuihandler"></a>  ICommandSource::RemoveCommandRangeUIHandler
 
@@ -314,7 +314,7 @@ void RemoveCommandRangeUIHandler(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 사용자 인터페이스 명령 메시지 처리기에 의해 지정 된 명령 Id에 매핑된 그룹 제거 *cmdIDMin* 하 고 *cmdIDMax*, 명령 소스 개체에서.
+이 메서드는 사용자 인터페이스 명령 메시지 처리기를 지정 된 명령 Id에 매핑된 그룹 제거 *cmdIDMin* 하 고 *cmdIDMax*, 명령 소스 개체에서.
 
 ##  <a name="removecommanduihandler"></a>  ICommandSource::RemoveCommandUIHandler
 

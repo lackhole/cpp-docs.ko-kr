@@ -1,6 +1,6 @@
 ---
 title: CAnimationVariable 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CAnimationVariable
 - AFXANIMATIONCONTROLLER/CAnimationVariable
@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CAnimationVariable [MFC], m_pParentObject
 - CAnimationVariable [MFC], m_variable
 ms.assetid: 506e697e-31a8-4033-a27e-292f4d7b42d9
-ms.openlocfilehash: 335d29e1e2e8e5b54ec1434a4c072ff3909b3823
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 42fd3ddc504e85ba3f69588bee54c6540b628129
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269034"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565767"
 ---
 # <a name="canimationvariable-class"></a>CAnimationVariable 클래스
 
@@ -68,7 +68,7 @@ class CAnimationVariable;
 |이름|설명|
 |----------|-----------------|
 |[CAnimationVariable::CAnimationVariable](#canimationvariable)|애니메이션 변수 개체를 생성합니다.|
-|[CAnimationVariable::~CAnimationVariable](#canimationvariable__~canimationvariable)|소멸자입니다. CAnimationVariable 개체가 소멸 될 때 호출 됩니다.|
+|[CAnimationVariable::~CAnimationVariable](#_dtorcanimationvariable)|소멸자입니다. CAnimationVariable 개체가 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 

@@ -1,15 +1,15 @@
 ---
 title: Visual Studio의 CMake 프로젝트
-ms.date: 03/05/2019
+ms.date: 03/27/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 84511c0712fffcacc1f90d4bde808620e0a0ab0f
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.openlocfilehash: 479179d94a0534f5f0c790fea18e281053b686e2
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356143"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565297"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio의 CMake 프로젝트
 
@@ -58,7 +58,7 @@ Visual Studio 2017에서는 [플랫폼 간 CMake 프로젝트](../linux/cmake-li
 
 ## <a name="import-an-existing-cache"></a>기존 캐시 가져오기
 
-기존 CMakeCache.txt 파일을 가져올 때 Visual Studio 자동으로 사용자 지정된 변수를 추출 하 고 미리 채워진 만듭니다 [ **CMakeSettings.json** ](#cmake_settings) 파일 기반으로 합니다. 원래 캐시는 어떤 방식으로든 수정되지 않으며, 명령줄 또는 생성하는 데 사용된 도구 또는 IDE를 통해 계속 사용할 수 있습니다. 새 **CMakeSettings.json** 파일은 프로젝트의 루트 CMakeLists.txt와 함께 배치 됩니다. Visual Studio에서는 설정 파일을 기반으로 하여 새 캐시를 생성합니다. **도구 | 옵션 | CMake | 일반** 대화 상자에서 자동 캐시 생성을 재정의할 수 있습니다.
+기존 CMakeCache.txt 파일을 가져오면 Visual Studio에서 자동으로 사용자 지정 변수를 추출하고 이에 따라 미리 채워진 **CMakeSettings.json** 파일을 만듭니다. 원래 캐시는 어떤 방식으로든 수정되지 않으며, 명령줄 또는 생성하는 데 사용된 도구 또는 IDE를 통해 계속 사용할 수 있습니다. 새 **CMakeSettings.json** 파일은 프로젝트의 루트 CMakeLists.txt와 함께 배치 됩니다. Visual Studio에서는 설정 파일을 기반으로 하여 새 캐시를 생성합니다. **도구 | 옵션 | CMake | 일반** 대화 상자에서 자동 캐시 생성을 재정의할 수 있습니다.
 
 캐시의 모든 항목을 가져오지는 않습니다.  생성기 및 컴파일러 위치와 같은 속성은 IDE에서 제대로 작동하는 것으로 알려진 기본값으로 대체됩니다.
 
@@ -132,7 +132,7 @@ CMakeLists.txt 파일을 편집하려면 **솔루션 탐색기**에서 파일을
 
 문제를 진단하는 데 CMake 캐시의 상태에 대한 추가 정보가 필요하면, **CMake** 주 메뉴 또는 **솔루션 탐색기**의 상황에 맞는 **CMakeLists.txt** 메뉴를 열어 다음 명령 중 하나를 실행합니다.
 
-- **캐시 보기**는 편집기의 빌드 루트 폴더에서 CMakeCache.txt 파일을 엽니다. 캐시를 정리하면 CMakeCache.txt에 대해 여기서 편집한 내용이 모두 지워집니다. 캐시를 정리한 후에도 계속 변경하려면 이 문서의 앞부분에 나오는 [CMake 설정 및 사용자 지정 구성](#cmake_settings)을 참조하세요.
+- **캐시 보기**는 편집기의 빌드 루트 폴더에서 CMakeCache.txt 파일을 엽니다. 캐시를 정리하면 CMakeCache.txt에 대해 여기서 편집한 내용이 모두 지워집니다. 캐시는 정리 후에 유지 되는 변경 작업을 수행 하려면 참조 [CMake 사용자 지정 설정](customize-cmake-settings.md).)
 
 - **캐시 폴더 열기**는 빌드 루트 폴더에 대한 탐색기 창을 엽니다.
 

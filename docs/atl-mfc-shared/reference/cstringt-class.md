@@ -1,6 +1,6 @@
 ---
 title: CStringT 클래스
-ms.date: 10/18/2018
+ms.date: 03/27/2019
 f1_keywords:
 - CStringT
 - ATLSTR/ATL::CStringT
@@ -80,12 +80,12 @@ helpviewer_keywords:
 - shared classes, CStringT
 - CStringT class
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
-ms.openlocfilehash: 9566830de4d3af8f34e8efa5e5ef468acae1fba5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 327ffc40a9b7e41004bc5aac7ecc320076de537f
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750873"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565820"
 ---
 # <a name="cstringt-class"></a>CStringT 클래스
 
@@ -182,7 +182,7 @@ String 클래스 C 런타임 (CRT) 라이브러리 지원 및 문자열 리소�
 
 |||
 |-|-|
-|[operator =](#operator_eq)|새 값을 할당 한 `CStringT` 개체입니다.|
+|[CStringT::operator =](#operator_eq)|새 값을 할당 한 `CStringT` 개체입니다.|
 |[CStringT::operator +](#operator_add)|두 문자열 또는 문자 및 문자열을 연결합니다.|
 |[CStringT::operator + =](#operator_add_eq)|기존 문자열의 끝에 새 문자열을 연결합니다.|
 |[CStringT::operator = =](#operator_eq_eq)|두 문자열이 논리적으로 같은지 여부를 결정 합니다.|
@@ -1023,6 +1023,56 @@ void OemToAnsi();
 ### <a name="example"></a>예제
 
 예를 참조 하세요 [CStringT::AnsiToOem](#ansitooem)합니다.
+
+##  <a name="operator_eq"></a>  CStringT::operator =
+
+문자열에 새 값을 할당 합니다.
+
+```
+CStringT& operator=(const CStringT& strSrc);
+
+template<bool bMFCDLL>
+CStringT& operator=(const CSimpleStringT<BaseType, bMFCDLL>& str);
+
+CStringT& operator=(PCXSTR pszSrc);
+CStringT& operator=(PCYSTR pszSrc);
+CStringT& operator=(const unsigned char* pszSrc);
+CStringT& operator=(XCHAR ch);
+CStringT& operator=(YCHAR ch);
+CStringT& operator=(const VARIANT& var);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*strSrc*<br/>
+`CStringT` 이 문자열을 할당 합니다.
+
+*str*<br/>
+`CThisSimpleString` 개체에 대한 참조입니다.
+
+*bMFCDLL*<br/>
+프로젝트는 MFC DLL 인지 여부를 지정 하는 부울입니다.
+
+*BaseType*<br/>
+문자열 기본 형식입니다.
+
+*var*<br/>
+이 문자열에 할당할 variant 개체입니다.
+
+*ch*<br/>
+문자열에 할당할 ANSI 또는 유니코드 문자입니다.
+
+*pszSrc*<br/>
+할당 되는 원래 문자열에 대 한 포인터입니다.
+
+### <a name="remarks"></a>설명
+
+대입 연산자를 허용 다른 `CStringT` 개체, 문자에 대 한 포인터 또는 단일 문자입니다. 알아야 할 메모리가이 연산자를 사용 하 여 새 저장소를 할당할 수 있으므로 때마다 예외가 발생할 수 있습니다.
+
+에 대 한 내용은 `CThisSimpleString`의 설명 섹션을 참조 하세요 [CStringT::CStringT](#cstringt)합니다.
+
+> [!NOTE]
+> 만들 수는 있지만 `CStringT` 에 대해 권장 인스턴스가 포함 된 null 문자를 포함 합니다. 메서드 및 연산자를 호출 `CStringT` 포함 된 null 문자를 포함 하는 개체에 의도 하지 않은 결과가 발생할 수 있습니다.
 
 ##  <a name="operator_add"></a>  CStringT::operator +
 

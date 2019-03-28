@@ -1,6 +1,6 @@
 ---
 title: uint_4 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_4::ywx
 - amp_short_vectors/Concurrency::graphics::uint_4::get_yxw
@@ -268,12 +268,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_4::rba
 - amp_short_vectors/Concurrency::graphics::uint_4::set_yzx
 ms.assetid: 1cda9e2c-5970-4ced-ae54-d7ff3c6746f4
-ms.openlocfilehash: e5c0482854a08973593e9c67f2f51d5706304831
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 413edb5c83dba465aff804658afc6931c7181e73
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266811"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565846"
 ---
 # <a name="uint4-class"></a>uint_4 클래스
 
@@ -606,7 +606,7 @@ class uint_4;
 
 기본 생성자가 0 인 모든 요소를 초기화 합니다.
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```
 uint_4() restrict(amp,cpu);
@@ -659,9 +659,9 @@ explicit inline uint_4(
 *_Other*<br/>
 초기화 하는 데 사용 하는 개체입니다.
 
-## <a name=""></a> 크기
+## <a name="size"></a>size
 
-## <a name="syntax"></a>구문
+### <a name="syntax"></a>구문
 
 ```
 static const int size = 4;

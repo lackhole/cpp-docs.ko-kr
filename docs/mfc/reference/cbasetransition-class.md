@@ -1,6 +1,6 @@
 ---
 title: CBaseTransition 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CBaseTransition
 - AFXANIMATIONCONTROLLER/CBaseTransition
@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CBaseTransition [MFC], m_transition
 - CBaseTransition [MFC], m_type
 ms.assetid: dfe84007-bbc5-43b7-b5b8-fae9145573bf
-ms.openlocfilehash: 1f9bc3708974511506741a35c11676df2b0be592
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 37bf536403d0edfc16b098929a4758a6c6958cf1
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258374"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565911"
 ---
 # <a name="cbasetransition-class"></a>CBaseTransition 클래스
 
@@ -73,8 +73,8 @@ class CBaseTransition : public CObject;
 
 |이름|설명|
 |----------|-----------------|
-|[CBaseTransition::CBaseTransition](#cbasetransition)|기본 전환 개체를 생성합니다.|
-|[CBaseTransition::~CBaseTransition](#cbasetransition__~cbasetransition)|소멸자입니다. 전환 개체가 소멸 될 때 호출 됩니다.|
+|[CBaseTransition::CBaseTransition](#cbasetransition)|기본 전환 개체를 생성 합니다.|
+|[CBaseTransition::~CBaseTransition](#_dtorcbasetransition)|소멸자입니다. 전환 개체가 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -170,7 +170,7 @@ BOOL AddToStoryboardAtKeyframes(IUIAnimationStoryboard* pStoryboard);
 
 ##  <a name="cbasetransition"></a>  CBaseTransition::CBaseTransition
 
-기본 전환 개체를 생성합니다.
+기본 전환 개체를 생성 합니다.
 
 ```
 CBaseTransition();
@@ -228,7 +228,7 @@ CBaseKeyFrame* GetEndKeyframe();
 
 ### <a name="remarks"></a>설명
 
-Setkeyframes에 의해 이전에 설정 된 키 프레임 개체에 액세스 하려면이 메서드를 사용할 수 있습니다. 최상위 수준 코드에서 전환 스토리 보드에 추가 될 때 호출 됩니다.
+Setkeyframes에 의해 이전에 설정 된 키 프레임 개체에 액세스 하려면이 메서드를 사용할 수 있습니다. 최상위 코드로 전환 스토리 보드에 추가 될 때 호출 됩니다.
 
 ##  <a name="getrelatedvariable"></a>  CBaseTransition::GetRelatedVariable
 
@@ -260,7 +260,7 @@ CBaseKeyFrame* GetStartKeyframe();
 
 ### <a name="remarks"></a>설명
 
-Setkeyframes에 의해 이전에 설정 된 키 프레임 개체에 액세스 하려면이 메서드를 사용할 수 있습니다. 최상위 수준 코드에서 전환 스토리 보드에 추가 될 때 호출 됩니다.
+Setkeyframes에 의해 이전에 설정 된 키 프레임 개체에 액세스 하려면이 메서드를 사용할 수 있습니다. 최상위 코드로 전환 스토리 보드에 추가 될 때 호출 됩니다.
 
 ##  <a name="gettransition"></a>  CBaseTransition::GetTransition
 
@@ -320,7 +320,7 @@ BOOL IsAdded();
 
 ### <a name="remarks"></a>설명
 
-최상위 수준 코드를 사용 하는 스토리 보드에 전환을 추가 하는 경우이 플래그는 내부적으로 설정 됩니다.
+최상위 수준 코드 스토리 보드에 전환을 추가 하는 경우이 플래그는 내부적으로 설정 됩니다.
 
 ##  <a name="m_badded"></a>  CBaseTransition::m_bAdded
 

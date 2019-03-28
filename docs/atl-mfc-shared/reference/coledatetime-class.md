@@ -1,6 +1,6 @@
 ---
 title: COleDateTime 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - COleDateTime
 - ATLCOMTIME/ATL::COleDateTime
@@ -34,12 +34,12 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-ms.openlocfilehash: 6644e4e10916068a91e48611338d79bbb9d0d75b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 46b5f15a2f6048745a12b8c3a8c8a63404f71aa2
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740521"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565937"
 ---
 # <a name="coledatetime-class"></a>COleDateTime 클래스
 
@@ -117,7 +117,7 @@ class COleDateTime
 |1900 년 1 월 1 일 오전 6 시|2.25|
 
 > [!CAUTION]
-> 위의 표에 note는 되지만 1899 년 12 월 30 일에 자정 이전의 날짜 값이 음수가 되의 시간 값 변환 되지 않습니다. 예를 들어 오전 6 시 소수 값 0.25 일을 나타내는 정수 (1899 년 12 월 30 일) 후 양수 또는 음수 (이전 1899 년 12 월 30 일) 인지에 관계 없이 항상 표시 됩니다. 즉, 간단한 부동 지점 비교는 잘못 정렬 하는 `COleDateTime` 으로 1899 년 12 월 29 일 오전 6 시를 나타내는 **나중** 개 같은 날 오전 7 시를 나타내는입니다.
+> 위의 표에 1899 년 12 월 30 일에 자정 이전의 날짜 값이 음수가 되 있지만의 시간 값은 그렇지 않습니다. 예를 들어 오전 6 시 소수 값 0.25 일을 나타내는 정수 (1899 년 12 월 30 일) 후 양수 또는 음수 (이전 1899 년 12 월 30 일) 인지에 관계 없이 항상 표시 됩니다. 즉, 간단한 부동 지점 비교는 잘못 정렬 하는 `COleDateTime` 으로 1899 년 12 월 29 일 오전 6 시를 나타내는 **나중** 개 같은 날 오전 7 시를 나타내는입니다.
 
 `COleDateTime` 클래스에서 9999 년 12 월 31 일까 지 100에서 1 월 1 일에서 날짜를 처리 합니다. `COleDateTime` 클래스 양력을 사용 하 여; 율리우스력 날짜를 지원 하지 않습니다. `COleDateTime` 일광 절약 시간을 무시합니다. (참조 [날짜 및 시간: 자동화 지원을](../../atl-mfc-shared/date-and-time-automation-support.md).)
 
@@ -195,7 +195,7 @@ COleDateTime(int nYear,
 
 COleDateTime(WORD wDosDate,
     WORD wDosTime) throw();
-COleDateTime(const DBTIMESTAMP& dbts) throw();
+COleDateTime(const DBTIMESTAMP& timeStamp) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -224,7 +224,7 @@ A `FILETIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDateTi
 *wDosDate*, *wDosTime*<br/>
 MS-DOS 날짜 및 시간 값을 날짜/시간 값으로 변환 되어 새 복사 `COleDateTime` 개체입니다.
 
-*dbts*<br/>
+*timeStamp*<br/>
 에 대 한 참조를 [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) 현재 현지 시간을 포함 하는 구조체.
 
 ### <a name="remarks"></a>설명
@@ -256,7 +256,7 @@ MS-DOS 날짜 및 시간 값을 날짜/시간 값으로 변환 되어 새 복사
 
 - `COleDateTime(` *systimeSrc* **)** 생성 한 `COleDateTime` 에서 개체를 `SYSTEMTIME` 값입니다.
 
-- `COleDateTime(` `filetimeSrc` **)** 생성 된 `COleDateTime` 에서 개체를 `FILETIME` 값입니다. . `FILETIME` 협정 세계시 (UTC)를 사용 하 여 될 수 있으므로 구조의 현지 시간을 전달 하는 경우 결과 올바른 합니다. 참조 [파일 시간](/windows/desktop/SysInfo/file-times) 자세한 내용은 Windows SDK에 있습니다.
+- `COleDateTime(` `filetimeSrc` **)** 생성 된 `COleDateTime` 에서 개체를 `FILETIME` 값입니다. . `FILETIME` 협정 세계시 (UTC)를 사용 하 여 될 수 있으므로 구조의 현지 시간을 전달 하는 경우 결과 올바른 합니다. 자세한 내용은 [파일 시간](/windows/desktop/SysInfo/file-times) Windows SDK에 있습니다.
 
 - `COleDateTime(` `nYear`를 `nMonth`, `nDay`, `nHour`, `nMin`를 `nSec` **)** 생성을 `COleDateTime` 개체는 지정 된 숫자 값에서입니다.
 
@@ -300,7 +300,7 @@ CString Format(UINT nFormatID) const;
 변환에 사용할 로캘 ID를 나타냅니다. 언어 식별자에 대 한 자세한 내용은 참조 하세요. [언어 식별자](/windows/desktop/Intl/language-identifiers)합니다.
 
 *lpszFormat*<br/>
-유사한 문자열 서식의 `printf` 문자열 서식을 지정 합니다. 각 서식 코드를 앞에 백분율 ( `%`)에 서명, 해당 바뀝니다 `COleDateTime` 구성 요소입니다. 반환된 된 문자열에 형식 문자열에 다른 문자 변경 되지 않고 복사 됩니다. 런타임 함수를 참조 하세요 [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) 자세한 내용은 합니다. 값 및 서식 지정 코드의 의미를 `Format` 됩니다.
+유사한 문자열 서식의 `printf` 문자열 서식을 지정 합니다. 각 서식 코드를 앞에 백분율 ( `%`)에 서명, 해당 바뀝니다 `COleDateTime` 구성 요소입니다. 반환된 된 문자열에 형식 문자열에 다른 문자 변경 되지 않고 복사 됩니다. 자세한 내용은 런타임 함수를 참조 [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)합니다. 값 및 서식 지정 코드의 의미를 `Format` 됩니다.
 
 - `%H` 현재 날짜 시간
 
@@ -341,12 +341,12 @@ CString Format(UINT nFormatID) const;
 시간을 얻기 위해이 메서드를 호출 합니다 `COleDateTime` 개체는 `DBTIMESTAMP` 데이터 구조입니다.
 
 ```
-bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
+bool GetAsDBTIMESTAMP(DBTIMESTAMP& timeStamp) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*dbts*<br/>
+*timeStamp*<br/>
 에 대 한 참조를 [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -355,7 +355,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 된 결과 시간을 저장 *dbts* 구조입니다. 합니다 `DBTIMESTAMP` 이 함수에 의해 초기화 되는 데이터 구조를 갖습니다. 해당 `fraction` 멤버가 0으로 설정 합니다.
+참조 된 결과 시간을 저장 *타임 스탬프* 구조입니다. 합니다 `DBTIMESTAMP` 이 함수에 의해 초기화 되는 데이터 구조를 갖습니다. 해당 `fraction` 멤버가 0으로 설정 합니다.
 
 ### <a name="example"></a>예제
 
@@ -382,19 +382,19 @@ bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
 
 `GetAsSystemTime` 참조 된 결과 시간을 저장 *sysTime* 개체입니다. 합니다 `SYSTEMTIME` 이 함수에 의해 초기화 되는 데이터 구조를 갖습니다. 해당 `wMilliseconds` 멤버가 0으로 설정 합니다.
 
-참조 [GetStatus](#getstatus) 에 저장 된 상태 정보에 대 한 자세한 정보에 대 한는 `COleDateTime` 개체입니다.
+에 저장 된 상태 정보에 대 한 자세한 정보에는 `COleDateTime` 개체를 참조 하십시오 [GetStatus](#getstatus)합니다.
 
 ##  <a name="getasudate"></a>  COleDateTime::GetAsUDATE
 
 시간을 얻기 위해이 메서드를 호출 합니다 `COleDateTime` 개체는 `UDATE` 데이터 구조입니다.
 
 ```
-bool GetAsUDATE(UDATE& udate) const throw();
+bool GetAsUDATE(UDATE& uDate) const throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*udate*<br/>
+*uDate*<br/>
 에 대 한 참조를 `UDATE` 에서 변환 된 날짜/시간 값을 받는 구조체는 `COleDateTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -684,7 +684,7 @@ DateTimeStatus GetStatus() const throw();
 
 ### <a name="return-value"></a>반환 값
 
-이 상태를 반환 합니다 `COleDateTime` 값입니다. 호출 하는 경우 `GetStatus` 에 `COleDateTime` 기본값을 사용 하 여 개체가 생성 반환 유효 합니다. 호출 하는 경우 `GetStatus` 에 `COleDateTime` 생성자 집합을 null로 초기화 하는 개체 `GetStatus` null이 반환 됩니다. 참조 **주의** 자세한 내용은 합니다.
+이 상태를 반환 합니다 `COleDateTime` 값입니다. 호출 하는 경우 `GetStatus` 에 `COleDateTime` 기본값을 사용 하 여 개체가 생성 반환 유효 합니다. 호출 하는 경우 `GetStatus` 에 `COleDateTime` 생성자 집합을 null로 초기화 하는 개체 `GetStatus` null이 반환 됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -803,7 +803,7 @@ DateTimeStatus m_status;
 
 ### <a name="remarks"></a>설명
 
-이 데이터 멤버의 형식을 열거 형식인 `DateTimeStatus`, 내에서 정의 되는 `COleDateTime` 클래스. 참조 [COleDateTime::GetStatus](#getstatus) 세부 정보에 대 한 합니다.
+이 데이터 멤버의 형식을 열거 형식인 `DateTimeStatus`, 내에서 정의 되는 `COleDateTime` 클래스. 자세한 내용은 [COleDateTime::GetStatus](#getstatus)합니다.
 
 > [!CAUTION]
 >  이 데이터 멤버는 고급 프로그래밍 시나리오입니다. 인라인 멤버 함수를 사용 해야 [GetStatus](#getstatus) 하 고 [SetStatus](#setstatus)합니다. 참조 `SetStatus` 이 데이터 멤버를 명시적으로 설정 하는 것에 대 한 추가 주의 사항에 대 한 합니다.
@@ -819,7 +819,7 @@ COleDateTime& operator=(const time_t& timeSrc) throw();
 COleDateTime& operator=(const __time64_t& timeSrc) throw();
 COleDateTime& operator=(const SYSTEMTIME& systimeSrc) throw();
 COleDateTime& operator=(const FILETIME& filetimeSrc) throw();
-COleDateTime& operator=(const UDATE& udate) throw();
+COleDateTime& operator=(const UDATE& uDate) throw();
 ```
 
 ### <a name="remarks"></a>설명
@@ -836,9 +836,9 @@ COleDateTime& operator=(const UDATE& udate) throw();
 
 - **operator = (** *systimeSrc* **)** 는 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 값 변환 되 고이 복사 `COleDateTime` 개체입니다. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 실패 하면 설정 된 경우를 잘못 됨.
 
-- **operator = (** `udate` **)** 는 `UDATE` 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 실패 하면 설정 된 경우를 잘못 됨. `UDATE` 구조 "압축 푼된" 날짜를 나타냅니다. 함수를 참조 하십시오 [VarDateFromUdate](/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate) 대 한 자세한 내용은 합니다.
+- **operator = (** `uDate` **)** 는 `UDATE` 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 실패 하면 설정 된 경우를 잘못 됨. `UDATE` 구조 "압축 푼된" 날짜를 나타냅니다. 자세한 내용은 함수 참조 [VarDateFromUdate](/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate)합니다.
 
-- **operator = (** `filetimeSrc` **)** 는 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 그렇지 않으면 설정에 잘못 된 합니다. `FILETIME` UTC 시간 구조에 전달 하면 결과를 현지 시간에서 UTC 시간 변환 됩니다 하 고 변형 시간으로 저장 됩니다 협정 세계시 (UTC)를 사용 합니다. 이 동작은 Visual c + + 6.0 및 Visual c + +.NET 2003 SP2 동일 합니다. 참조 [파일 시간](/windows/desktop/SysInfo/file-times) 자세한 내용은 Windows SDK에 있습니다.
+- **operator = (** `filetimeSrc` **)** 는 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 그렇지 않으면 설정에 잘못 된 합니다. `FILETIME` UTC 시간 구조에 전달 하면 결과를 현지 시간에서 UTC 시간 변환 됩니다 하 고 변형 시간으로 저장 됩니다 협정 세계시 (UTC)를 사용 합니다. 이 동작은 Visual c + + 6.0 및 Visual c + +.NET 2003 SP2 동일 합니다. 자세한 내용은 [파일 시간](/windows/desktop/SysInfo/file-times) Windows SDK에 있습니다.
 
 자세한 내용은 참조는 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.
 
@@ -968,7 +968,7 @@ bool ParseDateTime(
 
 `"1/25/1996 8:30:00"  // always specify the full year, even in a 'short date' format`
 
-로캘 ID에 영향을 줍니다 문자열 형식은 날짜/시간 값으로의 변환을 허용 하는지 여부를 하는 참고 합니다.
+로캘 ID 문자열 형식은 날짜/시간 값으로의 변환을 허용 하는지 여부를도 적용 됩니다.
 
 VAR_DATEVALUEONLY의 경우 시간 값은 0 또는 자정 시간으로 설정 됩니다. VAR_TIMEVALUEONLY의 경우 날짜 값을 날짜 0, 즉 1899 년 12 월 30으로 설정 됩니다.
 
@@ -1149,7 +1149,7 @@ void SetStatus(DateTimeStatus status) throw();
 합니다 *상태* 매개 변수 값으로 정의 됩니다 합니다 `DateTimeStatus` 열거 형식 내에 정의 된를 `COleDateTime` 클래스입니다. 참조 [COleDateTime::GetStatus](#getstatus) 세부 정보에 대 한 합니다.
 
 > [!CAUTION]
->  이 기능은 고급 프로그래밍 시나리오에 대 한 합니다. 이 함수는이 개체의 데이터를 변경 하지 않습니다. 상태를 설정 하는 데 사용 될 가장 자주 됩니다 **null** 하거나 **잘못 된**합니다. 대입 연산자 ( [연산자 =](#eq)) 및 [SetDateTime](#setdatetime) 원본 값에 따라 개체의 상태를 설정 하려면.
+>  이 기능은 고급 프로그래밍 시나리오에 대 한 합니다. 이 함수는이 개체의 데이터를 변경 하지 않습니다. 상태를 설정 하는 데 사용 될 가장 자주 됩니다 **null** 하거나 **잘못 된**합니다. 대입 연산자 ([연산자 =](#operator_eq)) 및 [SetDateTime](#setdatetime) 원본 값에 따라 개체의 상태를 설정 하려면.
 
 ### <a name="example"></a>예제
 

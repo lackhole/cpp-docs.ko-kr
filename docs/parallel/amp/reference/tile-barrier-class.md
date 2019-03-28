@@ -1,6 +1,6 @@
 ---
 title: tile_barrier 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - tile_barrier
 - AMP/tile_barrier
@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - tile_barrier class
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
-ms.openlocfilehash: 4336a4cc317344c881f60e5ed4c5bdf8328a34b8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f0e742a0cc1a0809fc08b3862cadb7e3deb36fa8
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301170"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58564985"
 ---
 # <a name="tilebarrier-class"></a>tile_barrier 클래스
 
@@ -56,7 +56,7 @@ class tile_barrier;
 
 **네임스페이스:** 동시성
 
-## <a name="tile_barrier__ctor"></a>  tile_barrier 생성자
+## <a name="ctor"></a>  tile_barrier 생성자
 
 기존 항목을 복사 하 여 클래스의 새 인스턴스를 초기화 합니다.
 
@@ -72,7 +72,7 @@ tile_barrier(
 *_Other*<br/>
 `tile_barrier` 복사할 개체입니다.
 
-## <a name="wait"></a>  wait
+## <a name="wait"></a>대기
 
 타일에 있는 모든 스레드가 대기를 완료할 때까지 스레드 그룹(타일)에 있는 모든 스레드의 실행을 중지하도록 지시합니다.
 
@@ -82,7 +82,7 @@ tile_barrier(
 void wait() const restrict(amp);
 ```
 
-## <a name="wait_with_all_memory_fence"></a>  wait_with_all_memory_fence
+## <a name="waitwithallmemoryfence"></a>wait_with_all_memory_fence
 
 타일의 모든 스레드가이 호출에 도달 될 때까지 타일에서 모든 스레드의 실행을 차단 합니다. 이렇게 하면 모든 메모리 액세스가 스레드 타일의 다른 스레드에 표시 되며 프로그램 순서로 실행 되었습니다.
 
@@ -92,7 +92,7 @@ void wait() const restrict(amp);
 void wait_with_all_memory_fence() const restrict(amp);
 ```
 
-## <a name="wait_with_global_memory_fence"></a>  wait_with_global_memory_fence
+## <a name="waitwithglobalmemoryfence"></a>wait_with_global_memory_fence
 
 타일의 모든 스레드가이 호출에 도달 될 때까지 타일에서 모든 스레드의 실행을 차단 합니다. 이렇게 하면 모든 전역 메모리 액세스가 스레드 타일의 다른 스레드에 표시 되며 프로그램 순서로 실행 되었습니다.
 
@@ -102,7 +102,7 @@ void wait_with_all_memory_fence() const restrict(amp);
 void wait_with_global_memory_fence() const  restrict(amp);
 ```
 
-## <a name="wait_with_tile_static_memory_fence"></a>  wait_with_tile_static_memory_fence
+## <a name="waitwithtilestaticmemoryfence"></a>wait_with_tile_static_memory_fence
 
 타일의 모든 스레드가이 호출에 도달 될 때까지 타일에서 모든 스레드의 실행을 차단 합니다. 이렇게 하면 `tile_static` 메모리 액세스가 스레드 타일의 다른 스레드에 표시 되며 프로그램 순서로 실행 되었습니다.
 

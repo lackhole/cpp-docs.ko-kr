@@ -1,6 +1,6 @@
 ---
 title: checked_array_iterator 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - iterator/checked_array_iterator
 - iterator/stdext::checked_array_iterator::difference_type
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - stdext::checked_array_iterator [C++], reference
 - stdext::checked_array_iterator [C++], base
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
-ms.openlocfilehash: 2d7788a33321f794af6b395de3188bc51f662ad0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 688b93902da5b4492812b4715a248db9561ec258
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476604"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565716"
 ---
 # <a name="checkedarrayiterator-class"></a>checked_array_iterator 클래스
 
@@ -495,7 +495,7 @@ bool operator>(const checked_array_iterator<_Iterator>& right) const;
 
 자세한 내용은 [Checked Iterators](../standard-library/checked-iterators.md)을 참조하세요.
 
-## <a name="lt_eq"></a>  checked_array_iterator::operator&lt;=
+## <a name="op_lt_eq"></a>  checked_array_iterator::operator&lt;=
 
 연산자의 좌변에 있는 `checked_array_iterator`가 우변에 있는 `checked_array_iterator`보다 작거나 같은지 테스트합니다.
 
@@ -514,7 +514,7 @@ bool operator<=(const checked_array_iterator<_Iterator>& right) const;
 
 자세한 내용은 [Checked Iterators](../standard-library/checked-iterators.md)을 참조하세요.
 
-## <a name="gt_eq"></a>  checked_array_iterator::operator&gt;=
+## <a name="op_gt_eq"></a>  checked_array_iterator::operator&gt;=
 
 연산자의 좌변에 있는 `checked_array_iterator`가 우변에 있는 `checked_array_iterator`보다 크거나 같은지 테스트합니다.
 
@@ -697,7 +697,7 @@ int main() {
 */
 ```
 
-## <a name="checked_array_iterator__operator--"></a>  checked_array_iterator::operator--
+## <a name="operator--"></a>  checked_array_iterator::operator--
 
 `checked_array_iterator`를 이전 요소로 감소시킵니다.
 
@@ -841,7 +841,7 @@ int main() {
 */
 ```
 
-## <a name="checked_array_iterator__operator-_eq"></a>  checked_array_iterator::operator-=
+## <a name="operator-_eq"></a>  checked_array_iterator::operator-=
 
 `checked_array_iterator`에서 지정된 오프셋을 감소시킵니다.
 
@@ -890,7 +890,7 @@ int main() {
 */
 ```
 
-## <a name="checked_array_iterator__operator-"></a>  checked_array_iterator::operator-
+## <a name="operator-"></a>  checked_array_iterator::operator-
 
 반복기에서 오프셋을 감소시키고 새로운 오프셋 위치에서 삽입된 요소를 주소 지정하는 새로운 `checked_array_iterator`를 반환합니다.
 
@@ -910,8 +910,6 @@ difference_type operator-(const checked_array_iterator& right) const;
 오프셋 요소의 주소를 지정하는 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
-
-코드 샘플은 [checked_array_iterator::operator-](#operator-)를 참조하세요.
 
 자세한 내용은 [Checked Iterators](../standard-library/checked-iterators.md)을 참조하세요.
 

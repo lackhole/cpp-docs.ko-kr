@@ -1,6 +1,6 @@
 ---
 title: task_handle 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - task_handle
 - PPL/concurrency::task_handle
@@ -8,17 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - task_handle class
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
-ms.openlocfilehash: 4193c2d1e08c1b5a43dc728edd24efd19be87268
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 8528bc212603484be9325ed967e9475e4faa1348
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298089"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565102"
 ---
 # <a name="taskhandle-class"></a>task_handle 클래스
 
-
-  `task_handle` 클래스는 개별 병렬 작업 항목을 나타냅니다. 작업을 실행하는 데 필요한 지침 및 데이터를 캡슐화합니다.
+`task_handle` 클래스는 개별 병렬 작업 항목을 나타냅니다. 작업을 실행하는 데 필요한 지침 및 데이터를 캡슐화합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,7 +39,7 @@ class task_handle : public ::Concurrency::details::_UnrealizedChore;
 
 |이름|설명|
 |----------|-----------------|
-|[task_handle](#ctor)|새 `task_handle` 개체를 생성합니다. 태스크의 작업은 생성자에 매개 변수로 지정 된 함수를 호출 하 여 수행 됩니다.|
+|[task_handle](#task_handle)|새 `task_handle` 개체를 생성합니다. 태스크의 작업은 생성자에 매개 변수로 지정 된 함수를 호출 하 여 수행 됩니다.|
 |[~ task_handle 소멸자](#dtor)|제거 된 `task_handle` 개체입니다.|
 
 ### <a name="public-operators"></a>Public 연산자
@@ -77,7 +76,7 @@ class task_handle : public ::Concurrency::details::_UnrealizedChore;
 void operator()() const;
 ```
 
-##  <a name="task_handle__ctor"></a> task_handle
+## <a name="taskhandle"></a>task_handle
 
 새 `task_handle` 개체를 생성합니다. 태스크의 작업은 생성자에 매개 변수로 지정 된 함수를 호출 하 여 수행 됩니다.
 

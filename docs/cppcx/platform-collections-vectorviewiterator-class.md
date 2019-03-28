@@ -1,18 +1,18 @@
 ---
 title: Platform::Collections::VectorViewIterator 클래스
-ms.date: 12/30/2016
+ms.date: 03/27/2019
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::VectorViewIterator::VectorViewIterator
 helpviewer_keywords:
 - VectorViewIterator Class
 ms.assetid: be3aa1ae-e6ba-4a06-8d6b-86d8128026f7
-ms.openlocfilehash: 4d4a591c6febdf6e34757251c4de5d01a9e2fa87
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 0de4ffb8e72c21490f07ae164aa23ffcd524c2b8
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743747"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565664"
 ---
 # <a name="platformcollectionsvectorviewiterator-class"></a>Platform::Collections::VectorViewIterator 클래스
 
@@ -61,7 +61,7 @@ VectorViewIterator 템플릿 클래스의 형식 이름입니다.
 |[VectorViewIterator::operator\[\]](#operator-at)|현재 VectorViewIterator에서 지정된 치환에 해당하는 요소에 대한 참조를 검색합니다.|
 |[VectorViewIterator::operator+ 연산자](#operator-plus)|지정된 VectorViewIterator에서 지정된 치환에 해당하는 요소를 참조하는 VectorViewIterator를 반환합니다.|
 |[VectorViewIterator::operator++ 연산자](#operator-increment)|현재 VectorViewIterator를 증가시킵니다.|
-|[VectorViewIterator::operator+= 연산자](#operator-plus-assign)|지정된 치환으로 현재 VectorViewIterator를 늘립니다.|
+|[VectorViewIterator::operator+= 연산자](#operator-plus-equals)|지정된 치환으로 현재 VectorViewIterator를 늘립니다.|
 |[VectorViewIterator::operator< 연산자](#operator-less-than)|현재 VectorViewIterator가 지정된 VectorViewIterator보다 작은지 여부를 나타냅니다.|
 |[Vectorviewiterator:: Operator\<= 연산자](#operator-less-than-or-equals)|현재 VectorViewIterator가 지정된 VectorViewIterator보다 같거나 작은지 여부를 나타냅니다.|
 |[VectorViewIterator::operator-= 연산자](#operator-minus-assign)|지정된 치환으로 현재 VectorViewIterator를 감소시킵니다.|

@@ -1,6 +1,6 @@
 ---
 title: runtime_exception 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - runtime_exception
 - AMPRT/runtime_exception
@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - runtime_exception class
 ms.assetid: 8fe3ce2c-3d4c-4b9c-95e8-e592f37adefd
-ms.openlocfilehash: 5260d2f1d2e5a6a6498d501599037a90bc7bc9a0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 024ede0f05dfd646bcebe7acd2cfb86b5c54f6d1
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289665"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565495"
 ---
 # <a name="runtimeexception-class"></a>runtime_exception 클래스
 
@@ -39,7 +39,7 @@ class runtime_exception : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[get_error_code](#runtime_exception__get_error_code)|예외를 발생 시킨 오류 코드를 반환 합니다.|
+|[get_error_code](#get_error_code)|예외를 발생 시킨 오류 코드를 반환 합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
@@ -59,7 +59,7 @@ class runtime_exception : public std::exception;
 
 **네임스페이스:** 동시성
 
-## <a name="runtime_exception__ctor"></a>  runtime_exception 생성자
+## <a name="ctor"></a>  runtime_exception 생성자
 
 클래스의 새 인스턴스를 초기화합니다.
 
@@ -102,7 +102,7 @@ runtime_exception(
 virtual ~runtime_exception() throw();
 ```
 
-## <a name="runtime_exception__get_error_code"></a>  get_error_code
+## <a name="geterrorcode"></a>get_error_code
 
 예외를 발생 시킨 오류 코드를 반환 합니다.
 
@@ -116,7 +116,7 @@ HRESULT get_error_code() const throw();
 
 예외를 발생 시킨 오류의 HRESULT입니다.
 
-## <a name="runtime_exception__operator_eq"></a>  operator=
+## <a name="operator_eq"></a>  operator=
   지정 된 내용을 복사 `runtime_exception` 을 여기에 개체입니다.
 
 ### <a name="syntax"></a>구문

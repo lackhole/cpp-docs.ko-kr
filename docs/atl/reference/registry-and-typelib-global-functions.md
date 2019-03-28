@@ -1,6 +1,6 @@
 ---
 title: 레지스트리 및 TypeLib 전역 함수
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - atlbase/ATL::AtlGetPerUserRegistration
 - afxpriv/ATL::AfxRegCreateKey
@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - RegistryDataExchange function, global functions
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
-ms.openlocfilehash: f94dd1770ff194e47e2e38cc3a9b5cf0cbaebe58
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c5fdaceb47b6cd09dd9d66f26af1337a8dc6bbae
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301833"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58566015"
 ---
 # <a name="registry-and-typelib-global-functions"></a>레지스트리 및 TypeLib 전역 함수
 
@@ -33,8 +33,8 @@ ms.locfileid: "57301833"
 
 |||
 |-|-|
-|[AfxRegCreateKey](#afxrefcreatekey)|지정된 된 레지스트리 키를 만듭니다.|
-|[AfxRegDeleteKey](#afxrefdeletekey)|지정된 된 레지스트리 키를 삭제합니다.|
+|[AfxRegCreateKey](#afxregcreatekey)|지정된 된 레지스트리 키를 만듭니다.|
+|[AfxRegDeleteKey](#afxregdeletekey)|지정된 된 레지스트리 키를 삭제합니다.|
 |[AfxRegisterPreviewHandler](#afxregisterpreviewhandler)|미리 보기 처리기를 등록 하는 도우미입니다.|
 |[AfxUnregisterPreviewHandler](#afxunregisterpreviewhandler)| 미리 보기 처리기의 등록을 취소 하는 도우미입니다. |
 |[AtlRegisterTypeLib](#atlregistertypelib)|이 함수는 형식 라이브러리를 등록하기 위해 호출됩니다.|
@@ -343,7 +343,7 @@ ATLAPI AtlUnRegisterTypeLib(
 
 ### <a name="remarks"></a>설명
 
-이 도우미 함수를 사용 하 여 [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) 하 고 [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver)합니다.
+이 도우미 함수를 사용 하 여 [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) 하 고 [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver)합니다.
 
 ### <a name="requirements"></a>요구 사항
 

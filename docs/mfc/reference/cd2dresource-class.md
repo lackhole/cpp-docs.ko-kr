@@ -1,6 +1,6 @@
 ---
 title: CD2DResource 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CD2DResource
 - AFXRENDERTARGET/CD2DResource
@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CD2DResource [MFC], m_bIsAutoDestroy
 - CD2DResource [MFC], m_pParentTarget
 ms.assetid: 34e3ee18-aab6-4c39-9294-de869e1f7820
-ms.openlocfilehash: 04d1fa57e34528f96f505fa20abb9b1131f80689
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e2cc6be7119a2df193aa2af415a9c8d4054f537c
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284868"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58564777"
 ---
 # <a name="cd2dresource-class"></a>CD2DResource 클래스
 
@@ -46,7 +46,7 @@ class CD2DResource : public CObject;
 |이름|설명|
 |----------|-----------------|
 |[CD2DResource::CD2DResource](#cd2dresource)|CD2DResource 개체를 생성합니다.|
-|[CD2DResource::~CD2DResource](#cd2dresource__~cd2dresource)|소멸자입니다. D2D 리소스 개체를 소멸 될 때 호출 됩니다.|
+|[CD2DResource::~CD2DResource](#_dtorcd2dresource)|소멸자입니다. D2D 리소스 개체를 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -67,7 +67,7 @@ class CD2DResource : public CObject;
 
 |이름|설명|
 |----------|-----------------|
-|[CD2DResource::m_bIsAutoDestroy](#m_bisautodestroy)|리소스 소유자 (CRenderTarget) 파괴 됩니다.|
+|[CD2DResource::m_bIsAutoDestroy](#m_bisautodestroy)|리소스는 소유자 (CRenderTarget)를 통해 제거 됩니다.|
 |[CD2DResource::m_pParentTarget](#m_pparenttarget)|CRenderTarget 부모에 대 한 포인터)|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
@@ -157,7 +157,7 @@ virtual BOOL IsValid() const = 0;
 
 ##  <a name="m_bisautodestroy"></a>  CD2DResource::m_bIsAutoDestroy
 
-리소스 소유자 (CRenderTarget) 파괴 됩니다.
+리소스는 소유자 (CRenderTarget)를 통해 제거 됩니다.
 
 ```
 BOOL m_bIsAutoDestroy;

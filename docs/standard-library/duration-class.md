@@ -1,6 +1,6 @@
 ---
 title: duration 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2016
 f1_keywords:
 - chrono/std::chrono::duration
 - chrono/std::chrono::duration::duration
@@ -11,12 +11,12 @@ f1_keywords:
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
 helpviewer_keywords:
 - std::chrono [C++], duration
-ms.openlocfilehash: 2b710de6275933b5dc05814664caef92cf251da4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49c68b1650ced36ebcf949ae2594508480e15136
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568894"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565573"
 ---
 # <a name="duration-class"></a>duration 클래스
 
@@ -159,7 +159,7 @@ static constexpr duration min();
 
 실제로 `duration(duration_values<rep>::min())`를 반환합니다.
 
-## <a name="duration__operator-"></a>  duration::operator-
+## <a name="operator-"></a>  duration::operator-
 
 `duration` 개체의 복사본을 부정 틱 개수와 함께 반환합니다.
 
@@ -167,7 +167,7 @@ static constexpr duration min();
 constexpr duration operator-() const;
 ```
 
-## <a name="duration__operator--"></a>  duration::operator--
+## <a name="operator--"></a>  duration::operator--
 
 저장된 틱 개수를 줄입니다.
 
@@ -277,7 +277,7 @@ duration& operator+=(const duration& Dur);
 
 더하기가 수행된 후의 `duration` 개체입니다.
 
-## <a name="duration__operator-_eq"></a>  duration::operator-=
+## <a name="operator-_eq"></a>  duration::operator-=
 
 지정된 `duration` 개체의 틱 개수를 저장된 틱 개수에서 뺍니다.
 

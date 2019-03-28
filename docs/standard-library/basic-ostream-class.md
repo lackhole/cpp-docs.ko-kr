@@ -1,6 +1,6 @@
 ---
 title: basic_ostream 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - ostream/std::basic_ostream
 - ostream/std::basic_ostream::flush
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::basic_ostream [C++], tellp
 - std::basic_ostream [C++], write
 ms.assetid: 5baadc65-b662-4fab-8c9f-94457c58cda1
-ms.openlocfilehash: dce4911bd4b7abe6c73551d6a0b178d9b2700dbb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 64a32513e9dc151e64fccdb0ef678a75588f0a41
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543639"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565729"
 ---
 # <a name="basicostream-class"></a>basic_ostream 클래스
 
@@ -48,7 +48,7 @@ class basic_ostream : virtual public basic_ios<Elem, Tr>
 
 ## <a name="remarks"></a>설명
 
-[operator<<](#op_lt_lt)를 오버로드하는 대부분의 멤버 함수는 형식이 지정된 출력 함수입니다. 다음 패턴을 따릅니다.
+[operator<<](#basic_ostream_operator_lt_lt)를 오버로드하는 대부분의 멤버 함수는 형식이 지정된 출력 함수입니다. 다음 패턴을 따릅니다.
 
 ```cpp
 iostate state = goodbit;
@@ -122,7 +122,7 @@ basic_istream\< **Elem**, **Tr**> 클래스의 개체는 [basic_ios](../standard
 |[put](#put)|스트림에 문자를 넣습니다.|
 |[seekp](#seekp)|출력 스트림 내의 위치를 다시 설정합니다.|
 |[sentry](#sentry)|중첩 클래스는 선언에서 형식이 지정된 출력 함수 및 형식이 지정되지 않은 출력 함수를 구성하는 개체를 설명합니다.|
-|[swap](#op_eq)|이 `basic_ostream` 개체의 값을 제공된 `basic_ostream` 개체의 값으로 교환합니다.|
+|[swap](#swap)|이 `basic_ostream` 개체의 값을 제공된 `basic_ostream` 개체의 값으로 교환합니다.|
 |[tellp](#tellp)|출력 스트림 내의 위치를 보고합니다.|
 |[write](#write)|스트림에 문자를 넣습니다.|
 
@@ -130,7 +130,7 @@ basic_istream\< **Elem**, **Tr**> 클래스의 개체는 [basic_ios](../standard
 
 |연산자|설명|
 |-|-|
-|[operator=](#basic_ostream_operator_eq)|제공된 `basic_ostream` 개체 매개 변수의 값을 이 개체에 할당합니다.|
+|[operator=](#op_eq)|제공된 `basic_ostream` 개체 매개 변수의 값을 이 개체에 할당합니다.|
 |[operator<<](#basic_ostream_operator_lt_lt)|스트림에 씁니다.|
 
 ## <a name="requirements"></a>요구 사항
@@ -237,7 +237,7 @@ basic_ostream<Elem, Tr>& operator<<(const void* val);
 
 ### <a name="parameters"></a>매개 변수
 
-*pfn*<br/>
+*Pfn*<br/>
 함수 포인터입니다.
 
 *strbuf*<br/>
@@ -286,7 +286,7 @@ basic_ostream<Elem, Tr>& operator<<(unsigned long long val);
 basic_ostream<Elem, Tr>& operator<<(const void* val);
 ```
 
-각 변환 *val* 숫자 필드를 호출 하 여 삽입 **use_facet < num_put\<Elem, OutIt >**(`getloc`). **배치**(**OutIt**(`rdbuf`),  **\*이**를 `getloc`를 **val**). 여기서 **OutIt**는 **ostreambuf_iterator\<Elem, Tr>** 로 정의됩니다. 함수는 **\*this**를 반환합니다.
+각 변환 *val* 숫자 필드를 호출 하 여 삽입 **use_facet < num_put\<Elem, OutIt >**(`getloc`). **put**(**OutIt**(`rdbuf`), **\*this**, `getloc`, **val**). 여기서 **OutIt**는 **ostreambuf_iterator\<Elem, Tr>** 로 정의됩니다. 함수는 **\*this**를 반환합니다.
 
 다음 함수는
 
@@ -470,7 +470,7 @@ int main()
 
 중첩 클래스는 선언에서 형식이 지정된 출력 함수 및 형식이 지정되지 않은 출력 함수를 구성하는 개체를 설명합니다.
 
-클래스 sentry {공용: 명시적 sentry (basic_ostream\<Elem, Tr > & _Ostr); operator bool () const; ~ sentry();};
+class sentry { public: explicit sentry(basic_ostream\<Elem, Tr>& _Ostr); operator bool() const; ~sentry(); };
 
 ### <a name="remarks"></a>설명
 

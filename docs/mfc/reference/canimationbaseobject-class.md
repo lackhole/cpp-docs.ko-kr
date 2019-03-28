@@ -1,6 +1,6 @@
 ---
 title: CAnimationBaseObject 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CAnimationBaseObject
 - AFXANIMATIONCONTROLLER/CAnimationBaseObject
@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CAnimationBaseObject [MFC], m_nObjectID
 - CAnimationBaseObject [MFC], m_pParentController
 ms.assetid: 76b25917-940e-4eba-940f-31d270702603
-ms.openlocfilehash: 18b2319ea3c51edf79b6a90095b8363db830d66c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e9c5ed98d654eb37be7ab8523d44c9da6eecd9c7
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258920"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565886"
 ---
 # <a name="canimationbaseobject-class"></a>CAnimationBaseObject 클래스
 
@@ -74,7 +74,7 @@ class CAnimationBaseObject : public CObject;
 |이름|설명|
 |----------|-----------------|
 |[CAnimationBaseObject::CAnimationBaseObject](#canimationbaseobject)|오버로드됨. 애니메이션 개체를 생성 합니다.|
-|[CAnimationBaseObject::~CAnimationBaseObject](#canimationbaseobject__~canimationbaseobject)|소멸자입니다. 애니메이션 개체 소멸 될 때 호출 됩니다.|
+|[CAnimationBaseObject::~CAnimationBaseObject](#_dtorcanimationbaseobject)|소멸자입니다. 애니메이션 개체 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -90,8 +90,8 @@ class CAnimationBaseObject : public CObject;
 |[CAnimationBaseObject::GetAutodestroyTransitions](#getautodestroytransitions)|관련 된 전환을 자동으로 소멸 되는지 여부를 알려 줍니다.|
 |[CAnimationBaseObject::GetGroupID](#getgroupid)|현재 그룹 ID를 반환 합니다.|
 |[CAnimationBaseObject::GetObjectID](#getobjectid)|현재 개체 ID를 반환합니다.|
-|[CAnimationBaseObject::GetUserData](#getuserdata)|사용자 정의 데이터를 반환합니다.|
-|[CAnimationBaseObject::SetAutodestroyTransitions](#setautodestroytransitions)|전환에 자동으로 제거할 정렬 하는 플래그를 설정 합니다.|
+|[CAnimationBaseObject::GetUserData](#getuserdata)|사용자 정의 데이터를 반환 합니다.|
+|[CAnimationBaseObject::SetAutodestroyTransitions](#setautodestroytransitions)|전환을 자동으로 삭제 하는 플래그를 설정 합니다.|
 |[CAnimationBaseObject::SetID](#setid)|새 Id를 설정합니다.|
 |[CAnimationBaseObject::SetUserData](#setuserdata)|사용자 정의 데이터를 설정 합니다.|
 
@@ -109,12 +109,12 @@ class CAnimationBaseObject : public CObject;
 |[CAnimationBaseObject::m_bAutodestroyTransitions](#m_bautodestroytransitions)|관련 된 전환을 자동으로 제거 해야 하는지 여부를 지정 합니다.|
 |[CAnimationBaseObject::m_dwUserData](#m_dwuserdata)|사용자 정의 데이터를 저장 합니다.|
 |[CAnimationBaseObject::m_nGroupID](#m_ngroupid)|애니메이션 개체의 그룹 ID를 지정합니다.|
-|[CAnimationBaseObject::m_nObjectID](#m_nobjectid)|애니메이션 개체의 개체 ID를 지정 합니다.|
+|[CAnimationBaseObject::m_nObjectID](#m_nobjectid)|애니메이션 개체의 개체 ID를 지정합니다.|
 |[CAnimationBaseObject::m_pParentController](#m_pparentcontroller)|부모 애니메이션 컨트롤러에 대 한 포인터입니다.|
 
 ## <a name="remarks"></a>설명
 
-이 클래스는 모든 애니메이션 개체에 대 한 기본 메서드를 구현합니다. 애니메이션 개체 값, 포인트, 크기, 사각형을 나타내는 하거나 모든 사용자 지정 엔터티를 비롯 하 여 응용 프로그램에 색 수 있습니다. 애니메이션 개체 애니메이션 그룹 (CAnimationGroup 참조)에 저장 됩니다. 각 그룹 별도로 애니메이션을 적용할 수 있으며 스토리 보드와 유사 하 게 처리할 수 있습니다. 애니메이션 개체에는 하나 이상의 애니메이션 변수 (CAnimationVariable 참조), 논리적 표현에 따라 캡슐화 합니다. 예를 들어 CAnimationRect 네 가지 애니메이션 변수-사각형의 각 측면에 대해 하나의 변수를 포함합니다. 각 애니메이션 개체 클래스에는 전환을 캡슐화 된 애니메이션 변수를 적용할 사용 해야 하는 오버 로드 된 AddTransition 메서드를 노출 합니다. 애니메이션 개체 식별할 수 있습니다 개체 ID (선택 사항) 및 그룹 id입니다. 그룹 ID가 올바른 그룹을 애니메이션 개체를 배치 하는 데 필요한 있지만 그룹 ID를 지정 하지 않으면 하는 경우 개체 ID가 0 인 기본 그룹에 놓입니다. 다른 그룹 Id 사용 하 여 SetID를 호출 하는 경우 애니메이션 개체 (새 그룹을 필요한 경우에 생성 됩니다)는 다른 그룹으로 이동 됩니다.
+이 클래스는 모든 애니메이션 개체에 대 한 기본 메서드를 구현합니다. 애니메이션 개체 값, 포인트, 크기, 사각형을 나타내는 하거나 모든 사용자 지정 엔터티를 비롯 하 여 응용 프로그램에 색 수 있습니다. 애니메이션 개체 애니메이션 그룹 (CAnimationGroup 참조)에 저장 됩니다. 각 그룹 별도로 애니메이션을 적용할 수 있으며 스토리 보드의 함수와 유사한 버전으로 처리할 수 있습니다. 애니메이션 개체에는 하나 이상의 애니메이션 변수 (CAnimationVariable 참조), 논리적 표현에 따라 캡슐화 합니다. 예를 들어 CAnimationRect 네 가지 애니메이션 변수-사각형의 각 측면에 대해 하나의 변수를 포함합니다. 각 애니메이션 개체 클래스에는 전환을 캡슐화 된 애니메이션 변수를 적용할 사용 해야 하는 오버 로드 된 AddTransition 메서드를 노출 합니다. 애니메이션 개체 식별할 수 있습니다 개체 ID (선택 사항) 및 그룹 id입니다. 그룹 ID가 올바른 그룹을 애니메이션 개체를 배치 하는 데 필요한 있지만 그룹 ID를 지정 하지 않으면 하는 경우 개체 ID가 0 인 기본 그룹에 놓입니다. 다른 그룹 Id 사용 하 여 SetID를 호출 하는 경우 애니메이션 개체 (새 그룹을 필요한 경우에 생성 됩니다)는 다른 그룹으로 이동 됩니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -150,7 +150,7 @@ virtual BOOL ApplyTransitions(
 스토리 보드에 대 한 포인터입니다.
 
 *bDependOnKeyframes*<br/>
-이 메서드는 FALSE를 사용 하 여 키 프레임에 종속 되지 않는 전환만 추가 합니다.
+FALSE 인 경우이 메서드는 키 프레임에 종속 되지 않는 전환만 추가 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -305,17 +305,17 @@ virtual void EnableValueChangedEvent(
 ```
 virtual void GetAnimationVariableList(
     CList<CAnimationVariable*,
-    CAnimationVariable*>& lst) = 0;
+    CAnimationVariable*>& list) = 0;
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*lst*<br/>
+*list*<br/>
 애니메이션 개체에 포함 된 애니메이션 변수를 사용 하 여 채워야 하는 목록입니다.
 
 ### <a name="remarks"></a>설명
 
-이는 순수 가상 메서드가 파생된 클래스에서 재정의 해야 합니다. 애니메이션 개체의 형식에 따라 하나 이상의 애니메이션 변수를 포함합니다. 예를 들어 CAnimationPoint X 및 Y 좌표를 각각에 대 한 두 개의 변수를 포함 합니다. 기본 클래스 CAnimationBaseObject 애니메이션 변수 목록에서 작동 하는 일부 제네릭 메서드를 구현 합니다. ApplyTransitions, ClearTransitions, EnableValueChangedEvent, EnableIntegerValueChangedEvent. 이러한 메서드 GetAnimationVariableList 채워지는 파생된 클래스에서 특정 애니메이션 개체에 포함 하는 실제 애니메이션 변수, 호출 되어 목록 반복 하 고 필요한 작업을 수행 합니다. 사용자 지정 애니메이션 개체를 만든 경우 해당 개체에 포함 된 모든 애니메이션 변수에 lst에 추가 해야 있습니다.
+이 순수 가상 메서드가 파생된 클래스에서 재정의 해야 합니다. 애니메이션 개체의 형식에 따라 하나 이상의 애니메이션 변수를 포함합니다. 예를 들어 CAnimationPoint X 및 Y 좌표를 각각에 대 한 두 개의 변수를 포함 합니다. 기본 클래스 CAnimationBaseObject 애니메이션 변수 목록에서 작동 하는 일부 제네릭 메서드를 구현 합니다. ApplyTransitions, ClearTransitions, EnableValueChangedEvent, EnableIntegerValueChangedEvent. 이러한 메서드 GetAnimationVariableList 채워지는 파생된 클래스에서 특정 애니메이션 개체에 포함 하는 실제 애니메이션 변수, 호출 되어 목록 반복 하 고 필요한 작업을 수행 합니다. 사용자 지정 애니메이션 개체를 만든 경우에 추가 해야 합니다 *목록* 해당 개체에 포함 된 모든 애니메이션 변수입니다.
 
 ##  <a name="getautodestroytransitions"></a>  CAnimationBaseObject::GetAutodestroyTransitions
 
@@ -367,7 +367,7 @@ UINT32 GetObjectID() const;
 
 ##  <a name="getuserdata"></a>  CAnimationBaseObject::GetUserData
 
-사용자 정의 데이터를 반환합니다.
+사용자 정의 데이터를 반환 합니다.
 
 ```
 DWORD GetUserData() const;
@@ -407,7 +407,7 @@ UINT32 m_nGroupID;
 
 ##  <a name="m_nobjectid"></a>  CAnimationBaseObject::m_nObjectID
 
-애니메이션 개체의 개체 ID를 지정 합니다.
+애니메이션 개체의 개체 ID를 지정합니다.
 
 ```
 UINT32 m_nObjectID;
@@ -423,7 +423,7 @@ CAnimationController* m_pParentController;
 
 ##  <a name="setautodestroytransitions"></a>  CAnimationBaseObject::SetAutodestroyTransitions
 
-전환에 자동으로 제거할 정렬 하는 플래그를 설정 합니다.
+전환을 자동으로 삭제 하는 플래그를 설정 합니다.
 
 ```
 void SetAutodestroyTransitions(BOOL bValue);
@@ -470,7 +470,7 @@ virtual void SetParentAnimationObjects();
 
 ### <a name="remarks"></a>설명
 
-애니메이션 개체 및 해당 컨테이너에 포함 된 애니메이션 변수 간의 관계를 설정 하는 도우미입니다. 애니메이션 변수를 반복 하 고 각 애니메이션 변수에 부모 애니메이션 개체에 대 한 백 포인터를 설정 합니다. 실제 관계가 성립 CAnimationBaseObject::ApplyTransitions의 현재 구현에서 따라서 후방 포인터 설정 되지 않습니다 CAnimationGroup::Animate를 호출할 때까지. CAnimationVariable (사용 하 여 CAnimationVariable::GetParentAnimationObject에서)에서 개체 처리 이벤트 및 애니메이션을 부모를 사용 해야 하는 경우 관계를 알고 있으면 유용할 수 있습니다.
+애니메이션 개체 및 해당 컨테이너에 포함 된 애니메이션 변수 간의 관계를 설정 하려면이 도우미를 사용할 수 있습니다. 애니메이션 변수를 반복 하 고 각 애니메이션 변수에 부모 애니메이션 개체에 대 한 백 포인터를 설정 합니다. 현재 구현에서 CAnimationBaseObject::ApplyTransitions에서 실제 관계가 성립, 따라서 후방 포인터 설정 되지 않은 CAnimationGroup::Animate를 호출할 때까지 합니다. CAnimationVariable에서 개체 처리 이벤트 및 애니메이션을 부모를 사용 해야 하는 경우 관계를 알고 있으면 유용할 수 있습니다. CAnimationVariable::GetParentAnimationObject를 사용 합니다.
 
 ##  <a name="setuserdata"></a>  CAnimationBaseObject::SetUserData
 

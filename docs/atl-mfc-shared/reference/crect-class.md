@@ -34,12 +34,12 @@ helpviewer_keywords:
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-ms.openlocfilehash: fadb430d570e516d915d520f06e4c247b131c3db
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 6e87d77eec526cbfcfe5c1e6e78b0287226f0613
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739434"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565699"
 ---
 # <a name="crect-class"></a>CRect 클래스
 
@@ -950,7 +950,7 @@ A [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 나 [CSize](csi
 
 매개 변수의 *x* 하 고 *y* (또는 `cx` 하 고 `cy`) 값에 추가 됩니다 `CRect`합니다.
 
-세 번째 오버 로드를 확장 `CRect` 매개 변수의 각 멤버에 지정 된 단위 수입니다.
+세 번째 오버 로드를 확장 `CRect` 매개 변수의 각 멤버에 지정 된 단위 수 여 합니다.
 
 ### <a name="example"></a>예제
 
@@ -988,7 +988,7 @@ A [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 나 [CSize](csi
 
 매개 변수의 *x* 하 고 *y* (또는 `cx` 하 고 `cy`) 값에서 뺀 `CRect`합니다.
 
-세 번째 오버 로드를 압축 `CRect` 매개 변수의 각 멤버에 지정 된 단위 수입니다. 이 오버 로드와 같은 함수는 [DeflateRect](#deflaterect)합니다.
+세 번째 오버 로드를 압축 `CRect` 매개 변수의 각 멤버에 지정 된 단위 수 여 합니다. 이 오버 로드와 같은 함수는 [DeflateRect](#deflaterect)합니다.
 
 ### <a name="example"></a>예제
 

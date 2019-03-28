@@ -1,6 +1,6 @@
 ---
 title: Platform::Collections::Map 클래스
-ms.date: 01/18/2018
+ms.date: 03/27/2019
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::Map::Map
@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-ms.openlocfilehash: cbe0b5e422c05cee46bff85e816ecc726c667749
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: ce50290217c7c06e26f26fc50564d3e37c873157
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745170"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565284"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections::Map 클래스
 
@@ -47,7 +47,7 @@ ref class Map sealed;
 *C*<br/>
 두 요소 값을 정렬 키로 비교하여 맵에서 해당 상대 순서를 확인할 수 있는 함수 개체를 제공하는 형식입니다. 기본적으로 [std:: less\<K >](../standard-library/less-struct.md)합니다.
 
-*__is_valid_winrt_type()* 형식의 유효성을 검사 하는 컴파일러에서 생성 된 함수 *K* 하 고 *V* 형식을 Map에 저장할 수 없을 경우 친숙 한 오류 메시지를 제공 합니다.
+*__is_valid_winrt_type()* 형식의 유효성을 검사 하는 컴파일러 생성 함수 *K* 하 고 *V* 형식을 Map에 저장할 수 없을 경우 친숙 한 오류 메시지를 제공 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -93,7 +93,7 @@ Map은 기본적으로 [std::map](../standard-library/map-class.md)에 대한 �
 |||
 |-|-|
 |이름|설명|
-|[Map::MapChanged](#mapchanged-event.md) `event`|Map이 변경될 때 발생합니다.|
+|[Map:: mapchanged](#mapchanged) 이벤트|Map이 변경될 때 발생합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -238,7 +238,7 @@ Map(
 두 요소 값을 정렬 키로 비교하여 맵에서 해당 상대 순서를 확인할 수 있는 함수 개체를 제공하는 형식입니다.
 
 *m*<br/>
-참조 또는 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 에 `map Class` 현재 Map를 초기화 하는 데 사용 되는 합니다.
+참조 또는 [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) 에 `map Class` 현재 Map를 초기화 하는 데 사용 되는 합니다.
 
 *first*<br/>
 현재 Map를 초기화하는 데 사용되는 요소 범위에서 첫 번째 요소의 입력 반복기입니다.

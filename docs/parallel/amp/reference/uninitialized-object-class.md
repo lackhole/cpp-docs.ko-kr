@@ -1,6 +1,6 @@
 ---
 title: uninitialized_object 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - uninitialized_object
 - AMPRT/uninitialized_object
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - uninitialized_object class
 ms.assetid: 6ae3c4e8-64a6-4511-a158-03be197b63af
-ms.openlocfilehash: 1c431364aee0f1d1e75059abdb023ae52cf92155
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 05c24672531d50fa9bc31587e6c6733fdff21f29
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279335"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565543"
 ---
 # <a name="uninitializedobject-class"></a>uninitialized_object 클래스
 
@@ -31,7 +31,7 @@ class uninitialized_object : public runtime_exception;
 
 |이름|설명|
 |----------|-----------------|
-|[uninitialized_object 생성자](#ctor)|`uninitialized_object` 클래스의 새 인스턴스를 초기화합니다.|
+|[uninitialized_object 생성자](#uninitialized_object)|`uninitialized_object` 클래스의 새 인스턴스를 초기화합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -46,17 +46,18 @@ class uninitialized_object : public runtime_exception;
 **헤더:** amprt.h
 
 **네임스페이스:** 동시성
-## <a name="uninitialized_object__ctor"></a> unsupported_feature
 
-Unsupported_feature 예외의 새 인스턴스를 생성합니다.
+## <a name="uninitializedobject"></a>uninitialized_object
+
+새 인스턴스를 생성 합니다 `uninitialized_object` 예외입니다.
 
 ### <a name="syntax"></a>구문
 
 ```
-explicit unsupported_feature(
+explicit uninitialized_object(
     const char * _Message ) throw();
 
-unsupported_feature() throw();
+uninitialized_object() throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -66,7 +67,7 @@ unsupported_feature() throw();
 
 ### <a name="return-value"></a>반환 값
 
-`unsupported_feature` 개체
+`uninitialized_object` 예외 개체입니다.
 
 ## <a name="see-also"></a>참고자료
 

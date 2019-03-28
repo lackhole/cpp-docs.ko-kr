@@ -1,6 +1,6 @@
 ---
 title: '&lt;shared_mutex&gt;'
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - <shared_mutex>
 - shared_mutex/std::swap
@@ -45,12 +45,12 @@ f1_keywords:
 - shared_mutex/std::shared_timed_mutex::try_lock_shared_until
 - shared_mutex/std::shared_timed_mutex::unlock_shared
 ms.assetid: 0b37a97d-ee5d-4050-b29f-09db9f76beb3
-ms.openlocfilehash: 9823b01048eece557a4d29904f223841b626bc9a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 97d77399357030feaa90228a1b0cdeb80d48034c
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751819"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565388"
 ---
 # <a name="ltsharedmutex"></a>&lt;shared_mutex>
 
@@ -60,13 +60,13 @@ ms.locfileid: "57751819"
 
 |클래스|설명|
 |-------------|-----------------|
-|[shared_mutex 클래스](../standard-library/shared-mutex.md#class_shared_mutex)|에이전트 하나가 독점적으로 잠그거나 여러 에이전트가 비독점적으로 공유할 수 있는 공유 뮤텍스 형식입니다.|
-|[shared_timed_mutex 클래스](../standard-library/shared-mutex.md#class_shared_timed_mutex)|에이전트 하나가 독점적으로 잠그거나 여러 에이전트가 비독점적으로 공유할 수 있는 시간이 지정된 공유 뮤텍스 형식입니다.|
-|[shared_lock 클래스](../standard-library/shared-mutex.md#class_shared_lock)|시간이 지정된 잠금 작업 및 여러 에이전트의 비독점적 공유를 지원하기 위해 공유 뮤텍스를 래핑하는 템플릿 클래스입니다.|
+|[shared_mutex 클래스](#class_shared_mutex)|에이전트 하나가 독점적으로 잠그거나 여러 에이전트가 비독점적으로 공유할 수 있는 공유 뮤텍스 형식입니다.|
+|[shared_timed_mutex 클래스](#class_shared_timed_mutex)|에이전트 하나가 독점적으로 잠그거나 여러 에이전트가 비독점적으로 공유할 수 있는 시간이 지정된 공유 뮤텍스 형식입니다.|
+|[shared_lock 클래스](#class_shared_lock)|시간이 지정된 잠금 작업 및 여러 에이전트의 비독점적 공유를 지원하기 위해 공유 뮤텍스를 래핑하는 템플릿 클래스입니다.|
 
 |함수|설명|
 |---------------|-----------------|
-|[swap](../standard-library/shared-mutex.md#function_swap)|함수 매개 변수에서 참조하는 공유 뮤텍스 개체의 콘텐츠를 교환합니다.|
+|[swap](#function_swap)|함수 매개 변수에서 참조하는 공유 뮤텍스 개체의 콘텐츠를 교환합니다.|
 
 ## <a name="syntax"></a>구문
 
@@ -167,7 +167,7 @@ public:
    };
 ```
 
-###  <a name="&lt;shared"></a> shared_lock 클래스
+###  <a name="class_shared_lock"></a> shared_lock 클래스
 
 `shared_lock` 템플릿 클래스는 범위 내 공유 뮤텍스 개체의 공유 소유권을 제어합니다. 템플릿 매개 변수는 공유 뮤텍스 형식이어야 합니다.
 

@@ -1,6 +1,6 @@
 ---
 title: CPathT 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CPathT
 - ATLPATH/ATL::CPathT
@@ -49,19 +49,19 @@ f1_keywords:
 helpviewer_keywords:
 - CPathT class
 ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
-ms.openlocfilehash: 36d8710bd7bb055d8629dec57ec4d8c3602c8f79
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 109f9baefd0e6775db05eeba8cb78542bf60a9ac
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273025"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565794"
 ---
 # <a name="cpatht-class"></a>CPathT 클래스
 
 이 클래스는 경로 나타냅니다.
 
 > [!IMPORTANT]
->  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
+> 이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -139,7 +139,7 @@ class CPathT
 |----------|-----------------|
 |[CPathT::operator const StringType &](#operator_const_stringtype_amp)|이 연산자를 사용 하면 개체를 문자열로 처리 합니다.|
 |[CPathT::operator CPathT::PCXSTR](#operator_cpatht__pcxstr)|이 연산자를 사용 하면 개체를 문자열로 처리 합니다.|
-|[CPathT::operator StringType &](#operator_stringtype)|이 연산자를 사용 하면 개체를 문자열로 처리 합니다.|
+|[CPathT::operator StringType &](#operator_stringtype_amp)|이 연산자를 사용 하면 개체를 문자열로 처리 합니다.|
 |[CPathT::operator +=](#operator_add_eq)|이 연산자는 경로 문자열을 추가합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
@@ -653,7 +653,7 @@ CPathT<StringType>& operator+=(PCXSTR pszMore);
 이 연산자를 사용 하면 개체를 문자열로 처리 합니다.
 
 ```
-operatorconst StringType&() const throw();
+operator const StringType&() const throw();
 ```
 
 ### <a name="return-value"></a>반환 값
@@ -665,19 +665,19 @@ operatorconst StringType&() const throw();
 이 연산자를 사용 하면 개체를 문자열로 처리 합니다.
 
 ```
-operatorPCXSTR() const throw();
+operator PCXSTR() const throw();
 ```
 
 ### <a name="return-value"></a>반환 값
 
 이 개체에 의해 관리 되는 현재 경로 나타내는 문자열을 반환 합니다.
 
-##  <a name="operator_stringtype__amp"></a>  CPathT::operator StringType &amp;
+##  <a name="operator_stringtype_amp"></a>  CPathT::operator StringType &amp;
 
 이 연산자를 사용 하면 개체를 문자열로 처리 합니다.
 
 ```
-operatorStringType&() throw();
+operator StringType&() throw();
 ```
 
 ### <a name="return-value"></a>반환 값
