@@ -1,6 +1,6 @@
 ---
 title: tiled_index 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - tiled_index
 - AMP/tiled_index
@@ -19,12 +19,12 @@ f1_keywords:
 helpviewer_keywords:
 - tiled_index class
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38
-ms.openlocfilehash: cea1ac1d500a9cf3bcbdc1f5dde33a0002cbd363
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: dd8b6d7a0e174c88ad229da2d08a9ec8a11fb0aa
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57257906"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565219"
 ---
 # <a name="tiledindex-class"></a>tiled_index 클래스
 
@@ -110,7 +110,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 
 **네임스페이스:** 동시성
 
-## <a name="tiled_index__ctor"></a>  tiled_index 생성자
+## <a name="ctor"></a>  tiled_index 생성자
 
 `tiled_index` 클래스의 새 인스턴스를 초기화합니다.
 
@@ -168,8 +168,7 @@ extent<rank> get_tile_extent()restrict(amp,cpu);
 
 ## <a name="return-value"></a>반환 값
 
-
-  `extent` 템플릿 인수 `tiled_index`, `_Dim0` 및 `_Dim1`의 값을 가진 `_Dim2` 개체입니다.
+`extent` 템플릿 인수 `tiled_index`, `_Dim0` 및 `_Dim1`의 값을 가진 `_Dim2` 개체입니다.
 
 ## <a name="tiled_index__barrier"></a>  barrier
 
