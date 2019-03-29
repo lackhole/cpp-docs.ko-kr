@@ -1,6 +1,6 @@
 ---
 title: extent 클래스(C++ AMP)
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - extent
 - AMP/extent
@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - extent structure
 ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
-ms.openlocfilehash: 2236b1a1b72f307dae1efa0cfe197e222820c460
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 46af59708ef3f0d91883c52502bce4d09676ca77
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270191"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565833"
 ---
 # <a name="extent-class-c-amp"></a>extent 클래스(C++ AMP)
 
@@ -77,7 +77,7 @@ class extent;
 
 |이름|설명|
 |----------|-----------------|
-|[rank 상수](#rank)|차수를 가져옵니다는 `extent` 개체입니다.|
+|[rank 상수](#rank_constant)|차수를 가져옵니다는 `extent` 개체입니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -361,8 +361,7 @@ static const int rank = _Rank;
 
 ##  <a name="size"></a> 크기
 
-
-  `extent` 개체(요소의 단위에서)의 총 선형 크기 단위를 반환합니다.
+`extent` 개체(요소의 단위에서)의 총 선형 크기 단위를 반환합니다.
 
 ### <a name="syntax"></a>구문
 
