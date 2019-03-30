@@ -1,5 +1,5 @@
 ---
-title: C + +-visual Studio 프로젝트
+title: C++-visual Studio 프로젝트
 ms.date: 12/12/2018
 f1_keywords:
 - vcprojects
@@ -18,17 +18,17 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "57826907"
 ---
-# <a name="visual-studio-projects---c"></a>Visual Studio 프로젝트-c + +
+# <a name="visual-studio-projects---c"></a>Visual Studio 프로젝트-C++
 
 A *Visual Studio 프로젝트* 프로젝트를 MSBuild 빌드 시스템에 기반 합니다. MSBuild는 Visual Studio 용 네이티브 빌드 시스템 이며 일반적으로 MFC 또는 ATL 라이브러리, COM 구성 요소 및 기타 Windows 전용 프로그램을 사용 하는 데스크톱 응용 프로그램 뿐만 아니라 UWP 앱에 대 한 사용 하는 시스템을 구축 하는 가장 합니다. MSBuild는 Visual studio에 긴밀 하 게 통합 되지만 명령줄에서도 사용할 수 있습니다. 
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-선택 하 여 c + + 프로젝트를 만들 수 있습니다 **파일 &#124; 새로 만들기 &#124; 프로젝트**, 왼쪽된 창에서 Visual c + +를 선택 합니다. 가운데 창에서 프로젝트 템플릿 목록을 표시 합니다. 
+선택 하 여 C++ 프로젝트를 만들 수 있습니다 **파일 &#124; 새로 만들기 &#124; 프로젝트**, 왼쪽된 창에서 Visual C++를 선택 합니다. 가운데 창에서 프로젝트 템플릿 목록을 표시 합니다. 
 
    ![프로젝트 템플릿](../media/vs2017-new-project.png " Visual Studio 2017 새 프로젝트 대화 상자")
 
-Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 c + + 프로젝트 템플릿](reference/visual-cpp-project-types.md)합니다. 사용자 고유의 프로젝트 템플릿을 만들 수 있습니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](/visualstudio/ide/how-to-create-project-templates)합니다.
+Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 C++ 프로젝트 템플릿](reference/visual-cpp-project-types.md)합니다. 사용자 고유의 프로젝트 템플릿을 만들 수 있습니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](/visualstudio/ide/how-to-create-project-templates)합니다.
 
 프로젝트를 만든 후에 저장 되는 [솔루션 탐색기](/visualstudio/ide/solutions-and-projects-in-visual-studio) 창:
 
@@ -46,7 +46,7 @@ Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자�
 
 ## <a name="set-compiler-options-and-other-build-properties"></a>컴파일러 옵션 및 기타 빌드 속성 설정
 
-프로젝트를 마우스 오른쪽 단추로 프로젝트의 빌드 설정을 구성 하려면 **솔루션 탐색기** 선택한 **속성**합니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](working-with-project-properties.md)합니다.
+프로젝트를 마우스 오른쪽 단추로 프로젝트의 빌드 설정을 구성 하려면 **솔루션 탐색기** 선택한 **속성**합니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](working-with-project-properties.md)합니다.
 
 ## <a name="compile-and-run"></a>컴파일 및 실행
 
@@ -60,7 +60,7 @@ Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자�
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[Visual Studio에서 속성을 빌드하고 c + + 컴파일러를 설정 합니다.](working-with-project-properties.md)<br/>
+[Visual Studio에서 속성을 빌드하고 C++ 컴파일러를 설정 합니다.](working-with-project-properties.md)<br/>
 프로젝트 설정을 지정 하려면 속성 페이지 및 속성 시트를 사용 하는 방법입니다.
 
 [참조 라이브러리 및 빌드 시 구성 요소](adding-references-in-visual-cpp-projects.md)<br/>
