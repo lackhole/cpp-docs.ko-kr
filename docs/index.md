@@ -1,15 +1,9 @@
 ---
 layout: HubPage
 title: Visual C++ 설명서
-description: C++를 사용하여 플랫폼과 장치용 애플리케이션, 서비스 및 도구를 개발하는 방법을 알아봅니다.
+description: 'C++를 사용하여 플랫폼과 장치용 애플리케이션, 서비스 및 도구를 개발하는 방법을 알아봅니다.'
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: e8fe8dec14560579e255446c4de3ee5a17e302f6
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703209"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -51,7 +45,7 @@ ms.locfileid: "55703209"
                 </a>
             </li>
             <li>
-                <a href="/cpp/what-s-new-for-visual-cpp-in-visual-studio">
+                <a href="/cpp/what-s-new-for-overview/visual-cpp-in-visual-studio.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
