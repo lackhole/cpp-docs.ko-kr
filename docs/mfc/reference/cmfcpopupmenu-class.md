@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CMFCPopupMenu [MFC], OnChangeHot
 - CMFCPopupMenu [MFC], OnChooseItem
 ms.assetid: 9555dca1-8c9c-44c9-af72-0659ddad128e
-ms.openlocfilehash: b45ac09ff87c191e55e403951fdff18cae33256d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: bd6629df4274af8a4f450024f0bad6da45ae3683
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292278"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776013"
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu 클래스
 
@@ -278,7 +278,7 @@ class CMFCPopupMenu : public CMiniFrameWnd
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 팝업 메뉴 개체를 구성 하는 방법에 설명 합니다. 로고 및 팝업 메뉴의 소리를 설정, 애니메이션 속도 및 형식 설정, 주 프레임 외부 팝업 메뉴가 나타나면 메뉴 그림자를 그릴, 최대 너비를 설정 및 팝업 메뉴의 오른쪽 메뉴 맞춤을 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 팝업 메뉴 개체를 구성 하는 방법에 설명 합니다. 로고 및 팝업 메뉴의 소리를 설정, 애니메이션 속도 및 형식 설정, 주 프레임 외부 팝업 메뉴가 나타나면 메뉴 그림자를 그릴, 최대 너비를 설정 및 팝업 메뉴의 오른쪽 메뉴 맞춤을 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_CustomPages#2](../../mfc/reference/codesnippet/cpp/cmfcpopupmenu-class_1.cpp)]
 
@@ -451,7 +451,7 @@ virtual BOOL Create(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 메서드는 `CMFCPopuMenu` 클래스입니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 메서드는 `CMFCPopuMenu` 클래스입니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_CustomPages#1](../../mfc/reference/codesnippet/cpp/cmfcpopupmenu-class_2.cpp)]
 

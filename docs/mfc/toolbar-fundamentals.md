@@ -20,12 +20,12 @@ helpviewer_keywords:
 - frame window classes [MFC], toolbar embedded in
 - LoadToolBar method [MFC]
 ms.assetid: cc00aaff-8a56-433b-b0c0-b857d76b4ffd
-ms.openlocfilehash: 39e790e5152dd07ab40901140ecdd8f8791a446e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9c784db2e1a482b313147e6837d6bbbd16d0ecb4
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258400"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775493"
 ---
 # <a name="toolbar-fundamentals"></a>도구 모음 기본 사항
 
@@ -62,7 +62,7 @@ ms.locfileid: "57258400"
 1. 도킹, 부동 및 도구 팁을 활성화 하는 함수를 호출 합니다. 이러한 호출에 대 한 자세한 내용은 문서 참조 [도킹 및 부동 도구 모음](../mfc/docking-and-floating-toolbars.md)합니다.
 
 > [!NOTE]
->  MFC 일반 샘플 [DOCKTOOL](../visual-cpp-samples.md) 이전 및 새 MFC 도구 모음 그림을 포함 합니다. 사용 하는 도구 모음 `COldToolbar` 2 단계에서 호출 해야 `LoadBitmap` (대신 `LoadToolBar`) 및 `SetButtons`합니다. 새 도구 모음에 대 한 호출을 필요한 `LoadToolBar`합니다.
+>  MFC 일반 샘플 [DOCKTOOL](../overview/visual-cpp-samples.md) 이전 및 새 MFC 도구 모음 그림을 포함 합니다. 사용 하는 도구 모음 `COldToolbar` 2 단계에서 호출 해야 `LoadBitmap` (대신 `LoadToolBar`) 및 `SetButtons`합니다. 새 도구 모음에 대 한 호출을 필요한 `LoadToolBar`합니다.
 
 도킹, 부동 및 도구 팁 호출 하는 선택적입니다. 해당 줄을 제거할 수 있습니다 `OnCreate` 하려는 경우. 결과는 고정, float 또는 도킹할 수 없습니다 및 도구 설명을 표시할 수 없습니다 남아 있는 도구 모음입니다.
 

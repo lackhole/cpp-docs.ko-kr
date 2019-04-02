@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 2ba2c194-2c6c-40ff-9db4-e9dbe57e1f57
-ms.openlocfilehash: 9b2888c82ad9522925ffbd53923d3988863f56ca
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: 945a77436f41f4981392e583c831723e667f867c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565362"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770577"
 ---
 # <a name="cwordarray-class"></a>CWordArray 클래스
 
@@ -546,6 +546,6 @@ void OnUpdate();
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 수집](../../overview/visual-cpp-samples.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)

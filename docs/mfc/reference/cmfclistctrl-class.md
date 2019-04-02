@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMFCListCtrl [MFC], SetSortColumn
 - CMFCListCtrl [MFC], Sort
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e
-ms.openlocfilehash: c2434671ecdca4e68f3a83c21f1916b42928ffcd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 4cd1bb7787f8797984bdce5f9a5b3080d69ea5f2
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294235"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767940"
 ---
 # <a name="cmfclistctrl-class"></a>CMFCListCtrl 클래스
 
@@ -69,7 +69,7 @@ class CMFCListCtrl : public CListCtrl
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CMFCListCtrl` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 목록 컨트롤 만들기, 열을 삽입, 항목을 삽입, 항목의 텍스트를 설정 및 목록 컨트롤의 글꼴을 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 `CMFCListCtrl` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 목록 컨트롤 만들기, 열을 삽입, 항목을 삽입, 항목의 텍스트를 설정 및 목록 컨트롤의 글꼴을 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#25](../../mfc/codesnippet/cpp/cmfclistctrl-class_1.h)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#26](../../mfc/codesnippet/cpp/cmfclistctrl-class_2.cpp)]

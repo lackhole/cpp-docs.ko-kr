@@ -4,12 +4,12 @@ ms.date: 09/20/2018
 helpviewer_keywords:
 - walkthroughs [MFC]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
-ms.openlocfilehash: c4c4ecce92bce3fbd2cb37f69b9aa02a9af4d7c3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c22a11c54b1957c1d4ac735fe8cb577d9c483d35
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291433"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781707"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>연습: MFC 자유 곡선 응용 프로그램 (2 부)를 업데이트 하는 중
 
@@ -17,7 +17,7 @@ ms.locfileid: "57291433"
 
 ## <a name="prerequisites"></a>전제 조건
 
-[Visual C++ 샘플](../visual-cpp-samples.md)
+[Visual C++ 샘플](../overview/visual-cpp-samples.md)
 
 ##  <a name="top"></a> 섹션
 

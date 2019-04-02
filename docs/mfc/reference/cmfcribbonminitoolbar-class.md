@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CMFCRibbonMiniToolBar [MFC], Show
 - CMFCRibbonMiniToolBar [MFC], ShowWithContextMenu
 ms.assetid: 7017e963-aeaf-4fe9-b540-e15a7ed41e94
-ms.openlocfilehash: 462a4aa04ddc542db8aba734ed93ab0fae905dad
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 394182aa0f9c967524ed0db510d0b9cc0739118e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283841"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777157"
 ---
 # <a name="cmfcribbonminitoolbar-class"></a>CMFCRibbonMiniToolBar 클래스
 
@@ -106,7 +106,7 @@ void SetCommands(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `SetCommands` 메서드는 `CMFCRibbonMiniToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `SetCommands` 메서드는 `CMFCRibbonMiniToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#9](../../mfc/reference/codesnippet/cpp/cmfcribbonminitoolbar-class_1.cpp)]
 

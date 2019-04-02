@@ -6,12 +6,12 @@ helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: 44a2f1da6a02444c79247178c34281e39731f0f3
-ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
+ms.openlocfilehash: 248b423659d026774d4945ee6330a39dc4c6e16e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476931"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770150"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 만들기 및 사용자 고유의 동적 링크 라이브러리 (c + +)를 사용 합니다.
 
@@ -398,7 +398,7 @@ int main()
 
 DLL 및 클라이언트 응용 프로그램을 만든 했으므로 실험할 수 있습니다. 클라이언트 앱 코드에서 중단점을 설정 해 디버거에서 앱을 실행 합니다. 라이브러리 호출 한 단계씩 실행할 때 어떻게 되는지 확인 합니다. 라이브러리에 다른 함수를 추가 하거나 DLL을 사용 하는 다른 클라이언트 앱을 작성 합니다.
 
-앱을 배포할 때 사용 하 여 Dll도 배포 해야 합니다. Dll을 작성 하는 또는 포함 하는 제 3 자에서 사용할 수 있도록 앱을 위한 가장 간단한 방법은 라고도 앱을 동일한 디렉터리에 넣습니다 *app-local 배포*합니다. 배포에 대한 자세한 내용은 [Deployment in Visual C++](../ide/deployment-in-visual-cpp.md)를 참조하세요.
+앱을 배포할 때 사용 하 여 Dll도 배포 해야 합니다. Dll을 작성 하는 또는 포함 하는 제 3 자에서 사용할 수 있도록 앱을 위한 가장 간단한 방법은 라고도 앱을 동일한 디렉터리에 넣습니다 *app-local 배포*합니다. 배포에 대한 자세한 내용은 [Deployment in Visual C++](../windows/deployment-in-visual-cpp.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

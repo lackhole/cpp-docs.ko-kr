@@ -12,12 +12,12 @@ helpviewer_keywords:
 - builds [C++], options
 - Visual C++, build options
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
-ms.openlocfilehash: 0c4a74ce69f5c52eb6fc107ea477e5715e86ecd2
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 6a4048d741cf291d8d6173c1444b6933523c6851
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826582"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775428"
 ---
 # <a name="cc-projects-and-build-systems-in-visual-studio"></a>C/c + + 프로젝트 및 Visual Studio에서 빌드 시스템
 
@@ -74,10 +74,12 @@ cl /EHsc hello.cpp
 
 [릴리스 빌드](release-builds.md) 만들고 최적화 된 릴리스 문제를 해결 하는 방법을 최종 사용자에 게 배포에 대 한 빌드합니다.
 
-[명령줄에서 MSVC 도구 집합을 사용 하 여](building-on-the-command-line.md)<br/>
+[명령줄에서 MSVC 도구 집합 사용](building-on-the-command-line.md)<br/>
 C/c + + 컴파일러를 사용 하 여 Visual Studio IDE를 사용 하지 않고 명령줄에서 직접 도구를 구축 하는 방법을 설명 합니다.
 
 [Visual Studio에서 Dll 빌드](dlls-in-visual-cpp.md) 만들고, 디버그 하 고 Visual Studio에서 C/c + + Dll (공유 라이브러리)을 배포 하는 방법입니다.
+
+[연습: 정적 라이브러리 만들기 및 사용](walkthrough-creating-and-using-a-static-library-cpp.md) .lib 이진 파일을 만드는 방법.
 
 [C/c + + 격리 된 응용 프로그램 및 side-by-side-어셈블리를 빌드](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md) 격리 된 응용 프로그램 및 side-by-side-어셈블리 아이디어를 기반으로 Windows 데스크톱 응용 프로그램에 대 한 배포 모델을 설명 합니다.
 

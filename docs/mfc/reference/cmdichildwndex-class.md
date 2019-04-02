@@ -112,12 +112,12 @@ helpviewer_keywords:
 - CMDIChildWndEx [MFC], UnregisterTaskbarTab
 - CMDIChildWndEx [MFC], UpdateTaskbarTabIcon
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
-ms.openlocfilehash: 625104ecddd9e14ac77aa05ac54cb578c4d62f85
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e12cf9f65e6fd6dd7f68edc4a94103baa5a8df62
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293426"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781759"
 ---
 # <a name="cmdichildwndex-class"></a>CMDIChildWndEx 클래스
 
@@ -201,7 +201,7 @@ MDI 응용 프로그램에서 도킹 확장된 기능을 사용 하려면 응용
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 파생 클래스에서 `CMDIChildWndEx`합니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 파생 클래스에서 `CMDIChildWndEx`합니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#3](../../mfc/codesnippet/cpp/cmdichildwndex-class_1.h)]
 
@@ -431,7 +431,7 @@ virtual LPCTSTR GetDocumentName(CObject** pObj);
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 `GetDocumentName` 메서드를 사용하는 방법을 보여 줍니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 `GetDocumentName` 메서드를 사용하는 방법을 보여 줍니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#17](../../mfc/codesnippet/cpp/cmdichildwndex-class_2.cpp)]
 
@@ -602,7 +602,7 @@ TRUE 이면 문서가 읽기 전용입니다. 그렇지 않으면 FALSE입니다
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 재정의 `IsReadOnly` 메서드. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 재정의 `IsReadOnly` 메서드. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#2](../../mfc/codesnippet/cpp/cmdichildwndex-class_3.cpp)]
 

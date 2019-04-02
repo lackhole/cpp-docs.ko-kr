@@ -12,19 +12,19 @@ helpviewer_keywords:
 - IPF, command-line compiler
 - x64 [C++], command-line compiler
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
-ms.openlocfilehash: b30b831522016ce61f138f7e0521c42ff44e04d9
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 8436254a3d8c5c1dae018c2309ceaad7bd5b2408
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809771"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769279"
 ---
 # <a name="how-to-enable-a-64-bit-x64-hosted-msvc-toolset-on-the-command-line"></a>방법: 64 비트, x64 호스트 명령줄에서 MSVC 도구 집합
 
 Visual Studio는 c + + 컴파일러, 링커 및 32 비트, 64 비트 또는 ARM 기반 Windows 운영 체제에서 실행할 수 있는 앱의 플랫폼별 버전을 만드는 데 사용할 수 있는 도구도 포함 되어 있습니다. 다른 선택적 Visual Studio 워크 로드를 통해 c + + 도구를 사용 하 여 iOS, Android 및 Linux와 같은 다른 플랫폼을 대상으로 수 있습니다. 기본 빌드 아키텍처 32 비트, x86에 호스트 된 도구를 사용 하 여 32 비트, x86 네이티브 Windows 코드를 작성 합니다. 그러나 있을 것은 64 비트 컴퓨터입니다. X86, x64 또는 ARM 프로세서에 대 한 코드를 작성 하는 경우 64 비트, x64 호스트 도구 집합을 사용 하 여 프로세서 및 64 비트 코드에 사용 가능한 메모리 공간 활용을 걸릴 수 있습니다.
 
 > [!NOTE]
-> 각 Visual Studio 버전에 포함 된 특정 도구에 대 한 자세한 내용은 [Visual Studio 버전의 Visual c + + 도구 및 기능](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)합니다.
+> 각 Visual Studio 버전에 포함 된 특정 도구에 대 한 자세한 내용은 [Visual Studio 버전의 Visual c + + 도구 및 기능](../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md)합니다.
 >
 > 64 비트 응용 프로그램을 만들려면 Visual Studio IDE를 사용 하는 방법에 대 한 정보를 참조 하세요. [방법: 64비트, x64 플랫폼을 대상으로 한 Visual C++ 프로젝트 구성](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)을 참조하세요.
 

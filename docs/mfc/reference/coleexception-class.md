@@ -10,12 +10,12 @@ helpviewer_keywords:
 - COleException [MFC], Process
 - COleException [MFC], m_sc
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
-ms.openlocfilehash: 4b5dd2de2924b62dd76d7f16a494566849357de8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6874df550103abf727573d8e34b8adadd9643db8
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300364"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767810"
 ---
 # <a name="coleexception-class"></a>COleException 클래스
 
@@ -109,6 +109,6 @@ SCODE에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조
 
 ## <a name="see-also"></a>참고자료
 
-[CALCDRIV MFC 샘플](../../visual-cpp-samples.md)<br/>
+[CALCDRIV MFC 샘플](../../overview/visual-cpp-samples.md)<br/>
 [CException 클래스](../../mfc/reference/cexception-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)

@@ -54,12 +54,12 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-ms.openlocfilehash: c954955ad52197316da0952dc6dd415a91782444
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 14a4691e0c1f25a8f9e8b2b652c6e582f51c954a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739442"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775948"
 ---
 # <a name="cimage-class"></a>CImage 클래스
 
@@ -1658,8 +1658,8 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 
 ## <a name="see-also"></a>참고자료
 
-[MMXSwarm 샘플](../../visual-cpp-samples.md)<br/>
-[SimpleImage 샘플](../../visual-cpp-samples.md)<br/>
+[MMXSwarm 샘플](../../overview/visual-cpp-samples.md)<br/>
+[SimpleImage 샘플](../../overview/visual-cpp-samples.md)<br/>
 [장치 독립적 비트맵](/windows/desktop/gdi/device-independent-bitmaps)<br/>
 [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)<br/>
 [ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)<br/>

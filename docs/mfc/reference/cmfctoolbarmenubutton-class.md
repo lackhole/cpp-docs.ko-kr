@@ -92,12 +92,12 @@ helpviewer_keywords:
 - CMFCToolBarMenuButton [MFC], DrawDocumentIcon
 - CMFCToolBarMenuButton [MFC], m_bAlwaysCallOwnerDraw
 ms.assetid: cfa50176-7e4b-4527-9904-86a1b48fc1bc
-ms.openlocfilehash: 775d977fa1c995c42cc85660b1c9d13aea40a01e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7733969a0218dacf481ac82c764911c61ecabbbf
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281527"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769154"
 ---
 # <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton 클래스
 
@@ -183,7 +183,7 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 구성 하는 방법에 설명 된 `CMFCToolBarMenuButton` 개체입니다. 코드는 드롭다운 메뉴 색상표 모드 인지를 지정 하 고 메뉴 모음에서 메뉴 단추를 끌 때 생성 되는 분리 막대가 막대에 대 한 ID를 지정 하는 방법을 보여 줍니다. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.
+다음 예제에서는 구성 하는 방법에 설명 된 `CMFCToolBarMenuButton` 개체입니다. 코드는 드롭다운 메뉴 색상표 모드 인지를 지정 하 고 메뉴 모음에서 메뉴 단추를 끌 때 생성 되는 분리 막대가 막대에 대 한 ID를 지정 하는 방법을 보여 줍니다. 이 코드 조각은 [워드 패드 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_WordPad#10](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_1.cpp)]
 
@@ -241,7 +241,7 @@ CMFCToolBarMenuButton(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCToolBarMenuButton` 클래스입니다. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.
+다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCToolBarMenuButton` 클래스입니다. 이 코드 조각은 [워드 패드 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_WordPad#9](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_2.cpp)]
 

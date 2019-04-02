@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCDesktopAlertWndInfo [MFC], m_strText
 - CMFCDesktopAlertWndInfo [MFC], m_strURL
 ms.assetid: 5c9bb84e-6c96-4748-8e74-6951b6ae8e84
-ms.openlocfilehash: 3c40424a1aba81a7048ba89781fe6c4324f86ccd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a4b3d8769b3d267c0bd3f81269dd3b8ab3cf3184
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301638"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768291"
 ---
 # <a name="cmfcdesktopalertwndinfo-class"></a>CMFCDesktopAlertWndInfo 클래스
 
@@ -68,7 +68,7 @@ class CMFCDesktopAlertWndInfo
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 다양 한 멤버를 사용 하는 방법에 설명 합니다 `CMFCDesktopAlertWndInfo` 클래스입니다. 예제에는 바탕 화면 경고 창이, 바탕 화면 경고 창에 표시 되는 링크 및 바탕 화면 경고 창이에서 링크를 사용 하 여 연결 된 명령 ID에 표시 되는 텍스트 아이콘 표시 되는 핸들을 설정 하는 방법을 보여 줍니다. 이 예제는의 일부를 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 다양 한 멤버를 사용 하는 방법에 설명 합니다 `CMFCDesktopAlertWndInfo` 클래스입니다. 예제에는 바탕 화면 경고 창이, 바탕 화면 경고 창에 표시 되는 링크 및 바탕 화면 경고 창이에서 링크를 사용 하 여 연결 된 명령 ID에 표시 되는 텍스트 아이콘 표시 되는 핸들을 설정 하는 방법을 보여 줍니다. 이 예제는의 일부를 [바탕 화면 경고 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#3](../../mfc/reference/codesnippet/cpp/cmfcdesktopalertwndinfo-class_1.cpp)]
 

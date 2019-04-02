@@ -7,12 +7,12 @@ helpviewer_keywords:
 - TN029
 - splitter windows [MFC], about splitter windows
 ms.assetid: 2c57ce99-2a3c-4eff-9cea-baccb13af075
-ms.openlocfilehash: 0c27545c6f425eda952e87c80ed1d37de9e1093a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6c2f619d9cd619ca598c66ca657faa1b9dccaaa2
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294995"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781733"
 ---
 # <a name="tn029-splitter-windows"></a>TN029: 분할 창
 
@@ -46,7 +46,7 @@ ms.locfileid: "57294995"
 
 ## <a name="splitter-examples"></a>분할 예제
 
-MFC 샘플 프로그램의 대부분 직접 또는 간접적으로 분할자 창을 사용합니다. MFC 일반 샘플 [VIEWEX](../visual-cpp-samples.md) 정적 분할자, 분할자 분할자에 배치 하는 방법 등의 몇 가지 사용 방법을 보여 줍니다.
+MFC 샘플 프로그램의 대부분 직접 또는 간접적으로 분할자 창을 사용합니다. MFC 일반 샘플 [VIEWEX](../overview/visual-cpp-samples.md) 정적 분할자, 분할자 분할자에 배치 하는 방법 등의 몇 가지 사용 방법을 보여 줍니다.
 
 또한 여러 문서 MDI (인터페이스) 자식 프레임 창 클래스는 분할자 창을 포함 하는 새 만들려면 클래스 마법사를 사용할 수 있습니다. 분할 창에 대 한 자세한 내용은 참조 하세요. [여러 문서 형식, 뷰 및 프레임 Windows](../mfc/multiple-document-types-views-and-frame-windows.md)합니다.
 

@@ -80,12 +80,12 @@ helpviewer_keywords:
 - CMFCButton [MFC], m_nAlignStyle
 - CMFCButton [MFC], m_nFlatStyle
 ms.assetid: 4b32f57c-7a53-4734-afb9-d47e3359f62e
-ms.openlocfilehash: 804c3219356d36f6a0a733937c5e354822a4be83
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0659e5335e1ebc495280a4e0cb5c0167f3b45e1d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269814"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768219"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton 클래스
 
@@ -180,7 +180,7 @@ class CMFCButton : public CButton
 
 ## <a name="example"></a>예제
 
-다음 예제에서 다양 한 메서드를 사용 하 여 단추의 속성을 구성 하는 방법에 설명 합니다 `CMFCButton` 클래스입니다. 일부인 예제는 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서 다양 한 메서드를 사용 하 여 단추의 속성을 구성 하는 방법에 설명 합니다 `CMFCButton` 클래스입니다. 일부인 예제는 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#31](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_2.cpp)]
@@ -542,7 +542,7 @@ FlatStyle  m_nFlatStyle;
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 값을 설정 하는 방법에 설명 합니다 `m_nFlatStyle` 멤버 변수를 `CMFCButton` 클래스입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 값을 설정 하는 방법에 설명 합니다 `m_nFlatStyle` 멤버 변수를 `CMFCButton` 클래스입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#29](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_5.cpp)]
@@ -867,7 +867,7 @@ void SetImage(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 다양 한 버전을 사용 하는 방법에 설명 합니다 `SetImage` 의 메서드는 `CMFCButton` 클래스입니다. 일부인 예제는 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 다양 한 버전을 사용 하는 방법에 설명 합니다 `SetImage` 의 메서드는 `CMFCButton` 클래스입니다. 일부인 예제는 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#31](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_2.cpp)]
@@ -891,7 +891,7 @@ void SetMouseCursor(HCURSOR hcursor);
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `SetMouseCursor` 의 메서드는 `CMFCButton` 클래스입니다. 이 예제에서는 코드의 일부인 합니다 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `SetMouseCursor` 의 메서드는 `CMFCButton` 클래스입니다. 이 예제에서는 코드의 일부인 합니다 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#30](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_6.cpp)]

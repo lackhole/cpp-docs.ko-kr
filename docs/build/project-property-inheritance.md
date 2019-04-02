@@ -1,5 +1,5 @@
 ---
-title: C + +-Visual Studio 프로젝트에서 속성 상속
+title: C++-Visual Studio 프로젝트에서 속성 상속
 ms.date: 12/10/2018
 helpviewer_keywords:
 - Visual C++ projects, property inheritance

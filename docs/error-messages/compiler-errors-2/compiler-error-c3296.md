@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3296
 ms.assetid: fc4c9dcd-16cf-4eee-a1ac-c43e7c29e443
-ms.openlocfilehash: 2e9787b063a5a37af8d0e0fdd04492a743792646
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0a162590ac2a72dda17b2ecfc96899e94cde24c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588112"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767043"
 ---
 # <a name="compiler-error-c3296"></a>컴파일러 오류 C3296
 
@@ -19,7 +19,7 @@ ms.locfileid: "50588112"
 
 컴파일러가 동일한 이름의 속성을 둘 이상 발견했습니다. 형식의 각 속성에는 고유한 이름이 있어야 합니다.
 
-자세한 내용은 [property](../../windows/property-cpp-component-extensions.md)을 참조하세요.
+자세한 내용은 [property](../../extensions/property-cpp-component-extensions.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

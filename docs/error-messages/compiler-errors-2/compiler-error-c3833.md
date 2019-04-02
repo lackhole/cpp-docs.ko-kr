@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3833
 ms.assetid: 8152be53-e01e-48cd-9eef-9de38723664c
-ms.openlocfilehash: eb320dda9a69937e49f669153bb77e484c5a15fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 99c18e899a46c5e1d7a643ba32546f827c320373
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549593"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768980"
 ---
 # <a name="compiler-error-c3833"></a>컴파일러 오류 C3833
 
 'type': pointer_type에 대 한 잘못 된 대상 형식
 
-[interior_ptr](../../windows/interior-ptr-cpp-cli.md) 하거나 [pin_ptr](../../windows/pin-ptr-cpp-cli.md) 잘못 선언 되었습니다.
+[interior_ptr](../../extensions/interior-ptr-cpp-cli.md) 하거나 [pin_ptr](../../extensions/pin-ptr-cpp-cli.md) 잘못 선언 되었습니다.
 
 다음 샘플에서는 C3833 오류가 생성 됩니다.
 

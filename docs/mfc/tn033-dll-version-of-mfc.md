@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DLL version of MFC [MFC]
 - TN033
 ms.assetid: b6f1080b-b66b-4b1e-8fb1-926c5816392c
-ms.openlocfilehash: 17ffc8b46060e742449c9612424b1cd06dd8a9d3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 4bfc60e20a073dd34945b91dd48ba82cdf4ab9f3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523969"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767784"
 ---
 # <a name="tn033-dll-version-of-mfc"></a>TN033: MFC의 DLL 버전
 
@@ -31,18 +31,18 @@ ms.locfileid: "51523969"
 
 비 MFC 응용 프로그램 (이 기본 MFC DLL)를 사용 하 여 사용할 수 있는 MFC를 사용 하 여 DLL을 빌드하는 데 관심이 있다면 가리킵니다 [기술 참고 11](../mfc/tn011-using-mfc-as-part-of-a-dll.md)합니다.
 
-## <a name="overview-of-mfcxxdll-support-terminology-and-files"></a>MFCxx.DLL 지원 개요: 용어 및 파일
+## <a name="overview-of-mfcxxdll-support-terminology-and-files"></a>MFCxx.DLL 지원의 개요를 제공 합니다. 용어 및 파일
 
-**기본 MFC DLL**: MFC 클래스 중 일부를 사용 하 여 독립 실행형 DLL을 빌드함으로써 기본 MFC DLL을 사용 합니다. 앱/DLL 경계를 넘어 인터페이스 "C" 인터페이스 이며 클라이언트 응용 프로그램이 MFC 응용 프로그램을 사용할 필요가 없습니다.
+**기본 MFC DLL**: 기본 MFC DLL를 사용 하 여 MFC 클래스 중 일부를 사용 하 여 독립 실행형 DLL을 빌드할 수 있습니다. 앱/DLL 경계를 넘어 인터페이스 "C" 인터페이스 이며 클라이언트 응용 프로그램이 MFC 응용 프로그램을 사용할 필요가 없습니다.
 
-MFC 1.0에서 지원 되는 DLL 지원의 버전입니다. 설명한 것 [기술 참고 11](../mfc/tn011-using-mfc-as-part-of-a-dll.md) 및 MFC 고급 개념 샘플 [DLLScreenCap](../visual-cpp-samples.md)합니다.
+MFC 1.0에서 지원 되는 DLL 지원의 버전입니다. 설명한 것 [기술 참고 11](../mfc/tn011-using-mfc-as-part-of-a-dll.md) 및 MFC 고급 개념 샘플 [DLLScreenCap](../overview/visual-cpp-samples.md)합니다.
 
 > [!NOTE]
 > Visual c + + 버전 4.0부터 용어 **USRDLL** 오래 되어 서 정적으로 MFC에 링크 된 기본 MFC DLL로 대체 되었습니다. 일반 동적으로 MFC에 링크 MFC DLL을 빌드할 수 있습니다.
 
 MFC 3.0 (이상)는 OLE 및 데이터베이스 클래스를 포함 한 모든 새 기능을 사용 하 여 기본 MFC Dll을 지원 합니다.
 
-**AFXDLL**:이 라고도 MFC 라이브러리의 공유 버전입니다. 이 MFC 2.0에 추가 된 새 DLL 지원 합니다. MFC 라이브러리 자체는 여러 Dll (아래 설명 참조) 하 고 클라이언트 응용 프로그램 또는 DLL을 동적으로 필요한 Dll 링크. 응용 프로그램/DLL 경계를 넘어 인터페이스는 C + + MFC 클래스 인터페이스입니다. 클라이언트 응용 프로그램에는 MFC 응용 프로그램 이어야 합니다. MFC 3.0 기능을 모두 지원 (예외: 데이터베이스 클래스에 대 한 유니코드를 사용할 수 없습니다).
+**AFXDLL**: 이 MFC 라이브러리의 공유 버전 라고도 합니다. 이 MFC 2.0에 추가 된 새 DLL 지원 합니다. MFC 라이브러리 자체는 여러 Dll (아래 설명 참조) 하 고 클라이언트 응용 프로그램 또는 DLL을 동적으로 필요한 Dll 링크. 응용 프로그램/DLL 경계를 넘어 인터페이스는 C + + MFC 클래스 인터페이스입니다. 클라이언트 응용 프로그램에는 MFC 응용 프로그램 이어야 합니다. MFC 3.0 기능을 모두 지원 (예외: 유니코드 지원 되지 않습니다 데이터베이스 클래스에 대 한).
 
 > [!NOTE]
 > Visual c + + 버전 4.0부터이 유형의 DLL 라고 "확장 DLL입니다."
@@ -55,7 +55,7 @@ MFC 3.0 (이상)는 OLE 및 데이터베이스 클래스를 포함 한 모든 �
 
 - 유니코드 디버그: MFCxxUD.DLL (결합) 및 MFCSxxD.LIB (정적).
 
-- 유니코드: (결합) MFCxxU.DLL 릴리스와 MFCSxxU.LIB (정적).
+- 유니코드 릴리스: MFCxxU.DLL (결합) 및 MFCSxxU.LIB (정적).
 
 > [!NOTE]
 > MFCSxx [U] [D]입니다. LIB 라이브러리에서 사용 되는 MFC와 함께 공유 Dll입니다. 이러한 라이브러리에 응용 프로그램 또는 DLL에 정적으로 연결 되어 있어야 하는 코드가 있습니다.
@@ -98,7 +98,7 @@ MFC 확장명 DLL은 MFC 클래스의 기능을 멋지게 꾸밀에 기록 하�
 
 - MFC 확장명 DLL 초기화 루틴을 만들려고 하면 일반적으로 `CDynLinkLibrary` MFC 확장명 DLL 하려는 경우 내보내기 `CRuntimeClass`es 또는 응용 프로그램에는 리소스입니다. 파생된 클래스의 `CDynLinkLibrary` MFC 확장 DLL에서 응용 프로그램별 데이터를 유지 해야 하는 경우 사용할 수 있습니다.
 
-이러한 고려 사항은 아래에서 자세히 설명 합니다. MFC 고급 개념 샘플도 참조 해야 [DLLHUSK](../visual-cpp-samples.md) 있으므로 보여 줍니다.
+이러한 고려 사항은 아래에서 자세히 설명 합니다. MFC 고급 개념 샘플도 참조 해야 [DLLHUSK](../overview/visual-cpp-samples.md) 있으므로 보여 줍니다.
 
 - 공유 라이브러리를 사용 하 여 응용 프로그램을 빌드합니다. (DLLHUSK 합니다. EXE가 동적으로 연결 하는 MFC 라이브러리 뿐 아니라 다른 Dll을 MFC 응용 프로그램입니다.)
 
@@ -324,7 +324,7 @@ C + + 클래스 이름을 지정 하는 c + + 개체의 동적 생성이 비슷�
 
 MFC 확장 DLL의에서 클래스를 사용 하 여 클라이언트 응용 프로그램을 원하는 경우 `DECLARE_SERIAL`, 클라이언트 응용 프로그램에 표시 되도록 클래스를 내보내려면 해야 합니다. 살펴봄으로써도 이렇게는 `CDynLinkLibrary` 목록입니다.
 
-MFC 고급 개념 샘플의 경우 [DLLHUSK](../visual-cpp-samples.md), 목록와 같습니다.
+MFC 고급 개념 샘플의 경우 [DLLHUSK](../overview/visual-cpp-samples.md), 목록와 같습니다.
 
 ```Example
 head ->   DLLHUSK.EXE   - or - DLLHUSK.EXE
@@ -339,7 +339,7 @@ head ->   DLLHUSK.EXE   - or - DLLHUSK.EXE
 
 MFCxx.DLL은 대개 마지막 리소스 및 클래스 목록에 있습니다. MFCxx.DLL 모든 프롬프트 문자열을 포함 하 여 모든 표준 명령 Id에 대 한 표준 MFC 리소스를 포함 합니다. Dll 및 클라이언트 응용 프로그램 자체에 없는 허용 목록 끝부분에 있는 배치를 자신의 복사본에는 공유의 리소스에 의존 MFCxx.DLL 대신 하지만 표준 MFC 리소스를 합니다.
 
-클라이언트 응용 프로그램의 네임 스페이스에 모든 Dll의 클래스 이름과 리소스를 병합 하는 것에 어떤 Id 주의 해야 하는 단점은 또는 이름을 선택할 수 있습니다. 물론이 기능을 해제 하면이 내보내지 중 하나에서 리소스 또는 `CDynLinkLibrary` 클라이언트 응용 프로그램 개체입니다. 합니다 [DLLHUSK](../visual-cpp-samples.md) 샘플에서는 여러 헤더 파일을 사용 하 여 공유 리소스 네임 스페이스를 관리 합니다. 참조 [기술 참고 35](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md) 추가 팁을 공유 리소스 파일을 사용 합니다.
+클라이언트 응용 프로그램의 네임 스페이스에 모든 Dll의 클래스 이름과 리소스를 병합 하는 것에 어떤 Id 주의 해야 하는 단점은 또는 이름을 선택할 수 있습니다. 물론이 기능을 해제 하면이 내보내지 중 하나에서 리소스 또는 `CDynLinkLibrary` 클라이언트 응용 프로그램 개체입니다. 합니다 [DLLHUSK](../overview/visual-cpp-samples.md) 샘플에서는 여러 헤더 파일을 사용 하 여 공유 리소스 네임 스페이스를 관리 합니다. 참조 [기술 참고 35](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md) 추가 팁을 공유 리소스 파일을 사용 합니다.
 
 ### <a name="initializing-the-dll"></a>DLL 초기화
 
@@ -369,7 +369,7 @@ extern "C" extern void WINAPI InitXxxDLL()
 
 시도 했다면 클래스 c + + 내보내기는 합니다. DEF 파일을이 목록에 자동으로 생성 하는 도구를 개발 하는 것이 좋습니다. 이렇게 하려면 링크 2 단계 프로세스를 사용 합니다. 내보내기가 없거나 한 번 사용 하 여 DLL에 연결 하 고 생성 하도록 링커에 허용을 합니다. 맵 파일입니다. 합니다. 일부 다시 정렬 사용 하 여이 사용할 수 있도록 내보내기 항목을 생성 하려면 내보내야 하는 함수의 목록을 생성 하려면 맵 파일 수에 합니다. DEF 파일입니다. OLE MFCxx.DLL 및 숫자에서 천 여러 데이터베이스 MFC 확장명 Dll 내보내기 목록 (완전히 자동 아니며 잠시에서 이따금 튜닝 일부 직접 필요) 있지만 해당 프로세스를 사용 하 여 생성 되었습니다.
 
-### <a name="cwinapp-vs-cdynlinklibrary"></a>CWinApp vs입니다. 그렇지 않으면 CDynLinkLibrary
+### <a name="cwinapp-vs-cdynlinklibrary"></a>CWinApp vs입니다. CDynLinkLibrary
 
 MFC 확장명 DLL 없는 `CWinApp`-파생 개체 자체의; 대신 사용 하 여 작동 해야 합니다는 `CWinApp`-클라이언트 응용 프로그램의 개체를 파생 합니다. 즉, 클라이언트 응용 프로그램 기본 메시지 펌프, 유휴 루프가 등 소유 합니다.
 
@@ -403,7 +403,7 @@ MFC의 공유 버전을 사용 하는 응용 프로그램을 몇 가지 간단�
 
 다음 단계 NAFXCWD 연결 올바르게 작동 MFC 응용 프로그램을 가정 합니다. (디버그)에 대 한 LIB 및 NAFXCW 합니다. (일반 정품)에 대 한 LIB 및 있습니다 MFC 라이브러리의 공유 버전을 사용 하도록 변환 하려고 합니다. Visual c + + 환경을 실행 중인 한 내부 프로젝트 파일이 있습니다.
 
-1. 에 **프로젝트** 메뉴에서 클릭 **속성**합니다. 에 **일반** 페이지의 **프로젝트 기본값**, Microsoft Foundation Classes로 **공유 DLL에서 MFC 사용** (MFCxx(d).dll) 합니다.
+1. **프로젝트** 메뉴에서 **속성**을 클릭합니다. 에 **일반** 페이지의 **프로젝트 기본값**, Microsoft Foundation Classes로 **공유 DLL에서 MFC 사용** (MFCxx(d).dll) 합니다.
 
 ### <a name="building-with-nmake"></a>NMAKE를 사용 하 여 빌드
 
@@ -411,7 +411,7 @@ Visual c + +의 외부 메이크파일 기능을 사용 하는 NMAKE를 직접 �
 
 컴파일러 플래그 필요합니다.
 
-- **/ D_AFXDLL /MD**
+- **/D_AFXDLL /MD**
    **/D_AFXDLL**
 
 표준 MFC 헤더에는이 기호를 정의할 필요 합니다.
@@ -432,7 +432,7 @@ Visual c + +의 외부 메이크파일 기능을 사용 하는 NMAKE를 직접 �
 
 변환할 MFCxx.DLL 사용할 이러한 샘플 중 하나를 로드할 수 있습니다 합니다. MAK Visual c + + 파일 및 위에서 설명한 대로 프로젝트 옵션을 설정 합니다. 사용할 경우 NMAKE 빌드를 지정할 수 있습니다 "AFXDLL = 1" NMAKE에서 명령줄을 사용 하는 예제를 빌드하려면 공유 MFC 라이브러리를 사용 하 여 합니다.
 
-MFC 고급 개념 샘플 [DLLHUSK](../visual-cpp-samples.md) MFC의 DLL 버전을 사용 하 여 빌드됩니다. 이 샘플에는 뿐만 아니라 MFCxx.DLL를 사용 하 여 연결 된 응용 프로그램을 빌드하는 방법을 보여 줍니다 하지만 다른 기능의 MFC 확장 Dll이 기술 노트의 뒷부분에 설명 된 같은 MFC DLL 패키징 옵션을 보여 줍니다.
+MFC 고급 개념 샘플 [DLLHUSK](../overview/visual-cpp-samples.md) MFC의 DLL 버전을 사용 하 여 빌드됩니다. 이 샘플에는 뿐만 아니라 MFCxx.DLL를 사용 하 여 연결 된 응용 프로그램을 빌드하는 방법을 보여 줍니다 하지만 다른 기능의 MFC 확장 Dll이 기술 노트의 뒷부분에 설명 된 같은 MFC DLL 패키징 옵션을 보여 줍니다.
 
 ### <a name="packaging-notes"></a>패키징 정보
 

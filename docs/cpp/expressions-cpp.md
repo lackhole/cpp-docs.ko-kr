@@ -5,12 +5,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - expressions [C++]
 ms.assetid: aaa1f250-7185-4113-b682-3f5e995943d1
-ms.openlocfilehash: d0d509341cd63b9a5e2a13271a2e799c95f44df9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c2dc4f1654b7e76bf9506f82d6d613684258c174
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50458762"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771372"
 ---
 # <a name="expressions-c"></a>식 (C++)
 
@@ -48,7 +48,7 @@ C++에서는 연산자를 오버로드할 수 있으며 해당 의미는 사용�
 
 - [오버로드된 연산자](../cpp/operator-overloading.md)
 
-- [typeid(C++ 구성 요소 확장)](../windows/typeid-cpp-component-extensions.md)
+- [typeid](../extensions/typeid-cpp-component-extensions.md) (C + + /cli CLI)
 
     > [!NOTE]
     >  기본 제공 형식에 대한 연산자를 오버 로드할 수 없으며 해당 동작은 미리 정의되어 있습니다.

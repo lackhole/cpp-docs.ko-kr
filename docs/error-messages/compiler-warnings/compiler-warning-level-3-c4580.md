@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4580
 ms.assetid: fef6e8e0-0d6a-44fa-b22a-2fe7ba2ef379
-ms.openlocfilehash: e215dc98f62a90325e83068a640b0503a612c434
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd2ecff5adc6538f75c61772b785acbfc89092ae
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50427809"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781772"
 ---
 # <a name="compiler-warning-level-3-c4580"></a>컴파일러 경고(수준 3) C4580
 
 [attribute]는 사용되지 않습니다. 대신 System::Attribute or Platform::Metadata를 기본 클래스로 지정합니다.
 
-[[특성](../../windows/attributes/attribute.md)] 사용자 정의 특성을 만들기 위한 기본 구문은 더 이상. 자세한 내용은 [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md)을 참조하세요. CLR 코드의 경우 `System::Attribute`에서 특성을 파생시킵니다. Windows 런타임 코드의 경우 `Platform::Metadata`에서 특성을 파생시킵니다.
+[[특성](../../windows/attributes/attribute.md)] 사용자 정의 특성을 만들기 위한 기본 구문은 더 이상. 자세한 내용은 [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md)을 참조하세요. CLR 코드의 경우 `System::Attribute`에서 특성을 파생시킵니다. Windows 런타임 코드의 경우 `Platform::Metadata`에서 특성을 파생시킵니다.
 
 ## <a name="example"></a>예제
 

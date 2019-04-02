@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Delegate Class
 ms.assetid: 82b21271-768f-4193-9ca2-be68ddfd546e
-ms.openlocfilehash: 6a509827b3b8e14b6d28995b5b4ca468ee9a662e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 4116de3240c3ef334db51095997f946731372708
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741178"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769240"
 ---
 # <a name="platformdelegate-class"></a>Platform::Delegate 클래스
 
@@ -30,7 +30,7 @@ Delegate 클래스에는 [Platform::Object Class](../cppcx/platform-object-class
 
 ### <a name="remarks"></a>설명
 
-[delegate](../windows/delegate-cpp-component-extensions.md) 키워드를 사용하여 대리자를 만듭니다. Platform::Delegate를 명시적으로 사용하지 마세요. 자세한 내용은 [대리자](../cppcx/delegates-c-cx.md)를 참조하세요. 대리자를 만들고 사용하는 방법에 대한 예제는 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)를 참조하세요.
+[delegate](../extensions/delegate-cpp-component-extensions.md) 키워드를 사용하여 대리자를 만듭니다. Platform::Delegate를 명시적으로 사용하지 마세요. 자세한 내용은 [대리자](../cppcx/delegates-c-cx.md)를 참조하세요. 대리자를 만들고 사용하는 방법에 대한 예제는 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - drag and drop [MFC], about OLE drag and drop
 - OLE drag and drop [MFC]
 ms.assetid: a4595350-ca06-4400-88a1-f0175c76b77b
-ms.openlocfilehash: 277f82874426a008f598c052966ad81f46c45732
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 98bd58745e56a62bf5700e9b5fe4963a7b584953
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305044"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766809"
 ---
 # <a name="drag-and-drop-ole"></a>끌어서 놓기(OLE)
 
@@ -26,7 +26,7 @@ OLE 끌어서 놓기를 사용 하면 프로세스에서 두 단계를 제거 �
 
 OLE 끌어서 놓기 사용 데이터 전송할 수 있습니다 한 위치에서 다른 응용 프로그램 간 또는 서로 다른 문서는 문서 내입니다. 컨테이너 또는 서버 응용 프로그램을 구현할 수 있습니다 하 고 모든 응용 프로그램 놓기 소스, 놓기 대상 또는 둘 다를 수 있습니다. 응용 프로그램에서 지원할 경우에 놓기 소스와 놓기 대상 구현, 끌어서 놓기 자식 창 사이 또는 단일 창에서 사용 됩니다. 이 기능은 가능 응용 프로그램 사용 하기가 훨씬 쉬워졌습니다.
 
-OLE 끌어서 놓기 기능을 사용 하려는 경우 참조 [끌어다 놓습니다. 사용자 지정](../mfc/drag-and-drop-customizing.md)합니다. 놓기 소스 비 OLE 응용 프로그램에 해당 문서에 설명 된 기법을 사용할 수 있습니다. 문서 [끌어다 놓습니다. 놓기 대상 구현](../mfc/drag-and-drop-implementing-a-drop-target.md) OLE 응용 프로그램과 비 OLE 응용 프로그램에 대 한 대상 놓기 지원을 구현 하는 방법에 설명 합니다. MFC OLE 샘플을 검사 하는 데 도움이 됩니다 [OCLIENT](../visual-cpp-samples.md) 하 고 [HIERSVR](../visual-cpp-samples.md)합니다.
+OLE 끌어서 놓기 기능을 사용 하려는 경우 참조 [끌어다 놓습니다. 사용자 지정](../mfc/drag-and-drop-customizing.md)합니다. 놓기 소스 비 OLE 응용 프로그램에 해당 문서에 설명 된 기법을 사용할 수 있습니다. 문서 [끌어다 놓습니다. 놓기 대상 구현](../mfc/drag-and-drop-implementing-a-drop-target.md) OLE 응용 프로그램과 비 OLE 응용 프로그램에 대 한 대상 놓기 지원을 구현 하는 방법에 설명 합니다. MFC OLE 샘플을 검사 하는 데 도움이 됩니다 [OCLIENT](../overview/visual-cpp-samples.md) 하 고 [HIERSVR](../overview/visual-cpp-samples.md)합니다.
 
 읽지 않은 경우는 [데이터 개체 및 데이터 소스 (OLE)](../mfc/data-objects-and-data-sources-ole.md) 지금 하려는 아티클의 제품군입니다. 이 문서에서는 데이터 전송 및 응용 프로그램에서 구현 하는 방법의 기본적인 사항을 설명 합니다.
 

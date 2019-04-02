@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4570
 ms.assetid: feec1225-e6ad-4995-8d96-c22e864a77bd
-ms.openlocfilehash: 1c92bd7f632ea6662c3cee1bcaa1dd0c917fb2a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 386d7c210c77469d67a75d66f7d8ae35c105b3b0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661307"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767464"
 ---
 # <a name="compiler-warning-level-3-c4570"></a>컴파일러 경고(수준 3) C4570
 
 'type': 명시적으로 선언 되지 추상 않았지만 추상 함수를가지고
 
-포함 하는 형식을 [추상](../../windows/abstract-cpp-component-extensions.md) 함수 자체 될 추상으로 표시 되어야 합니다.
+포함 하는 형식을 [추상](../../extensions/abstract-cpp-component-extensions.md) 함수 자체 될 추상으로 표시 되어야 합니다.
 
 ## <a name="example"></a>예제
 

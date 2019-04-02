@@ -4,19 +4,19 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-ms.openlocfilehash: 83800f823ffd14fd61a9735b09b12d2f07f6d0a4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bcb7784e59966510970bd9b3ae0157ae982e462d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477989"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768070"
 ---
 # <a name="new-operator-c"></a>new 연산자 (C++)
 
 개체의 배열 또는 개체에 대 한 메모리를 할당 *형식 이름을* 무료에서 저장 하 고 개체에는 적절 한 형식의 0이 아닌 포인터를 반환 합니다.
 
 > [!NOTE]
->  Microsoft c + + 구성 요소 확장에 대 한 지원을 제공 합니다 **새** vtable 슬롯 항목을 추가 하는 키워드입니다. 자세한 내용은 참조 하세요. [new (의 new 슬롯 vtable)](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)
+>  Microsoft c + + 구성 요소 확장에 대 한 지원을 제공 합니다 **새** vtable 슬롯 항목을 추가 하는 키워드입니다. 자세한 내용은 참조 하세요. [new (의 new 슬롯 vtable)](../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
 
 ## <a name="syntax"></a>구문
 
@@ -29,7 +29,7 @@ ms.locfileid: "50477989"
 
 실패 하면 **새** 0을 반환 하거나 예외를 throw를 참조 하세요 [새 및 delete 연산자](../cpp/new-and-delete-operators.md) 자세한 내용은 합니다. 사용자 지정 예외 처리 루틴을 작성 하 고 호출 하 여이 기본 동작을 변경할 수는 [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) 런타임 라이브러리 함수를 인수로 서 함수 이름과 함께 합니다.
 
-관리 되는 힙에서 개체를 만드는 방법에 대 한 자세한 내용은 [gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md)합니다.
+관리 되는 힙에서 개체를 만드는 방법에 대 한 자세한 내용은 [gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md)합니다.
 
 때 **새** 는 c + + 클래스 개체에 대 한 메모리를 할당 하는 데, 개체의 생성자가 호출 된 메모리를 할당 한 후입니다.
 
@@ -61,7 +61,7 @@ delete *p;
 
 다음 목록은 문법 요소의 **새**:
 
-*배치*<br/>
+*placement*<br/>
 오버 로드 하는 경우 추가 인수를 전달 하는 방법을 제공 **새**합니다.
 
 *type-name*<br/>
@@ -189,7 +189,7 @@ int main()
 
 메모리 할당이 실패 하는 경우 (**new 연산자** 0 값을 반환), 초기화가 수행 됩니다. 존재하지 않는 데이터를 초기화하려는 시도를 막을 수 있습니다.
 
-함수 호출과 마찬가지로 초기화된 식이 계산되는 순서가 정의되지 않습니다. 또한 메모리 할당을 수행하기 전에 완전히 계산되는 이 식에 의존하지 마세요. 메모리 할당이 실패 하는 경우와 **새** 0을 반환 하는 연산자, 이니셜라이저의 일부 식이 완전히 계산 되지 않을 수 있습니다.
+함수 호출과 마찬가지로 초기화된 식이 계산되는 순서가 정의되지 않습니다. 또한 메모리 할당을 수행하기 전에 완전히 계산되는 이 식에 의존하지 마십시오. 메모리 할당이 실패 하는 경우와 **새** 0을 반환 하는 연산자, 이니셜라이저의 일부 식이 완전히 계산 되지 않을 수 있습니다.
 
 ## <a name="lifetime-of-objects-allocated-with-new"></a>new로 할당된 개체 수명
 
@@ -255,5 +255,5 @@ T *TObject =::new TObject;
 ## <a name="see-also"></a>참고자료
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [새 및 delete 연산자](../cpp/new-and-delete-operators.md)

@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CPropertyPage [MFC], SetModified
 - CPropertyPage [MFC], m_psp
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
-ms.openlocfilehash: ef46001e230813afb0abb857b7aee39bf5fba05d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9d4100037c5a6cd2eeef1a50fb2d5a46b2cb6505
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260753"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772725"
 ---
 # <a name="cpropertypage-class"></a>CPropertyPage 클래스
 
@@ -574,10 +574,10 @@ void SetModified(BOOL bChanged = TRUE);
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 PROPDLG](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 PROPDLG](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CDialog 클래스](../../mfc/reference/cdialog-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CPropertySheet 클래스](../../mfc/reference/cpropertysheet-class.md)<br/>

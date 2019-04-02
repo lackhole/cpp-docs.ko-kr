@@ -1,6 +1,6 @@
 ---
-title: Visual Studio에서 속성을 빌드하고 c + + 컴파일러를 설정 합니다.
-description: C + + 컴파일러 및 링커 옵션과 기타 빌드 설정을 변경 하려면 Visual Studio IDE를 사용 합니다.
+title: Visual Studio에서 속성을 빌드하고 C++ 컴파일러를 설정 합니다.
+description: C++ 컴파일러 및 링커 옵션과 기타 빌드 설정을 변경 하려면 Visual Studio IDE를 사용 합니다.
 ms.date: 03/27/2019
 helpviewer_keywords:
 - project properties [C++], modifying
@@ -51,11 +51,11 @@ IDE에서 프로젝트를 빌드하는 데 필요한 모든 정보는 *속성*�
 - [디버깅 준비: Visual c + + 프로젝트 형식](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
 - [Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)
 
-## <a name="c-compiler-and-linker-options"></a>C + + 컴파일러 및 링커 옵션
+## <a name="c-compiler-and-linker-options"></a>C++ 컴파일러 및 링커 옵션
 
-C + + 컴파일러 및 링커 옵션은 아래에 **C/c + +** 하 고 **링커** 노드 아래의 왼쪽된 창에서 **구성 속성**합니다. 이러한 컴파일러에 전달 되는 명령줄 옵션에 직접 변환 합니다. 특정 옵션에 대 한 설명서를 읽으려면 누릅니다 가운데 창에서 옵션을 선택 **F1**합니다. 또는에서 모든 옵션에 대 한 설명서를 찾아볼 수 있습니다 [MSVC 컴파일러 옵션](reference/compiler-options.md) 하 고 [MSVC 링커 옵션](reference/linker-options.md)합니다. 
+C++ 컴파일러 및 링커 옵션은 아래에 **C/C++** 하 고 **링커** 노드 아래의 왼쪽된 창에서 **구성 속성**합니다. 이러한 컴파일러에 전달 되는 명령줄 옵션에 직접 변환 합니다. 특정 옵션에 대 한 설명서를 읽으려면 누릅니다 가운데 창에서 옵션을 선택 **F1**합니다. 또는에서 모든 옵션에 대 한 설명서를 찾아볼 수 있습니다 [MSVC 컴파일러 옵션](reference/compiler-options.md) 하 고 [MSVC 링커 옵션](reference/linker-options.md)합니다. 
 
-합니다 **속성 페이지** 대화 상자에는 현재 프로젝트에 관련 된 속성 페이지를 표시 합니다. 예를 들어, 프로젝트에 .idl 파일이 없는 경우 MIDL 속성 페이지가 표시되지 않습니다. 각 속성 페이지 설정에 대 한 자세한 내용은 참조 [속성 페이지 (c + +)](reference/property-pages-visual-cpp.md)합니다. 
+합니다 **속성 페이지** 대화 상자에는 현재 프로젝트에 관련 된 속성 페이지를 표시 합니다. 예를 들어, 프로젝트에 .idl 파일이 없는 경우 MIDL 속성 페이지가 표시되지 않습니다. 각 속성 페이지 설정에 대 한 자세한 내용은 참조 [속성 페이지 (C++)](reference/property-pages-visual-cpp.md)합니다. 
 
 ## <a name="directory-and-path-values"></a>디렉터리 및 경로 값
 

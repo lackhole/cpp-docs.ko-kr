@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CSettingsStore [MFC], Read
 - CSettingsStore [MFC], Write
 ms.assetid: 0ea181de-a13e-4b29-b560-7c43838223ff
-ms.openlocfilehash: 1de26ceedfd29f276693be512bd41f169fb44b94
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1e1373da86c1c3fea3b1ddd6ff17f0fac4f76980
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274546"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770397"
 ---
 # <a name="csettingsstore-class"></a>CSettingsStore Class
 
@@ -65,7 +65,7 @@ class CSettingsStore : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 열기 및 읽기 메서드를 사용 하는 방법에 설명 합니다 `CSettingsStore` 클래스입니다. 이 코드 조각은의 일부인 합니다 [도구 팁 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 열기 및 읽기 메서드를 사용 하는 방법에 설명 합니다 `CSettingsStore` 클래스입니다. 이 코드 조각은의 일부인 합니다 [도구 팁 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_ToolTipDemo#1](../../mfc/reference/codesnippet/cpp/csettingsstore-class_1.cpp)]
 

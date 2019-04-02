@@ -92,12 +92,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCVisualManagerOffice2003 Class [MFC]
 ms.assetid: 115482cd-e349-450a-8dc4-c6023d092aab
-ms.openlocfilehash: c3b0a031db8ff843bb43f7dfa69f046d6ae99a96
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: dd62ea4073ae1982f01a279a411c8d11e8e5cec3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273272"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776208"
 ---
 # <a name="cmfcvisualmanageroffice2003-class"></a>CMFCVisualManagerOffice2003 클래스
 
@@ -207,7 +207,7 @@ class CMFCVisualManagerOffice2003 : public CMFCVisualManagerOfficeXP
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 office 2003 비주얼 관리자를 설정 하는 방법에 설명 합니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 office 2003 비주얼 관리자를 설정 하는 방법에 설명 합니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#6](../../mfc/reference/codesnippet/cpp/cmfcvisualmanageroffice2003-class_1.cpp)]
 

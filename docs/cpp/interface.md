@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __interface keyword [C++]
 ms.assetid: ca5d400b-d6d8-4ba2-89af-73f67e5ec056
-ms.openlocfilehash: 33a3d45f65ab5adf798a2b0f6b11191e6f6a0213
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1ec3a1d2cddbf8dbbb248a7366d5d56dd95ad074
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573545"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768317"
 ---
 # <a name="interface"></a>__interface
 
@@ -50,7 +50,7 @@ __interface IMyInterface {
 };
 ```
 
-관리되는 인터페이스에 대한 자세한 내용은 [인터페이스 클래스](../windows/interface-class-cpp-component-extensions.md)를 참조하십시오.
+관리되는 인터페이스에 대한 자세한 내용은 [인터페이스 클래스](../extensions/interface-class-cpp-component-extensions.md)를 참조하십시오.
 
 `CommitX` 및 `get_X` 함수가 순수 가상 함수임을 명시적으로 나타낼 필요가 없습니다. 첫 번째 함수에 대한 동일한 선언은 다음과 같습니다.
 

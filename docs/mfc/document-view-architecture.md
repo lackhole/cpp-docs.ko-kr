@@ -12,12 +12,12 @@ helpviewer_keywords:
 - documents [MFC], MFC document/view model
 - document objects [MFC], document/view architecture
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-ms.openlocfilehash: ec933d29474695c1b94b72e712d68a9b3a08bd4e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d1b1f80f44fdc66a3174ea75c15e139f98a4520b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326584"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775545"
 ---
 # <a name="documentview-architecture"></a>문서/뷰 아키텍처
 
@@ -80,7 +80,7 @@ MFC 문서/뷰 아키텍처 쉽게 여러 뷰, 여러 문서 형식, 분할 창 
 
 - [문서 및 뷰 하지 않는 데이터베이스 클래스 사용](../data/mfc-using-database-classes-without-documents-and-views.md)
 
-- [샘플](../visual-cpp-samples.md)
+- [샘플](../overview/visual-cpp-samples.md)
 
 ## <a name="see-also"></a>참고자료
 
