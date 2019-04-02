@@ -5,12 +5,12 @@ helpviewer_keywords:
 - structs [C++]
 - classes [C++], instantiating
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
-ms.openlocfilehash: 2c43234ca05c661d8f3d920b1129256a7550a5e2
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 090259a4ad6b46eccf66dca6c99b4eb532b7ae5c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751832"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774921"
 ---
 # <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>방법: 클래스 및 구조체 정의 및 사용 (C + + /cli CLI)
 
@@ -97,7 +97,7 @@ int main() {
 
 *암시적 추상 클래스* 인스턴스화할 수 없습니다. 클래스의 기본 형식이 인터페이스이며 클래스가 인터페이스의 모든 멤버 함수를 구현하지 않는 경우 클래스는 암시적 추상입니다.
 
-인터페이스에서 파생된 클래스의 개체를 만들 수 없는 경우 해당 이유는 클래스가 암시적 추상이기 때문입니다. 추상 클래스에 대 한 자세한 내용은 참조 하세요. [추상](../windows/abstract-cpp-component-extensions.md)합니다.
+인터페이스에서 파생된 클래스의 개체를 만들 수 없는 경우 해당 이유는 클래스가 암시적 추상이기 때문입니다. 추상 클래스에 대 한 자세한 내용은 참조 하세요. [추상](../extensions/abstract-cpp-component-extensions.md)합니다.
 
 다음 코드 예제는 `MyClass` 함수가 구현되지 않아서 `MyClass::func2` 클래스를 인스턴스화할 수 없음을 보여 줍니다. 해당 예제를 컴파일하려면 `MyClass::func2`의 주석 처리를 제거하십시오.
 
@@ -220,8 +220,7 @@ in Public_Class
 
 ##  <a name="BKMK_Member_visibility"></a> 멤버 표시 유형
 
-
-  `public`, `protected` 및 `private` 액세스 지정자 쌍을 사용하여 어셈블리 외부에서 public 클래스의 멤버에 액세스하는 것과 다르게 동일한 어셈블리 내에서 public 클래스의 멤버에 액세스할 수 있습니다.
+`public`, `protected` 및 `private` 액세스 지정자 쌍을 사용하여 어셈블리 외부에서 public 클래스의 멤버에 액세스하는 것과 다르게 동일한 어셈블리 내에서 public 클래스의 멤버에 액세스할 수 있습니다.
 
 이 표에서는 다양한 액세스 지정자의 효과를 요약하여 보여 줍니다.
 
@@ -230,7 +229,7 @@ in Public_Class
 |public|멤버는 어셈블리 내부 및 외부에서 액세스할 수 있습니다.  참조 [공용](../cpp/public-cpp.md) 자세한 내용은 합니다.|
 |private|멤버는 어셈블리 내부 및 외부 모두에서 액세스할 수 없습니다.  참조 [개인](../cpp/private-cpp.md) 자세한 내용은 합니다.|
 |protected|멤버는 파생된 형식에 한해 어셈블리 내부 및 외부에서 액세스할 수 있습니다.  참조 [보호](../cpp/protected-cpp.md) 자세한 내용은 합니다.|
-|internal|멤버가는 어셈블리 내부에서 public 이지만 어셈블리 외부에서는 private입니다.  `internal`는 상황에 맞는 키워드입니다.  자세한 내용은 [상황에 맞는 키워드](../windows/context-sensitive-keywords-cpp-component-extensions.md)합니다.|
+|internal|멤버가는 어셈블리 내부에서 public 이지만 어셈블리 외부에서는 private입니다.  `internal`는 상황에 맞는 키워드입니다.  자세한 내용은 [상황에 맞는 키워드](../extensions/context-sensitive-keywords-cpp-component-extensions.md)합니다.|
 |공용 보호 또는 보호 된 공용|멤버는 어셈블리 내부에서 public이지만 어셈블리 외부에서는 protected입니다.|
 |개인 보호 또는 보호 된 개인|멤버는 어셈블리 내부에서 protected이지만 어셈블리 외부에서는 private입니다.|
 
@@ -500,9 +499,9 @@ Visual C++를 사용하여 형식을 정의하는 경우 참조 형식에서 `th
 
 자세한 내용은 다음 항목을 참조하세요.
 
-- [개체 연산자 (^)에 대 한 핸들](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)
+- [개체 연산자 (^)에 대 한 핸들](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)
 
-- [interior_ptr(C++/CLI)](../windows/interior-ptr-cpp-cli.md)
+- [interior_ptr(C++/CLI)](../extensions/interior-ptr-cpp-cli.md)
 
 ```cpp
 // compile with: /clr
@@ -735,8 +734,7 @@ class classname {
 
 CLR 가비지 수집기는 사용하지 않은 관리되는 개체를 삭제하고 더 이상 필요하지 않은 경우 메모리를 해제합니다. 그러나 형식에서 가비지 수집기가 해제하는 방법을 알지 못하는 리소스를 사용할 수도 있습니다. 이러한 리소스를 관리되지 않는 리소스(예: 네이티브 파일 핸들)라고 합니다. 종료자에서 관리되지 않는 리소스는 모두 해제하는 것이 좋습니다. 관리되는 리소스는 가비지 수집기에 의해 불명확하게 해제되므로 종료자에서 관리되는 리소스가 안전하다고 할 수 없습니다. 이는 가비지 수집기가 이미 관리되는 리소스를 정리했을 수도 있기 때문입니다.
 
-Visual C++ 종료자와 <xref:System.Object.Finalize%2A> 메서드는 같지 않습니다. CLR 문서는 종료자와 <xref:System.Object.Finalize%2A> 메서드를 같은 뜻으로 사용합니다. 
-  <xref:System.Object.Finalize%2A> 메서드는 클래스 상속 체인의 각 종료자를 호출하는 가비지 수집기에 의해 호출됩니다. Visual C++ 소멸자와 달리 파생 클래스 종료자가 호출되면 컴파일러는 모든 기본 클래스의 종료자를 호출하지 않습니다.
+Visual C++ 종료자와 <xref:System.Object.Finalize%2A> 메서드는 같지 않습니다. CLR 문서는 종료자와 <xref:System.Object.Finalize%2A> 메서드를 같은 뜻으로 사용합니다. <xref:System.Object.Finalize%2A> 메서드는 클래스 상속 체인의 각 종료자를 호출하는 가비지 수집기에 의해 호출됩니다. Visual C++ 소멸자와 달리 파생 클래스 종료자가 호출되면 컴파일러는 모든 기본 클래스의 종료자를 호출하지 않습니다.
 
 Visual C++ 컴파일러는 리소스의 명확한 해제를 지원하므로 <xref:System.IDisposable.Dispose%2A> 또는 <xref:System.Object.Finalize%2A> 메서드를 구현하지 마십시오. 그러나 이러한 메서드에 익숙한 경우 Visual C++ 종료자 및 소멸자가 <xref:System.IDisposable.Dispose%2A> 패턴에 매핑하도록 종료자를 호출하는 방법은 다음과 같습니다.
 
@@ -787,8 +785,7 @@ ref struct A {
 
 소멸자의 존재가 종료자의 존재를 의미하지는 않습니다. 그러나 종료자의 존재는 소멸자를 정의해야 하고 해당 소멸자에서 종료자를 호출해야 함을 의미합니다. 이는 관리되지 않은 리소스의 명확한 해제를 제공합니다.
 
-
-  <xref:System.GC.SuppressFinalize%2A>를 통해 소멸자를 호출하여 개체의 종료를 막습니다. 소멸자가 호출되지 않으면 해당 형식의 종료자가 결국 가비지 수집기에 의해 호출됩니다.
+<xref:System.GC.SuppressFinalize%2A>를 통해 소멸자를 호출하여 개체의 종료를 막습니다. 소멸자가 호출되지 않으면 해당 형식의 종료자가 결국 가비지 수집기에 의해 호출됩니다.
 
 소멸자를 호출하여 개체의 리소스를 명확하게 정리하면 CLR이 불명확하게 개체를 종료하는 것에 비해 성능을 향상시킬 수 있습니다.
 
@@ -800,14 +797,13 @@ Visual c + +로 작성 된 개이고 사용 하 여 컴파일된 코드 **/clr**
 
 - 개체가 소멸자를 실행 중인 개체의 멤버인 경우
 
-- 호출 된 [삭제](../cpp/delete-operator-cpp.md) 핸들에 대 한 연산자 ([개체 연산자 (^)에 대 한 핸들](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)).
+- 호출 된 [삭제](../cpp/delete-operator-cpp.md) 핸들에 대 한 연산자 ([개체 연산자 (^)에 대 한 핸들](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)).
 
 - 명시적으로 소멸자를 호출한 경우
 
 다른 언어로 작성된 클라이언트에 의해 형식이 사용 중인 경우 소멸자가 다음과 같이 호출됩니다.
 
-- 
-  <xref:System.IDisposable.Dispose%2A>에 대한 호출인 경우
+- <xref:System.IDisposable.Dispose%2A>에 대한 호출인 경우
 
 - 형식의 `Dispose(void)`에 대한 호출인 경우
 
@@ -848,7 +844,7 @@ int main() {
 
 종료자가 관리되는 형식에서 네이티브 포인터를 삭제한 경우에는 네이티브 포인터에 대한 또는 네이티브 포인터를 통한 참조가 이미 수집되었는지 확인하고 <xref:System.GC.KeepAlive%2A>를 사용하는 대신 관리되는 형식에서 소멸자를 호출합니다.
 
-컴파일 타임에서 형식에 종료자 또는 소멸자가 있는지 확인할 수 있습니다. 자세한 내용은 [형식 특성에 대 한 컴파일러 지원](../windows/compiler-support-for-type-traits-cpp-component-extensions.md)합니다.
+컴파일 타임에서 형식에 종료자 또는 소멸자가 있는지 확인할 수 있습니다. 자세한 내용은 [형식 특성에 대 한 컴파일러 지원](../extensions/compiler-support-for-type-traits-cpp-component-extensions.md)합니다.
 
 다음 샘플은 관리되지 않은 리소스가 있는 형식과 명확하게 해제된 관리되는 리소스가 있는 형식을 보여 줍니다.
 
@@ -918,5 +914,5 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[클래스 및 구조체(C++)](../windows/classes-and-structs-cpp-component-extensions.md)<br/>
-[클래스 및 구조체(C++)](../windows/classes-and-structs-cpp-component-extensions.md)
+[클래스 및 구조체(C++)](../extensions/classes-and-structs-cpp-component-extensions.md)<br/>
+[클래스 및 구조체(C++)](../extensions/classes-and-structs-cpp-component-extensions.md)

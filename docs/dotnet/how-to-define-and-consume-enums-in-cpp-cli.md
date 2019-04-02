@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - enum class, specifying underlying types
 ms.assetid: df8f2b91-b9d2-4fab-9be4-b1d58b8bc570
-ms.openlocfilehash: 0252c4b64690f6a2fb0fd97b97841fe45fcce244
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 9787b7b96f83b2926c65209254c88eb56fe1a8ab
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751455"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774739"
 ---
 # <a name="how-to-define-and-consume-enums-in-ccli"></a>방법: C + 열거형 정의 및 사용 + CLI
 
@@ -92,7 +92,7 @@ a and day2 are the same
 컴파일러는 정적 또는 동적을 확인 하지 않고 결과 enum 작업의 열거형의 유효한 열거자의 범위에 없는 값을 작업이 될 수 있습니다.
 
 > [!NOTE]
->  C + + 11에서는 C + 관리 되는 enum 클래스와 크게 다르지는 비관리 코드에서 enum 클래스 형식이 도입 되었습니다. + CLI입니다. 특히 C + + 11 열거형 클래스 형식이 연산자 지원 하지 않습니다는 동일한 관리 되는 열거형 클래스 형식으로 C + + /cli CLI 및 C + + 소스 코드 제공 해야 관리 되는 열거형의 액세스 가능성 한정자는 클래스 선언 비관리 (c + +에서 구별 하기 위해 11) 열거형 클래스 선언입니다. C + enum 클래스에 대 한 자세한 내용은 + CLI, C + + /CX 및 C + + 11 참조 [enum 클래스](../windows/enum-class-cpp-component-extensions.md)합니다.
+>  C + + 11에서는 C + 관리 되는 enum 클래스와 크게 다르지는 비관리 코드에서 enum 클래스 형식이 도입 되었습니다. + CLI입니다. 특히 C + + 11 열거형 클래스 형식이 연산자 지원 하지 않습니다는 동일한 관리 되는 열거형 클래스 형식으로 C + + /cli CLI 및 C + + 소스 코드 제공 해야 관리 되는 열거형의 액세스 가능성 한정자는 클래스 선언 비관리 (c + +에서 구별 하기 위해 11) 열거형 클래스 선언입니다. C + enum 클래스에 대 한 자세한 내용은 + CLI, C + + /CX 및 C + + 11 참조 [enum 클래스](../extensions/enum-class-cpp-component-extensions.md)합니다.
 
 ```
 // mcppv2_enum_5.cpp
@@ -137,4 +137,4 @@ True
 
 ## <a name="see-also"></a>참고자료
 
-[enum 클래스](../windows/enum-class-cpp-component-extensions.md)
+[enum 클래스](../extensions/enum-class-cpp-component-extensions.md)

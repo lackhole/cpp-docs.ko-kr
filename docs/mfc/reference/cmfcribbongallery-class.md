@@ -78,12 +78,12 @@ helpviewer_keywords:
 - CMFCRibbonGallery [MFC], SetPaletteID
 - CMFCRibbonGallery [MFC], OnDrawPaletteIcon
 ms.assetid: 9734c9c9-981c-4b3f-8c59-264fd41811b4
-ms.openlocfilehash: aa2996cba7d4839387d5801d2bab70b428134db4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 818ce55e44d91520e568308a1a1e8a1fa0c8658d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298635"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780394"
 ---
 # <a name="cmfcribbongallery-class"></a>CMFCRibbonGallery 클래스
 
@@ -155,7 +155,7 @@ class CMFCRibbonGallery : public CMFCRibbonButton
 
 ## <a name="example"></a>예제
 
-다음 예제에서 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CMFCRibbonGallery` 구성 하는 클래스를 `CMFCRibbonGallery` 개체입니다. 예제에는 갤러리에서 행당 항목 수가 지정, 메뉴 패널의 크기 조정 가능, 팝업 메뉴의 왼쪽 세로 막대를 사용 하도록 설정 및 리본 표시줄에서 직접 색상표도 리본 갤러리를 표시 하는 방법을 보여 줍니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../visual-cpp-samples.md)의 일부입니다.
+다음 예제에서 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CMFCRibbonGallery` 구성 하는 클래스를 `CMFCRibbonGallery` 개체입니다. 예제에는 갤러리에서 행당 항목 수가 지정, 메뉴 패널의 크기 조정 가능, 팝업 메뉴의 왼쪽 세로 막대를 사용 하도록 설정 및 리본 표시줄에서 직접 색상표도 리본 갤러리를 표시 하는 방법을 보여 줍니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_DrawClient#6](../../mfc/reference/codesnippet/cpp/cmfcribbongallery-class_1.cpp)]
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4972
 ms.assetid: d18e8e65-b2ef-4d75-a207-fbd0c17c9060
-ms.openlocfilehash: dcf08f26809c7c61e3e00c41c555416c95f4a0e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7c58258298fb91d04014e719732135a1f33f13b6
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598837"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777079"
 ---
 # <a name="compiler-warning-c4972"></a>컴파일러 경고 C4972
 
@@ -19,7 +19,7 @@ ms.locfileid: "50598837"
 
 핸들을 값 형식으로 역참조(unboxing이라고도 함)한 후 할당하는 작업을 확인할 수 없습니다.
 
-자세한 내용은 [boxing](../../windows/boxing-cpp-component-extensions.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.
+자세한 내용은 [boxing](../../extensions/boxing-cpp-component-extensions.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.
 
 ## <a name="example"></a>예제
 

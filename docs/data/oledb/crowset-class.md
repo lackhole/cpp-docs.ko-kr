@@ -238,12 +238,12 @@ helpviewer_keywords:
 - Update method
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-ms.openlocfilehash: 4a24dada2f1211138449e65a8865810a46230970
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: eda4bb09865698a657828c6d4684a8df92ffe9b6
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58329015"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779458"
 ---
 # <a name="crowset-class"></a>CRowset 클래스
 
@@ -534,7 +534,7 @@ HRESULT GetDataHere(int nAccessor,
 
 ### <a name="remarks"></a>설명
 
-이 함수를 사용 하는 방법의 예제를 참조 합니다 [MultiRead 샘플](../../visual-cpp-samples.md)합니다.
+이 함수를 사용 하는 방법의 예제를 참조 합니다 [MultiRead 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="getoriginaldata"></a> CRowset::GetOriginalData
 
@@ -937,8 +937,8 @@ HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,
 
 ## <a name="see-also"></a>참고 항목
 
-[DBViewer 샘플](../../visual-cpp-samples.md)<br/>
-[MultiRead 샘플](../../visual-cpp-samples.md)<br/>
-[MultiRead 특성 샘플](../../visual-cpp-samples.md)<br/>
+[DBViewer 샘플](../../overview/visual-cpp-samples.md)<br/>
+[MultiRead 샘플](../../overview/visual-cpp-samples.md)<br/>
+[MultiRead 특성 샘플](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

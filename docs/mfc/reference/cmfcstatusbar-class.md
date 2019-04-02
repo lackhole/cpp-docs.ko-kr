@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CMFCStatusBar [MFC], SetTipText
 - CMFCStatusBar [MFC], OnDrawPane
 ms.assetid: f2960d1d-f4ed-41e8-bd99-0382b2f8d88e
-ms.openlocfilehash: 94876dcf6549842a5fedbd96a93ef2cc760225ce
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 87f75769e2f400a7721a8c9089d6c5596c31a4e3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326753"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775961"
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar 클래스
 
@@ -138,26 +138,26 @@ class CMFCStatusBar : public CPane
 
 ## <a name="remarks"></a>설명
 
-다음 다이어그램에서 상태 표시줄의 그림을 보여 줍니다 [상태 표시줄 데모 샘플](../../visual-cpp-samples.md) 응용 프로그램입니다.
+다음 다이어그램에서 상태 표시줄의 그림을 보여 줍니다 [상태 표시줄 데모 샘플](../../overview/visual-cpp-samples.md) 응용 프로그램입니다.
 
 ![CMFCStatusBar의 예제](../../mfc/reference/media/cmfcstatusbar.png "CMFCStatusBar의 예제")
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 응용 프로그램의 다양 한 메서드를 호출 하는 데 사용 하는 지역 변수는 `CMFCStatusBar` 클래스입니다. 이러한 변수는 StatusBarDemoView.h에서 선언 됩니다. 주 프레임 MainFrm.h에 선언 된, StatusBarDemoDoc.h에서 선언 된 문서 및 뷰 StatusBarDemoView.h에서 선언 됩니다. 이 코드 조각은의 일부인 합니다 [상태 표시줄 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 응용 프로그램의 다양 한 메서드를 호출 하는 데 사용 하는 지역 변수는 `CMFCStatusBar` 클래스입니다. 이러한 변수는 StatusBarDemoView.h에서 선언 됩니다. 주 프레임 MainFrm.h에 선언 된, StatusBarDemoDoc.h에서 선언 된 문서 및 뷰 StatusBarDemoView.h에서 선언 됩니다. 이 코드 조각은의 일부인 합니다 [상태 표시줄 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_StatusBarDemo#9](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_1.h)]
 
 ## <a name="example"></a>예제
 
-다음 예제에는에 대 한 참조를 가져오는 방법을 보여 줍니다 `CMFCStatusBar` 도입 하 여 개체를 `GetStatusBar` MainFrm.h 및에서이 메서드를 호출 하는 메서드는 `GetStatusBar` StatusBarDemoView.h에서 메서드. 이 코드 조각은의 일부인 합니다 [상태 표시줄 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에는에 대 한 참조를 가져오는 방법을 보여 줍니다 `CMFCStatusBar` 도입 하 여 개체를 `GetStatusBar` MainFrm.h 및에서이 메서드를 호출 하는 메서드는 `GetStatusBar` StatusBarDemoView.h에서 메서드. 이 코드 조각은의 일부인 합니다 [상태 표시줄 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_StatusBarDemo#7](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_2.h)]
 [!code-cpp[NVC_MFC_StatusBarDemo#8](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_3.h)]
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 다양 한 메서드를 호출 하는 방법에 설명 합니다 `CMFCStatusBar` StatusBarDemoView.cpp 클래스입니다. 상수는 MainFrm.h에서 선언 됩니다. 예제는 아이콘 설정, 상태 표시줄 창의 도구 설명 텍스트를 설정, 지정 된 창에서 진행률 표시줄이 표시 됩니다, 지정한 창에 애니메이션을 할당, 텍스트 및 상태 표시줄 창의 너비를 설정 및는 프로 그의 현재 진행률 표시기를 설정 하는 방법을 보여 줍니다. ess 막대 상태 표시줄 창입니다. 이 코드 조각은의 일부인 합니다 [상태 표시줄 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 다양 한 메서드를 호출 하는 방법에 설명 합니다 `CMFCStatusBar` StatusBarDemoView.cpp 클래스입니다. 상수는 MainFrm.h에서 선언 됩니다. 예제는 아이콘 설정, 상태 표시줄 창의 도구 설명 텍스트를 설정, 지정 된 창에서 진행률 표시줄이 표시 됩니다, 지정한 창에 애니메이션을 할당, 텍스트 및 상태 표시줄 창의 너비를 설정 및는 프로 그의 현재 진행률 표시기를 설정 하는 방법을 보여 줍니다. ess 막대 상태 표시줄 창입니다. 이 코드 조각은의 일부인 합니다 [상태 표시줄 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_StatusBarDemo#6](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_4.h)]
 [!code-cpp[NVC_MFC_StatusBarDemo#1](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_5.cpp)]

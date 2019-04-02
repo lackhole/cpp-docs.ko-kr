@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - try-catch keyword [C++], exception handling
 ms.assetid: a6aa08de-669d-4ce8-9ec3-ec20d1354fcf
-ms.openlocfilehash: a155d56cc234c11534f5456ef92ea913e094f1a8
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 506ead1b6e96f59717a92b6b0c48db0270b1822f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627282"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779523"
 ---
 # <a name="exception-handling-in-visual-c"></a>Visual C++에서 예외 처리
 
@@ -33,10 +33,10 @@ Visual C++은 세 종류의 예외 처리를 지원합니다.
 
 사용 된 [/EH](../build/reference/eh-exception-handling-model.md) ; 프로젝트에서 사용 하는 예외 처리의 유형을 지정 하는 컴파일러 옵션 C + + 예외 처리에는 기본값입니다. 오류 처리 메커니즘을 혼용하지 마십시오. 예를 들어 C++ 예외를 구조적 예외 처리와 함께 사용하지 마십시오. C++ 예외 처리를 사용하면 코드 이식 가능성이 향상되며 모든 형식의 예외를 처리할 수 있습니다. 구조적된 예외 처리의 단점에 대 한 자세한 내용은 참조 [구조적 예외 처리](../cpp/structured-exception-handling-c-cpp.md)합니다. MFC 매크로 및 c + + 예외 혼합 하는 방법에 대 한 도움말을 참조 하세요. [예외: MFC 매크로 및 c + + 예외를 사용 하 여](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)입니다.
 
-CLR 응용 프로그램에서 예외 처리에 대 한 자세한 내용은 [예외 처리 (C + + /cli 및 C + + /cli CX)](../windows/exception-handling-cpp-component-extensions.md)합니다.
+CLR 응용 프로그램에서 예외 처리에 대 한 자세한 내용은 [예외 처리 (C + + /cli 및 C + + /cli CX)](../extensions/exception-handling-cpp-component-extensions.md)합니다.
 
 X64에서 예외 처리에 대 한 정보에 대 한 프로세서를 참조 하세요 [x64 예외 처리](../build/exception-handling-x64.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)

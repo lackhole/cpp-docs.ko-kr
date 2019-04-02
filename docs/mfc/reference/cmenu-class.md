@@ -84,12 +84,12 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-ms.openlocfilehash: bdc5f2ebf20949f63b3892ee8e8c6eedf05e2838
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 464b59f7e598ea1901cf88c47c5887cbbf308607
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293864"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770852"
 ---
 # <a name="cmenu-class"></a>CMenu 클래스
 
@@ -561,7 +561,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 
 ### <a name="example"></a>예제
 
-MFC에서 다음 코드는 [CTRLTEST](../../visual-cpp-samples.md) 샘플:
+MFC에서 다음 코드는 [CTRLTEST](../../overview/visual-cpp-samples.md) 샘플:
 
 [!code-cpp[NVC_MFCWindowing#24](../../mfc/reference/codesnippet/cpp/cmenu-class_4.cpp)]
 
@@ -1094,7 +1094,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 
 ### <a name="example"></a>예제
 
-MFC에서 다음 코드는 [CTRLTEST](../../visual-cpp-samples.md) 샘플:
+MFC에서 다음 코드는 [CTRLTEST](../../overview/visual-cpp-samples.md) 샘플:
 
 [!code-cpp[NVC_MFCWindowing#31](../../mfc/reference/codesnippet/cpp/cmenu-class_11.cpp)]
 
@@ -1484,8 +1484,8 @@ TPM_RETURNCMD 지정 하지 않으면 경우는 *fuFlags* 매개 변수, 반환 
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 CTRLTEST](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 DYNAMENU](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 DYNAMENU](../../overview/visual-cpp-samples.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)

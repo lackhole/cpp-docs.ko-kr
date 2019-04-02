@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CArray [MFC], SetAtGrow
 - CArray [MFC], SetSize
 ms.assetid: fead8b00-4cfd-4625-ad0e-251df62ba92f
-ms.openlocfilehash: 342eea1d5bcf8adfe9a9ff0e8d915c9155b413ca
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f82dbf7dce2e14bf760bb76d23d23f667797ee0f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266135"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779848"
 ---
 # <a name="carray-class"></a>CArray 클래스
 
@@ -114,8 +114,7 @@ class CArray : public CObject
 에 대 한 액세스 시간을 C 배열과 마찬가지로 `CArray` 인덱싱된 요소는 상수 이며 배열 크기에 관계 없이 합니다.
 
 > [!TIP]
->  배열을 사용 하기 전에 [SetSize](#setsize) 크기를 설정 하 여에 대 한 메모리를 할당 합니다. 
-  `SetSize`를 사용하지 않는 경우 배열에 요소를 추가하면 배열이 자주 다시 할당되고 복사됩니다. 이처럼 다시 할당 및 복사가 자주 수행되면 효율성이 떨어지며 메모리가 조각화될 수 있습니다.
+>  배열을 사용 하기 전에 [SetSize](#setsize) 크기를 설정 하 여에 대 한 메모리를 할당 합니다. `SetSize`를 사용하지 않는 경우 배열에 요소를 추가하면 배열이 자주 다시 할당되고 복사됩니다. 이처럼 다시 할당 및 복사가 자주 수행되면 효율성이 떨어지며 메모리가 조각화될 수 있습니다.
 
 배열에서 개별 요소의 덤프가 필요한 깊이를 설정 해야 합니다는 [CDumpContext](../../mfc/reference/cdumpcontext-class.md) 1 또는 더 큰 개체입니다.
 
@@ -621,8 +620,7 @@ void SetSize(
 
 그런 다음 새 크기가 이전 크기 보다 작은 경우 배열이 잘리고 고 모든 사용 되지 않는 메모리 해제 됩니다.
 
-배열 사용 하기 전에 배열의 크기를 설정 하려면이 함수를 사용 합니다. 
-  `SetSize`를 사용하지 않는 경우 배열에 요소를 추가하면 배열이 자주 다시 할당되고 복사됩니다. 이처럼 다시 할당 및 복사가 자주 수행되면 효율성이 떨어지며 메모리가 조각화될 수 있습니다.
+배열 사용 하기 전에 배열의 크기를 설정 하려면이 함수를 사용 합니다. `SetSize`를 사용하지 않는 경우 배열에 요소를 추가하면 배열이 자주 다시 할당되고 복사됩니다. 이처럼 다시 할당 및 복사가 자주 수행되면 효율성이 떨어지며 메모리가 조각화될 수 있습니다.
 
 합니다 *nGrowBy* 매개 변수 배열 증가 하는 동안 내부 메모리 할당에 영향을 줍니다. 용도 영향을 주지 않으며 배열 크기에서 보고 [GetSize](#getsize) 하 고 [GetUpperBound](#getupperbound)합니다. 기본값을 사용 하는 경우 MFC는 메모리 조각화를 방지 하 고 대부분의 효율성을 최적화 하기 위해 계산 하는 방식으로 메모리를 할당 합니다.
 
@@ -632,7 +630,7 @@ void SetSize(
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 수집](../../overview/visual-cpp-samples.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CObArray 클래스](../../mfc/reference/cobarray-class.md)<br/>

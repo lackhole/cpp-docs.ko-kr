@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4688
 ms.assetid: a027df3c-b2b8-4c49-8539-c2bc42db74e8
-ms.openlocfilehash: f37b5ed43d375c5ee31eb233ce49f7ec88200155
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1c94198eca0a88174c8655e0d571c37f82a2df36
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559928"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781967"
 ---
 # <a name="compiler-warning-level-1-c4688"></a>컴파일러 경고(수준 1) C4688
 
 'constraint': 제약 조건 목록에 어셈블리 전용 형식 'type'이 있습니다.
 
-제약 조건 목록에 어셈블리 전용 형식이 있으므로 어셈블리 외부에서 형식에 액세스하는 경우 사용할 수 없습니다. 자세한 내용은 [제네릭](../../windows/generics-cpp-component-extensions.md)을 참조하세요.
+제약 조건 목록에 어셈블리 전용 형식이 있으므로 어셈블리 외부에서 형식에 액세스하는 경우 사용할 수 없습니다. 자세한 내용은 [제네릭](../../extensions/generics-cpp-component-extensions.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

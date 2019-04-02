@@ -20,12 +20,12 @@ helpviewer_keywords:
 - C++ COM Interop
 - .NET [C++], porting C++ native to
 ms.assetid: 5f710bf1-88ae-4c4e-8326-b3f0b7c4c68a
-ms.openlocfilehash: ffe4aaeecc3e0f65851a87840cd21f81c4806fb4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aaa07373b7dd22807290ceefa9197b4013c61fe5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464589"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778236"
 ---
 # <a name="using-c-interop-implicit-pinvoke"></a>C++ Interop 사용(암시적 PInvoke)
 
@@ -59,7 +59,7 @@ C + + Interop를 사용 하 여 COM 구성 요소 수 일반적으로 사용 되
 
 ## <a name="blittable-types"></a>Blittable 형식
 
-간단 하 고 내장 형식을 사용 하는 관리 되지 않는 Api에 대 한 (참조 [Blittable 형식 및 비 Blittable 형식](/dotnet/framework/interop/blittable-and-non-blittable-types)), 특수 코딩이 필요 메모리에서 이러한 데이터 형식에는 동일한 표현의 있지만 더 복잡 한 데이터 형식에 필요 하기 때문에 명시적 데이터 마샬링입니다. 예를 들어 참조 [방법: 관리 코드를 사용 하 여 PInvoke에서 네이티브 Dll 호출](../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md)합니다.
+간단 하 고 내장 형식을 사용 하는 관리 되지 않는 Api에 대 한 (참조 [Blittable 형식 및 비 Blittable 형식](/dotnet/framework/interop/blittable-and-non-blittable-types)), 특수 코딩이 필요 메모리에서 이러한 데이터 형식에는 동일한 표현의 있지만 더 복잡 한 데이터 형식에 필요 하기 때문에 명시적 데이터 마샬링입니다. 예는 [방법: PInvoke를 사용 하 여 관리 되는 코드에서 네이티브 Dll 호출](../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md)합니다.
 
 ## <a name="example"></a>예제
 
@@ -111,7 +111,7 @@ Done
 
 - [방법: char * 문자열을 System::Byte 배열로 변환](../dotnet/how-to-convert-char-star-string-to-system-byte-array.md)
 
-- [방법: system:: string을 wchar_t * 또는 char 변환할\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)
+- [방법: 방법: System::String을 wchar_t* 또는 char*로\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)
 
 - [방법: System::String을 표준 문자열로 변환](../dotnet/how-to-convert-system-string-to-standard-string.md)
 
@@ -131,19 +131,19 @@ Done
 
 - [방법: 관리되지 않는 메모리에 개체 참조 유지](../dotnet/how-to-hold-object-reference-in-unmanaged-memory.md)
 
-- [방법: /clr 컴파일 감지](../dotnet/how-to-detect-clr-compilation.md)
+- [방법: /Clr 컴파일 감지](../dotnet/how-to-detect-clr-compilation.md)
 
-- [방법: System::Guid 및 _GUID 사이에 변환](../dotnet/how-to-convert-between-system-guid-and-guid.md)
+- [방법: System::Guid 및 _GUID 간 변환](../dotnet/how-to-convert-between-system-guid-and-guid.md)
 
 - [방법: out 매개 변수 지정](../dotnet/how-to-specify-an-out-parameter.md)
 
-- [방법: /clr 컴파일에 네이티브 형식 사용](../dotnet/how-to-use-a-native-type-in-a-clr-compilation.md)
+- [방법: /Clr 컴파일에 네이티브 형식 사용](../dotnet/how-to-use-a-native-type-in-a-clr-compilation.md)
 
 - [방법: 네이티브 형식으로 핸들 선언](../dotnet/how-to-declare-handles-in-native-types.md)
 
 - [방법: C#에서 사용하기 위해 네이티브 클래스 래핑](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)
 
-대리자를 사용 하 여 interop 시나리오에서에 대 한 내용은 참조 하세요 [delegate (c + + 구성 요소 확장)](../windows/delegate-cpp-component-extensions.md)합니다.
+대리자를 사용 하 여 interop 시나리오에서에 대 한 내용은 참조 하세요 [delegate (c + + 구성 요소 확장)](../extensions/delegate-cpp-component-extensions.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

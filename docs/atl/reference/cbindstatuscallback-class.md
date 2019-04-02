@@ -29,12 +29,12 @@ helpviewer_keywords:
 - data transfer [C++], asynchronous
 - CBindStatusCallback class
 ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
-ms.openlocfilehash: e8c8d3f170803a792ca2ea8c7a37a18fd2cebd48
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6e5e55a23ee678bbedf76f608bc4fdf562cc1822
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259206"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773127"
 ---
 # <a name="cbindstatuscallback-class"></a>CBindStatusCallback 클래스
 
@@ -101,7 +101,7 @@ class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx <T ::_ThreadMo
 
 `CBindStatusCallback` 클래스는 `IBindStatusCallback` 인터페이스를 구현합니다. `IBindStatusCallback` 비동기 데이터 전송에서 알림을 받을 수 있도록 응용 프로그램에 의해 구현 되어야 합니다. 시스템에서 제공 하는 비동기 모니커를 사용 하 여 `IBindStatusCallback` 비동기 데이터에 대 한 정보를 수신 하는 메서드를 개체에서 전송 합니다.
 
-일반적으로 `CBindStatusCallback` 개체가 특정 바인딩 작업을 사용 하 여 연결 합니다. 예를 들어, 합니다 [비동기](../../visual-cpp-samples.md) 샘플에서는 URL 속성을 설정할 때 만듭니다를 `CBindStatusCallback` 개체에 대 한 호출에서 `Download`:
+일반적으로 `CBindStatusCallback` 개체가 특정 바인딩 작업을 사용 하 여 연결 합니다. 예를 들어, 합니다 [비동기](../../overview/visual-cpp-samples.md) 샘플에서는 URL 속성을 설정할 때 만듭니다를 `CBindStatusCallback` 개체에 대 한 호출에서 `Download`:
 
 [!code-cpp[NVC_ATL_Windowing#86](../../atl/codesnippet/cpp/cbindstatuscallback-class_1.h)]
 
@@ -528,7 +528,7 @@ void Function_Name(
     DWORD dwSize);
 ```
 
-다음 예제에서 (에서 가져온 합니다 [비동기](../../visual-cpp-samples.md) 샘플)를 함수 `OnData` 입력란에 수신된 된 데이터를 씁니다.
+다음 예제에서 (에서 가져온 합니다 [비동기](../../overview/visual-cpp-samples.md) 샘플)를 함수 `OnData` 입력란에 수신된 된 데이터를 씁니다.
 
 ### <a name="example"></a>예제
 

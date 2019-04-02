@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - finally keyword [C++]
 ms.assetid: b55f3c8e-1af0-43e8-bcfb-99c3685d2578
-ms.openlocfilehash: cb2bbdb36a102c7ef8974a9ac210473f2306f5d6
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: f7db4320cf901412e3a9e3de682d0cfbcc9f23bc
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746775"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771515"
 ---
 # <a name="finally"></a>finally
 
@@ -19,7 +19,7 @@ ms.locfileid: "57746775"
 
 용도 `finally` 블록은 예외가 발생 한 후 남은 리소스를 정리 합니다. `finally` 예외가 throw 되지 않은 경우에 블록을 항상 실행 합니다. 합니다 `catch` 블록은 관리 되는 예외를 throw 되 면 실행만 연결 된 `try` 블록.
 
-`finally` 상황에 맞는 키워드입니다. 참조 [상황에 맞는 키워드](../windows/context-sensitive-keywords-cpp-component-extensions.md) 자세한 내용은 합니다.
+`finally` 상황에 맞는 키워드입니다. 참조 [상황에 맞는 키워드](../extensions/context-sensitive-keywords-cpp-component-extensions.md) 자세한 내용은 합니다.
 
 ## <a name="example"></a>예제
 
@@ -58,4 +58,4 @@ in finally
 
 ## <a name="see-also"></a>참고자료
 
-[예외 처리](../windows/exception-handling-cpp-component-extensions.md)
+[예외 처리](../extensions/exception-handling-cpp-component-extensions.md)

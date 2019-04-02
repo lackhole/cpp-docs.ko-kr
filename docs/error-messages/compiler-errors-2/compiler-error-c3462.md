@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3462
 ms.assetid: 56b75f35-9fad-42d9-a969-eeca5d709bec
-ms.openlocfilehash: 6c56e59be8bc4173c6568b47628f675ba4f4d782
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 020556be73f0bad8bea6836c9ec0dd0b92dd7f39
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651778"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781369"
 ---
 # <a name="compiler-error-c3462"></a>컴파일러 오류 C3462
 
@@ -19,7 +19,7 @@ ms.locfileid: "50651778"
 
 TypeForwardedTo 특성이 참조된 메타데이터의 형식에 적용되어야 합니다.
 
-자세한 내용은 [형식 전달 (C + + /cli CLI)](../../windows/type-forwarding-cpp-cli.md)합니다.
+자세한 내용은 [형식 전달 (C + + /cli CLI)](../../extensions/type-forwarding-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

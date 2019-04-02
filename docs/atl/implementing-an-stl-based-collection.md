@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - ICollectionOnSTLImpl interface
 ms.assetid: 6d49f819-1957-4813-b074-3f12c494d8ca
-ms.openlocfilehash: 90583f34c9e9fb500bb48fdbd3c1a17d343d865f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 609ec2547cf7a8ab93ef757f7a8e460542c9de28
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292924"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779250"
 ---
 # <a name="implementing-a-c-standard-library-based-collection"></a>C + + 표준 라이브러리 기반 컬렉션 구현
 
 ATL은 제공 된 `ICollectionOnSTLImpl` 신속 하 게 개체에 c + + 표준 라이브러리 기반 컬렉션 인터페이스를 구현할 수 있도록 하는 인터페이스입니다. 이 클래스의 작동 방식을 이해 하는 간단한 예 (아래 참조)이이 클래스를 사용 하 여 자동화 클라이언트를 목표로 하는 읽기 전용 컬렉션을 구현 하는 진행 됩니다.
 
-샘플 코드는 합니다 [ATLCollections 샘플](../visual-cpp-samples.md)합니다.
+샘플 코드는 합니다 [ATLCollections 샘플](../overview/visual-cpp-samples.md)합니다.
 
 이 절차를 완료 하려면 다음을 수행 해야 합니다.
 
@@ -75,7 +75,7 @@ ATL은 제공 된 `ICollectionOnSTLImpl` 신속 하 게 개체에 c + + 표준 �
 
 [!code-cpp[NVC_ATL_COM#26](../atl/codesnippet/cpp/implementing-an-stl-based-collection_3.h)]
 
-이 예제에서는 사용자 지정을 사용할 수 있습니다 `GenericCopy` VCUE_Copy.h에서 VCUE_CopyString.h에 정의 된 클래스를 [ATLCollections](../visual-cpp-samples.md) 샘플입니다. 이 클래스를 사용 하 여 다른 코드에 있지만의 특수화를 정의 해야 할 수 있습니다 `GenericCopy` 고유한 컬렉션에 사용 되는 데이터 형식을 지원 하도록 합니다. 자세한 내용은 [ATL 복사 정책 클래스](../atl/atl-copy-policy-classes.md)합니다.
+이 예제에서는 사용자 지정을 사용할 수 있습니다 `GenericCopy` VCUE_Copy.h에서 VCUE_CopyString.h에 정의 된 클래스를 [ATLCollections](../overview/visual-cpp-samples.md) 샘플입니다. 이 클래스를 사용 하 여 다른 코드에 있지만의 특수화를 정의 해야 할 수 있습니다 `GenericCopy` 고유한 컬렉션에 사용 되는 데이터 형식을 지원 하도록 합니다. 자세한 내용은 [ATL 복사 정책 클래스](../atl/atl-copy-policy-classes.md)합니다.
 
 ##  <a name="vcconenumeration_and_collection"></a> 열거형 및 컬렉션에 대 한 형식 정의 만들기
 
@@ -102,5 +102,5 @@ ATL은 제공 된 `ICollectionOnSTLImpl` 신속 하 게 개체에 c + + 표준 �
 ## <a name="see-also"></a>참고자료
 
 [컬렉션 및 열거자](../atl/atl-collections-and-enumerators.md)<br/>
-[ATLCollections 샘플](../visual-cpp-samples.md)<br/>
+[ATLCollections 샘플](../overview/visual-cpp-samples.md)<br/>
 [ATL 복사 정책 클래스](../atl/atl-copy-policy-classes.md)

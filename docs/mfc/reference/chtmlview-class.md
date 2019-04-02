@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: 07f942e6582eb9fabe6001c4823ec9e2b1a83bf6
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 17979dce7899820db3da3c24968385914c3a57e9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328976"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777287"
 ---
 # <a name="chtmlview-class"></a>CHtmlView 클래스
 
@@ -2233,7 +2233,7 @@ Internet Explorer 및 WebBrowser에 적용됩니다.
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CFormView 클래스](../../mfc/reference/cformview-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [IWebBrowser2](/windows/desktop/api/exdisp/nn-exdisp-iwebbrowser2)

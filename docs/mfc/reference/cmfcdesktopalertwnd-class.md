@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CMFCDesktopAlertWnd [MFC], SetSmallCaption
 - CMFCDesktopAlertWnd [MFC], SetTransparency
 ms.assetid: 73a2dd7b-ea84-4ae2-9830-7cf6e8dd2425
-ms.openlocfilehash: 6b7d72b048d9f44233f96a3af859315ea20e9747
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 3ff74f5025d888077b51f8191f043237597dfdbe
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291641"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776975"
 ---
 # <a name="cmfcdesktopalertwnd-class"></a>CMFCDesktopAlertWnd Class
 
@@ -100,8 +100,7 @@ class CMFCDesktopAlertWnd : public CWnd
 
 팝업 창에서 사용자 지정 대화 상자를 표시 하려면 다음이 단계를 수행 합니다.
 
-1. 
-  `CMFCDesktopAlertDialog`에서 클래스를 파생합니다.
+1. `CMFCDesktopAlertDialog`에서 클래스를 파생합니다.
 
 1. 리소스에서 자식 대화 상자 템플릿을 만듭니다.
 
@@ -121,7 +120,7 @@ class CMFCDesktopAlertWnd : public CWnd
 
 ## <a name="example"></a>예제
 
-다음 예제에서 다양 한 메서드를 사용 하는 방법에는 `CMFCDesktopAlertWnd` 구성 하는 클래스를 `CMFCDesktopAlertWnd` 개체입니다. 애니메이션 유형입니다. 설정, 팝업 창의 투명도 설정, 작은 캡션, 경고 창에 표시 되는지 지정 하 고 경고 창이 자동으로 닫힙니다. 되기 전 까지의 경과 시간을 설정 하는 방법을 보여 줍니다. 이 예제에는 만들고 바탕 화면 경고 창이 초기화 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서 다양 한 메서드를 사용 하는 방법에는 `CMFCDesktopAlertWnd` 구성 하는 클래스를 `CMFCDesktopAlertWnd` 개체입니다. 애니메이션 유형입니다. 설정, 팝업 창의 투명도 설정, 작은 캡션, 경고 창에 표시 되는지 지정 하 고 경고 창이 자동으로 닫힙니다. 되기 전 까지의 경과 시간을 설정 하는 방법을 보여 줍니다. 이 예제에는 만들고 바탕 화면 경고 창이 초기화 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#1](../../mfc/reference/codesnippet/cpp/cmfcdesktopalertwnd-class_1.cpp)]
 

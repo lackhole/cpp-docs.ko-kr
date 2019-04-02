@@ -344,12 +344,12 @@ helpviewer_keywords:
 - CMFCVisualManager [MFC], SetMenuShadowDepth
 - CMFCVisualManager [MFC], SetShadowHighlightedImage
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
-ms.openlocfilehash: 594e727a091cbb7b2999e540ae8da7ddec2a7a14
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7b4d6a31e69e75af240e0e58cbfbb7d2d24291aa
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294332"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775168"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager 클래스
 
@@ -587,7 +587,7 @@ void CMFCSkinsApp::SetSkin (int iIndex)
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 기본 값을 검색 하는 방법에 설명 된 `CMFCVisualManager` 개체입니다. 이 코드 조각은의 일부인 합니다 [작업창 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 기본 값을 검색 하는 방법에 설명 된 `CMFCVisualManager` 개체입니다. 이 코드 조각은의 일부인 합니다 [작업창 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_TasksPane#1](../../mfc/reference/codesnippet/cpp/cmfcvisualmanager-class_1.h)]
 
@@ -4331,7 +4331,7 @@ virtual void OnFillBarBackground(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `OnFillBarBackground` 에 `CMFCVisualManager` 클래스입니다. 이 코드 조각은의 일부인 합니다 [Outlook 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `OnFillBarBackground` 에 `CMFCVisualManager` 클래스입니다. 이 코드 조각은의 일부인 합니다 [Outlook 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_OutlookDemo#4](../../mfc/reference/codesnippet/cpp/cmfcvisualmanager-class_2.cpp)]
 

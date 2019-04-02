@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3753
 ms.assetid: a5b99e28-796c-4107-a673-97c2ae3bb2b9
-ms.openlocfilehash: b6b1e8c3241a778b29045e734fffebb663554e62
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7c9c078e72babc85dc7092b8d6414625e9c0db7b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498373"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771105"
 ---
 # <a name="compiler-error-c3753"></a>컴파일러 오류 C3753
 
@@ -19,7 +19,7 @@ ms.locfileid: "50498373"
 
 제네릭 매개 변수 목록은 관리 되는 클래스, 구조체 또는 함수에만 나타날 수 있습니다.
 
-자세한 내용은 [제네릭을](../../windows/generics-cpp-component-extensions.md) 하 고 [속성](../../windows/property-cpp-component-extensions.md)합니다.
+자세한 내용은 [제네릭을](../../extensions/generics-cpp-component-extensions.md) 하 고 [속성](../../extensions/property-cpp-component-extensions.md)합니다.
 
 ## <a name="example"></a>예제
 

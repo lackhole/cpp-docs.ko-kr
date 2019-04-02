@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: bda980c26f9791e1d4f03026f7e118e69a4ab881
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: d53d3afb464b9dcfa32ab3cf4ee51446f8313a92
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565807"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771827"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog 클래스
 
@@ -1524,6 +1524,6 @@ E_NOTIMPL 반환.
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 DHtmlExplore](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 DHtmlExplore](../../overview/visual-cpp-samples.md)<br/>
 [DDX_DHtml 도우미 매크로](#ddx_dhtml_helper_macros)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)

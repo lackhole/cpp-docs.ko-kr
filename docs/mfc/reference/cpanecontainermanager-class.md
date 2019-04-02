@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CPaneContainerManager [MFC], SetResizeMode
 - CPaneContainerManager [MFC], StoreRecentDockSiteInfo
 ms.assetid: 3d974c15-a62f-4648-bb5b-cc31ab7950af
-ms.openlocfilehash: 7e0c55981b895540d490e2e38f43eb68abf48e32
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 887b771ee76034256c77aa3d038da96696eca6ed
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294657"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774596"
 ---
 # <a name="cpanecontainermanager-class"></a>CPaneContainerManager 클래스
 
@@ -189,7 +189,7 @@ class CPaneContainerManager : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에 대 한 참조 하는 방법에 설명 된 `CPaneContainerManager` 개체입니다. 이 코드 조각은의 일부인 합니다 [창 크기 설정 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에 대 한 참조 하는 방법에 설명 된 `CPaneContainerManager` 개체입니다. 이 코드 조각은의 일부인 합니다 [창 크기 설정 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_SetPaneSize#5](../../mfc/reference/codesnippet/cpp/cpanecontainermanager-class_1.cpp)]
 

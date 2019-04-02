@@ -120,12 +120,12 @@ helpviewer_keywords:
 - CDocument [MFC], m_clrRichPreviewTextColor
 - CDocument [MFC], m_lfRichPreviewFont
 ms.assetid: e5a2891d-e1e1-4599-8c7e-afa9b4945446
-ms.openlocfilehash: b7358c2206c15660b9ffb283802283ee71e57f03
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2d87ff67000fb5b70c0a5c965638875e6f50b22c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299077"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774185"
 ---
 # <a name="cdocument-class"></a>CDocument 클래스
 
@@ -1254,9 +1254,9 @@ void UpdateAllViews(
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 SNAPVW](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 NPP](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 SNAPVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 NPP](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>

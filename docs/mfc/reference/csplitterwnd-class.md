@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CSplitterWnd [MFC], OnDrawSplitter
 - CSplitterWnd [MFC], OnInvertTracker
 ms.assetid: fd0de258-6dbe-4552-9e47-a39de0471d51
-ms.openlocfilehash: 42913ddea7818636dce8d630ed2d79d13c19ce81
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 065735c13a3e763208142eb6bc989d3a496221f0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302106"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781447"
 ---
 # <a name="csplitterwnd-class"></a>CSplitterWnd 클래스
 
@@ -175,9 +175,9 @@ A `CSplitterWnd` 개체를 부모에 일반적으로 포함 되어 [CFrameWnd](.
 
 동적 분할 창을 만드는 방법에 대 한 자세한 내용은 다음을 참조 하세요.
 
-- MFC 샘플 [Scribble](../../visual-cpp-samples.md)
+- MFC 샘플 [Scribble](../../overview/visual-cpp-samples.md)
 
-- MFC 샘플 [VIEWEX](../../visual-cpp-samples.md)합니다.
+- MFC 샘플 [VIEWEX](../../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -1036,7 +1036,7 @@ virtual void OnDraw(CDC* pDC);
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 VIEWEX](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 VIEWEX](../../overview/visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CView 클래스](../../mfc/reference/cview-class.md)<br/>

@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-ms.openlocfilehash: 24ab589ae19bd2027e2527ebefbf48dbf24e399d
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: 0d5010f913521848675987b145a1277c7b00decf
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565039"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775051"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>디버깅 및 오류 보고 매크로
 
@@ -220,7 +220,7 @@ ATLTRACE2(
 
 ### <a name="remarks"></a>설명
 
-ATLTRACE2의 약식 형태는 디버거의 출력 창에 문자열을 씁니다. ATLTRACE2의 두 번째 형태도 디버거의 출력 창에 출력 쓰기 이지만 ATL/MFC 추적 도구의 설정을 따릅니다 (참조 [ATLTraceTool 샘플](../../visual-cpp-samples.md)). 예를 들어 설정한 *수준* 4를 수준 0으로 ATL/MFC 추적 도구가 표시 되지 것입니다 메시지입니다. *수준* 0, 1, 2, 3 또는 4 일 수 있습니다. 기본적으로 0의 가장 심각한 문제만 보고합니다.
+ATLTRACE2의 약식 형태는 디버거의 출력 창에 문자열을 씁니다. ATLTRACE2의 두 번째 형태도 디버거의 출력 창에 출력 쓰기 이지만 ATL/MFC 추적 도구의 설정을 따릅니다 (참조 [ATLTraceTool 샘플](../../overview/visual-cpp-samples.md)). 예를 들어 설정한 *수준* 4를 수준 0으로 ATL/MFC 추적 도구가 표시 되지 것입니다 메시지입니다. *수준* 0, 1, 2, 3 또는 4 일 수 있습니다. 기본적으로 0의 가장 심각한 문제만 보고합니다.
 
 합니다 *범주* 매개 변수는 설정 하는 추적 플래그를 나열 합니다. 이러한 플래그를 보고 하려는 메서드의 유형에 해당 합니다. 아래 표에 나열 되어 사용할 수 있습니다 올바른 추적 플래그를 *범주* 매개 변수입니다.
 

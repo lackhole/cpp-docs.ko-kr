@@ -37,12 +37,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlMap class
 ms.assetid: 5e2fe028-8e6d-4686-93df-1433d2080ec3
-ms.openlocfilehash: 80975047b300f270c0ac58c8b8abfc59ff2b17ef
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1821532a4d5a3078202f180273b02945b8d8e4ba
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293786"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774557"
 ---
 # <a name="catlmap-class"></a>CAtlMap 클래스
 
@@ -294,7 +294,7 @@ CPair* GetAt(POSITION& pos) throw();
 *key*<br/>
 템플릿 매개 변수 맵의 키의 형식을 지정 합니다.
 
-*value*<br/>
+*값*<br/>
 템플릿 매개 변수 맵의 값의 형식을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -391,7 +391,7 @@ void GetNextAssoc(
 *key*<br/>
 템플릿 매개 변수 맵의 키의 형식을 지정 합니다.
 
-*value*<br/>
+*값*<br/>
 템플릿 매개 변수 맵의 값의 형식을 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -561,7 +561,7 @@ CPair* Lookup(KINARGTYPE key) throw();
 *key*<br/>
 조회 요소를 식별 하는 키를 지정 합니다.
 
-*value*<br/>
+*값*<br/>
 조회 값을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -675,7 +675,7 @@ POSITION SetAt(
 *key*<br/>
 추가할 키 값을 `CAtlMap` 개체입니다.
 
-*value*<br/>
+*값*<br/>
 에 추가할 값을 `CAtlMap` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -731,7 +731,7 @@ void SetValueAt(
 *pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 카운터 [CAtlMap::GetNextAssoc](#getnextassoc) 하거나 [CAtlMap::GetStartPosition](#getstartposition)합니다.
 
-*value*<br/>
+*값*<br/>
 에 추가할 값을 `CAtlMap` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -782,6 +782,6 @@ V  m_value;
 
 ## <a name="see-also"></a>참고자료
 
-[움직이는 텍스트 샘플](../../visual-cpp-samples.md)<br/>
+[움직이는 텍스트 샘플](../../overview/visual-cpp-samples.md)<br/>
 [UpdatePV 샘플](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

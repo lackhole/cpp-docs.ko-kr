@@ -182,12 +182,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-ms.openlocfilehash: 97854a554be729b75d50f09b0627ffc94b1b093f
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 92f5adcea50e660ecfad131313247e118312e609
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424485"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781265"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
 
@@ -307,11 +307,9 @@ Windows 도구 모음 공용 컨트롤에는 하나 이상의 단추를 포함 �
 
 `CToolBarCtrl` 개체에 몇 가지 중요 한 내부 데이터 구조가 포함 될: 단추 이미지 비트맵의 목록을 또는 이미지 목록, 단추 레이블 문자열 목록이 및 목록은 `TBBUTTON` 이미지를 연결 하거나, 스타일, 위치를 사용 하 여 문자열는 구조, 상태 및 명령 ID 단추입니다. 각 이러한 데이터 구조의 요소의 0부터 시작 인덱스에 의해 참조 됩니다. 사용 하기 전에 `CToolBarCtrl` 개체를 이러한 데이터 구조를 설정 해야 합니다. 단추 레이블;에 대 한 문자열의 목록 에서만 사용할 수 있습니다. 도구 모음에서 문자열을 검색할 수 없습니다.
 
+`CToolBarCtrl` 개체를 사용하려면, 일반적으로 다음 단계를 수행해야 합니다.
 
-  `CToolBarCtrl` 개체를 사용하려면, 일반적으로 다음 단계를 수행해야 합니다.
-
-1. 
-  `CToolBarCtrl` 개체를 생성합니다.
+1. `CToolBarCtrl` 개체를 생성합니다.
 
 1. 호출 [Create](#create) Windows 도구 모음 공용 컨트롤을 만들고 연결 하는 `CToolBarCtrl` 개체입니다. 투명 한 도구 모음에 대 한 TBSTYLE_TRANSPARENT 등 TBSTYLE_DROPDOWN 스타일 드롭다운 단추를 지 원하는 도구 모음에 대 한 스타일을 사용 하 여 도구 모음의 스타일을 나타냅니다.
 
@@ -2388,8 +2386,8 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CToolBar 클래스](../../mfc/reference/ctoolbar-class.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - twoPhase
 - disable two-phase name lookup
 - /Zc:twoPhase
-ms.openlocfilehash: ebd577bc25a2789e3a6b328a4c9cd2e1596d04da
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: b9e94f131448cb9be6c31962ecd19607ceb1b708
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821406"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776039"
 ---
 # <a name="zctwophase--disable-two-phase-name-lookup"></a>/Zc: twophase-(2 단계 이름 조회 사용 안 함)
 
@@ -158,13 +158,13 @@ typename T::template X<T>::TYPE func(typename T::TYPE)
 
 아래 **/zc: twophase-** 하며 이전 컴파일러에서 컴파일러만는 `template` 2 줄에는 키워드입니다. 기본적으로 규칙 모드에서 컴파일러가 이제도 필요 합니다 `template` 키워드를 나타내는 4 줄 `T::X<T>` 템플릿입니다. 이 키워드 없는 코드가 살펴보고 표준에 맞게 코드를 제공 합니다.
 
-규칙과 관련 된 문제에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 c + + 규칙 향상](../../cpp-conformance-improvements-2017.md) 하 고 [비표준 동작](../../cpp/nonstandard-behavior.md)합니다.
+규칙과 관련 된 문제에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 c + + 규칙 향상](../../overview/cpp-conformance-improvements-2017.md) 하 고 [비표준 동작](../../cpp/nonstandard-behavior.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. 수정 된 **추가 옵션** 포함할 속성을 **/zc: twophase-** 를 선택한 후 **확인**합니다.
 

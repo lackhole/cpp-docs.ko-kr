@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3666
 ms.assetid: 459e51dd-cefb-4346-99b3-644f2d8b65b2
-ms.openlocfilehash: aba1d3dfcf620db0f1fbaf14d0fb01745ca82659
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: edca117da585fee731041d696e05af1baf6d3e5c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465548"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778678"
 ---
 # <a name="compiler-error-c3666"></a>컴파일러 오류 C3666
 
 'constructor': 재정의 지정자는 'keyword' 생성자를 사용할 수 없습니다
 
-생성자에는 재정의 지정자를 사용한 및 허용 되지 않습니다. 자세한 내용은 [재정의 지정자](../../windows/override-specifiers-cpp-component-extensions.md)합니다.
+생성자에는 재정의 지정자를 사용한 및 허용 되지 않습니다. 자세한 내용은 [재정의 지정자](../../extensions/override-specifiers-cpp-component-extensions.md)합니다.
 
 ## <a name="example"></a>예제
 

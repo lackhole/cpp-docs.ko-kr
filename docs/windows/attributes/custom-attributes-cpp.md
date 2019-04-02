@@ -5,12 +5,12 @@ helpviewer_keywords:
 - custom attributes
 - custom attributes, defining
 ms.assetid: af9998a5-aa12-4b94-9a43-97ce99026e29
-ms.openlocfilehash: c16337e15fedca25bbba31503026358e39a66026
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bfd09ee0a53b0677bc53bede918b9a4972a3abba
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567182"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777391"
 ---
 # <a name="custom-attributes-c"></a>사용자 지정 특성(C++)
 
@@ -18,7 +18,7 @@ ms.locfileid: "50567182"
 
 새 사용자 지정 특성을 정의 하는 방법은 하세요
 
-- [사용자 정의 특성](../user-defined-attributes-cpp-component-extensions.md)
+- [사용자 정의 특성](../../extensions/user-defined-attributes-cpp-component-extensions.md)
 
 - [특성](attribute.md) (구문 사용 되지 않음).
 

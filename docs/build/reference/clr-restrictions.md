@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - /clr compiler option [C++], restrictions
 ms.assetid: 385f6462-2c68-46d6-810e-469553ead447
-ms.openlocfilehash: e2205740aea5a2e557b8d93c3c60045435c4b71d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 21b7ead553871854c73021756eb2086f9e6e7393
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816102"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777820"
 ---
 # <a name="clr-restrictions"></a>/clr 제한
 
@@ -29,7 +29,7 @@ ms.locfileid: "57816102"
 
 - 합니다 [naked](../../cpp/naked-cpp.md) [__declspec](../../cpp/declspec.md) /clr 한정자는 무시 됩니다.
 
-- 변환기 함수에 설정한 [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) 비관리 코드에서 catch만 적용 됩니다. 참조 [예외 처리](../../windows/exception-handling-cpp-component-extensions.md) 자세한 내용은 합니다.
+- 변환기 함수에 설정한 [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) 비관리 코드에서 catch만 적용 됩니다. 참조 [예외 처리](../../extensions/exception-handling-cpp-component-extensions.md) 자세한 내용은 합니다.
 
 - 함수 포인터의 비교를 사용할 수 없습니다 **/clr**합니다.
 

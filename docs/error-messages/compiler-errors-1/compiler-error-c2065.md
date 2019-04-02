@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2065
 ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
-ms.openlocfilehash: ae7f582de5d6c45df34c42164756356a9c794d31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3daf2cd532cd07225b822c80b46fc28274d4e2a8
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482521"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778756"
 ---
 # <a name="compiler-error-c2065"></a>컴파일러 오류 C2065
 
@@ -203,9 +203,9 @@ int main() {
 }
 ```
 
-## <a name="example-ccli-type-deduction-failure"></a>예: C + + /cli CLI 형식 추론이 실패
+## <a name="example-ccli-type-deduction-failure"></a>예제: C + + /cli CLI 형식 추론이 실패
 
-사용 된 매개 변수에서 원하는 형식 인수를 추론할 수 없으므로 제네릭 함수를 호출 하는 경우이 오류가 발생할 수 있습니다. 자세한 내용은 [제네릭 함수 (C + + /cli CLI)](../../windows/generic-functions-cpp-cli.md)합니다.
+사용 된 매개 변수에서 원하는 형식 인수를 추론할 수 없으므로 제네릭 함수를 호출 하는 경우이 오류가 발생할 수 있습니다. 자세한 내용은 [제네릭 함수 (C + + /cli CLI)](../../extensions/generic-functions-cpp-cli.md)합니다.
 
 ```cpp
 // C2065_b.cpp
@@ -220,7 +220,7 @@ int main() {
 }
 ```
 
-## <a name="example-ccli-attribute-parameters"></a>예: C + + /cli CLI 특성 매개 변수
+## <a name="example-ccli-attribute-parameters"></a>예제: C + + /cli CLI 특성 매개 변수
 
 이 오류는 Visual C++ 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성될 수도 있습니다. 매개 변수에 Visual C++ 특성이 있는지 확인합니다.
 

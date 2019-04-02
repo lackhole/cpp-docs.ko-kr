@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - for each keyword [C++]
 ms.assetid: 0c3a364b-2747-43f3-bb8d-b7d3b7023f79
-ms.openlocfilehash: c5ee72e557c62e3db2eeb5dac4811133719183f6
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: b1dfe3a32f88c0e9456e3d73c31c533911f8d3ac
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746313"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770693"
 ---
 # <a name="for-each-in"></a>for each, in
 
@@ -35,7 +35,7 @@ ms.locfileid: "57746313"
 `identifier`의 형식입니다.
 
 *identifier*<br/>
-반복 변수는 컬렉션 요소를 나타냅니다.  때 `identifier` 되는 [추적 참조 연산자](../windows/tracking-reference-operator-cpp-component-extensions.md), 요소를 수정할 수 있습니다.
+반복 변수는 컬렉션 요소를 나타냅니다.  때 `identifier` 되는 [추적 참조 연산자](../extensions/tracking-reference-operator-cpp-component-extensions.md), 요소를 수정할 수 있습니다.
 
 *expression*<br/>
 배열 식 또는 컬렉션입니다. 컬렉션 요소는 컴파일러가 `identifier` 형식으로 변환할 수 있어야 합니다.
@@ -45,12 +45,11 @@ ms.locfileid: "57746313"
 
 ### <a name="remarks"></a>설명
 
-
-  `for each` 문은 컬렉션을 반복하는 데 사용됩니다. 컬렉션의 요소를 수정할 수 있지만 요소를 추가하거나 삭제할 수 없습니다.
+`for each` 문은 컬렉션을 반복하는 데 사용됩니다. 컬렉션의 요소를 수정할 수 있지만 요소를 추가하거나 삭제할 수 없습니다.
 
 합니다 *문을* 배열 또는 컬렉션의 각 요소에 대해 실행 됩니다. 컬렉션의 모든 요소에 대해 반복이 완료된 후 제어가 `for each` 블록 다음 문으로 전달됩니다.
 
-`for each` 및 `in` 됩니다 [상황에 맞는 키워드](../windows/context-sensitive-keywords-cpp-component-extensions.md)합니다.
+`for each` 및 `in` 됩니다 [상황에 맞는 키워드](../extensions/context-sensitive-keywords-cpp-component-extensions.md)합니다.
 
 추가 정보
 
@@ -160,4 +159,4 @@ Testing
 
 ## <a name="see-also"></a>참고자료
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[런타임 플랫폼용 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)

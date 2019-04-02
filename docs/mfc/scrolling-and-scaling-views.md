@@ -8,18 +8,18 @@ helpviewer_keywords:
 - scroll bars [MFC], messages
 - scrolling views [MFC]
 ms.assetid: f98a3421-c336-407e-97ee-dbb2ffd76fbd
-ms.openlocfilehash: 2baa89f233eb6df93cde3adbde35ba1e6d35c093
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7d26bc656dec3fdcbb8fc5ea4918ec7d59bc5afc
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283711"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777584"
 ---
 # <a name="scrolling-and-scaling-views"></a>뷰 스크롤 및 크기 조정
 
 MFC 표시 하는 프레임 창의 크기를 자동으로 확장 되는 스크롤 및 뷰는 뷰를 지원 합니다. 클래스 `CScrollView` 두 종류의 보기를 지원 합니다.
 
-스크롤 및 크기 조정에 대 한 자세한 내용은 클래스를 참조 하세요 [CScrollView](../mfc/reference/cscrollview-class.md) 에 *MFC 참조*합니다. 스크롤 예제를 참조 합니다 [Scribble 샘플](../visual-cpp-samples.md)합니다.
+스크롤 및 크기 조정에 대 한 자세한 내용은 클래스를 참조 하세요 [CScrollView](../mfc/reference/cscrollview-class.md) 에 *MFC 참조*합니다. 스크롤 예제를 참조 합니다 [Scribble 샘플](../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 

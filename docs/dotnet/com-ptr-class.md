@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::ptr class
 ms.assetid: 0144d0e4-919c-45f9-a3f8-fbc9edba32bf
-ms.openlocfilehash: 8909f91e31279f1fc1395610aea4708b79731113
-ms.sourcegitcommit: 9813e146a4eb30929d8352872859e8fcb7ff6d2f
+ms.openlocfilehash: 342c222b837e179e2e13dbbd27c88efc18b12332
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805970"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774173"
 ---
 # <a name="comptr-class"></a>com::ptr 클래스
 
@@ -43,7 +43,7 @@ COM 인터페이스.
 
 또한 `com::ptr`은 로컬 함수 변수로 사용하여 여러 COM 작업을 간소화하고 수명 주기 관리를 자동화할 수 있습니다.
 
-A `com::ptr` 함수 매개 변수로 직접 사용할 수 없습니다; 사용을 [추적 참조 연산자](../windows/tracking-reference-operator-cpp-component-extensions.md) 또는 [개체 연산자 (^)에 대 한 핸들](../windows/handle-to-object-operator-hat-cpp-component-extensions.md) 대신 합니다.
+A `com::ptr` 함수 매개 변수로 직접 사용할 수 없습니다; 사용을 [추적 참조 연산자](../extensions/tracking-reference-operator-cpp-component-extensions.md) 또는 [개체 연산자 (^)에 대 한 핸들](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) 대신 합니다.
 
 `com::ptr` 함수에서 직접 반환 될 수 없습니다; 대신 핸들을 사용 합니다.
 

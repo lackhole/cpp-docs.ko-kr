@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CMFCColorButton [MFC], UpdateColor
 - CMFCColorButton [MFC], m_bEnabledInCustomizeMode
 ms.assetid: 9fdf34ae-4cc5-4c5e-9d89-1c50e8a73699
-ms.openlocfilehash: 05a4ad17feea20c67069e65c5c5df43d543e2377
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c0c9ad79342f2013aa071240c684fce168e55c9e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293487"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780004"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton 클래스
 
@@ -126,7 +126,7 @@ class CMFCColorButton : public CMFCButton
 
 ## <a name="example"></a>예제
 
-다음 예제에서 다양 한 메서드를 사용 하 여 색 단추를 구성 하는 방법에 설명 합니다 `CMFCColorButton` 클래스입니다. 메서드 색 단추를 열 수의 색을 설정 하 고 자동 및 기타 단추를 사용 하도록 설정 합니다. 이 예제는의 일부를 [상태 표시줄 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서 다양 한 메서드를 사용 하 여 색 단추를 구성 하는 방법에 설명 합니다 `CMFCColorButton` 클래스입니다. 메서드 색 단추를 열 수의 색을 설정 하 고 자동 및 기타 단추를 사용 하도록 설정 합니다. 이 예제는의 일부를 [상태 표시줄 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_StatusBarDemo#10](../../mfc/reference/codesnippet/cpp/cmfccolorbutton-class_1.h)]
 [!code-cpp[NVC_MFC_StatusBarDemo#11](../../mfc/reference/codesnippet/cpp/cmfccolorbutton-class_2.cpp)]

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4383
 ms.assetid: 96c0e52d-874e-4b57-a154-0e49b6a00fae
-ms.openlocfilehash: 61bc3951a7d57a5a4eefb69b5a0c4399df99160a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2510dda59047632e2a4823f734feeffd0c0a5b02
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548800"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778041"
 ---
 # <a name="compiler-warning-level-1-c4383"></a>컴파일러 경고(수준 1) C4383
 
@@ -19,7 +19,7 @@ ms.locfileid: "50548800"
 
 관리 되는 형식에서 역참조 연산자의 사용자 정의 인스턴스 재정의 추가 하면 잠재적으로 핸들의 개체를 반환 하는 형식의 역참조 연산자의 기능을 재정의 합니다. 고려 역참조 연산자는 static 및 사용자 정의 작성 합니다.
 
-자세한 내용은 [개체 연산자 (^)에 대 한 핸들](../../windows/handle-to-object-operator-hat-cpp-component-extensions.md) 하 고 [추적 참조 연산자](../../windows/tracking-reference-operator-cpp-component-extensions.md)합니다.
+자세한 내용은 [개체 연산자 (^)에 대 한 핸들](../../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) 하 고 [추적 참조 연산자](../../extensions/tracking-reference-operator-cpp-component-extensions.md)합니다.
 
 또한 인스턴스 연산자는 참조 된 메타 데이터를 통해 다른 언어 컴파일러를 사용할 수 있습니다. 자세한 내용은 [사용자 정의 연산자 (C + + /cli CLI)](../../dotnet/user-defined-operators-cpp-cli.md)합니다.
 

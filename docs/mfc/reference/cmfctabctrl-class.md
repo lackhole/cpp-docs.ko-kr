@@ -104,12 +104,12 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], SynchronizeScrollBar
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
-ms.openlocfilehash: 8dc8c51cc1847d29b76e2017db4c1368b35b9a9f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 43eb171ce9b3ea3454855dc1f92d9aa1b74645d4
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281683"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778457"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Class
 
@@ -243,7 +243,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 
 ## <a name="example"></a>예제
 
-다음 예제에서 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CMFCTabCtrl` 구성 하는 클래스를 `CMFCTabCtrl` 개체입니다. 예제에 탭을 추가, 활성 탭에서 닫기 단추를 표시, 편집 가능한 탭 레이블에 사용 및 탭된 창 레이블의 팝업 메뉴를 표시 방법을 설명 합니다. 이 예제는의 일부를 [상태 컬렉션 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CMFCTabCtrl` 구성 하는 클래스를 `CMFCTabCtrl` 개체입니다. 예제에 탭을 추가, 활성 탭에서 닫기 단추를 표시, 편집 가능한 탭 레이블에 사용 및 탭된 창 레이블의 팝업 메뉴를 표시 방법을 설명 합니다. 이 예제는의 일부를 [상태 컬렉션 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_1.h)]
 [!code-cpp[NVC_MFC_StateCollection#3](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_2.cpp)]
@@ -355,7 +355,7 @@ BOOL Create(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 의 메서드는 `CMFCTabCtrl` 클래스입니다. 이 예제는의 일부를 [상태 컬렉션 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 의 메서드는 `CMFCTabCtrl` 클래스입니다. 이 예제는의 일부를 [상태 컬렉션 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_1.h)]
 [!code-cpp[NVC_MFC_StateCollection#2](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_3.cpp)]

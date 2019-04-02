@@ -10,12 +10,12 @@ helpviewer_keywords:
 - pointers [C++], marshaling
 - data marshaling [C++], embedded pointers
 ms.assetid: 05fb8858-97f2-47aa-86b2-2c0ad713bdb2
-ms.openlocfilehash: 89194dabb4b124aa7cbd4d1d34a74de491fba66f
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: c6d622060aaf700b6ea1a3bfe797ab3190eee797
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738479"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780238"
 ---
 # <a name="how-to-marshal-embedded-pointers-using-c-interop"></a>방법: C + + Interop를 사용 하 여 포함된 포인터 마샬링
 
@@ -23,7 +23,7 @@ ms.locfileid: "57738479"
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 관리 되는 함수에서 포인터를 포함 하는 구조체를 사용 하는 관리 되지 않는 함수를 호출할 수 있습니다 하는 방법을 보여 줍니다. 관리 되는 함수 구조체의 인스턴스를 만들고 새 키워드를 사용 하 여 포함된 된 포인터를 초기화 (대신 합니다 [ref new, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md) 키워드). 없기 때문에이 네이티브 힙의 메모리 할당, 가비지 수집 하지 않으려면 배열을 고정 필요가 없습니다. 그러나 메모리는 메모리 누수를 방지 하려면 명시적으로 삭제 되어야 합니다.
+다음 예제에서는 관리 되는 함수에서 포인터를 포함 하는 구조체를 사용 하는 관리 되지 않는 함수를 호출할 수 있습니다 하는 방법을 보여 줍니다. 관리 되는 함수 구조체의 인스턴스를 만들고 새 키워드를 사용 하 여 포함된 된 포인터를 초기화 (대신 합니다 [ref new, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) 키워드). 없기 때문에이 네이티브 힙의 메모리 할당, 가비지 수집 하지 않으려면 배열을 고정 필요가 없습니다. 그러나 메모리는 메모리 누수를 방지 하려면 명시적으로 삭제 되어야 합니다.
 
 ```
 // marshal_embedded_pointer.cpp

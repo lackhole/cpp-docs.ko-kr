@@ -9,12 +9,12 @@ helpviewer_keywords:
 - C++ Interop, arrays
 - data marshaling [C++], arrays
 ms.assetid: c2b37ab1-8acf-4855-ad3c-7d2864826b14
-ms.openlocfilehash: 0b27fd65b7d42bff2a009b14c39d9547d8a4a919
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 91fd86a547a0241f0cfcca7cfc36c204429d80ac
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740006"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776897"
 ---
 # <a name="how-to-marshal-arrays-using-c-interop"></a>방법: C + + Interop를 사용 하 여 배열 마샬링
 
@@ -24,7 +24,7 @@ ms.locfileid: "57740006"
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 관리 되는 배열을 관리 되지 않는 함수에 전달 하는 방법에 설명 합니다. 관리 되는 함수를 사용 하 여 [pin_ptr (C + + /cli CLI)](../windows/pin-ptr-cpp-cli.md) 배열에 대 한 관리 되지 않는 함수를 호출 하기 전에 가비지 수집 하지 않으려면입니다. 관리 되지 않는 함수 포인터로 고정 된 GC 힙에 제공 함으로써 배열의 복사본을 만드는 오버 헤드를 방지할 수 있습니다. 관리 되지 않는 함수에는 GC 힙 메모리에 액세스 하는, 배열의 내용을 수정 및 변경 내용이 설명 하기 위해 관리 되는 컨트롤을 다시 시작할 때를 반영 합니다.
+다음 예제에서는 관리 되는 배열을 관리 되지 않는 함수에 전달 하는 방법에 설명 합니다. 관리 되는 함수를 사용 하 여 [pin_ptr (C + + /cli CLI)](../extensions/pin-ptr-cpp-cli.md) 배열에 대 한 관리 되지 않는 함수를 호출 하기 전에 가비지 수집 하지 않으려면입니다. 관리 되지 않는 함수 포인터로 고정 된 GC 힙에 제공 함으로써 배열의 복사본을 만드는 오버 헤드를 방지할 수 있습니다. 관리 되지 않는 함수에는 GC 힙 메모리에 액세스 하는, 배열의 내용을 수정 및 변경 내용이 설명 하기 위해 관리 되는 컨트롤을 다시 시작할 때를 반영 합니다.
 
 ```
 // PassArray1.cpp

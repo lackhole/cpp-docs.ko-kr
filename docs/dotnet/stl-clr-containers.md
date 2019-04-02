@@ -6,12 +6,12 @@ helpviewer_keywords:
 - STL/CLR, containers
 - containers, STL/CLR
 ms.assetid: 34ca8031-2041-46b9-aed9-29082d1972ea
-ms.openlocfilehash: 511ea14d02b77e237ae9768776c4ff3eb97982ed
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: dc2e5ce3263c61839a1ba434ab0d2a39e6a9078f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744360"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774544"
 ---
 # <a name="stlclr-containers"></a>STL/CLR 컨테이너
 
@@ -37,7 +37,7 @@ STL/CLR 컨테이너 중 하나로 boxed 값 형식에 삽입할 수 없습니�
 
 ### <a name="handles-to-reference-types"></a>참조 형식에 대 한 핸들
 
-STL/CLR 컨테이너에는 참조 형식에 대 한 핸들을 삽입할 수 있습니다. CLR을 대상으로 하는 c + +에 대 한 핸들 네이티브 c + +에 대 한 포인터와 비슷합니다. 자세한 내용은 [개체 연산자 (^)에 대 한 핸들](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)합니다.
+STL/CLR 컨테이너에는 참조 형식에 대 한 핸들을 삽입할 수 있습니다. CLR을 대상으로 하는 c + +에 대 한 핸들 네이티브 c + +에 대 한 포인터와 비슷합니다. 자세한 내용은 [개체 연산자 (^)에 대 한 핸들](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)합니다.
 
 #### <a name="example"></a>예제
 
@@ -229,7 +229,7 @@ int main()
 
 또한 STL/CLR 컨테이너에 unboxed 값 형식에 삽입할 수 있습니다. Unboxed 값 형식 값 형식인 되지 않은 *boxed* 참조 형식으로 합니다.
 
-값 형식 요소와 같은 표준 값 형식 중 하나일 수 있습니다는 `int`와 같은 사용자 정의 값 형식 될 수도 있습니다는 `value class`합니다. 자세한 내용은 참조 하세요. [클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)
+값 형식 요소와 같은 표준 값 형식 중 하나일 수 있습니다는 `int`와 같은 사용자 정의 값 형식 될 수도 있습니다는 `value class`합니다. 자세한 내용은 참조 하세요. [클래스 및 구조체](../extensions/classes-and-structs-cpp-component-extensions.md)
 
 #### <a name="example"></a>예제
 

@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CMFCColorMenuButton [MFC], OnDraw
 - CMFCColorMenuButton [MFC], OnDrawOnCustomizeList
 ms.assetid: 42685704-e994-4f7b-9553-62283c27b754
-ms.openlocfilehash: 64d61cc9464ef0877baad33a8685cee1482f240d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5fccfbca9fe8c31070f3eb9f208c09cb3722b9b9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301339"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780225"
 ---
 # <a name="cmfccolormenubutton-class"></a>CMFCColorMenuButton 클래스
 
@@ -105,7 +105,7 @@ class CMFCColorMenuButton : public CMFCToolBarMenuButton
 
 ## <a name="example"></a>예제
 
-다음 예제에는 만들고 색 메뉴 단추에서 다양 한 메서드를 사용 하 여 구성 하는 방법을 보여 줍니다.는 `CMFCColorMenuButton` 클래스입니다. 예에서를 `CPalette` 개체가 먼저 생성 되 고 다음의 개체를 생성 하는 데는 `CMFCColorMenuButton` 클래스입니다. `CMFCColorMenuButton` 그런 다음 해당 자동 및 기타 단추를 사용 하도록 설정 하 고 색 및 열 개수를 설정 하 여 개체를 구성 합니다. 이 코드는 부분을 [워드 패드 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에는 만들고 색 메뉴 단추에서 다양 한 메서드를 사용 하 여 구성 하는 방법을 보여 줍니다.는 `CMFCColorMenuButton` 클래스입니다. 예에서를 `CPalette` 개체가 먼저 생성 되 고 다음의 개체를 생성 하는 데는 `CMFCColorMenuButton` 클래스입니다. `CMFCColorMenuButton` 그런 다음 해당 자동 및 기타 단추를 사용 하도록 설정 하 고 색 및 열 개수를 설정 하 여 개체를 구성 합니다. 이 코드는 부분을 [워드 패드 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_WordPad#5](../../mfc/reference/codesnippet/cpp/cmfccolormenubutton-class_1.h)]
 [!code-cpp[NVC_MFC_WordPad#6](../../mfc/reference/codesnippet/cpp/cmfccolormenubutton-class_2.cpp)]

@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C++/CLI]
 ms.assetid: 9f4dd43f-9909-43d6-91d2-05734643876e
-ms.openlocfilehash: 7452ad3db642e132f4e46c1688d429dbaf78419a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fe78a4c5a1773cf621d6554969b1c41c333bc5aa
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532771"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778587"
 ---
 # <a name="attributes-by-group"></a>그룹별 특성
 
@@ -24,7 +24,7 @@ C++ 특성(attribute)은 기능별 그룹으로 다음과 같이 분류됩니다
 |[OLE DB 소비자 특성](ole-db-consumer-attributes.md)|[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-reference.md)을 기반으로 코드를 삽입하여 테이블 열기, 명령 실행 및 데이터 액세스와 같은 작업을 수행하는 작동 중인 OLE DB 소비자를 만듭니다.|
 |[컴파일러 특성](compiler-attributes.md)|Microsoft C++ 컴파일러에서 제공합니다.|
 
-.NET Framework 응용 프로그램에 대한 사용자 지정 특성을 정의하는 방법에 대한 자세한 내용은 [사용자 정의 특성](../user-defined-attributes-cpp-component-extensions.md)을 참조합니다.
+.NET Framework 응용 프로그램에 대한 사용자 지정 특성을 정의하는 방법에 대한 자세한 내용은 [사용자 정의 특성](../../extensions/user-defined-attributes-cpp-component-extensions.md)을 참조합니다.
 
 ## <a name="see-also"></a>참고 항목
 

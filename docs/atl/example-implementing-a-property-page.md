@@ -4,18 +4,18 @@ ms.date: 11/19/2018
 helpviewer_keywords:
 - property pages, implementing
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
-ms.openlocfilehash: a86393954cdebec59bd2c6a50cd5e547ef06acb7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9aaf75916196f33904a51289d0a49725e042aa9e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267240"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777040"
 ---
 # <a name="example-implementing-a-property-page"></a>예제: 속성 페이지 구현
 
 속성 페이지의 속성을 표시 (및 변경할 수 있습니다)를 빌드하는 방법을 보여 주는이 예제는 [문서 클래스](../mfc/document-classes.md) 인터페이스입니다.
 
-예제를 기반으로 합니다 [ATLPages 샘플](../visual-cpp-samples.md)합니다.
+예제를 기반으로 합니다 [ATLPages 샘플](../overview/visual-cpp-samples.md)합니다.
 
 이 예제를 완료 하려면 다음을 수행 해야 합니다.
 
@@ -164,4 +164,4 @@ End Module
 ## <a name="see-also"></a>참고자료
 
 [속성 페이지(Visual C++)](../atl/atl-com-property-pages.md)<br/>
-[ATLPages 샘플](../visual-cpp-samples.md)
+[ATLPages 샘플](../overview/visual-cpp-samples.md)
