@@ -59,7 +59,7 @@ Visual Studio 2017을 사용하여 Linux에서 실행되는 애플리케이션�
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
+                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">Visual C++</a></h3>
                         <p><a href="/cpp/overview-of-cpp-development">IDE 및 Visual C++ 개발 도구</a></p>
                     </div>
                 </div>
