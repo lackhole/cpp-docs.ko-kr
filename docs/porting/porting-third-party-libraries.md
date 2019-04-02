@@ -5,12 +5,12 @@ helpviewer_keywords:
 - 3rd-party libraries
 - vspkg
 ms.assetid: b055ed20-8a9e-45b2-ac2a-e3d94271c009
-ms.openlocfilehash: 51c1634aade159e095b5957a15783e40ec0284d0
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: e1aefc82eb23a8479035dd3372fa9ec24ab8feb1
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750964"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774206"
 ---
 # <a name="porting-third-party-libraries"></a>타사 라이브러리 포팅
 
@@ -18,7 +18,7 @@ ms.locfileid: "57750964"
 
 ## <a name="introducing-vcpkg"></a>vcpkg 소개
 
-과거에는 타사 라이브러리를 찾고 업그레이드하는 것이 그리 쉬운 작업이 아니었습니다. 타사의 C++ 오픈 소스 라이브러리를 얻고 다시 빌드하기 쉽도록 Visual C++ 팀은 **VC++ 패키징 도구**, 즉 **vcpkg**라는 명령줄 도구를 만들었습니다. vcpkg에는 다양한 인기 C++ 오픈 소스 라이브러리의 검색 가능 카탈로그가 있습니다. vcpkg 명령줄에서 직접 카탈로그에 있는 모든 라이브러리를 설치할 수 있습니다. 라이브러리를 설치할 때 Vcpkg는 컴퓨터에 디렉터리 트리를 만들고 .h, .lib 및 이진 파일을 이 폴더에 추가합니다. 컴파일 명령줄에서 이 폴더를 사용하거나, vcpkg integrate install 명령을 사용하여 Visual Studio 2015 이상에 통합할 수 있습니다. 라이브러리 위치를 통합한 후에는 Visual Studio가 라이브러리를 찾고 생성되는 모든 새 프로젝트에 추가할 수 있습니다. 라이브러리를 사용하기 위해 `#include`하기만 하면 Visual Studio가 프로젝트 설정에 대한 .lib 경로를 자동으로 추가하고 솔루션 폴더에 dll을 복사합니다. 자세한 내용은 [vcpkg: C++용 패키지 관리자](../vcpkg.md)를 참조하세요.
+과거에는 타사 라이브러리를 찾고 업그레이드하는 것이 그리 쉬운 작업이 아니었습니다. 타사의 C++ 오픈 소스 라이브러리를 얻고 다시 빌드하기 쉽도록 Visual C++ 팀은 **VC++ 패키징 도구**, 즉 **vcpkg**라는 명령줄 도구를 만들었습니다. vcpkg에는 다양한 인기 C++ 오픈 소스 라이브러리의 검색 가능 카탈로그가 있습니다. vcpkg 명령줄에서 직접 카탈로그에 있는 모든 라이브러리를 설치할 수 있습니다. 라이브러리를 설치할 때 Vcpkg는 컴퓨터에 디렉터리 트리를 만들고 .h, .lib 및 이진 파일을 이 폴더에 추가합니다. 컴파일 명령줄에서 이 폴더를 사용하거나, vcpkg integrate install 명령을 사용하여 Visual Studio 2015 이상에 통합할 수 있습니다. 라이브러리 위치를 통합한 후에는 Visual Studio가 라이브러리를 찾고 생성되는 모든 새 프로젝트에 추가할 수 있습니다. 라이브러리를 사용하기 위해 `#include`하기만 하면 Visual Studio가 프로젝트 설정에 대한 .lib 경로를 자동으로 추가하고 솔루션 폴더에 dll을 복사합니다. 자세한 내용은 [vcpkg: C++용 패키지 관리자](../build/vcpkg.md)를 참조하세요.
 
 ## <a name="reporting-issues"></a>문제 보고
 
