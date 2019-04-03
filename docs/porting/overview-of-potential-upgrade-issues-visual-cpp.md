@@ -2,16 +2,16 @@
 title: 잠재적인 업그레이드 문제 개요(Visual C++)
 ms.date: 11/04/2016
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-ms.openlocfilehash: e4a1f4ecb6492bf74fca46df6f096ca79c71da18
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 16918a70d4ce56a7415c3a807485e72c085d1194
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504262"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775044"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>잠재적인 업그레이드 문제 개요(Visual C++)
 
-지난 몇 년 동안 C++ 언어 자체, C++ 표준 라이브러리, C 런타임(CRT) 및 MFC, ATL 등의 기타 라이브러리의 변경과 함께 Microsoft Visual C++ 컴파일러에도 많은 변화가 있었습니다. 결과적으로, 이전 버전의 Visual Studio에서 응용 프로그램을 업그레이드할 때 이전에는 정상적으로 컴파일된 코드에서 컴파일러 및 링커 오류와 경고가 발생할 수 있습니다. 원래 코드베이스가 오래될수록 이러한 오류 가능성이 커집니다. 이 개요에서는 발생할 수 있는 가장 일반적인 문제 클래스를 요약하고 자세한 정보 링크를 제공합니다.
+지난 몇 년 동안 C++ 언어 자체, C++ 표준 라이브러리, C 런타임(CRT) 및 MFC, ATL 등의 기타 라이브러리의 변경과 함께 Microsoft Visual C++ 컴파일러에도 많은 변화가 있었습니다. 결과적으로, 이전 버전의 Visual Studio에서 애플리케이션을 업그레이드할 때 이전에는 정상적으로 컴파일된 코드에서 컴파일러 및 링커 오류와 경고가 발생할 수 있습니다. 원래 코드베이스가 오래될수록 이러한 오류 가능성이 커집니다. 이 개요에서는 발생할 수 있는 가장 일반적인 문제 클래스를 요약하고 자세한 정보 링크를 제공합니다.
 
 > [!NOTE]
 > 과거에는 여러 버전의 Visual Studio에 걸친 업그레이드를 한 번에 하나씩 증분 방식으로 수행하도록 권장했습니다. 이 방법은 더 이상 권장되지 않습니다. 코드베이스가 아무리 오래되었다 해도 최신 버전의 Visual Studio로 업그레이드하는 것이 더 간단한 경우가 많았습니다.
@@ -20,13 +20,13 @@ ms.locfileid: "50504262"
 
 ## <a name="library-and-toolset-dependencies"></a>라이브러리 및 도구 집합 종속성
 
-응용 프로그램을 새 버전의 Visual Studio로 업그레이드하는 경우 응용 프로그램이 연결하는 모든 라이브러리와 DLL도 업그레이드하는 것이 좋으며, 대부분의 경우 이 작업이 필요합니다. 이렇게 하려면 소스 코드에 액세스할 수 있거나, 라이브러리 공급업체가 동일한 주 버전의 컴파일러를 사용하여 컴파일된 새 이진 파일을 제공할 수 있어야 합니다. 이러한 조건 중 하나에 해당하면 이진 호환성의 세부 사항을 처리하는 이 섹션을 건너뛰어도 됩니다. 이러한 조건에 해당하지 않는 경우 업그레이드된 응용 프로그램에서 라이브러리를 사용하지 못할 수 있습니다. 이 섹션의 정보는 업그레이드를 진행할 수 있는지 여부를 이해하는 데 도움이 됩니다.
+애플리케이션을 새 버전의 Visual Studio로 업그레이드하는 경우 애플리케이션이 연결하는 모든 라이브러리와 DLL도 업그레이드하는 것이 좋으며, 대부분의 경우 이 작업이 필요합니다. 이렇게 하려면 소스 코드에 액세스할 수 있거나, 라이브러리 공급업체가 동일한 주 버전의 컴파일러를 사용하여 컴파일된 새 이진 파일을 제공할 수 있어야 합니다. 이러한 조건 중 하나에 해당하면 이진 호환성의 세부 사항을 처리하는 이 섹션을 건너뛰어도 됩니다. 이러한 조건에 해당하지 않는 경우 업그레이드된 애플리케이션에서 라이브러리를 사용하지 못할 수 있습니다. 이 섹션의 정보는 업그레이드를 진행할 수 있는지 여부를 이해하는 데 도움이 됩니다.
 
 ### <a name="toolset"></a>도구 집합
 
 .obj 및 .lib 파일 형식은 잘 정의되어 있고 거의 변경되지 않습니다. 때때로 이러한 파일 형식이 추가되지만, 일반적으로 이러한 추가 항목은 최신 도구 집합이 이전 도구 집합에서 생성된 개체 파일 및 라이브러리를 사용하는 데 영향을 주지 않습니다. 여기서 한 가지 중요한 예외는 [/GL(전체 프로그램 최적화)](../build/reference/gl-whole-program-optimization.md)을 사용하여 컴파일하는 경우입니다. `/GL`을 사용하여 컴파일하는 경우 결과로 생성된 개체 파일은 이 파일을 생성하는 데 사용된 것과 동일한 도구 집합을 통해서만 연결할 수 있습니다. 따라서 `/GL` 및 Visual Studio 2017(v141) 컴파일러를 사용하여 개체 파일을 생성하는 경우 Visual Studio 2017(v141) 링커를 사용하여 연결해야 합니다. 개체 파일 내의 내부 데이터 구조가 도구 집합의 주 버전 간에 안정적이지 않으며 최신 도구 집합이 오래된 데이터 형식을 이해하지 못하기 때문입니다.
 
-C++에는 안정적인 ABI(응용 프로그램 이진 인터페이스)가 없습니다. Visual Studio는 릴리스의 모든 부 버전에 대해 안정적인 C++ ABI를 유지 관리합니다. 예를 들어 Visual Studio 2017과 모든 업데이트는 이진 호환됩니다. 그러나 주 버전의 Visual Studio 간에는 ABI가 호환되지 않을 수 있습니다(단, 2015와 2017은 이진 호환_됨_). 즉, C++ 형식 레이아웃, 이름 데코레이션, 예외 처리 및 C++ ABI의 다른 부분에서 주요 변경이 수행될 수 있습니다. 따라서 C++ 연결이 있는 외부 기호를 포함하는 개체 파일은 다른 주 버전의 도구 집합을 사용하여 생성된 개체 파일에 제대로 연결하지 못할 수 있습니다. 여기서 "작동하지 않을 수 있음"에는 여러 가능한 결과가 있습니다. 즉, 연결이 완전히 실패하거나(예: 이름 데코레이션이 변경된 경우), 연결은 성공하지만 런타임 시 작업이 작동하지 않거나(예: 형식 레이아웃이 변경된 경우), 대부분의 경우 작업이 작동하고 오류가 전혀 발생하지 않을 수도 있습니다. 또한 C++ ABI는 불안정하지만 C ABI 및 COM에 필요한 C++ ABI의 하위 집합은 안정적입니다.
+C++에는 안정적인 ABI(애플리케이션 이진 인터페이스)가 없습니다. Visual Studio는 릴리스의 모든 부 버전에 대해 안정적인 C++ ABI를 유지 관리합니다. 예를 들어 Visual Studio 2017과 모든 업데이트는 이진 호환됩니다. 그러나 주 버전의 Visual Studio 간에는 ABI가 호환되지 않을 수 있습니다(단, 2015와 2017은 이진 호환_됨_). 즉, C++ 형식 레이아웃, 이름 데코레이션, 예외 처리 및 C++ ABI의 다른 부분에서 주요 변경이 수행될 수 있습니다. 따라서 C++ 연결이 있는 외부 기호를 포함하는 개체 파일은 다른 주 버전의 도구 집합을 사용하여 생성된 개체 파일에 제대로 연결하지 못할 수 있습니다. 여기서 "작동하지 않을 수 있음"에는 여러 가능한 결과가 있습니다. 즉, 연결이 완전히 실패하거나(예: 이름 데코레이션이 변경된 경우), 연결은 성공하지만 런타임 시 작업이 작동하지 않거나(예: 형식 레이아웃이 변경된 경우), 대부분의 경우 작업이 작동하고 오류가 전혀 발생하지 않을 수도 있습니다. 또한 C++ ABI는 불안정하지만 C ABI 및 COM에 필요한 C++ ABI의 하위 집합은 안정적입니다.
 
 가져오기 라이브러리에 링크하면 런타임 시 ABI 호환성을 유지하는 Visual Studio 재배포 가능 라이브러리의 이후 버전을 사용할 수 있습니다. 예를 들어, Visual Studio 2015 업데이트 3 도구 집합을 사용하여 앱을 컴파일하고 링크한 경우 2015 및 2017 라이브러리가 이전 버전과의 호환성을 보존했기 때문에 Visual Studio 2017 재배포 가능 패키지를 사용할 수 있습니다. 그 반대는 성립하지 않습니다. 호환 가능한 ABI가 있어도 코드를 작성하는 데 사용한 것보다 이전 버전의 도구 집합에 대해 재배포 가능 패키지를 사용할 수 없습니다.
 
@@ -111,7 +111,7 @@ Microsoft Visual C++ 컴파일러는 지난 몇 년 동안 C++ 표준에 대한 
 
 업그레이드할 때 표시될 수 있는 일반적인 컴파일러 오류 중 한 가지 예는 비 const 인수가 const 매개 변수에 전달되는 경우입니다. 이전 버전의 컴파일러는 때때로 이러한 경우에 오류 플래그를 지정하지 않았습니다. 자세한 내용은 [컴파일러의 보다 엄격한 변환](porting-guide-spy-increment.md#stricter_conversions)을 참조하세요.
 
-특정 규칙 향상에 대한 자세한 내용은 [Visual C++ 변경 기록 2003 – 2015](visual-cpp-change-history-2003-2015.md) 및 [Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)을 참조하세요.
+특정 규칙 향상에 대한 자세한 내용은 [Visual C++ 변경 기록 2003 – 2015](visual-cpp-change-history-2003-2015.md) 및 [Visual Studio 2017의 C++ 규칙 향상](../overview/cpp-conformance-improvements-2017.md)을 참조하세요.
 
 ## <a name="errors-involving-stdinth-integral-types"></a>\<stdint.h> 정수 계열 형식과 관련된 오류
 
@@ -127,7 +127,7 @@ Microsoft Visual C++ 컴파일러는 지난 몇 년 동안 C++ 표준에 대한 
 
 지난 몇 년 동안 C 런타임에서 많은 변화가 있었습니다. 함수의 보안 버전이 많이 추가되었으며 일부는 제거되었습니다. 또한 이 문서의 앞부분에서 설명한 대로, Microsoft의 CRT 구현이 Visual Studio 2015에서 새로운 이진 파일 및 관련 .lib 파일에 리팩터링되었습니다.
 
-오류가 CRT 함수와 관련된 경우 [Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md) 또는 [Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)을 검색하여 해당 항목에 추가 정보가 들어 있는지 확인합니다. 오류가 LNK2019, 확인할 수 없는 외부 참조인 경우 함수가 제거되지 않았는지 확인합니다. 또는 함수가 확실히 존재하고 호출 코드가 올바른 경우 프로젝트에서 `/NODEFAULTLIB`를 사용하는지 확인합니다. 사용하는 경우 프로젝트에서 새로운 유니버설(UCRT) 라이브러리를 사용하도록 라이브러리 목록을 업데이트해야 합니다. 자세한 내용은 라이브러리 및 종속성에 대한 위 섹션을 참조하세요.
+오류가 CRT 함수와 관련된 경우 [Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md) 또는 [Visual Studio 2017의 C++ 규칙 향상](../overview/cpp-conformance-improvements-2017.md)을 검색하여 해당 항목에 추가 정보가 들어 있는지 확인합니다. 오류가 LNK2019, 확인할 수 없는 외부 참조인 경우 함수가 제거되지 않았는지 확인합니다. 또는 함수가 확실히 존재하고 호출 코드가 올바른 경우 프로젝트에서 `/NODEFAULTLIB`를 사용하는지 확인합니다. 사용하는 경우 프로젝트에서 새로운 유니버설(UCRT) 라이브러리를 사용하도록 라이브러리 목록을 업데이트해야 합니다. 자세한 내용은 라이브러리 및 종속성에 대한 위 섹션을 참조하세요.
 
 오류가 `printf` 또는 `scanf`와 관련된 경우 stdio.h를 포함하지 않고 개인적으로 함수를 정의하지 않았는지 확인합니다. 이 경우에 개별 정의를 제거하거나 legacy\_stdio\_definitions.lib에 연결합니다. **추가 종속성** 속성에 있는 **구성 속성** > **링커** > **입력** 아래의 **속성 페이지** 대화 상자에서 설정할 수 있습니다. Windows SDK 8.1 이전 버전에 연결하는 경우 legacy\_stdio\_definitions.lib를 추가합니다.
 
@@ -161,11 +161,11 @@ Windows API를 직접 또는 간접적으로 사용하는 프로그램을 업그
 
 ## <a name="atl--mfc"></a>ATL/MFC
 
-ATL 및 MFC는 비교적 안정된 API이지만 때때로 변경됩니다. 자세한 내용은 [Visual C++ 변경 기록 2003 – 2015](visual-cpp-change-history-2003-2015.md), [Visual Studio 2017의 Visual C++에 대한 새로운 기능](../what-s-new-for-visual-cpp-in-visual-studio.md) 및 [Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)을 참조하세요.
+ATL 및 MFC는 비교적 안정된 API이지만 때때로 변경됩니다. 자세한 내용은 [Visual C++ 변경 기록 2003 – 2015](visual-cpp-change-history-2003-2015.md), [Visual Studio 2017의 Visual C++에 대한 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) 및 [Visual Studio 2017의 C++ 규칙 향상](../overview/cpp-conformance-improvements-2017.md)을 참조하세요.
 
 ### <a name="lnk-2005-dllmain12-already-defined-in-msvcrtdlib"></a>LNK 2005 _DllMain@12가 MSVCRTD.lib에 이미 정의되어 있습니다.
 
-이 오류는 MFC 응용 프로그램에서 발생할 수 있습니다. CRT 라이브러리와 MFC 라이브러리 간의 순서 지정 문제를 나타냅니다. MFC에서 new 및 delete 연산자를 제공하도록 연결해야 합니다. 오류를 해결하려면 `/NODEFAULTLIB` 스위치를 사용하여 기본 라이브러리 MSVCRTD.lib 및 mfcs140d.lib를 무시합니다. 그런 다음 동일한 라이브러리를 추가 종속성으로 추가합니다.
+이 오류는 MFC 애플리케이션에서 발생할 수 있습니다. CRT 라이브러리와 MFC 라이브러리 간의 순서 지정 문제를 나타냅니다. MFC에서 new 및 delete 연산자를 제공하도록 연결해야 합니다. 오류를 해결하려면 `/NODEFAULTLIB` 스위치를 사용하여 기본 라이브러리 MSVCRTD.lib 및 mfcs140d.lib를 무시합니다. 그런 다음 동일한 라이브러리를 추가 종속성으로 추가합니다.
 
 ## <a name="32-vs-64-bit"></a>32비트 및 64비트
 
@@ -173,7 +173,7 @@ ATL 및 MFC는 비교적 안정된 API이지만 때때로 변경됩니다. 자�
 
 또한 printf 및 scanf 함수의 포인터 크기, 시간 및 크기 값, 형식 지정자와 관련된 가능한 컴파일 시간 및 런타임 문제에 주의해야 합니다. 자세한 내용은 [64비트용 Visual C++ 구성(x64 대상)](../build/configuring-programs-for-64-bit-visual-cpp.md) 및 [일반적인 Visual C++ 64비트 마이그레이션 문제](../build/common-visual-cpp-64-bit-migration-issues.md)를 참조하세요. 추가 마이그레이션 팁은 [64비트 Windows에 대한 프로그래밍 가이드](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)를 참조하세요.
 
-## <a name="unicode-vs-mbcsascii"></a>유니코드 및 MBCS/ASCII
+## <a name="unicode-vs-mbcsascii"></a>유니코드 및 멀티바이트 문자 집합(MBCS)/ASCII
 
 유니코드가 표준화되기 전에는 대부분의 프로그램이 MBCS(멀티바이트 문자 집합)를 사용하여 ASCII 문자 집합에 포함되지 않은 문자를 표현했습니다. 이전 MFC 프로젝트에서는 MBCS가 기본 설정이었으며, 이러한 프로그램을 업그레이드하는 경우 대신 유니코드를 사용하라는 경고가 표시됩니다. 유니코드로 변환이 개발 비용의 가치가 없다고 결정하는 경우 경고를 사용하지 않거나 무시하도록 선택할 수 있습니다. 솔루션의 모든 프로젝트에 대해 경고를 사용하지 않으려면 **보기** > **속성 관리자**를 열고, 경고를 사용하지 않을 프로젝트를 모두 선택한 다음, 선택한 항목을 마우스 오른쪽 단추로 클릭하고, **속성**을 선택합니다. **속성 페이지** 대화 상자에서 **구성 속성** > **C/C++** > **고급**을 선택합니다. **특정 경고 사용 안 함** 속성에서 드롭다운 화살표를 연 다음, **편집**을 선택합니다. 텍스트 상자에 4996을 입력합니다. 'C' 접두사를 포함하지 마세요. **확인**을 선택하여 속성을 저장한 다음, **확인**을 선택하여 변경 내용을 저장합니다.
 
@@ -182,4 +182,4 @@ ATL 및 MFC는 비교적 안정된 API이지만 때때로 변경됩니다. 자�
 ## <a name="see-also"></a>참고 항목
 
 [이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)
+[Visual Studio 2017의 C++ 규칙 향상](../overview/cpp-conformance-improvements-2017.md)

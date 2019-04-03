@@ -9,24 +9,24 @@ helpviewer_keywords:
 - projects [C++], deploying programs
 - application deployment [C++], walkthroughs
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
-ms.openlocfilehash: 051ef3aa8c691a2191d25183ef96f17b557a47c1
-ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
+ms.openlocfilehash: aa0e1cd6ec7c27b8d3ccc1e327f3cb8da526d4f7
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57820210"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769266"
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>연습: 프로그램 배포(C++)
 
-[C++ 데스크톱 개발에 Visual Studio IDE 사용](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)에 나열된 초기 관련 연습을 수행하여 애플리케이션을 만들었으므로 마지막 단계는 사용자가 컴퓨터에 프로그램을 설치할 수 있도록 설치 관리자를 만드는 것입니다. 설치 관리자의 경우 기존 솔루션에 새 프로젝트를 추가합니다. 이 새 프로젝트에서 다른 컴퓨터에 응용 프로그램을 설치하는 setup.exe 파일이 생성됩니다.
+초기 관련 연습을 수행하여 애플리케이션을 만들었으므로 마지막 단계는 사용자가 컴퓨터에 프로그램을 설치할 수 있도록 설치 관리자를 만드는 것입니다. 설치 관리자의 경우 기존 솔루션에 새 프로젝트를 추가합니다. 이 새 프로젝트에서 다른 컴퓨터에 응용 프로그램을 설치하는 setup.exe 파일이 생성됩니다.
 
-이 연습에서는 Windows Installer를 사용하여 애플리케이션을 배포하는 방법을 보여 줍니다. ClickOnce를 사용하여 애플리케이션을 배포할 수도 있습니다. 자세한 내용은 [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md)를 참조하세요. 배포에 대한 일반적인 자세한 내용은 [애플리케이션, 서비스 및 구성 요소 배포](/visualstudio/deployment/deploying-applications-services-and-components)를 참조하세요.
+이 연습에서는 Windows Installer를 사용하여 애플리케이션을 배포하는 방법을 보여 줍니다. ClickOnce를 사용하여 애플리케이션을 배포할 수도 있습니다. 자세한 내용은 [ClickOnce Deployment for Visual C++ Applications](../windows/clickonce-deployment-for-visual-cpp-applications.md)를 참조하세요. 배포에 대한 일반적인 자세한 내용은 [애플리케이션, 서비스 및 구성 요소 배포](/visualstudio/deployment/deploying-applications-services-and-components)를 참조하세요.
 
 ## <a name="prerequisites"></a>전제 조건
 
 - 이 연습에서는 사용자가 C++ 언어의 기본적인 사항을 알고 있는 것으로 가정합니다.
 
-- 또한 [Visual Studio IDE를 사용하여 C++ 데스크톱 개발](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)에 나열된 이전 관련 연습을 완료했다고 가정합니다.
+- 또한 [Visual Studio IDE를 사용하여 C++ 데스크톱 개발](using-the-visual-studio-ide-for-cpp-desktop-development.md)에 나열된 이전 관련 연습을 완료했다고 가정합니다.
 
 - Visual Studio Express 버전에서는 연습을 수행할 수 없습니다.
 
@@ -72,10 +72,10 @@ ms.locfileid: "57820210"
 
 ## <a name="next-steps"></a>다음 단계
 
-**이전:** [연습: 프로젝트 디버깅(C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
+**이전:** [연습: 프로젝트 디버깅(C++)](walkthrough-debugging-a-project-cpp.md)<br/>
 
 ## <a name="see-also"></a>참고 항목
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [프로젝트 및 빌드 시스템](../build/projects-and-build-systems-cpp.md)<br/>
-[데스크톱 애플리케이션 배포](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>
+[데스크톱 애플리케이션 배포](../windows/deploying-native-desktop-applications-visual-cpp.md)<br/>

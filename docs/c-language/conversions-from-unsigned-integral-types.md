@@ -1,6 +1,6 @@
 ---
 title: 부호 없는 정수 계열 형식에서 변환
-ms.date: 01/29/2018
+ms.date: 03/27/2019
 helpviewer_keywords:
 - integers, converting
 - type casts, involving integers
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - type conversion [C++], signed and unsigned integers
 - integral conversions, from unsigned
 ms.assetid: 60fb7e10-bff9-4a13-8a48-e19f25a36a02
-ms.openlocfilehash: d7653c545601d10b159f10a8a3c8f60f9128f944
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f6136a721f84332451184baa648ebc7c909d5d7
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579689"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565024"
 ---
 # <a name="conversions-from-unsigned-integral-types"></a>부호 없는 정수 계열 형식에서 변환
 
-부호 없는 정수는 상위 비트를 잘라 더 짧은 부호 없는 정수 또는 부호 있는 정수로 변환되거나 0 확장을 통해 더 긴 부호 없는 정수 또는 부호 있는 정수로 변환됩니다([부호 없는 정수 계열 형식에서 변환](#_clang_table_4..3) 표 참조).
+부호 없는 정수는 상위 비트를 잘라 더 짧은 부호 없는 정수 또는 부호 있는 정수로 변환되거나 0 확장을 통해 더 긴 부호 없는 정수 또는 부호 있는 정수로 변환됩니다. 자세한 내용은 [부호 없는 정수 계열 형식에서 변환](#conversions-from-unsigned-integral-types-table)을 참조하세요.
 
 정수 계열 형식의 값이 더 작은 크기의 부호 있는 정수로 강등되거나 부호 없는 정수가 해당 부호 있는 정수로 변환될 때 값을 새 형식으로 표현할 수 있으면 값이 변경되지 않습니다. 그러나 다음 예제와 같이 부호 비트가 설정된 경우 나타내는 값이 변경됩니다.
 
@@ -35,7 +35,7 @@ printf_s( "%hd\n", j );   // Prints -3
 
 다음 표에서는 부호 없는 정수 계열 형식으로부터의 변환을 요약하여 보여 줍니다.
 
-## <a name="conversions-from-unsigned-integral-types"></a>부호 없는 정수 계열 형식에서 변환
+## <a name="conversions-from-unsigned-integral-types-table"></a>부호 없는 정수 계열 형식 테이블에서 변환
 
 |시작|대상|메서드|
 |----------|--------|------------|
