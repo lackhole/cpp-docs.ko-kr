@@ -1,6 +1,6 @@
 ---
 title: memchr, wmemchr
-ms.date: 11/04/2016
+ms.date: 03/31/2019
 apiname:
 - wmemchr
 - memchr
@@ -24,12 +24,12 @@ helpviewer_keywords:
 - memchr function
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-ms.openlocfilehash: cbd8b80ed42a6532fb7161fab7217a772a2cb777
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.openlocfilehash: 00a1f0d12047cc388b56074a657ffd739e986827
+ms.sourcegitcommit: 489c0b998f2360317701f7a4a97b2b8ad96052d7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57209901"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866918"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 
@@ -87,9 +87,9 @@ const wchar_t *wmemchr(
 
 ## <a name="remarks"></a>설명
 
-`memchr` 및 `wmemchr` 처음 검색할 *c* 첫 번째에서 *개수* 바이트 *버퍼*합니다. 찾으면 중지 *c* 첫 번째 검사 하거나 *개수* 바이트입니다.
+`memchr` 및 `wmemchr` 처음 검색할 *c* 첫 번째에서 *개수* 자의 *버퍼*합니다. 찾으면 중지 *c* 첫 번째 검사 하거나 *개수* 문자입니다.
 
-C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 번째 인수에 대 한 포인터입니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 에 대 한 포인터를 갖는 오버 로드 **상수** 에 대 한 포인터를 반환 **const**;는 버전에 대 한 포인터를은 비**const** 에 대 한 포인터를 반환 하는 비-**const** . 매크로 _CRT_CONST_CORRECT_OVERLOADS 모두 정의 되는 **const** 및 비-**const** 이러한 함수의 버전은 사용할 수 있습니다. 필요 하면 이외**const** c + +, 모두 c + + 오버 로드에 대 한 동작 기호 _CONST_RETURN을 정의 합니다.
+C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 번째 인수에 대 한 포인터입니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 에 대 한 포인터를 갖는 오버 로드 **상수** 에 대 한 포인터를 반환 **const**;는 버전에 대 한 포인터를은 비**const** 에 대 한 포인터를 반환 하는 비-**const** . 매크로 \_CRT\_CONST\_올바름\_오버 로드 모두 정의 됩니다는 **const** 및 비-**const** 이러한 함수의 버전은 사용할 수 있습니다. 비-필요한 경우**상수** 기호를 정의 하는 c + +에서는 c + + 오버 로드를 모두에 대 한 동작 \_CONST\_반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
