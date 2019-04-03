@@ -20,7 +20,7 @@ C++ 프로젝트 함수를 호출 하거나 정적 라이브러리 (.lib 파일)
 
 ## <a name="consuming-libraries-downloaded-via-vcpkg"></a>Vcpkg를 통해 다운로드 라이브러리를 사용 합니다.
 
-사용 하 여 다운로드 한 라이브러리를 사용 하 여 **vcpkg** 패키지 관리자에서 아래 지침을 무시할 수 있습니다. [vcpkg: Windows, Linux 및 MacOS 용 c + + 패키지 관리자](vcpkg.md#integrate-with-visual-studio-windows) 자세한 내용은 합니다.
+사용 하 여 다운로드 한 라이브러리를 사용 하 여 **vcpkg** 패키지 관리자에서 아래 지침을 무시할 수 있습니다. [vcpkg: Windows, Linux 및 MacOS 용 C++ 패키지 관리자](vcpkg.md#integrate-with-visual-studio-windows) 자세한 내용은 합니다.
 
 ## <a name="consuming-static-libraries"></a>정적 라이브러리를 사용합니다.
 
@@ -32,7 +32,7 @@ C++ 프로젝트 함수를 호출 하거나 정적 라이브러리 (.lib 파일)
 정적 라이브러리 솔루션의 일부가 아닌 경우:
 
 1. 응용 프로그램 프로젝트 노드를 마우스 오른쪽 단추로 클릭 **솔루션 탐색기** 를 선택한 후 **속성**합니다. 
-2. 에 **VC + + 디렉터리** 속성 페이지에서.lib 파일에 있는 디렉터리 경로 추가할 **라이브러리 경로** 라이브러리 헤더 파일의 경로 추가 하 고 **포함 디렉터리** .  
+2. 에 **VC++ 디렉터리** 속성 페이지에서.lib 파일에 있는 디렉터리 경로 추가할 **라이브러리 경로** 라이브러리 헤더 파일의 경로 추가 하 고 **포함 디렉터리** .  
 3. 에 **링커 > 입력** 속성 페이지에서.lib 파일의 이름을 **추가 종속성**합니다.
 
 ## <a name="dynamic-link-libraries"></a>동적 연결 라이브러리
@@ -46,7 +46,7 @@ C++ 프로젝트 함수를 호출 하거나 정적 라이브러리 (.lib 파일)
 
 ## <a name="com-objects"></a>COM 개체
 
-COM 개체를 사용 하 여 네이티브 c + + 응용 프로그램 해야 하 고 해당 개체가 *등록*, CoCreateInstance를 호출 하 고 전달 된 개체의 CLSID는 수행 해야 합니다. 시스템의 Windows 레지스트리를 로드 합니다. C + + CLI 프로젝트를 동일한 방식으로 또는에 대 한 참조를 추가 하 여 COM 개체를 사용할 수 있습니다는 **참조 추가 > COM** 목록과 사용을 통해 해당 [런타임 호출 가능 래퍼](/dotnet/framework/interop/runtime-callable-wrapper)합니다. 
+COM 개체를 사용 하 여 네이티브 C++ 응용 프로그램 해야 하 고 해당 개체가 *등록*, CoCreateInstance를 호출 하 고 전달 된 개체의 CLSID는 수행 해야 합니다.  시스템의 Windows 레지스트리를 로드 합니다. C++ CLI 프로젝트를 동일한 방식으로 또는에 대 한 참조를 추가 하 여 COM 개체를 사용할 수 있습니다는 **참조 추가 > COM** 목록과 사용을 통해 해당 [런타임 호출 가능 래퍼](/dotnet/framework/interop/runtime-callable-wrapper)합니다. 
 
 ## <a name="net-assemblies-and-windows-runtime-components"></a>.NET 어셈블리와 Windows 런타임 구성 요소
 
