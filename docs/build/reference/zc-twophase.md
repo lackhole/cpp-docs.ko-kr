@@ -9,12 +9,12 @@ helpviewer_keywords:
 - twoPhase
 - disable two-phase name lookup
 - /Zc:twoPhase
-ms.openlocfilehash: b9e94f131448cb9be6c31962ecd19607ceb1b708
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 5f990181fd1e606cf9d7dd33242752bed33aa456
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58776039"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898754"
 ---
 # <a name="zctwophase--disable-two-phase-name-lookup"></a>/Zc: twophase-(2 단계 이름 조회 사용 안 함)
 
@@ -22,7 +22,7 @@ ms.locfileid: "58776039"
 
 ## <a name="syntax"></a>구문
 
-> **/Zc:twoPhase-**
+> **/Zc: twophase-**
 
 ## <a name="remarks"></a>설명
 
@@ -124,7 +124,7 @@ NS::func(NS::S)
 
 ### <a name="update-your-code-for-two-phase-conformance"></a>2 단계 규칙에 대 한 코드 업데이트
 
-이전 버전의 컴파일러 키워드가 필요 하지 않습니다 `template` 고 `typename` c + + 표준에 필요한 모든 곳입니다. 이러한 키워드는 컴파일러 종속 이름이 구문 분석 해야 조회의 첫 번째 단계는 방법을 명확 하 게 일부 위치에 필요 합니다. 예를 들어:
+이전 버전의 컴파일러 키워드가 필요 하지 않습니다 `template` 고 `typename` c + + 표준에 필요한 모든 곳입니다. 이러한 키워드는 컴파일러 종속 이름이 구문 분석 해야 조회의 첫 번째 단계는 방법을 명확 하 게 일부 위치에 필요 합니다. 예를 들면,
 
 `T::Foo<a || b>(c);`
 
@@ -134,7 +134,7 @@ NS::func(NS::S)
 
 Visual Studio 2017 버전 15.3에서 이전 버전에서는 시점과 **/zc: twophase-** 를 지정 하면 컴파일러가 허용 하지 않고이 코드는 `template` 키워드 의인수를사용하여함수템플릿호출으로해석`a || b`이므로 매우 제한 된 방식으로 템플릿 구문 분석 합니다. 위의 코드 첫 번째 단계에서 전혀 구문 분석 되지 않습니다. 두 번째 단계 컨텍스트가 충분 하 게 `T::Foo` 이므로 변수를 사용 하지 않고 템플릿을 컴파일러 키워드를 적용 하지 않습니다.
 
-키워드를 제거 하 여이 동작을 확인할 수도 있습니다 `typename` 함수 템플릿 본문, 이니셜라이저, 기본 인수 및 noexcept 인수 이름 앞입니다. 예를 들어:
+키워드를 제거 하 여이 동작을 확인할 수도 있습니다 `typename` 함수 템플릿 본문, 이니셜라이저, 기본 인수 및 noexcept 인수 이름 앞입니다. 예를 들면,
 
 ```cpp
 template<typename T>
@@ -158,7 +158,7 @@ typename T::template X<T>::TYPE func(typename T::TYPE)
 
 아래 **/zc: twophase-** 하며 이전 컴파일러에서 컴파일러만는 `template` 2 줄에는 키워드입니다. 기본적으로 규칙 모드에서 컴파일러가 이제도 필요 합니다 `template` 키워드를 나타내는 4 줄 `T::X<T>` 템플릿입니다. 이 키워드 없는 코드가 살펴보고 표준에 맞게 코드를 제공 합니다.
 
-규칙과 관련 된 문제에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 c + + 규칙 향상](../../overview/cpp-conformance-improvements-2017.md) 하 고 [비표준 동작](../../cpp/nonstandard-behavior.md)합니다.
+규칙과 관련 된 문제에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 c + + 규칙 향상](../../overview/cpp-conformance-improvements.md) 하 고 [비표준 동작](../../cpp/nonstandard-behavior.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 

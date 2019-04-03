@@ -6,12 +6,12 @@ helpviewer_keywords:
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: cad88af9e81a60857fbbd6c90cf81cdcafbd7a12
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: a45cee1abd9351a8fef56769706fe8944a7965b8
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58781473"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898741"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -636,7 +636,7 @@ Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
 ```
 
-**Visual Studio 2017 버전 15.7 이상:** 합니다 **를 사용 하 여** 문에서 **/std: c + + 17** 모드 제외 생성자와 동일한 서명이 파생된 클래스에서 기본 클래스에서 모든 생성자를 범위로 가져옵니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다. 참고 항목 [Visual Studio 2017 버전 15.7의에서 개선 사항](../overview/cpp-conformance-improvements-2017.md#improvements_157)합니다.
+**Visual Studio 2017 버전 15.7 이상:** 합니다 **를 사용 하 여** 문에서 **/std: c + + 17** 모드 제외 생성자와 동일한 서명이 파생된 클래스에서 기본 클래스에서 모든 생성자를 범위로 가져옵니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다. 참고 항목 [Visual Studio 2017 버전 15.7의에서 개선 사항](../overview/cpp-conformance-improvements.md#improvements_157)합니다.
 
 클래스 템플릿은 해당 형식이 기본 클래스를 지정하는 경우 형식 인수에서 모든 생성자를 상속할 수 있습니다.
 
