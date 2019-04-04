@@ -30,7 +30,7 @@ ms.locfileid: "57828087"
 
 ### <a name="to-specify-a-custom-build-tool"></a>사용자 지정 빌드 도구를 지정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](working-with-project-properties.md)합니다.
 
 1. **구성 속성**을 선택하여 **구성** 상자를 사용하도록 설정합니다. **구성** 상자에서 사용자 지정 빌드 도구를 지정하려는 구성을 선택합니다.
 
