@@ -24,11 +24,11 @@ A *Visual Studio 프로젝트* 프로젝트를 MSBuild 빌드 시스템에 기�
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-선택 하 여 c + + 프로젝트를 만들 수 있습니다 **파일 &#124; 새로 만들기 &#124; 프로젝트**, 왼쪽된 창에서 Visual c + +를 선택 합니다. 가운데 창에서 프로젝트 템플릿 목록을 표시 합니다. 
+선택 하 여 C++ 프로젝트를 만들 수 있습니다 **파일 &#124; 새로 만들기 &#124; 프로젝트**, 왼쪽된 창에서 Visual C++를 선택 합니다. 가운데 창에서 프로젝트 템플릿 목록을 표시 합니다. 
 
    ![프로젝트 템플릿](../overview/media/vs2017-new-project.png " Visual Studio 2017 새 프로젝트 대화 상자")
 
-Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 c + + 프로젝트 템플릿](reference/visual-cpp-project-types.md)합니다. 사용자 고유의 프로젝트 템플릿을 만들 수 있습니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](/visualstudio/ide/how-to-create-project-templates)합니다.
+Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 C++ 프로젝트 템플릿](reference/visual-cpp-project-types.md)합니다. 사용자 고유의 프로젝트 템플릿을 만들 수 있습니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](/visualstudio/ide/how-to-create-project-templates)합니다.
 
 프로젝트를 만든 후에 저장 되는 [솔루션 탐색기](/visualstudio/ide/solutions-and-projects-in-visual-studio) 창:
 
@@ -46,7 +46,7 @@ Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자�
 
 ## <a name="set-compiler-options-and-other-build-properties"></a>컴파일러 옵션 및 기타 빌드 속성 설정
 
-프로젝트를 마우스 오른쪽 단추로 프로젝트의 빌드 설정을 구성 하려면 **솔루션 탐색기** 선택한 **속성**합니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)을 참조합니다.
+프로젝트를 마우스 오른쪽 단추로 프로젝트의 빌드 설정을 구성 하려면 **솔루션 탐색기** 선택한 **속성**합니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](working-with-project-properties.md)합니다.
 
 ## <a name="compile-and-run"></a>컴파일 및 실행
 
