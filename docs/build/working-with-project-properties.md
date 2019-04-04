@@ -48,7 +48,7 @@ IDE에서 프로젝트를 빌드하는 데 필요한 모든 정보는 *속성*�
 
 - [C++ 디버그 구성에 대한 프로젝트 설정](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)
 - [디버거 설정 및 준비](/visualstudio/debugger/debugger-settings-and-preparation)
-- [디버깅 준비: Visual c + + 프로젝트 형식](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
+- [디버깅 준비: Visual C++ 프로젝트 형식](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
 - [Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)
 
 ## <a name="c-compiler-and-linker-options"></a>C++ 컴파일러 및 링커 옵션

@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio의 C/C++ 프로젝트 및 빌드 시스템
 ms.description: Use Visual Studio to compile and build C++ projects for Windows, ARM or Linux based on any project system.
 ms.date: 12/08/2018
@@ -25,7 +25,7 @@ Visual Studio 2017을 사용하여 코드를 Visual Studio 프로젝트로 변�
 
 ## <a name="c-compilation"></a>C++ 컴파일
 
-하 *빌드* 하나 이상의 파일에서 소스 코드를 컴파일하고 다음 실행 파일 (.exe), 동적 부하 라이브러리 (.dll) 또는 정적 라이브러리 (.lib)에 해당 파일을 연결 하는 c + + 프로그램을 의미 합니다. 
+C++ 프로그램을 만들려면 하나 이상의 파일에서 소스 코드를 컴파일한 다음 해당 파일을 실행 파일(.exe), 동적 부하 라이브러리(.dll) 또는 정적 라이브러리(.lib)로 링크해야 합니다. 
 
 기본 C++ 컴파일에는 세 가지 주요 단계가 포함됩니다.
 
@@ -70,7 +70,7 @@ cl /EHsc hello.cpp
 
 [CMake 프로젝트](cmake-projects-in-visual-studio.md) 코드, 빌드 및 Visual Studio의 CMake 프로젝트를 배포 하는 방법입니다.
 
-[폴더 열기 프로젝트](open-folder-projects-cpp.md) 모든 임의의 빌드 시스템 또는 없습니다 빌드 시스템을 기반으로 Visual Studio를 사용 하 여 코딩, 빌드 및 c + + 프로젝트를 배포 하는 방법입니다. 전혀. 
+[오픈 폴더 프로젝트](open-folder-projects-cpp.md) Visual Studio를 사용하여 임의의 빌드 시스템을 기반으로 또는 빌드 시스템 없이 C++ 프로젝트를 코딩, 빌드 및 배포하는 방법입니다.
 
 [릴리스 빌드](release-builds.md) 만들고 최적화 된 릴리스 문제를 해결 하는 방법을 최종 사용자에 게 배포에 대 한 빌드합니다.
 
