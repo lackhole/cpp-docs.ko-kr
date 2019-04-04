@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3070
 ms.assetid: ac88584d-40a6-4176-90f3-2371c3c935f2
-ms.openlocfilehash: 7e1175fc1289a2504795a9d19bcd6274462b7a84
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3825e9e77564af9c40bc08aff560cdf533f2b5c0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677840"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769513"
 ---
 # <a name="compiler-error-c3070"></a>컴파일러 오류 C3070
 
 'property': 속성에 'set' 메서드가 없습니다.
 
-속성의 set 접근자 메서드가 정의되지 않았습니다. 자세한 내용은 [property](../../windows/property-cpp-component-extensions.md)을 참조하세요.
+속성의 set 접근자 메서드가 정의되지 않았습니다. 자세한 내용은 [property](../../extensions/property-cpp-component-extensions.md)을 참조하세요.
 
 다음 샘플에서는 C3070을 생성합니다.
 

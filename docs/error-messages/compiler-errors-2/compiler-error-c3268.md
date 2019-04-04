@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3268
 ms.assetid: d74a630c-daea-4e29-9759-83efef7fb184
-ms.openlocfilehash: c766488b29273f321feffa8e38a97e54454db7b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d9954c12fb1065a4aa5e7afbdecd1f96758acaf9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480537"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778010"
 ---
 # <a name="compiler-error-c3268"></a>컴파일러 오류 C3268
 
@@ -21,7 +21,7 @@ ms.locfileid: "50480537"
 
 **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다.
 
-참조 [제네릭](../../windows/generics-cpp-component-extensions.md) 자세한 내용은 합니다.
+참조 [제네릭](../../extensions/generics-cpp-component-extensions.md) 자세한 내용은 합니다.
 
 ## <a name="example"></a>예제
 

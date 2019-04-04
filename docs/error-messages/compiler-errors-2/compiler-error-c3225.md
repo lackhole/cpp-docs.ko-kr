@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3225
 ms.assetid: f5f66973-256e-4298-ac46-c87819cbde34
-ms.openlocfilehash: 81316864c9c04c18ca1c96d1e74ad9988734eb72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cae0572002c849fb5aed771993d3a89ed82c726a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541494"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778314"
 ---
 # <a name="compiler-error-c3225"></a>컴파일러 오류 C3225
 
@@ -19,7 +19,7 @@ ms.locfileid: "50541494"
 
 제네릭 형식 인수에 올바른 형식의 없습니다.
 
-자세한 내용은 [제네릭](../../windows/generics-cpp-component-extensions.md)을 참조하세요.
+자세한 내용은 [제네릭](../../extensions/generics-cpp-component-extensions.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

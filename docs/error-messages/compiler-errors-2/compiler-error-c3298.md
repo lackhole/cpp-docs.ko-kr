@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3298
 ms.assetid: 458c2680-95bb-4d5e-895f-ce4115844193
-ms.openlocfilehash: 8a2d8f6ab72a5e72a646cb1fca64635bc72dd2ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fe6913d402c6ce4df3551c159eb56a12590799cb
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492839"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773903"
 ---
 # <a name="compiler-error-c3298"></a>컴파일러 오류 C3298
 
@@ -19,7 +19,7 @@ ms.locfileid: "50492839"
 
 제약 조건에 대해 함께 사용할 수 없는 특성을 지정할 수 없습니다. 예를 들어 제네릭 형식 매개 변수를 값 형식과 참조 형식 둘 다로 제한할 수 없습니다.
 
-자세한 내용은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md)합니다.
+자세한 내용은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

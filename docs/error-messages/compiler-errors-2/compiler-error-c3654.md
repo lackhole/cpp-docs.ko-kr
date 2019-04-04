@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3654
 ms.assetid: 57d96e3f-6bbb-4eaa-934b-26c23b4ceb2e
-ms.openlocfilehash: eca5081daaaf92a7b95a076a1e93bc06799bd9f8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e66f0071a3d086c84a51c8b69e52b06643344c4d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649022"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779497"
 ---
 # <a name="compiler-error-c3654"></a>컴파일러 오류 C3654
 
 'text': 명시적 재정의에 구문 오류가 발생 했습니다.
 
-예기치 않은 문자열 명시적 재정의 했습니다. 자세한 내용은 [명시적으로 재정의](../../windows/explicit-overrides-cpp-component-extensions.md)합니다.
+예기치 않은 문자열 명시적 재정의 했습니다. 자세한 내용은 [명시적으로 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md)합니다.
 
 다음 샘플에서는 C3654 오류가 생성 됩니다.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3103
 ms.assetid: 7984bd3e-d51d-43e4-b6f4-08c1e9fb9704
-ms.openlocfilehash: 8dae731e36177dc199554615f74e92ebc5f6f5dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6a68e39ac92433eadacd666861f9e00431e4a34a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531948"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780147"
 ---
 # <a name="compiler-error-c3103"></a>컴파일러 오류 C3103
 
@@ -19,7 +19,7 @@ ms.locfileid: "50531948"
 
 특성에는 명명 된 인수를 반복할 수 없습니다.
 
-자세한 내용은 [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md)을 참조하세요.
+자세한 내용은 [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

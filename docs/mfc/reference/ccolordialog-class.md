@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CColorDialog [MFC], OnColorOK
 - CColorDialog [MFC], m_cc
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
-ms.openlocfilehash: 39868ed27a0dfb8756b4829ea7c378c798bd2ff3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: bc9bc76b328359d4c8ec7796de7dfaa7d3a9cf2c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304212"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772841"
 ---
 # <a name="ccolordialog-class"></a>CColorDialog 클래스
 
@@ -268,7 +268,7 @@ RGB 색 값입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 DRAWCLI](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 MDI](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 DRAWCLI](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog 클래스](../../mfc/reference/ccommondialog-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)

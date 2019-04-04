@@ -57,12 +57,12 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: ed2c0b11dfdc6882352c87166b74b2fab327fcd3
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: cb92c19dd839fc09ed803e170a2762e4ac7cd494
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418609"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770808"
 ---
 # <a name="cdatasource-class"></a>CDataSource 클래스
 
@@ -98,7 +98,7 @@ class CDataSource
 
 단일 연결에 대 한 하나 이상의 데이터베이스 세션을 만들 수 있습니다. 이러한 세션으로 표시 됩니다 `CSession`합니다. 호출 해야 합니다 [cdatasource:: Open](../../data/oledb/cdatasource-open.md) 사용 하 여 세션을 만들기 전에 연결을 열지 `CSession::Open`합니다.
 
-사용 하는 방법의 예 `CDataSource`를 참조 합니다 [CatDB](../../visual-cpp-samples.md) 샘플입니다.
+사용 하는 방법의 예 `CDataSource`를 참조 합니다 [CatDB](../../overview/visual-cpp-samples.md) 샘플입니다.
 
 ## <a name="close"></a> CDataSource::Close
 

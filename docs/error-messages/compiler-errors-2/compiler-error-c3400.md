@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3400
 ms.assetid: d44169a8-73b6-4766-b406-b3a6c93f2a4d
-ms.openlocfilehash: 70d23e22780b6efc8220675655d8ed095ca50bab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4b4cb64da83115ab5b6a5234cda2ea3c7ba3a53
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557380"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768629"
 ---
 # <a name="compiler-error-c3400"></a>컴파일러 오류 C3400
 
@@ -19,7 +19,7 @@ ms.locfileid: "50557380"
 
 컴파일러가 순환 제약 조건을 검색했습니다.
 
-자세한 내용은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md)합니다.
+자세한 내용은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

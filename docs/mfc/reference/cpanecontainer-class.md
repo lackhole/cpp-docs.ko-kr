@@ -120,12 +120,12 @@ helpviewer_keywords:
 - CPaneContainer [MFC], StoreRecentDockSiteInfo
 - CPaneContainer [MFC], StretchPaneContainer
 ms.assetid: beb79e08-f611-4d66-ba04-053baa79bf86
-ms.openlocfilehash: 099f1cccd178068f9b96bda6193b5ee9df3b66c3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: fab7415a71d8029952a840b83aae0f066c09084c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274962"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775363"
 ---
 # <a name="cpanecontainer-class"></a>CPaneContainer 클래스
 
@@ -214,7 +214,7 @@ class CPaneContainer : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에서는의 인스턴스를 생성 하는 방법에 설명 합니다 `CPaneContainer` 클래스입니다. 이 코드 조각은의 일부인 합니다 [창 크기 설정 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는의 인스턴스를 생성 하는 방법에 설명 합니다 `CPaneContainer` 클래스입니다. 이 코드 조각은의 일부인 합니다 [창 크기 설정 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanecontainer-class_1.h)]
 [!code-cpp[NVC_MFC_SetPaneSize#1](../../mfc/reference/codesnippet/cpp/cpanecontainer-class_2.cpp)]

@@ -1,4 +1,4 @@
----
+﻿---
 title: 라이브러리 및 C++ 프로젝트의 구성 요소를 사용합니다.
 ms.date: 12/10/2018
 f1_keywords:
@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: 8daba00432d7f14c8517da3ed4dc506cfd80865a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: eb4d970527ba919af10eadab7c907f5108767b9b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827192"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780472"
 ---
 # <a name="consuming-libraries-and-components"></a>라이브러리 및 구성 요소를 사용합니다.
 
@@ -20,7 +20,7 @@ C++ 프로젝트 함수를 호출 하거나 정적 라이브러리 (.lib 파일)
 
 ## <a name="consuming-libraries-downloaded-via-vcpkg"></a>Vcpkg를 통해 다운로드 라이브러리를 사용 합니다.
 
-사용 하 여 다운로드 한 라이브러리를 사용 하 여 **vcpkg** 패키지 관리자에서 아래 지침을 무시할 수 있습니다. [vcpkg: Windows, Linux 및 MacOS 용 C++ 패키지 관리자](../vcpkg.md#integrate-with-visual-studio-windows) 자세한 내용은 합니다.
+사용 하 여 다운로드 한 라이브러리를 사용 하 여 **vcpkg** 패키지 관리자에서 아래 지침을 무시할 수 있습니다. [vcpkg: Windows, Linux 및 MacOS 용 C++ 패키지 관리자](vcpkg.md#integrate-with-visual-studio-windows) 자세한 내용은 합니다.
 
 ## <a name="consuming-static-libraries"></a>정적 라이브러리를 사용합니다.
 
@@ -46,7 +46,7 @@ C++ 프로젝트 함수를 호출 하거나 정적 라이브러리 (.lib 파일)
 
 ## <a name="com-objects"></a>COM 개체
 
-COM 개체를 사용 하 여 네이티브 C++ 응용 프로그램 해야 하 고 해당 개체가 *등록*, CoCreateInstance를 호출 하 고 전달 된 개체의 CLSID는 수행 해야 합니다. 시스템의 Windows 레지스트리를 로드 합니다. C++ CLI 프로젝트를 동일한 방식으로 또는에 대 한 참조를 추가 하 여 COM 개체를 사용할 수 있습니다는 **참조 추가 > COM** 목록과 사용을 통해 해당 [런타임 호출 가능 래퍼](/dotnet/framework/interop/runtime-callable-wrapper)합니다. 
+COM 개체를 사용 하 여 네이티브 C++ 응용 프로그램 해야 하 고 해당 개체가 *등록*, CoCreateInstance를 호출 하 고 전달 된 개체의 CLSID는 수행 해야 합니다.  시스템의 Windows 레지스트리를 로드 합니다. C++ CLI 프로젝트를 동일한 방식으로 또는에 대 한 참조를 추가 하 여 COM 개체를 사용할 수 있습니다는 **참조 추가 > COM** 목록과 사용을 통해 해당 [런타임 호출 가능 래퍼](/dotnet/framework/interop/runtime-callable-wrapper)합니다. 
 
 ## <a name="net-assemblies-and-windows-runtime-components"></a>.NET 어셈블리와 Windows 런타임 구성 요소
 
@@ -167,4 +167,4 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 ## <a name="see-also"></a>참고 항목
 
 [C++ 프로젝트 속성 페이지 참조](reference/property-pages-visual-cpp.md)<br>
-[Visual Studio에서 속성을 빌드하고 C++ 컴파일러를 설정 합니다.](working-with-project-properties.md)
+[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)

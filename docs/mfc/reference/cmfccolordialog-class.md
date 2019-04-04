@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMFCColorDialog [MFC], SetPageOne
 - CMFCColorDialog [MFC], SetPageTwo
 ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579
-ms.openlocfilehash: d94c223ed1e0b236ae8565d13a9f2c9652b6eb84
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1b9f57e46d5ac74dd52f7ddb7ebd90f8888891e3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270312"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772753"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog 클래스
 
@@ -100,7 +100,7 @@ class CMFCColorDialog : public CDialogEx
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 색 대화 상자에서 다양 한 메서드를 사용 하 여 구성 하는 방법에 설명 합니다 `CMFCColorDialog` 클래스입니다. 이 예제에서는 현재 및 대화 상자의 새 색을 설정 하는 방법 및 색 대화의 두 속성 페이지에서 선택한 색의 빨강, 녹색 및 파랑 구성 요소를 설정 하는 방법을 보여 줍니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 색 대화 상자에서 다양 한 메서드를 사용 하 여 구성 하는 방법에 설명 합니다 `CMFCColorDialog` 클래스입니다. 이 예제에서는 현재 및 대화 상자의 새 색을 설정 하는 방법 및 색 대화의 두 속성 페이지에서 선택한 색의 빨강, 녹색 및 파랑 구성 요소를 설정 하는 방법을 보여 줍니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#3](../../mfc/reference/codesnippet/cpp/cmfccolordialog-class_1.cpp)]
 

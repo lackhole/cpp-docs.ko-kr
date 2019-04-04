@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3297
 ms.assetid: 2a718b4c-6cdb-4418-92c0-fc3a259431c4
-ms.openlocfilehash: 6df8fd3df023602f65c872dedd74da36bbbc6bd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e4661119680dff34dfaa43fb9ce71bf97150a8bd
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649919"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769539"
 ---
 # <a name="compiler-error-c3297"></a>컴파일러 오류 C3297
 
@@ -19,7 +19,7 @@ ms.locfileid: "50649919"
 
 값 클래스가 봉인되어 있습니다. 제약 조건이 값 클래스인 경우 다른 제약 조건이 파생될 수 없습니다.
 
-자세한 내용은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md)합니다.
+자세한 내용은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

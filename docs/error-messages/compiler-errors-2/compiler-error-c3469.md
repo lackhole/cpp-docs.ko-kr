@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3469
 ms.assetid: e23b0e5c-c704-4e67-a868-bf02c2055d85
-ms.openlocfilehash: 7ae0b7b779749a9787601a6046eadd80c2ba49d0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1e935fb90c93d6f301226f3e9029c04929f179ac
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571069"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773283"
 ---
 # <a name="compiler-error-c3469"></a>컴파일러 오류 C3469
 
@@ -19,7 +19,7 @@ ms.locfileid: "50571069"
 
 제네릭 클래스에서 형식 전달을 사용할 수 없습니다.
 
-자세한 내용은 [형식 전달 (C + + /cli CLI)](../../windows/type-forwarding-cpp-cli.md)합니다.
+자세한 내용은 [형식 전달 (C + + /cli CLI)](../../extensions/type-forwarding-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

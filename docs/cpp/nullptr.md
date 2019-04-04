@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - nullptr keyword [C++]
 ms.assetid: e9d80ea6-2506-4eb5-b47b-2349df085832
-ms.openlocfilehash: fc210679553c393143c7e94121dd75e19b934dd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57be8d71f1dac4f347ea6567c02a385719bb7306
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637114"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781083"
 ---
 # <a name="nullptr"></a>nullptr
 
 어떠한 원시 포인터 형식으로도 변환될 수 있는 `std::nullptr_t` 형식의 null 포인터 상수를 지정합니다. 헤더를 포함하지 않고 **nullptr** 키워드를 사용할 수 있지만, 코드에서 `std::nullptr_t` 형식을 사용하는 경우 `<cstddef>` 헤더를 포함하여 정의해야 합니다.
 
 > [!NOTE]
->  **nullptr** 키워드는 관리 코드 응용 프로그램을 위해 C++/CLI에서도 정의되며 ISO 표준 C++ 키워드와 상호 교환해서 사용할 수 없습니다. 관리 코드를 대상으로 하는 [/clr](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션을 사용하여 코드를 컴파일할 수 있는 경우, 컴파일러에서 네이티브 C++ 해석을 사용하도록 보장해야 하는 코드의 모든 줄에서 `__nullptr`을 사용합니다. 자세한 내용은 [nullptr](../windows/nullptr-cpp-component-extensions.md)을 참조하십시오.
+>  **nullptr** 키워드는 관리 코드 응용 프로그램을 위해 C++/CLI에서도 정의되며 ISO 표준 C++ 키워드와 상호 교환해서 사용할 수 없습니다. 관리 코드를 대상으로 하는 [/clr](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션을 사용하여 코드를 컴파일할 수 있는 경우, 컴파일러에서 네이티브 C++ 해석을 사용하도록 보장해야 하는 코드의 모든 줄에서 `__nullptr`을 사용합니다. 자세한 내용은 [nullptr](../extensions/nullptr-cpp-component-extensions.md)을 참조하십시오.
 
 ## <a name="remarks"></a>설명
 
@@ -27,4 +27,4 @@ NULL 또는 영(0)을 null 포인터 상수로 사용하지 마십시오. **null
 ## <a name="see-also"></a>참고 항목
 
 [C++ 키워드](../cpp/keywords-cpp.md)<br/>
-[nullptr](../windows/nullptr-cpp-component-extensions.md)
+[nullptr](../extensions/nullptr-cpp-component-extensions.md)(C + + /cli CLI)

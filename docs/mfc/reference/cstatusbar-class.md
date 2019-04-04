@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CStatusBar [MFC], SetPaneStyle
 - CStatusBar [MFC], SetPaneText
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
-ms.openlocfilehash: cb52f1138ba7ff01c6fbf2f7ec13d5f39e9422d8
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: d714159aa9fd52df682b1e5f3dbf3957bbef1b91
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57413396"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777339"
 ---
 # <a name="cstatusbar-class"></a>CStatusBar 클래스
 
@@ -92,8 +92,7 @@ class CStatusBar : public CControlBar
 
 상태 표시줄을 만들려면 다음이 단계를 수행 합니다.
 
-1. 
-  `CStatusBar` 개체를 생성합니다.
+1. `CStatusBar` 개체를 생성합니다.
 
 1. 호출 된 [만들기](#create) (또는 [CreateEx](#createex)) 상태 표시줄 창을 만들고에 연결 하는 함수는 `CStatusBar` 개체입니다.
 
@@ -507,8 +506,8 @@ True 이면 텍스트를 설정한 후 창에 무효화 됩니다.
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 CTRLBARS](../../visual-cpp-samples.md)<br/>
-[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar 클래스](../../mfc/reference/ccontrolbar-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CStatusBarCtrl 클래스](../../mfc/reference/cstatusbarctrl-class.md)<br/>

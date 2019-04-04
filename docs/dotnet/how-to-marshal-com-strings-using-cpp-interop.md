@@ -9,12 +9,12 @@ helpviewer_keywords:
 - data marshaling [C++], strings
 - COM [C++], marshaling strings
 ms.assetid: 06590759-bf99-4e34-a3a9-4527ea592cc2
-ms.openlocfilehash: baf3a2e6720cd2f72606cf5089e0409df602fee6
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: e86cf0b3e57eda9a0f4fa5fe2337d0c42de5669f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751520"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780875"
 ---
 # <a name="how-to-marshal-com-strings-using-c-interop"></a>방법: C + + Interop를 사용 하 여 COM 문자열 마샬링
 
@@ -28,7 +28,7 @@ ms.locfileid: "57751520"
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 BSTR (COM 프로그래밍에서 사용 하는 문자열 형식)를 전달할 수 있습니다 하는 방법을 보여 줍니다. 관리 되지 않는 함수에 관리 되는 합니다. 호출 함수는 관리 되는 <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> 내용의.NET System.String 표현 BSTR의 주소를 가져옵니다. 이 포인터를 사용 하 여 고정 [pin_ptr (C + + /cli CLI)](../windows/pin-ptr-cpp-cli.md) 관리 되지 않는 함수를 실행 하는 동안 해당 실제 주소는 가비지 컬렉션 주기 동안 변경 되지 않도록 확인 합니다. 가비지 수집기가 이동 될 때까지 메모리에서 허용 되지 않습니다는 [pin_ptr (C + + /cli CLI)](../windows/pin-ptr-cpp-cli.md) 범위를 벗어납니다.
+다음 예제에서는 BSTR (COM 프로그래밍에서 사용 하는 문자열 형식)를 전달할 수 있습니다 하는 방법을 보여 줍니다. 관리 되지 않는 함수에 관리 되는 합니다. 호출 함수는 관리 되는 <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> 내용의.NET System.String 표현 BSTR의 주소를 가져옵니다. 이 포인터를 사용 하 여 고정 [pin_ptr (C + + /cli CLI)](../extensions/pin-ptr-cpp-cli.md) 관리 되지 않는 함수를 실행 하는 동안 해당 실제 주소는 가비지 컬렉션 주기 동안 변경 되지 않도록 확인 합니다. 가비지 수집기가 이동 될 때까지 메모리에서 허용 되지 않습니다는 [pin_ptr (C + + /cli CLI)](../extensions/pin-ptr-cpp-cli.md) 범위를 벗어납니다.
 
 ```
 // MarshalBSTR1.cpp

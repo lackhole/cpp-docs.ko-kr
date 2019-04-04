@@ -7,12 +7,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], property sheets
 - tab dialog boxes
 ms.assetid: 09439f65-921d-45a2-b3cc-e13884a087b1
-ms.openlocfilehash: b33f123c7b024e0de0853f8d30211272fd8de58a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 974d6cc0004985544f1786139a9a89c61f00382f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267604"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770085"
 ---
 # <a name="property-sheets-mfc"></a>속성 시트(MFC)
 
@@ -38,7 +38,7 @@ ms.locfileid: "57267604"
 
 - [CPropertyPage 클래스](../mfc/reference/cpropertypage-class.md)
 
-- [샘플](../visual-cpp-samples.md)
+- [샘플](../overview/visual-cpp-samples.md)
 
 ## <a name="see-also"></a>참고자료
 

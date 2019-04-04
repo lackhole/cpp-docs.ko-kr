@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3868
 ms.assetid: f0e45c2a-2149-4885-a03b-0d230069f03a
-ms.openlocfilehash: 15152ee2e6535010b7045fe2d1362ba0064e3fbe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3d759d8e527bf38c7408f3497b27287e030d387e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529196"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771853"
 ---
 # <a name="compiler-error-c3868"></a>컴파일러 오류 C3868
 
 'type': 'parameter' 제네릭 매개 변수에서 제약 조건이 선언에 증명과 다
 
-여러 선언에 동일한 제네릭 제약 조건이 있어야 합니다.  자세한 내용은 [제네릭](../../windows/generics-cpp-component-extensions.md)을 참조하세요.
+여러 선언에 동일한 제네릭 제약 조건이 있어야 합니다.  자세한 내용은 [제네릭](../../extensions/generics-cpp-component-extensions.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

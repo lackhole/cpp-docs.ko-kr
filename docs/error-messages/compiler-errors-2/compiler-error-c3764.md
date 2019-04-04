@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3764
 ms.assetid: af5d254c-8d4a-4dda-aad9-3c5c1257c868
-ms.openlocfilehash: 498aefae4dfe8fd13184b9da1685494d533575dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2570ee9abb148b919242de7786cd6fa91765286f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556431"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773582"
 ---
 # <a name="compiler-error-c3764"></a>컴파일러 오류 C3764
 
 'override_function': 기본 클래스 메서드 'base_class_function'를 재정의할 수 없습니다.
 
-컴파일러가 잘못 된 형식의 재정의 발견 했습니다. 예를 들어, 기본 클래스 함수가 없습니다 `virtual`합니다. 자세한 내용은 [재정의](../../windows/override-cpp-component-extensions.md)합니다.
+컴파일러가 잘못 된 형식의 재정의 발견 했습니다. 예를 들어, 기본 클래스 함수가 없습니다 `virtual`합니다. 자세한 내용은 [재정의](../../extensions/override-cpp-component-extensions.md)합니다.
 
 ## <a name="example"></a>예제
 

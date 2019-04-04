@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CContextMenuManager [MFC], ShowPopupMenu
 - CContextMenuManager [MFC], TrackPopupMenu
 ms.assetid: 1de20640-243c-47e1-85de-1baa4153bc83
-ms.openlocfilehash: 594b78fd36dcb1ff92c63867688c38eac7520eba
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c8a51a33c69b09d0ecd61520b5f1c9ff18c290a0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304337"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779796"
 ---
 # <a name="ccontextmenumanager-class"></a>CContextMenuManager 클래스
 
@@ -81,7 +81,7 @@ class CContextMenuManager : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예에서는 메뉴에 추가 하는 방법에 설명를 `CContextMenuManager` 개체 및 방법 활성 팝업 메뉴 닫기 때는 `CContextMenuManager` 개체에 새 팝업 메뉴가 표시 됩니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../visual-cpp-samples.md)합니다.
+다음 예에서는 메뉴에 추가 하는 방법에 설명를 `CContextMenuManager` 개체 및 방법 활성 팝업 메뉴 닫기 때는 `CContextMenuManager` 개체에 새 팝업 메뉴가 표시 됩니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_CustomPages#4](../../mfc/reference/codesnippet/cpp/ccontextmenumanager-class_1.cpp)]
 

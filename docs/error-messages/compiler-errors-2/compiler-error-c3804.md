@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3804
 ms.assetid: 7c4cda28-ec96-4d04-937b-36dbd9944722
-ms.openlocfilehash: e83380696aca3d6d45c235925b830bef9e3061a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c3c00d1d07306a9e8dc67d3f75a5cb25d8f03aee
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544588"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770294"
 ---
 # <a name="compiler-error-c3804"></a>컴파일러 오류 C3804
 
@@ -19,7 +19,7 @@ ms.locfileid: "50544588"
 
 접근자 함수를 정적 수 특수 속성을 정의 하는 경우 또는 인스턴스를 하나만 있습니다.
 
-자세한 내용은 [property](../../windows/property-cpp-component-extensions.md) 를 참조하세요.
+자세한 내용은 [property](../../extensions/property-cpp-component-extensions.md) 를 참조하세요.
 
 ## <a name="example"></a>예제
 

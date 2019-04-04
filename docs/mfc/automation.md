@@ -20,12 +20,12 @@ helpviewer_keywords:
 - MFC COM, Automation
 - methods [MFC], Automation
 ms.assetid: 329117f0-c1aa-4680-a901-bfb71277dfba
-ms.openlocfilehash: b26a08bbe9ef9b9151910871201abe05a44d2f6c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7818aa708a762f2a284be029a6c3f3facd971d9a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265566"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767732"
 ---
 # <a name="automation"></a>자동화
 
@@ -55,17 +55,17 @@ Microsoft Excel이나 Microsoft Visual C++ 같은 대부분의 상업용 애플�
 
 ## <a name="automation-samples"></a>자동화 샘플
 
-- [AUTOCLIK](../visual-cpp-samples.md) 자동화 기술을 익히고 원격 자동화를 이해하도록 도와 줍니다.
+- [AUTOCLIK](../overview/visual-cpp-samples.md) 자동화 기술을 익히고 원격 자동화를 이해하도록 도와 줍니다.
 
-- [ACDUAL](../visual-cpp-samples.md) 자동화 서버 응용 프로그램에 이중 인터페이스를 추가합니다.
+- [ACDUAL](../overview/visual-cpp-samples.md) 자동화 서버 응용 프로그램에 이중 인터페이스를 추가합니다.
 
-- [CALCDRIV](../visual-cpp-samples.md) MFCCALC를 구동하는 자동화 클라이언트 응용 프로그램입니다.
+- [CALCDRIV](../overview/visual-cpp-samples.md) MFCCALC를 구동하는 자동화 클라이언트 응용 프로그램입니다.
 
-- [INPROC](../visual-cpp-samples.md) In-Process 자동화 서버 응용 프로그램의 예를 보여 줍니다.
+- [INPROC](../overview/visual-cpp-samples.md) In-Process 자동화 서버 응용 프로그램의 예를 보여 줍니다.
 
-- [IPDRIVE](../visual-cpp-samples.md) INPROC를 구동하는 자동화 클라이언트 응용 프로그램입니다.
+- [IPDRIVE](../overview/visual-cpp-samples.md) INPROC를 구동하는 자동화 클라이언트 응용 프로그램입니다.
 
-- [MFCCALC](../visual-cpp-samples.md) 자동화 클라이언트 응용 프로그램의 예를 보여 줍니다.
+- [MFCCALC](../overview/visual-cpp-samples.md) 자동화 클라이언트 응용 프로그램의 예를 보여 줍니다.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
 

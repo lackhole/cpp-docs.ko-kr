@@ -19,12 +19,12 @@ helpviewer_keywords:
 - ambient properties
 - controls [ATL], properties
 ms.assetid: 55368c27-bd16-45a7-b701-edb36157c8e8
-ms.openlocfilehash: 29eeb31c0823a0614fa1404cf7efc1c281bab3a4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ffbec7c1a83c0dd829878f4c73340528d32fb852
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261585"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771554"
 ---
 # <a name="ccomcontrol-class"></a>CComControl 클래스
 
@@ -73,7 +73,7 @@ class ATL_NO_VTABLE CComControl : public CComControlBase,
 
 컨트롤을 만드는 방법에 대 한 자세한 내용은 참조는 [ATL 자습서](../../atl/active-template-library-atl-tutorial.md)합니다. ATL 프로젝트 마법사에 대 한 자세한 내용은 문서 참조 [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)합니다.
 
-데모를 보려면 `CComControl` 메서드 및 데이터 멤버를 참조 합니다 [CIRC](../../visual-cpp-samples.md) 샘플입니다.
+데모를 보려면 `CComControl` 메서드 및 데이터 멤버를 참조 합니다 [CIRC](../../overview/visual-cpp-samples.md) 샘플입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 

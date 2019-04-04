@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - override specifiers in native compilation, overriding
 ms.assetid: d0551836-9ac7-41eb-a6e9-a4b3ef60767d
-ms.openlocfilehash: 2c9238eab1627b0494c4073c88032c488fdfb828
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: db74ef226242ec8f4f70f2769fbc8ba102a808c8
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752387"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777183"
 ---
 # <a name="how-to-declare-override-specifiers-in-native-compilations-ccli"></a>방법: 네이티브 컴파일에 Override 지정자 선언 (C + + /cli CLI)
 
-[봉인](../windows/sealed-cpp-component-extensions.md), [추상](../windows/abstract-cpp-component-extensions.md), 및 [재정의](../windows/override-cpp-component-extensions.md) 사용 하지 않는 컴파일에 사용할 **/ZW** 또는 [/clr](../build/reference/clr-common-language-runtime-compilation.md)합니다.
+[봉인](../extensions/sealed-cpp-component-extensions.md), [추상](../extensions/abstract-cpp-component-extensions.md), 및 [재정의](../extensions/override-cpp-component-extensions.md) 사용 하지 않는 컴파일에 사용할 **/ZW** 또는 [/clr](../build/reference/clr-common-language-runtime-compilation.md)합니다.
 
 > [!NOTE]
 >  ISO C + + 11 표준 언어에는 [재정의](../cpp/override-specifier.md) 식별자와 [최종](../cpp/final-specifier.md) 식별자와 Visual Studio 사용에서을 지 `final` 대신 `sealed` 는 코드에서 네이티브 전용으로 컴파일됩니다.
@@ -88,4 +88,4 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[Override 지정자](../windows/override-specifiers-cpp-component-extensions.md)
+[Override 지정자](../extensions/override-specifiers-cpp-component-extensions.md)

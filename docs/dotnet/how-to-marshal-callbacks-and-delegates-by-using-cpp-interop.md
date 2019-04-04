@@ -10,12 +10,12 @@ helpviewer_keywords:
 - marshaling [C++], callbacks and delegates
 - callbacks [C++], marshaling
 ms.assetid: 2313e9eb-5df9-4367-be0f-14b4712d8d2d
-ms.openlocfilehash: d3814ffbcd23168a9727b1b1d73e2c825639a9c5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: f8088bf90162fd2177599c252b0eee6332d61289
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739225"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766939"
 ---
 # <a name="how-to-marshal-callbacks-and-delegates-by-using-c-interop"></a>방법: C + + Interop를 사용 하 여 콜백 및 대리자 마샬링
 
@@ -27,7 +27,7 @@ ms.locfileid: "57739225"
 
 다음 예제에서는 관리 되는 대리자를 트리거하는 관리 되지 않는 API를 구성 하는 방법에 설명 합니다. 관리 되는 대리자가 만들어진 interop 메서드 중 하나 및 <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%2A>, 대리자에 대 한 기본 진입점을 검색 하는 데 사용 됩니다. 그러면이 주소 지식이 없는 관리 되는 함수로 구현 되는 팩트를 사용 하 여 호출 하는 관리 되지 않는 함수에 전달 됩니다.
 
-알 수 있습니다 하는 것이 가능 하지만 pin에 필요 하지 않은 사용 하 여 대리자 [pin_ptr (C + + CLI)](../windows/pin-ptr-cpp-cli.md) 재배치 하거나 가비지 수집기에 의해 삭제 하지 못하게 합니다. 중간 가비지 수집을 방지가 필요 하지만 고정 컬렉션을 방지 하지만 또한 재배치를 방지 하는 대로 필요한 것 보다 더 많은 보호를 제공 합니다.
+알 수 있습니다 하는 것이 가능 하지만 pin에 필요 하지 않은 사용 하 여 대리자 [pin_ptr (C + + CLI)](../extensions/pin-ptr-cpp-cli.md) 재배치 하거나 가비지 수집기에 의해 삭제 하지 못하게 합니다. 중간 가비지 수집을 방지가 필요 하지만 고정 컬렉션을 방지 하지만 또한 재배치를 방지 하는 대로 필요한 것 보다 더 많은 보호를 제공 합니다.
 
 대리자를 가비지 컬렉션에서 찾을 다시는 아무런 영향이 없습니다 해도 내부에 있는 관리 되는 콜백 따라서 <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> 대리자를 대리자의 재배치를 허용 하지만 삭제를 방지에 대 한 참조를 추가 하는 데 사용 됩니다. Pin_ptr 대신 GCHandle을 사용 하면 관리 되는 힙의 조각화 가능성이 줄어듭니다.
 

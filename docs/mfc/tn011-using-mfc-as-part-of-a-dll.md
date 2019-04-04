@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DLLs [MFC], linking
 - MFC DLLs [MFC], linking regular MFC DLLs to MFC
 ms.assetid: 76753e9c-59dc-40f6-b6a7-f6bb9a7c4190
-ms.openlocfilehash: 63e97c3b9260465259d76cf6996d1d389f65ee41
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7e9fda44e2af4ec32bae6299fbcc0eda17984f9b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326454"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769734"
 ---
 # <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: DLL의 일부로 MFC 사용
 
@@ -57,7 +57,7 @@ MFC를 사용 하는 응용 프로그램과 DLL을 원하는 경우 MFC 라이�
 
 응용 프로그램과 DLL 인터페이스 (Api)를 명시적으로 내보내야 합니다. 낮은 대역폭 되도록 사용자 인터페이스를 정의 하 고 가능 하면 C 인터페이스만 사용 하 여 하는 것이 좋습니다. 직접 C 인터페이스는 더 복잡 한 c + + 클래스 보다 관리 하기가 쉽습니다.
 
-C 및 c + + 파일에서 포함 될 수 있는 별도 헤더에 Api를 배치 합니다. MFC 고급 개념 샘플에서 ScreenCap.h 헤더를 참조 하세요 [DLLScreenCap](../visual-cpp-samples.md) 예입니다. 함수를 내보내려면에 입력 합니다 `EXPORTS` 모듈 정의 파일의 섹션 (합니다. DEF) 하거나 포함 `__declspec(dllexport)` 함수 정의에 있습니다. 사용 하 여 `__declspec(dllimport)` 클라이언트 실행 파일에 이러한 함수를 가져오려고 합니다.
+C 및 c + + 파일에서 포함 될 수 있는 별도 헤더에 Api를 배치 합니다. MFC 고급 개념 샘플에서 ScreenCap.h 헤더를 참조 하세요 [DLLScreenCap](../overview/visual-cpp-samples.md) 예입니다. 함수를 내보내려면에 입력 합니다 `EXPORTS` 모듈 정의 파일의 섹션 (합니다. DEF) 하거나 포함 `__declspec(dllexport)` 함수 정의에 있습니다. 사용 하 여 `__declspec(dllimport)` 클라이언트 실행 파일에 이러한 함수를 가져오려고 합니다.
 
 동적으로 MFC에 링크 되는 기본 MFC Dll에서 내보낸된 모든 함수 시작 부분에 AFX_MANAGE_STATE 매크로 추가 해야 합니다. 이 매크로 DLL에 대 한 현재 모듈 상태를 설정합니다. 이 매크로 사용 하려면 DLL에서 내보낸 함수의 시작 부분에 코드의 다음 줄을 추가 합니다.
 

@@ -7,18 +7,18 @@ helpviewer_keywords:
 - TN014
 - custom controls [MFC]
 ms.assetid: 1917a498-f643-457c-b570-9a0af7dbf7bb
-ms.openlocfilehash: d529b235daa1c6aa889b69e8d6bb2f02a58436bb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c68b60f065e69213b3ab32c887bc7af129a70fef
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297491"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772126"
 ---
 # <a name="tn014-custom-controls"></a>TN014: 사용자 지정 컨트롤
 
 이 노트는 사용자 지정과 자체 그리기 컨트롤에 대한 MFC 지원을 설명합니다. 또한 동적 서브클래싱을 설명 하 고 간의 관계를 설명 [CWnd](../mfc/reference/cwnd-class.md) 개체 및 `HWND`s입니다.
 
-MFC 샘플 응용 프로그램 CTRLTEST는 여러 사용자 지정 컨트롤을 사용하는 방법을 보여줍니다. MFC 일반 샘플의 소스 코드를 참조 하세요 [CTRLTEST](../visual-cpp-samples.md) 및 온라인 도움말입니다.
+MFC 샘플 응용 프로그램 CTRLTEST는 여러 사용자 지정 컨트롤을 사용하는 방법을 보여줍니다. MFC 일반 샘플의 소스 코드를 참조 하세요 [CTRLTEST](../overview/visual-cpp-samples.md) 및 온라인 도움말입니다.
 
 ## <a name="owner-draw-controlsmenus"></a>소유자 그리기 컨트롤/메뉴
 
@@ -34,8 +34,7 @@ MFC는 다음과 같은 함수로 소유자 그리기를 직접 지원합니다.
 
 - [CWnd::OnDeleteItem](../mfc/reference/cwnd-class.md#ondeleteitem)
 
-
-  `CWnd` 파생 클래스에서 이러한 함수를 재정의하여 사용자 지정 그리기 동작을 구현할 수 있습니다.
+`CWnd` 파생 클래스에서 이러한 함수를 재정의하여 사용자 지정 그리기 동작을 구현할 수 있습니다.
 
 이 방법은 재사용 가능한 코드를 일으키지 않습니다. 두 개의 다른 `CWnd` 클래스에 두 개의 비슷한 컨트롤이 있으면 두 위치에서 사용자 지정 컨트롤 동작을 구현해야 합니다. MFC로 지원되는 자체 그리기 컨트롤 아키텍처는 이 문제를 해결합니다.
 
@@ -105,7 +104,7 @@ OWNERDRAWVARIABLE 스타일으로 전환 NOINTEGRALHEIGHT 스타일 컨트롤을
 
 ## <a name="examples-of-self-drawing-controls-and-menus"></a>자체 그리기 컨트롤 및 메뉴의 예제
 
-MFC 일반 샘플 [CTRLTEST](../visual-cpp-samples.md) 자체 그리기 메뉴 및 자체 그리기 목록 상자의 샘플을 제공 합니다.
+MFC 일반 샘플 [CTRLTEST](../overview/visual-cpp-samples.md) 자체 그리기 메뉴 및 자체 그리기 목록 상자의 샘플을 제공 합니다.
 
 자체 그리기 단추의 가장 일반적인 예는 비트맵 단추입니다. 비트맵 단추는 서로 다른 상태의 비트맵 이미지를 1~3개 보여주는 단추입니다. 이 예제는 MFC 클래스에서 제공 됩니다 [CBitmapButton](../mfc/reference/cbitmapbutton-class.md)합니다.
 
@@ -117,13 +116,11 @@ MFC 일반 샘플 [CTRLTEST](../visual-cpp-samples.md) 자체 그리기 메뉴 �
 
 이 용어를 C++ 클래스 파생과 혼동해서는 안됩니다. 설명 하자면 c + + 용어인 *기본 클래스* 및 *클래스를 파생* 비슷합니다 *슈퍼 클래스* 및 *서브 클래스* 는 Windows에서 개체 모델입니다. MFC의 C++ 파생과 Windows의 서브클래싱은 기능적으로 비슷하지만 C++의 경우 동적 서브클래싱이 지원되지 않습니다.
 
-
-  `CWnd` 클래스는 C++ 개체(`CWnd`에서 파생)와 Windows의 창 개체(`HWND`) 사이의 연결을 제공합니다.
+`CWnd` 클래스는 C++ 개체(`CWnd`에서 파생)와 Windows의 창 개체(`HWND`) 사이의 연결을 제공합니다.
 
 이러한 연결에는 세 가지 일반적인 특성이 존재합니다.
 
-- `CWnd`는 `HWND`를 만듭니다. 
-  `CWnd`에서 파생된 클래스를 만들어서 파생 클래스의 동작을 수정할 수 있습니다. 합니다 `HWND` 응용 프로그램 호출 때 만들어집니다 [CWnd::Create](../mfc/reference/cwnd-class.md#create)합니다.
+- `CWnd`는 `HWND`를 만듭니다. `CWnd`에서 파생된 클래스를 만들어서 파생 클래스의 동작을 수정할 수 있습니다. 합니다 `HWND` 응용 프로그램 호출 때 만들어집니다 [CWnd::Create](../mfc/reference/cwnd-class.md#create)합니다.
 
 - 이 응용 프로그램은 `CWnd`를 기존 `HWND`에 연결합니다. 기존 창의 동작은 수정되지 않습니다. 위임의 경우 이며 호출 하 여 이루어집니다 [CWnd::Attach](../mfc/reference/cwnd-class.md#attach) 기존의 별칭 `HWND` 에 `CWnd` 개체입니다.
 
@@ -133,7 +130,7 @@ MFC 일반 샘플 [CTRLTEST](../visual-cpp-samples.md) 자체 그리기 메뉴 �
 
 두 루틴은 모두 `CWnd` 개체를 기존 `HWND`에 연결합니다. `SubclassWindow`는 `HWND`를 직접 사용합니다. `SubclassDlgItem`은 컨트롤 ID 및 부모 창을 사용하는 도우미 함수입니다. `SubclassDlgItem`은 대화 상자 템플릿에서 생성된 대화 상자 컨트롤에 C++ 개체를 연결하기 위해 설계되었습니다.
 
-참조를 [CTRLTEST](../visual-cpp-samples.md) 사용 하는 경우의 몇 가지 예에 대 한 예제 `SubclassWindow` 고 `SubclassDlgItem`입니다.
+참조를 [CTRLTEST](../overview/visual-cpp-samples.md) 사용 하는 경우의 몇 가지 예에 대 한 예제 `SubclassWindow` 고 `SubclassDlgItem`입니다.
 
 ## <a name="see-also"></a>참고자료
 

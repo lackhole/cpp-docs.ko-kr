@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4572
 ms.assetid: 482dee5a-29bd-4fc3-b769-9dfd4cd2a964
-ms.openlocfilehash: b4d3356522faacfc343c33908b64597387fbe51c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e32509e4d32eef4f53b8d43a7db769844f1182c7
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521075"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781551"
 ---
 # <a name="compiler-warning-level-1-c4572"></a>컴파일러 경고(수준 1) C4572
 
-'...'를 사용 합니다 /clr [ParamArray] 특성은 사용 되지 않습니다. 대신
+[ParamArray] 특성은 사용 되지 않습니다 /clr을 사용 하 여 '...' 대신
 
-가변 인수 목록을 지정 하는 데 사용 되지 않는 스타일을 사용 했습니다. CLR을 컴파일할 때 대신 줄임표 구문을 사용 하 여 <xref:System.ParamArrayAttribute>입니다. 자세한 내용은 참조 하세요. [가변 인수 목록 (...) (C + + /CLI CLI) ](../../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md).
+가변 인수 목록을 지정 하는 데 사용 되지 않는 스타일을 사용 했습니다. CLR을 컴파일할 때 대신 줄임표 구문을 사용 하 여 <xref:System.ParamArrayAttribute>입니다. 자세한 내용은 참조 하세요. [가변 인수 목록 (...) (C + + /CLI CLI) ](../../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
 
 ## <a name="example"></a>예제
 

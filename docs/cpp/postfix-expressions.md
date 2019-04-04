@@ -6,12 +6,12 @@ helpviewer_keywords:
 - postfix expressions
 - expressions [C++], postfix
 ms.assetid: 7ac62a57-06df-422f-b012-a75b37d7cb9b
-ms.openlocfilehash: 6230cc161d7b7fc011d4f3082cc7b9452e136280
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: eb6e6e8914cf260df09581232066caf3f873c04e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332441"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779263"
 ---
 # <a name="postfix-expressions"></a>후위 식
 
@@ -23,7 +23,7 @@ ms.locfileid: "51332441"
 |-------------------|-----------------------|
 |[첨자 연산자](../cpp/subscript-operator.md)|**[ ]**|
 |[함수 호출 연산자](../cpp/function-call-operator-parens.md)|**( )**|
-|[명시적 형식 변환 연산자](../cpp/explicit-type-conversion-operator-parens.md)|*형식 이름* **)**|
+|[명시적 형식 변환 연산자](../cpp/explicit-type-conversion-operator-parens.md)|*type-name* **( )**|
 |[멤버 액세스 연산자](../cpp/member-access-operators-dot-and.md)|**.** 또는 **->**|
 |[후 위 증가 연산자](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**++**|
 |[후 위 감소 연산자](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**--**|
@@ -149,7 +149,7 @@ double& func2( double& d, const char *c ) {
 
 줄임표를 사용할 경우 인수 목록 마지막에 선언해야 합니다. 가변 개수의 인수를 전달 하는 방법에 대 한 자세한 내용은 설명을 참조 하십시오 [va_arg, va_start 및 va_list](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) 에 *런타임 라이브러리 참조*합니다.
 
-CLR 프로그래밍의 기본 인수에 대 한 정보를 참조 하세요. [가변 인수 목록 (...) (C + + /CLI CLI) ](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md).
+CLR 프로그래밍의 기본 인수에 대 한 정보를 참조 하세요. [가변 인수 목록 (...) (C + + /CLI CLI) ](../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
 
 기본 인수를 사용하면 함수 호출에 아무것도 제공되지 않은 경우 인수가 가정하는 값을 지정할 수 있습니다. 다음 코드는 기본 인수의 작동 방법을 보여 줍니다. 기본 인수 지정 제한에 대 한 자세한 내용은 참조 [기본 인수](../cpp/default-arguments.md)합니다.
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CPaneDialog [MFC], HandleInitDialog
 - CPaneDialog [MFC], SetOccDialogInfo
 ms.assetid: 48a6bb91-4b92-40f5-8907-b3270b146cf6
-ms.openlocfilehash: 16aa707792cc1289ced380e54abef3f15289e7cf
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c78b8f2cd19e87fa559c3f9bbd24d07543d887c5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274559"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769747"
 ---
 # <a name="cpanedialog-class"></a>CPaneDialog 클래스
 
@@ -150,7 +150,7 @@ BOOL Create(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 의 메서드는 `CPaneDialog` 클래스입니다. 이 예제는의 일부를 [창 크기 설정 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 의 메서드는 `CPaneDialog` 클래스입니다. 이 예제는의 일부를 [창 크기 설정 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanedialog-class_1.h)]
 [!code-cpp[NVC_MFC_SetPaneSize#3](../../mfc/reference/codesnippet/cpp/cpanedialog-class_2.cpp)]

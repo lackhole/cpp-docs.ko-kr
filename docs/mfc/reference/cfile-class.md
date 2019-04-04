@@ -60,12 +60,12 @@ helpviewer_keywords:
 - CFile [MFC], m_hFile
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-ms.openlocfilehash: f287b04b32b7bc45342ac7248fbe986a3dcf959e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: db499ffa5f1d82b6e3622287f86132930a929102
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289871"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768553"
 ---
 # <a name="cfile-class"></a>CFile 클래스
 
@@ -196,12 +196,10 @@ CAtlTransactionManager* pTM);
 ### <a name="parameters"></a>매개 변수
 
 *hFile*<br/>
-
-  `CFile` 개체에 연결할 파일의 핸들입니다.
+`CFile` 개체에 연결할 파일의 핸들입니다.
 
 *lpszFileName*<br/>
-
-  `CFile` 개체에 연결할 파일의 상대 또는 전체 경로입니다.
+`CFile` 개체에 연결할 파일의 상대 또는 전체 경로입니다.
 
 *nOpenFlags*<br/>
 지정한 파일에 대한 파일 액세스 옵션의 비트 조합(OR)입니다. 사용 가능한 옵션은 설명 섹션을 참조하세요.
@@ -266,8 +264,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 매개 변수가 두 개 포함된 생성자는 멤버를 초기화하고 지정한 파일 열기를 시도합니다. 이 생성자가 지정한 파일을 정상적으로 열면 파일은 `CFile` 개체에 연결되고, 그렇지 않으면 이 생성자가 `CInvalidArgException` 개체에 대한 포인터를 throw합니다. 예외를 처리 하는 방법에 대 한 자세한 내용은 참조 하세요. [예외](../../mfc/exception-handling-in-mfc.md)합니다.
 
-
-  `CFile` 개체가 지정한 파일을 정상적으로 열면 `CFile` 개체 제거 시 이 파일이 자동으로 닫힙니다. 그렇지 않으면 `CFile` 개체에서 파일 연결을 끊은 후 파일을 명시적으로 닫아야 합니다.
+`CFile` 개체가 지정한 파일을 정상적으로 열면 `CFile` 개체 제거 시 이 파일이 자동으로 닫힙니다. 그렇지 않으면 `CFile` 개체에서 파일 연결을 끊은 후 파일을 명시적으로 닫아야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -921,7 +918,7 @@ virtual void Write(
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 DRAWCLI](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 DRAWCLI](../../overview/visual-cpp-samples.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CStdioFile 클래스](../../mfc/reference/cstdiofile-class.md)<br/>

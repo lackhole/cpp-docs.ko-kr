@@ -14,12 +14,12 @@ helpviewer_keywords:
 - COleDropSource [MFC], OnBeginDrag
 - COleDropSource [MFC], QueryContinueDrag
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
-ms.openlocfilehash: 587aa0730502d5e8f90c4fec57bb87886b79fb3f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a2773333ea1dd89f73e7bdf3c5dc2f36945e0810
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304979"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778509"
 ---
 # <a name="coledropsource-class"></a>COleDropSource 클래스
 
@@ -163,7 +163,7 @@ ESC 키 또는 오른쪽 단추를 누르면 되었거나 단추 왼쪽 DRAGDROP
 
 ## <a name="see-also"></a>참고자료
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)

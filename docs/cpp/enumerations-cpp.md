@@ -10,19 +10,19 @@ helpviewer_keywords:
 - named constants, enumeration declarations
 - declaring enumerations
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
-ms.openlocfilehash: 3ed135c0fc32f9218783c964ed4ce79a9b3ec067
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: caec9ea7ac5482ff23b73676a3fd7b3d25ad293f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332415"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772567"
 ---
 # <a name="enumerations-c"></a>열거형(C++)
 
 열거형은 열거자라는 명명된 정수 상수 집합으로 구성된 사용자 정의 형식입니다.
 
 > [!NOTE]
->  이 문서에서는 ISO 표준 c + + 언어를 다룹니다 **enum** 종류와 범위가 지정 된 (또는 강력한 형식의) **enum 클래스** c++11에서 도입 된 형식입니다. 에 대 한 자세한를 **public enum 클래스** 또는 **개인 enum 클래스** 형식 C + + 및 C + + /CX에서는 참조 [enum 클래스](../windows/enum-class-cpp-component-extensions.md)합니다.
+>  이 문서에서는 ISO 표준 c + + 언어를 다룹니다 **enum** 종류와 범위가 지정 된 (또는 강력한 형식의) **enum 클래스** c++11에서 도입 된 형식입니다. 에 대 한 자세한를 **public enum 클래스** 또는 **개인 enum 클래스** 형식 C + + 및 C + + /CX에서는 참조 [enum 클래스](../extensions/enum-class-cpp-component-extensions.md)합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -52,7 +52,7 @@ enum class C : short;  // ... may have any integral underlying type
 *type*<br/>
 열거자의 기본 형식이며, 모든 열거자는 동일한 기본 형식을 갖습니다. 모든 정수 계열 형식이 가능합니다.
 
-*enum 목록*<br/>
+*enum-list*<br/>
 열거형에서 열거자의 쉼표로 구분된 목록입니다. 범위에 있는 모든 열거자 또는 변수 이름은 고유해야 합니다. 하지만 값이 중복될 수 있습니다. 범위가 지정 되지 않은 열거형에서 범위는 주변 범위가 지정 됩니다. 범위가 지정 된 열거형에서 범위는 합니다 *enum 목록* 자체입니다.  범위가 지정 된 열거형에서 실제로 정의 하는 새 정수 계열 형식 목록은 비어 있을 수 있습니다.
 
 *class*<br/>
@@ -145,7 +145,7 @@ namespace ScopedEnumConversions
 
 ## <a name="no_enumerators"></a> 없는 열거자를 사용 하 여 열거형
 
-**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): (일반 또는 범위가 지정 된) 열거형에 명시적 기본 형식 및 없습니다 열거자를 사용 하 여 정의 하 여 적용를 도입할 수 있습니다 새는 정수 계열 형식 다른 형식으로 암시적 변환이 있습니다. 기본 제공 기본 형식 대신이 형식을 사용 하 여 의도 하지 않은 암시적 변환으로 인 한 사소한 오류 가능성을 제거할 수 있습니다.
+**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): (일반 또는 범위가 지정 된) 열거형에 명시적 기본 형식 및 없습니다 열거자를 사용 하 여 정의 하 여 다른 형식으로 암시적 변환이 있는 새 정수 계열 형식을 적용 도입할 수 있습니다. 기본 제공 기본 형식 대신이 형식을 사용 하 여 의도 하지 않은 암시적 변환으로 인 한 사소한 오류 가능성을 제거할 수 있습니다.
 
 ```cpp
 enum class byte : unsigned char { };
@@ -184,4 +184,4 @@ int main()
 ## <a name="see-also"></a>참고자료
 
 [C 열거형 선언](../c-language/c-enumeration-declarations.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

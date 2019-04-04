@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CMFCMenuBar [MFC], SetRecentlyUsedMenus
 - CMFCMenuBar [MFC], SetShowAllCommands
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
-ms.openlocfilehash: e4b1a7eba31ef28578c515c437978bc59cbd08f1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 87844e843057bb295c904b5f1b3d7dd03fa4d797
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267370"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775896"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar 클래스
 
@@ -191,7 +191,7 @@ class CMFCMenuBar : public CMFCToolbar
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CMFCMenuBar` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 창의 스타일을 설정, 사용자 지정 단추를 사용 하도록 설정, 도움말 상자를 사용, 팝업 메뉴에 그림자를 사용 하도록 설정 및 메뉴 표시줄을 업데이트 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 `CMFCMenuBar` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 창의 스타일을 설정, 사용자 지정 단추를 사용 하도록 설정, 도움말 상자를 사용, 팝업 메뉴에 그림자를 사용 하도록 설정 및 메뉴 표시줄을 업데이트 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_IEDemo#1](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#3](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_2.cpp)]
@@ -395,7 +395,7 @@ virtual BOOL CreateEx(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `CreateEx` 메서드는 `CMFCMenuBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `CreateEx` 메서드는 `CMFCMenuBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_IEDemo#1](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#2](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_3.cpp)]

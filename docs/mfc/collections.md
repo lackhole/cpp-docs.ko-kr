@@ -17,12 +17,12 @@ helpviewer_keywords:
 - collection classes [MFC], lists
 - collection classes [MFC], shapes
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
-ms.openlocfilehash: 5b74ee8a779ad2fffa801749d9818f985bc8c352
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f3dea68deaae73313fe389be49e8bbed7da3c93a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273311"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767186"
 ---
 # <a name="collections"></a>컬렉션
 
@@ -55,7 +55,7 @@ Microsoft Foundation Class 라이브러리는 개체 그룹을 관리하기 위�
 
 ##  <a name="_core_the_template_based_collection_classes"></a> 템플릿 기반 컬렉션 클래스
 
-모든 형식의 개체를 포함하는 형식 안전 컬렉션을 구현하는 가장 쉬운 방법은 MFC 템플릿 기반 클래스 중 하나를 사용하는 것입니다. 이러한 클래스의 예에 대 한 MFC 샘플을 참조 하세요 [수집](../visual-cpp-samples.md)합니다.
+모든 형식의 개체를 포함하는 형식 안전 컬렉션을 구현하는 가장 쉬운 방법은 MFC 템플릿 기반 클래스 중 하나를 사용하는 것입니다. 이러한 클래스의 예에 대 한 MFC 샘플을 참조 하세요 [수집](../overview/visual-cpp-samples.md)합니다.
 
 다음 표에서는 MFC 템플릿 기반의 컬렉션 클래스를 보여줍니다.
 

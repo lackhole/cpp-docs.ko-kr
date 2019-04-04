@@ -6,12 +6,12 @@ helpviewer_keywords:
 - OLE drag and drop [MFC], drop target
 - drag and drop [MFC], drop target
 ms.assetid: 0689f1ec-5326-4008-b226-4b373c881358
-ms.openlocfilehash: da04fa7fa84e7e5014d574583c9c95992db10f88
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 46501193569d7f3098e23c67c68c76ce20a82ea3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281951"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766679"
 ---
 # <a name="drag-and-drop-implementing-a-drop-target"></a>끌어서 놓기: 놓기 대상 구현
 
@@ -33,7 +33,7 @@ ms.locfileid: "57281951"
     |`OnDrop`|지정된 된 창에 배치 되는 데이터의 처리를 제공 합니다.|
     |`OnScrollBy`|경우 스크롤이 필요 대상 창에서에 대 한 특별 한 동작입니다.|
 
-MAINVIEW를 참조 하세요. CPP 파일 MFC OLE 샘플의 일부입니다 [OCLIENT](../visual-cpp-samples.md) 이러한 함수의 함께 작동 하는 방법의 예입니다.
+MAINVIEW를 참조 하세요. CPP 파일 MFC OLE 샘플의 일부입니다 [OCLIENT](../overview/visual-cpp-samples.md) 이러한 함수의 함께 작동 하는 방법의 예입니다.
 
 자세한 내용은 다음을 참조하세요.
 

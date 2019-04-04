@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CRichEditDoc [MFC], GetView
 - CRichEditDoc [MFC], m_bRTF
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
-ms.openlocfilehash: 4c2021128dcc06a76cf3b68c0ec49b72a5860046
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 4cc3af7649d30a153b67cd8269e595c11018833f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295138"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769793"
 ---
 # <a name="cricheditdoc-class"></a>CRichEditDoc 클래스
 
@@ -55,7 +55,7 @@ class CRichEditDoc : public COleServerDoc
 
 이 Windows 공용 컨트롤 (및 따라서 합니다 [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) 및 관련 클래스) 이상 Windows 95/98 및 Windows NT 버전 3.51에서 실행 되는 프로그램에만 사용할 수 있습니다.
 
-서식 있는 편집 문서를 사용 하 여 MFC 응용 프로그램에서 예제를 참조 합니다 [워드 패드](../../visual-cpp-samples.md) 샘플 응용 프로그램입니다.
+서식 있는 편집 문서를 사용 하 여 MFC 응용 프로그램에서 예제를 참조 합니다 [워드 패드](../../overview/visual-cpp-samples.md) 샘플 응용 프로그램입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -146,7 +146,7 @@ BOOL m_bRTF;
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 워드 패드](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 워드 패드](../../overview/visual-cpp-samples.md)<br/>
 [COleServerDoc 클래스](../../mfc/reference/coleserverdoc-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CRichEditView 클래스](../../mfc/reference/cricheditview-class.md)<br/>

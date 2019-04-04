@@ -2,12 +2,12 @@
 title: Visual C++ 포팅 및 업그레이드 가이드
 ms.date: 09/18/2018
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-ms.openlocfilehash: 1b3f7142b5240d8b4a94040d5cda7d033e50e39d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: d1ee00ab1e869e37a5bf19809df964f1e4085819
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752430"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767680"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ 포팅 및 업그레이드 가이드
 
@@ -76,8 +76,8 @@ Visual Studio의 빌드 시스템을 사용하지 않는 경우 MSBuild를 사�
 |제목|설명|
 |-----------|-----------------|
 |[이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|이전 버전의 Visual C++에서 만든 프로젝트를 사용하는 방법을 설명합니다.|
-|[Visual Studio 2017 RC에서 C++ 컴파일러의 새로운 기능](../what-s-new-for-visual-cpp-in-visual-studio.md)|Visual Studio 2015와 Visual Studio 2017 간의 IDE 및 도구 변경 내용|
-|[Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)|Visual Studio 2015와 Visual Studio 2017 간의 표준 준수 향상|
+|[Visual Studio 2017 RC에서 C++ 컴파일러의 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)|Visual Studio 2015와 Visual Studio 2017 간의 IDE 및 도구 변경 내용|
+|[Visual Studio 2017의 C++ 규칙 향상](../overview/cpp-conformance-improvements-2017.md)|Visual Studio 2015와 Visual Studio 2017 간의 표준 준수 향상|
 |[Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md)|코드 변경이 필요할 수 있는 Visual Studio 2003과 2015 간 Visual C++ 라이브러리 및 빌드 도구의 모든 변경 내용 목록입니다.|
 |[Visual C++ 2003 ~ 2015의 새로운 기능](visual-cpp-what-s-new-2003-through-2015.md)|Visual Studio 2003과 Visual Studio 2015 간의 Visual C++에 대한 모든 "새로운 기능" 정보입니다.|
 |[타사 라이브러리 포팅](porting-third-party-libraries.md)|**vcpkg** 명령줄 도구를 사용하여 이전 오픈 소스 라이브러리를 최신 Visual C++ 도구 집합으로 컴파일된 버전으로 포팅하는 방법입니다.|
@@ -88,4 +88,4 @@ Visual Studio의 빌드 시스템을 사용하지 않는 경우 MSBuild를 사�
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual C++](../visual-cpp-in-visual-studio.md)
+[Visual C++](../overview/visual-cpp-in-visual-studio.md)

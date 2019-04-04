@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4965
 ms.assetid: 47f3f6dc-459b-4a25-9947-f394c8966cb5
-ms.openlocfilehash: 7d77df395d680b467d1a04a3f59c9822842f99f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2e93fdeba7f9b5b10340ccd1920807a3fcb345a0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653104"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771060"
 ---
 # <a name="compiler-warning-level-1-c4965"></a>컴파일러 경고(수준 1) C4965
 
@@ -19,7 +19,7 @@ ms.locfileid: "50653104"
 
 Visual c + + 기능 값 형식 명시적 boxing 합니다. C + +는 boxed int 할당에 대 한 Managed Extensions를 사용 하 여 null 할당을 발생 시킨 명령
 
-자세한 내용은 [boxing](../../windows/boxing-cpp-component-extensions.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.
+자세한 내용은 [boxing](../../extensions/boxing-cpp-component-extensions.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.
 
 ## <a name="example"></a>예제
 

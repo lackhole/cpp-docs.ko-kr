@@ -5,12 +5,12 @@ helpviewer_keywords:
 - simple properties
 - properties [C++], simple
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
-ms.openlocfilehash: f29bf419ca19ce1bbe45e36adb08d7f4e5629f5a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: cd0748993b6ac92bbf9f66fa868ac6e814e21bb5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739286"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781629"
 ---
 # <a name="how-to-use-properties-in-ccli"></a>방법: 속성을 사용 하 여 C + + /cli CLI
 
@@ -259,7 +259,7 @@ int main() {
 
 ## <a name="abstract-and-sealed-properties"></a>추상 및 봉인 된 속성
 
-하지만 합니다 [추상](../windows/abstract-cpp-component-extensions.md) 하 고 [봉인 된](../windows/sealed-cpp-component-extensions.md) 키워드는 지정 된 유효한 것으로에서 ECMA C + + Visual c + + 컴파일러의 경우 CLI 사양을 지정할 수 없습니다 하 trivial 속성 또는 속성에 trivial이 아닌 속성의 선언입니다.
+하지만 합니다 [추상](../extensions/abstract-cpp-component-extensions.md) 하 고 [봉인 된](../extensions/sealed-cpp-component-extensions.md) 키워드는 지정 된 유효한 것으로에서 ECMA C + + Visual c + + 컴파일러의 경우 CLI 사양을 지정할 수 없습니다 하 trivial 속성 또는 속성에 trivial이 아닌 속성의 선언입니다.
 
 Sealed 또는 추상 속성을 선언 하는 특수 속성을 정의 하 고 다음 지정 해야 합니다 `abstract` 또는 `sealed` 키워드 get 및 set 접근자 함수.
 
@@ -409,4 +409,4 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[속성](../windows/property-cpp-component-extensions.md)
+[속성](../extensions/property-cpp-component-extensions.md)

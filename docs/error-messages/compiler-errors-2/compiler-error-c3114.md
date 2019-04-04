@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3114
 ms.assetid: b5d2df4f-87d0-4292-9981-25c6a6013c05
-ms.openlocfilehash: 6ce5b9860cd75619f26a3585981af5807c33535a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5a4feae5c8805a27c020b532fd58e0562e46b6b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606676"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773777"
 ---
 # <a name="compiler-error-c3114"></a>컴파일러 오류 C3114
 
@@ -19,7 +19,7 @@ ms.locfileid: "50606676"
 
 명명 된 인수가 유효한 특성 클래스 데이터 멤버의 순서 대로 해당 표시 되 면 안 `static`, `const`, 또는 `literal`합니다. 속성이 아니어야 하는 경우 속성 `static` 해야 get 및 set 접근자입니다.
 
-자세한 내용은 [속성](../../windows/property-cpp-component-extensions.md) 하 고 [사용자 정의 특성](../../windows/user-defined-attributes-cpp-component-extensions.md)합니다.
+자세한 내용은 [속성](../../extensions/property-cpp-component-extensions.md) 하 고 [사용자 정의 특성](../../extensions/user-defined-attributes-cpp-component-extensions.md)합니다.
 
 ## <a name="example"></a>예제
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual Studio의 C/C++ 프로젝트 및 빌드 시스템
 ms.description: Use Visual Studio to compile and build C++ projects for Windows, ARM or Linux based on any project system.
 ms.date: 12/08/2018
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - builds [C++], options
 - Visual C++, build options
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
-ms.openlocfilehash: 0c4a74ce69f5c52eb6fc107ea477e5715e86ecd2
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 6a4048d741cf291d8d6173c1444b6933523c6851
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826582"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775428"
 ---
 # <a name="cc-projects-and-build-systems-in-visual-studio"></a>Visual Studio의 C/C++ 프로젝트 및 빌드 시스템
 
@@ -35,14 +35,14 @@ C++ 프로그램을 만들려면 하나 이상의 파일에서 소스 코드를 
 
 ## <a name="the-msvc-toolset"></a>MSVC 도구 집합
 
-Microsoft C++ 컴파일러, 링커, 표준 라이브러리 및 관련된 유틸리티는 MSCV 컴파일러 도구 집합(툴체인 또는 "빌드 도구"라고도 함)을 구성합니다. 이들은 Visual Studio에 포함됩니다. 또한 [Visual Studio 2017용 Build Tools 다운로드 위치](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017)에서 무료로 도구 집합을 다운로드하고 독립 실행형 패키지로 사용할 수 있습니다.
+Microsoft C++ 컴파일러, 링커, 표준 라이브러리 및 관련된 유틸리티는 MSCV 컴파일러 도구 집합(툴체인 또는 "빌드 도구"라고도 함)을 구성합니다. 이들은 Visual Studio에 포함됩니다. 또한  [Visual Studio 2017용 Build Tools 다운로드 위치](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017)에서 무료로 도구 집합을 다운로드하고 독립 실행형 패키지로 사용할 수 있습니다.
 
 MSVC 컴파일러 (cl.exe) 직접 명령줄에서 호출 하 여 간단한 프로그램을 빌드할 수 있습니다. 다음 명령을 단일 소스 코드 파일을 받고 호출 하는 호출 하는 실행 파일을 빌드하는 cl.exe *hello.exe*: 
 
 ```cmd
 cl /EHsc hello.cpp
 ```
-여기서 컴파일러(cl.exe)는 자동으로 C++ 전처리기와 링커를 호출하여 최종 출력 파일을 생성합니다. 자세한 내용은 [명령줄에서 빌드](building-on-the-command-line.md)를 참조합니다.
+여기서 컴파일러(cl.exe)는 자동으로 C++ 전처리기와 링커를 호출하여 최종 출력 파일을 생성합니다.  자세한 내용은 [명령줄에서 빌드](building-on-the-command-line.md)를 참조합니다.
 
 ## <a name="build-systems-and-projects"></a>시스템 및 프로젝트를 빌드하십시오
 
@@ -74,10 +74,12 @@ cl /EHsc hello.cpp
 
 [릴리스 빌드](release-builds.md) 만들고 최적화 된 릴리스 문제를 해결 하는 방법을 최종 사용자에 게 배포에 대 한 빌드합니다.
 
-[명령줄에서 MSVC 도구 집합을 사용 하 여](building-on-the-command-line.md)<br/>
+[명령줄에서 MSVC 도구 집합 사용](building-on-the-command-line.md)<br/>
 Visual Studio IDE를 사용하지 않고 명령줄에서 직접 C/C++ 컴파일러 및 빌드 도구를 사용하는 방법을 설명합니다.
 
 [Visual Studio에서 DLL 빌드](dlls-in-visual-cpp.md) Visual Studio에서 C/C++ DLL(공유 라이브러리)을 만들고, 디버그하고 배포하는 방법입니다.
+
+[연습: 정적 라이브러리 만들기 및 사용](walkthrough-creating-and-using-a-static-library-cpp.md) .lib 이진 파일을 만드는 방법.
 
 [C/C++ 격리된 응용 프로그램 및 side-by-side 어셈블리 빌드](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md) 격리된 응용 프로그램 및 side-by-side 어셈블리에 대한 아이디어를 기반으로 Windows 데스크톱 응용 프로그램의 배포 모델을 설명합니다.
 

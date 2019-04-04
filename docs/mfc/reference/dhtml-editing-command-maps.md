@@ -2,16 +2,16 @@
 title: DHTML 편집 명령 맵
 ms.date: 11/04/2016
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
-ms.openlocfilehash: 1f84a56876f1108e9b02d44f6ef0dec50f065c57
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7f420619983283c225ca8fca23c5ea349def1d1b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278264"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776156"
 ---
 # <a name="dhtml-editing-command-maps"></a>DHTML 편집 명령 맵
 
-다음 매크로 사용 하 여 DHTML 편집 명령에 매핑할 수 있습니다 [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-클래스를 파생 합니다. 사용 하는 예제를 참조 하세요 [HTMLEdit 샘플](../../visual-cpp-samples.md)합니다.
+다음 매크로 사용 하 여 DHTML 편집 명령에 매핑할 수 있습니다 [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-클래스를 파생 합니다. 사용 하는 예제를 참조 하세요 [HTMLEdit 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 ### <a name="dhtml-editing-command-map-macros"></a>DHTML 편집 명령 맵 매크로
 
@@ -46,7 +46,7 @@ DECLARE_DHTMLEDITING_CMDMAP(className)
 
 ### <a name="example"></a>예제
 
-참조 [HTMLEdit 샘플](../../visual-cpp-samples.md)합니다.
+참조 [HTMLEdit 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -89,7 +89,7 @@ END_DHTMLEDITING_CMDMAP()
 
 ### <a name="example"></a>예제
 
-참조 [HTMLEdit 샘플](../../visual-cpp-samples.md)합니다.
+참조 [HTMLEdit 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -113,7 +113,7 @@ HTML 편집 명령 *cmdID* (예: IDM_COPY) 매핑합니다.
 
 ### <a name="example"></a>예제
 
-참조 [HTMLEdit 샘플](../../visual-cpp-samples.md)합니다.
+참조 [HTMLEdit 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -140,7 +140,7 @@ HTML 편집 명령 *cmdID* (예: IDM_COPY) 매핑합니다.
 
 ### <a name="example"></a>예제
 
-참조 [HTMLEdit 샘플](../../visual-cpp-samples.md)합니다.
+참조 [HTMLEdit 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -167,7 +167,7 @@ HTML 편집 명령 *cmdID* (예: IDM_COPY) 매핑합니다.
 
 ### <a name="example"></a>예제
 
-참조 [HTMLEdit 샘플](../../visual-cpp-samples.md)합니다.
+참조 [HTMLEdit 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -197,7 +197,7 @@ HTML 편집 명령 *cmdID* (예: IDM_COPY) 매핑합니다.
 
 ### <a name="example"></a>예제
 
-참조 [HTMLEdit 샘플](../../visual-cpp-samples.md)합니다.
+참조 [HTMLEdit 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 

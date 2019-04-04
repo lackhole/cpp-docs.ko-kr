@@ -162,12 +162,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: 92666e10d82d96b76ad43b652ed90e0e41b8f853
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3819e861b7a5e6ff27fe632a33413b588a5a4835
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418934"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58782006"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl Class
 
@@ -398,7 +398,7 @@ CImageList* CreateDragImage(HTREEITEM hItem);
 
 응용 프로그램 항목을 끌 때 이미지를 표시 하려면 이미지 목록 함수를 사용 합니다.
 
-`CImageList` 개체가 영구적으로 적용 되 고 완료 하는 경우 삭제 해야 합니다. 예를 들면,
+`CImageList` 개체가 영구적으로 적용 되 고 완료 하는 경우 삭제 해야 합니다. 예를 들어:
 
 [!code-cpp[NVC_MFC_CTreeCtrl#2](../../mfc/reference/codesnippet/cpp/ctreectrl-class_2.cpp)]
 
@@ -2341,7 +2341,7 @@ BOOL SortChildrenCB(LPTVSORTCB pSort);
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CImageList 클래스](../../mfc/reference/cimagelist-class.md)

@@ -1,16 +1,16 @@
-﻿---
+---
 title: ATL COM 데스크톱 구성 요소
 ms.date: 10/19/2018
 helpviewer_keywords:
 - ATL, reference
 - ATL, about ATL
 ms.assetid: 291f38d1-d2de-4687-86a9-99b4fd35706c
-ms.openlocfilehash: 65b8631560ec1b768521d917256c32c75c531fab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e1ee9364cfcd382c8699014fd2ef4a807b63bb0f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644186"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780433"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM 데스크톱 구성 요소
 
@@ -47,7 +47,7 @@ ATL Worker 원형에 대 한 링크를 제공합니다.
 [ATL 자습서](../atl/active-template-library-atl-tutorial.md)<br/>
 컨트롤 생성을 안내하고 프로세스에서 일부 ATL 기초를 보여줍니다.
 
-[ATL 샘플](../visual-cpp-samples.md)<br/>
+[ATL 샘플](../overview/visual-cpp-samples.md)<br/>
 COM 객체를 이용한 ATL 사용 방법을 보여주는 샘플 코드입니다.
 
 [OLE DB 템플릿](../data/oledb/ole-db-templates.md)<br/>

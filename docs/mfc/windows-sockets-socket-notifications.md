@@ -6,12 +6,12 @@ helpviewer_keywords:
 - notifications [MFC], socket
 - sockets [MFC], notifications
 ms.assetid: 87d5bf70-6e77-49a9-9a64-aaadee2ad018
-ms.openlocfilehash: c08305b8aeeca00eaf41e4f1c24b51a46a8c4254
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: df7bfe8a95221682d0f7f4ebb123bd15b79144d5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289912"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774336"
 ---
 # <a name="windows-sockets-socket-notifications"></a>Windows 소켓: 소켓 알림
 
@@ -43,7 +43,7 @@ MFC는 알림을 받을 때 소켓의 동작을 사용자 지정할 수 있도�
 > [!NOTE]
 >  `CSocket`, `OnConnect` 알림 함수가 호출 되지 않습니다. 호출 연결에 대 한 `Connect`, (성공적으로 또는 오류에서) 연결이 완료 되 면 반환 합니다. MFC 구현 세부 정보는 연결 알림을 처리 하는 방법입니다.
 
-각 알림 함수에 대 한 자세한 내용은 클래스에서 함수를 참조 하세요 `CAsyncSocket` 에 *MFC 참조*합니다. 소스 코드와 MFC 샘플에 대 한 정보에 대 한 참조 [MFC 샘플](../visual-cpp-samples.md)합니다.
+각 알림 함수에 대 한 자세한 내용은 클래스에서 함수를 참조 하세요 `CAsyncSocket` 에 *MFC 참조*합니다. 소스 코드와 MFC 샘플에 대 한 정보에 대 한 참조 [MFC 샘플](../overview/visual-cpp-samples.md)합니다.
 
 자세한 내용은 다음을 참조하세요.
 

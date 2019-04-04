@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CMFCEditBrowseCtrl [MFC], OnIllegalFileName
 - CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage
 ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
-ms.openlocfilehash: 8d1f603f8439815c92360af40ccb807446d0e84a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0c6fb39e17e22bcac60d50b87f7370c6a9f91db9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273285"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770680"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl 클래스
 
@@ -120,7 +120,7 @@ class CMFCEditBrowseCtrl : public CEdit
 
 ## <a name="example"></a>예제
 
-다음 예제에서 두 메서드를 사용 하는 방법에 설명 합니다 `CMFCEditBrowseCtrl` 클래스: `EnableFolderBrowseButton` 고 `EnableFileBrowseButton`입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서 두 메서드를 사용 하는 방법에 설명 합니다 `CMFCEditBrowseCtrl` 클래스: `EnableFolderBrowseButton` 고 `EnableFileBrowseButton`입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#6](../../mfc/reference/codesnippet/cpp/cmfceditbrowsectrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#7](../../mfc/reference/codesnippet/cpp/cmfceditbrowsectrl-class_2.cpp)]

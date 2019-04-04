@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CONTAIN tutorial [MFC]
 - Links menu item [MFC]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
-ms.openlocfilehash: ad3431f78d3637bcdfdb0266c8abdb43047ca28d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b1a74fef743592d3d052226dac926fc7ddc58578
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279341"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770345"
 ---
 # <a name="menus-and-resources-container-additions"></a>메뉴 및 리소스: 컨테이너 추가
 
@@ -29,7 +29,7 @@ ms.locfileid: "57279341"
 
 컨테이너 응용 프로그램에서 두 가지 유형의 변경 해야 합니다: OLE 비주얼 편집 및 내부 활성화에 사용 되는 새 리소스의 추가 지원 하도록 기존 리소스를 수정 합니다. 응용 프로그램 마법사를 사용 하 여 컨테이너 응용 프로그램을 만드는 경우 다음이 단계를 수행할 수는 있지만 일부 사용자 지정이 필요할 수 있습니다.
 
-응용 프로그램 마법사를 사용 하지 않는 경우에 OCLIENT 확인 하는 것이 좋습니다. RC에 이러한 변경 내용을 구현 하는 방법을 확인할 OCLIENT 샘플 응용 프로그램에 대 한 리소스 스크립트입니다. MFC OLE 샘플을 참조 하세요 [OCLIENT](../visual-cpp-samples.md)합니다.
+응용 프로그램 마법사를 사용 하지 않는 경우에 OCLIENT 확인 하는 것이 좋습니다. RC에 이러한 변경 내용을 구현 하는 방법을 확인할 OCLIENT 샘플 응용 프로그램에 대 한 리소스 스크립트입니다. MFC OLE 샘플을 참조 하세요 [OCLIENT](../overview/visual-cpp-samples.md)합니다.
 
 이 문서에서 다루는 항목은 다음과 같습니다.
 
@@ -62,7 +62,7 @@ ms.locfileid: "57279341"
 |--------|---------|----------|
 |ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|
 
-두 번째 변경은 내부 활성화에 대해 만든 새 메뉴 리소스에 해당 하는 새 액셀러레이터 키 테이블을 만드는 것입니다. 이 테이블에는 위의 VK_ESCAPE 항목 외에도 파일 및 창 메뉴에 대 한 항목입니다. 다음 예제는 MFC 샘플에서 내부 활성화에 대 한 생성 된 액셀러레이터 키 테이블 [컨테이너](../visual-cpp-samples.md):
+두 번째 변경은 내부 활성화에 대해 만든 새 메뉴 리소스에 해당 하는 새 액셀러레이터 키 테이블을 만드는 것입니다. 이 테이블에는 위의 VK_ESCAPE 항목 외에도 파일 및 창 메뉴에 대 한 항목입니다. 다음 예제는 MFC 샘플에서 내부 활성화에 대 한 생성 된 액셀러레이터 키 테이블 [컨테이너](../overview/visual-cpp-samples.md):
 
 |ID|Key|형식|
 |--------|---------|----------|

@@ -178,12 +178,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-ms.openlocfilehash: 6ba0c2b5449cb0058c1b274d9d9c0d7ae33bcd7f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d336e85020d8d2e855afb0568058057594ec8829
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302986"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769656"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx 클래스
 
@@ -291,7 +291,7 @@ class CFrameWndEx : public CFrameWnd
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 클래스에서 상속 하는 방법에 설명 합니다 `CFrameWndEx` 클래스입니다. 예제는 서브 클래스에서 메서드 시그니처 및 재정의 하는 방법에는 `OnShowPopupMenu` 메서드. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.
+다음 예제에서는 클래스에서 상속 하는 방법에 설명 합니다 `CFrameWndEx` 클래스입니다. 예제는 서브 클래스에서 메서드 시그니처 및 재정의 하는 방법에는 `OnShowPopupMenu` 메서드. 이 코드 조각은 [워드 패드 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_WordPad#3](../../mfc/reference/codesnippet/cpp/cframewndex-class_1.h)]
 [!code-cpp[NVC_MFC_WordPad#4](../../mfc/reference/codesnippet/cpp/cframewndex-class_2.cpp)]

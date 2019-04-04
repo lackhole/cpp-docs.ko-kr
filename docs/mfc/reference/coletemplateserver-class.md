@@ -14,12 +14,12 @@ helpviewer_keywords:
 - COleTemplateServer [MFC], Unregister
 - COleTemplateServer [MFC], UpdateRegistry
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c
-ms.openlocfilehash: bcc79f781be3a0292398e4f211ea55f5403b6b8f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 3abdf1dc2da5ef9a111371b501d5cd8ce208825d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302886"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781213"
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer 클래스
 
@@ -171,7 +171,7 @@ AFXDISP에 정의 되어 있는 OLE_APPTYPE 열거형의 값입니다. 8. 다음
 
 ## <a name="see-also"></a>참고자료
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [COleObjectFactory 클래스](../../mfc/reference/coleobjectfactory-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleServerDoc 클래스](../../mfc/reference/coleserverdoc-class.md)<br/>

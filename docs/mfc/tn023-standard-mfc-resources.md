@@ -8,12 +8,12 @@ helpviewer_keywords:
 - TN023
 - standard resources
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
-ms.openlocfilehash: b4edc00f77152b8d677f3113e0ed6386569b0988
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d29f0ab2254a52e01f2016f64a37ddfce47955bb
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277679"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780316"
 ---
 # <a name="tn023-standard-mfc-resources"></a>TN023: 표준 MFC 리소스
 
@@ -23,7 +23,7 @@ ms.locfileid: "57277679"
 
 MFC 응용 프로그램에서 사용할 수 있는 미리 정의 된 리소스의 두 범주로 제공: 클립 아트 리소스와 표준 프레임 워크 리소스입니다.
 
-클립 아트 리소스는 추가 리소스 응용 프로그램의 사용자 인터페이스에 추가할 수는 있지만 프레임 워크에 종속 되지 않습니다. MFC 일반 샘플에 포함 된 다음 클립 아트 리소스 [CLIPART](../visual-cpp-samples.md):
+클립 아트 리소스는 추가 리소스 응용 프로그램의 사용자 인터페이스에 추가할 수는 있지만 프레임 워크에 종속 되지 않습니다. MFC 일반 샘플에 포함 된 다음 클립 아트 리소스 [CLIPART](../overview/visual-cpp-samples.md):
 
 - Common.rc: 포함 된 리소스의 단일 파일:
 
@@ -73,7 +73,7 @@ MFC 응용 프로그램에서 사용할 수 있는 미리 정의 된 리소스�
 
 ### <a name="customizing-standard-framework-resources"></a>사용자 지정 표준 프레임 워크 리소스
 
-표준 프레임 워크 리소스는 일반적으로 사용 하 여 응용 프로그램에 포함 됩니다는 # 응용 프로그램의 리소스 파일에 명령을 include 합니다. 응용 프로그램 마법사는 리소스 파일을 생성 합니다. 이 파일에 선택한 응용 프로그램 마법사 옵션에 따라 적절 한 표준 프레임 워크 리소스를 포함 합니다. 검토 지정, 추가 또는 컴파일 시간 지시문을 변경 하 여 포함 된 리소스를 제거 합니다. 이 작업을 수행 하려면 엽니다는 **리소스** 선택한 메뉴 **Set Includes**합니다. "컴파일 시간 지시문" 편집 항목을 살펴봅니다. 예를 들면,
+표준 프레임 워크 리소스는 일반적으로 사용 하 여 응용 프로그램에 포함 됩니다는 # 응용 프로그램의 리소스 파일에 명령을 include 합니다. 응용 프로그램 마법사는 리소스 파일을 생성 합니다. 이 파일에 선택한 응용 프로그램 마법사 옵션에 따라 적절 한 표준 프레임 워크 리소스를 포함 합니다. 검토 지정, 추가 또는 컴파일 시간 지시문을 변경 하 여 포함 된 리소스를 제거 합니다. 이 작업을 수행 하려면 엽니다는 **리소스** 선택한 메뉴 **Set Includes**합니다. "컴파일 시간 지시문" 편집 항목을 살펴봅니다. 예를 들어:
 
 ```
 #include "afxres.rc"

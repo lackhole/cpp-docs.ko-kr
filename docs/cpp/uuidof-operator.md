@@ -10,12 +10,12 @@ helpviewer_keywords:
 - __uuidof keyword [C++]
 - __LIBID_ keyword [C++]
 ms.assetid: badfe709-809b-4b66-ad48-ee35039d25c6
-ms.openlocfilehash: 6e593d023c486aa504f0b5eee8578fa8c307bcc8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a14ef9043ec2196ff930a37d0eff95e90024d3d5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432710"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769201"
 ---
 # <a name="uuidof-operator"></a>__uuidof 연산자
 
@@ -39,7 +39,7 @@ __uuidof (expression)
 
 - 개체를 [uuid](../cpp/uuid-cpp.md) 확장 된 특성입니다.
 
-- 사용 하 여 만든 라이브러리 블록의 [모듈](../windows/module-cpp.md) 특성입니다.
+- 사용 하 여 만든 라이브러리 블록의 [모듈](../windows/attributes/module-cpp.md) 특성입니다.
 
 > [!NOTE]
 > 디버그 빌드에서 **__uuidof** 항상 동적으로 (런타임으로) 개체를 초기화 합니다. 릴리스 빌드에서 **__uuidof** 정적으로 (컴파일 시) 개체를 초기화할 수 있습니다.
@@ -84,4 +84,4 @@ StringFromCLSID(__LIBID_, &lpolestr);
 ## <a name="see-also"></a>참고자료
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

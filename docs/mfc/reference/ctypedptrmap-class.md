@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CTypedPtrMap [MFC], RemoveKey
 - CTypedPtrMap [MFC], SetAt
 ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
-ms.openlocfilehash: 05689001f8c385191057a8dc824a508189a43f05
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: bc164125f867cf3e2f27b74e69b826cbed31ff1d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266058"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781798"
 ---
 # <a name="ctypedptrmap-class"></a>CTypedPtrMap 클래스
 
@@ -216,7 +216,7 @@ void SetAt(KEY key, VALUE newValue);
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 수집](../../overview/visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CMapPtrToPtr 클래스](../../mfc/reference/cmapptrtoptr-class.md)<br/>
 [CMapPtrToWord 클래스](../../mfc/reference/cmapptrtoword-class.md)<br/>

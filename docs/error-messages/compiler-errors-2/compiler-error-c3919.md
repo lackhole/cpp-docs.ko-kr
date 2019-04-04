@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3919
 ms.assetid: 5f8eddda-d751-478b-930d-e18f7191ddfb
-ms.openlocfilehash: 0fe7e61c28ad2688a6d97b4164c2b5cfa81a37b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05ac2fc9258a078f352b6012e64e86fe4b70c3f0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474869"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771476"
 ---
 # <a name="compiler-error-c3919"></a>컴파일러 오류 C3919
 
@@ -19,7 +19,7 @@ ms.locfileid: "50474869"
 
 이벤트 접근자 메서드를 제대로 선언 되지 않았습니다.
 
-이벤트에 대 한 자세한 내용은 참조 하세요. [이벤트](../../windows/event-cpp-component-extensions.md)합니다.
+이벤트에 대 한 자세한 내용은 참조 하세요. [이벤트](../../extensions/event-cpp-component-extensions.md)합니다.
 
 다음 샘플에서는 C3919 오류가 생성 됩니다.
 

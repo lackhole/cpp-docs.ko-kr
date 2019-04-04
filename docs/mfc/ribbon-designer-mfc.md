@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Ribbon Designer (MFC)
 - MFC Ribbon Designer
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
-ms.openlocfilehash: 0972cdfbb80129b0c87c96fa7daf6768d18aa0c4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5740b2f93f451a74407483c98ce5bf547b79bf35
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288783"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769487"
 ---
 # <a name="ribbon-designer-mfc"></a>리본 디자이너(MFC)
 
@@ -107,7 +107,7 @@ MFC 응용 프로그램에서 리본 리소스를 사용 하려면 호출 하 �
 
 - **패널:** 관련된 컨트롤 그룹을 표시 하는 리본 표시줄의 영역입니다. 모든 리본 범주에는 하나 이상의 리본 패널이 있습니다.
 
-- **리본 요소:** 제어 패널에 있는 예를 들어, 단추, 콤보 상자입니다. 리본에서 호스팅될 수 있는 다양 한 컨트롤을 보려면 참조 [RibbonGadgets 샘플: 가젯 응용 프로그램을 리본](../visual-cpp-samples.md)합니다.
+- **리본 요소:** 제어 패널에 있는 예를 들어, 단추, 콤보 상자입니다. 리본에서 호스팅될 수 있는 다양 한 컨트롤을 보려면 참조 [RibbonGadgets 샘플: 가젯 응용 프로그램을 리본](../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

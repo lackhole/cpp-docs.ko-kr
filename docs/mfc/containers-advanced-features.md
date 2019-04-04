@@ -12,12 +12,12 @@ helpviewer_keywords:
 - server/container applications [MFC]
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-ms.openlocfilehash: 9d83ba601766f4b6fb84576571239a250169abb1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 350431975a4335fc06e436237b7e0d3388faab64
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278706"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769565"
 ---
 # <a name="containers-advanced-features"></a>컨테이너: 고급 기능
 
@@ -39,7 +39,7 @@ ms.locfileid: "57278706"
 
 - 재정의 `COleClientItem::CanActivate` 자리에서 편집 하는 서버 자체를 사용 하는 동안 현재 위치에서 항목을 편집 하지 않아도 됩니다.
 
-   예를 들어, MFC OLE 샘플 [OCLIENT](../visual-cpp-samples.md) 더 컨테이너/서버 응용 프로그램에서 만든 항목을 포함 합니다. OCLIENT 응용 프로그램을 열면 및 전체 컨테이너/서버 응용 프로그램에서 만든 항목을 편집 합니다. MFC OLE 샘플에서 만든 항목을 포함 하려는 하려는 응용 프로그램의 항목을 편집 하는 동안 [HIERSVR](../visual-cpp-samples.md)합니다. 이 위해 내부 활성화를 사용할 수 없습니다. 이 항목을 활성화 하는 HIERSVR 완전히 열어야 합니다. Microsoft Foundation Class 라이브러리는이 OLE 기능을 지원 하지 않으므로, 재정의 `COleClientItem::CanActivate` 이 이런 확인 하 고 응용 프로그램에서 가능한 런타임 오류를 방지할 수 있습니다.
+   예를 들어, MFC OLE 샘플 [OCLIENT](../overview/visual-cpp-samples.md) 더 컨테이너/서버 응용 프로그램에서 만든 항목을 포함 합니다. OCLIENT 응용 프로그램을 열면 및 전체 컨테이너/서버 응용 프로그램에서 만든 항목을 편집 합니다. MFC OLE 샘플에서 만든 항목을 포함 하려는 하려는 응용 프로그램의 항목을 편집 하는 동안 [HIERSVR](../overview/visual-cpp-samples.md)합니다. 이 위해 내부 활성화를 사용할 수 없습니다. 이 항목을 활성화 하는 HIERSVR 완전히 열어야 합니다. Microsoft Foundation Class 라이브러리는이 OLE 기능을 지원 하지 않으므로, 재정의 `COleClientItem::CanActivate` 이 이런 확인 하 고 응용 프로그램에서 가능한 런타임 오류를 방지할 수 있습니다.
 
 새 응용 프로그램을 만드는 경우 컨테이너/서버 응용 프로그램으로 작동 시키려면 응용 프로그램 마법사에서이 지원은 OLE 옵션 대화 상자에서 옵션 자동으로 만들 수는 선택 합니다. 자세한 내용은 문서를 참조 하세요. [개요: ActiveX 컨트롤 컨테이너 만들기](../mfc/reference/creating-an-mfc-activex-control-container.md)합니다. MFC 샘플에 대 한 내용은 MFC 샘플을 참조 하세요.
 
@@ -69,7 +69,7 @@ ms.locfileid: "57278706"
 
          If the application is launched with the "/Embedded" switch, it should not show its main window, similar to a server application.
 
-MFC OLE 샘플 [OCLIENT](../visual-cpp-samples.md) 이 기능을 구현 합니다. 이렇게 하는 방법의 예제를 참조 하세요. 합니다 `InitInstance` 함수는 *OCLIENT 합니다. CPP* 이 샘플 응용 프로그램의 파일입니다.
+MFC OLE 샘플 [OCLIENT](../overview/visual-cpp-samples.md) 이 기능을 구현 합니다. 이렇게 하는 방법의 예제를 참조 하세요. 합니다 `InitInstance` 함수는 *OCLIENT 합니다. CPP* 이 샘플 응용 프로그램의 파일입니다.
 
 ## <a name="see-also"></a>참고자료
 

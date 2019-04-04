@@ -10,12 +10,12 @@ helpviewer_keywords:
 - serialization [MFC], collection classes
 - collection classes [MFC], deriving from nontemplate
 ms.assetid: 7230b2db-4283-4083-b098-eb231bf5b89e
-ms.openlocfilehash: d4241a77184458f5253b6d8987c310604310683c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c8be781bad699edb8cb0be844d79802269c3e0c5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295190"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781525"
 ---
 # <a name="how-to-make-a-type-safe-collection"></a>방법: 형식이 안전한 컬렉션 만들기
 
@@ -27,13 +27,13 @@ ms.locfileid: "57295190"
 
 - [비템플릿 컬렉션 클래스를 사용 하 여](#_core_using_nontemplate_collection_classes)
 
-Microsoft Foundation Class 라이브러리를 c + + 템플릿을 기반으로 하는 미리 정의 된 형식이 안전한 컬렉션을 제공 합니다. 템플릿 것 이므로 이러한 클래스를 형식 안전성 및 형식 변환 및이 목적을 위해 비템플릿 클래스 사용과 관련 된 기타 추가 작업 없이 사용 편의성을 제공 합니다. MFC 샘플 [수집](../visual-cpp-samples.md) MFC 응용 프로그램에서 템플릿 기반 컬렉션 클래스의 사용을 보여 줍니다. 일반적으로 새 컬렉션 코드를 작성 하 든 지 이러한 클래스를 사용 합니다.
+Microsoft Foundation Class 라이브러리를 c + + 템플릿을 기반으로 하는 미리 정의 된 형식이 안전한 컬렉션을 제공 합니다. 템플릿 것 이므로 이러한 클래스를 형식 안전성 및 형식 변환 및이 목적을 위해 비템플릿 클래스 사용과 관련 된 기타 추가 작업 없이 사용 편의성을 제공 합니다. MFC 샘플 [수집](../overview/visual-cpp-samples.md) MFC 응용 프로그램에서 템플릿 기반 컬렉션 클래스의 사용을 보여 줍니다. 일반적으로 새 컬렉션 코드를 작성 하 든 지 이러한 클래스를 사용 합니다.
 
 ##  <a name="_core_using_template.2d.based_classes_for_type_safety"></a> 형식 안전성에 대 한 템플릿 기반 클래스를 사용 하 여
 
 #### <a name="to-use-template-based-classes"></a>템플릿 기반 클래스를 사용 하려면
 
-1. 컬렉션 클래스 형식의 변수를 선언 합니다. 예를 들면,
+1. 컬렉션 클래스 형식의 변수를 선언 합니다. 예를 들어:
 
    [!code-cpp[NVC_MFCCollections#7](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_1.cpp)]
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4754
 ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
-ms.openlocfilehash: 82036017188acc3f882e9751096af8ab268fd9db
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 203f2b97547c7ff8b1d68e3640e62d531b2600e9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525173"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780355"
 ---
 # <a name="compiler-warning-level-4-c4754"></a>컴파일러 경고(수준 4) C4754
 
@@ -19,7 +19,7 @@ ms.locfileid: "51525173"
 
 비교 결과가 항상 동일하기 때문에 C4754 경고가 발생합니다. 이는 연결된 정수 식이 올바르지 않기 때문에 조건 분기 중 하나가 결코 실행되지 않음을 나타냅니다. 이러한 코드 감지는 64비트 아키텍처에서 잘못된 정수 오버플로 검사 시에 자주 발생합니다.
 
-정수 변환 규칙은 복잡하고 많은 미묘한 문제가 있습니다. 각 C4754 경고를 해결 하는 대신, 사용 하도록 코드를 업데이트할 수 있습니다 합니다 [SafeInt 라이브러리](../../windows/safeint-library.md)합니다.
+정수 변환 규칙은 복잡하고 많은 미묘한 문제가 있습니다. 각 C4754 경고를 해결 하는 대신, 사용 하도록 코드를 업데이트할 수 있습니다 합니다 [SafeInt 라이브러리](../../safeint/safeint-library.md)합니다.
 
 ## <a name="example"></a>예제
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: C++ 언어 참조
 ms.custom: index-page
 ms.date: 11/04/2016
@@ -8,18 +8,18 @@ helpviewer_keywords:
 - language reference, Visual C++
 - Visual C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-ms.openlocfilehash: 4d184e70e6a7284d07e706ce8b8c247c96442750
-ms.sourcegitcommit: cce52b2232b94ce8fd8135155b86e2d38a4e4562
+ms.openlocfilehash: 8da5a4f7113bbb4256e45e7ec3c91a9c6677643c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54031267"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774037"
 ---
 # <a name="c-language-reference"></a>C++ 언어 참조
 
 이 문서에서는 Microsoft Visual C++에서 사용하는 C++ 프로그래밍 언어를 설명하며 기반으로 [ *The Annotated c + + Reference Manual* ](http://www.stroustrup.com/arm.html) 구성은 Margaret Ellis와 Bjarne Stroustrup 및 ANSI/ISO c + + 국제 표준 (ISO/IEC FDIS 14882). 또한 C++ 언어 기능의 Microsoft 전용 구현 사항이 포함되어 있습니다.
 
-모던 C++ 프로그래밍 방법은 [C++의 진화(모던 C++)](welcome-back-to-cpp-modern-cpp.md)를 참조합니다.
+모던 C++ 프로그래밍 방법은 [C++의 진화(최신 C++)](welcome-back-to-cpp-modern-cpp.md)를 참조합니다.
 
 키워드나 연산자를 빠르게 찾으려면 다음 표를 참조하십시오.
 
@@ -97,8 +97,8 @@ Visual C++ 컴파일러의 비표준 동작에 대한 정보입니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-[런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)<br/>
-공용 언어 런타임을 대상으로 하는 Visual C++ 사용에 대한 참조 자료입니다.
+[런타임 플랫폼용 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)<br/>
+Visual c + +를 사용 하 여.NET 대상에 대 한 참조 자료입니다.
 
 [C/C++ 빌드 참조](../build/reference/c-cpp-building-reference.md)<br/>
 컴파일러 옵션, 링커 옵션 및 기타 빌드 도구입니다.

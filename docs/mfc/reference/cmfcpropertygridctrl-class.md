@@ -150,12 +150,12 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], OnSelectCombo
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
-ms.openlocfilehash: f194879cf4a1388fc156fa4e92f4f9bea5056191
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 93ace0388981f429ac4a422947fbdaae8cdb8f24
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296009"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781980"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl 클래스
 
@@ -297,7 +297,7 @@ class CMFCPropertyGridCtrl : public CWnd
 
 ## <a name="example"></a>예제
 
-다음 예제에서 다양 한 메서드를 사용 하 여 속성 표 컨트롤 개체를 구성 하는 방법에 설명 합니다 `CMFCPropertyGridCtrl` 클래스입니다. 이 예제에서는 헤더 컨트롤을 사용 하도록 설정 설명 영역을 설정 하 고 속성 표 컨트롤의 모양을 설정 하는 방법을 보여 줍니다. 예제에는 또한 컨트롤의 정렬 여기서 컨트롤에 대 한 영문자 모드 속성 이름별으로 포함 된 모든 속성을 설정 하는 방법 및 속성 표 컨트롤의 다양 한 요소에 대 한 사용자 지정 색을 설정 하는 방법을 보여 줍니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서 다양 한 메서드를 사용 하 여 속성 표 컨트롤 개체를 구성 하는 방법에 설명 합니다 `CMFCPropertyGridCtrl` 클래스입니다. 이 예제에서는 헤더 컨트롤을 사용 하도록 설정 설명 영역을 설정 하 고 속성 표 컨트롤의 모양을 설정 하는 방법을 보여 줍니다. 예제에는 또한 컨트롤의 정렬 여기서 컨트롤에 대 한 영문자 모드 속성 이름별으로 포함 된 모든 속성을 설정 하는 방법 및 속성 표 컨트롤의 다양 한 요소에 대 한 사용자 지정 색을 설정 하는 방법을 보여 줍니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#14](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#16](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_2.cpp)]
@@ -480,7 +480,7 @@ virtual BOOL Create(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 의 메서드 `CMFCPropertyGridCtrl` 클래스입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 의 메서드 `CMFCPropertyGridCtrl` 클래스입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#15](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_6.cpp)]
 

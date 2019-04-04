@@ -100,12 +100,12 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nBulletIndent
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-ms.openlocfilehash: 9cedcfbfb662d7d4d635a02b82ea45828c54b958
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 60eeaa2a37dd824ae418b25e95743c21c65ae7ce
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259518"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773725"
 ---
 # <a name="cricheditview-class"></a>CRichEditView 클래스
 
@@ -194,7 +194,7 @@ class CRichEditView : public CCtrlView
 
 이 Windows 공용 컨트롤 (및 따라서 합니다 [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) 및 관련 클래스) 이상 Windows 95/98 및 Windows NT 버전 3.51에서 실행 되는 프로그램에만 사용할 수 있습니다.
 
-MFC 응용 프로그램에서 풍부한 편집 뷰를 사용 하는 예제를 보려면 합니다 [워드 패드](../../visual-cpp-samples.md) 샘플 응용 프로그램입니다.
+MFC 응용 프로그램에서 풍부한 편집 뷰를 사용 하는 예제를 보려면 합니다 [워드 패드](../../overview/visual-cpp-samples.md) 샘플 응용 프로그램입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -1284,7 +1284,7 @@ virtual void WrapChanged();
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 워드 패드](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 워드 패드](../../overview/visual-cpp-samples.md)<br/>
 [CCtrlView 클래스](../../mfc/reference/cctrlview-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CRichEditDoc 클래스](../../mfc/reference/cricheditdoc-class.md)<br/>

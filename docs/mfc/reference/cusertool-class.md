@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CUserTool [MFC], m_strInitialDirectory
 - CUserTool [MFC], m_strLabel
 ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
-ms.openlocfilehash: ca9035ecfcde0c2e82628c5509a16557a487b8cc
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5bb0ae073b722c97e8e30158f8f7832fd88b2fbc
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290458"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779042"
 ---
 # <a name="cusertool-class"></a>CUserTool 클래스
 
@@ -82,7 +82,7 @@ class CUserTool : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에서 도구를 만드는 방법을 보여 줍니다는 `CUserToolsManager` 개체, 설정 된 `m_strLabel` 멤버 변수와 사용자 도구를 실행 하는 응용 프로그램 집합입니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서 도구를 만드는 방법을 보여 줍니다는 `CUserToolsManager` 개체, 설정 된 `m_strLabel` 멤버 변수와 사용자 도구를 실행 하는 응용 프로그램 집합입니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#35](../../mfc/codesnippet/cpp/cusertool-class_1.cpp)]
 

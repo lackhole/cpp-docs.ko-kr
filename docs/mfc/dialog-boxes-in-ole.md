@@ -10,12 +10,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], OLE
 - Insert object
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
-ms.openlocfilehash: 1081a831cc2b9fc0ab22e2c80a4f657466534d86
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: fa3d87e2cc17e297c3e6387920c6d527d8ddbe39
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270893"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767654"
 ---
 # <a name="dialog-boxes-in-ole"></a>OLE의 대화 상자
 
@@ -31,7 +31,7 @@ ms.locfileid: "57270893"
 이 대화 상자를 사용 하면 연결 되거나 포함 된 항목을 나타내는 아이콘은 표시를 선택 합니다. 사용자 편집 메뉴에서 변경 아이콘을 선택 하거나 선택 하 여 붙여넣기 또는 변환 대화 상자에서 변경 아이콘 단추를 선택 하면이 대화 상자를 표시 합니다. 또한 표시를 사용자 개체 삽입 대화 상자를 열고 아이콘으로 표시를 선택 합니다. 사용 된 [COleChangeIconDialog](../mfc/reference/colechangeicondialog-class.md) 이 대화 상자를 표시 하는 클래스입니다.
 
 *변환*<br/>
-이 대화 상자에 사용자를가 포함 되거나 연결 된 항목의 유형을 변경할 수 있습니다. 예를 들어, 복합 문서에는 메타 파일을 포함 하 고 나중에 다른 응용 프로그램을 사용 하 여 포함 된 메타 파일을 수정 하려면 변환 대화 상자를 사용할 수 있습니다. 이 대화 상자를 클릭 하 여 일반적으로 표시 됩니다 *항목 유형을* 개체 편집 메뉴에서 선택한 다음, 계단식 메뉴에서 변환을 클릭 하 합니다. 사용 된 [COleConvertDialog](../mfc/reference/coleconvertdialog-class.md) 이 대화 상자를 표시 하는 클래스입니다. 예를 들어 MFC OLE 샘플을 실행 [OCLIENT](../visual-cpp-samples.md)합니다.
+이 대화 상자에 사용자를가 포함 되거나 연결 된 항목의 유형을 변경할 수 있습니다. 예를 들어, 복합 문서에는 메타 파일을 포함 하 고 나중에 다른 응용 프로그램을 사용 하 여 포함 된 메타 파일을 수정 하려면 변환 대화 상자를 사용할 수 있습니다. 이 대화 상자를 클릭 하 여 일반적으로 표시 됩니다 *항목 유형을* 개체 편집 메뉴에서 선택한 다음, 계단식 메뉴에서 변환을 클릭 하 합니다. 사용 된 [COleConvertDialog](../mfc/reference/coleconvertdialog-class.md) 이 대화 상자를 표시 하는 클래스입니다. 예를 들어 MFC OLE 샘플을 실행 [OCLIENT](../overview/visual-cpp-samples.md)합니다.
 
 *편집 링크 또는 업데이트 링크*<br/>
 링크 편집 대화 상자에 사용자를가 연결된 된 개체의 원본에 대 한 정보를 변경할 수 있습니다. 업데이트 연결 대화 상자에서 현재 대화 상자에서 연결 된 모든 항목의 원본을 확인 하 고 필요한 경우 연결 편집 대화 상자를 표시 합니다. 편집 메뉴에서 링크를 선택 하면 링크 편집 대화 상자를 표시 합니다. 연결 업데이트 대화 상자는 일반적으로 복합 문서를 처음으로 열릴 때 표시 됩니다. 하나를 사용 합니다 [COleLinksDialog](../mfc/reference/colelinksdialog-class.md) 또는 [COleUpdateDialog](../mfc/reference/coleupdatedialog-class.md) 클래스를 표시 하려면 어떤 대화 상자에 따라 합니다.

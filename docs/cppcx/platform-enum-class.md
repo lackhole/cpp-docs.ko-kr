@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Enum Struct
 ms.assetid: cf82f0eb-7a37-4e4e-bbe7-e4aebbc9ec0a
-ms.openlocfilehash: d91974cb1c98561ba61927b84d06ad45cffc1291
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 67870a0fcc685c420c7d24510e90c6f4ef9b72a9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745152"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780277"
 ---
 # <a name="platformenum-class"></a>Platform::Enum 클래스
 
@@ -30,7 +30,7 @@ Enum 클래스는 [Platform::Object Class](../cppcx/platform-object-class.md)의
 
 ### <a name="remarks"></a>설명
 
-[public enum 클래스](../windows/enum-class-cpp-component-extensions.md) 키워드를 사용하여 열거형을 만듭니다. Platform::Enum 형식을 명시적으로 사용하지 마세요. 자세한 내용은 [열거형](../cppcx/enums-c-cx.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.
+[public enum 클래스](../extensions/enum-class-cpp-component-extensions.md) 키워드를 사용하여 열거형을 만듭니다. Platform::Enum 형식을 명시적으로 사용하지 마세요. 자세한 내용은 [열거형](../cppcx/enums-c-cx.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.
 
 ### <a name="requirements"></a>요구 사항
 

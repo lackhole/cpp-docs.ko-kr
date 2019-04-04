@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - safe_cast keyword [C++], upcasting
 ms.assetid: 0fbc87d8-ecdf-4cd5-81f4-0d8cc18e2aff
-ms.openlocfilehash: 1fd1b2d698af44ab841aeb6e205b750beb30ae0d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 66faadba9530bc7f3c12513277582e405e1b1b34
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739350"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781837"
 ---
 # <a name="how-to-use-safecast-in-ccli"></a>방법: Safe_cast를 사용 하 여 C + + /cli CLI
 
-이 문서에서는 safe_cast C + + 응용 프로그램입니다. C + safe_cast에 대 한 자세한 + /CX에서는 참조 [safe_cast](../windows/safe-cast-cpp-component-extensions.md)합니다.
+이 문서에서는 safe_cast C + + 응용 프로그램입니다. C + safe_cast에 대 한 자세한 + /CX에서는 참조 [safe_cast](../extensions/safe-cast-cpp-component-extensions.md)합니다.
 
 ## <a name="upcasting"></a>업 캐스트
 
@@ -331,4 +331,4 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[safe_cast](../windows/safe-cast-cpp-component-extensions.md)
+[safe_cast](../extensions/safe-cast-cpp-component-extensions.md)

@@ -311,12 +311,12 @@ helpviewer_keywords:
 - CMFCToolBar [MFC], m_bDontScaleImages
 - CMFCToolBar [MFC], m_dblLargeImageRatio
 ms.assetid: e7679c01-fb94-44c0-98c6-3af955292fb5
-ms.openlocfilehash: 1f92afa4f40a5a37f32e1bc86418056c8591625f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 523e89859a6726bdff1dd27975077263abe481c4
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283139"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775636"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar 클래스
 
@@ -525,7 +525,7 @@ class CMFCToolBar : public CMFCBaseToolBar
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CMFCToolBar` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 도구 모음 창 레이블의 텍스트를 설정, 모음, 창의 스타일을 설정 및 사용 하도록 설정 하는 방법을 보여 합니다 **단추 추가 / 제거** 후 도구 모음에 나타나는 단추입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 `CMFCToolBar` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 도구 모음 창 레이블의 텍스트를 설정, 모음, 창의 스타일을 설정 및 사용 하도록 설정 하는 방법을 보여 합니다 **단추 추가 / 제거** 후 도구 모음에 나타나는 단추입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#8](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_2.cpp)]
@@ -1031,7 +1031,7 @@ virtual BOOL CreateEx(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `CreateEx` 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `CreateEx` 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_3.cpp)]
@@ -1799,7 +1799,7 @@ virtual void GetItemRect(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `GetItemRect` 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `GetItemRect` 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#9](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_4.cpp)]
@@ -2737,7 +2737,7 @@ virtual BOOL LoadToolBar(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `LoadToolBar` 의 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `LoadToolBar` 의 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_3.cpp)]
@@ -3079,7 +3079,7 @@ int ReplaceButton(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `ReplaceButton` 의 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `ReplaceButton` 의 메서드는 `CMFCToolBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [IE 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#10](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_5.cpp)]

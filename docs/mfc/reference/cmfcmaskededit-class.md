@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCMaskedEdit [MFC], SetWindowText
 - CMFCMaskedEdit [MFC], IsMaskedChar
 ms.assetid: 13b1a645-2d5d-4c37-8599-16d5003f23a5
-ms.openlocfilehash: 88a9c49b55dca9d98976924127efff67c479a96a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c1dcf89811fa5225283cb5bec120d3bd2fdfb003
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276973"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773790"
 ---
 # <a name="cmfcmaskededit-class"></a>CMFCMaskedEdit 클래스
 
@@ -88,7 +88,7 @@ class CMFCMaskedEdit : public CEdit
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 마스크 (예: 전화 번호)를 사용 하 여 설정 하는 방법에 설명 합니다 `EnableMask` 메서드는 마스킹된 편집 컨트롤에 대 한 마스크를는 `SetValidChars` 사용자가 입력할 수 있는 올바른 문자와 의문자열을지정하는방법`SetWindowText` 컨트롤을 편집 하는 마스크의 프롬프트를 표시 하는 방법입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 마스크 (예: 전화 번호)를 사용 하 여 설정 하는 방법에 설명 합니다 `EnableMask` 메서드는 마스킹된 편집 컨트롤에 대 한 마스크를는 `SetValidChars` 사용자가 입력할 수 있는 올바른 문자와 의문자열을지정하는방법`SetWindowText` 컨트롤을 편집 하는 마스크의 프롬프트를 표시 하는 방법입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#11](../../mfc/reference/codesnippet/cpp/cmfcmaskededit-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#12](../../mfc/reference/codesnippet/cpp/cmfcmaskededit-class_2.cpp)]

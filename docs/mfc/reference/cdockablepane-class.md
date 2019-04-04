@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CDockablePane [MFC], m_bHideInAutoHideMode
 - CDockablePane [MFC], m_nSlideSteps
 ms.assetid: e2495f4c-765f-48f9-a2e2-e45e47608d91
-ms.openlocfilehash: c78634c93bda94940b2834a61d276f63522e4aeb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a9d7c4ea941884435c9ecfac54a1d42649c6dbd5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271912"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769695"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane Class
 
@@ -290,7 +290,7 @@ class CDockablePane : public CPane
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 구성 하는 방법에 설명 된 `CDockablePane` 에서 다양 한 메서드를 사용 하 여 개체를 `CDockablePane` 클래스입니다. 이 예제에서는 자동 숨김 도킹 가능한 창에 대 한 모든 기능을 활성화, 캡션 또는 위치 조정 막대를 사용 하도록 설정, 자동 숨기기 모드를 사용 하도록 설정, 창을 표시 및 자동 숨기기 모드에 있는 창에 애니메이션 효과 주기 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 구성 하는 방법에 설명 된 `CDockablePane` 에서 다양 한 메서드를 사용 하 여 개체를 `CDockablePane` 클래스입니다. 이 예제에서는 자동 숨김 도킹 가능한 창에 대 한 모든 기능을 활성화, 캡션 또는 위치 조정 막대를 사용 하도록 설정, 자동 숨기기 모드를 사용 하도록 설정, 창을 표시 및 자동 숨기기 모드에 있는 창에 애니메이션 효과 주기 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#27](../../mfc/codesnippet/cpp/cdockablepane-class_1.cpp)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#28](../../mfc/codesnippet/cpp/cdockablepane-class_2.cpp)]

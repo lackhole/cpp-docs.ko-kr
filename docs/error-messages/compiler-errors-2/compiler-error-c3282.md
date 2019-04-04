@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3282
 ms.assetid: bac2ac89-c360-4c24-bb81-c20c62ece9ba
-ms.openlocfilehash: 7092ddc3bf6859212cbb143572de1ef3604a13d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 46be1f5250c1ca787909c48646d59180d62bd899
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491509"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780849"
 ---
 # <a name="compiler-error-c3282"></a>컴파일러 오류 C3282
 
 관리 되는 제네릭 매개 변수 목록에만 나타날 수 있습니다 또는 WinRTclasses, 구조체 또는 함수
 
-제네릭 매개 변수 목록이 잘못 사용되었습니다.  자세한 내용은 [제네릭](../../windows/generics-cpp-component-extensions.md)을 참조하세요.
+제네릭 매개 변수 목록이 잘못 사용되었습니다.  자세한 내용은 [제네릭](../../extensions/generics-cpp-component-extensions.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

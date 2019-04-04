@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CDialog class [MFC], MFC dialog boxes
 - MFC dialog boxes
 ms.assetid: e4feea1a-8360-4ccb-9b84-507f1ccd9ef3
-ms.openlocfilehash: 9add6f003f0f6cd4ab85980e1e35370770da43aa
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 32a8f8784459338131d4893f25d8798f8031b68b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282060"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778496"
 ---
 # <a name="dialog-boxes"></a>대화 상자
 
@@ -61,7 +61,7 @@ Windows 용 응용 프로그램은 자주 대화 상자를 통해 사용자와 �
 
 - [OLE의 대화 상자](../mfc/dialog-boxes-in-ole.md)
 
-- 해당 사용자 인터페이스 대화 상자는 응용 프로그램 만들기: 참조를 [CMNCTRL1](../visual-cpp-samples.md) 또는 [CMNCTRL2](../visual-cpp-samples.md) 샘플 프로그램입니다. 응용 프로그램 마법사는이 옵션을 제공합니다.
+- 해당 사용자 인터페이스 대화 상자는 응용 프로그램 만들기: 참조를 [CMNCTRL1](../overview/visual-cpp-samples.md) 또는 [CMNCTRL2](../overview/visual-cpp-samples.md) 샘플 프로그램입니다. 응용 프로그램 마법사는이 옵션을 제공합니다.
 
 - [샘플](../mfc/dialog-sample-list.md)
 

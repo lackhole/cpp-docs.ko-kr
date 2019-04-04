@@ -15,12 +15,12 @@ helpviewer_keywords:
 - custom events [MFC]
 - FireEvent method, adding custom events
 ms.assetid: c584d053-1e34-47aa-958e-37d3e9b85892
-ms.openlocfilehash: 626aae04e0b19dc951814e4741cad3729acd3b72
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 48c5ddbc8a3bcf6f74c251820e83cdebcef05bc9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263015"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781005"
 ---
 # <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX 컨트롤: 사용자 지정 이벤트 추가
 
@@ -92,7 +92,7 @@ ms.locfileid: "57263015"
 
 1. 구현에서 메시지 처리기 코드를 이동할 클래스 뷰에서 새 처리기 함수를 두 번 클릭 (합니다. ActiveX 컨트롤의 CPP) 파일입니다.
 
-다음 코드 샘플 호출을 `InCircle` 컨트롤 창 내에서 마우스 왼쪽된 단추를 클릭할 때마다 작동 합니다. WM_LBUTTONDOWN 처리기 함수에서이 샘플을 찾을 수 있습니다 `OnLButtonDown`에 [Circ 샘플](../visual-cpp-samples.md) 추상입니다.
+다음 코드 샘플 호출을 `InCircle` 컨트롤 창 내에서 마우스 왼쪽된 단추를 클릭할 때마다 작동 합니다. WM_LBUTTONDOWN 처리기 함수에서이 샘플을 찾을 수 있습니다 `OnLButtonDown`에 [Circ 샘플](../overview/visual-cpp-samples.md) 추상입니다.
 
 [!code-cpp[NVC_MFC_AxUI#10](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_4.cpp)]
 

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - destruction [MFC], data objects
 - data sources [MFC], creating
 ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
-ms.openlocfilehash: 74119d7ea33eef68f0cb4a67c8419514cbb73c10
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 68ee5fbfec554df8865ca50c265ca2fa2f226a29
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304441"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775246"
 ---
 # <a name="data-objects-and-data-sources-creation-and-destruction"></a>데이터 개체 및 데이터 소스: 생성 및 소멸
 
@@ -68,15 +68,13 @@ ms.locfileid: "57304441"
 
 1. 이 경우는 **잘라내기** 작업 또는 `DoDragDrop` 반환 **DROPEFFECT_MOVE**, 1 단계에서 선택한 데이터가 문서에서 삭제 됩니다.
 
-이 시나리오는 MFC OLE 샘플 구현 [OCLIENT](../visual-cpp-samples.md) 하 고 [HIERSVR](../visual-cpp-samples.md)합니다. 
-  `GetClipboardData` 및 `OnGetClipboardData` 함수 외에 모든 함수에 대한 각 응용 프로그램의 `CView` 파생 클래스 소스를 살펴봅니다. 이들 두 함수는 `COleClientItem` 또는 `COleServerItem` 파생 클래스 구현이 포함됩니다. 이들 샘플 프로그램에서는 이러한 개념을 구현하는 방법의 좋은 예를 제공합니다.
+이 시나리오는 MFC OLE 샘플 구현 [OCLIENT](../overview/visual-cpp-samples.md) 하 고 [HIERSVR](../overview/visual-cpp-samples.md)합니다. `GetClipboardData` 및 `OnGetClipboardData` 함수 외에 모든 함수에 대한 각 응용 프로그램의 `CView` 파생 클래스 소스를 살펴봅니다. 이들 두 함수는 `COleClientItem` 또는 `COleServerItem` 파생 클래스 구현이 포함됩니다. 이들 샘플 프로그램에서는 이러한 개념을 구현하는 방법의 좋은 예를 제공합니다.
 
-
-  `COleDataSource` 개체를 만들어야 할 한 가지 다른 상황은 끌어서 놓기 작업의 기본 동작을 수정할 경우 발생합니다. 자세한 내용은 참조는 [끌어서 놓기: 사용자 지정](../mfc/drag-and-drop-customizing.md) 문서.
+`COleDataSource` 개체를 만들어야 할 한 가지 다른 상황은 끌어서 놓기 작업의 기본 동작을 수정할 경우 발생합니다. 자세한 내용은 참조는 [끌어서 놓기: 사용자 지정](../mfc/drag-and-drop-customizing.md) 문서.
 
 ##  <a name="_core_destroying_data_sources"></a> 데이터 소스 제거
 
-데이터 소스는 현재 데이터 소스를 처리해야 하는 응용 프로그램을 통해 제거되어야 합니다. 데이터 원본 OLE에 전달 되는 있는 경우에서와 같은 호출 [coledatasource:: Dodragdrop](../mfc/reference/coledatasource-class.md#dodragdrop)를 호출 해야 `pDataSrc->InternalRelease`합니다. 예를 들면,
+데이터 소스는 현재 데이터 소스를 처리해야 하는 응용 프로그램을 통해 제거되어야 합니다. 데이터 원본 OLE에 전달 되는 있는 경우에서와 같은 호출 [coledatasource:: Dodragdrop](../mfc/reference/coledatasource-class.md#dodragdrop)를 호출 해야 `pDataSrc->InternalRelease`합니다. 예를 들어:
 
 [!code-cpp[NVC_MFCListView#1](../atl/reference/codesnippet/cpp/data-objects-and-data-sources-creation-and-destruction_1.cpp)]
 

@@ -1,16 +1,16 @@
 ---
 title: C++ 데스크톱 개발에 Visual Studio IDE 사용
-ms.date: 06/08/2018
+ms.date: 03/14/2019
 helpviewer_keywords:
 - IDE [C++]
 - Visual Studio IDE [C++]
 ms.assetid: d985c230-8e81-49d6-92be-2db9cac8d023
-ms.openlocfilehash: 45dcf185f57f7deedb3734d31ce17a6201c81959
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7417c46097b1f0c6282e3684a7556880c21be42a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612279"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773569"
 ---
 # <a name="using-the-visual-studio-ide-for-c-desktop-development"></a>C++ 데스크톱 개발에 Visual Studio IDE 사용
 
@@ -26,7 +26,7 @@ Visual Studio IDE(통합 개발 환경)는 정적 분석 및 강력한 디버깅
 
 **Visual Studio 2017 설치**
 
-Visual Studio 2017을 받으려면 [Visual Studio 다운로드](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 다운로드하면 됩니다. Visual Studio를 설치할 때 기본적으로 설치되지 않으므로, Visual C++ 개발 도구를 포함해야 합니다. Visual Studio를 설치하는 방법에 대한 자세한 내용은 [Visual Studio 설치](/visualstudio/install/install-visual-studio)를 참조하세요.
+Visual Studio 2017을 받으려면 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 다운로드하면 됩니다. Visual Studio를 설치할 때 기본적으로 설치되지 않으므로, Visual C++ 개발 도구를 포함해야 합니다. Visual Studio를 설치하는 방법에 대한 자세한 내용은 [Visual Studio 설치](/visualstudio/install/install-visual-studio)를 참조하세요.
 
 **Visual Studio 2015 설치**
 
@@ -40,19 +40,19 @@ Visual Studio 설치가 완료되면 계속 진행할 준비가 된 것입니다
 
 Visual Studio IDE를 사용하여 C++ 앱을 빌드하려면 각 항목을 순서대로 진행합니다. 각 항목은 이전 항목에서 완료한 작업을 기반으로 작성됩니다.
 
-- [연습: 프로젝트 및 솔루션 작업(C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md)
+- [연습: 프로젝트 및 솔루션 작업(C++)](walkthrough-working-with-projects-and-solutions-cpp.md)
 
-- [연습: 프로젝트 빌드(C++)](../ide/walkthrough-building-a-project-cpp.md)
+- [연습: 프로젝트 빌드(C++)](walkthrough-building-a-project-cpp.md)
 
-- [연습: 프로젝트 테스트(C++)](../ide/walkthrough-testing-a-project-cpp.md)
+- [연습: 프로젝트 테스트(C++)](walkthrough-testing-a-project-cpp.md)
 
-- [연습: 프로젝트 디버깅(C++)](../ide/walkthrough-debugging-a-project-cpp.md)
+- [연습: 프로젝트 디버깅(C++)](walkthrough-debugging-a-project-cpp.md)
 
-- [연습: 프로그램 배포(C++)](../ide/walkthrough-deploying-your-program-cpp.md)
+- [연습: 프로그램 배포(C++)](walkthrough-deploying-your-program-cpp.md)
 
 ## <a name="next-steps"></a>다음 단계
 
-이러한 연습을 완료하면 자신의 프로젝트를 만들기 시작할 준비가 된 것입니다. Visual C++ 개발에 대한 자세한 내용과 리소스는 [Visual Studio의 Visual C++](../visual-cpp-in-visual-studio.md)를 참조하세요.
+이러한 연습을 완료하면 자신의 프로젝트를 만들기 시작할 준비가 된 것입니다. Visual C++ 개발에 대한 자세한 내용과 리소스는 [Visual Studio의 Visual C++](../overview/visual-cpp-in-visual-studio.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

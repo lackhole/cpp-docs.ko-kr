@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CView [MFC], OnPrint
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
-ms.openlocfilehash: fe9b282fd248f8dd03a6a7f078c03866d1b14b2d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 06c6d4dff28399f3d8e6ac7f46d9ed751850036f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305018"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775311"
 ---
 # <a name="cview-class"></a>CView 클래스
 
@@ -351,7 +351,7 @@ DROPEFFECT에서 값을 열거 drop 사용자이 위치에 있는 개체를 삭�
 
 - DROPEFFECT_MOVE MK_ALT에 대 한 원래 개체를 삭제 하 고 삭제 개체의 복사본을 만듭니다. 이것이 일반적으로 기본 놓기 효과 뷰에이 데이터 개체 받아들일 수입니다.
 
-자세한 내용은 MFC 고급 개념 샘플을 참조 하세요 [OCLIENT](../../visual-cpp-samples.md)합니다.
+자세한 내용은 MFC 고급 개념 샘플을 참조 하세요 [OCLIENT](../../overview/visual-cpp-samples.md)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -405,7 +405,7 @@ DROPEFFECT에서 값을 열거 drop 사용자이 위치에 있는 개체를 삭�
 
 - DROPEFFECT_MOVE MK_ALT에 대 한 원래 개체를 삭제 하 고 삭제 개체의 복사본을 만듭니다. 이것이 일반적으로 기본 놓기 효과 보기 데이터 개체를 받아들일 수입니다.
 
-자세한 내용은 MFC 고급 개념 샘플을 참조 하세요 [OCLIENT](../../visual-cpp-samples.md)합니다.
+자세한 내용은 MFC 고급 개념 샘플을 참조 하세요 [OCLIENT](../../overview/visual-cpp-samples.md)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -445,7 +445,7 @@ DROPEFFECT에서 값을 열거 drop 사용자이 위치에 있는 개체를 삭�
 
 - DROPEFFECT_SCROLL 끌기 스크롤 작업을 수행 하려고 합니다. 또는 대상 뷰에서 발생 했음을 나타냅니다.
 
-자세한 내용은 MFC 고급 개념 샘플을 참조 하세요 [OCLIENT](../../visual-cpp-samples.md)합니다.
+자세한 내용은 MFC 고급 개념 샘플을 참조 하세요 [OCLIENT](../../overview/visual-cpp-samples.md)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -871,7 +871,7 @@ virtual void OnUpdate(
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 MDIDOCVW](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

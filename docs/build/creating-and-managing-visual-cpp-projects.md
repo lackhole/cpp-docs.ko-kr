@@ -1,4 +1,4 @@
----
+﻿---
 title: C++-visual Studio 프로젝트
 ms.date: 12/12/2018
 f1_keywords:
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: b5fb9ac87547578f101676d4cf424c7065155842
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: a3ddafab143224b6e20a3e01d1d643c42bbe19e0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826907"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775324"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio 프로젝트-C++
 
@@ -26,7 +26,7 @@ A *Visual Studio 프로젝트* 프로젝트를 MSBuild 빌드 시스템에 기�
 
 선택 하 여 C++ 프로젝트를 만들 수 있습니다 **파일 &#124; 새로 만들기 &#124; 프로젝트**, 왼쪽된 창에서 Visual C++를 선택 합니다. 가운데 창에서 프로젝트 템플릿 목록을 표시 합니다. 
 
-   ![프로젝트 템플릿](../media/vs2017-new-project.png " Visual Studio 2017 새 프로젝트 대화 상자")
+   ![프로젝트 템플릿](../overview/media/vs2017-new-project.png " Visual Studio 2017 새 프로젝트 대화 상자")
 
 Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 C++ 프로젝트 템플릿](reference/visual-cpp-project-types.md)합니다. 사용자 고유의 프로젝트 템플릿을 만들 수 있습니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](/visualstudio/ide/how-to-create-project-templates)합니다.
 
@@ -42,7 +42,7 @@ Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자�
 
 ## <a name="add-third-party-libraries"></a>타사 라이브러리를 추가 합니다.
 
-타사 라이브러리를 추가 하려면 사용 합니다 [vcpkg](../vcpkg.md) 패키지 관리자입니다. 모든 Visual Studio 프로젝트에서 참조 하는 경우 해당 라이브러리에 대 한 경로 설정 하는 Visual Studio 통합 단계를 실행 합니다. 
+타사 라이브러리를 추가 하려면 사용 합니다 [vcpkg](vcpkg.md) 패키지 관리자입니다. 모든 Visual Studio 프로젝트에서 참조 하는 경우 해당 라이브러리에 대 한 경로 설정 하는 Visual Studio 통합 단계를 실행 합니다. 
 
 ## <a name="set-compiler-options-and-other-build-properties"></a>컴파일러 옵션 및 기타 빌드 속성 설정
 
@@ -54,16 +54,16 @@ Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자�
 
 새 프로젝트를 오류 없이 컴파일합니다. 사용자 고유의 코드를 추가할 때 경우에 따라 오류가 발생할 수도 있습니다 경고를 트리거합니다. 오류가 완료; 빌드 방지 경고 하지 않습니다. 모든 오류 및 경고 나타납니다 오류 목록에서 및 출력 창에 프로젝트를 빌드할 때. 
 
-   ![출력 창과 오류 목록](../media/vs2017-output-error-list.png)
+   ![출력 창과 오류 목록](../overview/media/vs2017-output-error-list.png)
 
 오류 목록에서 눌러도 **F1** 해당 설명서 항목으로 이동 하려면 강조 표시 된 오류입니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[Visual Studio에서 속성을 빌드하고 C++ 컴파일러를 설정 합니다.](working-with-project-properties.md)<br/>
+[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)<br/>
 프로젝트 설정을 지정 하려면 속성 페이지 및 속성 시트를 사용 하는 방법입니다.
 
-[참조 라이브러리 및 빌드 시 구성 요소](adding-references-in-visual-cpp-projects.md)<br/>
+[빌드 시 참조 라이브러리 및 구성 요소](adding-references-in-visual-cpp-projects.md)<br/>
 프로젝트에 라이브러리를 Dll에 COM 및.NET 구성 요소를 포함 하는 방법.
  
 [프로젝트 출력 파일 구성](how-to-organize-project-output-files-for-builds.md)<br/>

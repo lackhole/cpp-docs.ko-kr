@@ -6,12 +6,12 @@ helpviewer_keywords:
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: e2027d967aebe68618e44e454ec268770b53ee4b
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: a45cee1abd9351a8fef56769706fe8944a7965b8
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694064"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898741"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -474,7 +474,7 @@ int main(){
 
 1. 생성자 함수 본문의 코드가 해제됩니다.
 
-1. 기본 클래스 및 멤버 개체가 선언의 역순으로 소멸됩니다.
+1. 기본 클래스 및 멤버 개체가 선언의 역순으로 제거됩니다.
 
 1. 생성자가 비대리자인 경우 제대로 생성된 기본 클래스 개체 및 멤버가 모두 소멸됩니다. 하지만 개체가 완전히 생성되지 않으므로 소멸자는 실행되지 않습니다.
 
@@ -636,7 +636,7 @@ Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
 ```
 
-**Visual Studio 2017 버전 15.7 이상의**: 합니다 **사용 하 여** 문에서 **/std: c + + 17** 모든 생성자와 동일한 서명을 사용 하는 것을 제외 하 고 기본 클래스에서 범위로 가져옵니다 모드 파생된 클래스의 생성자입니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다. 참고 항목 [Visual Studio 2017 버전 15.7의에서 개선 사항](../cpp-conformance-improvements-2017.md#improvements_157)합니다.
+**Visual Studio 2017 버전 15.7 이상:** 합니다 **를 사용 하 여** 문에서 **/std: c + + 17** 모드 제외 생성자와 동일한 서명이 파생된 클래스에서 기본 클래스에서 모든 생성자를 범위로 가져옵니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다. 참고 항목 [Visual Studio 2017 버전 15.7의에서 개선 사항](../overview/cpp-conformance-improvements.md#improvements_157)합니다.
 
 클래스 템플릿은 해당 형식이 기본 클래스를 지정하는 경우 형식 인수에서 모든 생성자를 상속할 수 있습니다.
 

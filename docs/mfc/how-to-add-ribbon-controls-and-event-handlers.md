@@ -5,12 +5,12 @@ helpviewer_keywords:
 - event handlers [MFC], adding
 - ribbon controls [MFC], adding
 ms.assetid: b31f25bc-ede7-49c3-9e3c-dffe4e174a69
-ms.openlocfilehash: 8a164101dc42241a2cc76c91a3baa66e02e4dc90
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c21e8b86962ebf37ca1a06bae056d09b9a9dbb2f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291134"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770125"
 ---
 # <a name="how-to-add-ribbon-controls-and-event-handlers"></a>방법: 리본 컨트롤 및 이벤트 처리기 추가
 
@@ -40,5 +40,5 @@ ms.locfileid: "57291134"
 
 ## <a name="see-also"></a>참고자료
 
-[RibbonGadgets 샘플: 리본 가젯 응용 프로그램](../visual-cpp-samples.md)<br/>
+[RibbonGadgets 샘플: 리본 가젯 응용 프로그램](../overview/visual-cpp-samples.md)<br/>
 [리본 디자이너(MFC)](../mfc/ribbon-designer-mfc.md)

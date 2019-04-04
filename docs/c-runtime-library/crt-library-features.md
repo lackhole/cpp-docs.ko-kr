@@ -18,12 +18,12 @@ helpviewer_keywords:
 - libraries [C++], run-time
 - linking [C++], libraries
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
-ms.openlocfilehash: 08d85cd6993a2f3558ddb501dacac671c0d5d797
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b9a2691d492a277ffe0018b6e86b00cd245840ed
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540272"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767693"
 ---
 # <a name="crt-library-features"></a>CRT 라이브러리 기능
 
@@ -33,7 +33,7 @@ ms.locfileid: "50540272"
 
 CRT(C 런타임) 라이브러리는 ISO C99 표준 라이브러리를 통합하는 C++ 표준 라이브러리의 일부입니다. CRT를 구현하는 Visual C++ 라이브러리는 네이티브 코드 개발 및 혼합된 네이티브와 관리 코드를 모두 지원합니다. 모든 버전의 CRT는 다중스레드 개발을 지원합니다. 대부분의 라이브러리는 라이브러리를 코드에 직접 연결하는 정적 연결이나 코드에서 공용 DLL 파일을 사용할 수 있도록 하는 동적 연결을 모두 지원합니다.
 
-Visual Studio 2015부터 CRT는 새로운 이진 파일로 리팩터링되었습니다. UCRT(유니버설 CRT)에는 표준 C99 CRT 라이브러리에서 내보낸 전역 변수 및 함수가 포함됩니다. UCRT는 이제 Windows 구성 요소이며 Windows 10의 일부로 제공됩니다. 이제 정적 라이브러리, DLL 가져오기 라이브러리 및 UCRT에 대한 헤더 파일이 Windows 10 SDK에 있습니다. Visual C++를 설치하면 Visual Studio 설치에서 UCRT를 사용하는 데 필요한 Windows 10 SDK의 하위 집합을 설치합니다. Visual Studio 2015 이상 버전에서 지원하는 모든 Windows 버전에서 UCRT를 사용할 수 있습니다. Windows 10이 아닌 지원되는 다른 버전의 Windows에 대해 vcredist를 사용하여 재배포할 수 있습니다. 자세한 내용은 [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md)을 참조하세요.
+Visual Studio 2015부터 CRT는 새로운 이진 파일로 리팩터링되었습니다. UCRT(유니버설 CRT)에는 표준 C99 CRT 라이브러리에서 내보낸 전역 변수 및 함수가 포함됩니다. UCRT는 이제 Windows 구성 요소이며 Windows 10의 일부로 제공됩니다. 이제 정적 라이브러리, DLL 가져오기 라이브러리 및 UCRT에 대한 헤더 파일이 Windows 10 SDK에 있습니다. Visual C++를 설치하면 Visual Studio 설치에서 UCRT를 사용하는 데 필요한 Windows 10 SDK의 하위 집합을 설치합니다. Visual Studio 2015 이상 버전에서 지원하는 모든 Windows 버전에서 UCRT를 사용할 수 있습니다. Windows 10이 아닌 지원되는 다른 버전의 Windows에 대해 vcredist를 사용하여 재배포할 수 있습니다. 자세한 내용은 [Redistributing Visual C++ Files](../windows/redistributing-visual-cpp-files.md)을 참조하세요.
 
 다음 표에는 UCRT를 구현하는 라이브러리가 나열되어 있습니다.
 

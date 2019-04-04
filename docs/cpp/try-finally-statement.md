@@ -20,12 +20,12 @@ helpviewer_keywords:
 - __leave keyword [C++], try-finally statement
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
-ms.openlocfilehash: d05e1d113f4fc661cb6e2e2905fbd8c9dcdd7e2d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: d2a1c63f686b46aad4e174c86895f6f9fc00d260
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175923"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778340"
 ---
 # <a name="try-finally-statement"></a>try-finally 문
 
@@ -33,11 +33,11 @@ ms.locfileid: "52175923"
 
 다음 구문에 설명 합니다 **try-finally** 문:
 
-> **\_\_시도**<br/>
+> **\_\_try**<br/>
 > {<br/>
 > &nbsp;&nbsp;&nbsp;&nbsp;보호 된 코드<br/>
 > }<br/>
-> **\_\_마지막으로**<br/>
+> **\_\_finally**<br/>
 > {<br/>
 > &nbsp;&nbsp;&nbsp;&nbsp;종료 코드<br/>
 > }<br/>
@@ -45,11 +45,11 @@ ms.locfileid: "52175923"
 ## <a name="grammar"></a>문법
 
 *try-finally-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**\_\_시도** *복합 문*  **\_ \_마지막** *복합 문*
+&nbsp;&nbsp;&nbsp;&nbsp;**\_\_try** *compound-statement* **\_\_finally** *compound-statement*
 
 합니다 **try-finally** 문은 코드 블록의 실행이 중단 된 경우 정리 코드 실행을 보장 하기 위해 대상 응용 프로그램을 사용 하도록 설정 하는 C 및 c + + 언어에 Microsoft 확장입니다. 정리는 메모리 할당 해제, 파일 닫기 및 파일 핸들 해제와 같은 작업으로 구성됩니다. 합니다 **try-finally** 문에 루틴에서 반환 하는 위치는 검사가 수행 됩니다 오류가 발생할 수 있는 중간 많은 루틴에 특히 유용 합니다.
 
-관련된 정보 및 코드 샘플을 참조 하세요 [시도-문을 제외 하 고](../cpp/try-except-statement.md)입니다. 구조적된 예외 처리에 대 한 자세한 내용은 참조 하세요. [구조적 예외 처리](../cpp/structured-exception-handling-c-cpp.md)합니다. 관리 되는 응용 프로그램에서 예외 처리에 대 한 자세한 내용은 참조 하세요. [/clr에서 예외 처리](../windows/exception-handling-cpp-component-extensions.md)합니다.
+관련된 정보 및 코드 샘플을 참조 하세요 [시도-문을 제외 하 고](../cpp/try-except-statement.md)입니다. 구조적된 예외 처리에 대 한 자세한 내용은 참조 하세요. [구조적 예외 처리](../cpp/structured-exception-handling-c-cpp.md)합니다. C +를 사용 하 여 관리 되는 응용 프로그램에서 예외를 처리 하는 방법은 + CLI 참조 [/clr에서 예외 처리](../extensions/exception-handling-cpp-component-extensions.md)합니다.
 
 > [!NOTE]
 > 구조적 예외 처리는 Win32에서 C 및 C++ 소스 파일에 대해 작동하지만 특별히 C++용으로 설계되지는 않았습니다. C++ 예외 처리를 사용하여 코드의 이식성이 향상되는지 확인할 수 있습니다. 또한 C++ 예외 처리는 모든 형식의 예외를 처리할 수 있다는 점에서 보다 유연합니다. C + + 프로그램에 대 한 것이 좋습니다 c + + 예외 처리 메커니즘을 사용 하는 ([try, catch 및 throw](../cpp/try-throw-and-catch-statements-cpp.md) 문).
@@ -66,7 +66,7 @@ ms.locfileid: "52175923"
 
 예외가 발생 하는 경우는 **__try** 블록 프로그램이 실패 또는 운영 체제는 예외에 대 한 처리기를 찾아야 합니다. 처리기가 있으면 모든 **__finally** 블록을 실행 하 고 처리기에서 실행을 다시 시작 합니다.
 
-예를 들어, 일련의 함수 호출 링크에서는 함수 A를 D에 연결한다고 가정합니다(아래 그림 참조). 각 함수에는 종료 처리기가 하나씩 있습니다. 예외가 D 함수에서 발생하고 A에서 처리될 경우 시스템이 스택 D, C, B를 해제하면 그 순서대로 종료 처리기가 호출됩니다.
+예를 들어, 일련의 함수 호출 링크에서는 함수 A를 D에 연결한다고 가정합니다(아래 그림 참조). 각 함수에는 종료 처리기가 하나씩 있습니다. 예외가 D 함수에서 발생 하 고 A에서 처리를 하는 경우 시스템 지우며 스택을 해제 하는 대로 종료 처리기가이 순서 대로 호출 됩니다. D, C, B.
 
 ![종료 순서&#45;처리기 실행](../cpp/media/vc38cx1.gif "종료 순서&#45;처리기 실행") <br/>
 종료 처리기 실행 순서
@@ -96,5 +96,5 @@ A **goto** 문은 보호 된 섹션에서 외부로 이동할 수도 있지만 �
 
 [종료 처리기 작성](../cpp/writing-a-termination-handler.md)<br/>
 [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [종료 처리기 구문](/windows/desktop/Debug/termination-handler-syntax)

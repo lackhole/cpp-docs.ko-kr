@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CRectTracker [MFC], m_rect
 - CRectTracker [MFC], m_sizeMin
 ms.assetid: 99caa7f2-3c0d-4a42-bbee-e5d1d342d4ee
-ms.openlocfilehash: 1834c378246835314002cdf05fe9a294b609c4e4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9c54cdfecfa6c4ff0eef7e16003ab2097553953d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259583"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775688"
 ---
 # <a name="crecttracker-class"></a>CRectTracker 클래스
 
@@ -481,8 +481,8 @@ TRUE 인 경우 x 축 또는 y 축; 사각형을 반전 시킬 수 있습니다.
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 추적기](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 DRAWCLI](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 추적기](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 DRAWCLI](../../overview/visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleResizeBar 클래스](../../mfc/reference/coleresizebar-class.md)<br/>
 [CRect 클래스](../../atl-mfc-shared/reference/crect-class.md)

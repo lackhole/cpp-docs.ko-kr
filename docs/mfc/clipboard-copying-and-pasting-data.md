@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Clipboard, copying data to
 - Clipboard, pasting
 ms.assetid: 580e10be-241f-4f9f-94cf-8302edc5beef
-ms.openlocfilehash: da589743e98b2ac020e006aedb0ccc0415998f17
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: cff9094315dc97e2040eb4dbad25d044c7c51a81
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270737"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776104"
 ---
 # <a name="clipboard-copying-and-pasting-data"></a>클립보드: 데이터 복사 및 붙여넣기
 
@@ -32,7 +32,7 @@ ms.locfileid: "57270737"
 
 1. 사용자가 복사 작업을 하는 대신 잘라내기 작업을 선택한 경우 응용 프로그램에서 선택한 데이터를 삭제 합니다.
 
-이 시퀀스의 예제를 보려면 합니다 `OnEditCut` 하 고 `OnEditCopy` 함수는 MFC OLE 샘플 프로그램 [OCLIENT](../visual-cpp-samples.md) 및 [HIERSVR](../visual-cpp-samples.md)합니다. 1 단계 작업이 이미 완료 하므로 이러한 샘플 현재 선택 된 데이터에 대 한 포인터를 유지 하는 참고 합니다.
+이 시퀀스의 예제를 보려면 합니다 `OnEditCut` 하 고 `OnEditCopy` 함수는 MFC OLE 샘플 프로그램 [OCLIENT](../overview/visual-cpp-samples.md) 및 [HIERSVR](../overview/visual-cpp-samples.md)합니다. 1 단계 작업이 이미 완료 하므로 이러한 샘플 현재 선택 된 데이터에 대 한 포인터를 유지 하는 참고 합니다.
 
 ##  <a name="_core_pasting_data"></a> 데이터 붙여넣기
 
@@ -50,7 +50,7 @@ ms.locfileid: "57270737"
 
 1. 형식의 붙여넣기를 수행 합니다.
 
-작동 방식에 대 한 예로, 구현을 참조를 `OnEditPaste` MFC OLE 샘플 프로그램에 정의 된 뷰 클래스의 멤버 함수 [OCLIENT](../visual-cpp-samples.md) 하 고 [HIERSVR](../visual-cpp-samples.md)합니다.
+작동 방식에 대 한 예로, 구현을 참조를 `OnEditPaste` MFC OLE 샘플 프로그램에 정의 된 뷰 클래스의 멤버 함수 [OCLIENT](../overview/visual-cpp-samples.md) 하 고 [HIERSVR](../overview/visual-cpp-samples.md)합니다.
 
 > [!TIP]
 >  자체 함수로 붙여넣기 작업을 분리의 주요 장점은 끌어서 놓기 작업 중 응용 프로그램에서 데이터를 삭제할 때에 동일한 코드 붙여넣기를 사용할 수 있습니다. OCLIENT 및 HIERSVR, 프로그램 `OnDrop` 함수를 호출할 수도 `DoPasteItem`, 붙여넣기 작업을 구현 하는 작성 된 코드를 다시 사용 합니다.

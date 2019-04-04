@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_hMenu
 - CMFCMenuButton [MFC], m_nMenuResult
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-ms.openlocfilehash: bacd8726fd4c833f956f763cca81a88d41d1f167
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: cbdf4005ee1a0249e7ed2b5f1d50621fb951f64f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298206"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777365"
 ---
 # <a name="cmfcmenubutton-class"></a>CMFCMenuButton 클래스
 
@@ -72,7 +72,7 @@ class CMFCMenuButton : public CMFCButton
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 단추에 연결 된 메뉴의 핸들을 설정 하 고 해당 텍스트와 이미지 크기에 따라 단추 크기를 조정 프레임 워크에 의해 표시 되는 팝업 메뉴를 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 단추에 연결 된 메뉴의 핸들을 설정 하 고 해당 텍스트와 이미지 크기에 따라 단추 크기를 조정 프레임 워크에 의해 표시 되는 팝업 메뉴를 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#38](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#39](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_2.cpp)]

@@ -1,5 +1,5 @@
 ---
-title: 'TN041: MFC-OLE 2로 MFC-OLE1 마이그레이션'
+title: 'TN041: Mfc-ole 2로 MFC-OLE1 마이그레이션'
 ms.date: 10/18/2018
 f1_keywords:
 - vc.mfc.ole
@@ -13,14 +13,14 @@ helpviewer_keywords:
 - upgrading Visual C++ applications [MFC], OLE1 to OLE2
 - TN041
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
-ms.openlocfilehash: 2bdf0c353151c8e932b3e8641a72b2116c45f3f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b398a1adbf2f47343eed076f32ade5bb2564cd52
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568524"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767979"
 ---
-# <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2로 MFC/OLE1 마이그레이션
+# <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2로 mfc/ole1 마이그레이션
 
 > [!NOTE]
 > 다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.
@@ -29,7 +29,7 @@ ms.locfileid: "50568524"
 
 (이상) MFC 2.5에서 OLE 2 클래스의 디자인 목표 중 하나 대부분의 배치 MFC 2.0 OLE 1.0 지원에 대 한 동일한 아키텍처를 유지 하는 것 이었습니다. 결과적으로, 많은 MFC 2.0에서 동일한 OLE 클래스에에서 있는이 버전의 MFC (`COleDocument`, `COleServerDoc`하십시오 `COleClientItem`, `COleServerItem`). 또한 많은 Api를 이러한 클래스에 동일 합니다. 그러나 OLE 2 이므로 전혀 다른 OLE 1.0에서 변경 된 세부 정보 중 일부를 예상할 수 있습니다. MFC 2.0 OLE1 지원에 익숙한 경우 MFC의 2.0 지원을 통해 집 느낄 수 있습니다.
 
-기존 MFC/OLE1 응용 프로그램을 수행 하 고 OLE 2 기능을 추가 하는 경우 먼저이 참고 하십시오. 이 노트에서는 MFC/OLE 2로 OLE1 기능을 이식 하는 동안 발생할 수 있습니다 하 고 다음 MFC 2.0에 포함 된 두 개의 응용 프로그램을 이식 하는 동안 처리 되지 않는 문제를 설명 합니다. 몇 가지 일반적인 문제: MFC OLE 샘플 [OCLIENT](../visual-cpp-samples.md) 및 [HIERSVR](../visual-cpp-samples.md)합니다.
+기존 MFC/OLE1 응용 프로그램을 수행 하 고 OLE 2 기능을 추가 하는 경우 먼저이 참고 하십시오. 이 노트에서는 MFC/OLE 2로 OLE1 기능을 이식 하는 동안 발생할 수 있습니다 하 고 다음 MFC 2.0에 포함 된 두 개의 응용 프로그램을 이식 하는 동안 처리 되지 않는 문제를 설명 합니다. 몇 가지 일반적인 문제: MFC OLE 샘플 [OCLIENT](../overview/visual-cpp-samples.md) 및 [HIERSVR](../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="mfc-documentview-architecture-is-important"></a>MFC 문서/뷰 아키텍처는 중요 한
 
@@ -45,19 +45,19 @@ MFC 아키텍처를 사용 하지 않고 서버 또는 컨테이너를 구현 �
 
 MFC 샘플 OLE 기능을 포함 하는 여러 가지가 있습니다. 각 응용이 프로그램은 다른 각도에서 OLE를 구현합니다.
 
-- [HIERSVR](../visual-cpp-samples.md) 대부분 서버 응용 프로그램으로 사용 해야 합니다. 이 MFC/OLE1 응용 프로그램으로 MFC 2.0에 포함 된 및 MFC/OLE 2로 이식 되었으며 OLE 2에서 사용할 수 있는 많은 OLE 기능을 구현 하는 확장 합니다.
+- [HIERSVR](../overview/visual-cpp-samples.md) 대부분 서버 응용 프로그램으로 사용 해야 합니다. 이 MFC/OLE1 응용 프로그램으로 MFC 2.0에 포함 된 및 MFC/OLE 2로 이식 되었으며 OLE 2에서 사용할 수 있는 많은 OLE 기능을 구현 하는 확장 합니다.
 
-- [OCLIENT](../visual-cpp-samples.md) 독립 실행형 컨테이너 응용 프로그램을 컨테이너의 관점에서 다양 한 OLE 기능을 보여 주기 위한 것입니다. 너무이 MFC 2.0에서 포팅된 및 다양 한 사용자 지정 클립보드 형식 및 포함 된 항목에 대 한 링크와 같은 고급 OLE 기능을 지원 하도록 확장 합니다.
+- [OCLIENT](../overview/visual-cpp-samples.md) 독립 실행형 컨테이너 응용 프로그램을 컨테이너의 관점에서 다양 한 OLE 기능을 보여 주기 위한 것입니다. 너무이 MFC 2.0에서 포팅된 및 다양 한 사용자 지정 클립보드 형식 및 포함 된 항목에 대 한 링크와 같은 고급 OLE 기능을 지원 하도록 확장 합니다.
 
-- [DRAWCLI](../visual-cpp-samples.md) 이 응용 프로그램 구현 OLE 컨테이너 지원 훨씬 OCLIENT는 같은 점을 제외 하 고 기존 개체 지향 그리기 프로그램의 프레임 워크 내에서 수행 합니다. OLE 컨테이너 지원을 구현 하 고 기존 응용 프로그램에 통합할 수 있는 방법을 있습니다 보여 합니다.
+- [DRAWCLI](../overview/visual-cpp-samples.md) 이 응용 프로그램 구현 OLE 컨테이너 지원 훨씬 OCLIENT는 같은 점을 제외 하 고 기존 개체 지향 그리기 프로그램의 프레임 워크 내에서 수행 합니다. OLE 컨테이너 지원을 구현 하 고 기존 응용 프로그램에 통합할 수 있는 방법을 있습니다 보여 합니다.
 
-- [SUPERPAD](../visual-cpp-samples.md) 세밀 하 게에서는 독립 실행형 응용 프로그램 뿐만 아니라이 응용 프로그램에 OLE 서버 이기도 합니다. 구현 server 지원은 상당히 원칙은입니다. 특히 관심 데이터를 클립보드에 복사할 OLE 클립보드 서비스를 사용 하는 방법 이지만 클립보드 붙여넣기 기능을 구현 하는 Windows "편집" 컨트롤에 기본 제공 기능을 사용 합니다. 새 OLE Api를 사용 하 여 통합 뿐만 아니라 기존의 Windows API 사용의 흥미로운 혼합 하 여 보여 줍니다.
+- [SUPERPAD](../overview/visual-cpp-samples.md) 세밀 하 게에서는 독립 실행형 응용 프로그램 뿐만 아니라이 응용 프로그램에 OLE 서버 이기도 합니다. 구현 server 지원은 상당히 원칙은입니다. 특히 관심 데이터를 클립보드에 복사할 OLE 클립보드 서비스를 사용 하는 방법 이지만 클립보드 붙여넣기 기능을 구현 하는 Windows "편집" 컨트롤에 기본 제공 기능을 사용 합니다. 새 OLE Api를 사용 하 여 통합 뿐만 아니라 기존의 Windows API 사용의 흥미로운 혼합 하 여 보여 줍니다.
 
 샘플 응용 프로그램에 대 한 자세한 내용은 도움말을 참조 하십시오 "MFC 샘플"입니다.
 
-## <a name="case-study-oclient-from-mfc-20"></a>사례 연구: OCLIENT MFC 2.0에서
+## <a name="case-study-oclient-from-mfc-20"></a>사례 연구: MFC 2.0 OCLIENT
 
-위에서 설명 했 듯이 [OCLIENT](../visual-cpp-samples.md) 고 MFC 2.0에 포함 된 OLE MFC/OLE1을 사용 하 여 구현 합니다. 이 응용 프로그램 처음으로 변환 되었습니다 MFC/OLE 2 클래스를 사용 하는 단계에 대 한 설명은 다음과 같습니다. 초기 포트 MFC/OLE 클래스 이해를 돕기 위해 완료 된 후 다양 한 기능이 추가 되었습니다. 이러한 기능은 다루지 않습니다. 이러한 고급 기능에 대 한 자세한 내용은 샘플 자체를 참조 하십시오.
+위에서 설명 했 듯이 [OCLIENT](../overview/visual-cpp-samples.md) 고 MFC 2.0에 포함 된 OLE MFC/OLE1을 사용 하 여 구현 합니다. 이 응용 프로그램 처음으로 변환 되었습니다 MFC/OLE 2 클래스를 사용 하는 단계에 대 한 설명은 다음과 같습니다. 초기 포트 MFC/OLE 클래스 이해를 돕기 위해 완료 된 후 다양 한 기능이 추가 되었습니다. 이러한 기능은 다루지 않습니다. 이러한 고급 기능에 대 한 자세한 내용은 샘플 자체를 참조 하십시오.
 
 > [!NOTE]
 > 컴파일러 오류 및 단계별 프로세스는 Visual c + + 2.0을 사용 하 여 만들어졌습니다. Visual c + + 4.0을 사용 하 여 특정 오류 메시지 및 위치 변경 될 수 있습니다 하지만 개념 정보는 유효한 상태로 유지 합니다.
@@ -291,7 +291,7 @@ ON_COMMAND(ID_OLE_EDIT_CONVERT, OnEditConvert)
 
 OLE의 가장 흥미로운 기능 중 하나에 내부 활성화 (또는 "비주얼 편집")입니다. 이 기능에는 서버 응용 프로그램을 사용자에 대 한 더 원활 하 게 편집 인터페이스를 제공 하는 컨테이너의 사용자 인터페이스의 일부를 통해 데 있습니다. OCLIENT에 내부 활성화를 구현 하려면 몇 가지 특별 한 리소스를 몇 가지 추가 코드 뿐만 아니라 추가 해야 합니다. 이러한 리소스와 코드는 일반적으로 응용 프로그램 마법사에서 제공-"Container" 지원 사용 하 여 새 응용 프로그램 마법사에서 응용 프로그램에서 직접 가져온 된 코드 대부분 사실입니다.
 
-먼저, 전체 활성 상태인 항목 때 사용할 메뉴 리소스를 추가 하는 데 필요한 것입니다. Visual c + +에서 IDR_OCLITYPE 리소스 복사 및 파일과 창 팝업 남기고 모두 제거 하 여이 추가 메뉴 리소스를 만들 수 있습니다. 구분선을 두 그룹의 분리를 나타내려면 파일과 창 팝업 사이 삽입 됩니다 (처럼 보여야 합니다: 파일 &#124; &#124; 창). 이러한 구분 기호 의미 하 고 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 참조 하세요 [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
+먼저, 전체 활성 상태인 항목 때 사용할 메뉴 리소스를 추가 하는 데 필요한 것입니다. Visual c + +에서 IDR_OCLITYPE 리소스 복사 및 파일과 창 팝업 남기고 모두 제거 하 여이 추가 메뉴 리소스를 만들 수 있습니다. 구분선을 두 그룹의 분리를 나타내려면 파일과 창 팝업 사이 삽입 됩니다 (처럼 보여야 합니다. 파일 &#124; &#124; 창). 이러한 구분 기호 의미 하 고 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 참조 [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
 
 만든 이러한 메뉴를 만든 후에 대 한 프레임 워크를 사용 해야 합니다. 호출 하 여 이렇게 `CDocTemplate::SetContainerInfo` 여 InitInstance에 문서 템플릿 목록에 추가 하기 전에 문서 서식 파일에 대 한 합니다. 문서 서식 파일을 등록 하려면 새 코드는 다음과 같습니다.
 
@@ -351,7 +351,7 @@ BOOL CRectItem::OnChangeItemPosition(const CRect& rectPos)
 }
 ```
 
-이 시점에서 활성화 될 수 고가 활성 상태 이면 항목을 이동 및 크기 조정과 처리 하는 항목 수 있도록 충분 한 코드가 있지만 코드가 없는 편집 세션을 종료할 허용 됩니다. 하지만 일부 서버는이 기능 자체 esc 키를 처리 하 여, 것이 좋습니다는 컨테이너는 항목을 비활성화 하는 두 가지 제공: 외부 항목을 클릭 하 여 다음을 수행 합니다 (1) 및 (2) 키를 눌러 이스케이프 합니다.
+이 시점에서 활성화 될 수 고가 활성 상태 이면 항목을 이동 및 크기 조정과 처리 하는 항목 수 있도록 충분 한 코드가 있지만 코드가 없는 편집 세션을 종료할 허용 됩니다. 하지만 일부 서버는이 기능 자체 esc 키를 처리 하 여, 컨테이너 제공 항목을 비활성화 하는 두 가지는 것이 좋습니다. (1)에서 항목을 외부에 있고 ESC 키를 눌러 다음을 수행 합니다 (2)를 클릭 합니다.
 
 ESC 키를 VK_ESCAPE 키 명령에 매핑하는 Visual c + +를 사용 하 여 액셀러레이터 키를 추가, ID_CANCEL_EDIT 리소스에 추가 됩니다. 이 명령에 대 한 처리기는 다음과 같습니다.
 
@@ -420,9 +420,9 @@ void CMainView::OnSize(UINT nType, int cx, int cy)
 }
 ```
 
-## <a name="case-study-hiersvr-from-mfc-20"></a>사례 연구: HIERSVR MFC 2.0에서
+## <a name="case-study-hiersvr-from-mfc-20"></a>사례 연구: MFC 2.0 HIERSVR
 
-[HIERSVR](../visual-cpp-samples.md) OLE MFC/OLE1을 사용 하 여 구현 및 MFC 2.0에 포함 되었습니다. 이는이 응용 프로그램 처음으로 변환 되었습니다 MFC/OLE 2 클래스를 사용 하는 단계를 간략하게 설명 합니다. 초기 포트 MFC/OLE 2 클래스 이해를 돕기 위해 완료 된 후 다양 한 기능이 추가 되었습니다. 이러한 기능은 다루지 않습니다. 이러한 고급 기능에 대 한 자세한 내용은 샘플 자체를 참조 하십시오.
+[HIERSVR](../overview/visual-cpp-samples.md) OLE MFC/OLE1을 사용 하 여 구현 및 MFC 2.0에 포함 되었습니다. 이는이 응용 프로그램 처음으로 변환 되었습니다 MFC/OLE 2 클래스를 사용 하는 단계를 간략하게 설명 합니다. 초기 포트 MFC/OLE 2 클래스 이해를 돕기 위해 완료 된 후 다양 한 기능이 추가 되었습니다. 이러한 기능은 다루지 않습니다. 이러한 고급 기능에 대 한 자세한 내용은 샘플 자체를 참조 하십시오.
 
 > [!NOTE]
 > 컴파일러 오류 및 단계별 프로세스는 Visual c + + 2.0을 사용 하 여 만들어졌습니다. Visual c + + 4.0을 사용 하 여 특정 오류 메시지 및 위치 변경 될 수 있습니다 하지만 개념 정보는 유효한 상태로 유지 합니다.
@@ -600,7 +600,7 @@ CSize CServerItem::CalcNodeSize()
 }
 ```
 
-CServerItem 재정의 `COleServerItem::OnGetTextData`합니다. 이 함수는 MFC/OLE에서 사용 되지 않습니다 하 고 다른 메커니즘으로 대체 됩니다. MFC 3.0 버전의 MFC OLE 샘플 [HIERSVR](../visual-cpp-samples.md) 재정의 하 여이 기능을 구현 `COleServerItem::OnRenderFileData`합니다. 이 기능은 OnGetTextData 재정의 제거할 수 있도록이 기본 포트에 대 한 중요 하지 않습니다.
+CServerItem 재정의 `COleServerItem::OnGetTextData`합니다. 이 함수는 MFC/OLE에서 사용 되지 않습니다 하 고 다른 메커니즘으로 대체 됩니다. MFC 3.0 버전의 MFC OLE 샘플 [HIERSVR](../overview/visual-cpp-samples.md) 재정의 하 여이 기능을 구현 `COleServerItem::OnRenderFileData`합니다. 이 기능은 OnGetTextData 재정의 제거할 수 있도록이 기본 포트에 대 한 중요 하지 않습니다.
 
 많은 자세한 svritem.cpp 하는 오류를 해결 하지 않은 경우 "실제" 오류가 없는-이전 오류로 인해 발생 하는 오류 만으로 합니다.
 
@@ -644,7 +644,7 @@ void CServerView::OnEditCopy()
 
 - 이러한 특별 리소스 및 클래스에 대 한 프레임 워크를 입력 해야 합니다.
 
-메뉴 리소스는 쉽게 만들 수 있습니다. Visual c + +를 실행, 메뉴 리소스 IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP 라는 메뉴 리소스 복사 합니다. 편집 및 도움말 메뉴 팝업만 유지 됩니다 있도록 메뉴를 수정 합니다. 메뉴 편집 및 도움말 메뉴 사이 두 개의 구분 기호를 추가 (처럼 보여야 합니다: 편집 &#124; &#124; 도움말). 이러한 구분 기호 의미 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 참조 하세요. [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
+메뉴 리소스는 쉽게 만들 수 있습니다. Visual c + +를 실행, 메뉴 리소스 IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP 라는 메뉴 리소스 복사 합니다. 편집 및 도움말 메뉴 팝업만 유지 됩니다 있도록 메뉴를 수정 합니다. 메뉴 편집 및 도움말 메뉴 사이 두 개의 구분 기호를 추가 (처럼 보여야 합니다. 편집 &#124; &#124; 도움말). 이러한 구분 기호 의미 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 참조 하세요. [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
 
 "서버" 옵션을 선택 하 여 새로 생성 하는 응용 프로그램 마법사에서 응용 프로그램에서 하나를 복사 하 여 하위 집합 도구 모음에 대 한 비트맵을 쉽게 만들 수 있습니다. 이 비트맵 Visual c + +로 가져올 수 있습니다. ID의 IDR_HIERSVRTYPE_SRVR_IP 비트맵을 제공 해야 합니다.
 

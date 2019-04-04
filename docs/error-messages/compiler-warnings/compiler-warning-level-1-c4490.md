@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4490
 ms.assetid: f9b03ecf-41a1-4f4d-a74c-2c1e88234ccc
-ms.openlocfilehash: 89ee97a4efde6f2f9c57daf0ae769e5e12341913
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf51994c210bd751e0d29bec169dfc4366784486
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624343"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779185"
 ---
 # <a name="compiler-warning-level-1-c4490"></a>컴파일러 경고(수준 1) C4490
 
@@ -19,7 +19,7 @@ ms.locfileid: "50624343"
 
 재정의 지정자를 잘못 사용 했습니다. 예를 들어 인터페이스 함수를 재정의 하지 않으면를 구현 해야 합니다.
 
-자세한 내용은 [재정의 지정자](../../windows/override-specifiers-cpp-component-extensions.md)합니다.
+자세한 내용은 [재정의 지정자](../../extensions/override-specifiers-cpp-component-extensions.md)합니다.
 
 ## <a name="example"></a>예제
 

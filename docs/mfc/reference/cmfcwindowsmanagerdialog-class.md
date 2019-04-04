@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCWindowsManagerDialog [MFC], CMFCWindowsManagerDialog
 ms.assetid: 35b4b0db-33c4-4b22-94d8-5e3396341340
-ms.openlocfilehash: 566eae1f1b2ca4e91ed2c4b41c36073c205a272e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5089decc7a118cd867aa14df51f5d7e269221108
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302795"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767407"
 ---
 # <a name="cmfcwindowsmanagerdialog-class"></a>CMFCWindowsManagerDialog 클래스
 
@@ -41,7 +41,7 @@ class CMFCWindowsManagerDialog : public CDialog
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 생성 하는 방법에 설명 된 `CMFCWindowsManagerDialog` 개체를 호출 하 여 `CMDIFrameWndEx::ShowWindowsDialog`입니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 생성 하는 방법에 설명 된 `CMFCWindowsManagerDialog` 개체를 호출 하 여 `CMDIFrameWndEx::ShowWindowsDialog`입니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/cpp/cmfcwindowsmanagerdialog-class_1.cpp)]
 

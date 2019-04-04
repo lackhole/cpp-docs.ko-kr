@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CTabView [MFC], IsScrollBar
 - CTabView [MFC], OnActivateView
 ms.assetid: 8e6ecd9d-d28d-432b-8ec8-0446f0204d52
-ms.openlocfilehash: 5ac62d04c38dbddda90d2f33a9c14c9c131fcd9c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 56640edbd0d2e74a1cc00dad5441350ad3d35725
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326597"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772096"
 ---
 # <a name="ctabview-class"></a>CTabView 클래스
 
@@ -65,7 +65,7 @@ class CTabbedView : public CView
 
 예를 들어, 다른 방법으로 나타낼 수 있는 문서를 포함할 수 있습니다: 스프레드시트, 차트, 편집 가능한 폼 및 등입니다. 삽입, 필요에 따라 데이터를 그리기 개별 보기를 만들 수 있습니다 프로그램 `CTabView`-개체를 파생 하 고 추가 코딩 없이 탭 합니다.
 
-[TabbedView 샘플: MFC 탭 보기 응용 프로그램](../../visual-cpp-samples.md) 의 사용법을 보여 줍니다 `CTabView`합니다.
+[TabbedView 샘플: MFC 탭 보기 응용 프로그램](../../overview/visual-cpp-samples.md) 의 사용법을 보여 줍니다 `CTabView`합니다.
 
 ## <a name="example"></a>예제
 

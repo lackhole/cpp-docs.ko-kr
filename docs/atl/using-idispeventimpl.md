@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - IDispEventImpl class, using
 ms.assetid: 82d53b61-9d0d-45c5-aff9-2fafa468a9ca
-ms.openlocfilehash: 59f8e7d095f3d514ab41b28dc37f5d3c707bbd08
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: c532164788d359c7834759de01407d49c19463ca
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820301"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769331"
 ---
 # <a name="using-idispeventimpl"></a>IDispEventImpl 사용
 
@@ -29,7 +29,7 @@ ms.locfileid: "57820301"
 
 아래 예제에서는 처리 하는 방법을 보여 줍니다 합니다 `DocumentChange` 단어의 이벤트가 **응용 프로그램** 개체입니다. 이 이벤트에서 메서드로 정의 됩니다는 `ApplicationEvents` dispinterface 합니다.
 
-예로 [ATLEventHandling 샘플](../visual-cpp-samples.md)합니다.
+예로 [ATLEventHandling 샘플](../overview/visual-cpp-samples.md)합니다.
 
 ```cpp
 [ uuid(000209F7-0000-0000-C000-000000000046), hidden ]
@@ -58,4 +58,4 @@ methods:
 ## <a name="see-also"></a>참고자료
 
 [이벤트 처리](../atl/event-handling-and-atl.md)<br/>
-[ATLEventHandling 샘플](../visual-cpp-samples.md)
+[ATLEventHandling 샘플](../overview/visual-cpp-samples.md)

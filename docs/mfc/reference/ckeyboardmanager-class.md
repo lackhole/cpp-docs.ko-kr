@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CKeyboardManager [MFC], TranslateCharToUpper
 - CKeyboardManager [MFC], UpdateAccelTable
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-ms.openlocfilehash: c953958b3e0112997423376d42b62953b936049a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 3360a28d50f64546837cc5ef35dcfc761b4fb0f5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303609"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779809"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager 클래스
 
@@ -81,7 +81,7 @@ class CKeyboardManager : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에 대 한 포인터를 검색 하는 방법을 보여 줍니다는 `CKeyboardManager` 에서 개체를 `CWinAppEx` 클래스 및 메뉴 명령과 사용 하 여 연결 된 모든 바로 가기 키를 표시 하는 방법입니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에 대 한 포인터를 검색 하는 방법을 보여 줍니다는 `CKeyboardManager` 에서 개체를 `CWinAppEx` 클래스 및 메뉴 명령과 사용 하 여 연결 된 모든 바로 가기 키를 표시 하는 방법입니다. 이 코드 조각은의 일부인 합니다 [사용자 지정 페이지 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_CustomPages#5](../../mfc/reference/codesnippet/cpp/ckeyboardmanager-class_1.cpp)]
 

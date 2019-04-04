@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM map macros
 ms.assetid: 0f33656d-321f-4996-90cc-9a7f21ab73c3
-ms.openlocfilehash: dbb84814c6865b5b666a8b3a1162e81a211de1eb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 3159a53b5a500aa61b85cf2bc5a97d321ed6ebb5
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280708"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772373"
 ---
 # <a name="com-map-macros"></a>COM 맵 매크로
 
@@ -46,7 +46,7 @@ BEGIN_COM_MAP(x)
 
 ### <a name="example"></a>예제
 
-ATL [호출기](../../visual-cpp-samples.md) 샘플:
+ATL [호출기](../../overview/visual-cpp-samples.md) 샘플:
 
 [!code-cpp[NVC_ATL_COM#1](../../atl/codesnippet/cpp/com-map-macros_1.h)]
 
