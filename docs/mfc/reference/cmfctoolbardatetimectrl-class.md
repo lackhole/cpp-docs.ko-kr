@@ -48,12 +48,12 @@ helpviewer_keywords:
 - CMFCToolBarDateTimeCtrl [MFC], SetTime
 - CMFCToolBarDateTimeCtrl [MFC], SetTimeAll
 ms.assetid: a3853cb9-8ebc-444f-a1e4-9cf905e24c18
-ms.openlocfilehash: c93d8a2a18518cad8b6fb7fe014828011f78a653
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: dfe1d3dc058371dd13cc335968b9c3a89e057da2
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280994"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776052"
 ---
 # <a name="cmfctoolbardatetimectrl-class"></a>CMFCToolBarDateTimeCtrl 클래스
 
@@ -172,7 +172,7 @@ CMFCToolBarDateTimeCtrl(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCToolBarDateTimeCtrl` 클래스입니다. 이 코드 조각은의 일부인 합니다 [도구 모음 날짜 시간 선택 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCToolBarDateTimeCtrl` 클래스입니다. 이 코드 조각은의 일부인 합니다 [도구 모음 날짜 시간 선택 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_ToolbarDateTimePicker#1](../../mfc/reference/codesnippet/cpp/cmfctoolbardatetimectrl-class_1.cpp)]
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - migration [C++], /clr compiler option
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-ms.openlocfilehash: 8c4827891799d2c76a344e4c6da8f3d96333826e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 6ac470b85a14bfe32c7f3fe47168180687669ec6
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816034"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781317"
 ---
 # <a name="how-to-migrate-to-clr"></a>방법: /Clr으로 마이그레이션
 
@@ -152,7 +152,7 @@ MSIL을 네이티브 코드에서 이동 하는 경우에 작업 집합의 크�
 
 ## <a name="using-new-visual-c-features"></a>새 Visual c + + 기능을 사용 하 여
 
-다음에 응용 프로그램 컴파일, 링크 및 실행을 시작할 수 있습니다로 컴파일된 모든 모듈에서.NET 기능을 사용 하 여 **/clr**합니다. 자세한 내용은 [런타임 플랫폼의 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)을 참조하세요.
+다음에 응용 프로그램 컴파일, 링크 및 실행을 시작할 수 있습니다로 컴파일된 모든 모듈에서.NET 기능을 사용 하 여 **/clr**합니다. 자세한 내용은 [런타임 플랫폼의 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)을 참조하세요.
 
 Managed Extensions for c + +를 사용한 경우에 새 구문을 사용 하 여 코드를 변환할 수 있습니다. Managed Extensions for c + + 변환에 대 한 세부 정보를 참조 하세요 [C + + /cli 마이그레이션 입문](../dotnet/cpp-cli-migration-primer.md)합니다.
 
@@ -162,7 +162,7 @@ Managed Extensions for c + +를 사용한 경우에 새 구문을 사용 하 여
 
 - [네이티브 및 .NET 상호 운용성](../dotnet/native-and-dotnet-interoperability.md)
 
-- [런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+- [런타임 플랫폼용 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)
 
 ## <a name="see-also"></a>참고자료
 

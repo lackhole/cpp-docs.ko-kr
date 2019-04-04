@@ -1,18 +1,18 @@
 ---
 title: Platform::Collections::VectorIterator 클래스
-ms.date: 12/30/2016
+ms.date: 03/27/2019
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::VectorIterator::VectorIterator
 helpviewer_keywords:
 - VectorIterator Class
 ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
-ms.openlocfilehash: 448ce9e9c6c937d5f95640dca8fa2d2ed20bb4b8
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 55f4e7f1d9367779d131796fdf29e6098eb6aa0f
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743227"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565774"
 ---
 # <a name="platformcollectionsvectoriterator-class"></a>Platform::Collections::VectorIterator 클래스
 
@@ -64,11 +64,11 @@ VectorIterator 템플릿 클래스의 형식 이름입니다.
 |[VectorIterator::operator+= 연산자](#operator-plus-assign)|지정된 치환으로 현재 VectorIterator를 늘립니다.|
 |[VectorIterator::operator< 연산자](#operator-less-than)|현재 VectorIterator가 지정된 VectorIterator보다 작은지 여부를 나타냅니다.|
 |[Vectoriterator:: Operator\<= 연산자](#operator-less-than-or-equals)|현재 VectorIterator가 지정된 VectorIterator보다 작거나 같은지 여부를 나타냅니다.|
-|[VectorIterator::operator-= 연산자](#operator-subtract-assign)|지정된 치환으로 현재 VectorIterator를 줄입니다.|
+|[VectorIterator::operator-= 연산자](#operator-minus-equals)|지정된 치환으로 현재 VectorIterator를 줄입니다.|
 |[VectorIterator::operator== 연산자](#operator-equality)|현재 VectorIterator가 지정된 VectorIterator와 같은지 여부를 나타냅니다.|
 |[VectorIterator::operator> 연산자](#operator-greater-than)|현재 VectorIterator가 지정된 VectorIterator보다 큰지 여부를 나타냅니다.|
 |[VectorIterator::operator-> 연산자](#operator-arrow)|현재 VectorIterator가 참조하는 요소의 주소를 검색합니다.|
-|[VectorIterator::operator>= 연산자](#operator-greater-than-or-equal)|현재 VectorIterator가 지정된 VectorIterator보다 크거나 같은지 여부를 나타냅니다.|
+|[VectorIterator::operator>= 연산자](#operator-greater-than-or-equals)|현재 VectorIterator가 지정된 VectorIterator보다 크거나 같은지 여부를 나타냅니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 

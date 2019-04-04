@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CMFCColorBar [MFC], SetPropList
 - CMFCColorBar [MFC], ShowCommandMessageString
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-ms.openlocfilehash: f1f7610fc315da65145798058fdcf9752e7873d0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 4eee24eb93be446f6b4f2631b70736c13a02f45c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283256"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771409"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar 클래스
 
@@ -202,7 +202,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 
 ## <a name="example"></a>예제
 
-다음 예제에서 다양 한 메서드를 사용 하 여 색 막대를 구성 하는 방법에 설명 합니다 `CMFCColorBar` 클래스입니다. 메서드를 가로 및 세로 여백을 설정, 기타 단추를 사용 하도록 설정, 색 막대 컨트롤 창을 만들 및 현재 선택한 색을 설정 합니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서 다양 한 메서드를 사용 하 여 색 막대를 구성 하는 방법에 설명 합니다 `CMFCColorBar` 클래스입니다. 메서드를 가로 및 세로 여백을 설정, 기타 단추를 사용 하도록 설정, 색 막대 컨트롤 창을 만들 및 현재 선택한 색을 설정 합니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#1](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#2](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_2.cpp)]

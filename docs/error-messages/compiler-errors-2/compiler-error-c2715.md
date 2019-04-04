@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2715
 ms.assetid: c81567a7-5b65-468f-aaf9-835f91e468e4
-ms.openlocfilehash: 80dd28136b220585a62ed288795d565c07b360f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f0df136952e09d26fbf43104bbf13b001c87255
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600593"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769441"
 ---
 # <a name="compiler-error-c2715"></a>컴파일러 오류 C2715
 
 'type': throw 또는이 형식을 catch 할 수 없습니다.
 
-관리 코드에서 예외 처리를 사용 하는 경우 값 형식은 올바른 인수가 아닙니다 (참조 [예외 처리](../../windows/exception-handling-cpp-component-extensions.md) 자세한).
+관리 코드에서 예외 처리를 사용 하는 경우 값 형식은 올바른 인수가 아닙니다 (참조 [예외 처리](../../extensions/exception-handling-cpp-component-extensions.md) 자세한).
 
 ```
 // C2715a.cpp

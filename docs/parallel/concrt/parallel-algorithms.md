@@ -192,7 +192,7 @@ ms.locfileid: "57262872"
 
 A *지도* 작업 시퀀스의 각 값에 함수를 적용 합니다. A *줄일* 하나의 값으로 시퀀스의 요소를 결합 하는 작업입니다. C + + 표준 라이브러리를 사용할 수 있습니다 [std:: transform](../../standard-library/algorithm-functions.md#transform) 하 고 [std:: accumulate](../../standard-library/numeric-functions.md#accumulate) 매핑 수행 및 감소 작업을 하는 함수입니다. 그러나 많은 문제에 대해 `parallel_transform` 알고리즘을 사용하여 매핑 작업을 병렬로 수행하고, `parallel_reduce` 알고리즘을 사용하여 줄이기 작업을 병렬로 수행할 수 있습니다.
 
-다음 예제에서는 연속 및 병렬 방식으로 소수의 합을 계산하는데 걸리는 시간을 비교합니다. 매핑 단계에서 소수가 아닌 값을 0으로 변환하고, 줄이기 단계에서 값의 합을 구합니다.
+다음 예제에서는 연속 및 병렬 방식으로 소수의 합을 컴퓨팅하는데 걸리는 시간을 비교합니다. 매핑 단계에서 소수가 아닌 값을 0으로 변환하고, 줄이기 단계에서 값의 합을 구합니다.
 
 [!code-cpp[concrt-parallel-map-reduce-sum-of-primes#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_7.cpp)]
 
@@ -248,7 +248,7 @@ PPL은 세 가지 정렬 알고리즘을 제공 합니다. [concurrency:: parall
   `parallel_sort` 알고리즘은 추가 메모리 요구 사항이 없으며 범용 정렬에 적합합니다. 합니다 `parallel_buffered_sort` 알고리즘을 수행할 수 보다 `parallel_sort`, o (n) 공간이 필요 하지만 합니다.
 
 
-  `parallel_radixsort` 알고리즘은 해시 기반입니다. 즉, 정수 키를 사용하여 요소를 정렬합니다. 이 알고리즘은 비교를 사용하지 않고 키를 사용하여 요소의 대상을 직접 계산합니다. 같은 `parallel_buffered_sort`,이 알고리즘에는 o (n) 공간이 필요 합니다.
+  `parallel_radixsort` 알고리즘은 해시 기반입니다. 즉, 정수 키를 사용하여 요소를 정렬합니다. 이 알고리즘은 비교를 사용하지 않고 키를 사용하여 요소의 대상을 직접 컴퓨팅합니다. 같은 `parallel_buffered_sort`,이 알고리즘에는 o (n) 공간이 필요 합니다.
 
 다음 표에는 세 가지 병렬 정렬 알고리즘의 중요 속성이 요약되어 있습니다.
 

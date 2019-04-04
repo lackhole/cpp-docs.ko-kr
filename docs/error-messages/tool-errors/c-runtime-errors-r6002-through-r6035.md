@@ -4,12 +4,12 @@ ms.date: 11/17/2017
 f1_keywords:
 - c.errors
 ms.assetid: 78019050-9a30-4b61-8250-a5702e0e2393
-ms.openlocfilehash: 74494a92d9ac8d84da64af7a896f3c32913afc40
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: b1a4aa5114965451791f44d88eb9e5ca61ff9c57
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178262"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766888"
 ---
 # <a name="c-runtime-errors-r6002-through-r6035"></a>C 런타임 오류 R6002 ~ R6035
 
@@ -17,7 +17,7 @@ ms.locfileid: "53178262"
 
 Microsoft의 공개 포럼에서 오류 및 경고에 대 한 추가 지원을 찾아볼 수도 있습니다. 오류 또는 경고 번호를 검색할 수 있습니다 합니다 [개발자 커뮤니티](https://developercommunity.visualstudio.com) 사이트입니다. 합니다 [Visual c + + 일반](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vcgeneral) 포럼은 다른 포럼에서 다루지 않는 Visual c + +에 대 한 질문입니다. 또한 오류와 경고를 검색 하 고에 대 한 질문 수 있습니다 [Stack Overflow](http://stackoverflow.com/) 솔루션을 찾으려고 합니다.
 
-추가 도움말 및 커뮤니티 리소스에 대 한 링크를 참조 하세요 [Visual c + + 도움말 및 커뮤니티](../../visual-cpp-help-and-community.md)합니다.
+추가 도움말 및 커뮤니티 리소스에 대 한 링크를 참조 하세요 [Visual c + + 도움말 및 커뮤니티](../../overview/visual-cpp-help-and-community.md)합니다.
 
 ## <a name="c-runtime-errors"></a>C 런타임 오류
 
@@ -51,6 +51,6 @@ Microsoft의 공개 포럼에서 오류 및 경고에 대 한 추가 지원을 �
 
 [C 런타임 오류 R6035](../../error-messages/tool-errors/c-runtime-error-r6035.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 빌드 오류](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)

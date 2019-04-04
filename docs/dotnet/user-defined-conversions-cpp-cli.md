@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - user-defined conversions [C++]
 ms.assetid: 8010fd59-2775-4e9a-a6ed-58055032d66f
-ms.openlocfilehash: cd3b27e0667b5ab9707db4b2cce2d7eef4611219
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 8f168582e56e77f1ec848928b7ffd36879ba341a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743190"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772425"
 ---
 # <a name="user-defined-conversions-ccli"></a>사용자 정의 변환(C++/CLI)
 
@@ -21,7 +21,7 @@ ms.locfileid: "57743190"
 
 네이티브 클래스의 생성자를 사용 하 여 기본 클래스에 참조 또는 값 형식을 변환할 수 있습니다.
 
-변환에 대 한 자세한 내용은 참조 하세요. [Boxing](../windows/boxing-cpp-component-extensions.md) 하 고 [표준 변환](../cpp/standard-conversions.md)합니다.
+변환에 대 한 자세한 내용은 참조 하세요. [Boxing](../extensions/boxing-cpp-component-extensions.md) 하 고 [표준 변환](../cpp/standard-conversions.md)합니다.
 
 ```
 // mcpp_User_Defined_Conversions.cpp
@@ -321,4 +321,4 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[클래스 및 구조체(C++)](../windows/classes-and-structs-cpp-component-extensions.md)
+[클래스 및 구조체(C++)](../extensions/classes-and-structs-cpp-component-extensions.md)

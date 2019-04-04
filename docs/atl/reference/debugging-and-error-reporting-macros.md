@@ -1,6 +1,6 @@
 ---
 title: 디버깅 및 오류 보고 매크로
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - atldef/ATL::_ATL_DEBUG_INTERFACES
 - atldef/ATL::_ATL_DEBUG_QI
@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-ms.openlocfilehash: 0f556e64160c61f2fb15c5f5d6f9e170c2008ac8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0d5010f913521848675987b145a1277c7b00decf
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287325"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775051"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>디버깅 및 오류 보고 매크로
 
@@ -29,7 +29,7 @@ ms.locfileid: "57287325"
 |[ATLASSERT](#atlassert)|동일한 기능을 수행 합니다 [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) 매크로 C 런타임 라이브러리에서 찾을 수 합니다.|
 |[ATLENSURE](#atlensure)|매개 변수 유효성 검사를 수행합니다. 호출 `AtlThrow` 필요한 경우|
 |[ATLTRACENOTIMPL](#atltracenotimpl)|지정된 된 함수 구현 되지 않았음을 덤프 장치에 메시지를 보냅니다.|
-|[ATLTRACE](#alttrace)|지정 된 플래그 및 수준에 따라 디버거 창 같은 출력 장치에 경고를 보고합니다. 이전 버전과 호환성을 위해 포함 되어 있습니다.|
+|[ATLTRACE](#atltrace)|지정 된 플래그 및 수준에 따라 디버거 창 같은 출력 장치에 경고를 보고합니다. 이전 버전과 호환성을 위해 포함 되어 있습니다.|
 |[ATLTRACE2](#atltrace2)|지정 된 플래그 및 수준에 따라 디버거 창 같은 출력 장치에 경고를 보고합니다.|
 
 ##  <a name="_atl_debug_interfaces"></a>  _ATL_DEBUG_INTERFACES
@@ -220,7 +220,7 @@ ATLTRACE2(
 
 ### <a name="remarks"></a>설명
 
-ATLTRACE2의 약식 형태는 디버거의 출력 창에 문자열을 씁니다. ATLTRACE2의 두 번째 형태도 디버거의 출력 창에 출력 쓰기 이지만 ATL/MFC 추적 도구의 설정을 따릅니다 (참조 [ATLTraceTool 샘플](../../visual-cpp-samples.md)). 예를 들어 설정한 *수준* 4를 수준 0으로 ATL/MFC 추적 도구가 표시 되지 것입니다 메시지입니다. *수준* 0, 1, 2, 3 또는 4 일 수 있습니다. 기본적으로 0의 가장 심각한 문제만 보고합니다.
+ATLTRACE2의 약식 형태는 디버거의 출력 창에 문자열을 씁니다. ATLTRACE2의 두 번째 형태도 디버거의 출력 창에 출력 쓰기 이지만 ATL/MFC 추적 도구의 설정을 따릅니다 (참조 [ATLTraceTool 샘플](../../overview/visual-cpp-samples.md)). 예를 들어 설정한 *수준* 4를 수준 0으로 ATL/MFC 추적 도구가 표시 되지 것입니다 메시지입니다. *수준* 0, 1, 2, 3 또는 4 일 수 있습니다. 기본적으로 0의 가장 심각한 문제만 보고합니다.
 
 합니다 *범주* 매개 변수는 설정 하는 추적 플래그를 나열 합니다. 이러한 플래그를 보고 하려는 메서드의 유형에 해당 합니다. 아래 표에 나열 되어 사용할 수 있습니다 올바른 추적 플래그를 *범주* 매개 변수입니다.
 

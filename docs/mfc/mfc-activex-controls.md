@@ -15,12 +15,12 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - MFC ActiveX controls [MFC]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
-ms.openlocfilehash: a33273c46562e8beba12910702d9ddc1a092575d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d10aad92088a02a1cab0977ea174abdf919a05e9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262612"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769214"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX 컨트롤
 
@@ -62,8 +62,7 @@ ActiveX 컨트롤은 컨트롤 컨테이너와 사용자 간의 효율적인 상
 
 개발되는 모든 ActiveX 컨트롤 개체는 MFC 기본 클래스인 `COleControl`에서 강력한 기능 집합을 상속받습니다. 이러한 기능에는 내부 활성화 및 자동화 논리가 포함됩니다. `COleControl`은 컨트롤 개체에 MFC 창 개체와 동일한 기능과 이벤트를 발생시키는 기능을 제공합니다. `COleControl` 제공할 수도 있습니다 [창 없는 컨트롤](../mfc/providing-windowless-activation.md)를 사용 하는 해당 컨테이너에 대 한 일부의 기능을 사용 하 여 도움말 창을 제공 (마우스 캡처, 키보드 포커스, 스크롤), 훨씬 빠르게 표시 하지만 합니다.
 
-
-  `COleControl`에서 파생되는 컨트롤 클래스이므로 특정한 조건이 충족될 경우 컨트롤 컨테이너에 이벤트를 호출하는 메시지를 보내거나 "발생"시키는 기능을 상속합니다. 이러한 이벤트는 컨트롤에서 중요한 사항이 발생하는 경우 컨트롤 컨테이너에 알리는 데 사용됩니다. 매개 변수를 이벤트에 연결하여 이벤트에 대한 추가 정보를 컨트롤 컨테이너에 전송할 수 있습니다. ActiveX 컨트롤의 이벤트에 대 한 자세한 내용은 문서를 참조 하세요. [MFC ActiveX 컨트롤: 이벤트](../mfc/mfc-activex-controls-events.md)합니다.
+`COleControl`에서 파생되는 컨트롤 클래스이므로 특정한 조건이 충족될 경우 컨트롤 컨테이너에 이벤트를 호출하는 메시지를 보내거나 "발생"시키는 기능을 상속합니다. 이러한 이벤트는 컨트롤에서 중요한 사항이 발생하는 경우 컨트롤 컨테이너에 알리는 데 사용됩니다. 매개 변수를 이벤트에 연결하여 이벤트에 대한 추가 정보를 컨트롤 컨테이너에 전송할 수 있습니다. ActiveX 컨트롤의 이벤트에 대 한 자세한 내용은 문서를 참조 하세요. [MFC ActiveX 컨트롤: 이벤트](../mfc/mfc-activex-controls-events.md)합니다.
 
 마지막 요소인 디스패치 맵은 함수(메서드)와 특성(속성)의 집합을 컨트롤 사용자에게 보여주는 데 사용됩니다. 속성을 통해 컨트롤 컨테이너 또는 컨트롤 사용자는 다양한 방법으로 컨트롤을 조작할 수 있습니다. 사용자는 컨트롤의 모양과 특정 값을 변경할 수 있으며, 컨트롤이 유지하는 데이터의 특정 부분에 액세스하도록 하는 컨트롤을 요청할 수 있습니다. 이 인터페이스는 컨트롤 개발자가 결정 되며 사용 하 여 정의 됩니다 **클래스 뷰**합니다. ActiveX 컨트롤의 메서드 및 속성에 대 한 자세한 내용은 문서를 참조 하세요. [MFC ActiveX 컨트롤: 메서드](../mfc/mfc-activex-controls-methods.md) 하 고 [속성](../mfc/mfc-activex-controls-properties.md)합니다.
 
@@ -117,7 +116,7 @@ Visual C++를 설치할 때 설치에서 ActiveX 컨트롤을 선택한 경우(�
 
    MFC로 ActiveX 컨트롤을 개발하는 데 필요한 라이브러리를 포함합니다.
 
-MFC ActiveX 컨트롤에 대한 샘플도 있습니다. 이러한 샘플에 대 한 자세한 내용은 참조 하세요. [컨트롤 샘플: MFC 기반 ActiveX 컨트롤](../visual-cpp-samples.md)
+MFC ActiveX 컨트롤에 대한 샘플도 있습니다. 이러한 샘플에 대 한 자세한 내용은 참조 하세요. [컨트롤 샘플: MFC 기반 ActiveX 컨트롤](../overview/visual-cpp-samples.md)
 
 ## <a name="see-also"></a>참고자료
 

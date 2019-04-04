@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-ms.openlocfilehash: f4d17069ed4e06a85b80d2027433ff87be6d1521
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 3d77a17d490f8d7680f095367c309ce0e4f366b7
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518569"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776338"
 ---
 # <a name="auto-c"></a>auto (c + +)
 
@@ -38,9 +38,9 @@ auto declarator initializer;
 
 - **성능:** 변환 작업 없이 되도록 보장할 수 있습니다.
 
-- **유용성:** 형식 이름 맞춤법 문제 및 오타를 걱정할 필요가 없습니다.
+- **사용 편의성:** 형식 이름 맞춤법 문제 및 오타를 걱정할 필요가 없습니다.
 
-- **효율성:** 코딩 더 효율적일 수 있습니다.
+- **효율성:** 코딩 하는 것은 더 효율적일 수 있습니다.
 
 변환의 경우는 데 사용할 하지 않을 수 있습니다 **자동**:
 
@@ -52,7 +52,7 @@ auto declarator initializer;
 
 초기화 식은 할당 (등호 구문), 직접 초기화 (함수-스타일 구문)이 될 수는 [new 연산자](new-operator-cpp.md) 식 또는 초기화 식 수는  *에 대 한 범위-선언* 의 매개 변수를 [범위에 대 한 문 (c + +)를 기준으로](../cpp/range-based-for-statement-cpp.md) 문입니다. 자세한 내용은 [이니셜라이저](../cpp/initializers.md) 및이 문서의 코드 예제입니다.
 
-합니다 **자동** 키워드는 형식에 대 한 자리 표시자 이지만 그 자체가 형식입니다. 따라서 합니다 **자동** 키워드의 캐스트 또는 연산자와 같은 사용할 수 없습니다 [sizeof](../cpp/sizeof-operator.md) 하 고 [typeid](../windows/typeid-cpp-component-extensions.md)합니다.
+합니다 **자동** 키워드는 형식에 대 한 자리 표시자 이지만 그 자체가 형식입니다. 따라서 합니다 **자동** 키워드의 캐스트 또는 연산자와 같은 사용할 수 없습니다 [sizeof](../cpp/sizeof-operator.md) 하 고 (C + + CLI) [typeid](../extensions/typeid-cpp-component-extensions.md)합니다.
 
 ## <a name="usefulness"></a>유용성
 
@@ -133,7 +133,7 @@ int main()
 |[C3536](../error-messages/compiler-errors-2/compiler-error-c3536.md)|초기화되기 전에 기호를 사용할 수 없습니다. 실제로, 이는 변수를 사용하여 자신을 초기화할 수 없음을 의미합니다.|
 |[C3537](../error-messages/compiler-errors-2/compiler-error-c3537.md)|선언 된 형식으로 캐스팅할 수 없습니다는 **자동** 키워드입니다.|
 |[C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md)|선언 된 선언 자 목록의 모든 기호는 **자동** 키워드는 같은 형식으로 확인 해야 합니다. 자세한 내용은 [선언 및 정의](declarations-and-definitions-cpp.md)합니다.|
-|[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|합니다 [sizeof](../cpp/sizeof-operator.md) 하 고 [typeid](../windows/typeid-cpp-component-extensions.md) 연산자를 사용 하 여 선언 된 기호에 적용할 수 없습니다는 **자동** 키워드입니다.|
+|[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|합니다 [sizeof](../cpp/sizeof-operator.md) 하 고 [typeid](../extensions/typeid-cpp-component-extensions.md) 연산자를 사용 하 여 선언 된 기호에 적용할 수 없습니다는 **자동** 키워드입니다.|
 
 ## <a name="examples"></a>예제
 
@@ -222,10 +222,10 @@ int main()
 ## <a name="see-also"></a>참고자료
 
 [auto 키워드](../cpp/auto-keyword.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [/Zc:auto(변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
 [sizeof 연산자](../cpp/sizeof-operator.md)<br/>
-[typeid](../windows/typeid-cpp-component-extensions.md)<br/>
+[typeid(C++ 구성 요소 확장)](../extensions/typeid-cpp-component-extensions.md)<br/>
 [operator new](new-operator-cpp.md)<br/>
 [선언 및 정의](declarations-and-definitions-cpp.md)<br/>
 [람다 식의 예](../cpp/examples-of-lambda-expressions.md)<br/>

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3391
 ms.assetid: c32532b9-7db4-4ccd-84b9-479e5a1a19d1
-ms.openlocfilehash: cac397e4588c493fb8c47932feb97a5f12cf2583
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 32ba1ca63a3a6fafa3290946a976e6845385126f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578219"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772594"
 ---
 # <a name="compiler-error-c3391"></a>컴파일러 오류 C3391
 
 'type_arg': 제네릭 매개 변수 'param' 일반 'generic_type'의 잘못 된 형식 인수가 null이 아닌 값 형식 이어야 합니다.
 
-제네릭 형식이 잘못 인스턴스화되었습니다. 형식 정의를 확인하세요. 자세한 내용은 <xref:System.Nullable> 하 고 [제네릭을](../../windows/generics-cpp-component-extensions.md)합니다.
+제네릭 형식이 잘못 인스턴스화되었습니다. 형식 정의를 확인하세요. 자세한 내용은 <xref:System.Nullable> 하 고 [제네릭을](../../extensions/generics-cpp-component-extensions.md)합니다.
 
 ## <a name="example"></a>예제
 

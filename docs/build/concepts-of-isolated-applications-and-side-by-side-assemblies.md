@@ -5,12 +5,12 @@ helpviewer_keywords:
 - side-by-side assemblies [C++]
 - isolated assemblies [C++]
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
-ms.openlocfilehash: 61da61b4a213c01ca66e8978c78622fe8b2818d1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 448d2088a9e91de8fc34b4f23721ffec77f6c697
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817584"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773504"
 ---
 # <a name="concepts-of-isolated-applications-and-side-by-side-assemblies"></a>격리된 애플리케이션 및 side-by-side 어셈블리 개념
 
@@ -32,7 +32,7 @@ side-by-side 어셈블리는 공유 또는 전용으로 설정할 수 있습니�
 
 ## <a name="visual-c-libraries"></a>Visual C++ 라이브러리
 
-Visual Studio 2005 및 Visual Studio 2008에서 ATL, MFC, CRT, 표준 C++, OpenMP, MSDIA 등의 재배포 가능 라이브러리는 공유 side-by-side 어셈블리로 네이티브 어셈블리 캐시에 배포됩니다. 현재 버전에서는 재배포 가능 라이브러리가 중앙 배포를 사용합니다. 기본적으로 Visual C++를 사용하여 빌드된 모든 애플리케이션은 매니페스트를 최종 이진에 포함하여 빌드되고 매니페스트는 Visual C++ 라이브러리에 대한 이진의 종속성을 설명합니다. Visual C++ 애플리케이션에 대한 매니페스트 생성과 관련된 자세한 내용은 [Understanding Manifest Generation for C/C++ Programs](understanding-manifest-generation-for-c-cpp-programs.md)를 참조하세요. 매니페스트는 애플리케이션이 사용하거나 로컬 배포를 사용하는 라이브러리에 정적으로 연결된 애플리케이션에는 필요하지 않습니다. 배포에 대한 자세한 내용은 [Deployment in Visual C++](../ide/deployment-in-visual-cpp.md)를 참조하세요.
+Visual Studio 2005 및 Visual Studio 2008에서 ATL, MFC, CRT, 표준 C++, OpenMP, MSDIA 등의 재배포 가능 라이브러리는 공유 side-by-side 어셈블리로 네이티브 어셈블리 캐시에 배포됩니다. 현재 버전에서는 재배포 가능 라이브러리가 중앙 배포를 사용합니다. 기본적으로 Visual C++를 사용하여 빌드된 모든 애플리케이션은 매니페스트를 최종 이진에 포함하여 빌드되고 매니페스트는 Visual C++ 라이브러리에 대한 이진의 종속성을 설명합니다. Visual C++ 애플리케이션에 대한 매니페스트 생성과 관련된 자세한 내용은 [Understanding Manifest Generation for C/C++ Programs](understanding-manifest-generation-for-c-cpp-programs.md)를 참조하세요. 매니페스트는 애플리케이션이 사용하거나 로컬 배포를 사용하는 라이브러리에 정적으로 연결된 애플리케이션에는 필요하지 않습니다. 배포에 대한 자세한 내용은 [Deployment in Visual C++](../windows/deployment-in-visual-cpp.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

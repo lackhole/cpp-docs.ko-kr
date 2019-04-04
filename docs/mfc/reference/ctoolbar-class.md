@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CToolBar [MFC], SetHeight
 - CToolBar [MFC], SetSizes
 ms.assetid: e868da26-5e07-4607-9651-e2f863ad9059
-ms.openlocfilehash: ee1820601f80ed270221b3186188793f7fdcbe08
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: aa49ebed2d48d9818c2d39ae4894d8caf1fbbf81
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301456"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773140"
 ---
 # <a name="ctoolbar-class"></a>CToolBar 클래스
 
@@ -102,8 +102,7 @@ Visual c + + 도구 모음을 만들려면 두 가지 방법으로 제공 합니
 
 1. 도구 모음 리소스를 만듭니다.
 
-1. 
-  `CToolBar` 개체를 생성합니다.
+1. `CToolBar` 개체를 생성합니다.
 
 1. 호출 된 [만들기](#create) (또는 [CreateEx](#createex)) Windows 도구 모음을 만들고 연결 하는 함수는 `CToolBar` 개체입니다.
 
@@ -111,8 +110,7 @@ Visual c + + 도구 모음을 만들려면 두 가지 방법으로 제공 합니
 
 그렇지 않은 경우 다음이 단계를 따르세요.
 
-1. 
-  `CToolBar` 개체를 생성합니다.
+1. `CToolBar` 개체를 생성합니다.
 
 1. 호출 된 [만들기](#create) (또는 [CreateEx](#createex)) Windows 도구 모음을 만들고 연결 하는 함수는 `CToolBar` 개체입니다.
 
@@ -719,9 +717,9 @@ void SetSizes(
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 CTRLBARS](../../visual-cpp-samples.md)<br/>
-[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 DOCKTOOL](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 DOCKTOOL](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar 클래스](../../mfc/reference/ccontrolbar-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CToolBarCtrl 클래스](../../mfc/reference/ctoolbarctrl-class.md)<br/>

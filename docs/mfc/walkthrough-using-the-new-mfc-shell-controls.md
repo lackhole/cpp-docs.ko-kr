@@ -4,12 +4,12 @@ ms.date: 09/20/2018
 helpviewer_keywords:
 - shell controls (MFC)
 ms.assetid: f0015caa-199d-4aaf-9501-5a239fce9095
-ms.openlocfilehash: 9314eec7c02ed0286a7ae3fcf14bae6572dd710c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ef0e4856a844503f8d13b7b6ed37318b76b6af69
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288790"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772152"
 ---
 # <a name="walkthrough-using-the-new-mfc-shell-controls"></a>연습: 새 MFC 셸 컨트롤 사용
 
@@ -166,7 +166,7 @@ ms.locfileid: "57288790"
 
 - 마법사를 둘 다를 사용 하 여 Outlook 표시줄 만든를 **폴더** 창 및 **달력** 창입니다. 것은 적합 하지 않습니다 할를 **달력** 창에는 **탐색기** 창 이제 해당 창 제거 합니다.
 
-- 합니다 `CMFCShellListCtrl` 와 같은 다른 모드에서 파일을 볼 수 **큰 아이콘**를 **작은 아이콘**를 **목록**, 및 **세부 정보**합니다. 이 기능을 구현 하는 응용 프로그램을 업데이트 합니다. 힌트: 참조 [Visual c + + 샘플](../visual-cpp-samples.md)합니다.
+- 합니다 `CMFCShellListCtrl` 와 같은 다른 모드에서 파일을 볼 수 **큰 아이콘**를 **작은 아이콘**를 **목록**, 및 **세부 정보**합니다. 이 기능을 구현 하는 응용 프로그램을 업데이트 합니다. 힌트: 참조 [Visual c + + 샘플](../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

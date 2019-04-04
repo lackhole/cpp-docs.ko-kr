@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2140
 ms.assetid: d44a0500-002c-4632-9e5e-c71c3a473ec4
-ms.openlocfilehash: e04a44007161fcfae5bab948584809590edbc095
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35b6e38290acddb41bdf53d9663a058259300ee8
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668704"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771892"
 ---
 # <a name="compiler-error-c2140"></a>컴파일러 오류 C2140
 
@@ -19,7 +19,7 @@ ms.locfileid: "50668704"
 
 잘못 된 형식 지정자는 형식 특성에 전달 되었습니다.
 
-자세한 내용은 [형식 특성에 대 한 컴파일러 지원](../../windows/compiler-support-for-type-traits-cpp-component-extensions.md)합니다.
+자세한 내용은 [형식 특성에 대 한 컴파일러 지원](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md)합니다.
 
 ## <a name="example"></a>예제
 

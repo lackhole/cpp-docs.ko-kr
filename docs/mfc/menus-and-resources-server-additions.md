@@ -17,18 +17,18 @@ helpviewer_keywords:
 - server applications [MFC], OLE menus and resources
 - OLE initialization failure [MFC]
 ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
-ms.openlocfilehash: 0cf5b495ca1e3f6e7b0ae434c09e014a29eadb00
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 85c7b6059a868e93c6c6a7ebbd7b08dac3233612
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281954"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767205"
 ---
 # <a name="menus-and-resources-server-additions"></a>메뉴 및 리소스: 서버 추가
 
 이 문서에서는 메뉴 및 비주얼 편집 서버 (구성 요소) 응용 프로그램의 다른 리소스에 대 한 필요한 변경에 설명 합니다. 세 가지 모드 중 하나로 시작할 수 있으므로 서버 응용 프로그램의 메뉴 구조 및 기타 리소스에 많은 추가 필요 합니다: 독립 실행형 모드, 포함 또는 진행에서 합니다. 에 설명 된 대로 합니다 [메뉴 및 리소스 (OLE)](../mfc/menus-and-resources-ole.md) 문서를 최대 4 개의 집합이 메뉴. 모든 4는 3 개만 미니 서버에 사용 되는 동안 MDI 전체 서버 응용 프로그램에 사용 됩니다. 응용 프로그램 마법사는 서버 유형에 대 한 필요한 메뉴 레이아웃을 만듭니다. 일부 사용자 지정 해야 할 수도 있습니다.
 
-응용 프로그램 마법사를 사용 하지 않는 경우에 HIERSVR 확인 하는 것이 좋습니다. MFC 샘플 응용 프로그램에 대 한 리소스 스크립트 RC [HIERSVR](../visual-cpp-samples.md)이러한 변경 내용을 구현 하는 방법을 참조 하세요.
+응용 프로그램 마법사를 사용 하지 않는 경우에 HIERSVR 확인 하는 것이 좋습니다. MFC 샘플 응용 프로그램에 대 한 리소스 스크립트 RC [HIERSVR](../overview/visual-cpp-samples.md)이러한 변경 내용을 구현 하는 방법을 참조 하세요.
 
 이 문서에서 다루는 항목은 다음과 같습니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "57281954"
 
 두 번째 테이블은 거의 보기의 액셀러레이터 키 테이블의 정확한 복사본입니다. 차이에 언급 된 완벽 하 게 열기 메뉴에서 변경한 내용을 병렬 [Server 메뉴 추가](#_core_server_menu_additions)합니다.
 
-이러한 액셀러레이터 키 테이블 변경의 예는 HIERSVR에서 IDR_MAINFRAME 사용 하 여 IDR_HIERSVRTYPE_SRVR_IP 한 액셀러레이터 키 테이블을 비교 합니다. MFC OLE 샘플에 포함 된 RC 파일 [HIERSVR](../visual-cpp-samples.md)합니다. 파일 및 창 가속기 전체 테이블에서 누락 되어 정확한 복사본이 포함 된 테이블에 합니다.
+이러한 액셀러레이터 키 테이블 변경의 예는 HIERSVR에서 IDR_MAINFRAME 사용 하 여 IDR_HIERSVRTYPE_SRVR_IP 한 액셀러레이터 키 테이블을 비교 합니다. MFC OLE 샘플에 포함 된 RC 파일 [HIERSVR](../overview/visual-cpp-samples.md)합니다. 파일 및 창 가속기 전체 테이블에서 누락 되어 정확한 복사본이 포함 된 테이블에 합니다.
 
 ##  <a name="_core_string_table_additions_for_server_applications"></a> 서버 응용 프로그램에 대 한 문자열 테이블 추가
 

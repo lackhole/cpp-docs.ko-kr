@@ -8,12 +8,12 @@ helpviewer_keywords:
 - explicit virtual function overrides
 - explicit override of virtual function
 ms.assetid: ee583234-5cda-4e90-b55e-3f9fbf079ced
-ms.openlocfilehash: 5f46d55dc3898fdf5fede075a0d44f04a9f8326a
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: dbaf8b0d78093df522cfbc63bf20dd0acb6c477c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51325863"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774258"
 ---
 # <a name="explicit-overrides-c"></a>명시적 재정의 (C++)
 
@@ -21,7 +21,7 @@ ms.locfileid: "51325863"
 
 두 개 이상에서 사용 하는 동일한 가상 함수가 선언 된 경우 [인터페이스](../cpp/interface.md) 클래스는 이러한 인터페이스에서 파생 하는 경우 각 가상 함수 명시적으로 재정의할 수 있습니다.
 
-새 관리 되는 구문을 사용 하 여 관리 코드에서 명시적 방법은 재정의 참조 하세요 [명시적으로 재정의](../windows/explicit-overrides-cpp-component-extensions.md)합니다.
+C +를 사용 하 여 관리 코드에서 명시적 재정의에 대 한 내용은 + CLI 참조 [명시적으로 재정의](../extensions/explicit-overrides-cpp-component-extensions.md)합니다.
 
 **Microsoft 전용 종료**
 

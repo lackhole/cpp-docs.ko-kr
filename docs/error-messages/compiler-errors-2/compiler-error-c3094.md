@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3094
 ms.assetid: 10da9b7c-e72d-4013-9925-c83e1bb142db
-ms.openlocfilehash: 1b2cd29738763e5b31cc6727126114fca509a47f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2147320aeb662c46421f953eeb99c5cab0f5cd5e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512579"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767706"
 ---
 # <a name="compiler-error-c3094"></a>컴파일러 오류 C3094
 
 'attribute': 익명으로 사용할 수 없습니다.
 
-특성의 범위를 올바르게 지정하지 않았습니다.  자세한 내용은 [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md)을 참조하세요.
+특성의 범위를 올바르게 지정하지 않았습니다.  자세한 내용은 [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

@@ -6,12 +6,12 @@ f1_keywords:
 - -std
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: d66a9ed445e28de2341aa2a07f249c10cba83da4
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 32c63240f578b6170ae351cdf0cd1628167464b6
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812007"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779744"
 ---
 # <a name="std-specify-language-standard-version"></a>/std (언어 표준 버전 지정)
 
@@ -37,11 +37,11 @@ ms.locfileid: "57812007"
 
 - [u8 문자 리터럴](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)
 
-추가 정보에 대 한 기능에 따라 C + + 14 및 C + + 17 설정 된 경우 **/std: c + + 14** 는 지정에서 정보를 참조 하십시오 [Visual c + + 언어 규칙](../../visual-cpp-language-conformance.md)합니다.
+추가 정보에 대 한 기능에 따라 C + + 14 및 C + + 17 설정 된 경우 **/std: c + + 14** 는 지정에서 정보를 참조 하십시오 [Visual c + + 언어 규칙](../../overview/visual-cpp-language-conformance.md)합니다.
 
 합니다 **/std: c + + 17** 옵션을 사용 하면 전체 C + + 17 기능 집합 MSVC 컴파일러에서 구현 합니다. 이 옵션에서는 C++17 이후의 C++표준 규격 초안(Working Draft) 및 결함 업데이트의 전에서 변경되거나 새로운 기능에 대한 컴파일러 및 표준 라이브러리 지원을 사용하지 않습니다.
 
-합니다 **/std: c + + 최신** 옵션을 사용 하면 게시물-c++17 언어 및 라이브러리 기능이 컴파일러 및 라이브러리의 현재 구현 합니다. 이러한 C + + 20 초안 작업 및 결함 업데이트의 c + + 표준의 초안 표준에 대 한 실험적 제안서를 비롯 하 여 c++17에 포함 되지 않은 기능을 포함할 수 있습니다. 지원 되는 언어 및 라이브러리 기능 목록을 참조 하세요 [Visual c + +에 대 한 새로운](../../what-s-new-for-visual-cpp-in-visual-studio.md)합니다. 합니다 **/std: c + + 최신** 옵션에서 보호 하는 기능을 사용 하지 않습니다는 **실험적 /** 를 전환 하지만 사용 하도록 설정 해야 할 수 있습니다.
+합니다 **/std: c + + 최신** 옵션을 사용 하면 게시물-c++17 언어 및 라이브러리 기능이 컴파일러 및 라이브러리의 현재 구현 합니다. 이러한 C + + 20 초안 작업 및 결함 업데이트의 c + + 표준의 초안 표준에 대 한 실험적 제안서를 비롯 하 여 c++17에 포함 되지 않은 기능을 포함할 수 있습니다. 지원 되는 언어 및 라이브러리 기능 목록을 참조 하세요 [Visual c + +에 대 한 새로운](../../overview/what-s-new-for-visual-cpp-in-visual-studio.md)합니다. 합니다 **/std: c + + 최신** 옵션에서 보호 하는 기능을 사용 하지 않습니다는 **실험적 /** 를 전환 하지만 사용 하도록 설정 해야 할 수 있습니다.
 
 > [!IMPORTANT]
 > 컴파일러 및 라이브러리 기능으로 사용 하도록 설정 **/std: c + + 최신** 로 제공 됩니다-은 지원 하지 않고 있습니다. 이들은 통지 없이 변경 또는 제거 될 수 있습니다. 표준의 다음 버전에서 나타날 수 있는 언어 기능의 미리 보기로 제공 됩니다 이지만 표준 진행 중인 작업입니다. 사용 하 여 **/std: c + + 17** 최신 ISO c + + 표준의는 기능을 사용 합니다.
@@ -51,11 +51,11 @@ ms.locfileid: "57812007"
 합니다 **/std: c + + 14** 하 고 **/std: c + + 최신** 옵션은 Visual c + + 2015 업데이트 3부터 사용할 수 있습니다. 합니다 **/std: c + + 17** 옵션은 Visual c + + 2017 버전 15.3부터 사용할 수 있습니다. 동작으로 활성화 되어 일부 c++17 표준 위에서 설명한 것 처럼 합니다 **/std: c + + 14** 옵션을 사용 하지만 다른 모든 C + + 17 기능으로 사용 됩니다 **/std: c + + 17**합니다.
 
 > [!NOTE]
-> MSVC 컴파일러 버전 또는 업데이트 수준에 따라 특정 C + + 14 또는 C + + 17 기능 하지 구현 될 수 있습니다 완전히 또는 완전히와 호환 되는 지정 하는 경우는 **/std: c + + 14** 또는 **/std: c + + 17** 옵션입니다. 예를 들어, Visual c + + 2017 RTM 컴파일러가 C + + 14을 준수 하는 완벽 하 게 지원 하지 않습니다 `constexpr`, SFINAE 식 또는 2 단계 이름 조회 합니다. 릴리스 버전에서 Visual c + +에서 c + + 언어 규칙의 개요를 보려면 [Visual c + + 언어 규칙](../../visual-cpp-language-conformance.md)합니다.
+> MSVC 컴파일러 버전 또는 업데이트 수준에 따라 특정 C + + 14 또는 C + + 17 기능 하지 구현 될 수 있습니다 완전히 또는 완전히와 호환 되는 지정 하는 경우는 **/std: c + + 14** 또는 **/std: c + + 17** 옵션입니다. 예를 들어, Visual c + + 2017 RTM 컴파일러가 C + + 14을 준수 하는 완벽 하 게 지원 하지 않습니다 `constexpr`, SFINAE 식 또는 2 단계 이름 조회 합니다. 릴리스 버전에서 Visual c + +에서 c + + 언어 규칙의 개요를 보려면 [Visual c + + 언어 규칙](../../overview/visual-cpp-language-conformance.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 선택 **구성 속성**를 **C/c + +** 하십시오 **언어**합니다.
 

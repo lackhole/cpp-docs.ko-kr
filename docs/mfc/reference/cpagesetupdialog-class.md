@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], PreDrawPage
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-ms.openlocfilehash: 9a8940aa23b23281a6de6ce7e75bb1e43341b14a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 01a320fbcd9760bab484f3c75553613852ca9aed
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277887"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778093"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog 클래스
 
@@ -405,6 +405,6 @@ virtual UINT PreDrawPage(
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 워드 패드](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 워드 패드](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog 클래스](../../mfc/reference/ccommondialog-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)

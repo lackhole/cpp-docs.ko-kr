@@ -9,12 +9,12 @@ helpviewer_keywords:
 - class libraries, MFC
 - MFC, about MFC
 ms.assetid: 7101cb18-a681-495c-8f2b-069ad20c72f7
-ms.openlocfilehash: 60c50eb25132a38c72be762ab96d8ee262f5b349
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 042412000ba59c8400c5a3a64edae5d60756116a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328833"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766497"
 ---
 # <a name="mfc-desktop-applications"></a>MFC 데스크톱 응용 프로그램
 
@@ -79,7 +79,7 @@ Visual Studio에서 MFC 응용 프로그램을 만드는 기능을 안내하는 
 [ATL/MFC 공유 클래스](../atl-mfc-shared/atl-mfc-shared-classes.md)<br/>
 MFC와 ATL 간 공유되는 클래스에 대한 링크를 제공합니다.
 
-[MFC 샘플](../visual-cpp-samples.md)<br/>
+[MFC 샘플](../overview/visual-cpp-samples.md)<br/>
 MFC 사용 방법을 보여 주는 샘플에 대한 링크를 제공합니다.
 
 [Visual C++ 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>

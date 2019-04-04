@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - typeid operator
 ms.assetid: 8871cee6-d6b9-4301-a5cb-bf3dc9798d61
-ms.openlocfilehash: dfbf5275391e2820c94d2827c9b2c3eb252365c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b1185f48df4a941eb2a5d81bfa67d07cdf4387d0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571927"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780888"
 ---
 # <a name="typeid-operator"></a>typeid 연산자
 
@@ -26,7 +26,7 @@ typeid(expression)
 
 결과인 **typeid** 되는 `const type_info&`합니다. 값이에 대 한 참조를 `type_info` 나타내는 개체를 *type-id 형식의* 또는 형식의 *식*형태에 따라 **typeid** 사용 됩니다. 참조 [type_info 클래스](../cpp/type-info-class.md) 자세한 내용은 합니다.
 
-합니다 **typeid** 연산자는 관리 되는 형식 (추상 선언 자 또는 인스턴스) 사용 하지 않고 참조 하십시오 [typeid](../windows/typeid-cpp-component-extensions.md) 에 대 한 내용은 <xref:System.Type> 지정 된 형식의 합니다.
+합니다 **typeid** 연산자는 관리 되는 형식 (추상 선언 자 또는 인스턴스) 사용 하지 않고 참조 하십시오 [typeid](../extensions/typeid-cpp-component-extensions.md) 에 대 한 내용은 <xref:System.Type> 지정 된 형식의 합니다.
 
 합니다 **typeid** 연산자는 다형 클래스 형식의 l-value에 적용 될 때 런타임 검사를 제공 된 정적 정보로 개체의 true 형식을 확인할 수 없습니다 위치 합니다. 다음과 같은 경우가 여기에 해당합니다.
 
@@ -93,4 +93,4 @@ T max( T arg1, T arg2 ) {
 ## <a name="see-also"></a>참고자료
 
 [런타임 형식 정보](../cpp/run-time-type-information.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[키워드(C++)](../cpp/keywords-cpp.md)

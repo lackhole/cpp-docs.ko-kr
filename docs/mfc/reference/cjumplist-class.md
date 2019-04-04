@@ -1,6 +1,6 @@
 ---
 title: CJumpList 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CJumpList
 - AFXADV/CJumpList
@@ -36,16 +36,16 @@ helpviewer_keywords:
 - CJumpList [MFC], InitializeList
 - CJumpList [MFC], SetAppID
 ms.assetid: d364d27e-f512-4b12-9872-c2a17c78ab1f
-ms.openlocfilehash: b72ea6f3715be1e4a11d457dbdeaba7a622ef8b6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9296912c97b1efb5f7cbd1ed9f769d0222d5f85c
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259076"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565310"
 ---
 # <a name="cjumplist-class"></a>CJumpList 클래스
 
-`CJumpList` 작업 표시줄에서 아이콘을 마우스 오른쪽 단추로 클릭 하면 표시 되는 바로 가기 목록입니다.
+`CJumpList` 작업 표시줄에서 아이콘을 마우스 오른쪽 단추로 클릭할 때 표시 되는 바로 가기 목록입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -60,7 +60,7 @@ class CJumpList;
 |이름|설명|
 |----------|-----------------|
 |[CJumpList::CJumpList](#cjumplist)|`CJumpList` 개체를 생성합니다.|
-|[CJumpList::~CJumpList](#cjumplist__~cjumplist)|`CJumpList` 개체를 제거합니다.|
+|[CJumpList::~CJumpList](#_dtorcjumplist)|`CJumpList` 개체를 제거합니다.|
 
 |이름|설명|
 |----------|-----------------|
@@ -188,7 +188,7 @@ BOOL AddTask(IShellLink* pShellLink);
 대상 작업 경로 지정합니다.
 
 *strCommandLineArgs*<br/>
-StrTargetExecutablePath로 지정 된 실행 파일의 명령줄 인수를 지정 합니다.
+지정 된 실행 파일의 명령줄 인수를 지정 *strTargetExecutablePath*합니다.
 
 *strTitle*<br/>
 대상 목록에 표시 될 작업의 이름입니다.

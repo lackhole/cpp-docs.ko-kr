@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCOutlookBarPane [MFC], EnableContextMenuItems
 - CMFCOutlookBarPane [MFC], RemoveAllButtons
 ms.assetid: 094e2ef3-a118-487e-a4cc-27626108fe08
-ms.openlocfilehash: 9f1fd2435222b33d0dfb188d2a51442c2f6aa82a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b23aa9e30c130cea8c84290b62cc19794376d4c1
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288885"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773439"
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane 클래스
 
@@ -111,7 +111,7 @@ Outlook 표시줄의 예로, OutlookDemo 샘플 프로젝트를 참조 하세요
 
 ## <a name="example"></a>예제
 
-다음 예제에서는의 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CMFCOutlookBarPane` 클래스입니다. Outlook 표시줄 창을 만들, 페이지 스크롤 모드를 사용 하도록 설정, 도킹을 사용 하도록 설정 하 고 Outlook 표시줄의 배경색을 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Outlook 다중 뷰 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는의 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CMFCOutlookBarPane` 클래스입니다. Outlook 표시줄 창을 만들, 페이지 스크롤 모드를 사용 하도록 설정, 도킹을 사용 하도록 설정 하 고 Outlook 표시줄의 배경색을 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Outlook 다중 뷰 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_OutlookMultiViews#3](../../mfc/reference/codesnippet/cpp/cmfcoutlookbarpane-class_1.h)]
 [!code-cpp[NVC_MFC_OutlookMultiViews#4](../../mfc/reference/codesnippet/cpp/cmfcoutlookbarpane-class_2.cpp)]

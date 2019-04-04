@@ -9,12 +9,12 @@ helpviewer_keywords:
 - registering custom Clipboard data formats
 - custom Clipboard data formats
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
-ms.openlocfilehash: 16e949973ff621b1e4e36475d95763ac47b4a00d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 182abe71ccc9552c113ebb114b4351178e48b096
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280220"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766849"
 ---
 # <a name="clipboard-adding-other-formats"></a>클립보드: 기타 서식 추가
 
@@ -36,7 +36,7 @@ ms.locfileid: "57280220"
 
 1. 표준 형식을 호출 하 여 추가 `COleDataSource::CacheGlobalData` 지원 하려는 각 표준 형식에 대 한 합니다.
 
-이 방법은 MFC OLE 샘플 프로그램에서 사용 됩니다 [HIERSVR](../visual-cpp-samples.md) (검사 합니다 `OnGetClipboardData` 멤버 함수는 **CServerItem** 클래스). 이 예제의 유일한 차이점은 해당 단계 3 HIERSVR 없는 다른 표준 형식을 지원 하기 때문에 구현 되어 있지 않습니다.
+이 방법은 MFC OLE 샘플 프로그램에서 사용 됩니다 [HIERSVR](../overview/visual-cpp-samples.md) (검사 합니다 `OnGetClipboardData` 멤버 함수는 **CServerItem** 클래스). 이 예제의 유일한 차이점은 해당 단계 3 HIERSVR 없는 다른 표준 형식을 지원 하기 때문에 구현 되어 있지 않습니다.
 
 ### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 

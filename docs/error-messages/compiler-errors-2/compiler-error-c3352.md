@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3352
 ms.assetid: f233bed7-474e-425f-aad2-7801578169d4
-ms.openlocfilehash: c45ce5e2e72c6a987a0053cb4b1bbb151c149faf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6641f05c8daa5ad505c0bcb8d29a369ad5fd9a9a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496542"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779601"
 ---
 # <a name="compiler-error-c3352"></a>컴파일러 오류 C3352
 
@@ -19,7 +19,7 @@ ms.locfileid: "50496542"
 
 에 대 한 매개 변수 목록이 `function` / 대리자 일치 하지 않습니다.
 
-자세한 내용은 [delegate (c + + 구성 요소 확장)](../../windows/delegate-cpp-component-extensions.md)합니다.
+자세한 내용은 [delegate (c + + 구성 요소 확장)](../../extensions/delegate-cpp-component-extensions.md)합니다.
 
 다음 샘플에서는 C3352 오류가 생성 됩니다.
 

@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCColorPickerCtrl [MFC], SetType
 - CMFCColorPickerCtrl [MFC], DrawCursor
 ms.assetid: b9bbd03c-beb0-4b55-9765-9985fd05e5dc
-ms.openlocfilehash: 048430c78dfed4158f6fb84eacc07972b79d8a51
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1977717ee590acb63655ba21bfa5eb6bfe7c9bd8
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276015"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772360"
 ---
 # <a name="cmfccolorpickerctrl-class"></a>CMFCColorPickerCtrl 클래스
 
@@ -111,7 +111,7 @@ class CMFCColorPickerCtrl : public CButton
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 구성 하는 방법에 설명 된 `CMFCColorPickerCtrl` 에서 다양 한 메서드를 사용 하 여 개체를 `CMFCColorPickerCtrl` 클래스입니다. 예제에는 선택 컨트롤의 유형을 설정 하는 방법 및 해당 색, 색상, 광도 및 채도 설정 하는 방법을 보여 줍니다. 일부인 예제는 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 구성 하는 방법에 설명 된 `CMFCColorPickerCtrl` 에서 다양 한 메서드를 사용 하 여 개체를 `CMFCColorPickerCtrl` 클래스입니다. 예제에는 선택 컨트롤의 유형을 설정 하는 방법 및 해당 색, 색상, 광도 및 채도 설정 하는 방법을 보여 줍니다. 일부인 예제는 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#4](../../mfc/reference/codesnippet/cpp/cmfccolorpickerctrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#5](../../mfc/reference/codesnippet/cpp/cmfccolorpickerctrl-class_2.cpp)]

@@ -166,12 +166,12 @@ helpviewer_keywords:
 - CBasePane [MFC], UndockPane
 - CBasePane [MFC], DoPaint
 ms.assetid: 8163dd51-d7c7-4def-9c74-61f8ecdfad82
-ms.openlocfilehash: 30a5eff8b18df8372c23b5f400c90ff85bdad0eb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e0d6b844ba4a5c373dd69c0435bbb9972db3b49b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259817"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774479"
 ---
 # <a name="cbasepane-class"></a>CBasePane 클래스
 
@@ -342,7 +342,7 @@ class CBasePane : public CWnd
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CBasePane` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서 창을 검색 하는 방법에 설명 합니다 `CFrameWndEx` 클래스 및 도킹 모드, 창 정렬 및 창 스타일을 설정 하는 방법입니다. 코드는 합니다 [워드 패드 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 `CBasePane` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서 창을 검색 하는 방법에 설명 합니다 `CFrameWndEx` 클래스 및 도킹 모드, 창 정렬 및 창 스타일을 설정 하는 방법입니다. 코드는 합니다 [워드 패드 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_WordPad#2](../../mfc/reference/codesnippet/cpp/cbasepane-class_1.cpp)]
 

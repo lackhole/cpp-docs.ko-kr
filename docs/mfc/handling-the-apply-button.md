@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Apply button in property sheet
 - property sheets, Apply button
 ms.assetid: 7e977015-59b8-406f-b545-aad0bfd8d55b
-ms.openlocfilehash: eb438351d273c872def8c98a67b7010cec0b4d76
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 30ee549a334a684deeb4a845f2fc49ee8bbe11db
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279447"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770839"
 ---
 # <a name="handling-the-apply-button"></a>적용 단추 처리
 
@@ -30,7 +30,7 @@ ms.locfileid: "57279447"
 
 [적용] 단추의 효과 구현 하려면 속성 시트가 해당 소유자 또는 일부 기타 외부 개체 속성 페이지에서 현재 설정을 적용 하려면 응용 프로그램에 지시 해야 합니다. 같은 시간에 속성 시트를 사용 하지 않도록 [적용] 단추를 호출 하 여 `CPropertyPage::SetModified( FALSE )` 외부 개체에 해당 수정 내용을 적용 하는 모든 페이지에 대 한 합니다.
 
-이 프로세스는 예로, MFC 일반 샘플을 참조 하세요 [PROPDLG](../visual-cpp-samples.md)합니다.
+이 프로세스는 예로, MFC 일반 샘플을 참조 하세요 [PROPDLG](../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

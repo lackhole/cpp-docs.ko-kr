@@ -11,12 +11,12 @@ helpviewer_keywords:
 - paint messages in view class [MFC]
 - device contexts, screen drawings
 ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
-ms.openlocfilehash: 77844ebd31f624229870d27c72b08a987b7533bd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: bc461347b56379976cdf62014507e3a15529f081
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280773"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772555"
 ---
 # <a name="drawing-in-a-view"></a>뷰에 그리기
 
@@ -42,7 +42,7 @@ A [디바이스 컨텍스트](../mfc/device-contexts.md) 디스플레이 또는 
 
 뷰에서 중심 문서에서 가져온 문자열을 출력 합니다. 경우는 `OnDraw` 화면 그리기에 대 한 호출 되는 `CDC` 개체가 전달 되었습니다 *pDC* 는 `CPaintDC` 의 생성자가 이미 호출 `BeginPaint`합니다. 함수를 그리기 호출은 장치 컨텍스트 포인터를 통해 이루어집니다. 장치 컨텍스트 및 그리기 호출에 대 한 내용은 클래스를 참조 하세요. [CDC](../mfc/reference/cdc-class.md) 에 *MFC 참조* 하 고 [창 개체 작업](../mfc/working-with-window-objects.md)합니다.
 
-작성 하는 방법의 예 `OnDraw`를 참조 합니다 [MFC 샘플](../visual-cpp-samples.md)합니다.
+작성 하는 방법의 예 `OnDraw`를 참조 합니다 [MFC 샘플](../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

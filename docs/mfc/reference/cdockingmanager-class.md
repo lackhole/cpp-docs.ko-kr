@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CDockingManager [MFC], m_nTimeOutBeforeDockingBarDock
 - CDockingManager [MFC], m_nTimeOutBeforeToolBarDock
 ms.assetid: 98e69c43-55d8-4f43-b861-4fda80ec1e32
-ms.openlocfilehash: 268a46e1bdecc1ea468c152fd0ed480873c36591
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6d3bbafa15ada97f53710f0faf6a18ea8e892f6c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260389"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771320"
 ---
 # <a name="cdockingmanager-class"></a>CDockingManager 클래스
 
@@ -292,7 +292,7 @@ class CDockingManager : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에서 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CDockingManager` 구성 하는 클래스를 `CDockingManager` 개체입니다. 이 예제에서는 모든 도킹 창의 캡션에 팝업 메뉴를 열고 추가 단추를 표시 하는 방법 및 개체의 도킹 모드를 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서 다양 한 메서드를 사용 하는 방법에 설명 합니다 `CDockingManager` 구성 하는 클래스를 `CDockingManager` 개체입니다. 이 예제에서는 모든 도킹 창의 캡션에 팝업 메뉴를 열고 추가 단추를 표시 하는 방법 및 개체의 도킹 모드를 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#24](../../mfc/codesnippet/cpp/cdockingmanager-class_1.cpp)]
 

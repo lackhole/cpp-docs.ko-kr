@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-ms.openlocfilehash: aaa05fc3e97fe690e8d6a0cd9eba826c482b410d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f74d883fa0dcdce025345848caf49069736ee0fa
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262105"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779211"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog 클래스
 
@@ -251,7 +251,7 @@ class CFileDialog : public CCommonDialog
 
 - [CDialog::OnSetFont](../../mfc/reference/cdialog-class.md#onsetfont)
 
-에 대 한 windows 메시지를 `CFileDialog` 클래스를 사용 하는 운영 체제에 따라 달라 집니다. 예를 들어, Windows XP 지원 하지 않습니다 [CDialog::OnCancel](../../mfc/reference/cdialog-class.md#oncancel) 하 고 [CDialog::OnOK](../../mfc/reference/cdialog-class.md#onok) 에 대 한는 `CFileDialog` 클래스입니다. 그러나 Windows Vista 및 이후 운영 체제 지원지 않습니다. 생성 되는 다양 한 메시지와 수신 된 순서에 대 한 자세한 내용은 참조 하세요. [CFileDialog 샘플: 이벤트 순서 로깅](../../visual-cpp-samples.md)합니다.
+에 대 한 windows 메시지를 `CFileDialog` 클래스를 사용 하는 운영 체제에 따라 달라 집니다. 예를 들어, Windows XP 지원 하지 않습니다 [CDialog::OnCancel](../../mfc/reference/cdialog-class.md#oncancel) 하 고 [CDialog::OnOK](../../mfc/reference/cdialog-class.md#onok) 에 대 한는 `CFileDialog` 클래스입니다. 그러나 Windows Vista 및 이후 운영 체제 지원지 않습니다. 생성 되는 다양 한 메시지와 수신 된 순서에 대 한 자세한 내용은 참조 하세요. [CFileDialog 샘플: 이벤트 순서 로깅](../../overview/visual-cpp-samples.md)합니다.
 
 사용 하는 `CFileDialog` 개체를 처음 사용 하 여 개체를 만들기는 `CFileDialog` 생성자입니다. 대화 상자를 생성 한 후이 설정 하거나 모든 값을 수정할 수 있습니다 합니다 [CFileDialog::m_ofn](#m_ofn) 구조 값 또는 대화 상자 컨트롤의 상태를 초기화 합니다. 합니다 `m_ofn` 구조체가 형식의 `OPENFILENAME`합니다. 자세한 내용은 참조는 [OPENFILENAME](/windows/desktop/api/commdlg/ns-commdlg-tagofna) Windows SDK에는 구조입니다.
 

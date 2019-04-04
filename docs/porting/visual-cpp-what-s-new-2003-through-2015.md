@@ -2,19 +2,19 @@
 title: Visual C++ 2003 ~ 2015의 새로운 기능
 ms.date: 11/04/2016
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: fdd1d2c2183d06defe413340b8aef05c5bd61750
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: e2a785871d85ce742bee7b78586756cced38986e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749154"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768687"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ 2003 ~ 2015의 새로운 기능
 
 이 페이지에는 Visual Studio 2015에서 2003까지 모든 버전의 Visual C++에 대한 "새로운 기능" 페이지가 모두 수집되어 있습니다. 이 정보는 이전 버전의 Visual C++에서 업그레이드하는 데 유용한 경우에 편의를 위해 제공됩니다.
 
 > [!NOTE]
-> Visual Studio 2017에 대한 자세한 내용은 [Visual Studio 2017의 Visual C++에 대한 새로운 기능](../what-s-new-for-visual-cpp-in-visual-studio.md) 및 [Visual Studio 2017의 Visual C++에서 규칙 향상](../cpp-conformance-improvements-2017.md)을 참조하세요.
+> Visual Studio 2017에 대한 자세한 내용은 [Visual Studio 2017의 Visual C++에 대한 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) 및 [Visual Studio 2017의 Visual C++에서 규칙 향상](../overview/cpp-conformance-improvements-2017.md)을 참조하세요.
 
 ## <a name="whats-new-for-c-in-visual-studio-2015"></a>Visual Studio 2015의 새로운 C++ 기능
 
@@ -1570,8 +1570,7 @@ C++11 명시적 변환 연산자, 이니셜라이저 목록, 범위가 지정된
 - 자동 벡터화 도우미에서 더 많은 C++ 패턴을 인식하고 최적화하므로 코드를 더 빠르게 실행할 수 있습니다.
 - ARM 플랫폼 및 Atom 마이크로 아키텍처 코드 품질이 향상되었습니다.
 - __vectorcall 호출 규칙이 추가되었습니다. 백터 레지스터를 사용하는 __vectorcall 호출 규칙을 통해 벡터 형식 인수를 전달합니다.
-- 새 링커 옵션이 제공됩니다. 
-  `/Gw`(컴파일러) 및 `/Gy`(어셈블러) 스위치를 사용하면 링커 최적화에서 간결한 이진 파일을 생성할 수 있습니다.
+- 새 링커 옵션이 제공됩니다. `/Gw`(컴파일러) 및 `/Gy`(어셈블러) 스위치를 사용하면 링커 최적화에서 간결한 이진 파일을 생성할 수 있습니다.
 - C++ AMP 공유 메모리를 지원하여 CPU와 GPU 간의 데이터 복사를 줄이거나 제거합니다.
 
 ### <a name="profile-guided-optimization-pgo-enhancements"></a>향상된 PGO(프로필 기반 최적화)
@@ -1613,7 +1612,7 @@ C++11 명시적 변환 연산자, 이니셜라이저 목록, 범위가 지정된
 - 원격 캡처 및 실제 장치에서의 재생
 - C++ AMP 및 CPU 동시 디버깅
 - 향상된 C++ AMP 런타임 진단
-- HLSL 계산 셰이더 추적 디버깅
+- HLSL 컴퓨팅 셰이더 추적 디버깅
 
 ### <a name="3-d-graphics-enhancements"></a>3차원 그래픽 향상
 

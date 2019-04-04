@@ -1,6 +1,6 @@
 ---
 title: '#가져올 지시문 (c + +)'
-ms.date: 10/18/2018
+ms.date: 03/27/2019
 f1_keywords:
 - '#import'
 helpviewer_keywords:
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - preprocessor, directives
 - COM, type library header file
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
-ms.openlocfilehash: a7dc30d3e5869e9b0f534a4769d4517a0514c144
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 72fd1d025ab19b7db9521e08655d00936b77581e
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822628"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58564961"
 ---
 # <a name="import-directive-c"></a>#import 지시문 (C++)
 
@@ -142,8 +142,7 @@ Byref 매개 변수를 사용 하는 dispinterface 속성을 가져올 경우 #i
     typedef _com_ptr_t<_com_IIID<IMyInterface, __uuidof(IMyInterface)> > IMyInterfacePtr;
     ```
 
-   
-  `IMyInterfacePtr` 형식은 원시 인터페이스 포인터 `IMyInterface*` 대신 사용할 수 있습니다. 따라서 다양 한 호출 하지 않아도 됩니다 `IUnknown` 멤버 함수
+   `IMyInterfacePtr` 형식은 원시 인터페이스 포인터 `IMyInterface*` 대신 사용할 수 있습니다. 따라서 다양 한 호출 하지 않아도 됩니다 `IUnknown` 멤버 함수
 
 - Typeinfo 선언: 주로 클래스 정의와에서 반환 되는 개별 typeinfo 항목을 노출 시키는 기타 항목으로 구성 됩니다 `ITypeLib:GetTypeInfo`합니다. 이 섹션에서 형식 라이브러리의 각 typeinfo는 `TYPEKIND` 정보에 종속적인 형식의 헤더에 반영됩니다.
 
@@ -161,7 +160,7 @@ using namespace MyLib;
 
 바로 뒤의 **#import** 소스 코드에서 문입니다.
 
-네임 스페이스를 사용 하 여 표시 하지 않을 수 있습니다 합니다 [no_namespace](#_predir_no_namespace) 특성을 **#import** 지시문입니다. 하지만 네임스페이스를 표시하지 않으면 이름이 충돌될 수 있습니다. 네임 스페이스에서 변경할 수도 있습니다는 [rename_namespace](#_predir_rename_namespace) 특성입니다.
+네임 스페이스를 사용 하 여 표시 하지 않을 수 있습니다는 [no_namespace](no-namespace.md))의 특성을 **#import** 지시문입니다. 하지만 네임스페이스를 표시하지 않으면 이름이 충돌될 수 있습니다. 네임 스페이스에서 변경할 수도 있습니다는 [rename_namespace](rename-namespace.md) 특성입니다.
 
 컴파일러는 현재 처리하고 있는 형식 라이브러리에 필요한 임의의 형식 라이브러리 종속성에 대한 전체 경로를 제공합니다. 경로는 컴파일러가 처리된 각 형식 라이브러리에 대해 생성하는 형식 라이브러리 헤더(.TLH)에 주석 형식으로 기록됩니다.
 

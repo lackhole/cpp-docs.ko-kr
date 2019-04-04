@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-ms.openlocfilehash: 8e2304ca2c4a6e974262fdb1b449a64b5871a474
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 77313f8c4dcc87fa9de852afe2d60e614f8fc3a3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749882"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781018"
 ---
 # <a name="platformobject-class"></a>Platform::Object 클래스
 
@@ -118,7 +118,7 @@ A [platform:: type](../cppcx/platform-type-class.md) 개체의 런타임 형식�
 
 합니다 [Windows::UI::Xaml::Interop::TypeName](/uwp/api/windows.ui.xaml.interop.typename) 클래스는 Windows 구성 요소와 앱 간에 형식 정보를 전달 하는 언어 독립적 방법으로 Windows Api에서 사용 됩니다. T[platform:: type 클래스](../cppcx/platform-type-class.md) 간의 변환에 대 한 연산자가 `Type` 고 `TypeName`입니다.
 
-사용 된 [typeid](../windows/typeid-cpp-component-extensions.md) 반환 하도록 연산자는 `Platform::Type` 예를 들어 XAML 페이지 사이 탐색할 때 클래스 이름에 대 한 개체:
+사용 된 [typeid](../extensions/typeid-cpp-component-extensions.md) 반환 하도록 연산자는 `Platform::Type` 예를 들어 XAML 페이지 사이 탐색할 때 클래스 이름에 대 한 개체:
 
 ```
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);

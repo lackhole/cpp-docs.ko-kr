@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3625
 ms.assetid: fdf49f21-d6b1-42f4-9eec-23b04ae8b4aa
-ms.openlocfilehash: 08ad1d09cb9149811566f67a585a718340254de9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3c69b05e22c2d267ad07f19a0d0ab60f3eebb94
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635397"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779016"
 ---
 # <a name="compiler-error-c3625"></a>컴파일러 오류 C3625
 
 'native_type': 네이티브 형식은 WinRT 또는 관리되는 형식 'type'에서 파생될 수 없습니다.
 
-네이티브 클래스는 WinRT 또는 관리되는 클래스에서 상속할 수 없습니다. 자세한 내용은 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md)합니다.
+네이티브 클래스는 WinRT 또는 관리되는 클래스에서 상속할 수 없습니다. 자세한 내용은 [클래스 및 구조체](../../extensions/classes-and-structs-cpp-component-extensions.md)합니다.
 
 ## <a name="example"></a>예제
 

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CMFCFontInfo [MFC], m_strName
 - CMFCFontInfo [MFC], m_strScript
 ms.assetid: f88329b2-d74e-4921-9441-a3bb6536a049
-ms.openlocfilehash: 2377b7f6afdf78a0e8b7c8ac97a36a4920c06bb8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 930aceb4514195f0e844c35d326b52d9cd8d31fa
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281189"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781330"
 ---
 # <a name="cmfcfontinfo-class"></a>CMFCFontInfo 클래스
 
@@ -65,7 +65,7 @@ class CMFCFontInfo : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에서는의 다양 한 멤버를 사용 하는 방법에 설명 합니다 `CMFCFontInfo` 클래스입니다. 예제에 가져오는 방법을 보여 줍니다는 `CMFCFontInfo` 에서 개체를 `CMFCRibbonFontComboBox`, 및 지역 변수를 액세스 하는 방법. 이 예제는의 일부를 [MSOffice 2007 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는의 다양 한 멤버를 사용 하는 방법에 설명 합니다 `CMFCFontInfo` 클래스입니다. 예제에 가져오는 방법을 보여 줍니다는 `CMFCFontInfo` 에서 개체를 `CMFCRibbonFontComboBox`, 및 지역 변수를 액세스 하는 방법. 이 예제는의 일부를 [MSOffice 2007 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#6](../../mfc/reference/codesnippet/cpp/cmfcfontinfo-class_1.cpp)]
 

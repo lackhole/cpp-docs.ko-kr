@@ -1,6 +1,6 @@
 ---
 title: 메시지 맵 매크로(MFC)
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - AFXWIN/DECLARE_MESSAGE_MAP
 - AFXWIN/BEGIN_MESSAGE_MAP
@@ -28,12 +28,12 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-ms.openlocfilehash: 09c023f6dcbf1fd33a0caac17af75f449d80c509
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: b1cc721ed994ae1c6704011199ac635ee462ded8
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850274"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565541"
 ---
 # <a name="message-map-macros-mfc"></a>메시지 맵 매크로(MFC)
 
@@ -45,7 +45,7 @@ MFC는 메시지 맵을 지원 하기 위해 다음 매크로 제공 합니다.
 |-|-|
 |[DECLARE_MESSAGE_MAP](#declare_message_map)|메시지 맵이 메시지 (클래스 선언에서 사용 해야 합니다) 함수를 매핑할 클래스에서 사용 되는 선언 합니다.|
 |[BEGIN_MESSAGE_MAP](#begin_message_map)|메시지 맵 (클래스 구현에 사용 해야 합니다)의 정의 시작 합니다.|
-|[BEGIN_TEMPLATE_MESSAGE_MAP](#begin_template_interface_map)|단일 템플릿 인수를 포함 하는 클래스 형식의 메시지 맵 정의 시작 합니다. |
+|[BEGIN_TEMPLATE_MESSAGE_MAP](#begin_template_message_map)|단일 템플릿 인수를 포함 하는 클래스 형식의 메시지 맵 정의 시작 합니다. |
 |[END_MESSAGE_MAP](#end_message_map)|메시지 맵 (클래스 구현에 사용 해야 합니다)의 정의 종료 합니다.|
 
 ### <a name="message-mapping-macros"></a>메시지 매핑 매크로
@@ -67,7 +67,7 @@ MFC는 메시지 맵을 지원 하기 위해 다음 매크로 제공 합니다.
 |||
 |-|-|
 |[ON_COMMAND_RANGE](#on_command_range)|함수 매크로에 처음 두 매개 변수에 지정 된 명령 Id의 범위를 처리할 것을 나타냅니다.|
-|[ON_UPDATE_COMMAND_UI_RANGE](#on_update_command_ui_range)|업데이트 처리기는 명령 Id의 처음 두 pa에 지정 된 범위의 처리할 나타냅니다] rameters 매크로에 있습니다.|
+|[ON_UPDATE_COMMAND_UI_RANGE](#on_update_command_ui_range)|업데이트 처리기는 매크로에 처음 두 매개 변수에 지정 된 명령 Id의 범위를 처리할 것을 나타냅니다.|
 |[ON_CONTROL_RANGE](#on_control_range)|컨트롤 매크로에 두 번째 및 세 번째 매개 변수에 지정 된 Id의 범위에서 알림을 처리할 함수를 나타냅니다. 첫 번째 BN_CLICKED 같은 컨트롤 알림 메시지입니다.|
 
 메시지 맵, 메시지 맵 선언 및 경계 매크로 및 메시지 매핑 매크로에 대 한 자세한 내용은 참조 하세요. [메시지 맵](../../mfc/reference/message-maps-mfc.md) 하 고 [메시지 처리 및 매핑 항목](../../mfc/message-handling-and-mapping.md)합니다. 메시지 맵 범위에 대 한 자세한 내용은 참조 하십시오 [메시지 맵 범위에 대 한 처리기](../../mfc/handlers-for-message-map-ranges.md)합니다.
@@ -108,7 +108,7 @@ END_MESSAGE_MAP()
 
 **헤더:** afxwin.h
 
-##  <a name="begin_template_message_map"></a>BEGIN_TEMPLATE_MESSAGE_MAP
+## <a name="begintemplatemessagemap"></a>BEGIN_TEMPLATE_MESSAGE_MAP
 
 단일 템플릿 인수를 포함 하는 클래스 형식의 메시지 맵 정의 시작 합니다.
 
@@ -199,12 +199,12 @@ END_MESSAGE_MAP( )
 ### <a name="syntax"></a>구문
 
 ```
-ON_COMMAND( id, memberFxn )
+ON_COMMAND( commandId, memberFxn )
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*<br/>
+*commandId*<br/>
 명령 ID입니다.
 
 *memberFxn*<br/>
@@ -216,7 +216,7 @@ ON_COMMAND( id, memberFxn )
 
 ON_COMMAND 멤버 함수 호출 명령 대상 개체를 지정된 된 ID 사용 하 여 Windows WM_COMMAND 메시지를 받으면 `memberFxn` 메시지를 처리 합니다.
 
-ON_COMMAND를 사용 하 여 멤버 함수에 명령 중 하나를 매핑합니다. 사용 하 여 [ON_COMMAND_RANGE](#on_command_range) 하나의 멤버 함수에 명령 id의 범위를 매핑합니다. 하나의 메시지 맵 항목에는 지정 된 명령 id와 일치 수 있습니다. 즉, 명령 둘 이상의 처리기에 매핑할 수 없습니다. 자세한 내용 및 예제를 참조 하세요 [메시지 처리 및 매핑 항목](../../mfc/message-handling-and-mapping.md)합니다.
+ON_COMMAND를 사용 하 여 멤버 함수에 명령 중 하나를 매핑합니다. 사용 하 여 [ON_COMMAND_RANGE](#on_command_range) 하나의 멤버 함수에 명령 Id의 범위를 매핑합니다. 메시지 맵 항목을 하나만 지정 된 명령 ID를 일치 시킬 수 있습니다. 즉, 명령 둘 이상의 처리기에 매핑할 수 없습니다. 자세한 내용 및 예제를 참조 하세요 [메시지 처리 및 매핑 항목](../../mfc/message-handling-and-mapping.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -237,12 +237,12 @@ END_MESSAGE_MAP()
 ### <a name="syntax"></a>구문
 
 ```
-ON_COMMAND_EX(id, memberFxn);
+ON_COMMAND_EX(commandId, memberFxn);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*<br/>
+*commandId*<br/>
 명령 ID입니다.
 
 *memberFxn*<br/>
@@ -265,7 +265,7 @@ Header file: afxmsg_.h
 ### <a name="syntax"></a>구문
 
 ```
-ON_CONTROL( wNotifyCode, id, memberFxn )
+ON_CONTROL( wNotifyCode, commandId, memberFxn )
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -273,7 +273,7 @@ ON_CONTROL( wNotifyCode, id, memberFxn )
 *wNotifyCode*<br/>
 컨트롤의 알림 코드입니다.
 
-*ID*<br/>
+*commandId*<br/>
 명령 ID입니다.
 
 *memberFxn*<br/>
@@ -356,7 +356,7 @@ LRESULT CMyWnd2::OnMyMessage(WPARAM wParam, LPARAM lParam)
 ### <a name="syntax"></a>구문
 
 ```
-ON_OLECMD( pguid, olecmdid, id )
+ON_OLECMD( pguid, olecmdid, commandId )
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -367,7 +367,7 @@ ON_OLECMD( pguid, olecmdid, id )
 *olecmdid*<br/>
 OLE 명령 식별자입니다.
 
-*ID*<br/>
+*commandId*<br/>
 메뉴 ID, 도구 모음 ID, 단추 ID 또는 다른 ID 리소스 또는 명령을 실행 하는 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -575,12 +575,12 @@ ON_THREAD_MESSAGE 경우 ON_MESSAGE 대신 사용 해야 합니다는 `CWinThrea
 ### <a name="syntax"></a>구문
 
 ```
-ON_UPDATE_COMMAND_UI( id, memberFxn )
+ON_UPDATE_COMMAND_UI( messageId, memberFxn )
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*ID*<br/>
+*messageId*<br/>
 메시지 ID입니다.
 
 *memberFxn*<br/>

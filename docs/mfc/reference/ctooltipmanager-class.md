@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CTooltipManager [MFC], SetTooltipText
 - CTooltipManager [MFC], UpdateTooltips
 ms.assetid: c71779d7-8b6e-47ef-8500-d4552731fe86
-ms.openlocfilehash: 7ca0c657872bb2a3c56c9406a88f8c674cb46938
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e8b88f2722f5a4379276f13c2ef159aa4d120533
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260636"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776507"
 ---
 # <a name="ctooltipmanager-class"></a>CTooltipManager 클래스
 
@@ -156,7 +156,7 @@ void SetTooltipParams(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `SetTooltipParams` 메서드는 `CTooltipManager` 클래스입니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../visual-cpp-samples.md)의 일부입니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `SetTooltipParams` 메서드는 `CTooltipManager` 클래스입니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_DrawClient#11](../../mfc/reference/codesnippet/cpp/ctooltipmanager-class_1.cpp)]
 

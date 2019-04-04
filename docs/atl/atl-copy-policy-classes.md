@@ -8,12 +8,12 @@ helpviewer_keywords:
 - _Copy class
 - _CopyInterface class
 ms.assetid: 06704b68-d318-4c5d-a65b-71457fe9d00d
-ms.openlocfilehash: 24d81506f1518f980576899a4a104bbfdc0a1438
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 73bec31b4ae140797c85a06ee7c5023c9e0c4446
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296347"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776962"
 ---
 # <a name="atl-copy-policy-classes"></a>ATL 복사 정책 클래스
 
@@ -62,7 +62,7 @@ ATL의 형태로 두 복사 정책 클래스를 제공 합니다 `_Copy` 고 `_C
 
 ## <a name="custom-implementations"></a>사용자 지정 구현
 
-일반적으로 다른 유형의 (즉, 데이터 형식 간 변환)를 복사 하기 위한 고유한 복사 정책 클래스를 정의 해야 합니다. 사용자 지정 복사 정책 클래스의 몇 가지 예제를 VCUE_Copy.h 및 VCUE_CopyString.h에서 파일 참조를 [ATLCollections](../visual-cpp-samples.md) 샘플입니다. 두 템플릿 복사 정책 클래스를 포함 하는 이러한 파일 `GenericCopy` 및 `MapCopy`, 및의 특수화 `GenericCopy` 다른 데이터 형식에 대 한 합니다.
+일반적으로 다른 유형의 (즉, 데이터 형식 간 변환)를 복사 하기 위한 고유한 복사 정책 클래스를 정의 해야 합니다. 사용자 지정 복사 정책 클래스의 몇 가지 예제를 VCUE_Copy.h 및 VCUE_CopyString.h에서 파일 참조를 [ATLCollections](../overview/visual-cpp-samples.md) 샘플입니다. 두 템플릿 복사 정책 클래스를 포함 하는 이러한 파일 `GenericCopy` 및 `MapCopy`, 및의 특수화 `GenericCopy` 다른 데이터 형식에 대 한 합니다.
 
 ### <a name="genericcopy"></a>GenericCopy
 
@@ -81,4 +81,4 @@ VCUE_Copy.h이이 클래스의 다음 특수화도 포함 되어 있습니다: `
 ## <a name="see-also"></a>참고자료
 
 [C++ 표준 라이브러리 기반 컬렉션 구현](../atl/implementing-an-stl-based-collection.md)<br/>
-[ATLCollections 샘플](../visual-cpp-samples.md)
+[ATLCollections 샘플](../overview/visual-cpp-samples.md)

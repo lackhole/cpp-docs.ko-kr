@@ -1,19 +1,19 @@
 ---
-title: Visual Studio에서 속성을 빌드하고 c + + 컴파일러를 설정 합니다.
-description: C + + 컴파일러 및 링커 옵션과 기타 빌드 설정을 변경 하려면 Visual Studio IDE를 사용 합니다.
-ms.date: 12/10/2018
+title: Visual Studio에서 속성을 빌드하고 C++ 컴파일러를 설정 합니다.
+description: C++ 컴파일러 및 링커 옵션과 기타 빌드 설정을 변경 하려면 Visual Studio IDE를 사용 합니다.
+ms.date: 03/27/2019
 helpviewer_keywords:
 - project properties [C++], modifying
 - properties [C++]
 - Visual C++ projects, properties
 - projects [C++], properties
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-ms.openlocfilehash: 55adb6dc91919bda9c2827a89e5de536667085c1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: ab5456bfc8a1b8305813f4ee4a4399091de15aee
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827887"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58564916"
 ---
 # <a name="set-compiler-and-build-properties"></a>컴파일러 설정 및 빌드 속성
 
@@ -51,11 +51,11 @@ IDE에서 프로젝트를 빌드하는 데 필요한 모든 정보는 *속성*�
 - [디버깅 준비: Visual c + + 프로젝트 형식](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
 - [Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)
 
-## <a name="c-compiler-and-linker-options"></a>C + + 컴파일러 및 링커 옵션
+## <a name="c-compiler-and-linker-options"></a>C++ 컴파일러 및 링커 옵션
 
-C + + 컴파일러 및 링커 옵션은 아래에 **C/c + +** 하 고 **링커** 노드 아래의 왼쪽된 창에서 **구성 속성**합니다. 이러한 컴파일러에 전달 되는 명령줄 옵션에 직접 변환 합니다. 특정 옵션에 대 한 설명서를 읽으려면 누릅니다 가운데 창에서 옵션을 선택 **F1**합니다. 또는에서 모든 옵션에 대 한 설명서를 찾아볼 수 있습니다 [MSVC 컴파일러 옵션](reference/compiler-options.md) 하 고 [MSVC 링커 옵션](reference/linker-options.md)합니다. 
+C++ 컴파일러 및 링커 옵션은 아래에 **C/C++** 하 고 **링커** 노드 아래의 왼쪽된 창에서 **구성 속성**합니다. 이러한 컴파일러에 전달 되는 명령줄 옵션에 직접 변환 합니다. 특정 옵션에 대 한 설명서를 읽으려면 누릅니다 가운데 창에서 옵션을 선택 **F1**합니다. 또는에서 모든 옵션에 대 한 설명서를 찾아볼 수 있습니다 [MSVC 컴파일러 옵션](reference/compiler-options.md) 하 고 [MSVC 링커 옵션](reference/linker-options.md)합니다. 
 
-합니다 **속성 페이지** 대화 상자에는 현재 프로젝트에 관련 된 속성 페이지를 표시 합니다. 예를 들어, 프로젝트에 .idl 파일이 없는 경우 MIDL 속성 페이지가 표시되지 않습니다. 각 속성 페이지 설정에 대 한 자세한 내용은 참조 [속성 페이지 (c + +)](reference/property-pages-visual-cpp.md)합니다. 
+합니다 **속성 페이지** 대화 상자에는 현재 프로젝트에 관련 된 속성 페이지를 표시 합니다. 예를 들어, 프로젝트에 .idl 파일이 없는 경우 MIDL 속성 페이지가 표시되지 않습니다. 각 속성 페이지 설정에 대 한 자세한 내용은 참조 [속성 페이지 (C++)](reference/property-pages-visual-cpp.md)합니다. 
 
 ## <a name="directory-and-path-values"></a>디렉터리 및 경로 값
 
@@ -65,23 +65,21 @@ MSBuild는 디렉터리 및 경로 포함 하는 특정 문자열 값에 대 한
 
 ![프로젝트 속성 페이지](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 
-모든 사용 가능한 매크로의 값을 보려면 속성 편집기를 사용할 수 있습니다. 매크로는 이 문서의 뒷부분에 나오는 [속성 페이지 매크로](#bkmkPropertiesVersusMacros) 섹션에서 설명됩니다.)
+모든 사용 가능한 매크로의 값을 보려면 속성 편집기를 사용할 수 있습니다.
 
 ### <a name="predefined-macros"></a>미리 정의된 매크로
 
 *글로벌 매크로*<br/>
-프로젝트 구성의 모든 항목에 적용됩니다. 
-  `$(name)` 구문이 있습니다. 전역 매크로의 예제는 `$(VCInstallDir)`이며, Visual Studio 설치의 루트 디렉터리에 저장됩니다. 전역 매크로는 MSBuild의 `PropertyGroup`에 해당합니다.
+프로젝트 구성의 모든 항목에 적용됩니다. `$(name)` 구문이 있습니다. 전역 매크로의 예제는 `$(VCInstallDir)`이며, Visual Studio 설치의 루트 디렉터리에 저장됩니다. 전역 매크로는 MSBuild의 `PropertyGroup`에 해당합니다.
 
 *항목 매크로*<br/>
-
-  `%(name)` 구문이 있습니다. 파일에 대한 항목 매크로는 해당 파일에만 적용됩니다. 예를 들어, `%(AdditionalIncludeDirectories)`를 사용하여 특정 파일에만 적용되는 포함 디렉터리를 지정하고 포함할 수 있습니다. 이러한 종류의 항목 매크로는 MSBuild의 `ItemGroup` 메타데이터에 해당합니다. 프로젝트 구성의 컨텍스트에서 사용되면 항목 매크로는 특정 형식의 모든 파일에 적용됩니다. 예를 들어 C/C++ **전처리기 정의** 구성 속성은 프로젝트의 모든 .cpp 파일에 적용되는 `%(PreprocessorDefinitions)` 항목 매크로를 사용할 수 있습니다. 이러한 종류의 항목 매크로는 MSBuild의 `ItemDefinitionGroup` 메타데이터에 해당합니다. 자세한 내용은 [항목 정의](/visualstudio/msbuild/item-definitions)를 참조하세요.
+`%(name)` 구문이 있습니다. 파일에 대한 항목 매크로는 해당 파일에만 적용됩니다. 예를 들어, `%(AdditionalIncludeDirectories)`를 사용하여 특정 파일에만 적용되는 포함 디렉터리를 지정하고 포함할 수 있습니다. 이러한 종류의 항목 매크로는 MSBuild의 `ItemGroup` 메타데이터에 해당합니다. 프로젝트 구성의 컨텍스트에서 사용되면 항목 매크로는 특정 형식의 모든 파일에 적용됩니다. 예를 들어 C/C++ **전처리기 정의** 구성 속성은 프로젝트의 모든 .cpp 파일에 적용되는 `%(PreprocessorDefinitions)` 항목 매크로를 사용할 수 있습니다. 이러한 종류의 항목 매크로는 MSBuild의 `ItemDefinitionGroup` 메타데이터에 해당합니다. 자세한 내용은 [항목 정의](/visualstudio/msbuild/item-definitions)를 참조하세요.
 
 ### <a name="user-defined-macros"></a>사용자 정의 매크로
 
 *사용자 정의 매크로*를 만들어 프로젝트 빌드에서 변수로 사용할 수 있습니다. 예를 들어, 사용자 지정 빌드 단계 또는 사용자 지정 빌드 도구에 가치를 제공하는 사용자 정의 매크로를 만들 수 있습니다. 사용자 정의 매크로는 이름/값 쌍입니다. 프로젝트 파일에서 **$(**<em>name</em>**)** 표기법을 사용하여 값에 액세스합니다.
 
-사용자 정의 매크로는 속성 시트에 저장됩니다. 프로젝트 속성 시트 기호가 없는 경우 아래 단계에 따라 하나를 만들 수 있습니다 [공유 또는 resuse Visual Studio c + + 프로젝트 설정](#bkmkPropertySheets)합니다.
+사용자 정의 매크로는 속성 시트에 저장됩니다. 프로젝트 속성 시트 기호가 없는 경우 아래 단계에 따라 하나를 만들 수 있습니다 [공유 하거나 다시 사용할 수 있도록 Visual Studio 프로젝트 설정을](create-reusable-property-configurations.md)합니다.
 
 #### <a name="to-create-a-user-defined-macro"></a>사용자 정의 매크로를 만들려면
 
@@ -130,17 +128,17 @@ MSVC 컴파일러 (cl.exe)는 특정 환경 변수, 특히: LIB, LIBPATH, 경로
 
 ## <a name="in-this-section"></a>단원 내용
 
-[공유 또는 resuse Visual Studio 프로젝트 설정](create-reusable-property-configurations.md)<br/>
+[Visual Studio 프로젝트 설정 공유 또는 재사용](create-reusable-property-configurations.md)<br/>
 공유할 수 있는 사용자 지정 빌드 설정 또는 resused.props 파일을 만드는 방법입니다.
 
 [프로젝트 속성 상속](project-property-inheritance.md)<br/>
 .Props,.targets,.vcxproj 파일 및 환경 변수는 빌드 프로세스의 평가 순서를 설명 합니다.
 
-[속성 및 대상을 프로젝트 파일을 변경 하지 않고 수정](modify-project-properties-without-changing-project-file.md)<br/>
+[프로젝트 파일을 변경하지 않고 속성 및 대상 수정](modify-project-properties-without-changing-project-file.md)<br/>
 프로젝트 파일을 수정할 필요 없이 임시 빌드 설정을 만드는 방법입니다. 
 
 ## <a name="see-also"></a>참고자료
 
-[C + +-visual Studio 프로젝트](creating-and-managing-visual-cpp-projects.md)<br/>
+[Visual Studio 프로젝트 - C++](creating-and-managing-visual-cpp-projects.md)<br/>
 [.vcxproj 및 .props 파일 구조](reference/vcxproj-file-structure.md)<br/>
 [속성 페이지 XML 파일](reference/property-page-xml-files.md)<br/>

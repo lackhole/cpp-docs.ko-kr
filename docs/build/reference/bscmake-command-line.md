@@ -4,14 +4,17 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - BSCMAKE, command line
 ms.assetid: 8006e8cf-8bfe-4c23-868a-b0a25e6bbf0f
-ms.openlocfilehash: 7724069a401aadcdb2e3e8487dc85273dac357fc
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 61035ce0f211e6a474bb83fc7de7d95b4a29cf3d
+ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818650"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508769"
 ---
 # <a name="bscmake-command-line"></a>BSCMAKE 명령줄
+
+> [!WARNING]
+> BSCMAKE는 Visual Studio와 함께 설치되지만 더 이상 IDE에서 사용되지 않습니다. Visual Studio 2008부터 찾아보기 및 기호 정보는 자동으로 솔루션 폴더의 SQL Server .sdf 파일에 저장됩니다.
 
 BSCMAKE를 실행 하려면 다음 명령줄 구문을 사용 합니다.
 

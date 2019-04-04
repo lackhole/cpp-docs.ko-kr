@@ -1,6 +1,6 @@
 ---
 title: fpos 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - iosfwd/std::fpos
 - iosfwd/std::fpos::seekpos
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - std::fpos [C++], seekpos
 - std::fpos [C++], state
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
-ms.openlocfilehash: bf15cdf0ec4df1301b074ba2ae179dee3619d30d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 78b136d72067fa5fff58e8a7acc044fb4e1a409e
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564205"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565068"
 ---
 # <a name="fpos-class"></a>fpos 클래스
 
@@ -221,7 +221,7 @@ fpos<Statetype>& operator+=(streamoff _Off);
 
 `operator+=` 사용에 대한 샘플은 [operator!=](#op_neq)을 참조하세요.
 
-## <a name="fpos__operator-"></a>  fpos::operator-
+## <a name="operator-"></a>  fpos::operator-
 
 파일 위치 표시기를 감소시킵니다.
 
@@ -247,7 +247,7 @@ fpos<Statetype> operator-(streamoff _Off) const;
 
 `operator-` 사용에 대한 샘플은 [operator!=](#op_neq)을 참조하세요.
 
-## <a name="fpos__operator-_eq"></a>  fpos::operator-=
+## <a name="operator-_eq"></a>  fpos::operator-=
 
 파일 위치 표시기를 감소시킵니다.
 

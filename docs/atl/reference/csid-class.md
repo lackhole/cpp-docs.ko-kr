@@ -1,6 +1,6 @@
 ---
 title: CSid 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CSid
 - ATLSECURITY/ATL::CSid
@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSid class
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-ms.openlocfilehash: 02b7cbb9e66e1e8297699503fc510247efed1629
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 87f889a079b1c55d82f547230a1917540de276af
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301898"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770505"
 ---
 # <a name="csid-class"></a>CSid 클래스
 
@@ -86,8 +86,8 @@ class CSid
 |-|-|
 |[operator ==](#operator_eq_eq)|두 보안 설명자 개체가 같은지를 테스트합니다.|
 |[operator !=](#operator_neq)|두 보안 설명자 개체가 다른 지를 테스트합니다.|
-|[operator \<](#operator_lt_)|두 보안 설명자 개체의 상대 값을 비교합니다.|
-|[operator >](#operator_gt_)|두 보안 설명자 개체의 상대 값을 비교합니다.|
+|[operator \<](#operator_lt)|두 보안 설명자 개체의 상대 값을 비교합니다.|
+|[operator >](#operator_gt)|두 보안 설명자 개체의 상대 값을 비교합니다.|
 |[operator \<=](#operator_lt__eq)|두 보안 설명자 개체의 상대 값을 비교합니다.|
 |[operator >=](#operator_gt__eq)|두 보안 설명자 개체의 상대 값을 비교합니다.|
 
@@ -119,7 +119,7 @@ LPCTSTR AccountName() const throw(...);
 
 이 메서드는 지정 된 이름을 찾으려고 `SID` (보안 식별자)입니다. 전체 세부 정보를 참조 하세요 [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida)합니다.
 
-경우에 대 한 계정 이름이 합니다 `SID` 찾을 수 있습니다 `AccountName` 빈 문자열을 반환 합니다. 이 메서드 이름을 찾는 방지 네트워크 시간 제한 한 경우 발생할 수 있습니다. 이름이 없는 해당 계정에 로그온을 같은 보안 식별자에 발생 `SID` 로그온 세션을 식별 하는 합니다.
+경우에 대 한 계정 이름이 합니다 `SID` 찾을 수 있습니다 `AccountName` 빈 문자열을 반환 합니다. 이 메서드 이름을 찾는 방지 네트워크 시간 제한 한 경우 발생할 수 있습니다. 또한 발생 해당 계정 이름이 없는 보안 식별자에 대 한 예는 `SID` 로그인 세션을 식별 하는 합니다.
 
 ##  <a name="csid"></a>  CSid::CSid
 
@@ -210,7 +210,7 @@ LPCTSTR Domain() const throw(...);
 
 이 메서드는 지정 된 이름을 찾으려고 `SID` (보안 식별자)입니다. 전체 세부 정보를 참조 하세요 [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida)합니다.
 
-경우에 대 한 계정 이름이 합니다 `SID` 찾을 수 있습니다 `Domain` 도메인을 빈 문자열로 반환 합니다. 이 메서드 이름을 찾는 방지 네트워크 시간 제한 한 경우 발생할 수 있습니다. 이름이 없는 해당 계정에 로그온을 같은 보안 식별자에 발생 `SID` 로그온 세션을 식별 하는 합니다.
+경우에 대 한 계정 이름이 합니다 `SID` 찾을 수 있습니다 `Domain` 도메인을 빈 문자열로 반환 합니다. 이 메서드 이름을 찾는 방지 네트워크 시간 제한 한 경우 발생할 수 있습니다. 또한 발생 해당 계정 이름이 없는 보안 식별자에 대 한 예는 `SID` 로그인 세션을 식별 하는 합니다.
 
 ##  <a name="equalprefix"></a>  CSid::EqualPrefix
 
@@ -574,7 +574,7 @@ SID_NAME_USE SidNameUse() const throw();
 
 ## <a name="see-also"></a>참고자료
 
-[보안 샘플](../../visual-cpp-samples.md)<br/>
+[보안 샘플](../../overview/visual-cpp-samples.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)<br/>
 [연산자](../../atl/reference/atl-operators.md)

@@ -1,6 +1,6 @@
 ---
 title: move_iterator 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - iterator/std::move_iterator
 - iterator/std::move_iterator::iterator_type
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::move_iterator [C++], reference
 - std::move_iterator [C++], base
 ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
-ms.openlocfilehash: c9ff9385d43ac1c53f91a548ea01c04c1c67dc18
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3e2e62946325c082e761b6997ae584419175f8fe
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656139"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565056"
 ---
 # <a name="moveiterator-class"></a>move_iterator 클래스
 
@@ -175,7 +175,7 @@ move_iterator& operator+=(difference_type _Off);
 
 추가 연산자 *_Off* 저장 된 반복기입니다. 그런 다음 `*this`를 반환합니다.
 
-## <a name="move_iterator__operator-_eq"></a>  move_iterator::operator-=
+## <a name="operator-_eq"></a>  move_iterator::operator-=
 
 지정된 수의 이전 요소를 이동합니다. 이 연산자는 저장된 반복기에서 오프셋을 뺍니다.
 
@@ -234,7 +234,7 @@ reference operator[](difference_type _Off) const;
 
 연산자가 `(reference)*(*this + _Off)`를 반환합니다.
 
-## <a name="move_iterator__operator--"></a>  move_iterator::operator--
+## <a name="operator--"></a>  move_iterator::operator--
 
 사전 및 사후 감소 멤버 연산자는 저장된 반복기에서 감소를 수행합니다.
 
@@ -251,7 +251,7 @@ move_iterator operator--();
 
 두 번째(사후 감소) 연산자가 `*this`의 복사본을 만들고 `--*this`를 계산합니다. 그런 다음 복사본을 반환합니다.
 
-## <a name="move_iterator__operator-"></a>  move_iterator::operator-
+## <a name="operator-"></a>  move_iterator::operator-
 
 저장된 반복기를 단계적으로 감소시키고 표시된 값을 반환합니다.
 

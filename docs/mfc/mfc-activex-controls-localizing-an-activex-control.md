@@ -10,12 +10,12 @@ helpviewer_keywords:
 - LocaleID ambient property [MFC]
 - LOCALIZE sample [MFC]
 ms.assetid: a44b839a-c652-4ec5-b824-04392708a5f9
-ms.openlocfilehash: 4e9ef9a2f79bda5d41c01984f063622b3b73fb51
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 13c8ff545763017b01685e012ab2d497eaf7084a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268215"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767550"
 ---
 # <a name="mfc-activex-controls-localizing-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤 지역화
 
@@ -28,7 +28,7 @@ ms.locfileid: "57268215"
 
 일반적으로 ActiveX 컨트롤 LocaleID 앰비언트 속성에 해당 로캘을 기반 항상 해야 합니다. 이렇게 하는 데는 다음과 같은 세 가지 방법이 있습니다.
 
-- LocaleID 앰비언트 속성의 현재 값을 기반으로 요청 시 항상 리소스를 로드 합니다. MFC ActiveX 컨트롤 샘플 [LOCALIZE](../visual-cpp-samples.md) 이 전략을 사용 합니다.
+- LocaleID 앰비언트 속성의 현재 값을 기반으로 요청 시 항상 리소스를 로드 합니다. MFC ActiveX 컨트롤 샘플 [LOCALIZE](../overview/visual-cpp-samples.md) 이 전략을 사용 합니다.
 
 - 첫 번째 컨트롤의 인스턴스가 생성 앰비언트 LocaleID 속성을 기반으로 하는 경우 리소스를 로드 하 고 다른 모든 인스턴스에 대 한 이러한 리소스를 사용 합니다. 이 문서에서는이 전략을 보여 줍니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "57268215"
     > [!NOTE]
     >  이 컨트롤에 대 한 작동 하지만 LocaleID 앰비언트 속성이 변경 되 면 런타임 DLL 동적으로 자체 리소스를 업데이트 하지는 않습니다. 또한 ActiveX 컨트롤 런타임 Dll 스레드 로캘을 사용 하 여 해당 리소스에 대 한 로캘을 결정 합니다.
 
-이 문서의 나머지 부분에서는 두 가지 지역화 방법을 설명합니다. 첫 번째 전략 [컨트롤의 프로그래밍 기능 인터페이스 보여지는](#_core_localizing_your_control.92.s_programmability_interface) (속성, 메서드 및 이벤트의 이름). 두 번째 전략 [컨트롤의 사용자 인터페이스를 보여지는](#_core_localizing_the_control.92.s_user_interface), 컨테이너의 앰비언트 LocaleID 속성을 사용 합니다. 컨트롤 지역화의 데모를 보려면 MFC ActiveX 컨트롤 샘플을 참조 하세요 [LOCALIZE](../visual-cpp-samples.md)합니다.
+이 문서의 나머지 부분에서는 두 가지 지역화 방법을 설명합니다. 첫 번째 전략 [컨트롤의 프로그래밍 기능 인터페이스 보여지는](#_core_localizing_your_control.92.s_programmability_interface) (속성, 메서드 및 이벤트의 이름). 두 번째 전략 [컨트롤의 사용자 인터페이스를 보여지는](#_core_localizing_the_control.92.s_user_interface), 컨테이너의 앰비언트 LocaleID 속성을 사용 합니다. 컨트롤 지역화의 데모를 보려면 MFC ActiveX 컨트롤 샘플을 참조 하세요 [LOCALIZE](../overview/visual-cpp-samples.md)합니다.
 
 ##  <a name="_core_localizing_your_control.92.s_programmability_interface"></a> 컨트롤의 프로그래밍 인터페이스를 지역화합니다.
 
@@ -88,7 +88,7 @@ SAMPLEFR 속성 이름을 변경 합니다. 사용 하 여 MKTYPLIB와 프랑스
 
 [!code-cpp[NVC_MFC_AxLoc#3](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_3.cpp)]
 
-Note switch 문의 보다 전문화 된 지역화를 제공할 경우 각 보조 언어 ID를 확인할 수 있었습니다. 이 함수의 데모를 참조 하세요. 합니다 `GetResourceHandle` 함수에서 MFC ActiveX 컨트롤 샘플 [LOCALIZE](../visual-cpp-samples.md)합니다.
+Note switch 문의 보다 전문화 된 지역화를 제공할 경우 각 보조 언어 ID를 확인할 수 있었습니다. 이 함수의 데모를 참조 하세요. 합니다 `GetResourceHandle` 함수에서 MFC ActiveX 컨트롤 샘플 [LOCALIZE](../overview/visual-cpp-samples.md)합니다.
 
 호출할 수 있는 로드 되 면 컨트롤 먼저 자체 컨테이너로 [COleControl::AmbientLocaleID](../mfc/reference/colecontrol-class.md#ambientlocaleid) 로캘 ID를 검색 컨트롤에 반환 된 로캘 ID 값을 전달한 수는 `GetLocalizedResourceHandle` 적절 한 리소스 라이브러리를 로드 하는 함수입니다. 컨트롤이 있는 경우 결과 핸들을 전달 해야 하 [AfxSetResourceHandle](../mfc/reference/application-information-and-management.md#afxsetresourcehandle):
 

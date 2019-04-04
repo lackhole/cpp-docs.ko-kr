@@ -11,12 +11,12 @@ helpviewer_keywords:
 - POINT structure
 - CPoint class
 ms.assetid: a6d4db93-35cc-444d-9221-c3e160f6edaa
-ms.openlocfilehash: cab7aef6fab025174dedb0bf75ee43c49ead0d88
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 85e469e1f52a22917580ce8616aaba5ff57d08ed
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740396"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768031"
 ---
 # <a name="cpoint-class"></a>CPoint 클래스
 
@@ -90,12 +90,10 @@ CPoint(LPARAM dwPoint) throw();
 ### <a name="parameters"></a>매개 변수
 
 *initX*<br/>
-
-  `x`의 `CPoint` 멤버 값을 지정합니다.
+`x`의 `CPoint` 멤버 값을 지정합니다.
 
 *initY*<br/>
-
-  `y`의 `CPoint` 멤버 값을 지정합니다.
+`y`의 `CPoint` 멤버 값을 지정합니다.
 
 *initPt*<br/>
 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 나 `CPoint` 초기화 하는 데 사용 하는 값을 지정 하는 `CPoint`합니다.
@@ -344,7 +342,7 @@ A `CSize` 두 점 사이의 차이 나타내는 `CPoint` 크기의 부정 만큼
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 MDI](../../overview/visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [POINT 구조체](/windows/desktop/api/windef/ns-windef-tagpoint)<br/>
 [CRect 클래스](../../atl-mfc-shared/reference/crect-class.md)<br/>

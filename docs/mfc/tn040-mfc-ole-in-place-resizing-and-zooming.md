@@ -9,12 +9,12 @@ helpviewer_keywords:
 - zooming and in-place activation
 - in-place activation, zooming and resizing
 ms.assetid: 4d7859bd-0b2e-4254-be62-2735cecf02c6
-ms.openlocfilehash: e2f6c6acfefaae877790fd2cc0926bc2474c79b8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c2cb25388184ac969bec7c01d8077a458c03a03a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283763"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775285"
 ---
 # <a name="tn040-mfcole-in-place-resizing-and-zooming"></a>TN040: MFC/OLE 내부 크기 조정 및 확대/축소
 
@@ -40,7 +40,7 @@ ms.locfileid: "57283763"
 
 현재 확대/축소 비율을 호출 하 여 확인할 수 있습니다 `COleServerDoc::GetZoomFactor`합니다. 문서 전체 활성 없을 때이 호출 하면 항상 100% 확대/축소 비율 (또는 1:1 비율) 결과가 발생 합니다. 전체 활성 100% 이외의 반환 하는 동안 호출 합니다.
 
-올바르게 확대/축소의 예로 MFC OLE 샘플을 참조 하세요 [HIERSVR](../visual-cpp-samples.md)합니다. 텍스트를 표시 하 고 텍스트를 일반적으로 (힌트, 인쇄 규칙, 디자인 너비 및 높이 모든 중요 복잡 해질) 선형으로 확장 되지 않습니다 한다는 사실에 복잡 HIERSVR에서 확대/축소 합니다. 그러나 HIERSVR 올바르게 확대/축소를 구현 하는 것에 대 한 적절 한 참조 이며 따라서 MFC 자습서 [SCRIBBLE](../visual-cpp-samples.md) (7 단계).
+올바르게 확대/축소의 예로 MFC OLE 샘플을 참조 하세요 [HIERSVR](../overview/visual-cpp-samples.md)합니다. 텍스트를 표시 하 고 텍스트를 일반적으로 (힌트, 인쇄 규칙, 디자인 너비 및 높이 모든 중요 복잡 해질) 선형으로 확장 되지 않습니다 한다는 사실에 복잡 HIERSVR에서 확대/축소 합니다. 그러나 HIERSVR 올바르게 확대/축소를 구현 하는 것에 대 한 적절 한 참조 이며 따라서 MFC 자습서 [SCRIBBLE](../overview/visual-cpp-samples.md) (7 단계).
 
 `COleServerDoc::GetZoomFactor` 다른 메트릭 사용할 수 있는 컨테이너 또는 구현에서의 수를 기준으로 확대/축소 비율을 결정 하 `COleServerItem` 고 `COleServerDoc` 클래스입니다. 즉, 현재 확대/축소 비율을 다음 수식에 의해 결정 됩니다.
 

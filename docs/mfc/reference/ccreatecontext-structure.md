@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CCreateContext structure [MFC]
 ms.assetid: 337a0e44-d910-49a8-afc0-c7207666a9dc
-ms.openlocfilehash: f84c0da7530a774ebe2b33aea0bddc5b0bf0fe17
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 795b20cba41eeca8cc1a32e312edf065b718f364
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326350"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768488"
 ---
 # <a name="ccreatecontext-structure"></a>CCreateContext 구조체
 
@@ -56,7 +56,7 @@ struct CCreateContext
 
 일반적으로 프레임 워크 기본값을 사용 하는 경우 무시 해도 `CCreateContext`합니다. 고급 수정, Microsoft Foundation Class 라이브러리 소스 코드 또는 VIEWEX와 같은 샘플 프로그램에 사용 하려는 경우를 안내 합니다. 필수 매개 변수를 잊은 경우 framework 어설션이 알려줍니다 있습니다 하지 않았습니다.
 
-에 대 한 자세한 `CCreateContext`, MFC 샘플을 참조 하세요 [VIEWEX](../../visual-cpp-samples.md)합니다.
+에 대 한 자세한 `CCreateContext`, MFC 샘플을 참조 하세요 [VIEWEX](../../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="requirements"></a>요구 사항
 

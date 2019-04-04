@@ -1,21 +1,21 @@
 ---
 title: 컴파일러 오류 C2059
-ms.date: 11/04/2016
+ms.date: 03/26/2019
 f1_keywords:
 - C2059
 helpviewer_keywords:
 - C2059
 ms.assetid: 2be4eb39-3f37-4b32-8e8d-75835e07c78a
-ms.openlocfilehash: dec5f7a9eb91603b129cfb589352b6ee2579e553
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 2fb2aa86a1fd8f8e0710d787682fdd44abd941ec
+ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521793"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508834"
 ---
 # <a name="compiler-error-c2059"></a>컴파일러 오류 C2059
 
-구문 오류: 'token'
+syntax error : 'token'
 
 토큰 구문 오류가 발생합니다.
 
@@ -33,7 +33,18 @@ ms.locfileid: "51521793"
 
 오류 메시지 바로 뒤에 오는 기호에서 발생 하는 경우는 `typedef` 변수인 변수의 소스 코드에 정의 되어 있는지 확인 합니다.
 
-C2059 오류가 발생할 수 있으므로, nothing으로 계산 되는 기호 때 **/D** `symbol` **=** 컴파일하는 데 사용 됩니다.
+C2059 전처리기 기호 이름을 식별자로 다시 사용할 때 발생 합니다. 다음 예에서 컴파일러는 다음과 같이 표시 됩니다. `DIGITS.ONE` 번호 1로 유효 하지 않은 열거형 요소 이름으로:
+
+```cpp
+#define ONE 1
+
+enum class DIGITS {
+    ZERO,
+    ONE // error C2059
+};
+```
+
+C2059 오류가 발생할 수 있으므로, nothing으로 계산 되는 기호 때 **/D**_기호_ **=** 컴파일하는 데 사용 됩니다.
 
 ```
 // C2059a.cpp

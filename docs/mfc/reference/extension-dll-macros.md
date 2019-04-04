@@ -1,15 +1,15 @@
 ---
 title: Dll을 관리 하기 위한 함수와 매크로
-ms.date: 04/03/2017
+ms.date: 03/27/2019
 helpviewer_keywords:
 - module macros in MFC
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
-ms.openlocfilehash: 863350067c39fbc9cdb3d9d3a6c4448348d977de
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: b27f8763b60dc7ce3ee074cad1365e7e1de3a7e6
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328768"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565427"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Dll을 관리 하기 위한 함수와 매크로
 
@@ -23,7 +23,7 @@ ms.locfileid: "58328768"
 |[AfxGetStaticModuleState](#afxgetstaticmodulestate)|초기화 전에 및/또는 정리 후 이전 모듈 상태를 복원 하려면 모듈 상태를 설정 합니다.|
 |[AfxInitExtensionModule](#afxinitextensionmodule)|DLL을 초기화합니다.|
 |[AfxSetAmbientActCtx](#afxsetambientactctx)|MFC의 WinSxS 동작에 영향을 주는 모듈별 상태 플래그를 설정 합니다.|
-|[AfxTermExtensionModule](#afxtermextensionmodule)|MFC 정리 MFC 확장명 DLL 때 허용 각 프로세스 DLL에서 분리 합니다.|
+|[AfxTermExtensionModule](#afxtermextensionmodule)|MFC를 DLL에서 각 프로세스 분리 하는 경우 MFC 확장명 DLL 정리할 수 있습니다.|
 
 ## <a name="afx_ext_class"></a>  AFX_EXT_CLASS
 
@@ -79,7 +79,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ));
 MFC 모듈 상태에 대 한 자세한 내용은 "관리는 데이터의 MFC 모듈 상태"를 참조 하세요 [새 문서 만들기, Windows, 뷰와](../creating-new-documents-windows-and-views.md) 하 고 [기술 참고 58](../tn058-mfc-module-state-implementation.md)합니다.
 
 > [!NOTE]
->  사용 하 여 MFC 활성화 컨텍스트는 어셈블리를 만들 때 [AfxWinInit](#afxwininit) 컨텍스트를 만들기 위해 및 `AFX_MANAGE_STATE` 활성화 및 비활성화 합니다. 또한 `AFX_MANAGE_STATE` 사용자 DLL에서 선택 하는 적절 한 활성화 컨텍스트에서 실행 되도록 MFC 코드를 허용 하기 위해 정적 MFC 라이브러리와 MFC Dll의 경우 사용 됩니다. 자세한 내용은 [MFC 모듈 상태의 활성화 컨텍스트 지원](../support-for-activation-contexts-in-the-mfc-module-state.md)합니다.
+>  사용 하 여 MFC 활성화 컨텍스트는 어셈블리를 만들 때 [AfxWinInit](application-information-and-management.md#afxwininit) 컨텍스트를 만들기 위해 및 `AFX_MANAGE_STATE` 활성화 및 비활성화 합니다. 또한 `AFX_MANAGE_STATE` 사용자 DLL에서 선택 하는 적절 한 활성화 컨텍스트에서 실행 되도록 MFC 코드를 허용 하기 위해 정적 MFC 라이브러리와 MFC Dll의 경우 사용 됩니다. 자세한 내용은 [MFC 모듈 상태의 활성화 컨텍스트 지원](../support-for-activation-contexts-in-the-mfc-module-state.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -181,7 +181,7 @@ MFC 모듈 상태에 대 한 자세한 내용은 "관리는 데이터의 MFC 모
 
 **헤더:** afxstat_.h
 
-## <a name="afxinitextensionmodule"></a> AfxInitExtensionModule
+## <a name="afxinitextensionmodule"></a>AfxInitExtensionModule
 
 이 함수는 MFC 확장 DLL의 호출 `DllMain` DLL을 초기화 합니다.
 
@@ -228,7 +228,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 `AfxInitExtensionModule` DLL의 HMODULE 복사본 및 DLL의 런타임 클래스를 캡처합니다 (`CRuntimeClass` 구조)와 해당 개체 팩터리 (`COleObjectFactory` 개체) 사용에 대 한 뒷부분에 나오는 경우를 `CDynLinkLibrary` 개체가 만들어집니다.
 MFC 확장명 Dll에서 두 가지를 수행 해야 해당 `DllMain` 함수:
 
-- 호출 [AfxInitExtensionModule](#_mfc_afxinitextensionmodule) 반환 값을 확인 합니다.
+- 호출 [AfxInitExtensionModule](#afxinitextensionmodule) 반환 값을 확인 합니다.
 
 - 만들기는 `CDynLinkLibrary` DLL를 내보내는 경우 개체 [CRuntimeClass 구조체](cruntimeclass-structure.md) 개체 또는 고유한 사용자 지정 리소스가 있습니다.
 
@@ -275,7 +275,7 @@ BOOL CMFCListViewApp::InitInstance()
 
 ## <a name="afxtermextensionmodule"></a>  AfxTermExtensionModule
 
-MFC에 있도록 정리 MFC 확장명 DLL 각 프로세스 DLL에서 분리 하는 경우이 함수를 호출 (프로세스가 종료 하거나 DLL의 결과로 언로드되는 때 발생 한 `AfxFreeLibrary` 호출).
+MFC DLL에서 각 프로세스 분리 하는 경우 MFC 확장명 DLL 정리할 수 있도록이 함수를 호출 (프로세스가 종료 하거나 DLL의 결과로 언로드되는 때 발생 한 `AfxFreeLibrary` 호출).
 
 ### <a name="syntax"></a>구문
 
@@ -289,7 +289,7 @@ void AFXAPI AfxTermExtensionModule(  AFX_EXTENSION_MODULE& state,  BOOL bAll  = 
 에 대 한 참조를 [AFX_EXTENSION_MODULE](afx-extension-module-structure.md) MFC 확장명 DLL 모듈의 상태를 포함 하는 구조입니다.
 
 *bAll*<br/>
-TRUE이 고, 정리 하는 경우 모든 MFC 확장명 DLL 모듈입니다. 이 고, 그렇지 정리는 현재 DLL 모듈입니다.
+TRUE 이면 모든 MFC 확장명 DLL 모듈을 정리 합니다. 그렇지 않으면 현재 DLL 모듈을 정리 합니다.
 
 ### <a name="remarks"></a>설명
 

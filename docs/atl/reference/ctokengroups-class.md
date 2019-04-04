@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CTokenGroups class
 ms.assetid: 2ab08076-4b08-4487-bc70-ec6dee304190
-ms.openlocfilehash: 842ceab1630fc7bc08b5c27dc769a25d029886f3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 934d746dafafb39c2ffc3477c59c95914d270196
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274520"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772831"
 ---
 # <a name="ctokengroups-class"></a>CTokenGroups 클래스
 
@@ -273,7 +273,7 @@ operator const TOKEN_GROUPS *() const throw(...);
 
 ## <a name="see-also"></a>참고자료
 
-[보안 샘플](../../visual-cpp-samples.md)<br/>
+[보안 샘플](../../overview/visual-cpp-samples.md)<br/>
 [CSid 클래스](../../atl/reference/csid-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

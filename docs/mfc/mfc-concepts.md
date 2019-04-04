@@ -3,12 +3,12 @@ title: MFC 개념
 ms.date: 1/09/2018
 f1_keywords:
 - Concepts
-ms.openlocfilehash: 58ab83fc195e199a63c53586983d26103950569b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d021350125acda52bb4ecf3919282cb7bbe52b1
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633379"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766510"
 ---
 # <a name="mfc-concepts"></a>MFC 개념
 
@@ -51,7 +51,7 @@ MFC 인터넷 프로그래밍을 지 원하는 클래스를 설명 합니다.
 [MFC 인터넷 프로그래밍 작업](../mfc/mfc-internet-programming-tasks.md)<br/>
 응용 프로그램에 인터넷 지원을 추가 하는 방법에 설명 합니다.
 
-[유니코드 및 MBCS(멀티바이트 문자 집합) 지원](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)<br/>
+[유니코드 및 멀티바이트 문자 집합(MBCS) 지원](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)<br/>
 유니코드 및 멀티 바이트 문자 집합에 대 한 MFC 및 ATL 지원을 사용 하는 방법에 설명 합니다.
 
 [MFC COM](../mfc/mfc-com.md)<br/>
@@ -66,5 +66,5 @@ Windows 소켓의 MFC 구현에 설명합니다.
 [MFC 참조](../mfc/mfc-desktop-applications.md)<br/>
 Windows API용으로 작성된 응용 프로그램의 프레임워크인 응용 프로그램 프레임워크를 구성하는 클래스 집합인 MFC 라이브러리에 대한 참조 자료를 제공합니다.
 
-[MFC 샘플](../visual-cpp-samples.md)<br/>
+[MFC 샘플](../overview/visual-cpp-samples.md)<br/>
 MFC 데스크톱 응용 프로그램, Dll, 데이터베이스 응용 프로그램, 컨트롤, 웹 응용 프로그램 등에서 사용 하는 방법을 보여 주는 샘플에 대 한 링크를 제공 합니다.

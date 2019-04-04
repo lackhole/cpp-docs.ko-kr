@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Create method [MFC], property sheets
 - CPropertyPage class [MFC], styles
 ms.assetid: 240654d4-152b-4e3f-af7b-44234339206e
-ms.openlocfilehash: 76acbfa9625fe6cb9a575244b0ed6954eeaaf3f2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 4fd68f57db082ab0b0da0e8248e0be239c63c99a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301690"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773218"
 ---
 # <a name="using-property-sheets-in-your-application"></a>응용 프로그램에서 속성 시트 사용
 
@@ -58,7 +58,7 @@ ms.locfileid: "57301690"
 
 1. 속성 페이지 및 속성 시트의 소유자 간에 데이터를 교환 합니다. 이 문서에 설명 되어 [데이터 교환](../mfc/exchanging-data.md)합니다.
 
-속성 시트를 사용 하는 방법의 예 참조는 MFC 일반 샘플 [PROPDLG](../visual-cpp-samples.md)합니다.
+속성 시트를 사용 하는 방법의 예 참조는 MFC 일반 샘플 [PROPDLG](../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

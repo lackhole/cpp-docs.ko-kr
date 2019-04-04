@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMenuTearOffManager [MFC], SetInUse
 - CMenuTearOffManager [MFC], SetupTearOffMenus
 ms.assetid: ab7ca272-ce42-4678-95f7-6ad75038f5a0
-ms.openlocfilehash: c6bdbb18c2d1b40423457b4cf07d0a747138b99b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 8b92ddad9d3a6de41cf6914dee268f6e54b5d420
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266200"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776065"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager 클래스
 
@@ -70,7 +70,7 @@ class CMenuTearOffManager : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에는 생성 하 고 초기화 하는 방법을 보여 줍니다.는 `CMenuTearOffManager` 를 호출 하 여 개체를 `CWinAppEX::EnableTearOffMenus` 메서드. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.
+다음 예제에는 생성 하 고 초기화 하는 방법을 보여 줍니다.는 `CMenuTearOffManager` 를 호출 하 여 개체를 `CWinAppEX::EnableTearOffMenus` 메서드. 이 코드 조각은 [워드 패드 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_WordPad#12](../../mfc/reference/codesnippet/cpp/cmenutearoffmanager-class_1.cpp)]
 

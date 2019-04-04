@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4538
 ms.assetid: 747e3d51-b6d0-41c1-a726-7af3253b59d7
-ms.openlocfilehash: 81634ed45ad7d09a35f8399774920f6445628dee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0f20c7b1d9f840bc272cd3b9d43f4872ac3f71d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569366"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58777248"
 ---
 # <a name="compiler-warning-level-3-c4538"></a>컴파일러 경고(수준 3) C4538
 
 'type':이 형식에서 const/volatile 한정자는 지원 되지 않습니다
 
-한정자 키워드 올바르게 적용 되었습니다를 배열 합니다. 자세한 내용은 [배열](../../windows/arrays-cpp-component-extensions.md)을 참조하세요.
+한정자 키워드 올바르게 적용 되었습니다를 배열 합니다. 자세한 내용은 [배열](../../extensions/arrays-cpp-component-extensions.md)을 참조하세요.
 
 다음 샘플에서는 C4538 오류가 생성 됩니다.
 

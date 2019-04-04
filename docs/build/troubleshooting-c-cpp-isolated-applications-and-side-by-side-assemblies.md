@@ -6,12 +6,12 @@ helpviewer_keywords:
 - troubleshooting isolated applications
 - troubleshooting Visual C++
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
-ms.openlocfilehash: d23662d6dd6d2f241c48e0c83f2fa5ed9532c3f7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 32896939ddc7fd0b841e1b6904124b06c9bc51c9
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807951"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766061"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ 격리된 응용 프로그램 및 side-by-side 어셈블리 문제 해결
 
@@ -31,7 +31,7 @@ ms.locfileid: "57807951"
 
 응용 프로그램이 Visual Studio가 없는 컴퓨터에 배포된 경우 충돌하여 이전과 유사한 오류 메시지가 표시되면 다음 사항을 확인하세요.
 
-1. 에 설명 된 단계를 따릅니다 [Visual c + + 응용 프로그램의 종속성 이해](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md)합니다. Dependency Walker에서 응용 프로그램이나 DLL에 대한 대부분의 종속성을 표시할 수 있습니다. 일부 DLL이 누락된 경우 응용 프로그램을 실행하려는 컴퓨터에 설치합니다.
+1. 에 설명 된 단계를 따릅니다 [Visual c + + 응용 프로그램의 종속성 이해](../windows/understanding-the-dependencies-of-a-visual-cpp-application.md)합니다. Dependency Walker에서 응용 프로그램이나 DLL에 대한 대부분의 종속성을 표시할 수 있습니다. 일부 DLL이 누락된 경우 응용 프로그램을 실행하려는 컴퓨터에 설치합니다.
 
 1. 운영 체제 로더는 응용 프로그램 매니페스트를 사용하여 응용 프로그램이 종속된 어셈블리를 로드합니다. 매니페스트는 리소스로 이진 파일에 포함하거나 별도의 파일로 응용 프로그램 폴더에 설치할 수 있습니다. 이진 파일에 매니페스트가 포함 되어 있는지를 확인 하려면 Visual Studio에서 이진 열고 리소스 목록에서 RT_MANIFEST를 찾습니다. 포함된 된 매니페스트를 찾을 수 없으면 < binary_name >와 같이 명명 된 파일에 대 한 응용 프로그램 폴더를 확인 합니다. \<확장 >.manifest입니다.
 

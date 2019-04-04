@@ -38,15 +38,15 @@ ms.locfileid: "57820418"
 
 또한 스택 크기를 설정할 수 있습니다.
 
-- 사용 하 여 **스택/** 링커 옵션입니다. 자세한 내용은 [스택/](stack.md)합니다.
+- **/STACK** 링커 옵션을 사용합니다. 자세한 내용은 [/STACK](stack.md)을 참조합니다.
 
 - .Exe 파일에서 EDITBIN를 사용합니다. 자세한 내용은 [EDITBIN 참조](editbin-reference.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. **추가 옵션** 상자에 컴파일러 옵션을 입력합니다.
 

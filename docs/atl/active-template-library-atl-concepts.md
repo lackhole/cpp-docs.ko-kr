@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL, about ATL
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
-ms.openlocfilehash: 90fd096f15f185feebc6f6ae8b73b010fe3c1813
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7eb7eb1c369f825fbb689cd476d43be538ae8d9a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265342"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774622"
 ---
 # <a name="active-template-library-atl-concepts"></a>ATL(액티브 템플릿 라이브러리) 개념
 
@@ -17,7 +17,7 @@ ms.locfileid: "57265342"
 
 다수의 ATL 프로그래밍을 수행하기 위해 특성이나 COM 프로그래밍 간소화를 위해 설계된 Visual C++.NET의 새로운 기능에 대한 학습이 필요할 수도 있습니다. 자세한 내용은 [특성 사용 프로그래밍](../windows/attributed-programming-concepts.md)을 참조합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [ATL 자습서](../atl/active-template-library-atl-tutorial.md)<br/>
 컨트롤 생성을 안내하고 프로세스에서 일부 ATL 기초를 보여줍니다.
@@ -87,7 +87,7 @@ atlenc.h에 있는 uuencode, 16진수, 그리고 UTF8과 같은 일반적인 인
 
 ## <a name="related-sections"></a>관련 단원
 
-[ATL 샘플](../visual-cpp-samples.md)<br/>
+[ATL 샘플](../overview/visual-cpp-samples.md)<br/>
 설명 및 ATL 샘플 프로그램에 대 한 링크를 제공합니다.
 
 [ATL 프로젝트 만들기](../atl/reference/creating-an-atl-project.md)<br/>

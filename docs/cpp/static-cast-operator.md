@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - static_cast keyword [C++]
 ms.assetid: 1f7c0c1c-b288-476c-89d6-0e2ceda5c293
-ms.openlocfilehash: 8e39fe7eb0fb9b77a82b305fa2f8186ad4e855a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dca6d5297379e6ddc1c70dba80f35f2f55672e49
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601710"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776923"
 ---
 # <a name="staticcast-operator"></a>static_cast 연산자
 
@@ -103,9 +103,9 @@ void f() {
 
 합니다 **static_cast** 연산자 떨어져 캐스팅할 수 없습니다는 **const**를 **volatile**, 또는 **__unaligned** 특성입니다. 참조 [const_cast 연산자](../cpp/const-cast-operator.md) 이러한 특성을 제거 하는 방법은 합니다.
 
-재배치 가비지 수집기 사용의 상단에서 확인 되지 않은 캐스팅을 수행 하는 위험으로 인해 **static_cast** 올바르게 작동 한다고 확신할 때 성능에 중요 코드에서 이어야만 합니다. 사용 해야 하는 경우 **static_cast** 릴리스 모드에서 사용 하 여 대체 [safe_cast](../windows/safe-cast-cpp-component-extensions.md) 성공을 위해 디버그 빌드의 합니다.
+**C++/CLI:** 재배치 가비지 수집기 사용의 상단에서 확인 되지 않은 캐스팅을 수행 하는 위험으로 인해 **static_cast** 올바르게 작동 한다고 확신할 때 성능에 중요 코드에서 이어야만 합니다. 사용 해야 하는 경우 **static_cast** 릴리스 모드에서 사용 하 여 대체 [safe_cast](../extensions/safe-cast-cpp-component-extensions.md) 성공을 위해 디버그 빌드의 합니다.
 
 ## <a name="see-also"></a>참고자료
 
 [캐스팅 연산자](../cpp/casting-operators.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[키워드(C++)](../cpp/keywords-cpp.md)

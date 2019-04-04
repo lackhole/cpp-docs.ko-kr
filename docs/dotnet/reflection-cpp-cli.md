@@ -18,12 +18,12 @@ helpviewer_keywords:
 - data types [C++], enumerating
 - public members [C++]
 ms.assetid: 46b6ff4a-e441-4022-8892-78e69422f230
-ms.openlocfilehash: 769ba87f64a8096ac8c7f14cc091119345177b3b
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: a17910e0288b81723aa837ba9204bb40713d5d49
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426448"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58770813"
 ---
 # <a name="reflection-ccli"></a>리플렉션(C++/CLI)
 
@@ -79,7 +79,7 @@ type of i = 'System.Int32'
 
 ## <a name="example-typeid"></a>예제: typeid
 
-와 마찬가지로 `GetType` 메서드를 [typeid](../windows/typeid-cpp-component-extensions.md) 연산자에 대 한 포인터를 반환 합니다.는 **형식** 개체 이므로이 코드는 형식 이름을 나타냅니다 **System.Int32**합니다. 형식 이름 표시 리플렉션의 가장 기본적인 기능 이지만 잠재적으로 유용한 기술 검사 또는 열거형된 형식에 대 한 유효한 값을 검색 하는 것입니다. 정적을 사용 하 여 이렇게 **Enum::GetNames** 함수를 텍스트 형식에는 열거형 값이 포함 된 각 문자열의 배열을 반환 합니다.  다음 샘플에 대 한 열거형 값을 설명 하는 문자열의 배열을 검색 합니다 **옵션** (CLR) 열거형 루프에 표시 됩니다.
+와 마찬가지로 `GetType` 메서드를 [typeid](../extensions/typeid-cpp-component-extensions.md) 연산자에 대 한 포인터를 반환 합니다.는 **형식** 개체 이므로이 코드는 형식 이름을 나타냅니다 **System.Int32**합니다. 형식 이름 표시 리플렉션의 가장 기본적인 기능 이지만 잠재적으로 유용한 기술 검사 또는 열거형된 형식에 대 한 유효한 값을 검색 하는 것입니다. 정적을 사용 하 여 이렇게 **Enum::GetNames** 함수를 텍스트 형식에는 열거형 값이 포함 된 각 문자열의 배열을 반환 합니다.  다음 샘플에 대 한 열거형 값을 설명 하는 문자열의 배열을 검색 합니다 **옵션** (CLR) 열거형 루프에 표시 됩니다.
 
 네 번째 옵션을 추가할 경우 합니다 **옵션** 열거형이이 코드 열거형 별도 어셈블리에 정의 된 경우에 다시 컴파일하지 않고도 새 옵션을 보고 합니다.
 

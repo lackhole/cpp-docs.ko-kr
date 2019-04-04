@@ -3,12 +3,12 @@ title: C++의 진화(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-ms.openlocfilehash: 08563f6a67ec7105da688d566d71d8ea15cb8cec
-ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
+ms.openlocfilehash: 5b2868d20c047eef7762256ff8c9bf43de7a0de0
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334627"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771788"
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++의 진화(모던 C++)
 
@@ -132,4 +132,4 @@ void f()
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [람다 식](../cpp/lambda-expressions-in-cpp.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
-[Visual C++ 언어 규칙](../visual-cpp-language-conformance.md)
+[Visual C++ 언어 규칙](../overview/visual-cpp-language-conformance.md)

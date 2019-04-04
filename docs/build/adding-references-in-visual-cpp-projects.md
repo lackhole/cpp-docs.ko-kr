@@ -1,5 +1,5 @@
 ---
-title: 라이브러리 및 c + + 프로젝트의 구성 요소를 사용합니다.
+title: 라이브러리 및 C++ 프로젝트의 구성 요소를 사용합니다.
 ms.date: 12/10/2018
 f1_keywords:
 - VC.Project.References
@@ -7,20 +7,20 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: 8daba00432d7f14c8517da3ed4dc506cfd80865a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: eb4d970527ba919af10eadab7c907f5108767b9b
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827192"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780472"
 ---
 # <a name="consuming-libraries-and-components"></a>라이브러리 및 구성 요소를 사용합니다.
 
-C + + 프로젝트 함수를 호출 하거나 정적 라이브러리 (.lib 파일)와 같은 이진 파일에는 데이터에 액세스 해야 하는 종종 DLL, Windows 런타임 구성 요소, COM 구성 요소 또는.NET 어셈블리. 이러한 경우 빌드 시 이진 파일을 찾을 수 있도록 프로젝트를 구성 해야 합니다. 특정 단계를 이진 유형의 프로젝트의 유형에 따라 달라 프로젝트와 동일한 솔루션에는 이진 파일이 빌드된 여부 및 합니다. 
+C++ 프로젝트 함수를 호출 하거나 정적 라이브러리 (.lib 파일)와 같은 이진 파일에는 데이터에 액세스 해야 하는 종종 DLL, Windows 런타임 구성 요소, COM 구성 요소 또는.NET 어셈블리. 이러한 경우 빌드 시 이진 파일을 찾을 수 있도록 프로젝트를 구성 해야 합니다. 특정 단계를 이진 유형의 프로젝트의 유형에 따라 달라 프로젝트와 동일한 솔루션에는 이진 파일이 빌드된 여부 및 합니다. 
 
 ## <a name="consuming-libraries-downloaded-via-vcpkg"></a>Vcpkg를 통해 다운로드 라이브러리를 사용 합니다.
 
-사용 하 여 다운로드 한 라이브러리를 사용 하 여 **vcpkg** 패키지 관리자에서 아래 지침을 무시할 수 있습니다. [vcpkg: Windows, Linux 및 MacOS 용 c + + 패키지 관리자](../vcpkg.md#integrate-with-visual-studio-windows) 자세한 내용은 합니다.
+사용 하 여 다운로드 한 라이브러리를 사용 하 여 **vcpkg** 패키지 관리자에서 아래 지침을 무시할 수 있습니다. [vcpkg: Windows, Linux 및 MacOS 용 C++ 패키지 관리자](vcpkg.md#integrate-with-visual-studio-windows) 자세한 내용은 합니다.
 
 ## <a name="consuming-static-libraries"></a>정적 라이브러리를 사용합니다.
 
@@ -32,7 +32,7 @@ C + + 프로젝트 함수를 호출 하거나 정적 라이브러리 (.lib 파�
 정적 라이브러리 솔루션의 일부가 아닌 경우:
 
 1. 응용 프로그램 프로젝트 노드를 마우스 오른쪽 단추로 클릭 **솔루션 탐색기** 를 선택한 후 **속성**합니다. 
-2. 에 **VC + + 디렉터리** 속성 페이지에서.lib 파일에 있는 디렉터리 경로 추가할 **라이브러리 경로** 라이브러리 헤더 파일의 경로 추가 하 고 **포함 디렉터리** .  
+2. 에 **VC++ 디렉터리** 속성 페이지에서.lib 파일에 있는 디렉터리 경로 추가할 **라이브러리 경로** 라이브러리 헤더 파일의 경로 추가 하 고 **포함 디렉터리** .  
 3. 에 **링커 > 입력** 속성 페이지에서.lib 파일의 이름을 **추가 종속성**합니다.
 
 ## <a name="dynamic-link-libraries"></a>동적 연결 라이브러리
@@ -46,11 +46,11 @@ C + + 프로젝트 함수를 호출 하거나 정적 라이브러리 (.lib 파�
 
 ## <a name="com-objects"></a>COM 개체
 
-COM 개체를 사용 하 여 네이티브 c + + 응용 프로그램 해야 하 고 해당 개체가 *등록*, CoCreateInstance를 호출 하 고 전달 된 개체의 CLSID는 수행 해야 합니다. 시스템의 Windows 레지스트리를 로드 합니다. C + + CLI 프로젝트를 동일한 방식으로 또는에 대 한 참조를 추가 하 여 COM 개체를 사용할 수 있습니다는 **참조 추가 > COM** 목록과 사용을 통해 해당 [런타임 호출 가능 래퍼](/dotnet/framework/interop/runtime-callable-wrapper)합니다. 
+COM 개체를 사용 하 여 네이티브 C++ 응용 프로그램 해야 하 고 해당 개체가 *등록*, CoCreateInstance를 호출 하 고 전달 된 개체의 CLSID는 수행 해야 합니다.  시스템의 Windows 레지스트리를 로드 합니다. C++ CLI 프로젝트를 동일한 방식으로 또는에 대 한 참조를 추가 하 여 COM 개체를 사용할 수 있습니다는 **참조 추가 > COM** 목록과 사용을 통해 해당 [런타임 호출 가능 래퍼](/dotnet/framework/interop/runtime-callable-wrapper)합니다. 
 
 ## <a name="net-assemblies-and-windows-runtime-components"></a>.NET 어셈블리와 Windows 런타임 구성 요소
 
-UWP 또는 C + + 프로젝트에 추가 하 여.NET 어셈블리 또는 Windows 런타임 구성 요소를 사용 하는 *참조* 어셈블리 또는 구성 요소입니다. 아래는 **참조** 노드 UWP 또는 C + + 프로젝트에서 일반적으로 사용 되는 구성 요소에 대 한 참조입니다. 마우스 오른쪽 단추로 클릭 합니다 **참조** 에서 노드 **솔루션 탐색기** 불러오려면를 **참조 관리자** 시스템에 알려지지 않은 추가 구성 요소를 탐색 합니다. 클릭 합니다 **찾아보기** 단추를 사용자 지정 구성 요소 위치한 폴더로 이동 합니다. 마우스 오른쪽 단추로 클릭 하 고 선택 하 여 해당 메서드 및 클래스.NET 어셈블리 및 Windows 런타임 구성 요소는 기본 제공 형식 정보를 포함 하므로 볼 수 있습니다 **개체 브라우저에서 보기**합니다. 
+UWP 또는 C++ 프로젝트에 추가 하 여.NET 어셈블리 또는 Windows 런타임 구성 요소를 사용 하는 *참조* 어셈블리 또는 구성 요소입니다. 아래는 **참조** 노드 UWP 또는 C++ 프로젝트에서 일반적으로 사용 되는 구성 요소에 대 한 참조입니다. 마우스 오른쪽 단추로 클릭 합니다 **참조** 에서 노드 **솔루션 탐색기** 불러오려면를 **참조 관리자** 시스템에 알려지지 않은 추가 구성 요소를 탐색 합니다. 클릭 합니다 **찾아보기** 단추를 사용자 지정 구성 요소 위치한 폴더로 이동 합니다. 마우스 오른쪽 단추로 클릭 하 고 선택 하 여 해당 메서드 및 클래스.NET 어셈블리 및 Windows 런타임 구성 요소는 기본 제공 형식 정보를 포함 하므로 볼 수 있습니다 **개체 브라우저에서 보기**합니다. 
 
 ## <a name="reference-properties"></a>참조 속성
 
@@ -80,7 +80,7 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
    참조된 COM 라이브러리 또는 ActiveX 컨트롤에서 interop 어셈블리를 빌드하는 데 사용되는 도구를 표시합니다.
 
-### <a name="assembly-reference-properties-ccli"></a>어셈블리 참조 속성 (C + + /cli CLI)
+### <a name="assembly-reference-properties-ccli"></a>어셈블리 참조 속성 (C++ /cli CLI)
 
 어셈블리 참조 속성은 C +에서.NET Framework 어셈블리에 대 한 참조에만 사용 가능 + CLI 프로젝트입니다. 이러한 속성은.NET Framework 어셈블리를 선택한 경우에 표시 합니다 **참조** 창입니다. 이러한 속성은 수정할 수 없습니다.
 
@@ -96,7 +96,7 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
    빌드 중 대상 위치에 대해 참조되는 어셈블리를 자동으로 복사할지 지정합니다.
 
-- **로컬 위성 어셈블리 복사 (C + + /cli CLI)**
+- **로컬 위성 어셈블리 복사 (C++ /cli CLI)**
 
    참조된 어셈블리의 위성 어셈블리를 빌드 중에 대상 위치에 자동으로 복사할지 지정합니다. **로컬 복사**가 **true**인 경우에만 사용됩니다.
 
@@ -166,5 +166,5 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
 ## <a name="see-also"></a>참고 항목
 
-[C + + 프로젝트 속성 페이지 참조](reference/property-pages-visual-cpp.md)<br>
-[Visual Studio에서 속성을 빌드하고 c + + 컴파일러를 설정 합니다.](working-with-project-properties.md)
+[C++ 프로젝트 속성 페이지 참조](reference/property-pages-visual-cpp.md)<br>
+[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)

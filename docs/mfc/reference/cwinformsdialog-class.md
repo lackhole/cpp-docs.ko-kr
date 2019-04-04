@@ -1,6 +1,6 @@
 ---
 title: CWinFormsDialog 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CWinFormsDialog
 - AFXWINFORMS/CWinFormsDialog
@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CWinFormsDialog [MFC], GetControlHandle
 - CWinFormsDialog [MFC], OnInitDialog
 ms.assetid: e3cec000-a578-448e-b06a-8af256312f61
-ms.openlocfilehash: 4d0731e40a622f0d360cabc03b68b0fe74c1ebc9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1542f852a8fe3f05d81ae59efb8a522caae671fd
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277120"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565349"
 ---
 # <a name="cwinformsdialog-class"></a>CWinFormsDialog 클래스
 
@@ -59,7 +59,7 @@ class CWinFormsDialog :
 |이름||
 |----------|-|
 |[CWinFormsDialog::operator -&gt;](#operator_-_gt)|대체 [CWinFormsDialog::GetControl](#getcontrol) 식에 있습니다.|
-|[CWinFormsDialog::operator TManagedControl^](#operator_tmanagedcontrol)|Windows Forms 사용자 정의 컨트롤에 대 한 참조로 형식을 캐스팅합니다.|
+|[CWinFormsDialog::operator TManagedControl^](#operator-tmanagedcontrol-hat)|Windows Forms 사용자 정의 컨트롤에 대 한 참조로 형식을 캐스팅합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -140,7 +140,7 @@ inline TManagedControl^  operator->() const throw();
 
 Windows Forms를 사용 하 여 정보를 참조 하세요 [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
 
-##  <a name="operator_tmanagedcontrol_xor"></a>  CWinFormsDialog::operator TManagedControl^
+##  <a name="operator-tmanagedcontrol-hat"></a>  CWinFormsDialog::operator TManagedControl^
 
 Windows Forms 사용자 정의 컨트롤에 대 한 참조로 형식을 캐스팅합니다.
 

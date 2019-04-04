@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CTypedPtrList [MFC], RemoveTail
 - CTypedPtrList [MFC], SetAt
 ms.assetid: c273096e-1756-4340-864b-4a08b674a65e
-ms.openlocfilehash: 756ef5043468f614c6ab3ac64598d62b29b2dc41
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9233e83a08fde87c15be5cc1c42a2f1dd3b56511
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57286025"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767992"
 ---
 # <a name="ctypedptrlist-class"></a>CTypedPtrList 클래스
 
@@ -79,8 +79,7 @@ class CTypedPtrList : public BASE_CLASS
 
 목록에서 파생 `CObList` 를 serialize 할 수 있지만 파생 된 `CPtrList` 수 없습니다.
 
-
-  `CTypedPtrList` 개체를 삭제하거나 해당 요소를 제거할 경우 참조하는 엔터티가 아니라 포인터만 제거됩니다.
+`CTypedPtrList` 개체를 삭제하거나 해당 요소를 제거할 경우 참조하는 엔터티가 아니라 포인터만 제거됩니다.
 
 사용 하 여 대 한 자세한 내용은 `CTypedPtrList`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md) 하 고 [템플릿 기반 클래스](../../mfc/template-based-classes.md)합니다.
 
@@ -380,7 +379,7 @@ void SetAt(POSITION pos, TYPE newElement);
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 수집](../../overview/visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CPtrList 클래스](../../mfc/reference/cptrlist-class.md)<br/>
 [CObList 클래스](../../mfc/reference/coblist-class.md)

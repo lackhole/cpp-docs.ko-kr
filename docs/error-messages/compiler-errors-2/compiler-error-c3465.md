@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C3465
 ms.assetid: aeb815e5-b3fc-4525-afe2-d738e9321df1
-ms.openlocfilehash: 8a6cbbc1e75d345d0ebdcfc9e1db32f660c13b01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 117c9b9918950fd2e95e206c5aea457dee183b0a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653416"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781577"
 ---
 # <a name="compiler-error-c3465"></a>컴파일러 오류 C3465
 
 'type' 형식을 사용하려면 'assembly' 어셈블리를 참조해야 합니다.
 
-클라이언트를 다시 컴파일할 때까지 형식 전달은 클라이언트 응용 프로그램에 대해 작동합니다. 다시 컴파일하는 경우에는 클라이언트 응용 프로그램에서 사용하는 형식의 정의를 비롯하여 모든 어셈블리에 대한 참조가 필요합니다.
+클라이언트를 다시 컴파일할 때까지 형식 전달은 클라이언트 애플리케이션에 대해 작동합니다. 다시 컴파일하는 경우에는 클라이언트 애플리케이션에서 사용하는 형식의 정의를 비롯하여 모든 어셈블리에 대한 참조가 필요합니다.
 
-자세한 내용은 [형식 전달 (C + + /cli CLI)](../../windows/type-forwarding-cpp-cli.md)합니다.
+자세한 내용은 [형식 전달 (C + + /cli CLI)](../../extensions/type-forwarding-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

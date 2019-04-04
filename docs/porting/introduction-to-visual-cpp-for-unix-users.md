@@ -4,12 +4,12 @@ ms.date: 09/01/2017
 helpviewer_keywords:
 - UNIX [C++]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
-ms.openlocfilehash: 0cffdc2be00b4af9badbbbc80bcfef48b3f76e19
-ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
+ms.openlocfilehash: 2b0736bca9cc0b67f9ea8ac83dc18fadaeefdb3c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57818377"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780823"
 ---
 # <a name="introduction-to-visual-c-for-unix-users"></a>UNIX 사용자를 위한 Visual C++ 소개
 
@@ -51,8 +51,7 @@ C++ 컴파일러를 사용하여 메이크파일을 포함하거나 포함하지
 
 Microsoft Visual C++ 컴파일러는 Windows 운영 체제에 대한 프로그래밍을 지원하기 위해 표준 C++ 프로그래밍 언어에 대한 몇 가지 확장을 구현합니다. 이러한 확장은 특히 스토리지 클래스 특성, 함수 호출 규칙 및 기본 주소를 지정하는 데 사용됩니다. 지원되는 C++ 확장의 전체 목록은 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)를 참조하세요.
 
-
-  `/Za` 컴파일러 옵션을 통해 C++에 대한 모든 Microsoft 전용 확장을 사용하지 않도록 설정할 수 있습니다. 이 옵션은 여러 플랫폼에서 실행할 코드를 작성하려는 경우에 권장됩니다. `/Za` 컴파일러 옵션에 대한 자세한 내용은 [/Za, /Ze(언어 확장명 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md)를 참조하세요. C++ 컴파일러 규칙에 대한 자세한 내용은 [Visual C++ 언어 규칙](../visual-cpp-language-conformance.md) 및 [비표준 동작](../cpp/nonstandard-behavior.md)을 참조하세요.
+`/Za` 컴파일러 옵션을 통해 C++에 대한 모든 Microsoft 전용 확장을 사용하지 않도록 설정할 수 있습니다. 이 옵션은 여러 플랫폼에서 실행할 코드를 작성하려는 경우에 권장됩니다. `/Za` 컴파일러 옵션에 대한 자세한 내용은 [/Za, /Ze(언어 확장명 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md)를 참조하세요. C++ 컴파일러 규칙에 대한 자세한 내용은 [Visual C++ 언어 규칙](../overview/visual-cpp-language-conformance.md) 및 [비표준 동작](../cpp/nonstandard-behavior.md)을 참조하세요.
 
 ## <a name="precompiled-headers"></a>미리 컴파일된 헤더
 

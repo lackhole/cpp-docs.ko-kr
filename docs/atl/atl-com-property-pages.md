@@ -9,12 +9,12 @@ helpviewer_keywords:
 - COM objects, ATL
 - ATL property pages
 ms.assetid: 663c7caa-2e5e-4b5c-b8ea-fd434ceb1654
-ms.openlocfilehash: 90dafc411f3262dc458c5158df049740a9d7a683
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d374569c6c3e9bb63b6b026d2b0f86226d158f36
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266902"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768415"
 ---
 # <a name="atl-com-property-pages"></a>ATL COM 속성 페이지
 
@@ -26,7 +26,7 @@ ms.locfileid: "57266902"
 
 자세한 내용은 [속성 시트 및 속성 페이지](/windows/desktop/com/property-sheets-and-property-pages) Windows SDK에 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [속성 페이지 지정](../atl/specifying-property-pages.md)<br/>
 제어에 대 한 속성 페이지를 지정 하는 단계를 나열 하 고 클래스 예제를 보여 줍니다.
@@ -36,7 +36,7 @@ ms.locfileid: "57266902"
 
 ## <a name="related-sections"></a>관련 단원
 
-[ATLPages 샘플](../visual-cpp-samples.md)<br/>
+[ATLPages 샘플](../overview/visual-cpp-samples.md)<br/>
 ATLPages 샘플을 사용 하 여 속성 페이지를 구현 하는 샘플 추상 `IPropertyPageImpl`합니다.
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>

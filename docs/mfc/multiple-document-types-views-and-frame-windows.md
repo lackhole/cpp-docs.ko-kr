@@ -15,12 +15,12 @@ helpviewer_keywords:
 - multiple frame windows [MFC]
 - splitter windows [MFC], static
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
-ms.openlocfilehash: e64ea6701c5e3ec594c705e8995b5ba605ab0b79
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 154fc67dc35d5e5633c72c27100da9be56c0c68c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301196"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779679"
 ---
 # <a name="multiple-document-types-views-and-frame-windows"></a>여러 문서 형식, 뷰 및 프레임 창
 
@@ -67,9 +67,9 @@ MFC는 같은 문서에 대한 다중 뷰가 필요한 세 가지 공용 사용�
 ![여러&#45;사용자 인터페이스를 보려면](../mfc/media/vc37a71.gif "여러&#45;사용자 인터페이스") <br/>
 여러 뷰 사용자 인터페이스
 
-프레임워크에서는 새 창 명령을 구현하고 [분할 창](../mfc/reference/csplitterwnd-class.md)에서 설명한 대로 [CSplitterWnd](#_core_splitter_windows)클래스를 제공하여 이 세 가지 모델을 제공합니다. 이 방법으로 시작하여 다른 모델을 구현할 수도 있습니다. 다른 구성의 뷰, 프레임 창 및 분할 창을 보여 주는 샘플 프로그램은 [MFC 샘플](../visual-cpp-samples.md)을 참조하세요.
+프레임워크에서는 새 창 명령을 구현하고 [분할 창](../mfc/reference/csplitterwnd-class.md)에서 설명한 대로 [CSplitterWnd](#_core_splitter_windows)클래스를 제공하여 이 세 가지 모델을 제공합니다. 이 방법으로 시작하여 다른 모델을 구현할 수도 있습니다. 다른 구성의 뷰, 프레임 창 및 분할 창을 보여 주는 샘플 프로그램은 [MFC 샘플](../overview/visual-cpp-samples.md)을 참조하세요.
 
-`UpdateAllViews`에 대한 자세한 내용은 [MFC 참조](../mfc/reference/cview-class.md) 의 *CView* 클래스 및 [SCRIBBLE 샘플](../visual-cpp-samples.md)을 참조하세요.
+`UpdateAllViews`에 대한 자세한 내용은 [MFC 참조](../mfc/reference/cview-class.md) 의 *CView* 클래스 및 [SCRIBBLE 샘플](../overview/visual-cpp-samples.md)을 참조하세요.
 
 ##  <a name="_core_multiple_frame_windows"></a> Multiple Frame Windows
 
@@ -79,11 +79,11 @@ MDI 애플리케이션 창 메뉴의 새 창 명령을 사용하면 같은 문�
 
 분할 창에서 창은 둘 이상의 스크롤 가능한 창으로 분할되어 있거나 분할할 수 있습니다. 스크롤 막대 옆에 있는 창 프레임의 분할자 컨트롤(또는 "나눔줄")을 사용하면 사용자가 창의 상대 크기를 조정할 수 있습니다. 각 창은 같은 문서에 대한 뷰입니다. "동적" 분할 창 보기에는 동일한 클래스의 다중 뷰 사용자 인터페이스 그림의 b 부분에에서 나와 있는 것 처럼. "정적" 분할 창에서는 뷰의 클래스가 다를 수 있습니다. [CSplitterWnd](../mfc/reference/csplitterwnd-class.md)클래스는 두 가지 종류의 분할 창을 모두 지원합니다.
 
-같은 클래스의 뷰로 구성된 동적 분할 창을 사용하면 사용자가 임의로 창을 다중 창으로 분할한 다음 각 창을 스크롤하여 문서의 각 부분을 확인할 수 있습니다. 또한 사용자가 창의 분할을 해제하여 추가 뷰를 제거할 수도 있습니다. [SCRIBBLE 샘플](../visual-cpp-samples.md) 에 추가된 분할 창은 이에 대한 예제입니다. 해당 항목은 동적 분할 창을 만드는 방법을 설명합니다. 동적 분할 창은 다중 뷰 사용자 인터페이스 그림의 b 부분에 표시 됩니다.
+같은 클래스의 뷰로 구성된 동적 분할 창을 사용하면 사용자가 임의로 창을 다중 창으로 분할한 다음 각 창을 스크롤하여 문서의 각 부분을 확인할 수 있습니다. 또한 사용자가 창의 분할을 해제하여 추가 뷰를 제거할 수도 있습니다. [SCRIBBLE 샘플](../overview/visual-cpp-samples.md) 에 추가된 분할 창은 이에 대한 예제입니다. 해당 항목은 동적 분할 창을 만드는 방법을 설명합니다. 동적 분할 창은 다중 뷰 사용자 인터페이스 그림의 b 부분에 표시 됩니다.
 
 다른 클래스의 뷰로 구성된 정적 분할 창은 각각 용도가 다른 다중 창으로 분할된 창으로 시작합니다. 예를 들어, Visual C++ 비트맵 편집기의 이미지 창에는 두 개의 창이 나란히 표시됩니다. 왼쪽 창에는 비트맵이 실제 크기로 표시되고 오른쪽 창에는 같은 비트맵의 확대된 이미지가 표시됩니다. 창은 사용자가 끌어서 창의 상대 크기를 변경할 수 있는 "분할 막대"로 분리되어 있습니다. 정적 분할 창은 그림 다중 뷰 사용자 인터페이스의 c 부분에에서 표시 됩니다.
 
-자세한 내용은 [MFC 참조](../mfc/reference/csplitterwnd-class.md) 의 *CSplitterWnd* 클래스 및 [MFC 샘플](../visual-cpp-samples.md)을 참조하세요.
+자세한 내용은 [MFC 참조](../mfc/reference/csplitterwnd-class.md) 의 *CSplitterWnd* 클래스 및 [MFC 샘플](../overview/visual-cpp-samples.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

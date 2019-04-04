@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CTraits classes
 - collection classes
 ms.assetid: 4d619d46-5b4e-41dd-b9fd-e86b1fbc00b5
-ms.openlocfilehash: 11da1dd7d72951d421d2600e3825e7cafe189240
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 70ca283468a51b4214273698a532ce2a85d52b44
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272102"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58774987"
 ---
 # <a name="atl-collection-classes"></a>ATL 컬렉션 클래스
 
@@ -116,13 +116,13 @@ CTraits 클래스 목록은 참조 하세요 [컬렉션 클래스](../atl/collec
 
 다음 샘플에는 컬렉션 클래스를 보여 줍니다.
 
-- [MMXSwarm 샘플](../visual-cpp-samples.md)
+- [MMXSwarm 샘플](../overview/visual-cpp-samples.md)
 
-- [DynamicConsumer 샘플](../visual-cpp-samples.md)
+- [DynamicConsumer 샘플](../overview/visual-cpp-samples.md)
 
 - [UpdatePV 샘플](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)
 
-- [움직이는 텍스트 샘플](../visual-cpp-samples.md)
+- [움직이는 텍스트 샘플](../overview/visual-cpp-samples.md)
 
 ## <a name="see-also"></a>참고자료
 

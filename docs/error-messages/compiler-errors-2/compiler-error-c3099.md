@@ -6,21 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C3099
 ms.assetid: b3dded0f-76c9-42c1-991b-532eb8619661
-ms.openlocfilehash: beaa34bb9bed4824383cdad32c6bfd0aea19f6b7
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 0f3eac1c232ef159d220a347d6b6dc3aed2fdd9a
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418579"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771489"
 ---
 # <a name="compiler-error-c3099"></a>컴파일러 오류 C3099
 
 'keyword': 관리되는 특성에 대해 [System::AttributeUsageAttribute]를 사용하고, WinRT 특성에 대해 [Windows::Foundation::Metadata::AttributeUsageAttribute]를 사용합니다.
 
-사용 하 여 <xref:System.AttributeUsageAttribute> 선언 **/clr** 특성입니다. 
-  `Windows::Foundation::Metadata::AttributeUsageAttribute`를 사용하여 Windows 런타임 특성을 선언합니다.
+사용 하 여 <xref:System.AttributeUsageAttribute> 선언 **/clr** 특성입니다. `Windows::Foundation::Metadata::AttributeUsageAttribute`를 사용하여 Windows 런타임 특성을 선언합니다.
 
-/CLR 특성에 대 한 자세한 내용은 참조 하십시오 [사용자 정의 특성](../../windows/user-defined-attributes-cpp-component-extensions.md)합니다. Windows 런타임에서 지원 되는 특성을 참조 하세요. [Windows.Foundation.Metadata 네임 스페이스](/uwp/api/windows.foundation.metadata)
+/CLR 특성에 대 한 자세한 내용은 참조 하십시오 [사용자 정의 특성](../../extensions/user-defined-attributes-cpp-component-extensions.md)합니다. Windows 런타임에서 지원 되는 특성을 참조 하세요. [Windows.Foundation.Metadata 네임 스페이스](/uwp/api/windows.foundation.metadata)
 
 ## <a name="example"></a>예제
 

@@ -66,12 +66,12 @@ helpviewer_keywords:
 - CMFCCaptionBar [MFC], m_clrBarBorder
 - CMFCCaptionBar [MFC], m_clrBarText
 ms.assetid: acb54d5f-14ff-4c96-aeb3-7717cf566d9a
-ms.openlocfilehash: 1a18e235c9f5875a977f740c26b917a3567a678d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c6385cb6bd3eec3ce5fefe0475d771c774777820
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264991"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781876"
 ---
 # <a name="cmfccaptionbar-class"></a>CMFCCaptionBar 클래스
 
@@ -134,8 +134,7 @@ class CMFCCaptionBar : public CPane
 
 캡션 표시줄을 만들려면 다음이 단계를 수행 합니다.
 
-1. 
-  `CMFCCaptionBar` 개체를 생성합니다. 일반적으로 캡션 표시줄 프레임 창 클래스를 추가 합니다.
+1. `CMFCCaptionBar` 개체를 생성합니다. 일반적으로 캡션 표시줄 프레임 창 클래스를 추가 합니다.
 
 1. 호출 된 [CMFCCaptionBar::Create](#create) 캡션 표시줄 컨트롤을 만들고 연결 하는 메서드를 `CMFCCaptionBar` 개체입니다.
 
@@ -149,7 +148,7 @@ Button 요소를 설정 하면 단추 명령 ID를 할당 해야 합니다. 사�
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CMFCCaptionBar` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 예제에서는 캡션 표시줄 컨트롤을 만드는, 캡션 표시줄에 3D 테두리를 설정, 픽셀 캡션 표시줄 컨트롤의 가장자리와 요소 표시줄 캡션의 가장자리 사이의 거리를 설정의 캡션 표시줄에 대 한 단추를 설정 하는 방법을 보여 줍니다. 에서 단추의 도구 설명 설정, 캡션 표시줄의 텍스트 레이블을 설정, 비트맵 이미지의 캡션 표시줄에 대 한 설정 및 이미지에 대 한 도구 설명의 캡션 표시줄에 설정 합니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 `CMFCCaptionBar` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 예제에서는 캡션 표시줄 컨트롤을 만드는, 캡션 표시줄에 3D 테두리를 설정, 픽셀 캡션 표시줄 컨트롤의 가장자리와 요소 표시줄 캡션의 가장자리 사이의 거리를 설정의 캡션 표시줄에 대 한 단추를 설정 하는 방법을 보여 줍니다. 에서 단추의 도구 설명 설정, 캡션 표시줄의 텍스트 레이블을 설정, 비트맵 이미지의 캡션 표시줄에 대 한 설정 및 이미지에 대 한 도구 설명의 캡션 표시줄에 설정 합니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#1](../../mfc/reference/codesnippet/cpp/cmfccaptionbar-class_1.h)]
 [!code-cpp[NVC_MFC_MSOffice2007Demo#2](../../mfc/reference/codesnippet/cpp/cmfccaptionbar-class_2.cpp)]

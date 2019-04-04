@@ -59,12 +59,12 @@ helpviewer_keywords:
 - ID_FILE_NEW command [MFC]
 - ID_INDICATOR_NUM command
 ms.assetid: a7883b46-23f7-4870-ac3a-804aed9258b5
-ms.openlocfilehash: 4c066521ba2b5be9ac24a8abaece42e57b8ad85f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 8d568760cc75a4c1f2ddb6dd88108cc830783194
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279366"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775833"
 ---
 # <a name="tn022-standard-commands-implementation"></a>TN022: 표준 명령 구현
 
@@ -221,7 +221,7 @@ MFC 표준 명령 0xE000에 0xEFFF 범위에 속합니다. 하세요 자제 이�
 
    현재이 명령에 대 한 표준 구현 하지 않습니다. 각각에 대해이 구현 해야 `CView`-클래스를 파생 합니다.
 
-   이 명령을 구현 하려는 경우이 명령 ID를 사용 하는 것이 좋습니다. MFC 자습서 샘플을 참조 하세요 [SCRIBBLE](../visual-cpp-samples.md) 구현 예제입니다.
+   이 명령을 구현 하려는 경우이 명령 ID를 사용 하는 것이 좋습니다. MFC 자습서 샘플을 참조 하세요 [SCRIBBLE](../overview/visual-cpp-samples.md) 구현 예제입니다.
 
 - ID_EDIT_COPY는 클립보드에 현재 선택 영역을 복사합니다.
 
@@ -438,7 +438,7 @@ MFC 표준 명령 0xE000에 0xEFFF 범위에 속합니다. 하세요 자제 이�
 
    모든 OLE 클라이언트 응용 프로그램에는이 명령을 구현 해야 합니다. 응용 프로그램 마법사, OLE 옵션으로는 스 켈 레 톤의 구현을 만듭니다 `OnInsertObject` 완료 해야 하는 뷰 클래스에 있습니다.
 
-   MFC OLE 샘플을 참조 하세요 [OCLIENT](../visual-cpp-samples.md) 이 명령의 전체 구현에 대 한 예제입니다.
+   MFC OLE 샘플을 참조 하세요 [OCLIENT](../overview/visual-cpp-samples.md) 이 명령의 전체 구현에 대 한 예제입니다.
 
 - ID_OLE_EDIT_LINKS 편집 OLE 링크
 

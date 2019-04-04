@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2139
 ms.assetid: 31e047c0-5bf9-46c2-b6de-b627ea6a5768
-ms.openlocfilehash: f462b7d26e21b9313949bb3968b5b39e81bb30b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15813216399c0f00fea036cd95443235e7acf4c3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437130"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769084"
 ---
 # <a name="compiler-error-c2139"></a>컴파일러 오류 C2139
 
@@ -19,7 +19,7 @@ ms.locfileid: "50437130"
 
 형식 특성에 잘못 된 인수가 전달 되었습니다.
 
-자세한 내용은 [형식 특성에 대 한 컴파일러 지원](../../windows/compiler-support-for-type-traits-cpp-component-extensions.md)합니다.
+자세한 내용은 [형식 특성에 대 한 컴파일러 지원](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md)합니다.
 
 ## <a name="example"></a>예제
 

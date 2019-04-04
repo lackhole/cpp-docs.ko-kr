@@ -81,7 +81,7 @@ UTC로 조정 후 **_mktime32** 에서 날짜를 처리 1970 년 1 월 1 일 자
 
 - 0보다 큰 값은 일광 절약 시간이 적용 중임을 나타냅니다.
 
-- 0보다 작은 값은 C 런타임 라이브러리 코드가 표준 시간 또는 일광 절약 시간이 적용 중인지 여부를 계산하도록 합니다.
+- 0보다 작은 값은 C 런타임 라이브러리 코드가 표준 시간 또는 일광 절약 시간이 적용 중인지 여부를 컴퓨팅하도록 합니다.
 
 C 런타임 라이브러리는 [TZ](tzset.md) 환경 변수에서 일광 절약 시간 동작을 결정합니다. 하는 경우 **TZ** 을 설정 하지 않으면 Win32 API 호출인 [GetTimeZoneInformation](/windows/desktop/api/timezoneapi/nf-timezoneapi-gettimezoneinformation) 운영 체제에서 일광 절약 시간 정보를 가져오는 데 사용 됩니다. 이러한 정보를 가져오지 못하면 라이브러리에서는 일광 절약 시간 계산 구현을 위한 미국의 규칙이 사용된다고 가정합니다. **tm_isdst** 필수 필드입니다. 이 필드를 설정하지 않으면 해당 값이 정의되지 않고 이러한 함수의 반환 값을 예측할 수 없습니다. 경우 *timeptr* 가리키는 **tm** 에 대 한 이전 호출에서 반환 된 구조 [asctime](asctime-wasctime.md)를 [gmtime](gmtime-gmtime32-gmtime64.md), 또는 [localtime](localtime-localtime32-localtime64.md) (또는 이러한 함수의 변형)는 **tm_isdst** 필드에 올바른 값을 포함 합니다.
 

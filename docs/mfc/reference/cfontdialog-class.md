@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CFontDialog [MFC], IsUnderline
 - CFontDialog [MFC], m_cf
 ms.assetid: 6228d500-ed0f-4156-81e5-ab0d57d1dcf4
-ms.openlocfilehash: 3dea0f2ba358582b49de107c234a66a751e8f0b0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b711ca65e552d495e466ea2e46a6779cf43ecbe3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267188"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767746"
 ---
 # <a name="cfontdialog-class"></a>CFontDialog 클래스
 
@@ -149,8 +149,7 @@ CFontDialog(
 에 대 한 포인터를 [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) 데이터 구조에서 다양 한 글꼴 특성 설정 할 수 있는 컨트롤을 편집 합니다.
 
 *dwFlags*<br/>
-하나 이상의 글꼴 선택 플래그를 지정합니다. 비트 OR 연산자를 사용하여 하나 이상의 미리 설정된 값을 결합할 수 있습니다. 
-  `m_cf.Flag` 구조체 멤버를 수정하는 경우 기본 동작을 그대로 유지하려면 변경에서 비트 OR 연산자를 사용해야 합니다. 이러한 플래그에 대 한 내용은 설명을 참조 합니다 [CHOOSEFONT](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta) Windows SDK에는 구조입니다.
+하나 이상의 글꼴 선택 플래그를 지정합니다. 비트 OR 연산자를 사용하여 하나 이상의 미리 설정된 값을 결합할 수 있습니다. `m_cf.Flag` 구조체 멤버를 수정하는 경우 기본 동작을 그대로 유지하려면 변경에서 비트 OR 연산자를 사용해야 합니다. 이러한 플래그에 대 한 내용은 설명을 참조 합니다 [CHOOSEFONT](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta) Windows SDK에는 구조입니다.
 
 *pdcPrinter*<br/>
 프린터 장치 컨텍스트에 대한 포인터입니다. 제공하는 경우 이 매개 변수는 글꼴을 선택할 프린터에 대한 프린터 장치 컨텍스트를 가리킵니다.
@@ -395,6 +394,6 @@ CHOOSEFONT m_cf;
 
 ## <a name="see-also"></a>참고자료
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog 클래스](../../mfc/reference/ccommondialog-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)

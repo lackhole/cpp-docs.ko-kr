@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3908
 ms.assetid: 3c322482-c79e-4197-a578-2ad9bc379d1a
-ms.openlocfilehash: 84b21f20cbc8203a9cd70e487738c34c6ad3a89b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e11d830c3d662ea424caadeb50df669700f8c78f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598931"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58766757"
 ---
 # <a name="compiler-error-c3908"></a>컴파일러 오류 C3908
 
@@ -19,7 +19,7 @@ ms.locfileid: "50598931"
 
 속성 접근자 메서드 (get 또는 set)는 자체 속성에 대 한 액세스를 보다 덜 제한적인 액세스를 가질 수 없습니다.  경우에 마찬가지 이벤트 접근자 메서드.
 
-자세한 내용은 [속성](../../windows/property-cpp-component-extensions.md) 하 고 [이벤트](../../windows/event-cpp-component-extensions.md)합니다.
+자세한 내용은 [속성](../../extensions/property-cpp-component-extensions.md) 하 고 [이벤트](../../extensions/event-cpp-component-extensions.md)합니다.
 
 다음 샘플에서는 C3908를 생성합니다.
 

@@ -21,12 +21,12 @@ helpviewer_keywords:
 - toolbars [MFC], wrapping
 - floating palettes
 ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
-ms.openlocfilehash: 93d1e067777b1c6f4430fe9cc44ae531559b6962
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 01450dca56ad662c8db0a35f89749c4a288109b3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294673"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768136"
 ---
 # <a name="docking-and-floating-toolbars"></a>도구 모음 고정 및 고정 해제
 
@@ -50,7 +50,7 @@ Microsoft Foundation Class 라이브러리를 도킹 가능한 도구 모음을 
 
 - [고정 스타일 도구 모음에 대 한 줄 바꿈 위치 설정](#_core_setting_wrap_positions_for_a_fixed_style_toolbar)
 
-MFC 일반 샘플을 참조 하세요 [DOCKTOOL](../visual-cpp-samples.md) 예입니다.
+MFC 일반 샘플을 참조 하세요 [DOCKTOOL](../overview/visual-cpp-samples.md) 예입니다.
 
 ##  <a name="_core_enabling_docking_in_a_frame_window"></a> 프레임 창의 도킹을 사용 하도록 설정
 
@@ -104,7 +104,7 @@ Visual c + + 버전 4.0부터 있습니다 수 수 있도록 동적으로 부동
 
 [!code-cpp[NVC_MFCDocViewSDI#10](../mfc/codesnippet/cpp/docking-and-floating-toolbars_1.cpp)]
 
-MFC 일반 샘플 [DOCKTOOL](../visual-cpp-samples.md) 클래스의 멤버 함수를 사용 하는 방법을 보여 줍니다 [CControlBar](../mfc/reference/ccontrolbar-class.md) 하 고 [CToolBar](../mfc/reference/ctoolbar-class.md) 동적 레이아웃 도구 모음을 관리할 수 있습니다. EDITBAR 파일을 참조 하십시오. CPP 파일을 참조 합니다.
+MFC 일반 샘플 [DOCKTOOL](../overview/visual-cpp-samples.md) 클래스의 멤버 함수를 사용 하는 방법을 보여 줍니다 [CControlBar](../mfc/reference/ccontrolbar-class.md) 하 고 [CToolBar](../mfc/reference/ctoolbar-class.md) 동적 레이아웃 도구 모음을 관리할 수 있습니다. EDITBAR 파일을 참조 하십시오. CPP 파일을 참조 합니다.
 
 ### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 

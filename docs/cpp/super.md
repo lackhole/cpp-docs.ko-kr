@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __super keyword [C++]
 ms.assetid: f0957c31-9256-405b-b402-cad182404b5f
-ms.openlocfilehash: 778ed2d80aa926c7282073a99898a6aa355a3379
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a69d177bb83ce404a18d50c8f966be5d81f5fa72
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602620"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779653"
 ---
 # <a name="super"></a>__super
 
@@ -33,7 +33,7 @@ __super::member_function();
 
 **__super**는 using 선언과 함께 사용할 수 없습니다. 자세한 내용은 [선언 사용](../cpp/using-declaration.md)을 참조하십시오.
 
-코드를 삽입하는 [특성](../windows/cpp-attributes-reference.md)이 도입되면서 이름을 모를 수도 있지만 호출하려는 메서드를 포함하는 하나 이상의 기본 클래스가 코드에 포함될 수도 있습니다.
+코드를 삽입하는 [특성](../windows/attributes/attributes-alphabetical-reference.md)이 도입되면서 이름을 모를 수도 있지만 호출하려는 메서드를 포함하는 하나 이상의 기본 클래스가 코드에 포함될 수도 있습니다.
 
 ## <a name="example"></a>예제
 

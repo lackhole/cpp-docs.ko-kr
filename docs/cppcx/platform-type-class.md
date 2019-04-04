@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Type Class
 ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
-ms.openlocfilehash: 73338e5b4c723c7f66dbecaea5add3b197f3493d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 456dbff652c8f1b800308ff757930b425616a83f
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744034"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781746"
 ---
 # <a name="platformtype-class"></a>Platform::Type 클래스
 
-특정 형식에 대한 런타임 정보(문자열 이름 및 형식 코드)를 포함합니다. 호출 하 여 가져올 [object:: gettype](../cppcx/platform-object-class.md#gettype) 모든 개체에 사용 하 여 또는 [typeid](../windows/typeid-cpp-component-extensions.md) 클래스 또는 구조체 이름에는 연산자입니다.
+특정 형식에 대한 런타임 정보(문자열 이름 및 형식 코드)를 포함합니다. 호출 하 여 가져올 [object:: gettype](../cppcx/platform-object-class.md#gettype) 모든 개체에 사용 하 여 또는 [typeid](../extensions/typeid-cpp-component-extensions.md) 클래스 또는 구조체 이름에는 연산자입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -104,8 +104,7 @@ Platform::TypeCode 열거형 값의 하나입니다.
 
 ### <a name="remarks"></a>설명
 
-
-  `typeid` 속성은 GetTypeCode() 멤버 메서드에 해당합니다.
+`typeid` 속성은 GetTypeCode() 멤버 메서드에 해당합니다.
 
 ## <a name="tostring"></a> Type::ToString 메서드
 

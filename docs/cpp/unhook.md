@@ -8,12 +8,12 @@ helpviewer_keywords:
 - event handlers [C++], dissociating events
 - __unhook keyword [C++]
 ms.assetid: 953a14f3-5199-459d-81e5-fcf015a19878
-ms.openlocfilehash: f6e5031cb77729ede053b275c90fa93bf251fcb6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8f42c35024995c026ae10fc7f0ab3db77d1e5dc
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486777"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769526"
 ---
 # <a name="unhook"></a>__unhook
 
@@ -48,7 +48,7 @@ long  __unhook(
 - 관리 되는 이벤트: *SourceClass* 는 이벤트 소스 클래스와 *EventMethod* 이벤트입니다.
 
 *interface*<br/>
-연결 되 고 인터페이스 이름을 *받는 사람*는 COM 이벤트 수신기에 대해서만 합니다 *layout_dependent* 의 매개 변수는 [event_receiver](../windows/event-receiver.md) 특성이 **true**합니다.
+연결 되 고 인터페이스 이름을 *받는 사람*는 COM 이벤트 수신기에 대해서만 합니다 *layout_dependent* 의 매개 변수는 [event_receiver](../windows/attributes/event-receiver.md) 특성이 **true**합니다.
 
 *source*<br/>
 이벤트 소스의 인스턴스에 대한 포인터입니다. 코드에 따라 `type` 에 지정 된 `event_receiver`를 *원본* 다음 중 하나일 수 있습니다.
@@ -89,7 +89,7 @@ COM 이벤트의 경우를 제외 하 고 **__hook** 하 고 **__unhook** 이벤
 
 사용 하는 대신 **__unhook** -= 연산자를 사용 하는 것입니다.
 
-관리 되는 새 구문의 이벤트 코딩에 대 한 내용은 참조 하세요 [이벤트](../windows/event-cpp-component-extensions.md)합니다.
+관리 되는 새 구문의 이벤트 코딩에 대 한 내용은 참조 하세요 [이벤트](../extensions/event-cpp-component-extensions.md)합니다.
 
 > [!NOTE]
 >  템플릿 기반 클래스 또는 구조체에 event를 포함시킬 수 없습니다.
@@ -100,9 +100,9 @@ COM 이벤트의 경우를 제외 하 고 **__hook** 하 고 **__unhook** 이벤
 
 ## <a name="see-also"></a>참고자료
 
-[키워드](../cpp/keywords-cpp.md)<br/>
-[event_source](../windows/event-source.md)<br/>
-[event_receiver](../windows/event-receiver.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[event_source](../windows/attributes/event-source.md)<br/>
+[event_receiver](../windows/attributes/event-receiver.md)<br/>
 [__event](../cpp/event.md)<br/>
 [__hook](../cpp/hook.md)<br/>
 [__raise](../cpp/raise.md)

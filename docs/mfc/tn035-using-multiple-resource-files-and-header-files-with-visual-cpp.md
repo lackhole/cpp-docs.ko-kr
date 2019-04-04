@@ -7,12 +7,12 @@ helpviewer_keywords:
 - resource files, multiple
 - TN035
 ms.assetid: 1f08ce5e-a912-44cc-ac56-7dd93ad73fb6
-ms.openlocfilehash: 7d97e4536c2a43e7e224e9056aa39df5480daeca
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0493dd45caf5eb78da435987a4590442a908a5a3
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279922"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772766"
 ---
 # <a name="tn035-using-multiple-resource-files-and-header-files-with-visual-c"></a>TN035: Visual c + +에서 여러 리소스 파일과 헤더 파일 사용
 
@@ -177,7 +177,7 @@ Visual C++ 및 리소스 컴파일러는 한 .RC 파일 안에 들어 있는 다
 
 - 텍스트 편집기를 사용하여 사람이 읽을 수 있는 형태로 리소스를 관리하려는 경우 .RC 파일을 Visual C++ 편집으로부터 분리된 상태로 유지해야 합니다.
 
-- 사용자 정의 리소스를 다른 전문 데이터 편집기를 통해 해석할 수 있는 이진 또는 텍스트 형태로 유지해야 하는 경우 Visual C++에서 형식을 16진 데이터로 변경하지 않도록 이러한 리소스를 별도의 .RC 파일에 보관해야 합니다. 합니다. MFC 고급 개념 샘플 WAV (소리) 파일 리소스가 [SPEAKN](../visual-cpp-samples.md) 는 좋은 예입니다.
+- 사용자 정의 리소스를 다른 전문 데이터 편집기를 통해 해석할 수 있는 이진 또는 텍스트 형태로 유지해야 하는 경우 Visual C++에서 형식을 16진 데이터로 변경하지 않도록 이러한 리소스를 별도의 .RC 파일에 보관해야 합니다. 합니다. MFC 고급 개념 샘플 WAV (소리) 파일 리소스가 [SPEAKN](../overview/visual-cpp-samples.md) 는 좋은 예입니다.
 
 Set Includes 대화 상자에서 컴파일 타임 지시문에 SECOND.RC를 #include로 지정할 수 있습니다.
 

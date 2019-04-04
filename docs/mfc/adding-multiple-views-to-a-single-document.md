@@ -7,19 +7,19 @@ helpviewer_keywords:
 - single document interface (SDI), adding views
 - views [MFC], SDI applications
 ms.assetid: 86d0c134-01d5-429c-b672-36cfb956dc01
-ms.openlocfilehash: b665f090fc680221be70f170452d756dd5f68dc5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 593c59c73b58b4364c9d652ce8eb415c17af496c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284283"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767589"
 ---
 # <a name="adding-multiple-views-to-a-single-document"></a>단일 문서에 뷰 여러 개 추가
 
 Microsoft Foundation 클래스 (MFC) 라이브러리를 사용 하 여 만든 단일 문서 인터페이스 (SDI) 응용 프로그램에서 각 문서 유형에 단일 보기 형식 연관 됩니다. 경우에 따라 새 보기를 사용 하 여 문서의 현재 보기를 전환할 수 있도록는 것이 좋습니다.
 
 > [!TIP]
->  단일 문서의 여러 뷰를 구현에서 추가 절차를 참조 하세요 [CDocument::AddView](../mfc/reference/cdocument-class.md#addview) 하며 [수집](../visual-cpp-samples.md) MFC 샘플입니다.
+>  단일 문서의 여러 뷰를 구현에서 추가 절차를 참조 하세요 [CDocument::AddView](../mfc/reference/cdocument-class.md#addview) 하며 [수집](../overview/visual-cpp-samples.md) MFC 샘플입니다.
 
 새로 추가 하 여이 기능을 구현할 수 `CView`-파생 클래스와 기존 MFC 응용 프로그램 보기를 동적으로 전환 하는 것에 대 한 코드를 추가 합니다.
 

@@ -9,14 +9,17 @@ helpviewer_keywords:
 - local symbols in browse information
 - symbols
 ms.assetid: bdb4b93c-a88a-441a-84fd-01087d03be25
-ms.openlocfilehash: 75c3b926a605de66c876e9350218807031cd9a43
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 6a2e685d33b108ce542fdc6e3e0565cc37299c1c
+ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810408"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58508743"
 ---
 # <a name="creating-an-sbr-file"></a>.Sbr 파일 만들기
+
+> [!WARNING]
+> BSCMAKE는 Visual Studio와 함께 설치되지만 더 이상 IDE에서 사용되지 않습니다. Visual Studio 2008부터 찾아보기 및 기호 정보는 자동으로 솔루션 폴더의 SQL Server .sdf 파일에 저장됩니다.
 
 BSCMAKE에 대 한 입력된 파일은.sbr 파일입니다. 컴파일러는.sbr 파일을 컴파일하는 각 개체 파일 (.obj)을 만듭니다. 빌드하거나 찾아보기 정보 파일을 업데이트 하는 경우 프로젝트에 대 한 모든.sbr 파일이 디스크에 있어야 합니다.
 

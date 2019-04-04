@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4687
 ms.assetid: 2f28e0b1-7358-4c88-bd70-aad8f0aa004c
-ms.openlocfilehash: 50551faf817f83d8a4af848a75af67ebe7004fe7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1978e1a35ba5b5d59b5961a21378d8af6921d145
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635481"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58778665"
 ---
 # <a name="compiler-warning-c4687"></a>컴파일러 경고 C4687
 
@@ -19,7 +19,7 @@ ms.locfileid: "50635481"
 
 봉인 된 추상 형식은 일반적으로 정적 멤버 함수를 유지 하는 데만 합니다.
 
-자세한 내용은 [추상](../../windows/abstract-cpp-component-extensions.md)하 고 [봉인](../../windows/sealed-cpp-component-extensions.md)합니다.
+자세한 내용은 [추상](../../extensions/abstract-cpp-component-extensions.md)하 고 [봉인](../../extensions/sealed-cpp-component-extensions.md)합니다.
 
 기본적으로 C4687 오류로 발생 합니다. C4687 표시 하지 않을 수 있습니다 합니다 [경고](../../preprocessor/warning.md) pragma입니다. 인 경우 추상, 봉인 된 형식에서 인터페이스를 구현 하려는 특정 C4687 억제할 수 있습니다.
 

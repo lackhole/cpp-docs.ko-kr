@@ -94,12 +94,12 @@ helpviewer_keywords:
 - COleIPFrameWndEx [MFC], WinHelpA
 - COleIPFrameWndEx [MFC], InitUserToobars
 ms.assetid: ebff1560-a1eb-4854-af00-95d4a192bd55
-ms.openlocfilehash: 8ebf63e6cf31f3852434926c3559774e7b4b46d3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ce0e3a8ecf4774bc0d259c0304b1e88532336bd1
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285349"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58771151"
 ---
 # <a name="coleipframewndex-class"></a>COleIPFrameWndEx 클래스
 
@@ -170,7 +170,7 @@ class COleIPFrameWndEx : public COleIPFrameWnd
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `COleIPFrameWndEx` 클래스의 인스턴스를 하위 클래스로 지정하고 해당 메서드를 재정의하는 방법을 보여 줍니다. 이 예제에서는 `OnDestory` 메서드, `RepositionFrame` 메서드, `RecalcLayout` 메서드 및 `CalcWindowRect` 메서드를 재정의하는 방법을 보여 줍니다. 이 코드 조각은 [워드 패드 샘플](../../visual-cpp-samples.md)의 일부입니다.
+다음 예제에서는 `COleIPFrameWndEx` 클래스의 인스턴스를 하위 클래스로 지정하고 해당 메서드를 재정의하는 방법을 보여 줍니다. 이 예제에서는 `OnDestory` 메서드, `RepositionFrame` 메서드, `RecalcLayout` 메서드 및 `CalcWindowRect` 메서드를 재정의하는 방법을 보여 줍니다. 이 코드 조각은 [워드 패드 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_WordPad#1](../../mfc/reference/codesnippet/cpp/coleipframewndex-class_1.cpp)]
 

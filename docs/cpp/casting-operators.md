@@ -6,12 +6,12 @@ helpviewer_keywords:
 - operators [C++], casting
 - casting operators [C++]
 ms.assetid: 16240348-26bc-4f77-8eab-57253f00ce52
-ms.openlocfilehash: 4d6c8a0dc448e08ae2f344faeeb27756cdd27eff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2ac8e9079b1d30dca077363bbb6cef35960902e
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549749"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768954"
 ---
 # <a name="casting-operators"></a>캐스팅 연산자
 
@@ -25,7 +25,7 @@ ms.locfileid: "50549749"
 
 - [reinterpret_cast](../cpp/reinterpret-cast-operator.md) 비트의 단순 재해석에 사용합니다.
 
-- [safe_cast](../windows/safe-cast-cpp-component-extensions.md) 확인할 수 있는 MSIL을 생성하는 데 사용합니다.
+- [safe_cast](../extensions/safe-cast-cpp-component-extensions.md) 사용할 C + + CLI에서 다음을 확인할 수 있는 MSIL을 생성 합니다.
 
 **const_cast** 및 **reinterpret_cast**는 이전 스타일의 캐스트와 동일한 위험을 보유하고 있으므로 마지막 수단으로 사용합니다. 하지만 이 두 캐스트는 이전 스타일 캐스트를 완전히 바꾸기 위해 여전히 필요합니다.
 

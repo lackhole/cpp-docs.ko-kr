@@ -2,16 +2,16 @@
 title: C++ 콘솔 앱 프로젝트 만들기
 description: Visual C++에서 Hello World 콘솔 앱 만들기
 ms.custom: mvc
-ms.date: 12/12/2017
+ms.date: 04/02/2019
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 3bbbd40534e3e429d68dbb6205134c57db40c851
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 739da0b6e5400117c0b09a3d4c3335bd44529a25
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817727"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898780"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ 콘솔 앱 프로젝트 만들기
 
@@ -19,11 +19,31 @@ C++ 프로그래머의 일반적인 시작점은 명령줄에서 실행되는 "H
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 컴퓨터에서 설치되고 실행 중인 C++ 워크로드를 사용하여 데스크톱 개발을 위해 Visual Studio를 설치합니다. 아직 설치되지 않은 경우 [Visual Studio 2017에서 C++ 지원 설치](vscpp-step-0-installation.md)를 참조하세요.
+- 컴퓨터에서 설치되고 실행 중인 C++ 워크로드를 사용하여 데스크톱 개발을 위해 Visual Studio를 설치합니다. 아직 설치 되지 않은 경우 [Visual Studio에서 c + + 설치 지원](vscpp-step-0-installation.md)합니다.
 
 ## <a name="create-your-app-project"></a>앱 프로젝트 만들기
 
 Visual Studio는 *프로젝트*를 사용하여 앱에 대한 코드를 구성하고 *솔루션*을 사용하여 프로젝트를 구성합니다. 프로젝트는 앱을 빌드하는 데 사용되는 모든 옵션, 구성 및 규칙을 포함하고, 프로젝트의 모든 파일과 외부 파일 간의 관계를 관리합니다. 앱을 만들려면 먼저 새 프로젝트 및 솔루션을 만듭니다.
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio에서 엽니다는 **파일** 메뉴 선택 **새로 만들기** > **프로젝트** 열려는 합니다 **새 프로젝트를 만듭니다** 대화 합니다. 선택 된 **콘솔 앱** 템플릿을 선택한 후 **다음**합니다.
+
+   ![새 프로젝트를 만듭니다](media/vs2019-choose-console-app.png "만들기는 새 프로젝트 대화 상자를 열려면")
+
+1. 에 **새 프로젝트 구성** 대화 상자에서 입력 *HelloWorld* 에 **프로젝트 이름** 편집 상자입니다. 선택할 **만들기** 프로젝트를 만듭니다.
+
+   ![새 프로젝트를 만들고 이름을](media/vs2019-configure-new-project-hello-world.png "이름 및 새 프로젝트를 만들려면")
+
+   Visual Studio 새 프로젝트를 추가 하 고 소스 코드를 편집할 수 있게 만듭니다. 기본적으로 "Hello World" 앱을 사용 하 여 소스 코드는 콘솔 앱 템플릿을 채웁니다.
+
+   ![IDE에서 hello World 프로젝트](media/vs2019-hello-world-code.png "IDE에서 Hello World 프로젝트")
+
+   코드 편집기에서 다음과 같이 표시 하는 경우 다음 단계로 이동 하 여 앱을 빌드할 준비가입니다.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 1. Visual Studio에서 엽니다는 **파일** 메뉴 선택 **새로 만들기 > 프로젝트** 열려는 합니다 **새 프로젝트** 대화 합니다.
 
@@ -35,7 +55,7 @@ Visual Studio는 *프로젝트*를 사용하여 앱에 대한 코드를 구성�
 
 Visual Studio를 만들고 소스 코드 파일을 추가 하려면 원하는 앱의 종류에 대 한 특수화 준비가 새로 만든 빈 프로젝트를 만듭니다. 다음에 수행 합니다.
 
-[문제가 발생했습니다.](#create-your-app-project-issues)
+[문제를 실행 합니다.](#create-your-app-project-issues)
 
 ## <a name="make-your-project-a-console-app"></a>콘솔 앱 프로젝트 만들기
 
@@ -49,7 +69,7 @@ Visual Studio는 Windows 및 기타 플랫폼에 대 한 모든 종류의 앱 �
 
 Visual Studio는 이제 콘솔 창에서 실행 하 여 프로젝트를 빌드할 알고 있습니다. 다음으로, 소스 코드 파일을 추가 하 고 앱에 대 한 코드를 입력 합니다.
 
-[문제가 발생했습니다.](#make-your-project-a-console-app-issues)
+[문제를 실행 합니다.](#make-your-project-a-console-app-issues)
 
 ## <a name="add-a-source-code-file"></a>소스 코드 파일을 추가 합니다.
 
@@ -61,7 +81,7 @@ Visual Studio는 이제 콘솔 창에서 실행 하 여 프로젝트를 빌드�
 
 Visual studio 새 비어 있는 소스 코드 파일을 만들고 소스 코드를 입력 하 고 편집기 창에서 열립니다.
 
-[문제가 발생했습니다.](#add-a-source-code-file-issues)
+[문제를 실행 합니다.](#add-a-source-code-file-issues)
 
 ## <a name="add-code-to-the-source-file"></a>소스 파일에 코드 추가
 
@@ -83,12 +103,16 @@ Visual studio 새 비어 있는 소스 코드 파일을 만들고 소스 코드�
 
 코드 편집기에서 다음과 같이 표시 하는 경우 다음 단계로 이동 하 여 앱을 빌드할 준비가입니다.
 
-[문제가 발생했습니다.](#add-a-source-code-file-issues)
+[문제를 실행 합니다.](#add-a-source-code-file-issues)
+
+::: moniker-end
 
 ## <a name="next-steps"></a>다음 단계
 
 > [!div class="nextstepaction"]
 > [C + + 프로젝트 빌드 및 실행](vscpp-step-2-build.md)
+
+::: moniker range="<=vs-2017"
 
 ## <a name="troubleshooting-guide"></a>문제 해결 가이드
 
@@ -125,5 +149,7 @@ Dropdown 컨트롤이 나타나지 않습니다 합니다 **하위 시스템** �
 빨간색 물결선 소스 코드 편집기에서 모든 항목에서 표시 하는 경우 코드 사례, 맞춤법 및 문장 부호에 예제와 일치 하는지 확인 합니다. 대/소문자는 c + + 코드에서 중요 합니다.
 
 [돌아가서](#add-code-to-the-source-file)합니다.
+
+::: moniker-end
 
 <iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

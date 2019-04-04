@@ -17,12 +17,12 @@ helpviewer_keywords:
 - toolbars [MFC]
 - toolbars [MFC], implementing MFC toolbars
 ms.assetid: af3319ad-c430-4f90-8361-e6a2c06fd084
-ms.openlocfilehash: ce3b373bab67ba49a1f7aa41f2a9456ae7199028
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 55c43c47b93cd21d86293706fc7c3eb5145c39fd
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267812"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773179"
 ---
 # <a name="mfc-toolbar-implementation"></a>MFC 도구 모음 구현
 
@@ -84,7 +84,7 @@ MFC를 사용 하기 때문에이 재구현 결과 도구 모음에 대 한 MFC 
 > [!TIP]
 >  경우 노력을 투자 했 많이 이전 MFC 구현에서 `CToolBar`, 지원은 여전히 사용할 수 있습니다. 문서를 참조 하세요 [이전 도구 모음 사용 하 여](../mfc/using-your-old-toolbars.md)입니다.
 
-또한 MFC 일반 샘플을 참조 하세요 [DOCKTOOL](../visual-cpp-samples.md)합니다.
+또한 MFC 일반 샘플을 참조 하세요 [DOCKTOOL](../overview/visual-cpp-samples.md)합니다.
 
 ##  <a name="_core_the_toolbar_bitmap"></a> 도구 모음 비트맵
 

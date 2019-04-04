@@ -166,12 +166,12 @@ helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], m_strFormatLong
 - CMFCPropertyGridProperty [MFC], m_strFormatShort
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
-ms.openlocfilehash: 550f238ae66bcaf7d5afc245b709c42c78769949
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: aa88cc2d4ee915b970157ee6ed280512e2352bcc
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305070"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779029"
 ---
 # <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty 클래스
 
@@ -297,7 +297,7 @@ class CMFCPropertyGridProperty : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 생성 하는 방법에 설명 된 `CMFCPropertyGridProperty` 개체입니다. 이 예제에서 다양 한 메서드를 사용 하는 방법을 보여 줍니다는 `CMFCPropertyGridProperty` 옵션을 추가, 하위 항목을 추가, 속성을 사용 하도록 설정 및 속성을 표시 하는 클래스입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 생성 하는 방법에 설명 된 `CMFCPropertyGridProperty` 개체입니다. 이 예제에서 다양 한 메서드를 사용 하는 방법을 보여 줍니다는 `CMFCPropertyGridProperty` 옵션을 추가, 하위 항목을 추가, 속성을 사용 하도록 설정 및 속성을 표시 하는 클래스입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#27](../../mfc/reference/codesnippet/cpp/cmfcpropertygridproperty-class_1.cpp)]
 

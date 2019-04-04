@@ -8,12 +8,12 @@ helpviewer_keywords:
 - security [C++]
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-ms.openlocfilehash: 81a15f7a34ebe6c4c101932074c63cb1c7f7fd26
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: bc449d0bbf222391868dc7586e0245fd6e8cd2ac
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742475"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58769864"
 ---
 # <a name="security-best-practices-for-c"></a>C++의 최선의 보안 구현 방법
 
@@ -46,10 +46,9 @@ ms.locfileid: "57742475"
 
 ## <a name="safeint-library"></a>SafeInt 라이브러리
 
-[SafeInt 라이브러리](../windows/safeint-library.md) 정수 오버플로 및 응용 프로그램 수학 연산을 수행할 때 발생할 수 있는 다른 악용 가능한 오류를 방지할 수 있습니다. `SafeInt` 라이브러리에 포함 합니다 [SafeInt 클래스](../windows/safeint-class.md)의 [SafeIntException 클래스](../windows/safeintexception-class.md), 및 여러 [SafeInt 함수](../windows/safeint-functions.md).
+[SafeInt 라이브러리](../safeint/safeint-library.md) 정수 오버플로 및 응용 프로그램 수학 연산을 수행할 때 발생할 수 있는 다른 악용 가능한 오류를 방지할 수 있습니다. `SafeInt` 라이브러리에 포함 합니다 [SafeInt 클래스](../safeint/safeint-class.md)의 [SafeIntException 클래스](../safeint/safeintexception-class.md), 및 여러 [SafeInt 함수](../safeint/safeint-functions.md).
 
-
-  `SafeInt` 클래스는 정수 오버플로 및 0으로 나누기 악용으로부터 보호합니다. 서로 다른 형식의 값 간의 비교를 처리하는 데 사용할 수 있습니다. 두 가지 오류 처리 정책을 제공합니다. 기본 정책은 `SafeInt` 클래스가 `SafeIntException` 클래스 예외를 발생시켜 산술 연산을 완료할 수 없는 이유를 보고하기 위한 것입니다. 두 번째 정책은 `SafeInt` 클래스가 프로그램 실행을 중지하기 위한 것입니다. 사용자 지정 정책을 정의할 수도 있습니다.
+`SafeInt` 클래스는 정수 오버플로 및 0으로 나누기 악용으로부터 보호합니다. 서로 다른 형식의 값 간의 비교를 처리하는 데 사용할 수 있습니다. 두 가지 오류 처리 정책을 제공합니다. 기본 정책은 `SafeInt` 클래스가 `SafeIntException` 클래스 예외를 발생시켜 산술 연산을 완료할 수 없는 이유를 보고하기 위한 것입니다. 두 번째 정책은 `SafeInt` 클래스가 프로그램 실행을 중지하기 위한 것입니다. 사용자 지정 정책을 정의할 수도 있습니다.
 
 각 `SafeInt` 함수는 악용 가능한 오류로부터 하나의 산술 연산을 보호합니다. 동일한 형식으로 변환하지 않고 두 가지 종류의 매개 변수를 사용할 수 있습니다. 여러 개의 산술 연산을 보호하려면 `SafeInt` 클래스를 사용합니다.
 

@@ -32,7 +32,7 @@ PPL은 c + + 표준 라이브러리를 유사한 프로그래밍 모델을 제�
 
 `parallel_for_each`는 동시에 동작하므로 이 예제의 병렬 버전은 직렬 버전과 같은 결과를 생성하기 위해 `concurrent_vector` 개체를 정렬해야 합니다.
 
-예제에서는 간단한 메서드를 사용하여 피보나치 수를 계산합니다. 그러나 이 방법은 동시성 런타임을 통해 긴 계산의 성능을 개선하는 방법을 보여 줍니다.
+예제에서는 간단한 메서드를 사용하여 피보나치 수를 계산합니다. 그러나 이 방법은 동시성 런타임을 통해 긴 컴퓨팅의 성능을 개선하는 방법을 보여 줍니다.
 
 [!code-cpp[concrt-parallel-fibonacci#1](../../parallel/concrt/codesnippet/cpp/parallel-patterns-library-ppl_1.cpp)]
 

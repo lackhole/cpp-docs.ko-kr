@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPrintInfo structure [MFC]
 ms.assetid: 0b3de849-d050-4386-9a14-f4c1a25684f7
-ms.openlocfilehash: e08885fc9893d175e819c0acbf571d96d425a2c4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 96b6204fe46cb624d22506b2d3e5c1d7621b1865
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273363"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772217"
 ---
 # <a name="cprintinfo-structure"></a>CPrintInfo 구조체
 
@@ -317,7 +317,7 @@ void SetMinPage(UINT nMinPage);
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 DIBLOOK](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting)<br/>
 [CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting)<br/>

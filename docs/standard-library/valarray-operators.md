@@ -1,6 +1,6 @@
 ---
 title: '&lt;valarray&gt; 연산자'
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - valarray/std::operator!=
 - valarray/std::operator%
@@ -30,12 +30,12 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: daaddf6de79411aea58b79feb0fbfd0f8ff56f5c
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 6de4b4ad75f9240fb86ff5e363f4a7d9062925d9
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332610"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565924"
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; 연산자
 
@@ -268,7 +268,7 @@ operator&(
 
 비트를 조작 하는 연산을 사용할 수 있습니다 **char** 하 고 **int** 데이터 형식 및 변형 아닌 **float**를 **double**, **longdouble**를 **void**하십시오 **bool** 또는 기타 복잡 한 데이터 형식입니다.
 
-비트 `AND`은 논리적 `AND`과 같은 진리표를 포함하지만 개별 비트 수준에서 데이터 형식에 적용됩니다. [operator&&](../standard-library/valarray-operators.md#amp)는 요소 수준에서 적용되어 0이 아닌 모든 값을 true로 계산하며, 결과는 부울 값의 valarray입니다. 반면 비트 **ANDoperator&** 를 사용하는 경우에는 비트 연산의 결과에 따라 0이나 1이 아닌 값의 valarray가 생성될 수 있습니다.
+비트 `AND`은 논리적 `AND`과 같은 진리표를 포함하지만 개별 비트 수준에서 데이터 형식에 적용됩니다. [operator&&](#op_amp_amp)는 요소 수준에서 적용되어 0이 아닌 모든 값을 true로 계산하며, 결과는 부울 값의 valarray입니다. 비트 `AND` [연산자 &](#op_amp), 반면에 비트 연산의 결과 따라 1 이나 0이 아닌 값의 valarray 발생할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -356,7 +356,7 @@ operator&&(
 
 ### <a name="remarks"></a>설명
 
-논리적 `ANDoperator&&` 적용 되는 요소 수준에서 부울 값의 valarray가 true로 결과 0이 아닌 모든 값을 계산 합니다. 비트 버전 `AND`, [연산자 &,](../standard-library/valarray-operators.md#op_amp), 반면에 비트 연산의 결과 따라 1 이나 0이 아닌 값의 valarray 발생할 수 있습니다.
+논리적 `ANDoperator&&` 적용 되는 요소 수준에서 부울 값의 valarray가 true로 결과 0이 아닌 모든 값을 계산 합니다. 비트 버전 `AND`, [연산자 &,](#op_amp), 반면에 비트 연산의 결과 따라 1 이나 0이 아닌 값의 valarray 발생할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1430,7 +1430,7 @@ operator^(
 
 비트를 조작 하는 연산을 사용할 수 있습니다 **char** 하 고 **int** 데이터 형식 및 변형 아닌 **float**를 **double**, **long double**, **void**하십시오 **bool** 또는 기타 복잡 한 데이터 형식입니다.
 
-비트 배타적 `OR`(**XOR**)의 의미 체계에서 *b*1 및 *b*2 비트가 지정되는 경우 *b*1 **XOR** *b*2는 비트 중 정확히 하나가 true이면 **true**이고 두 비트가 모두 false이거나 true이면 **false**입니다.
+비트 배타적 `OR` ( **XOR**) 의미 체계: 비트를 지정 된 *b*1 및 *b*2 *b*1 **XOR** *b*2 **true** 경우 비트 중 정확히 하나는 true입니다. **false** 양쪽 비트가 모두 false 또는 양쪽 비트가 모두 true입니다.
 
 ### <a name="example"></a>예제
 

@@ -49,12 +49,12 @@ helpviewer_keywords:
 - IOleObject, ATL implementation
 - IOleObjectImpl class
 ms.assetid: 59750b2d-1633-4a51-a4c2-6455b6b90c45
-ms.openlocfilehash: c228d5030c3577af22feda6a0d03769867b1c5c3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5a815023d340839068873c32f1477d33053b13b4
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268463"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58775935"
 ---
 # <a name="ioleobjectimpl-class"></a>IOleObjectImpl 클래스
 
@@ -369,7 +369,7 @@ STDMETHOD(EnumVerbs)(IEnumOLEVERB** ppEnumOleVerb);
 
 ### <a name="remarks"></a>설명
 
-프로젝트의.rgs 파일에 동사를 추가할 수 있습니다. 예를 들어 CIRCCTL를 참조 하세요. RG에는 [CIRC](../../visual-cpp-samples.md) 샘플입니다.
+프로젝트의.rgs 파일에 동사를 추가할 수 있습니다. 예를 들어 CIRCCTL를 참조 하세요. RG에는 [CIRC](../../overview/visual-cpp-samples.md) 샘플입니다.
 
 참조 [ioleobject:: Enumverbs](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-enumverbs) Windows SDK에에서 있습니다.
 

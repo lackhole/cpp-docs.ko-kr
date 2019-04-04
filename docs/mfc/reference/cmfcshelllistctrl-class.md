@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CMFCShellListCtrl [MFC], Refresh
 - CMFCShellListCtrl [MFC], SetItemTypes
 ms.assetid: ad472958-5586-4c50-aadf-1844c30bf6e7
-ms.openlocfilehash: a08cfff3996d3dce617cf80293a96675083a39d1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a513a5e85ae5cf00f7ea874967a709245e016b34
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302548"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58772113"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl 클래스
 
@@ -92,7 +92,7 @@ A [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) 개체와 
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 개체를 만드는 방법의 `CMFCShellListCtrl` 클래스 및 현재 표시 된 폴더의 상위 폴더를 표시 하는 방법입니다. 이 코드 조각은의 일부인 합니다 [탐색기 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 개체를 만드는 방법의 `CMFCShellListCtrl` 클래스 및 현재 표시 된 폴더의 상위 폴더를 표시 하는 방법입니다. 이 코드 조각은의 일부인 합니다 [탐색기 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_Explorer#1](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_1.h)]
 [!code-cpp[NVC_MFC_Explorer#2](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_2.cpp)]

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - '[] operator'
 - subscript operator [C++], syntax
 ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
-ms.openlocfilehash: 5921b89c7637f1a4d1171c8835bb1b5300b718fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2d55c18d2c9faa1a704bea129f2551937e76133c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572915"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767927"
 ---
 # <a name="subscript-operator-"></a>첨자 연산자]
 
@@ -28,7 +28,7 @@ postfix-expression [ expression ]
 
 뒤에 첨자 연산자, 후 위 식 (수 있는 기본 식) **[ ]**, 배열 인덱싱 지정 합니다.
 
-관리 되는 배열에 대 한 정보를 참조 하세요 [배열](../windows/arrays-cpp-component-extensions.md)합니다.
+C + 관리 되는 배열에 대 한 자세한 + CLI 참조 [배열](../extensions/arrays-cpp-component-extensions.md)합니다.
 
 나타내는 값을 일반적으로 *후 위 식* 은 배열 식별자와 같은 포인터 값, 및 *식* 은 정수 계열 값 (열거형된 형식 포함). 그러나 구문적 요구 사항은 식 중 하나가 포인터 형식이고 다른 하나는 정수 계열 형식이어야 한다는 것 밖에 없습니다. 에 정수 값을 사용할 수 있으므로 합니다 *후 위 식* 위치 및 포인터 값에서 대괄호 안에 수 합니다 *식* 또는 첨자 위치 합니다. 다음과 같은 코드 조각을 생각해 봅시다.
 
@@ -77,7 +77,7 @@ int main() {
 
 ## <a name="positive-and-negative-subscripts"></a>양수 및 음수 아래 첨자
 
-배열의 첫 번째 요소는 요소 0입니다. c + + 배열의 범위는 *배열*[0] 하 *배열*[*크기* -1]입니다. 하지만 C++는 양수 및 음수 첨자를 지원합니다. 음수 첨자는 배열 경계 내에 속해야 하며, 그렇지 않으면 결과를 예측할 수 없습니다. 다음 코드에서는 양수 및 음수 배열 첨자를 보여 줍니다.
+배열의 첫 번째 요소는 요소 0입니다. c + + 배열의 범위는 *배열*[0] 하 *배열*[*크기* -1]입니다. 하지만 C++는 양수 및 음수 첨자를 지원합니다. 음수 첨자는 배열 경계 내에 속해야 하며, 그렇지 않으면 결과를 예측할 수 없습니다. 다음 코드에서는 양수 및 음수 배열 첨자를 보여줍니다.
 
 ```cpp
 #include <iostream>

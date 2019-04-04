@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CMFCToolBarButton [MFC], m_nStyle
 - CMFCToolBarButton [MFC], m_strText
 ms.assetid: 8a6ecffb-86b0-4f5c-8211-a9146b463efd
-ms.openlocfilehash: 94d7ba14e01b2965a0fe788162726d1019e847de
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0a3af2b13eeb2775671ee89019b1562010acc059
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275235"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58776390"
 ---
 # <a name="cmfctoolbarbutton-class"></a>CMFCToolBarButton 클래스
 
@@ -287,7 +287,7 @@ class CMFCToolBarButton : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 구성 하는 방법에 설명 된 `CMFCToolBarButton` 에서 다양 한 메서드를 사용 하 여 개체를 `CMFCToolBarButton` 클래스입니다. 이 예제에서는 마우스를 사용 하도록 설정 하 고 키보드 입력을 단추의 image index, 단추의 경계 사각형을 설정 및 단추를 표시할 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Tab 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 구성 하는 방법에 설명 된 `CMFCToolBarButton` 에서 다양 한 메서드를 사용 하 여 개체를 `CMFCToolBarButton` 클래스입니다. 이 예제에서는 마우스를 사용 하도록 설정 하 고 키보드 입력을 단추의 image index, 단추의 경계 사각형을 설정 및 단추를 표시할 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Tab 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_TabControl#1](../../mfc/reference/codesnippet/cpp/cmfctoolbarbutton-class_1.cpp)]
 [!code-cpp[NVC_MFC_TabControl#2](../../mfc/reference/codesnippet/cpp/cmfctoolbarbutton-class_2.cpp)]

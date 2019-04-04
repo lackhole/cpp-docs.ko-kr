@@ -1,6 +1,6 @@
 ---
 title: CDataConnection 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - ATL::CDataConnection
 - ATL.CDataConnection
@@ -65,12 +65,12 @@ helpviewer_keywords:
 - operator CSession*
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-ms.openlocfilehash: 8a419a19c04b579c72df9938151f9ada657178f2
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 769dfc99f431cb5ba803075e28176713f9bd7092
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326542"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565508"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection 클래스
 
@@ -119,7 +119,7 @@ class CDataConnection
 > [!NOTE]
 >  여러 세션을 처리 해야 하는 데이터베이스 응용 프로그램을 만드는 경우 사용 해야 합니다 [OpenNewSession](../../data/oledb/cdataconnection-opennewsession.md)합니다.
 
-## <a name="#cdataconnection"></a> Cdataconnection:: Cdataconnection
+## <a name="cdataconnection"></a> CDataConnection::CDataConnection
 
 인스턴스화하고 초기화는 `CDataConnection` 개체입니다.
 
@@ -141,7 +141,7 @@ CDataConnection(const CDataConnection &ds);
 
 두 번째 재정의에서는 새 `CDataConnection` 설정 지정할 데이터 연결 개체에 해당 하는 개체입니다.
 
-## <a name="#copy"></a> Cdataconnection:: Copy
+## <a name="copy"></a> CDataConnection::Copy
 
 기존 데이터 연결의 복사본을 만듭니다.
 
@@ -156,7 +156,7 @@ CDataConnection& Copy(const CDataConnection & ds) throw();
 *ds*<br/>
 [in] 복사할 기존 데이터 연결에 대 한 참조입니다.
 
-## <a name="#open"></a> Cdataconnection:: Open
+## <a name="open"></a> CDataConnection::Open
 
 초기화 문자열을 사용 하 여 데이터 원본에 연결을 엽니다.
 
@@ -175,7 +175,7 @@ HRESULT Open(LPCOLESTR szInitString) throw();
 
 표준 HRESULT입니다.
 
-## <a name="#opennewsession"></a> Cdataconnection:: Opennewsession
+## <a name="opennewsession"></a> CDataConnection::OpenNewSession
 
 현재 연결 개체의 데이터 원본을 사용 하 여 새 세션을 엽니다.
 
@@ -187,7 +187,7 @@ HRESULT OpenNewSession(CSession & session) throw();
 
 #### <a name="parameters"></a>매개 변수
 
-*세션*<br/>
+*session*<br/>
 [에서/out] 새 세션 개체에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -198,7 +198,7 @@ HRESULT OpenNewSession(CSession & session) throw();
 
 표준 HRESULT입니다.
 
-## <a name="op_bool"></a> Cdataconnection:: Operator BOOL
+## <a name="op_bool"></a> CDataConnection::operator BOOL
 
 현재 세션이 열려 있는지 여부를 결정 합니다.
 
@@ -226,7 +226,7 @@ operator bool() throw();
 
 반환 된 **bool** (c + + 데이터 형식) 값입니다. **true** 열려 있습니다; 현재 세션은 **false** 현재 세션이 닫힌 것을 의미 합니다.
 
-## <a name="op_cdata_amp"></a> Cdataconnection:: Operator CDataSource&amp;
+## <a name="op_cdata_amp"></a> CDataConnection::operator CDataSource&amp;
 
 포함된 된 참조를 반환 합니다 `CDataSource` 개체입니다.
 
@@ -248,7 +248,7 @@ operator const CDataSource&() throw();
 
 [!code-cpp[NVC_OLEDB_Consumer#4](../../data/oledb/codesnippet/cpp/cdataconnection-operator-cdatasource-amp_2.cpp)]
 
-## <a name="op_cdata_star"></a> Cdataconnection:: Operator CDataSource *
+## <a name="op_cdata_star"></a> CDataConnection::operator CDataSource*
 
 포함된 `CDataSource` 개체에 대한 포인터를 반환합니다.
 
@@ -264,7 +264,7 @@ operator const CDataSource*() throw();
 
 참조 [operator CDataSource &](../../data/oledb/cdataconnection-operator-cdatasource-amp.md) 사용 예입니다.
 
-## <a name="op_csession_amp"></a> Cdataconnection:: Operator CSession&amp;
+## <a name="op_csession_amp"></a> CDataConnection::operator CSession&amp;
 
 포함된 된 참조를 반환 합니다 `CSession` 개체입니다.
 
@@ -286,7 +286,7 @@ operator const CSession&();
 
 [!code-cpp[NVC_OLEDB_Consumer#6](../../data/oledb/codesnippet/cpp/cdataconnection-operator-csession-amp_2.cpp)]
 
-## <a name="op_csession_star"></a> Cdataconnection:: Operator CSession *
+## <a name="op_csession_star"></a> CDataConnection::operator CSession*
 
 포함된 `CSession` 개체에 대한 포인터를 반환합니다.
 
@@ -306,5 +306,5 @@ operator const CSession*() throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

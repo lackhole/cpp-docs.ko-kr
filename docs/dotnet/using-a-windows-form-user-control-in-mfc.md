@@ -9,12 +9,12 @@ helpviewer_keywords:
 - interop [C++], MFC
 - Windows Forms [C++], MFC support
 ms.assetid: 63fb099b-1dff-469c-9e34-dab52e122fcd
-ms.openlocfilehash: d36932a3edc0129f0497cb8db4095283650c5c96
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 38c5c37712b430b137934d441056e60f2c130f78
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494161"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773101"
 ---
 # <a name="using-a-windows-form-user-control-in-mfc"></a>MFC에서 Windows Form 사용자 정의 컨트롤 사용
 
@@ -34,7 +34,7 @@ MFC Windows Forms 지원 클래스를 사용 하 여, Windows Forms 컨트롤 MF
 > [!NOTE]
 > MFC Windows Forms 인터페이스 (mfcmifc80.dll) DLL의 개인 (수정된) 복사본을 사용 하 여 응용 프로그램을 빌드할 때 고유한 공급 업체 키를 사용 하 여 Microsoft 키를 대체 하지 않는 한 GAC에 설치 하지 못합니다. 어셈블리 서명에 대 한 자세한 내용은 참조 하세요. [어셈블리를 사용한 프로그래밍](/dotnet/framework/app-domains/programming-with-assemblies) 하 고 [강력한 이름 어셈블리 (어셈블리 서명) (C + + /cli CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)합니다.
 
-MFC 응용 프로그램에서는 Windows Forms 응용 프로그램을 사용 하 여 mfcmifc80.dll을 재배포 해야 합니다. 자세한 내용은 [MFC 라이브러리 재배포](../ide/redistributing-the-mfc-library.md)합니다.
+MFC 응용 프로그램에서는 Windows Forms 응용 프로그램을 사용 하 여 mfcmifc80.dll을 재배포 해야 합니다. 자세한 내용은 [MFC 라이브러리 재배포](../windows/redistributing-the-mfc-library.md)합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

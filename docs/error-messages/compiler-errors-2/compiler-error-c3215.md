@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3215
 ms.assetid: d0d16007-8885-42e0-b086-2d3a61f348c5
-ms.openlocfilehash: b9a6d9cd57572f65b24656fa527725c9c605143d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 24f17d2990c9258168a6d37fef101c21f62cb08d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628269"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58768655"
 ---
 # <a name="compiler-error-c3215"></a>컴파일러 오류 C3215
 
@@ -19,7 +19,7 @@ ms.locfileid: "50628269"
 
 제약 조건을 두 번 이상 지정했습니다.
 
-제네릭에 대한 자세한 내용은 [Generics](../../windows/generics-cpp-component-extensions.md)을 참조하세요.
+제네릭에 대한 자세한 내용은 [Generics](../../extensions/generics-cpp-component-extensions.md)을 참조하세요.
 
 다음 샘플에서는 C3215를 생성합니다.
 

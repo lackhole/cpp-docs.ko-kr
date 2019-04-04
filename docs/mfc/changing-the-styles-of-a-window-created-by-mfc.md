@@ -21,12 +21,12 @@ helpviewer_keywords:
 - CMainFrame class [MFC]
 - styles [MFC], windows
 ms.assetid: 77fa4f03-96b4-4687-9ade-41e46f7e4b0a
-ms.openlocfilehash: c8a3a5d9b8b007887dfb31f7459c0269377b38fd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 0a002badf9c20ca7b2d1a129eca069e586893f3c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294163"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58767238"
 ---
 # <a name="changing-the-styles-of-a-window-created-by-mfc"></a>MFC에서 만든 창 스타일 변경
 
@@ -50,7 +50,7 @@ Visual c + + 2.0 이상을 사용 하는 경우 응용 프로그램을 만들 �
 
 [!code-cpp[NVC_MFCDocView#15](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_1.cpp)]
 
-합니다 [CTRLBARS](../visual-cpp-samples.md) 샘플 응용 프로그램에 창 특성 변경에 대 한이 기술을 보여 줍니다. 응용 프로그램에서 변경 내용에 따라 `PreCreateWindow`, 함수의 기본 클래스 구현을 호출 하는 일을 할 수 있습니다.
+합니다 [CTRLBARS](../overview/visual-cpp-samples.md) 샘플 응용 프로그램에 창 특성 변경에 대 한이 기술을 보여 줍니다. 응용 프로그램에서 변경 내용에 따라 `PreCreateWindow`, 함수의 기본 클래스 구현을 호출 하는 일을 할 수 있습니다.
 
 다음 논의에서는 SDI 사례를 설명 하며 [MDI 사례](#_core_the_mdi_case)합니다.
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - classes [C++]
 - user-defined types, C++ classes
 ms.assetid: 516dd496-13fb-4f17-845a-e9ca45437873
-ms.openlocfilehash: 44736b9515363d1406b124858f72f12f8f7f552a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c28f83e7853ffb09bba7721ec71ab43c85aedb0c
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562749"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779393"
 ---
 # <a name="classes-and-structs-c"></a>클래스 및 구조체(C++)
 
@@ -51,7 +51,7 @@ ms.locfileid: "50562749"
 
 세 가지 클래스 형식은 구조체, 클래스 및 공용 구조체입니다. 사용 하 여 선언 된 합니다 [구조체](../cpp/struct-cpp.md)를 [클래스](../cpp/class-cpp.md), 및 [union](../cpp/unions.md) 키워드입니다. 다음 표에서는 세 가지 클래스 형식 간의 차이점을 보여 줍니다.
 
-공용 구조체에 대 한 자세한 내용은 참조 하세요. [공용 구조체](../cpp/unions.md)합니다. 관리 되는 클래스 및 구조체에 대 한 내용은 참조 하세요 [클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)합니다.
+공용 구조체에 대 한 자세한 내용은 참조 하세요. [공용 구조체](../cpp/unions.md)합니다. 방법은 클래스 및 구조체에서 C + + 및 C + + /CX에서는 참조 [클래스 및 구조체](../extensions/classes-and-structs-cpp-component-extensions.md)합니다.
 
 ### <a name="access-control-and-constraints-of-structures-classes-and-unions"></a>구조체, 클래스 및 공용 구조체의 Access Control 및 제약 조건
 

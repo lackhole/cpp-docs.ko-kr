@@ -1,6 +1,6 @@
 ---
 title: CRenderTarget 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - CRenderTarget
 - AFXRENDERTARGET/CRenderTarget
@@ -114,12 +114,12 @@ helpviewer_keywords:
 - CRenderTarget [MFC], m_pRenderTarget
 - CRenderTarget [MFC], m_pTextFormatDefault
 ms.assetid: 30d1607d-68d3-4d14-ac36-fdbd0ef903a1
-ms.openlocfilehash: 112bd4422a1fa6b9b97239228dc586a0555ddc96
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a14a1fba25c8c38c4bcf441dda566f14dc790f76
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259882"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565766"
 ---
 # <a name="crendertarget-class"></a>CRenderTarget 클래스
 
@@ -138,7 +138,7 @@ class CRenderTarget : public CObject;
 |이름|설명|
 |----------|-----------------|
 |[CRenderTarget::CRenderTarget](#crendertarget)|CRenderTarget 개체를 생성합니다.|
-|[CRenderTarget::~CRenderTarget](#crendertarget__~crendertarget)|소멸자입니다. 렌더링 대상 개체가 소멸 될 때 호출 됩니다.|
+|[CRenderTarget::~CRenderTarget](#_dtorcrendertarget)|소멸자입니다. 렌더링 대상 개체가 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -502,7 +502,7 @@ void DrawLine(
 
 ```
 void DrawRectangle(
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pBrush,
     FLOAT fStrokeWidth = 1.0,
     ID2D1StrokeStyle* strokeStyle = NULL);
@@ -510,7 +510,7 @@ void DrawRectangle(
 
 ### <a name="parameters"></a>매개 변수
 
-*rect*<br/>
+*rectangle*<br/>
 장치 독립적 픽셀에서을 그릴 사각형의 크기
 
 *pBrush*<br/>
@@ -555,7 +555,7 @@ IDWriteTextFormat 개체에서 제공 하는 형식 정보를 사용 하 여 지
 ```
 void DrawText(
     const CString& strText,
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pForegroundBrush,
     CD2DTextFormat* textFormat = NULL,
     D2D1_DRAW_TEXT_OPTIONS options = D2D1_DRAW_TEXT_OPTIONS_NONE,
@@ -567,7 +567,7 @@ void DrawText(
 *strText*<br/>
 그릴 유니코드 문자의 배열에 대 한 포인터입니다.
 
-*rect*<br/>
+*rectangle*<br/>
 텍스트를 그리는 영역의 위치와 크기입니다.
 
 *pForegroundBrush*<br/>
@@ -714,13 +714,13 @@ DestinationRectangle로 지정 된 렌더링 대상의 영역을 그리는 데 �
 
 ```
 void FillRectangle(
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pBrush);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*rect*<br/>
+*rectangle*<br/>
 장치 독립적 픽셀에서을 그릴 사각형의 크기.
 
 *pBrush*<br/>
@@ -999,7 +999,7 @@ void PushAxisAlignedClip(
 클리핑 영역의 장치 독립적 픽셀의 위치와 크기입니다.
 
 *모드*<br/>
-사용 되는 하위 픽셀 경계에 있는 클립 올바릅니다의 가장자리를 그릴 장면 콘텐츠를 사용 하 여 클립을 혼합 하려면 앤티 앨리어싱 모드입니다. 혼합 PopAxisAlignedClip 메서드를 호출 하 고 계층 내 각 기본 형식에 적용 되지 않습니다 하는 경우 수행 됩니다.
+사용 되는 하위 픽셀 경계는 클립 사각형의 가장자리를 그릴 장면 콘텐츠를 사용 하 여 클립을 혼합 하려면 앤티 앨리어싱 모드입니다. 혼합 PopAxisAlignedClip 메서드를 호출 하 고 계층 내 각 기본 형식에 적용 되지 않습니다 하는 경우 수행 됩니다.
 
 ##  <a name="pushlayer"></a>  CRenderTarget::PushLayer
 

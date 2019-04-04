@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCVisualManagerOfficeXP class [MFC]
 ms.assetid: 46b6f854-37c2-4836-8f56-5cb6ff63c9af
-ms.openlocfilehash: 6bfde7e241e16584254c956125208efc5c2a405a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c975a2b7ae7de12c154954e44470e7af9feeaa1d
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292239"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58781421"
 ---
 # <a name="cmfcvisualmanagerofficexp-class"></a>CMFCVisualManagerOfficeXP 클래스
 
@@ -33,7 +33,7 @@ class CMFCVisualManagerOfficeXP : public CMFCVisualManager
 
 ## <a name="example"></a>예제
 
-다음 예제에 사용 하는 방법을 보여 줍니다. `CMFCVisualManagerOfficeXP`합니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에 사용 하는 방법을 보여 줍니다. `CMFCVisualManagerOfficeXP`합니다. 이 코드 조각은의 일부인 합니다 [바탕 화면 경고 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#8](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagerofficexp-class_1.cpp)]
 

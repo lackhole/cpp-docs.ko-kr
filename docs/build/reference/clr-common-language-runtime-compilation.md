@@ -13,12 +13,12 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-ms.openlocfilehash: 124f54f46e71ac8fb8511d12fba43ab77d04c32e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 1946fdabe66934e64cf95d3c3f12e16bc98ba664
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822467"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58779354"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr(공용 언어 런타임 컴파일)
 
@@ -67,13 +67,13 @@ ms.locfileid: "57822467"
 
 관리 코드는 CLR에서 검사 및 관리할 수 있는 코드입니다. 관리 코드는 관리되는 개체에 액세스할 수 있습니다. 자세한 내용은 [/clr Restrictions](clr-restrictions.md)을 참조하십시오.
 
-관리되는 형식을 정의 및 사용하는 애플리케이션을 개발하는 방법에 대한 자세한 내용은 [Component Extensions for Runtime Platforms](../../windows/component-extensions-for-runtime-platforms.md).
+관리되는 형식을 정의 및 사용하는 애플리케이션을 개발하는 방법에 대한 자세한 내용은 [Component Extensions for Runtime Platforms](../../extensions/component-extensions-for-runtime-platforms.md).
 
 **/clr** 을 사용하여 컴파일된 응용 프로그램은 관리되는 데이터를 포함할 수도 있고, 포함하지 않을 수도 있습니다.
 
 관리 되는 응용 프로그램에서 디버깅을 사용 하려면 참조 [/ASSEMBLYDEBUG (DebuggableAttribute 추가)](assemblydebug-add-debuggableattribute.md)합니다.
 
-CLR 형식만 가비지 수집 힙에 인스턴스화됩니다. 자세한 내용은 [클래스 및 구조체](../../windows/classes-and-structs-cpp-component-extensions.md)합니다. 함수를 네이티브 코드로 컴파일하려면 `unmanaged` pragma를 사용합니다. 자세한 내용은 [관리 되는, 관리 되지 않는](../../preprocessor/managed-unmanaged.md)합니다.
+CLR 형식만 가비지 수집 힙에 인스턴스화됩니다. 자세한 내용은 [클래스 및 구조체](../../extensions/classes-and-structs-cpp-component-extensions.md)합니다. 함수를 네이티브 코드로 컴파일하려면 `unmanaged` pragma를 사용합니다. 자세한 내용은 [관리 되는, 관리 되지 않는](../../preprocessor/managed-unmanaged.md)합니다.
 
 기본적으로 **/clr** 은 적용되지 않습니다. **/clr** 이 적용되는 경우 **/MD** 도 적용됩니다. 자세한 내용은 [/MD, /MT, /LD(런타임 라이브러리 사용)](md-mt-ld-use-run-time-library.md)를 참조하세요. **/MD** 는 표준 헤더(.h) 파일에서 동적으로 연결된 다중 스레드 버전의 런타임 루틴이 선택되도록 합니다. CLR 가비지 수집기는 보조 스레드에서 종료자를 실행하므로 관리되는 프로그래밍에 다중 스레딩이 필요합니다.
 
