@@ -140,8 +140,7 @@ const unsigned int MaxExecutionResources = 0xFFFFFFFF;
 
 ##  <a name="pplparallelforeventguid"></a>  PPLParallelForEventGuid
 
-
-  `parallel_for` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
+`parallel_for` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
 
 ```
 const __declspec(selectany) GUID PPLParallelForEventGuid =
@@ -150,8 +149,7 @@ const __declspec(selectany) GUID PPLParallelForEventGuid =
 
 ##  <a name="pplparallelforeacheventguid"></a>  PPLParallelForeachEventGuid
 
-
-  `parallel_for_each` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
+`parallel_for_each` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
 
 ```
 const __declspec(selectany) GUID PPLParallelForeachEventGuid =
@@ -160,8 +158,7 @@ const __declspec(selectany) GUID PPLParallelForeachEventGuid =
 
 ##  <a name="pplparallelinvokeeventguid"></a>  PPLParallelInvokeEventGuid
 
-
-  `parallel_invoke` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
+`parallel_invoke` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
 
 ```
 const __declspec(selectany) GUID PPLParallelInvokeEventGuid =
