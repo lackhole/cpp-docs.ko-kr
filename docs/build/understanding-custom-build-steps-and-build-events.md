@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
 ms.openlocfilehash: 5bc402ad8999f1864c7e6b1155da3c68862dda97
 ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "57827742"
@@ -73,5 +73,5 @@ Visual C++ 개발 환경 내에서 빌드 프로세스를 사용자 지정하는
 
 ## <a name="see-also"></a>참고 항목
 
-[C++-visual Studio 프로젝트](creating-and-managing-visual-cpp-projects.md)<br>
+[C++-Visual Studio 프로젝트](creating-and-managing-visual-cpp-projects.md)<br>
 [빌드 명령 및 속성에 대한 일반 매크로](reference/common-macros-for-build-commands-and-properties.md)
