@@ -7,12 +7,12 @@ helpviewer_keywords:
 - SQL [C++], ODBC
 - ODBC [C++], SQL implementation
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
-ms.openlocfilehash: c9ea15520f98a86f8af7c278bfc77463689a4606
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f93d97530068695359273b523e7d2ae46de01cb
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576821"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037859"
 ---
 # <a name="sql"></a>SQL
 
@@ -47,11 +47,11 @@ SQL 문 같은 키워드 동사를 사용 하 여 시작 **CREATE** 또는 **선
 
 |SQL 키워드|마법사 및 데이터베이스 클래스 사용|
 |-----------------|---------------------------------------------|
-|**SELECT**|사용 해야 하는 테이블 및 데이터 원본에서 열을 식별 합니다.|
+|**선택**|사용 해야 하는 테이블 및 데이터 원본에서 열을 식별 합니다.|
 |**WHERE**|선택 항목을 범위를 좁히는 필터를 적용 합니다.|
 |**ORDER BY**|레코드 집합에 정렬 순서를 적용 합니다.|
 |**삽입**|레코드 집합에 새 레코드를 추가 합니다.|
-|**DELETE**|레코드 집합에서 레코드를 삭제 합니다.|
+|**Delete**|레코드 집합에서 레코드를 삭제 합니다.|
 |**업데이트**|레코드의 필드를 수정 합니다.|
 
 또한 데이터베이스 클래스를 인식 ODBC **호출** 일부 데이터 소스에 대해 미리 정의 된 쿼리 (또는 저장된 프로시저)를 호출 하는 데 사용할 수 있는 문. ODBC 데이터베이스 드라이버 이러한 문을 해석 하 고 각 DBMS에 대 한 적절 한 명령을 대체 합니다.
@@ -61,9 +61,9 @@ SQL 문 같은 키워드 동사를 사용 하 여 시작 **CREATE** 또는 **선
 
 클래스에서 사용자가 제공한 문을 인식할 수 없는 경우 `CRecordset::Open`, 테이블 이름으로 해석 됩니다.
 
-프레임 워크 SQL 문을 생성 하는 방법의 설명에 대 한 참조 [레코드 집합: 레코드 집합을 선택 하는 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) 하 고 [SQL: 사용자 지정 레코드 집합의 SQL 문 (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)합니다.
+프레임 워크 SQL 문을 생성 하는 방법의 설명은 참조 하세요. [레코드 집합: 레코드 집합 선택 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) 고 [SQL: 레코드 집합의 SQL 문 (ODBC) 사용자 지정](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)합니다.
 
-SQL 데이터베이스에는 C 및 c + +에서 사용 하는 것과 유사한 데이터 형식을 사용 합니다. 이러한 유사성 설명은 참조 하세요 [SQL: SQL 및 c + + 데이터 형식 (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)합니다.
+SQL 데이터베이스에는 C 및 c + +에서 사용 하는 것과 유사한 데이터 형식을 사용 합니다. 이러한 유사성 설명은 참조 하세요. [SQL: SQL 및 c + + 데이터 형식 (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)합니다.
 
 SQL, 지원 되는 SQL 문, 데이터 형식, SQL core 문법 및 읽기 목록을 SQL에 대 한 권장 되는 게시의 목록을 포함 하는 방법에 대 한 자세한 정보를 찾을 수 있습니다 합니다 *ODBC SDK* *프로그래머 참고 자료*  MSDN 라이브러리 cd 합니다.
 
@@ -79,11 +79,11 @@ SQL, 지원 되는 SQL 문, 데이터 형식, SQL core 문법 및 읽기 목록�
 
 - [SQL: 레코드 집합의 SQL 문 (ODBC) 사용자 지정](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)
 
-- [SQL: SQL 및 C++ 데이터 형식(ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)
+- [SQL: SQL 및 c + + 데이터 형식 (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)
 
-- [SQL: SQL 직접 호출(ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
+- [SQL: SQL 직접 호출 (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
-[ODBC 기본 사항](../../data/odbc/odbc-basics.md)
+[ODBC 기초](../../data/odbc/odbc-basics.md)

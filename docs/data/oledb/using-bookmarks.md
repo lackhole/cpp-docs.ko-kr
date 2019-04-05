@@ -7,12 +7,12 @@ helpviewer_keywords:
 - bookmarks, OLE DB
 - OLE DB providers, bookmark support
 ms.assetid: 7fa1d1a8-5063-4aa9-93ee-815bb9c98fae
-ms.openlocfilehash: 1f8ef4c25ad921dad66e5587f4005585b3e017f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 579e67151858904e877a34bf30467e3cb97fe2c4
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635658"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028495"
 ---
 # <a name="using-bookmarks"></a>책갈피 사용
 
@@ -30,7 +30,7 @@ public:
 };
 ```
 
-그런 다음 다음 코드에 의해 사용:
+그런 후 다음 코드에서 사용됩니다.
 
 ```cpp
 CDBPropSet propset(DBPROPSET_ROWSET);
@@ -57,6 +57,6 @@ product.GetBookmark(&bookmark);
 
 공급자의 책갈피 지원에 대 한 자세한 내용은 [공급자의 책갈피 지원](../../data/oledb/provider-support-for-bookmarks.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [접근자 사용](../../data/oledb/using-accessors.md)

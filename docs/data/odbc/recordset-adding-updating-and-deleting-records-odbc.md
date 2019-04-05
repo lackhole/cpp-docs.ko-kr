@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 레코드 추가, 업데이트 및 삭제(ODBC)'
+title: '레코드 집합: 추가, 업데이트 및 삭제할 레코드 (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - records [C++], updating
@@ -18,22 +18,22 @@ helpviewer_keywords:
 - ODBC recordsets [C++], editing records
 - records [C++], editing
 ms.assetid: 760c8889-bec4-482b-a8f2-319792a6af98
-ms.openlocfilehash: a13bffdc79f01c49c290b8b5d4388f06ce777105
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28c885119816c1df662cc0b941e02cb3cf747f3d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512374"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024610"
 ---
-# <a name="recordset-adding-updating-and-deleting-records-odbc"></a>레코드 집합: 레코드 추가, 업데이트 및 삭제(ODBC)
+# <a name="recordset-adding-updating-and-deleting-records-odbc"></a>레코드 집합: 추가, 업데이트 및 삭제할 레코드 (ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
-
-> [!NOTE]
->  보다 효율적으로 대량에서 레코드를 추가할 이제 있습니다. 자세한 내용은 [레코드 집합: 레코드 추가 대량 (ODBC)](../../data/odbc/recordset-adding-records-in-bulk-odbc.md)합니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 > [!NOTE]
->  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 사용 하는 경우 참조 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+>  보다 효율적으로 대량에서 레코드를 추가할 이제 있습니다. 자세한 내용은 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 추가](../../data/odbc/recordset-adding-records-in-bulk-odbc.md)합니다.
+
+> [!NOTE]
+>  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 사용 하는 경우 참조 [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 스냅숏을 업데이트할 수 및 다이너셋에 추가할 수 있습니다 (업데이트)를 편집 하 고 레코드를 삭제 합니다. 이 항목에 설명 합니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "50512374"
 
 - [레코드를 삭제 하는 방법을](#_core_deleting_a_record_from_a_recordset)합니다.
 
-업데이트 되는 방법에 대 한 자세한 내용은 출력 및 업데이트 내용을 다른 사용자에 게 표시 하는 방법을 참조 하세요 [레코드 집합: 레코드 집합의 레코드 업데이트 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)합니다. 일반적으로 추가, 편집 또는 레코드를 삭제 하는 경우 레코드 집합 데이터 원본을 즉시 변경 합니다. 관련 된 업데이트 그룹을 트랜잭션으로 일괄 처리할 수도 있습니다. 트랜잭션이 진행에서 중이면 트랜잭션을 커밋할 때까지 업데이트 최종 되지 않습니다. 이 통해 다시 수행 하거나 변경 내용을 롤백할 수 있습니다. 트랜잭션에 대 한 정보를 참조 하세요 [트랜잭션 (ODBC)](../../data/odbc/transaction-odbc.md)합니다.
+업데이트 되는 방법에 대 한 자세한 내용은 출력 및 업데이트 내용을 다른 사용자에 게 표시 하는 방법을 참조 하세요 [레코드 집합: 레코드 집합 업데이트 (ODBC)를 기록 하는 방법을](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)합니다. 일반적으로 추가, 편집 또는 레코드를 삭제 하는 경우 레코드 집합 데이터 원본을 즉시 변경 합니다. 관련 된 업데이트 그룹을 트랜잭션으로 일괄 처리할 수도 있습니다. 트랜잭션이 진행에서 중이면 트랜잭션을 커밋할 때까지 업데이트 최종 되지 않습니다. 이 통해 다시 수행 하거나 변경 내용을 롤백할 수 있습니다. 트랜잭션에 대 한 정보를 참조 하세요 [트랜잭션 (ODBC)](../../data/odbc/transaction-odbc.md)합니다.
 
 다음 표에서 다양 한 업데이트 특성을 가진 레코드 집합에 대해 사용할 수 있는 옵션을 보여 줍니다.
 
@@ -102,9 +102,9 @@ if( !rsStudentSet.CanUpdate( ) )
 
 1. 레코드 집합 개체의 호출 `Update` 멤버 함수입니다.
 
-   `Update` 데이터 원본에 새 레코드를 작성 하 여 추가 완료 합니다. 호출에 실패 하면 발생 하는 방법에 대 한 정보에 대 한 `Update`를 참조 하세요 [레코드 집합: 레코드 집합의 레코드 업데이트 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)합니다.
+   `Update` 데이터 원본에 새 레코드를 작성 하 여 추가 완료 합니다. 호출에 실패 하면 발생 하는 방법에 대 한 정보에 대 한 `Update`를 참조 하세요 [레코드 집합: 레코드 집합 업데이트 (ODBC)를 기록 하는 방법을](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)합니다.
 
-추가 된 레코드 레코드 집합에 표시 되는 시기 및 레코드 추가 방법에 대 한 정보를 참조 하세요 [레코드 집합: AddNew, Edit 및 삭제 작업 (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)합니다.
+추가 된 레코드 레코드 집합에 표시 되는 시기 및 레코드 추가 방법에 대 한 정보를 참조 하세요. [레코드 집합: AddNew를 편집 및 삭제 작업 (ODBC) 어떻게](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)합니다.
 
 다음 예제에서는 새 레코드를 추가 하는 방법을 보여 줍니다.
 
@@ -147,7 +147,7 @@ if( !rsStudent.Update( ) )
 
 1. 레코드 집합 개체의 호출 `Update` 멤버 함수입니다.
 
-   `Update` 데이터 원본에 변경 된 레코드를 작성 하 여 편집을 완료 합니다. 호출에 실패 하면 발생 하는 방법에 대 한 정보에 대 한 `Update`를 참조 하세요 [레코드 집합: 레코드 집합의 레코드 업데이트 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)합니다.
+   `Update` 데이터 원본에 변경 된 레코드를 작성 하 여 편집을 완료 합니다. 호출에 실패 하면 발생 하는 방법에 대 한 정보에 대 한 `Update`를 참조 하세요 [레코드 집합: 레코드 집합 업데이트 (ODBC)를 기록 하는 방법을](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)합니다.
 
 레코드를 편집한 후 편집할된 레코드에는 현재 레코드 유지 됩니다.
 
@@ -197,9 +197,9 @@ rsStudent.Delete( );
 rsStudent.MoveNext( );
 ```
 
-효과 대 한 자세한 내용은 합니다 `AddNew`, `Edit`, 및 `Delete` 멤버 함수를 참조 하세요 [레코드 집합: 레코드 집합의 레코드 업데이트 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)합니다.
+효과 대 한 자세한 합니다 `AddNew`, `Edit`, 및 `Delete` 멤버 함수를 참조 하세요. [레코드 집합: 레코드 집합 업데이트 (ODBC)를 기록 하는 방법을](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 레코드 잠금(ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+[레코드 집합: 레코드 잠금 (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

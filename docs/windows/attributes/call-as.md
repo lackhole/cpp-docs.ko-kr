@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - call_as attribute
 ms.assetid: a09d7f1f-353b-4870-9b45-f0284161695d
-ms.openlocfilehash: 16839f5a5040e6b0019005912782ba359178cc47
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a0051cdca6673800b37d5733c0b849da24010fcb
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579899"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023921"
 ---
 # <a name="callas"></a>call_as
 
@@ -25,7 +25,7 @@ ms.locfileid: "50579899"
 
 ### <a name="parameters"></a>매개 변수
 
-*function*<br/>
+*함수*<br/>
 원격 함수가 호출 되 면 호출할 하려는 로컬 함수입니다.
 
 ## <a name="remarks"></a>설명
@@ -61,8 +61,8 @@ __interface IMInterface {
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>
-[local](local-cpp.md)
+[로컬](local-cpp.md)

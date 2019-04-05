@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Make function
 ms.assetid: 66704143-df99-4a95-904d-ed99607e1034
-ms.openlocfilehash: cab261724399107c57b36a9020906a96697f7eca
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: b45337ef773f93968570f62ab73c02d11fae88ff
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58784786"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028249"
 ---
 # <a name="make-function"></a>Make 함수
 
@@ -209,7 +209,7 @@ ComPtr<T> Make();
 *arg5*<br/>
 인수 5 지정된 된 런타임 클래스에 전달 되는입니다.
 
-*arg6*<br/>
+*a r g 6*<br/>
 인수 6 지정된 된 런타임 클래스에 전달 되는입니다.
 
 *arg7*<br/>
@@ -235,6 +235,6 @@ A `ComPtr<T>` 개체가 고, 그렇지 않으면 경우 `nullptr`합니다.
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL 네임스페이스](microsoft-wrl-namespace.md)

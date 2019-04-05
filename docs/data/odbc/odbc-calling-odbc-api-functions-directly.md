@@ -12,19 +12,19 @@ helpviewer_keywords:
 - catalog functions (ODBC), calling
 - ODBC [C++], API functions
 ms.assetid: 4295f1d9-4528-4d2e-bd6a-c7569953c7fa
-ms.openlocfilehash: e76ff4da090a00409465333f8cbc9816ab4c4de6
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 435df301ad54c7ff5b2f0e46190e3dad7e9c07f1
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518348"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026385"
 ---
 # <a name="odbc-calling-odbc-api-functions-directly"></a>ODBC: ODBC API 함수 직접 호출
 
 데이터베이스 클래스를 제공 하기 위한 간단한 인터페이스를 [데이터 원본](../../data/odbc/data-source-odbc.md) 는 ODBC 보다 합니다. 결과적으로, 클래스는 모든 ODBC API를 캡슐화 하지 않습니다. 클래스의 기능을 벗어나는 모든 기능에 대 한 ODBC API 함수를 직접 호출 해야 합니다. ODBC 카탈로그 함수를 호출 해야 하는 예를 들어, (`::SQLColumns`, `::SQLProcedures`, `::SQLTables`, 등) 직접.
 
 > [!NOTE]
->  ODBC 데이터 원본 MFC 데이터 액세스 개체 (DAO) 클래스 또는이 항목에 설명 된 대로 MFC ODBC 클래스를 통해 액세스할 수 있습니다.
+>  ODBC 데이터 소스는 이 항목에서 설명하는 MFC ODBC 클래스뿐 아니라 MFC Data Access Object(DAO) 클래스를 통해서도 액세스할 수 있습니다.
 
 직접 ODBC API 함수를 호출 프레임 워크 없이 호출 된 경우 수행 동일한 단계를 수행 해야 합니다. 이러한 단계는:
 
@@ -42,6 +42,6 @@ ms.locfileid: "51518348"
 
 이러한 단계 외에도 함수 반환 값을 확인 하려면 프로그램 비동기 호출을 완료 하 고 기다리고 있지 않도록 추가 단계를 수행 해야 합니다. AFX_SQL_ASYNC 및 AFX_SQL_SYNC 매크로 사용 하 여 마지막 단계를 간소화할 수 있습니다. 자세한 내용은 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md) 에 *MFC 참조*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[ODBC 기본 사항](../../data/odbc/odbc-basics.md)
+[ODBC 기초](../../data/odbc/odbc-basics.md)

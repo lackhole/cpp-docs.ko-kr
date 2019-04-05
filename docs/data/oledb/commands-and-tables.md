@@ -11,12 +11,12 @@ helpviewer_keywords:
 - tables [C++], OLE DB Consumer Templates
 - OLE DB consumer templates, command support
 ms.assetid: 4bd3787b-6d26-40a9-be0c-083080537c12
-ms.openlocfilehash: 94581339353866d78faf7e20335c80250fb6027b
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: b2cdf7a2b439af3a564f5801e015f6064fb141dc
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175316"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041418"
 ---
 # <a name="commands-and-tables"></a>명령 및 테이블
 
@@ -35,6 +35,6 @@ ms.locfileid: "52175316"
 
    `CCommand` 세 개의 템플릿 인수가:는 접근자 형식, 행 집합 형식 및 결과 형식 (`CNoMultipleResults`, 기본적으로 또는 `CMultipleResults`). 지정 하는 경우 `CMultipleResults`의 `CCommand` 지 원하는 클래스를 `IMultipleResults` 인터페이스 및 여러 행 집합을 처리 합니다. 합니다 [DBVIEWER](https://github.com/Microsoft/VCSamples) 샘플에서는 여러 결과 처리 하는 방법을 보여 줍니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)

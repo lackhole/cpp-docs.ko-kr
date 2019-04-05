@@ -20,12 +20,12 @@ helpviewer_keywords:
 - InterlockedExchangePointer_acq intrinsic
 - InterlockedExchangePointer intrinsic
 ms.assetid: 0eaca0b0-d79e-406b-892d-b3b462c50bbb
-ms.openlocfilehash: 021c754436d6abe877e6b7dd372ba235869d8975
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 1f6e66ae4d5524518c3388f5af843cc15f65da50
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627495"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024532"
 ---
 # <a name="interlockedexchangepointer-intrinsic-functions"></a>_InterlockedExchangePointer Intrinsic Functions
 
@@ -64,7 +64,7 @@ void * _InterlockedExchangePointer_HLERelease(
 
 #### <a name="parameters"></a>매개 변수
 
-*Target*<br/>
+*대상*<br/>
 [out에서] 교환할 값에 대 한 포인터에 대 한 포인터입니다. 함수는 값을 `Value`로 설정하고 이전 값을 반환합니다.
 
 *값*<br/>
@@ -79,7 +79,7 @@ void * _InterlockedExchangePointer_HLERelease(
 |내장 함수|아키텍처|헤더|
 |---------------|------------------|------------|
 |`_InterlockedExchangePointer`|x86, ARM, x64|\<intrin.h>|
-|`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM|\<intrin.h>|
+|`_InterlockedExchangePointer_acq`에서 `_InterlockedExchangePointer_rel`에서 `_InterlockedExchangePointer_nf`|ARM|\<intrin.h>|
 |`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|HLE가 지원 x64|\<immintrin.h>|
 
 x86 아키텍처에서 `_InterlockedExchangePointer`는 `_InterlockedExchange`를 호출하는 매크로입니다.
@@ -96,7 +96,7 @@ HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcq
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

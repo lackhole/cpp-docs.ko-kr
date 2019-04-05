@@ -40,12 +40,12 @@ helpviewer_keywords:
 - Open method
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-ms.openlocfilehash: c4f6cc19897b66bfe26c6d53ccb87c35dbed82c9
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: b34a6300473db94621360f1d04fd73ddd7e8bd69
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58777651"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041460"
 ---
 # <a name="csession-class"></a>CSession 클래스
 
@@ -67,7 +67,7 @@ class CSession
 
 |||
 |-|-|
-|[Abort](#abort)|취소 (종료) 트랜잭션.|
+|[중단](#abort)|취소 (종료) 트랜잭션.|
 |[닫기](#close)|세션을 닫습니다.|
 |[커밋](#commit)|트랜잭션을 커밋합니다.|
 |[GetTransactionInfo](#gettransactioninfo)|트랜잭션에 대 한 정보를 반환합니다.|
@@ -214,8 +214,8 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 
 자세한 내용은 [itransactionlocal:: Starttransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CatDB](../../overview/visual-cpp-samples.md)<br/>
-[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

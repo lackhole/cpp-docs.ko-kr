@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CColumnAccessor class
 ms.assetid: 6ce1e67f-6a20-490d-9326-c168b43eee7e
-ms.openlocfilehash: 85d3d9d4339634ea7948d7d5e9e09725b7fd8758
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2d65fb047e758f449ed76c954bb4ac0c3623f6dd
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611369"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032130"
 ---
 # <a name="ccolumnaccessor-class"></a>CColumnAccessor 클래스
 
@@ -51,7 +51,7 @@ class CColumnAccessor : public CAccessorBase
 
 **헤더:** atldbcli.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - dispinterface attribute
 ms.assetid: 61c5a4a1-ae92-47e9-8ee4-f847be90172b
-ms.openlocfilehash: d0ace76fdbbc1ff930bccb4e6fc203895b4f1637
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6fd5010dc20d03c518206d81919e3beafbcaa9a9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677281"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038462"
 ---
 # <a name="dispinterface"></a>dispinterface
 
@@ -48,19 +48,19 @@ dispinterface helloPro
 
 |||
 |-|-|
-|**적용 대상**|**interface**|
+|**적용 대상**|**interface(인터페이스)**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|`dual`, `object`, `oleautomation`, `local`, `ms_union`|
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [용도별 특성](attributes-by-usage.md)<br/>
 [uuid](uuid-cpp-attributes.md)<br/>
 [dual](dual.md)<br/>
-[custom](custom-cpp.md)<br/>
+[사용자 지정](custom-cpp.md)<br/>
 [object](object-cpp.md)<br/>
 [__interface](../../cpp/interface.md)

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - pragmas, vtordisp
 - vtordisp pragma
 ms.assetid: 05b7d73c-43fa-4b62-8c8a-170a9e427391
-ms.openlocfilehash: 075f00ad8a4071af57014638707503847b58756d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67c6c329bcee75012f6075334760925eca945501
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557185"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034380"
 ---
 # <a name="vtordisp"></a>vtordisp
 
-**C + + 전용**
+**C++ 전용**
 
 숨겨진 vtordisp 생성/소멸 치환 멤버의 추가를 제어합니다.
 
@@ -41,7 +41,7 @@ ms.locfileid: "50557185"
 *n*<br/>
 Vtordisp 설정에 대해 새 값을 지정합니다. 가능한 값은 0, 1 또는 2에 해당 하는 `/vd0`, `/vd1`, 및 `/vd2` 컴파일러 옵션입니다. 자세한 내용은 [/vd (생성 치환 사용 안 함)](../build/reference/vd-disable-construction-displacements.md)합니다.
 
-*on*<br/>
+*On*<br/>
 `#pragma vtordisp(1)`와 같습니다.
 
 *해제*<br/>
@@ -57,7 +57,7 @@ Vtordisp 설정에 대해 새 값을 지정합니다. 가능한 값은 0, 1 또�
 
 2는 숨겨진 설정 지정 **vtordisp** 가상 함수를 사용 하 여 모든 가상 기본의 멤버입니다.  `vtordisp(2)` 올바른 성능을 보장 하기 위해 해야 할 수도 있습니다 **dynamic_cast** 부분적으로 생성 된 개체입니다. 자세한 내용은 [컴파일러 경고 (수준 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md)합니다.
 
-인수를 포함하지 않고 `#pragma vtordisp()`를 사용하는 경우 vtordisp 설정이 초기 설정으로 복원됩니다.
+`#pragma vtordisp()`를 인수 없이 vtordisp 설정이 초기 설정으로 복원 합니다.
 
 ```cpp
 #pragma vtordisp(push, 2)
@@ -65,8 +65,8 @@ class GetReal : virtual public VBase { ... };
 #pragma vtordisp(pop)
 ```
 
-**C + + 전용 종료**
+**C++ 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

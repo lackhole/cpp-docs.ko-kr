@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: 519bbe0bdbef786c95ca3f6711b344b7a4f6b641
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 9425f998f0e8fbe5f16e6eb136e00ba3fb7bd5d9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329890"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033685"
 ---
 # <a name="implements-c"></a>implements(C++)
 
@@ -26,10 +26,10 @@ IDL coclass의 구성원으로 강제 적용 되는 디스패치 인터페이스
 
 ### <a name="parameters"></a>매개 변수
 
-*interfaces*<br/>
+*인터페이스*<br/>
 쉼표로 구분한 목록 IDL coclass 소속 될 인터페이스입니다. 단일 인터페이스를 지정 하는 간단한 메서드는 **구현 (** *interface_name* **)** 합니다.
 
-*dispinterfaces*<br/>
+*dispinterface*<br/>
 쉼표로 구분한 목록 IDL coclass 소속 될 dispinterface입니다. 단일 dispinterface를 지정 하는 간단한 메서드는 **구현 (dispinterface =** *dispinterface_name* **)** 합니다.
 
 ## <a name="remarks"></a>설명
@@ -42,7 +42,7 @@ IDL coclass의 구성원으로 강제 적용 되는 디스패치 인터페이스
 
 |||
 |-|-|
-|**적용 대상**|**클래스**, **구조체**|
+|**적용 대상**|**class**, **struct**|
 |**반복 가능**|예|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
@@ -484,7 +484,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 특성](compiler-attributes.md)<br/>
 [클래스 특성](class-attributes.md)

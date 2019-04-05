@@ -8,18 +8,18 @@ f1_keywords:
 - C5001
 - C5012
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-ms.openlocfilehash: 69e174a000edfea7027a04f9cf97bf5a1aeb585e
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 6f80bc9d2a2438a6003c93ce7e60de50fd639a16
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518765"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023908"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>벡터화 도우미 및 병렬화 도우미 메시지
 
 Visual c + + 컴파일러 옵션을 사용할 수 있습니다 [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) 하 고 [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) 설정 하는 [자동 병렬화 및 자동 벡터화](../../parallel/auto-parallelization-and-auto-vectorization.md) 출력 이유 코드 및 해당 작업에 대 한 정보 메시지입니다. 이 문서는 이유 코드 및 메시지를 설명합니다.
 
-- [정보 메시지](#BKMK_InformationalMessages)
+- [알림 메시지](#BKMK_InformationalMessages)
 
 - [5xx](#BKMK_ReasonCode50x)
 
@@ -39,7 +39,7 @@ Visual c + + 컴파일러 옵션을 사용할 수 있습니다 [/Qpar-report](..
 
 지정한 보고 수준에 따라 각 루프에 대해 다음과 같은 정보 메시지 중 하나가 표시됩니다.
 
-이유 코드에 대한 정보는 이 문서의 다음 부분을 참조하세요.
+이유 코드에 대한 정보는 이 문서의 다음 부분을 참조하십시오.
 
 |알림 메시지|설명|
 |---------------------------|-----------------|
@@ -980,11 +980,11 @@ void code_1505(int *A, int *B)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [자동 병렬화 및 자동 벡터화](../../parallel/auto-parallelization-and-auto-vectorization.md)<br/>
 [네이티브 코드의 병렬 프로그래밍](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
-[#pragma loop)](../../preprocessor/loop.md)<br/>
+[#pragma loop()](../../preprocessor/loop.md)<br/>
 [/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
-[/Qpar-report(자동 평행화 도우미 보고 수준)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
+[/Qpar-report(자동 병렬화 도우미 보고 수준)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
 [/Qvec-report(자동 벡터화 도우미 보고 수준)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)

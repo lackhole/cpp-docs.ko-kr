@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CMyProviderCommand class in MyProviderRS.H
 - CCustomCommand class in CustomRS.H
 ms.assetid: b30b956e-cc91-4cf5-9fe6-f8b1ce9cc2a5
-ms.openlocfilehash: a2261d62775c8063d166c664a02fdf3be0d70d17
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b10d7bccae6fa9b86d072b8e13791f23516b2c63
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651206"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028563"
 ---
 # <a name="ccustomcommand-customrsh"></a>CCustomCommand (CustomRS.H)
 
@@ -41,6 +41,6 @@ class ATL_NO_VTABLE CCustomCommand :
 
 공급자에는 또한 라는 인터페이스가 있습니다 `IObjectWithSite`합니다. `IObjectWithSite` 인터페이스 ATL 2.0에 구현 된와 구현 자가 해당 자식에 자체에 대 한 정보를 전달할 수 있습니다. 명령 개체를 사용 하 여 `IObjectWithSite` 정보를 모든 사용자가 만든 사람에 대 한 행 집합 개체를 생성 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [공급자 마법사가 생성하는 파일](../../data/oledb/provider-wizard-generated-files.md)

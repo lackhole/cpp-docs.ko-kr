@@ -2,12 +2,12 @@
 title: __fastfail
 ms.date: 11/04/2016
 ms.assetid: 9cd32639-e395-4c75-9f3a-ac3ba7f49921
-ms.openlocfilehash: e96d981be5c5186d6cc472cc8f4dffcbf1c2b7bf
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: a9f75cbf3c572401ef26fb16ced221eb24d35534
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849478"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041508"
 ---
 # <a name="fastfail"></a>__fastfail
 
@@ -51,7 +51,7 @@ winnt.h 또는 wdm.h의 `code` 기호화된 상수 중 하나인 `FAST_FAIL_<des
 
 Windows 8부터는 빠른 실패 메커니즘이 기본적으로 지원됩니다. 빠른 실패 명령을 기본적으로 지원하지 않는 Windows 운영 체제는 보통 빠른 실패 요청을 액세스 위반 또는 `UNEXPECTED_KERNEL_MODE_TRAP` 버그 검사로 처리합니다. 이러한 경우에도 프로그램은 종료되지만 종료 속도는 느려질 수 있습니다.
 
-`__fastfail`은 내장 함수로만 사용할 수 있습니다.
+`__fastfail` 만 내장 함수로 제공 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -63,6 +63,6 @@ Windows 8부터는 빠른 실패 메커니즘이 기본적으로 지원됩니다
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

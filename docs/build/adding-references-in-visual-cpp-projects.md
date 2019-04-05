@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: eb4d970527ba919af10eadab7c907f5108767b9b
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: dff057977e6b6ff0c36d3a888bc4d5c3aa778576
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58780472"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038769"
 ---
 # <a name="consuming-libraries-and-components"></a>라이브러리 및 구성 요소를 사용합니다.
 
@@ -96,7 +96,7 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
    빌드 중 대상 위치에 대해 참조되는 어셈블리를 자동으로 복사할지 지정합니다.
 
-- **로컬 위성 어셈블리 복사 (C++ /cli CLI)**
+- **로컬 위성 어셈블리 복사 (C + + /cli CLI)**
 
    참조된 어셈블리의 위성 어셈블리를 빌드 중에 대상 위치에 자동으로 복사할지 지정합니다. **로컬 복사**가 **true**인 경우에만 사용됩니다.
 
@@ -128,7 +128,7 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
    참조된 어셈블리에 대한 어셈블리 이름을 표시합니다.
 
-- **문화권**
+- **culture**
 
    선택한 참조의 문화권을 표시합니다.
 
@@ -140,7 +140,7 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
    참조된 어셈블리의 디렉터리 경로를 표시합니다.
 
-- **ID**
+- **클레임**
 
    .NET Framework 어셈블리의 경우 전체 경로를 표시합니다. COM 구성 요소의 경우 GUID를 표시합니다.
 
@@ -158,13 +158,13 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
 - **강력한 이름**
 
-   참조된 어셈블리에 강력한 이름이 있는 경우`true` 입니다. 강력한 이름이 지정된 어셈블리의 버전은 고유합니다.
+   `true` 입니다. 강력한 이름이 지정된 어셈블리의 버전은 고유합니다.
 
-- **Version**
+- **버전**
 
    참조된 어셈블리의 버전을 표시합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[C++ 프로젝트 속성 페이지 참조](reference/property-pages-visual-cpp.md)<br>
-[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)
+[C + + 프로젝트 속성 페이지 참조](reference/property-pages-visual-cpp.md)<br>
+[Visual Studio에서 속성을 빌드하고 C++ 컴파일러를 설정 합니다.](working-with-project-properties.md)

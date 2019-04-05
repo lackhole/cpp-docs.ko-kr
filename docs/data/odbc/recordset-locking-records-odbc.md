@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 레코드 잠금(ODBC)'
+title: '레코드 집합: 레코드 잠금 (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - locks [C++], recordsets
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - ODBC recordsets [C++], locking records
 - data [C++], locking
 ms.assetid: 8fe8fcfe-b55a-41a8-9136-94a7cd1e4806
-ms.openlocfilehash: 08d7ca1db474a5735ccaabaa7d7d87b359730bb5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1265899e7060527d7e586689eb4c3148eebc4080
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438700"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037291"
 ---
-# <a name="recordset-locking-records-odbc"></a>레코드 집합: 레코드 잠금(ODBC)
+# <a name="recordset-locking-records-odbc"></a>레코드 집합: 레코드 잠금 (ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 이 항목에 설명 합니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "50438700"
 레코드 집합을 사용 하 여 데이터 원본에서 레코드를 업데이트 하려고 하는 경우 동시에 다른 사용자가 레코드를 업데이트할 수 있도록 응용 프로그램 레코드를 잠글 수 있습니다. 시스템에서 두 명의 사용자가 레코드를 동시에 업데이트할 수 없습니다를 보장할 수 없는 경우에 동시에 두 사용자가 업데이트할 레코드의 상태가 정의 되지 않습니다.
 
 > [!NOTE]
->  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현한 경우이 정보 중 일부는 적용 되지 않습니다. 예를 들어, 호출할 수 없습니다는 `Edit` 및 `Update` 멤버 함수입니다. 대량 행 페치에 대 한 자세한 내용은 참조 하십시오 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+>  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현한 경우이 정보 중 일부는 적용 되지 않습니다. 예를 들어, 호출할 수 없습니다는 `Edit` 및 `Update` 멤버 함수입니다. 대량 행 페치에 대 한 자세한 내용은 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 ##  <a name="_core_record.2d.locking_modes"></a> 레코드 잠금 모드
 
@@ -63,8 +63,8 @@ ms.locfileid: "50438700"
 > [!NOTE]
 >  비교적 적은 ODBC 드라이버는 현재 비관적 잠금을 지원 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 조인 수행(ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)<br/>
-[레코드 집합: 레코드 추가, 업데이트 및 삭제(ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)
+[레코드 집합: 조인 수행 (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)<br/>
+[레코드 집합: 추가, 업데이트 및 삭제할 레코드 (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)

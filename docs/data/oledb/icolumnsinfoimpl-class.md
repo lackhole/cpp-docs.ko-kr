@@ -27,12 +27,12 @@ helpviewer_keywords:
 - GetColumnInfo method
 - MapColumnIDs method
 ms.assetid: ba74c1c5-2eda-4452-8b57-84919fa0d066
-ms.openlocfilehash: 802c105e7795cdce604e72983f4fda549abcd5fb
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: d9fbe95f87cfdf51ae9c52c7890e6f6c4075c89a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418271"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039795"
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl 클래스
 
@@ -101,7 +101,7 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
 
 참조 [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

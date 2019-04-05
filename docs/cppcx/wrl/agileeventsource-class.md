@@ -7,12 +7,12 @@ f1_keywords:
 - event/Microsoft::WRL::InvokeModeOptions
 helpviewer_keywords:
 - AgileEventSource class
-ms.openlocfilehash: a18b4fd7873bcc0895354186dc9b0cc7e6b71bd4
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 095c61dcef208028bf1c0f4b3443ba10110da8ed
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58784791"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025868"
 ---
 # <a name="agileeventsource-class"></a>AgileEventSource 클래스
 
@@ -87,6 +87,6 @@ HRESULT Add(
 
 성공하면 S_OK이고, 그렇지 않으면 오류를 나타내는 HRESULT입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL 네임스페이스](microsoft-wrl-namespace.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - support_error_info attribute
 ms.assetid: 20a2b55c-4738-4b35-a71d-e5e9c3a7e3bc
-ms.openlocfilehash: 8aed647677b8c8d26fdca522c10ec9ecee9f87c9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c05b6735c5c29e44f3cc190a150a5efe02025519
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626000"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023778"
 ---
 # <a name="supporterrorinfo"></a>support_error_info
 
@@ -71,7 +71,7 @@ class CMyClass
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 특성](com-attributes.md)<br/>
 [클래스 특성](class-attributes.md)

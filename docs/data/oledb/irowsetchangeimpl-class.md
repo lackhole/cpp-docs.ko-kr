@@ -32,12 +32,12 @@ helpviewer_keywords:
 - SetData method
 - FlushData method
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
-ms.openlocfilehash: 452bd28e3ea061ecc30ef802290242e4cb830792
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 8b2a92fdefd965d4b87e0a9ed411cc1b5c89b8f9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328599"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036801"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl 클래스
 
@@ -60,7 +60,7 @@ class ATL_NO_VTABLE IRowsetChangeImpl : public BaseInterface
 *T*<br/>
 파생 된 클래스 `IRowsetChangeImpl`합니다.
 
-*저장소*<br/>
+*스토리지*<br/>
 사용자 레코드입니다.
 
 *BaseInterface*<br/>
@@ -182,7 +182,7 @@ HRESULT FlushData(HROW hRowToFlush,
 
 표준 HRESULT입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

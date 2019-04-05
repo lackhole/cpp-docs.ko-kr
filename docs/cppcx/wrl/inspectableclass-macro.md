@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::InspectableClass
 ms.assetid: ff390b26-58cc-424f-87ac-1fe3cc692b59
-ms.openlocfilehash: cedf395ae98a423e0335851327b5fdda1a4bc7d6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 9d194f5a87ac4a142301bc896cb3ed172f119473
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785732"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025713"
 ---
 # <a name="inspectableclass-macro"></a>InspectableClass 매크로
 
@@ -42,6 +42,6 @@ InspectableClass(
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [RuntimeClass 클래스](runtimeclass-class.md)

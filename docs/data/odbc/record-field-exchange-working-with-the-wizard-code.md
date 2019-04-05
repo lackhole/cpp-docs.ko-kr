@@ -15,19 +15,19 @@ helpviewer_keywords:
 - overriding, DoFieldExchange
 - m_nFields data member, initializing
 ms.assetid: f00d882a-ff1b-4a75-9717-98d8762bb237
-ms.openlocfilehash: c0e1a35e5476c9e2e335c6f2863429d89e4fa28a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 82f0d946cac3429150250e2df5d1bfd674ec30ee
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492120"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041295"
 ---
 # <a name="record-field-exchange-working-with-the-wizard-code"></a>레코드 필드 교환: 마법사 코드 사용
 
 이 항목에서는 코드를 설명 하는 MFC 응용 프로그램 마법사 및 **클래스 추가** (에 설명 된 대로 [MFC ODBC 소비자 추가](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) RFX와 코드를 수정 하려는 방법을 지원 하기 위해 작성 합니다.
 
 > [!NOTE]
->  이 항목에서 파생 된 클래스에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 사용 하는 경우 대량 레코드 필드 교환 (대량 RFX) 구현 됩니다. 대량 RFX RFX와 비슷합니다. 차이점을 이해 하려면 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+>  이 항목에서 파생 된 클래스에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 사용 하는 경우 대량 레코드 필드 교환 (대량 RFX) 구현 됩니다. 대량 RFX RFX와 비슷합니다. 차이점을 이해 하려면 [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 MFC 응용 프로그램 마법사를 사용 하 여 레코드 집합 클래스를 만들 때 또는 **클래스 추가**, 마법사는 데이터 원본에 따라 테이블 및 열 선택 마법사에서 수행한 다음 RFX와 관련 된 요소를 씁니다.
 
@@ -138,6 +138,6 @@ m_nFields += 3;
 
 세 가지 새 필드 추가 대 한 코드입니다. 매개 변수 데이터 멤버를 추가 하는 경우 초기화 해야 합니다 [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams) 매개 변수 데이터 멤버의 수를 포함 하는 데이터 멤버입니다. 배치는 `m_nParams` 초기화는 괄호 밖에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)
+[RFX](../../data/odbc/record-field-exchange-rfx.md)

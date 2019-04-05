@@ -1,19 +1,19 @@
 ---
-title: 'SQL: SQL 및 C++ 데이터 형식(ODBC)'
+title: 'SQL: SQL 및 c + + 데이터 형식 (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - data types [C++], SQL vs. C++
 - SQL data types [C++]
 - SQL [C++], vs. C++ data types
 ms.assetid: 066e0070-d4da-435c-9c4b-f7cab3352c86
-ms.openlocfilehash: 6767d009ca376d8e8579baf32f2c9af1e282abce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3efa36342b7d16968113acd818a7a1386e4cefcc
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649503"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024350"
 ---
-# <a name="sql-sql-and-c-data-types-odbc"></a>SQL: SQL 및 C++ 데이터 형식(ODBC)
+# <a name="sql-sql-and-c-data-types-odbc"></a>SQL: SQL 및 c + + 데이터 형식 (ODBC)
 
 > [!NOTE]
 >  이 정보는 MFC ODBC 클래스에 적용 됩니다. MFC DAO 클래스를 사용 하 여 작업 하는 경우 비교의 Microsoft Jet 데이터베이스 엔진 SQL 및 ANSI에 "SQL" DAO 도움말 항목을 참조 하세요.
@@ -27,22 +27,22 @@ ms.locfileid: "50649503"
 |**CHAR**|`CString`|
 |**DECIMAL**|`CString` 1|
 |**SMALLINT**|**int**|
-|**실제**|**float**|
+|**real**|**float**|
 |**INTEGER**|**long**|
 |**FLOAT**|**double**|
 |**DOUBLE**|**double**|
-|**NUMERIC**|`CString` 1|
+|**숫자**|`CString` 1|
 |**VARCHAR**|`CString`|
 |**LONGVARCHAR**|`CLongBinary`, `CString` 2|
-|**BIT**|**BOOL**|
+|**비트**|**BOOL**|
 |**TINYINT**|**BYTE**|
 |**BIGINT**|`CString` 1|
-|**이진**|`CByteArray`|
+|**BINARY**|`CByteArray`|
 |**VARBINARY**|`CByteArray`|
 |**LONGVARBINARY**|`CLongBinary`, `CByteArray` 3|
 |**DATE**|`CTime`, `CString`|
-|**시간**|`CTime`, `CString`|
-|**타임 스탬프**|`CTime`, `CString`|
+|**TIME**|`CTime`, `CString`|
+|**TIMESTAMP**|`CTime`, `CString`|
 
 1. ANSI **10 진수** 하 고 **숫자** 매핑할 `CString` 때문에 **SQL_C_CHAR** 기본 ODBC 전송 형식입니다.
 
@@ -54,7 +54,7 @@ ODBC 커서 라이브러리를 사용 하지 않는 경우에 두 개를 업데�
 
 MFC ODBC 데이터베이스 클래스와 Microsoft SQL Server ODBC 드라이버는 ODBC 커서 라이브러리를 사용 하는 경우는 **ASSERT** 와 함께 발생할 수 있습니다는 `CDBException` 호출 하는 경우 `CRecordset::Update` 호출한 `CRecordset::Requery`합니다. 대신, 호출 `CRecordset::Close` 하 고 `CRecordset::Open` 대신 `CRecordset::Requery`합니다. 다른 방법은 ODBC 커서 라이브러리를 사용 하지는 하는 것입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [SQL](../../data/odbc/sql.md)<br/>
-[SQL: SQL 직접 호출(ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
+[SQL: SQL 직접 호출 (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)

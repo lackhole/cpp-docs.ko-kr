@@ -8,12 +8,12 @@ helpviewer_keywords:
 - OLE DB provider templates, stored procedures
 - stored procedures, OLE DB
 ms.assetid: 90507e4c-eca2-46c9-ad8c-07e10dc1d41b
-ms.openlocfilehash: 2c0c1c71103384439d0b7b94f942e1b5a6d9e651
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ace43283c56c0c859b193f63e8ca104f6b52a31
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536160"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041178"
 ---
 # <a name="using-stored-procedures"></a>저장 프로시저 사용
 
@@ -35,6 +35,6 @@ SQL Server용 OLE DB 공급자(SQLOLEDB)는 데이터를 반환하기 위해 저
 > [!NOTE]
 > Jet용 OLE DB 공급자는 저장 프로시저를 지원하지 않으므로 Jet용 OLE DB 공급자로 저장 프로시저를 사용할 수 없습니다. 쿼리 문자열에는 상수만 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)

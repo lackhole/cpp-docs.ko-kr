@@ -42,12 +42,12 @@ helpviewer_keywords:
 - Image editor [C++], grid settings
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
-ms.openlocfilehash: 22fe458a72d970bb09687a53232f94b171e14a45
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: dd7da76d3df68fa63c87f64610524accfd4302ef
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328430"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041551"
 ---
 # <a name="image-editor-for-icons-c"></a>(C + +) 아이콘에 대 한 이미지 편집기
 
@@ -143,7 +143,7 @@ ms.locfileid: "58328430"
 |---|---|
 |**글꼴**|사용 가능한 글꼴을 나열합니다.|
 |**글꼴 스타일**|사용 가능한 지정된 된 글꼴 스타일을 나열합니다.|
-|**Size**|지정된 된 글꼴에 사용할 수 있는 포인트 크기를 나열합니다.|
+|**크기**|지정된 된 글꼴에 사용할 수 있는 포인트 크기를 나열합니다.|
 |**샘플**|지정 된 글꼴 설정을 사용 하 여 텍스트를 표시 하는 방법을 예제를 보여 줍니다.|
 |**스크립트**|지정된 된 글꼴에 대 한 사용 가능한 언어 스크립트를 나열 합니다.<br/><br/>다른 언어로 스크립트를 선택 하면 문자 집합에 대 한 언어 다국어 문서를 만드는 데 사용할 수는 있습니다.|
 
@@ -217,7 +217,7 @@ Windows 응용 프로그램의 아이콘에 텍스트를 추가 하 고 텍스�
 
 없음
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
 
