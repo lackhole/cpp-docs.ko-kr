@@ -10,12 +10,12 @@ helpviewer_keywords:
 - recordsets [C++], dynasets
 - dynasets
 ms.assetid: 2867e6be-208e-4fe7-8bbe-b8697cb1045c
-ms.openlocfilehash: 66db216b92132638f04627ccf341e2e4ce20e429
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 21c47546d14d9a121bdd0698fe96eb133dbc44a0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585694"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040412"
 ---
 # <a name="dynaset"></a>다이너셋
 
@@ -71,6 +71,6 @@ ODBC 커서 라이브러리에 의해 유지 관리 하는 중간 저장소를 �
 
 이 버전의 Visual c + +에 포함 된 ODBC 드라이버의 목록을 추가 드라이버를 가져오는 방법은 참조 [ODBC 드라이버 목록](../../data/odbc/odbc-driver-list.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

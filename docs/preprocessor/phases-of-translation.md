@@ -1,4 +1,4 @@
-﻿---
+---
 title: 변환 단계
 ms.date: 10/18/2018
 helpviewer_keywords:
@@ -9,18 +9,18 @@ helpviewer_keywords:
 - file translation [C++], compiler process
 - files [C++], translation
 ms.assetid: a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db
-ms.openlocfilehash: 75fc7f7c768094d90d41840fc47effa8179556fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 11e36e06adc4fa95cb9aa607704e72f64c812429
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512988"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036155"
 ---
 # <a name="phases-of-translation"></a>변환 단계
 
-C 및 C++ 프로그램은 프로그램을 구성하는 개발 코드가 있는 하나 이상의 소스 파일로 구성됩니다. #if와 같은 조건부 컴파일 지시문에 의해 제거된 코드 섹션은 제외하고 `#include` 전처리 지시문을 사용해 포함된 소스 파일 전체를 "변환 단위"라고 합니다.
+C 및 C++ 프로그램은 프로그램을 구성하는 개발 코드가 있는 하나 이상의 소스 파일로 구성됩니다. `#if`와 같은 조건부 컴파일 지시문에 의해 제거된 코드 섹션은 제외하고 `#include` 전처리 지시문을 사용해 포함된 소스 파일 전체를 "변환 단위"라고 합니다.
 
-소스 파일은 모두 한번에 변환되지 않을 수도 있습니다. 일반적으로 필요한 파일만 변환됩니다. 번역처리가 된 변환 단위는 각각의 개체 파일(Object file) 또는 개체 코드 라이브러리(Object-code Library)로 처리됩니다. 이렇게 분리된 변환 단위는 링크되어 실행 가능 프로그램 또는 동적 연결 라이브러리(DLL)가 됩니다. 링커의 입력으로 사용할 수 있는 파일에 대한 자세한 내용은 [LINK 입력 파일](../build/reference/link-input-files.md)를 참조하세요.
+소스 파일은 모두 한번에 변환되지 않을 수도 있습니다. 일반적으로 필요한 파일만 변환됩니다. 번역처리가 된 변환 단위는 각각의 개체 파일(Object file) 또는 개체 코드 라이브러리(Object-code Library)로 처리됩니다. 이렇게 분리된 변환 단위는 링크되어 실행 가능 프로그램 또는 동적 연결 라이브러리(DLL)가 됩니다.  링커의 입력으로 사용할 수 있는 파일에 대한 자세한 내용은 [LINK 입력 파일](../build/reference/link-input-files.md)를 참조하세요.
 
 변환 단위는 다음을 사용하여 통신할 수 있습니다.
 
@@ -52,9 +52,9 @@ C 및 C++ 프로그램은 프로그램을 구성하는 개발 코드가 있는 �
 모든 문자 집합 멤버와 이스케이프 시퀀스는 실행 문자 집합에서 동등하게 변환됩니다. Microsoft C 및 C++의 경우 소스 및 실행 문자 집합 모두 ASCII입니다.
 
 *문자열 연결*<br/>
-모든 인접한 문자열과 와이드 타입의 문자열 리터럴은 연결됩니다. 예를 들어, `"String "과 "concatenation"` 문자열은 `"String concatenation"`과 같이 연결됩니다.
+모든 인접한 문자열과 와이드 타입의 문자열 리터럴은 연결됩니다. 예를 들어, `"String " "concatenation"` 문자열은 `"String concatenation"`과 같이 연결됩니다.
 
-*번역*<br/>
+*이동*<br/>
 모든 토큰은 구문적 그리고 의미적으로 분석됩니다. 이러한 토큰은 개체 코드로 변환됩니다.
 
 *링크*<br/>
@@ -64,6 +64,6 @@ C 및 C++ 프로그램은 프로그램을 구성하는 개발 코드가 있는 �
 
 링커는 모든 외부 참조를 확인하고 표준 라이브러리에 따라 하나 이상의 별도 처리되는 변환 단위를 결합하여 DLL 또는 실행 프로그램을 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [전처리기](../preprocessor/preprocessor.md)

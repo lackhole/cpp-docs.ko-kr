@@ -7,12 +7,12 @@ helpviewer_keywords:
 - UD2 instruction
 - __ud2 intrinsic
 ms.assetid: 0831cd5a-8b65-402e-bb57-11e1d5d7ffd2
-ms.openlocfilehash: dd876f26349c39e0af0d2e0f100fb4e13efa50f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a36ab5c25ac9138b2a4d6810cc2a339e534f1695
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666546"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029410"
 ---
 # <a name="ud2"></a>__ud2
 
@@ -30,7 +30,7 @@ void __ud2();
 
 프로세서 정의 되지 않은 명령을 실행 하는 경우 잘못 된 opcode가 예외를 발생 시킵니다.
 
-합니다 `__ud2` 함수는 동일 합니다 `UD2` 컴퓨터 명령 및 커널 모드 에서만 사용할 수 있습니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
+합니다 `__ud2` 함수는 동일 합니다 `UD2` 컴퓨터 명령 및 커널 모드 에서만 사용할 수 있습니다. 자세한 내용은 문서에 대해 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조를 "에 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -82,6 +82,6 @@ Before __ud2(). Return code = 0.
 After __ud2().  Return code = 1.
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - switch_type attribute
 ms.assetid: e24544dc-b3bc-48ae-b249-f967db49271e
-ms.openlocfilehash: e8827fe576282b86f1d3bc633ec7f9f954c015b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b461769d3d988efae0be7380e1e0112e3f3cf801
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448791"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027859"
 ---
 # <a name="switchtype"></a>switch_type
 
@@ -63,15 +63,15 @@ struct SizedValue2 {
 
 |||
 |-|-|
-|**적용 대상**|**typedef**|
+|**적용 대상**|**형식 정의**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
-[export](export.md)
+[내보내기](export.md)

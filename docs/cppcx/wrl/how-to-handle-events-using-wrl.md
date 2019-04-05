@@ -3,12 +3,12 @@ title: '방법: WRL을 사용 하 여 이벤트를 처리 합니다.'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1c77543f-7b0c-4a94-93bf-e3225885ed76
-ms.openlocfilehash: 35c806660c18ad234f37dba92780b7633e032644
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 959a85d6cf6de666ae56d09035acefe9a3828ae8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785348"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033179"
 ---
 # <a name="how-to-handle-events-using-wrl"></a>방법: WRL을 사용 하 여 이벤트를 처리 합니다.
 
@@ -87,6 +87,6 @@ ms.locfileid: "58785348"
 
 `cl.exe wrl-consume-events.cpp runtimeobject.lib`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows 런타임 C++ 템플릿 라이브러리(WRL)](windows-runtime-cpp-template-library-wrl.md)

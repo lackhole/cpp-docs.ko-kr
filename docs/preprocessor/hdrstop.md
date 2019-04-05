@@ -8,12 +8,12 @@ helpviewer_keywords:
 - hdrstop pragma
 - pragmas, hdrstop
 ms.assetid: 5ea8370a-10d1-4538-ade6-4c841185da0e
-ms.openlocfilehash: 5dc47e4b2ec264182d26925df60bf3ee29871b65
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1590b5916a8d9c00b6e988bacc7cd857c29d6775
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497084"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035217"
 ---
 # <a name="hdrstop"></a>hdrstop
 사전 컴파일 파일 이름과 컴파일 상태가 저장되는 위치에 대한 추가적 제어를 제공합니다.
@@ -78,6 +78,6 @@ __inline Disp( char *szToDisplay )   // Define an inline function
 
 이 예제는 **hdrstop** 두 파일이 포함 되 고 인라인 함수를 정의한 후 pragma가 나타납니다. 언뜻 보면 pragma의 위치가 이상할 수 있습니다. 하지만 고려해 야 수동 미리 컴파일 옵션을 사용 하는 `/Yc` 하 고 `/Yu`를 사용 하 여는 **hdrstop** pragma를 사용 하면 전체 원본 파일을 미리 컴파일할 수 있습니다-심지어 인라인 코드도. Microsoft 컴파일러는 데이터 선언만 미리 컴파일하도록 제한하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

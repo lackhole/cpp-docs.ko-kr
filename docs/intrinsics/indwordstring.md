@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __indwordstring intrinsic
 - rep insd instruction
 ms.assetid: 96a1cf33-f691-4916-99e4-fa849b61e3a9
-ms.openlocfilehash: 96ad1551eb51ab1a91127cf57c9bd7915b84c379
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6f50aed8e6efe3b0b0a6e7eaebef5719475463ea
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574406"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027872"
 ---
 # <a name="indwordstring"></a>__indwordstring
 
@@ -36,7 +36,7 @@ void __indwordstring(
 *포트*<br/>
 [in] 포트에서 읽기입니다.
 
-*Buffer*<br/>
+*버퍼*<br/>
 [out] 여기에 포트에서 읽은 데이터가 기록 됩니다.
 
 *개수*<br/>
@@ -56,6 +56,6 @@ void __indwordstring(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

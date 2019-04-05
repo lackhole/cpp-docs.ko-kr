@@ -91,12 +91,12 @@ helpviewer_keywords:
 - m_iRowset
 - m_rgRowHandles
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
-ms.openlocfilehash: d7d7797e0e1ac69ef114a251fbcee9fbe29cd7e9
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 47b03a542933c6223e098bc9d8fa8d45bf5e047b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420897"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024454"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl 클래스
 
@@ -444,7 +444,7 @@ MapClass m_rgRowHandles;
 
 행 핸들은 호출 하 여 제거 `ReleaseRows`합니다. 참조 된 [IRowsetImpl 개요](../../data/oledb/irowsetimpl-class.md) 정의 대 한 *MapClass*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

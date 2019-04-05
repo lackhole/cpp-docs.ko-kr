@@ -25,12 +25,12 @@ helpviewer_keywords:
 - IsAutoAccessor method
 - ReleaseAccessors method
 ms.assetid: 389b65be-11ca-4ae0-9290-60c621c4982b
-ms.openlocfilehash: 5fb39d2291c2698dc57150eb44a6bbd6778812bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 34c92f9057f2273d57b69bdb42c49a81923c3d2a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509308"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034954"
 ---
 # <a name="caccessorbase-class"></a>CAccessorBase 클래스
 
@@ -72,7 +72,7 @@ void Close();
 
 호출 해야 합니다 [ReleaseAccessors](../../data/oledb/caccessorbase-releaseaccessors.md) 첫 번째입니다.
 
-## <a name="geth"></a> Caccessorbase:: Gethaccessor
+## <a name="geth"></a> CAccessorBase::GetHAccessor
 
 지정된 접근자의 접근자 핸들을 검색합니다.
 
@@ -91,7 +91,7 @@ HACCESSOR GetHAccessor(ULONG nAccessor) const;
 
 접근자 핸들입니다.
 
-## <a name="getnum"></a> Caccessorbase:: Getnumaccessors
+## <a name="getnum"></a> CAccessorBase::GetNumAccessors
 
 클래스에 의해 생성 되는 접근자의 수를 검색 합니다.
 
@@ -105,7 +105,7 @@ ULONG GetNumAccessors() const;
 
 클래스에 의해 생성 되는 접근자 수입니다.
 
-## <a name="isauto"></a> Caccessorbase:: Isautoaccessor
+## <a name="isauto"></a> CAccessorBase::IsAutoAccessor
 
 이동 작업 중 접근자에 대 한 데이터는 자동으로 검색 하는 경우 true를 반환 합니다.
 
@@ -124,7 +124,7 @@ bool IsAutoAccessor(ULONG nAccessor) const;
 
 반환 **true** 접근자가 자동 하는 경우. 그렇지 않으면 **false**를 반환합니다.
 
-## <a name="release"></a> Caccessorbase:: Releaseaccessors
+## <a name="release"></a> CAccessorBase::ReleaseAccessors
 
 클래스에 의해 만들어진 접근자를 해제 합니다.
 
@@ -147,7 +147,7 @@ HRESULT ReleaseAccessors(IUnknown* pUnk);
 
 호출할 [caccessorrowset:: Close](../../data/oledb/caccessorrowset-close.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

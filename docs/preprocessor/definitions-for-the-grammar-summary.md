@@ -1,16 +1,16 @@
-﻿---
+---
 title: 문법 요약 정의
 ms.date: 11/04/2016
 helpviewer_keywords:
 - preprocessor, definitions
 - preprocessor
 ms.assetid: cc752dc8-6f4e-4347-a556-e0d9ef4c46bd
-ms.openlocfilehash: 133000c0cc8ef636a3f9752d2f6fc7f1934bd831
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e8671ba0d68b13f68db0f2b08dab4fe98f917e7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521127"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024957"
 ---
 # <a name="definitions-for-the-grammar-summary"></a>문법 요약 정의
 
@@ -18,12 +18,12 @@ ms.locfileid: "50521127"
 
 넌터미널은 구문에서 자리를 표시합니다. 대부분은 이 구문 요약의 다른 곳에서 정의되어 있습니다. 정의는 재귀적일 수 있습니다. 다음 넌터미널 함수는 *C++ 언어 레퍼런스*의 [어휘 규칙](../cpp/lexical-conventions.md) 섹션에 정의되어 있습니다:
 
-*C++ 언어 레퍼런스*: `constant`, *constant-expression*, *identifier*, *keyword*, `operator`, `punctuator`
+`constant`, *constant-expression*, *identifier*, *keyword*, `operator`, `punctuator`
 
-선택적 구성 요소는 아래첨자 <sub>선택적</sub>로 표시됩니다. 예를들어 다음은 중괄호로 묶인 선택적 표현식을 나타냅니다.
+선택적 구성 요소는 아래첨자 <sub>opt</sub>로 표시됩니다. 예를 들어 다음은 중괄호로 묶인 선택적 표현식을 나타냅니다.
 
 **{** *표현식*<sub></sub> **}**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[문법 요약(C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+[문법 요약 (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

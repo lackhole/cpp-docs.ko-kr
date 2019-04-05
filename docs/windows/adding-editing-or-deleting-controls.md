@@ -43,12 +43,12 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: 217bde10ea1b7f6457d141c3006c8c8fb2efaadf
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 2e3e671cd92313ad120d2cd6aae3f7e815e09e65
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328508"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025366"
 ---
 # <a name="how-to-add-edit-or-delete-controls-c"></a>방법: Add, Edit, 또는 컨트롤 (c + +)를 삭제 합니다.
 
@@ -228,7 +228,7 @@ Visual Studio에서는 ActiveX 컨트롤을 대화 상자에 삽입할 수 있�
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자 컨트롤 관리](controls-in-dialog-boxes.md)<br/>
 [방법: 레이아웃 컨트롤](arrangement-of-controls-on-dialog-boxes.md)<br/>

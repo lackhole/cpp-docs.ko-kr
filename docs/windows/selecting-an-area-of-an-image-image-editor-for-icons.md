@@ -40,12 +40,12 @@ helpviewer_keywords:
 - Image editor [C++], Properties window
 - Properties window, image editor
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
-ms.openlocfilehash: 246dee3c7d0c1a5a4f495fddf709833acc2c885e
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 849da0d14987a057d39d5f9531e97545b3d4b8cf
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562993"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033296"
 ---
 # <a name="how-to-edit-an-image"></a>방법: 이미지 편집
 
@@ -208,7 +208,7 @@ ms.locfileid: "57562993"
    |속성|설명|
    |--------------|-----------------|
    |**색**|이미지의 색 구성표를 지정합니다. 선택 **단색**를 **16**, 또는 **256**, 또는 **색 True**합니다.<br/><br/>이미 16 색 색상표를 사용 하 여 이미지를 그릴 경우 선택 **단색** 흑백 색에 대 한 대체 이미지에 발생 합니다. 대비 항상 유지 되지 않습니다: 예를 들어, 빨강 및 녹색의 인접 한 영역 둘 다로 변환할지 검은색입니다.|
-   |**Filename**|이미지 파일의 이름을 지정합니다.<br/><br/>Visual Studio는 기본적으로 기본 리소스 식별자 (IDB_BITMAP1) 및 적절 한 확장을 추가 처음 네 개의 문자 ("IDB_")를 제거 하 여 만든 기본 파일 이름을 할당 합니다. 이 예제 이미지에 대 한 파일 이름은 *BITMAP1.bmp*합니다. 이름을 바꿀 수 있습니다 *MYBITMAP1.bmp*합니다.|
+   |**파일 이름**|이미지 파일의 이름을 지정합니다.<br/><br/>Visual Studio는 기본적으로 기본 리소스 식별자 (IDB_BITMAP1) 및 적절 한 확장을 추가 처음 네 개의 문자 ("IDB_")를 제거 하 여 만든 기본 파일 이름을 할당 합니다. 이 예제 이미지에 대 한 파일 이름은 *BITMAP1.bmp*합니다. 이름을 바꿀 수 있습니다 *MYBITMAP1.bmp*합니다.|
    |**높이**|이미지의 높이 (픽셀)를 설정합니다. 기본값은 48입니다.<br/><br/>이미지가 잘립니다 또는 기존 이미지 아래에 빈 공백을 추가 합니다.|
    |**ID**|리소스의 식별자를 설정합니다.<br/><br/>이미지에 대 한 Microsoft Visual Studio에서 기본적으로 할당 일련의 사용 가능한 다음 식별자: IDB_BITMAP1, IDB_BITMAP2, 및 등입니다. 아이콘 및 커서에 대 한 유사한 이름이 사용 됩니다.|
    |**색상표**|색 속성을 변경 합니다.<br/><br/>색을 선택 하 고 표시를 두 번 클릭 합니다 [사용자 지정 색 선택 대화 상자](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)합니다. 적절 한 텍스트 상자에 RGB 또는 HSL 값을 입력 하 여 색을 정의 합니다.|
@@ -219,10 +219,10 @@ ms.locfileid: "57562993"
 
 없음
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)<br/>
-[방법: 아이콘 또는 기타 이미지 만들기](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[방법: 아이콘 또는 다른 이미지 만들기](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
 [방법: 그리기 도구 사용](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
 [방법: 색 작업](../windows/working-with-color-image-editor-for-icons.md)<br/>
 [액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>

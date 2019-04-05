@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB providers, calling
 - OLE DB providers, testing
 ms.assetid: e4aa30c1-391b-41f8-ac73-5270e46fd712
-ms.openlocfilehash: cda4efcdb26499f910ad875b2bf7b7504a825cf6
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: a9601b2afe40133a5cc88589b530b5ed549ac81e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265102"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025132"
 ---
 # <a name="testing-the-read-only-provider"></a>읽기 전용 공급자 테스트
 
@@ -106,6 +106,6 @@ MyData.txt 파일이 포함 된 `MyProv` 샘플입니다. 파일을 직접 사�
 
 이제을 빌드 및 프로그램을 테스트할 수 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [단순한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)

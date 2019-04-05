@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - helpcontext attribute
 ms.assetid: 6fbb022d-a4b7-4989-a02f-7f18a9b0ad96
-ms.openlocfilehash: 921e5370303cb62830ec281bcefd7c03331efaeb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 22023b4087c67b62d540d021fa06fd3582c7e4e2
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552752"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038176"
 ---
 # <a name="helpcontext"></a>helpcontext
 
@@ -49,7 +49,7 @@ ms.locfileid: "50552752"
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [인터페이스 특성](interface-attributes.md)<br/>

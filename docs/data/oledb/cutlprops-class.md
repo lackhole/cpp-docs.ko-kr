@@ -30,12 +30,12 @@ helpviewer_keywords:
 - OnPropertyChanged method
 - SetPropValue method
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
-ms.openlocfilehash: 1c45e28e0e74d7216023f06ad22896c53c9226b8
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3f1af90bcf454a3651dd8de65bbee7cb6b5960ca
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423055"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037622"
 ---
 # <a name="cutlprops-class"></a>CUtlProps 클래스
 
@@ -226,7 +226,7 @@ HRESULT SetPropValue(const GUID* pguidPropSet,
 
 `Failure` 오류에 성공 하면 S_OK입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

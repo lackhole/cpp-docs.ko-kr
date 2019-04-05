@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 대형 데이터 항목 작업(ODBC)'
+title: '레코드 집합: 대형 데이터 항목 (ODBC)를 사용 하 여 작업'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - BLOB (binary large object), recordsets
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - binary large objects
 - CLongBinary class, using in recordsets
 ms.assetid: 3e80b5a8-b6e7-43c6-a816-e54befc513a3
-ms.openlocfilehash: 8ef32621821d731d9137a446bea220564cb7f92f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ba8d4af5b0781c425dd3b1223e2208b279f055e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460374"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033046"
 ---
-# <a name="recordset-working-with-large-data-items-odbc"></a>레코드 집합: 대형 데이터 항목 작업(ODBC)
+# <a name="recordset-working-with-large-data-items-odbc"></a>레코드 집합: 대형 데이터 항목 (ODBC)를 사용 하 여 작업
 
 이 항목에서는 MFC ODBC 클래스와 MFC DAO 클래스에 적용 됩니다.
 
 > [!NOTE]
->  MFC DAO 클래스를 사용 하는 경우 클래스를 사용 하 여 대형 데이터 항목을 관리 [CByteArray](../../mfc/reference/cbytearray-class.md) 클래스 대신 [CLongBinary](../../mfc/reference/clongbinary-class.md)합니다. MFC ODBC 클래스를 사용 하 여 대량 행 페치를 사용 하는 경우 사용 하 여 `CLongBinary` 대신 `CByteArray`합니다. 대량 행 페치에 대 한 자세한 내용은 참조 하십시오 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+>  MFC DAO 클래스를 사용 하는 경우 클래스를 사용 하 여 대형 데이터 항목을 관리 [CByteArray](../../mfc/reference/cbytearray-class.md) 클래스 대신 [CLongBinary](../../mfc/reference/clongbinary-class.md)합니다. MFC ODBC 클래스를 사용 하 여 대량 행 페치를 사용 하는 경우 사용 하 여 `CLongBinary` 대신 `CByteArray`합니다. 대량 행 페치에 대 한 자세한 내용은 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 데이터베이스 대형 비트맵 (직원 사진을, maps, 제품, OLE 개체 및 등의 사진을)와 같은 데이터를 저장할 수 있다고 가정 합니다. 이러한 종류의 데이터는 라고도 Binary Large Object (또는 BLOB) 때문에:
 
@@ -59,8 +59,8 @@ A [CLongBinary](../../mfc/reference/clongbinary-class.md) 주위 간단한 셸 �
 > [!CAUTION]
 >  CLongBinary 개체는 함수 호출에서 매개 변수로 사용할 수 없습니다. 또한 호출 하는 구현과 `::SQLGetData`으로 스크롤할 수 있는 스냅숏에 대 한 스크롤 속도가 느려집니다. 이 발생할 수 있습니다 사용 하는 경우는 `::SQLGetData` 동적 스키마 열을 검색 하기 위해 직접 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 합계 및 다른 집계 결과 구하기(ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
-[RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)
+[레코드 집합: 합계 및 다른 집계 결과 (ODBC) 구하기](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
+[RFX](../../data/odbc/record-field-exchange-rfx.md)

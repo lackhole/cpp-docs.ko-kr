@@ -6,12 +6,12 @@ helpviewer_keywords:
 - notifications, support in providers
 - OLE DB providers, creating
 ms.assetid: bdfd5c9f-1c6f-4098-822c-dd650e70ab82
-ms.openlocfilehash: 04db02bc8ad4db0c669e07a0bcf1b60ffa22e8ad
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: d3f8314e7cd57617e35e50a67a4562d4055cb93a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521403"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024741"
 ---
 # <a name="creating-an-updatable-provider"></a>업데이트 가능 공급자 만들기
 
@@ -109,9 +109,9 @@ ms.locfileid: "51521403"
 
    구현 하는 경우 `IRowsetChangeImpl`를 공급자에는 다음 속성을 설정 해야 합니다. 이러한 속성을 통해 인터페이스를 요청 사용 주로 `ICommandProperties::SetProperties`합니다.
 
-   - `DBPROP_IRowsetChange`: 설정 집합이 자동으로 `DBPROP_IRowsetChange`입니다.
+   - `DBPROP_IRowsetChange`: 자동으로 설정은 `DBPROP_IRowsetChange`합니다.
 
-   - `DBPROP_UPDATABILITY`지원 되는 메서드를 지정 하는 비트 마스크: `IRowsetChange`: `SetData`하십시오 `DeleteRows`, 또는 `InsertRow`합니다.
+   - `DBPROP_UPDATABILITY`: 지원 되는 메서드를 지정 하는 비트 마스크 `IRowsetChange`: `SetData`하십시오 `DeleteRows`, 또는 `InsertRow`.
 
    - `DBPROP_CHANGEINSERTEDROWS`: 소비자를 호출할 수 있습니다 `IRowsetChange::DeleteRows` 또는 `SetData` 새로 삽입된 된 행에 대 한 합니다.
 
@@ -413,7 +413,7 @@ virtual HRESULT SetDBStatus(DBSTATUS* pdbStatus, CSimpleRow* pRow,
 
 ### <a name="column-flags"></a>열 플래그
 
-메타 데이터를 사용 하 여 설정 해야 하는 열에 기본값을 지원 합니다 \<공급자 클래스\>SchemaRowset 클래스입니다. 설정 `m_bColumnHasDefault = VARIANT_TRUE`합니다.
+메타 데이터를 사용 하 여 설정 해야 하는 열에 기본값을 지원 합니다 \<공급자 클래스\>SchemaRowset 클래스입니다. `m_bColumnHasDefault = VARIANT_TRUE`를 설정합니다.
 
 열거 형식의 DBCOLUMNFLAGS를 사용 하 여 지정 된 열의 플래그를 설정을 해야 합니다. 열 플래그 열 특성을 설명 합니다.
 
@@ -434,6 +434,6 @@ m_rgRowData.Add(trData[0]);
 
 이 코드 지정 무엇 보다도 열 지원 하 고 기본값은 0으로 쓰기를 가능 하 고 열의 모든 데이터가 동일한 길이 갖도록 하 합니다. 가변 길이 열에 데이터를 원하는 경우이 플래그를 설정 하지 것입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 만들기](creating-an-ole-db-provider.md)

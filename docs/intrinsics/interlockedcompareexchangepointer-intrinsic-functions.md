@@ -24,12 +24,12 @@ helpviewer_keywords:
 - _InterlockedCompareExchangePointer_nf intrinsic
 - _InterlockedCompareExchangePointer_np intrinsic
 ms.assetid: 97fde59d-2bf9-42aa-a0fe-a5b6befdd44b
-ms.openlocfilehash: b58af33e13609dcb9a51f7d2b3075427f538a2d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2db18c73f7765454d29e2dfdbd9408f62c51d32a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445034"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024818"
 ---
 # <a name="interlockedcompareexchangepointer-intrinsic-functions"></a>_InterlockedCompareExchangePointer Intrinsic Functions
 
@@ -97,12 +97,12 @@ long _InterlockedCompareExchangePointer_rel (
 |내장 함수|아키텍처|헤더|
 |---------------|------------------|------------|
 |`_InterlockedCompareExchangePointer`|x86, ARM, x64|\<intrin.h>|
-|`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM|\<iiintrin.h>|
+|`_InterlockedCompareExchangePointer_acq`에서 `_InterlockedCompareExchangePointer_nf`에서 `_InterlockedCompareExchangePointer_rel`|ARM|\<iiintrin.h>|
 |`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, x64|\<immintrin.h>|
 
 ## <a name="remarks"></a>설명
 
-`_InterlockedCompareExchangePointer`는 `Destination` 주소와 `Comparand` 주소의 원자성 비교를 수행합니다. `Destination` 주소가 `Comparand` 주소와 같으면 `Exchange`으로 지정된 주소에 `Destination` 주소가 저장됩니다. 그렇지 않으면 작업이 수행되지 않습니다.
+`_InterlockedCompareExchangePointer` 원자성 비교를 수행 합니다 `Destination` 사용 하 여 주소를 `Comparand` 주소입니다. `Destination` 주소가 `Comparand` 주소와 같으면 `Exchange`으로 지정된 주소에 `Destination` 주소가 저장됩니다. 그렇지 않으면 작업이 수행되지 않습니다.
 
 `_InterlockedCompareExchangePointer` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [_InterlockedCompareExchangePointer](https://msdn.microsoft.com/library/ff547863.aspx) 함수입니다.
 
@@ -118,7 +118,7 @@ HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcq
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [키워드](../cpp/keywords-cpp.md)

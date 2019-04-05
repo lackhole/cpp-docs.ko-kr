@@ -10,12 +10,12 @@ helpviewer_keywords:
 - menus [C++], shortcut keys
 - keyboard shortcuts [C++], menu association
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-ms.openlocfilehash: 99867f146ca80d8b48c9be9deb59044207b33af1
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.openlocfilehash: bb407538f254df5f187ff91b85a8eaa753a52287
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210499"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027521"
 ---
 # <a name="accelerator-keys-c"></a>액셀러레이터 키 (c + +)
 
@@ -85,6 +85,6 @@ Windows 응용 프로그램 프로젝트에 포함될 수 있는 미리 정의�
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [액셀러레이터 키 편집기](../windows/accelerator-editor.md)<br/>

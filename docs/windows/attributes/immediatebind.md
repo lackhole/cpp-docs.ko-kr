@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - immediatebind attribute
 ms.assetid: 186d40e6-9166-4d0c-9853-4e7e4d25226f
-ms.openlocfilehash: 35e8ea4a761fd3cf36da335dc8519ba71772b4e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1844e72ecd1fe7c0f4255426eb48f5c70471e5f5
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647725"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036210"
 ---
 # <a name="immediatebind"></a>immediatebind
 
@@ -44,7 +44,7 @@ ms.locfileid: "50647725"
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>

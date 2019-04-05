@@ -5,12 +5,12 @@ helpviewer_keywords:
 - warnings, compiler
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-ms.openlocfilehash: e189ead864fe2be6e0ccb3bc76a58f2441740076
-ms.sourcegitcommit: a901c4acbfc80ca10663d37c09921f04c5b6dd17
+ms.openlocfilehash: ee2b6097a62a8f1030dc631354f96ec7a33d2f11
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58142549"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039399"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>기본적으로 해제 되어 있는 컴파일러 경고
 
@@ -30,7 +30,7 @@ ms.locfileid: "58142549"
 
 - [/Wall](../build/reference/compiler-option-warning-level.md)
 
-   `/Wall`은 기본적으로 해제되어 있는 모든 경고가 사용되게 만듭니다. 사용 하 여 개별 경고 해제할 수 있습니다이 옵션을 사용 하는 경우는 [/wd](../build/reference/compiler-option-warning-level.md) 옵션입니다.
+   `/Wall` 기본적으로 해제 되어 있는 모든 경고를 사용 하도록 설정 합니다. 사용 하 여 개별 경고 해제할 수 있습니다이 옵션을 사용 하는 경우는 [/wd](../build/reference/compiler-option-warning-level.md) 옵션입니다.
 
 - [/w*Lnnnn*](../build/reference/compiler-option-warning-level.md)
 
@@ -178,6 +178,6 @@ ms.locfileid: "58142549"
 |-|-|
 |[C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (수준 4)|형식 지정자가 없습니다. int로 가정합니다. 참고: C 기본 int를 더 이상 지원|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[warning](../preprocessor/warning.md)
+[경고](../preprocessor/warning.md)

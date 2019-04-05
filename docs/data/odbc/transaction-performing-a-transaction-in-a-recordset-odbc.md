@@ -1,17 +1,17 @@
 ---
-title: '트랜잭션: 레코드 집합에서 트랜잭션 수행(ODBC)'
+title: '트랜잭션: 레코드 집합 (ODBC)에서 트랜잭션 수행'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - transactions, updating recordsets
 ms.assetid: cf1d6b48-7fb8-4903-84f7-a1822054534d
-ms.openlocfilehash: df7c28ebfbb68f3e0163368247b90ff69058726d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9e06d61d3d86233e136b0b3fe78f149a6778649b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659593"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035243"
 ---
-# <a name="transaction-performing-a-transaction-in-a-recordset-odbc"></a>트랜잭션: 레코드 집합에서 트랜잭션 수행(ODBC)
+# <a name="transaction-performing-a-transaction-in-a-recordset-odbc"></a>트랜잭션: 레코드 집합 (ODBC)에서 트랜잭션 수행
 
 이 항목에서는 레코드 집합에서 트랜잭션을 수행 하는 방법에 설명 합니다.
 
@@ -22,7 +22,7 @@ ms.locfileid: "50659593"
 
 1. 호출 된 `CDatabase` 개체의 `BeginTrans` 멤버 함수입니다.
 
-1. 하지 대량 행 페치를 구현한 경우 호출 합니다 `AddNew/Update`, `Edit/Update`, 및 `Delete` 필요한 횟수 만큼 동일한 데이터베이스의 하나 이상의 레코드 집합 개체의 멤버 함수입니다. 자세한 내용은 [레코드 집합: 추가, 업데이트 및 삭제 (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)합니다. 대량 행 페치를 구현한 경우 데이터 소스를 업데이트 하는 고유한 함수를 작성 해야 합니다.
+1. 하지 대량 행 페치를 구현한 경우 호출 합니다 `AddNew/Update`, `Edit/Update`, 및 `Delete` 필요한 횟수 만큼 동일한 데이터베이스의 하나 이상의 레코드 집합 개체의 멤버 함수입니다. 자세한 내용은 참조 하세요. [레코드 집합: 추가, 업데이트 및 삭제 (ODBC) 레코드](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)합니다. 대량 행 페치를 구현한 경우 데이터 소스를 업데이트 하는 고유한 함수를 작성 해야 합니다.
 
 1. 마지막으로 호출 합니다 `CDatabase` 개체의 `CommitTrans` 멤버 함수입니다. 업데이트 중 하나에서 오류가 발생할 경우 변경 내용을 취소 하려면 호출 해당 `Rollback` 멤버 함수입니다.
 
@@ -81,9 +81,9 @@ BOOL CEnrollDoc::RemoveStudent( CString strStudentID )
 > [!NOTE]
 >  호출 `BeginTrans` 호출 하지 않고 다시 `CommitTrans` 또는 `Rollback` 오류가 발생 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [트랜잭션(ODBC)](../../data/odbc/transaction-odbc.md)<br/>
-[트랜잭션: 트랜잭션이 업데이트에 미치는 영향(ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)<br/>
+[트랜잭션: 트랜잭션이 업데이트 (ODBC)에 미치는 영향](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)<br/>
 [CDatabase 클래스](../../mfc/reference/cdatabase-class.md)<br/>
 [CRecordset 클래스](../../mfc/reference/crecordset-class.md)

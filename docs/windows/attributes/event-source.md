@@ -11,12 +11,12 @@ helpviewer_keywords:
 - event sources
 - event handling, creating event source
 ms.assetid: 0983e36a-6127-4fbb-8a22-8dfec6564c16
-ms.openlocfilehash: e7a58abc617fcfed69020bdace60758a6bf75337
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 81eba3c032a3556d1c69ad02652455ebc07ab6be
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510567"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035934"
 ---
 # <a name="eventsource"></a>event_source
 
@@ -64,14 +64,14 @@ ms.locfileid: "50510567"
 
 |||
 |-|-|
-|**적용 대상**|**클래스**, **구조체**|
+|**적용 대상**|**class**, **struct**|
 |**반복 가능**|아니요|
 |**필수 특성**|**coclass** 때 `type`=`com`|
 |**잘못된 특성**|없음|
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 특성](compiler-attributes.md)<br/>
 [event_receiver](event-receiver.md)<br/>

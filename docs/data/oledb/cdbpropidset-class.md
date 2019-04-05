@@ -33,12 +33,12 @@ helpviewer_keywords:
 - operator=, property sets
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-ms.openlocfilehash: d51b1bf6862aebda34586518be6501f57f119590
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 9e878af3acf4c4d3a6ca785454c4bb072f17cf09
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57419961"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59022413"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet 클래스
 
@@ -68,7 +68,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 |||
 |-|-|
-|[operator =](#op_equal)|할당 한 속성 ID의 내용을 다른로 설정 합니다.|
+|[연산자 =](#op_equal)|할당 한 속성 ID의 내용을 다른로 설정 합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -140,7 +140,7 @@ void SetGUID(const GUID& guid) throw();
 CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3820
 ms.assetid: 98638838-068f-4a62-b8d5-1068368a0ff1
-ms.openlocfilehash: e969a20238366ee169256f2893b537ef9418bce7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9472c080f9cb63198843e774ffb450f5f67d7e58
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464491"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028375"
 ---
 # <a name="compiler-error-c3820"></a>컴파일러 오류 C3820
 
@@ -23,7 +23,7 @@ ms.locfileid: "50464491"
 
 1. 관리되는 이니셜라이저 메서드를 지정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [이니셜라이저](../../cpp/initializers.md)<br/>
 [추가 시작 고려 사항](../../cpp/additional-startup-considerations.md)

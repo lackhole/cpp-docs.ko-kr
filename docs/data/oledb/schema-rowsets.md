@@ -4,12 +4,12 @@ ms.date: 10/22/2018
 helpviewer_keywords:
 - schema rowsets, defined
 ms.assetid: 0716a065-230c-4c20-bb53-98870e79ea29
-ms.openlocfilehash: 9be586d4bd9c0b5591dbab3202b9fc44d0924a5a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0ec284b4bb366b72eae86f684346f70bfb44239
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556587"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028236"
 ---
 # <a name="schema-rowsets"></a>스키마 행 집합
 
@@ -17,6 +17,6 @@ ms.locfileid: "50556587"
 
 스키마 행 집합 사용 방법에 대한 자세한 내용은 [스키마 행 집합을 사용하여 메타데이터 구하기](../../data/oledb/obtaining-metadata-with-schema-rowsets.md)를 참조하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)

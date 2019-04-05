@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - restricted attribute
 ms.assetid: 504a96be-b904-4269-8be1-920feba201b4
-ms.openlocfilehash: 1aa18255f7d7a0740494050a149d436fb167fe8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86f40fa49daf88668e37bef07f0db33d01cf1942
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521041"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029516"
 ---
 # <a name="restricted"></a>restricted
 
@@ -27,7 +27,7 @@ ms.locfileid: "50521041"
 
 ### <a name="parameters"></a>매개 변수
 
-*interfaces*<br/>
+*인터페이스*<br/>
 호출할 수 없습니다 임의로 COM 개체에는 하나 이상의 인터페이스입니다. 이 매개 변수는 클래스에 적용 하는 경우에 유효만 합니다.
 
 ## <a name="remarks"></a>설명
@@ -74,7 +74,7 @@ class c : public a, public b
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [인터페이스 특성](interface-attributes.md)<br/>

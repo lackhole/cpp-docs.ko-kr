@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - public attribute
 ms.assetid: c42e1fd5-6cb1-48fe-8a03-95f2a2e0137c
-ms.openlocfilehash: d89df014beae5a62a035c3156b92d3337ecd2c14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a12ab0905064a72057dffac03340b667f07b3ae5
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579337"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59022829"
 ---
 # <a name="public-c-attributes"></a>public(C++ 특성)
 
@@ -51,14 +51,14 @@ __interface IFireTabCtrl : IDispatch
 
 |||
 |-|-|
-|**적용 대상**|**typedef**|
+|**적용 대상**|**형식 정의**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)

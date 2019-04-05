@@ -12,12 +12,12 @@ helpviewer_keywords:
 - GetString method
 - SetString method
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
-ms.openlocfilehash: dff36dfb2b898c6a4df65492e2d9386c748f049b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ba56143beb3411734899839a46ab42992dfa4d8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534617"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035665"
 ---
 # <a name="cdynamicstringaccessor-class"></a>CDynamicStringAccessor 클래스
 
@@ -55,7 +55,7 @@ class CDynamicStringAccessorT : public CDynamicAccessor
 
 토론 및 동적 접근자 클래스를 사용 하 여 예제를 참조 하세요 [동적 접근자를 사용 하 여](../../data/oledb/using-dynamic-accessors.md)입니다.
 
-## <a name="getstring"></a> Cdynamicstringaccessor:: Getstring
+## <a name="getstring"></a> CDynamicStringAccessor::GetString
 
 지정된 열 데이터를 문자열로 검색합니다.
 
@@ -85,7 +85,7 @@ BaseType* GetString(const WCHAR* pColumnName) const throw();
 
 두 번째 폼은 열 이름을 ANSI 문자열로 재정의 합니다. 세 번째 폼은 열 이름을 유니코드 문자열로 재정의 합니다.
 
-## <a name="setstring"></a> Cdynamicstringaccessor:: Setstring
+## <a name="setstring"></a> CDynamicStringAccessor::SetString
 
 지정된 열 데이터를 문자열로 설정합니다.
 
@@ -110,7 +110,7 @@ HRESULT SetString(const WCHAR* pColumnName,
 *pColumnName*<br/>
 [in] 열 이름이 포함 된 문자열에 대 한 포인터입니다.
 
-*data*<br/>
+*데이터*<br/>
 [in] 지정된 된 열에 쓸 문자열 데이터에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -123,7 +123,7 @@ HRESULT SetString(const WCHAR* pColumnName,
 
 런타임 어설션 실패가 발생할 경우 생성 됨 _SECURE_ATL 0이 아닌 값에 정의 된 경우 입력 *데이터* 문자열 열 참조 데이터의 최대 허용 길이 보다 깁니다. 그렇지 않은 경우 입력된 문자열을 최대 허용 길이 보다 긴 경우 잘립니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

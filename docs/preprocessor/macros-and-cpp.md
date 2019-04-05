@@ -5,12 +5,12 @@ helpviewer_keywords:
 - macros, C++
 - macros
 ms.assetid: 83a344c1-73c9-4ace-8b93-cccfb62c6133
-ms.openlocfilehash: cd5d1237bc025cceb25cc290509b929b595a215f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4915526d5bb84b33f0595678781257d754aaf2d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499894"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024918"
 ---
 # <a name="macros-and-c"></a>매크로 및 C++
 C++는 새로운 기능을 제공하며 그 중 일부는 ANSI C 전처리기에서 제공하는 기능을 대신합니다. 이 새로운 기능으로 형식이 더욱 안전해지고 효과적으로 언어를 예측할 수 있습니다.
@@ -27,7 +27,7 @@ C++는 새로운 기능을 제공하며 그 중 일부는 ANSI C 전처리기에
 
 이전 버전과의 호환성을 위해 ANSI C 및 이전의 C++ 사양에 있는 모든 전처리기 기능이 Microsoft C++에 대해 유지됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [미리 정의된 매크로](../preprocessor/predefined-macros.md)<br/>
-[매크로(C/C++)](../preprocessor/macros-c-cpp.md)
+[매크로 (C/C++)](../preprocessor/macros-c-cpp.md)

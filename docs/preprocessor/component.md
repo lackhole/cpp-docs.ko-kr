@@ -8,12 +8,12 @@ helpviewer_keywords:
 - component pragma
 - pragmas, component
 ms.assetid: 7b66355e-3201-4c14-8190-f4a2a81a604a
-ms.openlocfilehash: af0e4d7267fab92c867431ab70f4d8a0240a79d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cfb9d2bb9d6ddd2d430c2c031f3c8a51946391b1
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666117"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032968"
 ---
 # <a name="component"></a>구성 요소
 소스 파일 내에서의 찾아보기 정보 또는 종속성 정보의 수집을 제어합니다.
@@ -32,7 +32,7 @@ ms.locfileid: "50666117"
 
 수집을 설정하거나 해제할 수 있으며 정보가 수집됨에 따라 특정 이름을 무시하도록 지정할 수 있습니다.
 
-설정 또는 해제를 사용하면 pragma 정방향에서의 찾아보기 정보 컬렉션을 제어합니다. 예:
+설정 또는 해제를 사용하면 pragma 정방향에서의 찾아보기 정보 수집을 제어합니다. 예를 들어:
 
 ```
 #pragma component(browser, off)
@@ -85,6 +85,6 @@ LINK : warning LNK4018: too many type indexes in PDB "filename", discarding subs
 
 자세한 내용은 참조는 [최소 다시 빌드](../build/reference/gm-enable-minimal-rebuild.md) (/ Gm) 컴파일러 옵션입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

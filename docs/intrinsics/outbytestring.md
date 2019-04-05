@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __outbytestring intrinsic
 - outsb instruction
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
-ms.openlocfilehash: c5d99ee230780d1bfdcd104c1fcf3b3bd099fd6e
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 41064dda6a1a0b9ad4c15f98c3f3081f08ef8db6
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326925"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032195"
 ---
 # <a name="outbytestring"></a>__outbytestring
 
@@ -36,7 +36,7 @@ void __outbytestring(
 *포트*<br/>
 [in] 데이터를 보낼 포트입니다.
 
-*Buffer*<br/>
+*버퍼*<br/>
 [in] 데이터 전송 지정된 된 포트입니다.
 
 *개수*<br/>
@@ -56,6 +56,6 @@ void __outbytestring(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

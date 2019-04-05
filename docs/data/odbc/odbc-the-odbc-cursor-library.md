@@ -16,12 +16,12 @@ helpviewer_keywords:
 - ODBC, timestamp
 - positioning cursors
 ms.assetid: 6608db92-82b1-4164-bb08-78153c227be3
-ms.openlocfilehash: e175a9b27cb19b0c2a67a08751b7a7717226ac55
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 862303a0dc66fbd49bfcba83336ab29dfc7145c0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435141"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032234"
 ---
 # <a name="odbc-the-odbc-cursor-library"></a>ODBC: ODBC 커서 라이브러리
 
@@ -48,7 +48,7 @@ ODBC 커서 라이브러리는 다음과 같은 새로운 기능 수준 1 드라
 ##  <a name="_core_positioned_updates_and_timestamp_columns"></a> 위치 지정된 업데이트 및 타임 스탬프 열
 
 > [!NOTE]
->  ODBC 데이터 원본 MFC 데이터 액세스 개체 (DAO) 클래스 또는이 항목에 설명 된 대로 MFC ODBC 클래스를 통해 액세스할 수 있습니다.
+>  ODBC 데이터 소스는 이 항목에서 설명하는 MFC ODBC 클래스뿐 아니라 MFC Data Access Object(DAO) 클래스를 통해서도 액세스할 수 있습니다.
 
 > [!NOTE]
 >  ODBC 드라이버에서 지 원하는 경우 `SQLSetPos`는 MFC 사용 가능한 경우,이 항목에서는 적용 되지 않습니다.
@@ -65,6 +65,6 @@ ODBC 커서 라이브러리는 다음과 같은 새로운 기능 수준 1 드라
 
 데이터 원본에 연결 하는 경우-호출한 [cdatabase:: Openex](../../mfc/reference/cdatabase-class.md#openex) 또는 [cdatabase:: Open](../../mfc/reference/cdatabase-class.md#open) -데이터 원본에 대 한 커서 라이브러리를 사용할 것인지를 지정할 수 있습니다. 해당 데이터 원본에 스냅숏 만들기는, 지정는 `CDatabase::useCursorLib` 옵션을 `dwOptions` 매개 변수를 `OpenEx` 에 대해 TRUE를 지정 하거나는 *bUseCursorLib* 매개 변수를 `Open` (기본값은 TRUE)입니다. ODBC 드라이버가 지 원하는 데이터 원본에 다이너셋 열려는 경우에 커서 라이브러리 (해당 다이너셋에 대 한 필요한 일부 드라이버 기능을 마스크)를 사용 하지 마십시오. 이 경우 지정 하지 않으면 `CDatabase::useCursorLib` 에서 `OpenEx` 에 FALSE를 지정 하거나 합니다 *bUseCursorLib* 매개 변수에서 `Open`.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[ODBC 기본 사항](../../data/odbc/odbc-basics.md)
+[ODBC 기초](../../data/odbc/odbc-basics.md)

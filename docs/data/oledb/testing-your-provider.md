@@ -6,12 +6,12 @@ helpviewer_keywords:
 - testing providers
 - OLE DB providers, testing
 ms.assetid: bf824fe4-81af-4ffb-beb3-4fa2928dc450
-ms.openlocfilehash: 9bb42af69a204c88e6068444642275b59ea5bf5c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: d7a3adad546834e2bdc80a695f4c3bf2259dc0ba
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518296"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038319"
 ---
 # <a name="testing-your-provider"></a>공급자 테스트
 
@@ -23,6 +23,6 @@ ms.locfileid: "51518296"
 
 1. OLE DB 공급자에 대 한 공급자 수준 0 표준을 충족 표시할 (ADO 적합성 테스트 포함) OLE DB 적합성 테스트를 실행 합니다. (수준 0의 설명에 대 한 검색 **OLE DB 수준 0 적합성 테스트** 언제 [OLE DB Programmer's Guide](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming). 이러한 테스트와 관련된 설명서는 Visual c + + Data Access SDK에 포함 됩니다. 이러한 테스트 다른 집계 하는 경우에 공급자 실행 되도록 표시할 도움이 [서비스 공급자](../../data/oledb/ole-db-resource-pooling-and-services.md) 속성을 추가 하거나 수정할 경우 특히 유용 합니다. 규칙 테스트에 대 한 자세한 내용은 Visual Studio Cd 중 하나에 있는 Data Access SDK에 대 한 추가 정보 파일을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿을 사용하여 작업](../../data/oledb/working-with-ole-db-provider-templates.md)

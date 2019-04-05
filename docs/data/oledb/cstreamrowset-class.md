@@ -27,12 +27,12 @@ helpviewer_keywords:
 - CStreamRowset class, constructor
 - Close method
 ms.assetid: a106e953-a38a-464e-8ea5-28963d9e4811
-ms.openlocfilehash: 44fb2dab939a0180df2faa1b8b889048619f4c02
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: b566ddab89d2198e3f6b24eb9a20c60747749d1a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57412967"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59022582"
 ---
 # <a name="cstreamrowset-class"></a>CStreamRowset 클래스
 
@@ -73,7 +73,7 @@ class CStreamRowset
 
 [!code-cpp[NVC_OLEDB_Consumer#12](../../data/oledb/codesnippet/cpp/cstreamrowset-class_2.cpp)]
 
-`ICommand::Execute` 반환 합니다는 `ISequentialStream` 에 저장 된 포인터 `m_spStream`합니다. 그런 다음 사용은 `Read` XML 형식에서 (유니코드 문자열) 데이터를 검색 하는 방법. 예를 들면,
+`ICommand::Execute` 반환 합니다는 `ISequentialStream` 에 저장 된 포인터 `m_spStream`합니다. 그런 다음 사용은 `Read` XML 형식에서 (유니코드 문자열) 데이터를 검색 하는 방법. 예를 들어:
 
 [!code-cpp[NVC_OLEDB_Consumer#13](../../data/oledb/codesnippet/cpp/cstreamrowset-class_3.cpp)]
 
@@ -102,7 +102,7 @@ CStreamRowset();
 void Close();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

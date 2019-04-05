@@ -10,12 +10,12 @@ helpviewer_keywords:
 - pragmas, comment
 - comment pragma
 ms.assetid: 20f099ff-6303-49b3-9c03-a94b6aa69b85
-ms.openlocfilehash: ec80e8cf177becdc25bdf49d6dfa9ad9c7794b88
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb9bfef2ae751529b8424143cde020e78f17ec72
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612825"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025272"
 ---
 # <a name="comment-cc"></a>comment (C/C++)
 
@@ -39,7 +39,7 @@ ms.locfileid: "50612825"
 
 장소 *commentstring* 개체 파일에 있습니다. 이 문자열은 링크 타임에 실행 파일에 배치됩니다. 이 문자열은 실행 파일이 로드될 때 메모리에 로드되지 않지만, 파일 내에 인쇄 가능한 문자열을 찾는 프로그램에서는 발견될 수 있습니다. 이 주석 기록 형식의 용도는 실행 파일의 버전 번호 또는 유사 정보를 포함하는 것입니다.
 
-`exestr`은 사용되지 않으며 추후 버전에서 제거됩니다. 따라서 주석 기록은 링커에서 처리되지 않습니다.
+`exestr` 사용 되지 않으며 후속 릴리스에서 제거 됩니다 링커 주석 레코드를 처리 하지 않습니다.
 
 ### <a name="lib"></a>lib
 
@@ -92,6 +92,6 @@ ms.locfileid: "50612825"
 #pragma comment( user, "Compiled on " __DATE__ " at " __TIME__ )
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

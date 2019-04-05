@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE DB provider templates, notifications
 - OLE DB providers, notifications
 ms.assetid: 76e875fd-2bfd-4e4e-9f43-dbe5a3fa7382
-ms.openlocfilehash: 25af1656295606658c62c2c85c1c037a54181527
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 52c4313de5017b97a193be1afebc020c9896fe6a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57425629"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035652"
 ---
 # <a name="supporting-notifications"></a>알림 지원
 
@@ -85,15 +85,15 @@ END_CONNECTION_POINT_MAP()
 
 |속성|지원할 경우 추가|
 |--------------|------------------------|
-|DBPROP_IConnectionPointContainer|Always|
-|DBPROP_NOTIFICATIONGRANULARITY|Always|
-|DBPROP_NOTIFICATIONPHASES|Always|
+|DBPROP_IConnectionPointContainer|항상|
+|DBPROP_NOTIFICATIONGRANULARITY|항상|
+|DBPROP_NOTIFICATIONPHASES|항상|
 |DBPROP_NOTIFYCOLUMNSET|`IRowsetChange`|
 |DBPROP_NOTIFYROWDELETE|`IRowsetChange`|
 |DBPROP_NOTIFYROWINSERT|`IRowsetChange`|
-|DBPROP_NOTIFYROWSETFETCHPOSITIONCHANGE|Always|
+|DBPROP_NOTIFYROWSETFETCHPOSITIONCHANGE|항상|
 |DBPROP_NOTIFYROWFIRSTCHANGE|`IRowsetUpdate`|
-|DBPROP_NOTIFYROWSETRELEASE|Always|
+|DBPROP_NOTIFYROWSETRELEASE|항상|
 |DBPROP_NOTIFYROWUNDOCHANGE|`IRowsetUpdate`|
 |DBPROP_NOTIFYROWUNDODELETE|`IRowsetUpdate`|
 |DBPROP_NOTIFYROWUNDOINSERT|`IRowsetUpdate`|
@@ -101,6 +101,6 @@ END_CONNECTION_POINT_MAP()
 
 OLE DB 공급자 템플릿 알림 구현의 대부분 포함 되어 있습니다. 추가 하지 않으면 `IRowsetNotifyCP` 상속 체인에에 컴파일러 하므로 코드 크기의 작은 하 여 컴파일 스트림에서 모든 코드를 제거 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [고급 공급자 기술](../../data/oledb/advanced-provider-techniques.md)

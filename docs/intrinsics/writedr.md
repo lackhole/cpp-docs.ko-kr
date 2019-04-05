@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __writedr intrinsic
 ms.assetid: ac55c1ee-df2f-41d4-a429-6f369d2a934d
-ms.openlocfilehash: f8049485d40185d83ed01c91ad336e83f3e79834
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c495e8c80029680512358198ca8fb0ce6e65414d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651817"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59022483"
 ---
 # <a name="writedr"></a>__writedr
 
@@ -46,7 +46,7 @@ void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [__readdr](../intrinsics/readdr.md)

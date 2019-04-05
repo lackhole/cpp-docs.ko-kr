@@ -65,12 +65,12 @@ helpviewer_keywords:
 - operator CSession*
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-ms.openlocfilehash: 769dfc99f431cb5ba803075e28176713f9bd7092
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: 94c7025185a24b07d5968157d49c856d4359b33a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565508"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59021633"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection 클래스
 
@@ -102,11 +102,11 @@ class CDataConnection
 |||
 |-|-|
 |[연산자 BOOL](#op_bool)|현재 세션이 열려 있는지 여부를 결정 합니다.|
-|[operator bool](#op_bool_ole)|현재 세션이 열려 있는지 여부를 결정 합니다.|
-|[operator CDataSource&](#op_cdata_amp)|포함된 된 참조를 반환 합니다 `CDataSource` 개체입니다.|
-|[operator CDataSource*](#op_cdata_star)|포함된 `CDataSource` 개체에 대한 포인터를 반환합니다.|
-|[연산자 CSession &](#op_csession_amp)|포함된 된 참조를 반환 합니다 `CSession` 개체입니다.|
-|[연산자 CSession *](#op_csession_star)|포함된 `CSession` 개체에 대한 포인터를 반환합니다.|
+|[연산자 bool](#op_bool_ole)|현재 세션이 열려 있는지 여부를 결정 합니다.|
+|[CDataSource 연산자 &](#op_cdata_amp)|포함된 된 참조를 반환 합니다 `CDataSource` 개체입니다.|
+|[CDataSource * 연산자](#op_cdata_star)|포함된 `CDataSource` 개체에 대한 포인터를 반환합니다.|
+|[연산자 CSession&](#op_csession_amp)|포함된 된 참조를 반환 합니다 `CSession` 개체입니다.|
+|[연산자 CSession*](#op_csession_star)|포함된 `CSession` 개체에 대한 포인터를 반환합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -187,7 +187,7 @@ HRESULT OpenNewSession(CSession & session) throw();
 
 #### <a name="parameters"></a>매개 변수
 
-*session*<br/>
+*세션*<br/>
 [에서/out] 새 세션 개체에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -304,7 +304,7 @@ operator const CSession*() throw();
 
 참조 [연산자 CSession &](../../data/oledb/cdataconnection-operator-csession-amp.md) 사용 예입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

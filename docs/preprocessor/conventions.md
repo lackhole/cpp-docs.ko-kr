@@ -5,12 +5,12 @@ helpviewer_keywords:
 - preprocessor
 - preprocessor, conventions
 ms.assetid: 469ce448-dc6c-4d0e-ba2b-e2e7a10155e1
-ms.openlocfilehash: 222b84739809cfbad73a0f3e8e7febeebefef694
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c84be60938752e7401e2178dbcbf98c6ed32b1cc
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629803"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034276"
 ---
 # <a name="conventions"></a>규칙
 규칙은 구문의 여러 구성 요소에 대해 여러 글꼴 특성을 사용합니다. 기호 및 글꼴은 다음과 같습니다.
@@ -24,6 +24,6 @@ ms.locfileid: "50629803"
 
 비터미널 뒤에 오는 콜론(**:**)은 정의를 지정합니다. 다른 정의는 별도의 줄에 나열됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[문법 요약(C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+[문법 요약 (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

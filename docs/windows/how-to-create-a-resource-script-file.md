@@ -36,12 +36,12 @@ helpviewer_keywords:
 - resources [C++], templates
 - .rct files [C++]
 ms.assetid: 82be732a-cdcd-4a58-8de7-976d1418f86b
-ms.openlocfilehash: a18c24685ff0d5f65970a094730d1587abffb601
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: c22df99240c0fa076124e33224a4f6f4ab9a957e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563032"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028524"
 ---
 # <a name="how-to-create-resources-c"></a>방법: 리소스 (c + +) 만들기
 
@@ -117,9 +117,9 @@ Windows를 사용 하 여 Microsoft Foundation 클래스 (MFC) 응용 프로그�
 
 | 속성 | 설명 |
 |---|---|
-| **리소스 종류** | 만들려는 리소스의 종류를 지정 합니다.<br/><br/>커서와 대화 상자 리소스 범주에 있는 추가 리소스를 확장할 수 있습니다 *... \Microsoft visual Studio \<버전\>\VC\VCResourceTemplates\\< LCID\>\mfc.rct*합니다. .Rct 파일을 추가 해야 할 경우 여기에 해당 또는 다른 지정 [경로가 포함](../windows/how-to-specify-include-directories-for-resources.md)합니다. 트리 컨트롤의 최상위 수준에서 표시 하는 리소스는 Visual Studio에서 제공 되는 기본 리소스입니다. .Rct 파일의 리소스는 해당 범주의 두 번째 수준에 나타납니다. 추가할 수 있습니다.rct 파일의 수는 미리 설정 된 제한은 없습니다.<br/><br/> |
+| **리소스 형식** | 만들려는 리소스의 종류를 지정 합니다.<br/><br/>커서와 대화 상자 리소스 범주에 있는 추가 리소스를 확장할 수 있습니다 *... \Microsoft visual Studio \<버전\>\VC\VCResourceTemplates\\< LCID\>\mfc.rct*합니다. .Rct 파일을 추가 해야 할 경우 여기에 해당 또는 다른 지정 [경로가 포함](../windows/how-to-specify-include-directories-for-resources.md)합니다. 트리 컨트롤의 최상위 수준에서 표시 하는 리소스는 Visual Studio에서 제공 되는 기본 리소스입니다. .Rct 파일의 리소스는 해당 범주의 두 번째 수준에 나타납니다. 추가할 수 있습니다.rct 파일의 수는 미리 설정 된 제한은 없습니다.<br/><br/> |
 | **새로 만들기** | 선택한 형식을 기반으로 리소스 만들기를 **리소스 종류** 상자 하 고 적절 한 편집기에서 리소스를 엽니다.<br/><br/>예를 들어 대화 상자 리소스를 만드는 경우 열릴 리소스에는 [대화 상자 편집기](../windows/dialog-editor.md)합니다. |
-| **Import** | 엽니다는 **가져올** 현재 프로젝트로 가져올 리소스 이동 대화 상자.<br/><br/>비트맵, 아이콘, 커서를 가져올 수 있습니다 HTML, 사운드 (합니다. WAV) 또는 사용자 지정 리소스 파일입니다. |
+| **가져오기** | 엽니다는 **가져올** 현재 프로젝트로 가져올 리소스 이동 대화 상자.<br/><br/>비트맵, 아이콘, 커서를 가져올 수 있습니다 HTML, 사운드 (합니다. WAV) 또는 사용자 지정 리소스 파일입니다. |
 | **사용자 지정** | 엽니다는 **새 사용자 지정 리소스** 대화 상자 사용자 지정 리소스를 만듭니다.<br/><br/>또한를 **리소스 종류** 사용자 지정 리소스 종류의 이름을 입력할 텍스트 상자를 제공 하는 속성입니다. Visual c + +를 종료할 때 입력 한 이름이 자동으로 대문자로 바뀝니다. 사용자 지정 리소스만 편집할 수는 [바이너리 편집기](../windows/binary-editor.md)합니다. |
 
 새 리소스를 만들면 Visual C++은 `IDD_Dialog1`과 같은 고유 이름을 할당합니다. 연결된 된 리소스 편집기에서 또는 리소스 속성을 편집 하 여이 리소스 ID를 사용자 지정할 수 있습니다 합니다 [속성 창](/visualstudio/ide/reference/properties-window)합니다.
@@ -187,8 +187,8 @@ Windows를 사용 하 여 Microsoft Foundation 클래스 (MFC) 응용 프로그�
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [방법: 리소스 관리](../windows/how-to-copy-resources.md)<br/>
-[방법: 컴파일 시간에 리소스 포함](../windows/how-to-include-resources-at-compile-time.md)<br/>
+[방법: 컴파일 타임에 리소스 포함](../windows/how-to-include-resources-at-compile-time.md)<br/>

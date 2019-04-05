@@ -3,12 +3,12 @@ title: '연습: WRL 및 Media Foundation을 사용 하 여 UWP 앱 만들기'
 ms.date: 09/17/2018
 ms.topic: reference
 ms.assetid: 0336c550-fbeb-4dc4-aa9b-660f9fc45382
-ms.openlocfilehash: e6d240152c3740b59c34ae8e0f5aa818ce8be638
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: e0254be8c6fa185f75c46898d4da51742195550a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785098"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036038"
 ---
 # <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>연습: WRL 및 Media Foundation을 사용 하 여 UWP 앱 만들기
 
@@ -119,7 +119,7 @@ ms.locfileid: "58785098"
 
 이 예제에서는 기본 웹캠에서 한 번에 하나씩 사진을 캡처하는 방법을 보여 줍니다. 합니다 [미디어 확장명 샘플](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096) 많은 기능을 수행 합니다. 웹캠 장치를 열거하고 로컬 스키마 처리기를 사용하는 방법을 보여 주며, 개별 사진과 비디오 스트림 모두에서 작동하는 추가 미디어 효과를 보여 줍니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows 런타임 C++ 템플릿 라이브러리(WRL)](windows-runtime-cpp-template-library-wrl.md)<br/>
 [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk)<br/>

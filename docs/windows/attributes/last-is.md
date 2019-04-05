@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - last_is attribute
 ms.assetid: 9e045ac0-fa38-4249-af55-67bde5d0a58c
-ms.openlocfilehash: ce19d8d727a359054289200b2cdcb6a6427dc706
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39b35b218f3402839d956c4da0a00f290fe5d595
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545719"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033289"
 ---
 # <a name="lastis"></a>last_is
 
@@ -25,7 +25,7 @@ ms.locfileid: "50545719"
 
 ### <a name="parameters"></a>매개 변수
 
-*식*<br/>
+*expression*<br/>
 하나 이상의 C 언어 식입니다. 빈 인수 슬롯 허용 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -49,7 +49,7 @@ ms.locfileid: "50545719"
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>

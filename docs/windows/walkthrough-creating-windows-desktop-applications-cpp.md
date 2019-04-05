@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: 07da91ea092b4e7bee974b0387e72ea0cacaec8e
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: cb6d09acc00f2e38ee41180c81c1877bc53027c2
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893901"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037964"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)
 
@@ -96,7 +96,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 ### <a name="to-start-a-windows-desktop-application"></a>Windows 데스크톱 애플리케이션을 시작하려면
 
-1. 모든 C와 마찬가지로 응용 프로그램 및 c + + 응용 프로그램이 있어야 합니다는 `main` 데스크톱 응용 프로그램에 있어야 하는 모든 Windows 시작 지점으로 함수를 `WinMain` 함수입니다. `WinMain` 에는 다음 구문이 있습니다.
+1. 모든 C와 마찬가지로 응용 프로그램 및 c + + 응용 프로그램이 있어야 합니다는 `main` 데스크톱 응용 프로그램에 있어야 하는 모든 Windows 시작 지점으로 함수를 `WinMain` 함수입니다. `WinMain` 에 다음 구문이 있습니다.
 
    ```cpp
    int CALLBACK WinMain(
@@ -119,7 +119,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    #include <tchar.h>
    ```
 
-1. `WinMain` 함수 이외에 모든 Windows 데스크톱 응용 프로그램에는 창 프로시저 함수도 있어야 합니다. 이 함수 이름은 일반적으로 `WndProc` 하지만 원하는 이름을 지정할 수 있습니다. `WndProc` 에는 다음 구문이 있습니다.
+1. `WinMain` 함수 이외에 모든 Windows 데스크톱 응용 프로그램에는 창 프로시저 함수도 있어야 합니다. 이 함수 이름은 일반적으로 `WndProc` 하지만 원하는 이름을 지정할 수 있습니다. `WndProc` 에 다음 구문이 있습니다.
 
    ```cpp
    LRESULT CALLBACK WndProc(
@@ -559,6 +559,6 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 지금까지 이 연습을 완료 하 고 기존 Windows 데스크톱 응용 프로그램을 구축 했습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows 데스크톱 응용 프로그램](../windows/windows-desktop-applications-cpp.md)

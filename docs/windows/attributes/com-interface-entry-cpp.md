@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - com_interface_entry attribute
 ms.assetid: 10368f81-b99b-4a0f-ba4f-a142e6911a5c
-ms.openlocfilehash: 9d83cae79b257c9ddfc6d9ab910bb5502ae78307
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 65d174679f851613e064568b071cfcbdad8f0f06
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559694"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030409"
 ---
 # <a name="cominterfaceentry-c"></a>com_interface_entry(C++)
 
@@ -109,14 +109,14 @@ END_COM_MAP()
 
 |||
 |-|-|
-|**적용 대상**|**클래스**, **구조체**|
+|**적용 대상**|**class**, **struct**|
 |**반복 가능**|예|
 |**필수 특성**|다음 중 하나 이상의: `coclass`, `progid`, 또는 `vi_progid`합니다.|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 특성](com-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>

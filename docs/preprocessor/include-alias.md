@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, include_alias
 - include_alias pragma
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
-ms.openlocfilehash: 9d32cad2533b6044348651797d0278bcbebcafd6
-ms.sourcegitcommit: ae2f71fe0d64f1a90ef722759fe93c82abc064ab
+ms.openlocfilehash: 187fa94f7c2a5457df655081b87a7f49d38adfa2
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53587878"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024103"
 ---
 # <a name="includealias"></a>include_alias
 
@@ -21,12 +21,12 @@ ms.locfileid: "53587878"
 
 ## <a name="syntax"></a>구문
 
-> #<a name="pragma-includealiasaliasfilename-actualfilename"></a>pragma include_alias ("*alias_filename*","*actual_filename*")
-> #<a name="pragma-includealiasaliasfilename-actualfilename"></a>pragma include_alias (\<*alias_filename*>를 \< *actual_filename*>)
+> #<a name="pragma-includealiasaliasfilename-actualfilename"></a>pragma include_alias("*alias_filename*", "*actual_filename*")
+> #<a name="pragma-includealiasaliasfilename-actualfilename"></a>pragma include_alias(\<*alias_filename*>, \<*actual_filename*>)
 
 ## <a name="remarks"></a>설명
 
-합니다 **include_alias** pragma 지시문을 사용 하면 다른 이름이 나 원본 파일에 의해 포함 파일 이름에 대 한 경로 파일을 대체할 수 있습니다. 예를 들어, 일부 파일 시스템 8.3 FAT 파일 시스템 제한 보다 더 긴 헤더 파일을 허용합니다. 더 긴 헤더 파일 이름의 첫 8개 문자가 고유하지 않을 수 있기 때문에 컴파일러는 더 긴 이름을 8.3으로 간단히 자를 수 없습니다. 컴파일러가 합니다 *alias_filename* 대체 문자열 *actual_filename*, 및 헤더 파일을 찾습니다 *actual_filename* 대신 합니다. 이 pragma는 해당 `#include` 지시문 앞에 배치되어야 합니다. 예:
+합니다 **include_alias** pragma 지시문을 사용 하면 다른 이름이 나 원본 파일에 의해 포함 파일 이름에 대 한 경로 파일을 대체할 수 있습니다. 예를 들어, 일부 파일 시스템 8.3 FAT 파일 시스템 제한 보다 더 긴 헤더 파일을 허용합니다. 컴파일러는 두 파일명 중 더 긴 헤더 파일 이름의 처음 8자가 고유하다는 보장이 되지 않기 때문에 더 긴 이름을 8.3으로 자를 수 없습니다. 컴파일러가 합니다 *alias_filename* 대체 문자열 *actual_filename*, 및 헤더 파일을 찾습니다 *actual_filename* 대신 합니다. pragma 선언은 대체하려고 하는 `#include` 지시문 전에 배치되어야 합니다. 다음은 사용 예를 보여줍니다.
 
 ```cpp
 // First eight characters of these two files not unique.
@@ -40,7 +40,7 @@ ms.locfileid: "53587878"
 #include "GraphicsMenu.h"
 ```
 
-검색된 별칭은 철자, 큰따옴표 또는 꺾쇠 괄호 사용에서 지정된 내용과 정확하게 일치해야 합니다. 합니다 **include_alias** pragma는 파일 이름에 대해 일치 하는 간단한 문자열; 없는 다른 파일 이름 유효성 검사를 수행 합니다. 예를 들어 다음과 같은 지시문에서는
+별칭이 올바르게 검색되어 일치하려면, 철자, 큰따옴표나 꺾쇠 괄호까지 지정된 내용과 정확하게 일치해야 합니다. **include_alias** pragma는 파일 이름에 대하여 간단한 문자열 일치 검사를 수행합니다. 다른 파일 이름의 유효성 검증은 수행되지 않습니다. 다음 예를 살펴보면,
 
 ```cpp
 #pragma include_alias("mymath.h", "math.h")
@@ -58,7 +58,7 @@ ms.locfileid: "53587878"
 
 > /YcAppleSystemHeaderStop.h
 
-**include_alias** pragma를 사용하여 헤더 파일 이름을 다른 파일 경로로 매핑할 수 있습니다. 예를 들면,
+**include_alias** pragma를 사용하여 헤더 파일 이름을 다른 파일 경로로 매핑할 수 있습니다. 다음은 사용 예를 보여줍니다.
 
 ```cpp
 #pragma include_alias( "api.h", "c:\version1.0\api.h" )
@@ -87,7 +87,7 @@ ms.locfileid: "53587878"
 #include "VERYLONGFILENAME.H"
 ```
 
-VERYLONGFILENAME에 오류가 있습니다. H 다음 오류 메시지가 생성 됩니다.
+VERYLONGFILENAME.H에서 다음과 같은 오류가 발생합니다.
 
 ```Output
 myfile.h(15) : error C2059 : syntax error
@@ -103,6 +103,6 @@ myfile.h(15) : error C2059 : syntax error
 
 컴파일러는 파일 two.h three.h가 아니라 검색합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - databases [C++], ODBC
 - data access [C++], ODBC
 ms.assetid: 56b6067a-651e-4c10-a24d-d4a6a17ca5e4
-ms.openlocfilehash: 8a4d6cad399b1773102dc0bc64e28049cca30d2d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: fdaafd5c8243143fd9705d45db2497577820ca0a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523353"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030091"
 ---
 # <a name="open-database-connectivity-odbc"></a>ODBC(Open Database Connectivity)
 
@@ -76,6 +76,6 @@ MFC 사용 하지 않고 ODBC API를 사용 하는 방법에 대 한 자세한 �
 
 - [MFC ODBC 레코드 집합 사용](use-mfc-odbc-recordsets.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[데이터 액세스 프로그래밍 (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)
+[데이터 엑세스 프로그래밍 (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

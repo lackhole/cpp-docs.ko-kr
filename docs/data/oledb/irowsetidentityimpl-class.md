@@ -14,12 +14,12 @@ helpviewer_keywords:
 - IRowsetIdentityImpl class
 - IsSameRow method
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
-ms.openlocfilehash: e70330a023dc48b7e763bfb874da5290f2fa519f
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 51f8d7e832476619ccec277c9d73791041d146a6
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424524"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023181"
 ---
 # <a name="irowsetidentityimpl-class"></a>IRowsetIdentityImpl 클래스
 
@@ -72,7 +72,7 @@ STDMETHOD(IsSameRow )(HROW hThisRow,
 
 행 핸들을 비교 하려면이 메서드는 다음과 같이 캐스팅 됩니다.는 `HROW` 핸들 `RowClass` 멤버 및 호출 `memcmp` 는 포인터에 대 한 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

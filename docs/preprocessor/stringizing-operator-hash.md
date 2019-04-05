@@ -12,12 +12,12 @@ helpviewer_keywords:
 - macros [C++], converting parameters to strings
 - '# preprocessor operator'
 ms.assetid: 1175dd19-4538-43b3-ad97-a008ab80e7b1
-ms.openlocfilehash: 4fcf94c7501156d84e80d4cc4ff0d5ea8659b45e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4f23eea017197ae1f984e097bb3967c1228fef09
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532043"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035717"
 ---
 # <a name="stringizing-operator-"></a>문자열화 연산자 (#)
 
@@ -76,6 +76,6 @@ FB(F B)
 FB1(F B)
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[전처리기 연산자](../preprocessor/preprocessor-operators.md)
+[전처리 연산자](../preprocessor/preprocessor-operators.md)

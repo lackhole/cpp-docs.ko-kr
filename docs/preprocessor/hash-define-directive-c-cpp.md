@@ -10,12 +10,12 @@ helpviewer_keywords:
 - '#define directive, syntax'
 - '#define directive'
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
-ms.openlocfilehash: dec555de64a3ebd166bdff5558957f09e1c2755e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a0cc7e7836a0c82c72055fe8d9e7497995485d0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653754"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039510"
 ---
 # <a name="define-directive-cc"></a>#define 지시문 (C/C++)
 
@@ -23,9 +23,9 @@ ms.locfileid: "50653754"
 
 ## <a name="syntax"></a>구문
 
-`#define` *식별자* *토큰 문자열*<sub>최적화</sub>
+`#define` *identifier* *token-string*<sub>opt</sub>
 
-`#define` *식별자* `(` *식별자*<sub>opt</sub> `,` *...*  `,` *식별자*<sub>opt</sub> `)` *토큰 문자열*<sub>최적화</sub>
+`#define` *identifier* `(` *identifier*<sub>opt</sub>`,` *...* `,` *identifier*<sub>opt</sub>`)` *token-string*<sub>opt</sub>
 
 ## <a name="remarks"></a>설명
 
@@ -115,6 +115,6 @@ var = 80 + 10 * 20;
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)

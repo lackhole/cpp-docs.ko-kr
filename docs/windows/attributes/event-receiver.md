@@ -12,12 +12,12 @@ helpviewer_keywords:
 - event sinks, creating
 - event sinks
 ms.assetid: bf8fe770-3ea2-4128-b46b-166222ee4097
-ms.openlocfilehash: e483ece1019d4a8203215eddbc4d3b9d545328a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 81a3ec88c336ddeb550f133e657854b3b6f89d96
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663198"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023297"
 ---
 # <a name="eventreceiver"></a>event_receiver
 
@@ -69,14 +69,14 @@ ms.locfileid: "50663198"
 
 |||
 |-|-|
-|**적용 대상**|**클래스**, **구조체**|
+|**적용 대상**|**class**, **struct**|
 |**반복 가능**|아니요|
-|**필수 특성**|`coclass` 때 *layout_dependent*=**true**|
+|**필수 특성**|`coclass` when *layout_dependent*=**true**|
 |**잘못된 특성**|없음|
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 특성](compiler-attributes.md)<br/>
 [event_source](event-source.md)<br/>
