@@ -140,12 +140,12 @@ helpviewer_keywords:
 - CMFCToolBarImages [MFC], PreMultiplyAlpha
 - CMFCToolBarImages [MFC], m_bDisableTrueColorAlpha
 ms.assetid: d4e50518-9ffc-406f-9996-f79e5cd38155
-ms.openlocfilehash: bbd2a2d301646b4d3897d9fe4990bdfd1e48325b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 210432b8ec193efccc0bf2338089dbccca310726
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303347"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58776416"
 ---
 # <a name="cmfctoolbarimages-class"></a>CMFCToolBarImages 클래스
 
@@ -252,12 +252,12 @@ class CMFCToolBarImages : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 구성 하는 방법에 설명 된 `CMFCToolBarImages` 에서 다양 한 메서드를 사용 하 여 개체를 `CMFCToolBarImages` 클래스입니다. 도구 모음 이미지의 크기를 설정, 이미지, 로드 및 이미지의 투명 한 색을 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 구성 하는 방법에 설명 된 `CMFCToolBarImages` 에서 다양 한 메서드를 사용 하 여 개체를 `CMFCToolBarImages` 클래스입니다. 도구 모음 이미지의 크기를 설정, 이미지, 로드 및 이미지의 투명 한 색을 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#32](../../mfc/codesnippet/cpp/cmfctoolbarimages-class_1.h)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#33](../../mfc/codesnippet/cpp/cmfctoolbarimages-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -893,7 +893,7 @@ BOOL Load(
 *hinstRes*<br/>
 [in] 리소스 DLL의 인스턴스입니다.
 
-*bAdd*<br/>
+*추가*<br/>
 [in] 기존 비트맵 이미지의 이름을 바꾸려면 로드 비트맵 또는 FALSE로 기존 비트맵을 추가 하려면 TRUE입니다.
 
 *lpszBmpFileName*<br/>

@@ -91,10 +91,10 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
 ms.openlocfilehash: bd062a4e0d4db364c9cb628608c6af165dc0edc2
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58777170"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl 클래스
@@ -229,7 +229,7 @@ Month calendar 컨트롤에 적용 되는 Windows 스타일의 조합을 지정 
 *rect*<br/>
 에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다. Month calendar 컨트롤의 크기와 위치를 포함합니다.
 
-*pt*<br/>
+*(태평양 표준시)*<br/>
 에 대 한 참조를 [지점](/previous-versions/dd162805\(v=vs.85\)) month calendar 컨트롤의 위치를 식별 하는 구조입니다.
 
 *pParentWnd*<br/>

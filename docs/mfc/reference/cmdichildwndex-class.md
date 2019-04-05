@@ -113,10 +113,10 @@ helpviewer_keywords:
 - CMDIChildWndEx [MFC], UpdateTaskbarTabIcon
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
 ms.openlocfilehash: e12cf9f65e6fd6dd7f68edc4a94103baa5a8df62
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781759"
 ---
 # <a name="cmdichildwndex-class"></a>CMDIChildWndEx 클래스
@@ -547,7 +547,7 @@ BOOL InsertPane(
 *pTarget*<br/>
 [in] 인접 한 창에 대 한 포인터입니다.
 
-*bAfter*<br/>
+*후에는*<br/>
 [in] TRUE 이면 *pControlBar* 뒤에 삽입 됩니다 *pTarget*합니다. FALSE 이면 *pControlBar* 앞에 삽입 됩니다 *pTarget*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -567,7 +567,7 @@ BOOL IsPointNearDockSite(
 
 ### <a name="parameters"></a>매개 변수
 
-*point*<br/>
+*지점*<br/>
 [in] 지정 된 지점입니다.
 
 *dwBarAlignment*<br/>
@@ -686,7 +686,7 @@ CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*point*<br/>
+*지점*<br/>
 [in] 확인 화면 좌표에서 지점에 지정 합니다.
 
 *nSensitivity*<br/>

@@ -1,5 +1,5 @@
 ---
-title: 'TN065: OLE 자동화 서버에 대한 이중 인터페이스 지원'
+title: 'TN065: OLE 자동화 서버에 대 한 이중 인터페이스 지원'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.ole
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - ACDUAL sample [MFC]
 - Automation servers [MFC], dual-interface support
 ms.assetid: b5c8ed09-2f7f-483c-80fc-2a47ad896063
-ms.openlocfilehash: 5a04c2712182fe9c9ed3fd9e5fe4548404f96a5d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 33828f3979fb938ae6e88fa3cb0d6ee24daa958c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575216"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58776676"
 ---
-# <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE 자동화 서버에 대한 이중 인터페이스 지원
+# <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE 자동화 서버에 대 한 이중 인터페이스 지원
 
 > [!NOTE]
 > 다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.
 
-MFC 기반 OLE 자동화 서버 응용 프로그램에 이중 인터페이스를 추가 하는 방법을 설명 합니다. 합니다 [ACDUAL](../visual-cpp-samples.md) 샘플에서는 이중 인터페이스 지원 및 ACDUAL에서의이 예제 코드를 가져옵니다. DECLARE_DUAL_ERRORINFO, DUAL_ERRORINFO_PART, IMPLEMENT_DUAL_ERRORINFO, 등이 참고에 설명 된 매크로 ACDUAL 샘플의 일부 이며 MFCDUAL에서 찾을 수 있습니다. 8.
+MFC 기반 OLE 자동화 서버 응용 프로그램에 이중 인터페이스를 추가 하는 방법을 설명 합니다. 합니다 [ACDUAL](../overview/visual-cpp-samples.md) 샘플에서는 이중 인터페이스 지원 및 ACDUAL에서의이 예제 코드를 가져옵니다. DECLARE_DUAL_ERRORINFO, DUAL_ERRORINFO_PART, IMPLEMENT_DUAL_ERRORINFO, 등이 참고에 설명 된 매크로 ACDUAL 샘플의 일부 이며 MFCDUAL에서 찾을 수 있습니다. 8.
 
 ## <a name="dual-interfaces"></a>이중 인터페이스
 
@@ -43,7 +43,7 @@ OLE Automation을 사용 하면 구현할 수 있지만 `IDispatch` 인터페이
 
 먼저 개체에 대 한 이중 인터페이스를 정의 하 여 서버에 대 한 ODL 파일을 수정 합니다. 이중 인터페이스를 정의 하려면 대신에 인터페이스 문을 사용 해야 합니다는 `DISPINTERFACE` Visual c + + 마법사에서 생성 하는 문입니다. 기존 제거 하는 대신 `DISPINTERFACE` 문을 새 인터페이스 문을 추가 합니다. 유지 하 여는 `DISPINTERFACE` 폼 클래스 마법사를 사용 하 여 개체, 속성 및 메서드를 추가 하려면 계속할 수 있지만 사용자 인터페이스에 해당 하는 속성 및 메서드를 추가 해야 합니다.
 
-이중 인터페이스에 대 한 인터페이스 문이 있어야 합니다 *OLEAUTOMATION* 하 고 *이중* 특성 및 인터페이스에서 파생 되어야 합니다 `IDispatch`합니다. 사용할 수는 [GUIDGEN](../visual-cpp-samples.md) 만들려는 샘플을 **IID** 이중 인터페이스에 대 한:
+이중 인터페이스에 대 한 인터페이스 문이 있어야 합니다 *OLEAUTOMATION* 하 고 *이중* 특성 및 인터페이스에서 파생 되어야 합니다 `IDispatch`합니다. 사용할 수는 [GUIDGEN](../overview/visual-cpp-samples.md) 만들려는 샘플을 **IID** 이중 인터페이스에 대 한:
 
 ```IDL
 [ uuid(0BDD0E81-0DD7-11cf-BBA8-444553540000), // IID_IDualAClick
@@ -218,7 +218,7 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::put_Position(
 }
 ```
 
-MFC에서 변환 해야 할 수에 대 한 포인터에 이중 인터페이스 메서드를 통해 다시 전달 하기 전에 `IDispatch` 이중 인터페이스 포인터에 대 한 포인터입니다. 예:
+MFC에서 변환 해야 할 수에 대 한 포인터에 이중 인터페이스 메서드를 통해 다시 전달 하기 전에 `IDispatch` 이중 인터페이스 포인터에 대 한 포인터입니다. 예를 들어:
 
 ```
 STDMETHODIMP CAutoClickDoc::XDualAClick::get_Position(
@@ -310,7 +310,7 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::put_text(BSTR newText)
 }
 ```
 
-`CATCH_ALL_DUAL` 예외가 발생 하면 올바른 오류 코드 반환 담당 합니다. `CATCH_ALL_DUAL` MFC 예외 OLE Automation 오류 처리 정보를 사용 하 여 변환 된 `ICreateErrorInfo` 인터페이스입니다. (예제 `CATCH_ALL_DUAL` 매크로 MFCDUAL 파일입니다. H 합니다 [ACDUAL](../visual-cpp-samples.md) 샘플입니다. 예외를 처리 하려면 호출 함수 `DualHandleException`, MFCDUAL 파일에 있습니다. CPP입니다.) `CATCH_ALL_DUAL` 발생 한 예외의 종류에 따라 반환할 오류 코드를 결정 합니다.
+`CATCH_ALL_DUAL` 예외가 발생 하면 올바른 오류 코드 반환 담당 합니다. `CATCH_ALL_DUAL` MFC 예외 OLE Automation 오류 처리 정보를 사용 하 여 변환 된 `ICreateErrorInfo` 인터페이스입니다. (예제 `CATCH_ALL_DUAL` 매크로 MFCDUAL 파일입니다. H 합니다 [ACDUAL](../overview/visual-cpp-samples.md) 샘플입니다. 예외를 처리 하려면 호출 함수 `DualHandleException`, MFCDUAL 파일에 있습니다. CPP입니다.) `CATCH_ALL_DUAL` 발생 한 예외의 종류에 따라 반환할 오류 코드를 결정 합니다.
 
 - [COleDispatchException](../mfc/reference/coledispatchexception-class.md) -이 경우 `HRESULT` 다음 코드를 사용 하 여 생성 됩니다.
 
@@ -332,7 +332,7 @@ OLE Automation 오류 처리기를 사용, 구현 해야 하는 `ISupportErrorIn
 
 마지막으로 지원 하도록 정의 된 클래스를 구현 `ISupportErrorInfo`합니다.
 
-(합니다 [ACDUAL](../visual-cpp-samples.md) 샘플에 다음 세 가지 단계를 수행 하는 데 세 가지 매크로 `DECLARE_DUAL_ERRORINFO`를 `DUAL_ERRORINFO_PART`, 및 `IMPLEMENT_DUAL_ERRORINFO`MFCDUAL에 포함 된 모든 합니다. 8.)
+(합니다 [ACDUAL](../overview/visual-cpp-samples.md) 샘플에 다음 세 가지 단계를 수행 하는 데 세 가지 매크로 `DECLARE_DUAL_ERRORINFO`를 `DUAL_ERRORINFO_PART`, 및 `IMPLEMENT_DUAL_ERRORINFO`MFCDUAL에 포함 된 모든 합니다. 8.)
 
 지원 하기 위해 정의 클래스를 구현 하는 다음 예제에서는 `ISupportErrorInfo`합니다. `CAutoClickDoc` 자동화 클래스의 이름 및 `IID_IDualAClick` 되는 **IID** OLE Automation 오류 개체를 통해 보고 된 오류의 원인이 되는 인터페이스에 대 한:
 

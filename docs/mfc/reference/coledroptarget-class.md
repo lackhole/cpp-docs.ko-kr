@@ -25,10 +25,10 @@ helpviewer_keywords:
 - COleDropTarget [MFC], Revoke
 ms.assetid: a58c9a48-6a93-4357-b078-4594df258311
 ms.openlocfilehash: 9a1633ed48c763b986f3421c33589a05f8bba126
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781642"
 ---
 # <a name="coledroptarget-class"></a>COleDropTarget 클래스
@@ -117,7 +117,7 @@ virtual DROPEFFECT OnDragEnter(
 *dwKeyState*<br/>
 보조키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
 
-*point*<br/>
+*지점*<br/>
 클라이언트 좌표에서 커서의 현재 위치를 포함합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -182,7 +182,7 @@ virtual DROPEFFECT OnDragOver(
 *dwKeyState*<br/>
 보조키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
 
-*point*<br/>
+*지점*<br/>
 클라이언트 좌표에서 커서의 현재 위치를 포함합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -228,7 +228,7 @@ virtual DROPEFFECT OnDragScroll(
 *dwKeyState*<br/>
 보조키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
 
-*point*<br/>
+*지점*<br/>
 커서를 화면을 기준으로 픽셀의 위치를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -278,7 +278,7 @@ Drop 작업에 대 한 사용자가 선택 하는 효과입니다. 다음 중 �
 
 - DROPEFFECT_LINK 링크에서 끌어 놓은 데이터를 원본 데이터를 설정 됩니다.
 
-*point*<br/>
+*지점*<br/>
 커서를 화면을 기준으로 픽셀의 위치를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -320,7 +320,7 @@ virtual DROPEFFECT OnDropEx(
 *dropList*<br/>
 목록 놓기 소스가 지원 되는 놓기 효과입니다. 비트 OR를 사용 하 여 드롭 효과 값을 결합할 수 있습니다 (**&#124;**) 작업입니다. 끌어서 놓기 작업 결과 주의 섹션에 설명 합니다.
 
-*point*<br/>
+*지점*<br/>
 커서를 화면을 기준으로 픽셀의 위치를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -386,7 +386,7 @@ virtual void Revoke();
 
 ## <a name="see-also"></a>참고자료
 
-[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [MFC 샘플 OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -25,10 +25,10 @@ helpviewer_keywords:
 - CBrush [MFC], GetLogBrush
 ms.assetid: e5ef2c62-dd95-4973-9090-f52f605900e1
 ms.openlocfilehash: f2a2e385a9f210b3644d7fade00b72c4befa47ef
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58778873"
 ---
 # <a name="cbrush-class"></a>CBrush 클래스
@@ -76,7 +76,7 @@ class CBrush : public CGdiObject
 
 에 대 한 자세한 `CBrush`를 참조 하세요 [그래픽 개체](../../mfc/graphic-objects.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 

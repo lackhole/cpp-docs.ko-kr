@@ -8,12 +8,12 @@ helpviewer_keywords:
 - active document containers [MFC], about active document containers
 - MFC COM, active document containment
 ms.assetid: b8dfa74b-75ce-47df-b75e-fc87b7f7d687
-ms.openlocfilehash: 1811febdb26091785f8b709e90f8cdd7a7f8afdd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: dc13384454c4732d3efbf99def5d05dd4f2d44aa
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258296"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58776572"
 ---
 # <a name="active-document-containment"></a>액티브 문서 포함
 
@@ -35,7 +35,7 @@ ms.locfileid: "57258296"
 
 ## <a name="sample-programs"></a>샘플 프로그램
 
-- 합니다 [MFCBIND](../visual-cpp-samples.md) 샘플에서는 활성 문서 컨테이너 응용 프로그램의 구현을 보여 줍니다.
+- 합니다 [MFCBIND](../overview/visual-cpp-samples.md) 샘플에서는 활성 문서 컨테이너 응용 프로그램의 구현을 보여 줍니다.
 
 ## <a name="see-also"></a>참고자료
 
