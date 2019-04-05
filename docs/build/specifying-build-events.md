@@ -36,7 +36,7 @@ ms.locfileid: "57827222"
 
 1. **솔루션 탐색기**에서 빌드 이벤트를 지정할 프로젝트를 선택합니다.
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](working-with-project-properties.md)합니다.
 
 1. **빌드 이벤트** 폴더에서 빌드 이벤트 속성 페이지를 선택합니다.
 
