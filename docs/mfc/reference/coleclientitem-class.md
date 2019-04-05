@@ -164,12 +164,12 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnScrollBy
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
-ms.openlocfilehash: ec3048e7bd033e5c296b558dd2083c648bc377e7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2687dfc9941a512523a7cb771cb872c78b97ce2d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295359"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58773985"
 ---
 # <a name="coleclientitem-class"></a>COleClientItem 클래스
 
@@ -2187,8 +2187,8 @@ BOOL UpdateLink();
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 MFCBIND](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 MFCBIND](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CDocItem 클래스](../../mfc/reference/cdocitem-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleServerItem 클래스](../../mfc/reference/coleserveritem-class.md)

@@ -80,12 +80,12 @@ helpviewer_keywords:
 - CMultiPaneFrameWnd [MFC], StoreRecentDockSiteInfo
 - CMultiPaneFrameWnd [MFC], StoreRecentTabRelatedInfo
 ms.assetid: 989a548e-0d70-46b7-a513-8cf740e1be3e
-ms.openlocfilehash: bb420021ec5b9839091c42b5eae6e1d5b9f7f977
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9c23d76e8f3ea54fe34e7956ad5b4e7dc9780def
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281241"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58773062"
 ---
 # <a name="cmultipaneframewnd-class"></a>CMultiPaneFrameWnd 클래스
 
@@ -155,7 +155,7 @@ class CMultiPaneFrameWnd : public CPaneFrameWnd
 
 ## <a name="example"></a>예제
 
-다음 예제에 대 한 포인터를 검색 하는 방법에 설명 된 `CMultiPaneFrameWnd` 개체입니다. 이 코드 조각은의 일부인 합니다 [창 크기 설정 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에 대 한 포인터를 검색 하는 방법에 설명 된 `CMultiPaneFrameWnd` 개체입니다. 이 코드 조각은의 일부인 합니다 [창 크기 설정 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_SetPaneSize#4](../../mfc/reference/codesnippet/cpp/cmultipaneframewnd-class_1.cpp)]
 

@@ -67,10 +67,10 @@ helpviewer_keywords:
 - CMFCCaptionBar [MFC], m_clrBarText
 ms.assetid: acb54d5f-14ff-4c96-aeb3-7717cf566d9a
 ms.openlocfilehash: c6385cb6bd3eec3ce5fefe0475d771c774777820
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781876"
 ---
 # <a name="cmfccaptionbar-class"></a>CMFCCaptionBar 클래스
@@ -246,7 +246,7 @@ BarElementAlignment GetAlignment(BarElement elem);
 
 ### <a name="parameters"></a>매개 변수
 
-*elem*<br/>
+*Elem*<br/>
 [in] 캡션 표시줄 맞춤 검색할 요소입니다.
 
 ### <a name="return-value"></a>반환 값

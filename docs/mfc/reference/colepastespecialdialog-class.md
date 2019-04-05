@@ -29,10 +29,10 @@ helpviewer_keywords:
 - COlePasteSpecialDialog [MFC], m_ps
 ms.assetid: 0e82ef9a-9bbe-457e-8240-42c86a0534f7
 ms.openlocfilehash: 9c31ed6f82f4280206bf233999fac74981636db3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58776910"
 ---
 # <a name="colepastespecialdialog-class"></a>COlePasteSpecialDialog 클래스
@@ -131,7 +131,7 @@ void AddFormat(
 *lpszResult*<br/>
 대화 상자에서이 형식을 선택 하는 경우 결과 설명 하는 문자열입니다.
 
-*flags*<br/>
+*플래그*<br/>
 다른 연결 및이 형식에 사용할 수 있는 옵션을 포함 합니다. 이 플래그는 하나의 조합 또는 형식 열거는 OLEUIPASTEFLAG에 다른 값입니다.
 
 *cf*<br/>
