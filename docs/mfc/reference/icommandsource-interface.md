@@ -1,6 +1,6 @@
 ---
 title: ICommandSource 인터페이스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - ICommandSource
 - AFXWINFORMS/ICommandSource
@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandSource interface [MFC]
 ms.assetid: a4b1f698-c09f-4ba8-9b13-0e74a0a4967e
-ms.openlocfilehash: 21c4f4544a6ccf2342580bc5859739fc1f50d0c2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: eed7abbbb40c532ad596f683b6ed2c98a0cadf9b
+ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296022"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58565612"
 ---
 # <a name="icommandsource-interface"></a>ICommandSource 인터페이스
 
@@ -179,7 +179,7 @@ void RemoveCommandHandler(unsigned int cmdID);
 
 이 메서드는 명령 원본 개체에서 cmdID에 매핑된 명령 처리기를 제거 합니다.
 
-## <a name="removecommandrangecommandhandler"></a> ICommandSource::RemoveCommandRangeHandler
+## <a name="removecommandrangehandler"></a> ICommandSource::RemoveCommandRangeHandler
 
 명령 소스 개체에서 명령 처리기의 그룹을 제거합니다.
 ```
@@ -196,7 +196,7 @@ void RemoveCommandRangeUIHandler(
 명령 ID 범위의 끝 인덱스입니다.
 ### <a name="remarks"></a>설명
 
-이 메서드는 메시지 처리기에 매핑된 명령 Id 지정 cmdIDMin 및 cmdIDMax, 명령 소스 개체에서 그룹을 제거 합니다.
+이 메서드는 메시지 처리기, 명령 소스 개체에서 cmdIDMax cmdIDMin로 지정 된 명령 Id에 매핑된 그룹을 제거 합니다.
 
 ## <a name="removecommandrangeuihandler"></a> ICommandSource::RemoveCommandRangeUIHandler
 
@@ -215,7 +215,7 @@ void RemoveCommandRangeUIHandler(
 명령 ID 범위의 끝 인덱스입니다.
 ### <a name="remarks"></a>설명
 
-이 메서드는 사용자 인터페이스 명령 메시지 처리기에 매핑된 명령 Id 지정 cmdIDMin 및 cmdIDMax, 명령 소스 개체에서 그룹을 제거 합니다.
+이 메서드는 사용자 인터페이스 명령 메시지 처리기, 명령 소스 개체에서 cmdIDMax cmdIDMin로 지정 된 명령 Id에 매핑된의 그룹을 제거 합니다.
 
 ## <a name="removecommanduihandler"></a> ICommandSource::RemoveCommandUIHandler
 
