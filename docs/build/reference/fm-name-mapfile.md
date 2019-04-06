@@ -29,7 +29,7 @@ ms.locfileid: "57815408"
 
 ## <a name="remarks"></a>설명
 
-기본적으로 맵 파일에는 해당 C 또는 c + + 소스 파일의 기본 이름이 지정 됩니다을 합니다. 맵 확장 합니다.
+기본적으로 맵 파일에는 해당 C 또는 C++ 소스 파일의 기본 이름이 지정 됩니다을 합니다. 맵 확장 합니다.
 
 지정 **/Fm** 지정 않았던 것 처럼 동일한 효과가 합니다 [/MAP (맵 파일 생성)](map-generate-mapfile.md) 링커 옵션입니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "57815408"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
