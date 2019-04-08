@@ -34,13 +34,13 @@ ms.locfileid: "57820392"
 
 이 옵션을 사용 하 여 [/Yc (미리 컴파일된 헤더 파일 만들기)](yc-create-precompiled-header-file.md) 하거나 [/Yu (미리 컴파일된 헤더 파일 사용)](yu-use-precompiled-header-file.md) 기본 경로 이름을 사용 하는 대신 미리 컴파일된 헤더에 대 한 경로 이름을 제공 합니다. 사용할 수도 있습니다 **/Fp** 사용 하 여 **/Yc** 다르게 미리 컴파일된 헤더 파일의 사용을 지정 하는 **/Yc**<em>filename</em> 인수 및 소스 파일의 기본 이름입니다.
 
-경로 이름의 일부로 확장을 지정 하지 않으면 경우는 확장명을.pch로 간주 됩니다. 파일 이름 없이 디렉터리를 지정 하는 경우 기본 파일 이름은 VC*x*0.pch, 여기서 *x* 사용 하 여 Visual c + +의 주 버전입니다.
+경로 이름의 일부로 확장을 지정 하지 않으면 경우는 확장명을.pch로 간주 됩니다. 파일 이름 없이 디렉터리를 지정 하는 경우 기본 파일 이름은 VC*x*0.pch, 여기서 *x* 사용 하 여 Visual C++의 주 버전입니다.
 
 사용할 수도 있습니다는 **/Fp** 옵션을 **/Yu**합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
