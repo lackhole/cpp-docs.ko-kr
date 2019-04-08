@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_source attribute
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
-ms.openlocfilehash: a171e6a7eea5e10b47bf680545bc14618893b155
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 884cab78d64c20bef00958f0cc0319281fd69921
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328989"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026333"
 ---
 # <a name="dbsource"></a>db_source
 
@@ -79,6 +79,6 @@ class CMyCommand {};
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 특성](ole-db-consumer-attributes.md)

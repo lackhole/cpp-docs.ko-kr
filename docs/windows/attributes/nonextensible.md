@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - nonextensible attribute
 ms.assetid: c7ef1554-809f-4ea0-a7cd-dc7786d40c3e
-ms.openlocfilehash: 332f61148ccf8cb5816e8bd347181ac9d130a730
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ed396b3d55e16cf195949c713ab574812b796a1a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512452"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032078"
 ---
 # <a name="nonextensible"></a>nonextensible
 
@@ -54,14 +54,14 @@ __interface IFireTabCtrl
 
 |||
 |-|-|
-|**적용 대상**|**interface**|
+|**적용 대상**|**interface(인터페이스)**|
 |**반복 가능**|아니요|
 |**필수 특성**|`dual` 및 `oleautomation`, 또는 `dispinterface`|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [인터페이스 특성](interface-attributes.md)

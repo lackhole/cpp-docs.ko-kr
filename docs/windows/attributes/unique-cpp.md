@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - unique attribute
 ms.assetid: abd7ed14-5ae7-44a8-8333-0058e9c92b2f
-ms.openlocfilehash: 9d049983bb072e073180f1821f04b79e5f5c7444
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5d7a2d60dc295a4390f777a9ff3718f41321ddd
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512837"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038792"
 ---
 # <a name="unique-c"></a>unique(C++)
 
@@ -44,7 +44,7 @@ ms.locfileid: "50512837"
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>

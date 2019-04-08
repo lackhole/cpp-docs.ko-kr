@@ -6,12 +6,12 @@ helpviewer_keywords:
 - names [C++], decorated
 - decorated names, calling conventions
 ms.assetid: 8327a27b-bb4f-49f2-8218-b851b9d2a463
-ms.openlocfilehash: c01e684be62dbb8716f8556680b1c692af1efc45
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b916a73e0b8f86755384914fa85ef8a901e4a64c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598863"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041525"
 ---
 # <a name="name-decoration"></a>이름 데코레이션
 
@@ -36,6 +36,6 @@ C++에서 C 함수를 호출하려면 extern "C"를 사용합니다. extern "C"�
 
 현재는 컴파일러 공급업체나 각 컴파일러 버전 간에 사용 가능한 C++ 이름 지정 표준이 없습니다. 따라서 다른 컴파일러로 컴파일한 개체 파일을 연결하는 경우 같은 명명 체계가 생성되지 않아 확인할 수 없는 external이 작성될 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 도구 오류 LNK2001](../../error-messages/tool-errors/linker-tools-error-lnk2001.md)

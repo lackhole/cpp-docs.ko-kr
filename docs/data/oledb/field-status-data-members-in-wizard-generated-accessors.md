@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-ms.openlocfilehash: 46cf285e07bffe178874546d13d196b5165cb28b
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: dd650b7cafef78e23c23ddfef791c88b6b93727f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524360"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025074"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>마법사 생성 접근자의 필드 상태 데이터 멤버
 
@@ -104,6 +104,6 @@ public:
 
 사용 하는 경우 `CDynamicAccessor`, 길이 및 상태를 자동으로 바인딩된 됩니다. 길이 및 상태 값을 검색 하려면 사용 합니다 `GetLength` 및 `GetStatus` 멤버 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)

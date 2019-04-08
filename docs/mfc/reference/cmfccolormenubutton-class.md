@@ -45,10 +45,10 @@ helpviewer_keywords:
 - CMFCColorMenuButton [MFC], OnDrawOnCustomizeList
 ms.assetid: 42685704-e994-4f7b-9553-62283c27b754
 ms.openlocfilehash: 5fccfbca9fe8c31070f3eb9f208c09cb3722b9b9
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58780225"
 ---
 # <a name="cmfccolormenubutton-class"></a>CMFCColorMenuButton 클래스
@@ -506,7 +506,7 @@ static void SetColorByCmdID(
 *uiCmdID*<br/>
 [in] 색 메뉴 단추를의 리소스 ID입니다.
 
-*color*<br/>
+*색*<br/>
 [in] RGB 색 값입니다.
 
 ##  <a name="setcolorname"></a>  CMFCColorMenuButton::SetColorName
@@ -521,7 +521,7 @@ static void SetColorName(
 
 ### <a name="parameters"></a>매개 변수
 
-*color*<br/>
+*색*<br/>
 [in] 이름이 변경 된 색의 RGB 값입니다.
 
 *strName*<br/>

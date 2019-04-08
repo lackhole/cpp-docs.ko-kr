@@ -73,10 +73,10 @@ helpviewer_keywords:
 - CSplitterWnd [MFC], OnInvertTracker
 ms.assetid: fd0de258-6dbe-4552-9e47-a39de0471d51
 ms.openlocfilehash: 065735c13a3e763208142eb6bc989d3a496221f0
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781447"
 ---
 # <a name="csplitterwnd-class"></a>CSplitterWnd 클래스
@@ -388,7 +388,7 @@ virtual BOOL CreateView(
 
 ### <a name="parameters"></a>매개 변수
 
-*row*<br/>
+*행(row)*<br/>
 새 보기를 배치 하는 분할자 창 행을 지정 합니다.
 
 *col*<br/>
@@ -475,7 +475,7 @@ virtual void DeleteView(
 
 ### <a name="parameters"></a>매개 변수
 
-*row*<br/>
+*행(row)*<br/>
 보기를 삭제 하는 분할자 창 행을 지정 합니다.
 
 *col*<br/>
@@ -649,7 +649,7 @@ CWnd* GetPane(
 
 ### <a name="parameters"></a>매개 변수
 
-*row*<br/>
+*행(row)*<br/>
 행을 지정합니다.
 
 *col*<br/>
@@ -684,7 +684,7 @@ void GetRowInfo(
 
 ### <a name="parameters"></a>매개 변수
 
-*row*<br/>
+*행(row)*<br/>
 행을 지정합니다.
 
 *cyCur*<br/>
@@ -727,7 +727,7 @@ int IdFromRowCol(
 
 ### <a name="parameters"></a>매개 변수
 
-*row*<br/>
+*행(row)*<br/>
 분할기 창 행을 지정합니다.
 
 *col*<br/>
@@ -877,7 +877,7 @@ virtual void SetActivePane(
 
 ### <a name="parameters"></a>매개 변수
 
-*row*<br/>
+*행(row)*<br/>
 하는 경우 *pWnd* NULL 이면 활성화 됩니다 창에 행을 지정 합니다.
 
 *col*<br/>
@@ -937,7 +937,7 @@ void SetRowInfo(
 
 ### <a name="parameters"></a>매개 변수
 
-*row*<br/>
+*행(row)*<br/>
 분할기 창 행을 지정합니다.
 
 *cyIdeal*<br/>

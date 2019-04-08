@@ -13,12 +13,12 @@ helpviewer_keywords:
 - __addfsword intrinsic
 - __addfsbyte intrinsic
 ms.assetid: 706c70df-6b52-4401-9268-2977ed8ad715
-ms.openlocfilehash: 477d8ddfe970c6d04e61a47eb4bb10e3fbc570de
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 61053d9f8c56d8352b12ed535dfa870c0856f558
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329074"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032705"
 ---
 # <a name="addfsbyte-addfsword-addfsdword"></a>__addfsbyte, __addfsword, __addfsdword
 
@@ -48,7 +48,7 @@ void __addfsdword(
 *오프셋*<br/>
 [in] 시작 부분 으로부터의 오프셋 `FS`합니다.
 
-*Data*<br/>
+*데이터*<br/>
 [in] 메모리 위치에 추가할 값입니다.
 
 ## <a name="requirements"></a>요구 사항
@@ -65,7 +65,7 @@ void __addfsdword(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [__incfsbyte, \__incfsword, \__incfsdword](../intrinsics/incfsbyte-incfsword-incfsdword.md)<br/>
 [__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)<br/>

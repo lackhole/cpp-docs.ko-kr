@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - entry attribute
 ms.assetid: ba4843e3-d7ad-4b86-9a15-0b4192f0f698
-ms.openlocfilehash: b6c34a603f3ba8abaf070759a22ddf2b8e9c2106
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 703a55ee7c56b64a5b168016770508508bab09e0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663257"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036304"
 ---
 # <a name="entry"></a>entry
 
@@ -49,6 +49,6 @@ DLL의 진입점을 식별 하 여 모듈에는 내보낸된 함수 또는 상�
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)

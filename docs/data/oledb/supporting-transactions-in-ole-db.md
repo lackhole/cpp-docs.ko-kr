@@ -9,12 +9,12 @@ helpviewer_keywords:
 - databases [C++], transactions
 - distributed transactions [C++]
 ms.assetid: 3d72e583-ad38-42ff-8f11-e2166d60a5a7
-ms.openlocfilehash: 2e3605b636bbcb16a1c6f543bc9090d2b212a60b
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3c71200e39641a69443599e0445f89f469aceeda
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418577"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038750"
 ---
 # <a name="supporting-transactions-in-ole-db"></a>OLE DB에서 트랜잭션 지원
 
@@ -54,6 +54,6 @@ A [트랜잭션 중첩](/previous-versions/windows/desktop/ms716985(v=vs.85)) �
 
 분산된 데이터를 업데이트 하는 트랜잭션이 분산된 트랜잭션 둘 이상의 네트워크에 연결 된 컴퓨터 시스템에는 데이터입니다. 분산된 시스템을 통해 트랜잭션을 지원 하려는 경우 OLE DB 트랜잭션 지원이 아닌.NET Framework를 사용 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [접근자 사용](../../data/oledb/using-accessors.md)

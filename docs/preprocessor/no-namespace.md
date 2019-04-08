@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - no_namespace attribute
 ms.assetid: 5d81b741-a558-451b-b493-1f3b18967337
-ms.openlocfilehash: b17bf5fb5f44d5453de29febe001f9e8737102b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6bd60de02bf0166d5cf0b0cd1bc1de56ceda5bf
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540441"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028719"
 ---
 # <a name="nonamespace"></a>no_namespace
-**C + + 전용**
+**C++ 전용**
 
 컴파일러가 생성하지 않은 네임스페이스 이름을 지정합니다.
 
@@ -30,9 +30,9 @@ no_namespace
 
 다른 네임 스페이스 이름을 사용 하려는 경우 사용 합니다 [rename_namespace](../preprocessor/rename-namespace.md) 특성을 대신 합니다.
 
-**C + + 전용 종료**
+**C++ 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import 지시문](../preprocessor/hash-import-directive-cpp.md)

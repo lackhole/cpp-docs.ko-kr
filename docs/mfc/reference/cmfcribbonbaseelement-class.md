@@ -232,12 +232,12 @@ helpviewer_keywords:
 - CMFCRibbonBaseElement [MFC], OnProcessKey
 - CMFCRibbonBaseElement [MFC], OnSetFocus
 ms.assetid: 419ea91b-5062-44cc-b0a3-f87d29566f62
-ms.openlocfilehash: 4fe7c84981d116d5915013cb466c3e91119f20e1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6daa5b6249c7ff18a8bc01c2309ffb94d3fb88ce
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289977"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58773075"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement 클래스
 
@@ -394,12 +394,12 @@ class CMFCRibbonBaseElement : public CObject
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CMFCRibbonBaseElement` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서는 가져오는 방법을 보여 줍니다.는 `CMFCRibbonBaseElement` 에서 개체를 `CMFCRibbonStatusBar` 클래스, 리본 요소에 대 한 설명을 설정, 텍스트를 설정, keytip, 설정 및 리본 요소에 대 한 도구 설명 텍스트를 설정 합니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../visual-cpp-samples.md)의 일부입니다.
+다음 예제에서는 `CMFCRibbonBaseElement` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서는 가져오는 방법을 보여 줍니다.는 `CMFCRibbonBaseElement` 에서 개체를 `CMFCRibbonStatusBar` 클래스, 리본 요소에 대 한 설명을 설정, 텍스트를 설정, keytip, 설정 및 리본 요소에 대 한 도구 설명 텍스트를 설정 합니다. 이 코드 조각은 [클라이언트 그리기 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_DrawClient#8](../../mfc/reference/codesnippet/cpp/cmfcribbonbaseelement-class_1.cpp)]
 [!code-cpp[NVC_MFC_DrawClient#9](../../mfc/reference/codesnippet/cpp/cmfcribbonbaseelement-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -1199,7 +1199,7 @@ virtual CMFCRibbonBaseElement* HitTest(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*point*<br/>
+*지점*<br/>
 [in] 이 매개 변수 사용 되지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1933,7 +1933,7 @@ virtual BOOL SetACCData(
 *pParent*<br/>
 리본 요소에 대한 부모 창입니다.
 
-*data*<br/>
+*데이터*<br/>
 리본 요소에 대한 내게 필요한 옵션 데이터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1965,7 +1965,7 @@ virtual void SetCompactMode(BOOL bCompactMode = TRUE);
 |--------------------|---------------------------------|-----------------------------|
 |TRUE|Compact|변경 되지 않았습니다.|
 |TRUE|중간|가능한 경우 압축 합니다.|
-|TRUE|큰|가능 하다 면 중간입니다.|
+|TRUE|대형|가능 하다 면 중간입니다.|
 |FALSE|Compact|중간 이것이 가능 합니다. 그렇지 않은 경우 큰 합니다.|
 
 ##  <a name="setdata"></a>  CMFCRibbonBaseElement::SetData

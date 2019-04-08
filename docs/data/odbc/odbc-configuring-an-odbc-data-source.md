@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ODBC connections, configuring
 - configuring ODBC data sources
 ms.assetid: 1cd03e6a-8d59-4eca-a8c6-1010582d5e67
-ms.openlocfilehash: 96f4694e8aa321dc5844fc413ae9740bec5a416c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 259f0e2afa61096e4529a50ee2ba7de07b293c46
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643081"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034133"
 ---
 # <a name="odbc-configuring-an-odbc-data-source"></a>ODBC: ODBC 데이터 소스 구성
 
@@ -24,7 +24,7 @@ ODBC 관리자는 Microsoft Foundation 클래스 (MFC) 라이브러리 데이터
 
 MFC 데이터베이스 응용 프로그램에 대 한 ODBC 설정 및 관리 프로그램을 작성 하는 방법에 대 한 자세한[기술 참고 48](../../mfc/tn048-writing-odbc-setup-and-administration-programs.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[ODBC 기본 사항](../../data/odbc/odbc-basics.md)<br/>
+[ODBC 기초](../../data/odbc/odbc-basics.md)<br/>
 [ODBC: ODBC API 함수 직접 호출](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)

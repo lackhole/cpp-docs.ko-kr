@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - OLE DB consumer templates, classes
 ms.assetid: cfc7f698-1a0e-4a09-a4d3-ccb99e6654fe
-ms.openlocfilehash: a476fefa4338e73bf6eaf70fa16a5328a427b56d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb0b24798b3f2682bbbec7624df34b40a2a9f4cc
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649243"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032273"
 ---
 # <a name="ole-db-consumer-templates-reference"></a>OLE DB 소비자 템플릿 참조
 
@@ -140,7 +140,7 @@ OLE DB 템플릿은 OLE DB 스키마 행 집합에 해당 하는 클래스 집�
 [CDBErrorInfo](../../data/oledb/cdberrorinfo-class.md)<br/>
 OLE DB 오류 정보를 검색 하는 데 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿 참조](../../data/oledb/ole-db-provider-templates-reference.md)<br/>
 [OLE DB 템플릿](../../data/oledb/ole-db-templates.md)

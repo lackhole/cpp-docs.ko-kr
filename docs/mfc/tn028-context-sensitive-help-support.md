@@ -8,12 +8,12 @@ helpviewer_keywords:
 - TN028
 - resource identifiers, context-sensitive Help
 ms.assetid: 884f1c55-fa27-4d4c-984f-30907d477484
-ms.openlocfilehash: e3ac2742f2c57c01c645c72c933234a96ece773a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5689e314c2ba94068619a066e5f458e06819b2b7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288287"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58773478"
 ---
 # <a name="tn028-context-sensitive-help-support"></a>TN028: 상황에 맞는 도움말 지원
 
@@ -132,7 +132,7 @@ HIWORD(lParam) y 축 좌표를 포함합니다.
 
 MFC 응용 프로그램 마법사 도움말 파일 (.cnt 및.hpj 파일)을 빌드하는 데 필요한 파일을 만듭니다. Microsoft 도움말 컴파일러에서 허용 되는 미리 빌드된.rtf 파일 수가 포함 됩니다. 대부분의 항목은 완료 되지만 일부 특정 응용 프로그램에 대 한 수정 해야 할 수 있습니다.
 
-"매핑 도움말" 파일의 자동 만들기가 MAKEHM 라는 유틸리티에서 지원 됩니다. MAKEHM 유틸리티 응용 프로그램의 리소스를 변환할 수 있습니다. H 파일 도움말 매핑 파일입니다. 예를 들면,
+"매핑 도움말" 파일의 자동 만들기가 MAKEHM 라는 유틸리티에서 지원 됩니다. MAKEHM 유틸리티 응용 프로그램의 리소스를 변환할 수 있습니다. H 파일 도움말 매핑 파일입니다. 예를 들어:
 
 ```
 #define IDD_MY_DIALOG   2000
@@ -148,7 +148,7 @@ HID_MY_COMMAND    0x10096
 
 이 형식은 토픽 이름 (왼쪽에 있는 기호)를 사용 하 여 상황에 맞는 Id (오른쪽에 있는 번호)을 매핑하는 도움말 컴파일러의 기능과 호환 됩니다.
 
-MAKEHM에 대 한 소스 코드는 MFC 프로그래밍 유틸리티 예제의 [MAKEHM](../visual-cpp-samples.md)합니다.
+MAKEHM에 대 한 소스 코드는 MFC 프로그래밍 유틸리티 예제의 [MAKEHM](../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="adding-help-support-after-running-the-mfc-application-wizard"></a>MFC 응용 프로그램 마법사를 실행 한 후 추가 도움말 지원
 

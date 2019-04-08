@@ -57,12 +57,12 @@ helpviewer_keywords:
 - -w compiler option [C++]
 - /W2 compiler option [C++]
 - /Wv compiler option [C++]
-ms.openlocfilehash: 997a73541ab95a393bda4ebf5412c11f025b03a3
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.openlocfilehash: 7b5c19c95cff3058bb3dcc6640f8ab07cf01edd6
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57820691"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040071"
 ---
 # <a name="w-w0-w1-w2-w3-w4-w1-w2-w3-w4-wall-wd-we-wo-wv-wx-warning-level"></a>/w, / w0, / w1, / w2, / w3, / w4, / w1, / w2, / w3, / w4, /Wall, /wd, / we, /wo, /Wv, /WX (경고 수준)
 
@@ -114,9 +114,9 @@ Warning pragma 지시문 소스 코드에 영향을 받지 않습니다.는 **/w
 
 ### <a name="to-set-the-compiler-options-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 컴파일러 옵션을 설정 하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 설정 하는 **/w0**, **/w1**, **/w2**, **/w3**를 **/w4**를 **/wall**m **/Wv**를 **/WX** 하거나 **/WX-** 옵션을 선택 합니다 **구성 속성** > **C / C + +** > **일반** 속성 페이지.
+1. 설정 하는 **/w0**, **/w1**, **/w2**, **/w3**를 **/w4**를 **/wall**, **/Wv**를 **/WX** 하거나 **/WX-** 옵션을 선택 합니다 **구성 속성** > **C / C + +** > **일반** 속성 페이지.
 
    - 설정 하는 **/w0**, **/w1**를 **/w2**, **/w3**를 **/w4**, 또는 **/wall** 옵션을 수정 합니다 **경고 수준** 속성입니다.
 
@@ -136,8 +136,7 @@ Warning pragma 지시문 소스 코드에 영향을 받지 않습니다.는 **/w
 
 ### <a name="to-set-the-compiler-option-programmatically"></a>프로그래밍 방식으로 컴파일러 옵션을 설정하려면
 
-- 
-  <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WarningLevel%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WarnAsError%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableSpecificWarnings%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>를 참조하십시오.
+- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WarningLevel%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WarnAsError%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableSpecificWarnings%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>를 참조하십시오.
 
 ## <a name="see-also"></a>참고자료
 

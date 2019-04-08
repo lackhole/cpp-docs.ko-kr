@@ -5,12 +5,12 @@ helpviewer_keywords:
 - record views, classes
 - record view classes
 ms.assetid: e7b2820f-09c4-483f-83c0-317e8be42bdf
-ms.openlocfilehash: 2feda8f8f446e02a5056287c656707ea038f5387
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5f8de956065571109c988bd2940d21822bba7cfd
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461154"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029877"
 ---
 # <a name="features-of-record-view-classes--mfc-data-access"></a>레코드 뷰 클래스의 기능  (MFC Data Access)
 
@@ -24,7 +24,7 @@ ms.locfileid: "50461154"
 
 탐색에 대 한 자세한 내용은 참조 하세요. [레코드 뷰: 레코드 뷰에서의 탐색 지원](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[레코드 뷰(MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
+[레코드 뷰  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC 드라이버 목록](../data/odbc/odbc-driver-list.md)

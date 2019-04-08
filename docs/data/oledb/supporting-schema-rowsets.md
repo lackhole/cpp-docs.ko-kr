@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB providers, schema rowsets
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-ms.openlocfilehash: f8809754cc79d2a8c3d0f7bd32630ad9cab70a43
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: b49d53836179d765a72409d28304d7166dcf51d8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423107"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024623"
 ---
 # <a name="supporting-schema-rowsets"></a>스키마 행 집합 지원
 
@@ -261,6 +261,6 @@ OLE DB 스키마 행 집합 인터페이스에 대 한 자세한 내용은 참�
 
 스키마 행 집합을 지 원하는 공급자의 예제를 참조 합니다 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [고급 공급자 기술](../../data/oledb/advanced-provider-techniques.md)

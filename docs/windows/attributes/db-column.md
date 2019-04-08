@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-ms.openlocfilehash: 7ceb0b93f37133ccbbf89ed659f74b632e45bcb1
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: e0e2c873452884275e97663ae2d9d6df2f790ffd
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328937"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024844"
 ---
 # <a name="dbcolumn"></a>db_column
 
@@ -36,16 +36,16 @@ ms.locfileid: "58328937"
 *dbtype*<br/>
 (선택 사항) OLE DB [유형 표시기](/previous-versions/windows/desktop/ms711251(v=vs.85)) 열 항목에 대 한 합니다.
 
-*precision*<br/>
+*전체 자릿수*<br/>
 (선택 사항) 열 항목에 사용할 전체 자릿수입니다. 자세한 내용은 설명을 참조는 `bPrecision` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
-*scale*<br/>
+*소수 자릿수*<br/>
 (선택 사항) 열 항목에 사용할 소수 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bScale` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
 *status*<br/>
 (선택 사항) 이 칼럼의 상태를 저장 하는 데 사용 되는 멤버 변수입니다. 상태는 데이터 값 또는 NULL 등의 다른 값 열 값이 있는지 여부를 나타냅니다. 가능한 값을 참조 하세요 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-*length*<br/>
+*길이*<br/>
 (선택 사항) 멤버 변수 (바이트)에서 열의 크기를 보유 하는 데 사용 합니다.
 
 ## <a name="remarks"></a>설명
@@ -111,7 +111,7 @@ class CProducts {
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 특성](ole-db-consumer-attributes.md)<br/>
 [클래스 특성](class-attributes.md)

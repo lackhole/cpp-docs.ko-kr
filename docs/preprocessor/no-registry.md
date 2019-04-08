@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - no_registry attribute
 ms.assetid: d30de4e2-551c-428c-98fd-951330d578d3
-ms.openlocfilehash: bd101f5ca1776518ff4c5092da99134110bbb0b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2a0fd9a761f765aa9562ab18c095f683b80c7987
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503027"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023427"
 ---
 # <a name="noregistry"></a>no_registry
 
@@ -38,7 +38,7 @@ ms.locfileid: "50503027"
 
 **no_registry** 레지스트리에서 파일의 이전 버전을 찾는 컴파일러의 위험 없이 참조 된 형식 라이브러리 간 가져오려는 경우에 유용 합니다. **no_registry** 형식 라이브러리 등록 되지 않은 경우에 유용한 이기도 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import 지시문](../preprocessor/hash-import-directive-cpp.md)

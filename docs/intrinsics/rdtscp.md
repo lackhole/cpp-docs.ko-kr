@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __rdtscp intrinsic
 - rdtscp instruction
 ms.assetid: f17d9a9c-88bb-44e0-b69d-d516bc1c93ee
-ms.openlocfilehash: 813f13e20e74890cfcb52ae25234aa348e1d522d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b28052fbe0a1ab0e1a6f037ce61f43abea5cf771
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496298"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028482"
 ---
 # <a name="rdtscp"></a>__rdtscp
 
@@ -81,7 +81,7 @@ TSC_AUX was 0
 
 고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [__rdtsc](../intrinsics/rdtsc.md)<br/>
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

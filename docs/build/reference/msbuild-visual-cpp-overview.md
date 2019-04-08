@@ -4,12 +4,12 @@ ms.date: 12/08/2018
 helpviewer_keywords:
 - MSBuild overview
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
-ms.openlocfilehash: e8d5e5379a60128ace9502712a1d240f947ddcd5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 6c8e891f6bf6ed6b3bb3d1c84dbc13b64ab7b868
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826467"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59021906"
 ---
 # <a name="msbuild-internals-for-c-projects"></a>C + + 프로젝트에 대 한 MSBuild 내부
 
@@ -88,7 +88,7 @@ Visual Studio 지원 파일에 있는 대상의 수백 가지 있습니다. 그�
 > [!NOTE]
 > Visual Studio 2017에서 C++ 프로젝트에 대 한 지원을 **xsd** 파일은 사용 되지 않습니다. 계속 사용할 수 있습니다 **Microsoft.VisualC.CppCodeProvider** 더하여 **CppCodeProvider.dll** 수동으로 GAC에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MSBuild 작업 참조](/visualstudio/msbuild/msbuild-task-reference)<br/>
 [BscMake 작업](/visualstudio/msbuild/bscmake-task)<br/>

@@ -43,12 +43,12 @@ helpviewer_keywords:
 - operator[], arrays
 - m_nRowsRead
 ms.assetid: 511427e1-73ca-4fd8-9ba1-ae9463557cb6
-ms.openlocfilehash: 0a867f80f3be685b3c45c8645d6441732acf5851
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: b257c4e95a99bfbc8042c5935638a70deac0ea7a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330985"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040240"
 ---
 # <a name="carrayrowset-class"></a>CArrayRowset 클래스
 
@@ -93,7 +93,7 @@ class CArrayRowset :
 |-|-|
 |[CArrayRowset::m_nRowsRead](#nrowsread)|이미 읽은 행의 수입니다.|
 
-## <a name="carrayrowset"></a> Carrayrowset:: Carrayrowset
+## <a name="carrayrowset"></a> CArrayRowset::CArrayRowset
 
 새 `CArrayRowset` 개체를 만듭니다.
 
@@ -105,10 +105,10 @@ CArrayRowset(int nMax = 100000);
 
 #### <a name="parameters"></a>매개 변수
 
-*최대*<br/>
+*nMax*<br/>
 [in] 행 집합에 있는 최대 행 수입니다.
 
-## <a name="snapshot"></a> Carrayrowset:: Snapshot
+## <a name="snapshot"></a> CArrayRowset::Snapshot
 
 전체 행 집합을 메모리로 읽어서 이에 대한 이미지 또는 스냅숏을 만듭니다.
 
@@ -118,7 +118,7 @@ CArrayRowset(int nMax = 100000);
 HRESULT Snapshot() throw();
 ```
 
-## <a name="operator"></a> Carrayrowset:: Operator
+## <a name="operator"></a> CArrayRowset::operator
 
 행 집합의 행에 액세스 하는 것에 대 한 배열 유사 구문을 제공 합니다.
 
@@ -144,7 +144,7 @@ TAccessor & operator[](int nrow);
 
 하는 경우 *nRow* 행 집합의 행 수를 초과 하면, 예외가 throw 됩니다.
 
-## <a name="nrowsread"></a> Carrayrowset:: M_nrowsread
+## <a name="nrowsread"></a> CArrayRowset::m_nRowsRead
 
 이미 읽은 행 집합의 행 수가 포함 되어 있습니다.
 
@@ -154,7 +154,7 @@ TAccessor & operator[](int nrow);
 ULONG m_nRowsRead;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

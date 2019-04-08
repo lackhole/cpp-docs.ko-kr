@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - AsyncStatusInternal enumeration
 ms.assetid: b783923f-3f1c-4487-9384-be572cbc62d7
-ms.openlocfilehash: b38d58603eafeaa76c79873bbf375b4a3b405cdb
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: f12bf4aafc87e44a6e2fb15ba79de4a9744bea58
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785338"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029728"
 ---
 # <a name="asyncstatusinternal-enumeration"></a>AsyncStatusInternal 열거형
 
@@ -31,19 +31,19 @@ enum AsyncStatusInternal;
 ## <a name="members"></a>멤버
 
 `_Created`<br/>
-`::Windows::Foundation::AsyncStatus::Created`와 같습니다.
+에 해당 `::Windows::Foundation::AsyncStatus::Created`
 
 `_Started`<br/>
-`::Windows::Foundation::AsyncStatus::Started`와 같습니다.
+에 해당 `::Windows::Foundation::AsyncStatus::Started`
 
 `_Completed`<br/>
-`::Windows::Foundation::AsyncStatus::Completed`와 같습니다.
+에 해당 `::Windows::Foundation::AsyncStatus::Completed`
 
 `_Cancelled`<br/>
-`::Windows::Foundation::AsyncStatus::Cancelled`와 같습니다.
+에 해당 `::Windows::Foundation::AsyncStatus::Cancelled`
 
 `_Error`<br/>
-`::Windows::Foundation::AsyncStatus::Error`와 같습니다.
+에 해당 `::Windows::Foundation::AsyncStatus::Error`
 
 ## <a name="requirements"></a>요구 사항
 
@@ -51,6 +51,6 @@ enum AsyncStatusInternal;
 
 **네임스페이스:** Microsoft::WRL::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)

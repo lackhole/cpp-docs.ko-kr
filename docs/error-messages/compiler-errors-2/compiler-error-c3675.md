@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3675
 ms.assetid: 87461613-6633-430b-b95d-c7cb1bb63776
-ms.openlocfilehash: c154a0fe1989c92bb5e07c0710d3846883d1a113
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e29e536bf89aef887dc043327e4b4596703d0538
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546319"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58775194"
 ---
 # <a name="compiler-error-c3675"></a>컴파일러 오류 C3675
 
@@ -19,7 +19,7 @@ ms.locfileid: "50546319"
 
 단순 속성을 선언 하면 컴파일러 생성 get 및 set 접근자 메서드 및 해당 이름은 프로그램의 범위에 존재 합니다.  컴파일러에서 생성 된 이름은 get_ 및 set_ 속성 이름에 추가 하 여 구성 됩니다.  따라서 컴파일러에서 생성 된 접근자와 같은 이름 사용 하 여 함수를 선언할 수 없습니다.
 
-자세한 내용은 [property](../../windows/property-cpp-component-extensions.md) 를 참조하세요.
+자세한 내용은 [property](../../extensions/property-cpp-component-extensions.md) 를 참조하세요.
 
 ## <a name="example"></a>예제
 

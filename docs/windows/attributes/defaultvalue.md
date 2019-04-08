@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - defaultvalue attribute
 ms.assetid: efa5d050-b2cc-4d9e-9b8e-79954f218d3a
-ms.openlocfilehash: 22aa969185afbac5ab395d0ac7dde23e715b8e58
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ff6924db6f4805bb5f2dbab69076a86020b2a075
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537672"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026320"
 ---
 # <a name="defaultvalue"></a>defaultvalue
 
@@ -67,12 +67,12 @@ __interface IFireTabCtrl : IDispatch {
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [매개 변수 특성](parameter-attributes.md)<br/>
 [out](out-cpp.md)<br/>
 [retval](retval.md)<br/>
-[in](in-cpp.md)<br/>
+[의](in-cpp.md)<br/>
 [pointer_default](pointer-default.md)<br/>
 [unique](unique-cpp.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6035
 ms.assetid: f8fb50b8-18bf-4258-b96a-b0a9de468d16
-ms.openlocfilehash: bb215668fc13ecf84efdbf5f7ec6bb25c922181b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cbade3ce8686c8c293b8d40a73c546805e42215d
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668257"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034023"
 ---
 # <a name="c-runtime-error-r6035"></a>C 런타임 오류 R6035
 
@@ -68,6 +68,6 @@ void DllEntryHelper() {
 > [!NOTE]
 >  오류 메시지가 R6035만 x86에서 생성 된 디버그 CRT 하 고 구조적된 예외 처리 하지만 조건에 대해서만 모든 형식의 예외에 대 한 모든 플랫폼에는 오류 처리, c + + EH 같은 키를 누릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MSVC의 보안 기능](https://blogs.msdn.microsoft.com/vcblog/2017/06/28/security-features-in-microsoft-visual-c/)

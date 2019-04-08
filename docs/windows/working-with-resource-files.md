@@ -6,12 +6,12 @@ helpviewer_keywords:
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-ms.openlocfilehash: 0a13fb05f0e6e8582d5e476eb889e307458f528d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: a08c7ecb153b790f06da386ac93d1f05f5981e61
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58767303"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037739"
 ---
 # <a name="working-with-resource-files"></a>리소스 파일 작업
 
@@ -41,7 +41,7 @@ ms.locfileid: "58767303"
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 리소스 파일 및 Windows 데스크톱 응용 프로그램에서 사용 하는 방법에 대해 설명 합니다. 또한 리소스 파일을 사용 하는 방법을 설명 하는 문서에 대 한 링크를 제공 합니다.
 
-[리소스 식별자(기호)](../windows/symbols-resource-identifiers.md)<br/>
+[리소스 식별자 (기호)](../windows/symbols-resource-identifiers.md)<br/>
 심볼을 설명하고, **리소스 심볼** 대화 상자를 사용하여 프로젝트의 심볼을 관리하는 방법에 대한 정보를 제공합니다.
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
@@ -52,10 +52,10 @@ ms.locfileid: "58767303"
 [Visual C++](../overview/visual-cpp-in-visual-studio.md)<br/>
 Visual C++ 설명서에 대한 링크를 제공합니다.
 
-[의견 보내기](/visualstudio/ide/talk-to-us)<br/>
+[Talk to Us](/visualstudio/ide/talk-to-us)<br/>
 설명서 집합을 사용하고 기술 지원에 문의하고 액세스 가능성 기능을 적용하는 방법에 대한 정보를 확인할 수 있는 링크를 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows 데스크톱 응용 프로그램](../windows/windows-desktop-applications-cpp.md)<br/>
 [메뉴 및 기타 리소스](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

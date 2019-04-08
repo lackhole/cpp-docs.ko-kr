@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C++/CLI]
 ms.assetid: 9f4dd43f-9909-43d6-91d2-05734643876e
-ms.openlocfilehash: fe78a4c5a1773cf621d6554969b1c41c333bc5aa
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: bab7013f2c5fd48ef1a22b990499d79c9c217ca9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58778587"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038228"
 ---
 # <a name="attributes-by-group"></a>그룹별 특성
 
@@ -26,8 +26,8 @@ C++ 특성(attribute)은 기능별 그룹으로 다음과 같이 분류됩니다
 
 .NET Framework 응용 프로그램에 대한 사용자 지정 특성을 정의하는 방법에 대한 자세한 내용은 [사용자 정의 특성](../../extensions/user-defined-attributes-cpp-component-extensions.md)을 참조합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[COM 및 .NET에 대한 C++ 특성](cpp-attributes-com-net.md)<br/>
+[COM 및.NET에 대한 C++ 특성](cpp-attributes-com-net.md)<br/>
 [용도별 특성](attributes-by-usage.md)<br/>
 [특성 사전순 참조](attributes-alphabetical-reference.md)

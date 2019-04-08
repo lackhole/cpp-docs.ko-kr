@@ -16,12 +16,12 @@ helpviewer_keywords:
 - COleLinkingDoc [MFC], OnFindEmbeddedItem
 - COleLinkingDoc [MFC], OnGetLinkedItem
 ms.assetid: 9f547f35-2f95-427f-b9c0-85c31940198b
-ms.openlocfilehash: 275119b2343c4d13b6a32f939fc8c3b2b5d5890c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c5076ceef0c6626fac0232fadf6818edd78b4ccf
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300411"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58773556"
 ---
 # <a name="colelinkingdoc-class"></a>COleLinkingDoc 클래스
 
@@ -57,7 +57,7 @@ class COleLinkingDoc : public COleDocument
 
 ## <a name="remarks"></a>설명
 
-포함 된 항목에 연결을 지 원하는 컨테이너 응용 프로그램 "링크 컨테이너입니다." 라고 합니다. 합니다 [OCLIENT](../../visual-cpp-samples.md) 샘플 응용 프로그램은 링크 컨테이너의 예입니다.
+포함 된 항목에 연결을 지 원하는 컨테이너 응용 프로그램 "링크 컨테이너입니다." 라고 합니다. 합니다 [OCLIENT](../../overview/visual-cpp-samples.md) 샘플 응용 프로그램은 링크 컨테이너의 예입니다.
 
 연결된 된 항목의 원본에는 다른 문서에 포함 된 항목 되 면 해당 포함 문서 편집 포함 된 항목에 대 한 순서 대로 로드 되어야 합니다. 이러한 이유로 링크 컨테이너에 사용자가 링크 된 항목의 소스를 편집 하려고 할 때 다른 컨테이너 응용 프로그램에서 시작할 수 있어야 합니다. 응용 프로그램 사용 해야 합니다 [COleTemplateServer](../../mfc/reference/coletemplateserver-class.md) 클래스 프로그래밍 방식으로 시작 하는 경우 문서를 만들 수 있도록 합니다.
 
@@ -75,7 +75,7 @@ class COleLinkingDoc : public COleDocument
 
 [!code-cpp[NVC_MFCOleContainer#25](../../mfc/codesnippet/cpp/colelinkingdoc-class_3.cpp)]
 
-샘플 `CWinApp`-파생 클래스 정의 및 `InitInstance` 함수 OCLIENT를 참조 하세요. H와 OCLIENT 합니다. MFC 샘플에서 CPP [OCLIENT](../../visual-cpp-samples.md)합니다.
+샘플 `CWinApp`-파생 클래스 정의 및 `InitInstance` 함수 OCLIENT를 참조 하세요. H와 OCLIENT 합니다. MFC 샘플에서 CPP [OCLIENT](../../overview/visual-cpp-samples.md)합니다.
 
 사용 하 여 대 한 자세한 내용은 `COleLinkingDoc`, 문서를 참조 [컨테이너: 컨테이너를 구현](../../mfc/containers-implementing-a-container.md) 고 [컨테이너: 고급 기능](../../mfc/containers-advanced-features.md)합니다.
 
@@ -193,7 +193,7 @@ OLE 시스템 Dll 사용 하 여 문서의 등록을 취소 하려면이 함수�
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [COleDocument 클래스](../../mfc/reference/coledocument-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CDocTemplate 클래스](../../mfc/reference/cdoctemplate-class.md)

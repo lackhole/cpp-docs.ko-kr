@@ -33,12 +33,12 @@ helpviewer_keywords:
 - keyboard shortcuts [C++], property changing
 - accelerator tables [C++], changing properties
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
-ms.openlocfilehash: 4ed283b9be2afdacfbc93c647c7633fb7802e7fd
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: f5ae9880719a3a8b799ea8deb751b6f0a85542bd
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328404"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041126"
 ---
 # <a name="accelerator-editor-c"></a>액셀러레이터 키 편집기 (c + +)
 
@@ -69,12 +69,12 @@ ms.locfileid: "58328404"
 
 다음은 사용할 수 있는 항목에 대 한 합니다 **한정자** 액셀러레이터 키 테이블의 속성:
 
-   |값|Description|
+   |값|설명|
    |-----------|-----------------|
    |**없음**|만 누르면 합니다 **키** 값입니다.<br/><br/>이 값은 가장 효과적으로 사용 026 통해 ASCII/ANSI 값 001로 해석 되는 ^ A-^ Z (**Ctrl + A** 를 통해 **Ctrl + Z**).|
    |**Alt**|눌러야 **Alt** 하기 전에 **키** 값입니다.|
    |**Ctrl**|눌러야 **Ctrl** 하기 전에 **키** 값, ASCII 형식으로 유효 하지 않습니다.|
-   |**Shift**|눌러야 **Shift** 하기 전에 **키** 값입니다.|
+   |**시프트**|눌러야 **Shift** 하기 전에 **키** 값입니다.|
    |**Ctrl+Alt**|눌러야 **Ctrl** 하 고 **Alt** 하기 전에 **키** ASCII 형식으로 유효 하지 않은 값입니다.|
    |**Ctrl+Shift**|눌러야 **Ctrl** 하 고 **Shift** 하기 전에 **키** ASCII 형식으로 유효 하지 않은 값입니다.|
    |**Alt+Shift**|눌러야 **Alt** 하 고 **Shift** 하기 전에 **키** ASCII 형식으로 유효 하지 않은 값입니다.|
@@ -190,7 +190,7 @@ C + + 프로젝트에서 직접 사용 하 여 현재 위치에서 편집 액셀
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
 [액셀러레이터 키](../windows/predefined-accelerator-keys.md)<br/>

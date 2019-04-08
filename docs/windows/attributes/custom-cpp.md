@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
-ms.openlocfilehash: 7aca125879591f71fe2ba60f34b712918350940f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 227e67696e679452a9c6c0e18c04e3d918f7a93f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565700"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029436"
 ---
 # <a name="custom-c"></a>custom(C++)
 
@@ -53,7 +53,7 @@ Variant로 입력할 수 있는 값입니다.
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [독립 실행형 특성](stand-alone-attributes.md)<br/>

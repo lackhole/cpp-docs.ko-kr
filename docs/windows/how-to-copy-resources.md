@@ -30,12 +30,12 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: 9867fdf260750d47421e699cdd0d7a58b02ce947
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 6b9499fbd806c04774d12750c70816d0312a4e3f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328625"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036064"
 ---
 # <a name="how-to-manage-resources-c"></a>방법: 관리 리소스 (c + +)
 
@@ -126,8 +126,8 @@ Visual C++에서 사용하도록 그래픽 리소스(비트맵, 아이콘, 커�
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [방법: 리소스 만들기](../windows/how-to-create-a-resource-script-file.md)<br/>
-[방법: 컴파일 시간에 리소스 포함](../windows/how-to-include-resources-at-compile-time.md)<br/>
+[방법: 컴파일 타임에 리소스 포함](../windows/how-to-include-resources-at-compile-time.md)<br/>

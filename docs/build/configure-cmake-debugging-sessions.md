@@ -3,12 +3,12 @@ title: Visual Studio에서 CMake 디버깅 세션 구성
 ms.date: 03/21/2019
 helpviewer_keywords:
 - CMake debugging
-ms.openlocfilehash: 712728247c439c38d5e640118fc153cf89647c80
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.openlocfilehash: 9899f99994935ec419fff400670644b7d78a190a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356168"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035350"
 ---
 # <a name="configure-cmake-debugging-sessions"></a>CMake 디버깅 세션 구성
 
@@ -42,7 +42,7 @@ CMake 메뉴에서 디버그 세션을 시작할 수도 있습니다.
 
 ## <a name="support-for-cmakesettings-variables"></a>CMakeSettings 변수 지원
 
- **Launch.vs.json** 에 선언 된 변수를 지 원하는 **CMakeSettings.json** (아래 참조)는 현재 선택 된 구성에 적용 됩니다. 또한 시작하는 앱의 현재 디렉터리를 설정하는 `currentDir`이라는 키가 있습니다.
+ **Launch.vs.json** 에 선언 된 변수를 지 원하는 **CMakeSettings.json** (아래 참조)는 현재 선택 된 구성에 적용 됩니다. 또한 명명 된 키가 `currentDir`, 로컬 프로젝트에 대 한 시작 앱의 현재 디렉터리를 설정 하는:
 
 ```json
 {
@@ -59,6 +59,13 @@ CMake 메뉴에서 디버그 세션을 시작할 수도 있습니다.
 ```cmd
 C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
 ```
+
+'Cwd' 키를 원격 프로젝트에 대 한 시작 앱의 현재 디렉터리를 설정합니다. 기본값은 '${debugInfo.defaultWorkingDirectory}' 계산 되는 
+
+```cmd
+/var/tmp/src/bfc6f7f4-4f0f-8b35-80d7-9198fa973fb9/Linux-Debug
+```
+
 ## <a name="see-also"></a>참고자료
 
 [Visual Studio의 CMake 프로젝트](cmake-projects-in-visual-studio.md)<br/>

@@ -3,12 +3,12 @@ title: Microsoft::WRL::Details 네임스페이스
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d71fe149-d804-4c6f-961d-43fe21ef8630
-ms.openlocfilehash: 149b78a20061dc9083c62df4e58d638009c5e0a2
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: fce6e620600164e73d3708d98d8a7fa979e8ab42
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785298"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027482"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Microsoft::WRL::Details 네임스페이스
 
@@ -74,7 +74,7 @@ namespace Microsoft::WRL::Details;
 |[ActivationFactoryCallback 함수](activationfactorycallback-function.md)|지정 된 활성화 ID에 대 한 활성화 팩터리를 가져옵니다.|
 |[Move 함수](move-function.md)|다른 곳에서 지정 된 인수를 이동합니다.|
 |[RaiseException 함수](raiseexception-function.md)|호출 스레드에서 예외가 발생 합니다.|
-|[Swap 함수(WRL)](swap-function-wrl.md)|두 개의 지정 된 인수 값을 교환 합니다.|
+|[Swap 함수 (WRL)](swap-function-wrl.md)|두 개의 지정 된 인수 값을 교환 합니다.|
 |[TerminateMap 함수](terminatemap-function.md)|지정된 된 모듈의 클래스 팩터리를 종료합니다.|
 
 ## <a name="requirements"></a>요구 사항
@@ -83,7 +83,7 @@ namespace Microsoft::WRL::Details;
 
 **네임스페이스:** Microsoft::WRL::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL 네임스페이스](microsoft-wrl-namespace.md)<br/>
 [Microsoft::WRL::Wrappers 네임스페이스](microsoft-wrl-wrappers-namespace.md)

@@ -1,5 +1,5 @@
 ---
-title: '데이터 소스: 연결 관리(ODBC)'
+title: '데이터 소스: 연결 관리 (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC data sources [C++], multiuser environments
@@ -18,16 +18,16 @@ helpviewer_keywords:
 - ODBC data sources [C++], connections
 - database connections [C++], MFC ODBC classes
 ms.assetid: c0adbcdd-c000-40c6-b199-09ffdc7b6ef2
-ms.openlocfilehash: 0f10dd1053819cb201385098b0125042ad556a47
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5b646ca0eb86d3addabaad59ca23f56cfe914114
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568508"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041165"
 ---
-# <a name="data-source-managing-connections-odbc"></a>데이터 소스: 연결 관리(ODBC)
+# <a name="data-source-managing-connections-odbc"></a>데이터 소스: 연결 관리 (ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 이 항목에 설명 합니다.
 
@@ -72,7 +72,7 @@ ODBC 관리자를 사용 하 여 데이터 원본을 구성 합니다. 데이터
 
 ##  <a name="_core_working_in_a_multiuser_environment"></a> 다중 사용자 환경에서 작업
 
-여러 사용자가 데이터 원본에 연결 되어 있으면 레코드 집합에서 조작 하는 동안 데이터를 변경할 수 있습니다. 마찬가지로, 변경 내용을 다른 사용자의 영향을 줄 수 있습니다. 자세한 내용은 [레코드 집합: 레코드 집합의 레코드 업데이트 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) 하 고 [트랜잭션 (ODBC)](../../data/odbc/transaction-odbc.md)합니다.
+여러 사용자가 데이터 원본에 연결 되어 있으면 레코드 집합에서 조작 하는 동안 데이터를 변경할 수 있습니다. 마찬가지로, 변경 내용을 다른 사용자의 영향을 줄 수 있습니다. 자세한 내용은 참조 하세요. [레코드 집합: 레코드 집합 업데이트 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) 하 고 [트랜잭션 (ODBC)](../../data/odbc/transaction-odbc.md)합니다.
 
 ##  <a name="_core_generalizing_the_connection_string"></a> 연결 문자열의 일반화
 
@@ -136,8 +136,8 @@ ODBC 관리자를 사용 하 여 데이터 원본을 구성 합니다. 데이터
 
 1. 호출 개체를 삭제 하는 대신 해당 `OpenEx` 또는 `Open` 멤버 함수를 다시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [데이터 소스(ODBC)](../../data/odbc/data-source-odbc.md)<br/>
-[데이터 소스: 데이터 소스의 스키마 확인(ODBC)](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)<br/>
+[데이터 소스: 데이터 원본 (ODBC)의 스키마를 결정합니다.](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)<br/>
 [CRecordset 클래스](../../mfc/reference/crecordset-class.md)

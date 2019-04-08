@@ -12,12 +12,12 @@ helpviewer_keywords:
 - MFC, wizards
 - Class View tool, managing Windows messages
 ms.assetid: f5dd4d13-9dc1-4a49-b6bf-5b3cb45fa8ba
-ms.openlocfilehash: 5316899b7eb8828847af6d7db95edf3d8ba3822a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 41cbb86b4245bd78baecd222b5573ba5e877243a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265524"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58773829"
 ---
 # <a name="wizards-and-the-resource-editors"></a>마법사 및 리소스 편집기
 
@@ -46,10 +46,10 @@ MFC 프레임 워크, 문서, 뷰, 프레임 창, 문서 템플릿 및 응용 �
 
 Visual c + + [리소스 편집기](../windows/resource-editors.md) 만들고 메뉴, 대화 상자, 사용자 지정 컨트롤, 액셀러레이터 키, 비트맵, 아이콘, 커서, 문자열 및 버전 리소스를 편집 합니다. Visual c + + 버전 4.0부터 도구 모음 편집기 도구 모음을 만들 훨씬 쉬워집니다.
 
-를 더욱 수 있도록 Microsoft Foundation Class 라이브러리를 일반적인 라는 파일을 제공 합니다. RES를 일반적인에서 복사할 수 있는 "클립 아트" 리소스를 포함 합니다. RES 및 사용자 고유의 리소스 파일에 붙여 넣습니다. 일반적인 합니다. RES 도구 모음 단추, 일반적인 커서, 아이콘 등을 포함합니다. 사용 하 고, 수정 하 고, 응용 프로그램에서 이러한 리소스를 재배포할 수 있습니다. 일반적인 방법에 대 한 자세한 내용은 합니다. RES를 참조 합니다 [클립 아트 샘플](../visual-cpp-samples.md)합니다.
+를 더욱 수 있도록 Microsoft Foundation Class 라이브러리를 일반적인 라는 파일을 제공 합니다. RES를 일반적인에서 복사할 수 있는 "클립 아트" 리소스를 포함 합니다. RES 및 사용자 고유의 리소스 파일에 붙여 넣습니다. 일반적인 합니다. RES 도구 모음 단추, 일반적인 커서, 아이콘 등을 포함합니다. 사용 하 고, 수정 하 고, 응용 프로그램에서 이러한 리소스를 재배포할 수 있습니다. 일반적인 방법에 대 한 자세한 내용은 합니다. RES를 참조 합니다 [클립 아트 샘플](../overview/visual-cpp-samples.md)합니다.
 
 MFC 응용 프로그램 마법사, Visual c + + 마법사, 리소스 편집기 및 MFC 프레임 워크를 많은 작업을 수행 및 프로그램 코드를 훨씬 쉽게 관리할 수 있도록 합니다. 응용 프로그램별 코드 대량의 문서 및 뷰 클래스입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[클래스를 사용하여 Windows 애플리케이션 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)
+[클래스를 사용하여 Windows 응용 프로그램 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - BLOB (binary large object), retrieving
 - OLE DB, BLOBs (binary large objects)
 ms.assetid: 2893eb0a-5c05-4016-8914-1e40ccbaf0b3
-ms.openlocfilehash: 42b7b95f2da4313bdfcb1d9d8a064ca5be563e40
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 23bc20355e1e2b17ac20cf975df2ff58d6553ef9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423250"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023089"
 ---
 # <a name="retrieving-a-blob"></a>BLOB 검색
 
@@ -53,7 +53,7 @@ while (categories.MoveNext() == S_OK)
 
 BLOB 데이터를 처리하는 매크로에 대한 자세한 내용은 [OLE DB 소비자 템플릿에 대한 매크로 및 전역 함수](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)의 **열 맵 매크로**를 참조하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [접근자 사용](../../data/oledb/using-accessors.md)<br/>
 [OLE DB 소비자 템플릿에 대한 매크로 및 전역 함수](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)<br/>

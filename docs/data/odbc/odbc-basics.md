@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ODBC, about ODBC
 - ODBC, components
 ms.assetid: ec529702-0fb2-4754-b8de-d1efa8eca18f
-ms.openlocfilehash: 81b1f6d06d909b5b046703b97c4574270efbdd46
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e14f5d051b9684cd79a34f5fb50feeb785d2f927
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591726"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033244"
 ---
 # <a name="odbc-basics"></a>ODBC 기초
 
@@ -28,7 +28,7 @@ ms.locfileid: "50591726"
 관련된 항목을 읽어 하고자 [ODBC: ODBC 커서 라이브러리](../../data/odbc/odbc-the-odbc-cursor-library.md)합니다.
 
 > [!NOTE]
-> ODBC 데이터 원본 MFC 데이터 액세스 개체 (DAO) 클래스 또는이 항목에 설명 된 대로 MFC ODBC 클래스를 통해 액세스할 수 있습니다.
+> ODBC 데이터 소스는 이 항목에서 설명하는 MFC ODBC 클래스뿐 아니라 MFC Data Access Object(DAO) 클래스를 통해서도 액세스할 수 있습니다.
 
 > [!NOTE]
 > MFC ODBC 클래스에는 유니코드 지원 및 다중 스레딩 합니다. 다중 스레딩 지원에 대 한 자세한 내용은 참조 하세요. [ODBC 클래스와 스레드](../../data/odbc/odbc-classes-and-threads.md)
@@ -65,6 +65,6 @@ ODBC는 데이터베이스 부분의는 Microsoft Windows 열기 Services 아키
 
 이 버전의 Visual c + +에 포함 된 ODBC 드라이버의 목록을 추가 드라이버를 가져오는 방법은 참조 [ODBC 드라이버 목록](../../data/odbc/odbc-driver-list.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

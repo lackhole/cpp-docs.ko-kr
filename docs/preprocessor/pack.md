@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: 9b959c161a933cc76590cfbd65d295aad36f07d7
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: bf1ae81184d53dd271f63c26e8f9a52a6410b232
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627516"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038449"
 ---
 # <a name="pack"></a>pack
 구조체, 공용 구조체 및 클래스 멤버에 대한 압축 맞춤을 지정합니다.
@@ -35,7 +35,7 @@ ms.locfileid: "53627516"
 **pop**<br/>
 (선택 사항) 내부 컴파일러 스택의 맨 위에서 레코드를 제거합니다. 하는 경우 *n* 을 지정 하지 않으면 **pop**, 스택의 맨 위에 결과 레코드와 연결 된 압축 값은 새로운 압축 맞춤 값입니다. 하는 경우 *n* 를 지정 하면 예를 들어 `#pragma pack(pop, 16)`를 *n* 은 새로운 압축 맞춤 값입니다. 팝 하는 경우 *식별자*, 예를 들어 `#pragma pack(pop, r1)`, 포함 된 레코드를 때까지 스택의 모든 레코드가 팝 되 고 그런 다음 *식별자* 를 찾을 수 있습니다. 해당 레코드가 팝되고 스택 맨 위에 있는 결과 레코드와 연결된 압축 값이 새로운 압축 맞춤 값이 됩니다. 팝 하는 경우는 *식별자* 스택의 모든 레코드에 없는 경우 **pop** 무시 됩니다.
 
-*identifier*<br/>
+*식별자*<br/>
 (선택 사항) 와 함께 사용할 때 *푸시*, 내부 컴파일러 스택의 레코드에 이름을 할당 합니다. 와 함께 사용할 때 **pop**, 될 때까지 내부 스택에서 기록을 팝 *식별자* 가 제거 *식별자* 없는 내부 스택에서 아무 것도 팝 합니다.
 
 *n*<br/>
@@ -53,7 +53,7 @@ ms.locfileid: "53627516"
 
 - [__alignof](../cpp/alignof-operator.md)
 
-- [align(C++)](../cpp/align-cpp.md)
+- [맞춤](../cpp/align-cpp.md)
 
 - [__unaligned](../cpp/unaligned.md)
 
@@ -115,6 +115,6 @@ int main() {
 #pragma pack(show)   // C4810
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

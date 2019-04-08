@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 조인 수행(ODBC)'
+title: '레코드 집합: 조인 수행 (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - joins [C++], in recordsets
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - ODBC recordsets [C++], joins
 - recordsets [C++], joining tables
 ms.assetid: ca720900-a156-4780-bf01-4293633bea64
-ms.openlocfilehash: 135992e7eebd56c985c24228370695f10ac6da3a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9e589f00ec0512794d14accc6bb33c0e7adbd378
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523940"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035415"
 ---
-# <a name="recordset-performing-a-join-odbc"></a>레코드 집합: 조인 수행(ODBC)
+# <a name="recordset-performing-a-join-odbc"></a>레코드 집합: 조인 수행 (ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 ## <a name="what-a-join-is"></a>무엇을 조인은
 
@@ -35,9 +35,9 @@ ms.locfileid: "50523940"
 
 SQL 키워드에 의해 조인 된 여러 쌍의 열을 연결 하 여 동일한 방식으로 두 개 이상의 테이블을 조인할 수 있습니다 **AND**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 미리 정의된 쿼리에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
-[레코드 집합: 테이블에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
-[레코드 집합: 레코드 집합 다시 쿼리(ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)
+[레코드 집합: 미리 정의 된 쿼리 (ODBC)에 대 한 클래스 선언](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
+[레코드 집합: 테이블 (ODBC)에 대 한 클래스 선언](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[레코드 집합: (ODBC) 레코드 집합 다시 쿼리](../../data/odbc/recordset-requerying-a-recordset-odbc.md)

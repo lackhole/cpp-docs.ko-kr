@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - iid_is attribute
 ms.assetid: 2f9b42a9-7130-4b08-9b1e-0d5d360e10ff
-ms.openlocfilehash: 176ab83bfae18ff7f43fe0860591f2d1ac50d7eb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b91fb7937bb0e20f2500eace9695bc0ddba21b26
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535332"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038559"
 ---
 # <a name="iidis"></a>iid_is
 
@@ -25,7 +25,7 @@ ms.locfileid: "50535332"
 
 ### <a name="parameters"></a>매개 변수
 
-*식*<br/>
+*expression*<br/>
 인터페이스 포인터를 가리키는 COM 인터페이스의 IID를 지정 하는 C 언어 식입니다.
 
 ## <a name="remarks"></a>설명
@@ -64,7 +64,7 @@ __interface IFireTabCtrl : IDispatch
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [매개 변수 특성](parameter-attributes.md)

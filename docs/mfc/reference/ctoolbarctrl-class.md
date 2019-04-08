@@ -183,10 +183,10 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
 ms.openlocfilehash: 92f5adcea50e660ecfad131313247e118312e609
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781265"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
@@ -579,7 +579,7 @@ BOOL CheckButton(
 *nID*<br/>
 단추를 선택 하거나 선택 취소의 명령 식별자입니다.
 
-*bCheck*<br/>
+*확인*<br/>
 확인 단추를 선택 취소 하려면 FALSE true로 설정 하면.
 
 ### <a name="return-value"></a>반환 값

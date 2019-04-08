@@ -6,12 +6,12 @@ helpviewer_keywords:
 - intrinsics, alphabetical list
 - intrinsics
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
-ms.openlocfilehash: 83b254b67cb2a7e09fbf57597996097a7afb5d76
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67206e63d163b489c5087e6bc6759cde30a3d6c4
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654770"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026203"
 ---
 # <a name="alphabetical-listing-of-intrinsic-functions"></a>내장 함수의 사전순 목록
 
@@ -69,35 +69,35 @@ ms.locfileid: "50654770"
 
 [__int2c](../intrinsics/int2c.md)
 
-[_InterlockedAdd 내장 함수](../intrinsics/interlockedadd-intrinsic-functions.md)
+[_InterlockedAdd Intrinsic Functions](../intrinsics/interlockedadd-intrinsic-functions.md)
 
 [_InterlockedAddLargeStatistic](../intrinsics/interlockedaddlargestatistic.md)
 
-[_InterlockedAnd 내장 함수](../intrinsics/interlockedand-intrinsic-functions.md)
+[_InterlockedAnd Intrinsic Functions](../intrinsics/interlockedand-intrinsic-functions.md)
 
-[_interlockedbittestandreset 내장 함수](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)
+[_interlockedbittestandreset Intrinsic Functions](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)
 
-[_interlockedbittestandset 내장 함수](../intrinsics/interlockedbittestandset-intrinsic-functions.md)
+[_interlockedbittestandset Intrinsic Functions](../intrinsics/interlockedbittestandset-intrinsic-functions.md)
 
 [_InterlockedCompareExchange 내장 함수](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)
 
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)
 
-[_InterlockedCompareExchangePointer 내장 함수](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)
+[_InterlockedCompareExchangePointer Intrinsic Functions](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)
 
-[_InterlockedDecrement 내장 함수](../intrinsics/interlockeddecrement-intrinsic-functions.md)
+[_InterlockedDecrement Intrinsic Functions](../intrinsics/interlockeddecrement-intrinsic-functions.md)
 
-[_InterlockedExchange 내장 함수](../intrinsics/interlockedexchange-intrinsic-functions.md)
+[_InterlockedExchangePointer Intrinsic Functions](../intrinsics/interlockedexchange-intrinsic-functions.md)
 
-[_InterlockedExchangeAdd 내장 함수](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)
+[_InterlockedExchangeAdd Intrinsic Functions](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)
 
-[_InterlockedExchangePointer 내장 함수](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)
+[_InterlockedExchangePointer Intrinsic Functions](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)
 
-[_InterlockedIncrement 내장 함수](../intrinsics/interlockedincrement-intrinsic-functions.md)
+[_InterlockedIncrement Intrinsic Functions](../intrinsics/interlockedincrement-intrinsic-functions.md)
 
-[_InterlockedOr 내장 함수](../intrinsics/interlockedor-intrinsic-functions.md)
+[_InterlockedOr Intrinsic Functions](../intrinsics/interlockedor-intrinsic-functions.md)
 
-[_InterlockedXor 내장 함수](../intrinsics/interlockedxor-intrinsic-functions.md)
+[_InterlockedXor Intrinsic Functions](../intrinsics/interlockedxor-intrinsic-functions.md)
 
 [__invlpg](../intrinsics/invlpg.md)
 
@@ -273,6 +273,6 @@ ms.locfileid: "50654770"
 
 [__writemsr](../intrinsics/writemsr.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

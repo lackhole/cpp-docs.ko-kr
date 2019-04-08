@@ -9,12 +9,12 @@ helpviewer_keywords:
 - data [MFC]
 - data [MFC], displaying in a form
 ms.assetid: c56185c4-12cb-40b1-b499-02b29ea83e3a
-ms.openlocfilehash: 1694d9cbc770e02c550891fc83c1cc0a9f64824a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e50c433e701fbae2e607d79d7abb34efe8eba5b5
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517795"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033750"
 ---
 # <a name="displaying-and-manipulating-data-in-a-form"></a>폼에서 데이터의 표시와 조작
 
@@ -24,6 +24,6 @@ MFC 응용 프로그램 마법사나 **클래스 추가**([MFC ODBC 소비자 �
 
 레코드 뷰 및 해당 레코드 집합은 문서를 닫을 때 삭제됩니다. 레코드 뷰에 대한 자세한 내용은 [레코드 뷰](../../data/record-views-mfc-data-access.md)를 참조하십시오. [레코드 필드 교환(RFX)](../../data/odbc/record-field-exchange-rfx.md)에 대한 자세한 내용은 RFX를 참조하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC 및 MFC](../../data/odbc/odbc-and-mfc.md)

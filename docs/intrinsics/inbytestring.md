@@ -8,12 +8,12 @@ helpviewer_keywords:
 - rep insb instruction
 - __inbytestring intrinsic
 ms.assetid: fe549556-e7a3-4af3-8ebf-8a7dc3cb233b
-ms.openlocfilehash: 494c57625bc6f93e09817171476267ff5fb27c3e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e515c6452d18ca022707fa2f9e36e2045523ccd5
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556782"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038585"
 ---
 # <a name="inbytestring"></a>__inbytestring
 
@@ -36,7 +36,7 @@ void __inbytestring(
 *포트*<br/>
 [in] 포트에서 읽기입니다.
 
-*Buffer*<br/>
+*버퍼*<br/>
 [out] 여기에 포트에서 읽은 데이터가 기록 됩니다.
 
 *개수*<br/>
@@ -56,6 +56,6 @@ void __inbytestring(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

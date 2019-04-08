@@ -8,16 +8,16 @@ helpviewer_keywords:
 - configuring ODBC data sources
 - ODBC data sources, represented by CDatabase
 ms.assetid: b246721f-b9e1-49bd-a6c7-f348b8c3d537
-ms.openlocfilehash: df61ca28a1a5c7fb1f2096f2cc22654794f5dbdc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b435c65bab565e109d37e1dd24e051993cbb30c8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469799"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038397"
 ---
 # <a name="data-source-odbc"></a>데이터 소스(ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 데이터베이스 용어에서 데이터 원본 집합이 특정 데이터를 해당 데이터와 데이터 원본 이름을 사용 하 여 표현할 수 있는 데이터 원본의 위치에 액세스 하는 데 필요한 정보입니다. 클래스를 사용 하려면 [CDatabase](../../mfc/reference/cdatabase-class.md), 데이터 원본 열기 데이터베이스 연결 (ODBC) 관리자를 통해 구성한 하나 여야 합니다. 데이터 원본의 예로 네트워크 또는 로컬 디렉터리에서 Microsoft Access 파일에서 Microsoft SQL Server에서 실행 되는 원격 데이터베이스입니다. 응용 프로그램에서 ODBC 드라이버가 권한이 있는 모든 데이터 원본에 액세스할 수 있습니다.
 
@@ -25,10 +25,10 @@ ms.locfileid: "50469799"
 
 다음 항목에서는 데이터 원본에 대 한 더 설명합니다.
 
-- [데이터 소스: 연결 관리(ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)
+- [데이터 소스: 연결 관리 (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)
 
-- [데이터 소스: 데이터 소스의 스키마 확인(ODBC)](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)
+- [데이터 소스: 데이터 원본 (ODBC)의 스키마를 결정합니다.](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

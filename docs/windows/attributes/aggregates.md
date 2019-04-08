@@ -9,12 +9,12 @@ helpviewer_keywords:
 - aggregate objects [C++], aggregates attribute
 - aggregates [C++]
 ms.assetid: 67a084c9-941f-474b-a029-9c93b38ebe9a
-ms.openlocfilehash: aaf138ab3b0fa69f2a8c201eed631569b33b079f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 12e6af31c2714095cf2ecf51e4f067081789a9e0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486790"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028707"
 ---
 # <a name="aggregates"></a>집계
 
@@ -83,18 +83,18 @@ struct CObject : IObject
 
 |||
 |-|-|
-|**적용 대상**|**클래스**, **구조체**|
+|**적용 대상**|**class**, **struct**|
 |**반복 가능**|예|
 |**필수 특성**|다음 중 하나 이상의: `coclass`, `progid`, 또는 `vi_progid`합니다.|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 특성](com-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
 [집계](/windows/desktop/com/aggregation)<br/>
-[집계할 수](/windows/desktop/Midl/aggregatable)<br/>
+[Aggregatable](/windows/desktop/Midl/aggregatable)<br/>
 [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)

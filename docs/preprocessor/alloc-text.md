@@ -8,12 +8,12 @@ helpviewer_keywords:
 - alloc_text pragma
 - pragmas, alloc_text
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
-ms.openlocfilehash: 43f516830d0aa0fb8de6195c5958beadbeba9df6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 399e8956a511f289b480e66db7f03cac0a6c7c20
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450377"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031367"
 ---
 # <a name="alloctext"></a>alloc_text
 지정한 함수 정의가 상주하는 코드 섹션의 이름을 지정합니다. pragma는 명명된 함수의 함수 선언자와 함수 정의 간에 발생해야 합니다.
@@ -42,6 +42,6 @@ textsection
 
 - 함수가 선언된 후, 그리고 함수가 정의되기 전에 사용되어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: AddNew, Edit 및 Delete의 작동 방식(ODBC)'
+title: '레코드 집합: AddNew를 편집 하 고 작업 (ODBC)를 삭제 하는 방법'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - records [C++], updating
@@ -17,16 +17,16 @@ helpviewer_keywords:
 - ODBC recordsets [C++], editing records
 - records [C++], editing
 ms.assetid: cab43d43-235a-4bed-ac05-67d10e94f34e
-ms.openlocfilehash: 84d4c2f1128f7b73189f69b056eee96619c31ef5
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: e5fc6ad2a1fe00367cd8a0b1c53ac914b95018ab
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331973"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033211"
 ---
-# <a name="recordset-how-addnew-edit-and-delete-work-odbc"></a>레코드 집합: AddNew, Edit 및 Delete의 작동 방식(ODBC)
+# <a name="recordset-how-addnew-edit-and-delete-work-odbc"></a>레코드 집합: AddNew를 편집 하 고 작업 (ODBC)를 삭제 하는 방법
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 이 항목에 설명 하는 방법을 `AddNew`, `Edit`, 및 `Delete` 클래스의 멤버 함수 `CRecordset` 작동 합니다. 다루는 항목은 다음과 같습니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "51331973"
 - [레코드 삭제 방법](#_core_deleting_a_record)
 
 > [!NOTE]
->  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 사용 하는 경우 참조 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+>  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 사용 하는 경우 참조 [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 보완을 읽을 하려는 [레코드 필드 교환: RFX 작동 방식](../../data/odbc/record-field-exchange-how-rfx-works.md)는 RFX 업데이트 작업의 해당 역할에 설명 합니다.
 
@@ -118,7 +118,7 @@ ODBC 드라이버에서 지 원하는 경우는 `::SQLSetPos` MFC ODBC API 함�
 
    1. 변경 내용이 없으면 `Update` SQL 구문 **업데이트** 문입니다. 에 나열 된 열을 **업데이트** 문을 변경 된 필드 데이터 멤버를 기반으로 합니다.
 
-   1. `Update` 변경 내용을 커밋합니다-실행 합니다 **업데이트** 문-데이터 원본에는 레코드를 변경 하며 트랜잭션이 커밋되지는 않음 경우 진행 중인 (참조 [트랜잭션: 수행 트랜잭션을에서 레코드 집합 (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md) 트랜잭션이 업데이트에 미치는 영향에 대 한 정보에 대 한). ODBC 변경 레코드의 복사본을 유지 합니다.
+   1. `Update` 변경 내용을 커밋합니다-실행 합니다 **업데이트** 문-데이터 원본에는 레코드를 변경 하며 트랜잭션이 커밋되지는 않음 경우 진행 중인 (참조 [트랜잭션: 수행 된 트랜잭션 레코드 집합 (ODBC)에서](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md) 트랜잭션이 업데이트에 미치는 영향에 대 한 정보에 대 한). ODBC 변경 레코드의 복사본을 유지 합니다.
 
    1. 에 대 한 프로세스와는 달리 `AddNew`, `Edit` 프로세스는 저장된 된 레코드를 복원 하지 않습니다. 편집할된 레코드를 현재 레코드로 위치에 남아 있습니다.
 
@@ -157,8 +157,8 @@ ODBC 드라이버에서 지 원하는 경우는 `::SQLSetPos` MFC ODBC API 함�
 
 업데이트 작업에 사용 되는 SQL 문에 대 한 자세한 내용은 [SQL](../../data/odbc/sql.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 업데이트에 대한 추가 정보(ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>
-[RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)
+[레코드 집합: 업데이트 (ODBC)에 대 한 자세한 정보](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>
+[RFX](../../data/odbc/record-field-exchange-rfx.md)

@@ -79,10 +79,10 @@ helpviewer_keywords:
 - CMFCRibbonGallery [MFC], OnDrawPaletteIcon
 ms.assetid: 9734c9c9-981c-4b3f-8c59-264fd41811b4
 ms.openlocfilehash: 818ce55e44d91520e568308a1a1e8a1fa0c8658d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58780394"
 ---
 # <a name="cmfcribbongallery-class"></a>CMFCRibbonGallery 클래스
@@ -691,7 +691,7 @@ virtual BOOL SetACCData(
 *pParent*<br/>
 [in] 리본 갤러리 창의 부모 창입니다.
 
-*data*<br/>
+*데이터*<br/>
 [out] `CAccessibilityData` 리본 갤러리에서 내게 필요한 옵션 데이터를 받는 개체입니다.
 
 ### <a name="return-value"></a>반환 값

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - dialog box controls [C++], custom (user) controls
 - Dialog Editor [C++], custom controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
-ms.openlocfilehash: 152113200fd7aa9ee87b749380e370fe4e6ad9ff
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 563cf73299c00413889ada2520b1bf4fcd86f2be
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563357"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023700"
 ---
 # <a name="dialog-box-controls-c"></a>대화 상자 컨트롤 (c + +)
 
@@ -38,7 +38,7 @@ ms.locfileid: "57563357"
 
 |컨트롤 이름|기본 이벤트|
 |---|---|
-|[단추 컨트롤](../mfc/reference/cbutton-class.md)|BN_CLICKED|
+|[Button 컨트롤](../mfc/reference/cbutton-class.md)|BN_CLICKED|
 |[확인란 컨트롤](../mfc/reference/styles-used-by-mfc.md#button-styles)|BN_CLICKED|
 |[콤보 상자 컨트롤](../mfc/reference/ccombobox-class.md)|CBN_SELCHANGE|
 |[편집 컨트롤](../mfc/reference/cedit-class.md)|EN_CHANGE|
@@ -57,18 +57,18 @@ ms.locfileid: "57563357"
 
 |컨트롤 이름|기본 이벤트|
 |---|---|
-|[슬라이더 컨트롤](../mfc/slider-control-styles.md)|NM_CUSTOMDRAW|
-|[스핀 컨트롤](../mfc/using-cspinbuttonctrl.md)|UDN_DELTAPOS|
-|[진행률 컨트롤](../mfc/styles-for-the-progress-control.md)|NM_CUSTOMDRAW|
+|[Slider 컨트롤](../mfc/slider-control-styles.md)|NM_CUSTOMDRAW|
+|[Spin 컨트롤](../mfc/using-cspinbuttonctrl.md)|UDN_DELTAPOS|
+|[Progress 컨트롤](../mfc/styles-for-the-progress-control.md)|NM_CUSTOMDRAW|
 |[Hot Key 컨트롤](../mfc/using-a-hot-key-control.md)|NM_OUTOFMEMORY|
 |[목록 컨트롤](../mfc/list-control-and-list-view.md)|LVN_ITEMCHANGE|
 |[트리 컨트롤](../mfc/tree-control-styles.md)|TVN_SELCHANGE|
 |[탭 컨트롤](../mfc/tab-controls-and-property-sheets.md)|TCN_SELCHANGE|
 |[애니메이션 컨트롤](../mfc/using-an-animation-control.md)|ACN_START|
 |[날짜 시간 선택 컨트롤](../mfc/creating-the-date-and-time-picker-control.md)|DTN_DATETIMECHANGE|
-|[Monthcalendar 컨트롤](../mfc/month-calendar-control-examples.md)|MCN_SELCHANGE|
+|[MonthCalendar 컨트롤](../mfc/month-calendar-control-examples.md)|MCN_SELCHANGE|
 |[IP 주소 컨트롤](../mfc/reference/cipaddressctrl-class.md)|IPN_FIELDCHANGED|
-|[확장 된 콤보 상자 컨트롤](../mfc/creating-an-extended-combo-box-control.md)||
+|[확장된 콤보 상자 컨트롤](../mfc/creating-an-extended-combo-box-control.md)||
 |사용자 지정 컨트롤|TTN_GETDISPINFO|
 
 ## <a name="custom-controls"></a>사용자 지정 컨트롤
@@ -99,7 +99,7 @@ ms.locfileid: "57563357"
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자 편집기](../windows/dialog-editor.md)<br/>
 

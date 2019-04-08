@@ -5,12 +5,12 @@ helpviewer_keywords:
 - standalone attributes
 - attributes [C++/CLI], standalone
 ms.assetid: 0d72e84e-236c-43b3-ac9a-d9b91fcd6794
-ms.openlocfilehash: 1183d2b171a25b3b2d1aef14c19f81be65effc6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7dd1f35add3b23dbd81e32a1600481eec79fe7d7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640828"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033061"
 ---
 # <a name="stand-alone-attributes"></a>독립 실행형 특성
 
@@ -21,7 +21,7 @@ ms.locfileid: "50640828"
 |특성|설명|
 |---------------|-----------------|
 |[cpp_quote](cpp-quote.md)|생성된 된 헤더 파일의 따옴표 없이 지정된 된 문자열을 내보냅니다.|
-|[custom](custom-cpp.md)|고유한 특성을 정의할 수 있습니다.|
+|[사용자 지정](custom-cpp.md)|고유한 특성을 정의할 수 있습니다.|
 |[db_command](db-command.md)|OLE DB 명령을 만듭니다.|
 |[emitidl](emitidl.md)|모든 후속 IDL 특성 처리 되어 생성된 된.idl 파일에 배치 될 지 여부를 결정 합니다.|
 |[idl_module](idl-module.md)|DLL에 진입점을 지정합니다.|
@@ -32,10 +32,10 @@ ms.locfileid: "50640828"
 |[include](include-cpp.md)|생성된 된.idl 파일에 포함할 하나 이상의 헤더 파일을 지정 합니다.|
 |[includelib](includelib-cpp.md)|생성된 된.idl 파일에 포함 될.idl 또는.h 파일을 사용 하면 됩니다.|
 |[library_block](library-block.md)|.Idl 파일의 라이브러리 블록 내부 구문을 배치합니다.|
-|[module](module-cpp.md)|.Idl 파일의 라이브러리 블록을 정의합니다.|
+|[name](module-cpp.md)|.Idl 파일의 라이브러리 블록을 정의합니다.|
 |[no_injected_text](no-injected-text.md)|컴파일러 특성 사용으로 인해 코드를 삽입 하지 못하도록 방지 합니다.|
 |[pragma](pragma.md)|생성된 된.idl 파일의 따옴표 없이 지정된 된 문자열을 내보냅니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [용도별 특성](attributes-by-usage.md)

@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CreateAccessor method
 - CreateParameterAccessor method
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-ms.openlocfilehash: 9050415795bab51992e21cedeb5188fd885b56b2
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 526415f14172911b26462fab97d9e0a7513b8cad
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58776819"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027612"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor 클래스
 
@@ -214,10 +214,10 @@ HRESULT 값 중 하나입니다.
 
 이 함수를 호출 하기 전에 호출 해야 합니다 [AddParameterEntry](../../data/oledb/cmanualaccessor-addparameterentry.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DBViewer](../../overview/visual-cpp-samples.md)<br/>
-[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CAccessor 클래스](../../data/oledb/caccessor-class.md)<br/>
 [CDynamicAccessor 클래스](../../data/oledb/cdynamicaccessor-class.md)<br/>

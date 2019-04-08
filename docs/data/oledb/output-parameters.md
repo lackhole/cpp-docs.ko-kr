@@ -8,12 +8,12 @@ helpviewer_keywords:
 - procedure calls
 - procedure calls, stored procedures
 ms.assetid: 4f7c2700-1c2d-42f3-8c9f-7e83962b2442
-ms.openlocfilehash: 575bc2c347275bfb96f64e60f35379629b4eac18
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 196c50ea62c3e3188b61a3b35a9e2752740c4ad5
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614541"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027456"
 ---
 # <a name="output-parameters"></a>출력 매개 변수
 
@@ -55,6 +55,6 @@ return 0
 
 `@_rowcount` outparameter 테스트 테이블에서 반환 된 행 수를 보고 합니다. 그러나이 저장된 프로시저를 50 행 수를 제한합니다. 예를 들어 테스트에 100 개 행이 있는 경우 행 개수가 50 (때문에이 코드는 상위 50 개 행만 검색)입니다. 테이블에서 30 개 행만 된 행 개수가 30 것입니다. 호출 해야 `Close` 또는 `CloseAll` 해당 값을 인출 하기 전에 outparameter를 채우려면.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [저장 프로시저 사용](../../data/oledb/using-stored-procedures.md)

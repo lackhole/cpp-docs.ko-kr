@@ -35,12 +35,12 @@ helpviewer_keywords:
 - m_dwRef
 - m_iRowset
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
-ms.openlocfilehash: b7284ace73d80eff6337e1d71cafef26094455f0
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 19b90f4454e784907366ef6cf7e3e7e1b9ada799
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414028"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023843"
 ---
 # <a name="csimplerow-class"></a>CSimpleRow 클래스
 
@@ -63,7 +63,7 @@ class CSimpleRow
 |||
 |-|-|
 |[AddRefRow](#addrefrow)|기존 행 핸들에 대 한 참조 횟수를 추가합니다.|
-|[Compare](#compare)|동일한 행 인스턴스를 참조 하는지에 두 개의 행을 비교 합니다.|
+|[비교](#compare)|동일한 행 인스턴스를 참조 하는지에 두 개의 행을 비교 합니다.|
 |[CSimpleRow](#csimplerow)|생성자입니다.|
 |[ReleaseRow](#releaserow)|행을 해제합니다.|
 
@@ -156,7 +156,7 @@ DWORD m_dwRef;
 KeyType m_iRowset;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

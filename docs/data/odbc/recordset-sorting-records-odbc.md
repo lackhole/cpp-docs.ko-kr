@@ -1,21 +1,21 @@
 ---
-title: '레코드 집합: 레코드 정렬(ODBC)'
+title: '레코드 집합: 레코드 정렬 (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - sorting data, recordset data
 - ODBC recordsets, sorting
 - recordsets, sorting
 ms.assetid: b40b152e-0a91-452e-be7b-e5bc27f744c7
-ms.openlocfilehash: 708ba8e851fa81ef2adb4360fe582880acd23c31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 831f21901186ed0ae010b0f332327eefcba94b51
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621276"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024662"
 ---
-# <a name="recordset-sorting-records-odbc"></a>레코드 집합: 레코드 정렬(ODBC)
+# <a name="recordset-sorting-records-odbc"></a>레코드 집합: 레코드 정렬 (ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 이 항목에서는 레코드 집합을 정렬 하는 방법에 설명 합니다. 정렬 기준으로 사용할 하나 이상의 열을 지정할 수 있으며 오름차순 또는 내림차순을 지정할 수 있습니다 (**ASC** 하거나 **DESC**; **ASC** 기본값) 지정 된 각 열에 대 한 합니다. 예를 들어 두 개의 열을 지정 하는 경우 레코드를 먼저 정렬 된 명명 된 첫 번째 열에 및 이라는 두 번째 열입니다. SQL **ORDER BY** 절 정의 정렬 합니다. 프레임 워크가 추가 되는 경우는 **ORDER BY** 레코드 집합의 SQL 절 쿼리, 선택 항목의 순서 지정 절 제어 합니다.
 
@@ -59,8 +59,8 @@ rsStudent.Open( );
 > [!NOTE]
 >  사용자 고유의 SQL 문자열을 전달 하 여 레코드 집합의 기본 SQL 문자열을 재정의 하려는 경우 `Open`, 사용자 지정 문자열에 있는 경우 정렬을 설정 하지 마십시오는 **ORDER BY** 절.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 레코드 집합 매개 변수화(ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
-[레코드 집합: 레코드 필터링(ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)
+[레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
+[레코드 집합: 레코드 필터링 (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)

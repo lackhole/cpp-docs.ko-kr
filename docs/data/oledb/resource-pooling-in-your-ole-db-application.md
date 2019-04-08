@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB, resource pooling
 - OLE DB providers, resource pooling
 ms.assetid: 2ead1bcf-bbd4-43ea-a307-bb694b992fc1
-ms.openlocfilehash: 2dc5fbe760b2e62eec8b974bb496e52d1de25f50
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: 786c2b31bb93b0691d80885c86377e2afba8c1dc
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51264960"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029306"
 ---
 # <a name="resource-pooling-in-your-ole-db-application"></a>OLE DB 응용 프로그램의 리소스 풀링
 
@@ -26,6 +26,6 @@ OLE DB 서비스는 연결 시 그려지는 풀을 확인 하는 `Initialize` �
 
 마지막으로, ADO 자동으로 사용 하므로 OLE DB 서비스에 연결 하려면 ADO를 사용 하 고 풀링 및 인 리스트 먼 트 자동으로 수행 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 리소스 풀링 및 서비스](../../data/oledb/ole-db-resource-pooling-and-services.md)

@@ -105,10 +105,10 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
 ms.openlocfilehash: 43eb171ce9b3ea3454855dc1f92d9aa1b74645d4
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58778457"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Class
@@ -310,7 +310,7 @@ BOOL Create(
 
 ### <a name="parameters"></a>매개 변수
 
-*style*<br/>
+*스타일*<br/>
 [in] 스타일 탭 컨트롤입니다. 자세한 내용은 설명 부분을 참조하세요.
 
 *rect*<br/>
@@ -322,7 +322,7 @@ BOOL Create(
 *nID*<br/>
 [in] 탭 컨트롤의 ID입니다.
 
-*location*<br/>
+*위치*<br/>
 [in] 탭의 위치입니다. 기본값은 LOCATION_BOTTOM 합니다. 자세한 내용은 설명 부분을 참조하세요.
 
 *bCloseBtn*<br/>
@@ -835,7 +835,7 @@ BOOL ModifyTabStyle(Style style);
 
 ### <a name="parameters"></a>매개 변수
 
-*style*<br/>
+*스타일*<br/>
 [in] 탭 컨트롤의 모양을 지정 하는 열거형 값 중 하나입니다. 자세한 내용은 주의 있는 표를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
@@ -876,7 +876,7 @@ virtual DROPEFFECT OnDragEnter(
 *dwKeyState*<br/>
 [in] 보조키의 상태를 포함합니다. 이 매개 변수는 다음 값의 비트 조합 (OR): MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다. 자세한 내용은 참조는 **메시지 매개 변수** 부분 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.
 
-*point*<br/>
+*지점*<br/>
 [in] 클라이언트 좌표에서 커서의 현재 위치를 포함합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -908,7 +908,7 @@ virtual DROPEFFECT OnDragOver(
 *dwKeyState*<br/>
 [in] MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON의 비트 조합 (OR)는 보조 키의 상태입니다. 자세한 내용은 "메시지 Parameters"를 참조 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.
 
-*point*<br/>
+*지점*<br/>
 [in] 현재 마우스 위치입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -929,7 +929,7 @@ virtual void OnShowTabDocumentsMenu(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*point*<br/>
+*지점*<br/>
 [in] 팝업 메뉴를 표시할 위치의 좌표입니다.
 
 ### <a name="remarks"></a>설명
@@ -1111,7 +1111,7 @@ void StopResize(BOOL bCancel);
 
 ### <a name="parameters"></a>매개 변수
 
-*bCancel*<br/>
+*b 취소*<br/>
 [in] 현재 크기 조정 작업을 중단 하려면 TRUE 현재 조정 작업을 완료 하려는 경우 FALSE. 두 경우 모두 프레임 워크는 크기 조정 사각형을 그리기를 중지 합니다.
 
 ##  <a name="synchronizescrollbar"></a>  CMFCTabCtrl::SynchronizeScrollBar
@@ -1141,4 +1141,4 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
 [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
-[CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md)
+[CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md)

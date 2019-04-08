@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CMFCOutlookBar [MFC], SetButtonsFont
 - CMFCOutlookBar [MFC], SetMode2003
 ms.assetid: 2b335f71-ce99-4efd-b103-e65ba43ffc36
-ms.openlocfilehash: be11bcd4cdbcd8448cc54f688d7dab9b61f49a57
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: fc1281db0271393ec0538e26c2a2d2af09c99f7a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304082"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58775259"
 ---
 # <a name="cmfcoutlookbar-class"></a>CMFCOutlookBar 클래스
 
@@ -89,14 +89,13 @@ class CMFCOutlookBar : public CBaseTabbedPane
 
 ## <a name="remarks"></a>설명
 
-Outlook 표시줄의 예 참조는 [OutlookDemo 샘플: MFC OutlookDemo 응용 프로그램](../../visual-cpp-samples.md)합니다.
+Outlook 표시줄의 예 참조는 [OutlookDemo 샘플: MFC OutlookDemo 응용 프로그램](../../overview/visual-cpp-samples.md)합니다.
 
 ## <a name="implementing-the-outlook-bar"></a>Outlook 표시줄 구현
 
 응용 프로그램에서 `CMFCOutlookBar` 컨트롤을 사용하려면 다음 단계를 수행합니다.
 
-1. 
-  `CMFCOutlookBar` 개체를 주 프레임 창 클래스에 포함합니다.
+1. `CMFCOutlookBar` 개체를 주 프레임 창 클래스에 포함합니다.
 
     ```cpp
     class CMainFrame : public CMDIFrameWnd
@@ -295,7 +294,7 @@ virtual BOOL Create(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 메서드는 `CMFCOutlookBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [Outlook 다중 뷰 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 메서드는 `CMFCOutlookBar` 클래스입니다. 이 코드 조각은의 일부인 합니다 [Outlook 다중 뷰 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_OutlookMultiViews#1](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_1.h)]
 [!code-cpp[NVC_MFC_OutlookMultiViews#2](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_2.cpp)]
@@ -579,5 +578,5 @@ void SetMode2003(BOOL bMode2003=TRUE);
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CBaseTabbedPane 클래스](../../mfc/reference/cbasetabbedpane-class.md)<br/>
-[CMFCOutlookBarTabCtrl 클래스](../../mfc/reference/cmfcoutlookbartabctrl-class.md)<br/>
+[CMFCOutlookBarTabCtrl Class](../../mfc/reference/cmfcoutlookbartabctrl-class.md)<br/>
 [CMFCOutlookBarPane 클래스](../../mfc/reference/cmfcoutlookbarpane-class.md)

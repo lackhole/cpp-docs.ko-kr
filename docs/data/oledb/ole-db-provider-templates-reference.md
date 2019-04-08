@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - OLE DB provider templates
 ms.assetid: 518358f0-bab1-4de9-bce9-4062cc87c11f
-ms.openlocfilehash: 7c4088d676406c855ed910a4aad35c62a6957333
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: e1d6be9687085361edd9141d8fb471e21b6f6376
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420104"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038679"
 ---
 # <a name="ole-db-provider-templates-reference"></a>OLE DB 공급자 템플릿 참조
 
@@ -111,7 +111,7 @@ OLE DB 구현 [IRowsetUpdate](/previous-versions/windows/desktop/ms714401(v=vs.8
 
 OLE DB 구현 [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) 인터페이스 레코드를 추가 하 고 데이터 멤버에서 레코드를 검색 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [OLE DB 템플릿](../../data/oledb/ole-db-templates.md)

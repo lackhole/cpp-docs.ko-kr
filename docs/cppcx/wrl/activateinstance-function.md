@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ActivateInstance function
 ms.assetid: 8cfd1dd9-5fda-4cc2-acf8-d40e783b3875
-ms.openlocfilehash: 4525ee74bc63a9655e7f1142fb1b2b6812d82bb6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 43aa34153f0e71dd665090243ff2288bff704404
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785018"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029082"
 ---
 # <a name="activateinstance-function"></a>ActivateInstance 함수
 
@@ -37,7 +37,7 @@ inline HRESULT ActivateInstance(
 *activatableClassId*<br/>
 매개 변수를 정의 하는 클래스 ID의 이름을 *T*합니다.
 
-*instance*<br/>
+*인스턴스*<br/>
 이 작업이 완료 될 때, 인스턴스에 대 한 참조 *T*합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -50,6 +50,6 @@ inline HRESULT ActivateInstance(
 
 **네임스페이스:** Windows::Foundation
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows::Foundation 네임스페이스](windows-foundation-namespace.md)

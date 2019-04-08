@@ -14,12 +14,12 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-ms.openlocfilehash: 7ef8127b829b60d84af72874292c33ae1c7c4636
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: b0f780b122b147d633d5d7cd949da805d267f757
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58327583"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033377"
 ---
 # <a name="file-types-created-for-visual-studio-c-projects"></a>Visual Studio c + + 프로젝트용으로 만들어지는 파일 형식
 
@@ -91,7 +91,7 @@ Visual Studio와 관련된 다른 파일에 대한 자세한 내용은 [Visual S
 
 프로젝트에 항목을 추가하면 항목을 빌드할 수 있는지 여부에 상관없이 해당 프로젝트의 모든 구성에 항목이 추가됩니다. 예를 들어 MyProject라는 프로젝트가 있는 경우 항목을 추가하면 디버그 및 릴리스 프로젝트 구성 둘 다에 항목이 추가됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual Studio c + + 프로젝트 만들기 및 관리](../creating-and-managing-visual-cpp-projects.md)<br>
 [Visual Studio c + + 프로젝트 형식](visual-cpp-project-types.md)<br>
