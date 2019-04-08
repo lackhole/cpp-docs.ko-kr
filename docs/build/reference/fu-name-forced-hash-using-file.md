@@ -34,16 +34,16 @@ ms.locfileid: "57807522"
 
 /FU 스위치는 파일 이름을 하나만 사용합니다. 여러 파일을 지정하려면 각 항목에 대해 /FU를 사용합니다.
 
-사용할 C + + CLI 및 메타 데이터를 사용 하 여 참조 되는 [Friend 어셈블리](../../dotnet/friend-assemblies-cpp.md) 기능을 사용할 수 없습니다 **/FU**합니다. 
-  `#using` 특성과 함께 `[as friend]`을 사용해서 코드에서 메타데이터를 참조해야 합니다. Friend 어셈블리는 Visual c + + 구성 요소 확장의 C +에서 지원 되지 않는 + CX 합니다.
+사용할 C++ CLI 및 메타 데이터를 사용 하 여 참조 되는 [Friend 어셈블리](../../dotnet/friend-assemblies-cpp.md) 기능을 사용할 수 없습니다 **/FU**합니다. 
+  `#using` 특성과 함께 `[as friend]`을 사용해서 코드에서 메타데이터를 참조해야 합니다. Friend 어셈블리는 Visual C++ 구성 요소 확장의 C +에서 지원 되지 않는 + CX 합니다.
 
 어셈블리 또는 CLR (공용 언어 런타임)에 대 한 모듈을 만드는 방법에 대 한 정보를 참조 하세요 [/clr (공용 언어 런타임 컴파일)](clr-common-language-runtime-compilation.md)합니다. C + 빌드하는 방법에 대 한 자세한 + /CX를 참조 하세요 [앱 및 라이브러리 빌드](../../cppcx/building-apps-and-libraries-c-cx.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **고급** 속성 페이지.
+1. 선택 된 **구성 속성** > **C/C++** > **고급** 속성 페이지.
 
 1. 수정 된 **강제 #using** 속성입니다.
 
