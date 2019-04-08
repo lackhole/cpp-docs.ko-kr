@@ -143,12 +143,12 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-ms.openlocfilehash: 9ebc23545817de0f249185700454237c66610c13
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.openlocfilehash: 9dcc0922f3715d1e583605a071535f51fa8b2f57
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678356"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032455"
 ---
 # <a name="predefined-macros"></a>미리 정의된 매크로
 
@@ -362,7 +362,7 @@ Microsoft Visual c + +는 이러한 추가 미리 정의 된 매크로 지원합
 
 - **&#95;MSC&#95;VER** 컴파일러의 버전 번호의 주 및 부 번호 요소를 인코딩하는 정수 리터럴 정의 합니다. 주 번호는 마침표로 구분 된 버전 번호의 첫 번째 요소 및 부 번호는 두 번째 요소입니다. 예를 들어, Visual c + + 컴파일러의 버전 번호가 17.00.51106.1 경우 합니다  **&#95;MSC&#95;VER** 1700 매크로 평가 합니다. 입력 `cl /?` 컴파일러의 버전 번호를 보려면 명령줄에서. 이 매크로 항상 정의 됩니다.
 
-   |Visual Studio 버전|&AMP;#95;MSC&AMP;#95;VER|
+   |Visual Studio 버전|&#95;MSC&#95;VER|
    |-|-|
    |Visual Studio 6.0|1200|
    |Visual Studio.NET 2002 (7.0)|1300|
@@ -420,7 +420,7 @@ Microsoft Visual c + +는 이러한 추가 미리 정의 된 매크로 지원합
 
 - **&#95;VC&#95;NODEFAULTLIB** 하면 1로 정의 된 [/Zl (기본 라이브러리 이름 생략)](../build/reference/zl-omit-default-library-name.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다.
 
-- **&#95;WCHAR&#95;T&#95;정의** 하면 1로 정의 된 기본값 [/zc: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 컴파일러 옵션을 설정 합니다. **&#95;WCHAR&#95;T&#95;정의** 매크로 정의 되어 있지만 값이 없는 경우는 `/Zc:wchar_t-` 컴파일러 옵션을 설정 하 고 **wchar_t** 에 포함 된 시스템 헤더 파일에 정의 된 사용자 프로젝트입니다. 그렇지 않으면 정의 되지 않았습니다.
+- **&#95;WCHAR&#95;T&#95;정의** 하면 1로 정의 된 기본값 [/zc: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 컴파일러 옵션을 설정 합니다.  **&#95;WCHAR&#95;T&#95;정의** 매크로 정의 되어 있지만 값이 없는 경우는 `/Zc:wchar_t-` 컴파일러 옵션을 설정 하 고 **wchar_t** 에 포함 된 시스템 헤더 파일에 정의 된 사용자 프로젝트입니다. 그렇지 않으면 정의 되지 않았습니다.
 
 - **&#95;WIN32** x64 또는 컴파일 대상 32 비트 ARM, 64 비트 ARM, x86, 경우에 1로 정의 합니다. 그렇지 않으면 정의 되지 않았습니다.
 
@@ -434,8 +434,8 @@ ATL 또는 MFC 라이브러리 버전을 확인 하는 데 사용 되는 전처�
 
 - **&#95;MFC&#95;VER** 에 정의 된 \<afxver_.h > MFC 버전 번호를 인코딩하는 정수 리터럴.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[매크로(C/C++)](../preprocessor/macros-c-cpp.md)<br/>
-[전처리기 연산자](../preprocessor/preprocessor-operators.md)<br/>
+[매크로 (C/C++)](../preprocessor/macros-c-cpp.md)<br/>
+[전처리 연산자](../preprocessor/preprocessor-operators.md)<br/>
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)

@@ -1,5 +1,5 @@
 ---
-title: 번째 레코드 집합에서 목록 상자 채우기  (MFC Data Access)
+title: " 번째 레코드 집합에서 목록 상자 채우기  (MFC Data Access)"
 ms.date: 11/04/2016
 helpviewer_keywords:
 - record views, filling list boxes
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - combo boxes [C++], filling from second recordset
 - CListCtrl class, filling from second recordset
 ms.assetid: 360c0834-da6b-4dc0-bcea-80e9acd611f0
-ms.openlocfilehash: 7963d820848704921c40d5dc95a6f6d9c766d2be
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9428f8a59dca021a1bd0e00a7970f4d19bab46be
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588203"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030505"
 ---
-# <a name="filling-a-list-box-from-a-second-recordset--mfc-data-access"></a>번째 레코드 집합에서 목록 상자 채우기  (MFC Data Access)
+# <a name="filling-a-list-box-from-a-second-recordset--mfc-data-access"></a> 번째 레코드 집합에서 목록 상자 채우기  (MFC Data Access)
 
 기본적으로 레코드 뷰는 해당 필드가 레코드 뷰의 컨트롤로 매핑되는 단일 레코드 집합 개체와 연결됩니다. 레코드 뷰에 목록 상자 또는 콤보 상자 컨트롤을 삽입하고 두 번째 레코드 집합 개체의 값을 채우는 경우가 있습니다. 이때 사용자는 목록 상자를 사용하여 레코드 뷰에 표시할 새 정보 범주를 선택할 수 있습니다. 이 항목에서는 이러한 작업을 수행하는 방법과 시기에 대해 설명합니다.
 
@@ -68,7 +68,7 @@ void CSectionForm::OnInitialUpdate()
 
 함수는 문서에서 `m_courseSet`를 가져와서 엽니다. 그런 다음 `m_ctlCourseList`를 비우고 `m_courseSet`를 스크롤합니다. 그리고 각 레코드에 대해 콤보 상자의 `AddString` 멤버 함수를 호출하여 레코드의 과정 ID 값을 추가합니다. 마지막으로 코드가 콤보 상자의 선택 항목을 설정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[레코드 뷰(MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
+[레코드 뷰  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC 드라이버 목록](../data/odbc/odbc-driver-list.md)
