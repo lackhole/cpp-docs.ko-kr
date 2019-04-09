@@ -73,12 +73,12 @@ helpviewer_keywords:
 - CMFCRibbonEdit [MFC], SetTextAlign
 - CMFCRibbonEdit [MFC], SetWidth
 ms.assetid: 9b85f1f2-446b-454e-9af9-104fdad8a897
-ms.openlocfilehash: e1a8f601c9f5798494ee34d3c3987222c14ecfa7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 80ee43ae32416f9f62df419c4afbd46a0aa63cc8
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292193"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58780485"
 ---
 # <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit 클래스
 
@@ -140,7 +140,7 @@ class CMFCRibbonEdit : public CMFCRibbonButton
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 생성 하는 방법에 설명 된 `CMFCRibbonEdit` 개체 편집 컨트롤 옆에 있는 스핀 단추를 표시 하 고 편집 컨트롤의 텍스트를 설정 합니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 생성 하는 방법에 설명 된 `CMFCRibbonEdit` 개체 편집 컨트롤 옆에 있는 스핀 단추를 표시 하 고 편집 컨트롤의 텍스트를 설정 합니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#7](../../mfc/reference/codesnippet/cpp/cmfcribbonedit-class_1.cpp)]
 

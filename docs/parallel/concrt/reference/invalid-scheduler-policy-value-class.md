@@ -29,8 +29,7 @@ class invalid_scheduler_policy_value : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[invalid_scheduler_policy_value](invalid-scheduler-policy-thread-specification-class.md#ctor|오버로드됨. 
-  `invalid_scheduler_policy_value` 개체를 생성합니다.|
+|[invalid_scheduler_policy_value](invalid-scheduler-policy-thread-specification-class.md#ctor|오버로드됨. `invalid_scheduler_policy_value` 개체를 생성합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -46,8 +45,7 @@ class invalid_scheduler_policy_value : public std::exception;
 
 ##  <a name="ctor"></a> invalid_scheduler_policy_value
 
-
-  `invalid_scheduler_policy_value` 개체를 생성합니다.
+`invalid_scheduler_policy_value` 개체를 생성합니다.
 
 ```
 explicit _CRTIMP invalid_scheduler_policy_value(_In_z_ const char* _Message) throw();

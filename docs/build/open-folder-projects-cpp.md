@@ -4,12 +4,12 @@ ms.date: 03/21/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual C++
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 2dedd56759b6bb49260221e22218da6f4300a970
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.openlocfilehash: 380a96bcb1a119b2b6d4104d60936217d1350fbb
+ms.sourcegitcommit: 35c4b3478f8cc310ebbd932a18963ad8ab846ed9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356090"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59237135"
 ---
 # <a name="open-folder-projects-for-c"></a>C++의 폴더 열기 프로젝트
 
@@ -64,7 +64,7 @@ IntelliSense 및 검색 동작은 #include 경로, 컴파일러 스위치 및 �
 
 ![폴더 열기 구성 작업](media/open-folder-config-tasks.png)
 
-이 만듭니다 (또는 열립니다)는 **tasks.vs.json** Visual Studio 루트 프로젝트 폴더에 만드는.vs 폴더의 파일입니다. 이 파일에서 임의의 작업을 정의한 다음, 상황에 맞는 **솔루션 탐색기** 메뉴에서 호출할 수 있습니다. 다음 예제에서는 단일 작업을 정의하는 tasks.vs.json 파일을 보여 줍니다. `taskName`은 상황에 맞는 메뉴에 표시되는 이름을 정의합니다. `appliesTo`는 명령을 수행할 수 있는 파일을 정의합니다. `command` 속성은 콘솔에 대한 경로(Windows의 경우 cmd.exe)를 식별하는 COMSPEC 환경 변수를 참조합니다. CppProperties.json 또는 CMakeSettings.json에 선언된 환경 변수를 참조할 수도 있습니다. `args` 속성은 호출할 명령줄을 지정합니다. `${file}` 매크로는 **솔루션 탐색기**에서 선택한 파일을 검색합니다. 다음 예제에서는 현재 선택된 .cpp 파일의 파일 이름을 표시합니다.
+이 만듭니다 (또는 열립니다)는 **tasks.vs.json** Visual Studio 루트 프로젝트 폴더에 만드는.vs 폴더의 파일입니다. 이 파일에서 임의의 작업을 정의한 다음, 상황에 맞는 **솔루션 탐색기** 메뉴에서 호출할 수 있습니다. 다음 예제에서는 단일 작업을 정의하는 tasks.vs.json 파일을 보여 줍니다. `taskName` 상황에 맞는 메뉴에 표시 되는 이름을 정의 합니다. `appliesTo` 명령에서 수행할 수 있는 파일을 정의 합니다. `command` 속성은 콘솔에 대한 경로(Windows의 경우 cmd.exe)를 식별하는 COMSPEC 환경 변수를 참조합니다. CppProperties.json 또는 CMakeSettings.json에 선언된 환경 변수를 참조할 수도 있습니다. `args` 속성은 호출할 명령줄을 지정합니다. `${file}` 매크로는 **솔루션 탐색기**에서 선택한 파일을 검색합니다. 다음 예제에서는 현재 선택된 .cpp 파일의 파일 이름을 표시합니다.
 
 ```json
 {
@@ -107,7 +107,3 @@ tasks.vs.json이 저장되면 폴더의 .cpp 파일을 마우스 오른쪽 단�
 ```
 
 이 파일을 저장하면 [디버그 대상] 드롭다운에 새 구성이 표시되고 이 구성을 선택하여 디버거를 시작할 수 있습니다. 실행 파일의 개수에 관계없이 원하는 만큼 많은 수의 디버그 구성을 만들 수 있습니다. 이제 **F5** 키를 누르면 디버거가 시작되고 이미 설정한 모든 중단점에 적중됩니다. 그리고 친숙한 모든 디버거 창과 해당 기능을 사용할 수 있습니다.
-
-## <a name="see-also"></a>참고자료
-
-
