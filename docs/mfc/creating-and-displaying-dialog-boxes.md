@@ -23,10 +23,8 @@ ms.locfileid: "57302319"
 
 |대화 상자 형식|대화 상자를 만드는 방법|
 |-----------------|----------------------|
-|[모덜리스](../mfc/creating-modeless-dialog-boxes.md)|
-  `CDialog`를 구성한 다음 `Create` 멤버 함수를 호출합니다.|
-|[Modal](../mfc/creating-modal-dialog-boxes.md)|
-  `CDialog`를 구성한 다음 `DoModal` 멤버 함수를 호출합니다.|
+|[모덜리스](../mfc/creating-modeless-dialog-boxes.md)|`CDialog`를 구성한 다음 `Create` 멤버 함수를 호출합니다.|
+|[Modal](../mfc/creating-modal-dialog-boxes.md)|`CDialog`를 구성한 다음 `DoModal` 멤버 함수를 호출합니다.|
 
 만들 수 있습니다 원한다 면에서 대화 상자는 [메모리 내 대화 상자 템플릿](../mfc/using-a-dialog-template-in-memory.md) 생성 하는 대신 대화 상자 템플릿 리소스에서. 그러나 이는 고급 항목입니다.
 
