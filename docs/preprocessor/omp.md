@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, omp
 - omp pragma
 ms.assetid: 652414c5-78ed-4b7f-8283-1a9fe4c5e78d
-ms.openlocfilehash: 691c3095c2a9312885f8cf4f89e35e2e9696a7b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8dda3b8df18772a328e56fb7347a746325c4cdec
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502832"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032026"
 ---
 # <a name="omp"></a>omp
 모든 선택적 지시문 절과 함께 하나 이상의 OpenMP 지시문을 사용합니다.
@@ -28,6 +28,6 @@ ms.locfileid: "50502832"
 
 참조 [OpenMP 지시문](../parallel/openmp/reference/openmp-directives.md) 자세한 내용은 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

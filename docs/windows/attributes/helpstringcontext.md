@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - helpstringcontext attribute [C++]
 ms.assetid: d4cd135e-d91c-4aa3-9353-8aeb096f52cf
-ms.openlocfilehash: d292dd53ff3009a571dd5b0a1ba102e75b648e4d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6df5b63291fbc54d6c12a116fccd8372e8ced9a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533603"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026112"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 
@@ -25,7 +25,7 @@ ms.locfileid: "50533603"
 
 ### <a name="parameters"></a>매개 변수
 
-*컨텍스트 Id*<br/>
+*contextID*<br/>
 32 비트 도움말 컨텍스트 식별자에는 **도움말** 파일입니다.
 
 ## <a name="remarks"></a>설명
@@ -61,10 +61,10 @@ __interface IMyI
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [인터페이스 특성](interface-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>
-[module](module-cpp.md)
+[name](module-cpp.md)

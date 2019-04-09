@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 레코드 집합 매개 변수화(ODBC)'
+title: '레코드 집합: 레코드 집합 (ODBC)를 매개 변수화'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - parameterizing recordsets
@@ -7,16 +7,16 @@ helpviewer_keywords:
 - recordsets, parameterizing
 - passing parameters, to queries at runtime
 ms.assetid: 7d1dfeb6-5ee0-45e2-aacc-63bc52a465cd
-ms.openlocfilehash: f58a33a0c43cb0d70d98f3f2ae33f766058b1c23
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: df67256c54cae3e2adb054d653d3e58bb91dd631
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331271"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026164"
 ---
-# <a name="recordset-parameterizing-a-recordset-odbc"></a>레코드 집합: 레코드 집합 매개 변수화(ODBC)
+# <a name="recordset-parameterizing-a-recordset-odbc"></a>레코드 집합: 레코드 집합 (ODBC)를 매개 변수화
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 하려는 경우가 있습니다 수 런타임에 레코드를 선택할 수 계산 하거나 최종 사용자에서 가져온 정보를 사용 하 여 합니다. 레코드 집합 매개 변수를 통해 목표를 달성할 수 있습니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "51331271"
 
 - 미리 정의 된 쿼리를 런타임 인수를 전달합니다.
 
-   저장된 프로시저에 매개 변수를 전달할 전체 사용자 지정 ODBC를 지정 해야 합니다 **호출** 문-매개 변수 자리 표시자를 사용 하 여-호출 하는 경우 `Open`, 레코드 집합의 기본 SQL 문을 재정의 합니다. 자세한 내용은 [crecordset:: Open](../../mfc/reference/crecordset-class.md#open) 에 *클래스 라이브러리 참조* 하 고 [SQL: 사용자 지정 레코드 집합의 SQL 문 (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md) 및 [ 레코드 집합: 미리 정의 된 쿼리 (ODBC)에 대 한 클래스 선언](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)합니다.
+   저장된 프로시저에 매개 변수를 전달할 전체 사용자 지정 ODBC를 지정 해야 합니다 **호출** 문-매개 변수 자리 표시자를 사용 하 여-호출 하는 경우 `Open`, 레코드 집합의 기본 SQL 문을 재정의 합니다. 자세한 내용은 [crecordset:: Open](../../mfc/reference/crecordset-class.md#open) 에 *클래스 라이브러리 참조* 및 [SQL: 레코드 집합의 SQL 문 (ODBC) 사용자 지정](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md) 고 [레코드 집합: 미리 정의 된 쿼리 (ODBC)에 대 한 클래스 선언](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)합니다.
 
 - 다른 매개 변수 정보를 사용 하 여 다양 한 재쿼리를 효율적으로 수행 합니다.
 
@@ -75,7 +75,7 @@ ms.locfileid: "51331271"
                                        // for some drivers
     ```
 
-   필터 문자열에 따옴표를 올바르게 사용 하는 방법의 논의 참조 하세요 [레코드 집합: 레코드 필터링 (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)합니다.
+   필터 문자열에 따옴표를 올바르게 사용 하는 방법의 자세한 내용은 참조 하세요. [레코드 집합: 레코드 필터링 (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)합니다.
 
    매개 변수 값이 다르면 새로운 학생 id 레코드 집합 다시 쿼리 해도 될 때마다
 
@@ -87,7 +87,7 @@ ms.locfileid: "51331271"
 ##  <a name="_core_parameterizing_your_recordset_class"></a> 레코드 집합 클래스를 매개 변수화
 
 > [!NOTE]
-> 이 섹션에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현 하는 매개 변수를 사용 하는 경우에 유사한 프로세스가입니다. 자세한 내용은 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+> 이 섹션에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현 하는 매개 변수를 사용 하는 경우에 유사한 프로세스가입니다. 자세한 내용은 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 레코드 집합 클래스를 만들기 전에 필요한 매개 변수, 해당 데이터 형식 이란, 및 레코드 집합을 사용 하는 방법을 결정 합니다.
 
@@ -123,7 +123,7 @@ ms.locfileid: "51331271"
 
 1. 레코드 집합 클래스의 생성자에서 매개 변수 개수를 증가 `m_nParams`합니다.
 
-   정보를 참조 하세요 [레코드 필드 교환: 마법사 코드 사용](../../data/odbc/record-field-exchange-working-with-the-wizard-code.md)합니다.
+   내용은 [레코드 필드 교환: 마법사 코드 사용](../../data/odbc/record-field-exchange-working-with-the-wizard-code.md)합니다.
 
 1. 이 클래스의 레코드 집합 개체를 만드는 코드를 작성 하는 경우는 "?" 교체 매개 변수가 있는 SQL 문 문자열의 각 위치에서 기호 (물음표)입니다.
 
@@ -173,8 +173,8 @@ if( !rsStudents.Requery( ) )
 > [!NOTE]
 >  필요한 경우 매개 변수 데이터 멤버의 값을 Null로 설정할 수 있습니다 사용 하 여 [SetParamNull](../../mfc/reference/crecordset-class.md#setparamnull)합니다. 매개 변수 데이터 멤버인 Null 인지 확인할 마찬가지로 있습니다를 사용 하 여 [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 레코드 추가, 업데이트 및 삭제(ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>
-[레코드 집합: 레코드 집합의 레코드 선택 방법(ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)
+[레코드 집합: 추가, 업데이트 및 삭제할 레코드 (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>
+[레코드 집합: 레코드 집합 선택 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)

@@ -4,12 +4,12 @@ ms.date: 10/13/2018
 helpviewer_keywords:
 - OLE DB providers, reading strings into
 ms.assetid: 517f322c-f37e-4eed-bf5e-dd9a412c2f98
-ms.openlocfilehash: 19fc7b16695ebeff35462aaa2c451ff6459bb7b6
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: d46b4e1a53e7e489763f40e7a5238e65b493f7c8
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57425226"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027430"
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>OLE DB 공급자로 문자열 읽어들이기
 
@@ -95,6 +95,6 @@ public:
 
 공급자를 성공적으로 테스트 하는 경우에 추가 인터페이스를 구현 하 여 해당 기능을 개선 하는 것이 좋습니다. 예제에 표시 됩니다 [간단한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [단순한 읽기 전용 공급자 구현](../../data/oledb/implementing-the-simple-read-only-provider.md)<br/>

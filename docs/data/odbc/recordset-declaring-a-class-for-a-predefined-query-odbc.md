@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 미리 정의된 쿼리에 대한 클래스 선언(ODBC)'
+title: '레코드 집합: 미리 정의 된 쿼리 (ODBC)에 대 한 클래스 선언'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC recordsets, queries
@@ -8,21 +8,21 @@ helpviewer_keywords:
 - recordsets, predefined queries
 - recordsets, stored procedures
 ms.assetid: d27c4df9-dad2-4484-ba72-92ab0c8ff928
-ms.openlocfilehash: e83bf2ecb24a9abfd8dc9800a3a10d2d65025336
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4ae9f21c4bd53a8050d6f8c3765bb9823d077ba
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611265"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026529"
 ---
-# <a name="recordset-declaring-a-class-for-a-predefined-query-odbc"></a>레코드 집합: 미리 정의된 쿼리에 대한 클래스 선언(ODBC)
+# <a name="recordset-declaring-a-class-for-a-predefined-query-odbc"></a>레코드 집합: 미리 정의 된 쿼리 (ODBC)에 대 한 클래스 선언
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 이 항목에서는 (Microsoft SQL Server와 같이 저장된 프로시저를 라고도 함)는 미리 정의 된 쿼리에 대 한 레코드 집합 클래스를 만드는 방법에 설명 합니다.
 
 > [!NOTE]
->  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현 하는 경우 프로세스 매우 비슷합니다. 대량 행 페치를 구현 하는 레코드 집합 및 하지 않는 차이점을 이해 하려면 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+>  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현 하는 경우 프로세스 매우 비슷합니다. 대량 행 페치를 구현 하는 레코드 집합 및 하지 않는 차이점을 이해 하려면 [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 일부 Dbms (데이터베이스 관리 시스템)를 사용 하면 미리 정의 된 쿼리를 만들고 함수 처럼 프로그램에서 호출할 수 있습니다. 쿼리 이름이, 매개 변수를 사용할 수 있습니다 및 레코드를 반환할 수 있습니다. 이 항목의 절차에는 레코드를 반환 합니다 (및 매개 변수를 받기도) 하는 미리 정의 된 쿼리를 호출 하는 방법을 설명 합니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "50611265"
 
 1. 쿼리 매개 변수를 사용할 경우 각 매개 변수, 각각에 대해 RFX 함수 호출 및 각 초기화에 대 한 매개 변수 데이터 멤버를 추가 합니다.
 
-1. 값을 증가 시켜야 `m_nParams` 수행한 것 처럼 각 매개 변수를 추가 `m_nFields` 에 대 한이 절차의 4 단계에서 필드를 추가 합니다. 자세한 내용은 [레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
+1. 값을 증가 시켜야 `m_nParams` 수행한 것 처럼 각 매개 변수를 추가 `m_nFields` 에 대 한이 절차의 4 단계에서 필드를 추가 합니다. 자세한 내용은 참조 하세요. [레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)합니다.
 
 1. 다음 양식 사용 하 여 SQL 문을 문자열을 수동으로 작성 합니다.
 
@@ -150,9 +150,9 @@ if( rsDel.Open( CRecordset::snapshot, strSQL ) )
 > [!TIP]
 >  저장된 프로시저에서 반환 된 값 (출력 매개 변수)를 처리할 수도 있습니다. 자세한 내용 및 예제를 참조 하세요 [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 레코드 집합 다시 쿼리(ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)<br/>
-[레코드 집합: 테이블에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
-[레코드 집합: 조인 수행(ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)
+[레코드 집합: (ODBC) 레코드 집합 다시 쿼리](../../data/odbc/recordset-requerying-a-recordset-odbc.md)<br/>
+[레코드 집합: 테이블 (ODBC)에 대 한 클래스 선언](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[레코드 집합: 조인 수행 (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)

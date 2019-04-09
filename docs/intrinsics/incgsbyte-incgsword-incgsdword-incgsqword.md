@@ -16,12 +16,12 @@ helpviewer_keywords:
 - __incgsqword intrinsic
 - __incgsdword intrinsic
 ms.assetid: 06bfdf4f-7643-4fe0-8455-60ce3068073e
-ms.openlocfilehash: c0fb12a56a8c6e0220818d54ee5ec7413fe56b43
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: 3b96fbdb343fa40b6615ac7f91f83099a294624c
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220259"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023349"
 ---
 # <a name="incgsbyte-incgsword-incgsdword-incgsqword"></a>__incgsbyte, __incgsword, __incgsdword, __incgsqword
 
@@ -48,7 +48,7 @@ void __incgsqword(
 
 #### <a name="parameters"></a>매개 변수
 
-*Offset*<br/>
+*오프셋*<br/>
 [in] 시작 부분 으로부터의 오프셋 `GS`합니다.
 
 ## <a name="requirements"></a>요구 사항
@@ -66,7 +66,7 @@ void __incgsqword(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [__addgsbyte, \__addgsword, \__addgsdword, \__addgsqword](../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md)<br/>
 [__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>

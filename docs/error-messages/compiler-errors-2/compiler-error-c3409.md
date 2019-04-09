@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3409
 ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
-ms.openlocfilehash: a4d9271153618fab47a8b5b9cb11b2a5eed35230
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 24f107e0c1f74f95afc521c8a4c888a26a35c13a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58769305"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033763"
 ---
 # <a name="compiler-error-c3409"></a>컴파일러 오류 C3409
 
@@ -67,8 +67,8 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[attribute](../../windows/attributes-alphabetical-reference.md)<br/>
+[특성](../../windows/attributes-alphabetical-reference.md)<br/>
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)<br/>
 [람다 식 구문](../../cpp/lambda-expression-syntax.md)

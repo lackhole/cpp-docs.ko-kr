@@ -51,10 +51,10 @@ helpviewer_keywords:
 - CList [MFC], SetAt
 ms.assetid: 6f6273c3-c8f6-47f5-ac2a-0a950379ae5d
 ms.openlocfilehash: 383222e4892bccc653f010ce4939bca23f2adc93
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58780953"
 ---
 # <a name="clist-class"></a>CList 클래스
@@ -291,7 +291,7 @@ const TYPE& GetAt(POSITION position) const;
 *TYPE*<br/>
 템플릿 매개 변수를 목록에서 개체의 형식을 지정 합니다.
 
-*position*<br/>
+*위치*<br/>
 목록에서 가져올 요소의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -515,7 +515,7 @@ POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>매개 변수
 
-*position*<br/>
+*위치*<br/>
 이전 반환한 위치 값 `GetNext`, `GetPrev`, 또는 `Find` 멤버 함수 호출 합니다.
 
 *ARG_TYPE*<br/>
@@ -542,7 +542,7 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>매개 변수
 
-*position*<br/>
+*위치*<br/>
 이전 반환한 위치 값 `GetNext`, `GetPrev`, 또는 `Find` 멤버 함수 호출 합니다.
 
 *ARG_TYPE*<br/>
@@ -605,7 +605,7 @@ void RemoveAt(POSITION position);
 
 ### <a name="parameters"></a>매개 변수
 
-*position*<br/>
+*위치*<br/>
 목록에서 제거할 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
@@ -676,7 +676,7 @@ void SetAt(POSITION pos, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*<br/>
+*위치*<br/>
 설정할 요소의 위치입니다.
 
 *ARG_TYPE*<br/>

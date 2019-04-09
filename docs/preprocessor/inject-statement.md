@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - inject_statement attribute
 ms.assetid: 07d6f0f4-d9fb-4e18-aa62-f235f142ff5e
-ms.openlocfilehash: cf7d06eddb5ae6d08f57fb82613d97c7dcc36074
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 237ca796028aad7aff55442eb2806fe400330a29
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566714"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034289"
 ---
 # <a name="injectstatement"></a>inject_statement
 
-**C + + 전용**
+**C++ 전용**
 
 소스 텍스트로서 인수를 형식 라이브러리 헤더에 삽입합니다.
 
@@ -34,9 +34,9 @@ inject_statement("source_text")
 
 헤더 파일의 형식 라이브러리 내용을 래핑하는 네임스페이스 선언의 시작 부분에 텍스트가 배치됩니다.
 
-**C + + 전용 종료**
+**C++ 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import 지시문](../preprocessor/hash-import-directive-cpp.md)

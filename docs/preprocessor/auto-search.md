@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - auto_search attribute
 ms.assetid: 0fee2503-cd28-4d8c-b4d5-15ca0a91d2d2
-ms.openlocfilehash: 54695f54414439349638a62189393c8790512625
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29638afbe42a5c5f1894bc7047d10e05363f494e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631252"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023557"
 ---
 # <a name="autosearch"></a>auto_search
 
-**C + + 전용**
+**C++ 전용**
 
 사용 하 여 형식 라이브러리를 참조할 때 지정 `#import` 컴파일러가 암시적 작업을 수행할 수를 다른 형식 라이브러리 참조 및 `#import` 다른 형식 라이브러리에 대 한 합니다.
 
@@ -27,9 +27,9 @@ auto_search
 
 ## <a name="remarks"></a>설명
 
-**C + + 전용 종료**
+**C++ 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import 지시문](../preprocessor/hash-import-directive-cpp.md)

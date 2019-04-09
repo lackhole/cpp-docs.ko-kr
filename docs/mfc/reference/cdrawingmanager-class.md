@@ -57,10 +57,10 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
 ms.openlocfilehash: 506ab7a06653942ecff05043a7e7efabd535115f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781694"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager 클래스
@@ -159,7 +159,7 @@ static HBITMAP __stdcall CreateBitmap_32(
 |매개 변수|설명|
 |*size*|[in] A [CSize](../../atl-mfc-shared/reference/csize-class.md) 비트맵의 크기를 나타내는 매개 변수입니다.|
 |*pBits*|[out] DIB의 위치를 수신 하는 데이터 포인터에 비트 값입니다.|
-|*bitmap*|원래 비트맵에 대 한 핸들|
+|*비트맵*|원래 비트맵에 대 한 핸들|
 |*clrTransparent*|원래 비트맵의 투명 한 색을 지정 하는 RGB 값입니다.|
 
 ### <a name="return-value"></a>반환 값
@@ -972,7 +972,7 @@ static void __stdcall SetPixel(
 |*cy*|[in] 비트맵의 전체 높이입니다.|
 |*x*|[in] 변경 비트맵의 픽셀의 x 좌표입니다.|
 |*y*|[in] 변경 비트맵의 픽셀의 y 좌표입니다.|
-|*color*|[in] 제공 된 좌표에서 식별 된 픽셀에 대 한 새 색입니다.|
+|*색*|[in] 제공 된 좌표에서 식별 된 픽셀에 대 한 새 색입니다.|
 
 ##  <a name="smartmixcolors"></a>  CDrawingManager::SmartMixColors
 

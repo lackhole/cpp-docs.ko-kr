@@ -10,16 +10,16 @@ helpviewer_keywords:
 - recordsets [C++], transactions
 - ODBC recordsets [C++], transactions
 ms.assetid: a2ec0995-2029-45f2-8092-6efd6f2a77f4
-ms.openlocfilehash: 0deb21a43ff17ca94efe29bdec37db7611331a86
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a151ec5ca2b4bdc19bfa7dc626aebda0740a2c9e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615815"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023672"
 ---
 # <a name="transaction-odbc"></a>트랜잭션(ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 트랜잭션이 그룹 또는 일괄 처리를 일련의 업데이트를 하는 방법은 [데이터 원본](../../data/odbc/data-source-odbc.md) 한 번에 커밋된 모두 또는 트랜잭션을 롤백하는 경우 커밋된 모두가 있도록 합니다. 트랜잭션을 사용 하지 않는 데이터 원본의 변경 내용이 필요할 때 커밋되는 대신 자동으로 커밋됩니다.
 
@@ -29,7 +29,7 @@ ms.locfileid: "50615815"
 에 대 한 호출을 `AddNew` 및 `Edit` 의 멤버 함수는 `CRecordset` 영향을 호출 하는 경우 즉시 데이터 원본 개체 `Update`합니다. `Delete` 호출도 즉시 적용 됩니다. 반면에 대 한 여러 호출로 구성 된 트랜잭션을 사용할 수 있습니다 `AddNew`, `Edit`를 `Update`, 및 `Delete`를 호출할 때까지 커밋되지 않은 수행 되는 `CommitTrans` 명시적으로 합니다. 트랜잭션을 설정 하 여 해당 사용자에 게 롤백할 수 있는 기능을 유지 하면서 일련의 이러한 호출을 실행할 수 있습니다. 중요 한 리소스를 사용할 수 없는 경우 다른 상황으로 인해 완료 되 고 전체 트랜잭션을 롤백할 수 있습니다 트랜잭션을 커밋하는 대신 합니다. 이 경우 데이터 원본에 영향을 트랜잭션에 속하는 변경 내용은 없습니다.
 
 > [!NOTE]
->  현재 클래스 `CRecordset` 대량 행 페치를 구현한 경우 데이터 원본에 대 한 업데이트를 지원 하지 않습니다. 즉, 호출을 만들 수 없습니다 `AddNew`, `Edit`하십시오 `Delete`, 또는 `Update`. 그러나 업데이트를 수행 하 고 다음 지정 된 트랜잭션 내에서 해당 함수를 호출 하려면 함수를 직접 있습니다 것을 작성할 수 있습니다. 대량 행 페치에 대 한 자세한 내용은 참조 하십시오 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+>  현재 클래스 `CRecordset` 대량 행 페치를 구현한 경우 데이터 원본에 대 한 업데이트를 지원 하지 않습니다. 즉, 호출을 만들 수 없습니다 `AddNew`, `Edit`하십시오 `Delete`, 또는 `Update`. 그러나 업데이트를 수행 하 고 다음 지정 된 트랜잭션 내에서 해당 함수를 호출 하려면 함수를 직접 있습니다 것을 작성할 수 있습니다. 대량 행 페치에 대 한 자세한 내용은 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 > [!NOTE]
 >  트랜잭션 레코드 집합에 영향을 미치는 외에도 ODBC를 사용으로 직접 실행 하는 SQL 문에 영향을 **HDBC** 연관 하 `CDatabase` 개체나 ODBC **HSTMT** 기반 **HDBC**합니다.
@@ -43,10 +43,10 @@ ms.locfileid: "50615815"
 
 트랜잭션을 수행 하는 방법에 대 한 자세한 정보를 제공 하는 다음 항목:
 
-- [트랜잭션: 레코드 집합에서 트랜잭션 수행(ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)
+- [트랜잭션: 레코드 집합 (ODBC)에서 트랜잭션 수행](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)
 
-- [트랜잭션: 트랜잭션이 업데이트에 미치는 영향(ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
+- [트랜잭션: 트랜잭션이 업데이트 (ODBC)에 미치는 영향](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

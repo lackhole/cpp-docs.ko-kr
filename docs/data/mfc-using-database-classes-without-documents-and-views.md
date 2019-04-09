@@ -1,5 +1,5 @@
 ---
-title: 'MFC: 문서 및 뷰를 이용하지 않는 데이터베이스 클래스 사용'
+title: 'MFC: 문서 및 뷰 하지 않는 데이터베이스 클래스 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC applications [C++], without views
@@ -17,14 +17,14 @@ helpviewer_keywords:
 - database applications [C++], without documents
 - user interface [C++], drawing information
 ms.assetid: 15bf52d4-91cf-4b1d-8b37-87c3ae70123a
-ms.openlocfilehash: 558917f1a1485f1a886356b3c272842579f6b03e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab9946609fa20c4644873a684a754cbc8a41742f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602217"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024636"
 ---
-# <a name="mfc-using-database-classes-without-documents-and-views"></a>MFC: 문서 및 뷰를 이용하지 않는 데이터베이스 클래스 사용
+# <a name="mfc-using-database-classes-without-documents-and-views"></a>MFC: 문서 및 뷰 하지 않는 데이터베이스 클래스 사용
 
 경우에 따라 데이터베이스 응용 프로그램의 프레임 워크의 문서/뷰 아키텍처를 사용 하지 않을 수 있습니다. 이 항목에 설명 합니다.
 
@@ -59,7 +59,7 @@ MFC 응용 프로그램 마법사 몇 가지 옵션이 **데이터베이스 지�
 |**파일을 지원 하지 않는 데이터베이스 뷰**|파생 `CRecordView`|제공 문서 지원 하지만 serialization 지원 되지 않습니다. 문서는 레코드 집합을 저장 하 고 여러 뷰; 조정 serialization을 지원 하지 않습니다 또는 **새로 만들기**, **열려**를 **저장**, 및 **이름으로 저장** 명령입니다. 참조 [최소한의 문서를 사용 하 여 응용 프로그램](#_core_applications_with_minimal_documents)합니다. 데이터베이스 뷰를 포함 하는 경우 데이터의 원본을 지정 해야 합니다.<br /><br /> 데이터베이스 헤더 파일, 연결 라이브러리, 레코드 보기 및 레코드 집합을 포함합니다. (사용 하 여 응용 프로그램에만 사용할 수는 **문서/뷰 아키텍처 지원** 에서 선택한 옵션을 [MFC 응용 프로그램 마법사, 응용 프로그램 종류](../mfc/reference/application-type-mfc-application-wizard.md) 페이지입니다.)|
 |**파일을 지 원하는 데이터베이스 뷰**|파생 `CRecordView`|Serialization을 비롯 한 전체 문서 지원 제공 및 문서 관련 **파일** 메뉴 명령입니다. 일반적으로 데이터베이스 응용 프로그램 당 파일 별로 등 하지 않아도 serialization 대신 레코드 별로에서 작동 합니다. 그러나 serialization에 대 한 특수 사용을 해야 합니다. 참조 [최소한의 문서를 사용 하 여 응용 프로그램](#_core_applications_with_minimal_documents)합니다. 데이터베이스 뷰를 포함 하는 경우 데이터의 원본을 지정 해야 합니다.<br /><br /> 데이터베이스 헤더 파일, 연결 라이브러리, 레코드 보기 및 레코드 집합을 포함합니다. (사용 하 여 응용 프로그램에만 사용할 수는 **문서/뷰 아키텍처 지원** 에서 선택한 옵션을 [MFC 응용 프로그램 마법사, 응용 프로그램 종류](../mfc/reference/application-type-mfc-application-wizard.md) 페이지입니다.)|
 
-Serialization 및 serialization에 대 한 대체 사용에 대 한 대안의 내용은 참조 하세요. [Serialization: Serialization vs. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)합니다.
+Serialization 및 serialization에 대 한 대체 사용에 대 한 대안의 내용은 참조 하세요. [직렬화 합니다. Serialization vs입니다. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)합니다.
 
 ##  <a name="_core_applications_with_minimal_documents"></a> 최소한의 문서를 사용 하 여 응용 프로그램
 
@@ -81,7 +81,7 @@ MFC 응용 프로그램 마법사에 양식 기반 데이터 액세스 응용 �
 
 ###  <a name="_core_a_document_with_file_support"></a> 파일을 지 원하는 문서
 
-응용 프로그램 마법사 데이터베이스 옵션 선택 **데이터베이스 파일을 지 원하는 뷰** 문서와 관련 된 또 다른 용도 설치한 경우 **파일** 메뉴 명령 및 문서 직렬화 합니다. 프로그램의 데이터 액세스 부분을 사용할 수 있습니다 문서 같은 방식에서 설명 된 대로 [파일을 지원 하지 않고 문서](#_core_a_document_without_file_support)합니다. 사용자의 기본 설정 또는 기타 유용한 정보를 저장 하는 직렬화 된 사용자 프로필 문서 읽기 및 쓰기를 예를 들어 문서의 serialization 기능을 사용할 수 있습니다. 자세한 내용은 참조 하세요. [Serialization: Serialization vs. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)합니다.
+응용 프로그램 마법사 데이터베이스 옵션 선택 **데이터베이스 파일을 지 원하는 뷰** 문서와 관련 된 또 다른 용도 설치한 경우 **파일** 메뉴 명령 및 문서 직렬화 합니다. 프로그램의 데이터 액세스 부분을 사용할 수 있습니다 문서 같은 방식에서 설명 된 대로 [파일을 지원 하지 않고 문서](#_core_a_document_without_file_support)합니다. 사용자의 기본 설정 또는 기타 유용한 정보를 저장 하는 직렬화 된 사용자 프로필 문서 읽기 및 쓰기를 예를 들어 문서의 serialization 기능을 사용할 수 있습니다. 자세한 내용은 참조 하세요. [직렬화 합니다. Serialization vs입니다. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)합니다.
 
 응용 프로그램 마법사에서이 옵션을 지원 하지만 문서를 serialize 하는 코드를 작성 해야 합니다. 문서 데이터 멤버에 직렬화 된 정보를 저장 합니다.
 
@@ -119,6 +119,6 @@ CYourNameApp theApp;
 
 - 문서 또는 보기의 컨텍스트 내에서 마찬가지로 레코드 집합 개체를 사용 합니다. 멤버 함수 응용 프로그램 또는 프레임 창 개체의 레코드 집합을 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 데이터베이스 클래스](../data/mfc-database-classes-odbc-and-dao.md)

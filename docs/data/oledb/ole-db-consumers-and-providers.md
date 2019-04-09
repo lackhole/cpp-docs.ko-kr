@@ -8,12 +8,12 @@ helpviewer_keywords:
 - OLE DB consumers
 - OLE DB, data model
 ms.assetid: 886cb39d-652b-4557-93f0-4b1b0754d8bc
-ms.openlocfilehash: 65e4cf9dcade897a346e8f9bbc1985f9edede78e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f5940ca65e42787c3156a9537cb3f3f6694339c0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443396"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031315"
 ---
 # <a name="ole-db-consumers-and-providers"></a>OLE DB 소비자 및 공급자
 
@@ -25,7 +25,7 @@ OLE DB 아키텍처는 소비자와 공급자의 모델을 사용합니다. 소�
 
 OLE DB 이러한 역할 항상 의미가 통하지, n 계층 상황에서 특히 때문에 용어 클라이언트와 서버를 방지 합니다. 소비자 다른 구성 요소를 제공 하는 계층의 구성 요소 일 수 있으므로 호출 클라이언트 구성 요소에 게 혼동 합니다. 또한 공급자 때로는 더 비슷하게 동작 서버 보다 데이터베이스 드라이버입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 프로그래밍](../../data/oledb/ole-db-programming.md)<br/>
 [OLE DB 프로그래밍 개요](../../data/oledb/ole-db-programming-overview.md)

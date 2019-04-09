@@ -22,12 +22,12 @@ helpviewer_keywords:
 - Data property
 - combo boxes [C++], testing values
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-ms.openlocfilehash: 32c7b121d8c9309d2286158645ee4b6586f1df3b
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: c49913597f51ef231073b89d60ad9718b1113f44
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563370"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041486"
 ---
 # <a name="how-to-define-control-access-and-values-c"></a>방법: 액세스 제어 및 값 (c + +)를 정의 합니다.
 
@@ -153,8 +153,8 @@ ms.locfileid: "57563370"
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자 컨트롤 관리](controls-in-dialog-boxes.md)<br/>
-[방법: 추가, 편집 또는 삭제 컨트롤](adding-editing-or-deleting-controls.md)<br/>
+[방법: Add, Edit, 또는 컨트롤 삭제](adding-editing-or-deleting-controls.md)<br/>
 [방법: 레이아웃 컨트롤](arrangement-of-controls-on-dialog-boxes.md)<br/>

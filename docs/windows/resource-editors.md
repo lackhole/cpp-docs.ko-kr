@@ -21,12 +21,12 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: a0b5e3905daf72307702dbe4f05c2871cf768ac0
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 774575e978a8e7f94868eb1b5dad90c6ac345460
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328807"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038663"
 ---
 # <a name="resource-editors-c"></a>리소스 편집기 (c + +)
 
@@ -40,9 +40,9 @@ ms.locfileid: "58328807"
 |사용...|편집...|
 |----------------|----------------|
 |[액셀러레이터 키 편집기](../windows/accelerator-editor.md)|Visual C++ 프로젝트의 액셀러레이터 키 테이블입니다.|
-|[Binary Editor](binary-editor.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 이진 데이터 정보 및 사용자 지정 리소스입니다.|
+|[바이너리 편집기](binary-editor.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 이진 데이터 정보 및 사용자 지정 리소스입니다.|
 |[대화 상자 편집기](../windows/dialog-editor.md)|Visual C++ 프로젝트의 대화 상자입니다.|
-|[Image Editor](../windows/image-editor-for-icons.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 비트맵, 아이콘, 커서 및 기타 이미지 파일입니다.|
+|[이미지 편집기](../windows/image-editor-for-icons.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 비트맵, 아이콘, 커서 및 기타 이미지 파일입니다.|
 |[메뉴 편집기](../windows/menu-editor.md)|Visual C++ 프로젝트의 메뉴 리소스입니다.|
 |[리본 편집기](../mfc/ribbon-designer-mfc.md)|MFC 프로젝트의 리본 리소스입니다.|
 |[문자열 편집기](../windows/string-editor.md)|Visual C++ 프로젝트의 문자열 표입니다.|
@@ -126,8 +126,8 @@ Win32 리소스에 액세스할 수 있습니다 합니다 [리소스 뷰](how-t
 
 없음
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
-[리소스 식별자(기호)](../windows/symbols-resource-identifiers.md)<br/>
+[리소스 식별자 (기호)](../windows/symbols-resource-identifiers.md)<br/>

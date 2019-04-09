@@ -23,12 +23,12 @@ helpviewer_keywords:
 - symbols [C++], finding
 - resources [C++], searching for symbols
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
-ms.openlocfilehash: cd2f05b4944e26d8a96b3f96e4e39fda0ad8ee48
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: ca24a10f905e61feb2b090ba3966c752db3d4444
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328391"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041507"
 ---
 # <a name="how-to-include-resources-at-compile-time-c"></a>방법: (C + +) 컴파일 타임에 리소스 포함
 
@@ -54,7 +54,7 @@ ms.locfileid: "58328391"
 |---|---|
 | **기호 헤더 파일** | 리소스 파일에 대 한 기호 정의가 저장 된 헤더 파일의 이름을 변경할 수 있습니다.<br/><br/>자세한 내용은 [기호 헤더 파일의 이름 변경](../windows/changing-the-names-of-symbol-header-files.md)합니다. |
 | **읽기 전용 기호 지시문** | 수정 하지 않아야 하는 기호를 포함 하는 헤더 파일을 포함할 수 있습니다.<br/><br/>예를 들어, 기호 파일을 다른 프로젝트와 공유할 수 있습니다. 이 MFC.h 파일을 포함할 수도 있습니다. 자세한 내용은 [비롯 한 공유 (읽기 전용) 또는 계산 된 기호](../windows/including-shared-read-only-or-calculated-symbols.md)합니다. |
-| **컴파일 시간 지시문** | 만들어지고 주 리소스 파일에 리소스에서 개별적으로 편집 되는 리소스 파일을 포함할 수 있습니다 (예: 해당 지시문 조건에 따라), 컴파일 시간 지시문을 포함 하거나 사용자 지정 형식에서 리소스를 포함할 수도 있습니다.<br/><br/>사용할 수도 있습니다는 **컴파일 시간 지시문 상자** 표준 MFC 리소스 파일을 포함 합니다. |
+| **컴파일 타임 지시문** | 만들어지고 주 리소스 파일에 리소스에서 개별적으로 편집 되는 리소스 파일을 포함할 수 있습니다 (예: 해당 지시문 조건에 따라), 컴파일 시간 지시문을 포함 하거나 사용자 지정 형식에서 리소스를 포함할 수도 있습니다.<br/><br/>사용할 수도 있습니다는 **컴파일 시간 지시문 상자** 표준 MFC 리소스 파일을 포함 합니다. |
 
 > [!NOTE]
 > 이러한 텍스트 상자에 항목으로 표시.rc 파일에 나타나는 `TEXTINCLUDE 1`, `TEXTINCLUDE 2`, 및 `TEXTINCLUDE 3` 각각. 자세한 내용은 참조 하세요. [TN035: Visual c + +를 사용 하 여 여러 리소스 파일과 헤더 파일을 사용 하 여](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)입니다.
@@ -95,7 +95,7 @@ ms.locfileid: "58328391"
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [방법: 리소스 만들기](../windows/how-to-create-a-resource-script-file.md)<br/>

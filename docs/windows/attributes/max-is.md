@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - max_is attribute
 ms.assetid: 7c851f5c-6649-4d77-a792-247c37d8f560
-ms.openlocfilehash: 10732d5ba3251185dc7027e3449486af3037f763
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dca2a3dc18aa3c3e75bbb682ed0b1b90adcd9236
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627476"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041311"
 ---
 # <a name="maxis"></a>max_is
 
@@ -25,7 +25,7 @@ ms.locfileid: "50627476"
 
 ### <a name="parameters"></a>매개 변수
 
-*식*<br/>
+*expression*<br/>
 하나 이상의 C 언어 식입니다. 빈 인수 슬롯 허용 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -49,7 +49,7 @@ ms.locfileid: "50627476"
 
 참조 [first_is](first-is.md) 배열 섹션을 지정 하는 방법의 예입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>

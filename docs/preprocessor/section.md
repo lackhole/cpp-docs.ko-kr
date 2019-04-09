@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, section
 - section pragma
 ms.assetid: c67215e9-2c4a-4b0f-b691-2414d2e2d96f
-ms.openlocfilehash: cd8eee564fa17b21d5421a3471fd676af921f444
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 41479d7d8767438d0e59fbe6beb7e435459dcb1b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462142"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023245"
 ---
 # <a name="section"></a>section
 
@@ -37,10 +37,10 @@ ms.locfileid: "50462142"
 
 |특성|설명|
 |-|-|
-|**read**|데이터에 대한 읽기 작업을 허용합니다.|
-|**write**|데이터에 대한 쓰기 작업을 허용합니다.|
-|**execute**|코드가 실행될 수 있도록 합니다.|
-|**shared**|이미지를 로드하는 모든 프로세스에서 섹션을 공유합니다.|
+|**읽기**|데이터에 대한 읽기 작업을 허용합니다.|
+|**쓰기**|데이터에 대한 쓰기 작업을 허용합니다.|
+|**실행(execute)**|코드가 실행될 수 있도록 합니다.|
+|**공유**|이미지를 로드하는 모든 프로세스에서 섹션을 공유합니다.|
 |**nopage**|섹션을 페이징할 수 없는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.|
 |**nocache**|섹션을 캐시할 수 없는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.|
 |**discard**|섹션을 삭제할 수 있는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.|
@@ -63,6 +63,6 @@ int i = 0;
 int main(){}
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

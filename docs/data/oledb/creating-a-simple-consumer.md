@@ -4,12 +4,12 @@ ms.date: 11/06/2018
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
-ms.openlocfilehash: 4346bca99d3744657072a4940776934e3c03e9de
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 060a39a8436ff73900ebfaea7d1c882b9862ee7e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326643"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59025139"
 ---
 # <a name="creating-a-simple-consumer"></a>단순 소비자 만들기
 
@@ -35,7 +35,7 @@ ms.locfileid: "51326643"
 
 ## <a name="to-create-a-consumer-with-the-atl-ole-db-consumer-wizard"></a>ATL OLE DB 소비자 마법사를 사용 하 여 소비자를 만들려면
 
-1. **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭는 `MyCons` 프로젝트입니다.
+1. **솔루션 탐색기**에서 `MyCons` 프로젝트를 마우스 오른쪽 버튼으로 클릭합니다.
 
 1. 바로 가기 메뉴에서 클릭 **추가**를 클릭 하 고 **새 항목**합니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "51326643"
    1. 에 **연결** 탭에서 서버의 데이터 원본 및 데이터베이스에 대 한 암호, 서버 이름 및 로그온 ID 등 필요한 정보를 지정 합니다.
 
       > [!NOTE]
-      > 보안 문제가 합니다 **암호 저장 허용** 의 기능을 **데이터 연결 속성** 대화 상자. **서버에 로그온 정보 입력**, 두 개의 라디오 단추가 있습니다: **사용 하 여 Windows NT 통합 보안** 하 고 **특정 사용자 이름 및 암호를 사용 하 여**.
+      > 보안 문제가 합니다 **암호 저장 허용** 의 기능을 **데이터 연결 속성** 대화 상자. **서버에 로그온 정보 입력**, 두 개의 라디오 단추가 있습니다. **사용 하 여 Windows NT 통합 보안** 하 고 **특정 사용자 이름 및 암호를 사용 하 여**입니다.
 
       > [!NOTE]
       > 선택 하는 경우 **특정 사용자 이름 및 암호를 사용 하 여**, 암호를 저장할 수 있습니다 (사용 하 여 합니다 **암호 저장 허용** 확인란) 하지만이 옵션은 안전 하지 않습니다. 선택 하는 것이 좋습니다 **사용 하 여 Windows NT 통합 보안**;이 옵션 Windows NT를 사용 하 여 id를 확인 합니다.
@@ -98,6 +98,6 @@ ms.locfileid: "51326643"
 > [!NOTE]
 > 이 줄 소비자 응용 프로그램이 컴파일되지 않도록 방지 하 고 하드 코드 된 암호에 대 한 연결 문자열에 체크 인할 수를 표시 합니다. 연결 문자열을 확인 한 후이 코드 줄을 제거할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [마법사를 사용하여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

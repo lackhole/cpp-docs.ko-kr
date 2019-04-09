@@ -7,12 +7,12 @@ helpviewer_keywords:
 - stored procedures, defining
 - stored procedures, OLE DB
 ms.assetid: 54949b81-3275-4dd9-96e4-3eda1ed755f2
-ms.openlocfilehash: 06618d1a468116855ccad149a150c0b621497f2d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f4c4ad84abf2a5de2cdf09e7064396ea01eeebe
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507954"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035048"
 ---
 # <a name="defining-stored-procedures"></a>저장 프로시저 정의
 
@@ -65,6 +65,6 @@ HRESULT OpenRowset()
 db_command("{ ? = CALL dbo.dt_adduserobject }")
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [저장 프로시저 사용](../../data/oledb/using-stored-procedures.md)

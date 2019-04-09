@@ -36,12 +36,12 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-ms.openlocfilehash: bc3d9f089dc6289331c79c6a1e18eccbc9ff4993
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 37de6fd74f1e9210dcd9b9a356719436814c0c7f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296977"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58776832"
 ---
 # <a name="coledatasource-class"></a>COleDataSource 클래스
 
@@ -88,7 +88,7 @@ OLE 데이터 소스를 직접 만들 수 있습니다. 또는 합니다 [COleCl
 
 데이터 원본 및 데이터 전송에 대 한 자세한 내용은 문서 참조 [데이터 개체 및 데이터 소스 (OLE)](../../mfc/data-objects-and-data-sources-ole.md)합니다. 또한이 문서 [클립보드 항목](../../mfc/clipboard.md) OLE 클립보드 메커니즘을 설명 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -488,8 +488,8 @@ void SetClipboard();
 
 ## <a name="see-also"></a>참고자료
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleDataObject 클래스](../../mfc/reference/coledataobject-class.md)

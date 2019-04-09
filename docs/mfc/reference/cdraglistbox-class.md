@@ -21,10 +21,10 @@ helpviewer_keywords:
 - CDragListBox [MFC], ItemFromPt
 ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b
 ms.openlocfilehash: d8afc5b14f5f52ca7a4d28a3d3c3c5440b7c819f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781590"
 ---
 # <a name="cdraglistbox-class"></a>CDragListBox 클래스
@@ -92,7 +92,7 @@ virtual BOOL BeginDrag(CPoint pt);
 
 ### <a name="parameters"></a>매개 변수
 
-*pt*<br/>
+*(태평양 표준시)*<br/>
 A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 끌고 있는 항목의 좌표를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -113,7 +113,7 @@ virtual void CancelDrag(CPoint pt);
 
 ### <a name="parameters"></a>매개 변수
 
-*pt*<br/>
+*(태평양 표준시)*<br/>
 A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 끌고 있는 항목의 좌표를 포함 하는 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -138,7 +138,7 @@ virtual UINT Dragging(CPoint pt);
 
 ### <a name="parameters"></a>매개 변수
 
-*pt*<br/>
+*(태평양 표준시)*<br/>
 A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) x 및 y를 포함 하는 개체는 커서의 좌표가 화면.
 
 ### <a name="return-value"></a>반환 값
@@ -187,7 +187,7 @@ virtual void Dropped(
 *nSrcIndex*<br/>
 삭제 된 문자열의 0부터 시작 인덱스를 지정합니다.
 
-*pt*<br/>
+*(태평양 표준시)*<br/>
 A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 놓기 사이트의 좌표가 포함 된 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -206,7 +206,7 @@ int ItemFromPt(
 
 ### <a name="parameters"></a>매개 변수
 
-*pt*<br/>
+*(태평양 표준시)*<br/>
 A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 목록 상자 내에서 한 점의 좌표를 포함 하는 개체입니다.
 
 *bAutoScroll*<br/>

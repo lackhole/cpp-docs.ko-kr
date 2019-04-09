@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, code_seg
 - code_seg pragma
 ms.assetid: bf4faac1-a511-46a6-8d9e-456851d97d56
-ms.openlocfilehash: 80edcb709073021ccf024aaf14c9a914bd8d8939
-ms.sourcegitcommit: 31a2a9845f5e1d35ab054906d8cdc6582a5220bd
+ms.openlocfilehash: e566fb01bf70b343b75254a10466bdda2bc7ce1b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597705"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041243"
 ---
 # <a name="codeseg"></a>code_seg
 함수가 .obj 파일에 저장되는 텍스트 세그먼트를 지정합니다.
@@ -32,15 +32,15 @@ ms.locfileid: "51597705"
 **pop**<br/>
 (선택 사항) 내부 컴파일러 스택의 맨 위에서 레코드를 제거합니다.
 
-*identifier*<br/>
+*식별자*<br/>
 (선택 사항) 와 함께 사용할 때 **푸시**, 내부 컴파일러 스택의 레코드에 이름을 할당 합니다. 와 함께 사용할 때 **pop**, 될 때까지 내부 스택에서 기록을 팝 *식별자* 가 제거 *식별자* 없는 내부 스택에서 아무 것도 팝 합니다.
 
 *식별자* 여러 레코드 하나만으로 팝 될 수 있습니다 **pop** 명령입니다.
 
-"*세그먼트 이름이*"<br/>
+"*segment-name*"<br/>
 (선택 사항) 세그먼트의 이름입니다. 와 함께 사용할 경우 **pop**, 스택이 팝 되 고 *세그먼트 이름이* 활성 텍스트 세그먼트 이름이 됩니다.
 
-"*세그먼트 클래스*"<br/>
+"*segment-class*"<br/>
 (선택 사항) 버전 2.0 보다 이전 버전의 c + +를 사용 하 여 호환성을 위해 포함 되지만 무시 됩니다.
 
 ## <a name="remarks"></a>설명
@@ -84,7 +84,7 @@ int main() {
 
 초기화 된 데이터에 대 한 섹션도 지정할 수 있습니다 ([data_seg](../preprocessor/data-seg.md)), 초기화 되지 않은 데이터 ([bss_seg](../preprocessor/bss-seg.md)), 및 상수 변수 ([const_seg](../preprocessor/const-seg.md)).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[code_seg(__declspec)](../cpp/code-seg-declspec.md)<br/>
+[code_seg (__declspec)](../cpp/code-seg-declspec.md)<br/>
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

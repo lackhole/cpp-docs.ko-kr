@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Makefile projects, creating
 - project files [C++], Makefile projects
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
-ms.openlocfilehash: bb28d76b0ec459b5fd63f6a00dedff723274e90f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 9c2edfe35233672e8117d336ba40cfea497b1a22
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827587"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59035600"
 ---
 # <a name="create-a-c-makefile-project"></a>C + + 메이크파일 프로젝트 만들기
 
@@ -22,7 +22,7 @@ ms.locfileid: "57827587"
 
 - Visual Studio에서 IntelliSense에 사용할.vcxproj 파일을 구성 하려면 기존 메이크파일을 사용 하는 Visual Studio에서 메이크파일 프로젝트를 만듭니다. (기본 MSBuild 프로젝트를 사용하여 다운로드하는 IDE 기능이 일부 없습니다.) 아래의 [메이크파일 프로젝트 만들기](#create_a_makefile_project)를 참조하세요.
 - **기존 코드 파일에서 새 프로젝트 만들기** 마법사를 사용하여 소스 코드에서 기본 MSBuild 프로젝트를 만듭니다. 그러면 원래 메이크파일 사용 되지 않습니다. 자세한 내용은 [방법: 기존 코드에서 C++ 프로젝트 만들기](../how-to-create-a-cpp-project-from-existing-code.md)를 참조하세요.
-- **Visual Studio 2017 이상**: 사용 된 **폴더 열기** 편집으로 메이크파일 프로젝트를 구축 하는 기능-MSBuild 시스템의 도움 없이 합니다. 자세한 내용은 [c + +의 폴더 열기 프로젝트](../open-folder-projects-cpp.md)합니다.
+- **Visual Studio 2017 이상**: 사용 된 **폴더 열기** 편집으로 메이크파일 프로젝트를 구축 하는 기능-MSBuild 시스템의 도움 없이 합니다. 자세한 내용은 [C++용 폴더 열기 프로젝트](../open-folder-projects-cpp.md)를 참조하세요.
 
 ## <a name="a-namecreateamakefileproject-to-create-a-makefile-project-with-the-makefile-project-template"></a><a name="create_a_makefile_project"> 메이크파일 프로젝트 템플릿을 사용 하 여 메이크파일 프로젝트를 만들려면
 
@@ -58,7 +58,7 @@ Visual Studio 2017 이상에서 메이크파일 프로젝트 템플릿은 C++ �
 
 특정 프로젝트 설정이 나 컴파일러 옵션은 잘못 설정 하는 경우 IntelliSense 메이크파일 프로젝트에 실패 합니다. IntelliSense는 예상 대로 작동할 수 있도록 메이크파일 프로젝트를 구성 하려면 다음이 단계를 수행 합니다.
 
-1. **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **구성 속성** 노드를 확장합니다.
 
@@ -84,7 +84,7 @@ Visual Studio 2017 이상에서 메이크파일 프로젝트 템플릿은 C++ �
 
 다음에 Visual Studio 개발 환경에서 메이크파일 프로젝트를 열 때 메이크파일 프로젝트에서 **솔루션 정리** 명령을 실행한 다음, **솔루션 빌드** 명령을 실행합니다. IntelliSense는 IDE에서 제대로 작동해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IntelliSense 사용](/visualstudio/ide/using-intellisense)<br>
 [NMAKE 참조](nmake-reference.md)<br>

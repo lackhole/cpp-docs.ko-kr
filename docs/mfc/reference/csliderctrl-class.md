@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CSliderCtrl [MFC], SetTipSide
 - CSliderCtrl [MFC], SetToolTips
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
-ms.openlocfilehash: 0179d69726f49f2df02979264da4966b35178434
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 4db27112daf65b2c3f477527cd7b4351b91d7f18
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422002"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58776637"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl 클래스
 
@@ -771,7 +771,7 @@ int SetTipSide(int nLocation);
 
 ### <a name="parameters"></a>매개 변수
 
-*nLocation*<br/>
+*n 위치*<br/>
 도구 설명 컨트롤을 표시할 위치를 나타내는 값입니다. 가능한 값 목록을 Win32 메시지를 참조 하세요 [TBM_SETTIPSIDE](/windows/desktop/Controls/tbm-settipside)Windows SDK에 설명 된 대로 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -801,7 +801,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CProgressCtrl 클래스](../../mfc/reference/cprogressctrl-class.md)

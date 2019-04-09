@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ODBC, multithreaded applications
 - threading [MFC], ODBC support
 ms.assetid: 16543926-7331-41a6-ba50-72288f2a61b7
-ms.openlocfilehash: 1d470e79ba5a6a73a30743a21da0462a6b89e7da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2d11cdab632e916f548011462f9738bc267fc730
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608171"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59023532"
 ---
 # <a name="odbc-classes-and-threads"></a>ODBC 클래스와 스레드
 
@@ -26,7 +26,7 @@ ODBC 클래스에 대 한 다중 스레드 지원에는 몇 가지 제한 사항
 
 다중 스레드 응용 프로그램을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [다중 스레딩 항목](../../parallel/multithreading-support-for-older-code-visual-cpp.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
-[데이터 액세스 프로그래밍 (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)
+[데이터 엑세스 프로그래밍 (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

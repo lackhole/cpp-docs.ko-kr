@@ -41,10 +41,10 @@ helpviewer_keywords:
 - CEditView [MFC], dwStyleDefault
 ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
 ms.openlocfilehash: 3ab276e83e8642aa5de2fd96305cb6d7b648fc40
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58781239"
 ---
 # <a name="ceditview-class"></a>CEditView 클래스
@@ -186,7 +186,7 @@ BOOL FindText(
 *lpszFind*<br/>
 찾을 텍스트입니다.
 
-*bNext*<br/>
+*다음*<br/>
 검색 방향을 지정합니다. TRUE 이면 검색 방향을 버퍼의 끝에 다가가입니다. FALSE 이면 검색 방향을 버퍼의 시작 부분입니다.
 
 *bCase*<br/>
@@ -296,7 +296,7 @@ virtual void OnFindNext(
 *lpszFind*<br/>
 찾을 텍스트입니다.
 
-*bNext*<br/>
+*다음*<br/>
 검색 방향을 지정합니다. TRUE 이면 검색 방향을 버퍼의 끝에 다가가입니다. FALSE 이면 검색 방향을 버퍼의 시작 부분입니다.
 
 *bCase*<br/>
@@ -355,7 +355,7 @@ virtual void OnReplaceSel(
 *lpszFind*<br/>
 찾을 텍스트입니다.
 
-*bNext*<br/>
+*다음*<br/>
 검색 방향을 지정합니다. TRUE 이면 검색 방향을 버퍼의 끝에 다가가입니다. FALSE 이면 검색 방향을 버퍼의 시작 부분입니다.
 
 *bCase*<br/>

@@ -23,12 +23,12 @@ helpviewer_keywords:
 - Dialog Editor [C++], switching between controls and code
 - Dialog Editor [C++], shortcut keys
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
-ms.openlocfilehash: 7bc5d5763881b862487fa97e02da02d98bcd017d
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: dc5a823951e07af96efceec52d2aa23552c2d002
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562954"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029488"
 ---
 # <a name="dialog-editor-c"></a>대화 상자 편집기 (c + +)
 
@@ -124,10 +124,10 @@ MFC 응용 프로그램에서 대화 상자 컨트롤 처리기 코드로 이동
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
-[방법: 대화 상자 만들기](../windows/creating-a-new-dialog-box.md)<br/>
+[방법: 대화 상자를 만들려면](../windows/creating-a-new-dialog-box.md)<br/>
 [대화 상자 컨트롤](../windows/controls-in-dialog-boxes.md)<br/>
 <!--
 [Controls](../mfc/controls-mfc.md)<br/>

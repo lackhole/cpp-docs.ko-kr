@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 레코드 집합의 레코드 선택 방법(ODBC)'
+title: '레코드 집합: 레코드 집합 선택 (ODBC)를 기록 하는 방법'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - recordsets, selecting records
@@ -9,16 +9,16 @@ helpviewer_keywords:
 - recordsets, constructing SQL statements
 - ODBC recordsets, selecting records
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
-ms.openlocfilehash: 7e7bbaad949b5f4456ce4c8aea60099792deb786
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 310481a6ea6637de817bf29d528cbdfe70ae70db
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329477"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041327"
 ---
-# <a name="recordset-how-recordsets-select-records-odbc"></a>레코드 집합: 레코드 집합의 레코드 선택 방법(ODBC)
+# <a name="recordset-how-recordsets-select-records-odbc"></a>레코드 집합: 레코드 집합 선택 (ODBC)를 기록 하는 방법
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 이 항목에 설명 합니다.
 
@@ -42,9 +42,9 @@ ms.locfileid: "51329477"
 |레코드 집합 클래스 구현 완료|와 같은 멤버 함수를 재정의 `OnSetOptions` 응용 프로그램별 옵션을 설정 하거나 기본값을 변경 (고급). 매개 변수가 있는 레코드 집합을 원하는 경우 매개 변수 데이터 멤버를 지정 합니다.|
 |레코드 집합 개체를 생성 합니다 (호출 하기 전에 `Open`)|사용 하기 위해 (가능한 경우 복합) 검색 조건을 지정는 **여기서** 레코드를 필터링 하는 절. 참조 [레코드 집합: 레코드 필터링 (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)합니다.<br /><br /> 사용할 정렬 순서를 지정 된 **ORDER BY** 레코드를 정렬 하는 절. 참조 [레코드 집합: 레코드 정렬 (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)합니다.<br /><br /> 클래스에 추가 하는 모든 매개 변수에 대 한 매개 변수 값을 지정 합니다. 참조 [레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)합니다.|
 
-| 호출 하 여 레코드 집합의 쿼리를 실행할 `Open`| 마법사에서 설정 하는 기본 SQL 문자열을 대체 하는 사용자 지정 SQL 문자열을 지정 합니다. 참조 [crecordset:: Open](../../mfc/reference/crecordset-class.md#open) 에 *클래스 라이브러리 참조* 하 고 [SQL: 레코드 집합의 SQL 문 (ODBC) 사용자 지정](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md). |
+| 호출 하 여 레코드 집합의 쿼리를 실행할 `Open`| 마법사에서 설정 하는 기본 SQL 문자열을 대체 하는 사용자 지정 SQL 문자열을 지정 합니다. 참조 [crecordset:: Open](../../mfc/reference/crecordset-class.md#open) 에 *클래스 라이브러리 참조* 고 [SQL: 레코드 집합의 SQL 문 (ODBC) 사용자 지정](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md). |
 
-| 호출 `Requery` 데이터 원본에서 최신 값으로 레코드 집합을 | 새 매개 변수, 필터 또는 정렬 지정 합니다. 참조 [레코드 집합: 레코드 집합 (ODBC)를 다시 쿼리](../../data/odbc/recordset-requerying-a-recordset-odbc.md). |
+| 호출 `Requery` 데이터 원본에서 최신 값으로 레코드 집합을 | 새 매개 변수, 필터 또는 정렬 지정 합니다. 참조 [레코드 집합: (ODBC) 레코드 집합 다시 쿼리](../../data/odbc/recordset-requerying-a-recordset-odbc.md). |
 
 ##  <a name="_core_how_a_recordset_constructs_its_sql_statement"></a> 레코드 집합의 SQL 문을 생성 하는 방법
 
@@ -78,28 +78,28 @@ ms.locfileid: "51329477"
 
 - 사용자 지정 SQL 문자열을 전달할 *lpszSQL* 호출 하는 경우 [오픈](../../mfc/reference/crecordset-class.md#open) 레코드 집합에 대 한 합니다. 아무 것도 전달 *lpsqSQL* 무엇 보다 우선 합니다 [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql) 멤버 함수를 반환 합니다.
 
-   자세한 내용은 참조 하세요. [SQL: 사용자 지정 레코드 집합의 SQL 문 (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md), 형식에 설명 하는 SQL 문 (또는 부분 문)를 전달할 수 있습니다 `Open` 프레임 워크를 수행 하는 역할을 사용 하 여 합니다.
+   자세한 내용은 참조 하세요. [SQL: 레코드 집합의 SQL 문 (ODBC) 사용자 지정](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md), 형식에 설명 하는 SQL 문 (또는 부분 문)를 전달할 수 있습니다 `Open` 프레임 워크를 수행 하는 역할을 사용 하 여 합니다.
 
     > [!NOTE]
     >  전달 하 여 사용자 지정 문자열 "선택" 또는 "{CALL"로 시작 하지 않으므로, MFC 테이블 이름이 포함 된 것으로 가정 합니다. 이 다음 글머리 기호 항목에도 적용 됩니다.
 
 - 마법사가 레코드 집합의에서 작성 하는 문자열을 alter `GetDefaultSQL` 멤버 함수입니다. 함수의 반환 값을 변경 하는 코드를 편집 합니다. 기본적으로 마법사는 다음과 같이 기록 됩니다.는 `GetDefaultSQL` 단일 테이블 이름을 반환 하는 함수입니다.
 
-   할 수 있습니다 `GetDefaultSQL` 에 전달할 수 있는 항목 중 하나를 반환 합니다 *lpszSQL* 매개 변수를 `Open`입니다. 사용자 지정 SQL 문자열을 전달 하지 않습니다 *lpszSQL*, 문자열을 사용 하는 프레임 워크는 `GetDefaultSQL` 반환 합니다. 최소한 `GetDefaultSQL` 단일 테이블 이름을 반환 해야 합니다. 여러 테이블 이름 전체를 반환 하도록 할 수도 있습니다 하지만 **선택** 문에서 ODBC **호출** 문 및 등입니다. 에 전달할 수의 목록을 *lpszSQL* -있거나 `GetDefaultSQL` 반환-참조 [SQL: 사용자 지정 레코드 집합의 SQL 문 (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)합니다.
+   할 수 있습니다 `GetDefaultSQL` 에 전달할 수 있는 항목 중 하나를 반환 합니다 *lpszSQL* 매개 변수를 `Open`입니다. 사용자 지정 SQL 문자열을 전달 하지 않습니다 *lpszSQL*, 문자열을 사용 하는 프레임 워크는 `GetDefaultSQL` 반환 합니다. 최소한 `GetDefaultSQL` 단일 테이블 이름을 반환 해야 합니다. 여러 테이블 이름 전체를 반환 하도록 할 수도 있습니다 하지만 **선택** 문에서 ODBC **호출** 문 및 등입니다. 에 전달할 수의 목록을 *lpszSQL* -있거나 `GetDefaultSQL` 반환-참조 [SQL: 레코드 집합의 SQL 문 (ODBC) 사용자 지정](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)합니다.
 
-   두 개 이상의 테이블의 조인을 수행 하는 경우 다시 작성 `GetDefaultSQL` SQL에 사용 되는 테이블 목록에 맞게 **FROM** 절. 자세한 내용은 [레코드 집합: 조인 수행 (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)합니다.
+   두 개 이상의 테이블의 조인을 수행 하는 경우 다시 작성 `GetDefaultSQL` SQL에 사용 되는 테이블 목록에 맞게 **FROM** 절. 자세한 내용은 참조 하세요. [레코드 집합: 조인 수행 (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)합니다.
 
 
-- 수동으로 아마도 정보를 기반으로 가져와야 스키마에 대 한 데이터 원본의 런타임 시 추가 필드 데이터 멤버를 바인딩하십시오. 레코드 집합 클래스에 필드 데이터 멤버를 추가한 [RFX](../../data/odbc/record-field-exchange-using-rfx.md) 대량 RFX 함수를 호출 하기 위해 또는 합니다 [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) 또는 [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) 멤버 함수 및 클래스 생성자에서 데이터 멤버의 초기화 합니다. 자세한 내용은 [레코드 집합: 데이터 열 동적 바인딩 (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)합니다.
+- 수동으로 아마도 정보를 기반으로 가져와야 스키마에 대 한 데이터 원본의 런타임 시 추가 필드 데이터 멤버를 바인딩하십시오. 레코드 집합 클래스에 필드 데이터 멤버를 추가한 [RFX](../../data/odbc/record-field-exchange-using-rfx.md) 대량 RFX 함수를 호출 하기 위해 또는 합니다 [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) 또는 [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) 멤버 함수 및 클래스 생성자에서 데이터 멤버의 초기화 합니다. 자세한 내용은 참조 하세요. [레코드 집합: (ODBC) 데이터 열 동적 바인딩](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)합니다.
 
 - 멤버 함수는 레코드 집합을 같은 재정의 `OnSetOptions`, 응용 프로그램별 옵션을 설정 하거나 기본값을 재정의 합니다.
 
 복잡 한 SQL 문을 기반으로 레코드 집합 하려는 경우 이러한 사용자 지정 기술 함께 사용 해야 합니다. 예를 들어, 아마도 SQL 절을 사용 하고자 할 및을 여러 테이블 조인 하는 키워드를 직접 지원 되지 않는 레코드 집합 또는 등이 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 레코드 집합의 레코드 업데이트 방법(ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
-[ODBC 기본 사항](../../data/odbc/odbc-basics.md)<br/>
+[레코드 집합: 레코드 집합 업데이트 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
+[ODBC 기초](../../data/odbc/odbc-basics.md)<br/>
 [SQL](../../data/odbc/sql.md)<br/>
-[레코드 집합: 레코드 잠금(ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+[레코드 집합: 레코드 잠금 (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

@@ -25,10 +25,10 @@ helpviewer_keywords:
 - CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
 ms.openlocfilehash: e1dd6fff9fa4f03dbf93510da26c78c73e86c6ab
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58780966"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog 클래스
@@ -137,7 +137,7 @@ void AddButton(
 *uiCategoryId*<br/>
 [in] 단추를 삽입할 범주 ID를 지정 합니다.
 
-*button*<br/>
+*단추*<br/>
 [in] 삽입할 단추를 지정 합니다.
 
 *iInsertBefore*<br/>
@@ -586,7 +586,7 @@ virtual BOOL OnEditToolbarMenuImage(
 *pWndParent*<br/>
 [in] 부모 창에 대 한 포인터입니다.
 
-*bitmap*<br/>
+*비트맵*<br/>
 [in] 비트맵 개체를 편집할 수에 대 한 참조입니다.
 
 *nBitsPerPixel*<br/>
@@ -716,7 +716,7 @@ void ReplaceButton(
 *uiCmd*<br/>
 [in] 교체 하는 단추 명령을 지정 합니다.
 
-*button*<br/>
+*단추*<br/>
 [in] A **const** 이전 단추를 대체 하는 도구 모음 단추 개체에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명

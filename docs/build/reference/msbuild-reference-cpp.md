@@ -3,12 +3,12 @@ title: Visual Studio에서 c + + 프로젝트에 대 한 MSBuild 참조
 ms.date: 12/08/2018
 helpviewer_keywords:
 - MSBuild reference [C++]
-ms.openlocfilehash: 854dc0554c327f191b4b4b9694548cdb9983c5f8
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: b6ec6b5d276cb7104cf61c229476596d2a2a7684
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826887"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024701"
 ---
 # <a name="msbuild-reference-for-c-projects"></a>C + + 프로젝트에 대 한 MSBuild 참조
 
@@ -38,6 +38,6 @@ C + +에 사용할 수 있는 프로젝트가 MSBuild 기반 프로젝트가 형
 [Visual Studio 프로젝트 속성 참조](property-pages-visual-cpp.md)<br/>
 Visual Studio IDE에 설정 된 프로젝트 속성에 대 한 참조 설명서입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C/C++ 빌드 참조](c-cpp-building-reference.md)

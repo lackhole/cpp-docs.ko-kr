@@ -50,12 +50,12 @@ helpviewer_keywords:
 - buttons [C++], tool tips
 - Toolbar editor [C++], creating tool tips
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
-ms.openlocfilehash: 83402159d19f07cf94a0d00ccd79d68549b124e9
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 9d50561c598f17e251425972590c0663efe6e832
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328859"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038166"
 ---
 # <a name="toolbar-editor-c"></a>도구 모음 편집기 (c + +)
 
@@ -78,7 +78,7 @@ ms.locfileid: "58328859"
 
 |속성|설명|
 |---|---------------|
-|**Button Width**|도구 모음 리소스 비트맵 리소스를 변환 하는 도구 모음 단추에 대 한 너비를 입력할 공간을 제공 합니다.|
+|**단추 너비**|도구 모음 리소스 비트맵 리소스를 변환 하는 도구 모음 단추에 대 한 너비를 입력할 공간을 제공 합니다.|
 |**단추의 높이**|도구 모음 리소스 비트맵 리소스를 변환 하는 도구 모음 단추에 대 한 높이 입력할 공간을 제공 합니다.|
 
 > [!NOTE]
@@ -88,7 +88,7 @@ ms.locfileid: "58328859"
 
 도구 모음 단추에는 다음 속성이 있습니다.
 
-|속성|Description|
+|속성|설명|
 |--------------|-----------------|
 |**ID**|단추에 대 한 ID를 정의합니다. 드롭다운 목록에는 일반적인 나와 **ID** 이름입니다.|
 |**너비**|단추의 너비를 설정합니다. 16 픽셀을 사용 하는 것이 좋습니다.|
@@ -201,7 +201,7 @@ ms.locfileid: "58328859"
 
 MFC 또는 ATL
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 편집기](../windows/resource-editors.md)
 <!--

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - static libraries [C++]
 ms.assetid: 3cc36411-7d66-4240-851e-dacb9a8fd6ac
 ms.author: corob
-ms.openlocfilehash: 506db5ea8e94887d9971b48c06ce8c0d6156dccb
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 0d527681abb077a01b3d902c092a21de7a052867
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785088"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59031510"
 ---
 # <a name="walkthrough-creating-and-using-a-static-library-c"></a>연습: 만들기 및 정적 라이브러리 (c + +)를 사용 합니다.
 
@@ -144,7 +144,7 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
     a / b = 0.0747475
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[연습: 동적 연결 라이브러리 만들기 및 사용(C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
+[연습: 동적 연결 라이브러리 (c + +) 만들기 및 사용](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
 [데스크톱 응용 프로그램(Visual C++)](../windows/desktop-applications-visual-cpp.md)<br/>

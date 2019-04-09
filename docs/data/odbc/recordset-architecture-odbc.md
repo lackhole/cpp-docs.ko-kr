@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 아키텍처(ODBC)'
+title: '레코드 집합: 아키텍처 (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - recordsets, data members
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - m_nParams data member
 - m_nFields data member, recordsets
 ms.assetid: 47555ddb-11be-4b9e-9b9a-f2931764d298
-ms.openlocfilehash: fc44f2b4fcae51cef78d6b660f0cc86ee516e5e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5904a69f81dd1fbf22171a46040da5d4f5511588
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651193"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039652"
 ---
-# <a name="recordset-architecture-odbc"></a>레코드 집합: 아키텍처(ODBC)
+# <a name="recordset-architecture-odbc"></a>레코드 집합: 아키텍처 (ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 이 항목에서는 레코드 집합 개체의 아키텍처를 구성 하는 데이터 멤버를 설명 합니다.
 
@@ -33,7 +33,7 @@ ms.locfileid: "50651193"
 - [M_nFields 및 m_nParams 데이터 멤버를 사용 하 여](#_core_using_m_nfields_and_m_nparams)
 
 > [!NOTE]
->  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현 하는 경우에 아키텍처가 비슷합니다. 차이점을 이해 하려면 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+>  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현 하는 경우에 아키텍처가 비슷합니다. 차이점을 이해 하려면 [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 ##  <a name="_core_a_sample_class"></a> 샘플 클래스
 
@@ -83,16 +83,16 @@ SELECT CourseID, CourseTitle FROM Course WHERE CourseID = MATH101
 >  MFC는 매개 변수를 사용 하 여 자체 아무 작업도 수행 하지-특히 텍스트 대체를 수행 하지 않습니다. 대신 ODBC에 알려; 매개 변수를 가져올 위치 ODBC는 데이터를 검색 하 고 필요한 매개 변수화를 수행 합니다.
 
 > [!NOTE]
->  매개 변수의 순서가 중요 합니다. 이 대 한 정보 및 매개 변수에 대 한 자세한 내용은 참조 하십시오 [레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)합니다.
+>  매개 변수의 순서가 중요 합니다. 이 대 한 정보 및 매개 변수에 대 한 자세한 내용은 참조 [레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)합니다.
 
 ##  <a name="_core_using_m_nfields_and_m_nparams"></a> M_nFields 및 m_nParams를 사용 하 여
 
 마법사 클래스의 생성자에 쓰는 때 초기화 합니다 [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) 수를 지정 하는 데이터 멤버 [필드 데이터 멤버](#_core_field_data_members) 클래스에서. 추가 하는 경우 [매개 변수](#_core_parameter_data_members) 클래스에 추가 초기화를 [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams) 매개 변수 데이터 멤버의 수를 지정 하는 데이터 멤버입니다. 프레임 워크 데이터 멤버와 함께 작동 하도록 이러한 값을 사용 합니다.
 
-자세한 내용 및 예제를 참조 하세요 [레코드 필드 교환: RFX 사용](../../data/odbc/record-field-exchange-using-rfx.md)합니다.
+자세한 내용 및 예제를 참조 하세요. [레코드 필드 교환: RFX 사용](../../data/odbc/record-field-exchange-using-rfx.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 테이블에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
-[RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)
+[레코드 집합: 테이블 (ODBC)에 대 한 클래스 선언](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[RFX](../../data/odbc/record-field-exchange-rfx.md)

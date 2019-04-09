@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C++, managed code
 - managed code [C++]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
-ms.openlocfilehash: a65ccdb4d2f031a70ba03719b58fb439407cdfc8
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: d0a006c6928bf42c3e6f4adfbc3d1fdde7ff7c87
+ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827117"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58773049"
 ---
 # <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>연습: 컴파일 C + + /cli 프로그램 Visual Studio에서 CLR을 대상으로 하는
 
@@ -57,7 +57,7 @@ ms.locfileid: "57827117"
 
    `StreamWriter^ sw = gcnew StreamWriter(fileName);`
 
-   새로운 Visual C++ 구문에 대한 자세한 내용은 [런타임 플랫폼의 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)을 참조하세요.
+   새로운 Visual C++ 구문에 대한 자세한 내용은 [런타임 플랫폼의 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)을 참조하세요.
 
 1. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 

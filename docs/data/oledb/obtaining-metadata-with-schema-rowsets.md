@@ -6,12 +6,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, getting provider metadata
 - metadata, getting (OLE DB Templates)
 ms.assetid: 6b448461-82fb-4acf-816b-3cbb0ca1d186
-ms.openlocfilehash: 9e61507a187f7625e7e90e2a0e3a1ce404573e29
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 12c3de79626411b76a402a7f5407f40a7b054318
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328872"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026031"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>스키마 행 집합을 사용하여 메타데이터 구하기
 
@@ -42,7 +42,7 @@ ANSI SQL은 데이터 저장소에 대한 카탈로그/스키마 모델을 정�
 SELECT * FROM authors WHERE l_name = 'pivo'
 ```
 
-`l_name`이 제한 사항입니다. 이것은 하나의 제한 사용 합니다;를 사용 하 여 간단한 예 스키마 행 집합 클래스에는 몇 가지 제한을 지원 합니다.
+`l_name` 제한이 됩니다. 이것은 하나의 제한 사용 합니다;를 사용 하 여 간단한 예 스키마 행 집합 클래스에는 몇 가지 제한을 지원 합니다.
 
 합니다 [스키마 행 집합 typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) 인스턴스화하고 열어 하 여 다른 행 집합 처럼 스키마 행 집합을 액세스할 수 있도록 모든 OLE DB 스키마 행 집합을 캡슐화 합니다. 예를 들어 typedef 클래스 [CColumns](../../data/oledb/ccolumns-ccolumnsinfo.md) 으로 정의 됩니다.
 
@@ -88,6 +88,6 @@ CRestrictions<CAccessor<CColumnsInfo>
 
 스키마 행 집합에 대 한 공급자 지원에 대 한 자세한 내용은 [스키마 행 집합 지원](../../data/oledb/supporting-schema-rowsets.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [접근자 사용](../../data/oledb/using-accessors.md)

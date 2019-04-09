@@ -2,12 +2,12 @@
 title: 문서 주석 (c + + 문서 주석)에 대 한 권장된 태그
 ms.date: 11/04/2016
 ms.assetid: 6548e798-5235-4a38-9482-bdc7b88f40a9
-ms.openlocfilehash: adb8440dc07f8f3e193b58be6782859fbb8413e4
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 2a6a2c3983c10579a6cd96b69be81aa7df8b8ee7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827037"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027898"
 ---
 # <a name="recommended-tags-for-documentation-comments"></a>문서 주석에 대한 권장 태그
 
@@ -35,6 +35,6 @@ MSVC 컴파일러는 코드에서 문서 주석을 처리할 만들고 각 컴�
 
 현재 릴리스에서 MSVC 컴파일러를 지원 하지 않습니다 `<paramref>`, 다른 Visual Studio 컴파일러에서 지원 되는 태그입니다. Visual C++는 이후 릴리스에서 `<paramref>`를 지원할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [XML 문서](xml-documentation-visual-cpp.md)

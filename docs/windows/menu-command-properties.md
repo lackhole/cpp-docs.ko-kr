@@ -17,12 +17,12 @@ helpviewer_keywords:
 - mnemonics [C++], uniqueness checking
 - Check Mnemonics command
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
-ms.openlocfilehash: 62249bff7a278963ea67b2d2015ff52f22fcfc85
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: c9abf46907c473d4cf6d9e945038f70aa75bfc48
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562928"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026281"
 ---
 # <a name="menu-commands-c"></a>메뉴 명령 (c + +)
 
@@ -86,7 +86,7 @@ C + + 프로젝트에서 메뉴 및 메뉴 명령에 액세스 키 (사용자가
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메뉴 편집기](../windows/menu-editor.md)<br/>
 

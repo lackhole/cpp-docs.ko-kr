@@ -32,12 +32,12 @@ helpviewer_keywords:
 - Hash method
 - m_rgbookmarks
 ms.assetid: a8aa3149-7ce8-4976-a680-2da193fd3234
-ms.openlocfilehash: c5954aefaff2cdacb1aa1712f8b4bda93c9e434e
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: e3513084697a60a33b9fa2ab02222a9b332cce79
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420377"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59039821"
 ---
 # <a name="irowsetlocateimpl-class"></a>IRowsetLocateImpl 클래스
 
@@ -94,10 +94,10 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
 
 |||
 |-|-|
-|[Compare](#compare)|두 개의 책갈피를 비교합니다.|
+|[비교](#compare)|두 개의 책갈피를 비교합니다.|
 |[GetRowsAt](#getrowsat)|책갈피에서의 오프셋으로 지정 된 행부터 행을 인출 합니다.|
 |[GetRowsByBookmark](#getrowsbybookmark)|지정한 책갈피를 일치 하는 행을 인출 합니다.|
-|[해시](#hash)|지정 된 책갈피에 대 한 값을 해시 하는 반환 합니다.|
+|[Hash](#hash)|지정 된 책갈피에 대 한 값을 해시 하는 반환 합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
@@ -233,7 +233,7 @@ STDMETHOD (Hash )(HCHAPTER /* hReserved */,
 CAtlArray<DBROWCOUNT> m_rgBookmarks;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

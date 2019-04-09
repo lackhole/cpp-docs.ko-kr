@@ -35,12 +35,12 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-ms.openlocfilehash: f2edafb0b60cfafcf7ad53b8402ffc39a6fc2f7c
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: ebf10ade734d321c5a83644110d3511e4b6c827a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328846"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59033997"
 ---
 # <a name="how-to-manage-symbols"></a>방법: 기호 관리
 
@@ -79,7 +79,7 @@ ms.locfileid: "58328846"
 |자료|IDR_, IDD_, IDC_, IDI_, IDB_|액셀러레이터 키 또는 메뉴 (및 연결 또는 사용자 지정 리소스) 비트맵, 아이콘, 커서, 대화 상자|
 |메뉴 항목|ID_|Menu item|
 |명령|ID_|명령|
-|컨트롤 및 자식 창|IDC_|Control|
+|컨트롤 및 자식 창|IDC_|컨트롤|
 |문자열|IDS_|문자열 테이블의 문자열|
 |MFC|AFX_|미리 정의된 MFC 기호에 예약됨|
 
@@ -212,8 +212,8 @@ ms.locfileid: "58328846"
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[리소스 식별자(기호)](../windows/symbols-resource-identifiers.md)<br/>
+[리소스 식별자 (기호)](../windows/symbols-resource-identifiers.md)<br/>
 [방법: 기호 만들기](../windows/creating-new-symbols.md)<br/>
 [미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)<br/>

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - message pragma
 - pragmas, message
 ms.assetid: 67414f25-ed47-4079-a5dc-21d9d1a39754
-ms.openlocfilehash: a55721fb954cf9383022b4fc8e84327ea4c772e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e9383238fd308ec59a9767f56af1c07fc3cfcf07
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627385"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030208"
 ---
 # <a name="message"></a>message
 컴파일이 종료되지 않은 상태에서 문자열 리터럴을 표준 출력에 보냅니다.
@@ -57,6 +57,6 @@ ms.locfileid: "50627385"
 #pragma message("")
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

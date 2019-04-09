@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - source attribute
 ms.assetid: 1878d05d-7709-4e97-b114-c62f38f5140e
-ms.openlocfilehash: 59ed66acbbd6ef876e6052767dc5a5243d4b8dd6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 699ea64de49a4383bc8fb62b2f3b2133d7c496c9
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476529"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030247"
 ---
 # <a name="source-c"></a>source(C++)
 
@@ -25,7 +25,7 @@ ms.locfileid: "50476529"
 
 ### <a name="parameters"></a>매개 변수
 
-*interfaces*<br/>
+*인터페이스*<br/>
 하나 이상의 인터페이스 소스를 적용 하는 경우 지정 하는 특성 클래스입니다. 원본 속성 또는 메서드에 적용 될 때이 매개 변수 사용 되지 않습니다.
 
 ## <a name="remarks"></a>설명
@@ -74,14 +74,14 @@ class NN : public b
 
 |||
 |-|-|
-|**적용 대상**|**클래스**하십시오 **구조체**, **인터페이스**|
+|**적용 대상**|**class**, **struct**, **interface**|
 |**반복 가능**|아니요|
 |**필수 특성**|`coclass` (클래스 또는 구조체에 적용 됨) 하는 경우|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>

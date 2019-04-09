@@ -8,12 +8,12 @@ helpviewer_keywords:
 - wrmsr instruction
 - __writemsr intrinsic
 ms.assetid: 938b1553-51a8-4822-a818-6bed79b0fde5
-ms.openlocfilehash: f4af272ccafec9789497d0321c0769c2906f76b7
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: ac57bac1d132c581ee12048b89d13ed1d1fdb7da
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330296"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026346"
 ---
 # <a name="writemsr"></a>__writemsr
 
@@ -32,7 +32,7 @@ void __writemsr(
 
 #### <a name="parameters"></a>매개 변수
 
-*등록*<br/>
+*레지스터*<br/>
 [in] 모델 특정 레지스터입니다.
 
 *값*<br/>
@@ -52,6 +52,6 @@ void __writemsr(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

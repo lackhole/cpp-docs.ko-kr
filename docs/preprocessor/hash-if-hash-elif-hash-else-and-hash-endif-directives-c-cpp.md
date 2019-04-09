@@ -21,12 +21,12 @@ helpviewer_keywords:
 - elif directive (#elif)
 - defined directive
 ms.assetid: c77a175f-6ca8-47d4-8df9-7bac5943d01b
-ms.openlocfilehash: 76b8be265145896105490a82946c50bc576e6f9f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90fbab45c6408c30198c2a52a42545718002cc11
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520424"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59028093"
 ---
 # <a name="if-elif-else-and-endif-directives-cc"></a>#if, #elif, #else, and #endif 지시문 (C/C++)
 
@@ -34,23 +34,23 @@ ms.locfileid: "50520424"
 
 ## <a name="grammar"></a>문법
 
-*조건부* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*경우 부분 elif 부분*<sub>opt</sub> *else 부분*<sub>opt</sub> *endif 줄*
+*conditional* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*if-part elif-parts*<sub>opt</sub> *else-part*<sub>opt</sub> *endif-line*
 
 *if-part* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*경우에 줄 텍스트*
 
 *if-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#if***상수 식*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifdef***식별자*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifndef***식별자*
+&nbsp;&nbsp;&nbsp;&nbsp;**#if**  *constant-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#ifdef**  *identifier*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#ifndef**  *identifier*
 
 *elif-parts* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*elif 줄 텍스트*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*elif 부분 elif 줄 텍스트*
 
 *elif-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#elif***상수 식*
+&nbsp;&nbsp;&nbsp;&nbsp;**#elif**  *constant-expression*
 
 *else-part* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*다른 줄 텍스트*
@@ -65,7 +65,7 @@ ms.locfileid: "50520424"
 
 합니다 **#if**를 **#elif**를 **#else**, 및 **#endif** 지시문을 다른 텍스트 부분에서 중첩 **#if**지시문입니다. 중첩 된 각 **#else**를 **#elif**, 또는 **#endif** 지시문은 가장 가까운 이전 속한 **#if** 지시문입니다.
 
-모든 조건부 컴파일 지시문와 같은 **#if** 하 고 **#ifdef**를 닫는 일치 해야 **#endif** 지시문 전에 파일 끝에;이 고, 그렇지 오류가 메시지가 생성 됩니다. 조건부 컴파일 지시문이 포함 파일에 포함된 경우 동일한 조건을 만족해야 합니다. 포함 파일의 끝에 일치하지 않는 조건부 컴파일 지시문이 없어야 합니다.
+모든 조건부 컴파일 지시문와 같은 **#if** 하 고 **#ifdef**를 닫는 일치 해야 **#endif** 지시문 전에 파일 끝에;이 고, 그렇지 오류가 메시지가 생성 됩니다. 조건부 컴파일 지시문에 포함 된 파일을 포함할 경우 동일한 조건을 만족 해야 합니다. 포함 파일의 끝에 일치 하지 않는 조건부 컴파일 지시문이 없는 이어야 합니다.
 
 매크로 대체 다음에 나오는 명령줄의 부분 안에서 수행 되는 **#elif** 매크로 호출에 사용할 수 있도록 명령을 *상수-식*.
 
@@ -97,7 +97,7 @@ ms.locfileid: "50520424"
 
 defined( `identifier` )
 
-defined `identifier`
+정의 `identifier`
 
 이 상수 식은 true (0이 아닌) 것으로 간주 됩니다는 *식별자* 현재 정의 된; 조건이 false 이면 그렇지 않은 경우 (0). 빈 텍스트로 정의된 식별자는 정의된 것으로 간주됩니다. 합니다 **정의** 지시문에서 사용할 수는 **#if** 및 **#elif** 지시문 되지만 다른 위치입니다.
 
@@ -174,7 +174,7 @@ class Example
 
 ## <a name="hasinclude"></a>__has_include
 
-**Visual Studio 2017 버전 15.3 이상**: 라이브러리 헤더를 포함 하기 위해 사용할 수 있는지 확인 합니다.
+**Visual Studio 2017 버전 15.3 이상:**  라이브러리 헤더를 포함 하기 위해 사용할 수 있는지 결정 합니다.
 
 ```cpp
 #ifdef __has_include
@@ -191,6 +191,6 @@ class Example
 #endif
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)

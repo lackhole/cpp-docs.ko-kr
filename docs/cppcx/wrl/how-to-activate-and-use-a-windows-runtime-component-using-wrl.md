@@ -3,12 +3,12 @@ title: '방법: 활성화 및 WRL을 사용 하 여 Windows 런타임 구성 요
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 54828f02-6af3-45d1-b965-d0104442f8d5
-ms.openlocfilehash: ccc64769ca319e8aba141ce95a00eb876cc051f3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 8c0bed825f76fdf0f2c5cc1fa095e54f08bb8a67
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785048"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037219"
 ---
 # <a name="how-to-activate-and-use-a-windows-runtime-component-using-wrl"></a>방법: 활성화 및 WRL을 사용 하 여 Windows 런타임 구성 요소를 사용 합니다.
 
@@ -78,6 +78,6 @@ Windows 런타임 사용을 간소화 하기 위해 Windows Runtime c + + 템플
 
 `cl.exe wrl-consume-component.cpp runtimeobject.lib`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows 런타임 C++ 템플릿 라이브러리(WRL)](windows-runtime-cpp-template-library-wrl.md)

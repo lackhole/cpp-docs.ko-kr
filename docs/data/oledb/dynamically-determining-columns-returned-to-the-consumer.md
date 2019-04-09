@@ -5,12 +5,12 @@ helpviewer_keywords:
 - bookmarks [C++], dynamically determining columns
 - dynamically determining columns [C++]
 ms.assetid: 58522b7a-894e-4b7d-a605-f80e900a7f5f
-ms.openlocfilehash: 7db319aa153cb281c8fd8b4eec16972f5ac0c2c9
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: 81353581d22f3d075fd19d783591ec856c21e241
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265180"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59037661"
 ---
 # <a name="dynamically-determining-columns-returned-to-the-consumer"></a>소비자에게 반환되는 열을 동적으로 결정
 
@@ -104,7 +104,7 @@ ATLCOLUMNINFO* CCustomWindowsFile::GetColumnInfo(void* pThis, ULONG* pcCols)
 }
 ```
 
-이 예제에서는 정적 배열 열 정보를 저장 합니다. 소비자는 책갈피 열을 표시 하려고 하지 않습니다, 경우 배열에 있는 하나의 항목을 사용 하지 않습니다. 정보를 처리 하려면 두 배열 매크로 만듭니다: ADD_COLUMN_ENTRY 및 ADD_COLUMN_ENTRY_EX 합니다. ADD_COLUMN_ENTRY_EX는 추가 매개 변수로 *플래그*되는 책갈피 열을 지정 하는 경우 필요 합니다.
+이 예제에서는 정적 배열 열 정보를 저장 합니다. 소비자는 책갈피 열을 표시 하려고 하지 않습니다, 경우 배열에 있는 하나의 항목을 사용 하지 않습니다. 정보를 처리 하려면 두 개의 배열 매크로 만들 수 있습니다. ADD_COLUMN_ENTRY 및 ADD_COLUMN_ENTRY_EX 합니다. ADD_COLUMN_ENTRY_EX는 추가 매개 변수로 *플래그*되는 책갈피 열을 지정 하는 경우 필요 합니다.
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
@@ -145,6 +145,6 @@ ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),
 
 이제 컴파일 및 향상 된 공급자를 실행할 수 있습니다. 에 설명 된 대로 공급자를 테스트 하려면 테스트 소비자를 수정 [단순 소비자 구현](../../data/oledb/implementing-a-simple-consumer.md)합니다. 공급자를 사용 하 여 테스트 소비자를 실행 하 고 테스트 소비자 공급자에서 적절 한 문자열을 검색 하는 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [단순한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>

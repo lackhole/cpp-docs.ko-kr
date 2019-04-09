@@ -19,12 +19,12 @@ helpviewer_keywords:
 - IRowsetCreatorImpl class
 - SetSite method
 ms.assetid: 92cc950f-7978-4754-8d9a-defa63867d82
-ms.openlocfilehash: 8e3d5b3ff01dd37eec9f00dac2f2ce28013fc258
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3dc5cb06b3eb7f01667e4e1ec09dd60f9befae77
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659678"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026606"
 ---
 # <a name="irowsetcreatorimpl-class"></a>IRowsetCreatorImpl 클래스
 
@@ -59,7 +59,7 @@ class ATL_NO_VTABLE IRowsetCreatorImpl
 
 이 클래스에서 상속 [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) 재정의 [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite)합니다. 공급자 명령 또는 세션 개체를 행 집합을 만들 때 호출 `QueryInterface` 행 집합 개체에서 `IObjectWithSite` 호출 `SetSite` 행 집합 개체를 전달 `IUnkown` 사이트 인터페이스와 인터페이스입니다.
 
-## <a name="setsite"></a> Irowsetcreatorimpl:: Setsite
+## <a name="setsite"></a> IRowsetCreatorImpl::SetSite
 
 행 집합 개체를 포함 하는 사이트를 설정 합니다. 자세한 내용은 [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite)합니다.
 
@@ -82,7 +82,7 @@ STDMETHOD(SetSite )(IUnknown* pCreator);
 
 또한 `IRowsetCreatorImpl::SetSite` OLE DB를 사용 하면 `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS` 속성입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

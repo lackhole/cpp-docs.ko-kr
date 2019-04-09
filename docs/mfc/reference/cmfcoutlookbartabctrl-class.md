@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CMFCOutlookBarTabCtrl [MFC], SetToolbarImageList
 - CMFCOutlookBarTabCtrl [MFC], SetVisiblePageButtons
 ms.assetid: b1f2b3f7-cc59-49a3-99d8-7ff9b37c044b
-ms.openlocfilehash: 01effb8cb1142db0bcae6f9c456e4a3b3abd69e8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: c791f3988c7257ed7d188917394e74a6dbeca98b
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269944"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58776806"
 ---
 # <a name="cmfcoutlookbartabctrl-class"></a>CMFCOutlookBarTabCtrl Class
 
@@ -109,7 +109,7 @@ class CMFCOutlookBarTabCtrl : public CMFCBaseTabCtrl
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 초기화 하는 방법을 보여 줍니다는 `CMFCOutlookBarTabCtrl` 개체에서 다양 한 메서드를 사용 하는 `CMFCOutlookBarTabCtrl` 클래스입니다. 이 예제에서는 Outlook 표시줄의 탭 페이지 단추에 텍스트 레이블의 내부 편집을 사용 하도록 설정, 애니메이션을 사용 하도록 설정, 사용자가 Outlook 표시줄 창에 단추를 스크롤하여, Outlook 탭 cont 테두리 크기를 설정할 수 있는 스크롤 핸들을 사용 하도록 설정 rol, 및 Outlook 표시줄 탭 단추의 텍스트 레이블의 맞춤을 설정 합니다. 이 코드 조각은의 일부인 합니다 [Outlook 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 초기화 하는 방법을 보여 줍니다는 `CMFCOutlookBarTabCtrl` 개체에서 다양 한 메서드를 사용 하는 `CMFCOutlookBarTabCtrl` 클래스입니다. 이 예제에서는 Outlook 표시줄의 탭 페이지 단추에 텍스트 레이블의 내부 편집을 사용 하도록 설정, 애니메이션을 사용 하도록 설정, 사용자가 Outlook 표시줄 창에 단추를 스크롤하여, Outlook 탭 cont 테두리 크기를 설정할 수 있는 스크롤 핸들을 사용 하도록 설정 rol, 및 Outlook 표시줄 탭 단추의 텍스트 레이블의 맞춤을 설정 합니다. 이 코드 조각은의 일부인 합니다 [Outlook 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_OutlookDemo#1](../../mfc/reference/codesnippet/cpp/cmfcoutlookbartabctrl-class_1.cpp)]
 [!code-cpp[NVC_MFC_OutlookDemo#2](../../mfc/reference/codesnippet/cpp/cmfcoutlookbartabctrl-class_2.cpp)]
@@ -170,7 +170,7 @@ Outlook 표시줄의 새 페이지로 컨트롤을 추가 하려면이 함수를
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `AddControl` 의 메서드는 `CMFCOutlookBarTabCtrl` 클래스입니다. 이 코드 조각은의 일부인 합니다 [Outlook 데모 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 사용 하는 방법에 설명 합니다 `AddControl` 의 메서드는 `CMFCOutlookBarTabCtrl` 클래스입니다. 이 코드 조각은의 일부인 합니다 [Outlook 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_OutlookDemo#3](../../mfc/reference/codesnippet/cpp/cmfcoutlookbartabctrl-class_3.cpp)]
 
@@ -508,6 +508,6 @@ void SetVisiblePageButtons(int nVisiblePageButtons);
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md)<br/>
+[CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md)<br/>
 [CMFCOutlookBar 클래스](../../mfc/reference/cmfcoutlookbar-class.md)<br/>
 [CMFCOutlookBarPane 클래스](../../mfc/reference/cmfcoutlookbarpane-class.md)

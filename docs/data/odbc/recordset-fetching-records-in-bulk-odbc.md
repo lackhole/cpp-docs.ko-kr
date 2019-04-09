@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 대량 레코드 페치(ODBC)'
+title: '레코드 집합: (ODBC) 대량 레코드 페치'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - bulk row fetching, implementing
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - rowsets, bulk row fetching
 - RFX (ODBC), bulk row fetching
 ms.assetid: 20d10fe9-c58a-414a-b675-cdf9aa283e4f
-ms.openlocfilehash: 55a89a66b36d12e6341b85d7dfa655b299638fcd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2fdcbf18fcb0d97ba7b2a39aa9bbbd79e65a4112
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628204"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027768"
 ---
-# <a name="recordset-fetching-records-in-bulk-odbc"></a>레코드 집합: 대량 레코드 페치(ODBC)
+# <a name="recordset-fetching-records-in-bulk-odbc"></a>레코드 집합: (ODBC) 대량 레코드 페치
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 클래스 `CRecordset` 즉, 여러 레코드 데이터 원본에서 한 번에 하나의 레코드를 검색 하지 않고 단일 인출 하는 동안 한 번에 검색할 수 있습니다는 대량 행 페치에 대 한 지원을 제공 합니다. 파생 된만 대량 행 페치를 구현할 수 있습니다 `CRecordset` 클래스입니다. 레코드 집합 개체를 데이터 원본에서 데이터 전송 프로세스에 대량 레코드 필드 교환 (대량 RFX) 라고 합니다. 대량 행 페치를 사용 하지 않는 경우는 `CRecordset`-파생된 클래스에서 데이터 레코드 필드 교환 (RFX)를 통해 전송 됩니다. 자세한 내용은 [Exchange RFX (레코드 필드)](../../data/odbc/record-field-exchange-rfx.md)합니다.
 
@@ -137,9 +137,9 @@ void MultiRowSet::DoBulkFieldExchange( CFieldExchange* pFX )
 > [!NOTE]
 >  호출 해야 합니다 `Close` 전에 파생 된 멤버 함수 `CRecordset` 클래스 범위를 벗어납니다. 이렇게 하면 프레임 워크에 의해 할당 된 메모리 해제 됩니다. 더 좋은 프로그래밍 항상 명시적으로 호출 하는 방법은 `Close`대량 행 페치 구현 여부에 관계 없이 합니다.
 
-레코드 필드 교환 (RFX)에 대 한 자세한 내용은 참조 하세요. [레코드 필드 교환: RFX 작동 방식](../../data/odbc/record-field-exchange-how-rfx-works.md)합니다. 매개 변수를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) 및 [레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)합니다.
+레코드 필드 교환 (RFX)에 대 한 자세한 내용은 참조 하세요. [레코드 필드 교환: RFX 작동 방식](../../data/odbc/record-field-exchange-how-rfx-works.md)합니다. 매개 변수를 사용 하는 방법에 대 한 자세한 내용은 참조 하십시오 [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) 고 [레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [CRecordset::m_nFields](../../mfc/reference/crecordset-class.md#m_nfields)<br/>

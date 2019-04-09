@@ -5,12 +5,12 @@ helpviewer_keywords:
 - custom attributes
 - custom attributes, defining
 ms.assetid: af9998a5-aa12-4b94-9a43-97ce99026e29
-ms.openlocfilehash: bfd09ee0a53b0677bc53bede918b9a4972a3abba
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: fbb1c629f23c5d70a78d62db2a3634cbfc489967
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58777391"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034052"
 ---
 # <a name="custom-attributes-c"></a>사용자 지정 특성(C++)
 
@@ -22,7 +22,7 @@ ms.locfileid: "58777391"
 
 - [특성](attribute.md) (구문 사용 되지 않음).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[attribute](attribute.md)<br/>
+[특성](attribute.md)<br/>
 [사용자 지정 특성(C++)](custom-attributes-cpp.md)

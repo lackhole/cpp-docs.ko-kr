@@ -8,12 +8,12 @@ helpviewer_keywords:
 - runtime_checks pragma
 - pragmas, runtime_checks
 ms.assetid: ae50b43f-f88d-47ad-a2db-3389e9e7df5b
-ms.openlocfilehash: 38df7ccc384830bb547c11e1a3d5458a1298574c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 44c26fb90a2d2f9ba78ec7dba7cceed65a4b4ed7
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547370"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59027085"
 ---
 # <a name="runtimechecks"></a>runtime_checks
 [/RTC](../build/reference/rtc-run-time-error-checks.md) 설정을 사용할 수 없도록 설정하거나 복원합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "50547370"
 
 |매개 변수|런타임 검사 형식|
 |--------------------|-----------------------------|
-|*s*|스택(프레임)을 확인하도록 설정합니다.|
+|*초*|스택(프레임)을 확인하도록 설정합니다.|
 |*c*|데이터 손실이 발생하는 더 작은 데이터 형식에 값이 할당되는 경우 이를 보고합니다.|
 |*u*|정의되기 전에 변수를 사용하면 보고합니다.|
 
@@ -60,6 +60,6 @@ ms.locfileid: "50547370"
 #pragma runtime_checks( "", restore )
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

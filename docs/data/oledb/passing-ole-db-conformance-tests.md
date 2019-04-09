@@ -8,12 +8,12 @@ helpviewer_keywords:
 - conformance testing [OLE DB]
 - OLE DB providers, testing
 ms.assetid: d1a4f147-2edd-476c-b452-0e6a0ac09891
-ms.openlocfilehash: 7365176df314baf40ac1cc1ed53936598f05c79e
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: 9f78b16bc30651560137a39286460a8e5ceccd40
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265076"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59036999"
 ---
 # <a name="passing-ole-db-conformance-tests"></a>OLE DB 적합성 테스트 통과
 
@@ -54,6 +54,6 @@ HRESULT ValidateCommandID(DBID* pTableID, DBID* pIndexID)
 
 추가할 수도 있습니다는 `IsValidValue` 일상적인 코드입니다. 템플릿 호출 `IsValidValue` 속성을 설정 하려고 할 때입니다. 속성 값을 설정 하는 경우 추가 처리가 필요한 경우이 메서드를 재정의 됩니다. 각 속성 집합에 대해 이러한 메서드 중 하나가 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [고급 공급자 기술](../../data/oledb/advanced-provider-techniques.md)

@@ -1,5 +1,5 @@
-﻿---
-title: '연습: 표준 C++ 프로그램(C++) 만들기'
+---
+title: '연습: 표준 c + + 프로그램 (c + +) 만들기'
 ms.custom: get-started-article
 ms.date: 09/18/2018
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - command-line applications [C++], standard
 - standard applications [C++]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
-ms.openlocfilehash: 78d19a277f8bedcdbd098a662c69d6fc622a7cff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d58d23e757a97402985ef60badf551523c0a275e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647471"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59030623"
 ---
-# <a name="walkthrough-creating-a-standard-c-program-c"></a>연습: 표준 C++ 프로그램(C++) 만들기
+# <a name="walkthrough-creating-a-standard-c-program-c"></a>연습: 표준 c + + 프로그램 (c + +) 만들기
 
 표준 C++ 프로그램을 만들어 Visual Studio 통합 개발 환경(IDE)에서 Visual C++를 사용할 수 있습니다. 이 연습의 단계를 수행 하 여 프로젝트 만들기에 추가할 수 있습니다 새 파일을 프로젝트에 c + + 코드를 추가 하 고 컴파일 및 Visual Studio를 사용 하 여 프로그램을 실행 하려면 파일을 수정 합니다.
 
@@ -38,7 +38,7 @@ Visual c + + 주요 예외가 2003 c + + 표준에 따릅니다: 2 단계 이름
 1. 에 **Visual c + +** 프로젝트 형식 창에서 클릭 **Windows Desktop**를 클릭 하 고 **Windows 콘솔 응용 프로그램**.
 
    > [!NOTE]
-   > Visual Studio 2017 년 보다 오래 된 버전에 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**  >  **Visual c + +** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 콘솔 응용 프로그램**을 선택합니다.
+   > Visual Studio 2017 년 보다 오래 된 버전에 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**  >  **Visual c + +** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 콘솔 애플리케이션**을 선택합니다.
 
    프로젝트 이름을 입력합니다. 
 
@@ -74,10 +74,10 @@ Visual c + + 주요 예외가 2003 c + + 표준에 따릅니다: 2 단계 이름
 
 ## <a name="next-steps"></a>다음 단계
 
-**이전:** [콘솔 Visual c + +에서 응용 프로그램](../windows/console-applications-in-visual-cpp.md)<br/>
-**다음:** [연습: 명령줄에서 네이티브 c + + 프로그램 컴파일](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
+**이전:** [Visual C++의 콘솔 애플리케이션](../windows/console-applications-in-visual-cpp.md)<br/>
+**다음:** [연습: 명령줄에서 네이티브 C++ 프로그램 컴파일](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>

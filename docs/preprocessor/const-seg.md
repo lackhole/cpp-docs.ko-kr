@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, const_seg
 - const_seg pragma
 ms.assetid: 1eb58ee2-fb0e-4a39-9621-699c8f5ef957
-ms.openlocfilehash: ce932b068f5751b7cf1ceab969312defd18336f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c58f154f5e1ab6906b45d59f454a7dc2b5c0bfbe
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648346"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029624"
 ---
 # <a name="constseg"></a>const_seg
 세그먼트를 지정 합니다. 여기서 [const](../cpp/const-cpp.md) 변수.obj 파일에 저장 됩니다.
@@ -32,15 +32,15 @@ ms.locfileid: "50648346"
 **pop**<br/>
 (선택 사항) 내부 컴파일러 스택의 맨 위에서 레코드를 제거합니다.
 
-*identifier*<br/>
+*식별자*<br/>
 (선택 사항) 와 함께 사용할 때 **푸시**, 내부 컴파일러 스택의 레코드에 이름을 할당 합니다. 와 함께 사용할 때 **pop**, 될 때까지 내부 스택에서 기록을 팝 *식별자* 가 제거 *식별자* 없는 내부 스택에서 아무 것도 팝 합니다.
 
 사용 하 여 *식별자* 여러 레코드는 단일으로 팝 될 수 있습니다 **pop** 명령입니다.
 
-"*세그먼트 이름이*"<br/>
+"*segment-name*"<br/>
 (선택 사항) 세그먼트의 이름입니다. 와 함께 사용할 경우 **pop**, 스택이 팝 되 고 *세그먼트 이름이* 활성 세그먼트 이름이 됩니다.
 
-"*세그먼트 클래스*"<br/>
+"*segment-class*"<br/>
 (선택 사항) 버전 2.0 이전의 c + +를 사용 하 여 호환성을 위해 포함 되어 있습니다. 무시됩니다.
 
 ## <a name="remarks"></a>설명
@@ -51,7 +51,7 @@ OBJ 파일을 사용 하 여 볼 수 있습니다 합니다 [dumpbin](../build/r
 
 `const_seg`에 동적 초기화가 필요한 개체를 정의하면 정의되지 않은 동작이 발생합니다.
 
-매개 변수 없는 `#pragma const_seg`는 세그먼트를 .rdata로 다시 설정합니다.
+`#pragma const_seg` 매개 변수가 없는 세그먼트를.rdata로 다시 설정합니다.
 
 ## <a name="example"></a>예제
 
@@ -95,6 +95,6 @@ test4
 
 초기화 된 데이터에 대 한 섹션도 지정할 수 있습니다 ([data_seg](../preprocessor/data-seg.md)), 초기화 되지 않은 데이터 ([bss_seg](../preprocessor/bss-seg.md)), 및 함수 ([code_seg](../preprocessor/code-seg.md)).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -52,12 +52,12 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: e1f461cc850a2122af7902babfad8f1e14ac3e33
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: d890b62e4e4aabb9f8ca7ebb9d3051c53febd91f
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424849"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59026794"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl 클래스
 
@@ -91,7 +91,7 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
 |[취소](#cancel)|현재 명령 실행을 취소합니다.|
 |[CancelExecution](#cancelexecution)|현재 명령 실행을 취소합니다.|
 |[CreateRowset](#createrowset)|행 집합 개체를 만듭니다.|
-|[Execute](#execute)|명령을 실행합니다.|
+|[실행](#execute)|명령을 실행합니다.|
 |[GetDBSession](#getdbsession)|명령을 만든 세션에 대 한 인터페이스 포인터를 반환 합니다.|
 |[ICommandImpl](#icommandimpl)|생성자입니다.|
 
@@ -275,7 +275,7 @@ unsigned m_bIsExecuting:1;
 
 합니다 `Execute` 명령 클래스의 메서드이 변수를 설정할 수 있습니다 **true**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

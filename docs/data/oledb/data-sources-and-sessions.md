@@ -6,12 +6,12 @@ helpviewer_keywords:
 - connections [C++], data source
 - OLE DB consumer templates [C++], data sources
 ms.assetid: 6ee52216-e082-4869-a1d6-ce561cfb76e5
-ms.openlocfilehash: c43061ccb462fe472821c76251430b5e3b0f0809
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 2c11230d106b50e8120dfa9f4e283e97700d2739
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175303"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59040110"
 ---
 # <a name="data-sources-and-sessions"></a>데이터 소스 및 세션
 
@@ -28,6 +28,6 @@ ms.locfileid: "52175303"
 
 - [CSession](../../data/oledb/csession-class.md)  이 클래스는 데이터 소스로의 단일 액세스 세션을 나타내는 세션 개체를 인스턴스화합니다. 그러나 데이터 소스에 여러 세션을 만들 수 있습니다. 각 세션마다 데이터 소스의 데이터에 액세스하기 위해 행 집합, 명령 및 기타 개체를 만들 수 있습니다. 세션은 트랜잭션을 처리합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)

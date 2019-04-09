@@ -10,16 +10,16 @@ helpviewer_keywords:
 - members, pointers to
 - pointers_to_members pragma
 ms.assetid: 8325428c-c90a-4aed-9e82-cb1dda23f4ca
-ms.openlocfilehash: 57b316fafd6f55a5979cd42fb6ac1825e3a9ea08
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ee45a77a7094fb1ef9ba536bae391aaad00e812
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511074"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59032065"
 ---
 # <a name="pointerstomembers"></a>pointers_to_members
 
-**C + + 전용**
+**C++ 전용**
 
 연결된 클래스 정의 앞에 클래스 멤버의 포인터를 선언할 수 있으며 이 포인터를 사용하여 포인터 크기 및 포인터를 해석하는 데 필요한 코드를 제어하는지 여부를 지정합니다.
 
@@ -60,6 +60,6 @@ ms.locfileid: "50511074"
 
 ## <a name="end-c-specific"></a>C++ 전용 종료
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - inheritance [C++]
 - RCustomRowset
 ms.assetid: 33089c90-98a4-43e7-8e67-d4bb137e267e
-ms.openlocfilehash: 34eb07611ebfff09918d62273d4ca4a8c9cf4f7b
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: d22c6902667ec84abe7bd85ffbffd1f5c5c57f2a
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265154"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59024870"
 ---
 # <a name="modifying-the-inheritance-of-rcustomrowset"></a>RCustomRowset의 상속 수정
 
@@ -52,6 +52,6 @@ class CCustomRowset : public CMyRowsetImpl<CCustomRowset, CCustomWindowsFile, CC
 
 이 작업을 수행할 수 있습니다 [소비자에 게 반환 되는 열을 동적으로 결정](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [단순한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>

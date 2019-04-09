@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMouseManager [MFC], SaveState
 - CMouseManager [MFC], SetCommandForDblClk
 ms.assetid: a4d05017-4e44-4a40-8b57-4ece0de20481
-ms.openlocfilehash: d58293b94eeaf499c48f750972b15256e9c19794
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f92a72e36fecbb39e57cbdf9583047aca0c1ebd5
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293188"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58773738"
 ---
 # <a name="cmousemanager-class"></a>CMouseManager 클래스
 
@@ -117,7 +117,7 @@ BOOL AddView(
 
 ### <a name="example"></a>예제
 
-다음 예제에 대 한 포인터를 검색 하는 방법을 보여 줍니다는 `CMouseManager` 사용 하 여 개체를 `CWinAppEx::GetMouseManager` 메서드 및 `AddView` 에서 메서드를 `CMouseManager` 클래스입니다. 이 코드 조각은의 일부인 합니다 [상태 컬렉션 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에 대 한 포인터를 검색 하는 방법을 보여 줍니다는 `CMouseManager` 사용 하 여 개체를 `CWinAppEx::GetMouseManager` 메서드 및 `AddView` 에서 메서드를 `CMouseManager` 클래스입니다. 이 코드 조각은의 일부인 합니다 [상태 컬렉션 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_StateCollection#4](../../mfc/reference/codesnippet/cpp/cmousemanager-class_1.cpp)]
 

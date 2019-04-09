@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMDIChildWnd [MFC], MDIRestore
 - CMDIChildWnd [MFC], SetHandles
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
-ms.openlocfilehash: efcf5057481345c001cc48224f53c666623d0780
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 13f027e68184a4869e88883ff8b8d3b123b94e3e
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304992"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "58774587"
 ---
 # <a name="cmdichildwnd-class"></a>CMDIChildWnd 클래스
 
@@ -93,7 +93,7 @@ C + +를 사용 하지 마세요 **삭제** 프레임 창 제거 하는 연산�
 
 에 대 한 자세한 `CMDIChildWnd`를 참조 하세요 [프레임 Windows](../../mfc/frame-windows.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -287,9 +287,9 @@ MDI 자식 창 개체에서 사용 하는 메뉴 및 바로 가기 리소스를 
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 MDI](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CFrameWnd 클래스](../../mfc/reference/cframewnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

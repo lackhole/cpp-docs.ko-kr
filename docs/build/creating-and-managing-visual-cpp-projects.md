@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: a3ddafab143224b6e20a3e01d1d643c42bbe19e0
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: b4772b9bd625a542a18039386fefe42840ab65b1
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58775324"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59038040"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio 프로젝트-C++
 
@@ -60,10 +60,10 @@ Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자�
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)<br/>
+[Visual Studio에서 속성을 빌드하고 C++ 컴파일러를 설정 합니다.](working-with-project-properties.md)<br/>
 프로젝트 설정을 지정 하려면 속성 페이지 및 속성 시트를 사용 하는 방법입니다.
 
-[빌드 시 참조 라이브러리 및 구성 요소](adding-references-in-visual-cpp-projects.md)<br/>
+[참조 라이브러리 및 빌드 시 구성 요소](adding-references-in-visual-cpp-projects.md)<br/>
 프로젝트에 라이브러리를 Dll에 COM 및.NET 구성 요소를 포함 하는 방법.
  
 [프로젝트 출력 파일 구성](how-to-organize-project-output-files-for-builds.md)<br/>
@@ -75,6 +75,6 @@ Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자�
 [기존 코드로 프로젝트 만들기](how-to-create-a-cpp-project-from-existing-code.md)<br/>
 소스 파일의 느슨한 컬렉션에서 새 Visual Studio 프로젝트를 만드는 방법입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프로젝트 및 빌드 시스템](projects-and-build-systems-cpp.md)<br>

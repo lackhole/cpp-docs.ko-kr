@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - range attribute
 ms.assetid: f352f79e-ecb3-4cdd-9cdd-8406ef473594
-ms.openlocfilehash: b75915b901f55ce7ef8d295531ab5148c6535c93
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9ce941fe95f2bbef3895c039984db1e1d2985ae1
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644973"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59029540"
 ---
 # <a name="range-c"></a>range(C++)
 
@@ -25,10 +25,10 @@ ms.locfileid: "50644973"
 
 ### <a name="parameters"></a>매개 변수
 
-*low*<br/>
+*낮음*<br/>
 하위 범위의 값입니다.
 
-*high*<br/>
+*고가용성*<br/>
 범위 상한 값입니다.
 
 ## <a name="remarks"></a>설명
@@ -64,7 +64,7 @@ __interface ICustom {
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>

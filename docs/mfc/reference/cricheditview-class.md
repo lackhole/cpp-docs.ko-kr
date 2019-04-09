@@ -101,10 +101,10 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
 ms.openlocfilehash: 60eeaa2a37dd824ae418b25e95743c21c65ae7ce
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/05/2019
 ms.locfileid: "58773725"
 ---
 # <a name="cricheditview-class"></a>CRichEditView 클래스
@@ -298,7 +298,7 @@ BOOL FindText(
 *bWord*<br/>
 검색 단어 단위로 단어의 일부가 아니라 일치 해야 하는 경우를 나타냅니다.
 
-*bNext*<br/>
+*다음*<br/>
 검색 방향을 나타냅니다. TRUE 이면 검색 방향을 버퍼의 끝에 다가가입니다. FALSE 이면 검색 방향을 버퍼의 시작 부분입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -336,7 +336,7 @@ BOOL FindTextSimple(
 *bWord*<br/>
 검색 단어 단위로 단어의 일부가 아니라 일치 해야 하는 경우를 나타냅니다.
 
-*bNext*<br/>
+*다음*<br/>
 검색 방향을 나타냅니다. TRUE 이면 검색 방향을 버퍼의 끝에 다가가입니다. FALSE 이면 검색 방향을 버퍼의 시작 부분입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -786,7 +786,7 @@ virtual void OnFindNext(
 *lpszFind*<br/>
 찾을 문자열입니다.
 
-*bNext*<br/>
+*다음*<br/>
 검색 방향: TRUE 이면 중지 하도록 합니다. FALSE를 설정 합니다.
 
 *bCase*<br/>
@@ -932,7 +932,7 @@ virtual void OnReplaceSel(
 *lpszFind*<br/>
 바꿀 텍스트입니다.
 
-*bNext*<br/>
+*다음*<br/>
 검색의 방향을 나타냅니다. TRUE가입니다. FALSE를 설정 합니다.
 
 *bCase*<br/>
