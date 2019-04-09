@@ -4,12 +4,12 @@ ms.custom: how-to
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-ms.openlocfilehash: 2dada25ea712b7bb6d48d80525c824a0457b18cf
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: 37ebcc646864774b15513c9e1891ba14e0705298
+ms.sourcegitcommit: 35c4b3478f8cc310ebbd932a18963ad8ab846ed9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220555"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59237200"
 ---
 # <a name="how-to-design-for-exception-safety"></a>방법: 예외 안전성을 위한 디자인
 
@@ -23,7 +23,7 @@ ms.locfileid: "54220555"
 
 ### <a name="keep-resource-classes-simple"></a>리소스 클래스를 간단하게 유지
 
-클래스에 수동 리소스 관리를 캡슐화할 때는 각 리소스 관리만 수행하는 클래스를 사용합니다. 그렇지 않으면 누출이 발생할 수 있습니다. 사용 하 여 [스마트 포인터](../cpp/smart-pointers-modern-cpp.md) 가능한 경우 다음 예와에서 같이 합니다. 이 예제는 의도적으로 만들어졌으며, `shared_ptr`이 사용될 때의 차이점을 보여주기 위해 단순화한 것입니다.
+클래스에 수동 리소스 관리를 캡슐화 하는 경우에 단일 리소스를 관리 하 고 제외 하 고 아무 작업도 수행 하는 클래스를 사용 합니다. 클래스를 단순하게 유지, 리소스 누수를 도입 될 위험이 줄어듭니다. 사용 하 여 [스마트 포인터](../cpp/smart-pointers-modern-cpp.md) 가능한 경우 다음 예와에서 같이 합니다. 이 예제는 의도적으로 만들어졌으며, `shared_ptr`이 사용될 때의 차이점을 보여주기 위해 단순화한 것입니다.
 
 ```cpp
 // old-style new/delete version

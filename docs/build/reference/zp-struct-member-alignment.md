@@ -1,6 +1,6 @@
 ---
 title: /Zp(구조체 멤버 맞춤)
-ms.date: 12/17/2018
+ms.date: 04/04/2019
 f1_keywords:
 - /zp
 - VC.Project.VCCLCompilerTool.StructMemberAlignment
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /Zp compiler option [C++]
 - -Zp compiler option [C++]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
-ms.openlocfilehash: d30e61137fc5ff8f6a5501ac7815edafc18f7680
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: d76cd93c7af4228bff8f73fa3bcbf40fa149b0be
+ms.sourcegitcommit: 35c4b3478f8cc310ebbd932a18963ad8ab846ed9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807691"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59237166"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp(구조체 멤버 맞춤)
 
@@ -28,7 +28,7 @@ ms.locfileid: "57807691"
 
 ## <a name="remarks"></a>설명
 
-지정 하는 경우는 **/Zp**_n_ 옵션을 첫 번째 멤버 형식의 크기에 저장 된 이후의 각 구조체 멤버가 또는 *n*-바이트 경계 (여기서 *n* 는 1, 2, 4, 8 또는 16)를 더 작은 값입니다.
+합니다 **/Zp**_n_ 옵션을 각 구조체 멤버가 저장할 위치를 컴파일러에 지시 합니다. 첫 번째 멤버 유형 크기의 작은 경계에 멤버를 저장 하는 컴파일러 또는 *n*-바이트 경계입니다.
 
 사용 가능한 압축 값은 다음 표에 설명 되어 있습니다.
 
@@ -37,17 +37,17 @@ ms.locfileid: "57807691"
 |1|1 바이트 경계에서 구조체를 압축 합니다. 동일 **/Zp**합니다.|
 |2|2 바이트 경계에서 구조체를 압축 합니다.|
 |4|4 바이트 경계에서 구조체를 압축 합니다.|
-|8|8 바이트 경계 (기본값)에서 구조체를 압축 합니다.|
-|16| 16 바이트 경계에서 구조체를 압축 합니다.|
+|8|8 바이트 경계 (x86, ARM 및 ARM64 기본값)에서 구조체를 압축 합니다.|
+|16| (X64에 대 한 기본값) 16 바이트 경계에서 구조체를 압축 합니다.|
 
-특정 맞춤 요구 사항이 있는 아니라면이 옵션을 사용 하지 않아야 합니다.
+특정 맞춤 요구 사항이 있는 경우가 아니면이 옵션을 사용 하지 마세요.
 
 > [!WARNING]
-> Windows SDK의 c + + 헤더 가정 **/zp8** 압축 합니다. 메모리 손상이 경우 발생할 수 있습니다 합니다 **/Zp** Windows SDK 헤더를 사용 하는 경우 설정이 변경 됩니다.
+> Windows SDK의 c + + 헤더 집합 및 가정 **/zp8** 내부적으로 압축 합니다. 메모리 손상이 경우 발생할 수 있습니다 합니다 **/Zp** Windows SDK 헤더 내에서 설정을 변경 합니다. 헤더에서 영향을 받지 않습니다 **/Zp** 옵션이 명령줄에서 설정 합니다.
 
 사용할 수도 있습니다 [팩](../../preprocessor/pack.md) 컨트롤 구조체 압축 합니다. 정렬에 대한 자세한 내용은 다음을 참조하십시오.
 
-- [align(C++)](../../cpp/align-cpp.md)
+- [맞춤](../../cpp/align-cpp.md)
 
 - [__alignof 연산자](../../cpp/alignof-operator.md)
 
@@ -57,9 +57,9 @@ ms.locfileid: "57807691"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **C/c + +** > **코드 생성** 속성 페이지.
+1. 선택 된 **구성 속성** > **C/c + +** > **코드 생성** 속성 페이지.
 
 1. 수정 된 **구조체 멤버 맞춤** 속성입니다.
 
@@ -69,5 +69,5 @@ ms.locfileid: "57807691"
 
 ## <a name="see-also"></a>참고자료
 
-- [MSVC 컴파일러 옵션](compiler-options.md)
-- [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
+[MSVC 컴파일러 옵션](compiler-options.md) \
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
