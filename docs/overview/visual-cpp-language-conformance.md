@@ -5,18 +5,18 @@ ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 151ffecc0a9497d84b23a631477827ed2e86711a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 69591186550a915edb49889617740e454817f154
+ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58782336"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58898806"
 ---
 # <a name="visual-c-language-conformance"></a>Visual C++ 언어 규칙
 
 이 항목에서는 Visual Studio 2017 및 이전 버전의 C++ 컴파일러에 대한 컴파일러 기능 및 표준 라이브러리 기능의 ISO C++03, C++11, C++14, C++17 및 초안 C++20 언어 표준 규칙을 요약하고 있습니다. 각 컴파일러 및 표준 라이브러리 기능 이름은 기능을 설명하는 ISO C++ 표준 제안 문서에 연결됩니다(게시 시점에 사용 가능한 경우). [지원됨] 열에는 기능에 대한 지원이 먼저 표시되는 Visual Studio 버전이 나열됩니다.
 
-Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한 내용은 [Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md) 및 [Visual Studio 2017의 Visual C++에 대한 새로운 기능 ](what-s-new-for-visual-cpp-in-visual-studio.md)을 참조하세요. 이전 버전의 규칙 변경 내용에 대해서는 [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)(Visual C++ 주요 변경 내용) 및 [2003~ 2015 Visual C++ 주요 변경 내용](../porting/visual-cpp-what-s-new-2003-through-2015.md)을 참조하세요. C++ 팀의 최신 뉴스를 보려면 [Visual C++ 팀 블로그](https://blogs.msdn.microsoft.com/vcblog/)를 방문하세요.
+Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한 내용은 [Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements.md) 및 [Visual Studio 2017의 Visual C++에 대한 새로운 기능 ](what-s-new-for-visual-cpp-in-visual-studio.md)을 참조하세요. 이전 버전의 규칙 변경 내용에 대해서는 [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)(Visual C++ 주요 변경 내용) 및 [2003~ 2015 Visual C++ 주요 변경 내용](../porting/visual-cpp-what-s-new-2003-through-2015.md)을 참조하세요. C++ 팀의 최신 뉴스를 보려면 [Visual C++ 팀 블로그](https://blogs.msdn.microsoft.com/vcblog/)를 방문하세요.
 
 > [!NOTE]
 > Visual Studio 2015 ~ Visual Studio 2017에서 새로운 이진 변경 내용이 없습니다.
@@ -25,13 +25,13 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 
 |기능 영역| |
 |----|---|
-|__C++03/11 핵심 언어 기능__|__지원됨__|
+|__C++03/11 핵심 언어 기능__|__지원함__|
 |&nbsp;&nbsp;그 밖의 모든 항목|VS 2015 <sup>[A](#note_A)</sup>|
 |&nbsp;&nbsp;2단계 이름 조회|VS 2017 15.7 <sup>[B](#note_B)</sup>|
 |&nbsp;&nbsp;[N2634 Expression SFINAE](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2634.html)|VS 2017 15.7|
 |&nbsp;&nbsp;[N1653 C99 전처리기](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1653.htm)|부분 <sup>[D](#note_D)</sup>|
 |&nbsp;&nbsp;[N1988 확장된 정수 형식](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n1988.pdf)|해당 없음 <sup>[E](#note_E)</sup>|
-|__C++14 핵심 언어 기능__|__지원됨__|
+|__C++14 핵심 언어 기능__|__지원함__|
 |&nbsp;&nbsp;[N3323 컨텍스트 변환에 대해 조정된 표현](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3323.pdf)|VS 2013|
 |&nbsp;&nbsp;[N3472 이진 리터럴](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3472.pdf)|VS 2015|
 |&nbsp;&nbsp;[N3638 auto 및 decltype(auto) 반환 형식](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3638.html)|VS 2015|
@@ -44,7 +44,7 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 |&nbsp;&nbsp;[N3652 확장된 constexpr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3652.html)|VS 2017|
 |&nbsp;&nbsp;[N3653 집계에 대한 NSDMI](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3653.html)|VS 2017|
 |&nbsp;&nbsp;[N3664 할당 방지/융합](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3664.html)|해당 없음 <sup>[F](#note_F)</sup>|
-|__C++17 핵심 언어 기능__|__지원됨__|
+|__C++17 핵심 언어 기능__|__지원함__|
 |&nbsp;&nbsp;[N4086 삼중자 제거](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4086.html)|VS 2010 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[N3922 중괄호로 묶인 Init 목록을 사용한 auto에 대한 새 규칙](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3922.html)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[N4051 템플릿 template-parameters의 typename](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4051.html)|VS 2015 <sup>[14](#note_14)</sup>|
@@ -88,7 +88,7 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 
 |기능 영역| |
 |----|---|
-|__C++17 핵심 언어 기능(결함 보고서)__|__지원됨__|
+|__C++17 핵심 언어 기능(결함 보고서)__|__지원함__|
 |&nbsp;&nbsp;[P0702R1 이니셜라이저 목록 작업자(initializer-list actors)에 대한 클래스 템플릿 인수 추론 문제 해결(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0702r1.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0588R1 암시적 람다 캡처 단순화](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0588r1.html)|아니요|
 |&nbsp;&nbsp;[CWG 1581: constexpr 멤버 함수는 언제 정의되나요?](https://wg21.cmeerw.net/cwg/issue1581)|아니요|
@@ -98,7 +98,7 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 
 |기능 영역| |
 |----|---|
-|__C++20 핵심 언어 기능__|__지원됨__|
+|__C++20 핵심 언어 기능__|__지원함__|
 |&nbsp;&nbsp;[P0306R4 쉼표 생략 및 쉼표 삭제에&#95;&#95;VA_OPT&#95;&#95; 추가(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0306r4.html)|아니요|
 |&nbsp;&nbsp;[P0329R4 지정된 초기화(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf)|아니요|
 |&nbsp;&nbsp;[P0409R2 [=, this] 람다 캡처 허용(영문)](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0409r2.html)|아니요|
@@ -111,7 +111,7 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 
 |기능 영역| |
 |---|---|
-|__C++20 표준 라이브러리 기능__|__지원됨__|
+|__C++20 표준 라이브러리 기능__|__지원함__|
 |&nbsp;&nbsp; [P0777R1 불필요한 Decay 방지](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0777r1.pdf)|VS 2017 15.7 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0463R1 endian(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0463r1.html)|아니요|
 |&nbsp;&nbsp;[P0674R1 배열에 대한 make_shared()(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0674r1.html)|아니요|
@@ -135,7 +135,7 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 |&nbsp;&nbsp; [P0767R1 is_pod 사용 중단](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0767r1.html)|아니요|
 |&nbsp;&nbsp; [P0768R1 우주선 비교 연산자에 대한 라이브러리 지원 \<=>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0768r1.pdf)|아니요|
 |&nbsp;&nbsp; [P0966R1 string::reserve()는 축소하지 않아야 함](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0966r1.html)|아니요|
-|__C++17 표준 라이브러리 기능__|__지원됨__|
+|__C++17 표준 라이브러리 기능__|__지원함__|
 |&nbsp;&nbsp;[P0433R2 클래스 템플릿에 대한 템플릿 추론을 표준 라이브러리에 통합(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0433r2.html)<br />&nbsp;&nbsp;[P0739R0 표준 라이브러리에 클래스 템플릿 인수 추론 통합 향상(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html)|VS 2017 15.7|
 |&nbsp;&nbsp;[P0426R1 char_traits에 대한 constexpr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html)|VS 2017 15.7|
 |&nbsp;&nbsp;[P0030R1 hypot(x, y, z)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf)|VS 2017 15.7|
@@ -214,7 +214,7 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 |&nbsp;&nbsp;[N4389 bool_constant](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4389.html)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0063R3 C11 표준 라이브러리](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0063r3.html)|VS 2015 <sup>[C11](#note_C11), [14](#note_14)</sup>|
 |&nbsp;&nbsp;[N4510 vector/list/forward_list에서 불완전한 형식 지원](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4510.html)|VS 2013 <sup>[14](#note_14)</sup>|
-|__C++14 표준 라이브러리 기능__|__지원됨__|
+|__C++14 표준 라이브러리 기능__|__지원함__|
 |&nbsp;&nbsp;[N3462 SFINAE-Friendly result_of](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3462.html)|VS 2015.2|
 |&nbsp;&nbsp;[N3302 \<complex>에 대한 constexpr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3302.html)|VS 2015|
 |&nbsp;&nbsp;[N3469 \<chrono>에 대한 constexpr](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3469.html)|VS 2015|
@@ -315,8 +315,8 @@ __VS 2017 15.7__는 Visual Studio 2017 버전 15.7에서 지원되는 기능을 
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
-[Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md)<br/>
-[Visual Studio 2017의 Visual C++에 대한 새로운 기능](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-[2003~ 2015 Visual C++ 주요 변경 내용](../porting/visual-cpp-change-history-2003-2015.md)<br/>
-[Visual C++ 2003 ~ 2015의 새로운 기능](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
+[Visual Studio의 C++ 규칙 향상](cpp-conformance-improvements.md)<br/>
+[Visual Studio의 Visual C++에 대한 새로운 기능](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[Visual C++ 2003~2015의 주요 변경 내용](../porting/visual-cpp-change-history-2003-2015.md)<br/>
+[Visual C++ 2003~2015의 새로운 기능](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
 [Visual C++ 팀 블로그](https://blogs.msdn.microsoft.com/vcblog/)
