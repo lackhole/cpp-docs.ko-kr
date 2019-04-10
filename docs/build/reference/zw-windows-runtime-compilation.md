@@ -1,6 +1,6 @@
 ---
 title: /ZW(Windows Runtime 컴파일)
-ms.date: 11/04/2016
+ms.date: 04/08/2019
 f1_keywords:
 - VC.Project.VCCLCompilerTool.CompileAsWinRT
 - /zw
@@ -11,16 +11,16 @@ helpviewer_keywords:
 - -ZW
 - Windows Runtime compiler option
 ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248
-ms.openlocfilehash: a16482cf8d21651db9486ab19c347a4ccadf5279
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 73295866004fd506fd5f06ff25c048d14b821016
+ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809433"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59424042"
 ---
 # <a name="zw-windows-runtime-compilation"></a>/ZW(Windows Runtime 컴파일)
 
-컴파일을 지원 하도록 소스 코드 Visual c + + 구성 요소 확장의 C + + 유니버설 Windows 플랫폼 (UWP) 앱을 만들 CX 합니다.
+소스 시각적 개체를 지원 하기 위해 코드를 컴파일합니다 C++ 구성 요소 확장 C++유니버설 Windows 플랫폼 (UWP) 앱을 만들 /CX입니다.
 
 사용 하는 경우 **/ZW** 컴파일하려면를 항상 지정 **/EHsc** 도 합니다.
 
@@ -44,9 +44,9 @@ Platform.winmd, Windows.Foundation.winmd 및 기타 기본 Windows 메타데이�
 
 - Windows 런타임 개체의 참조 횟수 및 해당 참조 횟수가 0이 되 면 개체의 삭제 자동 자동입니다.
 
-Incremental linker를 사용 하 여.obj 파일에 포함 된 Windows 메타 데이터를 지원 하지 않으므로 합니다 **/ZW** 옵션을 합니다 [/Gm (최소 다시 빌드 사용)](gm-enable-minimal-rebuild.md) 옵션이 호환 되지 않습니다. **/ZW** .
+Incremental linker를 사용 하 여.obj 파일에 포함 된 Windows 메타 데이터를 지원 하지 않으므로 합니다 **/ZW** 옵션을 사용 되지 않는 [/Gm (최소 다시 빌드 사용)](gm-enable-minimal-rebuild.md) 옵션 와호환되지않습니다.**/ZW**합니다.
 
-자세한 내용은 [Visual c + + 언어 참조](../../cppcx/visual-c-language-reference-c-cx.md)합니다.
+자세한 내용은 [시각적 C++ 언어 참조](../../cppcx/visual-c-language-reference-c-cx.md)합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,6 +1,6 @@
 ---
 title: /Z7, /Zi, /ZI(디버깅 정보 형식)
-ms.date: 02/22/2018
+ms.date: 04/08/2019
 f1_keywords:
 - VC.Project.VCCLCompilerTool.DebugInformationFormat
 - /ZI
@@ -23,12 +23,12 @@ helpviewer_keywords:
 - line numbers only compiler option [C++]
 - cl.exe compiler, debugging options
 - -Z7 compiler option [C++]
-ms.openlocfilehash: 1beab7cb1e8e654d25620eb59a9326f5628ce047
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: e809c7af7465cde98db11eac8628b76d04f7e8b5
+ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816323"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59424081"
 ---
 # <a name="z7-zi-zi-debug-information-format"></a>/Z7, /Zi, /ZI(디버깅 정보 형식)
 
@@ -52,7 +52,7 @@ ms.locfileid: "57816323"
 
 타사 라이브러리의 디버그 버전의 배포자의 경우이 점으로 손꼽을 PDB 파일을 사용할 필요가 있습니다. 그러나 미리 컴파일된 헤더에 대 한 개체 파일은 라이브러리 링크 단계에서는 및 디버깅을 위해 필요 합니다. 있으면.pch 개체 파일에 정보 (및 코드 없음)을 입력만 사용 해야 합니다 [/Yl (PCH 참조 삽입 디버그 라이브러리에 대 한)](yl-inject-pch-reference-for-debug-library.md) 라이브러리를 빌드할 때 기본적으로 사용 되는 옵션입니다.
 
-합니다 [/Gm (최소 다시 빌드 사용)](gm-enable-minimal-rebuild.md) 때 옵션이 제공 되지 않습니다 **/z7** 지정 됩니다.
+사용 되지 않는 [/Gm (최소 다시 빌드 사용)](gm-enable-minimal-rebuild.md) 때 옵션이 제공 되지 않습니다 **/z7** 지정 됩니다.
 
 ### <a name="zi"></a>/ZI
 
@@ -79,9 +79,9 @@ ms.locfileid: "57816323"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 엽니다는 **구성 속성** > **C/c + +** > **일반** 속성 페이지.
+1. 엽니다는 **구성 속성** > **C /C++** > **일반** 속성 페이지.
 
 1. 수정 된 **디버그 정보 형식** 속성입니다. **확인**을 선택하여 변경 내용을 저장합니다.
 
