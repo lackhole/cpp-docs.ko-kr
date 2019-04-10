@@ -1,4 +1,4 @@
----
+﻿---
 title: /execution-charset (실행 문자 집합 설정)
 ms.date: 02/06/2019
 f1_keywords:

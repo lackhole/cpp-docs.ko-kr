@@ -1,14 +1,14 @@
 ---
 title: 컴파일러 옵션 사전순 목록
-ms.date: 08/20/2018
+ms.date: 04/08/2019
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 6175d62938534e790fb60b300ff55ad031da5801
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: d8ab1cbac7ad8eb44f16c7829ccac20a6d3e73ff
+ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811942"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59424120"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
@@ -39,17 +39,17 @@ ms.locfileid: "57811942"
 |[/F](f-set-stack-size.md)|스택 크기를 설정합니다.|
 |[/favor](favor-optimize-for-architecture-specifics.md)|특정 x64에 최적화 된 코드 생성 아키텍처 또는 AMD64 및 확장 메모리 64 Em64t 아키텍처에서 마이크로 아키텍처 사양입니다.|
 |[/FA](fa-fa-listing-file.md)|목록 파일을 만듭니다.|
-|[/Fa](fa-fa-listing-file.md)|목록 파일 이름을 설정합니다.|
+|[/FA](fa-fa-listing-file.md)|목록 파일 이름을 설정합니다.|
 |[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|진단 텍스트에서 cl.exe에 전달된 소스 코드 파일의 전체 경로를 표시합니다.|
 |[/Fd](fd-program-database-file-name.md)|프로그램 데이터베이스 파일 이름을 바꿉니다.|
 |[/Fe](fe-name-exe-file.md)|실행 파일 이름을 바꿉니다.|
 |[/FI](fi-name-forced-include-file.md)|지정된 포함 파일을 전처리합니다.|
-|[/Fi](fi-preprocess-output-file-name.md)|전처리된 출력 파일 이름을 설정합니다.|
+|[/FI](fi-preprocess-output-file-name.md)|전처리된 출력 파일 이름을 설정합니다.|
 |[/Fm](fm-name-mapfile.md)|맵 파일을 만듭니다.|
 |[/Fo](fo-object-file-name.md)|개체 파일을 만듭니다.|
 |[/fp](fp-specify-floating-point-behavior.md)|부동 소수점 동작을 지정합니다.|
-|[/Fp](fp-name-dot-pch-file.md)|미리 컴파일된 헤더 파일 이름을 지정합니다.|
-|[/FR](fr-fr-create-dot-sbr-file.md)<br /><br /> [/Fr](fr-fr-create-dot-sbr-file.md)|브라우저 파일을 생성합니다. **/Fr** 은 사용되지 않습니다.|
+|[/fp](fp-name-dot-pch-file.md)|미리 컴파일된 헤더 파일 이름을 지정합니다.|
+|[/FR](fr-fr-create-dot-sbr-file.md)<br /><br /> [/FR](fr-fr-create-dot-sbr-file.md)|브라우저 파일을 생성합니다. **/Fr** 은 사용되지 않습니다.|
 |[/FS](fs-force-synchronous-pdb-writes.md)|MSPDBSRV.EXE를 통해 serialize될 프로그램 데이터베이스(PDB) 파일에 강제로 씁니다.|
 |[/FU](fu-name-forced-hash-using-file.md)|파일 이름이 [#using](../../preprocessor/hash-using-directive-cpp.md) 지시문에 전달된 것처럼 사용되도록 합니다.|
 |[/Fx](fx-merge-injected-code.md)|삽입된 코드와 소스 파일을 병합합니다.|
@@ -58,13 +58,13 @@ ms.locfileid: "57811942"
 |[/Ge](ge-enable-stack-probes.md)|더 이상 사용되지 않습니다. 스택 프로브를 활성화합니다.|
 |[/GF](gf-eliminate-duplicate-strings.md)|문자열 풀링을 사용합니다.|
 |[/GH](gh-enable-pexit-hook-function.md)|후크 함수 `_pexit`를 호출합니다.|
-|[/Gh](gh-enable-penter-hook-function.md)|후크 함수 `_penter`를 호출합니다.|
+|[/GH](gh-enable-penter-hook-function.md)|후크 함수 `_penter`를 호출합니다.|
 |[/GL](gl-whole-program-optimization.md)|전체 프로그램 최적화를 사용합니다.|
-|[/Gm](gm-enable-minimal-rebuild.md)|최소 재빌드를 사용합니다.|
+|[/Gm](gm-enable-minimal-rebuild.md)|더 이상 사용되지 않습니다. 최소 재빌드를 사용합니다.|
 |[/GR](gr-enable-run-time-type-information.md)|RTTI(런타임 형식 정보)를 사용합니다.|
-|[/Gr](gd-gr-gv-gz-calling-convention.md)|`__fastcall` 호출 규칙을 사용합니다. x86 전용입니다.|
+|[/GR](gd-gr-gv-gz-calling-convention.md)|`__fastcall` 호출 규칙을 사용합니다. x86 전용입니다.|
 |[/GS](gs-buffer-security-check.md)|보안 검사를 버퍼링합니다.|
-|[/Gs](gs-control-stack-checking-calls.md)|스택 프로브를 제어합니다.|
+|[/GS](gs-control-stack-checking-calls.md)|스택 프로브를 제어합니다.|
 |[/GT](gt-support-fiber-safe-thread-local-storage.md)|정적 스레드 로컬 스토리지를 사용하여 할당한 데이터의 파이버 안전을 지원합니다.|
 |[/guard:cf](guard-enable-control-flow-guard.md)|제어 흐름 가드 보안 검사를 추가합니다.|
 |[/Gv](gd-gr-gv-gz-calling-convention.md)|`__vectorcall` 호출 규칙을 사용합니다(x86 및 x64에만 해당).|
@@ -72,11 +72,11 @@ ms.locfileid: "57811942"
 |[/GX](gx-enable-exception-handling.md)|더 이상 사용되지 않습니다. 동기 예외 처리를 사용합니다. 대신 [/EH](eh-exception-handling-model.md) 를 사용합니다.|
 |[/Gy](gy-enable-function-level-linking.md)|함수 수준 링크를 사용합니다.|
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. [/RTC1](rtc-run-time-error-checks.md)과 동일합니다.|
-|[/Gz](gd-gr-gv-gz-calling-convention.md)|`__stdcall` 호출 규칙을 사용합니다. x86 전용입니다.|
+|[/GZ](gd-gr-gv-gz-calling-convention.md)|`__stdcall` 호출 규칙을 사용합니다. x86 전용입니다.|
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|
 |[/HELP](help-compiler-command-line-help.md)|컴파일러 옵션을 나열합니다.|
 |[/homeparams](homeparams-copy-register-parameters-to-stack.md)|레지스터에 전달된 매개 변수를 함수 시작 시 스택의 해당 위치에 기록합니다. X64에만이 컴파일러 옵션은 컴파일러 (네이티브 및 크로스 컴파일).|
-|[/hotpatch](hotpatch-create-hotpatchable-image.md)|핫 패치할 수 있는 이미지를 만듭니다.|
+|[/hotpatch](hotpatch-create-hotpatchable-image.md)|핫 패치 가능한 이미지를 만듭니다.|
 |[/I](i-additional-include-directories.md)|포함 파일의 디렉터리를 검색합니다.|
 |[/J](j-default-char-type-is-unsigned.md)|기본 `char` 형식을 변경합니다.|
 |[/JMC](jmc.md)|네이티브 C++ 내 코드만 디버깅 옵션을 지원합니다.|
@@ -97,7 +97,7 @@ ms.locfileid: "57811942"
 |[/Od](od-disable-debug.md)|최적화를 사용하지 않습니다.|
 |[/Og](og-global-optimizations.md)|더 이상 사용되지 않습니다. 전역 최적화를 사용합니다.|
 |[/Oi](oi-generate-intrinsic-functions.md)|내장 함수를 생성합니다.|
-|[/openmp](openmp-enable-openmp-2-0-support.md)|소스 코드에서 [#pragma omp](../../preprocessor/omp.md) 를 활성화합니다.|
+|[/openmp](openmp-enable-openmp-2-0-support.md)|사용 하도록 설정 합니다 [ `#pragma omp` ](../../preprocessor/omp.md) 소스 코드에 지시문입니다.|
 |[/Os](os-ot-favor-small-code-favor-fast-code.md)|코드 크기를 우선으로 합니다.|
 |[/Ot](os-ot-favor-small-code-favor-fast-code.md)|코드 속도를 우선으로 합니다.|
 |[/Ox](ox-full-optimization.md)|최대 최적화(/Ob1gity /Gs)를 사용합니다.|
@@ -116,11 +116,11 @@ ms.locfileid: "57811942"
 |[/source-charset](source-charset-set-source-character-set.md)|소스 문자 집합입니다.|
 |[/std](std-specify-language-standard-version.md)|C++ 표준 버전 호환성 선택기입니다.|
 |[/Tc](tc-tp-tc-tp-specify-source-file-type.md)|C 소스 파일을 지정합니다.|
-|[/TC](tc-tp-tc-tp-specify-source-file-type.md)|3. 모든 원본 파일 지정|
+|[/Tc](tc-tp-tc-tp-specify-source-file-type.md)|3. 모든 원본 파일 지정|
 |[/Tp](tc-tp-tc-tp-specify-source-file-type.md)|C++ 소스 파일을 지정합니다.|
-|[/TP](tc-tp-tc-tp-specify-source-file-type.md)|모든 원본 파일은 C++를 지정 합니다.|
+|[/Tp](tc-tp-tc-tp-specify-source-file-type.md)|모든 원본 파일은 C++를 지정 합니다.|
 |[/U](u-u-undefine-symbols.md)|미리 정의된 매크로를 제거합니다.|
-|[/u](u-u-undefine-symbols.md)|미리 정의된 모든 매크로를 제거합니다.|
+|[/U](u-u-undefine-symbols.md)|미리 정의된 모든 매크로를 제거합니다.|
 |[/utf-8](utf-8-set-source-and-executable-character-sets-to-utf-8.md)|소스 및 실행 문자 집합을 u t F-8로 설정합니다.|
 |[/V](v-version-number.md)|더 이상 사용되지 않습니다. .obj 파일 버전 문자열을 설정합니다.|
 |[/validate-charset](validate-charset-validate-for-compatible-characters.md)|만 호환 문자에 대 한 utf-8 파일의 유효성을 검사 합니다.|
@@ -154,7 +154,7 @@ ms.locfileid: "57811942"
 |[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. 언어 확장을 사용합니다.|
 |[/Zf](zf.md)|PDB 병렬 빌드에서 생성 시간을 개선합니다.|
 |[/Zg](zg-generate-function-prototypes.md)|Visual C++ 2015에서 제거되었습니다. 함수 프로토타입을 생성합니다.|
-|[/ZI](z7-zi-zi-debug-information-format.md)|편집하며 계속하기와 호환되는 프로그램 데이터베이스에 디버깅 정보를 포함합니다.|
+|[/Zi](z7-zi-zi-debug-information-format.md)|편집하며 계속하기와 호환되는 프로그램 데이터베이스에 디버깅 정보를 포함합니다.|
 |[/Zi](z7-zi-zi-debug-information-format.md)|완전한 디버깅 정보를 생성합니다.|
 |[/Zl](zl-omit-default-library-name.md)|.obj 파일에서 기본 라이브러리 이름을 제거합니다. x86 전용입니다.|
 |[/Zm](zm-specify-precompiled-header-memory-allocation-limit.md)|미리 컴파일된 헤더 메모리의 할당 제한을 지정합니다.|

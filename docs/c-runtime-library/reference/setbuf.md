@@ -1,6 +1,6 @@
 ---
 title: setbuf
-ms.date: 11/04/2016
+ms.date: 04/08/2019
 apiname:
 - setbuf
 apilocation:
@@ -22,12 +22,12 @@ helpviewer_keywords:
 - setbuf function
 - stream buffering
 ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
-ms.openlocfilehash: 3b5fbccd304d406131b0c4f7d16a289f80484642
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 89f8a4d8eb853c774f4f7299ceaa9b9eb6177b42
+ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440498"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59424172"
 ---
 # <a name="setbuf"></a>setbuf
 
@@ -52,9 +52,9 @@ void setbuf(
 
 ## <a name="remarks"></a>설명
 
-합니다 **setbuf** 함수에 대 한 버퍼링을 제어 *스트림*합니다. 합니다 *스트림을* 인수 하지 읽기 되거나 작성 된 열린 파일을 참조 해야 합니다. 경우는 *버퍼* 인수가 **NULL**, 스트림을 스트림은 아닙니다. 버퍼 길이 문자 배열 가리켜야 그렇지 않은 경우 **BUFSIZ**, 여기서 **BUFSIZ** STDIO에 정의 된 버퍼 크기입니다. 8. 지정된 스트림에 대한 기본 시스템 할당 버퍼 대신 사용자 지정 버퍼가 I/O 버퍼링에 사용됩니다. 합니다 **stderr** 스트림은 기본적으로 하지 않습니다 하지만 사용할 수 있습니다 **setbuf** 버퍼를 할당할 **stderr**합니다.
+합니다 **setbuf** 함수에 대 한 버퍼링을 제어 *스트림*합니다. 합니다 *스트림을* 인수는 읽거나 쓰지 않은 않은 열린 파일을 참조 해야 합니다. 경우는 *버퍼* 인수가 **NULL**, 스트림이 버퍼링 되지 않습니다. 버퍼 길이 문자 배열 가리켜야 그렇지 않은 경우 **BUFSIZ**, 여기서 **BUFSIZ** STDIO에 정의 된 버퍼 크기입니다. 8. 지정된 스트림에 대한 기본 시스템 할당 버퍼 대신 사용자 지정 버퍼가 I/O 버퍼링에 사용됩니다. 합니다 **stderr** stream은 기본적으로 버퍼링 하지만 사용할 수 있습니다 **setbuf** 버퍼를 할당할 **stderr**합니다.
 
-**setbuf** 바뀌었습니다 [setvbuf](setvbuf.md), 새 코드에 대 한 기본 설정된 루틴인 인 합니다. **setbuf** 기존 코드와 호환성을 위해 유지 됩니다.
+**setbuf** 바뀌었습니다 [setvbuf](setvbuf.md), 새 코드에 대 한 기본 설정된 루틴인 인 합니다. 와 달리 **setvbuf**를 **setbuf** 오류 보고의 방법이 없습니다. **setvbuf** 버퍼링 모드 및 버퍼 크기를 제어할 수 있습니다. **setbuf** 기존 코드와 호환성을 위해 존재 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
