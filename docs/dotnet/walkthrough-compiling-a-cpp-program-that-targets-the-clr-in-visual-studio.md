@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C++, managed code
 - managed code [C++]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
-ms.openlocfilehash: d0a006c6928bf42c3e6f4adfbc3d1fdde7ff7c87
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
-ms.translationtype: HT
+ms.openlocfilehash: fcac0079185b6ceef981b9acfeb555ef29d464e0
+ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58773049"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59034672"
 ---
 # <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>연습: 컴파일 C + + /cli 프로그램 Visual Studio에서 CLR을 대상으로 하는
 
@@ -74,7 +74,7 @@ ms.locfileid: "58773049"
    > [!NOTE]
    > 빈 CLR 프로젝트 템플릿을 선택하면 `/clr` 컴파일러 옵션이 자동으로 설정됩니다. 이를 확인하려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고, **속성**을 클릭한 다음, **구성 속성**의 **일반** 노드에서 **공용 언어 런타임 지원** 옵션을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [프로젝트 및 빌드 시스템](../build/projects-and-build-systems-cpp.md)<br/>
