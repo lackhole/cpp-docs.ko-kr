@@ -1,5 +1,5 @@
 ---
-title: /F(동기 PDB 쓰기 적용)
+title: /FS(동기 PDB 쓰기 적용)
 ms.date: 11/04/2016
 f1_keywords:
 - /FS
@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "57817597"
 ---
-# <a name="fs-force-synchronous-pdb-writes"></a>/F(동기 PDB 쓰기 적용)
+# <a name="fs-force-synchronous-pdb-writes"></a>/FS(동기 PDB 쓰기 적용)
 
 프로그램 데이터베이스 (PDB) 파일에 강제로 쓰기-만든 [/Zi](z7-zi-zi-debug-information-format.md) 하거나 [/ZI](z7-zi-zi-debug-information-format.md)-MSPDBSRV 통해 직렬화 해야 합니다. EXE 수 있습니다.
 
@@ -32,9 +32,9 @@ ms.locfileid: "57817597"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 선택 된 **C/c + +** 폴더입니다.
+1. 선택 된 **C/C++** 폴더입니다.
 
 1. 선택 된 **명령줄** 속성 페이지.
 
