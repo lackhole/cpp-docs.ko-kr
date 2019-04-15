@@ -69,7 +69,7 @@ ms.locfileid: "58565440"
 
 합니다 [/Za](za-ze-disable-language-extensions.md) 옵션 (ANSI 호환성)와 호환 되지 않습니다. `/fp`합니다.
 
-### <a name="using-compiler-directives-to-control-floating-point-behavior"></a>컴파일러 지시문을 사용 하 여 부동 소수점 동작을 제어 하려면
+### <a name="using-compiler-directives-to-control-floating-point-behavior"></a>컴파일러 지시문을 사용하여 부동 소수점 동작 제어
 
 컴파일러 명령줄에 지정 된 부동 소수점 동작을 재정의 하려면 세 가지 pragma 지시문을 제공 합니다. [float_control](../../preprocessor/float-control.md)를 [fenv_access](../../preprocessor/fenv-access.md), 및 [fp_contract](../../preprocessor/fp-contract.md). 수준 함수는 함수 내에 있지 부동 소수점 동작을 제어 하려면 이러한 지시문을 사용할 수 있습니다. 이러한 지시문에 직접 해당 하지 않는 참고는 `/fp` 옵션입니다. 이 테이블에 표시 하는 방법을 `/fp` 옵션 및 pragma 지시문이 서로 매핑됩니다. 자세한 내용은 개별 옵션과 pragma 지시문에 대 한 설명서를 참조 합니다.
 
@@ -152,7 +152,7 @@ cLower = -inf
 cUpper = -inf
 ```
 
-둘 다를 사용 하 여 컴파일하면 `/O2` 및 `/fp:strict` x86 아키텍처 샘플 프로그램 출력:
+x86 아키텍처에 대해 `/O2` 및 `/fp:strict` 둘 다를 사용하여 컴파일하면, 샘플 프로그램 출력은 다음과 같습니다.
 
 ```Output
 cLower = -inf
@@ -258,7 +258,7 @@ float casting(float a, float b)
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **코드 생성** 속성 페이지.
+1. **구성 속성** > **C/C++** > **코드 생성** 속성 페이지를 선택합니다.
 
 1. 수정 된 **부동 소수점 모델** 속성입니다.
 
