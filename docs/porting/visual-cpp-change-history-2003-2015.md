@@ -5,10 +5,10 @@ helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
 ms.openlocfilehash: b381a2b7cc9a4ad4749f382838bdec5872a3decf
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 88631cecbe3e3fa752eae3ad05b7f9d9f9437b4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/15/2019
 ms.locfileid: "58898884"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ 변경 기록 2003 - 2015
@@ -62,7 +62,7 @@ ms.locfileid: "58898884"
 
    오류를 해결하려면 \<cmath>를 포함하여 \<math.h>에서 제거된 함수 선언을 가져옵니다. 다음과 같은 함수는 이동되었습니다.
 
-  - `double abs(double)` 를 갖는 `float abs(float)`
+  - `double abs(double)` 및 `float abs(float)`
 
   - `double pow(double, int)`, `float pow(float, float)`, `float pow(float, int)`, `long double pow(long double, long double)`, `long double pow(long double, int)`
 
@@ -76,7 +76,7 @@ ms.locfileid: "58898884"
 
   이 경고를 해결하려면 `abs`에 대한 호출을 `abs`의 부동 소수점 버전(예: double 인수에 대한 `fabs` 또는 float 인수에 대한 `fabsf`)으로 바꾸거나, \<cmath> 헤더를 포함하고 `abs`를 계속 사용합니다.
 
-- **부동 소수점 규칙**
+- **부동 소수점 적합성**
 
    NaN 및 무한대와 같은 특수한 경우 입력과 관련된 IEEE-754 및 C11 Annex F 사양에 대한 적합성을 향상하고자 수식 라이브러리가 많이 변경되었습니다. 예를 들어 이전 라이브러리 버전에서 종종 오류로 처리되었던 자동 NaN 입력은 더 이상 오류로 처리되지 않습니다. [IEEE 754 표준](https://standards.ieee.org/standard/754-2008.html) (영문) 및 [C11 표준](http://www.iso-9899.info/wiki/The_Standard)(영문)의 부록 F를 참조하세요.
 
@@ -209,7 +209,7 @@ ms.locfileid: "58898884"
 
    Visual Studio 2005에서 전역 규칙 스위치 [_set_output_format](../c-runtime-library/set-output-format.md)이 추가되었습니다. 프로그램은 _TWO_DIGIT_EXPONENT 인수와 함께 이 함수를 호출하여 규칙 지수 인쇄가 가능하도록 설정합니다. 기본 동작이 표준 준수 지수 인쇄 모드로 변경되었습니다.
 
-- **형식 문자열 유효성 검사**
+- **서식 문자열 유효성 검사**
 
    이전 버전에서 `printf` 및 `scanf` 함수는 경우에 따라 비정상적인 효과를 가진 잘못된 여러 서식 문자열을 자동으로 허용했습니다. 예를 들어 %hlhlhld가 %d로 처리됩니다. 현재 모든 잘못된 서식 문자열은 잘못된 매개 변수로 처리됩니다.
 
@@ -313,7 +313,7 @@ ms.locfileid: "58898884"
 
 - **steady_clock**
 
-   [steady_clock](../standard-library/steady-clock-struct.md)의 \<chrono> 구현은 지속성 및 단조성에 대한 C++ 표준 요구 사항을 충족하도록 변경되었습니다. `steady_clock` 이제 [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx)를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. 따라서 이제 Visual Studio에서 `steady_clock::time_point`는 `chrono::time_point<steady_clock>`에 대한 typedef이지만, 다른 구현에 이를 반드시 적용할 필요는 없습니다.
+   [steady_clock](../standard-library/steady-clock-struct.md)의 \<chrono> 구현은 지속성 및 단조성에 대한 C++ 표준 요구 사항을 충족하도록 변경되었습니다. 이제 `steady_clock`은 [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx)를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. 따라서 이제 Visual Studio에서 `steady_clock::time_point`는 `chrono::time_point<steady_clock>`에 대한 typedef이지만, 다른 구현에 이를 반드시 적용할 필요는 없습니다.
 
 - **allocators 및 const**
 
@@ -915,7 +915,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 <!--From here to VS_Update1 added 04/21/2017-->
 
-- **extern "C"로 선언된 main에는 이제 반환 형식이 필요합니다.**
+- **extern “C”로 선언된 main에는 이제 반환 형식이 필요합니다.**
 
    다음 코드는 C4430을 생성합니다.
 
@@ -1004,7 +1004,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
     //other partial specializations here
     ```
 
-- **정방향 선언에 적용된 규칙 (C에만 적용됨)**
+- **정방향 선언에 적용된 규칙. (C에만 적용됨)**
 
    다음 코드는 C2065를 생성합니다.
 
@@ -1355,7 +1355,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
     };
     ```
 
-- **decltype 문의 내부에서 생성자에 액세스**
+- **decltype 문의 내부에서 생성자 액세스**
 
    다음 코드는 C2248을 생성합니다. 'S::S': 클래스 'S'에서 선언된 비공개 멤버에 액세스할 수 없습니다.
 
@@ -1528,7 +1528,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
     };
     ```
 
-   문제를 해결하려면 맨 위 줄을 다음으로 변경 `#define A();`
+   문제를 해결하려면 맨 위 줄을 `#define A();`로 변경하세요.
 
    다음 코드는 오류 C2059를 생성합니다. 구문 오류: ‘)’.
 
@@ -1775,7 +1775,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
    또한 컴파일러가 특정 진단을 제공하지는 않지만, 인라인 연산자 **new**는 잘못된 형식으로 간주됩니다.
 
-- **비클래스 형식에서 'operator *type*()'(사용자 정의 변환) 호출**
+- ***비클래스 형식에서 'operator* type**()'(사용자 정의 변환) 호출
 
    이전 버전의 컴파일러에서는 'operator *type*()'을 자동으로 무시하면서 비클래스 형식에서 호출할 수 있었습니다. 이 이전 동작으로 잘못된 코드가 자동으로 생성되어 예기치 않은 런타임 동작이 발생하는 위험이 초래되었습니다. 컴파일러는 이러한 방식으로 작성된 코드를 더 이상 허용하지 않으며, 대신 컴파일러 오류 C2228이 발생합니다.
 
@@ -2159,7 +2159,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
     // C5032.cpp ends -- the translation unit is completed without unmatched #pragma warning(push)
     ```
 
-- **개선된 #pragma warning 상태 추적의 결과로 추가 경고가 발생할 수 있음**
+- **개선된 #pragma warning 상태 추적의 결과로 추가 경고가 발생할 수 있습니다.**
 
    이전 버전의 컴파일러는 의도된 모든 경고를 발생시키기에는 불충분한 수준으로 #pragma warning 상태 변경을 추적했습니다. 이 동작으로 프로그래머가 의도한 것과 다른 상황에서 특정 경고가 효과적으로 표시되지 않는 위험이 초래됩니다. 이제 컴파일러는 `#pragma warning` 상태(특히 템플릿 내부의 `#pragma warning` 상태 변경과 관련된 내용)를 더욱 강력하게 추적하며, 선택적으로 새로운 경고 C5031 및 C5032가 발생합니다. 이러한 경고는 프로그래머가 의도하지 않게 사용된 `#pragma warning(push)` 및 `#pragma warning(pop)`을 찾는 데 도움이 됩니다.
 
@@ -2203,7 +2203,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 ###  <a name="VS_Update2"></a> 업데이트 2의 규칙 향상
 
-- **SFINAE 식에 대한 부분 지원으로 인해 추가 경고 및 오류가 발생할 수 있음**
+- **SFINAE 식에 대한 부분 지원으로 인해 추가 경고 및 오류가 발생할 수 있습니다.**
 
    이전 버전의 컴파일러는 SFINAE 식에 대한 지원 부족으로 **decltype** 지정자 내의 특정 종류의 식을 구문 분석하지 않았습니다. 이 이전 동작은 올바르지 않으며, C++ 표준을 준수하지 않습니다. 지속적인 규칙 향상으로 인해 이제 컴파일러는 이러한 식을 구문 분석하고 SFINAE 식에 대한 부분 지원을 합니다. 결과적으로 이제 컴파일러는 이전 버전의 컴파일러가 구문 분석하지 않았던 식에서 경고 및 오류를 발생합니다.
 
@@ -2934,7 +2934,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - 기존 코드에서 이전 릴리스의 시뮬레이트된 범위가 지정된 열거형을 사용하는 경우(범위가 지정되지 않은 일반적인 열거형이 네임스페이스에 래핑됨) 이를 변경해야 합니다. 예를 들어 `std::future_status::future_status` 형식을 참조한 경우 이제는 `std::future_status`로 지정해야 합니다. 그러나 대부분의 코드는 영향을 받지 않습니다. 예를 들어 `std::future_status::ready`는 계속 컴파일됩니다.
 
-- `explicit operator bool()` 연산자 unspecified-bool-type()보다 더 엄격합니다. `explicit operator bool()` 은 bool로의 명시적 변환(예: `shared_ptr<X> sp`의 경우 `static_cast<bool>(sp)` 및 `bool b(sp)`가 유효함)을 허용할 뿐만 아니라 bool로의 부울 테스트 가능한 "컨텍스트 변환"(예: `if (sp)`, `!sp`, `sp &&`)도 허용합니다. 그러나 `explicit operator bool()`은 bool로의 암시적 변환을 금지하므로 `bool b = sp;`로 지정할 수 없으며 bool 반환 형식의 경우 `return sp`로 지정할 수 없습니다.
+- `explicit operator bool()`이 operator unspecified-bool-type()보다 더 엄격합니다. `explicit operator bool()`은 bool로의 명시적 변환(예: `shared_ptr<X> sp`의 경우 `static_cast<bool>(sp)` 및 `bool b(sp)`가 유효함)을 허용할 뿐만 아니라 bool로의 부울 테스트 가능한 "컨텍스트 변환"(예: `if (sp)`, `!sp`, `sp &&`)도 허용합니다. 그러나 `explicit operator bool()`은 bool로의 암시적 변환을 금지하므로 `bool b = sp;`로 지정할 수 없으며 bool 반환 형식의 경우 `return sp`로 지정할 수 없습니다.
 
 - 실제 variadic 템플릿이 구현되었으므로 _VARIADIC_MAX 및 관련 매크로는 영향을 주지 않습니다. _VARIADIC_MAX를 계속 정의하더라도 무시됩니다. 다른 방식으로 시뮬레이션된 variadic 템플릿을 지원하기 위한 매크로 체계를 승인한 경우 코드를 변경해야 합니다.
 
@@ -2972,19 +2972,19 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - 서명이 메시지 처리기를 수용하도록 변경되었습니다. 새로 추가된 ON_WM_* 메시지 처리기를 사용하기 위해 다음과 같은 함수의 매개 변수 목록이 변경되었습니다.
 
-   - `CWnd::OnDisplayChange` 메시지 맵에서 새로운 ON_WM_DISPLAYCHANGE 매크로를 사용할 수 있도록 (WPARAM, LPARAM) 대신 (UINT, int, int)로 변경되었습니다.
+   - 메시지 맵에서 새로운 ON_WM_DISPLAYCHANGE 매크로를 사용할 수 있도록 `CWnd::OnDisplayChange`가 (WPARAM, LPARAM) 대신 (UINT, int, int)로 변경되었습니다.
 
-   - `CFrameWnd::OnDDEInitiate` 메시지 맵에서 새로운 ON_WM_DDE_INITIATE 매크로를 사용할 수 있도록 (WPARAM, LPARAM) 대신 (CWnd*, UINT, UNIT)로 변경되었습니다.
+   - 메시지 맵에서 새로운 ON_WM_DDE_INITIATE 매크로를 사용할 수 있도록 `CFrameWnd::OnDDEInitiate`가 (WPARAM, LPARAM) 대신 (CWnd*, UINT, UNIT)로 변경되었습니다.
 
-   - `CFrameWnd::OnDDEExecute` 메시지 맵에서 새로운 ON_WM_DDE_EXECUTE 매크로를 사용할 수 있도록 (WPARAM, LPARAM) 대신 (CWnd*, HANDLE)로 변경되었습니다.
+   - 메시지 맵에서 새로운 ON_WM_DDE_EXECUTE 매크로를 사용할 수 있도록 `CFrameWnd::OnDDEExecute`가 (WPARAM, LPARAM) 대신 (CWnd*, HANDLE)로 변경되었습니다.
 
-   - `CFrameWnd::OnDDETerminate` 메시지 맵에서 새로운 ON_WM_DDE_TERMINATE 매크로를 사용할 수 있도록 (WPARAM, LPARAM) 대신 (CWnd*)로 변경되었습니다.
+   - 메시지 맵에서 새로운 ON_WM_DDE_TERMINATE 매크로를 사용할 수 있도록 `CFrameWnd::OnDDETerminate`가 (WPARAM, LPARAM) 대신 (CWnd*)로 변경되었습니다.
 
-   - `CMFCMaskedEdit::OnCut` 메시지 맵에서 새로운 ON_WM_CUT 매크로를 사용할 수 있도록 (WPARAM, LPARAM) 대신 매개 변수를 사용하지 않는 함수로 변경되었습니다.
+   - 메시지 맵에서 새로운 ON_WM_CUT 매크로를 사용할 수 있도록 `CMFCMaskedEdit::OnCut`이 (WPARAM, LPARAM) 대신 매개 변수를 사용하지 않는 함수로 변경되었습니다.
 
-   - `CMFCMaskedEdit::OnClear` 메시지 맵에서 새로운 ON_WM_CLEAR 매크로를 사용할 수 있도록 (WPARAM, LPARAM) 대신 매개 변수를 사용하지 않는 함수로 변경되었습니다.
+   - 메시지 맵에서 새로운 ON_WM_CLEAR 매크로를 사용할 수 있도록 `CMFCMaskedEdit::OnClear`이 (WPARAM, LPARAM) 대신 매개 변수를 사용하지 않는 함수로 변경되었습니다.
 
-   - `CMFCMaskedEdit::OnPaste` 메시지 맵에서 새로운 ON_WM_PASTE 매크로를 사용할 수 있도록 (WPARAM, LPARAM) 대신 매개 변수를 사용하지 않는 함수로 변경되었습니다.
+   - 메시지 맵에서 새로운 ON_WM_PASTE 매크로를 사용할 수 있도록 `CMFCMaskedEdit::OnPaste`이 (WPARAM, LPARAM) 대신 매개 변수를 사용하지 않는 함수로 변경되었습니다.
 
 - `#ifdef` 지시문이 MFC 헤더 파일에서 제거되었습니다. 지원되지 않는 Windows 버전(WINVER &lt; 0x0501)과 관련된 여러 `#ifdef` 지시문이 MFC 헤더 파일에서 제거되었습니다.
 
@@ -3436,13 +3436,13 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - 본질적으로 안전하지 않은 %n 형식 지정자는 함수의 printf 계열에서 더 이상 기본적으로 지원되지 않습니다. %n이 발견된 경우 기본 동작은 잘못된 매개 변수 처리기를 호출하는 것입니다. %n 지원을 설정하려면 `_set_printf_count_output`을 사용합니다(`_get_printf_count_output` 참조).
 
-- `sprintf` 이제 서명된 0의 음수 기호를 인쇄합니다.
+- 이제 `sprintf`가 signed 0의 음수 기호를 인쇄합니다.
 
-- `swprintf` 표준을 준수하도록 변경되었습니다. 이제 크기 매개 변수가 필요합니다. size 매개 변수가 없는 `swprintf` 형태는 사용되지 않습니다.
+- `swprintf`가 표준을 준수하도록 변경되었습니다. 이제 size 매개 변수가 필요합니다. size 매개 변수가 없는 `swprintf` 형태는 사용되지 않습니다.
 
-- `_set_security_error_handler` 제거되었습니다. 해당 함수에 대한 호출을 모두 제거합니다. 기본 처리기가 보안 오류를 처리하는 훨씬 안전한 방법입니다.
+- `_set_security_error_handler`가 제거되었습니다. 해당 함수에 대한 호출을 모두 제거합니다. 기본 처리기가 보안 오류를 처리하는 훨씬 안전한 방법입니다.
 
-- `time_t` 이제 64비트 값입니다(_USE_32BIT_TIME_T가 정의되지 않은 경우).
+- 이제 `time_t`가 64비트 값입니다(_USE_32BIT_TIME_T가 정의되지 않은 경우).
 
 - 이제 `_spawn`, `_wspawn` 함수가 C Standard에 지정된 대로 성공 시 `errno`를 그대로 유지합니다.
 
