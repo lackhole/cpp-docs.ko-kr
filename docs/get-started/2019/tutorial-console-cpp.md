@@ -6,12 +6,12 @@ ms.date: 03/25/2019
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: b558b2e0c381b8521fe0ba5f18647a933175ce07
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.openlocfilehash: f1e6b06c3212ae3ff192fdf402c0167575161656
+ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58867273"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59430757"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ 콘솔 앱 프로젝트 만들기
 
@@ -34,6 +34,9 @@ Visual Studio는 *프로젝트*를 사용하여 앱에 대한 코드를 구성�
 1. 프로젝트 템플릿 목록에서 **콘솔 앱**을 선택한 다음, **다음**을 선택합니다.
 
    ![콘솔 앱 템플릿 선택](./media/calc-vs2019-choose-console-app.png "콘솔 앱 템플릿 선택")
+
+   > [!Important]
+   > **콘솔 앱** 템플릿의 C++ 버전을 선택해야 합니다. **C++**, **Windows** 및 **콘솔** 태그가 있으며, 아이콘은 모서리에 "++"가 있습니다.
 
 1. **새 프로젝트 구성** 대화 상자에서 **프로젝트 이름** 편집 상자를 선택하고, 새 프로젝트의 이름을 *CalculatorTutorial*로 지정한 다음, **만들기**를 선택합니다.
 
