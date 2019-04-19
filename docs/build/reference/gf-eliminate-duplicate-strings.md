@@ -37,7 +37,7 @@ ms.locfileid: "57812319"
 
 **/GF** 문자열 읽기 전용으로 풀 합니다. 문자열을 수정 하려고 하면 **/GF**, 응용 프로그램 오류가 발생 합니다.
 
-문자열 풀링을 허용 된 다중 버퍼에 대 한 여러 포인터로 단일 버퍼에 대 한 여러 포인터 되도록 의도 합니다. 다음 코드에서는 `s` 고 `t` 동일한 문자열을 사용 하 여 초기화 됩니다. 문자열 풀링을 동일한 메모리를 가리키게 됩니다.
+문자열 풀링은 다중 버퍼에 대해 다중 포인터가 의도된 것을 단일 버퍼에 대해 다중 포인터가 의도하는 것을 허용합니다. 다음 코드에서 `s`와 `t`는 같은 문자열로 초기화됩니다. 문자열 풀링을 사용하면 동일한 메모리를 가리킬 수 있습니다.
 
 ```
 char *s = "This is a character buffer";
@@ -54,7 +54,7 @@ char *t = "This is a character buffer";
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
