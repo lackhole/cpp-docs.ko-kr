@@ -1,5 +1,5 @@
 ---
-title: '연습: 만들기 및 사용자 고유의 동적 링크 라이브러리 (c + +)를 사용 합니다.'
+title: '연습: 만들고 고유한 동적 연결 라이브러리를 사용 하 여 (C++)'
 ms.custom: conceptual
 ms.date: 09/24/2018
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
 ms.openlocfilehash: 248b423659d026774d4945ee6330a39dc4c6e16e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58770150"
 ---
-# <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 만들기 및 사용자 고유의 동적 링크 라이브러리 (c + +)를 사용 합니다.
+# <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 만들고 고유한 동적 연결 라이브러리를 사용 하 여 (C++)
 
-이 단계별 연습에는 c + +로 작성 된 고유한 동적 연결 라이브러리 (DLL)를 만들려면 Visual Studio IDE를 사용 하 여 다른 c + + 앱에서 사용 하는 방법을 보여 줍니다. Dll은 가장 유용한 종류의 Windows 구성 요소 중 하나입니다. 앱의 크기를 축소 하 고 서비스 및 앱 확장을 쉽게 수행할 수 있도록 코드 및 리소스를 공유 하는 방법으로 이러한를 사용할 수 있습니다. 이 연습에서는 일부 수학 함수를 구현 하는 DLL 만들고 DLL에서 함수를 사용 하는 콘솔 앱을 만듭니다. 이 과정에서 몇 가지 프로그래밍 하는 방법과 Windows Dll에 사용 된 규칙에 대 한 소개를 얻게 됩니다.
+이 단계별 연습으로 작성 된 고유한 동적 연결 라이브러리 (DLL)를 만들려면 Visual Studio IDE를 사용 하는 방법을 보여 줍니다 C++를 사용 하 여 다른 및 C++ 앱. Dll은 가장 유용한 종류의 Windows 구성 요소 중 하나입니다. 앱의 크기를 축소 하 고 서비스 및 앱 확장을 쉽게 수행할 수 있도록 코드 및 리소스를 공유 하는 방법으로 이러한를 사용할 수 있습니다. 이 연습에서는 일부 수학 함수를 구현 하는 DLL 만들고 DLL에서 함수를 사용 하는 콘솔 앱을 만듭니다. 이 과정에서 몇 가지 프로그래밍 하는 방법과 Windows Dll에 사용 된 규칙에 대 한 소개를 얻게 됩니다.
 
 이 연습에서는 다음 작업 방법을 배웁니다.
 
@@ -29,11 +29,11 @@ ms.locfileid: "58770150"
 
 - 완성된 된 앱을 실행 합니다.
 
-DLL를 정적으로 연결 된 라이브러리와 같은 _내보냅니다_ 변수, 함수 및 리소스 이름과 앱 _가져옵니다_ 해당 이름을 해당 변수, 함수 및 리소스를 사용 합니다. 정적으로 연결 된 라이브러리에 Windows 앱에서 가져오기를 로드 시 또는 링크 타임에 연결 하는 대신 런타임 시 DLL에서 내보내기에 연결 됩니다. Windows에는 이러한 연결을 설정 하는 표준 c + + 컴파일 모델에 속하지 않는 추가 정보가 필요 합니다. MSVC 컴파일러는 c + +가 추가 정보를 제공 하는 데에 몇 가지 Microsoft 전용 확장을 구현 합니다. 이러한 확장으로 설명 합니다.
+DLL를 정적으로 연결 된 라이브러리와 같은 _내보냅니다_ 변수, 함수 및 리소스 이름과 앱 _가져옵니다_ 해당 이름을 해당 변수, 함수 및 리소스를 사용 합니다. 정적으로 연결 된 라이브러리에 Windows 앱에서 가져오기를 로드 시 또는 링크 타임에 연결 하는 대신 런타임 시 DLL에서 내보내기에 연결 됩니다. Windows 표준에 속하지 않는 추가 정보 필요 C++ 이러한 연결을 만들 수 있는 컴파일 모델입니다. MSVC 컴파일러 구현 일부 Microsoft 전용 확장을 C++ 이 추가 정보를 제공 합니다. 이러한 확장으로 설명 합니다.
 
 이 연습에서는 두 Visual Studio 솔루션 DLL을 작성 하는 하나 및 클라이언트 앱을 작성 하는 것입니다. DLL은 플랫폼 호출 및 규칙 연결 일치할 다른 언어를 사용 하 여 빌드한 앱에서 호출 될 수 있으므로 C 호출 규칙을 사용 합니다. 클라이언트 앱에서는 _암시적 링크_, Windows가 로드 시 DLL에 대 한 앱을 연결 하는 위치입니다. 이 연결 앱을 정적으로 연결 된 라이브러리의 함수 처럼 DLL에서 제공한 함수를 호출할 수 있습니다.
 
-이 연습에서는 몇 가지 일반적인 상황을 다루지 않습니다. 다른 프로그래밍 언어에서 c + + Dll 사용을 표시 하지 않습니다. 리소스 전용 DLL을 만드는 방법을 표시 되지는 않습니다. 또한 런타임 시 아닌 로드 시 Dll을 로드 하려고 명시적 링크의 사용도 표시 되지 않습니다. 안심할 수, Visual c + +를 사용 하 여 이러한 모든 작업을 수행할 수 있습니다. Dll에 대 한 자세한 정보 링크를 참조 하세요 [Visual c + +에서 Dll](dlls-in-visual-cpp.md)합니다. 암시적 링크 및 명시적 링크에 대 한 자세한 내용은 참조 하세요. [사용할 링크 방법 결정](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)합니다. 프로그래밍 언어 C 링크 규칙을 사용 하는 언어 사용에 대 한 c + + Dll을 만드는 방법에 대 한 자세한 내용은 [C 언어 실행 파일에서 사용 하기 위해 c + + 함수 내보내기](exporting-cpp-functions-for-use-in-c-language-executables.md)합니다. .NET 언어 사용에 대 한 Dll을 만드는 방법에 대 한 자세한 내용은 [Visual Basic 응용 프로그램에서 DLL 함수 호출](calling-dll-functions-from-visual-basic-applications.md)합니다.
+이 연습에서는 몇 가지 일반적인 상황을 다루지 않습니다. 사용 하는 표시 되지 않지만 C++ 다른 프로그래밍 언어에서 Dll입니다. 리소스 전용 DLL을 만드는 방법을 표시 되지는 않습니다. 또한 런타임 시 아닌 로드 시 Dll을 로드 하려고 명시적 링크의 사용도 표시 되지 않습니다. 안심할 수, 시각적 개체를 사용할 수 있습니다 C++ 이러한 모든 작업을 수행할 수 있습니다. Dll에 대 한 자세한 정보 링크를 참조 하세요 [Dll 시각적 개체의 C++ ](dlls-in-visual-cpp.md)합니다. 암시적 링크 및 명시적 링크에 대 한 자세한 내용은 참조 하세요. [사용할 링크 방법 결정](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)합니다. 만드는 방법은 C++ 프로그래밍 참조를 C 언어 링크 규칙을 사용 하는 언어 사용에 대 한 Dll [내보내기 C++ C 언어 실행 파일에서 사용 하기 위한 함수가](exporting-cpp-functions-for-use-in-c-language-executables.md)합니다. .NET 언어 사용에 대 한 Dll을 만드는 방법에 대 한 자세한 내용은 [Visual Basic 응용 프로그램에서 DLL 함수 호출](calling-dll-functions-from-visual-basic-applications.md)합니다.
 
 이 연습에서는 Visual Studio 2017을 사용 하지만 코드 및 지침의 대부분 이전 버전에 적용 됩니다. 새 프로젝트를 빌드하는 단계는 Visual Studio 2017 버전 15.3부터 변경 합니다. 이 연습에는 최신 및 이전 버전에 대 한 프로젝트를 만드는 방법을 설명 합니다. Visual Studio의 버전과 일치 하는 단계를 찾습니다.
 
@@ -41,13 +41,13 @@ DLL를 정적으로 연결 된 라이브러리와 같은 _내보냅니다_ 변�
 
 - Microsoft Windows 7 이상을 실행 하는 컴퓨터입니다. 최상의 개발 환경을 위해 Windows 10이 좋습니다.
 
-- Visual Studio 2017의 복사본입니다. 다운로드 하 여 Visual Studio를 설치 하는 방법에 대 한 정보를 참조 하세요 [Visual Studio 2017 설치](/visualstudio/install/install-visual-studio)합니다. 설치 관리자를 실행 해야 합니다 **c + +를 사용한 데스크톱 개발** 작업 확인란이 선택 되어 있습니다. Visual Studio를 설치할 때이 워크 로드를 설치 하지 않은 경우 걱정 하지 마세요. 설치 관리자를 다시 실행 하 고 지금 설치 수 있습니다.
+- Visual Studio 2017의 복사본입니다. 다운로드 하 여 Visual Studio를 설치 하는 방법에 대 한 정보를 참조 하세요 [Visual Studio 2017 설치](/visualstudio/install/install-visual-studio)합니다. 설치 관리자를 실행 해야 합니다 **를 사용한 데스크톱 개발 C++**  작업 확인란이 선택 되어 있습니다. Visual Studio를 설치할 때이 워크 로드를 설치 하지 않은 경우 걱정 하지 마세요. 설치 관리자를 다시 실행 하 고 지금 설치 수 있습니다.
 
-   ![C + +를 사용한 데스크톱 개발](media/desktop-development-with-cpp.png "c + +를 사용한 데스크톱 개발")
+   ![사용한 데스크톱 개발 C++ ](media/desktop-development-with-cpp.png "를 사용한 데스크톱 개발C++")
 
 - Visual Studio IDE를 사용 하 여의 기본 사항 이해 합니다. 이전 Windows 데스크톱 앱을 사용한 경우 아마도 유지할 수 있습니다. 참조에 대 한 소개 [Visual Studio IDE 기능 둘러보기](/visualstudio/ide/visual-studio-ide)합니다.
 
-- 과정을 따르려면 c + + 언어의 기본 사항을 충분히 이해 합니다. 걱정 하지 마십시오, 너무 복잡 아무일도 하지 않는 것입니다.
+- 기본 사항을 충분히 이해 합니다 C++ 과정을 따르려면 언어입니다. 걱정 하지 마십시오, 너무 복잡 아무일도 하지 않는 것입니다.
 
 ## <a name="create-the-dll-project"></a>DLL 프로젝트 만들기
 
@@ -57,7 +57,7 @@ DLL 프로젝트를 만드는 작업의이 집합에서 코드를 추가 빌드�
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택하여 **새 프로젝트** 대화 상자를 엽니다.
 
-1. 왼쪽된 창에는 **새 프로젝트** 대화 상자에서 **설치 됨** 및 **Visual c + +** 필요한 경우 선택한 후 **Windows Desktop** . 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다. 입력 `MathLibrary` 에 **이름을** 상자에서 프로젝트의 이름을 지정 합니다.
+1. 왼쪽된 창에서 합니다 **새 프로젝트** 대화 상자에서 **설치 됨** 및 **Visual C++**  필요한 경우 선택한 후 **Windows데스크톱**. 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다. 입력 `MathLibrary` 에 **이름을** 상자에서 프로젝트의 이름을 지정 합니다.
 
    ![MathLibrary 프로젝트 이름을](media/mathlibrary-new-project-name-153.png "MathLibrary 프로젝트 이름을")
 
@@ -90,7 +90,7 @@ DLL 프로젝트를 만드는 작업의이 집합에서 코드를 추가 빌드�
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-1. 왼쪽된 창에서 합니다 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**를 선택 하 고 **Visual c + +**, 및 가운데 창에서 선택한 **Win32 콘솔 응용 프로그램**합니다. 입력 `MathLibrary` 에 **이름** 편집 상자에서 프로젝트의 이름을 지정 합니다.
+1. 왼쪽된 창에서를 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**를 선택한 **시각적 C++** 를 선택한 다음 가운데 창에서 **Win32 콘솔 응용 프로그램**합니다. 입력 `MathLibrary` 에 **이름** 편집 상자에서 프로젝트의 이름을 지정 합니다.
 
    ![MathLibrary 프로젝트 이름을](media/mathlibrary-project-name.png "MathLibrary 프로젝트 이름을")
 
@@ -114,7 +114,7 @@ DLL 프로젝트를 만드는 작업의이 집합에서 코드를 추가 빌드�
 
 1. 메뉴 모음에서 사용자 함수에 대 한 헤더 파일을 만들려면 **프로젝트** > **새 항목 추가**합니다.
 
-1. 에 **새 항목 추가** 대화 상자의 왼쪽된 창에서 선택 **Visual c + +** 합니다. 가운데 창에서 **헤더 파일 (.h)** 을 선택합니다. 지정 `MathLibrary.h` 헤더 파일의 이름으로 합니다.
+1. 에 **새 항목 추가** 대화 상자의 왼쪽된 창에서 선택 **시각적 C++** 합니다. 가운데 창에서 **헤더 파일 (.h)** 을 선택합니다. 지정 `MathLibrary.h` 헤더 파일의 이름으로 합니다.
 
    ![새 항목 추가 대화 상자에서 추가 헤더](media/mathlibrary-add-new-item-header-file.png "새 항목 추가 대화 상자에서 추가 헤더 파일")
 
@@ -246,7 +246,7 @@ DLL 프로젝트를 만드는 작업의이 집합에서 코드를 추가 빌드�
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-축, Visual c + +를 사용 하 여 DLL을 만들었습니다! 그런 다음 해당 DLL에서 내보내기 기능을 사용 하는 클라이언트 앱을 만들어야 합니다.
+축에서 만든 시각적 개체를 사용 하 여 DLL C++! 그런 다음 해당 DLL에서 내보내기 기능을 사용 하는 클라이언트 앱을 만들어야 합니다.
 
 ## <a name="create-a-client-app-that-uses-the-dll"></a>DLL을 사용 하는 클라이언트 앱 만들기
 
@@ -256,9 +256,9 @@ DLL을 사용 하는지 여부를 소유 하거나 타사 DLL 클라이언트 �
 
 ### <a name="to-create-a-client-app-in-visual-studio-2017-version-153-or-later"></a>클라이언트에서에서 앱을 만들려면 Visual Studio 2017 버전 15.3 이상
 
-1. 메뉴 모음에서 만든 DLL을 사용 하는 c + + 앱을 만들려면 **파일** > **새로 만들기** > **프로젝트**합니다.
+1. 만들려는 C++ 메뉴 모음에서 만든 DLL을 사용 하는 앱 선택 **파일** > **새로 만들기** > **프로젝트**.
 
-1. 왼쪽된 창에서를 **새 프로젝트** 대화 상자에서 **Windows Desktop** 아래의 **설치 됨** > **Visual c + +** 합니다. 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다. 프로젝트의 이름을 지정 `MathClient`를 **이름을** 편집 상자입니다.
+1. 왼쪽된 창에서를 **새 프로젝트** 대화 상자에서 **Windows 데스크톱** 아래 **설치 됨** > **시각적 C++** . 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다. 프로젝트의 이름을 지정 `MathClient`를 **이름을** 편집 상자입니다.
 
    ![클라이언트 프로젝트의 이름을](media/mathclient-new-project-name-153.png "클라이언트 프로젝트의 이름을")
 
@@ -266,9 +266,9 @@ DLL을 사용 하는지 여부를 소유 하거나 타사 DLL 클라이언트 �
 
 ### <a name="to-create-a-client-app-in-older-versions-of-visual-studio-2017"></a>Visual Studio 2017의 이전 버전의 클라이언트 앱을 만들려면
 
-1. 메뉴 모음에서 만든 DLL을 사용 하는 c + + 앱을 만들려면 **파일** > **새로 만들기** > **프로젝트**합니다.
+1. 만들려는 C++ 메뉴 모음에서 만든 DLL을 사용 하는 앱 선택 **파일** > **새로 만들기** > **프로젝트**.
 
-1. 왼쪽된 창에는 **새 프로젝트** 대화 상자에서 **Win32** 아래에 있는 **설치 됨** > **템플릿**  >  **Visual c + +** 합니다. 가운데 창에서 **Win32 콘솔 애플리케이션**을 선택합니다. 프로젝트의 이름을 지정 `MathClient`를 **이름을** 편집 상자입니다.
+1. 왼쪽된 창에는 **새 프로젝트** 대화 상자에서 **Win32** 아래에 있는 **설치 됨** > **템플릿**  >  **시각적 C++** 합니다. 가운데 창에서 **Win32 콘솔 애플리케이션**을 선택합니다. 프로젝트의 이름을 지정 `MathClient`를 **이름을** 편집 상자입니다.
 
    ![클라이언트 프로젝트의 이름을](media/mathclient-project-name.png "클라이언트 프로젝트의 이름을")
 
@@ -288,7 +288,7 @@ DLL을 사용 하는지 여부를 소유 하거나 타사 DLL 클라이언트 �
 
 1. 에 **Configuration** 드롭다운 목록 상자에서 **모든 구성** 아직 선택 하지 않은 경우.
 
-1. 왼쪽된 창에서 선택 **일반적인** 아래에서 **구성 속성** > **C/c + +** 합니다.
+1. 왼쪽된 창에서 선택 **일반적인** 아래에서 **구성 속성** > **C /C++**.
 
 1. 속성 창의 드롭다운 목록 컨트롤을 옆에 선택 합니다 **Additional Include Directories** 편집 상자를 선택한 후 **편집**합니다.
 

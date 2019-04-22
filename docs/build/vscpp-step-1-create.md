@@ -7,10 +7,10 @@ ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ms.openlocfilehash: 739da0b6e5400117c0b09a3d4c3335bd44529a25
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58898780"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ 콘솔 앱 프로젝트 만들기
@@ -19,7 +19,7 @@ C++ 프로그래머의 일반적인 시작점은 명령줄에서 실행되는 "H
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 컴퓨터에서 설치되고 실행 중인 C++ 워크로드를 사용하여 데스크톱 개발을 위해 Visual Studio를 설치합니다. 아직 설치 되지 않은 경우 [Visual Studio에서 c + + 설치 지원](vscpp-step-0-installation.md)합니다.
+- 컴퓨터에서 설치되고 실행 중인 C++ 워크로드를 사용하여 데스크톱 개발을 위해 Visual Studio를 설치합니다. 아직 설치되지 않은 경우 [Visual Studio에서 C++ 지원 설치](vscpp-step-0-installation.md)를 참조하세요.
 
 ## <a name="create-your-app-project"></a>앱 프로젝트 만들기
 
@@ -49,13 +49,13 @@ Visual Studio는 *프로젝트*를 사용하여 앱에 대한 코드를 구성�
 
    ![새 프로젝트 대화 상자를 엽니다](media/vscpp-file-new-project.gif "새 프로젝트 대화 상자를 열려면")
 
-1. 에 **새 프로젝트** 대화 상자에서 **설치 됨**, **Visual c + +** 아직 선택 되지 않은 경우 다음을 선택 합니다 **빈 프로젝트** 템플릿입니다. 에 **이름을** 필드를 입력 합니다 *HelloWorld*합니다. 선택할 **확인** 프로젝트를 만듭니다.
+1. 에 **새 프로젝트** 대화 상자에서 **설치 됨**, **Visual C++**  아직 선택 되지 않은 경우 다음을 선택 합니다 **빈 프로젝트**템플릿. 에 **이름을** 필드를 입력 합니다 *HelloWorld*합니다. 선택할 **확인** 프로젝트를 만듭니다.
 
    ![새 프로젝트를 만들고 이름을](media/vscpp-concierge-project-name-callouts.png "이름 및 새 프로젝트를 만들려면")
 
 Visual Studio를 만들고 소스 코드 파일을 추가 하려면 원하는 앱의 종류에 대 한 특수화 준비가 새로 만든 빈 프로젝트를 만듭니다. 다음에 수행 합니다.
 
-[문제를 실행 합니다.](#create-your-app-project-issues)
+[문제가 발생했습니다.](#create-your-app-project-issues)
 
 ## <a name="make-your-project-a-console-app"></a>콘솔 앱 프로젝트 만들기
 
@@ -69,19 +69,19 @@ Visual Studio는 Windows 및 기타 플랫폼에 대 한 모든 종류의 앱 �
 
 Visual Studio는 이제 콘솔 창에서 실행 하 여 프로젝트를 빌드할 알고 있습니다. 다음으로, 소스 코드 파일을 추가 하 고 앱에 대 한 코드를 입력 합니다.
 
-[문제를 실행 합니다.](#make-your-project-a-console-app-issues)
+[문제가 발생했습니다.](#make-your-project-a-console-app-issues)
 
 ## <a name="add-a-source-code-file"></a>소스 코드 파일을 추가 합니다.
 
 1. **솔루션 탐색기**, HelloWorld 프로젝트를 선택 합니다. 메뉴 모음에서 선택 **프로젝트**, **새 항목 추가** 열려는 합니다 **새 항목 추가** 대화 합니다.
 
-1. 에 **새 항목 추가** 대화 상자에서 **Visual c + +** 아래에 있는 **설치 된** 아직 선택 하지 않은 경우. 가운데 창에서 선택 **c + + 파일 (.cpp)** 합니다. 변경 된 **이름을** 하 *HelloWorld.cpp*합니다. 선택할 **추가** 파일을 만들고 대화 상자를 닫습니다.
+1. 에 **새 항목 추가** 대화 상자에서 **Visual C++**  아래 **설치 됨** 아직 선택 하지 않은 경우. 가운데 창에서 선택  **C++ 파일 (.cpp)** 합니다. 변경 된 **이름을** 하 *HelloWorld.cpp*합니다. 선택할 **추가** 파일을 만들고 대화 상자를 닫습니다.
 
    ![HelloWorld.cpp에 대 한 소스 파일을 추가](media/vscpp-add-new-item.gif "HelloWorld.cpp에 대 한 원본 파일을 추가 합니다.")
 
 Visual studio 새 비어 있는 소스 코드 파일을 만들고 소스 코드를 입력 하 고 편집기 창에서 열립니다.
 
-[문제를 실행 합니다.](#add-a-source-code-file-issues)
+[문제가 발생했습니다.](#add-a-source-code-file-issues)
 
 ## <a name="add-code-to-the-source-file"></a>소스 파일에 코드 추가
 
@@ -103,24 +103,24 @@ Visual studio 새 비어 있는 소스 코드 파일을 만들고 소스 코드�
 
 코드 편집기에서 다음과 같이 표시 하는 경우 다음 단계로 이동 하 여 앱을 빌드할 준비가입니다.
 
-[문제를 실행 합니다.](#add-a-source-code-file-issues)
+[문제가 발생했습니다.](#add-a-source-code-file-issues)
 
 ::: moniker-end
 
 ## <a name="next-steps"></a>다음 단계
 
 > [!div class="nextstepaction"]
-> [C + + 프로젝트 빌드 및 실행](vscpp-step-2-build.md)
+> [빌드 및 실행을 C++ 프로젝트](vscpp-step-2-build.md)
 
 ::: moniker range="<=vs-2017"
 
 ## <a name="troubleshooting-guide"></a>문제 해결 가이드
 
-여기로 솔루션에 대 한 일반적인 문제에 첫 번째 c + + 프로젝트를 만들 때.
+여기로 솔루션에 대 한 일반적인 문제를 처음 만들 때 C++ 프로젝트입니다.
 
 ### <a name="create-your-app-project-issues"></a>앱 프로젝트 문제 만들기
 
-경우는 **새 프로젝트** 대화 상자에 표시 하지 않습니다는 **Visual c + +** 아래의 항목 **설치 됨**, Visual Studio의 사본의 없을 가능성이 많습니다는 **데스크톱 c + +를 사용한 개발** 워크 로드가 설치 되어 있습니다. 오른쪽에서 설치 관리자를 실행할 수 있습니다 합니다 **새 프로젝트** 대화 합니다. 선택 된 **Visual Studio 설치 관리자 열기** 링크 설치 관리자를 다시 시작 합니다. 경우는 **사용자 계정 컨트롤** 권한을 요청 하는 대화 상자, 선택 **예**합니다. 설치 관리자에서 있는지 확인 합니다 **c + +를 사용한 데스크톱 개발** 작업을 선택 하면 선택한 **확인** Visual Studio 설치를 업데이트 합니다.
+경우는 **새 프로젝트** 대화 상자에 표시 하지 않습니다는 **Visual C++**  아래 항목 **설치 됨**, Visual Studio의 사본의 없을 가능성이 많습니다 합니다 **데스크톱 사용 하 여 개발 C++**  워크 로드가 설치 되어 있습니다. 오른쪽에서 설치 관리자를 실행할 수 있습니다 합니다 **새 프로젝트** 대화 합니다. 선택 된 **Visual Studio 설치 관리자 열기** 링크 설치 관리자를 다시 시작 합니다. 경우는 **사용자 계정 컨트롤** 권한을 요청 하는 대화 상자, 선택 **예**합니다. 설치 관리자에서 있는지 확인 합니다 **를 사용한 데스크톱 개발 C++**  작업을 선택 하면 선택한 **확인** Visual Studio 설치를 업데이트 합니다.
 
 동일한 이름의 다른 프로젝트에 이미 있으면 프로젝트에 대해 다른 이름을 선택 하거나 기존 프로젝트를 삭제 하 고 다시 시도 합니다. 기존 프로젝트를 삭제 하려면 파일 탐색기에서 솔루션 폴더 (helloworld.sln 파일이 있는 폴더)를 삭제 합니다.
 
@@ -146,7 +146,7 @@ Dropdown 컨트롤이 나타나지 않습니다 합니다 **하위 시스템** �
 
 소스 코드 파일 편집기 창 다시 열어서를 실수로 닫은 경우 두 번 클릭에 HelloWorld.cpp 합니다 **솔루션 탐색기** 창입니다.
 
-빨간색 물결선 소스 코드 편집기에서 모든 항목에서 표시 하는 경우 코드 사례, 맞춤법 및 문장 부호에 예제와 일치 하는지 확인 합니다. 대/소문자는 c + + 코드에서 중요 합니다.
+빨간색 물결선 소스 코드 편집기에서 모든 항목에서 표시 하는 경우 코드 사례, 맞춤법 및 문장 부호에 예제와 일치 하는지 확인 합니다. 경우에 중요 한 C++ 코드입니다.
 
 [돌아가서](#add-code-to-the-source-file)합니다.
 

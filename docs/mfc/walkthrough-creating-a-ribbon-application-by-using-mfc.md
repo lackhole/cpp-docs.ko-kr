@@ -6,10 +6,10 @@ helpviewer_keywords:
 - creating a ribbon aplication (MFC)
 ms.assetid: e61393e2-1d6b-4594-a7ce-157d3d1b0d9f
 ms.openlocfilehash: 29991a389a09e1fe3dc0074b80fd9a255458f673
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781226"
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>연습: MFC를 사용 하 여 리본 응용 프로그램 만들기
@@ -24,7 +24,7 @@ ms.locfileid: "58781226"
 
 1. 사용 된 **MFC 응용 프로그램 마법사** 리본 메뉴가 있는 MFC 응용 프로그램을 만들려면. 마법사를 실행 하는 **파일** 메뉴에서 **새로 만들기**를 클릭 하 고 **프로젝트**합니다.
 
-1. 에 **새 프로젝트** 대화 상자에서 **Visual c + +** 노드에서 **설치 된 템플릿**선택 **MFC**를 선택한 다음  **MFC 응용 프로그램**합니다. 예를 들어, 프로젝트 이름을 입력 *MFCRibbonApp*를 클릭 하 고 **확인**합니다.
+1. 에 **새 프로젝트** 대화 상자에서 **Visual C++**  노드에서 **설치 된 템플릿**을 선택 **MFC**를 선택한 후 **MFC 응용 프로그램**합니다. 예를 들어, 프로젝트 이름을 입력 *MFCRibbonApp*를 클릭 하 고 **확인**합니다.
 
 1. 다음 옵션을 설정 합니다 **MFC 응용 프로그램 마법사**:
 

@@ -13,19 +13,19 @@ helpviewer_keywords:
 - Class View tool, managing Windows messages
 ms.assetid: f5dd4d13-9dc1-4a49-b6bf-5b3cb45fa8ba
 ms.openlocfilehash: 41cbb86b4245bd78baecd222b5573ba5e877243a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58773829"
 ---
 # <a name="wizards-and-the-resource-editors"></a>마법사 및 리소스 편집기
 
-Visual c + + MFC 프로그래밍의 경우 많은 통합된 리소스 편집기와 함께 사용 하기 위해 여러 가지 마법사를 포함합니다. ActiveX 컨트롤 프로그래밍에 대 한 합니다 [ActiveX 컨트롤 마법사](../mfc/reference/mfc-activex-control-wizard.md) MFC 응용 프로그램 마법사는 비슷한 용도로 사용 됩니다. 이러한 도구의 대부분 하지 않고 MFC 응용 프로그램을 작성할 수 있지만 도구 크게 간소화 하 고 작업 속도.
+Visual C++ MFC 프로그래밍의 경우 많은 통합된 리소스 편집기와 함께 사용 하기 위해 몇 가지 마법사를 포함 합니다. ActiveX 컨트롤 프로그래밍에 대 한 합니다 [ActiveX 컨트롤 마법사](../mfc/reference/mfc-activex-control-wizard.md) MFC 응용 프로그램 마법사는 비슷한 용도로 사용 됩니다. 이러한 도구의 대부분 하지 않고 MFC 응용 프로그램을 작성할 수 있지만 도구 크게 간소화 하 고 작업 속도.
 
 ##  <a name="_core_use_appwizard_to_create_an_mfc_application"></a> MFC 응용 프로그램 마법사를 사용 하 여 MFC 응용 프로그램 만들기
 
-사용 된 [MFC 응용 프로그램 마법사](../mfc/reference/mfc-application-wizard.md) Visual c + +에서는 OLE를 포함 하 고 데이터베이스 지원 수 있는 MFC 프로젝트를 만들려고 합니다. 프로젝트의 파일에 응용 프로그램, 문서, 뷰 및 프레임 창 클래스를 포함합니다. 메뉴 및 도구는 선택 사항 모음;를 비롯 한 표준 리소스 다른 필수 Windows 파일입니다. 및 프로그램의 도움말 파일을 만들려면 보강 하 여 표준 Windows 도움말 항목을 수정할 수 있는 선택적.rtf 파일 포함 합니다.
+사용 된 [MFC 응용 프로그램 마법사](../mfc/reference/mfc-application-wizard.md) 시각적 개체에 MFC 프로젝트를 만들려면 C++, OLE를 포함할 수 있으며 데이터베이스 지원 합니다. 프로젝트의 파일에 응용 프로그램, 문서, 뷰 및 프레임 창 클래스를 포함합니다. 메뉴 및 도구는 선택 사항 모음;를 비롯 한 표준 리소스 다른 필수 Windows 파일입니다. 및 프로그램의 도움말 파일을 만들려면 보강 하 여 표준 Windows 도움말 항목을 수정할 수 있는 선택적.rtf 파일 포함 합니다.
 
 ##  <a name="_core_use_classwizard_to_manage_classes_and_windows_messages"></a> 클래스 뷰를 사용 하 여 클래스 및 Windows 메시지 관리
 
@@ -44,12 +44,12 @@ MFC 프레임 워크, 문서, 뷰, 프레임 창, 문서 템플릿 및 응용 �
 
 ##  <a name="_core_use_the_resource_editors_to_create_and_edit_resources"></a> 리소스 편집기를 사용 하 여 만들고 리소스를 편집 합니다.
 
-Visual c + + [리소스 편집기](../windows/resource-editors.md) 만들고 메뉴, 대화 상자, 사용자 지정 컨트롤, 액셀러레이터 키, 비트맵, 아이콘, 커서, 문자열 및 버전 리소스를 편집 합니다. Visual c + + 버전 4.0부터 도구 모음 편집기 도구 모음을 만들 훨씬 쉬워집니다.
+시각적 개체를 사용 하 여 C++ [리소스 편집기](../windows/resource-editors.md) 만들고 메뉴, 대화 상자, 사용자 지정 컨트롤, 액셀러레이터 키, 비트맵, 아이콘, 커서, 문자열 및 버전 리소스를 편집 합니다. 시각적 개체를 기준으로 C++ 버전 4.0을 도구 모음 편집기를 사용 하면 도구 모음을 쉽게 만들기.
 
 를 더욱 수 있도록 Microsoft Foundation Class 라이브러리를 일반적인 라는 파일을 제공 합니다. RES를 일반적인에서 복사할 수 있는 "클립 아트" 리소스를 포함 합니다. RES 및 사용자 고유의 리소스 파일에 붙여 넣습니다. 일반적인 합니다. RES 도구 모음 단추, 일반적인 커서, 아이콘 등을 포함합니다. 사용 하 고, 수정 하 고, 응용 프로그램에서 이러한 리소스를 재배포할 수 있습니다. 일반적인 방법에 대 한 자세한 내용은 합니다. RES를 참조 합니다 [클립 아트 샘플](../overview/visual-cpp-samples.md)합니다.
 
-MFC 응용 프로그램 마법사, Visual c + + 마법사, 리소스 편집기 및 MFC 프레임 워크를 많은 작업을 수행 및 프로그램 코드를 훨씬 쉽게 관리할 수 있도록 합니다. 응용 프로그램별 코드 대량의 문서 및 뷰 클래스입니다.
+MFC 응용 프로그램 마법사, 시각적 개체 C++ 마법사, 리소스 편집기와 MFC 프레임 워크를 많은 작업을 수행 및 프로그램 코드를 훨씬 쉽게 관리할 수 있도록 합니다. 응용 프로그램별 코드 대량의 문서 및 뷰 클래스입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[클래스를 사용하여 Windows 응용 프로그램 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)
+[클래스를 사용하여 Windows 애플리케이션 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)

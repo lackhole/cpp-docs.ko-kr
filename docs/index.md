@@ -5,10 +5,10 @@ description: C++를 사용하여 플랫폼과 장치용 애플리케이션, 서�
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: f402087b101487a444996e7e27b186382c4874fd
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58898676"
 ---
 <div id="main" class="v2">
@@ -77,7 +77,7 @@ ms.locfileid: "58898676"
                 <a href="#workloads">작업</a>
                 <ul id="workloads">
                     <li>
-                        <a href="#workloads1">작업</a>
+                        <a href="#workloads1">워크로드</a>
                         <ul id="workloads1" class="cardsC">
                             <li>
                                 <a href="/cpp/cppcx/universal-windows-apps-cpp">

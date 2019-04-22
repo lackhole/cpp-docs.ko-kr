@@ -1,5 +1,5 @@
 ---
-title: implements_category (c + + COM 특성)
+title: implements_category (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.implements_category
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - implements_category attribute
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
 ms.openlocfilehash: beca804fae8d6e82b4664102b39d76a23e66ca59
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041405"
 ---
 # <a name="implementscategory"></a>implements_category
@@ -30,7 +30,7 @@ ms.locfileid: "59041405"
 
 ## <a name="remarks"></a>설명
 
-합니다 **implements_category** c + + 특성 대상 클래스에 의해 구현 된 구성 요소 범주를 지정 합니다. 범주 지도 만들고 지정 된 별도 항목을 추가 하 여 이렇게 합니다 **implements_category** 특성입니다. 자세한 내용은 [구성 요소 범주 및 수행할 해당 작동 방법 이란?](https://msdn.microsoft.com/library/windows/desktop/ms694322)합니다.
+합니다 **implements_category** C++ 특성 대상 클래스에 의해 구현 된 구성 요소 범주를 지정 합니다. 범주 지도 만들고 지정 된 별도 항목을 추가 하 여 이렇게 합니다 **implements_category** 특성입니다. 자세한 내용은 [구성 요소 범주 및 수행할 해당 작동 방법 이란?](https://msdn.microsoft.com/library/windows/desktop/ms694322)합니다.
 
 이 특성을 사용하려면 [coclass](coclass.md), [progid](progid.md)또는 [vi_progid](vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다. 단일 특성을 사용하는 경우 다른 두 특성도 자동으로 적용됩니다. 예를 들어 있으면 `progid` 적용 됩니다 `vi_progid` 및 `coclass` 도 적용 됩니다.
 

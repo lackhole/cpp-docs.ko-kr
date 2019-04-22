@@ -10,10 +10,10 @@ helpviewer_keywords:
 - Automation servers [MFC], dual-interface support
 ms.assetid: b5c8ed09-2f7f-483c-80fc-2a47ad896063
 ms.openlocfilehash: 33828f3979fb938ae6e88fa3cb0d6ee24daa958c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776676"
 ---
 # <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE 자동화 서버에 대 한 이중 인터페이스 지원
@@ -33,7 +33,7 @@ OLE Automation을 사용 하면 구현할 수 있지만 `IDispatch` 인터페이
 
 - 사용 하는 기존 OLE Automation 컨트롤러는 `IDispatch` 인터페이스는 계속 작동 합니다.
 
-- VTBL 인터페이스를 c + +에서 호출 쉽습니다.
+- VTBL 인터페이스에서 호출 하기가 쉽습니다. C++입니다.
 
 - 이중 인터페이스는 Visual Basic 개체 지원 기능을 사용 하 여 호환성을 위해 필요 합니다.
 
@@ -41,7 +41,7 @@ OLE Automation을 사용 하면 구현할 수 있지만 `IDispatch` 인터페이
 
 이중 인터페이스에서 파생 된 사용자 지정 인터페이스 실제로 `IDispatch`합니다. 이중 인터페이스 지원에서 구현 하는 가장 간단한 방법은 `CCmdTarget`-기반된 클래스 일반 디스패치 MFC 및 클래스 마법사를 사용 하 여 클래스에서 인터페이스를 사용자 지정 인터페이스를 나중에 추가 하는 첫 번째 구현 하는 것입니다. 대부분의 경우 사용자 지정 인터페이스 구현 됩니다 위임만 다시 MFC `IDispatch` 구현 합니다.
 
-먼저 개체에 대 한 이중 인터페이스를 정의 하 여 서버에 대 한 ODL 파일을 수정 합니다. 이중 인터페이스를 정의 하려면 대신에 인터페이스 문을 사용 해야 합니다는 `DISPINTERFACE` Visual c + + 마법사에서 생성 하는 문입니다. 기존 제거 하는 대신 `DISPINTERFACE` 문을 새 인터페이스 문을 추가 합니다. 유지 하 여는 `DISPINTERFACE` 폼 클래스 마법사를 사용 하 여 개체, 속성 및 메서드를 추가 하려면 계속할 수 있지만 사용자 인터페이스에 해당 하는 속성 및 메서드를 추가 해야 합니다.
+먼저 개체에 대 한 이중 인터페이스를 정의 하 여 서버에 대 한 ODL 파일을 수정 합니다. 이중 인터페이스를 정의 하려면 대신에 인터페이스 문을 사용 해야 합니다는 `DISPINTERFACE` 문에 시각적 개체 C++ 마법사 생성 합니다. 기존 제거 하는 대신 `DISPINTERFACE` 문을 새 인터페이스 문을 추가 합니다. 유지 하 여는 `DISPINTERFACE` 폼 클래스 마법사를 사용 하 여 개체, 속성 및 메서드를 추가 하려면 계속할 수 있지만 사용자 인터페이스에 해당 하는 속성 및 메서드를 추가 해야 합니다.
 
 이중 인터페이스에 대 한 인터페이스 문이 있어야 합니다 *OLEAUTOMATION* 하 고 *이중* 특성 및 인터페이스에서 파생 되어야 합니다 `IDispatch`합니다. 사용할 수는 [GUIDGEN](../overview/visual-cpp-samples.md) 만들려는 샘플을 **IID** 이중 인터페이스에 대 한:
 
@@ -281,11 +281,11 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::get_Position(
 
 3. 에 **빌드** 메뉴에서 클릭 **설정**를 선택한 다음 INITIIDS 합니다. 각 구성에 대 한 파일 목록에서 CPP 합니다.
 
-4. 클릭는 **c + +** 탭에서 범주를 클릭 **미리 컴파일된 헤더**를 선택 합니다 **미리 컴파일된 헤더를 사용 하지** 라디오 단추. 확인을 클릭 합니다 **빌드 설정** 대화 상자.
+4. 클릭는 **C++** 탭에서 범주를 클릭 **미리 컴파일된 헤더**를 선택 합니다 **미리 컴파일된 헤더를 사용 하지** 라디오 단추. 확인을 클릭 합니다 **빌드 설정** 대화 상자.
 
 ## <a name="specifying-the-correct-object-class-name-in-the-type-library"></a>형식 라이브러리에 올바른 개체 클래스 이름 지정
 
-올바르게 Visual c + +를 사용 하 여 하지 제공 마법사 OLE creatable 클래스에 대 한 서버의 ODL 파일에서 coclass를 지정할 수 구현 클래스 이름을 사용 합니다. 이 작동 하는 동안 구현 클래스 이름은 않을 개체의 사용자가 사용 하려는 하는 클래스 이름이입니다. 올바른 이름을 지정 하려면 ODL 파일을 열고 각 coclass 문을 찾아 구현 클래스 이름이 올바른 외부 이름으로 바꿉니다.
+시각적 개체와 함께 제공 되는 마법사 C++ creatable OLE 클래스에 대 한 ODL 파일 서버에서에서 coclass를 지정 하려면 올바르게 구현 클래스 이름을 사용 합니다. 이 작동 하는 동안 구현 클래스 이름은 않을 개체의 사용자가 사용 하려는 하는 클래스 이름이입니다. 올바른 이름을 지정 하려면 ODL 파일을 열고 각 coclass 문을 찾아 구현 클래스 이름이 올바른 외부 이름으로 바꿉니다.
 
 Coclass 문을 변경 되 면 변수 이름을 유의 **CLSID**의MkTypLib에서 생성 된 헤더 파일에 따라 변경 됩니다. 새 변수 이름을 사용 하도록 코드를 업데이트 해야 합니다.
 

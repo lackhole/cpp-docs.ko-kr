@@ -6,10 +6,10 @@ f1_keywords:
 - event/Microsoft::WRL::Callback
 ms.assetid: afb15d25-3230-44f7-b321-e17c54872943
 ms.openlocfilehash: d37e6fdd2521f07728305bfbf5441cebb363030a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041392"
 ---
 # <a name="callback-function-wrl"></a>콜백 함수 (WRL)
@@ -233,7 +233,7 @@ ComPtr<TDelegateInterface> Callback(
 *object*<br/>
 이벤트가 발생할 때 해당 멤버 함수를 호출하는 개체입니다.
 
-*메서드*<br/>
+*method*<br/>
 이벤트가 발생할 때 호출할 멤버 함수입니다.
 
 ## <a name="return-value"></a>반환 값

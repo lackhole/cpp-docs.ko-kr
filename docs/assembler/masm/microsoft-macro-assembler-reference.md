@@ -8,10 +8,10 @@ helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), documentation overview
 ms.assetid: 1446d55f-e2e7-4fd1-a9b8-b15cf7d4e47c
 ms.openlocfilehash: 5b74eef1799dd5f9fae8f2a6aceeb79a115ce837
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58777872"
 ---
 # <a name="microsoft-macro-assembler-reference"></a>Microsoft 매크로 어셈블러 참조
@@ -44,7 +44,7 @@ X64에 대 한 출력 파일을 만드는 방법에 대 한 정보를 제공 합
 ## <a name="related-sections"></a>관련 단원
 
 [Visual C++](../../overview/visual-cpp-in-visual-studio.md)<br/>
-Visual Studio 및 Visual c + + 설명서의 다른 영역에 대 한 링크를 제공합니다.
+Visual Studio 및 시각적 개체의 다른 영역에 대 한 링크를 제공 합니다. C++ 설명서.
 
 ## <a name="see-also"></a>참고자료
 

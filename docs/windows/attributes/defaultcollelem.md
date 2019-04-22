@@ -7,10 +7,10 @@ helpviewer_keywords:
 - defaultcollelem attribute
 ms.assetid: 3dbbd293-8b83-4f70-a36b-64cc1d0b6713
 ms.openlocfilehash: be4ea7097bd811444fca050525338931867998d0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023336"
 ---
 # <a name="defaultcollelem"></a>defaultcollelem
@@ -25,7 +25,7 @@ Visual Basic 코드 최적화를 위해 사용 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **defaultcollelem** c + + 특성에 동일한 기능을 합니다 [defaultcollelem](/windows/desktop/Midl/defaultcollelem) MIDL 특성입니다.
+**defaultcollelem** C++ 특성에 동일한 기능을 합니다 [defaultcollelem](/windows/desktop/Midl/defaultcollelem) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

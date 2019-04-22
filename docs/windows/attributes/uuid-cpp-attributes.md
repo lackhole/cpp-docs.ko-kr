@@ -7,10 +7,10 @@ helpviewer_keywords:
 - uuid attribute
 ms.assetid: 90562a94-5e28-451b-a4b0-cadda7f66efe
 ms.openlocfilehash: 8d9d55fc2a340165480cab4036ad1e5323e6b625
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026044"
 ---
 # <a name="uuid-c-attributes"></a>uuid(C++ 특성)
@@ -32,7 +32,7 @@ ms.locfileid: "59026044"
 
 ## <a name="remarks"></a>설명
 
-인터페이스 또는 클래스의 정의 지정 하지 않은 경우는 **uuid** c + + 특성을 Visual c + + 컴파일러 제공 됩니다. 지정 하는 경우는 **uuid**, 따옴표를 포함 해야 합니다.
+인터페이스 또는 클래스의 정의 지정 하지 않은 경우는 **uuid** C++ 특성을 다음 시각적 개체 C++ 컴파일러 제공 됩니다. 지정 하는 경우는 **uuid**, 따옴표를 포함 해야 합니다.
 
 지정 하지 않는 경우 **uuid**, 컴파일러에서 컴퓨터에서 다른 특성 프로젝트에서 같은 이름의 클래스 또는 인터페이스에 대 한 동일한 GUID를 생성 합니다.
 

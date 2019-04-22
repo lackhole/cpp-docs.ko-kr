@@ -6,10 +6,10 @@ helpviewer_keywords:
 - OLE DB consumer templates, about consumer templates
 ms.assetid: 526aa897-5961-4396-85cb-c84f77113551
 ms.openlocfilehash: 81bb80446ef3df09eaed7a8728e789de67c27122
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040808"
 ---
 # <a name="working-with-ole-db-consumer-templates"></a>OLE DB 소비자 템플릿 작업
@@ -60,4 +60,4 @@ ms.locfileid: "59040808"
 
 ## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)

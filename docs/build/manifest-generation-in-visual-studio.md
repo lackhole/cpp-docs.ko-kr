@@ -5,10 +5,10 @@ helpviewer_keywords:
 - manifests [C++]
 ms.assetid: 0af60aa9-d223-42cd-8426-b3fc543a2a81
 ms.openlocfilehash: f055e3d16dfc0ea4320883210458ae10daebdc45
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781681"
 ---
 # <a name="manifest-generation-in-visual-studio"></a>Visual Studio에서 매니페스트 생성
@@ -27,7 +27,7 @@ Visual Studio에서 빌드 시스템에서 매니페스트를 최종 이진 응�
 
 1. 매니페스트 도구에서 생성 된 매니페스트와 동일한 이진 파일에 포함 된 매니페스트가 이면 다음 빌드 단계를 빌드는 계속 됩니다.
 
-텍스트 리소스로 최종 이진에 포함 된 매니페스트 및 최종 이진 파일로 Visual Studio에서 열어 볼 수 있습니다. 매니페스트에 올바른 라이브러리를 가리키는지을 보장 하려면에 설명 된 단계를 수행 [Visual c + + 응용 프로그램의 종속성 이해](../windows/understanding-the-dependencies-of-a-visual-cpp-application.md) 에 설명 된 제안에 따라 또는 [문제해결](troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md) 섹션입니다.
+텍스트 리소스로 최종 이진에 포함 된 매니페스트 및 최종 이진 파일로 Visual Studio에서 열어 볼 수 있습니다. 매니페스트에 올바른 라이브러리를 가리키는지을 보장 하려면에 설명 된 단계를 수행 [시각적 개체의 종속성 이해 C++ 응용 프로그램](../windows/understanding-the-dependencies-of-a-visual-cpp-application.md) 에 설명 된 제안에 따라 또는 합니다 [ 문제 해결](troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md) 섹션입니다.
 
 ## <a name="see-also"></a>참고자료
 

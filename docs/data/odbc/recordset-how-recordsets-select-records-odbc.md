@@ -10,10 +10,10 @@ helpviewer_keywords:
 - ODBC recordsets, selecting records
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
 ms.openlocfilehash: 310481a6ea6637de817bf29d528cbdfe70ae70db
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041327"
 ---
 # <a name="recordset-how-recordsets-select-records-odbc"></a>레코드 집합: 레코드 집합 선택 (ODBC)를 기록 하는 방법
@@ -100,6 +100,6 @@ ms.locfileid: "59041327"
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [레코드 집합: 레코드 집합 업데이트 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
-[ODBC 기초](../../data/odbc/odbc-basics.md)<br/>
+[ODBC 기본 사항](../../data/odbc/odbc-basics.md)<br/>
 [SQL](../../data/odbc/sql.md)<br/>
 [레코드 집합: 레코드 잠금 (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

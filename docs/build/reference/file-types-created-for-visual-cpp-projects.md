@@ -15,10 +15,10 @@ helpviewer_keywords:
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
 ms.openlocfilehash: eee53acbb8b0b8432a7d5819fb773b616f0e8897
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59424095"
 ---
 # <a name="file-types-created-for-visual-studio-c-projects"></a>Visual Studio에 대해 만들어진 형식 파일 C++ 프로젝트
@@ -50,16 +50,16 @@ Visual Studio 프로젝트를 만들면 새 솔루션을 만들 수 있습니다
 |파일 확장명|형식|목차|
 |--------------------|----------|--------------|
 |.asmx|소스|배포 파일|
-|.asp|소스|Active Server Page 파일|
+|.asp|Source|Active Server Page 파일|
 |.asp|프로젝트|애플리케이션 템플릿 프로젝트 파일|
 |.bmp, .dib, .gif, .jpg, .jpe, .png|리소스|일반 이미지 파일|
 |.bsc|컴파일|브라우저 코드 파일|
-|.cpp, .c|소스|애플리케이션의 기본 소스 코드 파일|
+|.cpp, .c|Source|애플리케이션의 기본 소스 코드 파일|
 |.cur|리소스|커서 비트맵 그래픽 파일|
 |.dbp|프로젝트|데이터베이스 프로젝트 파일|
-|.disco|소스|동적 검색 문서 파일. XML Web services 검색을 처리합니다.|
+|.disco|Source|동적 검색 문서 파일. XML Web services 검색을 처리합니다.|
 |.exe, .dll|프로젝트|실행 파일 또는 동적 연결 라이브러리 파일|
-|.h|소스|헤더(포함) 파일|
+|.h|Source|헤더(포함) 파일|
 |.htm, .html, .xsp, .asp, .htc, .hta, .xml|리소스|공용 웹 파일|
 |.HxC|프로젝트|도움말 프로젝트 파일|
 |.ico|리소스|아이콘 비트맵 그래픽 파일|

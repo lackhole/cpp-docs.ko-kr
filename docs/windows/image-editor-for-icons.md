@@ -1,5 +1,5 @@
 ---
-title: (C + +) 아이콘에 대 한 이미지 편집기
+title: 아이콘에 대 한 이미지 편집기 (C++)
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.cursor.F1
@@ -43,13 +43,13 @@ helpviewer_keywords:
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
 ms.openlocfilehash: dd7da76d3df68fa63c87f64610524accfd4302ef
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041551"
 ---
-# <a name="image-editor-for-icons-c"></a>(C + +) 아이콘에 대 한 이미지 편집기
+# <a name="image-editor-for-icons-c"></a>아이콘에 대 한 이미지 편집기 (C++)
 
 (예:.ico,.bmp,.png) 이미지 파일을 선택 하면 **솔루션 탐색기**에서 이미지가 열립니다는 **이미지 편집기** 코드 파일에서 열리는 동일한 방식 합니다 **코드 편집기** . 경우는 **이미지 편집기** 탭이 활성화를 만들고 이미지를 편집 하기 위한 많은 도구를 사용 하 여 도구 모음을 표시 합니다. 비트맵, 아이콘 및 커서와 함께 명령을 사용 하 여 GIF 나 JPEG 형식의 이미지도 편집할 수 있습니다 합니다 **이미지** 메뉴와 도구의 합니다 **이미지 편집기** 도구 모음입니다.
 
@@ -143,7 +143,7 @@ ms.locfileid: "59041551"
 |---|---|
 |**글꼴**|사용 가능한 글꼴을 나열합니다.|
 |**글꼴 스타일**|사용 가능한 지정된 된 글꼴 스타일을 나열합니다.|
-|**크기**|지정된 된 글꼴에 사용할 수 있는 포인트 크기를 나열합니다.|
+|**Size**|지정된 된 글꼴에 사용할 수 있는 포인트 크기를 나열합니다.|
 |**샘플**|지정 된 글꼴 설정을 사용 하 여 텍스트를 표시 하는 방법을 예제를 보여 줍니다.|
 |**스크립트**|지정된 된 글꼴에 대 한 사용 가능한 언어 스크립트를 나열 합니다.<br/><br/>다른 언어로 스크립트를 선택 하면 문자 집합에 대 한 언어 다국어 문서를 만드는 데 사용할 수는 있습니다.|
 
@@ -151,13 +151,13 @@ ms.locfileid: "59041551"
 
 Windows 응용 프로그램의 아이콘에 텍스트를 추가 하 고 텍스트의 글꼴 조작 하는 방법의 예는 다음과 같습니다.
 
-1. C + + Windows Forms 응용 프로그램을 만듭니다. 자세한 내용은 [방법: Windows Forms 응용 프로그램을 만들](/previous-versions/visualstudio/visual-studio-2008/s69bf10x(v%3dvs.90))합니다. *app.ico* 파일은 기본적으로 프로젝트에 추가 됩니다.
+1. 만들기는 C++ Windows Forms 응용 프로그램입니다. 자세한 내용은 [방법: Windows Forms 응용 프로그램을 만들](/previous-versions/visualstudio/visual-studio-2008/s69bf10x(v%3dvs.90))합니다. *app.ico* 파일은 기본적으로 프로젝트에 추가 됩니다.
 
 1. **솔루션 탐색기**, 파일을 두 번 클릭 *app.ico*합니다. 합니다 **이미지 편집기** 열립니다.
 
 1. 메뉴로 이동 **이미지** > **Tools** 선택한 **텍스트 도구**합니다.
 
-1. 에 **텍스트 도구** 대화 상자에서 *c + +* 빈 텍스트 영역에 있습니다. 이 텍스트의 왼쪽된 위 모퉁이 크기를 조정할 수 상자에 나타납니다 *app.ico* 에 **이미지 편집기**합니다.
+1. 에 **텍스트 도구** 대화 상자에서 *C++* 빈 텍스트 영역에 있습니다. 이 텍스트의 왼쪽된 위 모퉁이 크기를 조정할 수 상자에 나타납니다 *app.ico* 에 **이미지 편집기**합니다.
 
 1. 에 **이미지 편집기**, 크기를 조정할 수 상자의 가운데로 끕니다 *app.ico* 텍스트의 가독성을 높이기 위해.
 
