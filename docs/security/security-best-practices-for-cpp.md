@@ -9,10 +9,10 @@ helpviewer_keywords:
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
 ms.openlocfilehash: bc449d0bbf222391868dc7586e0245fd6e8cd2ac
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58769864"
 ---
 # <a name="security-best-practices-for-c"></a>C++의 최선의 보안 구현 방법
@@ -35,7 +35,7 @@ ms.locfileid: "58769864"
 [/NXCOMPAT](../build/reference/nxcompat.md)하십시오 [/NXCOMPAT (데이터 실행 방지 기능과 호환)](../build/reference/nxcompat-compatible-with-data-execution-prevention.md) 이러한 컴파일러 및 링커 옵션 데이터 실행 방지 (DEP) 호환성을 사용 합니다. DEP는 비코드 페이지 실행에 대해 CPU를 보호합니다.
 
 [/analyze(코드 분석)](../build/reference/analyze-code-analysis.md)<br/>
-이 컴파일러 옵션은 버퍼 오버런, 초기화되지 않은 메모리, null 포인터 역참조 및 메모리 누수와 같은 잠재적인 보안 문제를 보고하는 코드 분석을 활성화합니다. 이 옵션은 기본적으로 해제되어 있습니다. 자세한 내용은 [C/c + + 개요에 대 한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)합니다.
+이 컴파일러 옵션은 버퍼 오버런, 초기화되지 않은 메모리, null 포인터 역참조 및 메모리 누수와 같은 잠재적인 보안 문제를 보고하는 코드 분석을 활성화합니다. 이 옵션은 기본적으로 해제되어 있습니다. 자세한 내용은 [C 용 코드 분석 /C++ 개요](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)합니다.
 
 [/DYNAMICBASE(주소 공간 레이아웃을 임의로 지정)](../build/reference/dynamicbase-use-address-space-layout-randomization.md)<br/>
 이 링커 옵션은 실행을 시작할 때 메모리의 다른 위치에 로드될 수 있는 실행 가능한 이미지를 작성할 수 있게 합니다. 또한 이 옵션을 사용하면 메모리의 스택 위치를 예측하기가 훨씬 어렵습니다.
@@ -91,7 +91,7 @@ Administrators 그룹에 속하는 Windows 사용자 계정을 사용하면 개�
 
 ## <a name="guidance-for-speculative-execution-side-channels"></a>투기적 실행 쪽 채널에 대 한 지침
 
-식별할 투기적 실행 쪽 채널 하드웨어 취약점으로 인 한 c + + 소프트웨어에서 위협을 완화 하는 방법에 대 한 정보를 참조 하세요 [잘못 된 실행 쪽 채널에 대 한 c + + 개발자 지침](developer-guidance-speculative-execution.md)합니다.
+식별할 투기적 실행 쪽 채널 하드웨어 문제에 대 한 완화 하는 방법에 대 한 내용은 C++ 소프트웨어를 참조 하세요 [ C++ 잘못 된 실행 쪽 채널에 대 한 개발자 지침](developer-guidance-speculative-execution.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

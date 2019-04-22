@@ -1,19 +1,19 @@
 ---
-title: '방법: 사용 하 여 추적 참조 C + + /cli CLI'
+title: '방법: 추적 참조 사용 C++/CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CLR types, passing by reference
 ms.assetid: d91e471c-34ff-4786-9e0d-c6db0494b946
 ms.openlocfilehash: 8be575bd39bc3b2e6512ba1bcb40d9206731f83a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58777053"
 ---
-# <a name="how-to-use-tracking-references-in-ccli"></a>방법: 사용 하 여 추적 참조 C + + /cli CLI
+# <a name="how-to-use-tracking-references-in-ccli"></a>방법: 추적 참조 사용 C++/CLI
 
-이 문서에서는 추적 참조 (%)를 사용 하는 방법을 보여 줍니다. C + + /cli CLI를 공용 언어 런타임 (CLR) 형식을 참조로 전달 합니다.
+이 문서에서는 추적 참조 (%)를 사용 하는 방법을 보여 줍니다. C++/CLI 공용 언어 런타임 (CLR) 형식 참조로 전달 합니다.
 
 ## <a name="to-pass-clr-types-by-reference"></a>CLR 형식을 참조로 전달 하려면
 
@@ -70,7 +70,7 @@ int main() {
 zip == 20100
 ```
 
-다음 예제를 보여 줍니다는 수행 추적 참조의 주소를 반환 합니다는 [interior_ptr (C + + CLI)](../extensions/interior-ptr-cpp-cli.md), 수정 및 추적 참조를 통해 데이터에 액세스 하는 방법을 보여줍니다.
+다음 예제를 보여 줍니다는 수행 추적 참조의 주소를 반환 합니다는 [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md), 수정 및 추적 참조를 통해 데이터에 액세스 하는 방법을 보여줍니다.
 
 ```cpp
 // tracking_reference_data.cpp

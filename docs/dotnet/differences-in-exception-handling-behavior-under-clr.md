@@ -6,10 +6,10 @@ helpviewer_keywords:
 - set_se_translator function
 ms.assetid: 2e7e8daf-d019-44b0-a51c-62d7aaa89104
 ms.openlocfilehash: ae745cfb96f4efe1ede7e3fc762842f9e4d63323
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772740"
 ---
 # <a name="differences-in-exception-handling-behavior-under-clr"></a>/CLR을 지정하는 경우 예외 처리 동작의 차이점
@@ -18,7 +18,7 @@ ms.locfileid: "58772740"
 
 ##  <a name="vcconjumpingoutofafinallyblock"></a> 점프,는 Finally 블록
 
-_ _에서 이동 하는 네이티브 C/c + + 코드에서**마지막** 경고를 생성 하지만 구조적된 예외 처리 (SEH)를 사용 하 여 블록 허용 됩니다.  아래 [/clr](../build/reference/clr-common-language-runtime-compilation.md)부재 중 이동해 서는 **마지막으로** 블록에 오류가 발생:
+네이티브 c에서 /C++ 코드는 _ _에서 점프**마지막** 경고를 생성 하지만 구조적된 예외 처리 (SEH)를 사용 하 여 블록 허용 됩니다.  아래 [/clr](../build/reference/clr-common-language-runtime-compilation.md)부재 중 이동해 서는 **마지막으로** 블록에 오류가 발생:
 
 ```cpp
 // clr_exception_handling_4.cpp
@@ -97,9 +97,9 @@ We should execute this handler if compiled to native
 
 ##  <a name="vccondisassociatedrethrows"></a> 연결이 끊긴 다시 Throw
 
-**/clr** (연결이 끊긴된 rethrow로 알려짐) catch 처리기 외부에서 예외를 다시 throw 하는 것을 지원 하지 않습니다. 이 형식의 예외가 처리 되는 표준 c + + rethrow로 합니다. 연결이 끊긴된 rethrow 관리 되는 활성 예외가 있을 때 발생 하는 경우 예외는 c + + 예외로 래핑되고 다시 throw 합니다. 이 유형의 예외 형식의 예외로 낼 수 있습니다 <xref:System.Runtime.InteropServices.SEHException>합니다.
+**/clr** (연결이 끊긴된 rethrow로 알려짐) catch 처리기 외부에서 예외를 다시 throw 하는 것을 지원 하지 않습니다. 이 유형의 예외는 표준으로 처리 됩니다 C++ 를 다시 throw 합니다. 예외를 래핑된 연결이 끊긴된 rethrow 관리 되는 활성 예외가 있을 때 발생 하는 경우는 C++ 예외 다시 throw 합니다. 이 유형의 예외 형식의 예외로 낼 수 있습니다 <xref:System.Runtime.InteropServices.SEHException>합니다.
 
-다음 예제에서는 c + + 예외가 다시 throw 하는 관리 되는 예외를 보여 줍니다.
+다음 예제에서는으로 다시 throw 하는 관리 되는 예외는 C++ 예외:
 
 ```cpp
 // clr_exception_handling_6.cpp

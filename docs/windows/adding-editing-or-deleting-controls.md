@@ -1,5 +1,5 @@
 ---
-title: '방법: Add, Edit, 또는 컨트롤 (c + +)를 삭제 합니다.'
+title: '방법: Add, Edit, 또는 컨트롤 삭제 (C++)'
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.dialog.dialog
@@ -44,13 +44,13 @@ helpviewer_keywords:
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
 ms.openlocfilehash: 2e3e671cd92313ad120d2cd6aae3f7e815e09e65
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025366"
 ---
-# <a name="how-to-add-edit-or-delete-controls-c"></a>방법: Add, Edit, 또는 컨트롤 (c + +)를 삭제 합니다.
+# <a name="how-to-add-edit-or-delete-controls-c"></a>방법: Add, Edit, 또는 컨트롤 삭제 (C++)
 
 사용 하는 **대화 상자 편집기**, 추가할 수 있습니다 크기 조정, 편집 및 대화 상자에서 컨트롤을 삭제 합니다. 해당 ID와 같은 컨트롤의 속성을 편집할 수도 있습니다 여부를 런타임에 처음 표시 되 나 합니다.
 

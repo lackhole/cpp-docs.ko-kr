@@ -14,10 +14,10 @@ helpviewer_keywords:
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
 ms.openlocfilehash: 1946fdabe66934e64cf95d3c3f12e16bc98ba664
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779354"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr(공용 언어 런타임 컴파일)
@@ -57,7 +57,7 @@ ms.locfileid: "58779354"
 
 - **initialAppDomain**
 
-   CLR 버전 1에서 실행 하려면 Visual c + + 응용 프로그램을 사용 하도록 설정 합니다.  **initialAppDomain** 을 사용하여 컴파일된 응용 프로그램은 CLR 버전 1에서 지원되지 않으므로 ASP.NET을 사용하는 응용 프로그램에서 사용하면 안됩니다.
+   시각적 개체를 사용 하도록 설정 C++ 의 CLR 버전 1에서 실행할 응용 프로그램입니다.  **initialAppDomain** 을 사용하여 컴파일된 응용 프로그램은 CLR 버전 1에서 지원되지 않으므로 ASP.NET을 사용하는 응용 프로그램에서 사용하면 안됩니다.
 
 - **nostdlib**
 

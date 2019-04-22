@@ -8,10 +8,10 @@ helpviewer_keywords:
 - OLE DB providers, testing
 ms.assetid: e4aa30c1-391b-41f8-ac73-5270e46fd712
 ms.openlocfilehash: a9601b2afe40133a5cc88589b530b5ed549ac81e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025132"
 ---
 # <a name="testing-the-read-only-provider"></a>읽기 전용 공급자 테스트
@@ -24,7 +24,7 @@ ms.locfileid: "59025132"
 
 1. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
-1. 에 **프로젝트 형식** 창 합니다 **설치 됨** > **Visual c + +** > **MFC/ATL** 폴더입니다. 에 **템플릿을** 창 **MFC 응용 프로그램**합니다.
+1. 에 **프로젝트 형식** 창을 **설치 됨** > **시각적 C++**   >  **MFC/ATL** 폴더 . 에 **템플릿을** 창 **MFC 응용 프로그램**합니다.
 
 1. 프로젝트 이름을 입력 *TestProv*를 클릭 하 고 **확인**합니다.
 

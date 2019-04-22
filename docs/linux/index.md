@@ -2,8 +2,13 @@
 layout: LandingPage
 title: Linux 개발을 위한 C++ 관련 설명서
 description: Linux에서 실행되는 애플리케이션을 만들고 디버그합니다.
+ms.openlocfilehash: 516b57ca976ddd89081581978c6ac5f86c64876e
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58779770"
 ---
-
 # <a name="linux-development-with-c-documentation"></a>Linux 개발을 위한 C++ 관련 설명서
 
 Visual Studio 2017을 사용하여 Linux에서 실행되는 애플리케이션을 만들고 디버그합니다.

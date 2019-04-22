@@ -265,10 +265,10 @@ helpviewer_keywords:
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
 ms.openlocfilehash: eea37d03ca5a4fab450fbca0c4c3f6c76fefb407
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780615"
 ---
 # <a name="clistctrl-class"></a>CListCtrl 클래스
@@ -2116,7 +2116,7 @@ int GetNextSelectedItem(POSITION& pos) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*<br/>
+*pos*<br/>
 에 대 한 이전 호출에서 반환 된 위치 값에 대 한 참조가 `GetNextSelectedItem` 또는 `GetFirstSelectedItemPosition`합니다. 값이이 호출에서 다음 위치로 업데이트 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2605,7 +2605,7 @@ int HitTest(
 *pHitTestInfo*<br/>
 주소는 `LVHITTESTINFO` 적중 테스트 위치를 포함 하는 구조는 적중된 테스트의 결과 대 한 정보를 받습니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 테스트할 점입니다.
 
 *pFlags*<br/>
@@ -2702,7 +2702,7 @@ LRESULT InsertGroup(
 
 ### <a name="parameters"></a>매개 변수
 
-*인덱스입니다.*<br/>
+*index*<br/>
 그룹 삽입 될 항목의 인덱스입니다.
 
 *pgrp*<br/>
@@ -2875,7 +2875,7 @@ BOOL IsItemVisible(int index) const;
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*인덱스입니다.*|[in] 현재 목록 뷰 컨트롤에 있는 항목의 0부터 시작 인덱스입니다.|
+|*index*|[in] 현재 목록 뷰 컨트롤에 있는 항목의 0부터 시작 인덱스입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -2923,7 +2923,7 @@ UINT MapIndexToID(UINT index) const;
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*인덱스입니다.*|[in] 항목의 0부터 시작 하는 인덱스입니다.|
+|*index*|[in] 항목의 0부터 시작 하는 인덱스입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -3043,7 +3043,7 @@ BOOL RedrawItems(
 *nFirst*<br/>
 그려야 하는 첫 번째 항목의 인덱스입니다.
 
-*n 마지막*<br/>
+*nLast*<br/>
 다시 그려져 야 마지막 항목의 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -3598,7 +3598,7 @@ COLORREF SetInsertMarkColor(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 A [COLORREF](/windows/desktop/gdi/colorref) 삽입 지점을 설정할 색을 지정 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -3853,7 +3853,7 @@ BOOL SetItemPosition(
 *nItem*<br/>
 위치가 설정할 항목의 인덱스입니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 A [지점](/previous-versions/dd162805\(v=vs.85\)) 항목의 왼쪽 위 모퉁이의 보기에서 새 위치를 지정 하는 구조를 조정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -3955,7 +3955,7 @@ COLORREF SetOutlineColor(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 새 [COLORREF](/windows/desktop/gdi/colorref) 윤곽선 색을 포함 하는 구조체입니다.
 
 ### <a name="return-value"></a>반환 값

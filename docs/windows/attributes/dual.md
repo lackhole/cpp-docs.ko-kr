@@ -1,5 +1,5 @@
 ---
-title: 이중 (c + + COM 특성)
+title: 이중 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.dual
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - dual attribute
 ms.assetid: 5d4a9069-d819-42cd-ba56-bbcda17157d9
 ms.openlocfilehash: 8f02f6b69b31f10b41d5c920cfc2ad62dfa1cef2
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023960"
 ---
 # <a name="dual"></a>dual
@@ -25,7 +25,7 @@ ms.locfileid: "59023960"
 
 ## <a name="remarks"></a>설명
 
-경우는 **이중** c + + 특성이 인터페이스 앞에 오면, 생성된 된.idl 파일의 라이브러리 블록 안에 배치 하는 인터페이스입니다.
+경우는 **이중** C++ 특성이 인터페이스 앞에 오면, 생성된 된.idl 파일의 라이브러리 블록 안에 배치 하는 인터페이스입니다.
 
 ## <a name="example"></a>예제
 
@@ -59,7 +59,7 @@ __interface IStatic : IDispatch
 
 |||
 |-|-|
-|**적용 대상**|**interface(인터페이스)**|
+|**적용 대상**|**interface**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|`dispinterface`|
@@ -70,7 +70,7 @@ __interface IStatic : IDispatch
 
 [IDL 특성](idl-attributes.md)<br/>
 [용도별 특성](attributes-by-usage.md)<br/>
-[사용자 지정](custom-cpp.md)<br/>
+[custom](custom-cpp.md)<br/>
 [dispinterface](dispinterface.md)<br/>
 [object](object-cpp.md)<br/>
 [__interface](../../cpp/interface.md)

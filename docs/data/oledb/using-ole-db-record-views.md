@@ -10,10 +10,10 @@ helpviewer_keywords:
 - MFC, record views
 ms.assetid: 1cd3e595-ce08-43d8-a0a9-d03b5d3e24ce
 ms.openlocfilehash: 83f4d64252ab5c2b80d62419ea448c1ffd0cdd69
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025875"
 ---
 # <a name="using-ole-db-record-views"></a>OLE DB 레코드 뷰 사용
@@ -27,7 +27,7 @@ COleDBRecordView myRecordView;
 CRowset<CAccessor<CProductAccessor>> myRowSet = myRecordView.OnGetRowset();
 ```
 
-뷰는 대화 상자의 컨트롤에 `CRowset` 개체의 필드를 표시합니다. `COleDBRecordView` 개체에서는 DDX(대화 상자 데이터 교환) 및 `CRowset`에 내장된 탐색 기능(`MoveFirst`, `MoveNext`, `MovePrev` 및 `MoveLast`)을 사용하여 폼의 컨트롤과 행 집합의 필드 사이에 데이터 이동을 자동화합니다. `COleDBRecordView` 추적 행 집합에서 사용자의 위치 레코드 뷰 사용자 인터페이스 및 공급 장치를 업데이트할 수 있도록를 [OnMove](../../mfc/reference/coledbrecordview-class.md#onmove) 메서드 간에 이동 하기 전에 현재 레코드를 업데이트 합니다.
+뷰는 대화 상자의 컨트롤에 `CRowset` 개체의 필드를 표시합니다. `COleDBRecordView` 개체에서는 DDX(대화 상자 데이터 교환) 및 `CRowset`에 내장된 탐색 기능(`MoveFirst`, `MoveNext`, `MovePrev` 및 `MoveLast`)을 사용하여 폼의 컨트롤과 행 집합의 필드 사이에 데이터 이동을 자동화합니다. `COleDBRecordView`는 레코드 뷰가 사용자 인터페이스를 업데이트할 수 있도록 행 집합에서 사용자의 위치를 추적하고, 다른 레코드로 이동하기 전에 현재 레코드를 업데이트하는 [OnMove](../../mfc/reference/coledbrecordview-class.md#onmove) 메서드도 지원합니다.
 
 DDX 함수를 `COleDbRecordView`와 사용하여 데이터베이스 레코드 집합의 데이터를 직접 가져와서 대화 상자 컨트롤에 표시할 수 있습니다. `DDX_Text` 같은 **DDX_Field**<strong>\*</strong> * 함수가 아닌 `DDX_FieldText` 같은 **DDX_**<strong>\*</strong> * 메서드를 `COleDbRecordView`와 함께 사용해야 합니다.
 

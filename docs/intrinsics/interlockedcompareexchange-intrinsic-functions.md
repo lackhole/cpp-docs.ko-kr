@@ -49,10 +49,10 @@ helpviewer_keywords:
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
 ms.openlocfilehash: 6c0fabe7cbada87253960faca8e207bb10dd07bd
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021471"
 ---
 # <a name="interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange 내장 함수
@@ -197,12 +197,12 @@ __int64 _InterlockedCompareExchange64_rel(
 |---------------|------------------|------------|
 |`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64|\<intrin.h>|
 |`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM|\<intrin.h>|
-|`_InterlockedCompareExchange_np`에서 `_InterlockedCompareExchange16_np`에서 `_InterlockedCompareExchange64_np`|X64|\<intrin.h>|
+|`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|X64|\<intrin.h>|
 |`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, x64|\<immintrin.h>|
 
 ## <a name="remarks"></a>설명
 
-`_InterlockedCompareExchange` 원자성 비교를 수행 합니다 `Destination` 값을 `Comparand` 값입니다. `Destination` 값이 `Comparand` 값과 같으면 `Exchange`으로 지정된 주소에 `Destination` 값이 저장됩니다. 그렇지 않으면 작업이 수행되지 않습니다.
+`_InterlockedCompareExchange`는 `Destination` 값과 `Comparand` 값의 원자성 비교를 수행합니다. `Destination` 값이 `Comparand` 값과 같으면 `Exchange`으로 지정된 주소에 `Destination` 값이 저장됩니다. 그렇지 않으면 작업이 수행되지 않습니다.
 
 `_InterlockedCompareExchange` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedCompareExchange](/windows/desktop/api/winnt/nf-winnt-interlockedcompareexchange) 함수입니다.
 
@@ -436,7 +436,7 @@ int main(
 ## <a name="see-also"></a>참고자료
 
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)<br/>
-[_InterlockedCompareExchangePointer Intrinsic Functions](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)<br/>
+[_InterlockedCompareExchangePointer 내장 함수](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)<br/>
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

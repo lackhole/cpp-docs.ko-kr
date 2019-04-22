@@ -1,17 +1,17 @@
 ---
-title: '방법: 이벤트를 사용 하 여 C + + /cli CLI'
+title: '방법: 이벤트에서 사용 하 여 C++/CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - events [C++], accessing in interfaces
 ms.assetid: fbf452dc-2dd7-4322-adc0-656512d654d1
 ms.openlocfilehash: 6b4ecbba5651341965d2cf4df5b5ad2ead7f9f26
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58770996"
 ---
-# <a name="how-to-use-events-in-ccli"></a>방법: 이벤트를 사용 하 여 C + + /cli CLI
+# <a name="how-to-use-events-in-ccli"></a>방법: 이벤트에서 사용 하 여 C++/CLI
 
 이 아티클에서 이벤트 및 해당 이벤트를 호출 하는 함수를 선언 하는 인터페이스 및 인터페이스를 구현 하는 클래스 및 이벤트 처리기를 사용 하는 방법에 설명 합니다.
 

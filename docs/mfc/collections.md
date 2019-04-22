@@ -18,17 +18,17 @@ helpviewer_keywords:
 - collection classes [MFC], shapes
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
 ms.openlocfilehash: f3dea68deaae73313fe389be49e8bbed7da3c93a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767186"
 ---
 # <a name="collections"></a>컬렉션
 
 Microsoft Foundation Class 라이브러리는 개체 그룹을 관리하기 위한 컬렉션 클래스를 제공합니다. 이러한 클래스는 두 가지 유형입니다.
 
-- [C + + 템플릿에서 생성 하는 컬렉션 클래스](#_core_the_template_based_collection_classes)
+- [컬렉션 클래스에서 만든 C++ 템플릿](#_core_the_template_based_collection_classes)
 
 - [템플릿에서 생성 되지 않은 컬렉션 클래스](#_core_the_collection_classes_not_based_on_templates)
 

@@ -29,10 +29,10 @@ helpviewer_keywords:
 - CScrollView [MFC], SetScrollSizes
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
 ms.openlocfilehash: d60082092bd42fbe220eee08953ad5fda0ff0a85
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774155"
 ---
 # <a name="cscrollview-class"></a>CScrollView 클래스
@@ -285,7 +285,7 @@ void ScrollToPosition(POINT pt);
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 논리 단위에서를 스크롤하여 가리킵니다. `x` 멤버 (보다 크거나 0으로 보기의 총 크기까지) 양수 값 이어야 합니다. 같은 기준이 `y` 매핑 모드가 MM_TEXT 일 때 멤버입니다. `y` 멤버의 매핑 모드가 MM_TEXT 이외의 음수입니다.
 
 ### <a name="remarks"></a>설명

@@ -1,18 +1,18 @@
 ---
-title: '방법: 클래스 및 구조체 정의 및 사용 (C + + /cli CLI)'
+title: '방법: 클래스 및 구조체 정의 및 사용 (C++/CLI)'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - structs [C++]
 - classes [C++], instantiating
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
 ms.openlocfilehash: 090259a4ad6b46eccf66dca6c99b4eb532b7ae5c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774921"
 ---
-# <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>방법: 클래스 및 구조체 정의 및 사용 (C + + /cli CLI)
+# <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>방법: 클래스 및 구조체 정의 및 사용 (C++/CLI)
 
 이 문서에서는 정의 및 사용자 정의 참조 형식 및 C + 값 형식을 사용 하는 방법을 보여 줍니다. + CLI입니다.
 
@@ -455,7 +455,7 @@ int main() {
 
 CLR에 의해서만 호출될 수 있도록 정적 생성자를 private 멤버 함수로 정의합니다.
 
-정적 생성자에 대 한 자세한 내용은 참조 하세요. [방법: 인터페이스 정적 생성자 정의 (C + + /cli CLI)](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md) 합니다.
+정적 생성자에 대 한 자세한 내용은 참조 하세요. [방법: 인터페이스 정적 생성자 정의 (C++/CLI)](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md) 합니다.
 
 ```cpp
 // compile with: /clr
@@ -499,7 +499,7 @@ Visual C++를 사용하여 형식을 정의하는 경우 참조 형식에서 `th
 
 자세한 내용은 다음 항목을 참조하세요.
 
-- [개체 연산자 (^)에 대 한 핸들](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)
+- [개체 연산자에 대한 핸들(^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)
 
 - [interior_ptr(C++/CLI)](../extensions/interior-ptr-cpp-cli.md)
 
@@ -721,7 +721,7 @@ S object 0 being destroyed, this=0018F378
 
 ##  <a name="BKMK_Destructors_and_finalizers"></a> 소멸자 및 종료자
 
-참조 형식에서 소멸자는 리소스의 명확한 정리를 수행합니다. 종료자는 관리되지 않는 리소스를 정리하고 소멸자에 의해 명확하게 호출되거나 가비지 수집기에 의해 불명확하게 호출될 수 있습니다. 표준 c + +에서 소멸자에 대 한 정보를 참조 하세요 [소멸자](../cpp/destructors-cpp.md)합니다.
+참조 형식에서 소멸자는 리소스의 명확한 정리를 수행합니다. 종료자는 관리되지 않는 리소스를 정리하고 소멸자에 의해 명확하게 호출되거나 가비지 수집기에 의해 불명확하게 호출될 수 있습니다. 표준에서 소멸자에 대 한 내용은 C++를 참조 하세요 [소멸자](../cpp/destructors-cpp.md).
 
 ```cpp
 class classname {
@@ -789,9 +789,9 @@ ref struct A {
 
 소멸자를 호출하여 개체의 리소스를 명확하게 정리하면 CLR이 불명확하게 개체를 종료하는 것에 비해 성능을 향상시킬 수 있습니다.
 
-Visual c + +로 작성 된 개이고 사용 하 여 컴파일된 코드 **/clr** 경우 형식의 소멸자를 실행 합니다.
+시각적 개체에 작성 된 코드는 C++ 를 사용 하 여 컴파일된 **/clr** 경우 형식의 소멸자를 실행 합니다.
 
-- 스택 의미 체계를 사용하여 만들어진 개체가 범위를 벗어난 경우. 자세한 내용은 [참조 형식에 대 한 c + + 스택 의미 체계](../dotnet/cpp-stack-semantics-for-reference-types.md)합니다.
+- 스택 의미 체계를 사용하여 만들어진 개체가 범위를 벗어난 경우. 자세한 내용은 [ C++ 참조 형식에 대 한 스택 의미 체계](../dotnet/cpp-stack-semantics-for-reference-types.md)합니다.
 
 - 개체의 생성 중에 예외가 발생한 경우
 

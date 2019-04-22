@@ -74,10 +74,10 @@ helpviewer_keywords:
 - CMFCRibbonEdit [MFC], SetWidth
 ms.assetid: 9b85f1f2-446b-454e-9af9-104fdad8a897
 ms.openlocfilehash: 80ee43ae32416f9f62df419c4afbd46a0aa63cc8
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/10/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780485"
 ---
 # <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit 클래스
@@ -604,7 +604,7 @@ virtual void OnLButtonDown(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 이 매개 변수 사용 되지 않습니다.
 
 ### <a name="remarks"></a>설명
@@ -619,7 +619,7 @@ virtual void OnLButtonUp(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 이 매개 변수 사용 되지 않습니다.
 
 ### <a name="remarks"></a>설명
@@ -681,7 +681,7 @@ virtual BOOL SetACCData(
 *pParent*<br/>
 에 대 한 부모 창에 대 한 포인터를 `CMFCRibbonEdit` 개체입니다.
 
-*데이터*<br/>
+*data*<br/>
 에 대 한 내게 필요한 옵션 데이터는 `CMFCRibbonEdit` 개체입니다.
 
 ### <a name="return-value"></a>반환 값

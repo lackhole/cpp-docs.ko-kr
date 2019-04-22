@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSIL, catching exceptions in native code
 ms.assetid: c15afd2b-8505-43bf-8a4a-f1d41532a124
 ms.openlocfilehash: 95ce7a2afabc34ea78376b12da61f419dab4af34
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776559"
 ---
 # <a name="how-to-catch-exceptions-in-native-code-thrown-from-msil"></a>방법: MSIL에서 Throw 하는 네이티브 코드에서 예외를 catch 합니다.
 
-네이티브 코드에서 MSIL에서 네이티브 c + + 예외를 catch 할 수 있습니다.  CLR 예외를 catch 할 수 있습니다 `__try` 고 `__except`입니다.
+네이티브 코드에서 catch 할 수 있습니다 기본 C++ MSIL에서 예외입니다.  CLR 예외를 catch 할 수 있습니다 `__try` 고 `__except`입니다.
 
-자세한 내용은 [구조적 예외 처리 (C/c + +)](../cpp/structured-exception-handling-c-cpp.md) 하 고 [c + + 예외 처리](../cpp/cpp-exception-handling.md)합니다.
+자세한 내용은 [구조적 예외 처리 (C /C++)](../cpp/structured-exception-handling-c-cpp.md) 하 고 [ C++ 예외 처리](../cpp/cpp-exception-handling.md).
 
 ## <a name="example"></a>예제
 

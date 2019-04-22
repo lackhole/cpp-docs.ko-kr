@@ -7,15 +7,15 @@ helpviewer_keywords:
 - OLE DB providers, creating
 ms.assetid: bdfd5c9f-1c6f-4098-822c-dd650e70ab82
 ms.openlocfilehash: d3f8314e7cd57617e35e50a67a4562d4055cb93a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024741"
 ---
 # <a name="creating-an-updatable-provider"></a>업데이트 가능 공급자 만들기
 
-업데이트할 수 있는 공급자 또는 공급자를 업데이트할 수 있는 visual c + + 지원 (쓸) 데이터 저장소입니다. 이 항목에서는 OLE DB 템플릿을 사용 하 여 업데이트할 수 있는 공급자를 만드는 방법을 설명 합니다.
+Visual C++ 업데이트할 수 있는 공급자 또는 업데이트할 수 있는 공급자 지원 (쓸) 데이터 저장소입니다. 이 항목에서는 OLE DB 템플릿을 사용 하 여 업데이트할 수 있는 공급자를 만드는 방법을 설명 합니다.
 
 이 항목에서는 작업 공급자를 사용 하 여 시작 한다고 가정 합니다. 업데이트 가능 공급자 만들기에 다음과 같은 두 단계가 있습니다. 어떻게 공급자는 변경 하는 데이터 저장소를 먼저 결정 해야 합니다. 특히, 변경 내용을 즉시 수행 해야 하는 여부를 update 명령이 실행 될 때까지 지연 합니다. 섹션 "[공급자 업데이트할 수 있도록](#vchowmakingprovidersupdatable)" 변경 내용과 공급자 코드에서 작업을 수행 하는 데 필요한 설정을 설명 합니다.
 

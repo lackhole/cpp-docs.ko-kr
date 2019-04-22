@@ -43,10 +43,10 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], SetAt
 ms.assetid: b45794c2-fe6b-4edb-a8ca-faa03b57b4a8
 ms.openlocfilehash: ed717497866076681e39cdee7803a45eb8e097d3
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780368"
 ---
 # <a name="cmapstringtostring-class"></a>CMapStringToString 클래스
@@ -110,7 +110,7 @@ class CMapStringToString : public CObject
 
 ## <a name="remarks"></a>설명
 
-`CMapStringToString` 통합 된 `IMPLEMENT_SERIAL` 매크로를 serialization 및 요소 덤프를 지원 합니다. 지도 오버 로드 된 삽입을 사용 하 여 보관 파일에 저장 되는 경우 각 요소가 차례로 serialize 됩니다 ( **<<**) 연산자 또는 `Serialize` 멤버 함수입니다.
+`CMapStringToString`는 serialization 및 요소 덤프를 지원하기 위해 `IMPLEMENT_SERIAL` 매크로를 통합합니다. 지도 오버 로드 된 삽입을 사용 하 여 보관 파일에 저장 되는 경우 각 요소가 차례로 serialize 됩니다 ( **<<**) 연산자 또는 `Serialize` 멤버 함수입니다.
 
 개별 덤프가 필요한 경우 `CString` -  `CString` 요소 1 이상으로 덤프 컨텍스트 깊이 설정 해야 합니다.
 

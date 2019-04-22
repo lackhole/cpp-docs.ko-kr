@@ -8,10 +8,10 @@ helpviewer_keywords:
 - class keyword [C++]
 ms.assetid: dd23c09f-6598-4069-8bff-69c7f2518b9f
 ms.openlocfilehash: c4ef9690a41737147354ee0976f6912c4711ff67
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774817"
 ---
 # <a name="class-c"></a>클래스 (C++)
@@ -66,7 +66,7 @@ class [ms-decl-spec] [tag [: base-list ]]
 
 - [__virtual_inheritance](../cpp/inheritance-keywords.md)
 
-방법은 관리 되는 클래스 및 구조체에서 C + + /cli 및 C + + /CX에서는 참조 [클래스 및 구조체](../extensions/classes-and-structs-cpp-component-extensions.md)
+관리 되는 클래스 및 구조체에 대 한 자세한 내용은 C++/CLI 및 C++/CX를 참조 하세요 [클래스 및 구조체](../extensions/classes-and-structs-cpp-component-extensions.md)
 
 ## <a name="example"></a>예제
 

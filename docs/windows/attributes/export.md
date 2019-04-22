@@ -1,5 +1,5 @@
 ---
-title: 내보내기 (c + + COM 특성)
+title: 내보내기 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.export
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - export attribute
 ms.assetid: 70b3e848-fad6-4e09-8c72-be60ca72a4df
 ms.openlocfilehash: 5ffa4283b8a2b265809d06b72be96e217cf8bf9f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023609"
 ---
 # <a name="export"></a>내보내기
@@ -25,7 +25,7 @@ ms.locfileid: "59023609"
 
 ## <a name="remarks"></a>설명
 
-합니다 **내보내기** c + + 특성을 사용 하면 다음에서 사용 하려면 모든 언어를 사용할 수 있도록 하는 이진 호환 형식으로 형식 라이브러리 및.idl 파일에 배치할 데이터 구조입니다.
+합니다 **내보낼** C++ 특성을 사용 하면 다음에서 사용 하려면 모든 언어를 사용할 수 있도록 하는 이진 호환 형식으로 형식 라이브러리 및.idl 파일에 배치할 데이터 구조입니다.
 
 적용할 수 없습니다는 **내보내기** 클래스에는 공용 멤버가 포함 하는 경우에 클래스에 특성 (해당 하는 **구조체**).
 

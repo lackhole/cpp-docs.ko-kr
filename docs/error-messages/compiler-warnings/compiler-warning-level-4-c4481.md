@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C4481
 ms.assetid: 7bfd4e0c-b452-4e6c-b7c4-ac5cc93fe4ea
 ms.openlocfilehash: fe96ff50f4081e3c9dbe3c7eb68da156a69c96ab
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776368"
 ---
 # <a name="compiler-warning-level-4-c4481"></a>컴파일러 경고(수준 4) C4481
 
 비표준 확장이 사용 됨: 재정의 지정자는 'keyword'
 
-키워드는 c + + 표준, /clr에서 작동 하는 재정의 지정자 중 하나가 예를 들어, 포함에서 되지 않은 사용 되었습니다.  자세한 내용은 다음 항목을 참조하세요.
+키워드 없는 사용한는 C++ /clr에서 작동 하는 재정의 지정자 중 하나가 예를 들어 표준입니다.  자세한 내용은 다음 항목을 참조하세요.
 
 - [/clr(공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md)
 

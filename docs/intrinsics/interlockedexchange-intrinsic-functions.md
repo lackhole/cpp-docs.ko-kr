@@ -45,10 +45,10 @@ helpviewer_keywords:
 - _InterlockedExchange8_nf
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
 ms.openlocfilehash: 3945b8a7516962531050e999e96bdef31b179bbb
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021497"
 ---
 # <a name="interlockedexchange-intrinsic-functions"></a>_InterlockedExchangePointer Intrinsic Functions
@@ -144,7 +144,7 @@ __int64 _InterlockedExchange64_rel(
 
 #### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
+*Target*<br/>
 [out에서] 교환할 값에 대 한 포인터입니다. 함수는 이 변수를 `Value`로 설정하고 이전 값을 반환합니다.
 
 *값*<br/>
@@ -185,5 +185,5 @@ HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcq
 ## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

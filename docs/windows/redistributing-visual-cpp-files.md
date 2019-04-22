@@ -9,16 +9,16 @@ helpviewer_keywords:
 - redistributing applications [C++], about redistributing applications
 ms.assetid: d201b2ce-36f1-44e5-a96c-0db81a1ba652
 ms.openlocfilehash: 2bf4297a6c61d16c68d6a9cb893aed78b9d7609d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58786377"
 ---
 # <a name="redistributing-visual-c-files"></a>Visual C++ 파일 재배포
 
 > [!NOTE]
-> Visual C++ 런타임 파일 중 하나의 다운로드를 찾고 있습니까? 로 이동 합니다 [Microsoft 웹 사이트](http://www.microsoft.com/) enter **Visual c + + 재배포 가능 패키지** 검색 상자에 있습니다. 컴퓨터 아키텍처(예: 64비트 Windows를 실행하는 경우 x64) 및 필요한 Visual C++ 버전(예: 2015)의 재배포 가능 패키지를 다운로드하여 설치합니다.
+> Visual C++ 런타임 파일 중 하나의 다운로드를 찾고 있습니까? 로 이동 합니다 [Microsoft 웹 사이트](http://www.microsoft.com/) enter **Visual C++ 재배포 가능 패키지** 검색 상자에 있습니다. 컴퓨터 아키텍처(예: 64비트 Windows를 실행하는 경우 x64) 및 필요한 Visual C++ 버전(예: 2015)의 재배포 가능 패키지를 다운로드하여 설치합니다.
 
 응용 프로그램을 배포할 때 이 응용 프로그램을 지원하는 데 필요한 파일도 배포해야 합니다. Microsoft에서 이러한 파일을 제공하는 경우 파일을 다시 배포할 수 있는지 여부를 확인합니다. Visual Studio 사용 조건을 검토하려면 IDE의 Microsoft Visual Studio 정보 대화 상자에서 사용 조건 연결을 참조하거나, [Microsoft 소프트웨어 사용 조건](https://visualstudio.microsoft.com/license-terms/mlt687465/) 파일을 다운로드합니다. 특정 버전의 Visual Studio에 대한 Microsoft 소프트웨어 사용 조건의 "배포 가능 코드" 섹션에서 언급된 "REDIST 목록"을 보려면 [Microsoft Visual Studio 2017 및 Microsoft Visual Studio 2017 SDK용 배포 가능 코드(유틸리티 및 BuildServer 파일 포함)](/visualstudio/productinfo/2017-redistribution-vs)를 참조하세요. Visual Studio 2015의 경우 [Microsoft Visual Studio 2015 및 Microsoft Visual Studio 2015 SDK용 배포 가능 코드](/visualstudio/productinfo/2015-redistribution-vs)를 참조하세요. 재배포 가능 파일에 대한 자세한 내용은 [재배포할 DLL 확인](determining-which-dlls-to-redistribute.md) 및 [배포 예제](deployment-examples.md)를 참조하세요.
 
@@ -28,7 +28,7 @@ Visual C++ 재배포 가능 패키지는 모든 Visual C++ 라이브러리를 �
 
 각 Visual C++ 재배포 가능 패키지는 컴퓨터에 최신 버전이 있는지 여부를 확인합니다. 최신 버전이 있는 경우 패키지가 설치되지 않습니다. Visual Studio 2015부터 재배포 가능 패키지에 설치 실패를 알리는 오류 메시지가 표시됩니다. **/quiet** 플래그를 사용하여 패키지를 실행하는 경우 오류 메시지가 표시되지 않습니다. 어떤 경우든 오류가 Microsoft Installer에 기록되며, 오류 결과가 호출자에게 반환됩니다. Visual Studio 2015 패키지부터 레지스트리를 검사하여 최신 버전이 설치되어 있는지 확인함으로써 이 오류를 방지할 수 있습니다. 현재 설치된 버전은 HKEY_LOCAL_MACHINE\SOFTWARE[\Wow6432Node]\Microsoft\VisualStudio\\_vs-version_\VC\Runtimes\\{x86|x64|ARM} 키에 저장됩니다. 여기서 _vs-version_은 Visual Studio의 버전 번호입니다(업데이트된 2017 재배포 가능 파일은 2015 버전과 이진 호환되므로 Visual Studio 2015와 Visual Studio 2017의 경우 모두 14.0). 여기서 키는 플랫폼에 설치된 vcredist 버전에 따라 ARM, x86 또는 x64입니다. (RegEdit을 사용하여 x64 플랫폼에 설치된 x86 패키지의 버전을 확인하는 경우가 아니면 Wow6432Node 하위 키에서 확인할 필요가 없습니다.) 버전 번호는 REG_SZ 문자열 값 **Version** 및 **Major**, **Minor**, **Bld** 및 **Rbld** REG_DWORD 값의 집합에도 저장됩니다. 설치 시 오류를 방지하려면 현재 설치된 버전이 최신 버전인 경우 재배포 가능 패키지 설치를 건너뛰어야 합니다.
 
-Visual C++ DLL이 들어 있는 병합 모듈을 사용하는 경우 응용 프로그램을 배포하는 데 사용할 Windows Installer 패키지(또는 유사한 설치 패키지)에 해당 모듈을 포함해야 합니다. 자세한 내용은 [병합 모듈을 사용하여 재배포](redistributing-components-by-using-merge-modules.md)를 참조하세요. 예제를 보려면 [연습: 설치 프로젝트는 Visual c + + 응용 프로그램에서 사용 하 여 배포](walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md), 방법도 보여 주는 데 InstallShield Limited Edition 설치 패키지를 만듭니다.
+Visual C++ DLL이 들어 있는 병합 모듈을 사용하는 경우 응용 프로그램을 배포하는 데 사용할 Windows Installer 패키지(또는 유사한 설치 패키지)에 해당 모듈을 포함해야 합니다. 자세한 내용은 [병합 모듈을 사용하여 재배포](redistributing-components-by-using-merge-modules.md)를 참조하세요. 예제를 보려면 [연습: 시각적 개체를 배포 C++ 설치 프로젝트를 사용 하 여 응용 프로그램](walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md)에 설치 패키지를 만드는 InstallShield Limited Edition을 사용 하는 방법을 보여 주는 합니다.
 
 ## <a name="potential-run-time-errors"></a>발생 가능한 런타임 오류
 

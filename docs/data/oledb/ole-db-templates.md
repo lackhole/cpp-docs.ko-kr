@@ -7,15 +7,15 @@ helpviewer_keywords:
 - OLE DB templates
 ms.assetid: 73918f6f-1fd7-4fa2-a0ff-7f9d792fce7e
 ms.openlocfilehash: 9f0f917de7eeb2ace6800368d10958cec7d36e6a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58770384"
 ---
 # <a name="ole-db-templates"></a>OLE DB 템플릿
 
-OLE DB 템플릿은 OLE DB 데이터 액세스가 보다 용이할 합니다. Visual c + +는 여러 가지 자주 사용 되는 OLE DB 인터페이스를 구현 하는 템플릿 클래스를 제공 합니다. OLE DB (소비자) 클라이언트 응용 프로그램을 작성 하려면 Visual c + + 소비자 템플릿과 공급자 템플릿으로 서버 (공급자) 응용 프로그램을 작성 하려면 사용할 수 있습니다.
+OLE DB 템플릿은 OLE DB 데이터 액세스가 보다 용이할 합니다. Visual C++ 는 여러 가지 자주 사용 되는 OLE DB 인터페이스를 구현 하는 템플릿 클래스를 제공 합니다. 시각적 개체를 사용할 수 있습니다 C++ 소비자 템플릿 (소비자) 응용 프로그램 및 공급자 템플릿에 서버 (공급자) 응용 프로그램을 작성 하는 OLE DB 클라이언트를 작성 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

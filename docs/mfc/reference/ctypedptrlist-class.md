@@ -27,10 +27,10 @@ helpviewer_keywords:
 - CTypedPtrList [MFC], SetAt
 ms.assetid: c273096e-1756-4340-864b-4a08b674a65e
 ms.openlocfilehash: 9233e83a08fde87c15be5cc1c42a2f1dd3b56511
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767992"
 ---
 # <a name="ctypedptrlist-class"></a>CTypedPtrList 클래스
@@ -71,7 +71,7 @@ class CTypedPtrList : public BASE_CLASS
 
 ## <a name="remarks"></a>설명
 
-사용 하는 경우 `CTypedPtrList` 대신 `CObList` 또는 `CPtrList`, c + + 형식 검사 기능에 일치 하지 않는 포인터 형식으로 인 한 오류를 제거 하는 데 도움이 됩니다.
+사용 하는 경우 `CTypedPtrList` 대신 `CObList` 하거나 `CPtrList`, C++ 형식 검사 기능에 일치 하지 않는 포인터 형식으로 인 한 오류를 제거 하는 데 도움이 됩니다.
 
 또한 합니다 `CTypedPtrList` 를 사용 하는 경우 캐스팅을 상당 부분을 수행 하는 래퍼 `CObList` 또는 `CPtrList`합니다.
 

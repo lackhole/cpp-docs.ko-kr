@@ -11,15 +11,15 @@ helpviewer_keywords:
 - for each keyword [C++]
 ms.assetid: 0c3a364b-2747-43f3-bb8d-b7d3b7023f79
 ms.openlocfilehash: b1dfe3a32f88c0e9456e3d73c31c533911f8d3ac
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58770693"
 ---
 # <a name="for-each-in"></a>for each, in
 
-배열 또는 컬렉션을 반복합니다. 이 비표준 키워드는 C++/CLI 및 네이티브 C++ 프로젝트에서 사용할 수 있습니다. 그러나 사용하지 않는 것이 좋습니다. 표준을 사용 하는 것이 좋습니다 [범위에 대 한 문 (c + +)를 기준으로](../cpp/range-based-for-statement-cpp.md) 대신 합니다.
+배열 또는 컬렉션을 반복합니다. 이 비표준 키워드는 C++/CLI 및 네이티브 C++ 프로젝트에서 사용할 수 있습니다. 그러나 사용하지 않는 것이 좋습니다. 표준을 사용 하는 것이 좋습니다 [범위 기반 for 문 (C++)](../cpp/range-based-for-statement-cpp.md) 대신 합니다.
 
 ## <a name="all-runtimes"></a>모든 런타임
 

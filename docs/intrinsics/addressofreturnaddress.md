@@ -9,10 +9,10 @@ helpviewer_keywords:
 - AddressOfReturnAddress intrinsic
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
 ms.openlocfilehash: 79d1e4645c60fb4231a53aaefdcf1fe0f3c876c4
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024779"
 ---
 # <a name="addressofreturnaddress"></a>_AddressOfReturnAddress
@@ -78,4 +78,4 @@ int main() {
 ## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

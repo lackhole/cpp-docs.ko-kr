@@ -7,10 +7,10 @@ helpviewer_keywords:
 - struct constructors
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
 ms.openlocfilehash: e9ffd30dd0017e912fd7c196e2d3f0e987fb0810
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780862"
 ---
 # <a name="struct-c"></a>struct (C++)
@@ -56,7 +56,7 @@ ms.locfileid: "58780862"
 
 C++에서 구조체는 맴버가 기본적으로 **public**이라는 점을 제외하면 클래스와 같습니다.
 
-방법은 관리 되는 클래스 및 구조체에서 C + + /cli CLI 참조 [클래스 및 구조체](../extensions/classes-and-structs-cpp-component-extensions.md)합니다.
+관리 되는 클래스 및 구조체에 대 한 자세한 내용은 C++/CLI, 참조 [클래스 및 구조체](../extensions/classes-and-structs-cpp-component-extensions.md)합니다.
 
 ## <a name="using-a-structure"></a>구조체 사용
 

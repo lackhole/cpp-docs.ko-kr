@@ -5,15 +5,15 @@ helpviewer_keywords:
 - user-defined operators under /clr
 ms.assetid: 42f93b4a-6de4-4e34-b07b-5a62ac014f2c
 ms.openlocfilehash: cf80eb4c440c1308e8ea06a563c18569e4e4ddf2
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774570"
 ---
 # <a name="user-defined-operators-ccli"></a>사용자 정의 연산자(C++/CLI)
 
-관리 되는 형식에 대 한 사용자 정의 연산자는 정적 멤버 또는 인스턴스 멤버 또는 전역 범위에서 허용 됩니다. 그러나 정적 연산자만 Visual c + + 이외의 언어로 작성 된 클라이언트에 메타 데이터를 통해 액세스할 수 있습니다.
+관리 되는 형식에 대 한 사용자 정의 연산자는 정적 멤버 또는 인스턴스 멤버 또는 전역 범위에서 허용 됩니다. 그러나 정적 연산자만 Visual 이외의 언어로 작성 된 클라이언트에 메타 데이터를 통해 액세스할 수는 C++입니다.
 
 참조 형식 정적 사용자 정의 연산자의 매개 변수 중 하나 중 이어야 합니다.
 

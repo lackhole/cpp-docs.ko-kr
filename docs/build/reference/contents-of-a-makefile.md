@@ -6,10 +6,10 @@ helpviewer_keywords:
 - makefiles, contents
 ms.assetid: 29362adb-d963-4c00-84a6-b38c2ffe6a36
 ms.openlocfilehash: 59aa21e74a7e127816fea7534861469579d5b60f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021516"
 ---
 # <a name="contents-of-a-makefile"></a>메이크파일의 내용
@@ -18,7 +18,7 @@ ms.locfileid: "59021516"
 
 - [설명 블록](description-blocks.md)
 
-- [명령](commands-in-a-makefile.md)
+- [도구](commands-in-a-makefile.md)
 
 - [매크로](macros-and-nmake.md)
 

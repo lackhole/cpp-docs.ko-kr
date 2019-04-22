@@ -11,15 +11,15 @@ helpviewer_keywords:
 - properties [MFC], testing
 ms.assetid: 626867cf-fe53-4c30-8973-55bb93ef3917
 ms.openlocfilehash: 977ef29095e652ab40028a2e8ba7feffabf56418
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781070"
 ---
 # <a name="testing-properties-and-events-with-test-container"></a>테스트 컨테이너로 속성 및 이벤트 테스트
 
-테스트 컨테이너 응용 프로그램을 Visual c + +에서 제공 되는 ActiveX 컨트롤 컨테이너를 사용 하 여 테스트 및 ActiveX 컨트롤 디버깅입니다. 테스트 컨테이너는 컨트롤 개발자를 해당 속성을 변경 하 고 해당 메서드를 호출 해당 이벤트를 발생 하 여 컨트롤의 기능을 테스트할 수 있습니다. 테스트 컨테이너 데이터 바인딩 알림의 로그를 표시할 수 있습니다 및 ActiveX 컨트롤의 지 속성 기능을 테스트 하는 기능 제공: 스트림 또는 하위 속성을 저장, 다시 로드 하면 하는 저장 된 스트림 데이터를 검토할 수 있습니다. 이 섹션에서는 테스트 컨테이너의 기본 기능을 사용 하는 방법을 설명 합니다. 자세한 내용은 다음을 선택 합니다 **도움말** 테스트 컨테이너를 실행 하는 동안 메뉴.
+시각적 개체에 제공 되는 테스트 컨테이너 응용 프로그램을 C++테스트를 위해 ActiveX 컨트롤 컨테이너 이며 디버깅 ActiveX 컨트롤입니다. 테스트 컨테이너는 컨트롤 개발자를 해당 속성을 변경 하 고 해당 메서드를 호출 해당 이벤트를 발생 하 여 컨트롤의 기능을 테스트할 수 있습니다. 테스트 컨테이너 데이터 바인딩 알림의 로그를 표시할 수 있습니다 및 ActiveX 컨트롤의 지 속성 기능을 테스트 하는 기능 제공: 스트림 또는 하위 속성을 저장, 다시 로드 하면 하는 저장 된 스트림 데이터를 검토할 수 있습니다. 이 섹션에서는 테스트 컨테이너의 기본 기능을 사용 하는 방법을 설명 합니다. 자세한 내용은 다음을 선택 합니다 **도움말** 테스트 컨테이너를 실행 하는 동안 메뉴.
 
 ### <a name="to-access-the-activex-control-test-container"></a>ActiveX 컨트롤 테스트 컨테이너에 액세스 하려면
 

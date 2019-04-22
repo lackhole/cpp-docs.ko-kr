@@ -18,10 +18,10 @@ helpviewer_keywords:
 - toolbars [MFC], implementing MFC toolbars
 ms.assetid: af3319ad-c430-4f90-8361-e6a2c06fd084
 ms.openlocfilehash: 55c43c47b93cd21d86293706fc7c3eb5145c39fd
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58773179"
 ---
 # <a name="mfc-toolbar-implementation"></a>MFC 도구 모음 구현
@@ -88,7 +88,7 @@ MFC를 사용 하기 때문에이 재구현 결과 도구 모음에 대 한 MFC 
 
 ##  <a name="_core_the_toolbar_bitmap"></a> 도구 모음 비트맵
 
-생성 된를 `CToolBar` 개체 각 단추에 대 한 개의 이미지가 포함 된 단일 비트맵을 로드 하 여 도구 모음 이미지를 만듭니다. 응용 프로그램 마법사는 Visual c + +를 사용 하 여 사용자 지정할 수 있는 표준 도구 모음 비트맵을 만듭니다 [도구 모음 편집기](../windows/toolbar-editor.md)합니다.
+생성 된를 `CToolBar` 개체 각 단추에 대 한 개의 이미지가 포함 된 단일 비트맵을 로드 하 여 도구 모음 이미지를 만듭니다. 응용 프로그램 마법사를 시각적으로 사용자 지정할 수 있는 표준 도구 모음 비트맵을 만듭니다 C++ [도구 모음 편집기](../windows/toolbar-editor.md)합니다.
 
 ### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 

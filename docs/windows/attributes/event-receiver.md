@@ -1,5 +1,5 @@
 ---
-title: event_receiver (c + + COM 특성)
+title: event_receiver (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.event_receiver
@@ -13,10 +13,10 @@ helpviewer_keywords:
 - event sinks
 ms.assetid: bf8fe770-3ea2-4128-b46b-166222ee4097
 ms.openlocfilehash: 81a3ec88c336ddeb550f133e657854b3b6f89d96
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023297"
 ---
 # <a name="eventreceiver"></a>event_receiver
@@ -35,7 +35,7 @@ ms.locfileid: "59023297"
 *type*<br/>
 다음 값 중 하나의 열거형:
 
-- `native` 관리 되지 않는 C/c + + 코드 (기본 클래스에 대 한 기본값).
+- `native` 관리 되지 않는 c /C++ 코드 (기본 클래스에 대 한 기본값).
 
 - `com` - COM 코드용. 이 값을 사용하려면 다음 헤더 파일을 포함해야 합니다.
 
@@ -54,7 +54,7 @@ ms.locfileid: "59023297"
 
 ## <a name="remarks"></a>설명
 
-합니다 **event_receiver** c + + 특성 클래스 또는 구조체 적용 되는 Visual c + + 통합된 이벤트 모델을 사용 하 여 이벤트 수신기, 될 것임을 지정 합니다.
+합니다 **event_receiver** C++ 특성 지정 클래스 또는 구조체 적용 되는 시각적 개체를 사용 하 여 이벤트 수신기를 C++ 통합된 이벤트 모델.
 
 **event_receiver** 사용 되는 [event_source](event-source.md) 특성 및 [__hook](../../cpp/hook.md) 하 고 [__unhook](../../cpp/unhook.md) 키워드. 사용 하 여 `event_source` 이벤트 원본을 만들 수 있습니다. 사용 하 여 **__hook** 이벤트 원본의 이벤트에 이벤트 수신기 메서드 ("후크")에 연결할 이벤트 수신기의 메서드 내에서. 사용 하 여 **__unhook** 을 분리 합니다.
 
@@ -71,7 +71,7 @@ ms.locfileid: "59023297"
 |-|-|
 |**적용 대상**|**class**, **struct**|
 |**반복 가능**|아니요|
-|**필수 특성**|`coclass` when *layout_dependent*=**true**|
+|**필수 특성**|`coclass` 때 *layout_dependent*=**true**|
 |**잘못된 특성**|없음|
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.

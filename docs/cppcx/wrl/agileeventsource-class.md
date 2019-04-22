@@ -8,10 +8,10 @@ f1_keywords:
 helpviewer_keywords:
 - AgileEventSource class
 ms.openlocfilehash: 095c61dcef208028bf1c0f4b3443ba10110da8ed
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025868"
 ---
 # <a name="agileeventsource-class"></a>AgileEventSource 클래스
@@ -40,7 +40,7 @@ class AgileEventSource :
 
 ## <a name="remarks"></a>설명
 
-대부분의 Windows 런타임 구성 요소는 agile 구성 요소입니다. 자세한 내용은 [스레딩 및 마샬링 (C + + /cli CX)](../../cppcx/threading-and-marshaling-c-cx.md)합니다.
+대부분의 Windows 런타임 구성 요소는 agile 구성 요소입니다. 자세한 내용은 [스레딩 및 마샬링 (C++/CX)](../../cppcx/threading-and-marshaling-c-cx.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 

@@ -8,10 +8,10 @@ helpviewer_keywords:
 - strings [C++], accessing characters
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
 ms.openlocfilehash: 6b9e30a18ab1d2b8463ccccae0b265bc20904020
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58775974"
 ---
 # <a name="how-to-access-characters-in-a-systemstring"></a>방법: system:: string의 문자 액세스
@@ -22,7 +22,7 @@ ms.locfileid: "58775974"
 
 `PtrToStringChars` 반환을 <xref:System.Char>, 내부 포인터는 (라고도 `byref`). 따라서 가비지 수집의 대상이 됩니다. 네이티브 함수에 전달 하려는 경우가 아니면이 포인터를 고정할 필요가 없습니다.
 
-다음과 같은 코드를 생각해 볼 수 있습니다.  고정 하기 때문에 필요 하지 않습니다 `ppchar` 내부 포인터 이며 업데이트도 가비지 수집기가 가리키는 문자열을 이동 하면 `ppchar`합니다. 없이 [pin_ptr (C + + /cli CLI)](../extensions/pin-ptr-cpp-cli.md)코드가 작동 하 고 잠재적인 성능 저하 인해 발생할 수 없습니다를 고정 하 여 합니다.
+다음과 같은 코드를 생각해 볼 수 있습니다.  고정 하기 때문에 필요 하지 않습니다 `ppchar` 내부 포인터 이며 업데이트도 가비지 수집기가 가리키는 문자열을 이동 하면 `ppchar`합니다. 없이 [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md)코드가 작동 하 고 잠재적인 성능 저하 인해 발생할 수 없습니다를 고정 하 여 합니다.
 
 전달 하는 경우 `ppchar` 네이티브 함수에 다음을 고정 포인터 여야; 가비지 수집기가 관리 되지 않는 스택 프레임에 포인터를 업데이트할 수 없습니다.
 
@@ -77,7 +77,7 @@ int main() {
 
 ## <a name="example"></a>예제
 
-내부 포인터는 네이티브 c + + 포인터의 모든 속성에 있습니다. 예를 들어, 연결 된 데이터 구조를 탐색 하 고 삽입 및 하나의 포인터를 사용 하 여 삭제를 수행 하려면 사용할 수 있습니다.
+내부 포인터를 네이티브의 모든 속성에 C++ 포인터입니다. 예를 들어, 연결 된 데이터 구조를 탐색 하 고 삽입 및 하나의 포인터를 사용 하 여 삭제를 수행 하려면 사용할 수 있습니다.
 
 ```
 // PtrToStringChars_3.cpp

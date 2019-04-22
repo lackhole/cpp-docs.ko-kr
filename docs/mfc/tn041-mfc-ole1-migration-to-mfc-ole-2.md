@@ -14,10 +14,10 @@ helpviewer_keywords:
 - TN041
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
 ms.openlocfilehash: b398a1adbf2f47343eed076f32ade5bb2564cd52
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767979"
 ---
 # <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2로 mfc/ole1 마이그레이션
@@ -60,7 +60,7 @@ MFC 샘플 OLE 기능을 포함 하는 여러 가지가 있습니다. 각 응용
 위에서 설명 했 듯이 [OCLIENT](../overview/visual-cpp-samples.md) 고 MFC 2.0에 포함 된 OLE MFC/OLE1을 사용 하 여 구현 합니다. 이 응용 프로그램 처음으로 변환 되었습니다 MFC/OLE 2 클래스를 사용 하는 단계에 대 한 설명은 다음과 같습니다. 초기 포트 MFC/OLE 클래스 이해를 돕기 위해 완료 된 후 다양 한 기능이 추가 되었습니다. 이러한 기능은 다루지 않습니다. 이러한 고급 기능에 대 한 자세한 내용은 샘플 자체를 참조 하십시오.
 
 > [!NOTE]
-> 컴파일러 오류 및 단계별 프로세스는 Visual c + + 2.0을 사용 하 여 만들어졌습니다. Visual c + + 4.0을 사용 하 여 특정 오류 메시지 및 위치 변경 될 수 있습니다 하지만 개념 정보는 유효한 상태로 유지 합니다.
+> 컴파일러 오류 및 단계별 프로세스를 시각적 개체를 사용 하 여 만든 C++ 2.0. 시각적 개체를 사용 하 여 특정 오류 메시지 및 위치 변경 될 수 있습니다 C++ 4.0 있지만 개념 정보를 유효한 상태로 유지 합니다.
 
 ## <a name="getting-it-up-and-running"></a>해당 시작 및 실행
 
@@ -291,7 +291,7 @@ ON_COMMAND(ID_OLE_EDIT_CONVERT, OnEditConvert)
 
 OLE의 가장 흥미로운 기능 중 하나에 내부 활성화 (또는 "비주얼 편집")입니다. 이 기능에는 서버 응용 프로그램을 사용자에 대 한 더 원활 하 게 편집 인터페이스를 제공 하는 컨테이너의 사용자 인터페이스의 일부를 통해 데 있습니다. OCLIENT에 내부 활성화를 구현 하려면 몇 가지 특별 한 리소스를 몇 가지 추가 코드 뿐만 아니라 추가 해야 합니다. 이러한 리소스와 코드는 일반적으로 응용 프로그램 마법사에서 제공-"Container" 지원 사용 하 여 새 응용 프로그램 마법사에서 응용 프로그램에서 직접 가져온 된 코드 대부분 사실입니다.
 
-먼저, 전체 활성 상태인 항목 때 사용할 메뉴 리소스를 추가 하는 데 필요한 것입니다. Visual c + +에서 IDR_OCLITYPE 리소스 복사 및 파일과 창 팝업 남기고 모두 제거 하 여이 추가 메뉴 리소스를 만들 수 있습니다. 구분선을 두 그룹의 분리를 나타내려면 파일과 창 팝업 사이 삽입 됩니다 (처럼 보여야 합니다. 파일 &#124; &#124; 창). 이러한 구분 기호 의미 하 고 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 참조 [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
+먼저, 전체 활성 상태인 항목 때 사용할 메뉴 리소스를 추가 하는 데 필요한 것입니다. 시각적 개체에이 추가 메뉴 리소스를 만들 수 있습니다 C++ IDR_OCLITYPE 리소스 복사 및 파일과 창 팝업 남기고 모두 제거 합니다. 구분선을 두 그룹의 분리를 나타내려면 파일과 창 팝업 사이 삽입 됩니다 (처럼 보여야 합니다. 파일 &#124; &#124; 창). 이러한 구분 기호 의미 하 고 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 참조 [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
 
 만든 이러한 메뉴를 만든 후에 대 한 프레임 워크를 사용 해야 합니다. 호출 하 여 이렇게 `CDocTemplate::SetContainerInfo` 여 InitInstance에 문서 템플릿 목록에 추가 하기 전에 문서 서식 파일에 대 한 합니다. 문서 서식 파일을 등록 하려면 새 코드는 다음과 같습니다.
 
@@ -307,7 +307,7 @@ pTemplate->SetContainerInfo(IDR_OLECLITYPE_INPLACE);
 AddDocTemplate(pTemplate);
 ```
 
-IDR_OLECLITYPE_INPLACE 리소스가 Visual c + +에서 생성 된 특수 한 전체 리소스가입니다.
+IDR_OLECLITYPE_INPLACE 리소스에 시각적 개체에서 만든 특수 한 전체 리소스는 C++입니다.
 
 내부 활성화를 사용 하려면 몇 가지 모두에서 변경 해야 하는 합니다 `CView` (CMainView) 파생 클래스와 `COleClientItem` 파생 클래스 (CRectItem). 응용 프로그램 마법사에서 제공 하는 모든이 재정의 및 대부분의 구현은 기본 응용 프로그램 마법사에서 응용 프로그램에서 직접 제공 됩니다.
 
@@ -353,7 +353,7 @@ BOOL CRectItem::OnChangeItemPosition(const CRect& rectPos)
 
 이 시점에서 활성화 될 수 고가 활성 상태 이면 항목을 이동 및 크기 조정과 처리 하는 항목 수 있도록 충분 한 코드가 있지만 코드가 없는 편집 세션을 종료할 허용 됩니다. 하지만 일부 서버는이 기능 자체 esc 키를 처리 하 여, 컨테이너 제공 항목을 비활성화 하는 두 가지는 것이 좋습니다. (1)에서 항목을 외부에 있고 ESC 키를 눌러 다음을 수행 합니다 (2)를 클릭 합니다.
 
-ESC 키를 VK_ESCAPE 키 명령에 매핑하는 Visual c + +를 사용 하 여 액셀러레이터 키를 추가, ID_CANCEL_EDIT 리소스에 추가 됩니다. 이 명령에 대 한 처리기는 다음과 같습니다.
+ESC 키에 대 한 시각적 개체를 사용 하 여 액셀러레이터 키를 추가 C++ 명령에 VK_ESCAPE 키를 매핑하는 ID_CANCEL_EDIT 리소스에 추가 됩니다. 이 명령에 대 한 처리기는 다음과 같습니다.
 
 ```cpp
 // The following command handler provides the standard
@@ -425,7 +425,7 @@ void CMainView::OnSize(UINT nType, int cx, int cy)
 [HIERSVR](../overview/visual-cpp-samples.md) OLE MFC/OLE1을 사용 하 여 구현 및 MFC 2.0에 포함 되었습니다. 이는이 응용 프로그램 처음으로 변환 되었습니다 MFC/OLE 2 클래스를 사용 하는 단계를 간략하게 설명 합니다. 초기 포트 MFC/OLE 2 클래스 이해를 돕기 위해 완료 된 후 다양 한 기능이 추가 되었습니다. 이러한 기능은 다루지 않습니다. 이러한 고급 기능에 대 한 자세한 내용은 샘플 자체를 참조 하십시오.
 
 > [!NOTE]
-> 컴파일러 오류 및 단계별 프로세스는 Visual c + + 2.0을 사용 하 여 만들어졌습니다. Visual c + + 4.0을 사용 하 여 특정 오류 메시지 및 위치 변경 될 수 있습니다 하지만 개념 정보는 유효한 상태로 유지 합니다.
+> 컴파일러 오류 및 단계별 프로세스를 시각적 개체를 사용 하 여 만든 C++ 2.0. 시각적 개체를 사용 하 여 특정 오류 메시지 및 위치 변경 될 수 있습니다 C++ 4.0 있지만 개념 정보를 유효한 상태로 유지 합니다.
 
 ## <a name="getting-it-up-and-running"></a>해당 시작 및 실행
 
@@ -527,7 +527,7 @@ BOOL COLEServerApp::InitInstance()
 
 위의 코드를 새 리소스 ID 인 IDR_HIERSVRTYPE_SRVR_EMB 가리킵니다 확인할 수 있습니다. 다른 컨테이너에 포함 된 문서를 편집할 때 사용 되는 메뉴 리소스입니다. MFC/OLE1에서 포함 된 항목을 편집 하려면 특정 메뉴 항목은 즉석에서 수정 되었습니다. 파일 기반 문서를 편집 하는 대신 포함 된 항목을 편집 하는 경우는 완전히 다른 메뉴 구조를 사용 하 여 훨씬 쉽게 이러한 두 가지 별도 모드에 대 한 다른 사용자 인터페이스를 제공 합니다. 나중에 알게 완전히 별도 메뉴 리소스를 포함 된 개체 전체를 편집할 때 사용 됩니다.
 
-이 리소스를 만들려면 Visual c + + 리소스 스크립트를 로드 하 고 기존 IDR_HIERSVRTYPE 메뉴 리소스 복사 합니다. (이 응용 프로그램 마법사를 사용 하는 동일한 명명 규칙) IDR_HIERSVRTYPE_SRVR_EMB 새 리소스를 이름을 바꿉니다. 그런 다음 "파일 업데이트"; "파일 저장"을 변경 ID ID_FILE_UPDATE 명령으로 제공 합니다. 또한 변경 "파일 이름으로 저장" 파일 복사본으로 저장; ID ID_FILE_SAVE_COPY_AS 명령으로 제공 합니다. 프레임 워크에는 두이 명령은 모두의 구현을 제공 합니다.
+이 리소스를 만들려면 리소스 스크립트 시각적 개체로 로드 합니다 C++ 기존 IDR_HIERSVRTYPE 메뉴 리소스 복사 합니다. (이 응용 프로그램 마법사를 사용 하는 동일한 명명 규칙) IDR_HIERSVRTYPE_SRVR_EMB 새 리소스를 이름을 바꿉니다. 그런 다음 "파일 업데이트"; "파일 저장"을 변경 ID ID_FILE_UPDATE 명령으로 제공 합니다. 또한 변경 "파일 이름으로 저장" 파일 복사본으로 저장; ID ID_FILE_SAVE_COPY_AS 명령으로 제공 합니다. 프레임 워크에는 두이 명령은 모두의 구현을 제공 합니다.
 
 ```Output
 \hiersvr\svritem.h(60) : error C2433: 'OLESTATUS' : 'virtual' not permitted on data declarations
@@ -644,9 +644,9 @@ void CServerView::OnEditCopy()
 
 - 이러한 특별 리소스 및 클래스에 대 한 프레임 워크를 입력 해야 합니다.
 
-메뉴 리소스는 쉽게 만들 수 있습니다. Visual c + +를 실행, 메뉴 리소스 IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP 라는 메뉴 리소스 복사 합니다. 편집 및 도움말 메뉴 팝업만 유지 됩니다 있도록 메뉴를 수정 합니다. 메뉴 편집 및 도움말 메뉴 사이 두 개의 구분 기호를 추가 (처럼 보여야 합니다. 편집 &#124; &#124; 도움말). 이러한 구분 기호 의미 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 참조 하세요. [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
+메뉴 리소스는 쉽게 만들 수 있습니다. 시각적 개체를 실행 C++, 메뉴 리소스 IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP 라는 메뉴 리소스 복사 합니다. 편집 및 도움말 메뉴 팝업만 유지 됩니다 있도록 메뉴를 수정 합니다. 메뉴 편집 및 도움말 메뉴 사이 두 개의 구분 기호를 추가 (처럼 보여야 합니다. 편집 &#124; &#124; 도움말). 이러한 구분 기호 의미 서버 및 컨테이너 메뉴를 병합 하는 방법에 대 한 자세한 내용은 참조 하세요. [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
 
-"서버" 옵션을 선택 하 여 새로 생성 하는 응용 프로그램 마법사에서 응용 프로그램에서 하나를 복사 하 여 하위 집합 도구 모음에 대 한 비트맵을 쉽게 만들 수 있습니다. 이 비트맵 Visual c + +로 가져올 수 있습니다. ID의 IDR_HIERSVRTYPE_SRVR_IP 비트맵을 제공 해야 합니다.
+"서버" 옵션을 선택 하 여 새로 생성 하는 응용 프로그램 마법사에서 응용 프로그램에서 하나를 복사 하 여 하위 집합 도구 모음에 대 한 비트맵을 쉽게 만들 수 있습니다. 이 비트맵 시각적 개체로 가져올 수 있습니다 C++입니다. ID의 IDR_HIERSVRTYPE_SRVR_IP 비트맵을 제공 해야 합니다.
 
 클래스에서 파생 된 `COleIPFrameWnd` server 지원 사용 하 여 생성 하는 응용 프로그램 마법사에서 응용 프로그램에서 복사할 수 있습니다. IPFRAME 두 파일을 복사 합니다. CPP 및 IPFRAME 합니다. H 프로젝트에 추가 합니다. 확인 된 `LoadBitmap` 호출 IDR_HIERSVRTYPE_SRVR_IP, 이전 단계에서 만든 비트맵을 가리킵니다.
 

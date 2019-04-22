@@ -1,5 +1,5 @@
 ---
-title: '방법: C + + Interop를 사용 하 여 포함된 포인터 마샬링'
+title: '방법: 사용 하 여 포인터를 포함 하는 마샬링 C++ Interop'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,13 +11,13 @@ helpviewer_keywords:
 - data marshaling [C++], embedded pointers
 ms.assetid: 05fb8858-97f2-47aa-86b2-2c0ad713bdb2
 ms.openlocfilehash: c6d622060aaf700b6ea1a3bfe797ab3190eee797
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780238"
 ---
-# <a name="how-to-marshal-embedded-pointers-using-c-interop"></a>방법: C + + Interop를 사용 하 여 포함된 포인터 마샬링
+# <a name="how-to-marshal-embedded-pointers-using-c-interop"></a>방법: 사용 하 여 포인터를 포함 하는 마샬링 C++ Interop
 
 다음 코드 예제에서 사용 된 [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md) 구현 #pragma 지시문 관리는 관리 되지 않는 함수에서 동일한 파일에 별도 파일에 정의 된 경우 이러한 함수에서 동일한 방식으로 상호 운용 합니다. 관리 되지 않는 함수만 포함 된 파일 사용 하 여 컴파일할 필요가 없습니다 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)합니다.
 

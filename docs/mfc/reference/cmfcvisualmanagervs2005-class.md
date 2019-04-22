@@ -39,10 +39,10 @@ helpviewer_keywords:
 - CMFCVisualManagerVS2005 [MFC], OnUpdateSystemColors
 ms.assetid: ea39b9ae-327e-4a51-bce7-dc84c78f005b
 ms.openlocfilehash: 4d1ef0c9087e876f3e8f43430b58fc80f3923ba6
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58773465"
 ---
 # <a name="cmfcvisualmanagervs2005-class"></a>CMFCVisualManagerVS2005 클래스
@@ -391,5 +391,5 @@ virtual void OnUpdateSystemColors();
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCVisualManager 클래스](../../mfc/reference/cmfcvisualmanager-class.md)<br/>
 [CMFCVisualManagerOfficeXP 클래스](../../mfc/reference/cmfcvisualmanagerofficexp-class.md)<br/>
-[CMFCVisualManagerWindows Class](../../mfc/reference/cmfcvisualmanagerwindows-class.md)<br/>
+[CMFCVisualManagerWindows 클래스](../../mfc/reference/cmfcvisualmanagerwindows-class.md)<br/>
 [CMFCVisualManagerOffice2003 클래스](../../mfc/reference/cmfcvisualmanageroffice2003-class.md)

@@ -45,10 +45,10 @@ helpviewer_keywords:
 - CToolBar [MFC], SetSizes
 ms.assetid: e868da26-5e07-4607-9651-e2f863ad9059
 ms.openlocfilehash: aa49ebed2d48d9818c2d39ae4894d8caf1fbbf81
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58773140"
 ---
 # <a name="ctoolbar-class"></a>CToolBar 클래스
@@ -98,7 +98,7 @@ class CToolBar : public CControlBar
 
 [CToolBar::GetToolBarCtrl](#gettoolbarctrl), 멤버 함수는 새 MFC 4.0 허용 도구 모음 사용자 지정 및 추가 기능에 대 한 Windows 공용 컨트롤 지원 기능을 사용할 수 있습니다. `CToolBar` 멤버 함수는 대부분의 Windows 공용 컨트롤;의 기능 제공. 그러나 호출 하는 경우 `GetToolBarCtrl`, 도구 모음 도구 모음 Windows 95/98의 특징 중 더 지정할 수 있습니다. 호출 하는 경우 `GetToolBarCtrl`에 대 한 참조를 반환 합니다를 `CToolBarCtrl` 개체입니다. 참조 [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) Windows 공용 컨트롤을 사용 하 여 도구 모음을 디자인 하는 방법에 대 한 자세한 내용은 합니다. 공용 컨트롤에 대 한 자세한 내용은 참조 하세요. [공용 컨트롤](/windows/desktop/Controls/common-controls-intro) Windows SDK에 있습니다.
 
-Visual c + + 도구 모음을 만들려면 두 가지 방법으로 제공 합니다. 리소스 편집기를 사용 하 여 도구 모음 리소스를 만들려면 다음이 단계를 수행 합니다.
+Visual C++ 도구 모음을 만들려면 두 가지 방법으로 제공 합니다. 리소스 편집기를 사용 하 여 도구 모음 리소스를 만들려면 다음이 단계를 수행 합니다.
 
 1. 도구 모음 리소스를 만듭니다.
 

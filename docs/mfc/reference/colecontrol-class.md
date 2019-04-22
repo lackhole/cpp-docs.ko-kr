@@ -335,10 +335,10 @@ helpviewer_keywords:
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
 ms.openlocfilehash: 30d73d546ee68a25f1e59776020477d038da65e8
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58771502"
 ---
 # <a name="colecontrol-class"></a>COleControl 클래스
@@ -536,7 +536,7 @@ class COleControl : public CWnd
 
 파생 된 `CWnd`,이 클래스는 Windows 창 개체의 모든 기능 및 특정 기능을 추가 OLE 이벤트 발생 등 메서드 및 속성을 지 원하는 기능을 상속 합니다.
 
-OLE 컨트롤 OLE 컨테이너 응용 프로그램에 삽입할 수 및 이벤트 발생 및 노출 메서드 및 속성을 컨테이너의 양방향 시스템을 사용 하 여 컨테이너를 사용 하 여 통신 합니다. 참고 표준 OLE 컨테이너에만 OLE 컨트롤의 기본 기능을 지원 합니다. OLE 컨트롤의 확장된 기능을 지원할 수 없는 합니다. 이벤트 발생 이벤트는 컨트롤에서 수행 하는 특정 작업의 결과로 컨테이너에 전송 되 면 발생 합니다. 따라서 컨테이너 멤버 함수는 유사한 속성과 메서드 집합을 노출된 하 고 c + + 클래스의 데이터 멤버를 사용 하 여 컨트롤을 사용 하 여 통신 합니다. 이 방법을 통해 개발자가 컨트롤의 모양을 제어 하 고 특정 작업이 발생 하면 컨테이너를 알릴 수 있습니다.
+OLE 컨트롤 OLE 컨테이너 응용 프로그램에 삽입할 수 및 이벤트 발생 및 노출 메서드 및 속성을 컨테이너의 양방향 시스템을 사용 하 여 컨테이너를 사용 하 여 통신 합니다. 참고 표준 OLE 컨테이너에만 OLE 컨트롤의 기본 기능을 지원 합니다. OLE 컨트롤의 확장된 기능을 지원할 수 없는 합니다. 이벤트 발생 이벤트는 컨트롤에서 수행 하는 특정 작업의 결과로 컨테이너에 전송 되 면 발생 합니다. 컨테이너 컨트롤을 사용 하 여 노출 된 메서드 및 속성의 멤버 함수 및 데이터 멤버와 유사 집합을 사용 하 여 통신 하는 차례로 C++ 클래스입니다. 이 방법을 통해 개발자가 컨트롤의 모양을 제어 하 고 특정 작업이 발생 하면 컨테이너를 알릴 수 있습니다.
 
 ## <a name="windowless-controls"></a>창 없는 컨트롤
 

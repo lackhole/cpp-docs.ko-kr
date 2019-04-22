@@ -47,10 +47,10 @@ helpviewer_keywords:
 - CMFCPopupMenuBar [MFC], m_bDisableSideBarInXPMode
 ms.assetid: 4c93c459-7f70-4240-8c63-280bb811e374
 ms.openlocfilehash: acb1e2be7d40e5e0c569fffcc92c57c750be8f91
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/10/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776780"
 ---
 # <a name="cmfcpopupmenubar-class"></a>CMFCPopupMenuBar 클래스
@@ -105,7 +105,7 @@ class CMFCPopupMenuBar : public CMFCToolBar
 
 [!code-cpp[NVC_MFC_DrawClient#7](../../mfc/reference/codesnippet/cpp/cmfcpopupmenubar-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -195,7 +195,7 @@ CMFCToolBar* FindDestintationToolBar(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 화면에 있는 지점입니다.
 
 ### <a name="return-value"></a>반환 값

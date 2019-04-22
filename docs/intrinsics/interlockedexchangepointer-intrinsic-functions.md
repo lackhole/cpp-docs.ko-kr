@@ -21,10 +21,10 @@ helpviewer_keywords:
 - InterlockedExchangePointer intrinsic
 ms.assetid: 0eaca0b0-d79e-406b-892d-b3b462c50bbb
 ms.openlocfilehash: 1f6e66ae4d5524518c3388f5af843cc15f65da50
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024532"
 ---
 # <a name="interlockedexchangepointer-intrinsic-functions"></a>_InterlockedExchangePointer Intrinsic Functions
@@ -64,7 +64,7 @@ void * _InterlockedExchangePointer_HLERelease(
 
 #### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
+*Target*<br/>
 [out에서] 교환할 값에 대 한 포인터에 대 한 포인터입니다. 함수는 값을 `Value`로 설정하고 이전 값을 반환합니다.
 
 *값*<br/>
@@ -79,7 +79,7 @@ void * _InterlockedExchangePointer_HLERelease(
 |내장 함수|아키텍처|헤더|
 |---------------|------------------|------------|
 |`_InterlockedExchangePointer`|x86, ARM, x64|\<intrin.h>|
-|`_InterlockedExchangePointer_acq`에서 `_InterlockedExchangePointer_rel`에서 `_InterlockedExchangePointer_nf`|ARM|\<intrin.h>|
+|`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM|\<intrin.h>|
 |`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|HLE가 지원 x64|\<immintrin.h>|
 
 x86 아키텍처에서 `_InterlockedExchangePointer`는 `_InterlockedExchange`를 호출하는 매크로입니다.
