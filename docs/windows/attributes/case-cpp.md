@@ -1,17 +1,17 @@
 ---
-title: case (c + + COM 특성)
+title: 경우 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.case
 helpviewer_keywords:
 - case attribute
 ms.assetid: 6fb883c3-0526-4932-a901-b4564dcaeb7d
-ms.openlocfilehash: 1ed107b78ea5638d93a773e19de13b4c1fe1036c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b3058f2fe6f35e1b11d4790780cb0fcdcaada706
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648411"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038202"
 ---
 # <a name="case-c"></a>case(C++)
 
@@ -40,7 +40,7 @@ ms.locfileid: "50648411"
 
 ## <a name="remarks"></a>설명
 
-**대/소문자** c + + 특성에 동일한 기능을 합니다 **사례** MIDL 특성입니다. 이 특성에만 사용 합니다 [switch_type](switch-type.md) 특성입니다.
+**대/소문자** C++ 특성이 동일한 기능을 합니다 **사례** MIDL 특성. 이 특성에만 사용 합니다 [switch_type](switch-type.md) 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -76,7 +76,7 @@ struct SizedValue2 {
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>

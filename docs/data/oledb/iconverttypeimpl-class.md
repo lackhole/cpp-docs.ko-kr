@@ -14,12 +14,12 @@ helpviewer_keywords:
 - IConvertTypeImpl class
 - CanConvert method
 ms.assetid: 7f81e79e-7d3f-4cbe-b93c-d632a94b15f6
-ms.openlocfilehash: e1117cfb8e68cbdc5432355315213faad903ea35
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 546a5a007f9e4c1c2a0e581eff2e7984947bdbb5
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424654"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023726"
 ---
 # <a name="iconverttypeimpl-class"></a>IConvertTypeImpl 클래스
 
@@ -74,7 +74,7 @@ STDMETHOD(CanConvert)(DBTYPE wFromType,
 
 OLE DB 데이터 변환을 사용 하 여 `MSADC.DLL`입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

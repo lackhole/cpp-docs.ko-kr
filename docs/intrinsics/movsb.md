@@ -8,12 +8,12 @@ helpviewer_keywords:
 - rep movsb instruction
 - __movsb intrinsic
 ms.assetid: ba5469f6-f797-4cd2-bee8-74c7666c26d4
-ms.openlocfilehash: 9dc32f460a2098d2a216c725f49c0389f77043c2
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 42124743c27b297c723780c1bc19038fb54e638d
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329035"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59024996"
 ---
 # <a name="movsb"></a>__movsb
 
@@ -82,6 +82,6 @@ A big black dog. A big black dog.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

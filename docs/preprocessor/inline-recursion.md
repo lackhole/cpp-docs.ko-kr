@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, inline_recursion
 - inline_recursion pragma
 ms.assetid: cfef5791-63b7-45ac-9574-623747b9b9c9
-ms.openlocfilehash: 635d33d91e779d88b56e353d0cddf6b34b313855
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 80ffabc6ac7c95fd7d9fb4e62bea38c2a04b04f0
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523850"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026914"
 ---
 # <a name="inlinerecursion"></a>inline_recursion
 직접 또는 상호 재귀 함수 호출의 인라인 확장을 제어합니다.
@@ -30,7 +30,7 @@ ms.locfileid: "50523850"
 
 합니다 **inline_recursion** pragma는 재귀 함수가 확장 되는 방식을 제어 합니다. 하는 경우 **inline_recursion** 해제 되어 있고 인라인 함수 자체 (직접 또는 간접적으로), 함수를 호출 하는 경우 한 번만 확장된 됩니다. 경우 **inline_recursion** 켜져 함수를 사용 하 여 설정 된 값에 도달할 때까지 여러 번 확장 되는 [inline_depth](../preprocessor/inline-depth.md) pragma에는 정의한재귀함수에대한기본값`inline_depth` pragma에 또는 용량을 제한 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [inline_depth](../preprocessor/inline-depth.md)<br/>

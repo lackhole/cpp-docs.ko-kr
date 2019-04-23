@@ -7,15 +7,15 @@ helpviewer_keywords:
 - C3133
 ms.assetid: 4a709405-b67b-4061-8a2a-19fa5fb34a2a
 ms.openlocfilehash: 0a0c30203f886934a19fde35e51602b57cc1b14d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58781720"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776303"
 ---
 # <a name="compiler-error-c3133"></a>컴파일러 오류 C3133
 
-C + + varargs에 특성을 적용할 수 없습니다.
+특성에 적용할 수 없습니다 C++ varargs
 
 특성이 올바르게 적용되었습니다. 변수 인수를 나타내는 줄임표에 특성을 적용할 수 있습니다.
 

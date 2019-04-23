@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE DB providers, wizard-generated files
 - CCustomWindowsFile class
 ms.assetid: 0e9e72ac-1e1e-445f-a7ac-690c20031f9d
-ms.openlocfilehash: 008fe318ee96248dfca0c3c87bf660726beb3092
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4af302d8a391de359f3b8ac66d41b5d7198fd8f6
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660829"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033126"
 ---
 # <a name="ccustomwindowsfile"></a>CCustomWindowsFile
 
@@ -77,6 +77,6 @@ HRESULT Execute(DBPARAMS * pParams, LONG* pcRowsAffected)
 
 메서드 (행에 해당) 각 파일에 대해 하나의 항목을 생성 하 고에 배치 된 `m_rgRowData` 데이터 멤버입니다. 합니다 `CRowsetImpl` 클래스 정의 `m_rgRowData` 데이터 멤버입니다. 이 배열에 있는 데이터 전체 테이블이 표시 되 고 템플릿 전체에서 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [공급자 마법사가 생성하는 파일](../../data/oledb/provider-wizard-generated-files.md)<br/>

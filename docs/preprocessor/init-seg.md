@@ -9,16 +9,16 @@ helpviewer_keywords:
 - init_seg pragma
 - data segment initializing [C++]
 ms.assetid: 40a5898a-5c85-4aa9-8d73-3d967eb13610
-ms.openlocfilehash: f11ec6d3cee7af2ce785555af9b73d8c0eb58638
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 801496739fd9bd2b8a14e699ca4da9fe79f3a28d
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532627"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026633"
 ---
 # <a name="initseg"></a>init_seg
 
-**C + + 전용**
+**C++특정**
 
 시작 코드가 실행되는 순서에 영향을 주는 키워드 또는 코드 섹션을 지정합니다.
 
@@ -154,6 +154,6 @@ A()
 ~A()
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

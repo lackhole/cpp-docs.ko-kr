@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3654
 ms.assetid: 57d96e3f-6bbb-4eaa-934b-26c23b4ceb2e
 ms.openlocfilehash: e66f0071a3d086c84a51c8b69e52b06643344c4d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58779497"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777642"
 ---
 # <a name="compiler-error-c3654"></a>컴파일러 오류 C3654
 

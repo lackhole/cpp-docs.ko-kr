@@ -17,12 +17,12 @@ helpviewer_keywords:
 - accessors [C++], rowsets
 - rowsets [C++], supported types
 ms.assetid: edc9c8b3-1a2d-4c2d-869f-7e058c631042
-ms.openlocfilehash: d29c409f2ed410d9f697419e9a98b675eee7a69d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 21043e22b37084fa543bf6b8a0fc176c3b8be788
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175716"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030026"
 ---
 # <a name="accessors-and-rowsets"></a>접근자 및 행 집합
 
@@ -63,11 +63,11 @@ OLE DB 템플릿 지원 행 집합 (위 그림 참조)의 세 가지 종류: 행
 
 다음 그림에는 행 집합 형식을 보여 줍니다.
 
-![RowsetType 그래픽](../../data/oledb/media/vcrowsettypes.gif "RowsetType 그래픽")<br/>
+![RowsetType graphic](../../data/oledb/media/vcrowsettypes.gif "RowsetType graphic")<br/>
 행 집합 클래스
 
 [스키마 행 집합](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) 안 데이터의 데이터 액세스 저장 되지만 대신 메타 데이터 라고 하는 데이터 저장소에 대 한 정보에 액세스 합니다. 스키마 행 집합은 일반적으로 데이터베이스 구조 컴파일 타임에 알려질 및 런타임 시 얻을 수 해야 상황에서 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)

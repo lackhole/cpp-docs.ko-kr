@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __segmentlimit intrinsic
 - lsl instruction
 ms.assetid: d0bc3630-90cb-4185-8667-686fd41e23d4
-ms.openlocfilehash: 2748eee7db3a56b026e9d1896e35824c93938256
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 650a847be3270782dc441d0e68c2c80d910e9d1e
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326058"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59036710"
 ---
 # <a name="segmentlimit"></a>__segmentlimit
 
@@ -107,6 +107,6 @@ sl was changed
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

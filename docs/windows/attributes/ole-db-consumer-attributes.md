@@ -1,5 +1,5 @@
 ---
-title: OLE DB 소비자 특성 (c + + COM)
+title: OLE DB 소비자 특성 (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - attributes [C++/CLI], database
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - database attributes [C++/CLI]
 - attributes [C++/CLI], OLE DB consumer
 ms.assetid: 017b591f-8f9a-42b4-84d5-cc42a21ab0cc
-ms.openlocfilehash: 036ac539fcac715ba12e4c7cf7fc83edd7a23c38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f89af963c9c49a8a94b2a4f0c8930ab714926e7
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662941"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59035733"
 ---
 # <a name="ole-db-consumer-attributes"></a>OLE DB 소비자 특성
 OLE DB 소비자 특성을 기준으로 코드를 삽입 합니다 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-reference.md), 소비자를 만드는 작업 OLE DB 여 테이블과 같은 작업을 수행 하는 데이터에 액세스 하 고 명령을 실행 합니다.
@@ -28,6 +28,6 @@ OLE DB 소비자 특성을 기준으로 코드를 삽입 합니다 [OLE DB 소�
 |[db_source](db-source.md)|페이지를 만들고 데이터 원본에 공급자를 통해 연결을 캡슐화 합니다.|
 |[db_table](db-table.md)|OLE DB 테이블을 엽니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [그룹별 특성](attributes-by-group.md)

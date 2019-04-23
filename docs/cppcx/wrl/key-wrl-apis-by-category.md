@@ -3,16 +3,16 @@ title: 범주별 키 WRL API
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7367bacf-6b7c-4ecd-a0ce-a662db46fc66
-ms.openlocfilehash: fd4bebf9c823079c3bdb4c4182bf3f30cdf105a7
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: f3065323c567c944dab12fc1ebbcbd6bb57127e9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785121"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039059"
 ---
 # <a name="key-wrl-apis-by-category"></a>범주별 키 WRL API
 
-다음 표에서 기본 Windows Runtime c + + 템플릿 라이브러리 클래스, 구조체, 함수 및 매크로 나열합니다. 도우미 네임 스페이스 및 클래스의 구문 생략 됩니다. 이 목록은 네임 스페이스에 의해 정렬 되는 API 설명서를 보강 합니다.
+다음 표에서 기본 Windows 런타임 C++ 템플릿 라이브러리 클래스, 구조체, 함수 및 매크로입니다. 도우미 네임 스페이스 및 클래스의 구문 생략 됩니다. 이 목록은 네임 스페이스에 의해 정렬 되는 API 설명서를 보강 합니다.
 
 ## <a name="classes"></a>클래스
 
@@ -66,6 +66,6 @@ ms.locfileid: "58785121"
 |[ActivatableClass 매크로](activatableclass-macros.md)|지정된 된 클래스의 인스턴스를 만들 수 있는 팩터리를 포함 하는 내부 캐시를 채웁니다.|
 |[InspectableClass 매크로](inspectableclass-macro.md)|런타임 클래스 이름 및 신뢰 수준을 설정합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows 런타임 C++ 템플릿 라이브러리(WRL)](windows-runtime-cpp-template-library-wrl.md)

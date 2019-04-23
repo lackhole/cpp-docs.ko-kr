@@ -1,17 +1,17 @@
 ---
-title: 구현 (c + + COM 특성)
+title: 구현 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.implements
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: 519bbe0bdbef786c95ca3f6711b344b7a4f6b641
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 9425f998f0e8fbe5f16e6eb136e00ba3fb7bd5d9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329890"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033685"
 ---
 # <a name="implements-c"></a>implements(C++)
 
@@ -42,7 +42,7 @@ IDL coclass의 구성원으로 강제 적용 되는 디스패치 인터페이스
 
 |||
 |-|-|
-|**적용 대상**|**클래스**, **구조체**|
+|**적용 대상**|**class**, **struct**|
 |**반복 가능**|예|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
@@ -51,7 +51,7 @@ IDL coclass의 구성원으로 강제 적용 되는 디스패치 인터페이스
 
 ## <a name="example"></a>예제
 
-다음 예제는 세 부분으로 이루어져:.idl 파일 및 해당 연결 된.h 파일과 c + + 파일입니다.
+다음 예제는 세 부분으로 이루어져:.idl 파일 및 연결 된.h 파일 및 C++ 파일입니다.
 
 컴파일러를 사용할 수 있는 다음.idl 파일을 가정 합니다.
 
@@ -484,7 +484,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 특성](compiler-attributes.md)<br/>
 [클래스 특성](class-attributes.md)

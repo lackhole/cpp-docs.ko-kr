@@ -8,10 +8,10 @@ helpviewer_keywords:
 - collection interfaces
 ms.assetid: b2d37119-3ab2-4e0a-b65b-f377f07e4098
 ms.openlocfilehash: ebf7be8b2c80a714a27567ce0334475519a69454
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58768018"
 ---
 # <a name="atl-collections-and-enumerators"></a>ATL 컬렉션 및 열거자
@@ -33,7 +33,7 @@ ms.locfileid: "58768018"
 각 유형의 인터페이스 되는 다양 한 디자인 원칙을 설명합니다.
 
 [C++ 표준 라이브러리 기반 컬렉션 구현](../atl/implementing-an-stl-based-collection.md)<br/>
-C + + 표준 라이브러리 기반 컬렉션의 구현을 통해 안내 하는 확장 된 예제입니다.
+구현을 통해 안내 하는 확장 된 예제는 C++ 표준 라이브러리 기반 컬렉션입니다.
 
 ## <a name="related-sections"></a>관련 단원
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - in instruction
 - __inbyte intrinsic
 ms.assetid: 03b61799-2a08-474d-adc4-2cbf7c81a4d5
-ms.openlocfilehash: 63d4e9229eb7c5058587975d0ea04696786a9c73
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 20c583b874c2bdb56affc6a90c8464b82c4824f0
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562151"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59040837"
 ---
 # <a name="inbyte"></a>__inbyte
 
@@ -52,6 +52,6 @@ unsigned char __inbyte(
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

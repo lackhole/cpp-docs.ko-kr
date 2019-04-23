@@ -14,12 +14,12 @@ helpviewer_keywords:
 - OpenRowset method
 - GetRowsetProperties method
 ms.assetid: d80ee51c-8bb3-4dca-8760-5808e0fb47b4
-ms.openlocfilehash: d525c0e82d7fbc8bf0f83217eaa2cf9a1bd2f17b
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 60ca0af25a0556c4a3d42d91ba3b0c52daa5f530
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331856"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034243"
 ---
 # <a name="consumer-wizard-generated-methods"></a>소비자 마법사 생성 메서드
 
@@ -159,6 +159,6 @@ void CloseDataSource();
 
 메서드를 정의 하는 마법사 `OpenDataSource` 고 `CloseDataSource`; `OpenDataSource` 호출 [cdatasource:: Openfrominitializationstring](../../data/oledb/cdatasource-openfrominitializationstring.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [마법사를 사용하여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

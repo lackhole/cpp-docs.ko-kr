@@ -67,12 +67,12 @@ helpviewer_keywords:
 - operator =, bookmarks
 - operator=, bookmarks
 ms.assetid: bc942f95-6f93-41d9-bb6e-bcdae4ae0b7a
-ms.openlocfilehash: b59d4de6751dd2a7f90c5de766b5f95cb7e7b330
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: fb2e3ec99471405f9c6521e0b70672c1da1b755c
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525186"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030143"
 ---
 # <a name="cbookmark-class"></a>CBookmark 클래스
 
@@ -141,7 +141,7 @@ NULL이 고, 버퍼 크기를 0으로 버퍼를 설정 하는 첫 번째 함수�
 > [!NOTE]
 >  이 함수는 사용할 수 있습니다만 `CBookmark<0>`합니다.
 
-## <a name="getbuffer"></a> Cbookmark:: Getbuffer
+## <a name="getbuffer"></a> CBookmark::GetBuffer
 
 책갈피 버퍼에 대 한 포인터를 검색합니다.
 
@@ -155,7 +155,7 @@ virtual BYTE* GetBuffer() const throw();
 
 책갈피 버퍼에 대 한 포인터입니다.
 
-## <a name="getsize"></a> Cbookmark:: Getsize
+## <a name="getsize"></a> CBookmark::GetSize
 
 책갈피 버퍼의 크기를 검색합니다.
 
@@ -209,7 +209,7 @@ CBookmark& operator =(const CBookmark& bookmark) throw();
 
 이 연산자에만 필요한 `CBookmark<0>`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

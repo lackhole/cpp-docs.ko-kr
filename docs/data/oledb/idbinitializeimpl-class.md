@@ -39,12 +39,12 @@ helpviewer_keywords:
 - m_dwStatus
 - m_pCUtlPropInfo
 ms.assetid: e4182f81-0443-44f5-a0d3-e7e075d6f883
-ms.openlocfilehash: 18145f3dc9545f79b08d9d92cacdafad0520c992
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3418ce11e1a607d66fee593b32fd3a4b7d197407
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418746"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033984"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl 클래스
 
@@ -172,7 +172,7 @@ DB 속성 정보에 대 한 구현 개체에 대 한 포인터입니다.
 CUtlPropInfo< T >* m_pCUtlPropInfo;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

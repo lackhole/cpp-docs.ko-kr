@@ -60,10 +60,10 @@ helpviewer_keywords:
 - ID_INDICATOR_NUM command
 ms.assetid: a7883b46-23f7-4870-ac3a-804aed9258b5
 ms.openlocfilehash: 8d568760cc75a4c1f2ddb6dd88108cc830783194
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58775833"
 ---
 # <a name="tn022-standard-commands-implementation"></a>TN022: 표준 명령 구현
@@ -73,7 +73,7 @@ ms.locfileid: "58775833"
 
 이 노트는 MFC 2.0에서 제공 하는 표준 명령 구현을 설명 합니다. 읽기 [기술 참고 21](../mfc/tn021-command-and-message-routing.md) 첫 번째 하므로 다양 한 표준 명령을 구현 하는 데 사용 하는 메커니즘에 설명 합니다.
 
-이 설명은 MFC 아키텍처, Api 및 일반적인 프로그래밍 연습에 대 한 지식이 있다고 가정합니다. 문서화 된 뿐만 아니라 문서화 되지 않은 "구현"만 Api 설명 되어 있습니다. 부터의 기능 또는 MFC 프로그래밍 하는 방법에 대 한 학습을 시작 하는 아닙니다. 문서화 된 Api의 세부 정보 및 자세한 내용은 Visual c + +를 참조 하십시오.
+이 설명은 MFC 아키텍처, Api 및 일반적인 프로그래밍 연습에 대 한 지식이 있다고 가정합니다. 문서화 된 뿐만 아니라 문서화 되지 않은 "구현"만 Api 설명 되어 있습니다. 부터의 기능 또는 MFC 프로그래밍 하는 방법에 대 한 학습을 시작 하는 아닙니다. 시각적 개체에 대 한 참조 C++ 문서화 된 Api의 세부 정보 및 자세한 내용은 합니다.
 
 ## <a name="the-problem"></a>문제
 

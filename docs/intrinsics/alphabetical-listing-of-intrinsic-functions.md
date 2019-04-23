@@ -6,12 +6,12 @@ helpviewer_keywords:
 - intrinsics, alphabetical list
 - intrinsics
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
-ms.openlocfilehash: 83b254b67cb2a7e09fbf57597996097a7afb5d76
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67206e63d163b489c5087e6bc6759cde30a3d6c4
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654770"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026203"
 ---
 # <a name="alphabetical-listing-of-intrinsic-functions"></a>내장 함수의 사전순 목록
 
@@ -273,6 +273,6 @@ ms.locfileid: "50654770"
 
 [__writemsr](../intrinsics/writemsr.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

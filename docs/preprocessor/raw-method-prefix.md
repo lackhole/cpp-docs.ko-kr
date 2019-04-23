@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - raw_method_prefix attribute
 ms.assetid: 71490313-af78-4bb2-b28a-eee67950d30b
-ms.openlocfilehash: c3015cf8b51646d25fd8f36a7336c63dc8fe492b
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: 963e04752dcb797343550d9b89f778bfe0e8a593
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565599"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59021413"
 ---
 # <a name="rawmethodprefix"></a>raw_method_prefix
 
-**C + + 전용**
+**C++특정**
 
 이름 충돌을 방지하기 위해 다른 접두사를 지정합니다.
 
@@ -37,9 +37,9 @@ raw_method_prefix("Prefix")
 > [!NOTE]
 > 효과 **raw_method_prefix** 특성으로 변경 되지 것입니다 합니다 [raw_interfaces_only](raw-interfaces-only.md) 특성입니다. 합니다 **raw_method_prefix** 항상 우선 `raw_interfaces_only` 접두사를 지정 합니다. 동일한 특성을 모두 사용 하는 경우 `#import` 문 다음에 지정 된 접두사가 합니다 **raw_method_prefix** 특성을 사용 합니다.
 
-**C + + 전용 종료**
+**최종 C++ 특정**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

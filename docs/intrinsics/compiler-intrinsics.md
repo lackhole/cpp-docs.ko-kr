@@ -7,12 +7,12 @@ helpviewer_keywords:
 - cl.exe compiler, performance
 - cl.exe compiler, intrinsics
 ms.assetid: 48bb9929-7d78-4fd8-a092-ae3c9f971858
-ms.openlocfilehash: f66c6247aba92a1528489dcf689239c9341b7d2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a014e870d731d7e7d443c3bfefd66884aa50d5d
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560019"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029280"
 ---
 # <a name="compiler-intrinsics"></a>컴파일러 내장 함수
 
@@ -44,9 +44,9 @@ ms.locfileid: "50560019"
 
 - [내장 함수의 사전순 목록](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ARM 어셈블러 참조](../assembler/arm/arm-assembler-reference.md)<br/>
 [Microsoft 매크로 어셈블러 참조](../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)

@@ -1,17 +1,17 @@
 ---
-title: 숨겨진된 (c + + COM 특성)
+title: 숨겨진 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.hidden
 helpviewer_keywords:
 - hidden attribute
 ms.assetid: 199c96dd-fc07-46c7-af93-92020aebebe7
-ms.openlocfilehash: c1d8c8d894ed9a54c0dd3af775d6fbfda0385906
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d1d87ea057b22984a0e0f8f5518899e36f7d0221
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597615"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038423"
 ---
 # <a name="hidden"></a>hidden
 
@@ -25,7 +25,7 @@ ms.locfileid: "50597615"
 
 ## <a name="remarks"></a>설명
 
-합니다 **숨겨진** c + + 특성에 동일한 기능을 합니다 [숨겨진](/windows/desktop/Midl/hidden) MIDL 특성입니다.
+**숨겨진** C++ 특성에 동일한 기능을 합니다 [숨겨진](/windows/desktop/Midl/hidden) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -44,7 +44,7 @@ ms.locfileid: "50597615"
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [인터페이스 특성](interface-attributes.md)<br/>

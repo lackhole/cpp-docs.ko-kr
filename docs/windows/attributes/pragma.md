@@ -1,17 +1,17 @@
 ---
-title: pragma (c + + COM 특성)
+title: pragma (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.pragma
 helpviewer_keywords:
 - pragma attribute
 ms.assetid: 3f90d023-b8b5-4007-8311-008bb72cbea1
-ms.openlocfilehash: d90e37e27f7e2a13ffebd11043e415c1d43751c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 159e1570c2bde07bb4df8fa904a519e8e0018a6a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430501"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041191"
 ---
 # <a name="pragma"></a>pragma
 
@@ -30,7 +30,7 @@ ms.locfileid: "50430501"
 
 ## <a name="remarks"></a>설명
 
-합니다 **pragma** c + + 특성에 동일한 기능을 합니다 [pragma](/windows/desktop/Midl/pragma) MIDL 특성입니다.
+**pragma** C++ 특성에 동일한 기능을 합니다 [pragma](/windows/desktop/Midl/pragma) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -61,7 +61,7 @@ __interface A
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [독립 실행형 특성](stand-alone-attributes.md)<br/>

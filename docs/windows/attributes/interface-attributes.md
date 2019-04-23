@@ -1,20 +1,20 @@
 ---
-title: 인터페이스 특성 (c + + COM)
+title: 인터페이스 특성 (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 - interface attributes
 ms.assetid: 27fcdfee-abce-4585-8b53-ee31635356e8
-ms.openlocfilehash: d954b7622ac78142c84b40007ecda8138b1b8f2f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8218ccb66c6be9edef5d7de751a73bf4753d069f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556648"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59027207"
 ---
 # <a name="interface-attributes"></a>인터페이스 특성
 
-다음 특성을 적용 합니다 [인터페이스 (또는 __interface)](../../cpp/interface.md) c + + 키워드입니다.
+다음 특성을 적용 합니다 [인터페이스 (또는 __interface)](../../cpp/interface.md) C++ 키워드입니다.
 
 |특성|설명|
 |---------------|-----------------|
@@ -50,6 +50,6 @@ ms.locfileid: "50556648"
 
 지정 하지 않는 경우는 [uuid](uuid-cpp-attributes.md) 특성 및 다른 특성 프로젝트 동일한 인터페이스 이름을 사용 하 여, 동일한 GUID가 생성 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [용도별 특성](attributes-by-usage.md)

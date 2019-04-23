@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2440
 ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
 ms.openlocfilehash: c85a8284c91037e981f0d1ea82507b49be8121a3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58780680"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777137"
 ---
 # <a name="compiler-error-c2440"></a>컴파일러 오류 C2440
 
@@ -21,7 +21,7 @@ ms.locfileid: "58780680"
 
 ## <a name="example"></a>예제
 
-C2440은 비 const를 초기화 하려고 하면 발생할 수 있습니다 `char*` (또는 `wchar_t*`) c + + 코드의 리터럴 문자열을 사용 하 여 때 컴파일러 성능 옵션 [/zc: strictstrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) 설정 됩니다. C에서 문자열 리터럴의 형식은 배열의 `char`, 이지만 c + +에서는 배열을 `const char`합니다. 이 샘플에서는 C2440을 생성합니다.
+C2440은 비 const를 초기화 하려고 하면 발생할 수 있습니다 `char*` (또는 `wchar_t*`)에서 리터럴 문자열을 사용 하 여 C++ 코드, 컴파일러 성능 옵션 [/zc: strictstrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) 설정 됩니다. C에서 문자열 리터럴의 형식은 배열의 `char`, 하지만 C++의 배열입니다 `const char`합니다. 이 샘플에서는 C2440을 생성합니다.
 
 ```cpp
 // C2440s.cpp
@@ -80,9 +80,9 @@ Base * func(Derived * d) {
 
 줄 15 및 16의 다음 샘플에 있는 C2440 오류는 정규화 된 `Incompatible calling conventions for UDT return value` 메시지입니다. A *UDT* 클래스, 구조체 또는 공용 구조체와 같은 사용자 정의 형식입니다. 이러한 종류의 비호환 오류는 UDT의 호출 규칙은 반환 형식의 udt 및 함수 포인터와 연관 된 실제 호출 규칙과 충돌 하는 정방향 선언에 지정 된 경우에 발생 합니다.
 
-예제에서는 먼저 가지; 구조체를 반환 하는 함수 및 구조체에 대 한 정방향 선언 컴파일러는 구조체는 c + + 호출 규칙을 가정 합니다. 다음은 기본적으로 C를 사용 하는 struct 정의 사용 하는 호출 규칙입니다. 모르기 때문에 컴파일러는 struct의 호출 규칙은 반환 형식의 구조체에 대 한 호출 규칙 전체 구조체를 읽을 때까지 `get_c2` c + +로도 간주 됩니다.
+예제에서는 먼저 가지; 구조체를 반환 하는 함수 및 구조체에 대 한 정방향 선언 구조체는 컴파일러의 C++ 호출 규칙입니다. 다음은 기본적으로 C를 사용 하는 struct 정의 사용 하는 호출 규칙입니다. 호출 규칙은 반환 형식의 구조체에 대 한 전체 구조체를 읽을 때까지 컴파일러는 구조체의 호출 규칙을 알지 못하므로 `get_c2` 로 간주 됩니다 C++합니다.
 
-구조체는 구조체를 반환 하는 다른 함수 선언이 옵니다 못하지만 시점에서 컴파일러는 struct의 호출 규칙이 c + +는. 마찬가지로 구조체를 반환 하는 함수 포인터는 컴파일러가 구조체는 c + + 호출 규칙을 알 수 있도록 구조체 정의 다음 정의 됩니다.
+구조체는 구조체를 반환 하는 다른 함수 선언이 옵니다 못하지만 시점에서 컴파일러는 struct의 호출 규칙은 C++입니다. 마찬가지로 구조체를 반환 하는 함수 포인터에 정의 됩니다 구조체 정의 다음 컴파일러는 구조체는 알 수 있도록 합니다 C++ 호출 규칙입니다.
 
 호환 되지 않는 호출 규칙으로 인해 발생 하는 C2440을 해결 하려면 UDT 정의 다음에 UDT를 반환 하는 함수를 선언 합니다.
 
@@ -143,7 +143,7 @@ int main() {
 
 ## <a name="example"></a>예제
 
-C2440은 사용자 정의 변환을 잘못 사용할 발생할 수 있습니다. 예를 들어 경우 변환 연산자 정의 된 `explicit`, 컴파일러는 암시적 변환에서 사용할 수 없습니다. 사용자 정의 변환에 대 한 자세한 내용은 참조 하세요. [사용자 정의 변환 (C + + /cli CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). 이 샘플에서는 C2440을 생성합니다.
+C2440은 사용자 정의 변환을 잘못 사용할 발생할 수 있습니다. 예를 들어 경우 변환 연산자 정의 된 `explicit`, 컴파일러는 암시적 변환에서 사용할 수 없습니다. 사용자 정의 변환에 대 한 자세한 내용은 참조 하세요. [사용자 정의 변환 (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). 이 샘플에서는 C2440을 생성합니다.
 
 ```cpp
 // C2440d.cpp
@@ -167,7 +167,7 @@ int main() {
 
 ## <a name="example"></a>예제
 
-C2440은 형식의 Visual c + + 배열의 인스턴스를 만들려고 할 경우에 발생할 수 있습니다는 <xref:System.Array>합니다.  자세한 내용은 [배열](../../extensions/arrays-cpp-component-extensions.md)합니다.  다음 샘플에서는 C2440을 생성합니다.
+C2440은 시각적 개체의 인스턴스를 만들려고 할 경우에 발생할 수 있습니다 C++ 형식의 배열을 <xref:System.Array>합니다.  자세한 내용은 [배열](../../extensions/arrays-cpp-component-extensions.md)합니다.  다음 샘플에서는 C2440을 생성합니다.
 
 ```cpp
 // C2440e.cpp
@@ -194,7 +194,7 @@ C2440은 특성 기능이 변경 내용으로 인해 발생할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-Visual c + + 컴파일러는 더 이상 허용 합니다 [const_cast 연산자](../../cpp/const-cast-operator.md) 다운 캐스트가 경우 소스 코드를 사용 하는 **/clr** 프로그래밍 컴파일됩니다.
+시각적 개체 C++ 컴파일러는 더 이상 허용 합니다 [const_cast 연산자](../../cpp/const-cast-operator.md) 다운 캐스트가 경우 소스 코드를 사용 하는 **/clr** 프로그래밍 컴파일됩니다.
 
 이 C2440을 해결 하려면 올바른 캐스트 연산자를 사용 합니다. 자세한 내용은 [캐스팅 연산자](../../cpp/casting-operators.md)합니다.
 

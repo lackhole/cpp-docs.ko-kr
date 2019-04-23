@@ -10,12 +10,12 @@ helpviewer_keywords:
 - rowsets, event notifications
 - OLE DB providers, notifications
 ms.assetid: 305a1103-0c87-40c8-94bc-7fbbdd52ae32
-ms.openlocfilehash: 67f7eb5f77dc68b57f04ab4d016680255cb1ae86
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: b35c1d3d6ff7d5d74493e843575f7448c4df8d8f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416022"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59025739"
 ---
 # <a name="receiving-notifications"></a>알림 수신
 
@@ -32,7 +32,7 @@ CDBPropSet propset(DBPROPSET_ROWSET);
 propset.AddProperty(DBPROP_IConnectionPointContainer, true);
 ```
 
-그러면 아래 코드처럼 사용합니다.
+그런 후 다음 코드에서 사용됩니다.
 
 ```cpp
 product.Open(session, _T("Products"), &propset);
@@ -40,6 +40,6 @@ product.Open(session, _T("Products"), &propset);
 AtlAdvise(product.m_spRowset, GetUnknown(), IID_IRowsetNotify, &m_dwCookie);
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [접근자 사용](../../data/oledb/using-accessors.md)

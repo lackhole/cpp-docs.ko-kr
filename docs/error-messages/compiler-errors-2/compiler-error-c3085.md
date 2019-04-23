@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3085
 ms.assetid: 1ac40bf2-f63e-439e-8921-47e6dadc8354
-ms.openlocfilehash: 9e174d4f8e50864dd7b33b58786cce03d50c2295
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 01ebfa0007b9acc08742c57cc0528216eabb0441
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558381"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779010"
 ---
 # <a name="compiler-error-c3085"></a>컴파일러 오류 C3085
 
 'constructor': 생성자는 'keyword'일 수 없습니다.
 
-생성자가 잘못 선언되었습니다. 자세한 내용은 [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md) 를 참조하세요.
+생성자가 잘못 선언되었습니다. 자세한 내용은 [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md) 를 참조하세요.
 
 ## <a name="example"></a>예제
 

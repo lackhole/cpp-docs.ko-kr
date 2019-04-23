@@ -8,12 +8,12 @@ helpviewer_keywords:
 - cmpxchg16b instruction
 - _InterlockedCompareExchange128 intrinsic
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56
-ms.openlocfilehash: 3cfe9d650b66dc08a96599652b52f0b153198afa
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 9330b1405ca247364cd04d3ab399f66e4f332273
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627400"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037872"
 ---
 # <a name="interlockedcompareexchange128"></a>_InterlockedCompareExchange128
 
@@ -127,7 +127,7 @@ BigInt.Int[1] = 34, BigInt.Int[0] = 12
 
 고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [_InterlockedCompareExchange 내장 함수](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)<br/>

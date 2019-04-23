@@ -8,12 +8,12 @@ helpviewer_keywords:
 - once pragma
 - pragmas, once
 ms.assetid: c7517556-6403-4b16-8898-f2aa0a6f685f
-ms.openlocfilehash: 3adb7ab30b445ab3223246d247be006d24475afa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6061fe77960aa64e2dcb39db05897ef0e7fb5f2e
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534604"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039886"
 ---
 # <a name="once"></a>once
 소스 코드 파일을 컴파일할 때 컴파일러에서 파일을 한 번만 포함하도록(열도록) 지정합니다.
@@ -54,6 +54,6 @@ ms.locfileid: "50534604"
 
 사용 하지 않도록 주의 하십시오 `#pragma once` 또는 `#include guard` 관용구를 여러 번 포함 되어야 하도록 설계 된 전처리기 기호를 사용 하 여 해당 효과 제어 하는 헤더 파일에 있습니다. 이 디자인의 예 참조는 \<r t. h > 헤더 파일입니다. 또한 관리 하기 위해 주의 무효화 될 수 있는 포함된 파일에 여러 경로 만들지 못하도록 포함 경로 다중 포함 최적화 둘 다에 대해 `#include guard`s 및 `#pragma once`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

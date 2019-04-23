@@ -5,10 +5,10 @@ helpviewer_keywords:
 - user-defined conversions [C++]
 ms.assetid: 8010fd59-2775-4e9a-a6ed-58055032d66f
 ms.openlocfilehash: 8f168582e56e77f1ec848928b7ffd36879ba341a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772425"
 ---
 # <a name="user-defined-conversions-ccli"></a>사용자 정의 변환(C++/CLI)
@@ -80,7 +80,7 @@ in N::N
 
 Convert-from 연산자는 다른 클래스의 개체에서 연산자가 정의 된 클래스의 개체를 만듭니다.
 
-표준 c + + convert-from 연산자;를 지원 하지 않습니다. 표준 c + +에서는이 목적을 위해 생성자를 사용합니다. 그러나 CLR 형식을 사용 하는 경우 Visual c + + convert-from 연산자를 호출 하는 것에 대 한 구문 지원을 제공 합니다.
+표준 C++ convert-from 연산자;를 지원 하지 않습니다 표준 C++ 이 목적을 위해 생성자를 사용 합니다. 그러나 CLR 형식에서 시각적 개체를 사용 하는 경우 C++ convert-from 연산자를 호출 하는 것에 대 한 구문 지원을 제공 합니다.
 
 다른 CLS 규격 언어에서 잘 상호 운용, 지정된 된 클래스에 대 한 각 사용자 정의 단항 생성자는 해당 변환에서 연산자를 사용 하 여 래핑할 수도 있습니다.
 

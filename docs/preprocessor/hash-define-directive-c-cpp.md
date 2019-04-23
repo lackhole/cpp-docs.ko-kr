@@ -1,5 +1,5 @@
 ---
-title: '#define 지시문 (C/c + +)'
+title: '#define 지시문 (C /C++)'
 ms.date: 11/04/2016
 f1_keywords:
 - '#define'
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - '#define directive, syntax'
 - '#define directive'
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
-ms.openlocfilehash: dec555de64a3ebd166bdff5558957f09e1c2755e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a0cc7e7836a0c82c72055fe8d9e7497995485d0
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653754"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039510"
 ---
 # <a name="define-directive-cc"></a>#define 지시문 (C/C++)
 
@@ -23,9 +23,9 @@ ms.locfileid: "50653754"
 
 ## <a name="syntax"></a>구문
 
-`#define` *식별자* *토큰 문자열*<sub>최적화</sub>
+`#define` *identifier* *token-string*<sub>opt</sub>
 
-`#define` *식별자* `(` *식별자*<sub>opt</sub> `,` *...*  `,` *식별자*<sub>opt</sub> `)` *토큰 문자열*<sub>최적화</sub>
+`#define` *identifier* `(` *identifier*<sub>opt</sub>`,` *...* `,` *identifier*<sub>opt</sub>`)` *token-string*<sub>opt</sub>
 
 ## <a name="remarks"></a>설명
 
@@ -66,7 +66,7 @@ A `#define` 없이 *토큰 문자열* 의 항목을 제거 *식별자* 소스 �
 
 Microsoft C/C++에서는 새 정의가 원래 정의와 구문적으로 동일할 경우 매크로를 재정의할 수 있습니다. 즉, 두 개의 정의에서 매개 변수 이름은 각기 다를 수 있습니다. 이 동작은 두 정의 구문적으로 동일할 필요는 ANSI C에서 다릅니다.
 
-예를 들어, 다음 두 매크로는 매개 변수 이름만 제외하면 모두 동일합니다. ANSI C는 재정의 허용 하지 않지만 Microsoft C/c + + 오류 없이 컴파일됩니다.
+예를 들어, 다음 두 매크로는 매개 변수 이름만 제외하면 모두 동일합니다. ANSI C 수 없도록 이러한 재정의 하지만 Microsoft C /C++ 오류 없이 컴파일됩니다.
 
 ```C
 #define multiply( f1, f2 ) ( f1 * f2 )
@@ -115,6 +115,6 @@ var = 80 + 10 * 20;
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)

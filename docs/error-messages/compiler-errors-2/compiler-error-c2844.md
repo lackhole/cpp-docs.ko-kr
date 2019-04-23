@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2844
 ms.assetid: dcaf4cd2-21b0-4280-ae42-0a706c524d83
-ms.openlocfilehash: 8af9f42be279f728f72fc6968aeba98ee5d2474a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2676a32cee487595a2241359496ae9b0380126b8
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462714"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776890"
 ---
 # <a name="compiler-error-c2844"></a>컴파일러 오류 C2844
 
 'member': ' interface '인터페이스의 멤버일 수 없습니다.
 
-[인터페이스 클래스](../../windows/interface-class-cpp-component-extensions.md) 속성 또한 아닌 데이터 멤버를 포함할 수 없습니다.
+[인터페이스 클래스](../../extensions/interface-class-cpp-component-extensions.md) 속성 또한 아닌 데이터 멤버를 포함할 수 없습니다.
 
 속성 또는 멤버 함수 이외의 인터페이스에서 허용 되지 않습니다. 또한 생성자, 소멸자 및 연산자 허용 되지 않습니다.
 

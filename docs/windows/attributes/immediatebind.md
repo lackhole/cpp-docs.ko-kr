@@ -1,17 +1,17 @@
 ---
-title: immediatebind (c + + COM 특성)
+title: immediatebind (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.immediatebind
 helpviewer_keywords:
 - immediatebind attribute
 ms.assetid: 186d40e6-9166-4d0c-9853-4e7e4d25226f
-ms.openlocfilehash: 35e8ea4a761fd3cf36da335dc8519ba71772b4e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1844e72ecd1fe7c0f4255426eb48f5c70471e5f5
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647725"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59036210"
 ---
 # <a name="immediatebind"></a>immediatebind
 
@@ -25,7 +25,7 @@ ms.locfileid: "50647725"
 
 ## <a name="remarks"></a>설명
 
-합니다 **immediatebind** c + + 특성에 동일한 기능을 합니다 [immediatebind](/windows/desktop/Midl/immediatebind) MIDL 특성입니다.
+**immediatebind** C++ 특성에 동일한 기능을 합니다 [immediatebind](/windows/desktop/Midl/immediatebind) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -44,7 +44,7 @@ ms.locfileid: "50647725"
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>

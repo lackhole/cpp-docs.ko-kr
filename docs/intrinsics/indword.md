@@ -8,12 +8,12 @@ helpviewer_keywords:
 - in instruction
 - __indword intrinsic
 ms.assetid: 1068d686-586e-4e36-b962-d1d7c3315260
-ms.openlocfilehash: f4b37247093da14c8d5e8fed69b01265d3fed2ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 063ebd92682f8011bc6b60eee14c3443bc04c333
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599812"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029332"
 ---
 # <a name="indword"></a>__indword
 
@@ -52,6 +52,6 @@ unsigned long __indword(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

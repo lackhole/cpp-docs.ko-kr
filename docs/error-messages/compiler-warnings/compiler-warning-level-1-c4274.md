@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4274
 ms.assetid: 5a948680-7ed1-469f-978d-ae99d154e161
-ms.openlocfilehash: dcdf804ac6e02d2bb161751db054d7f1f62ddbb5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f73fa8e09baab127e7755ebe3def69c2fb585744
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564595"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59028469"
 ---
 # <a name="compiler-warning-level-1-c4274"></a>컴파일러 경고 (수준 1) C4274
 
@@ -26,7 +26,7 @@ ms.locfileid: "50564595"
 
 - 제거 된 `#ident "` *문자열* `"` 지시문입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C 주석(C/C++)](../../preprocessor/comment-c-cpp.md)<br/>
 [링커 도구 경고 LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)<br/>

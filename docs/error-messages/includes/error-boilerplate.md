@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: bcf2372f039ccec4b46bf51fb4da9f4175289f14
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58807743"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59804615"
 ---
 Visual Studio 컴파일러 및 빌드 도구를 다양 한 종류의 오류 및 경고를 보고할 수 있습니다. 오류 또는 경고를 찾으면 빌드 도구는 코드 의도 추측 하 고 동시에 더 많은 문제를 보고 될 수 있도록 계속 하려고 수 있습니다. 도구의 추측이 잘못된 경우 이후 오류나 경고를 프로젝트에 적용할 수 없습니다. 프로젝트에서 문제를 수정하는 경우 항상 보고된 첫 번째 오류나 경고에서 시작하고 자주 다시 빌드하십시오. 하나의 수정 많은 후속 오류가 사라집니다를 만들 수 있습니다.
 
@@ -15,4 +15,4 @@ Visual Studio 컴파일러 및 빌드 도구를 다양 한 종류의 오류 및 
 
 Microsoft의 공개 포럼에서 오류 및 경고에 대 한 추가 지원을 찾아볼 수도 있습니다. 오류 또는 경고 번호를 검색할 수 있습니다 합니다 [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html) 사이트입니다. 또한 오류와 경고를 검색 하 고에 대 한 질문 수 있습니다 [Stack Overflow](http://stackoverflow.com/) 솔루션을 찾으려고 합니다.
 
-추가 도움말 및 커뮤니티 리소스에 대 한 링크를 참조 하세요 [Visual c + + 도움말 및 커뮤니티](../../overview/visual-cpp-help-and-community.md)합니다.
+추가 도움말 및 커뮤니티 리소스에 대 한 링크를 참조 하세요 [시각적 C++ 도움말 및 커뮤니티](../../overview/visual-cpp-help-and-community.md)합니다.

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - files [C++], editable types
 - resource editing
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-ms.openlocfilehash: 3de2010cca04d007bf61bf8c139cbc69d790e579
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 45db6d0139cfa3aa8a2eaa8fe6d18158cb6646ce
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563006"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029399"
 ---
 # <a name="resource-files-c"></a>리소스 파일(C++)
 
@@ -54,7 +54,7 @@ ms.locfileid: "57563006"
 
 - 중첩되어 조건부로 포함된 리소스 파일에 대한 작업
 
-- 기존 리소스를 업데이트 하거나 Visual c + +로 변환 합니다.
+- 기존 리소스를 업데이트 하거나 시각적 개체에 변환 C++입니다.
 
 - 현재 리소스 파일에서 그래픽 리소스 가져오기 또는 내보내기
 
@@ -90,7 +90,7 @@ ms.locfileid: "57563006"
 
 ## <a name="manifest-resources"></a>매니페스트 리소스
 
-C + + 데스크톱 프로젝트에서 매니페스트 리소스는 응용 프로그램에서 사용 하는 종속성을 설명 하는 XML 파일입니다. 예를 들어이 MFC Visual Studio에서 마법사에서 생성 된 매니페스트 파일은 정의 응용 프로그램에서 사용 해야 Windows 공용 컨트롤 Dll 버전:
+C++ 데스크톱 프로젝트 매니페스트 리소스는 응용 프로그램에서 사용 하는 종속성을 설명 하는 XML 파일입니다. 예를 들어이 MFC Visual Studio에서 마법사에서 생성 된 매니페스트 파일은 정의 응용 프로그램에서 사용 해야 Windows 공용 컨트롤 Dll 버전:
 
 ```xml
 <description>Your app description here</description>
@@ -129,7 +129,7 @@ Windows XP 또는 Windows Vista 응용 프로그램의 경우 매니페스트 �
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
 [리소스 식별자(기호)](../windows/symbols-resource-identifiers.md)<br/>

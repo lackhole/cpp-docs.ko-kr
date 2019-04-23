@@ -9,12 +9,12 @@ helpviewer_keywords:
 - rowsets [C++], retrieving XML data
 - CStreamRowset class, retrieving XML data
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
-ms.openlocfilehash: 8f77ebf41e741d74443fbae3398589c77fbf6c01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b5704c10393026a14ac66b632559fc376f008f8b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665545"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041538"
 ---
 # <a name="accessing-xml-data"></a>XML 데이터 액세스
 
@@ -86,6 +86,6 @@ while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )
 
 사용할 수 있습니다 [GetXMLColumnData](../../data/oledb/cxmlaccessor-getxmlcolumndata.md) XML 형식의 문자열 데이터로 열 (데이터 형식) 정보를 검색할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [접근자 사용](../../data/oledb/using-accessors.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE DB services [OLE DB], enabling and disabling
 - service providers [OLE DB]
 ms.assetid: 445f97eb-32a8-41c2-ad26-1169f78a074f
-ms.openlocfilehash: c5eaff8b3b37096eeca8777b6ba8bb91e01d7cd2
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: df17a55950b03d4d63dea2199e3bc19bedb8a7e3
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265206"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59028956"
 ---
 # <a name="enabling-and-disabling-ole-db-services"></a>OLE DB 서비스 사용 및 사용 안 함
 
@@ -18,6 +18,6 @@ OLE DB 서비스 구성 요소 관리자는 소비자가 요청한 확장된 기
 
 경우에 따라 기존 응용 프로그램 공급자의 특성에 대 한 가정을 함께 사용할 수 있는 개별 OLE DB 서비스를 사용 하지 않도록 설정 해야 할 수도 있습니다. OLE DB 서비스는 개별 서비스나 연결 하 여 연결 단위로 또는 단일 공급자를 사용 하 여 모든 응용 프로그램에 대 한 모든 서비스를 사용 하지 않도록 설정 하는 기능을 제공 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 리소스 풀링 및 서비스](../../data/oledb/ole-db-resource-pooling-and-services.md)

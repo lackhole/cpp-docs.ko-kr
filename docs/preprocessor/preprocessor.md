@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - preprocessor
 ms.assetid: e120eda3-b413-49f1-a07c-e9fb128cf500
-ms.openlocfilehash: bd139dcbbbe519cc4c9750a657f8b47c5a5bcd18
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b1443d88fdba470cb8ed5058c9a9012bfbdc5bc7
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530966"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59028576"
 ---
 # <a name="preprocessor"></a>전처리기
 전처리기는 첫 번째 변환 단계의 일부로 소스 파일의 텍스트를 조작하는 텍스트 처리기입니다. 전처리기는 소스 텍스트를 구문 분석하지 않지만 매크로 호출을 찾기 위해 소스 텍스트를 토큰으로 나눕니다. 컴파일러는 일반적으로 첫 번째 단계에서 전처리기를 호출하지만, 컴파일 없이 텍스트를 처리하기 위해 전처리기를 별도로 호출할 수도 있습니다.
@@ -36,7 +36,7 @@ ms.locfileid: "50530966"
 
 "변수"라는 용어는 간단한 C 형식 데이터 개체를 나타냅니다. "개체"라는 용어는 C++ 개체 및 변수를 둘 다 나타내는 포괄적인 용어입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 [변환 단계](../preprocessor/phases-of-translation.md)

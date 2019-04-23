@@ -8,16 +8,16 @@ helpviewer_keywords:
 - pragmas, vtordisp
 - vtordisp pragma
 ms.assetid: 05b7d73c-43fa-4b62-8c8a-170a9e427391
-ms.openlocfilehash: 075f00ad8a4071af57014638707503847b58756d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67c6c329bcee75012f6075334760925eca945501
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557185"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034380"
 ---
 # <a name="vtordisp"></a>vtordisp
 
-**C + + 전용**
+**C++특정**
 
 숨겨진 vtordisp 생성/소멸 치환 멤버의 추가를 제어합니다.
 
@@ -44,7 +44,7 @@ Vtordisp 설정에 대해 새 값을 지정합니다. 가능한 값은 0, 1 또�
 *on*<br/>
 `#pragma vtordisp(1)`와 같습니다.
 
-*해제*<br/>
+*off*<br/>
 `#pragma vtordisp(0)`와 같습니다.
 
 ## <a name="remarks"></a>설명
@@ -65,8 +65,8 @@ class GetReal : virtual public VBase { ... };
 #pragma vtordisp(pop)
 ```
 
-**C + + 전용 종료**
+**최종 C++ 특정**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

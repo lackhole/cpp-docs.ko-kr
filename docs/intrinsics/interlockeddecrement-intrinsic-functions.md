@@ -44,12 +44,12 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-ms.openlocfilehash: e2816d99991fcd051c5bbfbe6f4be6a43db2ef2e
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 525c40f4260d59f370f0580d2cb7d9e8f184ee4c
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328560"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59035093"
 ---
 # <a name="interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement Intrinsic Functions
 
@@ -120,14 +120,11 @@ __int64 _InterlockedDecrement64_nf(
 
 사용되는 데이터 형식과 프로세서별 획득 또는 해제 의미 체계에 따라 다른 `_InterlockedDecrement`의 여러 변형이 있습니다.
 
+`_InterlockedDecrement` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedDecrement16`은 16비트 정수 값에 대해, `_InterlockedDecrement64`는 64비트 정수 값에 대해 작동합니다.
 
-  `_InterlockedDecrement` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedDecrement16`은 16비트 정수 값에 대해, `_InterlockedDecrement64`는 64비트 정수 값에 대해 작동합니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. 
-  `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
-
-
-  `lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 [맞춤](../cpp/align-cpp.md)합니다.
+`lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 [맞춤](../cpp/align-cpp.md)합니다.
 
 이러한 루틴은 내장 함수로만 사용할 수 있습니다.
 
@@ -199,7 +196,7 @@ void __cdecl SimpleThread(void* pParam) {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [C++ 키워드](../cpp/keywords-cpp.md)<br/>

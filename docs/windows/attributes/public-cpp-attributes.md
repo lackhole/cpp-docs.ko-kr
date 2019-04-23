@@ -1,17 +1,17 @@
 ---
-title: public (c + + 특성) (c + + COM 특성)
+title: 공용 (C++ 특성) (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.public
 helpviewer_keywords:
 - public attribute
 ms.assetid: c42e1fd5-6cb1-48fe-8a03-95f2a2e0137c
-ms.openlocfilehash: d89df014beae5a62a035c3156b92d3337ecd2c14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a12ab0905064a72057dffac03340b667f07b3ae5
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579337"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59022829"
 ---
 # <a name="public-c-attributes"></a>public(C++ 특성)
 
@@ -25,7 +25,7 @@ ms.locfileid: "50579337"
 
 ## <a name="remarks"></a>설명
 
-**공개** c + + 특성에 동일한 기능을 합니다 [공용](/windows/desktop/Midl/public) MIDL 특성입니다.
+**공용** C++ 특성에 동일한 기능을 합니다 [공용](/windows/desktop/Midl/public) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -58,7 +58,7 @@ __interface IFireTabCtrl : IDispatch
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;코드 > (c + + 문서 주석)'
+title: '&lt;코드 > (C++ 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - code
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <code> C++ XML tag
 - code C++ XML tag
 ms.assetid: 687db3f8-d435-4a90-b781-8da503fa39bc
-ms.openlocfilehash: c50b14d1905d7d827215ba9583026f8489c3a1e0
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: d368f3c82afd028ce557db7d0507b3a6a4d7c118
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826872"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59035811"
 ---
 # <a name="ltcodegt"></a>&lt;코드&gt;
 
@@ -40,6 +40,6 @@ ms.locfileid: "57826872"
 
 \<code> 태그를 사용하는 방법의 예는 [\<example>](example-visual-cpp.md) 항목을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [XML 문서](xml-documentation-visual-cpp.md)

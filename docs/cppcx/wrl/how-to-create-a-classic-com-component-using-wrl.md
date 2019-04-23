@@ -3,20 +3,20 @@ title: '방법: WRL을 사용 하 여 클래식 COM 구성 요소 만들기'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5efe7690-90d5-4c3c-9e53-11a14cefcb19
-ms.openlocfilehash: e19ff4a331a98e64c39dc2e163459b2696bbdee5
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: bb38f36cdd481e61d049f82159fdc24c3726f646
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785525"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031844"
 ---
 # <a name="how-to-create-a-classic-com-component-using-wrl"></a>방법: WRL을 사용 하 여 클래식 COM 구성 요소 만들기
 
-유니버설 Windows 플랫폼 (UWP) 앱에이 사용 하는 것 외에도 데스크톱 앱의 사용에 대 한 기본 클래식 COM 구성 요소를 만들려면 Windows 런타임 c + + 템플릿 라이브러리 (WRL)를 사용할 수 있습니다. COM 구성 요소를 만드는 Windows Runtime c + + 템플릿 라이브러리에 ATL 보다 적은 코드가 필요할 수 있습니다. Windows 런타임 c + + 템플릿 라이브러리를 지 원하는 COM의 하위 집합에 대 한 정보를 참조 하세요 [Windows 런타임 c + + 템플릿 라이브러리 (WRL)](windows-runtime-cpp-template-library-wrl.md)합니다.
+Windows 런타임을 사용할 수 있습니다 C++ 템플릿 라이브러리 (WRL) 외에 유니버설 Windows 플랫폼 (UWP) 앱에 대 한 사용 하 여 데스크톱 앱의 사용에 대 한 기본 클래식 COM 구성 요소를 만들 수 있습니다. COM 구성 요소, Windows 런타임 생성에 대 한 C++ 템플릿 라이브러리에 ATL 보다 적은 코드가 필요할 수 있습니다 COM의 하위 집합에 대 한 자세한는 Windows 런타임 C++ 템플릿 라이브러리 지원, 참조 [Windows 런타임 C++ 템플릿 라이브러리 (WRL)](windows-runtime-cpp-template-library-wrl.md)합니다.
 
-이 문서는 Windows 런타임 c + + 템플릿 라이브러리를 사용 하 여 기본 COM 구성 요소를 만드는 방법을 보여 줍니다. 사용자 요구에 가장 적합한 배포 메커니즘을 사용할 수 있지만 이 문서에서는 데스크톱 앱에서 COM 구성 요소를 등록 및 사용하는 기본 방법도 보여 줍니다.
+이 문서에서는 Windows 런타임을 사용 하는 방법을 보여 줍니다. C++ 기본 COM 구성 요소를 만드는 템플릿 라이브러리입니다. 사용자 요구에 가장 적합한 배포 메커니즘을 사용할 수 있지만 이 문서에서는 데스크톱 앱에서 COM 구성 요소를 등록 및 사용하는 기본 방법도 보여 줍니다.
 
-### <a name="to-use-the-windows-runtime-c-template-library-to-create-a-basic-classic-com-component"></a>Windows 런타임 c + + 템플릿 라이브러리를 만드는 데 기본 클래식 COM 구성 요소
+### <a name="to-use-the-windows-runtime-c-template-library-to-create-a-basic-classic-com-component"></a>Windows 런타임을 사용 하 여 C++ 기본 클래식 COM 구성 요소를 만드는 템플릿 라이브러리
 
 1. Visual Studio에서 만들기를 **빈 솔루션** 프로젝트입니다. 예를 들어, 프로젝트 이름을 `WRLClassicCOM`입니다.
 
@@ -84,10 +84,10 @@ ms.locfileid: "58785525"
 
 ## <a name="robust-programming"></a>강력한 프로그래밍
 
-이 문서는 표준 COM 함수를 사용 하 여 COM 구성 요소를 작성 하 고 모든 COM 기반 기술에 사용할 수 있도록 하는 Windows 런타임 c + + 템플릿 라이브러리를 사용할 수 있는 보여 줍니다. 또한 형식을 사용할 수 있습니다 Windows Runtime c + + 템플릿 라이브러리와 같은 [Microsoft::WRL::ComPtr](comptr-class.md) COM 및 기타 개체의 수명을 관리 하 여 데스크톱 앱에서 합니다. 다음 코드는 Windows 런타임 c + + 템플릿 라이브러리를 사용 하 여의 수명을 관리 하는 `ICalculatorComponent` 포인터입니다. `CoInitializeWrapper` 클래스는 COM 라이브러리가 해제되도록 보장하고 COM 라이브러리의 수명이 `ComPtr` 스마트 포인터 개체보다 길도록 보장하는 RAII 래퍼입니다.
+Windows 런타임을 사용할 수 있는지 보여 주기 위해이 문서에서는 표준 COM 함수 C++ 템플릿 라이브러리는 COM 구성 요소를 작성 하 고 모든 COM 기반 기술에 사용할 수 있도록 합니다. Windows Runtime을 사용할 수도 있습니다 C++ 템플릿 라이브러리와 같은 형식은 [Microsoft::WRL::ComPtr](comptr-class.md) COM 및 기타 개체의 수명을 관리 하 여 데스크톱 앱에서 합니다. 다음 코드에서는 Windows 런타임 C++ 템플릿 라이브러리의 수명을 관리 하는 `ICalculatorComponent` 대 한 포인터입니다. `CoInitializeWrapper` 클래스는 COM 라이브러리가 해제되도록 보장하고 COM 라이브러리의 수명이 `ComPtr` 스마트 포인터 개체보다 길도록 보장하는 RAII 래퍼입니다.
 
 [!code-cpp[wrl-classic-com-component#7](../codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_7.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows 런타임 C++ 템플릿 라이브러리(WRL)](windows-runtime-cpp-template-library-wrl.md)

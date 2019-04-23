@@ -62,12 +62,12 @@ helpviewer_keywords:
 - images [C++], colors
 - colors [C++], inverting
 ms.assetid: d34ff96f-241d-494f-abdd-13811ada8cd3
-ms.openlocfilehash: f50d734ab35968aa107e23b8450d60f316b6002e
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: c424d2e613c51f901def13c4bf42a066797cc65c
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563149"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034146"
 ---
 # <a name="how-to-work-with-color"></a>방법: 색 작업
 
@@ -120,7 +120,7 @@ True-컬러 이미지를 만들 수도 있습니다. 하지만 True 색상 샘�
 > [!TIP]
 > 이후 합니다 **이미지 편집기** 기본값 복원에 **색** 색상표를 기본 저장 해야 **색** 와 같은 이름으로 색상표  *standard.pal* 나 *default.pal과* 기본 설정을 쉽게 복원할 수 있도록 합니다.
 
-사용 된 **색상표 로드** 다음 속성을 사용 하 여 c + + 프로젝트에서 사용 하려면 특별 한 색상표 로드 대화 상자:
+사용 된 **색상표 로드** 에서 사용 하려면 특별 한 색상표 로드 대화 상자에 C++ 다음 속성을 사용 하 여 프로젝트:
 
 |속성|설명|
 |-----------------|-----------------|
@@ -225,7 +225,7 @@ True-컬러 이미지를 만들 수도 있습니다. 하지만 True 색상 샘�
 
 없음
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)<br/>
 [방법: 아이콘 또는 기타 이미지 만들기](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>

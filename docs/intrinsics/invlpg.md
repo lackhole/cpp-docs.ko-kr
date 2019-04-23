@@ -8,12 +8,12 @@ helpviewer_keywords:
 - invlpg instruction
 - __invlpg intrinsic
 ms.assetid: 3fb3633f-d9b7-4ec0-9e7f-a7f2fa8ed794
-ms.openlocfilehash: 0ff46aa15fbb8728ce02255209a32f01a168609b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b4f941baae9f03ed288a99d59e2b06262962e339
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629387"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023321"
 ---
 # <a name="invlpg"></a>__invlpg
 
@@ -31,7 +31,7 @@ void __invlpg(
 
 #### <a name="parameters"></a>매개 변수
 
-*주소*<br/>
+*Address*<br/>
 [in] 64 비트 주소입니다.
 
 ## <a name="requirements"></a>요구 사항
@@ -50,6 +50,6 @@ void __invlpg(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

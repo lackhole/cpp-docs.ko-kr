@@ -1,17 +1,17 @@
 ---
-title: 내보내기 (c + + COM 특성)
+title: 내보내기 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.export
 helpviewer_keywords:
 - export attribute
 ms.assetid: 70b3e848-fad6-4e09-8c72-be60ca72a4df
-ms.openlocfilehash: 951c0ef2f0da0fa897c299aa6b547d5c0788b285
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ffa4283b8a2b265809d06b72be96e217cf8bf9f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661593"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023609"
 ---
 # <a name="export"></a>내보내기
 
@@ -25,7 +25,7 @@ ms.locfileid: "50661593"
 
 ## <a name="remarks"></a>설명
 
-합니다 **내보내기** c + + 특성을 사용 하면 다음에서 사용 하려면 모든 언어를 사용할 수 있도록 하는 이진 호환 형식으로 형식 라이브러리 및.idl 파일에 배치할 데이터 구조입니다.
+합니다 **내보낼** C++ 특성을 사용 하면 다음에서 사용 하려면 모든 언어를 사용할 수 있도록 하는 이진 호환 형식으로 형식 라이브러리 및.idl 파일에 배치할 데이터 구조입니다.
 
 적용할 수 없습니다는 **내보내기** 클래스에는 공용 멤버가 포함 하는 경우에 클래스에 특성 (해당 하는 **구조체**).
 
@@ -61,7 +61,7 @@ struct MyStruct {
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 특성](compiler-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)

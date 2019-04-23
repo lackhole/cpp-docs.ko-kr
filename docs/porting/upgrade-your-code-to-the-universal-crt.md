@@ -2,12 +2,12 @@
 title: 코드를 유니버설 CRT로 업그레이드
 ms.date: 03/31/2017
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-ms.openlocfilehash: 368b61820310135f14cbe4225b9315e62d3686a7
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: bdf1615d47361654e9690977520d01c332098438
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58769188"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58898767"
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>코드를 유니버설 CRT로 업그레이드
 
@@ -49,4 +49,4 @@ ISO C99 준수를 향상하고 코드 품질 및 보안 문제를 해결하기 �
 [잠재적인 업그레이드 문제 개요(Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md)<br/>
-[Visual Studio 2017의 C++ 규칙 향상](../overview/cpp-conformance-improvements-2017.md)
+[Visual Studio의 C++ 규칙 향상](../overview/cpp-conformance-improvements.md)

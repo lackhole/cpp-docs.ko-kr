@@ -3,23 +3,23 @@ title: '연습: WRL 및 Media Foundation을 사용 하 여 UWP 앱 만들기'
 ms.date: 09/17/2018
 ms.topic: reference
 ms.assetid: 0336c550-fbeb-4dc4-aa9b-660f9fc45382
-ms.openlocfilehash: e6d240152c3740b59c34ae8e0f5aa818ce8be638
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: e0254be8c6fa185f75c46898d4da51742195550a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785098"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59036038"
 ---
 # <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>연습: WRL 및 Media Foundation을 사용 하 여 UWP 앱 만들기
 
-사용 하는 유니버설 Windows 플랫폼 (UWP) 앱을 만들려면 Windows 런타임 c + + 템플릿 라이브러리 (WRL)를 사용 하는 방법을 알아봅니다 [Microsoft 미디어 파운데이션](/windows/desktop/medfound/microsoft-media-foundation-sdk)합니다.
+Windows 런타임을 사용 하는 방법을 알아봅니다 C++ 템플릿 라이브러리 (WRL)를 사용 하는 유니버설 Windows 플랫폼 (UWP) 앱을 만드는 [Microsoft 미디어 파운데이션](/windows/desktop/medfound/microsoft-media-foundation-sdk)합니다.
 
 이 예제에서는 웹캠에서 캡처된 이미지에 회색조 효과를 적용하는 사용자 지정 Media Foundation 변형을 만듭니다. 앱에서는 C++를 사용하여 사용자 지정 변환을 정의하고, C#을 사용하여 구성 요소를 통해 캡처된 이미지를 변환합니다.
 
 > [!NOTE]
 > C# 대신 JavaScript, Visual Basic 또는 C++를 사용하여 사용자 지정 변환 구성 요소를 사용할 수도 있습니다.
 
-대부분의 경우에서 다음을 사용할 수 있습니다 C + + /cli CX Windows Runtime을 만듭니다. 그러나 때로는 해야 WRL을 사용 합니다. 예를 들어, Microsoft Media Foundation 용 미디어 확장을 만들 때 COM 및 Windows 런타임 인터페이스를 구현 하는 구성 요소를 만들어야 합니다. 때문에 C + + /cli 미디어 확장을 만들려면 사용 해야 COM 및 Windows 런타임 인터페이스의 구현을 수 있기 때문에 WRL 합니다 CX만 Windows 런타임 개체를 만들 수 있습니다.
+대부분의 경우에서 사용할 수 있습니다 C++/CX Windows Runtime을 만듭니다. 그러나 때로는 해야 WRL을 사용 합니다. 예를 들어, Microsoft Media Foundation 용 미디어 확장을 만들 때 COM 및 Windows 런타임 인터페이스를 구현 하는 구성 요소를 만들어야 합니다. 때문에 C++미디어 확장을 만들려면 사용 해야 COM 및 Windows 런타임 인터페이스의 구현을 수 있기 때문에 WRL 합니다 /CX만 Windows 런타임 개체를 만들 수 있습니다.
 
 > [!NOTE]
 > 이 코드 예제는 길지만, 유용한 Media Foundation 변환을 만드는 데 필요한 최소한의 코드를 보여 줍니다. 이를 사용자 지정 변형의 시작점으로 사용할 수 있습니다. 이 예제는 합니다 [미디어 확장명 샘플](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096), 비디오에 영향을 적용 하는 사용 하 여 미디어 확장, 비디오, 디코딩 및 미디어 스트림을 생성 하는 스키마 처리기를 만듭니다.
@@ -119,7 +119,7 @@ ms.locfileid: "58785098"
 
 이 예제에서는 기본 웹캠에서 한 번에 하나씩 사진을 캡처하는 방법을 보여 줍니다. 합니다 [미디어 확장명 샘플](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096) 많은 기능을 수행 합니다. 웹캠 장치를 열거하고 로컬 스키마 처리기를 사용하는 방법을 보여 주며, 개별 사진과 비디오 스트림 모두에서 작동하는 추가 미디어 효과를 보여 줍니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows 런타임 C++ 템플릿 라이브러리(WRL)](windows-runtime-cpp-template-library-wrl.md)<br/>
 [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk)<br/>

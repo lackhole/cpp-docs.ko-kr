@@ -8,12 +8,12 @@ helpviewer_keywords:
 - _rotr8 intrinsic
 - _rotr16 intrinsic
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff
-ms.openlocfilehash: 218fb14c118cb9208cdfc29176897543f680b593
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 27c3a9d914d04ecdffb7fa74dc3c8f79a442445c
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329724"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59028745"
 ---
 # <a name="rotr8-rotr16"></a>_rotr8, _rotr16
 
@@ -101,7 +101,7 @@ Rotating unsigned short 0x12 right by 10 bits gives 0x480
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [_rotl8, _rotl16](../intrinsics/rotl8-rotl16.md)<br/>
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

@@ -65,12 +65,12 @@ helpviewer_keywords:
 - GetRecordCount method
 - m_rgErrors
 ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
-ms.openlocfilehash: 24c64c489f52cb4746e3e2b6ebb52bb81870cffd
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: b1ab6b0984cbf84690d69a3ffe7eb3931bf59563
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420195"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029475"
 ---
 # <a name="ierrorrecordsimpl-class"></a>IErrorRecordsImpl 클래스
 
@@ -323,7 +323,7 @@ STDMETHOD(GetRecordCount )(ULONG *pcRecords);
 CAtlArray< RecordClass > m_rgErrors;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

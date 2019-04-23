@@ -9,15 +9,15 @@ helpviewer_keywords:
 - MFC dialog boxes
 ms.assetid: e4feea1a-8360-4ccb-9b84-507f1ccd9ef3
 ms.openlocfilehash: 32a8f8784459338131d4893f25d8798f8031b68b
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58778496"
 ---
 # <a name="dialog-boxes"></a>대화 상자
 
-Windows 용 응용 프로그램은 자주 대화 상자를 통해 사용자와 통신합니다. 클래스 [CDialog](../mfc/reference/cdialog-class.md) 코드 마법사를 초기화 하는 프로세스를 간소화 하 고 대화 상자를 관리, Visual c + + 대화 상자 편집기 쉽게 대화 상자를 디자인 하 고 해당 대화 상자 템플릿 리소스를 만드는 인터페이스를 제공 하 고 사용자가 입력 한 값을 수집 하 고 대화 상자에서 컨트롤의 유효성을 검사 합니다.
+Windows 용 응용 프로그램은 자주 대화 상자를 통해 사용자와 통신합니다. 클래스 [CDialog](../mfc/reference/cdialog-class.md) 대화 상자, 시각적 개체를 관리 하기 위한 인터페이스를 제공 합니다. C++ 대화 상자 편집기를 사용 하면 대화 상자를 디자인 하 고 해당 대화 상자 템플릿 리소스를 만드는 간편한 및 코드 마법사의 프로세스를 간소화 합니다. 초기화 하 고 사용자가 입력 한 값을 수집 하 고 대화 상자에서 컨트롤의 유효성을 검사 합니다.
 
 대화 상자에 컨트롤을 포함 하 여 포함 합니다.
 

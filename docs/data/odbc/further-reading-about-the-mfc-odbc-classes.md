@@ -1,15 +1,15 @@
-﻿---
+---
 title: MFC ODBC 클래스에 대한 추가 정보
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ODBC classes
 ms.assetid: 155c092b-3577-4cb8-b00e-f1adf4cb2adc
-ms.openlocfilehash: 42f8a066728b1800ce245435584dd5e61f786440
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96286fc7a60a6ab43190dae6262948ac99ca30d6
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440341"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59035191"
 ---
 # <a name="further-reading-about-the-mfc-odbc-classes"></a>MFC ODBC 클래스에 대한 추가 정보
 
@@ -27,7 +27,7 @@ ms.locfileid: "50440341"
 
 - [MFC: 문서 및 뷰를 이용한 데이터베이스 클래스 사용](../../data/mfc-using-database-classes-with-documents-and-views.md)
 
-- [MFC: 문서 및 뷰를 이용하지 않는 데이터베이스 클래스 사용](../../data/mfc-using-database-classes-without-documents-and-views.md)
+- [MFC: 문서 및 뷰 하지 않는 데이터베이스 클래스 사용](../../data/mfc-using-database-classes-without-documents-and-views.md)
 
 - [ODBC](../../data/odbc/odbc-basics.md)
 
@@ -39,7 +39,7 @@ ms.locfileid: "50440341"
 
 - [레코드 뷰](../../data/record-views-mfc-data-access.md)
 
-- [Serialization: Serialization과 입/출력 데이터베이스](../../mfc/serialization-serialization-vs-database-input-output.md)
+- [Serialization: Serialization vs입니다. 입/출력 데이터베이스](../../mfc/serialization-serialization-vs-database-input-output.md)
 
 - [스냅숏](../../data/odbc/snapshot.md)
 
@@ -51,7 +51,7 @@ ms.locfileid: "50440341"
 
 *MFC 참조*에서 [CDatabase](../../mfc/reference/cdatabase-class.md), [CRecordset](../../mfc/reference/crecordset-class.md), [CRecordView](../../mfc/reference/crecordview-class.md), [CFieldExchange](../../mfc/reference/cfieldexchange-class.md), 및 [CDBException](../../mfc/reference/cdbexception-class.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC 및 MFC](../../data/odbc/odbc-and-mfc.md)<br/>
 [데이터 액세스 프로그래밍 (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - record views [C++]
 - forms [C++], data access tasks
 ms.assetid: 562122d9-01d8-4284-acf6-ea109ab0408d
-ms.openlocfilehash: 155a7e4de6272f13d12ab2a64cba190a184f62cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 199f51f20dd42ee9105b4e09f579c1f48948745f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588489"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59040201"
 ---
 # <a name="record-views--mfc-data-access"></a>레코드 뷰  (MFC Data Access)
 
@@ -35,7 +35,7 @@ ms.locfileid: "50588489"
 
 아래 항목의 자료는 ODBC 기반 및 DAO 기반 클래스 둘 다에 적용됩니다. ODBC의 경우 `CRecordView`를 사용하고 DAO의 경우에는 `CDaoRecordView`를 사용합니다.
 
-다음과 같은 내용을 다룹니다.
+다루는 주제는 다음과 같습니다.
 
 - [레코드 뷰 클래스의 기능](../data/features-of-record-view-classes-mfc-data-access.md)
 
@@ -47,7 +47,7 @@ ms.locfileid: "50588489"
 
 - [레코드 뷰 사용](../data/using-a-record-view-mfc-data-access.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [데이터 액세스 프로그래밍 (MFC/ATL)](../data/data-access-programming-mfc-atl.md)<br/>
 [ODBC 드라이버 목록](../data/odbc/odbc-driver-list.md)

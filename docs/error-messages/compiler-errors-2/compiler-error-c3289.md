@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3289
 ms.assetid: 3c1c623b-7fcf-43ab-a89a-8722532a8d29
 ms.openlocfilehash: d234ad4b7c48a66352e52d3517dfd675f27b002c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58781564"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59778646"
 ---
 # <a name="compiler-error-c3289"></a>컴파일러 오류 C3289
 

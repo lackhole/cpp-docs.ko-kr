@@ -22,12 +22,12 @@ helpviewer_keywords:
 - GetMoniker method
 - Open method
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
-ms.openlocfilehash: 2a54770e3c5c2bc3805024b237f9875bded1ab26
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 23467caf46d38175a74dab061f60e11009f1f481
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58772386"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030182"
 ---
 # <a name="cenumerator-class"></a>CEnumerator 클래스
 
@@ -135,7 +135,7 @@ HRESULT Open(const CEnumerator& enumerator) throw();
 
 표준 HRESULT입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DBViewer](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>

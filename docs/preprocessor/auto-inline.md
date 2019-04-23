@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, auto_inline
 - auto_inline pragma
 ms.assetid: f7624cd1-be76-429a-881c-65c9040acf43
-ms.openlocfilehash: a3e49941271ec294ddb69861d12e3451332770fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c59dcc8ec7749a91565d5af043b1bd9e9eaa16ea
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633348"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033166"
 ---
 # <a name="autoinline"></a>auto_inline
 **auto_inline** pragma가 **off**로 지정된 범위 내의 함수는 인라인 자동화가 이루어지지 않도록 인라인 확장의 후보에서 제외시킵니다.
@@ -28,6 +28,6 @@ ms.locfileid: "50633348"
 
 **auto_inline** pragma를 사용하려면 함수 정의 후에 사용합니다. 함수 정의 안쪽에는 사용하지 않습니다. pragma를 지정된 이후 코드부터 함수 정의에서 pragma가 적용됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

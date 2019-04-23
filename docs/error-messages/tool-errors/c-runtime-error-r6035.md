@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - R6035
 ms.assetid: f8fb50b8-18bf-4258-b96a-b0a9de468d16
-ms.openlocfilehash: bb215668fc13ecf84efdbf5f7ec6bb25c922181b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cbade3ce8686c8c293b8d40a73c546805e42215d
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668257"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034023"
 ---
 # <a name="c-runtime-error-r6035"></a>C 런타임 오류 R6035
 
-Microsoft Visual c + + 런타임 라이브러리 오류 R6035-이 응용 프로그램의 모듈은 해당 보안 쿠키에 의존 하는 함수 활성 상태인 동안 모듈의 전역 보안 쿠키를 초기화 합니다.  이전 __security_init_cookie를 호출 합니다.
+Microsoft Visual C++ 런타임 라이브러리, 오류 R6035-이 응용 프로그램의 모듈을 초기화 하 고 모듈의 전역 보안 쿠키 보안 쿠키에 의존 하는 함수를 활성화 합니다.  이전 __security_init_cookie를 호출 합니다.
 
 [__security_init_cookie](../../c-runtime-library/reference/security-init-cookie.md) 전역 보안 쿠키를 처음 사용 하기 전에 호출 해야 합니다.
 
@@ -66,8 +66,8 @@ void DllEntryHelper() {
 이 경우 DllEntryPoint 버퍼 오버런 으로부터 보호 되지 않습니다 (로컬 문자열 버퍼가 고 구조적된 예외 처리를 사용 하지 않습니다). 안전 하 게 호출할 수 있으므로 `__security_init_cookie`합니다. 다음 보호 되는 도우미 함수를 호출 합니다.
 
 > [!NOTE]
->  오류 메시지가 R6035만 x86에서 생성 된 디버그 CRT 하 고 구조적된 예외 처리 하지만 조건에 대해서만 모든 형식의 예외에 대 한 모든 플랫폼에는 오류 처리, c + + EH 같은 키를 누릅니다.
+>  오류 메시지가 R6035만 x86에서 생성 된 디버그 CRT 및 구조적된 예외 처리 하지만 조건에 대해서만 모든 형식의 예외에 대 한 모든 플랫폼에는 오류 처리와 같은 C++ EH 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MSVC의 보안 기능](https://blogs.msdn.microsoft.com/vcblog/2017/06/28/security-features-in-microsoft-visual-c/)

@@ -1,17 +1,17 @@
 ---
-title: call_as (c + + COM 특성)
+title: call_as (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.call_as
 helpviewer_keywords:
 - call_as attribute
 ms.assetid: a09d7f1f-353b-4870-9b45-f0284161695d
-ms.openlocfilehash: 16839f5a5040e6b0019005912782ba359178cc47
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a0051cdca6673800b37d5733c0b849da24010fcb
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579899"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023921"
 ---
 # <a name="callas"></a>call_as
 
@@ -30,7 +30,7 @@ ms.locfileid: "50579899"
 
 ## <a name="remarks"></a>설명
 
-합니다 **call_as** c + + 특성에 동일한 기능을 합니다 [call_as](/windows/desktop/Midl/call-as) MIDL 특성입니다.
+**call_as** C++ 특성에 동일한 기능을 합니다 [call_as](/windows/desktop/Midl/call-as) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -61,7 +61,7 @@ __interface IMInterface {
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>

@@ -1,17 +1,17 @@
 ---
-title: (c + + COM 특성)
+title: (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.in
 helpviewer_keywords:
 - in attribute
 ms.assetid: 7b450cc4-4d2e-4910-a195-7487c6b7c373
-ms.openlocfilehash: bf23b1c776eccc284e5329b62bd45b0bd678823f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 06d78552ef2ebb878ed630eb377e6249ba60cad4
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449701"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034539"
 ---
 # <a name="in-c"></a>in(C++)
 
@@ -25,7 +25,7 @@ ms.locfileid: "50449701"
 
 ## <a name="remarks"></a>설명
 
-**에서** c + + 특성에 동일한 기능을 합니다 [에서](/windows/desktop/Midl/in) MIDL 특성입니다.
+**에서** C++ 특성에 동일한 기능을 합니다 [에서](/windows/desktop/Midl/in) MIDL 특성.
 
 ## <a name="example"></a>예제
 
@@ -44,7 +44,7 @@ ms.locfileid: "50449701"
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [매개 변수 특성](parameter-attributes.md)<br/>

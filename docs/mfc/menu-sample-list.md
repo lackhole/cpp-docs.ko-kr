@@ -5,10 +5,10 @@ helpviewer_keywords:
 - sample applications [MFC], menus
 ms.assetid: 6d89c723-03d6-474e-8ca5-e98f93bd41cc
 ms.openlocfilehash: 1eab6947590375531df9027f853647ec6cb946f2
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781824"
 ---
 # <a name="menu-sample-list"></a>메뉴 샘플 목록

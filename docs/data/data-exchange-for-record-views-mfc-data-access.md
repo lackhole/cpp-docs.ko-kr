@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DDX (dialog data exchange), record views
 - RFX (record field exchange)
 ms.assetid: abc52ca7-6997-47a7-98f3-f347f52b1f72
-ms.openlocfilehash: bf9f32e970becd1ef8dc4e347512dcfaa7cf62ac
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: a7c6714218b5891e078e750a974faed274e113c9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175415"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023596"
 ---
 # <a name="data-exchange-for-record-views---mfc-data-access"></a>레코드 뷰의 데이터 교환   (MFC Data Access)
 
@@ -26,9 +26,9 @@ ms.locfileid: "52175415"
 ![대화&#45;데이터 교환 및 레코드&#45;exchange 필드](../data/media/vc37xt1.gif "대화&#45;데이터 교환 및 레코드&#45;exchange 필드")<br/>
 DDE(Dialog Data Exchange) 및 레코드 필드 교환
 
-DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. RFX에 대 한 자세한 내용은 참조 하세요. [Exchange RFX (레코드 필드)](../data/odbc/record-field-exchange-rfx.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../mfc/dialog-data-exchange-and-validation.md)를 참조하세요. [레코드 필드 교환(RFX)](../data/odbc/record-field-exchange-rfx.md)에 대한 자세한 내용은 RFX를 참조하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 뷰(MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC 드라이버 목록](../data/odbc/odbc-driver-list.md)

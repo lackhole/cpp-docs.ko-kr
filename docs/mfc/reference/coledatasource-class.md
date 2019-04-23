@@ -36,12 +36,12 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-ms.openlocfilehash: bc3d9f089dc6289331c79c6a1e18eccbc9ff4993
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 37de6fd74f1e9210dcd9b9a356719436814c0c7f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296977"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58776832"
 ---
 # <a name="coledatasource-class"></a>COleDataSource 클래스
 
@@ -488,8 +488,8 @@ void SetClipboard();
 
 ## <a name="see-also"></a>참고자료
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleDataObject 클래스](../../mfc/reference/coledataobject-class.md)

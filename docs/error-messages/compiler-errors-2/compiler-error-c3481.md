@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3481
 ms.assetid: 5d09375a-5ed3-4b61-86ed-45e91fd734c7
-ms.openlocfilehash: 32a04c2c49f8d9d974c3423756c4c9fc59a46495
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eff7c7a4f39524aa1d894b7b4590aa809714aae6
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661983"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041204"
 ---
 # <a name="compiler-error-c3481"></a>컴파일러 오류 C3481
 
@@ -36,6 +36,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

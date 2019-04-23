@@ -9,10 +9,10 @@ helpviewer_keywords:
 - _CopyInterface class
 ms.assetid: 06704b68-d318-4c5d-a65b-71457fe9d00d
 ms.openlocfilehash: 73bec31b4ae140797c85a06ee7c5023c9e0c4446
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776962"
 ---
 # <a name="atl-copy-policy-classes"></a>ATL 복사 정책 클래스
@@ -74,7 +74,7 @@ VCUE_Copy.h이이 클래스의 다음 특수화도 포함 되어 있습니다: `
 
 ### <a name="mapcopy"></a>MapCopy
 
-`MapCopy` 데이터가 저장 되 고 대상 형식 맵의 종류를 지정할 수 있도록 하므로 복사 되는 데이터 방식의 c + + 표준 라이브러리 map에 저장 되어 있다고 가정 합니다. 클래스의 구현만 제공한 typedef를 사용 합니다 *MapType* 클래스 원본 데이터의 형식을 결정 하는 데 적절 한 호출 `GenericCopy` 클래스입니다. 이 클래스의 없습니다 특수화가 필요 합니다.
+`MapCopy` 복사 되는 데이터에 저장 되어 있다고 가정는 C++ 표준 라이브러리 스타일 맵이 되므로 데이터가 저장 되 고 대상 형식 맵의 종류를 지정할 수 있습니다. 클래스의 구현만 제공한 typedef를 사용 합니다 *MapType* 클래스 원본 데이터의 형식을 결정 하는 데 적절 한 호출 `GenericCopy` 클래스입니다. 이 클래스의 없습니다 특수화가 필요 합니다.
 
 [!code-cpp[NVC_ATL_COM#31](../atl/codesnippet/cpp/atl-copy-policy-classes_2.h)]
 

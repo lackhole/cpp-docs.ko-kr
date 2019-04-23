@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3902
 ms.assetid: feb3bb29-f836-4d77-ba71-3876f7f4f216
-ms.openlocfilehash: 22536f380187c6dceac3e355224d9d118cd1a2df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d90bf299c566ce72e3d1cbfeb545def0a43d6cbf
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564530"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776992"
 ---
 # <a name="compiler-error-c3902"></a>컴파일러 오류 C3902
 
 'accessor': 마지막 매개 변수의 형식은 '형식' 이어야 합니다.
 
-하나 이상의 집합 메서드의 마지막 매개 변수 형식의 속성의 형식과 일치 해야 합니다. 자세한 내용은 [property](../../windows/property-cpp-component-extensions.md)을 참조하세요.
+하나 이상의 집합 메서드의 마지막 매개 변수 형식의 속성의 형식과 일치 해야 합니다. 자세한 내용은 [property](../../extensions/property-cpp-component-extensions.md)을 참조하세요.
 
 다음 샘플에서는 C3902 오류가 생성 됩니다.
 

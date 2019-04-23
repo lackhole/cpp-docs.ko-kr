@@ -1,17 +1,17 @@
 ---
-title: 선택 사항 (c + + COM 특성)
+title: 선택 사항 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.optional
 helpviewer_keywords:
 - optional attribute
 ms.assetid: 86656a66-8e11-4589-8e30-9b0f34eeed03
-ms.openlocfilehash: 440e605b1dfd0b24060965c5ea5dd55424701cf7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc6422ff652cfaba5fa71285294b93c1f0e8990e
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590114"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59032942"
 ---
 # <a name="optional-c"></a>optional(C++)
 
@@ -25,7 +25,7 @@ ms.locfileid: "50590114"
 
 ## <a name="remarks"></a>설명
 
-합니다 **선택적** c + + 특성에 동일한 기능을 합니다 [선택적](/windows/desktop/Midl/optional) MIDL 특성입니다.
+**선택적** C++ 특성에 동일한 기능을 합니다 [선택적](/windows/desktop/Midl/optional) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -57,7 +57,7 @@ __interface IFireTabCtrl : IDispatch
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [매개 변수 특성](parameter-attributes.md)

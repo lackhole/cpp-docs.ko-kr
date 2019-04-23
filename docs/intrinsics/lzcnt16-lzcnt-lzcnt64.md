@@ -14,12 +14,12 @@ helpviewer_keywords:
 - lzcnt64 intrinsic
 - __lzcnt64 intrinsic
 ms.assetid: 412113e7-052e-46e5-8bfa-d5ad72abc10e
-ms.openlocfilehash: 7b1e499eff8c8c7de59dc6f96cb1060ce845e27d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 333d9f2b23fb90388af8395945256956c9222ab9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523457"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041340"
 ---
 # <a name="lzcnt16-lzcnt-lzcnt64"></a>__lzcnt16, __lzcnt, __lzcnt64
 
@@ -56,7 +56,7 @@ unsigned __int64 __lzcnt64(
 |---------------|------------------|
 |`__lzcnt16`|AMD: 고급 비트 조작 (ABM)<br /><br /> Intel: Haswell|
 |`__lzcnt`|AMD: 고급 비트 조작 (ABM)<br /><br /> Intel: Haswell|
-|`__lzcnt64`|AMD: 64 비트 모드에서 비트 조작 (ABM) 고급입니다.<br /><br /> Intel: Haswell|
+|`__lzcnt64`|AMD: 고급 비트 조작 (ABM) 64 비트 모드에서.<br /><br /> Intel: Haswell|
 
 **헤더 파일** \<intrin.h >
 
@@ -109,6 +109,6 @@ __lzcnt(0xffffffff) = 0
 
 이 콘텐츠 부분은 고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

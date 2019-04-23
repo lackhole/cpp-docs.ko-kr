@@ -22,12 +22,12 @@ helpviewer_keywords:
 - GetPropertyInfo method
 - SetProperties method
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
-ms.openlocfilehash: 13c41b97190ff13b87361b6e8344b8f17798708a
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 807cdf55a5a2fa6e0cc063c22b1685d8156c41a5
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57413344"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031341"
 ---
 # <a name="idbpropertiesimpl-class"></a>IDBPropertiesImpl 클래스
 
@@ -142,7 +142,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 이 메서드는 DBPROPSET_DATASOURCE DBPROPSET_DATASOURCEINFO에 속성의 값을 설정 공급자가 초기화 하는 경우 데이터 원본 개체에 대 한 DBPROPSET_DBINIT 속성 그룹입니다. 공급자 초기화 되지 않은 경우에 DBPROPSET_DBINIT 그룹 속성만 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CDynamicStringAccessorW class
 ms.assetid: 9b7fd5cc-3a9b-4b57-b907-f1e35de2c98f
-ms.openlocfilehash: 7052a912363d1256294131da9b89df97f768ecf8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 20ea4a2d795108e00c4b11c3abea6cf7b9953ca7
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551361"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59025152"
 ---
 # <a name="cdynamicstringaccessorw-class"></a>CDynamicStringAccessorW 클래스
 
@@ -33,9 +33,9 @@ typedef CDynamicStringAccessorT<WCHAR, DBTYPE_WSTR> CDynamicStringAccessorW;
 
 **헤더**: atldbcli.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CAccessor 클래스](../../data/oledb/caccessor-class.md)<br/>
 [CDynamicParameterAccessor 클래스](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>

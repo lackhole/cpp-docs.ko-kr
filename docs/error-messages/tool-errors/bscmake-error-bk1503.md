@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - BK1503
 ms.assetid: e6582344-b91e-486f-baf3-4f9028d83c3b
-ms.openlocfilehash: 2c8ca005922c3c94b557e2f1052e8811099d9948
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c81e955b912e03b322c0429097410fae74713b9d
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555798"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031594"
 ---
 # <a name="bscmake-error-bk1503"></a>BSCMAKE 오류 BK1503
 
@@ -23,6 +23,6 @@ BSCMAKE는 하나의 브라우저 데이터베이스로 컴파일하는 동안 �
 
 .Bsc 파일이 64MB 보다 큰 문제는 발생 하는 경우 입력으로.sbr 파일의 수를 줄이면 줄어듭니다 결과.bsc 파일의 크기입니다. 또한 찾아보기 정보의 양은 (매크로 확장 기호 제외) / e m, /El (로컬 변수 제외) 및 /Es (시스템 파일 제외) 줄일 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [BSCMAKE 옵션](../../build/reference/bscmake-options.md)

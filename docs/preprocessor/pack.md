@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: 9b959c161a933cc76590cfbd65d295aad36f07d7
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: bf1ae81184d53dd271f63c26e8f9a52a6410b232
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627516"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038449"
 ---
 # <a name="pack"></a>pack
 구조체, 공용 구조체 및 클래스 멤버에 대한 압축 맞춤을 지정합니다.
@@ -26,7 +26,7 @@ ms.locfileid: "53627516"
 
 ### <a name="parameters"></a>매개 변수
 
-**Show**<br/>
+**show**<br/>
 (선택 사항) 압축 맞춤에 대 한 현재 바이트 값을 표시 합니다. 경고 메시지에 값이 표시됩니다.
 
 **push**<br/>
@@ -60,7 +60,7 @@ ms.locfileid: "53627516"
 - [구조체 맞춤 예제](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 전용)
 
    > [!WARNING]
-   > Visual Studio 2015 이상에서는 `__alignof` 및 `declspec( align )`와 달리 컴파일러 간에 이식 가능한 표준 alignas 및 alignof 연산자를 사용할 수 있습니다. C + + 표준에서는 압축을 처리 하지을 반드시 사용 해야 하므로 **팩** (또는 다른 컴파일러에서 해당 확장 프로그램)는 대상 아키텍처의 단어 크기 보다 작은 맞춤을 지정 합니다.
+   > Visual Studio 2015 이상에서는 `__alignof` 및 `declspec( align )`와 달리 컴파일러 간에 이식 가능한 표준 alignas 및 alignof 연산자를 사용할 수 있습니다. C++ 표준 다루지 압축을 사용 해야 하므로 **팩** (또는 다른 컴파일러에서 해당 확장 프로그램)는 대상 아키텍처의 단어 크기 보다 작은 맞춤을 지정 하려면.
 
 ## <a name="examples"></a>예제
 
@@ -115,6 +115,6 @@ int main() {
 #pragma pack(show)   // C4810
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

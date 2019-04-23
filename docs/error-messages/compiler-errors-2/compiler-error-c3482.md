@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3482
 ms.assetid: bf99558e-bef4-421c-bb16-dcd9c54c1011
-ms.openlocfilehash: ec0018fc1aafc7e3e0423608f4db9f78946e4597
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ff269d719dd354932ef79946ae99a9b60490199
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432641"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039426"
 ---
 # <a name="compiler-error-c3482"></a>컴파일러 오류 C3482
 
@@ -43,6 +43,6 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

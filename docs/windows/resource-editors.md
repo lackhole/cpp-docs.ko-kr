@@ -1,5 +1,5 @@
 ---
-title: 리소스 편집기 (c + +)
+title: 리소스 편집기 (C++)
 ms.date: 02/14/2019
 f1_keywords:
 - vs.editors.resource
@@ -21,14 +21,14 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: a0b5e3905daf72307702dbe4f05c2871cf768ac0
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 774575e978a8e7f94868eb1b5dad90c6ac345460
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328807"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038663"
 ---
-# <a name="resource-editors-c"></a>리소스 편집기 (c + +)
+# <a name="resource-editors-c"></a>리소스 편집기 (C++)
 
 리소스 편집기는 Visual Studio 프로젝트에 포함 된 리소스를 만들거나 수정에 대 한 특수 한 환경입니다. Visual Studio 리소스 편집기는 애플리케이션 리소스를 쉽고 빠르게 만들고 수정할 수 있도록 기술 및 인터페이스를 공유합니다. 리소스 편집기를 사용 하면 적절 한 편집기 및 미리 보기 리소스의 리소스 보기 및 편집 합니다.
 
@@ -126,7 +126,7 @@ Win32 리소스에 액세스할 수 있습니다 합니다 [리소스 뷰](how-t
 
 없음
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>

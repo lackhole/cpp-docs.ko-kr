@@ -6,12 +6,12 @@ helpviewer_keywords:
 - data access [C++], OLE DB programming
 - OLE DB [C++], about OLE DB
 ms.assetid: 52a80d66-17a9-43a1-9b90-392ae43cea2b
-ms.openlocfilehash: fccf9ee553160d687a6094ccc9b95f4c55f7094f
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: ac74f94b4cdc738237c2994646f7602f7f5118ca
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328547"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031649"
 ---
 # <a name="ole-db-programming"></a>OLE DB 프로그래밍
 
@@ -27,13 +27,13 @@ OLE DB 템플릿은 일반적으로 사용되는 많은 OLE DB 인터페이스�
 |-------------------------|---------|
 |OLE DB 소비자 템플릿 사용(개념 항목)|[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)|
 |OLE DB 공급자 템플릿 사용(개념 항목)|[OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)|
-|OLE DB 템플릿 클래스 및 매크로|[OLE DB 템플릿 참조](../../data/oledb/ole-db-templates.md) (Visual c + +)|
+|OLE DB 템플릿 클래스 및 매크로|[OLE DB 템플릿 참조](../../data/oledb/ole-db-templates.md) (Visual C++)|
 |OLE DB 소비자 특성|[OLE DB 소비자 특성](../../windows/ole-db-consumer-attributes.md)|
 |OLE DB 인터페이스|[OLE DB 프로그래머 참조](/sql/connect/oledb/oledb-driver-for-sql-server) (에 Windows SDK)|
 |OLE DB 템플릿 샘플|[OLE DB 템플릿 샘플](https://github.com/Microsoft/VCSamples)|
 |데이터 액세스 프로그래밍 개요(Visual C++)|[데이터 액세스 프로그래밍](../../data/data-access-programming-mfc-atl.md)|
 |ODBC 개념 항목|[ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [데이터 액세스](../data-access-in-cpp.md)

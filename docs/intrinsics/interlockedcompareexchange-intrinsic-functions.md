@@ -48,12 +48,12 @@ helpviewer_keywords:
 - InterlockedCompareExchange64_rel intrinsic
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
-ms.openlocfilehash: 840a7e63bb9b98cfb46ea36e30b3439168688c87
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 6c0fabe7cbada87253960faca8e207bb10dd07bd
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328314"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59021471"
 ---
 # <a name="interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange 내장 함수
 
@@ -202,21 +202,17 @@ __int64 _InterlockedCompareExchange64_rel(
 
 ## <a name="remarks"></a>설명
 
-`_InterlockedCompareExchange`는 `Destination` 값과 `Comparand` 값의 원자성 비교를 수행합니다. 
-  `Destination` 값이 `Comparand` 값과 같으면 `Exchange`으로 지정된 주소에 `Destination` 값이 저장됩니다. 그렇지 않으면 작업이 수행되지 않습니다.
+`_InterlockedCompareExchange`는 `Destination` 값과 `Comparand` 값의 원자성 비교를 수행합니다. `Destination` 값이 `Comparand` 값과 같으면 `Exchange`으로 지정된 주소에 `Destination` 값이 저장됩니다. 그렇지 않으면 작업이 수행되지 않습니다.
 
 `_InterlockedCompareExchange` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedCompareExchange](/windows/desktop/api/winnt/nf-winnt-interlockedcompareexchange) 함수입니다.
 
 사용되는 데이터 형식과 프로세서별 획득 또는 해제 의미 체계에 따라 다른 `_InterlockedCompareExchange`의 여러 변형이 있습니다.
 
+`_InterlockedCompareExchange` 함수는 long 정수 값에 대해 작동하는 반면 `_InterlockedCompareExchange8`은 8비트 정수 값에 대해, `_InterlockedCompareExchange16`은 short 정수 값에 대해 그리고 `_InterlockedCompareExchange64`는 64비트 정수 값에 대해 작동합니다.
 
-  `_InterlockedCompareExchange` 함수는 long 정수 값에 대해 작동하는 반면 `_InterlockedCompareExchange8`은 8비트 정수 값에 대해, `_InterlockedCompareExchange16`은 short 정수 값에 대해 그리고 `_InterlockedCompareExchange64`는 64비트 정수 값에 대해 작동합니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 ARM 내장 함수는 메모리 장벽으로 작동하지 않습니다.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. 
-  `_nf`("no fence"의 약어) 접미사가 포함된 ARM 내장 함수는 메모리 장벽으로 작동하지 않습니다.
-
-
-  `_np`("no prefetch"의 약어) 접미사가 포함된 내장 함수는 컴파일러가 가능한 프리페치 연산을 삽입하지 못하도록 차단합니다.
+`_np`("no prefetch"의 약어) 접미사가 포함된 내장 함수는 컴파일러가 가능한 프리페치 연산을 삽입하지 못하도록 차단합니다.
 
 HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcquire` 및 `_HLERelease` 접미사가 포함된 내장 함수는 하드웨어에서 잠금 쓰기 단계를 제거하여 성능을 향상시킬 수 있는 힌트를 프로세서에 포함합니다. HLE를 지원하지 않는 플랫폼에서 이러한 내장 함수를 호출하면 힌트는 무시됩니다.
 
@@ -437,7 +433,7 @@ int main(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)<br/>
 [_InterlockedCompareExchangePointer 내장 함수](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)<br/>

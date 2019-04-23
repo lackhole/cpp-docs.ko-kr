@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C3831
 ms.assetid: a125d8dc-b75a-4ea0-b6c7-fe7b119dba25
 ms.openlocfilehash: d9aa703f12fd175d9f7fc00eb76e76097a32e860
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58781668"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777083"
 ---
 # <a name="compiler-error-c3831"></a>컴파일러 오류 C3831
 
 'member': 'class' 고정 된 데이터 멤버 또는 고정 포인터를 반환 하는 멤버 함수를 사용할 수 없습니다
 
-[pin_ptr (C + + /cli CLI)](../../extensions/pin-ptr-cpp-cli.md) 잘못 사용 했습니다.
+[pin_ptr (C++/CLI)](../../extensions/pin-ptr-cpp-cli.md) 잘못 사용 했습니다.
 
 ## <a name="example"></a>예제
 

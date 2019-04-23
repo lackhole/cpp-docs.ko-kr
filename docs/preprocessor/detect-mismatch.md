@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, detect_mismatch
 - detect_mismatch pragma
 ms.assetid: ddb13ac9-0e2f-40ce-be69-7e44c04f5a12
-ms.openlocfilehash: fb6f147f1591f010298e84cb28f05b40dafaeb63
-ms.sourcegitcommit: 22f7c4a9b4fc2158fb5283810f15275803cafe10
+ms.openlocfilehash: 42a3ba61cefe3b2db01aef24b802e3a51fed55d9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417631"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026722"
 ---
 # <a name="detectmismatch"></a>detect_mismatch
 레코드를 개체에 배치합니다. 링커는 이러한 레코드를 검사하여 잠재적인 불일치를 확인합니다.
@@ -48,6 +48,6 @@ int main ()
 
 `cl pragma_directive_detect_mismatch_a.cpp pragma_directive_detect_mismatch_b.cpp` 명령줄을 사용하여 이러한 파일을 둘 다 컴파일하는 경우 `LNK2038` 오류가 발생합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

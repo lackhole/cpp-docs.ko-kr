@@ -32,12 +32,12 @@ helpviewer_keywords:
 - Hash method
 - m_rgbookmarks
 ms.assetid: a8aa3149-7ce8-4976-a680-2da193fd3234
-ms.openlocfilehash: c5954aefaff2cdacb1aa1712f8b4bda93c9e434e
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: e3513084697a60a33b9fa2ab02222a9b332cce79
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420377"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039821"
 ---
 # <a name="irowsetlocateimpl-class"></a>IRowsetLocateImpl 클래스
 
@@ -113,7 +113,7 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
 
 행 집합의 OLE DB 책갈피를 지원 하려면이 클래스에서 상속 하는 행 집합을 확인 합니다.
 
-책갈피 지원 구현에 대 한 정보를 참조 하세요. [책갈피에 대 한 공급자 지원](../../data/oledb/provider-support-for-bookmarks.md) 에 *Visual c + + 프로그래머 가이드* 및 [책갈피](/previous-versions/windows/desktop/ms709728(v=vs.85)) 합니다 에서*OLE DB Programmer's Reference* 플랫폼 SDK에에서 있습니다.
+책갈피 지원 구현에 대 한 정보를 참조 하세요. [책갈피에 대 한 공급자 지원](../../data/oledb/provider-support-for-bookmarks.md) 에 *Visual C++ Programmer's Guide* 및 [책갈피](/previous-versions/windows/desktop/ms709728(v=vs.85)) 합니다 에서 *OLE DB Programmer's Reference* 플랫폼 SDK에에서 있습니다.
 
 ## <a name="compare"></a> IRowsetLocateImpl::Compare
 
@@ -233,7 +233,7 @@ STDMETHOD (Hash )(HCHAPTER /* hReserved */,
 CAtlArray<DBROWCOUNT> m_rgBookmarks;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

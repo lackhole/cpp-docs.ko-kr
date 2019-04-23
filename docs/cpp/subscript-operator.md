@@ -10,10 +10,10 @@ helpviewer_keywords:
 - subscript operator [C++], syntax
 ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
 ms.openlocfilehash: 2d55c18d2c9faa1a704bea129f2551937e76133c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767927"
 ---
 # <a name="subscript-operator-"></a>첨자 연산자]
@@ -48,7 +48,7 @@ cout << 2[nArray] << endl;            // prints "2"
 double aDbl[2];
 ```
 
-주소 `aDb[0]` 하 고 `aDb[1]` 8 바이트 떨어져-형식의 개체 크기인 **double**합니다. C + + 언어에서 자동으로 수행 되 고에 정의 된 개체 형식에 따른이 크기 조정 [가감 연산자](../cpp/additive-operators-plus-and.md) 포인터 형식의 피연산자의 덧셈과 뺄셈 설명 되어 있습니다.
+주소 `aDb[0]` 하 고 `aDb[1]` 8 바이트 떨어져-형식의 개체 크기인 **double**합니다. 개체 형식에 따른이 크기 조정을 자동으로 수행 됩니다는 C++ 언어에 정의 된 [가감 연산자](../cpp/additive-operators-plus-and.md) 포인터 형식의 피연산자의 덧셈과 뺄셈 설명 되어 있습니다.
 
 첨자 식에는 다음과 같이 여러 첨자가 있을 수도 있습니다.
 
@@ -77,7 +77,7 @@ int main() {
 
 ## <a name="positive-and-negative-subscripts"></a>양수 및 음수 아래 첨자
 
-배열의 첫 번째 요소는 요소 0입니다. c + + 배열의 범위는 *배열*[0] 하 *배열*[*크기* -1]입니다. 하지만 C++는 양수 및 음수 첨자를 지원합니다. 음수 첨자는 배열 경계 내에 속해야 하며, 그렇지 않으면 결과를 예측할 수 없습니다. 다음 코드에서는 양수 및 음수 배열 첨자를 보여줍니다.
+배열의 첫 번째 요소는 요소 0입니다. 범위는 C++ 에서 배열이 *배열*[0] 하 *배열*[*크기* -1]입니다. 하지만 C++는 양수 및 음수 첨자를 지원합니다. 음수 첨자는 배열 경계 내에 속해야 하며, 그렇지 않으면 결과를 예측할 수 없습니다. 다음 코드에서는 양수 및 음수 배열 첨자를 보여줍니다.
 
 ```cpp
 #include <iostream>

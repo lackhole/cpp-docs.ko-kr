@@ -8,12 +8,12 @@ helpviewer_keywords:
 - OLE DB consumers [C++], database attributes
 - accessors [C++], rowsets
 ms.assetid: b45acf16-4029-429d-ab8d-b7fba98b9740
-ms.openlocfilehash: 2c873451e9d2a47007330a5f05af05122a166ffb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88a027a24f8ab817f793f101f9f128e1fc0c61c3
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527271"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023947"
 ---
 # <a name="traversing-a-simple-rowset"></a>단순 행 집합 검색
 
@@ -54,7 +54,7 @@ int main()
 }
 ```
 
-사용자 레코드 `CArtists`, 다음과 같은이 예제:
+사용자 레코드 `CArtists`는 다음과 같습니다.
 
 ```cpp
 class CArtists
@@ -74,6 +74,6 @@ END_COLUMN_MAP()
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)

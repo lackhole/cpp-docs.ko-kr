@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CMyProviderRowset class in MyProviderRS.H
 - CCustomRowset class in CustomRS.H
 ms.assetid: 7ba1a124-3842-40eb-a36b-302190a1af3a
-ms.openlocfilehash: 2e54b1f3434434dc8c6028bc04a8b1dba17d8305
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f9dcb97ecd6b5f37f1af2187abf8b5612eedce3
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434968"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026151"
 ---
 # <a name="ccustomrowset-customrsh"></a>CCustomRowset (CustomRS.H)
 
@@ -38,6 +38,6 @@ class CMyRowsetImpl:
 
 합니다 *RowsetInterface* 매개 변수를 사용할 수도 있습니다는 `IRowsetLocate` 또는 `IRowsetScroll` 인터페이스입니다. 합니다 `IRowsetLocate` 하 고 `IRowsetScroll` 인터페이스에서 상속 하는 둘 다 `IRowset`합니다. 따라서 OLE DB 공급자 템플릿 이러한 인터페이스에 대 한 특수 처리를 제공 해야 합니다. 이러한 인터페이스 중 하나를 사용 하려는 경우이 매개 변수를 사용 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [공급자 마법사가 생성하는 파일](../../data/oledb/provider-wizard-generated-files.md)<br/>

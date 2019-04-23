@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3484
 ms.assetid: 2fe847fa-f6ee-4978-bc1d-b6dc6ae906ac
-ms.openlocfilehash: fd8909b664f739afa1ab1208be0984b8f410154d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4405eb81911b1081d19d25ba779d24bee8f6d37
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468642"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039980"
 ---
 # <a name="compiler-error-c3484"></a>컴파일러 오류 C3484
 
 반환 형식 앞에 '->'가 필요합니다.
 
-람다 식의 반환 형식 앞에 `->`를 제공해야 합니다.
+람다 식의 반환 형식 앞에 `->` 를 제공해야 합니다.
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
@@ -49,6 +49,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

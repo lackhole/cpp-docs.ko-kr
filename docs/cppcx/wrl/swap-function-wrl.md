@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - internal/Microsoft::WRL::Details::Swap
 ms.assetid: ed134a08-ceb7-4279-aa02-a183c3a426ea
-ms.openlocfilehash: cdac008bb352bfdb7689ed7a90a5f5c522e75c88
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 97d24f1f4453e948c621651e029254db1b0de712
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58784975"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59027564"
 ---
 # <a name="swap-function-wrl"></a>Swap 함수 (WRL)
 
@@ -45,6 +45,6 @@ WRL_NOTHROW inline void Swap(
 
 **네임스페이스:** Microsoft::WRL::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)

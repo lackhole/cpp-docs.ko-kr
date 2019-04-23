@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3539
 ms.assetid: 34a33a0f-d1b6-498f-b312-ffad2d4799b3
-ms.openlocfilehash: 7cba9e0271d16420c5cfe4adbed2c7121d139d8f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: be1051859ebbcbdc22a9b71f8c5adba2e75c4e92
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523923"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59025182"
 ---
 # <a name="compiler-error-c3539"></a>컴파일러 오류 C3539
 
@@ -38,6 +38,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [auto 키워드](../../cpp/auto-keyword.md)

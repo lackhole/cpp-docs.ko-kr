@@ -6,12 +6,12 @@ helpviewer_keywords:
 - attributes [COM]
 - COM, attributes
 ms.assetid: 52a5dd70-e8be-4bba-afd6-daf90fe689a0
-ms.openlocfilehash: fa7e279f6b7c9c0932d404c336bcfd89bfd553a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eb87d3861c6b3066cf482108e2ce2243c8196093
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644095"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038931"
 ---
 # <a name="com-attributes"></a>COM 특성
 
@@ -33,6 +33,6 @@ COM 특성(attribute)은 COM 개발 및 .NET Framework 공용 언어 런타임 �
 |[threading](threading-cpp.md)|COM 개체에 대 한 스레딩 모델을 지정합니다.|
 |[vi_progid](vi-progid.md)|컨트롤에 대 한 버전 독립 ProgID를 정의합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [그룹별 특성](attributes-by-group.md)

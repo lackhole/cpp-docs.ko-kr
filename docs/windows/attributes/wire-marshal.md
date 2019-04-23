@@ -1,17 +1,17 @@
 ---
-title: wire_marshal (c + + COM 특성)
+title: wire_marshal (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.wire_marshal
 helpviewer_keywords:
 - wire_marshal attribute
 ms.assetid: 244f9d72-776d-4ebd-b60a-cee600a126b5
-ms.openlocfilehash: 47aa604f697c436ffb99b85f85368c343ac43634
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d1d18336a20644338a50ab66c7fcb06959e5760a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529963"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029864"
 ---
 # <a name="wiremarshal"></a>wire_marshal
 
@@ -25,7 +25,7 @@ ms.locfileid: "50529963"
 
 ## <a name="remarks"></a>설명
 
-합니다 **wire_marshal** c + + 특성에 동일한 기능을 합니다 [wire_marshal](/windows/desktop/Midl/wire-marshal) MIDL 특성입니다.
+**wire_marshal** C++ 특성에 동일한 기능을 합니다 [wire_marshal](/windows/desktop/Midl/wire-marshal) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -60,7 +60,7 @@ ms.locfileid: "50529963"
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)

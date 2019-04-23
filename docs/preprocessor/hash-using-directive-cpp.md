@@ -1,5 +1,5 @@
 ---
-title: '#using 지시문 (C + + /cli CLI)'
+title: '#using 지시문 (C++/CLI)'
 ms.date: 10/18/2018
 f1_keywords:
 - friend_as_cpp
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - LIBPATH environment variable
 - preprocessor, directives
 ms.assetid: 870b15e5-f361-40a8-ba1c-c57d75c8809a
-ms.openlocfilehash: d69b06d29c366d0ff9c525421311001cab4e501c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ddae6137e94e10f5701e1e7d0f8f7a7514b18662
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501103"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034263"
 ---
-# <a name="using-directive-ccli"></a>#using 지시문 (C + + /cli CLI)
+# <a name="using-directive-ccli"></a>#using 지시문 (C++/CLI)
 
 로 컴파일된 프로그램으로 메타 데이터를 가져옵니다 [/clr](../build/reference/clr-common-language-runtime-compilation.md)합니다.
 
@@ -111,6 +111,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)

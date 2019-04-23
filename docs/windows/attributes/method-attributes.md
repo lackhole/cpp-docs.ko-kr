@@ -1,16 +1,16 @@
 ---
-title: 메서드 특성 (c + + COM)
+title: 메서드 특성 (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - method attributes
 - attributes [C++/CLI], reference topics
 ms.assetid: b2313352-480d-488b-8c35-6242ffd3a549
-ms.openlocfilehash: 96a3eab3e6d2761019a9f0855ff7cbb978445f68
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aa67d45dfc0fadd300caeaaeb8a7c25bb1c38bcb
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667924"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023570"
 ---
 # <a name="method-attributes"></a>메서드 특성
 
@@ -45,13 +45,13 @@ ms.locfileid: "50667924"
 |[propputref](propputref.md)|값 대신 참조를 사용 하는 속성 설정 함수를 지정 합니다.|
 |[ptr](ptr.md)|전체 포인터에 대 한 포인터를 지정합니다.|
 |[range](range-cpp.md)|인수 값은 런타임에 설정 된 필드에 허용 되는 값의 범위를 지정 합니다.|
-|[requestedit](requestedit.md)|속성을 지원함을 나타냅니다는 `OnRequestEdit` 알림.|
+|[requestedit](requestedit.md)|속성이 `OnRequestEdit` 알림을 지원함을 나타냅니다.|
 |[restricted](restricted.md)|모듈, 인터페이스 또는 dispinterface의 멤버를 임의로 호출할 수 없습니다 지정 합니다.|
 |[satype](satype.md)|데이터 형식을 지정 합니다 `SAFEARRAY` 구조입니다.|
 |[source](source-cpp.md)|클래스에 연결 지점에 대 한 컨트롤의 소스 인터페이스를 지정합니다. 메서드나 속성에는 `source` 특성 멤버에서 개체 또는 이벤트의 소스인는 VARIANT를 반환 함을 나타냅니다.|
 |[synchronize](synchronize.md)|대상 메서드에 대 한 액세스를 동기화합니다.|
 |[vararg](vararg.md)|함수 인수의 변수 번호를 지정 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [용도별 특성](attributes-by-usage.md)

@@ -1,17 +1,17 @@
 ---
-title: id (c + + COM 특성)
+title: id (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.id
 helpviewer_keywords:
 - id attribute
 ms.assetid: a48d2c99-c5d2-4f46-bf96-5ac88dcb5d0c
-ms.openlocfilehash: b7bcbd9229529ec00a3b778cafd5678d47af950c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5faf08418771deda3086a434cff6b1900a37e36e
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630038"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034698"
 ---
 # <a name="id"></a>ID
 
@@ -30,7 +30,7 @@ ms.locfileid: "50630038"
 
 ## <a name="remarks"></a>설명
 
-합니다 **id** c + + 특성에 동일한 기능을 합니다 [id](/windows/desktop/Midl/id) MIDL 특성입니다.
+**id** C++ 특성에 동일한 기능을 합니다 [id](/windows/desktop/Midl/id) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -49,7 +49,7 @@ ms.locfileid: "50630038"
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>

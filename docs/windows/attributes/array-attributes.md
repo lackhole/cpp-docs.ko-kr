@@ -1,15 +1,15 @@
 ---
-title: 배열 특성 (c + + COM)
+title: 배열 특성 (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - arrays [C++], attributes
 ms.assetid: 36f80b76-7f20-41ae-a6bf-460e5379f26b
-ms.openlocfilehash: 9b980ce1f971fb8a00b60ee0b342e5e8bb6e9367
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a6bcaf4c0ae6b199d6c0bb12e7efb5b976295e0
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468408"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026398"
 ---
 # <a name="array-attributes"></a>배열 특성
 
@@ -21,6 +21,6 @@ ms.locfileid: "50468408"
 |[satype](satype.md)|데이터 형식을 지정 합니다 `SAFEARRAY` 구조입니다.|
 |[string](string-cpp.md)|나타내는 1 차원 **char**를 **wchar_t**, `byte` (또는 이와 동등한) 배열 또는 이러한 배열에 대 한 포인터를 문자열로 간주 해야 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [용도별 특성](attributes-by-usage.md)

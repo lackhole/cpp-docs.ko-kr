@@ -9,12 +9,12 @@ helpviewer_keywords:
 - databases [C++], connecting to
 - ODBC connections [C++], databases
 ms.assetid: f41a67c7-168d-4657-9999-257535e44c87
-ms.openlocfilehash: 780a6a1feff33e23b4373fbd9f341a5fda240119
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3dc6706f945a5a7b0aa21c9ced8017d0a9905fb1
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628425"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031289"
 ---
 # <a name="work-with-odbc-database-connections"></a>ODBC 데이터베이스 연결을 사용한 작업
 
@@ -26,6 +26,6 @@ ms.locfileid: "50628425"
 
 - [프로그래밍 방식으로 ODBC 데이터 원본 구성](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

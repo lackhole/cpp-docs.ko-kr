@@ -1,17 +1,17 @@
 ---
-title: 가져오기 (c + + COM 특성)
+title: 가져오기 (C++ COM 특성)
 ms.date: 10/03/2018
 f1_keywords:
 - vc-attr.import
 helpviewer_keywords:
 - import attribute
 ms.assetid: ebf07cae-39fb-4047-8b57-54af0a9a83de
-ms.openlocfilehash: f9be9b86b6c6a6ceabbd354da1d7c1ceedc35227
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d458ce9d938da5f3650eb2478385165de6a140ec
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462205"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59035785"
 ---
 # <a name="import"></a>import
 
@@ -32,7 +32,7 @@ ms.locfileid: "50462205"
 
 ## <a name="remarks"></a>설명
 
-**가져오기** c + + 특성을 사용 하면는 `#import` 문 아래에 배치 하는 `import "docobj.idl"` 생성 된.idl 파일의 문. **가져오기** 특성에 동일한 기능을 합니다 [가져오기](/windows/desktop/Midl/import) MIDL 특성입니다.
+**가져오기** C++ 원인 특성는 `#import` 문 아래에 배치 하는 `import "docobj.idl"` 생성 된.idl 파일의 문. **가져오기** 특성에 동일한 기능을 합니다 [가져오기](/windows/desktop/Midl/import) MIDL 특성입니다.
 
 **가져올** 만 특성; 프로젝트에서 생성 되는.idl 파일에 지정된 된 파일을 배치 합니다 **가져오기** 특성 수 없다는 소스 코드에서 지정된 된 파일의 생성 호출 프로젝트입니다.  프로젝트의 소스 코드에서 지정된 된 파일의 구문을 호출을 사용 하거나 [#import](../../preprocessor/hash-import-directive-cpp.md) 및 `embedded_idl` 특성 이거나.h 파일을 포함할 수 있습니다 합니다 *idl_file*.h 파일이 있는 경우, 합니다.
 
@@ -73,7 +73,7 @@ library MyLib {
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [독립 실행형 특성](stand-alone-attributes.md)<br/>

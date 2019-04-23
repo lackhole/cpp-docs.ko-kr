@@ -5,18 +5,18 @@ helpviewer_keywords:
 - record views, customizing default code
 - MFC, record views
 ms.assetid: 691e89a5-ff21-4ca3-9278-69d4678288bb
-ms.openlocfilehash: 1f1361baafa5bb3dc884adcc464a3571aee04dd3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5c35208f654cff90e3cdf87e697e654bdfbe307
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478639"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033007"
 ---
 # <a name="your-role-in-working-with-a-record-view--mfc-data-access"></a>레코드 뷰를 사용하여 작업할 때의 사용자 작업  (MFC Data Access)
 
 다음 테이블에는 레코드 뷰를 사용하기 위해 일반적으로 수행해야 하는 작업과 프레임워크에서 자동으로 수행하는 작업이 나와 있습니다.
 
-### <a name="working-with-a-record-view-you-and-the-framework"></a>레코드 뷰 사용: 개발자의 작업과 프레임워크에서 수행하는 작업
+### <a name="working-with-a-record-view-you-and-the-framework"></a>레코드 뷰를 사용 합니다. 및 프레임 워크
 
 |사용자|프레임워크|
 |---------|-------------------|
@@ -29,9 +29,9 @@ ms.locfileid: "50478639"
 |[선택 사항] 특수 유효성 검사용 코드를 작성합니다.||
 |[선택 사항] 레코드를 추가하거나 삭제하는 코드를 작성합니다.||
 
-데이터베이스를 사용할 때는 폼 기반 프로그래밍 방식만 사용할 수 있습니다. 다른 사용자 인터페이스를 하거나 사용자 인터페이스를 사용 하 여 응용 프로그램에 대 한 정보를 참조 하세요 [MFC: 문서 및 뷰를 이용한 데이터베이스 클래스를 사용 하 여](../data/mfc-using-database-classes-with-documents-and-views.md) 고 [MFC: 문서 데이터베이스 클래스를 사용 하 여 뷰와](../data/mfc-using-database-classes-without-documents-and-views.md). 데이터베이스 레코드를 표시 하려면 다른 방법에 대 한 클래스를 참조 하십시오 [CListView](../mfc/reference/clistview-class.md) 하 고 [CTreeView](../mfc/reference/ctreeview-class.md)합니다.
+데이터베이스를 사용할 때는 폼 기반 프로그래밍 방식만 사용할 수 있습니다. 다른 사용자 인터페이스를 하거나 사용자 인터페이스를 사용 하 여 응용 프로그램에 대 한 정보를 참조 하세요. [MFC: 데이터베이스 클래스를 사용 하 여 문서 및 뷰를 이용한](../data/mfc-using-database-classes-with-documents-and-views.md) 고 [MFC: 문서 및 뷰 하지 않는 데이터베이스 클래스를 사용 하 여](../data/mfc-using-database-classes-without-documents-and-views.md)입니다. 데이터베이스 레코드를 표시 하려면 다른 방법에 대 한 클래스를 참조 하십시오 [CListView](../mfc/reference/clistview-class.md) 하 고 [CTreeView](../mfc/reference/ctreeview-class.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 뷰(MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC 드라이버 목록](../data/odbc/odbc-driver-list.md)

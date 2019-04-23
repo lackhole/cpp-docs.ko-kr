@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3353
 ms.assetid: 5699c04b-d504-46ce-bf71-c200318fed71
 ms.openlocfilehash: c38642d7abd4f2fd50792c548c9a5521b2da10ad
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58776143"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777590"
 ---
 # <a name="compiler-error-c3353"></a>컴파일러 오류 C3353
 

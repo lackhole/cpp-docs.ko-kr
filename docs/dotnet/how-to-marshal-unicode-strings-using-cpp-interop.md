@@ -1,5 +1,5 @@
 ---
-title: '방법: C + + Interop를 사용 하 여 유니코드 문자열 마샬링'
+title: '방법: 사용 하 여 유니코드 문자열 마샬링 C++ Interop'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Unicode, marshaling strings
 ms.assetid: 96c2141d-6c5d-43ef-a1aa-5785afb9a9aa
 ms.openlocfilehash: 37b56834e000cff686557730252f3d425f642772
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58777677"
 ---
-# <a name="how-to-marshal-unicode-strings-using-c-interop"></a>방법: C + + Interop를 사용 하 여 유니코드 문자열 마샬링
+# <a name="how-to-marshal-unicode-strings-using-c-interop"></a>방법: 사용 하 여 유니코드 문자열 마샬링 C++ Interop
 
-이 항목에서는 Visual c + + 상호 운용성의 한 측면을 보여 줍니다. 자세한 내용은 [c + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다.
+이 항목에서는 시각적 개체의 한 측면을 보여 줍니다. C++ 상호 운용성. 자세한 내용은 [사용 C++ (암시적 PInvoke) Interop](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다.
 
 다음 코드 예제에서 사용 된 [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md) 구현 #pragma 지시문 관리는 관리 되지 않는 함수에서 동일한 파일에 별도 파일에 정의 된 경우 이러한 함수에서 동일한 방식으로 상호 운용 합니다. 관리 되지 않는 함수만 포함 된 파일 사용 하 여 컴파일할 필요가 없습니다 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)합니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "58777677"
 
 ## <a name="example"></a>예제
 
-유니코드 문자열에서 관리 되는 관리 되지 않는 함수에 전달 하려면 (Vcclr.h에서 선언 됨) PtrToStringChars 함수를 사용할 수 있습니다 관리 되는 문자열이 저장 되는 메모리에 액세스 합니다. 네이티브 함수에 전달 되므로이 주소를 반드시 사용 하 여 메모리를 고정 [pin_ptr (C + + /cli CLI)](../extensions/pin-ptr-cpp-cli.md) 문자열 데이터를 다시 할당을 방지 하려면 가비지 컬렉션 주기 이루어져야 하는 동안는 관리 되지 않는 함수를 실행합니다.
+유니코드 문자열에서 관리 되는 관리 되지 않는 함수에 전달 하려면 (Vcclr.h에서 선언 됨) PtrToStringChars 함수를 사용할 수 있습니다 관리 되는 문자열이 저장 되는 메모리에 액세스 합니다. 네이티브 함수에 전달 되므로이 주소를 반드시 사용 하 여 메모리를 고정 [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) 문자열 데이터를 다시 할당을 방지 하려면 가비지 컬렉션 주기 수행 해야 하는 동안 발생 합니다 관리 되지 않는 함수를 실행합니다.
 
 ```
 // MarshalUnicode1.cpp

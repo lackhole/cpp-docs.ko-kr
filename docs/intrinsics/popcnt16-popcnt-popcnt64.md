@@ -11,12 +11,12 @@ helpviewer_keywords:
 - __popcnt64
 - __popcnt
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
-ms.openlocfilehash: a6424f3414d9da17e52c0a9f78290497f5e5e01e
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.openlocfilehash: d6cc9a0ce784ab79f5e4225675a082fc55bd53e7
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56146894"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037012"
 ---
 # <a name="popcnt16-popcnt-popcnt64"></a>__popcnt16, __popcnt, __popcnt64
 
@@ -40,7 +40,7 @@ unsigned __int64 __popcnt64(
 
 #### <a name="parameters"></a>매개 변수
 
-*value*<br/>
+*값*<br/>
 [in] 16-, 32 비트 또는 64 비트 부호 없는 정수 채우기 수를 사용 하도록 하겠습니다.
 
 ## <a name="return-value"></a>반환 값
@@ -103,6 +103,6 @@ __popcnt(0xffffffff) = 32
 
 고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

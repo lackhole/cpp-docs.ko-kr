@@ -56,12 +56,12 @@ helpviewer_keywords:
 - _InterlockedAnd8 intrinsic
 - _InterlockedAnd_HLEAcquire intrinsic
 ms.assetid: ad271dc3-42cd-47d0-9f65-30d5cfeb66fc
-ms.openlocfilehash: 70e618944ddac3468c0e49443cde116c8496df7c
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: b38a181102247ab203c86ccb6310a72135dccc8b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626770"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033322"
 ---
 # <a name="interlockedand-intrinsic-functions"></a>_InterlockedAnd Intrinsic Functions
 
@@ -172,10 +172,10 @@ __int64 _InterlockedAnd64_rel(
 
 #### <a name="parameters"></a>매개 변수
 
-*value*<br/>
+*값*<br/>
 [out에서] 결과 교체 첫 번째 피연산자에 대 한 포인터입니다.
 
-*마스크*<br/>
+*mask*<br/>
 [in] 두 번째 피연산자입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -184,7 +184,7 @@ __int64 _InterlockedAnd64_rel(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|머리글|
+|내장 함수|아키텍처|헤더|
 |---------------|------------------|------------|
 |`_InterlockedAnd`, `_InterlockedAnd8`, `_InterlockedAnd16`, `_InterlockedAnd64`|x86, ARM, x64|\<intrin.h>|
 |`_InterlockedAnd_acq`, `_InterlockedAnd_nf`, `_InterlockedAnd_rel`, `_InterlockedAnd8_acq`, `_InterlockedAnd8_nf`, `_InterlockedAnd8_rel`, `_InterlockedAnd16_acq`, `_InterlockedAnd16_nf`, `_InterlockedAnd16_rel`, `_InterlockedAnd64_acq`, `_InterlockedAnd64_nf`, `_InterlockedAnd64_rel`|ARM|\<intrin.h>|
@@ -227,7 +227,7 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

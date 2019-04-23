@@ -1,17 +1,17 @@
 ---
-title: cpp_quote (c + + COM 특성)
+title: cpp_quote (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.cpp_quote
 helpviewer_keywords:
 - cpp_quote attribute
 ms.assetid: f75327ff-42bd-498b-9177-7ffa25427e1f
-ms.openlocfilehash: 5a281f9f88412df4d3ee18bff1302b19433e07f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 378435ced5a541785b7b32bc9d2f408034d5a2d8
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466952"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59024686"
 ---
 # <a name="cppquote"></a>cpp_quote
 
@@ -30,9 +30,9 @@ C 명령입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **cpp_quote** c + + 특성은.idl 파일에서 전처리기 지시문을 배치 하려는 경우에 유용 합니다.
+합니다 **cpp_quote** C++ 특성은.idl 파일에서 전처리기 지시문을 배치 하려는 경우에 유용 합니다.
 
-사용할 수도 있습니다 **cpp_quote** MIDL 컴파일의 일부로.h 파일을 생성 합니다. 예를 들어, c + + IDL 특성을 사용 하지만 일부 작업에 대 한이 파일을 사용할 수 없습니다는 c + + 헤더 파일에 있으면 다음 컴파일할 수 있습니다 하 여 사용할 수 있어야 하는.h 있으므로 MIDL 생성 파일을 만듭니다.
+사용할 수도 있습니다 **cpp_quote** MIDL 컴파일의 일부로.h 파일을 생성 합니다. 예를 들어 있는 경우는 C++ 를 사용 하는 헤더 파일 C++ 을 사용할 수 있어야 하는.h 있으므로 MIDL 생성 파일을 만드는 것을 컴파일할 수 있습니다 IDL 특성 하지만 일부 작업에 대 한이 파일을 사용할 수 없습니다.
 
 합니다 **cpp_quote** 특성이 동일한 기능을 합니다 [cpp_quote](/windows/desktop/Midl/cpp-quote) MIDL 특성입니다.
 
@@ -53,7 +53,7 @@ C 명령입니다.
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [독립 실행형 특성](stand-alone-attributes.md)

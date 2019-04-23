@@ -3,12 +3,12 @@ title: Microsoft::WRL::Details 네임스페이스
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d71fe149-d804-4c6f-961d-43fe21ef8630
-ms.openlocfilehash: 149b78a20061dc9083c62df4e58d638009c5e0a2
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: fce6e620600164e73d3708d98d8a7fa979e8ab42
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785298"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59027482"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Microsoft::WRL::Details 네임스페이스
 
@@ -83,7 +83,7 @@ namespace Microsoft::WRL::Details;
 
 **네임스페이스:** Microsoft::WRL::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL 네임스페이스](microsoft-wrl-namespace.md)<br/>
 [Microsoft::WRL::Wrappers 네임스페이스](microsoft-wrl-wrappers-namespace.md)

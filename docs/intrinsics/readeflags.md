@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __readeflags intrinsic
 ms.assetid: f9d2f4d8-c428-491f-b8de-04d0566b2b6b
-ms.openlocfilehash: e5294180904d0d7ca3bbd1de75e45e058a33c88f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9913fb4287e673faf79b2c352bb42eda7f590fdd
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594274"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026372"
 ---
 # <a name="readeflags"></a>__readeflags
 
@@ -42,7 +42,7 @@ EFLAGS 레지스터의 값입니다. 반환 값은 32 비트 및 64 비트 long 
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [__writeeflags](../intrinsics/writeeflags.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: eb4d970527ba919af10eadab7c907f5108767b9b
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: dff057977e6b6ff0c36d3a888bc4d5c3aa778576
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58780472"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038769"
 ---
 # <a name="consuming-libraries-and-components"></a>라이브러리 및 구성 요소를 사용합니다.
 
@@ -164,7 +164,7 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
    참조된 어셈블리의 버전을 표시합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 프로젝트 속성 페이지 참조](reference/property-pages-visual-cpp.md)<br>
 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)

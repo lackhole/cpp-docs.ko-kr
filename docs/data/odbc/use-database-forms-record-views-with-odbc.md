@@ -5,12 +5,12 @@ helpviewer_keywords:
 - ODBC, record views
 - record views, ODBC
 ms.assetid: 6a2ce346-8104-4ccd-b06e-ca0859a132fe
-ms.openlocfilehash: 35d8072a33c135f8735280d741e954e5b9cf6fb1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d2267c732a2f879fc507f6793ac0a7bd9cda8128
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498061"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030065"
 ---
 # <a name="use-database-forms-record-views-with-odbc"></a>ODBC에서 데이터베이스 폼(레코드 뷰) 사용
 
@@ -30,6 +30,6 @@ ms.locfileid: "50498061"
 
 - [레코드 뷰 사용](../../data/using-a-record-view-mfc-data-access.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

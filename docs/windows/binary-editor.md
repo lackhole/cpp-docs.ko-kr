@@ -1,5 +1,5 @@
 ---
-title: 바이너리 편집기 (c + +)
+title: 바이너리 편집기 (C++)
 ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.binary.F1
@@ -21,14 +21,14 @@ helpviewer_keywords:
 - data resources [C++]
 - resources [C++], creating
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
-ms.openlocfilehash: 0adcefe2af9d17a1c42f64f25636e220f53706fc
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 832dbf711307b81527bcaff0d1e1b8138f208e46
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328755"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59040386"
 ---
-# <a name="binary-editor-c"></a>바이너리 편집기 (c + +)
+# <a name="binary-editor-c"></a>바이너리 편집기 (C++)
 
 > [!CAUTION]
 > 대화 상자, 이미지 또는 메뉴와 같은 리소스를 편집 합니다 **바이너리 편집기** 은 위험 합니다. 잘못된 편집으로 리소스가 손상되어 해당 네이티브 편집기에서 읽지 못하게 될 수 있습니다.
@@ -125,6 +125,6 @@ ASCII 문자열 또는 16 진수 바이트를 검색할 수 있습니다. 예를
 
 없음
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 편집기](../windows/resource-editors.md)

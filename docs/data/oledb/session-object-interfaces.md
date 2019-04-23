@@ -8,12 +8,12 @@ helpviewer_keywords:
 - interfaces, session object
 - interfaces, list of
 ms.assetid: ac01a958-6dde-4bd7-8b63-94459e488335
-ms.openlocfilehash: 7e8a9cd204a07afc2b14c6a1e31e7c970c27cfc2
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 2fb91365fec0709e1bb2a26afa519e6565862681
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423380"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031457"
 ---
 # <a name="session-object-interfaces"></a>세션 개체 인터페이스
 
@@ -44,6 +44,6 @@ ms.locfileid: "57423380"
 
 ![공급자 개념적 다이어그램](../../data/oledb/media/vc4u551.gif "공급자 개념적 다이어그램")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

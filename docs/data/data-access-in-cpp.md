@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data [C++], data access technologies
 - data access [C++], class libraries for databases
 ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
-ms.openlocfilehash: a56c15f76b83620e4f67c188450a6b5d2f68c22f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 142d067b6fbc9e2357ff8fc23fd931a1194477e9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58766042"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041256"
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++의 데이터 액세스
 
@@ -34,10 +34,10 @@ MFC(Microsoft Foundation Classes) 라이브러리는 ODBC(Open Database Connecti
 
 ## <a name="related-topics"></a>관련 항목
 
-[C 및 c + +를 사용 하 여 SQL Database에 연결](/azure/sql-database/sql-database-develop-cplusplus-simple)<br/>
-C 또는 c + + 응용 프로그램에서 Azure SQL Database에 연결 합니다.
+[C를 사용 하 여 SQL Database에 연결 하 고C++](/azure/sql-database/sql-database-develop-cplusplus-simple)<br/>
+C에서 Azure SQL Database에 연결 하거나 C++ 응용 프로그램입니다.
 
-[C + + 용 Microsoft Azure Storage 클라이언트 라이브러리](https://github.com/Azure/azure-storage-cpp)<br/>
+[에 대 한 Microsoft Azure Storage 클라이언트 라이브러리C++](https://github.com/Azure/azure-storage-cpp)<br/>
 [Azure Storage](/azure/storage/storage-introduction)는 내구성, 가용성, 확장성을 활용하여 고객의 요구 사항을 충족하는 최신 응용 프로그램을 위한 클라우드 저장소 솔루션입니다. C++용 Microsoft Azure Storage Client Library를 사용하여 C++에서 Azure Storage에 연결하세요.
 
 [ODBC Driver 13.1 for SQL Server-Windows 출시](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server)<br/>
@@ -46,15 +46,15 @@ C 또는 c + + 응용 프로그램에서 Azure SQL Database에 연결 합니다.
 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client-programming)<br/>
 SQL Server Native Client는 OLE DB 및 ODBC 모두에 사용되는 독립 실행형 데이터 액세스 API(응용 프로그래밍 인터페이스)로, SQL Server 2005에서 SQL Server 2014까지 지원합니다. 새 애플리케이션은 ODBC Driver 13.1 for SQL Server를 사용해야 합니다.
 
-[Microsoft Azure C 및 c + + 개발자 센터](https://azure.microsoft.com/develop/cpp/)<br/>
+[Microsoft Azure C 및 C++ 개발자 센터](https://azure.microsoft.com/develop/cpp/)<br/>
 향상된 유연성, 확장성 및 안정성을 제공하는 Azure에서는 원하는 도구를 사용하여 C++ 애플리케이션을 쉽게 빌드할 수 있습니다.
 
-[C + +에서 Blob Storage를 사용 하는 방법](https://docs.microsoft.com/azure/storage/storage-c-plus-plus-how-to-use-blobs)<br/>
+[Blob Storage를 사용 하는 방법C++](https://docs.microsoft.com/azure/storage/storage-c-plus-plus-how-to-use-blobs)<br/>
 Azure Blob Storage는 클라우드에서 구조화되지 않은 데이터를 개체/Blob으로 저장하는 서비스입니다. Blob Storage는 문서, 미디어 파일, 애플리케이션 설치 관리자 등과 같은 모든 유형의 텍스트 또는 이진 데이터를 저장할 수 있습니다. Blob 스토리지를 개체 스토리지라고도 합니다.
 
 [ ODBC 프로그래머 참조](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
 ODBC 인터페이스는 C 프로그래밍 언어와 함께 사용하도록 설계되었습니다. 세 가지 영역에 걸쳐 ODBC 인터페이스 사용: SQL 문, ODBC 함수 호출 및 C 프로그래밍 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++](../overview/visual-cpp-in-visual-studio.md)

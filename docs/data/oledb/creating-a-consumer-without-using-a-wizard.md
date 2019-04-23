@@ -4,12 +4,12 @@ ms.date: 10/12/2018
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
-ms.openlocfilehash: a4b95674c2c9c6f0a5dae29e68cff44c759e0fa9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 029fe6866df81d366cc3bc15096f638791faa413
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578609"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030422"
 ---
 # <a name="creating-a-consumer-without-using-a-wizard"></a>마법사를 사용하지 않고 소비자 만들기
 
@@ -76,6 +76,6 @@ ms.locfileid: "50578609"
     CoUninitialize();
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer.md)

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Windows Desktop Wizard
 - Win32 Project Wizard
 ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
-ms.openlocfilehash: 52ffd992480df517f8677e14161b697eb3ecc321
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 43a47366475b227ccfc5918b07760cc582326e82
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58786425"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041473"
 ---
 # <a name="windows-desktop-wizard"></a>Windows 데스크톱 마법사
 
-Windows 데스크톱 마법사에는 Visual Studio 2017 이상에 Win32 응용 프로그램 마법사를 대체합니다. 마법사를 사용 하면 c + + 프로젝트 (아래 표의 머리글에 나열 됨)의 네 가지 형식 중 하나를 만들 수 있습니다. 각각의 경우 연 프로젝트 형식에 적합한 추가 옵션을 지정할 수 있습니다. 
+Windows 데스크톱 마법사에는 Visual Studio 2017 이상에 Win32 응용 프로그램 마법사를 대체합니다. 마법사를 사용 하면 네 가지 형식 중 하나를 만들 수 있습니다 C++ 프로젝트 (아래 표의 머리글에 나열 됨). 각각의 경우 연 프로젝트 형식에 적합한 추가 옵션을 지정할 수 있습니다. 
 
    ![Windows 데스크톱 마법사](media/windows-desktop-wizard.png)
 
@@ -85,6 +85,6 @@ Windows 데스크톱 애플리케이션을 만들었으면 [제네릭](../ide/ge
 
 마법사에서 프로젝트용으로 만든 파일은 **솔루션 탐색기**에서 볼 수 있습니다. 마법사에서 프로젝트용 파일에 대 한 자세한 내용은 프로젝트에서 생성 한 파일을 참조 하세요. `ReadMe.txt`합니다. 파일 형식에 대한 자세한 내용은 [Visual C++ 프로젝트용으로 만들어지는 파일 형식](../build/reference/file-types-created-for-visual-cpp-projects.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++ 프로젝트 형식](../build/reference/visual-cpp-project-types.md)

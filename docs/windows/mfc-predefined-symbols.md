@@ -9,12 +9,12 @@ helpviewer_keywords:
 - databases [C++], MFC programming model
 - Windows programming MFC symbols [C++]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-ms.openlocfilehash: c60c75275ca565b332c33848d27c134deb90a5c6
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: e9e4f9f62a3004e171eea9e3552d8a0f58923075
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563210"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031824"
 ---
 # <a name="mfc-predefined-symbols"></a>미리 정의된 MFC 기호
 
@@ -280,7 +280,7 @@ MFC 프로젝트는 항상 windows를 지 원하는 여러 헤더 파일을 포�
 
 MFC
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)<br/>
 [미리 정의된 ATL 기호](../windows/atl-predefined-symbols.md)<br/>

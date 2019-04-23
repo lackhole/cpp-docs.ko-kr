@@ -36,12 +36,12 @@ helpviewer_keywords:
 - GetRowset method
 - GetSchemas method
 ms.assetid: bd7bf0d7-a1c6-4afa-88e3-cfdbdf560703
-ms.openlocfilehash: 080504dabccd89340d511aa6d3192cf711d3d6bf
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: b764b571aae81f6225028cbe0d052d817d93d183
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416862"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59024363"
 ---
 # <a name="idbschemarowsetimpl-class"></a>IDBSchemaRowsetImpl 클래스
 
@@ -287,7 +287,7 @@ STDMETHOD (GetSchema s )(ULONG * pcSchemas,
 
 이 함수를 구현하려면 사용자에게 세션 클래스의 스키마 맵이 있어야 합니다. 스키마 맵 정보를 사용하는 경우 맵의 스키마에 대한 GUID 배열로 응답합니다. 이는 공급자가 지원하는 스키마를 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)<br/>
 [스키마 행 집합 지원](../../data/oledb/supporting-schema-rowsets.md)<br/>

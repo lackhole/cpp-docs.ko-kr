@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - no_search_namespace attribute
 ms.assetid: 482dc4a7-5acf-456a-a995-ef4ddd5f6018
-ms.openlocfilehash: 761fd956a5c7d0cb08fbab193b954b22cc7ff854
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e19600e35c87990c455c6793a4e0ea521213bb7
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639389"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59024831"
 ---
 # <a name="nosearchnamespace"></a>no_search_namespace
-**C + + 전용**
+**C++특정**
 
 와 동일한 기능을 [no_namespace](../preprocessor/no-namespace.md) 하지만 사용 하는 형식 라이브러리에 사용 되는 `#import` 지시문에 [auto_search](../preprocessor/auto-search.md) 특성.
 
@@ -26,9 +26,9 @@ no_search_namespace
 
 ## <a name="remarks"></a>설명
 
-**C + + 전용 종료**
+**최종 C++ 특정**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

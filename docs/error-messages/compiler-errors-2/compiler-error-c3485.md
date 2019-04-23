@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3485
 ms.assetid: d67536f9-67a1-4ad9-9a94-d8bbbca3d0dc
-ms.openlocfilehash: 09080a402767835cda9711c2f0fc4d7c8d787439
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2fcaecd6be35e2ae6822133930b48b6bbf02aafe
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508024"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59027586"
 ---
 # <a name="compiler-error-c3485"></a>컴파일러 오류 C3485
 
@@ -36,6 +36,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

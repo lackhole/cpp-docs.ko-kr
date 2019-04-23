@@ -1931,12 +1931,12 @@ helpviewer_keywords:
 - cl.exe compiler, intrinsics
 - intrinsics, ARM
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
-ms.openlocfilehash: e4c962b7911c97095e22c670dabfaa3d3d4b2709
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 47fd2f449568494bafde993e035d3ec37c44f6fe
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525511"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59027633"
 ---
 # <a name="arm-intrinsics"></a>ARM 내장 함수
 
@@ -2068,21 +2068,21 @@ Visual C++ 컴파일러와 ARM 컴파일러의 주요 차이점은 Visual C++ �
 |__dmb|DMB|void __dmb(unsigned int `_Type`)<br /><br /> 명령 스트림에 메모리 장벽 작업을 삽입합니다. 매개 변수 `_Type`은 장벽이 적용하는 제한의 종류를 지정 합니다.<br /><br /> 적용할 수 있는 제한의 종류에 대 한 자세한 내용은 참조 하세요. [메모리 장벽 제한](#BarrierRestrictions)합니다.|
 |__dsb|DSB|void __dsb(unsigned int _Type)<br /><br /> 명령 스트림에 메모리 장벽 작업을 삽입합니다. 매개 변수 `_Type`은 장벽이 적용하는 제한의 종류를 지정 합니다.<br /><br /> 적용할 수 있는 제한의 종류에 대 한 자세한 내용은 참조 하세요. [메모리 장벽 제한](#BarrierRestrictions)합니다.|
 |__isb|ISB|void __isb(unsigned int _Type)<br /><br /> 명령 스트림에 메모리 장벽 작업을 삽입합니다. 매개 변수 `_Type`은 장벽이 적용하는 제한의 종류를 지정 합니다.<br /><br /> 적용할 수 있는 제한의 종류에 대 한 자세한 내용은 참조 하세요. [메모리 장벽 제한](#BarrierRestrictions)합니다.|
-|__emit||void __emit (부호 없는 \__int32 opcode)<br /><br /> 컴파일러로 출력된 명령 스트림에 지정된 명령을 삽입합니다.<br /><br /> `opcode`의 값은 컴파일 타임에 알려진 상수 식이어야 합니다. 명령 단어의 크기는 16비트이며 `opcode`의 최상위 16비트는 무시됩니다.<br /><br /> 컴파일러는 `opcode`의 내용을 해석하지 않으며 삽입된 명령이 실행되기 전에 CPU 또는 메모리 상태를 보장하지 않습니다.<br /><br /> 컴파일러는 삽입된 명령이 실행된 후 CPU 및 메모리 상태가 변경되지 않는다고 가정합니다. 따라서 상태를 변경하는 명령은 컴파일러에 의해 생성된 일반 코드에 나쁜 영향을 미칠 수 있습니다.<br /><br /> 이러한 이유로 `emit`는 보조 프로세서 상태와 같은 컴파일러가 일반적으로 처리하지 않으며 CPU 상태에 영향을 주는 명령을 삽입하는 경우 또는 `declspec(naked)`을 사용하여 선언된 함수를 구현하는 경우에만 사용합니다.|
+|__emit||void __emit(unsigned \__int32 opcode)<br /><br /> 컴파일러로 출력된 명령 스트림에 지정된 명령을 삽입합니다.<br /><br /> `opcode`의 값은 컴파일 타임에 알려진 상수 식이어야 합니다. 명령 단어의 크기는 16비트이며 `opcode`의 최상위 16비트는 무시됩니다.<br /><br /> 컴파일러는 `opcode`의 내용을 해석하지 않으며 삽입된 명령이 실행되기 전에 CPU 또는 메모리 상태를 보장하지 않습니다.<br /><br /> 컴파일러는 삽입된 명령이 실행된 후 CPU 및 메모리 상태가 변경되지 않는다고 가정합니다. 따라서 상태를 변경하는 명령은 컴파일러에 의해 생성된 일반 코드에 나쁜 영향을 미칠 수 있습니다.<br /><br /> 이러한 이유로 `emit`는 보조 프로세서 상태와 같은 컴파일러가 일반적으로 처리하지 않으며 CPU 상태에 영향을 주는 명령을 삽입하는 경우 또는 `declspec(naked)`을 사용하여 선언된 함수를 구현하는 경우에만 사용합니다.|
 |__hvc|HVC|unsigned int __hvc(unsigned int, ...)|
-|__iso_volatile_load16||__int16 \__iso_volatile_load16 (const volatile \__int16 \*)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
+|__iso_volatile_load16||__int16 \__iso_volatile_load16(const volatile \__int16 \*)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
 |__iso_volatile_load32||__int32 \__iso_volatile_load32 (const volatile \__int32 \*)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
-|__iso_volatile_load64||__int64 \__iso_volatile_load64 (const volatile \__int64 \*)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
-|__iso_volatile_load8||__int8 \__iso_volatile_load8 (const volatile \__int8 \*)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
-|__iso_volatile_store16||void __iso_volatile_store16 (volatile \__int16 \*하십시오 \__int16)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
-|__iso_volatile_store32||void __iso_volatile_store32 (volatile \__int32 \*하십시오 \__int32)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
-|__iso_volatile_store64||void __iso_volatile_store64 (volatile \__int64 \*하십시오 \__int64)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
-|__iso_volatile_store8||void __iso_volatile_store8 (volatile \__int8 \*하십시오 \__int8)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
-|__ldrexd|LDREXD|__int64 \__ldrexd (const volatile \__int64 \*)|
-|__prefetch|PLD|void __cdecl \__prefetch (const void \*)<br /><br /> `PLD` 메모리 힌트를 지정된 주소 또는 그 근처에 있는 메모리에 곧 액세스할 시스템에 제공됩니다. 일부 시스템은 런타임 성능을 향상시키기 위해 해당 메모리 액세스 패턴을 최적화하도록 선택할 수 있습니다. 그러나 C++ 언어의 관점에서 함수는 눈에 띄는 효과가 없고 아무 작업도 하지 않을 수 있습니다.|
-|__rdpmccntr64||부호 없는 __int64 \__rdpmccntr64(void)|
+|__iso_volatile_load64||__int64 \__iso_volatile_load64(const volatile \__int64 \*)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
+|__iso_volatile_load8||__int8 \__iso_volatile_load8(const volatile \__int8 \*)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
+|__iso_volatile_store16||void __iso_volatile_store16(volatile \__int16 \*, \__int16)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
+|__iso_volatile_store32||void __iso_volatile_store32(volatile \__int32 \*, \__int32)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
+|__iso_volatile_store64||void __iso_volatile_store64(volatile \__int64 \*, \__int64)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
+|__iso_volatile_store8||void __iso_volatile_store8(volatile \__int8 \*, \__int8)<br /><br /> 자세한 내용은 [__iso_volatile_load/store instrinsics](#IsoVolatileLoadStore)합니다.|
+|__ldrexd|LDREXD|__int64 \__ldrexd(const volatile \__int64 \*)|
+|__prefetch|PLD|void __cdecl \__prefetch(const void \*)<br /><br /> `PLD` 메모리 힌트를 지정된 주소 또는 그 근처에 있는 메모리에 곧 액세스할 시스템에 제공됩니다. 일부 시스템은 런타임 성능을 향상시키기 위해 해당 메모리 액세스 패턴을 최적화하도록 선택할 수 있습니다. 그러나 C++ 언어의 관점에서 함수는 눈에 띄는 효과가 없고 아무 작업도 하지 않을 수 있습니다.|
+|__rdpmccntr64||unsigned __int64 \__rdpmccntr64(void)|
 |__sev|SEV|void __sev(void)|
-|__static_assert||void __static_assert (int, const char \*)|
+|__static_assert||void __static_assert(int, const char \*)|
 |__swi|SVC|unsigned int __swi(unsigned int, ...)|
 |__trap|BKPT|int __trap(int, ...)|
 |__wfe|WFE|void __wfe(void)|
@@ -2097,9 +2097,9 @@ Visual C++ 컴파일러와 ARM 컴파일러의 주요 차이점은 Visual C++ �
 |_CountLeadingSigns||unsigned int _CountLeadingSigns(long)|
 |_CountLeadingSigns64||unsigned int _CountLeadingSigns64(\__int64)|
 |_CountLeadingZeros||unsigned int _CountLeadingZeros(unsigned long)|
-|_CountLeadingZeros64||unsigned int _CountLeadingZeros64 (부호 없는 \__int64)|
+|_CountLeadingZeros64||unsigned int _CountLeadingZeros64(unsigned \__int64)|
 |_CountOneBits||unsigned int _CountOneBits(unsigned long)|
-|_CountOneBits64||unsigned int _CountOneBits64 (부호 없는 \__int64)|
+|_CountOneBits64||unsigned int _CountOneBits64(unsigned \__int64)|
 |_DAddSatInt|QDADD|int _DAddSatInt(int, int)|
 |_DSubSatInt|QDSUB|int _DSubSatInt(int, int)|
 |_isunordered||int _isunordered(double, double)|
@@ -2357,9 +2357,9 @@ void _MoveFromCoprocessor64(
 |__assume|void __assume(int)|
 |__code_seg|void __code_seg (const char \*)|
 |__debugbreak|void __cdecl \__debugbreak(void)|
-|__fastfail|__declspec (noreturn) void \__fastfail (부호 없는 int)|
-|__nop|void __nop(void) **참고:** 에서 ARM 플랫폼에서이 함수가 대상 아키텍처에서 구현 된 경우 NOP 명령을 생성 하 고 그렇지 않으면, 프로그램 또는 CPU의 상태를 변경 되지 않는 대체 명령이 생성 된-예를 들어 `MOV r8, r8`합니다. 이 기능적으로 \__nop 다른 하드웨어 아키텍처에 대 한 내장 함수입니다. 프로그램 또는 CPU에 영향을 주지 않는 내장 함수가 대상 아키텍처의 최적화에서 무시될 수 있으므로 명령은 CPU 주기를 반드시 소모하지는 않습니다. 따라서 사용 하지 마십시오는 \__nop CPU의 작동 방법에 대 한 확실 하지 않은 경우 코드 시퀀스의 실행 시간을 조작 하는 내장 함수입니다. 대신 사용할 수는 \__nop 다음 명령을 특정 32 비트 경계 주소에 맞게 내장 함수입니다.|
-|__yield|void __yield(void) **참고:** 에서 ARM 플랫폼에서이 함수는 스레드 실행에서 일시적으로 일시 중단할 수 있는 작업을 수행 되는 나타내는 YIELD 명령을 생성-예를 들어, spinlock-없이 프로그램에 나쁜 영향을 주지 합니다. 그리고 이 함수를 실행하면 CPU는 실행 주기 동안 낭비될 수 있는 다른 작업을 실행할 수 있습니다.|
+|__fastfail|__declspec(noreturn) void \__fastfail(unsigned int)|
+|__nop|void __nop(void) **참고 합니다.**  ARM 플랫폼에서 이 함수가 대상 아키텍처에서 구현된 경우 NOP 명령을 생성합니다. 그렇지 않은 경우 프로그램 또는 CPU의 상태를 변경하지 않는 `MOV r8, r8` 등의 대체 명령이 생성됩니다. 이 기능적으로 \__nop 다른 하드웨어 아키텍처에 대 한 내장 함수입니다. 프로그램 또는 CPU에 영향을 주지 않는 내장 함수가 대상 아키텍처의 최적화에서 무시될 수 있으므로 명령은 CPU 주기를 반드시 소모하지는 않습니다. 따라서 사용 하지 마십시오는 \__nop CPU의 작동 방법에 대 한 확실 하지 않은 경우 코드 시퀀스의 실행 시간을 조작 하는 내장 함수입니다. 대신 사용할 수는 \__nop 다음 명령을 특정 32 비트 경계 주소에 맞게 내장 함수입니다.|
+|__yield|void __yield(void) **참고 합니다.**  ARM 플랫폼에서 이 함수는 스핀 잠금과 같이 스레드가 프로그램에 나쁜 영향 없이 실행에서 일시적으로 중단될 수 있는 작업을 실행 중임을 나타내는 YIELD 명령을 생성합니다. 그리고 이 함수를 실행하면 CPU는 실행 주기 동안 낭비될 수 있는 다른 작업을 실행할 수 있습니다.|
 |_AddressOfReturnAddress|void \* _AddressOfReturnAddress(void)|
 |_BitScanForward|unsigned char _BitScanForward (부호 없는 long \* _Index, 부호 없는 long _Mask)|
 |_BitScanReverse|unsigned char _BitScanReverse (부호 없는 long \* _Index, 부호 없는 long _Mask)|
@@ -2367,11 +2367,11 @@ void _MoveFromCoprocessor64(
 |_bittestandcomplement|unsigned char _bittestandcomplement (장기 \*, long)|
 |_bittestandreset|unsigned char _bittestandreset (장기 \*, long)|
 |_bittestandset|unsigned char _bittestandset (장기 \*, long)|
-|_byteswap_uint64|부호 없는 __int64 \__cdecl _byteswap_uint64 (unsigned \__int64)|
+|_byteswap_uint64|unsigned __int64 \__cdecl _byteswap_uint64(unsigned \__int64)|
 |_byteswap_ulong|unsigned long __cdecl _byteswap_ulong(unsigned long)|
 |_byteswap_ushort|unsigned short __cdecl _byteswap_ushort(unsigned short)|
-|_disable|void __cdecl _disable(void) **참고:** 내장 함수로 사용할 수만 있기; ARM 플랫폼에서이 함수는 CPSID 명령을 생성 합니다.|
-|_enable|void __cdecl _enable(void) **참고:** 내장 함수로 사용할 수만 있기; ARM 플랫폼에서이 함수는 CPSIE 명령을 생성 합니다.|
+|_disable|void __cdecl _disable(void) **Note:**  ARM 플랫폼에서 이 함수는 내장 함수로만 사용할 수 있는 CPSID 명령을 생성합니다.|
+|_enable|__cdecl _enable(void) void **참고 합니다.**  ARM 플랫폼에서 이 함수는 내장 함수로만 사용할 수 있는 CPSIE 명령을 생성합니다|
 |_lrotl|unsigned long __cdecl _lrotl(unsigned long, int)|
 |_lrotr|unsigned long __cdecl _lrotr(unsigned long, int)|
 |_ReadBarrier|void _ReadBarrier(void)|
@@ -2414,7 +2414,7 @@ Interlocked 내장 함수는 원자성 읽기-수정-쓰기 작업을 수행하�
 
 - **부분**: 일반, 지원 `_acq`, 및 `_nf` 폼입니다.
 
-- **None**: 지원 되지 않습니다
+- **없음**: 지원 안 함
 
 ###  <a name="nf_suffix"></a> _nf (no fence 약어) 접미사가
 
@@ -2426,21 +2426,21 @@ Interlocked 내장 함수는 원자성 읽기-수정-쓰기 작업을 수행하�
 |-------------------|------------------------|
 |_InterlockedAdd|긴 _InterlockedAdd (긴 _volatile \*, long)|
 |_InterlockedAdd64|__int64 _InterlockedAdd64 (\_volatile _int64 \*, \__int64)|
-|_InterlockedAdd64_acq|__int64 _InterlockedAdd64_acq (\_volatile _int64 \*, \__int64)|
-|_InterlockedAdd64_nf|__int64 _InterlockedAdd64_nf (\_volatile _int64 \*, \__int64)|
+|_InterlockedAdd64_acq|__int64 _InterlockedAdd64_acq(\__int64 volatile \*, \__int64)|
+|_InterlockedAdd64_nf|__int64 _InterlockedAdd64_nf(\__int64 volatile \*, \__int64)|
 |_InterlockedAdd64_rel|__int64 _InterlockedAdd64_rel (\_volatile _int64 \*, \__int64)|
 |_InterlockedAdd_acq|긴 _InterlockedAdd_acq (long volatile \*, long)|
 |_InterlockedAdd_nf|긴 _InterlockedAdd_nf (long volatile \*, long)|
 |_InterlockedAdd_rel|긴 _InterlockedAdd_rel (long volatile \*, long)|
 |_InterlockedAnd|long _InterlockedAnd (long volatile \*, long)|
-|_InterlockedAnd16|짧은 _InterlockedAnd16 (volatile \*, short)|
-|_InterlockedAnd16_acq|짧은 _InterlockedAnd16_acq (volatile \*, short)|
-|_InterlockedAnd16_nf|짧은 _InterlockedAnd16_nf (volatile \*, short)|
-|_InterlockedAnd16_rel|짧은 _InterlockedAnd16_rel (volatile \*, short)|
-|_InterlockedAnd64|__int64 _InterlockedAnd64 (\_volatile _int64 \*, \__int64)|
-|_InterlockedAnd64_acq|__int64 _InterlockedAnd64_acq (\_volatile _int64 \*, \__int64)|
-|_InterlockedAnd64_nf|__int64 _InterlockedAnd64_nf (\_volatile _int64 \*, \__int64)|
-|_InterlockedAnd64_rel|__int64 _InterlockedAnd64_rel (\_volatile _int64 \*, \__int64)|
+|_InterlockedAnd16|short _InterlockedAnd16(short volatile \*, short)|
+|_InterlockedAnd16_acq|short _InterlockedAnd16_acq(short volatile \*, short)|
+|_InterlockedAnd16_nf|short _InterlockedAnd16_nf(short volatile \*, short)|
+|_InterlockedAnd16_rel|short _InterlockedAnd16_rel(short volatile \*, short)|
+|_InterlockedAnd64|__int64 _InterlockedAnd64(\__int64 volatile \*, \__int64)|
+|_InterlockedAnd64_acq|__int64 _InterlockedAnd64_acq(\__int64 volatile \*, \__int64)|
+|_InterlockedAnd64_nf|__int64 _InterlockedAnd64_nf(\__int64 volatile \*, \__int64)|
+|_InterlockedAnd64_rel|__int64 _InterlockedAnd64_rel(\__int64 volatile \*, \__int64)|
 |_InterlockedAnd8|_InterlockedAnd8 char (char volatile \*, char)|
 |_InterlockedAnd8_acq|_InterlockedAnd8_acq char (char volatile \*, char)|
 |_InterlockedAnd8_nf|_InterlockedAnd8_nf char (char volatile \*, char)|
@@ -2449,56 +2449,56 @@ Interlocked 내장 함수는 원자성 읽기-수정-쓰기 작업을 수행하�
 |_InterlockedAnd_nf|긴 _InterlockedAnd_nf (long volatile \*, long)|
 |_InterlockedAnd_rel|긴 _InterlockedAnd_rel (long volatile \*, long)|
 |_InterlockedCompareExchange|긴 __cdecl _InterlockedCompareExchange (long volatile \*, long, long)|
-|_InterlockedCompareExchange16|짧은 _InterlockedCompareExchange16 (volatile \*, short, short)|
-|_InterlockedCompareExchange16_acq|짧은 _InterlockedCompareExchange16_acq (volatile \*, short, short)|
-|_InterlockedCompareExchange16_nf|짧은 _InterlockedCompareExchange16_nf (volatile \*, short, short)|
-|_InterlockedCompareExchange16_rel|짧은 _InterlockedCompareExchange16_rel (volatile \*, short, short)|
-|_InterlockedCompareExchange64|__int64 _InterlockedCompareExchange64 (\_volatile _int64 \*하십시오 \__int64, \__int64)|
-|_InterlockedCompareExchange64_acq|__int64 _InterlockedCompareExchange64_acq (\_volatile _int64 \*하십시오 \__int64, \__int64)|
-|_InterlockedCompareExchange64_nf|__int64 _InterlockedCompareExchange64_nf (\_volatile _int64 \*하십시오 \__int64, \__int64)|
-|_InterlockedCompareExchange64_rel|__int64 _InterlockedCompareExchange64_rel (\_volatile _int64 \*하십시오 \__int64, \__int64)|
+|_InterlockedCompareExchange16|short _InterlockedCompareExchange16(short volatile \*, short, short)|
+|_InterlockedCompareExchange16_acq|short _InterlockedCompareExchange16_acq(short volatile \*, short, short)|
+|_InterlockedCompareExchange16_nf|short _InterlockedCompareExchange16_nf(short volatile \*, short, short)|
+|_InterlockedCompareExchange16_rel|short _InterlockedCompareExchange16_rel(short volatile \*, short, short)|
+|_InterlockedCompareExchange64|__int64 _InterlockedCompareExchange64(\__int64 volatile \*, \__int64, \__int64)|
+|_InterlockedCompareExchange64_acq|__int64 _InterlockedCompareExchange64_acq(\__int64 volatile \*, \__int64, \__int64)|
+|_InterlockedCompareExchange64_nf|__int64 _InterlockedCompareExchange64_nf(\__int64 volatile \*, \__int64, \__int64)|
+|_InterlockedCompareExchange64_rel|__int64 _InterlockedCompareExchange64_rel(\__int64 volatile \*, \__int64, \__int64)|
 |_InterlockedCompareExchange8|_InterlockedCompareExchange8 char (char volatile \*, char, char)|
 |_InterlockedCompareExchange8_acq|_InterlockedCompareExchange8_acq char (char volatile \*, char, char)|
 |_InterlockedCompareExchange8_nf|_InterlockedCompareExchange8_nf char (char volatile \*, char, char)|
 |_InterlockedCompareExchange8_rel|_InterlockedCompareExchange8_rel char (char volatile \*, char, char)|
-|_InterlockedCompareExchangePointer|void \* _InterlockedCompareExchangePointer (void \* volatile \*, void \*, void \*)|
-|_InterlockedCompareExchangePointer_acq|void \* _InterlockedCompareExchangePointer_acq (void \* volatile \*, void \*, void \*)|
-|_InterlockedCompareExchangePointer_nf|void \* _InterlockedCompareExchangePointer_nf (void \* volatile \*, void \*, void \*)|
-|_InterlockedCompareExchangePointer_rel|void \* _InterlockedCompareExchangePointer_rel (void \* volatile \*, void \*, void \*)|
+|_InterlockedCompareExchangePointer|void \* _InterlockedCompareExchangePointer(void \* volatile \*, void \*, void \*)|
+|_InterlockedCompareExchangePointer_acq|void \* _InterlockedCompareExchangePointer_acq(void \* volatile \*, void \*, void \*)|
+|_InterlockedCompareExchangePointer_nf|void \* _InterlockedCompareExchangePointer_nf(void \* volatile \*, void \*, void \*)|
+|_InterlockedCompareExchangePointer_rel|void \* _InterlockedCompareExchangePointer_rel(void \* volatile \*, void \*, void \*)|
 |_InterlockedCompareExchange_acq|긴 _InterlockedCompareExchange_acq (long volatile \*, long, long)|
 |_InterlockedCompareExchange_nf|긴 _InterlockedCompareExchange_nf (long volatile \*, long, long)|
 |_InterlockedCompareExchange_rel|긴 _InterlockedCompareExchange_rel (long volatile \*, long, long)|
-|_InterlockedDecrement|긴 __cdecl _InterlockedDecrement (long volatile \*)|
-|_InterlockedDecrement16|짧은 _InterlockedDecrement16 (volatile 짧은 \*)|
-|_InterlockedDecrement16_acq|짧은 _InterlockedDecrement16_acq (volatile 짧은 \*)|
-|_InterlockedDecrement16_nf|짧은 _InterlockedDecrement16_nf (volatile 짧은 \*)|
-|_InterlockedDecrement16_rel|짧은 _InterlockedDecrement16_rel (volatile 짧은 \*)|
-|_InterlockedDecrement64|__int64 _InterlockedDecrement64 (\_volatile _int64 \*)|
-|_InterlockedDecrement64_acq|__int64 _InterlockedDecrement64_acq (\_volatile _int64 \*)|
-|_InterlockedDecrement64_nf|__int64 _InterlockedDecrement64_nf (\_volatile _int64 \*)|
-|_InterlockedDecrement64_rel|__int64 _InterlockedDecrement64_rel (\_volatile _int64 \*)|
-|_InterlockedDecrement_acq|긴 _InterlockedDecrement_acq (long volatile \*)|
+|_InterlockedDecrement|long __cdecl _InterlockedDecrement(long volatile \*)|
+|_InterlockedDecrement16|short _InterlockedDecrement16(short volatile \*)|
+|_InterlockedDecrement16_acq|short _InterlockedDecrement16_acq(short volatile \*)|
+|_InterlockedDecrement16_nf|short _InterlockedDecrement16_nf(short volatile \*)|
+|_InterlockedDecrement16_rel|short _InterlockedDecrement16_rel(short volatile \*)|
+|_InterlockedDecrement64|__int64 _InterlockedDecrement64(\__int64 volatile \*)|
+|_InterlockedDecrement64_acq|__int64 _InterlockedDecrement64_acq(\__int64 volatile \*)|
+|_InterlockedDecrement64_nf|__int64 _InterlockedDecrement64_nf(\__int64 volatile \*)|
+|_InterlockedDecrement64_rel|__int64 _InterlockedDecrement64_rel(\__int64 volatile \*)|
+|_InterlockedDecrement_acq|long _InterlockedDecrement_acq(long volatile \*)|
 |_InterlockedDecrement_nf|긴 _InterlockedDecrement_nf (long volatile \*)|
-|_InterlockedDecrement_rel|긴 _InterlockedDecrement_rel (long volatile \*)|
+|_InterlockedDecrement_rel|long _InterlockedDecrement_rel(long volatile \*)|
 |_InterlockedExchange|긴 __cdecl _interlockedexchangepointer (long volatile \* (_t), long)|
-|_InterlockedExchange16|짧은 _InterlockedExchange16 (volatile \* (_t), short)|
-|_InterlockedExchange16_acq|짧은 _InterlockedExchange16_acq (volatile \* (_t), short)|
-|_InterlockedExchange16_nf|짧은 _InterlockedExchange16_nf (volatile \* (_t), short)|
-|_InterlockedExchange64|__int64 _InterlockedExchange64 (\_volatile _int64 \* (_t), \__int64)|
-|_InterlockedExchange64_acq|__int64 _InterlockedExchange64_acq (\_volatile _int64 \* (_t), \__int64)|
-|_InterlockedExchange64_nf|__int64 _InterlockedExchange64_nf (\_volatile _int64 \* (_t), \__int64)|
+|_InterlockedExchange16|short _InterlockedExchange16(short volatile \* _Target, short)|
+|_InterlockedExchange16_acq|short _InterlockedExchange16_acq(short volatile \* _Target, short)|
+|_InterlockedExchange16_nf|short _InterlockedExchange16_nf(short volatile \* _Target, short)|
+|_InterlockedExchange64|__int64 _InterlockedExchange64(\__int64 volatile \* _Target, \__int64)|
+|_InterlockedExchange64_acq|__int64 _InterlockedExchange64_acq(\__int64 volatile \* _Target, \__int64)|
+|_InterlockedExchange64_nf|__int64 _InterlockedExchange64_nf(\__int64 volatile \* _Target, \__int64)|
 |_InterlockedExchange8|_InterlockedExchange8 char (char volatile \* (_t), char)|
 |_InterlockedExchange8_acq|_InterlockedExchange8_acq char (char volatile \* (_t), char)|
 |_InterlockedExchange8_nf|_InterlockedExchange8_nf char (char volatile \* (_t), char)|
 |_InterlockedExchangeAdd|긴 __cdecl _InterlockedExchangeAdd (long volatile \*, long)|
-|_InterlockedExchangeAdd16|짧은 _InterlockedExchangeAdd16 (volatile \*, short)|
-|_InterlockedExchangeAdd16_acq|짧은 _InterlockedExchangeAdd16_acq (volatile \*, short)|
-|_InterlockedExchangeAdd16_nf|짧은 _InterlockedExchangeAdd16_nf (volatile \*, short)|
-|_InterlockedExchangeAdd16_rel|짧은 _InterlockedExchangeAdd16_rel (volatile \*, short)|
-|_InterlockedExchangeAdd64|__int64 _InterlockedExchangeAdd64 (\_volatile _int64 \*, \__int64)|
-|_InterlockedExchangeAdd64_acq|__int64 _InterlockedExchangeAdd64_acq (\_volatile _int64 \*, \__int64)|
-|_InterlockedExchangeAdd64_nf|__int64 _InterlockedExchangeAdd64_nf (\_volatile _int64 \*, \__int64)|
-|_InterlockedExchangeAdd64_rel|__int64 _InterlockedExchangeAdd64_rel (\_volatile _int64 \*, \__int64)|
+|_InterlockedExchangeAdd16|short _InterlockedExchangeAdd16(short volatile \*, short)|
+|_InterlockedExchangeAdd16_acq|short _InterlockedExchangeAdd16_acq(short volatile \*, short)|
+|_InterlockedExchangeAdd16_nf|short _InterlockedExchangeAdd16_nf(short volatile \*, short)|
+|_InterlockedExchangeAdd16_rel|short _InterlockedExchangeAdd16_rel(short volatile \*, short)|
+|_InterlockedExchangeAdd64|__int64 _InterlockedExchangeAdd64(\__int64 volatile \*, \__int64)|
+|_InterlockedExchangeAdd64_acq|__int64 _InterlockedExchangeAdd64_acq(\__int64 volatile \*, \__int64)|
+|_InterlockedExchangeAdd64_nf|__int64 _InterlockedExchangeAdd64_nf(\__int64 volatile \*, \__int64)|
+|_InterlockedExchangeAdd64_rel|__int64 _InterlockedExchangeAdd64_rel(\__int64 volatile \*, \__int64)|
 |_InterlockedExchangeAdd8|_InterlockedExchangeAdd8 char (char volatile \*, char)|
 |_InterlockedExchangeAdd8_acq|_InterlockedExchangeAdd8_acq char (char volatile \*, char)|
 |_InterlockedExchangeAdd8_nf|_InterlockedExchangeAdd8_nf char (char volatile \*, char)|
@@ -2506,48 +2506,48 @@ Interlocked 내장 함수는 원자성 읽기-수정-쓰기 작업을 수행하�
 |_InterlockedExchangeAdd_acq|긴 _InterlockedExchangeAdd_acq (long volatile \*, long)|
 |_InterlockedExchangeAdd_nf|긴 _InterlockedExchangeAdd_nf (long volatile \*, long)|
 |_InterlockedExchangeAdd_rel|긴 _InterlockedExchangeAdd_rel (long volatile \*, long)|
-|_InterlockedExchangePointer|void \* _InterlockedExchangePointer (void \* volatile \* (_t) void \*)|
-|_InterlockedExchangePointer_acq|void \* _interlockedexchangepointer (void \* volatile \* (_t) void \*)|
-|_InterlockedExchangePointer_nf|void \* _interlockedexchangepointer (void \* volatile \* (_t) void \*)|
+|_InterlockedExchangePointer|void \* _InterlockedExchangePointer(void \* volatile \* _Target, void \*)|
+|_InterlockedExchangePointer_acq|void \* _InterlockedExchangePointer_acq(void \* volatile \* _Target, void \*)|
+|_InterlockedExchangePointer_nf|void \* _InterlockedExchangePointer_nf(void \* volatile \* _Target, void \*)|
 |_InterlockedExchange_acq|긴 _InterlockedExchange_acq (long volatile \* (_t), long)|
 |_InterlockedExchange_nf|긴 _InterlockedExchange_nf (long volatile \* (_t), long)|
-|_InterlockedIncrement|긴 __cdecl _InterlockedIncrement (long volatile \*)|
-|_InterlockedIncrement16|짧은 _InterlockedIncrement16 (volatile 짧은 \*)|
-|_InterlockedIncrement16_acq|짧은 _InterlockedIncrement16_acq (volatile 짧은 \*)|
-|_InterlockedIncrement16_nf|짧은 _InterlockedIncrement16_nf (volatile 짧은 \*)|
-|_InterlockedIncrement16_rel|짧은 _InterlockedIncrement16_rel (volatile 짧은 \*)|
-|_InterlockedIncrement64|__int64 _InterlockedIncrement64 (\_volatile _int64 \*)|
-|_InterlockedIncrement64_acq|__int64 _InterlockedIncrement64_acq (\_volatile _int64 \*)|
-|_InterlockedIncrement64_nf|__int64 _InterlockedIncrement64_nf (\_volatile _int64 \*)|
-|_InterlockedIncrement64_rel|__int64 _InterlockedIncrement64_rel (\_volatile _int64 \*)|
-|_InterlockedIncrement_acq|긴 _InterlockedIncrement_acq (long volatile \*)|
-|_InterlockedIncrement_nf|긴 _InterlockedIncrement_nf (long volatile \*)|
-|_InterlockedIncrement_rel|긴 _InterlockedIncrement_rel (long volatile \*)|
+|_InterlockedIncrement|long __cdecl _InterlockedIncrement(long volatile \*)|
+|_InterlockedIncrement16|short _InterlockedIncrement16(short volatile \*)|
+|_InterlockedIncrement16_acq|short _InterlockedIncrement16_acq(short volatile \*)|
+|_InterlockedIncrement16_nf|short _InterlockedIncrement16_nf(short volatile \*)|
+|_InterlockedIncrement16_rel|short _InterlockedIncrement16_rel(short volatile \*)|
+|_InterlockedIncrement64|__int64 _InterlockedIncrement64(\__int64 volatile \*)|
+|_InterlockedIncrement64_acq|__int64 _InterlockedIncrement64_acq(\__int64 volatile \*)|
+|_InterlockedIncrement64_nf|__int64 _InterlockedIncrement64_nf(\__int64 volatile \*)|
+|_InterlockedIncrement64_rel|__int64 _InterlockedIncrement64_rel(\__int64 volatile \*)|
+|_InterlockedIncrement_acq|long _InterlockedIncrement_acq(long volatile \*)|
+|_InterlockedIncrement_nf|long _InterlockedIncrement_nf(long volatile \*)|
+|_InterlockedIncrement_rel|long _InterlockedIncrement_rel(long volatile \*)|
 |_InterlockedOr|long _InterlockedOr (long volatile \*, long)|
-|_InterlockedOr16|짧은 _InterlockedOr16 (volatile \*, short)|
-|_InterlockedOr16_acq|짧은 _InterlockedOr16_acq (volatile \*, short)|
-|_InterlockedOr16_nf|짧은 _InterlockedOr16_nf (volatile \*, short)|
-|_InterlockedOr16_rel|짧은 _InterlockedOr16_rel (volatile \*, short)|
-|_InterlockedOr64|__int64 _InterlockedOr64 (\_volatile _int64 \*, \__int64)|
-|_InterlockedOr64_acq|__int64 _InterlockedOr64_acq (\_volatile _int64 \*, \__int64)|
-|_InterlockedOr64_nf|__int64 _InterlockedOr64_nf (\_volatile _int64 \*, \__int64)|
-|_InterlockedOr64_rel|__int64 _InterlockedOr64_rel (\_volatile _int64 \*, \__int64)|
+|_InterlockedOr16|short _InterlockedOr16(short volatile \*, short)|
+|_InterlockedOr16_acq|short _InterlockedOr16_acq(short volatile \*, short)|
+|_InterlockedOr16_nf|short _InterlockedOr16_nf(short volatile \*, short)|
+|_InterlockedOr16_rel|short _InterlockedOr16_rel(short volatile \*, short)|
+|_InterlockedOr64|__int64 _InterlockedOr64(\__int64 volatile \*, \__int64)|
+|_InterlockedOr64_acq|__int64 _InterlockedOr64_acq(\__int64 volatile \*, \__int64)|
+|_InterlockedOr64_nf|__int64 _InterlockedOr64_nf(\__int64 volatile \*, \__int64)|
+|_InterlockedOr64_rel|__int64 _InterlockedOr64_rel(\__int64 volatile \*, \__int64)|
 |_InterlockedOr8|_InterlockedOr8 char (char volatile \*, char)|
 |_InterlockedOr8_acq|_InterlockedOr8_acq char (char volatile \*, char)|
 |_InterlockedOr8_nf|_InterlockedOr8_nf char (char volatile \*, char)|
 |_InterlockedOr8_rel|_InterlockedOr8_rel char (char volatile \*, char)|
-|_InterlockedOr_acq|긴 _InterlockedOr_acq (long volatile \*, long)|
+|_InterlockedOr_acq|long _InterlockedOr_acq(long volatile \*, long)|
 |_InterlockedOr_nf|긴 _InterlockedOr_nf (long volatile \*, long)|
 |_InterlockedOr_rel|긴 _InterlockedOr_rel (long volatile \*, long)|
 |_InterlockedXor|long _InterlockedXor (long volatile \*, long)|
 |_InterlockedXor16|짧은 _InterlockedXor16 (volatile \*, short)|
-|_InterlockedXor16_acq|짧은 _InterlockedXor16_acq (volatile \*, short)|
-|_InterlockedXor16_nf|짧은 _InterlockedXor16_nf (volatile \*, short)|
-|_InterlockedXor16_rel|짧은 _InterlockedXor16_rel (volatile \*, short)|
-|_InterlockedXor64|__int64 _InterlockedXor64 (\_volatile _int64 \*, \__int64)|
-|_InterlockedXor64_acq|__int64 _InterlockedXor64_acq (\_volatile _int64 \*, \__int64)|
-|_InterlockedXor64_nf|__int64 _InterlockedXor64_nf (\_volatile _int64 \*, \__int64)|
-|_InterlockedXor64_rel|__int64 _InterlockedXor64_rel (\_volatile _int64 \*, \__int64)|
+|_InterlockedXor16_acq|short _InterlockedXor16_acq(short volatile \*, short)|
+|_InterlockedXor16_nf|short _InterlockedXor16_nf(short volatile \*, short)|
+|_InterlockedXor16_rel|short _InterlockedXor16_rel(short volatile \*, short)|
+|_InterlockedXor64|__int64 _InterlockedXor64(\__int64 volatile \*, \__int64)|
+|_InterlockedXor64_acq|__int64 _InterlockedXor64_acq(\__int64 volatile \*, \__int64)|
+|_InterlockedXor64_nf|__int64 _InterlockedXor64_nf(\__int64 volatile \*, \__int64)|
+|_InterlockedXor64_rel|__int64 _InterlockedXor64_rel(\__int64 volatile \*, \__int64)|
 |_InterlockedXor8|_InterlockedXor8 char (char volatile \*, char)|
 |_InterlockedXor8_acq|_InterlockedXor8_acq char (char volatile \*, char)|
 |_InterlockedXor8_nf|_InterlockedXor8_nf char (char volatile \*, char)|
@@ -2575,7 +2575,7 @@ Interlocked 내장 함수는 원자성 읽기-수정-쓰기 작업을 수행하�
 
 [[NEON](#top)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [ARM 어셈블러 참조](../assembler/arm/arm-assembler-reference.md)<br/>

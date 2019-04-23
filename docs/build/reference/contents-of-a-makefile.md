@@ -5,12 +5,12 @@ helpviewer_keywords:
 - makefiles
 - makefiles, contents
 ms.assetid: 29362adb-d963-4c00-84a6-b38c2ffe6a36
-ms.openlocfilehash: 5a88edaf2296ad437610c91b41ea53845a4984b0
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 59aa21e74a7e127816fea7534861469579d5b60f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826692"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59021516"
 ---
 # <a name="contents-of-a-makefile"></a>메이크파일의 내용
 
@@ -34,6 +34,6 @@ ms.locfileid: "57826692"
 
 샘플을 보려면 [샘플 메이크파일](sample-makefile.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [NMAKE 참조](nmake-reference.md)

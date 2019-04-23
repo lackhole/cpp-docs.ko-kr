@@ -21,37 +21,37 @@ helpviewer_keywords:
 - .NET [C++], porting C++ native to
 ms.assetid: 5f710bf1-88ae-4c4e-8326-b3f0b7c4c68a
 ms.openlocfilehash: aaa07373b7dd22807290ceefa9197b4013c61fe5
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58778236"
 ---
 # <a name="using-c-interop-implicit-pinvoke"></a>C++ Interop 사용(암시적 PInvoke)
 
-다른.NET 언어와 달리 Visual c + +에서는 동일한 응용 프로그램 및 동일한 파일에도 존재 하는 관리 및 비관리 코드를 허용 하는 상호 운용성 지원 (사용 하 여 합니다 [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md) pragma). Visual c + + 개발자를 응용 프로그램의 나머지 부분을 방해 하지 않고 기존 Visual c + + 응용 프로그램에.NET 기능을 통합할 수 있습니다.
+다른.NET 언어와 Visual 달리 C++ 는 동일한 응용 프로그램 및 동일한 파일에도 존재 하는 관리 및 비관리 코드를 허용 하는 상호 운용성 지원 (사용 하 여를 [managed, unmanaged](../preprocessor/managed-unmanaged.md) pragma). 이렇게 하면 시각적 개체 C++ 기존 시각적 개체를.NET 기능을 통합 하는 개발자 C++ 응용 프로그램의 나머지 부분에 영향을 주지 않고 응용 프로그램입니다.
 
 사용 하 여 관리 되는 compiland에서 관리 되지 않는 함수를 호출할 수도 있습니다 [dllexport, dllimport](../cpp/dllexport-dllimport.md)합니다.
 
 암시적 PInvoke 함수 매개 변수를 마샬링하는 방법을, 또는 DllImportAttribute를 명시적으로 호출 하는 경우 지정 될 수 있는 다른 정보를 지정 해야 하는 경우에 유용 합니다.
 
-Visual c + +에는 상호 운용 하도록 관리 되는 관리 되지 않는 함수에 대 한 두 가지 방법을 제공 합니다.
+Visual C++ 상호 운용 하도록 관리 되는 관리 되지 않는 함수에 대 한 두 가지 방법을 제공 합니다.
 
 - [C++에서 명시적 PInvoke 사용(DllImport 특성)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
 
-명시적 PInvoke.NET Framework에서 지원 되 고 대부분의.NET 언어에서 사용할 수 있습니다. 하지만 해당 이름에서 알 수 있듯이, c + + Interop Visual c + +에 따라 다릅니다.
+명시적 PInvoke.NET Framework에서 지원 되 고 대부분의.NET 언어에서 사용할 수 있습니다. 이름에서 알 수 있듯이 하지만 C++ Interop이 특정 시각적 개체 C++합니다.
 
 ## <a name="c-interop"></a>C++ Interop
 
-C + + Interop이는 일반적으로 작은 구현 되기 번거로울, 경우 더 넓어서 관리 되지 않는 API 수정 되는 가능 하지 않은 성능 개선 가능한 명시적 형식 안전성 향상을 제공 하기 때문에 명시적 PInvoke 통해 좋습니다. PInvoke입니다. 그러나 c + + Interop는 관리 되지 않는 소스 코드를 사용할 수 없는 경우에 수는 없습니다.
+C++일반적으로 작은 구현 되기 번거로울, 경우 더 넓어서 관리 되지 않는 API 수정 되는 가능 하지 않은 성능 개선 가능한 명시적 형식 안전성 향상을 제공 하기 때문에 명시적 PInvoke 통해 interop이 좋습니다. PInvoke입니다. 그러나 C++ Interop는 관리 되지 않는 소스 코드를 사용할 수 없는 경우에 수는 없습니다.
 
 ## <a name="c-com-interop"></a>C++ COM Interop
 
-COM 구성 요소와의 상호 운용 하는 데 있어 특별 한 이점은 다른.NET 언어에 비해를 제공 하는 상호 운용성 기능을 Visual c + + 지원 합니다. .NET Framework의 제한으로 제한 하지 않고 [Tlbimp.exe (형식 라이브러리 가져오기)](/dotnet/framework/tools/tlbimp-exe-type-library-importer), 데이터 형식 및 모든 COM 인터페이스의 모든 멤버의 필수 노출을 제한 지원과 같은 c + + Interop 허용 COM 구성 요소에서 액세스할 수 되며 개별 interop 어셈블리를 필요 하지 않습니다. Visual Basic 달리 및 C#, Visual c + +에서 일반적인 COM 메커니즘을 사용 하 여 직접 COM 개체를 사용할 수 (같은 **CoCreateInstance** 하 고 **QueryInterface**). 이것이 자동으로 관리 되지 않는 관리 되는 함수에서 이동한 후 다시 전환 코드를 삽입 하도록 컴파일러에 발생 되는 c + + Interop 기능으로 인해 가능 합니다.
+시각적 개체를 지 원하는 상호 운용성 기능 C++ COM 구성 요소와의 상호 운용 하는 데 있어 특별 한 이점은 다른.NET 언어에 비해를 제공 합니다. .NET Framework의 제한으로 제한 하지 않고 [Tlbimp.exe (형식 라이브러리 가져오기)](/dotnet/framework/tools/tlbimp-exe-type-library-importer)데이터 형식에 대 한 제한 된 지원 등 모든 COM 인터페이스의 모든 멤버의 필수 노출을, C++ Interop COM 구성 요소에는 액세스할 수 있으며 개별 interop 어셈블리를 필요 하지 않습니다. Visual Basic 달리 및 C#, Visual C++ 일반적인 COM 메커니즘을 사용 하 여 직접 COM 개체를 사용할 수 (같은 **CoCreateInstance** 하 고 **QueryInterface**). 이것이 가능한 것으로 인해 C++ Interop 기능을 사용 하면 컴파일러가 자동으로에서 관리 되는 관리 되지 않는 함수를 이동한 후 다시 전환 코드를 삽입 합니다.
 
-C + + Interop를 사용 하 여 COM 구성 요소 수 일반적으로 사용 되는 또는 c + + 클래스 내에서 래핑할 수 있습니다. 간단히 줄여 Crcw에 있으며 두 가지 이점이 있습니다 COM을 사용 하 여 응용 프로그램 코드에서 직접 또는 이러한 래퍼 클래스 사용자 지정 런타임 호출 가능 래퍼를 라고 합니다.
+사용 하 여 C++ Interop, COM 구성 요소 내에서 래핑할 수 있습니다 또는 일반적으로 사용 되는 사용할 수 있습니다 C++ 클래스입니다. 간단히 줄여 Crcw에 있으며 두 가지 이점이 있습니다 COM을 사용 하 여 응용 프로그램 코드에서 직접 또는 이러한 래퍼 클래스 사용자 지정 런타임 호출 가능 래퍼를 라고 합니다.
 
-- 결과 클래스에서 Visual c + + 이외의 언어로 사용할 수 있습니다.
+- 결과 클래스는 시각적 개체 이외의 언어에서 사용할 수 있습니다 C++입니다.
 
 - 관리 되는 클라이언트 코드에서 COM 인터페이스의 세부 정보를 숨길 수 있습니다. .NET 데이터 형식을 기본 형식 대신 사용할 수 있습니다 하 고 내용을 CRCW 내 데이터 마샬링을의 세부 정보를 투명 하 게 수행할 수 있습니다.
 
@@ -143,7 +143,7 @@ Done
 
 - [방법: C#에서 사용하기 위해 네이티브 클래스 래핑](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)
 
-대리자를 사용 하 여 interop 시나리오에서에 대 한 내용은 참조 하세요 [delegate (c + + 구성 요소 확장)](../extensions/delegate-cpp-component-extensions.md)합니다.
+대리자를 사용 하 여 interop 시나리오에서에 대 한 내용은 참조 하세요 [대리자 (C++ 구성 요소 확장)](../extensions/delegate-cpp-component-extensions.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

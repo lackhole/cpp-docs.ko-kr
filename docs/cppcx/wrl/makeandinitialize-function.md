@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::MakeAndInitialize
 ms.assetid: 71ceeb12-d2a2-4317-b010-3dcde1b39467
-ms.openlocfilehash: ba34b1fde546187e823a73a063bce9f69f4e7e89
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 14ae5117194748748ceecf97ac83fc8813bba2d3
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58784935"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037486"
 ---
 # <a name="makeandinitialize-function"></a>MakeAndInitialize 함수
 
@@ -117,6 +117,6 @@ HRESULT 값입니다.
 
 **네임스페이스:** Microsoft::WRL::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)

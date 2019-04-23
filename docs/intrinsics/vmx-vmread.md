@@ -7,12 +7,12 @@ helpviewer_keywords:
 - VMREAD instruction
 - __vmx_vmread intrinsic
 ms.assetid: 08bdd7a0-6435-4ea6-b9a0-f592d870e5aa
-ms.openlocfilehash: 0a4528bed4426ce5b611e986a69f4b0b8c750548
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5c7b72ba3bf1bd60324704b774bcedaf5612240f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499101"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59028388"
 ---
 # <a name="vmxvmread"></a>__vmx_vmread
 
@@ -58,7 +58,7 @@ unsigned char __vmx_vmread(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [__vmx_vmwrite](../intrinsics/vmx-vmwrite.md)

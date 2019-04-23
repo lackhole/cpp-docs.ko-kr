@@ -1,5 +1,5 @@
 ---
-title: 액셀러레이터 키 편집기 (c + +)
+title: 액셀러레이터 키 편집기 (C++)
 ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.accelerator.F1
@@ -33,16 +33,16 @@ helpviewer_keywords:
 - keyboard shortcuts [C++], property changing
 - accelerator tables [C++], changing properties
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
-ms.openlocfilehash: 4ed283b9be2afdacfbc93c647c7633fb7802e7fd
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: f5ae9880719a3a8b799ea8deb751b6f0a85542bd
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328404"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041126"
 ---
-# <a name="accelerator-editor-c"></a>액셀러레이터 키 편집기 (c + +)
+# <a name="accelerator-editor-c"></a>액셀러레이터 키 편집기 (C++)
 
-액셀러레이터 키 테이블에는 바로 가기 키와 연관 된 명령 식별자 라고 액셀러레이터 키의 목록을 포함 하는 c + + Windows 리소스입니다. 프로그램에는 액셀러레이터 키 테이블이 두 개 이상 있을 수 있습니다.
+액셀러레이터 키 테이블은는 C++ 바로 가기 키와 연관 된 명령 식별자 라고 액셀러레이터 키의 목록을 포함 하는 Windows 리소스입니다. 프로그램에는 액셀러레이터 키 테이블이 두 개 이상 있을 수 있습니다.
 
 일반적으로 액셀러레이터 키는 메뉴 또는 도구 모음에서도 사용할 수 있는 프로그램 명령에 대한 바로 가기 키로 사용됩니다. 그러나 연결된 사용자 인터페이스 개체가 없는 명령에 대한 키 조합을 정의하는 데 액셀러레이터 키 테이블을 사용할 수 있습니다.
 
@@ -110,7 +110,7 @@ ms.locfileid: "58328404"
 
 ## <a name="accelerator-tables"></a>액셀러레이터 키 테이블
 
-C + + 프로젝트에서 직접 사용 하 여 현재 위치에서 편집 액셀러레이터 키 테이블을 편집할 수 있습니다 합니다 **액셀러레이터 키 편집기**합니다.
+에 C++ 프로젝트에 액셀러레이터 키 테이블에서 전체 편집으로 직접 편집할 수 있습니다는 **액셀러레이터 키 편집기**합니다.
 
 표준 속성 페이지를 사용 하려면 아래 절차 참조, 바로 편집 기능 및 방법 모두 결과가 동일 합니다. 변경 내용을 속성 페이지를 사용 하 여 또는 내부 편집을 사용 하 여 액셀러레이터 키 테이블에 즉시 반영 됩니다.
 
@@ -190,7 +190,7 @@ C + + 프로젝트에서 직접 사용 하 여 현재 위치에서 편집 액셀
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
 [액셀러레이터 키](../windows/predefined-accelerator-keys.md)<br/>

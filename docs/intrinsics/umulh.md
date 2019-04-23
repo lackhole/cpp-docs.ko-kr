@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __umulh intrinsic
 ms.assetid: d241b53a-e6f7-4af1-9f6e-84e149158f03
-ms.openlocfilehash: 6a0d427f32e275725177b10f01565e6947760f09
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 3a42de276b483f98e2eaf9d0c8505d7f1d5b5bca
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328549"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026567"
 ---
 # <a name="umulh"></a>__umulh
 
@@ -80,6 +80,6 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

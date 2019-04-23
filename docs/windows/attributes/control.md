@@ -1,17 +1,17 @@
 ---
-title: 컨트롤 (c + + COM 특성)
+title: 컨트롤 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.control
 helpviewer_keywords:
 - Control attribute
 ms.assetid: 3d046bb2-4afe-4cb8-a762-233b296e1975
-ms.openlocfilehash: 9a0aec5ec2142159feb592419056da0f100914d8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 223acf774d1cc90d84aed2d0d0c8cb59fc778fa1
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482097"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034714"
 ---
 # <a name="control"></a>컨트롤
 
@@ -25,7 +25,7 @@ ms.locfileid: "50482097"
 
 ## <a name="remarks"></a>설명
 
-**제어** 특성을 의미 합니다 [coclass](coclass.md) 특성입니다. **제어** c + + 특성에 동일한 기능을 합니다 [컨트롤](/windows/desktop/Midl/control) MIDL 특성입니다.
+**제어** 특성을 의미 합니다 [coclass](coclass.md) 특성입니다. **컨트롤** C++ 특성에 동일한 기능을 합니다 [컨트롤](/windows/desktop/Midl/control) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -50,14 +50,14 @@ class CTest : public ICustom {};
 
 |||
 |-|-|
-|**적용 대상**|**클래스**, **구조체**|
+|**적용 대상**|**class**, **struct**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>

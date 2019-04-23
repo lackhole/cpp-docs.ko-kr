@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ODBC, about ODBC
 - ODBC, components
 ms.assetid: ec529702-0fb2-4754-b8de-d1efa8eca18f
-ms.openlocfilehash: 81b1f6d06d909b5b046703b97c4574270efbdd46
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e14f5d051b9684cd79a34f5fb50feeb785d2f927
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591726"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033244"
 ---
 # <a name="odbc-basics"></a>ODBC 기초
 
@@ -28,7 +28,7 @@ ms.locfileid: "50591726"
 관련된 항목을 읽어 하고자 [ODBC: ODBC 커서 라이브러리](../../data/odbc/odbc-the-odbc-cursor-library.md)합니다.
 
 > [!NOTE]
-> ODBC 데이터 원본 MFC 데이터 액세스 개체 (DAO) 클래스 또는이 항목에 설명 된 대로 MFC ODBC 클래스를 통해 액세스할 수 있습니다.
+> ODBC 데이터 소스는 이 항목에서 설명하는 MFC ODBC 클래스뿐 아니라 MFC Data Access Object(DAO) 클래스를 통해서도 액세스할 수 있습니다.
 
 > [!NOTE]
 > MFC ODBC 클래스에는 유니코드 지원 및 다중 스레딩 합니다. 다중 스레딩 지원에 대 한 자세한 내용은 참조 하세요. [ODBC 클래스와 스레드](../../data/odbc/odbc-classes-and-threads.md)
@@ -63,8 +63,8 @@ ODBC는 데이터베이스 부분의는 Microsoft Windows 열기 Services 아키
 
 데이터베이스 클래스는 ODBC 드라이버가 있는 모든 데이터 소스를 지원 합니다. 여기 들어 예를 들어, 관계형 데이터베이스, 인덱싱된 순차 액세스 메서드 (ISAM) 데이터베이스, Microsoft Excel 스프레드시트 또는 텍스트 파일에 포함 됩니다. ODBC 드라이버로 데이터 원본에 대 한 연결을 관리 하 고 SQL을 사용 하 여 데이터베이스에서 레코드를 선택 합니다.
 
-이 버전의 Visual c + +에 포함 된 ODBC 드라이버의 목록을 추가 드라이버를 가져오는 방법은 참조 [ODBC 드라이버 목록](../../data/odbc/odbc-driver-list.md)합니다.
+시각적 개체의이 버전에 포함 된 ODBC 드라이버의 목록은 C++ 추가 드라이버를 얻는 방법에 대 한 자세한 내용은 참조 [ODBC 드라이버 목록](../../data/odbc/odbc-driver-list.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

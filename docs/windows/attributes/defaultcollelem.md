@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - defaultcollelem attribute
 ms.assetid: 3dbbd293-8b83-4f70-a36b-64cc1d0b6713
-ms.openlocfilehash: 1120415e8babdc5df422fffb292a1ec9246a2165
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: be4ea7097bd811444fca050525338931867998d0
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487492"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023336"
 ---
 # <a name="defaultcollelem"></a>defaultcollelem
 
@@ -25,7 +25,7 @@ Visual Basic 코드 최적화를 위해 사용 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **defaultcollelem** c + + 특성에 동일한 기능을 합니다 [defaultcollelem](/windows/desktop/Midl/defaultcollelem) MIDL 특성입니다.
+**defaultcollelem** C++ 특성에 동일한 기능을 합니다 [defaultcollelem](/windows/desktop/Midl/defaultcollelem) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -57,7 +57,7 @@ __interface IMyForm
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)

@@ -1,5 +1,5 @@
 ---
-title: '#가져올 지시문 (c + +)'
+title: '#import 지시문 (C++)'
 ms.date: 03/27/2019
 f1_keywords:
 - '#import'
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - preprocessor, directives
 - COM, type library header file
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
-ms.openlocfilehash: 72fd1d025ab19b7db9521e08655d00936b77581e
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: 98a0f9f66fb209bb41215fc1e86a9682a4fed023
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58564961"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031987"
 ---
 # <a name="import-directive-c"></a>#import 지시문 (C++)
 
-**C + + 전용**
+**C++특정**
 
 형식 라이브러리의 정보를 통합하는 데 사용됩니다. 형식 라이브러리의 콘텐츠는 대부분 COM 인터페이스를 설명하는 C++ 클래스로 변환됩니다.
 
@@ -109,7 +109,7 @@ progid를 지정할 때 progid의 지역화 ID 및 버전 번호를 지정할 �
 
 ##  <a name="_predir_the_23import_directive_header_files_created_by_import"></a> 가져오기로 만든 헤더 파일
 
-**#import** c + + 소스 코드에서 형식 라이브러리 콘텐츠를 다시 생성 하는 두 개의 헤더 파일을 만듭니다. 기본 헤더 파일은 MIDL(Microsoft Interface Definition Language) 컴파일러에 의해 생성된 파일과 비슷하지만 컴파일러에서 생성된 코드와 데이터를 파일 내에 추가합니다. 합니다 [기본 헤더 파일](#_predir_the_primary_type_library_header_file) 형식 라이브러리와 동일한 기본 이름을 가진 및 합니다. TLH 확장입니다. 보조 헤더 파일은 .TLI 확장명을 가진 형식 라이브러리와 같은 기본 이름을 가집니다. 이 파일은 컴파일러에서 생성된 멤버 함수에 대한 구현을 포함하고 기본 헤더 파일에 포함(`#include`)되어 있습니다.
+**#import** 의 형식 라이브러리 콘텐츠를 다시 생성 하는 두 개의 헤더 파일을 만듭니다 C++ 소스 코드입니다. 기본 헤더 파일은 MIDL(Microsoft Interface Definition Language) 컴파일러에 의해 생성된 파일과 비슷하지만 컴파일러에서 생성된 코드와 데이터를 파일 내에 추가합니다. 합니다 [기본 헤더 파일](#_predir_the_primary_type_library_header_file) 형식 라이브러리와 동일한 기본 이름을 가진 및 합니다. TLH 확장입니다. 보조 헤더 파일은 .TLI 확장명을 가진 형식 라이브러리와 같은 기본 이름을 가집니다. 이 파일은 컴파일러에서 생성된 멤버 함수에 대한 구현을 포함하고 기본 헤더 파일에 포함(`#include`)되어 있습니다.
 
 Byref 매개 변수를 사용 하는 dispinterface 속성을 가져올 경우 #import __declspec를 생성 하지 것입니다 ([속성](../cpp/property-cpp.md)) 함수에 대 한 문입니다.
 
@@ -189,9 +189,9 @@ using namespace MyLib;
 
 자세한 내용은 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)합니다.
 
-**C + + 전용 종료**
+**최종 C++ 특정**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)<br/>
 [컴파일러 COM 지원](../cpp/compiler-com-support.md)

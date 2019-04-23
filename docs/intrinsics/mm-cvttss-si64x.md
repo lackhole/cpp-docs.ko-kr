@@ -7,12 +7,12 @@ helpviewer_keywords:
 - _mm_cvttss_si64x intrinsic
 - cvttss2si instruction
 ms.assetid: f9a3fd07-5bd8-4758-8744-6315c082cf87
-ms.openlocfilehash: 2097ec50eca68cbe5735d30e772644552ab0df3b
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: cfdea6ded622cbcbe42bd555edb3029fabad7823
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329022"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023713"
 ---
 # <a name="mmcvttsssi64x"></a>_mm_cvttss_si64x
 
@@ -87,7 +87,7 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [__m128](../cpp/m128.md)<br/>
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

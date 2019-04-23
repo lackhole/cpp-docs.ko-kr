@@ -9,16 +9,16 @@ helpviewer_keywords:
 - components [C++]
 - components [C++], redistributing
 ms.assetid: 17b065b4-a307-4b89-99ac-d05831cfab87
-ms.openlocfilehash: cfbe6b2c440f84a4c470255bc964adf6c5145cf1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a6ec6f5fdd3c32080d357ca58d31ccea271b7a4
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676788"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59040097"
 ---
 # <a name="redistributing-odbc-components-to-your-customers"></a>고객에게 ODBC 구성 요소 재배포
 
-응용 프로그램을 ODBC 관리자 프로그램의 기능을 통합 하는 경우 배포 해야 합니다도 사용자에 게 이러한 프로그램을 실행 하는 파일입니다. 이 ODBC 파일의 Visual c + + CD-ROM \OS\System 디렉터리에 상주합니다. Redistrb.wri 파일과 동일한 디렉터리에 사용권 계약에는 재배포할 수 있는 ODBC 파일의 목록을 포함 합니다.
+응용 프로그램을 ODBC 관리자 프로그램의 기능을 통합 하는 경우 배포 해야 합니다도 사용자에 게 이러한 프로그램을 실행 하는 파일입니다. ODBC 파일 이러한 시각적 개체의 \OS\System 디렉터리에 있는 C++ CD-ROM 합니다. Redistrb.wri 파일과 동일한 디렉터리에 사용권 계약에는 재배포할 수 있는 ODBC 파일의 목록을 포함 합니다.
 
 제공 하려는 모든 ODBC 드라이버 설명서를 참조 하세요. Dll 및 기타 파일을 확인 해야 합니다. 또한 읽어야 [고객에 게 ODBC 구성 요소 재배포](../../data/odbc/redistributing-odbc-components-to-your-customers.md), ODBC 구성 요소를 재배포 하는 방법을 설명 합니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "50676788"
 
 - [ODBC: ODBC API 함수 직접 호출](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC 기본 사항](../../data/odbc/odbc-basics.md)<br/>
 [ODBC 관리자](../../data/odbc/odbc-administrator.md)

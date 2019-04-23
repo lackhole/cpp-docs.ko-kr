@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE DB services [OLE DB]
 - OLE DB providers, resource pooling
 ms.assetid: 360c36e2-25ae-4caf-8ee7-d4a6b6898f68
-ms.openlocfilehash: 1fb5164b9e744175f60c920a1d92278e9d5213f2
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: f46c6f493ae41570c75c384fcc836707faeab99f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51264660"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023752"
 ---
 # <a name="ole-db-resource-pooling-and-services"></a>OLE DB 리소스 풀링 및 서비스
 
@@ -28,6 +28,6 @@ OLE DB 풀링, 또는 모든 OLE DB 서비스를 사용 하 여 제대로 작동
 
 마지막으로, 자동 트랜잭션 인 리스트 먼 트 일반적으로 작동 하지 풀링 발생 하는 동일한 수준에서 구현 됩니다. 자동 트랜잭션 인 리스트 먼 트를 지 원하는 공급자는 DBPROP_INIT_OLEDBSERVICES 속성을 노출 하 고는 DBPROPVAL_OS_TXNENLISTMENT 선택이 취소 되는 경우 인 리스트 먼 트를 사용 하지 않도록 설정 하 여이 인 리스트 먼이 트를 비활성화를 지원 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [고급 공급자 기술](../../data/oledb/advanced-provider-techniques.md)

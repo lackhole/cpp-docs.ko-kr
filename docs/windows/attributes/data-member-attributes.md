@@ -1,17 +1,17 @@
 ---
-title: 데이터 멤버 특성 (c + + COM)
+title: 데이터 멤버 특성 (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 - data members [C++], attributes
 - data members [C++]
 ms.assetid: 95b2397d-1daf-4ae4-8cd0-06956d005b13
-ms.openlocfilehash: e188f4d9ad2c553ff142e45ec84bc0a04630b816
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad21ed16eee8cd14e8f798450ff385d5f429a280
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512933"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041152"
 ---
 # <a name="data-member-attributes"></a>데이터 멤버 특성
 
@@ -31,8 +31,8 @@ ms.locfileid: "50512933"
 |[range](range-cpp.md)|인수 값은 런타임에 설정 된 필드에 허용 되는 값의 범위를 지정 합니다.|
 |[rdx](rdx.md)|레지스트리 키를 만들거나 기존 레지스트리 키를 수정 합니다.|
 |[readonly](readonly-cpp.md)|데이터 멤버에 대한 할당을 금지합니다.|
-|[requestedit](requestedit.md)|속성을 지원함을 나타냅니다는 `OnRequestEdit` 알림.|
+|[requestedit](requestedit.md)|속성이 `OnRequestEdit` 알림을 지원함을 나타냅니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [용도별 특성](attributes-by-usage.md)

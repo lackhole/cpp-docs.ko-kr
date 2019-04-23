@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - MixIn structure
 ms.assetid: 47e2df9b-3a2e-4ae8-8ba3-b1fd3aa73566
-ms.openlocfilehash: d0306f4c497dd26e782b1ef2c012cb7d348db07f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 16fd6b46d616df7163a304afa7f32ac3c095d398
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785733"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031078"
 ---
 # <a name="mixin-structure"></a>MixIn 구조체
 
@@ -54,6 +54,6 @@ Windows 런타임 및 COM 클래스 인터페이스에서 파생 된 클래스�
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL 네임스페이스](microsoft-wrl-namespace.md)

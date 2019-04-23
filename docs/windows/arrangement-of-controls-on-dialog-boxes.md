@@ -1,5 +1,5 @@
 ---
-title: '방법: 레이아웃 컨트롤 (c + +) | Microsoft Docs'
+title: '방법: 레이아웃 컨트롤 (C++) | Microsoft Docs'
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.dialog.grouping
@@ -80,14 +80,14 @@ helpviewer_keywords:
 - CListBox class, scroll bar width
 - scroll bars [C++], width
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
-ms.openlocfilehash: 3d79e48411006156ee4682adc736e83e226743af
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 878b7371dfa77880d68f1001444ed44b84d7240c
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562980"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037423"
 ---
-# <a name="how-to-layout-controls-c"></a>방법: 레이아웃 컨트롤 (c + +)
+# <a name="how-to-layout-controls-c"></a>방법: 레이아웃 컨트롤 (C++)
 
 합니다 **대화 상자 편집기** 정렬 컨트롤을 자동으로 크기를 레이아웃 도구를 제공 합니다. 대부분의 작업을 사용 합니다 [대화 상자 편집기 도구 모음](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)합니다. 모든 **대화 상자 편집기** 도구 모음 명령에서 사용할 수 있습니다 합니다 **형식** 메뉴와 대부분 [바로 가기 키](../windows/accelerator-keys-for-the-dialog-editor.md)합니다.
 
@@ -283,7 +283,7 @@ ms.locfileid: "57562980"
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자 컨트롤 관리](controls-in-dialog-boxes.md)<br/>
 [방법: 추가, 편집 또는 삭제 컨트롤](adding-editing-or-deleting-controls.md)<br/>

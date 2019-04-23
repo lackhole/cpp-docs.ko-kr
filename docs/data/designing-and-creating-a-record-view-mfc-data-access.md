@@ -9,12 +9,12 @@ helpviewer_keywords:
 - application wizards [C++], creating record view classes
 - designing record views
 ms.assetid: 1d6f5439-754f-4b8b-a19d-841a4657827b
-ms.openlocfilehash: b97ac5e61530742280dd8ee2183ec54229fb4441
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15a8afde8c86d3dae8198e8f42b2b7c3b49f0dfa
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613449"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59035545"
 ---
 # <a name="designing-and-creating-a-record-view--mfc-data-access"></a>레코드 뷰 디자인 및 만들기  (MFC Data Access)
 
@@ -40,7 +40,7 @@ ms.locfileid: "50613449"
 
 - [레코드 뷰: 두 번째 레코드 집합에서 목록 상자 채우기](../data/filling-a-list-box-from-a-second-recordset-mfc-data-access.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 뷰(MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [레코드 집합(ODBC)](../data/odbc/recordset-odbc.md)<br/>

@@ -34,12 +34,12 @@ helpviewer_keywords:
 - InterlockedXor64 intrinsic
 - _InterlockedXor intrinsic
 ms.assetid: faef1796-cb5a-4430-b1e2-9d5eaf9b4a91
-ms.openlocfilehash: 8410420564ae641ff5e624cc5a1ddb0f260672e6
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: c86a743df84df37ffe3234d82d79abd987a4dcda
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627379"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023140"
 ---
 # <a name="interlockedxor-intrinsic-functions"></a>_InterlockedXor Intrinsic Functions
 
@@ -153,7 +153,7 @@ __int64 _InterlockedXor64_rel(
 *값*<br/>
 [out에서] 결과 교체 첫 번째 피연산자에 대 한 포인터입니다.
 
-*마스크*<br/>
+*Mask*<br/>
 [in] 두 번째 피연산자입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -162,7 +162,7 @@ __int64 _InterlockedXor64_rel(
 
 ## <a name="requirements"></a>요구 사항
 
-|내장 함수|아키텍처|머리글|
+|내장 함수|아키텍처|헤더|
 |---------------|------------------|------------|
 |`_InterlockedXor`, `_InterlockedXor8`, `_InterlockedXor16`, `_InterlockedXor64`|x86, ARM, x64|\<intrin.h>|
 |`_InterlockedXor_acq`, `_InterlockedXor_nf`, `_InterlockedXor_rel`, `_InterlockedXor8_acq`, `_InterlockedXor8_nf`, `_InterlockedXor8_rel`, `_InterlockedXor16_acq`, `_InterlockedXor16_nf`, `_InterlockedXor16_rel`, `_InterlockedXor64_acq`, `_InterlockedXor64_nf`, `_InterlockedXor64_rel`,|ARM|\<intrin.h>|
@@ -204,7 +204,7 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

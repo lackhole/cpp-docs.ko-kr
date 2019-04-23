@@ -1,17 +1,17 @@
 ---
-title: 모듈 (c + + COM 특성)
+title: 모듈 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.module
 helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-ms.openlocfilehash: bafdb65f255ddf33964d22e5ea80a62446c2ad45
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 5c69e0aa9e3444ec9b43470f8feb4d1f870dc9c8
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893524"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59040582"
 ---
 # <a name="module-c"></a>module(C++)
 
@@ -159,7 +159,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>

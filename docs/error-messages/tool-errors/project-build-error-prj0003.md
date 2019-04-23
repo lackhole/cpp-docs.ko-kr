@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0003
 ms.assetid: fc5a84bb-c6d3-41d6-8dd6-475455820778
-ms.openlocfilehash: a6530045870573921cf626ceeec4c1dca10cdbfb
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 00d101e62d49078ebfcfff9455497f30224b84fe
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816180"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039522"
 ---
 # <a name="project-build-error-prj0003"></a>프로젝트 빌드 오류 PRJ0003
 
@@ -31,6 +31,6 @@ ms.locfileid: "57816180"
 
 - 메이크파일 프로젝트에 대 한 중 하나에서 실행 하는 명령을 누락 **명령줄 빌드** 하거나 **다시 빌드 명령줄**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프로젝트 빌드 오류 및 경고(PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

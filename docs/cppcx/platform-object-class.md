@@ -13,10 +13,10 @@ helpviewer_keywords:
 - Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
 ms.openlocfilehash: 77313f8c4dcc87fa9de852afe2d60e614f8fc3a3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781018"
 ---
 # <a name="platformobject-class"></a>Platform::Object 클래스
@@ -156,7 +156,7 @@ public:static bool ReferenceEquals(  Object^ obj1,   Object^ obj2);
 
 **true 이면** 두 개체가 동일 하면이 고, 그렇지 **false**합니다.
 
-## <a name="tostring"></a>  Object:: tostring 메서드 (C + + /cli CX)
+## <a name="tostring"></a>  Object:: tostring 메서드 (C++/CX)
 
 현재 개체를 나타내는 문자열을 반환합니다.
 

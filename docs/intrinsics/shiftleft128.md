@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __shiftleft128 intrinsic
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
-ms.openlocfilehash: 4fb1f9e65210ca9f9e38afd6fc13e01c7eb8f045
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 5fcb797694c7a45dc4f2113f3d2ed4a2f578c894
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51325568"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59024857"
 ---
 # <a name="shiftleft128"></a>__shiftleft128
 
@@ -96,7 +96,7 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [__shiftright128](../intrinsics/shiftright128.md)<br/>
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

@@ -1,5 +1,5 @@
 ---
-title: '#줄 지시문 (C/c + +)'
+title: '#줄 지시문 (C /C++)'
 ms.date: 10/18/2017
 f1_keywords:
 - '#line'
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - line directive (#line)
 - '#line directive'
 ms.assetid: 585c1dc4-5184-4f01-98f4-80c1909744d7
-ms.openlocfilehash: e478d287af097081910d192e2ac0fbee6890bfa2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad0fe1514e89b861bab046652b1768862cc8045b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614762"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023739"
 ---
 # <a name="line-directive-cc"></a>#line 지시문 (C/C++)
 
@@ -21,7 +21,7 @@ ms.locfileid: "50614762"
 
 ## <a name="syntax"></a>구문
 
-> **#line** *숫자 시퀀스* ["*filename*"]
+> **#line** *digit-sequence* ["*filename*"]
 
 ## <a name="remarks"></a>설명
 
@@ -51,6 +51,6 @@ ms.locfileid: "50614762"
 __LINE__, __FILE__ );}
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)

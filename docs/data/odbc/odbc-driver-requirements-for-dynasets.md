@@ -9,12 +9,12 @@ helpviewer_keywords:
 - dynasets
 - ODBC drivers, dynasets
 ms.assetid: 585cc67b-4d92-404b-9903-d769cd17badc
-ms.openlocfilehash: a92b8a7a7236a51c3506c4d46dad31a03b2f10d3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: c44e34023ecdeb994ea3a60ea3b699cd5b1488a3
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521585"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023830"
 ---
 # <a name="odbc-driver-requirements-for-dynasets"></a>다이너셋에 대한 ODBC 드라이버 요구 사항
 
@@ -25,6 +25,6 @@ ODBC 용어에서 다이너셋 및 스냅숏을 라고 커서입니다. 커서�
 > [!NOTE]
 >  ODBC 드라이버를 업데이트할 수 있는 레코드 집합 위치 지정된 update 문 중 하나를 지원 해야 합니다 또는 `::SQLSetPos` ODBC API 함수입니다. MFC를 사용 하는 둘 다 지 원하는 경우 `::SQLSetPos` 효율성에 대 한 합니다. 또는 스냅숏을 업데이트할 수 있는 스냅숏 (정적 커서 및 위치 지정된 update 문)에 대 한 지원 요구 사항에 제공 하는 커서 라이브러리를 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC 기본 사항](../../data/odbc/odbc-basics.md)

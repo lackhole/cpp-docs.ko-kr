@@ -12,12 +12,12 @@ helpviewer_keywords:
 - IDBCreateSessionImpl class
 - CreateSession method
 ms.assetid: 48c02c5c-8362-45ac-af8e-bb119cf8c5c7
-ms.openlocfilehash: 36f5a359051dbd5035a73514f84fb2c61ff13176
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: ae59abc542a4599d289c099801fc34d56b2b13d4
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57412928"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59028537"
 ---
 # <a name="idbcreatesessionimpl-class"></a>IDBCreateSessionImpl 클래스
 
@@ -71,7 +71,7 @@ STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
 
 참조 [idbcreatesession:: Createsession](/previous-versions/windows/desktop/ms714942(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

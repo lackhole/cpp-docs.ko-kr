@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - attributes [C++/CLI]
 ms.assetid: fb2216ef-9fbd-44f4-afed-732aa99450e2
-ms.openlocfilehash: ecf59b0d920b39d8f129e3ff25b5518f985d78f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 386afe5362f876cd1489a35839f4f8cfc2381e91
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516911"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038215"
 ---
 # <a name="attributes-alphabetical-reference"></a>특성 사전순 참조
 
@@ -103,7 +103,7 @@ ms.locfileid: "50516911"
 |[readonly](readonly-cpp.md)|변수에 할당을 금지합니다.|
 |[ref](ref-cpp.md)|참조 포인터를 식별합니다.|
 |[registration_script](registration-script.md)|지정 된 등록 스크립트를 실행합니다.|
-|[requestedit](requestedit.md)|속성을 지원함을 나타냅니다는 `OnRequestEdit` 알림.|
+|[requestedit](requestedit.md)|속성이 `OnRequestEdit` 알림을 지원함을 나타냅니다.|
 |[requires_category](requires-category.md)|클래스에 대 한 필수 구성 요소 범주를 지정합니다.|
 |[restricted](restricted.md)|라이브러리 또는 모듈, 인터페이스 또는 dispinterface의 멤버를 임의로 호출할 수 없습니다 지정 합니다.|
 |[retval](retval.md)|멤버의 반환 값을 받는 매개 변수를 지정 합니다.|
@@ -127,7 +127,7 @@ ms.locfileid: "50516911"
 |[vi_progid](vi-progid.md)|ProgID의 버전에 관계 없이 폼을 지정합니다.|
 |[wire_marshal](wire-marshal.md)|응용 프로그램별 데이터 형식 대신 전송을 위해 사용 될 데이터 형식을 지정 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 및 .NET에 대한 C++ 특성](cpp-attributes-com-net.md)<br/>
 [그룹별 특성](attributes-by-group.md)<br/>

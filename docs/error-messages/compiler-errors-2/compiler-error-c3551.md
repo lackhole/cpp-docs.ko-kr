@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3551
 ms.assetid: c8ee23da-6568-40db-93a6-3ddb7ac47712
-ms.openlocfilehash: 9dfdee155e85bd772ed1d4ce22c525f8a4c79f5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48b378eb734c5830bedbf417d99d34955e2e6d0f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50458749"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023271"
 ---
 # <a name="compiler-error-c3551"></a>컴파일러 오류 C3551
 
@@ -23,6 +23,6 @@ ms.locfileid: "50458749"
 auto myFunction()->int(*)[4];
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [auto](../../cpp/auto-cpp.md)

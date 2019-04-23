@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3384
 ms.assetid: c9f92c6a-62a9-4333-b2b1-bc55c7f288b6
 ms.openlocfilehash: d1b7e1a69035df358cf84ad791f611928dab8b5a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58773634"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779156"
 ---
 # <a name="compiler-error-c3384"></a>컴파일러 오류 C3384
 
@@ -19,7 +19,7 @@ ms.locfileid: "58773634"
 
 제네릭 형식을 `value class` 및 `ref class`둘 다로 제한할 수 없습니다.
 
-참조 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + /cli CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md) 자세한 내용은 합니다.
+참조 [제네릭 형식 매개 변수에 대 한 제약 조건 (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md) 에 대 한 자세한 내용은 합니다.
 
 ## <a name="example"></a>예제
 

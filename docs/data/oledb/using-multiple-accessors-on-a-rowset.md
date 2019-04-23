@@ -7,12 +7,12 @@ helpviewer_keywords:
 - rowsets [C++], multiple accessors
 - accessors [C++], rowsets
 ms.assetid: 80d4dc5d-4940-4a28-a4ee-d8602f71d2a6
-ms.openlocfilehash: ac2b7e323fff5d3baa80b509586178a48dbe1f8d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: d1ab314edeebedef4cff14cd5364a7ca16c74769
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693622"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033309"
 ---
 # <a name="using-multiple-accessors-on-a-rowset"></a>행 집합에서 여러 접근자 사용
 
@@ -156,7 +156,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [접근자 사용](../../data/oledb/using-accessors.md)<br/>
 [사용자 레코드](../../data/oledb/user-records.md)

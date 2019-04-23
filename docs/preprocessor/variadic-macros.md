@@ -5,12 +5,12 @@ helpviewer_keywords:
 - variadic macros [C++]
 - __VA_ARGS__ variadic macro specifier
 ms.assetid: 51e757dc-0134-4bb2-bb74-64ea5ad75134
-ms.openlocfilehash: 0674359b8f620c2b5023ce2ef75b4e247ae765f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: da159ef979ccc38845064debebae55356bc9e9bd
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547451"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59022842"
 ---
 # <a name="variadic-macros"></a>가변 매크로
 
@@ -59,6 +59,6 @@ hello, world
 error
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로(C/C++)](../preprocessor/macros-c-cpp.md)

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3612
 ms.assetid: aa6e3a2b-4afa-481c-98c1-1b6d1f82f869
 ms.openlocfilehash: ab18381d3f263e3207662e1667ac5c835983412f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58781408"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779117"
 ---
 # <a name="compiler-error-c3612"></a>컴파일러 오류 C3612
 

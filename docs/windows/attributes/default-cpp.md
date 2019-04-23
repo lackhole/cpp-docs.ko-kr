@@ -1,5 +1,5 @@
 ---
-title: 기본 (c + + COM 특성)
+title: 기본 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.default
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - attributes [C#], default attribute
 - defaults, default attribute
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
-ms.openlocfilehash: 1c9c8cd9a6bf0d6ea34db5d62d7767874b4dd4b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c6448b00fef50a7654816a2c39af2943db12d314
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560617"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59024584"
 ---
 # <a name="default-c"></a>default(C++)
 
@@ -106,7 +106,7 @@ int main() {
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>

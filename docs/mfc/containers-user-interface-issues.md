@@ -7,10 +7,10 @@ helpviewer_keywords:
 - user interface issues
 ms.assetid: c833c249-a633-4f1c-82d6-ec6b4892863a
 ms.openlocfilehash: 68a56983bccbdb2ed7f6701577ea5abaa7ea04c6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779666"
 ---
 # <a name="containers-user-interface-issues"></a>컨테이너: 사용자 인터페이스 문제

@@ -1,17 +1,17 @@
 ---
-title: emitidl (c + + COM 특성)
+title: emitidl (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.emitidl
 helpviewer_keywords:
 - emitidl attribute
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
-ms.openlocfilehash: 4270c760c0d9d0ab833ee96dfbbaa9d6205026f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6c4055e0f14bced1e5047fc502a4bf274126f804
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437951"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031636"
 ---
 # <a name="emitidl"></a>emitidl
 
@@ -38,7 +38,7 @@ ms.locfileid: "50437951"
 
 - `push` 현재 저장할 수 있습니다 **emitidl** 설정을 내부 **emitidl** 스택 및 `pop` 설정할 수 있습니다 **emitidl** 내부 맨 위에 있는 모든 값이 하 **emitidl** 스택.
 
-`defaultimports=`*부울* \(선택 사항)
+`defaultimports=`*boolean* \(optional)
 
 - 경우 *부울* 됩니다 **true**, docobj.idl 생성된 된.idl 파일을 가져오면 됩니다. 또한.idl 파일을.h 동일한 이름의 파일을 경우 `#include` 원본에 코드.h 파일과 동일한 디렉터리에 위치한 다음 생성된 된.idl 파일에는.idl 파일에 대 한 import 문을 포함 합니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "50437951"
 
 ## <a name="remarks"></a>설명
 
-후 합니다 **emitidl** 소스 코드 파일에서 c + + 특성이 있으면, IDL 범주 특성은 생성된 된.idl 파일에 배치 됩니다. 없는 경우 없습니다 **emitidl** 특성을 소스 코드 파일의 IDL 특성이 생성된 된.idl 파일에 출력 됩니다.
+후 합니다 **emitidl** C++ 특성을 소스 코드 파일에서 발견 되, IDL 범주 특성은 생성된 된.idl 파일에 배치 됩니다. 없는 경우 없습니다 **emitidl** 특성을 소스 코드 파일의 IDL 특성이 생성된 된.idl 파일에 출력 됩니다.
 
 여러 개 있을 수 있기 **emitidl** 소스 코드 파일의 특성입니다. 하는 경우 `[emitidl(false)];` 후속 없이 파일에서 발생 `[emitidl(true)];`, 특성이 없는 생성된 된.idl 파일에 처리 됩니다.
 
@@ -65,7 +65,7 @@ ms.locfileid: "50437951"
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 특성](compiler-attributes.md)<br/>
 [독립 실행형 특성](stand-alone-attributes.md)

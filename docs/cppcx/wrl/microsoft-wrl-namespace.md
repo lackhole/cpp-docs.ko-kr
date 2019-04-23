@@ -14,16 +14,16 @@ f1_keywords:
 helpviewer_keywords:
 - WRL namespace
 ms.assetid: 01118a8f-f564-4859-b87e-9444848585a1
-ms.openlocfilehash: d402f2a1292088b52ce921bbc0007ab96554189e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 749469c7ae2acf3a0da92d24a51bbfca9b68971d
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58784799"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033523"
 ---
 # <a name="microsoftwrl-namespace"></a>Microsoft::WRL 네임스페이스
 
-Windows 런타임 c + + 템플릿 라이브러리를 구성 하는 기본 형식을 정의 합니다.
+Windows 런타임 구성 하는 기본 형식 정의 C++ 템플릿 라이브러리입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -90,6 +90,6 @@ namespace Microsoft::WRL;
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL::Wrappers 네임스페이스](microsoft-wrl-wrappers-namespace.md)

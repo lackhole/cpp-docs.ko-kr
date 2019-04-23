@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3536
 ms.assetid: 8d866075-866b-49eb-9979-ee27b308f7e3
-ms.openlocfilehash: b58136cc03efda83071c531b25889743de3485f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a16c5bd46d806d09861d5734b637c2c9d9b2f9d0
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456747"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031905"
 ---
 # <a name="compiler-error-c3536"></a>컴파일러 오류 C3536
 
@@ -41,6 +41,6 @@ int main()
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [auto 키워드](../../cpp/auto-keyword.md)

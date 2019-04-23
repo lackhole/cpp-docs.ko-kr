@@ -1,19 +1,19 @@
 ---
-title: '방법: 배열을 사용 하 여 C + + /cli CLI'
+title: '방법: 배열을 사용 하 여 C++/CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - arrays [C++], single-dimension
 ms.assetid: 301cfb3e-199f-42c8-8151-629dce9e87f3
 ms.openlocfilehash: 65d384cbac7691d000ae6e895c9cf63e71726689
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780927"
 ---
-# <a name="how-to-use-arrays-in-ccli"></a>방법: 배열을 사용 하 여 C + + /cli CLI
+# <a name="how-to-use-arrays-in-ccli"></a>방법: 배열을 사용 하 여 C++/CLI
 
-이 문서에서는 배열을 사용 하 여 C + + /cli CLI입니다.
+이 문서에서 배열을 사용 하는 방법을 설명 C++/CLI입니다.
 
 ## <a name="single-dimension-arrays"></a>1 차원 배열
 
@@ -501,7 +501,7 @@ int main() {
 
 ## <a name="sorting-arrays"></a>배열 정렬
 
-표준 c + + 배열과 달리, 관리 되는 배열 있는 일반 동작의 상속 하는 배열의 기본 클래스에서 암시적으로 파생 됩니다. 예로 `Sort` 배열에서 항목을 주문 하는 메서드.
+표준 달리 C++ 배열, 관리 되는 배열은 일반 동작의 이러한 상속 하는 배열의 기본 클래스에서 암시적으로 파생 됩니다. 예로 `Sort` 배열에서 항목을 주문 하는 메서드.
 
 기본 내장 형식을 포함 하는 배열에 대해 호출할 수 있습니다는 `Sort` 메서드. 정렬 기준을 재정의 하 고 하는 것은 필요한 복합 형식의 배열에 대 한 정렬 하려고 할 때 키를 누릅니다. 이 경우 배열 요소 형식은 구현 해야 합니다는 <xref:System.IComparable.CompareTo%2A> 메서드.
 

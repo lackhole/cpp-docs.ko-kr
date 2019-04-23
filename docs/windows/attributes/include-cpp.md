@@ -1,17 +1,17 @@
 ---
-title: (c + + COM 특성)를 포함 합니다.
+title: 포함 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.include
 helpviewer_keywords:
 - include attribute
 ms.assetid: d23f8b91-fe5b-48fa-9371-8bd73af7b8e3
-ms.openlocfilehash: 6fb385877285602c1eb6649d11e16558d7fb07ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d9c68601bea4cecd92b371dada5fb086aeb7657f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544757"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033699"
 ---
 # <a name="include-c"></a>include(C++)
 
@@ -30,9 +30,9 @@ ms.locfileid: "50544757"
 
 ## <a name="remarks"></a>설명
 
-**포함** c + + 특성을 사용 하면는 `#include` 문 아래에 배치 하는 `import "docobj.idl"` 생성 된.idl 파일의 문.
+**포함** C++ 원인 특성는 `#include` 문 아래에 배치 하는 `import "docobj.idl"` 생성 된.idl 파일의 문.
 
-합니다 **포함** c + + 특성에 동일한 기능을 합니다 [포함](/windows/desktop/Midl/include) MIDL 특성입니다.
+**포함** C++ 특성에 동일한 기능을 합니다 [포함](/windows/desktop/Midl/include) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -58,7 +58,7 @@ ms.locfileid: "50544757"
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [독립 실행형 특성](stand-alone-attributes.md)<br/>

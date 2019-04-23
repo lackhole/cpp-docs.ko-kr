@@ -1,19 +1,19 @@
 ---
 title: '방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용'
-ms.date: 08/21/2018
+ms.date: 04/08/2019
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-ms.openlocfilehash: 1a4633b74591e16f22def44ff5875557f2909043
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 3aeef205effe072a25fc0b3dabb9145245461d45
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745518"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59424198"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용
 
-데스크톱 프로그램을 UWP 환경에서 실행되게 하는 가장 쉬운 방법은 데스크톱 브리지 기술을 사용하는 것입니다. 여기에는 코드를 변경할 필요 없이 기존 애플리케이션을 UWP 앱으로 패키징하는 데스크톱 앱 변환기가 포함됩니다. 자세한 내용은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
+데스크톱 프로그램을 UWP(유니버설 Windows 플랫폼) 환경에서 실행되게 하는 가장 쉬운 방법은 데스크톱 브리지 기술을 사용하는 것일 수 있습니다. 여기에는 코드를 변경할 필요 없이 기존 애플리케이션을 UWP 앱으로 패키징하는 데스크톱 앱 변환기가 포함됩니다. 자세한 내용은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
 
-이 항목의 나머지 부분에서는 C++ 라이브러리(DLL 및 정적 라이브러리)를 UWP(유니버설 Windows 플랫폼)로 포팅하는 방법을 설명합니다. 여러 UWP 앱에서 핵심 C++ 논리를 사용할 수 있도록 이 작업을 수행하는 것이 좋습니다.
+이 항목의 나머지 부분에서는 C++ 라이브러리(DLL 및 정적 라이브러리)를 유니버설 Windows 플랫폼으로 포팅하는 방법을 설명합니다. 여러 UWP 앱에서 핵심 C++ 논리를 사용할 수 있도록 이 작업을 수행하는 것이 좋습니다.
 
 UWP 앱은 보호된 환경에서 실행되며 이에 따라 플랫폼의 보안을 손상시킬 수 있는 많은 Win32, COM 및 CRT API 호출이 허용되지 않습니다. `/ZW` 옵션을 사용하는 경우 컴파일러는 이러한 호출을 검색하고 오류를 생성할 수 있습니다. 애플리케이션에서 앱 인증 키트를 사용하여 금지된 API를 호출하는 코드를 검색할 수 있습니다. 자세한 내용은 [Windows 앱 인증 키트](/windows/uwp/debug-test-perf/windows-app-certification-kit)를 참조하세요.
 
@@ -54,11 +54,11 @@ UWP로 포팅하려는 기존 COM 라이브러리가 있는 경우 [WRL(Windows 
 
 보안과 안정성을 높이기 위해 유니버설 Windows 앱은 제한된 런타임 환경에서 실행되므로 클래식 Windows 데스크톱 애플리케이션에서 사용하듯이 네이티브 DLL을 사용할 수 없습니다. DLL의 소스 코드가 있는 경우 UWP에서 실행되도록 코드를 이식할 수 있습니다. 먼저 프로젝트를 UWP 프로젝트로 식별하기 위해 몇 가지 프로젝트 설정과 프로젝트 파일 메타데이터를 변경합니다. C++/CX를 사용하도록 설정하는 `/ZW` 옵션을 사용하여 라이브러리 코드를 컴파일해야 합니다. 특정 API 코드는 해당 환경과 관련된 더 엄격한 제어 때문에 UWP 앱에서 허용되지 않습니다. [UWP 앱용 Win32 및 COM API](/uwp/win32-and-com/win32-and-com-for-uwp-apps)를 참조하세요.
 
-**__declspec(dllexport)** 을 사용하여 함수를 노출하는 네이티브 DLL이 있는 경우에는 다음 절차가 적용됩니다.
+`__declspec(dllexport)`을 사용하여 함수를 노출하는 네이티브 DLL이 있는 경우에는 다음 절차가 적용됩니다.
 
 ### <a name="to-port-a-native-dll-to-the-uwp-without-creating-a-new-project"></a>새 프로젝트를 만들지 않고 네이티브 DLL을 UWP로 이식하려면
 
-1. **__declspec(dllexport)** 을 사용하여 함수를 내보내는 네이티브 DLL이 있는 경우 DLL을 UWP 프로젝트로 다시 컴파일하여 UWP 앱에서 해당 함수를 호출할 수 있습니다. 예를 들어 다음 헤더 파일과 같은 코드를 사용하며 몇 가지 클래스와 해당 메서드를 내보내는 DLL이 있으며
+1. `__declspec(dllexport)`을 사용하여 함수를 내보내는 네이티브 DLL이 있는 경우 DLL을 UWP 프로젝트로 다시 컴파일하여 UWP 앱에서 해당 함수를 호출할 수 있습니다. 예를 들어 다음 헤더 파일과 같은 코드를 사용하며 몇 가지 클래스와 해당 메서드를 내보내는 DLL이 있으며
 
     ```cpp
     // giraffe.h
@@ -131,7 +131,7 @@ UWP로 포팅하려는 기존 COM 라이브러리가 있는 경우 [WRL(Windows 
 
    프로젝트의 모든 항목(stdafx.h, dllmain.cpp)은 표준 Win32 프로젝트 템플릿의 일부입니다. 자체 DLL을 사용하지 않고 이 작업을 진행하려면 Win32 프로젝트를 만들고, 프로젝트 마법사에서 DLL을 선택한 다음 헤더 파일 giraffe.h 및 코드 파일 giraffe.cpp를 추가하고 이 단계의 코드 내용을 해당 파일로 복사합니다.
 
-   이 코드는 `_DLL`이 정의될 때(즉, 프로젝트가 DLL로 빌드됨) **__declspec(dllexport)** 로 확인되는 매크로 `GIRAFFE_API`를 정의합니다.
+   이 코드는 `_DLL`이 정의될 때(즉, 프로젝트가 DLL로 빌드될 때) `__declspec(dllexport)`으로 확인되는 매크로 `GIRAFFE_API`를 정의합니다.
 
 2. DLL 프로젝트에 대한 **프로젝트 속성**을 열고 **구성**을 **모든 구성**으로 설정합니다.
 
@@ -157,7 +157,7 @@ UWP로 포팅하려는 기존 COM 라이브러리가 있는 경우 [WRL(Windows 
 
    문제는 유니버설 Windows 프로젝트가 미리 컴파일된 헤더 파일에 다른 명명 규칙을 사용한다는 것입니다.
 
-6. 프로젝트를 빌드합니다. 호환되지 않는 명령줄 옵션에 대한 몇 가지 오류가 발생할 수도 있습니다. 예를 들어 자주 사용되는 옵션인 **최소 다시 빌드 가능(/Gm)** 은 기본적으로 여러 C++ 프로젝트에서 설정되며 `/ZW`와 호환되지 않습니다.
+6. 프로젝트를 빌드합니다. 호환되지 않는 명령줄 옵션에 대한 몇 가지 오류가 발생할 수도 있습니다. 예를 들어 현재 더 이상 사용되지 않지만 자주 사용되는 옵션인 **최소 다시 빌드 가능(/Gm)** 은 기본적으로 많은 이전 C++ 프로젝트에서 설정되며 `/ZW`와 호환되지 않습니다.
 
    유니버설 Windows 플랫폼용으로 컴파일할 경우 일부 기능을 사용할 수 없습니다. 모든 문제에 대한 컴파일러 오류가 표시됩니다. 클린 빌드를 수행할 때까지 이러한 문제를 해결하세요.
 

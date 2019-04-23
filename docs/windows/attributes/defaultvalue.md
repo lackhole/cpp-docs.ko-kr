@@ -1,17 +1,17 @@
 ---
-title: defaultvalue (c + + COM 특성)
+title: defaultvalue (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.defaultvalue
 helpviewer_keywords:
 - defaultvalue attribute
 ms.assetid: efa5d050-b2cc-4d9e-9b8e-79954f218d3a
-ms.openlocfilehash: 22aa969185afbac5ab395d0ac7dde23e715b8e58
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ff6924db6f4805bb5f2dbab69076a86020b2a075
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537672"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026320"
 ---
 # <a name="defaultvalue"></a>defaultvalue
 
@@ -30,7 +30,7 @@ ms.locfileid: "50537672"
 
 ## <a name="remarks"></a>설명
 
-합니다 **defaultvalue** c + + 특성에 동일한 기능을 합니다 [defaultvalue](/windows/desktop/Midl/defaultvalue) MIDL 특성입니다.
+**defaultvalue** C++ 특성에 동일한 기능을 합니다 [defaultvalue](/windows/desktop/Midl/defaultvalue) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -67,7 +67,7 @@ __interface IFireTabCtrl : IDispatch {
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [매개 변수 특성](parameter-attributes.md)<br/>

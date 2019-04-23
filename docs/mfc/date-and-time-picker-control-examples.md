@@ -5,10 +5,10 @@ helpviewer_keywords:
 - DateTimePicker control [MFC]
 ms.assetid: f03c3a22-7725-45eb-8f8e-dddb2d15c3ca
 ms.openlocfilehash: 9de28d5407da6e83ed3b7cd77cad3f636538a70f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780745"
 ---
 # <a name="date-and-time-picker-control-examples"></a>날짜 및 시간 선택 컨트롤 예

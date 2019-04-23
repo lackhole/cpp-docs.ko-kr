@@ -1,16 +1,16 @@
 ---
-title: 매개 변수 특성 (c + + COM)
+title: 매개 변수 특성 (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - attributes [C++/CLI], parameter attributes
 - parameter attributes
 ms.assetid: 024c2dd5-49d7-4ced-a17a-c56c1bc485b6
-ms.openlocfilehash: 56c168975c9b8a6fcf7462c26eefd07b4499d149
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e89542027c2187a77c18637432a5b60f47377c10
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619634"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029553"
 ---
 # <a name="parameter-attributes"></a>매개 변수 특성
 
@@ -37,6 +37,6 @@ ms.locfileid: "50619634"
 |[size_is](size-is.md)|메모리 크기의 할당 크기의 포인터에 대 한, 큰 크기의 포인터 및 단일 또는 다차원 배열에 대 한 포인터를 지정 합니다.|
 |[unique](unique-cpp.md)|고유 포인터를 지정합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [용도별 특성](attributes-by-usage.md)

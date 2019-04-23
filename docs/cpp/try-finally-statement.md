@@ -21,10 +21,10 @@ helpviewer_keywords:
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
 ms.openlocfilehash: d2a1c63f686b46aad4e174c86895f6f9fc00d260
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58778340"
 ---
 # <a name="try-finally-statement"></a>try-finally 문
@@ -47,12 +47,12 @@ ms.locfileid: "58778340"
 *try-finally-statement*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**\_\_try** *compound-statement* **\_\_finally** *compound-statement*
 
-합니다 **try-finally** 문은 코드 블록의 실행이 중단 된 경우 정리 코드 실행을 보장 하기 위해 대상 응용 프로그램을 사용 하도록 설정 하는 C 및 c + + 언어에 Microsoft 확장입니다. 정리는 메모리 할당 해제, 파일 닫기 및 파일 핸들 해제와 같은 작업으로 구성됩니다. 합니다 **try-finally** 문에 루틴에서 반환 하는 위치는 검사가 수행 됩니다 오류가 발생할 수 있는 중간 많은 루틴에 특히 유용 합니다.
+**try finally** 문에 C에 대 한 Microsoft 확장 및 C++ 코드 블록의 실행이 중단 된 경우 정리 코드 실행을 보장 하기 위해 대상 응용 프로그램을 사용 하도록 설정 하는 언어입니다. 정리는 메모리 할당 해제, 파일 닫기 및 파일 핸들 해제와 같은 작업으로 구성됩니다. 합니다 **try-finally** 문에 루틴에서 반환 하는 위치는 검사가 수행 됩니다 오류가 발생할 수 있는 중간 많은 루틴에 특히 유용 합니다.
 
 관련된 정보 및 코드 샘플을 참조 하세요 [시도-문을 제외 하 고](../cpp/try-except-statement.md)입니다. 구조적된 예외 처리에 대 한 자세한 내용은 참조 하세요. [구조적 예외 처리](../cpp/structured-exception-handling-c-cpp.md)합니다. C +를 사용 하 여 관리 되는 응용 프로그램에서 예외를 처리 하는 방법은 + CLI 참조 [/clr에서 예외 처리](../extensions/exception-handling-cpp-component-extensions.md)합니다.
 
 > [!NOTE]
-> 구조적 예외 처리는 Win32에서 C 및 C++ 소스 파일에 대해 작동하지만 특별히 C++용으로 설계되지는 않았습니다. C++ 예외 처리를 사용하여 코드의 이식성이 향상되는지 확인할 수 있습니다. 또한 C++ 예외 처리는 모든 형식의 예외를 처리할 수 있다는 점에서 보다 유연합니다. C + + 프로그램에 대 한 것이 좋습니다 c + + 예외 처리 메커니즘을 사용 하는 ([try, catch 및 throw](../cpp/try-throw-and-catch-statements-cpp.md) 문).
+> 구조적 예외 처리는 Win32에서 C 및 C++ 소스 파일에 대해 작동하지만 특별히 C++용으로 설계되지는 않았습니다. C++ 예외 처리를 사용하여 코드의 이식성이 향상되는지 확인할 수 있습니다. 또한 C++ 예외 처리는 모든 형식의 예외를 처리할 수 있다는 점에서 보다 유연합니다. 에 대 한 C++ 프로그램 것이 좋습니다 사용 하는 C++ 예외 처리 메커니즘 ([try, catch 및 throw](../cpp/try-throw-and-catch-statements-cpp.md) 문).
 
 뒤의 복합 문은 합니다 **__try** 절은 보호 된 섹션입니다. 뒤의 복합 문은 합니다 **__finally** 절에는 종료 처리기입니다. 처리기는 보호된 섹션이 예외(비정상적인 종료)로 인해 종료되건 표준 이동(정상적인 종료)으로 인해 종료되건 간에 보호된 섹션이 끝나면 실행되는 작업 집합을 지정합니다.
 

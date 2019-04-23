@@ -8,12 +8,12 @@ helpviewer_keywords:
 - OLE DB provider templates, object interfaces
 - interfaces, list of
 ms.assetid: 0d7a5d48-2fe4-434f-a84b-157c1fdc3494
-ms.openlocfilehash: f3d52568b6b32a757be3d248289876fd504a74c3
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 1f3e6066af4b6870c5fa90f7bde373bb7be476ce
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57418505"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59032955"
 ---
 # <a name="rowset-object-interfaces"></a>행 집합 개체 인터페이스
 
@@ -48,6 +48,6 @@ ms.locfileid: "57418505"
 
 마법사가 생성한 행 집합 개체는 상속을 통해 `IAccessor`, `IRowset` 및 `IRowsetInfo`를 구현합니다. `IAccessorImpl` 인터페이스는 출력 열을 바인딩합니다. `IRowset` 인터페이스는 행과 데이터 페치를 처리합니다. `IRowsetInfo` 인터페이스는 행 집합 속성을 처리합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

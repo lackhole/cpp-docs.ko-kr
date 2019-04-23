@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCLinkCtrl [MFC], SizeToContent
 - CMFCLinkCtrl [MFC], OnDrawFocusRect
 ms.assetid: 80f3874d-7cc8-410e-9ff1-62a225f5034b
-ms.openlocfilehash: a4324fad7668907600cbaebeb5c9de4ad0e7c1e4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 839448694cee17f5bc1a1e47f7c113026a1a4006
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302723"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58776429"
 ---
 # <a name="cmfclinkctrl-class"></a>CMFCLinkCtrl 클래스
 
@@ -53,7 +53,7 @@ class CMFCLinkCtrl : public CMFCButton
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 크기를 설정 하는 방법에 설명 된 `CMFCLinkCtrl` 개체 및 설정 url 및 도구를 설명 하는 방법을 `CMFCLinkCtrl` 개체입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 크기를 설정 하는 방법에 설명 된 `CMFCLinkCtrl` 개체 및 설정 url 및 도구를 설명 하는 방법을 `CMFCLinkCtrl` 개체입니다. 이 예제는의 일부를 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_NewControls#9](../../mfc/reference/codesnippet/cpp/cmfclinkctrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#10](../../mfc/reference/codesnippet/cpp/cmfclinkctrl-class_2.cpp)]

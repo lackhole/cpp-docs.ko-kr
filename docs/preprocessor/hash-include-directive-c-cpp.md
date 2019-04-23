@@ -1,5 +1,5 @@
 ---
-title: '#include 지시문 (C/c + +)'
+title: '#include 지시문 (C /C++)'
 ms.date: 11/04/2016
 f1_keywords:
 - '#include'
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - '#include directive'
 - include directive (#include)
 ms.assetid: 17067dc0-8db1-4f2d-b43e-ec12ecf83238
-ms.openlocfilehash: 67a44574a5a72a7b7addc0ed3d7b51cd3eb5b984
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 7ffccb34d52f8ffa1e6b9cc64a58d3471d02ac92
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821391"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038983"
 ---
 # <a name="include-directive-cc"></a>#include 지시문 (C/C++)
 
@@ -32,7 +32,7 @@ ms.locfileid: "57821391"
 
 합니다 *경로-사양* 선택적으로 디렉터리 사양 올 수 있습니다 하는 파일 이름입니다. 이 파일 이름은 기존 파일의 이름이어야 합니다. 구문의 합니다 *경로-사양* 프로그램이 컴파일되는 운영 체제에 따라 달라 집니다.
 
-사용 하 여 컴파일되는 c + + 응용 프로그램에서 어셈블리를 참조 하는 방법에 대 한 자세한 [/clr](../build/reference/clr-common-language-runtime-compilation.md)를 참조 하십시오 [#using](../preprocessor/hash-using-directive-cpp.md)합니다.
+어셈블리를 참조 하는 방법에 대 한 자세한는 C++ 를 사용 하 여 컴파일된 응용 프로그램 [/clr](../build/reference/clr-common-language-runtime-compilation.md)를 참조 하십시오 [#using](../preprocessor/hash-using-directive-cpp.md)합니다.
 
 두 구문 형식은 지시문을 지정된 include 파일의 전체 내용으로 바꿉니다. 경로가 불완전하게 지정되어 있을 경우 두 형식의 차이는 전처리기가 헤더 파일을 검색하는 순서입니다. 다음 표에서는 두 구문 형식 간 차이를 보여 줍니다.
 
@@ -94,7 +94,7 @@ CL MYPROG.C
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)<br/>
 [/I (추가 포함 디렉터리)](../build/reference/i-additional-include-directories.md)<br/>

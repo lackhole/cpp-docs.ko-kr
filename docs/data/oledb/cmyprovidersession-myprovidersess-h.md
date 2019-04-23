@@ -11,12 +11,12 @@ helpviewer_keywords:
 - OLE DB providers, wizard-generated files
 - CCustomSession class in CustomSess.H
 ms.assetid: d37ad471-cf05-49c5-aa47-cd10824d777f
-ms.openlocfilehash: 75d0c8d871ca736be5e2c33829296b2760092e14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5cb462aba671e79450e9ee7b8447410252f8edc9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568014"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023466"
 ---
 # <a name="ccustomsession-customsessh"></a>CCustomSession (CustomSess.H)
 
@@ -41,6 +41,6 @@ class ATL_NO_VTABLE CCustomSession :
 
 OLE DB 사양에는 구현 하는 공급자는 `IDBSchemaRowset` 인터페이스 스키마 행 집합 형식을 지 원하는 3: DBSCHEMA_COLUMNS DBSCHEMA_PROVIDER_TYPES, 고 DBSCHEMA_TABLES입니다. 마법사는 각 스키마 행 집합에 대 한 구현을 생성합니다. 마법사에서 생성 된 각 클래스를 포함 한 `Execute` 메서드. 이 `Execute` 메서드를 지 원하는 테이블, 열 및 데이터 형식에 대 한 공급자에 게 데이터를 반환할 수 있습니다. 이 데이터는 컴파일 타임에 알려집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [공급자 마법사가 생성하는 파일](../../data/oledb/provider-wizard-generated-files.md)<br/>

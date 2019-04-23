@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - FileHandleTraits structure
 ms.assetid: e1107c42-2cd6-4253-9c16-8ecb35f05cd9
-ms.openlocfilehash: 28e97a906ee6348cd0d2761304d94d414969d15e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 09b8eb1a45efee4f8d0aaf4dc27774de91ffcff4
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58784767"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59025035"
 ---
 # <a name="filehandletraits-structure"></a>FileHandleTraits 구조체
 
@@ -38,6 +38,6 @@ struct FileHandleTraits : HANDLETraits;
 
 **네임스페이스:** Microsoft::WRL::Wrappers::HandleTraits
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL::Wrappers::HandleTraits 네임스페이스](microsoft-wrl-wrappers-handletraits-namespace.md)

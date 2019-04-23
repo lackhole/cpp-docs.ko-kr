@@ -13,12 +13,12 @@ helpviewer_keywords:
 - preprocessor, pragmas
 - pragma directives (#pragma)
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
-ms.openlocfilehash: 9e79ba7378e28fdea863af010decb7064df415cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b6c2ff579c6fafa78cbfd0a2879a71fca2bfaa01
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660098"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59027443"
 ---
 # <a name="pragma-directives-and-the-pragma-keyword"></a>Pragma 지시문 및 __Pragma 키워드
 
@@ -106,7 +106,7 @@ return _hr; \
 
 **End Microsoft 전용**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 [C Pragma](../c-language/c-pragmas.md)<br/>

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3461
 ms.assetid: bd66833a-545d-445a-bdfe-dee771a450a4
 ms.openlocfilehash: a674ce7819c88dd4e26355c0129a6c181da5c276
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58781954"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779023"
 ---
 # <a name="compiler-error-c3461"></a>컴파일러 오류 C3461
 
@@ -19,7 +19,7 @@ ms.locfileid: "58781954"
 
 형식 전달은 CLR 형식에서만 발생할 수 있습니다.  참조 [클래스 및 구조체](../../extensions/classes-and-structs-cpp-component-extensions.md) 자세한 내용은 합니다.
 
-자세한 내용은 [형식 전달 (C + + /cli CLI)](../../extensions/type-forwarding-cpp-cli.md)합니다.
+자세한 내용은 [형식 전달 (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

@@ -164,12 +164,12 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnScrollBy
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
-ms.openlocfilehash: ec3048e7bd033e5c296b558dd2083c648bc377e7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2687dfc9941a512523a7cb771cb872c78b97ce2d
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295359"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58773985"
 ---
 # <a name="coleclientitem-class"></a>COleClientItem 클래스
 
@@ -290,7 +290,7 @@ OLE 항목을 포함 또는 연결 수 수 있습니다. 포함 된 경우 해�
 컨테이너 인터페이스를 사용 하는 방법에 대 한 자세한 내용은 문서를 참조 하세요. [컨테이너: 컨테이너를 구현](../../mfc/containers-implementing-a-container.md) 하 고 [활성화](../../mfc/activation-cpp.md)합니다.
 
 > [!NOTE]
->  Windows SDK "개체"로 포함 및 연결 된 항목을 참조 하 고 "classes"를 선택 합니다. 항목의 형식 이 참조는 해당 c + + 개체와 "type" c + + 클래스에서 OLE 범주를 구분 하기 위해 OLE 엔터티 구분 하기 위해 "item" 이라는 용어를 사용 합니다.
+>  Windows SDK "개체"로 포함 및 연결 된 항목을 참조 하 고 "classes"를 선택 합니다. 항목의 형식 이 참조 "항목" 라는 용어를 사용 하 여 해당 되는 OLE 엔터티를 구분 하기 위해 C++ 개체 및 OLE 범주를 구분 하기 위해 "type" 라는 용어는 C++ 클래스입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -516,7 +516,7 @@ OLE 항목 로드 된 상태로 돌아오면 어떤 상황에서 저장을 지�
 
 ##  <a name="coleclientitem"></a>  COleClientItem::COleClientItem
 
-생성 된 `COleClientItem` 만 c + + 개체를 생성 하 고 OLE 초기화를 수행 하지 않습니다 하는 문서 항목이 컨테이너 문서 컬렉션에 추가 하는 개체입니다.
+생성 된 `COleClientItem` 만 생성 하는 문서 항목의 컨테이너 문서의 컬렉션에 추가 하는 개체를 C++ 개체 및 모든 OLE 초기화를 수행 하지 않습니다.
 
 ```
 COleClientItem(COleDocument* pContainerDoc = NULL);
@@ -979,7 +979,7 @@ void Delete(BOOL bAutoDelete = TRUE);
 
 ### <a name="remarks"></a>설명
 
-이 함수를 호출 합니다 [릴리스](#release) 차례로 항목을 영구적으로 제거 하는 OLE 항목을 문서에서 c + + 개체를 삭제 하는 멤버 함수입니다. OLE 항목을 포함 하는 경우에 항목에 대 한 기본 데이터가 삭제 됩니다. 실행 중인 서버에 항상 닫기 따라서 항목 열기 링크 이면이 함수를 닫습니다.
+이 함수를 호출 합니다 [릴리스](#release) 차례로 삭제 하는 멤버 함수는 C++ 는 항목을 영구적으로 OLE 항목을 문서에서 제거 하는 것에 대 한 개체입니다. OLE 항목을 포함 하는 경우에 항목에 대 한 기본 데이터가 삭제 됩니다. 실행 중인 서버에 항상 닫기 따라서 항목 열기 링크 이면이 함수를 닫습니다.
 
 ##  <a name="dodragdrop"></a>  COleClientItem::DoDragDrop
 
@@ -2187,8 +2187,8 @@ BOOL UpdateLink();
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 MFCBIND](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 MFCBIND](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CDocItem 클래스](../../mfc/reference/cdocitem-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleServerItem 클래스](../../mfc/reference/coleserveritem-class.md)

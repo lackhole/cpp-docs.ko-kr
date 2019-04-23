@@ -1,17 +1,17 @@
 ---
-title: 이중 (c + + COM 특성)
+title: 이중 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.dual
 helpviewer_keywords:
 - dual attribute
 ms.assetid: 5d4a9069-d819-42cd-ba56-bbcda17157d9
-ms.openlocfilehash: 30d334f58f0eb91c9ca44ba5a5b6b8edf3970510
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f02f6b69b31f10b41d5c920cfc2ad62dfa1cef2
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509956"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023960"
 ---
 # <a name="dual"></a>dual
 
@@ -25,7 +25,7 @@ ms.locfileid: "50509956"
 
 ## <a name="remarks"></a>설명
 
-경우는 **이중** c + + 특성이 인터페이스 앞에 오면, 생성된 된.idl 파일의 라이브러리 블록 안에 배치 하는 인터페이스입니다.
+경우는 **이중** C++ 특성이 인터페이스 앞에 오면, 생성된 된.idl 파일의 라이브러리 블록 안에 배치 하는 인터페이스입니다.
 
 ## <a name="example"></a>예제
 
@@ -66,7 +66,7 @@ __interface IStatic : IDispatch
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [용도별 특성](attributes-by-usage.md)<br/>

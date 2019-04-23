@@ -5,12 +5,12 @@ helpviewer_keywords:
 - service providers [OLE DB]
 - OLE DB services [OLE DB], overriding defaults
 ms.assetid: 08e366c0-74d8-463b-93a6-d58a8dc195f8
-ms.openlocfilehash: 5966d1d5d18ad099a28498f92848cf8f6f7997ac
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 08011f65ca220885e124e5ad6072244e4ad6e80d
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57415814"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033958"
 ---
 # <a name="overriding-provider-service-defaults"></a>공급자 서비스 기본값 재정의
 
@@ -28,7 +28,7 @@ OLEDB_SERVICES에 대 한 공급자의 레지스트리 값에 대 한 기본 값
 
 공급자에 대 한 레지스트리 항목이 존재 하지 않는 경우 구성 요소 관리자는 공급자의 개체를 수집 하지 않습니다. 사용자가 명시적으로 요청 하는 경우에 서비스가에 설정 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 풀링](/previous-versions/windows/desktop/ms713655(v=vs.85))<br/>
 [리소스 풀링을 소비자를 사용 하는 방법](/previous-versions/windows/desktop/ms715907(v=vs.85))<br/>

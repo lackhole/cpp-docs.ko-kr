@@ -4,12 +4,12 @@ ms.date: 03/27/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 479179d94a0534f5f0c790fea18e281053b686e2
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.openlocfilehash: 22a8ecc34e6413c32628381241d45d3d76b39ecc
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565297"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030435"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio의 CMake 프로젝트
 
@@ -158,7 +158,7 @@ Visual Studio 설치 관리자에서 CMake를 설치한 경우 다음 단계에 
 
 1. CMake를 실행하여 앱을 빌드/구성합니다.
   
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [자습서: Visual Studio에서 C++ 플랫폼 간 프로젝트 만들기](get-started-linux-cmake.md)<br/>
 [Linux CMake 프로젝트 구성](../linux/cmake-linux-project.md)<br/>

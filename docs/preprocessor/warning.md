@@ -1,5 +1,5 @@
 ---
-title: 경고
+title: warning
 ms.date: 11/04/2016
 f1_keywords:
 - warning_CPP
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - pop warning pragma
 - warning pragma
 ms.assetid: 8e9a0dec-e223-4657-b21d-5417ebe29cc8
-ms.openlocfilehash: 53f79061ded358c9cb895fd7e8e245c46ed99fd5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1341472af22582635207a2bdff93b4367fd59330
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631726"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037752"
 ---
 # <a name="warning-pragma"></a>경고 Pragma
 컴파일러 경고 메시지의 동작을 선택적으로 수정할 수 있습니다.
@@ -40,7 +40,7 @@ ms.locfileid: "50631726"
 |*disable*|지정된 경고 메시지를 생성하지 마십시오.|
 |*error*|지정된 경고를 오류로 보고합니다.|
 |*once*|지정된 메시지를 한 번만 표시합니다.|
-|*표시 안 함*|pragma의 현재 상태를 스택에 푸시하고 다음 줄에 지정된 경고를 비활성화한 후 pragma 상태가 다시 설정되도록 경고 스택을 표시합니다.|
+|*suppress*|pragma의 현재 상태를 스택에 푸시하고 다음 줄에 지정된 경고를 비활성화한 후 pragma 상태가 다시 설정되도록 경고 스택을 표시합니다.|
 
 다음 코드 문에서는 `warning-number-list` 매개 변수가 경고 번호를 여러 개 포함할 수 있으며 같은 pragma 지시문에 여러 `warning-specifier` 매개 변수를 지정할 수 있음을 보여 줍니다.
 
@@ -116,6 +116,6 @@ Pragma `warning( pop )` 스택에 푸시된 마지막 경고 상태를 팝 합�
 
 경고 표시 안 함 옵션 도움이 되는 컴파일러에 대 한 자세한 참조 [/FI](../build/reference/fi-name-forced-include-file.md) 하 고 [/w](../build/reference/compiler-option-warning-level.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

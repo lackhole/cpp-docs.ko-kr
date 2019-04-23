@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6018
 ms.assetid: f6dd40d1-a119-4d8b-b39e-97350ea23349
-ms.openlocfilehash: e0d229b4fd8c1a4f8e067c0e59a278344fd4e113
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b36e2184e5be131645fb4dd58a361fdb9a31da63
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531918"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58774979"
 ---
 # <a name="c-runtime-error-r6018"></a>C 런타임 오류 R6018
 
@@ -32,4 +32,4 @@ ms.locfileid: "50531918"
 
 이 오류는 일반적으로 프로그램에서 런타임에 힙 데이터를 실수로 변경 하는 경우에 발생 합니다. 그러나 것 수 때문일 수도 런타임이나 운영 체제 코드에 내부 오류가 발생 합니다.
 
-이 문제를 해결 하려면 코드에서 힙 손상 버그를 확인 합니다. 자세한 내용 및 예제를 참조 하세요 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)합니다. 그런 다음, 앱 배포에 대 한 최신 재배포 가능 패키지를 사용 하 고 있는지 확인 합니다. 정보를 참조 하세요 [Visual c + +에서 배포](../../ide/deployment-in-visual-cpp.md)합니다.
+이 문제를 해결 하려면 코드에서 힙 손상 버그를 확인 합니다. 자세한 내용 및 예제를 참조 하세요 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)합니다. 그런 다음, 앱 배포에 대 한 최신 재배포 가능 패키지를 사용 하 고 있는지 확인 합니다. 정보를 참조 하세요 [시각적 개체에 배포 C++ ](../../windows/deployment-in-visual-cpp.md)합니다.

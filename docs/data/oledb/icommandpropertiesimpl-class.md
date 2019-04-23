@@ -16,12 +16,12 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-ms.openlocfilehash: b9d6c9aab2b12859462abfa2a842754128e72306
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 1250f1c5c5094a0ca8348f325260e6079afe2baa
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57416659"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034104"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl 클래스
 
@@ -96,7 +96,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 참조 [icommandproperties:: Setproperties](/previous-versions/windows/desktop/ms711497(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

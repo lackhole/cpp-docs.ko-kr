@@ -1,17 +1,17 @@
 ---
-title: db_param (c + + COM 특성)
+title: db_param (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.db_param
 helpviewer_keywords:
 - db_param attribute
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
-ms.openlocfilehash: 2de051b099da5f179a7634cddfb359d85f4b1f83
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: a3cfcf3c7ce3313eaff9a3b35854e1e077fc906f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328794"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038098"
 ---
 # <a name="dbparam"></a>db_param
 
@@ -115,6 +115,6 @@ struct CSalesbyYear {
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 특성](ole-db-consumer-attributes.md)

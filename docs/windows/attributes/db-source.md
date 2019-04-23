@@ -1,17 +1,17 @@
 ---
-title: db_source (c + + COM 특성)
+title: db_source (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.db_source
 helpviewer_keywords:
 - db_source attribute
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
-ms.openlocfilehash: a171e6a7eea5e10b47bf680545bc14618893b155
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 884cab78d64c20bef00958f0cc0319281fd69921
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328989"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026333"
 ---
 # <a name="dbsource"></a>db_source
 
@@ -79,6 +79,6 @@ class CMyCommand {};
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 특성](ole-db-consumer-attributes.md)

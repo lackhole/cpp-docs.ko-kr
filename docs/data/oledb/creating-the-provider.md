@@ -4,18 +4,18 @@ ms.date: 10/15/2018
 helpviewer_keywords:
 - OLE DB providers, creating
 ms.assetid: 2506ba8f-010d-4231-aac1-387432f7b6b9
-ms.openlocfilehash: 05ab045e104e3035f8ccd2fa1924b6959164b8d4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6258b5247e4d9d027e0f03bc133dff1a059665bd
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538189"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59032352"
 ---
 # <a name="creating-the-provider"></a>공급자 만들기
 
 ## <a name="to-create-an-ole-db-provider-with-the-atl-ole-db-provider-wizard"></a>ATL OLE DB 공급자 마법사를 사용하여 OLE DB 공급자를 만들려면
 
-1. 프로젝트를 마우스 오른쪽 단추로 클릭 합니다.
+1. 프로젝트를 마우스 오른쪽 단추로 클릭합니다.
 
 1. 바로 가기 메뉴에서 **추가**를 클릭한 다음 **클래스 추가**를 클릭합니다.
 
@@ -25,14 +25,14 @@ ms.locfileid: "50538189"
 
 1. 필요하면 다른 이름 상자를 편집합니다. 개체 이름과 파일 이름뿐만 아니라 다음 항목을 편집할 수 있습니다.
 
-   - **Coclass**: COM이 공급자를 만들기 위해 사용하는 이름.
+   - **Coclass**: COM 공급자를 사용 하는 이름입니다.
 
-   - **ProgID**: GUID 대신 사용할 수 있는 텍스트 문자열의 프로그래밍 식별자입니다.
+   - **ProgID**: 프로그래밍 방식 식별자를 GUID 대신 사용할 수 있는 텍스트 문자열입니다.
 
-   - **버전**: ProgID와 Coclass 버전별 프로그래밍 방식으로 ID를 생성하는 데 사용됨
+   - **버전**: ProgID와 Coclass 버전별 프로그래밍 방식으로 ID를 생성 하는 데 사용
 
 1. **마침**을 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 만들기](../../data/oledb/creating-an-ole-db-provider.md)

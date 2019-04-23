@@ -11,12 +11,12 @@ helpviewer_keywords:
 - bsf instruction
 - BitScanForward intrinsic
 ms.assetid: 405e60fb-0815-42a7-9b02-6fc035122203
-ms.openlocfilehash: 87bb2a20e786982d8e0c710696f0339f579a84e5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8b09aeee485611ddd20d51b4c1e36ec98c03c26e
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440471"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59022569"
 ---
 # <a name="bitscanforward-bitscanforward64"></a>_BitScanForward, _BitScanForward64
 
@@ -42,7 +42,7 @@ unsigned char _BitScanForward64(
 *Index*<br/>
 [out] 찾은 첫 번째 설정 비트 (1)의 비트 위치를 사용 하 여 로드 합니다.
 
-*마스크*<br/>
+*Mask*<br/>
 [in] 검색할 32 비트 또는 64 비트 값입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -108,6 +108,6 @@ Mask: 12 Index: 2
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

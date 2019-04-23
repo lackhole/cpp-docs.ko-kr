@@ -9,12 +9,12 @@ helpviewer_keywords:
 - pragmas, check_stack
 - pragmas, check_stack usage table
 ms.assetid: f18e20cc-9abb-48b7-ad62-8d384875b996
-ms.openlocfilehash: 93ded20bde98cc4e7b0fc15fd8332195d38f2543
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49477a3b39db17047f349e341bd05c04954c964c
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451989"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023381"
 ---
 # <a name="checkstack"></a>check_stack
 경우 스택 프로브를 해제 하려면 컴파일러에 지시 `off` (또는 `-`) 지정 된 경우 스택 프로브 하 `on` (또는 `+`) 지정 합니다.
@@ -41,6 +41,6 @@ ms.locfileid: "50451989"
 |`#pragma check_stack(on)`<br /><br /> 또는 `#pragma check_stack +`|예 또는 아니요|뒤에 오는 함수에 대한 스택 검사 설정|
 |`#pragma check_stack(off)`<br /><br /> 또는 `#pragma check_stack -`|예 또는 아니요|뒤에 오는 함수에 대한 스택 검사 해제|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

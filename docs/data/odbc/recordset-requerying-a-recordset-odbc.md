@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 레코드 집합 다시 쿼리(ODBC)'
+title: '레코드 집합: (ODBC) 레코드 집합 다시 쿼리'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - recordsets, requerying
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - ODBC recordsets, requerying
 - refreshing recordsets
 ms.assetid: 4ebc3b5b-5b91-4f51-a967-245223c6b8e1
-ms.openlocfilehash: b8e7de569a8310fdad0273ae70449d2da544f6e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7edc1c04da617f96165b25a47ce169b266ae0003
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482750"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59024597"
 ---
-# <a name="recordset-requerying-a-recordset-odbc"></a>레코드 집합: 레코드 집합 다시 쿼리(ODBC)
+# <a name="recordset-requerying-a-recordset-odbc"></a>레코드 집합: (ODBC) 레코드 집합 다시 쿼리
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 이 항목에서는 레코드 집합 개체를 사용 하 여 다시 쿼리 하는 방법을 설명 (즉, 새로 고침)를 사용 하 여 작업을 수행 하는 시기 및 데이터베이스에서 자체를 [Requery](../../mfc/reference/crecordset-class.md#requery) 멤버 함수입니다.
 
@@ -29,7 +29,7 @@ ms.locfileid: "50482750"
 
 ##  <a name="_core_bringing_the_recordset_up_to_date"></a> 날짜를 레코드 집합 가져오기
 
-자주 해야을 레코드 집합 개체를 최신 상태로 합니다. 다중 사용자 데이터베이스 환경에서 다른 사용자가 변경할 수는 데이터 레코드 집합의 수명 동안. 레코드 집합에 다른 사용자가 변경한 내용을 반영 하는 경우 및 다른 사용자의 변경 내용을 반영 하는 경우에 대 한 자세한 내용은 참조 하십시오 [레코드 집합: 레코드 집합의 레코드 업데이트 방법 (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) 고 [다이너셋](../../data/odbc/dynaset.md).
+자주 해야을 레코드 집합 개체를 최신 상태로 합니다. 다중 사용자 데이터베이스 환경에서 다른 사용자가 변경할 수는 데이터 레코드 집합의 수명 동안. 레코드 집합에 다른 사용자가 변경한 내용을 반영 하는 경우 및 다른 사용자의 변경 내용을 반영 하는 경우에 대 한 자세한 내용은 참조 하세요. [레코드 집합: 레코드 집합 업데이트 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-update-records-odbc.md) 하 고 [다이너셋](../../data/odbc/dynaset.md)합니다.
 
 ##  <a name="_core_requerying_based_on_new_parameters"></a> 새 매개 변수를 기반으로 다시 쿼리
 
@@ -55,8 +55,8 @@ ms.locfileid: "50482750"
 
 경우는 `Requery` 실패 하면 호출 응용 프로그램이 정상적으로 종료 해야이 고, 그렇지 않으면 호출을 다시 시도할 수 있습니다. 에 대 한 호출 `Requery` 또는 `Open` 다양 한 이유로 실패할 수 있습니다. 아마도 네트워크 오류가 발생합니다. 호출 하는 동안 기존 데이터가 해제 되 면 새 데이터를 가져올 전에 다른 사용자 수 작동 하지 않습니다. 단독; 또는 또는 레코드 집합에 종속 된 테이블을 삭제할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 데이터 열 동적 바인딩(ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
-[레코드 집합: 레코드 집합 만들기 및 닫기(ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)
+[레코드 집합: 동적으로 데이터 열 바인딩 (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
+[레코드 집합: 만들 레코드 집합 및 닫기 (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)

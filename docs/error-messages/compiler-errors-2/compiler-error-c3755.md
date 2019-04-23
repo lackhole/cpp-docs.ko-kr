@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C3755
 ms.assetid: 9317b55e-a52e-4b87-b915-5a208d6eda38
 ms.openlocfilehash: 5d1260138bfdbc318817c336077eef326b62f8b8
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58767433"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776810"
 ---
 # <a name="compiler-error-c3755"></a>컴파일러 오류 C3755
 
 'delegate': 대리자를 정의할 수 있습니다
 
-A [delegate (c + + 구성 요소 확장)](../../extensions/delegate-cpp-component-extensions.md) 선언할 수는 있지만 정의 되지 않았습니다.
+A [대리자 (C++ 구성 요소 확장)](../../extensions/delegate-cpp-component-extensions.md) 선언할 수는 있지만 정의 되지 않았습니다.
 
 ## <a name="example"></a>예제
 

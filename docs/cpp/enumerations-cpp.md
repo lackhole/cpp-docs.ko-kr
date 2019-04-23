@@ -11,10 +11,10 @@ helpviewer_keywords:
 - declaring enumerations
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
 ms.openlocfilehash: caec9ea7ac5482ff23b73676a3fd7b3d25ad293f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772567"
 ---
 # <a name="enumerations-c"></a>열거형(C++)
@@ -22,7 +22,7 @@ ms.locfileid: "58772567"
 열거형은 열거자라는 명명된 정수 상수 집합으로 구성된 사용자 정의 형식입니다.
 
 > [!NOTE]
->  이 문서에서는 ISO 표준 c + + 언어를 다룹니다 **enum** 종류와 범위가 지정 된 (또는 강력한 형식의) **enum 클래스** c++11에서 도입 된 형식입니다. 에 대 한 자세한를 **public enum 클래스** 또는 **개인 enum 클래스** 형식 C + + 및 C + + /CX에서는 참조 [enum 클래스](../extensions/enum-class-cpp-component-extensions.md)합니다.
+>  이 문서에서는 ISO 표준 C++ 언어 **enum** 종류와 범위가 지정 된 (또는 강력한 형식의) **enum 클래스** c++11에서 도입 된 형식입니다. 에 대 한 자세한 합니다 **public enum 클래스** 또는 **개인 enum 클래스** 형식을 C++/CLI 및 C++/CX, 참조 [enum 클래스](../extensions/enum-class-cpp-component-extensions.md).
 
 ## <a name="syntax"></a>구문
 

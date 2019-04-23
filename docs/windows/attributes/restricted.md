@@ -1,17 +1,17 @@
 ---
-title: 제한 (c + + COM 특성)
+title: 제한 (C++ COM 특성)
 ms.date: 10/03/2018
 f1_keywords:
 - vc-attr.restricted
 helpviewer_keywords:
 - restricted attribute
 ms.assetid: 504a96be-b904-4269-8be1-920feba201b4
-ms.openlocfilehash: 1aa18255f7d7a0740494050a149d436fb167fe8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86f40fa49daf88668e37bef07f0db33d01cf1942
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521041"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029516"
 ---
 # <a name="restricted"></a>restricted
 
@@ -32,7 +32,7 @@ ms.locfileid: "50521041"
 
 ## <a name="remarks"></a>설명
 
-합니다 **제한** c + + 특성에 동일한 기능을 합니다 [제한](/windows/desktop/Midl/restricted) MIDL 특성입니다.
+**제한** C++ 특성에 동일한 기능을 합니다 [제한](/windows/desktop/Midl/restricted) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -74,7 +74,7 @@ class c : public a, public b
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [인터페이스 특성](interface-attributes.md)<br/>

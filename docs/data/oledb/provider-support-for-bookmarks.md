@@ -8,12 +8,12 @@ helpviewer_keywords:
 - IRowsetLocate class
 - OLE DB providers, bookmark support
 ms.assetid: 1b14ccff-4f76-462e-96ab-1aada815c377
-ms.openlocfilehash: 326a52805cb78a3f31141d3eac6a0942a7fee477
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: 207dcc92cd308052e4e5e7265bf0632c5096bed4
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51264725"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041074"
 ---
 # <a name="provider-support-for-bookmarks"></a>공급자의 책갈피 지원
 
@@ -264,6 +264,6 @@ END_ACCESSOR_MAP()
 
 빌드 및 사용 하 여 공급자를 실행할 수 있어야 코드를 업데이트 한 경우는 `IRowsetLocate` 인터페이스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [고급 공급자 기술](../../data/oledb/advanced-provider-techniques.md)

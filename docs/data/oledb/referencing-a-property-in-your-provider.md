@@ -6,12 +6,12 @@ helpviewer_keywords:
 - references, to properties in providers
 - referencing properties in providers
 ms.assetid: bfbb3851-5eed-467a-a179-4a97a9515525
-ms.openlocfilehash: d8c775af8f887deb7bf49016f9716fa0a76d2439
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: c3e620cd760aa04df7d7d2209ef009a606675276
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57415944"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59028462"
 ---
 # <a name="referencing-a-property-in-your-provider"></a>공급자의 속성 참조
 
@@ -19,7 +19,7 @@ ms.locfileid: "57415944"
 
 다음 예에서는 행 집합에서 속성을 가져올 하고자 하는 것을 가정 합니다. 세션 또는 명령에 대 한 코드는 유사 하지만 서로 다른 인터페이스를 사용 합니다.
 
-만들기는 [CDBPropSet](../../data/oledb/cdbpropset-class.md) 속성 그룹을 사용 하 여 생성자에 매개 변수로 개체입니다. 예를 들면,
+만들기는 [CDBPropSet](../../data/oledb/cdbpropset-class.md) 속성 그룹을 사용 하 여 생성자에 매개 변수로 개체입니다. 예를 들어:
 
 ```cpp
 CDBPropSet propset(DBPROPSET_ROWSET);
@@ -66,6 +66,6 @@ if (pPropSet)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿을 사용하여 작업](../../data/oledb/working-with-ole-db-provider-templates.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __writeeflags intrinsics
 ms.assetid: a62a522c-d7fa-4f10-a620-a3b32bdf3f17
-ms.openlocfilehash: 8509bf37019d1525cdaca33bf1819d85ace7d75a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6679a3b16def3ed413c5cec2a4bb7d5fe5d732c8
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600046"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030357"
 ---
 # <a name="writeeflags"></a>__writeeflags
 
@@ -44,7 +44,7 @@ void __writeeflags(unsigned __int64 Value);
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [__readeflags](../intrinsics/readeflags.md)

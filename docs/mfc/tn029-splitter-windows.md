@@ -8,10 +8,10 @@ helpviewer_keywords:
 - splitter windows [MFC], about splitter windows
 ms.assetid: 2c57ce99-2a3c-4eff-9cea-baccb13af075
 ms.openlocfilehash: 6c2f619d9cd619ca598c66ca657faa1b9dccaaa2
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781733"
 ---
 # <a name="tn029-splitter-windows"></a>TN029: 분할 창
@@ -22,7 +22,7 @@ ms.locfileid: "58781733"
 
 `CSplitterWnd` windows 분할의 두 가지 다른 스타일을 지원 합니다.
 
-"정적 분할 창 에서는" 분할 창 만들어질 때 창을 만듭니다. 순서 및 창 수를 변경 되지 않습니다. 분할 막대의 다양 한 창 크기를 조정 하는 데 사용 됩니다. 각 창에 서로 다른 뷰 클래스를 표시 하려면이 스타일을 사용할 수 있습니다. Visual c + + 그래픽 편집기 및 Windows 파일 관리자는이 분할자 스타일을 사용 하는 프로그램의 예입니다. 이 스타일 분할자 창 분할기 상자를 사용 하지 않습니다.
+"정적 분할 창 에서는" 분할 창 만들어질 때 창을 만듭니다. 순서 및 창 수를 변경 되지 않습니다. 분할 막대의 다양 한 창 크기를 조정 하는 데 사용 됩니다. 각 창에 서로 다른 뷰 클래스를 표시 하려면이 스타일을 사용할 수 있습니다. 시각적 개체 C++ 그래픽 편집기 및 Windows 파일 관리자는이 분할자 스타일을 사용 하는 프로그램의 예입니다. 이 스타일 분할자 창 분할기 상자를 사용 하지 않습니다.
 
 "동적 분할 창 에서는" 추가 창이 만들어지고 사용자 분할 및 분할 취소 새 뷰를 제거 합니다. 이 분할기 단일 보기를 시작 하 고 분할을 시작 하려면 사용자에 대 한 분할 상자를 제공 합니다. 분할기 창 뷰는 한 방향으로 분할 될 때 동적으로 새 뷰 개체를 만듭니다. 이 새 뷰 개체를 새 창을 나타냅니다. 두 방향에서 키보드 인터페이스를 사용 하 여 뷰를 분할 하는 경우 분할 창 있는 세 개의 새 창에 대 한 3 개의 새 뷰 개체를 만듭니다. 분할 활성 상태인 동안 Windows 창 사이 분할 막대로 분할자 상자를 표시 합니다. Windows 사용자는 분할 제거 있지만 분할자 창 자체 될 때까지 원래 뷰를 그대로 유지 됩니다는 손상 추가 뷰 개체를 제거 합니다. Microsoft Excel 및 Microsoft Word은 동적 분할 스타일을 사용 하는 응용 프로그램의 예입니다.
 

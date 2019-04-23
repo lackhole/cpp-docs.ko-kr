@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4754
 ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
 ms.openlocfilehash: 203f2b97547c7ff8b1d68e3640e62d531b2600e9
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58780355"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779390"
 ---
 # <a name="compiler-warning-level-4-c4754"></a>컴파일러 경고(수준 4) C4754
 

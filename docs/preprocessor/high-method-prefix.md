@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - high_method_prefix attribute
 ms.assetid: cacebf09-12f5-4919-ad40-939e206e340c
-ms.openlocfilehash: 69e96a8a8f92316e32074a861456fffb83c79434
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1575b2e3fee461ee0e3987aaf1e770d0611e31ec
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616459"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59028988"
 ---
 # <a name="highmethodprefix"></a>high_method_prefix
 
-**C + + 전용**
+**C++특정**
 
 상위 수준 속성과 메서드 명명에 사용될 접두사를 지정합니다.
 
@@ -34,9 +34,9 @@ high_method_prefix("Prefix")
 
 기본적으로 상위 수준 오류 처리 속성 및 메서드는 접두사 없이 명명된 멤버 함수에 의해 노출됩니다. 이름은 형식 라이브러리에서 제공됩니다.
 
-**C + + 전용 종료**
+**최종 C++ 특정**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

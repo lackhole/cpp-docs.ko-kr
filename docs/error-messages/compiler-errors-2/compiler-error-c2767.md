@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2767
 ms.assetid: e8f84178-a160-4d71-a236-07e4fcc11e96
 ms.openlocfilehash: 78b171b634aea66115c4029c696fec042593bb30
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58779588"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777057"
 ---
 # <a name="compiler-error-c2767"></a>컴파일러 오류 C2767
 

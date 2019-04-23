@@ -107,10 +107,10 @@ helpviewer_keywords:
 - CPaneContainerManager [MFC], StoreRecentDockSiteInfo
 ms.assetid: 3d974c15-a62f-4648-bb5b-cc31ab7950af
 ms.openlocfilehash: 887b771ee76034256c77aa3d038da96696eca6ed
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774596"
 ---
 # <a name="cpanecontainermanager-class"></a>CPaneContainerManager 클래스

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - ODBC connections, configuring
 - configuring ODBC data sources
 ms.assetid: b8cabe9b-9e12-4d73-ae36-7cb12dee3213
-ms.openlocfilehash: 3d02a19d6c61e79fffd31b67ef1b8f7ea9007fcb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 33269b65835812a6e1a03e091833831781d97b6d
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677372"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037960"
 ---
 # <a name="data-source-programmatically-configuring-an-odbc-data-source"></a>데이터 소스: 프로그래밍 방식으로 ODBC 데이터 소스 구성
 
@@ -41,7 +41,7 @@ SQLConfigDataSource(NULL,ODBC_ADD_DSN, "Excel Files (*.xls)",
 
 데이터 소스는 실제로 디렉터리 (C:\EXCELDIR); 이 디렉터리가 있어야 합니다. Excel 드라이버는 디렉터리를 해당 데이터 원본 및 파일을 개별 테이블로 (.xls 파일 당 테이블 한 개).
 
-테이블을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [데이터 소스: 프로그래밍 방식으로 ODBC 데이터 소스에서 테이블을 만드는](../../data/odbc/data-source-programmatically-creating-a-table-in-an-odbc-data-source.md)합니다.
+테이블을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [데이터 원본: 프로그래밍 방식으로 ODBC 데이터 원본에서 테이블을 만들고](../../data/odbc/data-source-programmatically-creating-a-table-in-an-odbc-data-source.md)합니다.
 
 다음 정보를 전달 되는 매개 변수를 설명 합니다 `::SQLConfigDataSource` ODBC API 함수입니다. 사용할 `::SQLConfigDataSource`에 Odbcinst.h 헤더 파일을 포함 하 고 Odbcinst.lib 가져오기 라이브러리를 사용 해야 합니다. 또한 Odbccp32.dll 런타임 (또는 16 비트인 경우) 경로 여야 합니다.
 
@@ -53,7 +53,7 @@ ODBC 관리자 (일반적으로 제어판에 설치)는 Windows 레지스트리�
 
 ##  <a name="_core_sqlconfigdatasource_parameters"></a> SQLConfigDataSource 매개 변수
 
-다음 설명의 매개 변수는 `::SQLConfigDataSource` 함수입니다. ODBC API에서 많은 정보를 가져옵니다 *프로그래머 참고 자료* Visual c + + 1.5 이상 버전을 사용 하 여 제공 합니다.
+다음 설명의 매개 변수는 `::SQLConfigDataSource` 함수입니다. ODBC API에서 많은 정보를 가져옵니다 *프로그래머 참고 자료* 시각적 개체를 사용 하 여 제공 된 C++ 1.5 이상 버전.
 
 ###  <a name="_core_function_prototype"></a> 함수 프로토타입
 
@@ -94,7 +94,7 @@ ODBC 드라이버 관리자나 특정 ODBC 드라이버를 만들고 새 데이�
 
    - 32 비트에 대 한 키를 찾을 **HKEY_CURRENT_USER\Software\ODBC\ODBC 합니다. 데이터 원본 INI\ODBC** 왼쪽된 창에서.
 
-      오른쪽 창에는 형식의 항목 나열: "pub: REG_SZ:*<data source name>*", 여기서 *<data source name>* 하려는 드라이버에 대해 원하는 설정을 사용 하 여 이미 구성 된 데이터 소스 사용 합니다. 예를 들어, SQL Server에 데이터 원본을 선택 합니다. 문자열 다음의 항목 "pub:" 순서, 키 이름 및 값에서 사용 하는 사용자 *lpszAttributes* 매개 변수입니다.
+      오른쪽 창에는 형식의 항목 나열: "pub: REG_SZ:*<data source name>*", 여기서 *<data source name>* 는 사용 하려는 드라이버에 대해 원하는 설정을 사용 하 여 이미 구성 된 데이터 원본입니다. 예를 들어, SQL Server에 데이터 원본을 선택 합니다. 문자열 다음의 항목 "pub:" 순서, 키 이름 및 값에서 사용 하는 사용자 *lpszAttributes* 매개 변수입니다.
 
    - 16 비트에 대 한 섹션을 표시 하는 Odbc.ini 파일에서 찾을 [*\<데이터 원본 이름 >*].
 
@@ -114,6 +114,6 @@ ODBC 드라이버 관리자나 특정 ODBC 드라이버를 만들고 새 데이�
 
 해당 드라이버에 대 한 새 데이터 원본 만들기에 대 한 정보를 표시 하는 ODBC 관리자를 클릭 **도움말**합니다. 이 일반적으로 드라이버의 사용에 관한 중요 한 정보를 포함 하는 해당 특정 드라이버에 대 한 도움말 파일을 엽니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [데이터 소스(ODBC)](../../data/odbc/data-source-odbc.md)

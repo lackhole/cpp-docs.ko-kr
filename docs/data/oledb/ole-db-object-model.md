@@ -5,12 +5,12 @@ helpviewer_keywords:
 - rowsets, OLE DB object model
 - OLE DB, object model
 ms.assetid: 1a274a25-c310-4430-a1ec-bd2bd8120eff
-ms.openlocfilehash: 83e94a1075392bdf730b98f8f10a9751662ec976
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 303ad4166f0f1126182956fae9c19f513be7cfb3
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486803"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039165"
 ---
 # <a name="ole-db-object-model"></a>OLE DB 개체 모델
 
@@ -76,7 +76,7 @@ Microsoft Data Access SDK에 제공 하는 루트 열거자를 찾고 데이터 
 
 알림은 행 집합을 공유 하는 협동 소비자 그룹에서 사용 됩니다 (여기서 공유 의미 소비자가 동일한 트랜잭션 내에서 작동 하 것으로 간주 됩니다). 알림을 사용 수행한 행 집합에 대 한 작업에 대 한 알림을 받을 협동 소비자 행 집합을 공유 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 프로그래밍](../../data/oledb/ole-db-programming.md)<br/>
 [OLE DB 프로그래밍 개요](../../data/oledb/ole-db-programming-overview.md)

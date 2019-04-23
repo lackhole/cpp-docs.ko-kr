@@ -1,15 +1,15 @@
 ---
-title: '#가져오기 특성 (c + +)'
+title: '#특성을 가져오려면 (C++)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - '#import directive, attributes'
 ms.assetid: 2a5085e3-82ee-4f83-892b-0aa6cc13863b
-ms.openlocfilehash: 3cd1b259270ff8c76ac80ec66000f3c8177140fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 954dfec50db75c0e3d11f0924b0ee398cd211fe1
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624408"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59036142"
 ---
 # <a name="import-attributes-c"></a>#import 특성 (C++)
 사용 된 특성에 대 한 링크를 제공 합니다 `#import` 지시문입니다.
@@ -49,6 +49,6 @@ ms.locfileid: "50624408"
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

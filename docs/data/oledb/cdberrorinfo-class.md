@@ -44,12 +44,12 @@ helpviewer_keywords:
 - GetErrorParameters method
 - GetErrorRecords method
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
-ms.openlocfilehash: 9a047263022c45ddc2fcb98dc618a4c6075bfd75
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: bc13137a4222ba51cf3745f9706353d48068a072
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58778353"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59021542"
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo 클래스
 
@@ -241,7 +241,7 @@ HRESULT GetErrorRecords(ULONG* pcRecords) throw();
 
 오류 정보를 얻을 수 있는 인터페이스를 확인 하려는 경우에 함수의 첫 번째 형태를 사용 합니다. 그렇지 않으면 두 번째 형태를 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DBViewer](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>

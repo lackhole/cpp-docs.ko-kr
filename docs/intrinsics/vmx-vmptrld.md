@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __vmx_vmptrld intrinsic
 - VMPTRLD instruction
 ms.assetid: 95c9ec5b-1a81-41ba-983e-327bd6a65fcb
-ms.openlocfilehash: 4f74a69bf0a4a780834dc9669c1266c82f7038e6
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: e3d552720d454a4f22af368616b3953452c6db0e
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51325924"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59040425"
 ---
 # <a name="vmxvmptrld"></a>__vmx_vmptrld
 
@@ -48,7 +48,7 @@ int __vmx_vmptrld(
 
 VMCS 포인터는 64 비트 물리적 주소입니다.
 
-`__vmx_vmptrld` 함수는 `VMPTRLD` 컴퓨터 명령에 해당합니다. 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002를 문서화 합니다 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
+`__vmx_vmptrld` 함수는 `VMPTRLD` 컴퓨터 명령에 해당합니다. 이 함수는 게스트 운영 체제 및 해당 애플리케이션과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002를 문서화 합니다 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -60,7 +60,7 @@ VMCS 포인터는 64 비트 물리적 주소입니다.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [__vmx_vmptrst](../intrinsics/vmx-vmptrst.md)

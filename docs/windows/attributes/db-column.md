@@ -1,17 +1,17 @@
 ---
-title: db_column (c + + COM 특성)
+title: db_column (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.db_column
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-ms.openlocfilehash: 7ceb0b93f37133ccbbf89ed659f74b632e45bcb1
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: e0e2c873452884275e97663ae2d9d6df2f790ffd
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328937"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59024844"
 ---
 # <a name="dbcolumn"></a>db_column
 
@@ -111,7 +111,7 @@ class CProducts {
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 특성](ole-db-consumer-attributes.md)<br/>
 [클래스 특성](class-attributes.md)

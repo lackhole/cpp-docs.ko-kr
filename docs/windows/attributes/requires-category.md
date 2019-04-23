@@ -1,17 +1,17 @@
 ---
-title: requires_category (c + + COM 특성)
+title: requires_category (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.requires_category
 helpviewer_keywords:
 - requires_category attribute
 ms.assetid: a645fdc6-1ef5-414d-8c56-5fe2686d4687
-ms.openlocfilehash: e6621e2cec92eadb0ca4b4ac989b4ca7d578b2ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ec35a1958d9fbcf77fef7f498c6c0dba3ab17df9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429846"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59022141"
 ---
 # <a name="requirescategory"></a>requires_category
 
@@ -31,7 +31,7 @@ ms.locfileid: "50429846"
 
 ## <a name="remarks"></a>설명
 
-합니다 **requires_category** c + + 특성 대상 클래스에 필요한 구성 요소 범주를 지정 합니다. 자세한 내용은 [REQUIRED_CATEGORY](../../atl/reference/category-macros.md#required_category)합니다.
+합니다 **requires_category** C++ 특성 대상 클래스에 필요한 구성 요소 범주를 지정 합니다. 자세한 내용은 [REQUIRED_CATEGORY](../../atl/reference/category-macros.md#required_category)합니다.
 
 이 특성을 사용하려면 [coclass](coclass.md), [progid](progid.md)또는 [vi_progid](vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다.
 
@@ -59,14 +59,14 @@ class CMyClass {};
 
 |||
 |-|-|
-|**적용 대상**|**클래스**, **구조체**|
+|**적용 대상**|**class**, **struct**|
 |**반복 가능**|아니요|
 |**필수 특성**|다음 중 하나 이상의: `coclass`, `progid`, 또는 `vi_progid`합니다.|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 특성](com-attributes.md)<br/>
 [implements_category](implements-category.md)

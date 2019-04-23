@@ -1,14 +1,14 @@
 ---
 title: 컴파일러 옵션 사전순 목록
-ms.date: 08/20/2018
+ms.date: 04/08/2019
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 6175d62938534e790fb60b300ff55ad031da5801
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: d8ab1cbac7ad8eb44f16c7829ccac20a6d3e73ff
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811942"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59424120"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
@@ -60,7 +60,7 @@ ms.locfileid: "57811942"
 |[/GH](gh-enable-pexit-hook-function.md)|후크 함수 `_pexit`를 호출합니다.|
 |[/Gh](gh-enable-penter-hook-function.md)|후크 함수 `_penter`를 호출합니다.|
 |[/GL](gl-whole-program-optimization.md)|전체 프로그램 최적화를 사용합니다.|
-|[/Gm](gm-enable-minimal-rebuild.md)|최소 재빌드를 사용합니다.|
+|[/Gm](gm-enable-minimal-rebuild.md)|더 이상 사용되지 않습니다. 최소 재빌드를 사용합니다.|
 |[/GR](gr-enable-run-time-type-information.md)|RTTI(런타임 형식 정보)를 사용합니다.|
 |[/Gr](gd-gr-gv-gz-calling-convention.md)|`__fastcall` 호출 규칙을 사용합니다. x86 전용입니다.|
 |[/GS](gs-buffer-security-check.md)|보안 검사를 버퍼링합니다.|
@@ -76,7 +76,7 @@ ms.locfileid: "57811942"
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|
 |[/HELP](help-compiler-command-line-help.md)|컴파일러 옵션을 나열합니다.|
 |[/homeparams](homeparams-copy-register-parameters-to-stack.md)|레지스터에 전달된 매개 변수를 함수 시작 시 스택의 해당 위치에 기록합니다. X64에만이 컴파일러 옵션은 컴파일러 (네이티브 및 크로스 컴파일).|
-|[/hotpatch](hotpatch-create-hotpatchable-image.md)|핫 패치할 수 있는 이미지를 만듭니다.|
+|[/hotpatch](hotpatch-create-hotpatchable-image.md)|핫 패치 가능한 이미지를 만듭니다.|
 |[/I](i-additional-include-directories.md)|포함 파일의 디렉터리를 검색합니다.|
 |[/J](j-default-char-type-is-unsigned.md)|기본 `char` 형식을 변경합니다.|
 |[/JMC](jmc.md)|네이티브 C++ 내 코드만 디버깅 옵션을 지원합니다.|
@@ -97,7 +97,7 @@ ms.locfileid: "57811942"
 |[/Od](od-disable-debug.md)|최적화를 사용하지 않습니다.|
 |[/Og](og-global-optimizations.md)|더 이상 사용되지 않습니다. 전역 최적화를 사용합니다.|
 |[/Oi](oi-generate-intrinsic-functions.md)|내장 함수를 생성합니다.|
-|[/openmp](openmp-enable-openmp-2-0-support.md)|소스 코드에서 [#pragma omp](../../preprocessor/omp.md) 를 활성화합니다.|
+|[/openmp](openmp-enable-openmp-2-0-support.md)|사용 하도록 설정 합니다 [ `#pragma omp` ](../../preprocessor/omp.md) 소스 코드에 지시문입니다.|
 |[/Os](os-ot-favor-small-code-favor-fast-code.md)|코드 크기를 우선으로 합니다.|
 |[/Ot](os-ot-favor-small-code-favor-fast-code.md)|코드 속도를 우선으로 합니다.|
 |[/Ox](ox-full-optimization.md)|최대 최적화(/Ob1gity /Gs)를 사용합니다.|

@@ -1,17 +1,17 @@
 ---
-title: com_interface_entry (c + + COM 특성)
+title: com_interface_entry (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.com_interface_entry
 helpviewer_keywords:
 - com_interface_entry attribute
 ms.assetid: 10368f81-b99b-4a0f-ba4f-a142e6911a5c
-ms.openlocfilehash: 9d83cae79b257c9ddfc6d9ab910bb5502ae78307
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 65d174679f851613e064568b071cfcbdad8f0f06
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559694"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030409"
 ---
 # <a name="cominterfaceentry-c"></a>com_interface_entry(C++)
 
@@ -31,7 +31,7 @@ ms.locfileid: "50559694"
 
 ## <a name="remarks"></a>설명
 
-합니다 **com_interface_entry** c + + 특성 대상 개체의 COM 인터페이스 맵을 문자열 통화할된 내용을 삽입 합니다. 특성을 적용 하면 한 번 대상 개체에 항목을 기존 인터페이스 맵 시작 부분에 삽입 됩니다. 특성을 적용 하면 반복 해 서 동일한 대상 개체에 항목을 받은 순서 대로 인터페이스 맵 시작 부분에 삽입 됩니다.
+합니다 **com_interface_entry** C++ 특성 대상 개체의 COM 인터페이스 맵을 문자열 통화할된 내용을 삽입 합니다. 특성을 적용 하면 한 번 대상 개체에 항목을 기존 인터페이스 맵 시작 부분에 삽입 됩니다. 특성을 적용 하면 반복 해 서 동일한 대상 개체에 항목을 받은 순서 대로 인터페이스 맵 시작 부분에 삽입 됩니다.
 
 이 특성을 사용하려면 [coclass](coclass.md), [progid](progid.md)또는 [vi_progid](vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다. 단일 특성을 사용하는 경우 다른 두 특성도 자동으로 적용됩니다. 예를 들어 있으면 `progid` 적용 됩니다 `vi_progid` 및 `coclass` 도 적용 됩니다.
 
@@ -109,14 +109,14 @@ END_COM_MAP()
 
 |||
 |-|-|
-|**적용 대상**|**클래스**, **구조체**|
+|**적용 대상**|**class**, **struct**|
 |**반복 가능**|예|
 |**필수 특성**|다음 중 하나 이상의: `coclass`, `progid`, 또는 `vi_progid`합니다.|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 특성](com-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>

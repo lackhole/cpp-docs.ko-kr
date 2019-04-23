@@ -10,12 +10,12 @@ helpviewer_keywords:
 - consumer wizard-generated classes and methods
 - user record classes in OLE DB consumer
 ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
-ms.openlocfilehash: 2ebc2094ba7f12087de51119a134e2ef65ef92d4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7cd1fbe69186a2fcdbf25f1b2aa12727c98065da
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641140"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59036421"
 ---
 # <a name="consumer-wizard-generated-classes"></a>소비자 마법사 생성 클래스
 
@@ -184,6 +184,6 @@ class CProducts : public CCommand<CAccessor<_CProductsAccessor>>
 
 삽입된 코드를 보는 방법에 대한 자세한 내용은 [삽입된 코드 디버그](/visualstudio/debugger/how-to-debug-injected-code)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [마법사를 사용하여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

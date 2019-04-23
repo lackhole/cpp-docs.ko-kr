@@ -1,21 +1,21 @@
 ---
-title: idl_quote (c + + COM 특성)
+title: idl_quote (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.idl_quote
 helpviewer_keywords:
 - idl_quote attribute
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
-ms.openlocfilehash: edfeb18053f3ae4fa8c45211833e0ceaa037cf79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fd7455298c9a1b69926d85766b6cd7f96bd374cc
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595574"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037119"
 ---
 # <a name="idlquote"></a>idl_quote
 
-Visual c + +의 현재 버전에서 지원 되지 않는 IDL 구문을 사용할 수 있습니다 하 고 생성된 된.idl 파일을 통과 하도록 합니다.
+시각적 개체의 현재 버전에서 지원 되지 않는 IDL 구문을 사용할 수 있습니다 C++ 생성된 된.idl 파일을 통과 하도록 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,11 +26,11 @@ Visual c + +의 현재 버전에서 지원 되지 않는 IDL 구문을 사용할
 ### <a name="parameters"></a>매개 변수
 
 *텍스트*<br/>
-컴파일러 오류를 반환 하지 않고 생성된 된.idl 파일을 통과 하도록 Visual c + + 컴파일러는 특성 이름입니다.
+특성 이름을 하려는 시각적 개체는 C++ 컴파일러에서 컴파일러 오류를 반환 하지 않고 생성된 된.idl 파일을 통과 합니다.
 
 ## <a name="remarks"></a>설명
 
-경우는 **idl_quote** c + + 특성 (세미콜론으로 닫는 괄호 뒤), 독립 실행형 특성으로 사용 됩니다 *텍스트* 그대로 병합 된.idl 파일에 배치 됩니다. 하는 경우 **idl_quote** 기호를 사용할 경우 *텍스트* 해당 기호에 대 한 특성 블록 내에 배치 됩니다.
+경우는 **idl_quote** C++ 특성 (세미콜론으로 닫는 괄호 뒤), 독립 실행형 특성으로 사용 됩니다 *텍스트* 그대로 병합 된.idl 파일에 배치 됩니다. 하는 경우 **idl_quote** 기호를 사용할 경우 *텍스트* 해당 기호에 대 한 특성 블록 내에 배치 됩니다.
 
 ## <a name="example"></a>예제
 
@@ -84,7 +84,7 @@ __interface IStatic{
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [독립 실행형 특성](stand-alone-attributes.md)

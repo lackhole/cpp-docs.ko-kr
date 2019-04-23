@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3772
 ms.assetid: 63e938d4-088d-41cc-a562-5881a05b5710
-ms.openlocfilehash: 9a72cb9ee5d1d839f6ca5d113c25795f83dab811
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 420e1eb12cbb178459a96f55efab444a538e6c2b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595678"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59027938"
 ---
 # <a name="compiler-error-c3772"></a>컴파일러 오류 C3772
 
@@ -23,7 +23,7 @@ ms.locfileid: "50595678"
 
 - 클래스 템플릿 특수화의 friend를 선언하지 마세요.
 
-- 응용 프로그램에 해당하는 경우 클래스 템플릿의 friend를 선언하거나 특정 부분 또는 명시적 특수화의 friend를 선언합니다.
+- 애플리케이션에 해당하는 경우 클래스 템플릿의 friend를 선언하거나 특정 부분 또는 명시적 특수화의 friend를 선언합니다.
 
 ## <a name="example"></a>예제
 
@@ -57,7 +57,7 @@ class X {
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [템플릿](../../cpp/templates-cpp.md)<br/>
 [템플릿 특수화](../../cpp/template-specialization-cpp.md)

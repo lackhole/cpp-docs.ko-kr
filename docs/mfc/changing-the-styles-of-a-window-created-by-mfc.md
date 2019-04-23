@@ -22,10 +22,10 @@ helpviewer_keywords:
 - styles [MFC], windows
 ms.assetid: 77fa4f03-96b4-4687-9ade-41e46f7e4b0a
 ms.openlocfilehash: 0a002badf9c20ca7b2d1a129eca069e586893f3c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767238"
 ---
 # <a name="changing-the-styles-of-a-window-created-by-mfc"></a>MFC에서 만든 창 스타일 변경
@@ -34,7 +34,7 @@ ms.locfileid: "58767238"
 
 ##  <a name="_core_changing_styles_in_a_new_mfc_application"></a> 새 MFC 응용 프로그램에서 스타일 변경
 
-Visual c + + 2.0 이상을 사용 하는 경우 응용 프로그램을 만들 때 응용 프로그램 마법사의 기본 창 스타일을 변경할 수 있습니다. 응용 프로그램 마법사의 사용자 인터페이스 기능 페이지를 주 프레임 창 고 MDI 자식 창에 대 한 스타일을 변경할 수 있습니다. 창 유형 중 하나에 대 한 해당 프레임 두께 (굵은 또는 씬)를 지정할 수 있습니다 및 다음 중 하나:
+시각적 개체를 사용 하는 경우 C++ 응용 프로그램을 만들 때 응용 프로그램 마법사의 기본 창 스타일 2.0 이상 변경할 수 있습니다. 응용 프로그램 마법사의 사용자 인터페이스 기능 페이지를 주 프레임 창 고 MDI 자식 창에 대 한 스타일을 변경할 수 있습니다. 창 유형 중 하나에 대 한 해당 프레임 두께 (굵은 또는 씬)를 지정할 수 있습니다 및 다음 중 하나:
 
 - 창은 최소화 또는 최대화 컨트롤에 있는지 여부.
 

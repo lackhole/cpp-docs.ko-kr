@@ -4,12 +4,12 @@ ms.date: 10/19/2018
 helpviewer_keywords:
 - parameter queries, running using CCommand class
 ms.assetid: aedb0fce-52a4-4c97-a5c9-b2114be6c3b0
-ms.openlocfilehash: 9bf6a9ab1b4849b562637c11fffb578aec11ac34
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1ac029d954fc6cefaae6349e01af7728ca0886fd
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533044"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59025700"
 ---
 # <a name="issuing-a-parameterized-query"></a>매개 변수가 있는 쿼리 실행
 
@@ -77,6 +77,6 @@ END_PARAM_MAP()
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)

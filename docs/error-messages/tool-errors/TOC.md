@@ -229,6 +229,7 @@
 ## [링커 도구 경고 LNK4248](linker-tools-warning-lnk4248.md)
 ## [링커 도구 경고 LNK4253](linker-tools-warning-lnk4253.md)
 ## [링커 도구 경고 LNK4254](linker-tools-warning-lnk4254.md)
+## [링커 도구 경고 LNK4286](linker-tools-warning-lnk4286.md)
 # [프로필 기반 최적화 오류 및 경고](profile-guided-optimization-errors-and-warnings.md)
 ## [프로필 기반 최적화 경고 PG1039](profile-guided-optimization-warning-pg1039.md)
 ## [프로필 기반 최적화 경고 PG1087](profile-guided-optimization-warning-pg1087.md)

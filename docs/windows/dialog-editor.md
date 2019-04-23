@@ -1,5 +1,5 @@
 ---
-title: 대화 상자 편집기 (c + +)
+title: 대화 상자 편집기 (C++)
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.dialog.dialog
@@ -23,14 +23,14 @@ helpviewer_keywords:
 - Dialog Editor [C++], switching between controls and code
 - Dialog Editor [C++], shortcut keys
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
-ms.openlocfilehash: 7bc5d5763881b862487fa97e02da02d98bcd017d
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: dc5a823951e07af96efceec52d2aa23552c2d002
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562954"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029488"
 ---
-# <a name="dialog-editor-c"></a>대화 상자 편집기 (c + +)
+# <a name="dialog-editor-c"></a>대화 상자 편집기 (C++)
 
 합니다 **대화 상자 편집기** 만들거나 대화 상자 리소스를 편집할 수 있습니다.
 
@@ -67,7 +67,7 @@ Visual Studio 2015부터 사용할 수는 **대화 상자 편집기** 사용자�
 
 - 표시 하거나 숨기려면 합니다 **대화 상자 편집기** 메뉴로 이동 도구 모음 **뷰** > **도구 모음** > **대화 상자 편집기**합니다.
 
-그러나 열면 합니다 **대화 상자 편집기** c + + 프로젝트에는 **대화 상자 편집기** 솔루션의 맨 위에 있는 도구 모음 자동으로 표시 되 면 도구 모음을 명시적으로 닫으면 해야 호출는 다음으로 열면 합니다 **대화 상자 편집기**합니다. 사용 가능한 도구 모음 및 창 목록에서 선택 하 여 해당 표시를 전환할 수 있습니다.
+그러나 열면 합니다 **대화 상자 편집기** 에 C++ 프로젝트를 **대화 상자 편집기** 솔루션의 맨 위에 있는 도구 모음 자동으로 표시 되 면 도구 모음을 명시적으로 닫으면 해야 호출 이 열 다음에 **대화 상자 편집기**합니다. 사용 가능한 도구 모음 및 창 목록에서 선택 하 여 해당 표시를 전환할 수 있습니다.
 
 ## <a name="switch-between-dialog-box-controls-and-code"></a>대화 상자 컨트롤과 코드 사이의 스위치
 
@@ -124,7 +124,7 @@ MFC 응용 프로그램에서 대화 상자 컨트롤 처리기 코드로 이동
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
 [방법: 대화 상자 만들기](../windows/creating-a-new-dialog-box.md)<br/>

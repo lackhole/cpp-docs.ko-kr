@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Wrappers namespace
 ms.assetid: 36ac38c7-1fc3-42da-a879-5c68661dc9e1
-ms.openlocfilehash: 953318e09c4c0d00748f2b6189615dbd66677a96
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 4b88ad0da31321a696c1238f1c9838d3b3a1c927
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785091"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030117"
 ---
 # <a name="microsoftwrlwrappers-namespace"></a>Microsoft::WRL::Wrappers 네임스페이스
 
@@ -52,6 +52,6 @@ namespace Microsoft::WRL::Wrappers;
 
 **네임스페이스:** Microsoft::WRL::Wrappers
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL 네임스페이스](microsoft-wrl-namespace.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - function body
 - variables, missing
 ms.assetid: 1a88d809-b14f-46a4-97c4-3e48beb418f2
-ms.openlocfilehash: 88470272192520e9aa0582fd06ff36a0542803ba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c287d804df3222475d7cf32c6eb025f642dfb913
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647124"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031862"
 ---
 # <a name="missing-function-body-or-variable"></a>함수 본문 또는 변수 누락
 
@@ -31,7 +31,7 @@ int main() {
 
 ## <a name="example"></a>예제
 
-C + +에서는 클래스 정의에서 클래스 및 프로토타입 뿐 아니라 특정 함수의 구현이 포함 해야 합니다. 헤더 파일 외부에서 클래스를 정의 하는 경우 포함 해야 함수 전의 클래스 이름 (`Classname::memberfunction`).
+C++를 클래스 정의에서 클래스 및 프로토타입 뿐 아니라 특정 함수의 구현이 포함 되었는지 확인 합니다. 헤더 파일 외부에서 클래스를 정의 하는 경우 포함 해야 함수 전의 클래스 이름 (`Classname::memberfunction`).
 
 ```
 // LNK2019_MFBV_2.cpp
@@ -49,6 +49,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 도구 오류 LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)

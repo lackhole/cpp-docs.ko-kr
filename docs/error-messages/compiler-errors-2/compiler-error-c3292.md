@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3292
 ms.assetid: ead485cc-5471-4e10-b361-300589ff5b70
 ms.openlocfilehash: a68d3e922532480063fe4c294e40f453885743e8
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58780654"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777005"
 ---
 # <a name="compiler-error-c3292"></a>컴파일러 오류 C3292
 

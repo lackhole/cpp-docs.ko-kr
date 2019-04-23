@@ -1,24 +1,24 @@
 ---
-title: Working with Resource Files (c + +)
+title: Working with Resource Files (C++)
 ms.date: 02/14/2019
 helpviewer_keywords:
 - resources [C++], about resources
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-ms.openlocfilehash: 0a13fb05f0e6e8582d5e476eb889e307458f528d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: a08c7ecb153b790f06da386ac93d1f05f5981e61
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58767303"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037739"
 ---
 # <a name="working-with-resource-files"></a>리소스 파일 작업
 
 > [!WARNING]
 > 이 섹션의 내용은 C++로 작성된 Windows 데스크톱 애플리케이션에 적용됩니다.
 >
-> C + +로 작성 된 유니버설 Windows 플랫폼 앱의 리소스에 대 한 자세한 내용은 [앱 리소스 정의](/windows/uwp/app-resources/), 또는 리소스를 추가 하려면 C + + (관리) CLI 프로젝트를 참조 하십시오 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에서 .NET Framework 개발자 가이드입니다.
+> 작성 하는 유니버설 Windows 플랫폼 앱에서 리소스에 대 한 자세한 C++를 참조 하세요 [앱 리소스 정의](/windows/uwp/app-resources/), 또는 리소스를 추가 하는 방법 C++(관리) CLI 프로젝트 참조 [데스크톱앱의리소스](/dotnet/framework/resources/index) .NET Framework Developer's Guide에 있습니다.
 
 리소스와 같은 다양 한 범위의 요소를 구성할 수 있습니다.
 
@@ -55,7 +55,7 @@ Visual C++ 설명서에 대한 링크를 제공합니다.
 [의견 보내기](/visualstudio/ide/talk-to-us)<br/>
 설명서 집합을 사용하고 기술 지원에 문의하고 액세스 가능성 기능을 적용하는 방법에 대한 정보를 확인할 수 있는 링크를 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows 데스크톱 응용 프로그램](../windows/windows-desktop-applications-cpp.md)<br/>
 [메뉴 및 기타 리소스](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

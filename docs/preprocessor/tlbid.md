@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - tlbid attribute
 ms.assetid: 54b06785-191b-4e77-a9a5-485f2b4acb09
-ms.openlocfilehash: 31b71f7c195a7e2ee649b40197551e4ff5efda2c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae79ce9245bb1c0425c3e9b92dd27b52fa443dba
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584514"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037942"
 ---
 # <a name="tlbid"></a>tlbid
 
-**C + + 전용**
+**C++특정**
 
 기본 형식 라이브러리 이외의 라이브러리를 로드할 수 있도록 합니다.
 
@@ -27,7 +27,7 @@ tlbid(number)
 
 ### <a name="parameters"></a>매개 변수
 
-*수*<br/>
+*number*<br/>
 `filename`에 있는 형식 라이브러리의 수입니다.
 
 ## <a name="remarks"></a>설명
@@ -46,9 +46,9 @@ tlbid(number)
 LoadTypeLib("MyResource.dll\\2");
 ```
 
-**C + + 전용 종료**
+**최종 C++ 특정**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

@@ -1,5 +1,5 @@
 ---
-title: 리소스 식별자 (기호) (c + +)
+title: 리소스 식별자 (기호) (C++)
 ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.symbol.identifiers
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - symbols [C++], editing
 - resource editors [C++], resource symbols
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
-ms.openlocfilehash: 63971ba381394bcaf905d614496511b7aa0d01f3
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 0b19ff0d1c709616868d47c172ff4cf8c6931b82
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57563318"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59036051"
 ---
-# <a name="resource-identifiers-symbols-c"></a>리소스 식별자 (기호) (c + +)
+# <a name="resource-identifiers-symbols-c"></a>리소스 식별자 (기호) (C++)
 
 기호는 리소스 식별자 (ID)의 두 부분으로 구성 된 예를 들어 매핑된 기호 값 (정수) 기호 이름 (문자열):
 
@@ -46,7 +46,7 @@ IDC_EDITNAME = 5100
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>

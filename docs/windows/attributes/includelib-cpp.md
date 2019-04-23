@@ -1,17 +1,17 @@
 ---
-title: includelib (c + + COM 특성)
+title: includelib (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.includelib
 helpviewer_keywords:
 - includelib attribute
 ms.assetid: cd90ea6e-5ae8-4f11-b8d1-662db95412b2
-ms.openlocfilehash: 4cfadc84b9131aa787323b4967ae9cfc4baabbcb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57f039eeae527dd03884b12e7d9eb424d87f597f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570419"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030002"
 ---
 # <a name="includelib-c"></a>includelib(C++)
 
@@ -30,7 +30,7 @@ ms.locfileid: "50570419"
 
 ## <a name="remarks"></a>설명
 
-합니다 **includelib** c + + 특성을 한 후 생성 된.idl 파일에 포함 될.idl 또는.h 파일을 사용 하면는 `importlib` 문입니다.
+합니다 **includelib** C++ 특성을 한 후 생성 된.idl 파일에 포함 될.idl 또는.h 파일을 사용 하면 합니다 `importlib` 문입니다.
 
 ## <a name="example"></a>예제
 
@@ -56,7 +56,7 @@ ms.locfileid: "50570419"
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [독립 실행형 특성](stand-alone-attributes.md)<br/>

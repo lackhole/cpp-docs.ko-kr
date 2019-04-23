@@ -7,12 +7,12 @@ helpviewer_keywords:
 - IRowsetLocate class, adding to OLE DB template providers
 - simple read-only poviders [C++]
 ms.assetid: cba0e09f-44c1-41c1-9456-332aa13dc158
-ms.openlocfilehash: 4b06eb77851df0bf0bd0d3ef91a3ea960835ccba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d61f24a9a9abffe836a7f11bd5d1517fddf97fe7
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462922"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034078"
 ---
 # <a name="enhancing-the-simple-read-only-provider"></a>단순한 읽기 전용 공급자의 기능 향상
 
@@ -26,6 +26,6 @@ ms.locfileid: "50462922"
 
 - [소비자에게 반환할 열을 동적으로 결정](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [단순한 읽기 전용 공급자 만들기](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ModuleType enumeration
 ms.assetid: 61a763af-a5a4-451d-8b40-815af507fcde
-ms.openlocfilehash: 937649eada481f7c45359fa0816266f62dc03875
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 3c7486cbc761975dd133f229f23dcf0b70e7e3ac
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785452"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039158"
 ---
 # <a name="moduletype-enumeration"></a>ModuleType 열거형
 
@@ -42,6 +42,6 @@ enum ModuleType;
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL 네임스페이스](microsoft-wrl-namespace.md)

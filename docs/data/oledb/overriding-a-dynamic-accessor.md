@@ -6,12 +6,12 @@ helpviewer_keywords:
 - dynamic accessors
 - overriding, dynamic accessors
 ms.assetid: cbefd156-6da5-490d-b795-c2d7d874f7ce
-ms.openlocfilehash: 428eeaa61843bbd195de7936656815b5e3c6115f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 01beab80fb8574e0caa4ad3054d174c60106ce94
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551179"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039192"
 ---
 # <a name="overriding-a-dynamic-accessor"></a>동적 접근자 재정의
 
@@ -69,6 +69,6 @@ while (product.MoveNext() == S_OK)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [접근자 사용](../../data/oledb/using-accessors.md)

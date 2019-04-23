@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Visual C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: a3ddafab143224b6e20a3e01d1d643c42bbe19e0
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: b4772b9bd625a542a18039386fefe42840ab65b1
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58775324"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038040"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio 프로젝트-C++
 
@@ -75,6 +75,6 @@ Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자�
 [기존 코드로 프로젝트 만들기](how-to-create-a-cpp-project-from-existing-code.md)<br/>
 소스 파일의 느슨한 컬렉션에서 새 Visual Studio 프로젝트를 만드는 방법입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프로젝트 및 빌드 시스템](projects-and-build-systems-cpp.md)<br>

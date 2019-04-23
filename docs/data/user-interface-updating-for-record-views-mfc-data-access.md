@@ -6,12 +6,12 @@ helpviewer_keywords:
 - menus, updating as context changes
 - record views, user interface
 ms.assetid: 2c7914b6-2dc3-40c3-b2f2-8371da2a4063
-ms.openlocfilehash: 914a262560a10ba4085e0605a0c9f677d7a447fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: de94b28e713459edfd63aff832caecc7ea49ca33
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630401"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023362"
 ---
 # <a name="user-interface-updating-for-record-views--mfc-data-access"></a>레코드 뷰의 사용자 인터페이스 업데이트  (MFC Data Access)
 
@@ -25,7 +25,7 @@ ms.locfileid: "50630401"
 
 1. 사용에 대 한 정보를 참조 하는 [도구 모음 편집기](../windows/toolbar-editor.md), 도구 모음 리소스를 편집 해 레코드 탐색 명령에 대 한 도구 모음 단추를 추가 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 뷰에서의 탐색 지원](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)<br/>
 [레코드 뷰 사용](../data/using-a-record-view-mfc-data-access.md)

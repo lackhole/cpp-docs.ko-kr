@@ -1,17 +1,17 @@
 ---
-title: importidl (c + + COM 특성)
+title: importidl (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.importidl
 helpviewer_keywords:
 - importidl attribute
 ms.assetid: 4b0a4b55-6c57-4e6e-bc7b-a12cc8063941
-ms.openlocfilehash: 8d0d891f74da8df2351b0a861fb7501e72f5e2de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9db62d4f2a36b8cc0592c924b113077a758915c0
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587172"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029916"
 ---
 # <a name="importidl"></a>importidl
 
@@ -30,7 +30,7 @@ ms.locfileid: "50587172"
 
 ## <a name="remarks"></a>설명
 
-합니다 **importidl** 라이브러리 블록 외부에서 단면을 배치 하는 c + + 특성 (에서 *idl_file*) 프로그램의 생성 된.idl 파일을 라이브러리 섹션 (에서 *idl_file*) 프로그램의 부분을 라이브러리로.idl 파일을 생성 합니다.
+합니다 **importidl** C++ 라이브러리 블록 외부에서 단면을 배치 하는 특성 (에서 *idl_file*) 프로그램의 생성 된.idl 파일을 라이브러리 섹션 (에서 *idl_file*) 프로그램의 생성 된.idl 파일의 라이브러리 섹션입니다.
 
 사용 하려는 **importidl**, 예를 들어, 생성 된.idl 파일을 사용 하 여 직접 코딩 된.idl 파일을 사용 하려는 경우.
 
@@ -56,7 +56,7 @@ ms.locfileid: "50587172"
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 특성](compiler-attributes.md)<br/>
 [독립 실행형 특성](stand-alone-attributes.md)<br/>

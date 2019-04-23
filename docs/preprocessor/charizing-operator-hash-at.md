@@ -8,12 +8,12 @@ helpviewer_keywords:
 - charizing operator
 - '#@ preprocessor operator'
 ms.assetid: dee03314-d27c-4063-965c-64756efbef22
-ms.openlocfilehash: 7259487a3289173bc77517c8c616638c370041c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c9acc9b9872e096cd441b950632c341e975fecb8
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568342"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034337"
 ---
 # <a name="charizing-operator-"></a>Charizing 연산자 (#@)
 **Microsoft 전용**
@@ -40,6 +40,6 @@ a = 'b';
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [전처리기 연산자](../preprocessor/preprocessor-operators.md)

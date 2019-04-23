@@ -31,10 +31,10 @@ helpviewer_keywords:
 - CUserTool [MFC], m_strLabel
 ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
 ms.openlocfilehash: 5bb0ae073b722c97e8e30158f8f7832fd88b2fbc
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779042"
 ---
 # <a name="cusertool-class"></a>CUserTool 클래스

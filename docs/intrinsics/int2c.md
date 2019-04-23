@@ -9,12 +9,12 @@ helpviewer_keywords:
 - int 2c instruction
 - __int2c intrinsic
 ms.assetid: aa20ff30-adef-42bb-8577-8010f3122f8e
-ms.openlocfilehash: df90e87684a40dcd489c875e2fa49d96ebf94b40
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 36ef8acd3d71c08a356d4210f16205828f691fa5
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486205"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023492"
 ---
 # <a name="int2c"></a>__int2c
 
@@ -38,6 +38,6 @@ void __int2c(void);
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

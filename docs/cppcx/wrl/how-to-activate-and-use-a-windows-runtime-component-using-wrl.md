@@ -3,20 +3,20 @@ title: '방법: 활성화 및 WRL을 사용 하 여 Windows 런타임 구성 요
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 54828f02-6af3-45d1-b965-d0104442f8d5
-ms.openlocfilehash: ccc64769ca319e8aba141ce95a00eb876cc051f3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 8c0bed825f76fdf0f2c5cc1fa095e54f08bb8a67
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785048"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037219"
 ---
 # <a name="how-to-activate-and-use-a-windows-runtime-component-using-wrl"></a>방법: 활성화 및 WRL을 사용 하 여 Windows 런타임 구성 요소를 사용 합니다.
 
-이 문서에는 Windows 런타임을 초기화 하는 Windows 런타임 c + + 템플릿 라이브러리 (WRL)를 사용 하는 방법 및 활성화 하 여 Windows 런타임 구성 요소를 사용 하는 방법을 보여 줍니다.
+이 문서에서는 Windows 런타임을 사용 하는 방법을 보여 줍니다. C++ 템플릿 라이브러리 (WRL)를 활성화 하 고 Windows 런타임 구성 요소를 사용 하는 방법과 Windows 런타임 초기화 합니다.
 
 구성 요소를 사용 하려면 구성 요소에 의해 구현 되는 형식에 대 한 인터페이스 포인터를 획득 해야 합니다. 및 Windows 런타임 기반 기술 구성 요소 개체 모델 (COM) 이기 때문에 형식의 인스턴스를 유지 하기 위해 COM 규칙을 따라야 합니다. 예를 들어, 유지 해야 합니다 *참조 횟수를* 메모리에서 형식이 삭제 되는 경우를 결정 하는 합니다.
 
-Windows 런타임 사용을 간소화 하기 위해 Windows Runtime c + + 템플릿 라이브러리 제공 스마트 포인터 템플릿 [ComPtr\<T >](comptr-class.md), 참조 횟수를 자동으로 수행 합니다. 변수를 선언할 때 지정할 `ComPtr<` *인터페이스 이름이* `>` *식별자*합니다. 인터페이스 멤버에 액세스 하려면 화살표 멤버 액세스 연산자를 적용할 (`->`) 식별자입니다.
+Windows 런타임의 Windows 런타임 사용을 간소화 하기 위해 C++ 템플릿 라이브러리 스마트 포인터 템플릿을 제공 [ComPtr\<T >](comptr-class.md)를 참조 횟수를 자동으로 수행 하는 합니다. 변수를 선언할 때 지정할 `ComPtr<` *인터페이스 이름이* `>` *식별자*합니다. 인터페이스 멤버에 액세스 하려면 화살표 멤버 액세스 연산자를 적용할 (`->`) 식별자입니다.
 
 > [!IMPORTANT]
 > 인터페이스 함수를 호출 하면 항상 HRESULT 반환 값을 테스트 합니다.
@@ -26,11 +26,11 @@ Windows 런타임 사용을 간소화 하기 위해 Windows Runtime c + + 템플
 다음 단계를 사용 하 여는 `Windows::Foundation::IUriRuntimeClass` 인터페이스를 Windows 런타임 구성 요소에 대 한 활성화 팩터리를 만들고, 해당 구성 요소의 인스턴스를 만듭니다, 속성 값을 검색 하는 방법을 보여 줍니다. 또한 Windows 런타임을 초기화 하는 방법을 보여 줍니다. 다음은 완성된 예제입니다.
 
 > [!IMPORTANT]
-> 유니버설 Windows 플랫폼 (UWP) 앱에서 Windows 런타임 c + + 템플릿 라이브러리를 일반적으로 사용 하지만이 예제에 대 한 예시 콘솔 앱을 사용 합니다. 와 같은 함수 `wprintf_s` 는 UWP 앱에서 사용할 수 없습니다. 형식 및 UWP 앱에서 사용할 수 있는 함수에 대 한 자세한 내용은 참조 하세요. [유니버설 Windows 플랫폼 앱에서 지원 되지 않습니다 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) 하 고 [UWP 앱 용 Win32 및 COM](/uwp/win32-and-com/win32-and-com-for-uwp-apps)합니다.
+> 일반적으로 Windows 런타임 사용 하지만 C++ 유니버설 Windows 플랫폼 (UWP) 앱이이 예제에서 템플릿 라이브러리에 대 한 예시 콘솔 앱을 사용 합니다. 와 같은 함수 `wprintf_s` 는 UWP 앱에서 사용할 수 없습니다. 형식 및 UWP 앱에서 사용할 수 있는 함수에 대 한 자세한 내용은 참조 하세요. [유니버설 Windows 플랫폼 앱에서 지원 되지 않습니다 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) 하 고 [UWP 앱 용 Win32 및 COM](/uwp/win32-and-com/win32-and-com-for-uwp-apps)합니다.
 
 #### <a name="to-activate-and-use-a-windows-runtime-component"></a>활성화 하 고 Windows 런타임 구성 요소를 사용 하 여
 
-1. 포함 (`#include`) 필요한 Windows 런타임, Windows 런타임 c + + 템플릿 라이브러리 또는 c + + 표준 라이브러리 헤더입니다.
+1. 포함 (`#include`) Windows 런타임, Windows 런타임 필요한 C++ 템플릿 라이브러리 또는 C++ 표준 라이브러리 헤더입니다.
 
    [!code-cpp[wrl-consume-component#2](../codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_1.cpp)]
 
@@ -78,6 +78,6 @@ Windows 런타임 사용을 간소화 하기 위해 Windows Runtime c + + 템플
 
 `cl.exe wrl-consume-component.cpp runtimeobject.lib`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows 런타임 C++ 템플릿 라이브러리(WRL)](windows-runtime-cpp-template-library-wrl.md)

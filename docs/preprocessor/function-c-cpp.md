@@ -8,12 +8,12 @@ helpviewer_keywords:
 - function pragma
 - pragmas, function
 ms.assetid: cbd1bd60-fabf-4b5a-9c3d-2d9f4b871365
-ms.openlocfilehash: 1c8c250e3ea28d56aec837f5c3353c3bb6515442
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c57ff2053b3c1fd52474c7eb0dd598641632f789
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611460"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59027261"
 ---
 # <a name="function-cc"></a>함수 (C/C++)
 pragma의 인수 목록에서 지정된 함수에 대한 호출이 생성되도록 지정합니다.
@@ -82,6 +82,6 @@ str is 'Now************'
 str is '!!!!!!!!!!!!!!!'
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

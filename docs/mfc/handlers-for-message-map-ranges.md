@@ -22,12 +22,12 @@ helpviewer_keywords:
 - handler functions [MFC], declaring
 - message ranges [MFC], mapping
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
-ms.openlocfilehash: b587064625178c520338e4253e812e8f84275257
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d2bc961486d9bc686e1ca0d5feb0fe01d65f9512
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266369"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58773998"
 ---
 # <a name="handlers-for-message-map-ranges"></a>메시지 맵 범위에 대한 처리기
 
@@ -95,7 +95,7 @@ ms.locfileid: "57266369"
 
 ##  <a name="_core_example_for_a_range_of_command_ids"></a> 범위의 명령 Id에 대 한 예제
 
-한 가지 예는 MFC 샘플에서 확대/축소 명령 처럼 명령 처리 범위를 사용 하면 [HIERSVR](../visual-cpp-samples.md)합니다. 이 명령은 300% 보통 크기의 25% 사이의 확장 보기를 확대 합니다. HIERSVR의 뷰 클래스 범위를 사용 하 여이 비슷한 메시지 맵 항목을 사용 하 여 확대/축소 명령 처리.
+한 가지 예는 MFC 샘플에서 확대/축소 명령 처럼 명령 처리 범위를 사용 하면 [HIERSVR](../overview/visual-cpp-samples.md)합니다. 이 명령은 300% 보통 크기의 25% 사이의 확장 보기를 확대 합니다. HIERSVR의 뷰 클래스 범위를 사용 하 여이 비슷한 메시지 맵 항목을 사용 하 여 확대/축소 명령 처리.
 
 [!code-cpp[NVC_MFCMessageHandling#8](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_3.cpp)]
 

@@ -1,12 +1,12 @@
 ---
 title: ARM64 예외 처리
 ms.date: 11/19/2018
-ms.openlocfilehash: 43e43beae5ee02f9ef4537da08a1c9915056b777
-ms.sourcegitcommit: 5fc76f5b3c4c3ee49f38f05b37261a324591530b
+ms.openlocfilehash: 55476119499a3216f6801877dba692b2a0d1d9ee
+ms.sourcegitcommit: 88631cecbe3e3fa752eae3ad05b7f9d9f9437b4d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58870795"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59534125"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 예외 처리
 
@@ -44,7 +44,7 @@ ARM64에서 Windows 동일한 구조적된 예외 처리 비동기 하드웨어�
 
 1. 에필로그에서 조건부 코드가 없는 합니다.
 
-1. 전용된 프레임 포인터 레지스터 합니다. 언제 든 지 원본 sp를 복구할 수 있도록 sp 프롤로그에 등록 하는 다른 레지스터 (r29)에 저장 된 경우 함수 전체에서 그대로 남아 있습니다.
+1. 전용된 프레임 포인터 레지스터 합니다. Sp를 등록 하는 프롤로그에 (x29) 다른 레지스터에 저장 된 경우에 그대로 함수 전체에서 언제 든 지 원본 sp를 복구할 수 있도록 합니다.
 
 1. Sp 다른 레지스터에 저장 하지 않으면 모든 조작 스택 포인터의 프롤로그 및 에필로그 내에서 엄격 하 게 발생 합니다.
 
@@ -54,90 +54,90 @@ ARM64에서 Windows 동일한 구조적된 예외 처리 비동기 하드웨어�
 
 ![스택 프레임 레이아웃](media/arm64-exception-handling-stack-frame.png "스택 프레임 레이아웃")
 
-연결 프레임 함수에 대 한 최적화 고려 사항에 따라 로컬 변수 영역에서 다른 위치에 있는 fp 및 lr 쌍을 저장할 수 있습니다. 목표는 프레임 포인터 (r29) 또는 스택 포인터 (sp)에 따라 하나의 단일 명령으로 연결할 수 있는 지역 수를 최대화 하는 것입니다. 그러나 한 `alloca` 함수 연결 되어야 합니다 및 r29 스택의 맨 아래를 가리켜야 합니다. 더 나은 레지스터 쌍-주소 지정-모드 검사를 허용 하려면 영역을 저장 한 비휘발성 레지스터 로컬 영역 스택의 맨 위에 있는 배치 됩니다. 가장 효율적인 프롤로그 시퀀스의 몇 가지를 보여 주는 예제는 다음과 같습니다. 쉽게 구별할 수 있도록 캐시 효율 향상을 위해 모든 정식 프롤로그에서 호출 수신자 저장 레지스터를 저장 하는 순서는 "성장" 순서로 지정 됩니다. `#framesz` 아래 전체 스택 (alloca 영역 제외)의 크기를 나타냅니다. `#localsz` 및 `#outsz` 로컬 영역 크기를 나타냅니다 (저장을 포함 하 여 영역을 \<r29, lr > 쌍) 및 매개 변수 크기를 각각 나가는 합니다.
+연결 프레임 함수에 대 한 최적화 고려 사항에 따라 로컬 변수 영역에서 다른 위치에 있는 fp 및 lr 쌍을 저장할 수 있습니다. 목표는 프레임 포인터 (x29) 또는 스택 포인터 (sp)에 따라 하나의 단일 명령으로 연결할 수 있는 지역 수를 최대화 하는 것입니다. 그러나 한 `alloca` 함수 연결 되어야 합니다 및 x29 스택의 맨 아래를 가리켜야 합니다. 더 나은 레지스터 쌍-주소 지정-모드 검사를 허용 하려면 영역을 저장 한 비휘발성 레지스터 로컬 영역 스택의 맨 위에 있는 배치 됩니다. 가장 효율적인 프롤로그 시퀀스의 몇 가지를 보여 주는 예제는 다음과 같습니다. 쉽게 구별할 수 있도록 캐시 효율 향상을 위해 모든 정식 프롤로그에서 호출 수신자 저장 레지스터를 저장 하는 순서는 "성장" 순서로 지정 됩니다. `#framesz` 아래 전체 스택 (alloca 영역 제외)의 크기를 나타냅니다. `#localsz` 및 `#outsz` 로컬 영역 크기를 나타냅니다 (저장을 포함 하 여 영역을 \<x29, lr > 쌍) 및 매개 변수 크기를 각각 나가는 합니다.
 
 1. 연결, #localsz \<512 =
 
     ```asm
-        stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
-        stp    d8,d9,[sp,16]            // save in FP regs (optional)
-        stp    r0,r1,[sp,32]            // home params (optional)
-        stp    r2,r3,[sp, 48]
-        stp    r4,r5,[sp,64]
-        stp    r6,r7,[sp,72]
-        stp    r29, lr, [sp, -#localsz]!    // save <r29,lr> at bottom of local area
-        mov    r29,sp                   // r29 points to bottom of local
-        sub    sp, #outsz               // (optional for #outsz != 0)
+        stp    x19,x20,[sp,#-96]!        // pre-indexed, save in 1st FP/INT pair
+        stp    d8,d9,[sp,#16]            // save in FP regs (optional)
+        stp    x0,x1,[sp,#32]            // home params (optional)
+        stp    x2,x3,[sp,#48]
+        stp    x4,x5,[sp,#64]
+        stp    x6,x7,[sp,#72]
+        stp    x29,lr,[sp,#-localsz]!   // save <x29,lr> at bottom of local area
+        mov    x29,sp                   // x29 points to bottom of local
+        sub    sp,sp,#outsz             // (optional for #outsz != 0)
     ```
 
 1. 연결 된, #localsz > 512
 
     ```asm
-        stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
-        stp    d8,d9,[sp,16]            // save in FP regs (optional)
-        stp    r0,r1,[sp,32]            // home params (optional)
-        stp    r2,r3,[sp, 48]
-        stp    r4,r5,[sp,64]
-        stp    r6,r7,[sp,72]
-        sub    sp,#localsz+#outsz       // allocate remaining frame
-        stp    r29, lr, [sp, #outsz]    // save <r29,lr> at bottom of local area
-        add    r29,sp, #outsz           // setup r29 points to bottom of local area
+        stp    x19,x20,[sp,#-96]!        // pre-indexed, save in 1st FP/INT pair
+        stp    d8,d9,[sp,#16]            // save in FP regs (optional)
+        stp    x0,x1,[sp,#32]            // home params (optional)
+        stp    x2,x3,[sp,#48]
+        stp    x4,x5,[sp,#64]
+        stp    x6,x7,[sp,#72]
+        sub    sp,sp,#(localsz+outsz)   // allocate remaining frame
+        stp    x29,lr,[sp,#outsz]       // save <x29,lr> at bottom of local area
+        add    x29,sp,#outsz            // setup x29 points to bottom of local area
     ```
 
 1. 체인화, 리프 함수 (lr 저장 되지 않은)
 
     ```asm
-        stp    r19,r20,[sp, -72]!       // pre-indexed, save in 1st FP/INT reg-pair
-        stp    r21,r22,[sp, 16]
-        str    r23 [sp,32]
-        stp    d8,d9,[sp,40]            // save FP regs (optional)
-        stp    d10,d11,[sp,56]
-        sub    sp,#framesz-72           // allocate the remaining local area
+        stp    x19,x20,[sp,#-80]!       // pre-indexed, save in 1st FP/INT reg-pair
+        stp    x21,x22,[sp,#16]
+        str    x23,[sp,#32]
+        stp    d8,d9,[sp,#40]           // save FP regs (optional)
+        stp    d10,d11,[sp,#56]
+        sub    sp,sp,#(framesz-80)      // allocate the remaining local area
     ```
 
-   SP.에 따라 모든 지역에 액세스 하는 \<r29, lr > 이전 프레임을 가리킵니다. 프레임 크기에 대 한 \<512 =는 "sub sp,..." 최적화 될 수 있는 저장 regs 영역 스택의 맨 이동 합니다. 위의 다른 레이아웃을 사용 하 여 일치 하지 않습니다 하 고 저장 된 regs 쌍 regs 및 사전 및 사후 인덱싱된 오프셋된 주소 지정 모드에 대 한 범위의 참여의 단점은입니다.
+   SP.에 따라 모든 지역에 액세스 하는 \<x29, lr > 이전 프레임을 가리킵니다. 프레임 크기에 대 한 \<512 =는 "sub sp,..." 최적화 될 수 있는 저장 regs 영역 스택의 맨 이동 합니다. 위의 다른 레이아웃을 사용 하 여 일치 하지 않습니다 하 고 저장 된 regs 쌍 regs 및 사전 및 사후 인덱싱된 오프셋된 주소 지정 모드에 대 한 범위의 참여의 단점은입니다.
 
 1. 체인화, 비-리프 함수 (lr 저장 Int 영역에 저장 됩니다.)
 
     ```asm
-        stp    r19,r20,[sp,-80]!        // pre-indexed, save in 1st FP/INT reg-pair
-        stp    r21,r22,[sp,16]          // ...
-        stp    r23, lr,[sp, 32]         // save last Int reg and lr
-        stp    d8,d9,[sp, 48]           // save FP reg-pair (optional)
-        stp    d10,d11,[sp,64]          // ...
-        sub    sp,#framesz-80           // allocate the remaining local area
+        stp    x19,x20,[sp,#-80]!       // pre-indexed, save in 1st FP/INT reg-pair
+        stp    x21,x22,[sp,#16]         // ...
+        stp    x23,lr,[sp,#32]          // save last Int reg and lr
+        stp    d8,d9,[sp,#48]           // save FP reg-pair (optional)
+        stp    d10,d11,[sp,#64]         // ...
+        sub    sp,sp,#(framesz-80)      // allocate the remaining local area
     ```
 
    짝수를 사용 하 여 Int 레지스터를 저장 또는
 
     ```asm
-        stp    r19,r20,[sp,-72]!        // pre-indexed, save in 1st FP/INT reg-pair
-        stp    r21,r22,[sp,16]          // ...
-        str    lr,[sp, 32]              // save lr
-        stp    d8,d9,[sp, 40]           // save FP reg-pair (optional)
-        stp    d10,d11,[sp,56]          // ...
-        sub    sp,#framesz-72           // allocate the remaining local area
+        stp    x19,x20,[sp,#-80]!       // pre-indexed, save in 1st FP/INT reg-pair
+        stp    x21,x22,[sp,#16]         // ...
+        str    lr,[sp,#32]              // save lr
+        stp    d8,d9,[sp,#40]           // save FP reg-pair (optional)
+        stp    d10,d11,[sp,#56]         // ...
+        sub    sp,sp,#(framesz-80)      // allocate the remaining local area
     ```
 
-   저장 r19만:
+   저장 x19만:
 
     ```asm
-        sub    sp, sp, #16              // reg save area allocation*
-        stp    r19,lr,[sp,0]            // save r19, lr
-        sub    sp,#framesz-16           // allocate the remaining local area
+        sub    sp,sp,#16                // reg save area allocation*
+        stp    x19,lr,[sp]              // save x19, lr
+        sub    sp,sp,#(framesz-16)      // allocate the remaining local area
     ```
 
    \* 영역 할당 저장 reg은 stp에 폴딩 되지 않습니다 미리 인덱싱된 reg lr stp 해제 코드를 사용 하 여 표현할 수 없기 때문에 합니다.
 
-   SP.에 따라 모든 지역에 액세스 하는 \<r29 > 이전 프레임을 가리킵니다.
+   SP.에 따라 모든 지역에 액세스 하는 \<x29 > 이전 프레임을 가리킵니다.
 
 1. 연결, #framesz \<#outsz 512 = = 0
 
     ```asm
-        stp    r29, lr, [sp, -#framesz]!    // pre-indexed, save <r29,lr>
-        mov    r29,sp                       // r29 points to bottom of stack
-        stp    r19,r20,[sp, #framesz -32]   // save INT pair
-        stp    d8,d9,[sp, #framesz -16]     // save FP pair
+        stp    x29,lr,[sp,#-framesz]!       // pre-indexed, save <x29,lr>
+        mov    x29,sp                       // x29 points to bottom of stack
+        stp    x19,x20,[sp,#(framesz-32)]   // save INT pair
+        stp    d8,d9,[sp,#(framesz-16)]     // save FP pair
     ```
 
    위의 #1 프롤로그를 비교 장점은 모든 등록 지침 저장 명령 할당 하나만 스택 직후 실행 될 준비가입니다. 따라서 명령 수준 병렬 처리를 방지 하는 sp에서 백신 종속 하지 않습니다.
@@ -145,38 +145,38 @@ ARM64에서 Windows 동일한 구조적된 예외 처리 비동기 하드웨어�
 1. 연결을 프레임 크기 > 512 (alloca 없이 함수에 대 한 선택 사항)
 
     ```asm
-        stp    r29, lr, [sp, -80]!          // pre-indexed, save <r29,lr>
-        stp    r19,r20,[sp,16]              // save in INT regs
-        stp    r21,r22,[sp,32]              // ...
-        stp    d8,d9,[sp,48]                // save in FP regs
-        stp    d10,d11,[sp,64]
-        mov    r29,sp                       // r29 points to top of local area
-        sub    sp,#framesz-80               // allocate the remaining local area
+        stp    x29,lr,[sp,#-80]!            // pre-indexed, save <x29,lr>
+        stp    x19,x20,[sp,#16]             // save in INT regs
+        stp    x21,x22,[sp,#32]             // ...
+        stp    d8,d9,[sp,#48]               // save in FP regs
+        stp    d10,d11,[sp,#64]
+        mov    x29,sp                       // x29 points to top of local area
+        sub    sp,sp,#(framesz-80)          // allocate the remaining local area
     ```
 
-   최적화를 위해 r29 "reg 쌍" 및 사전/사후-indexed 오프셋 모드 주소 지정에 대 한 더 나은 검사를 제공 하는 지역에서의 임의 위치에 배치할 수 있습니다. SP. 기반 프레임 포인터 아래 지역에 액세스할 수 있습니다.
+   최적화를 위해 x29 "reg 쌍" 및 사전/사후-indexed 오프셋 모드 주소 지정에 대 한 더 나은 검사를 제공 하는 지역에서의 임의 위치에 배치할 수 있습니다. SP. 기반 프레임 포인터 아래 지역에 액세스할 수 있습니다.
 
 1. 연결을 프레임 크기 > (4k, alloca(), 유무
 
     ```asm
-        stp    r29, lr, [sp, -80]!          // pre-indexed, save <r29,lr>
-        stp    r19,r20,[sp,16]              // save in INT regs
-        stp    r21,r22,[sp,32]              // ...
-        stp    d8,d9,[sp,48]                // save in FP regs
-        stp    d10,d11,[sp,64]
-        mov    r29,sp                       // r29 points to top of local area
-        mov    r8, #framesz/16
-        bl     chkstk
-        sub    sp, r8*16                    // allocate remaining frame
+        stp    x29,lr,[sp,#-80]!            // pre-indexed, save <x29,lr>
+        stp    x19,x20,[sp,#16]             // save in INT regs
+        stp    x21,x22,[sp,#32]             // ...
+        stp    d8,d9,[sp,#48]               // save in FP regs
+        stp    d10,d11,[sp,#64]
+        mov    x29,sp                       // x29 points to top of local area
+        mov    x15,#(framesz/16)
+        bl     __chkstk
+        sub    sp,sp,x15,lsl#4              // allocate remaining frame
                                             // end of prolog
         ...
-        sp = alloca                         // more alloca() in body
+        sub    sp,sp,#alloca                // more alloca() in body
         ...
                                             // beginning of epilog
-        mov    sp,r29                       // sp points to top of local area
-        ldp    d10,d11, [sp,64],
+        mov    sp,x29                       // sp points to top of local area
+        ldp    d10,d11,[sp,#64]
         ...
-        ldp    r29, lr, [sp], -80           // post-indexed, reload <r29,lr>
+        ldp    x29,lr,[sp],#80              // post-indexed, reload <x29,lr>
     ```
 
 ## <a name="arm64-exception-handling-information"></a>ARM64 예외 처리 정보
@@ -219,15 +219,15 @@ ARM64 용 각.pdata 레코드는 길이가 8 바이트입니다. 각 함수의 3
 
    e. **에필로그 수** 상태에 따라 두 가지 의미 있는 5 비트 필드가 **E** 비트:
 
-      1. 하는 경우 **E** 0으로 설정 됩니다: 2 단원에서 설명한 예외 범위의 총 수를 지정 하는 것입니다. 31 개 이상의 범위 함수에 존재 하는 경우 해당 **코드 단어** 여 확장명 단어가 필요 함을 나타내기에 필드를 0으로 설정 해야 합니다.
+      1. 경우 **E** 0으로 설정 됩니다: 에필로그 범위 2 단원의 설명의 총 수를 지정 하는 것입니다. 31 개 이상의 범위 함수에 존재 하는 경우 해당 **코드 단어** 여 확장명 단어가 필요 함을 나타내기에 필드를 0으로 설정 해야 합니다.
 
       2. 하는 경우 **E** 및 에필로그만을 설명 하는 첫 번째 해제 코드의 인덱스를 지정 하는이 필드를 1로 설정 됩니다.
 
-   f. **코드 단어** 4 단원의 해제 코드를 모두 포함 하는 데 필요한 32 비트 단어 수를 지정 하는 5 비트 필드입니다. 31 개 이상의 단어 필요한 경우 (즉, 둘 124 해제 코드 바이트), 여 확장명 단어가 필요 함을 나타내기에이 필드를 0으로 설정 해야 합니다.
+   f. **코드 단어** 섹션 3의에서 해제 코드를 모두 포함 하는 데 필요한 32 비트 단어 수를 지정 하는 5 비트 필드입니다. 31 개 이상의 단어 필요한 경우 (즉, 둘 124 해제 코드 바이트), 여 확장명 단어가 필요 함을 나타내기에이 필드를 0으로 설정 해야 합니다.
 
    g. **에필로그 수를 확장** 하 고 **확장 코드 단어** 16 비트 및 8 비트 필드는 각각, 에필로그 많은 인코딩에 대 한 더 많은 공간을 제공 하는 또는 비정상적으로 많은 수의 해제 코드 단어입니다. 이러한 필드를 포함 하 여 확장명 단어가 있으면만 모두를 **에필로그 수** 하 고 **코드 단어** 첫 번째 헤더 단어의 필드는 0으로 설정 됩니다.
 
-1. 예외 데이터 다음 경우 **에필로그 수** 0이 아닌, 단어에 하나로 압축 및 작은 시작 오프셋부터 순서 대로 저장 에필로그 범위에 대 한 정보의 목록입니다. 각 범위에는 다음 비트를 포함 합니다.
+1. 헤더와 선택적 확장된 헤더 경우 위에서 설명한 이후의 **에필로그 수** 0이 아닌, 단어에 하나로 압축 및 작은 시작 오프셋부터 순서 대로 저장 에필로그 범위에 대 한 정보의 목록입니다. 각 범위에는 다음 비트를 포함 합니다.
 
    a. **에필로그 시작 오프셋** 오프셋 (바이트)를 함수 시작에 상대적인 에필로그의 4로 나눈 값을 설명 하는 18 비트 필드
 
@@ -235,9 +235,9 @@ ARM64 용 각.pdata 레코드는 길이가 8 바이트입니다. 각 함수의 3
 
    c. **에필로그 시작 인덱스** 10 비트 (보다 더 많은 2 비트가 **확장 코드 단어**) 첫 번째 바이트 인덱스를 나타내는 필드는이 에필로그를 설명 하는 코드를 해제 합니다.
 
-1. 에필로그 범위 목록에는 해제 코드를 포함 하는 바이트 배열을 상태가 되 면 후 이후 섹션에서 자세히 설명 합니다. 이 배열은 가장 가까운 전체 단어 경계 끝에 채워집니다. 바이트는 little endian 모드에서 직접 가져올 수 있도록 쉽게 little endian 순서로 저장됩니다.
+1. 에필로그 범위 목록에는 해제 코드를 포함 하는 바이트 배열을 상태가 되 면 후 이후 섹션에서 자세히 설명 합니다. 이 배열은 가장 가까운 전체 단어 경계 끝에 채워집니다. 해제 코드의 함수 가장자리 쪽으로 이동 하는 함수 본문에 가장 가까운 것부터이 배열에 기록 됩니다. Big endian 순서 대로 인출할 수 있습니다를 직접 가장 중요 한 바이트가 먼저 시작 되므로 작업을 코드의 나머지 부분을 식별 하는 각 해제 코드 바이트 수를 저장 됩니다.
 
-1. 해제 코드 바이트 뒤에 마지막으로, (경우에 **X** 헤더에 대 한 비트가 1로 설정 된) 예외 처리기 정보가 제공 됩니다. 이 개로만 이루어진 **예외 처리기 RVA** 가변 길이 양의 예외 처리기에 필요한 데이터를 바로 뒤 자체 예외 처리기의 주소를 제공 합니다.
+1. 해제 코드 바이트 뒤에 마지막으로, 경우 합니다 **X** 헤더에 대 한 비트 1로 설정 된 예외 처리기 정보가 제공 됩니다. 이 개로만 이루어진 **예외 처리기 RVA** 가변 길이 양의 예외 처리기에 필요한 데이터를 바로 뒤 자체 예외 처리기의 주소를 제공 합니다.
 
 위의.xdata 레코드는 처음 8 바이트를 가져와는 (길이 뺀 값 뒤에 오는 가변 크기 예외 데이터의) 레코드의 전체 크기를 계산 하는 데 수 있도록 설계 되었습니다. 다음 코드 조각은 레코드 크기를 계산 합니다.
 
@@ -286,22 +286,22 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 |해제 코드|Bits 및 해석|
 |-|-|
 |`alloc_s`|000xxxxx: 크기를 사용 하 여 작은 스택 할당 \< 512 (2 ^5 * 16).|
-|`save_r19r20_x`|    001zzzzz: 저장 \<r19, r20 > 쌍 [sp-#Z * 8]!, 미리 인덱싱된 오프셋 >-248 = |
-|`save_fplr`|        01zzzzzz: 저장할 \<r29, lr > 쌍에서 [sp + #Z * 8], 오프셋 \<504 =. |
-|`save_fplr_x`|        10zzzzzz: 저장 \<r29, lr > 쌍에서 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-512 = |
+|`save_r19r20_x`|    001zzzzz: 저장 \<x19, x20 > 쌍 [sp-#Z * 8]!, 미리 인덱싱된 오프셋 >-248 = |
+|`save_fplr`|        01zzzzzz: 저장할 \<x29, lr > 쌍에서 [sp + #Z * 8], 오프셋 \<504 =. |
+|`save_fplr_x`|        10zzzzzz: 저장 \<x29, lr > 쌍에서 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-512 = |
 |`alloc_m`|        11000xxx'xxxxxxxx: 크기를 사용 하 여 큰 스택 할당 \< 16k (2 ^11 * 16). |
-|`save_regp`|        110010xx'xxzzzzzz: r(19+#X) 쌍에 저장 [sp + #Z * 8], 오프셋 \<504 = |
-|`save_regp_x`|        110011xx'xxzzzzzz:에서 쌍 r(19+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-512 = |
-|`save_reg`|        110100xx'xxzzzzzz:에서 reg r(19+#X) 저장 [sp + #Z * 8], 오프셋 \<504 = |
-|`save_reg_x`|        1101010 x'xxxzzzzz:에서 reg r(19+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-256 = |
-|`save_lrpair`|         1101011 x'xxzzzzzz: 쌍을 저장할 \<r19 + 2 *#X, lr >에서 [sp + #Z*8], 오프셋 \<504 = |
+|`save_regp`|        110010xx'xxzzzzzz: x(19+#X) 쌍에 저장 [sp + #Z * 8], 오프셋 \<504 = |
+|`save_regp_x`|        110011xx'xxzzzzzz: save pair x(19+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -512 |
+|`save_reg`|        110100xx'xxzzzzzz:에서 reg x(19+#X) 저장 [sp + #Z * 8], 오프셋 \<504 = |
+|`save_reg_x`|        1101010 x'xxxzzzzz:에서 reg x(19+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-256 = |
+|`save_lrpair`|         1101011 x'xxzzzzzz: 쌍을 저장할 \<x (19 + 2 *#X), lr >에서 [sp + #Z*8], 오프셋 \<504 = |
 |`save_fregp`|        1101100 x'xxzzzzzz:에서 쌍 d(8+#X) 저장 [sp + #Z * 8], 오프셋 \<504 = |
 |`save_fregp_x`|        1101101 x'xxzzzzzz:에서 쌍 d(8+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-512 = |
 |`save_freg`|        1101110 x'xxzzzzzz:에서 reg d(8+#X) 저장 [sp + #Z * 8], 오프셋 \<504 = |
 |`save_freg_x`|        11011110' xxxzzzzz:에서 reg d(8+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-256 = |
 |`alloc_l`|         11100000' xxxxxxxx 'xxxxxxxx' xxxxxxxx: 크기를 사용 하 여 큰 스택 할당 \< 256m (2 ^24 * 16) |
-|`set_fp`|        11100001: r29 설정: 사용 하 여: mov r29 sp |
-|`add_fp`|        11100010' xxxxxxxx: 사용 하 여 r29 설정: r29, sp, #x 추가 * 8 |
+|`set_fp`|        11100001: x29 설정: 사용 하 여: x29, mov sp |
+|`add_fp`|        11100010' xxxxxxxx: 사용 하 여 x29 설정: x29, sp, 추가 #x * 8 |
 |`nop`|            11100011: 없습니다 해제 작업이 필요 합니다. |
 |`end`|            11100100: 해제 코드의 끝입니다. 의미 에필로그에 만료 됩니다. |
 |`end_c`|        11100101: 현재 연결 된 범위에서 해제 코드의 끝입니다. |
@@ -347,12 +347,12 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 - **함수 길이** 길이 (바이트)를 4로 나눈 값의 전체 함수를 제공 하는 11 비트 필드입니다. 함수 8k 보다 크면 전체.xdata 레코드를 대신 사용 되어야 합니다.
 - **프레임 크기가** 16로 나눈 값이 함수에 대해 할당 된 스택 바이트 수를 나타내는 9 비트 필드입니다. 스택의 (8k-16) 바이트 보다 큰 할당 하는 함수는 전체.xdata 레코드를 사용 해야 합니다. 로컬 변수 영역에서 동적 할당 영역을 제외한 매개 변수 영역, 호출 수신자 저장 Int 및 FP 영역 및 홈 매개 변수 영역을 나가는 포함 됩니다.
 - **CR** 함수에 반환 하는 링크를 프레임 체인을 설정 하는 추가 명령을 포함 하는지 여부를 나타내는 2 비트 플래그:
-  - 00 = 체인화 함수 \<r29, lr > 쌍 스택에 저장 되지 않습니다.
+  - 00 = 체인화 함수 \<x29, lr > 쌍 스택에 저장 되지 않습니다.
   - 01 = 체인화 함수 \<lr > 스택에 저장 됩니다
   - 10 = 예약 되었습니다.
-  - 11 = 연결 된 함수 프롤로그/에필로그에는 저장소/로드 쌍 명령을 사용 하는 \<r29, lr >
-- **H** 함수의 처음에 저장 하 여 함수에 정수 매개 변수가 호 밍 여부를 나타내는 1 비트 플래그 (r0-r7)에 등록 됩니다. (0 = 1 레지스터를 홈지 않습니다 집 레지스터 =) 합니다.
-- **RegI** 정식 스택 위치에 저장 된 비휘발성 INT 레지스터 (r19 r28)의 수를 나타내는 4 비트 필드입니다.
+  - 11 = 연결 된 함수 프롤로그/에필로그에는 저장소/로드 쌍 명령을 사용 하는 \<x29, lr >
+- **H** 함수가 정수 매개 변수가 호 밍 여부를 나타내는 1 비트 플래그는 (x0 x7) 함수의 처음에 저장 하 여 등록 됩니다. (0 = 1 레지스터를 홈지 않습니다 집 레지스터 =) 합니다.
+- **RegI** 정식 스택 위치에 저장 된 비휘발성 INT 레지스터 (x19 x28)의 수를 나타내는 4 비트 필드입니다.
 - **RegF** 정식 스택 위치에 저장 된 비휘발성 FP 레지스터 (d8-d15)의 수를 나타내는 3 비트 필드입니다. (RegF = 0: 없음 FP 레지스터 저장 됩니다. RegF > 0: RegF + 1 FP 레지스터 저장 됩니다). 압축 해제 하나의 FP 레지스터를 저장 하는 함수에 대 한 데이터를 사용할 수 없습니다.
 
 위의 섹션에서 1, 2 (하지 않고 나가는 매개 변수 영역), 3 및 4 범주에 속하는 정식 프롤로그는 압축 된 해제 형식으로 나타낼 수 있습니다.  에필로그 정식 함수에 따라 매우 유사한 폼에 대 한 제외 **H** 해도 아무런 영향이 없습니다는 `set_fp` 명령은 생략 하 고 에필로그의 각 단계에 대 한 지침 뿐만 아니라 단계 순서가 바뀝니다. 압축된 xdata 알고리즘을 다음 표에서 자세히 설명 하는 이러한 단계를 따릅니다.
@@ -367,26 +367,26 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 
 4단계: 홈 매개 변수 영역의 입력된 인수를 저장 합니다.
 
-5단계: 로컬 영역을 비롯 한 나머지 스택에 할당 \<r29, lr > 쌍 및 나가는 매개 변수 영역입니다. 5a 정식 유형 1에 해당합니다. 5b 5c와 정식 유형 2에 대 한입니다. 5d 및 5e 두 유형 3에 대 한 4를 입력 합니다.
+5단계: 로컬 영역을 비롯 한 나머지 스택에 할당 \<x29, lr > 쌍 및 나가는 매개 변수 영역입니다. 5a 정식 유형 1에 해당합니다. 5b 5c와 정식 유형 2에 대 한입니다. 5d 및 5e 두 유형 3에 대 한 4를 입력 합니다.
 
 단계 #|플래그 값|# 명령|Opcode|해제 코드
 -|-|-|-|-
 0|||`#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz`|
-1|0 < **RegI** <= 10|RegI / 2 + **RegI** %2|`stp r19,r20,[sp,#savsz]!`<br/>`stp r21,r22,[sp,16]`<br/>`...`|`save_regp_x`<br/>`save_regp`<br/>`...`
-2|**CR**==01*|1|`str lr,[sp, #intsz-8]`\*|`save_reg`
-3|0 < **RegF** <=7|(RegF + 1) / 2 +<br/>(RegF + 1) % 2)|`stp d8,d9,[sp, #intsz]`\*\*<br/>`stp d10,d11,[sp, #intsz+16]`<br/>`...`<br/>`str d(8+RegF),[sp, #intsz+#fpsz-8]`|`save_fregp`<br/>`...`<br/>`save_freg`
-4|**H** == 1|4|`stp r0,r1,[sp, #intsz+#fpsz]`<br/>`stp r2,r3,[sp, #intsz+#fpsz+16]`<br/>`stp r4,r5,[sp, #intsz+#fpsz+32]`<br/>`stp r6,r7,[sp, #intsz+#fpsz+48]`|`nop`<br/>`nop`<br/>`nop`<br/>`nop`
-5a|**CR** == 11 && #locsz<br/> <= 512|2|`stp r29,lr,[sp,-#locsz]!`<br/>`mov r29,sp`\*\*\*|`save_fplr_x`<br/>`set_fp`
-5b|**CR** == 11 &&<br/>512 < #locsz <= 4088|3|`sub sp,sp, #locsz`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`save_fplr`<br/>`set_fp`
-5c|**CR** == 11 && #locsz > 4088|4|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp`
-5d|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz <= 4088|1|`sub sp,sp, #locsz`|`alloc_s`/`alloc_m`
-5e|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz > 4088|2|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
+1|0 < **RegI** <= 10|RegI / 2 + **RegI** %2|`stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...`|`save_regp_x`<br/>`save_regp`<br/>`...`
+2|**CR**==01*|1|`str lr,[sp,#(intsz-8)]`\*|`save_reg`
+3|0 < **RegF** <=7|(RegF + 1) / 2 +<br/>(RegF + 1) % 2)|`stp d8,d9,[sp,#intsz]`\*\*<br/>`stp d10,d11,[sp,#(intsz+16)]`<br/>`...`<br/>`str d(8+RegF),[sp,#(intsz+fpsz-8)]`|`save_fregp`<br/>`...`<br/>`save_freg`
+4|**H** == 1|4|`stp x0,x1,[sp,#(intsz+fpsz)]`<br/>`stp x2,x3,[sp,#(intsz+fpsz+16)]`<br/>`stp x4,x5,[sp,#(intsz+fpsz+32)]`<br/>`stp x6,x7,[sp,#(intsz+fpsz+48)]`|`nop`<br/>`nop`<br/>`nop`<br/>`nop`
+5a|**CR** == 11 && #locsz<br/> <= 512|2|`stp x29,lr,[sp,#-locsz]!`<br/>`mov x29,sp`\*\*\*|`save_fplr_x`<br/>`set_fp`
+5b|**CR** == 11 &&<br/>512 < #locsz <= 4080|3|`sub sp,sp,#locsz`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0`|`alloc_m`<br/>`save_fplr`<br/>`set_fp`
+5c|**CR** == 11 && #locsz > 4080|4|`sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0`|`alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp`
+5d|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz <= 4080|1|`sub sp,sp,#locsz`|`alloc_s`/`alloc_m`
+5e|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz > 4080|2|`sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
 
 \* 하는 경우 **CR** 01 = = 및 **RegI** 홀수가, 2 단계 및 1 단계의 마지막 save_rep 하나 save_regp에 병합 됩니다.
 
 \*\* 하는 경우 **RegI** == **CR** = = 0, 및 **RegF** ! = 0, 첫 번째 stp 부동 소수점있지 않습니다는 사전 감소 합니다.
 
-\*\*\* 에 해당 하 없습니다 명령 `mov r29, sp` 에필로그에 합니다. 압축 해제 함수 sp r29에서 복원 해야 하는 경우에 데이터를 사용할 수 없습니다.
+\*\*\* 에 해당 하 없습니다 명령 `mov x29,sp` 에필로그에 합니다. 압축 해제 함수 sp x29에서 복원 해야 하는 경우에 데이터를 사용할 수 없습니다.
 
 ### <a name="unwinding-partial-prologs-and-epilogs"></a>해제 부분 프롤로그 및 에필로그
 
@@ -397,16 +397,16 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 예를 들어이 프롤로그 및 에필로그 시퀀스를 수행 합니다.
 
 ```asm
-0000:    stp    r29, lr, [sp, -256]!        // save_fplr_x  256 (pre-indexed store)
-0004:    stp    d8,d9,[sp,224]              // save_fregp 0, 224
-0008:    stp    r19,r20,[sp,240]            // save_regp 0, 240
-000c:    mov    r29,sp                      // set_fp
+0000:    stp    x29,lr,[sp,#-256]!          // save_fplr_x  256 (pre-indexed store)
+0004:    stp    d8,d9,[sp,#224]             // save_fregp 0, 224
+0008:    stp    x19,x20,[sp,#240]           // save_regp 0, 240
+000c:    mov    x29,sp                      // set_fp
          ...
-0100:    mov    sp,r29                      // set_fp
-0104:    ldp    r19,r20,[sp,240]            // save_regp 0, 240
+0100:    mov    sp,x29                      // set_fp
+0104:    ldp    x19,x20,[sp,#240]           // save_regp 0, 240
 0108:    ldp    d8,d9,[sp,224]              // save_fregp 0, 224
-010c:    ldp    r29, lr, [sp, -256]!        // save_fplr_x  256 (post-indexed load)
-0110:    ret     lr                         // end
+010c:    ldp    x29,lr,[sp],#256            // save_fplr_x  256 (post-indexed load)
+0110:    ret    lr                          // end
 ```
 
 각 opcode 옆에 있는이 작업을 설명 하는 적절 한 해제 코드입니다. 먼저 참고 점 일련의 프롤로그에 대 한 해제 코드는 에필로그 (에필로그의 최종 명령은 제외)에 대 한 해제 코드의 정확한 미러 이미지입니다. 일반적인 상황에서는 이며이 따라서 해제 프롤로그에 대 한 코드 항상 프롤로그의 실행 순서를 역순으로 저장 될 간주 됩니다.
@@ -442,9 +442,9 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 - (영역 1: 시작)
 
     ```asm
-        stp     r29, lr, [sp, -256]!    // save_fplr_x  256 (pre-indexed store)
-        stp     r19,r20,[sp,240]        // save_regp 0, 240
-        mov     r29,sp                  // set_fp
+        stp     x29,lr,[sp,#-256]!      // save_fplr_x  256 (pre-indexed store)
+        stp     x19,x20,[sp,#240]       // save_regp 0, 240
+        mov     x29,sp                  // set_fp
         ...
     ```
 
@@ -460,9 +460,9 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 
     ```asm
     ...
-        mov     sp,r29                  // set_fp
-        ldp     r19,r20,[sp,240]        // save_regp 0, 240
-        ldp     r29, lr, [sp, -256]!    // save_fplr_x  256 (post-indexed load)
+        mov     sp,x29                  // set_fp
+        ldp     x19,x20,[sp,#240]       // save_regp 0, 240
+        ldp     x29,lr,[sp],#256        // save_fplr_x  256 (post-indexed load)
         ret     lr                      // end
     ```
 
@@ -489,27 +489,27 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 - (영역 1: 시작)
 
     ```asm
-        stp     r29, lr, [sp, -256]!    // save_fplr_x  256 (pre-indexed store)
-        stp     r19,r20,[sp,240]        // save_regp 0, 240
-        mov     r29,sp                  // set_fp
+        stp     x29,lr,[sp,#-256]!      // save_fplr_x  256 (pre-indexed store)
+        stp     x19,x20,[sp,#240]       // save_regp 0, 240
+        mov     x29,sp                  // set_fp
         ...
     ```
 
 - (영역 2: 시작)
 
     ```asm
-        stp     r21,r22,[sp,224]        // save_regp 2, 224
+        stp     x21,x22,[sp,#224]       // save_regp 2, 224
         ...
-        ldp     r21,r22,[sp,224]        // save_regp 2, 224
+        ldp     x21,x22,[sp,#224]       // save_regp 2, 224
     ```
 
 - (영역 2: 끝)
 
     ```asm
         ...
-        mov     sp,r29                  // set_fp
-        ldp     r19,r20,[sp,240]        // save_regp 0, 240
-        ldp     r29, lr, [sp, -256]!    // save_fplr_x  256 (post-indexed load)
+        mov     sp,x29                  // set_fp
+        ldp     x19,x20,[sp,#240]       // save_regp 0, 240
+        ldp     x29,lr,[sp],#256        // save_fplr_x  256 (post-indexed load)
         ret     lr                      // end
     ```
 

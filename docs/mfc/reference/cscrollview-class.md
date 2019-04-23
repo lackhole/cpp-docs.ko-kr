@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CScrollView [MFC], SetScaleToFitSize
 - CScrollView [MFC], SetScrollSizes
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
-ms.openlocfilehash: ea95de2bceab290f94bb7c0e7bbc94a90048ee13
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: d60082092bd42fbe220eee08953ad5fda0ff0a85
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259258"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58774155"
 ---
 # <a name="cscrollview-class"></a>CScrollView 클래스
 
@@ -82,7 +82,7 @@ class CScrollView : public CView
 
 메시지 매핑 재정의 하 여 직접 스크롤 휠을 처리할 수 있습니다 [OnMouseWheel](../../mfc/reference/cwnd-class.md#onmousewheel) 하 고 [OnRegisteredMouseWheel](../../mfc/reference/cwnd-class.md#onregisteredmousewheel) 멤버 함수입니다. 에 않기 `CScrollView`, 이러한 멤버 함수에 대 한 권장 되는 동작을 지원 [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel), 휠 회전 메시지.
 
-자동 스크롤을 활용 하려면 보기에서 파생 `CScrollView` of에서 `CView`합니다. 뷰의 처음 만들어질 때, 호출 문서의 크기를 기준으로 스크롤할 수 있는 보기의 크기를 계산 하려는 경우는 `SetScrollSizes` 의 재정의에서 멤버 함수 [cview:: Oninitialupdate](../../mfc/reference/cview-class.md#oninitialupdate) 또는 [ CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate)합니다. (문서 크기를 쿼리 하는 사용자 고유의 코드를 작성 해야 합니다. 예를 들어 참조 된 [Scribble 샘플](../../visual-cpp-samples.md).)
+자동 스크롤을 활용 하려면 보기에서 파생 `CScrollView` of에서 `CView`합니다. 뷰의 처음 만들어질 때, 호출 문서의 크기를 기준으로 스크롤할 수 있는 보기의 크기를 계산 하려는 경우는 `SetScrollSizes` 의 재정의에서 멤버 함수 [cview:: Oninitialupdate](../../mfc/reference/cview-class.md#oninitialupdate) 또는 [ CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate)합니다. (문서 크기를 쿼리 하는 사용자 고유의 코드를 작성 해야 합니다. 예를 들어 참조 된 [Scribble 샘플](../../overview/visual-cpp-samples.md).)
 
 에 대 한 호출을 `SetScrollSizes` 뷰의 매핑 모드, 스크롤 뷰 및 가로 또는 세로로 스크롤할 수 있는 메모리 양은 총 차원 멤버 함수를 설정 합니다. 모든 크기 논리 단위에서는입니다. 보기의 논리적 크기는 일반적으로 문서에 저장 된 데이터에서 계산 됩니다 있지만 고정된 크기를 지정 하려는 경우도 있습니다. 두 방법의 예제를 참조 하세요 [CScrollView::SetScrollSizes](#setscrollsizes)합니다.
 
@@ -376,7 +376,7 @@ MM_ISOTROPIC 또는 MM_ANISOTROPIC를 제외한 Windows 매핑 모드 중 하나
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 DIBLOOK](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [CView 클래스](../../mfc/reference/cview-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CView 클래스](../../mfc/reference/cview-class.md)<br/>

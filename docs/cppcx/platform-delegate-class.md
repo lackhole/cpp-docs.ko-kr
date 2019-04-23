@@ -8,10 +8,10 @@ helpviewer_keywords:
 - Platform::Delegate Class
 ms.assetid: 82b21271-768f-4193-9ca2-be68ddfd546e
 ms.openlocfilehash: 4116de3240c3ef334db51095997f946731372708
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58769240"
 ---
 # <a name="platformdelegate-class"></a>Platform::Delegate 클래스
@@ -44,4 +44,4 @@ Delegate 클래스에는 [Platform::Object Class](../cppcx/platform-object-class
 
 ## <a name="see-also"></a>참고자료
 
-[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)
+[Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)

@@ -49,12 +49,12 @@ helpviewer_keywords:
 - SetParameterInfo method
 - Unprepare method
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
-ms.openlocfilehash: 7db2d3d71deecda06e39772541658dfada72ae3b
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 406a78ff1958d565fcc74781f6a63d4784f48bfc
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57415268"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039730"
 ---
 # <a name="ccommand-class"></a>CCommand 클래스
 
@@ -414,7 +414,7 @@ HRESULT CCommandBase::Unprepare() throw();
 
 이 메서드는 OLE DB 메서드를 래핑합니다 [icommandprepare:: Unprepare](/previous-versions/windows/desktop/ms719635(v=vs.85))합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

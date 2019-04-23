@@ -8,12 +8,12 @@ helpviewer_keywords:
 - runtime_checks pragma
 - pragmas, runtime_checks
 ms.assetid: ae50b43f-f88d-47ad-a2db-3389e9e7df5b
-ms.openlocfilehash: 38df7ccc384830bb547c11e1a3d5458a1298574c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 44c26fb90a2d2f9ba78ec7dba7cceed65a4b4ed7
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547370"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59027085"
 ---
 # <a name="runtimechecks"></a>runtime_checks
 [/RTC](../build/reference/rtc-run-time-error-checks.md) 설정을 사용할 수 없도록 설정하거나 복원합니다.
@@ -60,6 +60,6 @@ ms.locfileid: "50547370"
 #pragma runtime_checks( "", restore )
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -102,12 +102,12 @@ helpviewer_keywords:
 - ReleaseRows method
 - SetRows method
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-ms.openlocfilehash: 776123baa0d53ac2a1777849b60d35cf0d93a172
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: ba6b41a708cd854e398cbaa80609472ebbe167e8
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426227"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023232"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset 클래스
 
@@ -319,7 +319,7 @@ void SetRows(DBROWCOUNT nRows) throw();
 
 이 함수를 호출 하면 행 집합을 열기 전에 이어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: '#undef 지시문 (C/c + +)'
+title: '#undef 지시문 (C /C++)'
 ms.date: 11/04/2016
 f1_keywords:
 - '#undef'
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - undef directive (#undef)
 - preprocessor, directives
 ms.assetid: 88900e0e-2c19-4a63-b681-f3d3133c24ca
-ms.openlocfilehash: cb3a08165e41f336df0e141f50310f191cd83257
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4f4f5ce244be6d7f4e13d7a2abc5d21232c08d9d
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537269"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039009"
 ---
 # <a name="undef-directive-cc"></a>#undef 지시문 (C/C++)
 전에 `#define`으로 만든 이름을 제거(정의 해제)합니다.
@@ -51,6 +51,6 @@ identifier
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4487
 ms.assetid: 796144cf-cd3c-4edc-b6a4-96192b7eb4f0
-ms.openlocfilehash: 743069c0ed3103a2ed8d459def65083146b971e1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 231482547856fc07d43ecfb859b31c2ece49fc5e
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497022"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59778006"
 ---
 # <a name="compiler-warning-level-4-c4487"></a>컴파일러 경고(수준 4) C4487
 
@@ -19,7 +19,7 @@ ms.locfileid: "50497022"
 
 파생된 클래스에서 함수는 비가상 기본 클래스 함수 서명이 동일 합니다. C4487 파생된 클래스는 기본 클래스 함수를 재정의 하지 않습니다를 알려 줍니다. 파생된 클래스 함수를 명시적으로 표시 `new` 이 경고를 해결 하려면.
 
-자세한 내용은 [new (의 new 슬롯 vtable)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md)합니다.
+자세한 내용은 [new (의 new 슬롯 vtable)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)합니다.
 
 ## <a name="example"></a>예제
 

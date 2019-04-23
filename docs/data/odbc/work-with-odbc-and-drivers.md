@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC drivers, using
 ms.assetid: ae1bf357-4ca4-4748-9336-8fc317f294ab
-ms.openlocfilehash: 6d245a8c4071f8f3822e3bdd6bfe0467251fc852
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fa0ccf65584d08088635d3939e609eb2d763abe7
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437832"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030078"
 ---
 # <a name="work-with-odbc-and-drivers"></a>ODBC 및 드라이버 작업
 
@@ -27,6 +27,6 @@ ODBC를 이용하여 특정 데이터베이스 관리 시스템(DBMS)에 종속�
 
 - [MFC에서 직접 ODBC API 함수를 호출](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

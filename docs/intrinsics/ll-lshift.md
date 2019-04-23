@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ll_lshift intrinsic
 - __ll_lshift intrinsic
 ms.assetid: fe98f733-426d-44b3-8f24-5d0d6d44bd94
-ms.openlocfilehash: 2f0c8f257188dbd3b03ece4269b8c353c7fa26f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5a91ce5db46b19be570f8d48a584a2caeabcc163
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625981"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59024467"
 ---
 # <a name="lllshift"></a>__ll_lshift
 
@@ -32,7 +32,7 @@ unsigned __int64 __ll_lshift(
 
 #### <a name="parameters"></a>매개 변수
 
-*마스크*<br/>
+*Mask*<br/>
 [in] 시프트 레프트 64 비트 정수 값입니다.
 
 *nBit*<br/>
@@ -87,7 +87,7 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [__ll_rshift](../intrinsics/ll-rshift.md)<br/>
 [__ull_rshift](../intrinsics/ull-rshift.md)<br/>

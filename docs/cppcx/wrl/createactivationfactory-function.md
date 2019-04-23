@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CreateActivationFactory function
 ms.assetid: a1a53e04-6757-4faf-a4c8-ecf06e43b959
-ms.openlocfilehash: 07bc0dceb8066faf9c1beab64d48245d8735aa64
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: ca3469128cf3d412138d5d39a1587cbc20150699
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58785604"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59040608"
 ---
 # <a name="createactivationfactory-function"></a>CreateActivationFactory 함수
 
@@ -56,6 +56,6 @@ template<typename Factory>
 
 **네임스페이스:** Microsoft::WRL
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL::Wrappers::Details 네임스페이스](microsoft-wrl-wrappers-details-namespace.md)

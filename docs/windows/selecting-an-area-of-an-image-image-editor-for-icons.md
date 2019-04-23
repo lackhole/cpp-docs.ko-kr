@@ -40,12 +40,12 @@ helpviewer_keywords:
 - Image editor [C++], Properties window
 - Properties window, image editor
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
-ms.openlocfilehash: 246dee3c7d0c1a5a4f495fddf709833acc2c885e
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 849da0d14987a057d39d5f9531e97545b3d4b8cf
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562993"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033296"
 ---
 # <a name="how-to-edit-an-image"></a>방법: 이미지 편집
 
@@ -219,7 +219,7 @@ ms.locfileid: "57562993"
 
 없음
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)<br/>
 [방법: 아이콘 또는 기타 이미지 만들기](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4703
 ms.assetid: 5dad454e-69e3-4931-9168-050a861c05f8
-ms.openlocfilehash: 5f98a438769073dc5abb10f3de7fb0af2e8e88d4
-ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
+ms.openlocfilehash: 6115db7611de521d66df3b1f555349891d72cc03
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58278439"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59025799"
 ---
 # <a name="compiler-warning-level-4-c4703"></a>컴파일러 경고(수준 4) C4703
 
@@ -70,7 +70,7 @@ void main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 경고(수준 4) C4701](../../error-messages/compiler-warnings/compiler-warning-level-4-c4701.md)<br/>
 [경고, /sdl 및 초기화 되지 않은 변수 검색 향상](https://www.microsoft.com/security/blog/2012/06/06/warnings-sdl-and-improving-uninitialized-variable-detection/)

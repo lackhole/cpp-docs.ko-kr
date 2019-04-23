@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3363
 ms.assetid: 41aa922f-608e-4f7a-ba66-451fc1161935
 ms.openlocfilehash: eca598233dbe4cae4730e952b45945653ec8ffaa
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58775506"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59775884"
 ---
 # <a name="compiler-error-c3363"></a>컴파일러 오류 C3363
 

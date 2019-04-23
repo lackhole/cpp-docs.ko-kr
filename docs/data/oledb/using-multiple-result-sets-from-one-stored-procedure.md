@@ -5,12 +5,12 @@ helpviewer_keywords:
 - stored procedures, returning result sets
 - multiple result sets
 ms.assetid: c450c12c-a76c-4ae4-9675-071a41eeac05
-ms.openlocfilehash: fe41bfe1d9fb0207f55d2cd653a56a1ff00ce2d1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 69e5c956d897e217501cbac9b9b93db868731221
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570680"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59028427"
 ---
 # <a name="using-multiple-result-sets-from-one-stored-procedure"></a>저장 프로시저 하나에서 여러 결과 집합 사용
 
@@ -26,6 +26,6 @@ ms.locfileid: "50570680"
 
 1. `CCommand` 클래스에서 `GetNextResult`를 호출합니다. 다른 결과 행 집합을 사용할 수 있는 경우, `GetNextResult`는 S_OK를 반환하며 사용자는 수동 접근자를 사용하고 있는 경우 열을 다시 바인딩해야 합니다. `GetNextResult`에서 오류를 반환하면 사용할 수 있는 결과 집합이 더 이상 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [저장 프로시저 사용](../../data/oledb/using-stored-procedures.md)

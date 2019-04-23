@@ -555,12 +555,12 @@ helpviewer_keywords:
 - TABLE_NAME
 - TABLE_SCHEMA
 ms.assetid: 4bd881b3-26ca-4bdb-9226-d67560864f29
-ms.openlocfilehash: 6f1017e4227ba966c722bf37e85d90b8ad27fa67
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.openlocfilehash: 3dee9844902928e5952a299caae34e29b3a6d72b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57988169"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59036499"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>스키마 행 집합 클래스 및 Typedef 클래스
 
@@ -1351,6 +1351,6 @@ Typedef 클래스를 호출 `CViewTableUsage` 해당 매개 변수 클래스를 
 
 **헤더:** atldbsch.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CRestrictions 클래스](../../data/oledb/crestrictions-class.md)

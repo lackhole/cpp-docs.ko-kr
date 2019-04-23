@@ -15,10 +15,10 @@ helpviewer_keywords:
 - COleTemplateServer [MFC], UpdateRegistry
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c
 ms.openlocfilehash: 3abdf1dc2da5ef9a111371b501d5cd8ce208825d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781213"
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer 클래스
@@ -51,7 +51,7 @@ class COleTemplateServer : public COleObjectFactory
 
 이 클래스는 클래스에서 파생 [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md); 일반적으로 사용할 수 있습니다 `COleTemplateServer` 고유한 클래스를 파생 하는 대신 직접. `COleTemplateServer` 사용 하는 [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) 서버 문서를 관리 하는 개체입니다. 사용 하 여 `COleTemplateServer` 전체 서버, 즉, 독립 실행형 응용 프로그램으로 실행할 수 있는 서버를 구현 하는 경우. 단일 문서 인터페이스 (SDI) 응용 프로그램 지원 되지만 전체 서버는 일반적으로 여러 문서 MDI (인터페이스) 응용 프로그램입니다. 하나의 `COleTemplateServer` 개체는 응용 프로그램이 지 원하는 서버 문서의 각 형식에 대 한 필요 하며, 서버 응용 프로그램에서 워크시트 및 차트를 지 원하는 경우 해야 두 `COleTemplateServer` 개체입니다.
 
-`COleTemplateServer` 재정의 된 `OnCreateInstance` 멤버 함수를 정의한 `COleObjectFactory`합니다. 이 멤버 함수는 적절 한 형식의 c + + 개체를 만드는 프레임 워크에서 호출 됩니다.
+`COleTemplateServer` 재정의 된 `OnCreateInstance` 멤버 함수를 정의한 `COleObjectFactory`합니다. 이 멤버 함수를 만드는 프레임 워크에서 호출 됩니다는 C++ 적절 한 형식의 개체입니다.
 
 서버에 대 한 자세한 내용은 문서를 참조 하세요. [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)합니다.
 

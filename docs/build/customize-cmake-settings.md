@@ -3,12 +3,12 @@ title: Visual Studio에서 CMake 빌드 설정 사용자 지정
 ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake build settings
-ms.openlocfilehash: dd34fbefcbc89c7c4aa93105ae5bad31ae4d5f01
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: 4864e094ab967a563b153fa79fd0bf5c375f40f7
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124891"
 ---
 # <a name="customize-cmake-build-settings"></a>CMake 빌드 설정 사용자 지정
 
@@ -79,14 +79,18 @@ JSON IntelliSense를 사용하면 `CMakeSettings.json` 파일을 편집할 수 �
 "variables": [
     {
       "name": "CMAKE_CXX_COMPILER",
-      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe"
+      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe",
+      "type": "FILEPATH"
     },
     {
       "name": "CMAKE_C_COMPILER",
-      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe"
+      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe",
+      "type": "FILEPATH"
     }
   ]
 ```
+
+정의 하지 않으면 경우는 `"type"`, 기본적으로 "STRING" 형식으로 간주 됩니다.
 
 - **cmakeCommandArgs**: CMake.exe에 전달하려는 추가 스위치를 지정합니다.
 
@@ -210,7 +214,9 @@ usage: ninja [options] [targets...]
       "environments": [
         {
           // Replace the global property entirely.
-          "BuildDir": "D:\\custom-builddir",
+          "BuildDir": "D:\\custom-builddir"
+          // This environment does not specify a namespace, hence by default "env" will be assumed.
+          // "namespace" : "name" would require that this variable be referenced with "${name.BuildDir}".
         }
       ],
 
@@ -234,7 +240,7 @@ usage: ninja [options] [targets...]
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual Studio의 CMake 프로젝트](cmake-projects-in-visual-studio.md)<br/>
 [Linux CMake 프로젝트 구성](../linux/cmake-linux-project.md)<br/>

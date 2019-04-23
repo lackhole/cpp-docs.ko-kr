@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE DB providers, creating
 - OLE DB provider templates, creating providers
 ms.assetid: ade8ccdd-9ea4-4e46-a964-18460c2a2401
-ms.openlocfilehash: 2ac8e45ca06a5566923141adf5a22dc6710eeeab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a80678f6bc512c45c0df2ea5cbfc4708f1252ac0
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432606"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59035363"
 ---
 # <a name="creating-a-simple-read-only-provider"></a>단순한 읽기 전용 공급자 만들기
 
@@ -22,6 +22,6 @@ ms.locfileid: "50432606"
 
 - 두 번째 장에서는 `IRowsetLocate` 인터페이스를 추가하여 [단순한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md) 방법을 볼 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 만들기](../../data/oledb/creating-an-ole-db-provider.md)<br/>

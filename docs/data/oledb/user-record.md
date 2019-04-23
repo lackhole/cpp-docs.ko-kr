@@ -8,12 +8,12 @@ helpviewer_keywords:
 - user records, described
 - rowsets, user record
 ms.assetid: 9c0d2864-2738-4f62-a750-1016d9c3523f
-ms.openlocfilehash: 4a06a378ba7d4084b68c98ab029aec1670be982d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b37835f1a3161edd10f61f9b4e76cfb5f558e07b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570318"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038526"
 ---
 # <a name="user-record"></a>사용자 레코드
 
@@ -66,6 +66,6 @@ PROVIDER_COLUMN_MAP 매크로 만들기에 도움이 되는 `GetColumnInfo` 함�
 
 재정의 하는 방법의 자세한 예제 `GetColumnInfo` 사용자 레코드를 확인할 [소비자에 게 반환 되는 열을 동적으로 결정](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

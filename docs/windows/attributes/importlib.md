@@ -1,17 +1,17 @@
 ---
-title: importlib (c + + COM 특성)
+title: importlib (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.importlib
 helpviewer_keywords:
 - importlib attribute
 ms.assetid: f129e459-b8d3-4aca-a0bc-ee53e18b62ed
-ms.openlocfilehash: d0bedb4bac91aa1a5aa72c8334db07aea0f04a97
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29c7df8fbedbd107a9bb0b05466addc4672fc555
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649880"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041447"
 ---
 # <a name="importlib"></a>importlib
 
@@ -30,7 +30,7 @@ ms.locfileid: "50649880"
 
 ## <a name="remarks"></a>설명
 
-합니다 **importlib** c + + 특성을 사용 하면는 `importlib` 문이 생성된 된.idl 파일의 라이브러리 블록에 배치 합니다. 합니다 **importlib** 특성이 동일한 기능을 합니다 [importlib](/windows/desktop/Midl/importlib) MIDL 특성입니다.
+합니다 **importlib** C++ 원인 특성는 `importlib` 문이 생성된 된.idl 파일의 라이브러리 블록에 배치 합니다. 합니다 **importlib** 특성이 동일한 기능을 합니다 [importlib](/windows/desktop/Midl/importlib) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -56,7 +56,7 @@ ms.locfileid: "50649880"
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 특성](compiler-attributes.md)<br/>
 [독립 실행형 특성](stand-alone-attributes.md)<br/>

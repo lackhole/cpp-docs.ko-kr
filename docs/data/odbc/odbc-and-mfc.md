@@ -10,12 +10,12 @@ helpviewer_keywords:
 - MFC [C++], ODBC and
 - database connections [C++], MFC ODBC classes
 ms.assetid: 98f02fd7-1235-437b-89a9-edfd0fc797f7
-ms.openlocfilehash: 7c7540528bed2499ed9dfb09ed39658914c81e14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9b7d04e2eb8bbb1adf96e05282861ef33e20434a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560631"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031182"
 ---
 # <a name="odbc-and-mfc"></a>ODBC 및 MFC
 
@@ -38,6 +38,6 @@ ms.locfileid: "50560631"
 
 ODBC를 기반으로 MFC 데이터베이스 클래스는 ODBC 드라이버를 사용할 수 있는 모든 데이터베이스에 대 한 액세스를 제공 하도록 설계 되었습니다. 클래스는 ODBC를 사용 하므로 여러 다른 데이터 형식 및 다른 로컬/원격 구성에는 데이터 응용 프로그램에 액세스할 수 있습니다. 다른 Dbms (데이터베이스 관리 시스템)를 처리 하는 특별 한 경우 코드를 작성할 필요가 없습니다. 사용자가 액세스 하려는 데이터에 대 한 적절 한 ODBC 드라이버와 저장 된 테이블의 데이터를 조작 하려면 프로그램을 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](open-database-connectivity-odbc.md)

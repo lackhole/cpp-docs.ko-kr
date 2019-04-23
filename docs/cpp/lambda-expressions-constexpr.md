@@ -1,19 +1,19 @@
 ﻿---
 title: C++의 constexpr 람다식
-ms.date: 07/19/2017
+ms.date: 04/08/2019
 helpviewer_keywords:
 - lambda expressions [C++], constexpr
 ms.assetid: b56346cd-fbff-475f-aeaa-ed2010c6d6f7
-ms.openlocfilehash: 937fae7da0f20e81ac5450d597af7a822219d654
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d1bc60a6da813e54c857da38b0164f544216be00
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506602"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59424185"
 ---
 # <a name="constexpr-lambda-expressions-in-c"></a>C++의 constexpr 람다식
 
-**Visual Studio 2017 15.3버전 이상** (컴파일 옵션 [/std:c++17](../build/reference/std-specify-language-standard-version.md)와 함께 사용 가능): 람다식은 **constexpr**로 선언되거나 캡처되거나 상수 내에서 각 데이터 맴버의 초기화가 허용되는 경우 상수식에 사용됩니다.
+**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 람다 식으로 선언할 수 있습니다 **constexpr** 캡처하거나 소개 하는 각 데이터 멤버를 초기화 하는 상수 식 내에서 허용 되는 경우 상수 식에 사용 합니다.
 
 ```cpp
     int y = 32;

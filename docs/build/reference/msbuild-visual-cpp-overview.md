@@ -1,17 +1,17 @@
 ---
-title: Visual Studio에서 c + + 용 MSBuild 내부 프로젝트
+title: MSBuild 내부 요소에 대 한 C++ Visual Studio의 프로젝트
 ms.date: 12/08/2018
 helpviewer_keywords:
 - MSBuild overview
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
-ms.openlocfilehash: e8d5e5379a60128ace9502712a1d240f947ddcd5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 6c8e891f6bf6ed6b3bb3d1c84dbc13b64ab7b868
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826467"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59021906"
 ---
-# <a name="msbuild-internals-for-c-projects"></a>C + + 프로젝트에 대 한 MSBuild 내부
+# <a name="msbuild-internals-for-c-projects"></a>MSBuild 내부 요소에 대 한 C++ 프로젝트
 
 IDE에서 프로젝트 속성을 설정 하 고 다음 프로젝트를 저장 하는 경우 Visual Studio 프로젝트 설정 프로젝트 파일에 씁니다. 프로젝트 파일에는 프로젝트에 고유한 설정이 포함 되어 있습니다. 하지만 프로젝트를 빌드하는 데 필요한 모든 설정이 없습니다. 프로젝트 파일 포함 `Import` 추가 네트워크를 포함 하는 요소 *파일을 지원 합니다.* 지원 파일에는 나머지 속성, 대상 및 프로젝트를 빌드하는 데 필요한 설정을 포함 합니다.
 
@@ -25,7 +25,7 @@ IDE에서 프로젝트 속성을 설정 하 고 다음 프로젝트를 저장 �
 |---------------|-----------------|
 |*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp (x86)\v4.0\\*version*\ |기본 대상 파일 (.targets)를 포함 하 고 대상에서 사용 되는 속성 파일 (.props). 기본적으로 $ (vctargetspath) 매크로이 디렉터리를 참조합니다.|
 |*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*version*\Platforms\\*platform*\ |부모 디렉터리의 대상과 속성을 재정의 하는 플랫폼별 대상 및 속성 파일을 포함 합니다. 이 디렉터리는이 디렉터리에 있는 대상에서 사용 되는 작업을 정의 하는 DLL도 포함 됩니다.<br /><br /> 합니다 *플랫폼* 자리 표시자는 ARM, Win32 또는 x64를 나타내는 하위 디렉터리입니다.|
-|*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*version*\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\Platforms\\*platform*\PlatformToolsets\\*toolset*\ |C + + 응용 프로그램을 생성 된를 사용 하 여 빌드를 사용 하도록 설정 하는 디렉터리를 포함 *도구 집합*합니다.<br /><br /> *연도* 하 고 *edition* Visual Studio 2017 및 이후 버전에서 사용 하는 자리 표시자입니다. 합니다 *버전* 자리 표시자는 Visual Studio 2013의 경우 V120 또는 Visual Studio 2015의 경우 V140, Visual Studio 2012 용 V110 합니다. 합니다 *플랫폼* 자리 표시자는 ARM, Win32 또는 x64를 나타내는 하위 디렉터리입니다. 합니다 *도구 집합* 자리 표시자 v120_xp를 v110_wp80를 Visual Studio 2013 도구를 사용 하 여 Windows XP에 대 한 빌드에 Visual Studio 2015 도구 집합을 사용 하 여 Windows 앱을 빌드하기 위한 예를 들어 v140 도구 집합 하위 디렉터리를 나타냅니다. Visual Studio 2012 도구 집합을 사용 하 여 Windows Phone 8.0 앱을 빌드하십시오.<br /><br />Visual Studio 2010 또는 Visual Studio 2008 응용 프로그램을 생성 하는 빌드를 사용 하도록 설정 하는 디렉터리를 포함 하는 경로 포함 되지 않습니다 합니다 *버전*, 및 *플랫폼* 자리 표시자 Win32, Itanium, x64를 나타내는 하위 디렉터리입니다. 합니다 *도구 집합* 자리 표시자 v90 또는 v100 도구 집합 하위 디렉터리를 나타냅니다.|
+|*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*version*\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\Platforms\\*platform*\PlatformToolsets\\*toolset*\ |빌드를 생성할 수 있도록 하는 디렉터리를 포함 C++ 지정을 사용 하 여 응용 프로그램 *도구 집합*합니다.<br /><br /> *연도* 하 고 *edition* Visual Studio 2017 및 이후 버전에서 사용 하는 자리 표시자입니다. 합니다 *버전* 자리 표시자는 Visual Studio 2013의 경우 V120 또는 Visual Studio 2015의 경우 V140, Visual Studio 2012 용 V110 합니다. 합니다 *플랫폼* 자리 표시자는 ARM, Win32 또는 x64를 나타내는 하위 디렉터리입니다. 합니다 *도구 집합* 자리 표시자 v120_xp를 v110_wp80를 Visual Studio 2013 도구를 사용 하 여 Windows XP에 대 한 빌드에 Visual Studio 2015 도구 집합을 사용 하 여 Windows 앱을 빌드하기 위한 예를 들어 v140 도구 집합 하위 디렉터리를 나타냅니다. Visual Studio 2012 도구 집합을 사용 하 여 Windows Phone 8.0 앱을 빌드하십시오.<br /><br />Visual Studio 2010 또는 Visual Studio 2008 응용 프로그램을 생성 하는 빌드를 사용 하도록 설정 하는 디렉터리를 포함 하는 경로 포함 되지 않습니다 합니다 *버전*, 및 *플랫폼* 자리 표시자 Win32, Itanium, x64를 나타내는 하위 디렉터리입니다. 합니다 *도구 집합* 자리 표시자 v90 또는 v100 도구 집합 하위 디렉터리를 나타냅니다.|
 
 ## <a name="support-files"></a>지원 파일
 
@@ -88,7 +88,7 @@ Visual Studio 지원 파일에 있는 대상의 수백 가지 있습니다. 그�
 > [!NOTE]
 > Visual Studio 2017에서 C++ 프로젝트에 대 한 지원을 **xsd** 파일은 사용 되지 않습니다. 계속 사용할 수 있습니다 **Microsoft.VisualC.CppCodeProvider** 더하여 **CppCodeProvider.dll** 수동으로 GAC에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MSBuild 작업 참조](/visualstudio/msbuild/msbuild-task-reference)<br/>
 [BscMake 작업](/visualstudio/msbuild/bscmake-task)<br/>

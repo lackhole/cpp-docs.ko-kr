@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 업데이트에 대한 추가 정보(ODBC)'
+title: '레코드 집합: 업데이트 (ODBC)에 대 한 자세한 정보'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - records, updating
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - updating recordsets
 - recordsets, updating
 ms.assetid: 0353a742-d226-4fe2-8881-a7daeffe86cd
-ms.openlocfilehash: b34f6f51c6ff3a0995f4cf6044ddd7949644f42c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c29ff110fc507c4e449b2f3d082d98c159a35107
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665298"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59040770"
 ---
-# <a name="recordset-more-about-updates-odbc"></a>레코드 집합: 업데이트에 대한 추가 정보(ODBC)
+# <a name="recordset-more-about-updates-odbc"></a>레코드 집합: 업데이트 (ODBC)에 대 한 자세한 정보
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 이 항목에 설명 합니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "50665298"
 - [Update 및 Delete 멤버 함수에 대 한 자세한](#_core_more_about_update_and_delete)합니다.
 
 > [!NOTE]
->  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현한 경우이 정보 중 일부는 적용 되지 않습니다. 그러나 예를 들어, 호출할 수 없습니다는 `AddNew`, `Edit`를 `Delete`, 및 `Update` 멤버 함수를 트랜잭션을 수행할 수 있습니다. 대량 행 페치에 대 한 자세한 내용은 참조 하십시오 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+>  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현한 경우이 정보 중 일부는 적용 되지 않습니다. 그러나 예를 들어, 호출할 수 없습니다는 `AddNew`, `Edit`를 `Delete`, 및 `Update` 멤버 함수를 트랜잭션을 수행할 수 있습니다. 대량 행 페치에 대 한 자세한 내용은 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 ##  <a name="_core_how_other_operations_affect_updates"></a> 다른 작업 업데이트에 미치는 영향
 
@@ -53,7 +53,7 @@ ms.locfileid: "50665298"
 
 ###  <a name="_core_how_scrolling_affects_updates"></a> 스크롤 업데이트에 미치는 영향
 
-경우 있습니다 [레코드 집합: 스크롤 (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) 레코드 집합에서 편집 버퍼 (이전 레코드를 먼저 저장 되지 않고는) 각 새 현재 레코드를 사용 하 여 채워집니다. 이전에 삭제 된 레코드를 통해 건너뜁니다 스크롤입니다. 후 스크롤 하는 경우는 `AddNew` 하거나 `Edit` 호출 하지 않고 호출 `Update`, `CommitTrans`, 또는 `Rollback` 먼저 모든 변경 내용이 손실 됩니다 (에 경고 없음)와 새 레코드를 편집 버퍼로 되므로으로 합니다. 편집 버퍼 스크롤한 레코드로 채워집니다, 그리고 저장된 된 레코드 해제 되 면 및 데이터 원본에 변경 되지 않습니다 발생 합니다. 이 둘 다에 적용 됩니다 `AddNew` 고 `Edit`입니다.
+때 있습니다 [레코드 집합: 스크롤 (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) 레코드 집합에서 편집 버퍼 (이전 레코드를 먼저 저장 되지 않고는) 각 새 현재 레코드를 사용 하 여 채워집니다. 이전에 삭제 된 레코드를 통해 건너뜁니다 스크롤입니다. 후 스크롤 하는 경우는 `AddNew` 하거나 `Edit` 호출 하지 않고 호출 `Update`, `CommitTrans`, 또는 `Rollback` 먼저 모든 변경 내용이 손실 됩니다 (에 경고 없음)와 새 레코드를 편집 버퍼로 되므로으로 합니다. 편집 버퍼 스크롤한 레코드로 채워집니다, 그리고 저장된 된 레코드 해제 되 면 및 데이터 원본에 변경 되지 않습니다 발생 합니다. 이 둘 다에 적용 됩니다 `AddNew` 고 `Edit`입니다.
 
 ##  <a name="_core_your_updates_and_the_updates_of_other_users"></a> 업데이트 및 다른 사용자의 업데이트
 
@@ -102,10 +102,10 @@ ms.locfileid: "50665298"
 
 - AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED 테이블을 업데이트 하는 경우 기본 키가 없는 또는 고유 인덱스 하 수 있는 열에에서 없는 테이블 행을 고유 하 게 식별 하는 레코드 집합입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 레코드 집합의 레코드 선택 방법(ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
+[레코드 집합: 레코드 집합 선택 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
 [RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [SQL](../../data/odbc/sql.md)<br/>
 [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)

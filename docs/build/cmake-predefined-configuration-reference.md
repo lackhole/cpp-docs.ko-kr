@@ -4,12 +4,12 @@ ms.description: Visual Studio provides several predefined build configurations f
 ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake redefined configurations
-ms.openlocfilehash: d1e77db7ddc38fa41771a512a5b863d403bfdc28
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: cecadaec2e409dfba3b1929e406c36df3e498307
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827097"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59031452"
 ---
 # <a name="cmake-predefined-build-configurations"></a>CMake 미리 정의된 빌드 구성
 
@@ -344,7 +344,7 @@ You can use these optional settings for more control:
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual Studio의 CMake 프로젝트](cmake-projects-in-visual-studio.md)<br/>
 [Linux CMake 프로젝트 구성](../linux/cmake-linux-project.md)<br/>

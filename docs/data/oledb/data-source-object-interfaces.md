@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE DB provider templates [C++], object interfaces
 - OLE DB [C++], interfaces
 ms.assetid: 929e100c-c08c-4b64-8437-d8d1357226f6
-ms.openlocfilehash: aaa9e90996750b0518999803487fcb39729c76f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fc8d2f5edf854766dcb5dcc8ed6d57a849b8f2a0
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519649"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033192"
 ---
 # <a name="data-source-object-interfaces"></a>데이터 소스 개체 인터페이스
 
@@ -34,6 +34,6 @@ ms.locfileid: "50519649"
 
 데이터 소스 개체는 상속을 통해 `IDBProperties`, `IDBInitialize` 및 `IDBCreateSession` 인터페이스를 구현합니다. 이러한 구현 클래스 중 하나에서 상속하거나 상속하지 않도록 하여 추가 기능을 지원하도록 선택할 수 있습니다. `IDBDataSourceAdmin` 인터페이스를 지원하려는 경우 `IDBDataSourceAdminImpl` 클래스에서 상속해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

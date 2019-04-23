@@ -16,10 +16,10 @@ helpviewer_keywords:
 - data sources [MFC], creating
 ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
 ms.openlocfilehash: 68ee5fbfec554df8865ca50c265ca2fa2f226a29
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58775246"
 ---
 # <a name="data-objects-and-data-sources-creation-and-destruction"></a>데이터 개체 및 데이터 소스: 생성 및 소멸

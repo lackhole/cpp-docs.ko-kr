@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE DB, record views
 - MFC, record views
 ms.assetid: 1cd3e595-ce08-43d8-a0a9-d03b5d3e24ce
-ms.openlocfilehash: 631e78e1a397ec360b1f3b2d94d7340e96925e23
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 83f4d64252ab5c2b80d62419ea448c1ffd0cdd69
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582714"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59025875"
 ---
 # <a name="using-ole-db-record-views"></a>OLE DB 레코드 뷰 사용
 
@@ -31,7 +31,7 @@ CRowset<CAccessor<CProductAccessor>> myRowSet = myRecordView.OnGetRowset();
 
 DDX 함수를 `COleDbRecordView`와 사용하여 데이터베이스 레코드 집합의 데이터를 직접 가져와서 대화 상자 컨트롤에 표시할 수 있습니다. `DDX_Text` 같은 **DDX_Field**<strong>\*</strong> * 함수가 아닌 `DDX_FieldText` 같은 **DDX_**<strong>\*</strong> * 메서드를 `COleDbRecordView`와 함께 사용해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [접근자 사용](../../data/oledb/using-accessors.md)<br/>
 [COleDBRecordView 클래스](../../mfc/reference/coledbrecordview-class.md)<br/>

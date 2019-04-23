@@ -1,16 +1,16 @@
 ---
-title: 컴파일러 특성 (c + + COM)
+title: 컴파일러 특성 (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - cl.exe compiler, attributes
 - attributes [C++/CLI], compiler
 ms.assetid: 53cd9bee-1521-48ec-b171-80feac2096cc
-ms.openlocfilehash: 8fef953a520572b42e69a48ea391282c7b70ba44
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea4d3119a640c0642664210384c297e011104411
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667365"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030821"
 ---
 # <a name="compiler-attributes"></a>컴파일러 특성
 
@@ -31,6 +31,6 @@ ms.locfileid: "50667365"
 |[satype](satype.md)|데이터 형식을 지정 합니다 `SAFEARRAY`합니다.|
 |[version](version-cpp.md)|인터페이스 또는 클래스의 여러 버전 중에서 특정 버전을 식별합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [그룹별 특성](attributes-by-group.md)

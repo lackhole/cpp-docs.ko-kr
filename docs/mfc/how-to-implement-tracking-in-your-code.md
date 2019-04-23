@@ -5,10 +5,10 @@ helpviewer_keywords:
 - CRectTracker class [MFC], implementing trackers
 ms.assetid: baaeca2c-5114-485f-bf58-8807db1bc973
 ms.openlocfilehash: 0f037480e83b8ca1ba12af56904afe25a33e4d6c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774466"
 ---
 # <a name="how-to-implement-tracking-in-your-code"></a>방법: 코드에서 추적 구현

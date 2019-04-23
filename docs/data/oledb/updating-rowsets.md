@@ -7,12 +7,12 @@ helpviewer_keywords:
 - updating rowsets
 - rowsets
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
-ms.openlocfilehash: fb915a2f61c2adfedc41630e637f6b5beee30768
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 7151d897469993b2f9be3575eb11a08844af3c69
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424365"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59028362"
 ---
 # <a name="updating-rowsets"></a>행 집합 업데이트
 
@@ -203,7 +203,7 @@ product.Update();                 // Update row 101 now
 
 마지막으로, 변경 내용을 연기하는 주요 이유는 변경 내용을 취소할 수 있기 때문입니다. [CRowset::Undo](../../data/oledb/crowset-undo.md) 를 호출하면 로컬 변경 캐시의 상태가 보류 중인 변경 전의 데이터 저장소 상태로 롤백됩니다. 것이 중요 한 사실은 `Undo` 되지 않습니다 1 단계 (최신 변경 전의 상태)는 로컬 캐시의 상태를 다시; 아니라 해당 행에 대 한 로컬 캐시를 지웁니다. 또한 `Undo` 현재 행에만 영향을 줍니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)<br/>
 [CRowset 클래스](../../data/oledb/crowset-class.md)<br/>

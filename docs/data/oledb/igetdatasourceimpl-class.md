@@ -14,12 +14,12 @@ helpviewer_keywords:
 - IGetDataSourceImpl class
 - GetDataSource method
 ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
-ms.openlocfilehash: bb4147bda64e86770e133e10a60efa567cee7719
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 2056b93fd6c1d32b72996970352e87670ff406de
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414072"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59034211"
 ---
 # <a name="igetdatasourceimpl-class"></a>IGetDataSourceImpl 클래스
 
@@ -72,7 +72,7 @@ STDMETHOD(GetDataSource)(REFIID riid,
 
 데이터 원본 개체의 속성에 액세스 해야 하는 경우에 유용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

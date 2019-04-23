@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __readpmc intrinsic
 - rdpmc instruction
 ms.assetid: 14ed45a6-28b6-4635-8437-a597c04b43d4
-ms.openlocfilehash: 059d9344fa329e69666abaca4d73122ab29f8d2a
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 848c880e76d6d431ee56a0bb30a33b276837ce76
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326435"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029345"
 ---
 # <a name="readpmc"></a>__readpmc
 
@@ -52,6 +52,6 @@ unsigned __int64 __readpmc(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

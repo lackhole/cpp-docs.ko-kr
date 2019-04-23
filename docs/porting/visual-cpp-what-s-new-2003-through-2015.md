@@ -2,19 +2,19 @@
 title: Visual C++ 2003 ~ 2015의 새로운 기능
 ms.date: 11/04/2016
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: e2a785871d85ce742bee7b78586756cced38986e
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: ae21a81869bd68c5a2641dba47b89d7e10b67567
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58768687"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58898858"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ 2003 ~ 2015의 새로운 기능
 
 이 페이지에는 Visual Studio 2015에서 2003까지 모든 버전의 Visual C++에 대한 "새로운 기능" 페이지가 모두 수집되어 있습니다. 이 정보는 이전 버전의 Visual C++에서 업그레이드하는 데 유용한 경우에 편의를 위해 제공됩니다.
 
 > [!NOTE]
-> Visual Studio 2017에 대한 자세한 내용은 [Visual Studio 2017의 Visual C++에 대한 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) 및 [Visual Studio 2017의 Visual C++에서 규칙 향상](../overview/cpp-conformance-improvements-2017.md)을 참조하세요.
+> 현재 버전의 Visual Studio에 대한 자세한 내용은 [Visual Studio의 Visual C++에 대한 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) 및 [Visual Studio의 Visual C++에서 규칙 향상](../overview/cpp-conformance-improvements.md)을 참조하세요.
 
 ## <a name="whats-new-for-c-in-visual-studio-2015"></a>Visual Studio 2015의 새로운 C++ 기능
 

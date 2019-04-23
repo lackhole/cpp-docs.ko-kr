@@ -6,12 +6,12 @@ helpviewer_keywords:
 - transactions [C++]
 - databases [C++], transactions
 ms.assetid: f80afbfe-1517-4fec-8870-9ffc70a58b05
-ms.openlocfilehash: d986250205f9d45c83d88811527e9561b3258b3d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e3dc5b9319a8745ddb446ae7dbe895bfcd446c37
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552558"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037609"
 ---
 # <a name="transactions--mfc-data-access"></a>트랜잭션  (MFC Data Access)
 
@@ -35,6 +35,6 @@ OLE DB에서 트랜잭션을 지원할 수 있습니다 (참조 [OLE DB에서 �
 
 분산 트랜잭션은 분산된 데이터, 즉 네트워크로 연결된 둘 이상의 컴퓨터 시스템에 있는 데이터를 업데이트하는 트랜잭션입니다. 분산된 시스템을 통해 트랜잭션을 지원 하려는 경우 OLE DB 트랜잭션 지원이 아닌 ADO.NET을 사용 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [데이터 액세스 프로그래밍 (MFC/ATL)](../data/data-access-programming-mfc-atl.md)

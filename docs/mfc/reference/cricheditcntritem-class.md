@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CRichEditCntrItem [MFC], CRichEditCntrItem
 - CRichEditCntrItem [MFC], SyncToRichEditObject
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
-ms.openlocfilehash: 0f71607147b353c5071830bdce481f1e5e5d4717
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 674937df9b4ecef0d159a47a45a716d1175ad5d9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268488"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58773842"
 ---
 # <a name="cricheditcntritem-class"></a>CRichEditCntrItem 클래스
 
@@ -49,7 +49,7 @@ class CRichEditCntrItem : public COleClientItem
 
 이 Windows 공용 컨트롤 (및 따라서 합니다 [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) 및 관련 클래스) 이상 Windows 95/98 및 Windows NT 버전 3.51에서 실행 되는 프로그램에만 사용할 수 있습니다.
 
-서식 있는 편집 컨테이너 항목을 사용 하 여 MFC 응용 프로그램에서 예제를 참조 합니다 [워드 패드](../../visual-cpp-samples.md) 샘플 응용 프로그램입니다.
+서식 있는 편집 컨테이너 항목을 사용 하 여 MFC 응용 프로그램에서 예제를 참조 합니다 [워드 패드](../../overview/visual-cpp-samples.md) 샘플 응용 프로그램입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -110,7 +110,7 @@ void SyncToRichEditObject(REOBJECT& reo);
 
 ## <a name="see-also"></a>참고자료
 
-[MFC 샘플 워드 패드](../../visual-cpp-samples.md)<br/>
+[MFC 샘플 워드 패드](../../overview/visual-cpp-samples.md)<br/>
 [COleClientItem 클래스](../../mfc/reference/coleclientitem-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CRichEditDoc 클래스](../../mfc/reference/cricheditdoc-class.md)<br/>

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE DB providers, properties
 - properties [C++], OLE DB provider
 ms.assetid: 26a8b493-7ec4-4686-96d0-9ad5d2bca5ac
-ms.openlocfilehash: 04f6f046451a5347dbd2a911ce9fbd1a67e39bba
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 2cbb334ab15912fdcf6980461016976d869f5a84
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57414163"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029462"
 ---
 # <a name="setting-properties-in-your-provider"></a>공급자에 속성 설정
 
@@ -47,6 +47,6 @@ Microsoft OLE DB 공급자는 다음 OLE DB 속성을 무시합니다.
 
 - `DBPROP_CANHOLDROWS` 설정은 무시 됩니다. 공급자는 한계를 지정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿을 사용하여 작업](../../data/oledb/working-with-ole-db-provider-templates.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pop_macro pragma
 - pragmas, pop_macro
 ms.assetid: 3b5489d0-69ba-4c66-b572-2748af0f12bb
-ms.openlocfilehash: 28529ad0d9204034ea25fbca3696982a38889951
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ea7d37332ce50fd1d21acba058da721a23f2097
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437243"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030341"
 ---
 # <a name="popmacro"></a>pop_macro
 매크로 스택에서 *macro_name* 매크로를 가져온 후 *macro_name*에 값을 설정합니다.
@@ -28,7 +28,7 @@ macro_name
 
 ## <a name="remarks"></a>설명
 
-**pop_macro**를 수행하기 전에 반드시 [push_macro](../preprocessor/push-macro.md)를 먼저 수행해야 합니다.
+먼저 실행 해야 합니다는 [push_macro](../preprocessor/push-macro.md) 에 대 한 *macro_name* 수행 하기 전에 **pop_macro**합니다.
 
 ## <a name="example"></a>예제
 
@@ -64,6 +64,6 @@ int main() {
 3
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

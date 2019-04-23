@@ -6,12 +6,12 @@ helpviewer_keywords:
 - pragmas, for optimization
 - optimization, keywords and pragmas
 ms.assetid: 66a94842-ef10-490a-88b3-51d1a568ead5
-ms.openlocfilehash: df5df59f6c18a7372b0f0af0e0447c00ff524c4b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: db9af687c7de560b0012ceea50a7cbfcc7d5de9c
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826592"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59035506"
 ---
 # <a name="optimization-pragmas-and-keywords"></a>최적화 pragma 및 키워드
 
@@ -39,6 +39,6 @@ C 또는 C++ 코드에서 사용하는 다음 몇 가지 키워드와 pragma는 
 
 - [register 키워드](../cpp/storage-classes-cpp.md#register)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 최적화](optimizing-your-code.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C4572
 ms.assetid: 482dee5a-29bd-4fc3-b769-9dfd4cd2a964
 ms.openlocfilehash: e32509e4d32eef4f53b8d43a7db769844f1182c7
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58781551"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779468"
 ---
 # <a name="compiler-warning-level-1-c4572"></a>컴파일러 경고(수준 1) C4572
 
 [ParamArray] 특성은 사용 되지 않습니다 /clr을 사용 하 여 '...' 대신
 
-가변 인수 목록을 지정 하는 데 사용 되지 않는 스타일을 사용 했습니다. CLR을 컴파일할 때 대신 줄임표 구문을 사용 하 여 <xref:System.ParamArrayAttribute>입니다. 자세한 내용은 참조 하세요. [가변 인수 목록 (...) (C + + /CLI CLI) ](../../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
+가변 인수 목록을 지정 하는 데 사용 되지 않는 스타일을 사용 했습니다. CLR을 컴파일할 때 대신 줄임표 구문을 사용 하 여 <xref:System.ParamArrayAttribute>입니다. 자세한 내용은 참조 하세요. [가변 인수 목록 (...) (C++/CLI) ](../../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
 
 ## <a name="example"></a>예제
 

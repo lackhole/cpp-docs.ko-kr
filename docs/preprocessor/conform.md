@@ -9,31 +9,31 @@ helpviewer_keywords:
 - forScope conform pragma
 - pragmas, conform
 ms.assetid: 71b3e174-c53c-4bfc-adf3-af39b1554191
-ms.openlocfilehash: 6589fe23359eecd654b23380747fbd3213c54dce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35c3b06106779a9056f682ff76c6ed4b4ab1ab41
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432905"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026580"
 ---
 # <a name="conform"></a>준수
-**C + + 전용**
+**C++특정**
 
 런타임 동작을 지정 합니다 [/zc: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) 컴파일러 옵션입니다.
 
 ## <a name="syntax"></a>구문
 
-> **#pragma 준수 (** *이름* [**, 표시** ] [**를** { **온** | **해제** }] [[**,** { **푸시** | **pop** }] [**하십시오** *식별자* ]] **)**
+> **#pragma conform(** *name* [**, show** ] [**,** { **on** | **off** } ] [ [**,** { **push** | **pop** } ] [**,** *identifier* ] ] **)**
 
 ### <a name="parameters"></a>매개 변수
 
 *name*<br/>
 수정할 컴파일러 옵션의 이름을 지정합니다. 유일한 유효 *이름을* 는 `forScope`합니다.
 
-**Show**<br/>
+**show**<br/>
 (선택 사항) 현재 설정을 사용 하면 *이름을* (true 또는 false)를 컴파일하는 동안 경고 메시지를 통해 표시 됩니다. 예를 들어, `#pragma conform(forScope, show)`을 입력합니다.
 
-**온**, **해제**<br/>
+**on**, **off**<br/>
 (선택 사항) 설정 *이름을* 에 **에** 사용 하도록 설정 합니다 [/zc: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) 컴파일러 옵션입니다. 기본값은 **해제**합니다.
 
 **push**<br/>
@@ -63,6 +63,6 @@ ms.locfileid: "50432905"
 int main() {}
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

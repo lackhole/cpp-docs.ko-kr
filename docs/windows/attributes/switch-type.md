@@ -1,17 +1,17 @@
 ---
-title: switch_type (c + + COM 특성)
+title: switch_type (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.switch_type
 helpviewer_keywords:
 - switch_type attribute
 ms.assetid: e24544dc-b3bc-48ae-b249-f967db49271e
-ms.openlocfilehash: e8827fe576282b86f1d3bc633ec7f9f954c015b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b461769d3d988efae0be7380e1e0112e3f3cf801
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448791"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59027859"
 ---
 # <a name="switchtype"></a>switch_type
 
@@ -32,9 +32,9 @@ type
 
 ## <a name="remarks"></a>설명
 
-합니다 **switch_type** c + + 특성에 동일한 기능을 합니다 [switch_type](/windows/desktop/Midl/switch-type) MIDL 특성입니다.
+**switch_type** C++ 특성에 동일한 기능을 합니다 [switch_type](/windows/desktop/Midl/switch-type) MIDL 특성입니다.
 
-C + + 특성을 지원 하지 않습니다 [공용 구조체를 캡슐화](/windows/desktop/Midl/encapsulated-unions)합니다. [공용 구조체 nonencapsulated](/windows/desktop/Midl/nonencapsulated-unions) 다음과 같은 형식 에서만 지원 됩니다.
+C++특성을 지원 하지 않습니다 [공용 구조체를 캡슐화](/windows/desktop/Midl/encapsulated-unions)합니다. [공용 구조체 nonencapsulated](/windows/desktop/Midl/nonencapsulated-unions) 다음과 같은 형식 에서만 지원 됩니다.
 
 ```cpp
 // cpp_attr_ref_switch_type.cpp
@@ -70,7 +70,7 @@ struct SizedValue2 {
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>

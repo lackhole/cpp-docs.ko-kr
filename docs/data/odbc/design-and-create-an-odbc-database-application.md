@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - application design [C++], database applications
 ms.assetid: 0eb106b3-91b7-4c42-8c93-a8224aa9fe12
-ms.openlocfilehash: 4384280d36b7a2bcebb28e35fe34135a17bd1944
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8dcf2e4c90bd0a9a32a2cf2403ef4b4b0bf11a7b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570316"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59032286"
 ---
 # <a name="design-and-create-an-odbc-database-application"></a>ODBC 데이터베이스 응용 프로그램 디자인과 작성
 
@@ -21,9 +21,9 @@ ms.locfileid: "50570316"
 
 - [MFC ODBC 레코드 집합 사용](../../data/odbc/use-mfc-odbc-recordsets.md)
 
-- [ODBC 기초](../../data/odbc/odbc-basics.md)
+- [ODBC 기본 사항](../../data/odbc/odbc-basics.md)
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

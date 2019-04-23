@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3490
 ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
-ms.openlocfilehash: 55580533d6a1a6b80f79b017ba78a08fb44df744
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1e6c3c502290e88feec89877de7ad791084401cf
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478158"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023258"
 ---
 # <a name="compiler-error-c3490"></a>컴파일러 오류 C3490
 
@@ -61,6 +61,6 @@ class C
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

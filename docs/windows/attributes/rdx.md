@@ -1,17 +1,17 @@
 ---
-title: rdx (c + + COM 특성)
+title: rdx (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.rdx
 helpviewer_keywords:
 - rdx attribute
 ms.assetid: ff8e4312-c1ad-4934-bdaa-86f54409651e
-ms.openlocfilehash: 0b21e94ce3c54c0234dd7883aac3ef5cadbbc009
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2790c3de01d21242daee73fc442ad22d88739355
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677879"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023882"
 ---
 # <a name="rdx"></a>rdx
 
@@ -36,7 +36,7 @@ ms.locfileid: "50677879"
 
 ## <a name="remarks"></a>설명
 
-합니다 **rdx** c + + 특성을 만들거나 기존 COM 구성 요소에 대 한 레지스트리 키를 수정 합니다. 특성 대상 멤버를 구현 하는 개체에 BEGIN_RDX_MAP 매크로 추가 합니다. `RegistryDataExchange`레지스트리 및 데이터 멤버 간 데이터 전송을 위해 BEGIN_RDX_MAP 매크로 결과 삽입 하는 함수를 사용할 수 있습니다
+합니다 **rdx** C++ 특성을 만들거나 기존 COM 구성 요소에 대 한 레지스트리 키를 수정 합니다. 특성 대상 멤버를 구현 하는 개체에 BEGIN_RDX_MAP 매크로 추가 합니다. `RegistryDataExchange`레지스트리 및 데이터 멤버 간 데이터 전송을 위해 BEGIN_RDX_MAP 매크로 결과 삽입 하는 함수를 사용할 수 있습니다
 
 이 특성은 함께에서 사용할 수 있습니다 합니다 [coclass](coclass.md), [progid](progid.md), 또는 [vi_progid](vi-progid.md) 특성 또는 다음 중 하나를 암시 하는 기타 특성입니다.
 
@@ -76,7 +76,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 특성](com-attributes.md)<br/>
 [registration_script](registration-script.md)

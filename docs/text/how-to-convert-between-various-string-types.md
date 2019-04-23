@@ -8,15 +8,15 @@ helpviewer_keywords:
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
 ms.openlocfilehash: 21006f19f7c811f87f3f75e346983f7a8e7e0bf5
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58778327"
 ---
 # <a name="how-to-convert-between-various-string-types"></a>방법: 다양 한 문자열 형식 간 변환
 
-이 항목에서는 다양 한 Visual c + + 문자열 형식을 다른 문자열로 변환 하는 방법에 설명 합니다. 적용 되는 문자열 형식 포함 `char *`, `wchar_t*`를 [_bstr_t](../cpp/bstr-t-class.md)를 [CComBSTR](../atl/reference/ccombstr-class.md)를 [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), 및 <xref:System.String?displayProperty=fullName>합니다. 모든 예제에서 새 형식으로 변환 시 문자열에 대한 복사본이 만들어집니다. 새 문자열의 변경 사항은 원래 문자열에서 영향을 주지 않고, 그 반대의 경우도 마찬가지입니다.
+이 항목에서는 다양 한 시각적 개체를 변환 하는 방법을 보여 줍니다. C++ 다른 문자열에 형식 문자열입니다. 적용 되는 문자열 형식 포함 `char *`, `wchar_t*`를 [_bstr_t](../cpp/bstr-t-class.md)를 [CComBSTR](../atl/reference/ccombstr-class.md)를 [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), 및 <xref:System.String?displayProperty=fullName>합니다. 모든 예제에서 새 형식으로 변환 시 문자열에 대한 복사본이 만들어집니다. 새 문자열의 변경 사항은 원래 문자열에서 영향을 주지 않고, 그 반대의 경우도 마찬가지입니다.
 
 ## <a name="converting-from-char-"></a>char\*에서 변환
 

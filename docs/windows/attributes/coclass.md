@@ -1,17 +1,17 @@
 ---
-title: coclass (c + + COM 특성)
+title: coclass (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.coclass
 helpviewer_keywords:
 - coclass attribute
 ms.assetid: 42da6a10-3af9-4b43-9a1d-689d00b61eb3
-ms.openlocfilehash: 69f749dd6f8b2a8c42b4c75dd3790b9f7fbcf291
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e1f99a2780ab4f451533a3e797e473f60680c6ab
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603088"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59035204"
 ---
 # <a name="coclass"></a>coclass
 
@@ -25,7 +25,7 @@ COM 인터페이스를 구현할 수 있는 COM 개체를 만듭니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **coclass** c + + 특성 생성된 된.idl 파일에서 coclass 구문을 배치 합니다.
+합니다 **coclass** C++ 특성 생성된 된.idl 파일에서 coclass 구문을 배치 합니다.
 
 Coclass를 정의할 때는 지정할 수도 있습니다는 [uuid](uuid-cpp-attributes.md)를 [버전](version-cpp.md)를 [스레딩](threading-cpp.md)를 [vi_progid](vi-progid.md), 및 [progid ](progid.md) 특성입니다. 그 중 하나를 지정 하지 않은 경우 생성 됩니다.
 
@@ -131,14 +131,14 @@ public:
 
 |||
 |-|-|
-|**적용 대상**|**클래스**, **구조체**|
+|**적용 대상**|**class**, **struct**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [COM 특성](com-attributes.md)<br/>

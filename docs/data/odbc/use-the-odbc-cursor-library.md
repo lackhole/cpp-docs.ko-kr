@@ -5,12 +5,12 @@ helpviewer_keywords:
 - cursor library [ODBC], disabling
 - ODBC cursor library [ODBC], disabling
 ms.assetid: e89e41c4-78fd-4cb6-821f-4fb090f4b08b
-ms.openlocfilehash: 200d52774845ecafd510534d6407154206f439ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2bd762e64d9f742ade789e3c9571eb02d6f0ef2e
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505016"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039256"
 ---
 # <a name="use-the-odbc-cursor-library"></a>ODBC 커서 라이브러리 사용
 
@@ -20,6 +20,6 @@ ODBC에서는 커서 라이브러리를 사용하여 레코드 집합의 스크�
 
 - [ODBC 커서 라이브러리 사용](../../data/odbc/odbc-the-odbc-cursor-library.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

@@ -3,10 +3,10 @@ title: Visual C++의 클라우드 및 웹 프로그래밍
 ms.date: 11/04/2016
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
 ms.openlocfilehash: 33431a8f8660af683ed2e39e10811c22fe2f4fcc
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58773088"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++의 클라우드 및 웹 프로그래밍
@@ -17,11 +17,11 @@ C++에는 웹 및 클라우드에 연결하기 위한 다양한 옵션이 있습
 
 - [Microsoft Azure 모바일 서비스](http://www.windowsazure.com/develop/mobile/)
 
-  Windows Azure Mobile Services에 연결 하려면 유니버설 Windows 플랫폼 (UWP) 앱 이나 Windows 데스크톱 앱에서 사용할 수 있는 네이티브 Api를 제공 합니다. 웹 사이트의 대부분 예제는 C#으로 작성되지만 C++를 사용할 수도 있습니다. 자세한 내용은 [빠른 시작: C + +를 사용 하 여 모바일 서비스 추가](https://msdn.microsoft.com/library/windows/apps/dn263181.aspx)합니다.
+  Windows Azure Mobile Services에 연결 하려면 유니버설 Windows 플랫폼 (UWP) 앱 이나 Windows 데스크톱 앱에서 사용할 수 있는 네이티브 Api를 제공 합니다. 웹 사이트의 대부분 예제는 C#으로 작성되지만 C++를 사용할 수도 있습니다. 자세한 내용은 [빠른 시작: 사용 하 여 모바일 서비스 추가 C++ ](https://msdn.microsoft.com/library/windows/apps/dn263181.aspx)합니다.
 
-- [C + + 용 Microsoft Azure Storage 클라이언트 라이브러리](https://blogs.msdn.microsoft.com/windowsazurestorage/2015/04/29/microsoft-azure-storage-client-library-for-c-v1-0-0-general-availability/)
+- [에 대 한 Microsoft Azure Storage 클라이언트 라이브러리C++](https://blogs.msdn.microsoft.com/windowsazurestorage/2015/04/29/microsoft-azure-storage-client-library-for-c-v1-0-0-general-availability/)
 
-  에서는 다음 기능에 제한 되지 않고 포함 하 여 Azure storage를 사용 하 여 작업에 대 한 포괄적인 API를 제공 하는 c + + 용 Azure Storage 클라이언트 라이브러리:
+  Azure Storage 클라이언트 라이브러리에 대 한 C++ 에서는 다음 기능에 제한 되지 않고 포함 하 여 Azure storage를 사용 하 여 작업에 대 한 포괄적인 API를 제공 합니다.
 
   - 만들기, 읽기, 삭제 및 blob 컨테이너, 테이블 및 큐를 나열 합니다.
   - 만들기, 읽기, 삭제, 목록 및 복사 blob 및 blob 범위를 읽고 있습니다.

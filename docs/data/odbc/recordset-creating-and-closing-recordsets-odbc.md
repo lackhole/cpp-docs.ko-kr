@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 레코드 집합 만들기 및 닫기(ODBC)'
+title: '레코드 집합: 만들 레코드 집합 및 닫기 (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC recordsets, creating
@@ -9,16 +9,16 @@ helpviewer_keywords:
 - ODBC recordsets, closing
 - ODBC recordsets, opening
 ms.assetid: 8d2aac23-4396-4ce2-8c60-5ecf1b360d3d
-ms.openlocfilehash: d98f7e59e52b86a1b9b1c3ffac5c3e7160e6c36d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5d5dae5bc766c0cfc31b4fb76f7fe104be0dbd74
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581508"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041269"
 ---
-# <a name="recordset-creating-and-closing-recordsets-odbc"></a>레코드 집합: 레코드 집합 만들기 및 닫기(ODBC)
+# <a name="recordset-creating-and-closing-recordsets-odbc"></a>레코드 집합: 만들 레코드 집합 및 닫기 (ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 레코드 집합을 사용 하려면 레코드 집합 개체를 생성 하 고 호출 후 해당 `Open` 멤버 함수는 레코드 집합의 쿼리를 실행 하 고 레코드를 선택 합니다. 레코드 집합을 사용 하 여를 완료 하면 닫고 개체를 제거 합니다.
 
@@ -71,10 +71,10 @@ if(!rsStudent.Open(CRecordset::snapshot, NULL, CRecordset::readOnly))
 // Use the snapshot to operate on its records...
 ```
 
-호출한 후 `Open`, 개체 멤버 함수 및 데이터 멤버를 사용 하 여 레코드를 사용 하 여 작동 합니다. 일부 경우에서 쿼리하거나 데이터 원본에서 발생 한 변경 내용을 포함 하는 레코드 집합을 새로 고치지는 것이 좋습니다. 자세한 내용은 참조 하세요. [레코드 집합: 레코드 집합 (ODBC)를 다시 쿼리](../../data/odbc/recordset-requerying-a-recordset-odbc.md)합니다.
+호출한 후 `Open`, 개체 멤버 함수 및 데이터 멤버를 사용 하 여 레코드를 사용 하 여 작동 합니다. 일부 경우에서 쿼리하거나 데이터 원본에서 발생 한 변경 내용을 포함 하는 레코드 집합을 새로 고치지는 것이 좋습니다. 자세한 내용은 참조 하세요. [레코드 집합: (ODBC) 레코드 집합 다시 쿼리](../../data/odbc/recordset-requerying-a-recordset-odbc.md)합니다.
 
 > [!TIP]
->  개발 중 사용할 연결 문자열에는 최종 사용자가 동일한 연결 문자열을 사용할 수 없습니다. 이런 맥락에서 응용 프로그램을 일반화 하는 방법에 대 한 아이디어를 참조 하세요 [데이터 소스: 연결 관리 (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)합니다.
+>  개발 중 사용할 연결 문자열에는 최종 사용자가 동일한 연결 문자열을 사용할 수 없습니다. 이런 맥락에서 응용 프로그램을 일반화 하는 방법에 대 한 아이디어를 참조 하세요. [데이터 원본: 연결 관리 (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)합니다.
 
 ##  <a name="_core_setting_recordset_options"></a> 레코드 집합 옵션 설정
 
@@ -105,10 +105,10 @@ if(!rsStudent.Open(CRecordset::snapshot, NULL, CRecordset::readOnly))
 
    함수의 스택 프레임에 선언한 경우 개체는 개체가 범위를 벗어날 때 자동으로 삭제 됩니다. 그렇지 않은 경우 사용 합니다 **삭제** 연산자입니다.
 
-`Close` 레코드 집합의 해제 `HSTMT` 처리 합니다. C + + 개체는 삭제 되지 않습니다.
+`Close` 레코드 집합의 해제 `HSTMT` 처리 합니다. 제거 하지 않습니다는 C++ 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 스크롤(ODBC)](../../data/odbc/recordset-scrolling-odbc.md)<br/>
-[레코드 집합: 레코드 추가, 업데이트 및 삭제(ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)
+[레코드 집합: 스크롤 (ODBC)](../../data/odbc/recordset-scrolling-odbc.md)<br/>
+[레코드 집합: 추가, 업데이트 및 삭제할 레코드 (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)

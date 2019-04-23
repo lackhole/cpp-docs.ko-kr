@@ -1,5 +1,5 @@
 ---
-title: IDL 특성 (c + + COM)
+title: IDL 특성 (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - IDL files [C++], attributes
 - .idl files [C++]
 ms.assetid: 04c596f4-c97b-4952-8053-316678b1d0b6
-ms.openlocfilehash: 6e88edf114e180a118d0467d5425d16e50d7c216
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a699e327eec056bbb36747840990bb9c7ccc259b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593494"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039511"
 ---
 # <a name="idl-attributes"></a>IDL 특성
 
@@ -23,11 +23,11 @@ ms.locfileid: "50593494"
 
 - .Idl 파일의 여러 측면을 수정할 수 있는 마법사를 사용 합니다.
 
-이제 Visual c + + IDL 특성을 사용 하 여 소스 코드 파일 내에서.idl 파일을 수정할 수 있습니다. 대부분의 경우 Visual c + + IDL 특성 MIDL 특성 이름이 같은 경우 Visual c + + IDL 특성을 MIDL 특성의 이름과 동일한 경우에 소스 코드 파일에서 Visual c + + 특성을 배치 하면 해당 마다 MIDL 특성을 포함 하는.idl 파일을 의미 합니다. 그러나 Visual c + + IDL 특성을 MIDL 특성의 모든 기능을 제공할 수는 없습니다.
+이제 시각적 개체를 사용 하 여 소스 코드 파일 내에서.idl 파일을 수정할 수 있습니다 C++ IDL 특성입니다. 대부분의 경우 시각적 개체에서 C++ IDL 특성 이름이 같은 MIDL 특성으로 합니다. 때 시각적 개체의 이름을 C++ IDL 특성 및 특성을 MIDL 같으면, 즉, 해당 시각적 개체 배치 C++ 소스 코드 파일에서 특성 마다 MIDL 특성을 포함 하는.idl 파일에서 발생 합니다. 그러나 시각적 개체 C++ IDL 특성을 MIDL 특성의 모든 기능을 제공 하지 않을 수 있습니다.
 
 사용 하 여 사용 하지 않는 경우 [COM 특성](com-attributes.md), IDL 특성 인터페이스를 정의할 수 있습니다. 소스 코드를 컴파일할 때 생성 된.idl 파일을 정의 하는 특성이 사용 됩니다. ATL 프로젝트에서 COM 특성을 사용 하는 경우 일부 IDL 특성을 같은 `coclass`, 코드를 프로젝트에 삽입 합니다.
 
-사실은 [idl_quote](idl-quote.md) Visual c + +의 현재 버전에서 지원 되지 않는 MIDL 구문을 사용할 수 있습니다. 이 및와 같은 기타 특성 [importlib](importlib.md) 하 고 [includelib](includelib-cpp.md) 현재 Visual c + + 프로젝트에서 기존.idl 파일을 사용 하는 데 도움이 됩니다.
+사실은 [idl_quote](idl-quote.md) 시각적 개체의 현재 버전에서 지원 되지 않는 MIDL 구문을 사용할 수 있습니다 C++합니다. 이 기타 특성과 같은 [importlib](importlib.md) 하 고 [includelib](includelib-cpp.md) 현재 시각적 개체에서 기존.idl 파일을 사용 하는 데 도움이 C++ 프로젝트입니다.
 
 |특성|설명|
 |---------------|-----------------|
@@ -57,7 +57,7 @@ ms.locfileid: "50593494"
 |[helpstring](helpstring.md)|적용되는 요소를 설명하는 데 사용되는 문자열을 지정합니다.|
 |[hidden](hidden.md)|항목이 있지만 하지 사용자 기반 브라우저에 표시할지를 나타냅니다.|
 |[idl_module](idl-module.md)|DLL에 진입점을 지정합니다.|
-|[idl_quote](idl-quote.md)|특성을 사용할 수 있습니다 또는 IDL을 생성 하는 현재 버전의 Visual c + +에서 지원 되지 않습니다.|
+|[idl_quote](idl-quote.md)|특성을 사용할 수 있습니다 또는 IDL을 생성하는 현재 버전의 Visual C++에서 지원되지 않습니다.|
 |[ID](id.md)|멤버 함수 (속성 또는 메서드를 인터페이스나 dispinterface)에 대 한 DISPID를 지정합니다.|
 |[iid_is](iid-is.md)|인터페이스 포인터에서 가리키는 COM 인터페이스의 IID를 지정 합니다.|
 |[immediatebind](immediatebind.md)|데이터베이스는 즉시 알림을 받을 수는 데이터 바인딩된 개체의 속성에는 모든 변경 내용을 나타냅니다.|
@@ -94,7 +94,7 @@ ms.locfileid: "50593494"
 |[range](range-cpp.md)|인수 값은 런타임에 설정 된 필드에 허용 되는 값의 범위를 지정 합니다.|
 |[readonly](readonly-cpp.md)|변수에 할당을 금지합니다.|
 |[ref](ref-cpp.md)|참조 포인터를 식별합니다.|
-|[requestedit](requestedit.md)|속성을 지원함을 나타냅니다는 `OnRequestEdit` 알림.|
+|[requestedit](requestedit.md)|속성이 `OnRequestEdit` 알림을 지원함을 나타냅니다.|
 |[restricted](restricted.md)|라이브러리 또는 모듈, 인터페이스 또는 dispinterface의 멤버를 임의로 호출할 수 없습니다 지정 합니다.|
 |[retval](retval.md)|멤버의 반환 값을 받는 매개 변수를 지정 합니다.|
 |[size_is](size-is.md)|메모리 크기의 할당 크기의 포인터에 대 한, 큰 크기의 포인터 및 단일 또는 다차원 배열에 대 한 포인터를 지정 합니다.|
@@ -112,6 +112,6 @@ ms.locfileid: "50593494"
 |[vi_progid](vi-progid.md)|ProgID의 버전에 관계 없이 폼을 지정합니다.|
 |[wire_marshal](wire-marshal.md)|응용 프로그램별 데이터 형식 대신 전송을 위해 사용 될 데이터 형식을 지정 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [그룹별 특성](attributes-by-group.md)

@@ -1,19 +1,19 @@
 ---
-title: 클래스 특성 (c + + COM)
+title: 클래스 특성 (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - attributes [C++/CLI], class attributes
 ms.assetid: fad04ea1-d8ff-46d4-bb42-2b4500a6ab60
-ms.openlocfilehash: bdc689107eb973b9701e3f1fbe37a10aa6ae8d85
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d0913d09c51734f5255271c0d06e639810e0cb58
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448869"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59025418"
 ---
 # <a name="class-attributes"></a>클래스 특성
 
-다음 특성을 적용 합니다 [클래스](../../cpp/class-cpp.md) c + + 키워드입니다.
+다음 특성을 적용 합니다 [클래스](../../cpp/class-cpp.md) C++ 키워드입니다.
 
 |특성|설명|
 |---------------|-----------------|
@@ -44,7 +44,7 @@ ms.locfileid: "50448869"
 |[noncreatable](noncreatable.md)|자체적으로 인스턴스화할 수 없는 개체를 정의 합니다.|
 |[progid](progid.md)|컨트롤에 ProgID를 정의합니다.|
 |[registration_script](registration-script.md)|지정 된 등록 스크립트를 실행합니다.|
-|[requestedit](requestedit.md)|속성을 지원함을 나타냅니다는 `OnRequestEdit` 알림.|
+|[requestedit](requestedit.md)|속성이 `OnRequestEdit` 알림을 지원함을 나타냅니다.|
 |[source](source-cpp.md)|클래스에 연결 지점에 대 한 컨트롤의 소스 인터페이스를 지정합니다. 메서드나 속성에는 `source` 특성 멤버 개체를 반환 함을 나타냅니다 또는 `VARIANT` 이벤트의 소스입니다.|
 |[support_error_info](support-error-info.md)|대상 개체에 대해 오류 보고를 지원 합니다.|
 |[threading](threading-cpp.md)|컨트롤에 대 한 스레딩 모델을 지정합니다.|
@@ -52,6 +52,6 @@ ms.locfileid: "50448869"
 |[version](version-cpp.md)|클래스의 여러 버전 중에서 특정 버전을 식별합니다.|
 |[vi_progid](vi-progid.md)|ProgID의 버전에 관계 없이 폼을 지정합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [용도별 특성](attributes-by-usage.md)

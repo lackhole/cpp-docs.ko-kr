@@ -1,21 +1,21 @@
 ---
-title: requestedit (c + + COM 특성)
+title: requestedit (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.requestedit
 helpviewer_keywords:
 - requestedit attribute
 ms.assetid: b3c24790-3c4a-4646-8722-03d7b51172ee
-ms.openlocfilehash: 27e6190cbb5908d46150acb758e2b4d5efaff1bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 30b0c5ec807865280c8e538ea701c3d1a5c4ef9c
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611591"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033893"
 ---
 # <a name="requestedit"></a>requestedit
 
-속성을 지원함을 나타냅니다는 `OnRequestEdit` 알림.
+속성이 `OnRequestEdit` 알림을 지원함을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,7 +25,7 @@ ms.locfileid: "50611591"
 
 ## <a name="remarks"></a>설명
 
-합니다 **requestedit** c + + 특성에 동일한 기능을 합니다 [requestedit](/windows/desktop/Midl/requestedit) MIDL 특성입니다.
+**requestedit** C++ 특성에 동일한 기능을 합니다 [requestedit](/windows/desktop/Midl/requestedit) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -44,7 +44,7 @@ ms.locfileid: "50611591"
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>

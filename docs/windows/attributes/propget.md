@@ -1,17 +1,17 @@
 ---
-title: propget (c + + COM 특성)
+title: propget (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.propget
 helpviewer_keywords:
 - propget attribute
 ms.assetid: c9d4a97f-36dd-4b61-8eb0-b1a217598f14
-ms.openlocfilehash: 495c6e974bbe226a77d5685c7d1d8adb29e30830
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f60e8e8fc98ba3b75acefe80812069bfac78e6c
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646002"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59027300"
 ---
 # <a name="propget"></a>propget
 
@@ -25,7 +25,7 @@ ms.locfileid: "50646002"
 
 ## <a name="remarks"></a>설명
 
-합니다 **propget** c + + 특성에 동일한 기능을 합니다 [propget](/windows/desktop/Midl/propget) MIDL 특성입니다.
+**propget** C++ 특성에 동일한 기능을 합니다 [propget](/windows/desktop/Midl/propget) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -44,7 +44,7 @@ ms.locfileid: "50646002"
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>

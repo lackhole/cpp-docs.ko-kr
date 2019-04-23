@@ -1,17 +1,17 @@
 ---
-title: unique (c + + COM 특성)
+title: 고유한 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.unique
 helpviewer_keywords:
 - unique attribute
 ms.assetid: abd7ed14-5ae7-44a8-8333-0058e9c92b2f
-ms.openlocfilehash: 9d049983bb072e073180f1821f04b79e5f5c7444
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5d7a2d60dc295a4390f777a9ff3718f41321ddd
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512837"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038792"
 ---
 # <a name="unique-c"></a>unique(C++)
 
@@ -25,7 +25,7 @@ ms.locfileid: "50512837"
 
 ## <a name="remarks"></a>설명
 
-합니다 **고유** c + + 특성에 동일한 기능을 합니다 [고유](/windows/desktop/Midl/unique) MIDL 특성입니다.
+**고유** C++ 특성에 동일한 기능을 합니다 [고유](/windows/desktop/Midl/unique) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -44,7 +44,7 @@ ms.locfileid: "50512837"
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>

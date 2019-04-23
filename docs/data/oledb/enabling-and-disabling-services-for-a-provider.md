@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE DB services [OLE DB], enabling and disabling
 - service providers [OLE DB]
 ms.assetid: 3deac1bb-f660-407a-92ef-95e139e280c0
-ms.openlocfilehash: 23579b9561356e95d315c0fbe47132208753afa8
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: d91f08accf1a8be69f63d6bbcaa4c620d68c1077
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265128"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033033"
 ---
 # <a name="enabling-and-disabling-services-for-a-provider"></a>공급자 서비스 사용 및 사용 안 함
 
@@ -25,6 +25,6 @@ ms.locfileid: "51265128"
 |서비스 사용 안 함|0x00000000|
 |집계 없음, 모든 서비스 사용 안 함|\<누락 된 키 >|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 서비스 사용 및 사용 안 함](../../data/oledb/enabling-and-disabling-ole-db-services.md)

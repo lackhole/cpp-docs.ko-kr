@@ -9,10 +9,10 @@ helpviewer_keywords:
 - standard resources
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
 ms.openlocfilehash: d29f0ab2254a52e01f2016f64a37ddfce47955bb
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58780316"
 ---
 # <a name="tn023-standard-mfc-resources"></a>TN023: 표준 MFC 리소스
@@ -39,7 +39,7 @@ MFC 응용 프로그램에서 사용할 수 있는 미리 정의 된 리소스�
 
 - Prompts.rc: ID_FILE_NEW에 대 한 "새 문서 만들기"와 같은 미리 정의 된 각 명령에 대해 메뉴 프롬프트 문자열 리소스를 포함합니다.
 
-- Commdlg.rc: 표준 COMMDLG 대화 템플릿이 포함 된 Visual c + + 호환.rc 파일입니다.
+- Commdlg.rc: 시각적 개체 C++ 호환.rc 파일을 표준 COMMDLG 대화 템플릿이 포함 되어 있습니다.
 
 표준 프레임 워크 리소스를 사용 하면 프레임 워크 내부 구현에 대 한 종속 된 AFX 정의 Id 사용 하 여 리소스가 있습니다. 거의 이러한 AFX 정의한 리소스를 변경 해야 합니다. 이렇게 하면이 항목의 뒷부분에 설명 된 절차를 따라야 합니다.
 
@@ -57,7 +57,7 @@ MFC 응용 프로그램에서 사용할 수 있는 미리 정의 된 리소스�
 
 #### <a name="to-use-a-clip-art-binary-resource"></a>클립 아트 이진 리소스를 사용 하려면
 
-1. Visual c + +에서 응용 프로그램의 리소스 파일을 엽니다.
+1. 시각적 개체의 응용 프로그램의 리소스 파일을 열고 C++입니다.
 
 1. Common.rc를 엽니다. 이 파일은 모든 이진 클립 아트 리소스를 포함 합니다. Common.rc 파일 컴파일되므로 몇 시간 정도 걸립니다.
 
@@ -86,7 +86,7 @@ MFC 응용 프로그램에서 사용할 수 있는 미리 정의 된 리소스�
 
 ##### <a name="to-customize-the-contents-of-a-standard-resource-file"></a>표준 리소스 파일의 콘텐츠를 사용자 지정 하려면
 
-1. Visual c + +에서 리소스 파일을 엽니다.
+1. 시각적 개체에 리소스 파일을 열고 C++입니다.
 
 1. Resource Set Includes 명령을 사용 하 여 제거를 `#include` 사용자 지정 하려는 표준.rc 파일에 대 한 합니다. 예를 들어, 인쇄 미리 보기 도구 모음을 사용자 지정 하려면 제거를 `#include "afxprint.rc"` 줄.
 

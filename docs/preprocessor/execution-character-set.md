@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - pragma execution_character_set
 ms.assetid: 32248cbc-7c92-4dca-8442-230c052b53ad
-ms.openlocfilehash: ff6ff550f39dc746bb687d8d3147baa0837a6cff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd31e8e91a1bcbfa6ace9b47fa2b13dd945adb20
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472672"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039928"
 ---
 # <a name="executioncharacterset"></a>execution_character_set
 
@@ -39,7 +39,7 @@ ms.locfileid: "50472672"
 
 기본적으로 Visual Studio 출력에 대 한 소스 코드를 해석 하는 데 사용 하는 소스 문자 집합으로 현재 코드 페이지를 사용 합니다. 파일을 읽으면 파일 코드 페이지를 설정 하지 않으면 또는 파일의 시작 부분에서 바이트 순서 표시 (BOM) 또는 u t F-16 자는 검색 하지 않는 한 Visual Studio는 현재 코드 페이지에 따라 것을 해석 합니다. 자동 검색을 BOM 없이 u t F-8로 인코드된 소스 파일에서 발견 한 경우에 현재 코드 페이지와 u t F-8를 설정할 수 없어, Visual Studio는 현재 코드 페이지를 사용 하 여 인코딩됩니다 가정 합니다. 범위 밖에 있는 경우 지정 된 또는 자동으로 검색 된 코드 페이지 컴파일러 경고 및 오류가 발생할 수는 소스 파일의 문자입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 \_ \_Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [/execution-charset (실행 문자 집합 설정)](../build/reference/execution-charset-set-execution-character-set.md)<br/>

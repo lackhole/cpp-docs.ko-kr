@@ -12,12 +12,12 @@ helpviewer_keywords:
 - pragmas, managed
 - unmanaged pragma
 ms.assetid: f072ddcc-e1ec-408a-8ce1-326ddb60e4a4
-ms.openlocfilehash: 0cc253ad7d0d4529340a13546f931075b0c7dfdc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7fa1e3274b85faa9f3f72f4db5bf586ee5d8e274
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473829"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59022348"
 ---
 # <a name="managed-unmanaged"></a>관리되는, 관리되지 않는
 함수를 관리되거나 관리되지 않는 것으로 컴파일하기 위해 함수 수준 제어를 사용하도록 설정합니다.
@@ -87,6 +87,6 @@ In managed function.
 In unmanaged function.
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

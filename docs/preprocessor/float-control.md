@@ -8,12 +8,12 @@ helpviewer_keywords:
 - float_control pragma
 - pragmas, float_control
 ms.assetid: 4f4ba5cf-3707-413e-927d-5ecdbc0a9a43
-ms.openlocfilehash: 63e27e992778776e186345da07937d1a88844e5d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a7829252cebb726363c67c990a94d08b0d6467a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611018"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59032312"
 ---
 # <a name="floatcontrol"></a>float_control
 
@@ -21,11 +21,11 @@ ms.locfileid: "50611018"
 
 ## <a name="syntax"></a>구문
 
-> **#pragma float_control** [ **(** [ *값* **하십시오** *설정은* [ **, 푸시** ]] | [ **푸시** | **pop** ] **)** ]
+> **#pragma float_control** [ **(** [ *value* **,** *setting* [ **, push** ] ] | [ **push** | **pop** ] **)** ]
 
 ## <a name="options"></a>옵션
 
-*값*하십시오 *설정* [합니다 **푸시**]<br/>
+*value*, *setting* [, **push**]<br/>
 부동 소수점 동작을 지정합니다. *값* 될 수 있습니다 **정확한**를 **엄격한**, 또는 **제외 하 고**입니다. 자세한 내용은 [/fp(부동 소수점 동작 지정)](../build/reference/fp-specify-floating-point-behavior.md)를 참조하세요. *설정을* 중일 수 있습니다 **온** 또는 **해제**합니다.
 
 경우 *값* 는 **엄격한**, 둘 다에 대 한 설정을 **엄격한** 및 **제외 하 고** 붙습니다 *설정* . **제외 하 고** 로 설정할 수 있습니다 **에** 때 **정확한** 또는 **엄격한** 로 설정 됩니다 **에서**합니다.
@@ -106,6 +106,6 @@ int main( ) {
 Pass
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

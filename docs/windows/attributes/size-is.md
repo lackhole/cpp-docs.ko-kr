@@ -1,17 +1,17 @@
 ---
-title: size_is (c + + COM 특성)
+title: size_is (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.size_is
 helpviewer_keywords:
 - size_is attribute
 ms.assetid: 70192d09-f6c5-4d52-b3fe-303f8cb10aa5
-ms.openlocfilehash: 95b0e16e5f5d085e526f45e8e98898474fc5a17f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a7b990a708bafba78c9dc4153315f8b7b20351ba
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449441"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59033232"
 ---
 # <a name="sizeis"></a>size_is
 
@@ -25,12 +25,12 @@ ms.locfileid: "50449441"
 
 ### <a name="parameters"></a>매개 변수
 
-*식*<br/>
+*expression*<br/>
 크기가 지정 된 포인터에 할당 된 메모리의 크기입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **size_is** c + + 특성에 동일한 기능을 합니다 [size_is](/windows/desktop/Midl/size-is) MIDL 특성입니다.
+**size_is** C++ 특성에 동일한 기능을 합니다 [size_is](/windows/desktop/Midl/size-is) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -49,7 +49,7 @@ ms.locfileid: "50449441"
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4486
 ms.assetid: 2c0c59e3-d025-4d97-8da2-fa27df1402fc
 ms.openlocfilehash: 402d5eefde6c2dfd5693e53c27edb00d1ac2e56c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58780212"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779195"
 ---
 # <a name="compiler-warning-level-1-c4486"></a>컴파일러 경고(수준 1) C4486
 

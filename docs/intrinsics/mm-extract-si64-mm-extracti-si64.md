@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _mm_extracti_si64 intrinsic
 - _mm_extract_si64 intrinsic
 ms.assetid: 459fdd72-cc54-4ee5-bbd5-d2c6067a88e7
-ms.openlocfilehash: 21e2b23ca4ac3b98c44ea7152badc5c79f386c09
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e77ca5589ed50a4199921603afec1d9888c6cca5
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630102"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59040214"
 ---
 # <a name="mmextractsi64-mmextractisi64"></a>_mm_extract_si64, _mm_extracti_si64
 
@@ -112,7 +112,7 @@ result3 = 0x30eca86
 
 고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [_mm_insert_si64, _mm_inserti_si64](../intrinsics/mm-insert-si64-mm-inserti-si64.md)<br/>
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

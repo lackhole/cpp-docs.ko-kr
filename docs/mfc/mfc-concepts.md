@@ -4,10 +4,10 @@ ms.date: 1/09/2018
 f1_keywords:
 - Concepts
 ms.openlocfilehash: 8d021350125acda52bb4ecf3919282cb7bbe52b1
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58766510"
 ---
 # <a name="mfc-concepts"></a>MFC 개념
@@ -23,7 +23,7 @@ MFC 라이브러리의 기술 세부 정보를 설명합니다.
 링크를 사용 하 여 제공 `CObject`, MFC에서 대부분의 클래스에 대 한 기본 클래스입니다.
 
 [컬렉션](../mfc/collections.md)<br/>
-생성 하 고 c + + 템플릿에서 생성 되지 않은 컬렉션 클래스를 설명 합니다.
+컬렉션 클래스에서 만들고에서 만들지 설명 C++ 템플릿.
 
 [날짜 및 시간](../atl-mfc-shared/date-and-time.md)<br/>
 날짜 및 시간을 사용 하 여 MFC를 사용 하 여 설명 하는 항목에 대 한 링크를 제공 합니다.

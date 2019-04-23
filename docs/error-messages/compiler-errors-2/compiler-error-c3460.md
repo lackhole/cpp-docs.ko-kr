@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3460
 ms.assetid: adbf8775-10ca-4654-acdf-58dd765351cd
-ms.openlocfilehash: 3a7fe5c6bbb7198f18f5a5cf7cac26add6e6709b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9ffbc5102855574aba668a2c501cd08dbaebe5b8
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676696"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777941"
 ---
 # <a name="compiler-error-c3460"></a>컴파일러 오류 C3460
 
 'type': 사용자 정의 형식만 전달할 수 있습니다.
 
-자세한 내용은 [형식 전달 (C + + /cli CLI)](../../windows/type-forwarding-cpp-cli.md)합니다.
+자세한 내용은 [형식 전달 (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

@@ -6,18 +6,18 @@ helpviewer_keywords:
 - database classes [C++], OLE DB
 - database classes [C++], ATL
 ms.assetid: 219766aa-e18a-405f-9e36-d7a0fdb31b2b
-ms.openlocfilehash: 4304c350ce6a9303a7542809fa85fb0cd2560031
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 2ecde060f10a7c2a056869525f58d0bb4da67963
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522081"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023440"
 ---
 # <a name="atl-database-classes-ole-db-templates"></a>ATL 데이터베이스 클래스(OLE DB 템플릿)
 
 Microsoft OLE DB 데이터를 다양 한 소스 및 형식에 대 한 균일 한 액세스를 제공 하는 COM 인터페이스 집합의 몇 가지 구현을 제공 합니다.  OLE DB는 공식적으로 사용 되지 않습니다. 이 설명서는 레거시 코드를 유지 하는 개발자입니다. 새 응용 프로그램은 SQL 데이터 원본에 연결할 ODBC를 사용 해야 합니다.
 
-OLE DB 템플릿 템플릿은 c + + ATL에서 OLE DB 데이터베이스 기술을 쉽게 여러 가지 자주 사용 되는 OLE DB 인터페이스를 구현 하는 클래스를 제공 하 여 사용할 수 있도록 합니다.
+OLE DB 템플릿은 C++ OLE DB 데이터베이스 기술을 쉽게 여러 가지 자주 사용 되는 OLE DB 인터페이스를 구현 하는 클래스를 제공 하 여 사용할 수 있도록 ATL에서 템플릿.
 
 이 템플릿 라이브러리 포함 두 부분으로 구성이 되어 있습니다.
 
@@ -31,7 +31,7 @@ MFC 라이브러리 클래스를 포함 하는 참고 [COleDBRecordView](../mfc/
 
 자세한 내용은 [OLE DB 프로그래밍](../data/oledb/ole-db-programming.md) 하 고 [OLE DB Programmer's Guide](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 만들기](../data/oledb/creating-an-ole-db-consumer.md)<br/>
 [OLE DB 공급자 만들기](../data/oledb/creating-an-ole-db-provider.md)<br/>

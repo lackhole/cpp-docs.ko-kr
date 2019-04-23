@@ -1,17 +1,17 @@
 ---
-title: pointer_default (c + + COM 특성)
+title: pointer_default (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.pointer_default
 helpviewer_keywords:
 - pointer_default attribute
 ms.assetid: 2d0c7bbc-a1e8-4337-9e54-e304523e2735
-ms.openlocfilehash: 8261d789f50c2750cccce48dac675ef478a70420
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 37bd2b16fb7a7c1c186f59897898e08cc73fffae
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504392"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59022668"
 ---
 # <a name="pointerdefault"></a>pointer_default
 
@@ -30,7 +30,7 @@ ms.locfileid: "50504392"
 
 ## <a name="remarks"></a>설명
 
-합니다 **pointer_default** c + + 특성에 동일한 기능을 합니다 [pointer_default](/windows/desktop/Midl/pointer-default) MIDL 특성입니다.
+**pointer_default** C++ 특성에 동일한 기능을 합니다 [pointer_default](/windows/desktop/Midl/pointer-default) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -49,7 +49,7 @@ ms.locfileid: "50504392"
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [인터페이스 특성](interface-attributes.md)

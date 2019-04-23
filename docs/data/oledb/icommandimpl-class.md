@@ -52,12 +52,12 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: e1f461cc850a2122af7902babfad8f1e14ac3e33
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: d890b62e4e4aabb9f8ca7ebb9d3051c53febd91f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57424849"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026794"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl 클래스
 
@@ -275,7 +275,7 @@ unsigned m_bIsExecuting:1;
 
 합니다 `Execute` 명령 클래스의 메서드이 변수를 설정할 수 있습니다 **true**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -1,20 +1,20 @@
 ---
-title: Typedef, Enum, Union 및 Struct 특성 (c + + COM)
+title: Typedef, Enum, Union 및 Struct 특성 (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - union attributes
 - attributes [C++/CLI], reference topics
 ms.assetid: f8a4fe94-dc02-4aed-bc31-3e500d42f4c7
-ms.openlocfilehash: 289935c3651535b5f935624dc33246fbe83a4ceb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2b56ada13a0c597866d538991ed1e83078924ac9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631064"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59029585"
 ---
 # <a name="typedef-enum-union-and-struct-attributes"></a>Typedef, Enum, Union 및 Struct 특성
 
-다음 특성을 적용 합니다 [typedef](../../cpp/aliases-and-typedefs-cpp.md), [구조체](../../cpp/struct-cpp.md), 및 [열거형](../../cpp/enumerations-cpp.md) c + + 키워드입니다.
+다음 특성을 적용 합니다 [typedef](../../cpp/aliases-and-typedefs-cpp.md), [구조체](../../cpp/struct-cpp.md), 및 [열거형](../../cpp/enumerations-cpp.md) C++ 키워드입니다.
 
 ### <a name="typedef"></a>형식 정의
 
@@ -102,6 +102,6 @@ ms.locfileid: "50631064"
 |[version](version-cpp.md)|클래스의 여러 버전 중에서 특정 버전을 식별합니다.|
 |[vi_progid](vi-progid.md)|ProgID의 버전에 관계 없이 폼을 지정합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [용도별 특성](attributes-by-usage.md)

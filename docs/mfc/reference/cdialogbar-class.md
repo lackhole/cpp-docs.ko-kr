@@ -11,10 +11,10 @@ helpviewer_keywords:
 - CDialogBar [MFC], Create
 ms.assetid: da2f7a30-970c-44e3-87f0-6094bd002cab
 ms.openlocfilehash: af84c5239a9cb3cbddb1ab4f0230e5b1a3373573
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58768304"
 ---
 # <a name="cdialogbar-class"></a>CDialogBar 클래스
@@ -50,7 +50,7 @@ class CDialogBar : public CControlBar
 에 대 한 자세한 `CDialogBar`, 문서를 참조 하세요 [대화 상자 모음](../../mfc/dialog-bars.md) 하 고 [Technical Note 31](../../mfc/tn031-control-bars.md), 컨트롤 막대입니다.
 
 > [!NOTE]
->  현재 릴리스에서 `CDialogBar` 개체는 Windows Forms 컨트롤을 호스팅할 수 없습니다. Visual c + +에서 Windows Forms 컨트롤에 대 한 자세한 내용은 참조 하세요. [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
+>  현재 릴리스에서 `CDialogBar` 개체는 Windows Forms 컨트롤을 호스팅할 수 없습니다. 시각적 개체에 Windows Forms 컨트롤에 대 한 자세한 내용은 C++를 참조 하세요 [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 

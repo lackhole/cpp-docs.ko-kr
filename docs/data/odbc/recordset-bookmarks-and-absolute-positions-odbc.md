@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 책갈피와 절대 위치(ODBC)'
+title: '레코드 집합: 책갈피와 절대 위치 (ODBC)'
 ms.date: 11/04/2016
 f1_keywords:
 - SetAbsolutePosition
@@ -21,16 +21,16 @@ helpviewer_keywords:
 - GetBookmark method
 - SetAbsolutePosition method, bookmarks
 ms.assetid: 189788d6-33c1-41c5-9265-97db2a5d43cc
-ms.openlocfilehash: 826c1c0124eb261c97fff8f1e2fa01c8becb073a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4a223f01b25b4c321ccfb4f4c03c3c5241381ec
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500943"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023791"
 ---
-# <a name="recordset-bookmarks-and-absolute-positions-odbc"></a>레코드 집합: 책갈피와 절대 위치(ODBC)
+# <a name="recordset-bookmarks-and-absolute-positions-odbc"></a>레코드 집합: 책갈피와 절대 위치 (ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 레코드 집합을 탐색할 때 특정 레코드를 반환 하는 방법은 해야 합니다. 책갈피와 절대 위치 레코드의 이러한 두 메서드를 제공합니다.
 
@@ -82,6 +82,6 @@ rs.SetBookmark( varRecordToReturnTo );
 
 레코드 집합 탐색에 대 한 자세한 내용은 참조 하세요. [레코드 집합: 스크롤 (ODBC)](../../data/odbc/recordset-scrolling-odbc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)

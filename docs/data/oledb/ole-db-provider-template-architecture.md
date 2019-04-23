@@ -6,12 +6,12 @@ helpviewer_keywords:
 - architecture [C++], OLE DB Provider
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-ms.openlocfilehash: b6d177d793451b7c5e9c19f6d40add973a627d60
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 65a7e5b8f169d06ca11d8d27ec99ce3db4b63014
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423003"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59028550"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB 공급자 템플릿 구조
 
@@ -55,7 +55,7 @@ OLE DB 공급자 템플릿 행 및 저장소 개체를 구현 하지 않습니�
 
 - [사용자 레코드](../../data/oledb/user-record.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 인터페이스](/previous-versions/windows/desktop/ms709709(v=vs.85))<br/>

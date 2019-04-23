@@ -18,12 +18,12 @@ helpviewer_keywords:
 - _interlockedbittestandset64 intrinsic
 - lock_bts instruction
 ms.assetid: b1b7e334-53ea-48cf-ba60-5fa3ef51a1fc
-ms.openlocfilehash: 2f7dc1cf6501f789d969143bc23469a6ecf7239c
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 3da533b3cf2ab8f396e4ba284cc0bf921a5c80b5
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627217"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023206"
 ---
 # <a name="interlockedbittestandset-intrinsic-functions"></a>_interlockedbittestandset Intrinsic Functions
 
@@ -106,7 +106,7 @@ HLE(Hardware Lock Elision) 명령을 지원하는 Intel 프로세서에서 `_HLE
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3699
 ms.assetid: 47c29afc-ab8b-4238-adfe-788dd6e00b3b
-ms.openlocfilehash: e413e4a08ce22ef109179ff0f98baf32ebba41c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93058d34ca9a17ab175a55a7bc7b953d369e65c5
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525846"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779455"
 ---
 # <a name="compiler-error-c3699"></a>컴파일러 오류 C3699
 
@@ -36,7 +36,7 @@ int main() {
 
 ## <a name="example"></a>예제
 
-Trivial 속성에 대 한 참조 형식일 수 없습니다. 자세한 내용은 [property](../../windows/property-cpp-component-extensions.md) 를 참조하세요. 다음 샘플 C3699를 생성합니다.
+Trivial 속성에 대 한 참조 형식일 수 없습니다. 자세한 내용은 [property](../../extensions/property-cpp-component-extensions.md) 를 참조하세요. 다음 샘플 C3699를 생성합니다.
 
 ```
 // C3699_b.cpp

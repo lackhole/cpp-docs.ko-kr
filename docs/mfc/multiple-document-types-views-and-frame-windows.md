@@ -16,10 +16,10 @@ helpviewer_keywords:
 - splitter windows [MFC], static
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
 ms.openlocfilehash: 154fc67dc35d5e5633c72c27100da9be56c0c68c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779679"
 ---
 # <a name="multiple-document-types-views-and-frame-windows"></a>여러 문서 형식, 뷰 및 프레임 창

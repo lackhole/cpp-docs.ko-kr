@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ODBC classes [C++], MFC database classes
 - MFC [C++], ODBC and
 ms.assetid: b166f82d-6f85-4556-aac8-fb851235d22c
-ms.openlocfilehash: 709608098a0c979cd7816ae4f8012372099ef52d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7692a8128e3dac97c9107e986f6698db76c22c58
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575606"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59025992"
 ---
 # <a name="odbc-and-the-database-classes"></a>ODBC 및 데이터베이스 클래스
 
@@ -23,6 +23,6 @@ MFC ODBC 데이터베이스 클래스는 일반적으로 [CDatabase](../../mfc/r
 
 데이터베이스 클래스는 ODBC 기능을 캡슐화하지만 ODBC API 함수와의 일대일 매핑을 제공하지는 않습니다. 데이터베이스 클래스는 Microsoft Access 및 Microsoft Visual Basic에서 사용하는 데이터 액세스 개체 모델을 따르는 높은 수준의 추상화를 제공합니다. 자세한 내용은 [ODBC 및 MFC](../../data/odbc/odbc-and-mfc.md)를 참조하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC 기본 사항](../../data/odbc/odbc-basics.md)

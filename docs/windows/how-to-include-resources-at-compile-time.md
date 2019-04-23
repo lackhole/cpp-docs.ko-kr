@@ -1,5 +1,5 @@
 ---
-title: '방법: (C + +) 컴파일 타임에 리소스 포함'
+title: '방법: 컴파일 타임에 리소스를 포함 (C++)'
 ms.date: 02/14/2019
 f1_keywords:
 - vs.resvw.resource.including
@@ -23,14 +23,14 @@ helpviewer_keywords:
 - symbols [C++], finding
 - resources [C++], searching for symbols
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
-ms.openlocfilehash: cd2f05b4944e26d8a96b3f96e4e39fda0ad8ee48
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.openlocfilehash: ca24a10f905e61feb2b090ba3966c752db3d4444
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328391"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59041507"
 ---
-# <a name="how-to-include-resources-at-compile-time-c"></a>방법: (C + +) 컴파일 타임에 리소스 포함
+# <a name="how-to-include-resources-at-compile-time-c"></a>방법: 컴파일 타임에 리소스를 포함 (C++)
 
 하지만 모든 리소스는 하나의 리소스 스크립트 (.rc) 파일에 기본적으로 여러 가지 이유가 있습니다 주.rc 파일이 아닌 파일에 리소스를 배치 합니다.
 
@@ -57,7 +57,7 @@ ms.locfileid: "58328391"
 | **컴파일 시간 지시문** | 만들어지고 주 리소스 파일에 리소스에서 개별적으로 편집 되는 리소스 파일을 포함할 수 있습니다 (예: 해당 지시문 조건에 따라), 컴파일 시간 지시문을 포함 하거나 사용자 지정 형식에서 리소스를 포함할 수도 있습니다.<br/><br/>사용할 수도 있습니다는 **컴파일 시간 지시문 상자** 표준 MFC 리소스 파일을 포함 합니다. |
 
 > [!NOTE]
-> 이러한 텍스트 상자에 항목으로 표시.rc 파일에 나타나는 `TEXTINCLUDE 1`, `TEXTINCLUDE 2`, 및 `TEXTINCLUDE 3` 각각. 자세한 내용은 참조 하세요. [TN035: Visual c + +를 사용 하 여 여러 리소스 파일과 헤더 파일을 사용 하 여](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)입니다.
+> 이러한 텍스트 상자에 항목으로 표시.rc 파일에 나타나는 `TEXTINCLUDE 1`, `TEXTINCLUDE 2`, 및 `TEXTINCLUDE 3` 각각. 자세한 내용은 참조 하세요. [TN035: 여러 리소스 파일과 헤더 파일을 사용 하 여 시각적 개체를 사용 하 여 C++ ](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)합니다.
 
 사용 하 여 리소스 파일에 변경 되 면 합니다 **리소스 내용** 대화 상자를 닫은 후 다시 열어야 합니다 *.rc* 파일 변경 내용을 적용 하려면.
 
@@ -95,7 +95,7 @@ ms.locfileid: "58328391"
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [방법: 리소스 만들기](../windows/how-to-create-a-resource-script-file.md)<br/>

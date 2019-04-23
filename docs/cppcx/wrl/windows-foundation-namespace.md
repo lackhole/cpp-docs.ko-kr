@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Foundation namespace
 ms.assetid: 96a6b5e0-ddee-4b21-ae4e-da5feeb945c3
-ms.openlocfilehash: c055718cc618ba6d4d20da227407cc72263c311f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: cd16a888594e928214ef45cbdddb1e0fdac7c82a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58784967"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59030494"
 ---
 # <a name="windowsfoundation-namespace"></a>Windows::Foundation 네임스페이스
 
@@ -40,6 +40,6 @@ namespace Windows::Foundation;
 
 **네임스페이스:** Windows
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows UWP 네임 스페이스](/uwp/api/)

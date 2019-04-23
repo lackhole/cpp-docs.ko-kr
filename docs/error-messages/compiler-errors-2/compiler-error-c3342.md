@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3342
 ms.assetid: 5c6d784f-bebe-4f7e-8615-44ca6f78bfba
 ms.openlocfilehash: 822da2a04446938e49b3190d01c6252585b90ce6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58781785"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776160"
 ---
 # <a name="compiler-error-c3342"></a>컴파일러 오류 C3342
 

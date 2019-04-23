@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - TerminateMap function
 ms.assetid: 1c314a61-da5d-49bb-ac44-c34ee3c23b66
-ms.openlocfilehash: 17d02ea9cade0301798a5d6625f8eb9a568cb2cc
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.openlocfilehash: 2a451bf68bfb543ee5e82a9a48097cac7e8a9821
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58784871"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026649"
 ---
 # <a name="terminatemap-function"></a>TerminateMap 함수
 
@@ -52,6 +52,6 @@ A [모듈](module-class.md)합니다.
 
 **네임스페이스:** Microsoft::WRL::Details
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Microsoft::WRL::Details 네임스페이스](microsoft-wrl-details-namespace.md)

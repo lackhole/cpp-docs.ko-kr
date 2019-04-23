@@ -5,18 +5,18 @@ helpviewer_keywords:
 - recordsets, MFC ODBC
 - ODBC recordsets
 ms.assetid: ebde4180-e3de-474a-a5ab-6135e41763a7
-ms.openlocfilehash: 72e394ae8d8bef72acf62edd81b356b76b1b18c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d6a2b49f518fd9eaacf589e893bc240d1409a4b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567936"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59023895"
 ---
 # <a name="use-mfc-odbc-recordsets"></a>MFC ODBC 레코드 집합 사용
 
 MFC ODBC 레코드 집합을 사용 하는 방법을 설명 합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 ### <a name="general-recordset-tasks"></a>일반적인 레코드 집합 작업
 
@@ -76,6 +76,6 @@ MFC ODBC 레코드 집합을 사용 하는 방법을 설명 합니다.
 
 - [런타임 시 레코드 집합에서 데이터 열 동적 바인딩](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)

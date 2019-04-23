@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 스크롤(ODBC)'
+title: '레코드 집합: 스크롤 (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - recordsets [C++], end of
@@ -11,16 +11,16 @@ helpviewer_keywords:
 - scrolling [C++], recordsets
 - Move method (recordsets)
 ms.assetid: f38d2dcb-1e88-4e41-af25-98b00c276be4
-ms.openlocfilehash: e41b526b86922bafd1d923fa5848a5ef8ed4825e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5df8151664bd7e726087cb5323c1e4622264ad23
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579602"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59040058"
 ---
-# <a name="recordset-scrolling-odbc"></a>레코드 집합: 스크롤(ODBC)
+# <a name="recordset-scrolling-odbc"></a>레코드 집합: 스크롤 (ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용 됩니다.
+이 항목에서는 MFC ODBC 클래스에 적용됩니다.
 
 레코드 집합을 연 후 필요한 값을 표시할 레코드에 액세스할 수 계산을 수행할 보고서를 생성 및 등입니다. 레코드 집합 내에서 레코드를 이동 하면 스크롤입니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "50579602"
 
 ##  <a name="_core_scrolling_from_one_record_to_another"></a> 다른 하나의 레코드 스크롤
 
-클래스 `CRecordset` 제공 된 `Move` 레코드 집합 내에서 스크롤에 대 한 멤버 함수입니다. 이러한 함수는 행 집합에서 현재 레코드를 이동합니다. 대량 행 페치를 구현한 경우는 `Move` 작업 행 집합의 크기에 따라 레코드 집합의 위치를 조정 합니다. 대량 행 페치를 호출 하지 구현 하는 경우는 `Move` 함수는 레코드 집합의 만큼씩 하나의 레코드 때마다 합니다. 대량 행 페치에 대 한 자세한 내용은 참조 하십시오 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+클래스 `CRecordset` 제공 된 `Move` 레코드 집합 내에서 스크롤에 대 한 멤버 함수입니다. 이러한 함수는 행 집합에서 현재 레코드를 이동합니다. 대량 행 페치를 구현한 경우는 `Move` 작업 행 집합의 크기에 따라 레코드 집합의 위치를 조정 합니다. 대량 행 페치를 호출 하지 구현 하는 경우는 `Move` 함수는 레코드 집합의 만큼씩 하나의 레코드 때마다 합니다. 대량 행 페치에 대 한 자세한 내용은 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 > [!NOTE]
 >  레코드 집합을 탐색할 때 삭제 된 레코드 건너뛰지 않을 수 있습니다. 자세한 내용은 참조는 [IsDeleted](../../mfc/reference/crecordset-class.md#isdeleted) 멤버 함수입니다.
@@ -93,7 +93,7 @@ rsCustSet.MoveFirst( );
 
 ##  <a name="_core_when_scrolling_is_supported"></a> 스크롤이 지원 되는
 
-원래 SQL만 정방향 스크롤을 제공 하지만 ODBC 스크롤 기능을 확장 합니다. 스크롤 하는 것에 대 한 지원의 사용 가능한 수준 드라이버의 ODBC API 적합성 수준으로 응용 프로그램이 작동 하는 ODBC 드라이버에 따라 달라 집니다 ODBC 커서 라이브러리를 메모리로 로드 되었는지 여부 및 합니다. 자세한 내용은 [ODBC](../../data/odbc/odbc-basics.md) 하 고 [ODBC: ODBC 커서 라이브러리](../../data/odbc/odbc-the-odbc-cursor-library.md)합니다.
+원래 SQL만 정방향 스크롤을 제공 하지만 ODBC 스크롤 기능을 확장 합니다. 스크롤 하는 것에 대 한 지원의 사용 가능한 수준 드라이버의 ODBC API 적합성 수준으로 응용 프로그램이 작동 하는 ODBC 드라이버에 따라 달라 집니다 ODBC 커서 라이브러리를 메모리로 로드 되었는지 여부 및 합니다. 자세한 내용은 [ODBC](../../data/odbc/odbc-basics.md) 고 [ODBC: ODBC 커서 라이브러리](../../data/odbc/odbc-the-odbc-cursor-library.md)합니다.
 
 > [!TIP]
 >  커서 라이브러리 사용 되는지 여부를 제어할 수 있습니다. 참조 된 *bUseCursorLib* 하 고 *dwOptions* 매개 변수를 [cdatabase:: Open](../../mfc/reference/cdatabase-class.md#open)합니다.
@@ -101,9 +101,9 @@ rsCustSet.MoveFirst( );
 > [!NOTE]
 >  MFC DAO 클래스와 달리 MFC ODBC 클래스의 집합을 하지 않습니다 `Find` 지정 된 조건을 충족 하는 다음 (또는 이전) 레코드 찾기에 대해 작동 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [CRecordset::CanScroll](../../mfc/reference/crecordset-class.md#canscroll)<br/>
 [CRecordset::CheckRowsetError](../../mfc/reference/crecordset-class.md#checkrowseterror)<br/>
-[레코드 집합: 레코드 필터링(ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)
+[레코드 집합: 레코드 필터링 (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)

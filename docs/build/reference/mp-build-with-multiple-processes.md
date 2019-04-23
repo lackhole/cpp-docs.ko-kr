@@ -1,6 +1,6 @@
 ---
 title: /MP(여러 프로세스로 빌드)
-ms.date: 02/22/2018
+ms.date: 04/08/2019
 f1_keywords:
 - VC.Project.VCCLCompilerTool.MultiProcessorCompilation
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /MP compiler option (C++)
 - MP compiler option (C++)
 - cl.exe compiler, multi-process build
-ms.openlocfilehash: 8a66f6f6f1f4ce77e33df992b915be9ca5dcce70
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: e005b0314e87270e81dbb155dfdaa67be067cd3f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808458"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59424146"
 ---
 # <a name="mp-build-with-multiple-processes"></a>/MP(여러 프로세스로 빌드)
 
@@ -51,7 +51,7 @@ ms.locfileid: "57808458"
 |--------------------------------|-----------------|
 |[#import](../../preprocessor/hash-import-directive-cpp.md) 전처리기 지시문|형식 라이브러리의 형식을 C++ 클래스로 변환한 다음 헤더 파일에 이러한 클래스를 기록합니다.|
 |[/E](e-preprocess-to-stdout.md), [/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|전처리기 출력을 표준 출력에 복사합니다(**stdout**).|
-|[/Gm](gm-enable-minimal-rebuild.md)|증분 다시 빌드를 사용합니다.|
+|[/Gm](gm-enable-minimal-rebuild.md)|더 이상 사용되지 않습니다. 증분 다시 빌드를 사용합니다.|
 |[/showIncludes](showincludes-list-include-files.md)|포함 파일의 목록을 표준 오류에 기록합니다(**stderr**).|
 |[/Yc](yc-create-precompiled-header-file.md)|미리 컴파일된 헤더 파일을 만듭니다.|
 
@@ -124,10 +124,6 @@ MSBuild를 사용할지 여부를 결정 하기 위한 지침은 또는 **/MP** 
 - 프로젝트 수는 적고 각 프로젝트의 파일 수는 많은 경우 **/MP** 옵션을 사용합니다.
 
 - 프로젝트와 프로젝트당 파일의 수가 균형을 이루는 모두 MSBuild를 사용 하 고 **/MP**합니다. 처음에는 **/maxcpucount** 옵션을 빌드할 프로젝트의 수로 설정하고, **/MP** 옵션을 컴퓨터의 프로세서 수로 설정합니다. 성능을 측정하고 최상의 결과를 얻을 수 있도록 설정을 조정합니다. 총 빌드 시간에 만족할 때까지 위 과정을 반복합니다.
-
-#### <a name="the-gm-compiler-option"></a>/Gm 컴파일러 옵션
-
-기본적으로 프로젝트 빌드는 디버그 빌드에 대해서는 **/Gm** 컴파일러 옵션(증분 빌드)을 사용하고 릴리스 빌드에 대해서는 사용하지 않습니다. 따라서 **/MP** 컴파일러 옵션은 기본 **/Gm** 컴파일러 옵션과 충돌하기 때문에 디버그 빌드에서 자동으로 사용되지 않습니다.
 
 ## <a name="see-also"></a>참고자료
 

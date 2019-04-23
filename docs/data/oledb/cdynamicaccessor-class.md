@@ -127,12 +127,12 @@ helpviewer_keywords:
 - SetStatus method
 - SetValue method
 ms.assetid: 374b13b7-1f09-457d-9e6b-df260ff4d178
-ms.openlocfilehash: a9e862e9df785a0986d9d75759de85c0c1448912
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 19b8d0c86044e04cc60fd7aab89ec828c46f5fb9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423458"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59040970"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor 클래스
 
@@ -576,8 +576,7 @@ BLOB 데이터를 처리할 방법을 지정 합니다. 다음 값을 걸릴 수
 
 ### <a name="remarks"></a>설명
 
-
-  `SetBlobHandling`를 호출하기 전에 `Open`를 호출해야 합니다.
+`SetBlobHandling`를 호출하기 전에 `Open`를 호출해야 합니다.
 
 Constructor 메서드 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) DBBLOBHANDLING_DEFAULT 값을 처리 하는 BLOB을 설정 합니다.
 
@@ -709,7 +708,7 @@ bool SetValue(
 
 다른 모든 데이터 형식에 대 한 템플릿 버전을 사용 하기 더욱 간편해졌으며은 `GetValue`합니다. 템플릿 버전을 반환 **true** 성공 하거나 **false** 실패 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

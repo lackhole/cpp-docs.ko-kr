@@ -52,12 +52,12 @@ helpviewer_keywords:
 - IsUpdateAllowed method
 - m_mapCachedData
 ms.assetid: f85af76b-ab6f-4f8b-8f4a-337c9679d68f
-ms.openlocfilehash: 0ee4fc505bb3e22046f1b0c197f14326e5a50d7d
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 6c20698e2219cf7c3e1d840e23b5f8113947ae9f
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423900"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037720"
 ---
 # <a name="irowsetupdateimpl-class"></a>IRowsetUpdateImpl 클래스
 
@@ -332,7 +332,7 @@ m_mapCachedData;
 *pData*<br/>
 데이터를 캐시에 대 한 포인터입니다. 형식의 데이터가 *저장소* (사용자 레코드 클래스). 참조 된 *저장소* 템플릿 인수 [IRowsetUpdateImpl 클래스](../../data/oledb/irowsetupdateimpl-class.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

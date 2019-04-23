@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - _writecr4 intrinsic
 ms.assetid: ab7651d7-b86b-4be7-a0a0-7263099c70fc
-ms.openlocfilehash: 37bdde20b6d0fe1079969677250ce59acedf51ec
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: bbeb282e0e2c386d95009bef277546a260057334
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328645"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59032468"
 ---
 # <a name="writecr4"></a>__writecr4
 
@@ -46,6 +46,6 @@ void writecr4(
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

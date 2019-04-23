@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - D9040
 ms.assetid: 415e7f04-c1bd-4ac1-924a-03efa4645140
-ms.openlocfilehash: 8daec0225301ef96b8e394af616f14bc39772adb
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 73640eef0cc7dc8fa625ac9cef2e39fab0c22018
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814334"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59035019"
 ---
 # <a name="command-line-warning-d9040"></a>명령줄 경고 D9040
 
@@ -19,7 +19,7 @@ ms.locfileid: "57814334"
 
 합니다 **/analyze** 명령줄 옵션이 Visual Studio의 모든 버전에서 제공 되지 않습니다. 이 경고를 해결하려면, 지원되는 Visual Studio 버전으로 전환하거나 명령줄 옵션을 제거합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [명령줄 오류(D8000 ~ D9999)](../../error-messages/tool-errors/command-line-errors-d8000-through-d9999.md)<br/>
 [MSVC 컴파일러 옵션](../../build/reference/compiler-options.md)

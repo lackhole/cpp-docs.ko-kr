@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4972
 ms.assetid: d18e8e65-b2ef-4d75-a207-fbd0c17c9060
 ms.openlocfilehash: 7c58258298fb91d04014e719732135a1f33f13b6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58777079"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777902"
 ---
 # <a name="compiler-warning-c4972"></a>컴파일러 경고 C4972
 

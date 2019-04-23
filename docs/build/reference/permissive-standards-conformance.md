@@ -1,6 +1,6 @@
 ---
 title: / permissive-(표준 준수)
-ms.date: 06/21/2018
+ms.date: 03/08/2019
 f1_keywords:
 - /permissive
 - VC.Project.VCCLCompilerTool.ConformanceMode
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Standards conformance compiler options
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 5590996c7598016365bb122977084835830f95ab
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 05089ef4f0a516f932d82f13be979da572701ae2
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820795"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59424133"
 ---
 # <a name="permissive--standards-conformance"></a>/ permissive-(표준 준수)
 
@@ -35,15 +35,15 @@ ms.locfileid: "57820795"
 
 합니다 **/ permissive-** 옵션은 소프트웨어 개발 키트 (SDK) 또는 Windows Driver Kit (WDK), Windows Fall Creators SDK (10.0.16299.0)부터 같은 최신 Windows 키트, 헤더 파일의 거의 모든 호환입니다. 이전 버전의 SDK에서 컴파일하는 데 실패할 수 있습니다 **/ permissive-** 다양 한 소스 코드 표준을 따르도록 합니다. 컴파일러 및 다른 릴리스 타임 라인의 Sdk 출시 하므로 몇 가지 나머지 문제가 있습니다. 특정 헤더 파일 문제를 참조 하세요 [Windows 헤더 문제](#windows-header-issues) 아래.
 
-**생성-** 옵션 집합을 [/zc: strictstrings](zc-conformance.md) 및 [/zc: rvaluecast](zc-conformance.md) 옵션 준수 동작을 합니다. 비준수 동작 기본값이 됩니다. 특정 전달할 수 있습니다 **/Zc** 한 후 옵션 **/ permissive-** 이 동작을 재정의 하려면 명령줄에서.
+**관대 한 /-** 옵션 집합을 [/zc: referencebinding](zc-referencebinding-enforce-reference-binding-rules.md), [/zc: strictstrings](zc-strictstrings-disable-string-literal-type-conversion.md), 및 [/zc: rvaluecast](zc-rvaluecast-enforce-type-conversion-rules.md) 준수 하는 옵션 동작입니다. 이러한 옵션을 기본값으로 비준수 동작 합니다. 특정 전달할 수 있습니다 **/Zc** 한 후 옵션 **/ permissive-** 이 동작을 재정의 하려면 명령줄에서.
 
-버전의 Visual Studio 2017 버전 15.3에서에서 컴파일러 시작 합니다 **생성-** 옵션 집합을 [/zc: ternary](zc-ternary.md) 옵션입니다. 또한 컴파일러에서는 2 단계 이름 조회에 대 한 요구 사항을 자세히 구현합니다. 경우는 **관대 한 /-** 옵션을 설정 하면 컴파일러는 템플릿에 사용 되는 종속 및 종속 되지 않는 이름을 식별 함수 및 클래스 템플릿 정의 구문 분석 합니다. 이 릴리스에서 이름 종속성 분석만 수행 됩니다.
+버전의 Visual Studio 2017 버전 15.3에서에서 컴파일러 시작 합니다 **생성-** 옵션 집합을 [/zc: ternary](zc-ternary.md) 옵션입니다. 또한 컴파일러에서는 2 단계 이름 조회에 대 한 요구 사항을 자세히 구현합니다. 경우는 **관대 한 /-** 옵션을 설정 하면 컴파일러는 함수 및 클래스 템플릿 정의 구문 분석 하 고 템플릿을 사용 하는 종속 및 종속 되지 않는 이름을 식별 합니다. 이 릴리스에서 이름 종속성 분석만 수행 됩니다.
 
 환경별 확장 및 구현에 따라 남겨 두고 표준 언어 영역 받지 **/ permissive-** 합니다. 예를 들어 Microsoft 전용 `__declspec`, 호출 규칙 및 구조적된 예외 처리 키워드 및 컴파일러 별 pragma 지시문 또는 특성의 컴파일러로 플래그가 지정 되지 않습니다 **/ permissive-** 모드입니다.
 
-**/ permissive-** 옵션은 어떤 언어 구문이 됩니다 비준수를 확인 하려면 현재 컴파일러 버전의 규칙 지원을 사용 합니다. 옵션 c + + 표준의 특정 버전으로 코드를 준수 하는지 확인 하지 않습니다. 최신 초안 표준에 대 한 모든 구현 된 컴파일러 지원을 사용 하려면 사용 합니다 [/std:latest](std-specify-language-standard-version.md) 옵션입니다. 현재 구현 된 c++17 표준에 컴파일러 지원을 제한 하려면 합니다 [/std: c + + 17](std-specify-language-standard-version.md) 옵션입니다. 제한 된 c++14 표준와 비슷하도록 컴파일러 지원을 사용 합니다 [/std: c + + 14](std-specify-language-standard-version.md) 옵션을 기본값인 합니다.
+**/ permissive-** 옵션은 어떤 언어 구문이 됩니다 비준수를 확인 하려면 현재 컴파일러 버전의 규칙 지원을 사용 합니다. 옵션은 코드의 특정 버전을 준수 하는지 확인 하지 않습니다는 C++ 표준입니다. 최신 초안 표준에 대 한 모든 구현 된 컴파일러 지원을 사용 하려면 사용 합니다 [/std:latest](std-specify-language-standard-version.md) 옵션입니다. 현재 구현 된 c++17 표준에 컴파일러 지원을 제한 하려면 합니다 [/std: c + + 17](std-specify-language-standard-version.md) 옵션입니다. 제한 된 c++14 표준와 비슷하도록 컴파일러 지원을 사용 합니다 [/std: c + + 14](std-specify-language-standard-version.md) 옵션을 기본값인 합니다.
 
-모든 c++11, c++14 또는 C + + 17 표준을 준수 하지 코드는 Visual Studio 2017의 MSVC 컴파일러에 의해 지원 됩니다. Visual Studio의 버전에 따라 합니다 **/ permissive-** 옵션에는 2 단계 이름 조회의 일부 측면에 대 한, 비 const 참조를 임시 바인딩, 직접 초기화로 복사 초기화를 처리 하는 방법, 허용 문제를 검색할 수 없는 경우 여러 개의 사용자 정의 변환을 초기화 또는 대체 토큰에서 논리 연산자에 대 한 및 기타 지원 되지 않는 규칙 영역입니다. Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstandard Behavior](../../cpp/nonstandard-behavior.md)을 참조하세요. 최대한 활용 가져오려고 **관대 한 /-**, Visual Studio 최신 버전으로 업데이트 합니다.
+모든 c++11, c++14 또는 C + + 17 표준을 준수 하지 코드는 모든 버전의 Visual Studio 2017의 MSVC 컴파일러에 의해 지원 됩니다. Visual Studio의 버전에 따라 합니다 **/ permissive-** 옵션에는 2 단계 이름 조회의 일부 측면에 대 한, 비 const 참조를 임시 바인딩, 직접 초기화로 복사 초기화를 처리 하는 방법, 허용 문제를 검색할 수 없는 경우 여러 개의 사용자 정의 변환을 초기화 또는 대체 토큰에서 논리 연산자에 대 한 및 기타 지원 되지 않는 규칙 영역입니다. Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstandard Behavior](../../cpp/nonstandard-behavior.md)을 참조하세요. 최대한 활용 가져오려고 **관대 한 /-**, Visual Studio 최신 버전으로 업데이트 합니다.
 
 ### <a name="how-to-fix-your-code"></a>코드를 수정 하는 방법
 
@@ -56,7 +56,7 @@ void func(int default); // Error C2321: 'default' is a keyword, and
                         // cannot be used in this context
 ```
 
-#### <a name="lookup-members-in-dependent-base"></a>종속 자료에 대 한 조회 멤버
+#### <a name="look-up-members-in-dependent-base"></a>종속 된 기본 멤버 조회
 
 ```cpp
 template <typename T>
@@ -237,7 +237,7 @@ class ATL_NO_VTABLE CFooImpl : public ICustom,
 
 버전의 Visual Studio 2017 버전 15.3 되기 전에 컴파일러에서 컴파일러는 조건부 연산자 (또는 삼항 연산자)에 대 한 인수를 수락 `?:` 표준 모호한 간주 합니다. **/ permissive-** 모드에서는 이제 컴파일러가 이전 버전에서 진단 없이 컴파일되는 경우에서 하나 이상의 진단 합니다.
 
-이러한 변경으로 인해 발생할 수 있는 공용 오류는 다음과 같습니다.
+이러한 변경으로 인해 발생할 수 있는 일반적인 오류는 다음과 같습니다.
 
 - 오류 C2593: 'operator?' 모호합니다.
 
@@ -247,7 +247,7 @@ class ATL_NO_VTABLE CFooImpl : public ICustom,
 
 - 오류 C2446: ':': 'B'에서 'A'로 변환 되지 않았습니다
 
-이 문제를 일으킬 수 있는 일반적인 코드 패턴은 일부 클래스 C 형식은 T 형식 T 다른 형식에서 비 명시적 생성자 및 비 명시적 변환 연산자를 모두 제공 하는 경우 이 경우 모두 3의 형식으로 변환 하는 두 번째 인수의 두 번째 형식의 세 번째 인수 변환와 유효한 변환을 표준에 따라 모호한입니다.
+이 문제를 일으킬 수 있는 일반적인 코드 패턴은 일부 클래스 C 형식은 T 형식 T 다른 형식에서 비 명시적 생성자 및 비 명시적 변환 연산자를 모두 제공 하는 경우 이 경우 세 번째 인수의 형식으로 변환 하는 두 번째 인수가 두 번째 인수의 형식으로 변환 하는 세 번째 인수의 모두 유효한 변환 합니다. 둘 다 유효 하므로 표준에 따라 모호 합니다.
 
 ```cpp
 // Example 1: class that provides conversion to and initialization from some type T
@@ -313,7 +313,7 @@ const char (&z)[2] = count > 3 ? "A" : "B"; // const char* without /Zc:ternary
 
 #### <a name="two-phase-name-look-up"></a>2 단계 이름 조회
 
-경우는 **/ permissive-** 옵션을 설정 하면 컴파일러가 식별 종속 및 종속 되지 않는 이름의 2 단계 이름 조회에 대 한 필요에 따라 템플릿에 사용 되는 함수 및 클래스 템플릿 정의 구문 분석 합니다. Visual Studio 2017 버전 15.3에서에서 이름 종속성 분석이 수행 됩니다. 특히 템플릿 정의의 컨텍스트에서 선언 되지 않은 종속 되지 않는 이름을 하면 ISO c + + 표준에서 필요에 따라 진단 메시지가 표시 합니다. Visual Studio 2017 버전 15.7에서에서 인수 종속 조회 정의 컨텍스트에서 필요한 종속 되지 않는 이름의 바인딩도 수행 됩니다.
+경우는 **/ permissive-** 옵션을 설정 하면 컴파일러가 식별 종속 및 종속 되지 않는 이름의 2 단계 이름 조회에 대 한 필요에 따라 템플릿에 사용 되는 함수 및 클래스 템플릿 정의 구문 분석 합니다. Visual Studio 2017 버전 15.3에서에서 이름 종속성 분석이 수행 됩니다. 특히 템플릿 정의의 컨텍스트에서 선언 되지 않은 종속 되지 않는 이름을 하면 진단 메시지가 표시 된 ISO에서 필요에 따라 C++ 표준입니다. Visual Studio 2017 버전 15.7에서에서 바인딩은 정의 컨텍스트에서 인수 종속 조회를 필요로 하는 종속 되지 않는 이름의 수행 됩니다.
 
 ```cpp
 // dependent base
@@ -446,7 +446,7 @@ Visual Studio 2017 버전 15.5 이상 버전에서이 절차를 따르십시오.
 
 1. 프로젝트를 엽니다 **속성 페이지** 대화 상자.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **언어** 속성 페이지.
+1. 선택 된 **구성 속성** > **C /C++** > **언어** 속성 페이지.
 
 1. 변경 된 **준수 모드** 속성 값을 **예 (관대 한 /-)**. 선택 **확인** 하거나 **적용** 변경 내용을 저장 합니다.
 
@@ -454,7 +454,7 @@ Visual Studio 2017 버전 15.5 이전 버전에서는이 절차를 따르십시�
 
 1. 프로젝트를 엽니다 **속성 페이지** 대화 상자.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. 입력 합니다 **관대 한 /-** 컴파일러 옵션을 **추가 옵션** 상자. 선택 **확인** 하거나 **적용** 변경 내용을 저장 합니다.
 

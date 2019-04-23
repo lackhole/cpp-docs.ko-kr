@@ -14,12 +14,12 @@ helpviewer_keywords:
 - ODBC recordsets [C++], documents and views
 - ODBC [C++], forms
 ms.assetid: 83979974-fc63-46ac-b162-e8403a572e2c
-ms.openlocfilehash: f8bb3be7cdc253f53b50898cfc3ee840e70b2d68
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 78765d17b52889123f13c492699230834decba66
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849748"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59026294"
 ---
 # <a name="mfc-using-database-classes-with-documents-and-views"></a>MFC: 문서 및 뷰를 이용한 데이터베이스 클래스 사용
 
@@ -71,6 +71,6 @@ ms.locfileid: "55849748"
 
 문서 및 뷰를 전혀 사용 하지 않을 수도 있습니다. 이 경우 참조 [MFC: 문서 및 뷰 하지 않는 데이터베이스 클래스를 사용 하 여](../data/mfc-using-database-classes-without-documents-and-views.md)입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 데이터베이스 클래스](../data/mfc-database-classes-odbc-and-dao.md)

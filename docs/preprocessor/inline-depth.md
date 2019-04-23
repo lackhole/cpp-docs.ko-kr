@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, inline_depth
 - inline_depth pragma
 ms.assetid: 2bba60fe-43ea-4d09-90f7-aafaba3bad07
-ms.openlocfilehash: b08578406fab4fe3a025d502f71cfd90f8dca75b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 18d772c8a9f6218ed3afaa385f214445bd0fe8e6
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471368"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59039022"
 ---
 # <a name="inlinedepth"></a>inline_depth
 인라인 추론 검색 수준을, 지정 된 수준 (의 호출 그래프) 보다 큰 경우 함수가 인라인 될가 되도록 *n*합니다.
@@ -41,7 +41,7 @@ ms.locfileid: "50471368"
 > [!NOTE]
 > 재귀 함수는 최대 16 깊이의 호출까지 인라인을 대체할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [inline_recursion](../preprocessor/inline-recursion.md)

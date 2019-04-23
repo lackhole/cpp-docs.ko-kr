@@ -1,17 +1,17 @@
 ---
-title: 스레딩 (c + + COM 특성)
+title: 스레딩 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.threading
 helpviewer_keywords:
 - threading attribute
 ms.assetid: 9b558cd6-fbf0-4602-aed5-31c068550ce3
-ms.openlocfilehash: 0feb258941993ff9776bb9f94f61a556d7d4caec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cdebf06a62ebbd1d8648b9777fe200bc7a373261
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449844"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59038280"
 ---
 # <a name="threading-c"></a>threading(C++)
 
@@ -42,7 +42,7 @@ COM 개체에 대 한 스레딩 모델을 지정합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **스레딩** c + + 특성 생성된 된.idl 파일에서 표시 되지 않지만 COM 개체의 구현에서 사용 됩니다.
+합니다 **스레딩** C++ 특성 생성된 된.idl 파일에서 표시 되지 않지만 COM 개체의 구현에서 사용 됩니다.
 
 ATL 프로젝트의 경우는 [coclass](coclass.md) 특성이 있는에서 지정한 스레딩 모델 *모델* 템플릿 매개 변수로 전달 되는 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) 클래스 에 의해 삽입 된는 `coclass` 특성입니다.
 
@@ -58,17 +58,17 @@ ATL 프로젝트의 경우는 [coclass](coclass.md) 특성이 있는에서 지�
 
 |||
 |-|-|
-|**적용 대상**|**클래스**, **구조체**|
+|**적용 대상**|**class**, **struct**|
 |**반복 가능**|아니요|
 |**필수 특성**|**coclass**|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 특성](com-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>
-[이전 코드를 위한 다중 스레드 지원(Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md)<br/>
+[레거시 코드에서의 다중 스레드 지원(Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md)<br/>
 [중립 아파트](/windows/desktop/cossdk/neutral-apartments)

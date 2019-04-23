@@ -1,17 +1,17 @@
 ---
-title: bindable (c + + COM 특성)
+title: 바인딩 가능한 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.bindable
 helpviewer_keywords:
 - bindable attribute
 ms.assetid: a2360f92-927b-4af8-98cc-6eca7f4ec954
-ms.openlocfilehash: 08ecd3e242d1e3601f7a5a3ea54c51a679dca97a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 07f446b946d6703c4a8b9ae59ae0edd8172c6879
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664154"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59037239"
 ---
 # <a name="bindable"></a>bindable
 
@@ -25,7 +25,7 @@ ms.locfileid: "50664154"
 
 ## <a name="remarks"></a>설명
 
-**바인딩할 수 있는** c + + 특성에 동일한 기능을 합니다 [바인딩할 수 있는](/windows/desktop/Midl/bindable) MIDL 특성입니다. 사용 하 여 정의 된 속성에 사용할 수 있습니다 합니다 [propget](propget.md)를 [propput](propput.md), 또는 [propputref](propputref.md) 특성 또는 정의할 수도 있습니다 수동으로 바인딩할 수 있는 메서드.
+**바인딩할 수 있는** C++ 특성이 동일한 기능을 합니다 [바인딩 가능한](/windows/desktop/Midl/bindable) MIDL 특성. 사용 하 여 정의 된 속성에 사용할 수 있습니다 합니다 [propget](propget.md)를 [propput](propput.md), 또는 [propputref](propputref.md) 특성 또는 정의할 수도 있습니다 수동으로 바인딩할 수 있는 메서드.
 
 MFC 샘플은 다음의 사용을 보여 **바인딩 가능한**:
 
@@ -33,7 +33,7 @@ MFC 샘플은 다음의 사용을 보여 **바인딩 가능한**:
 
 - [CIRC 샘플: ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
-- [도구 설명 및 도움말을 사용 하 여 TESTHELP 샘플: ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
+- [TESTHELP 샘플: 도구 설명 및 도움말을 사용 하 여 ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
 ## <a name="example"></a>예제
 
@@ -71,7 +71,7 @@ __interface IPropDemo : IDispatch {
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDL 특성](idl-attributes.md)<br/>
 [메서드 특성](method-attributes.md)<br/>
