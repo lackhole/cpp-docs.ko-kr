@@ -19,10 +19,10 @@ helpviewer_keywords:
 - public members [C++]
 ms.assetid: 46b6ff4a-e441-4022-8892-78e69422f230
 ms.openlocfilehash: a17910e0288b81723aa837ba9204bb40713d5d49
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58770813"
 ---
 # <a name="reflection-ccli"></a>리플렉션(C++/CLI)
@@ -34,7 +34,7 @@ ms.locfileid: "58770813"
 리플렉션 기능에 액세스 하는 가장 일반적인 방법은 방법은 <xref:System.Object.GetType%2A> 메서드. 이 메서드는 제공한 <xref:System.Object?displayProperty=nameWithType>, 가비지 수집 된 모든 클래스는 파생에서.
 
 > [!NOTE]
-> Visual c + + 컴파일러를 사용 하 여 빌드한.exe에서 리플렉션은.exe는 기반으로 하는 경우에 허용 됩니다는 **/clr: pure** 또는 **/clr: safe** 컴파일러 옵션입니다. **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않는 및 Visual Studio 2017에서 사용할 수 없습니다. 참조 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 자세한 내용은 합니다.
+> 시각적 개체를 사용 하 여 빌드한.exe에서 리플렉션 C++ 컴파일러는.exe는 기반으로 하는 경우에 허용 됩니다는 **/clr: pure** 또는 **/clr: safe** 컴파일러 옵션. **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않는 및 Visual Studio 2017에서 사용할 수 없습니다. 참조 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 자세한 내용은 합니다.
 
 자세한 내용은 <xref:System.Reflection>을 참조하세요.
 
@@ -181,7 +181,7 @@ public:
 
 리플렉션 시스템 어셈블리의 배열을 성공적으로 로드 되 면 **형식** 사용 하 여 개체 검색은 <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> 함수입니다. 각 배열 요소 하나만 클래스 정의이 예제의 경우 되지만 다른 형식에 대 한 정보를 포함 합니다. 루프를 사용 하 여 각 **형식** 사용 하 여 형식 멤버에 대 한 쿼리는이 배열에는 **Type::GetMembers** 함수입니다. 이 함수는 배열을 반환 **MethodInfo** 개체, 멤버 함수, 데이터 멤버 또는 형식의 속성에에서 대 한 정보가 포함 된 각 개체입니다.
 
-에 정의 된 메서드 목록을 함수를 명시적으로 포함 하는 참고 **TestClass** 함수에서 암시적으로 상속 합니다 **system:: object** 클래스입니다. .NET에서 대신 Visual c + + 구문에서 설명 하 고의 일환으로, get/set 함수에서 액세스 하는 기본 데이터 멤버와 속성이 표시 됩니다. Get/set 함수로 정규 메서드로이 목록에 나타납니다. 리플렉션 Visual c + + 컴파일러 아니라에서 공용 언어 런타임을 통해 지원 됩니다.
+에 정의 된 메서드 목록을 함수를 명시적으로 포함 하는 참고 **TestClass** 함수에서 암시적으로 상속 합니다 **system:: object** 클래스입니다. .NET 대신 시각적 개체에서 설명 하 고의 일환으로 C++ get/set 함수에서 액세스 하는 기본 데이터 멤버와 구문을 속성이 나타납니다. Get/set 함수로 정규 메서드로이 목록에 나타납니다. 시각적 개체가 아닌 공용 언어 런타임을 통해 리플렉션은 지원 됩니다 C++ 컴파일러.
 
 정의 된 어셈블리를 검사 하려면이 코드를 사용 하지만.NET 어셈블리를 검사 하도이 코드를 사용할 수 있습니다. 예를 들어 TestAssembly에는 mscorlib에 변경한 경우 모든 형식과 mscorlib.dll에 정의 된 메서드 목록이 표시 됩니다.
 

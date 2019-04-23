@@ -1,5 +1,5 @@
 ---
-title: 리소스 식별자 (기호) (c + +)
+title: 리소스 식별자 (기호) (C++)
 ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.symbol.identifiers
@@ -11,13 +11,13 @@ helpviewer_keywords:
 - resource editors [C++], resource symbols
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
 ms.openlocfilehash: 0b19ff0d1c709616868d47c172ff4cf8c6931b82
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036051"
 ---
-# <a name="resource-identifiers-symbols-c"></a>리소스 식별자 (기호) (c + +)
+# <a name="resource-identifiers-symbols-c"></a>리소스 식별자 (기호) (C++)
 
 기호는 리소스 식별자 (ID)의 두 부분으로 구성 된 예를 들어 매핑된 기호 값 (정수) 기호 이름 (문자열):
 

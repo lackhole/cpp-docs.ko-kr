@@ -1,5 +1,5 @@
 ---
-title: unique (c + + COM 특성)
+title: 고유한 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.unique
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - unique attribute
 ms.assetid: abd7ed14-5ae7-44a8-8333-0058e9c92b2f
 ms.openlocfilehash: c5d7a2d60dc295a4390f777a9ff3718f41321ddd
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038792"
 ---
 # <a name="unique-c"></a>unique(C++)
@@ -25,7 +25,7 @@ ms.locfileid: "59038792"
 
 ## <a name="remarks"></a>설명
 
-합니다 **고유** c + + 특성에 동일한 기능을 합니다 [고유](/windows/desktop/Midl/unique) MIDL 특성입니다.
+**고유** C++ 특성에 동일한 기능을 합니다 [고유](/windows/desktop/Midl/unique) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

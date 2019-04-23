@@ -5,10 +5,10 @@ helpviewer_keywords:
 - friend assemblies, Visual C++
 ms.assetid: 8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd
 ms.openlocfilehash: e469556a773ffcdbf50e53d94022c0b6b7abf869
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781044"
 ---
 # <a name="friend-assemblies-c"></a>Friend 어셈블리(C++)
@@ -47,7 +47,7 @@ ms.locfileid: "58781044"
 
 어셈블리의 모든 형식에 대 한 액세스를 명시적으로 부여 되어야 합니다.  예를 들어, 어셈블리 C에 없는 모든 형식에 대 한 액세스는 어셈블리의 어셈블리 C 참조 어셈블리 B 및 어셈블리 B 1. 어셈블리에 대 한 모든 형식에 액세스 하는 경우
 
-서명 하는 방법에 대 한 자세한-즉, 강력한 이름을 제공 하는 방법-Visual c + + 컴파일러를 사용 하 여 기본 제공 되는 어셈블리 참조 [강력한 이름 어셈블리 (어셈블리 서명) (C + + CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)합니다.
+서명 하는 방법에 대 한 자세한-즉, 강력한 이름을 제공 하는 방법-시각적 개체를 사용 하 여 기본 제공 되는 어셈블리 C++ 컴파일러 참조 [강력한 이름 어셈블리 (어셈블리 서명) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)합니다.
 
 Friend 어셈블리 기능을 사용 하는 대신, 사용할 수 있습니다 <xref:System.Security.Permissions.StrongNameIdentityPermission> 를 개별 형식에 대 한 액세스를 제한 합니다.
 

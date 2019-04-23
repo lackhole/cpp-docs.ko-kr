@@ -7,11 +7,11 @@ helpviewer_keywords:
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
 ms.openlocfilehash: a45cee1abd9351a8fef56769706fe8944a7965b8
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58898741"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779104"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -283,7 +283,7 @@ int main()
 
 암시적으로 선언 된 이동 생성자를 않는 클래스 형식의 모든 멤버에 없는 소멸자 또는 컴파일러 이동 작업에 사용할 생성자를 결정할 수 없는 경우 삭제 된 것으로 정의 됩니다.
 
-비 trivial 이동 생성자 작성 하는 방법에 대 한 자세한 내용은 참조 하세요. [이동 생성자 및 이동 할당 연산자 (c + +)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)합니다.
+비 trivial 이동 생성자 작성 하는 방법에 대 한 자세한 내용은 참조 하세요. [이동 생성자 및 이동 할당 연산자 (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)합니다.
 
 ## <a name="explicitly_defaulted_and_deleted_constructors"></a> 명시적으로 기본 설정 및 삭제 된 생성자
 

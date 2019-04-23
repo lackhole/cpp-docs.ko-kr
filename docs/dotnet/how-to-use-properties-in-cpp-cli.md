@@ -1,20 +1,20 @@
 ---
-title: '방법: 속성을 사용 하 여 C + + /cli CLI'
+title: '방법: 속성에서 사용 하 여 C++/CLI'
 ms.date: 07/21/2017
 helpviewer_keywords:
 - simple properties
 - properties [C++], simple
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
 ms.openlocfilehash: cd0748993b6ac92bbf9f66fa868ac6e814e21bb5
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781629"
 ---
-# <a name="how-to-use-properties-in-ccli"></a>방법: 속성을 사용 하 여 C + + /cli CLI
+# <a name="how-to-use-properties-in-ccli"></a>방법: 속성에서 사용 하 여 C++/CLI
 
-이 문서에서는 속성 C + + /cli CLI입니다.
+이 문서에서는 속성을 사용 하는 방법을 보여 줍니다. C++/CLI입니다.
 
 ## <a name="basic-properties"></a>기본 속성
 
@@ -88,7 +88,7 @@ int main() {
 
 인덱싱된 기본 속성이 사용 하는 경우 클래스 이름을 참조 하 여 데이터 구조를 액세스할 수 있습니다 하지만 사용자 정의 인덱싱된 속성을 사용 하는 경우 데이터 구조에 액세스 하려면 속성 이름을 지정 해야 합니다.
 
-작성 된 인덱서를 사용 하는 방법에 대 한 정보에 대 한 C#를 참조 하세요 [방법: 사용 된 C# 인덱서 (C + + /cli CLI)](../dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md)합니다.
+작성 된 인덱서를 사용 하는 방법에 대 한 정보에 대 한 C#를 참조 하세요 [방법: 사용 된 C# 인덱서 (C++/CLI)](../dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md)합니다.
 
 이 코드 샘플에는 기본 및 사용자 정의 인덱싱된 속성을 사용 하는 방법을 보여 줍니다.
 
@@ -259,7 +259,7 @@ int main() {
 
 ## <a name="abstract-and-sealed-properties"></a>추상 및 봉인 된 속성
 
-하지만 합니다 [추상](../extensions/abstract-cpp-component-extensions.md) 하 고 [봉인 된](../extensions/sealed-cpp-component-extensions.md) 키워드는 지정 된 유효한 것으로에서 ECMA C + + Visual c + + 컴파일러의 경우 CLI 사양을 지정할 수 없습니다 하 trivial 속성 또는 속성에 trivial이 아닌 속성의 선언입니다.
+하지만 [추상](../extensions/abstract-cpp-component-extensions.md) 및 [봉인](../extensions/sealed-cpp-component-extensions.md) 키워드는 ECMA에서 유효한 것으로 지정 된 C++/CLI 사양에 시각적 개체에 대 한 C++ 컴파일러에 지정할 수 없습니다 하 trivial 속성 또는에 trivial이 아닌 속성의 속성 선언입니다.
 
 Sealed 또는 추상 속성을 선언 하는 특수 속성을 정의 하 고 다음 지정 해야 합니다 `abstract` 또는 `sealed` 키워드 get 및 set 접근자 함수.
 

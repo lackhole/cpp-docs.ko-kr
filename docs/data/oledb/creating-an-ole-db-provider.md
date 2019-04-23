@@ -6,10 +6,10 @@ helpviewer_keywords:
 - OLE DB provider templates, creating providers
 ms.assetid: f73017c3-c89f-41a6-a306-ea992cf6092c
 ms.openlocfilehash: 3e46e87b0d5d538a0f9fd7e231debfef3fa95210
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036116"
 ---
 # <a name="creating-an-ole-db-provider"></a>OLE DB 공급자 만들기
@@ -18,7 +18,7 @@ OLE DB 공급자를 만들려면 마법사를 사용 하 여 ATL COM 프로젝�
 
 기본 단계는 다음과 같습니다.
 
-1. 사용 합니다 **ATL 프로젝트 마법사** 기본 프로젝트 파일을 만들려면 및 **ATL OLEDB 공급자 마법사** 공급자를 만들려면 (선택 **ATL OLEDB 공급자** 합니다 에서**설치 됨** > **Visual c + +** > **ATL** 폴더에 **새 항목 추가**).
+1. 사용 합니다 **ATL 프로젝트 마법사** 기본 프로젝트 파일을 만들려면 및 **ATL OLEDB 공급자 마법사** 공급자를 만들려면 (선택 **ATL OLEDB 공급자** 합니다 에서**설치 됨** > **Visual C++**   >  **ATL** 폴더에 **새 항목 추가**).
 
    > [!NOTE]
    > 프로젝트에 MFC 지원을 추가 하기 전에 포함 해야 합니다는 **ATL OLEDB 공급자**합니다.

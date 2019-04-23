@@ -1,5 +1,5 @@
 ---
-title: max_is (c + + COM 특성)
+title: max_is (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.max_is
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - max_is attribute
 ms.assetid: 7c851f5c-6649-4d77-a792-247c37d8f560
 ms.openlocfilehash: dca2a3dc18aa3c3e75bbb682ed0b1b90adcd9236
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041311"
 ---
 # <a name="maxis"></a>max_is
@@ -30,7 +30,7 @@ ms.locfileid: "59041311"
 
 ## <a name="remarks"></a>설명
 
-합니다 **max_is** c + + 특성에 동일한 기능을 합니다 [max_is](/windows/desktop/Midl/max-is) MIDL 특성입니다.
+**max_is** C++ 특성에 동일한 기능을 합니다 [max_is](/windows/desktop/Midl/max-is) MIDL 특성입니다.
 
 ## <a name="requirements"></a>요구 사항
 

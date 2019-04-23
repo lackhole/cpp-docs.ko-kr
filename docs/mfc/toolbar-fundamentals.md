@@ -21,10 +21,10 @@ helpviewer_keywords:
 - LoadToolBar method [MFC]
 ms.assetid: cc00aaff-8a56-433b-b0c0-b857d76b4ffd
 ms.openlocfilehash: 9c784db2e1a482b313147e6837d6bbbd16d0ecb4
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58775493"
 ---
 # <a name="toolbar-fundamentals"></a>도구 모음 기본 사항
@@ -68,7 +68,7 @@ ms.locfileid: "58775493"
 
 ##  <a name="_core_editing_the_toolbar_resource"></a> 도구 모음 리소스 편집
 
-응용 프로그램 마법사를 통해 얻을 수 있는 기본 도구 모음의 기반을 **RT_TOOLBAR** MFC 버전 4.0에에서 도입 된 사용자 지정 리소스입니다. 사용 하 여이 리소스를 편집할 수는 [도구 모음 편집기](../windows/toolbar-editor.md)합니다. 편집기를 사용 하면 쉽게 추가, 삭제 및 단추를 다시 정렬할 수 있습니다. Visual c + +에서 일반 그래픽 편집기로 매우 유사한 단추에 대 한 그래픽 편집기를 포함 합니다. Visual c + +의 이전 버전의 도구 모음을 편집한 경우 있습니다 작업이 훨씬 더 쉽게 이제.
+응용 프로그램 마법사를 통해 얻을 수 있는 기본 도구 모음의 기반을 **RT_TOOLBAR** MFC 버전 4.0에에서 도입 된 사용자 지정 리소스입니다. 사용 하 여이 리소스를 편집할 수는 [도구 모음 편집기](../windows/toolbar-editor.md)합니다. 편집기를 사용 하면 쉽게 추가, 삭제 및 단추를 다시 정렬할 수 있습니다. 시각적 개체의 일반 그래픽 편집기로 매우 유사한 단추에 대 한 그래픽 편집기 포함 된 C++입니다. 시각적 개체의 이전 버전의 도구 모음을 편집 하는 경우 C++, 있습니다 작업이 훨씬 더 쉽게 이제 합니다.
 
 도구 모음 단추를 명령에 연결 하려면 있습니다 단추 명령 ID와 같이 지정 `ID_MYCOMMAND`합니다. 속성 페이지 도구 모음 편집기에서 단추의 명령 ID를 지정 합니다. 그런 다음 명령에 대해 처리기 함수를 만듭니다 (참조 [함수에 메시지 매핑](../mfc/reference/mapping-messages-to-functions.md) 자세한).
 

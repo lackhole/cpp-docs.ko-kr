@@ -13,10 +13,10 @@ helpviewer_keywords:
 - '# preprocessor operator'
 ms.assetid: 1175dd19-4538-43b3-ad97-a008ab80e7b1
 ms.openlocfilehash: 4f23eea017197ae1f984e097bb3967c1228fef09
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035717"
 ---
 # <a name="stringizing-operator-"></a>문자열화 연산자 (#)
@@ -30,7 +30,7 @@ ms.locfileid: "59035717"
 
 일반적으로 인수에 포함 된 문자가 문자열 리터럴을 사용 하는 경우 이스케이프 시퀀스를 필요로 하는 경우 (예를 들어, 인용 부호 (**"**) 또는 백슬래시 (**\\**) 문자), 필요한 이스케이프 백슬래시가 해당 문자 앞 자동으로 삽입 됩니다.
 
-Visual c + + 문자열 화 연산자에 사용 되는 문자열 이스케이프 시퀀스를 포함 하는 경우 제대로 작동 하지 않습니다. 이 경우 컴파일러에서 생성 [컴파일러 오류 C2017](../error-messages/compiler-errors-1/compiler-error-c2017.md)합니다.
+시각적 개체 C++ 이스케이프 시퀀스를 포함 하는 문자열을 사용 하 여 사용 하는 경우 문자열 화 연산자 올바르게 다르게 작동 합니다. 이 경우 컴파일러에서 생성 [컴파일러 오류 C2017](../error-messages/compiler-errors-1/compiler-error-c2017.md)합니다.
 
 ## <a name="examples"></a>예제
 
@@ -78,4 +78,4 @@ FB1(F B)
 
 ## <a name="see-also"></a>참고자료
 
-[전처리 연산자](../preprocessor/preprocessor-operators.md)
+[전처리기 연산자](../preprocessor/preprocessor-operators.md)

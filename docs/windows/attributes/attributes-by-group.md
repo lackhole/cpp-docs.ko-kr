@@ -7,10 +7,10 @@ helpviewer_keywords:
 - attributes [C++/CLI]
 ms.assetid: 9f4dd43f-9909-43d6-91d2-05734643876e
 ms.openlocfilehash: bab7013f2c5fd48ef1a22b990499d79c9c217ca9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038228"
 ---
 # <a name="attributes-by-group"></a>그룹별 특성
@@ -28,6 +28,6 @@ C++ 특성(attribute)은 기능별 그룹으로 다음과 같이 분류됩니다
 
 ## <a name="see-also"></a>참고자료
 
-[COM 및.NET에 대한 C++ 특성](cpp-attributes-com-net.md)<br/>
+[COM 및 .NET에 대한 C++ 특성](cpp-attributes-com-net.md)<br/>
 [용도별 특성](attributes-by-usage.md)<br/>
 [특성 사전순 참조](attributes-alphabetical-reference.md)

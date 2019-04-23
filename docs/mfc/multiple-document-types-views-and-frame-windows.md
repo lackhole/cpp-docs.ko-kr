@@ -16,23 +16,23 @@ helpviewer_keywords:
 - splitter windows [MFC], static
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
 ms.openlocfilehash: 154fc67dc35d5e5633c72c27100da9be56c0c68c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779679"
 ---
 # <a name="multiple-document-types-views-and-frame-windows"></a>여러 문서 형식, 뷰 및 프레임 창
 
 문서, 뷰 및 프레임 창의 기본 관계는 [문서/뷰 만들기](../mfc/document-view-creation.md)에서 설명합니다. 대부분의 애플리케이션은 단일한 뷰와 문서당 하나의 프레임 창만 사용하는 단일한 문서 형식(그러나 해당 형식의 문서는 여러 개 열 수 있음)을 지원합니다. 그러나 일부 애플리케이션에서는 이러한 기본 설정을 하나 이상 변경해야 할 수도 있습니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
 
-- [다중 문서 형식](#_core_multiple_document_types)
+- [Multiple document types](#_core_multiple_document_types)
 
-- [다중 뷰](#_core_multiple_views)
+- [Multiple views](#_core_multiple_views)
 
-- [다중 프레임 창](#_core_multiple_frame_windows)
+- [Multiple frame windows](#_core_multiple_frame_windows)
 
 - [분할 창](#_core_splitter_windows)
 

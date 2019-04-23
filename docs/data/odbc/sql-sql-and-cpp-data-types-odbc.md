@@ -1,5 +1,5 @@
 ---
-title: 'SQL: SQL 및 c + + 데이터 형식 (ODBC)'
+title: 'SQL: SQL 및 C++ 데이터 형식 (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - data types [C++], SQL vs. C++
@@ -7,34 +7,34 @@ helpviewer_keywords:
 - SQL [C++], vs. C++ data types
 ms.assetid: 066e0070-d4da-435c-9c4b-f7cab3352c86
 ms.openlocfilehash: 3efa36342b7d16968113acd818a7a1386e4cefcc
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024350"
 ---
-# <a name="sql-sql-and-c-data-types-odbc"></a>SQL: SQL 및 c + + 데이터 형식 (ODBC)
+# <a name="sql-sql-and-c-data-types-odbc"></a>SQL: SQL 및 C++ 데이터 형식 (ODBC)
 
 > [!NOTE]
 >  이 정보는 MFC ODBC 클래스에 적용 됩니다. MFC DAO 클래스를 사용 하 여 작업 하는 경우 비교의 Microsoft Jet 데이터베이스 엔진 SQL 및 ANSI에 "SQL" DAO 도움말 항목을 참조 하세요.
 
-다음 표에서 c + + 데이터 형식으로 ANSI SQL 데이터 형식을 매핑합니다. 부록 D의에서 제공 하는 C 언어 정보를 보완 하는이 *ODBC SDK* *프로그래머 참고 자료* MSDN 라이브러리 cd 합니다. 마법사는 대부분의 데이터 형식 매핑을 관리합니다. 마법사를 사용 하지 않는 경우 수동으로 필드 exchange 코드를 작성할 수 있도록 매핑 정보를 사용할 수 있습니다.
+다음 표에서 ANSI SQL 데이터 형식을 C++ 데이터 형식입니다. 부록 D의에서 제공 하는 C 언어 정보를 보완 하는이 *ODBC SDK* *프로그래머 참고 자료* MSDN 라이브러리 cd 합니다. 마법사는 대부분의 데이터 형식 매핑을 관리합니다. 마법사를 사용 하지 않는 경우 수동으로 필드 exchange 코드를 작성할 수 있도록 매핑 정보를 사용할 수 있습니다.
 
-### <a name="ansi-sql-data-types-mapped-to-c-data-types"></a>C + + 데이터 형식에 매핑되는 ANSI SQL 데이터 형식
+### <a name="ansi-sql-data-types-mapped-to-c-data-types"></a>ANSI SQL 데이터 형식에 매핑된 C++ 데이터 형식
 
 |ANSI SQL 데이터 형식|C++ 데이터 형식|
 |------------------------|---------------------|
 |**CHAR**|`CString`|
 |**DECIMAL**|`CString` 1|
 |**SMALLINT**|**int**|
-|**real**|**float**|
+|**REAL**|**float**|
 |**INTEGER**|**long**|
 |**FLOAT**|**double**|
 |**DOUBLE**|**double**|
-|**숫자**|`CString` 1|
+|**NUMERIC**|`CString` 1|
 |**VARCHAR**|`CString`|
 |**LONGVARCHAR**|`CLongBinary`, `CString` 2|
-|**비트**|**BOOL**|
+|**BIT**|**BOOL**|
 |**TINYINT**|**BYTE**|
 |**BIGINT**|`CString` 1|
 |**BINARY**|`CByteArray`|

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C2065
 ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
 ms.openlocfilehash: 3daf2cd532cd07225b822c80b46fc28274d4e2a8
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58778756"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779403"
 ---
 # <a name="compiler-error-c2065"></a>컴파일러 오류 C2065
 
 > '*식별자*': 선언 되지 않은 식별자
 
-컴파일러는 식별자에 대 한 선언을 찾을 수 없습니다. 이 오류에 대 한 많은 잠재적 원인이 있습니다. C2065의 가장 일반적인 원인은는 식별자를 선언 하지 않은, 철자가 잘못 된 식별자, 식별자 선언 된 위치 헤더 파일에 포함 되어 있지 않거나 식별자 범위 한정자를 예를 들어 누락 되었습니다 `cout` 대신 `std::cout`. C + +의 선언에 대 한 자세한 내용은 참조 하세요. [선언 및 정의 (c + +)](../../cpp/declarations-and-definitions-cpp.md)합니다.
+컴파일러는 식별자에 대 한 선언을 찾을 수 없습니다. 이 오류에 대 한 많은 잠재적 원인이 있습니다. C2065의 가장 일반적인 원인은는 식별자를 선언 하지 않은, 철자가 잘못 된 식별자, 식별자 선언 된 위치 헤더 파일에 포함 되어 있지 않거나 식별자 범위 한정자를 예를 들어 누락 되었습니다 `cout` 대신 `std::cout`. 선언에 대 한 자세한 내용은 C++를 참조 하세요 [선언 및 정의 (C++)](../../cpp/declarations-and-definitions-cpp.md)합니다.
 
 여기에 몇 가지 일반적인 문제 및 솔루션 보다 자세히 설명 합니다.
 
@@ -51,7 +51,7 @@ int main() {
 
 ## <a name="example-use-an-unscoped-identifier"></a>예: 범위가 지정 되지 않은 식별자를 사용 합니다.
 
-식별자를 제대로 범위가 지정 되지 않습니다 하는 경우이 오류가 발생할 수 있습니다. 사용 하는 경우 C2065 표시 되 면 `cout`,이 인해 발생 합니다. C + + 표준 라이브러리 함수 및 연산자는 정규화 되지 않은 네임 스페이스에서 또는 하지 가져온 경우는 `std` 네임 스페이스를 사용 하 여 현재 범위에는 `using` 지시문, 컴파일러 찾을 수 없습니다. 이 문제를 해결 하려면 완전히 식별자 이름을 한정 하거나 사용 하 여 네임 스페이스를 지정 합니다 `using` 지시문입니다.
+식별자를 제대로 범위가 지정 되지 않습니다 하는 경우이 오류가 발생할 수 있습니다. 사용 하는 경우 C2065 표시 되 면 `cout`,이 인해 발생 합니다. 때 C++ 표준 라이브러리 함수 및 연산자는 정규화 되지 않은 네임 스페이스에서 또는 하지 가져온 합니다 `std` 네임 스페이스를 사용 하 여 현재 범위에는 `using` 지시문, 컴파일러 찾을 수 없습니다. 이 문제를 해결 하려면 완전히 식별자 이름을 한정 하거나 사용 하 여 네임 스페이스를 지정 합니다 `using` 지시문입니다.
 
 이 예제에서는 있으므로 컴파일되지 않습니다 `cout` 하 고 `endl` 에 정의 된는 `std` 네임 스페이스:
 
@@ -203,9 +203,9 @@ int main() {
 }
 ```
 
-## <a name="example-ccli-type-deduction-failure"></a>예제: C + + /cli CLI 형식 추론이 실패
+## <a name="example-ccli-type-deduction-failure"></a>예제: C++/ CLI 형식 추론이 실패
 
-사용 된 매개 변수에서 원하는 형식 인수를 추론할 수 없으므로 제네릭 함수를 호출 하는 경우이 오류가 발생할 수 있습니다. 자세한 내용은 [제네릭 함수 (C + + /cli CLI)](../../extensions/generic-functions-cpp-cli.md)합니다.
+사용 된 매개 변수에서 원하는 형식 인수를 추론할 수 없으므로 제네릭 함수를 호출 하는 경우이 오류가 발생할 수 있습니다. 자세한 내용은 [제네릭 함수 (C++/CLI)](../../extensions/generic-functions-cpp-cli.md)합니다.
 
 ```cpp
 // C2065_b.cpp
@@ -220,7 +220,7 @@ int main() {
 }
 ```
 
-## <a name="example-ccli-attribute-parameters"></a>예제: C + + /cli CLI 특성 매개 변수
+## <a name="example-ccli-attribute-parameters"></a>예제: C++/ 특성 매개 변수 CLI
 
 이 오류는 Visual C++ 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성될 수도 있습니다. 매개 변수에 Visual C++ 특성이 있는지 확인합니다.
 

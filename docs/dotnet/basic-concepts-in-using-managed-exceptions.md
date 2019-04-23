@@ -11,10 +11,10 @@ helpviewer_keywords:
 - Visual C++, handling managed exceptions
 ms.assetid: 40ce8931-1ecc-491a-815f-733b23fcba35
 ms.openlocfilehash: e2aed98d9131b3d7b96cdc3e3297823d69d0ad38
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781538"
 ---
 # <a name="basic-concepts-in-using-managed-exceptions"></a>관리되는 예외 사용의 기본 개념
@@ -33,11 +33,11 @@ ms.locfileid: "58781538"
 
 인터페이스에서 파생 된 예외 형식을 catch 할에서 지원 되지 않습니다 **/clr**합니다. 또한 공용 언어 런타임 허용 하지 않습니다 스택 오버플로 예외를 catch 합니다. 스택 오버플로 예외는 프로세스를 종료 합니다.
 
-관리 및 관리 되지 않는 응용 프로그램에서 예외 처리의 차이점에 대 한 자세한 내용은 참조 하세요. [예외 처리 동작에서 Managed Extensions for c + +의에서 차이](../dotnet/differences-in-exception-handling-behavior-under-clr.md)합니다.
+관리 및 관리 되지 않는 응용 프로그램에서 예외 처리의 차이점에 대 한 자세한 내용은 참조 하세요. [차이점 예외 처리 동작에서 Managed extensions for C++ ](../dotnet/differences-in-exception-handling-behavior-under-clr.md)합니다.
 
 ##  <a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a> /Clr에서 예외를 throw합니다.
 
-C + + throw 식 CLR 형식에 대 한 핸들을 throw 하도록 확장 됩니다. 다음 예제에서는 사용자 지정 예외 형식을 만들고 해당 형식의 인스턴스가 throw 됩니다.
+C++ throw 식 CLR 형식에 대 한 핸들을 throw 하도록 확장 되었습니다. 다음 예제에서는 사용자 지정 예외 형식을 만들고 해당 형식의 인스턴스가 throw 됩니다.
 
 ```
 // clr_exception_handling.cpp
@@ -126,9 +126,9 @@ In 'catch(MyStruct^ catchException)'
 11
 ```
 
-### <a name="order-of-unwinding-for-c-objects"></a>C + + 개체에 대 한 해제 순서
+### <a name="order-of-unwinding-for-c-objects"></a>해제 순서 C++ 개체
 
-해제 throw 함수 사이의 처리 함수 런타임 스택에 수 있는 소멸자를 사용 하 여 c + + 개체에 발생 합니다. 힙에 할당 된 CLR 형식 때문에 해제 해도에 적용 되지 않습니다.
+에 대해 발생 해제 C++ 소멸자가 throw 함수 사이의 처리 함수 런타임 스택을에 있을 수 있는 개체입니다. 힙에 할당 된 CLR 형식 때문에 해제 해도에 적용 되지 않습니다.
 
 Throw 된 예외에 대 한 이벤트의 순서는 다음과 같습니다.
 
@@ -142,9 +142,9 @@ Throw 된 예외에 대 한 이벤트의 순서는 다음과 같습니다.
 
 형식의 예외를 사용 하 여 래핑되는 관리 되지 않는 개체 유형을 throw 되 면 <xref:System.Runtime.InteropServices.SEHException>합니다. 적절 한 검색 하는 경우 **catch** 절을 두 가지 방법이 있습니다.
 
-- 네이티브 c + + 형식 발생 하는 경우 예외 래핑이 해제 되 고 해당 형식과 비교 합니다. 이 비교에는 네이티브 c + + 형식을를 일반적인 방법으로 발견할 수 있습니다.
+- 경우는 네이티브 C++ 형식이 발견 될, 예외는 래핑 해제 되 고 해당 형식과 비교 합니다. 이 비교는 네이티브를 사용 하면 C++ 를 일반적인 방법으로 발견할 수 있는 형식입니다.
 
-- 그러나 경우에 **catch** 형식의 절 **SEHException** 또는 해당 기본 클래스 중 하나를 먼저 검사, 절은 예외를 가로챕니다. 따라서 모든 catch 절 CLR 형식의 전에 네이티브 c + + 형식을 먼저 catch 하는 모든 catch 절을 배치 해야 합니다.
+- 그러나 경우에 **catch** 형식의 절 **SEHException** 또는 해당 기본 클래스 중 하나를 먼저 검사, 절은 예외를 가로챕니다. 따라서 두어야 catch 하는 모든 catch 절 네이티브 C++ 모든 CLR 형식의 절을 catch 하기 전에 먼저 형식입니다.
 
 다음 사항에 유의하십시오.
 

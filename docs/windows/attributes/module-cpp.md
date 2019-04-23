@@ -1,5 +1,5 @@
 ---
-title: 모듈 (c + + COM 특성)
+title: 모듈 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.module
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
 ms.openlocfilehash: 5c69e0aa9e3444ec9b43470f8feb4d1f870dc9c8
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040582"
 ---
 # <a name="module-c"></a>module(C++)
@@ -39,7 +39,7 @@ ms.locfileid: "59040582"
 *name*<br/>
 (선택 사항) 라이브러리 블록의 이름입니다.
 
-*버전*<br/>
+*version*<br/>
 (선택 사항) 라이브러리 블록에 할당 하려는 버전 번호입니다. 기본값은 1.0입니다.
 
 *uuid*<br/>
@@ -48,13 +48,13 @@ ms.locfileid: "59040582"
 *lcid*<br/>
 지역화 매개 변수입니다. 자세한 내용은 [lcid](/windows/desktop/Midl/lcid) 를 참조하세요.
 
-*컨트롤*<br/>
+*control*<br/>
 (선택 사항) 라이브러리의 모든 coclass 컨트롤 되도록 지정 합니다.
 
 *helpstring*<br/>
 형식 라이브러리를 지정합니다.
 
-*typelib*<br/>
+*helpstringdll*<br/>
 (선택 사항) 문서 문자열 조회를 수행 하는 데.dll 파일의 이름을 설정 합니다. 자세한 내용은 [helpstringdll](/windows/desktop/Midl/helpstringdll) 을 참조하세요.
 
 *helpfile*<br/>
@@ -72,7 +72,7 @@ ms.locfileid: "59040582"
 *restricted*<br/>
 (선택 사항) 라이브러리의 멤버를 임의로 호출할 수 없습니다. 자세한 내용은 [restricted](/windows/desktop/Midl/restricted) MIDL 특성을 참조하세요.
 
-*사용자 지정*<br/>
+*custom*<br/>
 (선택 사항) 하나 이상의 특성 이 비슷합니다는 [사용자 지정](custom-cpp.md) 특성입니다. 첫 번째 매개 변수를 *사용자 지정* 특성의 GUID입니다. 예를 들어:
 
 ```
@@ -166,7 +166,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 [독립 실행형 특성](stand-alone-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
 [usesgetlasterror](usesgetlasterror.md)<br/>
-[라이브러리](/windows/desktop/Midl/library)<br/>
+[library](/windows/desktop/Midl/library)<br/>
 [helpcontext](helpcontext.md)<br/>
 [helpstring](helpstring.md)<br/>
 [helpfile](helpfile.md)<br/>

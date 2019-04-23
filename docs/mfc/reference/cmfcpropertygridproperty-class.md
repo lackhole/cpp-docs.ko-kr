@@ -167,10 +167,10 @@ helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], m_strFormatShort
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
 ms.openlocfilehash: aa88cc2d4ee915b970157ee6ed280512e2352bcc
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779029"
 ---
 # <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty 클래스
@@ -406,7 +406,7 @@ void AllowEdit(BOOL bAllow=TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*전파할*<br/>
+*bAllow*<br/>
 [in] 하려면 True이 고 속성을 편집할 수 있습니다. 읽기 전용 속성을 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.
 
 ### <a name="remarks"></a>설명
@@ -880,10 +880,10 @@ CMFCPropertyGridProperty* HitTest(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 클라이언트 좌표로 테스트할 점입니다. 이 매개 변수는 일반적으로 현재 마우스 포인터 위치 합니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 [in] 클라이언트 좌표로 테스트할 점입니다.
 
 *pnArea*<br/>
@@ -1129,7 +1129,7 @@ virtual void OnClickButton(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 지점에서 클라이언트 좌표로입니다.
 
 ### <a name="remarks"></a>설명
@@ -1169,7 +1169,7 @@ virtual BOOL OnClickValue(
 *uiMsg*<br/>
 [in] 마우스 메시지입니다.
 
-*지점*<br/>
+*point*<br/>
 [in] 지점에서 클라이언트 좌표로입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1224,7 +1224,7 @@ virtual BOOL OnDblClk(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 지점에서 클라이언트 좌표로입니다.
 
 ### <a name="return-value"></a>반환 값

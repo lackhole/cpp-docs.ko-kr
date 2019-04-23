@@ -9,10 +9,10 @@ helpviewer_keywords:
 - ODBC, components
 ms.assetid: ec529702-0fb2-4754-b8de-d1efa8eca18f
 ms.openlocfilehash: e14f5d051b9684cd79a34f5fb50feeb785d2f927
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033244"
 ---
 # <a name="odbc-basics"></a>ODBC 기초
@@ -63,7 +63,7 @@ ODBC는 데이터베이스 부분의는 Microsoft Windows 열기 Services 아키
 
 데이터베이스 클래스는 ODBC 드라이버가 있는 모든 데이터 소스를 지원 합니다. 여기 들어 예를 들어, 관계형 데이터베이스, 인덱싱된 순차 액세스 메서드 (ISAM) 데이터베이스, Microsoft Excel 스프레드시트 또는 텍스트 파일에 포함 됩니다. ODBC 드라이버로 데이터 원본에 대 한 연결을 관리 하 고 SQL을 사용 하 여 데이터베이스에서 레코드를 선택 합니다.
 
-이 버전의 Visual c + +에 포함 된 ODBC 드라이버의 목록을 추가 드라이버를 가져오는 방법은 참조 [ODBC 드라이버 목록](../../data/odbc/odbc-driver-list.md)합니다.
+시각적 개체의이 버전에 포함 된 ODBC 드라이버의 목록은 C++ 추가 드라이버를 얻는 방법에 대 한 자세한 내용은 참조 [ODBC 드라이버 목록](../../data/odbc/odbc-driver-list.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

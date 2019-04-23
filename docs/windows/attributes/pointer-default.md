@@ -1,5 +1,5 @@
 ---
-title: pointer_default (c + + COM 특성)
+title: pointer_default (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.pointer_default
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - pointer_default attribute
 ms.assetid: 2d0c7bbc-a1e8-4337-9e54-e304523e2735
 ms.openlocfilehash: 37bd2b16fb7a7c1c186f59897898e08cc73fffae
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59022668"
 ---
 # <a name="pointerdefault"></a>pointer_default
@@ -30,7 +30,7 @@ ms.locfileid: "59022668"
 
 ## <a name="remarks"></a>설명
 
-합니다 **pointer_default** c + + 특성에 동일한 기능을 합니다 [pointer_default](/windows/desktop/Midl/pointer-default) MIDL 특성입니다.
+**pointer_default** C++ 특성에 동일한 기능을 합니다 [pointer_default](/windows/desktop/Midl/pointer-default) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -42,7 +42,7 @@ ms.locfileid: "59022668"
 
 |||
 |-|-|
-|**적용 대상**|**interface(인터페이스)**|
+|**적용 대상**|**interface**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|

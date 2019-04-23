@@ -53,10 +53,10 @@ helpviewer_keywords:
 - CPropertySheet [MFC], m_psh
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
 ms.openlocfilehash: 0e5194a356684f2ff86d74a0ed1f37f332bcffeb
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781655"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet 클래스
@@ -392,7 +392,7 @@ IDOK 또는 함수에 성공 하면 IDCANCEL 그렇지 않으면 0 또는-1입�
 속성 페이지는 해당 대화 상자 리소스에서 만들어지면 첫째 예외를 발생할 수 있습니다. 이 페이지를 만들기 전에 필요한 스타일으로 대화 상자 리소스의 스타일을 변경 하는 속성 페이지에서 발생 합니다. 리소스는 일반적으로 읽기 전용 이기 때문에이 예외가 발생 합니다. 시스템 예외를 처리 하 고 수정된 된 리소스의 복사본을 만듭니다. 따라서 첫 번째 예외를 무시할 수 있습니다.
 
 > [!NOTE]
->  이 예외는 비동기 예외 처리 모델을 사용 하 여 컴파일하는 경우 운영 체제에서 처리 되어야 합니다. 예외 처리 모델에 대 한 자세한 내용은 참조 하세요. [/EH (예외 처리 모델)](../../build/reference/eh-exception-handling-model.md)합니다. 이 경우에 대 한 호출을 래핑하지 마십시오 `CPropertySheet::DoModal` c + + try / catch 블록을 사용 하 여 catch 처리 하는 모든 예외를 예를 들어 `catch (...)`합니다. 이 블록에는 운영 체제 및 원인 예측할 수 없는 동작을 위한 예외를 처리 하려고 합니다. 그러나 운영 체제에 액세스 위반 예외 전달 되는 특정 예외 형식 또는 구조적된 예외 처리를 사용 하 여 처리 하는 c + + 예외를 안전 하 게 사용할 수 있습니다.
+>  이 예외는 비동기 예외 처리 모델을 사용 하 여 컴파일하는 경우 운영 체제에서 처리 되어야 합니다. 예외 처리 모델에 대 한 자세한 내용은 참조 하세요. [/EH (예외 처리 모델)](../../build/reference/eh-exception-handling-model.md)합니다. 이 경우에 대 한 호출을 래핑하지 마십시오 `CPropertySheet::DoModal` 사용 하 여는 C++ try / catch 블록 catch 처리 하는 모든 예외를 예를 들어 `catch (...)`합니다. 이 블록에는 운영 체제 및 원인 예측할 수 없는 동작을 위한 예외를 처리 하려고 합니다. 그러나 안전 하 게 사용할 수 C++ 예외는 액세스 위반 예외가 전달 됩니다 운영 체제 특정 예외 형식 또는 구조적된 예외 처리를 사용 하 여 처리 합니다.
 
 이 첫 번째 예외를 생성을 방지 하려면 수동으로 보장할 수 속성 시트에 올바른 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다. 속성 시트에 대 한 다음과 같은 스타일을 설정 해야 합니다.
 

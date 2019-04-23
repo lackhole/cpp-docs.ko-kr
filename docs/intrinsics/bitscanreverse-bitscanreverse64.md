@@ -12,10 +12,10 @@ helpviewer_keywords:
 - BitScanReverse intrinsic
 ms.assetid: 2520a207-af8b-4aad-9ae7-831abeadf376
 ms.openlocfilehash: 3639aac38f4c7df82cbbdb23ed9038ac86ba2cc0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021972"
 ---
 # <a name="bitscanreverse-bitscanreverse64"></a>_BitScanReverse, _BitScanReverse64
@@ -39,10 +39,10 @@ unsigned char _BitScanReverse64(
 
 #### <a name="parameters"></a>매개 변수
 
-*인덱스*<br/>
+*Index*<br/>
 [out] 찾은 첫 번째 설정 비트 (1)의 비트 위치를 사용 하 여 로드 합니다.
 
-*마스크*<br/>
+*Mask*<br/>
 [in] 검색할 32 비트 또는 64 비트 값입니다.
 
 ## <a name="return-value"></a>반환 값

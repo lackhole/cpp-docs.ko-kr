@@ -1,21 +1,21 @@
 ---
-title: Visual Studio에서 c + + 지원 설치
-description: Visual Studio의 Visual c + + 지원 설치
+title: Visual Studio에 C++ 지원 설치
+description: 시각적 개체에 대 한 Visual Studio 지원 설치C++
 ms.custom: mvc
 ms.date: 04/02/2019
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ms.openlocfilehash: 2c2bed4063194bdc3c0f3fbc405be6bf9a4031e7
-ms.sourcegitcommit: 5fc76f5b3c4c3ee49f38f05b37261a324591530b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58870782"
 ---
-# <a name="install-c-support-in-visual-studio"></a>Visual Studio에서 c + + 지원 설치
+# <a name="install-c-support-in-visual-studio"></a>Visual Studio에 C++ 지원 설치
 
-다운로드 하 고 Visual Studio 및 Visual c + + 도구를 아직 설치 하지 않은 경우 시작 하는 방법을 다음과 같습니다.
+다운로드 하 고 Visual Studio 및 시각적 개체를 설치 하지 않은 경우 C++ 도구를 아직 여기의 시작 하는 방법입니다.
 
 ::: moniker range="vs-2019"
 
@@ -24,7 +24,7 @@ ms.locfileid: "58870782"
 시작 하려면 Visual Studio 2019! 이 버전에서 선택 하 고 필요한 기능만 설치 하기 쉽습니다. 고 감소는 최소 사용 공간도 때문이 빠르고 적은 시스템에 미치는 영향을 설치 합니다.
 
 > [!NOTE]
-> 이 항목에서는 Windows에서 Visual Studio의 설치에 적용 됩니다. [Visual Studio Code](https://code.visualstudio.com/) Windows, Mac 및 Linux 시스템에서 실행 되는 경량, 플랫폼 간 개발 환경입니다. Microsoft [Visual Studio Code 용 C + +](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) 확장 프로그램은 IntelliSense, 디버깅, 코드 서식 지정, 자동 완성을 지원 합니다. Mac 용 visual Studio는 Microsoft c + +를 지원 하지 않습니다 하지만.NET 언어 및 플랫폼 간 개발 지원. 설치 지침은 [Mac 용 Visual Studio 설치](/visualstudio/mac/installation/)합니다.
+> 이 항목에서는 Windows에서 Visual Studio의 설치에 적용 됩니다. [Visual Studio Code](https://code.visualstudio.com/) Windows, Mac 및 Linux 시스템에서 실행 되는 경량, 플랫폼 간 개발 환경입니다. Microsoft [C /C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) 확장 프로그램은 IntelliSense, 디버깅, 코드 서식 지정, 자동 완성을 지원 합니다. Mac 용 visual Studio에서 Microsoft를 지원 하지 않습니다 C++에.NET 언어 및 플랫폼 간 개발 지원 하지만 합니다. 설치 지침은 [Mac 용 Visual Studio 설치](/visualstudio/mac/installation/)합니다.
 
 이 버전의 다른 새로운 기능에 대해 자세히 알고 싶으세요? Visual Studio를 참조 하세요 [릴리스](/visualstudio/releases/2019/release-notes/)합니다.
 
@@ -73,9 +73,9 @@ Visual Studio 설치 관리자를 설치 하려면 부트스트래퍼 파일을 
 
    ![Visual Studio 2019: 워크 로드를 설치 합니다.](../get-started/media/vs-installer-workloads.png)
 
-   핵심 c + + 지원 "c + +로 데스크톱 개발" 워크 로드를 선택 합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
+   Core에 대 한 C++ 지원을 선택 합니다 "를 사용한 데스크톱 개발 C++" 워크 로드. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
 
-   추가 워크 로드는 다른 종류의 c + + 개발을 지원합니다. 예를 들어 Microsoft Store 대 한 Windows 런타임을 사용 하는 앱을 만들려면 "유니버설 Windows 플랫폼 개발" 워크 로드를 선택 합니다. "C + +를 사용한 게임 개발" 선택 DirectX, Unreal, Cocos2d 사용 되는 게임을 만들려고 합니다. IoT 개발을 포함 하 여 Linux 플랫폼을 대상에 "c + +를 사용 하 여 개발 Linux"를 선택 합니다.
+   추가 워크 로드 지원 다른 종류의 C++ 개발 합니다. 예를 들어 Microsoft Store 대 한 Windows 런타임을 사용 하는 앱을 만들려면 "유니버설 Windows 플랫폼 개발" 워크 로드를 선택 합니다. 선택 "를 사용한 게임 개발 C++" DirectX, Unreal, Cocos2d 사용 되는 게임을 만들려고 합니다. 선택 "를 사용한 Linux 개발 C++" 플랫폼을 대상으로 Linux, IoT 개발을 포함 합니다.
 
    합니다 **설치 세부 정보** 창 각 워크 로드에 따라 설치에 포함 및 선택적 구성 요소를 나열 합니다. 선택 하거나이 목록에 선택적 구성 요소를 선택 취소 수 있습니다. 예를 들어, Visual Studio 2017 또는 2015 컴파일러 도구 집합을 사용 하 여 개발을 지원 하려면 MSVC v141 또는 MSVC v140 선택적 구성 요소를 선택 합니다. MFC, 실험적 모듈 언어 확장, IncrediBuild 등에 대 한 지원을 추가할 수 있습니다.
 
@@ -155,13 +155,13 @@ Visual Studio 2017에서 선택 하 고 필요한 기능만 설치 하기 쉽습
 
    ![다운로드 하 여 Visual Studio 설치 관리자 설치](media/vscpp-concierge-run-installer.gif "다운로드 하 여 Visual Studio 설치 관리자를 설치 합니다.")
 
-1. 설치 관리자는 특정 개발 영역에 대한 관련 옵션의 그룹인 워크로드 목록을 제공합니다. C + +에 대 한 지원은 이제 기본적으로 설치 되지 않은 선택적 워크 로드의 일부입니다.
+1. 설치 관리자는 특정 개발 영역에 대한 관련 옵션의 그룹인 워크로드 목록을 제공합니다. 에 대 한 지원 C++ 는 이제 기본적으로 설치 되지 않은 선택적 워크 로드의 일부입니다.
 
-   ![C + + 워크 로드를 사용한 데스크톱 개발](media/desktop-development-with-cpp.png "c + +를 사용한 데스크톱 개발")
+   ![사용한 데스크톱 개발 C++ 워크 로드](media/desktop-development-with-cpp.png "를 사용한 데스크톱 개발C++")
 
-   C + +를 선택 합니다 **c + +를 사용한 데스크톱 개발** 워크 로드를 선택한 후 **설치**합니다.
+   에 대 한 C++을 선택 합니다 **를 사용한 데스크톱 개발 C++**  워크 로드를 선택한 후 **설치**.
 
-   ![C + + 워크 로드를 사용 하 여 데스크톱 개발을 설치](media/vscpp-concierge-choose-workload.gif "c + + 워크 로드를 사용 하 여 데스크톱 개발을 설치 합니다.")
+   ![설치를 사용한 데스크톱 개발 C++ 워크 로드](media/vscpp-concierge-choose-workload.gif "설치를 사용한 데스크톱 개발 C++ 작업")
 
 1. 설치가 완료 되 면 선택 합니다 **시작** Visual Studio를 시작 하는 단추입니다.
 
@@ -185,7 +185,7 @@ Visual Studio 2017에서 선택 하 고 필요한 기능만 설치 하기 쉽습
 
 ## <a name="visual-studio-2015-installation"></a>Visual Studio 2015 Installation
 
-Visual Studio 2015를 설치하려면 [이전 버전의 Visual Studio 다운로드](https://www.visualstudio.com/vs/older-downloads/)로 이동합니다. 설치 프로그램을 실행하고 **사용자 지정 설치**를 선택한 다음, C++ 구성 요소를 선택합니다. 기존 Visual Studio 2015 설치에 c + + 지원을 추가 하려면 Windows 시작 단추 및 유형에 따라 클릭 **프로그램 추가 / 제거**합니다. 결과 목록에서 프로그램을 열고 설치 된 프로그램 목록에서 Visual Studio 2015 설치를 찾습니다. 두 번 클릭 한 다음 선택 **수정** 설치할 Visual c + + 구성 요소를 선택 합니다.
+Visual Studio 2015를 설치하려면 [이전 버전의 Visual Studio 다운로드](https://www.visualstudio.com/vs/older-downloads/)로 이동합니다. 설치 프로그램을 실행하고 **사용자 지정 설치**를 선택한 다음, C++ 구성 요소를 선택합니다. 추가할 C++ 기존 Visual Studio 2015 설치에 지원, 입력 하 고 Windows 시작 단추를 클릭할 **프로그램 추가 / 제거**합니다. 결과 목록에서 프로그램을 열고 설치 된 프로그램 목록에서 Visual Studio 2015 설치를 찾습니다. 두 번 클릭 한 다음 선택 **수정** 시각적 개체를 선택 하 고 C++ 설치할 구성 요소입니다.
 
 일반적으로 Visual Studio 2015 컴파일러를 사용하여 코드를 컴파일해야 하는 경우에도 Visual Studio 2017을 사용하는 것이 좋습니다. 자세한 내용은 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](../porting/use-native-multi-targeting.md)를 참조하세요.
 
@@ -196,6 +196,6 @@ Visual Studio를 실행 하는 경우 다음 단계를 계속 준비가 되었�
 ## <a name="next-steps"></a>다음 단계
 
 > [!div class="nextstepaction"]
-> [C + + 프로젝트 만들기](vscpp-step-1-create.md)
+> [만들기는 C++ 프로젝트](vscpp-step-1-create.md)
 
 <iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

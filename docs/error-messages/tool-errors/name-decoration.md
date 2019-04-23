@@ -7,10 +7,10 @@ helpviewer_keywords:
 - decorated names, calling conventions
 ms.assetid: 8327a27b-bb4f-49f2-8218-b851b9d2a463
 ms.openlocfilehash: b916a73e0b8f86755384914fa85ef8a901e4a64c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041525"
 ---
 # <a name="name-decoration"></a>이름 데코레이션
@@ -30,7 +30,7 @@ void CALLTYPE test(void)
 |표준 호출 명명 규칙(`__stdcall`)|`_test@0`|`?test@@YGXXZ`|
 |Vectorcall 명명 규칙(`__vectorcall`)|`test@@0`|`?test@@YQXXZ`|
 
-C++에서 C 함수를 호출하려면 extern "C"를 사용합니다. extern "C"를 사용하면 비클래스 C++ 함수에 대해 C 명명 규칙이 강제로 사용됩니다. 컴파일러 스위치에 유의 **/Tc** 하거나 **/Tp**, 파일 이름 확장명을 무시 하 고 C 또는 c + +로 파일을 각각 컴파일 컴파일러에 지시 하는 합니다. 이러한 옵션을 사용하는 경우 예상치 않은 이름이 생성될 수 있습니다.
+C++에서 C 함수를 호출하려면 extern "C"를 사용합니다. extern "C"를 사용하면 비클래스 C++ 함수에 대해 C 명명 규칙이 강제로 사용됩니다. 컴파일러 스위치에 유의 **/Tc** 하거나 **/Tp**, 파일 이름 확장명을 무시 하 고 C로 파일을 컴파일하지 컴파일러에 지시 하는 또는 C++, 각각. 이러한 옵션을 사용하는 경우 예상치 않은 이름이 생성될 수 있습니다.
 
 함수 프로토타입의 매개 변수가 일치하지 않는 경우에도 이 오류가 발생할 수 있습니다. 이름 장식에서는 함수의 매개 변수가 데코레이트된 최종 함수 이름에 통합됩니다. 함수 선언의 매개 변수 형식과 일치하지 않는 매개 변수 형식을 사용하여 함수를 호출해도 LNK2001이 발생할 수 있습니다.
 

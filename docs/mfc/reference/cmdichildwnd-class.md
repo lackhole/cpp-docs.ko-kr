@@ -23,10 +23,10 @@ helpviewer_keywords:
 - CMDIChildWnd [MFC], SetHandles
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
 ms.openlocfilehash: 13f027e68184a4869e88883ff8b8d3b123b94e3e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774587"
 ---
 # <a name="cmdichildwnd-class"></a>CMDIChildWnd 클래스
@@ -73,7 +73,7 @@ MDI 자식 창에 생성 하는 방법은 세 가지가 있습니다.
 
 - 직접 생성 하지 문서 템플릿을 통해.
 
-호출 하기 전에 `Create` 나 `LoadFrame`, c + +를 사용 하 여 힙에서 프레임 창 개체를 생성 해야 **새** 연산자. 호출 하기 전에 `Create` 사용 하 여 창 클래스를 등록할 수도 있습니다는 [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) 프레임에 대 한 아이콘 및 클래스 스타일을 설정 하려면 전역 함수입니다.
+호출 하기 전에 `Create` 또는 `LoadFrame`를 사용 하 여 힙 프레임 창 개체를 생성 해야 합니다 C++ **새** 연산자. 호출 하기 전에 `Create` 사용 하 여 창 클래스를 등록할 수도 있습니다는 [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) 프레임에 대 한 아이콘 및 클래스 스타일을 설정 하려면 전역 함수입니다.
 
 사용 된 `Create` 프레임의 생성 매개 변수를 즉시 인수를 전달 하는 멤버 함수입니다.
 
@@ -89,11 +89,11 @@ Frame-window 클래스에서 파생 된 `CMDIChildWnd` 제대로 작동 하려�
 
 - MDI 프레임 창의 메뉴를 완전히 대체 하는 현재 활성 상태인 MDI 자식 창 메뉴 및 캡션의 현재 활성 상태인 MDI 자식 창 MDI 프레임 창의 캡션에 추가 됩니다. MDI 프레임 창에 함께 구현 되는 MDI 자식 창 함수의 추가 예제를 참조 하세요.를 `CMDIFrameWnd` 클래스 설명 합니다.
 
-C + +를 사용 하지 마세요 **삭제** 프레임 창 제거 하는 연산자입니다. 대신 `CWnd::DestroyWindow`를 사용하세요. 합니다 `CFrameWnd` 구현의 `PostNcDestroy` 창이 소멸 될 때 c + + 개체를 삭제 됩니다. 사용자의 기본 프레임 창에 닫을 때 `OnClose` 처리기를 호출 하는 `DestroyWindow`합니다.
+사용 하지 마십시오는 C++ **삭제** 프레임 창 제거 하는 연산자입니다. 대신 `CWnd::DestroyWindow`를 사용하세요. 합니다 `CFrameWnd` 구현의 `PostNcDestroy` 삭제 됩니다는 C++ 창을 소멸 될 때 개체입니다. 사용자의 기본 프레임 창에 닫을 때 `OnClose` 처리기를 호출 하는 `DestroyWindow`합니다.
 
 에 대 한 자세한 `CMDIChildWnd`를 참조 하세요 [프레임 Windows](../../mfc/frame-windows.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 

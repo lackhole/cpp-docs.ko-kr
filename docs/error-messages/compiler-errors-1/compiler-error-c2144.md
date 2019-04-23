@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2144
 ms.assetid: 49f3959b-324f-4c06-9588-c0ecef5dc5b3
 ms.openlocfilehash: a75330d26b0924e60f7e46d10d617341709d7e23
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58778288"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776108"
 ---
 # <a name="compiler-error-c2144"></a>컴파일러 오류 C2144
 
@@ -23,7 +23,7 @@ ms.locfileid: "58778288"
 
 C2144 공백 문자를 포함 하는 CLR 키워드에서 매크로를 만들려고 할 때 발생할 수 있습니다.
 
-C2144는 형식을 전달 하려고 하는 경우에 나타날 수 있습니다. 참조 [형식 전달 (C + + /cli CLI)](../../extensions/type-forwarding-cpp-cli.md) 자세한 내용은 합니다.
+C2144는 형식을 전달 하려고 하는 경우에 나타날 수 있습니다. 참조 [형식 전달 (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) 에 대 한 자세한 내용은 합니다.
 
 ## <a name="examples"></a>예제
 

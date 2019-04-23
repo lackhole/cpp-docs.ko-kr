@@ -5,10 +5,10 @@ helpviewer_keywords:
 - OLE DB, application design considerations
 ms.assetid: 8caa7d99-d2bb-42c9-8884-74f228bb6ecc
 ms.openlocfilehash: 2f0a7a114c671e17d8f95280ab00ed93570e8609
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037674"
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB 아키텍처 설계 문제
@@ -31,7 +31,7 @@ Microsoft는이 작업을 수행 하는 몇 가지 라이브러리를 제공 합
 
 ## <a name="do-you-have-older-code-using-another-data-access-technology-ado-odbc-or-dao"></a>다른 데이터 액세스 기술 (예: ADO, ODBC 또는 DAO)를 사용 하 여 이전 코드 있습니까?
 
-기술 (예: ADO 구성 요소를 사용 하 여 OLE DB 구성 요소를 사용 하 여 및 ODBC 코드 OLE DB로 마이그레이션)의 가능한 조합 지정, Visual c + + 설명서의 범위를 벗어납니다 모든 상황을 포함 합니다. 그러나 다양 한 시나리오를 다루는 여러 문서는 다음 Microsoft 웹 사이트에서 사용할 수 있습니다.
+시각적 개체의 범위를 벗어납니다 모든 상황을 다루는 기술 (예: ADO 구성 요소를 사용 하 여 OLE DB 구성 요소를 사용 하 여 및 ODBC 코드 OLE DB로 마이그레이션)의 가능한 조합 지정 되 면 C++ 설명서. 그러나 다양 한 시나리오를 다루는 여러 문서는 다음 Microsoft 웹 사이트에서 사용할 수 있습니다.
 
 - [Microsoft 도움말 및 지원](https://support.microsoft.com/)
 

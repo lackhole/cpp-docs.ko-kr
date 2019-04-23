@@ -8,15 +8,15 @@ helpviewer_keywords:
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
 ms.openlocfilehash: 21006f19f7c811f87f3f75e346983f7a8e7e0bf5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58778327"
 ---
 # <a name="how-to-convert-between-various-string-types"></a>방법: 다양 한 문자열 형식 간 변환
 
-이 항목에서는 다양 한 Visual c + + 문자열 형식을 다른 문자열로 변환 하는 방법에 설명 합니다. 적용 되는 문자열 형식 포함 `char *`, `wchar_t*`를 [_bstr_t](../cpp/bstr-t-class.md)를 [CComBSTR](../atl/reference/ccombstr-class.md)를 [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), 및 <xref:System.String?displayProperty=fullName>합니다. 모든 예제에서 새 형식으로 변환 시 문자열에 대한 복사본이 만들어집니다. 새 문자열의 변경 사항은 원래 문자열에서 영향을 주지 않고, 그 반대의 경우도 마찬가지입니다.
+이 항목에서는 다양 한 시각적 개체를 변환 하는 방법을 보여 줍니다. C++ 다른 문자열에 형식 문자열입니다. 적용 되는 문자열 형식 포함 `char *`, `wchar_t*`를 [_bstr_t](../cpp/bstr-t-class.md)를 [CComBSTR](../atl/reference/ccombstr-class.md)를 [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), 및 <xref:System.String?displayProperty=fullName>합니다. 모든 예제에서 새 형식으로 변환 시 문자열에 대한 복사본이 만들어집니다. 새 문자열의 변경 사항은 원래 문자열에서 영향을 주지 않고, 그 반대의 경우도 마찬가지입니다.
 
 ## <a name="converting-from-char-"></a>char\*에서 변환
 
@@ -459,9 +459,9 @@ Hello, World! (System::String)
 
 ### <a name="description"></a>설명
 
-이 예제에서는 `CString` 형식의 문자열을 처음에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. `CString` 기반에 있는지 여부에 따라 달라 지는 TCHAR 데이터 형식으로 기호 `_UNICODE` 정의 됩니다. `TCHAR`는 `_UNICODE`가 정의되어 있지 않다면 char로 정의되어 `CString`에는 멀티바이트 문자열이 포함됩니다. `_UNICODE`가 정의되었다면 `TCHAR`는 `wchar_t`로 정의되며 `CString`은 와이드 문자열을 포함합니다.
+이 예제에서는 `CString` 형식의 문자열을 처음에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. `CString`은 `_UNICODE` 기호의 정의 여부에 따라 형식이 달라지는 TCHAR 데이터 형식 기반의 문자열입니다. `TCHAR`는 `_UNICODE`가 정의되어 있지 않다면 char로 정의되어 `CString`에는 멀티바이트 문자열이 포함됩니다. `_UNICODE`가 정의되었다면 `TCHAR`는 `wchar_t`로 정의되며 `CString`은 와이드 문자열을 포함합니다.
 
-`CStringA` 멀티 바이트 문자열 전용 버전이 `CString`, `CStringW` 와이드 문자열 전용 버전입니다. `CStringA`와 `CStringW`는 `_UNICODE`의 정의 여부에 따라 컴파일 시 기반 형식이 달라지지 않습니다. `CStringA` 및 `CStringW` 이 예제의 버퍼 크기 할당에 약간의 차이가 분명히 설명 하 고 처리를 출력 하는 데 사용 됩니다.
+`CStringA`는 `CString`의 멀티바이트 기반 전용 문자열이며 `CStringW`는 와이드 기반 전용 문자열입니다. `CStringA`와 `CStringW`는 `_UNICODE`의 정의 여부에 따라 컴파일 시 기반 형식이 달라지지 않습니다. 이 예제에서 `CStringA`와 `CStringW`는, 버퍼 크기 할당이나 출력을 올바르게 처리하기 위한 사소한 차이점을 명확하게 하기 위해 사용됩니다.
 
 ### <a name="code"></a>코드
 
@@ -804,9 +804,9 @@ Hello, World! (basic_string)
 
 [ATL 및 MFC 문자열 변환 매크로](../atl/reference/string-conversion-macros.md)<br/>
 [C 스타일 문자열 관련 CString 작업](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
-[방법: System:: string을 표준 문자열로 변환](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
-[방법: System:: string을 표준 문자열로 변환](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
-[방법: System:: string을 wchar_t * 또는 char 변환합니다\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
+[방법: 표준 문자열을 System::String으로 변환](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
+[방법: System::String을 표준 문자열로 변환](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
+[방법: 방법: System::String을 wchar_t* 또는 char*로\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
 [CComBSTR을 사용한 프로그래밍](../atl/programming-with-ccombstr-atl.md)<br/>
 [mbstowcs_s, _mbstowcs_s_l](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)<br/>
 [wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)<br/>

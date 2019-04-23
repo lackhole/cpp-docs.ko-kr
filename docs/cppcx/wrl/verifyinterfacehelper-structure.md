@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::VerifyInterfaceHelper::Verify method
 ms.assetid: ea95b641-199a-4fdf-964b-186b40cb3ba7
 ms.openlocfilehash: cdd0272953b2399cd71efe207eb1c56e5de154e6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58785002"
 ---
 # <a name="verifyinterfacehelper-structure"></a>VerifyInterfaceHelper 구조체
 
-Windows Runtime c + + 템플릿 라이브러리 인프라를 지원 하며 코드에서 직접 사용할 수 없습니다.
+Windows 런타임을 지 원하는 C++ 템플릿 라이브러리 인프라 하며 코드에서 직접 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 

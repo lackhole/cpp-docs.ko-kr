@@ -1,5 +1,5 @@
 ---
-title: size_is (c + + COM 특성)
+title: size_is (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.size_is
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - size_is attribute
 ms.assetid: 70192d09-f6c5-4d52-b3fe-303f8cb10aa5
 ms.openlocfilehash: a7b990a708bafba78c9dc4153315f8b7b20351ba
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033232"
 ---
 # <a name="sizeis"></a>size_is
@@ -30,7 +30,7 @@ ms.locfileid: "59033232"
 
 ## <a name="remarks"></a>설명
 
-합니다 **size_is** c + + 특성에 동일한 기능을 합니다 [size_is](/windows/desktop/Midl/size-is) MIDL 특성입니다.
+**size_is** C++ 특성에 동일한 기능을 합니다 [size_is](/windows/desktop/Midl/size-is) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

@@ -1,5 +1,5 @@
 ---
-title: 문자열 (c + + COM 특성)
+title: 문자열 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.string
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - string attribute
 ms.assetid: ddde900a-2e99-4fcd-86e8-57e1bdba7c93
 ms.openlocfilehash: e1b528fb922a15655de403c6099ee1d36e2fb3de
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023934"
 ---
 # <a name="string-c"></a>string(C++)
@@ -25,7 +25,7 @@ ms.locfileid: "59023934"
 
 ## <a name="remarks"></a>설명
 
-합니다 **문자열** c + + 특성에 동일한 기능을 합니다 [문자열](/windows/desktop/Midl/string) MIDL 특성입니다.
+**문자열** C++ 특성에 동일한 기능을 합니다 [문자열](/windows/desktop/Midl/string) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -61,4 +61,4 @@ __interface IFireTabCtrl
 
 [IDL 특성](idl-attributes.md)<br/>
 [배열 특성](array-attributes.md)<br/>
-[내보내기](export.md)
+[export](export.md)

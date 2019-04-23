@@ -8,10 +8,10 @@ helpviewer_keywords:
 - custom controls [MFC]
 ms.assetid: 1917a498-f643-457c-b570-9a0af7dbf7bb
 ms.openlocfilehash: c68b60f065e69213b3ab32c887bc7af129a70fef
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58772126"
 ---
 # <a name="tn014-custom-controls"></a>TN014: 사용자 지정 컨트롤
@@ -114,7 +114,7 @@ MFC 일반 샘플 [CTRLTEST](../overview/visual-cpp-samples.md) 자체 그리기
 
 서브클래싱은 대체 하는 것에 대 한 Windows 용어는 <xref:System.Windows.Forms.Control.WndProc%2A> 사용자 지정 된 창 `WndProc` 호출 하는 `WndProc` 기본 기능에 대 한 합니다.
 
-이 용어를 C++ 클래스 파생과 혼동해서는 안됩니다. 설명 하자면 c + + 용어인 *기본 클래스* 및 *클래스를 파생* 비슷합니다 *슈퍼 클래스* 및 *서브 클래스* 는 Windows에서 개체 모델입니다. MFC의 C++ 파생과 Windows의 서브클래싱은 기능적으로 비슷하지만 C++의 경우 동적 서브클래싱이 지원되지 않습니다.
+이 용어를 C++ 클래스 파생과 혼동해서는 안됩니다. 설명 하자면를 C++ 용어 *기본 클래스* 및 *클래스를 파생* 비슷합니다 *슈퍼 클래스* 및 *하위 클래스입니다* 에 Windows 개체 모델입니다. MFC의 C++ 파생과 Windows의 서브클래싱은 기능적으로 비슷하지만 C++의 경우 동적 서브클래싱이 지원되지 않습니다.
 
 `CWnd` 클래스는 C++ 개체(`CWnd`에서 파생)와 Windows의 창 개체(`HWND`) 사이의 연결을 제공합니다.
 

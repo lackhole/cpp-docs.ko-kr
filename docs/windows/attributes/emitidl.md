@@ -1,5 +1,5 @@
 ---
-title: emitidl (c + + COM 특성)
+title: emitidl (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.emitidl
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - emitidl attribute
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
 ms.openlocfilehash: 6c4055e0f14bced1e5047fc502a4bf274126f804
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031636"
 ---
 # <a name="emitidl"></a>emitidl
@@ -46,7 +46,7 @@ ms.locfileid: "59031636"
 
 ## <a name="remarks"></a>설명
 
-후 합니다 **emitidl** 소스 코드 파일에서 c + + 특성이 있으면, IDL 범주 특성은 생성된 된.idl 파일에 배치 됩니다. 없는 경우 없습니다 **emitidl** 특성을 소스 코드 파일의 IDL 특성이 생성된 된.idl 파일에 출력 됩니다.
+후 합니다 **emitidl** C++ 특성을 소스 코드 파일에서 발견 되, IDL 범주 특성은 생성된 된.idl 파일에 배치 됩니다. 없는 경우 없습니다 **emitidl** 특성을 소스 코드 파일의 IDL 특성이 생성된 된.idl 파일에 출력 됩니다.
 
 여러 개 있을 수 있기 **emitidl** 소스 코드 파일의 특성입니다. 하는 경우 `[emitidl(false)];` 후속 없이 파일에서 발생 `[emitidl(true)];`, 특성이 없는 생성된 된.idl 파일에 처리 됩니다.
 

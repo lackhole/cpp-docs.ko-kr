@@ -7,10 +7,10 @@ helpviewer_keywords:
 - __shiftleft128 intrinsic
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
 ms.openlocfilehash: 5fcb797694c7a45dc4f2113f3d2ed4a2f578c894
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024857"
 ---
 # <a name="shiftleft128"></a>__shiftleft128
@@ -37,7 +37,7 @@ unsigned __int64 __shiftleft128(
 *HighPart*<br/>
 [in] 이동할 128 비트 수량 중 상위 64 비트입니다.
 
-*시프트*<br/>
+*Shift*<br/>
 [in] 이동할 비트 수입니다.
 
 ## <a name="return-value"></a>반환 값

@@ -1,5 +1,5 @@
 ---
-title: 컨트롤 (c + + COM 특성)
+title: 컨트롤 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.control
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - Control attribute
 ms.assetid: 3d046bb2-4afe-4cb8-a762-233b296e1975
 ms.openlocfilehash: 223acf774d1cc90d84aed2d0d0c8cb59fc778fa1
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034714"
 ---
 # <a name="control"></a>컨트롤
@@ -25,7 +25,7 @@ ms.locfileid: "59034714"
 
 ## <a name="remarks"></a>설명
 
-**제어** 특성을 의미 합니다 [coclass](coclass.md) 특성입니다. **제어** c + + 특성에 동일한 기능을 합니다 [컨트롤](/windows/desktop/Midl/control) MIDL 특성입니다.
+**제어** 특성을 의미 합니다 [coclass](coclass.md) 특성입니다. **컨트롤** C++ 특성에 동일한 기능을 합니다 [컨트롤](/windows/desktop/Midl/control) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

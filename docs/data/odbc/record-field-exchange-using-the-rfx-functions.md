@@ -11,10 +11,10 @@ helpviewer_keywords:
 - function calls, RFX functions
 ms.assetid: c594300b-5a29-4119-a68b-e7ca32def696
 ms.openlocfilehash: dc717336a5279e7eda1b7c39b19a7c76f9055cd3
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035986"
 ---
 # <a name="record-field-exchange-using-the-rfx-functions"></a>레코드 필드 교환: RFX 함수 사용
@@ -60,11 +60,11 @@ RFX 전역 함수는 레코드 집합에서 데이터 원본 및 필드 데이�
 |`RFX_Date`|`CTime`|
 
 
-자세한 내용은 아래 RFX 함수 설명서를 참조 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md) 에 *클래스 라이브러리 참조*합니다. C + + 데이터 형식을 SQL 데이터 형식에 매핑되는 방법에 대 한 내용은 c + + 데이터 형식에 매핑되는 ANSI SQL 데이터 형식 표를 참조에서 [SQL: SQL 및 c + + 데이터 형식 (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)합니다.
+자세한 내용은 아래 RFX 함수 설명서를 참조 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md) 에 *클래스 라이브러리 참조*합니다. 하는 방법에 대 한 자세한 C++ SQL 데이터 형식으로 데이터 형식 맵 ANSI SQL 데이터 형식 매핑 표를 참조 하려면 C++ 의 데이터 형식 [SQL: SQL 및 C++ 데이터 형식 (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[RFX](../../data/odbc/record-field-exchange-rfx.md)<br/>
+[RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [레코드 필드 교환: RFX 작동 방식](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>
 [레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
 [레코드 집합: 동적으로 데이터 열 바인딩 (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>

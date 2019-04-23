@@ -7,10 +7,10 @@ helpviewer_keywords:
 - _writecr8 intrinsic
 ms.assetid: 6f8bd632-dddb-4335-971e-1acee24aa2b9
 ms.openlocfilehash: 44b009e68f3dd7825bc064e5f9f4ee8d03d7fb4a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024766"
 ---
 # <a name="writecr8"></a>__writecr8
@@ -29,7 +29,7 @@ void writecr8(
 
 #### <a name="parameters"></a>매개 변수
 
-*데이터*<br/>
+*Data*<br/>
 [in] CR8 레지스터에 쓸 값입니다.
 
 ## <a name="requirements"></a>요구 사항

@@ -1,5 +1,5 @@
 ---
-title: 원본 (c + + COM 특성)
+title: 원본 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.source
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - source attribute
 ms.assetid: 1878d05d-7709-4e97-b114-c62f38f5140e
 ms.openlocfilehash: 699ea64de49a4383bc8fb62b2f3b2133d7c496c9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030247"
 ---
 # <a name="source-c"></a>source(C++)
@@ -25,12 +25,12 @@ ms.locfileid: "59030247"
 
 ### <a name="parameters"></a>매개 변수
 
-*인터페이스*<br/>
+*interfaces*<br/>
 하나 이상의 인터페이스 소스를 적용 하는 경우 지정 하는 특성 클래스입니다. 원본 속성 또는 메서드에 적용 될 때이 매개 변수 사용 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **원본** c + + 특성에 동일한 기능을 합니다 [원본](/windows/desktop/Midl/source) MIDL 특성입니다.
+**원본** C++ 특성에 동일한 기능을 합니다 [소스](/windows/desktop/Midl/source) MIDL 특성.
 
 사용할 수는 [기본](default-cpp.md) 개체에 대 한 기본 소스 인터페이스를 지정 하는 특성입니다.
 

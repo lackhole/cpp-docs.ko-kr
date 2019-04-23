@@ -66,10 +66,10 @@ helpviewer_keywords:
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
 ms.openlocfilehash: 94c7025185a24b07d5968157d49c856d4359b33a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59021633"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection 클래스
@@ -102,11 +102,11 @@ class CDataConnection
 |||
 |-|-|
 |[연산자 BOOL](#op_bool)|현재 세션이 열려 있는지 여부를 결정 합니다.|
-|[연산자 bool](#op_bool_ole)|현재 세션이 열려 있는지 여부를 결정 합니다.|
-|[CDataSource 연산자 &](#op_cdata_amp)|포함된 된 참조를 반환 합니다 `CDataSource` 개체입니다.|
-|[CDataSource * 연산자](#op_cdata_star)|포함된 `CDataSource` 개체에 대한 포인터를 반환합니다.|
-|[연산자 CSession&](#op_csession_amp)|포함된 된 참조를 반환 합니다 `CSession` 개체입니다.|
-|[연산자 CSession*](#op_csession_star)|포함된 `CSession` 개체에 대한 포인터를 반환합니다.|
+|[operator bool](#op_bool_ole)|현재 세션이 열려 있는지 여부를 결정 합니다.|
+|[operator CDataSource&](#op_cdata_amp)|포함된 된 참조를 반환 합니다 `CDataSource` 개체입니다.|
+|[operator CDataSource*](#op_cdata_star)|포함된 `CDataSource` 개체에 대한 포인터를 반환합니다.|
+|[연산자 CSession &](#op_csession_amp)|포함된 된 참조를 반환 합니다 `CSession` 개체입니다.|
+|[연산자 CSession *](#op_csession_star)|포함된 `CSession` 개체에 대한 포인터를 반환합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -187,7 +187,7 @@ HRESULT OpenNewSession(CSession & session) throw();
 
 #### <a name="parameters"></a>매개 변수
 
-*세션*<br/>
+*session*<br/>
 [에서/out] 새 세션 개체에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -224,7 +224,7 @@ operator bool() throw();
 
 ### <a name="remarks"></a>설명
 
-반환 된 **bool** (c + + 데이터 형식) 값입니다. **true** 열려 있습니다; 현재 세션은 **false** 현재 세션이 닫힌 것을 의미 합니다.
+반환 된 **bool** (C++ 데이터 형식) 값입니다. **true** 열려 있습니다; 현재 세션은 **false** 현재 세션이 닫힌 것을 의미 합니다.
 
 ## <a name="op_cdata_amp"></a> CDataConnection::operator CDataSource&amp;
 
@@ -306,5 +306,5 @@ operator const CSession*() throw();
 
 ## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

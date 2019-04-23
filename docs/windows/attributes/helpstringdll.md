@@ -1,5 +1,5 @@
 ---
-title: helpstringdll (c + + COM 특성)
+title: helpstringdll (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.helpstringdll
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - helpstringdll attribute [C++]
 ms.assetid: 121271fa-f061-492b-b87f-bbfcf4b02e7b
 ms.openlocfilehash: 72f5926018e3ac7ec4770f83d7a2c3438b67d861
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025207"
 ---
 # <a name="helpstringdll"></a>typelib
@@ -30,7 +30,7 @@ ms.locfileid: "59025207"
 
 ## <a name="remarks"></a>설명
 
-합니다 **helpstringdll** c + + 특성에 동일한 기능을 합니다 [helpstringdll](/windows/desktop/Midl/helpstringdll) MIDL 특성입니다.
+**helpstringdll** C++ 특성에 동일한 기능을 합니다 [helpstringdll](/windows/desktop/Midl/helpstringdll) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

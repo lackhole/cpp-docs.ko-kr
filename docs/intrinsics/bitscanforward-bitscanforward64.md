@@ -12,10 +12,10 @@ helpviewer_keywords:
 - BitScanForward intrinsic
 ms.assetid: 405e60fb-0815-42a7-9b02-6fc035122203
 ms.openlocfilehash: 8b09aeee485611ddd20d51b4c1e36ec98c03c26e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59022569"
 ---
 # <a name="bitscanforward-bitscanforward64"></a>_BitScanForward, _BitScanForward64
@@ -39,10 +39,10 @@ unsigned char _BitScanForward64(
 
 #### <a name="parameters"></a>매개 변수
 
-*인덱스*<br/>
+*Index*<br/>
 [out] 찾은 첫 번째 설정 비트 (1)의 비트 위치를 사용 하 여 로드 합니다.
 
-*마스크*<br/>
+*Mask*<br/>
 [in] 검색할 32 비트 또는 64 비트 값입니다.
 
 ## <a name="return-value"></a>반환 값

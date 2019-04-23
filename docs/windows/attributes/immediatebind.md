@@ -1,5 +1,5 @@
 ---
-title: immediatebind (c + + COM 특성)
+title: immediatebind (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.immediatebind
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - immediatebind attribute
 ms.assetid: 186d40e6-9166-4d0c-9853-4e7e4d25226f
 ms.openlocfilehash: 1844e72ecd1fe7c0f4255426eb48f5c70471e5f5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036210"
 ---
 # <a name="immediatebind"></a>immediatebind
@@ -25,7 +25,7 @@ ms.locfileid: "59036210"
 
 ## <a name="remarks"></a>설명
 
-합니다 **immediatebind** c + + 특성에 동일한 기능을 합니다 [immediatebind](/windows/desktop/Midl/immediatebind) MIDL 특성입니다.
+**immediatebind** C++ 특성에 동일한 기능을 합니다 [immediatebind](/windows/desktop/Midl/immediatebind) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

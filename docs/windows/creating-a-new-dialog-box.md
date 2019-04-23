@@ -1,5 +1,5 @@
 ---
-title: '방법: 만들기 대화 상자 (c + +)'
+title: '방법: 대화 상자를 만들려면 (C++)'
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.dialog
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
 ms.openlocfilehash: c5f026683881ba8e608bd00089879e0e2a7b4af2
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036330"
 ---
-# <a name="how-to-create-a-dialog-box-c"></a>방법: 만들기 대화 상자 (c + +)
+# <a name="how-to-create-a-dialog-box-c"></a>방법: 대화 상자를 만들려면 (C++)
 
-위치 및 크기의 c + + 대화 상자, 위치 및 안에 있는 컨트롤의 크기는 대화 단위로 측정 됩니다. 개별 컨트롤 및 대화 상자에 대 한 값은 Visual Studio 상태를 선택 하면 표시줄의 오른쪽 아래에 나타납니다.
+크기와 위치는 C++ 대화 상자, 위치 및 안에 있는 컨트롤의 크기 대화 단위로 측정 됩니다. 개별 컨트롤 및 대화 상자에 대 한 값은 Visual Studio 상태를 선택 하면 표시줄의 오른쪽 아래에 나타납니다.
 
 > [!NOTE]
 > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.

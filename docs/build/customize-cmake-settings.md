@@ -3,12 +3,12 @@ title: Visual Studio에서 CMake 빌드 설정 사용자 지정
 ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake build settings
-ms.openlocfilehash: 1bdf4ef3e20b055b6fa3d5449a880ddb7aab44a0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.openlocfilehash: 4864e094ab967a563b153fa79fd0bf5c375f40f7
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59037525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124891"
 ---
 # <a name="customize-cmake-build-settings"></a>CMake 빌드 설정 사용자 지정
 
@@ -79,14 +79,18 @@ JSON IntelliSense를 사용하면 `CMakeSettings.json` 파일을 편집할 수 �
 "variables": [
     {
       "name": "CMAKE_CXX_COMPILER",
-      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe"
+      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe",
+      "type": "FILEPATH"
     },
     {
       "name": "CMAKE_C_COMPILER",
-      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe"
+      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe",
+      "type": "FILEPATH"
     }
   ]
 ```
+
+정의 하지 않으면 경우는 `"type"`, 기본적으로 "STRING" 형식으로 간주 됩니다.
 
 - **cmakeCommandArgs**: CMake.exe에 전달하려는 추가 스위치를 지정합니다.
 
@@ -100,16 +104,16 @@ JSON IntelliSense를 사용하면 `CMakeSettings.json` 파일을 편집할 수 �
 
 ## <a name="environment-variables"></a>환경 변수
 
- `CMakeSettings.json` 또한 위에 언급 된 속성 중 하나에서 사용 중인 환경 변수를 지원 합니다. 사용되는 구문은 %FOO% 환경 변수를 확장한 `${env.FOO}`입니다.
+ `CMakeSettings.json`은 위에서 언급한 속성 중 하나에서 환경 변수를 사용하는 것도 지원합니다. 사용되는 구문은 %FOO% 환경 변수를 확장한 `${env.FOO}`입니다.
 또한 이 파일에 기본 제공된 매크로에 액세스할 수 있습니다.
 
-- `${workspaceRoot}` -작업 영역 폴더의 전체 경로 제공 합니다.
-- `${workspaceHash}` -작업 영역 위치; 해시 현재 작업 영역 (예: 폴더 경로에 사용)에 대 한 고유 식별자를 만드는 데 유용
-- `${projectFile}` – 루트 CMakeLists.txt 파일의 전체 경로
-- `${projectDir}` – 루트 CMakeLists.txt 파일과 폴더의 전체 경로
-- `${thisFile}` –의 전체 경로 `CMakeSettings.json` 파일
-- `${name}` – 구성의 이름
-- `${generator}` –이 구성에 사용 되는 CMake 생성기의 이름
+- `${workspaceRoot}` - 작업 영역 폴더의 전체 경로를 제공합니다.
+- `${workspaceHash}` - 작업 영역 위치의 해시입니다. 현재 작업 영역에 대한 고유 식별자를 만드는 데 유용합니다(예: 폴더 경로에서 사용).
+- `${projectFile}` - 루트 CMakeLists.txt 파일의 전체 경로
+- `${projectDir}` - 루트 CMakeLists.txt 파일의 폴더에 대한 전체 경로
+- `${thisFile}` – `CMakeSettings.json` 파일의 전체 경로입니다.
+- `${name}` - 구성의 이름
+- `${generator}` - 이 구성에 사용된 CMake 생성기의 이름
 
 ## <a name="ninja-command-line-arguments"></a>Ninja 명령줄 인수
 
@@ -137,7 +141,7 @@ usage: ninja [options] [targets...]
 
 ## <a name="inherited-environments"></a>상속된 환경
 
- `CMakeSettings.json` 지원 환경을 상속 합니다. 이 기능을 사용하면 (1) 기본 환경을 상속하고, (2) 실행될 때 CMake.exe에 전달되는 사용자 지정 환경 변수를 만들 수 있습니다.
+ `CMakeSettings.json`은 상속된 환경을 지원합니다. 이 기능을 사용하면 (1) 기본 환경을 상속하고, (2) 실행될 때 CMake.exe에 전달되는 사용자 지정 환경 변수를 만들 수 있습니다.
 
 ```json
   "inheritEnvironments": [ "msvc_x64_x64" ]
@@ -210,7 +214,9 @@ usage: ninja [options] [targets...]
       "environments": [
         {
           // Replace the global property entirely.
-          "BuildDir": "D:\\custom-builddir",
+          "BuildDir": "D:\\custom-builddir"
+          // This environment does not specify a namespace, hence by default "env" will be assumed.
+          // "namespace" : "name" would require that this variable be referenced with "${name.BuildDir}".
         }
       ],
 

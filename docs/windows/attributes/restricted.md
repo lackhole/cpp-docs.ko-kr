@@ -1,5 +1,5 @@
 ---
-title: 제한 (c + + COM 특성)
+title: 제한 (C++ COM 특성)
 ms.date: 10/03/2018
 f1_keywords:
 - vc-attr.restricted
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - restricted attribute
 ms.assetid: 504a96be-b904-4269-8be1-920feba201b4
 ms.openlocfilehash: 86f40fa49daf88668e37bef07f0db33d01cf1942
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029516"
 ---
 # <a name="restricted"></a>restricted
@@ -27,12 +27,12 @@ ms.locfileid: "59029516"
 
 ### <a name="parameters"></a>매개 변수
 
-*인터페이스*<br/>
+*interfaces*<br/>
 호출할 수 없습니다 임의로 COM 개체에는 하나 이상의 인터페이스입니다. 이 매개 변수는 클래스에 적용 하는 경우에 유효만 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **제한** c + + 특성에 동일한 기능을 합니다 [제한](/windows/desktop/Midl/restricted) MIDL 특성입니다.
+**제한** C++ 특성에 동일한 기능을 합니다 [제한](/windows/desktop/Midl/restricted) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

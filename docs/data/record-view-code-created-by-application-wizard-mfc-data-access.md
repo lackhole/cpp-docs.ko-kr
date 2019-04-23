@@ -7,15 +7,15 @@ helpviewer_keywords:
 - record views, application wizard code
 ms.assetid: 18fd4703-5939-491d-b759-985f767b951f
 ms.openlocfilehash: e25ca9cad1390dd11ab7328ffefed31badf6fc0b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036077"
 ---
 # <a name="record-view-code-created-by-application-wizard--mfc-data-access"></a>응용 프로그램 마법사가 만든 레코드 뷰 코드  (MFC Data Access)
 
-[MFC 응용 프로그램 마법사](../mfc/reference/database-support-mfc-application-wizard.md) 뷰의 재정의 `OnInitialUpdate` 고 `OnGetRecordset` 멤버 함수입니다. 프레임워크는 프레임 창, 문서 및 뷰를 만든 후 `OnInitialUpdate`를 호출하여 뷰를 초기화합니다. `OnInitialUpdate` 문서에서 레코드 집합에 대 한 포인터를 가져옵니다. 기본 클래스에 대 한 호출 [cview:: Oninitialupdate](../mfc/reference/cview-class.md#oninitialupdate) 함수 레코드 집합을 엽니다. 다음 코드에서는이 프로세스는 `CRecordView`:
+[MFC 응용 프로그램 마법사](../mfc/reference/database-support-mfc-application-wizard.md) 뷰의 재정의 `OnInitialUpdate` 고 `OnGetRecordset` 멤버 함수입니다. 프레임워크는 프레임 창, 문서 및 뷰를 만든 후 `OnInitialUpdate`를 호출하여 뷰를 초기화합니다. `OnInitialUpdate`는 문서에서 레코드 집합에 대한 포인터를 가져옵니다. 기본 클래스에 대 한 호출 [cview:: Oninitialupdate](../mfc/reference/cview-class.md#oninitialupdate) 함수 레코드 집합을 엽니다. 다음 코드에서는이 프로세스는 `CRecordView`:
 
 ```cpp
 void CSectionForm::OnInitialUpdate()

@@ -11,10 +11,10 @@ helpviewer_keywords:
 - RFX (ODBC) [C++], binding fields and parameters
 ms.assetid: e647cacd-62b0-4b80-9e20-b392deca5a88
 ms.openlocfilehash: 7da9d480f16dcb6bc5ded0a1dff559b1b1ac4b38
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032679"
 ---
 # <a name="record-field-exchange-how-rfx-works"></a>레코드 필드 교환: RFX 작동 방식
@@ -64,7 +64,7 @@ ms.locfileid: "59032679"
 ||4. 매개 변수 데이터 멤버에 바인딩하십시오.||
 ||5. 열에 필드 데이터 멤버를 바인딩하십시오.||
 |||6. ODBC에서 이동 하는 데이터를 채웁니다.|
-||7. C + +에 대 한 데이터를 수정 합니다.||
+||7. 에 대 한 데이터를 수정 C++입니다.||
 
 레코드 집합 ODBC의 준비 된 실행을 사용 하 여 동일한 SQL 문을 사용 하 여 빠르게 다시 쿼리할 수 있도록 합니다. 준비 된 실행에 대 한 자세한 내용은 ODBC SDK를 참조 하세요 *프로그래머 참고 자료* MSDN 라이브러리에서.
 
@@ -80,7 +80,7 @@ ms.locfileid: "59032679"
 |--------------------|-------------------------------|-----------------------------|
 |1. 호출 `MoveNext` 또는 기타 이동 기능 중 하나입니다.|||
 |||2. ODBC에서 이동 하는 데이터를 채웁니다.|
-||3. C + +에 대 한 데이터를 수정 합니다.||
+||3. 에 대 한 데이터를 수정 C++입니다.||
 
 ###  <a name="_mfc_rfx.3a_.adding_new_records_and_editing_existing_records"></a> RFX: 새 레코드를 추가 하 고 기존 레코드를 편집 합니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "59032679"
 
 1. `AddNew` 또는 `Edit` RFX 변경 된 필드 데이터 멤버를 검색할 수 있도록 편집 버퍼에 필드를 준비 합니다.
 
-   새 레코드를 가진 새 항목을 비교할 값이 없는 이전에 있으므로 `AddNew` PSEUDO_NULL 값으로 각 필드 데이터 멤버의 값을 설정 합니다. 나중에 호출할 때 `Update`, RFX PSEUDO_NULL 값을 사용 하 여 각 데이터 멤버의 값을 비교 합니다. 차이가 없으면 데이터 멤버가 설정 되었습니다. (PSEUDO_NULL Null 값이 true 인 레코드 열으로 같지는 않습니다도 이러한 중 하나는 c + + NULL와 동일 합니다.)
+   새 레코드를 가진 새 항목을 비교할 값이 없는 이전에 있으므로 `AddNew` PSEUDO_NULL 값으로 각 필드 데이터 멤버의 값을 설정 합니다. 나중에 호출할 때 `Update`, RFX PSEUDO_NULL 값을 사용 하 여 각 데이터 멤버의 값을 비교 합니다. 차이가 없으면 데이터 멤버가 설정 되었습니다. (PSEUDO_NULL Null 값이 true 인 레코드 열으로 같지는 않습니다도 이러한 중 하나는 동일 C++ NULL입니다.)
 
    달리 합니다 `Update` 에 대 한 호출 `AddNew`의 `Update` 에 대 한 호출 `Edit` PSEUDO_NULL 사용 하기 보다는 이전에 저장 된 값을 사용 하 여 업데이트 된 값을 비교 합니다. 차이점은 `AddNew` 값이 없는 이전에 저장 된 비교 합니다.
 
@@ -122,7 +122,7 @@ ms.locfileid: "59032679"
 
 ## <a name="see-also"></a>참고자료
 
-[RFX](../../data/odbc/record-field-exchange-rfx.md)<br/>
+[RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [MFC ODBC 소비](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
 [매크로, 전역 함수 및 전역 변수](../../mfc/reference/mfc-macros-and-globals.md)<br/>
 [CFieldExchange 클래스](../../mfc/reference/cfieldexchange-class.md)<br/>

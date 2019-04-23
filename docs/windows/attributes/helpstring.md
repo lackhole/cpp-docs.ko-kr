@@ -1,5 +1,5 @@
 ---
-title: helpstring (c + + COM 특성)
+title: helpstring (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.helpstring
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - helpstring attribute [C++]
 ms.assetid: 0401e905-a63e-4fad-98d0-d1efea111966
 ms.openlocfilehash: 623b2c7fb4ce7c3e5de87d21f012d008720fdee2
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59022207"
 ---
 # <a name="helpstring"></a>helpstring
@@ -30,7 +30,7 @@ ms.locfileid: "59022207"
 
 ## <a name="remarks"></a>설명
 
-합니다 **helpstring** c + + 특성에 동일한 기능을 합니다 [helpstring](/windows/desktop/Midl/helpstring) MIDL 특성입니다.
+**helpstring** C++ 특성에 동일한 기능을 합니다 [helpstring](/windows/desktop/Midl/helpstring) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

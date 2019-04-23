@@ -5,10 +5,10 @@ helpviewer_keywords:
 - Open Folder Projects in Visual C++
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ms.openlocfilehash: 380a96bcb1a119b2b6d4104d60936217d1350fbb
-ms.sourcegitcommit: 35c4b3478f8cc310ebbd932a18963ad8ab846ed9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59237135"
 ---
 # <a name="open-folder-projects-for-c"></a>C++의 폴더 열기 프로젝트
@@ -64,7 +64,7 @@ IntelliSense 및 검색 동작은 #include 경로, 컴파일러 스위치 및 �
 
 ![폴더 열기 구성 작업](media/open-folder-config-tasks.png)
 
-이 만듭니다 (또는 열립니다)는 **tasks.vs.json** Visual Studio 루트 프로젝트 폴더에 만드는.vs 폴더의 파일입니다. 이 파일에서 임의의 작업을 정의한 다음, 상황에 맞는 **솔루션 탐색기** 메뉴에서 호출할 수 있습니다. 다음 예제에서는 단일 작업을 정의하는 tasks.vs.json 파일을 보여 줍니다. `taskName` 상황에 맞는 메뉴에 표시 되는 이름을 정의 합니다. `appliesTo` 명령에서 수행할 수 있는 파일을 정의 합니다. `command` 속성은 콘솔에 대한 경로(Windows의 경우 cmd.exe)를 식별하는 COMSPEC 환경 변수를 참조합니다. CppProperties.json 또는 CMakeSettings.json에 선언된 환경 변수를 참조할 수도 있습니다. `args` 속성은 호출할 명령줄을 지정합니다. `${file}` 매크로는 **솔루션 탐색기**에서 선택한 파일을 검색합니다. 다음 예제에서는 현재 선택된 .cpp 파일의 파일 이름을 표시합니다.
+이 만듭니다 (또는 열립니다)는 **tasks.vs.json** Visual Studio 루트 프로젝트 폴더에 만드는.vs 폴더의 파일입니다. 이 파일에서 임의의 작업을 정의한 다음, 상황에 맞는 **솔루션 탐색기** 메뉴에서 호출할 수 있습니다. 다음 예제에서는 단일 작업을 정의하는 tasks.vs.json 파일을 보여 줍니다. `taskName`은 상황에 맞는 메뉴에 표시되는 이름을 정의합니다. `appliesTo`는 명령을 수행할 수 있는 파일을 정의합니다. `command` 속성은 콘솔에 대한 경로(Windows의 경우 cmd.exe)를 식별하는 COMSPEC 환경 변수를 참조합니다. CppProperties.json 또는 CMakeSettings.json에 선언된 환경 변수를 참조할 수도 있습니다. `args` 속성은 호출할 명령줄을 지정합니다. `${file}` 매크로는 **솔루션 탐색기**에서 선택한 파일을 검색합니다. 다음 예제에서는 현재 선택된 .cpp 파일의 파일 이름을 표시합니다.
 
 ```json
 {

@@ -11,10 +11,10 @@ helpviewer_keywords:
 - dynasets
 ms.assetid: 2867e6be-208e-4fe7-8bbe-b8697cb1045c
 ms.openlocfilehash: 21c47546d14d9a121bdd0698fe96eb133dbc44a0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040412"
 ---
 # <a name="dynaset"></a>다이너셋
@@ -69,7 +69,7 @@ SQL 구문을 사용 하는 위치 지정된 업데이트 (양식의 **WHERE CUR
 
 ODBC 커서 라이브러리에 의해 유지 관리 하는 중간 저장소를 사용 하는 스냅숏 달리 다이너셋 스크롤 하는 즉시 직접 데이터 원본에서에서 레코드를 가져옵니다. 이렇게 하면 원래 데이터 원본과 동기화 다이너셋에서 선택한 레코드.
 
-이 버전의 Visual c + +에 포함 된 ODBC 드라이버의 목록을 추가 드라이버를 가져오는 방법은 참조 [ODBC 드라이버 목록](../../data/odbc/odbc-driver-list.md)합니다.
+시각적 개체의이 버전에 포함 된 ODBC 드라이버의 목록은 C++ 추가 드라이버를 얻는 방법에 대 한 자세한 내용은 참조 [ODBC 드라이버 목록](../../data/odbc/odbc-driver-list.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

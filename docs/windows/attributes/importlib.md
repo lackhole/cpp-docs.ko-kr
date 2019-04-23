@@ -1,5 +1,5 @@
 ---
-title: importlib (c + + COM 특성)
+title: importlib (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.importlib
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - importlib attribute
 ms.assetid: f129e459-b8d3-4aca-a0bc-ee53e18b62ed
 ms.openlocfilehash: 29c7df8fbedbd107a9bb0b05466addc4672fc555
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041447"
 ---
 # <a name="importlib"></a>importlib
@@ -30,7 +30,7 @@ ms.locfileid: "59041447"
 
 ## <a name="remarks"></a>설명
 
-합니다 **importlib** c + + 특성을 사용 하면는 `importlib` 문이 생성된 된.idl 파일의 라이브러리 블록에 배치 합니다. 합니다 **importlib** 특성이 동일한 기능을 합니다 [importlib](/windows/desktop/Midl/importlib) MIDL 특성입니다.
+합니다 **importlib** C++ 원인 특성는 `importlib` 문이 생성된 된.idl 파일의 라이브러리 블록에 배치 합니다. 합니다 **importlib** 특성이 동일한 기능을 합니다 [importlib](/windows/desktop/Midl/importlib) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

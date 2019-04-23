@@ -1,5 +1,5 @@
 ---
-title: displaybind (c + + COM 특성)
+title: displaybind (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.displaybind
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - displaybind attribute
 ms.assetid: b3d70396-78e4-43d9-9583-16ddb8c9bb1f
 ms.openlocfilehash: b16e809781170d0c5dfe301e6dd73e6a27046835
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028621"
 ---
 # <a name="displaybind"></a>displaybind
@@ -25,7 +25,7 @@ ms.locfileid: "59028621"
 
 ## <a name="remarks"></a>설명
 
-합니다 **displaybind** c + + 특성에 동일한 기능을 합니다 [displaybind](/windows/desktop/Midl/displaybind) MIDL 특성입니다.
+**displaybind** C++ 특성에 동일한 기능을 합니다 [displaybind](/windows/desktop/Midl/displaybind) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

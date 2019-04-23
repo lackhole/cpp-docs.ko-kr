@@ -1,5 +1,5 @@
 ---
-title: auto (c + +)
+title: 자동 (C++)
 ms.date: 11/04/2016
 f1_keywords:
 - auto_CPP
@@ -8,13 +8,13 @@ helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
 ms.openlocfilehash: 3d77a17d490f8d7680f095367c309ce0e4f366b7
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58776338"
 ---
-# <a name="auto-c"></a>auto (c + +)
+# <a name="auto-c"></a>자동 (C++)
 
 초기화 식에서 선언된 변수의 형식을 추론합니다.
 
@@ -50,9 +50,9 @@ auto declarator initializer;
 
 사용 하 여 **자동** 키워드 대신 사용 하 여 형식 변수를 선언 및 초기화 식을 지정 합니다. 수정할 수는 또한 합니다 **자동** 키워드와 같은 지정자와 선언 자를 사용 하 여 **const**를 **volatile**, 포인터 (`*`), 참조 (`&`), 및 rvalue 참조 (`&&`). 컴파일러는 초기화 식을 계산하고 해당 정보를 사용하여 변수의 형식을 추론합니다.
 
-초기화 식은 할당 (등호 구문), 직접 초기화 (함수-스타일 구문)이 될 수는 [new 연산자](new-operator-cpp.md) 식 또는 초기화 식 수는  *에 대 한 범위-선언* 의 매개 변수를 [범위에 대 한 문 (c + +)를 기준으로](../cpp/range-based-for-statement-cpp.md) 문입니다. 자세한 내용은 [이니셜라이저](../cpp/initializers.md) 및이 문서의 코드 예제입니다.
+초기화 식은 할당 (등호 구문), 직접 초기화 (함수-스타일 구문)이 될 수는 [new 연산자](new-operator-cpp.md) 식 또는 초기화 식 수는  *에 대 한 범위-선언* 의 매개 변수를 [범위 기반 for 문 (C++)](../cpp/range-based-for-statement-cpp.md) 문입니다. 자세한 내용은 [이니셜라이저](../cpp/initializers.md) 및이 문서의 코드 예제입니다.
 
-합니다 **자동** 키워드는 형식에 대 한 자리 표시자 이지만 그 자체가 형식입니다. 따라서 합니다 **자동** 키워드의 캐스트 또는 연산자와 같은 사용할 수 없습니다 [sizeof](../cpp/sizeof-operator.md) 하 고 (C + + CLI) [typeid](../extensions/typeid-cpp-component-extensions.md)합니다.
+합니다 **자동** 키워드는 형식에 대 한 자리 표시자 이지만 그 자체가 형식입니다. 따라서 합니다 **자동** 키워드의 캐스트 또는 연산자와 같은 사용할 수 없습니다 [sizeof](../cpp/sizeof-operator.md) 하 고 (에 대 한 C++/CLI) [typeid](../extensions/typeid-cpp-component-extensions.md).
 
 ## <a name="usefulness"></a>유용성
 
@@ -225,7 +225,7 @@ int main()
 [C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [/Zc:auto(변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
 [sizeof 연산자](../cpp/sizeof-operator.md)<br/>
-[typeid(C++ 구성 요소 확장)](../extensions/typeid-cpp-component-extensions.md)<br/>
+[typeid](../extensions/typeid-cpp-component-extensions.md)<br/>
 [operator new](new-operator-cpp.md)<br/>
 [선언 및 정의](declarations-and-definitions-cpp.md)<br/>
 [람다 식의 예](../cpp/examples-of-lambda-expressions.md)<br/>

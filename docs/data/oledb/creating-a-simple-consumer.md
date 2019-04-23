@@ -5,10 +5,10 @@ helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
 ms.openlocfilehash: 060a39a8436ff73900ebfaea7d1c882b9862ee7e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025139"
 ---
 # <a name="creating-a-simple-consumer"></a>단순 소비자 만들기
@@ -21,7 +21,7 @@ ms.locfileid: "59025139"
 
    **새 프로젝트** 대화 상자가 나타납니다.
 
-1. 에 **프로젝트 형식** 창 클릭 합니다 **설치 됨** > **Visual c + +** > **Windows Desktop** 폴더 클릭 하 고는 **Windows 데스크톱 마법사** 아이콘에는 **템플릿** 창입니다. 에 **이름을** 상자에 예를 들어 프로젝트의 이름을 입력 합니다 *MyCons*합니다.
+1. 에 **프로젝트 형식** 창 클릭 합니다 **설치 됨** > **Visual C++**   >  **Windows Desktop** 폴더를 마우스 클릭 합니다 **Windows 데스크톱 마법사** 아이콘에는 **템플릿** 창. 에 **이름을** 상자에 예를 들어 프로젝트의 이름을 입력 합니다 *MyCons*합니다.
 
 1. **확인**을 클릭합니다.
 
@@ -41,7 +41,7 @@ ms.locfileid: "59025139"
 
    **새 항목 추가** 대화 상자가 나타납니다.
 
-1. 에 **범주** 창 클릭 **설치 됨** > **Visual c + +** > **ATL**를 클릭 합니다 **ATL OLEDB 소비자** 아이콘에는 **템플릿** 창과 클릭 **추가**합니다.
+1. 에 **범주** 창 클릭 **설치 됨** > **시각적 C++**   >  **ATL**를 클릭 합니다  **ATL OLEDB 소비자** 아이콘에는 **템플릿을** 창과 클릭 **추가**합니다.
 
    합니다 **ATL OLEDB 소비자 마법사** 나타납니다.
 

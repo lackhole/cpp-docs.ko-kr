@@ -35,10 +35,10 @@ helpviewer_keywords:
 - _InterlockedXor intrinsic
 ms.assetid: faef1796-cb5a-4430-b1e2-9d5eaf9b4a91
 ms.openlocfilehash: c86a743df84df37ffe3234d82d79abd987a4dcda
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023140"
 ---
 # <a name="interlockedxor-intrinsic-functions"></a>_InterlockedXor Intrinsic Functions
@@ -153,7 +153,7 @@ __int64 _InterlockedXor64_rel(
 *값*<br/>
 [out에서] 결과 교체 첫 번째 피연산자에 대 한 포인터입니다.
 
-*마스크*<br/>
+*Mask*<br/>
 [in] 두 번째 피연산자입니다.
 
 ## <a name="return-value"></a>반환 값

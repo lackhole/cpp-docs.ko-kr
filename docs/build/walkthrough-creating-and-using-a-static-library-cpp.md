@@ -1,5 +1,5 @@
 ---
-title: '연습: 만들기 및 정적 라이브러리 (c + +)를 사용 합니다.'
+title: '연습: 정적 라이브러리 만들기 및 사용 (C++)'
 ms.custom: get-started-article
 ms.date: 09/18/2018
 helpviewer_keywords:
@@ -8,13 +8,13 @@ helpviewer_keywords:
 ms.assetid: 3cc36411-7d66-4240-851e-dacb9a8fd6ac
 ms.author: corob
 ms.openlocfilehash: 0d527681abb077a01b3d902c092a21de7a052867
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031510"
 ---
-# <a name="walkthrough-creating-and-using-a-static-library-c"></a>연습: 만들기 및 정적 라이브러리 (c + +)를 사용 합니다.
+# <a name="walkthrough-creating-and-using-a-static-library-c"></a>연습: 정적 라이브러리 만들기 및 사용 (C++)
 
 이 단계별 연습에서는 C++ 앱에 사용할 수 있도록 정적 라이브러리(.lib 파일)를 만드는 방법을 보여 줍니다. 정적 라이브러리를 사용하면 코드를 매우 편리하게 다시 사용할 수 있습니다. 필요한 기능을 작성 하는 모든 앱에서 동일한 루틴을 인해야 하는 대신 정적 라이브러리에서 시간 하 고 앱에서 참조 합니다. 정적 라이브러리에서 연결된 코드는 응용 프로그램의 일부가 되므로 코드를 사용하기 위해 다른 파일을 설치할 필요가 없습니다.
 
@@ -40,10 +40,10 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-1. 왼쪽된 창에서 합니다 **새 프로젝트** 대화 상자에서 **설치 됨** > **Visual c + +** 를 선택한 후 **Windows Desktop**. 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다.
+1. 왼쪽된 창에서를 **새 프로젝트** 대화 상자에서 **설치 됨** > **Visual C++** 를 선택한 후 **Windows데스크톱**. 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다.
 
    > [!NOTE]
-   > Visual Studio 2017 년 보다 오래 된 버전에 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**  >  **Visual c + +** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 콘솔 애플리케이션**을 선택합니다.
+   > Visual Studio 2017 년 보다 오래 된 버전에 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**  >  **시각적 C++** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 콘솔 애플리케이션**을 선택합니다.
 
 1. *이름*상자에서 프로젝트 이름(예: **MathFuncsLib** )을 지정합니다. *솔루션 이름*상자에서 솔루션 이름(예: **StaticLibrary** )을 지정합니다. **확인** 단추를 선택합니다.
 
@@ -88,10 +88,10 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-1. 왼쪽된 창에서 합니다 **새 프로젝트** 대화 상자에서 **설치 됨** > **Visual c + +** 를 선택한 후 **Windows Desktop**. 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다.
+1. 왼쪽된 창에서를 **새 프로젝트** 대화 상자에서 **설치 됨** > **Visual C++** 를 선택한 후 **Windows데스크톱**. 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다.
 
    > [!NOTE]
-   > Visual Studio 2017 년 보다 오래 된 버전에 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**  >  **Visual c + +** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 콘솔 애플리케이션**을 선택합니다.
+   > Visual Studio 2017 년 보다 오래 된 버전에 **새 프로젝트** 대화 상자에서 **설치 됨** > **템플릿**  >  **시각적 C++** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 콘솔 애플리케이션**을 선택합니다.
 
 1. *이름*상자에서 프로젝트 이름(예: **MyExecRefsLib** )을 지정합니다. **솔루션**옆에 있는 드롭다운 목록에서 **솔루션에 추가**를 선택합니다. 이 명령은 정적 라이브러리를 포함 하는 솔루션에 새 프로젝트를 추가 합니다. **확인** 단추를 선택합니다.
 
@@ -146,5 +146,5 @@ C++ 언어의 기본적인 사항을 알고 있어야 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[연습: 동적 연결 라이브러리 (c + +) 만들기 및 사용](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
+[연습: 동적 연결 라이브러리 만들기 및 사용(C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
 [데스크톱 응용 프로그램(Visual C++)](../windows/desktop-applications-visual-cpp.md)<br/>

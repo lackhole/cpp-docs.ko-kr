@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4383
 ms.assetid: 96c0e52d-874e-4b57-a154-0e49b6a00fae
 ms.openlocfilehash: 2510dda59047632e2a4823f734feeffd0c0a5b02
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58778041"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59777954"
 ---
 # <a name="compiler-warning-level-1-c4383"></a>컴파일러 경고(수준 1) C4383
 
@@ -21,7 +21,7 @@ ms.locfileid: "58778041"
 
 자세한 내용은 [개체 연산자 (^)에 대 한 핸들](../../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) 하 고 [추적 참조 연산자](../../extensions/tracking-reference-operator-cpp-component-extensions.md)합니다.
 
-또한 인스턴스 연산자는 참조 된 메타 데이터를 통해 다른 언어 컴파일러를 사용할 수 있습니다. 자세한 내용은 [사용자 정의 연산자 (C + + /cli CLI)](../../dotnet/user-defined-operators-cpp-cli.md)합니다.
+또한 인스턴스 연산자는 참조 된 메타 데이터를 통해 다른 언어 컴파일러를 사용할 수 있습니다. 자세한 내용은 [사용자 정의 연산자 (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

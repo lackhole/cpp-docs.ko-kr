@@ -8,15 +8,15 @@ helpviewer_keywords:
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
 ms.openlocfilehash: b49d53836179d765a72409d28304d7166dcf51d8
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024623"
 ---
 # <a name="supporting-schema-rowsets"></a>스키마 행 집합 지원
 
-스키마 행 집합에 소비자가 해당 기본 구조 또는 스키마를 알 필요 없이 데이터 저장소에 대 한 정보를 가져올 수 있습니다. 예를 들어, 데이터 저장소를 읽는 것 외에 스키마를 알 수 없기 때문에 사용자 정의 계층을 구성 하는 테이블이 있을 수 있습니다. (또 다른 예로, Visual c + + 마법사 사용 하 여 스키마 행 집합 소비자에 대 한 접근자를 생성 합니다.) 이 작업을 수행 하기 위해 소비자를 허용 하려면 공급자의 세션 개체에 메서드를 노출 합니다 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스입니다. Visual c + + 응용 프로그램을 사용 하 여 합니다 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) 구현 하는 클래스 `IDBSchemaRowset`합니다.
+스키마 행 집합에 소비자가 해당 기본 구조 또는 스키마를 알 필요 없이 데이터 저장소에 대 한 정보를 가져올 수 있습니다. 예를 들어, 데이터 저장소를 읽는 것 외에 스키마를 알 수 없기 때문에 사용자 정의 계층을 구성 하는 테이블이 있을 수 있습니다. (또 다른 예로, 시각적 개체 C++ 마법사 소비자에 대 한 접근자를 생성 하려면 스키마 행 집합을 사용 합니다.) 이 작업을 수행 하기 위해 소비자를 허용 하려면 공급자의 세션 개체에 메서드를 노출 합니다 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스입니다. 시각적 개체의 C++ 사용할 응용 프로그램을 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) 구현 하는 클래스 `IDBSchemaRowset`합니다.
 
 `IDBSchemaRowsetImpl` 다음 메서드를 지원합니다.
 

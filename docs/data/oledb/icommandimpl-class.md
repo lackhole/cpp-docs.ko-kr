@@ -53,10 +53,10 @@ helpviewer_keywords:
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
 ms.openlocfilehash: d890b62e4e4aabb9f8ca7ebb9d3051c53febd91f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026794"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl 클래스
@@ -91,7 +91,7 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
 |[취소](#cancel)|현재 명령 실행을 취소합니다.|
 |[CancelExecution](#cancelexecution)|현재 명령 실행을 취소합니다.|
 |[CreateRowset](#createrowset)|행 집합 개체를 만듭니다.|
-|[실행](#execute)|명령을 실행합니다.|
+|[Execute](#execute)|명령을 실행합니다.|
 |[GetDBSession](#getdbsession)|명령을 만든 세션에 대 한 인터페이스 포인터를 반환 합니다.|
 |[ICommandImpl](#icommandimpl)|생성자입니다.|
 

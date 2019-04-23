@@ -1,5 +1,5 @@
 ---
-title: synchronize (c + + COM 특성)
+title: 동기화 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.synchronize
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - synchronize attribute
 ms.assetid: 15fc8544-955d-4765-b3d5-0f619c8b3f40
 ms.openlocfilehash: ea5236b887fb0df2a0acdd1e4050c66a4719072b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037062"
 ---
 # <a name="synchronize"></a>synchronize
@@ -25,7 +25,7 @@ ms.locfileid: "59037062"
 
 ## <a name="remarks"></a>설명
 
-합니다 **동기화** c + + 특성은 개체의 대상 메서드를 동기화 하는 것에 대 한 지원을 구현 합니다. 동기화 대상 메서드의 액세스를 제어 하 여 일반적인 리소스 (예: 클래스의 메서드)를 사용 하려면 여러 개체를 허용 합니다.
+합니다 **동기화** C++ 특성은 개체의 대상 메서드를 동기화 하는 것에 대 한 지원을 구현 합니다. 동기화 대상 메서드의 액세스를 제어 하 여 일반적인 리소스 (예: 클래스의 메서드)를 사용 하려면 여러 개체를 허용 합니다.
 
 이 특성에 의해 삽입 된 코드를 적절 한 호출 `Lock` 대상 메서드의 부분 메서드 (스레딩 모델에 의해 결정 됨). 메서드 종료 될 때 `Unlock` 자동으로 호출 됩니다. 이러한 함수에 대 한 자세한 내용은 참조 하세요. [CComAutoThreadModule::Lock](../../atl/reference/ccomautothreadmodule-class.md#lock)
 

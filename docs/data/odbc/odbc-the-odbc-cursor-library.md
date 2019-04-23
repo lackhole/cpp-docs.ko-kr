@@ -17,10 +17,10 @@ helpviewer_keywords:
 - positioning cursors
 ms.assetid: 6608db92-82b1-4164-bb08-78153c227be3
 ms.openlocfilehash: 862303a0dc66fbd49bfcba83336ab29dfc7145c0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032234"
 ---
 # <a name="odbc-the-odbc-cursor-library"></a>ODBC: ODBC 커서 라이브러리
@@ -67,4 +67,4 @@ ODBC 커서 라이브러리는 다음과 같은 새로운 기능 수준 1 드라
 
 ## <a name="see-also"></a>참고자료
 
-[ODBC 기초](../../data/odbc/odbc-basics.md)
+[ODBC 기본 사항](../../data/odbc/odbc-basics.md)

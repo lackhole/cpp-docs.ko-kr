@@ -1,5 +1,5 @@
 ---
-title: 키워드 (c + +)
+title: 키워드 (C++)
 ms.custom: index-page
 ms.date: 10/10/2018
 helpviewer_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - __identifer keyword [C++]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
 ms.openlocfilehash: f87c2401bcc964229d3c0b3cf7119a09553cc2f2
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774765"
 ---
-# <a name="keywords-c"></a>키워드 (c + +)
+# <a name="keywords-c"></a>키워드 (C++)
 
-키워드는 특별한 의미가 있는 미리 정의된 예약된 식별자입니다. 따라서 프로그램에서 키워드를 식별자로 사용할 수 없습니다. 다음 키워드는 Microsoft C++에서 예약되었습니다. 선행 밑줄을 사용 하 여 이름과 뒤에 (C + + /cli CLI)는 Microsoft 확장입니다.
+키워드는 특별한 의미가 있는 미리 정의된 예약된 식별자입니다. 따라서 프로그램에서 키워드를 식별자로 사용할 수 없습니다. 다음 키워드는 Microsoft C++에서 예약되었습니다. 뒤에 이름과 이름의 선행 밑줄 (C++/CLI)는 Microsoft 확장입니다.
 
 |||||
 |-|-|-|-|
@@ -35,38 +35,38 @@ ms.locfileid: "58774765"
 |[__single_inheritance](inheritance-keywords.md)<sup>4</sup>|[__sptr](sptr-uptr.md)<sup>4</sup>|[__stdcall](stdcall.md) <sup>4</sup>|[__super](super.md)|
 |[__thiscall](thiscall.md)|[__try_cast](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md) <sup>2</sup>|[__unaligned](unaligned.md) <sup>4</sup>|[__unhook](unhook.md) <sup>3</sup>|
 |[__uptr](sptr-uptr.md) <sup>4</sup>|[__uuidof](uuidof-operator.md) <sup>4</sup>|[__value](../dotnet/value-type-semantics.md) <sup>2</sup>|[__vectorcall](vectorcall.md) <sup>4</sup>|
-|[__virtual_inheritance](inheritance-keywords.md) <sup>4</sup>|[__w64](w64.md) <sup>4</sup>|[__wchar_t](fundamental-types-cpp.md)|[추상](../extensions/abstract-cpp-component-extensions.md)(C + + /cli CLI)|
-|[alignas](align-cpp.md)|[배열](../extensions/arrays-cpp-component-extensions.md)(C + + /cli CLI)|[auto](auto-keyword.md)|[bool](bool-cpp.md)|
+|[__virtual_inheritance](inheritance-keywords.md) <sup>4</sup>|[__w64](w64.md) <sup>4</sup>|[__wchar_t](fundamental-types-cpp.md)|[추상](../extensions/abstract-cpp-component-extensions.md)(C++/CLI)|
+|[alignas](align-cpp.md)|[배열](../extensions/arrays-cpp-component-extensions.md)(C++/CLI)|[auto](auto-keyword.md)|[bool](bool-cpp.md)|
 |[break](break-statement-cpp.md)|[case](switch-statement-cpp.md)|[catch](try-throw-and-catch-statements-cpp.md)|[char](fundamental-types-cpp.md)|
 |[char16_t](char-wchar-t-char16-t-char32-t.md)|[char32_t](char-wchar-t-char16-t-char32-t.md)|[class](class-cpp.md)|[const](const-cpp.md)|
 |[const_cast](const-cast-operator.md)|[constexpr](constexpr-cpp.md)|[continue](continue-statement-cpp.md)|[decltype](decltype-cpp.md)|
-|[default](switch-statement-cpp.md)|[대리자](../extensions/delegate-cpp-component-extensions.md)(C + + /cli CLI)|[delete](delete-operator-cpp.md)|[deprecated](deprecated-cpp.md) <sup>1</sup>|
+|[default](switch-statement-cpp.md)|[대리자](../extensions/delegate-cpp-component-extensions.md)(C++/CLI)|[delete](delete-operator-cpp.md)|[deprecated](deprecated-cpp.md) <sup>1</sup>|
 |[dllexport](dllexport-dllimport.md) <sup>1</sup>|[dllimport](dllexport-dllimport.md) <sup>1</sup>|[do](do-while-statement-cpp.md)|[double](fundamental-types-cpp.md)|
-|[dynamic_cast](dynamic-cast-operator.md)|[else](if-else-statement-cpp.md)|[enum](enumerations-cpp.md)|[enum 클래스](../extensions/enum-class-cpp-component-extensions.md)|
-|[enum 구조체](../extensions/enum-class-cpp-component-extensions.md)|[이벤트](../extensions/event-cpp-component-extensions.md)(C + + /cli CLI)|[explicit](user-defined-type-conversions-cpp.md)|[extern](using-extern-to-specify-linkage.md)|
+|[dynamic_cast](dynamic-cast-operator.md)|[else](if-else-statement-cpp.md)|[enum](enumerations-cpp.md)|[Enum 클래스](../extensions/enum-class-cpp-component-extensions.md)|
+|[enum 구조체](../extensions/enum-class-cpp-component-extensions.md)|[이벤트](../extensions/event-cpp-component-extensions.md)(C++/CLI)|[explicit](user-defined-type-conversions-cpp.md)|[extern](using-extern-to-specify-linkage.md)|
 |[false](false-cpp.md)|[finally](../dotnet/finally.md)|[float](fundamental-types-cpp.md)|[for](for-statement-cpp.md)|
-|[에서는 for each](../dotnet/for-each-in.md)|[friend](friend-cpp.md)|[friend_as](../preprocessor/hash-using-directive-cpp.md)|[gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md)(C + + /cli CLI)|
-|[제네릭](../extensions/generics-cpp-component-extensions.md)(C + + /cli CLI)|[goto](goto-statement-cpp.md)|[if](if-else-statement-cpp.md)|[initonly](../dotnet/initonly-cpp-cli.md)|
-|[inline](inline-functions-cpp.md)|[int](fundamental-types-cpp.md)|[인터페이스 클래스](../extensions/interface-class-cpp-component-extensions.md)(C + + /cli CLI)|[인터페이스 구조체](../extensions/interface-class-cpp-component-extensions.md)(C + + /cli CLI)|
-|[interior_ptr](../extensions/interior-ptr-cpp-cli.md)(C + + /cli CLI)|[리터럴](../extensions/literal-cpp-component-extensions.md)(C + + /cli CLI)|[long](fundamental-types-cpp.md)|[mutable](mutable-data-members-cpp.md)|
-|[naked](naked-cpp.md) <sup>1</sup>|[namespace](namespaces-cpp.md)|[새](../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)(C + + /cli CLI)|[new](new-operator-cpp.md)|
+|[에서는 for each](../dotnet/for-each-in.md)|[friend](friend-cpp.md)|[friend_as](../preprocessor/hash-using-directive-cpp.md)|[gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md)(C++/CLI)|
+|[제네릭](../extensions/generics-cpp-component-extensions.md)(C++/CLI)|[goto](goto-statement-cpp.md)|[if](if-else-statement-cpp.md)|[initonly](../dotnet/initonly-cpp-cli.md)|
+|[inline](inline-functions-cpp.md)|[int](fundamental-types-cpp.md)|[인터페이스 클래스](../extensions/interface-class-cpp-component-extensions.md)(C++/CLI)|[인터페이스 구조체](../extensions/interface-class-cpp-component-extensions.md)(C++/CLI)|
+|[interior_ptr](../extensions/interior-ptr-cpp-cli.md)(C++/CLI)|[리터럴](../extensions/literal-cpp-component-extensions.md)(C++/CLI)|[long](fundamental-types-cpp.md)|[mutable](mutable-data-members-cpp.md)|
+|[naked](naked-cpp.md) <sup>1</sup>|[namespace](namespaces-cpp.md)|[새](../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)(C++/CLI)|[new](new-operator-cpp.md)|
 |[noexcept](noexcept-cpp.md)|[noinline](noinline.md) <sup>1</sup>|[noreturn](noreturn.md) <sup>1</sup>|[nothrow](nothrow-cpp.md) <sup>1</sup>|
 |[novtable](novtable.md) <sup>1</sup>|[nullptr](nullptr.md)|[operator](operator-overloading.md)|[private](private-cpp.md)|
-|[속성](../extensions/property-cpp-component-extensions.md)(C + + /cli CLI)|[property](property-cpp.md) <sup>1</sup>|[protected](protected-cpp.md)|[public](public-cpp.md)|
+|[속성](../extensions/property-cpp-component-extensions.md)(C++/CLI)|[property](property-cpp.md) <sup>1</sup>|[protected](protected-cpp.md)|[public](public-cpp.md)|
 |[ref 클래스](../extensions/classes-and-structs-cpp-component-extensions.md)|[ref 구조체](../extensions/classes-and-structs-cpp-component-extensions.md)|[register](storage-classes-cpp.md#register)|[reinterpret_cast](reinterpret-cast-operator.md)|
-|[return](return-statement-cpp.md)|[safecast](../extensions/safe-cast-cpp-component-extensions.md)|[봉인 된](../extensions/sealed-cpp-component-extensions.md)(C + + /cli CLI)|[selectany](selectany.md) <sup>1</sup>|
+|[return](return-statement-cpp.md)|[safecast](../extensions/safe-cast-cpp-component-extensions.md)|[봉인](../extensions/sealed-cpp-component-extensions.md)(C++/CLI)|[selectany](selectany.md) <sup>1</sup>|
 |[short](fundamental-types-cpp.md)|[signed](fundamental-types-cpp.md)|[sizeof](sizeof-operator.md)|[static](storage-classes-cpp.md)|
 |[static_assert](static-assert.md)|[static_cast](static-cast-operator.md)|[struct](struct-cpp.md)|[switch](switch-statement-cpp.md)|
 |[template](templates-cpp.md)|[this](this-pointer.md)|[thread](thread.md) <sup>1</sup>|[throw](try-throw-and-catch-statements-cpp.md)|
-|[true](true-cpp.md)|[try](try-throw-and-catch-statements-cpp.md)|[typedef](aliases-and-typedefs-cpp.md)|[typeid(C++ 구성 요소 확장)](typeid-operator.md)|
-|[typeid(C++ 구성 요소 확장)](../extensions/typeid-cpp-component-extensions.md)|[typename](typename.md)|[union](unions.md)|[unsigned](fundamental-types-cpp.md)|
-|[사용 하 여](using-declaration.md) 선언|[사용 하 여](namespaces-cpp.md#using_directives) 지시문|[uuid](uuid-cpp.md) <sup>1</sup>|[값 클래스](../extensions/classes-and-structs-cpp-component-extensions.md)(C + + /cli CLI)|
-|[값 구조체](../extensions/classes-and-structs-cpp-component-extensions.md)(C + + /cli CLI)|[virtual](virtual-cpp.md)|[void](void-cpp.md)|[volatile](volatile-cpp.md)|
+|[true](true-cpp.md)|[try](try-throw-and-catch-statements-cpp.md)|[typedef](aliases-and-typedefs-cpp.md)|[typeid](typeid-operator.md)|
+|[typeid](../extensions/typeid-cpp-component-extensions.md)|[typename](typename.md)|[union](unions.md)|[unsigned](fundamental-types-cpp.md)|
+|[사용 하 여](using-declaration.md) 선언|[사용 하 여](namespaces-cpp.md#using_directives) 지시문|[uuid](uuid-cpp.md) <sup>1</sup>|[값 클래스](../extensions/classes-and-structs-cpp-component-extensions.md)(C++/CLI)|
+|[값 구조체](../extensions/classes-and-structs-cpp-component-extensions.md)(C++/CLI)|[virtual](virtual-cpp.md)|[void](void-cpp.md)|[volatile](volatile-cpp.md)|
 |[while](while-statement-cpp.md)|
 
 <sup>1</sup> 확장에 대 한 특성을 **__declspec** 키워드입니다.
 
-<sup>2</sup> Managed Extensions for c + +만 해당 합니다. 이 구문은 이제 사용되지 않습니다. 참조 [런타임 플랫폼용 구성 요소 확장명](../extensions/component-extensions-for-runtime-platforms.md) 자세한 내용은 합니다.
+<sup>2</sup> Managed Extensions for 적용할 C++ 만 합니다. 이 구문은 이제 사용되지 않습니다. 참조 [런타임 플랫폼용 구성 요소 확장명](../extensions/component-extensions-for-runtime-platforms.md) 자세한 내용은 합니다.
 
 <sup>3</sup> 이벤트 처리에 사용 되는 내장 함수입니다.
 
@@ -80,7 +80,7 @@ Microsoft 확장은 기본적으로 사용하도록 설정됩니다. 프로그�
 
 Microsoft 확장을 사용하도록 설정한 경우 Microsoft 관련 키워드를 프로그램에서 사용할 수 있습니다. ANSI 규격에 따라 이러한 키워드에는 두 개의 밑줄이 앞에 옵니다. 이전 버전과 호환성을 위해 이중 밑줄이 키워드 중 많은 개의 밑줄이 붙은 버전이 지원 됩니다. 또한 **__cdecl** 앞의 밑줄 없이 사용할 수 있습니다.
 
-합니다 **__asm** 키워드는 c + + 대체 `asm` 구문입니다. `asm`은 다른 C++ 구현과의 호환성을 위해 예약되었지만 구현되지는 않았으므로 사용 하 여 **__asm**합니다.
+합니다 **__asm** 키워드를 대체 C++ `asm` 구문입니다. `asm`은 다른 C++ 구현과의 호환성을 위해 예약되었지만 구현되지는 않았으므로 사용 하 여 **__asm**합니다.
 
 **__based** 키워드의 경우 32 비트 및 64 비트 대상 컴파일에서 제한적으로 사용됩니다.
 

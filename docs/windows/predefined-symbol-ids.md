@@ -6,10 +6,10 @@ helpviewer_keywords:
 - predefined symbol IDs
 ms.assetid: 91a5d610-1a04-47e8-b8a4-63ad650a90df
 ms.openlocfilehash: 5acaf9d470ce3d1cccad65bc8235cacfd7a56427
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024545"
 ---
 # <a name="predefined-symbol-ids"></a>미리 정의된 기호 ID
@@ -35,6 +35,6 @@ Win32, MFC 또는 ATL
 
 ## <a name="see-also"></a>참고자료
 
-[리소스 식별자 (기호)](../windows/symbols-resource-identifiers.md)<br/>
+[리소스 식별자(기호)](../windows/symbols-resource-identifiers.md)<br/>
 [방법: 기호 만들기](../windows/creating-new-symbols.md)<br/>
 [방법: 기호 관리](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>

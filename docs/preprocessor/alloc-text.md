@@ -9,10 +9,10 @@ helpviewer_keywords:
 - pragmas, alloc_text
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
 ms.openlocfilehash: 399e8956a511f289b480e66db7f03cac0a6c7c20
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031367"
 ---
 # <a name="alloctext"></a>alloc_text
@@ -28,7 +28,7 @@ textsection
 
 ## <a name="remarks"></a>설명
 
-합니다 **alloc_text** c + + 멤버 함수 또는 오버 로드 된 함수에 pragma 처리 하지 않습니다. C 링크로 선언 된 함수에만 적용 됩니다-즉, 사용 하 여 선언 된 함수는 **extern "C"** 링크 사양입니다. C++ 링크가 있는 함수에 pragma를 사용하려고 하면 컴파일러 오류가 발생합니다.
+합니다 **alloc_text** pragma를 처리 하지 않습니다 C++ 멤버 함수 또는 오버 로드 된 함수입니다. C 링크로 선언 된 함수에만 적용 됩니다-즉, 사용 하 여 선언 된 함수는 **extern "C"** 링크 사양입니다. C++ 링크가 있는 함수에 pragma를 사용하려고 하면 컴파일러 오류가 발생합니다.
 
 함수 주소를 사용 하 여 이후 `__based` 지원 되지 않는 섹션 위치를 사용 해야 하는 지정 하는 **alloc_text** pragma입니다. 지정 된 이름을 *textsection* 큰따옴표로 묶어야 합니다.
 

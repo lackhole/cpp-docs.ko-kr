@@ -8,15 +8,15 @@ helpviewer_keywords:
 - CComEnumOnSTL class
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
 ms.openlocfilehash: f9bf9c227984b2fdbf460f970357f395934b238c
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779861"
 ---
 # <a name="ccomenumonstl-class"></a>CComEnumOnSTL 클래스
 
-이 클래스는 c + + 표준 라이브러리 컬렉션을 기반으로 COM 열거자 개체를 정의 합니다.
+이 클래스 정의에 따라 COM 열거자 개체를 C++ 표준 라이브러리 컬렉션입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,11 +45,11 @@ COM 열거자입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-obji
 A [정책을 복사](../../atl/atl-copy-policy-classes.md) 클래스입니다.
 
 *CollType*<br/>
-C + + 표준 라이브러리 컨테이너 클래스입니다.
+C++ 표준 라이브러리 컨테이너 클래스입니다.
 
 ## <a name="remarks"></a>설명
 
-`CComEnumOnSTL` c + + 표준 라이브러리 컬렉션을 기반으로 COM 열거자 개체를 정의 합니다. 이 클래스는 자체적으로 또는 함께에서 사용할 수 [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md)합니다. 이 클래스를 사용 하기 위한 일반적인 단계는 다음과 같습니다. 자세한 내용은 [ATL 컬렉션 및 열거자](../../atl/atl-collections-and-enumerators.md)합니다.
+`CComEnumOnSTL` 정의에 따라 COM 열거자 개체를 C++ 표준 라이브러리 컬렉션입니다. 이 클래스는 자체적으로 또는 함께에서 사용할 수 [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md)합니다. 이 클래스를 사용 하기 위한 일반적인 단계는 다음과 같습니다. 자세한 내용은 [ATL 컬렉션 및 열거자](../../atl/atl-collections-and-enumerators.md)합니다.
 
 ## <a name="to-use-this-class-with-icollectiononstlimpl"></a>ICollectionOnSTLImpl를 사용 하 여이 클래스를 사용 합니다 하:
 

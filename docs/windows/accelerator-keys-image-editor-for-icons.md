@@ -1,5 +1,5 @@
 ---
-title: 액셀러레이터 키 (아이콘에 대 한 c + + 이미지 편집기)
+title: 액셀러레이터 키 (C++ 아이콘에 대 한 이미지 편집기)
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.bitmap
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - Image editor [C++], accelerator keys
 ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
 ms.openlocfilehash: 45afdf4b3b557b560d7597b1bb4330c36a1fc84d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025087"
 ---
-# <a name="accelerator-keys-c-image-editor-for-icons"></a>액셀러레이터 키 (아이콘에 대 한 c + + 이미지 편집기)
+# <a name="accelerator-keys-c-image-editor-for-icons"></a>액셀러레이터 키 (C++ 아이콘에 대 한 이미지 편집기)
 
 다음은 기본적으로 키에 바인딩된 이미지 편집기 명령에 대 한 액셀러레이터 키입니다. 액셀러레이터 키를 변경 하려면 메뉴로 이동 **도구** > **옵션** 선택 **키보드** 아래 합니다 **환경** 폴더입니다. 자세한 내용은 [바로 가기 키 식별 및 사용자 지정](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)을 참조하세요.
 
@@ -40,7 +40,7 @@ ms.locfileid: "59025087"
 |이미지.선도구|**Ctrl** + **L**|선택한 모양, 크기 및 색으로 직선을 그립니다.|
 |이미지.확대도구|**Ctrl** + **M**|활성화 합니다 **Magnify** 이미지의 특정 부분을 확대할 수 있는 도구입니다.|
 |이미지.확대|**Ctrl** + **Shift** + **M**|현재 확대 비율과 1:1 비율 사이를 전환합니다.|
-|이미지.새이미지형식|**Insert**|시작 합니다 [새로 만들기 \<장치 > 이미지 형식 대화 상자](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md) 만들 수 있는 다른 이미지 형식의 이미지를 사용 하 여 합니다.|
+|이미지.새이미지형식|**삽입**|시작 합니다 [새로 만들기 \<장치 > 이미지 형식 대화 상자](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md) 만들 수 있는 다른 이미지 형식의 이미지를 사용 하 여 합니다.|
 |이미지.다음색|**Ctrl** + **]**<br /><br /> 또는<br /><br /> **Ctrl** + **오른쪽 화살표**|그리기 전경색을 다음 색상표 색으로 변경합니다.|
 |이미지.다음오른쪽색|**Ctrl** + **Shift** + **]**<br /><br /> 또는<br /><br /> **Shift** + **Ctrl** + **오른쪽 화살표**|그리기 배경색을 다음 색상표 색으로 변경합니다.|
 |이미지.채워진타원도구윤곽선있음|**Shift** + **Alt** + **P**|윤곽선이 있는 채워진 타원을 그립니다.|
@@ -69,7 +69,7 @@ ms.locfileid: "59025087"
 ## <a name="see-also"></a>참고자료
 
 [아이콘에 대한 이미지 편집기](../windows/image-editor-for-icons.md)<br/>
-[방법: 아이콘 또는 다른 이미지 만들기](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[방법: 아이콘 또는 기타 이미지 만들기](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
 [방법: 이미지 편집](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
 [방법: 그리기 도구 사용](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
 [방법: 색 작업](../windows/working-with-color-image-editor-for-icons.md)<br/>

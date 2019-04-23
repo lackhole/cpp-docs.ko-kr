@@ -17,10 +17,10 @@ helpviewer_keywords:
 - __readfsqword intrinsic
 ms.assetid: f6ee7203-4179-402c-a464-0746c84ce6ac
 ms.openlocfilehash: f291747d1f46ebdf3ea1f71cd9ab7e074058201d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036814"
 ---
 # <a name="readfsbyte-readfsdword-readfsqword-readfsword"></a>__readfsbyte, __readfsdword, __readfsqword, __readfsword
@@ -48,7 +48,7 @@ unsigned __int64 __readfsqword(
 
 #### <a name="parameters"></a>매개 변수
 
-*오프셋*<br/>
+*Offset*<br/>
 [in] 시작 부분 으로부터의 오프셋 `FS` 에서 읽을 수 있습니다.
 
 ## <a name="return-value"></a>반환 값

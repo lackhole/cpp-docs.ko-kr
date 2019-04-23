@@ -4,31 +4,31 @@ ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 02173eae-731b-49bc-b412-f1f69388b99d
 ms.openlocfilehash: 09c341e5e3d4f6007d5d5f66b7c06e1f0af5a65c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040227"
 ---
 # <a name="how-to-complete-asynchronous-operations-using-wrl"></a>방법: WRL을 사용 하 여 비동기 작업 완료
 
-이 문서에서는 Windows 런타임 c + + 템플릿 라이브러리 (WRL)를 사용 하 여 비동기 작업을 시작 하 고 작업 완료 시 작업을 수행 하는 방법을 보여 줍니다.
+이 문서에서는 Windows 런타임을 사용 하는 방법을 보여 줍니다. C++ 템플릿 라이브러리 (WRL) 비동기 작업을 시작 하 고 작업 완료 시 작업을 수행 합니다.
 
 이 문서에서는 두 가지 예제를 보여 줍니다. 비동기 타이머를 시작 하 고 타이머가 만료 될 때까지 대기 하는 첫 번째 예제입니다. 이 예제에서는 타이머 개체를 만들 때 비동기 작업을 지정 합니다. 두 번째 예제에는 백그라운드 작업자 스레드에서 실행 됩니다. 반환 하는 Windows 런타임 메서드를 사용 하는 방법을 보여 주는이 예제는 `IAsyncInfo` 인터페이스입니다. 합니다 [콜백](callback-function-wrl.md) 함수 이므로 두 예제 모두의 중요 한 부분이 비동기 작업의 결과 처리할 이벤트 처리기를 지정할 수 있도록 합니다.
 
 구성 요소의 인스턴스를 만들고 속성 값을 검색 하는 보다 기본적인 예제를 보려면 [방법: 활성화 하 고 Windows 런타임 구성 요소를 사용 하 여](how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)입니다.
 
 > [!TIP]
-> 이러한 예제는 람다 식 콜백을 정의 하려면 사용 합니다. 함수 개체 (함수), 함수 포인터를 이용할 수 있습니다 또는 [std:: function](../../standard-library/function-class.md) 개체입니다. C + + 람다 식에 대 한 자세한 내용은 참조 하세요. [람다 식](../../cpp/lambda-expressions-in-cpp.md)합니다.
+> 이러한 예제는 람다 식 콜백을 정의 하려면 사용 합니다. 함수 개체 (함수), 함수 포인터를 이용할 수 있습니다 또는 [std:: function](../../standard-library/function-class.md) 개체입니다. 에 대 한 자세한 내용은 C++ 을 참조 하십시오 [람다 식](../../cpp/lambda-expressions-in-cpp.md)합니다.
 
 ## <a name="example-working-with-a-timer"></a>예제: 타이머 작업
 
 다음 단계는 비동기 타이머를 시작 하 고 타이머가 만료 될 때까지 기다립니다. 다음은 완성된 예제입니다.
 
 > [!WARNING]
-> 유니버설 Windows 플랫폼 (UWP) 앱에서 Windows 런타임 c + + 템플릿 라이브러리를 일반적으로 사용 하지만이 예제에 대 한 예시 콘솔 앱을 사용 합니다. 와 같은 함수 `wprintf_s` 는 UWP 앱에서 사용할 수 없습니다. 형식 및 UWP 앱에서 사용할 수 있는 함수에 대 한 자세한 내용은 참조 하세요. [유니버설 Windows 플랫폼 앱에서 지원 되지 않습니다 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) 하 고 [UWP 앱 용 Win32 및 COM](/uwp/win32-and-com/win32-and-com-for-uwp-apps)합니다.
+> 일반적으로 Windows 런타임 사용 하지만 C++ 유니버설 Windows 플랫폼 (UWP) 앱이이 예제에서 템플릿 라이브러리에 대 한 예시 콘솔 앱을 사용 합니다. 와 같은 함수 `wprintf_s` 는 UWP 앱에서 사용할 수 없습니다. 형식 및 UWP 앱에서 사용할 수 있는 함수에 대 한 자세한 내용은 참조 하세요. [유니버설 Windows 플랫폼 앱에서 지원 되지 않습니다 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) 하 고 [UWP 앱 용 Win32 및 COM](/uwp/win32-and-com/win32-and-com-for-uwp-apps)합니다.
 
-1. 포함 (`#include`) 필요한 Windows 런타임, Windows 런타임 c + + 템플릿 라이브러리 또는 c + + 표준 라이브러리 헤더입니다.
+1. 포함 (`#include`) Windows 런타임, Windows 런타임 필요한 C++ 템플릿 라이브러리 또는 C++ 표준 라이브러리 헤더입니다.
 
    [!code-cpp[wrl-consume-async#2](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_1.cpp)]
 
@@ -78,7 +78,7 @@ ms.locfileid: "59040227"
 > [!TIP]
 > 이 예제를 사용 하는 방법에 설명 합니다 `ABI::Windows::Foundation::IAsyncAction` 인터페이스입니다. 이 패턴을 구현 하는 모든 인터페이스에 적용할 수 있습니다 `IAsyncInfo`: `IAsyncAction`를 `IAsyncActionWithProgress`를 `IAsyncOperation`, 및 `IAsyncOperationWithProgress`합니다.
 
-1. 포함 (`#include`) 필요한 Windows 런타임, Windows 런타임 c + + 템플릿 라이브러리 또는 c + + 표준 라이브러리 헤더입니다.
+1. 포함 (`#include`) Windows 런타임, Windows 런타임 필요한 C++ 템플릿 라이브러리 또는 C++ 표준 라이브러리 헤더입니다.
 
    [!code-cpp[wrl-consume-asyncOp#2](../codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_8.cpp)]
 

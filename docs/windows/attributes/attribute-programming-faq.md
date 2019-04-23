@@ -8,10 +8,10 @@ helpviewer_keywords:
 - FAQs (frequently asked questions), attributed programming [C++]
 ms.assetid: a1b8349f-7f51-43c4-95ea-4edb6e5f243f
 ms.openlocfilehash: fd4c24e3933738d128dffd41018466c33b419de8
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025100"
 ---
 # <a name="attribute-programming-faq"></a>특성 프로그래밍 FAQ
@@ -84,12 +84,12 @@ class CMyClass
 |[default](default-cpp.md)|[defaultvalue](defaultvalue.md)|[defaultvtable](defaultvtable.md)|
 |[emitidl](emitidl.md)|[entry](entry.md)|[first_is](first-is.md)|
 |[helpcontext](helpcontext.md)|[helpfile](helpfile.md)|[helpstring](helpstring.md)|
-|[helpstringcontext](helpstringcontext.md)|[typelib](helpstringdll.md)|[ID](id.md)|
+|[helpstringcontext](helpstringcontext.md)|[helpstringdll](helpstringdll.md)|[ID](id.md)|
 |[iid_is](iid-is.md)|[import](import.md)|[importlib](importlib.md)|
 |[include](include-cpp.md)|[includelib](includelib-cpp.md)|[last_is](last-is.md)|
 |[length_is](length-is.md)|[max_is](max-is.md)|[no_injected_text](no-injected-text.md)|
 |[pointer_default](pointer-default.md)|[pragma](pragma.md)|[restricted](restricted.md)|
-|[size_is](size-is.md)|[원본](source-cpp.md)|[switch_is](switch-is.md)|
+|[size_is](size-is.md)|[source](source-cpp.md)|[switch_is](switch-is.md)|
 |[switch_type](switch-type.md)|[transmit_as](transmit-as.md)|[wire_marshal](wire-marshal.md)|
 
 ##  <a name="vcconattributeprogrammmingfaqanchor3"></a> 주석 특성 블록에서 사용할 수 있나요?
@@ -114,7 +114,7 @@ class CMyClass
 
 ##  <a name="vcconattributeprogrammmingfaqanchor4"></a> 상속을 사용 하 여 특성 작용 수행 하는 방법
 
-특성을 사용 하 고 해결 되지 않은 클래스 있습니다 자체 때문일 여부는 다른 클래스에서 상속할 수 있습니다. 특성 사용된 하는 클래스에서 파생 하는 결과 특성 공급자가 해당 코드를 변환 된 후 해당 클래스에서 파생와 같습니다. 특성은 파생 클래스 c + + 상속을 통해 전송 되지 않습니다. 특성 공급자만 해당 특성 유사 하 게 코드를 변환합니다.
+특성을 사용 하 고 해결 되지 않은 클래스 있습니다 자체 때문일 여부는 다른 클래스에서 상속할 수 있습니다. 특성 사용된 하는 클래스에서 파생 하는 결과 특성 공급자가 해당 코드를 변환 된 후 해당 클래스에서 파생와 같습니다. 특성을 통해 파생된 클래스에 전송 되지 않습니다 C++ 상속 합니다. 특성 공급자만 해당 특성 유사 하 게 코드를 변환합니다.
 
 ##  <a name="vcconattributeprogrammmingfaqanchor5"></a> 하지 않는 ATL 프로젝트의 특성을 사용 하는 방법
 
@@ -244,4 +244,4 @@ int main() {}
 
 ## <a name="see-also"></a>참고자료
 
-[COM 및.NET에 대한 C++ 특성](cpp-attributes-com-net.md)
+[COM 및 .NET에 대한 C++ 특성](cpp-attributes-com-net.md)

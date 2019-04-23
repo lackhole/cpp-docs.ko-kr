@@ -14,10 +14,10 @@ helpviewer_keywords:
 - Open method
 ms.assetid: 0aaa2364-641c-4318-b110-7446aada4b4f
 ms.openlocfilehash: 309bb7e707d649cf78528f3d0df6cf8e43201823
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040621"
 ---
 # <a name="crestrictions-class"></a>CRestrictions 클래스
@@ -75,7 +75,7 @@ HRESULT Open(const CSession& session,
 
 #### <a name="parameters"></a>매개 변수
 
-*세션*<br/>
+*session*<br/>
 [in] 데이터 원본에 연결 하는 데 기존 세션 개체를 지정 합니다.
 
 *lpszParam*<br/>
@@ -96,6 +96,6 @@ HRESULT 값 중 하나입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)

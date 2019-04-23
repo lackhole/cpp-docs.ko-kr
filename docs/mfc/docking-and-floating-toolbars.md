@@ -22,10 +22,10 @@ helpviewer_keywords:
 - floating palettes
 ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
 ms.openlocfilehash: 01450dca56ad662c8db0a35f89749c4a288109b3
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58768136"
 ---
 # <a name="docking-and-floating-toolbars"></a>도구 모음 고정 및 고정 해제
@@ -78,7 +78,7 @@ MFC 일반 샘플을 참조 하세요 [DOCKTOOL](../overview/visual-cpp-samples.
 
 ##  <a name="_core_dynamically_resizing_the_toolbar"></a> 도구 모음을 동적으로 크기 조정
 
-Visual c + + 버전 4.0부터 있습니다 수 수 있도록 동적으로 부동 도구 모음 크기를 조정 하려면 응용 프로그램의 사용자에 대 한 합니다. 일반적으로 도구 모음에 가로로 표시 되 긴 막대 모양입니다. 하지만 도구 모음의 방향 및 모양을 변경할 수 있습니다. 예를 들어, 사용자 도킹 프레임 창의 세로 측면 중 하나에 대 한 도구 모음, 모양을 세로 레이아웃으로 변경 합니다. 도구 모음 단추의 여러 행을 사용 하 여 사각형에 변형 수 이기도 합니다.
+시각적 개체를 기준으로 C++ 버전 4.0, 있습니다 수 있게 부동 도구 모음 크기를 동적으로 조정 하려면 응용 프로그램의 사용자에 대 한 합니다. 일반적으로 도구 모음에 가로로 표시 되 긴 막대 모양입니다. 하지만 도구 모음의 방향 및 모양을 변경할 수 있습니다. 예를 들어, 사용자 도킹 프레임 창의 세로 측면 중 하나에 대 한 도구 모음, 모양을 세로 레이아웃으로 변경 합니다. 도구 모음 단추의 여러 행을 사용 하 여 사각형에 변형 수 이기도 합니다.
 
 다음과 같은 작업을 수행할 수 있습니다.
 

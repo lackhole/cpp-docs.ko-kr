@@ -10,10 +10,10 @@ helpviewer_keywords:
 - designing record views
 ms.assetid: 1d6f5439-754f-4b8b-a19d-841a4657827b
 ms.openlocfilehash: 15a8afde8c86d3dae8198e8f42b2b7c3b49f0dfa
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035545"
 ---
 # <a name="designing-and-creating-a-record-view--mfc-data-access"></a>레코드 뷰 디자인 및 만들기  (MFC Data Access)
@@ -42,6 +42,6 @@ ms.locfileid: "59035545"
 
 ## <a name="see-also"></a>참고자료
 
-[레코드 뷰  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
+[레코드 뷰(MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [레코드 집합(ODBC)](../data/odbc/recordset-odbc.md)<br/>
 [ODBC 드라이버 목록](../data/odbc/odbc-driver-list.md)

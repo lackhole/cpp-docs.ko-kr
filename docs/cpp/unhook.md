@@ -9,10 +9,10 @@ helpviewer_keywords:
 - __unhook keyword [C++]
 ms.assetid: 953a14f3-5199-459d-81e5-fcf015a19878
 ms.openlocfilehash: e8f42c35024995c026ae10fc7f0ab3db77d1e5dc
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58769526"
 ---
 # <a name="unhook"></a>__unhook
@@ -41,7 +41,7 @@ long  __unhook(
 
 **&** *SourceClass* `::` *EventMethod* 올를 언 후크 할 이벤트 처리기 메서드에서 이벤트 메서드에 대 한 포인터:
 
-- 네이티브 c + + 이벤트: *SourceClass* 는 이벤트 소스 클래스와 *EventMethod* 이벤트입니다.
+- 네이티브 C++ 이벤트: *SourceClass* 는 이벤트 소스 클래스와 *EventMethod* 이벤트입니다.
 
 - COM 이벤트: *SourceClass* 는 이벤트 소스 인터페이스 및 *EventMethod* 해당 메서드 중 하나입니다.
 
@@ -61,7 +61,7 @@ long  __unhook(
 
 **&** *ReceiverClass* `::` `HandlerMethod` 이벤트에서 언 후크 될 이벤트 처리기 메서드에 대 한 포인터입니다. 클래스 또는 동일한;에 대 한 참조의 메서드로 처리기 지정 클래스 이름을 지정 하지 않으면 **__unhook** 는 호출 되는 클래스를 가정 합니다.
 
-- 네이티브 c + + 이벤트: *ReceiverClass* 는 이벤트 수신기 클래스 및 `HandlerMethod` 처리기입니다.
+- 네이티브 C++ 이벤트: *ReceiverClass* 는 이벤트 수신기 클래스 및 `HandlerMethod` 처리기입니다.
 
 - COM 이벤트: *ReceiverClass* 는 이벤트 수신기 인터페이스 및 `HandlerMethod` 처리기 중 하나입니다.
 
@@ -96,7 +96,7 @@ COM 이벤트의 경우를 제외 하 고 **__hook** 하 고 **__unhook** 이벤
 
 ## <a name="example"></a>예제
 
-참조 [네이티브 c + +에서 이벤트 처리](../cpp/event-handling-in-native-cpp.md) 하 고 [COM에서 이벤트 처리](../cpp/event-handling-in-com.md) 샘플에 대 한 합니다.
+참조 [네이티브에서 이벤트 처리 C++ ](../cpp/event-handling-in-native-cpp.md) 하 고 [COM에서 이벤트 처리](../cpp/event-handling-in-com.md) 샘플에 대 한 합니다.
 
 ## <a name="see-also"></a>참고자료
 

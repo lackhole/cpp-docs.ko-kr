@@ -27,10 +27,10 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
 ms.openlocfilehash: c0c1fd14105bae3b5413f92b547339ccabf3bb91
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774778"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver 클래스
@@ -83,7 +83,7 @@ class COleDispatchDriver
 
 OLE 디스패치 인터페이스 개체의 메서드 및 속성에 대 한 액세스를 제공합니다. 멤버 함수 `COleDispatchDriver` 연결, 분리, 생성 및 디스패치 연결 형식의 릴리스 `IDispatch`합니다. 다른 멤버 함수 호출을 간소화 하기 위해 가변 인수 목록을 사용할 `IDispatch::Invoke`합니다.
 
-이 클래스를 직접 사용할 수 있지만 주로 클래스 추가 마법사에서 만든 클래스에 의해서만 사용 됩니다. 새 클래스에서 파생 된 형식 라이브러리를 가져와서 새 c + + 클래스를 만들 때 `COleDispatchDriver`합니다.
+이 클래스를 직접 사용할 수 있지만 주로 클래스 추가 마법사에서 만든 클래스에 의해서만 사용 됩니다. 새로 만들 때 C++ 클래스는 형식 라이브러리를 가져와서 새 클래스에서 파생 됩니다 `COleDispatchDriver`합니다.
 
 사용 하 여 대 한 자세한 내용은 `COleDispatchDriver`, 다음 문서를 참조 하세요.
 

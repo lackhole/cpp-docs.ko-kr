@@ -12,10 +12,10 @@ helpviewer_keywords:
 - ICollectionOnSTLImpl class
 ms.assetid: 683c88b0-0d97-4779-a762-e493334ba7f9
 ms.openlocfilehash: 6842f1c75ebbc9c3dfdd93f30d52fd2cb2936c03
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58779224"
 ---
 # <a name="icollectiononstlimpl-class"></a>ICollectionOnSTLImpl 클래스
@@ -35,7 +35,7 @@ class ICollectionOnSTLImpl : public T
 COM 컬렉션 인터페이스입니다.
 
 *CollType*<br/>
-C + + 표준 라이브러리 컨테이너 클래스입니다.
+C++ 표준 라이브러리 컨테이너 클래스입니다.
 
 *ItemType*<br/>
 컨테이너 인터페이스에 의해 노출 되는 항목의 형식입니다.

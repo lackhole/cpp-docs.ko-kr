@@ -10,10 +10,10 @@ helpviewer_keywords:
 - ODBC drivers, dynasets
 ms.assetid: 585cc67b-4d92-404b-9903-d769cd17badc
 ms.openlocfilehash: c44e34023ecdeb994ea3a60ea3b699cd5b1488a3
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023830"
 ---
 # <a name="odbc-driver-requirements-for-dynasets"></a>다이너셋에 대한 ODBC 드라이버 요구 사항
@@ -27,4 +27,4 @@ ODBC 용어에서 다이너셋 및 스냅숏을 라고 커서입니다. 커서�
 
 ## <a name="see-also"></a>참고자료
 
-[ODBC 기초](../../data/odbc/odbc-basics.md)
+[ODBC 기본 사항](../../data/odbc/odbc-basics.md)

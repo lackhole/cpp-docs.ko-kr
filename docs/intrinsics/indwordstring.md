@@ -9,10 +9,10 @@ helpviewer_keywords:
 - rep insd instruction
 ms.assetid: 96a1cf33-f691-4916-99e4-fa849b61e3a9
 ms.openlocfilehash: 6f50aed8e6efe3b0b0a6e7eaebef5719475463ea
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027872"
 ---
 # <a name="indwordstring"></a>__indwordstring
@@ -36,7 +36,7 @@ void __indwordstring(
 *포트*<br/>
 [in] 포트에서 읽기입니다.
 
-*버퍼*<br/>
+*Buffer*<br/>
 [out] 여기에 포트에서 읽은 데이터가 기록 됩니다.
 
 *개수*<br/>

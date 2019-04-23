@@ -9,10 +9,10 @@ helpviewer_keywords:
 - forms [C++], data access tasks
 ms.assetid: 562122d9-01d8-4284-acf6-ea109ab0408d
 ms.openlocfilehash: 199f51f20dd42ee9105b4e09f579c1f48948745f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040201"
 ---
 # <a name="record-views--mfc-data-access"></a>레코드 뷰  (MFC Data Access)
@@ -41,7 +41,7 @@ ms.locfileid: "59040201"
 
 - [레코드 뷰의 데이터 교환](../data/data-exchange-for-record-views-mfc-data-access.md)
 
-- [레코드 뷰를 사용하여 작업할 때의 사용자 작업](../data/your-role-in-working-with-a-record-view-mfc-data-access.md)
+- [레코드 뷰를 사용 하 여 작업에서 역할](../data/your-role-in-working-with-a-record-view-mfc-data-access.md)
 
 - [레코드 뷰 디자인 및 만들기](../data/designing-and-creating-a-record-view-mfc-data-access.md)
 
@@ -49,5 +49,5 @@ ms.locfileid: "59040201"
 
 ## <a name="see-also"></a>참고자료
 
-[데이터 엑세스 프로그래밍 (MFC/ATL)](../data/data-access-programming-mfc-atl.md)<br/>
+[데이터 액세스 프로그래밍 (MFC/ATL)](../data/data-access-programming-mfc-atl.md)<br/>
 [ODBC 드라이버 목록](../data/odbc/odbc-driver-list.md)

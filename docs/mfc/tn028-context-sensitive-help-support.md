@@ -9,15 +9,15 @@ helpviewer_keywords:
 - resource identifiers, context-sensitive Help
 ms.assetid: 884f1c55-fa27-4d4c-984f-30907d477484
 ms.openlocfilehash: 5689e314c2ba94068619a066e5f458e06819b2b7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58773478"
 ---
 # <a name="tn028-context-sensitive-help-support"></a>TN028: 상황에 맞는 도움말 지원
 
-이 이는 도움말 컨텍스트 Id 및 MFC에서 기타 도움말 문제를 할당 하기 위한 규칙을 설명 합니다. 상황에 맞는 도움말 지원에는 Visual c + +에서 사용할 수 있는 도움말 컴파일러가 필요 합니다.
+이 이는 도움말 컨텍스트 Id 및 MFC에서 기타 도움말 문제를 할당 하기 위한 규칙을 설명 합니다. 상황에 맞는 도움말 지원에 사용할 수 있는 도움말 컴파일러가 필요 시각적 개체의 C++입니다.
 
 > [!NOTE]
 >  WinHelp를 사용 하 여 상황에 맞는 도움말을 구현 하는 것 외에도 MFC HTML 도움말 사용도 지원 합니다. 이 지원 및 HTML 도움말을 사용 하 여 프로그래밍에 대 한 자세한 내용은 참조 하세요. [HTML 도움말: 프로그램에 대 한 상황에 맞는 도움말](../mfc/html-help-context-sensitive-help-for-your-programs.md)합니다.

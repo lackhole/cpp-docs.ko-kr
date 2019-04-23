@@ -7,17 +7,17 @@ helpviewer_keywords:
 - containers, STL/CLR
 ms.assetid: 34ca8031-2041-46b9-aed9-29082d1972ea
 ms.openlocfilehash: dc2e5ce3263c61839a1ba434ab0d2a39e6a9078f
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58774544"
 ---
 # <a name="stlclr-containers"></a>STL/CLR 컨테이너
 
-STL/CLR 라이브러리는 c + + 표준 라이브러리에서 비슷하게 발견 되는.NET Framework의 관리 되는 환경 내에서 실행 되는 컨테이너 이루어져 있습니다. 실제 c + + 표준 라이브러리를 사용 하 여 최신 상태로 유지 됩니다 하 고 레거시 지원을 위해 유지 됩니다.
+STL/CLR 라이브러리에 있는 것과 비슷한 된 컨테이너를 구성 합니다 C++ 표준 라이브러리 하지만.NET Framework의 관리 되는 환경 내에서 실행 합니다. 실제를 사용 하 여 최신 상태로 유지 됩니다 하지 C++ 표준 라이브러리와 레거시 지원을 위해 유지 관리 됩니다.
 
-이 문서는 STL/CLR 컨테이너 요소를 컨테이너에 삽입할 수 있습니다 및 소유권 문제는 컨테이너의 요소는 요소의 형식에 대 한 요구 사항 등의 컨테이너에 대 한 개요를 제공 합니다. 적절 한 경우에 네이티브 c + + 표준 라이브러리 및 STL/CLR 차이점 언급 됩니다.
+이 문서는 STL/CLR 컨테이너 요소를 컨테이너에 삽입할 수 있습니다 및 소유권 문제는 컨테이너의 요소는 요소의 형식에 대 한 요구 사항 등의 컨테이너에 대 한 개요를 제공 합니다. 필요한 경우 네이티브 차이점 C++ 표준 라이브러리 및 STL/CLR 나와 있습니다.
 
 ## <a name="requirements-for-container-elements"></a>컨테이너 요소에 대한 요구 사항
 
@@ -37,7 +37,7 @@ STL/CLR 컨테이너 중 하나로 boxed 값 형식에 삽입할 수 없습니�
 
 ### <a name="handles-to-reference-types"></a>참조 형식에 대 한 핸들
 
-STL/CLR 컨테이너에는 참조 형식에 대 한 핸들을 삽입할 수 있습니다. CLR을 대상으로 하는 c + +에 대 한 핸들 네이티브 c + +에 대 한 포인터와 비슷합니다. 자세한 내용은 [개체 연산자 (^)에 대 한 핸들](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)합니다.
+STL/CLR 컨테이너에는 참조 형식에 대 한 핸들을 삽입할 수 있습니다. 에 대 한 핸들 C++ 대상 CLR 네이티브에서 포인터 비슷합니다는 C++합니다. 자세한 내용은 [개체 연산자 (^)에 대 한 핸들](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)합니다.
 
 #### <a name="example"></a>예제
 

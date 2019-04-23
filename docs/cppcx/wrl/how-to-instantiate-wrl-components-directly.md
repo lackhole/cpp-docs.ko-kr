@@ -4,24 +4,24 @@ ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1a9fa011-0cee-4abf-bf83-49adf53ff906
 ms.openlocfilehash: 3f622a79aed6a1e42feccb92e1a01b3bc1277151
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035746"
 ---
 # <a name="how-to-instantiate-wrl-components-directly"></a>방법: 직접 WRL 구성 요소 인스턴스화
 
-Windows 런타임 c + + 템플릿 라이브러리 (WRL)를 사용 하는 방법을 알아봅니다[Microsoft::WRL::Make](make-function.md) 하 고 [Microsoft::WRL::Details::MakeAndInitialize](makeandinitialize-function.md) 모듈에서 구성 요소를 인스턴스화하는 함수는 정의합니다.
+Windows 런타임을 사용 하는 방법을 알아봅니다 C++ 템플릿 라이브러리 (WRL)[Microsoft::WRL::Make](make-function.md) 하 고 [Microsoft::WRL::Details::MakeAndInitialize](makeandinitialize-function.md) 모듈에서 구성 요소를 인스턴스화하는 함수 정의합니다.
 
 구성 요소를 직접 인스턴스화한 줄일 수 있습니다 오버 헤드가 클래스 팩터리 또는 다른 메커니즘이 필요 하지 않을 때입니다. 구성 요소 모두 유니버설 Windows 플랫폼 앱 및 데스크톱 앱에서 직접 인스턴스화할 수 있습니다.
 
-클래식 COM 구성 요소를 만들고 외부 데스크톱 앱에서 인스턴스화할 Windows Runtime c + + 템플릿 라이브러리를 사용 하는 방법에 알아보려면 참조 [방법: 클래식 COM 구성 요소를 만드는](how-to-create-a-classic-com-component-using-wrl.md)합니다.
+Windows 런타임을 사용 하는 방법을 알아보려면 C++ 클래식 COM 구성 요소를 만들고 외부 데스크톱 앱에서 인스턴스화할 템플릿 라이브러리 참조 [방법: 클래식 COM 구성 요소를 만드는](how-to-create-a-classic-com-component-using-wrl.md)합니다.
 
 이 문서에서는 두 가지 예제를 보여 줍니다. 사용 하 여 첫 번째 예제는 `Make` 구성 요소를 인스턴스화하는 함수입니다. 사용 하 여 두 번째 예제는 `MakeAndInitialize` 를 생성 하는 동안 실패할 수 있는 구성 요소를 인스턴스화하는 함수입니다. (일반적으로 COM 예외 대신 HRESULT 값을 사용 하 여, 때문에 오류를 나타내지만 COM 형식이 일반적으로 throw 하지 않습니다 해당 생성자에서. `MakeAndInitialize` 구성 요소를 통해 생성 인수 유효성 검사를 사용 하도록 설정 된 `RuntimeClassInitialize` 메서드.) 두 예제 모두 기본로 거 인터페이스를 정의 하 고 콘솔에 메시지를 기록 하는 클래스를 정의 하 여 해당 인터페이스를 구현 합니다.
 
 > [!IMPORTANT]
-> 사용할 수 없습니다는 `new` Windows Runtime c + + 템플릿 라이브러리 구성 요소를 인스턴스화하는 연산자입니다. 항상 사용 하는 권장 따라서 `Make` 또는 `MakeAndInitialize` 구성 요소를 직접 인스턴스화할 수 있습니다.
+> 사용할 수 없습니다는 `new` 연산자 Windows 런타임 인스턴스화를 C++ 템플릿 라이브러리 구성 요소입니다. 항상 사용 하는 권장 따라서 `Make` 또는 `MakeAndInitialize` 구성 요소를 직접 인스턴스화할 수 있습니다.
 
 ### <a name="to-create-and-instantiate-a-basic-logger-component"></a>만들고 기본로 거 구성 요소 인스턴스화
 

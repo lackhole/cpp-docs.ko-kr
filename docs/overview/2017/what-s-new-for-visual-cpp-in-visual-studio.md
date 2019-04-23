@@ -6,11 +6,11 @@ ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: e74f8270d241b9725a24ee257fb846a7cc4e079e
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899459"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779496"
 ---
 # <a name="whats-new-for-c-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 C++ 기능
 
@@ -80,17 +80,17 @@ Microsoft C++ 컴파일러는 AVX-512의 새로운 기능을 128비트 및 256�
 - 성능 향상: `basic_string::operator==`가 이제 문자열 내용을 비교하기 전에 문자열 크기를 확인합니다.
 - 성능 향상: `basic_string`에서 컴파일러 최적화 프로그램의 분석 작업을 어렵게 한 컨트롤 결합을 제거했습니다. 그래도 짧은 문자열을 대상으로 `reserve`를 호출할 때 아무 작업도 하지 않도록 하는 데 비용이 듭니다.
 - \<any\>, \<string_view\>, `apply()`, `make_from_tuple()`을 추가했습니다.
-- `std::vector` 정확성과 성능에서 철저히 점검되었습니다. 이제 삽입 및 대입 작업에서 앨리어싱이 표준에서 요구하는 대로 올바르게 처리되고, 강한 예외 보장이 표준에 따라 요구되면 `move_if_noexcept()` 및 기타 논리를 통해 제공되며, 삽입/대입의 항목 작업 개수가 줄어들었습니다.
+- `std::vector`가 정확성과 성능에서 철저히 점검되었습니다. 이제 삽입 및 대입 작업에서 앨리어싱이 표준에서 요구하는 대로 올바르게 처리되고, 강한 예외 보장이 표준에 따라 요구되면 `move_if_noexcept()` 및 기타 논리를 통해 제공되며, 삽입/대입의 항목 작업 개수가 줄어들었습니다.
 - 이제 C++ 표준 라이브러리가 가상의 null 포인터를 역참조하지 못하도록 방지합니다.
 - \<optional\>, \<variant\>, `shared_ptr::weak_type` 및 \<cstdalign\>을 추가했습니다.
 - `min(initializer_list)`, `max(initializer_list)`, `minmax(initializer_list)`, `min_element()`, `max_element()`, `minmax_element()`에서 C++14 `constexpr`을 사용하도록 설정했습니다.
 - `weak_ptr::lock()` 성능이 향상되었습니다.
 - 이전에 코드가 영원히 잠기는 문제가 발생하던 `std::promise` 이동 할당 연산자가 해결되었습니다.
 - `atomic<T*>`를 `T*`로 암시적으로 변환할 때 발생하는 컴파일러 오류를 해결했습니다.
-- `pointer_traits<Ptr>` 이제 `Ptr::rebind<U>`를 올바르게 검색합니다.
+- `pointer_traits<Ptr>`가 이제 `Ptr::rebind<U>`를 올바르게 검색합니다.
 - `move_iterator` 빼기 연산자에서 누락된 `const` 한정자를 수정했습니다.
 - `propagate_on_container_copy_assignment` 및 `propagate_on_container_move_assignment`를 요청하는 상태 저장 사용자 정의 할당자의 silent bad codegen을 수정했습니다.
-- `atomic<T>` 이제 오버로드된 `operator&()`를 허용합니다.
+- `atomic<T>`가 이제 오버로드된 `operator&()`를 허용합니다.
 - 컴파일러 처리량을 늘리기 위해 이제 C++ 표준 라이브러리 헤더는 불필요한 컴파일러 내장 함수에 대한 선언을 포함하지 않습니다.
 - 잘못된 `bind()` 호출에 대한 컴파일러 진단이 약간 개선되었습니다.
 - `std::string` 및 `std::wstring` 이동 생성자 성능이 3배 넘게 향상되었습니다.
@@ -114,11 +114,11 @@ Microsoft C++ 컴파일러는 AVX-512의 새로운 기능을 128비트 및 256�
 - 표준 라이브러리 컨테이너는 이제 `max_size()`를 `size_type`의 `max()`가 아닌 `numeric_limits<difference_type>::max()`로 제한합니다. 이렇게 하면 결과 해당 컨테이너의 반복기에 대한 `distance()` 결과를 `distance()`의 반환 형식으로 나타낼 수 있습니다.
 - 누락된 `auto_ptr<void>` 전문화가 수정되었습니다.
 - 이전에는 length 인수가 정수 형식이 아닌 경우 `for_each_n()`, `generate_n()` 및 `search_n()` 알고리즘을 컴파일하지 못했습니다. 이제는 정수 형식이 아닌 길이를 반복기의 `difference_type`으로 변환하려고 시도합니다.
-- `normal_distribution<float>` 더 이상 double에서 float로 좁히는 방법에 대한 표준 라이브러리 내부 경고를 내보내지 않습니다.
+- `normal_distribution<float>`는 더 이상 double에서 float로 좁히는 것에 대한 표준 라이브러리 내부 경고를 내보내지 않습니다.
 - 최대 크기 오버플로를 확인할 때 `basic_string` 대신 `npos`와 비교되는 일부 `max_size()` 연산이 수정되었습니다.
-- `condition_variable::wait_for(lock, relative_time, predicate)` 잘못된 절전 모드 해제 시 전체 상대 시간 동안 대기합니다. 이제는 상대 시간의 단일 간격 동안만 대기합니다.
-- `future::get()` 이제 표준에 필요한 만큼 `future`를 무효화합니다.
-- `iterator_traits<void *>` `void&`를 형성하려고 시도했기 때문에 하드 오류였습니다. 이제는 "is iterator" SFINAE 조건에서 `iterator_traits`를 사용할 수 있도록 완전하게 빈 구조체가 됩니다.
+- `condition_variable::wait_for(lock, relative_time, predicate)`는 잘못된 절전 모드 해제 시 전체 상대 시간 동안 대기합니다. 이제는 상대 시간의 단일 간격 동안만 대기합니다.
+- `future::get()`은 표준에 필요한 만큼 `future`를 무효화합니다.
+- `iterator_traits<void *>`는 `void&`를 형성하려고 시도했기 때문에 하드 오류였습니다. 이제는 "is iterator" SFINAE 조건에서 `iterator_traits`를 사용할 수 있도록 완전하게 빈 구조체가 됩니다.
 - Clang **-Wsystem-headers**에서 보고된 일부 경고가 수정되었습니다.
 - Clang **-Wmicrosoft-exception-spec**에서 보고된 "선언의 예외 사양이 이전 선언과 일치하지 않습니다."도 수정되었습니다.
 - Clang과 C1XX에서 보고된 mem-initializer-list 순서 지정 경고도 수정되었습니다.
@@ -127,8 +127,8 @@ Microsoft C++ 컴파일러는 AVX-512의 새로운 기능을 128비트 및 256�
 - 많은 `vector<bool>` 연산이 이제 `noexcept`로 표시됩니다.
 - 표준 라이브러리에서는 이제 옵트아웃 이스케이프 해치와 일치하는 `value_type` 할당자(C++17 모드에서)를 적용합니다.
 - `basic_string`에 대한 self-range-insert에서 문자열의 내용이 뒤섞이는 일부 조건이 수정되었습니다. (참고: 벡터에 대한 self-range-insert는 여전히 표준 라이브러리에서 금지됩니다.)
-- `basic_string::shrink_to_fit()` 더 이상 할당자 `propagate_on_container_swap`의 영향을 받지 않습니다.
-- `std::decay` 이제 끔찍한 함수 형식(예: cv-qualified 및/또는 ref-qualified인 함수 형식)을 처리합니다.
+- `basic_string::shrink_to_fit()`는 더 이상 할당자 `propagate_on_container_swap`의 영향을 받지 않습니다.
+- `std::decay`는 이제 끔찍한 함수 형식, 즉 cv-qualified 및/또는 ref-qualified인 함수 형식을 처리합니다.
 - include 지시문에서 적절한 대/소문자 구분과 슬래시를 사용하도록 변경하여 이식성이 향상되었습니다.
 - 경고 C4061 "열거형 '*enumeration*'의 switch에 있는 '*enumerator*' 열거자는 case 레이블에 의해 명시적으로 처리되지 않습니다."가 수정되었습니다. 경고는 기본적으로 사용하지 않도록 설정되어 있으며, 표준 라이브러리의 일반 경고 정책의 예외로 수정되었습니다. (표준 라이브러리는 **/W4** 정리이지만 **/Wall** 정리가 되려고 시도하지는 않습니다. 기본적으로 사용되지 않는 대부분의 경고는 매우 시끄럽고, 정기적으로 사용하기 위한 것이 아닙니다.)
 - `std::list` 디버그 검사가 향상되었습니다. 이제는 목록 반복기에서 `operator->()`를 검사하고, `list::unique()`에서는 반복기를 무효화된(invalidated) 것으로 표시합니다.
@@ -142,8 +142,8 @@ Microsoft C++ 컴파일러는 AVX-512의 새로운 기능을 128비트 및 256�
 - 모든 잠금의 `std::lock()`에서 회전하는 대신 `lock()` 연산을 사용하도록 `try_lock()` 교착 상태 방지 알고리즘이 향상되었습니다.
 - `system_category::message()`에서 명명된 반환 값 최적화가 활성화되었습니다.
 - `conjunction` 및 `disjunction`은 이제 2N + 2 형식 대신 N + 1 형식을 인스턴스화합니다.
-- `std::function` `std::function`으로 많은 고유 람다를 전달하는 프로그램에서 처리량을 향상시키고 개체 크기를 줄임으로써 더 이상 각 형식이 지워진 호출 가능 코드에 대한 할당자 지원 기계를 인스턴스화하지 않습니다.
-- `allocator_traits<std::allocator>` `std::allocator`부터 `allocator_traits`까지만 상호 작용하는 코드에서(즉, 대부분의 코드에서) 코드 크기를 줄이는, 수동으로 인라인된 `std::allocator` 연산이 포함됩니다.
+- `std::function`에서는 `std::function`으로 많은 고유 람다를 전달하는 프로그램에서 처리량을 향상시키고 obj 크기를 줄임으로써 더 이상 각 type-erased 호출 가능 코드에 대한 할당자 지원 기계를 인스턴스화하지 않습니다.
+- `allocator_traits<std::allocator>`에는 `std::allocator`부터 `allocator_traits`까지만 상호 작용하는 코드에서(즉, 대부분의 코드에서) 코드 크기를 줄이는, 수동으로 인라인된 `std::allocator` 연산이 포함됩니다.
 - C++11 최소 할당자 인터페이스는 이제 `_Wrap_alloc` 내부 클래스에 할당자를 래핑하는 대신 `allocator_traits`를 직접 호출하는 표준 라이브러리에서 처리됩니다. 이렇게 하면 할당자 지원을 위해 생성되는 코드의 크기를 줄이고, 경우에 따라 표준 라이브러리 컨테이너에 대해 추론할 수 있는 최적화 프로그램의 기능이 향상되고, 더 효율적인 디버깅 환경을 제공합니다(이제는 디버거에서 `_Wrap_alloc<your_allocator_type>` 대신 할당자 유형이 표시되기 때문임).
 - 할당자를 실제로 사용자 지정할 수 없는 사용자 지정 `allocator::reference`에 대한 메타 프로그래밍이 제거되었습니다. (할당자는 컨테이너에서 고급 참조가 아니라 고급 포인터를 사용하도록 만들 수 있습니다.)
 - 컴파일러 프런트 엔드에서 범위 기반 for 루프의 디버그 반복기를 래핑하지 않도록 지시하여 디버그 빌드의 성능이 향상되었습니다.
@@ -156,7 +156,7 @@ Microsoft C++ 컴파일러는 AVX-512의 새로운 기능을 128비트 및 256�
 - 함수 기반 식 SFINAE가 `struct` 및 `void_t` 기반으로 변경되었습니다.
 - 표준 라이브러리 알고리즘은 이제 반복기의 후위 증가 연산(postincrement)을 방지합니다.
 - 64비트 시스템에서 32비트 할당자를 사용할 때의 잘림 경고가 수정되었습니다.
-- `std::vector` 이제는 가능한 경우 버퍼를 다시 사용하여 비POCMA non-equal-allocator 사례에서 이동 할당이 더 효율적입니다.
+- 이제는 가능한 경우 버퍼를 다시 사용하여 비POCMA non-equal-allocator case에서 `std::vector` 이동 할당이 더 효율적입니다.
 
 #### <a name="readability-and-other-improvements"></a>가독성 및 기타 향상된 기능
 
@@ -199,25 +199,25 @@ C++17 표준에 따라 몇 가지 표준 라이브러리 기능이 추가 또는
 
 #### <a name="performance-fixes-and-improvements"></a>성능 수정 및 개선 사항
 
-- `basic_string<char16_t>` 이제 `basic_string<wchar_t>`이 참여하는 유사한 최적화 및 동일한 `memcmp`, `memcpy`에 참여합니다.
+- `basic_string<char16_t>`에서는 이제 `basic_string<wchar_t>`이 참여하는 유사한 최적화 및 동일한 `memcmp`, `memcpy`에 참여합니다.
 - 함수 포인터가 Visual Studio 2015 업데이트 3의 "함수 복사 방지" 작업으로 인해 인라인되고 노출되지 않도록 방지하는 최적화 제한 문제가 해결되어 `lower_bound(iter, iter, function pointer)`의 성능이 복원되었습니다.
 - 순서 확인 전 반복기의 래핑을 해제하여 반복기 디버깅의 `includes`, `set_difference`, `set_symmetric_difference` 및 `set_union` 입력 순서 확인 오버헤드를 줄였습니다.
-- `std::inplace_merge` 이제 이미 제자리에 있는 요소를 건너뜁니다.
+- 이제 `std::inplace_merge`는 이미 제자리에 있는 요소를 건너뜁니다.
 - `std::random_device`를 생성해도 더 이상 `std::string`이 생성된 후 파괴되지 않습니다.
-- `std::equal` 및 `std::partition`에는 점프 스레딩 최적화 전달이 있어 반복기 비교가 필요 없습니다.
+- `std::equal`과 `std::partition`에는 점프 스레딩 최적화 전달이 있어 반복기 비교가 필요 없습니다.
 - `std::reverse`가 일반적으로 복사 가능한 `T`에 포인터를 전달받으면 이제 직접 작성한 벡터화된 구현으로 디스패치합니다.
-- `std::fill``std::equal` 및 `std::lexicographical_compare`는 `std::byte` 및 `gsl::byte`(및 기타 char과 유사한 열거형 및 열거형 클래스)의 `memset` 및 `memcmp`로 디스패치하는 방법을 지시받았습니다. `std::copy`은(는) `is_trivially_copyable`을(를) 사용하여 디스패치하므로 변경이 필요하지 않았습니다.
+- `std::fill`, `std::equal` 및 `std::lexicographical_compare`은(는) `std::byte` 및 `gsl::byte`(및 기타 char과 유사한 열거형 및 열거형 클래스)의 `memset` 및 `memcmp`(으)로 디스패치하는 방법을 지시받았습니다. `std::copy`은(는) `is_trivially_copyable`을(를) 사용하여 디스패치하므로 변경이 필요하지 않았습니다.
 - 표준 라이브러리는 더 이상 형식을 non-trivially-destructible로 만드는 동작만 수행하는 empty-braces 소멸자를 포함하지 않습니다.
 
 #### <a name="correctness-fixes-in-visual-studio-2017-version-155"></a>Visual Studio 2017 버전 15.5의 정확성 수정
 
-- `std::partition` 이제 표준의 요구 사항에 따라 조건자를 N + 1회 대신 N회 호출합니다.
+- `std::partition`은 이제 표준의 요구 사항에 따라 조건자를 N + 1회 대신 N회 호출합니다.
 - 버전 15.3에서 매직 정적 이름을 방지하려는 시도가 버전 15.5에서 복구되었습니다.
-- `std::atomic<T>` 는 더 이상 `T`를 구성 가능한 기본값으로 요구하지 않습니다.
+- `std::atomic<T>`는 더 이상 `T`를 구성 가능한 기본값으로 요구하지 않습니다.
 - 로그 시간을 사용하는 힙 알고리즘은 반복기 디버깅이 활성화되었을 때 사실상 입력이 힙인 선형 시간 어설션을 더 이상 수행하지 않습니다.
-- `__declspec(allocator)` 이제 이러한 declspec를 인식하지 않는 Clang의 경고를 차단하기 위해 C1XX에서만 보호됩니다.
-- `basic_string::npos` 이제 컴파일 시간 상수로 사용할 수 있습니다.
-- `std::allocator` **/Zc:alignedNew-** 로 비활성화되지 않은 경우 C++17 모드에서 이제 과다 정렬된 형식(즉, 정렬이 `max_align_t`보다 큰 형식)의 할당을 올바르게 처리합니다.  예를 들어 16 또는 32바이트 맞춤이 있는 개체의 벡터는 이제 SSE 및 AVX 명령에 맞게 올바르게 맞춰집니다.
+- `__declspec(allocator)`는 이제 이러한 declspec를 인식하지 않는 Clang의 경고를 차단하기 위해 C1XX에서만 보호됩니다.
+- `basic_string::npos`는 이제 컴파일 시간 상수로 사용할 수 있습니다.
+- C++17 모드에서 `std::allocator`는 이제 alignment가 `max_align_t`보다 큰 over-aligned types - types 할당을 올바르게 처리합니다(**/Zc:alignedNew-** 로 비활성화되지 않은 경우에 한함).  예를 들어 16 또는 32바이트 맞춤이 있는 개체의 벡터는 이제 SSE 및 AVX 명령에 맞게 올바르게 맞춰집니다.
 
 ### <a name="visual-studio-2017-version-156"></a>Visual Studio 2017 버전 15.6
 
@@ -458,7 +458,7 @@ Visual Studio 그래픽 진단은 Direct3D 앱의 렌더링 및 성능 문제를
 
   ![리소스 기록 변경](media/resource-history-change.png)
 
-  전체 호출 스택 캡처링을 사용하여 프레임이 캡처된 경우(**Visual Studio > 도구 > 옵션(** 그래픽 진단 **아래)**), 각 변경 이벤트의 컨텍스트를 신속하게 추론하고 Visual Studio 프로젝트 내에서 검사할 수 있습니다.
+  전체 호출 스택 캡처링을 사용하여 프레임이 캡처된 경우(**Visual Studio > 도구 > 옵션** **그래픽 진단** 아래), 각 변경 이벤트의 컨텍스트를 신속하게 추론하고 Visual Studio 프로젝트 내에서 검사할 수 있습니다.
 
 - **API 통계:** 프레임의 API 사용에 대한 대략적인 요약을 표시합니다. 인지하지 못한 상태에서 수행 중인 호출이나 너무 많이 수행 중인 호출을 검색하는 데 유용할 수 있습니다. 이 창은 Visual Studio Graphics Analyzer의 **보기 > API 통계**를 통해 사용할 수 있습니다.
 

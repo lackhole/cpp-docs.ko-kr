@@ -1,5 +1,5 @@
 ---
-title: propputref (c + + COM 특성)
+title: propputref (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.propputref
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - propputref attribute
 ms.assetid: 9b0aed74-fdc7-4e59-9117-949bea4f86dd
 ms.openlocfilehash: e471e467c55e0b8a17be96fd1bcb3cd24cfafe06
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031831"
 ---
 # <a name="propputref"></a>propputref
@@ -25,7 +25,7 @@ ms.locfileid: "59031831"
 
 ## <a name="remarks"></a>설명
 
-합니다 **propputref** c + + 특성에 동일한 기능을 합니다 [propputref](/windows/desktop/Midl/propputref) MIDL 특성입니다.
+**propputref** C++ 특성에 동일한 기능을 합니다 [propputref](/windows/desktop/Midl/propputref) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

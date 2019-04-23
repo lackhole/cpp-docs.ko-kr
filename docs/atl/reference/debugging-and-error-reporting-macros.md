@@ -12,10 +12,10 @@ helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
 ms.openlocfilehash: 0d5010f913521848675987b145a1277c7b00decf
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58775051"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>디버깅 및 오류 보고 매크로
@@ -176,7 +176,7 @@ ATLTRACE(
 ### <a name="parameters"></a>매개 변수
 
 *exp*<br/>
-[in] 문자열 및 Visual c + + 보낼 변수 창이 나 이러한 메시지를 트래핑 하는 모든 응용 프로그램을 출력 합니다.
+[in] 문자열 및 시각적 개체에 보낼 변수를 C++ 출력 창 또는 이러한 메시지를 트래핑 하는 모든 응용 프로그램입니다.
 
 *category*<br/>
 [in] 보고서에는 메서드 또는 이벤트의 형식입니다. 범주 목록에 대 한 설명을 참조 하세요.
@@ -207,7 +207,7 @@ ATLTRACE2(
 ### <a name="parameters"></a>매개 변수
 
 *exp*<br/>
-[in] Visual c + + 출력 창이 나 이러한 메시지를 트래핑 하는 모든 응용 프로그램에 보낼 문자열입니다.
+[in] 시각적 개체에 보낼 문자열입니다 C++ 출력 창 또는 이러한 메시지를 트래핑 하는 모든 응용 프로그램입니다.
 
 *category*<br/>
 [in] 보고서에는 메서드 또는 이벤트의 형식입니다. 범주 목록에 대 한 설명을 참조 하세요.

@@ -15,10 +15,10 @@ helpviewer_keywords:
 - CTypedPtrMap [MFC], SetAt
 ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
 ms.openlocfilehash: bc164125f867cf3e2f27b74e69b826cbed31ff1d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781798"
 ---
 # <a name="ctypedptrmap-class"></a>CTypedPtrMap 클래스
@@ -62,7 +62,7 @@ Map에 저장 된 개체의 클래스입니다.
 
 ## <a name="remarks"></a>설명
 
-사용 하는 경우 `CTypedPtrMap`, c + + 형식 검사 기능에 일치 하지 않는 포인터 형식으로 인 한 오류를 제거 하는 데 도움이 됩니다.
+사용 하는 경우 `CTypedPtrMap`, C++ 형식 검사 기능에 일치 하지 않는 포인터 형식으로 인 한 오류를 제거 하는 데 도움이 됩니다.
 
 때문에 모든 `CTypedPtrMap` 함수는 인라인,이 템플릿을 사용 하 여 크게 영향을 주지 않습니다 크기 또는 코드의 속도.
 

@@ -9,10 +9,10 @@ helpviewer_keywords:
 - MP compiler option (C++)
 - cl.exe compiler, multi-process build
 ms.openlocfilehash: e005b0314e87270e81dbb155dfdaa67be067cd3f
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59424146"
 ---
 # <a name="mp-build-with-multiple-processes"></a>/MP(여러 프로세스로 빌드)
@@ -127,6 +127,6 @@ MSBuild를 사용할지 여부를 결정 하기 위한 지침은 또는 **/MP** 
 
 ## <a name="see-also"></a>참고자료
 
-[#import 지시문](../../preprocessor/hash-import-directive-cpp.md)<br/>
+[#import Directive](../../preprocessor/hash-import-directive-cpp.md)<br/>
 [명령줄 참조](/visualstudio/msbuild/msbuild-command-line-reference)<br/>
-[/Zf (더 빠른 PDB 생성)](zf.md)<br/>
+[/Zf(더 빠른 PDB 생성)](zf.md)<br/>

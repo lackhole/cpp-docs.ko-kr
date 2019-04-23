@@ -157,10 +157,10 @@ helpviewer_keywords:
 - CMDIFrameWndEx [MFC], m_bDisableSetRedraw
 ms.assetid: dbcafcb3-9a7a-4f11-9dfe-ba57565c81d0
 ms.openlocfilehash: b24afd943f2168657c6b4437fed65b0a45689b52
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58778561"
 ---
 # <a name="cmdiframewndex-class"></a>CMDIFrameWndEx 클래스
@@ -274,7 +274,7 @@ MDI 응용 프로그램에서 확장 된 사용자 지정 기능을 사용 하�
 
 [!code-cpp[NVC_MFC_DrawClient#1](../../mfc/reference/codesnippet/cpp/cmdiframewndex-class_1.h)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -719,7 +719,7 @@ void EnableMDITabs(
 *bTabCloseButton*<br/>
 탭 닫기 단추를 표시할지 여부를 지정 합니다.
 
-*스타일*<br/>
+*style*<br/>
 탭의 스타일을 지정합니다. Microsoft OneNote 탭에 대 한 일반 탭에 STYLE_3D_ONENOTE STYLE_3D_SCROLLED를 사용 합니다.
 
 *bTabCustomTooltips*<br/>
@@ -1047,7 +1047,7 @@ BOOL InsertPane(
 *pTarget*<br/>
 [in] 창에 삽입할 전후 창에 대 한 포인터입니다.
 
-*후에는*<br/>
+*bAfter*<br/>
 [in] TRUE 이면 *pControlBar* 뒤에 삽입 됩니다 *pTarget*합니다. FALSE 이면 *pControlBar* 앞에 삽입 됩니다 *pTarget*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1132,7 +1132,7 @@ BOOL IsPointNearDockSite(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 화면 좌표에서 지정 된 지점입니다.
 
 *dwBarAlignment*<br/>
@@ -1238,7 +1238,7 @@ void MDITabMoveToNextGroup(BOOL bNext=TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*다음*<br/>
+*bNext*<br/>
 [in] TRUE 이면 다음 탭된 그룹으로 탭을 이동 합니다. FALSE 인 경우 이전 탭된 그룹으로 이동 합니다.
 
 ##  <a name="mditabnewgroup"></a>  CMDIFrameWndEx::MDITabNewGroup
@@ -1592,7 +1592,7 @@ virtual BOOL OnShowMDITabContextMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 화면 좌표에서 메뉴의 위치입니다.
 
 *dwAllowedItems*<br/>
@@ -1745,7 +1745,7 @@ CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 화면 좌표로 나타낸 점입니다.
 
 *nSensitivity*<br/>
@@ -1888,7 +1888,7 @@ void SetupToolbarMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*메뉴*<br/>
+*menu*<br/>
 [in] 에 대 한 참조를 [CMenu 클래스](../../mfc/reference/cmenu-class.md) 개체를 수정할 수 있습니다.
 
 *uiViewUserToolbarCmdFirst*<br/>

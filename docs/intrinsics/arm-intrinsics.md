@@ -1932,10 +1932,10 @@ helpviewer_keywords:
 - intrinsics, ARM
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
 ms.openlocfilehash: 47fd2f449568494bafde993e035d3ec37c44f6fe
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027633"
 ---
 # <a name="arm-intrinsics"></a>ARM 내장 함수
@@ -2225,7 +2225,7 @@ int _MoveFromCoprocessor2(
 
 이 내장 함수의 모든 5개의 매개 변수 값은 컴파일 타임에 알려진 상수 식이어야 합니다.
 
-`_MoveFromCoprocessor` MRC 명령을 사용 하 여 `_MoveFromCoprocessor2` 는 mrc2를 사용 합니다. 매개 변수는 명령어에 직접 인코딩되는 비트 필드에 해당합니다. 매개 변수의 해석은 보조 프로세서에 따라 다릅니다. 자세한 내용은 문제가 있는 보조 프로세서에 대한 설명서를 참조하세요.
+`_MoveFromCoprocessor`는 MRC 명령을 사용하며 `_MoveFromCoprocessor2`는 MRC2를 사용합니다. 매개 변수는 명령어에 직접 인코딩되는 비트 필드에 해당합니다. 매개 변수의 해석은 보조 프로세서에 따라 다릅니다. 자세한 내용은 문제가 있는 보조 프로세서에 대한 설명서를 참조하세요.
 
 ###  <a name="MoveFromCo64"></a> _MoveFromCoprocessor64
 
@@ -2250,7 +2250,7 @@ unsigned __int64 _MoveFromCoprocessor64(
 *crm*<br/>
 0에서 15 사이 범위의 보조 프로세서 등록 번호는 추가 소스 또는 대상 피연산자를 지정합니다.
 
-**반환 값**
+**값을 반환합니다.**
 
 보조 프로세서에서 읽는 값입니다.
 
@@ -2258,7 +2258,7 @@ unsigned __int64 _MoveFromCoprocessor64(
 
 이 내장의 모든 3개의 매개 변수 값은 컴파일 타임에 알려진 상수 식이어야 합니다.
 
-`_MoveFromCoprocessor64` MRRC 명령을 사용 합니다. 매개 변수는 명령어에 직접 인코딩되는 비트 필드에 해당합니다. 매개 변수의 해석은 보조 프로세서에 따라 다릅니다. 자세한 내용은 문제가 있는 보조 프로세서에 대한 설명서를 참조하세요.
+`_MoveFromCoprocessor64`는 MRRC 명령을 사용합니다. 매개 변수는 명령어에 직접 인코딩되는 비트 필드에 해당합니다. 매개 변수의 해석은 보조 프로세서에 따라 다릅니다. 자세한 내용은 문제가 있는 보조 프로세서에 대한 설명서를 참조하세요.
 
 ###  <a name="MoveToCo"></a> _MoveToCoprocessor, _MoveToCoprocessor2
 
@@ -2312,7 +2312,7 @@ void _MoveToCoprocessor2(
 
 이 내장 함수의 `coproc`, `opcode1`, `crn`, `crm`, 및 `opcode2` 매개 변수의 값은 컴파일 타임에 알려진 상수 식이어야 합니다.
 
-`_MoveToCoprocessor` MCR 명령을 사용 하 여 `_MoveToCoprocessor2` 는 mcr2 명령을 사용 합니다. 매개 변수는 명령어에 직접 인코딩되는 비트 필드에 해당합니다. 매개 변수의 해석은 보조 프로세서에 따라 다릅니다. 자세한 내용은 문제가 있는 보조 프로세서에 대한 설명서를 참조하세요.
+`_MoveToCoprocessor`는 MCR 명령을 사용하며 `_MoveToCoprocessor2`는 MCR2 명령을 사용합니다. 매개 변수는 명령어에 직접 인코딩되는 비트 필드에 해당합니다. 매개 변수의 해석은 보조 프로세서에 따라 다릅니다. 자세한 내용은 문제가 있는 보조 프로세서에 대한 설명서를 참조하세요.
 
 ###  <a name="MoveToCo64"></a> _MoveToCoprocessor64
 
@@ -2346,7 +2346,7 @@ void _MoveFromCoprocessor64(
 
 이 내장 함수의 `coproc`, `opcode1`, 및 `crm` 매개 변수 값은 컴파일 타임에 알려진 상수 식이어야 합니다.
 
-`_MoveFromCoprocessor64` MCRR 명령을 사용 합니다. 매개 변수는 명령어에 직접 인코딩되는 비트 필드에 해당합니다. 매개 변수의 해석은 보조 프로세서에 따라 다릅니다. 자세한 내용은 문제가 있는 보조 프로세서에 대한 설명서를 참조하세요.
+`_MoveFromCoprocessor64`는 MCRR 명령을 사용합니다. 매개 변수는 명령어에 직접 인코딩되는 비트 필드에 해당합니다. 매개 변수의 해석은 보조 프로세서에 따라 다릅니다. 자세한 내용은 문제가 있는 보조 프로세서에 대한 설명서를 참조하세요.
 
 ##  <a name="I"></a> 다른 아키텍처에서 내장 함수에 대 한 ARM 지원
 

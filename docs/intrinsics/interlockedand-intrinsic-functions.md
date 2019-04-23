@@ -57,10 +57,10 @@ helpviewer_keywords:
 - _InterlockedAnd_HLEAcquire intrinsic
 ms.assetid: ad271dc3-42cd-47d0-9f65-30d5cfeb66fc
 ms.openlocfilehash: b38a181102247ab203c86ccb6310a72135dccc8b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033322"
 ---
 # <a name="interlockedand-intrinsic-functions"></a>_InterlockedAnd Intrinsic Functions
@@ -175,7 +175,7 @@ __int64 _InterlockedAnd64_rel(
 *값*<br/>
 [out에서] 결과 교체 첫 번째 피연산자에 대 한 포인터입니다.
 
-*마스크*<br/>
+*mask*<br/>
 [in] 두 번째 피연산자입니다.
 
 ## <a name="return-value"></a>반환 값

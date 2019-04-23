@@ -3,10 +3,10 @@ title: '방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사�
 ms.date: 04/08/2019
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
 ms.openlocfilehash: 3aeef205effe072a25fc0b3dabb9145245461d45
-ms.sourcegitcommit: 39debf8c525c3951af6913ee5e514617658f8859
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59424198"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용
@@ -44,7 +44,7 @@ UWP로 포팅하려는 기존 COM 라이브러리가 있는 경우 [WRL(Windows 
 
 이 항목에는 다음 절차가 포함됩니다.
 
-- [UWP 앱에서 Win32 DLL 사용](#BK_Win32DLL)
+- [UWP 앱에서 Win32 DLL 사용하기](#BK_Win32DLL)
 
 - [UWP 앱에서 네이티브 C++ 정적 라이브러리 사용](#BK_StaticLib)
 

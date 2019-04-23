@@ -10,10 +10,10 @@ helpviewer_keywords:
 - ssm instruction
 ms.assetid: 8bee669b-6bd8-4e25-9383-bb7d57295b4d
 ms.openlocfilehash: e1ece6d6f4040b81b55d8400407d46f165b56b53
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59024519"
 ---
 # <a name="enable"></a>_enable
@@ -38,7 +38,7 @@ void _enable(void);
 
 ## <a name="remarks"></a>설명
 
-`_enable` 프로세서 인터럽트 플래그를 설정 하도록 지시 합니다. x86 시스템에서 이 함수는 인터럽트 플래그 설정(`sti`) 명령을 생성합니다.
+`_enable`은 인터럽트 플래그를 설정하도록 프로세서에 명령합니다. x86 시스템에서 이 함수는 인터럽트 플래그 설정(`sti`) 명령을 생성합니다.
 
 이 함수는 커널 모드에서만 사용할 수 있습니다. 사용자 모드에서 이 함수를 사용하면 권한 있는 명령 예외가 throw됩니다.
 

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - constants, global
 ms.assetid: df5a9bd4-d0a8-4c1c-956e-b481d0bded7d
 ms.openlocfilehash: 1ae29b8744e24b6471f0d5536f3f13cc5ae59499
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030195"
 ---
 # <a name="global-constants-in-c"></a>C++의 전역 상수
 
-C + +의 전역 상수에 정적 링크가 있습니다. 3. 다릅니다. 전역 사용 하려는 경우 여러 파일의 c + +에서 상수 확인 되지 않은 외부 오류가 표시 됩니다. 컴파일러는 변수에 대 한 예약 된 공간이 없습니다, 전역 상수를 최적화 합니다.
+C++전역 상수에 정적 링크가 있습니다. 3. 다릅니다. 전역 상수를 사용 하려는 경우 C++ 확인 되지 않은 외부 오류가 여러 파일에 표시 합니다. 컴파일러는 변수에 대 한 예약 된 공간이 없습니다, 전역 상수를 최적화 합니다.
 
 이 오류를 해결 하는 한 가지 방법은 헤더 파일에 const 초기화를 포함 하 고 필요한 경우 처럼 함수 프로토타입에서 CPP 파일에서 해당 헤더를 포함 하는 경우 다른 방법은 변수를 비상수 것을 평가할 때에 대 한 상수 참조를 사용 하는 것입니다.
 

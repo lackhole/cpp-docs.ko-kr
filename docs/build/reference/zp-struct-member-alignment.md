@@ -12,10 +12,10 @@ helpviewer_keywords:
 - -Zp compiler option [C++]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
 ms.openlocfilehash: d76cd93c7af4228bff8f73fa3bcbf40fa149b0be
-ms.sourcegitcommit: 35c4b3478f8cc310ebbd932a18963ad8ab846ed9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59237166"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp(구조체 멤버 맞춤)
@@ -43,11 +43,11 @@ ms.locfileid: "59237166"
 특정 맞춤 요구 사항이 있는 경우가 아니면이 옵션을 사용 하지 마세요.
 
 > [!WARNING]
-> Windows SDK의 c + + 헤더 집합 및 가정 **/zp8** 내부적으로 압축 합니다. 메모리 손상이 경우 발생할 수 있습니다 합니다 **/Zp** Windows SDK 헤더 내에서 설정을 변경 합니다. 헤더에서 영향을 받지 않습니다 **/Zp** 옵션이 명령줄에서 설정 합니다.
+> C++Windows SDK의 헤더 집합 및 가정 **/zp8** 내부적으로 압축 합니다. 메모리 손상이 경우 발생할 수 있습니다 합니다 **/Zp** Windows SDK 헤더 내에서 설정을 변경 합니다. 헤더에서 영향을 받지 않습니다 **/Zp** 옵션이 명령줄에서 설정 합니다.
 
 사용할 수도 있습니다 [팩](../../preprocessor/pack.md) 컨트롤 구조체 압축 합니다. 정렬에 대한 자세한 내용은 다음을 참조하십시오.
 
-- [맞춤](../../cpp/align-cpp.md)
+- [align(C++)](../../cpp/align-cpp.md)
 
 - [__alignof 연산자](../../cpp/alignof-operator.md)
 
@@ -57,9 +57,9 @@ ms.locfileid: "59237166"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **코드 생성** 속성 페이지.
+1. **구성 속성** > **C/C++** > **코드 생성** 속성 페이지를 선택합니다.
 
 1. 수정 된 **구조체 멤버 맞춤** 속성입니다.
 

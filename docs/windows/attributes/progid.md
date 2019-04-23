@@ -1,5 +1,5 @@
 ---
-title: progid (c + + COM 특성)
+title: progid (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.progid
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - progid attribute
 ms.assetid: afcf559c-e432-481f-aa9a-bd3bb72c02a8
 ms.openlocfilehash: 5b0c688ad4d9b607cc1f5fb6b1c6d536a1c7888e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031140"
 ---
 # <a name="progid"></a>progid
@@ -32,7 +32,7 @@ Progid는 COM/ActiveX 개체를 식별 하는 데 클래스 식별자 (CLSID)의
 
 ## <a name="remarks"></a>설명
 
-합니다 **progid** c + + 특성을 사용 하면 COM 개체의 ProgID를 지정할 수 있습니다. 형식은 ProgID *name1.name2.version*합니다. 지정 하지 않으면 경우는 *버전* ProgID, 기본 버전은 1입니다. 지정 하지 않는 경우 *name1.name2*, 기본 이름인 *classname.classname*합니다. 지정 하지 않는 경우 **progid** 지정 하면 `vi_progid`, *name1.name2* 에서 가져온 `vi_progid` (다음 일련 번호) 및 버전 추가 됩니다.
+합니다 **progid** C++ 특성을 사용 하면 COM 개체의 ProgID를 지정 합니다. 형식은 ProgID *name1.name2.version*합니다. 지정 하지 않으면 경우는 *버전* ProgID, 기본 버전은 1입니다. 지정 하지 않는 경우 *name1.name2*, 기본 이름인 *classname.classname*합니다. 지정 하지 않는 경우 **progid** 지정 하면 `vi_progid`, *name1.name2* 에서 가져온 `vi_progid` (다음 일련 번호) 및 버전 추가 됩니다.
 
 특성 블록을 사용 하는 경우 **progid** 도 사용 하지 않습니다 **uuid**, 컴파일러는 경우를 확인 하려면 레지스트리를 확인 하는 **uuid** 지정 된 존재 **progid** . 하는 경우 **progid** 지정 하지 않으면 버전 (및 coclass 이름에는 coclass를 만드는 경우) 데 사용할 생성을 **progid**합니다.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3468
 ms.assetid: cfd320db-2f6e-4e0d-ba02-e79ece87e1e0
 ms.openlocfilehash: e3870fa21e2b4a932937edd49091980406a5ff0d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58777234"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779325"
 ---
 # <a name="compiler-error-c3468"></a>컴파일러 오류 C3468
 
@@ -21,7 +21,7 @@ ms.locfileid: "58777234"
 
 어셈블리의 형식만 전달할 수 있습니다.
 
-자세한 내용은 [형식 전달 (C + + /cli CLI)](../../extensions/type-forwarding-cpp-cli.md)합니다.
+자세한 내용은 [형식 전달 (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

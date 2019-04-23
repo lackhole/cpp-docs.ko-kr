@@ -95,10 +95,10 @@ helpviewer_keywords:
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
 ms.openlocfilehash: 45c03d142c34186660aa2715081ffb0f45e85ccc
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58773751"
 ---
 # <a name="cedit-class"></a>CEdit Class
@@ -217,7 +217,7 @@ class CEdit : public CWnd
 
 에 대 한 자세한 `CEdit`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](cobject-class.md)
 
@@ -277,7 +277,7 @@ int CharFromPos(CPoint pt) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 이 클라이언트 영역에 있는 지점의 좌표 `CEdit` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -854,7 +854,7 @@ int LineIndex(int nLine = -1) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*n 줄*<br/>
+*nLine*<br/>
 편집 컨트롤의 텍스트에서 원하는 줄의 인덱스 값을 포함 하거나-1을 포함 합니다. 하는 경우 *n 줄* 은-1, 캐럿을 포함 하는 줄, 현재 줄을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -883,7 +883,7 @@ int LineLength(int nLine = -1) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*n 줄*<br/>
+*nLine*<br/>
 줄 길이 검색할 문자의 0부터 시작 하는 인덱스입니다. 기본값은 -1입니다.
 
 ### <a name="return-value"></a>반환 값

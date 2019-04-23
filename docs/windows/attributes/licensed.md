@@ -1,5 +1,5 @@
 ---
-title: 사용이 허가 된 (c + + COM 특성)
+title: 사용이 허가 된 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.licensed
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - licensed attribute
 ms.assetid: 09cf3b4a-d3f2-43e3-9180-d420333b23bf
 ms.openlocfilehash: 90fba74fb97ce49088145888c3b1925b4ee0829c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034999"
 ---
 # <a name="licensed"></a>licensed
@@ -25,7 +25,7 @@ ms.locfileid: "59034999"
 
 ## <a name="remarks"></a>설명
 
-**사용이 허가** c + + 특성에 동일한 기능을 합니다 [사용이 허가 된](/windows/desktop/Midl/licensed) MIDL 특성입니다.
+**사용이 허가** C++ 특성이 동일한 기능을 합니다 [사용이 허가 된](/windows/desktop/Midl/licensed) MIDL 특성.
 
 ## <a name="example"></a>예제
 

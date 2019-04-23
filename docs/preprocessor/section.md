@@ -9,10 +9,10 @@ helpviewer_keywords:
 - section pragma
 ms.assetid: c67215e9-2c4a-4b0f-b691-2414d2e2d96f
 ms.openlocfilehash: 41479d7d8767438d0e59fbe6beb7e435459dcb1b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59023245"
 ---
 # <a name="section"></a>section
@@ -37,10 +37,10 @@ ms.locfileid: "59023245"
 
 |특성|설명|
 |-|-|
-|**읽기**|데이터에 대한 읽기 작업을 허용합니다.|
-|**쓰기**|데이터에 대한 쓰기 작업을 허용합니다.|
-|**실행(execute)**|코드가 실행될 수 있도록 합니다.|
-|**공유**|이미지를 로드하는 모든 프로세스에서 섹션을 공유합니다.|
+|**read**|데이터에 대한 읽기 작업을 허용합니다.|
+|**write**|데이터에 대한 쓰기 작업을 허용합니다.|
+|**execute**|코드가 실행될 수 있도록 합니다.|
+|**shared**|이미지를 로드하는 모든 프로세스에서 섹션을 공유합니다.|
 |**nopage**|섹션을 페이징할 수 없는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.|
 |**nocache**|섹션을 캐시할 수 없는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.|
 |**discard**|섹션을 삭제할 수 있는 것으로 표시합니다. Win32 장치 드라이버에 유용합니다.|

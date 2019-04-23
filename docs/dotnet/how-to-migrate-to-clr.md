@@ -11,15 +11,15 @@ helpviewer_keywords:
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
 ms.openlocfilehash: 6ac470b85a14bfe32c7f3fe47168180687669ec6
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58781317"
 ---
 # <a name="how-to-migrate-to-clr"></a>방법: /Clr으로 마이그레이션
 
-이 항목에서는 네이티브 코드를 컴파일할 때 발생 하는 문제를 설명 **/clr** (참조 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 자세한). **/clr** 네이티브 c + + 코드를 호출 하 고 다른 네이티브 c + + 코드 외에도.NET 어셈블리에서 호출할 수 있습니다. 참조 [혼합형 (네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md) 하 고 [네이티브 및.NET 상호 운용성](../dotnet/native-and-dotnet-interoperability.md) 사용 하 여 컴파일하면의 이점에 대 한 자세한 내용은 **/clr**합니다.
+이 항목에서는 네이티브 코드를 컴파일할 때 발생 하는 문제를 설명 **/clr** (참조 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 자세한). **/clr** 네이티브 허용 C++ 를 호출 하 고 다른 네이티브 외에도.NET 어셈블리를 호출할 코드 C++ 코드입니다. 참조 [혼합형 (네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md) 하 고 [네이티브 및.NET 상호 운용성](../dotnet/native-and-dotnet-interoperability.md) 사용 하 여 컴파일하면의 이점에 대 한 자세한 내용은 **/clr**합니다.
 
 ## <a name="known-issues-compiling-library-projects-with-clr"></a>알려진된 문제 컴파일 라이브러리 프로젝트 /clr을 사용한
 
@@ -35,36 +35,36 @@ Visual Studio 라이브러리 프로젝트를 컴파일할 때 알려진된 문�
     }
     ```
 
-## <a name="compile-with-visual-c"></a>Visual c + +를 사용 하 여 컴파일
+## <a name="compile-with-visual-c"></a>시각적 개체를 사용 하 여 컴파일C++
 
 사용 하기 전에 **/clr** 모든 모듈 프로젝트에 대해 먼저 컴파일 및 Visual Studio 2010을 사용한 네이티브 프로젝트를 연결 합니다.
 
 다음 단계를 순서 대로 가장 쉬운 경로를 제공 된 **/clr** 컴파일. 컴파일 및 이러한 각 단계 후 프로젝트를 실행 하는 것이 반드시 합니다.
 
-### <a name="versions-prior-to-visual-c-2003"></a>Visual c + + 2003 이전 버전
+### <a name="versions-prior-to-visual-c-2003"></a>Visual 이전 버전 C++ 2003
 
-Visual c + + 2003 이전 버전에서 Visual Studio 2010으로 업그레이드 하는 경우 Visual c + + 2003에서의 향상 된 c + + 표준 규격 관련 컴파일러 오류가 표시 될 수 있습니다.
+Visual 이전 버전에서 Visual Studio 2010으로 업그레이드 하는 경우 C++ 2003, 컴파일러 오류와 관련 된 향상 된 표시 될 수 있습니다 C++ 시각적 개체의 표준 규칙 C++ 2003
 
-### <a name="upgrading-from-visual-c-2003"></a>Visual c + + 2003에서 업그레이드
+### <a name="upgrading-from-visual-c-2003"></a>시각적 개체에서 업그레이드 C++ 2003
 
-이전 Visual c + + 2003을 사용 하 여 빌드한 프로젝트 먼저 컴파일해야 없이 **/clr** Visual Studio 이제 늘어났습니다 ANSI/ISO 규정 준수 및 몇 가지 주요 변경 내용으로 합니다. 주의가 가장 가능성이 있는 변경 내용이 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md)합니다. CRT를 사용 하는 코드 사용 중단 경고를 생성 하기 위해 매우 높습니다. 이러한 경고는 표시 되지 않는, 하지만 새 마이그레이션 수 [CRT 함수의 버전 보안이 강화 된](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) 는 것이 좋습니다, 향상 된 보안을 제공 하며 코드에서 보안 문제를 통해 확인할 수 있습니다.
+시각적 개체를 사용 하 여 빌드한 프로젝트 이전 C++ 없이 2003 먼저 컴파일해야 할지 **/clr** Visual Studio 이제 늘어났습니다 ANSI/ISO 규정 준수 및 몇 가지 주요 변경 내용으로 합니다. 주의가 가장 가능성이 있는 변경 내용이 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md)합니다. CRT를 사용 하는 코드 사용 중단 경고를 생성 하기 위해 매우 높습니다. 이러한 경고는 표시 되지 않는, 하지만 새 마이그레이션 수 [CRT 함수의 버전 보안이 강화 된](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) 는 것이 좋습니다, 향상 된 보안을 제공 하며 코드에서 보안 문제를 통해 확인할 수 있습니다.
 
-### <a name="upgrading-from-managed-extensions-for-c"></a>C + +에 대 한 관리 되는 확장에서 업그레이드
+### <a name="upgrading-from-managed-extensions-for-c"></a>Managed Extensions for에서 업그레이드C++
 
-Visual Studio 2005 년부터 c + +에 대 한 Managed Extensions를 사용 하 여 작성 된 코드에서 컴파일되지 않습니다 **/clr**합니다.
+Visual Studio 2005에서는 Managed Extensions for를 사용 하 여 작성 된 코드부터 C++ 아래에서 컴파일되지 **/clr**합니다.
 
-## <a name="convert-c-code-to-c"></a>C + + C 코드 변환
+## <a name="convert-c-code-to-c"></a>C 코드를 변환 합니다.C++
 
-Visual Studio C 파일 컴파일되지, 이지만 c + +를 변환 하는 데 필요한를 **/clr** 컴파일. 실제 파일 이름; 변경할 수 없습니다. 사용할 수 있습니다 **/Tp** (참조 [/Tc, /Tp, /TC, /TP (소스 파일 형식 지정)](../build/reference/tc-tp-tc-tp-specify-source-file-type.md).) C + + 소스 코드 파일에 대 한 필수 이지만 **/clr**, 개체 지향 패러다임을 사용 하도록 코드를 다시 고려할 필요는 없습니다.
+Visual Studio C 파일 컴파일되지, 이지만 하도록 변환 하는 데 필요한 C++ 에 대 한는 **/clr** 컴파일. 실제 파일 이름; 변경할 수 없습니다. 사용할 수 있습니다 **/Tp** (참조 [/Tc, /Tp, /TC, /TP (소스 파일 형식 지정)](../build/reference/tc-tp-tc-tp-specify-source-file-type.md).) 하지만 C++ 소스 코드 파일은 **/clr**를 개체 지향 패러다임을 사용 하도록 코드를 리팩터링할 필요는 없습니다.
 
-C 코드는 c + + 파일로 컴파일된 경우 변경 해야 할 가능성이 큽니다. C + + 형식 안전성 규칙, 엄격 하 게 되므로 캐스트를 사용 하 여 명시적 형식 변환을 수행 해야 합니다. 예를 들어, malloc void 포인터를 반환 하지만 c에서 캐스트를 사용 하 여 모든 형식에 대 한 포인터에 할당할 수 있습니다.
+C 코드를 컴파일할 때 변경 해야 할 가능성이 매우 높습니다는 C++ 파일입니다. C++ 형식 안전성 규칙 되므로 strict, 캐스트를 사용 하 여 명시적 형식 변환을 수행 해야 합니다. 예를 들어, malloc void 포인터를 반환 하지만 c에서 캐스트를 사용 하 여 모든 형식에 대 한 포인터에 할당할 수 있습니다.
 
 ```
 int* a = malloc(sizeof(int));   // C code
 int* b = (int*)malloc(sizeof(int));   // C++ equivalent
 ```
 
-함수 포인터는 c + +에서 형식이 안전한 엄격 하 게도 다음 C 코드를 수정 해야 합니다. C + +에서는 만드는 것이 좋습니다는 `typedef` 함수 포인터 형식을 정의 하 고 그런 다음 해당 형식을 함수 포인터를 사용 하 여:
+함수 포인터에 형식이 안전한 엄격 하 게도 C++이므로 다음 C 코드를 수정 해야 합니다. C++ 를 만드는 것이 적합 한 `typedef` 함수 포인터 형식을 정의 하 고 그런 다음 해당 형식을 함수 포인터를 사용 하 여:
 
 ```
 NewFunc1 = GetProcAddress( hLib, "Func1" );   // C code
@@ -72,9 +72,9 @@ typedef int(*MYPROC)(int);   // C++ equivalent
 NewFunc2 = (MYPROC)GetProcAddress( hLib, "Func2" );
 ```
 
-C + + 수도 있어야 함수 하거나 프로토타입화 하거나 완전히 정의 전에 참조 하거나 호출할 수 있습니다.
+C++또한 있어야 함수 하거나 프로토타입화 하거나 완전히 정의 된 참조 하거나 호출할 수 있습니다.
 
-C + +에서 키워드 될 수 있는 C 코드에서 사용 하는 식별자 (같은 **가상**를 **새**를 **삭제**를 **bool**, **true** 하십시오 **false**등) 이름을 변경 해야 합니다. 이 간단한 검색 및 바꾸기 작업을 사용 하 여 일반적으로 수행할 수 있습니다.
+키워드 될 수 있는 C 코드에서 사용 하는 식별자 C++ (같은 **가상**합니다 **새**, **삭제**, **bool**,  **true**하십시오 **false**등) 이름을 변경 해야 합니다. 이 간단한 검색 및 바꾸기 작업을 사용 하 여 일반적으로 수행할 수 있습니다.
 
 ```
 COMObj1->lpVtbl->Method(COMObj, args);  // C code
@@ -98,7 +98,7 @@ COMObj2->Method(args);  // C++ equivalent
 **/clr** 의 지침에 따라 개발 환경에서 선택할 수 있습니다 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)합니다. 이전에 설명한 대로이 단계는 충돌 하는 프로젝트 설정을 자동으로 비활성화 됩니다.
 
 > [!NOTE]
->  Visual c + + 2003에서 관리 되는 라이브러리 또는 웹 서비스 프로젝트를 업그레이드 하는 경우는 **/Zl** 컴파일러 옵션이 추가 됩니다 합니다 **명령줄** 속성 페이지. 그러면 LNK2001 합니다. 제거 **/Zl** 에서 합니다 **명령줄** 속성 페이지를 확인 합니다. 참조 [/Zl (기본 라이브러리 이름 생략)](../build/reference/zl-omit-default-library-name.md) 하 고 [컴파일러 설정 및 빌드 속성](../build/working-with-project-properties.md) 자세한 내용은 합니다. 또는 링커의 msvcrt.lib와 msvcmrt.lib 추가할 **추가 종속성** 속성입니다.
+>  시각적 개체에서 관리 되는 라이브러리 또는 웹 서비스 프로젝트를 업그레이드 하는 경우 C++ 2003 합니다 **/Zl** 컴파일러 옵션이 추가 됩니다는 **명령줄** 속성 페이지. 그러면 LNK2001 합니다. 제거 **/Zl** 에서 합니다 **명령줄** 속성 페이지를 확인 합니다. 참조 [/Zl (기본 라이브러리 이름 생략)](../build/reference/zl-omit-default-library-name.md) 하 고 [컴파일러 설정 및 빌드 속성](../build/working-with-project-properties.md) 자세한 내용은 합니다. 또는 링커의 msvcrt.lib와 msvcmrt.lib 추가할 **추가 종속성** 속성입니다.
 
 프로젝트의 메이크파일을 사용 하 여 빌드한 경우 호환 되지 않는 컴파일러 옵션을 비활성화 해야 수동으로 한 번 **/clr** 추가 됩니다. 참조 /[/clr 제한](../build/reference/clr-restrictions.md) 와 호환 되지 않는 컴파일러 옵션에 대 한 내용은 **/clr**합니다.
 
@@ -106,7 +106,7 @@ COMObj2->Method(args);  // C++ equivalent
 
 지원 되는 미리 컴파일된 헤더 **/clr**합니다. 그러나만 컴파일하는 경우 사용 하 여 CPP 파일의 일부 **/clr** (나머지 네이티브로 컴파일) 일부 변경이 필요할 수 있으므로 미리 컴파일된 헤더를 사용 하 여 생성 **/clr** 와 호환 되지 않습니다 없이 생성 **/clr**합니다. 이러한 비 호환성은 때문에 **/clr** 생성 하 고 메타 데이터를 요구 합니다. 컴파일된 모듈이 **/clr** 메타 데이터를 포함 하지 않는 미리 컴파일된 헤더를 사용할 따라서 수 및 비 **/clr** 모듈 메타 데이터가 포함 된 미리 컴파일된 헤더 파일을 사용할 수 없습니다.
 
-일부 모듈 컴파일되는 프로젝트를 컴파일하는 가장 쉬운 방법은 **/clr** 미리 컴파일된 헤더를 완전히 사용 하지 않도록 설정 하는 것입니다. (프로젝트 속성 페이지 대화 상자에서 C/c + + 노드를 열고 미리 컴파일된 헤더를 선택 합니다. 그런 다음 속성을 변경할 미리 컴파일된 헤더 만들기/사용 "되지를 사용 하 여 미리 컴파일된 헤더에".)
+일부 모듈 컴파일되는 프로젝트를 컴파일하는 가장 쉬운 방법은 **/clr** 미리 컴파일된 헤더를 완전히 사용 하지 않도록 설정 하는 것입니다. (프로젝트 속성 페이지 대화 상자를 열고 C /C++ 노드와 미리 컴파일된 헤더를 선택 합니다. 그런 다음 속성을 변경할 미리 컴파일된 헤더 만들기/사용 "되지를 사용 하 여 미리 컴파일된 헤더에".)
 
 그러나 특히 대규모 프로젝트에 대 한 미리 컴파일된 헤더 제공 컴파일 속도가 대폭 향상 하므로 필요 없는이 기능을 사용 하지 않도록 설정 합니다. 이 경우 것이 최적으로 구성 하는 **/clr** 및 비 **/clr** 별도 미리 컴파일된 헤더를 사용 하는 파일. 한 번에이 작업을 수행할 수 있습니다 다중 선택 모듈을 컴파일할 수 **/clr** 를 사용 하 여 **솔루션 탐색기**속성을 선택 하 고 그룹을 마우스 오른쪽 단추로 클릭 합니다. 각각 다른 헤더 파일 이름 및 PCH 파일을 사용 하도록 파일에서 PCH 만들기/사용와 미리 컴파일된 헤더 파일 속성을 변경 합니다.
 
@@ -142,7 +142,7 @@ DLL 데이터를 내보내는 경우 오류가 발생 하기 쉬우며 권장 �
 
 ### <a name="performance-issues"></a>성능 문제
 
-MSIL을 생성 하는 네이티브 c + + 메서드를 직접 호출 될 때 성능이 저하 될 수 있습니다 (가상 함수 호출 또는 함수 포인터를 사용 하 여). 이 대 한 자세한 내용은 참조 하세요 [이중 썽킹](../dotnet/double-thunking-cpp.md)합니다.
+네이티브 경우 성능 저하가 나타날 수 있습니다 C++ MSIL로 생성 된 메서드를 직접 호출 됩니다 (가상 함수 호출 또는 함수 포인터를 사용 하 여). 이 대 한 자세한 내용은 참조 하세요 [이중 썽킹](../dotnet/double-thunking-cpp.md)합니다.
 
 MSIL을 네이티브 코드에서 이동 하는 경우에 작업 집합의 크기 증가 확인할 수 있습니다. 프로그램이 올바르게 실행 되도록 많은 기능을 제공 하는 공용 언어 런타임 때문입니다. 경우에 **/clr** C4793를 사용 하도록 설정 하려는 경우, 응용 프로그램을 올바르게 실행 되지 않습니다 (기본적으로 꺼져 있음)를 참조 하세요 [컴파일러 경고 (수준 1 및 3) C4793](../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md) 자세한 내용은 합니다.
 
@@ -150,13 +150,13 @@ MSIL을 네이티브 코드에서 이동 하는 경우에 작업 집합의 크�
 
 경우에 따라 CLR가 종료 관리 되는 코드 작업이 완료 되기 전에 실행 됩니다. 사용 하 여 `std::set_terminate` 고 `SIGTERM` 하기 때문일 수 있습니다. 참조 [신호 상수](../c-runtime-library/signal-constants.md) 하 고 [set_terminate](../c-runtime-library/abnormal-termination.md) 자세한 내용은 합니다.
 
-## <a name="using-new-visual-c-features"></a>새 Visual c + + 기능을 사용 하 여
+## <a name="using-new-visual-c-features"></a>새 시각적 개체를 사용 하 여 C++ 기능
 
 다음에 응용 프로그램 컴파일, 링크 및 실행을 시작할 수 있습니다로 컴파일된 모든 모듈에서.NET 기능을 사용 하 여 **/clr**합니다. 자세한 내용은 [런타임 플랫폼의 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)을 참조하세요.
 
-Managed Extensions for c + +를 사용한 경우에 새 구문을 사용 하 여 코드를 변환할 수 있습니다. Managed Extensions for c + + 변환에 대 한 세부 정보를 참조 하세요 [C + + /cli 마이그레이션 입문](../dotnet/cpp-cli-migration-primer.md)합니다.
+Managed Extensions for를 사용 하는 경우 C++, 새 구문을 사용 하 여 코드를 변환할 수 있습니다. Managed Extensions for 변환에 대 한 내용은 C++를 참조 하세요 [ C++CLI 마이그레이션 입문](../dotnet/cpp-cli-migration-primer.md)합니다.
 
-.NET에서 Visual c + + 프로그래밍에 대 한 내용은 다음을 참조 합니다.
+시각적 개체의.NET 프로그래밍에 대 한 내용은 C++ 을 참조 합니다.
 
 - [C++/CLI를 사용한 .NET 프로그래밍(Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 

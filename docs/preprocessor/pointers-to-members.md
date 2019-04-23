@@ -11,15 +11,15 @@ helpviewer_keywords:
 - pointers_to_members pragma
 ms.assetid: 8325428c-c90a-4aed-9e82-cb1dda23f4ca
 ms.openlocfilehash: 5ee45a77a7094fb1ef9ba536bae391aaad00e812
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032065"
 ---
 # <a name="pointerstomembers"></a>pointers_to_members
 
-**C++ 전용**
+**C++특정**
 
 연결된 클래스 정의 앞에 클래스 멤버의 포인터를 선언할 수 있으며 이 포인터를 사용하여 포인터 크기 및 포인터를 해석하는 데 필요한 코드를 제어하는지 여부를 지정합니다.
 

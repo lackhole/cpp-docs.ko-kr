@@ -9,10 +9,10 @@ helpviewer_keywords:
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
 ms.openlocfilehash: bf1ae81184d53dd271f63c26e8f9a52a6410b232
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038449"
 ---
 # <a name="pack"></a>pack
@@ -26,7 +26,7 @@ ms.locfileid: "59038449"
 
 ### <a name="parameters"></a>매개 변수
 
-**Show**<br/>
+**show**<br/>
 (선택 사항) 압축 맞춤에 대 한 현재 바이트 값을 표시 합니다. 경고 메시지에 값이 표시됩니다.
 
 **push**<br/>
@@ -35,7 +35,7 @@ ms.locfileid: "59038449"
 **pop**<br/>
 (선택 사항) 내부 컴파일러 스택의 맨 위에서 레코드를 제거합니다. 하는 경우 *n* 을 지정 하지 않으면 **pop**, 스택의 맨 위에 결과 레코드와 연결 된 압축 값은 새로운 압축 맞춤 값입니다. 하는 경우 *n* 를 지정 하면 예를 들어 `#pragma pack(pop, 16)`를 *n* 은 새로운 압축 맞춤 값입니다. 팝 하는 경우 *식별자*, 예를 들어 `#pragma pack(pop, r1)`, 포함 된 레코드를 때까지 스택의 모든 레코드가 팝 되 고 그런 다음 *식별자* 를 찾을 수 있습니다. 해당 레코드가 팝되고 스택 맨 위에 있는 결과 레코드와 연결된 압축 값이 새로운 압축 맞춤 값이 됩니다. 팝 하는 경우는 *식별자* 스택의 모든 레코드에 없는 경우 **pop** 무시 됩니다.
 
-*식별자*<br/>
+*identifier*<br/>
 (선택 사항) 와 함께 사용할 때 *푸시*, 내부 컴파일러 스택의 레코드에 이름을 할당 합니다. 와 함께 사용할 때 **pop**, 될 때까지 내부 스택에서 기록을 팝 *식별자* 가 제거 *식별자* 없는 내부 스택에서 아무 것도 팝 합니다.
 
 *n*<br/>
@@ -53,14 +53,14 @@ ms.locfileid: "59038449"
 
 - [__alignof](../cpp/alignof-operator.md)
 
-- [맞춤](../cpp/align-cpp.md)
+- [align(C++)](../cpp/align-cpp.md)
 
 - [__unaligned](../cpp/unaligned.md)
 
 - [구조체 맞춤 예제](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 전용)
 
    > [!WARNING]
-   > Visual Studio 2015 이상에서는 `__alignof` 및 `declspec( align )`와 달리 컴파일러 간에 이식 가능한 표준 alignas 및 alignof 연산자를 사용할 수 있습니다. C + + 표준에서는 압축을 처리 하지을 반드시 사용 해야 하므로 **팩** (또는 다른 컴파일러에서 해당 확장 프로그램)는 대상 아키텍처의 단어 크기 보다 작은 맞춤을 지정 합니다.
+   > Visual Studio 2015 이상에서는 `__alignof` 및 `declspec( align )`와 달리 컴파일러 간에 이식 가능한 표준 alignas 및 alignof 연산자를 사용할 수 있습니다. C++ 표준 다루지 압축을 사용 해야 하므로 **팩** (또는 다른 컴파일러에서 해당 확장 프로그램)는 대상 아키텍처의 단어 크기 보다 작은 맞춤을 지정 하려면.
 
 ## <a name="examples"></a>예제
 

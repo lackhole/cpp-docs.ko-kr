@@ -10,15 +10,15 @@ helpviewer_keywords:
 - data segment initializing [C++]
 ms.assetid: 40a5898a-5c85-4aa9-8d73-3d967eb13610
 ms.openlocfilehash: 801496739fd9bd2b8a14e699ca4da9fe79f3a28d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026633"
 ---
 # <a name="initseg"></a>init_seg
 
-**C++ 전용**
+**C++특정**
 
 시작 코드가 실행되는 순서에 영향을 주는 키워드 또는 코드 섹션을 지정합니다.
 
@@ -36,13 +36,13 @@ ms.locfileid: "59026633"
 
 옵션을 **init_seg** pragma는:
 
-*컴파일러*<br/>
+*compiler*<br/>
 Microsoft C 런타임 라이브러리 초기화용으로 예약되어 있습니다. 이 그룹의 개체는 처음 생성됩니다.
 
 *lib*<br/>
 타사 클래스 라이브러리 공급업체의 초기화에 사용할 수 있습니다. 로 표시 된 후이 그룹의 개체 생성 됩니다 *컴파일러* , 다른 대체 이전 합니다.
 
-*사용자*<br/>
+*user*<br/>
 모든 사용자가 사용할 수 있습니다. 이 그룹의 개체는 마지막에 생성됩니다.
 
 *섹션 이름* 초기화 섹션의 명시적 지정을 허용 합니다. 그러나 개체에는 사용자 지정 *섹션 이름* 는 암시적으로 생성 되지 않으면 해당 주소에서 명명 된 섹션에 배치 됩니다 *섹션 이름*합니다.

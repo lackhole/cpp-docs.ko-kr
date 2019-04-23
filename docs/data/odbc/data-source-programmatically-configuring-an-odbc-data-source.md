@@ -10,10 +10,10 @@ helpviewer_keywords:
 - configuring ODBC data sources
 ms.assetid: b8cabe9b-9e12-4d73-ae36-7cb12dee3213
 ms.openlocfilehash: 33269b65835812a6e1a03e091833831781d97b6d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037960"
 ---
 # <a name="data-source-programmatically-configuring-an-odbc-data-source"></a>데이터 소스: 프로그래밍 방식으로 ODBC 데이터 소스 구성
@@ -53,7 +53,7 @@ ODBC 관리자 (일반적으로 제어판에 설치)는 Windows 레지스트리�
 
 ##  <a name="_core_sqlconfigdatasource_parameters"></a> SQLConfigDataSource 매개 변수
 
-다음 설명의 매개 변수는 `::SQLConfigDataSource` 함수입니다. ODBC API에서 많은 정보를 가져옵니다 *프로그래머 참고 자료* Visual c + + 1.5 이상 버전을 사용 하 여 제공 합니다.
+다음 설명의 매개 변수는 `::SQLConfigDataSource` 함수입니다. ODBC API에서 많은 정보를 가져옵니다 *프로그래머 참고 자료* 시각적 개체를 사용 하 여 제공 된 C++ 1.5 이상 버전.
 
 ###  <a name="_core_function_prototype"></a> 함수 프로토타입
 

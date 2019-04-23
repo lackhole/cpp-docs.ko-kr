@@ -1,5 +1,5 @@
 ---
-title: ms_union (c + + COM 특성)
+title: ms_union (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.ms_union
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - ms_union attribute
 ms.assetid: bb548689-6962-457e-af56-8ffdf68987eb
 ms.openlocfilehash: 3f83eeff4fd9b2177b862b101b7a2d4faeaaab87
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59022310"
 ---
 # <a name="msunion"></a>ms_union
@@ -25,7 +25,7 @@ Nonencapsulated 공용 구조체의 네트워크 데이터 표현 맞춤을 제�
 
 ## <a name="remarks"></a>설명
 
-합니다 **ms_union** c + + 특성에 동일한 기능을 합니다 [ms_union](/windows/desktop/Midl/ms-union-attrib) MIDL 특성입니다.
+**ms_union** C++ 특성에 동일한 기능을 합니다 [ms_union](/windows/desktop/Midl/ms-union-attrib) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

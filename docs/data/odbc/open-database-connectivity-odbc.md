@@ -7,10 +7,10 @@ helpviewer_keywords:
 - data access [C++], ODBC
 ms.assetid: 56b6067a-651e-4c10-a24d-d4a6a17ca5e4
 ms.openlocfilehash: fdaafd5c8243143fd9705d45db2497577820ca0a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030091"
 ---
 # <a name="open-database-connectivity-odbc"></a>ODBC(Open Database Connectivity)
@@ -62,7 +62,7 @@ MFC 사용 하지 않고 ODBC API를 사용 하는 방법에 대 한 자세한 �
 
 - [설치 하 고 ODBC를 사용 하 여 시작](installing-and-getting-started-with-odbc.md)
 
-- [ODBC 데이터베이스 응용 프로그램 디자인과 작성](design-and-create-an-odbc-database-application.md)
+- [ODBC 데이터베이스 애플리케이션 디자인과 작성](design-and-create-an-odbc-database-application.md)
 
 - [ODBC에서 데이터베이스 폼(레코드 뷰) 사용](use-database-forms-record-views-with-odbc.md)
 
@@ -78,4 +78,4 @@ MFC 사용 하지 않고 ODBC API를 사용 하는 방법에 대 한 자세한 �
 
 ## <a name="see-also"></a>참고자료
 
-[데이터 엑세스 프로그래밍 (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)
+[데이터 액세스 프로그래밍 (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

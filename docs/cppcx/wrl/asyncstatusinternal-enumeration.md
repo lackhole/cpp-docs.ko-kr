@@ -8,10 +8,10 @@ helpviewer_keywords:
 - AsyncStatusInternal enumeration
 ms.assetid: b783923f-3f1c-4487-9384-be572cbc62d7
 ms.openlocfilehash: f12bf4aafc87e44a6e2fb15ba79de4a9744bea58
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029728"
 ---
 # <a name="asyncstatusinternal-enumeration"></a>AsyncStatusInternal 열거형
@@ -31,19 +31,19 @@ enum AsyncStatusInternal;
 ## <a name="members"></a>멤버
 
 `_Created`<br/>
-에 해당 `::Windows::Foundation::AsyncStatus::Created`
+`::Windows::Foundation::AsyncStatus::Created`와 같습니다.
 
 `_Started`<br/>
-에 해당 `::Windows::Foundation::AsyncStatus::Started`
+`::Windows::Foundation::AsyncStatus::Started`와 같습니다.
 
 `_Completed`<br/>
-에 해당 `::Windows::Foundation::AsyncStatus::Completed`
+`::Windows::Foundation::AsyncStatus::Completed`와 같습니다.
 
 `_Cancelled`<br/>
-에 해당 `::Windows::Foundation::AsyncStatus::Cancelled`
+`::Windows::Foundation::AsyncStatus::Cancelled`와 같습니다.
 
 `_Error`<br/>
-에 해당 `::Windows::Foundation::AsyncStatus::Error`
+`::Windows::Foundation::AsyncStatus::Error`와 같습니다.
 
 ## <a name="requirements"></a>요구 사항
 

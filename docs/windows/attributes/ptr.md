@@ -1,5 +1,5 @@
 ---
-title: ptr (c + + COM 특성)
+title: ptr (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.ptr
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - ptr attribute
 ms.assetid: 95eaea57-a5be-45f6-a612-ba2c9bc4645a
 ms.openlocfilehash: 2c712a2d9c85e0fe8fd8c4dbad5c7f48812ab1a2
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030130"
 ---
 # <a name="ptr"></a>ptr
@@ -25,7 +25,7 @@ ms.locfileid: "59030130"
 
 ## <a name="remarks"></a>설명
 
-합니다 **ptr** c + + 특성에 동일한 기능을 합니다 [ptr](/windows/desktop/Midl/ptr) MIDL 특성입니다.
+**ptr** C++ 특성에 동일한 기능을 합니다 [ptr](/windows/desktop/Midl/ptr) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

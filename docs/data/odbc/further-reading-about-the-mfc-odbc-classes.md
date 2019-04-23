@@ -5,17 +5,17 @@ helpviewer_keywords:
 - MFC ODBC classes
 ms.assetid: 155c092b-3577-4cb8-b00e-f1adf4cb2adc
 ms.openlocfilehash: 96286fc7a60a6ab43190dae6262948ac99ca30d6
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035191"
 ---
 # <a name="further-reading-about-the-mfc-odbc-classes"></a>MFC ODBC 클래스에 대한 추가 정보
 
 다음 항목에서는 이 항목에서 소개한 개념과 기술을 더 자세하게 설명합니다.
 
-- [MFC 애플리케이션 마법사, 데이터베이스 지원](../../mfc/reference/database-support-mfc-application-wizard.md)
+- [MFC 응용 프로그램 마법사, 데이터베이스 지원](../../mfc/reference/database-support-mfc-application-wizard.md)
 
 - [MFC ODBC 소비자 추가](../../mfc/reference/adding-an-mfc-odbc-consumer.md)
 
@@ -33,7 +33,7 @@ ms.locfileid: "59035191"
 
 - [ODBC 관리자](../../data/odbc/odbc-administrator.md)
 
-- [RFX](../../data/odbc/record-field-exchange-rfx.md)
+- [RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)
 
 - [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)
 
@@ -54,4 +54,4 @@ ms.locfileid: "59035191"
 ## <a name="see-also"></a>참고자료
 
 [ODBC 및 MFC](../../data/odbc/odbc-and-mfc.md)<br/>
-[데이터 엑세스 프로그래밍 (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)
+[데이터 액세스 프로그래밍 (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

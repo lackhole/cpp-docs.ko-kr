@@ -1,5 +1,5 @@
 ---
-title: satype (c + + COM 특성)
+title: satype (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.satype
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - satype attribute
 ms.assetid: 1716590b-6bcb-4aba-b1bc-82f7335f02c3
 ms.openlocfilehash: 7588e8d855d648309c46d981898cfbbf7888f4c9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59025726"
 ---
 # <a name="satype"></a>satype
@@ -41,7 +41,7 @@ ms.locfileid: "59025726"
 
 ## <a name="remarks"></a>설명
 
-합니다 **satype** c + + 특성의 데이터 형식 지정을 `SAFEARRAY`입니다.
+합니다 **satype** C++ 특성의 데이터 형식을 지정 합니다 `SAFEARRAY`합니다.
 
 > [!NOTE]
 > 간접 참조 수준을에서 삭제 되는 `SAFEARRAY` 생성된 된.idl 파일에서.cpp 파일에서 선언 하는 방법에 대 한 포인터입니다.

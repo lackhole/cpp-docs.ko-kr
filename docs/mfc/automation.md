@@ -21,10 +21,10 @@ helpviewer_keywords:
 - methods [MFC], Automation
 ms.assetid: 329117f0-c1aa-4680-a901-bfb71277dfba
 ms.openlocfilehash: 7818aa708a762f2a284be029a6c3f3facd971d9a
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58767732"
 ---
 # <a name="automation"></a>자동화
@@ -45,7 +45,7 @@ ms.locfileid: "58767732"
 
 보다 중요한 것은 자동화 지원이 사용자 및 솔루션 공급자에게 제공된다는 것입니다. 자동화는 잘 정의된 공용 인터페이스를 통해 애플리케이션 기능을 노출시킴으로써 다양한 애플리케이션 고유의 매크로 언어 대신 Microsoft Visual Basic 같은 일반 프로그래밍 언어만으로 복잡한 솔루션을 빌드할 수 있게 합니다.
 
-Microsoft Excel이나 Microsoft Visual C++ 같은 대부분의 상업용 애플리케이션에서는 사용자가 대부분의 애플리케이션 기능을 자동화할 수 있습니다. 예를 들어, Visual c + +에서는 VBScript 매크로 자동화를 빌드, 코드 편집 또는 디버깅 작업을 작성할 수 있습니다.
+Microsoft Excel이나 Microsoft Visual C++ 같은 대부분의 상업용 애플리케이션에서는 사용자가 대부분의 애플리케이션 기능을 자동화할 수 있습니다. 예를 들어, 시각적 개체의에서 C++를 자동화 하는 VBScript 매크로 빌드, 코드 편집 또는 디버깅 작업을 작성할 수 있습니다.
 
 ##  <a name="_core_passing_parameters_in_automation"></a> 자동화에서의 매개 변수 전달
 

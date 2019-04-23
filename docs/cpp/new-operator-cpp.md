@@ -5,10 +5,10 @@ helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
 ms.openlocfilehash: bcb7784e59966510970bd9b3ae0157ae982e462d
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58768070"
 ---
 # <a name="new-operator-c"></a>new 연산자 (C++)
@@ -16,7 +16,7 @@ ms.locfileid: "58768070"
 개체의 배열 또는 개체에 대 한 메모리를 할당 *형식 이름을* 무료에서 저장 하 고 개체에는 적절 한 형식의 0이 아닌 포인터를 반환 합니다.
 
 > [!NOTE]
->  Microsoft c + + 구성 요소 확장에 대 한 지원을 제공 합니다 **새** vtable 슬롯 항목을 추가 하는 키워드입니다. 자세한 내용은 참조 하세요. [new (의 new 슬롯 vtable)](../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
+>  Microsoft C++ 구성 요소 확장에 대 한 지원을 제공 합니다 **새** vtable 슬롯 항목을 추가 하는 키워드입니다. 자세한 내용은 참조 하세요. [new (의 new 슬롯 vtable)](../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
 
 ## <a name="syntax"></a>구문
 
@@ -31,7 +31,7 @@ ms.locfileid: "58768070"
 
 관리 되는 힙에서 개체를 만드는 방법에 대 한 자세한 내용은 [gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md)합니다.
 
-때 **새** 는 c + + 클래스 개체에 대 한 메모리를 할당 하는 데, 개체의 생성자가 호출 된 메모리를 할당 한 후입니다.
+때 **새** 에 대 한 메모리를 할당 하는 데 사용 되는 C++ 클래스 개체를 개체의 생성자는 메모리가 할당 된 후에 호출 됩니다.
 
 사용 합니다 [삭제](../cpp/delete-operator-cpp.md) 연산자를 사용 하 여 할당 된 메모리 할당을 취소 합니다 **새** 연산자입니다.
 

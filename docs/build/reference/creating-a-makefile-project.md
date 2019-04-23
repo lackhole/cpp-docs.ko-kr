@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 c + + 메이크파일 프로젝트 만들기
+title: 만들기는 C++ Visual Studio에서 메이크파일 프로젝트
 ms.date: 12/08/2018
 f1_keywords:
 - vc.appwiz.makefile.project
@@ -8,13 +8,13 @@ helpviewer_keywords:
 - project files [C++], Makefile projects
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
 ms.openlocfilehash: 9c2edfe35233672e8117d336ba40cfea497b1a22
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035600"
 ---
-# <a name="create-a-c-makefile-project"></a>C + + 메이크파일 프로젝트 만들기
+# <a name="create-a-c-makefile-project"></a>만들기는 C++ 메이크파일 프로젝트
 
 ‘메이크파일’은 C++ 소스 코드 파일 집합을 컴파일하고 링크(또는 ‘빌드’)하는 방법에 대한 지시를 포함하는 텍스트 파일입니다. ‘메이크’ 프로그램은 메이크파일을 읽고, 컴파일러, 링커 및 가능한 다른 프로그램을 호출하여 실행 파일을 만듭니다. Microsoft에서 구현한 합니다 *있도록* 프로그램 이라고 [NMAKE](nmake-reference.md);
 
@@ -40,7 +40,7 @@ Visual Studio 2017 이상에서 메이크파일 프로젝트 템플릿은 C++ �
 
 1. **마침**을 클릭하여 마법사를 닫고, **솔루션 탐색기**에서 새로 만든 프로젝트를 엽니다.
 
-속성 페이지에서 프로젝트의 속성을 보고 편집할 수 있습니다. 참조 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md) 속성 페이지를 표시 하는 방법에 대 한 정보에 대 한 합니다.
+속성 페이지에서 프로젝트의 속성을 보고 편집할 수 있습니다. 참조 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md) 속성 페이지를 표시 하는 방법에 대 한 정보에 대 한 합니다.
 
 ## <a name="makefile-project-wizard"></a>메이크파일 프로젝트 마법사
 
@@ -58,7 +58,7 @@ Visual Studio 2017 이상에서 메이크파일 프로젝트 템플릿은 C++ �
 
 특정 프로젝트 설정이 나 컴파일러 옵션은 잘못 설정 하는 경우 IntelliSense 메이크파일 프로젝트에 실패 합니다. IntelliSense는 예상 대로 작동할 수 있도록 메이크파일 프로젝트를 구성 하려면 다음이 단계를 수행 합니다.
 
-1. **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
+1. **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **구성 속성** 노드를 확장합니다.
 
@@ -88,6 +88,6 @@ Visual Studio 2017 이상에서 메이크파일 프로젝트 템플릿은 C++ �
 
 [IntelliSense 사용](/visualstudio/ide/using-intellisense)<br>
 [NMAKE 참조](nmake-reference.md)<br>
-[방법: 기존 코드에서 c + + 프로젝트를 만들](../how-to-create-a-cpp-project-from-existing-code.md)
+[방법: 만들기는 C++ 기존 코드의 프로젝트](../how-to-create-a-cpp-project-from-existing-code.md)
 [메이크파일의 특수 문자](special-characters-in-a-makefile.md)<br/>
 [메이크파일의 내용](contents-of-a-makefile.md)<br/>

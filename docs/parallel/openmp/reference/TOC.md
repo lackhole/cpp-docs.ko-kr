@@ -1,7 +1,0 @@
-# [OpenMP 지시문](openmp-directives.md)
-# [OpenMP 절](openmp-clauses.md)
-# [OpenMP 라이브러리 참조](openmp-library-reference.md)
-## [OpenMP 라이브러리](openmp-libraries.md)
-## [OpenMP 데이터 형식](openmp-data-types.md)
-## [OpenMP 환경 변수](openmp-environment-variables.md)
-## [OpenMP 함수](openmp-functions.md)
