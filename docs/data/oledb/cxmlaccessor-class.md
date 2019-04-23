@@ -21,10 +21,10 @@ helpviewer_keywords:
 - GetXMLRowData method
 ms.assetid: c88c082c-ec2f-4351-8947-a330b15e448a
 ms.openlocfilehash: 85fddb9b77cfc089b2236f2ff82944fec6ef9632
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036103"
 ---
 # <a name="cxmlaccessor-class"></a>CXMLAccessor 클래스
@@ -126,12 +126,12 @@ HRESULT 값 중 하나입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CAccessor 클래스](../../data/oledb/caccessor-class.md)<br/>
 [CDynamicAccessor 클래스](../../data/oledb/cdynamicaccessor-class.md)<br/>
 [CDynamicParameterAccessor 클래스](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>
-[CDynamicStringAccessor 클래스](../../data/oledb/cdynamicstringaccessor-class.md)<br/>
+[CDynamicStringAccessor Class](../../data/oledb/cdynamicstringaccessor-class.md)<br/>
 [CDynamicStringAccessorA 클래스](../../data/oledb/cdynamicstringaccessora-class.md)<br/>
 [CDynamicStringAccessorW 클래스](../../data/oledb/cdynamicstringaccessorw-class.md)<br/>
 [CManualAccessor 클래스](../../data/oledb/cmanualaccessor-class.md)

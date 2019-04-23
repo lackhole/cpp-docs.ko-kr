@@ -7,15 +7,15 @@ helpviewer_keywords:
 - rename attribute
 ms.assetid: 5c5c6153-1087-4b7b-87fb-fc59b90b9975
 ms.openlocfilehash: 0fbed04f040a47b5b389f40eeb15254da4a7940b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037069"
 ---
 # <a name="rename-import"></a>이름 바꾸기 (\#가져오기)
 
-**C++ 전용**
+**C++특정**
 
 이름 충돌 문제 해결 작업
 
@@ -56,9 +56,9 @@ rename("GetMyParent","GetMyParentX")
 
 이는 `GetMyParent`라는 이름이 결과 형식 라이브러리 헤더 파일에만 나오기 때문입니다.
 
-**C++ 전용 종료**
+**최종 C++ 특정**
 
 ## <a name="see-also"></a>참고자료
 
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

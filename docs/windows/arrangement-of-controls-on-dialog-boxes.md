@@ -1,5 +1,5 @@
 ---
-title: '방법: 레이아웃 컨트롤 (c + +) | Microsoft Docs'
+title: '방법: 레이아웃 컨트롤 (C++) | Microsoft Docs'
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.dialog.grouping
@@ -81,13 +81,13 @@ helpviewer_keywords:
 - scroll bars [C++], width
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
 ms.openlocfilehash: 878b7371dfa77880d68f1001444ed44b84d7240c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037423"
 ---
-# <a name="how-to-layout-controls-c"></a>방법: 레이아웃 컨트롤 (c + +)
+# <a name="how-to-layout-controls-c"></a>방법: 레이아웃 컨트롤 (C++)
 
 합니다 **대화 상자 편집기** 정렬 컨트롤을 자동으로 크기를 레이아웃 도구를 제공 합니다. 대부분의 작업을 사용 합니다 [대화 상자 편집기 도구 모음](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)합니다. 모든 **대화 상자 편집기** 도구 모음 명령에서 사용할 수 있습니다 합니다 **형식** 메뉴와 대부분 [바로 가기 키](../windows/accelerator-keys-for-the-dialog-editor.md)합니다.
 
@@ -116,10 +116,10 @@ ms.locfileid: "59037423"
 |**레이아웃 안내선**|레이아웃 안내선에 대 한 설정을 표시합니다.|
 |**없음**|레이아웃 도구를 숨깁니다.|
 |**눈금자 및 안내선**|사용 하도록 설정 하는 경우 레이아웃 도구 눈금자를 추가 하 고 가이드 눈금자에 배치할 수 있습니다. 기본 가이드는 여백입니다.|
-|**표**|레이아웃 표를 만듭니다. 새 컨트롤 표에 자동으로 정렬 됩니다.|
+|**눈금**|레이아웃 표를 만듭니다. 새 컨트롤 표에 자동으로 정렬 됩니다.|
 |**모눈 간격**|대화 상자 단위 (Dlu) 모눈 간격에 대 한 설정을 표시합니다.|
-|**너비: Dlu**|Dlu의 레이아웃 모눈의 너비를 설정합니다. 가로 DLU는 4로 나눈 값 대화 상자 글꼴의 평균 너비입니다.|
-|**높이: Dlu**|Dlu의 레이아웃 모눈의 높이 설정합니다. 세로 DLU은 평균 8로 나눈 대화 상자 글꼴 높이입니다.|
+|**너비: DLUs**|Dlu의 레이아웃 모눈의 너비를 설정합니다. 가로 DLU는 4로 나눈 값 대화 상자 글꼴의 평균 너비입니다.|
+|**Height: DLUs**|Dlu의 레이아웃 모눈의 높이 설정합니다. 세로 DLU은 평균 8로 나눈 대화 상자 글꼴 높이입니다.|
 
 ### <a name="guides-and-margins"></a>안내선과 여백
 
@@ -260,7 +260,7 @@ ms.locfileid: "59037423"
 
    |간격|설명|
    |---|---|
-   |**옆으로**|왼쪽 및 오른쪽에 있는 선택 된 컨트롤 간에 균등 하 게 공간 제어 합니다.|
+   |**Across**|왼쪽 및 오른쪽에 있는 선택 된 컨트롤 간에 균등 하 게 공간 제어 합니다.|
    |**아래로**|맨 위 및 맨 아래 선택 된 컨트롤 간에 균등 하 게 공간 제어 합니다.|
 
 - 컨트롤을 가운데에 컨트롤 또는 컨트롤 다시 정렬 하려면 선택 합니다. 메뉴로 이동 **형식** > **센터에서 대화 상자** 다음 배치 방법 중 하나를 선택 합니다.
@@ -275,7 +275,7 @@ ms.locfileid: "59037423"
    |정렬|설명|
    |---|---|
    |**오른쪽**|대화 상자의 오른쪽 가장자리를 따라 누름 단추를 배치 합니다.|
-   |**Bottom**|대화 상자의 아래쪽 가장자리를 따라 누름 단추를 배치 합니다.|
+   |**아래쪽**|대화 상자의 아래쪽 가장자리를 따라 누름 단추를 배치 합니다.|
 
    누름 단추 이외의 컨트롤을 선택할 위치로 영향을 받지 않습니다.
 
@@ -286,5 +286,5 @@ Win32
 ## <a name="see-also"></a>참고자료
 
 [대화 상자 컨트롤 관리](controls-in-dialog-boxes.md)<br/>
-[방법: Add, Edit, 또는 컨트롤 삭제](adding-editing-or-deleting-controls.md)<br/>
+[방법: 추가, 편집 또는 삭제 컨트롤](adding-editing-or-deleting-controls.md)<br/>
 [방법: 액세스 제어 및 값 정의](defining-mnemonics-access-keys.md)<br/>

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3375
 ms.assetid: f1df78c6-e6ca-48f3-8b29-4e1710002bf3
 ms.openlocfilehash: ba1dbf08fb56364d2ab5b8c40847ab89484dc005
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58781395"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776407"
 ---
 # <a name="compiler-error-c3375"></a>컴파일러 오류 C3375
 
@@ -19,7 +19,7 @@ ms.locfileid: "58781395"
 
 대리자 인스턴스화가 정적 멤버 함수로 될 수 있습니다. 또는 바인딩되지 않은 대리자로서 인스턴스 함수가 될 수 있으므로 컴파일러에서 이 오류가 발생했습니다.
 
-자세한 내용은 [delegate (c + + 구성 요소 확장)](../../extensions/delegate-cpp-component-extensions.md)합니다.
+자세한 내용은 [대리자 (C++ 구성 요소 확장)](../../extensions/delegate-cpp-component-extensions.md)합니다.
 
 ## <a name="example"></a>예제
 

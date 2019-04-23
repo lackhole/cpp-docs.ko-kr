@@ -10,10 +10,10 @@ helpviewer_keywords:
 - files [C++], translation
 ms.assetid: a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db
 ms.openlocfilehash: 11e36e06adc4fa95cb9aa607704e72f64c812429
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036155"
 ---
 # <a name="phases-of-translation"></a>변환 단계
@@ -54,7 +54,7 @@ C 및 C++ 프로그램은 프로그램을 구성하는 개발 코드가 있는 �
 *문자열 연결*<br/>
 모든 인접한 문자열과 와이드 타입의 문자열 리터럴은 연결됩니다. 예를 들어, `"String " "concatenation"` 문자열은 `"String concatenation"`과 같이 연결됩니다.
 
-*이동*<br/>
+*번역*<br/>
 모든 토큰은 구문적 그리고 의미적으로 분석됩니다. 이러한 토큰은 개체 코드로 변환됩니다.
 
 *링크*<br/>

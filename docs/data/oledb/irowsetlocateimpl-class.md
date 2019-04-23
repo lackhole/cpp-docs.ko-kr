@@ -33,10 +33,10 @@ helpviewer_keywords:
 - m_rgbookmarks
 ms.assetid: a8aa3149-7ce8-4976-a680-2da193fd3234
 ms.openlocfilehash: e3513084697a60a33b9fa2ab02222a9b332cce79
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039821"
 ---
 # <a name="irowsetlocateimpl-class"></a>IRowsetLocateImpl 클래스
@@ -94,10 +94,10 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
 
 |||
 |-|-|
-|[비교](#compare)|두 개의 책갈피를 비교합니다.|
+|[Compare](#compare)|두 개의 책갈피를 비교합니다.|
 |[GetRowsAt](#getrowsat)|책갈피에서의 오프셋으로 지정 된 행부터 행을 인출 합니다.|
 |[GetRowsByBookmark](#getrowsbybookmark)|지정한 책갈피를 일치 하는 행을 인출 합니다.|
-|[Hash](#hash)|지정 된 책갈피에 대 한 값을 해시 하는 반환 합니다.|
+|[해시](#hash)|지정 된 책갈피에 대 한 값을 해시 하는 반환 합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
@@ -113,7 +113,7 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
 
 행 집합의 OLE DB 책갈피를 지원 하려면이 클래스에서 상속 하는 행 집합을 확인 합니다.
 
-책갈피 지원 구현에 대 한 정보를 참조 하세요. [책갈피에 대 한 공급자 지원](../../data/oledb/provider-support-for-bookmarks.md) 에 *Visual c + + 프로그래머 가이드* 및 [책갈피](/previous-versions/windows/desktop/ms709728(v=vs.85)) 합니다 에서*OLE DB Programmer's Reference* 플랫폼 SDK에에서 있습니다.
+책갈피 지원 구현에 대 한 정보를 참조 하세요. [책갈피에 대 한 공급자 지원](../../data/oledb/provider-support-for-bookmarks.md) 에 *Visual C++ Programmer's Guide* 및 [책갈피](/previous-versions/windows/desktop/ms709728(v=vs.85)) 합니다 에서 *OLE DB Programmer's Reference* 플랫폼 SDK에에서 있습니다.
 
 ## <a name="compare"></a> IRowsetLocateImpl::Compare
 

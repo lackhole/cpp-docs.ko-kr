@@ -53,10 +53,10 @@ helpviewer_keywords:
 - m_mapCachedData
 ms.assetid: f85af76b-ab6f-4f8b-8f4a-337c9679d68f
 ms.openlocfilehash: 6c20698e2219cf7c3e1d840e23b5f8113947ae9f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037720"
 ---
 # <a name="irowsetupdateimpl-class"></a>IRowsetUpdateImpl 클래스
@@ -87,7 +87,7 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 *T*<br/>
 파생 된 클래스 `IRowsetUpdateImpl`합니다.
 
-*스토리지*<br/>
+*저장소*<br/>
 사용자 레코드입니다.
 
 *UpdateArray*<br/>

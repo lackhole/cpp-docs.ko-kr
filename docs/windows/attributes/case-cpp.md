@@ -1,5 +1,5 @@
 ---
-title: case (c + + COM 특성)
+title: 경우 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.case
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - case attribute
 ms.assetid: 6fb883c3-0526-4932-a901-b4564dcaeb7d
 ms.openlocfilehash: b3058f2fe6f35e1b11d4790780cb0fcdcaada706
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038202"
 ---
 # <a name="case-c"></a>case(C++)
@@ -40,7 +40,7 @@ ms.locfileid: "59038202"
 
 ## <a name="remarks"></a>설명
 
-**대/소문자** c + + 특성에 동일한 기능을 합니다 **사례** MIDL 특성입니다. 이 특성에만 사용 합니다 [switch_type](switch-type.md) 특성입니다.
+**대/소문자** C++ 특성이 동일한 기능을 합니다 **사례** MIDL 특성. 이 특성에만 사용 합니다 [switch_type](switch-type.md) 특성입니다.
 
 ## <a name="example"></a>예제
 

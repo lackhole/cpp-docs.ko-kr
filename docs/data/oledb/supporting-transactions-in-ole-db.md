@@ -10,10 +10,10 @@ helpviewer_keywords:
 - distributed transactions [C++]
 ms.assetid: 3d72e583-ad38-42ff-8f11-e2166d60a5a7
 ms.openlocfilehash: 3c71200e39641a69443599e0445f89f469aceeda
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038750"
 ---
 # <a name="supporting-transactions-in-ole-db"></a>OLE DB에서 트랜잭션 지원
@@ -36,7 +36,7 @@ OLE DB는 다음 세 가지 메서드를 사용 하 여 트랜잭션을 지원�
 
 세션의 트랜잭션을 들어가면 데이터 저장소에서 해당 세션 내에서 수행 하는 모든 작업 해당 트랜잭션의 일부인 및 커밋 또는 중단 단일 단위로 합니다. (이 경우에 따라 라고 수동 커밋 모드로.)
 
-트랜잭션 지원은 공급자별으로 다릅니다. 트랜잭션을 지 원하는 세션 개체를 사용 하는 공급자가 지 원하는 경우 `ITransaction` 고 `ITransactionLocal` (중첩 되지 않은) 트랜잭션을 입력할 수 있습니다. OLE DB 템플릿 클래스 [CSession](../../data/oledb/csession-class.md) 이러한 인터페이스를 지원 하며, Visual c + +에 트랜잭션 지원을 구현 하는 것이 좋습니다.
+트랜잭션 지원은 공급자별으로 다릅니다. 트랜잭션을 지 원하는 세션 개체를 사용 하는 공급자가 지 원하는 경우 `ITransaction` 고 `ITransactionLocal` (중첩 되지 않은) 트랜잭션을 입력할 수 있습니다. OLE DB 템플릿 클래스 [CSession](../../data/oledb/csession-class.md) 시각적 개체의 트랜잭션 지원을 구현 하는 권장된 방법은 이러한 인터페이스를 지원 하며, C++합니다.
 
 ## <a name="starting-and-ending-the-transaction"></a>시작 하 고 트랜잭션이 종료
 

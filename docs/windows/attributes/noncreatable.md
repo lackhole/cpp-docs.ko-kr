@@ -1,5 +1,5 @@
 ---
-title: noncreatable (c + + COM 특성)
+title: noncreatable (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.noncreatable
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - noncreatable attribute
 ms.assetid: 4d17937b-0bff-41af-ba57-53e18b7ab5a9
 ms.openlocfilehash: a10d93650c0ae564019a09b34c3a604d12327998
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039993"
 ---
 # <a name="noncreatable"></a>noncreatable
@@ -25,7 +25,7 @@ ms.locfileid: "59039993"
 
 ## <a name="remarks"></a>설명
 
-합니다 **noncreatable** c + + 특성에 동일한 기능을 합니다 [noncreatable](/windows/desktop/Midl/noncreatable) MIDL 특성과 생성 된 자동으로 전달 됩니다. 컴파일러에서 IDL 파일입니다.
+**noncreatable** C++ 특성에 동일한 기능을 합니다 [noncreatable](/windows/desktop/Midl/noncreatable) MIDL 특성과 생성 된 자동으로 전달 됩니다. 컴파일러에서 IDL 파일입니다.
 
 ATL을 사용 하는 프로젝트 내에서이 특성을 사용 하면 특성의 동작을 변경 합니다. 위 동작 외에도 특성도 삽입 합니다 [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) 매크로입니다. ATL에 나타냅니다이 매크로 개체를 외부에서 만들 수 없습니다.
 

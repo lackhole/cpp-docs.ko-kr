@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BEGIN_ACCESSOR macro, example
 ms.assetid: 2de9e5eb-53ce-42b1-80fa-57d46600a80c
 ms.openlocfilehash: 5dd7be3eccd59dc1a5a0dc1cd6932ca1310627c0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041009"
 ---
 # <a name="user-records"></a>사용자 레코드
 
-정적 접근자를 사용 하 (접근자에서 파생 되는, `CAccessor`), 소비자 사용자 레코드가 있어야 합니다. 사용자 레코드는 핸들 입력 또는 출력에 데이터 요소를 포함 하는 c + + 클래스입니다. 합니다 **ATL OLE DB 소비자 마법사** 소비자에 대 한 사용자 레코드를 생성 합니다. 명령 처리와 같은 선택적 작업에 대 한 사용자 레코드에 메서드를 추가할 수 있습니다.
+정적 접근자를 사용 하 (접근자에서 파생 되는, `CAccessor`), 소비자 사용자 레코드가 있어야 합니다. 사용자 레코드를 C++ 핸들 입력 또는 출력에 데이터 요소를 포함 하는 클래스입니다. 합니다 **ATL OLE DB 소비자 마법사** 소비자에 대 한 사용자 레코드를 생성 합니다. 명령 처리와 같은 선택적 작업에 대 한 사용자 레코드에 메서드를 추가할 수 있습니다.
 
 다음 코드에서는 명령을 처리 하는 샘플 레코드를 보여 줍니다. 사용자 레코드에서 BEGIN_COLUMN_MAP 공급자에서 소비자에 게 전달 하는 데이터 행 집합을 나타냅니다. BEGIN_PARAM_MAP 명령 매개 변수 집합을 나타냅니다. 사용 하 여이 예제는 [CCommand](../../data/oledb/ccommand-class.md) 명령 매개 변수를 처리 하는 클래스입니다. 맵 항목의 데이터 멤버는 클래스의 각 인스턴스에 대 한 메모리의 한 연속 블록으로 오프셋을 나타냅니다. COLUMN_ENTRY 매크로 공급자 측의 PROVIDER_COLUMN_ENTRY 매크로에 해당합니다.
 
@@ -87,4 +87,4 @@ END_ACCESSOR_MAP()
 
 ## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)

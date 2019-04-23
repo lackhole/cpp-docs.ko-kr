@@ -6,10 +6,10 @@ helpviewer_keywords:
 - operators [C++], preprocessor
 ms.assetid: 884126d1-0ce2-48b6-9e06-8a2d7c4a9656
 ms.openlocfilehash: 0b105cc2039e2aa50c11b796e5474a97d8c5c702
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035691"
 ---
 # <a name="preprocessor-operators"></a>전처리 연산자
@@ -26,4 +26,4 @@ ms.locfileid: "59035691"
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)<br/>
 [미리 정의된 매크로](../preprocessor/predefined-macros.md)<br/>
-[C/C++ 전처리기 도움말](../preprocessor/c-cpp-preprocessor-reference.md)
+[ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)

@@ -144,15 +144,15 @@ helpviewer_keywords:
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
 ms.openlocfilehash: dedcab9b0addd3696749b50fef92b70081981c03
-ms.sourcegitcommit: 35c4b3478f8cc310ebbd932a18963ad8ab846ed9
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59237213"
 ---
 # <a name="predefined-macros"></a>미리 정의된 매크로
 
-Microsoft C/c + + 컴파일러 (MSVC) 미리 언어 (C 또는 c + +), 컴파일 대상 및 선택한 컴파일러 옵션에 따라 특정 전처리기 매크로 정의 합니다.
+Microsoft C /C++ 컴파일러 (MSVC) 언어에 따라 특정 전처리기 매크로 미리 정의 (C 또는 C++), 컴파일 대상 및 선택한 컴파일러 옵션입니다.
 
 MSVC는 ANSI/ISO C99 표준을 ISO c++14 및 c++17 표준에 필요한 미리 정의 된 전처리기 매크로 지원 합니다. 구현에는 몇 가지 추가 Microsoft 전용 전처리기 매크로 지원합니다. 몇 가지 매크로 특정 빌드 환경 또는 컴파일러 옵션에 대해서만 정의 됩니다. 언급 되어 있는 경우 매크로로 지정 된 것 처럼 변환 단위 전체에 걸쳐 정의 됩니다 점을 제외 하 고 **/D** 컴파일러 옵션 인수입니다. 정의 된 매크로 컴파일 전에 전처리기에 의해 지정된 된 값으로 확장 됩니다. 미리 정의 된 매크로 인수를 가져오지 않고 및 재정의할 수 없습니다.
 
@@ -172,7 +172,7 @@ MSVC는 ANSI/ISO C99 표준을 ISO c++14 및 c++17 표준에 필요한 미리 �
 
 컴파일러는 ISO C99 및 ISO c++17 표준으로 지정 된 이러한 미리 정의 된 매크로 지원 합니다.
 
-- **&#95;&#95;cplusplus** 변환 단위 c + +로 컴파일될 때 정수 리터럴 값으로 정의 합니다. 그렇지 않으면 정의 되지 않았습니다.
+- **&#95;&#95;cplusplus** 변환 단위로 컴파일될 때 정수 리터럴 값으로 정의 된 C++합니다. 그렇지 않으면 정의 되지 않았습니다.
 
 - **&#95;&#95;날짜&#95; &#95;**  현재 소스 파일의 컴파일 날짜입니다. 날짜는 상수 길이 문자열 형식의 리터럴 *Mmm dd yyyy*합니다. 해당 월 이름이 *Mmm* C 런타임 라이브러리 (CRT)를 생성 하는 약식된 월 이름은 같습니다 [asctime](../c-runtime-library/reference/asctime-wasctime.md) 함수입니다. 날짜의 첫 번째 문자 *dd* 공간 값이 10 보다 작은 경우입니다. 이 매크로 항상 정의 됩니다.
 
@@ -184,7 +184,7 @@ MSVC는 ANSI/ISO C99 표준을 ISO c++14 및 c++17 표준에 필요한 미리 �
 
 - **&#95;&#95;STDC&#95;HOSTED&#95; &#95;**  구현 하는 경우 1로 정의 *호스트 구현*, 전체 필요한 표준 라이브러리를 지 합니다. 그렇지 않으면 0으로 정의 합니다.
 
-- **&#95;&#95;STDCPP&#95;스레드&#95; &#95;**  c + +로 컴파일된 및 프로그램 실행의 둘 이상의 스레드를 가질 수 있습니다 하는 경우에 1로 정의 합니다. 그렇지 않으면 정의 되지 않았습니다.
+- **&#95;&#95;STDCPP&#95;스레드&#95; &#95;**  프로그램 실행의 둘 이상의 스레드를 가질 수 있습니다 하는 경우에 1로 정의 하 고로 컴파일한 C++합니다. 그렇지 않으면 정의 되지 않았습니다.
 
 - **&#95;&#95;시간&#95; &#95;**  전처리 된 변환 단위 변환 시간입니다. 에 문자열 형식의 리터럴 *hh: mm:*, CRT가 반환 된 시간이 동일 [asctime](../c-runtime-library/reference/asctime-wasctime.md) 함수입니다. 이 매크로 항상 정의 됩니다.
 
@@ -257,7 +257,7 @@ MSVC는 이러한 추가 미리 정의 된 매크로 지원합니다.
     }
     ```
 
-- **&#95;&#95;cplusplus&#95;cli** 200406 c + +로 컴파일된 경우 정수 리터럴 값으로 정의 및 [/clr](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다. 정의 되 면  **&#95; &#95;cplusplus&#95;cli** 변환 단위 전체에 적용 됩니다.
+- **&#95;&#95;cplusplus&#95;cli** 200406로 컴파일된 경우 정수 리터럴 값으로 정의 된 C++ 와 [/clr](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다. 정의 되 면  **&#95; &#95;cplusplus&#95;cli** 변환 단위 전체에 적용 됩니다.
 
     ```cpp
     // cplusplus_cli.cpp
@@ -272,7 +272,7 @@ MSVC는 이러한 추가 미리 정의 된 매크로 지원합니다.
     }
     ```
 
-- **&#95;&#95;cplusplus&#95;winrt** 201009 c + +로 컴파일된 경우 정수 리터럴 값으로 정의 하며 [/ZW (Windows 런타임 컴파일)](../build/reference/zw-windows-runtime-compilation.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다.
+- **&#95;&#95;cplusplus&#95;winrt** 201009로 컴파일된 경우 정수 리터럴 값으로 정의 됩니다 C++ 하며 [/ZW (Windows 런타임 컴파일)](../build/reference/zw-windows-runtime-compilation.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다.
 
 - **&#95;CPPRTTI** 이면 1로 정의 합니다 [/GR (런타임 형식 정보 사용)](../build/reference/gr-enable-run-time-type-information.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다.
 
@@ -354,13 +354,13 @@ MSVC는 이러한 추가 미리 정의 된 매크로 지원합니다.
 
 - **&#95;관리 되는** 하면 1로 정의 합니다 [/clr](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다.
 
-- **&#95;MSC&#95;빌드** 컴파일러의 버전 번호의 수정 번호 요소가 포함 된를 정수 리터럴로 정의 합니다. 수정 번호는 마침표로 구분 된 버전 번호의 네 번째 요소입니다. 예를 들어, Microsoft C/c + + 컴파일러의 버전 번호가 15.00.20706.01 인 경우는  **&#95;MSC&#95;빌드** 매크로 1로 계산 합니다. 이 매크로 항상 정의 됩니다.
+- **&#95;MSC&#95;빌드** 컴파일러의 버전 번호의 수정 번호 요소가 포함 된를 정수 리터럴로 정의 합니다. 수정 번호는 마침표로 구분 된 버전 번호의 네 번째 요소입니다. 예를 들어 경우 Microsoft C의 버전 번호를 /C++ 컴파일러 15.00.20706.01 인 합니다  **&#95;MSC&#95;빌드** 매크로 1로 계산 합니다. 이 매크로 항상 정의 됩니다.
 
 - **&#95;MSC&#95;확장** 는에서 기본적으로 1로 정의 [/Ze (언어 확장명 사용)](../build/reference/za-ze-disable-language-extensions.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다.
 
-- **&#95;MSC&#95;전체&#95;VER** 부 주를 인코딩하는 정수 리터럴 정의 및 컴파일러의 버전 번호의 요소 수를 작성 합니다. 주 번호는 마침표로 구분 된 버전 번호의 첫 번째 요소, 부 번호는 두 번째 요소인 및 빌드 번호는 세 번째 요소입니다. 예를 들어, Microsoft C/c + + 컴파일러의 버전 번호가 15.00.20706.01 인 경우는  **&#95;MSC&#95;전체&#95;VER** 매크로 150020706으로 평가 합니다. 입력 `cl /?` 컴파일러의 버전 번호를 보려면 명령줄에서. 이 매크로 항상 정의 됩니다.
+- **&#95;MSC&#95;전체&#95;VER** 부 주를 인코딩하는 정수 리터럴 정의 및 컴파일러의 버전 번호의 요소 수를 작성 합니다. 주 번호는 마침표로 구분 된 버전 번호의 첫 번째 요소, 부 번호는 두 번째 요소인 및 빌드 번호는 세 번째 요소입니다. 예를 들어 경우 Microsoft C의 버전 번호 /C++ 컴파일러 15.00.20706.01 인 합니다  **&#95;MSC&#95;전체&#95;VER** 매크로 150020706으로 평가 합니다. 입력 `cl /?` 컴파일러의 버전 번호를 보려면 명령줄에서. 이 매크로 항상 정의 됩니다.
 
-- **&#95;MSC&#95;VER** 컴파일러의 버전 번호의 주 및 부 번호 요소를 인코딩하는 정수 리터럴 정의 합니다. 주 번호는 마침표로 구분 된 버전 번호의 첫 번째 요소 및 부 번호는 두 번째 요소입니다. 예를 들어, Microsoft C/c + + 컴파일러의 버전 번호가 17.00.51106.1 경우 합니다  **&#95;MSC&#95;VER** 1700 매크로 평가 합니다. 입력 `cl /?` 컴파일러의 버전 번호를 보려면 명령줄에서. 이 매크로 항상 정의 됩니다.
+- **&#95;MSC&#95;VER** 컴파일러의 버전 번호의 주 및 부 번호 요소를 인코딩하는 정수 리터럴 정의 합니다. 주 번호는 마침표로 구분 된 버전 번호의 첫 번째 요소 및 부 번호는 두 번째 요소입니다. 예를 들어 경우 Microsoft C의 버전 번호를 /C++ 컴파일러는 17.00.51106.1 합니다  **&#95;MSC&#95;VER** 매크로 1700으로 평가 합니다. 입력 `cl /?` 컴파일러의 버전 번호를 보려면 명령줄에서. 이 매크로 항상 정의 됩니다.
 
    |Visual Studio 버전|**&#95;MSC&#95;VER**|
    |-|-|
@@ -394,9 +394,9 @@ MSVC는 이러한 추가 미리 정의 된 매크로 지원합니다.
    #endif
    ```
 
-   자세한 내용은 [Visual c + + 컴파일러 버전](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) Microsoft c + + 팀 블로그에서.
+   자세한 내용은 [시각적 C++ 컴파일러 버전](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) microsoft에서 C++ 팀 블로그.
 
-- **&#95;MSVC&#95;LANG** c + + 언어 표준 컴파일러에 의해 대상으로 지정 하는 정수 리터럴로 정의 합니다. C + +로 컴파일된 코드에만 설정 됩니다. 매크로 정수 리터럴 기본적으로 201402 L 값 때나 합니다 [/std: c + + 14](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 지정 합니다. 있으면 매크로 201703 L로 설정 되는 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 지정 합니다. 이상에서 지정 되지 않은 값으로 설정 됩니다 때 합니다 [/std: c + + 최신](../build/reference/std-specify-language-standard-version.md) 옵션을 지정 합니다. 그렇지 않으면 매크로 정의 되지 않습니다. 합니다  **&#95;MSVC&#95;LANG** 매크로 [/std (언어 표준 버전 지정)](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션은 Visual Studio 2015 업데이트 3부터 사용할 수 있습니다.
+- **&#95;MSVC&#95;LANG** 로 지정 하는 정수 리터럴 정의 C++ 컴파일러에서 대상 언어 표준입니다. 로 컴파일된 코드에만 설정 됩니다 C++입니다. 매크로 정수 리터럴 기본적으로 201402 L 값 때나 합니다 [/std: c + + 14](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 지정 합니다. 있으면 매크로 201703 L로 설정 되는 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 지정 합니다. 이상에서 지정 되지 않은 값으로 설정 됩니다 때 합니다 [/std: c + + 최신](../build/reference/std-specify-language-standard-version.md) 옵션을 지정 합니다. 그렇지 않으면 매크로 정의 되지 않습니다. 합니다  **&#95;MSVC&#95;LANG** 매크로 [/std (언어 표준 버전 지정)](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션은 Visual Studio 2015 업데이트 3부터 사용할 수 있습니다.
 
 - **&#95;&#95;MSVC&#95;런타임&#95;확인** 한 경우 1로 정의의 합니다 [/RTC](../build/reference/rtc-run-time-error-checks.md) 컴파일러 옵션 설정 됩니다. 그렇지 않으면 정의 되지 않았습니다.
 
@@ -427,7 +427,7 @@ MSVC는 이러한 추가 미리 정의 된 매크로 지원합니다.
 
 - **&#95;WIN64** 컴파일 대상 64 비트 ARM 또는 x64 경우 1로 정의 합니다. 그렇지 않으면 정의 되지 않았습니다.
 
-- **&#95;WINRT&#95;DLL** , c + +로 컴파일된 경우 1로 정의 [/ZW (Windows 런타임 컴파일)](../build/reference/zw-windows-runtime-compilation.md) 하 고 [/LD 또는 /LDd](../build/reference/md-mt-ld-use-run-time-library.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다.
+- **&#95;WINRT&#95;DLL** 로 컴파일된 경우 1로 정의 된 C++ 모두 [/ZW (Windows 런타임 컴파일)](../build/reference/zw-windows-runtime-compilation.md) 하 고 [/LD 또는 /LDd](../build/reference/md-mt-ld-use-run-time-library.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다.
 
 전처리기 매크로가 ATL 또는 MFC 라이브러리 버전을 식별 하는 컴파일러에서 미리 정의 됩니다. ATL 및 MFC 라이브러리 헤더 내부적으로 이러한 버전 매크로 정의합니다. 해당 하는 필수 헤더를 포함 하기 전에 전처리기 지시문에서 정의 되지 않았습니다.
 
@@ -437,6 +437,6 @@ MSVC는 이러한 추가 미리 정의 된 매크로 지원합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[매크로 (C/C++)](../preprocessor/macros-c-cpp.md)<br/>
-[전처리 연산자](../preprocessor/preprocessor-operators.md)<br/>
+[매크로(C/C++)](../preprocessor/macros-c-cpp.md)<br/>
+[전처리기 연산자](../preprocessor/preprocessor-operators.md)<br/>
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)

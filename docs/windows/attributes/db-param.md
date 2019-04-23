@@ -1,5 +1,5 @@
 ---
-title: db_param (c + + COM 특성)
+title: db_param (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.db_param
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - db_param attribute
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
 ms.openlocfilehash: a3cfcf3c7ce3313eaff9a3b35854e1e077fc906f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038098"
 ---
 # <a name="dbparam"></a>db_param
@@ -28,7 +28,7 @@ ms.locfileid: "59038098"
 *ordinal*<br/>
 데이터를 바인딩할 행 집합의 필드에 해당 열 번호 (DBCOLUMNINFO 서 수).
 
-*가 paramtype과*<br/>
+*paramtype*<br/>
 (선택 사항) 형식 매개 변수에 설정입니다. 공급자의 데이터 원본에서 지원 되는 매개 변수 I/O 형식만 지원 합니다. 형식은 하나 이상의 DBPARAMIOENUM 값을 조합 합니다.
 
 - DBPARAMIO_INPUT 입력된 매개 변수입니다.
@@ -40,16 +40,16 @@ ms.locfileid: "59038098"
 *dbtype*<br/>
 (선택 사항) OLE DB [유형 표시기](/previous-versions/windows/desktop/ms711251(v=vs.85)) 열 항목에 대 한 합니다.
 
-*전체 자릿수*<br/>
+*precision*<br/>
 (선택 사항) 열 항목에 사용할 전체 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bPrecision` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
-*소수 자릿수*<br/>
+*scale*<br/>
 (선택 사항) 열 항목에 사용할 소수 자릿수입니다. 세부 정보에 대 한 설명을 참조 하세요 `bScale` 의 요소는 [DBBINDING 구조](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
 *status*<br/>
 (선택 사항) 이 칼럼의 상태를 저장 하는 데 사용 되는 멤버 변수입니다. 상태는 데이터 값 또는 NULL 등의 다른 값 열 값이 있는지 여부를 나타냅니다. 가능한 값을 참조 하세요 [상태](/previous-versions/windows/desktop/ms722617(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-*길이*<br/>
+*length*<br/>
 (선택 사항) 멤버 변수 (바이트)에서 열의 크기를 보유 하는 데 사용 합니다.
 
 ## <a name="remarks"></a>설명

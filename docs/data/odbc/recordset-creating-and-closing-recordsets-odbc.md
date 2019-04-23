@@ -10,10 +10,10 @@ helpviewer_keywords:
 - ODBC recordsets, opening
 ms.assetid: 8d2aac23-4396-4ce2-8c60-5ecf1b360d3d
 ms.openlocfilehash: 5d5dae5bc766c0cfc31b4fb76f7fe104be0dbd74
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59041269"
 ---
 # <a name="recordset-creating-and-closing-recordsets-odbc"></a>레코드 집합: 만들 레코드 집합 및 닫기 (ODBC)
@@ -105,7 +105,7 @@ if(!rsStudent.Open(CRecordset::snapshot, NULL, CRecordset::readOnly))
 
    함수의 스택 프레임에 선언한 경우 개체는 개체가 범위를 벗어날 때 자동으로 삭제 됩니다. 그렇지 않은 경우 사용 합니다 **삭제** 연산자입니다.
 
-`Close` 레코드 집합의 해제 `HSTMT` 처리 합니다. C + + 개체는 삭제 되지 않습니다.
+`Close` 레코드 집합의 해제 `HSTMT` 처리 합니다. 제거 하지 않습니다는 C++ 개체입니다.
 
 ## <a name="see-also"></a>참고자료
 

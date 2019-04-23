@@ -1,5 +1,5 @@
 ---
-title: 바이너리 편집기 (c + +)
+title: 바이너리 편집기 (C++)
 ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.binary.F1
@@ -22,13 +22,13 @@ helpviewer_keywords:
 - resources [C++], creating
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
 ms.openlocfilehash: 832dbf711307b81527bcaff0d1e1b8138f208e46
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040386"
 ---
-# <a name="binary-editor-c"></a>바이너리 편집기 (c + +)
+# <a name="binary-editor-c"></a>바이너리 편집기 (C++)
 
 > [!CAUTION]
 > 대화 상자, 이미지 또는 메뉴와 같은 리소스를 편집 합니다 **바이너리 편집기** 은 위험 합니다. 잘못된 편집으로 리소스가 손상되어 해당 네이티브 편집기에서 읽지 못하게 될 수 있습니다.

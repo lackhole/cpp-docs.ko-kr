@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3399
 ms.assetid: 306ad199-d150-4f6c-bcf1-24a7948b93be
 ms.openlocfilehash: d05a861a2baedb86482503b6860098f12c41bd78
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58767175"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776459"
 ---
 # <a name="compiler-error-c3399"></a>컴파일러 오류 C3399
 
@@ -19,7 +19,7 @@ ms.locfileid: "58767175"
 
 `gcnew()` 제약 조건을 지정할 때 제약 조건 형식이 매개 변수가 없는 생성자를 갖도록 지정합니다. 따라서 해당 형식을 인스턴스화하고 매개 변수를 전달하려고 하면 오류가 발생합니다.
 
-참조 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + /cli CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md) 자세한 내용은 합니다.
+참조 [제네릭 형식 매개 변수에 대 한 제약 조건 (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md) 에 대 한 자세한 내용은 합니다.
 
 ## <a name="example"></a>예제
 

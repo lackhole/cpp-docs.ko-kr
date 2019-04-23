@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C3393
 ms.assetid: d57f7c69-0a02-4fe3-9e45-bc62644fd77c
 ms.openlocfilehash: 5147e3e406fde73a05b7069e2a9336f27b3db622
-ms.sourcegitcommit: 5cecccba0a96c1b4ccea1f7a1cfd91f259cc5bde
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58767134"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59776264"
 ---
 # <a name="compiler-error-c3393"></a>컴파일러 오류 C3393
 
 제약 조건 절의 구문 오류: 'identifier'가 형식이 아닙니다.
 
-제약 조건에 전달된 식별자가 형식이어야 하는 데 형식이 아닙니다.  자세한 내용은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C + + CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md)합니다.
+제약 조건에 전달된 식별자가 형식이어야 하는 데 형식이 아닙니다.  자세한 내용은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

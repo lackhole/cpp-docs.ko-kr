@@ -1,5 +1,5 @@
 ---
-title: '연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)'
+title: '연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (C++)'
 ms.custom: get-started-article
 ms.date: 09/18/2018
 helpviewer_keywords:
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - Windows Desktop applications [C++]
 - Windows API [C++]
 ms.openlocfilehash: cb6d09acc00f2e38ee41180c81c1877bc53027c2
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037964"
 ---
-# <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)
+# <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (C++)
 
 이 연습에서는 Visual Studio에서 기존 Windows 데스크톱 응용 프로그램을 만드는 방법을 보여 줍니다. 예제 응용 프로그램을 만든 Windows API를 사용 하 여 "Hello, Windows desktop!"를 표시 하려면 줍니다. 이 연습에서 개발하는 코드를 패턴으로 사용하여 다른 Windows 데스크톱 애플리케이션을 만들 수 있습니다.
 
@@ -26,13 +26,13 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 - Microsoft Windows 7 이상을 실행 하는 컴퓨터입니다. 최상의 개발 환경을 위해 Windows 10이 좋습니다.
 
-- Visual Studio 2017의 복사본입니다. 다운로드 하 여 Visual Studio를 설치 하는 방법에 대 한 정보를 참조 하세요 [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다. 설치 관리자를 실행 해야 합니다 **c + +를 사용한 데스크톱 개발** 작업 확인란이 선택 되어 있습니다. Visual Studio를 설치할 때이 워크 로드를 설치 하지 않은 경우 걱정 하지 마세요. 설치 관리자를 다시 실행 하 고 지금 설치 수 있습니다.
+- Visual Studio 2017의 복사본입니다. 다운로드 하 여 Visual Studio를 설치 하는 방법에 대 한 정보를 참조 하세요 [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다. 설치 관리자를 실행 해야 합니다 **를 사용한 데스크톱 개발 C++**  작업 확인란이 선택 되어 있습니다. Visual Studio를 설치할 때이 워크 로드를 설치 하지 않은 경우 걱정 하지 마세요. 설치 관리자를 다시 실행 하 고 지금 설치 수 있습니다.
 
-   ![C + +를 사용한 데스크톱 개발](../build/media/desktop-development-with-cpp.png "c + +를 사용한 데스크톱 개발")
+   ![사용한 데스크톱 개발 C++ ](../build/media/desktop-development-with-cpp.png "를 사용한 데스크톱 개발C++")
 
 - Visual Studio IDE를 사용 하 여의 기본 사항 이해 합니다. 이전 Windows 데스크톱 앱을 사용한 경우 아마도 유지할 수 있습니다. 참조에 대 한 소개 [Visual Studio IDE 기능 둘러보기](/visualstudio/ide/visual-studio-ide)합니다.
 
-- 과정을 따르려면 c + + 언어의 기본 사항을 충분히 이해 합니다. 걱정 하지 마십시오, 너무 복잡 아무일도 하지 않는 것입니다.
+- 기본 사항을 충분히 이해 합니다 C++ 과정을 따르려면 언어입니다. 걱정 하지 마십시오, 너무 복잡 아무일도 하지 않는 것입니다.
 
 ## <a name="create-a-windows-desktop-project"></a>Windows 데스크톱 프로젝트 만들기
 
@@ -42,7 +42,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 1. **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.
 
-1. 에 **새 프로젝트** 대화 상자의 왼쪽된 창에서 확장 **설치 됨** > **Visual c + +** 를 선택 하 고 **Windows Desktop**. 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다.
+1. 에 **새 프로젝트** 대화 상자의 왼쪽된 창에서 확장 **설치 됨** > **Visual C++** 를 선택 하 고 **Windows데스크톱**. 가운데 창에서 선택 **Windows 데스크톱 마법사**합니다.
 
    에 **이름을** 상자 예를 들어 프로젝트의 이름을 입력 합니다 *DesktopApp*합니다. **확인**을 선택합니다.
 
@@ -66,7 +66,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 1. **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.
 
-1. 에 **새 프로젝트** 대화 상자의 왼쪽된 창에서 확장 **설치 됨** > **템플릿** > **Visual c + +** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 프로젝트**를 선택합니다.
+1. 에 **새 프로젝트** 대화 상자의 왼쪽된 창에서 확장 **설치 됨** > **템플릿** > **시각적 C++** 를 선택한 후 **Win32**합니다. 가운데 창에서 **Win32 프로젝트**를 선택합니다.
 
    에 **이름을** 상자 예를 들어 프로젝트의 이름을 입력 합니다 *DesktopApp*합니다. **확인**을 선택합니다.
 
@@ -96,7 +96,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 ### <a name="to-start-a-windows-desktop-application"></a>Windows 데스크톱 애플리케이션을 시작하려면
 
-1. 모든 C와 마찬가지로 응용 프로그램 및 c + + 응용 프로그램이 있어야 합니다는 `main` 데스크톱 응용 프로그램에 있어야 하는 모든 Windows 시작 지점으로 함수를 `WinMain` 함수입니다. `WinMain` 에 다음 구문이 있습니다.
+1. 모든 C 응용 프로그램 처럼 및 C++ 응용 프로그램에 있어야는 `main` 데스크톱 응용 프로그램에 있어야 하는 모든 Windows 시작 지점으로 함수를 `WinMain` 함수입니다. `WinMain` 에는 다음 구문이 있습니다.
 
    ```cpp
    int CALLBACK WinMain(
@@ -110,7 +110,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    매개 변수 및 반환 값이 함수에 대 한 정보를 참조 하세요 [WinMain 진입점](/windows/desktop/api/winbase/nf-winbase-winmain)합니다.
 
    > [!NOTE]
-   > 추가 된 모든 단어를 같은 이란 `CALLBACK`, 또는 `HINSTANCE`, 또는 `_In_`? 기존의 Windows API는 typedef를 사용 하 고 전처리기 매크로 추상화를 광범위 하 게 형식 및 플랫폼별의 세부 정보 중 일부 코딩, 규칙을 호출 하는 등 **__declspec** 선언과 컴파일러 pragmas 합니다. Visual Studio에서 IntelliSense를 사용할 수 있습니다 [요약 정보](/visualstudio/ide/using-intellisense#quick-info) 이러한 typedefs 및 매크로 정의 항목을 참조 하는 기능입니다. 관심 단어 위로 마우스를 가져가서 또는 선택 하 고 키를 눌러 **Ctrl**+**K**를 **Ctrl**+**합니까** 에 대 한는 정의 포함 하는 작은 팝업 창입니다. 자세한 내용은 [IntelliSense 사용](/visualstudio/ide/using-intellisense)을 참조하세요. 매개 변수 및 반환 형식을 사용할 경우가 많습니다 *SAL 주석을* 수 있도록 프로그래밍 오류 catch 합니다. 자세한 내용은 [C/c + + 코드 오류를 줄이기 위한 SAL 주석 사용](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)합니다.
+   > 추가 된 모든 단어를 같은 이란 `CALLBACK`, 또는 `HINSTANCE`, 또는 `_In_`? 기존의 Windows API는 typedef를 사용 하 고 전처리기 매크로 추상화를 광범위 하 게 형식 및 플랫폼별의 세부 정보 중 일부 코딩, 규칙을 호출 하는 등 **__declspec** 선언과 컴파일러 pragmas 합니다. Visual Studio에서 IntelliSense를 사용할 수 있습니다 [요약 정보](/visualstudio/ide/using-intellisense#quick-info) 이러한 typedefs 및 매크로 정의 항목을 참조 하는 기능입니다. 관심 단어 위로 마우스를 가져가서 또는 선택 하 고 키를 눌러 **Ctrl**+**K**를 **Ctrl**+**합니까** 에 대 한는 정의 포함 하는 작은 팝업 창입니다. 자세한 내용은 [IntelliSense 사용](/visualstudio/ide/using-intellisense)을 참조하세요. 매개 변수 및 반환 형식을 사용할 경우가 많습니다 *SAL 주석을* 수 있도록 프로그래밍 오류 catch 합니다. 자세한 내용은 [Reduce C SAL 주석을 사용 하 여 /C++ 코드 결함](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)합니다.
 
 1. Windows 데스크톱 프로그램 필요 &lt;windows.h >. &lt;tchar.h > 정의 `TCHAR` 궁극적으로 확인 되는 매크로를 **wchar_t** 유니코드 기호가 프로젝트에 정의 된 경우 그렇지 않은 경우 확인 **char**합니다.  TCHAR 필요 하 고를 사용할 수 없는 항상를 빌드하는 경우 사용 하도록 설정 하는 유니코드를 사용 하 여 **wchar_t** 직접.
 
@@ -119,7 +119,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    #include <tchar.h>
    ```
 
-1. `WinMain` 함수 이외에 모든 Windows 데스크톱 응용 프로그램에는 창 프로시저 함수도 있어야 합니다. 이 함수 이름은 일반적으로 `WndProc` 하지만 원하는 이름을 지정할 수 있습니다. `WndProc` 에 다음 구문이 있습니다.
+1. `WinMain` 함수 이외에 모든 Windows 데스크톱 응용 프로그램에는 창 프로시저 함수도 있어야 합니다. 이 함수 이름은 일반적으로 `WndProc` 하지만 원하는 이름을 지정할 수 있습니다. `WndProc` 에는 다음 구문이 있습니다.
 
    ```cpp
    LRESULT CALLBACK WndProc(

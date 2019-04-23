@@ -7,10 +7,10 @@ helpviewer_keywords:
 - _writecr0 intrinsic
 ms.assetid: a143d08d-0333-4e1b-91b4-4acb2ae91b5a
 ms.openlocfilehash: 24d9ffe0e07269fedf19f90a7c66a07e3c5e7d3e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59039386"
 ---
 # <a name="writecr0"></a>__writecr0
@@ -29,7 +29,7 @@ void writecr0(
 
 #### <a name="parameters"></a>매개 변수
 
-*데이터*<br/>
+*Data*<br/>
 [in] CR0 레지스터에 쓸 값입니다.
 
 ## <a name="requirements"></a>요구 사항

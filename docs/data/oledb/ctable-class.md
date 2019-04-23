@@ -14,10 +14,10 @@ helpviewer_keywords:
 - Open method
 ms.assetid: f13fdaa3-e198-4557-977d-54b0bbc3454d
 ms.openlocfilehash: fab1ba2e496f4945eb56c0a67b833f6bf063404e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038776"
 ---
 # <a name="ctable-class"></a>CTable 클래스
@@ -82,7 +82,7 @@ HRESULT Open(const CSession& session,
 
 #### <a name="parameters"></a>매개 변수
 
-*세션*<br/>
+*session*<br/>
 [in] 테이블 열려 있는 세션입니다.
 
 *wszTableName*<br/>
@@ -110,5 +110,5 @@ HRESULT Open(const CSession& session,
 
 ## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 메뉴 편집기 (c + +)
+title: 메뉴 편집기 (C++)
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.menu.F1
@@ -40,13 +40,13 @@ helpviewer_keywords:
 - menus [C++], deleting
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
 ms.openlocfilehash: b5d809fa4e0f608d4c0e6cbdaf8697688c6d3f9c
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037278"
 ---
-# <a name="menu-editor-c"></a>메뉴 편집기 (c + +)
+# <a name="menu-editor-c"></a>메뉴 편집기 (C++)
 
 메뉴를 통해 논리적이고 찾기 쉬운 방식으로 명령을 정렬할 수 있습니다. 사용 하 여 합니다 **메뉴 편집기**, 만들 수 있습니다 및 완성 된 응용 프로그램의 편집 메뉴는 밀접 하 게 메뉴 모음을 사용 하 여 직접 작업 하 여 유사 합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: vararg (c + + COM 특성)
+title: vararg (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.vararg
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - vararg attribute
 ms.assetid: 20fc3244-18e9-411c-990e-d5b4fa29a570
 ms.openlocfilehash: a433522b78424c48c4afe754f7b8337e3952dc8e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037344"
 ---
 # <a name="vararg"></a>vararg
@@ -25,7 +25,7 @@ ms.locfileid: "59037344"
 
 ## <a name="remarks"></a>설명
 
-합니다 **vararg** c + + 특성에 동일한 기능을 합니다 [vararg](/windows/desktop/Midl/vararg) MIDL 특성입니다.
+**vararg** C++ 특성에 동일한 기능을 합니다 [vararg](/windows/desktop/Midl/vararg) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

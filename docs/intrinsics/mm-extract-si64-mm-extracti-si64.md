@@ -10,10 +10,10 @@ helpviewer_keywords:
 - _mm_extract_si64 intrinsic
 ms.assetid: 459fdd72-cc54-4ee5-bbd5-d2c6067a88e7
 ms.openlocfilehash: e77ca5589ed50a4199921603afec1d9888c6cca5
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59040214"
 ---
 # <a name="mmextractsi64-mmextractisi64"></a>_mm_extract_si64, _mm_extracti_si64
@@ -47,7 +47,7 @@ __m128i _mm_extracti_si64(
 *길이*<br/>
 [in] 추출 필드의 길이 지정 하는 정수입니다.
 
-*인덱스*<br/>
+*Index*<br/>
 [in] 추출 필드의 인덱스를 지정 하는 정수
 
 ## <a name="return-value"></a>반환 값

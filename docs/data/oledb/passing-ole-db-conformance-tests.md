@@ -9,10 +9,10 @@ helpviewer_keywords:
 - OLE DB providers, testing
 ms.assetid: d1a4f147-2edd-476c-b452-0e6a0ac09891
 ms.openlocfilehash: 9f78b16bc30651560137a39286460a8e5ceccd40
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59036999"
 ---
 # <a name="passing-ole-db-conformance-tests"></a>OLE DB 적합성 테스트 통과
@@ -21,7 +21,7 @@ Data Access SDK에는 공급자를 일관 되 게 하려면 OLE DB 적합성 테
 
 ## <a name="running-the-conformance-tests"></a>규칙 테스트 실행
 
-Visual c + + 6.0 OLE DB 공급자 템플릿 다양 한 값과 속성을 확인할 수 있도록 후크 함수를 추가 합니다. 이러한 함수 중 대부분은 규칙 테스트에 대 한 응답에 추가 되었습니다.
+시각적 개체의 C++ 6.0에서는 OLE DB 공급자 템플릿 다양 한 값과 속성을 확인할 수 있도록 함수를 후크를 추가 합니다. 이러한 함수 중 대부분은 규칙 테스트에 대 한 응답에 추가 되었습니다.
 
 > [!NOTE]
 > OLE DB 적합성 테스트 통과를 공급자에 대해 여러 유효성 검사 함수를 추가 해야 합니다.

@@ -1,5 +1,5 @@
 ---
-title: C + + 릴리스 빌드-Visual Studio
+title: C++릴리스 빌드-Visual Studio
 ms.date: 12/10/2018
 helpviewer_keywords:
 - debugging [C++], release builds
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - debug builds, converting to release build
 ms.assetid: fa9a78fa-f4b5-4722-baf4-aec655c4ff0f
 ms.openlocfilehash: cf11e63354502be000ba5f7259d9e36dfa774060
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59038164"
 ---
 # <a name="release-builds"></a>릴리스 빌드
@@ -23,7 +23,7 @@ ms.locfileid: "59038164"
 [릴리스 빌드 문제 해결](fixing-release-build-problems.md)<br/>
 [ASSERT 대신 VERIFY 사용](using-verify-instead-of-assert.md)<br/>
 [디버그 빌드를 사용한 메모리 덮어쓰기 확인](using-the-debug-build-to-check-for-memory-overwrite.md)<br/>
-[방법: 릴리스 빌드 디버깅](how-to-debug-a-release-build.md)<br/>
+[방법: 릴리스 빌드 디버그](how-to-debug-a-release-build.md)<br/>
 [메모리 덮어쓰기 확인](checking-for-memory-overwrites.md)<br/>
 [코드 최적화](optimizing-your-code.md)<br/>
 

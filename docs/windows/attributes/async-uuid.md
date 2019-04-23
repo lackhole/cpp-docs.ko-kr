@@ -1,5 +1,5 @@
 ---
-title: async_uuid (c + + COM 특성)
+title: async_uuid (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.async_uuid
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - async_uuid attribute
 ms.assetid: 235cb0d7-be58-4dd9-983c-e2a21bbc42c6
 ms.openlocfilehash: 4c2bca9165d8b23f8cfa4f0f5523c882fd2f52bf
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035798"
 ---
 # <a name="asyncuuid"></a>async_uuid
@@ -30,7 +30,7 @@ MIDL 컴파일러에 지시 합니다 COM 인터페이스의 동기 및 비동�
 
 ## <a name="remarks"></a>설명
 
-합니다 **async_uuid** c + + 특성에 동일한 기능을 합니다 [async_uuid](/windows/desktop/Midl/async-uuid) MIDL 특성입니다.
+**async_uuid** C++ 특성에 동일한 기능을 합니다 [async_uuid](/windows/desktop/Midl/async-uuid) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

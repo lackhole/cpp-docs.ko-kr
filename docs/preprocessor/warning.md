@@ -1,5 +1,5 @@
 ---
-title: 경고
+title: warning
 ms.date: 11/04/2016
 f1_keywords:
 - warning_CPP
@@ -11,10 +11,10 @@ helpviewer_keywords:
 - warning pragma
 ms.assetid: 8e9a0dec-e223-4657-b21d-5417ebe29cc8
 ms.openlocfilehash: 1341472af22582635207a2bdff93b4367fd59330
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59037752"
 ---
 # <a name="warning-pragma"></a>경고 Pragma
@@ -37,10 +37,10 @@ ms.locfileid: "59037752"
 |------------------------|-------------|
 |*1, 2, 3, 4*|주어진 수준을 지정된 경고에 적용합니다. 기본적으로 해제되어 있는 지정된 경고를 설정하기도 합니다.|
 |*default*|경고 동작을 기본값으로 다시 설정합니다. 기본적으로 해제되어 있는 지정된 경고를 설정하기도 합니다. 문서화된 기본 수준에서 경고가 생성됩니다.<br /><br /> 자세한 내용은 [Compiler Warnings That Are Off by Default](../preprocessor/compiler-warnings-that-are-off-by-default.md)을 참조하세요.|
-|*사용 안 함*|지정된 경고 메시지를 생성하지 마십시오.|
-|*오류*|지정된 경고를 오류로 보고합니다.|
+|*disable*|지정된 경고 메시지를 생성하지 마십시오.|
+|*error*|지정된 경고를 오류로 보고합니다.|
 |*once*|지정된 메시지를 한 번만 표시합니다.|
-|*표시 안 함*|pragma의 현재 상태를 스택에 푸시하고 다음 줄에 지정된 경고를 비활성화한 후 pragma 상태가 다시 설정되도록 경고 스택을 표시합니다.|
+|*suppress*|pragma의 현재 상태를 스택에 푸시하고 다음 줄에 지정된 경고를 비활성화한 후 pragma 상태가 다시 설정되도록 경고 스택을 표시합니다.|
 
 다음 코드 문에서는 `warning-number-list` 매개 변수가 경고 번호를 여러 개 포함할 수 있으며 같은 pragma 지시문에 여러 `warning-specifier` 매개 변수를 지정할 수 있음을 보여 줍니다.
 
