@@ -1,5 +1,5 @@
 ---
-title: 구현 (c + + COM 특성)
+title: 구현 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.implements
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
 ms.openlocfilehash: 9425f998f0e8fbe5f16e6eb136e00ba3fb7bd5d9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033685"
 ---
 # <a name="implements-c"></a>implements(C++)
@@ -26,10 +26,10 @@ IDL coclass의 구성원으로 강제 적용 되는 디스패치 인터페이스
 
 ### <a name="parameters"></a>매개 변수
 
-*인터페이스*<br/>
+*interfaces*<br/>
 쉼표로 구분한 목록 IDL coclass 소속 될 인터페이스입니다. 단일 인터페이스를 지정 하는 간단한 메서드는 **구현 (** *interface_name* **)** 합니다.
 
-*dispinterface*<br/>
+*dispinterfaces*<br/>
 쉼표로 구분한 목록 IDL coclass 소속 될 dispinterface입니다. 단일 dispinterface를 지정 하는 간단한 메서드는 **구현 (dispinterface =** *dispinterface_name* **)** 합니다.
 
 ## <a name="remarks"></a>설명
@@ -51,7 +51,7 @@ IDL coclass의 구성원으로 강제 적용 되는 디스패치 인터페이스
 
 ## <a name="example"></a>예제
 
-다음 예제는 세 부분으로 이루어져:.idl 파일 및 해당 연결 된.h 파일과 c + + 파일입니다.
+다음 예제는 세 부분으로 이루어져:.idl 파일 및 연결 된.h 파일 및 C++ 파일입니다.
 
 컴파일러를 사용할 수 있는 다음.idl 파일을 가정 합니다.
 

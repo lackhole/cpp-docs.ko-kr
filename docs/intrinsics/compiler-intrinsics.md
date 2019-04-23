@@ -8,10 +8,10 @@ helpviewer_keywords:
 - cl.exe compiler, intrinsics
 ms.assetid: 48bb9929-7d78-4fd8-a092-ae3c9f971858
 ms.openlocfilehash: 9a014e870d731d7e7d443c3bfefd66884aa50d5d
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029280"
 ---
 # <a name="compiler-intrinsics"></a>컴파일러 내장 함수
@@ -48,5 +48,5 @@ ms.locfileid: "59029280"
 
 [ARM 어셈블러 참조](../assembler/arm/arm-assembler-reference.md)<br/>
 [Microsoft 매크로 어셈블러 참조](../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)

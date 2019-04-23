@@ -1,5 +1,5 @@
 ---
-title: '##elif, if, #else 및 #endif 지시문 (C/c + +)'
+title: '##elif, if, #else 및 #endif 지시문 (C /C++)'
 ms.date: 11/04/2016
 f1_keywords:
 - '#else'
@@ -22,10 +22,10 @@ helpviewer_keywords:
 - defined directive
 ms.assetid: c77a175f-6ca8-47d4-8df9-7bac5943d01b
 ms.openlocfilehash: 90fbab45c6408c30198c2a52a42545718002cc11
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028093"
 ---
 # <a name="if-elif-else-and-endif-directives-cc"></a>#if, #elif, #else, and #endif 지시문 (C/C++)
@@ -97,7 +97,7 @@ ms.locfileid: "59028093"
 
 defined( `identifier` )
 
-정의 `identifier`
+defined `identifier`
 
 이 상수 식은 true (0이 아닌) 것으로 간주 됩니다는 *식별자* 현재 정의 된; 조건이 false 이면 그렇지 않은 경우 (0). 빈 텍스트로 정의된 식별자는 정의된 것으로 간주됩니다. 합니다 **정의** 지시문에서 사용할 수는 **#if** 및 **#elif** 지시문 되지만 다른 위치입니다.
 

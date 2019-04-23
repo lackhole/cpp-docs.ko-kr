@@ -1,5 +1,5 @@
 ---
-title: wire_marshal (c + + COM 특성)
+title: wire_marshal (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.wire_marshal
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - wire_marshal attribute
 ms.assetid: 244f9d72-776d-4ebd-b60a-cee600a126b5
 ms.openlocfilehash: d1d18336a20644338a50ab66c7fcb06959e5760a
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029864"
 ---
 # <a name="wiremarshal"></a>wire_marshal
@@ -25,7 +25,7 @@ ms.locfileid: "59029864"
 
 ## <a name="remarks"></a>설명
 
-합니다 **wire_marshal** c + + 특성에 동일한 기능을 합니다 [wire_marshal](/windows/desktop/Midl/wire-marshal) MIDL 특성입니다.
+**wire_marshal** C++ 특성에 동일한 기능을 합니다 [wire_marshal](/windows/desktop/Midl/wire-marshal) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -53,7 +53,7 @@ ms.locfileid: "59029864"
 
 |||
 |-|-|
-|**적용 대상**|**형식 정의**|
+|**적용 대상**|**typedef**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|

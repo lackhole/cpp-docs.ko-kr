@@ -18,10 +18,10 @@ helpviewer_keywords:
 - records [C++], editing
 ms.assetid: cab43d43-235a-4bed-ac05-67d10e94f34e
 ms.openlocfilehash: e5fc6ad2a1fe00367cd8a0b1c53ac914b95018ab
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033211"
 ---
 # <a name="recordset-how-addnew-edit-and-delete-work-odbc"></a>레코드 집합: AddNew를 편집 하 고 작업 (ODBC)를 삭제 하는 방법
@@ -161,4 +161,4 @@ ODBC 드라이버에서 지 원하는 경우는 `::SQLSetPos` MFC ODBC API 함�
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [레코드 집합: 업데이트 (ODBC)에 대 한 자세한 정보](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>
-[RFX](../../data/odbc/record-field-exchange-rfx.md)
+[RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)

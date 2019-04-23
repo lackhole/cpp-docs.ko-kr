@@ -9,10 +9,10 @@ helpviewer_keywords:
 - pragmas, runtime_checks
 ms.assetid: ae50b43f-f88d-47ad-a2db-3389e9e7df5b
 ms.openlocfilehash: 44c26fb90a2d2f9ba78ec7dba7cceed65a4b4ed7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027085"
 ---
 # <a name="runtimechecks"></a>runtime_checks
@@ -36,7 +36,7 @@ ms.locfileid: "59027085"
 
 |매개 변수|런타임 검사 형식|
 |--------------------|-----------------------------|
-|*초*|스택(프레임)을 확인하도록 설정합니다.|
+|*s*|스택(프레임)을 확인하도록 설정합니다.|
 |*c*|데이터 손실이 발생하는 더 작은 데이터 형식에 값이 할당되는 경우 이를 보고합니다.|
 |*u*|정의되기 전에 변수를 사용하면 보고합니다.|
 

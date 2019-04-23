@@ -3,10 +3,10 @@ title: 데스크톱 응용 프로그램(Visual C++)
 ms.date: 11/04/2016
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
 ms.openlocfilehash: 1242878c6b79616aaadb6a176cd29deeb89a7daf
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
-ms.translationtype: MT
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033117"
 ---
 # <a name="desktop-applications-visual-c"></a>데스크톱 응용 프로그램(Visual C++)
@@ -37,22 +37,22 @@ C++로 만든 Windows 데스크톱 응용 프로그램이라면 CRT(C 런타임)
 
 |제목|설명|
 |-----------|-----------------|
-|[C + +에서 Windows 콘솔 응용 프로그램](console-applications-in-visual-cpp.md)|콘솔 앱에 대한 정보를 얻을 수 있습니다. Win32 또는 Win64 콘솔 애플리케이션에는 고유의 창이나 메시지 루프가 없습니다. 콘솔 창에서 실행되고 입력 및 출력이 명령줄을 통해 처리됩니다.|
-|[연습: Windows 데스크톱 응용 프로그램 (c + +) 만들기](walkthrough-creating-windows-desktop-applications-cpp.md)|간단한 Windows 데스크톱 응용 프로그램을 만듭니다.|
+|[C++의 Windows 콘솔 응용 프로그램](console-applications-in-visual-cpp.md)|콘솔 앱에 대한 정보를 얻을 수 있습니다. Win32 또는 Win64 콘솔 애플리케이션에는 고유의 창이나 메시지 루프가 없습니다. 콘솔 창에서 실행되고 입력 및 출력이 명령줄을 통해 처리됩니다.|
+|[연습: Windows 데스크톱 애플리케이션 만들기(C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|간단한 Windows 데스크톱 응용 프로그램을 만듭니다.|
 |[빈 Windows 데스크톱 응용 프로그램 만들기](creating-an-empty-windows-desktop-application.md)|기본 파일이 지정 된 Windows 데스크톱 프로젝트를 만드는 방법입니다.|
 |[빈 Win32 응용 프로그램에 파일 추가](adding-files-to-an-empty-win32-applications.md)|빈 프로젝트에 파일을 추가 하는 방법.|
 |[리소스 파일 작업](working-with-resource-files.md)|데스크톱 응용 프로그램에 이미지, 아이콘, 문자열 테이블 및 기타 리소스를 추가 하는 방법입니다.|
-|[DirectX를 사용하여 게임을 만들기 위한 리소스(C++)](resources-for-creating-a-game-using-directx.md)|C++을 이용한 게임 만들기에 대한 콘텐츠가 연결되어 있습니다.|
+|[DirectX (C++)를 사용하여 게임을 만들기 위한 리소스](resources-for-creating-a-game-using-directx.md)|C++을 이용한 게임 만들기에 대한 콘텐츠가 연결되어 있습니다.|
 |[연습: 정적 라이브러리 만들기 및 사용](walkthrough-creating-and-using-a-static-library-cpp.md)|.lib 이진 파일을 만드는 방법입니다.|
-|[방법: Windows 10을 사용 하 여 Windows 데스크톱 응용 프로그램에서 SDK](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK를 사용하여 빌드할 프로젝트를 설정하는 단계를 설명합니다.|
+|[방법: Windows 데스크톱 애플리케이션에서 Windows 10 SDK 사용](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK를 사용하여 빌드할 프로젝트를 설정하는 단계를 설명합니다.|
 
 ## <a name="related-articles"></a>관련 문서
 
 |제목|설명|
 |-----------|-----------------|
 |[Windows Development](/windows/desktop/index)|Windows API 및 COM에 대한 정보를 제공합니다. 일부 Windows API 및 타사 DLL이 COM 개체로 구현됩니다.|
-|[Hilo: Windows 7 용 c + + 응용 프로그램 개발](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)|Windows Animation 및 Direct2D를 사용하는 리치 클라이언트 Windows 데스크톱 애플리케이션을 만들어서 캐러셀 기반 사용자 인터페이스를 만드는 방법에 대해 설명합니다.  이 자습서에서는 Windows 7 이후 업데이트되지 않았지만 여전히 Win32 프로그래밍에 대한 소개를 제공합니다.|
-|[C++를 이용한 Windows 프로그래밍 개요](overview-of-windows-programming-in-cpp.md)|Windows 데스크톱 C++에서 프로그래밍의 주요 기능을 설명 합니다.|
+|[Hilo: 개발 C++ Windows 7 용 응용 프로그램](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)|Windows Animation 및 Direct2D를 사용하는 리치 클라이언트 Windows 데스크톱 애플리케이션을 만들어서 캐러셀 기반 사용자 인터페이스를 만드는 방법에 대해 설명합니다.  이 자습서에서는 Windows 7 이후 업데이트되지 않았지만 여전히 Win32 프로그래밍에 대한 소개를 제공합니다.|
+|[C++의 Windows 프로그래밍 개요](overview-of-windows-programming-in-cpp.md)|Windows 데스크톱 C++에서 프로그래밍의 주요 기능을 설명 합니다.|
 
 ## <a name="see-also"></a>참고자료
 

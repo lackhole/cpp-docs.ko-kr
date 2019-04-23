@@ -7,10 +7,10 @@ helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
 ms.openlocfilehash: 227e67696e679452a9c6c0e18c04e3d918f7a93f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59029436"
 ---
 # <a name="custom-c"></a>custom(C++)
@@ -36,7 +36,7 @@ Variant로 입력할 수 있는 값입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **사용자 지정** c + + 특성 정보를 형식 라이브러리에 배치 하면 됩니다. 형식 라이브러리에서 사용자 지정 값을 읽는 도구를 해야 합니다.
+합니다 **사용자 지정** C++ 특성 정보를 형식 라이브러리에 배치 하면 됩니다. 형식 라이브러리에서 사용자 지정 값을 읽는 도구를 해야 합니다.
 
 합니다 **사용자 지정** 특성이 동일한 기능을 합니다 [사용자 지정](/windows/desktop/Midl/custom) MIDL 특성입니다.
 

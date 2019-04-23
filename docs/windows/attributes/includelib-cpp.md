@@ -1,5 +1,5 @@
 ---
-title: includelib (c + + COM 특성)
+title: includelib (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.includelib
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - includelib attribute
 ms.assetid: cd90ea6e-5ae8-4f11-b8d1-662db95412b2
 ms.openlocfilehash: 57f039eeae527dd03884b12e7d9eb424d87f597f
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59030002"
 ---
 # <a name="includelib-c"></a>includelib(C++)
@@ -30,7 +30,7 @@ ms.locfileid: "59030002"
 
 ## <a name="remarks"></a>설명
 
-합니다 **includelib** c + + 특성을 한 후 생성 된.idl 파일에 포함 될.idl 또는.h 파일을 사용 하면는 `importlib` 문입니다.
+합니다 **includelib** C++ 특성을 한 후 생성 된.idl 파일에 포함 될.idl 또는.h 파일을 사용 하면 합니다 `importlib` 문입니다.
 
 ## <a name="example"></a>예제
 

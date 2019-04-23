@@ -13,10 +13,10 @@ helpviewer_keywords:
 - OLE DB consumer templates, classes
 ms.assetid: cfc7f698-1a0e-4a09-a4d3-ccb99e6654fe
 ms.openlocfilehash: fb0b24798b3f2682bbbec7624df34b40a2a9f4cc
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032273"
 ---
 # <a name="ole-db-consumer-templates-reference"></a>OLE DB 소비자 템플릿 참조
@@ -86,7 +86,7 @@ OLE DB 소비자 템플릿은 다음 클래스를 포함 합니다. 에 대 한 
 [CNoRowset](../../data/oledb/cnorowset-class.md)<br/>
 명령 행 집합을 반환 하지 않는 경우 템플릿 인수로 사용할 수 있습니다.
 
-[cRestrictions](../../data/oledb/crestrictions-class.md)<br/>
+[CRestrictions](../../data/oledb/crestrictions-class.md)<br/>
 스키마 행 집합에 대 한 제한을 지정 하는 데 사용 합니다.
 
 [CRowset](../../data/oledb/crowset-class.md)<br/>

@@ -7,10 +7,10 @@ helpviewer_keywords:
 - preprocessor, grammar
 ms.assetid: 6cd33fad-0b08-4592-9be8-7359c43e24e9
 ms.openlocfilehash: 6177cf5fddba549e410842ef3f270edcc13d4782
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032416"
 ---
 # <a name="preprocessor-grammar"></a>전처리기 문법
@@ -84,8 +84,8 @@ ms.locfileid: "59032416"
 &nbsp;&nbsp;&nbsp;&nbsp;임의의 텍스트 시퀀스
 
 > [!NOTE]
-> 다음 비 단말에는 확장 되어는 [어휘 규칙](../cpp/lexical-conventions.md) 섹션을 *c + + 언어 참조*: *상수*, *상수 식* , *식별자*합니다 *키워드*를 *연산자*, 및 *문장 부호*합니다.
+> 다음 비 단말에는 확장 되어는 [어휘 규칙](../cpp/lexical-conventions.md) 섹션을  *C++ 언어 참조*: *상수*를  *상수 식*, *식별자*를 *키워드*를 *연산자*, 및 *문장 부호*합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[문법 요약 (C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+[문법 요약(C/C++)](../preprocessor/grammar-summary-c-cpp.md)

@@ -31,10 +31,10 @@ helpviewer_keywords:
 - GetColumnInfo method
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
 ms.openlocfilehash: af38695ccee79e539782dc3f695a567f72fa41c7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033906"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset 클래스
@@ -67,7 +67,7 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 
 |||
 |-|-|
-|[바인딩](#bind)|바인딩을 만듭니다 (때 사용한 `bBind` 으로 지정 됩니다 **false** 에서 [ccommand:: Open](../../data/oledb/ccommand-open.md)).|
+|[Bind](#bind)|바인딩을 만듭니다 (때 사용한 `bBind` 으로 지정 됩니다 **false** 에서 [ccommand:: Open](../../data/oledb/ccommand-open.md)).|
 |[CAccessorRowset](#caccessorrowset)|생성자입니다.|
 |[닫기](#close)|행 집합 및 모든 접근자를 닫습니다.|
 |[FreeRecordMemory](#freerecordmemory)|해제 해야 하는 현재 레코드의 모든 열을 해제 합니다.|
@@ -156,5 +156,5 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 ## <a name="see-also"></a>참고자료
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

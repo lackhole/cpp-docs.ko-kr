@@ -1,5 +1,5 @@
 ---
-title: '#using 지시문 (C + + /cli CLI)'
+title: '#using 지시문 (C++/CLI)'
 ms.date: 10/18/2018
 f1_keywords:
 - friend_as_cpp
@@ -13,13 +13,13 @@ helpviewer_keywords:
 - preprocessor, directives
 ms.assetid: 870b15e5-f361-40a8-ba1c-c57d75c8809a
 ms.openlocfilehash: ddae6137e94e10f5701e1e7d0f8f7a7514b18662
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034263"
 ---
-# <a name="using-directive-ccli"></a>#using 지시문 (C + + /cli CLI)
+# <a name="using-directive-ccli"></a>#using 지시문 (C++/CLI)
 
 로 컴파일된 프로그램으로 메타 데이터를 가져옵니다 [/clr](../build/reference/clr-common-language-runtime-compilation.md)합니다.
 
@@ -31,8 +31,8 @@ ms.locfileid: "59034263"
 
 ### <a name="parameters"></a>매개 변수
 
-*파일*<br/>
-MSIL .dll, .exe, .netmodule 또는. obj 예를 들어 개체에 적용된
+*file*<br/>
+MSIL .dll, .exe, .netmodule 또는. obj 예를 들면 다음과 같습니다.
 
 `#using <MyComponent.dll>`
 

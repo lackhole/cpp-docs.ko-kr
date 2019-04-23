@@ -9,10 +9,10 @@ helpviewer_keywords:
 - ODBC [C++], RFX
 ms.assetid: f5ddfbf0-2901-48d7-9848-4fb84de3c7ee
 ms.openlocfilehash: 8630fab11728b0c0cd16eee5035df028a8382706
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032221"
 ---
 # <a name="record-field-exchange-rfx"></a>RFX
@@ -49,5 +49,5 @@ RFX에 대 한 고급, 필요한 경우 [레코드 필드 교환: RFX 작동 방
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [MFC ODBC 소비](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
-[MFC 애플리케이션 마법사, 데이터베이스 지원](../../mfc/reference/database-support-mfc-application-wizard.md)<br/>
+[MFC 응용 프로그램 마법사, 데이터베이스 지원](../../mfc/reference/database-support-mfc-application-wizard.md)<br/>
 [CRecordset 클래스](../../mfc/reference/crecordset-class.md)

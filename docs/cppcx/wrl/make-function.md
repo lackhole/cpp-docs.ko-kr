@@ -8,10 +8,10 @@ helpviewer_keywords:
 - Make function
 ms.assetid: 66704143-df99-4a95-904d-ed99607e1034
 ms.openlocfilehash: b45337ef773f93968570f62ab73c02d11fae88ff
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028249"
 ---
 # <a name="make-function"></a>Make 함수
@@ -209,7 +209,7 @@ ComPtr<T> Make();
 *arg5*<br/>
 인수 5 지정된 된 런타임 클래스에 전달 되는입니다.
 
-*a r g 6*<br/>
+*arg6*<br/>
 인수 6 지정된 된 런타임 클래스에 전달 되는입니다.
 
 *arg7*<br/>

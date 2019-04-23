@@ -239,10 +239,10 @@ helpviewer_keywords:
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
 ms.openlocfilehash: dc4f619fb0dba924693682c927247e809fe2cfe9
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032327"
 ---
 # <a name="crowset-class"></a>CRowset 클래스
@@ -273,7 +273,7 @@ class CRowset
 |-|-|
 |[AddRefRows](#addrefrows)|현재 행과 연결 된 참조 횟수를 증가.|
 |[닫기](#close)|행 및 현재 릴리스 `IRowset` 인터페이스입니다.|
-|[비교](#compare)|사용 하 여 책갈피 비교 하 여 두 [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85))합니다.|
+|[Compare](#compare)|사용 하 여 책갈피 비교 하 여 두 [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85))합니다.|
 |[CRowset](#crowset)|새로 만듭니다 `CRowset` 개체를 사용 하 여 연결 (선택 사항)는 `IRowset` 인터페이스 매개 변수로 제공 합니다.|
 |[삭제](#delete)|사용 하 여 행 집합에서 행을 삭제 [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85))합니다.|
 |[FindNextRow](#findnextrow)|지정한 책갈피를 다음에 나오는 다음 일치 하는 행을 찾습니다.|
@@ -282,7 +282,7 @@ class CRowset
 |[GetDataHere](#getdatahere)|지정된 된 버퍼에서 데이터를 검색합니다.|
 |[GetOriginalData](#getoriginaldata)|가장 최근에 풀에서 반입 되거나 보류 중인 변경 내용을 무시 하 고, 데이터 원본에 전송 된 데이터를 검색 합니다.|
 |[GetRowStatus](#getrowstatus)|모든 행의 상태를 반환 합니다.|
-|[Insert](#insert)|만들고 사용 하 여 새 행 삽입 [IRowsetChange:InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85))합니다.|
+|[삽입](#insert)|만들고 사용 하 여 새 행 삽입 [IRowsetChange:InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85))합니다.|
 |[IsSameRow](#issamerow)|현재 행과 지정된 된 행을 비교합니다.|
 |[MoveFirst](#movefirst)|다음 인출 위치를 처음 위치로 다시 설정합니다.|
 |[MoveLast](#movelast)|마지막 레코드로 이동합니다.|
@@ -348,10 +348,10 @@ HRESULT Compare(const CBookmarkBase& bookmark1,
 
 #### <a name="parameters"></a>매개 변수
 
-*책갈피1*<br/>
+*Bookmark1*<br/>
 [in] 비교할 첫 번째 책갈피입니다.
 
-*책갈피2*<br/>
+*Bookmark2*<br/>
 [in] 비교할 두 번째 책갈피입니다.
 
 *pComparison*<br/>
@@ -741,7 +741,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 #### <a name="parameters"></a>매개 변수
 
-*책갈피(bookmark)*<br/>
+*bookmark*<br/>
 [in] 데이터를 인출 하려는 위치를 표시 하는 책갈피입니다.
 
 *lSkip*<br/>
@@ -940,5 +940,5 @@ HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,
 [DBViewer 샘플](../../overview/visual-cpp-samples.md)<br/>
 [MultiRead 샘플](../../overview/visual-cpp-samples.md)<br/>
 [MultiRead 특성 샘플](../../overview/visual-cpp-samples.md)<br/>
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

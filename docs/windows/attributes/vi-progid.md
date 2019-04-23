@@ -1,5 +1,5 @@
 ---
-title: vi_progid (c + + COM 특성)
+title: vi_progid (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.vi_progid
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - vi_progid attribute
 ms.assetid: a52449be-b93e-4111-b883-44bb8da53261
 ms.openlocfilehash: 7050543c9acf3801a99d3e32e119325900bdb050
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033591"
 ---
 # <a name="viprogid"></a>vi_progid
@@ -32,7 +32,7 @@ Progid는 COM/ActiveX 개체를 식별 하는 데 클래스 식별자 (CLSID)의
 
 ## <a name="remarks"></a>설명
 
-합니다 **vi_progid** c + + 특성을 사용 하면 COM 개체에 대 한 버전 독립 ProgID를 지정 합니다. 형식은 ProgID *name1.name2.version*합니다. 버전 종속 ProgID 없는 *버전*합니다. 둘 다 지정할 수는 `progid` 하며 **vi_progid** 특성을 `coclass`. 지정 하지 않는 경우 **vi_progid**의 버전 독립 ProgID가 지정 된 값을 [progid](progid.md) 특성입니다.
+합니다 **vi_progid** C++ 특성을 사용 하면 COM 개체에 대 한 버전 독립 ProgID를 지정 합니다. 형식은 ProgID *name1.name2.version*합니다. 버전 종속 ProgID 없는 *버전*합니다. 둘 다 지정할 수는 `progid` 하며 **vi_progid** 특성을 `coclass`. 지정 하지 않는 경우 **vi_progid**의 버전 독립 ProgID가 지정 된 값을 [progid](progid.md) 특성입니다.
 
 **vi_progid** 의미 합니다 `coclass` 지정 하는 경우, 특성 **vi_progid**, 다릅니다 지정 하는 것을 `coclass` 및 **vi_progid** 특성입니다.
 

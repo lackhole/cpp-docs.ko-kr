@@ -9,10 +9,10 @@ helpviewer_keywords:
 - columns [C++], binding to recordsets
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
 ms.openlocfilehash: c2f2a6a6696f46fb5b8f2777c6c911269c9e7a80
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035133"
 ---
 # <a name="recordset-dynamically-binding-data-columns-odbc"></a>레코드 집합: 동적으로 데이터 열 바인딩 (ODBC)
@@ -91,10 +91,10 @@ ms.locfileid: "59035133"
 
 |||
 |-|-|
-|**현재 테이블 열**| (그림에서 1 목록) 목록 데이터 원본에 테이블의 현재 열입니다. 이 목록에는 현재 레코드 집합의 바인딩된 열 목록과 일치 될 수 있습니다.|
+|**Current-Table-Columns**| (그림에서 1 목록) 목록 데이터 원본에 테이블의 현재 열입니다. 이 목록에는 현재 레코드 집합의 바인딩된 열 목록과 일치 될 수 있습니다.|
 |**Bound-Recordset-Columns**| (그림에서 2 목록) 레코드 집합의 열 목록이 바인딩됩니다. 이러한 열 RFX 문을에 이미 있는 프로그램 `DoFieldExchange` 함수입니다.|
 |**열-에-바인딩-동적**| (그림에서 3 목록) 테이블에에서만 있는 레코드 집합에 없는 열 목록이 있습니다. 이 동적으로 바인딩할 열.|
-|**동적 열 값**| (그림에서 4 목록) 동적 바인딩 열에서 값에 대 한 저장소를 포함 하는 목록을 검색 합니다. 이 목록의 요소에 열-에-바인딩-동적으로 한 일에 해당합니다.|
+|**Dynamic-Column-Values**| (그림에서 4 목록) 동적 바인딩 열에서 값에 대 한 저장소를 포함 하는 목록을 검색 합니다. 이 목록의 요소에 열-에-바인딩-동적으로 한 일에 해당합니다.|
 
 ###  <a name="_core_building_your_lists"></a> 목록 만들기
 

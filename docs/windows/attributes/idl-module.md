@@ -1,5 +1,5 @@
 ---
-title: idl_module (c + + COM 특성)
+title: idl_module (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.idl_module
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - idl_module attribute
 ms.assetid: 3578b337-e38a-4334-b747-15404c02dbc0
 ms.openlocfilehash: 80e4909a61b5b53ecde19471f2c838dd4c425874
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034980"
 ---
 # <a name="idlmodule"></a>idl_module
@@ -55,7 +55,7 @@ function declaration
 
 ## <a name="remarks"></a>설명
 
-합니다 **idl_module** c + + 특성.dll 파일 로부터 가져올 수 있게 하는.dll 파일에서 진입점을 지정할 수 있습니다.
+합니다 **idl_module** C++ 특성을 사용 하면 진입점.dll 파일 로부터 가져올 수 있게 하는.dll 파일을 지정 합니다.
 
 **idl_module** 특성에 유사한 기능을 [모듈](/windows/desktop/Midl/module) MIDL 특성입니다.
 

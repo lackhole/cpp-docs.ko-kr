@@ -7,14 +7,14 @@ helpviewer_keywords:
 - implementation_only attribute
 ms.assetid: d8cabc86-4425-45a0-9587-d57536980088
 ms.openlocfilehash: c1435ca74ac2b5a73c308592b1affe6fca097d1b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026658"
 ---
 # <a name="implementationonly"></a>implementation_only
-**C++ 전용**
+**C++특정**
 
 .tlh 헤더 파일(기본 헤더 파일)을 생성하지 않습니다.
 
@@ -35,9 +35,9 @@ implementation_only
 > [!NOTE]
 > **implementation_only** 특성 하나 `#import` 문을 다른와 함께 사용 해야 합니다. `#import` 문에서 동일한 형식 라이브러리를 사용 하 여를 `no_implementation` 특성입니다. 이렇게 하지 않으면 컴파일러 오류가 생성됩니다. 래퍼 클래스 정의에서 생성 되므로이 `#import` 문을 사용 하 여를 `no_implementation` 특성으로 생성 된 구현을 컴파일하는 데 필요 합니다 **implementation_only** 특성.
 
-**C++ 전용 종료**
+**최종 C++ 특정**
 
 ## <a name="see-also"></a>참고자료
 
 [#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import 지시문](../preprocessor/hash-import-directive-cpp.md)
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

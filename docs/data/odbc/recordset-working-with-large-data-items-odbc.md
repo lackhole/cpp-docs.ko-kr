@@ -9,10 +9,10 @@ helpviewer_keywords:
 - CLongBinary class, using in recordsets
 ms.assetid: 3e80b5a8-b6e7-43c6-a816-e54befc513a3
 ms.openlocfilehash: 3ba8d4af5b0781c425dd3b1223e2208b279f055e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033046"
 ---
 # <a name="recordset-working-with-large-data-items-odbc"></a>레코드 집합: 대형 데이터 항목 (ODBC)를 사용 하 여 작업
@@ -42,7 +42,7 @@ ms.locfileid: "59033046"
 
 ##  <a name="_core_the_cbytearray_class"></a> CByteArray 클래스
 
-`CByteArray` MFC 컬렉션 클래스 중 하나입니다. `CByteArray` 개체는 바이트의 동적 배열을 저장-필요에 따라 배열 커질 수 있습니다. 클래스는 기본 제공 c + + 배열과 마찬가지로 인덱스가 빠른 액세스를 제공 합니다. `CByteArray` 개체 직렬화 하 고 진단용으로 덤프할 수 있습니다. 가져오기 및 지정 된 바이트를 설정, 삽입 및 바이트를 추가 및 1 바이트 또는 모든 바이트를 제거 하기 위한 멤버 함수를 제공 하는 클래스입니다. 이러한 기능 이진 데이터를 더 쉽게 구문 분석을 확인 합니다. 예를 들어 이진 개체 OLE 개체 이면 실제 개체에 연결할 일부 헤더 바이트를 통해 작업 하는 것이 해야 합니다.
+`CByteArray` MFC 컬렉션 클래스 중 하나입니다. `CByteArray` 개체는 바이트의 동적 배열을 저장-필요에 따라 배열 커질 수 있습니다. 클래스는 빠른 액세스 인덱스로, 기본 제공와 마찬가지로 C++ 배열입니다. `CByteArray` 개체 직렬화 하 고 진단용으로 덤프할 수 있습니다. 가져오기 및 지정 된 바이트를 설정, 삽입 및 바이트를 추가 및 1 바이트 또는 모든 바이트를 제거 하기 위한 멤버 함수를 제공 하는 클래스입니다. 이러한 기능 이진 데이터를 더 쉽게 구문 분석을 확인 합니다. 예를 들어 이진 개체 OLE 개체 이면 실제 개체에 연결할 일부 헤더 바이트를 통해 작업 하는 것이 해야 합니다.
 
 ##  <a name="_core_using_cbytearray_in_recordsets"></a> CByteArray를 사용 하 여 레코드 집합
 
@@ -63,4 +63,4 @@ A [CLongBinary](../../mfc/reference/clongbinary-class.md) 주위 간단한 셸 �
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [레코드 집합: 합계 및 다른 집계 결과 (ODBC) 구하기](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
-[RFX](../../data/odbc/record-field-exchange-rfx.md)
+[RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)

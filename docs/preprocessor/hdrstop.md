@@ -9,10 +9,10 @@ helpviewer_keywords:
 - pragmas, hdrstop
 ms.assetid: 5ea8370a-10d1-4538-ade6-4c841185da0e
 ms.openlocfilehash: 1590b5916a8d9c00b6e988bacc7cd857c29d6775
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59035217"
 ---
 # <a name="hdrstop"></a>hdrstop
@@ -28,9 +28,9 @@ ms.locfileid: "59035217"
 
 합니다 *filename* 사용 하거나 만들 미리 컴파일된 헤더 파일의 이름입니다 (여부에 따라 [/Yu](../build/reference/yu-use-precompiled-header-file.md) 또는 [/Yc](../build/reference/yc-create-precompiled-header-file.md) 지정). 하는 경우 *filename* 에 경로 지정 없는 미리 컴파일된 헤더 파일을 소스 파일과 동일한 디렉터리에 대 한 것으로 간주 됩니다.
 
-C 또는 c + + 파일을 포함 하는 경우는 **hdrstop** pragma로 컴파일될 때 `/Yc`, 컴파일러가 pragma의 위치까지 컴파일 상태를 저장 합니다. pragma 뒤에 오는 모든 코드의 컴파일된 상태는 저장되지 않습니다.
+경우 C 또는 C++ 파일에는 **hdrstop** pragma로 컴파일될 때 `/Yc`, 컴파일러가 pragma의 위치까지 컴파일 상태를 저장 합니다. pragma 뒤에 오는 모든 코드의 컴파일된 상태는 저장되지 않습니다.
 
-사용 하 여 *filename* 컴파일된 상태가 저장 되는 미리 컴파일된 헤더 파일 이름입니다. 사이 공백을 **hdrstop** 하 고 *filename* 선택 사항입니다. 에 지정 된 파일 이름을 **hdrstop** pragma는 문자열 이므로 모든 C 또는 c + + 문자열의 제약 조건을 적용 합니다. 특히, 이름을 따옴표로 묶고 이스케이프 문자(백슬래시)를 사용하여 디렉터리 이름을 지정해야 합니다. 예를 들어:
+사용 하 여 *filename* 컴파일된 상태가 저장 되는 미리 컴파일된 헤더 파일 이름입니다. 사이 공백을 **hdrstop** 하 고 *filename* 선택 사항입니다. 파일 이름을 지정 합니다 **hdrstop** pragma는 문자열 이므로 모든 C의 제약 조건에 따라 또는 C++ 문자열. 특히, 이름을 따옴표로 묶고 이스케이프 문자(백슬래시)를 사용하여 디렉터리 이름을 지정해야 합니다. 예를 들어:
 
 ```
 #pragma hdrstop( "c:\\projects\\include\\myinc.pch" )

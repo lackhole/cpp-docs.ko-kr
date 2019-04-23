@@ -1,5 +1,5 @@
 ---
-title: first_is (c + + COM 특성)
+title: first_is (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.first_is
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - first_is attribute
 ms.assetid: 89acbf56-3b38-4d44-83e8-1ce2f6f74ffd
 ms.openlocfilehash: 79ddcb3a3ca256af4c7c30536d65c820dcef2afe
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59033085"
 ---
 # <a name="firstis"></a>first_is
@@ -30,7 +30,7 @@ ms.locfileid: "59033085"
 
 ## <a name="remarks"></a>설명
 
-합니다 **first_is** c + + 특성에 동일한 기능을 합니다 [first_is](/windows/desktop/Midl/first-is) MIDL 특성입니다.
+**first_is** C++ 특성에 동일한 기능을 합니다 [first_is](/windows/desktop/Midl/first-is) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 

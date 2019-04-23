@@ -1,5 +1,5 @@
 ---
-title: 메뉴 명령 (c + +)
+title: 메뉴 명령 (C++)
 ms.date: 02/15/2019
 helpviewer_keywords:
 - menu items, properties
@@ -18,13 +18,13 @@ helpviewer_keywords:
 - Check Mnemonics command
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
 ms.openlocfilehash: c9abf46907c473d4cf6d9e945038f70aa75bfc48
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59026281"
 ---
-# <a name="menu-commands-c"></a>메뉴 명령 (c + +)
+# <a name="menu-commands-c"></a>메뉴 명령 (C++)
 
 아래 정보에 따라 구성 됩니다는 **메뉴** 에 표시 되는 속성을 [속성 창](/visualstudio/ide/reference/properties-window) 메뉴 명령을 선택 하면 합니다. 이러한 항목은 사전순 이지만 합니다 **속성** 창도 이러한 속성을 범주별으로 볼 수 있습니다.
 
@@ -71,7 +71,7 @@ MFC 응용 프로그램은 각 사용자가 선택할 수 있는 메뉴 명령�
 
 - 메뉴 명령과 상태 표시줄 MFC 응용 프로그램에서 텍스트 문자열을 사용 하 여 연결 하는 **메뉴 편집기**, 메뉴 명령을 선택 합니다. [속성 창](/visualstudio/ide/reference/properties-window)의 **프롬프트** 상자에 연결된 상태 표시줄 텍스트를 입력합니다.
 
-C + + 프로젝트에서 메뉴 및 메뉴 명령에 액세스 키 (사용자가 키보드를 사용 하 여 메뉴를 선택할 수 있도록 니모닉)를 할당할 수 있습니다.
+에 C++ 프로젝트를 메뉴 및 메뉴 명령 선택 키 (사용자가 키보드를 사용 하 여 메뉴를 선택할 수 있도록 니모닉)를 할당할 수 있습니다.
 
 - 메뉴 명령에 액세스 (바로 가기) 키를 할당할 앰퍼샌드를 입력 (`&`) 문자 앞에 메뉴 이름이 나 명령 이름 문자를 해당 액세스 키로 지정 합니다. 
 

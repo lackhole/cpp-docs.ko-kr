@@ -12,10 +12,10 @@ helpviewer_keywords:
 - builds [C++], custom build steps
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
 ms.openlocfilehash: fc12689148e3bf23c233e4656249625d1156f9a7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028508"
 ---
 # <a name="understanding-custom-build-steps-and-build-events"></a>사용자 지정 빌드 단계 및 빌드 이벤트 이해
@@ -69,9 +69,9 @@ Visual C++ 개발 환경 내에서 빌드 프로세스를 사용자 지정하는
 [사용자 지정 빌드 도구 지정](specifying-custom-build-tools.md)<br/>
 [빌드 이벤트 지정](specifying-build-events.md)<br/>
 [빌드 사용자 지정 문제 해결](troubleshooting-build-customizations.md)<br/>
-[사용자 지정 빌드 단계 또는 빌드 이벤트의 출력 형식](formatting-the-output-of-a-custom-build-step-or-build-event.md)<br/>
+[사용자 지정 빌드 단계 또는 빌드 이벤트의 출력 형식 지정](formatting-the-output-of-a-custom-build-step-or-build-event.md)<br/>
 
 ## <a name="see-also"></a>참고자료
 
-[C++-visual Studio 프로젝트](creating-and-managing-visual-cpp-projects.md)<br>
+[C++-Visual Studio 프로젝트](creating-and-managing-visual-cpp-projects.md)<br>
 [빌드 명령 및 속성에 대한 일반 매크로](reference/common-macros-for-build-commands-and-properties.md)

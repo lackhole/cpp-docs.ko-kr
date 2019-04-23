@@ -1,5 +1,5 @@
 ---
-title: transmit_as (c + + COM 특성)
+title: transmit_as (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.transmit_as
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - transmit_as attribute
 ms.assetid: 53d0b8ab-5b06-423e-83eb-3d01a10424b2
 ms.openlocfilehash: e432d1a8f39cbc5e12f192ed7b07c29421bc403e
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59032104"
 ---
 # <a name="transmitas"></a>transmit_as
@@ -30,7 +30,7 @@ ms.locfileid: "59032104"
 
 ## <a name="remarks"></a>설명
 
-합니다 **transmit_as** c + + 특성에 동일한 기능을 합니다 [transmit_as](/windows/desktop/Midl/transmit-as) MIDL 특성입니다.
+**transmit_as** C++ 특성에 동일한 기능을 합니다 [transmit_as](/windows/desktop/Midl/transmit-as) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -70,7 +70,7 @@ struct _TREE_NODE_TYPE * right;
 
 |||
 |-|-|
-|**적용 대상**|**형식 정의**|
+|**적용 대상**|**typedef**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
@@ -81,4 +81,4 @@ struct _TREE_NODE_TYPE * right;
 
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
-[내보내기](export.md)
+[export](export.md)

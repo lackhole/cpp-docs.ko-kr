@@ -1,5 +1,5 @@
 ---
-title: 버전 정보 편집기 (c + +)
+title: 버전 정보 편집기 (C++)
 ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.version.F1
@@ -24,13 +24,13 @@ helpviewer_keywords:
 - version information
 ms.assetid: 772e6f19-f765-4cec-9521-0ad3eeb99f9b
 ms.openlocfilehash: 7910522578d89657adb09eb7729eb7539e010027
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027652"
 ---
-# <a name="version-information-editor-c"></a>버전 정보 편집기 (c + +)
+# <a name="version-information-editor-c"></a>버전 정보 편집기 (C++)
 
 버전 정보는 회사 및 제품 ID, 제품 릴리스 번호, 저작권 및 상표 알림 등으로 이루어져 있습니다. 사용 하 여 합니다 **버전 정보 편집기**를 만들고 버전 정보 리소스에 저장 되어 있는이 데이터를 유지 합니다. 버전 정보 리소스는 응용 프로그램에 필요 하지 않은 이지만 응용 프로그램을 식별 하는 정보를 수집 하기에 유용한 장소입니다. 버전 정보는 설치 API에도 사용됩니다.
 

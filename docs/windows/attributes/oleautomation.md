@@ -1,5 +1,5 @@
 ---
-title: oleautomation (c + + COM 특성)
+title: oleautomation (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.oleautomation
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - oleautomation attribute
 ms.assetid: c1086c91-260b-4dc3-b244-662852d09906
 ms.openlocfilehash: 74701742de904b76e7b1152c8ddb3f2f5dd953c2
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031714"
 ---
 # <a name="oleautomation"></a>oleautomation
@@ -25,7 +25,7 @@ Automation 호환 인터페이스를 나타냅니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **oleautomation** c + + 특성에 동일한 기능을 합니다 [oleautomation](/windows/desktop/Midl/oleautomation) MIDL 특성입니다.
+**oleautomation** C++ 특성에 동일한 기능을 합니다 [oleautomation](/windows/desktop/Midl/oleautomation) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -37,7 +37,7 @@ Automation 호환 인터페이스를 나타냅니다.
 
 |||
 |-|-|
-|**적용 대상**|**interface(인터페이스)**|
+|**적용 대상**|**interface**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|**dispinterface**|

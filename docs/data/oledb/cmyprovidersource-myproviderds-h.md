@@ -12,10 +12,10 @@ helpviewer_keywords:
 - CCustomSource class in CustomDS.H
 ms.assetid: c143d48e-59c8-4f67-9141-3aab51859b92
 ms.openlocfilehash: 296e7848b1d756fe0aba6156be2501db45bb092b
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59028602"
 ---
 # <a name="ccustomsource-customdsh"></a>CCustomSource (CustomDS.h)
@@ -176,7 +176,7 @@ struct UPROPINFO
 
 ## <a name="user-defined-property-sets"></a>사용자 정의 속성 집합
 
-Visual c + + 사용자 정의 속성 집합을 지원합니다. 재정의할 필요가 `GetProperties` 또는 `GetPropertyInfo`합니다. 대신 템플릿을 모든 사용자 정의 속성 집합을 검색 및 적절 한 개체에 추가 합니다.
+Visual C++ 사용자 정의 속성 집합을 지원 합니다. 재정의할 필요가 `GetProperties` 또는 `GetPropertyInfo`합니다. 대신 템플릿을 모든 사용자 정의 속성 집합을 검색 및 적절 한 개체에 추가 합니다.
 
 초기화 시 사용할 수 있어야 하는 사용자 정의 속성 집합이 있는 경우 (소비자를 호출 하기 전에, `IDBInitialize::Initialize`), BEGIN_PROPERTY_SET_EX 매크로 함께 UPROPSET_USERINIT 플래그를 사용 하 여이 지정할 수 있습니다. 속성 집합 (OLE DB 사양에 필요) 하는 대로 작동 하도록이 데이터 원본 개체에 있어야 합니다. 예를 들어:
 

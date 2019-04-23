@@ -88,10 +88,10 @@ helpviewer_keywords:
 - images [C++], converting formats
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
 ms.openlocfilehash: d10593ffbae7aef55adc3334057402b6952d8ba7
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59027599"
 ---
 # <a name="how-to-create-an-icon-or-other-image"></a>방법: 아이콘 또는 다른 이미지 만들기
@@ -159,7 +159,7 @@ ms.locfileid: "59027599"
 |**높이**|사용자 지정 이미지 픽셀 (1-512 최대 2048)의 높이 입력할 공간을 제공 합니다.|
 |**색**|사용자 지정 이미지에 대 한 색의 수를 선택 하기 위한 공간을 제공 합니다. 2, 16, 또는 256입니다.|
 
-사용 된 **엽니다 &lt;장치&gt; 이미지** c + + 프로젝트에서 장치 이미지를 열려면 대화 상자. 현재 리소스 (현재 리소스의 일부인 이미지)의 기존 장치 이미지를 나열 합니다. 포함 된 속성은:
+사용 합니다 **엽니다 &lt;장치&gt; 이미지** 대화 상자에서 장치 이미지를 열려면 C++ 프로젝트. 현재 리소스 (현재 리소스의 일부인 이미지)의 기존 장치 이미지를 나열 합니다. 포함 된 속성은:
 
 |속성|설명|
 |---|---|
@@ -266,7 +266,7 @@ ms.locfileid: "59027599"
 
 1. 메뉴로 이동 **파일** > **Open**을 선택한 후 **파일**합니다.
 
-1. 에 **새 파일 대화 상자**, 선택는 **Visual c + +** 폴더를 선택한 **비트맵 파일 (.bmp)** 에 **템플릿** 선택한상자 **열기**합니다.
+1. 에 **새 파일 대화 상자**, 선택는 **Visual C++**  폴더를 선택한 **비트맵 파일 (.bmp)** 에 **템플릿** 상자 및 선택 **열려**합니다.
 
    에 비트맵이 열립니다는 **이미지 편집기**합니다.
 
@@ -293,7 +293,7 @@ GIF 또는 JPEG 이미지를 열 수를 **이미지 편집기** 비트맵으로 
 
 1. **저장**을 선택합니다.
 
-### <a name="to-add-a-new-image-resource-to-an-unmanaged-c-project"></a>관리 되지 않는 c + + 프로젝트에 새 이미지 리소스를 추가 하려면
+### <a name="to-add-a-new-image-resource-to-an-unmanaged-c-project"></a>추가할 새 이미지 리소스를 관리 되지 않는 C++ 프로젝트
 
 1. [리소스 뷰](how-to-create-a-resource-script-file.md#create-resources)를 마우스 오른쪽 단추로 클릭 하 *.rc* 파일을 찾은 후 선택 **리소스 삽입**합니다. 에 기존 이미지 리소스가 이미 있는 경우에 *.rc* 파일인 cursor와 같은 단순히 단추로 클릭 합니다 **커서** 폴더를 선택 **커서 삽입**합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: switch_is (c + + COM 특성)
+title: switch_is (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.switch_is
@@ -7,10 +7,10 @@ helpviewer_keywords:
 - switch_is attribute
 ms.assetid: f1fffe5d-12d2-4e0f-8803-ccb715177d2d
 ms.openlocfilehash: ccac405480e415df17b42f02dce74759f578d025
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59031091"
 ---
 # <a name="switchis"></a>switch_is
@@ -25,7 +25,7 @@ ms.locfileid: "59031091"
 
 ## <a name="remarks"></a>설명
 
-합니다 **switch_is** c + + 특성에 동일한 기능을 합니다 [switch_is](/windows/desktop/Midl/switch-is) MIDL 특성입니다.
+**switch_is** C++ 특성에 동일한 기능을 합니다 [switch_is](/windows/desktop/Midl/switch-is) MIDL 특성입니다.
 
 ## <a name="example"></a>예제
 
@@ -37,7 +37,7 @@ ms.locfileid: "59031091"
 
 |||
 |-|-|
-|**적용 대상**|**형식 정의**|
+|**적용 대상**|**typedef**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|
