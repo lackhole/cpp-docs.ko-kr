@@ -23,12 +23,12 @@ helpviewer_keywords:
 - wcsrtombs_s function
 - wide characters, strings
 ms.assetid: 9dccb766-113c-44bb-9b04-07a634dddec8
-ms.openlocfilehash: 9ece21737b1e0b4d157b241286638ac376843fc6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd965271a65fa91b427c7af7bbd4173b129e1d8c
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459061"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124917"
 ---
 # <a name="wcsrtombss"></a>wcsrtombs_s
 
@@ -58,7 +58,7 @@ errno_t wcsrtombs_s(
 ### <a name="parameters"></a>매개 변수
 
 *pReturnValue*<br/>
-변환된 문자 수입니다.
+Null 종결자를 포함 하 여 변환된 된 문자열의 바이트 크기입니다.
 
 *mbstr*<br/>
 결과 변환된 멀티바이트 문자열에 대한 버퍼 주소입니다.

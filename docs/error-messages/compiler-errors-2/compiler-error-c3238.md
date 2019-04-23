@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3238
 ms.assetid: 19942497-b3c5-4df0-9144-142ced92468b
 ms.openlocfilehash: d70bb6dac7cb43701b57f3821872e02ab31426dc
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "58775629"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59778620"
 ---
 # <a name="compiler-error-c3238"></a>컴파일러 오류 C3238
 
@@ -19,7 +19,7 @@ ms.locfileid: "58775629"
 
 형식 전달 구문을 통해 참조된 어셈블리에서 정의된 형식이 클라이언트 애플리케이션에서도 정의되었습니다. 애플리케이션 범위에서 두 형식을 모두 정의할 수 없습니다.
 
-참조 [형식 전달 (C + + /cli CLI)](../../extensions/type-forwarding-cpp-cli.md) 자세한 내용은 합니다.
+참조 [형식 전달 (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) 에 대 한 자세한 내용은 합니다.
 
 ## <a name="example"></a>예제
 

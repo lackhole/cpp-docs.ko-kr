@@ -12,12 +12,12 @@ helpviewer_keywords:
 - builds [C++], options
 - Visual C++, build options
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
-ms.openlocfilehash: 6a4048d741cf291d8d6173c1444b6933523c6851
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 73797f3817338c48e8ff11eaaadff71263374fd0
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58775428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124761"
 ---
 # <a name="cc-projects-and-build-systems-in-visual-studio"></a>Visual Studio의 C/C++ 프로젝트 및 빌드 시스템
 
@@ -35,7 +35,7 @@ Visual Studio 2017을 사용하여 코드를 Visual Studio 프로젝트로 변�
 
 ## <a name="the-msvc-toolset"></a>MSVC 도구 집합
 
-Microsoft C++ 컴파일러, 링커, 표준 라이브러리 및 관련된 유틸리티는 MSCV 컴파일러 도구 집합(툴체인 또는 "빌드 도구"라고도 함)을 구성합니다. 이들은 Visual Studio에 포함됩니다. 또한  [Visual Studio 2017용 Build Tools 다운로드 위치](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017)에서 무료로 도구 집합을 다운로드하고 독립 실행형 패키지로 사용할 수 있습니다.
+Microsoft C++ 컴파일러, 링커, 표준 라이브러리 및 관련된 유틸리티 MSVC 컴파일러 도구 집합 (도구 체인을 빌드하거나 "도구" 라고도 함)를 구성 합니다. 이들은 Visual Studio에 포함됩니다. 또한  [Visual Studio 2017용 Build Tools 다운로드 위치](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017)에서 무료로 도구 집합을 다운로드하고 독립 실행형 패키지로 사용할 수 있습니다.
 
 MSVC 컴파일러 (cl.exe) 직접 명령줄에서 호출 하 여 간단한 프로그램을 빌드할 수 있습니다. 다음 명령을 단일 소스 코드 파일을 받고 호출 하는 호출 하는 실행 파일을 빌드하는 cl.exe *hello.exe*: 
 

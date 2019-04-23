@@ -6,16 +6,16 @@ f1_keywords:
 - math/isnormal
 helpviewer_keywords:
 - isnormal function
-ms.openlocfilehash: 93e3b8912ddf20bf8e190bb42e8413e6d909bbcc
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: e426fbce71efff1e810a03b8347e7c48aa0d91d2
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124683"
 ---
 # <a name="isnormal"></a>isnormal
 
-부동 소수점 값을 무한대 인지 확인 합니다.
+부동 소수점 값을 일반 값인지 여부를 결정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -27,7 +27,7 @@ int isnormal(
 template <class FloatingType>
 inline bool isnormal(
    FloatingType x
-) throw(); /* C++-only template function */
+) throw(); /* C++-only function template */
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -37,15 +37,15 @@ inline bool isnormal(
 
 ## <a name="return-value"></a>반환 값
 
-**isnormal** 0이 아닌 값을 반환 합니다 (**true** c + + 코드에서) 경우 인수 *x* 는 유한 이자 subnormal 없습니다. **isnormal** 0을 반환 합니다 (**false** c + + 코드에서) 인수가 subnormal는 무한대 또는 NAN 인 경우.
+**isnormal** 0이 아닌 값을 반환 합니다 (**true** 에서 C++ 코드) 하는 경우 인수 *x* 은 0, subnormal, infinite로도 아니고 NaN입니다. 그렇지 않으면 **isnormal** 0을 반환 합니다 (**false** 에서 C++ 코드).
 
 ## <a name="remarks"></a>설명
 
-**isnormal** 는 C 및 c + +로 컴파일할 때 인라인 템플릿 함수를 컴파일할 때 매크로입니다.
+**isnormal** 매크로가 C로 컴파일된 경우에 인라인 함수 템플릿을로 컴파일될 때 C++합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더(C)|필수 헤더(C++)|
+|함수|필수 헤더(C)|필수 헤더(C++)|
 |--------------|---------------------------|-------------------------------|
 |**isnormal**|\<math.h>|\<math.h> 또는 \<cmath>|
 
