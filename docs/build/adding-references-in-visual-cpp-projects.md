@@ -166,5 +166,3 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 프로젝트 속성 페이지 참조](reference/property-pages-visual-cpp.md)<br>
-[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)

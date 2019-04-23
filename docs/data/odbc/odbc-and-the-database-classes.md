@@ -25,4 +25,3 @@ MFC ODBC 데이터베이스 클래스는 일반적으로 [CDatabase](../../mfc/r
 
 ## <a name="see-also"></a>참고자료
 
-[ODBC 기본 사항](../../data/odbc/odbc-basics.md)

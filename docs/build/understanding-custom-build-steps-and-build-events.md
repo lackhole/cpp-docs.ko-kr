@@ -73,5 +73,5 @@ Visual C++ 개발 환경 내에서 빌드 프로세스를 사용자 지정하는
 
 ## <a name="see-also"></a>참고자료
 
-[C++-Visual Studio 프로젝트](creating-and-managing-visual-cpp-projects.md)<br>
+[C++-visual Studio 프로젝트](creating-and-managing-visual-cpp-projects.md)<br>
 [빌드 명령 및 속성에 대한 일반 매크로](reference/common-macros-for-build-commands-and-properties.md)
