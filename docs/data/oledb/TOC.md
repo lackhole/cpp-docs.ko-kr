@@ -85,7 +85,7 @@
 #### [공급자의 책갈피 지원](provider-support-for-bookmarks.md)
 #### [OLE DB 적합성 테스트 통과](passing-ole-db-conformance-tests.md)
 #### [OLE DB 리소스 풀링 및 서비스](ole-db-resource-pooling-and-services.md)
-##### [OLE DB 응용 프로그램의 리소스 풀링](resource-pooling-in-your-ole-db-application.md)
+##### [OLE DB 애플리케이션의 리소스 풀링](resource-pooling-in-your-ole-db-application.md)
 ##### [OLE DB 서비스 사용 및 사용 안 함](enabling-and-disabling-ole-db-services.md)
 ###### [공급자 서비스 사용 및 사용 안 함](enabling-and-disabling-services-for-a-provider.md)
 ###### [공급자 서비스 기본값 재정의](overriding-provider-service-defaults.md)
