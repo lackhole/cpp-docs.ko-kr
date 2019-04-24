@@ -66,7 +66,7 @@ r = t + d;     // This should produce the same overall result
 
 ### <a name="to-set-this-compiler-option-for-avx-avx2-ia32-sse-or-sse2-in-visual-studio"></a>Visual Studio에서 AVX, AVX2, IA32, SSE 또는 SSE2에 대한 컴파일러 옵션을 설정하려면 
 
-1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [컴파일러 설정 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성**를 **C/c + +** 폴더입니다.
 
