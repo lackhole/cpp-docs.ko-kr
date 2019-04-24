@@ -1,5 +1,5 @@
 ---
-title: 컴파일 C + + /cli CLR을 대상으로 하는 CLI 프로그램
+title: 컴파일하는 C++CLR을 대상으로 하는 /CLI 프로그램
 ms.date: 09/17/2018
 helpviewer_keywords:
 - command-line applications [C++], managed code
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - managed code [C++]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
 ms.openlocfilehash: fcac0079185b6ceef981b9acfeb555ef29d464e0
-ms.sourcegitcommit: c7f90df497e6261764893f9cc04b5d1f1bf0b64b
-ms.translationtype: MT
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59034672"
 ---
-# <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>연습: 컴파일 C + + /cli 프로그램 Visual Studio에서 CLR을 대상으로 하는
+# <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>연습: 컴파일하는 C++Visual Studio에서 CLR을 대상으로 하는 /CLI 프로그램
 
-사용 하 여 C + + /cli 언어 확장 기능.NET 클래스를 사용 하 고 Visual Studio 개발 환경을 사용 하 여 컴파일하는 c + + 프로그램을 만들 수 있습니다.
+사용 하 여 C++만들면 언어 확장 기능/ C++ .NET 클래스를 사용 하 고 Visual Studio 개발 환경을 사용 하 여 컴파일하는 프로그램입니다.
 
-이 절차에서는 c + + 프로그램을 자체 수도 있고 샘플 프로그램 중 하나를 사용할 수 있습니다. 이 프로시저에서 사용하는 샘플 프로그램은 textfile.txt라는 텍스트 파일을 만들고 프로젝트 디렉터리에 저장합니다.
+이 절차에서는 입력할 수 있습니다 고유한 C++ 프로그램 또는 샘플 프로그램 중 하나를 사용 합니다. 이 프로시저에서 사용하는 샘플 프로그램은 textfile.txt라는 텍스트 파일을 만들고 프로젝트 디렉터리에 저장합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
