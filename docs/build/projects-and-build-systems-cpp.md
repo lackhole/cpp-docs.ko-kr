@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
 ms.openlocfilehash: 73797f3817338c48e8ff11eaaadff71263374fd0
 ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60124761"
@@ -25,7 +25,7 @@ Visual Studio 2017을 사용하여 코드를 Visual Studio 프로젝트로 변�
 
 ## <a name="c-compilation"></a>C++ 컴파일
 
-하 *빌드* 는 C++ 프로그램 하나 이상의 파일에서 소스 코드를 컴파일하고 다음 실행 파일 (.exe), 동적 부하 라이브러리 (.dll) 또는 정적 라이브러리 (.lib)에 해당 파일을 연결 하는 의미입니다. 
+C++ 프로그램을 *만들려면* 하나 이상의 파일에서 소스 코드를 컴파일한 다음 해당 파일을 실행 파일(.exe), 동적 부하 라이브러리(.dll) 또는 정적 라이브러리(.lib)로 링크해야 합니다. 
 
 기본 C++ 컴파일에는 세 가지 주요 단계가 포함됩니다.
 
@@ -70,7 +70,7 @@ cl /EHsc hello.cpp
 
 [CMake 프로젝트](cmake-projects-in-visual-studio.md) 코드, 빌드 및 Visual Studio의 CMake 프로젝트를 배포 하는 방법입니다.
 
-[폴더 열기 프로젝트](open-folder-projects-cpp.md) Visual Studio 코딩, 빌드 및 배포를 사용 하는 방법 C++ 없거나 모든 임의의 빌드 시스템을 기준으로 프로젝트 빌드 시스템입니다. 전혀. 
+[오픈 폴더 프로젝트](open-folder-projects-cpp.md) Visual Studio를 사용하여 임의의 빌드 시스템을 기반으로 또는 빌드 시스템 없이 C++ 프로젝트를 코딩, 빌드 및 배포하는 방법입니다. 전혀. 
 
 [릴리스 빌드](release-builds.md) 만들고 최적화 된 릴리스 문제를 해결 하는 방법을 최종 사용자에 게 배포에 대 한 빌드합니다.
 
