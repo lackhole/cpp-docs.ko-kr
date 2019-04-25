@@ -7,11 +7,11 @@ helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
 ms.openlocfilehash: 78b9ae467d3504f3922c540a3e4cd100322d8f4e
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57808393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151284"
 ---
 # <a name="application-information-and-management"></a>응용 프로그램 정보 및 관리
 
@@ -112,7 +112,7 @@ CWinThread* AfxBeginThread(
 
 `AfxBeginThread` 새로 만듭니다 `CWinThread` 개체, 호출 해당 [CreateThread](../../mfc/reference/cwinthread-class.md#createthread) 스레드의 실행을 시작 하는 함수 및 스레드에 대 한 포인터를 반환 합니다. 검사가 모든 개체가 제대로 할당 해제 생성 부분이 실패 했는지를 전체 프로시저에서 수행 됩니다. 호출 스레드를 종료 하려면 [AfxEndThread](#afxendthread) 에서 내 스레드 또는 작업자 스레드의 제어 함수에서 반환 합니다.
 
-다중 스레딩 응용 프로그램에서 사용할 수 있어야 합니다. 그렇지 않으면이 함수가 실패 합니다. 다중 스레딩을 사용에 대 한 자세한 내용은 참조 [/MD, /MT, /LD (런타임 라이브러리 사용)](../../build/reference/md-mt-ld-use-run-time-library.md) 아래에서 *Visual c + + 컴파일러 옵션*합니다.
+다중 스레딩 응용 프로그램에서 사용할 수 있어야 합니다. 그렇지 않으면이 함수가 실패 합니다. 다중 스레딩을 사용에 대 한 자세한 내용은 참조 [/MD, /MT, /LD (런타임 라이브러리 사용)](../../build/reference/md-mt-ld-use-run-time-library.md) 아래에서 *시각적 C++ 컴파일러 옵션*합니다.
 
 에 대 한 자세한 `AfxBeginThread`, 문서를 참조 [다중 스레딩: 작업자 스레드를 만들지](../../parallel/multithreading-creating-worker-threads.md) 고 [다중 스레딩: 사용자 인터페이스 스레드 만들기](../../parallel/multithreading-creating-user-interface-threads.md)합니다.
 
@@ -208,8 +208,7 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 
 ##  <a name="afxfreelibrary"></a>  AfxFreeLibrary
 
-
-  `AfxFreeLibrary` 및 `AfxLoadLibrary`는 각 코딩된 라이브러리 모듈에 대한 참조 횟수를 유지 관리합니다.
+`AfxFreeLibrary` 및 `AfxLoadLibrary`는 각 코딩된 라이브러리 모듈에 대한 참조 횟수를 유지 관리합니다.
 
 ```
 BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
@@ -230,8 +229,7 @@ BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
 
 라이브러리 모듈을 매핑 해제하기 전에 시스템은 DLL이 이를 사용하는 프로세스에서 분리할 수 있게 해줍니다. 이렇게 하면 DLL이 현재 프로세스를 대신해서 할당된 리소스를 정리할 수 있는 기회가 부여됩니다. 진입점 함수가 반환된 다음 라이브러리 모듈은 현재 프로세스의 주소 공간에서 제거됩니다.
 
-
-  `AfxLoadLibrary`를 사용해서 DLL 모듈을 매핑합니다.
+`AfxLoadLibrary`를 사용해서 DLL 모듈을 매핑합니다.
 
 사용 해야 `AfxFreeLibrary` 하 고 `AfxLoadLibrary` (Win32 함수 대신 `FreeLibrary` 고 `LoadLibrary`) 응용 프로그램에서 여러 스레드를 사용 하는 경우. 사용 하 여 `AfxLoadLibrary` 고 `AfxFreeLibrary` 되도록 MFC 확장 DLL을 로드 하거나 언로드할 전역 MFC 상태가 손상 되지 않습니다 때 실행 되는 시작 및 종료 코드입니다.
 
@@ -398,7 +396,7 @@ CWinThread* AfxGetThread();
 원하는 스레드 내에서 호출 되어야 합니다.
 
 > [!NOTE]
->  MFC 프로젝트 호출을 이식 하는 경우 `AfxGetThread` Visual c + + 버전 4.2, 5.0 또는 6.0 `AfxGetThread` 호출 [AfxGetApp](#afxgetapp) 스레드가 없는 경우. 최신 버전의 컴파일러에서 `AfxGetThread` 없는 스레드를 찾을 수 없으면 NULL을 반환 합니다. 호출 해야 응용 프로그램 스레드에 원한다 면 `AfxGetApp`합니다.
+>  MFC 프로젝트 호출을 이식 하는 경우 `AfxGetThread` 시각적 개체에서 C++ 버전 4.2, 5.0 또는 6.0 `AfxGetThread` 호출 [AfxGetApp](#afxgetapp) 스레드가 없습니다 있으면 됩니다. 최신 버전의 컴파일러에서 `AfxGetThread` 없는 스레드를 찾을 수 없으면 NULL을 반환 합니다. 호출 해야 응용 프로그램 스레드에 원한다 면 `AfxGetApp`합니다.
 
 ### <a name="example"></a>예제
 
@@ -422,7 +420,7 @@ BOOL AFXAPI AfxInitRichEdit();
 
 `AfxInitRichEdit` RICHED32를 로드합니다. Rich edit 컨트롤의 버전 1.0을 초기화 하는 DLL입니다. 2.0 및 3.0 RICHED20 서식 있는 편집 컨트롤의 버전을 사용 하도록 DLL 로드 해야 합니다. 호출 하 여 이렇게 [AfxInitRichEdit2](#afxinitrichedit2)합니다.
 
-기존 Visual c + + 응용 프로그램을 버전 2.0에서 서식 있는 편집 컨트롤을 업데이트 하려면 엽니다 합니다. 텍스트로 RC 파일에는 "RICHEDIT"에서 "RichEdit20a" 각 서식 있는 편집 컨트롤의 클래스 이름을 변경 합니다. 그런 다음에 대 한 호출 `AfxInitRichEdit` 사용 하 여 `AfxInitRichEdit2`입니다.
+업데이트 rich edit 기존 시각적 개체에서 컨트롤 C++ 버전 2.0 응용 프로그램을 열어 합니다. 텍스트로 RC 파일에는 "RICHEDIT"에서 "RichEdit20a" 각 서식 있는 편집 컨트롤의 클래스 이름을 변경 합니다. 그런 다음에 대 한 호출 `AfxInitRichEdit` 사용 하 여 `AfxInitRichEdit2`입니다.
 
 이 함수는 또한 라이브러리 프로세스에 대 한 아직 초기화 되지 않은 경우 공용 컨트롤 라이브러리를 초기화 합니다. MFC 응용 프로그램에서 직접 rich edit 컨트롤을 사용 하는 경우 MFC 서식 있는 편집 컨트롤 런타임에 제대로 초기화가 수행 하기 위해이 함수를 호출 해야 합니다. Create 메서드를 호출 하는 경우 [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md)하십시오 [CRichEditView](../../mfc/reference/cricheditview-class.md), 또는 [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), 일반적으로이 함수를 호출할 필요가 없습니다 있지만 일부의 경우 필요 합니다.
 
@@ -527,8 +525,7 @@ CKeyboardManager* afxKeyboardManager;
 
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary
 
-
-  `AfxLoadLibrary`를 사용해서 DLL 모듈을 매핑합니다.
+`AfxLoadLibrary`를 사용해서 DLL 모듈을 매핑합니다.
 
 ```
 HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
@@ -685,7 +682,7 @@ Microsoft Foundation Class 라이브러리를 여러 표준 창 클래스를 자
 
 클래스에 대 한 이름을 등록 `AfxRegisterWndClass` 매개 변수에서 전적으로 달라 집니다. 호출 하는 경우 `AfxRegisterWndClass` 여러 번 동일한 매개 변수를 사용 하 여 해당 등록만 첫 번째 호출에서 클래스입니다. 에 대 한 후속 호출 `AfxRegisterWndClass` 동일한 매개 변수를 사용 하 여 이미 등록 된 클래스를 반환 하기만 하면 됩니다.
 
-호출 하는 경우 `AfxRegisterWndClass` 각 클래스에 대해 별도 창 클래스를 시작 하는 대신 동일한 매개 변수를 사용 하 여 여러 CWnd에서 파생 된 클래스에 대 한 각 클래스는 동일한 창 클래스를 공유 합니다. 이 있는 클래스 스타일을 사용 하는 경우이 문제가 발생할 수 있습니다. 여러이 있는 창 클래스 대신 결국 하나이 있는 창 클래스와 같은 DC 클래스 공유를 사용 하는 모든 c + + windows. 이 문제를 방지 하려면 호출 [AfxRegisterClass](#afxregisterclass) 클래스를 등록 합니다.
+호출 하는 경우 `AfxRegisterWndClass` 각 클래스에 대해 별도 창 클래스를 시작 하는 대신 동일한 매개 변수를 사용 하 여 여러 CWnd에서 파생 된 클래스에 대 한 각 클래스는 동일한 창 클래스를 공유 합니다. 이 있는 클래스 스타일을 사용 하는 경우이 문제가 발생할 수 있습니다. 여러이 있는 창 클래스 대신 끝나는 하나이 있는 창 클래스와 모든 C++ 클래스를 사용 하는 windows 동일한 DC를 공유 합니다. 이 문제를 방지 하려면 호출 [AfxRegisterClass](#afxregisterclass) 클래스를 등록 합니다.
 
 기술 참고 참조 [TN001: 창 클래스 등록](../../mfc/tn001-window-class-registration.md) 창 클래스 등록에 대 한 자세한 내용은 및 `AfxRegisterWndClass` 함수입니다.
 

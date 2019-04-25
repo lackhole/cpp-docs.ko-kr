@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::CACHE_SUBALLOC [C++]
 - std::SYNC_DEFAULT [C++]
 ms.openlocfilehash: 736e587a41fa1006801dcf6930b33ee434c9a5ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179213"
 ---
 # <a name="ltallocatorsgt-macros"></a>&lt;allocators&gt; macros
 
@@ -108,7 +108,7 @@ public:
 
 ### <a name="remarks"></a>설명
 
-컴파일러가 단일 스레드 및 다중 스레드 응용 프로그램 컴파일을 모두 지원하는 경우 단일 스레드 응용 프로그램에 대해 매크로는 `stdext::allocators::sync_none`을 생성하고, 다른 모든 경우 `stdext::allocators::sync_shared`를 생성합니다.
+컴파일러가 단일 스레드 및 다중 스레드 애플리케이션 컴파일을 모두 지원하는 경우 단일 스레드 애플리케이션에 대해 매크로는 `stdext::allocators::sync_none`을 생성하고, 다른 모든 경우 `stdext::allocators::sync_shared`를 생성합니다.
 
 ## <a name="see-also"></a>참고자료
 

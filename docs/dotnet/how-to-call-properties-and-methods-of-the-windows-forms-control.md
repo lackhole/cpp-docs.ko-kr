@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Windows Forms controls [C++], properties
 ms.assetid: 6e647d8a-fdaa-4aa1-b3fe-04f15cff8eb3
 ms.openlocfilehash: 61b565839b3f3c24670819fdcf2dde558e3461ac
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152815"
 ---
 # <a name="how-to-call-properties-and-methods-of-the-windows-forms-control"></a>방법: 속성 및 Windows Forms의 메서드 호출 제어
 

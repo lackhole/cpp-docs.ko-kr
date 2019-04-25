@@ -109,11 +109,11 @@ helpviewer_keywords:
 - std::ios_base [C++], xalloc
 ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
 ms.openlocfilehash: 8911c3763e6a0c861c162611e1b2617ec26f0cf9
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62158593"
 ---
 # <a name="iosbase-class"></a>ios_base 클래스
 
@@ -265,7 +265,7 @@ typedef void (__cdecl *event_callback)(
 *_E*<br/>
 [이벤트](#event)입니다.
 
-*(_B)*<br/>
+*_Base*<br/>
 이벤트가 호출된 스트림입니다.
 
 *_I*<br/>
@@ -902,7 +902,7 @@ fmtflags setf(
 
 ### <a name="parameters"></a>매개 변수
 
-*마스크 (_m)*<br/>
+*_Mask*<br/>
 설정할 플래그입니다.
 
 *_Unset*<br/>
@@ -961,7 +961,7 @@ static bool sync_with_stdio(
 
 ### <a name="remarks"></a>설명
 
-정적 멤버 함수는 한 `stdio` 플래그는 처음에 동기화 **true**합니다. 때 **true**,이 플래그 하면 동일한 파일에 대 한 작업 간의 적절 하 게 동기화 합니다 [iostreams](../standard-library/iostreams-conventions.md) 함수 및 c + + 표준 라이브러리에 정의 된 합니다. 이 고, 그렇지 동기화 보장할 수 수 있으 나 성능이 향상 될 수 있습니다. 함수 저장소 *_Sync* 에 `stdio` 플래그를 동기화 하 고 저장된 된 이전 값을 반환 합니다. 표준 스트림에서 작업을 수행 하기 전에 작업을 안정적으로 호출할 수 있습니다.
+정적 멤버 함수는 한 `stdio` 플래그는 처음에 동기화 **true**합니다. 때 **true**,이 플래그 하면 동일한 파일에 대 한 작업 간의 적절 하 게 동기화 합니다 [iostreams](../standard-library/iostreams-conventions.md) 함수와에 정의 된를 C++ 표준 라이브러리. 이 고, 그렇지 동기화 보장할 수 수 있으 나 성능이 향상 될 수 있습니다. 함수 저장소 *_Sync* 에 `stdio` 플래그를 동기화 하 고 저장된 된 이전 값을 반환 합니다. 표준 스트림에서 작업을 수행 하기 전에 작업을 안정적으로 호출할 수 있습니다.
 
 ## <a name="unsetf"></a> ios_base::unsetf
 
@@ -975,7 +975,7 @@ void unsetf(
 
 ### <a name="parameters"></a>매개 변수
 
-*마스크 (_m)*<br/>
+*_Mask*<br/>
 해제하려는 플래그입니다.
 
 ### <a name="remarks"></a>설명

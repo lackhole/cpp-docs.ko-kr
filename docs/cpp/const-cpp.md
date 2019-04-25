@@ -7,11 +7,11 @@ helpviewer_keywords:
 - const keyword [C++]
 ms.assetid: b21c0271-1ad0-40a0-b21c-5e812bba0318
 ms.openlocfilehash: 759ee503acb12f6c1a30fbbfaf87a8f66433e571
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154752"
 ---
 # <a name="const-c"></a>const (C++)
 
@@ -37,7 +37,7 @@ int main() {
 }
 ```
 
-C + +에서 사용할 수 있습니다 합니다 **const** 대신 키워드는 [#define](../preprocessor/hash-define-directive-c-cpp.md) 상수 값을 정의할 전처리기 지시문입니다. 로 정의 된 값 **const** 형식 검사가 적용 되며 상수 식 대신 사용할 수 있습니다. C + +에서 사용 하 여 배열의 크기를 지정할 수 있습니다는 **const** 같이 변수:
+C++를 사용할 수 있습니다는 **const** 대신 키워드를 [#define](../preprocessor/hash-define-directive-c-cpp.md) 상수 값을 정의할 전처리기 지시문입니다. 로 정의 된 값 **const** 형식 검사가 적용 되며 상수 식 대신 사용할 수 있습니다. C++를 사용 하 여 배열의 크기를 지정할 수 있습니다는 **const** 같이 변수:
 
 ```cpp
 // constant_values2.cpp
@@ -124,7 +124,7 @@ int main()
 }
 ```
 
-## <a name="c-and-c-const-differences"></a>C 및 c + + const 차이점
+## <a name="c-and-c-const-differences"></a>C 및 C++ const 차이점
 
 변수를 선언 하는 경우 **const** C 소스 코드 파일에서 같이:
 
@@ -138,13 +138,13 @@ const int i = 2;
 extern const int i;
 ```
 
-C + +에서 동일한 동작을 가져오려면 선언 해야 하지만 하 **const** 으로 변수:
+하지만에서 동일한 결과를 얻으려면 C++를 선언 해야 하 **const** 변수의:
 
 ```cpp
 extern const int i = 2;
 ```
 
-선언 하려는 경우는 **extern** C 소스 코드 파일을 사용 하 여에서 사용 하기 위해 c + + 소스 코드 파일에서 변수:
+선언 하려는 경우는 **extern** 변수를 C++ 사용 하 여 C 소스 코드 파일에서 사용 하기 위해 소스 코드 파일:
 
 ```cpp
 extern "C" const int x=10;
@@ -168,4 +168,4 @@ C++ 컴파일러에 의한 이름 변환을 방지해야 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

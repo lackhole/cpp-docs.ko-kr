@@ -9,11 +9,11 @@ helpviewer_keywords:
 - . operator
 ms.assetid: 468ea0c8-5b08-47be-991b-38abacb77611
 ms.openlocfilehash: 75eccec0c65cba093d84e9d71107247e5b697287
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62177203"
 ---
 # <a name="operator-"></a>연산자 .
 
@@ -21,9 +21,9 @@ ms.locfileid: "51330842"
 
 ## <a name="syntax"></a>구문
 
-> *식을* __합니다.__ *필드* \[ __합니다.__ *필드*]...
+> *expression* __.__ *field* \[__.__ *field*] ...
 >
-> __\[__*등록할*__]__ __합니다.__ *필드* \[ __합니다.__ *필드*]...
+> __\[__*register*__]__ __.__ *field* \[__.__ *field*] ...
 
 ## <a name="see-also"></a>참고자료
 

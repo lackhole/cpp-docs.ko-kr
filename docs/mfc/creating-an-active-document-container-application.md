@@ -9,11 +9,11 @@ helpviewer_keywords:
 - applications [MFC], active document container
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
 ms.openlocfilehash: 965778fd5d17aa416b198c101edc3a445a39580b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57257296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152945"
 ---
 # <a name="creating-an-active-document-container-application"></a>액티브 문서 컨테이너 응용 프로그램 만들기
 
@@ -23,7 +23,7 @@ ms.locfileid: "57257296"
 
 1. **파일** 메뉴에서 클릭 **프로젝트**에서 **새** 하위 메뉴.
 
-1. 왼쪽된 창에서 클릭 **Visual c + +** 형식 프로젝션 합니다.
+1. 왼쪽된 창에서 클릭 **시각적 C++**  형식 프로젝션 합니다.
 
 1. 선택 **MFC 응용 프로그램** 오른쪽 창에서.
 
@@ -43,8 +43,7 @@ ms.locfileid: "57257296"
 
 1. *MyProjview.cpp*를 다음과 같이 변경 합니다.
 
-   - 
-  `CMyProjView::OnPreparePrinting`에서 함수 내용을 다음 코드로 바꿉니다.
+   - `CMyProjView::OnPreparePrinting`에서 함수 내용을 다음 코드로 바꿉니다.
 
      [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
 

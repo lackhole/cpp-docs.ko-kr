@@ -24,11 +24,11 @@ helpviewer_keywords:
 - getw function
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
 ms.openlocfilehash: 615d3ac9bdc73ad200368eaeabf7c84951bc91ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157632"
 ---
 # <a name="getw"></a>_getw
 
@@ -44,7 +44,7 @@ int _getw(
 
 ### <a name="parameters"></a>매개 변수
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값

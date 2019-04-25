@@ -32,11 +32,11 @@ helpviewer_keywords:
 - modfl function
 ms.assetid: b1c7abf5-d476-43ca-a03c-02072a86e32d
 ms.openlocfilehash: 59d6e2b9b02ad182c5630d6dc9a989c035e8fa92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156332"
 ---
 # <a name="modf-modff-modfl"></a>modf, modff, modfl
 
@@ -73,13 +73,13 @@ long double modf( long double x, long double * intptr );  // C++ only
 
 **modf** sse2(스트리밍 SIMD 확장 2 ()를 사용 하는 구현 합니다. SSE2 구현의 사용 제한 사항 및 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
 
-C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **modf** 및 반환 하는 **float** 하거나 **긴** **double** 매개 변수입니다. C 프로그램에서 **modf** 항상 double 값 두 개를 사용 하며 double 값을 반환 합니다.
+C++오버 로드를 호출할 수 있도록 오버 로드를 허용 **modf** 및 반환 하는 **float** 하거나 **긴** **double** 매개 변수입니다. C 프로그램에서 **modf** 항상 double 값 두 개를 사용 하며 double 값을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**modf**하십시오 **modff**, **modfl**|C: \<math.h><br /><br /> C++: , \<cmath> 또는 \<math.h>|
+|**modf**, **modff**, **modfl**|C: \<math.h><br /><br /> C++: , \<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
