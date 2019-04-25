@@ -3,11 +3,11 @@ title: ARM 어셈블러 명령줄 참조
 ms.date: 08/30/2018
 ms.assetid: f7b89478-1ab5-4995-8cde-a805f0462c45
 ms.openlocfilehash: f49b59a81fbe5f11c0f219d1e1fe83a4ee811c7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62162137"
 ---
 # <a name="arm-assembler-command-line-reference"></a>ARM 어셈블러 명령줄 참조
 
@@ -15,21 +15,21 @@ ms.locfileid: "50579241"
 
 ## <a name="syntax"></a>구문
 
-> **armasm** [*옵션*] *sourcefile* *objectfile*
-> **armasm** [*옵션 *] **-o** *objectfile* *sourcefile*
+> **armasm** [*options*] *sourcefile* *objectfile*
+> **armasm** [*options*] **-o** *objectfile* *sourcefile*
 
 ### <a name="parameters"></a>매개 변수
 
 *options*<br/>
 0 개 이상의 다음 조합 합니다.
 
-- **-오류** *파일 이름*<br/>
+- **-errors** *filename*<br/>
    오류 및 경고 메시지를 리디렉션할 *filename*합니다.
 
-- **-i** *dir*[**;** <em>dir</em>]<br/>
+- **-i** *dir*[**;**<em>dir</em>]<br/>
    포함 검색 경로에 지정 된 디렉터리를 추가 합니다.
 
-- **-를 미리 정의할** *지시문*<br/>
+- **-predefine** *directive*<br/>
    기호를 미리 정의할 수는 SETA, SETL를 가져오거나 지시어를 지정 합니다.<br/>
    예: **armasm.exe-source.asm "SETA 150 COUNT" 미리 정의**<br/>
    자세한 내용은 참조는 [ARM 컴파일러 armasm 참조 가이드](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html)합니다.
@@ -37,13 +37,13 @@ ms.locfileid: "50579241"
 - **-nowarn**<br/>
    모든 경고 메시지를 사용 하지 않도록 설정 합니다.
 
-- **-무시** *경고*<br/>
+- **-ignore** *warning*<br/>
    지정된 된 경고를 사용 하지 않도록 설정 합니다. 가능한 값에 대 한 경고에 대 한 섹션을 참조 합니다.
 
 - **-help**<br/>
    명령줄 도움말 메시지를 인쇄 합니다.
 
-- **-machine** *컴퓨터*<br/>
+- **-machine** *machine*<br/>
    PE 헤더에서 설정 하려면 컴퓨터 종류를 지정 합니다.  가능한 값 *머신* 됩니다.<br/>
    **ARM**-IMAGE_FILE_MACHINE_ARMNT 컴퓨터 유형을 설정 합니다. 이 값이 기본값입니다.<br/>
    **THUMB**-IMAGE_FILE_MACHINE_THUMB 컴퓨터 유형을 설정 합니다.
@@ -51,7 +51,7 @@ ms.locfileid: "50579241"
 - **-oldit**<br/>
    ARMv7 스타일 생성 IT 블록입니다.  기본적으로 ARMv8 호환 IT 블록 생성 됩니다.
 
-- **-를 통해** *파일 이름*<br/>
+- **-via** *filename*<br/>
    추가 명령줄 인수에서 읽을 *filename*합니다.
 
 - **-16**<br/>
@@ -63,7 +63,7 @@ ms.locfileid: "50579241"
 - **-g**<br/>
    디버깅 정보를 생성 합니다.
 
-- **-errorReport:** *옵션*<br/>
+- **-errorReport:** *option*<br/>
    어떻게 내부 어셈블러 오류 Microsoft에 보고를 지정 합니다.  가능한 값 *옵션* 됩니다.<br/>
    **none**-보고서를 전송 하지 마십시오.<br/>
    **프롬프트**-사용자가 보고서를 즉시 보낼 메시지를 표시 합니다.<br/>

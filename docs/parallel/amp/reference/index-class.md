@@ -1,6 +1,6 @@
 ---
 title: index 클래스
-ms.date: 11/04/2016
+ms.date: 03/27/2019
 f1_keywords:
 - AMP/index
 - AMP/Concurrency::index::index
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - index structure
 ms.assetid: cbe79b08-0ba7-474c-9828-f1a71da39eb3
-ms.openlocfilehash: 054db83e4d8e140af37dcff9a7664ffdf7902325
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5226440e49aab5766fc7992e0651e2b5ee5d4981
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180240"
 ---
 # <a name="index-class"></a>index 클래스
 
@@ -37,14 +37,14 @@ class index;
 
 |이름|설명|
 |----------|-----------------|
-|[인덱스 생성자](#ctor)|`index` 클래스의 새 인스턴스를 초기화합니다.|
+|[인덱스 생성자](#index_ctor)|`index` 클래스의 새 인스턴스를 초기화합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
 |이름|설명|
 |----------|-----------------|
 |[operator--](#operator--)|감소의 각 요소는 `index` 개체입니다.|
-|[operator(mod)=](#operator_mod_eq)|각 요소에 모듈러스 (나머지)를 계산 합니다 `index` 해당 요소를 숫자로 나눌 때 개체입니다.|
+|[operator%=](#operator_mod_eq)|각 요소에 모듈러스 (나머지)를 계산 합니다 `index` 해당 요소를 숫자로 나눌 때 개체입니다.|
 |[operator*=](#operator_star_eq)|각 요소를 곱합니다는 `index` 번호로 개체입니다.|
 |[operator/=](#operator_div_eq)|각 요소를 나눕니다는 `index` 번호로 개체입니다.|
 |[index::operator\[\]](#operator_at)|지정된 된 인덱스에 있는 요소를 반환 합니다.|
@@ -139,7 +139,7 @@ index operator--(
 
 전위 연산자의 경우 인덱스 개체에 대 한 (*이). 접미사 연산자의 경우 새 인덱스 개체입니다.
 
-## <a name="operator_mod_eq"></a>  operator(mod)=
+## <a name="operator_mod_eq"></a>  operator%=
 
 요소에 지정 된 숫자로 나눌 때 인덱스 개체의 각 요소 모듈러스 (나머지)를 계산 합니다.
 

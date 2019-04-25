@@ -8,11 +8,11 @@ helpviewer_keywords:
 - IOleCommandTarget interface [MFC]
 ms.assetid: 3eef571e-6357-444d-adbb-6f734a0c3161
 ms.openlocfilehash: dca1183a17fe8f3022f517d1ad0c3932ea272417
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62168000"
 ---
 # <a name="tn071-mfc-iolecommandtarget-implementation"></a>TN071: MFC IOleCommandTarget 구현
 
@@ -23,7 +23,7 @@ ms.locfileid: "50522228"
 
 `IOleCommandTarget` 서버에서 메서드를 호출할 클라이언트에서 사용 되는 Automation 비슷한 인터페이스가입니다. 그러나 `IOleCommandTarget` 프로그래머는 일반적으로 비용이 많이 드는 데 없으므로 자동화 인터페이스를 통해 호출의 오버 헤드를 줄여 `Invoke` 메서드의 `IDispatch`합니다.
 
-MFC에서는 `IOleCommandTarget` 인터페이스는 액티브 문서 서버에서 명령을 서버로 발송 하는 데 액티브 문서 컨테이너를 허용 하도록 사용 됩니다. 액티브 문서 서버 클래스 `CDocObjectServerItem`, MFC의 인터페이스 맵을 사용 하 여 (참조 [TN038: MFC/OLE IUnknown 구현](../mfc/tn038-mfc-ole-iunknown-implementation.md))를 구현 하는 `IOleCommandTarget` 인터페이스입니다.
+MFC에서는 `IOleCommandTarget` 인터페이스는 액티브 문서 서버에서 명령을 서버로 발송 하는 데 액티브 문서 컨테이너를 허용 하도록 사용 됩니다. 액티브 문서 서버 클래스 `CDocObjectServerItem`, MFC의 인터페이스 맵을 사용 하 여 (참조 [TN038: IUnknown 구현 MFC/OLE](../mfc/tn038-mfc-ole-iunknown-implementation.md))를 구현 하는 `IOleCommandTarget` 인터페이스입니다.
 
 `IOleCommandTarget` 에서도 구현 됩니다는 `COleFrameHook` 클래스입니다. `COleFrameHook` 내부 편집 컨테이너의 프레임 창 기능을 구현 하는 문서화 되지 않은 MFC 클래스가입니다. `COleFrameHook` 또한 MFC 인터페이스 맵을 사용 하 여 구현 된 `IOleCommandTarget` 인터페이스입니다. `COleFrameHook`구현의 `IOleCommandTarget` OLE 명령을 전달 `COleDocObjectItem`-액티브 문서 컨테이너를 파생 합니다. 따라서 모든 MFC 액티브 문서 컨테이너를 포함 된 액티브 문서 서버에서 메시지를 받을 수 있습니다.
 

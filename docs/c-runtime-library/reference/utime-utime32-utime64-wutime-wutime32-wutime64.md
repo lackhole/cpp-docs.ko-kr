@@ -59,11 +59,11 @@ helpviewer_keywords:
 - tutime32 function
 ms.assetid: 8d482d40-19b9-4591-bfee-5d7f601d1a9e
 ms.openlocfilehash: 8e52845a828e272ff3b8458b299c3757b8def748
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155448"
 ---
 # <a name="utime-utime32-utime64-wutime-wutime32-wutime64"></a>_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 
@@ -103,7 +103,7 @@ int _wutime64(
 *filename*<br/>
 경로 또는 파일 이름을 포함하는 문자열에 대한 포인터입니다.
 
-*시간*<br/>
+*times*<br/>
 저장된 시간 값에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -150,7 +150,7 @@ int _wutime64(
 
 |루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|----------------------|----------------------|
-|**_utime**하십시오 **_utime32**, **_utime64**|\<sys/utime.h>|\<errno.h>|
+|**_utime**, **_utime32**, **_utime64**|\<sys/utime.h>|\<errno.h>|
 |**_utime64**|\<sys/utime.h>|\<errno.h>|
 |**_wutime**|\<utime.h> 또는 \<wchar.h>|\<errno.h>|
 

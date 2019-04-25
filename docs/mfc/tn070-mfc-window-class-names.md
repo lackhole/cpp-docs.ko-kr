@@ -8,11 +8,11 @@ helpviewer_keywords:
 - TN070 [MFC]
 ms.assetid: 90617912-dd58-4a7c-9082-ced71736d7cd
 ms.openlocfilehash: 8b06f7b3656284de18632185877fdbe382343f95
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62168039"
 ---
 # <a name="tn070-mfc-window-class-names"></a>TN070: MFC 창 클래스 이름
 
@@ -28,7 +28,7 @@ Afx:%x:%x
 Afx:%x:%x:%x:%x:%x
 ```
 
-대체 하는 16 진수는 `%x` 문자 데이터에서 입력 되는 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 구조입니다. 이 기법을 사용 하는 MFC 있도록 동일한 필요한 c + + 클래스의 여러 **WNDCLASS** 구조에 동일한 등록 된 창 클래스를 공유할 수 있습니다. 대부분의 간단한 Win32 응용 프로그램과 달리 MFC 응용 프로그램 하나만 **WNDPROC**이므로 쉽게 공유할 수 있습니다 **WNDCLASS** 시간과 메모리를 저장 하는 구조입니다. 대체 가능한 값은 `%x` 위에 표시 된 문자는 다음과 같습니다.
+대체 하는 16 진수는 `%x` 문자 데이터에서 입력 되는 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 구조입니다. MFC는이 기법을 사용 하므로 여러 C++ 클래스와 동일한 요구 **WNDCLASS** 구조에 동일한 등록 된 창 클래스를 공유할 수 있습니다. 대부분의 간단한 Win32 응용 프로그램과 달리 MFC 응용 프로그램 하나만 **WNDPROC**이므로 쉽게 공유할 수 있습니다 **WNDCLASS** 시간과 메모리를 저장 하는 구조입니다. 대체 가능한 값은 `%x` 위에 표시 된 문자는 다음과 같습니다.
 
 - **WNDCLASS.hInstance**
 

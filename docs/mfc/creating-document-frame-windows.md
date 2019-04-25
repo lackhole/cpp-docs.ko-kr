@@ -11,11 +11,11 @@ helpviewer_keywords:
 - MFC, frame windows
 ms.assetid: 8671e239-b76f-4dea-afa8-7024e6e58ff5
 ms.openlocfilehash: 66a951994a75cbd99debeb2c6511739411cdd470
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62174031"
 ---
 # <a name="creating-document-frame-windows"></a>문서 프레임 창 만들기
 

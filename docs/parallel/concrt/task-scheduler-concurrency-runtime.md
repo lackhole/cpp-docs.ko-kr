@@ -17,18 +17,18 @@ helpviewer_keywords:
 - task scheduler [Concurrency Runtime], wait function
 ms.assetid: 9aba278c-e0c9-4ede-b7c6-fedf7a365d90
 ms.openlocfilehash: c5d37d320344d2ebf83be2c939f5a7372d4af306
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57286811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180058"
 ---
 # <a name="task-scheduler-concurrency-runtime"></a>작업 Scheduler(동시성 런타임)
 
 설명서의 이 부분의 항목에서는 동시성 런타임 작업 스케줄러의 중요한 기능에 대해 설명합니다. 작업 Scheduler는 동시성 런타임을 사용하는 기존 코드의 성능을 미세 조정하려는 경우에 유용합니다.
 
 > [!IMPORTANT]
->  작업 스케줄러에서 유니버설 Windows 플랫폼 (UWP) 앱을 사용할 수 없는 경우 자세한 내용은 [비동기 작업 만들기 c + + UWP 앱 용](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)합니다.
+>  작업 스케줄러에서 유니버설 Windows 플랫폼 (UWP) 앱을 사용할 수 없는 경우 자세한 내용은 [비동기 작업 만들기 C++ UWP 앱 용](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)합니다.
 >
 >  Visual Studio 2015 이상에서는 합니다 [concurrency:: task](../../parallel/concrt/reference/task-class.md) 클래스 및 ppltasks.h에 관련된 형식은 Windows ThreadPool 해당 스케줄러로 사용 합니다. 이 항목은 ppltasks.h에서 정의된 형식에 더 이상 적용되지 않습니다. Parallel_for와 같은 병렬 알고리즘은 동시성 런타임을 기본 스케줄러로 계속 사용합니다.
 
@@ -52,8 +52,7 @@ ms.locfileid: "57286811"
 |[일정 그룹](../../parallel/concrt/schedule-groups.md)|일정 그룹의 역할을 설명합니다. 작업 간에 높은 수준의 국부성이 필요한 경우, 예를 들어 동일한 프로세서 노드에서 관련 작업 그룹을 실행하면 이점이 있는 경우 일정 그룹을 사용합니다.|
 |[간단한 작업](../../parallel/concrt/lightweight-tasks.md)|간단한 작업의 역할을 설명합니다. 간단한 작업은 동시성 런타임의 일정 예약 기능을 사용하도록 기존 코드를 조정하는 경우에 유용합니다.|
 |[컨텍스트](../../parallel/concrt/contexts.md)|컨텍스트, `concurrency::wait` 함수 및 `concurrency::Context` 클래스의 역할을 설명합니다. 컨텍스트가 차단, 차단 해제 및 양보하는 시기를 제어해야 하는 경우 또는 응용 프로그램에서 초과 구독을 사용할 수 있게 하려는 경우에 이 기능을 사용합니다.|
-|[메모리 관리 함수](../../parallel/concrt/memory-management-functions.md)|
-  `concurrency::Alloc` 및 `concurrency::Free` 함수를 설명합니다. 이러한 함수는 동시에 메모리를 할당 및 해제하여 메모리 성능을 향상시킬 수 있습니다.|
+|[메모리 관리 함수](../../parallel/concrt/memory-management-functions.md)|`concurrency::Alloc` 및 `concurrency::Free` 함수를 설명합니다. 이러한 함수는 동시에 메모리를 할당 및 해제하여 메모리 성능을 향상시킬 수 있습니다.|
 |[기타 동시성 모델 비교](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md)|우선 및 협조적 일정 예약 메커니즘 간의 차이점을 설명합니다.|
 |[PPL(병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md)|응용 프로그램에서 병렬 알고리즘과 같은 다양한 병렬 패턴을 사용하는 방법을 설명합니다.|
 |[비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)|응용 프로그램에서 비동기 에이전트를 사용하는 방법을 설명합니다.|

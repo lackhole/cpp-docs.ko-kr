@@ -22,11 +22,11 @@ helpviewer_keywords:
 - Scheduler class
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
 ms.openlocfilehash: f27dace61b0764962a78695c2a4c6b180b09d7a3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160135"
 ---
 # <a name="scheduler-class"></a>Scheduler 클래스
 
@@ -62,8 +62,7 @@ class Scheduler;
 |[RegisterShutdownEvent](#registershutdownevent)|Windows 이벤트 핸들을 전달 하면은 `_Event` 매개 변수를 스케줄러를 종료 하 고 자체를 제거 하는 경우 신호를 보낼 수 있습니다. 이벤트 신호를 받는 경우 스케줄러에 예약한는 모든 작업이 완료 됩니다. 이 메서드를 통해 여러 종료 이벤트를 등록할 수 있습니다.|
 |[릴리스](#release)|스케줄러 참조 횟수를 감소시킵니다.|
 |[ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy)|기본 스케줄러 정책의 런타임 기본값으로 다시 설정합니다. 기본 스케줄러를 만든 다음에 런타임 기본 정책 설정이 사용 됩니다.|
-|[ScheduleTask](#scheduletask)|오버로드됨. 스케줄러 내에서 간단한 작업을 예약합니다. 간단한 작업은 런타임에 의해 결정되는 일정 그룹에 배치됩니다. 
-  `_Placement` 매개 변수를 사용하는 버전은 작업이 지정된 위치에서 실행되도록 합니다.|
+|[ScheduleTask](#scheduletask)|오버로드됨. 스케줄러 내에서 간단한 작업을 예약합니다. 간단한 작업은 런타임에 의해 결정되는 일정 그룹에 배치됩니다. `_Placement` 매개 변수를 사용하는 버전은 작업이 지정된 위치에서 실행되도록 합니다.|
 |[SetDefaultSchedulerPolicy](#setdefaultschedulerpolicy)|사용자 정의 정책을 기본 스케줄러를 만드는 데 사용할 수 있습니다. 프로세스 내에서 기본 스케줄러가 없는 경우에이 메서드를 호출할 수 있습니다. 다음 유효한 호출 일까 지 적용 됩니다는 기본 정책을 설정한 후 합니다 `SetDefaultSchedulerPolicy` 또는 [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy) 메서드.|
 
 ## <a name="remarks"></a>설명
@@ -290,8 +289,7 @@ virtual ~Scheduler();
 
 ##  <a name="scheduletask"></a> ScheduleTask
 
-스케줄러 내에서 간단한 작업을 예약합니다. 간단한 작업은 런타임에 의해 결정되는 일정 그룹에 배치됩니다. 
-  `_Placement` 매개 변수를 사용하는 버전은 작업이 지정된 위치에서 실행되도록 합니다.
+스케줄러 내에서 간단한 작업을 예약합니다. 간단한 작업은 런타임에 의해 결정되는 일정 그룹에 배치됩니다. `_Placement` 매개 변수를 사용하는 버전은 작업이 지정된 위치에서 실행되도록 합니다.
 
 ```
 virtual void ScheduleTask(

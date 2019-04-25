@@ -3,11 +3,11 @@ title: 동적 레이아웃
 ms.date: 11/19/2018
 ms.assetid: 8598cfb2-c8d4-4f5a-bf2b-59dc4653e042
 ms.openlocfilehash: 396aad5b33a00021ddb5c1143c1d15c130e97eaa
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62175316"
 ---
 # <a name="dynamic-layout"></a>동적 레이아웃
 
@@ -61,7 +61,7 @@ Visual Studio 2015에서 MFC를 사용 하 여 조정할 수 있는 대화 상�
     CMFCDynamicLayout* dynamicLayout = pDialog->GetDynamicLayout();
     ```
 
-1. 동적 동작을 추가 하려는 첫 번째 컨트롤에 대 한 정적 메서드 동적 레이아웃 클래스를 만드는 데는 [MoveSettings](../mfc/reference/cmfcdynamiclayout-class.md#movesettings_structure) 컨트롤을 조정 해야 하는 방법은 형식으로 인코딩하는 구조입니다. 첫 번째 적절 한 정적 메서드를 선택 하 여이 작업을 수행 합니다. [cmfcdynamiclayout:: Movehorizontal](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontal)를 [CMFCDynamicLayout::MoveVertical](../mfc/reference/cmfcdynamiclayout-class.md#movevertical), [cmfcdynamiclayout:: Movenone](../mfc/reference/cmfcdynamiclayout-class.md#movenone), 또는 [cmfcdynamiclayout:: Movehorizontalandvertical](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontalandvertical)합니다. 이동의 가로 및/또는 세로 측면에 대한 백분율을 전달합니다. 이러한 정적 메서드는 모두 컨트롤의 이동 동작을 지정하는 데 사용할 수 있는 새로 만든 MoveSettings 개체를 반환합니다.
+1. 동적 동작을 추가 하려는 첫 번째 컨트롤에 대 한 정적 메서드 동적 레이아웃 클래스를 만드는 데는 [MoveSettings](../mfc/reference/cmfcdynamiclayout-class.md#movesettings_structure) 컨트롤을 조정 해야 하는 방법은 형식으로 인코딩하는 구조입니다. 첫 번째 적절 한 정적 메서드를 선택 하 여이 수행 합니다. [Cmfcdynamiclayout:: Movehorizontal](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontal)하십시오 [CMFCDynamicLayout::MoveVertical](../mfc/reference/cmfcdynamiclayout-class.md#movevertical)를 [cmfcdynamiclayout:: Movenone](../mfc/reference/cmfcdynamiclayout-class.md#movenone), 또는 [CMFCDynamicLayout:: MoveHorizontalAndVertical](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontalandvertical)합니다. 이동의 가로 및/또는 세로 측면에 대한 백분율을 전달합니다. 이러한 정적 메서드는 모두 컨트롤의 이동 동작을 지정하는 데 사용할 수 있는 새로 만든 MoveSettings 개체를 반환합니다.
 
    100은 대화 상자의 크기가 변경된 만큼 이동하는 것을 의미하며 컨트롤의 가장자리가 새 테두리에서 고정된 거리를 유지합니다.
 
@@ -147,4 +147,4 @@ Visual Studio 2015에서 MFC를 사용 하 여 조정할 수 있는 대화 상�
 [컨트롤 클래스](../mfc/control-classes.md)<br/>
 [대화 상자 클래스](../mfc/dialog-box-classes.md)<br/>
 [대화 상자 편집기](../windows/dialog-editor.md)<br/>
-[Visual c + + 2015의 MFC에 대 한 동적 대화 상자 레이아웃](https://mariusbancila.ro/blog/2015/07/27/dynamic-dialog-layout-for-mfc-in-visual-c-2015/)
+[시각적 개체에는 MFC에 대 한 동적 대화 상자 레이아웃 C++ 2015](https://mariusbancila.ro/blog/2015/07/27/dynamic-dialog-layout-for-mfc-in-visual-c-2015/)
