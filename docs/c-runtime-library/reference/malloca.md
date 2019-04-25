@@ -24,11 +24,11 @@ helpviewer_keywords:
 - _malloca function
 ms.assetid: 293992df-cfca-4bc9-b313-0a733a6bb936
 ms.openlocfilehash: 22a63002c900d69e8a7706a54acedf0b4b4f6376
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156878"
 ---
 # <a name="malloca"></a>_malloca
 
@@ -51,7 +51,7 @@ void *_malloca(
 
 합니다 **_malloca** 루틴의 반환을 **void** 맞춰지도록 모든 형식의 개체 저장소로 할당된 된 공간에 대 한 포인터입니다. 하는 경우 *크기* 가 0 이면 **_malloca** 길이가 0 인 항목을 할당 하 고 해당 항목에 대 한 유효한 포인터를 반환 합니다.
 
-경우 *크기* 보다 크면 **_ALLOCA_S_THRESHOLD**, 한 다음 **_malloca** 힙에서 할당 하려고 하며 공간을 할당할 수 없는 경우 null 포인터를 반환 합니다. 하는 경우 *크기* 보다 작거나 같음 **_ALLOCA_S_THRESHOLD**, 한 다음 **_malloca** 스택의 스택 오버플로 예외에 할당 하려고 공간이 없는 경우 생성 됩니다 할당 됩니다. 스택 오버플로 예외는 c + + 예외를 하지 않습니다. 이 구조적된 예외입니다. C + + 예외 처리를 사용 하는 대신 사용 해야 합니다 [구조적 예외 처리](../../cpp/structured-exception-handling-c-cpp.md) (SEH)이이 예외를 catch 합니다.
+경우 *크기* 보다 크면 **_ALLOCA_S_THRESHOLD**, 한 다음 **_malloca** 힙에서 할당 하려고 하며 공간을 할당할 수 없는 경우 null 포인터를 반환 합니다. 하는 경우 *크기* 보다 작거나 같음 **_ALLOCA_S_THRESHOLD**, 한 다음 **_malloca** 스택의 스택 오버플로 예외에 할당 하려고 공간이 없는 경우 생성 됩니다 할당 됩니다. 스택 오버플로 예외 없습니다는 C++ 예외 이 구조적된 예외입니다. 사용 하는 대신 C++ 예외 처리를 사용 해야 합니다 [구조적 예외 처리](../../cpp/structured-exception-handling-c-cpp.md) (SEH)이이 예외를 catch 합니다.
 
 ## <a name="remarks"></a>설명
 

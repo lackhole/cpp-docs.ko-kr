@@ -1,5 +1,5 @@
 ---
-title: 투기적 실행 쪽 채널에 대 한 c + + 개발자 지침
+title: C++투기적 실행 쪽 채널에 대 한 개발자 지침
 ms.date: 07/10/2018
 helpviewer_keywords:
 - Visual C++, security
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - CVE-2017-5753
 - Speculative Execution
 ms.openlocfilehash: 20e6d45c088fe92fa736539e485d6807802b368a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179321"
 ---
-# <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>투기적 실행 쪽 채널에 대 한 c + + 개발자 지침
+# <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>C++투기적 실행 쪽 채널에 대 한 개발자 지침
 
-이 문서를 식별 및 c + + 소프트웨어에서 투기적 실행 쪽 채널 하드웨어 취약성 완화에 도움이 되는 개발자를 위한 지침을 포함 합니다. 이러한 취약성 트러스트 경계에 걸쳐 중요 한 정보를 공개할 수 및 명령의 추측, 순서가의 실행을 지 원하는 프로세서에서 실행 되는 소프트웨어에 영향을 줄 수 있습니다. 이 클래스의 취약점으로 인 한이 2018 년 1 월에서에서 설명 하는 첫 번째 및 추가 배경 및에서 지침을 찾을 수 있습니다 [Microsoft 보안 권고](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)합니다.
+이 문서에는 식별 하 고에서 측면 채널 하드웨어 취약성 투기적 실행 완화에 도움이 되는 개발자를 위한 지침이 포함 되어 있습니다. C++ 소프트웨어입니다. 이러한 취약성 트러스트 경계에 걸쳐 중요 한 정보를 공개할 수 및 명령의 추측, 순서가의 실행을 지 원하는 프로세서에서 실행 되는 소프트웨어에 영향을 줄 수 있습니다. 이 클래스의 취약점으로 인 한이 2018 년 1 월에서에서 설명 하는 첫 번째 및 추가 배경 및에서 지침을 찾을 수 있습니다 [Microsoft 보안 권고](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)합니다.
 
 이 문서에서 제공 하는 지침으로 표시 하는 취약성의 클래스는 관련이 있습니다.
 
-1. CVE-2017-5753, Spectre variant 1 라고도 합니다. 이 하드웨어 취약점으로 인 한 클래스는 조건부 분기 오측의 결과로 발생 하는 투기적 실행으로 인해 발생할 수 있는 쪽 채널 관련이 있습니다. Visual Studio 2017 (버전 15.5.5부터 시작)에서 Visual c + + 컴파일러에 대 한 지원을 포함 합니다 `/Qspectre` CVE 2017-5753에 관련 된 잠재적으로 취약 한 코딩 패턴의 제한 된 집합에 대 한 컴파일 시간 완화 조치를 제공 하는 스위치입니다. 합니다 `/Qspectre` 스위치를 통해 Visual Studio 2015 업데이트 3에서 사용할 수 있는 이기도 [KB 4338871](https://support.microsoft.com/help/4338871)합니다. 에 대 한 설명서는 [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) 플래그 효과 및 사용에 자세한 정보를 제공 합니다.
+1. CVE-2017-5753, Spectre variant 1 라고도 합니다. 이 하드웨어 취약점으로 인 한 클래스는 조건부 분기 오측의 결과로 발생 하는 투기적 실행으로 인해 발생할 수 있는 쪽 채널 관련이 있습니다. 시각적 개체 C++ Visual Studio 2017 (버전 15.5.5부터 시작)에서 컴파일러에 대 한 지원을 포함 합니다 `/Qspectre` CVE 2017-5753에 관련 된 잠재적으로 취약 한 코딩 패턴의 제한 된 집합에 대 한 컴파일 시간 완화 조치를 제공 하는 스위치입니다. 합니다 `/Qspectre` 스위치를 통해 Visual Studio 2015 업데이트 3에서 사용할 수 있는 이기도 [KB 4338871](https://support.microsoft.com/help/4338871)합니다. 에 대 한 설명서는 [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) 플래그 효과 및 사용에 자세한 정보를 제공 합니다.
 
 2. CVE-2018-3639, 라고도 [잘못 된 저장소 사용 안 함 (SSB)](https://aka.ms/sescsrdssb)합니다. 이 하드웨어 취약점으로 인 한 클래스는 메모리 액세스 오측 결과로 종속 저장소를 미리 로드의 투기적 실행으로 인해 발생할 수 있는 쪽 채널 관련이 있습니다.
 
@@ -174,7 +174,7 @@ unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
 }
 ```
 
-두이 예제 모두 잘못 된 스택 할당 간접 분기 포인터 수정 한다는 점에 유의 해야 합니다. 잘못 된 수정에도 읽기 전용 메모리 일부 Cpu에서 전역 변수, 힙 할당 메모리에 발생할 가능성이 있습니다. 스택 할당 된 메모리에 대 한 Visual c + + 컴파일러 이미는 추측 버퍼 옆으로 보안 쿠키에 배치 되는 로컬 변수 다시 정렬 하 여 같은 간접 분기 스택 할당 대상을 수정 하기 더 어려운 확인 하는 단계 일부를 [/GS](https://docs.microsoft.com/cpp/build/reference/gs-buffer-security-check) 컴파일러 보안 기능입니다.
+두이 예제 모두 잘못 된 스택 할당 간접 분기 포인터 수정 한다는 점에 유의 해야 합니다. 잘못 된 수정에도 읽기 전용 메모리 일부 Cpu에서 전역 변수, 힙 할당 메모리에 발생할 가능성이 있습니다. 스택 할당 된 메모리, 시각적 개체에 대 한 C++ 컴파일러에는 이미 추측 버퍼 보안에 인접 한 배치 되는 로컬 변수 다시 정렬 하 여 같은 간접 분기 스택 할당 대상을 수정 하기 더 어려운 확인 하는 단계는 쿠키의 일부로 합니다 [/GS](https://docs.microsoft.com/cpp/build/reference/gs-buffer-security-check) 컴파일러 보안 기능입니다.
 
 ## <a name="speculative-type-confusion"></a>잘못 된 형식 혼동
 
@@ -331,7 +331,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 ### <a name="speculation-barrier-via-compiler-time-instrumentation"></a>추론 장벽을 컴파일러 타임 계측을 통해
 
-Visual Studio 2017 (버전 15.5.5부터 시작)에서 Visual c + + 컴파일러에 대 한 지원이 포함 된 `/Qspectre` CVE 2017-5753에 자동으로 제한 된 집합만 잠재적으로 취약 한 코딩 패턴에 대 한 추론 장벽을 삽입 하는 스위치와 관련 된 합니다. 에 대 한 설명서는 [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) 플래그 효과 및 사용에 자세한 정보를 제공 합니다. 이 플래그는 모든 잠재적으로 취약 한 코딩 패턴은 다루지 않습니다을 같이 개발자에 의존 하지 않아야 하의 취약점으로 인 한이이 클래스에 대 한 포괄적인 완화 하는 것이 반드시 합니다.
+시각적 개체 C++ Visual Studio 2017 (버전 15.5.5부터 시작)에서 컴파일러에 대 한 지원을 포함 합니다 `/Qspectre` 자동으로 제한 된 집합만 잠재적으로 취약 한 코딩 패턴에 대 한 추론 장벽을 삽입 하는 스위치와 관련 된 CVE-2017-5753 합니다. 에 대 한 설명서는 [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) 플래그 효과 및 사용에 자세한 정보를 제공 합니다. 이 플래그는 모든 잠재적으로 취약 한 코딩 패턴은 다루지 않습니다을 같이 개발자에 의존 하지 않아야 하의 취약점으로 인 한이이 클래스에 대 한 포괄적인 완화 하는 것이 반드시 합니다.
 
 ### <a name="masking-array-indices"></a>마스킹 배열 인덱스
 

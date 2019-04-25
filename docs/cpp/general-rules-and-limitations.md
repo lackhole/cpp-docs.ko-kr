@@ -3,11 +3,11 @@ title: 일반 규칙 및 제한 사항
 ms.date: 11/04/2016
 ms.assetid: 6c48902d-4259-4761-95d4-e421d69aa050
 ms.openlocfilehash: 931ae04ef47262f15d037a2b5eeb35bd01a8419d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153777"
 ---
 # <a name="general-rules-and-limitations"></a>일반 규칙 및 제한 사항
 
@@ -25,7 +25,7 @@ ms.locfileid: "50439232"
                                      // dllexport takes precedence.
     ```
 
-- C + +에서 전역적으로 선언 또는 정적 로컬 데이터 포인터를 초기화할 수 있습니다 또는 사용 하 여 선언 된 데이터 개체의 주소를 사용 합니다 **dllimport** C에서 오류를 생성 하는 특성 또한 사용 하 여 선언 된 함수의 주소로 정적 로컬 함수 포인터를 초기화할 수 있습니다 합니다 **dllimport** 특성입니다. C에서는 이러한 대입으로 인해 포인터가 함수의 주소 대신 DLL 가져오기 썽크(함수로 제어를 전송하는 코드 스텁)의 주소로 설정됩니다. C++에서는 포인터가 함수의 주소로 설정됩니다. 예를 들어:
+- C++을 전역적으로 선언 또는 정적 로컬 데이터 포인터를 초기화할 수 있습니다 또는 사용 하 여 선언 된 데이터 개체의 주소를 **dllimport** C에서 오류를 생성 하는 특성 또한 사용 하 여 선언 된 함수의 주소로 정적 로컬 함수 포인터를 초기화할 수 있습니다 합니다 **dllimport** 특성입니다. C에서는 이러한 대입으로 인해 포인터가 함수의 주소 대신 DLL 가져오기 썽크(함수로 제어를 전송하는 코드 스텁)의 주소로 설정됩니다. C++에서는 포인터가 함수의 주소로 설정됩니다. 예를 들어:
 
     ```cpp
     __declspec( dllimport ) void func1( void );

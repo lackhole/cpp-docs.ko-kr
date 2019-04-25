@@ -13,11 +13,11 @@ helpviewer_keywords:
 - VectorView Class
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
 ms.openlocfilehash: 02b5e15a816ec057bfb0a8201b7591e628c3ea2c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161383"
 ---
 # <a name="platformcollectionsvectorview-class"></a>Platform::Collections::VectorView 클래스
 
@@ -110,8 +110,7 @@ VectorView 개체의 특정 요소를 지정하는 0부터 시작하는 부호 �
 
 ### <a name="return-value"></a>반환 값
 
-
-  `index` 매개 변수로 지정된 요소입니다. 요소 형식은 VectorView 템플릿 매개 변수로 지정 *T*합니다.
+`index` 매개 변수로 지정된 요소입니다. 요소 형식은 VectorView 템플릿 매개 변수로 지정 *T*합니다.
 
 ## <a name="getmany"></a>  Vectorview:: Getmany 메서드
 

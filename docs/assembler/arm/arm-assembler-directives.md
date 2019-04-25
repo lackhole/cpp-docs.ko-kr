@@ -3,11 +3,11 @@ title: ARM 어셈블리 지시문
 ms.date: 08/30/2018
 ms.assetid: 9cfa8896-ec10-4e77-855a-3135c40d7d2a
 ms.openlocfilehash: 9124f893b3334e0893073332c9d5f5a1388373d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62167675"
 ---
 # <a name="arm-assembler-directives"></a>ARM 어셈블리 지시문
 
@@ -55,7 +55,7 @@ Microsoft ARM 어셈블러에서 설명 하는 ARM 어셈블리 언어를 사용
 
    이 구문을 사용 하 여 내보내기를 지정 합니다.
 
-   > **내보낼**|**GLOBAL** <em>sym</em>{**[**<em>형식</em>**]**}
+   > **EXPORT**|**GLOBAL** <em>sym</em>{**[**<em>type</em>**]**}
 
    *기호* 내보낼 기호입니다.  [*형식*] 지정한 경우 일 수 있습니다 `[DATA]` 기호 데이터를 가리키는지 나타내려면 또는 `[FUNC]` 기호 코드를 가리키는지 나타냅니다. `GLOBAL` 와 `EXPORT`는 동의어입니다.
 
@@ -75,7 +75,7 @@ Microsoft ARM 어셈블러에서 설명 하는 ARM 어셈블리 언어를 사용
 
    이 구문을 사용 하 여 가져오기를 지정 합니다.
 
-   > **가져오기**|**EXTERN** *sym*{**약한** *별칭*{**, 형식** *t*}}
+   > **IMPORT**|**EXTERN** *sym*{**, WEAK** *alias*{**, TYPE** *t*}}
 
    *기호* 가져올 기호의 이름입니다.
 

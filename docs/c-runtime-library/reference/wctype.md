@@ -22,11 +22,11 @@ helpviewer_keywords:
 - wide characters
 ms.assetid: 14aded12-4087-4123-bc48-db4e10999223
 ms.openlocfilehash: 81caf8e1ab04635d205d7b01af2d4c2896eec01c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155318"
 ---
 # <a name="wctype"></a>wctype
 
@@ -53,19 +53,19 @@ wctype_t wctype(
 
 이 함수는 와이드 문자 코드에 대한 분류 규칙을 결정합니다. 다음 호출 쌍은 모든 로캘에서 동일하게 동작하지만 구현은 "C" 로캘에서도 추가 분류 규칙을 정의할 수 있습니다.
 
-|기능|다음과 같이 사용|
+|함수|다음과 같이 사용|
 |--------------|-------------|
-|iswalnum(c)|iswctype (c, wctype ("alnum"))|
-|iswalpha(c)|iswctype (c, wctype ("알파"))|
-|iswcntrl(c)|iswctype (c, wctype ("컨트롤"))|
-|iswdigit(c)|iswctype (c, wctype ("숫자"))|
-|iswgraph(c)|iswctype (c, wctype ("그래프"))|
-|iswlower(c)|iswctype (c, wctype ("낮음"))|
-|iswprint(c)|iswctype (c, wctype ("print"))|
-|iswpunct(c)|iswctype (c, wctype ("punct"))|
-|iswspace(c)|iswctype (c, wctype ("공간"))|
-|iswupper(c)|iswctype (c, wctype ("위쪽"))|
-|iswxdigit(c)|iswctype (c, wctype ("xdigit"))|
+|iswalnum(c)|iswctype(c, wctype( "alnum" ) )|
+|iswalpha(c)|iswctype(c, wctype( "alpha" ) )|
+|iswcntrl(c)|iswctype(c, wctype( "cntrl" ) )|
+|iswdigit(c)|iswctype(c, wctype( "digit" ) )|
+|iswgraph(c)|iswctype(c, wctype( "graph" ) )|
+|iswlower(c)|iswctype(c, wctype( "lower" ) )|
+|iswprint(c)|iswctype(c, wctype( "print" ) )|
+|iswpunct(c)|iswctype(c, wctype( "punct" ) )|
+|iswspace(c)|iswctype(c, wctype( "space" ) )|
+|iswupper(c)|iswctype(c, wctype( "upper" ) )|
+|iswxdigit(c)|iswctype(c, wctype( "xdigit" ) )|
 
 ## <a name="requirements"></a>요구 사항
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
 ms.openlocfilehash: 597f8e32e2da95370169cdbfe2ccd209296322cc
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161671"
 ---
 # <a name="platformarray-class"></a>Platform::Array 클래스
 
@@ -108,8 +108,7 @@ T& get(unsigned int index)  const;
 
 ### <a name="return-value"></a>반환 값
 
-
-  `index` 매개 변수로 지정된 배열 요소입니다.
+`index` 매개 변수로 지정된 배열 요소입니다.
 
 ## <a name="value"></a>  Array:: value 속성
 
@@ -127,5 +126,5 @@ property Array^ Value;
 
 ## <a name="see-also"></a>참고자료
 
-[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)<br/>
+[Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)<br/>
 [Array 및 WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - User Account Control [C++]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
 ms.openlocfilehash: 3702462ec892025cfb4f24d9c91e6db705b1b9a5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179255"
 ---
 # <a name="how-user-account-control-uac-affects-your-application"></a>UAC(사용자 계정 컨트롤)가 애플리케이션에 주는 영향
 
@@ -26,7 +26,7 @@ UAC를 사용하지 않는 Windows Vista에 Visual C++ 프로젝트를 빌드하
 
 ## <a name="applications-that-require-administrative-privileges"></a>관리 권한이 필요한 응용 프로그램
 
-기본적으로 Visual c + + 링커는 실행 수준으로 응용 프로그램 매니페스트에 UAC 조각의 포함 `asInvoker`합니다. 관리 권한이 있어야 응용 프로그램이 제대로 실행되는 경우(예: 레지스트리의 HKLM 노드를 수정하거나 Windows 디렉터리와 같은 디스크의 보호된 영역에 쓰는 경우) 응용 프로그램을 수정해야 합니다.
+기본적으로 시각적 개체 C++ 링커 실행 수준으로 응용 프로그램 매니페스트에 UAC 조각을 포함 `asInvoker`합니다. 관리 권한이 있어야 응용 프로그램이 제대로 실행되는 경우(예: 레지스트리의 HKLM 노드를 수정하거나 Windows 디렉터리와 같은 디스크의 보호된 영역에 쓰는 경우) 응용 프로그램을 수정해야 합니다.
 
 첫 번째 옵션은 수정 하 여 실행 수준을 변경 하려면 매니페스트의 UAC 조각을 *requireAdministrator*합니다. 그러면 응용 프로그램이 실행되기 전에 사용자에게 관리자 자격 증명을 요구합니다. 이 작업을 수행 하는 방법에 대 한 정보를 참조 하세요 [/MANIFESTUAC (매니페스트에 UAC 포함 정보)](../build/reference/manifestuac-embeds-uac-information-in-manifest.md)합니다.
 

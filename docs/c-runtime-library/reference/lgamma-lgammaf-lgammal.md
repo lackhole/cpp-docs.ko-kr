@@ -31,11 +31,11 @@ helpviewer_keywords:
 - lgammaf function
 ms.assetid: 6e326c58-7077-481a-a329-c82ae56ae9e6
 ms.openlocfilehash: 43ce1599ab9161b9fadf5643ddd2ec739ab2d8b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157308"
 ---
 # <a name="lgamma-lgammaf-lgammal"></a>lgamma, lgammaf, lgammal
 
@@ -66,7 +66,7 @@ long double lgamma( long double x ); //C++ only
 |문제|반환|
 |-----------|------------|
 |*x* = NaN|NaN|
-|*x* ±0 =|+INFINITY|
+|*x* = ±0|+INFINITY|
 |*x*= 음의 정수|+INFINITY|
 |±INFINITY|+INFINITY|
 |극 오류|+HUGE_VAL, +HUGE_VALF 또는 +HUGE_VALL|
@@ -76,7 +76,7 @@ long double lgamma( long double x ); //C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **lgamma** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **lgamma** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **lgamma** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **lgamma** 항상 받아서 반환 된 **double**합니다.
 
 X가 유리수 인 경우이 함수는 (x-1)의 계승의 로그를 반환 합니다.
 
@@ -84,7 +84,7 @@ X가 유리수 인 경우이 함수는 (x-1)의 계승의 로그를 반환 합�
 
 |기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**lgamma**하십시오 **lgammaf**, **lgammal**|\<math.h>|\<cmath>|
+|**lgamma**, **lgammaf**, **lgammal**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
