@@ -34,11 +34,11 @@ helpviewer_keywords:
 - wcstoimax function
 ms.assetid: 4530d3dc-aaac-4a76-b7cf-29ae3c98d0ae
 ms.openlocfilehash: e0a320f90b2c0f8653109a6ae0056c4c0cdd7455
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176293"
 ---
 # <a name="strtoimax-strtoimaxl-wcstoimax-wcstoimaxl"></a>strtoimax, _strtoimax_l, wcstoimax, _wcstoimax_l
 
@@ -120,7 +120,7 @@ A *공백* 공백 및 탭 문자가 무시 되는 구성 될 수 있습니다 *�
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**strtoimax**하십시오 **_strtoimax_l**하십시오 **wcstoimax**, **_wcstoimax_l**|\<inttypes.h>|
+|**strtoimax**, **_strtoimax_l**, **wcstoimax**, **_wcstoimax_l**|\<inttypes.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

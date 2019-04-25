@@ -7,11 +7,11 @@ helpviewer_keywords:
 - static libraries, MFC
 ms.assetid: c3f62b0e-3f13-42c5-9859-d3890d0c3e1d
 ms.openlocfilehash: be4fff19b812ef3dfdafc3270b4923a02e456cee
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151268"
 ---
 # <a name="application-type-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 애플리케이션 종류
 

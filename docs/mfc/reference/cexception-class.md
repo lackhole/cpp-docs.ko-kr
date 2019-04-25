@@ -13,11 +13,11 @@ helpviewer_keywords:
 - CException [MFC], ReportError
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
 ms.openlocfilehash: 689afa2ffbc27feec6f9e1704a6b295d5eabfaee
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62164002"
 ---
 # <a name="cexception-class"></a>CException 클래스
 
@@ -115,7 +115,7 @@ void Delete();
 
 개체가 생성 될 때 개체를 삭제할지 여부를 지정할 수 있습니다. 자세한 내용은 [CException::CException](#cexception)합니다.
 
-호출 해야 `Delete` c + +를 사용 하는 경우 **시도**- **catch** 메커니즘입니다. MFC 매크로 사용 하는 경우 **시도** 하 고 **CATCH**, 이러한 매크로 자동으로이 함수를 호출 합니다.
+호출 해야 `Delete` 사용 하는 경우는 C++ **시도**- **catch** 메커니즘입니다. MFC 매크로 사용 하는 경우 **시도** 하 고 **CATCH**, 이러한 매크로 자동으로이 함수를 호출 합니다.
 
 ### <a name="example"></a>예제
 

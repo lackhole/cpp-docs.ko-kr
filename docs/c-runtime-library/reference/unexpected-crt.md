@@ -21,11 +21,11 @@ helpviewer_keywords:
 - unexpected function
 ms.assetid: 2f873763-15ad-4556-a924-dcf28f2b52b4
 ms.openlocfilehash: 78538c0a10e183e72c742b041b297275c0859a03
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155487"
 ---
 # <a name="unexpected-crt"></a>unexpected(CRT)
 
@@ -39,7 +39,7 @@ void unexpected( void );
 
 ## <a name="remarks"></a>설명
 
-합니다 **예기치 않은** 루틴 c + + 예외 처리의 현재 구현에서 사용 되지 않습니다. **예기치 않은** 호출 **종료** 기본적으로 합니다. 사용자 지정 종료 함수를 작성 하 고 호출 하 여이 기본 동작을 변경할 수 있습니다 **set_unexpected** 인수로 함수의 이름입니다. **예기치 않은** 인수로 주어진 마지막 함수 호출 **set_unexpected**합니다.
+합니다 **예기치 않은** 루틴의 현재 구현에서 사용 되지 않는 C++ 예외 처리 합니다. **예기치 않은** 호출 **종료** 기본적으로 합니다. 사용자 지정 종료 함수를 작성 하 고 호출 하 여이 기본 동작을 변경할 수 있습니다 **set_unexpected** 인수로 함수의 이름입니다. **예기치 않은** 인수로 주어진 마지막 함수 호출 **set_unexpected**합니다.
 
 ## <a name="requirements"></a>요구 사항
 

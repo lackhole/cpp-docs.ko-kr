@@ -33,11 +33,11 @@ helpviewer_keywords:
 - isnan function
 ms.assetid: 391fbc5b-89a4-4fba-997e-68f1131caf82
 ms.openlocfilehash: 8a907dd33803cebd7bc5d71789834d115333b6a0
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157351"
 ---
 # <a name="isnan-isnan-isnanf"></a>isnan, _isnan, _isnanf
 
@@ -73,13 +73,13 @@ bool isnan(
 
 C에서 **isnan** 매크로 및 **_isnan** 및 **_isnanf** 하는 경우 함수는 0이 아닌 값을 반환 인수 *x* nan이 고 그렇지 않으면 이러한 0을 반환 합니다.
 
-C + +에서는 합니다 **isnan** 템플릿 함수를 반환 **true** 경우 인수 *x* nan; 그렇지 않으면 반환 **false**합니다.
+C++의 **isnan** 템플릿 함수의 반환 **true** 경우 인수 *x* nan; 그렇지 않으면 반환 **false**.
 
 ## <a name="remarks"></a>설명
 
 NaN 값을 다른 NaN 값과 동일한 값으로 비교 하기 때문에 하나를 검색 하려면 다음 함수 또는 매크로 중 하나를 사용 해야 합니다. NaN은 지정된 된 형식에 대 한 IEEE-754 부동 소수점 형식에서 부동 소수점 연산의 결과 나타낼 수 없는 경우 생성 됩니다. 출력에 NaN이 나타나는 하는 방법에 대 한 자세한 내용은 [printf](printf-printf-l-wprintf-wprintf-l.md)합니다.
 
-C + +로 컴파일된 경우 합니다 **isnan** 매크로 정의 하지 않은 **isnan** 템플릿 함수가 대신 정의 됩니다. 매크로 동일 하 게 동작 하지만 형식의 값을 반환 **bool** 정수 대신 합니다.
+로 컴파일된 경우 C++의 **isnan** 매크로 정의 하지 않은 **isnan** 템플릿 함수가 대신 정의 됩니다. 매크로 동일 하 게 동작 하지만 형식의 값을 반환 **bool** 정수 대신 합니다.
 
 합니다 **_isnan** 하 고 **_isnanf** 함수는 Microsoft 전용입니다. 합니다 **_isnanf** 함수는 x64 용으로 컴파일된 경우에 사용할 수만 있습니다.
 

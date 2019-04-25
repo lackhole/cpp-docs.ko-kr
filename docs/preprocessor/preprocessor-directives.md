@@ -1,4 +1,4 @@
-﻿---
+---
 title: 전처리기 지시문
 ms.date: 06/28/2018
 helpviewer_keywords:
@@ -6,11 +6,11 @@ helpviewer_keywords:
 - preprocessor, directives
 ms.assetid: e0fc4564-b6cf-4a36-bf51-6ccd7abd0a94
 ms.openlocfilehash: 9481e977f2afb3de27a74278893a217fde48044b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179973"
 ---
 # <a name="preprocessor-directives"></a>전처리기 지시문
 
@@ -27,7 +27,7 @@ ms.locfileid: "50608028"
 |[#else](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|[#ifdef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#line](../preprocessor/hash-line-directive-c-cpp.md)|[#endif](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|
 |[#ifndef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)|||
 
-숫자 기호 (**#**)는 지시문을 포함하는 행의 비공백 문자중 첫 번째 문자여야 합니다. 공백 문자는 숫자 기호와 지시문의 첫 문자 사이에 나타날 수 있습니다. 일부 지시문에는 인수 또는 값을 함께 사용합니다. 지시문의 일부인 인수 또는 값을 제외한 지시문 뒤에 오는 문자는 한 줄 주석 구분 기호(**//**) 뒤에 오거나 주석 구분 기호 ( __/ \*\*/__)로 묶여야 합니다. 전처리기 지시문이 포함된 줄의 끝에 백슬래시(**\\**)를 사용하여 다음 줄로 연속시킬 수 있습니다.
+숫자 기호 (**#**)는 지시문을 포함하는 행의 비공백 문자중 첫 번째 문자여야 합니다. 공백 문자는 숫자 기호와 지시문의 첫 문자 사이에 나타날 수 있습니다. 일부 지시문에는 인수 또는 값을 함께 사용합니다. 지시문의 일부인 인수 또는 값을 제외한 지시문 뒤에 오는 문자는 한 줄 주석 구분 기호(**//**) 뒤에 오거나 주석 구분 기호 (__/\*  \*/__) 로 묶여야 합니다. 전처리기 지시문이 포함된 줄의 끝에 백슬래시(**\\**)를 사용하여 다음 줄로 연속시킬 수 있습니다
 
 전처리기 지시문은 소스 파일의 어느 곳에나 나타날 수 있지만 소스 파일의 나머지 부분에만 적용됩니다.
 
