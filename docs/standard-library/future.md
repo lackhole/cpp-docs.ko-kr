@@ -5,11 +5,11 @@ f1_keywords:
 - <future>
 ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2
 ms.openlocfilehash: 189a9f16b65ae74fc2a86bee62bf8bd548c486aa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159862"
 ---
 # <a name="ltfuturegt"></a>&lt;future&gt;
 
@@ -40,7 +40,7 @@ ms.locfileid: "50555766"
 
 각 템플릿 클래스 `promise`, `future`, 및 `shared_future` 유형에 대 한 특수화가 **void** 및 저장 하 고 참조로 값을 검색 하는 부분 특수화 합니다. 이러한 특수화는 반환된 값을 저장 및 검색하는 함수의 시그니처와 의미 체계에만 있는 기본 템플릿과 다릅니다.
 
-템플릿 클래스 `future` 및 `shared_future`는 이전 버전과의 호환성을 위해 유지된 경우를 제외하고 소멸자에서 절대 차단되지 않습니다. 모든 다른 future와 달리 `std::async`로 시작된 작업에 연결된 `future` 또는 마지막 `shared_future`에 대한 소멸자는 작업이 완료되지 않은 경우 차단됩니다. 즉, 이 스레드가 아직 `.get()` 또는 `.wait()`를 호출하지 않아 작업이 계속 실행 중일 경우 소멸자가 차단됩니다. 다음 유용성 메모는 초안 표준에서 `std::async`에 대한 설명에 추가되었습니다. "[참고: std::async에서 가져온 future가 로컬 범위 외부로 이동되면 해당 future를 사용하는 다른 코드는 공유된 상태가 준비가 되도록 future의 소멸자가 차단될 수 있다는 것을 인식해야 합니다. - 메모 종료]" 다른 모든 경우에는 `future` 및 `shared_future` 소멸자가 필요하고 절대 차단되지 않도록 보장됩니다.
+템플릿 클래스 `future` 고 `shared_future` 되지 이전 버전과 호환성을 위해 보존 되는 한 가지 경우에서 제외 하 고 해당 소멸자에서을 차단 합니다. 다른 모든 future와 달리에 대 한는 `future`-또는 마지막 `shared_future`-로 시작 하는 작업에 연결 된 `std::async`소멸자 블록, 작업이 완료 되지 않은 경우 즉, 차단이 스레드가 아직 호출 하지 않은 경우 `.get()` 또는 `.wait()`작업이 계속 실행 되 고 있습니다. 설명을 추가한 다음 유용성 메모 `std::async` 초안 표준에서: "[참고: 미래를 사용 하는 다른 코드 준비 되도록 공유 상태에 대 한 향후의 소멸자가 차단 될를 인식 해야 std::async에서 가져온 future를 로컬 범위 외부로 이동 하는 경우, 최종 참고] "다른 모든 경우에 `future` 및 `shared_future` 소멸자는이 필요 하 고 차단 하지 않도록 보장 됩니다.
 
 ## <a name="members"></a>멤버
 

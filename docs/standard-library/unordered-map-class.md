@@ -139,11 +139,11 @@ helpviewer_keywords:
 - std::unordered_map::swap
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
 ms.openlocfilehash: 51b84b8a48365189abf1efa111ae2186af0cab11
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159147"
 ---
 # <a name="unorderedmap-class"></a>unordered_map 클래스
 
@@ -168,7 +168,7 @@ class unordered_map;
 |*Ty*|매핑된 형식입니다.|
 |*해시*|해시 함수 개체 형식입니다.|
 |*pred*|같음 비교 함수 개체 형식입니다.|
-|*할당*|할당자 클래스입니다.|
+|*Alloc*|할당자 클래스입니다.|
 
 ## <a name="members"></a>멤버
 
@@ -1024,7 +1024,7 @@ pair<iterator, bool>  emplace( Args&&... args);
 
 |매개 변수|설명|
 |-|-|
-|*인수*|값이 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 unordered_map에 삽입되는 요소를 생성하기 위해 전달되는 인수입니다.|
+|*args*|값이 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 unordered_map에 삽입되는 요소를 생성하기 위해 전달되는 인수입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -1053,7 +1053,7 @@ iterator emplace_hint(const_iterator where, Args&&... args);
 
 |매개 변수|설명|
 |-|-|
-|*인수*|unordered_map이 해당 요소를 이미 포함하고 있지 않거나, 보다 일반적으로는 키가 동등하게 정렬된 요소를 이미 포함하고 있지 않을 경우 unordered_map에 삽입되는 요소를 생성하기 위해 전달되는 인수입니다.|
+|*args*|unordered_map이 해당 요소를 이미 포함하고 있지 않거나, 보다 일반적으로는 키가 동등하게 정렬된 요소를 이미 포함하고 있지 않을 경우 unordered_map에 삽입되는 요소를 생성하기 위해 전달되는 인수입니다.|
 |*where*|올바른 삽입 지점 검색을 시작할 위치와 관련된 힌트입니다.|
 
 ### <a name="return-value"></a>반환 값
@@ -1243,7 +1243,7 @@ size_type erase(const key_type& Key);
 *Where*<br/>
 제거할 요소의 위치입니다.
 
-*첫 번째*<br/>
+*첫째*<br/>
 제거할 첫 번째 요소의 위치입니다.
 
 *마지막*<br/>
@@ -1472,10 +1472,10 @@ IList);
 
 |매개 변수|설명|
 |-|-|
-|*val*|키가 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 unordered_map에 삽입되는 요소의 값입니다.|
+|*Val*|키가 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 unordered_map에 삽입되는 요소의 값입니다.|
 |*Where*|올바른 삽입 지점 검색을 시작할 위치입니다.|
 |*ValTy*|Unordered_map의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하는 템플릿 매개 변수 [value_type](../standard-library/map-class.md#value_type), 및 완벽 하 게 전달 *Val* 인수로 합니다.|
-|*첫 번째*|복사할 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 마지막 요소 바로 다음 위치입니다.|
 |*InputIterator*|[value_type](../standard-library/map-class.md#value_type) 개체를 생성하는 데 사용할 수 있는 형식의 요소를 가리키는 [입력 반복기](../standard-library/input-iterator-tag-struct.md)의 요구 사항을 충족하는 템플릿 함수 인수입니다.|
 |*IList*|요소를 복사할 원본 [initializer_list](../standard-library/initializer-list.md)입니다.|
@@ -2099,7 +2099,7 @@ Ty& operator[](Key&& keyval);
 
 |매개 변수|설명|
 |-|-|
-|*keyval*|찾거나 삽입할 키 값입니다.|
+|*Keyval*|찾거나 삽입할 키 값입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -2632,7 +2632,7 @@ unordered_map(
 |*해시*|저장할 해시 함수 개체입니다.|
 |*Bucket_count*|최소 버킷 수입니다.|
 |*오른쪽*|복사할 컨테이너입니다.|
-|*첫 번째*||
+|*첫째*||
 |*마지막*||
 |*IList*|복사할 요소가 포함된 initializer_list입니다.|
 

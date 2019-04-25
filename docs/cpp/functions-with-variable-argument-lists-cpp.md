@@ -1,5 +1,5 @@
 ---
-title: 가변 인수를 사용 하 여 함수 목록 (c + +)
+title: 가변 인수 목록 사용 하 여 함수 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - arguments [C++], variable number of
@@ -10,13 +10,13 @@ helpviewer_keywords:
 - function calls, variable number of arguments
 ms.assetid: 27c2f83a-21dd-44c6-913c-2834cb944703
 ms.openlocfilehash: 1f366af6f4058ffb8356017d59a7c176a978b860
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153855"
 ---
-# <a name="functions-with-variable-argument-lists--c"></a>가변 인수를 사용 하 여 함수 목록 (c + +)
+# <a name="functions-with-variable-argument-lists--c"></a>가변 인수 목록 사용 하 여 함수 (C++)
 
 마지막 멤버가 줄임표(...)인 함수 선언에서는 여러 가지 인수를 사용할 수 있습니다. 이러한 경우 C++에서는 명시적으로 선언된 인수에만 형식 검사를 제공합니다. 인수의 수와 형식까지 변경될 수 있는 정도의 일반적인 수준으로 함수를 만들어야 하는 경우 가변 인수 목록을 사용할 수 있습니다. 함수 패밀리는 가변 인수 목록을 사용 하는 함수의 예입니다. `printf` *인수 선언 목록*
 

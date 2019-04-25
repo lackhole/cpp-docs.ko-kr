@@ -21,11 +21,11 @@ helpviewer_keywords:
 - A4509
 ms.assetid: 52b38267-6023-4bdc-a0ef-863362f48eec
 ms.openlocfilehash: 867ef50065c6ed63a4da6d37523bd5a1f3cbadba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62167845"
 ---
 # <a name="arm-assembler-diagnostic-messages"></a>ARM 어셈블러 진단 메시지
 
@@ -33,7 +33,7 @@ Microsoft ARM 어셈블러 (*armasm*)가 발견 될 때 진단 경고 및 오류
 
 ## <a name="syntax"></a>구문
 
-> <em>filename</em>**(**<em>줄 번호</em>**):** \[ **오류**|**경고** ] **A**<em>번호</em>**:** *메시지*
+> <em>filename</em>**(**<em>line-number</em>**) :** \[**error**|**warning**] **A**<em>number</em>**:** *message*
 
 ## <a name="diagnostic-messages---errors"></a>진단 메시지-오류
 
@@ -60,7 +60,7 @@ ARM 아키텍처는이 명령이 실행 될 때 일어나 보장할 수 없습�
 label
 ```
 
-> THUMB 지역에서 사용할 수 없습니다 A2202: Pre-UAL 명령 구문
+> A2202: THUMB 지역에서 사용할 수 없습니다 사전 UAL 명령 구문
 
 Thumb 코드 통합 어셈블러 언어 (UAL) 구문을 사용 해야 합니다.  오래 된 구문을 사용할 수 없습니다.
 
@@ -69,7 +69,7 @@ Thumb 코드 통합 어셈블러 언어 (UAL) 구문을 사용 해야 합니다.
     ADDSEQ r0, r1         ; OK
 ```
 
-> A2513: 회전 짝수 여야 합니다.
+> A2513: 회전은 짝수 여야 합니다.
 
 ARM 모드에서 상수를 지정 하는 것에 대 한 대체 구문이 있습니다.  작성 하는 대신 `#<const>`를 작성할 수 있습니다 `#<byte>,#<rot>`에 값을 회전 하 여 얻은 상수 값을 나타내는 `<byte>` 오른쪽으로 `<rot>`입니다.  이 구문을 사용 하는 경우에 값을 확인 해야 `<rot>` 도 합니다.
 
@@ -78,7 +78,7 @@ ARM 모드에서 상수를 지정 하는 것에 대 한 대체 구문이 있습�
     MOV r0, #4, #1       ; A2513: Rotation must be even
 ```
 
-> A2557: 잘못 된 다시 쓸 바이트 수
+> A2557: 쓰기 저장 하는 바이트 수가 잘못 되었습니다
 
 NEON 구조에 로드 및 저장 지침 (`VLDn`, `VSTn`)에 기본 레지스터에 쓰기 저장을 지정 하기 위한 구문은 대체 합니다.  느낌표 (!) 주소 뒤에 배치 하는 대신 기본 등록에 추가할 오프셋을 나타내는 즉 치 값을 지정할 수 있습니다.  이 구문을 사용 하는 경우 로드 되거나 해당 명령에 의해 저장 된 바이트 수를 정확 하 게 지정 해야 합니다.
 
@@ -104,7 +104,7 @@ AREA |.myarea2|,ALIGN=3
 ALIGN 8           ; OK
 ```
 
-> A4508: 회전이 상수의 사용은 사용 되지 않습니다.
+> A4508: 이 회전된 상수 사용은 사용 되지 않습니다.
 
 ARM 모드에서 상수를 지정 하는 것에 대 한 대체 구문이 있습니다.  작성 하는 대신 `#<const>`를 작성할 수 있습니다 `#<byte>,#<rot>`에 값을 회전 하 여 얻은 상수 값을 나타내는 `<byte>` 오른쪽으로 `<rot>`입니다.  일부 컨텍스트에서 ARM은 않으며 이러한 회전된 상수 사용 이러한 경우에 사용할 기본 `#<const>` 구문 대신 합니다.
 

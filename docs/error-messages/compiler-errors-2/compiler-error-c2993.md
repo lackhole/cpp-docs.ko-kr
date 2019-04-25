@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2993
 ms.assetid: 4ffd2b78-654b-46aa-95a6-b62101cf91c8
 ms.openlocfilehash: 5be4836332f67f2064f60a3b058db159a18ca1e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160889"
 ---
 # <a name="compiler-error-c2993"></a>컴파일러 오류 C2993
 
@@ -36,9 +36,9 @@ template <class T, struct MyStruct S>   // C2993
 class CMyClass {};
 ```
 
-이 오류는 Visual Studio.NET 2003에서 수행 된 컴파일러 규칙 작업의 결과로 생성 됩니다: 부동 소수점 비형식 템플릿 매개 변수를 더 이상 허용 합니다. C + + 표준 부동 소수점 비형식 템플릿 매개 변수 허용 하지 않습니다.
+이 오류는 Visual Studio.NET 2003에서 수행 된 컴파일러 규칙 작업의 결과로 생성 됩니다: 부동 소수점 비형식 템플릿 매개 변수를 더 이상 허용 합니다. C++ 표준 부동 소수점 비형식 템플릿 매개 변수 허용 하지 않습니다.
 
-함수 템플릿을 인 경우 부동 전달할 함수 인수를 사용 하 여 (이 코드는 Visual c + +의 Visual Studio.NET 2003 및 VISUAL Studio 버전에서 사용할 수는) 비형식 템플릿 매개 변수를 가리킵니다. 쉬운 해결 방법은 없습니다 있는지 클래스 템플릿입니다.
+부동을 전달할 함수 인수를 사용 하 여 지점 비형식 템플릿 매개 변수 함수 템플릿으로 인 경우 (이 코드를 시각적 개체의 Visual Studio.NET 2003 및 VISUAL Studio 버전에서 사용할 수 C++). 쉬운 해결 방법은 없습니다 있는지 클래스 템플릿입니다.
 
 ```
 // C2993b.cpp

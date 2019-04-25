@@ -9,11 +9,11 @@ helpviewer_keywords:
 - tasks [Concurrency Runtime]
 ms.assetid: 42f05ac3-2098-494a-ba84-737fcdcad077
 ms.openlocfilehash: c9f18dfd1498538ce3700fd73a27ce6f6088ee42
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180045"
 ---
 # <a name="task-parallelism-concurrency-runtime"></a>작업 병렬 처리(동시성 런타임)
 
@@ -108,10 +108,10 @@ ms.locfileid: "51331219"
 
 작업을 실행하는 동안 예외가 throw되면 런타임은 `task::get`이나 `task::wait` 또는 작업 기반 연속에 대한 후속 호출에서 해당 예외를 마샬링합니다. 작업 예외 처리 메커니즘에 대 한 자세한 내용은 참조 하세요. [예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)합니다.
 
-사용 하는 예제에 대 한 `task`, [concurrency:: task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), 취소를 참조 하십시오 [연습:를 사용 하 여 작업 연결 및 XML HTTP 요청](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)합니다. `task_completion_event` 클래스는 이 문서의 뒷부분에 설명되어 있습니다.
+사용 하는 예로 `task`, [concurrency:: task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), 취소 참조 [연습: 작업 및 XML HTTP 요청을 사용 하 여 연결](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)합니다. `task_completion_event` 클래스는 이 문서의 뒷부분에 설명되어 있습니다.
 
 > [!TIP]
->  UWP 앱에서 작업에 관련 된 세부 정보에 알아보려면 [c + +의 비동기 프로그래밍](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) 하 고 [비동기 작업 만들기 c + + UWP 앱 용](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)합니다.
+>  UWP 앱에서 작업에 관련 된 세부 정보에 알아보려면 [의 비동기 프로그래밍 C++ ](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) 하 고 [비동기 작업 만들기 C++ UWP 앱 용](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
 
 ##  <a name="continuations"></a> 연속 작업
 
@@ -123,7 +123,7 @@ ms.locfileid: "51331219"
 
 - 시작되기 전이나 실행 중일 때 함께 연속 작업을 취소합니다.
 
-- 연속 작업을 예약하는 방법에 대한 힌트를 제공합니다. (유니버설 Windows 플랫폼 (UWP) 앱에 적용 됩니다. 자세한 내용은 [비동기 작업 만들기 c + + UWP 앱 용](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).)
+- 연속 작업을 예약하는 방법에 대한 힌트를 제공합니다. (유니버설 Windows 플랫폼 (UWP) 앱에 적용 됩니다. 자세한 내용은 [비동기 작업 만들기 C++ UWP 앱 용](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).)
 
 - 동일한 선행 작업에서 여러 개의 연속 작업을 호출합니다.
 
@@ -183,7 +183,7 @@ ms.locfileid: "51331219"
 
 [!code-cpp[concrt-eh-when_all#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_10.cpp)]
 
-C + + 및 XAML을 사용 하 여 디스크에 파일 집합을 기록 하는 UWP 앱을 고려해 야 합니다. 다음 예제에서는 `when_all` 및 `observe_all_exceptions`를 사용하여 프로그램에서 모든 예외를 관찰하도록 하는 방법을 보여 줍니다.
+UWP 앱을 사용 하는 것이 좋습니다 C++ 및 XAML 파일 집합을 디스크에 씁니다. 다음 예제에서는 `when_all` 및 `observe_all_exceptions`를 사용하여 프로그램에서 모든 예외를 관찰하도록 하는 방법을 보여 줍니다.
 
 [!code-cpp[concrt-eh-when_all#2](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_11.cpp)]
 
@@ -244,7 +244,7 @@ C + + 및 XAML을 사용 하 여 디스크에 파일 집합을 기록 하는 UWP
 
 합니다 [concurrency:: task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) 클래스에 이러한 작업의 컴퍼지션을 간소화 하는 데 도움이 됩니다. `task` 클래스처럼 형식 매개 변수 `T`는 작업에 의해 생성되는 결과의 형식입니다. 작업에서 값을 반환하지 않는 경우 이 형식은 `void`일 수 있습니다. `T`는 `const` 한정자를 사용할 수 없습니다. 일반적으로 `task_completion_event` 개체는 값을 사용할 수 있을 때 신호를 보내는 작업이나 스레드에 제공됩니다. 동시에 하나 이상의 작업이 해당 이벤트의 수신기로 설정됩니다. 이벤트가 설정되면 수신기 작업이 완료되고 작업의 연속 실행이 예약됩니다.
 
-사용 하는 예제에 대 한 `task_completion_event` 지연 후 완료 되는 작업을 구현 하려면 참조 [방법: 해당 완료 된 후는 지연 작업 만들기](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md)합니다.
+사용 하는 예로 `task_completion_event` 지연 후 완료 되는 작업을 구현 하려면 참조 [방법: 지연 후 완료 되는 작업을 만드는](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md)합니다.
 
 ##  <a name="task-groups"></a> 작업 그룹
 
@@ -299,7 +299,7 @@ Message from task: 42
 
 `parallel_invoke` 알고리즘은 작업을 동시에 실행하므로 출력 메시지의 순서가 다를 수 있습니다.
 
-사용 하는 방법을 보여 주는 전체 예제는 `parallel_invoke` 알고리즘인 참조 [방법: parallel_invoke를 사용 하 여 병렬 정렬 루틴 작성](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md) 및 [방법: parallel_invoke 병렬 작업 실행를사용하여](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md). 사용 하는 전체 예제는 `task_group` 비동기 미래를 구현 하 여 참조를 클래스 [연습: 미래 구현](../../parallel/concrt/walkthrough-implementing-futures.md)합니다.
+사용 하는 방법을 보여 주는 전체 예제는 `parallel_invoke` 알고리즘 참조 [방법: Parallel_invoke를 사용 하 여 병렬 정렬 루틴 작성](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md) 고 [방법: Parallel_invoke 병렬 작업 실행을 사용 하 여](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)입니다. 사용 하는 전체 예제는 `task_group` 비동기 미래를 구현 하 여 참조를 클래스 [연습: Future 구현](../../parallel/concrt/walkthrough-implementing-futures.md)합니다.
 
 ##  <a name="robust"></a> 강력한 프로그래밍
 
