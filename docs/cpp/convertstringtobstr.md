@@ -7,17 +7,17 @@ helpviewer_keywords:
 - ConvertStringToBSTR function
 ms.assetid: 071f9b3b-9643-4e06-a1e5-de96ed15bab2
 ms.openlocfilehash: 5e7d8abd29033fc88dae1e83fcc6467fb0ace46f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154622"
 ---
 # <a name="convertstringtobstr"></a>ConvertStringToBSTR
 
 **Microsoft 전용**
 
-변환 된 `char *` 값을 `BSTR`.
+`char *` 값을 `BSTR` 형식으로 변환합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -62,7 +62,7 @@ BSTR text: Test
 
 **헤더:** \<comutil.h >
 
-**Lib:** comsuppw.lib 또는 comsuppwd.lib (참조 [/zc: wchar_t (wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 자세한)
+**Lib:** comsuppw.lib 또는 comsuppwd.lib(자세한 내용은 [/zc: wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조)
 
 ## <a name="see-also"></a>참고자료
 

@@ -31,11 +31,11 @@ helpviewer_keywords:
 - nearbyintl function
 ms.assetid: dd39cb68-96b0-434b-820f-6ff2ea65584f
 ms.openlocfilehash: 827286c840c6564c8c3f8b351197b0201509d241
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156202"
 ---
 # <a name="nearbyint-nearbyintf-nearbyintl"></a>nearbyint, nearbyintf, nearbyintl
 
@@ -77,7 +77,7 @@ long double nearbyint( long double x ); //C++ only
 
 최대 부동 소수점 값은 정확한 정수이므로 이 함수 자체는 오버플로되지 않으며, 사용하는 함수의 버전에 따라 출력이 반환 값을 오버플로할 수는 있습니다.
 
-C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **nearbyint** 및 반환 하는 **float** 하거나 **긴** **double** 매개 변수입니다. C 프로그램에서 **nearbyint** 항상 double 값 두 개를 사용 하며 double 값을 반환 합니다.
+C++오버 로드를 호출할 수 있도록 오버 로드를 허용 **nearbyint** 및 반환 하는 **float** 하거나 **긴** **double** 매개 변수입니다. C 프로그램에서 **nearbyint** 항상 double 값 두 개를 사용 하며 double 값을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

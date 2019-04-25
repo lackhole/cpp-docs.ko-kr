@@ -10,11 +10,11 @@ helpviewer_keywords:
 - custom Clipboard data formats
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
 ms.openlocfilehash: 182abe71ccc9552c113ebb114b4351178e48b096
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58766849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151866"
 ---
 # <a name="clipboard-adding-other-formats"></a>클립보드: 기타 서식 추가
 

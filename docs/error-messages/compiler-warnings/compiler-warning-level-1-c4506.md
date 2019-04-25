@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4506
 ms.assetid: aa682869-65d1-4dad-ba32-198f10b44f91
 ms.openlocfilehash: ad18b8469b602d8e2aaa29087eac75e609fe6844
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160837"
 ---
 # <a name="compiler-warning-level-1-c4506"></a>컴파일러 경고(수준 1) C4506
 

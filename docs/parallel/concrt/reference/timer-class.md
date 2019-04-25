@@ -19,16 +19,15 @@ helpviewer_keywords:
 - timer class
 ms.assetid: 4f4dea51-de9f-40f9-93f5-dd724c567b49
 ms.openlocfilehash: e36441f53c9b53c9826ee92b2892142a522d7243
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180123"
 ---
 # <a name="timer-class"></a>timer 클래스
 
-
-  `timer` 메시징 블록은 지정된 기간이 경과한 후 또는 특정 간격마다 대상에 메시지를 보낼 수 있는 단일 대상 `source_block`입니다.
+`timer` 메시징 블록은 지정된 기간이 경과한 후 또는 특정 간격마다 대상에 메시지를 보낼 수 있는 단일 대상 `source_block`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -245,7 +244,7 @@ timer(
 *_Ms*<br/>
 다운스트림 전파 될 지정된 된 메시지에 대 한 시작 하는 호출 후 경과 해야 하는 시간 (밀리초)의 수입니다.
 
-*value*<br/>
+*값*<br/>
 타이머 경과 하면 다운스트림 전파 되어야 하는 값입니다.
 
 *_PTarget*<br/>

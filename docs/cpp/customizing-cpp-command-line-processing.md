@@ -1,4 +1,4 @@
-﻿---
+---
 title: C++ 명령줄 처리 사용자 지정
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,11 +15,11 @@ helpviewer_keywords:
 - _setenvp function
 ms.assetid: aae01cbb-892b-48b8-8e1f-34f22421f263
 ms.openlocfilehash: da1b3bdd6392b144f9315add4c19de14c1d14d41
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154693"
 ---
 # <a name="customizing-c-command-line-processing"></a>C++ 명령줄 처리 사용자 지정
 
@@ -33,6 +33,6 @@ ms.locfileid: "50582691"
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [main: 프로그램 시작](../cpp/main-program-startup.md)
