@@ -27,11 +27,11 @@ helpviewer_keywords:
 - files [C++], permission settings for
 ms.assetid: 5e9a13ba-5321-4536-8721-6afb6f4c8483
 ms.openlocfilehash: 113bf97b0fe93204cd41de20bc36a8be080a88b6
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155422"
 ---
 # <a name="umask"></a>_umask
 
@@ -62,7 +62,7 @@ int _umask( int pmode );
 |-|-|
 | **_S_IWRITE** | 쓰기를 허용합니다. |
 | **_S_IREAD** | 읽기를 허용합니다. |
-| **_S_IREAD** &AMP;#124; **_S_IWRITE** | 읽기 및 쓰기를 허용합니다. |
+| **_S_IREAD** &#124; **_S_IWRITE** | 읽기 및 쓰기를 허용합니다. |
 
 두 상수가 지정 된 경우 비트 OR 연산자를 사용 하 여 결합 됩니다 ( **&#124;** ). 경우는 *pmode* 인수가 **_S_IREAD**, 읽기는 허용 되지 않습니다 (파일은 쓰기 전용). 경우는 *pmode* 인수가 **_S_IWRITE**, 쓰기 허용 되지 않습니다 (파일은 읽기 전용). 예를 들어 마스크에 쓰기 비트가 설정되어 있으면 모든 새 파일은 읽기 전용이 됩니다. MS-DOS 및 Windows 운영 체제에서는 모든 파일을 읽을 수는 있지만 쓰기 전용 권한을 부여할 수는 없습니다. 따라서 읽기 사용 하 여 비트를 설정 **_umask** 파일 모드에 영향이 없습니다.
 

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - Platform::Agile
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
 ms.openlocfilehash: 86a535bc106e17b276dc5f42a59773aa0de8c361
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161670"
 ---
 # <a name="platformagile-class"></a>Platform::Agile 클래스
 
@@ -154,8 +154,7 @@ T^* GetAddressOf() throw();
 
 ### <a name="return-value"></a>반환 값
 
-
-  `T` 형식의 개체에 대한 핸들의 주소입니다.
+`T` 형식의 개체에 대한 핸들의 주소입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -240,8 +239,7 @@ T^ operator=( IUnknown* lp ) throw();
 
 ### <a name="return-value"></a>반환 값
 
-
-  `T` 형식의 개체에 대한 핸들입니다.
+`T` 형식의 개체에 대한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 

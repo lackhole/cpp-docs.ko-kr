@@ -3,11 +3,11 @@ title: 균일 초기화 및 생성자 위임
 ms.date: 11/04/2016
 ms.assetid: aa4daa64-eaec-4a3c-ade4-d9325e31e9d4
 ms.openlocfilehash: 5c5cb6421d9c8ce20f0c5e24de986ee50d9b2238
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62162111"
 ---
 # <a name="uniform-initialization-and-delegating-constructors"></a>균일 초기화 및 생성자 위임
 

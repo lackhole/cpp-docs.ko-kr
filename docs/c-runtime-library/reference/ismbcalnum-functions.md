@@ -47,18 +47,18 @@ helpviewer_keywords:
 - ismbcalpha_l function
 ms.assetid: 12d57925-aebe-46e0-80b0-82b84c4c31ec
 ms.openlocfilehash: 1a2f928d826b70b788220130f69c53cc351b4910
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157309"
 ---
 # <a name="ismbcalnum-ismbcalnuml-ismbcalpha-ismbcalphal-ismbcdigit-ismbcdigitl"></a>_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
 
 멀티바이트 문자가 영숫자, 영문자 또는 숫자인지 검사합니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -112,9 +112,9 @@ int _ismbcdigit_l
 
 |루틴에서 반환된 값|테스트 조건|932 코드 페이지 예제|
 |-------------|--------------------|---------------------------|
-|**_ismbcalnum**, **_ismbcalnum_l**|영숫자|0이 아닌 경우 및 경우에만 반환 *c* ASCII 영어 문자의 싱글바이트 표현인:에 대 한 예제를 참조 하십시오 **_ismbcdigit** 하 고 **_ismbcalpha**합니다.|
-|**_ismbcalpha**, **_ismbcalpha_l**|Alphabetic|경우에만 0이 아닌 값 반환 *c* ASCII 영어 문자의 싱글바이트 표현인: 0x41 < =*c*< = 0x5A 또는 0x61&lt < =*c*< = 0x7A 또는 가타카나 문자: (0xa6&lt < =*c*< = 0xDF 합니다.|
-|**_ismbcdigit**, **_ismbcdigit**|숫자|경우에만 0이 아닌 값 반환 *c* ASCII 숫자의 싱글바이트 표현인. 0x30 < =*c*< = 0x39 합니다.|
+|**_ismbcalnum**, **_ismbcalnum_l**|영숫자|경우에만 0이 아닌 값 반환 *c* ASCII 영어 문자의 싱글바이트 표현인: 에 대 한 예제를 참조 하세요 **_ismbcdigit** 하 고 **_ismbcalpha**합니다.|
+|**_ismbcalpha**, **_ismbcalpha_l**|Alphabetic|경우에만 0이 아닌 값 반환 *c* ASCII 영어 문자의 싱글바이트 표현인: 0x41 < =*c*< = 0x5A 또는 0x61&lt < =*c*< = 0x7A 또는 가타카나 문자: 0xA6<=*c*<=0xDF.|
+|**_ismbcdigit**, **_ismbcdigit**|숫자|경우에만 0이 아닌 값 반환 *c* ASCII 숫자의 싱글바이트 표현인: 0x30<=*c*<=0x39.|
 
 ## <a name="requirements"></a>요구 사항
 

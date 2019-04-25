@@ -44,11 +44,11 @@ helpviewer_keywords:
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
 ms.openlocfilehash: f4af392ed559349b0e49fd26f3ecb4406a70b74b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153803"
 ---
 # <a name="fundamental-types--c"></a>기본 형식 (C++)
 
@@ -68,11 +68,11 @@ C++의 기본 형식은 정수 계열, 부동 소수점 및 void의 세 가지 �
 
 |범주|형식|목차|
 |--------------|----------|--------------|
-|정수 계열|**char**|형식 **char** 일반적으로 기본 실행 문자 집합의 멤버를 포함 하는 정수 계열 형식-기본적으로 Microsoft c + +에서는 ASCII입니다.<br /><br /> C + + 컴파일러는 형식의 변수에 취급 **char**, **char 서명**, 및 **unsigned char** 서로 다른 형식으로. 형식의 변수에 **char** 올려진 **int** 형식인 것 처럼 **char 서명** 기본적으로 /J 컴파일 옵션을 사용 하지 않으면. 이 경우 형식으로 처리 되므로 **unsigned char** 로 승격 됩니다 **int** 부호 확장 없이 합니다.|
+|정수 계열|**char**|형식 **char** 일반적으로 기본 실행 문자 집합의 멤버를 포함 하는 정수 계열 형식-기본적으로 Microsoft에서는 ASCII입니다 C++합니다.<br /><br /> C++ 컴파일러는 형식의 변수에 처리 **char**를 **char 서명**, 및 **unsigned char** 서로 다른 형식으로 합니다. 형식의 변수에 **char** 올려진 **int** 형식인 것 처럼 **char 서명** 기본적으로 /J 컴파일 옵션을 사용 하지 않으면. 이 경우 형식으로 처리 되므로 **unsigned char** 로 승격 됩니다 **int** 부호 확장 없이 합니다.|
 ||**bool**|형식 **bool** 두 값 중 하나를 가질 수 있는 정수 계열 형식인 **true** 하거나 **false**합니다. 크기는 지정되지 않습니다.|
 ||**short**|형식 **short int** (또는 단순히 **짧은**) 형식의 크기 보다 크거나 같은 경우에 정수 계열 형식인 **char**, 및 보다 작거나 형식의크기**int**합니다.<br /><br /> 형식의 개체 **짧은** 로 선언할 수 있습니다 **짧은 서명** 하거나 **unsigned short**합니다. **즉 서명** 에 대 한 동의어가 **짧은**합니다.|
 ||**int**|형식 **int** 형식의 크기 보다 크거나 같은 경우에 정수 계열 형식인 **short int**, 및 보다 작거나 형식의 크기 **긴**합니다.<br /><br /> 형식의 개체 **int** 로 선언할 수 있습니다 **int 서명** 하거나 **부호 없는 int**합니다. **Int 서명** 에 대 한 동의어가 **int**합니다.|
-||**__int8**하십시오 **__int16**하십시오 **__int32**, **__int64**|크기가 지정된 정수 `__int n`입니다. 여기서 `n` 은 정수 변수의 크기(비트)입니다. **__int8**, **__int16**합니다 **__int32** 하 고 **__int64** 은 Microsoft 전용 키워드입니다. 모든 형식이 아닌 모든 아키텍처에서 사용할 수 있습니다. (**__int128** 지원 되지 않습니다.)|
+||**__int8**, **__int16**, **__int32**, **__int64**|크기가 지정된 정수 `__int n`입니다. 여기서 `n` 은 정수 변수의 크기(비트)입니다. **__int8**, **__int16**합니다 **__int32** 하 고 **__int64** 은 Microsoft 전용 키워드입니다. 모든 형식이 아닌 모든 아키텍처에서 사용할 수 있습니다. (**__int128** 지원 되지 않습니다.)|
 ||**long**|형식 **긴** (또는 **long int**) 형식의 크기 보다 크거나 같은 경우에 정수 계열 형식인 **int**합니다.<br /><br /> 형식의 개체 **긴** 로 선언할 수 있습니다 **기호가 있는 long** 하거나 **부호 없는 long**합니다. **기호가 있는 long** 에 대 한 동의어가 **긴**합니다.|
 ||**long long**|부호 없는 보다 큰 **긴**합니다.<br /><br /> 형식의 개체 **long long** 로 선언할 수 있습니다 **기호가 있는 long long** 하거나 **부호 없는 long long**합니다. **기호가 있는 long long** 에 대 한 동의어가 **long long**합니다.|
 ||**wchar_t**, **__wchar_t**|형식 변수의 **wchar_t** 는 와이드 문자 또는 멀티 바이트 문자 형식을 지정 합니다. 기본적으로 **wchar_t** 는 네이티브 형식에 사용할 수 있지만 [/zc: wchar_t-](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 되도록 **wchar_t** 에 대 한 typedef **unsigned short**합니다. 합니다 **__wchar_t** 네이티브에 대 한 Microsoft 전용 동의어 **wchar_t** 형식입니다.<br /><br /> 문자 또는 문자열 리터럴 앞에 L 접두사를 사용하여 와이드 문자 형식을 지정합니다.|
@@ -88,10 +88,10 @@ C++의 기본 형식은 정수 계열, 부동 소수점 및 void의 세 가지 �
 
 |형식|크기|
 |----------|----------|
-|**bool**, **char**합니다 **unsigned char**를 **char 서명**, **__int8**|1바이트|
-|**__int16**, **짧은**합니다 **unsigned short**를 **wchar_t**, **__wchar_t**|2바이트|
+|**bool**, **char**, **unsigned char**, **signed char**, **__int8**|1바이트|
+|**__int16**, **short**, **unsigned short**, **wchar_t**, **__wchar_t**|2바이트|
 |**부동 소수점**, **__int32**, **int**를 **부호 없는 int**를 **긴**, **부호 없는 long**|4바이트|
-|**이중**하십시오 **__int64**, **long double**, **long long**|8바이트|
+|**double**, **__int64**, **long double**, **long long**|8바이트|
 
 **Microsoft 전용 종료**
 
