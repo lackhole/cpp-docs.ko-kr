@@ -35,7 +35,7 @@ ARM VFPv4 명령을 사용하도록 설정합니다. 이 옵션을 지정하지 
 
 ### <a name="to-set-the-archarmv7ve-or-archvfpv4-compiler-option-in-visual-studio"></a>Visual Studio에서 /arch:ARMv7VE 또는 /arch:VFPv4 컴파일러 옵션을 설정하려면
 
-1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [컴파일러 설정 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **C/C++** 폴더입니다.
 
