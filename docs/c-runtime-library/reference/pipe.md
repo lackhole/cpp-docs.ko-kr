@@ -26,11 +26,11 @@ helpviewer_keywords:
 - pipe function
 ms.assetid: 8d3e9800-4041-44b5-9e93-2df0b0354a75
 ms.openlocfilehash: c5db59fecd84ae291e5651b1cec1be31c815e53a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155975"
 ---
 # <a name="pipe"></a>_pipe
 
@@ -51,13 +51,13 @@ int _pipe(
 
 ### <a name="parameters"></a>매개 변수
 
-*pfd*<br/>
+*pfds*<br/>
 두 개의 배열에 대 한 포인터 **int** 저장할 읽기 및 쓰기 파일 설명자입니다.
 
 *psize*<br/>
 예약할 메모리의 양입니다.
 
-*텍스트 모드*<br/>
+*textmode*<br/>
 파일 모드입니다.
 
 ## <a name="return-value"></a>반환 값

@@ -34,11 +34,11 @@ f1_keywords:
 - ppltasks/concurrency::when_any
 ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
 ms.openlocfilehash: 9cb726ccc475d6d08e036229d0d06089e3fac31c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62163743"
 ---
 # <a name="concurrency-namespace-functions"></a>concurrency 네임 스페이스 함수
 
@@ -120,8 +120,7 @@ bool asend(
 
 현재 실행 중인 작업을 취소합니다. 이 함수는 작업 실행을 중단하도록 작업 본문 내에서 호출될 수 있으며 `canceled` 상태로 들어가도록 할 수 있습니다.
 
-
-  `task`의 본문에 없는 경우에 이 함수를 호출하는 것은 지원되는 시나리오가 아닙니다. 그럴 경우 응용 프로그램의 충돌 또는 시스템 중단 같이 정의되지 않은 동작이 발생합니다.
+`task`의 본문에 없는 경우에 이 함수를 호출하는 것은 지원되는 시나리오가 아닙니다. 그럴 경우 응용 프로그램의 충돌 또는 시스템 중단 같이 정의되지 않은 동작이 발생합니다.
 
 ```
 inline __declspec(noreturn) void __cdecl cancel_current_task();
@@ -174,8 +173,7 @@ void를 반환하는 람다는 작업을 생성합니다. `TResult` 형식의 �
 
 람다는 0개, 하나 또는 두 개의 인수를 사용할 수 있습니다. 해당 순서로 함께 사용되는 경우 올바른 인수는 `progress_reporter<TProgress>` 및 `cancellation_token`입니다. 인수가 없는 람다를 사용하면 진행률을 보고할 수 없는 비동기 구문이 생성됩니다. Progress_reporter를 사용 하는 람다\<TProgress > 하면 `create_async` 될 때마다 형식 TProgress의 진행률을 보고 하는 비동기 구문을 반환 하도록 합니다 `report` progress_reporter 개체의 메서드가 호출 됩니다. cancellation_token을 사용하는 람다는 해당 토큰을 사용하여 취소 여부를 확인하거나 이 토큰이 생성하는 작업에 전달되어 비동기 구문의 취소가 이러한 작업의 취소를 발생시키도록 할 수 있습니다.
 
-람다 또는 함수 개체의 본문에는 결과 반환 하는 경우 (작업이 아닌\<TResult >)을 런타임 작업의 컨텍스트에서 MTA에 대 한 암시적으로 만드는 프로세스 내에서 람다를 비동기적으로 실행 됩니다. 
-  `IAsyncInfo::Cancel` 메서드는 암시적 작업의 취소를 발생시킵니다.
+람다 또는 함수 개체의 본문에는 결과 반환 하는 경우 (작업이 아닌\<TResult >)을 런타임 작업의 컨텍스트에서 MTA에 대 한 암시적으로 만드는 프로세스 내에서 람다를 비동기적으로 실행 됩니다. `IAsyncInfo::Cancel` 메서드는 암시적 작업의 취소를 발생시킵니다.
 
 람다 본문이 작업을 반환하는 경우 람다는 인라인 실행됩니다. 그리고 람다가 `cancellation_token` 형식의 인수를 갖도록 선언함으로써 작업을 만들 때 해당 토큰을 전달하여 람다 내부에서 만든 모든 작업의 취소를 트리거할 수 있습니다. 생성된 비동기 작업 또는 동작에서 `register_callback`을 호출할 때 런타임에서 콜백을 호출하도록 토큰에 `IAsyncInfo::Cancel` 메서드를 사용할 수도 있습니다.
 
@@ -269,8 +267,7 @@ __declspec(deprecated("Concurrency::EnableTracing is a deprecated function.")) _
 
 ##  <a name="free"></a>  Free
 
-
-  `Alloc` 메서드에 의해 동시성 런타임 캐싱 하위 할당자에 이전에 할당된 메모리 블록을 해제합니다.
+`Alloc` 메서드에 의해 동시성 런타임 캐싱 하위 할당자에 이전에 할당된 메모리 블록을 해제합니다.
 
 ```
 void __cdecl Free(_Pre_maybenull_ _Post_invalid_ void* _PAllocation);
@@ -295,8 +292,7 @@ inline std::shared_ptr<::Concurrency::scheduler_interface> get_ambient_scheduler
 
 ##  <a name="getexecutioncontextid"></a>  GetExecutionContextId
 
-
-  `IExecutionContext` 인터페이스를 구현하는 실행 컨텍스트에 할당할 수 있는 고유 식별자를 반환합니다.
+`IExecutionContext` 인터페이스를 구현하는 실행 컨텍스트에 할당할 수 있는 고유 식별자를 반환합니다.
 
 ```
 unsigned int __cdecl GetExecutionContextId();
@@ -362,8 +358,7 @@ NUMA 노드 또는 프로세서 패키지 수입니다.
 
 ##  <a name="getschedulerid"></a>  GetSchedulerId
 
-
-  `IScheduler` 인터페이스를 구현하는 스케줄러에 할당할 수 있는 고유 식별자를 반환합니다.
+`IScheduler` 인터페이스를 구현하는 스케줄러에 할당할 수 있는 고유 식별자를 반환합니다.
 
 ```
 unsigned int __cdecl GetSchedulerId();
@@ -409,8 +404,7 @@ inline void interruption_point();
 
 ### <a name="remarks"></a>설명
 
-
-  `interruption_point()` 함수에 의해 throw된 내부 취소 예외를 catch하면 안 됩니다. 예외는 런타임에서 catch되어 처리되며, 예외를 catch하면 프로그램이 비정상적으로 동작할 수 있습니다.
+`interruption_point()` 함수에 의해 throw된 내부 취소 예외를 catch하면 안 됩니다. 예외는 런타임에서 catch되어 처리되며, 예외를 catch하면 프로그램이 비정상적으로 동작할 수 있습니다.
 
 ##  <a name="is_current_task_group_canceling"></a>  is_current_task_group_canceling
 
@@ -590,8 +584,7 @@ multitype_join<std::tuple<T1, T2, Ts...>> make_join(
 
 ##  <a name="make_task"></a>  make_task
 
-
-  `task_handle` 개체를 만들기 위한 팩터리 메서드입니다.
+`task_handle` 개체를 만들기 위한 팩터리 메서드입니다.
 
 ```
 template <class _Function>
@@ -671,7 +664,7 @@ inline void parallel_buffered_sort(
 입력 범위의 반복기 형식입니다.
 
 *_Allocator*<br/>
-C + + 표준 라이브러리 호환 메모리 할당자의 형식입니다.
+형식의 C++ 표준 라이브러리 호환 메모리 할당자입니다.
 
 *_Function*<br/>
 이진 비교 연산자의 형식입니다.
@@ -683,7 +676,7 @@ C + + 표준 라이브러리 호환 메모리 할당자의 형식입니다.
 저장할 범위의 마지막 요소 하나 다음 위치를 주소 지정하는 임의 액세스 반복기입니다.
 
 *_Alloc*<br/>
-C + + 표준 라이브러리 호환 메모리 할당자의 인스턴스.
+인스턴스는 C++ 표준 라이브러리 호환 메모리 할당자입니다.
 
 *_Func*<br/>
 순서에 따라 연속적인 요소에 대해 충족될 비교 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다. 이 비교 함수는 시퀀스의 요소 쌍에 대해 엄밀히 약한 순서를 적용해야 합니다.
@@ -697,9 +690,9 @@ C + + 표준 라이브러리 호환 메모리 할당자의 인스턴스.
 
 이진 비교 연산자를 제공 하지 않는 경우 `std::less` 연산자를 제공 하는 요소 형식이 필요로 하는 기본으로 사용 됩니다 `operator<()`합니다.
 
-할당자 유형 또는 인스턴스, c + + 표준 라이브러리 메모리 할당자를 제공 하지 않는 경우 `std::allocator<T>` 버퍼를 할당 하는 데 사용 됩니다.
+할당자 유형 또는 인스턴스를 제공 하지 않는 경우는 C++ 표준 라이브러리 메모리 할당자 `std::allocator<T>` 버퍼를 할당 하는 데 사용 됩니다.
 
-알고리즘은 입력 범위를 두 개의 청크로 나누고 이어서 각 청크를 병렬로 실행할 두 개의 하위 청크로 나눕니다. 선택적 인수 `_Chunk_size`를 사용하여 크기가 < `_Chunk_size`인 청크를 직렬로 처리하도록 알고리즘에 지정할 수 있습니다.
+알고리즘은 입력 범위를 두 개의 청크로 나누고 이어서 각 청크를 병렬로 실행할 두 개의 하위 청크로 나눕니다. 선택적 인수 `_Chunk_size` 크기의 청크를 처리 해야 하는 알고리즘을 나타내는 데 사용할 수 있습니다 < `_Chunk_size` 순차적으로 합니다.
 
 ##  <a name="parallel_for"></a>  parallel_for
 
@@ -782,8 +775,7 @@ partitioner 개체에 대한 참조입니다. 인수 중 하나일 수 있습니
 
 ##  <a name="parallel_for_each"></a>  parallel_for_each
 
-`parallel_for_each`는 범위 내의 각 요소에 지정된 함수를 병렬로 적용합니다. 요소에 대한 반복이 병렬로 수행되고 반복 순서가 지정되지 않는다는 점을 제외하고 `std` 네임스페이스의 `for_each` 함수와 의미 체계가 같습니다. 
-  `_Func` 인수는 `operator()(T)` 형식의 함수 호출 연산자를 지원해야 합니다. 여기서 `T` 매개 변수는 반복되는 컨테이너의 항목 형식입니다.
+`parallel_for_each`는 범위 내의 각 요소에 지정된 함수를 병렬로 적용합니다. 요소에 대한 반복이 병렬로 수행되고 반복 순서가 지정되지 않는다는 점을 제외하고 `std` 네임스페이스의 `for_each` 함수와 의미 체계가 같습니다. `_Func` 인수는 `operator()(T)` 형식의 함수 호출 연산자를 지원해야 합니다. 여기서 `T` 매개 변수는 반복되는 컨테이너의 항목 형식입니다.
 
 ```
 template <typename _Iterator, typename _Function>
@@ -1081,7 +1073,7 @@ inline void parallel_radixsort(
 입력 범위의 반복기 형식입니다.
 
 *_Allocator*<br/>
-C + + 표준 라이브러리 호환 메모리 할당자의 형식입니다.
+형식의 C++ 표준 라이브러리 호환 메모리 할당자입니다.
 
 *_Function*<br/>
 형식 프로젝션 함수입니다.
@@ -1093,7 +1085,7 @@ C + + 표준 라이브러리 호환 메모리 할당자의 형식입니다.
 저장할 범위의 마지막 요소 하나 다음 위치를 주소 지정하는 임의 액세스 반복기입니다.
 
 *_Alloc*<br/>
-C + + 표준 라이브러리 호환 메모리 할당자의 인스턴스.
+인스턴스는 C++ 표준 라이브러리 호환 메모리 할당자입니다.
 
 *_Proj_func*<br/>
 정수 계열 값으로 요소를 변환 하는 프로젝션 사용자 정의 함수 개체입니다.
@@ -1107,9 +1099,9 @@ C + + 표준 라이브러리 호환 메모리 할당자의 인스턴스.
 
 프로젝션 함수를 제공 하지 않으면 기본 프로젝션 함수 단순히 요소를 반환 하는 정수 계열 형식에 대 한 사용 됩니다. 함수는 요소가 없는 경우 정수 계열 형식의 프로젝션 함수 없으면 컴파일되지 것입니다.
 
-할당자 유형 또는 인스턴스, c + + 표준 라이브러리 메모리 할당자를 제공 하지 않는 경우 `std::allocator<T>` 버퍼를 할당 하는 데 사용 됩니다.
+할당자 유형 또는 인스턴스를 제공 하지 않는 경우는 C++ 표준 라이브러리 메모리 할당자 `std::allocator<T>` 버퍼를 할당 하는 데 사용 됩니다.
 
-알고리즘은 입력 범위를 두 개의 청크로 나누고 이어서 각 청크를 병렬로 실행할 두 개의 하위 청크로 나눕니다. 선택적 인수 `_Chunk_size`를 사용하여 크기가 < `_Chunk_size`인 청크를 직렬로 처리하도록 알고리즘에 지정할 수 있습니다.
+알고리즘은 입력 범위를 두 개의 청크로 나누고 이어서 각 청크를 병렬로 실행할 두 개의 하위 청크로 나눕니다. 선택적 인수 `_Chunk_size` 크기의 청크를 처리 해야 하는 알고리즘을 나타내는 데 사용할 수 있습니다 < `_Chunk_size` 순차적으로 합니다.
 
 ##  <a name="parallel_reduce"></a>  parallel_reduce
 
@@ -1228,7 +1220,7 @@ inline void parallel_sort(
 
 두 번째 오버로드는 `bool _Func(T, T)` 시그니처를 포함하는 제공된 이진 비교 연산자를 사용합니다. 여기서 `T`는 입력 범위 요소의 형식입니다.
 
-알고리즘은 입력 범위를 두 개의 청크로 나누고 이어서 각 청크를 병렬로 실행할 두 개의 하위 청크로 나눕니다. 선택적 인수 `_Chunk_size`를 사용하여 크기가 < `_Chunk_size`인 청크를 직렬로 처리하도록 알고리즘에 지정할 수 있습니다.
+알고리즘은 입력 범위를 두 개의 청크로 나누고 이어서 각 청크를 병렬로 실행할 두 개의 하위 청크로 나눕니다. 선택적 인수 `_Chunk_size` 크기의 청크를 처리 해야 하는 알고리즘을 나타내는 데 사용할 수 있습니다 < `_Chunk_size` 순차적으로 합니다.
 
 ##  <a name="parallel_transform"></a>  parallel_transform
 
@@ -1351,11 +1343,9 @@ partitioner 개체에 대한 참조입니다. 인수 중 하나일 수 있습니
 
 만 지원 하지 않는 임의 반복기 액세스할 [auto_partitioner](auto-partitioner-class.md) 지원 됩니다.
 
+`_Unary_op` 인수를 사용하는 오버로드는 입력 범위의 각 요소에 단항 구조 함수를 적용하여 입력 범위를 출력 범위로 변환합니다. `_Unary_op`는 `operator()(T)` 시그니처를 포함하는 함수 호출 연산자를 지원해야 합니다. 여기서 `T`는 반복되는 범위의 값 형식입니다.
 
-  `_Unary_op` 인수를 사용하는 오버로드는 입력 범위의 각 요소에 단항 구조 함수를 적용하여 입력 범위를 출력 범위로 변환합니다. `_Unary_op`는 `operator()(T)` 시그니처를 포함하는 함수 호출 연산자를 지원해야 합니다. 여기서 `T`는 반복되는 범위의 값 형식입니다.
-
-
-  `_Binary_op` 인수를 사용하는 오버로드는 첫 번째 입력 범위의 한 요소와 두 번째 입력 범위의 한 요소에 이진 구조 함수를 적용하여 두 개의 입력 범위를 출력 범위로 변환합니다. `_Binary_op`는 `operator()(T, U)` 시그니처를 포함하는 함수 호출 연산자를 지원해야 합니다. 여기서 `T`, `U`는 두 입력 반복기의 값 형식입니다.
+`_Binary_op` 인수를 사용하는 오버로드는 첫 번째 입력 범위의 한 요소와 두 번째 입력 범위의 한 요소에 이진 구조 함수를 적용하여 두 개의 입력 범위를 출력 범위로 변환합니다. `_Binary_op`는 `operator()(T, U)` 시그니처를 포함하는 함수 호출 연산자를 지원해야 합니다. 여기서 `T`, `U`는 두 입력 반복기의 값 형식입니다.
 
 자세한 내용은 [병렬 알고리즘](../../../parallel/concrt/parallel-algorithms.md)합니다.
 
@@ -1435,8 +1425,7 @@ void run_with_cancellation_token(
 
 ### <a name="remarks"></a>설명
 
-
-  `cancellation_token`가 취소될 때 함수 개체의 중단점이 트리거됩니다. 명시적 토큰 `_Ct`는 부모에 다른 토큰이 있거나 토큰이 없는 경우 부모 취소로부터 `_Func`를 격리합니다.
+`cancellation_token`가 취소될 때 함수 개체의 중단점이 트리거됩니다. 명시적 토큰 `_Ct`는 부모에 다른 토큰이 있거나 토큰이 없는 경우 부모 취소로부터 `_Func`를 격리합니다.
 
 ##  <a name="send"></a>  send
 
@@ -1503,12 +1492,10 @@ void __cdecl set_task_execution_resources(
 동시성 런타임의 작업자 스레드를 제한할 선호도 마스크입니다. 동시성 런타임을 현재 프로세서 그룹의 하위 집합으로 제한하려는 경우 하드웨어 스레드 수가 64개보다 많은 시스템에서만 이 메서드를 사용하십시오. 하드웨어 스레드 수가 64개보다 많은 컴퓨터에서는 일반적으로 그룹 선호도 배열을 매개 변수로 사용하는 메서드 버전을 사용해야 합니다.
 
 *count*<br/>
-
-  `GROUP_AFFINITY` 매개 변수로 지정된 배열에서 `_PGroupAffinity` 항목의 수입니다.
+`GROUP_AFFINITY` 매개 변수로 지정된 배열에서 `_PGroupAffinity` 항목의 수입니다.
 
 *_PGroupAffinity*<br/>
-
-  `GROUP_AFFINITY` 항목의 배열입니다.
+`GROUP_AFFINITY` 항목의 배열입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1673,8 +1660,7 @@ void __cdecl wait(unsigned int _Milliseconds);
 ### <a name="parameters"></a>매개 변수
 
 *_Milliseconds*<br/>
-현재 컨텍스트가 일시 중지되어야 하는 시간(밀리초)입니다. 
-  `_Milliseconds` 매개 변수의 값이 `0`으로 설정된 경우 현재 컨텍스트는 계속하기 전에 다른 실행 가능한 컨텍스트에 실행을 양보해야 합니다.
+현재 컨텍스트가 일시 중지되어야 하는 시간(밀리초)입니다. `_Milliseconds` 매개 변수의 값이 `0`으로 설정된 경우 현재 컨텍스트는 계속하기 전에 다른 실행 가능한 컨텍스트에 실행을 양보해야 합니다.
 
 ### <a name="remarks"></a>설명
 

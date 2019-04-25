@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::make_error_condition [C++]
 - std::swap [C++]
 ms.openlocfilehash: 56ae0da7e86e092cee46d24d1a2a27d9d54709e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159511"
 ---
 # <a name="ltfuturegt-functions"></a>&lt;future&gt; 함수
 
@@ -44,7 +44,7 @@ future<typename result_of<Fn(ArgTypes...)>::type>
 
 ### <a name="parameters"></a>매개 변수
 
-*정책*<br/>
+*policy*<br/>
 [launch](../standard-library/future-enums.md#launch) 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -63,7 +63,7 @@ future<typename result_of<Fn(ArgTypes...)>::type>
 
 `decay<Fn>::type`이 시작 이외의 형식이 아닌 경우 두 번째 함수는 오버로드 확인에 참여하지 않습니다.
 
-C + + 표준 상태 정책 launch::async 인 함수는 새 스레드를 만듭니다. 그러나 Microsoft에서 구현한은 현재 비준수입니다. 경우에 따라 새로 보다는 재생된 스레드를 제공할 수 있는 Windows 스레드 풀에서 해당 스레드를 가져옵니다. 즉 합니다 `launch::async` 정책으로 실제로 구현 `launch::async|launch::deferred`합니다.  ThreadPool 기반 구현의 또 다른 문제는 보장이 없다는 스레드가 완료 될 때 스레드 지역 변수는 소멸 됩니다. 스레드가 재활용 되며 새 호출으로 제공 `async`, 이전 변수는 계속 존재 합니다. 따라서 사용 하 여 스레드 로컬 변수를 사용 하지 않는 권장 `async`합니다.
+C++ 표준 상태 정책 launch::async 인 함수는 새 스레드를 만듭니다. 그러나 Microsoft에서 구현한은 현재 비준수입니다. 경우에 따라 새로 보다는 재생된 스레드를 제공할 수 있는 Windows 스레드 풀에서 해당 스레드를 가져옵니다. 즉 합니다 `launch::async` 정책으로 실제로 구현 `launch::async|launch::deferred`합니다.  ThreadPool 기반 구현의 또 다른 문제는 보장이 없다는 스레드가 완료 될 때 스레드 지역 변수는 소멸 됩니다. 스레드가 재활용 되며 새 호출으로 제공 `async`, 이전 변수는 계속 존재 합니다. 따라서 사용 하 여 스레드 로컬 변수를 사용 하지 않는 권장 `async`합니다.
 
 경우 *정책* 됩니다 `launch::deferred`, 함수가 있는 것으로 연결 된 비동기 상태를 표시를 *지연 된 함수* 반환 합니다. 연결된 비동기 상태가 유효해지기를 기다리는 non-timed 함수의 첫 번째 호출은 `INVOKE(dfn, dargs..., Ty)`를 평가함으로써 지연된 함수를 호출합니다.
 
@@ -92,7 +92,7 @@ inline error_code make_error_code(future_errc Errno) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*errno*<br/>
+*Errno*<br/>
 보고된 오류를 식별하는 [future_errc](../standard-library/future-enums.md#future_errc) 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -109,7 +109,7 @@ inline error_condition make_error_condition(future_errc Errno) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*errno*<br/>
+*Errno*<br/>
 보고된 오류를 식별하는 [future_errc](../standard-library/future-enums.md#future_errc) 값입니다.
 
 ### <a name="return-value"></a>반환 값
