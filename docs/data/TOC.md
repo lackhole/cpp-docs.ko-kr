@@ -20,7 +20,7 @@
 ##### [레코드 스크롤에 대한 명령 처리기(MFC Data Access)](command-handlers-for-record-scrolling-mfc-data-access.md)
 ##### [레코드 뷰의 사용자 인터페이스 업데이트(MFC Data Access)](user-interface-updating-for-record-views-mfc-data-access.md)
 #### [레코드 뷰 사용(MFC Data Access)](using-a-record-view-mfc-data-access.md)
-##### [응용 프로그램 마법사가 만든 레코드 뷰 코드(MFC Data Access)](record-view-code-created-by-application-wizard-mfc-data-access.md)
+##### [애플리케이션 마법사가 만든 레코드 뷰 코드(MFC Data Access)](record-view-code-created-by-application-wizard-mfc-data-access.md)
 ##### [기본 코드에 수행할 수 있는 변경(MFC Data Access)](changes-you-might-make-to-the-default-code-mfc-data-access.md)
 #### [두 번째 레코드 집합에서 목록 상자 채우기(MFC Data Access)](filling-a-list-box-from-a-second-recordset-mfc-data-access.md)
 
