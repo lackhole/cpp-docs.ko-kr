@@ -3,10 +3,10 @@ title: Visual C++ 포팅 및 업그레이드 가이드
 ms.date: 09/18/2018
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
 ms.openlocfilehash: 8798d8b3da5a91adfc6f77912d4f34bf62549f54
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58898793"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ 포팅 및 업그레이드 가이드
@@ -79,12 +79,12 @@ Visual Studio의 빌드 시스템을 사용하지 않는 경우 MSBuild를 사�
 |[Visual Studio에서 C++ 컴파일러의 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)|IDE 및 도구를 현재 버전의 Visual Studio로 변경|
 |[Visual Studio의 C++ 규칙 향상](../overview/cpp-conformance-improvements.md)|Visual Studio 2015에서 Visual Studio로 표준 준수 향상|
 |[Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md)|코드 변경이 필요할 수 있는 Visual Studio 2003과 2015 간 Visual C++ 라이브러리 및 빌드 도구의 모든 변경 내용 목록입니다.|
-|[Visual C++ 2003~2015의 새로운 기능](visual-cpp-what-s-new-2003-through-2015.md)|Visual Studio 2003과 Visual Studio 2015 간의 Visual C++에 대한 모든 "새로운 기능" 정보입니다.|
+|[Visual C++ 2003 ~ 2015의 새로운 기능](visual-cpp-what-s-new-2003-through-2015.md)|Visual Studio 2003과 Visual Studio 2015 간의 Visual C++에 대한 모든 "새로운 기능" 정보입니다.|
 |[타사 라이브러리 포팅](porting-third-party-libraries.md)|**vcpkg** 명령줄 도구를 사용하여 이전 오픈 소스 라이브러리를 최신 Visual C++ 도구 집합으로 컴파일된 버전으로 포팅하는 방법입니다.|
 |[이식 및 업그레이드: 예제 및 사례 연구](porting-and-upgrading-examples-and-case-studies.md)|이 섹션에서는 여러 가지 샘플 및 애플리케이션을 포팅 및 업그레이드하고 경험과 결과를 설명했습니다. 이러한 내용을 읽으면 포팅 및 업그레이드 프로세스와 관련된 사항을 이해하는 데 도움이 될 수 있습니다. 프로세스 전반에 걸쳐 업그레이드를 위한 팁과 트릭을 설명하고 특정 오류를 수정한 방법을 보여 줍니다.|
 |[유니버설 Windows 플랫폼으로 포팅](porting-to-the-universal-windows-platform-cpp.md)|Windows 10으로 코드를 이식하는 방법에 대한 정보를 포함합니다.|
 |[UNIX 사용자를 위한 Visual C++ 소개](introduction-to-visual-cpp-for-unix-users.md)|Visual C++를 처음 사용하며 생산성을 높이려는 UNIX 사용자에게 정보를 제공합니다.|
-|[UNIX에서 Win32로 이식](porting-from-unix-to-win32.md)|UNIX 애플리케이션을 Windows로 마이그레이션하는 옵션을 설명합니다.|
+|[UNIX에서 Win32로 포팅](porting-from-unix-to-win32.md)|UNIX 애플리케이션을 Windows로 마이그레이션하는 옵션을 설명합니다.|
 
 ## <a name="see-also"></a>참고 항목
 

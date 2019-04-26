@@ -46,7 +46,7 @@
 ## [ATL COM 속성 페이지](atl-com-property-pages.md)
 ### [속성 페이지 지정](specifying-property-pages.md)
 ### [속성 페이지 구현](implementing-property-pages.md)
-#### [예: 속성 페이지 구현](example-implementing-a-property-page.md)
+#### [예제: 속성 페이지 구현](example-implementing-a-property-page.md)
 ## [DHTML 컨트롤에 대한 ATL 지원](atl-support-for-dhtml-controls.md)
 ### [DHTML 컨트롤 프로젝트의 요소 식별](identifying-the-elements-of-the-dhtml-control-project.md)
 ### [DHTML에서 C++ 코드 호출](calling-cpp-code-from-dhtml.md)
