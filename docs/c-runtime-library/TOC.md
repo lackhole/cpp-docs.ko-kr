@@ -24,7 +24,7 @@
 ## [링크 옵션](link-options.md)
 ## [DLL 경계를 넘어 CRT 개체를 전달할 때 발생할 수 있는 오류](potential-errors-passing-crt-objects-across-dll-boundaries.md)
 ## [CRT 초기화](crt-initialization.md)
-# [범주별 범용 C 런타임 루틴](run-time-routines-by-category.md)
+# [범주별 유버니설 C 런타임 루틴](run-time-routines-by-category.md)
 ## [인수 액세스](argument-access.md)
 ## [버퍼 조작](buffer-manipulation.md)
 ## [바이트 분류](byte-classification.md)
