@@ -13,7 +13,7 @@
 ### [다중 스레드 Win32 프로그램 작성](writing-a-multithreaded-win32-program.md)
 ### [다중 스레드 프로그램 컴파일 및 링크](compiling-and-linking-multithread-programs.md)
 ### [다중 스레드 프로그램으로 문제 영역 방지](avoiding-problem-areas-with-multithread-programs.md)
-### [TLS(스레드 로컬 저장소)](thread-local-storage-tls.md)
+### [TLS(스레드 로컬 스토리지)](thread-local-storage-tls.md)
 ## [C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)
 ### [다중 스레딩: 사용자 인터페이스 스레드 만들기](multithreading-creating-user-interface-threads.md)
 ### [다중 스레딩: 작업자 스레드 만들기](multithreading-creating-worker-threads.md)
