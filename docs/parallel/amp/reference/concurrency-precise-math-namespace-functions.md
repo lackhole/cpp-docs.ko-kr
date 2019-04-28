@@ -91,11 +91,11 @@ f1_keywords:
 - amp_math/Concurrency::precise_math::truncf
 ms.assetid: fae53ab4-d1c5-45bb-a6a0-a74258e9aea3
 ms.openlocfilehash: 7690c0629e7035d0130f0a7dbdcabf3e959ae7b6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180403"
 ---
 # <a name="concurrencyprecisemath-namespace-functions"></a>Concurrency:: precise_math 네임 스페이스 함수
 
@@ -1193,7 +1193,7 @@ inline float fminf(
 
 인수의 최소 숫자 값을 반환 합니다.
 
-##  <a name="fmod"></a>  fmod 함수 (c + + AMP)
+##  <a name="fmod"></a>  fmod 함수 (C++ AMP)
 
 지정 된 인수의 첫 번째 지정된 된 두 번째 인수를 나눈 나머지를 계산 합니다.
 

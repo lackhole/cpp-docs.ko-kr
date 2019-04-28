@@ -25,11 +25,11 @@ helpviewer_keywords:
 - wctrans function
 ms.assetid: 215404bf-6d60-489c-9ae9-880e6b586162
 ms.openlocfilehash: 3c7aace7a93160d2e9a4c1523d49bcaf6ae4dc20
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188457"
 ---
 # <a name="wctrans"></a>wctrans
 
@@ -58,10 +58,10 @@ wctrans_t wctrans(
 
 다음 호출 쌍은 모든 로캘에서 동일하게 동작하지만 "C" 로캘에서도 추가 매핑을 정의할 수 있습니다.
 
-|기능|동일한 항목|
+|함수|동일한 항목|
 |--------------|-------------|
-|tolower(c)|towctrans (c, wctrans("towlower"))|
-|towupper(c)|towctrans (c, wctrans("toupper"))|
+|tolower(c)|towctrans(c, wctrans("towlower"))|
+|towupper(c)|towctrans(c, wctrans("toupper"))|
 
 ## <a name="requirements"></a>요구 사항
 

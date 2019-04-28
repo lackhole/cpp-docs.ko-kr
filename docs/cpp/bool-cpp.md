@@ -9,11 +9,11 @@ helpviewer_keywords:
 - __BOOL_DEFINED macro
 ms.assetid: 9abed3f2-d21c-4eb4-97c5-716342e613d8
 ms.openlocfilehash: e481cb9de7c80d147179efceab2fda9b160f3c21
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184288"
 ---
 # <a name="bool-c"></a>bool (C++)
 
@@ -52,5 +52,5 @@ if (condexpr1) statement1;
 
 ## <a name="see-also"></a>참고자료
 
-[키워드](../cpp/keywords-cpp.md)<br/>
-[기본 형식](../cpp/fundamental-types-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[기본 형식(C++)](../cpp/fundamental-types-cpp.md)

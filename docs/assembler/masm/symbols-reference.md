@@ -5,11 +5,11 @@ helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), symbols reference
 ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
 ms.openlocfilehash: e57583ce2b4184120569be3a44d87ffc3f51586c
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210218"
 ---
 # <a name="symbols-reference"></a>기호 참조
 
@@ -23,15 +23,15 @@ ms.locfileid: "51326617"
 
 |||
 |-|-|
-|[\@cpu](../../assembler/masm/at-cpu.md)|[\@환경](../../assembler/masm/at-environ.md)|
+|[\@Cpu](../../assembler/masm/at-cpu.md)|[\@환경](../../assembler/masm/at-environ.md)|
 |[\@인터페이스](../../assembler/masm/at-interface.md)|[\@버전](../../assembler/masm/at-version.md)|
 
 ## <a name="file-information"></a>파일 정보
 
 |||
 |-|-|
-|[\@FileCur](../../assembler/masm/at-filecur.md)|[\@파일 이름](../../assembler/masm/at-filename.md)|
-|[\@줄](../../assembler/masm/at-line.md)||
+|[\@FileCur](../../assembler/masm/at-filecur.md)|[\@FileName](../../assembler/masm/at-filename.md)|
+|[\@Line](../../assembler/masm/at-line.md)||
 
 ## <a name="macro-functions"></a>매크로 함수
 
@@ -51,9 +51,9 @@ ms.locfileid: "51326617"
 
 ||||
 |-|-|-|
-|[\@코드](../../assembler/masm/at-code.md)|[\@CodeSize](../../assembler/masm/at-codesize.md)|[\@CurSeg](../../assembler/masm/at-curseg.md)|
-|[\@데이터](../../assembler/masm/at-data.md)|[\@DataSize](../../assembler/masm/at-datasize.md)|[\@fardata](../../assembler/masm/at-fardata.md)|
-|[\@fardata?](../../assembler/masm/at-fardata-q.md)|[\@모델](../../assembler/masm/at-model.md)|[\@스택](../../assembler/masm/at-stack.md)|
+|[\@code](../../assembler/masm/at-code.md)|[\@CodeSize](../../assembler/masm/at-codesize.md)|[\@CurSeg](../../assembler/masm/at-curseg.md)|
+|[\@data](../../assembler/masm/at-data.md)|[\@DataSize](../../assembler/masm/at-datasize.md)|[\@fardata](../../assembler/masm/at-fardata.md)|
+|[\@fardata?](../../assembler/masm/at-fardata-q.md)|[\@모델](../../assembler/masm/at-model.md)|[\@stack](../../assembler/masm/at-stack.md)|
 |[\@WordSize](../../assembler/masm/at-wordsize.md)|||
 
 ## <a name="see-also"></a>참고자료

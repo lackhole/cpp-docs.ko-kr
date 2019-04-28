@@ -1,5 +1,5 @@
 ---
-title: extern (c + +)
+title: extern (C++)
 ms.date: 04/12/2018
 f1_keywords:
 - extern
@@ -10,13 +10,13 @@ helpviewer_keywords:
 - external linkage, extern modifier
 ms.assetid: 1e2f0ae3-ae98-4410-85b5-222d6abc865a
 ms.openlocfilehash: 4a3a4e158794e06f28c638e87e014ddc3fb99837
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183741"
 ---
-# <a name="extern-c"></a>extern (c + +)
+# <a name="extern-c"></a>extern (C++)
 
 합니다 **extern** 키워드가 해당 작업의 이름에 지정 하려면 전역 변수, 함수 또는 템플릿 선언에 적용 되는지 *외부 링크가*합니다. 링크 및 전역 변수 사용은 권장 되지 않습니다에 대 한 자세한 내용은 참조 하세요. [프로그램 및 링크](program-and-linkage-cpp.md)합니다.
 
@@ -72,11 +72,11 @@ extern constexpr int x = 10; //error LNK2005: "int const x" already defined
 extern constexpr __declspec(selectany) int x = 10;
 ```
 
-## <a name="extern-c-and-extern-c-function-declarations"></a>extern "C" 및 extern "c + +" 함수 선언
+## <a name="extern-c-and-extern-c-function-declarations"></a>extern "C" 및 extern "C++" 선언을 함수
 
-C + +에서는 문자열에서 사용 하는 경우 **extern** 는 다른 언어의 링크 규칙을 사용 하는 중임을 지정 합니다. C 함수 및 데이터는 이전에 C 링크가 있는 것으로 선언된 경우에만 액세스할 수 있습니다. 단, 별도로 컴파일된 변환 단위로 정의되어야 합니다.
+C++문자열을 사용 하는 경우 **extern** 는 다른 언어의 링크 규칙을 사용 하는 중임을 지정 합니다. C 함수 및 데이터는 이전에 C 링크가 있는 것으로 선언된 경우에만 액세스할 수 있습니다. 단, 별도로 컴파일된 변환 단위로 정의되어야 합니다.
 
-Microsoft c + + 지원 **"C"** 하 고 **"c + +"** 에 *문자열 리터럴* 필드입니다. 모든 표준 포함 파일을 **extern** "C" 구문을 런타임 라이브러리 함수를 c + + 프로그램에서 사용할 수 있도록 합니다.
+Microsoft C++ 는 문자열을 지 원하는 **"C"** 하 고 **"C++"** 에 *문자열 리터럴* 필드. 모든 표준 포함 파일을 **extern** 에서 사용할 수 있는 런타임 라이브러리 함수를 허용 하는 "C" 구문을 C++ 프로그램입니다.
 
 ## <a name="example"></a>예제
 
@@ -134,7 +134,7 @@ extern "C" int CFunc2(); // Error: not the first declaration of
 
 ## <a name="see-also"></a>참고자료
 
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [프로그램 및 링크](program-and-linkage-cpp.md)<br/>
 [extern c에서 저장소 클래스 지정자](../c-language/extern-storage-class-specifier.md)<br/>
 [C에서 식별자 동작](../c-language/behavior-of-identifiers.md)<br/>

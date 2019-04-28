@@ -12,11 +12,11 @@ helpviewer_keywords:
 - loading DLLs [C++]
 ms.assetid: 7592e276-dd6e-4a74-90c8-e1ee35598ea3
 ms.openlocfilehash: fc7a676059af17e7a42189c7c15ca157a081e08a
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57818364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188766"
 ---
 # <a name="link-an-executable-to-a-dll"></a>DLL에 실행 파일 링크
 
@@ -74,13 +74,13 @@ ms.locfileid: "57818364"
 
 암시적 연결 하 여 DLL을 사용 하려면 클라이언트 실행 파일은 DLL의 공급자에서 이러한 파일을 구해야 합니다.
 
-- 하나 이상의 헤더 파일 (.h) 내보낸된 데이터, 함수 및/또는 c + + DLL의 클래스 선언이 들어 있는입니다. 클래스, 함수 및 DLL에서 내보낸 데이터 모두 표시 되어야 합니다 `__declspec(dllimport)` 헤더 파일에 있습니다. 자세한 내용은 [dllexport, dllimport](../cpp/dllexport-dllimport.md)합니다.
+- 하나 이상의 헤더 파일 (.h) 내보낸된 데이터를 함수 선언을 포함 하는 및/또는 C++ DLL의 클래스입니다. 클래스, 함수 및 DLL에서 내보낸 데이터 모두 표시 되어야 합니다 `__declspec(dllimport)` 헤더 파일에 있습니다. 자세한 내용은 [dllexport, dllimport](../cpp/dllexport-dllimport.md)합니다.
 
 - 실행 파일에 연결 하는 가져오기 라이브러리입니다. 링커는 DLL을 빌드할 때 가져오기 라이브러리를 만듭니다. 자세한 내용은 참조 하세요. [합니다. LIB 파일](reference/dot-lib-files-as-linker-input.md)합니다.
 
 - 실제 DLL 파일입니다.
 
-암시적 연결 하 여 DLL을 사용 하려면 실행 데이터, 함수 또는 내보낸된 데이터, 함수 및 클래스에 대 한 호출을 포함 하는 각 소스 파일에서 해당 DLL에서 내보내기 하는 c + + 클래스를 선언 하는 헤더 파일을 포함 해야 합니다. 코딩 관점에서 다른 함수 호출 처럼 내보낸된 함수를 호출 하는 합니다.
+암시적 연결 하 여 DLL을 사용 하려면 실행 데이터, 함수를 선언 하는 헤더 파일을 포함 해야 합니다 또는 C++ 클래스는 내보낸된 데이터, 함수 및 클래스에 대 한 호출을 포함 하는 각 소스 파일에서 해당 DLL에서 내보내기. 코딩 관점에서 다른 함수 호출 처럼 내보낸된 함수를 호출 하는 합니다.
 
 호출 실행 파일을 빌드하려면 가져오기 라이브러리를 사용 하 여 연결 해야 합니다. 를 외부 메이크파일을 사용 하거나 시스템을 구축 하는 경우에 다른 개체 (.obj) 파일을 나열할 수 있는 가져오기 라이브러리 또는 라이브러리는 연결 하는 파일 이름을 지정 합니다.
 

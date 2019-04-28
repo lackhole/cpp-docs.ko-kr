@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3421
 ms.assetid: b52050c6-17a4-424a-8894-337b0cec7010
 ms.openlocfilehash: 399224a3d091a26066a03df0c77511997ae2403c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182426"
 ---
 # <a name="compiler-error-c3421"></a>컴파일러 오류 C3421
 
@@ -19,7 +19,7 @@ ms.locfileid: "50448908"
 
 종료자는 암시적으로 비공개이므로 바깥쪽 형식 외부에서 호출될 수 없습니다.
 
-자세한 내용은 [방법의 소멸자 및 종료자: 클래스 및 구조체 정의 및 사용 (C + + /cli CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)합니다.
+자세한 내용은 참조 하세요. [소멸자 및 종료자 방법에서: 클래스 및 구조체 정의 및 사용 (C++/CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)합니다.
 
 ## <a name="example"></a>예제
 

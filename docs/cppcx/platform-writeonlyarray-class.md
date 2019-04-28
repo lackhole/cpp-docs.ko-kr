@@ -13,11 +13,11 @@ helpviewer_keywords:
 - Platform::WriteOnlyArray Class
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
 ms.openlocfilehash: fb582106fe2f18e939f11180048a125c683ca2f6
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182940"
 ---
 # <a name="platformwriteonlyarray-class"></a>Platform::WriteOnlyArray 클래스
 
@@ -177,8 +177,7 @@ T& set(
 설정할 요소의 인덱스입니다.
 
 *valueArg*<br/>
-
-  `indexArg`에서 설정할 값입니다.
+`indexArg`에서 설정할 값입니다.
 
 ### <a name="return-value"></a>반환 값
 

@@ -25,11 +25,11 @@ helpviewer_keywords:
 - CFileException [MFC], m_strFileName
 ms.assetid: f6491bb9-bfbc-42fd-a952-b33f9b62323f
 ms.openlocfilehash: a3514c76d4136fe2bc0b096cc382e6f7f4dd3392
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62205938"
 ---
 # <a name="cfileexception-class"></a>CFileException 클래스
 
@@ -177,8 +177,7 @@ virtual BOOL GetErrorMessage(
 
 ##  <a name="m_cause"></a>  CFileException::m_cause
 
-
-  `CFileException` 열거형 형식으로 정의되는 값을 포함합니다.
+`CFileException` 열거형 형식으로 정의되는 값을 포함합니다.
 
 ```
 int m_cause;

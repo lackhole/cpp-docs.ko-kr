@@ -7,17 +7,17 @@ helpviewer_keywords:
 - user interfaces
 ms.assetid: f5daf2c1-bc08-4b71-9b03-da2c0aab5764
 ms.openlocfilehash: bf1c3f677ac8cd2e3ad91ef694f0637af8a6f578
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180774"
 ---
 # <a name="user-interface-elements-mfc"></a>사용자 인터페이스 요소(MFC)
 
 Microsoft Foundation 클래스 (MFC) 라이브러리를 사용 하 여 응용 프로그램에 대 한 사용자 인터페이스를 만드는 방법에 대 한 자세한 내용은 다음 항목을 참조 하십시오.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [ActiveX 컨트롤](../mfc/activex-controls.md)<br/>
 기준에서 구성 요소 개체 모델 (COM), 다양 한 OLE 기능을 지원 하며 많은 소프트웨어 요구 사항에 맞게 사용자 지정할 수 있습니다 하는 재사용 가능한 소프트웨어 구성 요소를 사용 하는 방법을 설명 합니다.
@@ -43,7 +43,7 @@ MFC의 데이터 관리를 설명합니다.
 [폼 뷰](../mfc/form-views-mfc.md)<br/>
 응용 프로그램에 폼 지원을 추가 하는 방법을 설명 합니다.
 
-[HTML 도움말: 프로그램에 대 한 상황에 맞는 도움말](../mfc/html-help-context-sensitive-help-for-your-programs.md)<br/>
+[HTML 도움말: 프로그램에 대한 상황에 맞는 도움말](../mfc/html-help-context-sensitive-help-for-your-programs.md)<br/>
 HTML 도움말을 사용 하 여 응용 프로그램에 대 한 상황에 맞는 도움말을 추가 하는 방법에 설명 합니다.
 
 [MDI 탭 그룹](../mfc/mdi-tabbed-groups.md)<br/>

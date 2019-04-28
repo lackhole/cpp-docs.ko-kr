@@ -19,11 +19,11 @@ helpviewer_keywords:
 - inheritance, keywords
 ms.assetid: bb810f56-7720-4fea-b8b6-9499edd141df
 ms.openlocfilehash: 656ee7ed38c24c9f3b8881f84d8e33ca81e3d936
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183494"
 ---
 # <a name="inheritance-keywords"></a>상속 키워드
 
@@ -37,7 +37,7 @@ class [__virtual_inheritance] class-name;
 
 다음은 각 문자에 대한 설명입니다.
 
-*클래스 이름*<br/>
+*class-name*<br/>
 선언되는 클래스의 이름입니다.
 
 C++를 사용하면 클래스의 정의 이전에 클래스 멤버에 대한 포인터를 선언할 수 있습니다. 예를 들어:
@@ -78,6 +78,6 @@ int S::*p;
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

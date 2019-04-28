@@ -1,16 +1,16 @@
 ---
 title: '연습: 간단한 작업을 사용 하도록 기존 코드 조정'
-ms.date: 11/04/2016
+ms.date: 04/25/2019
 helpviewer_keywords:
 - using lightweight tasks [Concurrency Runtime]
 - lightweight tasks, using [Concurrency Runtime]
 ms.assetid: 1edfe818-d274-46de-bdd3-e92967c9bbe0
 ms.openlocfilehash: 43e928e7d82b41b83fde5e8a7abaeeeb8d6fefa9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186025"
 ---
 # <a name="walkthrough-adapting-existing-code-to-use-lightweight-tasks"></a>연습: 간단한 작업을 사용 하도록 기존 코드 조정
 

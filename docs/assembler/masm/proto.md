@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PROTO directive
 ms.assetid: 0487ee16-9dc7-43d1-9445-cd1601f5a080
 ms.openlocfilehash: 616b6be2a5c191ebc67d61288cb5fa6c183091fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210523"
 ---
 # <a name="proto"></a>PROTO
 
@@ -19,7 +19,7 @@ ms.locfileid: "50536728"
 
 ## <a name="syntax"></a>구문
 
-> *레이블을* **PROTO** \[ *거리*] \[ *langtype*] \[ __,__ \[ *매개 변수*]__:__*태그*]...
+> *label* **PROTO** \[*distance*] \[*langtype*] \[__,__ \[*parameter*]__:__*tag*] ...
 
 ### <a name="parameters"></a>매개 변수
 
@@ -34,12 +34,12 @@ ms.locfileid: "50536728"
 
 - 32 비트 **평면** 모델: **C**, **STDCALL**
 
-- 16 비트 모델: **C**, **BASIC**, **FORTRAN**, **파스칼식**를 **SYSCALL**, **STDCALL**
+- 16 비트 모델: **C**, **BASIC**, **FORTRAN**, **PASCAL**, **SYSCALL**, **STDCALL**
 
 *parameter*<br/>
 함수 매개 변수의 선택적 이름입니다.
 
-*태그*<br/>
+*tag*<br/>
 함수 매개 변수의 형식입니다.
 
 합니다 *매개 변수* 하 고 *태그* 매개 변수를 여러 번 한 번 나타날 수 각 전달 된 인수에 대 한 합니다.

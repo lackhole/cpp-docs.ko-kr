@@ -7,11 +7,11 @@ helpviewer_keywords:
 - WORD directive
 ms.assetid: 36f7ac49-480d-4d67-8967-3a62acb8f4df
 ms.openlocfilehash: a707c1623c6aaab854790dccd444e854687b30ce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216958"
 ---
 # <a name="word"></a>WORD
 
@@ -19,7 +19,7 @@ ms.locfileid: "50638648"
 
 ## <a name="syntax"></a>구문
 
-> [[*이름을*]] 단어 *이니셜라이저* [[합니다 *이니셜라이저*]]...
+> [[*name*]] WORD *initializer* [[, *initializer*]]...
 
 ## <a name="see-also"></a>참고자료
 
