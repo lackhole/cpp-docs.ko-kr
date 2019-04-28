@@ -21,11 +21,11 @@ helpviewer_keywords:
 - reference counting
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
 ms.openlocfilehash: 06a0c0e4b650945e10015c3220b926399ec9c6fd
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246315"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx 클래스
 
@@ -305,7 +305,7 @@ static void WINAPI ObjectMain(bool bStarting);
 
 값을 *bStarting* 매개 변수는 모듈 되 고 있는지 여부를 나타냅니다 초기화 되거나 종료 합니다. 기본 구현을 `ObjectMain` 하지 않지만 초기화 하거나 클래스에 대 한 할당 하려는 리소스를 정리 하려면 클래스에서이 함수를 재정의할 수 있습니다. `ObjectMain` 클래스 인스턴스의 모든 요청 전에 호출 됩니다.
 
-`ObjectMain` 진입점 함수를 수행할 수 있는 작업의 형식이 제한 되므로 DLL의 진입점에서 호출 됩니다. 이러한 제한 사항에 대 한 자세한 내용은 참조 하세요. [Dll 및 Visual c + + 런타임 라이브러리 동작](../../build/run-time-library-behavior.md) 하 고 [DllMain](/windows/desktop/Dlls/dllmain)합니다.
+`ObjectMain` 진입점 함수를 수행할 수 있는 작업의 형식이 제한 되므로 DLL의 진입점에서 호출 됩니다. 이러한 제한 사항에 대 한 자세한 내용은 참조 하세요. [Dll 및 시각적 개체 C++ 런타임 라이브러리 동작](../../build/run-time-library-behavior.md) 하 고 [DllMain](/windows/desktop/Dlls/dllmain)합니다.
 
 ### <a name="example"></a>예제
 

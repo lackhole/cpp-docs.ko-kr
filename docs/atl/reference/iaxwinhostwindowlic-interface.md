@@ -10,11 +10,11 @@ helpviewer_keywords:
 - IAxWinHostWindowLic interface
 ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7
 ms.openlocfilehash: aca3970d13db53ffa04fe9582bbe9b8db78e820d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57257958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62275992"
 ---
 # <a name="iaxwinhostwindowlic-interface"></a>IAxWinHostWindowLic 인터페이스
 
@@ -43,7 +43,7 @@ interface IAxWinHostWindowLic : IAxWinHostWindow
 
 ## <a name="requirements"></a>요구 사항
 
-이 인터페이스의 정의 아래와 같이 IDL 또는 c + +를 사용할 수 있습니다.
+이 인터페이스의 정의 IDL로 제공 됩니다. 또는 C++다음과 같이 합니다.
 
 |정의 유형|파일|
 |---------------------|----------|

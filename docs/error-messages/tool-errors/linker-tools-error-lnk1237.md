@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1237
 ms.assetid: 8722ffa8-096a-4bb0-85f9-f3aa0e10872a
 ms.openlocfilehash: ae1a397cdcc10cd89fd046a94e78c15dd46dceed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242533"
 ---
 # <a name="linker-tools-error-lnk1237"></a>링커 도구 오류 LNK1237
 

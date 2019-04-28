@@ -12,11 +12,11 @@ helpviewer_keywords:
 - OLE server applications [MFC], trackers
 ms.assetid: dcd09399-6637-4621-80e5-d12670429787
 ms.openlocfilehash: b71eb0e5d46a790b01ec12f12043af783bdfcf27
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58771450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62181640"
 ---
 # <a name="trackers"></a>추적기
 
@@ -24,7 +24,7 @@ ms.locfileid: "58771450"
 
 MFC OLE 샘플 [OCLIENT](../overview/visual-cpp-samples.md) 추적기 및 컨테이너 응용 프로그램의 관점에서 OLE 클라이언트 항목을 사용 하 여 공용 인터페이스를 보여 줍니다. 다른 스타일의 데모와 추적기 개체의 기능에 대 한 MFC 일반 샘플을 참조 하세요 [추적기](../overview/visual-cpp-samples.md)합니다.
 
-OLE 응용 프로그램에서 추적기 구현에 대 한 자세한 내용은 참조 하세요. [추적기: OLE 응용 프로그램에서 추적기 구현](../mfc/trackers-implementing-trackers-in-your-ole-application.md)
+OLE 응용 프로그램에서 추적기 구현에 대 한 자세한 내용은 참조 하세요. [추적기: OLE 애플리케이션에서 추적기 구현](../mfc/trackers-implementing-trackers-in-your-ole-application.md)
 
 ## <a name="see-also"></a>참고자료
 

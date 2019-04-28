@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ATL Control Wizard, options
 ms.assetid: 4607c51a-992d-433e-9281-919c6f519a3d
 ms.openlocfilehash: 1dd136739162c72d8064deb9b1498794f1985e1b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62197356"
 ---
 # <a name="options-atl-control-wizard"></a>옵션, ATL 컨트롤 마법사
 
@@ -31,7 +31,7 @@ ms.locfileid: "57282983"
 
   - 사용자 지정 리소스를 자동으로 호출 될 때 복합 컨트롤을 등록 하는 레지스트리입니다.
 
-  - 복합 컨트롤을 구현 하는 c + + 클래스입니다.
+  - C++ 복합 컨트롤을 구현 하는 클래스입니다.
 
   - 복합 컨트롤에서 노출 하는 COM 인터페이스입니다.
 

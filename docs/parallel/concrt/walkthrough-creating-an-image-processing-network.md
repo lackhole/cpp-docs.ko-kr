@@ -1,16 +1,16 @@
 ---
 title: '연습: 이미지 처리 네트워크 만들기'
-ms.date: 11/19/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - image-processing networks, creating [Concurrency Runtime]
 - creating image-processing networks [Concurrency Runtime]
 ms.assetid: 78ccadc9-5ce2-46cc-bd62-ce0f99d356b8
 ms.openlocfilehash: 035d73190f3596044a35cbc45681807801385eab
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62205837"
 ---
 # <a name="walkthrough-creating-an-image-processing-network"></a>연습: 이미지 처리 네트워크 만들기
 
@@ -132,7 +132,7 @@ ms.locfileid: "57262815"
 
 응용 프로그램 메시지를 먼저 메시지를 수락 하는 하나의 메시지 블록 바로 대신 프로세스를 차단 하는 여러 메시지에 필요한 경우 사용할 수 다른 메시지 블록 형식을 같은 `overwrite_buffer`합니다. `overwrite_buffer` 클래스는 한 번에 하나의 메시지를 포함 하지만 해당 메시지를 각 대상에 전파 합니다.
 
-다음 그림에서는 이미지 처리 네트워크를 보여 줍니다.
+다음 그림에서는 이미지 처리 네트워크를 보여줍니다.
 
 ![이미지 처리 네트워크](../../parallel/concrt/media/concrt_imageproc.png "이미지 처리 네트워크")
 

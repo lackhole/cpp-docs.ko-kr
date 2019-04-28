@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1189
 ms.assetid: 2e5c8a78-edd4-411c-b619-558a96be148a
 ms.openlocfilehash: 06d42316a0109ac063bba43cefebd9aab71c2e72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62229061"
 ---
 # <a name="fatal-error-c1189"></a>심각한 오류 C1189
 
@@ -19,7 +19,7 @@ ms.locfileid: "50565531"
 
 ## <a name="remarks"></a>설명
 
-C1189에서 생성 되는 `#error` 지시문입니다. 지시문을 코딩 하는 개발자는 오류 메시지의 텍스트를 지정 합니다. 자세한 내용은 [#error 지시문 (C/c + +)](../../preprocessor/hash-error-directive-c-cpp.md)합니다.
+C1189에서 생성 되는 `#error` 지시문입니다. 지시문을 코딩 하는 개발자는 오류 메시지의 텍스트를 지정 합니다. 자세한 내용은 [#error 지시문 (C /C++)](../../preprocessor/hash-error-directive-c-cpp.md)합니다.
 
 ## <a name="example"></a>예제
 

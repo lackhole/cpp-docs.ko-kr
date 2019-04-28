@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2002
 ms.assetid: 91982314-203a-4de1-b884-94e39a623f61
 ms.openlocfilehash: 30f472aa7a9475a19eea0e92fe5c2ea0d54e382b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209038"
 ---
 # <a name="compiler-error-c2002"></a>컴파일러 오류 C2002
 
@@ -33,4 +33,4 @@ ms.locfileid: "50442850"
     L'mbconst'
     ```
 
-1. Microsoft c + + 전처리기 지시문의 텍스트 인수 ASCII 이어야 합니다. 예를 들어, 지시문을 `#pragma message(L"string")`에 올바르지 않습니다.
+1. Microsoft C++, 전처리기 지시문의 텍스트 인수에는 ASCII 이어야 합니다. 예를 들어, 지시문을 `#pragma message(L"string")`에 올바르지 않습니다.

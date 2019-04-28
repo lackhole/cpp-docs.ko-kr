@@ -9,17 +9,17 @@ helpviewer_keywords:
 - time, getting current
 ms.assetid: c39e6775-6a92-4b27-95a7-5c86ed371d8a
 ms.openlocfilehash: e883a47243feb7ad1555748ffdda9b8ae9594644
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236216"
 ---
 # <a name="current-time-general-purpose-classes"></a>현재 시간: 범용 클래스
 
-다음 절차에는 만드는 방법을 보여 줍니다는 `CTime` 개체 및 현재 시간을 사용 하 여 초기화 합니다.
+다음 절차에서는 `CTime` 개체를 만드는 방법과 현재 시간을 사용하여 초기화하는 것을 보여 줍니다.
 
-### <a name="to-get-the-current-time"></a>현재 시간을 가져오려면
+### <a name="to-get-the-current-time"></a>현재 시간 가져오기
 
 1. 할당을 `CTime` 개체를 다음과 같이 합니다.
 

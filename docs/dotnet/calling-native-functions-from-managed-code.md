@@ -10,11 +10,11 @@ helpviewer_keywords:
 - interop [C++], calling native functions from managed code
 ms.assetid: 982cef18-20d9-42b4-8242-a77fa65f2e36
 ms.openlocfilehash: 285bfabbd5935df303a39ada11c388713ae24f34
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209193"
 ---
 # <a name="calling-native-functions-from-managed-code"></a>관리 코드에서 네이티브 함수 호출
 
@@ -29,11 +29,11 @@ ms.locfileid: "57743253"
 이 단원의 샘플에서는 대해서만 설명 하는 방법을 `PInvoke` 사용할 수 있습니다. `PInvoke` 프로시저 마샬링 코드를 작성 하는 대신 특성에 선언적으로 마샬링 정보를 제공할 수 있으므로 사용자 지정된 데이터 마샬링을 간소화할 수 있습니다.
 
 > [!NOTE]
->  마샬링 라이브러리는 최적화 된 방식으로 네이티브 및 관리 되는 환경 간에 데이터를 마샬링하는 대안을 제공 합니다. 참조 [Overview of Marshaling c + +에서](../dotnet/overview-of-marshaling-in-cpp.md) 마샬링 라이브러리에 대 한 자세한 내용은 합니다. 마샬링 라이브러리는 함수에 대 한 데이터만 사용할 수 있습니다.
+>  마샬링 라이브러리는 최적화 된 방식으로 네이티브 및 관리 되는 환경 간에 데이터를 마샬링하는 대안을 제공 합니다. 참조 [마샬링 개요 C++ ](../dotnet/overview-of-marshaling-in-cpp.md) 마샬링 라이브러리에 대 한 자세한 내용은 합니다. 마샬링 라이브러리는 함수에 대 한 데이터만 사용할 수 있습니다.
 
 ## <a name="pinvoke-and-the-dllimport-attribute"></a>PInvoke 및 DllImport 특성
 
-다음 예제에서는 사용을 보여 줍니다. `PInvoke` Visual c + + 프로그램에서 합니다. 네이티브 함수 puts는 msvcrt.dll에서 정의 됩니다. DllImport 특성은 puts 선언에 사용 됩니다.
+다음 예제에서는 사용을 보여 줍니다 `PInvoke` 시각적 개체의 C++ 프로그램입니다. 네이티브 함수 puts는 msvcrt.dll에서 정의 됩니다. DllImport 특성은 puts 선언에 사용 됩니다.
 
 ```
 // platform_invocation_services.cpp
@@ -87,7 +87,7 @@ int main() {
 
 - 명시적 마샬링 Api는 반환할 `IntPtr` 32 비트에서 64 비트 이식성에 대 한 형식을 사용 해야 추가 `ToPointer` 호출 합니다.
 
-C + +에서 노출 되는 특정 메서드는 보다 효율적인 고 명시적인 메서드인 반면 더 복잡해 진다는 합니다.
+에 의해 노출 되는 특정 메서드 C++ 는 더 효율적이 고 명시적인 메서드인 반면 더 복잡해 진다는 합니다.
 
 응용 프로그램은 주로 관리 되지 않는 데이터 형식 또는.NET Framework Api 보다 좀 더 관리 되지 않는 Api를 호출 하는 경우 좋습니다 하는 경우 IJW 기능을 사용 합니다. 대부분 관리 되는 응용 프로그램에서 가끔 관리 되지 않는 API를 호출 하려면 선택은 더 미묘 합니다.
 
@@ -95,7 +95,7 @@ C + +에서 노출 되는 특정 메서드는 보다 효율적인 고 명시적�
 
 PInvoke는 Windows의 함수를 호출 하는 데 유용 합니다.
 
-이 예제에서는 Visual c + + 프로그램을 Win32 API의 일부인 MessageBox 함수와 상호 운용 합니다.
+이 예제에서는 시각적 개체 C++ 프로그램 Win32 API의 일부인 MessageBox 함수와 상호 운용 합니다.
 
 ```cpp
 // platform_invocation_services_4.cpp
@@ -123,7 +123,7 @@ PInvoke를 사용 하 여 Dll에서 모든 C 스타일 함수에 대해 적합 �
 
 `char * MakeSpecial(char * pszString);`
 
-Visual c + + 응용 프로그램에서 PInvoke를 사용 하는 경우 다음과 유사한 코드를 작성 해야 합니다.
+시각적 개체에서 PInvoke를 사용 하는 경우 C++ 응용 프로그램 코드를 작성 해야 다음과 비슷합니다.
 
 ```cpp
 [DllImport("mylib")]
@@ -168,11 +168,11 @@ int main() {
 
 ## <a name="marshaling-arguments"></a>마샬링 인수
 
-사용 하 여 `PInvoke`를 마샬링할 필요가 없습니다 간에 관리와 같은 폼을 사용 하 여 c + + 네이티브 기본 형식입니다. 예를 들어 마샬링이 없는 Int32와 int 또는 Double과 double 사이는 필수입니다.
+사용 하 여 `PInvoke`, 마샬링할 필요가 없습니다 간의 관리 및 C++ 네이티브 기본 형식과 동일한 형식입니다. 예를 들어 마샬링이 없는 Int32와 int 또는 Double과 double 사이는 필수입니다.
 
 그러나 동일한 폼이 없는 형식은 마샬링해야 합니다. Char, string 및 struct 형식이 포함 됩니다. 다음 표에서 다양 한 형식에 대해 마샬러에 사용 하는 매핑을 보여 줍니다.
 
-|wtypes.h|Visual C++|Visual c + + /clr을 사용한|공용 언어 런타임|
+|wtypes.h|Visual C++|Visual C++ /clr을 사용한|공용 언어 런타임|
 |--------------|------------------|-----------------------------|-----------------------------|
 |HANDLE|void \*|void \*|IntPtr, UIntPtr|
 |BYTE|unsigned char|unsigned char|Byte|
@@ -181,7 +181,7 @@ int main() {
 |INT|int|int|Int32|
 |UINT|unsigned int|unsigned int|UInt32|
 |LONG|long|long|Int32|
-|BOOL|long|bool|부울|
+|BOOL|long|bool|Boolean|
 |DWORD|unsigned long|unsigned long|UInt32|
 |ULONG|unsigned long|unsigned long|UInt32|
 |CHAR|char|char|Char|
@@ -217,7 +217,7 @@ int main() {
 
 MarshalAs 특성은 System::Runtime::InteropServices 네임 스페이스입니다. 배열과 같은 다른 데이터 형식 특성을 사용할 수 있습니다.
 
-항목의 앞부분에서 설명 했 듯이 마샬링 라이브러리는 네이티브 및 관리 되는 환경 간에 데이터를 마샬링하기의 최적화 된 새 메서드를 제공 합니다. 자세한 내용은 [Overview of Marshaling c + +에서](../dotnet/overview-of-marshaling-in-cpp.md)합니다.
+항목의 앞부분에서 설명 했 듯이 마샬링 라이브러리는 네이티브 및 관리 되는 환경 간에 데이터를 마샬링하기의 최적화 된 새 메서드를 제공 합니다. 자세한 내용은 [마샬링 개요 C++ ](../dotnet/overview-of-marshaling-in-cpp.md)합니다.
 
 ## <a name="performance-considerations"></a>성능 고려 사항
 

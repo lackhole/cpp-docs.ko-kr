@@ -8,15 +8,15 @@ helpviewer_keywords:
 - ATL Project Wizard
 ms.assetid: 564d2aaf-5b8e-4c2a-a925-ca40a283ea34
 ms.openlocfilehash: 4059961d70e6486f7417a5eff034b194d9860558
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261435"
 ---
 # <a name="atl-project-wizard"></a>ATL 프로젝트 마법사
 
-액티브 템플릿 라이브러리 (ATL)은 작고 빠른 COM 개체 작성을 단순화 하는 템플릿 기반 c + + 클래스의 집합. ATL 프로젝트 마법사는 COM 개체를 포함 하는 구조를 사용 하 여 프로젝트를 만듭니다.
+액티브 템플릿 라이브러리 (ATL) 템플릿 기반 집합이 C++ 작고 빠른 COM 개체 작성을 단순화 하는 클래스입니다. ATL 프로젝트 마법사는 COM 개체를 포함 하는 구조를 사용 하 여 프로젝트를 만듭니다.
 
 ## <a name="overview"></a>개요
 
@@ -30,7 +30,7 @@ ms.locfileid: "57807795"
 
 기본 프로젝트 설정에 대 한 자세한 내용은 문자 집합 선택을 비롯 한 기본값을 연결 및 참조 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)합니다.
 
-개체 또는 컨트롤 Visual c + +를 사용 하 여 프로젝트에 추가할 수는 ATL 프로젝트를 만들면 [코드 마법사](../../ide/adding-functionality-with-code-wizards-cpp.md)합니다. 다음과 같은 유형의 코드 마법사를 사용 하 여 기본 ATL 프로젝트의 향상 된 기능을 만들 수 있습니다.
+개체 또는 컨트롤 시각적 개체를 사용 하 여 프로젝트에 추가할 수는 ATL 프로젝트를 만든 후 C++ [코드 마법사](../../ide/adding-functionality-with-code-wizards-cpp.md)합니다. 다음과 같은 유형의 코드 마법사를 사용 하 여 기본 ATL 프로젝트의 향상 된 기능을 만들 수 있습니다.
 
 - [ATL 프로젝트에 개체 및 컨트롤 추가](../../atl/reference/adding-objects-and-controls-to-an-atl-project.md)
 

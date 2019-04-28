@@ -37,11 +37,11 @@ helpviewer_keywords:
 - CSimpleStringT class
 ms.assetid: 15814fcb-5b8f-4425-a97e-3b61fc9b48d8
 ms.openlocfilehash: 1ec28ed5b2f5428cabcf7570c7ac53904e9a64f0
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252640"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT 클래스
 
@@ -121,7 +121,7 @@ String 클래스의 문자 형식입니다. 다음 중 하나일 수 있습니�
 
 ### <a name="remarks"></a>설명
 
-`CSimpleStringT` Visual c + +에서 지 원하는 다양 한 문자열 클래스에 대 한 기본 클래스가입니다. 기본 버퍼 조작 문자열 개체의 메모리 관리에 대 한 최소한의 지원을 제공합니다. 고급 문자열 개체를 참조 하세요 [CStringT 클래스](../../atl-mfc-shared/reference/cstringt-class.md)합니다.
+`CSimpleStringT` 시각적 개체에서 지 원하는 다양 한 문자열 클래스에 대 한 기본 클래스인 C++입니다. 기본 버퍼 조작 문자열 개체의 메모리 관리에 대 한 최소한의 지원을 제공합니다. 고급 문자열 개체를 참조 하세요 [CStringT 클래스](../../atl-mfc-shared/reference/cstringt-class.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 

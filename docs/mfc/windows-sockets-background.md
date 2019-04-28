@@ -19,11 +19,11 @@ helpviewer_keywords:
 - stream sockets [MFC]
 ms.assetid: f60d4ed2-bf23-4a0e-98d2-fee77e8473dd
 ms.openlocfilehash: 6ab866609d0b75aaf9d06a01c204433d80e7e3d8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62217880"
 ---
 # <a name="windows-sockets-background"></a>Windows 소켓: 배경
 
@@ -93,11 +93,11 @@ Windows 소켓 사양에 Windows 소켓: 네트워크 컴퓨팅에서 Microsoft 
 
 자세한 내용은 Windows Sockets 사양을 참조: **ntohs**를 **ntohl**를 **htons**를 **htonl**합니다. 또한 다음 항목을 참조 합니다.
 
-- [Windows 소켓: 소켓을 사용 하 여 아카이브를 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows 소켓: 소켓과 아카이브 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows 소켓: 아카이브를 사용 하는 소켓의 예](../mfc/windows-sockets-example-of-sockets-using-archives.md)
+- [Windows 소켓: 아카이브를 사용하는 소켓의 예](../mfc/windows-sockets-example-of-sockets-using-archives.md)
 
-- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
 ## <a name="see-also"></a>참고자료
 

@@ -14,11 +14,11 @@ helpviewer_keywords:
 - operators [C++], shift
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
 ms.openlocfilehash: 2f118c11aab9fb2bbdd6cfa4f23425077b382b23
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216423"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>왼쪽된 시프트 및 오른쪽 시프트 연산자 (&gt; &gt; 하 고 &lt; &lt;)
 
@@ -26,8 +26,8 @@ ms.locfileid: "50565845"
 
 ## <a name="syntax"></a>구문
 
-> *시프트 식* `<<` *덧셈 식을*
-> *시프트 식* `>>` *가산적 식*
+> *shift-expression* `<<` *additive-expression*
+> *shift-expression* `>>` *additive-expression*
 
 ## <a name="remarks"></a>설명
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - COM objects, ATL
 ms.assetid: 0f9c9d98-cc28-45da-89ac-dc94cee422fe
 ms.openlocfilehash: cba26ede01b69e4a077f1e842982adc8c2127331
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62198930"
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM 개체의 기본 사항
 
@@ -45,7 +45,7 @@ ATL COM 개체의 다른 측면은 다른 클래스에 의해 처리 됩니다.
 
 - [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) 구현 된 `ISupportErrorInfo` 오류 정보를 보장 하는 인터페이스 호출 체인을 올바르게 전파 될 수 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [CComObjectRootEx 구현](../atl/implementing-ccomobjectrootex.md)<br/>
 예제를 구현 하기 위한 COM 맵 엔트리 `CComObjectRootEx`합니다.
