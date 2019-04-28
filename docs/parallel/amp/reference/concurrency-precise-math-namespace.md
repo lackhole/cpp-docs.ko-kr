@@ -134,11 +134,11 @@ f1_keywords:
 - AMP_MATH/Concurrency::truncf
 ms.assetid: ba653308-dc28-4384-b2fd-6cd718a72f91
 ms.openlocfilehash: bc023d1cc27601b7da0a87aee7c3c1ac66479a7c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180353"
 ---
 # <a name="concurrencyprecisemath-namespace"></a>Concurrency::precise_math 네임스페이스
 
@@ -212,7 +212,7 @@ namespace precise_math;
 |[fmaxf](concurrency-precise-math-namespace-functions.md#fmaxf)|인수의 최대 숫자 값을 확인|
 |[fmin](concurrency-precise-math-namespace-functions.md#fmin)|오버로드됨. 인수의 최소 숫자 값을 확인|
 |[fminf](concurrency-precise-math-namespace-functions.md#fminf)|인수의 최소 숫자 값을 확인|
-|[fmod 함수 (c + + AMP)](concurrency-precise-math-namespace-functions.md#fmod)|오버로드됨. _X/_Y의 부동 소수점 나머지를 계산합니다.|
+|[fmod 함수 (C++ AMP)](concurrency-precise-math-namespace-functions.md#fmod)|오버로드됨. _X/_Y의 부동 소수점 나머지를 계산합니다.|
 |[fmodf](concurrency-precise-math-namespace-functions.md#fmodf)|_X/_Y의 부동 소수점 나머지를 계산합니다.|
 |[fpclassify](concurrency-precise-math-namespace-functions.md#fpclassify)|오버로드됨. 인수 값을 NaN, infinite, normal, subnormal, 0으로 분류합니다.|
 |[frexp](concurrency-precise-math-namespace-functions.md#frexp)|오버로드됨. _X의 지 수 고가 수를 가져옵니다.|

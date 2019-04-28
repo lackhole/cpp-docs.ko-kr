@@ -9,11 +9,11 @@ helpviewer_keywords:
 - __if_exists keyword [C++]
 ms.assetid: d3eb34b6-f3a9-4063-a286-b62a28c0c7fa
 ms.openlocfilehash: 9d5a0b24bb08a9485b2d212058fa8f0bd82e5842
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183676"
 ---
 # <a name="ifexists-statement"></a>__if_exists 문
 
@@ -32,7 +32,7 @@ statements
 |매개 변수|설명|
 |---------------|-----------------|
 |*identifier*|존재 여부를 테스트할 식별자입니다.|
-|*문*|경우 실행할 하나 이상의 문이 *식별자* 존재 합니다.|
+|*statements*|경우 실행할 하나 이상의 문이 *식별자* 존재 합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -123,6 +123,6 @@ C::f exists
 
 ## <a name="see-also"></a>참고자료
 
-[선택 문](../cpp/selection-statements-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[선택 문(C++)](../cpp/selection-statements-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [__if_not_exists 문](../cpp/if-not-exists-statement.md)

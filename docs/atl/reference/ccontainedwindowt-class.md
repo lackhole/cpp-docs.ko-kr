@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CContainedWindowT class
 ms.assetid: cde0ca36-9347-4068-995a-d294dae57ca9
 ms.openlocfilehash: 660c6c047bb700e531fd941ac8ed19d638866070
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57421573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246051"
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT 클래스
 
@@ -90,9 +90,7 @@ class CContainedWindowT : public TBase
 
 `CContainedWindowT` 기존 창 클래스 슈퍼 클 래 싱 하 여 새 창을 만들 수 있습니다. 합니다 `Create` 메서드는 먼저 기존 클래스에 기반 이지만 사용 하는 창 클래스 등록 `CContainedWindowT::WindowProc`합니다. `Create` 그런 다음이 새 창 클래스를 기반으로 창을 만듭니다. 각 인스턴스의 `CContainedWindowT` 슈퍼 클래스는 다양 한 창 클래스를 수 있습니다.
 
-`CContainedWindowT`은 또한 창 서브클래싱도 지원합니다. 
-  `SubclassWindow` 메서드는 기존 창을 `CContainedWindowT` 개체에 연결하고 창 프로시저를 `CContainedWindowT::WindowProc`로 변경합니다. 
-  `CContainedWindowT`의 각 인스턴스는 다른 창을 서브클래싱할 수 있습니다.
+`CContainedWindowT`은 또한 창 서브클래싱도 지원합니다. `SubclassWindow` 메서드는 기존 창을 `CContainedWindowT` 개체에 연결하고 창 프로시저를 `CContainedWindowT::WindowProc`로 변경합니다. `CContainedWindowT`의 각 인스턴스는 다른 창을 서브클래싱할 수 있습니다.
 
 > [!NOTE]
 >  지정 된 모든 `CContainedWindowT` 개체 중 하나를 호출 `Create` 또는 `SubclassWindow`합니다. 동일한 개체에서 두 메서드를 호출 하지 않아야 합니다.

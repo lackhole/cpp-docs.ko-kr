@@ -167,11 +167,11 @@ helpviewer_keywords:
 - CDaoRecordset [MFC], m_strSort
 ms.assetid: 2322067f-1027-4662-a5d7-aa2fc7488630
 ms.openlocfilehash: 96118645aa656e97fcb93a0fd223045208ab03a3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62206361"
 ---
 # <a name="cdaorecordset-class"></a>CDaoRecordset 클래스
 
@@ -315,7 +315,7 @@ class CDaoRecordset : public CObject
 
 개체의 멤버 함수 및 데이터 멤버를 사용 하 여 레코드를 스크롤할를 에서도 작동 합니다. 사용할 수 있는 작업 개체 인지 여부는 테이블 형식의 레코드 집합, 다이너셋 형식 레코드 집합을 스냅숏 형식 레코드 집합 및 업데이트 가능 또는 읽기 전용 인지에 따라 달라 집니다-데이터베이스 또는 개방형 데이터베이스 연결 (ODBC)의 기능에 따라 달라 집니다. 데이터 원본입니다. 변경 되거나 이후 추가 된 있습니다 레코드를 새로 고치려면 합니다 `Open` 호출, 개체의 호출 [Requery](#requery) 멤버 함수입니다. 개체의 호출 `Close` 멤버 함수 및이 사용 하 여 마친 후 개체를 제거 합니다.
 
-`CDaoRecordset` 형식이 안전한 c + + 멤버를 통해 읽기 및 레코드 필드의 업데이트를 지원 하기 위해 DAO 레코드 필드 교환 (DFX)를 사용 하 여 `CDaoRecordset` 또는 `CDaoRecordset`-파생 클래스입니다. 사용 하 여 DFX 메커니즘을 사용 하지 않고 데이터베이스에 열 동적 바인딩 구현할 수도 있습니다 [GetFieldValue](#getfieldvalue) 하 고 [SetFieldValue](#setfieldvalue)합니다.
+`CDaoRecordset` DAO 레코드 필드 교환 (DFX)를 사용 하 여 형식이 안전한 통해 읽기 및 레코드 필드의 업데이트를 지원 하기 위해 C++ 의 멤버에 `CDaoRecordset` 또는 `CDaoRecordset`-클래스를 파생 합니다. 사용 하 여 DFX 메커니즘을 사용 하지 않고 데이터베이스에 열 동적 바인딩 구현할 수도 있습니다 [GetFieldValue](#getfieldvalue) 하 고 [SetFieldValue](#setfieldvalue)합니다.
 
 관련된 내용은 DAO 도움말에서 "레코드 집합 개체" 항목을 참조 합니다.
 
@@ -339,7 +339,7 @@ virtual void AddNew();
 
 ### <a name="remarks"></a>설명
 
-레코드의 필드는 처음에 Null입니다. (데이터베이스 용어에서 Null "값 필요" 하는 방법 및 c + +에서 NULL과 같지 않습니다.) 호출 작업을 완료 해야 합니다 [업데이트](#update) 멤버 함수입니다. `Update` 데이터 원본에 변경 내용을 저장 합니다.
+레코드의 필드는 처음에 Null입니다. (데이터베이스 용어에서 "값 필요"는 의미를 Null 및 NULL에과 같지 않습니다 C++입니다.) 호출 작업을 완료 해야 합니다 [업데이트](#update) 멤버 함수입니다. `Update` 데이터 원본에 변경 내용을 저장 합니다.
 
 > [!CAUTION]
 >  레코드를 편집 하 고 호출 하지 않고 다른 레코드를 스크롤한 `Update`, 변경 내용을 경고 없이 손실 됩니다.
@@ -1633,7 +1633,7 @@ BOOL IsFieldNull(void* pv);
 
 ### <a name="remarks"></a>설명
 
-(데이터베이스 용어에서 Null "값 필요" 하는 방법 및 c + +에서 NULL과 같지 않습니다.) 필드 데이터 멤버를 Null로 플래그가 지정 되 면 값은 현재 레코드의 열으로 해석 됩니다.
+(데이터베이스 용어에서 "값 필요"는 의미를 Null 및 NULL에과 같지 않습니다 C++입니다.) 필드 데이터 멤버를 Null로 플래그가 지정 되 면 값은 현재 레코드의 열으로 해석 됩니다.
 
 > [!NOTE]
 >  사용 하 여 특정 상황에서 `IsFieldNull` 비효율적일 수 있습니다, 다음 코드 예제와 같이:
@@ -1645,7 +1645,7 @@ BOOL IsFieldNull(void* pv);
 
 ##  <a name="isfieldnullable"></a>  CDaoRecordset::IsFieldNullable
 
-지정 된 필드 데이터 멤버 "null"이 허용 되는지 확인 하려면 (설정할 수 있습니다에 Null 값이 멤버 함수 호출 C + + NULL 다릅니다 즉, 데이터베이스 용어에서 Null로 "값 필요").
+지정 된 필드 데이터 멤버 "null"이 허용 되는지 확인 하려면 (설정할 수 있습니다에 Null 값이 멤버 함수 호출 C++ NULL은 Null 이며 데이터베이스 용어에서 의미와 동일 하지 않습니다 "값 필요").
 
 ```
 BOOL IsFieldNullable(void* pv);
@@ -2006,8 +2006,7 @@ virtual void Open(
 
 첫 번째 버전의 `Open` 를 사용 하는 `lpszSQL` 매개 변수를 레코드는 다음 표에 표시 된 선택된 기준에 따라 합니다.
 
-|
-  `lpszSQL` 매개 변수의 값|선택한 레코드에 따라 결정 됩니다.|예제|
+|`lpszSQL` 매개 변수의 값|선택한 레코드에 따라 결정 됩니다.|예제|
 |--------------------------------------|----------------------------------------|-------------|
 |NULL|반환한 문자열 `GetDefaultSQL`합니다.||
 |하나 이상의 테이블 정의 및/또는 쿼리 정의 이름을 포함 하는 쉼표로 구분 된 목록입니다.|모든 열에 표시 된 `DoFieldExchange`합니다.|`"Customer"`|
@@ -2263,7 +2262,7 @@ void SetFieldDirty(
 ### <a name="parameters"></a>매개 변수
 
 *pv*<br/>
-NULL 레코드 집합의 필드 데이터 멤버의 주소를 포함합니다. NULL 인 경우 레코드 집합의 필드 데이터 멤버를 모든 플래그가 지정 됩니다. (C + + NULL 다릅니다 Null로 데이터베이스 용어에서 "값 필요"는 의미)
+NULL 레코드 집합의 필드 데이터 멤버의 주소를 포함합니다. NULL 인 경우 레코드 집합의 필드 데이터 멤버를 모든 플래그가 지정 됩니다. (C++ NULL 다릅니다 Null로 데이터베이스 용어에서 "값 필요"는 의미)
 
 *bDirty*<br/>
 필드 데이터 멤버 "더티" (변경)으로 플래그를 지정 하는 경우 TRUE입니다. 필드 데이터 멤버 "정리" (변경 되지 않음)으로 플래그가 지정 될 경우, 그렇지 않으면 FALSE입니다.
@@ -2306,7 +2305,7 @@ void SetFieldNull(
 ### <a name="parameters"></a>매개 변수
 
 *pv*<br/>
-NULL 레코드 집합의 필드 데이터 멤버의 주소를 포함합니다. NULL 인 경우 레코드 집합의 필드 데이터 멤버를 모든 플래그가 지정 됩니다. (C + + NULL 다릅니다 Null로 데이터베이스 용어에서 "값 필요"는 의미)
+NULL 레코드 집합의 필드 데이터 멤버의 주소를 포함합니다. NULL 인 경우 레코드 집합의 필드 데이터 멤버를 모든 플래그가 지정 됩니다. (C++ NULL 다릅니다 Null로 데이터베이스 용어에서 "값 필요"는 의미)
 
 *bNull*<br/>
 필드 데이터 멤버 (Null) 값이 없는 것으로 플래그가 지정 될 경우에 0이 아닙니다. 필드 데이터 멤버는 Null이 아닌으로 플래그를 설정 하는 경우 그렇지 않으면 0입니다.
@@ -2395,7 +2394,7 @@ void SetFieldValueNull(LPCTSTR lpszName);
 
 ### <a name="remarks"></a>설명
 
-C + + NULL 동일 하지는 Null 이며 데이터베이스 용어에서 의미 "있는 having 값이 없습니다."
+C++NULL은 Null 이며 데이터베이스 용어에서 의미와 동일 하지 않습니다 "값이 없는 것입니다."
 
 관련된 정보에 대 한 "필드 개체" 속성과 "값" DAO 도움말의 항목을 참조 합니다.
 
@@ -2474,7 +2473,7 @@ void SetParamValueNull(LPCTSTR lpszName);
 
 ### <a name="remarks"></a>설명
 
-C + + NULL 동일 하지는 Null 이며 데이터베이스 용어에서 의미 "있는 having 값이 없습니다."
+C++NULL은 Null 이며 데이터베이스 용어에서 의미와 동일 하지 않습니다 "값이 없는 것입니다."
 
 ##  <a name="setpercentposition"></a>  CDaoRecordset::SetPercentPosition
 

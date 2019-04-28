@@ -9,11 +9,11 @@ helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
 ms.openlocfilehash: 882010cd28c291e9f49ca0f7dd9d646c70130184
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188849"
 ---
 # <a name="importing-and-exporting"></a>가져오기 및 내보내기
 
@@ -31,7 +31,7 @@ ms.locfileid: "57815829"
 
 ## <a name="using-declspec"></a>__Declspec를 사용 하 여
 
-Visual c + + 사용 **__declspec (dllimport)** 하 고 **__declspec (dllexport)** 바꾸려면 합니다 **__export** 16 비트 버전의 Visual c + +에서 이전에 사용 된 키워드.
+Visual C++ 사용 하 여 **__declspec (dllimport)** 하 고 **__declspec (dllexport)** 바꾸려면 합니다 **__export** C++.
 
 사용할 필요가 없습니다 **__declspec (dllimport)** 이렇게 하지만 올바르게 컴파일되도록 하려면 코드에 대 한 더 나은 코드를 생성 하도록 컴파일러에 있습니다. 컴파일러는 함수에에서 있는지 여부를 DLL를 DLL 경계를 교차 하는 함수 호출에 제공 됩니다 일반적으로 간접 참조 수준을 건너뛰는 코드를 생성 하기 위해 컴파일러를 허용 하는 것을 결정할 수 없기 때문에 더 나은 코드를 생성할 수 있습니다. 그러나 사용 해야 합니다 **__declspec (dllimport)** DLL에 사용 되는 변수를 가져오려고 합니다.
 

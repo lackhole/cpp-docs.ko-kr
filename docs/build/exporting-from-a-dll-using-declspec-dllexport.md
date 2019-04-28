@@ -11,19 +11,19 @@ helpviewer_keywords:
 - exporting DLLs [C++], __declspec(dllexport) keyword
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
 ms.openlocfilehash: 3b6b9733776f30fc8dcbfeee709b7d24e0f0187b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195318"
 ---
 # <a name="exporting-from-a-dll-using-declspecdllexport"></a>__declspec(dllexport)을 사용하여 DLL에서 내보내기
 
-Microsoft 도입 **__export** 16 비트 컴파일러 버전의 Visual c + + 컴파일러에서 내보내기 이름을 자동으로 생성 하는.lib 파일에 배치할 수 있도록 합니다. 이.lib 파일 DLL을 사용 하 여 연결 하려면 정적.lib와 마찬가지로 사용할 수 있습니다.
+Microsoft 도입 **__export** 시각적 개체의 16 비트 컴파일러 버전의 C++ 컴파일러에서 내보내기 이름을 자동으로 생성 하는.lib 파일에 배치할 수 있도록 합니다. 이.lib 파일 DLL을 사용 하 여 연결 하려면 정적.lib와 마찬가지로 사용할 수 있습니다.
 
 새 컴파일러 버전에서는 내보낼 수 있습니다 데이터, 함수, 클래스 또는 클래스 멤버 함수의 사용 하 여 DLL을 **__declspec (dllexport)** 키워드입니다. **__declspec (dllexport)** .def 파일을 사용할 필요가 개체 파일에 내보내기 지시문을 추가 합니다.
 
-이 편의 데코 레이트 된 c + + 함수 이름 내보내려고 할 때 특히 합니다. 이름 데코레이션 표준 사양이 없으므로 내보내기 함수의 이름을 컴파일러 버전 간에 변경 될 수 있습니다. 사용 하는 경우 **__declspec (dllexport)**, DLL 및 종속 된.exe 파일은 명명 규칙 변경에 대 한 계정에만 필요 합니다.
+데코 레이트 된 내보내려고 할 때이 편의 가장 두드러지게 나타납니다는 C++ 함수 이름입니다. 이름 데코레이션 표준 사양이 없으므로 내보내기 함수의 이름을 컴파일러 버전 간에 변경 될 수 있습니다. 사용 하는 경우 **__declspec (dllexport)**, DLL 및 종속 된.exe 파일은 명명 규칙 변경에 대 한 계정에만 필요 합니다.
 
 많은 내보내기 지시문와 같은 서 수, NONAME 및 PRIVATE.def 파일 에서만에서 설정할 수 있으며.def 파일 없이 이러한 특성을 지정할 방법이 없습니다. 그러나 **__declspec (dllexport)** .def를 사용 하는 것 외에도 파일 빌드 오류가 발생 하지 않습니다.
 

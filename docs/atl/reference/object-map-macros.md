@@ -7,11 +7,11 @@ f1_keywords:
 - atlcom/ATL::OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO
 ms.assetid: 680087f4-9894-41dd-a79c-6f337e1f13c1
 ms.openlocfilehash: 73dc924527bac8499adefab3d0d6b51afa500a5a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62197382"
 ---
 # <a name="object-map-macros"></a>개체 맵 매크로
 
@@ -65,10 +65,10 @@ OBJECT_ENTRY_AUTO( clsid, class )
 ### <a name="parameters"></a>매개 변수
 
 *clsid*<br/>
-[in] 라는 c + + 클래스에서 구현 되는 COM 클래스의 CLSID *클래스*합니다.
+[in] 구현한 COM 클래스의 CLSID는 C++ 라는 클래스 *클래스*합니다.
 
 *class*<br/>
-[in] 가 나타내는 COM 클래스를 구현 하는 c + + 클래스의 이름을 *clsid*합니다.
+[in] 이름을 합니다 C++ 가 나타내는 COM 클래스를 구현 하는 클래스 *clsid*합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -97,10 +97,10 @@ OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO( clsid, class )
 ### <a name="parameters"></a>매개 변수
 
 *clsid*<br/>
-[in] 라는 c + + 클래스에서 구현 되는 COM 클래스의 CLSID *클래스*합니다.
+[in] 구현한 COM 클래스의 CLSID는 C++ 라는 클래스 *클래스*합니다.
 
 *class*<br/>
-[in] 가 나타내는 COM 클래스를 구현 하는 c + + 클래스의 이름을 *clsid*합니다.
+[in] 이름을 합니다 C++ 가 나타내는 COM 클래스를 구현 하는 클래스 *clsid*합니다.
 
 ### <a name="remarks"></a>설명
 

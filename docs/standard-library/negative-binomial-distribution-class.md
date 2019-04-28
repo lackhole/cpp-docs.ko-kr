@@ -27,11 +27,11 @@ helpviewer_keywords:
 - std::negative_binomial_distribution [C++], param_type
 ms.assetid: 7f5f0967-7fdd-4578-99d4-88f292b4fe9c
 ms.openlocfilehash: a2cc6479c9da3b51c28e5408eb44ff1d02b97023
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223677"
 ---
 # <a name="negativebinomialdistribution-class"></a>negative_binomial_distribution 클래스
 
@@ -253,7 +253,7 @@ explicit negative_binomial_distribution(const param_type& parm);
 
 분포의 매개 변수를 저장합니다.
 
-구조체 param_type {typedef negative_binomial_distribution`<`result_type > distribution_type; param_type (result_type k = 1, p를 두 번 = 0.5); result_type k() const; p() const;를 두 번
+struct param_type { typedef negative_binomial_distribution`<`result_type> distribution_type; param_type(result_type k = 1, double p = 0.5); result_type k() const; double p() const;
 
    bool operator==(const param_type& right) const; bool operator!=(const param_type& right) const; };
 

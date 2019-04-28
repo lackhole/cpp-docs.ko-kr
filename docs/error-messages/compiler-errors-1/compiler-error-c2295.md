@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2295
 ms.assetid: faddf446-5924-401e-b719-93390d5cd084
 ms.openlocfilehash: a08b9b95974b0e715397abd1c76ee082697e640d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182732"
 ---
 # <a name="compiler-error-c2295"></a>컴파일러 오류 C2295
 

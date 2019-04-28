@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Windows Sockets [MFC], byte order issues
 ms.assetid: 8a787a65-f9f4-4002-a02f-ac25a5dace5d
 ms.openlocfilehash: ca572ad32a9a46756cacf0221d80b2953b710723
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62217573"
 ---
 # <a name="windows-sockets-byte-ordering"></a>Windows 소켓: 바이트 순서 지정
 
@@ -57,7 +57,7 @@ ms.locfileid: "57278095"
 통신의 양쪽을 작성 하는 경우 MFC 소켓을 사용 하기 위한 이상적인 사례: 양쪽 끝에서 MFC를 사용 합니다. Windows 소켓 변환 루틴 를사용하여와통신하는FTP서버와같은비MFC응용프로그램,바이트스왑직접보관개체에데이터를전달하기전에관리아마도해야하는응용프로그램을작성하는경우**ntohs**, **ntohl**하십시오 **htons**, 및 **htonl**. 비 MFC 응용 프로그램을 사용 하 여 통신에 사용 되는 이러한 함수의 예는이 문서의 뒷부분에 표시 됩니다.
 
 > [!NOTE]
->  MFC 응용 프로그램 통신의 한쪽 끝 없는 경우 또한 피해 야 할 c + + 개체에서 파생 된 스트리밍 `CObject` 보관에 수신자가 처리할 수 없기 때문입니다. 참고 [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
+>  MFC 응용 프로그램 통신의 한쪽 끝 없는 경우 또한 하지 않도록 해야 스트리밍 C++ 에서 파생 된 개체 `CObject` 보관에 수신자가 처리할 수 없기 때문입니다. 참고 [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
 
 바이트 순서에 대 한 자세한 내용은 Windows SDK에서 사용할 수 있는 Windows Sockets 사양을 참조 하세요.
 
@@ -75,7 +75,7 @@ MFC 말해에서이 다음과 같이 표시 됩니다.
 
 [!code-cpp[NVC_MFCSimpleSocket#6](../mfc/codesnippet/cpp/windows-sockets-byte-ordering_2.cpp)]
 
-C + +에는 **구조체** 클래스와 동일한 작업을 기본적으로 합니다. 합니다 `Message` 구조는 등 멤버 함수를 가질 수는 `Serialize` 위에 선언 된 멤버 함수입니다. `Serialize` 멤버 함수는 다음과 비슷합니다.
+C++, **구조체** 클래스와 동일한 작업을 기본적으로 됩니다. 합니다 `Message` 구조는 등 멤버 함수를 가질 수는 `Serialize` 위에 선언 된 멤버 함수입니다. `Serialize` 멤버 함수는 다음과 비슷합니다.
 
 [!code-cpp[NVC_MFCSimpleSocket#7](../mfc/codesnippet/cpp/windows-sockets-byte-ordering_3.cpp)]
 
@@ -83,7 +83,7 @@ C + +에는 **구조체** 클래스와 동일한 작업을 기본적으로 합�
 
 ### <a name="windows-sockets-byte-order-conversion-functions"></a>Windows 소켓 바이트 순서로 변환 함수
 
-|기능|용도|
+|함수|용도|
 |--------------|-------------|
 |**ntohs**|호스트 바이트 순서로 (big Endian을 little Endian) 네트워크 바이트 순서에서 16 비트 수량을 변환 합니다.|
 |**ntohl**|네트워크 바이트 순서에서 호스트 바이트 순서로 (big Endian을 little Endian)는 32 비트 수량을 변환 합니다.|
@@ -94,17 +94,17 @@ C + +에는 **구조체** 클래스와 동일한 작업을 기본적으로 합�
 
 `ar << pMsg;`
 
-여기서 `pMsg` 클래스에서 파생 된 c + + 개체에 대 한 포인터가 `CObject`합니다. MFC 응용 프로그램을 마치 것 처럼이 개체 및 서버와 관련 된 추가 MFC 정보를 이해 하지 못하기 보내집니다.
+여기서 `pMsg` 에 대 한 포인터를 C++ 클래스에서 파생 된 개체 `CObject`합니다. MFC 응용 프로그램을 마치 것 처럼이 개체 및 서버와 관련 된 추가 MFC 정보를 이해 하지 못하기 보내집니다.
 
 자세한 내용은 다음을 참조하세요.
 
-- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
 - [Windows 소켓: 배경](../mfc/windows-sockets-background.md)
 
-- [Windows 소켓: Stream 소켓](../mfc/windows-sockets-stream-sockets.md)
+- [Windows 소켓: 스트림 소켓](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows 소켓: 데이터 그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows 소켓: 데이터그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
 
 ## <a name="see-also"></a>참고자료
 

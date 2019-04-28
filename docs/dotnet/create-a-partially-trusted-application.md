@@ -1,5 +1,5 @@
 ---
-title: '방법: 부분적으로 신뢰할 수 있는 응용 프로그램 만들기 (C + + /cli CLI)'
+title: '방법: 부분적으로 신뢰할 수 있는 응용 프로그램을 만듭니다 (C++/CLI)'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - /clr compiler option [C++], partially trusted applications
 ms.assetid: 4760cd0c-4227-4f23-a7fb-d25b51bf246e
 ms.openlocfilehash: afdfb8ca11753d7def9d7da6f431082b1a90c345
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62209124"
 ---
 # <a name="how-to-create-a-partially-trusted-application-by-removing-dependency-on-the-crt-library-dll"></a>방법: CRT 라이브러리 DLL에 대 한 종속성을 제거 하 여 부분적으로 신뢰할 수 있는 응용 프로그램 만들기
 
-이 항목에서는 Visual c + +를 사용 하 여 msvcm90.dll에 대 한 종속성을 제거 하 여 부분적으로 신뢰할 수 있는 공용 언어 런타임 응용 프로그램을 만드는 방법을 설명 합니다.
+이 항목에서는 시각적 개체를 사용 하 여 부분적으로 신뢰할 수 있는 공용 언어 런타임 응용 프로그램을 만드는 방법을 설명 C++ msvcm90.dll에 대 한 종속성을 제거 하 여 합니다.
 
-사용 하 여 빌드한 Visual c + + 응용 프로그램을 **/clr** C 런타임 라이브러리의 일부인 msvcm90.dll에서 종속성을 갖습니다. 부분 신뢰 환경에서 사용할 응용 프로그램를 하려는 경우 CLR은 DLL에서 특정 코드 액세스 보안 규칙을 적용 합니다. 따라서 msvcm90.dll 네이티브 코드를 포함 하 고 여기에 코드 액세스 보안 정책을 적용할 수 없습니다 때문에이 종속성을 제거 해야 합니다.
+시각적 개체 C++ 응용 프로그램을 사용 하 여 빌드한 **/clr** msvcm90.dll C 런타임 라이브러리의 일부인에서 종속성을 갖습니다. 부분 신뢰 환경에서 사용할 응용 프로그램를 하려는 경우 CLR은 DLL에서 특정 코드 액세스 보안 규칙을 적용 합니다. 따라서 msvcm90.dll 네이티브 코드를 포함 하 고 여기에 코드 액세스 보안 정책을 적용할 수 없습니다 때문에이 종속성을 제거 해야 합니다.
 
 응용 프로그램이 C 런타임 라이브러리의 모든 기능을 사용 하지 않습니다 하 고 코드에서이 라이브러리에 대 한 종속성을 제거 하려는 경우 사용 해야 합니다는 **/NODEFAULTLIB:msvcmrt.lib** 링커 옵션을 사용 하 여 링크 또는 ptrustmd.lib를 연결 해야 합니다. 초기화 및 초기화 해제는 응용 프로그램의 개체 파일을 포함 하는 이러한 라이브러리, 예외 클래스는 초기화 코드에서 사용 및 예외 처리 코드를 관리 합니다. 이러한 라이브러리 중 하나에 연결 msvcm90.dll에 대 한 종속성을 제거 됩니다.
 

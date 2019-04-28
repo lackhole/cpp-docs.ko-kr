@@ -16,11 +16,11 @@ f1_keywords:
 - AFXLAYOUT/CMFCDynamicLayout::SetMinSize
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
 ms.openlocfilehash: 40dedbe2737a79b7531b8acd47870ce7cb788604
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62237593"
 ---
 # <a name="cmfcdynamiclayout-class"></a>CMFCDynamicLayout 클래스
 
@@ -334,8 +334,7 @@ BOOL IsHorizontal() const
 
 ## <a name="return-value"></a>반환 값
 
-
-  `MoveSettings` 개체가 0이 아닌 가로 이동을 지정하면 TRUE입니다.
+`MoveSettings` 개체가 0이 아닌 가로 이동을 지정하면 TRUE입니다.
 
 ## <a name="cmfcdynamiclayoutmovesettingsisnone"></a>CMFCDynamicLayout::MoveSettings::IsNone
 
@@ -347,8 +346,7 @@ BOOL IsNone() const
 
 ## <a name="return-value"></a>반환 값
 
-
-  `MoveSettings` 개체가 이동을 지정하지 않는 경우 TRUE입니다.
+`MoveSettings` 개체가 이동을 지정하지 않는 경우 TRUE입니다.
 
 ## <a name="cmfcdynamiclayoutmovesettingsisvertical"></a>CMFCDynamicLayout::MoveSettings::IsVertical
 
@@ -360,8 +358,7 @@ BOOL IsVertical() const
 
 ## <a name="return-value"></a>반환 값
 
-
-  `MoveSettings` 개체가 0이 아닌 세로 이동을 지정하면 TRUE입니다.
+`MoveSettings` 개체가 0이 아닌 세로 이동을 지정하면 TRUE입니다.
 
 ##  <a name="movevertical"></a>  CMFCDynamicLayout::MoveVertical
 
@@ -476,8 +473,7 @@ BOOL IsHorizontal() const
 
 ## <a name="return-value"></a>반환 값
 
-
-  `SizeSettings` 개체가 0이 아닌 가로 크기 조정을 지정하면 TRUE입니다.
+`SizeSettings` 개체가 0이 아닌 가로 크기 조정을 지정하면 TRUE입니다.
 
 ## <a name="cmfcdynamiclayoutsizesettingsisnone"></a>CMFCDynamicLayout::SizeSettings::IsNone
 
@@ -489,8 +485,7 @@ BOOL IsNone() const
 
 ## <a name="return-value"></a>반환 값
 
-
-  `SizeSettings` 개체가 크기 조정을 지정하지 않는 경우 TRUE입니다.
+`SizeSettings` 개체가 크기 조정을 지정하지 않는 경우 TRUE입니다.
 
 ## <a name="cmfcdynamiclayoutsizesettingsisvertical"></a>CMFCDynamicLayout::SizeSettings::IsVertical
 
@@ -502,8 +497,7 @@ BOOL IsVertical() const
 
 ## <a name="return-value"></a>반환 값
 
-
-  `SizeSettings` 개체가 0이 아닌 세로 크기 조정을 지정하면 TRUE입니다.
+`SizeSettings` 개체가 0이 아닌 세로 크기 조정을 지정하면 TRUE입니다.
 
 ##  <a name="sizevertical"></a>  CMFCDynamicLayout::SizeVertical
 

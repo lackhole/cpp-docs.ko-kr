@@ -6,11 +6,11 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], optimizing
 ms.assetid: 25fff9c0-4dab-4704-aaae-8dfb1065dee3
 ms.openlocfilehash: b90aa331c289caf827785af2eeba037e70f686ab
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186881"
 ---
 # <a name="mfc-activex-controls-painting-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤 그리기
 
@@ -39,8 +39,7 @@ ActiveX 컨트롤은 처음 표시 되거나 다시 그려지는 때 중요 한 
 
 이전 단락에서 설명한 것처럼 ActiveX 컨트롤을 업데이트하는 방법은 컨트롤의 상태에 따라 다릅니다. 그러나 두 경우 모두 프레임워크에서 `OnDraw` 멤버 함수를 호출하므로 이 멤버 함수에 그리기 코드 대부분을 추가합니다.
 
-
-  `OnDraw` 멤버 함수에서 컨트롤 그리기를 처리합니다. 컨트롤이 활성화되는 경우 컨트롤 컨테이너에서는 `OnDraw`를 호출하여 컨트롤 컨테이너의 장치 컨텍스트 및 컨트롤이 차지한 사각형 영역의 좌표를 전달합니다.
+`OnDraw` 멤버 함수에서 컨트롤 그리기를 처리합니다. 컨트롤이 활성화되는 경우 컨트롤 컨테이너에서는 `OnDraw`를 호출하여 컨트롤 컨테이너의 장치 컨텍스트 및 컨트롤이 차지한 사각형 영역의 좌표를 전달합니다.
 
 프레임워크에서 `OnDraw` 멤버 함수에 전달된 사각형에는 컨트롤이 차지한 영역이 포함되어 있습니다. 컨트롤이 활성화된 경우 왼쪽 위 모서리는 (0, 0)이고, 전달된 장치 컨텍스트는 컨트롤을 포함한 자식 창에 대한 것입니다. 컨트롤이 비활성화된 경우 왼쪽 위 좌표는 반드시 (0,0)이 아니고, 전달된 장치 컨텍스트는 컨트롤을 포함한 컨트롤 컨테이너에 대한 것입니다.
 
@@ -70,8 +69,7 @@ ActiveX 컨트롤 그리기의 기본 구현은 전체 컨트롤 영역을 그�
 
 컨트롤이 화면 및 메타파일 장치 컨텍스트 모두에서 그려질 수 있는지 확인하려면 화면 및 메타파일 DC 모두에서 지원되는 멤버 함수만 사용해야 합니다. 좌표계는 픽셀 단위로 측정할 수 없다는 사실에 주의해야 합니다.
 
-
-  `OnDrawMetafile`의 기본 구현은 컨트롤의 `OnDraw` 함수를 호출하므로 `OnDrawMetafile`을 재정의하지 않는 경우 메타파일 및 화면 장치 컨텍스트 모두에 적합한 멤버 함수만 사용합니다. 다음은 메타파일 및 화면 장치 컨텍스트 모두에서 사용할 수 있는 `CDC` 멤버 함수의 하위 집합을 보여 줍니다. 이러한 함수에 대 한 자세한 내용은 클래스를 참조 하세요 [CDC](../mfc/reference/cdc-class.md) 에 *MFC 참조*합니다.
+`OnDrawMetafile`의 기본 구현은 컨트롤의 `OnDraw` 함수를 호출하므로 `OnDrawMetafile`을 재정의하지 않는 경우 메타파일 및 화면 장치 컨텍스트 모두에 적합한 멤버 함수만 사용합니다. 다음은 메타파일 및 화면 장치 컨텍스트 모두에서 사용할 수 있는 `CDC` 멤버 함수의 하위 집합을 보여 줍니다. 이러한 함수에 대 한 자세한 내용은 클래스를 참조 하세요 [CDC](../mfc/reference/cdc-class.md) 에 *MFC 참조*합니다.
 
 |Arc|BibBlt|Chord|
 |---------|------------|-----------|
@@ -90,8 +88,7 @@ ActiveX 컨트롤 그리기의 기본 구현은 전체 컨트롤 영역을 그�
 |`SetViewportOrg`|`SetWindowExt`|`SetWindowORg`|
 |`StretchBlt`|`TextOut`||
 
-
-  `CDC` 멤버 함수 이외에 메타파일 DC에서 호환되는 여러 다른 함수가 있습니다. 여기에 포함 됩니다 [cpalette:: Animatepalette](../mfc/reference/cpalette-class.md#animatepalette)하십시오 [CFont::CreateFontIndirect](../mfc/reference/cfont-class.md#createfontindirect), 및의 세 멤버 함수가 `CBrush`: [CreateBrushIndirect](../mfc/reference/cbrush-class.md#createbrushindirect)하십시오 [CreateDIBPatternBrush](../mfc/reference/cbrush-class.md#createdibpatternbrush), 및 [CreatePatternBrush](../mfc/reference/cbrush-class.md#createpatternbrush)합니다.
+`CDC` 멤버 함수 이외에 메타파일 DC에서 호환되는 여러 다른 함수가 있습니다. 여기에 포함 됩니다 [cpalette:: Animatepalette](../mfc/reference/cpalette-class.md#animatepalette)하십시오 [CFont::CreateFontIndirect](../mfc/reference/cfont-class.md#createfontindirect), 및의 세 멤버 함수가 `CBrush`: [CreateBrushIndirect](../mfc/reference/cbrush-class.md#createbrushindirect)하십시오 [CreateDIBPatternBrush](../mfc/reference/cbrush-class.md#createdibpatternbrush), 및 [CreatePatternBrush](../mfc/reference/cbrush-class.md#createpatternbrush)합니다.
 
 메타 파일에 기록 되지 않는 기능은 다음과 같습니다. [DrawFocusRect](../mfc/reference/cdc-class.md#drawfocusrect), [DrawIcon](../mfc/reference/cdc-class.md#drawicon)합니다 [DrawText](../mfc/reference/cdc-class.md#drawtext)를 [ExcludeUpdateRgn](../mfc/reference/cdc-class.md#excludeupdatergn)를 [칠하기 위해 FillRect](../mfc/reference/cdc-class.md#fillrect), [FrameRect ](../mfc/reference/cdc-class.md#framerect), [GrayString](../mfc/reference/cdc-class.md#graystring)합니다 [InvertRect](../mfc/reference/cdc-class.md#invertrect)를 [ScrollDC](../mfc/reference/cdc-class.md#scrolldc), 및 [TabbedTextOut](../mfc/reference/cdc-class.md#tabbedtextout)합니다. 메타파일 DC가 실제로 장치와 연결되어 있지 않으므로 SetDIBits, GetDIBits 및 CreateDIBitmap을 메타파일 DC와 함께 사용할 수 없습니다. 대상으로 SetDIBitsToDevice 및 StretchDIBits를 메타파일 DC와 함께 사용할 수 있습니다. [CreateCompatibleDC](../mfc/reference/cdc-class.md#createcompatibledc), [CreateCompatibleBitmap](../mfc/reference/cbitmap-class.md#createcompatiblebitmap), 및 [CreateDiscardableBitmap](../mfc/reference/cbitmap-class.md#creatediscardablebitmap) 는 메타 파일 DC 사용 하 여 의미가 없습니다.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MFC, application development
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
 ms.openlocfilehash: 71cdda0abea8cec29c3b6e17ddfb584e32a931c6
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219732"
 ---
 # <a name="general-mfc-topics"></a>일반 MFC 항목
 
@@ -33,7 +33,7 @@ MFC 프레임워크는 Windows 전문 프로그래머가 작업 시 만들 수 �
 
 [프레임워크를 기반으로 구축](../mfc/building-on-the-framework.md)
 
-[CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)
+[CWinApp: 애플리케이션 클래스](../mfc/cwinapp-the-application-class.md)
 
 [문서 템플릿 및 문서/뷰 만들기 프로세스](../mfc/document-templates-and-the-document-view-creation-process.md)
 

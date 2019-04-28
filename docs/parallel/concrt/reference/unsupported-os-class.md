@@ -9,11 +9,11 @@ helpviewer_keywords:
 - unsupported_os class
 ms.assetid: 6fa57636-341b-4b51-84cc-261d283ff736
 ms.openlocfilehash: 8277827aa8713ef57731a3e0da0898829b9fa9fe
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186368"
 ---
 # <a name="unsupportedos-class"></a>unsupported_os 클래스
 
@@ -31,8 +31,7 @@ class unsupported_os : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[unsupported_os](#ctor)|오버로드됨. 
-  `unsupported_os` 개체를 생성합니다.|
+|[unsupported_os](#ctor)|오버로드됨. `unsupported_os` 개체를 생성합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -48,8 +47,7 @@ class unsupported_os : public std::exception;
 
 ##  <a name="ctor"></a> unsupported_os
 
-
-  `unsupported_os` 개체를 생성합니다.
+`unsupported_os` 개체를 생성합니다.
 
 ```
 explicit _CRTIMP unsupported_os(_In_z_ const char* _Message) throw();

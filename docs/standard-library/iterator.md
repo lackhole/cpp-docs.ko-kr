@@ -8,11 +8,11 @@ helpviewer_keywords:
 - iterator header
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
 ms.openlocfilehash: 1b0d3282075246f3b217f0c8acac19ed8ece79cb
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62224092"
 ---
 # <a name="ltiteratorgt"></a>&lt;iterator&gt;
 
@@ -40,7 +40,7 @@ ms.locfileid: "51520753"
 
 요구 사항이 더 적은 반복기 대신 요구 사항이 더 많고 요소에 더 강력하게 액세스할 수 있는 반복기를 사용할 수 있습니다. 예를 들어, 정방향 반복기가 호출되면, 대신 임의 액세스 반복기를 사용할 수 있습니다.
 
-Visual Studio는 확인 및 확인되지 않은 반복기에 대한 다양한 디버그 모드 상황을 지원하기 위해 C++ 표준 라이브러리 반복기에 대한 확장을 추가했습니다. 자세한 내용은 [안전한 라이브러리: C++ 표준 라이브러리](../standard-library/safe-libraries-cpp-standard-library.md)를 참조하세요.
+Visual Studio는 확인 및 확인되지 않은 반복기에 대한 다양한 디버그 모드 상황을 지원하기 위해 C++ 표준 라이브러리 반복기에 대한 확장을 추가했습니다. 자세한 내용은 참조 하세요. [안전한 라이브러리: C++표준 라이브러리](../standard-library/safe-libraries-cpp-standard-library.md)합니다.
 
 ### <a name="functions"></a>함수
 

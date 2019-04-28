@@ -7,15 +7,15 @@ helpviewer_keywords:
 - .DOSSEG directive
 ms.assetid: 175ad470-0a2b-4e2b-b078-65e224fec040
 ms.openlocfilehash: 28b3e351030ee83693c0fec5568aacf9b4b77c27
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62204363"
 ---
 # <a name="dosseg"></a>.DOSSEG
 
-MS-DOS 세그먼트 규칙에 따라 세그먼트를 정렬 합니다: 코드는 먼저 DGROUP에 없는 다음 세그먼트 및 DGROUP의 다음 세그먼트입니다.
+MS-DOS 세그먼트 규칙에 따라 세그먼트를 정렬 합니다. 먼저 다음 없는 DGROUP, 세그먼트 및 코드 다음 DGROUP 세그먼트 합니다.
 
 ## <a name="syntax"></a>구문
 

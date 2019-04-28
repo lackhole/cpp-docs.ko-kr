@@ -7,11 +7,11 @@ helpviewer_keywords:
 - 'msbuild (c++), howto: add a custom build step'
 ms.assetid: a20a0c47-4df4-4754-a1f0-a94a99958916
 ms.openlocfilehash: 4c64c6875d82000d6a0ac880b103b5e220015cb3
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57814009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188927"
 ---
 # <a name="how-to-add-a-custom-build-step-to-msbuild-projects"></a>방법: MSBuild 프로젝트에 사용자 지정 빌드 단계 추가
 
@@ -27,7 +27,7 @@ ms.locfileid: "57814009"
 
 ### <a name="to-define-what-is-executed-by-the-custom-build-step"></a>사용자 지정 빌드 단계에서 실행 될 작업을 정의 하려면
 
-1. 프로젝트 파일에 속성 그룹을 추가 합니다. 이 속성 그룹의 다음 예제에서와 같이 명령, 해당 입력 및 출력 및 메시지를 지정 합니다. 이 예제에서 만든 main.cpp 파일에서.cab 파일을 만듭니다 [연습: MSBuild를 사용 하 여 Visual c + + 프로젝트를 만들려면](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)합니다.
+1. 프로젝트 파일에 속성 그룹을 추가 합니다. 이 속성 그룹의 다음 예제에서와 같이 명령, 해당 입력 및 출력 및 메시지를 지정 합니다. 이 예제에서 만든 main.cpp 파일에서.cab 파일을 만듭니다 [연습: MSBuild를 사용 하 여 시각적 개체를 만들려면 C++ 프로젝트](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)합니다.
 
     ```
     <ItemDefinitionGroup>

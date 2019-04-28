@@ -7,11 +7,11 @@ helpviewer_keywords:
 - PROC directive
 ms.assetid: ee5bb6b6-fa15-4d73-b0cf-e650178539a9
 ms.openlocfilehash: e7931c97570c0fefcacb0123d75934867793fba4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210536"
 ---
 # <a name="proc"></a>PROC
 
@@ -20,9 +20,9 @@ ms.locfileid: "50439628"
 ## <a name="syntax"></a>구문
 
 > *레이블을* PROC [[*거리*]] [[*langtype*]] [[*가시성*]] [[\<*prologuearg*>]] [[ 사용 하 여 *reglist*]] [[합니다 *매개 변수* [[:*태그*]]]...<br/>
-> [[프레임 [[:*ehandler 주소*]]]]<br/>
-> *문*<br/>
-> *레이블* ENDP
+> [[FRAME [[:*ehandler-address*]] ]]<br/>
+> *statements*<br/>
+> *label* ENDP
 
 ## <a name="remarks"></a>설명
 

@@ -14,11 +14,11 @@ helpviewer_keywords:
 - CArchive class [MFC], constructor
 ms.assetid: aefa28ce-b55c-40dc-9e42-5f038030985d
 ms.openlocfilehash: 80e3e73840bce53691c3f5fdafb62c60bdb8f832
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62181512"
 ---
 # <a name="two-ways-to-create-a-carchive-object"></a>CArchive 개체를 만드는 두 가지 방법
 
@@ -70,4 +70,4 @@ ms.locfileid: "57273805"
 
 ## <a name="see-also"></a>참고자료
 
-[Serialization: 개체를 직렬화 하는 작업](../mfc/serialization-serializing-an-object.md)
+[Serialization: 개체 Serialize](../mfc/serialization-serializing-an-object.md)

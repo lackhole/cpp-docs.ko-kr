@@ -5,17 +5,17 @@ helpviewer_keywords:
 - side-by-side applications [C++]
 ms.assetid: 7fa20b16-3737-4f76-a0b5-1dacea19a1e8
 ms.openlocfilehash: 037fde58366ea4548ce3c7ff56c38cfc1a58aa17
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195146"
 ---
 # <a name="building-cc-side-by-side-assemblies"></a>C/C++ side-by-side 어셈블리 빌드
 
 [side-by-side-어셈블리](/windows/desktop/SbsCs/about-side-by-side-assemblies-) 리소스의 컬렉션인-Dll, windows 클래스, COM 서버, 형식 라이브러리 또는 인터페이스 그룹-런타임에 사용 하도록 응용 프로그램에서 사용할 수 있습니다. 어셈블리 Dll을 다시 패키징하지의 주요 이점은 업데이트가 릴리스되는 현재 설치 된 서비스 어셈블리에 있기를 동시에 응용 프로그램에서 어셈블리의 여러 버전을 사용할 수 있습니다는.
 
-Visual c + + 응용 프로그램을 응용 프로그램의 다른 부분에 하나 이상의 Dll을 사용할 수 있습니다. 런타임 시 Dll은 주 프로세스에 로드 하 고 필요한 코드가 실행 됩니다. 응용 프로그램은 필요한 Dll을 찾는 다른 종속 Dll을 들이 어떻게 로드 되 고 요청된 된 DLL과 함께 로드 합니다 이해를 운영 체제입니다. Windows 운영 체제 버전에서 Windows XP, Windows Server 2003 및 Windows Vista 보다 이전 운영 체제 로더에 검색 응용 프로그램의 로컬 폴더 또는 시스템 경로에 지정 된 다른 폴더에 종속 Dll에 대 한 합니다. Windows XP, Windows Server 2003 및 Windows Vista에서 운영 체제 로더를 사용 하 여 종속 Dll에 대 한 검색할 수도 있습니다는 [매니페스트](/windows/desktop/sbscs/manifests) 파일 및 이러한 Dll을 포함 하는 side-by-side-어셈블리를 검색 합니다.
+시각적 개체 C++ 응용 프로그램 응용 프로그램의 다른 부분에 하나 이상의 Dll을 사용할 수 있습니다. 런타임 시 Dll은 주 프로세스에 로드 하 고 필요한 코드가 실행 됩니다. 응용 프로그램은 필요한 Dll을 찾는 다른 종속 Dll을 들이 어떻게 로드 되 고 요청된 된 DLL과 함께 로드 합니다 이해를 운영 체제입니다. Windows 운영 체제 버전에서 Windows XP, Windows Server 2003 및 Windows Vista 보다 이전 운영 체제 로더에 검색 응용 프로그램의 로컬 폴더 또는 시스템 경로에 지정 된 다른 폴더에 종속 Dll에 대 한 합니다. Windows XP, Windows Server 2003 및 Windows Vista에서 운영 체제 로더를 사용 하 여 종속 Dll에 대 한 검색할 수도 있습니다는 [매니페스트](/windows/desktop/sbscs/manifests) 파일 및 이러한 Dll을 포함 하는 side-by-side-어셈블리를 검색 합니다.
 
 기본적으로 Visual Studio를 사용 하 여 DLL를 빌드할 때에 [응용 프로그램 매니페스트](/windows/desktop/SbsCs/application-manifests) ID가 2 RT_MANIFEST 리소스로 포함 합니다. 이 매니페스트 파일과 마찬가지로 개발자가 다른 어셈블리에이 DLL의 종속성을 설명합니다. DLL side-by-side-어셈블리의 일부가 아닙니다.이 DLL에 종속 된 응용 프로그램을 로드 하는 대신 운영 체제 로더에 시스템 경로에이 DLL을 찾을 수에 따라 응용 프로그램 매니페스트를 사용 하지 않는 되었다고 가정 합니다.
 

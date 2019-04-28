@@ -7,11 +7,11 @@ helpviewer_keywords:
 - expressions [C++], operators
 ms.assetid: 1217685b-b85d-4b48-9ff4-d90f56a26c1b
 ms.openlocfilehash: a13b86755a5e309a51a0e2e14faa1157b7e95ea0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183873"
 ---
 # <a name="expressions-with-unary-operators"></a>단항 연산자가 있는 식
 
@@ -35,9 +35,9 @@ ms.locfileid: "50559071"
 
 - [캐스트 연산자)](../cpp/cast-operator-parens.md)
 
-- [sizeof 연산자](../cpp/sizeof-operator.md)
+- [sizeof operator](../cpp/sizeof-operator.md)
 
-- [__uuidof 연산자](../cpp/uuidof-operator.md)
+- [__uuidof operator](../cpp/uuidof-operator.md)
 
 - [__alignof 연산자](../cpp/alignof-operator.md)
 
@@ -51,21 +51,21 @@ ms.locfileid: "50559071"
 
 - *postfix-expression*
 
-- `++` *단항 식*
+- `++` *unary-expression*
 
-- `--` *단항 식*
+- `--` *unary-expression*
 
-- *단항 연산자* *캐스트 식*
+- *unary-operator* *cast-expression*
 
-- **sizeof** *단항 식*
+- **sizeof** *unary-expression*
 
-- `sizeof(` *형식 이름* `)`
+- `sizeof(` *type-name* `)`
 
-- `decltype(` *식* `)`
+- `decltype(` *expression* `)`
 
-- *할당 식*
+- *allocation-expression*
 
-- *할당 취소 식*
+- *deallocation-expression*
 
 모든 *후 위 식* 것으로 간주 됩니다는 *단항 식은*, 이므로 기본 식으로 간주 됩니다는 *후 위 식*, 모든 기본 식은 간주는 *단항 식* 수도 있습니다. 자세한 내용은 [후 위 식](../cpp/postfix-expressions.md) 하 고 [기본 식](../cpp/primary-expressions.md)합니다.
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - CHttpConnection [MFC], OpenRequest
 ms.assetid: a402b662-c445-4988-800d-c8278551babe
 ms.openlocfilehash: 1941af1e16a897235dd90db509d6ed29c2d9a875
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62237571"
 ---
 # <a name="chttpconnection-class"></a>CHttpConnection 클래스
 
@@ -165,8 +165,7 @@ CHttpFile* OpenRequest(
 문서의 주소 (URL)을 지정 하는 문자열에 대 한 포인터는 요청의 URL (*pstrObjectName*) 가져온 합니다. NULL 인 경우 HTTP 헤더 없음이 지정 됩니다.
 
 *dwContext*<br/>
-
-  `OpenRequest` 작업에 대한 컨텍스트 식별자입니다. 에 대 한 자세한 내용은 *dwContext*, 주의 섹션을 참조 하세요.
+`OpenRequest` 작업에 대한 컨텍스트 식별자입니다. 에 대 한 자세한 내용은 *dwContext*, 주의 섹션을 참조 하세요.
 
 *ppstrAcceptTypes*<br/>
 클라이언트에서 받아들일 콘텐츠 형식을 나타내는 문자열에 대 한 LPCTSTR 포인터의 null로 끝나는 배열에 대 한 포인터입니다. 하는 경우 *ppstrAcceptTypes* 가 null 인 경우 서버는 클라이언트에만 문서 형식의 허용 해석 "텍스트 / *" (즉, 텍스트 문서만 및 없습니다 사진 또는 기타 이진 파일). 콘텐츠 형식 첨부 HTTP POST 및 PUT 등 첨부된 정보가 있는 쿼리에 대한 데이터의 형식을 식별하는 CGI 변수 CONTENT_TYPE과 같습니다.
