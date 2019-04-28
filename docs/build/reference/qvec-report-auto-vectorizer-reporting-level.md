@@ -3,11 +3,11 @@ title: /Qvec-report(자동 벡터화 도우미 보고 수준)
 ms.date: 11/04/2016
 ms.assetid: 4778c9a3-0692-4085-9b05-1bfeadf4c74a
 ms.openlocfilehash: 655be3581eee4b23a8d0f2bcfaea7d07c8b1b07c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319254"
 ---
 # <a name="qvec-report-auto-vectorizer-reporting-level"></a>/Qvec-report(자동 벡터화 도우미 보고 수준)
 
@@ -33,14 +33,13 @@ For 루프는 벡터화 되지 않은, 이유 코드와 함께 하는 for 루프
 
 1. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다.
 
-1. 에 **속성 페이지** 대화 상자의 **C/c + +** 를 선택 **명령줄**합니다.
+1. 에 **속성 페이지** 대화 상자의 **C /C++** 선택 **명령줄**.
 
 1. 에 **추가 옵션** 상자에 입력 합니다 `/Qvec-report:1` 또는 `/Qvec-report:2`합니다.
 
 ### <a name="to-set-the-qvec-report-compiler-option-programmatically"></a>/Qvec-report 컴파일러 옵션을 프로그래밍 방식으로 설정 하려면
 
-- 
-  <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>에 있는 코드 예제를 사용합니다.
+- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>에 있는 코드 예제를 사용합니다.
 
 ## <a name="see-also"></a>참고자료
 

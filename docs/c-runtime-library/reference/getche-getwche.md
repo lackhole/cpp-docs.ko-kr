@@ -30,18 +30,18 @@ helpviewer_keywords:
 - _getche function
 ms.assetid: eac978a8-c43a-4130-938f-54f12e2a0fda
 ms.openlocfilehash: 87e9173e21ea51281276601b6fc5e3b73e244fca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287329"
 ---
 # <a name="getche-getwche"></a>_getche, _getwche
 
 에코를 사용하여 콘솔에서 문자를 가져옵니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 

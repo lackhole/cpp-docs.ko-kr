@@ -7,11 +7,11 @@ helpviewer_keywords:
 - RW2001
 ms.assetid: 963bdc7d-6ebe-4378-8bbc-47dfcf5d330c
 ms.openlocfilehash: 4d298cdd9d96c55f283ce7f0e2ba04dd664941f8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62226508"
 ---
 # <a name="resource-compiler-error-rw2001"></a>리소스 컴파일러 오류 RW2001
 
@@ -19,7 +19,7 @@ ms.locfileid: "50584615"
 
 RC 파일은 포함 된 **#pragma** 지시문입니다.
 
-사용 합니다 **#ifndef** 전처리기 지시문을 **RC_INVOKED** 리소스 컴파일러가 include 파일을 처리할 때 정의 상수입니다. 위치는 **#pragma** 하지 않은 코드 블록 안에 지시문 경우를 처리 합니다 **RC_INVOKED** 상수 정의 됩니다. C/c + + 컴파일러에 의해서만 및 리소스 컴파일러가 아니라 블록의 코드에서에서 처리 됩니다. 다음 샘플 코드에는이 기술을 보여 줍니다.
+사용 합니다 **#ifndef** 전처리기 지시문을 **RC_INVOKED** 리소스 컴파일러가 include 파일을 처리할 때 정의 상수입니다. 위치는 **#pragma** 하지 않은 코드 블록 안에 지시문 경우를 처리 합니다 **RC_INVOKED** 상수 정의 됩니다. 블록의 코드는 C에 의해서만 처리 /C++ 컴파일러 및 리소스 컴파일러에 의해 없습니다. 다음 샘플 코드에는이 기술을 보여 줍니다.
 
 ```
 #ifndef RC_INVOKED

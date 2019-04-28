@@ -30,11 +30,11 @@ helpviewer_keywords:
 - floorl function
 ms.assetid: e9955f70-d659-414f-8050-132e13c8ff36
 ms.openlocfilehash: 050b7ea0eedf07666fa52145eeaf43f8fde2e18b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333588"
 ---
 # <a name="floor-floorf-floorl"></a>floor, floorf, floorl
 
@@ -77,13 +77,13 @@ long double floorl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **floor** 및 반환 하는 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **floor** 항상 받아서 반환 된 **double**합니다.
+C++오버 로드를 호출할 수 있도록 오버 로드를 허용 **floor** 및 반환 하는 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **floor** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |기능|필수 헤더|
 |--------------|---------------------|
-|**floor**하십시오 **floorf**, **floorl**|\<math.h>|
+|**floor**, **floorf**, **floorl**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

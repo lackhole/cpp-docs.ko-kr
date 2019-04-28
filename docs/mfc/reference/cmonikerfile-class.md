@@ -19,11 +19,11 @@ helpviewer_keywords:
 - CMonikerFile [MFC], CreateBindContext
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
 ms.openlocfilehash: ecffdb3a6f44f60004cf4f039bdab9c98e212ce1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62338040"
 ---
 # <a name="cmonikerfile-class"></a>CMonikerFile 클래스
 
@@ -189,7 +189,7 @@ URL 또는 열려는 파일의 이름입니다.
 
 합니다 *lpszURL* Macintosh에서 매개 변수를 사용할 수 없습니다. 만 *pMoniker* 형태의 `Open` Macintosh에서 사용할 수 있습니다.
 
-URL 또는 파일 이름을 사용할 수는 *lpszURL* 매개 변수입니다. 예를 들면,
+URL 또는 파일 이름을 사용할 수는 *lpszURL* 매개 변수입니다. 예를 들어:
 
 [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/cpp/cmonikerfile-class_1.cpp)]
 

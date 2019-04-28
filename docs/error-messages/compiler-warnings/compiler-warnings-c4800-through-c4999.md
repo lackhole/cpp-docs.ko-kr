@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 경고 C4800 ~ C5999
-ms.date: 03/14/2019
+ms.date: 04/21/2019
 f1_keywords:
 - C4808
 - C4809
@@ -153,12 +153,12 @@ helpviewer_keywords:
 - C5105
 - C5106
 - C5107
-ms.openlocfilehash: 46bb439b490295b7f3279f06421d3fd6b8d6ba8b
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
-ms.translationtype: MT
+ms.openlocfilehash: 93ff809d640efab6852e855f85e7b6e0109d9c1d
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62280323"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>컴파일러 경고 C4800 ~ C5999
 
@@ -171,9 +171,9 @@ ms.locfileid: "58356259"
 |경고|메시지|
 |-------------|------------|
 |[컴파일러 경고 (수준 4) C4800](compiler-warning-level-3-c4800.md)| 암시적 변환에서 '*형식*' bool로 합니다. 가능한 정보 손실 |
-|[컴파일러 경고(수준 1) C4803](compiler-warning-level-1-c4803.md)|'*메서드*': raise 메서드에 이벤트를 다른 저장소 클래스에 '*이벤트*'|
-|[컴파일러 경고(수준 1) C4804](compiler-warning-level-1-c4804.md)|'*작업*': 안전 하지 않은 작업에 사용 되는 ' bool' 형식 사용|
-|[컴파일러 경고(수준 1) C4805](compiler-warning-level-1-c4805.md)|'*작업이*': 안전 하지 않은 다양 한 형식 '*type1*'형식과'*type2*' 작업|
+|[컴파일러 경고 (수준 1) C4803](compiler-warning-level-1-c4803.md)|'*메서드*': raise 메서드에 이벤트를 다른 저장소 클래스에 '*이벤트*'|
+|[컴파일러 경고 (수준 1) C4804](compiler-warning-level-1-c4804.md)|'*작업*': 안전 하지 않은 작업에 사용 되는 ' bool' 형식 사용|
+|[컴파일러 경고 (수준 1) C4805](compiler-warning-level-1-c4805.md)|'*작업이*': 안전 하지 않은 다양 한 형식 '*type1*'형식과'*type2*' 작업|
 |[컴파일러 경고 (수준 1) C4806](compiler-warning-level-1-c4806.md)|'*작업이*': 안전 하지 않은 작업: 값 형식 '*type1*'형식으로 승격'*type2*' 주어진된 상수와 같을 수|
 |[컴파일러 경고 (수준 1) C4807](compiler-warning-level-1-c4807.md)|'*작업이*': 안전 하지 않은 다양 한 형식 '*type1*'및' 형식의 비트 필드 서명*type2*'|
 |컴파일러 경고 (수준 1) C4808|대/소문자 '*값*' 형식의 switch 조건에 대 한 유효한 값이 아닌 'bool'는|
@@ -184,17 +184,17 @@ ms.locfileid: "58356259"
 |[컴파일러 경고 (수준 1) C4813](compiler-warning-level-1-c4813.md)|'*함수*': 지역 클래스의 friend 함수가 이전에 선언 해야|
 |[컴파일러 경고 (수준 4) C4816](compiler-warning-level-4-c4816.md)|'*param*': 매개 변수는 크기가 0 인 배열이 있으면 잘리게 됩니다 수 (하지 않는 한 개체 참조로 전달 됨)|
 |[컴파일러 경고 (수준 1) C4817](compiler-warning-level-1-c4817.md)|'*멤버*': 잘못 사용 했습니다 '.';이 멤버에 액세스 하려면 컴파일러는 '->'로 바뀝니다|
-|[컴파일러 경고(수준 1) C4819](compiler-warning-level-1-c4819.md)|현재 코드 페이지(번호)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터 손실을 방지 하려면 유니코드 형식으로 파일을 저장 합니다.|
-|[컴파일러 경고(수준 4) C4820](compiler-warning-level-4-c4820.md)|'*바이트*'바이트 채움 문자가 추가 됨' 구문 뒤*member_name*'|
-|[컴파일러 경고(수준 1) C4821](compiler-warning-level-1-c4821.md)|시그니처 (BOM)를 사용 하 여 파일을 저장 하세요 유니코드 인코딩 형식을 확인할 수 없습니다.|
+|[컴파일러 경고 (수준 1) C4819](compiler-warning-level-1-c4819.md)|현재 코드 페이지(번호)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터 손실을 방지 하려면 유니코드 형식으로 파일을 저장 합니다.|
+|[컴파일러 경고 (수준 4) C4820](compiler-warning-level-4-c4820.md)|'*바이트*'바이트 채움 문자가 추가 됨' 구문 뒤*member_name*'|
+|[컴파일러 경고 (수준 1) C4821](compiler-warning-level-1-c4821.md)|시그니처 (BOM)를 사용 하 여 파일을 저장 하세요 유니코드 인코딩 형식을 확인할 수 없습니다.|
 |[컴파일러 경고 (수준 1) C4822](compiler-warning-level-1-c4822.md)|'member f': 지역 클래스 멤버 함수에 본문이 없습니다.|
-|[컴파일러 경고(수준 3) C4823](compiler-warning-level-3-c4823.md)|'*함수*': 사용 고정 포인터 하지만 해제 의미 체계를 사용할 수 없습니다. /EHa를 사용 하는 것이 좋습니다.|
+|[컴파일러 경고 (수준 3) C4823](compiler-warning-level-3-c4823.md)|'*함수*': 사용 고정 포인터 하지만 해제 의미 체계를 사용할 수 없습니다. /EHa를 사용 하는 것이 좋습니다.|
 |컴파일러 경고 (수준 2) C4826|변환에서 '*type1*'to'*type2*' 부호가 확장 됩니다. 이 예기치 않은 런타임 동작이 발생할 수 있습니다.|
 |컴파일러 경고 (수준 3) C4827|공용 'ToString' 메서드 매개 변수가 0 가상으로 표시 되어야 하 고 재정의|
-|[컴파일러 경고(수준 1) C4829](compiler-warning-level-1-c4829.md)|main 함수에 대한 매개 변수가 잘못된 것 같습니다. 고려 ' int main (platform:: array\<platform:: string ^ > ^ argv)'|
-|[컴파일러 경고(수준 1) C4835](compiler-warning-level-1-c4835.md)|'*변수*': 내보낸된 데이터에 대 한 이니셜라이저는 관리 되는 코드가 호스트 어셈블리에서 먼저 실행 될 때까지 실행 되지 것입니다|
+|[컴파일러 경고 (수준 1) C4829](compiler-warning-level-1-c4829.md)|main 함수에 대한 매개 변수가 잘못된 것 같습니다. 고려 ' int main (platform:: array\<platform:: string ^ > ^ argv)'|
+|[컴파일러 경고 (수준 1) C4835](compiler-warning-level-1-c4835.md)|'*변수*': 내보낸된 데이터에 대 한 이니셜라이저는 관리 되는 코드가 호스트 어셈블리에서 먼저 실행 될 때까지 실행 되지 것입니다|
 |컴파일러 경고 (수준 4) C4837|삼중 자가 발견 되었습니다. '?? *문자*'로 대체'*문자*'|
-|[컴파일러 경고(수준 1) C4838](compiler-warning-level-1-c4838.md)|변환에서 '*type_1*'to'*type_2*' 축소 변환이 필요 합니다.|
+|[컴파일러 경고 (수준 1) C4838](compiler-warning-level-1-c4838.md)|변환에서 '*type_1*'to'*type_2*' 축소 변환이 필요 합니다.|
 |[컴파일러 경고 (수준 3) C4839](compiler-warning-level-3-c4839.md)|클래스의 비표준 사용*형식*' variadic 함수에 인수로 서|
 |[컴파일러 경고 (수준 4) C4840](compiler-warning-level-4-c4840.md)|클래스의 비 휴대용 활용*형식*' variadic 함수에 인수로 서|
 |컴파일러 경고 (수준 4) C4841|비표준 확장이 사용 됨: 복합 멤버 지정 자가 offsetof에에서 사용|
@@ -206,30 +206,30 @@ ms.locfileid: "58356259"
 | 컴파일러 경고 (수준 4) C4847 | '\_\_declspec (no\_init\_all)' 함수, 클래스 형식 또는 지역 변수에 적용할 수 있습니다: 무시 |
 | 컴파일러 경고 (수준 1) C4848 | 표준 특성에 대 한 지원 ' 없습니다\_고유\_주소 c++17 및 이전 버전은 공급 업체 확장 |
 |[컴파일러 경고 (수준 4) C4866](c4866.md)| 컴파일러는 호출에 대해 왼쪽에서 오른쪽 계산 순서를 적용할 수 없습니다. *operator_name*|
-|[컴파일러 경고 (Error) C4867](compiler-warning-c4867.md)|'*함수*': 함수 호출에 인수 목록이 없습니다; 사용 하 여 '*호출*' 멤버에 대 한 포인터를 만들려면|
+|[컴파일러 경고 C4867 (오류)](compiler-warning-c4867.md)|'*함수*': 함수 호출에 인수 목록이 없습니다; 사용 하 여 '*호출*' 멤버에 대 한 포인터를 만들려면|
 |[컴파일러 경고 (수준 4) C4868](compiler-warning-c4868.md)|'_파일_(*line_number*)' 컴파일러는 중괄호로 묶인된 초기화 목록에서 왼쪽에서 오른쪽 계산 순서를 적용할 수 없습니다.|
 |컴파일러 경고 (수준 2) C4872|concurrency:: parallel_for_each에 대해 호출 그래프를 컴파일하는 경우를 검색 하는 0으로 부동 소수점 나누기: '*위치*'|
 |컴파일러 경고 (수준 1) C4880|캐스팅 ' const *type_1*'to'*type_2*': amp 제한 함수에 정의 되지 않은 동작이 발생할 포인터 또는 참조에서 상수 성 캐스팅|
 |컴파일러 경고 (수준 4) C4881|생성자 및/또는 소멸자가 호출 되지 것입니다 tile_static 변수 '*변수*'|
 |컴파일러 경고 (수준 1) C4882|concurrency:: parallel_for_each에 비 const 호출 연산자를 사용 하 여 함수를 전달할 사용 되지 않음|
 |[컴파일러 경고 C4900](compiler-warning-level-1-c4900.md)|Il 불일치 '*tool1*'version'*version1*'및'*tool2*'version'*version2*'|
-|[컴파일러 경고(수준 1) C4905](compiler-warning-level-1-c4905.md)|와이드 문자열 리터럴을 'LPSTR'로 캐스팅했습니다.|
-|[컴파일러 경고(수준 1) C4906](compiler-warning-level-1-c4906.md)|문자열 리터럴을 'LPWSTR'로 캐스팅했습니다.|
+|[컴파일러 경고 (수준 1) C4905](compiler-warning-level-1-c4905.md)|와이드 문자열 리터럴을 'LPSTR'로 캐스팅했습니다.|
+|[컴파일러 경고 (수준 1) C4906](compiler-warning-level-1-c4906.md)|문자열 리터럴을 'LPWSTR'로 캐스팅했습니다.|
 |[컴파일러 경고 (수준 1) C4910](compiler-warning-level-1-c4910.md)|'\<식별자 >: '__declspec (dllexport)' 및 'extern' 명시적 인스턴스화에서 호환 되지 않습니다.|
 |[컴파일러 경고 (수준 1) C4912](compiler-warning-level-1-c4912.md)|'*특성*': 특성의 중첩된 UDT에 대 한 동작으로 정의 되지 않은.|
 |[컴파일러 경고 (수준 4) C4913](compiler-warning-level-4-c4913.md)|사용자 정의 이항 연산자 ','가 존재하지만 오버로드가 모든 피연산자를 변환하지 못했습니다. 기본 내장 이항 연산자 ','를 사용합니다.|
 |컴파일러 경고 (수준 1) C4916|dispid를 하기 위해 '*설명을*': 인터페이스에 의해 정의 되어야 합니다|
-|[컴파일러 경고(수준 1) C4917](compiler-warning-level-1-c4917.md)|'*declarator*': GUID 클래스, 인터페이스 또는 네임 스페이스를 사용 하 여 연결할 수만|
+|[컴파일러 경고 (수준 1) C4917](compiler-warning-level-1-c4917.md)|'*declarator*': GUID 클래스, 인터페이스 또는 네임 스페이스를 사용 하 여 연결할 수만|
 |[컴파일러 경고 (수준 4) C4918](compiler-warning-level-4-c4918.md)|'*문자*': pragma 최적화 목록에 잘못 된 문자|
 |[컴파일러 경고 (수준 1) C4920](compiler-warning-level-1-c4920.md)|enum enum 멤버 member_1 이미 enum enum member_2로 나온 value_1 = value_2 =|
 |컴파일러 경고 (수준 3) C4921|'*설명을*': 특성 값 '*특성*' 여러 번 지정할 수 없습니다|
 |[컴파일러 경고 (수준 1) C4925](compiler-warning-level-1-c4925.md)|'*메서드*': 스크립트에서 dispinterface 메서드를 호출할 수 없습니다.|
 |[컴파일러 경고 (수준 1) C4926](compiler-warning-level-1-c4926.md)|'*식별자*': 기호가 이미 정의 되어: 무시 된 특성|
-|[컴파일러 경고(수준 1) C4927](compiler-warning-level-1-c4927.md)|변환이 잘못 되었습니다. 둘 이상의 사용자 정의 변환이 암시적으로 적용 된|
-|[컴파일러 경고(수준 1) C4928](compiler-warning-level-1-c4928.md)|복사 초기화가 잘못되었습니다. 사용자 정의 변환이 암시적으로 두 번 이상 적용되었습니다.|
-|[컴파일러 경고(수준 1) C4929](compiler-warning-level-1-c4929.md)|'*파일*': typelibrary 있습니다. 'embedded_idl' 한정자를 무시 합니다.|
-|[컴파일러 경고(수준 1) C4930](compiler-warning-level-1-c4930.md)|'*프로토타입*': 프로토타입 함수가 호출 되지 않습니다 (의도 되는 변수 정의 었 나요?)|
-|[컴파일러 경고(수준 4) C4931](compiler-warning-level-4-c4931.md)|number비트 포인터에 대한 형식 라이브러리를 빌드했다고 간주합니다.|
+|[컴파일러 경고 (수준 1) C4927](compiler-warning-level-1-c4927.md)|변환이 잘못 되었습니다. 둘 이상의 사용자 정의 변환이 암시적으로 적용 된|
+|[컴파일러 경고 (수준 1) C4928](compiler-warning-level-1-c4928.md)|복사 초기화가 잘못되었습니다. 사용자 정의 변환이 암시적으로 두 번 이상 적용되었습니다.|
+|[컴파일러 경고 (수준 1) C4929](compiler-warning-level-1-c4929.md)|'*파일*': typelibrary 있습니다. 'embedded_idl' 한정자를 무시 합니다.|
+|[컴파일러 경고 (수준 1) C4930](compiler-warning-level-1-c4930.md)|'*프로토타입*': 프로토타입 함수가 호출 되지 않습니다 (의도 되는 변수 정의 었 나요?)|
+|[컴파일러 경고 (수준 4) C4931](compiler-warning-level-4-c4931.md)|number비트 포인터에 대한 형식 라이브러리를 빌드했다고 간주합니다.|
 |[컴파일러 경고 (수준 4) C4932](compiler-warning-level-4-c4932.md)|__identifier (*식별자*) 및 \_(_i) (*식별자*)를 구분할 수 없습니다|
 |컴파일러 경고 (수준 1) C4934|'__delegate(multicast)'는 사용 되지 않습니다.를 사용 하 여 '\__delegate' 대신|
 |[컴파일러 경고 (수준 1) C4935](compiler-warning-level-1-c4935.md)|어셈블리 액세스 지정 자가 수정에서 '*액세스*'|
@@ -238,11 +238,11 @@ ms.locfileid: "58356259"
 |[컴파일러 경고 (수준 4) C4938](compiler-warning-level-4-c4938.md)|'*var*': 부동 지점 환산 변수 /fp 결과가 일치 하지 않을 수 있습니다: strict 또는 #pragma fenv_access|
 |[컴파일러 경고 C4939](compiler-warning-level-1-c4939.md)|#pragma vtordisp는 사용되지 않으므로 이후 Visual C++ 릴리스에서 제거될 예정입니다.|
 |[컴파일러 경고 (수준 1) C4944](compiler-warning-level-1-c4944.md)|'*기호*': 기호를 가져올 수 없습니다. '*assembly1*': '*기호*' 현재 범위에 이미 있습니다|
-|[컴파일러 경고(수준 1) C4945](compiler-warning-level-1-c4945.md)|'*기호*': 기호를 가져올 수 없습니다. '*assembly1*': '*기호*'이미 가져온 다른 어셈블리에서 '*assembly2* '|
-|[컴파일러 경고(수준 1) C4946](compiler-warning-level-1-c4946.md)|reinterpret_cast가 관련된 클래스 간의 사용 되었습니다. '*class1*'및'*class2*'|
+|[컴파일러 경고 (수준 1) C4945](compiler-warning-level-1-c4945.md)|'*기호*': 기호를 가져올 수 없습니다. '*assembly1*': '*기호*'이미 가져온 다른 어셈블리에서 '*assembly2* '|
+|[컴파일러 경고 (수준 1) C4946](compiler-warning-level-1-c4946.md)|reinterpret_cast가 관련된 클래스 간의 사용 되었습니다. '*class1*'및'*class2*'|
 |[컴파일러 경고 (수준 1) C4947](compiler-warning-level-1-c4947.md)|'*type_or_member*': 되지 않음으로 표시|
-|[컴파일러 경고(수준 2) C4948](compiler-warning-level-2-c4948.md)|반환 형식 '*접근자*' 해당 setter의 마지막 매개 변수 형식과 일치 하지 않습니다|
-|[컴파일러 경고(수준 1 및 수준 4) C4949](compiler-warning-level-1-and-level-4-c4949.md)|pragma 'managed' 및 '는 사용 하 여 컴파일된 경우에 의미가 ' / clr [: 옵션]'|
+|[컴파일러 경고 (수준 2) C4948](compiler-warning-level-2-c4948.md)|반환 형식 '*접근자*' 해당 setter의 마지막 매개 변수 형식과 일치 하지 않습니다|
+|[컴파일러 경고 (수준 1 및 수준 4) C4949](compiler-warning-level-1-and-level-4-c4949.md)|pragma 'managed' 및 '는 사용 하 여 컴파일된 경우에 의미가 ' / clr [: 옵션]'|
 |[컴파일러 경고 (수준 1, 오류) C4950](compiler-warning-c4950.md)|'*type_or_member*': 되지 않음으로 표시|
 |[컴파일러 경고 (수준 1) C4951](compiler-warning-level-1-c4951.md)|'*함수*' 프로필 데이터가 수집 된 함수 프로필 데이터가 사용 되지 않습니다 이후 편집 되었습니다.|
 |[컴파일러 경고 (수준 1) C4952](compiler-warning-level-1-c4952.md)|'*함수*': 프로그램 데이터베이스에 프로필 데이터가 없습니다 '*pgd_file*'|
@@ -257,8 +257,8 @@ ms.locfileid: "58356259"
 |[컴파일러 경고 (수준 1) C4961](compiler-warning-c4961.md)|프로필 데이터가 '.pgd file'에 병합되지 않았습니다. 프로필 기반 최적화를 사용하지 않습니다.|
 |[컴파일러 경고 (수준 4) C4962](compiler-warning-c4962.md)|'*function*': 최적화 프로필 데이터가 일관성이 없는 상태가 발생 하므로 사용 하지 않도록 설정 하는 프로필 기반 최적화|
 |컴파일러 경고 (수준 1) C4963|'*설명을*': 프로필 데이터가 없습니다; 계측 된 빌드에서 다른 컴파일러 옵션을 사용한|
-|[컴파일러 경고(수준 1) C4964](compiler-warning-level-1-c4964.md)|최적화 옵션을 지정 합니다. 프로필 정보 수집 되지 않습니다.|
-|[컴파일러 경고(수준 1) C4965](compiler-warning-level-1-c4965.md)|정수 0; 암시적 상자 nullptr 또는 명시적 캐스트를 사용 하 여|
+|[컴파일러 경고 (수준 1) C4964](compiler-warning-level-1-c4964.md)|최적화 옵션을 지정 합니다. 프로필 정보 수집 되지 않습니다.|
+|[컴파일러 경고 (수준 1) C4965](compiler-warning-level-1-c4965.md)|정수 0; 암시적 상자 nullptr 또는 명시적 캐스트를 사용 하 여|
 |컴파일러 경고 (수준 1) C4966|'*함수*'에 지원 되지 않는 세그먼트 이름으로 무시 하는 주석 __code_seg 주석이 있습니다.|
 |컴파일러 경고 C4970|대리 생성자: 이후 대상 개체가 무시 '*형식*'는 정적|
 |컴파일러 경고 (수준 1) C4971|인수 순서: \<대상 개체 >를 \<함수를 대상 > 대리자 생성자는 사용 되지 않는, 사용 \<함수를 대상 >, \<대상 개체 = "" >|
@@ -274,11 +274,11 @@ ms.locfileid: "58356259"
 |컴파일러 경고 (수준 3) C4990|Warbird: *message*|
 |컴파일러 경고 (수준 3) C4991|Warbird: 함수 '*함수*' 아니라 __forceinline로 표시 인라인 부모 보다 높으므로 인라인이 보호 수준 이므로|
 |컴파일러 경고 (수준 3) C4992|Warbird: 함수 '*함수*' 아니라 __forceinline로 표시 인라인 보호할 수 없는 인라인 어셈블리가 포함 되어 있으므로|
-|[컴파일러 경고(수준 3) C4995](compiler-warning-level-3-c4995.md)|'*함수*': 사용 되지 않는 #pragma로 표시 되어 이름|
-|[컴파일러 경고(수준 3) C4996](compiler-warning-level-3-c4996.md)|'*description*': *message*|
+|[컴파일러 경고 (수준 3) C4995](compiler-warning-level-3-c4995.md)|'*함수*': 사용 되지 않는 #pragma로 표시 되어 이름|
+|[컴파일러 경고 (수준 3) C4996](compiler-warning-level-3-c4996.md)|'*description*': *message*|
 |[컴파일러 경고 (수준 1) C4997](compiler-warning-level-1-c4997.md)|'*클래스*': coclass가 COM 인터페이스 또는 의사 (pseudo) 인터페이스를 구현 하지 않습니다|
 |컴파일러 경고 (수준 1) C4998|예상 실패: *기대*(*값*)|
-|[컴파일러 경고 C4999](compiler-warning-level-1-c4999.md)|알 수 없는 경고 하세요 Visual c + + 도움말 메뉴에서 [기술 지원] 명령을 선택 또는 자세한 정보에 대 한 기술 지원 도움말 파일|
+|[컴파일러 경고 C4999](compiler-warning-level-1-c4999.md)|알 수 없는 경고 하세요 시각적 개체에서 [기술 지원] 명령을 선택 C++ 자세한 정보에 대 한 기술 지원 도움말 파일을 열거나 도움말 메뉴에서|
 |컴파일러 경고 C5022|'*형식*': 이동 생성자가 여러 개 지정|
 |컴파일러 경고 C5023|'*형식*': 지정 된 여러 명의 이동 할당 연산자|
 |컴파일러 경고 (수준 4) C5024|'*형식*': 이동 생성자가 암시적으로 삭제 된 것으로 정의 됩니다|
@@ -286,7 +286,7 @@ ms.locfileid: "58356259"
 |컴파일러 경고 (수준 1 및 수준 4) C5026|'*형식*': 이동 생성자가 암시적으로 삭제 된 것으로 정의 됩니다|
 |컴파일러 경고 (수준 1 및 수준 4) C5027|'*형식*': 이동 대입 연산자가 삭제 된 것으로 암시적으로 정의 됩니다|
 |컴파일러 경고 (수준 1) C5028|'*name*': 이전 선언에 지정 된 맞춤 (*수*) 정의에 지정 되지 않은|
-|컴파일러 경고 (수준 4) C5029|비표준 확장이 사용 됨: 변수, 데이터 멤버 및 태그 형식에만에 c + +의 맞춤 특성 적용|
+|컴파일러 경고 (수준 4) C5029|비표준 확장이 사용 됨: 맞춤 특성 C++ 변수, 데이터 멤버 및 태그 형식에만 적용|
 |컴파일러 경고 (수준 3) C5030|특성 '*특성*' 인식할 수 없습니다|
 |컴파일러 경고 (수준 4) c5031이 발생|#pragma warning (pop): 다른 파일에서 푸시된 경고 상태 팝업 불일치 가능성|
 |컴파일러 경고 (수준 4) C5032|해당 없음 #pragma warning (pop이) 사용 하 여 #pragma warning (push)를 검색합니다.|
@@ -299,7 +299,7 @@ ms.locfileid: "58356259"
 |컴파일러 경고 (수준 4) C5039|'*함수*':-ehc extern C 함수에 대 한 포인터 또는 참조 잠재적인 throw 함수에 전달 합니다. 이 함수가 예외를 throw 하는 경우 정의 되지 않은 동작이 발생할 수 있습니다.|
 |컴파일러 경고 (수준 3) C5040|및 이전 버전, c++14에만 동적 예외 사양 유효합니다. noexcept(false)로 처리 하는 방법|
 |컴파일러 경고 (수준 1) C5041|'*정의*': constexpr 정적 데이터 멤버에 대 한 아웃오브 라인 정의 필요 하지 않으며 c++17에서 사용 되지 않습니다|
-|컴파일러 경고 (수준 3) C5042|'*선언*': 블록 범위의 함수 선언은 일 수 없습니다. 지정 된 'inline' 표준 c + +에서 'inline' 지정자를 제거 합니다.|
+|컴파일러 경고 (수준 3) C5042|'*선언*': 블록 범위의 함수 선언은 표준에 지정 된 'inline' 일 수 없습니다 C++; 'inline' 지정자를 제거 합니다.|
 |컴파일러 경고 (수준 2) C5043|'*사양*': 예외 사양이 이전 선언과 일치 하지 않습니다|
 |컴파일러 경고 (수준 4) C5044|명령줄 옵션에 인수가 *옵션* 경로 가리키는 '*경로*' 존재 하지 않는|
 |[컴파일러 경고 C5045](c5045.md)|컴파일러는 메모리 /Qspectre 스위치 하는 경우 지정 된 로드에 대 한 스펙터 완화를 삽입|
@@ -316,3 +316,8 @@ ms.locfileid: "58356259"
 | 컴파일러 경고 (수준 1) C5105 | 'defined'를 생성 하는 매크로 확장에는 동작이 정의 되지 않았습니다. |
 | 컴파일러 경고 (수준 1) C5106 | 다른 매개 변수 이름으로 다시 정의 하는 매크로 |
 | 컴파일러 경고 (수준 1) C5107 | 종료 하는 누락 된 '*char*' 문자 |
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 경고 C4000-C5999](compiler-warnings-c4000-c5999.md)

@@ -34,11 +34,11 @@ helpviewer_keywords:
 - Unicode [C++], files
 ms.assetid: c534857e-39ee-4a3f-bd26-dfe551ac96c3
 ms.openlocfilehash: 1309f991b8251bde7d614aa274d8d2e9da7a8ed3
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333328"
 ---
 # <a name="fopens-wfopens"></a>fopen_s, _wfopen_s
 
@@ -98,7 +98,7 @@ errno_t _wfopen_s(
 
 **fopen_s** 은 유니코드 파일 스트림을 지원 합니다. 새 또는 기존 유니코드 파일을 열려면 전달 된 *ccs* 원하는 인코딩을 지정 하는 플래그 **fopen_s**:
 
-**fopen_s (& fp, "newfile.txt", "rw ccs =**_인코딩을_**");**
+**fopen_s(&fp, "newfile.txt", "rw, ccs=**_encoding_**");**
 
 값이 허용 *인코딩* 됩니다 **유니코드**를 **u t F-8**, 및 **u t F-16LE**합니다. 에 대 한 지정 된 값 있는 경우 *인코딩*를 **fopen_s** ANSI 인코딩을 사용 합니다.
 
@@ -113,9 +113,9 @@ errno_t _wfopen_s(
 
 |ccs 플래그|BOM이 없거나 새 파일|BOM: UTF-8|BOM: UTF-16|
 |----------------|----------------------------|-----------------|------------------|
-|**유니코드**|**UTF-16LE**|**U T F-8**|**UTF-16LE**|
-|**U T F-8**|**U T F-8**|**U T F-8**|**UTF-16LE**|
-|**UTF-16LE**|**UTF-16LE**|**U T F-8**|**UTF-16LE**|
+|**UNICODE**|**UTF-16LE**|**UTF-8**|**UTF-16LE**|
+|**UTF-8**|**UTF-8**|**UTF-8**|**UTF-16LE**|
+|**UTF-16LE**|**UTF-16LE**|**UTF-8**|**UTF-16LE**|
 
 유니코드 모드에서 쓰도록 파일을 열면 BOM이 파일에 자동으로 기록됩니다.
 
@@ -168,18 +168,18 @@ errno_t _wfopen_s(
 | **R** | 캐싱이 디스크에서 임의 액세스를 위해 최적화되며 이에 제한되지 않습니다. |
 | **T** | 파일을 임시 파일로 지정합니다. 가능하면 디스크에 플러시되지 않습니다. |
 | **D** | 파일을 임시 파일로 지정합니다. 마지막 파일 포인터를 닫을 때 삭제됩니다. |
-| **ccs =**_인코딩_ | 사용 하도록 설정 하는 인코딩된 문자를 지정 합니다 (중 하나 **u t F-8**를 **u t F-16LE**, 또는 **유니코드**)이이 파일에 대 한 합니다. ANSI 인코딩을 원할 경우 지정되지 않은 상태로 둡니다. |
+| **ccs=**_encoding_ | 사용 하도록 설정 하는 인코딩된 문자를 지정 합니다 (중 하나 **u t F-8**를 **u t F-16LE**, 또는 **유니코드**)이이 파일에 대 한 합니다. ANSI 인코딩을 원할 경우 지정되지 않은 상태로 둡니다. |
 
 에 유효한 문자는 *모드* 에서 사용 되는 문자열 **fopen_s** 하 고 [_fdopen](fdopen-wfdopen.md) 에 해당 하 *oflag* 에서 사용 되는 인수 [_ 엽니다](open-wopen.md) 하 고 [_sopen](sopen-wsopen.md)다음과 같이 합니다.
 
 |문자 *모드* 문자열|동등한 *oflag* 열기 (_o) / _sopen 값|
 |-------------------------------|----------------------------------------------------|
-|**a**|**_O_WRONLY** &#124; **_O_APPEND** (일반적으로 **_O_WRONLY** &#124; **_O_CREAT** &#124;* * _O_APPEND * *)|
-|**+**|**_O_RDWR** &#124; **_O_APPEND** (일반적으로 **_O_RDWR** &#124; **_O_APPEND** &#124; **_O_CREAT** )|
+|**a**|**_O_WRONLY** &#124; **_O_APPEND** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_APPEND**)|
+|**a+**|**_O_RDWR** &#124; **_O_APPEND** (usually **_O_RDWR** &#124; **_O_APPEND** &#124; **_O_CREAT** )|
 |**r**|**_O_RDONLY**|
-|**r +**|**_O_RDWR**|
-|**w**|**_O_WRONLY** (일반적으로 **_O_WRONLY** &#124; **_O_CREAT** &#124;* * _O_TRUNC * *)|
-|**w +**|**_O_RDWR** (일반적으로 **_O_RDWR** &#124; **_O_CREAT** &#124; **_O_TRUNC**)|
+|**r+**|**_O_RDWR**|
+|**w**|**_O_WRONLY** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_TRUNC**)|
+|**w+**|**_O_RDWR** (usually **_O_RDWR** &#124; **_O_CREAT** &#124; **_O_TRUNC**)|
 |**b**|**_O_BINARY**|
 |**t**|**_O_TEXT**|
 |**c**|없음|
@@ -188,9 +188,9 @@ errno_t _wfopen_s(
 |**R**|**_O_RANDOM**|
 |**T**|**_O_SHORTLIVED**|
 |**D**|**_O_TEMPORARY**|
-|**ccs 유니코드 =**|**_O_WTEXT**|
-|**ccs = u t F-8**|**_O_UTF8**|
-|**ccs = u t F-16LE**|**_O_UTF16**|
+|**ccs=UNICODE**|**_O_WTEXT**|
+|**ccs=UTF-8**|**_O_UTF8**|
+|**ccs=UTF-16LE**|**_O_UTF16**|
 
 사용 중인 경우 **rb** 모드는 많은 파일을 읽어야 하 고 코드 포트 하지 않아도 네트워크 성능에 신경, 메모리 매핑된 Win32 파일을 옵션으로 사용할 수 있습니다.
 

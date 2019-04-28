@@ -5,11 +5,11 @@ helpviewer_keywords:
 - standard dialog, data exchange routines
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
 ms.openlocfilehash: 05eaa86133bb55cfbf62ec68f81e7ca7d9ab169b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310008"
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>표준 대화 상자 데이터 교환 루틴
 
@@ -90,7 +90,7 @@ void AFXAPI DDX_CBString(
 *nIDC*<br/>
 컨트롤 속성과 연결 된 콤보 상자 컨트롤의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 대화 상자, 폼 뷰 또는 데이터를 교환할 컨트롤 뷰 개체의 멤버 변수 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -125,7 +125,7 @@ void AFXAPI DDX_CBStringExact(
 *nIDC*<br/>
 컨트롤 속성과 연결 된 콤보 상자 컨트롤의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 대화 상자, 폼 뷰 또는 데이터를 교환할 컨트롤 뷰 개체의 멤버 변수 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -160,7 +160,7 @@ void AFXAPI DDX_Check(
 *nIDC*<br/>
 컨트롤 속성과 연결 된 확인란 컨트롤의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 대화 상자, 폼 뷰 또는 데이터를 교환할 컨트롤 뷰 개체의 멤버 변수 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -234,7 +234,7 @@ void AFXAPI DDX_DateTimeCtrl(
 *nIDC*<br/>
 멤버 변수를 사용 하 여 연결 된 날짜 및 시간 선택 컨트롤의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 처음 두 버전에서는에 대 한 참조를 `CTime` 또는 `COleDateTime` 멤버 변수, 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체는 데이터 교환 합니다. 세 번째 버전에서는에 대 한 참조를 `CString` 데이터 멤버 컨트롤 뷰 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -303,7 +303,7 @@ void AFXAPI DDX_IPAddress(
 *nIDC*<br/>
 컨트롤 속성과 연결 된 IP 주소 컨트롤의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 IP 주소 컨트롤 4 필드 값이 포함 된 DWORD에 대 한 참조입니다. 필드는 채워져 있거나 다음과 같이 됩니다.
 
 |필드|필드 값이 포함 된 비트|
@@ -376,7 +376,7 @@ void AFXAPI DDX_LBString(
 *nIDC*<br/>
 컨트롤 속성과 연결 된 목록 상자 컨트롤의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 대화 상자, 폼 뷰 또는 데이터를 교환할 컨트롤 뷰 개체의 멤버 변수 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -413,7 +413,7 @@ void AFXAPI DDX_LBStringExact(
 *nIDC*<br/>
 컨트롤 속성과 연결 된 목록 상자 컨트롤의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 대화 상자, 폼 뷰 또는 데이터를 교환할 컨트롤 뷰 개체의 멤버 변수 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -455,7 +455,7 @@ void AFXAPI DDX_MonthCalCtrl(
 *nIDC*<br/>
 Month calendar 컨트롤의 리소스 ID 멤버 변수를 사용 하 여 연결 합니다.
 
-*value*<br/>
+*값*<br/>
 에 대 한 참조를 `CTime` 또는 `COleDateTime` 멤버 변수 대화 상자, 폼 뷰 또는 데이터를 교환할 컨트롤 뷰 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -490,7 +490,7 @@ void AFXAPI DDX_Radio(
 *nIDC*<br/>
 첫 번째 라디오 컨트롤 그룹의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 대화 상자, 폼 뷰 또는 데이터를 교환할 컨트롤 뷰 개체의 멤버 변수 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -524,7 +524,7 @@ void AFXAPI DDX_Scroll(
 *nIDC*<br/>
 컨트롤 속성과 연결 된 스크롤 막대 컨트롤의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -556,7 +556,7 @@ void AFXAPI DDX_Slider(
 *nIDC*<br/>
 슬라이더 컨트롤의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 교환할 값에 대 한 참조입니다. 이 매개 변수를 보유 하거나 슬라이더 컨트롤의 현재 위치를 설정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -638,7 +638,7 @@ void AFXAPI DDX_Text(
 *nIDC*<br/>
 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 편집 컨트롤의 ID입니다.
 
-*value*<br/>
+*값*<br/>
 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 데이터 멤버에 대 한 참조입니다. 데이터 형식이 *값* 는 오버 로드 된 버전에 따라 달라 집니다 `DDX_Text` 사용 합니다.
 
 ### <a name="remarks"></a>설명

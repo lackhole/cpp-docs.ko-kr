@@ -46,11 +46,11 @@ helpviewer_keywords:
 - RFX (record field exchange)
 ms.assetid: 6e4c5c1c-acb7-4c18-bf51-bf7959a696cd
 ms.openlocfilehash: 865c67b88c37e32ef33fa410ef178b81b7a6ecac
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310164"
 ---
 # <a name="record-field-exchange-functions"></a>레코드 필드 교환 함수
 
@@ -137,7 +137,7 @@ void RFX_Binary(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 [CByteArray](cbytearray-class.md), 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *nMaxLength*<br/>
@@ -176,7 +176,7 @@ void RFX_Bool(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 전송, BOOL 형식의 값을 지정된 된 데이터 멤버에서 가져옵니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 ### <a name="example"></a>예제
@@ -208,7 +208,7 @@ void RFX_Byte(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 전송, 지정된 된 데이터 멤버에서 바이트 형식의 값을 가져옵니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 ### <a name="example"></a>예제
@@ -250,7 +250,7 @@ void RFX_Date(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시 된 데이터 멤버에 저장 된 값 전송할 값입니다. 값에 대 한 다른 데이터 형식을 사용 하는 다양 한 버전의 함수가:
 
 함수의 첫 번째 버전 사용에 대 한 참조를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체입니다. 레코드 집합에서 데이터 원본에 전송, 지정된 된 데이터 멤버에서이 값을 가져옵니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
@@ -290,7 +290,7 @@ void RFX_Double(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 **이중**, 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 ### <a name="example"></a>예제
@@ -322,7 +322,7 @@ void RFX_Int(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 **int**, 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 ### <a name="example"></a>예제
@@ -355,7 +355,7 @@ value );
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 **긴**, 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 ### <a name="example"></a>예제
@@ -387,7 +387,7 @@ void RFX_LongBinary(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 형식의 값을 데이터 원본에 레코드 집합에서 전송 `CLongBinary`, 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 ### <a name="example"></a>예제
@@ -419,7 +419,7 @@ void RFX_Single(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 **float**, 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 ### <a name="example"></a>예제
@@ -454,7 +454,7 @@ void RFX_Text(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 형식의 값을 데이터 원본에 레코드 집합에서 전송 `CString`, 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *nMaxLength*<br/>
@@ -756,7 +756,7 @@ void RFX_Int(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 **int**, 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 ### <a name="example"></a>예제
@@ -950,7 +950,7 @@ void AFXAPI DFX_Binary(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 [CByteArray](cbytearray-class.md), 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *nPreAllocSize*<br/>
@@ -996,12 +996,11 @@ void AFXAPI DFX_Bool(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 전송, BOOL 형식의 값을 지정된 된 데이터 멤버에서 가져옵니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *dwBindOptions*<br/>
-변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. 
-  `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
+변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
 
 > [!NOTE]
 >  기본적으로 설정 하 여 버퍼링 된 데이터를 이중 여부를 제어할 수 있습니다 [cdaorecordset:: M_bcheckcachefordirtyfields](cdaorecordset-class.md#m_bcheckcachefordirtyfields)합니다.
@@ -1040,12 +1039,11 @@ void AFXAPI DFX_Byte(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 전송, 지정된 된 데이터 멤버에서 바이트 형식의 값을 가져옵니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *dwBindOptions*<br/>
-변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. 
-  `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
+변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
 
 > [!NOTE]
 >  기본적으로 설정 하 여 버퍼링 된 데이터를 이중 여부를 제어할 수 있습니다 [cdaorecordset:: M_bcheckcachefordirtyfields](cdaorecordset-class.md#m_bcheckcachefordirtyfields)합니다.
@@ -1084,12 +1082,11 @@ void AFXAPI DFX_Currency(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 전송, 지정 된 데이터 멤버 형식에서이 값을 가져옵니다 [COleCurrency](colecurrency-class.md)합니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *dwBindOptions*<br/>
-변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. 
-  `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
+변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
 
 > [!NOTE]
 >  기본적으로 설정 하 여 버퍼링 된 데이터를 이중 여부를 제어할 수 있습니다 [cdaorecordset:: M_bcheckcachefordirtyfields](cdaorecordset-class.md#m_bcheckcachefordirtyfields)합니다.
@@ -1128,12 +1125,11 @@ void AFXAPI DFX_DateTime(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 함수 사용에 대 한 참조를 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 개체입니다. 레코드 집합에서 데이터 원본에 전송, 지정된 된 데이터 멤버에서이 값을 가져옵니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *dwBindOptions*<br/>
-변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. 
-  `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
+변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
 
 > [!NOTE]
 >  기본적으로 설정 하 여 버퍼링 된 데이터를 이중 여부를 제어할 수 있습니다 [cdaorecordset:: M_bcheckcachefordirtyfields](cdaorecordset-class.md#m_bcheckcachefordirtyfields)합니다.
@@ -1175,12 +1171,11 @@ void AFXAPI DFX_Double(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 **이중**, 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *dwBindOptions*<br/>
-변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. 
-  `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
+변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
 
 > [!NOTE]
 >  기본적으로 설정 하 여 버퍼링 된 데이터를 이중 여부를 제어할 수 있습니다 [cdaorecordset:: M_bcheckcachefordirtyfields](cdaorecordset-class.md#m_bcheckcachefordirtyfields)합니다.
@@ -1219,12 +1214,11 @@ void AFXAPI DFX_Long(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 **긴**, 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *dwBindOptions*<br/>
-변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. 
-  `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
+변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
 
 > [!NOTE]
 >  기본적으로 설정 하 여 버퍼링 된 데이터를 이중 여부를 제어할 수 있습니다 [cdaorecordset:: M_bcheckcachefordirtyfields](cdaorecordset-class.md#m_bcheckcachefordirtyfields)합니다.
@@ -1264,7 +1258,7 @@ void AFXAPI DFX_LongBinary(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 [CLongBinary](clongbinary-class.md), 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *dwPreAllocSize*<br/>
@@ -1310,12 +1304,11 @@ void AFXAPI DFX_Short(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 **짧은**, 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *dwBindOptions*<br/>
-변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. 
-  `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
+변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
 
 > [!NOTE]
 >  기본적으로 설정 하 여 버퍼링 된 데이터를 이중 여부를 제어할 수 있습니다 [cdaorecordset:: M_bcheckcachefordirtyfields](cdaorecordset-class.md#m_bcheckcachefordirtyfields)합니다.
@@ -1357,12 +1350,11 @@ void AFXAPI DFX_Single(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 **float**, 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *dwBindOptions*<br/>
-변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. 
-  `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
+변경된 레코드 집합 필드를 검색할 수 있도록 MFC의 이중 버퍼링 메커니즘을 활용할 수 있게 해주는 옵션입니다. 기본적으로 AFX_DAO_ENABLE_FIELD_CACHE, 이중 버퍼링을 사용합니다. 다른 가능한 값은 AFX_DAO_DISABLE_FIELD_CACHE 합니다. 이 값을 지정하면, MFC가 이 필드를 검사하지 않습니다. `SetFieldDirty` 및 `SetFieldNull`을 직접 호출해야 합니다.
 
 > [!NOTE]
 >  기본적으로 설정 하 여 버퍼링 된 데이터를 이중 여부를 제어할 수 있습니다 [cdaorecordset:: M_bcheckcachefordirtyfields](cdaorecordset-class.md#m_bcheckcachefordirtyfields)합니다.
@@ -1402,7 +1394,7 @@ void AFXAPI DFX_Text(
 *szName*<br/>
 데이터 열의 이름입니다.
 
-*value*<br/>
+*값*<br/>
 표시된 데이터 멤버에 저장된 값(전송할 값)입니다. 레코드 집합에서 데이터 원본에 형식의 값을 전송 [CString](../../atl-mfc-shared/reference/cstringt-class.md), 지정된 된 데이터 멤버에서 가져온 것입니다. 데이터 소스에서 레코드 집합으로 전송하기 위해서는 값이 지정된 데이터 멤버에 저장됩니다.
 
 *nPreAllocSize*<br/>

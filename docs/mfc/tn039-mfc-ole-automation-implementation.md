@@ -1,5 +1,5 @@
 ---
-title: 'TN039: MFC-OLE 자동화 구현'
+title: 'TN039: MFC OLE 자동화 구현'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.mfc.ole
@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Automation, MFC COM interface entry points
 ms.assetid: 765fa3e9-dd54-4f08-9ad2-26e0546ff8b6
 ms.openlocfilehash: cd6f8d681ef7e6517f2172ca6b22b13723a962fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305491"
 ---
 # <a name="tn039-mfcole-automation-implementation"></a>TN039: MFC/OLE 자동화 구현
 
@@ -97,7 +97,7 @@ Z 속성에서 제공 되는 **DISPID** 0으로 **HIWORD** CDisp3DPoint 속성�
 
 ## <a name="advanced-mfc-dispatch-map-features"></a>고급 MFC 디스패치 맵 기능
 
-이 릴리스의 Visual c + + 클래스 마법사를 지원 하지 않는 추가 기능의 여러 가지가 있습니다. 클래스 마법사 지원 `DISP_FUNCTION`, `DISP_PROPERTY`, 및 `DISP_PROPERTY_EX` 정의 하는 메서드와 멤버 변수 속성을 가져오거나 설정 합니다. 멤버 함수 속성에 각각 있습니다. 이러한 기능은 일반적으로 대부분의 자동화 서버를 만드는 데 필요한 모든입니다.
+이 릴리스의 Visual 클래스 마법사를 지원 하지 않는 추가 기능을 여러 가지 C++입니다. 클래스 마법사 지원 `DISP_FUNCTION`, `DISP_PROPERTY`, 및 `DISP_PROPERTY_EX` 정의 하는 메서드와 멤버 변수 속성을 가져오거나 설정 합니다. 멤버 함수 속성에 각각 있습니다. 이러한 기능은 일반적으로 대부분의 자동화 서버를 만드는 데 필요한 모든입니다.
 
 지원 ClassWizard 매크로 적합 하지 않을 때 다음 추가 매크로 사용할 수 있습니다: `DISP_PROPERTY_NOTIFY`, 및 `DISP_PROPERTY_PARAM`합니다.
 
@@ -120,7 +120,7 @@ DISP_PROPERTY_NOTIFY(
 *pszName*<br/>
 속성의 외부 이름입니다.
 
-*MemberName*<br/>
+*memberName*<br/>
 속성이 저장 되는 멤버 변수의 이름입니다.
 
 *pfnAfterSet*<br/>
@@ -156,7 +156,7 @@ DISP_PROPERTY_PARAM(
 *memberGet*<br/>
 속성을 가져오는 데 멤버 함수의 이름입니다.
 
-*멤버 집합*<br/>
+*memberSet*<br/>
 속성을 설정 하는 데 사용 하는 멤버 함수의 이름입니다.
 
 *vtPropType*<br/>
@@ -237,7 +237,7 @@ DISP_PROPERTY_PARAM_ID(
 *pfnSet*<br/>
 속성을 설정 하는 데 사용 하는 멤버 함수의 이름입니다.
 
-*MemberName*<br/>
+*memberName*<br/>
 속성에 매핑할 멤버 변수의 이름
 
 *vtPropType*<br/>

@@ -3,11 +3,11 @@ title: /arch(ARM)
 ms.date: 11/04/2016
 ms.assetid: 4f1406ff-f174-487c-a126-8ab06cf447c1
 ms.openlocfilehash: b732a74d5fe223fdaf3b161d4ae92093ab5df407
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295205"
 ---
 # <a name="arch-arm"></a>/arch(ARM)
 
@@ -35,7 +35,7 @@ ARM VFPv4 명령을 사용하도록 설정합니다. 이 옵션을 지정하지 
 
 ### <a name="to-set-the-archarmv7ve-or-archvfpv4-compiler-option-in-visual-studio"></a>Visual Studio에서 /arch:ARMv7VE 또는 /arch:VFPv4 컴파일러 옵션을 설정하려면
 
-1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **C/C++** 폴더입니다.
 

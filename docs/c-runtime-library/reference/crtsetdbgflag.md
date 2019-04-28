@@ -51,11 +51,11 @@ helpviewer_keywords:
 - _CRTDBG_CHECK_CRT_DF macro
 ms.assetid: b5657ffb-6178-4cbf-9886-1af904ede94c
 ms.openlocfilehash: dcb8e37090e4c15ba849e76ca1cb1cc646a7bcc0
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348187"
 ---
 # <a name="crtsetdbgflag"></a>_CrtSetDbgFlag
 
@@ -80,17 +80,17 @@ int _CrtSetDbgFlag(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_CrtSetDbgFlag** 함수에서 디버그 힙 관리자의 비트 필드를 수정 하 여 메모리 할당을 추적 하는 방법을 제어 하는 응용 프로그램을 사용 합니다 **_crtDbgFlag** 플래그입니다. 응용 프로그램에서는 비트를 설정하여(켜기) 디버그 힙 관리자에 특수 디버깅 작업을 수행하도록 지시합니다. 이러한 작업에는 응용 프로그램 종료 시 메모리 누수 확인 후 메모리 누수가 발견되면 보고, 힙의 연결된 목록에 확보한 메모리 블록이 남아 있도록 지정하여 메모리 부족 조건을 시뮬레이션 및 모든 할당 요청 시 각 메모리 블록을 조사하여 힙의 무결성을 확인하는 작업 등이 있습니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtSetDbgFlag** 전처리 중 제거 됩니다.
+합니다 **_CrtSetDbgFlag** 함수에서 디버그 힙 관리자의 비트 필드를 수정 하 여 메모리 할당을 추적 하는 방법을 제어 하는 응용 프로그램을 사용 합니다 **_crtDbgFlag** 플래그입니다. 애플리케이션에서는 비트를 설정하여(켜기) 디버그 힙 관리자에 특수 디버깅 작업을 수행하도록 지시합니다. 이러한 작업에는 애플리케이션 종료 시 메모리 누수 확인 후 메모리 누수가 발견되면 보고, 힙의 연결된 목록에 확보한 메모리 블록이 남아 있도록 지정하여 메모리 부족 조건을 시뮬레이션 및 모든 할당 요청 시 각 메모리 블록을 조사하여 힙의 무결성을 확인하는 작업 등이 있습니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtSetDbgFlag** 전처리 중 제거 됩니다.
 
 다음 표에서는 **_crtDbgFlag**의 비트 필드를 보여 주고 이러한 필드의 동작에 대해 설명합니다. 비트를 설정하면 진단 출력이 늘어나고 프로그램 실행 속도가 줄어들기 때문에 비트는 기본적으로 설정되지 않습니다(꺼짐). 이러한 비트 필드에 대한 자세한 내용은 [힙 상태 보고 함수](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
 
 |비트 필드|기본|설명|
 |---------------|-------------|-----------------|
-|**_CRTDBG_ALLOC_MEM_DF**|On|ON: 디버그 힙 할당과 메모리 블록 형식 식별자를 사용 하 여 사용과 같은 **_CLIENT_BLOCK**합니다. OFF: 힙의 연결된 목록에 새 할당을 추가하지만 블록 형식을 **_IGNORE_BLOCK**으로 설정합니다.<br /><br /> 또한 힙 빈도 확인 매크로 중 하나와 함께 사용할 수도 있습니다.|
-|**_CRTDBG_CHECK_ALWAYS_DF**|OFF|ON: 모든 할당 및 할당 해제 요청 시 [_CrtCheckMemory](crtcheckmemory.md)를 호출합니다. OFF: **_CrtCheckMemory** 명시적으로 호출 해야 합니다.<br /><br /> 이 플래그가 설정되어 있으면 힙 빈도 확인 매크로는 효과가 없습니다.|
-|**_CRTDBG_CHECK_CRT_DF**|OFF|ON: 포함할 **_CRT_BLOCK** 형식 누수 검색 및 메모리 상태에서 차이점 작업 합니다. OFF: 런타임 라이브러리에서 내부적으로 사용되는 메모리는 이러한 작업에서 무시됩니다.<br /><br /> 또한 힙 빈도 확인 매크로 중 하나와 함께 사용할 수도 있습니다.|
-|**_CRTDBG_DELAY_FREE_MEM_DF**|OFF|ON: 확보한 메모리 블록을 힙의 연결된 목록에서 유지하고 **_FREE_BLOCK** 형식에 할당하고 바이트 값 0xDD로 채웁니다. OFF: 확보한 블록을 힙의 연결된 목록에 유지하지 않습니다.<br /><br /> 또한 힙 빈도 확인 매크로 중 하나와 함께 사용할 수도 있습니다.|
-|**_CRTDBG_LEAK_CHECK_DF**|OFF|ON: [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md)에 대한 호출을 통해 프로그램 종료 시 자동 누수 검사를 수행하고 응용 프로그램이 직접 할당한 모든 메모리 확보에 실패한 경우 오류 보고서를 생성합니다. OFF: 프로그램 종료 시 누수 검사를 자동으로 수행하지 않습니다.<br /><br /> 또한 힙 빈도 확인 매크로 중 하나와 함께 사용할 수도 있습니다.|
+|**_CRTDBG_ALLOC_MEM_DF**|On|ON: 와 같은 디버그 힙 할당과 메모리 블록 형식 식별자를 사용 하 여 사용 하도록 설정 **_CLIENT_BLOCK**합니다. OFF: 힙의 연결 된 목록에 새 할당을 추가 하지만 설정 블록 형식을 **_IGNORE_BLOCK**합니다.<br /><br /> 또한 힙 빈도 확인 매크로 중 하나와 함께 사용할 수도 있습니다.|
+|**_CRTDBG_CHECK_ALWAYS_DF**|OFF|ON: 호출 [_CrtCheckMemory](crtcheckmemory.md) 모든 할당 및 할당 취소 요청에 따라 합니다. OFF: **_CrtCheckMemory** 명시적으로 호출 해야 합니다.<br /><br /> 이 플래그가 설정되어 있으면 힙 빈도 확인 매크로는 효과가 없습니다.|
+|**_CRTDBG_CHECK_CRT_DF**|OFF|ON: 포함 **_CRT_BLOCK** 형식 누수 검색 및 메모리 상태에서 차이점 작업 합니다. OFF: 런타임 라이브러리에서 내부적으로 사용 하는 메모리는 이러한 작업에 의해 무시 됩니다.<br /><br /> 또한 힙 빈도 확인 매크로 중 하나와 함께 사용할 수도 있습니다.|
+|**_CRTDBG_DELAY_FREE_MEM_DF**|OFF|ON: 해제 된 메모리 블록을 힙의 연결된 리스트에 유지, 할당 된 **_FREE_BLOCK** 형식과 바이트 값 0xDD로 채웁니다. OFF: 해제 된 블록을 힙의 연결된 리스트에서 유지 하지 않습니다.<br /><br /> 또한 힙 빈도 확인 매크로 중 하나와 함께 사용할 수도 있습니다.|
+|**_CRTDBG_LEAK_CHECK_DF**|OFF|ON: 호출을 통해 프로그램 종료 시 자동 누수 검사를 수행 [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md) 응용 프로그램 할당 한 모든 메모리 확보에 실패 한 경우 오류 보고서를 생성 합니다. OFF: 프로그램 종료 시 누수 검사를 자동으로 수행 하지 않습니다.<br /><br /> 또한 힙 빈도 확인 매크로 중 하나와 함께 사용할 수도 있습니다.|
 
 **힙 검사 빈도 매크로**
 

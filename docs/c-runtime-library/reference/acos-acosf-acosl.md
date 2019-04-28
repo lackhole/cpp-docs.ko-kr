@@ -32,11 +32,11 @@ helpviewer_keywords:
 - arccosine function
 ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
 ms.openlocfilehash: 22149e9ff552015238d34a15166d04115438534b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335674"
 ---
 # <a name="acos-acosf-acosl"></a>acos, acosf, acosl
 
@@ -74,13 +74,13 @@ long double acos( long double x );   // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **acos** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **acos** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **acos** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **acos** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|----------------------|
-|**acos**하십시오 **acosf**, **acosl**|\<math.h>|\<errno.h>|
+|**acos**, **acosf**, **acosl**|\<math.h>|\<errno.h>|
 
 ## <a name="example"></a>예제
 

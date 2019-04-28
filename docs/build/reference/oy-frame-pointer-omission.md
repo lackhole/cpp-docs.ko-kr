@@ -14,11 +14,11 @@ helpviewer_keywords:
 - /Oy compiler option [C++]
 ms.assetid: c451da86-5297-4c5a-92bc-561d41379853
 ms.openlocfilehash: 7884f52cc22766c6b1a864fc01abcd73f92cfabb
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319969"
 ---
 # <a name="oy-frame-pointer-omission"></a>/Oy(프레임 포인터 생략)
 
@@ -42,9 +42,9 @@ ms.locfileid: "57817961"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **최적화** 속성 페이지.
+1. 선택 된 **구성 속성** > **C /C++** > **최적화** 속성 페이지.
 
 1. 수정 된 **프레임 포인터 생략** 속성입니다. 이 속성을 추가 또는 제거 합니다 **/Oy** 옵션입니다. 추가 하려는 경우는 **/Oy-** 옵션을 선택 합니다 **명령줄** 속성 페이지 및 수정 **추가 옵션**합니다.
 

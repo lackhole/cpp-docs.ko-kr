@@ -30,11 +30,11 @@ helpviewer_keywords:
 - wfreopen function
 ms.assetid: de4b73f8-1043-4d62-98ee-30d2022da885
 ms.openlocfilehash: 4c570837bddea1f5e986ae5f767279ab2637ea21
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62332990"
 ---
 # <a name="freopen-wfreopen"></a>freopen, _wfreopen
 
@@ -63,7 +63,7 @@ FILE *_wfreopen(
 *모드*<br/>
 허용되는 액세스 형식입니다.
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값

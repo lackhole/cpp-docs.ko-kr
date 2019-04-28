@@ -19,11 +19,11 @@ helpviewer_keywords:
 - environment variables [C++], CL compiler
 ms.assetid: 99389528-deb5-43b9-b99a-03c8773ebaf4
 ms.openlocfilehash: fed3360294bec724af09b87e5abd7c6bb22fa285
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315393"
 ---
 # <a name="set-the-path-and-environment-variables-for-command-line-builds"></a>명령줄 빌드에 맞는 경로 및 환경 변수 설정
 
@@ -38,7 +38,7 @@ Visual C++ 명령줄 도구 PATH, TMP, INCLUDE, LIB 및 LIBPATH 환경 변수를
 
 ## <a name="see-also"></a>참고자료
 
-[명령줄에서 MSVC 도구 집합을 사용 하 여](building-on-the-command-line.md)<br/>
+[명령줄에서 MSVC 도구 집합 사용](building-on-the-command-line.md)<br/>
 [MSVC 링커 참조](reference/linking.md)<br/>
 [MSVC 링커 옵션](reference/linker-options.md)<br/>
 [MSVC 컴파일러 참조](reference/compiling-a-c-cpp-program.md)<br/>

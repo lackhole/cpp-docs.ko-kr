@@ -45,18 +45,18 @@ helpviewer_keywords:
 - strstr function
 ms.assetid: 03d70c3f-2473-45cb-a5f8-b35beeb2748a
 ms.openlocfilehash: 42e02473e062c3af9524ed432aa163b7574342de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223083"
 ---
 # <a name="strstr-wcsstr-mbsstr-mbsstrl"></a>strstr, wcsstr, _mbsstr, _mbsstr_l
 
 문자열에서 처음 나오는 검색 문자열에 대한 포인터를 반환합니다.
 
 > [!IMPORTANT]
-> Windows 런타임에서 실행되는 응용 프로그램에서는 `_mbsstr` 및 `_mbsstr_l`을 사용할 수는 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> Windows 런타임에서 실행되는 애플리케이션에서는 `_mbsstr` 및 `_mbsstr_l`을 사용할 수는 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -136,7 +136,7 @@ const unsigned char *_mbsstr_l(
 > [!IMPORTANT]
 > 이러한 함수에서는 버퍼 오버런 문제로 인한 위협이 발생할 수 있습니다. 버퍼 오버런은 시스템 공격에 이용될 수 있습니다. 버퍼 오버런 문제가 발생하면 임의 코드를 실행할 수 있게 되어 보증하지 않은 방식으로 권한이 상승할 수 있기 때문입니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 번째 인수에 대 한 포인터입니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 에 대 한 포인터를 받는 오버 로드 **상수** 에 대 한 포인터를 반환 합니다 **const**;는 버전에 대 한 포인터를은 비**const** 에 대 한 포인터를 반환 하는 비- **const**합니다. 매크로 _CRT_CONST_CORRECT_OVERLOADS 모두 정의 되는 **const** 및 비-**const** 이러한 함수의 버전은 사용할 수 있습니다. 필요 하면 이외**const** 두 c + + 오버 로드에 대 한 동작 기호 _CONST_RETURN을 정의 합니다.
+C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 번째 인수에 대 한 포인터입니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 에 대 한 포인터를 받는 오버 로드 **상수** 에 대 한 포인터를 반환 합니다 **const**;는 버전에 대 한 포인터를은 비**const** 에 대 한 포인터를 반환 하는 비- **const**합니다. 매크로 _CRT_CONST_CORRECT_OVERLOADS 모두 정의 되는 **const** 및 비-**const** 이러한 함수의 버전은 사용할 수 있습니다. 비-필요한 경우**const** 둘 다에 대 한 동작 C++ 오버 로드를 기호 _CONST_RETURN을 정의 합니다.
 
 출력 값은 LC_CTYPE; 로캘 범주 설정에 영향을 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)합니다. 없는 이러한 함수의 버전은는 **_l** 이 로캘 종속 동작에 대 한 현재 로캘 접미사 사용 하며 있는 버전은 **_l** 대신 사용 한다는 점을 제외 하면 접미사가 동일 합니다. 전달 된 로캘 매개 변수입니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 

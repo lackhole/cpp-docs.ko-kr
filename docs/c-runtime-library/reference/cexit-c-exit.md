@@ -30,11 +30,11 @@ helpviewer_keywords:
 - c_exit function
 ms.assetid: f3072045-9924-4b1a-9fef-b0dcd6d12663
 ms.openlocfilehash: a075e8a8e965a195765b86ffa21fed0915dbf5ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335492"
 ---
 # <a name="cexit-cexit"></a>_cexit, _c_exit
 
@@ -51,7 +51,7 @@ void _c_exit( void );
 
 합니다 **_cexit** 마지막-, lifo (후입선출) 순서에 의해 등록 된 함수 호출 함수 **atexit** 하 고 **_onexit**합니다. 그런 다음 **_cexit** 모든 I/O 버퍼를 플러시하고 반환 하기 전에 모든 열린 스트림을 닫습니다. **_c_exit** 같습니다 **_exit** 처리 하지 않고 호출 프로세스로 반환 하지만 **atexit** 하거나 **_onexit** 스트림 버퍼를 플러시하지 또는 합니다. 동작은 **종료**, **_exit**, **_cexit**, 및 **_c_exit** 표에 표시 됩니다.
 
-|기능|동작|
+|함수|동작|
 |--------------|--------------|
 |**exit**|전체 C 라이브러리 종료 절차를 수행하고, 프로세스를 종료하고, 제공된 상태 코드와 함께 종료됩니다.|
 |**_exit**|빠른 C 라이브러리 종료 절차를 수행하고, 프로세스를 종료하고, 제공된 상태 코드와 함께 종료됩니다.|

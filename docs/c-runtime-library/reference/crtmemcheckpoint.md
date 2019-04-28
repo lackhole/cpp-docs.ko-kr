@@ -24,11 +24,11 @@ helpviewer_keywords:
 - _CrtMemCheckpoint function
 ms.assetid: f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc
 ms.openlocfilehash: ee435ba3e9e40795280dee0f97feaad32c8b0fc3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339873"
 ---
 # <a name="crtmemcheckpoint"></a>_CrtMemCheckpoint
 
@@ -65,7 +65,7 @@ void _CrtMemCheckpoint(
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-**라이브러리:** 디버그 버전의 UCRT만 해당합니다.
+**라이브러리:** 디버그 버전의 UCRT만 해당 합니다.
 
 ## <a name="see-also"></a>참고자료
 

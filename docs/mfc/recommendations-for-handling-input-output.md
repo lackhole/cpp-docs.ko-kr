@@ -9,11 +9,11 @@ helpviewer_keywords:
 - I/O [MFC], file-based options
 ms.assetid: d664b175-3b4a-40c3-b14b-39de6b12e419
 ms.openlocfilehash: 760c213c3af7f9c75374f04e3dfc6b9499eade5c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62218566"
 ---
 # <a name="recommendations-for-handling-inputoutput"></a>입력/출력 처리에 대한 권장 사항
 
@@ -49,4 +49,4 @@ Serialization에 대 한 자세한 내용은 [Serialization](../mfc/serializatio
 
 ## <a name="see-also"></a>참고자료
 
-[Serialization: Serialization vs입니다. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)
+[Serialization: Serialization 및 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)

@@ -1,5 +1,5 @@
 ---
-title: C 및 c + +에 대 한 Microsoft 확장
+title: C에 대 한 Microsoft 확장 하 고C++
 ms.date: 06/14/2018
 helpviewer_keywords:
 - or_eq operator
@@ -30,19 +30,19 @@ helpviewer_keywords:
 - compl method
 ms.assetid: e811a74a-45ba-4c00-b206-2f2321b8689a
 ms.openlocfilehash: dab8ac23be8b66ca84c57514c6c04e94dddebaae
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62321191"
 ---
-# <a name="microsoft-extensions-to-c-and-c"></a>C 및 c + +에 대 한 Microsoft 확장
+# <a name="microsoft-extensions-to-c-and-c"></a>C에 대 한 Microsoft 확장 하 고C++
 
 Visual C++는 다음과 같이 ANSI C 및 ANSI C++ 표준을 확장합니다.
 
 ## <a name="keywords"></a>키워드
 
-여러 키워드가 추가되었습니다. 목록의 [키워드](../../cpp/keywords-cpp.md), 선행 밑줄이 두 개 있는 키워드는 Visual c + + 확장 합니다.
+여러 키워드가 추가되었습니다. 목록의 [키워드](../../cpp/keywords-cpp.md), 선행 밑줄이 두 개 있는 키워드에 시각적 개체는 C++ 확장 합니다.
 
 ## <a name="out-of-class-definition-of-static-const-integral-or-enum-members"></a>정적 const 정수 (또는 열거형) 멤버의 클래스 정의
 
@@ -232,11 +232,11 @@ C 컴파일러는 다음과 같은 데이터 선언 및 정의 기능을 지원�
 
 ## <a name="intrinsic-floating-point-functions"></a>부동 소수점 내장 함수
 
-모두 x86 c + + 컴파일러 및 C 컴파일러의 인라인 생성을 지원 합니다 `atan`, `atan2`, `cos`, `exp`, `log`를 `log10`, `sin`, `sqrt`, 및 `tan` 함수 때 **/Oi** 지정 됩니다. C 컴파일러의 경우, 이러한 내장 함수는 `errno` 변수를 설정하지 않기 때문에 이러한 내장 함수가 사용될 경우 ANSI 규칙을 준수할 수 없게 됩니다.
+모두 x86 C++ 컴파일러 및 C 컴파일러의 인라인 생성을 지원 합니다 `atan`, `atan2`, `cos`, `exp`, `log`를 `log10`, `sin`, `sqrt`, 및 `tan` 함수는 경우 **/Oi** 지정 됩니다. C 컴파일러의 경우, 이러한 내장 함수는 `errno` 변수를 설정하지 않기 때문에 이러한 내장 함수가 사용될 경우 ANSI 규칙을 준수할 수 없게 됩니다.
 
 ## <a name="passing-a-non-const-pointer-parameter-to-a-function-that-expects-a-reference-to-a-const-pointer-parameter"></a>Const 포인터 매개 변수에 대 한 참조를 예상 하는 함수에는 비 const 포인터 매개 변수를 전달
 
-이 c + +를 확장 합니다. 사용 하 여이 코드는 컴파일되지 **/Ze**:
+이 확장입니다 C++입니다. 사용 하 여이 코드는 컴파일되지 **/Ze**:
 
 ```cpp
 typedef   int   T;
@@ -262,9 +262,9 @@ void func ()
 
 아래 **/Ze**, 텍스트 서식의 다음 연산자를 사용 하려는 경우 iso646.h 포함 해야 합니다.
 
-- && (and)
+- & & (및)
 
-- &= (and_eq)
+- & = (and_eq)
 
 - & (bitand)
 

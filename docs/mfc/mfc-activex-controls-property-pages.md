@@ -11,11 +11,11 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
 ms.openlocfilehash: 3fe092e412cf11f7bf8600e8d0d7d43abb0e11c7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57303900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62239963"
 ---
 # <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX 컨트롤: 속성 페이지
 
@@ -47,7 +47,7 @@ ActiveX 컨트롤 속성 페이지는 두 가지 방법으로 표시 됩니다.
 
 - [MFC ActiveX 컨트롤: 다른 사용자 지정 속성 페이지 추가](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)
 
-- [MFC ActiveX 컨트롤: 스톡 속성 페이지를 사용 하 여](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+- [MFC ActiveX 컨트롤: 스톡 속성 페이지 사용](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
 속성 시트를 사용 하 여 ActiveX 컨트롤 이외의 MFC 응용 프로그램에 대 한 내용은 참조 하세요 [속성 시트](../mfc/property-sheets-mfc.md)합니다.
 

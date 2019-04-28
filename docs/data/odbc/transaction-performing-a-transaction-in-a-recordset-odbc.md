@@ -5,11 +5,11 @@ helpviewer_keywords:
 - transactions, updating recordsets
 ms.assetid: cf1d6b48-7fb8-4903-84f7-a1822054534d
 ms.openlocfilehash: 9e06d61d3d86233e136b0b3fe78f149a6778649b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62329831"
 ---
 # <a name="transaction-performing-a-transaction-in-a-recordset-odbc"></a>트랜잭션: 레코드 집합 (ODBC)에서 트랜잭션 수행
 
@@ -84,6 +84,6 @@ BOOL CEnrollDoc::RemoveStudent( CString strStudentID )
 ## <a name="see-also"></a>참고자료
 
 [트랜잭션(ODBC)](../../data/odbc/transaction-odbc.md)<br/>
-[트랜잭션: 트랜잭션이 업데이트 (ODBC)에 미치는 영향](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)<br/>
+[트랜잭션: 트랜잭션이 업데이트에 미치는 영향(ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)<br/>
 [CDatabase 클래스](../../mfc/reference/cdatabase-class.md)<br/>
 [CRecordset 클래스](../../mfc/reference/crecordset-class.md)
