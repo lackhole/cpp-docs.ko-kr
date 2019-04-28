@@ -23,15 +23,15 @@ helpviewer_keywords:
 - data type conversion [C++], explicit
 ms.assetid: d40e4310-a190-4e95-a34c-22c5c20aa0b9
 ms.openlocfilehash: 2af30ad3d1244146f32bf2402ed7eccdc4785c1b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62244137"
 ---
 # <a name="user-defined-type-conversions-c"></a>사용자 정의 형식 변환(C++)
 
-A *변환* 다른 형식의 값에서 일부 형식의 새 값을 생성 합니다. *표준 변환* 있으며 기본 제공 형식을 만들 수 있습니다 c + + 언어 및 지원 내장 *사용자 정의 변환은* , 또는 사용자 정의 형식 간의 변환을 수행 하 합니다.
+A *변환* 다른 형식의 값에서 일부 형식의 새 값을 생성 합니다. *표준 변환* 에 기본 제공 되는 C++ 언어 및 지원 있으며 기본 제공 형식을 만들 수 있습니다 *사용자 정의 변환은* , 또는 사용자 정의 형식 간의 변환을 수행 하 합니다.
 
 표준 변환은 기본 제공 형식 간의 변환, 상속별로 관련된 형식에 대한 포인터 또는 참조 간의 변환, void 포인터와의 양방향 변환, null 포인터로의 변환을 수행합니다. 자세한 내용은 [표준 변환](../cpp/standard-conversions.md)합니다. 사용자 정의 변환은 사용자 정의 형식 간의 변환이나 사용자 정의 형식과 기본 제공 형식 간의 변환을 수행합니다. 로 구현할 수 있습니다 [변환 생성자](#ConvCTOR) 되거나 [변환 함수](#ConvFunc)합니다.
 

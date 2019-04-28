@@ -1,24 +1,24 @@
 ---
-title: 자동(함수 범위) 변수
-ms.date: 11/04/2016
+title: 자동 (함수 범위) 변수
+ms.date: 04/22/2019
 helpviewer_keywords:
 - automatic variables
 - variables, automatic
 - functions [C++], scope
 - scope, declared within functions
 ms.assetid: 6e1a14c2-1fb0-4937-8628-8d963cc35ed4
-ms.openlocfilehash: fe326621f421ecbbb0ce09dac91f1a71e8d669aa
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: 60dcfe61be24516b96054532931fb65245ab31d0
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62226785"
 ---
-# <a name="automatic-function-scope-variables"></a>자동(함수 범위) 변수
+# <a name="automatic-function-scope-variables"></a>자동 (함수 범위) 변수
 
 함수 내에서 선언 된 변수에 해당 함수의 범위 내 에서만 사용할 수 있습니다.
 
-```
+```cpp
 // LNK2019_AV.cpp
 // compile with: /c
 void test(void);
@@ -35,7 +35,7 @@ int main() {
 
 그런 다음
 
-```
+```cpp
 // LNK2019_AV_2.cpp
 // compile with: LNK2019_AV.cpp
 // LNK2019 expected

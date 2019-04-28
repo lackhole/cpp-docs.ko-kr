@@ -5,19 +5,19 @@ f1_keywords:
 - noexcept_cpp
 ms.assetid: df24edb9-c6a6-4e37-9914-fd5c0c3716a8
 ms.openlocfilehash: c314b554abb6c10e62b143f554777af50267e4e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245363"
 ---
 # <a name="noexcept-c"></a>noexcept(C++)
 
-**C + + 11:** 함수에서 예외를 throw 할 수 있습니다 있는지 여부를 지정 합니다.
+**C++11:** 함수에서 예외를 throw 할 수 있습니다 있는지 여부를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *식 noexcept*: &nbsp; &nbsp; &nbsp; &nbsp; **noexcept** &nbsp; &nbsp; &nbsp; &nbsp; **noexcept (** *상수-식* **)**
+> *noexcept-expression*: &nbsp;&nbsp;&nbsp;&nbsp;**noexcept** &nbsp;&nbsp;&nbsp;&nbsp;**noexcept(** *constant-expression* **)**
 
 ### <a name="parameters"></a>매개 변수
 

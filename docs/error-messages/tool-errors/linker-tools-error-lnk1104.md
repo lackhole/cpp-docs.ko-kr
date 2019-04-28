@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1104
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
 ms.openlocfilehash: eadeeb7ac19e3975a37a1364502b33400018cb05
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62255515"
 ---
 # <a name="linker-tools-error-lnk1104"></a>링커 도구 오류 LNK1104
 
@@ -33,7 +33,7 @@ ms.locfileid: "57818273"
 
 열 수 없는 파일을 사용 하면 kernel32.lib, 등 Microsoft에서 제공 하는 표준 라이브러리 파일 중 하나인 경우에 프로젝트 구성 오류 또는 설치 해야 합니다. Windows SDK 설치 되어 있는지 확인 합니다. MFC와 같은 다른 Microsoft 라이브러리, 프로젝트에 필요한 경우 MFC 구성 요소 Visual Studio 설치 관리자가 설치한 있는지 확인 합니다. 언제 든 지 선택적 구성 요소를 추가 하려면 다시 설치 관리자를 실행할 수 있습니다. 자세한 내용은 [Visual Studio 수정](/visualstudio/install/modify-visual-studio)합니다. 설치 관리자를 개별 구성 요소 탭을 사용 하 여 특정 라이브러리 및 Sdk를 선택 합니다.
 
-이전 버전의 Visual Studio를 사용 하 여 만든 프로젝트를 빌드하는 경우 플랫폼 도구 집합 및 해당 버전에 대 한 라이브러리를 설치할 수 없습니다. Msvcr100.lib, 같은 버전 관리 된 라이브러리 이름에 대 한 오류 메시지가 발생 하는 경우 원인 때문일 수 있습니다. 이 문제를 해결 하려면 두 가지 옵션이 있습니다:를 설치한 후 현재 플랫폼 도구 집합을 사용 하도록 프로젝트를 업그레이드할 수 있습니다 또는 이전 도구 집합을 설치 하 고 변경 하지 않고 프로젝트를 빌드할 수 있습니다. 자세한 내용은 [이전 버전의 Visual c + +에서 프로젝트 업그레이드](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md) 하 고 [이전 프로젝트를 빌드하려면 Visual Studio의 네이티브 멀티 타기 팅을 사용](../../porting/use-native-multi-targeting.md)합니다.
+이전 버전의 Visual Studio를 사용 하 여 만든 프로젝트를 빌드하는 경우 플랫폼 도구 집합 및 해당 버전에 대 한 라이브러리를 설치할 수 없습니다. Msvcr100.lib, 같은 버전 관리 된 라이브러리 이름에 대 한 오류 메시지가 발생 하는 경우 원인 때문일 수 있습니다. 이 문제를 해결 하려면 두 가지 옵션이 있습니다:를 설치한 후 현재 플랫폼 도구 집합을 사용 하도록 프로젝트를 업그레이드할 수 있습니다 또는 이전 도구 집합을 설치 하 고 변경 하지 않고 프로젝트를 빌드할 수 있습니다. 자세한 내용은 [이전 버전의 visual 프로젝트 업그레이드 C++ ](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md) 하 고 [이전 프로젝트를 빌드하려면 Visual Studio의 네이티브 멀티 타기 팅을 사용](../../porting/use-native-multi-targeting.md).
 
 새 대상 플랫폼 및 구성에 대 한를 빌드할 때이 오류를 표시 하는 프로젝트 구성 또는 플랫폼 도구 집합에 대 한 라이브러리를 설치할 수 있습니다. 있는지 확인 합니다 **플랫폼 도구 집합** 및 **Windows SDK 버전** 에 지정 된 합니다 [의 일반 속성 페이지](../../build/reference/general-property-page-project.md) 프로젝트에 설치 되어 있는지 확인 필수 라이브러리에서 사용할 수는 **라이브러리 디렉터리** 에 지정 된 합니다 [VC + + Directories Property Page](../../build/reference/vcpp-directories-property-page.md) 구성 설정에 대 한 합니다. 디버그에 대 한 별도 설정이 및 32 비트 및 64 비트 구성 뿐만 아니라 소매 구성을 하나 빌드의 작동 하지만 오류가 발생 하면 다른 경우 세워야 설정이 올바른지, 그리고 필요한 도구 및 라이브러리에 대해 설치 된 모든 빌드할 구성입니다.
 
@@ -59,7 +59,7 @@ Visual Studio IDE 프로젝트를 빌드하는 다른 컴퓨터에서 복사 된
 
 ### <a name="cannot-open-a-file-built-by-your-project"></a>프로젝트를 통해 빌드된 파일을 열 수 없습니다.
 
-하는 경우이 오류가 나타날 수 있습니다 파일 *filename* 솔루션 하 여 작성 됩니다 있지만 링커 액세스 하려고 할 때 아직 존재 하지 않습니다. 이 하나의 프로젝트가 다른 프로젝트에 따라 달라 집니다 하지만 프로젝트가 올바른 순서로 빌드되지 않는 경우 발생할 수 있습니다. 이 문제를 해결 하려면 누락 된 파일을 필요할 때 까지는 빌드는 하므로 파일을 사용 하는 프로젝트에 프로젝트 참조 설정 되어 있는지 확인 합니다. 자세한 내용은 [Visual c + + 프로젝트에서 참조 추가](../../build/adding-references-in-visual-cpp-projects.md) 하 고 [프로젝트의 참조 관리](/visualstudio/ide/managing-references-in-a-project)합니다.
+하는 경우이 오류가 나타날 수 있습니다 파일 *filename* 솔루션 하 여 작성 됩니다 있지만 링커 액세스 하려고 할 때 아직 존재 하지 않습니다. 이 하나의 프로젝트가 다른 프로젝트에 따라 달라 집니다 하지만 프로젝트가 올바른 순서로 빌드되지 않는 경우 발생할 수 있습니다. 이 문제를 해결 하려면 누락 된 파일을 필요할 때 까지는 빌드는 하므로 파일을 사용 하는 프로젝트에 프로젝트 참조 설정 되어 있는지 확인 합니다. 자세한 내용은 [시각적 개체에 대 한 참조를 추가 C++ 프로젝트](../../build/adding-references-in-visual-cpp-projects.md) 하 고 [프로젝트의 참조 관리](/visualstudio/ide/managing-references-in-a-project)합니다.
 
 ### <a name="cannot-open-file-cprogramobj"></a>파일을 열 수 없습니다. ' c:\\Program.obj'
 
@@ -81,7 +81,7 @@ IDE에서이 문제를 해결 하려면 다음을 확인 합니다 **라이브�
 
 이 오류가 나타날 수 있습니다 때에 대 한 경로 *filename* 260 자 보다 더 확장 됩니다. 이름을 변경 하거나 필요한 파일의 경로를 단축 하는 데 필요한 경우에 디렉터리 구조를 다시 정렬 합니다.
 
-파일이 너무 큽니다.이 오류가 발생할 수 있습니다. 라이브러리 또는 개체 파일 보다 크기가 1gb 32 비트 링커에 대 한 문제가 발생할 수 있습니다. 이 문제에 대 한 가능한 해결 64 비트 도구 집합을 사용 하는 것입니다. 명령줄에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 명령줄에서 64 비트 Visual c + + 도구를 사용 하도록 설정](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)합니다. IDE에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 [64 비트 컴파일러 및 도구를 사용 하 여 MSBuild를 사용 하 여](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project) 및이 Stack Overflow 게시물: [Visual Studio amd64 네이티브 도구 체인을 사용 하는 방법을](http://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055)합니다.
+파일이 너무 큽니다.이 오류가 발생할 수 있습니다. 라이브러리 또는 개체 파일 보다 크기가 1gb 32 비트 링커에 대 한 문제가 발생할 수 있습니다. 이 문제에 대 한 가능한 해결 64 비트 도구 집합을 사용 하는 것입니다. 명령줄에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 64 비트 시각적 개체를 사용 하도록 설정 C++ 명령줄에서 도구 집합](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)합니다. IDE에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 [64 비트 컴파일러 및 도구를 사용 하 여 MSBuild를 사용 하 여](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project) 및이 Stack Overflow 게시물: [Visual Studio amd64 네이티브 도구 체인을 사용 하는 방법을](http://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055)합니다.
 
 권한이 부족 하 여 파일에 액세스 하는 경우이 오류가 발생할 수 있습니다 *filename*합니다. 이 라이브러리 파일을 보호 된 시스템 디렉터리에 액세스 하려면 일반 사용자 계정 및 시도 사용 하거나 자신의 원래 사용 권한을 가진 다른 사용자가에서 복사 된 파일을 사용 하는 경우에 발생할 수 있습니다 설정 합니다. 이 문제를 해결 하려면 파일을 쓰기 가능한 프로젝트 디렉터리로 이동 합니다. 파일 쓰기 가능한 디렉터리에 액세스할 수 있는 권한이 있지만 경우 관리자 명령 프롬프트를 사용 하 여 수 있으며 파일의 소유권을 takeown.exe 명령을 실행할 수 있습니다.
 

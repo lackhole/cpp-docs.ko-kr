@@ -11,11 +11,11 @@ helpviewer_keywords:
 - CLSID_CPicturePropPage [MFC]
 ms.assetid: 2e49735c-21b9-4442-bb3d-c82ef258eec9
 ms.openlocfilehash: 86e9bd220d06e714030f7d44888b210ba35fd345
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62239294"
 ---
 # <a name="mfc-activex-controls-using-pictures-in-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용
 
@@ -45,7 +45,7 @@ ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는
 
 - 컨트롤의 그림 속성을 조작하는 속성 페이지.
 
-   이 속성 페이지는 ActiveX 컨트롤에서 사용할 수 있는 스톡 속성 페이지 그룹의 일부입니다. ActiveX 컨트롤 속성 페이지에 대 한 자세한 내용은 문서를 참조 하세요. [MFC ActiveX 컨트롤: 스톡 속성 페이지를 사용 하 여](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+   이 속성 페이지는 ActiveX 컨트롤에서 사용할 수 있는 스톡 속성 페이지 그룹의 일부입니다. ActiveX 컨트롤 속성 페이지에 대 한 자세한 내용은 문서를 참조 하세요. [MFC ActiveX 컨트롤: 스톡 속성 페이지 사용](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
 ##  <a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a> ActiveX 컨트롤에서 사용자 지정 그림 속성 구현
 
