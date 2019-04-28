@@ -5,11 +5,11 @@ helpviewer_keywords:
 - swap method
 ms.assetid: 898c219c-bc8e-4d14-a149-6240426c693f
 ms.openlocfilehash: 2c2b87e8cc51248fd3d29df7f361fff92da72957
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210846"
 ---
 # <a name="container-classswap"></a>Container Class::swap
 
@@ -26,7 +26,7 @@ void swap(Container& right);
 
 ## <a name="remarks"></a>설명
 
-**\*this.get\_allocator ==** _right_**.get_allocator**인 경우 일정한 시간 내에 교환합니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
+ **\*this.get\_allocator ==** _right_**.get_allocator**인 경우 일정한 시간 내에 교환합니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
 
 ## <a name="see-also"></a>참고자료
 
