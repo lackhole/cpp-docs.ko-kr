@@ -35,11 +35,11 @@ helpviewer_keywords:
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
 ms.openlocfilehash: 46b5f15a2f6048745a12b8c3a8c8a63404f71aa2
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252703"
 ---
 # <a name="coledatetime-class"></a>COleDateTime 클래스
 
@@ -708,7 +708,7 @@ enum DateTimeStatus
 
 - `COleDateTime::invalid` 나타냅니다이 `COleDateTime` 개체가 잘못 되었습니다. 즉, 해당 값 잘못 되었을 수 있습니다.
 
-- `COleDateTime::null` 나타냅니다이 `COleDateTime` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 경우 "null" 의"값 없음" c + + NULL 대신 데이터베이스 관점에서)
+- `COleDateTime::null` 나타냅니다이 `COleDateTime` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 값이 "null" 의"값 없음."와 반대로 데이터베이스 점에서 C++ NULL입니다.)
 
 상태를 `COleDateTime` 개체가 같은 경우에 유효 하지 않습니다.
 
@@ -838,7 +838,7 @@ COleDateTime& operator=(const UDATE& uDate) throw();
 
 - **operator = (** `uDate` **)** 는 `UDATE` 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 실패 하면 설정 된 경우를 잘못 됨. `UDATE` 구조 "압축 푼된" 날짜를 나타냅니다. 자세한 내용은 함수 참조 [VarDateFromUdate](/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate)합니다.
 
-- **operator = (** `filetimeSrc` **)** 는 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 그렇지 않으면 설정에 잘못 된 합니다. `FILETIME` UTC 시간 구조에 전달 하면 결과를 현지 시간에서 UTC 시간 변환 됩니다 하 고 변형 시간으로 저장 됩니다 협정 세계시 (UTC)를 사용 합니다. 이 동작은 Visual c + + 6.0 및 Visual c + +.NET 2003 SP2 동일 합니다. 자세한 내용은 [파일 시간](/windows/desktop/SysInfo/file-times) Windows SDK에 있습니다.
+- **operator = (** `filetimeSrc` **)** 는 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 그렇지 않으면 설정에 잘못 된 합니다. `FILETIME` UTC 시간 구조에 전달 하면 결과를 현지 시간에서 UTC 시간 변환 됩니다 하 고 변형 시간으로 저장 됩니다 협정 세계시 (UTC)를 사용 합니다. 이 동작은 Visual 동일 C++ 6.0 및 Visual C++.NET 2003 SP2. 자세한 내용은 [파일 시간](/windows/desktop/SysInfo/file-times) Windows SDK에 있습니다.
 
 자세한 내용은 참조는 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.
 

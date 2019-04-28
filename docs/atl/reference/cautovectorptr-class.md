@@ -14,11 +14,11 @@ helpviewer_keywords:
 - CAutoVectorPtr class
 ms.assetid: 0030362b-6bc4-4a47-9b5b-3c3899dceab4
 ms.openlocfilehash: f614318125f3c6bce4003fee5fb4a945c7c88129
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260385"
 ---
 # <a name="cautovectorptr-class"></a>CAutoVectorPtr 클래스
 
@@ -72,7 +72,7 @@ class CAutoVectorPtr
 
 ## <a name="remarks"></a>설명
 
-이 클래스를 만들고 범위를 벗어나는 경우 자동으로 리소스를 해제 하 여 메모리 누수를 방지 하는 데 도움이 됩니다 하는 스마트 포인터를 관리 하기 위한 메서드를 제공 합니다. `CAutoVectorPtr` 비슷합니다 `CAutoPtr`, 유일한 차이점은는 `CAutoVectorPtr` 사용 하 여 [벡터 new&#91; &#93; ](../../standard-library/new-operators.md#op_new_arr) 및 [벡터 delete&#91; &#93; ](../../standard-library/new-operators.md#op_delete_arr) 할당 및 메모리를 해제 합니다. c + + 대신 **새** 하 고 **삭제** 연산자입니다. 참조 [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) 하는 경우의 컬렉션 클래스 `CAutoVectorPtr` 필요 합니다.
+이 클래스를 만들고 범위를 벗어나는 경우 자동으로 리소스를 해제 하 여 메모리 누수를 방지 하는 데 도움이 됩니다 하는 스마트 포인터를 관리 하기 위한 메서드를 제공 합니다. `CAutoVectorPtr` 비슷합니다 `CAutoPtr`, 유일한 차이점은는 `CAutoVectorPtr` 사용 하 여 [벡터 new&#91; &#93; ](../../standard-library/new-operators.md#op_new_arr) 및 [벡터 delete&#91; &#93; ](../../standard-library/new-operators.md#op_delete_arr) 할당 및 메모리를 해제 합니다. 대신는 C++ **새** 하 고 **삭제** 연산자입니다. 참조 [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) 하는 경우의 컬렉션 클래스 `CAutoVectorPtr` 필요 합니다.
 
 참조 [CAutoPtr](../../atl/reference/cautoptr-class.md) 스마트 포인터 클래스를 사용 하는 예입니다.
 

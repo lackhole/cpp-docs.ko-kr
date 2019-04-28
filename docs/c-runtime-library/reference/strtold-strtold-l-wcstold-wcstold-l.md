@@ -28,11 +28,11 @@ f1_keywords:
 - wcstold
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
 ms.openlocfilehash: dcf1eca5b163c8553b43d747d53537ec424a793c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62269191"
 ---
 # <a name="strtold-strtoldl-wcstold-wcstoldl"></a>strtold, _strtold_l, wcstold, _wcstold_l
 
@@ -84,7 +84,7 @@ long double wcstold_l(
 
 각 함수는 입력된 문자열을 변환 *strSource* 에 **긴** **double**합니다. 합니다 **strtold** 함수는 문자열 읽기를 중단 *strSource* 숫자의 일부분으로 인식할 수 없는 첫 문자에서. 이 문자는 종료 null 문자일 수 있습니다. 와이드 문자 버전의 **strtold** 됩니다 **wcstold**; 해당 *strSource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 동작합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -97,7 +97,7 @@ long double wcstold_l(
 
 **strtold** 예상 *strSource* 다음 형식의 문자열을 가리키도록 합니다.
 
-[*공백을*] [*sign*] [*자릿수*] [. *자릿수*] [{**d** &#124; **D** &#124; **e** &#124; **E**} [*기호* ]*자릿수*]
+[*whitespace*] [*sign*] [*digits*] [.*digits*] [ {**d** &#124; **D** &#124; **e** &#124; **E**}[*sign*]*digits*]
 
 A *공백* 공백 및 탭 문자가 무시 되는 구성 될 수 있습니다 *기호* 는 plus (**+**) 또는 빼기 기호 (**-**); 및 *자릿수* 는 하나 이상의 10 진수입니다. 기수 문자 앞에 숫자가 없는 경우 기수 문자 뒤에는 숫자가 하나 이상 있어야 합니다. 10진수 뒤에 지수가 올 수 있습니다. 지수는 소개 문자(**d**, **D**, **e** 또는 **E**) 및 부호 있는 정수(선택 사항)로 구성됩니다. 지수 부분과 기수 문자가 모두 없으면 기수 문자는 문자열의 마지막 숫자를 따르는 것으로 간주합니다. 이 형식에 맞지 않는 첫 번째 문자가 발견되면 검색이 중지됩니다.
 

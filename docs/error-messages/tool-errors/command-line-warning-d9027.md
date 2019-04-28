@@ -7,15 +7,15 @@ helpviewer_keywords:
 - D9027
 ms.assetid: 2a29edc5-5649-48f2-9058-2057c747284c
 ms.openlocfilehash: f89e7416efe7a0069ee2dae8df921933bbe76bcf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62214130"
 ---
 # <a name="command-line-warning-d9027"></a>명령줄 경고 D9027
 
-소스 파일 '\<파일 이름 >' 무시
+source file '\<filename>' ignored
 
 CL.exe 입력된 소스 파일을 무시 합니다.
 

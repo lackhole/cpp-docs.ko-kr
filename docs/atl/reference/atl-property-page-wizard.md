@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ATL Property Page Wizard
 ms.assetid: 6113e325-facd-4f68-b491-144d75209922
 ms.openlocfilehash: 791901ab3181ad2c8ac862a970980250693d20f7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62248235"
 ---
 # <a name="atl-property-page-wizard"></a>ATL 속성 페이지 마법사
 
@@ -34,7 +34,7 @@ Visual Studio 2008부터,이 마법사에서 생성 된 등록 스크립트 등�
 
 ### <a name="c"></a>C++
 
-개체를 구현 하기 위해 생성 하는 c + + 클래스에 대 한 정보를 제공 합니다.
+에 대 한 정보를 제공 합니다 C++ 개체를 구현 하기 위해 생성 하는 클래스입니다.
 
 |||
 |-|-|

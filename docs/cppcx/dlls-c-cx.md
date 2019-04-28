@@ -3,15 +3,15 @@ title: DLL(C++/CX)
 ms.date: 02/06/2018
 ms.assetid: 5b8bcc57-64dd-4c54-9f24-26a25bd5dddd
 ms.openlocfilehash: 1a72ecc5eb46abfbc7b9a52a168510ce0873ee04
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183289"
 ---
 # <a name="dlls-ccx"></a>DLL(C++/CX)
 
-Visual Studio를 사용 하 여 표준 Win32 DLL 또는 유니버설 Windows 플랫폼 (UWP) 앱에서 사용할 수 있는 DLL Windows 런타임 구성 요소를 만들 수 있습니다. Visual Studio 또는 Visual Studio 2012 UWP 앱에서 제대로 로드 되지 않을 수 있습니다 및 Microsoft Store 앱 확인 테스트를 통과 하지 않을 수 있습니다 보다 이전 Visual c + + 컴파일러의 버전을 사용 하 여 만든 표준 DLL입니다.
+Visual Studio를 사용 하 여 표준 Win32 DLL 또는 유니버설 Windows 플랫폼 (UWP) 앱에서 사용할 수 있는 DLL Windows 런타임 구성 요소를 만들 수 있습니다. Visual Studio 또는 시각적 개체의 버전을 사용 하 여 만든 표준 DLL을 C++ 컴파일러는 이전 Visual Studio 2012 UWP 앱에서 제대로 로드 되지 않을 수 있습니다 및 Microsoft Store 앱 확인 테스트를 통과 하지 않을 수 있습니다.
 
 ## <a name="windows-runtime-component-dlls"></a>Windows 런타임 구성 요소 Dll
 
@@ -27,7 +27,7 @@ Visual Studio를 사용 하 여 표준 Win32 DLL 또는 유니버설 Windows 플
 
 ## <a name="standard-dlls"></a>표준 DLL
 
-사용 또는 공용 Windows 런타임 형식을 생성 하 고 UWP 앱에서 사용 하지 않는 c + + 코드용 표준 DLL을 만들 수 있습니다. 기존 DLL을 Windows 런타임 구성 요소 프로젝트에 코드를 변환 하지는이 버전의 Visual Studio에서 컴파일 마이그레이션 하려는 동적 연결 라이브러리 (DLL) 프로젝트 형식을 사용 합니다. 다음 단계를 사용할 때 DLL은 .appx 패키지의 앱 실행 파일과 함께 배포됩니다.
+에 대 한 표준 DLL을 만들 수 있습니다 C++ 코드를 사용 하거나 공용 Windows 런타임 형식을 생성 하 고 UWP 앱에서 사용 하지 않습니다. 기존 DLL을 Windows 런타임 구성 요소 프로젝트에 코드를 변환 하지는이 버전의 Visual Studio에서 컴파일 마이그레이션 하려는 동적 연결 라이브러리 (DLL) 프로젝트 형식을 사용 합니다. 다음 단계를 사용할 때 DLL은 .appx 패키지의 앱 실행 파일과 함께 배포됩니다.
 
 ### <a name="to-create-a-standard-dll-in-visual-studio"></a>Visual Studio에서 표준 DLL을 만들려면
 

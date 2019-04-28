@@ -14,11 +14,11 @@ helpviewer_keywords:
 - conventions [C++], argument names
 ms.assetid: de468979-eab8-4158-90c5-c198932f93b9
 ms.openlocfilehash: ca09d31d3d8d50ca94543c5e02262edd7b2deefc
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184402"
 ---
 # <a name="argument-passing-and-naming-conventions"></a>인수 전달 및 명명 규칙
 
@@ -35,7 +35,7 @@ x86 플랫폼에서 모든 인수는 전달될 때 32비트로 확장됩니다. 
 
 사용자 고유의 함수 프롤로그 및 에필로그 코드를 정의 하는 방법에 대 한 자세한 내용은 [Naked 함수 호출](../cpp/naked-function-calls.md)합니다.
 
-대상을 x64 플랫폼에서 참조 하는 코드의 호출 규칙 기본값에 대 한 자세한 [x64 호출 규칙](../build/x64-calling-convention.md)합니다. ARM 플랫폼을 대상으로 하는 코드의 호출 규칙 문제에 대 한 자세한 내용은 [일반적인 Visual c + + ARM 마이그레이션 문제](../build/common-visual-cpp-arm-migration-issues.md)합니다.
+대상을 x64 플랫폼에서 참조 하는 코드의 호출 규칙 기본값에 대 한 자세한 [x64 호출 규칙](../build/x64-calling-convention.md)합니다. ARM 플랫폼을 대상으로 하는 코드의 호출 규칙 문제에 대 한 자세한 내용은 [일반적인 Visual C++ ARM 마이그레이션 문제](../build/common-visual-cpp-arm-migration-issues.md)합니다.
 
 다음과 같은 호출 규칙이 Visual C/C++ 컴파일러에서 지원됩니다.
 

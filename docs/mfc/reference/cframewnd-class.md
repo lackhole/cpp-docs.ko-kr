@@ -107,11 +107,11 @@ helpviewer_keywords:
 - CFrameWnd [MFC], rectDefault
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
 ms.openlocfilehash: 7bdb681754a500ab86538f3397b4c07284b850d0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182063"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd 클래스
 
@@ -207,7 +207,7 @@ class CFrameWnd : public CWnd
 
 - 직접 생성 하지 문서 서식 파일을 사용 합니다.
 
-중 하나를 호출 하기 전에 `Create` 나 `LoadFrame`, c + +를 사용 하 여 힙에서 프레임 창 개체를 생성 해야 **새** 연산자입니다. 호출 하기 전에 `Create`를 사용 하 여 창 클래스를 등록할 수도 있습니다는 [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) 프레임에 대 한 아이콘 및 클래스 스타일을 설정 하려면 전역 함수입니다.
+중 하나를 호출 하기 전에 `Create` 또는 `LoadFrame`를 사용 하 여 힙 프레임 창 개체를 생성 해야 합니다 C++ **새** 연산자입니다. 호출 하기 전에 `Create`를 사용 하 여 창 클래스를 등록할 수도 있습니다는 [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) 프레임에 대 한 아이콘 및 클래스 스타일을 설정 하려면 전역 함수입니다.
 
 사용 된 `Create` 프레임의 생성 매개 변수를 즉시 인수를 전달 하는 멤버 함수입니다.
 
@@ -239,7 +239,7 @@ Frame-window 클래스에서 파생 된 `CFrameWnd` 제대로 작동 하려면 �
 
 - 프레임 창의 기본 응용 프로그램 창 이면 프레임 창 WinHelp를 실행 하기 위한 컨텍스트로 사용 됩니다. WINHELP 프레임 창을 닫으면 종료 됩니다. 이 응용 프로그램에 대 한 도움말에 대 한 시작 된 exe를 실행 합니다.
 
-C + +를 사용 하지 마세요 **삭제** 프레임 창 제거 하는 연산자입니다. 대신 `CWnd::DestroyWindow`를 사용하세요. 합니다 `CFrameWnd` 구현의 `PostNcDestroy` 창이 소멸 될 때 c + + 개체를 삭제 됩니다. 사용자의 기본 프레임 창에 닫을 때 `OnClose` 처리기를 호출 하는 `DestroyWindow`합니다.
+사용 하지 마십시오는 C++ **삭제** 프레임 창 제거 하는 연산자입니다. 대신 `CWnd::DestroyWindow`를 사용하세요. 합니다 `CFrameWnd` 구현의 `PostNcDestroy` 삭제 됩니다는 C++ 창을 소멸 될 때 개체입니다. 사용자의 기본 프레임 창에 닫을 때 `OnClose` 처리기를 호출 하는 `DestroyWindow`합니다.
 
 에 대 한 자세한 `CFrameWnd`를 참조 하세요 [프레임 Windows](../../mfc/frame-windows.md)합니다.
 

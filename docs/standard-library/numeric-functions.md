@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::iota [C++]
 - std::partial_sum [C++]
 ms.openlocfilehash: 6df37cf4f6c8afe09f25550d4fc0d9acb553ac52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50475103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236560"
 ---
 # <a name="ltnumericgt-functions"></a>&lt;numeric&gt; 함수
 
@@ -192,7 +192,7 @@ OutputIterator adjacent_difference(
 *last*<br/>
 입력 범위에서 해당 선행 작업과 차별화해야 하거나 지정된 다른 이진 작업에서 값 쌍을 처리해야 하는 마지막 요소를 주소 지정하는 입력 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 일련의 차이 또는 지정된 작업의 결과를 저장할 대상 범위의 첫 번째 요소를 주소 지정하는 출력 반복기입니다.
 
 *binary_op*<br/>
@@ -319,7 +319,7 @@ Type inner_product(
 
 첫 번째 구성원 함수는 요소별 곱의 합을 반환하고 해당 합을 지정된 초기값에 더합니다. 따라서 값 *a*i 및 *b*i의 범위에 대해 이 함수는 다음 결과를 반환합니다.
 
-`val` + ( *는*1 \* *b*1) + ( *는*2 \* *b*2) +... + ( *를* n\* *b*n)
+`val` + ( *a*1 \* *b*1 ) + ( *a*2 \* *b*2 ) + ... + ( *a*n \* *b*n )
 
 반복적으로 바꿔 *val* 사용 하 여 `val` + ( *는*있나요 \* *b*i).
 
@@ -514,7 +514,7 @@ OutputIterator partial_sum(
 *last*<br/>
 반복된 누적에 실제로 포함된 마지막 요소 하나 다음 위치의 지정된 이진 연산에 따라 부분적으로 합을 계산하거나 결합할 범위의 마지막 요소를 주소 지정하는 입력 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 일련의 부분적 합 또는 지정된 작업의 결과를 저장할 대상 범위의 첫 번째 요소를 주소 지정하는 출력 반복기입니다.
 
 *binary_op*<br/>

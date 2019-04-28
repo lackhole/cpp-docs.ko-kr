@@ -7,15 +7,15 @@ helpviewer_keywords:
 - C3867
 ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
 ms.openlocfilehash: 9308e238c86c7b8a957720228a823688fac289d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242881"
 ---
 # <a name="compiler-error-c3867"></a>컴파일러 오류 C3867
 
-'func': 함수 호출에 인수 목록이 없습니다. '&func'을(를) 사용하여 멤버에 대한 포인터를 만드세요.
+'func': 함수 호출 인수 목록이 없습니다. 사용 하 여 ' & func' 멤버에 대 한 포인터를 만들려면
 
 멤버 함수를 클래스 이름 및 address-of 연산자로 한정하지 않고 멤버 함수의 이름을 사용하려고 했습니다.
 

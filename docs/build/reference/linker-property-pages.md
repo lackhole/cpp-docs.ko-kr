@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Linker property pages
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
 ms.openlocfilehash: 1412531ae0ca9c0f5270df6df7b79ddc9be425ad
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216647"
 ---
 # <a name="linker-property-pages"></a>링커 속성 페이지
 
@@ -51,9 +51,9 @@ Visual Studio의 등록은 일반적으로 HKEY_CLASSES_ROOT(HKCR)에서 수행�
 
 대규모 프로젝트에서 종속 프로젝트가 .lib 파일을 생성하면 증분 연결은 사용할 수 없습니다. .lib 파일을 생성하는 많은 종속 프로젝트가 있는 경우 애플리케이션을 빌드하는 데 오랜 시간이 걸릴 수 있습니다. 이 속성을 **예**로 설정하면 프로젝트 시스템은 종속 프로젝트에서 생성한 .lib 파일에 .obj 파일을 연결하여 증분 연결을 사용할 수 있습니다.
 
-액세스 하는 방법에 대 한 자세한 합니다 **일반** 링커 속성 페이지를 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+액세스 하는 방법에 대 한 자세한 합니다 **일반** 링커 속성 페이지를 참조 하세요 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
 [옵션 대화 상자, 프로젝트 및 솔루션, VC++ 프로젝트 설정](/visualstudio/ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box)<br>
-[C + + 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)
+[C++ 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)

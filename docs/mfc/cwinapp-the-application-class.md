@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CWinApp class [MFC], WinMain
 ms.assetid: 935822bb-d463-481b-a5f6-9719d68ed1d5
 ms.openlocfilehash: d9f0d4f5ba6b6b070b23ce98ecda8c7accf44934
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62241564"
 ---
 # <a name="cwinapp-the-application-class"></a>CWinApp: Application 클래스
 
@@ -35,7 +35,7 @@ Windows 운영 체제에 대 한 다른 프로그램과 마찬가지로 framewor
 응용 프로그램을 초기화할 `WinMain` 응용 프로그램 개체의 호출 `InitApplication` 및 `InitInstance` 멤버 함수입니다. 응용 프로그램의 메시지 루프를 실행 하려면 `WinMain` 호출을 **실행** 멤버 함수입니다. 종료 `WinMain` 응용 프로그램 개체의 호출 `ExitInstance` 멤버 함수입니다.
 
 > [!NOTE]
->  에 표시 되는 이름과 **굵게** 이 설명서에서는 Microsoft Foundation Class 라이브러리 및 Visual c + +에서 제공 된 요소를 나타냅니다. 에 표시 되는 이름과 `monospaced` 형식을 만들거나 재정의 하는 요소를 나타냅니다.
+>  에 표시 되는 이름과 **굵게** 이 설명서에서는 Microsoft Foundation Class 라이브러리 및 시각적 개체에서 제공 하는 요소를 나타내는 C++합니다. 에 표시 되는 이름과 `monospaced` 형식을 만들거나 재정의 하는 요소를 나타냅니다.
 
 ## <a name="see-also"></a>참고자료
 

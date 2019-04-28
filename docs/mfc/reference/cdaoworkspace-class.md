@@ -63,11 +63,11 @@ helpviewer_keywords:
 - CDaoWorkspace [MFC], m_pDAOWorkspace
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
 ms.openlocfilehash: 6aa404c5eb543db198043dba68d55a4b925739c8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62253727"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace 클래스
 
@@ -239,7 +239,7 @@ CDaoWorkspace();
 
 ### <a name="remarks"></a>설명
 
-C + + 개체를 생성 한 후 두 가지 옵션이 있습니다.
+생성 한 후는 C++ 개체를 두 가지 옵션이 있습니다.
 
 - 개체의 호출 [엽니다](#open) 멤버 함수를 기본 작업 영역을 열려면 또는 작업 영역 컬렉션에서 기존 개체를 엽니다.
 
@@ -310,7 +310,7 @@ static void PASCAL CompactDatabase(
 ### <a name="parameters"></a>매개 변수
 
 *lpszSrcName*<br/>
-기존 이름을 데이터베이스를 닫힙니다. 수는 전체 경로 및 파일 이름을 같은 "c:\\\MYDB 합니다. MDB "로 설정 합니다. 파일 이름 확장명이 지정 해야 합니다. 네트워크 경로 네트워크에서 일관 된 명명 규칙 (UNC)를 지 원하는 경우 같은 지정할 수도 있습니다 "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB 합니다. MDB "로 설정 합니다. (때문에 경로 문자열에 필요한 이중 백슬래시 "\\" c + + 이스케이프 문자입니다.)
+기존 이름을 데이터베이스를 닫힙니다. 수는 전체 경로 및 파일 이름을 같은 "c:\\\MYDB 합니다. MDB "로 설정 합니다. 파일 이름 확장명이 지정 해야 합니다. 네트워크 경로 네트워크에서 일관 된 명명 규칙 (UNC)를 지 원하는 경우 같은 지정할 수도 있습니다 "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB 합니다. MDB "로 설정 합니다. (때문에 경로 문자열에 필요한 이중 백슬래시 "\\" 됩니다는 C++ 문자를 이스케이프 합니다.)
 
 *lpszDestName*<br/>
 만들고 있는 압축된 된 데이터베이스의 전체 경로입니다. 사용 하 여 네트워크 경로를 지정할 수도 있습니다 *lpszSrcName*합니다. 사용할 수 없습니다는 *lpszDestName* 와 동일한 데이터베이스 파일을 지정 하는 인수 *lpszSrcName*합니다.
@@ -718,7 +718,7 @@ virtual void Open(LPCTSTR lpszName = NULL);
 
 `Open` 열린 상태를 작업 영역 개체를 넣고 이미 응용 프로그램에 대 한 초기화 되지 않은 경우에 데이터베이스 엔진을 초기화 합니다.
 
-하지만 많은 `CDaoWorkspace` 작업 영역이 열린 후에 함수를 호출할 수 멤버를 호출 하기 전에 하지만 c + + 개체의 생성 후 데이터베이스 엔진에서 작동 되는 다음 멤버 함수를 사용할 수 `Open`:
+하지만 많은 `CDaoWorkspace` 작업 영역이 열린 후에 함수를 호출할 수는 멤버를 생성 한 후 데이터베이스 엔진에서 작동 되는 다음 멤버 함수를 사용할 수는 C++ 개체 를호출하기전에`Open`:
 
 ||||
 |-|-|-|
@@ -737,7 +737,7 @@ static void PASCAL RepairDatabase(LPCTSTR lpszName);
 ### <a name="parameters"></a>매개 변수
 
 *lpszName*<br/>
-경로 파일 이름을 기존 Microsoft Jet 엔진에 대 한 데이터베이스 파일입니다. 경로 생략 하면 현재 디렉터리만 검색 됩니다. 네트워크 경로 시스템에서 일관 된 명명 규칙 (UNC)를 지 원하는 경우 같은 지정할 수도 있습니다. "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB 합니다. MDB "로 설정 합니다. (때문에 경로 문자열에 필요한 이중 백슬래시 "\\" c + + 이스케이프 문자입니다.)
+경로 파일 이름을 기존 Microsoft Jet 엔진에 대 한 데이터베이스 파일입니다. 경로 생략 하면 현재 디렉터리만 검색 됩니다. 네트워크 경로 시스템에서 일관 된 명명 규칙 (UNC)를 지 원하는 경우 같은 지정할 수도 있습니다. "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB 합니다. MDB "로 설정 합니다. (때문에 경로 문자열에 필요한 이중 백슬래시 "\\" 됩니다는 C++ 문자를 이스케이프 합니다.)
 
 ### <a name="remarks"></a>설명
 

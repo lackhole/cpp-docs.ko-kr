@@ -12,11 +12,11 @@ helpviewer_keywords:
 - COleDateTimeSpan class, database programming
 ms.assetid: 4a57a1bb-fad5-4b70-b32c-42ad75c710c8
 ms.openlocfilehash: 5e15770558e011fd41b29135f7efbefc2ad8c434
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236071"
 ---
 # <a name="date-and-time-database-support"></a>날짜 및 시간: 데이터베이스 지원
 

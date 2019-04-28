@@ -3,15 +3,15 @@ title: 캐스팅(C++/CX)
 ms.date: 06/19/2018
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
 ms.openlocfilehash: 65d489d14c91b462e5a2bbe8bd60fce2657904a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258215"
 ---
 # <a name="casting-ccx"></a>캐스팅(C++/CX)
 
-Windows 런타임 형식에 적용 된 네 가지 캐스트 연산자: [static_cast 연산자](../cpp/static-cast-operator.md)를 [dynamic_cast Operator](../cpp/dynamic-cast-operator.md)를 **safe_cast Operator**, 및 [ reinterpret_cast 연산자](../cpp/reinterpret-cast-operator.md)합니다. **safe_cast** 하 고 **static_cast** 변환을 수행할 수 없습니다; 예외가 throw [static_cast 연산자](../cpp/static-cast-operator.md) 도 컴파일 타임 형식 검사를 수행 합니다. **dynamic_cast** 반환 **nullptr** 형식을 변환 하지 못한 경우. 하지만 **reinterpret_cast** null이 아닌 값을 반환 유효하지 없을 수 있습니다. 따라서 사용 하지 않는 권장 **reinterpret_cast** 캐스팅이 성공 한다는 사실을 알 수 없는 경우. 또한 것이 좋습니다에 C +에서 C 스타일 캐스트를 사용 하지 + CX 동일 하기 때문에 코드 **reinterpret_cast**합니다.
+Windows 런타임 형식에 적용 된 네 가지 캐스트 연산자: [static_cast 연산자](../cpp/static-cast-operator.md)를 [dynamic_cast Operator](../cpp/dynamic-cast-operator.md)를 **safe_cast Operator**, 및 [ reinterpret_cast 연산자](../cpp/reinterpret-cast-operator.md)합니다. **safe_cast** 하 고 **static_cast** 변환을 수행할 수 없습니다; 예외가 throw [static_cast 연산자](../cpp/static-cast-operator.md) 도 컴파일 타임 형식 검사를 수행 합니다. **dynamic_cast** 반환 **nullptr** 형식을 변환 하지 못한 경우. 하지만 **reinterpret_cast** null이 아닌 값을 반환 유효하지 없을 수 있습니다. 따라서 사용 하지 않는 권장 **reinterpret_cast** 캐스팅이 성공 한다는 사실을 알 수 없는 경우. 또한 좋습니다 C 스타일 캐스트는 사용 하지 않는 프로그램 C++/CX 동일 하기 때문에 코드 **reinterpret_cast**합니다.
 
 또한 컴파일러와 런타임은 암시적 캐스트를 수행합니다. 예를 들어, 매개 변수 형식이 `Object^`인 메서드에 값 형식 또는 기본 제공 형식이 인수로 전달될 때 boxing 연산에서 암시적 캐스트를 수행합니다. 이론적으로 런타임에는 암시적 캐스트로 인해 예외가 발생하지 않습니다. 컴파일러가 암시적 변환을 수행할 수 없는 경우 컴파일 시 오류가 발생합니다.
 
@@ -92,7 +92,7 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
 // ...
 ```
 
-사용 하는 경우 **reinterpret_cast** 하면 개체가 두 번 출시 될 oneWindows 런타임 인터페이스 간에 변환할 합니다. 따라서만이 캐스트를 사용 하면이 비-Visual c + + 구성 요소 확장 인터페이스를 변환 하는 경우.
+사용 하는 경우 **reinterpret_cast** 하면 개체가 두 번 출시 될 oneWindows 런타임 인터페이스 간에 변환할 합니다. 따라서만 사용 하 여이 캐스트는 비 가시적으로 변환 하는 경우 C++ 구성 요소 확장 인터페이스입니다.
 
 ## <a name="abi-types"></a>ABI 형식
 
@@ -122,5 +122,5 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
 ## <a name="see-also"></a>참고자료
 
 - [형식 시스템](../cppcx/type-system-c-cx.md)
-- [Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)
-- [네임 스페이스 참조](../cppcx/namespaces-reference-c-cx.md)
+- [Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)
+- [네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

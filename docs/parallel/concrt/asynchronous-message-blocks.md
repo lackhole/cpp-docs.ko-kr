@@ -7,11 +7,11 @@ helpviewer_keywords:
 - greedy join [Concurrency Runtime]
 ms.assetid: 79c456c0-1692-480c-bb67-98f2434c1252
 ms.openlocfilehash: de6a433ab733207d5c56b46e693837056a0cd8b1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62237079"
 ---
 # <a name="asynchronous-message-blocks"></a>비동기 메시지 블록
 
@@ -117,7 +117,7 @@ ms.locfileid: "57274166"
 |`choice`|Both|Ordered|10|1|
 |`join`|Both|Ordered|바인딩되지 않은|1|
 |`multitype_join`|Both|Ordered|10|1|
-|`timer`|소스|해당 없음|해당 없음|1|
+|`timer`|Source|해당 없음|해당 없음|1|
 
 다음 섹션에서는 메시지 블록 형식을 좀 더 자세히 설명합니다.
 
@@ -125,8 +125,7 @@ ms.locfileid: "57274166"
 
 ##  <a name="unbounded_buffer"></a> unbounded_buffer 클래스
 
-합니다 [concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) 클래스는 일반적인 용도의 비동기 메시징 구조를 나타냅니다. 이 클래스는 여러 소스가 기록하거나 여러 대상이 읽을 수 있는 메시지의 FIFO(선입 선출) 큐를 저장합니다. 대상에서 메시지를 수신 하는 경우는 `unbounded_buffer` 개체를 해당 메시지가 메시지 큐에서 제거 됩니다. 따라서 있지만 `unbounded_buffer` 개체에는 여러 대상이 있을 수 있습니다, 하나의 대상만 각 메시지를 받게 됩니다. 
-  `unbounded_buffer` 클래스는 여러 메시지를 다른 구성 요소에 전달하려고 할 때 유용하고 해당 구성 요소는 각 메시지를 수신해야 합니다.
+합니다 [concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) 클래스는 일반적인 용도의 비동기 메시징 구조를 나타냅니다. 이 클래스는 여러 소스가 기록하거나 여러 대상이 읽을 수 있는 메시지의 FIFO(선입 선출) 큐를 저장합니다. 대상에서 메시지를 수신 하는 경우는 `unbounded_buffer` 개체를 해당 메시지가 메시지 큐에서 제거 됩니다. 따라서 있지만 `unbounded_buffer` 개체에는 여러 대상이 있을 수 있습니다, 하나의 대상만 각 메시지를 받게 됩니다. `unbounded_buffer` 클래스는 여러 메시지를 다른 구성 요소에 전달하려고 할 때 유용하고 해당 구성 요소는 각 메시지를 수신해야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -168,8 +167,7 @@ ms.locfileid: "57274166"
 
 ##  <a name="single_assignment"></a> single_assignment 클래스
 
-[concurrency:: single_assignment](../../parallel/concrt/reference/single-assignment-class.md) 클래스와 유사 합니다 `overwrite_buffer` 점을 제외 하면 클래스를 `single_assignment` 개체를 한 번만 쓸 수 있습니다. 
-  `overwrite_buffer` 클래스처럼 대상이 `single_assignment` 개체에서 메시지를 수신할 때 해당 메시지는 해당 개체에서 제거되지 않습니다. 따라서 여러 대상이 하나의 메시지 복사본을 수신합니다. `single_assignment` 클래스는 여러 구성 요소에 하나의 메시지를 브로드캐스트 하려고 할 때 유용 합니다.
+[concurrency:: single_assignment](../../parallel/concrt/reference/single-assignment-class.md) 클래스와 유사 합니다 `overwrite_buffer` 점을 제외 하면 클래스를 `single_assignment` 개체를 한 번만 쓸 수 있습니다. `overwrite_buffer` 클래스처럼 대상이 `single_assignment` 개체에서 메시지를 수신할 때 해당 메시지는 해당 개체에서 제거되지 않습니다. 따라서 여러 대상이 하나의 메시지 복사본을 수신합니다. `single_assignment` 클래스는 여러 구성 요소에 하나의 메시지를 브로드캐스트 하려고 할 때 유용 합니다.
 
 ### <a name="example"></a>예제
 

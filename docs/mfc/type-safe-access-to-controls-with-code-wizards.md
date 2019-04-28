@@ -8,11 +8,11 @@ helpviewer_keywords:
 - dialog box controls [MFC], accessing
 ms.assetid: b8874393-ee48-4124-8d78-e3648a7e29b9
 ms.openlocfilehash: bf3ecf3016fcc15bd4ada7a15208acd9a04ca0a8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180865"
 ---
 # <a name="type-safe-access-to-controls-with-code-wizards"></a>코드 마법사를 사용하여 컨트롤에 대한 형식이 안전한 액세스 수행
 

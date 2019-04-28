@@ -35,11 +35,11 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], SetAt
 ms.assetid: 23cbbaec-9d64-48f2-92ae-5e24fa64b926
 ms.openlocfilehash: a44b9524324065581583bad13018b2c4479fc9f3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62237750"
 ---
 # <a name="cmapptrtoptr-class"></a>CMapPtrToPtr 클래스
 
@@ -97,8 +97,7 @@ class CMapPtrToPtr : public CObject
 
 포인터에 대 한 포인터를 맵 직렬화 할 수 없습니다.
 
-
-  `CMapPtrToPtr` 개체를 삭제하거나 해당 요소를 제거할 경우 참조하는 엔터티가 아니라 포인터만 제거됩니다.
+`CMapPtrToPtr` 개체를 삭제하거나 해당 요소를 제거할 경우 참조하는 엔터티가 아니라 포인터만 제거됩니다.
 
 에 대 한 자세한 `CMapPtrToPtr`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md)합니다.
 

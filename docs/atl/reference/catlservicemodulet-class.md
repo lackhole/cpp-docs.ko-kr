@@ -36,11 +36,11 @@ helpviewer_keywords:
 - CAtlServiceModuleT class
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
 ms.openlocfilehash: 2d4d5d4a5c4d8a52f792cc04a968974967c1e13a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260203"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT 클래스
 
@@ -186,7 +186,7 @@ HRESULT InitializeSecurity() throw();
 
 ### <a name="remarks"></a>설명
 
-Visual Studio.NET 2003에서이 메서드가 기본 클래스에서 구현 되지 않습니다. Visual Studio 프로젝트 마법사에서 생성된 된 코드에서이 메서드를 포함 하지만 ATL 7.1을 사용 하 여 Visual c + +의 이전 버전에서 생성 하는 프로젝트를 컴파일할 경우 컴파일 오류가 발생 합니다. 파생 되는 모든 클래스 `CAtlServiceModuleT` 파생된 클래스에서이 메서드를 구현 해야 합니다.
+Visual Studio.NET 2003에서이 메서드가 기본 클래스에서 구현 되지 않습니다. Visual Studio 프로젝트 마법사에서 생성된 된 코드에서이 메서드를 포함 하지만 경우 시각적 개체의 이전 버전에서 만든 프로젝트를 컴파일 오류가 발생 합니다 C++ ATL 7.1을 사용 하 여 컴파일됩니다. 파생 되는 모든 클래스 `CAtlServiceModuleT` 파생된 클래스에서이 메서드를 구현 해야 합니다.
 
 호출에서 PKT 수준 인증, RPC_C_IMP_LEVEL_IDENTIFY의 가장 수준 및 적절 한 null이 아닌 보안 설명자를 사용 하 여 `CoInitializeSecurity`입니다.
 

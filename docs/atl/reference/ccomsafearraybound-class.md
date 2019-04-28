@@ -13,11 +13,11 @@ helpviewer_keywords:
 - CComSafeArrayBound class
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
 ms.openlocfilehash: a79079c95536746cf5a4fa4b35caf39a55ca0f42
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246142"
 ---
 # <a name="ccomsafearraybound-class"></a>CComSafeArrayBound 클래스
 
@@ -76,7 +76,7 @@ CComSafeArrayBound(ULONG ulCount = 0, LONG lLowerBound = 0) throw();
 
 ### <a name="remarks"></a>설명
 
-배열 Visual c + + 프로그램에서 액세스할 경우 하한값 0으로 정의 하는 것이 좋습니다. Visual Basic과 같은 다른 언어와 함께 사용 될 경우 다른 하 한 값을 사용 하는 것이 좋습니다 수도 있습니다.
+배열에서 시각적 개체에 액세스할 수 있으면 C++ 프로그램인 것이 좋습니다 하한값은 0으로 정의 합니다. Visual Basic과 같은 다른 언어와 함께 사용 될 경우 다른 하 한 값을 사용 하는 것이 좋습니다 수도 있습니다.
 
 ##  <a name="getcount"></a>  CComSafeArrayBound::GetCount
 
@@ -183,7 +183,7 @@ LONG SetLowerBound(LONG lLowerBound) throw();
 
 ### <a name="remarks"></a>설명
 
-배열 Visual c + + 프로그램에서 액세스할 경우 하한값 0으로 정의 하는 것이 좋습니다. Visual Basic과 같은 다른 언어와 함께 사용 될 경우 다른 하 한 값을 사용 하는 것이 좋습니다 수도 있습니다.
+배열에서 시각적 개체에 액세스할 수 있으면 C++ 프로그램인 것이 좋습니다 하한값은 0으로 정의 합니다. Visual Basic과 같은 다른 언어와 함께 사용 될 경우 다른 하 한 값을 사용 하는 것이 좋습니다 수도 있습니다.
 
 상한 값은 요소 및 하한값 값의 수에 따라 달라 집니다. 예를 들어, 하 한은 0 이며 요소 수가 10에 상한 값은 9로 자동으로 설정 됩니다.
 

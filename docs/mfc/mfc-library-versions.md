@@ -10,11 +10,11 @@ helpviewer_keywords:
 - MFC, library versions
 - libraries [MFC], versions
 ms.openlocfilehash: c0dc724566063066175ea54e2b7734892e3c6e05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62238507"
 ---
 # <a name="mfc-library-versions"></a>MFC 라이브러리 버전
 
@@ -85,7 +85,7 @@ IDE에서 유니코드 문자열 및 문자 지원 단일 바이트, 멀티 바�
 
 MFC에 대 한 정적 라이브러리에는 다음 명명 규칙을 사용합니다. 라이브러리 이름에는 폼
 
-> <em>u</em>AFX<em>cd</em>합니다. LIB
+> <em>u</em>AFX<em>cd</em>.LIB
 
 여기서 기울임꼴 소문자로 표시 문자는 해당 의미는 다음 표와 지정자에 대 한 자리 표시자:
 
@@ -119,7 +119,7 @@ MFC dll *버전* 이진 호환성을 나타내는 숫자입니다. 다른 라이
 |MFC*버전*합니다. DLL|MFC DLL, ANSI 또는 MBCS 릴리스 버전|
 |MFC*버전*U.DLL|MFC DLL의 경우 유니코드 버전|
 |MFC*version*D.DLL|MFC DLL, ANSI 또는 MBCS 디버그 버전|
-|MFC*버전*UD 합니다. DLL|MFC DLL의 경우 유니코드 디버그 버전|
+|MFC*version*UD.DLL|MFC DLL의 경우 유니코드 디버그 버전|
 |MFCM*version*.DLL|Windows Forms 컨트롤을 사용 하 여 MFC DLL ANSI 또는 MBCS 릴리스 버전|
 |MFCM*version*U.DLL|Windows Forms 컨트롤, 유니코드 버전을 사용 하 여 MFC DLL|
 |MFCM*version*D.DLL|Windows Forms 컨트롤을 사용 하 여 MFC DLL ANSI 또는 MBCS 디버그 버전|
@@ -129,7 +129,7 @@ MFC dll *버전* 이진 호환성을 나타내는 숫자입니다. 다른 라이
 
 동적으로 연결 하는 경우 MFC의 공유 DLL 버전에는 MFC 확장 DLL 또는 응용 프로그램에서 인지, 일치 하는 MFC 포함 해야 합니다*버전*합니다. DLL 또는 MFC*버전*U.DLL 제품을 배포 하는 경우.
 
-응용 프로그램을 사용 하 여 배포할 수 있는 Visual c + + Dll의 목록을 참조 하세요 [Microsoft Visual Studio 2017 SDK (포함 유틸리티 및 BuildServer 파일) 및 Microsoft Visual Studio 2017 용 배포 가능 코드](http://go.microsoft.com/fwlink/p/?LinkId=823098)합니다.
+시각적 개체의 목록은 C++ 응용 프로그램과 함께 배포할 수 있습니다, 참조 하는 Dll [Microsoft Visual Studio 2017 SDK (포함 유틸리티 및 BuildServer 파일) 및 Microsoft Visual Studio 2017 용 배포 가능 코드](http://go.microsoft.com/fwlink/p/?LinkId=823098)합니다.
 
 MFC의 MBCS 및 유니코드 지원에 대 한 자세한 내용은 참조 하세요. [유니코드 및 멀티 바이트 문자 집합 (MBCS) 지원](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)합니다.
 

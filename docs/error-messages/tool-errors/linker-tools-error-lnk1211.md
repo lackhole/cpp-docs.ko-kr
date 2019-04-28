@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1211
 ms.assetid: 607400eb-4180-4892-817f-eedfa628af61
 ms.openlocfilehash: 7c918cacb87460c2aad30285b750d9b170425534
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62242671"
 ---
 # <a name="linker-tools-error-lnk1211"></a>링커 도구 오류 LNK1211
 
@@ -19,7 +19,7 @@ ms.locfileid: "50456149"
 
 합니다 *filename* 사용 하 여 컴파일된 개체 파일 [/Yc](../../build/reference/yc-create-precompiled-header-file.md), LINK 명령에 지정 되지 않았거나 덮어 쓰여졌습니다.
 
-미리 컴파일된 헤더를 사용 하는 디버그 라이브러리를 만들려는 경우 및 지정 하는 경우 **/Yc** 하 고 [/z7](../../build/reference/z7-zi-zi-debug-information-format.md), Visual c + + 디버그 정보를 포함 하는 미리 컴파일된 개체 파일을 생성 합니다. 만 저장 하는 경우 미리 컴파일된 개체 파일을 라이브러리에 오류가 발생 하 고 라이브러리를 사용 하 여 실행 가능 이미지를 빌드 참조 되는 개체 파일 참조가 없는 전이 미리 컴파일된 개체 파일을 정의 하는 함수 중 하나에.
+미리 컴파일된 헤더를 사용 하는 디버그 라이브러리를 만들려는 경우 및 지정 하는 경우 **/Yc** 하 고 [/z7](../../build/reference/z7-zi-zi-debug-information-format.md)시각적 C++ 디버그 정보를 포함 하는 미리 컴파일된 개체 파일을 생성 합니다. 만 저장 하는 경우 미리 컴파일된 개체 파일을 라이브러리에 오류가 발생 하 고 라이브러리를 사용 하 여 실행 가능 이미지를 빌드 참조 되는 개체 파일 참조가 없는 전이 미리 컴파일된 개체 파일을 정의 하는 함수 중 하나에.
 
 이 문제를 해결 하는 방법은 두 가지가 있습니다.
 

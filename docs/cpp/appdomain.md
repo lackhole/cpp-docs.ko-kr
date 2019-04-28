@@ -8,15 +8,15 @@ helpviewer_keywords:
 - __declspec keyword [C++], appdomain
 ms.assetid: 29d843cb-cb6b-4d1b-a48d-d928a877234d
 ms.openlocfilehash: 3f83841565eb6a097f306129fe8f6d121f837c27
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184497"
 ---
 # <a name="appdomain"></a>appdomain
 
-관리되는 응용 프로그램의 각 응용 프로그램 도메인에 특정 전역 변수 또는 정적 멤버 변수의 자체 복사본이 포함되어야 하도록 지정합니다. 참조 [응용 프로그램 도메인 및 Visual c + +](../dotnet/application-domains-and-visual-cpp.md) 자세한 내용은 합니다.
+관리되는 응용 프로그램의 각 응용 프로그램 도메인에 특정 전역 변수 또는 정적 멤버 변수의 자체 복사본이 포함되어야 하도록 지정합니다. 참조 [응용 프로그램 도메인 및 시각적 개체 C++ ](../dotnet/application-domains-and-visual-cpp.md) 에 대 한 자세한 내용은 합니다.
 
 모든 응용 프로그램 도메인에는 appdomain별 변수의 자체 복사본이 있습니다. 어셈블리를 응용 프로그램 도메인으로 로드하면 appdomain 변수의 생성자가 실행되고 응용 프로그램 도메인을 언로드하면 소멸자가 실행됩니다.
 
@@ -134,7 +134,7 @@ __declspec(appdomain) CGlobal::~CGlobal destructor
 __declspec(process) CGlobal::~CGlobal destructor
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [__declspec](../cpp/declspec.md)<br/>
 [키워드](../cpp/keywords-cpp.md)

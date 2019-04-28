@@ -5,11 +5,11 @@ helpviewer_keywords:
 - file types [C++], ATL source and headers
 ms.assetid: cb65372f-4880-4007-b582-a52eaa568fd1
 ms.openlocfilehash: e315586de57ca65c60c435c436734bcdededed54
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273029"
 ---
 # <a name="atl-program-or-control-source-and-header-files"></a>ATL 프로그램 또는 컨트롤 소스 및 헤더 파일
 

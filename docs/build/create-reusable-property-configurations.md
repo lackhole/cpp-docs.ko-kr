@@ -1,14 +1,14 @@
 ---
-title: 공유 하거나 Visual Studio 프로젝트 설정-c + +를 다시 사용
+title: 공유 하거나 Visual Studio 프로젝트 설정-다시 사용C++
 ms.date: 03/27/2019
 helpviewer_keywords:
 - project properties [C++], reusable
 ms.openlocfilehash: b49c125e0341a2de68bbcd992dd8f9afaa99233d
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196891"
 ---
 # <a name="share-or-reuse-visual-studio-project-settings"></a>공유 하거나 Visual Studio 프로젝트 설정을 다시 사용
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - __declspec keyword [C++], align
 ms.assetid: 9cb63f58-658b-4425-ac47-af8eabfc5878
 ms.openlocfilehash: 1bfe6e7a4646be8cea622078b4d85f20f458e1c5
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258151"
 ---
 # <a name="align-c"></a>맞춤 (C++)
 
@@ -36,7 +36,7 @@ Visual Studio 2015 이상 버전에서는 사용할 C + + 11 표준 `alignas` �
 
 사용할 수 있습니다 `__declspec(align(#))` 정의 하는 경우는 **구조체**를 **union**, 또는 **클래스**, 변수를 선언 하는 경우 또는 합니다.
 
-컴파일러는 복사 또는 데이터 변형 작업 중에 데이터의 맞춤 특성 보존을 보장하거나 시도하지 않습니다. 예를 들어 [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) 사용 하 여 선언 된 구조체를 복사할 수 `__declspec(align(#))` 모든 위치에 있습니다. 일반 할당자-예를 들어 [malloc](../c-runtime-library/reference/malloc.md), c + + [new 연산자](new-operator-cpp.md), 및 Win32 할당자-일반적으로 충분히에 맞추지 않은 메모리 반환 `__declspec(align(#))` 구조체 또는 배열 구조입니다. 복사 또는 데이터 변환 작업의 대상을 올바르게 정렬 될을 보장 하기 위해 사용 하 여 [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md), 하거나 고유한 할당자를 작성 합니다.
+컴파일러는 복사 또는 데이터 변형 작업 중에 데이터의 맞춤 특성 보존을 보장하거나 시도하지 않습니다. 예를 들어 [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) 사용 하 여 선언 된 구조체를 복사할 수 `__declspec(align(#))` 모든 위치에 있습니다. 일반 할당자-예를 들어 [malloc](../c-runtime-library/reference/malloc.md), C++ [new 연산자](new-operator-cpp.md), 및 Win32 할당자-일반적으로 충분히에 맞추지 않은 메모리 반환 `__declspec(align(#))` 구조 또는 구조체의 배열입니다. 복사 또는 데이터 변환 작업의 대상을 올바르게 정렬 될을 보장 하기 위해 사용 하 여 [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md), 하거나 고유한 할당자를 작성 합니다.
 
 함수 매개 변수의 맞춤을 지정할 수 없습니다. 맞춤 특성을 포함하는 데이터가 스택의 값에 의해 전달되면 해당 맞춤은 호출 규칙을 통해 제어됩니다. 호출된 함수에서 데이터 맞춤이 중요한 경우에는 사용 전에 매개 변수를 올바르게 맞춰진 메모리로 복사합니다.
 
@@ -229,7 +229,7 @@ struct S {
 |a|0|0|0|0|
 |b|1|2|2|2|
 |c|3|4|4|8|
-|d|32|32|32|32|
+|일|32|32|32|32|
 |e|40|40|40|40|
 |f|41|42|44|48|
 |sizeof(S)|64|64|64|64|

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ATL OLE DB providers
 ms.assetid: 26fba1e3-880f-4bc6-90e5-2096a48a3a6c
 ms.openlocfilehash: 01a5ed4ac09c466cefe195cea83f73ba270c21bb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261002"
 ---
 # <a name="adding-an-atl-ole-db-provider"></a>ATL OLE DB 공급자를 추가합니다.
 
@@ -21,7 +21,7 @@ ms.locfileid: "57275820"
 
 1. **클래스 뷰**, 프로젝트를 마우스 오른쪽 단추로 클릭 합니다. 바로 가기 메뉴에서 클릭 **추가** 을 클릭 한 다음 **클래스 추가**합니다.
 
-1. 에 **Visual c + +** 폴더를 두 번 클릭 합니다 **ATL OLE DB Provider** 아이콘 또는 선택 하 고 클릭 **열기**.
+1. 에 **Visual C++**  폴더를 두 번 클릭 합니다 **ATL OLE DB Provider** 아이콘 또는 선택 하 고 클릭 **열기**.
 
    ATL OLE DB 공급자 마법사가 열립니다.
 
