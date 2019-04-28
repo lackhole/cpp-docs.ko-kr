@@ -6,15 +6,15 @@ helpviewer_keywords:
 - C++ projects, project file format
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
 ms.openlocfilehash: cfe40d6520187212ab77607273c555f12012fd02
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319826"
 ---
 # <a name="project-files"></a>프로젝트 파일
 
-Visual C++ 프로젝트 파일은 .vcxproj 파일 이름 확장명을 가진 XML 기반 파일이며 Visual C++ 프로젝트를 빌드하는 데 필요한 정보를 포함합니다. 프로젝트 파일은 확장명이 *.props* 또는 *.targets*인 다양한 프로젝트 파일을 가져옵니다. 이러한 파일에는 추가 빌드 정보가 포함되어 있으며 다른 *.props* 또는 *.targets* 파일을 참조할 수도 있습니다. 파일 경로(예를 들면 `$(VCTargetsPath)`)의 매크로는 Visual Studio 설치에 따라 다릅니다. 이러한 매크로 대 한 자세한 내용은 및 *.props* 하 고 *.targets* 파일을 참조 하십시오 [VC + + Directories Property Page](vcpp-directories-property-page.md), [설정 c + + 컴파일러 및 빌드 Visual Studio에서 속성](../working-with-project-properties.md) 하 고 [에 대 한 일반 매크로 빌드 명령 및 속성](common-macros-for-build-commands-and-properties.md)합니다.
+Visual C++ 프로젝트 파일은 .vcxproj 파일 이름 확장명을 가진 XML 기반 파일이며 Visual C++ 프로젝트를 빌드하는 데 필요한 정보를 포함합니다. 프로젝트 파일은 확장명이 *.props* 또는 *.targets*인 다양한 프로젝트 파일을 가져옵니다. 이러한 파일에는 추가 빌드 정보가 포함되어 있으며 다른 *.props* 또는 *.targets* 파일을 참조할 수도 있습니다. 파일 경로(예를 들면 `$(VCTargetsPath)`)의 매크로는 Visual Studio 설치에 따라 다릅니다. 이러한 매크로 대 한 자세한 내용은 및 *.props* 하 고 *.targets* 파일을 참조 하십시오 [VC + + Directories Property Page](vcpp-directories-property-page.md)를 [설정 C++ 컴파일러 및 빌드 Visual Studio에서 속성](../working-with-project-properties.md) 하 고 [에 대 한 일반 매크로 빌드 명령 및 속성](common-macros-for-build-commands-and-properties.md)합니다.
 
 ## <a name="example"></a>예제
 
@@ -120,5 +120,5 @@ Visual C++ 프로젝트 파일은 .vcxproj 파일 이름 확장명을 가진 XML
 
 ## <a name="see-also"></a>참고자료
 
-[C + +-visual Studio 프로젝트](../creating-and-managing-visual-cpp-projects.md)<br>
-[Visual Studio에서 속성을 빌드하고 c + + 컴파일러를 설정 합니다.](../working-with-project-properties.md)
+[C++-Visual Studio 프로젝트](../creating-and-managing-visual-cpp-projects.md)<br>
+[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)

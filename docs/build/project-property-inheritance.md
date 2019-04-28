@@ -4,11 +4,11 @@ ms.date: 12/10/2018
 helpviewer_keywords:
 - Visual C++ projects, property inheritance
 ms.openlocfilehash: edd6d3bf82f7a13cf6687abeba3758dcceca5e84
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295453"
 ---
 # <a name="property-inheritance-in-visual-studio-projects"></a>Visual Studio 프로젝트에서 속성 상속
 
@@ -67,7 +67,7 @@ Visual Studio 프로젝트 시스템은 파일 형식 및 모든 종류의 프�
 
 문자 집합 속성 "설정 안 함" 대신 "Unicode 사용"을 설정 하 고 클릭 일반 속성 페이지에서 창으로 이동 하는 경우 **확인**, 속성 관리자에 표시 됩니다 없습니다 **유니코드 지원** 에 대 한 속성 시트 다른 구성에 대 한 현재 구성 하지만 여전히 수 있습니다.
 
-속성 관리자 및 속성 시트에 대 한 자세한 내용은 참조 하세요. [공유 또는 resuse Visual Studio c + + 프로젝트 설정](create-reusable-property-configurations.md)합니다.
+속성 관리자 및 속성 시트에 대 한 자세한 내용은 참조 하세요. [공유 또는 resuse Visual Studio C++ 프로젝트 설정](create-reusable-property-configurations.md)합니다.
 
 > [!TIP]
 > .user 파일은 레거시 기능입니다. 구성/플랫폼에 따라 속성을 올바르게 그룹화된 상태로 유지하기 위해 이 파일을 삭제하는 것이 좋습니다.

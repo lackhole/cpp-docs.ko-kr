@@ -11,15 +11,15 @@ helpviewer_keywords:
 - TN002
 ms.assetid: 553fe01d-c587-4c8d-a181-3244a15c2be9
 ms.openlocfilehash: 6d64799dc17b4b3ddc5c455333b10282e4748b09
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306196"
 ---
 # <a name="tn002-persistent-object-data-format"></a>TN002: 영구 개체 데이터 형식
 
-이 파일에 저장 되는 경우 영구 c + + 개체 및 개체 데이터의 형식을 지 원하는 MFC 루틴을 설명 합니다. 이 클래스에만 적용 됩니다는 [DECLARE_SERIAL](../mfc/reference/run-time-object-model-services.md#declare_serial) 하 고 [IMPLEMENT_SERIAL](../mfc/reference/run-time-object-model-services.md#implement_serial) 매크로입니다.
+이 지 원하는 영구 MFC 루틴에 설명 합니다 C++ 개체 및 개체 데이터를 파일에 저장 되는 경우의 형식입니다. 이 클래스에만 적용 됩니다는 [DECLARE_SERIAL](../mfc/reference/run-time-object-model-services.md#declare_serial) 하 고 [IMPLEMENT_SERIAL](../mfc/reference/run-time-object-model-services.md#implement_serial) 매크로입니다.
 
 ## <a name="the-problem"></a>문제
 

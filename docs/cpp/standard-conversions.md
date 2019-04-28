@@ -7,11 +7,11 @@ helpviewer_keywords:
 - conversions, standard
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
 ms.openlocfilehash: aee100bdc7e8ba6dd7d06c6bca9ed39c09cf2d97
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267289"
 ---
 # <a name="standard-conversions"></a>표준 변환
 
@@ -187,14 +187,14 @@ int main() {
 
 첫 번째 경우는 지정된 기본 클래스에 액세스할 수 있고 변환이 명확한 경우입니다. (참조 [다중 기본 클래스](../cpp/multiple-base-classes.md) 모호한 기본 클래스 참조에 대 한 자세한 내용은 합니다.)
 
-기본 클래스에 액세스할 수 있는지 여부는 파생에서 사용되는 상속의 종류에 따라 달라집니다. 다음 그림에 나와 있는 상속을 살펴보세요.
+기본 클래스에 액세스할 수 있는지 여부는 파생에서 사용되는 상속의 종류에 따라 달라집니다. 다음 그림에 나와 있는 상속을 살펴보십시오.
 
 ![기본을 보여 주는 상속 그래프&#45;내게 필요한 옵션 클래스](../cpp/media/vc38xa1.gif "기본 보여 주는 상속 그래프&#45;내게 필요한 옵션 클래스") <br/>
-기본 클래스 접근성을 보여 주는 상속 그래프
+기본 클래스 액세스 가능성을 보여 주는 상속 그래프
 
-다음 표에서는 그림에 나와 있는 상황에 대한 기본 클래스 접근성을 보여 줍니다.
+다음 표에서는 그림에 나와 있는 상황에 대한 기본 클래스 액세스 가능성을 보여 줍니다.
 
-### <a name="base-class-accessibility"></a>기본 클래스의 접근성
+### <a name="base-class-accessibility"></a>기본 클래스의 액세스 가능성
 
 |함수 형식|파생|B*에서 A*로의 변환이<br /><br /> B* 에서 A\* 법적?|
 |----------------------|----------------|-------------------------------------------|
@@ -203,10 +203,10 @@ int main() {
 ||Public|예|
 |B 멤버 함수(B 범위에 있음)|Private|예|
 ||보호됨|예|
-||공용|예|
-|C 멤버 함수(C 범위에 있음)|전용|아니요|
+||Public|예|
+|C 멤버 함수(C 범위에 있음)|Private|아니요|
 ||보호됨|예|
-||공용|예|
+||Public|예|
 
 클래스에 대한 포인터가 기본 클래스에 대한 포인터로 변환될 수 있는 두 번째 경우는 명시적 형식 변환을 사용하는 경우입니다. (참조 [명시적 형식 변환 연산자](explicit-type-conversion-operator-parens.md) 명시적 형식 변환에 대 한 자세한 내용은 합니다.)
 
@@ -255,7 +255,7 @@ int main()
 
 ### <a name="const-and-volatile-pointers"></a>const 및 volatile 포인터
 
-C + +의 표준 변환이 제공 하지 않는 **const** 또는 **volatile** 형식이 아닌 형식으로 **const** 또는 **volatile**합니다. 하지만 모든 종류의 변환은 명시적 형식 캐스트를 사용하여 지정할 수 있습니다(안전하지 않은 변환 포함).
+C++표준 변환이 제공 하지 않는 **const** 또는 **volatile** 형식이 아닌 형식으로 **const** 또는 **volatile**합니다. 하지만 모든 종류의 변환은 명시적 형식 캐스트를 사용하여 지정할 수 있습니다(안전하지 않은 변환 포함).
 
 > [!NOTE]
 >  정적 멤버에 대한 포인터를 제외하고 멤버에 대한 C++ 포인터는 일반 포인터와 다르며 동일한 표준 변환이 적용되지 않습니다. 정적 멤버에 대한 포인터는 일반 포인터이며 일반 포인터와 동일한 변환이 적용됩니다.
@@ -307,7 +307,7 @@ char *pszPath = szPath; // Equals &szPath[0].
 
 - 오른쪽 피연산자가 왼쪽 피연산자와 같은 클래스의 멤버에 대한 포인터입니다.
 
-- 왼쪽 피연산자가 오른쪽 피연산자의 클래스로부터 공개적으로 명확하게 파생 클래스의 멤버에 대한 포인터입니다.
+- 왼쪽 피연산자가 오른쪽 피연산자의 클래스로부터 공개적으로 명확하게 파생된 클래스의 멤버에 대한 포인터입니다.
 
 ## <a name="integral-constant-conversions"></a>정수 계열 상수 변환
 

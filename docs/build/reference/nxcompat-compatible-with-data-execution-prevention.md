@@ -8,11 +8,11 @@ helpviewer_keywords:
 - -NXCOMPAT linker option
 - NXCOMPAT linker option
 ms.openlocfilehash: a8550337189f9c92a1c8a8d86f2f9b2b829bbc3e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320372"
 ---
 # <a name="nxcompat-compatible-with-data-execution-prevention"></a>/NXCOMPAT(데이터 실행 방지 기능과 호환)
 
@@ -38,7 +38,7 @@ ms.locfileid: "57813320"
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 

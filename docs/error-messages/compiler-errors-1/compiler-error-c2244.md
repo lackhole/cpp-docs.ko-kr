@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2244
 ms.assetid: d9911c12-ceb5-4f93-ac47-b44a485215c2
 ms.openlocfilehash: 7cfa0cd7ff4290ca5f07fb712bbcac7dabf55f29
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301398"
 ---
 # <a name="compiler-error-c2244"></a>컴파일러 오류 C2244
 
@@ -19,7 +19,7 @@ ms.locfileid: "50615204"
 
 단항 + 연산자의 비정상적인 사용을 함수 호출에 괄호 앞에 사용 되었습니다.
 
-이 오류는 c + + 프로젝트에만 발생합니다.
+이 오류에만 발생 C++ 프로젝트입니다.
 
 다음 샘플에서는 C2244 오류가 생성 됩니다.
 

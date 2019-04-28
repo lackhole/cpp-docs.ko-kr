@@ -135,11 +135,11 @@ helpviewer_keywords:
 - std::unordered_multiset::swap
 ms.assetid: 70c8dfc5-492a-4af2-84f5-1aa9cb04b71c
 ms.openlocfilehash: 34fb3e16dc7369526895a011c7e192d2f51edf14
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278555"
 ---
 # <a name="unorderedmultiset-class"></a>unordered_multiset 클래스
 
@@ -162,7 +162,7 @@ class unordered_multiset;
 |*키*|키 형식입니다.|
 |*해시*|해시 함수 개체 형식입니다.|
 |*pred*|같음 비교 함수 개체 형식입니다.|
-|*할당*|할당자 클래스입니다.|
+|*Alloc*|할당자 클래스입니다.|
 
 ## <a name="members"></a>멤버
 
@@ -968,7 +968,7 @@ iterator emplace(Args&&... args);
 
 |매개 변수|설명|
 |-|-|
-|*인수*|unordered_multiset에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
+|*args*|unordered_multiset에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -997,7 +997,7 @@ iterator emplace_hint(
 
 |매개 변수|설명|
 |-|-|
-|*인수*|unordered_multiset에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
+|*args*|unordered_multiset에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
 |*where*|올바른 삽입 지점 검색을 시작할 위치와 관련된 힌트입니다.|
 
 ### <a name="return-value"></a>반환 값
@@ -1235,7 +1235,7 @@ size_type erase(
 *Where*<br/>
 제거할 요소의 위치입니다.
 
-*첫 번째*<br/>
+*첫째*<br/>
 제거할 첫 번째 요소의 위치입니다.
 
 *마지막*<br/>
@@ -1470,10 +1470,10 @@ IList);
 
 |매개 변수|설명|
 |-|-|
-|*val*|unordered_multiset에 삽입할 요소의 값입니다.|
+|*Val*|unordered_multiset에 삽입할 요소의 값입니다.|
 |*Where*|올바른 삽입 지점 검색을 시작할 위치입니다.|
 |*ValTy*|Unordered_multiset의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하는 템플릿 매개 변수 [value_type](../standard-library/map-class.md#value_type), 및 완벽 하 게 전달 *Val* 인수로 합니다.|
-|*첫 번째*|복사할 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 마지막 요소 바로 다음 위치입니다.|
 |*InputIterator*|[value_type](../standard-library/map-class.md#value_type) 개체를 생성하는 데 사용할 수 있는 형식의 요소를 가리키는 [입력 반복기](../standard-library/input-iterator-tag-struct.md)의 요구 사항을 충족하는 템플릿 함수 인수입니다.|
 |*IList*|요소를 복사할 원본 [initializer_list](../standard-library/initializer-list.md)입니다.|

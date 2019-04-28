@@ -308,17 +308,17 @@ helpviewer_keywords:
 - CleanUp method [MFC]
 ms.assetid: 3e2276aa-b02a-4781-97ba-ea074045e9e2
 ms.openlocfilehash: ae35aefefe548990eeb7fbe637839e475036c2bc
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322016"
 ---
 # <a name="internal-classes"></a>내부 클래스
 
 다음 클래스는 MFC에서 내부적으로 사용 됩니다. 완벽을 기하기 위해 이 단원에서는 이러한 내부 클래스에 대해 설명하지만 이러한 내부 클래스는 코드에서 직접 사용할 수 없습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 |클래스|설명|
 |-----------|-----------------|

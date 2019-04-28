@@ -31,11 +31,11 @@ helpviewer_keywords:
 - threading [C++], terminating threads
 ms.assetid: 18a91f2f-659e-40b4-b266-ec12dcf2abf5
 ms.openlocfilehash: 2f54ca9c4cd5e863ca960f1d9c3634b85e7896dd
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288825"
 ---
 # <a name="endthread-endthreadex"></a>_endthread, _endthreadex
 
@@ -67,7 +67,7 @@ void _endthreadex(
 Win32와 같은 **ExitThread** API **_endthreadex** 스레드 핸들을 닫지 않습니다. 따라서 사용 하는 경우 **_beginthreadex** 하 고 **_endthreadex**, Win32를 호출 하 여 스레드 핸들을 닫아야 **CloseHandle** API.
 
 > [!NOTE]
-> **_endthread** 하 고 **_endthreadex** 호출 되지 않은 스레드에서 c + + 소멸자가 보류 중인 발생 합니다.
+> **_endthread** 하 고 **_endthreadex** 발생할 C++ 호출 되지 않은 스레드에서 보류 중인 소멸자입니다.
 
 ## <a name="requirements"></a>요구 사항
 

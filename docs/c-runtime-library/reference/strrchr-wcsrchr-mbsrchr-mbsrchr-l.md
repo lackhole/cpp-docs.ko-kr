@@ -43,11 +43,11 @@ helpviewer_keywords:
 - _mbsrchr_l function
 ms.assetid: 75cf2664-758e-49bb-bf6b-8a139cd474d2
 ms.openlocfilehash: 016be9a1d753787b6e0c3800df5a96baea1a19f5
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347300"
 ---
 # <a name="strrchr-wcsrchr-mbsrchr-mbsrchrl"></a>strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 
@@ -133,7 +133,7 @@ const unsigned char *_mbsrchr_l(
 
 `wcsrchr` 및 `_mbsrchr` 는 `strrchr`의 와이드 문자 및 멀티바이트 문자 버전입니다. `wcsrchr`의 인수 및 반환 값은 와이드 문자열이며 `_mbsrchr`의 인수와 반환 값은 멀티바이트 문자열입니다.
 
-C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 번째 인수에 대 한 포인터입니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 에 대 한 포인터를 갖는 오버 로드 **상수** 에 대 한 포인터를 반환 **const**;는 버전에 대 한 포인터를은 비**const** 에 대 한 포인터를 반환 하는 비-**const** . 매크로 _CRT_CONST_CORRECT_OVERLOADS 모두 정의 되는 **const** 및 비-**const** 이러한 함수의 버전은 사용할 수 있습니다. 필요 하면 이외**const** 두 c + + 오버 로드에 대 한 동작 기호 _CONST_RETURN을 정의 합니다.
+C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 번째 인수에 대 한 포인터입니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 에 대 한 포인터를 갖는 오버 로드 **상수** 에 대 한 포인터를 반환 **const**;는 버전에 대 한 포인터를은 비**const** 에 대 한 포인터를 반환 하는 비-**const** . 매크로 _CRT_CONST_CORRECT_OVERLOADS 모두 정의 되는 **const** 및 비-**const** 이러한 함수의 버전은 사용할 수 있습니다. 비-필요한 경우**const** 둘 다에 대 한 동작 C++ 오버 로드를 기호 _CONST_RETURN을 정의 합니다.
 
 `_mbsrchr`는 매개 변수의 유효성을 검사합니다. 하는 경우 *str* 가 null 인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 `errno` EINVAL로 설정 되 고 `_mbsrchr` 0을 반환 합니다. `strrchr` 및 `wcsrchr`는 매개 변수의 유효성을 검사하지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 

@@ -3,25 +3,25 @@ title: 예외(C++/CX)
 ms.date: 01/18/2018
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
 ms.openlocfilehash: 7134cbb9e90f0355a3b2a912330027cf73876443
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301528"
 ---
 # <a name="exceptions-ccx"></a>예외(C++/CX)
 
-오류 처리 C + + /cli CX가 예외를 기반으로 합니다. 가장 기본적인 수준에서 Windows 런타임 구성 요소는 오류를 HRESULT 값으로 보고합니다. C + + /CX에서는 이러한 값은 HRESULT 값 및 프로그래밍 방식으로 액세스할 수 있는 문자열 설명을 포함 하는 강력한 형식의 예외로 변환 됩니다.  예외는 `ref class` 에서 파생된 `Platform::Exception`로 구현됩니다.  `Platform` 네임스페이스는 가장 일반적인 HRESULT 값에 대한 고유한 예외 클래스를 정의합니다. 다른 모든 값은 `Platform::COMException` 클래스를 통해 보고됩니다. 모든 예외 클래스에는 원래 HRESULT를 검색하는 데 사용할 수 있는 [Exception::HResult](platform-exception-class.md#hresult) 필드가 있습니다. 또한 도움이 되는 예외의 원래 근원을 c + + 이외의 언어로 작성 된 코드에서 발생 한 경우에 디버거에서 사용자 코드에 대 한 호출 스택 정보를 검사할 수 있습니다.
+오류 처리 C++/CX는 예외를 기반으로 합니다. 가장 기본적인 수준에서 Windows 런타임 구성 요소는 오류를 HRESULT 값으로 보고합니다. C++/CX, 이러한 값은 HRESULT 값 및 프로그래밍 방식으로 액세스할 수 있는 문자열 설명을 포함 하는 강력한 형식의 예외로 변환 됩니다.  예외는 `ref class` 에서 파생된 `Platform::Exception`로 구현됩니다.  `Platform` 네임스페이스는 가장 일반적인 HRESULT 값에 대한 고유한 예외 클래스를 정의합니다. 다른 모든 값은 `Platform::COMException` 클래스를 통해 보고됩니다. 모든 예외 클래스에는 원래 HRESULT를 검색하는 데 사용할 수 있는 [Exception::HResult](platform-exception-class.md#hresult) 필드가 있습니다. 도움이 되는 예외의 원래 근원을 이외의 다른 언어로 작성 된 코드에서 발생 한 경우에 디버거에서 사용자 코드에 대 한 호출 스택 정보를 검사할 수도 있습니다 C++입니다.
 
 ## <a name="exceptions"></a>예외
 
-C + + 프로그램에서 throw 하는 Windows 런타임 작업에서 제공 되는 예외에서 파생 되는 예외를 catch `std::exception`, 또는 사용자 정의 형식입니다. 이 응용 프로그램 이진 ABI (인터페이스) 경계를 넘는 예를 들어 JavaScript에서 예외를 catch 하는 코드를 작성 하는 경우 경우에 Windows 런타임 예외를 throw 해야 합니다. 예외는 변환 비-Windows 런타임 c + + 예외가 ABI 경계에 도달 하면를 `Platform::FailureException` 예외가 E_FAIL HRESULT를 나타내는 예외입니다. ABI에 대한 자세한 내용은 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)를 참조하세요.
+에 C++ 프로그램을 throw 하는 Windows 런타임 작업에서 제공 되는 예외에서 파생 되는 예외를 catch `std::exception`, 또는 사용자 정의 형식입니다. 이 응용 프로그램 이진 ABI (인터페이스) 경계를 넘는 예를 들어 JavaScript에서 예외를 catch 하는 코드를 작성 하는 경우 경우에 Windows 런타임 예외를 throw 해야 합니다. 때 비-Windows 런타임 C++ 는 ABI 경계에 도달 하면 예외 변환 됩니다는 `Platform::FailureException` 예외가 E_FAIL HRESULT를 나타내는 예외입니다. ABI에 대한 자세한 내용은 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)를 참조하세요.
 
 선언할 수 있습니다는 [platform:: exception](platform-exception-class.md) HRESULT 매개 변수 또는 HRESULT 매개 변수를 사용 하는 두 생성자 중 하나를 사용 하 여와 [platform:: string](platform-string-class.md)^ 간에 전달 될 수 있는 매개 변수는 처리 하는 모든 Windows 런타임 앱으로 할 ABI입니다. HRESULT 매개 변수 또는 HRESULT 매개 변수와 [매개 변수를 사용하는 두](platform-exception-class.md#createexception) Exception::CreateException 메서드 `Platform::String^` 오버로드 중 하나를 사용하여 예외를 선언할 수도 있습니다.
 
 ## <a name="standard-exceptions"></a>표준 예외
 
-C + + /cli CX는 일반적인 HRESULT 오류를 나타내는 표준 예외 집합을 지원 합니다. 각 표준 예외는 [Platform::COMException](platform-comexception-class.md)에서 파생되고, 이는 `Platform::Exception`에서 파생됩니다. ABI 경계를 넘어 예외를 throw할 경우 표준 예외 중 하나를 throw해야 합니다.
+C++/CX는 일반적인 HRESULT 오류를 나타내는 표준 예외 집합을 지원 합니다. 각 표준 예외는 [Platform::COMException](platform-comexception-class.md)에서 파생되고, 이는 `Platform::Exception`에서 파생됩니다. ABI 경계를 넘어 예외를 throw할 경우 표준 예외 중 하나를 throw해야 합니다.
 
 사용자 고유의 예외 형식은 `Platform::Exception`에서 파생할 수 없습니다. 사용자 지정 예외를 throw하려면 사용자 정의 HRESULT를 사용하여 `COMException` 개체를 생성하세요.
 
@@ -39,11 +39,11 @@ C + + /cli CX는 일반적인 HRESULT 오류를 나타내는 표준 예외 집�
 |InvalidCastException|E\_NOINTERFACE|형식이 다른 형식에 대한 캐스트가 될 수 없는 경우 throw됩니다.|
 |NotImplementedException|E\_NOTIMPL|클래스에 인터페이스 메서드가 구현되어 있지 않은 경우 throw됩니다.|
 |NullReferenceException|E\_포인터|null 개체 참조를 역참조하려고 할 때 throw됩니다.|
-|ObjectDisposedException|RO\_E\_닫힘|삭제된 개체에서 연산이 수행될 때 throw됩니다.|
+|ObjectDisposedException|RO\_E\_CLOSED|삭제된 개체에서 연산이 수행될 때 throw됩니다.|
 |OperationCanceledException|E\_중단|작업이 중단되면 throw됩니다.|
 |OutOfBoundsException|E\_범위|작업이 유효한 범위를 벗어난 데이터에 액세스하려고 하면 throw됩니다.|
 |OutOfMemoryException|E\_OUTOFMEMORY|메모리가 부족하여 작업을 완료할 수 없는 경우 throw됩니다.|
-|WrongThreadException|RPC\_E\_잘못 된\_스레드|프록시 개체용 인터페이스 포인터를 통해 스레드의 아파트에 속하지 않는 스레드가 호출될 경우 throw됩니다.|
+|WrongThreadException|RPC\_E\_WRONG\_THREAD|프록시 개체용 인터페이스 포인터를 통해 스레드의 아파트에 속하지 않는 스레드가 호출될 경우 throw됩니다.|
 
 ## <a name="hresult-and-message-properties"></a>HResult 및 Message 속성
 
@@ -99,9 +99,9 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
 
 ### <a name="remarks"></a>설명
 
-C + + /cli CX 사용 하지 않습니다는 `finally` 절.
+C++/CX를 사용 하지 않습니다는 `finally` 절.
 
 ## <a name="see-also"></a>참고자료
 
-[Visual c + + 언어 참조](visual-c-language-reference-c-cx.md)<br/>
-[네임 스페이스 참조](namespaces-reference-c-cx.md)
+[Visual C++ 언어 참조](visual-c-language-reference-c-cx.md)<br/>
+[네임스페이스 참조](namespaces-reference-c-cx.md)

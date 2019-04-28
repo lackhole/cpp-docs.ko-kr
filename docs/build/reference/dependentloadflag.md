@@ -11,11 +11,11 @@ helpviewer_keywords:
 - DEPENDENTLOADFLAG linker option
 - /DEPENDENTLOADFLAG linker option
 ms.openlocfilehash: 94998e06f23a7e70524221d3cb75166b5d3f2c44
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272089"
 ---
 # <a name="dependentloadflag-set-default-dependent-load-flags"></a>/ DEPENDENTLOADFLAG (집합 기본 종속 로드가 플래그)
 
@@ -42,7 +42,7 @@ ms.locfileid: "57815972"
 
 ### <a name="to-set-the-dependentloadflag-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 DEPENDENTLOADFLAG 링커 옵션을 설정 하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **명령줄** 속성 페이지.
 

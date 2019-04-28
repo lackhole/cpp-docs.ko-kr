@@ -28,11 +28,11 @@ helpviewer_keywords:
 - cbrt function
 ms.assetid: ab51d916-3db2-4beb-b46a-28b4062cd33f
 ms.openlocfilehash: c395a063cfa07cdfb7e841f19bc64fb1c57ca796
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341098"
 ---
 # <a name="cbrt-cbrtf-cbrtl"></a>cbrt, cbrtf, cbrtl
 
@@ -73,13 +73,13 @@ long double cbrtl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **cbrt** 사용 하는 **float** 하거나 **긴** **double** 형식입니다. C 프로그램에서 **cbrt** 항상 받아서 반환 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **cbrt** 사용 하는 **float** 또는 **긴** **double** 형식입니다. C 프로그램에서 **cbrt** 항상 받아서 반환 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**cbrt**하십시오 **cbrtf**, **cbrtl**|\<math.h>|\<cmath>|
+|**cbrt**, **cbrtf**, **cbrtl**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

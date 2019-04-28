@@ -7,11 +7,11 @@ helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
 ms.openlocfilehash: 512170d7eaa891b3616ca1ea56c29a8bb5cccda9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322243"
 ---
 # <a name="event-maps"></a>이벤트 맵
 
@@ -21,7 +21,7 @@ Microsoft Foundation Class 라이브러리는 이벤트를 발생 시키기 위�
 
 [!code-cpp[NVC_MFCAxCtl#16](../../mfc/reference/codesnippet/cpp/event-maps_1.cpp)]
 
-`EVENT_STOCK_CLICK` 매크로 나타냅니다 컨트롤 주식 클릭 클릭 마우스 감지 될 때마다이 이벤트를 발생 합니다. 다른 스톡 이벤트의 자세한 목록, 문서를 참조 [ActiveX 컨트롤: 이벤트](../../mfc/mfc-activex-controls-events.md)합니다. 매크로 사용자 지정 이벤트를 나타내기 위해 사용할 수 있습니다.
+`EVENT_STOCK_CLICK` 매크로 나타냅니다 컨트롤 주식 클릭 클릭 마우스 감지 될 때마다이 이벤트를 발생 합니다. 다른 스톡 이벤트의 자세한 목록, 문서를 참조 하세요. [ActiveX 컨트롤: 이벤트](../../mfc/mfc-activex-controls-events.md)합니다. 매크로 사용자 지정 이벤트를 나타내기 위해 사용할 수 있습니다.
 
 이벤트 맵 매크로 중요 하지만, 일반적으로 삽입 하지 않으면 해당 직접. 그 이유는 속성 창 이벤트 발생 함수 이벤트를 사용 하 여 연결을 사용 하는 경우 소스 파일에서 이벤트 맵 엔트리 자동으로 만들어지기 때문입니다. 이벤트 맵 항목을 추가 하거나 편집 하려면 언제 든 지 속성 창을 사용할 수 있습니다.
 
@@ -63,7 +63,7 @@ DECLARE_EVENT_MAP()
 
 클래스 선언의 끝 DECLARE_EVENT_MAP 매크로 사용 합니다. 그런 다음 클래스의 멤버 함수를 정의 하는.cpp 파일에서 사용 매크로 항목을 BEGIN_EVENT_MAP 매크로 각 컨트롤의 이벤트 및 END_EVENT_MAP 매크로 대 한 이벤트 목록의 끝을 선언 합니다.
 
-이벤트 맵에 대 한 자세한 내용은 문서를 참조 [ActiveX 컨트롤: 이벤트](../../mfc/mfc-activex-controls-events.md)합니다.
+이벤트 맵에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤: 이벤트](../../mfc/mfc-activex-controls-events.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -89,7 +89,7 @@ BEGIN_EVENT_MAP(theClass,  baseClass)
 
 클래스의 멤버 함수를 정의 하는 구현 (.cpp) 파일에서 이벤트 맵을 BEGIN_EVENT_MAP 매크로 사용 하 여 시작 하 고 각 이벤트에 대해 매크로 항목을 추가 END_EVENT_MAP 매크로 사용 하 여 이벤트 맵을 완료 합니다.
 
-이벤트 맵 BEGIN_EVENT_MAP 매크로에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤: 이벤트](../../mfc/mfc-activex-controls-events.md)합니다.
+이벤트 맵 BEGIN_EVENT_MAP 매크로에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤: 이벤트](../../mfc/mfc-activex-controls-events.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -136,14 +136,14 @@ RGB를 나타내는 32 비트 정수를 포함 하는 목록을 색에 대 한 �
 
 `VTS_` 상수 및 해당 의미는 다음과 같습니다.
 
-|기호|매개 변수 형식|
+|기호|매개 변수 유형|
 |------------|--------------------|
 |VTS_I2|**short**|
 |VTS_I4|**long**|
 |VTS_R4|**float**|
 |VTS_R8|**double**|
 |VTS_COLOR|OLE_COLOR|
-|VTS_CY|통화|
+|VTS_CY|Currency|
 |VTS_DATE|DATE|
 |VTS_BSTR|**const** __char\*__|
 |VTS_DISPATCH|LPDISPATCH|

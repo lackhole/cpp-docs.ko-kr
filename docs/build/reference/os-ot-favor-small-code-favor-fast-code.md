@@ -18,11 +18,11 @@ helpviewer_keywords:
 - -Os compiler option [C++]
 ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2
 ms.openlocfilehash: d4e8d062685a543c428f0c86a22c17c8faf017ad
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320177"
 ---
 # <a name="os-ot-favor-small-code-favor-fast-code"></a>/Os, /OT(크기 우선 코드, 속도 우선 코드)
 
@@ -37,9 +37,9 @@ ms.locfileid: "57814254"
 
 ## <a name="remarks"></a>설명
 
-**/Os** (크기 우선 코드) 속도 보다 크기 우선. 컴파일러에 지시 하 여 Exe 및 Dll의 크기를 최소화 합니다. 컴파일러는 기계어 코드로의 기능적으로 비슷하지만 순서에 여러 C 및 c + + 구문의 줄일 수 있습니다. 경우에 따라 이러한 차이 크기와 속도의 균형을 제공합니다. 합니다 **/Os** 하 고 **/Ot** 옵션 둘 중 하나에 대 한 기본 설정을 지정할 수 있습니다.
+**/Os** (크기 우선 코드) 속도 보다 크기 우선. 컴파일러에 지시 하 여 Exe 및 Dll의 크기를 최소화 합니다. 컴파일러는 많은 C를 줄일 수 있습니다 하 고 C++ 기능이 비슷한 기계어 코드 시퀀스를 생성 합니다. 경우에 따라 이러한 차이 크기와 속도의 균형을 제공합니다. 합니다 **/Os** 하 고 **/Ot** 옵션 둘 중 하나에 대 한 기본 설정을 지정할 수 있습니다.
 
-**/Ot** (크기 우선 코드) 크기 보다 속도 우선. 컴파일러에 지시 하 여 Exe 및 Dll의 속도 최대화 합니다. (이것이 기본값입니다.) 컴파일러는 기계어 코드로의 기능적으로 비슷하지만 순서에 여러 C 및 c + + 구문의 줄일 수 있습니다. 경우에 따라 이러한 차이 크기와 속도의 균형을 제공합니다. 속도 최대화 /Ot 옵션이 포함 됩니다 ([/o2](o1-o2-minimize-size-maximize-speed.md)) 옵션입니다. 합니다 **/o2** 옵션 매우 빠르게 코드를 생성 하기 위해 몇 가지 옵션을 결합 합니다.
+**/Ot** (크기 우선 코드) 크기 보다 속도 우선. 컴파일러에 지시 하 여 Exe 및 Dll의 속도 최대화 합니다. (이것이 기본값입니다.) 컴파일러는 많은 C를 줄일 수 있습니다 하 고 C++ 기능이 비슷한 기계어 코드 시퀀스를 생성 합니다. 경우에 따라 이러한 차이 크기와 속도의 균형을 제공합니다. 속도 최대화 /Ot 옵션이 포함 됩니다 ([/o2](o1-o2-minimize-size-maximize-speed.md)) 옵션입니다. 합니다 **/o2** 옵션 매우 빠르게 코드를 생성 하기 위해 몇 가지 옵션을 결합 합니다.
 
 사용 하는 경우 **/Os** 하거나 **/Ot**에 지정 해야 합니다 [/Og](og-global-optimizations.md) 코드를 최적화 하려면.
 
@@ -86,7 +86,7 @@ sub    eax, ecx
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 

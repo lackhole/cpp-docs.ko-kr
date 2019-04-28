@@ -10,11 +10,11 @@ helpviewer_keywords:
 - CComClassFactorySingleton class
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
 ms.openlocfilehash: 480b4c2a6e052e8e0823b97b548fc5d07b55230f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260177"
 ---
 # <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton 클래스
 
@@ -108,7 +108,7 @@ CComPtr<IUnknown> m_spObj;
 
 각 호출에는 [CreateInstance](#createinstance) 메서드는 단순히이 개체에 대 한 인터페이스 포인터를 쿼리 합니다.
 
-현재 형태로 `m_spObj` 주요 변경 내용 방식에서 제공 하는 `CComClassFactorySingleton` ATL.의 이전 버전에서 작동 이전 버전에서의 `CComClassFactorySingleton` 클래스 팩터리로 동시에 서버를 초기화 하는 동안 개체를 만든 합니다. Visual c + +.NET 2003에서는 개체는 첫 번째 요청에 나중에 생성 됩니다. 이 변경에는 초기 초기화를 사용 하는 프로그램에서 오류가 발생할 수 있습니다.
+현재 형태로 `m_spObj` 주요 변경 내용 방식에서 제공 하는 `CComClassFactorySingleton` ATL.의 이전 버전에서 작동 이전 버전에서의 `CComClassFactorySingleton` 클래스 팩터리로 동시에 서버를 초기화 하는 동안 개체를 만든 합니다. 시각적 개체의 C++.NET 2003에서는 개체가 만들어진 느리게 첫 번째 요청 시. 이 변경에는 초기 초기화를 사용 하는 프로그램에서 오류가 발생할 수 있습니다.
 
 ## <a name="see-also"></a>참고자료
 

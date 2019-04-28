@@ -9,11 +9,11 @@ helpviewer_keywords:
 - __declspec keyword (C++), spectre
 - spectre __declspec keyword
 ms.openlocfilehash: 2377a3c23be1e27bfe4f2df23eb00823635fa05d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267260"
 ---
 # <a name="spectre"></a>스펙터
 
@@ -23,7 +23,7 @@ ms.locfileid: "50592012"
 
 ## <a name="syntax"></a>구문
 
-> **__declspec (spectre(nomitigation))**
+> **__declspec( spectre(nomitigation) )**
 
 ## <a name="remarks"></a>설명
 
@@ -58,5 +58,5 @@ int main() {
 ## <a name="see-also"></a>참고자료
 
 [__declspec](../cpp/declspec.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [/Qspectre](../build/reference/qspectre.md)

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - ODBC recordsets [C++], transactions
 ms.assetid: a2ec0995-2029-45f2-8092-6efd6f2a77f4
 ms.openlocfilehash: a151ec5ca2b4bdc19bfa7dc626aebda0740a2c9e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62329922"
 ---
 # <a name="transaction-odbc"></a>트랜잭션(ODBC)
 
@@ -43,9 +43,9 @@ ms.locfileid: "59023672"
 
 트랜잭션을 수행 하는 방법에 대 한 자세한 정보를 제공 하는 다음 항목:
 
-- [트랜잭션: 레코드 집합 (ODBC)에서 트랜잭션 수행](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)
+- [트랜잭션: 레코드 집합에서 트랜잭션 수행(ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)
 
-- [트랜잭션: 트랜잭션이 업데이트 (ODBC)에 미치는 영향](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
+- [트랜잭션: 트랜잭션이 업데이트에 미치는 영향(ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
 
 ## <a name="see-also"></a>참고자료
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - /IGNOREIDL linker option
 ms.assetid: 29514098-6a1c-4317-af2f-1dc268972780
 ms.openlocfilehash: 210778adecd87ffdd5f2702c10106f12bd5a1b79
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291681"
 ---
 # <a name="ignoreidl-don39t-process-attributes-into-midl"></a>/IGNOREIDL (Don&#39;t 프로세스 특성을 MIDL로)
 
@@ -28,7 +28,7 @@ ms.locfileid: "57820431"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 클릭 합니다 **링커** 폴더입니다.
 

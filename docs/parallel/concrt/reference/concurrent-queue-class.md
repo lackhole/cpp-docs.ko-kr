@@ -17,17 +17,15 @@ helpviewer_keywords:
 - concurrent_queue class
 ms.assetid: c2218996-d0ea-40e9-b002-e9a15b085f51
 ms.openlocfilehash: d5bbd361dc2dedc24c2a59050ffa680517186494
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62263089"
 ---
 # <a name="concurrentqueue-class"></a>concurrent_queue 클래스
 
-
-  `concurrent_queue` 클래스는 해당 요소에 대해 선입 선출 액세스를 허용하는 시퀀스 컨테이너 클래스입니다. 
-  `push` 및 `try_pop`과 같은 동시성으로부터 안전한 작업의 제한된 집합을 사용할 수 있게 합니다.
+`concurrent_queue` 클래스는 해당 요소에 대해 선입 선출 액세스를 허용하는 시퀀스 컨테이너 클래스입니다. `push` 및 `try_pop`과 같은 동시성으로부터 안전한 작업의 제한된 집합을 사용할 수 있게 합니다.
 
 ## <a name="syntax"></a>구문
 

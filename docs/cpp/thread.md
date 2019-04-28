@@ -10,11 +10,11 @@ helpviewer_keywords:
 - __declspec keyword [C++], thread
 ms.assetid: 667f2a77-6d1f-4b41-bee8-05e67324fab8
 ms.openlocfilehash: 089f339e5d203fe44789a7df1607f73ab13b8a24
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330520"
 ---
 # <a name="thread"></a>스레드
 
@@ -24,7 +24,7 @@ ms.locfileid: "50440081"
 
 ## <a name="syntax"></a>구문
 
-> **__declspec (thread)** *선언 자*
+> **__declspec( thread )** *declarator*
 
 ## <a name="remarks"></a>설명
 
@@ -40,9 +40,9 @@ __declspec( thread ) int tls_i = 1;
 
 1. 변수 (생성자)가 함수 호출으로 초기화 되 면이 함수 에서만 호출 되는 이진/DLL이 로드 프로세스에 발생 하는 스레드의 및 binary/DLL 로드 된 후에 시작 된 이러한 스레드에 대 한 합니다. DLL을 로드할 때 이미 실행 중인 다른 모든 스레드에 대 한 초기화 함수가 호출 되지 않습니다. 동적 초기화 없으면 DLL 프로세스에서 스레드가 시작 될 때 메시지는 가져옵니다를 되지 활발에 대 한 DllMain 호출 하지만 DLL에서 발생 합니다.
 
-1. 상수 값을 사용 하 여 정적으로 초기화 되는 스레드 지역 변수는 일반적으로 모든 스레드에서 올바르게 초기화 됩니다. 그러나 2017 년 12 월에에서 없는 경우 알려진된 규칙 문제를 여기서 수신 constexpr 변수 Microsoft Visual c + + 컴파일러가 정적 초기화 하는 대신 동적
+1. 상수 값을 사용 하 여 정적으로 초기화 되는 스레드 지역 변수는 일반적으로 모든 스레드에서 올바르게 초기화 됩니다. 그러나 2017 년 12 월이 알려진된 규칙 문제를 Microsoft Visual C++ 컴파일러 수신 constexpr 변수 정적 초기화 하는 대신 동적 가능해 집니다.
 
-   참고: 이러한 문제를 모두는 컴파일러의 업데이트 이후 수정으로 예상 됩니다.
+   참고: 이러한 문제를 모두는 컴파일러의 업데이트 이후 수정 해야 합니다.
 
 또한 스레드 로컬 개체 및 변수를 선언 하는 경우 다음이 지침을 준수 해야 합니다.
 
@@ -81,7 +81,7 @@ __declspec( thread ) int tls_i = 1;
    Thread int tls_i = sizeof( tls_i );   // Okay in C and C++
    ```
 
-   한 **sizeof** 초기화 되는 개체를 포함 하는 식 자체에 대 한 참조를 구성 하지 않습니다 하 고 C 및 c + +에서 허용 됩니다.
+   한 **sizeof** 초기화 되는 개체를 포함 하는 식 자체에 대 한 참조를 구성 하지 않습니다 하 고 C에서 허용 됩니다 하 고 C++합니다.
 
 **Microsoft 전용 종료**
 

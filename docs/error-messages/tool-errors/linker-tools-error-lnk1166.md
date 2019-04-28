@@ -7,15 +7,15 @@ helpviewer_keywords:
 - LNK1166
 ms.assetid: d69548a8-0efb-44e1-90b7-b27636a4b575
 ms.openlocfilehash: 5be078133d849070e4d1eec8a970740ffe5511a9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62254972"
 ---
 # <a name="linker-tools-error-lnk1166"></a>링커 도구 오류 LNK1166
 
-오프셋에서 코드를 조정할 수 없는 오프셋, va = = value
+cannot adjust code at offset=offset, va=value
 
 링크 필요에 따라 코드를 채울 수 없습니다.
 

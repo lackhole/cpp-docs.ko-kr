@@ -7,11 +7,11 @@ helpviewer_keywords:
 - EXPORTS .def file statement
 ms.assetid: dbcd7579-b855-44c4-bd27-931e157657f7
 ms.openlocfilehash: 33b70c680bfc3db24f5326a2027fa9ec4740e3f2
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62271348"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -51,7 +51,7 @@ EXPORTS
    func2=other_module.#42
 ```
 
-C + + 함수에 대 한 이름 데코레이션을 사용 하는 MSVC 컴파일러를 데코 레이트 된 이름을 사용 하거나 해야 *internal_name* 사용 하 여 내보낸된 함수를 정의 하거나 `extern "C"` 소스 코드에서입니다. 컴파일러에는 또한 C 함수를 사용 하 여 데코 레이트 합니다 [__stdcall](../../cpp/stdcall.md) 밑줄을 사용 하 여 규칙을 호출 (\_) 접두사 및 접미사 구성는 at 기호 (\@) 뒤에 바이트 수 (10 진수)가 붙은 인수 목록입니다.
+MSVC 컴파일러에 대 한 이름 데코레이션을 사용 하기 때문에 C++ 함수를 데코 레이트 된 이름을 사용 하거나 해야 *internal_name* 사용 하 여 내보낸된 함수를 정의할 `extern "C"` 소스 코드에서. 컴파일러에는 또한 C 함수를 사용 하 여 데코 레이트 합니다 [__stdcall](../../cpp/stdcall.md) 밑줄을 사용 하 여 규칙을 호출 (\_) 접두사 및 접미사 구성는 at 기호 (\@) 뒤에 바이트 수 (10 진수)가 붙은 인수 목록입니다.
 
 컴파일러에서 생성 된 데코레이팅된 이름을 찾으려면 사용 합니다 [DUMPBIN](dumpbin-reference.md) 도구 또는 링커 [/map](map-generate-mapfile.md) 옵션입니다. 데코레이팅된 이름은 컴파일러별로 다릅니다. .DEF 파일의 데코레이팅된 이름을 내보내는 경우 DLL에 연결된 실행 파일도 동일한 버전의 컴파일러를 사용하여 빌드해야 합니다. 그래야 호출자의 데코레이팅된 이름이 .DEF 파일의 내보낸 이름과 일치하게 됩니다.
 

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
 ms.openlocfilehash: 25b228c16f534ca227d50bfdf632fdacb5703cd9
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292357"
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/fp (부동 소수점 동작 지정)
 
@@ -85,7 +85,7 @@ ms.locfileid: "58565440"
 
 ### <a name="floating-point-environment-access-and-modification"></a>부동 소수점 환경 액세스 및 수정
 
-Microsoft Visual c + + 런타임 액세스 부동 소수점 환경을 수정 하는 여러 함수를 제공 합니다. 여기에 포함 됩니다 [_controlfp](../../c-runtime-library/reference/control87-controlfp-control87-2.md)를 [_clearfp](../../c-runtime-library/reference/clear87-clearfp.md), 및 [_statusfp](../../c-runtime-library/reference/status87-statusfp-statusfp2.md) 및 변형 합니다. 코드에 액세스 하거나 부동 소수점 환경을 수정 하는 경우 올바른 프로그램 동작을 보장 하기 위해 `fenv_access` 을 사용 해야 하거나 하 여는 `/fp:strict` 옵션 또는 사용 하 여는 `fenv_access` pragma를 적용 하려면 이러한 함수에 대 한 합니다. 때 `fenv_access` 는 사용 하지 않는 액세스 또는 부동 소수점 환경의 수정 예기치 않은 프로그램 동작이 발생할: 코드 수 부동 소수점 환경에 요청한 변경 내용을 인식 하지 않으면 부동 소수점 상태 레지스터를 보고 하지 않을 수 있습니다 현재 또는 예상 결과 예기치 않은 부동 소수점 예외가 발생할 수 있습니다 하거나 예상 되는 부동 소수점 예외 발생 하지 않을 수 있습니다.
+Microsoft Visual C++ 런타임에서 액세스 하 고 부동 소수점 환경을 수정할 여러 기능을 제공 합니다. 여기에 포함 됩니다 [_controlfp](../../c-runtime-library/reference/control87-controlfp-control87-2.md)를 [_clearfp](../../c-runtime-library/reference/clear87-clearfp.md), 및 [_statusfp](../../c-runtime-library/reference/status87-statusfp-statusfp2.md) 및 변형 합니다. 코드에 액세스 하거나 부동 소수점 환경을 수정 하는 경우 올바른 프로그램 동작을 보장 하기 위해 `fenv_access` 을 사용 해야 하거나 하 여는 `/fp:strict` 옵션 또는 사용 하 여는 `fenv_access` pragma를 적용 하려면 이러한 함수에 대 한 합니다. 때 `fenv_access` 는 사용 하지 않는 액세스 또는 부동 소수점 환경의 수정 예기치 않은 프로그램 동작이 발생할: 코드 수 부동 소수점 환경에 요청한 변경 내용을 인식 하지 않으면 부동 소수점 상태 레지스터를 보고 하지 않을 수 있습니다 현재 또는 예상 결과 예기치 않은 부동 소수점 예외가 발생할 수 있습니다 하거나 예상 되는 부동 소수점 예외 발생 하지 않을 수 있습니다.
 
 코드에 액세스 또는 부동 소수점 환경을 수정 하는 경우 주의 해야 코드를 결합 하는 경우 여기서 `fenv_access` 하지 않은 코드를 사용 하 여 사용 하도록 설정할지 `fenv_access` 사용 하도록 설정 합니다. 코드에서 있는 `fenv_access` 을 설정 하지 않으면 컴파일러는 부동 소수점 상태 액세스 되거나 수정 되지 하 고 플랫폼 기본 부동 소수점 환경에 적용 되는 합니다. 저장 하 고 제어 되지 않은 함수에 전송 되기 전에 로컬 부동 소수점 환경을 기본 상태로 복원 하는 것이 좋습니다 `fenv_access` 사용 하도록 설정 합니다. 이 예제에서는 방법을 `float_control` pragma를 설정 하 고 복원할 수 있습니다.
 

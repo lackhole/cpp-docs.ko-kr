@@ -8,15 +8,15 @@ helpviewer_keywords:
 - expression evaluation, about expression evaluation
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
 ms.openlocfilehash: d2ce510478bcf1574429c85f704552e6b73100ea
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331215"
 ---
 # <a name="semantics-of-expressions"></a>식의 의미
 
-식은 해당 연산자의 그룹화 및 우선 순위에 따라 계산됩니다. ([연산자 우선순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md) 에 [어휘 규칙](../cpp/lexical-conventions.md), 연산자가 식에 적용 된 c + + 관계를 보여 줍니다.)
+식은 해당 연산자의 그룹화 및 우선 순위에 따라 계산됩니다. ([연산자 우선순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md) 에 [어휘 규칙](../cpp/lexical-conventions.md), 관계를 보여 줍니다는 C++ 연산자가 식에 적용 합니다.)
 
 ## <a name="order-of-evaluation"></a>계산 순서
 
@@ -52,7 +52,7 @@ int main()
 
 1. 다음으로 덧셈(+)의 우선 순위가 높으므로 `a`와 `b`를 곱한 값에 `c`가 더해집니다.
 
-1. 식에서 왼쪽 시프트(<<)의 우선 순위가 가장 낮지만 이 항목은 두 번 발생합니다. 왼쪽 시프트 연산자는 왼쪽에서 오른쪽으로 그룹화하므로 왼쪽 하위 식이 먼저 계산된 다음 오른쪽 하위 식이 계산됩니다.
+1. 왼쪽된 시프트 (<<) 식에서 가장 낮은 우선 순위에 있지만 두 항목이 없습니다. 왼쪽 시프트 연산자는 왼쪽에서 오른쪽으로 그룹화하므로 왼쪽 하위 식이 먼저 계산된 다음 오른쪽 하위 식이 계산됩니다.
 
 괄호를 사용하여 하위 식을 그룹화할 경우 다음 그림에 표시된 것처럼 우선 순위 및 식이 계산되는 순서도 변경됩니다.
 
@@ -70,7 +70,7 @@ C++ 언어는 피연산자를 지정할 때 특정 호환성을 지정합니다.
 |필요한 형식|허용되는 형식|
 |-------------------|-------------------|
 |*type*|`const` *type*<br /> `volatile` *type*<br /> *type*&<br /> `const` *type*&<br /> `volatile` *type*&<br /> `volatile const` *type*<br /> `volatile const` *type*&|
-|*형식* \*|*형식* \*<br /> `const` *형식* \*<br /> `volatile` *형식* \*<br /> `volatile const` *형식* \*|
+|*type* \*|*type* \*<br /> `const` *type* \*<br /> `volatile` *type* \*<br /> `volatile const` *type* \*|
 |`const` *type*|*type*<br /> `const` *type*<br />`const` *type*&|
 |`volatile` *type*|*type*<br /> `volatile` *type*<br /> `volatile` *type*&|
 
@@ -94,7 +94,7 @@ C++ 언어에서는 함수 호출에 대한 인수가 계산되는 순서를 보
 
 현재 C++ 언어 정의는 시퀀스 위치를 지정하지 않습니다. Microsoft C++는 C 연산자를 사용하고 오버로드된 연산자는 사용하지 않는 모든 식에 대해 ANSI C와 동일한 시퀀스 위치를 사용합니다. 연산자가 오버로드되면 연산자 시퀀스에서 함수 호출 시퀀스로 의미 체계가 변경됩니다. Microsoft C++는 다음 시퀀스 위치를 사용합니다.
 
-- 논리 AND 연산자(&&)의 왼쪽 피연산자. 계속하기 전에 논리 AND 연산자의 왼쪽 피연산자가 완전히 계산되고 의도하지 않은 모든 결과가 완료됩니다. 논리 AND 연산자의 오른쪽 피연산자가 계산된다는 보장은 없습니다.
+- 논리 AND 연산자의 왼쪽 피연산자 (& &). 계속하기 전에 논리 AND 연산자의 왼쪽 피연산자가 완전히 계산되고 의도하지 않은 모든 결과가 완료됩니다. 논리 AND 연산자의 오른쪽 피연산자가 계산된다는 보장은 없습니다.
 
 - 논리 OR 연산자의 왼쪽 피연산자 (&#124;&#124;). 계속하기 전에 논리 OR 연산자의 왼쪽 피연산자가 완전히 계산되고 의도하지 않은 모든 결과가 완료됩니다. 논리 OR 연산자의 오른쪽 피연산자가 계산된다는 보장은 없습니다.
 
@@ -118,4 +118,4 @@ C++ 언어에서는 함수 호출에 대한 인수가 계산되는 순서를 보
 
 ## <a name="see-also"></a>참고자료
 
-[식](../cpp/expressions-cpp.md)
+[식(C++)](../cpp/expressions-cpp.md)

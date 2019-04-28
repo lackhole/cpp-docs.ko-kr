@@ -193,11 +193,11 @@ helpviewer_keywords:
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
 ms.openlocfilehash: 6366638ebfd5e78ad517a8913e4276d5cd820670
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62323361"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -333,7 +333,7 @@ class CWinApp : public CWinThread
 
 응용 프로그램 개체는 응용 프로그램 (및 각 인스턴스의)을 초기화 하 고 응용 프로그램을 실행 하는 것에 대 한 멤버 함수를 제공 합니다.
 
-Microsoft Foundation 클래스를 사용 하는 각 응용 프로그램에서 파생 된 개체를 포함할 수 있습니다만 `CWinApp`합니다. 이 개체는 다른 c + +의 전역 개체 생성 될 때 생성 됩니다 및 Windows를 호출 하는 경우 사용할 수 있는 이미는 `WinMain` Microsoft Foundation Class 라이브러리를 제공 하는 함수입니다. 파생 된 선언 `CWinApp` 전역 수준 개체입니다.
+Microsoft Foundation 클래스를 사용 하는 각 응용 프로그램에서 파생 된 개체를 포함할 수 있습니다만 `CWinApp`합니다. 이 개체가 생성 될 때 다른 C++ 전역 개체 생성 되 고 Windows를 호출 하는 경우 사용할 수 있는 이미 합니다 `WinMain` Microsoft Foundation Class 라이브러리를 제공 하는 함수입니다. 파생 된 선언 `CWinApp` 전역 수준 개체입니다.
 
 응용 프로그램 클래스를 파생 하는 경우 `CWinApp`를 재정의 합니다 [InitInstance](#initinstance) 멤버 함수 응용 프로그램의 주 창 개체를 만듭니다.
 

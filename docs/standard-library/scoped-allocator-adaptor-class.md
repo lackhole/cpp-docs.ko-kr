@@ -24,11 +24,11 @@ helpviewer_keywords:
 - std::scoped_allocator_adaptor::select_on_container_copy_construction
 ms.assetid: 0d9b06a1-9a4a-4669-9470-8805cae48e89
 ms.openlocfilehash: c02f5171fac862b6f79e194f5940b0adeb2e93e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348213"
 ---
 # <a name="scopedallocatoradaptor-class"></a>scoped_allocator_adaptor 클래스
 
@@ -124,7 +124,7 @@ pointer allocate(size_type count);pointer allocate(size_type count, const_void_p
 *count*<br/>
 충분한 스토리지를 할당해야 할 요소의 수입니다.
 
-*힌트*<br/>
+*hint*<br/>
 요청 이전에 할당된 개체의 주소를 찾아서 할당자 개체를 지원할 수 있는 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -163,7 +163,7 @@ void construct(pair<Ty1, Ty2>* ptr, pair<Uy1, Uy2>&& right);
 *ptr*<br/>
 개체를 생성할 메모리 위치에 대한 포인터입니다.
 
-*인수*<br/>
+*args*<br/>
 인수 목록입니다.
 
 *first*<br/>
@@ -271,7 +271,7 @@ const outer_allocator_type& outer_allocator() const noexcept;
 
 `Outer::rebind\<Other>::other` 형식을 `scoped_allocator_adaptor\<Other, Inner...>`와 동일한 의미로 정의합니다.
 
-구조체 rebind {형식 정의 other_traits:: rebind\<기타 > Other_alloc; typedef scoped_allocator_adaptor\<Other_alloc, 내부... > 다른;};
+구조체 rebind {형식 정의 other_traits:: rebind\<기타 > Other_alloc; typedef scoped_allocator_adaptor\<Other_alloc, 내부... >. };
 
 ## <a name="scoped_allocator_adaptor"></a>  scoped_allocator_adaptor::scoped_allocator_adaptor 생성자
 
@@ -297,7 +297,7 @@ scoped_allocator_adaptor(Outer2&& al,
 *right*<br/>
 기존 `scoped_allocator_adaptor`입니다.
 
-*Al*<br/>
+*al*<br/>
 외부 할당자로 사용할 기존 할당자입니다.
 
 *rest*<br/>

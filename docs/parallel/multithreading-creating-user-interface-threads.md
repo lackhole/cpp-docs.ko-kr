@@ -12,11 +12,11 @@ helpviewer_keywords:
 - threading [MFC], user interface threads
 ms.assetid: 446925c1-db59-46ea-ae5b-d5ae5d5b91d8
 ms.openlocfilehash: ac22fad95041b07e132d31a2d246e58c3b40d30c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212911"
 ---
 # <a name="multithreading-creating-mfc-user-interface-threads"></a>다중 스레딩: MFC 사용자 인터페이스 스레드 만들기
 
@@ -26,7 +26,7 @@ ms.locfileid: "57293318"
 
 ### <a name="functions-to-override-when-creating-a-user-interface-thread"></a>사용자 인터페이스 스레드를 만들 때 재정의 하려면 함수
 
-|기능|용도|
+|함수|용도|
 |--------------|-------------|
 |[ExitInstance](../mfc/reference/cwinthread-class.md#exitinstance)|스레드가 종료 되 면 정리를 수행 합니다. 일반적으로 재정의 합니다.|
 |[InitInstance](../mfc/reference/cwinthread-class.md#initinstance)|스레드 인스턴스 초기화를 수행 합니다. 재정의 해야 합니다.|

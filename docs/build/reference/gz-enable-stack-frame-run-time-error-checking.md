@@ -11,11 +11,11 @@ helpviewer_keywords:
 - debug builds, catch release-build errors
 ms.assetid: b3efeeff-d5e3-4057-91c9-f6fc73d0270c
 ms.openlocfilehash: 3e6ffce487cc8183e45f3a911e7060ea22b28216
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292059"
 ---
 # <a name="gz-enable-stack-frame-run-time-error-checking"></a>/GZ(스택 프레임 런타임 오류 검사 사용)
 
@@ -35,7 +35,7 @@ ms.locfileid: "57810499"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 

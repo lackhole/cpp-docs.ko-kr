@@ -7,11 +7,11 @@ f1_keywords:
 helpviewer_keywords:
 - isinf function
 ms.openlocfilehash: be99970a0c7b152ba213eabd59b53a7503cd3c54
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331612"
 ---
 # <a name="isinf"></a>isinf
 
@@ -37,15 +37,15 @@ inline bool isinf(
 
 ## <a name="return-value"></a>반환 값
 
-**isinf** 0이 아닌 값을 반환 합니다 (**true** c + + 코드에서) 하는 경우 인수 *x* 는 양수 또는 음수 무한대. **isinf** 0을 반환 합니다 (**false** c + + 코드에서) 인수가 유한 인 경우 또는 NAN입니다. 일반 및 subnormal 부동 소수점 값은 유한 간주 됩니다.
+**isinf** 0이 아닌 값을 반환 합니다 (**true** 에서 C++ 코드) 하는 경우 인수 *x* 는 양수 또는 음수 무한대. **isinf** 0을 반환 합니다 (**false** 에서 C++ 코드) 인수가 유한 인 경우 또는 NAN입니다. 일반 및 subnormal 부동 소수점 값은 유한 간주 됩니다.
 
 ## <a name="remarks"></a>설명
 
-**isinf** 는 C 및 c + +로 컴파일할 때 인라인 템플릿 함수를 컴파일할 때 매크로입니다.
+**isinf** 매크로로 컴파일할 때 인라인 템플릿 함수 C로 컴파일될 때 C++합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더(C)|필수 헤더(C++)|
+|함수|필수 헤더(C)|필수 헤더(C++)|
 |--------------|---------------------------|-------------------------------|
 |**isinf**|\<math.h>|\<math.h> 또는 \<cmath>|
 

@@ -1,15 +1,15 @@
 ---
-title: '연습: 컴파일 C + + /cli 프로그램 명령줄에서'
+title: '연습: 컴파일하는 C++on the Command Line /CLI 프로그램'
 ms.date: 09/24/2018
 ms.assetid: cef41c88-faf9-439d-8423-25aa3f5674dd
 ms.openlocfilehash: c90d2c915db7264dc1b4e4807803e063c2a24fc7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62314171"
 ---
-# <a name="walkthrough-compiling-a-ccli-program-on-the-command-line"></a>연습: 컴파일 C + + /cli 프로그램 명령줄에서
+# <a name="walkthrough-compiling-a-ccli-program-on-the-command-line"></a>연습: 컴파일하는 C++on the Command Line /CLI 프로그램
 
 CLR(공용 언어 런타임)을 대상으로 하는 Visual C++ 프로그램을 만들어 .NET Framework를 사용하여 명령줄에서 빌드할 수 있습니다. Visual C++은 .NET 프로그래밍 모델을 대상으로 하는 추가 형식 및 연산자가 있는 C++/CLI 프로그래밍 언어를 지원합니다. C +에 대 한 일반 정보에 대 한 + CLI 언어 참조 [.NET 프로그래밍을 사용 하 여 C++ /cli (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 

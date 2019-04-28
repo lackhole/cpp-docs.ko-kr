@@ -3,11 +3,11 @@ title: 이벤트(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
 ms.openlocfilehash: 8e7e8616831e66a7f59ed849fc92ef2553aadb5b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301541"
 ---
 # <a name="events-ccx"></a>이벤트(C++/CX)
 
@@ -62,5 +62,5 @@ ref 클래스 또는 인터페이스에서 이벤트를 선언할 수 있으며,
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
 [대리자](../cppcx/delegates-c-cx.md)<br/>
-[Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[네임 스페이스 참조](../cppcx/namespaces-reference-c-cx.md)
+[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

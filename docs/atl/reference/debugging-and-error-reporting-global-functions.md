@@ -9,11 +9,11 @@ helpviewer_keywords:
 - functions [ATL], error reporting
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
 ms.openlocfilehash: f7483b7473383958089b0c88d0b3c2645ddc2a4f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276668"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>디버깅 및 오류 보고 전역 함수
 
@@ -156,7 +156,7 @@ HRESULT WINAPI AtlReportError(
 [!code-cpp[NVC_ATL_COM#52](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_1.cpp)]
 
 > [!CAUTION]
->  사용 하지 않는 `AtlReportError` c + +에서 catch 처리기입니다. 이러한 함수의 재정의 중 일부 사용 하 여 ATL 문자열 변환 매크로 내부적으로 사용 된 `_alloca` 내부적으로 작동 합니다. 사용 하 여 `AtlReportError` c + + catch 처리기 c + + catch 처리기에서 예외를 일으킬 수 있습니다.
+>  사용 하지 마세요 `AtlReportError` 에서 C++ 처리기를 catch 합니다. 이러한 함수의 재정의 중 일부 사용 하 여 ATL 문자열 변환 매크로 내부적으로 사용 된 `_alloca` 내부적으로 작동 합니다. 사용 하 여 `AtlReportError` 에 C++ catch 처리기에서 예외를 일으킬 수 있습니다 C++ catch 처리기입니다.
 
 ### <a name="requirements"></a>요구 사항
 

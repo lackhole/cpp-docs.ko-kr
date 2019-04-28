@@ -5,11 +5,11 @@ helpviewer_keywords:
 - naked functions [C++]
 ms.assetid: ff203858-2dd3-4a76-8a57-d0d06817adef
 ms.openlocfilehash: c813b97b85469165aae892b0a4cce888112e3dc5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267378"
 ---
 # <a name="rules-and-limitations-for-naked-functions"></a>Naked 함수의 규칙 및 제한
 
@@ -33,7 +33,7 @@ naked 함수에는 다음과 같은 규칙과 제한이 적용됩니다.
 
 - 합니다 **naked** 키워드는로 컴파일하는 경우 무시 됩니다 [/clr](../build/reference/clr-common-language-runtime-compilation.md)합니다.
 
-- 에 대 한 [__fastcall](../cpp/fastcall.md) naked 함수의 경우, C/c + + 코드에 레지스터 인수 중 하나에 대 한 참조를 있을 때마다 프롤로그 코드를 해당 변수의 스택 위치에 해당 레지스터의 값을 저장 해야 합니다. 예를 들어:
+- 에 대 한 [__fastcall](../cpp/fastcall.md) naked 함수의 경우, C에 대 한 참조를 발생할 때마다 /C++ 코드에 레지스터 인수 중 하나로, prolog 코드 해당 변수의 스택 위치에 해당 레지스터의 값을 저장 해야 합니다. 예를 들어:
 
 ```cpp
 // nkdfastcl.cpp

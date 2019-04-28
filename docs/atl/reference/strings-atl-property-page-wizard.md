@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ATL Property Page Wizard, strings
 ms.assetid: 00547db6-911f-49eb-92e1-2ba67079d4df
 ms.openlocfilehash: 199c6969535afdd668440ea31d004aecc507ba42
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276179"
 ---
 # <a name="strings-atl-property-page-wizard"></a>문자열, ATL 속성 페이지 마법사
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - C4938
 ms.assetid: 6acac81a-9d23-465e-b700-ed4b6e8edcd0
 ms.openlocfilehash: da2725a398a99b5943e128038e75622115a9e34f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62280206"
 ---
 # <a name="compiler-warning-level-4-c4938"></a>컴파일러 경고(수준 4) C4938
 
-'var': /fp:strict 또는 #pragma fenv_access를 지정하면 부동 소수점 환산(reduction) 변수로 인해 일관성 없는 결과가 발생할 수 있습니다.
+' var': 부동 지점 환산 변수 /fp 결과가 일치 하지 않을 수 있습니다: strict 또는 #pragma fenv_access
 
 합계가 다른 순서로 계산되므로 OpenMP 부동 소수점 환산(reduction)과 함께 [/fp:strict](../../build/reference/fp-specify-floating-point-behavior.md) 또는 [fenv_access](../../preprocessor/fenv-access.md) 를 사용하면 안 됩니다. 따라서 결과가 /openmp를 사용하지 않을 경우의 결과와 다를 수 있습니다.
 
