@@ -30,11 +30,11 @@ helpviewer_keywords:
 - puttc function
 ms.assetid: a37b2e82-9d88-4565-8190-ff8d04c0ddb9
 ms.openlocfilehash: de87ca4996540737dad319fc920f4c76415250b9
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62284878"
 ---
 # <a name="putc-putwc"></a>putc, putwc
 
@@ -58,7 +58,7 @@ wint_t putwc(
 *c*<br/>
 쓸 문자입니다.
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값

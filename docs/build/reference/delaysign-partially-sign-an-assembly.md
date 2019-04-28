@@ -10,11 +10,11 @@ helpviewer_keywords:
 - -DELAYSIGN linker option
 ms.assetid: 15244d30-3ecb-492f-a408-ffe81f38de20
 ms.openlocfilehash: 65585b856627ad9fda5a8f8bfad6ad81fef0f81c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62293838"
 ---
 # <a name="delaysign-partially-sign-an-assembly"></a>/DELAYSIGN(어셈블리에 부분적으로 서명)
 
@@ -37,7 +37,7 @@ ms.locfileid: "57807652"
 
 예를 들어,를 사용 하 여 **/DELAYSIGN** 테스터가 어셈블리를 전역 캐시에 넣을 수 있습니다. 테스트를 마친 후에 어셈블리의 개인 키를 배치 하 여 어셈블리에 완전히 서명할 수 있습니다.
 
-참조 [강력한 이름 어셈블리 (어셈블리 서명) (C + + /cli CLI)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md) 하 고 [어셈블리 서명 연기](/dotnet/framework/app-domains/delay-sign-assembly) 어셈블리 서명에 대 한 자세한 내용은 합니다.
+참조 [강력한 이름 어셈블리 (어셈블리 서명) (C++/CLI)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md) 하 고 [어셈블리 서명 연기](/dotnet/framework/app-domains/delay-sign-assembly) 어셈블리 서명에 대 한 자세한 내용은 합니다.
 
 어셈블리 생성에 영향을 주는 링커 옵션도 있습니다.
 
@@ -53,7 +53,7 @@ ms.locfileid: "57807652"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 클릭 합니다 **링커** 폴더입니다.
 

@@ -31,11 +31,11 @@ helpviewer_keywords:
 - casinl function
 ms.assetid: b75d1455-7b1e-43b0-bd46-c530be190be9
 ms.openlocfilehash: 209c3da6d6ed03cb5a5b129003c999b002a1a6b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335596"
 ---
 # <a name="casin-casinf-casinl"></a>casin, casinf, casinl
 
@@ -72,13 +72,13 @@ _Lcomplex casinl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **casin** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **casin** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **casin** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **casin** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**casin**하십시오 **casinf**, **casinl**|\<complex.h>|\<ccomplex>|
+|**casin**,               **casinf**, **casinl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

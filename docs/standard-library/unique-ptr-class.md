@@ -23,11 +23,11 @@ helpviewer_keywords:
 - std::unique_ptr [C++], swap
 ms.assetid: acdf046b-831e-4a4a-83aa-6d4ee467db9a
 ms.openlocfilehash: b0751d7716e2f8587ab410e57c2bea17c5dd3e21
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295463"
 ---
 # <a name="uniqueptr-class"></a>unique_ptr 클래스
 
@@ -99,7 +99,7 @@ public:
 *Nptr*<br/>
 `rvalue` 형식의 `std::nullptr_t`입니다.
 
-*ptr*<br/>
+*Ptr*<br/>
 `pointer`
 
 *삭제 자*<br/>
@@ -117,7 +117,7 @@ public:
 
 `unique_ptr`은 리소스를 고유하게 관리합니다. 각 `unique_ptr` 개체는 null 포인터를 소유 또는 저장하는 개체에 대해 포인터를 저장합니다. 리소스는 둘 이상의 `unique_ptr` 개체가 소유할 수 없으며, 특정 리소스를 소유하는 `unique_ptr` 개체가 제거되면 리소스가 해제됩니다. `unique_ptr` 개체는 이동할 수 있지만 복사할 수는 없습니다. 자세한 내용은 [Rvalue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
-리소스는 특정 `deleter`에 대해 리소스가 할당된 방식을 알고 있는 `Del` 형식의 저장된 `unique_ptr` 개체를 호출하여 해제됩니다. 기본값 `deleter` `default_delete<T>` 리소스에서 가리키는 가정 `ptr` 할당 된 `new`, 및 호출 하 여 해제할 수는 `delete _Ptr`합니다. (부분 특수화 `unique_ptr<T[]>`는 `new[]`로 할당된 배열 개체를 관리하며, delete[] `deleter`을 호출하는 데 전문화된 기본 `default_delete<T[]>``ptr`이 있습니다.)
+리소스는 특정 `deleter`에 대해 리소스가 할당된 방식을 알고 있는 `Del` 형식의 저장된 `unique_ptr` 개체를 호출하여 해제됩니다. 기본값 `deleter` `default_delete<T>` 리소스에서 가리키는 가정 `ptr` 할당 된 `new`, 및 호출 하 여 해제할 수는 `delete _Ptr`합니다. (부분 특수화 `unique_ptr<T[]>`로 할당 된 배열 개체를 관리 `new[]`, 있고 기본값 `deleter` `default_delete<T[]>`delete 호출 하는 데 전문화 된, `ptr`.)
 
 소유한 리소스에 대한 저장된 포인터, `stored_ptr`에는 `pointer`가 있습니다. 정의된 경우 `Del::pointer`이고, 정의되지 않은 경우 `T *`입니다. `deleter`가 상태 비저장일 경우 저장된 `stored_deleter` 개체 `deleter`는 개체에서 공간을 차지하지 않습니다. `Del`는 참조 형식이 될 수 있습니다.
 

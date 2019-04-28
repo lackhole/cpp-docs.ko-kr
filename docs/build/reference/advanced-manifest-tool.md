@@ -9,11 +9,11 @@ f1_keywords:
 - VC.Project.VCManifestTool.KeyContainer
 ms.assetid: 3d587366-05ea-4956-a978-313069660735
 ms.openlocfilehash: a20e474deb69099c53ad656dda5406e7161a1695
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295140"
 ---
 # <a name="advanced-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>고급, 매니페스트 도구, 구성 속성, &lt;Projectname&gt; 속성 페이지 대화 상자
 
@@ -36,4 +36,4 @@ ms.locfileid: "57827167"
 [\<file> 요소](/visualstudio/deployment/file-element-clickonce-application)<br>
 [ndptecclick](/visualstudio/deployment/clickonce-application-manifest)<br>
 [매니페스트 도구 속성 페이지](manifest-tool-property-pages.md)<br>
-[Visual Studio에서 속성을 빌드하고 c + + 컴파일러를 설정 합니다.](../working-with-project-properties.md)
+[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)

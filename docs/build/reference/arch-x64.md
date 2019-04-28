@@ -3,11 +3,11 @@ title: /arch(x64)
 ms.date: 11/04/2016
 ms.assetid: ecda22bf-5bed-43f4-99fb-88aedd83d9d8
 ms.openlocfilehash: c515307ee3a49ef746eea939e90d7aecbd661b95
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295287"
 ---
 # <a name="arch-x64"></a>/arch(x64)
 
@@ -35,7 +35,7 @@ Intel 고급 벡터 확장명 2 명령을 사용하도록 설정합니다.
 
 ### <a name="to-set-the-archavx-or-archavx2-compiler-option-in-visual-studio"></a>Visual Studio에서 /arch:AVX 또는 /arch:AVX2 컴파일러 옵션을 설정하려면
 
-1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **구성 속성**, **C/C++** 폴더를 선택합니다.
 

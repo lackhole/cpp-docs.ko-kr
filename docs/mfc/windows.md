@@ -8,17 +8,17 @@ helpviewer_keywords:
 - window objects [MFC], MFC Framework
 ms.assetid: dd92bf34-842e-40fe-8aea-3028b55314d5
 ms.openlocfilehash: ee5e6fef58b9ddfa2172b9024d414bdb03e93283
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62338001"
 ---
 # <a name="windows"></a>Windows
 
 다음이의 문서에서는 MFC 프레임 워크의 창 개체를 설명합니다. 모든 MFC 창 클래스에서 파생 [CWnd](../mfc/reference/cwnd-class.md)프레임 창, 뷰, 대화 상자 및 컨트롤 포함 합니다.
 
-문서의 첫 번째 그룹 설명 [창 개체](../mfc/window-objects.md) 일반적입니다. C + + 창 개체에 대 한 일반 정보에 대 한이 그룹에 참조 캡슐화 하는 방법을 `HWND`, 및 자식 창 같은 고유한 창을 만들 때의 사용 방법.
+문서의 첫 번째 그룹 설명 [창 개체](../mfc/window-objects.md) 일반적입니다. 일반 정보에 대 한이 그룹에 대 한 참조 C++ 창 개체를 캡슐화 하는 방법을 `HWND`, 및 자식 창 같은 고유한 창을 만들 때의 사용 방법.
 
 문서의 두 번째 그룹 설명 [프레임 창](../mfc/frame-windows.md)-콘텐츠에 대 한 프레임을 둔 windows-특히. 이 그룹에 대 한 MFC 프레임 워크의 프레임 창 및 컨트롤 막대 및 뷰를 포함 하 여 프레임의 내용을 관리 하는 방법에 대 한 정보를 참조 하십시오.
 
@@ -28,7 +28,7 @@ ms.locfileid: "57326662"
 
 - [창 개체](../mfc/window-objects.md)
 
-- [관계는 c + + 창 개체와 HWND 처리](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md)
+- [관계는 C++ 창 개체와 HWND 처리](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md)
 
 - [파생 된 창 클래스](../mfc/derived-window-classes.md)
 

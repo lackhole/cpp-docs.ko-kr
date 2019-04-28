@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2249
 ms.assetid: bdd6697c-e04b-49b9-8e40-d9eb6d74f2b6
 ms.openlocfilehash: f3f82549cf5d9230adfee7e83248e92f8e93e769
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301346"
 ---
 # <a name="compiler-error-c2249"></a>컴파일러 오류 C2249
 
@@ -42,7 +42,7 @@ int main() {
 
 ## <a name="example"></a>예제
 
-C2249 다른 스트림에 스트림을 c + + 표준 라이브러리에서 할당 하려는 경우에 발생할 수 있습니다.  다음 샘플 C2249를 생성합니다.
+스트림을 할당 하려는 경우에 C2249 발생할 수 있습니다는 C++ 다른 스트림에 표준 라이브러리입니다.  다음 샘플 C2249를 생성합니다.
 
 ```
 // C2249_2.cpp

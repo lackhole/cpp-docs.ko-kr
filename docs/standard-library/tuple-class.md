@@ -8,11 +8,11 @@ helpviewer_keywords:
 - tuple class
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
 ms.openlocfilehash: 7e85ad445743cc02ba078eb3c09342f69915c09c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62279060"
 ---
 # <a name="tuple-class"></a>튜플 클래스
 
@@ -144,7 +144,7 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>매개 변수
 
-*취소*<br/>
+*UN*<br/>
 N번째 복사된 튜플 요소의 형식입니다.
 
 *right*<br/>
@@ -252,7 +252,7 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>매개 변수
 
-*취소*<br/>
+*UN*<br/>
 N번째 복사된 튜플 요소의 형식입니다.
 
 *right*<br/>

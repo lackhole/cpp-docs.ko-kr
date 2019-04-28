@@ -3,17 +3,17 @@ title: 컬렉션(C++/CX)
 ms.date: 11/19/2018
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
 ms.openlocfilehash: 850ac0f4801a13a5407f8fe008740bbfa21cc02c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347345"
 ---
 # <a name="collections-ccx"></a>컬렉션(C++/CX)
 
-C + + /CX 프로그램 가능 표준 템플릿 라이브러리 (STL) 컨테이너 또는 다른 모든 사용자 정의 컬렉션 형식을 자유롭게 사용할 합니다. 그러나 전달 하는 경우 컬렉션 앞뒤로 전체 Windows 런타임 응용 프로그램 이진 인터페이스 (ABI)에서, 예를 들어 XAML 컨트롤 또는 JavaScript 클라이언트로-Windows 런타임 컬렉션 형식을 사용 해야 합니다.
+에 C++/CX 프로그램을 표준 템플릿 라이브러리 (STL) 컨테이너 또는 다른 모든 사용자 정의 컬렉션 형식을 자유롭게 사용할 확인 수 있습니다. 그러나 전달 하는 경우 컬렉션 앞뒤로 전체 Windows 런타임 응용 프로그램 이진 인터페이스 (ABI)에서, 예를 들어 XAML 컨트롤 또는 JavaScript 클라이언트로-Windows 런타임 컬렉션 형식을 사용 해야 합니다.
 
-컬렉션 및 관련된 형식 및 C +에 대 한 인터페이스를 정의 하는 Windows 런타임 + CX collection.h 헤더 파일의 구체적 c + + 구현을 제공 합니다. 다음 그림에서는 컬렉션 형식 간의 관계를 보여 줍니다.
+컬렉션 및 관련된 형식의 인터페이스를 정의 하는 Windows 런타임 및 C++/CX 구체적인 제공 C++ collection.h 헤더 파일에 구현 합니다. 다음 그림에서는 컬렉션 형식 간의 관계를 보여 줍니다.
 
 ![C&#43;&#43;&#47;컬렉션 형식에 대 한 /CX 상속 트리](../cppcx/media/cppcxcollectionsinheritancetree.png "C&#43;&#43;&#47;컬렉션 형식에 대 한 /CX 상속 트리")
 
@@ -28,7 +28,7 @@ C + + /CX 프로그램 가능 표준 템플릿 라이브러리 (STL) 컨테이�
    > [!IMPORTANT]
    > 프록시 반복기 `VectorIterator` 및 `VectorViewIterator` 는 프록시 개체 `VectoryProxy<T>` 및 `ArrowProxy<T>` 를 활용하여 STL 컨테이너에 사용할 수 있게 만듭니다. 자세한 내용은 이 문서 뒷부분의 "VectorProxy 요소"를 참조하세요.
 
-- C + + /cli CX 컬렉션 형식은 STL 컨테이너 지 원하는 동일한 스레드 보안 보장 합니다.
+- C++/CX 컬렉션 형식은 STL 컨테이너 지 원하는 동일한 스레드 보안 보장 합니다.
 
 - [Windows::Foundation::Collections::IObservableVector](/uwp/api/Windows.Foundation.Collections.IObservableVector_T_) 및 [Windows::Foundation::Collections::IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) 은 컬렉션이 다양한 방식으로 변경될 때 발생하는 이벤트를 정의합니다. 이러한 인터페이스를 구현하여  [Platform::Collections::Map](../cppcx/platform-collections-map-class.md) 및 [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) 는 XAML 컬렉션을 사용한 데이터 바인딩을 지원합니다. 예를 들어, `Vector` 에 데이터 바인딩된 `Grid`가 있는 경우 컬렉션에 항목을 추가하면 변경 내용이 Grid UI에 반영됩니다.
 
@@ -96,7 +96,7 @@ void FindButton(UIElementCollection^ col)
 
 ## <a name="collection-types"></a>컬렉션 형식
 
-컬렉션은 네 가지 범주로 구분됩니다(수정 가능한 버전 및 읽기 전용 버전의 시퀀스 컬렉션과 연결 컬렉션). 또한 C + + /cli CX는 컬렉션 액세스를 간소화 하는 세 가지 반복기 클래스를 제공 하 여 컬렉션을 향상 시킵니다.
+컬렉션은 네 가지 범주로 구분됩니다(수정 가능한 버전 및 읽기 전용 버전의 시퀀스 컬렉션과 연결 컬렉션). 또한 C++/CX는 컬렉션 액세스를 간소화 하는 세 가지 반복기 클래스를 제공 하 여 컬렉션을 향상 시킵니다.
 
 수정 가능한 컬렉션의 요소는 변경할 수 있지만 읽기 전용 컬렉션( *뷰*라고 함)의 요소는 읽을 수만 있습니다. 요소를 [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) 하거나[Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md) 반복기 또는 컬렉션의를 사용 하 여 컬렉션에 액세스할 수 [vector:: getat](../cppcx/platform-collections-vector-class.md#getat) 및 인덱스입니다. 연결 컬렉션의 요소 컬렉션을 사용 하 여 액세스할 수 있습니다 [map:: lookup](../cppcx/platform-collections-map-class.md#lookup) 및 키입니다.
 
@@ -125,7 +125,7 @@ STL  `const` 임의 액세스 반복기의 요구 사항을 충족하는 STL 반
 
 ### <a name="begin-and-end-functions"></a>begin() 및 end() 함수
 
-처리 하는 데 STL의 사용을 간소화 하 `Vector`, `VectorView`, `Map`, `MapView`, 및 `Windows::Foundation::Collections` 개체를 C + + CX의 오버 로드를 지원 합니다 [begin 함수](../cppcx/begin-function.md) 및 [끝 함수](../cppcx/end-function.md) 비 멤버 함수입니다.
+처리 하는 데 STL의 사용을 간소화 하 `Vector`, `VectorView`, `Map`, `MapView`, 및 `Windows::Foundation::Collections` 개체 C++/CX 오버 로드를 지원 합니다 [begin 함수](../cppcx/begin-function.md) 및 [end 함수](../cppcx/end-function.md) 비 멤버 함수입니다.
 
 다음 표에서는 사용 가능한 반복기 및 함수를 보여 줍니다.
 
@@ -146,5 +146,5 @@ STL  `const` 임의 액세스 반복기의 요구 사항을 충족하는 STL 반
 ## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
-[Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[네임 스페이스 참조](../cppcx/namespaces-reference-c-cx.md)
+[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

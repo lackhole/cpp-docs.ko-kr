@@ -11,11 +11,11 @@ helpviewer_keywords:
 - sockets [MFC], MFC
 ms.assetid: 1f3c476a-9c68-49fe-9a25-d22971a334d0
 ms.openlocfilehash: 9992d2054c04eea1b3b63d591601acf0091acb5e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348564"
 ---
 # <a name="windows-sockets-in-mfc"></a>MFC의 Windows 소켓
 
@@ -32,7 +32,7 @@ Windows 소켓, 소켓 개념에 대 한 설명과 함께 대 한 정보를 참�
 
 - `CAsyncSocket`
 
-   이 클래스는 Windows Sockets API를 캡슐화합니다. [CAsyncSocket](../mfc/reference/casyncsocket-class.md) 네트워크 프로그래밍을 알지만 소켓 API에 직접 프로그래밍의 유연성을 원하는 및 네트워크 이벤트 알림에 대 한 콜백 함수에서 편리 하 게 할지는 프로그래머에 게 적합 합니다. 소켓을 사용 하 여 c + +에서에 대 한 개체 지향 형식 패키징 이외의으로이 클래스를 제공 하는 유일한 추가 추상화는를 콜백으로 특정 소켓 관련 Windows 메시지를 변환 합니다. 자세한 내용은 참조 하세요. [Windows 소켓: 알림 소켓](../mfc/windows-sockets-socket-notifications.md)합니다.
+   이 클래스는 Windows Sockets API를 캡슐화합니다. [CAsyncSocket](../mfc/reference/casyncsocket-class.md) 네트워크 프로그래밍을 알지만 소켓 API에 직접 프로그래밍의 유연성을 원하는 및 네트워크 이벤트 알림에 대 한 콜백 함수에서 편리 하 게 할지는 프로그래머에 게 적합 합니다. 패키징 소켓에서 사용 하기 위해 개체 지향 형식에서 이외의 C++를이 클래스를 제공 하는 유일한 추가 추상화 콜백이 특정 소켓 관련 Windows 메시지 변환 됩니다. 자세한 내용은 참조 하세요. [Windows 소켓: 알림 소켓](../mfc/windows-sockets-socket-notifications.md)합니다.
 
 - `CSocket`
 
@@ -42,23 +42,23 @@ Windows 소켓, 소켓 개념에 대 한 설명과 함께 대 한 정보를 참�
 
 ##  <a name="_core_mfc_socket_samples_and_windows_sockets_dlls"></a> Windows 소켓 Dll
 
-Microsoft Windows 운영 체제는 Windows 소켓 동적 연결 라이브러리 (DLL)를 제공합니다. Visual c + +에는 적절 한 헤더 파일, 라이브러리 및 Windows Sockets 사양을 제공합니다.
+Microsoft Windows 운영 체제는 Windows 소켓 동적 연결 라이브러리 (DLL)를 제공합니다. Visual C++ 적절 한 헤더 파일, 라이브러리 및 Windows Sockets 사양을 제공 합니다.
 
 Windows 소켓에 대 한 자세한 내용은 다음을 참조 하세요.
 
-- [Windows 소켓: Stream 소켓](../mfc/windows-sockets-stream-sockets.md)
+- [Windows 소켓: 스트림 소켓](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows 소켓: 데이터 그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows 소켓: 데이터그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
 
-- [Windows 소켓: 소켓을 사용 하 여 아카이브를 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows 소켓: 소켓과 아카이브 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows 소켓: 작업 시퀀스](../mfc/windows-sockets-sequence-of-operations.md)
+- [Windows 소켓: 작업 순서](../mfc/windows-sockets-sequence-of-operations.md)
 
-- [Windows 소켓: 아카이브를 사용 하는 소켓의 예](../mfc/windows-sockets-example-of-sockets-using-archives.md)
+- [Windows 소켓: 아카이브를 사용하는 소켓의 예](../mfc/windows-sockets-example-of-sockets-using-archives.md)
 
-- [Windows 소켓: 보관이 포함 된 소켓의 작동 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+- [Windows 소켓: 소켓과 아카이브를 함께 사용하는 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
 
-- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
 - [Windows 소켓: 소켓 클래스에서 파생](../mfc/windows-sockets-deriving-from-socket-classes.md)
 

@@ -25,11 +25,11 @@ helpviewer_keywords:
 - inline expansion, compiler option
 ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
 ms.openlocfilehash: 6bf16e5725916e81e64d80c0a1f96bf502c8826c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320229"
 ---
 # <a name="ob-inline-function-expansion"></a>/Ob(인라인 함수 확장)
 
@@ -45,11 +45,10 @@ ms.locfileid: "57807504"
 인라인 확장을 사용하지 않도록 설정합니다. 기본적으로 모든 함수에서 컴파일러의 판단에 따라 확장 발생 라고도 *자동 인라인*합니다.
 
 **1**<br/>
-표시 된 확장 [인라인](../../cpp/inline-functions-cpp.md)를 `__inline`, 또는 `__forceinline`, 또는 클래스 선언에 정의 된 c + + 멤버 함수입니다.
+표시 된 확장 [인라인](../../cpp/inline-functions-cpp.md)를 `__inline`, 또는 `__forceinline`, 또는 C++ 클래스 선언에 정의 된 멤버 함수입니다.
 
 **2**<br/>
-기본값입니다. 
-  `inline`, `__inline` 또는 `__forceinline`으로 표시된 함수와 컴파일러에서 선택한 기타 함수를 확장합니다.
+기본값입니다. `inline`, `__inline` 또는 `__forceinline`으로 표시된 함수와 컴파일러에서 선택한 기타 함수를 확장합니다.
 
 **/ Ob2** 때 적용 됩니다 [/o1, / o2 (크기 최소화, 속도 최대화)](o1-o2-minimize-size-maximize-speed.md) 하거나 [/Ox (사용 가장 속도 최적화)](ox-full-optimization.md) 사용 됩니다.
 
@@ -66,9 +65,9 @@ ms.locfileid: "57807504"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 확장 **구성 속성**를 **C/c + +** 를 선택 하 고 **최적화**합니다.
+1. 확장 **구성 속성**를 **C /C++** 를 선택 하 고 **최적화**.
 
 1. 수정 된 **인라인 함수 확장** 속성입니다.
 

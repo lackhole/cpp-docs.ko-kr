@@ -13,11 +13,11 @@ helpviewer_keywords:
 - -DELAY linker option
 ms.assetid: 9334b332-cc58-4dae-b10f-a4c75972d50c
 ms.openlocfilehash: d3c32ba04cbad509ff2819020a35102698d6ceb3
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272128"
 ---
 # <a name="delay-delay-load-import-settings"></a>/DELAY(가져오기 설정 로드 지연)
 
@@ -44,7 +44,7 @@ ms.locfileid: "57821341"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 정보를 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 정보를 참조 하세요 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 확장 **구성 속성**를 **링커**를 선택한 후 **고급**합니다.
 

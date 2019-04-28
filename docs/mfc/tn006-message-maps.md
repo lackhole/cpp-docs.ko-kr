@@ -20,11 +20,11 @@ helpviewer_keywords:
 - message maps [MFC], Windows messaging
 ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
 ms.openlocfilehash: 3536cb215da04fb7114853d3fa5d764585cbb58e
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306150"
 ---
 # <a name="tn006-message-maps"></a>TN006: 메시지 맵
 
@@ -38,7 +38,7 @@ Windows 시스템에 정의 된 메시지 수가 시간이 지남에 따라 변�
 
 ## <a name="overview"></a>개요
 
-MFC는 창에 전송 된 메시지를 처리 하도록 기존 Windows 기반 프로그램에 사용 된 switch 문 대신을 제공 합니다. 메시지 창에 의해 수신 되 면 적절 한 메서드는 자동으로 되도록 메시지에서 매핑된 메서드를 정의할 수 있습니다. 이 메시지 맵 기능은 가상 함수를 유사 하 게 만들어졌지만 c + + 가상 함수를 사용 하 여 불가능 추가 이점이 있습니다.
+MFC는 창에 전송 된 메시지를 처리 하도록 기존 Windows 기반 프로그램에 사용 된 switch 문 대신을 제공 합니다. 메시지 창에 의해 수신 되 면 적절 한 메서드는 자동으로 되도록 메시지에서 매핑된 메서드를 정의할 수 있습니다. 이 메시지 맵 기능 가상 함수를 유사 하 게 설계 되어 있지만 추가 이점이 불가능 C++ 가상 함수입니다.
 
 ## <a name="defining-a-message-map"></a>메시지 맵 정의
 
@@ -117,7 +117,7 @@ pWnd->SendMessage(WM_MYMESSAGE);
 이 방법을 사용 하는 사용자 정의 메시지의 범위는 0x7fff WM_USER 범위에 있어야 합니다.
 
 > [!NOTE]
-> 클래스 마법사 클래스 마법사 사용자 인터페이스에서 입력 ON_MESSAGE 처리기 루틴을 지원 하지 않습니다. Visual c + + 편집기에서 수동으로 입력 해야 합니다. 클래스 마법사는 이러한 항목을 구문 분석를 다른 메시지 맵 항목 처럼을 탐색할 수 있도록 합니다.
+> 클래스 마법사 클래스 마법사 사용자 인터페이스에서 입력 ON_MESSAGE 처리기 루틴을 지원 하지 않습니다. 시각적 개체에서 수동으로 입력 해야 합니다 C++ 편집기입니다. 클래스 마법사는 이러한 항목을 구문 분석를 다른 메시지 맵 항목 처럼을 탐색할 수 있도록 합니다.
 
 ## <a name="registered-windows-messages"></a>등록 된 Windows 메시지
 
@@ -170,7 +170,7 @@ ON_UPDATE_COMMAND_UI(id, memberFxn)
 
 이러한 형식의 예:
 
-- 내부 Resource.h (일반적으로 Visual c + +에서 생성)
+- Resource.h 내부 (일반적으로 시각적 개체에서 생성 된 C++)
 
     ```cpp
     #define    ID_MYCMD      100

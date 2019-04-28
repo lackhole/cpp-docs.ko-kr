@@ -9,11 +9,11 @@ helpviewer_keywords:
 - projects [C++], properties
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
 ms.openlocfilehash: ab5456bfc8a1b8305813f4ee4a4399091de15aee
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58564916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62314123"
 ---
 # <a name="set-compiler-and-build-properties"></a>컴파일러 설정 및 빌드 속성
 
@@ -48,7 +48,7 @@ IDE에서 프로젝트를 빌드하는 데 필요한 모든 정보는 *속성*�
 
 - [C++ 디버그 구성에 대한 프로젝트 설정](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)
 - [디버거 설정 및 준비](/visualstudio/debugger/debugger-settings-and-preparation)
-- [디버깅 준비: Visual c + + 프로젝트 형식](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
+- [디버깅 준비: Visual C++ 프로젝트 형식](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
 - [Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)
 
 ## <a name="c-compiler-and-linker-options"></a>C++ 컴파일러 및 링커 옵션

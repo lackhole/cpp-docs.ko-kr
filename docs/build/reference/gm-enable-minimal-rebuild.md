@@ -14,11 +14,11 @@ helpviewer_keywords:
 - -Gm compiler option [C++]
 ms.assetid: d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59
 ms.openlocfilehash: 4a66dda37b84119a4b8bc23f7fc719d50e8786f9
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292070"
 ---
 # <a name="gm-enable-minimal-rebuild"></a>/Gm(최소 다시 빌드 사용)
 
@@ -43,9 +43,9 @@ Incremental linker를 사용 하 여.obj 파일에 포함 된 Windows 메타 데
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **코드 생성** 속성 페이지.
+1. **구성 속성** > **C/C++** > **코드 생성** 속성 페이지를 선택합니다.
 
 1. 수정 된 **최소 다시 빌드** 속성입니다.
 

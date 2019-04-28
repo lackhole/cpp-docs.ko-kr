@@ -8,11 +8,11 @@ helpviewer_keywords:
 - NMAKE program
 ms.assetid: 24fab6e3-7e43-4da4-957a-88afbbcf8661
 ms.openlocfilehash: 47836973680fba311fe70cb1a24bb1483ba99a4b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320489"
 ---
 # <a name="nmake-reference"></a>NMAKE 참조
 
@@ -40,8 +40,8 @@ NMAKE를 사용하려면 개발자 명령 프롬프트 창에서 실행해야 �
 
 ## <a name="see-also"></a>참고자료
 
-[명령줄에서 MSVC 도구 집합을 사용 하 여](../building-on-the-command-line.md)<br/>
+[명령줄에서 MSVC 도구 집합 사용](../building-on-the-command-line.md)<br/>
 [추가 MSVC 빌드 도구](c-cpp-build-tools.md)<br/>
-[C + +-visual Studio 프로젝트](../creating-and-managing-visual-cpp-projects.md)<br/>
+[C++-Visual Studio 프로젝트](../creating-and-managing-visual-cpp-projects.md)<br/>
 [Visual Studio의 디버깅](/visualstudio/debugger/debugging-in-visual-studio)<br/>
 [C/C++ 빌드 참조](c-cpp-building-reference.md)

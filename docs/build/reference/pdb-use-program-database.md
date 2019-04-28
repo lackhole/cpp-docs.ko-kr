@@ -12,11 +12,11 @@ helpviewer_keywords:
 - .pdb files, creating
 ms.assetid: d23db0ce-10cb-427a-bc60-d6b2a852723d
 ms.openlocfilehash: ddcf83cafd5f499158f3116f04e40397b7f8d0a8
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320086"
 ---
 # <a name="pdb-use-program-database"></a>/PDB(프로그램 데이터베이스 사용)
 
@@ -41,7 +41,7 @@ PDB 파일에는 최대 2gb까지 첨부 파일 수 있습니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 클릭 합니다 **링커** 폴더입니다.
 

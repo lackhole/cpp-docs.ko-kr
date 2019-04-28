@@ -1,5 +1,5 @@
 ---
-title: 'TN016: MFC에서 C++ 다중 상속 사용'
+title: 'TN016: 사용 하 여 C++ MFC 사용 하 여 다중 상속'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.inheritance
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - multiple inheritance, MFC support for
 ms.assetid: 4ee27ae1-1410-43a5-b111-b6af9b84535d
 ms.openlocfilehash: 76dc2e856ca7db783ee542aa2dbb498fd4c1a769
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306131"
 ---
-# <a name="tn016-using-c-multiple-inheritance-with-mfc"></a>TN016: MFC에서 C++ 다중 상속 사용
+# <a name="tn016-using-c-multiple-inheritance-with-mfc"></a>TN016: 사용 하 여 C++ MFC 사용 하 여 다중 상속
 
 이 이는 Microsoft Foundation Classes를 사용 하 여 다중 상속 (MI)을 사용 하는 방법에 설명 합니다. MI 사용 MFC를 사용 하 여 필요 하지 않습니다. MI는 MFC 클래스에서 사용 되지 않으며 클래스 라이브러리를 작성할 필요가 없습니다.
 
-다음 하위 항목 MI 일반적인 MFC 관용구와 MI의 제한 중 일부를 다루는 사용에 미치는 영향을 설명 합니다. 이러한 제한 중 일부에 일반 c + + 제한 됩니다. 다른 MFC 아키텍처에서 적용 됩니다.
+다음 하위 항목 MI 일반적인 MFC 관용구와 MI의 제한 중 일부를 다루는 사용에 미치는 영향을 설명 합니다. 이러한 제한 사항 중 일부는 일반 C++ 제한 합니다. 다른 MFC 아키텍처에서 적용 됩니다.
 
 이 기술 노트의 끝에서 MI를 사용 하는 전체 MFC 응용 프로그램을 찾을 수 있습니다.
 
@@ -29,7 +29,7 @@ ms.locfileid: "50668873"
 
 현재 구현은 `CRuntimeClass` MI 런타임 형식 정보를 지원 하지 않습니다. MI MFC 응용 프로그램에서 사용할 수 없습니다 것은 아닙니다. 그러나 둘 이상의 기본 클래스에 있는 개체를 사용 하 여 작업할 때 특정 책임을 해야 합니다.
 
-합니다 [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) 메서드는 올바르게 형식을 확인할 개체의 기본 클래스를 여러 개 있는 경우. 따라서 사용할 수 없습니다 [CObject](../mfc/reference/cobject-class.md) 가상 기본 클래스와 모든 호출이 `CObject` 멤버와 같은 함수 [cobject:: Serialize](../mfc/reference/cobject-class.md#serialize) 고 [CObject::operator 새](../mfc/reference/cobject-class.md#operator_new)해당 c + +에는 적절 한 함수 호출과 구분할 수 있도록 범위 한정자가 있어야 합니다. 프로그램에서는 MI MFC 내의 클래스 포함 된 때를 `CObject` 기본 클래스의 기본 클래스 목록에서 가장 왼쪽에 클래스를 해야 합니다.
+합니다 [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) 메서드는 올바르게 형식을 확인할 개체의 기본 클래스를 여러 개 있는 경우. 따라서 사용할 수 없습니다 [CObject](../mfc/reference/cobject-class.md) 가상 기본 클래스와 모든 호출이 `CObject` 멤버와 같은 함수 [cobject:: Serialize](../mfc/reference/cobject-class.md#serialize) 고 [CObject::operator 새](../mfc/reference/cobject-class.md#operator_new)범위 한정자가 있어야 합니다. 있도록 C++ 적절 한 함수 호출을 구분할 수 있습니다. 프로그램에서는 MI MFC 내의 클래스 포함 된 때를 `CObject` 기본 클래스의 기본 클래스 목록에서 가장 왼쪽에 클래스를 해야 합니다.
 
 대신 사용 하는 것은 `dynamic_cast` 연산자입니다. MI 해당 기본 클래스 중 하나를 사용 하 여 개체를 캐스팅 합니다. 제공 된 기본 클래스의 함수를 사용 하도록 컴파일러에 강제로 됩니다. 자세한 내용은 [dynamic_cast 연산자](../cpp/dynamic-cast-operator.md)합니다.
 

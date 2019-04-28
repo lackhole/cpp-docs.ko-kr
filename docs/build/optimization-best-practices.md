@@ -6,21 +6,21 @@ helpviewer_keywords:
 - optimization, best practices
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
 ms.openlocfilehash: edb036292b87593a3f8bb9b3f5ec5f7beb84c3a5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274172"
 ---
 # <a name="optimization-best-practices"></a>최적화에 대 한 유용한 정보
 
-이 문서에서는 Visual c + +에서 최적화에 대 한 몇 가지 모범 사례를 설명 합니다.
+이 문서에서는 시각적 개체의 최적화에 대 한 몇 가지 모범 사례를 설명 C++입니다.
 
 ## <a name="compiler-and-linker-options"></a>컴파일러 및 링커 옵션
 
 ### <a name="profile-guided-optimization"></a>프로필 기반 최적화
 
-Visual c + + 지원 *프로필 기반 최적화* (PGO). 이 최적화는 응용 프로그램의 뒷부분에 나오는 최적화를 수행 하는 응용 프로그램의 계측된 된 버전의 교육 실행에서 프로필 데이터를 사용 합니다. PGO 사용 시간이 걸릴 수 있습니다, 되므로 모든 개발자가 사용 하는 항목이 없을 있지만 PGO를 사용 하 여 제품의 최종 릴리스 빌드에 대 한 권장지 않습니다. 자세한 내용은 [프로필 기반 최적화](profile-guided-optimizations.md)합니다.
+Visual C++ 지원 *프로필 기반 최적화* (PGO). 이 최적화는 응용 프로그램의 뒷부분에 나오는 최적화를 수행 하는 응용 프로그램의 계측된 된 버전의 교육 실행에서 프로필 데이터를 사용 합니다. PGO 사용 시간이 걸릴 수 있습니다, 되므로 모든 개발자가 사용 하는 항목이 없을 있지만 PGO를 사용 하 여 제품의 최종 릴리스 빌드에 대 한 권장지 않습니다. 자세한 내용은 [프로필 기반 최적화](profile-guided-optimizations.md)합니다.
 
 또한 *전체 프로그램 최적화* (링크 타임 코드 생성으로 인식) 및 **/o1** 하 고 **/o2** 최적화 향상 되었습니다. 일반적으로 이러한 옵션 중 하나를 사용 하 여 컴파일된 응용 프로그램을 이전 버전의 컴파일러를 사용 하 여 컴파일된 동일한 응용 프로그램 보다 빠를 수 됩니다.
 
@@ -93,13 +93,13 @@ int myFunc() {...}
 
 ## <a name="restrict-and-assume"></a>__restrict 및 \__assume
 
-성능에 도움이 되는 Visual c + + 키워드의 두 가지가 있습니다: [__restrict](../cpp/extension-restrict.md) 하 고 [__assume](../intrinsics/assume.md)합니다.
+시각적 개체에는 키워드의 두 가지가 있습니다 C++ 성능을 향상 시킬 수 있는: [__restrict](../cpp/extension-restrict.md) 하 고 [__assume](../intrinsics/assume.md)합니다.
 
 먼저이 점에 유의 해야 하는 `__restrict` 및 `__declspec(restrict)` 서로 구분 합니다. 어느 정도 관련이 있지만 그에 따라 의미가 다릅니다. `__restrict` 형식 한정자를 같은입니다 `const` 또는 `volatile`, 포인터 형식에 대해서만 합니다.
 
 사용 하 여 수정 된 포인터 `__restrict` 라고는 *포인터 __restrict*합니다. __Restrict 포인터가 통해서만 액세스할 수 있는 포인터를 \__restrict 포인터입니다. 즉, 가리키는 데이터에 액세스 하려면 다른 포인터를 사용할 수 없습니다는 \__restrict 포인터입니다.
 
-`__restrict` Visual c + + 최적화 프로그램을 위한 강력한 도구 수는 있지만 주의 사용 하 여 사용 합니다. 부적절 하 게 사용 되는 경우 최적화 프로그램은 응용 프로그램이 중단 되는 최적화를 수행할 수 있습니다.
+`__restrict` 시각적 개체에 대 한 강력한 도구를 수 있습니다 C++ 최적화 프로그램 있지만 주의 사용 하 여 사용 합니다. 부적절 하 게 사용 되는 경우 최적화 프로그램은 응용 프로그램이 중단 되는 최적화를 수행할 수 있습니다.
 
 합니다 `__restrict` 키워드를 대체 합니다 **/Oa** 이전 버전에서 전환 합니다.
 
@@ -107,7 +107,7 @@ int myFunc() {...}
 
 예를 들어 `__assume(a < 5);` 변수의 코드 줄에는 최적화 프로그램에 알립니다 `a` 5 보다 작게 됩니다. 다시 컴파일러에는 약속입니다. 경우 `a` 실제로 6이 시점에서 프로그램에 다음 컴파일러 최적화 한 후 프로그램의 동작을 예상할 수 있는 되지 않을 수 있습니다. `__assume` switch 문의 및/또는 조건식 전에 가장 유용 합니다.
 
-몇 가지 제한 사항이를 `__assume`입니다. 먼저 같은 `__restrict`것이 권장 사항일 뿐, 이므로 컴파일러는 무료 무시 합니다. 또한 `__assume` 현재 변수 부등식 상수 에서만 작동 합니다. 예를 들어 assume(a < b)과 같이 기호로만 구성된 부등식은 사용할 수 없습니다.
+몇 가지 제한 사항이를 `__assume`입니다. 먼저 같은 `__restrict`것이 권장 사항일 뿐, 이므로 컴파일러는 무료 무시 합니다. 또한 `__assume` 현재 변수 부등식 상수 에서만 작동 합니다. 기호화 된 부등식 예를 들어, 전파 되지 않습니다 assume(a < b) 합니다.
 
 ## <a name="intrinsic-support"></a>내장 함수 지원
 
@@ -117,7 +117,7 @@ int myFunc() {...}
 
 - 코드 이식성이 향상 됩니다. 다양 한 내장 함수는 여러 CPU 아키텍처에서 사용할 수 있습니다.
 
-- 코드는 C/c + +에서 코드를 작성 여전히 있으므로 읽기 쉽습니다.
+- 코드는 코드는 여전히 C로 작성 되므로 읽기 쉽게 /C++입니다.
 
 - 코드는 컴파일러 최적화의 이점을 가져옵니다. 컴파일러 개선 되, 대로 내장 함수에 대 한 코드 생성 향상 됩니다.
 

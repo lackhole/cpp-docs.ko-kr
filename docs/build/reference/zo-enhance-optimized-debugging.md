@@ -10,11 +10,11 @@ helpviewer_keywords:
 - -Zo compiler option [C++]
 ms.assetid: eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f
 ms.openlocfilehash: 2fb64b0cc39d5b7ff0c96d3eae47197c455526f5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315354"
 ---
 # <a name="zo-enhance-optimized-debugging"></a>/Zo(최적화된 디버깅 향상)
 
@@ -34,9 +34,9 @@ ms.locfileid: "57809940"
 
 ### <a name="to-set-the-zo-compiler-option-in-visual-studio"></a>Visual Studio에서 /Zo 컴파일러 옵션을 설정하려면
 
-1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 선택 된 **구성 속성**를 **C/c + +** 폴더입니다.
+1. 선택 된 **구성 속성**를 **C/C++** 폴더입니다.
 
 1. 선택 된 **명령줄** 속성 페이지.
 

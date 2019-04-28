@@ -7,11 +7,11 @@ helpviewer_keywords:
 - interface map macros [MFC]
 ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
 ms.openlocfilehash: 8f48b916f7130551fc8d4da5bb2ebc75d8d728d5
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322984"
 ---
 # <a name="delegate-and-interface-map-macros"></a>대리자 및 인터페이스 맵 매크로
 
@@ -197,7 +197,7 @@ EVENT_DELEGATE_ENTRY(MEMBER, ARG0, ARG1);
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에 대 한 대리자 맵에 항목을 만들려면 EVENT_DELEGATE_ENTRY를 사용 하는 방법을 보여 줍니다는 `OnClick` 이벤트 처리기; MAKE_DELEGATE의 코드 예제를 참조 하십시오. 자세한 내용은 [방법: 네이티브 c + + 클래스에서 Windows Forms 이벤트 싱크](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)합니다.
+다음 코드 예제에 대 한 대리자 맵에 항목을 만들려면 EVENT_DELEGATE_ENTRY를 사용 하는 방법을 보여 줍니다는 `OnClick` 이벤트 처리기; MAKE_DELEGATE의 코드 예제를 참조 하십시오. 자세한 내용은 [방법: 네이티브에서 Windows Forms 이벤트 싱크 C++ 클래스](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)합니다.
 
 ```cpp
 BEGIN_DELEGATE_MAP(CMyView)
@@ -262,7 +262,7 @@ MAKE_DELEGATE( DELEGATE,  MEMBER) ;
 
 ### <a name="example"></a>예제
 
-다음 코드 예제를 호출 하는 방법을 보여 줍니다 `MAKE_DELEGATE` 연결 하는 `OnClick` MFC 컨트롤에 이벤트 처리기 `MyControl`합니다. 이 매크로 MFC 응용 프로그램에서 작동 하는 방식에 대 한 광범위 한 설명과 참조 하세요. [방법: 네이티브 c + + 클래스에서 Windows Forms 이벤트 싱크](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)합니다.
+다음 코드 예제를 호출 하는 방법을 보여 줍니다 `MAKE_DELEGATE` 연결 하는 `OnClick` MFC 컨트롤에 이벤트 처리기 `MyControl`합니다. 이 매크로 MFC 응용 프로그램에서 작동 하는 방식에 대 한 광범위 한 설명과 참조 하세요. [방법: 네이티브에서 Windows Forms 이벤트 싱크 C++ 클래스](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)합니다.
 
 ```cpp
 // CMyView derives from CWinFormsView.

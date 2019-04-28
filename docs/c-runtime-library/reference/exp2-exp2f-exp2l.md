@@ -31,11 +31,11 @@ helpviewer_keywords:
 - exp2l function
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
 ms.openlocfilehash: 70a3b7eb610556d4a26de7cf0aad55affcdbdc94
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62338833"
 ---
 # <a name="exp2-exp2f-exp2l"></a>exp2, exp2f, exp2l
 
@@ -76,9 +76,9 @@ long double exp2l(
 
 |문제|반환|
 |-----------|------------|
-|*x* ±0 =|1|
-|*x* =-INFINITY|+0|
-|*x* = + INFINITY|+INFINITY|
+|*x* = ±0|1|
+|*x* = -INFINITY|+0|
+|*x* = +INFINITY|+INFINITY|
 |*x* = NaN|NaN|
 |오버플로 범위 오류|+HUGE_VAL, +HUGE_VALF 또는 +HUGE_VALL|
 |언더플로 범위 오류|올바른 결과, 반올림 후|
@@ -87,13 +87,13 @@ long double exp2l(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **exp2** 및 반환 하는 **float** 하 고 **long double** 형식입니다. C 프로그램에서 **exp2** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **exp2** 및 반환 하는 **float** 및 **long double** 형식입니다. C 프로그램에서 **exp2** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**exp**하십시오 **expf**, **탐색**|\<math.h>|\<cmath>|
+|**exp**, **expf**, **expl**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

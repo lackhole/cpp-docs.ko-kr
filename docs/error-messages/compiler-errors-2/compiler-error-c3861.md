@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3861
 ms.assetid: 0a1eee30-b3db-41b1-b1e5-35949c3924d7
 ms.openlocfilehash: 4ebfd3b0129e25cf543cac803a3b33fb074f3d70
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62302414"
 ---
 # <a name="compiler-error-c3861"></a>컴파일러 오류 C3861
 
@@ -66,7 +66,7 @@ int f() {  // declared and defined here
 
 ### <a name="namespace-qualification-required"></a>Namespace 한정자 필요
 
-C + + 표준 라이브러리의 예외 클래스 필요는 `std` 네임 스페이스입니다.
+예외 클래스는 C++ 표준 라이브러리 필요 합니다 `std` 네임 스페이스입니다.
 
 ```cpp
 // C3861_b.cpp

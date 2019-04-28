@@ -13,11 +13,11 @@ helpviewer_keywords:
 - paging, optimizing
 ms.assetid: ecf5eb3e-e404-4e86-9a91-4e5ec157261a
 ms.openlocfilehash: b1927ffd2efc923157fe1956fe905c939bc62719
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320190"
 ---
 # <a name="order-put-functions-in-order"></a>/ORDER(함수에 순서 지정)
 
@@ -38,7 +38,7 @@ COMDAT 함수에 대 한 링크 순서를 지정 하는 텍스트 파일입니�
 
 개체 파일에 소스 코드를 컴파일하는 경우 각 함수 호출에 고유한 섹션에 배치 하도록 컴파일러에 알 수 있습니다는 *COMDAT*를 사용 하 여 합니다 [/Gy (함수 수준 링크 사용)](gy-enable-function-level-linking.md) 컴파일러 옵션입니다. 합니다 **/order** 링커 옵션에는 지정 된 순서로 실행 가능 이미지에 Comdat를 배치 하도록 링커에 지시 합니다.
 
-COMDAT 순서를 지정 하려면 만들기를 *응답 파일*를 이름별로 링커에 의해 배치할 원하는 순서로 줄에 하나씩 각 COMDAT를 나열 하는 텍스트 파일입니다. 이 파일의 이름을 전달 합니다 *filename* 의 매개 변수를 **/** 옵션입니다. C + + 함수 COMDAT의 이름은 함수 이름의 데코레이팅된입니다. C 함수에 대 한 데코 레이트 되지 않은 이름을 사용 하 여 `main`로 선언 된 c + + 함수에 대 한 및 `extern "C"`합니다. 트 데코 레이 된 이름과 함수 이름은 대/소문자 구분 됩니다. 트 데코 레이 된 이름에 대 한 자세한 내용은 참조 하세요. [데코 레이트 된 이름](decorated-names.md)합니다.
+COMDAT 순서를 지정 하려면 만들기를 *응답 파일*를 이름별로 링커에 의해 배치할 원하는 순서로 줄에 하나씩 각 COMDAT를 나열 하는 텍스트 파일입니다. 이 파일의 이름을 전달 합니다 *filename* 의 매개 변수를 **/** 옵션입니다. 에 대 한 C++ 이름의 COMDAT 함수는 함수 이름의 데코레이팅된 합니다. C 함수에 대 한 데코 레이트 되지 않은 이름을 사용 하 여 `main`, 및 C++ 로 선언 된 함수 `extern "C"`합니다. 트 데코 레이 된 이름과 함수 이름은 대/소문자 구분 됩니다. 트 데코 레이 된 이름에 대 한 자세한 내용은 참조 하세요. [데코 레이트 된 이름](decorated-names.md)합니다.
 
 에 Comdat의 데코레이팅된 이름을 찾으려면를 사용 합니다 [DUMPBIN](dumpbin-reference.md) 도구의 [/기호](symbols.md) 개체 파일에 대 한 옵션입니다. 링커는 자동으로 밑줄 앞 (**\_**) 함수를 응답에는 이름을 파일 이름 매개 변수를 시작 하지 않는 한 (**?**) 또는 at 기호 ( **\@**). 예를 들어 소스 파일 example.cpp, 있으면 함수 `int cpp_func(int)`, `extern "C" int c_func(int)` 하 고 `int main(void)`, 명령을 `DUMPBIN /SYMBOLS example.obj` 이러한 트 데코 레이 된 이름이 나열:
 
@@ -61,7 +61,7 @@ COMDAT 순서를 지정 하려면 만들기를 *응답 파일*를 이름별로 �
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **최적화** 속성 페이지.
 

@@ -3,11 +3,11 @@ title: Windows XP 용 프로그램 구성
 ms.date: 02/02/2018
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
 ms.openlocfilehash: 989a4e2c7e91c05498902bf1c5cb9d838ee47c3b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273804"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Windows XP 용 프로그램 구성
 

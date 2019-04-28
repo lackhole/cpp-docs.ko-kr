@@ -51,11 +51,11 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
 ms.openlocfilehash: 0e02f123580696519e59d828ec590456cbd2a81c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62323283"
 ---
 # <a name="cwinthread-class"></a>CWinThread 클래스
 
@@ -126,7 +126,7 @@ class CWinThread : public CCmdTarget
 
 호출 하는 대신 `AfxBeginThread`를 생성할 수는 `CWinThread`-파생 개체와 호출 `CreateThread`합니다. 이 두 단계 생성 방법은 다시 사용 하려는 경우에 유용 합니다 `CWinThread` 연속 생성 및 종료 스레드 실행 간에 개체입니다.
 
-에 대 한 자세한 `CWinThread`, 문서를 참조 하세요 [c + + 및 MFC 다중 스레딩](../../parallel/multithreading-with-cpp-and-mfc.md), [다중 스레딩: 사용자 인터페이스 스레드 만들기](../../parallel/multithreading-creating-user-interface-threads.md), [다중 스레딩: 작업자 스레드를 만들지](../../parallel/multithreading-creating-worker-threads.md), 및 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
+대 한 자세한 내용은 `CWinThread`, 문서를 참조 하세요 [스레딩 C++ 및 MFC](../../parallel/multithreading-with-cpp-and-mfc.md)하십시오 [다중 스레딩: 사용자 인터페이스 스레드 만들기](../../parallel/multithreading-creating-user-interface-threads.md), [다중 스레딩: 작업자 스레드를 만들지](../../parallel/multithreading-creating-worker-threads.md), 및 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 

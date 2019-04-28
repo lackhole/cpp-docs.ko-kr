@@ -63,11 +63,11 @@ helpviewer_keywords:
 - iscsymf function
 ms.assetid: 944dfb99-f2b8-498c-9f55-dbcf370d0a2c
 ms.openlocfilehash: 8ee84243b98c08504ac0bb63593e39c32230b706
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331638"
 ---
 # <a name="iscsym-iscsymf-iscsym-iswcsym-iscsymf-iswcsymf-iscsyml-iswcsyml-iscsymfl-iswcsymfl"></a>iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l
 
@@ -130,7 +130,7 @@ int _iswcsymf_l(
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**iscsym**, **iscsymf**를 **__iscsym**를 **__iswcsym**를 **__iscsymf**, **__iswcsymf**, **_iscsym_l**를 **_iswcsym_l**하십시오 **_iscsymf_l**, **_iswcsymf_l**|C: \<ctype.h><br /><br /> C++: \<cctype> 또는 \<ctype.h>|
+|**iscsym**, **iscsymf**, **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, **_iswcsymf_l**|C: \<ctype.h><br /><br /> C++: \<cctype> 또는 \<ctype.h>|
 
 **iscsym**, **iscsymf**를 **__iscsym**, **__iswcsym**를 **__iscsymf**, **__ iswcsymf**, **_iscsym_l**, **_iswcsym_l**하십시오 **_iscsymf_l**, 및 **_iswcsymf_l** 루틴은 Microsoft 전용입니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

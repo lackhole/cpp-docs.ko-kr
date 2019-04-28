@@ -10,17 +10,17 @@ helpviewer_keywords:
 - __cdecl keyword [C++]
 ms.assetid: 1ff1d03e-fb4e-4562-8be1-74f1ad6427f1
 ms.openlocfilehash: 298485d310ee4039b13781a8b5cd88a489af3b8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62232404"
 ---
 # <a name="cdecl"></a>__cdecl
 
 **Microsoft 전용**
 
-**__cdecl** 기본 C 및 c + + 프로그램에 대 한 호출 규칙이 됩니다. 호출자가 스택을 정리 되 면 있으므로 수행할 수 있습니다 `vararg` 함수입니다. 합니다 **__cdecl** 호출 규칙 보다 더 큰 실행 파일을 만듭니다 [__stdcall](../cpp/stdcall.md)이므로 각 함수 호출 스택 정리 코드를 포함 해야 합니다. 다음 목록에서는 이러한 호출 규칙의 구현을 보여 줍니다.
+**__cdecl** 는 기본 c 호출 규칙 및 C++ 프로그램입니다. 호출자가 스택을 정리 되 면 있으므로 수행할 수 있습니다 `vararg` 함수입니다. 합니다 **__cdecl** 호출 규칙 보다 더 큰 실행 파일을 만듭니다 [__stdcall](../cpp/stdcall.md)이므로 각 함수 호출 스택 정리 코드를 포함 해야 합니다. 다음 목록에서는 이러한 호출 규칙의 구현을 보여 줍니다.
 
 |요소|구현|
 |-------------|--------------------|
@@ -72,4 +72,4 @@ typedef BOOL (__cdecl *funcname_ptr)(void * arg1, const char * arg2, DWORD flags
 ## <a name="see-also"></a>참고자료
 
 [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

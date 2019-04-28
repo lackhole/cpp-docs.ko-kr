@@ -28,11 +28,11 @@ helpviewer_keywords:
 - asinhf function
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
 ms.openlocfilehash: f6100268b77178487b7a7aa1cc3f10ac3ea7e9dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341784"
 ---
 # <a name="asinh-asinhf-asinhl"></a>asinh, asinhf, asinhl
 
@@ -66,13 +66,13 @@ long double asinh( long double x );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +를 사용 하는 경우의 오버 로드를 호출할 수 있습니다 **asinh** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **asinh** 항상 받아서 반환 **double**합니다.
+사용 하는 경우 C++를 오버 로드를 호출할 수 있습니다 **asinh** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **asinh** 항상 받아서 반환 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 C 헤더|필수 C++ 헤더|
+|함수|필수 C 헤더|필수 C++ 헤더|
 |--------------|--------------|------------------|
-|**asinh**하십시오 **asinhf**, **asinhl**|\<math.h>|\<cmath > 또는 \<math.h <|
+|**asinh**, **asinhf**, **asinhl**|\<math.h>|\<cmath > 또는 \<math.h <|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

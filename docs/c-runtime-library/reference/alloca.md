@@ -24,11 +24,11 @@ helpviewer_keywords:
 - _alloca function
 ms.assetid: 74488eb1-b71f-4515-88e1-cdd03b6f8225
 ms.openlocfilehash: 7c083e791301d3224709a5fc6c711ceaa6397d38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341602"
 ---
 # <a name="alloca"></a>_alloca
 
@@ -57,7 +57,7 @@ void *_alloca(
 
 **_alloca** 할당 *크기* 프로그램 스택에서 바이트입니다. 할당 된 공간 (때가 아니라 단지 할당 범위를 벗어날) 호출 하는 함수가 종료 될 때에 자동으로 해제 됩니다. 따라서 반환 하는 포인터 값을 전달 하지 마십시오 **_alloca** 인수로 [무료](free.md)합니다.
 
-명시적으로 호출 제한은 **_alloca** 는 EH (예외 처리기)에 있습니다. x86급 프로세서에서 실행되는 EH 루틴은 고유한 메모리 프레임에서 작동합니다. 즉, 바깥쪽 함수 스택 포인터의 현재 위치를 기반으로 하지 않는 메모리 공간에서 해당 작업을 수행합니다. 가장 일반적인 구현에는 Windows NT SEH(구조적 예외 처리) 및 C++ catch 절 식이 포함됩니다. 따라서 명시적으로 호출 **_alloca** 호출 EH 루틴으로 돌아가는 동안 프로그램 오류가 발생 했습니다. 다음 시나리오 중 하나에서:
+명시적으로 호출 제한은 **_alloca** 는 EH (예외 처리기)에 있습니다. X86 급 프로세서에서 실행 되는 EH 루틴은 고유한 메모리 프레임에서 작동 합니다. 바깥쪽 함수 스택 포인터의 현재 위치를 기반으로 하지 않는 메모리 공간에서 해당 작업을 수행 하며 합니다. 가장 일반적인 구현에는 Windows NT SEH(구조적 예외 처리) 및 C++ catch 절 식이 포함됩니다. 따라서 명시적으로 호출 **_alloca** 호출 EH 루틴으로 돌아가는 동안 프로그램 오류가 발생 했습니다. 다음 시나리오 중 하나에서:
 
 - Windows NT SEH 예외 필터 식: `__except ( _alloca() )`
 

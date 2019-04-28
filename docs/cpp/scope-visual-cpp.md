@@ -11,11 +11,11 @@ helpviewer_keywords:
 - scope, C++ names
 ms.assetid: 81fecbb0-338b-4325-8332-49f33e716352
 ms.openlocfilehash: 534bb9711ff54e21ca091b399aa3d13ec5a7359d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267328"
 ---
 # <a name="scope-c"></a>범위 (C++)
 
@@ -25,7 +25,7 @@ ms.locfileid: "52176759"
 
 범위는 다음과 같은 여섯 가지 종류가 있습니다.
 
-- **전역 범위** 전역 이름이 네임 스페이스는 클래스, 함수 또는 외부에서 선언 되는 합니다. 그러나 c + +에서 암시적 전역 네임 스페이스와도 이러한 이름은 존재합니다. 선언 지점부터 선언 된 파일의 끝에 전역 이름의 범위를 확장 합니다. 전역 이름, 표시 유형 또한 규칙에 따라 적용 됩니다 [링크가](program-and-linkage-cpp.md) 프로그램에서 다른 파일의 이름을 표시 되는지 여부를 결정 합니다.
+- **전역 범위** 전역 이름이 네임 스페이스는 클래스, 함수 또는 외부에서 선언 되는 합니다. 그러나 C++ 는 암시적 전역 네임 스페이스를 사용 하 여도 이러한 이름은 존재 합니다. 선언 지점부터 선언 된 파일의 끝에 전역 이름의 범위를 확장 합니다. 전역 이름, 표시 유형 또한 규칙에 따라 적용 됩니다 [링크가](program-and-linkage-cpp.md) 프로그램에서 다른 파일의 이름을 표시 되는지 여부를 결정 합니다.
 
 - **Namespace 범위** 내에서 선언 된 이름을 [네임 스페이스](namespaces-cpp.md), 모든 클래스 또는 열거형 정의 또는 함수 블록 외부에서 선언 지점에서 네임 스페이스의 끝에 표시 됩니다. 다른 파일에서 여러 개의 블록에 네임 스페이스를 정의할 수 있습니다.
 

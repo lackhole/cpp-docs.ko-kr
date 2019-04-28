@@ -10,11 +10,11 @@ helpviewer_keywords:
 - await enable coroutine support [C++]
 ms.assetid: 302c8e69-09b6-4c58-bcdd-0a6a8713a8df
 ms.openlocfilehash: c0c8c0183c356900ba8f95d39e427d56eb1ec96b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295008"
 ---
 # <a name="await-enable-coroutine-support"></a>/await (코루틴 지원 사용)
 

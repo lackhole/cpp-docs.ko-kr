@@ -10,11 +10,11 @@ helpviewer_keywords:
 - -Gh compiler option [C++]
 ms.assetid: 1510a082-8a0e-486e-a309-6add814b494f
 ms.openlocfilehash: bf7734a7b81c9550c060d43c2eabf5cb05332407
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292587"
 ---
 # <a name="gh-enable-penter-hook-function"></a>/Gh(_penter 후크 함수 사용)
 
@@ -28,7 +28,7 @@ ms.locfileid: "57820535"
 
 ## <a name="remarks"></a>설명
 
-합니다 `_penter` 함수 라이브러리의 일부가 아니며에 대 한 정의 제공 하는 것 `_penter`입니다.
+합니다 `_penter` 함수 라이브러리의 일부가 아니며에 대한 정의 제공 하는 것 `_penter`입니다.
 
 명시적으로 `_penter`를 호출하지 않는다면 프로토타입을 제공하지 않아도 됩니다. 이 함수는 마치 다음 프로토타입이 있는 것처럼 보여야 하며 항목에 있는 모든 레지스터의 내용을 밀어넣고 종료 시 변경되지 않은 내용을 내보내야 합니다.
 

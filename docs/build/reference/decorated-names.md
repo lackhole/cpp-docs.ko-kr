@@ -7,11 +7,11 @@ helpviewer_keywords:
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
 ms.openlocfilehash: 3fae232e6ca886195315002f4e65063d8a23ddc8
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62293903"
 ---
 # <a name="decorated-names"></a>데코레이팅된 이름
 
@@ -27,7 +27,7 @@ C 및 C++ 프로그램의 함수, 데이터 및 개체는 내부적으로 데코
 
 이름 장식은 다른 프로그래밍 언어 또는 다른 컴파일러를 사용하여 작성된 코드에 연결할 경우에도 중요합니다. 컴파일러에 따라 다른 이름 장식 규칙이 사용됩니다. 실행 파일이 다른 언어로 작성된 코드에 연결되면 내보낸 이름/가져온 이름이 호출 규칙과 일치하도록 주의해야 합니다. 어셈블리 언어 코드에서는 Visual C++를 데코레이트된 이름 및 호출 규칙을 사용하여 Visual C++를 사용하여 작성된 소스 코드에 연결합니다.
 
-##  <a name="Format"></a> C + + 형식의 데코 레이트 된 이름
+##  <a name="Format"></a> 형식을 지정 된 C++ 데코 레이트 된 이름
 
 C++ 함수에 대한 데코레이트된 이름에는 다음 정보가 들어 있습니다.
 

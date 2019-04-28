@@ -8,15 +8,15 @@ helpviewer_keywords:
 - libraries [C++], mixed assemblies
 ms.assetid: 1229595c-9e9d-414d-b018-b4e4c727576d
 ms.openlocfilehash: 42116c09d5b31cf669eb6d5d1e75eae60b2610a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62312010"
 ---
 # <a name="library-support-for-mixed-assemblies"></a>혼합형 어셈블리에 대한 라이브러리 지원
 
-C + + 표준 라이브러리를 C 런타임 라이브러리 (CRT)의 사용을 지원 하는 visual c + + ATL 및 MFC 응용 프로그램을 사용 하 여 컴파일된 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)합니다. 따라서 이러한 라이브러리를 사용 하 여도.NET Framework 기능을 사용 하는 기존 응용 프로그램.
+Visual C++ 의 사용을 지원 합니다 C++ 표준 라이브러리를 C 런타임 라이브러리 (CRT), ATL 및 MFC로 컴파일된 응용 프로그램에 대 한 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)합니다. 따라서 이러한 라이브러리를 사용 하 여도.NET Framework 기능을 사용 하는 기존 응용 프로그램.
 
 > [!IMPORTANT]
 > **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다.
@@ -27,11 +27,11 @@ C + + 표준 라이브러리를 C 런타임 라이브러리 (CRT)의 사용을 �
 
 이 지원을 통해 여러 관련 혜택:
 
-- CRT 및 c + + 표준 라이브러리를 혼합된 코드에 사용할 수 있습니다. CRT 및 제공 하는 c + + 표준 라이브러리는 확인할 수 있습니다. 궁극적으로 네이티브 코드에서 사용 하는 호출은 여전히 동일한 CRT 및 c + + 표준 라이브러리에 라우팅됩니다 됩니다.
+- CRT 및 C++ 표준 라이브러리 혼합된 코드에 사용할 수 있습니다. CRT 및 C++ ; 확인할 수 없는 표준 라이브러리 제공 궁극적으로 호출에 라우팅됩니다 동일한 CRT 및 C++ 으로 표준 라이브러리는 네이티브 코드에서 사용 하는 합니다.
 
 - 통합 된 예외 처리 혼합 이미지에서를 수정 합니다.
 
-- 혼합된 이미지에서 c + + 변수의 정적 초기화 합니다.
+- 정적으로 초기화할 C++ 혼합된 이미지의 변수입니다.
 
 - 관리 코드에서 프로세스별 및 AppDomain 별 변수를 지원 합니다.
 
