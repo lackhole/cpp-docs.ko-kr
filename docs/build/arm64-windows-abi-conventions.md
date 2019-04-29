@@ -2,11 +2,11 @@
 title: ARM64 ABI 규칙 개요
 ms.date: 03/27/2019
 ms.openlocfilehash: 4c0f89f97529d4cd70e1449c90b131d25d30f9ee
-ms.sourcegitcommit: ac5c04b347e817eeece6e2c98e60236fc0e307a4
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58639448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195511"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI 규칙 개요
 
@@ -129,7 +129,7 @@ Variadic이 아닌 함수에 대 한 Windows ABI는 매개 변수 전달에 대 
 
 목록의 각 인수에 대 한 다음 목록에서 첫 번째 일치 하는 규칙이 적용 됩니다. 규칙이 일치, 인수 하는 경우 다음 변경 되지 않습니다.
 
-1. 인수 형식을 호출자와 호출 수신자에서 해당 크기를 정적으로 확인할 수 없으므로 복합 형식이 면 인수는 메모리에 복사 하 고 인수 복사본의 포인터로 대체 됩니다. (C/c + +에 해당 형식이 하지만 다른 언어 또는 언어 확장에 있는).
+1. 인수 형식을 호출자와 호출 수신자에서 해당 크기를 정적으로 확인할 수 없으므로 복합 형식이 면 인수는 메모리에 복사 하 고 인수 복사본의 포인터로 대체 됩니다. (C에 해당 형식이 /C++ 다른 언어 또는 언어 확장에 존재 하지만).
 
 1. 인수 형식은 HFA 또는 HVA 경우 인수는 수정 되지 않은 합니다.
 
@@ -231,7 +231,7 @@ Windows의 기본 커널 모드 스택은 6 개의 페이지 (24 k). 커널 모�
 
 ## <a name="cycle-counter"></a>사이클 카운터
 
-모든 ARMv8 Cpu 사이클 카운터를 지원 해야 Windows 사용자 모드를 포함 하 여 모든 예외 수준에서 읽을 수를 구성 하는 64 비트 레지스터를 등록 합니다. 특수 PMCCNTR_EL0 통해 액세스할 수 있습니다 MSR opcode를 사용 하 여 어셈블리 코드에를 등록 또는 `_ReadStatusReg` C/c + + 코드에서 내장 함수입니다.
+모든 ARMv8 Cpu 사이클 카운터를 지원 해야 Windows 사용자 모드를 포함 하 여 모든 예외 수준에서 읽을 수를 구성 하는 64 비트 레지스터를 등록 합니다. 특수 PMCCNTR_EL0 통해 액세스할 수 있습니다 등록 MSR opcode를 사용 하 여 어셈블리 코드에서 또는 `_ReadStatusReg` c에서 내장 /C++ 코드입니다.
 
 여기에 사이클 카운터 벽 클록이 아닌 실제 사이클 카운터를 경우 계산 빈도 프로세서 빈도 따라 달라 집니다. 사이클 카운터의 빈도 알고 있어야 하는 것이 생각을 하는 경우 사이클 카운터를 사용 하지 않아야 합니다. 사용 해야 하는 벽 시계 시간을 측정 하려는 대신 `QueryPerformanceCounter`합니다.
 

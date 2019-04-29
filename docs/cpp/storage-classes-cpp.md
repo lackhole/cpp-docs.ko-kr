@@ -10,21 +10,21 @@ helpviewer_keywords:
 - storage classes [C++], basic concepts
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
 ms.openlocfilehash: e50e5da5ea24d59131f123bb0c772897f9a30218
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58329028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62266935"
 ---
 # <a name="storage-classes-c"></a>저장소 클래스(C++)
 
-A *저장소 클래스* c + +의 컨텍스트에서 변수 선언 하는 개체의 수명, 링크 및 메모리 위치를 제어 하는 형식 지정자입니다. 주어진 개체에는 저장소 클래스가 하나만 있을 수 있습니다. 블록 내에서 정의 된 변수를 사용 하 여 달리 지정 하지 않으면 자동 저장소에는 **extern**를 **정적**, 또는 `thread_local` 지정자입니다. 자동 개체 및 변수는 링크가 없으며 블록 외부의 코드에 표시되지 않습니다.
+A *저장소 클래스가* 컨텍스트에서 C++ 변수를 선언 하는 개체의 수명, 링크 및 메모리 위치를 제어 하는 형식 지정자입니다. 주어진 개체에는 저장소 클래스가 하나만 있을 수 있습니다. 블록 내에서 정의 된 변수를 사용 하 여 달리 지정 하지 않으면 자동 저장소에는 **extern**를 **정적**, 또는 `thread_local` 지정자입니다. 자동 개체 및 변수는 링크가 없으며 블록 외부의 코드에 표시되지 않습니다.
 
 **참고**
 
 1. 합니다 [변경할 수 있는](../cpp/mutable-data-members-cpp.md) 키워드는 저장소 클래스 지정자로 간주 될 수 있습니다. 하지만 클래스 정의의 멤버 목록에만 사용할 수 있습니다.
 
-1. **Visual c + + 2010 이상:** 합니다 **자동** 키워드는 c + + 저장소 클래스 지정자를 사용 하는 더 이상 하며 **등록** 키워드가 사용 되지 않습니다. **Visual Studio 2017 버전 15.7 이상의:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 합니다 **등록** 키워드는 c + + 언어에서 제거 됩니다.
+1. **Visual C++ 2010 이상:** 합니다 **자동** 키워드는 더 이상를 C++ 저장소 클래스 지정자, 및 **등록** 키워드가 사용 되지 않습니다. **Visual Studio 2017 버전 15.7 이상의:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 합니다 **등록** 에서 키워드를 제거 합니다 C++ 언어입니다.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
@@ -186,8 +186,7 @@ int main() {
 
 ## <a name="thread_local"></a> thread_local (C + + 11)
 
-
-  `thread_local` 지정자를 사용하여 선언된 변수는 변수가 생성된 스레드에서만 액세스할 수 있습니다. 변수는 스레드를 만들 때 생성되고 스레드를 제거할 때 제거됩니다. 각 스레드에 변수의 자체 복사본이 있습니다. Windows에 온 `thread_local` 기능적으로 Microsoft 전용 [__declspec (thread)](../cpp/thread.md) 특성입니다.
+`thread_local` 지정자를 사용하여 선언된 변수는 변수가 생성된 스레드에서만 액세스할 수 있습니다. 변수는 스레드를 만들 때 생성되고 스레드를 제거할 때 제거됩니다. 각 스레드에 변수의 자체 복사본이 있습니다. Windows에 온 `thread_local` 기능적으로 Microsoft 전용 [__declspec (thread)](../cpp/thread.md) 특성입니다.
 
 ```cpp
 thread_local float f = 42.0; // Global namespace. Not implicitly static.
