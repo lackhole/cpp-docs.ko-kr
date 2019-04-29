@@ -1,5 +1,5 @@
 ---
-title: 문자열 및 문자 리터럴 (c + +)
+title: 문자열 및 문자 리터럴 (C++)
 ms.date: 11/04/2016
 f1_keywords:
 - R
@@ -17,13 +17,13 @@ helpviewer_keywords:
 - wide characters, strings
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
 ms.openlocfilehash: d3721f3624a64a24de0a5458d88de4836b07a9c1
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330845"
 ---
-# <a name="string-and-character-literals--c"></a>문자열 및 문자 리터럴 (c + +)
+# <a name="string-and-character-literals--c"></a>문자열 및 문자 리터럴 (C++)
 
 C++를 사용하면 다양한 문자열 및 문자 형식이 지원되며 이러한 각 형식의 리터럴 값을 표현할 수 있습니다. 소스 코드에서는 문자 집합을 사용하여 문자 및 문자열 리터럴의 내용을 표현합니다. 유니버설 문자 이름 및 이스케이프 문자를 사용하면 기본 소스 문자 집합만 사용하여 모든 문자열을 표현할 수 있습니다. 원시 문자열 리터럴을 사용하면 이스케이프 문자를 사용하지 않아도 되며 원시 문자열 리터럴을 사용하여 모든 유형의 문자열 리터럴을 표현할 수 있습니다. 또한 추가 생성이나 변환 단계를 수행하지 않고도 std:: string 리터럴을 만들 수 있습니다.
 
@@ -80,7 +80,7 @@ int main()
 
 - 형식의 utf-8 문자 리터럴 **char**예 `u8'a'`
 
-- `wchar_t`형식의 와이드 문자 리터럴(예: `L'a'`)
+-  `wchar_t`형식의 와이드 문자 리터럴(예: `L'a'`)
 
 - 형식의 utf-16 문자 리터럴 `char16_t`예 `u'a'`
 
@@ -108,17 +108,17 @@ int main()
 
 |값|이스케이프 시퀀스|
 |-----------|---------------------|
-| 줄 바꿈 | \\N |
+| 줄 바꿈 | \\n |
 | 백슬래시 | \\\\ |
 | 가로 탭 | \\t |
 | 물음표 | ? 또는 \\? |
-| 세로 탭 | \\V |
+| 세로 탭 | \\v |
 | 작은따옴표 | \\' |
-| 백스페이스 | \\B |
+| 백스페이스 | \\b |
 | 큰따옴표 | \\" |
-| 캐리지 리턴 | \\R |
+| 캐리지 리턴 | \\r |
 | null 문자 | \\0 |
-| 폼 피드 | \\F |
+| 폼 피드 | \\f |
 | 8진수 | \\ooo |
 | 경고(벨) | \\a |
 | 16진수 | \\xhhh |
@@ -254,7 +254,7 @@ auto s4 = U"hello"; // const char32_t*
 
 ### <a name="raw-string-literals-c11"></a>원시 문자열 리터럴(C++11)
 
-원시 문자열 리터럴은 null로 끝나는 배열-모든 문자 형식-큰따옴표 ("), 백슬래시를 포함 하 여 모든 그래픽 문자를 포함 하는 (\\), 또는 줄 바꿈 문자입니다. 원시 문자열 리터럴은 문자 클래스를 사용하는 정규식과 HTML 문자열 및 XML 문자열에 종종 사용됩니다. 예제를 보려면 [Bjarne Stroustrup의 C++11에 대한 FAQ](http://www.stroustrup.com/C++11FAQ.html)(영문) 문서를 참조하세요.
+원시 문자열 리터럴은 null로 끝나는 배열-모든 문자 형식-큰따옴표 ("), 백슬래시를 포함 하 여 모든 그래픽 문자를 포함 하는 (\\), 또는 줄 바꿈 문자입니다. 원시 문자열 리터럴은 문자 클래스를 사용하는 정규식과 HTML 문자열 및 XML 문자열에 종종 사용됩니다. 예를 들어 다음 문서를 참조 합니다. [C++11에서 Bjarne Stroustrup의 FAQ](http://www.stroustrup.com/C++11FAQ.html)합니다.
 
 ```cpp
 // represents the string: An unescaped \ character
@@ -328,7 +328,7 @@ const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);
 
 **Microsoft 전용**
 
-Visual c + +에서 문자열 리터럴 하 여 비 const에 대 한 포인터를 초기화할 **char** 하거나 **wchar_t**합니다. 이는 C99 코드에서 허용되지만 C++98에서는 더 이상 사용되지 않으며 C++11에서는 제거되었습니다. 문자열을 수정하려고 하면 다음 예제와 같이 액세스 위반이 발생합니다.
+시각적 개체의 C++ 리터럴 문자열을 사용 하 여 비 const에 대 한 포인터를 초기화 **char** 하거나 **wchar_t**합니다. 이는 C99 코드에서 허용되지만 C++98에서는 더 이상 사용되지 않으며 C++11에서는 제거되었습니다. 문자열을 수정하려고 하면 다음 예제와 같이 액세스 위반이 발생합니다.
 
 ```cpp
 wchar_t* str = L"hello";
