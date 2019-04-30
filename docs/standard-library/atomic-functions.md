@@ -63,11 +63,11 @@ helpviewer_keywords:
 - std::atomic_thread_fence [C++]
 - std::kill_dependency [C++]
 ms.openlocfilehash: 6ec4ff879b70e4d2cc16a3328217660db695e859
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62377141"
 ---
 # <a name="ltatomicgt-functions"></a>&lt;atomic&gt; 함수
 
@@ -154,7 +154,7 @@ inline bool atomic_compare_exchange_strong_explicit(
 *값*<br/>
 `Ty` 형식의 값입니다.
 
-*(Diffgr:id="order1*<br/>
+*Order1*<br/>
 첫 번째 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 인수입니다.
 
 *Order2*<br/>
@@ -238,7 +238,7 @@ inline bool atomic_compare_exchange_weak_explicit(
 *값*<br/>
 `Ty` 형식의 값입니다.
 
-*(Diffgr:id="order1*<br/>
+*Order1*<br/>
 첫 번째 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 인수입니다.
 
 *Order2*<br/>
@@ -970,7 +970,7 @@ Ty kill_dependency(Ty Arg) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 `Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값

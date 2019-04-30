@@ -10,11 +10,11 @@ helpviewer_keywords:
 - two-state socket object
 ms.assetid: d8ae4039-391d-44f0-a19b-558817affcbb
 ms.openlocfilehash: 3af94bc881276238f1a8d2dbeeee4dca1f173a4b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389455"
 ---
 # <a name="windows-sockets-how-sockets-with-archives-work"></a>Windows 소켓: 보관이 포함 된 소켓의 작동 방법
 
@@ -46,7 +46,7 @@ CArchive, CSocketFile 및 CSocket
 
 "보관 호환 되는" 모드로 `CSocketFile` 개체는 더 나은 성능을 제공 줄이고 "deadlock."의 위험 교착 상태는 송신 및 수신 소켓은 서로 대기 하거나 일반적인 리소스를 대기 하는 경우 발생 합니다. 하는 경우이 상황이 발생할 수 있습니다는 `CArchive` 와 협력 하는 개체를 `CSocketFile` 와 서는 `CFile` 개체. 사용 하 여 `CFile`, 보관 파일을 요청한 것 보다 더 적은 바이트를 수신 하는 경우 파일의 끝에 도달 했음을 가정할 수 있습니다. 그러나 사용 하 여 `CSocketFile`, 데이터를 기반으로 하는 메시지 버퍼에서 여러 메시지를 포함할 수, 있으므로 요청 된 바이트 수보다 적은 받는 파일의 끝을 의미 하지 않습니다. 사용 하 여 처럼이 경우 응용 프로그램 차단 하지 않습니다 `CFile`, 버퍼가 비어 때까지 버퍼에서 메시지 읽기를 계속할 수 있습니다. 합니다 [IsBufferEmpty](../mfc/reference/carchive-class.md#isbufferempty) 함수 `CArchive` 보관 파일의 경우 버퍼의 상태를 모니터링 하는 데 유용 합니다.
 
-자세한 내용은 참조 하세요. [Windows 소켓: 소켓을 사용 하 여 아카이브를 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
+자세한 내용은 참조 하세요. [Windows 소켓: 소켓과 아카이브 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
 
 ## <a name="see-also"></a>참고자료
 

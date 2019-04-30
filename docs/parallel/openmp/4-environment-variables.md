@@ -3,15 +3,15 @@ title: 4. 환경 변수
 ms.date: 01/16/2019
 ms.assetid: 4ec7ed81-e9ca-46a1-84f8-8f9ce4587346
 ms.openlocfilehash: b41829fd9cf2f90312f669ef991f56dda02947f7
-ms.sourcegitcommit: 966e4466f10c93fc12faf33d28e03b39489423fc
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62363195"
 ---
 # <a name="4-environment-variables"></a>4. 환경 변수
 
-OpenMP C 및 c + + API 환경 변수 (또는 비슷한 플랫폼별 메커니즘)이이 장에서 설명 하는 병렬 코드의 실행을 제어 합니다.  환경 변수 이름이 대문자 여야 합니다. 에 할당 된 값은 대/소문자 구분 되며 선행 및 후행 공백은 있을 수 있습니다.  수정 프로그램을 시작한 후 값은 무시 됩니다.
+이 장에서 설명 OpenMP C 및 C++ API 환경 변수 (또는 비슷한 플랫폼별 메커니즘)는 병렬 코드의 실행을 제어 합니다.  환경 변수 이름이 대문자 여야 합니다. 에 할당 된 값은 대/소문자 구분 되며 선행 및 후행 공백은 있을 수 있습니다.  수정 프로그램을 시작한 후 값은 무시 됩니다.
 
 환경 변수는 다음과 같습니다.
 

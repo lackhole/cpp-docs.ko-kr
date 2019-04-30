@@ -9,11 +9,11 @@ helpviewer_keywords:
 - detect_mismatch pragma
 ms.assetid: ddb13ac9-0e2f-40ce-be69-7e44c04f5a12
 ms.openlocfilehash: 42a3ba61cefe3b2db01aef24b802e3a51fed55d9
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389335"
 ---
 # <a name="detectmismatch"></a>detect_mismatch
 레코드를 개체에 배치합니다. 링커는 이러한 레코드를 검사하여 잠재적인 불일치를 확인합니다.

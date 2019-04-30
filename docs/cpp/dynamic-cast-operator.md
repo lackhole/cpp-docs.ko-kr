@@ -7,11 +7,11 @@ helpviewer_keywords:
 - dynamic_cast keyword [C++]
 ms.assetid: f380ada8-6a18-4547-93c9-63407f19856b
 ms.openlocfilehash: 3b359885eb72f9272fb1efe14afe9a6cbe6ddb30
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399063"
 ---
 # <a name="dynamiccast-operator"></a>dynamic_cast 연산자
 
@@ -54,7 +54,7 @@ void f(D* pd) {
 
 파생된 클래스에서 파생 된 클래스에서 클래스 계층에 대 한 포인터를 이동 하기 때문이 유형의 변환 "업캐스팅" 라고 합니다. 업 캐스트는 암시적 변환이 수행 됩니다.
 
-하는 경우 `type-id` 은 void *의 실제 형식을 결정 하는 런타임 검사가 수행 됩니다 `expression`합니다. 결과 완전 한 가리키는 개체에 대 한 포인터는 `expression`합니다. 예:
+하는 경우 `type-id` 은 void *의 실제 형식을 결정 하는 런타임 검사가 수행 됩니다 `expression`합니다. 결과 완전 한 가리키는 개체에 대 한 포인터는 `expression`합니다. 예를 들어:
 
 ```cpp
 // dynamic_cast_2.cpp
@@ -75,7 +75,7 @@ void f() {
 
 경우 `type-id` void *, 없는 경우 개체를 가리키는 참조 하는 런타임 검사가 수행 됩니다 `expression` 가리키는 형식으로 변환할 수 `type-id`입니다.
 
-경우 형식의 `expression` 형식의 기본 클래스인 `type-id`, 있는지는 런타임 검사가 수행 됩니다 `expression` 형식의 완전 한 개체를 가리키는 실제로 `type-id`합니다. True 이면 결과 완전 한 개체의 형식에 대 한 포인터 `type-id`합니다. 예:
+경우 형식의 `expression` 형식의 기본 클래스인 `type-id`, 있는지는 런타임 검사가 수행 됩니다 `expression` 형식의 완전 한 개체를 가리키는 실제로 `type-id`합니다. True 이면 결과 완전 한 개체의 형식에 대 한 포인터 `type-id`합니다. 예를 들어:
 
 ```cpp
 // dynamic_cast_3.cpp
@@ -291,4 +291,4 @@ Can't cast to C
 ## <a name="see-also"></a>참고자료
 
 [캐스팅 연산자](../cpp/casting-operators.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[키워드(C++)](../cpp/keywords-cpp.md)

@@ -18,11 +18,11 @@ helpviewer_keywords:
 - partial_sum function [STL/CLR]
 ms.assetid: 1dc4d9a3-e734-459c-9678-5d9be0ef4c79
 ms.openlocfilehash: 0311b36ec1190631e053eeade443939703e69103
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384805"
 ---
 # <a name="numeric-stlclr"></a>numeric(STL/CLR)
 
@@ -42,7 +42,7 @@ ms.locfileid: "51328905"
 
 ## <a name="declarations"></a>선언
 
-|기능|설명|
+|함수|설명|
 |--------------|-----------------|
 |[accumulate(STL/CLR)](#accumulate)|연속적 부분 합계를 계산하여 일부 초기값을 비롯한 지정된 범위 내 모든 요소의 합계를 계산하거나, 합계 대신 지정된 이진 연산을 사용하여 유사하게 구한 연속적 부분 결과의 결과를 계산합니다.|
 |[adjacent_difference(STL/CLR)](#adjacent_difference)|각 요소와 입력 범위의 해당 선행 작업간 연속 차이를 계산하고 결과를 대상 범위로 출력하거나 차이 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차 결과를 계산합니다.|
@@ -66,7 +66,7 @@ template<class _InIt, class _Ty, class _Fn2> inline
 
 ### <a name="remarks"></a>설명
 
-이 함수는 c + + 표준 라이브러리 숫자 함수와 동일 하 게 동작 `accumulate`합니다. 자세한 내용은 [누적](../standard-library/numeric-functions.md#accumulate)합니다.
+이 기능은 동일 하 게 작동 합니다 C++ 표준 라이브러리 숫자 함수 `accumulate`합니다. 자세한 내용은 [누적](../standard-library/numeric-functions.md#accumulate)합니다.
 
 ## <a name="adjacent_difference"></a> adjacent_difference (STL/CLR)
 
@@ -85,7 +85,7 @@ template<class _InIt, class _OutIt, class _Fn2> inline
 
 ### <a name="remarks"></a>설명
 
-이 함수는 c + + 표준 라이브러리 숫자 함수와 동일 하 게 동작 `adjacent_difference`합니다. 자세한 내용은 [adjacent_difference](../standard-library/numeric-functions.md#adjacent_difference)합니다.
+이 기능은 동일 하 게 작동 합니다 C++ 표준 라이브러리 숫자 함수 `adjacent_difference`합니다. 자세한 내용은 [adjacent_difference](../standard-library/numeric-functions.md#adjacent_difference)합니다.
 
 ## <a name="inner_product"></a> inner_product (STL/CLR)
 
@@ -105,7 +105,7 @@ template<class _InIt1, class _InIt2, class _Ty, class _Fn21,
 
 ### <a name="remarks"></a>설명
 
-이 함수는 c + + 표준 라이브러리 숫자 함수와 동일 하 게 동작 `inner_product`합니다. 자세한 내용은 [inner_product](../standard-library/numeric-functions.md#inner_product)합니다.
+이 기능은 동일 하 게 작동 합니다 C++ 표준 라이브러리 숫자 함수 `inner_product`합니다. 자세한 내용은 [inner_product](../standard-library/numeric-functions.md#inner_product)합니다.
 
 ## <a name="partial_sum"></a> partial_sum (STL/CLR)
 
@@ -123,4 +123,4 @@ template<class _InIt, class _OutIt, class _Fn2> inline
 
 ### <a name="remarks"></a>설명
 
-이 함수는 c + + 표준 라이브러리 숫자 함수와 동일 하 게 동작 `partial_sum`합니다. 자세한 내용은 [partial_sum](../standard-library/numeric-functions.md#partial_sum)합니다.
+이 기능은 동일 하 게 작동 합니다 C++ 표준 라이브러리 숫자 함수 `partial_sum`합니다. 자세한 내용은 [partial_sum](../standard-library/numeric-functions.md#partial_sum)합니다.

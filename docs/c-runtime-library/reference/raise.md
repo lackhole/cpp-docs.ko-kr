@@ -24,11 +24,11 @@ helpviewer_keywords:
 - signals
 - programs [C++], sending signals to executing programs
 ms.openlocfilehash: 68d1cc653b955e607648e4d30562d2b77e3520e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358062"
 ---
 # <a name="raise"></a>raise
 
@@ -60,7 +60,7 @@ int raise(
 
 |신호|의미|기본|
 |------------|-------------|-------------|
-|**SIGABRT와**|비정상적인 종료|호출 프로그램을 종료하고 종료 코드 3을 생성합니다.|
+|**SIGABRT**|비정상적인 종료|호출 프로그램을 종료하고 종료 코드 3을 생성합니다.|
 |**SIGFPE**|부동 소수점 오류|호출 프로그램을 종료합니다.|
 |**SIGILL**|잘못된 명령|호출 프로그램을 종료합니다.|
 |**SIGINT**|CTRL+C 인터럽트|호출 프로그램을 종료합니다.|

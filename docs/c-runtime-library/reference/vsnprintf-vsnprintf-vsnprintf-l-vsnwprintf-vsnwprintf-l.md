@@ -53,11 +53,11 @@ helpviewer_keywords:
 - vsnwprintf function
 ms.assetid: a97f92df-c2f8-4ea0-9269-76920d2d566a
 ms.openlocfilehash: 7c3416397d8f43963d3be2ce9bc39707ea7865db
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383466"
 ---
 # <a name="vsnprintf-vsnprintf-vsnprintfl-vsnwprintf-vsnwprintfl"></a>vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 
@@ -195,7 +195,7 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 |루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C++)|
 |-------------|---------------------------|-------------------------------|
-|**vsnprintf**하십시오 **_vsnprintf**, **_vsnprintf_l**|\<stdio.h>|\<stdio.h> 또는  \<cstdio>|
+|**vsnprintf**, **_vsnprintf**, **_vsnprintf_l**|\<stdio.h>|\<stdio.h> 또는  \<cstdio>|
 |**_vsnwprintf**, **_vsnwprintf_l**|\<stdio.h> 또는 \<wchar.h>|\<stdio.h>, \<wchar.h>, \<cstdio> 또는 \<cwchar>|
 
 **_vsnprintf**, **_vsnprintf_l**를 **_vsnwprintf** 하 고 **_vsnwprintf_l** 함수는 Microsoft 전용입니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.

@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 오류 C2000 ~ C2099
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C2000
 - C2016
@@ -36,12 +36,12 @@ helpviewer_keywords:
 - C2096
 - C2098
 ms.assetid: d99a19eb-eeeb-4181-9b33-9cbe4459767b
-ms.openlocfilehash: aff0faff5d8e58b46aa6280eb8f259dbd64acee9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: cf1d2f647c13b589463624749e29dc277f6f1d3e
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360491"
 ---
 # <a name="compiler-errors-c2000-through-c2099"></a>컴파일러 오류 C2000 ~ C2099
 
@@ -53,7 +53,7 @@ ms.locfileid: "50548150"
 
 |Error|메시지|
 |-----------|-------------|
-|컴파일러 오류 C2000|알 수 없는 오류 하세요 Visual c + + 도움말 메뉴에서 [기술 지원] 명령을 선택 또는 자세한 정보에 대 한 기술 지원 도움말 파일|
+|컴파일러 오류 C2000|알 수 없는 오류 하세요 시각적 개체에서 [기술 지원] 명령을 선택 C++ 자세한 정보에 대 한 기술 지원 도움말 파일을 열거나 도움말 메뉴에서|
 |[컴파일러 오류 C2001](compiler-error-c2001.md)|상수에 줄 바꿈|
 |[컴파일러 오류 C2002](compiler-error-c2002.md)|잘못 된 와이드 문자 상수|
 |[컴파일러 오류 C2003](compiler-error-c2003.md)|예상된 ' defined i d '|
@@ -65,7 +65,7 @@ ms.locfileid: "50548150"
 |[컴파일러 오류 C2009](compiler-error-c2009.md)|매크로 정식 재사용 '*식별자*'|
 |[컴파일러 오류 C2010](compiler-error-c2010.md)|'*문자*': 매크로 정식 매개 변수 목록에 예기치 않은|
 |[컴파일러 오류 C2011](compiler-error-c2011.md)|'*식별자*': '*형식*' 형식 재정의|
-|[컴파일러 오류 C2012](compiler-error-c2012.md)|'<' 다음에 이름이 없습니다.|
+|[컴파일러 오류 C2012](compiler-error-c2012.md)|다음에 이름이 없습니다. ' <'|
 |[컴파일러 오류 C2013](compiler-error-c2013.md)|'>'가 없습니다.|
 |[컴파일러 오류 C2014](compiler-error-c2014.md)|전처리기 명령은 공백 아닌 문자로 시작 해야 합니다.|
 |[컴파일러 오류 C2015](compiler-error-c2015.md)|상수 문자가 너무 많습니다.|
@@ -76,7 +76,7 @@ ms.locfileid: "50548150"
 |[컴파일러 오류 C2020](compiler-error-c2020.md)|'*멤버*': '*클래스*' 멤버 재정의|
 |[컴파일러 오류 C2021](compiler-error-c2021.md)|지 수 값이 없습니다 필요 '*문자*'|
 |[컴파일러 오류 C2022](compiler-error-c2022.md)|'*번호*': 문자에 비해 너무 커서|
-|컴파일러 오류 C2023|'*식별자*': 맞춤 (*number1*) 이전 선언과 다릅니다 (*number2*)|
+|컴파일러 오류 C2023|'*identifier*': 맞춤 (*number1*) 이전 선언과 다릅니다 (*number2*)|
 |컴파일러 오류 C2024|'alignas' 특성 변수, 데이터 멤버 및 태그 형식에만 적용 됩니다.|
 |컴파일러 오류 C2025|잘못 되었거나 손상 된 이진 모듈 인터페이스 파일: '*filename*'|
 |[컴파일러 오류 C2026](compiler-error-c2026.md)|문자열이 너무 길어 잘립니다. 후행 문자|
@@ -149,7 +149,12 @@ ms.locfileid: "50548150"
 |[컴파일러 오류 C2093](compiler-error-c2093.md)|'*identifier1*': 자동 변수의 주소를 사용 하 여 초기화할 수 없습니다. '*identifier2*'|
 |[컴파일러 오류 C2094](compiler-error-c2094.md)|레이블 '*식별자*' 정의 되지 않았습니다.|
 |[컴파일러 오류 C2095](compiler-error-c2095.md)|'*함수*': 실제 매개 변수는 'void' 형식의: 매개 변수 *수*|
-|컴파일러 오류 C2096|'*식별자*': 데이터 멤버는 괄호로 묶은 이니셜라이저로 초기화할 수 없습니다|
+|컴파일러 오류 C2096|'*identifier*': 데이터 멤버는 괄호로 묶은 이니셜라이저로 초기화할 수 없습니다.|
 |[컴파일러 오류 C2097](compiler-error-c2097.md)|초기화가 잘못 되었습니다|
 |컴파일러 오류 C2098|데이터 멤버 뒤에 예기치 않은 토큰 '*식별자*'|
 |[컴파일러 오류 C2099](compiler-error-c2099.md)|이니셜라이저가 상수가 아닙니다.|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

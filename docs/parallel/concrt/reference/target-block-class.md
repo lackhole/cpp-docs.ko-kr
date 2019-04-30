@@ -26,16 +26,15 @@ helpviewer_keywords:
 - target_block class
 ms.assetid: 3ce181b4-b94a-4894-bf7b-64fc09821f9f
 ms.openlocfilehash: 6033da1347e116b4b68cf719a461a1cf6ff5d04f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385170"
 ---
 # <a name="targetblock-class"></a>target_block 클래스
 
-
-  `target_block` 클래스는 대상 전용 블록에 대해 기본 링크 관리 기능 및 오류 검사를 제공하는 추상 기본 클래스입니다.
+`target_block` 클래스는 대상 전용 블록에 대해 기본 링크 관리 기능 및 오류 검사를 제공하는 추상 기본 클래스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -208,8 +207,7 @@ virtual message_status propagate(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-
-  `message` 개체에 대한 포인터입니다.
+`message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -235,8 +233,7 @@ virtual message_status propagate_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-
-  `message` 개체에 대한 포인터입니다.
+`message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -283,8 +280,7 @@ virtual message_status send(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-
-  `message` 개체에 대한 포인터입니다.
+`message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.

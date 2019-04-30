@@ -24,11 +24,11 @@ helpviewer_keywords:
 - _set_abort_behavior function
 - set_abort_behavior function
 ms.openlocfilehash: 8b36a771a3694c6d01573d619990743c7ddc0f3e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356695"
 ---
 # <a name="setabortbehavior"></a>_set_abort_behavior
 
@@ -51,7 +51,7 @@ unsigned int _set_abort_behavior(
 *flags*<br/>
 새 값을 [중단](abort.md) 플래그입니다.
 
-*마스크*<br/>
+*mask*<br/>
 에 대 한 마스크를 [중단](abort.md) 설정 하는 비트 플래그입니다.
 
 ## <a name="return-value"></a>반환 값

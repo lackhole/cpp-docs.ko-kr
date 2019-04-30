@@ -27,15 +27,15 @@ helpviewer_keywords:
 - pseudorandom numbers
 - numbers, generating pseudorandom
 ms.openlocfilehash: 868c6239ac1b86dfc9ac72cc8cc83d1ba3002b4a
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357774"
 ---
 # <a name="rand"></a>rand
 
-잘 알려진을 완벽 하 게 재현할 수 있는 알고리즘을 사용 하 여 난수를 생성 합니다. 이 함수를 프로그래밍 방식으로 더 안전한 버전을 사용할 수 있습니다. 참조 [rand_s](rand-s.md)합니다. 생성 된 번호 **rand** 암호로 보호 되지 않습니다. 자세한 내용은 난수 생성 암호화 보안을 사용 [rand_s](rand-s.md) 에서 c + + 표준 라이브러리의 함수 선언 또는 [ \<임의 >](../../standard-library/random.md)합니다.
+잘 알려진을 완벽 하 게 재현할 수 있는 알고리즘을 사용 하 여 난수를 생성 합니다. 이 함수를 프로그래밍 방식으로 더 안전한 버전을 사용할 수 있습니다. 참조 [rand_s](rand-s.md)합니다. 생성 된 번호 **rand** 암호로 보호 되지 않습니다. 추가 난수 생성 암호화 된 보안을 사용 하 여 [rand_s](rand-s.md) 선언 된 함수 또는 C++ 의 표준 라이브러리 [ \<임의 >](../../standard-library/random.md).
 
 ## <a name="syntax"></a>구문
 
@@ -51,7 +51,7 @@ int rand( void );
 
 합니다 **rand** 0 범위의 의사 난수 정수를 반환 하는 함수 **RAND_MAX** (32767). 사용 된 [srand](srand.md) 함수를 호출 하기 전에 의사 난수 생성기의 초기값 **rand**합니다.
 
-합니다 **rand** 함수는 잘 알려진 시퀀스를 생성 하 고 암호화 함수로 사용에 적합 하지 않습니다. 자세한 내용은 난수 생성 암호화 보안을 사용 [rand_s](rand-s.md) 에서 c + + 표준 라이브러리의 함수 선언 또는 [ \<임의 >](../../standard-library/random.md)합니다. 무엇이 잘못 된에 대 한 자세한 **rand** 방법과 \<임의 >이 비디오를 받을 참조 이러한 문제를 해결 [rand 간주 해로운](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful)합니다.
+합니다 **rand** 함수는 잘 알려진 시퀀스를 생성 하 고 암호화 함수로 사용에 적합 하지 않습니다. 추가 난수 생성 암호화 된 보안을 사용 하 여 [rand_s](rand-s.md) 선언 된 함수 또는 C++ 의 표준 라이브러리 [ \<임의 >](../../standard-library/random.md). 무엇이 잘못 된에 대 한 자세한 **rand** 방법과 \<임의 >이 비디오를 받을 참조 이러한 문제를 해결 [rand 간주 해로운](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful)합니다.
 
 ## <a name="requirements"></a>요구 사항
 

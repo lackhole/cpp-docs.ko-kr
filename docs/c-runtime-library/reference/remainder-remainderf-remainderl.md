@@ -28,11 +28,11 @@ helpviewer_keywords:
 - remainder
 ms.assetid: 5f721fb3-8b78-4597-9bc0-ca9bcd1f1d0e
 ms.openlocfilehash: 9a9abe82e69122ca87f44e293e1da725c97045d4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357644"
 ---
 # <a name="remainder-remainderf-remainderl"></a>remainder, remainderf, remainderl
 
@@ -67,13 +67,13 @@ long double remainder( long double x, long double y ); /* C++ only */
 
 합니다 **나머지** 함수는 부동 소수점 나머지를 계산 *r* 의 *x* / *y* 되도록 *x*   =  *n* \* *y* + *r*여기서 *n*되는 정수 값에서 가장 가까운 *x* / *y* 하 고 *n*짝수 때마다 &#124; *n*  -  *x* / *y* &#124; = 1/2입니다. 때 *r* = 0 이면 *r* 와 부호가 같도록 *x*합니다.
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **나머지** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **나머지** 는 두 가지는 항상 **double** 인수 및 반환을 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **나머지** 및 반환 하는 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **나머지** 는 두 가지는 항상 **double** 인수 및 반환을 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더(C)|필수 헤더(C++)|
+|함수|필수 헤더(C)|필수 헤더(C++)|
 |--------------|---------------------|-|
-|**나머지**하십시오 **remainderf**, **remainderl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**remainder**, **remainderf**, **remainderl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C2797
 ms.assetid: 9fb26d35-eb5c-46fc-9ff5-756fba5bdaff
 ms.openlocfilehash: 04a7b2b1d33ab7efa77563406ab3c12831cf80fc
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360127"
 ---
 # <a name="compiler-error-c2797"></a>컴파일러 오류 C2797
 
 (사용 되지 않음) 멤버 이니셜라이저 목록 또는 비정적 데이터 멤버 이니셜라이저 내의 목록 초기화가 구현 되지 않았습니다.
 
-이 경고는 Visual Studio 2015에서 사용 되지 않습니다. Visual Studio 2013 및 이전 버전의 Visual c + + 컴파일러는 멤버 이니셜라이저 목록 또는 비정적 데이터 멤버 이니셜라이저 내의 목록 초기화를 구현 하지 않습니다. Visual Studio 2013 업데이트 3 이전에는 이 초기화가 함수 호출로 자동 변환되어 잘못된 코드가 생성될 수 있었습니다. Visual Studio 2013 업데이트 3에서는 이러한 초기화를 오류로 보고합니다.
+이 경고는 Visual Studio 2015에서 사용 되지 않습니다. Visual Studio 2013 및 이전 버전에서 시각적 개체 C++ 컴파일러는 멤버 이니셜라이저 목록 또는 비정적 데이터 멤버 이니셜라이저 내의 목록 초기화를 구현 하지 않습니다. Visual Studio 2013 업데이트 3 이전에는 이 초기화가 함수 호출로 자동 변환되어 잘못된 코드가 생성될 수 있었습니다. Visual Studio 2013 업데이트 3에서는 이러한 초기화를 오류로 보고합니다.
 
 이 예제에서는 C2797 오류를 생성합니다.
 
@@ -45,7 +45,7 @@ struct S2 {
 };
 ```
 
-이 문제를 해결하려면 안쪽 목록의 명시적 생성을 사용할 수 있습니다. 예를 들면 다음과 같습니다.
+이 문제를 해결하려면 안쪽 목록의 명시적 생성을 사용할 수 있습니다. 예를 들어:
 
 ```
 #include <vector>

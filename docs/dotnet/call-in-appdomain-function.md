@@ -8,11 +8,11 @@ helpviewer_keywords:
 - call_in_appdomain function
 ms.assetid: 9a1a5026-b76b-4cae-a3d4-29badeb9db9c
 ms.openlocfilehash: a7ee0ef9c98ee940ab810abd82f6220da95d7346
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351497"
 ---
 # <a name="callinappdomain-function"></a>call_in_appdomain 함수
 
@@ -50,7 +50,7 @@ RetType call_in_appdomain(
 *nonvoidFunc*<br/>
 이외에 대 한 포인터`void` N 매개 변수를 사용 하는 함수 (0 < = N < = 15).
 
-*... arg1 argN*<br/>
+*arg1...argN*<br/>
 0에 전달할 매개 변수가 15 ~ `voidFunc` 또는 `nonvoidFunc` 다른 appdomain에서.
 
 ## <a name="return-value"></a>반환 값

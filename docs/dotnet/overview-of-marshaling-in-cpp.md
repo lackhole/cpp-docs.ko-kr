@@ -11,11 +11,11 @@ helpviewer_keywords:
 - marshaling, about marshaling
 ms.assetid: 997dd4bc-5f98-408f-b890-f35de9ce3bb8
 ms.openlocfilehash: 9e3b8f561ce6609eb2afedb527a16c4803f69c53
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384740"
 ---
 # <a name="overview-of-marshaling-in-c"></a>C++ 마샬링 개요
 
@@ -25,7 +25,7 @@ ms.locfileid: "57746827"
 |---------------|-----------------|
 |marshal.h|`marshal_context` 클래스 및 상황에 맞는 없는 마샬링 함수|
 |marshal_atl.h| ATL 형식을 마샬링하는 함수|
-|marshal_cppstd.h|표준 c + + 형식을 마샬링하는 함수|
+|marshal_cppstd.h|표준의 마샬링을 함수 C++ 형식|
 |marshal_windows.h|Windows 형식 마샬링에 대 한 함수|
 
 에 대 한 기본 경로 **msclr** 폴더는 다음과 같은 버전에 따라 있고 빌드 번호:

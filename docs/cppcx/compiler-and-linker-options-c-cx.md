@@ -3,15 +3,15 @@ title: 컴파일러 및 링커 옵션(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: ecfadce8-3a3f-40cc-bb01-b4731f8d2fcb
 ms.openlocfilehash: cc1964c57d6700995bb283c245e4c63c8e9e313b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383362"
 ---
 # <a name="compiler-and-linker-options-ccx"></a>컴파일러 및 링커 옵션(C++/CX)
 
-환경 변수를 C + + /cli CX 컴파일러 옵션 및 링커 옵션 Windows 런타임에 대 한 앱의 빌드를 지원 합니다.
+환경 변수를 C++/CX 컴파일러 옵션 및 링커 옵션 Windows 런타임에 대 한 앱의 빌드를 지원 합니다.
 
 ## <a name="library-path"></a>라이브러리 경로
 

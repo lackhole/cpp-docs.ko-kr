@@ -26,11 +26,11 @@ helpviewer_keywords:
 - transferring control to error handler
 ms.assetid: 1d1781b6-5cf8-486a-b430-f365e0bb023f
 ms.openlocfilehash: bc7718503f59c69868a75cac9383286a548fc307
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356502"
 ---
 # <a name="setnewhandler"></a>_set_new_handler
 
@@ -45,7 +45,7 @@ _PNH _set_new_handler( _PNH pNewHandler );
 ### <a name="parameters"></a>매개 변수
 
 *pNewHandler*<br/>
-응용 프로그램에서 제공하는 메모리 처리 함수에 대한 포인터입니다. 인수가 0이면 새 처리기가 제거됩니다.
+애플리케이션에서 제공하는 메모리 처리 함수에 대한 포인터입니다. 인수가 0이면 새 처리기가 제거됩니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -53,7 +53,7 @@ _PNH _set_new_handler( _PNH pNewHandler );
 
 ## <a name="remarks"></a>설명
 
-C + + **_set_new_handler** 함수는 경우 컨트롤을 얻는 예외 처리 함수를 지정 합니다 **새** 연산자 메모리 할당에 실패 합니다. 하는 경우 **새** 실패 하면 런타임 시스템 예외 처리 함수에 인수로 전달 된 자동으로 호출 **_set_new_handler**합니다. **_PNH**New.h에 정의 된, 형식을 반환 하는 함수에 대 한 포인터 **int** 형식의 인수를 사용 하 고 **size_t**합니다. 사용 하 여 **size_t** 할당할 공간의 크기를 지정 합니다.
+C++ **_set_new_handler** 함수는 경우 컨트롤을 얻는 예외 처리 함수를 지정 합니다 **새** 연산자 메모리 할당에 실패 합니다. 하는 경우 **새** 실패 하면 런타임 시스템 예외 처리 함수에 인수로 전달 된 자동으로 호출 **_set_new_handler**합니다. **_PNH**New.h에 정의 된, 형식을 반환 하는 함수에 대 한 포인터 **int** 형식의 인수를 사용 하 고 **size_t**합니다. 사용 하 여 **size_t** 할당할 공간의 크기를 지정 합니다.
 
 기본 처리기가 없습니다.
 

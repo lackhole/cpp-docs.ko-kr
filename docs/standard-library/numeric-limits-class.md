@@ -71,11 +71,11 @@ helpviewer_keywords:
 - std::numeric_limits [C++], traps
 ms.assetid: 9e817177-0e91-48e6-b680-0531c4b26625
 ms.openlocfilehash: 861850f192281d64ef02ec4a241315c05cd3318f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371518"
 ---
 # <a name="numericlimits-class"></a>numeric_limits 클래스
 
@@ -156,7 +156,7 @@ static constexpr Type denorm_min() throw();
 
 ### <a name="remarks"></a>설명
 
-**long double** 같습니다 **double** c + + 컴파일러.
+**long double** 같습니다 **이중** 에 C++ 컴파일러.
 
 동일한 형식에 대 한 최소값을 반환 하는 함수도 [min](#min) 경우 [has_denorm](#has_denorm) 같지 않은 `denorm_present`합니다.
 

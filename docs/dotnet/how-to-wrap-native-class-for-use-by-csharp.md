@@ -7,15 +7,15 @@ helpviewer_keywords:
 - classes [C++], Visual C# and
 ms.assetid: 988819ae-cc6a-4453-8ff5-be369210d962
 ms.openlocfilehash: e58530577fdcc87f4ca168b6976a848cba29b372
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387125"
 ---
 # <a name="how-to-wrap-native-class-for-use-by-c"></a>방법: 사용 하기 위해 네이티브 클래스 래핑C#
 
-이 샘플에는 C# 또는 다른.NET 언어로 작성 된 코드에서 사용할 수 있도록 네이티브 c + + 클래스를 래핑하는 방법을 보여 줍니다.
+이 샘플에서는 네이티브를 래핑하는 방법을 보여 줍니다. C++ 에서 작성 된 코드에서 사용할 수 있도록 클래스 C#, 또는 다른.NET 언어입니다.
 
 ## <a name="example"></a>예제
 

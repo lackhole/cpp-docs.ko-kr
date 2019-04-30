@@ -10,11 +10,11 @@ helpviewer_keywords:
 - status bars [MFC], creating
 ms.assetid: 9aeaf290-7099-4762-a5ba-9c26705333c9
 ms.openlocfilehash: a2301301d0012bd93ffedd0452dec140174402e0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57276886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383895"
 ---
 # <a name="methods-of-creating-a-status-bar"></a>상태 표시줄을 만드는 방법
 
@@ -22,7 +22,7 @@ MFC 상태 표시줄을 만드는 두 가지 클래스를 제공 합니다. [CSt
 
 `CStatusBarCtrl` 일반적으로 결과를 더 작은 실행 파일을 사용할 수도 `CStatusBarCtrl` 상태 표시줄을 MFC 아키텍처에 통합 하려는 경우. 사용 하려는 경우 `CStatusBarCtrl` 및 상태 표시줄을 MFC 아키텍처 통합, 상태 표시줄을 MFC 컨트롤 조작에 전달할 추가 주의 해야 합니다. 이 통신; 어렵지 않습니다. 그러나 사용 하는 경우에 필요 없는 추가 작업 것 `CStatusBar`입니다.
 
-Visual c + +에는 상태 모음 공용 컨트롤을 활용 하려면 두 가지 있습니다.
+Visual C++ 상태 표시줄 공용 컨트롤을 활용 하려면 두 가지 방법을 제공 합니다.
 
 - 상태 표시줄을 만드는 `CStatusBar`, 다음 호출 [CStatusBar::GetStatusBarCtrl](../mfc/reference/cstatusbar-class.md#getstatusbarctrl) 에 액세스 하는 `CStatusBarCtrl` 멤버 함수입니다.
 
