@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Visual C++, preprocessor macros
 ms.assetid: a7bfc5d4-2537-4fe0-bef0-70cec0b43388
 ms.openlocfilehash: 281aaf686c07894b5cb1fab187ba903179c51de8
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59032182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371779"
 ---
 # <a name="macros-cc"></a>매크로 (C/C++)
 전처리기 지시문에 없는 모든 줄의 매크로 확장을 전처리 (되지 않은 줄을 **#** 첫 번째 공백이 아닌 문자) 및 일부 지시문의 일부로 건너뛰지 않습니다는 조건부 컴파일입니다. "조건부 컴파일" 지시문을 사용하면 상수 식을 테스트하여 소스 파일의 일부 컴파일을 억제하거나 식별자를 사용하여 전처리 과정에서 어떤 텍스트 블록이 컴파일러에 전달되고 어떤 텍스트 블록이 소스 파일에서 제거되는지 결정할 수 있습니다.

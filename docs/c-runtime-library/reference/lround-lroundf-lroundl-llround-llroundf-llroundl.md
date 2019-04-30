@@ -37,11 +37,11 @@ helpviewer_keywords:
 - lroundl function
 ms.assetid: cfb88a35-54c6-469f-85af-f7d695dcfdd8
 ms.openlocfilehash: a1406f84179df555125b908caa13a0cde6516597
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62285847"
 ---
 # <a name="lround-lroundf-lroundl-llround-llroundf-llroundl"></a>lround, lroundf, lroundl, llround, llroundf, llroundl
 
@@ -93,17 +93,17 @@ long long llroundl(
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|**QNAN**, **찾기**|없음|**(_D)**|
+|± **QNAN**, **IND**|없음|**_DOMAIN**|
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **lround** 하거나 **llround** 및 반환 하는 **float** 고 **긴** **이중** 값입니다. C 프로그램에서 **lround** 하 고 **llround** 항상 하 고 반환을 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **lround** 또는 **llround** 및 반환 하는 **float** 하 고 **긴** **이중** 값입니다. C 프로그램에서 **lround** 하 고 **llround** 항상 하 고 반환을 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**lround**, **lroundf**합니다 **lroundl**를 **llround**를 **llroundf**, **llroundl**|\<math.h>|
+|**lround**, **lroundf**, **lroundl**, **llround**, **llroundf**, **llroundl**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

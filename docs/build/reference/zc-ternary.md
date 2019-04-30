@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Zc:ternary
 - -Zc:ternary
 ms.openlocfilehash: cb9a4f8468a9cb57af711cdca36ee343e5092493
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315438"
 ---
 # <a name="zcternary-enforce-conditional-operator-rules"></a>/Zc: ternary (조건 연산자 규칙 적용)
 
-형식에 대 한 c + + 표준 규칙의 적용 및 조건부 연산자 식의 두 번째 및 세 번째 피연산자의 const 또는 volatile (cv) 자격을 사용 하도록 설정 합니다.
+적용 사용 C++ 형식 및 조건부 연산자 식의 두 번째 및 세 번째 피연산자의 const 또는 volatile (cv) 한정자에 대 한 표준 규칙입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -24,7 +24,7 @@ ms.locfileid: "57816492"
 
 ## <a name="remarks"></a>설명
 
-Visual Studio 버전 15.3에서는 c + + 표준 조건부 (삼항) 연산자에 대 한 컴파일러 지원 (**?:**) 동작 합니다. C + + 표준에는 동일한 형식 및 cv 한정자를, 동일한 유형 및 다른 cv 한정자를 명확 하 게 변환할 수 있는 하나의 피연산자에 대 한 또는 throw 식인 하나 또는 두 피연산자에 대 한 피연산자 필요 합니다. Visual Studio 버전 15.5 이전 버전에서는 컴파일러가 허용 하 여 표준에서 모호한 간주 되는 변환입니다. 경우는 **/zc: ternary** 옵션을 지정 하면 컴파일러는 표준을 준수 하 고 일치 하는 형식 및 두 번째 및 세 번째 피연산자의 cv 한정자에 대 한 규칙을 충족 하지 않는 코드를 거부 합니다.
+Visual Studio 버전 15.3에서는 컴파일러 지원에 대 한 C++ 표준 조건부 (삼항) 연산자 (**?:**) 동작 합니다. C++ 표준에서는 동일한 형식 및 cv 한정자를, 동일한 유형 및 다른 cv 한정자를 명확 하 게 변환할 수 있는 하나의 피연산자에 대 한 또는 throw 식인 하나 또는 두 피연산자에 대 한 피연산자가 필요 합니다. Visual Studio 버전 15.5 이전 버전에서는 컴파일러가 허용 하 여 표준에서 모호한 간주 되는 변환입니다. 경우는 **/zc: ternary** 옵션을 지정 하면 컴파일러는 표준을 준수 하 고 일치 하는 형식 및 두 번째 및 세 번째 피연산자의 cv 한정자에 대 한 규칙을 충족 하지 않는 코드를 거부 합니다.
 
 합니다 **/zc: ternary** 옵션은 기본적으로 해제 되어 있습니다. 사용 하 여 **/zc: ternary** 준수 동작을 사용 하도록 설정 하려면 또는 **/Zc:ternary-** 를 명시적으로 이전 비준수 컴파일러 동작을 지정 합니다. 합니다 [/ permissive-](permissive-standards-conformance.md) 옵션은 암시적으로이 옵션을 사용 하지만 사용 하 여 재정의할 수 있습니다 **/Zc:ternary-** 합니다.
 
@@ -151,9 +151,9 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. 수정 된 **추가 옵션** 포함할 속성을 **/zc: ternary** 또는 **/Zc:ternary-** 를 선택한 후 **확인**합니다.
 

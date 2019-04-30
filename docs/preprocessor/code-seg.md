@@ -9,11 +9,11 @@ helpviewer_keywords:
 - code_seg pragma
 ms.assetid: bf4faac1-a511-46a6-8d9e-456851d97d56
 ms.openlocfilehash: e566fb01bf70b343b75254a10466bdda2bc7ce1b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403505"
 ---
 # <a name="codeseg"></a>code_seg
 함수가 .obj 파일에 저장되는 텍스트 세그먼트를 지정합니다.

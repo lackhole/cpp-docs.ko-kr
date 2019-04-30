@@ -34,16 +34,15 @@ helpviewer_keywords:
 - concurrent_vector class
 ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
 ms.openlocfilehash: 7c2ca35239dfb3ce4c0f710259f54005ff9f3c94
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62224209"
 ---
 # <a name="concurrentvector-class"></a>concurrent_vector 클래스
 
-
-  `concurrent_vector` 클래스는 모든 요소에 대해 임의 액세스를 허용하는 시퀀스 컨테이너 클래스입니다. 동시성으로부터 안전한 추가, 요소 액세스, 반복기 액세스 및 반복기 통과 작업을 사용할 수 있게 합니다.
+`concurrent_vector` 클래스는 모든 요소에 대해 임의 액세스를 허용하는 시퀀스 컨테이너 클래스입니다. 동시성으로부터 안전한 추가, 요소 액세스, 반복기 액세스 및 반복기 통과 작업을 사용할 수 있게 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -245,7 +244,7 @@ size_type capacity() const;
 
 ### <a name="remarks"></a>설명
 
-C + + 표준 라이브러리와 달리 `vector`, `concurrent_vector` 개체 더 많은 메모리를 할당 하는 경우 기존 요소를 이동 하지 않습니다.
+달리는 C++ 표준 라이브러리 `vector`하면 `concurrent_vector` 개체가 더 많은 메모리를 할당 하는 경우 기존 요소를 이동 하지 않도록 합니다.
 
 ##  <a name="cbegin"></a> cbegin
 
@@ -332,8 +331,7 @@ concurrent_vector(_InputIterator _Begin,
 요소를 복사해 오거나 이동해 올 소스 `concurrent_vector` 개체입니다.
 
 *_N*<br/>
-
-  `concurrent_vector` 개체의 초기 용량입니다.
+`concurrent_vector` 개체의 초기 용량입니다.
 
 *_Item*<br/>
 생성된 된 개체의 요소 값입니다.

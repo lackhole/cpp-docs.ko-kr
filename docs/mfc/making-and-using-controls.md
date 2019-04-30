@@ -7,15 +7,15 @@ helpviewer_keywords:
 - common controls [MFC], about common controls
 ms.assetid: a252acad-3cc0-440e-bbc6-43eaaf8cb7bb
 ms.openlocfilehash: 6a31c783e19603eadb90fd0e6be99ff55f4eaeb7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352179"
 ---
 # <a name="making-and-using-controls"></a>컨트롤 만들기 및 사용
 
-Visual c + +에서 대화 상자에 대 한 대부분의 컨트롤을 만들 [대화 상자 편집기](../windows/dialog-editor.md)합니다. 하지만 모든 대화 상자 또는 창에서 컨트롤을 만들 수도 있습니다.
+시각적 개체에서 대화 상자에 대 한 대부분의 컨트롤을 만들 C++ [대화 상자 편집기](../windows/dialog-editor.md)합니다. 하지만 모든 대화 상자 또는 창에서 컨트롤을 만들 수도 있습니다.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 

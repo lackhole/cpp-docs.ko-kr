@@ -1,5 +1,5 @@
 ---
-title: 'TN068: Microsoft Access 7 ODBC 드라이버를 사용하여 트랜잭션 수행'
+title: 'TN068: Microsoft Access 7 ODBC 드라이버를 사용 하 여 트랜잭션 수행'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.data.odbc
@@ -9,13 +9,13 @@ helpviewer_keywords:
 - transactions [MFC], Microsoft Access
 ms.assetid: d3f8f5d9-b118-4194-be36-a1aefb630c45
 ms.openlocfilehash: 3121587f85c4ea19cc92e39569008b597d24ea58
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62363793"
 ---
-# <a name="tn068-performing-transactions-with-the-microsoft-access-7-odbc-driver"></a>TN068: Microsoft Access 7 ODBC 드라이버를 사용하여 트랜잭션 수행
+# <a name="tn068-performing-transactions-with-the-microsoft-access-7-odbc-driver"></a>TN068: Microsoft Access 7 ODBC 드라이버를 사용 하 여 트랜잭션 수행
 
 > [!NOTE]
 > 다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.

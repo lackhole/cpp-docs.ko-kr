@@ -1,4 +1,4 @@
----
+﻿---
 title: 추가 시작 고려 사항
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,11 +7,11 @@ helpviewer_keywords:
 - initializing before main
 ms.assetid: 0e942aa6-8342-447c-b068-8980ed7622bd
 ms.openlocfilehash: 16e48f2e4f7544d28a1bea00e1fdf2d1cff397b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385078"
 ---
 # <a name="additional-startup-considerations"></a>추가 시작 고려 사항
 
@@ -33,4 +33,4 @@ Microsoft C++에서 전역 정적 개체는 `main`에 진입하기 전에 초기
 
 ## <a name="see-also"></a>참고자료
 
-[시작 및 종료](../cpp/startup-and-termination-cpp.md)
+[시작 및 종료 (C++)](../cpp/startup-and-termination-cpp.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C3365
 ms.assetid: 875ec3a4-522c-4e3d-9b67-48808b857f6d
 ms.openlocfilehash: fa11ac57205574da29c55344fedb0e996ab30557
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300572"
 ---
 # <a name="compiler-error-c3365"></a>컴파일러 오류 C3365
 
 연산자 'operator': 피연산자 형식 'type1'과 'type2'가 서로 다릅니다.
 
-다른 형식의 대리자를 작성하려고 했습니다.  참조 [방법: 정의 및 사용 하 여 대리자 (C + + CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md) 대리자에 대 한 자세한 내용은 합니다.
+다른 형식의 대리자를 작성하려고 했습니다.  [방법: 정의 및 사용 하 여 위임 (C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md) 대리자에 대 한 자세한 내용은 합니다.
 
 ## <a name="example"></a>예제
 

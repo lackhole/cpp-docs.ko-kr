@@ -13,11 +13,11 @@ helpviewer_keywords:
 - custom build step (general)
 ms.assetid: bd319741-0491-46c4-a428-7c61b4b46a02
 ms.openlocfilehash: 329923140cf5a8f05e5c032ddb9e25c0ea45ec2a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273081"
 ---
 # <a name="custom-build-step-property-page-general"></a>사용자 지정 빌드 단계 속성 페이지: 일반
 
@@ -53,7 +53,7 @@ ms.locfileid: "57827757"
 
 ### <a name="to-specify-a-custom-build-step"></a>사용자 지정 빌드 단계를 지정하려면
 
-1. 메뉴 모음에서 **프로젝트**, **속성**을 선택합니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 메뉴 모음에서 **프로젝트**, **속성**을 선택합니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **속성 페이지** 대화 상자에서 **구성 속성**, **사용자 지정 빌드 단계**, **일반** 페이지로 이동합니다.
 
@@ -61,4 +61,4 @@ ms.locfileid: "57827757"
 
 ## <a name="see-also"></a>참고자료
 
-[C + + 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)
+[C++ 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)

@@ -25,11 +25,11 @@ helpviewer_keywords:
 - std::uncaught_exception [C++]
 - std::unexpected [C++]
 ms.openlocfilehash: 22c5b34f1c87d10b48a797229bc987305fca8f9d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412659"
 ---
 # <a name="ltexceptiongt-functions"></a>&lt;exception&gt; 함수
 
@@ -73,7 +73,7 @@ exception_ptr make_exception_ptr(E Except);
 
 ### <a name="parameters"></a>매개 변수
 
-*제외 하*<br/>
+*Except*<br/>
 복사할 예외가 있는 클래스입니다. 모든 클래스 개체를 인수로 사용할 수 있지만, 일반적으로 [예외 클래스](../standard-library/exception-class.md) 개체를 `make_exception_ptr` 함수의 인수로 지정합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -84,7 +84,7 @@ exception_ptr make_exception_ptr(E Except);
 
 `make_exception_ptr` 함수 호출은 C++ 예외를 throw하고 catch 블록에서 catch한 다음 [current_exception](../standard-library/exception-functions.md#current_exception) 함수를 호출하여 예외를 참조하는 `exception_ptr` 개체를 반환하는 것과 동일합니다. `make_exception_ptr` 함수의 Microsoft 구현은 예외를 throw한 후 catch하는 것보다 더 효율적입니다.
 
-응용 프로그램에는 일반적으로 `make_exception_ptr` 함수가 필요하지 않으며 이 함수를 사용하지 않는 것이 좋습니다.
+애플리케이션에는 일반적으로 `make_exception_ptr` 함수가 필요하지 않으며 이 함수를 사용하지 않는 것이 좋습니다.
 
 ## <a name="rethrow_exception"></a>  rethrow_exception
 

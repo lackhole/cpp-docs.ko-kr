@@ -44,17 +44,17 @@ helpviewer_keywords:
 - Visual C++, writing to Windows Registry
 ms.assetid: b9a75cb4-0589-4d5b-92cb-5e8be42b4ac0
 ms.openlocfilehash: 413ccc3b66d76f8779861d4d65eb262ee8640725
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384377"
 ---
 # <a name="windows-operations-ccli"></a>Windows 작업(C++/CLI)
 
 Windows SDK를 사용 하 여 다양 한 Windows 관련 작업을 보여 줍니다.
 
-다음 항목에서는 Visual c + +를 사용 하 여 Windows SDK를 사용 하 여 수행 하는 다양 한 Windows 작업을 설명 합니다.
+다음 항목에서는 시각적 개체를 사용 하 여 Windows SDK를 사용 하 여 수행 하는 다양 한 Windows 작업 설명 C++입니다.
 
 ## <a name="determine_shutdown"></a> 종료 프로세스 시작 확인
 
@@ -144,7 +144,7 @@ int main( )
 
 합니다 <xref:Microsoft.Win32.Registry> 클래스는 정적 인스턴스의 컨테이너 단순히 <xref:Microsoft.Win32.RegistryKey>합니다. 각 인스턴스는 루트 레지스트리 노드를 나타냅니다. 인스턴스가 <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>합니다 <xref:Microsoft.Win32.Registry.LocalMachine>, 및 <xref:Microsoft.Win32.Registry.Users>합니다.
 
-또한으로 정적 내의 개체는 <xref:Microsoft.Win32.Registry> 클래스는 읽기 전용입니다. 또한 인스턴스의 <xref:Microsoft.Win32.RegistryKey> 레지스트리의 내용에 액세스 하기 위해 만든 클래스 개체도 읽기 전용입니다. 이 동작을 재정의 하는 방법의 예제를 참조 하세요. [방법: Windows 레지스트리에 데이터 쓰기 (C + + /cli CLI)](../dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md)합니다.
+또한으로 정적 내의 개체는 <xref:Microsoft.Win32.Registry> 클래스는 읽기 전용입니다. 또한 인스턴스의 <xref:Microsoft.Win32.RegistryKey> 레지스트리의 내용에 액세스 하기 위해 만든 클래스 개체도 읽기 전용입니다. 이 동작을 재정의 하는 방법의 예제를 참조 하세요. [방법: Windows 레지스트리에 데이터 쓰기 (C++/CLI)](../dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md)합니다.
 
 두 가지 추가 개체에는 <xref:Microsoft.Win32.Registry> 클래스: <xref:Microsoft.Win32.Registry.DynData> 고 <xref:Microsoft.Win32.Registry.PerformanceData>입니다. 둘 다의 인스턴스는 <xref:Microsoft.Win32.RegistryKey> 클래스입니다. <xref:Microsoft.Win32.Registry.DynData> Windows 98 및 me. Windows 에서만 지원 되는 동적 레지스트리 정보를 포함 하는 개체 <xref:Microsoft.Win32.Registry.PerformanceData> Windows 성능 모니터링 시스템을 사용 하는 응용 프로그램에 대 한 성능 카운터 정보에 액세스 하려면 개체를 사용할 수 있습니다. <xref:Microsoft.Win32.Registry.PerformanceData> 노드는 실제로 레지스트리에 저장 되지 않으며 따라서 볼 수 없습니다 Regedit.exe를 사용 하는 정보를 나타냅니다.
 

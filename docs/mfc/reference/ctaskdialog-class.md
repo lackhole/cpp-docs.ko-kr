@@ -117,11 +117,11 @@ helpviewer_keywords:
 - CTaskDialog [MFC], TaskDialogCallback
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
 ms.openlocfilehash: 04c8a60f546700be8eeb2ec8a948e0ea321d12f8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62324316"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog Class
 
@@ -149,8 +149,7 @@ class CTaskDialog : public CObject
 |[CTaskDialog::AddRadioButton](#addradiobutton)|라디오 단추를 추가 하 여 `CTaskDialog`입니다.|
 |[CTaskDialog::ClickCommandControl](#clickcommandcontrol)|프로그래밍 방식으로 명령 단추 컨트롤 또는 일반 단추를 클릭합니다.|
 |[CTaskDialog::ClickRadioButton](#clickradiobutton)|프로그래밍 방식으로 라디오 단추를 클릭합니다.|
-|[CTaskDialog::DoModal](#domodal)|
-  `CTaskDialog`를 표시합니다.|
+|[CTaskDialog::DoModal](#domodal)|`CTaskDialog`를 표시합니다.|
 |[CTaskDialog::GetCommonButtonCount](#getcommonbuttoncount)|사용할 수 있는 일반적인 단추의 수를 검색합니다.|
 |[CTaskDialog::GetCommonButtonFlag](#getcommonbuttonflag)|Windows 단추를 일반 단추 형식에 연결 된 표준 변환 된 `CTaskDialog` 클래스입니다.|
 |[CTaskDialog::GetCommonButtonId](#getcommonbuttonid)|와 관련 된 일반적인 단추 형식 중 하나를 변환 합니다 `CTaskDialog` 클래스는 표준 Windows 단추를 합니다.|
@@ -1624,4 +1623,4 @@ HRESULT TaskDialogCallback(
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[연습: 응용 프로그램에 CTaskDialog 추가](../../mfc/walkthrough-adding-a-ctaskdialog-to-an-application.md)
+[연습: 애플리케이션에 CTaskDialog 추가](../../mfc/walkthrough-adding-a-ctaskdialog-to-an-application.md)

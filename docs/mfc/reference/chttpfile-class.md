@@ -27,11 +27,11 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
 ms.openlocfilehash: 3c701f933d622adc5f3d8b1eb2371406e5b45e6f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62345801"
 ---
 # <a name="chttpfile-class"></a>CHttpFile 클래스
 
@@ -204,8 +204,7 @@ BOOL EndRequest(
 초기화에 대 한 포인터 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) 하는 작업에 사용 되는 입력된 버퍼에 설명 합니다.
 
 *dwContext*<br/>
-
-  `CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.
+`CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.
 
 ### <a name="return-value"></a>반환 값
 
@@ -489,8 +488,7 @@ BOOL SendRequestEx(
 작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 참조 하세요 [HttpSendRequestEx](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) Windows SDK에 있습니다.
 
 *dwContext*<br/>
-
-  `CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.
+`CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.
 
 *lpBuffIn*<br/>
 초기화에 대 한 포인터 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) 하는 작업에 사용 되는 입력된 버퍼에 설명 합니다.

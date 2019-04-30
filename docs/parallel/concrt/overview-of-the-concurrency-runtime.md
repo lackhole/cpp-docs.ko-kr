@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Concurrency Runtime, lambda expressions
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
 ms.openlocfilehash: 810d77abd37ff2c6f29e980b84645d16526744d8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412701"
 ---
 # <a name="overview-of-the-concurrency-runtime"></a>동시성 런타임 개요
 
@@ -28,7 +28,7 @@ ms.locfileid: "57305239"
 
 - [아키텍처](#architecture)
 
-- [C + + 람다 식](#lambda)
+- [C++람다 식](#lambda)
 
 - [요구 사항](#requirements)
 
@@ -103,7 +103,7 @@ PPL(병렬 패턴 라이브러리)은 세부적인 병렬 처리를 수행하기
 
 [[맨 위로 이동](#top)]
 
-##  <a name="lambda"></a> C + + 람다 식
+##  <a name="lambda"></a> C++람다 식
 
 동시성 런타임에 의해 정의되는 많은 형식 및 알고리즘은 C++ 템플릿으로 구현됩니다. 이러한 형식 및 알고리즘의 일부는 작업을 수행하는 루틴을 매개 변수로 사용합니다. 이러한 매개 변수는 람다 함수, 함수 개체 또는 함수 포인터일 수 있습니다. 이러한 엔터티는 라고도 *작업 함수* 하거나 *루틴을 작동*합니다.
 
@@ -123,7 +123,7 @@ PPL(병렬 패턴 라이브러리)은 세부적인 병렬 처리를 수행하기
 390625
 ```
 
-C + +의 람다 함수에 대 한 자세한 내용은 참조 하세요. [람다 식](../../cpp/lambda-expressions-in-cpp.md)합니다.
+람다 함수에 대 한 자세한 내용은 C++를 참조 하세요 [람다 식](../../cpp/lambda-expressions-in-cpp.md)합니다.
 
 [[맨 위로 이동](#top)]
 

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - -doc compiler option [C++]
 ms.assetid: b54f7e2c-f28f-4f46-9ed6-0db09be2cc63
 ms.openlocfilehash: 90f63a972245114424b64d4131420dcb4e1e925a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809797"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342921"
 ---
 # <a name="doc-process-documentation-comments-cc"></a>/doc(문서 주석 처리)(C/C++)
 
@@ -41,7 +41,7 @@ IntelliSense를 사용 하 여 생성 된.xml 파일을 사용 하려면 지원 
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 선택 된 **구성 속성** > **C/C++** > **출력 파일** 속성 페이지.
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - basic execution character set (C++)
 ms.assetid: 379a2af6-6422-425f-8352-ef0bca6c0d74
 ms.openlocfilehash: 5282d5b227e71c0ba6f822a9534a8a31cbd86db9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331235"
 ---
 # <a name="character-sets"></a>문자 집합
 
@@ -55,7 +55,7 @@ auto \u30AD = 42; // \u30AD is 'キ'
 if (キ == 42) return true; // \u30AD and キ are the same to the compiler
 ```
 
-Windows 클립보드의 확장된 문자 형식은 응용 프로그램 로캘 설정과 관련이 있습니다. 다른 응용 프로그램에서 이러한 문자를 잘라내어 코드에 붙여 넣으면 예기치 않은 문자 인코딩이 발생할 수 있습니다. 그러면 표시되는 원인 없이 코드에서 구문 분석 오류가 발생할 수 있습니다. 따라서 확장된 문자를 붙여 넣기 전에 소스 파일 인코딩을 유니코드 코드 페이지로 설정하는 것이 좋습니다. 또한 IME 또는 문자표 앱을 사용하여 확장된 문자를 생성하는 것이 좋습니다.
+Windows 클립보드의 확장된 문자 형식은 애플리케이션 로캘 설정과 관련이 있습니다. 다른 애플리케이션에서 이러한 문자를 잘라내어 코드에 붙여 넣으면 예기치 않은 문자 인코딩이 발생할 수 있습니다. 그러면 표시되는 원인 없이 코드에서 구문 분석 오류가 발생할 수 있습니다. 따라서 확장된 문자를 붙여 넣기 전에 소스 파일 인코딩을 유니코드 코드 페이지로 설정하는 것이 좋습니다. 또한 IME 또는 문자표 앱을 사용하여 확장된 문자를 생성하는 것이 좋습니다.
 
 **Microsoft 전용 종료**
 

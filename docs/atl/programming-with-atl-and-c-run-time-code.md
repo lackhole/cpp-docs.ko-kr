@@ -8,17 +8,17 @@ helpviewer_keywords:
 - ATL, C Run-Time library (CRT)
 ms.assetid: 20f03b66-1eb7-4add-84a2-6047db0911eb
 ms.openlocfilehash: 0e44f2d944d64eb4eefc7bbd543eaaaa04c8a9de
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62249667"
 ---
 # <a name="programming-with-atl-and-c-run-time-code"></a>ATL 및 C 런타임 코드를 사용한 프로그래밍
 
 이 섹션에서는 정적 또는 동적 링크 (CRT (C 런타임 라이브러리)을 사용 하는 이점을 설명 합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [CRT에 링크하는 데 사용되는 방법의 장단점](../atl/benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt.md)<br/>
 장점 및 단점 CRT에 정적으로 연결 하거나 동적으로 연결 하는 데 참여할된 요약 되어 있습니다.

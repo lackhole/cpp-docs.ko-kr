@@ -5,11 +5,11 @@ helpviewer_keywords:
 - WinMain method [MFC]
 ms.assetid: 24ab7597-2354-495b-9a20-2c8ccc7385b3
 ms.openlocfilehash: 8271a10ad7439d2795dcc45d667b23b0932a0486
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308552"
 ---
 # <a name="run-member-function"></a>Run 멤버 함수
 
@@ -21,4 +21,4 @@ Framework 응용 프로그램을 대부분의 시간을 소비 합니다 [실행
 
 ## <a name="see-also"></a>참고자료
 
-[CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)
+[CWinApp: 애플리케이션 클래스](../mfc/cwinapp-the-application-class.md)

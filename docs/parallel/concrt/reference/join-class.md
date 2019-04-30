@@ -17,16 +17,15 @@ helpviewer_keywords:
 - join class
 ms.assetid: d2217119-70a1-40b6-809f-c1c13a571c3f
 ms.openlocfilehash: d04ef90750c609d77fc8bf963bb996a90444f079
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281592"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64343872"
 ---
 # <a name="join-class"></a>join 클래스
 
-
-  `join` 메시징 블록은 각 소스에서 `T` 형식의 메시지를 결합하는 순서가 지정된 단일 대상 다중 소스 `propagator_block`입니다.
+`join` 메시징 블록은 각 소스에서 `T` 형식의 메시지를 결합하는 순서가 지정된 단일 대상 다중 소스 `propagator_block`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -207,8 +206,7 @@ message_status propagate_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-
-  `message` 개체에 대한 포인터입니다.
+`message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.

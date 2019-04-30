@@ -1,4 +1,4 @@
----
+﻿---
 title: /Fm(맵 파일 이름 지정)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,11 +11,11 @@ helpviewer_keywords:
 - /Fm compiler option [C++]
 ms.assetid: 8154448a-93a7-4546-8e4c-5c44d0aff45d
 ms.openlocfilehash: eebb1bc0c553dba1934aea75e2e63edc0f222fff
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292408"
 ---
 # <a name="fm-name-mapfile"></a>/Fm(맵 파일 이름 지정)
 
@@ -29,7 +29,7 @@ ms.locfileid: "57815408"
 
 ## <a name="remarks"></a>설명
 
-기본적으로 맵 파일에는 해당 C 또는 C++ 소스 파일의 기본 이름이 지정 됩니다을 합니다. 맵 확장 합니다.
+기본적으로 맵 파일에는 해당 C의 기본 이름이 지정 됩니다 또는 C++ 인 소스 파일을 합니다. 맵 확장 합니다.
 
 지정 **/Fm** 지정 않았던 것 처럼 동일한 효과가 합니다 [/MAP (맵 파일 생성)](map-generate-mapfile.md) 링커 옵션입니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "57815408"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 

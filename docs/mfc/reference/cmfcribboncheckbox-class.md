@@ -25,16 +25,15 @@ helpviewer_keywords:
 - CMFCRibbonCheckBox [MFC], SetACCData
 ms.assetid: 3a6c3891-c8d1-4af0-b954-7b9ab048782a
 ms.openlocfilehash: 34af1ae818125abd51b9eaf04cd98f9ac24addb3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392546"
 ---
 # <a name="cmfcribboncheckbox-class"></a>CMFCRibbonCheckBox 클래스
 
-
-  `CMFCRibbonCheckBox` 클래스는 리본 패널, 빠른 실행 도구 모음 또는 팝업 메뉴에 추가할 수 있는 확인란을 구현합니다.
+`CMFCRibbonCheckBox` 클래스는 리본 패널, 빠른 실행 도구 모음 또는 팝업 메뉴에 추가할 수 있는 확인란을 구현합니다.
 
 ## <a name="syntax"></a>구문
 

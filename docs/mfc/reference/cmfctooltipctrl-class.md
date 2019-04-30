@@ -33,11 +33,11 @@ helpviewer_keywords:
 - CMFCToolTipCtrl [MFC], SetParams
 ms.assetid: 9fbfcfb1-a8ab-417f-ae29-9a9ca85ee58f
 ms.openlocfilehash: aaf9d9570906b7886d8ec78575c39db5d62099f7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388308"
 ---
 # <a name="cmfctooltipctrl-class"></a>CMFCToolTipCtrl 클래스
 
@@ -75,8 +75,7 @@ class CMFCToolTipCtrl : public CToolTipCtrl
 |[CMFCToolTipCtrl::SetFixedWidth](#setfixedwidth)||
 |[CMFCToolTipCtrl::SetHotRibbonButton](#sethotribbonbutton)||
 |[CMFCToolTipCtrl::SetLocation](#setlocation)||
-|[CMFCToolTipCtrl::SetParams](#setparams)|
-  `CMFCToolTipInfo` 개체를 사용하여 도구 설명의 시각적 모양을 지정합니다.|
+|[CMFCToolTipCtrl::SetParams](#setparams)|`CMFCToolTipInfo` 개체를 사용하여 도구 설명의 시각적 모양을 지정합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -86,8 +85,7 @@ class CMFCToolTipCtrl : public CToolTipCtrl
 
 1. 사용 된 [CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md) 응용 프로그램에서 도구 설명 관리자를 초기화 하는 방법입니다.
 
-2. 
-  `CMFCToolTipInfo` 구조체를 만들어 원하는 시각적 스타일을 지정합니다.
+2. `CMFCToolTipInfo` 구조체를 만들어 원하는 시각적 스타일을 지정합니다.
 
 ```
 CMFCToolTipInfo params;
@@ -122,8 +120,7 @@ CMFCToolTipInfo params;
 theApp.GetTooltipManager ()->SetTooltipParams (AFX_TOOLTIP_TYPE_ALL,
     RUNTIME_CLASS (CMFCToolTipCtrl), &params);
 ```
-
-  `CMFCToolTipCtrl`에서 새 클래스를 파생시켜 도구 설명 동작과 렌더링을 제어할 수도 있습니다. 새 도구 설명 컨트롤 클래스를 지정하려면 `CTooltipManager::SetTooltipParams` 메서드를 사용합니다.
+`CMFCToolTipCtrl`에서 새 클래스를 파생시켜 도구 설명 동작과 렌더링을 제어할 수도 있습니다. 새 도구 설명 컨트롤 클래스를 지정하려면 `CTooltipManager::SetTooltipParams` 메서드를 사용합니다.
 
 ```
 myApp.GetTooltipManager ()->SetTooltipParams (AFX_TOOLTIP_TYPE_ALL,

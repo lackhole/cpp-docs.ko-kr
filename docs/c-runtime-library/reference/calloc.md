@@ -23,11 +23,11 @@ helpviewer_keywords:
 - calloc function
 ms.assetid: 17bb79a1-98cf-4096-90cb-1f9365cd6829
 ms.openlocfilehash: 59aa535136cf32ea5dd68b8917ec969eee41e2ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347732"
 ---
 # <a name="calloc"></a>calloc
 
@@ -44,7 +44,7 @@ void *calloc(
 
 ### <a name="parameters"></a>매개 변수
 
-*수*<br/>
+*number*<br/>
 요소의 수입니다.
 
 *size*<br/>
@@ -60,7 +60,7 @@ void *calloc(
 
 **calloc** 설정 **errno** 에 **ENOMEM** 메모리의 양을 초과 요청 하는 경우 또는 메모리를 할당 하지 못하면 **_HEAP_MAXREQ**합니다. 이 오류 코드 및 기타 오류 코드에 대한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
-**calloc** 호출 **malloc** c + +를 사용 하도록 [_set_new_mode](set-new-mode.md) 새 처리기 모드를 설정 하는 함수입니다. 새 처리기 모드를 나타내는 실패 하는지를 **malloc** 에서 설정한 대로 새 처리기 루틴을 호출 하는 것 [_set_new_handler](set-new-handler.md)합니다. 기본적으로 **malloc** 메모리 할당 실패 시 새 처리기 루틴을 호출 하지 않습니다. 이 기본 동작을 재정의할 수 있도록 때 **calloc** 메모리를 할당 하지 못했습니다 **malloc** 동일한 새 처리기 루틴을 호출 방식으로 **새** 연산자는 경우 이와 같은 이유로 실패 합니다. 기본값을 재정의하려면 다음을
+**calloc** 호출 **malloc** 사용 하는 C++ [_set_new_mode](set-new-mode.md) 함수를 새 처리기 모드를 설정 합니다. 새 처리기 모드를 나타내는 실패 하는지를 **malloc** 에서 설정한 대로 새 처리기 루틴을 호출 하는 것 [_set_new_handler](set-new-handler.md)합니다. 기본적으로 **malloc** 메모리 할당 실패 시 새 처리기 루틴을 호출 하지 않습니다. 이 기본 동작을 재정의할 수 있도록 때 **calloc** 메모리를 할당 하지 못했습니다 **malloc** 동일한 새 처리기 루틴을 호출 방식으로 **새** 연산자는 경우 이와 같은 이유로 실패 합니다. 기본값을 재정의하려면 다음을
 
 ```C
 _set_new_mode(1);

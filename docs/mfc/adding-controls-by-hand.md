@@ -11,17 +11,17 @@ helpviewer_keywords:
 - common controls [MFC], adding
 ms.assetid: bc843e59-0c51-4b5b-8bf2-343f716469d2
 ms.openlocfilehash: c70539b49fcf2aa87f0bee375a87b38277b6ed42
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394808"
 ---
 # <a name="adding-controls-by-hand"></a>수동으로 컨트롤 추가
 
 수 있습니다 [대화 상자 편집기를 사용 하 여 대화 상자에 컨트롤 추가](../mfc/using-the-dialog-editor-to-add-controls.md) 하거나 코드를 사용 하 여 사용자가 직접 추가 합니다.
 
-컨트롤 개체를 직접 만들려면 일반적으로 c + + 대화 상자에서 c + + 컨트롤 개체 또는 프레임 창 개체를 포함 됩니다. 프레임 워크의 다른 많은 개체와 같은 컨트롤에는 2 단계 생성이 필요합니다. 컨트롤의 호출 해야 **만들기** 부모 대화 상자 또는 프레임 창 만들기의 일환으로 멤버 함수입니다. 대화 상자에 대 한 일반적으로 이루어지는 [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), 및 프레임 창에서 [OnCreate](../mfc/reference/cwnd-class.md#oncreate)합니다.
+컨트롤 개체를 직접 만들려면 하면 일반적으로 포함 됩니다는 C++ 에서 컨트롤 개체를 C++ 대화 상자 또는 프레임 창 개체입니다. 프레임 워크의 다른 많은 개체와 같은 컨트롤에는 2 단계 생성이 필요합니다. 컨트롤의 호출 해야 **만들기** 부모 대화 상자 또는 프레임 창 만들기의 일환으로 멤버 함수입니다. 대화 상자에 대 한 일반적으로 이루어지는 [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), 및 프레임 창에서 [OnCreate](../mfc/reference/cwnd-class.md#oncreate)합니다.
 
 다음 예제에서는 어떻게 선언할 수 있습니다는 `CEdit` 파생된 대화 상자 클래스의 클래스 선언에서 개체를 호출 합니다 `Create` 멤버 함수 `OnInitDialog`합니다. 때문에 합니다 `CEdit` 개체가 포함 된 개체로 선언 된, 대화 상자 개체를 생성 하지만 자체와 아직 초기화 해야 하는 경우 자동으로 생성 된 `Create` 멤버 함수입니다.
 

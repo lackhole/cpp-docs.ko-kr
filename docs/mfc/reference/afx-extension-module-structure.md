@@ -7,11 +7,11 @@ helpviewer_keywords:
 - AFX_EXTENSION_MODULE structure [MFC]
 ms.assetid: b85a989c-d0c5-4b28-b53c-dad45b75704e
 ms.openlocfilehash: e1bdc9d744424ab0ad59be3bd7b815b5122bcd10
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62338638"
 ---
 # <a name="afxextensionmodule-structure"></a>AFX_EXTENSION_MODULE 구조체
 
@@ -59,7 +59,7 @@ MFC 확장명 Dll에서 두 가지를 수행 해야 해당 `DllMain` 함수:
 
 [!code-cpp[NVC_MFC_DLL#2](../../atl-mfc-shared/codesnippet/cpp/afx-extension-module-structure_1.cpp)]
 
-저장 된 모듈 정보를 `AFX_EXTENSION_MODULE` 구조를 복사할 수는 `CDynLinkLibrary` 개체입니다. 예를 들면,
+저장 된 모듈 정보를 `AFX_EXTENSION_MODULE` 구조를 복사할 수는 `CDynLinkLibrary` 개체입니다. 예를 들어:
 
 [!code-cpp[NVC_MFC_DLL#5](../../atl-mfc-shared/codesnippet/cpp/afx-extension-module-structure_2.cpp)]
 

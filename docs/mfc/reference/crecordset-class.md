@@ -131,11 +131,11 @@ helpviewer_keywords:
 - CRecordset [MFC], m_strSort
 ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
 ms.openlocfilehash: efb833a8d4cc0b801f75951bc648d6b83df5bae8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372207"
 ---
 # <a name="crecordset-class"></a>CRecordset 클래스
 
@@ -271,7 +271,7 @@ virtual void AddNew();
 
 ### <a name="remarks"></a>설명
 
-호출 해야 합니다 [Requery](#requery) 멤버 함수를 새로 추가 된 레코드를 참조 하세요. 레코드의 필드는 처음에 Null입니다. (데이터베이스 용어에서 Null "값 필요" 하는 방법 및 c + +에서 NULL과 같지 않습니다.) 호출 작업을 완료 해야 합니다 [업데이트](#update) 멤버 함수입니다. `Update` 데이터 원본에 변경 내용을 저장 합니다.
+호출 해야 합니다 [Requery](#requery) 멤버 함수를 새로 추가 된 레코드를 참조 하세요. 레코드의 필드는 처음에 Null입니다. (데이터베이스 용어에서 "값 필요"는 의미를 Null 및 NULL에과 같지 않습니다 C++입니다.) 호출 작업을 완료 해야 합니다 [업데이트](#update) 멤버 함수입니다. `Update` 데이터 원본에 변경 내용을 저장 합니다.
 
 > [!NOTE]
 >  호출할 수 없습니다 대량 행 페치를 구현한 경우 `AddNew`합니다. 이렇게 하면 어설션이 실패 합니다. 하지만 클래스 `CRecordset` 메커니즘을 제공 하지 않는 데이터의 대량 행을 업데이트 하는 것에 대 한 ODBC API 함수를 사용 하 여 사용자 고유의 함수를 작성할 수 있습니다 `SQLSetPos`합니다. 대량 행 페치에 대 한 자세한 내용은 문서를 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
@@ -288,7 +288,7 @@ virtual void AddNew();
 
 호출 하는 것이 올바르지 `AddNew` 레코드 집합에 대 한 해당 `Open` 멤버 함수가 호출 되지 않았습니다. A `CDBException` 호출 하는 경우 throw 되 `AddNew` 에 추가할 수 없습니다는 레코드 집합에 대 한 합니다. 호출 하 여 레코드 집합을 업데이트할 수 있는지 여부를 확인할 수 있습니다 [CanAppend](#canappend)합니다.
 
-자세한 내용은 다음 항목을 참조하세요. [레코드 집합: 레코드 집합 업데이트 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-update-records-odbc.md), [레코드 집합: 추가, 업데이트 및 삭제 (ODBC) 레코드](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md), 및 [트랜잭션 (ODBC)](../../data/odbc/transaction-odbc.md)합니다.
+자세한 내용은 다음 항목을 참조하세요. [레코드 집합 레코드 집합 업데이트 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-update-records-odbc.md), [레코드 집합: 추가, 업데이트 및 삭제 (ODBC) 레코드](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md), 및 [트랜잭션 (ODBC)](../../data/odbc/transaction-odbc.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -456,7 +456,7 @@ virtual void Close();
 
 ### <a name="remarks"></a>설명
 
-ODBC HSTMT 및 프레임 워크는 레코드 집합에 할당 된 모든 메모리 할당이 취소 됩니다. 일반적으로 호출한 후 `Close`를 사용 하 여 할당 된 경우 c + + 레코드 집합 개체를 삭제할 **새**합니다.
+ODBC HSTMT 및 프레임 워크는 레코드 집합에 할당 된 모든 메모리 할당이 취소 됩니다. 일반적으로 호출한 후 `Close`를 삭제 합니다 C++ 레코드 집합 개체를 사용 하 여 할당 된 경우 **새**.
 
 호출할 수 있습니다 `Open` 호출 후에 다시 `Close`입니다. 이 기능을 사용 하면 레코드 집합 개체를 다시 사용할 수 있습니다. 호출 하는 `Requery`합니다.
 
@@ -1118,7 +1118,7 @@ BOOL IsFieldNull(void* pv);
 
 ### <a name="remarks"></a>설명
 
-지정 된 필드 데이터 멤버는 레코드 집합의 Null로 플래그가 지정 되었는지 여부를 결정 하는이 멤버 함수를 호출 합니다. (데이터베이스 용어에서 Null "값 필요" 하는 방법 및 c + +에서 NULL과 같지 않습니다.) 필드 데이터 멤버를 Null로 플래그가 지정 되 면 값은 현재 레코드의 열으로 해석 됩니다.
+지정 된 필드 데이터 멤버는 레코드 집합의 Null로 플래그가 지정 되었는지 여부를 결정 하는이 멤버 함수를 호출 합니다. (데이터베이스 용어에서 "값 필요"는 의미를 Null 및 NULL에과 같지 않습니다 C++입니다.) 필드 데이터 멤버를 Null로 플래그가 지정 되 면 값은 현재 레코드의 열으로 해석 됩니다.
 
 > [!NOTE]
 >  이 멤버 함수 대량 행 페치를 사용 하는 레코드 집합에 적용 되지 않습니다. 구현한 경우 대량 행 페치를 다음 `IsFieldNull` 항상 FALSE를 반환 하 고 실패 한 어설션이 발생 합니다. 대량 행 페치에 대 한 자세한 내용은 문서를 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
@@ -1140,7 +1140,7 @@ BOOL IsFieldNullable(void* pv);
 
 ### <a name="remarks"></a>설명
 
-지정 된 필드 데이터 멤버 "null"이 허용 되는지 확인 하려면 (설정할 수 있습니다에 Null 값이 멤버 함수 호출 C + + NULL 다릅니다 즉, 데이터베이스 용어에서 Null로 "값 필요").
+지정 된 필드 데이터 멤버 "null"이 허용 되는지 확인 하려면 (설정할 수 있습니다에 Null 값이 멤버 함수 호출 C++ NULL은 Null 이며 데이터베이스 용어에서 의미와 동일 하지 않습니다 "값 필요").
 
 > [!NOTE]
 >  호출할 수 없습니다 대량 행 페치를 구현한 경우 `IsFieldNullable`합니다. 대신, 호출 된 [GetODBCFieldInfo](#getodbcfieldinfo) 필드를 Null 값으로 설정할 수 있는지 여부를 결정 하는 멤버 함수입니다. 항상 호출할 수 있는 참고 `GetODBCFieldInfo`대량 행 페치 구현 여부에 관계 없이 합니다. 대량 행 페치에 대 한 자세한 내용은 문서를 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
@@ -1524,7 +1524,7 @@ virtual BOOL Open(
 
 - `CRecordset::forwardOnly` 읽기 전용 레코드 집합 스크롤만 전달 합니다.
 
-   에 대 한 `CRecordset`, 기본값은 `CRecordset::snapshot`합니다. 기본값 메커니즘 모두 ODBC와 상호 작용 하는 Visual c + + 마법사를 사용 하면 `CRecordset` 및 DAO `CDaoRecordset`, 다른 기본값이입니다.
+   에 대 한 `CRecordset`, 기본값은 `CRecordset::snapshot`합니다. 기본값 메커니즘은 시각적 개체를 사용 하면 C++ 모두 ODBC와 상호 작용 하는 마법사 `CRecordset` 및 DAO `CDaoRecordset`, 기본값이 다른 합니다.
 
 이러한 레코드 집합 형식에 대 한 자세한 내용은 문서 참조 [레코드 집합 (ODBC)](../../data/odbc/recordset-odbc.md)합니다. 관련 정보 "를 사용 하 여 블록 및 스크롤 가능 커서" Windows SDK의 문서를 참조 합니다.
 
@@ -1745,7 +1745,7 @@ void SetFieldDirty(void* pv, BOOL bDirty = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *pv*<br/>
-NULL 레코드 집합의 필드 데이터 멤버의 주소를 포함합니다. NULL 인 경우 레코드 집합의 필드 데이터 멤버를 모든 플래그가 지정 됩니다. (C + + NULL 다릅니다 Null로 데이터베이스 용어에서 "값 필요"는 의미)
+NULL 레코드 집합의 필드 데이터 멤버의 주소를 포함합니다. NULL 인 경우 레코드 집합의 필드 데이터 멤버를 모든 플래그가 지정 됩니다. (C++ NULL 다릅니다 Null로 데이터베이스 용어에서 "값 필요"는 의미)
 
 *bDirty*<br/>
 필드 데이터 멤버 "더티" (변경)으로 플래그를 지정 하는 경우 TRUE입니다. 필드 데이터 멤버 "정리" (변경 되지 않음)으로 플래그가 지정 될 경우, 그렇지 않으면 FALSE입니다.
@@ -1785,7 +1785,7 @@ void SetFieldNull(void* pv, BOOL bNull = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *pv*<br/>
-NULL 레코드 집합의 필드 데이터 멤버의 주소를 포함합니다. NULL 인 경우 레코드 집합의 필드 데이터 멤버를 모든 플래그가 지정 됩니다. (C + + NULL 다릅니다 Null로 데이터베이스 용어에서 "값 필요"는 의미)
+NULL 레코드 집합의 필드 데이터 멤버의 주소를 포함합니다. NULL 인 경우 레코드 집합의 필드 데이터 멤버를 모든 플래그가 지정 됩니다. (C++ NULL 다릅니다 Null로 데이터베이스 용어에서 "값 필요"는 의미)
 
 *bNull*<br/>
 필드 데이터 멤버 (Null) 값이 없는 것으로 플래그가 지정 될 경우에 0이 아닙니다. 필드 데이터 멤버는 Null이 아닌으로 플래그를 설정 하는 경우 그렇지 않으면 0입니다.

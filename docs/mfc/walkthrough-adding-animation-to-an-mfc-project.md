@@ -6,15 +6,15 @@ helpviewer_keywords:
 - MFC, animation
 ms.assetid: 004f832c-9fd5-4f88-9ca9-ae65dececdc2
 ms.openlocfilehash: 25e29654f1e192e03a078e4a963f27abeea6056d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358606"
 ---
 # <a name="walkthrough-adding-animation-to-an-mfc-project"></a>연습: MFC 프로젝트에 애니메이션 추가
 
-이 연습에서는 Visual c + +, Microsoft Foundation 클래스 라이브러리 (MFC) 프로젝트는 기본 애니메이션이 적용 된 개체를 추가 하는 방법을 설명 합니다.
+이 연습에서는 시각적 개체에는 기본 애니메이션이 적용 된 개체를 추가 하는 방법 C++, Microsoft Foundation 클래스 라이브러리 (MFC) 프로젝트.
 
 이 연습에서는 이러한 작업을 수행 하는 방법을 보여 줍니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "50522241"
 
 1. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트**를 클릭합니다.
 
-1. 에 **새 프로젝트** 대화 상자에서 왼쪽 창의 **설치 된 템플릿**를 확장 **Visual c + +** 선택한 후 **MFC**. 가운데 창에서 선택 **MFC 응용 프로그램**합니다. 에 **이름을** 상자에 입력 *MFCAnimationWalkthrough*합니다. **확인**을 클릭합니다.
+1. 에 **새 프로젝트** 대화 상자의 아래 왼쪽된 창에서 **설치 된 템플릿**, 확장 **시각적 C++**  선택한 후 **MFC**. 가운데 창에서 선택 **MFC 응용 프로그램**합니다. 에 **이름을** 상자에 입력 *MFCAnimationWalkthrough*합니다. **확인**을 클릭합니다.
 
 1. 에 **MFC 응용 프로그램 마법사** 대화 상자에서 확인 하는 **응용 프로그램 유형** 는 **여러 문서**, **프로젝트 스타일** 는 **Visual Studio**, 및 **문서/뷰 아키텍처 지원** 옵션을 선택 합니다. **마침**을 클릭합니다.
 
@@ -364,7 +364,7 @@ ms.locfileid: "50522241"
 
 ### <a name="to-verify-the-results"></a>결과 확인 하려면
 
-1. 응용 프로그램을 빌드 및 실행합니다. 에 **애니메이션** 메뉴에서 클릭 **Start Forward**합니다. 사각형을 표시 하 고 가운데 영역을 채우면 해야 합니다. 클릭 하면 **Start Backward**애니메이션을 역순을 클릭 하는 경우 **중지**를 중지 해야 합니다. 사각형의 채우기 색 애니메이션 진행 됨에 따라 변경 해야 하 고 현재 색 애니메이션 창의 위쪽에 표시 합니다.
+1. 애플리케이션을 빌드 및 실행합니다. 에 **애니메이션** 메뉴에서 클릭 **Start Forward**합니다. 사각형을 표시 하 고 가운데 영역을 채우면 해야 합니다. 클릭 하면 **Start Backward**애니메이션을 역순을 클릭 하는 경우 **중지**를 중지 해야 합니다. 사각형의 채우기 색 애니메이션 진행 됨에 따라 변경 해야 하 고 현재 색 애니메이션 창의 위쪽에 표시 합니다.
 
 ## <a name="see-also"></a>참고자료
 

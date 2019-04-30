@@ -12,11 +12,11 @@ helpviewer_keywords:
 - IThreadProxy structure
 ms.assetid: feb89241-a555-4e61-ad48-40add54daeca
 ms.openlocfilehash: 906b05800711e89592e5230bec7fa0fe1640379f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265719"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346232"
 ---
 # <a name="ithreadproxy-structure"></a>IThreadProxy 구조체
 
@@ -80,8 +80,7 @@ virtual void SwitchOut(SwitchingProxyState switchState = Blocking) = 0;
 
 ### <a name="remarks"></a>설명
 
-어떠한 이유로든 실행 중인 가상 프로세서 루트에서 컨텍스트 연결을 끊어야 할 경우 `SwitchOut`을 사용합니다. 
-  `switchState` 매개변수에 전달하는 값에 따라 그리고 가상 프로세서 루트에서 실행하는지 여부에 따라 이 호출은 해당 컨텍스트와 연결된 스레드 프록시를 즉시 반환하거나 차단합니다. 매개 변수를 `SwitchOut`로 설정하여 `Idle`을 호출하면 오류가 발생합니다. 이렇게 하면 프로그램 [invalid_argument](../../../standard-library/invalid-argument-class.md) 예외입니다.
+어떠한 이유로든 실행 중인 가상 프로세서 루트에서 컨텍스트 연결을 끊어야 할 경우 `SwitchOut`을 사용합니다. `switchState` 매개변수에 전달하는 값에 따라 그리고 가상 프로세서 루트에서 실행하는지 여부에 따라 이 호출은 해당 컨텍스트와 연결된 스레드 프록시를 즉시 반환하거나 차단합니다. 매개 변수를 `SwitchOut`로 설정하여 `Idle`을 호출하면 오류가 발생합니다. 이렇게 하면 프로그램 [invalid_argument](../../../standard-library/invalid-argument-class.md) 예외입니다.
 
 `SwitchOut`은 리소스 관리자의 지시에 따라 또는 일시적으로 초과 구독된 가상 프로세서 루트를 요청했는데 그러한 요청이 처리되어 스케줄러의 가상 프로세서 루트 수를 줄이고자 할 때 유용합니다. 메서드를 호출 해야 하는 예제의 [IVirtualProcessorRoot::Remove](iexecutionresource-structure.md#remove) 가상 프로세서 루트를 호출 하기 전에 `SwitchOut` 매개 변수를 사용 하 여 `switchState` 로 `Blocking`합니다. 이렇게 하면 스레드 프록시가 차단되고, 스케줄러의 다른 가상 프로세서 루트에서 실행할 수 있을 때 실행이 다시 시작됩니다. 함수를 호출 하 여 차단 스레드 프록시를 다시 시작할 수 있습니다 `SwitchTo` 이 스레드 프록시가 실행 컨텍스트를 전환할 수 있습니다. 또한 가상 프로세서 루트를 활성화 하려면 해당 연결 된 컨텍스트를 사용 하 여 스레드 프록시를 다시 시작할 수 있습니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [ivirtualprocessorroot:: Activate](ivirtualprocessorroot-structure.md#activate)합니다.
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - -CLRTHREADATTRIBUTE linker option
 ms.assetid: 4907e9ef-5031-446c-aecf-0a0b32fae1e8
 ms.openlocfilehash: ad07c84a5c470cd5fa1ac10ff6d2baed5c35c025
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57806781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272470"
 ---
 # <a name="clrthreadattribute-set-clr-thread-attribute"></a>/CLRTHREADATTRIBUTE(CLR 스레드 특성 설정)
 
@@ -49,7 +49,7 @@ CLR 프로그램 단일 스레드를 사용 하는 COM 개체를 호스트 하�
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **구성 속성** 노드를 확장합니다.
 

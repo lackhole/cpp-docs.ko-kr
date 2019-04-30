@@ -6,15 +6,15 @@ helpviewer_keywords:
 - D2D [MFC]
 ms.assetid: dda36c33-c231-4da6-a62f-72d69a12b6dd
 ms.openlocfilehash: 0793511f09be9dcb37732c4c16bfd2b3038a6cf4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358619"
 ---
 # <a name="walkthrough-adding-a-d2d-object-to-an-mfc-project"></a>연습: MFC 프로젝트에 D2D 개체 추가
 
-이 연습에서는 기본 Direct2D를 추가 하는 방법 (D2D) Visual c + +, Microsoft Foundation 클래스 라이브러리 (MFC) 프로젝트 개체를 출력 하는 응용 프로그램에는 프로젝트를 빌드합니다 "Hello, world"의 배경에 그라데이션 효과입니다.
+이 연습에서는 기본 Direct2D를 추가 하는 방법에 설명 (D2D) 시각적 개체 C++, Microsoft Foundation 클래스 라이브러리 (MFC) 프로젝트 및 다음 빌드할 프로젝트 출력 하는 응용 프로그램에 "Hello, world" 배경에 그라데이션 효과에 있습니다.
 
 이 연습에서는 이러한 작업을 수행 하는 방법을 보여 줍니다.
 
@@ -32,13 +32,13 @@ ms.locfileid: "50567260"
 
 ## <a name="prerequisites"></a>전제 조건
 
-Visual Studio를 설치 하려면이 연습을 완료 해야 합니다 **c + +를 사용한 데스크톱 개발** 워크 로드 및 선택적 **x86 및 x64 용 Visual c + + MFC** 구성 요소입니다.
+Visual Studio를 설치 하려면이 연습을 완료 해야 합니다 **를 사용한 데스크톱 개발 C++**  워크 로드 및 선택적 **Visual C++ x86 및 x64 용 MFC** 구성 요소입니다.
 
 ## <a name="to-create-an-mfc-application"></a>MFC 응용 프로그램을 만들려면
 
 1. 에 **파일** 메뉴에서 **새로 만들기** 를 선택한 후 **프로젝트**합니다.
 
-1. 에 **새 프로젝트** 대화 상자에서 왼쪽 창의 **설치 된 템플릿**를 확장 **Visual c + +** 선택한 후 **MFC**. 가운데 창에서 선택 **MFC 응용 프로그램**합니다. 에 **이름을** 상자에 입력 *MFCD2DWalkthrough*합니다. **확인**을 선택합니다.
+1. 에 **새 프로젝트** 대화 상자의 아래 왼쪽된 창에서 **설치 된 템플릿**, 확장 **시각적 C++**  선택한 후 **MFC**. 가운데 창에서 선택 **MFC 응용 프로그램**합니다. 에 **이름을** 상자에 입력 *MFCD2DWalkthrough*합니다. **확인**을 선택합니다.
 
 1. 에 **MFC 응용 프로그램 마법사**, 선택 **마침** 설정을 변경 하지 않고 있습니다.
 
@@ -153,7 +153,7 @@ Visual Studio를 설치 하려면이 연습을 완료 해야 합니다 **c + +�
 
 ## <a name="to-verify-the-results"></a>결과 확인 하려면
 
-응용 프로그램을 빌드 및 실행합니다. 창 크기를 조정할 때 변경 되는 그라데이션 사각형이 있어야 합니다. "Hello World!" 사각형의 가운데에 표시 합니다.
+애플리케이션을 빌드 및 실행합니다. 창 크기를 조정할 때 변경 되는 그라데이션 사각형이 있어야 합니다. "Hello World!" 사각형의 가운데에 표시 합니다.
 
 ## <a name="see-also"></a>참고자료
 

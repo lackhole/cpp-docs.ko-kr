@@ -34,11 +34,11 @@ helpviewer_keywords:
 - streams, associating with files
 ms.assetid: 262757ff-1e09-4472-a5b6-4325fc28f971
 ms.openlocfilehash: 0cde110bf1dd12c23a6b0b658809502743d9edd3
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334777"
 ---
 # <a name="fdopen-wfdopen"></a>_fdopen, _wfdopen
 
@@ -114,12 +114,12 @@ FILE *_wfdopen(
 |문자 *모드* 문자열|동등한 *oflag* 에 대 한 값 **_open** 고 **_sopen**|
 |---------------------------------|---------------------------------------------------|
 |**a**|**\_O\_WRONLY &#124; \_O\_APPEND** (일반적으로  **\_O\_WRONLY &#124; \_O\_만들기 &#124; \_O \_APPEND**)|
-|**+**|**\_O\_RDWR &#124; \_O\_APPEND** (일반적으로  **\_O\_RDWR &#124; \_O\_추가 &#124; \_O\_ CREAT** )|
+|**a+**|**\_O\_RDWR &#124; \_O\_APPEND** (일반적으로  **\_O\_RDWR &#124; \_O\_추가 &#124; \_O\_ CREAT** )|
 |**r**|**\_O\_RDONLY**|
-|**r +**|**\_O\_RDWR**|
+|**r+**|**\_O\_RDWR**|
 |**w**|**\_O\_WRONLY** (일반적으로  **\_O\_WRONLY &#124; \_O\_만들기 &#124; \_O\_TRUNC**)|
-|**w +**|**\_O\_RDWR** (일반적으로  **\_O\_RDWR &#124; \_O\_만들기 &#124; \_O\_TRUNC**)|
-|**b**|**\_O\_이진**|
+|**w+**|**\_O\_RDWR** (일반적으로  **\_O\_RDWR &#124; \_O\_만들기 &#124; \_O\_TRUNC**)|
+|**b**|**\_O\_BINARY**|
 |**t**|**\_O\_TEXT**|
 |**c**|없음|
 |**n**|없음|

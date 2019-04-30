@@ -6,11 +6,11 @@ helpviewer_keywords:
 - create a task that completes after a delay, example [C++]
 ms.assetid: 3fc0a194-3fdb-4eba-8b8a-b890981a985d
 ms.openlocfilehash: 3292043d7900d5dc2bfba0afa5fdc237853a5be0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413907"
 ---
 # <a name="how-to-create-a-task-that-completes-after-a-delay"></a>방법: 지연 후 완료 되는 작업 만들기
 
@@ -18,25 +18,18 @@ ms.locfileid: "57272261"
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `complete_after` 및 `cancel_after_timeout` 함수를 보여 줍니다. 
-  `complete_after` 함수는 지정된 지연 후에 완료되는 `task` 개체를 만듭니다. 이 함수는 지정된 지연 후에 `timer` 개체와 `call` 개체를 사용하여 `task_completion_event` 개체를 설정합니다. 
-  `task_completion_event` 클래스를 사용하여 스레드 후에 또는 값을 사용할 수 있는 다른 작업 신호 후에 완료되는 작업을 정의할 수 있습니다. 이벤트가 설정되면 수신기 작업이 완료되고 작업의 연속 실행이 예약됩니다.
+다음 예제에서는 `complete_after` 및 `cancel_after_timeout` 함수를 보여 줍니다. `complete_after` 함수는 지정된 지연 후에 완료되는 `task` 개체를 만듭니다. 이 함수는 지정된 지연 후에 `timer` 개체와 `call` 개체를 사용하여 `task_completion_event` 개체를 설정합니다. `task_completion_event` 클래스를 사용하여 스레드 후에 또는 값을 사용할 수 있는 다른 작업 신호 후에 완료되는 작업을 정의할 수 있습니다. 이벤트가 설정되면 수신기 작업이 완료되고 작업의 연속 실행이 예약됩니다.
 
 > [!TIP]
 >  에 대 한 자세한 내용은 합니다 `timer` 하 고 `call` 비동기 에이전트 라이브러리의 일부인 클래스를 참조 하세요 [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)합니다.
 
-
-  `cancel_after_timeout` 함수는 `complete_after` 함수를 기반으로 하여 주어진 제한 시간 전에 작업이 완료되지 않을 경우 작업을 취소합니다. 
-  `cancel_after_timeout` 함수는 두 개의 작업을 만듭니다. 첫 번째 작업은 제공된 작업이 완료된 후 성공했음을 알리고 완료되며, 두 번째 작업은 지정된 제한 시간이 지나면 작업이 실패했음을 알리고 완료됩니다. 
-  `cancel_after_timeout` 함수는 성공하거나 실패한 작업이 완료되면 실행되는 연속 작업을 생성합니다. 실패한 작업이 먼저 완료되면 연속에서 토큰 소스를 취소하여 전체 작업을 취소합니다.
+`cancel_after_timeout` 함수는 `complete_after` 함수를 기반으로 하여 주어진 제한 시간 전에 작업이 완료되지 않을 경우 작업을 취소합니다. `cancel_after_timeout` 함수는 두 개의 작업을 만듭니다. 첫 번째 작업은 제공된 작업이 완료된 후 성공했음을 알리고 완료되며, 두 번째 작업은 지정된 제한 시간이 지나면 작업이 실패했음을 알리고 완료됩니다. `cancel_after_timeout` 함수는 성공하거나 실패한 작업이 완료되면 실행되는 연속 작업을 생성합니다. 실패한 작업이 먼저 완료되면 연속에서 토큰 소스를 취소하여 전체 작업을 취소합니다.
 
 [!code-cpp[concrt-task-delay#1](../../parallel/concrt/codesnippet/cpp/how-to-create-a-task-that-completes-after-a-delay_1.cpp)]
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 [0, 100000] 범위에서 소수의 수를 여러 번 계산합니다. 주어진 시간 제한 안에 완료되지 않으면 작업이 실패합니다. 
-  `count_primes` 함수는 `cancel_after_timeout` 함수를 사용하는 방법을 보여 줍니다. 지정된 범위에서 소수의 수를 세고 주어진 시간 안에 작업이 완료되지 않으면 실패합니다. 
-  `wmain` 함수는 `count_primes` 함수를 여러 번 호출합니다. 호출할 때마다 제한 시간은 1/2로 줄어듭니다. 현재 제한 시간 안에 작업이 완료되지 않으면 프로그램이 종료됩니다.
+다음 예제에서는 [0, 100000] 범위에서 소수의 수를 여러 번 계산합니다. 주어진 시간 제한 안에 완료되지 않으면 작업이 실패합니다. `count_primes` 함수는 `cancel_after_timeout` 함수를 사용하는 방법을 보여 줍니다. 지정된 범위에서 소수의 수를 세고 주어진 시간 안에 작업이 완료되지 않으면 실패합니다. `wmain` 함수는 `count_primes` 함수를 여러 번 호출합니다. 호출할 때마다 제한 시간은 1/2로 줄어듭니다. 현재 제한 시간 안에 작업이 완료되지 않으면 프로그램이 종료됩니다.
 
 [!code-cpp[concrt-task-delay#2](../../parallel/concrt/codesnippet/cpp/how-to-create-a-task-that-completes-after-a-delay_2.cpp)]
 

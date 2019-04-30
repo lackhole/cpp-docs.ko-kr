@@ -5,17 +5,17 @@ f1_keywords:
 - vc.tables.mfc.technotes
 ms.assetid: aaa449be-9167-4510-a490-af872c4f60a2
 ms.openlocfilehash: c5a102f36c5556af48a1b3f79e39f256bc5797ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50634878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306407"
 ---
 # <a name="technical-notes-by-number"></a>번호별 기술 참고 사항
 
 아래 기술 참고 사항 먼저 나열 됩니다 번호로 가장 최근에 기록 된 기술 참고 합니다. 범주별으로 나열을 참조 하세요 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)합니다.
 
-|수|제목|
+|숫자|제목|
 |------------|-----------|
 |71|[MFC IOleCommandTarget 구현](../mfc/tn071-mfc-iolecommandtarget-implementation.md)|
 |70|[MFC 창 클래스 이름](../mfc/tn070-mfc-window-class-names.md)|
@@ -50,7 +50,7 @@ ms.locfileid: "50634878"
 |38|[MFC/OLE IUnknown 구현](../mfc/tn038-mfc-ole-iunknown-implementation.md)|
 |37|[다중 스레드 MFC 2.1 응용 프로그램](../mfc/tn037-multithreaded-mfc-2-1-applications.md)|
 |36|[Cformview와 AppWizard 및 classwizard 함께 사용](../mfc/tn036-using-cformview-with-appwizard-and-classwizard.md)|
-|35|[Visual c + +에서 여러 리소스 파일과 헤더 파일 사용](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)|
+|35|[여러 리소스 파일과 헤더 파일을 사용 하 여 시각적 개체를 사용 하 여C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)|
 |33|[MFC의 DLL 버전](../mfc/tn033-dll-version-of-mfc.md)|
 |32|[MFC 예외 메커니즘](../mfc/tn032-mfc-exception-mechanism.md)|
 |31|[컨트롤 막대](../mfc/tn031-control-bars.md)|
@@ -65,7 +65,7 @@ ms.locfileid: "50634878"
 |21|[명령 및 메시지 라우팅](../mfc/tn021-command-and-message-routing.md)|
 |20|[ID 명명 및 번호 매기기 규칙](../mfc/tn020-id-naming-and-numbering-conventions.md)|
 |17|[창 개체 제거](../mfc/tn017-destroying-window-objects.md)|
-|16|[MFC c + + 다중 상속 사용](../mfc/tn016-using-cpp-multiple-inheritance-with-mfc.md)|
+|16|[사용 하 여 C++ MFC 사용 하 여 다중 상속](../mfc/tn016-using-cpp-multiple-inheritance-with-mfc.md)|
 |14|[사용자 지정 컨트롤](../mfc/tn014-custom-controls.md)|
 |11|[DLL의 일부로 MFC 사용](../mfc/tn011-using-mfc-as-part-of-a-dll.md)|
 |6|[메시지 맵](../mfc/tn006-message-maps.md)|

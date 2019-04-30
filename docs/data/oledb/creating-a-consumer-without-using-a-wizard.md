@@ -5,11 +5,11 @@ helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
 ms.openlocfilehash: 029fe6866df81d366cc3bc15096f638791faa413
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362506"
 ---
 # <a name="creating-a-consumer-without-using-a-wizard"></a>마법사를 사용하지 않고 소비자 만들기
 

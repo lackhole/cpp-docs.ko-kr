@@ -37,11 +37,11 @@ helpviewer_keywords:
 - calculating absolute values
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
 ms.openlocfilehash: 61aa0a48757a35708ffb85d2c0525bb4eac82d56
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341992"
 ---
 # <a name="abs-labs-llabs-abs64"></a>abs, labs, llabs, _abs64
 
@@ -75,18 +75,18 @@ float abs( float n );   // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **abs** 및 반환 하는 **긴**하십시오 **긴** **긴**,  **부동 소수점**, **double**, 및 **long** **double** 값입니다. 이러한 오버로드는 \<cmath> 헤더에 정의됩니다. C 프로그램에서 **abs** 항상 받아서 반환 된 **int**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **abs** 및 반환 하는 **긴**, **긴** **긴**를 **부동 소수점**, **double**, 및 **긴** **double** 값입니다. 이러한 오버로드는 \<cmath> 헤더에 정의됩니다. C 프로그램에서 **abs** 항상 받아서 반환 된 **int**합니다.
 
-**Microsoft 전용**: 이러한 인수를 제공할 수는 모든 정수 계열 형식을 사용 하 여 나타낼 수 있는 음의 정수 범위가 해당 형식을 사용 하 여 나타낼 수 있는 양의 정수 범위 보다 크기 때문에 변환할 수 없는 함수입니다. 인수의 절대값을 반환 형식으로 표현할 수 없는 경우는 **abs** 함수 변경 되지 않은 인수 값을 반환 합니다. 특히 `abs(INT_MIN)`는 `INT_MIN`, `labs(LONG_MIN)`는 `LONG_MIN`, `llabs(LLONG_MIN)`는 `LLONG_MIN`, `_abs64(_I64_MIN)`는 `_I64_MIN`을 반환합니다. 즉 합니다 **abs** 양수 값을 보장 하기 위해 함수를 사용할 수 없습니다.
+**Microsoft 전용**: 임의의 정수 형식을 사용하여 나타낼 수 있는 음의 정수 범위는 해당 형식을 사용하여 나타낼 수 있는 양의 정수 범위보다 크기 때문에 이러한 함수에 변환할 수 없는 인수를 제공할 수 있습니다. 인수의 절대값을 반환 형식으로 표현할 수 없는 경우는 **abs** 함수 변경 되지 않은 인수 값을 반환 합니다. 특히 `abs(INT_MIN)`는 `INT_MIN`, `labs(LONG_MIN)`는 `LONG_MIN`, `llabs(LLONG_MIN)`는 `LLONG_MIN`, `_abs64(_I64_MIN)`는 `_I64_MIN`을 반환합니다. 즉 합니다 **abs** 양수 값을 보장 하기 위해 함수를 사용할 수 없습니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 C 헤더|필수 C++ 헤더|
 |-------------|-----------------------|---------------------------|
-|**abs**하십시오 **labs**, **llabs**|\<math.h> 또는 \<stdlib.h>|\<cmath>, \<cstdlib>, \<stdlib.h> 또는 \<math.h>|
+|**abs**, **labs**, **llabs**|\<math.h> 또는 \<stdlib.h>|\<cmath>, \<cstdlib>, \<stdlib.h> 또는 \<math.h>|
 |**_abs64**|\<stdlib.h>|\<cstdlib> 또는 \<stdlib.h>|
 
-오버 로드 된 버전을 사용 하도록 **abs** c + +에서 포함 해야 합니다는 \<cmath > 헤더입니다.
+오버 로드 된 버전을 사용 하도록 **abs** 에서 C++를 포함 해야 합니다는 \<cmath > 헤더입니다.
 
 ## <a name="example"></a>예제
 

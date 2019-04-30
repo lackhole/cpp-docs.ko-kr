@@ -1,18 +1,18 @@
-﻿---
-title: 기본 개념 (c + +)
+---
+title: 기본 개념 (C++)
 ms.custom: index-page
 ms.date: 11/04/2016
 helpviewer_keywords:
 - C++, basic language concepts
 ms.assetid: 961801e6-2ffd-4bf1-bb71-7f55e48d9c79
 ms.openlocfilehash: cd868a2b534c8367e4633d81a521dc1bf1de91dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393924"
 ---
-# <a name="basic-concepts--c"></a>기본 개념 (c + +)
+# <a name="basic-concepts--c"></a>기본 개념 (C++)
 
 이 단원에서는 C++ 이해에 필수적인 개념을 설명합니다. C 프로그래머는 이러한 개념 대부분에 대해 잘 알고 있지만 예기치 않은 프로그램 결과를 초래할 수 있는 몇 가지 미묘한 차이가 있습니다. 주제는 다음과 같습니다.
 

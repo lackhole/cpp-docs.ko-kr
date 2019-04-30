@@ -8,11 +8,11 @@ helpviewer_keywords:
 ms.assetid: 3cc36411-7d66-4240-851e-dacb9a8fd6ac
 ms.author: corob
 ms.openlocfilehash: 0d527681abb077a01b3d902c092a21de7a052867
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59031510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62313618"
 ---
 # <a name="walkthrough-creating-and-using-a-static-library-c"></a>연습: 정적 라이브러리 만들기 및 사용 (C++)
 

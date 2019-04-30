@@ -19,18 +19,18 @@ helpviewer_keywords:
 - INTERFACE_PART macro
 ms.assetid: 19d946ba-beaf-4881-85c6-0b598d7f6f11
 ms.openlocfilehash: 0722ce294e6a088446b8ba681810cf3f7885f122
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305478"
 ---
 # <a name="tn038-mfcole-iunknown-implementation"></a>TN038: MFC/OLE IUnknown 구현
 
 > [!NOTE]
 > 다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.
 
-OLE 2의 핵심에는 "OLE 구성 요소 개체 모델" 즉, COM이 있습니다. COM은 협동 개체가 서로 통신하는 방법에 대한 표준을 정의합니다. 여기에는 메서드가 개체에서 디스패치되는 방법을 포함하여 “개체"의 모양에 대한 세부 정보가 포함됩니다. 또한 COM은 모든 COM 호환 클래스가 파생되는 기본 클래스를 정의합니다. 이 기본 클래스는 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown)합니다. 하지만 합니다 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 인터페이스를 c + + 클래스 라고, COM 모든 언어에 한정 되지 않습니다.-C, PASCAL 또는 COM 개체의 이진 레이아웃을 지원할 수 있는 다른 언어에서 구현할 수 있습니다.
+OLE 2의 핵심에는 "OLE 구성 요소 개체 모델" 즉, COM이 있습니다. COM은 협동 개체가 서로 통신하는 방법에 대한 표준을 정의합니다. 여기에는 메서드가 개체에서 디스패치되는 방법을 포함하여 “개체"의 모양에 대한 세부 정보가 포함됩니다. 또한 COM은 모든 COM 호환 클래스가 파생되는 기본 클래스를 정의합니다. 이 기본 클래스는 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown)합니다. 하지만 합니다 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 인터페이스 라고는 C++ 클래스를 COM 모든 언어에 한정 되지 않습니다.-C, PASCAL 또는 COM 개체의 이진 레이아웃을 지원할 수 있는 다른 언어에서 구현할 수 있습니다.
 
 OLE에서 파생 된 모든 클래스를 가리킵니다 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) "인터페이스로." 이 중요 한 차이 이후의 "인터페이스"와 같은 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 구현이 함께 전달 합니다. 해당 구현에서 수행하는 구체적인 작업이 아니라 개체가 통신하는 데 필요한 프로토콜만 정의하면 됩니다. 따라서 최대 유연성을 허용하는 시스템에 적합합니다. MFC의 역할은 MFC/C++ 프로그램의 기본 동작을 구현하는 것입니다.
 
@@ -49,7 +49,7 @@ public:
 > [!NOTE]
 > 필요한 특정 호출 규칙 세부 정보, 같은 `__stdcall`과 같이 필요한 특정 호출 규칙 정보는 이 그림에서 제외됩니다.
 
-합니다 [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) 하 고 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) 멤버 함수는 개체의 메모리 관리를 제어 합니다. COM은 참조 개수 계산 스키마를 사용하여 개체를 추적합니다. C++에서처럼 개체가 직접 참조되지 않습니다. 대신 COM 개체는 항상 포인터를 통해 참조됩니다. 소유자가 완료 되 면 개체를 해제 하려면 사용 된 개체의 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) 멤버 (아닌 것과 기존 c + + 개체에 대 한 연산자 delete) 라고 합니다. 참조 개수 계산 메커니즘에서는 단일 개체에 대한 여러 참조를 관리할 수 있습니다. 구현의 [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) 하 고 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) 개체에 대 한 참조 횟수를 유지 관리-개체 참조 개수가 0에 도달할 때까지 삭제 되지 않습니다.
+합니다 [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) 하 고 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) 멤버 함수는 개체의 메모리 관리를 제어 합니다. COM은 참조 개수 계산 스키마를 사용하여 개체를 추적합니다. C++에서처럼 개체가 직접 참조되지 않습니다. 대신 COM 개체는 항상 포인터를 통해 참조됩니다. 소유자가 완료 되 면 개체를 해제 하려면 사용 된 개체의 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) 멤버 라고 (것과 기존에 대 한 연산자 delete를 사용 하 여 달리 C++ 개체). 참조 개수 계산 메커니즘에서는 단일 개체에 대한 여러 참조를 관리할 수 있습니다. 구현의 [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) 하 고 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) 개체에 대 한 참조 횟수를 유지 관리-개체 참조 개수가 0에 도달할 때까지 삭제 되지 않습니다.
 
 [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) 하 고 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) 구현 측면에서 보면 매우 간단 합니다. 다음은 간단한 구현입니다.
 
@@ -367,7 +367,7 @@ CEditPrintObj::CPrintObj에 대한 구현은 CEditPrintObj::CEditObj에 대한 �
 
 MFC는 독립 실행형 COM 개체뿐만 아니라 집계도 지원합니다. 자체 집계는 여기서 설명 하는 너무 복잡 한 항목 참조 된 [집계](/windows/desktop/com/aggregation) 집계에 대 한 자세한 내용은 항목입니다. 여기서는 프레임워크 및 인터페이스 맵에 기본 제공되는 집계에 대한 지원에 대해 간략하게 설명합니다.
 
-집계는 (1) 집계를 지원하는 COM 개체 사용, (2) 다른 개체에서 집계할 수 있는 개체 구현과 같은 두 가지 방법으로 사용할 수 있습니다. 이러한 기능을 "집계 개체 사용" 및 “개체를 집계할 수 있도록 만들기"라고 합니다. MFC는 둘 다를 지원합니다.
+집계를 사용 하는 방법은 두 가지 있습니다. (1)-집계를 지 원하는 COM 개체를 사용 하는 중 및 (2)-다른 집계할 수 있는 개체를 구현 하는 중입니다. 이러한 기능을 "집계 개체 사용" 및 “개체를 집계할 수 있도록 만들기"라고 합니다. MFC는 둘 다를 지원합니다.
 
 ### <a name="using-an-aggregate-object"></a>집계 개체 사용
 

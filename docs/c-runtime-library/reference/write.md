@@ -24,11 +24,11 @@ helpviewer_keywords:
 - files [C++], writing to
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
 ms.openlocfilehash: b3fa53b21d4ea23c5f8e59de673f4074deedb505
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383414"
 ---
 # <a name="write"></a>_write
 
@@ -57,7 +57,7 @@ int _write(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 **_write** 실제로 쓴 바이트 수를 반환 합니다. 실제 디스크에 남아 있는 공간을 사용 하면 함수를 디스크에 작성 하는 버퍼의 크기 보다 작으면 **_write** 실패 하 고 플러시하지 않습니다 모든 버퍼의 내용을 디스크에 있습니다. 반환 값이-1 오류를 나타냅니다. 잘못된 매개 변수가 전달되면 이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 **errno** 세 가지 값 중 하나로 설정 됩니다: **EBADF**, 파일 설명자를 의미 하는 유효 하지 않거나 파일을 쓰기에 대 한 열은 **ENOSPC**, 의미 없는 충분 한 공간이 장치에 남아 있는 작업에 대 한 또는 **EINVAL**, 즉 *버퍼* 가 null 포인터 이거나는 홀수 *개수* 바이트의 유니코드 모드에서 파일을 쓸 수 있도록 전달 되었습니다.
+성공 하면 **_write** 실제로 쓴 바이트 수를 반환 합니다. 실제 디스크에 남아 있는 공간을 사용 하면 함수를 디스크에 작성 하는 버퍼의 크기 보다 작으면 **_write** 실패 하 고 플러시하지 않습니다 모든 버퍼의 내용을 디스크에 있습니다. 반환 값이-1 오류를 나타냅니다. 잘못된 매개 변수가 전달되면 이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 **errno** 세 가지 값 중 하나로 설정 됩니다. **EBADF**, 파일 설명자를 의미 하는 유효 하지 않거나 파일을 쓰기에 대 한 열은 **ENOSPC**, 의미 없는 충분 한 공간이 장치에 남아 있는 작업에 대 한 또는 **EINVAL**, 즉 *버퍼* 가 null 포인터 이거나는 경상 *개수* 바이트의 유니코드 모드에서 파일을 쓸 수 있도록 전달 되었습니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 

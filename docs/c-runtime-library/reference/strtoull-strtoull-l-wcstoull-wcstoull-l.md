@@ -35,11 +35,11 @@ helpviewer_keywords:
 - wcstoull function
 ms.assetid: 36dac1cc-e901-40a0-8802-63562d6d01df
 ms.openlocfilehash: f23799b43a356600f48fb0fbf32b4604966c416b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62379209"
 ---
 # <a name="strtoull-strtoulll-wcstoull-wcstoulll"></a>strtoull, _strtoull_l, wcstoull, _wcstoull_l
 
@@ -102,7 +102,7 @@ unsigned long long _wcstoull_l(
 
 **wcstoull** 의 와이드 문자 버전이 **strtoull** 고 *strSource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 동작합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|

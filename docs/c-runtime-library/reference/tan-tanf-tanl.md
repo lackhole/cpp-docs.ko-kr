@@ -33,11 +33,11 @@ helpviewer_keywords:
 - trigonometric functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
 ms.openlocfilehash: 79a374142a914e8c2c7cf5c094d443b16e4bce88
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258628"
 ---
 # <a name="tan-tanf-tanl"></a>tan, tanf, tanl
 
@@ -68,17 +68,17 @@ long double tan( long double x );  // C++ only
 |입력|SEH 예외|**Matherr** 예외|
 |-----------|-------------------|-------------------------|
 |± QNAN,IND|없음|_DOMAIN|
-|INF|**올바르지 않음**|_DOMAIN|
+|INF|**INVALID**|_DOMAIN|
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **tan** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **tan** 항상 받아서 반환 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **tan** 및 반환 하는 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **tan** 항상 받아서 반환 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C++)|
 |-------------|---------------------|-|
-|**tan**하십시오 **tanf**, **tanl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**tan**, **tanf**, **tanl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

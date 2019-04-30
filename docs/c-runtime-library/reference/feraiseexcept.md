@@ -22,11 +22,11 @@ helpviewer_keywords:
 - feraiseexcept function
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437
 ms.openlocfilehash: 581dd4026a20ce7221945c5815af3ae102f132fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334361"
 ---
 # <a name="feraiseexcept"></a>feraiseexcept
 
@@ -42,7 +42,7 @@ int feraiseexcept(
 
 ### <a name="parameters"></a>매개 변수
 
-*제외한*<br/>
+*excepts*<br/>
 발생시킬 부동 소수점 예외입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -66,7 +66,7 @@ int feraiseexcept(
 
 이 함수를 사용하려면 호출 전에 `#pragma fenv_access(on)` 지시문을 사용하여 액세스를 방지할 수 있는 부동 소수점 최적화를 꺼야 합니다. 자세한 내용은 [fenv_access](../../preprocessor/fenv-access.md)을 참조하세요.
 
-**Microsoft 전용:** 에 지정 된 예외 *제외한* FE_INVALID, 순서로 발생 FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT 합니다. 그러나 fe_inexact가 발생할 수 있습니다 FE_OVERFLOW 또는 FE_UNDERFLOW가 발생 하는 경우에 지정 되지 않은 경우에 *를 제외한*합니다. **Microsoft 전용 종료**
+**Microsoft 전용:** 지정 된 예외 *를 제외한* FE_INVALID, 순서로 발생 FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, fe_inexact가 있습니다. 그러나 fe_inexact가 발생할 수 있습니다 FE_OVERFLOW 또는 FE_UNDERFLOW가 발생 하는 경우에 지정 되지 않은 경우에 *를 제외한*합니다. **Microsoft 전용 종료**
 
 ## <a name="requirements"></a>요구 사항
 

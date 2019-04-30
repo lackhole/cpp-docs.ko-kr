@@ -42,18 +42,18 @@ helpviewer_keywords:
 - mbschr_l function
 ms.assetid: 2639905d-e983-43b7-b885-abef32cfac43
 ms.openlocfilehash: 8668c186a16dc3f3dc2c7223eb10c100fa6d72fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62354265"
 ---
 # <a name="strchr-wcschr-mbschr-mbschrl"></a>strchr, wcschr, _mbschr, _mbschr_l
 
 현재 로캘 또는 지정된 LC_CTYPE 변환 상태 범주를 사용하여 문자열에서 문자를 찾습니다.
 
 > [!IMPORTANT]
-> Windows 런타임에서 실행되는 응용 프로그램에서는 `_mbschr` 및 `_mbschr_l`을 사용할 수는 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> Windows 런타임에서 실행되는 애플리케이션에서는 `_mbschr` 및 `_mbschr_l`을 사용할 수는 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -134,7 +134,7 @@ Null 종료 소스 문자열입니다.
 
 출력 값은 로캘의; LC_CTYPE 범주 설정을 영향 자세한 내용은 [setlocale](setlocale-wsetlocale.md)합니다. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 번째 인수에 대 한 포인터입니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 에 대 한 포인터를 갖는 오버 로드 **상수** 에 대 한 포인터를 반환 **const**;는 버전에 대 한 포인터를은 비**const** 에 대 한 포인터를 반환 하는 비-**const** . 매크로 _CRT_CONST_CORRECT_OVERLOADS 모두 정의 되는 **const** 및 비-**const** 이러한 함수의 버전은 사용할 수 있습니다. 필요 하면 이외**const** 두 c + + 오버 로드에 대 한 동작 기호 _CONST_RETURN을 정의 합니다.
+C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 번째 인수에 대 한 포인터입니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 에 대 한 포인터를 갖는 오버 로드 **상수** 에 대 한 포인터를 반환 **const**;는 버전에 대 한 포인터를은 비**const** 에 대 한 포인터를 반환 하는 비-**const** . 매크로 _CRT_CONST_CORRECT_OVERLOADS 모두 정의 되는 **const** 및 비-**const** 이러한 함수의 버전은 사용할 수 있습니다. 비-필요한 경우**const** 둘 다에 대 한 동작 C++ 오버 로드를 기호 _CONST_RETURN을 정의 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

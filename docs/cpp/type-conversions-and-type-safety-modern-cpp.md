@@ -4,11 +4,11 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
 ms.openlocfilehash: 79285e4870b73ff01ed3b230a0162f87c0400aa8
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404691"
 ---
 # <a name="type-conversions-and-type-safety-modern-c"></a>형식 변환 및 형식 안전성(모던 C++)
 
@@ -30,7 +30,7 @@ C++ 프로그램을 작성하는 경우 형식 안전이 확인되어야 합니�
 |----------|--------|
 |부호 있는 정수 또는 부호 없는 정수 형식이 제외한 **long long** 또는 **__int64**|**double**|
 |**bool** 또는 **char**|다른 기본 제공 형식|
-|**짧은** 또는 **wchar_t**|**int**하십시오 **긴**, **long long**|
+|**짧은** 또는 **wchar_t**|**int**, **long**, **long long**|
 |**int**, **long**|**long long**|
 |**float**|**double**|
 

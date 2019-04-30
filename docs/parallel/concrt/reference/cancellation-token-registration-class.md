@@ -9,16 +9,15 @@ helpviewer_keywords:
 - cancellation_token_registration class
 ms.assetid: 823d63f4-7233-4d65-8976-6152ccf12d0e
 ms.openlocfilehash: c6ca8061181ec057110282fa297666235e898ff6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62414193"
 ---
 # <a name="cancellationtokenregistration-class"></a>cancellation_token_registration 클래스
 
-
-  `cancellation_token_registration` 클래스는 `cancellation_token`의 콜백 알림을 나타냅니다. 취소 발생 시 알림을 받는 데 `register`의 `cancellation_token` 메서드를 사용하면 `cancellation_token_registration` 메서드 사용을 통해 더 이상 만들어지지 않는 특정 콜백을 호출자가 요청할 수 있도록 `deregister` 개체가 콜백에 대한 핸들로 반환됩니다.
+`cancellation_token_registration` 클래스는 `cancellation_token`의 콜백 알림을 나타냅니다. 취소 발생 시 알림을 받는 데 `register`의 `cancellation_token` 메서드를 사용하면 `cancellation_token_registration` 메서드 사용을 통해 더 이상 만들어지지 않는 특정 콜백을 호출자가 요청할 수 있도록 `deregister` 개체가 콜백에 대한 핸들로 반환됩니다.
 
 ## <a name="syntax"></a>구문
 

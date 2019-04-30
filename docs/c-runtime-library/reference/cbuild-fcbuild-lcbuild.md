@@ -30,11 +30,11 @@ helpviewer_keywords:
 - _FCbuild function
 - _LCbuild function
 ms.openlocfilehash: 5565c87a3cccd1715a1357f417238587f3fba4d5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340468"
 ---
 # <a name="cbuild-fcbuild-lcbuild"></a>_Cbuild, _FCbuild, _LCbuild
 
@@ -68,7 +68,7 @@ A **_Dcomplex**를 **_Fcomplex**, 또는 **_Lcomplex** 복소수를 나타내는
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**_Cbuild**하십시오 **_FCbuild**, **_LCbuild**|\<complex.h>|\<ccomplex>|
+|**_Cbuild**, **_FCbuild**, **_LCbuild**|\<complex.h>|\<ccomplex>|
 
 이러한 함수는 Microsoft 전용입니다. 형식을 **_Dcomplex**를 **_Fcomplex**, 및 **_Lcomplex** 구현 되지 않은 C99 네이티브 형식에 해당 하는 Microsoft 전용은 **double _Complex** 하십시오 **float _Complex**, 및 **long double _Complex**각각. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

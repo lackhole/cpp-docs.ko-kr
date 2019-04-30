@@ -15,11 +15,11 @@ f1_keywords:
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::value_type
 ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
 ms.openlocfilehash: 0f2b627afa216f03592fe913afece1a80f5bd5a6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351523"
 ---
 # <a name="textureview-class"></a>texture_view 클래스
 
@@ -473,7 +473,7 @@ void set(
 *_Index*<br/>
 아마도 다중 차원 설정 요소의 인덱스입니다.
 
-*value*<br/>
+*값*<br/>
 요소를 설정 값입니다.
 
 ##  <a name="value_type"></a> value_type

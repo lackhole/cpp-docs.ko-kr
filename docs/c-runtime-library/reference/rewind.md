@@ -25,11 +25,11 @@ helpviewer_keywords:
 - file pointers [C++]
 ms.assetid: 1a460ce1-28d8-4b5e-83a6-633dca29c28a
 ms.openlocfilehash: d2e50c34d48b5a9570691a8a702cd05c1a48242d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357566"
 ---
 # <a name="rewind"></a>rewind
 
@@ -45,14 +45,14 @@ void rewind(
 
 ### <a name="parameters"></a>매개 변수
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="remarks"></a>설명
 
 합니다 **rewind** 함수에 연결 된 파일 포인터 위치를 변경 *스트림* 파일의 시작 부분에 있습니다. **rewind**에 대한 호출은 다음과 유사합니다.
 
-**(void) fseek (** _스트림_**, 0 L, SEEK_SET);**
+**(void) fseek(** _stream_**, 0L, SEEK_SET );**
 
 그러나와 달리 [fseek](fseek-fseeki64.md)하십시오 **rewind** 스트림에 대 한 오류 표시기는 물론 파일 끝 표시기도 지웁니다. 또한 달리 [fseek](fseek-fseeki64.md)를 **rewind** 포인터가 성공적으로 이동 하는지 여부를 나타내는 값을 반환 하지 않습니다.
 

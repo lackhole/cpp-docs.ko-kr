@@ -13,11 +13,11 @@ helpviewer_keywords:
 - aggregation [C++], aggregation models
 ms.assetid: 67cfefa4-8df9-47fa-ad58-2d1a1ae25762
 ms.openlocfilehash: c52e1a95483807f9c842b0b904cd2314258f0e26
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62259874"
 ---
 # <a name="ccomcoclass-class"></a>CComCoClass 클래스
 
@@ -213,7 +213,7 @@ static LPCTSTR WINAPI GetObjectDescription();
 
 ### <a name="remarks"></a>설명
 
-기본 구현은 NULL을 반환합니다. 이 메서드를 재정의할 수 있습니다 합니다 [DECLARE_OBJECT_DESCRIPTION](object-map-macros.md#declare_object_description) 매크로입니다. 예를 들면,
+기본 구현은 NULL을 반환합니다. 이 메서드를 재정의할 수 있습니다 합니다 [DECLARE_OBJECT_DESCRIPTION](object-map-macros.md#declare_object_description) 매크로입니다. 예를 들어:
 
 [!code-cpp[NVC_ATL_COM#12](../../atl/codesnippet/cpp/ccomcoclass-class_3.h)]
 

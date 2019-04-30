@@ -9,11 +9,11 @@ helpviewer_keywords:
 - improper_lock class
 ms.assetid: 8f494942-7748-4a2a-8de2-23414bfe6346
 ms.openlocfilehash: c10a7f302b63c33869425c4e5bddb36a15373ea8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262595"
 ---
 # <a name="improperlock-class"></a>improper_lock 클래스
 
@@ -31,8 +31,7 @@ class improper_lock : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[improper_lock](#ctor)|오버로드됨. 
-  `improper_lock exception`를 생성합니다.|
+|[improper_lock](#ctor)|오버로드됨. `improper_lock exception`를 생성합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -52,8 +51,7 @@ class improper_lock : public std::exception;
 
 ##  <a name="ctor"></a> improper_lock
 
-
-  `improper_lock exception`를 생성합니다.
+`improper_lock exception`를 생성합니다.
 
 ```
 explicit _CRTIMP improper_lock(_In_z_ const char* _Message) throw();

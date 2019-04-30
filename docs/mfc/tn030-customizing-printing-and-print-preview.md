@@ -11,11 +11,11 @@ helpviewer_keywords:
 - print preview [MFC], customizing
 ms.assetid: 32744697-c91c-41b6-9a12-b8ec01e0d438
 ms.openlocfilehash: 09938c5cec2812998d5e76e15154754ad3ac3e0b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305686"
 ---
 # <a name="tn030-customizing-printing-and-print-preview"></a>TN030: 인쇄 및 인쇄 미리 보기 사용자 지정
 
@@ -40,13 +40,13 @@ MFC는 대부분의 인쇄에 대 한 완전 한 솔루션을 제공 하며 인�
 
 둘째, 자주를 호출 해야 `QueryAbort` 밴드를 그리는 동안. 이 고, 그렇지 중단 프로시저를 호출 하지 않아도 됩니다 하 고 사용자가 인쇄 작업을 취소할 수 없습니다.
 
-## <a name="print-preview-electronic-paper-with-user-interface"></a>사용자 인터페이스를 사용 하 여 전자 문서 인쇄 미리 보기:
+## <a name="print-preview-electronic-paper-with-user-interface"></a>인쇄 미리 보기: 사용자 인터페이스를 사용 하 여 전자 문서
 
 인쇄 미리 보기를 기본적으로 변환 프린터의 에뮬레이션을 표시 합니다. 기본적으로 주 창의 클라이언트 영역 창 내에서 완벽 하 게 하나 또는 두 개의 페이지를 표시할 사용 됩니다. 사용자가 좀 더 자세히 보려는 페이지의 영역을 확대 수 있습니다. 추가 지원으로 미리 보기 모드에서 문서를 편집 하려면 사용자도 수 있습니다.
 
 ## <a name="customizing-print-preview"></a>인쇄 미리 보기를 사용자 지정
 
-인쇄 미리 보기 수정의 측면 중 하나를 사용 하 여이 하나만 처리: 미리 보기 모드로 UI를 추가 합니다. 다른 수정 가능 하지만, 이러한 변경이이 토론의 범위를 벗어납니다.
+인쇄 미리 보기 수정의 측면 중 하나를 사용 하 여이 하나만 처리 합니다. 미리 보기 모드로 UI를 추가 합니다. 다른 수정 가능 하지만, 이러한 변경이이 토론의 범위를 벗어납니다.
 
 ## <a name="to-add-ui-to-the-preview-mode"></a>UI의 미리 보기 모드를 추가 하려면
 

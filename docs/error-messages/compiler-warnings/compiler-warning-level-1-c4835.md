@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C4835
 ms.assetid: d2e44c62-7b0e-4a45-943d-97903e27ed9d
 ms.openlocfilehash: 0427a97a9e368a19a40a8d1a552f7713e36f831e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62380853"
 ---
 # <a name="compiler-warning-level-1-c4835"></a>컴파일러 경고(수준 1) C4835
 
 'variable': 내보낸된 데이터에 대 한 이니셜라이저는 관리 되는 코드가 호스트 어셈블리에서 먼저 실행 될 때까지 실행 되지 것입니다
 
-관리 되는 구성 요소 간 데이터에 액세스할 때 하지 네이티브 c + + 가져오기를 사용 하는 메커니즘을 내보내기는 것이 좋습니다. 대신 관리 되는 형식 내에서 데이터 멤버를 선언 하 고 사용 하 여 메타 데이터 참조 `#using` 클라이언트에서입니다. 자세한 내용은 [#using 지시문](../../preprocessor/hash-using-directive-cpp.md)을 참조하세요.
+관리 되는 구성 요소 간 데이터에 액세스할 때 것이 좋습니다 사용 하지 않는 네이티브 C++ 가져오기 및 내보내기 메커니즘입니다. 대신 관리 되는 형식 내에서 데이터 멤버를 선언 하 고 사용 하 여 메타 데이터 참조 `#using` 클라이언트에서입니다. 자세한 내용은 [#using 지시문](../../preprocessor/hash-using-directive-cpp.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

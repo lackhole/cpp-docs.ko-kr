@@ -24,11 +24,11 @@ helpviewer_keywords:
 - _expand_dbg function
 ms.assetid: dc58c91f-72a8-48c6-b643-fe130fb6c1fd
 ms.openlocfilehash: cc3aa2b7e39b52eb71ac10a9b5c4a221ba6fb70c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288047"
 ---
 # <a name="expanddbg"></a>_expand_dbg
 
@@ -48,7 +48,7 @@ void *_expand_dbg(
 
 ### <a name="parameters"></a>매개 변수
 
-*사용자 데이터*<br/>
+*userData*<br/>
 이전에 할당된 메모리 블록에 대한 포인터입니다.
 
 *newSize*<br/>
@@ -73,11 +73,11 @@ void *_expand_dbg(
 
 합니다 **_expand_dbg** 함수는 디버그 버전 _[확장](expand.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_expand_dbg** 대 한 호출으로 줄어듭니다 **_expand**합니다. 둘 다 **_expand** 하 고 **_expand_dbg** 기본 힙에서 메모리 블록의 크기를 조정 하지만 **_expand_dbg** 몇 가지 디버깅 기능을 수용: 사용자의 양쪽에서 버퍼 부분 블록 누수 테스트, 블록 형식 매개 변수로 특정 할당 형식 추적 및 *filename*/*linenumber* 의 출처를 확인 하는 정보 할당 요청 수입니다.
 
-**_expand_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 지정 된 메모리 블록 크기를 조정 *newSize*합니다. *newSize* 원래 할당 된 메모리 블록의 크기 보다 작거나 클 수 있습니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 응용 프로그램에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 크기를 조정하려면 원래 메모리 블록을 확장하거나 축소합니다. **_expand_dbg** 처럼 메모리 블록을 이동 하지는 않습니다 합니다 [_realloc_dbg](realloc-dbg.md) 함수입니다.
+**_expand_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 지정 된 메모리 블록 크기를 조정 *newSize*합니다. *newSize* 원래 할당 된 메모리 블록의 크기 보다 작거나 클 수 있습니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 애플리케이션에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 크기를 조정하려면 원래 메모리 블록을 확장하거나 축소합니다. **_expand_dbg** 처럼 메모리 블록을 이동 하지는 않습니다 합니다 [_realloc_dbg](realloc-dbg.md) 함수입니다.
 
 때 *newSize* 원래 블록 크기, 메모리 블록을 확장 하는 보다 큽니다. 확장 중에 메모리 블록이 요청 된 크기에 맞게 확장할 수 없는 경우 **NULL** 반환 됩니다. 때 *newSize* 원래 블록 크기, 메모리 블록은 새 크기를 가져올 때까지 계약은 보다 작습니다.
 
-기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요. 할당 블록 형식과 이러한 형식의 사용 방법에 대한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요. 응용 프로그램의 디버그 빌드에서 표준 힙 함수를 호출하는 것과 해당 함수의 디버그 버전을 호출하는 것의 차이에 대한 자세한 내용은 [힙 할당 함수의 디버그 버전](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)을 참조하세요.
+기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요. 할당 블록 형식과 이러한 형식의 사용 방법에 대한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요. 애플리케이션의 디버그 빌드에서 표준 힙 함수를 호출하는 것과 해당 함수의 디버그 버전을 호출하는 것의 차이에 대한 자세한 내용은 [힙 할당 함수의 디버그 버전](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)을 참조하세요.
 
 이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *memblock* 가 null 포인터인 경우 또는 크기 보다 크면 **_HEAP_MAXREQ**에 설명 된 대로이 함수는 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md). 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **NULL**합니다.
 

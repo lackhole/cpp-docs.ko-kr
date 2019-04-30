@@ -28,11 +28,11 @@ helpviewer_keywords:
 - floating-point functions, mantissa and exponent
 ms.assetid: 9b020f2e-3967-45ec-a6a8-d467a071aa55
 ms.openlocfilehash: c9e259f730d2d63d07032735be930f6f0fdb17e5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62332977"
 ---
 # <a name="frexp-frexpf-frexpl"></a>frexp, frexpf, frexpl
 
@@ -79,13 +79,13 @@ long double frexp(
 
 합니다 **frexp** 함수는 부동 소수점 값을 세분화 (*x*)가 (*m*) 및 지 수 (*n*), 절대 값 *m* 0.5 보다 크거나 같고 1.0 보다 작은 되 고 *x* = *m* * 2<sup>*n*</sup>. 정수 지 수 *n* 가리키는 위치에 저장 된 *expptr*합니다.
 
-C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **frexp**합니다. C 프로그램에서 **frexp** 는 항상 사용을 **double** 및 **int** 포인터와 반환을 **double**.
+C++오버 로드를 호출할 수 있도록 오버 로드를 허용 **frexp**합니다. C 프로그램에서 **frexp** 는 항상 사용을 **double** 및 **int** 포인터와 반환을 **double**.
 
 ## <a name="requirements"></a>요구 사항
 
 |기능|필수 헤더|
 |--------------|---------------------|
-|**frexp**하십시오 **frexpf**, **frexpl**|\<math.h>|
+|**frexp**, **frexpf**, **frexpl**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

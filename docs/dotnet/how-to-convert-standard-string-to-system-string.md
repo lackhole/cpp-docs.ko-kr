@@ -8,15 +8,15 @@ helpviewer_keywords:
 - strings [C++], converting
 ms.assetid: 1fde79a0-9d0b-44e5-981b-e8f2676c199d
 ms.openlocfilehash: e1fca0e8cb614c111af80324793cf8027be333a0
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387515"
 ---
 # <a name="how-to-convert-standard-string-to-systemstring"></a>방법: System:: string을 표준 문자열로 변환
 
-이 항목에서는 변환 c + + 표준 라이브러리 문자열로 하는 방법을 보여 줍니다 ([\<문자열 >](../standard-library/string.md))에 <xref:System.String>합니다.
+이 항목에서는 변환 하는 방법을 보여 줍니다는 C++ 표준 라이브러리 문자열 ([\<문자열 >](../standard-library/string.md))에 <xref:System.String>합니다.
 
 ## <a name="example"></a>예제
 

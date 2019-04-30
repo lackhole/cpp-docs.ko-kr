@@ -1,5 +1,5 @@
 ---
-title: 토큰 (c + +)
+title: 토큰 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - tokens [C++]
@@ -8,13 +8,13 @@ helpviewer_keywords:
 - white space, in C++ tokens
 ms.assetid: aa812fd0-6d47-4f3f-aee0-db002ee4d8b9
 ms.openlocfilehash: 1606df56191ec00ffea543dedd3fd4eda98d01c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330442"
 ---
-# <a name="tokens-c"></a>토큰 (c + +)
+# <a name="tokens-c"></a>토큰 (C++)
 
 토큰은 컴파일러에 의미 있는 C++ 프로그램의 최소 요소입니다. C++ 파서는 식별자, 키워드, 리터럴, 연산자, 문장 부호 및 기타 구분 기호 등의 토큰을 인식합니다. 이러한 토큰의 스트림은 변환 단위를 구성합니다.
 

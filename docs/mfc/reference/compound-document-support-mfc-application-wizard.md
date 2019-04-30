@@ -5,11 +5,11 @@ f1_keywords:
 - vc.appwiz.mfc.exe.compdoc
 ms.assetid: 42e1af83-12c4-438d-92eb-13835afdb148
 ms.openlocfilehash: b2ff4f312132b690223f124fd8790d0e2c172b7f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62373442"
 ---
 # <a name="compound-document-support-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 복합 문서 지원
 
@@ -21,7 +21,7 @@ MFC 응용 프로그램 마법사의이 페이지에서 응용 프로그램에�
 
   응용 프로그램 컨테이너 지원, server 지원, 또는 둘 다 제공 하는지 여부를 결정 합니다. 이 영역에 대 한 자세한 내용은 다음을 참조 하세요.
 
-  - [컨테이너: 컨테이너를 구현합니다.](../../mfc/containers-implementing-a-container.md)
+  - [컨테이너: 컨테이너 구현](../../mfc/containers-implementing-a-container.md)
 
   - [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)
 

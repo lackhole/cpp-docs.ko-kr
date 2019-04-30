@@ -40,11 +40,11 @@ helpviewer_keywords:
 - operator< member [STL/CLR]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
 ms.openlocfilehash: 1a884a75fbc3ba979402c94c67d2915863a847e9
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384467"
 ---
 # <a name="utility-stlclr"></a>utility(STL/CLR)
 
@@ -263,10 +263,10 @@ pair(Value1 val1, Value2 val2);
 *right*<br/>
 스토어로 쌍입니다.
 
-*Val1*<br/>
+*val1*<br/>
 저장할 첫 번째 값입니다.
 
-*Val2*<br/>
+*val2*<br/>
 저장할 두 번째 값입니다.
 
 ### <a name="remarks"></a>설명

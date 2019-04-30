@@ -3,11 +3,11 @@ title: /GUARD(보호 검사 사용)
 ms.date: 11/04/2016
 ms.assetid: 72758e23-70ac-4616-94d7-d767477406d1
 ms.openlocfilehash: e48921e57977cc7a1ca6a580fed78a6a2a960a02
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292252"
 ---
 # <a name="guard-enable-guard-checks"></a>/GUARD(보호 검사 사용)
 
@@ -29,7 +29,7 @@ CFG 사용 실행 가능 이미지를 만들려면 컴파일러와 링커 둘 �
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 확장 **구성 속성**, **링커**하십시오 **명령줄**합니다.
 

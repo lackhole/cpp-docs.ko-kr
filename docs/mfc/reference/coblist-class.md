@@ -51,11 +51,11 @@ helpviewer_keywords:
 - CObList [MFC], SetAt
 ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
 ms.openlocfilehash: 2fc3a3643c675394de555f1411030e278bcee775
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388243"
 ---
 # <a name="coblist-class"></a>CObList 클래스
 
@@ -479,7 +479,7 @@ const CObject* GetNext(POSITION& rPosition) const;
 반복 하는 동안 요소를 제거 하는 것이 가능 합니다. 예를 참조 하세요 [RemoveAt](#removeat)합니다.
 
 > [!NOTE]
->  반환할 MFC 8.0부터이 메서드의 const 버전이 변경 되었습니다 `const CObject*` 대신 `const CObject*&`합니다.  컴파일러는 c + + 표준 준수 상태로이 변경 되었습니다.
+>  반환할 MFC 8.0부터이 메서드의 const 버전이 변경 되었습니다 `const CObject*` 대신 `const CObject*&`합니다.  이 변경은 컴파일러를 사용 하 여 준수 상태로 전환 하는 C++ 표준입니다.
 
 다음 표에서 다른 멤버와 유사한 함수 `CObList::GetNext`합니다.
 
@@ -528,7 +528,7 @@ const CObject* GetPrev(POSITION& rPosition) const;
 검색 된 요소가 있으면 목록에서 첫 번째 다음의 새 값 *rPosition* NULL로 설정 됩니다.
 
 > [!NOTE]
->  반환할 MFC 8.0부터이 메서드의 const 버전이 변경 되었습니다 `const CObject*` 대신 `const CObject*&`합니다.  컴파일러는 c + + 표준 준수 상태로이 변경 되었습니다.
+>  반환할 MFC 8.0부터이 메서드의 const 버전이 변경 되었습니다 `const CObject*` 대신 `const CObject*&`합니다.  이 변경은 컴파일러를 사용 하 여 준수 상태로 전환 하는 C++ 표준입니다.
 
 다음 표에서 다른 멤버와 유사한 함수 `CObList::GetPrev`합니다.
 

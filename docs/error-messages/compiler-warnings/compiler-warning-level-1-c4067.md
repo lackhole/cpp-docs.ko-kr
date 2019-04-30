@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4067
 ms.assetid: 1d10353e-8cd5-4b01-9184-a06189b965a4
 ms.openlocfilehash: 012866e328433ec9511782c26a39265481ff4940
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386514"
 ---
 # <a name="compiler-warning-level-1-c4067"></a>컴파일러 경고 (수준 1) C4067
 

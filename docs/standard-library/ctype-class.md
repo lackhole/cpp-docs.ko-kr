@@ -37,11 +37,11 @@ helpviewer_keywords:
 - std::ctype [C++], widen
 ms.assetid: 3627154c-49d9-47b5-b28f-5bbedee38e3b
 ms.openlocfilehash: e7c474e9112acadc11af889471b1e126dfeeb23f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394145"
 ---
 # <a name="ctype-class"></a>ctype 클래스
 
@@ -147,11 +147,11 @@ explicit ctype(size_t _Refs = 0);
 
 에 대 한 가능한 값을 *_Refs* 매개 변수 및 중요성은:
 
-- 0: 개체를 포함하는 로캘에 의해 개체의 수명이 관리됩니다.
+- 0: 개체의 수명은 포함 하는 로캘에 의해 관리 됩니다.
 
-- 1: 개체의 수명을 수동으로 관리해야 합니다.
+- 1: 개체의 수명은 수동으로 관리 해야 합니다.
 
-- \> 1: 이러한 값은 정의 되지 않습니다.
+- \> 1: 이러한 값이 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 

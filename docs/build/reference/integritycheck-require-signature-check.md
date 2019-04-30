@@ -3,11 +3,11 @@ title: /INTEGRITYCHECK(시그니처 확인 필요)
 ms.date: 11/04/2016
 ms.assetid: 9e738825-2c98-40cd-8ad2-5d0d9c14893e
 ms.openlocfilehash: 446ebe3afc06b8db8cc9f36b289c1e5c3ef5f117
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62269754"
 ---
 # <a name="integritycheck-require-signature-check"></a>/INTEGRITYCHECK(시그니처 확인 필요)
 
@@ -25,7 +25,7 @@ ms.locfileid: "57813684"
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **구성 속성** 노드를 확장합니다.
 

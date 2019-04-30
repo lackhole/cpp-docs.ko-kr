@@ -10,25 +10,25 @@ helpviewer_keywords:
 - regular MFC DLLs [C++], statically linked to MFC
 ms.assetid: 2eed531c-726a-4b8a-b936-f721dc00a7fa
 ms.openlocfilehash: 1f05b5e3c268935cf3161fb7184e04b3e3ea1446
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62314782"
 ---
 # <a name="regular-mfc-dlls-statically-linked-to-mfc"></a>정적으로 MFC에 링크 된 기본 MFC Dll
 
 일반 정적으로 MFC에 링크 된 MFC DLL은 MFC를 내부적으로 사용 하는 DLL 및 MFC 또는 비 MFC 실행 파일에서 DLL에서 내보낸된 함수를 호출할 수 있습니다. 이름에서 알 수 있듯이 이러한 종류의 DLL 정적 링크 라이브러리 버전의 MFC 사용 하 여 빌드됩니다. 함수는 일반적으로 일반 표준 C 인터페이스를 사용 하 여 MFC DLL에서에서 내보내집니다. 작성, 빌드 및 기본 MFC DLL을 사용 하는 방법의 예로, 샘플을 참조 하세요 [DLLScreenCap](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/DllScreenCap)합니다.
 
-용어 USRDLL Visual c + + 설명서에 더 이상 사용 되는 참고 합니다. 정적으로 MFC에 링크는 기본 MFC DLL은 이전의 usrdll과 같은 특징에 있습니다.
+참고 용어 USRDLL 시각적 개체에 더 이상 사용 되는 C++ 설명서. 정적으로 MFC에 링크는 기본 MFC DLL은 이전의 usrdll과 같은 특징에 있습니다.
 
 정적으로 MFC에 링크 된 기본 MFC DLL에는 다음 기능이 있습니다.
 
-- 클라이언트 실행 파일은 Dll (C, c + +, Pascal, Visual Basic 및 등); 사용을 지 원하는 언어를 작성할 수 있습니다. MFC 응용 프로그램 이어야 하는 것이 없습니다.
+- 클라이언트 실행 파일은 Dll의 사용을 지 원하는 언어를 작성할 수 있습니다 (C C++, Pascal, Visual Basic 및 등); MFC 응용 프로그램 이어야 하는 것이 없습니다.
 
 - DLL 응용 프로그램에서 사용 하는 것과 동일한 MFC 정적 연결 라이브러리에 연결할 수 있습니다. 더 이상 Dll에 대 한 정적 링크 라이브러리의 버전을 별도로 됩니다.
 
-- MFC 버전 4.0 이전의 Usrdll 동일한 유형의 정적으로 MFC에 링크 된 기본 MFC Dll로 기능을 제공 합니다. Visual c + + 버전 4.0 USRDLL 용어는 사용 되지 않습니다.
+- MFC 버전 4.0 이전의 Usrdll 동일한 유형의 정적으로 MFC에 링크 된 기본 MFC Dll로 기능을 제공 합니다. 시각적 개체를 기준으로 C++ 버전 4.0 USRDLL 라는 용어는 사용 되지 않습니다.
 
 정적으로 MFC에 링크 된 기본 MFC DLL에는 다음 요구 사항을 있습니다.
 

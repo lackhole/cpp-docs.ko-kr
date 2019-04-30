@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CrtIsMemoryBlock function
 ms.assetid: f7cbbc60-3690-4da0-a07b-68fd7f250273
 ms.openlocfilehash: c4a85ebeb45552c6f5355853de2a45766d6bc984
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339899"
 ---
 # <a name="crtismemoryblock"></a>_CrtIsMemoryBlock
 
@@ -47,7 +47,7 @@ int _CrtIsMemoryBlock(
 
 ### <a name="parameters"></a>매개 변수
 
-*사용자 데이터*<br/>
+*userData*<br/>
 확인할 메모리 블록의 시작 부분에 대한 포인터입니다.
 
 *size*<br/>

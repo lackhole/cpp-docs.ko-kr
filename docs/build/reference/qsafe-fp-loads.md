@@ -2,11 +2,11 @@
 title: /Qsafe_fp_loads
 ms.date: 01/24/2018
 ms.openlocfilehash: 57aece79dfab617121371e0489aa80f18e143372
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57819694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319332"
 ---
 # <a name="qsafefploads"></a>/Qsafe_fp_loads
 
@@ -28,9 +28,9 @@ ms.locfileid: "57819694"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. 컴파일러 옵션을 입력 합니다 **추가 옵션** 상자입니다. 선택할 **확인** 에 변경 내용을 적용 합니다.
 

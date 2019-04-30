@@ -31,11 +31,11 @@ helpviewer_keywords:
 - function calls, terminating
 - process termination, calling
 ms.openlocfilehash: 7b2a22649d779f382bb4055b1e44c14312627ccd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339353"
 ---
 # <a name="exit-exit-exit"></a>exit, _Exit, _exit
 
@@ -67,11 +67,11 @@ void _exit(
 
 **종료**를 **_Exit** 하 고 **_exit** 함수 호출 프로세스를 종료 합니다. 합니다 **종료** 소멸자를 호출 하는 함수 스레드 로컬 개체에 대 한 호출-마지막의 선입 선출 (후입선출) 순서로-함수를 사용 하 여 등록 **atexit** 고 **_onexit**, 프로세스를 종료 하기 전에 모든 파일 버퍼를 플러시합니다. 합니다 **_Exit** 하 고 **_exit** 함수는 스레드 로컬 개체를 제거 하거나 처리 하지 않고 프로세스를 종료 **atexit** 또는 **_onexit**함수의 경우 스트림 버퍼를 플러시하지 않은 상태로 합니다.
 
-하지만 합니다 **종료**를 **_Exit** 하 고 **_exit** 호출 값, 값을 반환 하지 않습니다 *상태* 호스트 환경에 사용할 수 또는 있으면 프로세스가 종료 된 후 호출 하는 프로세스를 대기 합니다. 일반적으로 호출자에 게 집합을 *상태* 값 정상 종료를 나타내기 위해 0 또는 다른 값을 오류를 나타냅니다. *상태* 값은 운영 체제 일괄 처리 명령에 사용할 수 있습니다 **ERRORLEVEL** 두 상수 중 하나로 표시 됩니다. **EXIT_SUCCESS**, 값을 나타내는 0, 또는 **EXIT_FAILURE**, 1의 값을 나타냅니다.
+하지만 합니다 **종료**를 **_Exit** 하 고 **_exit** 호출 값, 값을 반환 하지 않습니다 *상태* 호스트 환경에 사용할 수 또는 있으면 프로세스가 종료 된 후 호출 하는 프로세스를 대기 합니다. 일반적으로 호출자에 게 집합을 *상태* 값 정상 종료를 나타내기 위해 0 또는 다른 값을 오류를 나타냅니다. 합니다 *상태* 값은 운영 체제 일괄 처리 명령에 사용할 수 있습니다 **ERRORLEVEL** 두 상수 중 하나로 표시 됩니다. **EXIT_SUCCESS**, 0의 값을 나타내는 또는 **EXIT_FAILURE**, 1의 값을 나타냅니다.
 
 합니다 **종료**, **_Exit**를 **_exit**를 **quick_exit**를 **_cexit**, 및 **_c_exit** 함수는 다음과 같이 동작 합니다.
 
-|기능|설명|
+|함수|설명|
 |--------------|-----------------|
 |**exit**|전체 C 라이브러리 종료 절차를 수행하고, 프로세스를 종료하고, 제공된 상태 코드를 호스트 환경에 제공합니다.|
 |**_Exit**|최소 C 라이브러리 종료 절차를 수행하고, 프로세스를 종료하고, 제공된 상태 코드를 호스트 환경에 제공합니다.|
@@ -97,7 +97,7 @@ void last_fn() {}
 
 |기능|필수 헤더|
 |--------------|---------------------|
-|**종료**하십시오 **_Exit**, **_exit**|\<process.h> 또는 \<stdlib.h>|
+|**exit**, **_Exit**, **_exit**|\<process.h> 또는 \<stdlib.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

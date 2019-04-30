@@ -41,11 +41,11 @@ helpviewer_keywords:
 - std::allocator_traits [C++], max_size
 - std::allocator_traits [C++], select_on_container_copy_construction
 ms.openlocfilehash: 66c8c998a91ddd3e6550b57415a513fae55856da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410975"
 ---
 # <a name="allocatortraits-class"></a>allocator_traits 클래스
 
@@ -106,13 +106,13 @@ static pointer allocate(Alloc& al, size_type count,
 
 ### <a name="parameters"></a>매개 변수
 
-*Al*<br/>
+*al*<br/>
 할당자 개체입니다.
 
 *count*<br/>
 할당할 요소의 수입니다.
 
-*힌트*<br/>
+*hint*<br/>
 요청 이전에 할당된 개체의 주소를 찾음으로써 스토리지에 대한 요청을 충족하여 할당자 개체를 지원할 수 있는 `const_pointer`입니다. Null 포인터는 힌트 없음으로 처리됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -134,13 +134,13 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 
 ### <a name="parameters"></a>매개 변수
 
-*Al*<br/>
+*al*<br/>
 할당자 개체입니다.
 
 *ptr*<br/>
 개체를 생성할 위치에 대한 포인터입니다.
 
-*인수*<br/>
+*args*<br/>
 개체 생성자에 전달되는 인수 목록입니다.
 
 ### <a name="remarks"></a>설명
@@ -159,7 +159,7 @@ static void deallocate(Alloc al,
 
 ### <a name="parameters"></a>매개 변수
 
-*Al*<br/>
+*al*<br/>
 할당자 개체입니다.
 
 *ptr*<br/>
@@ -185,7 +185,7 @@ static void destroy(Alloc& al, Uty* ptr);
 
 ### <a name="parameters"></a>매개 변수
 
-*Al*<br/>
+*al*<br/>
 할당자 개체입니다.
 
 *ptr*<br/>
@@ -205,7 +205,7 @@ static size_type max_size(const Alloc& al);
 
 ### <a name="parameters"></a>매개 변수
 
-*Al*<br/>
+*al*<br/>
 할당자 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -222,7 +222,7 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
 
 ### <a name="parameters"></a>매개 변수
 
-*Al*<br/>
+*al*<br/>
 할당자 개체입니다.
 
 ### <a name="return-value"></a>반환 값

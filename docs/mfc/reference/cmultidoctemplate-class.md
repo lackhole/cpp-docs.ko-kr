@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CMultiDocTemplate [MFC], CMultiDocTemplate
 ms.assetid: 5b8aa328-e461-41d0-b388-00594535e119
 ms.openlocfilehash: 5fefe91fa2067831c0263146ff3b2cd143b9c647
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62366942"
 ---
 # <a name="cmultidoctemplate-class"></a>CMultiDocTemplate 클래스
 
@@ -84,7 +84,7 @@ CMultiDocTemplate(
 *nIDResource*<br/>
 문서 형식을 사용 하 여 사용 하는 리소스의 ID를 지정 합니다. 이 메뉴, 아이콘, 액셀러레이터 키 테이블 및 문자열 리소스만 포함 될 수 있습니다.
 
-하지만 문자열 리소스를 '\n' 문자로 구분 되는 최대 7 개의 부분으로 구성 됩니다 ('\n' 문자 자리 표시자로 필요한 부분 문자열이 포함 되어 있지 않으면; 후행 '\n' 문자가 필요 하지 않습니다); 이러한 부분 문자열에는 문서 유형에 대해 설명합니다. 부분 문자열에 대 한 내용은 참조 하세요 [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring)합니다. 이 문자열 리소스는 응용 프로그램의 리소스 파일에 있습니다. 예를 들면,
+하지만 문자열 리소스를 '\n' 문자로 구분 되는 최대 7 개의 부분으로 구성 됩니다 ('\n' 문자 자리 표시자로 필요한 부분 문자열이 포함 되어 있지 않으면; 후행 '\n' 문자가 필요 하지 않습니다); 이러한 부분 문자열에는 문서 유형에 대해 설명합니다. 부분 문자열에 대 한 내용은 참조 하세요 [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring)합니다. 이 문자열 리소스는 응용 프로그램의 리소스 파일에 있습니다. 예를 들어:
 
 ```RC
 // MYCALC.RC

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - ThrowError method [MFC]
 ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
 ms.openlocfilehash: df71e2e59763644bd4aefb5d3e3afa46f82f538a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392715"
 ---
 # <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX 컨트롤: 고급 항목
 
@@ -43,7 +43,7 @@ ActiveX 컨트롤 클래스는 클래스 라이브러리의 일부 이기 때문
 MFC 데이터베이스 클래스의 일반적인 개요를 참조 하세요 [MFC 데이터베이스 클래스 (DAO 및 ODBC)](../data/mfc-database-classes-odbc-and-dao.md)합니다. 문서 MFC ODBC 클래스를 소개 하 고 MFC DAO 클래스 및 중 하나에 대 한 자세한 내용은 알려 줍니다.
 
 > [!NOTE]
->  Visual c + + 환경 및 마법사 (DAO 클래스에 포함 되어 있으며 계속 사용할 수 있습니다) 이지만 DAO을 지원 하지 않습니다. 사용 하는 것이 좋습니다 [OLE DB Templates](../data/oledb/ole-db-programming.md) 하거나 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 새 프로젝트에 대 한 합니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
+>  시각적 개체 C++ 환경 및 마법사 지원 하지 않습니다 DAO (하지만 DAO 클래스에 포함 되어 있으며 계속 사용할 수 있습니다). 사용 하는 것이 좋습니다 [OLE DB Templates](../data/oledb/ole-db-programming.md) 하거나 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 새 프로젝트에 대 한 합니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
 
 ##  <a name="_core_implementing_a_parameterized_property"></a> 매개 변수화 된 속성 구현
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
 ms.openlocfilehash: 1838ad0d6adb146adacb8b3a395f44f76e2a8d3f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407814"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>연습: 사용자 인터페이스 스레드에서 작업 제거
 
@@ -52,11 +52,11 @@ ms.locfileid: "57304719"
 
 이 섹션에는 기본 MFC 응용 프로그램을 만드는 방법을 설명 합니다.
 
-### <a name="to-create-a-visual-c-mfc-application"></a>Visual c + + MFC 응용 프로그램을 만들려면
+### <a name="to-create-a-visual-c-mfc-application"></a>시각적 개체를 만들려면 C++ MFC 응용 프로그램
 
 1. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
-1. 에 **새 프로젝트** 대화 상자의 합니다 **설치 된 템플릿** 창 **Visual c + +** 를 선택한 후는 **템플릿** 창 **MFC 응용 프로그램**합니다. 예를 들어, 프로젝트 이름을 입력 `Mandelbrot`를 클릭 하 고 **확인** 표시할 합니다 **MFC 응용 프로그램 마법사**합니다.
+1. 에 **새 프로젝트** 대화 상자의 **설치 된 템플릿** 창 **Visual C++** 를 선택한 다음를 **템플릿** 창 선택 **MFC 응용 프로그램**합니다. 예를 들어, 프로젝트 이름을 입력 `Mandelbrot`를 클릭 하 고 **확인** 표시할 합니다 **MFC 응용 프로그램 마법사**합니다.
 
 1. 에 **응용 프로그램 종류** 창 **단일 문서**합니다. 있는지 확인 합니다 **문서/뷰 아키텍처 지원** 확인란의 선택을 취소 합니다.
 

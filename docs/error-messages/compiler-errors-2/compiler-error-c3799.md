@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C3799
 ms.assetid: 336a2811-9370-4e6e-b03b-325bda470805
 ms.openlocfilehash: 19ff414bde9bb24fca62fd10cfef6d18109199e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400125"
 ---
 # <a name="compiler-error-c3799"></a>컴파일러 오류 C3799
 
 인덱싱된 속성에는 빈 매개 변수 목록을 사용할 수 없습니다.
 
-인덱싱된 속성을 잘못 선언 되었습니다. 자세한 내용은 [방법: 사용 하 여 속성 C + + CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md)합니다.
+인덱싱된 속성을 잘못 선언 되었습니다. 자세한 내용은 [방법: 속성에서 사용 하 여 C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md)합니다.
 
 ## <a name="example"></a>예제
 

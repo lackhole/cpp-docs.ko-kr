@@ -8,11 +8,11 @@ helpviewer_keywords:
 - -Gw compiler option [C++]
 ms.assetid: 6f90f4e9-5eb8-4c47-886e-631278a5a4a9
 ms.openlocfilehash: 5796f353414a021908147bdd2f296ef8e02f69ad
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62270713"
 ---
 # <a name="gw-optimize-global-data"></a>/Gw(전역 데이터 최적화)
 
@@ -32,13 +32,13 @@ ms.locfileid: "57816908"
 
 사용할 수도 있습니다는 [/opt: icf](opt-optimizations.md) 하 고 [/LTCG](ltcg-link-time-code-generation.md) 링커 옵션을 함께 사용 하 여 여러 개체 파일 간에 동일한 읽기 전용 전역 데이터 컴파일된 실행 파일에 병합 합니다 **/Gw** 옵션입니다.
 
-자세한 내용은 [/Gw 컴파일러 스위치 소개](http://blogs.msdn.com/b/vcblog/archive/2013/09/11/introducing-gw-compiler-switch.aspx) Visual c + + 팀 블로그.
+자세한 내용은 [/Gw 컴파일러 스위치 소개](http://blogs.msdn.com/b/vcblog/archive/2013/09/11/introducing-gw-compiler-switch.aspx) 시각적 개체에 C++ 팀 블로그.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 선택 된 **C/c + +** 폴더입니다.
+1. 선택 된 **C/C++** 폴더입니다.
 
 1. 선택 된 **명령줄** 속성 페이지.
 

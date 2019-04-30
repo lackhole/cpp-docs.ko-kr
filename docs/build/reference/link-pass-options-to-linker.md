@@ -12,11 +12,11 @@ helpviewer_keywords:
 - cl.exe compiler [C++], passing options to linker
 ms.assetid: 16902a94-c094-4328-841f-3ac94ca04848
 ms.openlocfilehash: ef81a6617df811660506c08434f3b65e29155794
-ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62290685"
 ---
 # <a name="link-pass-options-to-linker"></a>/link(옵션을 링커로 전달)
 
@@ -45,7 +45,7 @@ ms.locfileid: "58476840"
 
 IDE에는 일반적으로 컴파일 및 코드를 연결 하려면 별도 명령을 보냅니다. 프로젝트 속성 페이지에 링커 옵션을 설정할 수 있습니다.
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 선택 된 **구성 속성** > **링커** 폴더입니다.
 

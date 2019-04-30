@@ -1,5 +1,5 @@
 ---
-title: 'TN055: MFC ODBC 데이터베이스 클래스 응용 프로그램을 MFC DAO 클래스로 마이그레이션'
+title: 'TN055: MFC ODBC 데이터베이스 클래스 응용 프로그램 마이그레이션을 MFC DAO 클래스로 마이그레이션'
 ms.date: 06/20/2018
 f1_keywords:
 - vc.mfc.odbc
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - migrating database applications [MFC]
 ms.assetid: 0f858bd1-e168-4e2e-bcd1-8debd82856e4
 ms.openlocfilehash: f8e0d8e50f05e86c35e0f8b7f324533bffea6f25
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399670"
 ---
-# <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: MFC ODBC 데이터베이스 클래스 응용 프로그램을 MFC DAO 클래스로 마이그레이션
+# <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: MFC ODBC 데이터베이스 클래스 응용 프로그램 마이그레이션을 MFC DAO 클래스로 마이그레이션
 
 > [!NOTE]
-> Visual c + + 환경 및 마법사 (DAO 클래스에 포함 되어 있으며 계속 사용할 수 있습니다) 이지만 DAO을 지원 하지 않습니다. 사용 하는 것이 좋습니다 [OLE DB Templates](../data/oledb/ole-db-templates.md) 하거나 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 새 프로젝트에 대 한 합니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
+> 시각적 개체 C++ 환경 및 마법사 지원 하지 않습니다 DAO (하지만 DAO 클래스에 포함 되어 있으며 계속 사용할 수 있습니다). 사용 하는 것이 좋습니다 [OLE DB Templates](../data/oledb/ole-db-templates.md) 하거나 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 새 프로젝트에 대 한 합니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
 
 ## <a name="overview"></a>개요
 

@@ -3,15 +3,15 @@ title: 그래픽(C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
 ms.openlocfilehash: 4a40575d84c9a0efedcb3c7c9717fc310870b530
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405666"
 ---
 # <a name="graphics-c-amp"></a>그래픽(C++ AMP)
 
-C + + AMP의 몇 가지 Api가 포함 된 [concurrency:: graphics](../../parallel/amp/reference/concurrency-graphics-namespace.md) Gpu의 텍스처 지원에 액세스 하는 데 사용할 수 있는 네임 스페이스입니다. 다음은 몇 가지 일반 시나리오입니다.
+C++AMP의 몇 가지 Api가 포함 된 [concurrency:: graphics](../../parallel/amp/reference/concurrency-graphics-namespace.md) Gpu의 텍스처 지원에 액세스 하는 데 사용할 수 있는 네임 스페이스입니다. 다음은 몇 가지 일반 시나리오입니다.
 
 - 사용할 수는 [질감](../../parallel/amp/reference/texture-class.md) 계산 및 악용에 대 한 데이터 컨테이너로 클래스는 *공간 집약성* 질감 캐시 및 GPU 하드웨어의 레이아웃입니다. 공간 집약성은 물리적으로 서로 인접한 데이터 요소의 속성입니다.
 
@@ -53,8 +53,7 @@ Short 벡터 라이브러리의 기능 중 일부를 제공 합니다 [벡터 �
 |복합 할당 연산자|모든 형식에 대해 유효함: + =,-=, \*=, / =<br /><br /> 정수 형식에 대해 유효함: % =, ^ =, &#124;=, & =, <\<=, >> =|
 |증가 및 감소 연산자|모든 형식에 대해 유효함: ++, --<br /><br /> 전위와 후위가 모두 유효해야 합니다.|
 |비트 NOT 연산자(~)|정수 형식에 대해 유효함|
-|단항 연산자|
-  `unorm` 및 `uint`을 제외한 모든 형식에 대해 유효함|
+|단항 연산자|`unorm` 및 `uint`을 제외한 모든 형식에 대해 유효함|
 
 ### <a name="swizzling-expressions"></a>재구성 식
 
@@ -68,9 +67,7 @@ short 벡터 라이브러리는 short 벡터의 구성 요소에 액세스할 �
 
 - 구성 요소가 두 개 또는 네 개인 short 벡터. 유일한 예외는 `double_4`이며 이 형식은 허용되지 않습니다.
 
-
-  `texture` 개체의 차수는 1, 2 또는 3일 수 있습니다. 
-  `texture` 개체는 `parallel_for_each` 호출의 람다에 있는 참조를 통해서만 캡처될 수 있습니다. 텍스처는 Direct3D 텍스처 개체로 GPU에 저장됩니다. Direct3D의 텍스처 및 텍셀에 대 한 자세한 내용은 참조 하세요. [Direct3D 11의 텍스처 소개](http://go.microsoft.com/fwlink/p/?linkid=248502)합니다.
+`texture` 개체의 차수는 1, 2 또는 3일 수 있습니다. `texture` 개체는 `parallel_for_each` 호출의 람다에 있는 참조를 통해서만 캡처될 수 있습니다. 텍스처는 Direct3D 텍스처 개체로 GPU에 저장됩니다. Direct3D의 텍스처 및 텍셀에 대 한 자세한 내용은 참조 하세요. [Direct3D 11의 텍스처 소개](http://go.microsoft.com/fwlink/p/?linkid=248502)합니다.
 
 사용하는 텍셀 형식은 그래픽 프로그래밍에 사용되는 다양한 텍스처 형식 중 하나일 수 있습니다. 예를 들어 RGBA 형식은 R, G, B, A 스칼라 요소 각각에 8비트씩 총 32비트를 사용할 수 있습니다. 그래픽 카드의 텍스처 하드웨어는 형식에 따라 개별 요소에 액세스할 수 있습니다. 예를 들어 RGBA 형식을 사용하는 경우 텍스처 하드웨어는 각 8비트 요소를 32비트 형식으로 추출할 수 있습니다. C++ AMP에서는 텍셀의 스칼라 요소당 비트 수를 설정하여 비트 시프트를 사용하지 않고 코드의 개별 스칼라 요소에 자동으로 액세스할 수 있습니다.
 
@@ -99,8 +96,7 @@ void declareTextures() {
 }
 ```
 
-생성자를 사용하여 `texture` 개체를 선언하고 초기화할 수도 있습니다. 다음 코드 예제에서는 `texture` 개체의 벡터에서 `float_4` 개체를 인스턴스화합니다. 스칼라 요소당 비트 수는 기본값으로 설정됩니다. 
-  `norm`, `unorm`이나 `norm` 및 `unorm`의 short 벡터에는 스칼라 요소당 기본 비트 수가 없기 때문에 이 생성자를 사용할 수 없습니다.
+생성자를 사용하여 `texture` 개체를 선언하고 초기화할 수도 있습니다. 다음 코드 예제에서는 `texture` 개체의 벡터에서 `float_4` 개체를 인스턴스화합니다. 스칼라 요소당 비트 수는 기본값으로 설정됩니다. `norm`, `unorm`이나 `norm` 및 `unorm`의 short 벡터에는 스칼라 요소당 기본 비트 수가 없기 때문에 이 생성자를 사용할 수 없습니다.
 
 ```cpp
 #include <amp.h>
@@ -133,8 +129,7 @@ void createTextureWithBPC() { // Create the source data.
 }
 ```
 
-이러한 예에 나오는 텍스처는 기본 액셀러레이터의 기본 보기에 만들어집니다. 
-  `accelerator_view` 개체를 지정하려는 경우 생성자의 다른 오버로드를 사용할 수 있습니다. CPU 액셀러레이터에는 텍스처 개체를 만들 수 없습니다.
+이러한 예에 나오는 텍스처는 기본 액셀러레이터의 기본 보기에 만들어집니다. `accelerator_view` 개체를 지정하려는 경우 생성자의 다른 오버로드를 사용할 수 있습니다. CPU 액셀러레이터에는 텍스처 개체를 만들 수 없습니다.
 
 다음 표에 표시된 것과 같이 `texture` 개체의 각 차원에는 크기 제한이 있습니다. 제한을 초과할 경우 런타임 오류가 생성됩니다.
 
@@ -221,11 +216,9 @@ void UseBitsPerScalarElement() { // Create the image data. // Each unsigned int 
 
 - T가 아닌 **이중**를 `norm`, 또는 `unorm`합니다.
 
-- 
-  `texture::bits_per_scalar_element` 속성이 32입니다.
+- `texture::bits_per_scalar_element` 속성이 32입니다.
 
-세 가지 조건이 모두 충족되지 않으면 `texture` 개체가 읽기 전용입니다. 처음 두 조건은 컴파일하는 동안 확인됩니다. 
-  `readonly` 텍스처 개체에 쓰기를 시도하는 코드가 있으면 컴파일 오류가 생성됩니다. 에 대 한 조건을 `texture::bits_per_scalar_element` 런타임에 검색 되는 런타임에 생성 하 고는 [unsupported_feature](../../parallel/amp/reference/unsupported-feature-class.md) 예외를 readonly로 작성 하려는 경우 `texture` 개체입니다.
+세 가지 조건이 모두 충족되지 않으면 `texture` 개체가 읽기 전용입니다. 처음 두 조건은 컴파일하는 동안 확인됩니다. `readonly` 텍스처 개체에 쓰기를 시도하는 코드가 있으면 컴파일 오류가 생성됩니다. 에 대 한 조건을 `texture::bits_per_scalar_element` 런타임에 검색 되는 런타임에 생성 하 고는 [unsupported_feature](../../parallel/amp/reference/unsupported-feature-class.md) 예외를 readonly로 작성 하려는 경우 `texture` 개체입니다.
 
 다음 코드 예제에서는 텍스처 개체에 값을 씁니다.
 
@@ -266,12 +259,11 @@ void copyHostArrayToTexture() { // Copy from source array to texture object by u
 }
 ```
 
-복사할 수도 있습니다 하나의 질감에서 다른을 사용 하 여 합니다 [texture:: copy_to](reference/texture-class.md#copy_to) 메서드. 두 텍스처가 서로 다른 액셀러레이터 보기에 있어도 됩니다. 
-  `writeonly_texture_view` 개체에 복사하는 경우 데이터가 내부 `texture` 개체에 복사됩니다. 소스 및 대상 `texture` 개체에서 스칼라 요소당 비트 수 및 범위가 동일해야 합니다. 이러한 요구 사항이 충족되지 않으면 런타임 예외가 throw됩니다.
+복사할 수도 있습니다 하나의 질감에서 다른을 사용 하 여 합니다 [texture:: copy_to](reference/texture-class.md#copy_to) 메서드. 두 텍스처가 서로 다른 액셀러레이터 보기에 있어도 됩니다. `writeonly_texture_view` 개체에 복사하는 경우 데이터가 내부 `texture` 개체에 복사됩니다. 소스 및 대상 `texture` 개체에서 스칼라 요소당 비트 수 및 범위가 동일해야 합니다. 이러한 요구 사항이 충족되지 않으면 런타임 예외가 throw됩니다.
 
 ## <a name="texture-view-classes"></a>텍스처 보기 클래스
 
-C + + AMP 소개 합니다 [texture_view 클래스](../../parallel/amp/reference/texture-view-class.md) Visual Studio 2013에서. 텍스처 보기는 동일한 텍셀 형식 및 차수를 지원 합니다 [texture 클래스](../../parallel/amp/reference/texture-class.md), 하지만 텍스처와는 달리 텍스처 샘플링 및 mip 맵과 같은 추가 하드웨어 기능에 대 한 액세스를 제공 합니다. 텍스처 보기는 내부 텍스처 데이터에 대한 읽기 전용, 쓰기 전용 및 읽기/쓰기 액세스를 지원합니다.
+C++AMP 소개 합니다 [texture_view 클래스](../../parallel/amp/reference/texture-view-class.md) Visual Studio 2013에서. 텍스처 보기는 동일한 텍셀 형식 및 차수를 지원 합니다 [texture 클래스](../../parallel/amp/reference/texture-class.md), 하지만 텍스처와는 달리 텍스처 샘플링 및 mip 맵과 같은 추가 하드웨어 기능에 대 한 액세스를 제공 합니다. 텍스처 보기는 내부 텍스처 데이터에 대한 읽기 전용, 쓰기 전용 및 읽기/쓰기 액세스를 지원합니다.
 
 - 읽기 전용 액세스는 `texture_view<const T, N>` 템플릿 특수화를 통해 제공되며 구성 요소가 1, 2, 4개인 요소, 텍스처 샘플링, 보기가 인스턴스화될 때 결정되는 다양한 Mip 맵 수준에 대한 동적 액세스를 지원합니다.
 
@@ -279,12 +271,11 @@ C + + AMP 소개 합니다 [texture_view 클래스](../../parallel/amp/reference
 
 - 읽기-쓰기 액세스는 특수화되지 않은 템플릿 클래스 `texture_view<T, N>`을 통해 제공되고 텍스처와 마찬가지로 구성 요소가 하나뿐인 요소를 지원하며 보기가 인스턴스화될 때 결정되는 하나의 Mip 맵 수준에 액세스할 수 있습니다. 샘플링은 지원하지 않습니다.
 
-텍스처 보기는 배열 보기와 유사 하지만 제공 하지 않는 자동 데이터 관리 및 이동 기능을 하는 합니다 [array_view 클래스](../../parallel/amp/reference/array-view-class.md) 를 통해 제공 합니다 [array 클래스](../../parallel/amp/reference/array-class.md)합니다. 
-  `texture_view`는 내부 텍스처 데이터가 있는 액셀러레이터 보기에서만 액세스할 수 있습니다.
+텍스처 보기는 배열 보기와 유사 하지만 제공 하지 않는 자동 데이터 관리 및 이동 기능을 하는 합니다 [array_view 클래스](../../parallel/amp/reference/array-view-class.md) 를 통해 제공 합니다 [array 클래스](../../parallel/amp/reference/array-class.md)합니다. `texture_view`는 내부 텍스처 데이터가 있는 액셀러레이터 보기에서만 액세스할 수 있습니다.
 
 ### <a name="writeonlytextureview-deprecated"></a>더 이상 사용되지 않는 writeonly_texture_view
 
-Visual Studio 2013 용 c + + AMP에서는 샘플링 및 mip 맵과에서 지원 되지 않습니다 수와 같은 하드웨어 텍스처 기능에 대 한 더 나은 지원 합니다 [writeonly_texture_view 클래스](../../parallel/amp/reference/writeonly-texture-view-class.md)합니다. 새로 도입된 `texture_view` 클래스는 `writeonly_texture_view`에 있는 기능의 상위 집합을 지원하므로 `writeonly_texture_view`는 더 이상 사용되지 않습니다.
+Visual Studio 2013 용 C++ AMP에서는 샘플링 및 mip 맵과에서 지원 되지 않습니다 수와 같은 하드웨어 텍스처 기능에 대 한 더 나은 지원을 제공 합니다 [writeonly_texture_view 클래스](../../parallel/amp/reference/writeonly-texture-view-class.md)합니다. 새로 도입된 `texture_view` 클래스는 `writeonly_texture_view`에 있는 기능의 상위 집합을 지원하므로 `writeonly_texture_view`는 더 이상 사용되지 않습니다.
 
 따라서 새로 작성하는 코드에서는 이전에 `texture_view`를 통해 제공되었던 기능에 액세스할 때 `writeonly_texture_view`를 사용하는 것이 좋습니다. 구성 요소가 두 개인 텍스처 개체(int_2)에 쓰는 다음 두 코드 예제를 비교해 보십시오. 두 예제 모두에서 `wo_tv4`라는 보기는 람다 식의 값을 통해 캡처되어야 합니다. 다음은 새 `texture_view` 클래스를 사용하는 예제입니다.
 
@@ -316,7 +307,7 @@ void write2ComponentTexture() {
 
 두 예제에서 볼 수 있듯이 기본 Mip 맵 수준에 쓰는 것이 수행하려는 작업의 전부일 때는 두 코드 예제가 거의 동일합니다. 기존 코드에 `writeonly_texture_view`를 사용했고 코드를 더 효율적으로 바꿀 계획이 없는 경우 변경하지 않아도 됩니다. 하지만 코드를 개선하려는 경우에는 새로운 하드웨어 텍스처 기능을 지원하는 향상된 `texture_view`를 사용하도록 코드를 다시 작성하는 것이 좋습니다. 이러한 새로운 기능에 대한 자세한 내용을 보려면 이 문서를 끝까지 읽어보십시오.
 
-사용 중단에 대 한 자세한 내용은 `writeonly_texture_view`를 참조 하세요 [the Texture View Design in c + + AMP 개요](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/25/overview-of-the-texture-view-design-in-c-amp.aspx) Parallel Programming in Native Code 블로그의에서.
+사용 중단에 대 한 자세한 내용은 `writeonly_texture_view`를 참조 하세요 [Texture View Design in 개요 C++ AMP](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/25/overview-of-the-texture-view-design-in-c-amp.aspx) Parallel Programming in Native Code 블로그의에서.
 
 ### <a name="instantiating-texture-view-objects"></a>텍스처 보기 개체 인스턴스화
 
@@ -349,8 +340,7 @@ void declareTextureViews()
 
 요소 형식이 non-const이고 구성 요소가 하나인 텍스처 보기는 읽기-쓰기이지만 요소 형식이 non-const이고 구성 요소가 둘 이상인 텍스처 보기는 쓰기 전용입니다. 요소 형식이 const인 텍스처 보기는 항상 읽기 전용이지만 요소 형식이 non-const인 경우에는 요소에 포함된 구성 요소 수에 따라 읽기-쓰기인지(구성 요소가 1개) 또는 쓰기 전용인지(구성 요소가 여러 개)가 결정됩니다.
 
-
-  `texture_view`의 요소 형식 즉, 텍스처 보기의 상수성과 함께 텍스처 보기의 구성 요소 수는 보기에서 텍스처 샘플링을 지원하는지 여부 및 Mip 맵 수준에 액세스하는 방법을 결정하는 데도 영향을 줍니다.
+`texture_view`의 요소 형식 즉, 텍스처 보기의 상수성과 함께 텍스처 보기의 구성 요소 수는 보기에서 텍스처 샘플링을 지원하는지 여부 및 Mip 맵 수준에 액세스하는 방법을 결정하는 데도 영향을 줍니다.
 
 |형식|구성 요소|읽기|Write|샘플링|Mip 맵 액세스|
 |----------|----------------|----------|-----------|--------------|-------------------|
@@ -389,7 +379,7 @@ void write2ComponentTexture() {
 
 텍스처 보기의 요소가 float, float_2 또는 float_4와 같은 부동 소수점 형식에 기반을 둔 경우 다양한 필터링 모드 및 주소 지정 모드에 대한 하드웨어 지원을 활용하기 위해 텍스처 샘플링을 사용하여 텍스처 보기를 읽을 수 있습니다. C++ AMP에서는 컴퓨팅 시나리오에서 가장 일반적인 두 가지 필터링 모드인 점 필터링(가장 인접한 항목) 및 선형 필터링(가중 평균)과 네 가지 주소 지정 모드인 래핑, 미러링, 고정 및 테두리를 지원합니다. 주소 지정 모드에 대 한 자세한 내용은 참조 하세요. [address_mode 열거형](reference/concurrency-graphics-namespace-enums.md#address_mode)합니다.
 
-C++ AMP에서 직접적으로 지원하는 모드 외에도, Interop API를 통해 플랫폼 API를 직접 사용하여 생성된 텍스처 샘플러를 사용하면 플랫폼의 다른 필터링 모드 및 주소 지정 모드에 액세스할 수 있습니다. 예를 들어 Direct3D는 이방성 필터링과 같은 다른 필터링 모드를 지원하며 텍스처의 각 차원에 서로 다른 주소 지정 모드를 적용할 수 있습니다. Direct3D API를 사용하여 좌표가 세로로 래핑되고 가로로 미러링되며 이방성 필터링을 사용하여 샘플링되는 텍스처 샘플러를 만든 다음 `make_sampler` Interop API를 사용하여 C++ AMP 코드에 이 샘플러를 사용할 수 있습니다. 자세한 내용은 참조 [Texture Sampling in c + + AMP](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/18/texture-sampling-in-c-amp.aspx) Parallel Programming in Native Code 블로그의에 있습니다.
+C++ AMP에서 직접적으로 지원하는 모드 외에도, Interop API를 통해 플랫폼 API를 직접 사용하여 생성된 텍스처 샘플러를 사용하면 플랫폼의 다른 필터링 모드 및 주소 지정 모드에 액세스할 수 있습니다. 예를 들어 Direct3D는 이방성 필터링과 같은 다른 필터링 모드를 지원하며 텍스처의 각 차원에 서로 다른 주소 지정 모드를 적용할 수 있습니다. Direct3D API를 사용하여 좌표가 세로로 래핑되고 가로로 미러링되며 이방성 필터링을 사용하여 샘플링되는 텍스처 샘플러를 만든 다음 `make_sampler` Interop API를 사용하여 C++ AMP 코드에 이 샘플러를 사용할 수 있습니다. 자세한 내용은 참조 [Texture Sampling in C++ AMP](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/18/texture-sampling-in-c-amp.aspx) Parallel Programming in Native Code 블로그의에 있습니다.
 
 텍스처 보기는 Mip 맵 읽기도 지원합니다. 읽기 전용 텍스처 보기(요소 형식이 const인 텍스처 보기)는 동적으로 샘플링 가능한 Mip 맵 수준(보기가 인스턴스화될 때 결정됨)이 광범위하며 구성 요소가 1, 2 또는 4개인 요소를 지원하므로 융통성이 가장 뛰어납니다. 구성 요소가 하나인 요소를 포함하는 읽기-쓰기 텍스처도 Mip 맵을 지원하지만 보기가 인스턴스화될 때 결정되는 수준에 대해서만 지원됩니다. 자세한 내용은 [Texture with Mipmaps](http://blogs.msdn.com/b/nativeconcurrency/archive/2013/08/22/texture-with-mipmaps.aspx) Parallel Programming in Native Code 블로그의에 있습니다.
 
@@ -414,7 +404,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 
 ## <a name="interoperability"></a>상호 운용성
 
-C + + AMP 런타임 간의 상호 운용성을 지원 `texture<T,1>` 하며 [ID3D11Texture1D 인터페이스](http://go.microsoft.com/fwlink/p/?linkId=248503)사이의 `texture<T,2>` 하며 [ID3D11Texture2D 인터페이스](http://go.microsoft.com/fwlink/p/?linkId=255317), 사이`texture<T,3>`하며 [ID3D11Texture3D 인터페이스](http://go.microsoft.com/fwlink/p/?linkId=255377)합니다. 합니다 [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) 메서드를 `texture` 개체를 반환 합니다는 `IUnknown` 인터페이스입니다. 합니다 [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) 메서드는 `IUnknown` 인터페이스와 `accelerator_view` 개체를 반환 합니다를 `texture` 개체입니다.
+C++ AMP 런타임이 간의 상호 운용성을 지원 `texture<T,1>` 하며 [ID3D11Texture1D 인터페이스](http://go.microsoft.com/fwlink/p/?linkId=248503)사이의 `texture<T,2>` 및 [ID3D11Texture2D 인터페이스](http://go.microsoft.com/fwlink/p/?linkId=255317), 사이`texture<T,3>` 하며 [ID3D11Texture3D 인터페이스](http://go.microsoft.com/fwlink/p/?linkId=255377)합니다. 합니다 [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) 메서드를 `texture` 개체를 반환 합니다는 `IUnknown` 인터페이스입니다. 합니다 [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) 메서드는 `IUnknown` 인터페이스와 `accelerator_view` 개체를 반환 합니다를 `texture` 개체입니다.
 
 ## <a name="see-also"></a>참고자료
 

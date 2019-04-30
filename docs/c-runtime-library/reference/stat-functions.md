@@ -107,11 +107,11 @@ helpviewer_keywords:
 - files [C++], getting status information
 ms.assetid: 99a75ae6-ff26-47ad-af70-5ea7e17226a5
 ms.openlocfilehash: d9272cd4596a54a38e1ba21ac92b038c2da0d207
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62354718"
 ---
 # <a name="stat-stat32-stat64-stati64-stat32i64-stat64i32-wstat-wstat32-wstat64-wstati64-wstat32i64-wstat64i32"></a>_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
 
@@ -246,8 +246,8 @@ int _wstat64i32(
 
 |루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|----------------------|
-|**_stat**, **_stat32**합니다 **_stat64**를 **_stati64**를 **_stat32i64**, **_stat64i32**|\<sys/types.h> 다음에 \<sys/stat.h>|\<errno.h>|
-|**_wstat**, **_wstat32**를 **_wstat64**를 **_wstati64**를 **_wstat32i64**, **_wstat64i32**|\<sys/types.h> 다음에 \<sys/stat.h> 또는 \<wchar.h>|\<errno.h>|
+|**_stat**, **_stat32**, **_stat64**, **_stati64**, **_stat32i64**, **_stat64i32**|\<sys/types.h> 다음에 \<sys/stat.h>|\<errno.h>|
+|**_wstat**, **_wstat32**, **_wstat64**, **_wstati64**, **_wstat32i64**, **_wstat64i32**|\<sys/types.h> 다음에 \<sys/stat.h> 또는 \<wchar.h>|\<errno.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

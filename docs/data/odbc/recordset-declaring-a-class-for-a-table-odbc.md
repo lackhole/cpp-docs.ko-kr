@@ -6,11 +6,11 @@ helpviewer_keywords:
 - recordsets, declaring classes for tables
 ms.assetid: 3fe286c2-3f3d-493d-9d8c-762310939d08
 ms.openlocfilehash: 17adc6e26dcbb39453d9009d82843d213271cc78
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59038251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397876"
 ---
 # <a name="recordset-declaring-a-class-for-a-table-odbc"></a>레코드 집합: 테이블 (ODBC)에 대 한 클래스 선언
 
@@ -27,6 +27,6 @@ ms.locfileid: "59038251"
 ## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 만들 레코드 집합 및 닫기 (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)<br/>
-[레코드 집합: 미리 정의 된 쿼리 (ODBC)에 대 한 클래스 선언](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
-[레코드 집합: 조인 수행 (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)
+[레코드 집합 레코드 집합 만들기 및 닫기(ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)<br/>
+[레코드 집합 미리 정의된 쿼리에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
+[레코드 집합 조인 수행(ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)

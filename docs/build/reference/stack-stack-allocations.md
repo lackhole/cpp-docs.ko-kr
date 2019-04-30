@@ -13,11 +13,11 @@ helpviewer_keywords:
 - stack, setting size
 ms.assetid: 73283660-e4bd-47cc-b5ca-04c5d739034c
 ms.openlocfilehash: 27de554e1933b2753f641be358461c8d7ff4fffa
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317928"
 ---
 # <a name="stack-stack-allocations"></a>/STACK(스택 할당)
 
@@ -39,7 +39,7 @@ ms.locfileid: "57813801"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 선택 된 **링커** 폴더입니다.
 
@@ -53,8 +53,7 @@ ms.locfileid: "57813801"
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 
-1. 
-  <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackCommitSize%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackReserveSize%2A> 속성을 참조하십시오.
+1. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackCommitSize%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackReserveSize%2A> 속성을 참조하십시오.
 
 ## <a name="see-also"></a>참고자료
 

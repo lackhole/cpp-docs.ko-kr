@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK4210
 ms.assetid: db48cff8-a2be-4a77-8d03-552b42c228fa
 ms.openlocfilehash: 75376129ce0033c717a4da3074cee9de132d357d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395068"
 ---
 # <a name="linker-tools-warning-lnk4210"></a>링커 도구 경고 LNK4210
 
@@ -37,7 +37,7 @@ ms.locfileid: "57816271"
 
 합니다 [/GS](../../build/reference/gs-buffer-security-check.md) 컴파일러 옵션으로 초기화 작업을 수행 합니다 `__security_init_cookie` 함수입니다. 이 초기화에서 실행 되는 VCRuntime 라이브러리 시작 코드에는 기본적으로 제공 됩니다 `_DllMainCRTStartup`합니다.
 
-- /ENTRY를 사용 하 여 프로젝트를 빌드하고 및 /ENTRY 전달 되는 경우 함수 이외의 `_DllMainCRTStartup`, 함수를 호출 해야 합니다 `_CRT_INIT` CRT를 초기화 합니다. DLL /GS를 사용 하 여 정적 이니셜라이저 등이 필요 하거나 MFC 또는 ATL 코드의 컨텍스트에서 라고 하는 경우에이 호출 만으로 충분 하지 않습니다. 참조 [Dll 및 Visual c + + 런타임 라이브러리 동작](../../build/run-time-library-behavior.md) 자세한 내용은 합니다.
+- /ENTRY를 사용 하 여 프로젝트를 빌드하고 및 /ENTRY 전달 되는 경우 함수 이외의 `_DllMainCRTStartup`, 함수를 호출 해야 합니다 `_CRT_INIT` CRT를 초기화 합니다. DLL /GS를 사용 하 여 정적 이니셜라이저 등이 필요 하거나 MFC 또는 ATL 코드의 컨텍스트에서 라고 하는 경우에이 호출 만으로 충분 하지 않습니다. 참조 [Dll 및 시각적 개체 C++ 런타임 라이브러리 동작](../../build/run-time-library-behavior.md) 에 대 한 자세한 내용은 합니다.
 
 ## <a name="see-also"></a>참고자료
 

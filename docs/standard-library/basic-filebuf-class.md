@@ -41,11 +41,11 @@ helpviewer_keywords:
 - std::basic_filebuf [C++], underflow
 ms.assetid: 3196ba5c-bf38-41bd-9a95-70323ddfca1a
 ms.openlocfilehash: 817e7fb2b434d06d6c0dfdfc100be8004f6fa4ef
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62377154"
 ---
 # <a name="basicfilebuf-class"></a>basic_filebuf 클래스
 
@@ -405,7 +405,7 @@ basic_filebuf<Elem, Tr> *open(
 *_Filename*<br/>
 열어야 할 파일의 이름입니다.
 
-*모드 (_m)*<br/>
+*_Mode*<br/>
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
 *_Prot*<br/>
@@ -433,7 +433,7 @@ basic_filebuf<Elem, Tr> *open(
 
 하는 경우 **mode & ios_base** 는 0이 아닌 경우 함수 추가 `b` 하려면 `strmode` 는 텍스트 스트림 대신 이진 스트림을 열기 위해. 반환한 값 저장 한 다음 `fopen` 파일 포인터의 `fp`합니다. **mode & ios_base::ate**가 0이 아니고 파일 포인터가 null 포인터가 아니면 함수는 스트림을 파일 끝에 두기 위해 `fseek`( **fp**, 0, `SEEK_END`)를 호출합니다. 경우 배치 작업이 실패 하면 함수 호출 [닫습니다](#close)( `fp`) 파일 포인터에 null 포인터를 저장 합니다.
 
-파일 포인터가 null 포인터가 아니면 함수는 [underflow](#underflow) 및 [overflow](#overflow)에서 사용할 파일 변환 패싯 `use_facet`< `codecvt`< **Elem**, `char`, **traits_type::**[state_type](../standard-library/char-traits-struct.md#state_type)> >( [getloc](../standard-library/basic-streambuf-class.md#getloc))를 결정합니다.
+파일 포인터가 null 포인터인 경우 함수가 파일 변환 패싯을 결정 합니다. `use_facet`< `codecvt`< **Elem**, `char`를 **traits_type::**[state_type](../standard-library/char-traits-struct.md#state_type)>> ( [getloc](../standard-library/basic-streambuf-class.md#getloc))를 사용 하 여 [언더플로](#underflow) 및 [오버플로](#overflow)합니다.
 
 파일 포인터가 null 포인터인 경우 함수는 null 포인터를 반환합니다. 아닌 경우 **this**를 반환합니다.
 

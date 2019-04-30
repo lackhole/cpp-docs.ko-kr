@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Windows Sockets [MFC], converting Unicode and MBCS strings
 ms.assetid: 825dae17-7c1b-4b86-8d6c-da7f1afb5d8d
 ms.openlocfilehash: 51274791393d95517bd8de5ae7248dc634018037
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399566"
 ---
 # <a name="windows-sockets-using-class-casyncsocket"></a>Windows 소켓: Casyncsocket 클래스 사용
 
 이 문서에서는 클래스를 사용 하는 방법에 설명 [CAsyncSocket](../mfc/reference/casyncsocket-class.md)합니다. 이 클래스는 매우 낮은 수준의 Windows Sockets API 캡슐화를 알아야 합니다. `CAsyncSocket` 네트워크 통신을 자세히 알고 있어야 하지만 네트워크 이벤트 알림에 대 한 콜백 편리 하 게 하는 프로그래머에 게 사용 됩니다. 이 가정에 따라이 문서에서는 기본 지침만 제공 합니다. 아마도 사용을 고려해 야 있습니다 `CAsyncSocket` Windows 소켓의 MFC 응용 프로그램에서 여러 네트워크 프로토콜을 사용 하 여 처리 편의성 유연성을 희생 하지 않으려는 경우. 클래스의 보다 일반적인 대체 모델에 사용 하 여 없습니다 것 보다 직접 직접 자세한 통신을 프로그래밍 하 여 더 나은 효율성을 가져올 수 있습니다도 수 수 있다고 생각 `CSocket`합니다.
 
-`CAsyncSocket` 에 설명 되어는 *MFC 참조*합니다. Visual c + +에는 또한 Windows SDK에는 Windows Sockets 사양을 제공 합니다. 세부 정보에 남아 있습니다. Visual c + +에 대 한 샘플 응용 프로그램을 제공 하지 않는 `CAsyncSocket`합니다.
+`CAsyncSocket` 에 설명 되어는 *MFC 참조*합니다. Visual C++ Windows SDK에는 Windows Sockets 사양을 제공 합니다. 세부 정보에 남아 있습니다. Visual C++ 에 대 한 샘플 응용 프로그램을 제공 하지 않습니다 `CAsyncSocket`합니다.
 
 클래스를 사용 하 여 네트워크 통신에 대 한 지식이 없는 하는 간단한 솔루션이 필요한 경우 [CSocket](../mfc/reference/csocket-class.md) 사용 하 여를 `CArchive` 개체입니다. 참조 [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../mfc/windows-sockets-using-sockets-with-archives.md) 자세한 내용은 합니다.
 
@@ -89,7 +89,7 @@ ms.locfileid: "57263112"
 
 ##  <a name="_core_your_responsibilities_with_casyncsocket"></a> CAsyncSocket 사용 하 여 사용자의 책임
 
-클래스의 개체를 만들 때 [CAsyncSocket](../mfc/reference/casyncsocket-class.md), 개체를 Windows 캡슐화 **소켓** 처리 하 고 해당 핸들에 대 한 작업을 제공 합니다. 사용 하는 경우 `CAsyncSocket`, 직접 API를 사용 하는 경우 발생할 수 있습니다 하는 모든 문제를 사용 하 여 처리 해야 합니다. 예를 들면,
+클래스의 개체를 만들 때 [CAsyncSocket](../mfc/reference/casyncsocket-class.md), 개체를 Windows 캡슐화 **소켓** 처리 하 고 해당 핸들에 대 한 작업을 제공 합니다. 사용 하는 경우 `CAsyncSocket`, 직접 API를 사용 하는 경우 발생할 수 있습니다 하는 모든 문제를 사용 하 여 처리 해야 합니다. 예를 들어:
 
 - "차단" 시나리오입니다.
 
@@ -105,9 +105,9 @@ ms.locfileid: "57263112"
 
 - [Windows 소켓: 배경](../mfc/windows-sockets-background.md)
 
-- [Windows 소켓: Stream 소켓](../mfc/windows-sockets-stream-sockets.md)
+- [Windows 소켓: 스트림 소켓](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows 소켓: 데이터 그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows 소켓: 데이터그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
 
 ## <a name="see-also"></a>참고자료
 

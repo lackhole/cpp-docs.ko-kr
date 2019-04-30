@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1083
 ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
 ms.openlocfilehash: 522bc4a36be59d4e2c9425e50b1238eb9f4aba61
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368060"
 ---
 # <a name="fatal-error-c1083"></a>심각한 오류 C1083
 
@@ -25,7 +25,7 @@ ms.locfileid: "57822199"
 
 `#include <algorithm.h>`
 
-원하는 파일을 찾을 수 없습니다. 대부분의 c + + 표준 라이브러리 헤더 파일에는.h 파일 확장명이 없습니다. 합니다 \<알고리즘 > 헤더를이 찾을 수 없습니다 `#include` 지시문입니다. 이 문제를 해결 하려면이 예제와 같이 올바른 파일 이름을 입력 되어 있는지 확인 합니다.
+원하는 파일을 찾을 수 없습니다. 대부분의 C++ .h 파일 이름 확장명을 표준 라이브러리 헤더 파일에 없습니다. 합니다 \<알고리즘 > 헤더를이 찾을 수 없습니다 `#include` 지시문입니다. 이 문제를 해결 하려면이 예제와 같이 올바른 파일 이름을 입력 되어 있는지 확인 합니다.
 
 `#include <algorithm>`
 
@@ -45,7 +45,7 @@ ms.locfileid: "57822199"
 
 `#include <stdio.h>`
 
-컴파일러가 빌드 환경에서 정의 된 검색 경로 따릅니다 합니다 **/I** 컴파일러 옵션을 합니다 **/X** 컴파일러 옵션 및 **포함** 환경 변수. 파일을 검색 하는 검색 순서에 대 한 특정 세부 정보를 비롯 한 자세한 내용은 참조 하세요. [#include 지시문 (C/c + +)](../../preprocessor/hash-include-directive-c-cpp.md) 하 고 [#import 지시문](../../preprocessor/hash-import-directive-cpp.md)합니다.
+컴파일러가 빌드 환경에서 정의 된 검색 경로 따릅니다 합니다 **/I** 컴파일러 옵션을 합니다 **/X** 컴파일러 옵션 및 **포함** 환경 변수. 파일을 검색 하는 검색 순서에 대 한 특정 세부 정보를 비롯 한 자세한 내용은 참조 하세요. [#include 지시문 (C /C++)](../../preprocessor/hash-include-directive-c-cpp.md) 하 고 [#import 지시문](../../preprocessor/hash-import-directive-cpp.md)합니다.
 
 Include 파일 원본 디렉터리를 기준으로 다른 디렉터리에 있으며에서 상대 경로 사용 하는 경우에 include 지시문을 꺾쇠 괄호 대신 큰따옴표를 사용 해야 합니다. 예를 들어, 헤더 파일 myheader.h에 헤더 라는 프로젝트 소스가의 하위 디렉터리에 있으면이 예제에서는 파일을 찾지 못하면 고 C1083 하면:
 
@@ -63,7 +63,7 @@ Include 파일 원본 디렉터리를 기준으로 다른 디렉터리에 있으
 
 ## <a name="third-party-library-issues-and-vcpkg"></a>Vcpkg 및 타사 라이브러리 문제
 
-빌드의 일부로 타사 라이브러리를 구성 하려는 경우이 오류를 표시 하는 경우 사용을 고려 [Vcpkg](../../vcpkg.md), Visual c + + 패키지 관리자를 설치 하 여 라이브러리를 빌드합니다. Vcpkg 지 원하는 점점 [타사 라이브러리의 목록](https://github.com/Microsoft/vcpkg/tree/master/ports), 모든 구성 속성 및 프로젝트의 일환으로 빌드가 성공한 경우에 필요한 종속성을 가져오거나 설정 합니다. 자세한 내용은 참조는 관련 [Visual c + + 블로그](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) 게시 합니다.
+빌드의 일부로 타사 라이브러리를 구성 하려는 경우이 오류를 표시 하는 경우 사용을 고려 [Vcpkg](../../vcpkg.md), 시각적 개체 C++ 패키지 관리자를 설치 하 여 라이브러리를 빌드합니다. Vcpkg 지 원하는 점점 [타사 라이브러리의 목록](https://github.com/Microsoft/vcpkg/tree/master/ports), 모든 구성 속성 및 프로젝트의 일환으로 빌드가 성공한 경우에 필요한 종속성을 가져오거나 설정 합니다. 자세한 내용은 참조는 관련 [시각적 C++ 블로그](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) 게시 합니다.
 
 ## <a name="the-file-is-in-your-project-but-not-the-include-search-path"></a>파일이 프로젝트에 있지만 포함 검색 경로
 
@@ -75,7 +75,7 @@ Visual Studio에서 include 디렉터리 경로 설정 하려면 프로젝트를
 
 ## <a name="the-command-line-include-or-lib-environment-is-not-set"></a>명령줄 포함 또는 LIB 환경 설정 되지 않은 경우
 
-명령줄에서 컴파일러를 호출하는 경우 대체로 환경 변수를 사용하여 검색 경로를 지정합니다. 설명 하는 검색 경로 **INCLUDE** 또는 **LIB** 환경 변수가 올바르게 설정 되지 않았습니다, C1083 오류가 생성 될 수 있습니다. 기본 명령줄 환경을 설정 하려면 개발자 명령 프롬프트 바로 가기를 사용 하 여 작성 하는 것이 좋습니다. 자세한 내용은 [빌드 C/c + + 명령줄에서](../../build/building-on-the-command-line.md)합니다. 환경 변수를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 환경 변수를 사용 하 여 빌드에서](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build)합니다.
+명령줄에서 컴파일러를 호출하는 경우 대체로 환경 변수를 사용하여 검색 경로를 지정합니다. 설명 하는 검색 경로 **INCLUDE** 또는 **LIB** 환경 변수가 올바르게 설정 되지 않았습니다, C1083 오류가 생성 될 수 있습니다. 기본 명령줄 환경을 설정 하려면 개발자 명령 프롬프트 바로 가기를 사용 하 여 작성 하는 것이 좋습니다. 자세한 내용은 [C 빌드 /C++ 명령줄에서](../../build/building-on-the-command-line.md)합니다. 환경 변수를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 환경 변수를 사용 하 여 빌드에서](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build)합니다.
 
 ## <a name="the-file-may-be-locked-or-in-use"></a>파일이 잠겨 있거나 사용 중
 
@@ -116,7 +116,7 @@ C1083 오류가 잘못된 버전의 파일이 포함되었음을 나타낼 수�
 #include "stdio.h"  // OK
 ```
 
-IDE 또는 명령줄에서 C/c + + 프로젝트를 빌드하는 방법에 대 한 정보 및 환경 변수를 설정 하는 방법에 대 한 정보를 참조 하세요 [프로젝트 및 빌드 시스템](../../build/projects-and-build-systems-cpp.md)입니다.
+C를 빌드하는 방법에 대 한 내용은 /C++ 프로젝트 IDE 또는 명령줄 및 환경 변수를 설정 하 고에 대 한 정보를 참조 하세요 [프로젝트 및 빌드 시스템](../../build/projects-and-build-systems-cpp.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

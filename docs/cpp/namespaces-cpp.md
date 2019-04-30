@@ -12,11 +12,11 @@ helpviewer_keywords:
 - Visual C++, namespaces
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188
 ms.openlocfilehash: 532fdcb5de179bd2fdeb25091ace7210d55a2658
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508851"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345912"
 ---
 # <a name="namespaces-c"></a>네임스페이스 (C++)
 
@@ -128,7 +128,7 @@ namespace V {
 
 ## <a name="the-std-namespace"></a>std 네임스페이스
 
-모든 c + + 표준 라이브러리 형식 및 함수에서 선언 되는 `std` 네임 스페이스 또는 네임 스페이스 내에 중첩 된 `std`합니다.
+모든 C++ 표준 라이브러리 형식 및 함수에서 선언 되는 `std` 네임 스페이스 또는 네임 스페이스 내에 중첩 `std`합니다.
 
 ## <a name="nested-namespaces"></a>중첩된 네임스페이스
 

@@ -52,11 +52,11 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 ms.assetid: 4d0000d3-68ff-4c4b-8157-7060540136f5
 ms.openlocfilehash: ed5e190f0c64aca3876d1cd1f05c9d75224355cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384766"
 ---
 # <a name="priorityqueue-stlclr"></a>priority_queue(STL/CLR)
 
@@ -701,7 +701,7 @@ template<typename InIt>
 
 #### <a name="parameters"></a>매개 변수
 
-*계속*<br/>
+*cont*<br/>
 복사할 컨테이너입니다.
 
 *first*<br/>

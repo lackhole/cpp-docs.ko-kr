@@ -23,11 +23,11 @@ helpviewer_keywords:
 - _CrtMemDifference function
 ms.assetid: 0f327278-b551-482f-958b-76941f796ba4
 ms.openlocfilehash: f2c6306bf604737d0ace142674b21845a08e2dee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339470"
 ---
 # <a name="crtmemdifference"></a>_CrtMemDifference
 
@@ -78,7 +78,7 @@ int _CrtMemDifference(
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-**라이브러리:** 디버그 버전의 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)만 해당합니다.
+**라이브러리:** 디버그 버전 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md) 만 합니다.
 
 ## <a name="see-also"></a>참고자료
 

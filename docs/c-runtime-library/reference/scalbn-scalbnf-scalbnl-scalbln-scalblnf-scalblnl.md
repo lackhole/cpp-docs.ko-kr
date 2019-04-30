@@ -37,11 +37,11 @@ helpviewer_keywords:
 - scalblnf function
 ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d
 ms.openlocfilehash: 7109340afaa634fc21177380d015c9eace506081
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357163"
 ---
 # <a name="scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl"></a>scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 
@@ -110,13 +110,13 @@ long double scalblnl(
 
 **FLT_RADIX** 에 정의 된 \<float.h >에 네이티브 부동 소수점 radix로 이진 시스템에서는 값이 2, 및 **scalbn** 동일 [ldexp](ldexp.md)합니다.
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **scalbn** 하 고 **scalbln** 및 반환 하는 **float** 하거나 **긴** **이중** 형식입니다. C 프로그램에서 **scalbn** 는 항상 사용을 **double** 및 **int** 반환을 **double**, 및 **scalbln**항상 사용을 **double** 및 **긴** 반환 하 고는 **double**.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **scalbn** 하 고 **scalbln** 및 반환 하는 **float** 또는 **긴** **이중** 형식입니다. C 프로그램에서 **scalbn** 는 항상 사용을 **double** 및 **int** 반환을 **double**, 및 **scalbln**항상 사용을 **double** 및 **긴** 반환 하 고는 **double**.
 
 ## <a name="requirements"></a>요구 사항
 
 |기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**scalbn**, **scalbnf**합니다 **scalbnl**를 **scalbln**를 **scalblnf**, **scalblnl**|\<math.h>|\<cmath>|
+|**scalbn**, **scalbnf**, **scalbnl**, **scalbln**, **scalblnf**, **scalblnl**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

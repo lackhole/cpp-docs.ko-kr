@@ -23,11 +23,11 @@ helpviewer_keywords:
 - abort function
 - processes, aborting
 ms.openlocfilehash: d8cb190e36a64e8bd8cfcb75bc9a19c2a394fc48
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62342200"
 ---
 # <a name="abort"></a>abort
 
@@ -50,13 +50,13 @@ void abort( void );
 
 **Microsoft 전용**
 
-기본적으로 디버그 런타임 라이브러리를 사용 하 여 앱을 빌드하면 합니다 **중단** 하기 전에 오류 메시지를 표시 하는 루틴 `SIGABRT` 발생 합니다. 콘솔 모드에서 실행되는 콘솔 앱에 대해서는 메시지가 `STDERR`로 전송됩니다. 창 모드에서 실행되는 Windows 데스크톱 앱 및 콘솔 앱은 메시지 상자에 메시지를 표시합니다. 메시지를 표시하지 않으려면 [_set_abort_behavior](set-abort-behavior.md)를 사용하여 `_WRITE_ABORT_MSG` 플래그를 지웁니다. 표시되는 메시지는 사용 중인 런타임 환경 버전에 따라 달라집니다. Visual c + +의 최신 버전을 사용 하 여 빌드된 응용 프로그램에 대 한 메시지는 다음과 같습니다.
+기본적으로 디버그 런타임 라이브러리를 사용 하 여 앱을 빌드하면 합니다 **중단** 하기 전에 오류 메시지를 표시 하는 루틴 `SIGABRT` 발생 합니다. 콘솔 모드에서 실행되는 콘솔 앱에 대해서는 메시지가 `STDERR`로 전송됩니다. 창 모드에서 실행되는 Windows 데스크톱 앱 및 콘솔 앱은 메시지 상자에 메시지를 표시합니다. 메시지를 표시하지 않으려면 [_set_abort_behavior](set-abort-behavior.md)를 사용하여 `_WRITE_ABORT_MSG` 플래그를 지웁니다. 표시되는 메시지는 사용 중인 런타임 환경 버전에 따라 달라집니다. 시각적 개체의 최신 버전을 사용 하 여 빌드한 응용 프로그램에 대 한 C++, 메시지는 다음과:
 
 > R6010-abort ()는 호출한.
 
 C 런타임 라이브러리의 이전 버전에서는 다음과 같은 메시지가 표시됐습니다.
 
-> 이 응용 프로그램에서 비정상적인 종료를 런타임에 요청했습니다. 자세한 내용은 해당 응용 프로그램의 지원 팀에 문의하세요.
+> 이 응용 프로그램에서 비정상적인 종료를 런타임에 요청했습니다. 자세한 내용은 해당 응용 프로그램의 지원 팀에 문의하십시오.
 
 디버그 모드에서 프로그램을 컴파일하면 메시지 상자에 **중단**, **다시 시도** 또는 **무시** 옵션이 표시됩니다. 사용자가 **중단**을 선택하면 프로그램이 즉시 종료되고 종료 코드 3이 반환됩니다. 사용자가 **다시 시도**를 선택하면 사용 가능한 경우 Just-In-Time 디버깅을 위해 디버거가 호출됩니다. 사용자가 선택 하는 경우 **무시**하십시오 **중단** 정상적인 처리를 계속 합니다.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - random header
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
 ms.openlocfilehash: 5b246be02c860ede6691db1c4d21af7e6b4da26a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369815"
 ---
 # <a name="ltrandomgt"></a>&lt;random&gt;
 
@@ -47,7 +47,7 @@ ms.locfileid: "50511854"
 
 - 여러 엔진의 [미리 정의된 typedef](#typedefs)가 제공됩니다. 이는 엔진이 사용 중인 경우 URNG를 생성하는 기본 방법입니다.
 
-- 대부분의 응용 프로그램의 경우 가장 유용한 연결은 이 문서 뒷부분의 [코드 예제](#code)에 나와 있는 `uniform_int_distribution`을 사용하는 `mt19937` 엔진입니다.
+- 대부분의 애플리케이션의 경우 가장 유용한 연결은 이 문서 뒷부분의 [코드 예제](#code)에 나와 있는 `uniform_int_distribution`을 사용하는 `mt19937` 엔진입니다.
 
 선택 하는 방법은 여러 가지는 \<임의 > 헤더 및 그 중 하나 보다 오래 된 C 런타임 함수가 적합 `rand()`합니다. 무엇이 잘못 된에 대 한 자세한 `rand()` 방법과 \<임의 > 이러한 문제를 해결 참조 [이 비디오](http://go.microsoft.com/fwlink/p/?linkid=397615)합니다.
 
@@ -212,11 +212,11 @@ Randomized array: Si C Sc H Na O S Cr K Li Al Ti Cl B Mn He Fe Ne Be Ar V P Ca N
 
 URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
-1. **기간의 길이**: 생성된 숫자 시퀀스를 반복하는 데 걸리는 반복 횟수입니다. 길수록 좋습니다.
+1. **기간의 길이**: 생성 된 숫자 시퀀스를 반복 하는 데 걸리는 반복 횟수입니다. 길수록 좋습니다.
 
-2. **성능**: 숫자를 빠르게 생성할 수 있는 속도와 이때 사용되는 메모리의 양입니다. 작을수록 좋습니다.
+2. **성능**: 숫자를 생성할 수 있는 속도 및 메모리 양을 걸립니다. 작을수록 좋습니다.
 
-3. **품질**: 생성된 시퀀스가 실제 난수에 얼마나 가까운지입니다. 이를 대개 "*임의성*"이라고 합니다.
+3. **품질**: 생성 된 시퀀스가 실제 난수에 가까운 방법입니다. 이를 대개 "*임의성*"이라고 합니다.
 
 다음 섹션에서는 목록 균일 난수 생성기 (Urng)에서 제공 되는 \<임의 > 헤더입니다.
 

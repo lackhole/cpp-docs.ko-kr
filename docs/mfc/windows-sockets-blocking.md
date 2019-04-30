@@ -9,11 +9,11 @@ helpviewer_keywords:
 - blocking mode sockets
 ms.assetid: 10aca9b1-bfba-41a8-9c55-ea8082181e63
 ms.openlocfilehash: 26a361bc63da5f6e75144cc91fe837498a7f656b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371966"
 ---
 # <a name="windows-sockets-blocking"></a>Windows 소켓: 차단
 
@@ -40,15 +40,15 @@ Windows에서 차단 호출은 좋지 않은 방법으로 고려됩니다. 기�
 
 자세한 내용은 다음을 참조하세요.
 
-- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows 소켓: 소켓을 사용 하 여 아카이브를 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows 소켓: 소켓과 아카이브 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
 
 - [Windows 소켓: 배경](../mfc/windows-sockets-background.md)
 
-- [Windows 소켓: Stream 소켓](../mfc/windows-sockets-stream-sockets.md)
+- [Windows 소켓: 스트림 소켓](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows 소켓: 데이터 그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows 소켓: 데이터그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
 
 ## <a name="see-also"></a>참고자료
 

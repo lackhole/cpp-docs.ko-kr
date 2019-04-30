@@ -30,11 +30,11 @@ helpviewer_keywords:
 - arcsine function
 ms.assetid: ca05f9ea-b711-49f6-9f32-2f4019abfd69
 ms.openlocfilehash: 20a2ffc37ea666207b9558cb5c282c414cfd4838
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347966"
 ---
 # <a name="asin-asinf-asinl"></a>asin, asinf, asinl
 
@@ -66,19 +66,19 @@ long double asin( long double x );  // C++ only
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|± ∞|**올바르지 않음**|**(_D)**|
-|**QNAN**, **찾기**|없음|**(_D)**|
-|&#124;x&#124;>1|**올바르지 않음**|**(_D)**|
+|± ∞|**INVALID**|**_DOMAIN**|
+|± **QNAN**, **IND**|없음|**_DOMAIN**|
+|&#124;x&#124;>1|**INVALID**|**_DOMAIN**|
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **asin** 사용 하 여 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **asin** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **asin** 사용 하 여 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **asin** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C++)|
 |-------------|---------------------|-|
-|**asin**하십시오 **asinf**, **asinl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**asin**, **asinf**, **asinl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 ## <a name="example"></a>예제
 

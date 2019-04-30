@@ -8,11 +8,11 @@ helpviewer_keywords:
 - project files [C++], Makefile projects
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
 ms.openlocfilehash: 9c2edfe35233672e8117d336ba40cfea497b1a22
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272349"
 ---
 # <a name="create-a-c-makefile-project"></a>만들기는 C++ 메이크파일 프로젝트
 
@@ -58,7 +58,7 @@ Visual Studio 2017 이상에서 메이크파일 프로젝트 템플릿은 C++ �
 
 특정 프로젝트 설정이 나 컴파일러 옵션은 잘못 설정 하는 경우 IntelliSense 메이크파일 프로젝트에 실패 합니다. IntelliSense는 예상 대로 작동할 수 있도록 메이크파일 프로젝트를 구성 하려면 다음이 단계를 수행 합니다.
 
-1. **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **구성 속성** 노드를 확장합니다.
 

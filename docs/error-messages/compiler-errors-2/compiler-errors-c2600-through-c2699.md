@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 오류 C2600 ~ C2699
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C2604
 - C2606
@@ -52,12 +52,12 @@ helpviewer_keywords:
 - C2686
 - C2697
 ms.assetid: 73c6319f-cbea-4a2f-913b-90dc1af61f64
-ms.openlocfilehash: af173a04f9ae1e8a3ec4c9b3c869a4e51867cf1b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 9ac5f5724490574aecf0e5b542f6fdd42b0ae5bb
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406511"
 ---
 # <a name="compiler-errors-c2600-through-c2699"></a>컴파일러 오류 C2600 ~ C2699
 
@@ -72,8 +72,8 @@ ms.locfileid: "50518653"
 |[컴파일러 오류 C2600](compiler-error-c2600.md)|'*함수*': 컴파일러 생성 특수 멤버 함수 (선언 해야 클래스에서 먼저)를 정의할 수 없습니다|
 |[컴파일러 오류 C2601](compiler-error-c2601.md)|'*함수*': 지역 함수 정의가 올바르지 않습니다.|
 |[컴파일러 오류 C2602](compiler-error-c2602.md)|'*클래스*::*식별자*'의 기본 클래스의 구성원이 아닌'*클래스*'|
-|[컴파일러 오류 C2603](compiler-error-c2603.md)|'*함수*': 생성자/소멸자 함수에서 사용 하 여 너무 많은 블록 범위 정적 개체|
-|컴파일러 오류 C2604|'*식별자*': 둘 이상의 인터페이스 메서드를 구현할 수 없습니다.|
+|[컴파일러 오류 C2603](compiler-error-c2603.md)|'*function*': 생성자/소멸자 함수에서 사용 하 여 너무 많은 블록 범위 정적 개체|
+|컴파일러 오류 C2604|'*identifier*': 둘 이상의 인터페이스 메서드를 구현할 수 없습니다.|
 |[컴파일러 오류 C2605](compiler-error-c2605.md)|'*식별자*':이 메서드는 관리 되는 WinRT 클래스 내에서 예약 된|
 |컴파일러 오류 C2606|'*class1*': 다시 구현할 수 없습니다. '*멤버*'처럼 런타임 기본에서 상속 된'*class2*'|
 |컴파일러 오류 C2607|정적 어설션이 실패 했습니다|
@@ -133,7 +133,7 @@ ms.locfileid: "50518653"
 |[컴파일러 오류 C2661](compiler-error-c2661.md)|'*함수*': 오버 로드 된 함수가 사용 *번호* 인수|
 |[컴파일러 오류 C2662](compiler-error-c2662.md)|'*함수*': 'this'이 포인터를 변환할 수 없습니다 '*type1*'to'*type2*'|
 |[컴파일러 오류 C2663](compiler-error-c2663.md)|'*함수*': *번호* 오버 로드에는 'this'이 포인터에 대 한 변환이 잘못 되었습니다|
-|[컴파일러 오류 C2664](compiler-error-c2664.md)|'*함수*': 인수를 변환할 수 없습니다 *번호* 에서 '*type1*'to'*type2*'|
+|[컴파일러 오류 c2664가](compiler-error-c2664.md)|'*함수*': 인수를 변환할 수 없습니다 *번호* 에서 '*type1*'to'*type2*'|
 |[컴파일러 오류 C2665](compiler-error-c2665.md)|'*함수*': 하나도 합니다 *번호* 오버 로드는 모든 인수 형식을 변환할 수 없습니다|
 |[컴파일러 오류 C2666](compiler-error-c2666.md)|'*함수*': *번호* 오버 로드에 비슷한 변환이 적용|
 |[컴파일러 오류 C2667](compiler-error-c2667.md)|'*함수*': 하나도 *번호* 오버 로드에 최적의 변환이 없습니다.|
@@ -168,3 +168,8 @@ ms.locfileid: "50518653"
 |[컴파일러 오류 C2696](compiler-error-c2696.md)|관리 되는 WinRT 형식의 임시 개체를 만들 수 없습니다. '*형식*'|
 |컴파일러 오류 C2697|사용되지 않습니다.|
 |[컴파일러 오류 C2698](compiler-error-c2698.md)|에 대 한를 사용 하 여 선언 '*declaration1*'공존할 수 없습니다는 기존 using 선언에 대 한'*declaration2*'|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

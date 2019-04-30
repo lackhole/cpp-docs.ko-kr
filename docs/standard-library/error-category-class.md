@@ -17,11 +17,11 @@ helpviewer_keywords:
 - std::error_category::name
 ms.assetid: e0a71e14-852d-4905-acd6-5f8ed426706d
 ms.openlocfilehash: 55ff55b2026b741a2b7062d815fe43d6d19b078b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413712"
 ---
 # <a name="errorcategory-class"></a>error_category 클래스
 
@@ -104,7 +104,7 @@ virtual bool equivalent(const error_code& _Code,
 |---------------|-----------------|
 |*_Errval*|비교할 오류 코드 값입니다.|
 |*_Cond*|비교할 [error_condition](../standard-library/error-condition-class.md) 개체입니다.|
-|*(_C)*|비교할 [error_code](../standard-library/error-code-class.md) 개체입니다.|
+|*_Code*|비교할 [error_code](../standard-library/error-code-class.md) 개체입니다.|
 
 ### <a name="return-value"></a>반환 값
 

@@ -19,11 +19,11 @@ helpviewer_keywords:
 - database connections [C++], MFC ODBC classes
 ms.assetid: c0adbcdd-c000-40c6-b199-09ffdc7b6ef2
 ms.openlocfilehash: 5b646ca0eb86d3addabaad59ca23f56cfe914114
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395952"
 ---
 # <a name="data-source-managing-connections-odbc"></a>데이터 소스: 연결 관리 (ODBC)
 
@@ -139,5 +139,5 @@ ODBC 관리자를 사용 하 여 데이터 원본을 구성 합니다. 데이터
 ## <a name="see-also"></a>참고자료
 
 [데이터 소스(ODBC)](../../data/odbc/data-source-odbc.md)<br/>
-[데이터 소스: 데이터 원본 (ODBC)의 스키마를 결정합니다.](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)<br/>
+[데이터 소스: 데이터 소스의 스키마 확인(ODBC)](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)<br/>
 [CRecordset 클래스](../../mfc/reference/crecordset-class.md)

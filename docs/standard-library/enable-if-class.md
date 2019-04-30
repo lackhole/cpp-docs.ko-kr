@@ -8,11 +8,11 @@ helpviewer_keywords:
 - enable_if
 ms.assetid: c6b8d41c-a18f-4e30-a39e-b3aa0e8fd926
 ms.openlocfilehash: b6990dba20643b35dde36a492d40c3e3e76ae0b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413764"
 ---
 # <a name="enableif-class"></a>enable_if 클래스
 
@@ -64,7 +64,7 @@ yourfunction(args) {// ...
 }
 ```
 
-- 시나리오 2: 기본 인수가 있는 함수 매개 변수 추가:
+- 시나리오 2: 기본 인수가 있는 함수 매개 변수를 추가 합니다.
 
 ```cpp
     template <your_stuff>
@@ -73,14 +73,14 @@ your_return_type_if_present
 }
 ```
 
-- 시나리오 3: 기본 인수가 있는 템플릿 매개 변수 추가:
+- 시나리오 3: 기본 인수가 있는 템플릿 매개 변수를 추가 합니다.
 
 ```cpp
     template <your_stuff, typename Dummy = enable_if_t<your_condition>>
 rest_of_function_declaration_goes_here
 ```
 
-- 시나리오 4: 함수에 템플릿이 아닌 인수가 있는 경우 해당 인수의 형식을 래핑할 수 있음:
+- 시나리오 4: 함수는 템플릿이 아닌 인수가 있으면 해당 형식을 래핑할 수 있습니다.
 
 ```cpp
     template <typename T>

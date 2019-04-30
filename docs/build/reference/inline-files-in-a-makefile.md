@@ -9,11 +9,11 @@ helpviewer_keywords:
 - files [C++], inline
 ms.assetid: ff48a64f-773d-410c-9726-f867ad4c8030
 ms.openlocfilehash: cb04848a82a7074d9626a2d6dc0f5771414efb87
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62269885"
 ---
 # <a name="inline-files-in-a-makefile"></a>메이크파일의 인라인 파일
 

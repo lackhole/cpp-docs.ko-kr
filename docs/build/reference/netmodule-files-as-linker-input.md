@@ -8,19 +8,19 @@ helpviewer_keywords:
 - modules, Visual C++
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
 ms.openlocfilehash: fcba363cff567c69ac0fbd0a541953dfe2c8e910
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320671"
 ---
 # <a name="netmodule-files-as-linker-input"></a>링커 입력 파일로 사용하는 .netmodule 파일
 
 link.exe에서는 이제 MSIL .obj 및 .netmodules가 입력으로 사용됩니다. 링커에 의해 생성 된 출력 파일이 의존 하지 않는 런타임.obj 또는 링커에 입력 된.netmodules에.netmodule 또는 어셈블리.
 
-.netmodules MSVC 컴파일러에 의해 만들어집니다 [/LN (MSIL 모듈 만들기)](ln-create-msil-module.md) 또는 사용 하 여 링커에 의해 [/NOASSEMBLY (MSIL 모듈 만들기)](noassembly-create-a-msil-module.md)합니다. 컴파일한 후.objs Visual c + + 컴파일에서 항상 만들어집니다. 다른 Visual Studio 컴파일러를 사용 합니다 **/target: module** 컴파일러 옵션입니다.
+.netmodules MSVC 컴파일러에 의해 만들어집니다 [/LN (MSIL 모듈 만들기)](ln-create-msil-module.md) 또는 사용 하 여 링커에 의해 [/NOASSEMBLY (MSIL 모듈 만들기)](noassembly-create-a-msil-module.md)합니다. 컴파일한 후.objs 시각적 개체에서 항상 생성 됩니다 C++ 컴파일. 다른 Visual Studio 컴파일러를 사용 합니다 **/target: module** 컴파일러 옵션입니다.
 
-에 전달 해야 링커.obj 파일 Visual c + + 컴파일에서.netmodule를 생성 합니다. .Netmodule를 전달 하기 때문에 더 이상 지원 되지 합니다 **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않는 합니다.
+에 전달 해야 링커.obj 파일에서에서 C++ 컴파일.netmodule를 생성 합니다. .Netmodule를 전달 하기 때문에 더 이상 지원 되지 합니다 **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않는 합니다.
 
 명령줄에서 링커를 실행 하는 방법에 대 한 자세한 내용은 [링커 명령줄 구문](linking.md)를 [명령줄에서 MSVC 도구 집합을 사용 하 여](../building-on-the-command-line.md), 및 [경로 및 환경 변수 설정 명령줄 빌드에 대 한](../setting-the-path-and-environment-variables-for-command-line-builds.md)합니다.
 
@@ -42,7 +42,7 @@ MSIL 링크를 수행 하는 경우 및도 지정 하지 않는 경우 [/LTCG (�
 
 ## <a name="example"></a>예제
 
-C + + 코드에서를 **catch** 는 해당 블록 **시도** 비 시스템 예외에 대해 호출 됩니다. 그러나 기본적으로 CLR 예외를 래핑합니다 비시스템와 <xref:System.Runtime.CompilerServices.RuntimeWrappedException>합니다. 경우 어셈블리는 Visual c + + 및 비-Visual c + + 모듈에서 생성 되 고 원하는 **catch** c + + 코드에서 해당 호출에서 차단 **시도** 절 때는 **시도**비시스템 예외를 throw 하는 블록을 추가 해야 합니다 `[assembly:System::Runtime::CompilerServices::RuntimeCompatibility(WrapNonExceptionThrows=false)]` 아닌 c + + 모듈에 대 한 소스 코드에 특성입니다.
+C++ 코드를 **catch** 는 해당 블록 **시도** 비 시스템 예외에 대해 호출 됩니다. 그러나 기본적으로 CLR 예외를 래핑합니다 비시스템와 <xref:System.Runtime.CompilerServices.RuntimeWrappedException>합니다. 시각적 개체에서 어셈블리가 만들어질 때 C++ 및 비 가시적 C++ 모듈을 하려면를 **catch** 블록 C++ 해당에서 호출할 코드 **시도** 절 때 합니다 **시도** 비시스템 예외를 throw 하는 블록을 추가 해야 합니다 `[assembly:System::Runtime::CompilerServices::RuntimeCompatibility(WrapNonExceptionThrows=false)]` 하지 않은 항목에 대 한 소스 코드에 특성 C++ 모듈입니다.
 
 ```cpp
 // MSIL_linking.cpp
@@ -69,7 +69,7 @@ int main() {
 
 ## <a name="example"></a>예제
 
-부울 값을 변경 하 여는 `WrapNonExceptionThrows` Visual c + + 코드의 비시스템 예외를 catch 하는 기능을 수정할 특성입니다.
+부울 값을 변경 하 여는 `WrapNonExceptionThrows` 특성을 시각적 개체의 기능을 수정 하면 C++ 비시스템 예외를 catch 하는 코드입니다.
 
 ```cpp
 // MSIL_linking_2.cs

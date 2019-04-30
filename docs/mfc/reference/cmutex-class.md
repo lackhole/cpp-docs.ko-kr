@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CMutex [MFC], CMutex
 ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1
 ms.openlocfilehash: f85e562af9d048503be20d1ab5d219fe8d2d039f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62373650"
 ---
 # <a name="cmutex-class"></a>CMutex 클래스
 
@@ -74,8 +74,7 @@ CMutex(
 지정 하는 경우 스레드 만들기는 `CMutex` 개체 처음 뮤텍스에 의해 제어 되는 리소스에 액세스할 수 있습니다.
 
 *lpszName*<br/>
-
-  `CMutex` 개체의 이름입니다. 동일한 이름의 다른 뮤텍스 있으면 *lpszName* 프로세스 경계를 넘어 개체를 사용할 경우 제공 해야 합니다. 하는 경우 **NULL**, 뮤텍스 명명 되지 것입니다. 생성자는 새 빌드를 기존 뮤텍스 이름 일치 하는 경우 `CMutex` 해당 이름의 뮤텍스를 참조 하는 개체입니다. 이름이 일치 뮤텍스 없는 기존 동기화 개체를 생성 하지 못합니다.
+`CMutex` 개체의 이름입니다. 동일한 이름의 다른 뮤텍스 있으면 *lpszName* 프로세스 경계를 넘어 개체를 사용할 경우 제공 해야 합니다. 하는 경우 **NULL**, 뮤텍스 명명 되지 것입니다. 생성자는 새 빌드를 기존 뮤텍스 이름 일치 하는 경우 `CMutex` 해당 이름의 뮤텍스를 참조 하는 개체입니다. 이름이 일치 뮤텍스 없는 기존 동기화 개체를 생성 하지 못합니다.
 
 *lpsaAttribute*<br/>
 뮤텍스 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.

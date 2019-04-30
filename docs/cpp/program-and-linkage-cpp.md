@@ -1,17 +1,17 @@
 ---
-title: 프로그램 및 링크 (c + +)
+title: 프로그램 및 링크 (C++)
 ms.date: 04/09/2018
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
 ms.openlocfilehash: 4f509979a293f194333e610fbdae7be9d32ec121
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301515"
 ---
 # <a name="program-and-linkage-c"></a>프로그램 및 링크 (C++)
 
-C + + 프로그램에서 한 *기호*, 예를 들어 변수 또는 함수 이름을 선언할 수 해당 범위 내에서 원하는 만큼 있지만 한 번 정의할만 있습니다. 이 하나의 정의 규칙 (ODR)입니다. A *선언* 소개 (또는 다시 도입 되었습니다) 프로그램에는 이름입니다. A *정의* 이름을 소개 하 고 변수를 명시적으로 초기화 합니다. A *함수 정의* 서명을 plus 함수 본문으로 구성 됩니다.
+에 C++ 프로그램을 *기호*, 예를 들어 변수 또는 함수 이름을 선언할 수 해당 범위 내에서 원하는 만큼 있지만 한 번 정의할만 있습니다. 이 하나의 정의 규칙 (ODR)입니다. A *선언* 소개 (또는 다시 도입 되었습니다) 프로그램에는 이름입니다. A *정의* 이름을 소개 하 고 변수를 명시적으로 초기화 합니다. A *함수 정의* 서명을 plus 함수 본문으로 구성 됩니다.
 
 다음은 선언입니다.
 

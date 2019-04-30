@@ -36,11 +36,11 @@ helpviewer_keywords:
 - _gettc_nolock function
 ms.assetid: eb37b272-e177-41c9-b077-12ce7ffd3b88
 ms.openlocfilehash: 82c7e1f44dc3177985560319067f9114964218bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287510"
 ---
 # <a name="getcnolock-getwcnolock"></a>_getc_nolock, _getwc_nolock
 
@@ -59,7 +59,7 @@ wint_t _getwc_nolock(
 
 ### <a name="parameters"></a>매개 변수
 
-*스트림*<br/>
+*stream*<br/>
 입력 스트림입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -68,7 +68,7 @@ wint_t _getwc_nolock(
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 동일 **getc** 하 고 **getwc** 는 호출 스레드를 잠그지 않는다는 점을 제외 하 고 있습니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+이러한 함수는 동일 **getc** 하 고 **getwc** 는 호출 스레드를 잠그지 않는다는 점을 제외 하 고 있습니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 

@@ -43,18 +43,18 @@ helpviewer_keywords:
 - istlegal_l function
 ms.assetid: 31bf1ea5-b56f-4e28-b21e-b49a2cf93ffc
 ms.openlocfilehash: 07855ec970b2bf307238982987912f1e91505e96
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62286834"
 ---
 # <a name="ismbclegal-ismbclegall-ismbcsymbol-ismbcsymboll"></a>_ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l
 
 멀티바이트 문자가 올바른 문자인지 기호 문자인지를 확인합니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 

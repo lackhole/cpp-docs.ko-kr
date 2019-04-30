@@ -28,11 +28,11 @@ helpviewer_keywords:
 - expm1 function
 ms.assetid: 2a4dd2d9-370c-42b0-9067-0625efa272e0
 ms.openlocfilehash: 5971f879ecef7d4fa1027849cc44d598e877b5f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334985"
 ---
 # <a name="expm1-expm1f-expm1l"></a>expm1, expm1f, expm1l
 
@@ -69,13 +69,13 @@ long double expm1l(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **expm1** 및 반환 하는 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **expm1** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **expm1** 및 반환 하는 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **expm1** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**expm1**하십시오 **expm1f**, **expm1l**|\<math.h>|
+|**expm1**, **expm1f**, **expm1l**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

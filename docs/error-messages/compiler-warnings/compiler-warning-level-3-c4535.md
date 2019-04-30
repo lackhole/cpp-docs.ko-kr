@@ -7,15 +7,15 @@ helpviewer_keywords:
 - C4535
 ms.assetid: 2c5ad1aa-2558-41d1-8f06-47fef74c8d9b
 ms.openlocfilehash: 2483e5803c5de7d63bd2fa9fed97730b7c894137
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401867"
 ---
 # <a name="compiler-warning-level-3-c4535"></a>컴파일러 경고(수준 3) C4535
 
-호출 _set_se_translator /EHa 필요
+calling _set_se_translator() requires /EHa
 
 사용 [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) 필요 합니다 [/EHa](../../build/reference/eh-exception-handling-model.md) 컴파일러 옵션 및 not **/EHs**합니다.
 

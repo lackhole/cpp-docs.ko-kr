@@ -7,11 +7,11 @@ helpviewer_keywords:
 - metadata, getting (OLE DB Templates)
 ms.assetid: 6b448461-82fb-4acf-816b-3cbb0ca1d186
 ms.openlocfilehash: 12c3de79626411b76a402a7f5407f40a7b054318
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387567"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>스키마 행 집합을 사용하여 메타데이터 구하기
 

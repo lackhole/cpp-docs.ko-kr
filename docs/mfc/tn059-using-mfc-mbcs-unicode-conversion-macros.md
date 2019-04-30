@@ -14,11 +14,11 @@ helpviewer_keywords:
 - TN059
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
 ms.openlocfilehash: 130b459dc87f36325d0f253181a196bea868856f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399618"
 ---
 # <a name="tn059-using-mfc-mbcsunicode-conversion-macros"></a>TN059: MFC/유니코드 변환 매크로 사용
 
@@ -140,7 +140,7 @@ void MuchBetterIterateCode(LPCTSTR lpsz)
 }
 ```
 
-문자열 상수 없는 경우 다음 함수에는 메서드를 캡슐화 합니다. 이렇게 하면 변환 버퍼 때마다를 해제할 수 있습니다. 예를 들면,
+문자열 상수 없는 경우 다음 함수에는 메서드를 캡슐화 합니다. 이렇게 하면 변환 버퍼 때마다를 해제할 수 있습니다. 예를 들어:
 
 ```
 void CallSomeMethod(int ii, LPCTSTR lpsz)

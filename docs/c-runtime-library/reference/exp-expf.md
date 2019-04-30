@@ -31,11 +31,11 @@ helpviewer_keywords:
 - exp function
 ms.assetid: 7070016d-1143-407e-9e9a-6b059bb88867
 ms.openlocfilehash: b9fb38adcc442e60864ec632cd92793f16e47502
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288190"
 ---
 # <a name="exp-expf-expl"></a>exp, expf, expl
 
@@ -81,13 +81,13 @@ long double expl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **exp** 사용 하는 한 **float** 하거나 **long double** 인수. C 프로그램에서 **exp** 항상 받아서 반환 된 **double**합니다.
+C++오버 로드를 호출할 수 있도록 오버 로드를 허용 **exp** 사용 하는 한 **float** 또는 **long double** 인수입니다. C 프로그램에서 **exp** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 C 헤더|필수 C++ 헤더|
+|함수|필수 C 헤더|필수 C++ 헤더|
 |--------------|---------------------|---|
-|**exp**하십시오 **expf**, **탐색**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**exp**, **expf**, **expl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

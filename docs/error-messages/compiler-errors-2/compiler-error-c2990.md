@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2990
 ms.assetid: 674e9f6a-6743-4af0-a7ed-cbe11103a2f8
 ms.openlocfilehash: f7327b7d2b0cc9fa4b617a9a6033116c43db6258
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62366331"
 ---
 # <a name="compiler-error-c2990"></a>컴파일러 오류 C2990
 
@@ -40,7 +40,7 @@ ref struct GC;
 ref struct GC {};   // C2990
 ```
 
-Visual c + + 2005; C2990 Visual c + + 컴파일러의 주요 변경으로 인해 발생할 수 있습니다. 컴파일러가 동일한 형식에 대 한 여러 선언이 템플릿 지정에 대해 동일 해야 합니다.
+C2990 시각적 개체에서 주요 변경으로 인해 발생할 수도 있습니다 C++ 시각적 개체에 대 한 컴파일러 C++ 2005; 컴파일러가 동일한 형식에 대 한 여러 선언이 템플릿 지정에 대해 동일 해야 합니다.
 
 다음 샘플에서는 C2990를 생성합니다.
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - VC++ Directories Property Page
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
 ms.openlocfilehash: 3822a3c751ac06154e4b13a12f449e7f0ff2cc07
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316879"
 ---
 # <a name="vc-directories-property-page-windows"></a>VC++ 디렉터리 속성 페이지
 
-이 속성 페이지를 사용하여 Visual Studio에서 현재 선택한 프로젝트를 빌드할 때 사용할 디렉터리를 지시합니다. 솔루션의 여러 프로젝트에 대 한 디렉터리를 설정 하려면 사용 하 여 사용자 지정 속성 시트에 설명 된 대로 [공유 또는 resuse Visual Studio c + + 프로젝트 설정](../create-reusable-property-configurations.md)합니다.
+이 속성 페이지를 사용하여 Visual Studio에서 현재 선택한 프로젝트를 빌드할 때 사용할 디렉터리를 지시합니다. 솔루션의 여러 프로젝트에 대 한 디렉터리를 설정 하려면 사용 하 여 사용자 지정 속성 시트에 설명 된 대로 [공유 또는 resuse Visual Studio C++ 프로젝트 설정](../create-reusable-property-configurations.md)합니다.
 
 이 페이지의 Linux 버전은 [VC++ 디렉터리(Linux C++)](../../linux/prop-pages/directories-linux.md)를 참조하세요.
 
@@ -38,7 +38,7 @@ VC++ 디렉터리 속성은 최상위 솔루션 노드가 아닌 프로젝트에
 
 플랫폼 간 프로젝트의 **VC++ 디렉터리** 속성 페이지가 다르게 표시됩니다. Linux C++ 프로젝트에 대한 정보는 [VC++ 디렉터리(Linux C++)](../../linux/prop-pages/directories-linux.md)를 참조하세요.
 
-경우에 잘 알고 있다면 *프로젝트 속성* Visual Studio에서 유용할 수 있습니다이 첫 번째 읽기 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+경우에 잘 알고 있다면 *프로젝트 속성* Visual Studio에서 유용할 수 있습니다이 첫 번째 읽기 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 **VC++ 디렉터리** 속성에 대한 기본 설정은 프로젝트 형식에 따라 달라집니다. 데스크톱 프로젝트의 경우 특정 플랫폼 도구 집합의 C++ 도구 위치 및 Windows SDK 위치가 포함됩니다. **구성 속성** > **일반** 페이지에서 **플랫폼 도구 집합** 및 **Windows SDK 버전**을 변경할 수 있습니다.
 
@@ -54,7 +54,7 @@ VC++ 디렉터리 속성은 최상위 솔루션 노드가 아닌 프로젝트에
 
 ![라이브러리 디렉터리 보기](../media/vcppdir_libdir.png "라이브러리 경로를 추가하거나 제거하는 대화 상자")
 
-이 대화 상자를 사용하여 현재 디렉터리를 볼 수 있습니다. 그러나 디렉터리를 추가하거나 변경하려는 경우 **속성 관리자**를 사용하여 속성 시트를 만들거나 기본 사용자 속성 시트를 수정하는 것이 좋습니다. 자세한 내용은 [공유 또는 resuse Visual Studio c + + 프로젝트 설정](../create-reusable-property-configurations.md)합니다.
+이 대화 상자를 사용하여 현재 디렉터리를 볼 수 있습니다. 그러나 디렉터리를 추가하거나 변경하려는 경우 **속성 관리자**를 사용하여 속성 시트를 만들거나 기본 사용자 속성 시트를 수정하는 것이 좋습니다. 자세한 내용은 [공유 또는 resuse Visual Studio C++ 프로젝트 설정](../create-reusable-property-configurations.md)합니다.
 
 위와 같이 다양한 상속 경로가 매크로로 지정됩니다.  매크로의 현재 값을 검사하려면 대화 상자의 오른쪽 아래에 있는 **매크로** 단추를 선택합니다. 대부분의 매크로가 구성 형식에 따라 달라집니다. 디버그 빌드의 매크로는 릴리스 빌드의 동일한 매크로와 다른 경로로 평가할 수 있습니다.
 
@@ -64,7 +64,7 @@ VC++ 디렉터리 속성은 최상위 솔루션 노드가 아닌 프로젝트에
 
 참고: 목록에 입력할 때 채워집니다. **Enter** 키를 누르지 않습니다.
 
-매크로 및 이유는 가능 하면 하드 코드 된 경로 대신 사용 해야 하는 방법에 대 한 자세한 내용은 참조 하십시오 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+매크로 및 이유는 가능 하면 하드 코드 된 경로 대신 사용 해야 하는 방법에 대 한 자세한 내용은 참조 하십시오 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 자주 사용 되는 매크로 목록에 대해서 [명령 및 속성에 대 한 일반 매크로 빌드](common-macros-for-build-commands-and-properties.md)합니다.
 
@@ -74,7 +74,7 @@ VC++ 디렉터리 속성은 최상위 솔루션 노드가 아닌 프로젝트에
 
 - .props 파일에서 사용자 매크로를 정의합니다. 자세한 내용은 [속성 페이지 매크로](../working-with-project-properties.md)를 참조하세요.
 
-자세한 내용은 다음 블로그 게시물을 참조 하세요. [VC + + 디렉터리](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx)하십시오 [상속 된 속성 및 속성 시트](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), 및 [Visual Studio 2010 c + + 프로젝트 업그레이드 가이드](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx)합니다.
+자세한 내용은 다음 블로그 게시물을 참조 하세요. [VC + + 디렉터리](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx)하십시오 [상속 된 속성 및 속성 시트](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), 및 [Visual Studio 2010 C++ 프로젝트 업그레이드 가이드](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx).
 
 ## <a name="directory-types"></a>디렉터리 형식
 
@@ -103,4 +103,4 @@ IntelliSense에 사용할 소스 파일을 검색할 디렉터리입니다.
 
 ## <a name="sharing-the-settings"></a>설정 공유
 
-프로젝트 속성을 다른 사용자 또는 여러 컴퓨터와 공유할 수 있습니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+프로젝트 속성을 다른 사용자 또는 여러 컴퓨터와 공유할 수 있습니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.

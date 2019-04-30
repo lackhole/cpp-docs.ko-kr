@@ -1,5 +1,5 @@
 ---
-title: '&lt;paramref > (c + + 문서 주석)'
+title: '&lt;paramref > (C++ 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - paramref
@@ -9,11 +9,11 @@ helpviewer_keywords:
 - <paramref> C++ XML tag
 ms.assetid: c5730dc2-7159-421f-b2d5-bb971e307122
 ms.openlocfilehash: cee35ddb5fd5cd811e45f0aa49e94dd9c4b8b180
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319995"
 ---
 # <a name="ltparamrefgt"></a>&lt;paramref&gt;
 
@@ -28,8 +28,7 @@ ms.locfileid: "57826772"
 #### <a name="parameters"></a>매개 변수
 
 *name*<br/>
-참조할 매개 변수의 이름입니다.  이름을 단일 또는 이중 따옴표로 묶습니다.  
-  `name`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
+참조할 매개 변수의 이름입니다.  이름을 단일 또는 이중 따옴표로 묶습니다.  `name`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
 
 ## <a name="remarks"></a>설명
 

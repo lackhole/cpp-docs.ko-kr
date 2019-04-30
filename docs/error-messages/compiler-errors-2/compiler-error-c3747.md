@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3747
 ms.assetid: a9a4be67-5d9c-4dcc-9ae9-baae46cbecde
 ms.openlocfilehash: 860a990e35b0d51dfc1316a11a2d2512eb40c273
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62226798"
 ---
 # <a name="compiler-error-c3747"></a>컴파일러 오류 C3747
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - sizeof operator
 ms.assetid: 8bc3b6fb-54a1-4eb7-ada0-05f8c5efc532
 ms.openlocfilehash: 9edd6420193fbc1ff6013c545b294851ce105848
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267221"
 ---
 # <a name="sizeof-operator"></a>sizeof 연산자
 
@@ -106,4 +106,4 @@ sizeof array / sizeof array[0]
 ## <a name="see-also"></a>참고자료
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

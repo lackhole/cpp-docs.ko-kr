@@ -6,11 +6,11 @@ helpviewer_keywords:
 - containers, C++ Standard Library
 ms.assetid: 8e915ca1-19ba-4f0d-93c8-e2c3bfd638eb
 ms.openlocfilehash: a6f4da35468143e6d7c3dda684ed93f33e29b21d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412412"
 ---
 # <a name="c-standard-library-containers"></a>C++ 표준 라이브러리 컨테이너
 
@@ -24,7 +24,7 @@ ms.locfileid: "51518647"
 
 시퀀스 컨테이너는 지정된 요소가 삽입된 순서를 유지합니다.
 
-`vector` 컨테이너는 배열처럼 동작하지만 필요에 따라 자동으로 증가할 수 있습니다. 임의로 액세스되고 지속적으로 저장되며 길이가 매우 유연하게 조정됩니다. 따라서 `vector`는 대부분의 응용 프로그램에 대한 기본 시퀀스 컨테이너입니다. 사용할 시퀀스 컨테이너의 종류에 대해 확실히 모르는 경우 벡터를 사용하여 시작합니다. 자세한 내용은 [vector 클래스](../standard-library/vector-class.md)를 참조하세요.
+`vector` 컨테이너는 배열처럼 동작하지만 필요에 따라 자동으로 증가할 수 있습니다. 임의로 액세스되고 지속적으로 저장되며 길이가 매우 유연하게 조정됩니다. 따라서 `vector`는 대부분의 애플리케이션에 대한 기본 시퀀스 컨테이너입니다. 사용할 시퀀스 컨테이너의 종류에 대해 확실히 모르는 경우 벡터를 사용하여 시작합니다. 자세한 내용은 [vector 클래스](../standard-library/vector-class.md)를 참조하세요.
 
 `array` 컨테이너는 `vector`의 일부 장점을 갖지만 길이는 유연하게 조정되지 않습니다. 자세한 내용은 [array 클래스](../standard-library/array-class-stl.md)를 참조하세요.
 

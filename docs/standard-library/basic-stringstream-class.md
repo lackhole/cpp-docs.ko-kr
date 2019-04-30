@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::basic_stringstream [C++], str
 ms.assetid: 49629814-ca37-45c5-931b-4ff894e6ebd2
 ms.openlocfilehash: 7e39d5dabf27ffbe15e519c006592935076a45c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62414115"
 ---
 # <a name="basicstringstream-class"></a>basic_stringstream 클래스
 
@@ -32,7 +32,7 @@ class basic_stringstream : public basic_iostream<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *Elem*<br/>
@@ -90,7 +90,7 @@ explicit basic_stringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base::
 
 ### <a name="parameters"></a>매개 변수
 
-*모드 (_m)*<br/>
+*_Mode*<br/>
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
 *str*<br/>

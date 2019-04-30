@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 오류 C2500 ~ C2599
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C2501
 - C2508
@@ -52,12 +52,12 @@ helpviewer_keywords:
 - C2595
 - C2596
 ms.assetid: a869aaed-e9f6-49e3-b273-00ea7f45bed7
-ms.openlocfilehash: 836bab2fe3f38c7caf5249af2e7373a307db58e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 87728c2d7055715b7e7d986d5ab8792ceba5c450
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386592"
 ---
 # <a name="compiler-errors-c2500-through-c2599"></a>컴파일러 오류 C2500 ~ C2599
 
@@ -88,15 +88,15 @@ ms.locfileid: "50600982"
 |[컴파일러 오류 C2516](compiler-error-C2516.md)|'*클래스*': 올바른 기본 클래스가 아닙니다.|
 |[컴파일러 오류 C2517](compiler-error-C2517.md)|'*식별자*': 오른쪽 ': ' 정의 되지 않습니다|
 |[컴파일러 오류 C2518](compiler-error-C2518.md)|키워드 '*키워드*' 기본 클래스 목록에 잘못 된; 무시|
-|컴파일러 오류 C2519|'*식별자*': WinRT 특성은 public 필드만 포함할 수 있습니다|
+|컴파일러 오류 C2519|'*identifier*': WinRT 특성은 public 필드만 포함할 수 있습니다.|
 |컴파일러 오류 C2520|'*클래스*': 암시적 변환에 사용할 수 있는 비 명시적 생성자가 없습니다|
 |[컴파일러 오류 C2521](compiler-error-C2521.md)|소멸자/종료자 인수를 사용 하지 않습니다.|
-|컴파일러 오류 C2522|'*식별자*': 오버 로드 식별자에 사용할 수 없습니다 '*identifier1*'에 이미 지정 되어' as*identifier2*'|
+|컴파일러 오류 C2522|'*identifier*': 오버 로드 식별자에 사용할 수 없습니다 '*identifier1*'에 이미 지정 되어' as*identifier2*'|
 |[컴파일러 오류 C2523](compiler-error-C2523.md)|'*클래스*:: ~*식별자*': 소멸자/종료자 태그 일치 하지 않습니다.|
 |[컴파일러 오류 C2524](compiler-error-C2524.md)|'*식별자*': 소멸자/종료자에는 'void' 매개 변수 목록이 있어야 합니다.|
-|컴파일러 오류 C2525|'*식별자*': 매개 변수 '*identifier1*'이름은'*identifier2*' 자료에 대해 작동 하 고 게시 된 구현에서 일치 해야 합니다|
-|[컴파일러 오류 C2526](compiler-error-C2526.md)|'*identifier1*': C 링크 함수는 c + + 클래스를 반환할 수 없습니다*identifier2*'|
-|컴파일러 오류 C2527|'*식별자*': DefaultOverload 둘 다 지정할 수 없습니다 '*function1*'및'*function2*'. 하나의 사양을 제거 하거나 구현 중 함수 이름 바꾸기|
+|컴파일러 오류 C2525|'*identifier*': 매개 변수 '*identifier1*'이름은'*identifier2*' 자료에 대해 작동 하 고 게시 된 구현에서 일치 해야 합니다|
+|[컴파일러 오류 C2526](compiler-error-C2526.md)|'*identifier1*': C 링크 함수에서 반환할 수 없습니다 C++ 클래스의*identifier2*'|
+|컴파일러 오류 C2527|'*identifier*': DefaultOverload 둘 다 지정할 수 없습니다 '*function1*'및'*function2*'. 하나의 사양을 제거 하거나 구현 중 함수 이름 바꾸기|
 |[컴파일러 오류 C2528](compiler-error-C2528.md)|'*식별자*': 참조 한 포인터가 잘못 되었습니다|
 |[컴파일러 오류 C2529](compiler-error-C2529.md)|'*식별자*': 참조에 대 한 참조가 잘못 되었습니다.|
 |[컴파일러 오류 C2530](compiler-error-C2530.md)|'*식별자*': 참조를 초기화 해야 합니다|
@@ -116,7 +116,7 @@ ms.locfileid: "50600982"
 |[컴파일러 오류 C2544](compiler-error-C2544.md)|예상 ')' (')' 연산자에 대 한|
 |[컴파일러 오류 C2545](compiler-error-C2545.md)|'*연산자*': 오버 로드 찾기 연산자 수 없습니다.|
 |컴파일러 오류 C2546|'*식별자*': 형식이 PIA와 NO-PIA PIA를 먼저 참조 해야 정의 된 경우|
-|컴파일러 오류 C2547|'*식별자*': 선언에 게시 된 메서드의 모든 매개 변수를 명시적으로 지정 해야 합니다|
+|컴파일러 오류 C2547|'*identifier*': 게시 된 메서드의 모든 매개 변수 선언에서 명시적으로 지정 해야 합니다.|
 |[컴파일러 오류 C2548](compiler-error-C2548.md)|'*함수*': 매개 변수에 대 한 기본 매개 변수 누락 *매개 변수*|
 |[컴파일러 오류 C2549](compiler-error-C2549.md)|사용자 정의 변환이 반환 형식을 지정할 수 없습니다.|
 |[컴파일러 오류 C2550](compiler-error-C2550.md)|'*식별자*': 생성자 이니셜라이저 목록은 생성자 정의에 허용 됩니다|
@@ -168,3 +168,8 @@ ms.locfileid: "50600982"
 |[컴파일러 오류 C2597](compiler-error-C2597.md)|비정적 멤버에 대 한 잘못 된 참조 '*식별자*'|
 |[컴파일러 오류 C2598](compiler-error-C2598.md)|링크 사양은 전역 범위에 있어야 합니다.|
 |[컴파일러 오류 C2599](compiler-error-C2599.md)|'*식별자*': 관리 되는 WinRT 열거형의 정방향 선언은 허용 되지 않습니다|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

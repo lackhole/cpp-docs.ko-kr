@@ -12,11 +12,11 @@ helpviewer_keywords:
 - subsystem specifications
 ms.assetid: d7b133cf-cf22-4da8-ab46-6552702c0b9b
 ms.openlocfilehash: ecda3443d0422af4d5ceec9282d86590c53af2f5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318247"
 ---
 # <a name="subsystem-specify-subsystem"></a>/SUBSYSTEM(하위 시스템 지정)
 
@@ -73,7 +73,7 @@ Windows NT의 POSIX 하위 시스템으로 실행 되는 응용 프로그램입�
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 링커 폴더를 선택 합니다.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4996
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
 ms.openlocfilehash: ef1bc46b64ccbe1374fd795a9b5d56e091b47f48
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57816427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401503"
 ---
 # <a name="compiler-warning-level-3-c4996"></a>컴파일러 경고 (수준 3) C4996
 
@@ -19,11 +19,11 @@ ms.locfileid: "57816427"
 
 이들은 C 런타임 라이브러리 및 표준 라이브러리 전체 목록 아님에서 생성 된 몇 가지 일반적인 C4996 메시지입니다. 링크를 참조 하거나 문제를 해결 하려면 또는 경고를 해제 하는 방법을 계속 읽어주세요.
 
-- [이 항목에 대 한 POSIX 이름은 사용 되지 않습니다. 대신 ISO C 및 c + +와 호환 되는 이름: *new_name*합니다. 자세한 내용은 온라인 도움말을 참조하세요.](#posix-function-names)
+- [이 항목에 대 한 POSIX 이름은 사용 되지 않습니다. 대신 ISO C를 사용 하 고 C++ 와 호환 되는 이름: *new_name*합니다. 자세한 내용은 온라인 도움말을 참조하세요.](#posix-function-names)
 
 - [이 함수 또는 변수 안전 하지 않을 수 있습니다. 사용 하는 것이 좋습니다 *safe_version* 대신 합니다. 사용 중단을 사용 하지 \_CRT\_SECURE\_NO\_경고 합니다.  자세한 내용은 온라인 도움말을 참조하세요.](#unsafe-crt-library-functions)
 
-- [' std::*function_name*::\_Unchecked\_반복기::\_Deprecate' 호출 std::*function_name*-안전 하지 않을 수 있는 매개 변수를 사용 하 여이 호출에 의존 전달 된 값이 정확한 지 확인 하기 위해 호출자입니다. 이 경고를 사용하지 않으려면 -D_SCL_SECURE_NO_WARNINGS를 사용합니다. Visual c + + ' 확인 된 반복기 '를 사용 하는 방법은 설명서를 참조 하세요.](#unsafe-standard-library-functions)
+- [' std::*function_name*::\_Unchecked\_반복기::\_Deprecate' 호출 std::*function_name*-안전 하지 않을 수 있는 매개 변수를 사용 하 여이 호출에 의존 전달 된 값이 정확한 지 확인 하기 위해 호출자입니다. 이 경고를 사용하지 않으려면 -D_SCL_SECURE_NO_WARNINGS를 사용합니다. 시각적 개체를 사용 하는 방법은 설명서를 참조 하세요. C++ ' 확인 된 반복기 '](#unsafe-standard-library-functions)
 
 - [이 함수 또는 변수 최신 라이브러리 또는 운영 체제 기능으로 대체 되었습니다. 사용 하는 것이 좋습니다 *new_item* 대신 합니다. 자세한 내용은 온라인 도움말을 참조하세요.](#obsolete-crt-functions-and-variables)
 
@@ -46,7 +46,7 @@ ms.locfileid: "57816427"
 Visual Studio IDE에 전체 프로젝트에 대 한 경고를 끄려면:
 
 - 엽니다는 **속성 페이지** 프로젝트 대화 상자. 속성 페이지 대화 상자를 사용 하는 방법에 대 한 자세한 내용은 [속성 페이지](../../build/reference/property-pages-visual-cpp.md)합니다.
-- 선택 된 **구성 속성**, **C/c + +** 를 **고급** 페이지입니다.
+- 선택 된 **구성 속성**, **C /C++** 를 **고급** 페이지입니다.
 - 편집 된 **특정 경고 사용 안 함** 추가할 속성 `4996`합니다. 선택할 **확인** 변경 내용을 적용 하려면.
 
 또한 특정 특정 클래스의 라이브러리에서 사용 되는 사용 중단 경고를 해제 하려면 전처리기 매크로 사용할 수 있습니다. 이러한 매크로 대 한 설명은 다음과 같습니다.
@@ -54,7 +54,7 @@ Visual Studio IDE에 전체 프로젝트에 대 한 경고를 끄려면:
 Visual Studio에서 전처리기 매크로 정의 합니다.
 
 - 엽니다는 **속성 페이지** 프로젝트 대화 상자. 속성 페이지 대화 상자를 사용 하는 방법에 대 한 자세한 내용은 [속성 페이지](../../build/reference/property-pages-visual-cpp.md)합니다.
-- 확장 **구성 속성 > C/c + + > 전처리기**합니다.
+- 확장 **구성 속성 > C /C++ > 전처리기**합니다.
 - 에 **전처리기 정의** 속성 매크로 이름을 추가 합니다. **확인** 을 선택하여 저장한 다음 프로젝트를 다시 빌드합니다.
 
 특정 원본 파일에만 매크로 정의 하려면 줄을와 같은 추가 `#define EXAMPLE_MACRO_NAME` 헤더 파일이 포함 된 모든 줄 앞입니다.
@@ -65,7 +65,7 @@ C4996 경고 및 오류의 일반적인 원인 중 다음과 같습니다.
 
 ### <a name="posix-function-names"></a>POSIX 함수 이름
 
-**이 항목에 대 한 POSIX 이름은 사용 되지 않습니다. 대신 ISO C 및 c + +와 호환 되는 이름:** *new_name*합니다. **자세한 내용은 온라인 도움말을 참조 하세요.**
+**이 항목에 대 한 POSIX 이름은 사용 되지 않습니다. 대신 ISO C를 사용 하 고 C++ 와 호환 되는 이름:** *new_name*합니다. **자세한 내용은 온라인 도움말을 참조 하세요.**
 
 Microsoft의 C99 및 c++03 규칙 전역 함수 구현이 정의 된 이름에 맞게 CRT의 일부 POSIX 함수 이름이 변경 합니다. 원래 POSIX 이름만 지원 되지 않습니다. 함수 자체입니다. 대부분의 경우 표준 규격 이름을 만들기 위해 POSIX 함수 이름에 선행 밑줄이 추가되었습니다. 컴파일러는 원래 함수 이름에 대 한 사용 중단 경고를 실행 하 고 기본 이름을 제안 합니다.
 
@@ -77,17 +77,17 @@ Microsoft의 C99 및 c++03 규칙 전역 함수 구현이 정의 된 이름에 �
 
 **이 함수 또는 변수 안전 하지 않을 수 있습니다. 사용 하는 것이 좋습니다** *safe_version* **대신 합니다. 사용 중단을 사용 하지 \_CRT\_SECURE\_NO\_경고 합니다.  자세한 내용은 온라인 도움말을 참조하세요.**
 
-일부 CRT 및 c + + 표준 라이브러리 함수 및 전역 더 안전한 버전을 위해 Microsoft에 사용 되지 않습니다. 대부분의 경우 사용 되지 않는 함수는 검사 되지 않은 읽기 또는 심각한 보안 문제가 발생할 수 있는 버퍼에 쓰기 액세스를 허용 합니다. 컴파일러는 이러한 함수에 대해 사용 중단 경고를 실행하고 기본 설정 함수를 제안합니다.
+Microsoft는 일부 CRT 사용 되지 않습니다. 및 C++ 표준 라이브러리 함수 및 전역 더 안전한 버전을 대신 합니다. 대부분의 경우 사용 되지 않는 함수는 검사 되지 않은 읽기 또는 심각한 보안 문제가 발생할 수 있는 버퍼에 쓰기 액세스를 허용 합니다. 컴파일러는 이러한 함수에 대해 사용 중단 경고를 실행하고 기본 설정 함수를 제안합니다.
 
 이 문제를 해결 하려면 함수 또는 변수를 사용 하 여 권장 *safe_version* 대신 합니다. 버퍼 덮어쓰기 불가능 또는 코드에서 발생 하는 overread 이식성 이유로 코드를 변경할 수 없습니다를 확인 한 경우 경고를 해제할 수 있습니다.
 
-CRT에서 이러한 함수에 대 한 사용 중단 경고를 해제 하려면 정의  **\_CRT\_SECURE\_아니오\_경고**합니다. 사용 되지 않는 전역 변수에 대 한 경고를 해제 하려면 정의  **\_CRT\_SECURE\_아니오\_경고\_GLOBALS**합니다. 이러한 사용 되지 않는 함수 및 전역 변수에 대 한 자세한 내용은 참조 하세요. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md) 고 [안전한 라이브러리: C + + 표준 라이브러리](../../standard-library/safe-libraries-cpp-standard-library.md)합니다.
+CRT에서 이러한 함수에 대 한 사용 중단 경고를 해제 하려면 정의  **\_CRT\_SECURE\_아니오\_경고**합니다. 사용 되지 않는 전역 변수에 대 한 경고를 해제 하려면 정의  **\_CRT\_SECURE\_아니오\_경고\_GLOBALS**합니다. 이러한 사용 되지 않는 함수 및 전역 변수에 대 한 자세한 내용은 참조 하세요. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md) 고 [안전한 라이브러리: C++표준 라이브러리](../../standard-library/safe-libraries-cpp-standard-library.md)합니다.
 
 ### <a name="unsafe-standard-library-functions"></a>안전 하지 않은 표준 라이브러리 함수
 
-__' std::__*function_name*__::\_Unchecked\_반복기::\_Deprecate' 호출 std::__*function_name* **-안전 하지 않을 수 있는 매개 변수를 사용 하 여이 호출은 호출자가 전달 된 값이 올바른지 확인에 의존 합니다. -D를 사용 하 여이 경고를 사용 하지 않으려면\_SCL\_SECURE\_NO\_경고 합니다. Visual c + + ' 확인 된 반복기 '를 사용 하는 방법은 설명서를 참조 하세요.**
+__' std::__*function_name*__::\_Unchecked\_반복기::\_Deprecate' 호출 std::__*function_name* **-안전 하지 않을 수 있는 매개 변수를 사용 하 여이 호출은 호출자가 전달 된 값이 올바른지 확인에 의존 합니다. -D를 사용 하 여이 경고를 사용 하지 않으려면\_SCL\_SECURE\_NO\_경고 합니다. 시각적 개체를 사용 하는 방법은 설명서를 참조 하세요. C++ ' 확인 된 반복기 '**
 
-이 경고는 특정 c + + 표준 라이브러리 템플릿 함수는 매개 변수의 정확성을 검사 하지 않습니다 때문에 디버그 빌드에서 나타납니다. 대부분의 경우에서 인지 정보가 부족 컨테이너 경계를 확인 하는 함수를 사용할 수 있으므로 함수를 사용 하 여 반복기를 올바르게 사용할 수 있습니다. 이 경고 원본 프로그램에서 심각한 보안 취약점이 있을 수 있으므로 이러한 함수 사용을 확인할 수 있습니다. 자세한 내용은 [Checked Iterators](../../standard-library/checked-iterators.md)을 참조하세요.
+이 경고가 나타납니다 디버그 빌드에서 때문에 특정 C++ 표준 라이브러리 템플릿 함수는 매개 변수의 정확성을 검사 하지 않습니다. 대부분의 경우에서 인지 정보가 부족 컨테이너 경계를 확인 하는 함수를 사용할 수 있으므로 함수를 사용 하 여 반복기를 올바르게 사용할 수 있습니다. 이 경고 원본 프로그램에서 심각한 보안 취약점이 있을 수 있으므로 이러한 함수 사용을 확인할 수 있습니다. 자세한 내용은 [Checked Iterators](../../standard-library/checked-iterators.md)을 참조하세요.
 
 한 요소 포인터를 전달 하는 경우이 경고 디버그 모드에서 표시 예를 들어 `std::copy` 일반 배열 대신 합니다. 이 문제를 해결 하려면 라이브러리에서 배열 범위를 확인 하 고 범위 검사를 수행할 수 있도록 적절 하 게 선언 된 배열을 사용 합니다.
 

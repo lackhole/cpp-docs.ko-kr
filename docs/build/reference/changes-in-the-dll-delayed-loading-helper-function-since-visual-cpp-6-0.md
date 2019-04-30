@@ -8,15 +8,15 @@ helpviewer_keywords:
 - helper functions, what's changed
 ms.assetid: 99f0be69-105d-49ba-8dd5-3be7939c0c72
 ms.openlocfilehash: cd6e842fd6d35e05f2d5a9f906713f0d85d3b80d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294631"
 ---
 # <a name="changes-in-the-dll-delayed-loading-helper-function-since-visual-c-60"></a>Visual C++ 6.0 이후 DLL 지연 로드 도우미 함수의 변경 내용
 
-사용자 도우미 함수를 정의 하면 영향을 받을 수 또는 컴퓨터에 여러 버전의 Visual c + +를 있는 경우에 DLL에 대 한 변경 내용을 지연 로드 도우미 함수의 합니다. 예를 들어:
+시각적 개체의 여러 버전이 있는 경우 C++ 컴퓨터에 사용자 고유의 도우미 함수를 정의 하면 영향을 받을 수 또는 DLL에 대 한 변경 내용을 지연 로드 도우미 함수의 합니다. 예를 들어:
 
 - **__delayLoadHelper** 이제 **__delayLoadHelper2**
 
@@ -29,13 +29,13 @@ ms.locfileid: "57808003"
 > [!NOTE]
 >  기본 도우미 함수를 사용 하는 경우 이러한 변경 하면 영향을 주지 않습니다. 링커를 호출 하는 방법에 대 한 변경 내용이 있습니다.
 
-## <a name="multiple-versions-of-visual-c"></a>여러 버전의 Visual c + +
+## <a name="multiple-versions-of-visual-c"></a>시각적 개체의 여러 버전C++
 
-컴퓨터에 있는 여러 버전의 Visual c + +가 하는 경우 링커 delayimp.lib 일치 하는지 확인 합니다. 보고 하거나 링커 오류가 발생 하면 불일치가 있으면 `___delayLoadHelper2@8` 또는 `___delayLoadHelper@8` 는 확인 되지 않은 외부 기호입니다. 전자는 이전 delayimp.lib 사용 하 여 새 링커를 의미 하 고 새 delayimp.lib 사용 하 여 이전 링커는 후자 의미 키를 누릅니다.
+시각적 개체의 여러 버전이 있는 경우 C++ 컴퓨터에 링커 delayimp.lib를 일치 하는지 확인 합니다. 보고 하거나 링커 오류가 발생 하면 불일치가 있으면 `___delayLoadHelper2@8` 또는 `___delayLoadHelper@8` 는 확인 되지 않은 외부 기호입니다. 전자는 이전 delayimp.lib 사용 하 여 새 링커를 의미 하 고 새 delayimp.lib 사용 하 여 이전 링커는 후자 의미 키를 누릅니다.
 
 확인 되지 않은 링커 오류가 발생 하는 경우 실행할 [/linkermember dumpbin](linkermember.md): delayimp.lib 도우미 함수는 도우미 함수가 대신 정의 된 참조를 포함 해야 하는 1입니다. 도우미 함수는 개체 파일에 정의할 수 있습니다. 실행할 [dumpbin /symbols](symbols.md) 찾아 `delayLoadHelper(2)`합니다.
 
-그런 다음 Visual c + + 6.0 링커를 사용 해야 합니다 알고 있는 경우:
+시각적 개체를 해야 하는 것이 알고 있는 경우 C++ 6.0 링커 후:
 
 - Dumpbin 정의 하는지 여부를 확인 하려면 지연 로드 도우미.lib 또는.obj 파일에서 실행할 **__delayLoadHelper2**합니다. 그렇지 않은 경우 링크 하지 못합니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "57808003"
 
 ## <a name="user-defined-helper-function"></a>사용자 도우미 함수
 
-사용자 도우미 함수를 정의 하 고 현재 버전의 Visual c + +를 사용 하는 경우 다음을 수행 합니다.
+사용자 도우미 함수를 정의 하 고 시각적 개체의 현재 버전을 사용 하는 경우 C++에서 다음을 수행 합니다.
 
 - 도우미 함수의 이름을 바꿀 **__delayLoadHelper2**합니다.
 

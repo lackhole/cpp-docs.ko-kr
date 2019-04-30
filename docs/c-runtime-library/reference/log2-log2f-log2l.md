@@ -20,11 +20,11 @@ apilocation:
 apitype: DLLExport
 ms.assetid: 94d11b38-70b7-4d3a-94ac-523153c92b2e
 ms.openlocfilehash: d70d074b13b0f24f1f040ef0e861e073e303ac7b
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62285941"
 ---
 # <a name="log2-log2f-log2l"></a>log2, log2f, log2l
 
@@ -68,7 +68,7 @@ long double log2l(
 |문제|반환|
 |-----------|------------|
 |*x* < 0|NaN|
-|*x* ±0 =|-INFINITY|
+|*x* = ±0|-INFINITY|
 |*x* = 1|+0|
 |+INFINITY|+INFINITY|
 |NaN|NaN|
@@ -85,7 +85,7 @@ X가 정수 이면이 함수에서의 가장 중요 한 1 비트의 0부터 시�
 
 |기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**log2**하십시오 **log2f**, **log2l**|\<math.h>|\<cmath>|
+|**log2**, **log2f**, **log2l**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

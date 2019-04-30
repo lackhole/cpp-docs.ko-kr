@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2261
 ms.assetid: 60969482-9e83-49b5-9631-a04bc844da12
 ms.openlocfilehash: 2df788efd93fb531822d858ea5aee1722487db81
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387045"
 ---
 # <a name="compiler-error-c2261"></a>컴파일러 오류 C2261
 
@@ -19,9 +19,9 @@ ms.locfileid: "50535748"
 
 값이 잘못 되었습니다.
 
-<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> friend 어셈블리를 지정 하는 데 사용 됩니다. 예를 들어 a.dll를 b.dll를 friend 어셈블리로 지정 하려는 경우 지정 a.dll) (에: InternalsVisibleTo("b") 합니다. 런타임에서 b.dll a.dll (제외 개인 형식)에서 모든 항목에 액세스할 수 있게 합니다.
+<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> friend 어셈블리를 지정 하는 데 사용 됩니다. 예를 들어 a.dll b.dll를 friend 어셈블리로 지정 하려고 합니다 (a.dll)에서 지정 하면 됩니다. InternalsVisibleTo("b"). 런타임에서 b.dll a.dll (제외 개인 형식)에서 모든 항목에 액세스할 수 있게 합니다.
 
-Friend 어셈블리를 지정 하는 경우에 올바른 구문에 자세한 내용은 참조 하십시오 [Friend 어셈블리 (c + +)](../../dotnet/friend-assemblies-cpp.md)합니다.
+Friend 어셈블리를 지정 하는 경우에 올바른 구문에 자세한 내용은 참조 하십시오 [Friend 어셈블리 (C++)](../../dotnet/friend-assemblies-cpp.md)합니다.
 
 ## <a name="example"></a>예제
 

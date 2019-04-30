@@ -59,11 +59,11 @@ helpviewer_keywords:
 - CDaoDatabase [MFC], m_pWorkspace
 ms.assetid: 8ff5b342-964d-449d-bef1-d0ff56aadf6d
 ms.openlocfilehash: d1e9db1ddebe05d42cbb8c4ba242938d6d86cc81
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399843"
 ---
 # <a name="cdaodatabase-class"></a>CDaoDatabase 클래스
 
@@ -254,7 +254,7 @@ virtual void Create(
 ### <a name="parameters"></a>매개 변수
 
 *lpszName*<br/>
-사용자가 만드는 데이터베이스 파일의 이름을 나타내는 문자열 식입니다. 수의 전체 경로 파일 이름 같은 "c:\\\MYDB 합니다. MDB "로 설정 합니다. 이름을 제공 해야 합니다. 파일 이름 확장명을 제공 하지 않습니다 하는 경우. MDB 추가 됩니다. 네트워크 경로 네트워크에서 일관 된 명명 규칙 (UNC)를 지 원하는 경우 같은 지정할 수도 있습니다 "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB"입니다. Microsoft Jet만 (합니다. 이 멤버 함수를 사용 하 여 MDB) 데이터베이스 파일을 만들 수 있습니다. (이중 백슬래시 문자열 리터럴에서 필요 하기 때문에 "\\" c + + 이스케이프 문자입니다.)
+사용자가 만드는 데이터베이스 파일의 이름을 나타내는 문자열 식입니다. 수의 전체 경로 파일 이름 같은 "c:\\\MYDB 합니다. MDB "로 설정 합니다. 이름을 제공 해야 합니다. 파일 이름 확장명을 제공 하지 않습니다 하는 경우. MDB 추가 됩니다. 네트워크 경로 네트워크에서 일관 된 명명 규칙 (UNC)를 지 원하는 경우 같은 지정할 수도 있습니다 "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB"입니다. Microsoft Jet만 (합니다. 이 멤버 함수를 사용 하 여 MDB) 데이터베이스 파일을 만들 수 있습니다. (이중 백슬래시 문자열 리터럴에서 필요 하기 때문에 "\\" 됩니다는 C++ 문자를 이스케이프 합니다.)
 
 *lpszLocale*<br/>
 데이터베이스 만들기에 대 한 정렬 순서를 지정 하는 데 사용 하는 문자열 식입니다. 기본값은 `dbLangGeneral`입니다. 가능한 값은 다음과 같습니다.
@@ -309,7 +309,7 @@ virtual void Create(
 
 ### <a name="remarks"></a>설명
 
-`Create` 데이터베이스 파일 및 기본 DAO 데이터베이스 개체를 만들고 c + + 개체를 초기화 합니다. 개체는 연결 된 작업 영역 데이터베이스 컬렉션에 추가 됩니다. 데이터베이스 개체가 열린 상태입니다. 호출 하지 마세요 `Open*` 후 `Create`합니다.
+`Create` 데이터베이스 파일 및 기본 DAO 데이터베이스 개체를 만들고 초기화 합니다 C++ 개체입니다. 개체는 연결 된 작업 영역 데이터베이스 컬렉션에 추가 됩니다. 데이터베이스 개체가 열린 상태입니다. 호출 하지 마세요 `Open*` 후 `Create`합니다.
 
 > [!NOTE]
 >  사용 하 여 `Create`, Microsoft Jet만 만들 수 있습니다 (합니다. MDB) 데이터베이스입니다. ODBC 데이터베이스 또는 ISAM 데이터베이스를 만들 수 없습니다.
@@ -523,7 +523,7 @@ CString GetName();
 
 ### <a name="remarks"></a>설명
 
-네트워크에서 일관 된 명명 규칙 (UNC)를 지 원하는 네트워크 경로 지정할 수도 있습니다-예를 들어, "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB 합니다. MDB "로 설정 합니다. (이중 백슬래시 문자열 리터럴에서 필요 하기 때문에 "\\" c + + 이스케이프 문자입니다.)
+네트워크에서 일관 된 명명 규칙 (UNC)를 지 원하는 네트워크 경로 지정할 수도 있습니다-예를 들어, "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB 합니다. MDB "로 설정 합니다. (이중 백슬래시 문자열 리터럴에서 필요 하기 때문에 "\\" 됩니다는 C++ 문자를 이스케이프 합니다.)
 
 예를 들어 제목에는이 이름이 표시 하려면 할 수 있습니다. 이름을 검색 하는 동안 오류가 발생 하는 경우 MFC 형식의 예외를 throw [CDaoException](../../mfc/reference/cdaoexception-class.md)합니다.
 
@@ -825,7 +825,7 @@ virtual void Open(
 ### <a name="parameters"></a>매개 변수
 
 *lpszName*<br/>
-기존 Microsoft Jet의 이름인 문자열 식 (합니다. MDB) 데이터베이스 파일입니다. 파일 이름 확장명이 있으면 필요 합니다. 네트워크 경로 네트워크에서 일관 된 명명 규칙 (UNC)를 지 원하는 경우 같은 지정할 수도 있습니다 "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB 합니다. MDB "로 설정 합니다. (이중 백슬래시 문자열 리터럴에서 필요 하기 때문에 "\\" c + + 이스케이프 문자입니다.)
+기존 Microsoft Jet의 이름인 문자열 식 (합니다. MDB) 데이터베이스 파일입니다. 파일 이름 확장명이 있으면 필요 합니다. 네트워크 경로 네트워크에서 일관 된 명명 규칙 (UNC)를 지 원하는 경우 같은 지정할 수도 있습니다 "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB 합니다. MDB "로 설정 합니다. (이중 백슬래시 문자열 리터럴에서 필요 하기 때문에 "\\" 됩니다는 C++ 문자를 이스케이프 합니다.)
 
 사용 하는 경우 몇 가지 사항을 고려해 야 *lpszName*합니다. 하는 경우 해당:
 

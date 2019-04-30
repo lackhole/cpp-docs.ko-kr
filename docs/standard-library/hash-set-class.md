@@ -87,11 +87,11 @@ helpviewer_keywords:
 - stdext::hash_set::value_comp
 ms.assetid: c765c06e-cbb6-48c2-93ca-d15468eb28d7
 ms.openlocfilehash: c7d5df87dc6c8529d18b9f5fb960148c7362129a
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405042"
 ---
 # <a name="hashset-class"></a>hash_set 클래스
 
@@ -117,7 +117,7 @@ hash_set에 저장되는 요소 데이터 형식입니다.
 *특성*<br/>
 두 함수 개체를 포함 하는 형식에 비교 중 하 나와 클래스는 해당 상대 순서를 부호 없는 요소의 단항 조건자 매핑 키 값에는 해시 함수를 결정 하는 정렬 키로 두 요소 값을 비교할 수 있는 이진 조건자 정수 형식의 `size_t`합니다. 이 인수는 선택 사항이며 기본값은 `hash_compare<Key, less<Key> >`입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 hash_set의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<Key>`입니다.
 
 ## <a name="remarks"></a>설명
@@ -565,7 +565,7 @@ hash_set에 일치하는 키가 있는 요소가 포함되지 않은 경우 0입
 
 멤버 함수가 다음 범위에 있는 요소의 수를 반환합니다.
 
-\[ lower_bound (*키*), upper_bound (*키*)).
+\[ lower_bound(*key*), upper_bound(*key*) ).
 
 ### <a name="example"></a>예제
 
@@ -1424,7 +1424,7 @@ hash_set(
 |*Al*|이 `hash_set` 개체에 사용할 스토리지 할당자 클래스로, 기본값은 `Allocator`입니다.|
 |*구성 요소*|`hash_set`의 요소 순서를 지정하는 데 사용되는 `const Traits` 형식의 비교 함수로, 기본값은 `hash_compare`입니다.|
 |*오른쪽*|생성된 `hash_set`이 복사본으로 지정될 `hash_set`입니다.|
-|*첫 번째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.|
 
 ### <a name="remarks"></a>설명
@@ -1474,9 +1474,9 @@ void insert(
 
 |매개 변수|설명|
 |-|-|
-|*val*|`hash_set`이 해당 요소(또는 더 일반적으로는 키가 동등하게 정렬된 요소)를 이미 포함하고 있지 않을 경우 `hash_set`에 삽입될 요소의 값입니다.|
+|*Val*|`hash_set`이 해당 요소(또는 더 일반적으로는 키가 동등하게 정렬된 요소)를 이미 포함하고 있지 않을 경우 `hash_set`에 삽입될 요소의 값입니다.|
 |*Where*|올바른 삽입 지점 검색을 시작할 위치입니다. 삽입 지점이 `_Where` 바로 뒤에 오면 로그 시간 대신 분할 상수 시간에 삽입이 발생할 수 있습니다.|
-|*첫 번째*|`hash_set`에서 복사할 첫 번째 요소의 위치입니다.|
+|*첫째*|`hash_set`에서 복사할 첫 번째 요소의 위치입니다.|
 |*마지막*|`hash_set`에서 복사할 마지막 요소 바로 다음 위치입니다.|
 |*IList*|요소를 복사해올 initializer_list입니다.|
 

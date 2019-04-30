@@ -20,15 +20,15 @@ helpviewer_keywords:
 - throw keyword [C++], throw() vs. throw(...)
 ms.assetid: 15e6a87b-b8a5-4032-a7ef-946c644ba12a
 ms.openlocfilehash: a55c1f2d5c2e73028b337d17b74fe1280f670707
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62266786"
 ---
 # <a name="try-throw-and-catch-statements-c"></a>Try, Throw 및 Catch 문(C++)
 
-사용할 c + +에서 예외 처리를 구현 하려면 **시도**를 **throw**, 및 **catch** 식입니다.
+예외 처리를 구현 하 C++를 사용 하면 **시도**, **throw**, 및 **catch** 식.
 
 먼저 사용 하 여는 **시도** 블록이 예외를 throw 할 수 있는 하나 이상의 문을 묶습니다.
 
@@ -94,6 +94,6 @@ catch(...) {
 ## <a name="see-also"></a>참고자료
 
 [C++ 예외 처리](../cpp/cpp-exception-handling.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [처리되지 않은 C++ 예외](../cpp/unhandled-cpp-exceptions.md)<br/>
 [__uncaught_exception](../c-runtime-library/reference/uncaught-exception.md)

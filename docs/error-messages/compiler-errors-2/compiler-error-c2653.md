@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2653
 ms.assetid: 3f49e731-affd-43a0-a8d0-181db7650bc3
 ms.openlocfilehash: d4a3a8a74483317b87e16458f44016f0aeca1379
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62350782"
 ---
 # <a name="compiler-error-c2653"></a>컴파일러 오류 C2653
 
@@ -21,7 +21,7 @@ ms.locfileid: "50471151"
 
 이 오류는 클래스, 구조체, 공용 구조체 또는 범위 연산자 앞에 네임 스페이스 선언 되지 않은 이름을 사용 하는 경우에 발생할 수 있습니다. 이 문제를 해결 하려면 이름을 선언 또는 사용 하기 전에 이름을 선언 하는 헤더를 포함 합니다.
 
-C2653 가능 정의 하려는 경우는 *복합 네임 스페이스*, 하나 이상의 범위를 중첩 된 네임 스페이스 이름이 포함 된 네임 스페이스입니다. 복합 네임 스페이스 정의 c++17 이전 c + +에서 사용할 수 없습니다. 복합 네임 스페이스 지정 하는 경우 Visual Studio 2015 업데이트 3부터 지원 합니다 [/std: c + + 최신](../../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션입니다. Visual c + + 2017 버전 15.5부터 컴파일러가 지 원하는 복합 네임 스페이스 정의 경우 합니다 [/std: c + + 17](../../build/reference/std-specify-language-standard-version.md) 옵션을 지정 합니다.
+C2653 가능 정의 하려는 경우는 *복합 네임 스페이스*, 하나 이상의 범위를 중첩 된 네임 스페이스 이름이 포함 된 네임 스페이스입니다. 복합 네임 스페이스 정의에서 허용 되지 않습니다 C++ c++17 이전 합니다. 복합 네임 스페이스 지정 하는 경우 Visual Studio 2015 업데이트 3부터 지원 합니다 [/std: c + + 최신](../../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션입니다. 시각적 개체의 시작 C++ 2017 버전 15.5 컴파일러 복합 네임 스페이스 정의 지 원하는 경우를 [/std: c + + 17](../../build/reference/std-specify-language-standard-version.md) 옵션을 지정 합니다.
 
 ## <a name="examples"></a>예제
 

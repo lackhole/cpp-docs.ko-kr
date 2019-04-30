@@ -5,11 +5,11 @@ f1_keywords:
 - AMP_GRAPHICS/Concurrency
 ms.assetid: 4529d3b1-d7da-4ffb-82bf-080915e0f23e
 ms.openlocfilehash: ef61c93e062b375377a0afe62aa7f622f6c0d4ac
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375602"
 ---
 # <a name="concurrencygraphics-namespace"></a>Concurrency::graphics 네임스페이스
 
@@ -46,7 +46,7 @@ namespace graphics;
 
 |이름|설명|
 |----------|-----------------|
-|[texture 클래스](texture-class.md)|텍스처는 범위 도메인에서 accelerator_view에 대 한 데이터 집계 합니다. 범위 도메인에서 각 요소에 대 한 변수 컬렉션입니다. C + + 기본 형식 (부호 없는 int, int, float, double)에 해당 하는 값을 보유 하는 각 변수 또는 concurrency:: graphics에 정의 된 스칼라 형식 norm 또는 unorm (concurrency:: graphics에 정의 됨), 적합 한 short 벡터 형식입니다.|
+|[texture 클래스](texture-class.md)|텍스처는 범위 도메인에서 accelerator_view에 대 한 데이터 집계 합니다. 범위 도메인에서 각 요소에 대 한 변수 컬렉션입니다. 각 변수는 해당 하는 값 C++ (unsigned int, int, float, double) 기본 형식 또는 스칼라 concurrency:: graphics에 정의 된 적합 한 short 벡터 형식 norm 또는 unorm (concurrency:: graphics에 정의 됨)을 입력 합니다.|
 |[writeonly_texture_view 클래스](writeonly-texture-view-class.md)|Writeonly_texture_view는 텍스처에 대 한 writeonly 액세스를 제공합니다.|
 |[double_2 클래스](double-2-class.md)|2의 짧은 벡터를 나타냅니다 `double` 값입니다.|
 |[double_3 클래스](double-3-class.md)|3의 짧은 벡터를 나타냅니다 `double` 값입니다.|

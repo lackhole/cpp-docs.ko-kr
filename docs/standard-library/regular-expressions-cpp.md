@@ -7,33 +7,33 @@ helpviewer_keywords:
 - regular expressions
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
 ms.openlocfilehash: dafbe7c7ba10db2b0f34fdc6065c1475d63be284
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369035"
 ---
 # <a name="regular-expressions-c"></a>정규식(C++)
 
-C + + 표준 라이브러리는 여러 정규식 문법 지원합니다. 이 항목에서는 정규식을 사용 하는 경우 사용할 수 있는 문법 변동을 설명 합니다.
+C++ 표준 라이브러리는 여러 정규식 문법 지원 합니다. 이 항목에서는 정규식을 사용 하는 경우 사용할 수 있는 문법 변동을 설명 합니다.
 
 ## <a name="regexgrammar"></a> 정규식 문법
 
 사용할 정규식 문법에서 지정 된 중 하나를 사용 하는 `std::regex_constants::syntax_option_type` 열거형 값입니다. 이러한 정규식 문법 std::regex_constants에서 정의 됩니다.
 
-- `ECMAScript`:이 JavaScript 및.NET 언어에서 사용 하는 문법에 가장 가까운 것입니다.
-- `basic`: POSIX 기본 정규식 또는 BRE입니다.
+- `ECMAScript`: JavaScript 및.NET 언어에서 사용 하는 문법에 가장 가까운입니다.
+- `basic`: BRE를 POSIX 기본 정규식입니다.
 - `extended`: POSIX 정규식 또는 ERE 확장 합니다.
-- `awk`: `extended`를 인쇄할 수 없는 문자에 대 한 추가 이스케이프 되었지만 합니다.
-- `grep`: `basic`를 사용 하면 수도 줄 바꿈 ('\n') 문자 여 교체를 구분할 합니다.
-- `egrep`: `extended`, 그러나 줄 바꿈 문자 여 교체를 구분할 수 있습니다.
+- `awk`: 이것이 `extended`, 인쇄할 수 없는 문자에 대 한 추가 이스케이프 되었지만 합니다.
+- `grep`: 이것이 `basic`를 사용 하면 수도 줄 바꿈 ('\n') 문자 여 교체를 구분할 합니다.
+- `egrep`: 이것이 `extended`, 그러나 줄 바꿈 문자 여 교체를 구분할 수 있습니다.
 
 문법이 없습니다 지정 된 경우 기본적으로 `ECMAScript` 것으로 간주 됩니다. 문법 하나만 지정할 수 있습니다.
 
 문법을 외에도 몇 가지 플래그를 적용할 수 있습니다.
 - `icase`: 비교 시 대/소문자를 무시 합니다.
-- `nosubs`:-표시 된 일치 항목 (즉, 괄호로 묶인 식);를 무시 하는 중 없는 대체 저장 됩니다.
-- `optimize`: 가능한 큰 생성할 때 단점이 더 빨리 일치를 확인 합니다.
+- `nosubs`: 표시 된 일치 항목 (즉, 괄호로 묶인 식); 무시 없는 대체 저장 됩니다.
+- `optimize`: 큰 생성 시의 가능한 비용에 더 빨리 일치를 확인 합니다.
 - `collate`: 로캘 구분 데이터 정렬 시퀀스 (예: "[a-z]" 형식의 범위)를 사용 합니다.
 
 0 개 이상의 플래그 정규식 엔진 동작을 지정 하는 문법에 결합할 수 있습니다. 플래그 지정 된 경우 `ECMAScript` 문법으로 간주 됩니다.
@@ -304,7 +304,7 @@ dsw 문자 이스케이프는 다음 표와 같이 문자 클래스에 대한 �
 |"\s"|"[[:s:]]"|"[[:space:]]"|
 |"\S"|"[^[:s:]]"|"[^[:space:]]"|
 |"\w"|"[[:w:]]"|"[a-zA-Z0-9_]"\*|
-|"\W"|"[^[:w:]]"|"[^ a-zA-Z0-9_]"\*|
+|"\W"|"[^[:w:]]"|"[^a-zA-Z0-9_]"\*|
 
 \*ASCII 문자 집합
 
@@ -393,7 +393,7 @@ non-greedy 반복은 패턴과 일치하는 대상 시퀀스의 가장 짧은 �
 
 `ECMAScript`에서 다음 문자는 특별한 의미가 있습니다.
 
-- ^  $  \  .  \*  +  ?  (  )  \[  ]  {  }&#124;
+- ^  $  \  .  \*  +  ?  (  )  \[  ]  {  }  &#124;
 
 `basic` 및 `grep`에서 다음 문자는 특별한 의미가 있습니다.
 
@@ -480,7 +480,7 @@ non-greedy 반복은 패턴과 일치하는 대상 시퀀스의 가장 짧은 �
 |"$&"|"&"|전체 정규식과 일치하는 문자 시퀀스(`[match[0].first, match[0].second)`)|
 |"$$"||"$"|
 ||"\\&"|"&"|
-|"$\`" (달러 기호와 역따옴표)||시퀀스 앞의 정규식과 일치하는 문자 시퀀스(`[match.prefix().first, match.prefix().second)`)|
+|"$\`" (달러 기호와 역따옴표) | | 정규식과 일치 하는 하위 시퀀스 앞에 오는 문자 시퀀스 (`[match.prefix().first, match.prefix().second)`)|
 |"$'"(달러 기호와 작은따옴표)||시퀀스 다음의 정규식과 일치하는 문자 시퀀스(`[match.suffix().first, match.suffix().second)`)|
 |"$n"|"\n"|위치에서 캡처 그룹과 일치 하는 문자 시퀀스 `n`, 여기서 `n` 는 0에서 9 사이의 숫자 (`[match[n].first, match[n].second)`)|
 ||"\\\n"|"\n"|

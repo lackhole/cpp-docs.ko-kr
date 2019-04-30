@@ -40,11 +40,11 @@ helpviewer_keywords:
 - error messages, getting
 ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
 ms.openlocfilehash: 00ff9d0df1a78d07eaa509201fb998b30396cc4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353824"
 ---
 # <a name="strerrors-strerrors-wcserrors-wcserrors"></a>strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 
@@ -122,7 +122,7 @@ errno_t __wcserror_s(
 
 ## <a name="remarks"></a>설명
 
-합니다 **strerror_s** 맵 함수 *errnum* 오류 메시지 문자열로 문자열을 반환 *버퍼*합니다. **_strerror_s** 오류 번호를;를 사용 하지 않습니다의 현재 값을 사용 하 여 **errno** 적절 한 메시지를 확인 하려면. 모두 **strerror_s** 도 **_strerror_s** 실제로 메시지를 출력 합니다:는 같은 출력 함수를 호출 해야 [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
+합니다 **strerror_s** 맵 함수 *errnum* 오류 메시지 문자열로 문자열을 반환 *버퍼*합니다. **_strerror_s** 오류 번호를;를 사용 하지 않습니다의 현재 값을 사용 하 여 **errno** 적절 한 메시지를 확인 하려면. 모두 **strerror_s** 도 **_strerror_s** 실제로 메시지를 출력 합니다. 이 위해 같은 출력 함수를 호출 해야 [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
 ```C
 if (( _access( "datafile",2 )) == -1 )

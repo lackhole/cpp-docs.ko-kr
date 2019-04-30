@@ -13,11 +13,11 @@ f1_keywords:
 - AMP_GRAPHICS/concurrency::sampler::graphics::filter_mode
 ms.assetid: 9a6a9807-497d-402d-b092-8c4d86275b80
 ms.openlocfilehash: 1a66e4d025a7592b78839dbe5f25f9103da41224
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352595"
 ---
 # <a name="sampler-class"></a>sampler 클래스
 
@@ -59,7 +59,7 @@ class sampler;
 |[border_color](#border_color)|테두리 색을 가져옵니다는 `sampler` 개체입니다.|
 |[filter_mode](#filter_mode)|필터 모드를 가져옵니다는 `sampler` 개체입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `sampler`
 
@@ -179,7 +179,7 @@ Concurrency::graphics::filter_mode get_filter_mode() const restrict(amp, cpu);
 
 샘플러에 구성 된 필터 모드입니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 다른 샘플러 개체의 값을 기존 샘플러에 할당합니다.
 

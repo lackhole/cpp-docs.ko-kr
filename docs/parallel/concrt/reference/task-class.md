@@ -15,11 +15,11 @@ helpviewer_keywords:
 - task class
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
 ms.openlocfilehash: 99676ac0fff9584cd8453562f8918f6cadd66666
-ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58278540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385208"
 ---
 # <a name="task-class-concurrency-runtime"></a>작업 클래스(동시성 런타임)
 
@@ -180,8 +180,7 @@ task& operator= (task&& _Other);
 
 ### <a name="remarks"></a>설명
 
-
-  `task`가 스마트 포인터와 같이 작동할 경우, 복사 할당 후 이 `task` 개체는 `_Other`와 동일한 실제 작업을 나타냅니다.
+`task`가 스마트 포인터와 같이 작동할 경우, 복사 할당 후 이 `task` 개체는 `_Other`와 동일한 실제 작업을 나타냅니다.
 
 ##  <a name="operator_eq_eq"></a> operator==
 
@@ -252,16 +251,13 @@ task(
 
 ### <a name="remarks"></a>설명
 
+`task`에 대한 기본 생성자는 컨테이너 내에서 사용할 수 있는 작업을 허용하기 위해서만 존재합니다. 유효한 작업을 할당할 때까지 기본 생성 작업을 사용할 수 없습니다. 와 같은 메서드 `get`, `wait` 또는 `then` 시킵니다를 [invalid_argument](../../../standard-library/invalid-argument-class.md) 는 기본 생성 작업에서 호출 하는 동안 예외가 발생 합니다.
 
-  `task`에 대한 기본 생성자는 컨테이너 내에서 사용할 수 있는 작업을 허용하기 위해서만 존재합니다. 유효한 작업을 할당할 때까지 기본 생성 작업을 사용할 수 없습니다. 와 같은 메서드 `get`, `wait` 또는 `then` 시킵니다를 [invalid_argument](../../../standard-library/invalid-argument-class.md) 는 기본 생성 작업에서 호출 하는 동안 예외가 발생 합니다.
-
-
-  `task_completion_event`에서 만든 작업은 작업 완료 이벤트가 설정되면 완료됩니다(연속 실행되도록 예약되어 있음).
+`task_completion_event`에서 만든 작업은 작업 완료 이벤트가 설정되면 완료됩니다(연속 실행되도록 예약되어 있음).
 
 취소 토큰을 사용하는 생성자의 버전은 이 토큰을 가져온 `cancellation_token_source`를 사용하여 취소할 수 있는 작업을 만듭니다. 취소 토큰 없이 만든 작업은 취소할 수 없습니다.
 
-
-  `Windows::Foundation::IAsyncInfo` 인터페이스에서 생성되었거나 `IAsyncInfo` 인터페이스를 반환하는 람다에서 생성된 작업은 포함된 Windows 런타임 비동기 작업 또는 동작이 완료될 때 종료 상태에 도달합니다. 마찬가지로 `task<result_type>`을 반환하는 람다에서 생성된 작업은 내부 작업이 종료 상태에 도달하고 람다가 반환되지 않을 때 종료 상태에 도달합니다.
+`Windows::Foundation::IAsyncInfo` 인터페이스에서 생성되었거나 `IAsyncInfo` 인터페이스를 반환하는 람다에서 생성된 작업은 포함된 Windows 런타임 비동기 작업 또는 동작이 완료될 때 종료 상태에 도달합니다. 마찬가지로 `task<result_type>`을 반환하는 람다에서 생성된 작업은 내부 작업이 종료 상태에 도달하고 람다가 반환되지 않을 때 종료 상태에 도달합니다.
 
 `task`는 스마트 포인터처럼 작동하고 값으로 안전하게 전달됩니다. 또한 잠글 필요 없이 여러 스레드에서 액세스할 수 있습니다.
 
@@ -335,8 +331,7 @@ __declspec(
 
 ##  <a name="wait"></a> 대기
 
-이 작업이 종료 상태에 도달할 때까지 기다립니다. 
-  `wait`은 작업 종속성을 모두 만족하며 백그라운드 작업자에 의해 이미 선택되지 않은 경우 작업을 인라인 실행할 수 있습니다.
+이 작업이 종료 상태에 도달할 때까지 기다립니다. `wait`은 작업 종속성을 모두 만족하며 백그라운드 작업자에 의해 이미 선택되지 않은 경우 작업을 인라인 실행할 수 있습니다.
 
 ```
 task_status wait() const;
@@ -344,8 +339,7 @@ task_status wait() const;
 
 ### <a name="return-value"></a>반환 값
 
-
-  `task_status` 또는 `completed`가 될 수 있는 `canceled` 값입니다. 작업 실행 중에 예외가 발생하거나 예외가 선행 작업에서 전파된 경우 `wait`은 해당 예외를 throw합니다.
+`task_status` 또는 `completed`가 될 수 있는 `canceled` 값입니다. 작업 실행 중에 예외가 발생하거나 예외가 선행 작업에서 전파된 경우 `wait`은 해당 예외를 throw합니다.
 
 ### <a name="remarks"></a>설명
 

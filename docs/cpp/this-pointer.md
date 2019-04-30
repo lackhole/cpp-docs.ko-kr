@@ -9,11 +9,11 @@ helpviewer_keywords:
 - this pointer
 ms.assetid: 92e3256a-4ad9-4d46-8be1-d77fad90791f
 ms.openlocfilehash: c90a843ba978a98c1c61d9e096d62b85256ab0c4
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330481"
 ---
 # <a name="this-pointer"></a>this 포인터
 
@@ -65,7 +65,7 @@ if (&Object != this) {
 ```
 
 > [!NOTE]
->  때문에 **이** 포인터는 수정할 수 없는, 할당할 **이** 허용 되지 않습니다. C + +의 이전 구현에 할당할 수 있었습니다 **이**합니다.
+>  때문에 **이** 포인터는 수정할 수 없는, 할당할 **이** 허용 되지 않습니다. 이전 구현에서는 C++ 에 할당할 수 있었습니다 **이렇게**합니다.
 
 경우에 따라 합니다 **이** 포인터를 직접 사용-예를 들어, 자기 참조 데이터를 조작 하 구조를 현재 개체의 주소가 필요 합니다.
 
@@ -193,4 +193,4 @@ int main()
 
 ## <a name="see-also"></a>참고자료
 
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

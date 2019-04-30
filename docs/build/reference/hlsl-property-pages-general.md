@@ -11,15 +11,15 @@ f1_keywords:
 - VC.Project.FXCompilerTool.EntryPointName
 ms.assetid: 0e02f2a6-f123-43da-b04b-a0719a7c2b03
 ms.openlocfilehash: 0fce8a3b2a43cf05024a028a9e3325a929922abb
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291472"
 ---
 # <a name="hlsl-property-pages-general"></a>HLSL 속성 페이지: 일반
 
-HLSL 컴파일러(fxc.exe)의 다음 속성을 구성하려면 해당 **일반** 속성 페이지를 사용합니다. 액세스 하는 방법에 대 한 자세한 합니다 **일반적인** HLSL 폴더 속성 페이지를에서 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+HLSL 컴파일러(fxc.exe)의 다음 속성을 구성하려면 해당 **일반** 속성 페이지를 사용합니다. 액세스 하는 방법에 대 한 자세한 합니다 **일반적인** HLSL 폴더 속성 페이지를에서 참조 하세요 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 ## <a name="uielement-list"></a>UI 요소 목록
 

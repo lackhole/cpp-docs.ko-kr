@@ -5,11 +5,11 @@ helpviewer_keywords:
 - declarators, about declarators
 ms.assetid: 0f2e2312-80bd-4154-8345-718bd9ed2173
 ms.openlocfilehash: e651b4422a159bf947e364c82cc4aac1b888d30d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177084"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345839"
 ---
 # <a name="overview-of-declarators"></a>선언자 개요
 
@@ -158,15 +158,15 @@ int a, *b, c[5], **d, &e=a;
 
   - 식별자
   - 정규화 된 이름
-  - 선언 자 (인수 목록) [cv-qualfiers] [예외-spec]
-  - 선언 자 [[상수-식]]
+  - declarator ( argument-list ) [cv-qualfiers] [exception-spec]
+  - declarator [ [ constant-expression ] ]
   - 포인터 연산자 선언 자
   - (선언)
 
 - 및 *포인터 연산자* 중 하나입니다.
 
-  - \* [cv 한정자]
-  - & [cv 한정자]:: 중첩 이름 지정자 \* [cv 한정자]
+  - \* [cv-qualifiers]
+  - & [cv-qualifiers] ::nested-name-specifier \* [cv-qualifiers]
 
 선언자에 선언자를 포함시킬 수 있기 때문에, 위의 규칙을 사용하여 포인터의 배열이나 함수 포인터의 배열을 반환하는 함수 같은 더욱 복잡한 파생 형식을 생성할 수 있습니다.  생성의 각 단계의 만들려면, 기본 데이터 형식을 표시하는 식별자로 시작하여 이전의 식을 `declarator`로 사용해 위의 구문 규칙을 적용해야 합니다.  구문 규칙을 적용하는 순서는 영어로 식을 만드는 방식의 반대입니다.  적용 하는 경우는 *포인터 연산자* 배열 또는 마지막 행 다음 표에서 같이 함수에 대 한 포인터를 원하는 경우 배열 또는 함수 식에 구문 규칙에서 괄호를 사용 합니다.
 
@@ -179,4 +179,4 @@ int a, *b, c[5], **d, &e=a;
 |요소가 10개인 배열|`(*i)[10]`|4|
 |포인터|`*((*i)[10])`|6 다음에 5|
 
-여러 포인터, 참조, 배열 또는 함수 한정자가 사용될 때 선언자는 매우 복잡해질 수 있습니다.  항목 [더 복잡 한 선언 자 해석](../c-language/interpreting-more-complex-declarators.md) 더 복잡 한 선언 자 구문을 읽는 방법에 설명 합니다.  어디서 나 c + +에서 하지만 항목은 C 및 c + +, 모두에 적용 합니다 \* MyClass 같은 정규화 된 이름은 포인터를 나타내는 데 사용 됩니다::\* 클래스의 멤버에 대 한 포인터를 지정 하려면 사용할 수 있습니다.
+여러 포인터, 참조, 배열 또는 함수 한정자가 사용될 때 선언자는 매우 복잡해질 수 있습니다.  항목 [더 복잡 한 선언 자 해석](../c-language/interpreting-more-complex-declarators.md) 더 복잡 한 선언 자 구문을 읽는 방법에 설명 합니다.  항목 C에 적용 됩니다 및 C++이지만에서 C++어디서 나 합니다 \* MyClass 같은 정규화 된 이름은 포인터를 나타내는 데 사용 됩니다::\* 클래스의 멤버에 대 한 포인터를 지정 하려면 사용할 수 있습니다.

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
 ms.openlocfilehash: 213bc8087b58eac232cc8fcfccc88e13785a807e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358296"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>연습: MFC Scribble 응용 프로그램 (파트 1) 업데이트
 
@@ -87,14 +87,11 @@ ms.locfileid: "57258764"
 
 1. mainfrm.cpp 파일에서
 
-    1. 
-  `m_wndToolBar.SetBarStyle`를 `m_wndToolBar.SetPaneStyle`으로 대체합니다.
+    1. `m_wndToolBar.SetBarStyle`를 `m_wndToolBar.SetPaneStyle`으로 대체합니다.
 
-    1. 
-  `m_wndToolBar.GetBarStyle`를 `m_wndToolBar.GetPaneStyle`으로 대체합니다.
+    1. `m_wndToolBar.GetBarStyle`를 `m_wndToolBar.GetPaneStyle`으로 대체합니다.
 
-    1. 
-  `DockControlBar(&m_wndToolBar)`를 `DockPane(&m_wndToolBar)`으로 대체합니다.
+    1. `DockControlBar(&m_wndToolBar)`를 `DockPane(&m_wndToolBar)`으로 대체합니다.
 
 1. ipframe.cpp 파일에서 코드의 다음 세 줄을 주석으로 처리합니다.
 
@@ -272,4 +269,4 @@ A *비주얼 관리자* 는 응용 프로그램에 대 한 모든 그리기를 �
 ## <a name="see-also"></a>참고자료
 
 [연습](../mfc/walkthroughs-mfc.md)<br/>
-[연습: MFC 자유 곡선 응용 프로그램 (2 부)를 업데이트 하는 중](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)
+[연습: MFC 자유 곡선 애플리케이션 업데이트(2부)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)

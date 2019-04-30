@@ -15,15 +15,15 @@ helpviewer_keywords:
 - HWND, window objects [MFC]
 ms.assetid: 28b33ce2-af05-4617-9d03-1cb9a02be687
 ms.openlocfilehash: b62f43aa0d37c5e614636b3d7543bc927d41039b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378078"
 ---
 # <a name="window-objects"></a>창 개체
 
-MFC 클래스를 제공 [CWnd](../mfc/reference/cwnd-class.md) 캡슐화 하는 `HWND` 는 창의 핸들입니다. `CWnd` 개체는 Windows 창을 나타내는 `HWND`와 다른 C++ 창 개체이지만 이를 포함합니다. `CWnd`를 사용하여 고유한 자식 창 클래스를 파생시키거나 `CWnd`에서 파생된 여러 MFC 클래스 중 하나를 사용합니다. `CWnd` 클래스는 프레임 창, 대화 상자, 자식 창, 컨트롤 및 컨트롤 막대(예: 도구 모음)를 포함하는 모든 창에 대한 기본 클래스입니다. 이해가 [c + + 창 개체와 HWND 간 관계](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md) MFC 통한 효율적인 프로그래밍에 대 한 중요 합니다.
+MFC 클래스를 제공 [CWnd](../mfc/reference/cwnd-class.md) 캡슐화 하는 `HWND` 는 창의 핸들입니다. `CWnd` 개체는 Windows 창을 나타내는 `HWND`와 다른 C++ 창 개체이지만 이를 포함합니다. `CWnd`를 사용하여 고유한 자식 창 클래스를 파생시키거나 `CWnd`에서 파생된 여러 MFC 클래스 중 하나를 사용합니다. `CWnd` 클래스는 프레임 창, 대화 상자, 자식 창, 컨트롤 및 컨트롤 막대(예: 도구 모음)를 포함하는 모든 창에 대한 기본 클래스입니다. 이해가 [간의 관계를 C++ 창 개체와 HWND](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md) MFC 통한 효율적인 프로그래밍에 대 한 중요 합니다.
 
 MFC에서는 몇 가지 기본 기능 및 창 관리를 제공하지만 `CWnd`에서 고유한 클래스를 파생시킬 수 있고 해당 멤버 함수를 사용하여 제공된 기능을 사용자 지정할 수 있습니다. 자식 창을 만들거나 구성 하 여는 `CWnd` 개체와 호출 해당 [Create](../mfc/reference/cwnd-class.md#create) 멤버 함수를 사용 하 여 자식 창을 사용자 지정할 `CWnd` 멤버 함수입니다. 파생 된 개체를 포함할 수 있습니다 [CView](../mfc/reference/cview-class.md)예: 폼 뷰 또는 프레임 창에서 트리 보기입니다. 클래스에서 제공 하는 분할자 창을 통해 문서의 여러 뷰를 지원할 수 있습니다 [CSplitterWnd](../mfc/reference/csplitterwnd-class.md)합니다.
 
@@ -41,7 +41,7 @@ Windows 프로그래밍에 대한 일반 문서는 `CWnd` API를 캡슐화하는
 
 ### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
-- [C + + 창 개체와 HWND 간 관계](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md)
+- [관계는 C++ 창 개체와 HWND](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md)
 
 - [파생 된 창 클래스](../mfc/derived-window-classes.md)
 

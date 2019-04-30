@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK2031
 ms.assetid: 18ed4b6e-3e75-443c-bbd8-2f6030dc89ee
 ms.openlocfilehash: 003b9a58bfb08130f034530f59e2de27efa2ae8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62298921"
 ---
 # <a name="linker-tools-error-lnk2031"></a>링커 도구 오류 LNK2031
 
@@ -19,7 +19,7 @@ ms.locfileid: "50484839"
 
 ## <a name="remarks"></a>설명
 
-네이티브 함수를 순수 이미지를 가져올 된다는 점을 기억 하십시오 하려고 할 때 네이티브 및 순수 컴파일 간에 암시적 호출 규칙이 다릅니다. 순수 이미지에 대 한 자세한 내용은 참조 하세요. [순수형 및 안정형 코드 (C + + /cli CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md)합니다.
+네이티브 함수를 순수 이미지를 가져올 된다는 점을 기억 하십시오 하려고 할 때 네이티브 및 순수 컴파일 간에 암시적 호출 규칙이 다릅니다. 순수 이미지에 대 한 자세한 내용은 참조 하세요. [순수형 및 안정형 코드 (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md)합니다.
 
 **/clr: pure** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않습니다.
 

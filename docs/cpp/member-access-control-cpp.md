@@ -7,11 +7,11 @@ helpviewer_keywords:
 - member-access control [C++]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
 ms.openlocfilehash: 367ee5183498453b9ce647c8e91ad1194f90fbd2
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740275"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345037"
 ---
 # <a name="member-access-control-c"></a>멤버 액세스 제어(C++)
 
@@ -112,11 +112,9 @@ int main()
 }
 ```
 
+`DerivedClass1`에서는 `PublicFunc`가 공용 기본 클래스이므로 멤버 함수 `ProtectedFunc`가 공용 멤버이고 `BaseClass`가 보호된 멤버입니다. `PrivateFunc`는 `BaseClass` 전용이며 모든 파생 클래스에서 액세스할 수 없습니다.
 
-  `DerivedClass1`에서는 `PublicFunc`가 공용 기본 클래스이므로 멤버 함수 `ProtectedFunc`가 공용 멤버이고 `BaseClass`가 보호된 멤버입니다. `PrivateFunc`는 `BaseClass` 전용이며 모든 파생 클래스에서 액세스할 수 없습니다.
-
-
-  `DerivedClass2`에서는 `PublicFunc`가 전용 기본 클래스이므로 `ProtectedFunc` 및 `BaseClass` 함수가 전용 멤버로 간주됩니다. 여기서도 `PrivateFunc`는 `BaseClass` 전용이며 모든 파생 클래스에서 액세스할 수 없습니다.
+`DerivedClass2`에서는 `PublicFunc`가 전용 기본 클래스이므로 `ProtectedFunc` 및 `BaseClass` 함수가 전용 멤버로 간주됩니다. 여기서도 `PrivateFunc`는 `BaseClass` 전용이며 모든 파생 클래스에서 액세스할 수 없습니다.
 
 파생 클래스는 기본 클래스 액세스 지정자 없이 선언할 수 있습니다. 이러한 경우에 파생 파생된 클래스 선언에서 사용 하는 경우 개인 비율은 합니다 **클래스** 키워드입니다. 파생은 파생된 클래스 선언에서 사용 하는 경우에 공용으로 간주 됩니다 합니다 **구조체** 키워드입니다. 예를 들어, 다음 코드는
 
@@ -189,8 +187,7 @@ int Derived2::ShowCount()
 }
 ```
 
-위 코드에서는 액세스 제어가 `Derived2`에 대한 포인터를 `Base`에 대한 포인터로 변환하지 못하도록 합니다. **이렇게** 포인터는 암시적으로 형식이 `Derived2 *`합니다. 선택 하는 `CountOf` 함수를 **이** 형식으로 변환 해야 `Base *`합니다. 
-  `Base`가 `Derived2`에 대한 전용 간접 기본 클래스이므로 이러한 변환이 허용되지 않습니다. 직접 파생 클래스에 대한 포인터에 대해서만 전용 기본 클래스 형식으로 변환할 수 있습니다. 따라서 `Derived1 *`형식의 포인터를 `Base *` 형식으로 변환할 수 있습니다.
+위 코드에서는 액세스 제어가 `Derived2`에 대한 포인터를 `Base`에 대한 포인터로 변환하지 못하도록 합니다. **이렇게** 포인터는 암시적으로 형식이 `Derived2 *`합니다. 선택 하는 `CountOf` 함수를 **이** 형식으로 변환 해야 `Base *`합니다. `Base`가 `Derived2`에 대한 전용 간접 기본 클래스이므로 이러한 변환이 허용되지 않습니다. 직접 파생 클래스에 대한 포인터에 대해서만 전용 기본 클래스 형식으로 변환할 수 있습니다. 따라서 `Derived1 *`형식의 포인터를 `Base *` 형식으로 변환할 수 있습니다.
 
 선택하기 위한 포인터, 참조 또는 개체를 사용하지 않고 `CountOf` 함수를 명시적으로 호출하면 변환이 수행되지 않습니다. 따라서 호출이 허용됩니다.
 
@@ -240,8 +237,7 @@ int main()
 ![상속 그래프의 경로 따라 액세스](../cpp/media/vc38v91.gif "상속 그래프의 경로 따라 액세스") <br/>
 상속 그래프의 경로를 따라 액세스
 
-그림에서 클래스 `VBase`에 선언된 이름은 언제나 클래스 `RightPath`를 통해 도달됩니다.  
-  `RightPath`는 `VBase`를 공용 기본 클래스로 선언하지만, `LeftPath`는 `VBase`를 비공개로 선언합니다. 따라서, 오른쪽 경로를 보다 쉽게 액세스할 수 있습니다.
+그림에서 클래스 `VBase`에 선언된 이름은 언제나 클래스 `RightPath`를 통해 도달됩니다.  `RightPath`는 `VBase`를 공용 기본 클래스로 선언하지만, `LeftPath`는 `VBase`를 비공개로 선언합니다. 따라서, 오른쪽 경로를 보다 쉽게 액세스할 수 있습니다.
 
 ## <a name="see-also"></a>참고자료
 

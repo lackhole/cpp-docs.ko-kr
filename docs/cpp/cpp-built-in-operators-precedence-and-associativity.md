@@ -1,5 +1,5 @@
 ---
-title: C + + 기본 제공 연산자, 우선 순위 및 결합성
+title: C++기본 제공 연산자, 우선 순위 및 결합성
 ms.date: 11/04/2016
 helpviewer_keywords:
 - operators (C++), hierarchy
@@ -13,13 +13,13 @@ helpviewer_keywords:
 - hierarchy, operator
 ms.assetid: 95c1f0ba-dad8-4034-b039-f79a904f112f
 ms.openlocfilehash: 0b560913deb57393a8547f0831e0d987eed41ab7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392351"
 ---
-# <a name="c-built-in-operators-precedence-and-associativity"></a>C + + 기본 제공 연산자, 우선 순위 및 결합성
+# <a name="c-built-in-operators-precedence-and-associativity"></a>C++기본 제공 연산자, 우선 순위 및 결합성
 
 C++ 언어는 모든 C 연산자를 포함하며 몇 가지 새로운 연산자를 추가합니다. 연산자는 둘 이상의 피연산자에 대해 수행할 평가를 지정합니다.
 
@@ -50,7 +50,7 @@ C++ 언어는 모든 C 연산자를 포함하며 몇 가지 새로운 연산자�
 |[논리적 not](../cpp/logical-negation-operator-exclpt.md)|[\!](../cpp/logical-negation-operator-exclpt.md)|
 |[단항 부정](../cpp/unary-plus-and-negation-operators-plus-and.md)|[-](../cpp/unary-plus-and-negation-operators-plus-and.md)|
 |[단항 더하기](../cpp/unary-plus-and-negation-operators-plus-and.md)|[+](../cpp/unary-plus-and-negation-operators-plus-and.md)|
-|[주소](../cpp/address-of-operator-amp.md)|[&amp;](../cpp/address-of-operator-amp.md)|
+|[Address-of](../cpp/address-of-operator-amp.md)|[&amp;](../cpp/address-of-operator-amp.md)|
 |[간접 참조](../cpp/indirection-operator-star.md)|[&#42;](../cpp/indirection-operator-star.md)|
 |[개체 만들기](../cpp/new-operator-cpp.md)|[new](../cpp/new-operator-cpp.md)|
 |[개체 삭제](../cpp/delete-operator-cpp.md)|[delete](../cpp/delete-operator-cpp.md)|

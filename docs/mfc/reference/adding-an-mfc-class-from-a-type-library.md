@@ -7,11 +7,11 @@ helpviewer_keywords:
 - type libraries, adding MFC classes from
 ms.assetid: aba40476-3cfb-47af-990e-ae2e9e0d79cf
 ms.openlocfilehash: e8264de2c717c874da157cb29ad5e336e3ecbd0f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57301588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62296750"
 ---
 # <a name="adding-an-mfc-class-from-a-type-library"></a>형식 라이브러리에서 MFC 클래스 추가
 
@@ -37,4 +37,4 @@ ms.locfileid: "57301588"
 ## <a name="see-also"></a>참고자료
 
 [자동화 클라이언트](../../mfc/automation-clients.md)<br/>
-[자동화 클라이언트: 형식 라이브러리를 사용 하 여](../../mfc/automation-clients-using-type-libraries.md)
+[자동화 클라이언트: 형식 라이브러리 사용](../../mfc/automation-clients-using-type-libraries.md)

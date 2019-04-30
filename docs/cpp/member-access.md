@@ -1,4 +1,4 @@
-﻿---
+---
 title: 멤버 액세스
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,11 +10,11 @@ helpviewer_keywords:
 - smart pointers
 ms.assetid: 8c7b2c43-eb92-4d42-9a8e-61aa37d71333
 ms.openlocfilehash: 34527f818b135fd5af629ebb69feaffd03b715fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301632"
 ---
 # <a name="member-access"></a>멤버 액세스
 

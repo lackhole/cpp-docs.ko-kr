@@ -21,11 +21,11 @@ helpviewer_keywords:
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
 ms.openlocfilehash: a4979ab7bbc0e396de5629fba1b86f3bfb602dcf
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322724"
 ---
 # <a name="diagnostic-services"></a>진단 서비스
 
@@ -416,7 +416,7 @@ CDumpContext  afxDump;
 
 `afxDump` 미리 정의 된 [CDumpContext](../../mfc/reference/cdumpcontext-class.md) 보낼 수 있는 개체 `CDumpContext` 정보를 디버거 출력 창 또는 디버그 터미널. 일반적으로 제공 `afxDump` 매개 변수로 `CObject::Dump`합니다.
 
-Windows NT 및 Windows에서의 모든 버전에서 `afxDump` 출력은 응용 프로그램을 디버깅할 때 Visual c + +의 디버그 출력 창에 전송 됩니다.
+Windows NT 및 Windows에서의 모든 버전에서 `afxDump` 출력은 다음과 같은 시각적 개체의 디버그 출력 창에 전송 됩니다. C++ 응용 프로그램을 디버깅 하는 경우.
 
 이 변수는 MFC의 디버그 버전에만 정의 됩니다. 에 대 한 자세한 `afxDump`를 참조 하세요 [MFC 응용 프로그램 디버깅](/visualstudio/debugger/mfc-debugging-techniques)합니다.
 

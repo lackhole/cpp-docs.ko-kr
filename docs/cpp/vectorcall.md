@@ -10,11 +10,11 @@ helpviewer_keywords:
 - __vectorcall
 ms.assetid: 1c95ed59-86c6-4857-b4ed-10519193f851
 ms.openlocfilehash: 55c383c4bdf83ddb5fdf1c4990d5f2e47b4d819a
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393885"
 ---
 # <a name="vectorcall"></a>__vectorcall
 
@@ -297,7 +297,7 @@ int __cdecl main( void )
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

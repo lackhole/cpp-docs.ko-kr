@@ -29,11 +29,11 @@ helpviewer_keywords:
 - std::to_string [C++]
 - std::to_wstring [C++]
 ms.openlocfilehash: d10af9bc32acd730db1fe9da3775ac2aa84e5fff
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412347"
 ---
 # <a name="ltstringgt-functions"></a>&lt;string&gt; 함수
 
@@ -82,7 +82,7 @@ basic_istream<Allocator, Traits>& getline(
 *str*<br/>
 입력 스트림에서 문자를 읽어들일 문자열입니다.
 
-*Delim*<br/>
+*delim*<br/>
 줄 구분 기호입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -484,7 +484,7 @@ string to_string(long double Val);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*val*|변환할 값입니다.|
+|*Val*|변환할 값입니다.|
 
 ### <a name="return-value"></a>반환 값
 

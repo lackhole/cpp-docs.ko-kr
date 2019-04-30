@@ -26,11 +26,11 @@ helpviewer_keywords:
 - _putw function
 ms.assetid: 83d63644-249d-4a39-87e5-3b7aa313968d
 ms.openlocfilehash: 3fd18c2a8869d6b09703547f50ee6e096bd72395
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358055"
 ---
 # <a name="putw"></a>_putw
 
@@ -50,7 +50,7 @@ int _putw(
 *binint*<br/>
 출력할 이진 정수입니다.
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값

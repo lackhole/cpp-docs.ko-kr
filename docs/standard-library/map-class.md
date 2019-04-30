@@ -89,11 +89,11 @@ helpviewer_keywords:
 - std::map [C++], value_comp
 ms.assetid: 7876f4c9-ebb4-4878-af1e-09364c43af0a
 ms.openlocfilehash: 52a24bb2372cc7f22797ae7122b6659724c47b55
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413010"
 ---
 # <a name="map-class"></a>map 클래스
 
@@ -124,7 +124,7 @@ map에 저장되는 요소 데이터 형식입니다.
 
 C++14에서는 형식 매개 변수가 없는 std::less<> 조건자를 지정하여 유형이 다른 조회를 사용하도록 설정할 수 있습니다. 자세한 내용은 [연관 컨테이너의 유형이 다른 조회](../standard-library/stl-containers.md#sequence_containers)를 참조하세요
 
-*할당자*<br/>
+*Allocator*<br/>
 map의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<pair<const Key, Type> >`입니다.
 
 ## <a name="remarks"></a>설명
@@ -577,7 +577,7 @@ map에 정렬 키가 매개 변수 키와 일치하는 요소가 있는 경우 1
 
 구성원 함수는 다음 범위에 있는 요소 수 *x*를 반환합니다.
 
-\[ lower_bound (*키*), upper_bound (*키*))
+\[ lower_bound(*key*), upper_bound(*key*) )
 
 고유한 결합형 컨테이너인 map의 경우 0 또는 1입니다.
 
@@ -799,7 +799,7 @@ emplace(
 |매개 변수|설명|
 |-|-|
 |매개 변수|설명|
-|*인수*|값이 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 map에 삽입되는 요소를 생성하기 위해 전달되는 인수입니다.|
+|*args*|값이 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 map에 삽입되는 요소를 생성하기 위해 전달되는 인수입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -887,7 +887,7 @@ iterator emplace_hint(
 |매개 변수|설명|
 |-|-|
 |매개 변수|설명|
-|*인수*|map이 해당 요소를 이미 포함하고 있지 않거나, 보다 일반적으로는 키가 동등하게 정렬된 요소를 이미 포함하고 있지 않을 경우 map에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
+|*args*|map이 해당 요소를 이미 포함하고 있지 않거나, 보다 일반적으로는 키가 동등하게 정렬된 요소를 이미 포함하고 있지 않을 경우 map에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
 |*where*|올바른 삽입 지점 검색을 시작할 위치입니다. (해당 지점 바로 앞에 있으면 *여기서*, 로그 시간 대신 분할 상환된 상수 시간에 삽입이 발생할 수 있습니다.)|
 
 ### <a name="return-value"></a>반환 값
@@ -1115,7 +1115,7 @@ size_type erase(
 *Where*<br/>
 제거할 요소의 위치입니다.
 
-*첫 번째*<br/>
+*첫째*<br/>
 제거할 첫 번째 요소의 위치입니다.
 
 *마지막*<br/>
@@ -1410,10 +1410,10 @@ IList);
 |매개 변수|설명|
 |-|-|
 |매개 변수|설명|
-|*val*|키가 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 map에 삽입되는 요소의 값입니다.|
+|*Val*|키가 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 map에 삽입되는 요소의 값입니다.|
 |*Where*|올바른 삽입 지점 검색을 시작할 위치입니다. (해당 지점 바로 앞에 있으면 *여기서*, 로그 시간 대신 분할 상환된 상수 시간에 삽입이 발생할 수 있습니다.)|
 |*ValTy*|Map의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하는 템플릿 매개 변수 [value_type](#value_type), 및 완벽 하 게 전달 *Val* 인수로 합니다.|
-|*첫 번째*|복사할 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 마지막 요소 바로 다음 위치입니다.|
 |*InputIterator*|[value_type](#value_type) 개체를 생성하는 데 사용할 수 있는 형식의 요소를 가리키는 [입력 반복기](../standard-library/input-iterator-tag-struct.md)의 요구 사항을 충족하는 템플릿 함수 인수입니다.|
 |*IList*|요소를 복사할 원본 [initializer_list](../standard-library/initializer-list.md)입니다.|
@@ -1795,7 +1795,7 @@ map(
 |*Al*|이 map 개체에 사용할 스토리지 할당자 클래스로, 기본값은 `Allocator`입니다.|
 |*구성 요소*|map의 요소 순서를 지정하는 데 사용되는 `const Traits` 형식의 비교 함수로, 기본값은 `hash_compare`입니다.|
 |*오른쪽*|생성된 set을 복사할 map입니다.|
-|*첫 번째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.|
 |*IList*|요소를 복사할 원본 initializer_list입니다.|
 

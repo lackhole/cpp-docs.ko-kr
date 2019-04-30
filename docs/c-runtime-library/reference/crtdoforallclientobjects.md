@@ -24,11 +24,11 @@ helpviewer_keywords:
 - CrtDoForAllClientObjects function
 ms.assetid: d0fdb835-3cdc-45f1-9a21-54208e8df248
 ms.openlocfilehash: 86268bd9ac49c8ea27f715404236bcb9291f5d8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339720"
 ---
 # <a name="crtdoforallclientobjects"></a>_CrtDoForAllClientObjects
 
@@ -46,10 +46,10 @@ void _CrtDoForAllClientObjects(
 ### <a name="parameters"></a>매개 변수
 
 *pfn*<br/>
-응용 프로그램에서 제공하는 함수 콜백 함수에 대한 포인터입니다. 이 함수에 대한 첫 번째 매개 변수는 데이터를 가리킵니다. 두 번째 매개 변수는 호출에 전달 되는 상황에 맞는 포인터 **_CrtDoForAllClientObjects**합니다.
+애플리케이션에서 제공하는 함수 콜백 함수에 대한 포인터입니다. 이 함수에 대한 첫 번째 매개 변수는 데이터를 가리킵니다. 두 번째 매개 변수는 호출에 전달 되는 상황에 맞는 포인터 **_CrtDoForAllClientObjects**합니다.
 
 *context*<br/>
-응용 프로그램에서 제공하는 함수에 전달되는 응용 프로그램에서 제공하는 컨텍스트에 대한 포인터입니다.
+애플리케이션에서 제공하는 함수에 전달되는 애플리케이션에서 제공하는 컨텍스트에 대한 포인터입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -69,7 +69,7 @@ void _CrtDoForAllClientObjects(
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-**라이브러리:** 디버그 버전의 유니버설 C 런타임 라이브러리만 해당합니다.
+**라이브러리:** 디버그 버전의 유니버설 C 런타임 라이브러리만 해당 합니다.
 
 ## <a name="see-also"></a>참고자료
 

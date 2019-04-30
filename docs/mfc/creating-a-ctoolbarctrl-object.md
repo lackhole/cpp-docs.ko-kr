@@ -8,18 +8,17 @@ helpviewer_keywords:
 - CToolBarCtrl class [MFC], creating toolbars
 ms.assetid: a4f6bf0c-0195-4dbf-a09e-aee503e19dc3
 ms.openlocfilehash: d0f41731e3a4db7b15d4f2a7ebaac94135d5350d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406134"
 ---
 # <a name="creating-a-ctoolbarctrl-object"></a>CToolBarCtrl 개체 만들기
 
 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) 여러 개의 내부 데이터 구조를 포함 하는 개체-단추 이미지 비트맵의 목록을, 단추 레이블 문자열 목록이 및 목록은 `TBBUTTON` 구조-는 이미지를 연결 및/또는 위치, 스타일, 상태를 사용 하 여 문자열 및 단추의 명령 ID입니다. 각 이러한 데이터 구조의 요소의 0부터 시작 인덱스에 의해 참조 됩니다. 사용 하기 전에 `CToolBarCtrl` 개체를 이러한 데이터 구조를 설정 해야 합니다. 데이터 구조 목록을 참조 하세요 [도구 모음 컨트롤](controls-mfc.md) Windows SDK에 있습니다. 단추 레이블;에 대 한 문자열의 목록 에서만 사용할 수 있습니다. 도구 모음에서 문자열을 검색할 수 없습니다.
 
-
-  `CToolBarCtrl` 개체를 사용하려면, 일반적으로 다음 단계를 수행해야 합니다.
+`CToolBarCtrl` 개체를 사용하려면, 일반적으로 다음 단계를 수행해야 합니다.
 
 ### <a name="to-use-a-ctoolbarctrl-object"></a>CToolBarCtrl 개체를 사용 하려면
 

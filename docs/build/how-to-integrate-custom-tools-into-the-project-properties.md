@@ -7,11 +7,11 @@ helpviewer_keywords:
 - 'msbuild (c++), howto: integrate custom tools'
 ms.assetid: f32d91a4-44e9-4de3-aa9a-1c7f709ad2ee
 ms.openlocfilehash: a959eddb36a2de90ebd5b5b1b9eb5e2f4e67c03a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810161"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342150"
 ---
 # <a name="how-to-integrate-custom-tools-into-the-project-properties"></a>방법: 프로젝트 속성에 사용자 지정 도구 통합
 
@@ -39,4 +39,4 @@ Visual Studio를 사용자 지정 도구 옵션을 추가할 수 있습니다 **
 
 ## <a name="see-also"></a>참고자료
 
-[명령줄 c + +의 MSBuild](msbuild-visual-cpp.md)
+[명령줄에서 MSBuildC++](msbuild-visual-cpp.md)

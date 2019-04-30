@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CrtMemDumpAllObjectsSince function
 ms.assetid: c48a447a-e6bb-475c-9271-a3021182a0dc
 ms.openlocfilehash: 7de0ee9ff166af6336a8d14aa0dbd07dbd7d23fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347459"
 ---
 # <a name="crtmemdumpallobjectssince"></a>_CrtMemDumpAllObjectsSince
 
@@ -48,7 +48,7 @@ void _CrtMemDumpAllObjectsSince(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_CrtMemDumpAllObjectsSince** 함수에는 사용자가 읽을 수 형태로 힙에 할당 된 개체의 디버그 헤더 정보를 덤프 합니다. 덤프 정보는 응용 프로그램에서 할당을 추적하고 메모리 문제를 검색하는 데 사용할 수 있습니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtMemDumpAllObjectsSince** 전처리 중 제거 됩니다.
+합니다 **_CrtMemDumpAllObjectsSince** 함수에는 사용자가 읽을 수 형태로 힙에 할당 된 개체의 디버그 헤더 정보를 덤프 합니다. 덤프 정보는 애플리케이션에서 할당을 추적하고 메모리 문제를 검색하는 데 사용할 수 있습니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtMemDumpAllObjectsSince** 전처리 중 제거 됩니다.
 
 **_CrtMemDumpAllObjectsSince** 의 값을 사용 합니다 *상태* 덤프 작업을 시작 하는 위치를 확인 하려면 매개 변수입니다. 지정 된 힙 상태에서 덤프를 시작 하려면 합니다 *상태* 매개 변수는에 대 한 포인터 여야 합니다를 **_CrtMemState** 구조에서 채워진입니다 [_CrtMemCheckpoint](crtmemcheckpoint.md) 하기 전에 **_CrtMemDumpAllObjectsSince** 호출 되었습니다. 때 *상태* 됩니다 **NULL**, 프로그램 실행의 시작부터 덤프를 시작 하는 함수입니다.
 

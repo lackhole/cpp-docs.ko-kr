@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 오류 C2800 ~ C2899
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C2816
 - C2820
@@ -42,12 +42,12 @@ helpviewer_keywords:
 - C2895
 - C2899
 ms.assetid: e5de1e92-746a-4315-a331-c5d9efb76dbb
-ms.openlocfilehash: 7c35cd91f836070ff45faa489e1c16c40909f922
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
-ms.translationtype: MT
+ms.openlocfilehash: a0367d1d465d4460202f4d6d29468e59f6a74657
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62281770"
 ---
 # <a name="compiler-errors-c2800-through-c2899"></a>컴파일러 오류 C2800 ~ C2899
 
@@ -110,7 +110,7 @@ ms.locfileid: "51332077"
 |컴파일러 오류 C2848|'*클래스*': WinRT 관리 되는 형식이 공용 구조체의 멤버일 수 없습니다|
 |[컴파일러 오류 C2849](compiler-error-c2849.md)|'*인터페이스*': 인터페이스는 소멸자를 사용할 수 없습니다.|
 |[컴파일러 오류 C2850](compiler-error-c2850.md)|'*생성*': 파일 범위에서 허용 되는 중첩 된 구문의 되지 않을 수 있습니다|
-|컴파일러 오류 C2851|'*enum*': public WinRT 열거형으로 사용할 수 'int' 또는 'unsigned int' 기본 형식|
+|컴파일러 오류 C2851|'*enum*': Public WinRT 열거형으로 사용할 수 'int' 또는 'unsigned int' 기본 형식|
 |컴파일러 오류 C2852|'*식별자*': 클래스 내의 전용 데이터 멤버를 초기화할 수 있습니다|
 |컴파일러 오류 C2853|'*식별자*': 비정적 데이터 멤버 'auto'를 포함 하는 형식을 사용할 수 없습니다|
 |[컴파일러 오류 C2854](compiler-error-c2854.md)|#pragma hdrstop에 구문 오류가 발생 했습니다.|
@@ -159,3 +159,8 @@ ms.locfileid: "51332077"
 |[컴파일러 오류 C2897](compiler-error-c2897.md)|소멸자/종료자는 함수 템플릿일 수 없습니다.|
 |[컴파일러 오류 C2898](compiler-error-c2898.md)|'*선언*': 멤버 함수 템플릿은 가상 일 수 없습니다.|
 |컴파일러 오류 C2899|사용되지 않습니다.|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

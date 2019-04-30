@@ -9,11 +9,11 @@ helpviewer_keywords:
 - -Zc:implicitNoexcept
 ms.assetid: 71807652-6f9d-436b-899e-f52daa6f500b
 ms.openlocfilehash: ec2b8c8fb4c7730a78c4403606d6fa61c0ddc374
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315562"
 ---
 # <a name="zcimplicitnoexcept-implicit-exception-specifiers"></a>/Zc:implicitNoexcept(암시적 예외 지정자)
 
@@ -129,9 +129,9 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. 수정 된 **추가 옵션** 포함할 속성을 **/zc: implicitnoexcept** 또는 **/zc: implicitnoexcept-** 를 선택한 후 **확인**합니다.
 

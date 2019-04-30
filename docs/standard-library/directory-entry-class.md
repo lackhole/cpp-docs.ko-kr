@@ -35,11 +35,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_entry::operator&gt;
 - std::experimental::filesystem::directory_entry::operator&gt;=
 ms.openlocfilehash: c1b68aefd44d8f0ac60c36307dee93333d801bb9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533824"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342980"
 ---
 # <a name="directoryentry-class"></a>directory_entry 클래스
 
@@ -92,7 +92,7 @@ class directory_entry;
 
 **네임스페이스:** std::experimental::filesystem
 
-## <a name="assign"></a> 할당
+## <a name="assign"></a> assign
 
 멤버 함수는 할당 *pval* 에 `mypath`, *stat_arg로* 에 `mystat`, 및 *symstat_arg* 에 `mysymstat`입니다.
 
@@ -107,10 +107,10 @@ void assign(const std::experimental::filesystem::path& pval,
 *pval*<br/>
 저장 된 파일 이름 경로입니다.
 
-*stat_arg로*<br/>
+*stat_arg*<br/>
 상태 저장된 된 파일 이름입니다.
 
-*symstat_arg로*<br/>
+*symstat_arg*<br/>
 저장 된 파일 이름의 기호화 된 링크 상태입니다.
 
 ## <a name="directory_entry"></a> directory_entry
@@ -131,10 +131,10 @@ explicit directory_entry(const std::experimental::filesystem::path& pval,
 *pval*<br/>
 저장 된 파일 이름 경로입니다.
 
-*stat_arg로*<br/>
+*stat_arg*<br/>
 상태 저장된 된 파일 이름입니다.
 
-*symstat_arg로*<br/>
+*symstat_arg*<br/>
 저장 된 파일 이름의 기호화 된 링크 상태입니다.
 
 ## <a name="op_neq"></a> operator!=
@@ -150,7 +150,7 @@ bool operator!=(const directory_entry& right) const noexcept;
 *right*<br/>
 합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
 
-## <a name="op_as"></a> 연산자 =
+## <a name="op_as"></a> operator=
 
 기본 멤버 대입 연산자가 예상대로 작동합니다.
 
@@ -164,7 +164,7 @@ directory_entry& operator=(directory_entry&&) noexcept = default;
 *right*<br/>
 합니다 [directory_entry](../standard-library/directory-entry-class.md) 에 복사 되는 `directory_entry`합니다.
 
-## <a name="op_eq"></a> 연산자 = =
+## <a name="op_eq"></a> operator==
 
 멤버 함수는 `mypath == right.mypath`를 반환합니다.
 
@@ -261,10 +261,10 @@ void replace_filename(
 *pval*<br/>
 저장 된 파일 이름 경로입니다.
 
-*stat_arg로*<br/>
+*stat_arg*<br/>
 상태 저장된 된 파일 이름입니다.
 
-*symstat_arg로*<br/>
+*symstat_arg*<br/>
 저장 된 파일 이름의 기호화 된 링크 상태입니다.
 
 ## <a name="status"></a> 상태
@@ -287,7 +287,7 @@ file_status status(error_code& ec) const noexcept;
 
 ## <a name="symlink_status"></a> symlink_status
 
-두 멤버 함수는 반환 `mysymstat` 변경 될 수 있는 먼저 다음과 같이: 경우 `status_known(mysymstat)` 이면 아무 작업도 수행 합니다. 그렇지 않으면 `mysymstat = symlink_status(mypval)`입니다.
+두 멤버 함수는 반환 `mysymstat` 변경 될 수 있는 먼저 다음과 같이 합니다. 경우 `status_known(mysymstat)` 이면 아무 작업도 수행 합니다. 그렇지 않으면 `mysymstat = symlink_status(mypval)`입니다.
 
 ```cpp
 file_status symlink_status() const;

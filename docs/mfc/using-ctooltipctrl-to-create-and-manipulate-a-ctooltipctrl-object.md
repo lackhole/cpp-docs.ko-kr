@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CToolTipCtrl class [MFC], using
 ms.assetid: 0a34583f-f66d-46a1-a239-31b80ea395ad
 ms.openlocfilehash: b0f008c70eeb43455408e5b0ad302df6b923608e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411645"
 ---
 # <a name="using-ctooltipctrl-to-create-and-manipulate-a-ctooltipctrl-object"></a>CToolTipCtrl을 사용하여 CToolTipCtrl 개체 만들기 및 조작
 
@@ -20,8 +20,7 @@ ms.locfileid: "57261208"
 
 ### <a name="to-create-and-manipulate-a-ctooltipctrl"></a>CToolTipCtrl을 만들고 조작하려면
 
-1. 
-  `CToolTipCtrl` 개체를 생성합니다.
+1. `CToolTipCtrl` 개체를 생성합니다.
 
 1. 호출 [Create](../mfc/reference/ctooltipctrl-class.md#create) Windows 도구 설명 공용 컨트롤을 만들고 연결 하는 `CToolTipCtrl` 개체입니다.
 

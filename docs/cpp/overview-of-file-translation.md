@@ -10,11 +10,11 @@ helpviewer_keywords:
 - preprocessing translation phase
 ms.assetid: 5036c7b7-ccff-4e2c-b052-a9ea6c71af87
 ms.openlocfilehash: cb8a8fea2411e4eb7de78545f70021f3617b0f52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325145"
 ---
 # <a name="overview-of-file-translation"></a>파일 변환 개요
 
@@ -43,9 +43,9 @@ C++ 전처리기는 ANSI C 전처리기의 엄격한 상위 집합이지만 몇 
 
 - 한 줄로 된 주석이 지원됩니다. 참조 [주석을](../cpp/comments-cpp.md) 자세한 내용은 합니다.
 
-- 미리 정의 된 매크로인 `__cplusplus`, c + +에 대해서만 정의 됩니다. 참조 [미리 정의 된 매크로](../preprocessor/predefined-macros.md) 에 *전처리기 참조* 자세한 내용은 합니다.
+- 미리 정의 된 매크로인 `__cplusplus`에 대해서만 정의 되며 C++합니다. 참조 [미리 정의 된 매크로](../preprocessor/predefined-macros.md) 에 *전처리기 참조* 자세한 내용은 합니다.
 
-- C 전처리기는 c + + 연산자를 인식 하지 않습니다: **.** <strong>\*</strong>하십시오 **->** <strong>\*</strong>, 및 **::** 합니다. 참조 [연산자](../cpp/cpp-built-in-operators-precedence-and-associativity.md) 하 고 [식을](../cpp/expressions-cpp.md), 연산자에 대 한 자세한 내용은 합니다.
+- C 전처리기 인식 하지 않습니다는 C++ 연산자: **합니다.** <strong>\*</strong>하십시오 **->** <strong>\*</strong>, 및 **::** 합니다. 참조 [연산자](../cpp/cpp-built-in-operators-precedence-and-associativity.md) 하 고 [식을](../cpp/expressions-cpp.md), 연산자에 대 한 자세한 내용은 합니다.
 
 ## <a name="see-also"></a>참고자료
 

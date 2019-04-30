@@ -3,15 +3,15 @@ title: 빠른 참조(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: ba457195-26e5-43aa-b99d-24a871e550f4
 ms.openlocfilehash: 0526c9083d177688146926598b79e66ca2f9723c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362337"
 ---
 # <a name="quick-reference-ccx"></a>빠른 참조(C++/CX)
 
-Windows 런타임에서 신뢰할 수 있는 운영 체제 환경 에서만에서 실행 하 고 권한 있는 함수, 데이터 형식 및 장치를 사용 하 여 Microsoft Store 통해 배포 되는 유니버설 Windows 플랫폼 (UWP) 앱을 지원 합니다. C + + /cli CX Windows 런타임에 대 한 앱의 작성을 단순화 합니다. 이 문서는 빠른 참조입니다. 전체 설명서를 참조 하세요. [형식 시스템](../cppcx/type-system-c-cx.md)입니다.
+Windows 런타임에서 신뢰할 수 있는 운영 체제 환경 에서만에서 실행 하 고 권한 있는 함수, 데이터 형식 및 장치를 사용 하 여 Microsoft Store 통해 배포 되는 유니버설 Windows 플랫폼 (UWP) 앱을 지원 합니다. C++/CX Windows 런타임에 대 한 앱의 작성을 단순화 합니다. 이 문서는 빠른 참조입니다. 전체 설명서를 참조 하세요. [형식 시스템](../cppcx/type-system-c-cx.md)입니다.
 
 명령줄에서 빌드할 때 사용 합니다 **/ZW** 컴파일러 옵션을 사용 하는 UWP 앱 또는 Windows 런타임 구성 요소를 작성 합니다. Windows 런타임 메타 데이터 (.winmd) 파일에 정의 된, Windows 런타임 선언에 액세스 하려면 지정 된 `#using` 지시문 또는 **/FU** 컴파일러 옵션입니다. UWP 앱 용 프로젝트를 만들면 Visual Studio는 기본적으로 이러한 옵션을 설정 하 고 모든 Windows 런타임 라이브러리에 대 한 참조를 추가 합니다.
 
@@ -19,7 +19,7 @@ Windows 런타임에서 신뢰할 수 있는 운영 체제 환경 에서만에�
 
 |개념|표준 C++|C++/CX|설명|
 |-------------|--------------------|------------------------------------------------------------------|-------------|
-|기본 형식|C++ 기본 형식|C + + /CX Windows 런타임에서 정의 된 기본 형식을 구현 하는 기본 형식입니다.|`default` 네임 스페이스에는 다음이 포함 되어 C + + /CX 기본 제공 되는 기본 형식입니다. 컴파일러는 암시적으로 매핑합니다 C + + /cli CX 기본 형식을 표준 c + + 형식입니다.<br /><br /> `Platform` 네임 스페이스의 패밀리에서 기본적인 Windows 런타임 형식을 구현 하는 형식을 포함 합니다.|
+|기본 형식|C++ 기본 형식|C++Windows 런타임에서 정의 된 기본 형식을 구현 하는 기본 형식 /CX입니다.|합니다 `default` 네임 스페이스를 포함 C++/CX 기본 제공 형식입니다. 컴파일러에서 암시적으로 매핑합니다 C++표준 /CX 기본 형식 C++ 형식입니다.<br /><br /> `Platform` 네임 스페이스의 패밀리에서 기본적인 Windows 런타임 형식을 구현 하는 형식을 포함 합니다.|
 ||`bool`|`bool`|8비트 부울 값입니다.|
 ||`__wchar_t`|`char16`|유니코드(UTF-16) 코드 포인트를 나타내는 숫자가 아닌 16비트 값입니다.|
 ||`short`<br /><br /> `unsigned short`|`int16`<br /><br /> `uint16`|16비트 부호 있는 정수입니다.<br /><br /> 16비트 부호 없는 정수입니다.|
@@ -30,7 +30,7 @@ Windows 런타임에서 신뢰할 수 있는 운영 체제 환경 에서만에�
 ||(해당 없음)|`Platform::Guid`|`Platform` 네임스페이스의 숫자가 아닌 128비트 값(GUID)입니다.|
 ||`std::time_get`|`Windows::Foundation::DateTime`|날짜/시간 구조체입니다.|
 ||(해당 없음)|`Windows::Foundation::TimeSpan`|시간 범위 구조체입니다.|
-||(해당 없음)|`Platform::Object^`|참조 횟수가 계산 기본 개체는 Windows 런타임 형식 시스템의 c + + 보기입니다.|
+||(해당 없음)|`Platform::Object^`|기본 개체 참조 개수가 계산 되는 C++ Windows 런타임 형식 시스템의 보기입니다.|
 ||`std::wstring`<br /><br /> `L"..."`|`Platform::String^`|`Platform::String^` 은 참조 횟수가 계산된 변경할 수 없는 유니코드 문자의 시퀀스(텍스트를 나타냄)입니다.|
 |포인터|개체에 대한 포인터(`*`)<br /><br /> `std::shared_ptr`|개체 핸들(`^`, "햇"으로 발음)<br /><br /> *T^ identifier*|모든 Windows 런타임 클래스는 개체 핸들 한정자를 사용 하 여 선언 됩니다. 개체의 멤버는 화살표(`->`) 클래스 멤버 액세스 연산자를 사용하여 액세스됩니다.<br /><br /> Hat 한정자 의미 "계산 참조를 자동으로 Windows 런타임 개체에 대 한 포인터". 더 정확하게 말하자면, 개체 핸들은 컴파일러가 개체의 참조 횟수를 자동으로 관리하고 참조 횟수가 0이 되면 개체를 삭제하기 위해 코드를 삽입해야 함을 선언합니다.|
 |참조|개체(`&`)에 대한 참조입니다.<br /><br /> *T* `&` *식별자*|추적 참조(`%`):<br /><br /> *T* `%` *식별자*|한정자를 참조 하는 유일한 Windows 런타임 형식 추적을 사용 하 여 선언할 수 있습니다. 개체의 멤버는 점(`.`) 클래스 멤버 액세스 연산자를 사용하여 액세스됩니다.<br /><br /> 추적 참조는 "계산 참조를 자동으로 Windows 런타임 개체 참조입니다."를 의미 합니다. 더 정확하게 말하자면, 추적 참조는 컴파일러가 개체의 참조 횟수를 자동으로 관리하고 참조 횟수가 0이 되면 개체를 삭제하기 위해 코드를 삽입해야 함을 선언합니다.|
@@ -48,4 +48,4 @@ Windows 런타임에서 신뢰할 수 있는 운영 체제 환경 에서만에�
 
 ## <a name="see-also"></a>참고자료
 
-[Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)
+[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - banners, suppressing startup
 ms.assetid: 75930d8b-b11c-4db8-99e5-b52f97da0693
 ms.openlocfilehash: 1e48989a8e433296856ae58560823e601e36008f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320463"
 ---
 # <a name="nologo-suppress-startup-banner-cc"></a>/nologo(시작 배너 표시 안 함)(C/C++)
 
@@ -31,7 +31,7 @@ ms.locfileid: "57812267"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 

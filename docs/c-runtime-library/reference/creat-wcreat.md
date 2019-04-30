@@ -33,11 +33,11 @@ helpviewer_keywords:
 - _tcreat function
 ms.assetid: 3b3b795d-1620-40ec-bd2b-a4bbb0d20fe5
 ms.openlocfilehash: 901a95a6a9361f95f38749dacf1a5001d97b3761
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335310"
 ---
 # <a name="creat-wcreat"></a>_creat, _wcreat
 
@@ -94,7 +94,7 @@ int _wcreat(
 |-----------|----------------|
 |**_S_IWRITE**|쓰기를 허용합니다.|
 |**_S_IREAD**|읽기를 허용합니다.|
-|**_S_IREAD** &AMP;#124; **_S_IWRITE**|읽기 및 쓰기를 허용합니다.|
+|**_S_IREAD** &#124; **_S_IWRITE**|읽기 및 쓰기를 허용합니다.|
 
 쓰기 권한이 부여되지 않은 경우 파일은 읽기 전용입니다. 모든 파일을 항상 읽을 수 있으므로 쓰기 전용 권한을 부여할 수 없습니다. 모드 **_S_IWRITE** 하 고 **_S_IREAD** | **_S_IWRITE** 동일 합니다. 파일을 사용 하 여 연 **_creat** 는 항상 호환 모드로 열립니다 (참조 [_sopen](sopen-wsopen.md))와 **_SH_DENYNO**합니다.
 

@@ -35,11 +35,11 @@ helpviewer_keywords:
 - std::basic_istream [C++], unget
 ms.assetid: c7c27111-de6d-42b4-95a3-a7e65259bf17
 ms.openlocfilehash: 5e7f6ae0728a7d28af1992cf4186d533f1a97330
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62414167"
 ---
 # <a name="basicistream-class"></a>basic_istream 클래스
 
@@ -275,7 +275,7 @@ basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
 *str*<br/>
 쓸 수 있는 문자열입니다.
 
-*ch*<br/>
+*Ch*<br/>
 가져올 문자입니다.
 
 *strbuf*<br/>
@@ -471,7 +471,7 @@ basic_istream& operator>>(long double& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*pfn*<br/>
+*Pfn*<br/>
 함수 포인터입니다.
 
 *strbuf*<br/>
@@ -651,7 +651,7 @@ basic_istream<Elem, Tr>& putback(
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 스트림에 다시 배치할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -821,10 +821,10 @@ basic_istream<Elem, Tr>& seekg(off_type off, ios_base::seekdir way);
 *pos*<br/>
 읽기 포인터를 이동할 절대 위치입니다.
 
-*해제*<br/>
+*off*<br/>
 기준으로 읽기 포인터를 이동할 오프셋 *방식으로*입니다.
 
-*방법*<br/>
+*way*<br/>
 [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) 열거형 중 하나입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -867,7 +867,7 @@ int main ( )
 
 중첩된 클래스는 선언에서 형식이 지정된 입력 함수 및 형식이 지정되지 않은 입력 함수를 구성하는 개체를 설명합니다.
 
-클래스 sentry {공용: 명시적 sentry (basic_istream\<Elem, Tr > & _Istr, bool _Noskip = false); operator bool () const;};
+class sentry { public: explicit sentry( basic_istream\<Elem, Tr>& _Istr, bool _Noskip = false); operator bool() const; };
 
 ### <a name="remarks"></a>설명
 

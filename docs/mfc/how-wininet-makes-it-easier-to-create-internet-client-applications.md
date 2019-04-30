@@ -7,17 +7,17 @@ helpviewer_keywords:
 - WinInet classes [MFC], Internet client applications
 ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
 ms.openlocfilehash: 6da2ef1595e525bcfd407d67c806aa80cf90f1c3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57286766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262712"
 ---
 # <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>WinInet을 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법
 
 Win32 인터넷 확장명 또는 WinInet gopher, FTP, HTTP 등 공통 인터넷 프로토콜에 대 한 액세스를 제공 합니다. WinInet을 사용 하 여, WinSock, TCP/IP 또는 특정 인터넷 프로토콜의 세부 정보를 사용 하 여 처리할 필요 없이 더 높은 수준의 프로그래밍 인터넷 클라이언트 응용 프로그램을 작성할 수 있습니다. WinInet 친숙 한 Win32 API 인터페이스를 사용 하 여 세 가지 프로토콜 모두에 대 한 일관 된 함수 집합을 제공합니다. 이 일관성 최소화 코드 변경 내용을 기본 프로토콜 (예를 들어 FTP에서 HTTP로) 변경 하는 경우를 확인 해야 합니다.
 
-Visual c + +는 두 가지 방법으로 WinInet을 사용 하 여 제공 합니다. Win32 인터넷 함수를 직접 호출할 수 있습니다 (자세한 내용은 Windows SDK의 OLE 설명서 참조) 또는 WinInet을 통해 사용할 수 있습니다 합니다 [MFC WinInet 클래스](../mfc/mfc-classes-for-creating-internet-client-applications.md)합니다.
+Visual C++ WinInet을 사용 하는 두 가지 방법을 제공 합니다. Win32 인터넷 함수를 직접 호출할 수 있습니다 (자세한 내용은 Windows SDK의 OLE 설명서 참조) 또는 WinInet을 통해 사용할 수 있습니다 합니다 [MFC WinInet 클래스](../mfc/mfc-classes-for-creating-internet-client-applications.md)합니다.
 
 **WinInet을 사용할 수 있습니다.**
 

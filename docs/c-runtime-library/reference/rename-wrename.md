@@ -35,11 +35,11 @@ helpviewer_keywords:
 - renaming files
 ms.assetid: 9f0a6103-26a2-4dda-b14b-79a48946266a
 ms.openlocfilehash: 3536bfb6c38c99a8d6d943102fb9303dd4d85b7b
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357502"
 ---
 # <a name="rename-wrename"></a>rename, _wrename
 
@@ -80,7 +80,7 @@ int _wrename(
 
 ## <a name="remarks"></a>설명
 
-**rename** 함수는 *oldname*으로 지정된 파일이나 디렉터리의 이름을 *newname*으로 지정된 이름으로 바꿉니다. 이전 이름은 기존 파일이나 디렉터리의 경로여야 합니다. 새 이름은 기존 파일 또는 디렉터리의 이름이 아니어야 합니다. **rename**을 사용하면 *newname* 인수에 다른 경로를 제공하여 디렉터리나 장치 간에 파일을 이동할 수 있습니다. 그러나 **rename**을 사용하여 디렉터리를 이동할 수는 없습니다. 디렉터리는 이름을 바꿀 수는 있지만 이동할 수는 없습니다.
+**rename** 함수는 *oldname*으로 지정된 파일이나 디렉터리의 이름을 *newname*으로 지정된 이름으로 바꿉니다. 이전 이름은 기존 파일이나 디렉터리의 경로여야 합니다. 새 이름은 기존 파일 또는 디렉터리의 이름이 아니어야 합니다. **rename**을 사용하면 *newname* 인수에 다른 경로를 제공하여 디렉터리나 디바이스 간에 파일을 이동할 수 있습니다. 그러나 **rename**을 사용하여 디렉터리를 이동할 수는 없습니다. 디렉터리는 이름을 바꿀 수는 있지만 이동할 수는 없습니다.
 
 **_wrename** 의 와이드 문자 버전이 **_rename**;에 대 한 인수 **_wrename** 는 와이드 문자 문자열입니다. **_wrename** 하 고 **_rename** 동일 하 게 작동 합니다.
 

@@ -14,11 +14,11 @@ helpviewer_keywords:
 - ISchedulerProxy structure
 ms.assetid: af416973-7a1c-4c30-aa3b-4161c2aaea54
 ms.openlocfilehash: 0dddd43a5b3e68992e41f0b95893303e57e7c7ff
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268852"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346283"
 ---
 # <a name="ischedulerproxy-structure"></a>ISchedulerProxy 구조체
 
@@ -97,8 +97,7 @@ virtual IVirtualProcessorRoot* CreateOversubscriber(_Inout_ IExecutionResource* 
 
 스케줄러 제한 된 기간에 대 한 특정 하드웨어 스레드의 초과 구독 하려는 경우이 메서드를 사용 합니다. 가상 프로세서 루트를 사용 하 여 완료 되 면 반환 해야 하는 리소스 관리자에 게 호출 하 여는 [제거할](iexecutionresource-structure.md#remove) 메서드를 `IVirtualProcessorRoot` 인터페이스.
 
-
-  `IVirtualProcessorRoot` 인터페이스가 `IExecutionResource` 인터페이스에서 상속하기 때문에 기존 가상 프로세서 루트를 초과 구독할 수도 있습니다.
+`IVirtualProcessorRoot` 인터페이스가 `IExecutionResource` 인터페이스에서 상속하기 때문에 기존 가상 프로세서 루트를 초과 구독할 수도 있습니다.
 
 ##  <a name="requestinitialvirtualprocessors"></a>  Ischedulerproxy:: Requestinitialvirtualprocessors 메서드
 

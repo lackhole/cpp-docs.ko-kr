@@ -9,15 +9,15 @@ helpviewer_keywords:
 - platform invoke [C++], strings
 ms.assetid: bcc75733-7337-4d9b-b1e9-b95a98256088
 ms.openlocfilehash: f316e33f1711ea0053fb68c0af7e89f90b793e05
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404405"
 ---
 # <a name="how-to-marshal-strings-using-pinvoke"></a>방법: PInvoke를 사용 하는 문자열 마샬링
 
-이 항목에서는 C 스타일 문자열 CLR 문자열을 사용 하 여 호출 하는 방법을 네이티브 함수에 설명 지원.NET Framework 플랫폼 호출을 사용 하 여 system:: string을 입력 합니다. Visual c + + 프로그래머는 P/Invoke 제공 거의 컴파일 타임 오류를 보고, 형식이 안전한 아니며 구현 되기 번거로울 수 있습니다 (가능한 경우) 대신 c + + Interop 기능을 사용 하는 것이 좋습니다. 관리 되지 않는 API는 DLL로 패키지 하 고 소스 코드를 사용할 수 없는 경우 다음 P/Invoke 유일한 옵션 이지만 참조이 고, 그렇지 [c + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다.
+이 항목에서는 C 스타일 문자열 CLR 문자열을 사용 하 여 호출 하는 방법을 네이티브 함수에 설명 지원.NET Framework 플랫폼 호출을 사용 하 여 system:: string을 입력 합니다. Visual C++ 프로그래머는 사용 하는 것이 좋습니다는 C++ Interop 기능 대신 (가능한 경우) P/Invoke는 작은 컴파일 타임 오류를 보고, 형식이 안전한 아니며 구현 되기 번거로울 수를 제공 하기 때문입니다. 관리 되지 않는 API는 DLL로 패키지 하 고 소스 코드를 사용할 수 없는 경우 다음 P/Invoke 유일한 옵션 이지만 참조이 고, 그렇지 [사용 C++ (암시적 PInvoke) Interop](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다.
 
 관리 및 관리 되지 않는 문자열에에서 배치 되어 다른 방식으로 메모리를 필요 하므로 관리 되는 관리 되지 않는 함수에서 문자열을 전달 합니다 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 문자열 데이터를 마샬링하기 위한 필요한 변환 메커니즘을 삽입 하도록 컴파일러에 지시 하는 특성 올바르고 안전 하 게 합니다.
 
