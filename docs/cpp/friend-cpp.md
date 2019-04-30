@@ -9,11 +9,11 @@ helpviewer_keywords:
 - friend keyword [C++]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
 ms.openlocfilehash: 769720877cc58de530791b268811d7d01adad3e6
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154495"
 ---
 # <a name="friend-c"></a>friend (C++)
 
@@ -51,7 +51,7 @@ friend class F;
 friend F;
 ```
 
-첫 번째 형태는 가장 안쪽의 네임 스페이스에 해당 이름의 기존 클래스가 있으면 F 새 클래스를 소개 합니다. **C + + 11**: 두 번째 형태는 새 클래스를 제공 하지 않습니다; 클래스에 선언 된 및 템플릿 형식 매개 변수 또는 friend로 typedef를 선언할 때 사용 해야 하는 경우 사용할 수 있습니다.
+첫 번째 형태는 가장 안쪽의 네임 스페이스에 해당 이름의 기존 클래스가 있으면 F 새 클래스를 소개 합니다. **C++11**: 두 번째 형태는 새 클래스를 제공 하지 않습니다. 클래스에 선언 된 및 템플릿 형식 매개 변수 또는 friend로 typedef를 선언할 때 사용 해야 하는 경우 사용할 수 있습니다.
 
 사용 하 여 `class friend F` 때 참조 된 형식을 아직 아직 선언 되지 않았습니다.
 
@@ -241,4 +241,4 @@ friendship은 상속되지 않습니다. 즉, `YourOtherClass`에서 파생 클�
 
 ## <a name="see-also"></a>참고자료
 
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

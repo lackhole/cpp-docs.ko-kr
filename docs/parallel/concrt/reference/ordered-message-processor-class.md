@@ -15,16 +15,15 @@ helpviewer_keywords:
 - ordered_message_processor class
 ms.assetid: 787adfb7-7f79-4a70-864a-80e3b64088cd
 ms.openlocfilehash: b88544f399031a5f770fa39aa1f3300306158511
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394431"
 ---
 # <a name="orderedmessageprocessor-class"></a>ordered_message_processor 클래스
 
-
-  `ordered_message_processor`는 메시지 블록이 수신된 순서대로 메시지를 처리할 수 있도록 하는 `message_processor`입니다.
+`ordered_message_processor`는 메시지 블록이 수신된 순서대로 메시지를 처리할 수 있도록 하는 `message_processor`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -50,8 +49,7 @@ class ordered_message_processor : public message_processor<T>;
 
 |이름|설명|
 |----------|-----------------|
-|[ordered_message_processor](#ctor)|
-  `ordered_message_processor` 개체를 생성합니다.|
+|[ordered_message_processor](#ctor)|`ordered_message_processor` 개체를 생성합니다.|
 |[~ordered_message_processor Destructor](#dtor)|제거 된 `ordered_message_processor` 개체입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
@@ -137,8 +135,7 @@ virtual void initialize_batched_processing(
 
 ##  <a name="ctor"></a> ordered_message_processor
 
-
-  `ordered_message_processor` 개체를 생성합니다.
+`ordered_message_processor` 개체를 생성합니다.
 
 ```
 ordered_message_processor();

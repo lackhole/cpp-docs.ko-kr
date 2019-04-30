@@ -4,11 +4,11 @@ ms.custom: get-started-article
 ms.date: 09/27/2018
 ms.assetid: 50dc4c95-c95b-4006-b88a-9826f7bdb222
 ms.openlocfilehash: baf0ca56ae7512ac76f64b29e3060e0749c083c1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261542"
 ---
 # <a name="putting-the-control-on-a-web-page-atl-tutorial-part-7"></a>웹 페이지에 컨트롤 배치(ATL 자습서, 7부)
 
@@ -74,7 +74,7 @@ ms.locfileid: "57297452"
 
 ## <a name="indicating-that-the-control-is-safe-for-scripting"></a>스크립트에 안전한 컨트롤 임을 나타내는
 
-Internet Explorer에서 컨트롤을 사용 하 여 웹 페이지를 볼 수 있습니다 또는 더 편리 하 게 사용 하 여 Visual c + +에 내장 된 웹 브라우저 보기. 웹 브라우저 보기에서 컨트롤을 보려면 PolyCtl.htm을 마우스 오른쪽 단추로 클릭 하 고 클릭 **브라우저에서 보기**합니다.
+Internet Explorer에서 컨트롤을 사용 하 여 웹 페이지를 볼 수 있습니다, 더 편리 하 게 사용 하 여 시각적 개체에 기본 제공 웹 브라우저 보기 C++입니다. 웹 브라우저 보기에서 컨트롤을 보려면 PolyCtl.htm을 마우스 오른쪽 단추로 클릭 하 고 클릭 **브라우저에서 보기**합니다.
 
 > [!NOTE]
 > 컨트롤이 표시되지 않는 경우 일부 브라우저에 ActiveX 컨트롤을 실행할 설정을 조정해야 합니다. ActiveX 컨트롤을 사용하는 방법에 대한 브라우저 설명서를 참조하십시오.

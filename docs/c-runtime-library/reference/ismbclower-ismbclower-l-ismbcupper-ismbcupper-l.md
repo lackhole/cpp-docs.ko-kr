@@ -33,18 +33,18 @@ helpviewer_keywords:
 - _ismbcupper_l function
 ms.assetid: 17d89587-65bc-477c-ba8f-a84e63cf59e7
 ms.openlocfilehash: 29a1e97f4583808931e5228a6905aed7c0a62702
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157289"
 ---
 # <a name="ismbclower-ismbclowerl-ismbcupper-ismbcupperl"></a>_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
 
 멀티바이트 문자가 소문자인지 대문자인지를 확인합니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -85,10 +85,10 @@ int _ismbcupper_l(
 
 |루틴에서 반환된 값|테스트 조건|932 코드 페이지 예제|
 |-------------|--------------------|---------------------------|
-|**_ismbclower**|소문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 소문자 영어 문자의 싱글바이트 표현인: 0x61 < =*c*< = 0x7A 합니다.|
-|**_ismbclower_l**|소문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 소문자 영어 문자의 싱글바이트 표현인: 0x61 < =*c*< = 0x7A 합니다.|
-|**_ismbcupper**|대문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 대문자 영어 문자의 싱글바이트 표현인: 0x41 < =*c*< = 0x5A 합니다.|
-|**_ismbcupper_l**|대문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 대문자 영어 문자의 싱글바이트 표현인: 0x41 < =*c*< = 0x5A 합니다.|
+|**_ismbclower**|소문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 소문자 영어 문자의 싱글바이트 표현인: 0x61<=*c*<=0x7A.|
+|**_ismbclower_l**|소문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 소문자 영어 문자의 싱글바이트 표현인: 0x61<=*c*<=0x7A.|
+|**_ismbcupper**|대문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 대문자 영어 문자의 싱글바이트 표현인: 0x41<=*c*<=0x5A.|
+|**_ismbcupper_l**|대문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 대문자 영어 문자의 싱글바이트 표현인: 0x41<=*c*<=0x5A.|
 
 ## <a name="requirements"></a>요구 사항
 

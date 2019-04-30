@@ -3,17 +3,17 @@ title: 맞춤(C++ 선언)
 ms.date: 11/04/2016
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
 ms.openlocfilehash: 0709ad414af3f167a64d9c89c342690015190287
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155396"
 ---
 # <a name="alignment-c-declarations"></a>맞춤(C++ 선언)
 
-C++의 하위 수준 기능 중 하나는 특정 하드웨어 아키텍처를 최대한 활용하기 위해 메모리 내 개체의 정확한 맞춤을 지정하는 기능입니다. 기본적으로 컴파일러는 해당 크기 값에 클래스 및 구조체 멤버를 맞춥니다: bool 및 char 맞춰집니다 1 바이트 경계, short는 2 바이트에서 int는 4 바이트 long long, double 및 long double은 8 바이트입니다. 대부분의 시나리오에서는 기본 맞춤이 이미 최적화되어 있기 때문에 맞춤에 주의할 필요가 없습니다. 그러나 데이터 구조에 대해 사용자 지정 맞춤을 지정하여 상당한 성능 향상이나 메모리 절약 효과를 얻을 수 있는 경우도 있습니다. Visual Studio 2015 이전에는 Microsoft 특정 키워드 __alignof 및 declspec(alignas)를 사용하여 기본값보다 큰 맞춤을 지정할 수 있었습니다. Visual Studio 2015에서부터 C + + 11 표준 키워드를 사용 해야 [alignof 및 alignas](../cpp/alignof-and-alignas-cpp.md) 최대 코드 이식성에 대 한 합니다. 새 키워드는 내부적으로 Microsoft 특정 확장과 동일한 방식으로 동작하며 해당 확장에 대한 설명서가 새 키워드에도 적용됩니다. 참조 [__alignof 연산자](../cpp/alignof-operator.md) 하 고 [맞춤](../cpp/align-cpp.md) 자세한 내용은 합니다. C + + 표준 #pragma Microsoft를 사용 해야 하므로 대상 플랫폼에 대 한 컴파일러 기본값 보다 작은 경계에 맞추기 위한 압축 동작을 지정 하지 않습니다 [팩](../preprocessor/pack.md) 경우.
+C++의 하위 수준 기능 중 하나는 특정 하드웨어 아키텍처를 최대한 활용하기 위해 메모리 내 개체의 정확한 맞춤을 지정하는 기능입니다. 기본적으로 컴파일러는 해당 크기 값에 클래스 및 구조체 멤버를 맞춥니다: bool 및 char 맞춰집니다 1 바이트 경계, short는 2 바이트에서 int는 4 바이트 long long, double 및 long double은 8 바이트입니다. 대부분의 시나리오에서는 기본 맞춤이 이미 최적화되어 있기 때문에 맞춤에 주의할 필요가 없습니다. 그러나 데이터 구조에 대해 사용자 지정 맞춤을 지정하여 상당한 성능 향상이나 메모리 절약 효과를 얻을 수 있는 경우도 있습니다. Visual Studio 2015 이전에는 Microsoft 특정 키워드 __alignof 및 declspec(alignas)를 사용하여 기본값보다 큰 맞춤을 지정할 수 있었습니다. Visual Studio 2015에서부터 C + + 11 표준 키워드를 사용 해야 [alignof 및 alignas](../cpp/alignof-and-alignas-cpp.md) 최대 코드 이식성에 대 한 합니다. 새 키워드는 내부적으로 Microsoft 특정 확장과 동일한 방식으로 동작하며 해당 확장에 대한 설명서가 새 키워드에도 적용됩니다. 참조 [__alignof 연산자](../cpp/alignof-operator.md) 하 고 [맞춤](../cpp/align-cpp.md) 자세한 내용은 합니다. C++ 표준 #pragma Microsoft를 사용 해야 하므로 대상 플랫폼에 대 한 컴파일러 기본값 보다 작은 경계에 맞추기 위한 압축 동작을 지정 하지 않습니다 [pack](../preprocessor/pack.md) 경우.
 
-C + + 표준 라이브러리에서 제공 합니다 [aligned_storage 클래스](../standard-library/aligned-storage-class.md) 에 대 한 사용자 지정 맞춤을 사용 하 여 데이터 구조에 대 한 메모리를 할당 하며 [aligned_union 클래스](../standard-library/aligned-union-class.md) 사용 하 여 공용 구조체의 맞춤을 지정 하는 데 trivial이 아닌 생성자 또는 소멸자를 제공 합니다.
+C++ 표준 라이브러리를 제공 합니다 [aligned_storage 클래스](../standard-library/aligned-storage-class.md) 에 대 한 사용자 지정 맞춤을 사용 하 여 데이터 구조에 대 한 메모리 할당 및 [aligned_union 클래스](../standard-library/aligned-union-class.md) 맞춤을 지정 하는 것에 대 한 trivial이 아닌 생성자 또는 소멸자를 사용 하 여 공용 구조체입니다.
 
 ## <a name="about-alignment"></a>맞춤 정보
 

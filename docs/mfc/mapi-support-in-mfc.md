@@ -10,11 +10,11 @@ helpviewer_keywords:
 - OnFileSendMail method [MFC]
 ms.assetid: cafbecb1-0427-4077-b4b8-159bae5b49b8
 ms.openlocfilehash: 9b873ca1b3384adab6487fb3af9dc1401aaad12c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62225530"
 ---
 # <a name="mapi-support-in-mfc"></a>MFC의 MAPI 지원
 
@@ -32,7 +32,7 @@ MAPI 첨부 파일을 전송할 파일을 읽는 데 필요 합니다. 응용 �
 
 #### <a name="to-implement-a-send-mail-command-with-mfc"></a>MFC 사용 하 여 메일 보내기 명령을 구현 하려면
 
-1. Visual c + + 메뉴 편집기를 사용 하 여 명령 ID가 ID_FILE_SEND_MAIL 메뉴 항목을 추가 합니다.
+1. 시각적 개체를 사용 하 여 C++ 명령 ID가 ID_FILE_SEND_MAIL 메뉴 항목을 추가 하려면 메뉴 편집기입니다.
 
    이 명령은 ID AFXRES에서 프레임 워크에서 제공 됩니다. 8. 모든 메뉴에 명령을 추가할 수 있지만 일반적으로 추가 됩니다는 **파일** 메뉴.
 

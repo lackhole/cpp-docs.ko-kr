@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK4253
 ms.assetid: ec7433a9-aa9c-495a-a9f2-075e7bc3e7bc
 ms.openlocfilehash: d2fd7238a3f57b11b91813bd40b66cb3e9f47202
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352526"
 ---
 # <a name="linker-tools-warning-lnk4253"></a>링커 도구 경고 LNK4253
 
@@ -23,7 +23,7 @@ A **/MERGE** 옵션 또는 지시문 및 `from` 섹션은 이미 이전 인해 �
 
 LNK4253를 해결 하려면 병합 요청 중 하나를 제거 합니다.
 
-X86을 대상으로 할 때 컴퓨터 및 Visual c + +를 사용 하 여 Windows CE 대상 (ARM, MIPS, SH4, 및 엄지 단추) 합니다. CRT 섹션 읽기 전용 이제입니다. 코드는 이전 동작에 의존 하는 경우 (합니다. CRT 섹션은 읽기/쓰기), 예기치 않은 동작을 볼 수 있습니다.
+X86을 대상으로 할 때 컴퓨터 및 Windows CE 대상 (ARM, MIPS, SH4, 및 엄지 단추) 시각적 개체를 사용 하 여 C++는 합니다. CRT 섹션 읽기 전용 이제입니다. 코드는 이전 동작에 의존 하는 경우 (합니다. CRT 섹션은 읽기/쓰기), 예기치 않은 동작을 볼 수 있습니다.
 
 자세한 내용은 다음 항목을 참조하세요.
 

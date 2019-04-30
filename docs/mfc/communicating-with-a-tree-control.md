@@ -8,11 +8,11 @@ helpviewer_keywords:
 - tree controls
 ms.assetid: 680ad9ee-b11f-452d-93fa-501ca7d7e069
 ms.openlocfilehash: 920608724ebb362b91efdcb3eab50b80acd20474
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62151261"
 ---
 # <a name="communicating-with-a-tree-control"></a>트리 컨트롤과 통신
 

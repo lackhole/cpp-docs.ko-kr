@@ -11,11 +11,11 @@ helpviewer_keywords:
 - ENTRY linker option
 ms.assetid: 26c62ba2-4f52-4882-a7bd-7046a0abf445
 ms.openlocfilehash: 0f3604ef75ce10928463c088e423615886555eda
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62293214"
 ---
 # <a name="entry-entry-point-symbol"></a>/ENTRY(진입점 기호)
 
@@ -32,7 +32,7 @@ ms.locfileid: "57807860"
 
 /ENTRY 옵션은.exe 파일 또는 DLL의 시작 주소로 진입점 함수를 지정합니다.
 
-사용 하도록 함수를 정의 해야 합니다 `__stdcall` 호출 규칙입니다. 매개 변수 및 반환 값에 따라 달라 집니다 프로그램이 콘솔 응용 프로그램, windows 응용 프로그램 또는 DLL입니다. C 런타임 라이브러리를 올바르게 초기화 되 고 정적 개체에 대 한 c + + 생성자가 실행 되도록 진입점을 설정 하는 링커를 사용 하는 것이 좋습니다.
+사용 하도록 함수를 정의 해야 합니다 `__stdcall` 호출 규칙입니다. 매개 변수 및 반환 값에 따라 달라 집니다 프로그램이 콘솔 응용 프로그램, windows 응용 프로그램 또는 DLL입니다. C 런타임 라이브러리를 올바르게 초기화 되는 진입점을 설정 하는 링커를 사용 하는 것이 좋습니다. 및 C++ 정적 개체에 대 한 생성자가 실행 됩니다.
 
 기본적으로 시작 주소에는 C 런타임 라이브러리에서 함수 이름입니다. 링커는 다음 표에 나와 있는 것 처럼 해당 프로그램의 특성에 따라 선택 합니다.
 
@@ -48,11 +48,11 @@ ms.locfileid: "57807860"
 
 /ENTRY를 지정 하는 함수의 서명이 있어야 관리 되는 이미지를 만들 때 (LPVOID *var1*, DWORD *var2*, LPVOID *var3*).
 
-사용자 지정 하는 방법에 대 한 내용은 `DllMain` 진입점 참조 [Dll 및 Visual c + + 런타임 라이브러리 동작](../run-time-library-behavior.md) 합니다.
+자체를 정의 하는 방법에 대 한 내용은 `DllMain` 진입점 참조 [Dll 및 시각적 개체 C++ 런타임 라이브러리 동작](../run-time-library-behavior.md) 합니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 클릭 합니다 **링커** 폴더입니다.
 

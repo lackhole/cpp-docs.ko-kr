@@ -5,15 +5,15 @@ helpviewer_keywords:
 - .vcxproj file structure
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
 ms.openlocfilehash: 3b7c7bdad8848a3755db4ea565117459c72e939b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317122"
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj 및 .props 파일 구조
 
-[MSBuild](../msbuild-visual-cpp.md)는 Visual Studio의 기본 프로젝트 시스템입니다. Visual C++에서 **파일** > **새 프로젝트**를 차례로 선택하면 `.vcxproj` 확장명의 XML 프로젝트 파일에 설정이 저장되는 MSBuild 프로젝트를 만들 수 있습니다. 프로젝트 파일은 설정을 저장할 수 있는 .props 파일과 .targets 파일을 가져올 수도 있습니다. 대부분의 경우 프로젝트 파일을 수동으로 편집할 필요가 없으며, 실제로 MSBuild를 잘 알고 있지 않으면 수동으로 편집하지 않아야 합니다. 프로젝트 설정을 수정 하려면 Visual Studio 속성 페이지를 사용 해야 가능 (참조 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다. 그러나 경우에 따라 프로젝트 파일 또는 속성 시트를 수동으로 수정해야 할 수도 있습니다. 이 문서에는 이러한 시나리오의 파일 구조에 대한 기본 정보가 포함되어 있습니다.
+[MSBuild](../msbuild-visual-cpp.md)는 Visual Studio의 기본 프로젝트 시스템입니다. Visual C++에서 **파일** > **새 프로젝트**를 차례로 선택하면 `.vcxproj` 확장명의 XML 프로젝트 파일에 설정이 저장되는 MSBuild 프로젝트를 만들 수 있습니다. 프로젝트 파일은 설정을 저장할 수 있는 .props 파일과 .targets 파일을 가져올 수도 있습니다. 대부분의 경우 프로젝트 파일을 수동으로 편집할 필요가 없으며, 실제로 MSBuild를 잘 알고 있지 않으면 수동으로 편집하지 않아야 합니다. 프로젝트 설정을 수정 하려면 Visual Studio 속성 페이지를 사용 해야 가능 (참조 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다. 그러나 경우에 따라 프로젝트 파일 또는 속성 시트를 수동으로 수정해야 할 수도 있습니다. 이 문서에는 이러한 시나리오의 파일 구조에 대한 기본 정보가 포함되어 있습니다.
 
 **중요:**
 
@@ -292,5 +292,5 @@ IDE의 일반 속성 페이지에서 **UseOfAtl** 속성을 설정하면, 프로
 
 ## <a name="see-also"></a>참고자료
 
-[Visual Studio에서 속성을 빌드하고 c + + 컴파일러를 설정 합니다.](../working-with-project-properties.md)<br/>
+[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)<br/>
 [속성 페이지 XML 파일](property-page-xml-files.md)

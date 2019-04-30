@@ -41,11 +41,11 @@ helpviewer_keywords:
 - accelerator class
 ms.assetid: 37eed593-cf87-4611-9cdc-e98df6c2377a
 ms.openlocfilehash: 31008b398d17ac0c226f9359745067c4fefc08a9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180437"
 ---
 # <a name="accelerator-class"></a>accelerator 클래스
 
@@ -108,7 +108,7 @@ class accelerator;
 |[description](#description)|대 한 간단한 설명을 가져옵니다는 `accelerator` 장치입니다.|
 |[device_path](#device_path)|장치의 경로 가져옵니다.|
 |[direct3d_ref](#direct3d_ref)|Direct3D 참조에 대 한 상수 문자열을 가져옵니다 `accelerator`합니다.|
-|[direct3d_warp](#direct3d_warp)|문자열에 대 한 상수를 가져옵니다는 `accelerator` (SSE) 사용 하는 다중 코어 Cpu에서 c + + AMP 코드를 실행 하는 데 사용할 수 있는 개체입니다.|
+|[direct3d_warp](#direct3d_warp)|문자열에 대 한 상수를 가져옵니다는 `accelerator` 실행 하는 데 사용할 수 있는 개체 C++ (SSE) 사용 하는 다중 코어 Cpu에서 AMP 코드입니다.|
 |[has_display](#has_display)|나타내는 부울 값을 가져옵니다 여부를 `accelerator` 디스플레이에 연결 됩니다.|
 |[is_debug](#is_debug)|나타냅니다 여부는 `accelerator` 디버그 레이어를 광범위 한 오류 보고를 위해 사용 했는지입니다.|
 |[is_emulated](#is_emulated)|나타냅니다 여부는 `accelerator` 는 캐싱이 에뮬레이트됩니다.|
@@ -246,7 +246,7 @@ static const wchar_t direct3d_ref[];
 
 ##  <a name="direct3d_warp"></a> direct3d_warp
 
-문자열에 대 한 상수를 가져옵니다는 `accelerator` (SSE)를 사용 하 여 다중 코어 Cpu에서 c + + AMP 코드를 실행 하는 데 사용할 수 있는 개체입니다.
+문자열에 대 한 상수를 가져옵니다는 `accelerator` 실행 하는 데 사용할 수 있는 개체에 C++ (SSE)를 사용 하 여 다중 코어 Cpu에서 AMP 코드입니다.
 
 ```
 static const wchar_t direct3d_warp[];
@@ -286,8 +286,7 @@ size_t get_dedicated_memory() const;
 
 ### <a name="return-value"></a>반환 값
 
-
-  `accelerator`를 위해 전용된 메모리(킬로바이트)입니다.
+`accelerator`를 위해 전용된 메모리(킬로바이트)입니다.
 
 ##  <a name="get_default_cpu_access_type"></a> get_default_cpu_access_type
 
@@ -311,8 +310,7 @@ accelerator_view get_default_view() const;
 
 ### <a name="return-value"></a>반환 값
 
-
-  `accelerator_view`와 연결된 기본 `accelerator` 개체입니다.
+`accelerator_view`와 연결된 기본 `accelerator` 개체입니다.
 
 ##  <a name="get_description"></a> get_description
 
@@ -324,8 +322,7 @@ std::wstring get_description() const;
 
 ### <a name="return-value"></a>반환 값
 
-
-  `accelerator` 장치에 대한 간단한 설명입니다.
+`accelerator` 장치에 대한 간단한 설명입니다.
 
 ##  <a name="get_device_path"></a> get_device_path
 
@@ -617,7 +614,7 @@ void flush();
 
 ### <a name="return-value"></a>반환 값
 
-`void`을 반환합니다.
+`void`를 반환합니다.
 
 ##  <a name="get_accelerator"></a> get_accelerator
 
@@ -653,8 +650,7 @@ bool get_is_debug() const;
 
 ### <a name="return-value"></a>반환 값
 
-
-  `accelerator_view` 개체에 확장 오류 보고를 위해 DEBUG 레이어가 활성화되었는지 여부를 나타내는 부울 값입니다.
+`accelerator_view` 개체에 확장 오류 보고를 위해 DEBUG 레이어가 활성화되었는지 여부를 나타내는 부울 값입니다.
 
 ##  <a name="get_queuing_mode"></a> get_queuing_mode
 
@@ -666,8 +662,7 @@ queuing_mode get_queuing_mode() const;
 
 ### <a name="return-value"></a>반환 값
 
-
-  `accelerator_view` 개체의 큐 모드입니다.
+`accelerator_view` 개체의 큐 모드입니다.
 
 ##  <a name="get_version"></a> get_version
 
@@ -774,7 +769,7 @@ void wait();
 
 ### <a name="return-value"></a>반환 값
 
-`void`을 반환합니다.
+`void`를 반환합니다.
 
 ## <a name="see-also"></a>참고자료
 

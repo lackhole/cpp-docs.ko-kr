@@ -1,15 +1,15 @@
 ---
-title: 사용자 정의 리터럴 (c + +)
+title: 사용자 정의 리터럴 (C++)
 ms.date: 11/04/2016
 ms.assetid: ff4a5bec-f795-4705-a2c0-53788fd57609
 ms.openlocfilehash: 1de94b43423bb5b420be29d3cace146e265a1459
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392117"
 ---
-# <a name="user-defined-literals--c"></a>사용자 정의 리터럴 (c + +)
+# <a name="user-defined-literals--c"></a>사용자 정의 리터럴 (C++)
 
 리터럴의 5가지 주요 범주는 정수, 문자, 부동 소수점, 문자열, 부울 및 포인터입니다.  C++ 11부터 이러한 범주에 따라 사용자 고유의 리터럴을 정의하여 일반적인 구문에 대한 구문 바로 가기를 제공하고 형식 안전성을 높일 수 있습니다. 예를 들어 Distance 클래스가 있다고 가정합니다. 킬로미터와 마일에 대해 리터럴을 하나씩 정의하고 간단히 auto d = 42.0_km or auto d = 42.0_mi를 작성하여 사용자가 측정 단위를 명시적으로 지정하도록 장려할 수 있습니다. 사용자 정의 리터럴에 성능상의 이점이나 단점은 없습니다. 주로 편의상 또는 컴파일 시간 형식 추론을 위해 사용됩니다. 표준 라이브러리의 시간 및 기간 작업에 대 한 사용자 정의 리터럴 및에 대 한 std: string, std:: complex, 단위는 \<chrono > 헤더:
 
@@ -107,9 +107,9 @@ ReturnType operator "" _r(const char*);              // Raw literal operator
 template<char...> ReturnType operator "" _t();       // Literal operator template
 ```
 
-원시 리터럴을 사용하여 컴파일러가 수행하는 것과 다른 입력 시퀀스의 사용자 지정 해석을 제공할 수 있습니다. 예를 들어 `4.75987` 시퀀스를 IEEE 754 부동 소수점 형식 대신 사용자 지정 10진수 형식으로 변환하는 리터럴을 정의할 수 있습니다. 가공된 리터럴과 마찬가지로, 원시 리터럴을 사용하여 입력 시퀀스의 컴파일 시간 유효성 검사를 수행할 수도 있습니다.
+원시 리터럴을 사용하여 컴파일러가 수행하는 것과 다른 입력 시퀀스의 사용자 지정 해석을 제공할 수 있습니다. 예를 들어 `4.75987` 시퀀스를 IEEE 754 부동 소수점 형식 대신 사용자 지정 10진수 형식으로 변환하는 리터럴을 정의할 수 있습니다. 가공된 리터럴과 마찬가지로, 원시 리터럴을 사용하여 입력 시퀀스의 컴파일 타임 유효성 검사를 수행할 수도 있습니다.
 
-### <a name="example-limitations-of-raw-literals"></a>원시 리터럴의 제한 사항 예:
+### <a name="example-limitations-of-raw-literals"></a>예제: 원시 리터럴의 제한
 
 원시 리터럴 연산자 및 리터럴 연산자 템플릿은 다음 예제와 같이 정수 계열 및 부동 소수점 사용자 정의 리터럴에 대해서만 작동합니다.
 

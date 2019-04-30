@@ -7,11 +7,11 @@ helpviewer_keywords:
 - R6033
 ms.assetid: f9cffdc9-81bd-4a64-a698-02762cbd82c9
 ms.openlocfilehash: 39d8a20dacb0cdeb2a767529e9716bd476f406dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400008"
 ---
 # <a name="c-runtime-error-r6033"></a>C 런타임 오류 R6033
 
@@ -29,4 +29,4 @@ ms.locfileid: "50467186"
 
 **프로그래머를 위한 정보**
 
-이 진단 로더 잠금 중 MSIL 명령을 실행 하는 것을 나타냅니다. 네이티브 c + + /clr 플래그를 사용 하 여 컴파일한 경우 발생할 수 있습니다. 만 /clr 플래그를 사용 하 여 관리 되는 코드를 포함 하는 모듈입니다. 자세한 내용은 [혼합 어셈블리 초기화](../../dotnet/initialization-of-mixed-assemblies.md)합니다.
+이 진단 로더 잠금 중 MSIL 명령을 실행 하는 것을 나타냅니다. 네이티브 컴파일한 경우 발생할 수 있습니다 C++ /clr 플래그를 사용 합니다. 만 /clr 플래그를 사용 하 여 관리 되는 코드를 포함 하는 모듈입니다. 자세한 내용은 [혼합 어셈블리 초기화](../../dotnet/initialization-of-mixed-assemblies.md)합니다.

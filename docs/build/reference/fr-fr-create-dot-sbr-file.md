@@ -14,11 +14,11 @@ helpviewer_keywords:
 - symbolic browser information
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896
 ms.openlocfilehash: 73642baba77a62cac531ae7b2842ec9953b338ec
-ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58508704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292798"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr(.Sbr 파일 만들기)
 
@@ -51,7 +51,7 @@ ms.locfileid: "58508704"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 탐색 창에서 **C/C++**, **찾아보기 정보** 속성 페이지를 선택합니다.
 

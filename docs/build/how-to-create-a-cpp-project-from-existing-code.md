@@ -11,17 +11,17 @@ f1_keywords:
 - vc.appwiz.importwiz.releasesettings
 ms.assetid: e328a938-395c-48ea-9e35-dd433de12b31
 ms.openlocfilehash: 1658e19595d8cfc7966ca881abfdd2aa8acf76ab
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62189048"
 ---
 # <a name="how-to-create-a-c-project-from-existing-code"></a>방법: 기존 코드에서 C++ 프로젝트 만들기
 
 Visual Studio에서 **기존 코드 파일에서 새 프로젝트 만들기** 마법사를 사용하여 기존 코드 파일을 C++ 프로젝트로 이식할 수 있습니다. 이 마법사는 MSBuild 시스템을 사용하여 원본 파일을 관리하고 구성을 빌드하는 프로젝트 솔루션을 만듭니다. 복잡한 폴더 계층이 없는 비교적 간단한 프로젝트일 때 가장 잘 작동합니다. 이 마법사는 Visual Studio의 이전 Express 버전에서는 사용할 수 없습니다. 
 
-기존 코드 파일을 C++ 프로젝트로 이식하면 IDE에 기본 제공되는 기본 MSBuild 프로젝트 관리 기능을 사용할 수 있습니다. nmake 메이크파일, CMake 또는 대체 파일 같은 기존 빌드 시스템을 선호하는 경우 CMake 옵션 대신 폴더 열기를 사용하면 됩니다. 자세한 내용은 [c + +의 폴더 열기 프로젝트](open-folder-projects-cpp.md) 하거나 [Visual Studio의 CMake 프로젝트](cmake-projects-in-visual-studio.md)합니다. 두 옵션을 모두 사용하면 [IntelliSense](/visualstudio/ide/using-intellisense) 및 [프로젝트 속성](working-with-project-properties.md)과 같은 IDE 기능을 사용할 수 있습니다.
+기존 코드 파일을 C++ 프로젝트로 이식하면 IDE에 기본 제공되는 기본 MSBuild 프로젝트 관리 기능을 사용할 수 있습니다. nmake 메이크파일, CMake 또는 대체 파일 같은 기존 빌드 시스템을 선호하는 경우 CMake 옵션 대신 폴더 열기를 사용하면 됩니다. 자세한 내용은 [폴더 열기 프로젝트에 대 한 C++ ](open-folder-projects-cpp.md) 하거나 [Visual Studio의 CMake 프로젝트](cmake-projects-in-visual-studio.md)합니다. 두 옵션을 모두 사용하면 [IntelliSense](/visualstudio/ide/using-intellisense) 및 [프로젝트 속성](working-with-project-properties.md)과 같은 IDE 기능을 사용할 수 있습니다.
 
 ### <a name="to-create-a-c-project-from-existing-code"></a>기존 코드에서 C++ 프로젝트를 만들려면
 

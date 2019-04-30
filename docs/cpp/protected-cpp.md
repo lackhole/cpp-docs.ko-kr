@@ -8,11 +8,11 @@ helpviewer_keywords:
 - protected keyword [C++]
 ms.assetid: 863d299f-fc0d-45d5-a1a7-bd24b7778a93
 ms.openlocfilehash: 1cbe88a80b83caa78972d1e2799c1e0d87d1cb0a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62244530"
 ---
 # <a name="protected-c"></a>protected (C++)
 
@@ -32,9 +32,9 @@ protected base-class
 
 - 원래 이 멤버를 선언한 클래스의 friend
 
-- 원래 이 멤버를 선언한 클래스에서 공용 또는 보호된 액세스로 파생 클래스
+- 원래 이 멤버를 선언한 클래스에서 공용 또는 보호된 액세스로 파생된 클래스
 
-- 보호된 멤버에 대해 전용 액세스 권한이 있으며 전용으로 직접 파생 클래스
+- 보호된 멤버에 대해 전용 액세스 권한이 있으며 전용으로 직접 파생된 클래스
 
 이름 앞에 오는 기본 클래스의 경우는 **보호** 키워드는 기본 클래스의 public 및 protected 멤버는 파생된 클래스의 protected 멤버를 지정 합니다.
 
@@ -46,7 +46,7 @@ protected base-class
 
 ## <a name="clr-specific"></a>/clr 관련
 
-CLR 형식에서 c + + 액세스 지정자 키워드 (**공개**를 **사설**, 및 **보호**) 형식 및 어셈블리와 관련 된 메서드 표시 여부에 영향을 줄 수 있습니다. 자세한 내용은 [멤버 Access Control](member-access-control-cpp.md)합니다.
+CLR 형식에는 C++ 액세스 지정자 키워드 (**공용**를 **개인**, 및 **보호**) 형식 및 어셈블리와 관련 된 메서드 표시 여부에 영향을 줄 수 있습니다. 자세한 내용은 [멤버 Access Control](member-access-control-cpp.md)합니다.
 
 > [!NOTE]
 >  파일을 컴파일하면 [/LN](../build/reference/ln-create-msil-module.md) 이 동작의 영향을 받지 않습니다. 이 경우 관리되는 클래스(공용 또는 전용)가 모두 표시됩니다.
@@ -90,4 +90,4 @@ int main() {
 ## <a name="see-also"></a>참고자료
 
 [클래스 멤버에 대한 액세스 제어](member-access-control-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

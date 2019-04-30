@@ -3,11 +3,11 @@ title: 속성(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 64c7bc56-3191-4cd5-bdf4-476d07d285d5
 ms.openlocfilehash: 8303952beefbbac13db14e148c6441c29a46b3d0
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375225"
 ---
 # <a name="properties-ccx"></a>속성(C++/CX)
 
@@ -38,5 +38,5 @@ C++/CX ref 클래스가 인스턴스화되면 생성자가 호출되기 전에 �
 ## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
-[Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[네임 스페이스 참조](../cppcx/namespaces-reference-c-cx.md)
+[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

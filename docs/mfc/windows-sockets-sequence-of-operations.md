@@ -9,11 +9,11 @@ helpviewer_keywords:
 - stream sockets [MFC]
 ms.assetid: 43ce76f5-aad3-4247-b8a6-16cc7d012796
 ms.openlocfilehash: 0f9fd339fdbdfee9381ea693568f40473c2397e9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62296516"
 ---
 # <a name="windows-sockets-sequence-of-operations"></a>Windows 소켓: 작업 순서
 
@@ -56,15 +56,15 @@ ms.locfileid: "57265550"
 
 자세한 내용은 다음을 참조하세요.
 
-- [Windows 소켓: 소켓을 사용 하 여 아카이브를 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows 소켓: 소켓과 아카이브 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
 - [Windows 소켓: 포트 및 소켓 주소](../mfc/windows-sockets-ports-and-socket-addresses.md)
 
-- [Windows 소켓: Stream 소켓](../mfc/windows-sockets-stream-sockets.md)
+- [Windows 소켓: 스트림 소켓](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows 소켓: 데이터 그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows 소켓: 데이터그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
 
 ## <a name="see-also"></a>참고자료
 

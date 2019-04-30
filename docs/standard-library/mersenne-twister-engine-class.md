@@ -7,11 +7,11 @@ helpviewer_keywords:
 - mersenne_twister_engine class
 ms.assetid: 7ee968fa-a1cc-450f-890f-7305de062685
 ms.openlocfilehash: c0f30eacb308da61064a0383a6433b7127032a3e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410982"
 ---
 # <a name="mersennetwisterengine-class"></a>mersenne_twister_engine 클래스
 
@@ -47,10 +47,10 @@ class mersenne_twister_engine;
 *A*<br/>
 **XOR 마스크**. **사전 조건**: `A ≤ (1u<<W) - 1u`
 
-*U*하십시오 *S*합니다 *T*, *L*<br/>
+*U*, *S*, *T*, *L*<br/>
 **시프트 조작 매개 변수**. 암호화(조작)할 때 시프트 값으로 사용됩니다. 사전 조건: `U,S,T,L ≤ W`
 
-*D*하십시오 *B*, *C*<br/>
+*D*, *B*, *C*<br/>
 **비트 마스크 조작 매개 변수**. 암호화(조작)할 때 비트 마스크 값으로 사용됩니다. 사전 조건: `D,B,C ≤ (1u<<W) - 1u`
 
 *F*<br/>

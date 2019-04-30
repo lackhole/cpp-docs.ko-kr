@@ -13,11 +13,11 @@ helpviewer_keywords:
 - MapView Class
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
 ms.openlocfilehash: 1e38865f1d43edac4fc895052f1ea1b5a54a34ab
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161714"
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform::Collections::MapView 클래스
 
@@ -46,7 +46,7 @@ ref class MapView sealed;
 
 ### <a name="remarks"></a>설명
 
-MapView는의 구체적인 c + + 구현 합니다 [Windows::Foundation::Collections::IMapView \<K, V >](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) 응용 프로그램 이진 인터페이스 ABI ()를 통해 전달 되는 인터페이스입니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.
+MapView는 구체적인 C++ 구현의 합니다 [Windows::Foundation::Collections::IMapView \<K, V >](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) 응용 프로그램 이진 인터페이스 ABI ()를 통해 전달 되는 인터페이스입니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.
 
 ### <a name="members"></a>멤버
 
@@ -132,8 +132,7 @@ MapView에서 요소를 찾는 데 사용되는 키입니다. 유형의 `key` ty
 
 ### <a name="return-value"></a>반환 값
 
-
-  `key`와 쌍을 이루는 값입니다. 반환 값의 형식은 typename *V*합니다.
+`key`와 쌍을 이루는 값입니다. 반환 값의 형식은 typename *V*합니다.
 
 ##  <a name="ctor"></a> Mapview:: Mapview 생성자
 

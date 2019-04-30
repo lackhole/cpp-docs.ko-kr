@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CComEnum class
 ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
 ms.openlocfilehash: 4d83b06f37c132c0d2325304e2cc155ccb490690
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246397"
 ---
 # <a name="ccomenum-class"></a>CComEnum 클래스
 
@@ -48,7 +48,7 @@ COM 열거자 인터페이스입니다. 참조 [IEnumString](/windows/desktop/ap
 
 ## <a name="remarks"></a>설명
 
-`CComEnum` 배열을 기반으로 COM 열거자 개체를 정의 합니다. 이 클래스는 유사 [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) c + + 표준 라이브러리 컨테이너를 기반으로 하는 열거자를 구현 하는 합니다. 이 클래스를 사용 하기 위한 일반적인 단계는 다음과 같습니다. 자세한 내용은 [ATL 컬렉션 및 열거자](../../atl/atl-collections-and-enumerators.md)합니다.
+`CComEnum` 배열을 기반으로 COM 열거자 개체를 정의 합니다. 이 클래스는 유사 [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) 기반으로 하는 열거자를 구현 하는 C++ 표준 라이브러리 컨테이너입니다. 이 클래스를 사용 하기 위한 일반적인 단계는 다음과 같습니다. 자세한 내용은 [ATL 컬렉션 및 열거자](../../atl/atl-collections-and-enumerators.md)합니다.
 
 ## <a name="to-use-this-class"></a>이 클래스를 사용 합니다.
 

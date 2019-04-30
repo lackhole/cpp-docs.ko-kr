@@ -1,32 +1,32 @@
 ---
-title: '값 종류: Lvalue 및 Rvalue (Visual c + +)'
+title: '값 종류: Lvalue 및 Rvalue (Visual C++)'
 ms.date: 04/06/2018
 helpviewer_keywords:
 - R-values [C++]
 - L-values [C++]
 ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
 ms.openlocfilehash: 74bfac5f5bb56549eee41a5479babf8e71b00aa6
-ms.sourcegitcommit: e9568560cdb95e83a8fba1e9bca21ece910d20b7
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52453887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245574"
 ---
-# <a name="lvalues-and-rvalues-visual-c"></a>Lvalue 및 Rvalue (Visual c + +)
+# <a name="lvalues-and-rvalues-visual-c"></a>Lvalue 및 Rvalue (Visual C++)
 
-모든 c + + 식 형식이, 및 속한를 *값 범주가*합니다. 값 범주에는 컴파일러는 만들기, 복사 및 식 평가 중에 임시 개체를 이동 하는 경우 따라야 하는 규칙에 대 한 기반이 됩니다.
+모든 C++ 식에는 형식이 고 속한를 *값 범주가*합니다. 값 범주에는 컴파일러는 만들기, 복사 및 식 평가 중에 임시 개체를 이동 하는 경우 따라야 하는 규칙에 대 한 기반이 됩니다.
 
 표준 C + + 17 식 값 범주를 다음과 같이 정의합니다.
 
 - A *glvalue* 계산 함수, 개체 또는 비트 필드의 id를 결정 하는 식입니다.
 - A *prvalue* 식 계산 개체 또는 비트 필드를 초기화 하거나 표시 되는 컨텍스트에서 지정 된 연산자의 피연산자의 값을 계산 합니다.
-- *xvalue* 개체 또는 비트 필드 (일반적으로 이므로 해당 수명 끝)에 해당 리소스를 다시 사용할 수를 나타내는 glvalue 됩니다. 예: 특정 종류의 식 rvalue 참조 (8.3.2)와 관련 된 반환 형식이 rvalue 참조를 함수에 대 한 호출 또는 rvalue 참조 형식으로 캐스트와 같은 xvalues를 생성 합니다.
+- *xvalue* 개체 또는 비트 필드 (일반적으로 이므로 해당 수명 끝)에 해당 리소스를 다시 사용할 수를 나타내는 glvalue 됩니다. 예제: 특정 종류의 식 rvalue 참조 (8.3.2)와 관련 된 반환 형식이 rvalue 참조를 함수에 대 한 호출 또는 rvalue 참조 형식으로 캐스트와 같은 xvalues를 생성 합니다.
 - *lvalue* 는 xvalue 없는 glvalue 됩니다.
 - *rvalue* 는 prvalue 인지는 xvalue 합니다.
 
 다음 다이어그램에서는 범주 간의 관계를 보여 줍니다.
 
-![C + + 식 값 범주](media/value_categories.png "c + + 식 값 범주")
+![C++식 값 범주](media/value_categories.png " C++ 식 값 범주")
 
 Lvalue는 프로그램에 액세스할 수 있는 주소가 있습니다. Lvalue 식의 예로 포함 하 여 변수 이름을 **const** 변수인 배열 요소, 함수는 lvalue 참조, 비트 필드, 공용 구조체 및 클래스 멤버를 반환 하는 호출 합니다.
 

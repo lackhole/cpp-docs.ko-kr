@@ -3,11 +3,11 @@ title: 네임스페이스 및 형식 표시 유형(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
 ms.openlocfilehash: 54bac3492991d0bd849f7476cc87a1336108bd52
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392130"
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>네임스페이스 및 형식 표시 유형(C++/CX)
 
@@ -17,7 +17,7 @@ ms.locfileid: "57739302"
 
 ## <a name="type-visibility"></a>형식 표시 유형
 
-Windows 런타임 형식 네임 스페이스에서-표준 c + + 형식과 달리, 사설 또는 공용 액세스 가능성을 갖도록 합니다. 기본적으로 액세스 가능성은 private입니다. public 형식만 메타데이터에 표시되므로 C++ 이외의 언어로 작성될 수 있는 응용 프로그램과 구성 요소에서 사용될 수 있습니다. 일반적으로 표시되는 형식은 .NET 언어 또는 JavaScript에서 지원되지 않는 C++ 관련 개념을 노출할 수 없기 때문에 표시되는 형식에 대한 규칙은 표시되지 않는 형식에 대한 규칙보다 제한적입니다.
+Windows 런타임 형식 네임 스페이스에서-표준와 달리 C++ 형식-사설 또는 공용 액세스 가능성을 갖도록 합니다. 기본적으로 액세스 가능성은 private입니다. public 형식만 메타데이터에 표시되므로 C++ 이외의 언어로 작성될 수 있는 응용 프로그램과 구성 요소에서 사용될 수 있습니다. 일반적으로 표시되는 형식은 .NET 언어 또는 JavaScript에서 지원되지 않는 C++ 관련 개념을 노출할 수 없기 때문에 표시되는 형식에 대한 규칙은 표시되지 않는 형식에 대한 규칙보다 제한적입니다.
 
 > [!NOTE]
 > 메타데이터는 .NET 언어 및 JavaScript에서 런타임에만 사용됩니다. C++ 응용 프로그램 또는 구성 요소가 다른 C++ 응용 프로그램 또는 구성 요소(모두 C++로 작성된 Windows 구성 요소 포함)와 통신 중인 경우 메타데이터의 런타임 사용이 필요하지 않습니다.
@@ -44,7 +44,7 @@ Windows API는 Windows에서 선언 된 형식으로 구성 됩니다::\* 네임
 
 ## <a name="ccx-namespaces"></a>C++/CX 네임스페이스
 
-C + + /cli CX 투영을 Windows 런타임 형식 시스템의 일부로 이러한 네임 스페이스의 특정 형식을 정의 합니다.
+C++/CX 투영을 Windows 런타임 형식 시스템의 일부로 이러한 네임 스페이스의 특정 형식을 정의 합니다.
 
 |||
 |-|-|

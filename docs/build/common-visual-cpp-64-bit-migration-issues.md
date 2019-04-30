@@ -13,18 +13,17 @@ helpviewer_keywords:
 - Win64 [C++]
 ms.assetid: d17fb838-7513-4e2d-8b27-a1666f17ad76
 ms.openlocfilehash: 937c00b7d3c40d9a5b92d53582ab1ebf4418ebc7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62200079"
 ---
 # <a name="common-visual-c-64-bit-migration-issues"></a>일반적인 Visual C++ 64비트 마이그레이션 문제
 
 Visual C++를 사용하여 64비트 Windows 운영 체제에서 실행되는 응용 프로그램을 만들 때는 다음 문제를 고려해야 합니다.
 
-- 
-  `int`와 `long`은 64비트 Windows 운영 체제에서 32비트 값입니다. 64비트 플랫폼용으로 컴파일하려는 프로그램의 경우 포인터를 32비트 변수에 할당하지 않도록 주의해야 합니다. 포인터는 64비트 플랫폼에서 64비트이며, 이를 32비트 변수에 할당하면 포인터 값이 잘립니다.
+- `int`와 `long`은 64비트 Windows 운영 체제에서 32비트 값입니다. 64비트 플랫폼용으로 컴파일하려는 프로그램의 경우 포인터를 32비트 변수에 할당하지 않도록 주의해야 합니다. 포인터는 64비트 플랫폼에서 64비트이며, 이를 32비트 변수에 할당하면 포인터 값이 잘립니다.
 
 - `size_t`를 `time_t`, 및 `ptrdiff_t` 64 비트 Windows 운영 체제에서 64 비트 값입니다.
 
@@ -48,5 +47,5 @@ Visual C++를 사용하여 64비트 Windows 운영 체제에서 실행되는 응
 
 ## <a name="see-also"></a>참고자료
 
-[64 비트 x64에 대 한 c + + 프로젝트 구성 대상](configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[구성 C++ 64 비트, x64에 대 한 대상 프로젝트](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [Visual C++ 포팅 및 업그레이드 가이드](../porting/visual-cpp-porting-and-upgrading-guide.md)

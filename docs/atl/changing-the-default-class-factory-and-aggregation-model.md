@@ -13,11 +13,11 @@ helpviewer_keywords:
 - defaults [C++], class factory
 ms.assetid: 6e040e95-0f38-4839-8a8b-c9800dd47e8c
 ms.openlocfilehash: 94f9ecd85e09cb3916b518d71b904961042142e8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223159"
 ---
 # <a name="changing-the-default-class-factory-and-aggregation-model"></a>기본 클래스 팩터리 및 집계 모델 변경
 

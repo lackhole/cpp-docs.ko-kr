@@ -7,11 +7,11 @@ helpviewer_keywords:
 - U1059
 ms.assetid: b21d9198-9c63-40d0-b589-80e17294ce24
 ms.openlocfilehash: 3c148bf2feb7ba12686e00b29f5bf90cb9f2f2d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62367293"
 ---
 # <a name="nmake-fatal-error-u1059"></a>NMAKE 심각한 오류 U1059
 
@@ -21,7 +21,7 @@ ms.locfileid: "50645027"
 
 종속 된에 대 한 디렉터리 사양에 대 한 구문은
 
-> **{** *디렉터리* **} 종속**
+> **{** *directories* **}dependent**
 
 여기서 *디렉터리* 각 세미콜론으로 구분 된 하나 이상의 경로 지정 합니다 (**;**). 공백이 허용 됩니다.
 

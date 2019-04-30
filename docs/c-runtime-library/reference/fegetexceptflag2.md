@@ -23,11 +23,11 @@ helpviewer_keywords:
 - fegetexceptflag function
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
 ms.openlocfilehash: 43259001bd05bb7df9e2e1636c174018dcdaef3c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334426"
 ---
 # <a name="fegetexceptflag"></a>fegetexceptflag
 
@@ -47,7 +47,7 @@ int fegetexceptflag(
 *pstatus*<br/>
 에 대 한 포인터를 **fexcept_t** 에 지정 된 예외 플래그의 현재 값을 포함 하는 개체 *제외한*합니다.
 
-*제외한*<br/>
+*excepts*<br/>
 에 저장 하는 부동 소수점 예외 플래그 *pstatus*합니다.
 
 ## <a name="return-value"></a>반환 값

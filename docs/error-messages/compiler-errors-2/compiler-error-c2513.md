@@ -7,15 +7,15 @@ helpviewer_keywords:
 - C2513
 ms.assetid: ab5b21d3-61e2-4df7-8eea-6f14d6ba8620
 ms.openlocfilehash: 13840246a5dc6a1c1bdbcb55dc47f212ee353d81
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62165218"
 ---
 # <a name="compiler-error-c2513"></a>컴파일러 오류 C2513
 
-'type': '=' 앞에 없는 변수 선언
+'type' : no variable declared before '='
 
 형식 지정 자가 변수 식별자 없이 선언에 나타납니다.
 

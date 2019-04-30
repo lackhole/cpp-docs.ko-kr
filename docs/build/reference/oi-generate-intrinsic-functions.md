@@ -13,11 +13,11 @@ helpviewer_keywords:
 - generate intrinsic functions compiler option [C++]
 ms.assetid: fa4a3bf6-0ed8-481b-91c0-add7636132b4
 ms.openlocfilehash: f3afedade6f99129c21069e5117daa4ceb616cc2
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320346"
 ---
 # <a name="oi-generate-intrinsic-functions"></a>/Oi(내장 함수 만들기)
 
@@ -45,11 +45,11 @@ ms.locfileid: "57811890"
 
 **END x86 특정**
 
-또한 사용 하 여 [내장](../../preprocessor/intrinsic.md) 내장 함수 또는 [함수 (C/c + +)](../../preprocessor/function-c-cpp.md) 함수 호출을 명시적으로 적용할 합니다.
+또한 사용 하 여 [내장](../../preprocessor/intrinsic.md) 내장 함수 또는 [함수 (C /C++)](../../preprocessor/function-c-cpp.md) 함수 호출을 명시적으로 적용할 합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 

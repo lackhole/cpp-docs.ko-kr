@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4744
 ms.assetid: f2a7d0b5-afd5-4926-abc3-cfbd367e3ff5
 ms.openlocfilehash: 2118a32af8b99d35c1e1a6691561391ec5d2b8cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385422"
 ---
 # <a name="compiler-warning-level-1-c4744"></a>컴파일러 경고(수준 1) C4744
 
@@ -22,7 +22,7 @@ ms.locfileid: "50606013"
 /Gl 파일 컴파일되는 경우에 C4744 내보내집니다.  자세한 내용은 [/GL(전체 프로그램 최적화)](../../build/reference/gl-whole-program-optimization.md)을 참조하세요.
 
 > [!NOTE]
->  일반적으로 C4744 c + +에서 변수 이름을 형식 정보를 사용 하 여 데코 레이트 된 때문에 C (하지 c + +) 파일에서 발생 합니다.  (아래) 샘플 c + +로 컴파일하 되 면 링커 오류 LNK2019를 얻게 됩니다.
+>  C4744 C에서 일반적으로 발생 (되지 C++) 때문에 파일에서 C++ 형식 정보를 사용 하 여 변수 이름이 데코레이팅됩니다.  샘플 (아래)로 컴파일한 경우 C++, 링커 오류 LNK2019를 받게 됩니다.
 
 ## <a name="example"></a>예제
 

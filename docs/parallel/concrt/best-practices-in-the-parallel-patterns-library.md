@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Parallel Patterns Library, best practices
 ms.assetid: e43e0304-4d54-4bd8-a3b3-b8673559a9d7
 ms.openlocfilehash: fc120ecc122678b54c7dd27b95445f523bc114a6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394496"
 ---
 # <a name="best-practices-in-the-parallel-patterns-library"></a>병렬 패턴 라이브러리의 유용한 정보
 
@@ -82,8 +82,7 @@ PPL에 대 한 자세한 내용은 참조 하세요. [라이브러리 PPL (병�
 
 ##  <a name="divide-and-conquer"></a> Parallel_invoke 계산 및 분할 나누기 문제를 사용 하 여
 
-A *나누기 및 분할* 문제는를 사용 하 여 재귀 작업 하위 작업으로 나누는 분기-조인 구문의 형태입니다. 외에 [concurrency:: task_group](reference/task-group-class.md) 하 고 [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) 클래스를 사용할 수도 있습니다는 [concurrency:: parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 알고리즘을 나누기 및 분할 문제를 해결 합니다. 
-  `parallel_invoke` 알고리즘은 작업 그룹 개체보다 구문이 더 간결하며 고정된 개수의 병렬 작업이 있는 경우에 유용합니다.
+A *나누기 및 분할* 문제는를 사용 하 여 재귀 작업 하위 작업으로 나누는 분기-조인 구문의 형태입니다. 외에 [concurrency:: task_group](reference/task-group-class.md) 하 고 [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) 클래스를 사용할 수도 있습니다는 [concurrency:: parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 알고리즘을 나누기 및 분할 문제를 해결 합니다. `parallel_invoke` 알고리즘은 작업 그룹 개체보다 구문이 더 간결하며 고정된 개수의 병렬 작업이 있는 경우에 유용합니다.
 
 다음 예제에서는 `parallel_invoke` 알고리즘을 사용하여 바이토닉 정렬 알고리즘을 구현하는 방법을 보여 줍니다.
 
@@ -109,10 +108,7 @@ PPL은 작업 그룹 또는 병렬 알고리즘에서 수행하는 병렬 작업
 
 [!code-cpp[concrt-task-tree-search#6](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_8.cpp)]
 
-
-  `tree::for_all` 메서드의 호출자는 트리의 각 요소에 대해 작업 함수를 호출할 필요가 없는 경우 예외를 발생시킬 수 있습니다. 다음 예제에서는 제공된 `tree` 개체에서 값을 검색하는 `search_for_value` 함수를 보여 줍니다. 
-  `search_for_value` 함수는 트리의 현재 요소가 제공된 값과 일치하는 경우 예외를 발생시키는 작업 함수를 사용합니다. 
-  `search_for_value` 함수는 `try-catch` 블록을 사용하여 예외를 캡처하고 결과를 콘솔에 출력합니다.
+`tree::for_all` 메서드의 호출자는 트리의 각 요소에 대해 작업 함수를 호출할 필요가 없는 경우 예외를 발생시킬 수 있습니다. 다음 예제에서는 제공된 `tree` 개체에서 값을 검색하는 `search_for_value` 함수를 보여 줍니다. `search_for_value` 함수는 트리의 현재 요소가 제공된 값과 일치하는 경우 예외를 발생시키는 작업 함수를 사용합니다. `search_for_value` 함수는 `try-catch` 블록을 사용하여 예외를 캡처하고 결과를 콘솔에 출력합니다.
 
 [!code-cpp[concrt-task-tree-search#3](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_9.cpp)]
 
@@ -144,8 +140,7 @@ Container 1: Freeing resources...Exiting program...
 
 - 부모 작업을 취소 하면 자식 작업에 대 한 호출 [concurrency:: parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke)를 취소할 수도 있습니다. 따라서 이러한 두 리소스가 해제되지 않습니다.
 
-- 부모 작업을 취소하면 자식 작업에서 내부 예외가 발생합니다. 
-  `Container` 소멸자는 이 예외를 처리하지 않으므로 예외가 상향 전파되고 세 번째 리소스가 해제되지 않습니다.
+- 부모 작업을 취소하면 자식 작업에서 내부 예외가 발생합니다. `Container` 소멸자는 이 예외를 처리하지 않으므로 예외가 상향 전파되고 세 번째 리소스가 해제되지 않습니다.
 
 - 자식 작업에서 발생하는 예외는 `Container` 소멸자를 통해 전파됩니다. 소멸자에서 발생하면 응용 프로그램이 정의되지 않은 상태가 됩니다.
 
@@ -161,8 +156,7 @@ Container 1: Freeing resources...Exiting program...
 
 병렬 루프의 본문이 가끔 차단되는 경우 이 메커니즘은 전반적인 작업 처리량을 최대화하는 데 도움이 됩니다. 그러나 많은 반복이 차단되는 경우 런타임에서 추가 작업을 실행할 많은 스레드를 만들 수 있습니다. 이 경우 메모리 부족 상태 또는 하드웨어 리소스의 사용률 저하가 발생할 수 있습니다.
 
-호출 하는 다음 예제는 [concurrency:: send](reference/concurrency-namespace-functions.md#send) 의 각 반복에서 함수를 `parallel_for` 루프입니다. 
-  `send`는 협조적으로 차단되기 때문에 런타임에서 `send`가 호출될 때마다 추가 작업을 실행할 새 스레드를 만듭니다.
+호출 하는 다음 예제는 [concurrency:: send](reference/concurrency-namespace-functions.md#send) 의 각 반복에서 함수를 `parallel_for` 루프입니다. `send`는 협조적으로 차단되기 때문에 런타임에서 `send`가 호출될 때마다 추가 작업을 실행할 새 스레드를 만듭니다.
 
 [!code-cpp[concrt-repeated-blocking#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_12.cpp)]
 
@@ -180,8 +174,7 @@ Container 1: Freeing resources...Exiting program...
 
 [!code-cpp[concrt-blocking-cancel#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_13.cpp)]
 
-
-  `new` 연산자는 차단될 수 있는 힙 할당을 수행합니다. 태스크는 협조적 차단 호출에 대 한 호출 등에서 수행 하는 경우에 런타임이 다른 작업을 수행 [critical_section](reference/critical-section-class.md#lock)합니다.
+`new` 연산자는 차단될 수 있는 힙 할당을 수행합니다. 태스크는 협조적 차단 호출에 대 한 호출 등에서 수행 하는 경우에 런타임이 다른 작업을 수행 [critical_section](reference/critical-section-class.md#lock)합니다.
 
 다음 예제에서는 불필요한 작업을 방지하여 성능을 향상시키는 방법을 보여 줍니다. 이 예제는 `Answer` 개체에 대한 저장소를 할당하기 전에 작업 그룹을 취소합니다.
 
@@ -199,9 +192,7 @@ Container 1: Freeing resources...Exiting program...
 
 이 예제에서는 잦은 잠금 작업이 사실상 루프를 직렬화하기 때문에 성능이 저하될 수도 있습니다. 또한 동시성 런타임 개체가 차단 작업을 수행하는 경우 첫 번째 스레드가 데이터를 기다리는 동안 스케줄러에서 다른 작업을 수행할 추가 스레드를 만들 수 있습니다. 많은 작업이 공유 데이터를 대기 중이어서 런타임에서 많은 스레드를 만드는 경우 응용 프로그램 성능이 저하되거나 리소스 부족 상태가 될 수 있습니다.
 
-PPL이 정의 된 [concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) 잠금 없는 방식으로 공유 리소스에 대 한 액세스를 제공 하 여 공유 상태를 제거할 수 있는 클래스입니다. 
-  `combinable` 클래스는 세분화된 계산을 수행한 다음 이러한 계산을 최종 결과로 병합할 수 있게 해주는 스레드 로컬 저장소를 제공합니다. 
-  `combinable` 개체는 환산(reduction) 변수로 간주될 수 있습니다.
+PPL이 정의 된 [concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) 잠금 없는 방식으로 공유 리소스에 대 한 액세스를 제공 하 여 공유 상태를 제거할 수 있는 클래스입니다. `combinable` 클래스는 세분화된 계산을 수행한 다음 이러한 계산을 최종 결과로 병합할 수 있게 해주는 스레드 로컬 저장소를 제공합니다. `combinable` 개체는 환산(reduction) 변수로 간주될 수 있습니다.
 
 다음 예제에서는 `critical_section` 개체 대신 `combinable` 개체로 합계를 계산하여 앞의 예제를 수정합니다. 이 예제는 각 스레드가 합계의 자체 로컬 복사본을 유지하기 때문에 크기가 조정됩니다. 이 예제에서는 합니다 [concurrency::combinable::combine](reference/combinable-class.md#combine) 최종 결과를 로컬 계산을 병합 하는 방법입니다.
 
@@ -229,8 +220,7 @@ PPL이 정의 된 [concurrency:: combinable](../../parallel/concrt/reference/com
 
 이 예제에서는 메모리 캐시의 크기가 64바이트 이하라고 가정합니다.
 
-사용 하는 것이 좋습니다 합니다 [concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) 클래스 작업 간에 데이터를 공유 해야 합니다. 
-  `combinable` 클래스는 거짓 공유의 가능성이 더 낮도록 스레드 지역 변수를 만듭니다. 에 대 한 자세한 내용은 합니다 `combinable` 클래스를 참조 하십시오 [병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)합니다.
+사용 하는 것이 좋습니다 합니다 [concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) 클래스 작업 간에 데이터를 공유 해야 합니다. `combinable` 클래스는 거짓 공유의 가능성이 더 낮도록 스레드 지역 변수를 만듭니다. 에 대 한 자세한 내용은 합니다 `combinable` 클래스를 참조 하십시오 [병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -238,10 +228,7 @@ PPL이 정의 된 [concurrency:: combinable](../../parallel/concrt/reference/com
 
 작업 그룹 또는 병렬 알고리즘에 람다 식을 제공하는 경우 캡처 절은 람다 식의 본문이 값이나 참조로 바깥쪽 범위의 변수에 액세스하는지를 지정합니다. 변수를 참조로 람다 식에 전달하는 경우 작업이 완료될 때까지 해당 변수의 수명이 유지되도록 보장해야 합니다.
 
-
-  `object` 클래스 및 `perform_action` 함수를 정의하는 다음 예제를 고려해 보세요. 
-  `perform_action` 함수는 `object` 변수를 만들고 해당 변수에 대해 비동기적으로 일부 작업을 수행합니다. 
-  `perform_action` 함수가 반환되기 전에 작업이 완료되도록 보장되지 않으므로 작업을 실행 중일 때 `object` 변수가 제거되면 프로그램 작동이 중단되거나 지정되지 않은 동작이 나타납니다.
+`object` 클래스 및 `perform_action` 함수를 정의하는 다음 예제를 고려해 보세요. `perform_action` 함수는 `object` 변수를 만들고 해당 변수에 대해 비동기적으로 일부 작업을 수행합니다. `perform_action` 함수가 반환되기 전에 작업이 완료되도록 보장되지 않으므로 작업을 실행 중일 때 `object` 변수가 제거되면 프로그램 작동이 중단되거나 지정되지 않은 동작이 나타납니다.
 
 [!code-cpp[concrt-lambda-lifetime#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_20.cpp)]
 
@@ -251,8 +238,7 @@ PPL이 정의 된 [concurrency:: combinable](../../parallel/concrt/reference/com
 
 [!code-cpp[concrt-lambda-lifetime#2](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_21.cpp)]
 
-
-  `object` 변수가 값으로 전달되기 때문에 이 변수에 발생하는 상태 변경 내용은 원래 복사본에 나타나지 않습니다.
+`object` 변수가 값으로 전달되기 때문에 이 변수에 발생하는 상태 변경 내용은 원래 복사본에 나타나지 않습니다.
 
 다음 예제에서는 합니다 [concurrency::task_group::wait](reference/task-group-class.md#wait) 하기 전에 작업이 완료 되었는지 확인 하는 방법의 `perform_action` 함수에서 반환 합니다.
 

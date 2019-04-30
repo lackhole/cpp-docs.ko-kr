@@ -49,11 +49,11 @@ helpviewer_keywords:
 - nexttowardl function
 ms.assetid: 9785bfb9-de53-4bd0-9637-f05fa0c1f6ab
 ms.openlocfilehash: 0e0a60dc9f7c068d8c18c10f3c6b819b9e06d3b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156189"
 ---
 # <a name="nextafter-nextafterf-nextafterl-nextafter-nextafterf-nexttoward-nexttowardf-nexttowardl"></a>nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 
@@ -98,7 +98,7 @@ long double nexttoward( long double x, long double y ); /* C++ only, requires <c
 
 합니다 **nextafter** 하 고 **nexttoward** 함수 패밀리는 매개 변수 형식 제외 하면 동일 *y*합니다. 하는 경우 *x* 하 고 *y* 는 같음, 값이 반환 됩니다 *y* 반환 형식으로 변환 합니다.
 
-C + + 오버 로드를 포함 하는 경우 허용 하므로 \<cmath > 오버 로드를 호출할 수 있습니다 **nextafter** 하 고 **nexttoward** 반환 하는 **float** 및 **긴** **이중** 형식입니다. C 프로그램에서 **nextafter** 하 고 **nexttoward** 항상 반환 **double**합니다.
+때문에 C++ 오버 로드를 포함 하는 경우 허용 \<cmath > 오버 로드를 호출할 수 있습니다 **nextafter** 하 고 **nexttoward** 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **nextafter** 하 고 **nexttoward** 항상 반환 **double**합니다.
 
 합니다 **_nextafter** 하 고 **_nextafterf** 함수는 Microsoft 전용입니다. 합니다 **_nextafterf** x64 용으로 컴파일할 때 함수를 사용할 수만 있습니다.
 
@@ -106,7 +106,7 @@ C + + 오버 로드를 포함 하는 경우 허용 하므로 \<cmath > 오버 �
 
 |루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C++)|
 |-------------|---------------------------|-------------------------------|
-|**nextafter**, **nextafterf**합니다 **nextafterl**를 **_nextafterf**를 **nexttoward**, **nexttowardf** , **nexttowardl**|\<math.h>|\<math.h> 또는 \<cmath>|
+|**nextafter**, **nextafterf**, **nextafterl**, **_nextafterf**, **nexttoward**, **nexttowardf**, **nexttowardl**|\<math.h>|\<math.h> 또는 \<cmath>|
 |**_nextafter**|\<float.h>|\<float.h> 또는 \<cfloat>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.

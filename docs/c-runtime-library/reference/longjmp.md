@@ -23,11 +23,11 @@ helpviewer_keywords:
 - longjmp function
 ms.assetid: 0e13670a-5130-45c1-ad69-6862505b7a2f
 ms.openlocfilehash: e5189ff7cb850acd9c9a1280f47fc9a1270f8b68
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57211006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157411"
 ---
 # <a name="longjmp"></a>longjmp
 
@@ -47,7 +47,7 @@ void longjmp(
 *env*<br/>
 환경이 저장되는 변수입니다.
 
-*value*<br/>
+*값*<br/>
 `setjmp` 호출에 대해 반환되는 값입니다.
 
 ## <a name="remarks"></a>설명
@@ -58,7 +58,7 @@ void longjmp(
 
 **Microsoft 전용**
 
-Windows, Microsoft c + + 코드에 **longjmp** 예외 처리 코드와 동일한 스택 해제 의미 체계를 사용 합니다. C + + 예외를 발생 시킬 수 동일한 장소에서 사용 하려면 안전 합니다. 그러나이 사용량 이식 가능 하며 되지 않으며 중요 한 몇 가지 주의 사항이 있습니다.
+Microsoft에서 C++ Windows에서의 코드 **longjmp** 예외 처리 코드와 동일한 스택 해제 의미 체계를 사용 합니다. 안전 하 게 사용 하 여 동일한 배치 하는 C++ 예외를 발생 시킬 수 있습니다. 그러나이 사용량 이식 가능 하며 되지 않으며 중요 한 몇 가지 주의 사항이 있습니다.
 
 호출 **longjmp** 호출한 함수 앞에 `setjmp` 반환 합니다; 그렇지 않으면 결과 예측할 수 없습니다.
 
@@ -75,7 +75,7 @@ Windows, Microsoft c + + 코드에 **longjmp** 예외 처리 코드와 동일한
 **Microsoft 전용 종료**
 
 > [!NOTE]
-> 이식 가능한 c + + 코드에서 가정할 수 없습니다 `setjmp` 고 `longjmp` c + + 개체 의미 체계를 지원 합니다. 특히를 `setjmp` / `longjmp` 쌍에 정의 되지 않은 동작이 대체 하는 경우 호출 합니다 `setjmp` 및 `longjmp` 여 **catch** 및 **throw** 호출 자동 개체에 대 한 모든 non-trivial 소멸자가 있습니다. C + + 프로그램에서 c + + 예외 처리 메커니즘을 사용 하는 것이 좋습니다.
+> 노트북에서 C++ 코드를 가정할 수 없습니다 `setjmp` 하 고 `longjmp` 지원 C++ 의미 체계 개체입니다. 특히를 `setjmp` / `longjmp` 쌍에 정의 되지 않은 동작이 대체 하는 경우 호출 합니다 `setjmp` 및 `longjmp` 여 **catch** 및 **throw** 호출 자동 개체에 대 한 모든 non-trivial 소멸자가 있습니다. C++ 프로그램을 사용할 권장 합니다 C++ 예외 처리 메커니즘입니다.
 
 자세한 내용은 [setjmp 및 longjmp 사용](../../cpp/using-setjmp-longjmp.md)을 참조하세요.
 

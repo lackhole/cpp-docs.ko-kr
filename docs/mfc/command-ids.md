@@ -6,11 +6,11 @@ helpviewer_keywords:
 - command IDs
 ms.assetid: e0171a2b-45b9-41fa-945d-ec2f7602ded0
 ms.openlocfilehash: 76071105e72f1ca4a851b9cdb76d5f1a96f44edb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219901"
 ---
 # <a name="command-ids"></a>명령 ID
 
@@ -18,7 +18,7 @@ ms.locfileid: "57274580"
 
 예를 들어 편집 메뉴에서 항목을 모두 지우기 할당 될 수 있습니다 ID와 같은 **ID_EDIT_CLEAR_ALL**합니다. 클래스 라이브러리를 처리 하는 프레임 워크 자체와 같은 명령에 대 한 특히 일부 Id 미리 정의 **ID_EDIT_CLEAR_ALL** 하거나 **ID_FILE_OPEN**합니다. 다른 명령 Id를 직접 만들 됩니다.
 
-사용자 고유의 메뉴 Visual c + +에서 메뉴 편집기를 만들 때 표시 된 것 처럼 클래스 라이브러리를 수행 하는 것이 좋습니다의 명명 규칙 **ID_FILE_OPEN**합니다. [표준 명령](../mfc/standard-commands.md) 클래스 라이브러리에서 정의 하는 일반적인 명령에 설명 합니다.
+시각적 개체에 직접 메뉴를 만들 때 C++ 나온 것 처럼 클래스 라이브러리를 수행 하는 것이 좋습니다의 명명 규칙은 메뉴 편집기를 해당 **ID_FILE_OPEN**합니다. [표준 명령](../mfc/standard-commands.md) 클래스 라이브러리에서 정의 하는 일반적인 명령에 설명 합니다.
 
 ## <a name="see-also"></a>참고자료
 

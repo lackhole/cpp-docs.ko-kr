@@ -5,11 +5,11 @@ f1_keywords:
 - atomic/std::atomic
 ms.assetid: 261628ed-7049-41ac-99b9-cfe49f696b44
 ms.openlocfilehash: 258812f033d34f040d96847581d6f51692a933b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62376671"
 ---
 # <a name="atomic-structure"></a>atomic 구조체
 
@@ -30,14 +30,14 @@ struct atomic;
 |[atomic](#atomic)|atomic 개체를 생성합니다.|
 |**연산자**||
 |[atomic:: operator Ty](#op_ty)|저장된 값을 읽고 반환합니다. ([atomic::load](#load))|
-|[atomic:: operator =](#op_eq)|지정된 값을 사용하여 저장된 값을 바꿉니다. ([atomic::store](#store))|
-|[atomic:: operator + +](#op_inc)|저장된 값을 증가시킵니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
-|[atomic:: operator + =](#op_add_eq)|지정된 값을 저장된 값에 더합니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
-|[atomic:: operator-](#op_dec)|저장된 값을 감소시킵니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
-|[atomic:: operator =](#op_sub_eq)|지정된 값을 저장된 값에서 뺍니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
-|[atomic:: operator & =](#op_and_eq)|연산이 지정된 된 값 및 저장 된 값입니다. 정수 계열 특수화에서만 사용됩니다.|
-|[atomic:: operator&#124;=](#op_or_eq)|연산을 또는 지정된 된 값에 저장 된 값입니다. 정수 계열 특수화에서만 사용됩니다.|
-|[atomic:: operator ^ =](#op_xor_eq)|배타적 비트를 수행 하거나 지정된 된 값에 저장 된 값입니다. 정수 계열 특수화에서만 사용됩니다.|
+|[atomic::operator=](#op_eq)|지정된 값을 사용하여 저장된 값을 바꿉니다. ([atomic::store](#store))|
+|[atomic::operator++](#op_inc)|저장된 값을 증가시킵니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
+|[atomic::operator+=](#op_add_eq)|지정된 값을 저장된 값에 더합니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
+|[atomic::operator--](#op_dec)|저장된 값을 감소시킵니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
+|[atomic::operator-=](#op_sub_eq)|지정된 값을 저장된 값에서 뺍니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
+|[atomic::operator&=](#op_and_eq)|연산이 지정된 된 값 및 저장 된 값입니다. 정수 계열 특수화에서만 사용됩니다.|
+|[atomic::operator&#124;=](#op_or_eq)|연산을 또는 지정된 된 값에 저장 된 값입니다. 정수 계열 특수화에서만 사용됩니다.|
+|[atomic::operator^=](#op_xor_eq)|배타적 비트를 수행 하거나 지정된 된 값에 저장 된 값입니다. 정수 계열 특수화에서만 사용됩니다.|
 |**함수**||
 |[compare_exchange_strong](#compare_exchange_strong)|수행 하는 *atomic_compare_and_exchange* 연산을 **이** 결과 반환 합니다.|
 |[compare_exchange_weak](#compare_exchange_weak)|수행을 *weak_atomic_compare_and_exchange* 연산을 **이** 결과 반환 합니다.|
@@ -60,11 +60,11 @@ struct atomic;
 
 ||||
 |-|-|-|
-|**원자성\<char >**|**원자성\<char 로그인 >**|**원자성\<unsigned char >**|
-|**원자성\<char16_t >**|**원자성\<char32_t >**|**원자성\<wchar_t >**|
-|**원자성\<짧은 >**|**원자성\<짧은 부호 없음 >**|**원자성\<int >**|
-|**원자성\<부호 없는 int >**|**원자성\<긴 >**|**원자성\<부호 없는 long >**|
-|**원자성\<long long >**|**원자성\<부호 없는 long long >**|
+|**atomic\<char>**|**atomic\<signed char>**|**atomic\<unsigned char>**|
+|**atomic\<char16_t>**|**atomic\<char32_t>**|**atomic\<wchar_t>**|
+|**atomic\<short>**|**atomic\<unsigned short>**|**atomic\<int>**|
+|**atomic\<unsigned int>**|**atomic\<long>**|**atomic\<unsigned long>**|
+|**원자성\<long long >**|**atomic\<unsigned long long>**|
 
 정수 특수화는 해당 `atomic_integral` 형식에서 파생됩니다. 예를 들어 **원자성\<부호 없는 int >** 에서 파생 된 `atomic_uint`합니다.
 
@@ -74,7 +74,7 @@ struct atomic;
 
 **네임스페이스:** std
 
-## <a name="atomic"></a> atomic:: atomic
+## <a name="atomic"></a> atomic::atomic
 
 atomic 개체를 생성합니다.
 
@@ -113,7 +113,7 @@ atomic<Ty>::operator Ty() const noexcept;
 
 이 연산자에 적용 되는 `memory_order_seq_cst` [memory_order](atomic-enums.md)합니다.
 
-## <a name="op_eq"></a> atomic:: operator =
+## <a name="op_eq"></a> atomic::operator=
 
 지정된 값을 저장합니다.
 
@@ -135,7 +135,7 @@ A *Ty* 개체입니다.
 
 반환 *값*합니다.
 
-## <a name="op_inc"></a> atomic:: operator + +
+## <a name="op_inc"></a> atomic::operator++
 
 저장된 값을 증가시킵니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.
 
@@ -150,7 +150,7 @@ Ty atomic<Ty>::operator++() noexcept;
 
 처음 두 연산자는 증가 값 반환 마지막 두 연산자는 증가 전에 값을 반환 합니다. 연산자를 사용 합니다 `memory_order_seq_cst` [memory_order](atomic-enums.md)합니다.
 
-## <a name="op_add_eq"></a> atomic:: operator + =
+## <a name="op_add_eq"></a> atomic::operator+=
 
 지정된 값을 저장된 값에 더합니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.
 
@@ -176,7 +176,7 @@ A *Ty* 더하기의 결과 포함 하는 개체입니다.
 
 이 연산자를 사용 합니다 `memory_order_seq_cst` [memory_order](atomic-enums.md)합니다.
 
-## <a name="op_dec"></a> atomic:: operator-
+## <a name="op_dec"></a> atomic::operator--
 
 저장된 값을 감소시킵니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.
 
@@ -191,7 +191,7 @@ Ty atomic<Ty>::operator--() noexcept;
 
 처음 두 연산자는 감소 값을 반환 마지막 두 연산자는 감소 전에 값을 반환 합니다. 연산자를 사용 합니다 `memory_order_seq_cst` [memory_order](atomic-enums.md)합니다.
 
-## <a name="op_sub_eq"></a> atomic:: operator =
+## <a name="op_sub_eq"></a> atomic::operator-=
 
 지정된 값을 저장된 값에서 뺍니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.
 
@@ -217,7 +217,7 @@ A *Ty* 빼기의 결과 포함 하는 개체입니다.
 
 이 연산자를 사용 합니다 `memory_order_seq_cst` [memory_order](atomic-enums.md)합니다.
 
-## <a name="op_and_eq"></a> atomic:: operator & =
+## <a name="op_and_eq"></a> atomic::operator&=
 
 연산을 수행 하 고에 지정된 된 값의 저장된 된 값  **\*이**합니다. 정수 계열 특수화에서만 사용됩니다.
 
@@ -269,7 +269,7 @@ atomic<Ty>::operator|= (
 
 이 연산자는 저장 된 값을 읽기-수정-쓰기 작업을 수행  **\*이렇게** 또는 비트 *값* 에 저장 된 현재 값  **\*이**, 제약 조건에 `memory_order_seq_cst` [memory_order](atomic-enums.md) 제약 조건입니다.
 
-## <a name="op_xor_eq"></a> atomic:: operator ^ =
+## <a name="op_xor_eq"></a> atomic::operator^=
 
 배타적 비트를 수행 하거나에 지정된 된 값의 저장된 된 값  **\*이**합니다. 정수 계열 특수화에서만 사용됩니다.
 
@@ -295,7 +295,7 @@ atomic<Ty>::operator^= (
 
 이 연산자는 저장 된 값을 읽기-수정-쓰기 작업을 수행  **\*이렇게** 배타적 비트를 사용 하 여 또는 *값* 에 저장 된 현재 값  **\*이**, 제약 조건에 `memory_order_seq_cst` [memory_order](atomic-enums.md) 제약 조건입니다.
 
-## <a name="compare_exchange_strong"></a> atomic:: compare_exchange_strong
+## <a name="compare_exchange_strong"></a> atomic::compare_exchange_strong
 
 원자성 비교 및 교환 작업을 수행  **\*이**합니다.
 
@@ -332,7 +332,7 @@ bool compare_exchange_strong(
 *값*<br/>
 형식의 값입니다 *Ty*합니다.
 
-*(Diffgr:id="order1*<br/>
+*Order1*<br/>
 첫 번째 `memory_order` 인수입니다.
 
 *Order2*<br/>
@@ -350,7 +350,7 @@ A **bool** 값 비교의 결과 나타내는입니다.
 
 두 개의 오버 로드에 대 한 `memory_order` 매개 변수, 값 *Order2* 아니어야 `memory_order_release` 또는 `memory_order_acq_rel`의 값 보다 강력 하지 않아야 *(diffgr:id="order1*합니다.
 
-## <a name="compare_exchange_weak"></a> atomic:: compare_exchange_weak
+## <a name="compare_exchange_weak"></a> atomic::compare_exchange_weak
 
 약한 원자 비교 및 교환 작업을 수행  **\*이**합니다.
 
@@ -387,7 +387,7 @@ bool compare_exchange_weak(
 *값*<br/>
 형식의 값입니다 *Ty*합니다.
 
-*(Diffgr:id="order1*<br/>
+*Order1*<br/>
 첫 번째 `memory_order` 인수입니다.
 
 *Order2*<br/>
@@ -407,7 +407,7 @@ A **bool** 값 비교의 결과 나타내는입니다.
 
 두 개의 오버 로드에 대 한 `memory_order` 매개 변수, 값 *Order2* 아니어야 `memory_order_release` 또는 `memory_order_acq_rel`의 값 보다 강력 하지 않아야 *(diffgr:id="order1*합니다.
 
-## <a name="exchange"></a> atomic:: exchange
+## <a name="exchange"></a> atomic::exchange
 
 지정된 된 값을 사용 하 여의 저장된 값을 바꿉니다  **\*이**합니다.
 
@@ -438,7 +438,7 @@ Ty atomic<Ty>::exchange(
 
 이 작업을 사용 하 여 읽기-수정-쓰기 작업을 수행 *값* 에 저장 된 값을 바꾸려면  **\*이**로 지정 되는 메모리 제약 조건 내에서  *순서*합니다.
 
-## <a name="fetch_add"></a> atomic:: fetch_add
+## <a name="fetch_add"></a> atomic::fetch_add
 
 에 저장 된 값을 인출  **\*이**, 한 다음 저장된 된 값에 지정된 된 값을 추가 합니다.
 
@@ -469,7 +469,7 @@ A *Ty* 에 저장 된 값이 포함 된 개체  **\*이** 추가 하기 전에 �
 
 `fetch_add` 원자 단위로 더하기 위해 읽기-수정-쓰기 작업을 수행 하는 메서드 *값* 에 저장된 된 값을  **\*이**, 지정 된 메모리 제약 조건을 적용 *순서*합니다.
 
-## <a name="fetch_and"></a> atomic:: fetch_and
+## <a name="fetch_and"></a> atomic::fetch_and
 
 연산 및에 값에 저장 된 기존 값  **\*이**합니다.
 
@@ -500,7 +500,7 @@ A *Ty* 비트 결과 포함 하는 개체 및 합니다.
 
 합니다 `fetch_and` 의 저장된 값을 바꿉니다 읽기-수정-쓰기 작업을 수행 하는 메서드  **\*이** 비트와 *값* 에저장된현재값 **\*이**에 의해 지정 된 메모리 제약 조건 내에서 *순서*합니다.
 
-## <a name="fetch_or"></a> atomic:: fetch_or
+## <a name="fetch_or"></a> atomic::fetch_or
 
 연산을에 저장 된 기존 값 및 값에서 또는  **\*이**합니다.
 
@@ -531,7 +531,7 @@ A *Ty* 비트 결과 포함 하는 개체 또는 합니다.
 
 합니다 `fetch_or` 의 저장된 값을 바꿉니다 읽기-수정-쓰기 작업을 수행 하는 메서드  **\*이** 또는 비트 *값* 에저장된현재값 **\*이**에 의해 지정 된 메모리 제약 조건 내에서 *순서*합니다.
 
-## <a name="fetch_sub"></a> atomic:: fetch_sub
+## <a name="fetch_sub"></a> atomic::fetch_sub
 
 지정된 값을 저장된 값에서 뺍니다.
 
@@ -562,7 +562,7 @@ A *Ty* 빼기의 결과 포함 하는 개체입니다.
 
 `fetch_sub` 원자 단위로 뺄 읽기-수정-쓰기 작업을 수행 하는 메서드 *값* 에 저장된 된 값에서  **\*이**, 지정 된 메모리 제약 조건 내에서 *순서*합니다.
 
-## <a name="fetch_xor"></a> atomic:: fetch_xor
+## <a name="fetch_xor"></a> atomic::fetch_xor
 
 배타적 비트 수행에 저장 된 기존 값 및 값에서 또는  **\*이**합니다.
 
@@ -593,7 +593,7 @@ A *Ty* 배타적 비트의 결과 포함 하는 개체 또는 합니다.
 
 합니다 `fetch_xor` 의 저장된 값을 바꿉니다 읽기-수정-쓰기 작업을 수행 하는 메서드  **\*이** 배타적 비트를 사용 하 여 또는 *값* 에 저장 된 현재 값  **\*이**에 의해 지정 된 메모리 제약 조건을 적용 *순서*합니다.
 
-## <a name="is_lock_free"></a> atomic:: is_lock_free
+## <a name="is_lock_free"></a> atomic::is_lock_free
 
 지정 여부의 원자 연산이  **\*이** 잠금 해제 됩니다.
 
@@ -609,7 +609,7 @@ true 이면 원자 연산은  **\*이** 는 잠금 무료, 그렇지 않으면 f
 
 원자 형식은 잠금 없는 해당 형식에 없는 원자 연산도 잠금을 사용 하는 경우입니다.
 
-## <a name="load"></a> atomic:: load
+## <a name="load"></a> atomic::load
 
 에 저장된 된 값을 검색  **\*이**, 지정한 메모리 제약 조건 내에서.
 
@@ -631,7 +631,7 @@ Ty atomic::load(
 
 에 저장 된 검색된 된 값  **\*이**합니다.
 
-## <a name="store"></a> atomic:: store
+## <a name="store"></a> atomic::store
 
 지정된 값을 저장합니다.
 

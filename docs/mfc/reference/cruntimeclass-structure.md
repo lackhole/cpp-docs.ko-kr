@@ -10,11 +10,11 @@ helpviewer_keywords:
 - run-time class [MFC], CRuntimeClass structure
 ms.assetid: de62b6ef-90d4-420f-8c70-f58b36976a2b
 ms.openlocfilehash: 92979a10c18d9759e0ecc9f0785e56a97c0f0642
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372051"
 ---
 # <a name="cruntimeclass-structure"></a>CRuntimeClass 구조체
 
@@ -51,9 +51,9 @@ struct CRuntimeClass
 
 `CRuntimeClass` 구조체 이며 따라서 기본 클래스를 포함 하지 않습니다.
 
-런타임 시 개체의 클래스를 결정 하는 기능 추가 형식 함수 인수 검사가 필요한 경우 또는 개체의 클래스를 기반으로 하는 특수 한 용도의 코드를 작성 해야 하는 경우에 유용 합니다. 런타임 클래스 정보는 c + + 언어에서 직접 지원 되지 않습니다.
+런타임 시 개체의 클래스를 결정 하는 기능 추가 형식 함수 인수 검사가 필요한 경우 또는 개체의 클래스를 기반으로 하는 특수 한 용도의 코드를 작성 해야 하는 경우에 유용 합니다. 런타임 클래스 정보로 직접 지원 되지 않습니다는 C++ 언어입니다.
 
-`CRuntimeClass` 에 대 한 포인터와 같은 관련된 c + + 개체에 대 한 정보를 제공 합니다 `CRuntimeClass` 기본 클래스 및 관련된 클래스의 ASCII 클래스 이름입니다. 이 구조는 또한 동적으로 개체를 친숙 한 이름을 사용 하 고 관련된 클래스는 특정 클래스에서 파생 된 경우를 결정 하 여 개체의 형식 지정을 만드는 데 사용할 수 있는 다양 한 기능을 구현 합니다.
+`CRuntimeClass` 관련 정보를 제공 합니다. C++ 에 대 한 포인터 등의 개체를 `CRuntimeClass` 기본 클래스 및 관련된 클래스의 ASCII 클래스 이름입니다. 이 구조는 또한 동적으로 개체를 친숙 한 이름을 사용 하 고 관련된 클래스는 특정 클래스에서 파생 된 경우를 결정 하 여 개체의 형식 지정을 만드는 데 사용할 수 있는 다양 한 기능을 구현 합니다.
 
 사용 하 여 대 한 자세한 내용은 `CRuntimeClass`, 문서를 참조 하세요 [런타임 클래스 정보 액세스](../../mfc/accessing-run-time-class-information.md)합니다.
 

@@ -31,11 +31,11 @@ helpviewer_keywords:
 - CFtpConnection [MFC], SetCurrentDirectory
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
 ms.openlocfilehash: 12ef4de16279c5c2033a95df5928a6dfb7a2a652
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62181979"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection 클래스
 
@@ -440,8 +440,7 @@ FTP 서버에서 만들 파일의 이름을 포함 하는 문자열에 대 한 �
 
 `PutFile` 모든 FTP 서버의 파일을 저장 하는 연관 된 작업을 처리 하는 높은 수준의 루틴입니다. 만 데이터를 보내거나 파일 전송이 좀 더 자세히 제어 해야 하는 응용 프로그램을 사용할지 [OpenFile](#openfile) 하 고 [CInternetFile::Write](../../mfc/reference/cinternetfile-class.md#write)합니다.
 
-
-  `dwContext` 기본값을 재정의하여 컨텍스트 식별자를 설정한 값으로 설정합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CFtpConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+`dwContext` 기본값을 재정의하여 컨텍스트 식별자를 설정한 값으로 설정합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CFtpConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
 ##  <a name="remove"></a>  CFtpConnection::Remove
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - data marshaling [C++], arrays
 ms.assetid: a1237797-a2da-4df4-984a-6333ed3af406
 ms.openlocfilehash: 60b49135928e3dadffc2a3c7a422646d2f3a768d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62325444"
 ---
 # <a name="how-to-marshal-arrays-using-pinvoke"></a>방법: PInvoke를 사용 하는 배열 마샬링
 
-이 항목에서는 C 스타일 문자열 CLR 문자열 형식을 사용 하 여 호출 하는 방법을 네이티브 함수에 설명 <xref:System.String> 지원.NET Framework 플랫폼 호출을 사용 합니다. Visual c + + 프로그래머는 P/Invoke 제공 거의 컴파일 타임 오류를 보고, 형식이 안전한 아니며 구현 되기 번거로울 수 있습니다 (가능한 경우) 대신 c + + Interop 기능을 사용 하는 것이 좋습니다. P/Invoke가 유일한 옵션인 관리 되지 않는 API는 DLL로 패키지 하 고 소스 코드를 사용할 수 없는 경우 (참조이 고, 그렇지 [c + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)).
+이 항목에서는 C 스타일 문자열 CLR 문자열 형식을 사용 하 여 호출 하는 방법을 네이티브 함수에 설명 <xref:System.String> 지원.NET Framework 플랫폼 호출을 사용 합니다. Visual C++ 프로그래머는 사용 하는 것이 좋습니다는 C++ Interop 기능 대신 (가능한 경우) P/Invoke는 작은 컴파일 타임 오류를 보고, 형식이 안전한 아니며 구현 되기 번거로울 수를 제공 하기 때문입니다. P/Invoke가 유일한 옵션인 관리 되지 않는 API는 DLL로 패키지 하 고 소스 코드를 사용할 수 없는 경우 (참조이 고, 그렇지 [사용 C++ (암시적 PInvoke) Interop](../dotnet/using-cpp-interop-implicit-pinvoke.md)).
 
 ## <a name="example"></a>예제
 

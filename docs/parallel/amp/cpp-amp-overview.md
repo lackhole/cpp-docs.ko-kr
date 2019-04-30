@@ -9,15 +9,15 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
 ms.openlocfilehash: 258266768d3f456fb761a9d5a403a92c502dbe32
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349911"
 ---
 # <a name="c-amp-overview"></a>C++ AMP 개요
 
-C + + Accelerated Massive Parallelism (c + + AMP)는 개별 그래픽 카드의 그래픽 처리 장치 (GPU)와 같은 데이터 병렬 하드웨어를 활용 하 여 c + + 코드의 실행을 가속화 합니다. C + + AMP를 사용 하 여 다른 유형의 하드웨어에서 병렬 처리를 사용 하 여 실행을 촉진할 수 있도록 다차원 데이터 알고리즘을 코딩할 수 있습니다. C++ AMP 프로그래밍 모델에는 다차원 배열, 인덱싱, 메모리 전송, 바둑판식 배열 및 수학 함수 라이브러리가 포함됩니다. C + + AMP 언어 확장을 사용 하 여 성능을 향상 시킬 수 있도록 CPU에서 GPU로 백, 데이터를 이동 하는 방법을 제어할 수 있습니다.
+C++Accelerated Massive Parallelism (C++ AMP)의 실행 속도 높입니다 C++ 는 개별 그래픽 카드의 그래픽 처리 장치 (GPU)와 같은 데이터 병렬 하드웨어를 활용 하 여 코드입니다. 사용 하 여 C++ AMP 서로 다른 유형의 하드웨어에서 병렬 처리를 사용 하 여 실행을 촉진할 수 있도록 다차원 데이터 알고리즘을 코딩할 수 있습니다. C++ AMP 프로그래밍 모델에는 다차원 배열, 인덱싱, 메모리 전송, 바둑판식 배열 및 수학 함수 라이브러리가 포함됩니다. 사용할 수 있습니다 C++ 성능을 향상 시킬 수 있도록 CPU에서 GPU로 백, 데이터를 이동 하는 방법을 제어할를 AMP 언어 확장입니다.
 
 ## <a name="system-requirements"></a>시스템 요구 사항
 
@@ -33,7 +33,7 @@ C + + Accelerated Massive Parallelism (c + + AMP)는 개별 그래픽 카드의 
 
 ## <a name="introduction"></a>소개
 
-다음 두 예제에서는 c + + AMP의 기본 구성 요소를 보여 줍니다. 두 개의 1 차원 배열의 해당 요소를 추가 한다고 가정 합니다. 추가 하려는 하는 예를 들어 `{1, 2, 3, 4, 5}` 하 고 `{6, 7, 8, 9, 10}` 가져오려고 `{7, 9, 11, 13, 15}`합니다. C + + AMP를 사용 하지 않고 숫자를 추가 하 고 결과 표시 하려면 다음 코드를 작성할 수 있습니다.
+다음 두 예의 주요 구성 요소를 보여 줍니다. C++ AMP 합니다. 두 개의 1 차원 배열의 해당 요소를 추가 한다고 가정 합니다. 추가 하려는 하는 예를 들어 `{1, 2, 3, 4, 5}` 하 고 `{6, 7, 8, 9, 10}` 가져오려고 `{7, 9, 11, 13, 15}`합니다. 사용 하지 않고 C++ AMP 숫자를 추가 하 고 결과 표시 하려면 다음 코드를 작성할 수 있습니다.
 
 ```cpp
 #include <iostream>
@@ -64,7 +64,7 @@ void StandardMethod() {
 
 - 인덱스: `idx` 변수 배열의 개별 요소에 액세스 합니다.
 
-C + + AMP를 사용 하 여, 다음 코드를을 대신 작성할 수 있습니다.
+사용 하 여 C++ AMP 코드를 다음을 대신 작성할 수 있습니다.
 
 ```cpp
 #include <amp.h>
@@ -100,11 +100,11 @@ void CppAmpMethod() {
 }
 ```
 
-동일한 기본 요소는 있지만 c + + AMP 구문이 사용 됩니다.
+동일한 기본 요소는 있지만 C++ AMP 구문이 사용 됩니다.
 
-- 데이터: C + + 배열을 사용 하 여 3 개 c + + AMP를 생성할 [array_view](../../parallel/amp/reference/array-view-class.md) 개체입니다. 생성 하는 네 가지 값을 제공 하는 `array_view` 개체: 데이터 값, 순위, 요소 형식 및 길이 `array_view` 각 차원에서 개체입니다. 차수 및 형식은 형식 매개 변수로 전달 됩니다. 데이터 및 길이 생성자 매개 변수로 전달 됩니다. 이 예제에서는 생성자에 전달 되는 c + + 배열이 1 차원입니다. 차수 및 길이 데이터의 사각형 모양을 생성 하는 데 사용 된 `array_view` 개체 및 데이터 값 배열을 채우는 데 사용 됩니다. 런타임 라이브러리도 포함 되어 있습니다 합니다 [array 클래스](../../parallel/amp/reference/array-class.md)와 비슷한 인터페이스가 `array_view` 클래스 및이 문서의 뒷부분에서 설명 됩니다.
+- 데이터: 사용할 C++ 3 개를 생성 하는 배열 C++ AMP [array_view](../../parallel/amp/reference/array-view-class.md) 개체입니다. 생성 하는 네 가지 값을 제공 하는 `array_view` 개체: 데이터 값, 순위, 요소 형식 및 길이 `array_view` 각 차원에서 개체입니다. 차수 및 형식은 형식 매개 변수로 전달 됩니다. 데이터 및 길이 생성자 매개 변수로 전달 됩니다. 이 예제는 C++ 생성자에 전달 되는 배열이 1 차원입니다. 차수 및 길이 데이터의 사각형 모양을 생성 하는 데 사용 된 `array_view` 개체 및 데이터 값 배열을 채우는 데 사용 됩니다. 런타임 라이브러리도 포함 되어 있습니다 합니다 [array 클래스](../../parallel/amp/reference/array-class.md)와 비슷한 인터페이스가 `array_view` 클래스 및이 문서의 뒷부분에서 설명 됩니다.
 
-- 반복: 합니다 [parallel_for_each 함수 (c + + AMP)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) 데이터 요소를 통한 반복 메커니즘을 제공 하거나 *계산 도메인*합니다. 이 예제에서는 계산 도메인 된 `sum.extent`합니다. 람다 식에 포함 된 실행 하려는 코드 또는 *커널 함수가*합니다. `restrict(amp)` c + + AMP를 가속화할 수 있는 c + + 언어의 하위 집합만 사용 됨을 나타냅니다.
+- 반복: 합니다 [parallel_for_each 함수 (C++ AMP)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) 데이터 요소를 통한 반복 메커니즘을 제공 하거나 *계산 도메인*합니다. 이 예제에서는 계산 도메인 된 `sum.extent`합니다. 람다 식에 포함 된 실행 하려는 코드 또는 *커널 함수가*합니다. 합니다 `restrict(amp)` 만의 하위 집합을 나타냅니다는 C++ 언어는 C++ AMP 가속화할 수 있습니다 사용 됩니다.
 
 - 인덱스: [인덱스 클래스](../../parallel/amp/reference/index-class.md) 변수인 `idx`의 차수와 일치 하는 차수를 사용 하 여 선언 된는 `array_view` 개체입니다. 인덱스를 사용 하 여의 개별 요소에 액세스할 수 있습니다는 `array_view` 개체입니다.
 
@@ -318,7 +318,7 @@ void AddArrays() {
 
 합니다 *계산 도메인* 되는 `extent` 개체 또는 `tiled_extent` 병렬 실행을 위해 만들 스레드 집합을 정의 하는 개체입니다. 한 스레드가 컴퓨터 도메인의 각 요소에 대해 생성 됩니다. 이 경우에 `extent` 개체는 1 차원 이며 5 개의 요소가 있습니다. 따라서 5 개의 스레드가 시작 됩니다.
 
-합니다 *람다 식* 각 스레드에서 실행 하는 코드를 정의 합니다. 캡처 절 `[=]`,이 경우에 값으로 람다 식의 본문이 캡처된 모든 변수에 액세스 하도록 지정 `a`를 `b`, 및 `sum`합니다. 이 예제에서는 매개 변수 목록 만듭니다 1 차원 `index` 라는 변수 `idx`합니다. 값을 `idx[0]` 첫 번째 스레드에서 0 이며 후속 스레드마다에서 1 씩 증가 합니다. `restrict(amp)` c + + AMP를 가속화할 수 있는 c + + 언어의 하위 집합만 사용 됨을 나타냅니다.  에 설명 된 제한 한정자가 있는 함수에 대 한 제한을 [(c + + AMP) 제한](../../cpp/restrict-cpp-amp.md)합니다. 자세한 내용은 [람다 식 구문](../../cpp/lambda-expression-syntax.md)합니다.
+합니다 *람다 식* 각 스레드에서 실행 하는 코드를 정의 합니다. 캡처 절 `[=]`,이 경우에 값으로 람다 식의 본문이 캡처된 모든 변수에 액세스 하도록 지정 `a`를 `b`, 및 `sum`합니다. 이 예제에서는 매개 변수 목록 만듭니다 1 차원 `index` 라는 변수 `idx`합니다. 값을 `idx[0]` 첫 번째 스레드에서 0 이며 후속 스레드마다에서 1 씩 증가 합니다. 합니다 `restrict(amp)` 만의 하위 집합을 나타냅니다는 C++ 언어는 C++ AMP 가속화할 수 있습니다 사용 됩니다.  에 설명 된 제한 한정자가 있는 함수에 대 한 제한을 [제한 (C++ AMP)](../../cpp/restrict-cpp-amp.md)합니다. 자세한 내용은 [람다 식 구문](../../cpp/lambda-expression-syntax.md)합니다.
 
 람다 식은 실행할 코드를 포함 하거나 별도 커널 함수를 호출할 수 있습니다. 커널 함수를 포함 해야 합니다는 `restrict(amp)` 한정자입니다. 다음 예제에서는 이전 예제와 동일 하지만 별도 커널 함수를 호출 합니다.
 
@@ -431,7 +431,7 @@ for (int i = 0; i <4; i++) {
 
 ## <a name="math-libraries"></a>수학 라이브러리
 
-C + + AMP에는 두 수학 라이브러리가 포함 되어 있습니다. 배정밀도 라이브러리에는 [concurrency:: precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) 배정밀도 함수에 대 한 지원을 제공 합니다. 또한 하드웨어에 이중 정밀도 지원은 계속 필요 하지만 정밀도 함수에 대 한 지원을 제공 합니다. 준수 하는 [C99 사양 (ISO/IEC 9899)](http://go.microsoft.com/fwlink/p/?linkid=225887)합니다. 액셀러레이터는 배정밀도 전체를 지원 해야 합니다. 값을 확인 하 여 수행 여부를 확인할 수 있습니다 합니다 [accelerator:: supports_double_precision 데이터 멤버](reference/accelerator-class.md#supports_double_precision)합니다. fast math 라이브러리의를 [concurrency:: fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), 다른 수학 함수 집합이 포함 되어 있습니다. 이러한 함수에만 지 `float` 피연산자를 더욱 빠르게 실행 되지만 배정밀도 수학 라이브러리의 것 정확 하지 않습니다. 에 포함 된 함수는 \<amp_math.h > 헤더 파일 및 모든 선언 된 `restrict(amp)`합니다. 함수에는 \<cmath > 헤더 파일 모두 가져와집니다 합니다 `fast_math` 및 `precise_math` 네임 스페이스입니다. **제한** 키워드와 구분 되는 \<cmath > 버전과 c + + AMP 버전. 다음 코드를 계산 도메인에 있는 각 값의 빠른 메서드를 사용 하 여 밑이 10 인 로그를 계산 합니다.
+C++AMP 두 수학 라이브러리가 포함 되어 있습니다. 배정밀도 라이브러리에는 [concurrency:: precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) 배정밀도 함수에 대 한 지원을 제공 합니다. 또한 하드웨어에 이중 정밀도 지원은 계속 필요 하지만 정밀도 함수에 대 한 지원을 제공 합니다. 준수 하는 [C99 사양 (ISO/IEC 9899)](http://go.microsoft.com/fwlink/p/?linkid=225887)합니다. 액셀러레이터는 배정밀도 전체를 지원 해야 합니다. 값을 확인 하 여 수행 여부를 확인할 수 있습니다 합니다 [accelerator:: supports_double_precision 데이터 멤버](reference/accelerator-class.md#supports_double_precision)합니다. fast math 라이브러리의를 [concurrency:: fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), 다른 수학 함수 집합이 포함 되어 있습니다. 이러한 함수에만 지 `float` 피연산자를 더욱 빠르게 실행 되지만 배정밀도 수학 라이브러리의 것 정확 하지 않습니다. 에 포함 된 함수는 \<amp_math.h > 헤더 파일 및 모든 선언 된 `restrict(amp)`합니다. 함수에는 \<cmath > 헤더 파일 모두 가져와집니다 합니다 `fast_math` 및 `precise_math` 네임 스페이스입니다. **제한** 키워드와 구분 되는 \<cmath > 버전 및 C++ AMP 버전입니다. 다음 코드를 계산 도메인에 있는 각 값의 빠른 메서드를 사용 하 여 밑이 10 인 로그를 계산 합니다.
 
 ```cpp
 #include <amp.h>
@@ -459,9 +459,9 @@ void MathExample() {
 
 ## <a name="graphics-library"></a>그래픽 라이브러리
 
-C + + AMP에는 가속 된 그래픽 프로그래밍을 위해 설계 된 그래픽 라이브러리가 포함 됩니다. 이 라이브러리는 네이티브 그래픽 기능을 지 원하는 장치 에서만 사용 됩니다. 메서드는를 [concurrency:: graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md) 에 포함 되는 \<amp_graphics.h > 헤더 파일입니다. 그래픽 라이브러리의 주요 구성 요소는 다음과 같습니다.
+C++AMP 가속 된 그래픽 프로그래밍을 위해 설계 된 그래픽 라이브러리가 포함 됩니다. 이 라이브러리는 네이티브 그래픽 기능을 지 원하는 장치 에서만 사용 됩니다. 메서드는를 [concurrency:: graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md) 에 포함 되는 \<amp_graphics.h > 헤더 파일입니다. 그래픽 라이브러리의 주요 구성 요소는 다음과 같습니다.
 
-- [texture 클래스](../../parallel/amp/reference/texture-class.md): 메모리 또는 파일에서 질감을 만들려면 질감 클래스를 사용할 수 있습니다. 질감은 데이터를 포함 하 고 할당 및 복사본 생성에 대해 c + + 표준 라이브러리의 컨테이너 비슷합니다 때문에 배열 유사 합니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../../standard-library/stl-containers.md)를 참조하세요. 에 대 한 템플릿 매개 변수는 `texture` 클래스는 요소 형식과 차수입니다. 순위는 1, 2 또는 3 수 있습니다. 요소 형식은이 문서의 뒷부분에서 설명 하는 short 벡터 형식 중 하나일 수 있습니다.
+- [texture 클래스](../../parallel/amp/reference/texture-class.md): 메모리 또는 파일에서 질감을 만들려면 질감 클래스를 사용할 수 있습니다. 질감 데이터를 포함 하 고 컨테이너 비슷합니다 때문에 배열 유사 합니다 C++ 할당 및 복사본 생성에 대해 표준 라이브러리입니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../../standard-library/stl-containers.md)를 참조하세요. 에 대 한 템플릿 매개 변수는 `texture` 클래스는 요소 형식과 차수입니다. 순위는 1, 2 또는 3 수 있습니다. 요소 형식은이 문서의 뒷부분에서 설명 하는 short 벡터 형식 중 하나일 수 있습니다.
 
 - [writeonly_texture_view 클래스](../../parallel/amp/reference/writeonly-texture-view-class.md): 모든 질감에 대 한 쓰기 전용 액세스를 제공합니다.
 
@@ -469,23 +469,23 @@ C + + AMP에는 가속 된 그래픽 프로그래밍을 위해 설계 된 그래
 
 ## <a name="universal-windows-platform-uwp-apps"></a>UWP(유니버설 Windows 플랫폼) 앱
 
-다른 c + + 라이브러리와 같은 UWP 앱의 c + + AMP를 사용할 수 있습니다. 이러한 문서는 c + +, C#, Visual Basic 또는 JavaScript를 사용 하 여 만든 앱에서 c + + AMP 코드를 포함 하는 방법을 설명 합니다.
+와 같은 다른 C++ 라이브러리를 사용할 수 C++ UWP 앱에서 AMP 합니다. 이 문서는 포함 하는 방법을 설명 합니다. C++ 를 사용 하 여 만든 앱의 AMP 코드 C++, C#, Visual Basic 또는 JavaScript:
 
 - [UWP 앱에서 C++ AMP 사용](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)
 
-- [연습: C + +에서 기본 Windows 런타임 구성 요소를 만들고 JavaScript에서 호출](http://go.microsoft.com/fwlink/p/?linkid=249077)
+- [연습: 기본 Windows 런타임 구성 요소를 만드는 C++ JavaScript에서 호출](http://go.microsoft.com/fwlink/p/?linkid=249077)
 
-- [Bing Maps Trip Optimizer, JavaScript 및 c + + Windows 스토어 앱](http://go.microsoft.com/fwlink/p/?linkid=249078)
+- [Bing Maps Trip Optimizer, javascript에서 Windows 스토어 앱 및C++](http://go.microsoft.com/fwlink/p/?linkid=249078)
 
-- [Windows 런타임을 사용 하는 C#에서 c + + AMP를 사용 하는 방법](http://go.microsoft.com/fwlink/p/?linkid=249080)
+- [사용 하는 방법 C++ 에서 AMP C# Windows 런타임 사용](http://go.microsoft.com/fwlink/p/?linkid=249080)
 
-- [C#에서 c + + AMP를 사용 하는 방법](http://go.microsoft.com/fwlink/p/?linkid=249081)
+- [사용 하는 방법 C++ 에서 AMPC#](http://go.microsoft.com/fwlink/p/?linkid=249081)
 
 - [관리 코드에서 네이티브 함수 호출](../../dotnet/calling-native-functions-from-managed-code.md)
 
 ## <a name="c-amp-and-concurrency-visualizer"></a>C++ AMP 및 동시성 시각화 도우미
 
-동시성 시각화 도우미에는 c + + AMP 코드의 성능을 분석 하기 위한 지원이 포함 됩니다. 이러한 문서는 이러한 기능을 설명합니다.
+동시성 시각화 도우미의 성능을 분석 하는 것에 대 한 지원이 포함 되어 있습니다 C++ AMP 코드입니다. 이러한 문서는 이러한 기능을 설명합니다.
 
 - [GPU 작업 그래프](/visualstudio/profiling/gpu-activity-graph)
 
@@ -497,7 +497,7 @@ C + + AMP에는 가속 된 그래픽 프로그래밍을 위해 설계 된 그래
 
 - [채널(스레드 뷰)](/visualstudio/profiling/channels-threads-view)
 
-- [동시성 시각화 도우미를 사용 하 여 c + + AMP 코드 분석](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)
+- [분석 C++ 동시성 시각화 도우미를 사용 하 여 AMP 코드](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)
 
 ## <a name="performance-recommendations"></a>성능 권장 사항
 

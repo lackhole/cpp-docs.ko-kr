@@ -1,5 +1,5 @@
 ---
-title: 포인터 (c + +)
+title: 포인터 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - declarators, pointers
@@ -8,21 +8,21 @@ helpviewer_keywords:
 - pointers, declarations
 ms.assetid: 595387c5-8e58-4670-848f-344c7caf985e
 ms.openlocfilehash: a258a71b8b89643ee98785ee9dfbf30cdf128db7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223068"
 ---
-# <a name="pointers-c"></a>포인터 (c + +)
+# <a name="pointers-c"></a>포인터 (C++)
 
 포인터는 다음 시퀀스를 사용하여 선언합니다.
 
-> \[*저장소 클래스 지정자*] \[ *cv 한정자*] *형식 지정자* \[ *ms 한정자*]  *선언 자* **;**
+> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[*ms-modifier*] *declarator* **;**
 
 여기서 모든 유효한 포인터 선언 자를 사용할 수 있습니다 *declarator*합니다. 단순한 포인터 선언자 구문은 다음과 같습니다.
 
-> __\*__ \[*cv 한정자*] *식별자* \[ **=** *식*]
+> __\*__ \[*cv-qualifiers*] *identifier* \[**=** *expression*]
 
 1. 선언 지정자:
 
@@ -50,7 +50,7 @@ ms.locfileid: "50667872"
 
 포인터 배열의 경우 구문은 다음과 같습니다.
 
-> __\*__ *식별자* **\[** \[ *상수-식*] **]**
+> __\*__ *identifier* **\[** \[*constant-expression*] **]**
 
 여러 선언자와 해당 이니셜라이저가 단일 선언에서 선언 지정자 뒤에 쉼표로 구분된 목록으로 함께 나타날 수 있습니다.
 

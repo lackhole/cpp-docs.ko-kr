@@ -3,15 +3,15 @@ title: 파일 시스템 탐색
 ms.date: 11/04/2016
 ms.assetid: f7cc5f5e-a541-4e00-87c7-a3769ef6096d
 ms.openlocfilehash: cfdc789daab5b476566f2072109d23fb9310094f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405198"
 ---
 # <a name="file-system-navigation"></a>파일 시스템 탐색
 
-\<filesystem> 헤더는 C++ 파일 시스템 기술 사양 ISO/IEC TS 18822:2015(최종 초안: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf))을 구현하며 파일 시스템을 탐색하기 위한 플랫폼 독립적인 코드를 작성할 수 있게 해주는 형식과 함수를 포함합니다. 크로스 플랫폼이기 때문에 Windows 시스템과 관련이 없는 API를 포함합니다. 따라서 예를 들어 `is_fifo(const path&)` 항상 반환 **false** Windows에서.
+합니다 \<파일 시스템 > 헤더 구현 된 C++ 파일 시스템 기술 사양 ISO/IEC TS 18822: 2015 (최종 초안: [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)) 형식 및 파일 시스템을 탐색 하기 위한 플랫폼 독립적인 코드를 작성할 수 있도록 하는 기능입니다. 크로스 플랫폼이기 때문에 Windows 시스템과 관련이 없는 API를 포함합니다. 따라서 예를 들어 `is_fifo(const path&)` 항상 반환 **false** Windows에서.
 
 ## <a name="overview"></a>개요
 

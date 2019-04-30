@@ -21,11 +21,11 @@ f1_keywords:
 - stdio/fread_s
 ms.assetid: ce735de0-f005-435d-a8f2-6f4b80ac775e
 ms.openlocfilehash: 898e813c19fd53cfdacd536c2e9819743a62a8da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287813"
 ---
 # <a name="freads"></a>fread_s
 
@@ -48,7 +48,7 @@ size_t fread_s(
 *buffer*<br/>
 데이터의 스토리지 위치입니다.
 
-*BufferSize*<br/>
+*bufferSize*<br/>
 출력 버퍼의 바이트 크기입니다.
 
 *elementSize*<br/>
@@ -57,7 +57,7 @@ size_t fread_s(
 *count*<br/>
 읽힐 항목의 최대 수입니다.
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값

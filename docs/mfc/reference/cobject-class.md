@@ -21,11 +21,11 @@ helpviewer_keywords:
 - CObject [MFC], Serialize
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
 ms.openlocfilehash: 515c4e90ee6ab77a6c7c1ae108393ea1aafb7c17
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388321"
 ---
 # <a name="cobject-class"></a>CObject 클래스
 
@@ -83,7 +83,7 @@ class AFX_NOVTABLE CObject
 
 두 번째 수준 매크로 [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) 하 고 [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial)에서 첫 번째 수준 매크로의 모든 기능을 포함 하 고는 serialize 할 개체에 ""를 "보관 합니다."에서 사용
 
-일반적으로 Microsoft Foundation 클래스 및 c + + 클래스 파생 및 사용에 대 한 자세한 `CObject`를 참조 하세요 [를 사용 하 여 CObject](../../mfc/using-cobject.md) 및 [Serialization](../../mfc/serialization-in-mfc.md).
+Microsoft Foundation 클래스를 파생 하는 것에 대 한 자세한 및 C++ 일반적으로 클래스 및 사용 하 여 `CObject`를 참조 하세요 [CObject 사용 하 여](../../mfc/using-cobject.md) 및 [Serialization](../../mfc/serialization-in-mfc.md).
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -139,7 +139,7 @@ CObject(const CObject& objectSrc);
 
 클래스를 직렬화 하는 경우 (이 통합 되어 있어 IMPLEMENT_SERIAL 매크로)를 클래스 선언에서 기본 생성자 (인수 없는 생성자)를 사용 해야 합니다. 기본 생성자를 필요 하지 않은 경우에 개인을 선언 하거나 "empty" 생성자를 보호 합니다. 자세한 내용은 [를 사용 하 여 CObject](../../mfc/using-cobject.md)합니다.
 
-표준 c + + 기본 클래스 복사 생성자는 멤버 별로 복사를 수행합니다. 개인의 존재 `CObject` 복사 생성자는 클래스의 복사 생성자가 필요 하지만 사용할 수 없는 경우 컴파일러 오류 메시지를 보장 합니다. 따라서 클래스는이 기능이 필요 하는 경우 복사 생성자를 제공 해야 합니다.
+표준 C++ 기본 클래스 복사 생성자는 멤버 별로 복사 하지 않습니다. 개인의 존재 `CObject` 복사 생성자는 클래스의 복사 생성자가 필요 하지만 사용할 수 없는 경우 컴파일러 오류 메시지를 보장 합니다. 따라서 클래스는이 기능이 필요 하는 경우 복사 생성자를 제공 해야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -238,7 +238,7 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
 
 이 함수는 테스트 *pClass* (1)은 지정된 된 클래스의 개체 또는 지정된 된 클래스에서 파생 된 클래스의 개체인 (2). 이 함수를 사용 하 여 선언 된 클래스에 대해서만 작동 합니다 [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic)를 [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate), 또는 [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) 매크로입니다.
 
-사용 하지 마십시오이 함수 광범위 하 게 c + + 다형성 기능을 무효로 만듭니다. 가상 함수를 대신 사용 합니다.
+사용 하지 마십시오이 함수 광범위 하 게 무효로 만듭니다는 C++ 다형성 기능입니다. 가상 함수를 대신 사용 합니다.
 
 ### <a name="example"></a>예제
 

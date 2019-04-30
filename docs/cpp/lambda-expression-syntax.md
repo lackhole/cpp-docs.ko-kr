@@ -5,11 +5,11 @@ helpviewer_keywords:
 - lambda expressions [C++], syntax
 ms.assetid: 5d6154a4-f34d-4a15-970d-7e7de45f54e9
 ms.openlocfilehash: 2df2c203024e1b50cffdcb15af834fe09effaae2
-ms.sourcegitcommit: 6e4dd21759caaed262a7255735cf8d6e8fb9f4d7
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216513"
 ---
 # <a name="lambda-expression-syntax"></a>람다 식 구문
 
@@ -17,7 +17,7 @@ ms.locfileid: "58476866"
 
 ## <a name="function-objects-vs-lambdas"></a>함수 개체와 람다
 
-코드를 작성 하는 경우 아마도 사용할 함수 포인터와 함수 개체 문제를 해결 하기를 사용 하는 경우에 특히 계산을 수행할 [c + + 표준 라이브러리 알고리즘](../cpp/algorithms-modern-cpp.md)합니다. 함수 포인터와 함수 개체는 각각 장단점이 있습니다. 예를 들어 함수 포인터는 최소한의 구문 오버헤드가 있지만 범위 내에 상태를 유지하지 않으며 함수 개체는 상태를 유지할 수 있지만 클래스 정의의 구문 오버헤드가 필요합니다.
+코드를 작성 하는 경우 아마도 사용할 함수 포인터와 함수 개체 문제를 해결 하기를 사용 하는 경우에 특히 계산을 수행할 [ C++ 표준 라이브러리 알고리즘](../cpp/algorithms-modern-cpp.md)합니다. 함수 포인터와 함수 개체는 각각 장단점이 있습니다. 예를 들어 함수 포인터는 최소한의 구문 오버헤드가 있지만 범위 내에 상태를 유지하지 않으며 함수 개체는 상태를 유지할 수 있지만 클래스 정의의 구문 오버헤드가 필요합니다.
 
 람다는 함수 포인터와 함수 개체의 이점을 결합하여 단점을 방지합니다. 람다는 함수 개체와 마찬가지로 유연하고 상태를 유지할 수 있지만 함수 개체와 다르게 간단한 구문은 명시적인 클래스 정의가 필요하지 않습니다. 람다를 사용하면 코드를 더 쉽게 작성할 수 있고 해당 함수 개체에 대한 코드보다 오류 발생 가능성이 적습니다.
 

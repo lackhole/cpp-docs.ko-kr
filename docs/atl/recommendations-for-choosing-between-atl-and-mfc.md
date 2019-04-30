@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ATL, vs. MFC
 ms.assetid: 269325bb-11a8-4330-ad2b-a14a2458679e
 ms.openlocfilehash: e4e51f81bbdc54ff09980acfba22037df77abac9
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261340"
 ---
 # <a name="recommendations-for-choosing-between-atl-and-mfc"></a>ATL 및 MFC 간의 선택에 대 한 권장 사항
 
@@ -18,7 +18,7 @@ ms.locfileid: "57259778"
 
 ## <a name="using-atl"></a>ATL을 사용 하 여
 
-ATL는 c + +에서 COM 구성 요소를 작성 하 고 작은 사용 공간을 유지 하는 빠르고 쉬운 방법입니다. ATL을 사용 하 여 컨트롤을 만들려면 MFC 자동으로 제공 하는 기본 제공 기능을 모두 필요가 없는 경우.
+ATL는 빠르고 쉬운 방법 둘 다에서 COM 구성 요소를 만듭니다 C++ 및 작은 사용 공간을 유지 관리 합니다. ATL을 사용 하 여 컨트롤을 만들려면 MFC 자동으로 제공 하는 기본 제공 기능을 모두 필요가 없는 경우.
 
 ## <a name="using-mfc"></a>MFC를 사용 하 여
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - tool tips [MFC], notifications
 ms.assetid: ddb93b5f-2e4f-4537-8053-3453c86e2bbb
 ms.openlocfilehash: 079dc26fdd355c5b5e3f89f28219902e5fd74a79
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62240239"
 ---
 # <a name="handling-tool-tip-notifications"></a>도구 설명 알림 처리
 

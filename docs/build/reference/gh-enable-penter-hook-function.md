@@ -10,15 +10,15 @@ helpviewer_keywords:
 - -Gh compiler option [C++]
 ms.assetid: 1510a082-8a0e-486e-a309-6add814b494f
 ms.openlocfilehash: bf7734a7b81c9550c060d43c2eabf5cb05332407
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292587"
 ---
 # <a name="gh-enable-penter-hook-function"></a>/Gh(_penter 후크 함수 사용)
 
-에 대 한 호출으로 인해는 `_penter` 모든 메서드 또는 함수의 시작 함수입니다.
+모든 메서드 또는 함수의 시작 부분에서 `_penter` 함수를 호출합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,7 +28,7 @@ ms.locfileid: "57820535"
 
 ## <a name="remarks"></a>설명
 
-합니다 `_penter` 함수 라이브러리의 일부가 아니며에 대 한 정의 제공 하는 것 `_penter`입니다.
+합니다 `_penter` 함수 라이브러리의 일부가 아니며에 대한 정의 제공 하는 것 `_penter`입니다.
 
 명시적으로 `_penter`를 호출하지 않는다면 프로토타입을 제공하지 않아도 됩니다. 이 함수는 마치 다음 프로토타입이 있는 것처럼 보여야 하며 항목에 있는 모든 레지스터의 내용을 밀어넣고 종료 시 변경되지 않은 내용을 내보내야 합니다.
 
@@ -54,7 +54,7 @@ void __declspec(naked) __cdecl _penter( void );
 
 ## <a name="example"></a>예제
 
-다음 코드를 사용 하 여 컴파일하면 **/Gh**를 보여 줍니다 어떻게 `_penter` 두 번 호출 됩니다 함수를 입력할 때 한 번 `main` 함수를 입력할 때 한 번 `x`합니다.
+다음 코드는 **/Gh**로 컴파일될 때 `_penter`가 두 번 호출되는 방법을 보여줍니다. `main` 함수에서 한 번, 'x' 함수에서 한 번입니다.
 
 ```cpp
 // Gh_compiler_option.cpp

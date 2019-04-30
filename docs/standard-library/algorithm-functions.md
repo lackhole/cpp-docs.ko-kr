@@ -201,11 +201,11 @@ helpviewer_keywords:
 - std::partition_copy [C++]
 - std::swap [C++]
 ms.openlocfilehash: 260b2ee780956550678fcb01b3a018a60fb58deb
-ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411190"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algorithm&gt; 함수
 
@@ -432,7 +432,7 @@ bool binary_search(
 *last*<br/>
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*value*<br/>
+*값*<br/>
 요소의 값과 일치해야 하는 값 또는 이진 조건자에 의해 지정된 요소 값의 조건을 충족해야 하는 값입니다.
 
 *comp*<br/>
@@ -3104,7 +3104,7 @@ ForwardIterator lower_bound(
 *last*<br/>
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*value*<br/>
+*값*<br/>
 정렬된 범위에서 첫 번째 위치 또는 가능한 첫 번째 위치가 검색되는 값입니다.
 
 *comp*<br/>
@@ -8597,7 +8597,7 @@ template<class ForwardIterator, class Type, class Predicate>
 *last*<br/>
 검색할 범위에서 마지막 요소 하나 다음의 위치입니다.
 
-*value*<br/>
+*값*<br/>
 반환된 반복기로 주소가 지정된 요소의 값이 초과해야 하는 정렬된 범위의 값입니다.
 
 *comp*<br/>

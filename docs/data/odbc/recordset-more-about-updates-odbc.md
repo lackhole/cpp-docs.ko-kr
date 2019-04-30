@@ -11,11 +11,11 @@ helpviewer_keywords:
 - recordsets, updating
 ms.assetid: 0353a742-d226-4fe2-8881-a7daeffe86cd
 ms.openlocfilehash: c29ff110fc507c4e449b2f3d082d98c159a35107
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397772"
 ---
 # <a name="recordset-more-about-updates-odbc"></a>레코드 집합: 업데이트 (ODBC)에 대 한 자세한 정보
 
@@ -105,7 +105,7 @@ ms.locfileid: "59040770"
 ## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 레코드 집합 선택 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
+[레코드 집합 레코드 집합의 레코드 선택 방법(ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
 [RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [SQL](../../data/odbc/sql.md)<br/>
 [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)

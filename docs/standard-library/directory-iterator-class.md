@@ -26,11 +26,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_iterator::operator-&gt;
 - std::experimental::filesystem::directory_iterator::operator++
 ms.openlocfilehash: 6763f2a96b771fadbec311cf8740352fff53e29a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413848"
 ---
 # <a name="directoryiterator-class"></a>directory_iterator 클래스
 
@@ -81,7 +81,7 @@ class directory_iterator;
 
 **네임스페이스:** std::experimental::filesystem
 
-## <a name="directory_iterator"></a> directory_iterator:: directory_iterator
+## <a name="directory_iterator"></a> directory_iterator::directory_iterator
 
 첫 번째 생성자는 시퀀스의 끝 반복기를 생성합니다. 두 번째 및 세 번째 생성자 저장소 *pval* 에서 `mydir`을 열고 읽는 시도 `mydir` 디렉터리로 합니다. 경우 성공 하면 첫 번째 파일에에서 저장 디렉터리 `myentry`; 시퀀스의 끝 반복기를 생성 합니다.
 
@@ -107,7 +107,7 @@ directory_iterator(directory_iterator&&) noexcept = default;
 *directory_iterator*<br/>
 저장 된 개체입니다.
 
-## <a name="increment"></a> directory_iterator:: increment
+## <a name="increment"></a> directory_iterator::increment
 
 함수는 디렉터리의 다음 파일 이름으로 이동하려고 합니다. 성공 하는 경우 해당 파일에서를 저장 `myentry`; 그렇지 않으면 시퀀스의 끝 반복기를 생성 합니다.
 
@@ -115,7 +115,7 @@ directory_iterator(directory_iterator&&) noexcept = default;
 directory_iterator& increment(error_code& ec) noexcept;
 ```
 
-## <a name="op_neq"></a> directory_iterator:: operator! =
+## <a name="op_neq"></a> directory_iterator::operator!=
 
 멤버 연산자는 `!(*this == right)`을 반환합니다.
 
@@ -128,7 +128,7 @@ bool operator!=(const directory_iterator& right) const;
 *right*<br/>
 합니다 [directory_iterator](../standard-library/directory-iterator-class.md) 비교할는 `directory_iterator`합니다.
 
-## <a name="op_as"></a> directory_iterator:: operator =
+## <a name="op_as"></a> directory_iterator::operator=
 
 기본 멤버 대입 연산자가 예상대로 작동합니다.
 
@@ -142,7 +142,7 @@ directory_iterator& operator=(directory_iterator&&) noexcept = default;
 *right*<br/>
 합니다 [directory_iterator](../standard-library/directory-iterator-class.md) 에 복사 되는 `directory_iterator`합니다.
 
-## <a name="op_eq"></a> directory_iterator:: operator = =
+## <a name="op_eq"></a> directory_iterator::operator==
 
 멤버 연산자를 반환 합니다 **true** 두 경우에 `*this` 하 고 *오른쪽* 가 시퀀스의 끝 반복기 이거나 둘 다 하지 최종-의-시퀀스-반복기는 합니다.
 
@@ -155,7 +155,7 @@ bool operator==(const directory_iterator& right) const;
 *right*<br/>
 합니다 [directory_iterator](../standard-library/directory-iterator-class.md) 비교할는 `directory_iterator`합니다.
 
-## <a name="op_star"></a> directory_iterator:: operator *
+## <a name="op_star"></a> directory_iterator::operator*
 
 멤버 연산자는 `myentry`을 반환합니다.
 
@@ -163,7 +163,7 @@ bool operator==(const directory_iterator& right) const;
 const directory_entry& operator*() const;
 ```
 
-## <a name="op_cast"></a> directory_iterator:: operator->
+## <a name="op_cast"></a> directory_iterator::operator->
 
 멤버 함수는 `&**this`를 반환합니다.
 
@@ -171,7 +171,7 @@ const directory_entry& operator*() const;
 const directory_entry * operator->() const;
 ```
 
-## <a name="op_increment"></a> directory_iterator:: operator + +
+## <a name="op_increment"></a> directory_iterator::operator++
 
 첫 번째 멤버 함수 호출 `increment()`를 반환 합니다 `*this`합니다. 두 번째 멤버 함수 호출 개체의 복사본 `increment()`, 그런 다음 복사본을 반환 합니다.
 

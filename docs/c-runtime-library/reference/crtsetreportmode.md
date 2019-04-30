@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CrtSetReportMode function
 ms.assetid: 3ecc6a12-afdd-4242-b046-8187ff6d4b36
 ms.openlocfilehash: 2096d39a8ba316fc76c97517a16e34231940e7f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335297"
 ---
 # <a name="crtsetreportmode"></a>_CrtSetReportMode
 
@@ -64,9 +64,9 @@ int _CrtSetReportMode(
 
 - 어설션 실패 및 오류는 디버그 메시지 창에 전달됩니다.
 
-- Windows 응용 프로그램의 경고는 디버거의 출력 창에 전송됩니다.
+- Windows 애플리케이션의 경고는 디버거의 출력 창에 전송됩니다.
 
-- 콘솔 응용 프로그램의 경고는 표시되지 않습니다.
+- 콘솔 애플리케이션의 경고는 표시되지 않습니다.
 
 다음 표에는 Crtdbg.h에 정의된 보고서 형식 목록이 나와 있습니다.
 
@@ -83,7 +83,7 @@ int _CrtSetReportMode(
 |**_CRTDBG_MODE_DEBUG**|디버거의 출력 창에 메시지를 작성합니다.|
 |**_CRTDBG_MODE_FILE**|사용자가 제공한 파일 핸들에 메시지를 작성합니다. [_CrtSetReportFile](crtsetreportfile.md)을 호출하여 대상으로 사용할 특정 파일 또는 스트림을 정의해야 합니다.|
 |**_CRTDBG_MODE_WNDW**|와 함께 메시지를 표시 하는 메시지 상자를 만듭니다는 [중단](abort.md)를 **다시 시도**, 및 **무시** 단추입니다.|
-|**_CRTDBG_REPORT_MODE**|반환 *reportMode* 지정 된 *reportType*:<br /><br /> 1 **_CRTDBG_MODE_FILE**<br /><br /> 2 **_CRTDBG_MODE_DEBUG**<br /><br /> 4 **_CRTDBG_MODE_WNDW**|
+|**_CRTDBG_REPORT_MODE**|반환 *reportMode* 지정 된 *reportType*:<br /><br /> 1   **_CRTDBG_MODE_FILE**<br /><br /> 2   **_CRTDBG_MODE_DEBUG**<br /><br /> 4   **_CRTDBG_MODE_WNDW**|
 
 한 가지, 두 가지 또는 세 가지 모드를 사용하거나 모드를 전혀 사용하고 각 보고서 형식을 보고할 수 있습니다. 따라서 단일 보고서 형식에 대해 정의된 대상이 둘 이상 있을 수 있습니다. 예를 들어, 다음 코드 조각은 하면 어설션 실패가 디버그 메시지 창이 모두를 보낼 **stderr**:
 
@@ -102,7 +102,7 @@ _CrtSetReportFile( _CRT_ASSERT, _CRTDBG_FILE_STDERR );
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-**라이브러리:** 디버그 버전의 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)만 해당합니다.
+**라이브러리:** 디버그 버전 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md) 만 합니다.
 
 ## <a name="see-also"></a>참고자료
 

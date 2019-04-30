@@ -18,15 +18,15 @@ helpviewer_keywords:
 - compatibility, between assemblies
 ms.assetid: 679b8ed3-d966-4a0c-b627-2a3f3ec96b74
 ms.openlocfilehash: b91918d526d83d4cf47436d02b7c67038576bafb
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152776"
 ---
 # <a name="managed-types-ccli"></a>관리되는 형식(C++/CLI)
 
-Visual c + +에는 장점과 런타임의 제한 사항이 적용 되며 공용 언어 런타임의 기능에 대 한 지원을 제공 하는 관리 되는 형식 기능을 통해.NET 기능에 액세스할 수 있습니다.
+Visual C++ 공용 언어 런타임의 기능에 대 한 지원을 제공 하며 장점과 런타임의 제한 사항이 관리 되는 형식 기능을 통해.NET 기능에 액세스할 수 있습니다.
 
 ## <a name="main_functions"></a> 관리 되는 형식 및 main 함수
 
@@ -40,11 +40,11 @@ Visual c + +에는 장점과 런타임의 제한 사항이 적용 되며 공용 
 int main(int, char*[], char*[]) {}
 ```
 
-## <a name="dotnet"></a> C + + 네이티브 형식에 해당 하는.NET framework
+## <a name="dotnet"></a> 에.NET framework 해당 하는 C++ 네이티브 형식
 
-다음 표에서 미리 정의 된 형식의 별칭인 기본 제공 Visual c + + 형식에 대 한 키워드에는 **시스템** 네임 스페이스입니다.
+다음 표에서 기본 제공 시각적 개체에 대해 키워드를 보여 줍니다. C++ 미리 정의 된 형식의 별칭인 형식에는 **System** 네임 스페이스입니다.
 
-|Visual c + + 형식|.NET Framework 형식|
+|Visual C++ 형식|.NET Framework 형식|
 |-----------------------|-------------------------|
 |**void**|<xref:System.Void?displayProperty=nameWithType>|
 |**bool**|<xref:System.Boolean?displayProperty=nameWithType>|
@@ -129,7 +129,7 @@ S.i = 11
 
 ## <a name="test_equality"></a> 방법: 같음 여부 테스트
 
-다음 샘플에서는 Managed Extensions for c + +는 같음 테스트를 기반으로 핸들을 가리키는 합니다.
+다음 샘플에서는 같음 테스트를 사용 하는 Managed Extensions for C++ 핸들을 가리키는 기반으로 합니다.
 
 ### <a name="example"></a>예제
 

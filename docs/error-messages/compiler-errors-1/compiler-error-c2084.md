@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2084
 ms.assetid: 990b107f-3721-4851-ae8b-4b69a8c149ed
 ms.openlocfilehash: 9aaf3a88e63234dfb842e4b48afd6e55595e96ca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391922"
 ---
 # <a name="compiler-error-c2084"></a>컴파일러 오류 C2084
 
@@ -19,7 +19,7 @@ ms.locfileid: "50571316"
 
 함수가 이미 정의 되었습니다.
 
-Visual Studio 2002 년 이전 Visual c + + 버전
+시각적 개체의 버전에서 C++ Visual Studio 2002 년 이전
 
 - 추가 정의 사용할 수 없는 있지만 컴파일러에서 동일한 실제 형식으로 확인 하는 여러 템플릿 특수화를 수락 했습니다. 컴파일러는 이제 이러한 여러 정의 검색합니다.
 

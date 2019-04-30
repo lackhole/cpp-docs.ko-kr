@@ -9,11 +9,11 @@ helpviewer_keywords:
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: eb5e10b7-d615-4bc7-908d-e3e99b7b1d5f
 ms.openlocfilehash: ab9b980cbb3e89eebee945e90c54f23d6717a1a4
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62196731"
 ---
 # <a name="mfc-extension-dlls-overview"></a>MFC 확장명 Dll: 개요
 
@@ -23,7 +23,7 @@ MFC 확장 DLL은 일반적으로 기존 Microsoft Foundation Class 라이브러
 
 MFC 확장 DLL의 기본 요구 사항을 충족 하는 DLL의 예로, MFC 샘플을 참조 하세요 [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk)합니다. 특히 Testdll1.cpp 및 Testdll2.cpp 파일을 살펴봅니다.
 
-AFXDLL 용어 Visual c + + 설명서에 더 이상 사용 되는 참고 합니다. MFC 확장 DLL은 이전의 AFXDLL와 동일한 특성.
+참고 용어 AFXDLL 시각적 개체에 더 이상 사용 되는 C++ 설명서. MFC 확장 DLL은 이전의 AFXDLL와 동일한 특성.
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 

@@ -58,11 +58,11 @@ helpviewer_keywords:
 - /W2 compiler option [C++]
 - /Wv compiler option [C++]
 ms.openlocfilehash: 7b5c19c95cff3058bb3dcc6640f8ab07cf01edd6
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59040071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294241"
 ---
 # <a name="w-w0-w1-w2-w3-w4-w1-w2-w3-w4-wall-wd-we-wo-wv-wx-warning-level"></a>/w, / w0, / w1, / w2, / w3, / w4, / w1, / w2, / w3, / w4, /Wall, /wd, / we, /wo, /Wv, /WX (경고 수준)
 
@@ -114,7 +114,7 @@ Warning pragma 지시문 소스 코드에 영향을 받지 않습니다.는 **/w
 
 ### <a name="to-set-the-compiler-options-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 컴파일러 옵션을 설정 하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 설정 하는 **/w0**, **/w1**, **/w2**, **/w3**를 **/w4**를 **/wall**, **/Wv**를 **/WX** 하거나 **/WX-** 옵션을 선택 합니다 **구성 속성** > **C / C++**   >  **일반** 속성 페이지.
 

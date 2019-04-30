@@ -10,11 +10,11 @@ helpviewer_keywords:
 - networks [MFC], downloading with ActiveX controls
 ms.assetid: 7ab943c8-2022-41df-9065-d629b616eeec
 ms.openlocfilehash: c019c922a5690d4ead861c40bed3c0c1c76cea28
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394847"
 ---
 # <a name="activex-controls-on-the-internet"></a>인터넷의 ActiveX 컨트롤
 
@@ -85,7 +85,7 @@ ActiveX 컨트롤 인터넷에 제한 되지 않습니다. ActiveX 컨트롤 데
 
 1. 클릭 **새로 만들기** 에 **파일** 메뉴.
 
-1. 선택 **MFC ActiveX 컨트롤 마법사** Visual c + +에서 프로젝트 및 프로젝트 이름을 지정 합니다.
+1. 선택 **MFC ActiveX 컨트롤 마법사** 시각적 개체에서 C++ 프로젝트 및 프로젝트 이름을 지정 합니다.
 
 1. 에 **제어 설정을** 페이지에서 **속성을 비동기적으로 로드**합니다. 이 옵션을 선택 하면에 대 한 준비 상태 속성 및 준비 상태 변경 이벤트를 설정 합니다.
 
@@ -127,8 +127,7 @@ ActiveX 컨트롤 인터넷에 제한 되지 않습니다. ActiveX 컨트롤 데
 
    [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/cpp/activex-controls-on-the-internet_3.h)]
 
-1. 
-  `Get/Set` 메서드를 구현합니다. 에 대 한 `Get`, 문자열을 반환 합니다. 에 대 한 `Set`, 속성 및 호출 로드 `SetModifiedFlag`합니다.
+1. `Get/Set` 메서드를 구현합니다. 에 대 한 `Get`, 문자열을 반환 합니다. 에 대 한 `Set`, 속성 및 호출 로드 `SetModifiedFlag`합니다.
 
    [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/cpp/activex-controls-on-the-internet_4.cpp)]
 
@@ -184,7 +183,7 @@ Object 태그 및 웹 페이지에 컨트롤을 삽입 하는 것에 대 한 특
 
 ## <a name="updating-an-existing-ole-control-to-use-new-activex-control-features"></a>ActiveX 컨트롤의 새로운 기능을 사용 하 여 기존 OLE 컨트롤을 업데이트 합니다.
 
-OLE 컨트롤 4.2 이전 버전의 Visual c + +를 사용 하 여 생성 된 경우에 성능 향상을 위한 기능을 향상을 수행할 수 있는 단계가 있습니다. 이러한 변경 내용의 자세한 내용은 참조 하세요. [ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)합니다.
+시각적 개체의 버전을 사용 하 여 OLE 컨트롤을 작성 하는 경우 C++ 4.2 이전 단계가 성능 향상을 위한 기능을 향상을 수행할 수 있습니다. 이러한 변경 내용의 자세한 내용은 참조 하세요. [ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)합니다.
 
 준비 상태 속성을 추가 해야 기존 컨트롤에 비동기 속성 지원을 추가 하는 경우 및 `ReadyStateChange` 이벤트 직접. 컨트롤에 대 한 생성자에서 다음을 추가 합니다.
 

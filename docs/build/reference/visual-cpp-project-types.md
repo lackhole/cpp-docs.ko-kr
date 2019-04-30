@@ -11,13 +11,13 @@ helpviewer_keywords:
 - Visual C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
 ms.openlocfilehash: cac194ed2c830541711161dc139a42ed0529340f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316758"
 ---
-# <a name="c-project-templates"></a>C + + 프로젝트 템플릿
+# <a name="c-project-templates"></a>C++프로젝트 템플릿
 
 Visual Studio 프로젝트 템플릿 생성 소스 코드 파일, 컴파일러 옵션, 메뉴, 도구 모음, 아이콘, 참조 및 `#include` 문을 만들려는 프로젝트의 종류에 적합 합니다. Visual Studio는 여러 종류의 Visual C++ 프로젝트 템플릿을 포함하며 대부분의 템플릿에 대해 마법사를 제공하므로 프로젝트를 만들면서 사용자 지정할 수 있습니다. 프로젝트를 만든 직후에 애플리케이션을 빌드하고 실행할 수 있으므로, 애플리케이션을 개발하면서 간간이 빌드하는 것이 좋습니다.
 

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::experimental::filesystem::file_status::type
 - std::experimental::filesystem::file_status::permissions
 ms.openlocfilehash: 81ce4ecc1673087db8e985f94e297798dd712a6e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160019"
 ---
 # <a name="filestatus-class"></a>file_status 클래스
 
@@ -54,7 +54,7 @@ class file_status;
 
 **Namespace:** std::experimental::filesystem, std::experimental::filesystem
 
-## <a name="file_status"></a> file_status:: file_status
+## <a name="file_status"></a> file_status::file_status
 
 에 대 한 래퍼를 생성 [file_type](../standard-library/filesystem-enumerations.md#file_type) 파일과 [perms](../standard-library/filesystem-enumerations.md#perms)합니다.
 
@@ -75,13 +75,13 @@ file_status(file_status&&) noexcept = default;
 *ftype*<br/>
 지정 된 `file_type`, 기본값은 `file_type::none`합니다.
 
-*마스크*<br/>
+*mask*<br/>
 지정 된 파일 `perms`, 기본값은 `perms::unknown`합니다.
 
 *file_status*<br/>
 저장 된 개체입니다.
 
-## <a name="op_as"></a> file_status::operator =
+## <a name="op_as"></a> file_status::operator=
 
 기본 멤버 대입 연산자가 예상대로 작동합니다.
 
@@ -122,7 +122,7 @@ void permissions(perms mask) noexcept
 
 ### <a name="parameters"></a>매개 변수
 
-*마스크*<br/>
+*mask*<br/>
 `perms`로 지정됩니다.
 
 ## <a name="see-also"></a>참고자료

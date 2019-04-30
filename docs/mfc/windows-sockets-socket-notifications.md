@@ -7,11 +7,11 @@ helpviewer_keywords:
 - sockets [MFC], notifications
 ms.assetid: 87d5bf70-6e77-49a9-9a64-aaadee2ad018
 ms.openlocfilehash: df7bfe8a95221682d0f7f4ebb123bd15b79144d5
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58774336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358195"
 ---
 # <a name="windows-sockets-socket-notifications"></a>Windows 소켓: 소켓 알림
 
@@ -47,11 +47,11 @@ MFC는 알림을 받을 때 소켓의 동작을 사용자 지정할 수 있도�
 
 자세한 내용은 다음을 참조하세요.
 
-- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
 - [Windows 소켓: 소켓 클래스에서 파생](../mfc/windows-sockets-deriving-from-socket-classes.md)
 
-- [Windows 소켓: 보관이 포함 된 소켓의 작동 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+- [Windows 소켓: 소켓과 아카이브를 함께 사용하는 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
 
 - [Windows 소켓: 차단](../mfc/windows-sockets-blocking.md)
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK4022
 ms.assetid: 890f487e-db98-45dd-a226-c7ccead82b1e
 ms.openlocfilehash: 1c9ccfe6ca201ae4deed69c7d01429c67cce4bda
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62298468"
 ---
 # <a name="linker-tools-warning-lnk4022"></a>링커 도구 경고 LNK4022
 

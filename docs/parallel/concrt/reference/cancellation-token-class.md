@@ -14,16 +14,15 @@ helpviewer_keywords:
 - cancellation_token class
 ms.assetid: 2787df2b-e9d3-440e-bfd0-841a46a9835f
 ms.openlocfilehash: 23821c91cd4158f6ec3989cdf537a5d8067e8225
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337520"
 ---
 # <a name="cancellationtoken-class"></a>cancellation_token 클래스
 
-
-  `cancellation_token` 클래스는 일부 작업을 취소하도록 요청되었는지 여부를 확인하는 기능을 나타냅니다. 지정된 토큰을 `task_group`, `structured_task_group` 또는 `task`와 연결하여 암시적 취소를 제공할 수 있습니다. 연결된 `cancellation_token_source`가 취소된 경우 취소를 폴링하거나 콜백을 등록할 수도 있습니다.
+`cancellation_token` 클래스는 일부 작업을 취소하도록 요청되었는지 여부를 확인하는 기능을 나타냅니다. 지정된 토큰을 `task_group`, `structured_task_group` 또는 `task`와 연결하여 암시적 취소를 제공할 수 있습니다. 연결된 `cancellation_token_source`가 취소된 경우 취소를 폴링하거나 콜백을 등록할 수도 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -98,9 +97,7 @@ void deregister_callback(const cancellation_token_registration& _Registration) c
 ### <a name="parameters"></a>매개 변수
 
 *_Registration*<br/>
-
-  `cancellation_token_registration` 개체는 등록을 취소할 콜백에 해당합니다. 
-  `register` 메서드에 대한 호출에서 이 토큰이 이전에 반환됐어야 합니다.
+`cancellation_token_registration` 개체는 등록을 취소할 콜백에 해당합니다. `register` 메서드에 대한 호출에서 이 토큰이 이전에 반환됐어야 합니다.
 
 ##  <a name="is_cancelable"></a> is_cancelable
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), directives reference
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
 ms.openlocfilehash: 655c177b8e5b859faf3b6d9c3250bc3ced31b430
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62178940"
 ---
 # <a name="directives-reference"></a>지시문 참조
 
@@ -27,7 +27,7 @@ ms.locfileid: "51327202"
 
 |||
 |-|-|
-|[맞춤](../../assembler/masm/align-masm.md)|[EVEN](../../assembler/masm/even.md)|
+|[ALIGN](../../assembler/masm/align-masm.md)|[EVEN](../../assembler/masm/even.md)|
 |[LABEL](../../assembler/masm/label-masm.md)|[ORG](../../assembler/masm/org.md)|
 
 ### <a name="conditional-assembly"></a>조건부 어셈블리
@@ -61,11 +61,11 @@ ms.locfileid: "51327202"
 
 ||||
 |-|-|-|
-|[맞춤](../../assembler/masm/align-masm.md)|[BYTE](../../assembler/masm/byte-masm.md)/[SBYTE](../../assembler/masm/sbyte-masm.md)|[DWORD](../../assembler/masm/dword.md)/[SDWORD](../../assembler/masm/sdword.md)|
+|[ALIGN](../../assembler/masm/align-masm.md)|[BYTE](../../assembler/masm/byte-masm.md)/[SBYTE](../../assembler/masm/sbyte-masm.md)|[DWORD](../../assembler/masm/dword.md)/[SDWORD](../../assembler/masm/sdword.md)|
 |[EVEN](../../assembler/masm/even.md)|[FWORD](../../assembler/masm/fword.md)|[LABEL](../../assembler/masm/label-masm.md)|
 |[ORG](../../assembler/masm/org.md)|[QWORD](../../assembler/masm/qword.md)|[REAL4](../../assembler/masm/real4.md)|
 |[REAL8](../../assembler/masm/real8.md)|[REAL10](../../assembler/masm/real10.md)|[TBYTE](../../assembler/masm/tbyte.md)|
-|[단어](../../assembler/masm/word.md)/[검](../../assembler/masm/sword.md)|||
+|[WORD](../../assembler/masm/word.md)/[SWORD](../../assembler/masm/sword.md)|||
 
 ### <a name="equates"></a>매월
 
@@ -95,7 +95,7 @@ ms.locfileid: "51327202"
 ||||
 |-|-|-|
 |[ALIAS](../../assembler/masm/alias-masm.md)|[ASSUME](../../assembler/masm/assume.md)|[COMMENT](../../assembler/masm/comment-masm.md)|
-|[ECHO](../../assembler/masm/echo.md)|[끝](../../assembler/masm/end-masm.md)|[.FPO](../../assembler/masm/dot-fpo.md)|
+|[ECHO](../../assembler/masm/echo.md)|[END](../../assembler/masm/end-masm.md)|[.FPO](../../assembler/masm/dot-fpo.md)|
 |[INCLUDE](../../assembler/masm/include-masm.md)|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[MMWORD](../../assembler/masm/mmword.md)|
 |[옵션](../../assembler/masm/option-masm.md)|[POPCONTEXT](../../assembler/masm/popcontext.md)|[PUSHCONTEXT](../../assembler/masm/pushcontext.md)|
 |[.RADIX](../../assembler/masm/dot-radix.md)|[.SAFESEH](../../assembler/masm/dot-safeseh.md)|[XMMWORD](../../assembler/masm/xmmword.md)|
@@ -121,7 +121,7 @@ ms.locfileid: "51327202"
 
 ||||
 |-|-|-|
-|[ENDM](../../assembler/masm/endm.md)|[에 대 한](../../assembler/masm/for-masm.md)|[FORC](../../assembler/masm/forc.md)|
+|[ENDM](../../assembler/masm/endm.md)|[FOR](../../assembler/masm/for-masm.md)|[FORC](../../assembler/masm/forc.md)|
 |[GOTO](../../assembler/masm/goto-masm.md)|[REPEAT](../../assembler/masm/repeat.md)|[WHILE](../../assembler/masm/while-masm.md)|
 
 ### <a name="scope"></a>범위
@@ -129,14 +129,14 @@ ms.locfileid: "51327202"
 ||||
 |-|-|-|
 |[COMM](../../assembler/masm/comm.md)|[EXTERN](../../assembler/masm/extern-masm.md)|[EXTERNDEF](../../assembler/masm/externdef.md)|
-|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[공용](../../assembler/masm/public-masm.md)||
+|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[PUBLIC](../../assembler/masm/public-masm.md)||
 
 ### <a name="segment"></a>세그먼트
 
 ||||
 |-|-|-|
 |[.ALPHA](../../assembler/masm/dot-alpha.md)|[ASSUME](../../assembler/masm/assume.md)|[.DOSSEG](../../assembler/masm/dot-dosseg.md)|
-|[끝](../../assembler/masm/end-masm.md)|[종료](../../assembler/masm/ends-masm.md)|[GROUP](../../assembler/masm/group.md)|
+|[END](../../assembler/masm/end-masm.md)|[ENDS](../../assembler/masm/ends-masm.md)|[GROUP](../../assembler/masm/group.md)|
 |[SEGMENT](../../assembler/masm/segment.md)|[.SEQ](../../assembler/masm/dot-seq.md)||
 
 ### <a name="simplified-segment"></a>간소화 된 세그먼트
@@ -159,7 +159,7 @@ ms.locfileid: "51327202"
 
 ||||
 |-|-|-|
-|[종료](../../assembler/masm/ends-masm.md)|[레코드](../../assembler/masm/record-masm.md)|[STRUCT](../../assembler/masm/struct-masm.md)|
+|[ENDS](../../assembler/masm/ends-masm.md)|[RECORD](../../assembler/masm/record-masm.md)|[STRUCT](../../assembler/masm/struct-masm.md)|
 |[TYPEDEF](../../assembler/masm/typedef-masm.md)|[UNION](../../assembler/masm/union.md)||
 
 ## <a name="see-also"></a>참고자료

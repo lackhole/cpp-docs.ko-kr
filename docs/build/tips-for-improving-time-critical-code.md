@@ -31,11 +31,11 @@ helpviewer_keywords:
 - heap allocation, time-critical code performance
 ms.assetid: 3e95a8cc-6239-48d1-9d6d-feb701eccb54
 ms.openlocfilehash: 97a9a54be1b322edfe8cfeca84e03f9a6766b8fe
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62314717"
 ---
 # <a name="tips-for-improving-time-critical-code"></a>시간 중심의 코드 성능 향상을 위한 팁
 
@@ -107,11 +107,9 @@ CPU 캐시 적중 10-20 클록 주기를 일으킬 수 있습니다. 외부 캐�
 
 MFC(Microsoft Foundation Classes)는 코드 작성을 크게 간소화할 수 있습니다. 시간 결정적인 코드를 작성할 때 일부 클래스에서 본질적으로 발생하는 오버헤드를 염두에 둬야 합니다. 시간 결정적 코드가 성능 요구 사항을 충족하는지 확인하려면 시간 결정적 코드가 사용하는 MFC 코드를 확인합니다. 다음 목록에서는 파악하고 있어야 하는 MFC 클래스 및 함수를 식별합니다.
 
-- `CString` MFC는 C 런타임 라이브러리에 대 한 메모리를 할당할 호출을 [CString](../atl-mfc-shared/reference/cstringt-class.md) 동적으로 합니다. 일반적으로 `CString`은 동적으로 할당된 다른 문자열처럼 효율적입니다. 동적으로 할당된 모든 문자열처럼 동적 할당 및 릴리스에 대한 오버헤드가 있습니다. 일반적으로 스택에 대한 단순 `char` 배열은 동일한 용도를 제공하면서 더 빠릅니다. 상수 문자열을 저장하는 데 `CString`을 사용하지 마세요. 대신 `const char *`를 사용하십시오. 
-  `CString` 개체를 사용하여 수행하는 모든 작업에는 약간의 오버헤드가 있습니다. 런타임 라이브러리를 사용 하 여 [문자열 함수](../c-runtime-library/string-manipulation-crt.md) 더 빠를 수 있습니다.
+- `CString` MFC는 C 런타임 라이브러리에 대 한 메모리를 할당할 호출을 [CString](../atl-mfc-shared/reference/cstringt-class.md) 동적으로 합니다. 일반적으로 `CString`은 동적으로 할당된 다른 문자열처럼 효율적입니다. 동적으로 할당된 모든 문자열처럼 동적 할당 및 릴리스에 대한 오버헤드가 있습니다. 일반적으로 스택에 대한 단순 `char` 배열은 동일한 용도를 제공하면서 더 빠릅니다. 상수 문자열을 저장하는 데 `CString`을 사용하지 마세요. 대신 `const char *`를 사용하세요. `CString` 개체를 사용하여 수행하는 모든 작업에는 약간의 오버헤드가 있습니다. 런타임 라이브러리를 사용 하 여 [문자열 함수](../c-runtime-library/string-manipulation-crt.md) 더 빠를 수 있습니다.
 
-- `CArray` A [CArray](../mfc/reference/carray-class.md) 일반 배열로 없지만 프로그램은 필요 하지 않을 유연성을 제공 합니다. 배열의 특정 한계를 알면 대신 고정된 전역 배열을 사용할 수 있습니다. `CArray`를 사용하면 `CArray::SetSize`를 사용하여 크기를 설정하고 다시 할당이 필요한 경우 커지게 하는 요소 수를 지정합니다. 그렇지 않은 경우 요소를 추가하면 배열이 자주 다시 할당되고 복사될 수 있습니다. 이는 비효율적이며 메모리를 조각화할 수 있습니다. 또한 배열에 항목을 삽입하면 `CArray`가 메모리의 후속 항목을 이동하므로 배열이 커져야 할 수 있음에 주의합니다. 이러한 작업은 캐시 누락 및 페이지 폴트를 일으킬 수 있습니다. MFC에서 사용하는 코드를 살펴보면 성능 개선을 위해 자신의 시나리오에 더 잘 맞는 코드를 작성할 수 있다는 점을 알 수 있습니다. 
-  `CArray`는 템플릿입니다. 예를 들어 특정 형식에 대해 `CArray` 특수화를 제공할 수 있습니다.
+- `CArray` A [CArray](../mfc/reference/carray-class.md) 일반 배열로 없지만 프로그램은 필요 하지 않을 유연성을 제공 합니다. 배열의 특정 한계를 알면 대신 고정된 전역 배열을 사용할 수 있습니다. `CArray`를 사용하면 `CArray::SetSize`를 사용하여 크기를 설정하고 다시 할당이 필요한 경우 커지게 하는 요소 수를 지정합니다. 그렇지 않은 경우 요소를 추가하면 배열이 자주 다시 할당되고 복사될 수 있습니다. 이는 비효율적이며 메모리를 조각화할 수 있습니다. 또한 배열에 항목을 삽입하면 `CArray`가 메모리의 후속 항목을 이동하므로 배열이 커져야 할 수 있음에 주의합니다. 이러한 작업은 캐시 누락 및 페이지 폴트를 일으킬 수 있습니다. MFC에서 사용하는 코드를 살펴보면 성능 개선을 위해 자신의 시나리오에 더 잘 맞는 코드를 작성할 수 있다는 점을 알 수 있습니다. `CArray`는 템플릿입니다. 예를 들어 특정 형식에 대해 `CArray` 특수화를 제공할 수 있습니다.
 
 - `CList` [CList](../mfc/reference/clist-class.md) 이중 연결된 목록 이므로 요소를 삽입 하는 head에 빠른 끝 및 알려진된 위치 (`POSITION`) 목록에서. 값 또는 인덱스별로 요소 조회에는 순차 검색이 필요하지만 목록이 길 경우 속도가 저하될 수 있습니다. 코드에 이중 연결 목록이 필요 없는 경우에는 `CList` 사용을 다시 고려할 수 있습니다. 단일 연결 목록을 사용하면 모든 작업에 필요한 추가 포인터 업데이트를 위한 오버헤드와 해당 포인터에 필요한 메모리가 절약됩니다. 추가 메모리는 크지 않지만 캐시 누락 또는 페이지 폴트가 발생할 수 있는 또 다른 기회가 될 수 있습니다.
 

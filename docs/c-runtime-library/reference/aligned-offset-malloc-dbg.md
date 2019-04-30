@@ -23,11 +23,11 @@ helpviewer_keywords:
 - aligned_offset_malloc_dbg function
 ms.assetid: 6c242307-c59e-4d63-aae5-d8cbec8e021c
 ms.openlocfilehash: 96fe9e7fda0d0cdfdbfa5462e4f601e3649e2233
-ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348876"
 ---
 # <a name="alignedoffsetmallocdbg"></a>_aligned_offset_malloc_dbg
 
@@ -70,7 +70,7 @@ void * _aligned_offset_malloc_dbg(
 
 **_aligned_offset_malloc_dbg** 의 디버그 버전이 합니다 [_aligned_offset_malloc](aligned-offset-malloc.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_aligned_offset_malloc_dbg** 대 한 호출으로 줄어듭니다 **_aligned_offset_malloc**합니다. 둘 다 **_aligned_offset_malloc** 하 고 **_aligned_offset_malloc_dbg** 기본 힙에서 메모리 블록을 할당 하지만 **_aligned_offset_malloc_dbg** 여러 제공 디버깅 기능: 누수 테스트, 블록의 사용자 부분 양쪽에서 버퍼와 *filename*/*linenumber* 의 출처를 확인 하는 정보 할당 요청 수입니다. 블록 형식 매개 변수를 사용 하 여 특정 할당 형식 추적는 정렬 된 할당에 대 한 지원 되는 디버그 기능이 아닙니다. 정렬 된 할당 _NORMAL_BLOCK 블록 형식으로 표시 됩니다.
 
-**_aligned_offset_malloc_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 메모리 블록 할당 *크기*합니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 응용 프로그램에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 블록이 할당되면 블록의 사용자 부분은 값 0xCD로 채워지고 각 덮어쓰기 버퍼는 0xFD로 채워집니다.
+**_aligned_offset_malloc_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 메모리 블록 할당 *크기*합니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 애플리케이션에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 블록이 할당되면 블록의 사용자 부분은 값 0xCD로 채워지고 각 덮어쓰기 버퍼는 0xFD로 채워집니다.
 
 **_aligned_offset_malloc_dbg** 는 중첩된 된 요소에 맞춤이 필요한 상황에서 유용 예를 들어 중첩된 된 클래스에 맞춤이 필요한 경우.
 

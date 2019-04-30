@@ -10,15 +10,15 @@ helpviewer_keywords:
 - functional header
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
 ms.openlocfilehash: 317344db856a7a0568aca422ecfe8280b80db097
-ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57006671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159420"
 ---
 # <a name="ltfunctionalgt"></a>&lt;functional&gt;
 
-생성 하는 데 도움이 되는 c + + 표준 라이브러리 함수를 정의 *개체를 함수*라고도 *함수*, 및 해당 바인더입니다. 함수 개체는 `operator()`를 정의하는 형식의 개체입니다. 함수 개체는 함수 포인터일 수 있지만, 개체를 사용하여 함수 호출 중에 액세스할 수 있는 추가 정보를 저장하는 것이 더 일반적입니다.
+정의 C++ 표준 라이브러리 함수는 도움말 구문 *함수 개체*라고도 *함수*, 및 해당 바인더입니다. 함수 개체는 `operator()`를 정의하는 형식의 개체입니다. 함수 개체는 함수 포인터일 수 있지만, 개체를 사용하여 함수 호출 중에 액세스할 수 있는 추가 정보를 저장하는 것이 더 일반적입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -143,7 +143,7 @@ C++11, c++14 및 c++17에 다음과 같은 기능이 추가 됩니다.
 
 ## <a name="objects"></a>개체
 
-|Object|설명|
+|개체|설명|
 |-|-|
 |[_1.._M](../standard-library/1-object.md)|대체 가능한 인수에 대한 자리 표시자입니다.|
 

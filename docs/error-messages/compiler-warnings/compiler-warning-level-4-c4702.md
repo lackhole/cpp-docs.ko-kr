@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4702
 ms.assetid: d8198c1e-8762-42a6-9e6b-cb568b7a1686
 ms.openlocfilehash: 96ae3a0742db5e3a5006f031ce62beb281c38ccd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395250"
 ---
 # <a name="compiler-warning-level-4-c4702"></a>컴파일러 경고(수준 4) C4702
 
@@ -19,7 +19,7 @@ ms.locfileid: "50607235"
 
 이 경고는 Visual Studio.NET 2003에 대해 수행한 컴파일러 규칙 작업의 결과: 접근할 수 없는 코드입니다. 보고 합니다 (c4702에 생성 됩니다 (백 엔드) 컴파일러에서 접근할 수 없는 코드를 감지 하면에서는 수준 4 경고입니다.
 
-Visual c + +의 Visual Studio.NET 2003와 Visual Studio.NET 버전에 적용 되는 코드에 대 한 접근할 수 없는 코드를 제거 하거나 모든 소스 코드에 몇 가지 흐름을 실행 하 여 연결할 수 있는지 확인 합니다.
+시각적 개체의 Visual Studio.NET 2003와 Visual Studio.NET 버전에 적용 되는 코드에 대 한 C++접근할 수 없는 코드 제거 하거나 모든 소스 코드에 몇 가지 흐름을 실행 하 여 연결할 수 있는지 확인 합니다.
 
 ## <a name="example"></a>예제
 

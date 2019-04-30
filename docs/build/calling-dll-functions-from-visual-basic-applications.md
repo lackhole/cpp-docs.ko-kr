@@ -11,15 +11,15 @@ helpviewer_keywords:
 - DLL functions [C++], calling
 ms.assetid: 282f7fbf-a0f2-4b9f-b277-1982710be56c
 ms.openlocfilehash: 1e4f1a538da2394c6cead6ea011faf126b022a3f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195344"
 ---
 # <a name="calling-dll-functions-from-visual-basic-applications"></a>Visual Basic 응용 프로그램에서 DLL 함수 호출
 
-Visual Basic 응용 프로그램 (또는 파스칼 이나 포트란 등 다른 언어로 응용 프로그램) C/c + + DLL의 함수를 호출 하는 것에 대 한 함수를 내보내야 하며 컴파일러에서 이름 데코레이션 없이 올바른 호출 규칙을 사용 하 여
+C에서 함수를 호출 하려면 Visual Basic 응용 프로그램 (또는 파스칼 이나 포트란 등 다른 언어로 응용 프로그램)에 대 한 /C++ DLL 함수를 내보내야 하며 컴파일러에서 이름 데코레이션 없이 올바른 호출 규칙을 사용 하 여
 
 `__stdcall` 함수에 대 한 올바른 호출 규칙을 만듭니다 (스택을 정리 하는 호출된 된 함수 및 매개 변수는 오른쪽에서 왼쪽으로 전달 됩니다) 만들지만 함수 이름을 다르게 데코레이팅합니다. 따라서 **__declspec (dllexport)** 는 트 데코 레이 된 이름을 DLL에서 내보낸된 함수를에 내보내집니다.
 
@@ -64,7 +64,7 @@ Visual Basic로 작성 된 프로그램에서 호출할 Dll에 대 한이 항목
 
 - [__Declspec (dllexport)을 사용 하 여 DLL에서 내보내기](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [C + + 함수 C 언어 실행 파일에서 사용할 수 있도록 내보내기](exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [내보내기 C++ C 언어 실행 파일의 사용에 대 한 함수](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
 - [사용할 내보내기 방법 결정](determining-which-exporting-method-to-use.md)
 

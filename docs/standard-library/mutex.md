@@ -5,18 +5,18 @@ f1_keywords:
 - <mutex>
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
 ms.openlocfilehash: 4655278e312647f4e69cf48cb772df854260ce57
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62224079"
 ---
 # <a name="ltmutexgt"></a>&lt;mutex&gt;
 
 `mutex`, `recursive_mutex`, `timed_mutex`, `recursive_timed_mutex` 클래스, `lock_guard`, `unique_lock` 템플릿, 그리고 상호 배제 코드 영역을 정의하는 지원 형식과 함수를 정의하려면 표준 헤더 \<mutex>를 포함합니다.
 
 > [!WARNING]
-> Visual Studio 2015부터 c + + 표준 라이브러리 동기화 형식은 Windows 동기화 기본 형식에 기반한 및 더 이상 ConcRT를 사용 하 여 (대상 플랫폼이 Windows XP 인 경우)는 제외 합니다. \<mutex>에 정의된 형식은 모든 ConcRT 형식 및 함수와 함께 사용하면 안 됩니다.
+> Visual Studio 2015에서 시작 하는 C++ 표준 라이브러리 동기화 형식은 Windows 동기화 기본 형식을 기반으로 하 고 더 이상 ConcRT를 사용 하 여 (대상 플랫폼이 Windows XP 인 경우) 제외 합니다. \<mutex>에 정의된 형식은 모든 ConcRT 형식 및 함수와 함께 사용하면 안 됩니다.
 
 ## <a name="syntax"></a>구문
 

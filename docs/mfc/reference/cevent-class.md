@@ -17,11 +17,11 @@ helpviewer_keywords:
 - CEvent [MFC], Unlock
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395
 ms.openlocfilehash: d7731c87c6d6b0ebdec9a0c72c24b04334aa0662
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62206045"
 ---
 # <a name="cevent-class"></a>CEvent 클래스
 
@@ -107,8 +107,7 @@ TRUE 인 경우에 대 한 스레드는 `CMultilock` 또는 `CSingleLock` 개체
 TRUE 이면 이벤트 개체는 수동 이벤트에 이벤트 개체는 자동 이벤트 그렇지 않은 경우를 지정 합니다.
 
 *lpszName*<br/>
-
-  `CEvent` 개체의 이름입니다. 프로세스 경계를 넘어 개체를 사용할 경우에 제공 되어야 합니다. 생성자 빌드 새 이름이 기존 이벤트와 일치 하는 경우 `CEvent` 해당 이름의 이벤트를 참조 하는 개체입니다. 이름이 일치 이벤트를 발생 하지 않은 기존 동기화 개체를 생성 하지 못합니다. NULL 인 경우 이름이 null이 됩니다.
+`CEvent` 개체의 이름입니다. 프로세스 경계를 넘어 개체를 사용할 경우에 제공 되어야 합니다. 생성자 빌드 새 이름이 기존 이벤트와 일치 하는 경우 `CEvent` 해당 이름의 이벤트를 참조 하는 개체입니다. 이름이 일치 이벤트를 발생 하지 않은 기존 동기화 개체를 생성 하지 못합니다. NULL 인 경우 이름이 null이 됩니다.
 
 *lpsaAttribute*<br/>
 이벤트 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.

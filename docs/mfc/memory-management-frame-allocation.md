@@ -19,11 +19,11 @@ helpviewer_keywords:
 - frame variables [MFC]
 ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
 ms.openlocfilehash: 1acf2ce89e18dd64c166103b59b5eb7007214efd
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352129"
 ---
 # <a name="memory-management-frame-allocation"></a>메모리 관리: 프레임 할당
 
@@ -33,7 +33,7 @@ ms.locfileid: "58328456"
 
 [!code-cpp[NVC_MFC_Utilities#10](../mfc/codesnippet/cpp/memory-management-frame-allocation_1.cpp)]
 
-로컬 함수 변수에 대 한 중첩 된 중괄호를 사용 하는 경우 프레임 변수의 범위를 제외한 함수가 종료 되는 함수 보다 작을 수 있습니다이 범위 전환을 발생 합니다. 프레임 변수의 자동 삭제 하는 것이 매우 중요 합니다. 간단한 기본 형식의 경우 (같은 **int** 또는 **바이트**), 배열 또는 데이터 구조를 자동으로 삭제할 변수로 사용 하는 메모리를 간단 하 게 회수 합니다. 변수의 범위를 벗어난, 이후 계속 액세스할 수 없습니다. 그러나 c + + 개체의 경우 자동 삭제 프로세스는 조금 더 복잡 합니다.
+로컬 함수 변수에 대 한 중첩 된 중괄호를 사용 하는 경우 프레임 변수의 범위를 제외한 함수가 종료 되는 함수 보다 작을 수 있습니다이 범위 전환을 발생 합니다. 프레임 변수의 자동 삭제 하는 것이 매우 중요 합니다. 간단한 기본 형식의 경우 (같은 **int** 또는 **바이트**), 배열 또는 데이터 구조를 자동으로 삭제할 변수로 사용 하는 메모리를 간단 하 게 회수 합니다. 변수의 범위를 벗어난, 이후 계속 액세스할 수 없습니다. 경우 C++ 개체는 프로세스를 자동으로 삭제할 것 인데, 조금 더 복잡 합니다.
 
 프레임 변수 개체를 정의할 때 해당 생성자 정의 발생 지점에 자동으로 호출 됩니다. 개체가 범위를 벗어나면 개체에 대 한 메모리를 회수 하기 전에 해당 소멸자가 자동으로 호출 됩니다. 자동 생성 및 소멸이 매우 유용한 수 있지만 특히 소멸자를 자동 호출을 알고 있어야 합니다.
 

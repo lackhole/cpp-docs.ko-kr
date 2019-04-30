@@ -81,11 +81,11 @@ helpviewer_keywords:
 - std::forward_list::unique
 ms.assetid: 89a3b805-ab60-4858-b772-5855130c11b1
 ms.openlocfilehash: 5eaa8eba1904dc0a729fb66b280b8d3fa4bb78f1
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159784"
 ---
 # <a name="forwardlist-class"></a>forward_list 클래스
 
@@ -104,7 +104,7 @@ class forward_list
 |매개 변수|설명|
 |---------------|-----------------|
 |*Type*|forward_list에 저장되는 요소 데이터 형식입니다.|
-|*할당자*|forward_list의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체입니다. 이 매개 변수는 선택적 요소입니다. 기본값은 allocator< `Type`>입니다.|
+|*Allocator*|forward_list의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체입니다. 이 매개 변수는 선택적 요소입니다. 기본값은 allocator< `Type`>입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -219,7 +219,7 @@ void assign(InputIterator First, InputIterator Last);
 |*count*|할당할 요소 수입니다.|
 |*val*|각 요소에 할당할 값입니다.|
 |*Type*|값의 형식입니다.|
-|* IList'|복사할 initializer_list입니다.|
+|* IList'| 복사할 initializer_list입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -511,9 +511,9 @@ forward_list(InputIterator First, InputIterator Last, const Allocator& Al);
 |---------------|-----------------|
 |*Al*|이 개체에 사용할 할당자 클래스입니다.|
 |*개수*|생성된 목록의 요소 수입니다.|
-|*val*|생성된 목록에 있는 요소의 값입니다.|
+|*Val*|생성된 목록에 있는 요소의 값입니다.|
 |*오른쪽*|생성된 목록이 복사본으로 지정될 목록입니다.|
-|*첫 번째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.|
 |*IList*|복사할 initializer_list입니다.|
 
@@ -577,9 +577,9 @@ void insert_after(const_iterator Where, InputIterator First, InputIterator Last)
 |---------------|-----------------|
 |*Where*|대상 정방향 목록에서 첫 번째 요소가 삽입된 위치입니다.|
 |*개수*|삽입할 요소의 수입니다.|
-|*첫 번째*|삽입 범위의 시작입니다.|
+|*첫째*|삽입 범위의 시작입니다.|
 |*마지막*|삽입 범위의 끝입니다.|
-|*val*|정방향 목록에 추가된 요소입니다.|
+|*Val*|정방향 목록에 추가된 요소입니다.|
 |*IList*|삽입할 initializer_list입니다.|
 
 ### <a name="return-value"></a>반환 값
@@ -880,7 +880,7 @@ void splice_after(
 *Iter*<br/>
 원본 forward_list에서 삽입할 요소입니다.
 
-*첫 번째*<br/>
+*첫째*<br/>
 원본 forward_list에서 삽입할 범위 내 첫 번째 요소입니다.
 
 *마지막*<br/>

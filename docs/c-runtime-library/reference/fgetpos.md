@@ -23,11 +23,11 @@ helpviewer_keywords:
 - streams, file position indicator
 ms.assetid: bfa05c38-1135-418c-bda1-d41be51acb62
 ms.openlocfilehash: e213c9830ffe6edf04b12a80828f14cc48f77524
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333932"
 ---
 # <a name="fgetpos"></a>fgetpos
 
@@ -44,7 +44,7 @@ int fgetpos(
 
 ### <a name="parameters"></a>매개 변수
 
-*스트림*<br/>
+*stream*<br/>
 대상 스트림입니다.
 
 *pos*<br/>
@@ -52,7 +52,7 @@ int fgetpos(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 **fgetpos** 0을 반환 합니다. 오류가 발생 하면 0이 아닌 값을 반환 하 고 설정 **errno** 다음 중 하나를 매니페스트 상수 (STDIO에 정의 합니다. H): **EBADF**, 즉, 지정 된 스트림에 유효한 파일 포인터가 아니거나에 액세스할 수 없는 또는 **EINVAL**, 즉 합니다 *stream* 값인지 값*pos* 는 경우와 같이 유효한 하거나가 null 포인터가 아닌 합니다. 하는 경우 *스트림을* 또는 *pos* 되는 **NULL** 포인터에 설명 된 대로 함수가 잘못 된 매개 변수 처리기를 호출 하 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md).
+성공 하면 **fgetpos** 0을 반환 합니다. 오류가 발생 하면 0이 아닌 값을 반환 하 고 설정 **errno** 다음 중 하나를 매니페스트 상수 (STDIO에 정의 합니다. H): **EBADF**, 즉, 지정 된 스트림에 유효한 파일 포인터가 아니거나에 액세스할 수 없는 또는 **EINVAL**를 의미 합니다 *스트림* 값 또는 값 *pos*가 유효한 경우와 같이 하거나가 null 포인터가 아닌 합니다. 하는 경우 *스트림을* 또는 *pos* 되는 **NULL** 포인터에 설명 된 대로 함수가 잘못 된 매개 변수 처리기를 호출 하 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md).
 
 ## <a name="remarks"></a>설명
 

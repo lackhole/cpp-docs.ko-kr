@@ -10,19 +10,19 @@ helpviewer_keywords:
 - mappings [MFC], Windows handles to objects
 ms.assetid: fbea9f38-992c-4091-8dbc-f29e288617d6
 ms.openlocfilehash: e7844398ebaf5a8fdf8c56ab18b33d8c7717d1ad
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306381"
 ---
 # <a name="tn003-mapping-of-windows-handles-to-objects"></a>TN003: 핸들을 개체로 매핑 Windows의
 
-이 MFC를 설명 합니다. Windows 매핑 지 루틴 개체 c + + 개체에 대 한 핸들입니다.
+이 MFC를 설명 합니다. Windows 매핑 지 루틴 개체 핸들을 C++ 개체입니다.
 
 ## <a name="the-problem"></a>문제
 
-Windows는 일반적으로 나타내는 개체가 여러 [처리](/windows/desktop/WinProg/windows-data-types) The MFC 클래스 개체 c + + 개체를 사용 하 여 Windows 개체 핸들을 래핑합니다. MFC 클래스 라이브러리의 함수를 래핑하는 핸들을 통해 Windows 가진 개체를 특정 핸들을 래핑하는 c + + 개체를 찾을 수 있습니다. 그러나 경우에 따라 개체 c + + 래퍼 개체 없고 해당이 시간에 시스템 c + + 래퍼 역할을 임시 개체를 만듭니다.
+Windows는 일반적으로 나타내는 개체가 여러 [처리할](/windows/desktop/WinProg/windows-data-types) The MFC 클래스 개체에는 Windows 개체 핸들을 래핑할 C++ 개체입니다. MFC 클래스 라이브러리의 함수를 래핑하는 핸들을 통해 찾을 수는 C++ Windows 가진 개체를 특정 핸들을 래핑하는 개체입니다. 그러나 경우에 따라 개체 없는 C++ 래퍼 개체 하 고 해당이 시간에 시스템 역할을 하도록 임시 개체를 만듭니다는 C++ 래퍼.
 
 핸들 맵을 사용 하는 Windows 개체는 다음과 같습니다.
 
@@ -54,7 +54,7 @@ Windows는 일반적으로 나타내는 개체가 여러 [처리](/windows/deskt
 CWnd::FromHandle(hWnd)
 ```
 
-하는 경우 *hWnd* 임시 개체를 특정 래퍼 없습니다 `CWnd` 래핑할 만들어집니다 *hWnd*합니다. 모든 핸들에서 유효한 c + + 개체를 가져올 수 있습니다.
+하는 경우 *hWnd* 임시 개체를 특정 래퍼 없습니다 `CWnd` 래핑할 만들어집니다 *hWnd*합니다. 이렇게 하면 올바른 가져올 수 C++ 모든 핸들에서 개체입니다.
 
 래퍼 개체를 만든 후에 래퍼 클래스의 public 멤버 변수에서 해당 핸들을 검색할 수 있습니다. 경우는 `CWnd`하십시오 *m_hWnd* 해당 개체에 대 한 HWND를 포함 합니다.
 
@@ -79,9 +79,9 @@ myWnd.Detach();
 
 ## <a name="wrapper-objects-and-multiple-threads"></a>래퍼 개체 및 여러 스레드
 
-임시 및 영구 개체는 스레드별 기준 유지 됩니다. 즉, 하나의 스레드는 임시 또는 영구 인지에 관계 없이 다른 스레드의 c + + 래퍼 개체를 액세스할 수 없습니다.
+임시 및 영구 개체는 스레드별 기준 유지 됩니다. 즉, 하나의 스레드가 다른 스레드의 액세스할 수 없습니다 C++ 임시 또는 영구 인지에 관계 없이 래퍼 개체입니다.
 
-이러한 개체 한 스레드에서 다른을 전달 하려면 항상 보내야 기본 `HANDLE` 형식입니다. 한 스레드에서 다른 c + + 래퍼 개체를 전달는 예기치 않은 결과가 발생할 경우가 많습니다.
+이러한 개체 한 스레드에서 다른을 전달 하려면 항상 보내야 기본 `HANDLE` 형식입니다. 전달 된 C++ 래퍼 개체를 다른 스레드에서는 예기치 않은 결과가 발생할 경우가 많습니다.
 
 ## <a name="see-also"></a>참고자료
 

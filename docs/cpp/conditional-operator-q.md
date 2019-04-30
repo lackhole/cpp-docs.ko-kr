@@ -9,11 +9,11 @@ helpviewer_keywords:
 - '? : operator'
 ms.assetid: 88643ee8-7100-4f86-880a-705ec22b6271
 ms.openlocfilehash: 8744ca8546d48e9283cc0dfa9d80babf5076f8b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399150"
 ---
 # <a name="conditional-operator--"></a>조건부 연산자:? :
 
@@ -70,7 +70,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [조건식 연산자](../c-language/conditional-expression-operator.md)

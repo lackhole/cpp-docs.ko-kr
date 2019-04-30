@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C4564
 ms.assetid: 555b301b-313e-4262-9f81-eb878674be60
 ms.openlocfilehash: 1948bdec5367fa7943f5a0de4338fd4ecd6c6581
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62220509"
 ---
 # <a name="compiler-warning-level-4-c4564"></a>컴파일러 경고(수준 4) C4564
 
 ' method' 'class' 클래스의 지원 되지 않는 기본 매개 변수 'parameter'를 정의합니다.
 
-컴파일러는 기본값을 사용 하 여 하나 이상의 매개 변수를 사용 하 여 메서드를 발견 했습니다. 메서드가 호출 된; 경우 매개 변수의 기본 값이 무시 됩니다. 이러한 매개 변수 값을 명시적으로 지정 합니다. 이러한 매개 변수 값을 명시적으로 지정 하지 않으면 c + + 컴파일러 오류가 발생 합니다.
+컴파일러는 기본값을 사용 하 여 하나 이상의 매개 변수를 사용 하 여 메서드를 발견 했습니다. 메서드가 호출 된; 경우 매개 변수의 기본 값이 무시 됩니다. 이러한 매개 변수 값을 명시적으로 지정 합니다. 이러한 매개 변수 값을 명시적으로 지정 하지 않으면 경우는 C++ 컴파일러에서 오류를 생성 합니다.
 
 Visual Basic을 사용 하 여 만든 다음.dll, 지정 된에서 허용 하는 기본 매개 변수 메서드 인수:
 
@@ -31,7 +31,7 @@ Public class TestClass
 End class
 ```
 
-및 Visual Basic을 사용 하 여 만든.dll을 사용 하는 다음 c + + 샘플
+다음 C++ Visual Basic을 사용 하 여 만든.dll을 사용 하는 샘플
 
 ```
 // C4564.cpp

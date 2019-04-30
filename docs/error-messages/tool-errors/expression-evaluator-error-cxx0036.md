@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CAN0036
 ms.assetid: 383404be-df5b-4eec-b113-df21bb5d269d
 ms.openlocfilehash: d7961d92760cc5ac325b4bc9f187d4ee2298479a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397031"
 ---
 # <a name="expression-evaluator-error-cxx0036"></a>식 계산기 오류 CXX0036
 
@@ -24,7 +24,7 @@ ms.locfileid: "50576808"
 
    컨텍스트 연산자의 구문은 다음과 같습니다.
 
-     {*함수*를*모듈*하십시오*dll*}*식*
+     {*function*,*module*,*dll*}*expression*
 
    컨텍스트를 지정 하는이 *식*합니다. 컨텍스트 연산자에 동일한 우선 순위 및 사용 현황으로 형식 캐스팅
 

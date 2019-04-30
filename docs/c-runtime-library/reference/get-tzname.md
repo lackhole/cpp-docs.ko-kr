@@ -25,11 +25,11 @@ helpviewer_keywords:
 - get_tzname function
 ms.assetid: df0065ff-095f-4237-832c-2fe9ab913875
 ms.openlocfilehash: c173832efb866eed133a908b5f2b72266fd3798a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62332042"
 ---
 # <a name="gettzname"></a>_get_tzname
 
@@ -51,7 +51,7 @@ errno_t _get_tzname(
 *pReturnValue*<br/>
 문자열 길이 *표준 시간대 이름* null 종결자를 포함 합니다.
 
-*표준 시간대 이름*<br/>
+*timeZoneName*<br/>
 에 따라 표준 시간대 이름 또는 일광 표준 시간대 이름 (DST)의 표현에 대 한 문자에 대 한 문자열의 주소 *인덱스*합니다.
 
 *sizeInBytes*<br/>
@@ -76,7 +76,7 @@ errno_t _get_tzname(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*pReturnValue*|*표준 시간대 이름*|*sizeInBytes*|*index*|반환 값|내용을 *표준 시간대 이름*|
+|*pReturnValue*|*timeZoneName*|*sizeInBytes*|*index*|반환 값|내용을 *표준 시간대 이름*|
 |--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
 |TZ 이름의 크기|**NULL**|0|0 또는 1|0|수정 안 됨|
 |TZ 이름의 크기|any|> 0|0 또는 1|0|TZ 이름|

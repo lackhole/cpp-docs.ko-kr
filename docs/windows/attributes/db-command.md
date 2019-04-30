@@ -1,5 +1,5 @@
 ---
-title: db_command (c + + COM 특성)
+title: db_command (C++ COM 특성)
 ms.date: 07/10/2018
 f1_keywords:
 - vc-attr.db_command
@@ -7,11 +7,11 @@ helpviewer_keywords:
 - db_command attribute
 ms.assetid: 714c3e15-85d7-408b-9a7c-88505c3e5d24
 ms.openlocfilehash: 136c82b2674f3c08f053de9676068c0fb4baac11
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62148200"
 ---
 # <a name="dbcommand"></a>db_command
 
@@ -122,7 +122,7 @@ TCHAR m_state[3] = 'CA';
 
 이 샘플에서는 상태 열이 'CA'와 일치하는 테이블에서 성과 이름을 선택하는 명령을 정의합니다. **db_command** 는 마법사에서 생성한 함수(예: [OpenAll 및 CloseAll](../../data/oledb/consumer-wizard-generated-methods.md)) 및 `CRowset` 멤버 함수(예: [MoveNext](../../data/oledb/crowset-movenext.md))를 호출할 수 있는 행 집합을 만들고 읽습니다.
 
-이 코드를 사용하려면 pubs 데이터베이스에 연결되는 고유한 연결 문자열을 제공해야 합니다. 개발 환경에서 이를 수행하는 방법에 대한 자세한 내용은 [방법: 데이터베이스에 연결 및 기존 개체 찾아보기](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) 및 [새 연결 추가](/visualstudio/data-tools/add-new-connections)를 참조하세요.
+이 코드를 사용하려면 pubs 데이터베이스에 연결되는 고유한 연결 문자열을 제공해야 합니다. 개발 환경에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 [방법: 데이터베이스 및 기존 개체 찾아보기 연결할](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) 하 고 [새 연결 추가](/visualstudio/data-tools/add-new-connections)합니다.
 
 ```cpp
 // db_command.h

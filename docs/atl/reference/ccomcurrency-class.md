@@ -16,11 +16,11 @@ helpviewer_keywords:
 - CComCurrency class
 ms.assetid: a1c3d10a-bba6-40cc-8bcf-aed9023c8a9e
 ms.openlocfilehash: b2c07bc9c0b1e96f34798b20207dc0eb0362e534
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62246423"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency 클래스
 
@@ -38,25 +38,18 @@ class CComCurrency
 
 |이름|설명|
 |----------|-----------------|
-|[CComCurrency::CComCurrency](#ccomcurrency)|
-  `CComCurrency` 개체에 대한 생성자입니다.|
+|[CComCurrency::CComCurrency](#ccomcurrency)|`CComCurrency` 개체에 대한 생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
 |이름|설명|
 |----------|-----------------|
-|[CComCurrency::GetCurrencyPtr](#getcurrencyptr)|
-  `m_currency` 데이터 멤버의 주소를 반환합니다.|
-|[CComCurrency::GetFraction](#getfraction)|
-  `CComCurrency` 개체의 소수 부분을 반환하려면 이 메서드를 호출합니다.|
-|[CComCurrency::GetInteger](#getinteger)|
-  `CComCurrency` 개체의 정수 부분을 반환하려면 이 메서드를 호출합니다.|
-|[CComCurrency::Round](#round)|
-  `CComCurrency` 개체를 가장 가까운 정수 값으로 반올림하려면 이 메서드를 호출합니다.|
-|[CComCurrency::SetFraction](#setfraction)|
-  `CComCurrency` 개체의 소수 부분을 설정하려면 이 메서드를 호출합니다.|
-|[CComCurrency::SetInteger](#setinteger)|
-  `CComCurrency` 개체의 정수 부분을 설정하려면 이 메서드를 호출합니다.|
+|[CComCurrency::GetCurrencyPtr](#getcurrencyptr)|`m_currency` 데이터 멤버의 주소를 반환합니다.|
+|[CComCurrency::GetFraction](#getfraction)|`CComCurrency` 개체의 소수 부분을 반환하려면 이 메서드를 호출합니다.|
+|[CComCurrency::GetInteger](#getinteger)|`CComCurrency` 개체의 정수 부분을 반환하려면 이 메서드를 호출합니다.|
+|[CComCurrency::Round](#round)|`CComCurrency` 개체를 가장 가까운 정수 값으로 반올림하려면 이 메서드를 호출합니다.|
+|[CComCurrency::SetFraction](#setfraction)|`CComCurrency` 개체의 소수 부분을 설정하려면 이 메서드를 호출합니다.|
+|[CComCurrency::SetInteger](#setinteger)|`CComCurrency` 개체의 정수 부분을 설정하려면 이 메서드를 호출합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
@@ -91,8 +84,7 @@ class CComCurrency
 
 `CComCurrency` 래퍼는이 고정 소수점 형식에 대 한 산술 연산, 할당 및 비교 작업을 구현 합니다. 지원되는 응용 프로그램은 고정 소수점 계산 시 발생할 수 있는 반올림 오류를 제어하도록 선택했습니다.
 
-
-  `CComCurrency` 개체는 두 부분(소수점 기호 왼쪽 값을 저장하는 정수 부분과 소수점 기호 오른쪽 값을 저장하는 소수 부분)으로 된 소수점 기호의 한 쪽에 있는 숫자에 대한 액세스를 제공합니다. 소수 부분 (CY_MIN_FRACTION)-9999에서 + 9999 (CY_MAX_FRACTION) 사이의 정수 값으로 내부적으로 저장 됩니다. 메서드 [ccomcurrency:: Getfraction](#getfraction) 10000 (CY_SCALE)의 비율로 배율 조정 값을 반환 합니다.
+`CComCurrency` 개체는 두 부분(소수점 기호 왼쪽 값을 저장하는 정수 부분과 소수점 기호 오른쪽 값을 저장하는 소수 부분)으로 된 소수점 기호의 한 쪽에 있는 숫자에 대한 액세스를 제공합니다. 소수 부분 (CY_MIN_FRACTION)-9999에서 + 9999 (CY_MAX_FRACTION) 사이의 정수 값으로 내부적으로 저장 됩니다. 메서드 [ccomcurrency:: Getfraction](#getfraction) 10000 (CY_SCALE)의 비율로 배율 조정 값을 반환 합니다.
 
 정수 및 소수 자릿수 구성 요소를 지정 하는 경우는 `CComCurrency` 개체, 소수 부분이 0에서 9999 범위의 숫자입니다. 이는 소수점 뒤 두 자리의 유효 숫자만 사용하여 금액을 표현하는 미국 달러와 같은 통화를 처리할 때 중요합니다. 마지막 두 자리가 표시되지 않는 경우에도 이를 고려해야 합니다.
 
@@ -167,8 +159,7 @@ VARIANT 형식의 변수입니다. 현재 스레드의 로캘은 변환 하는 �
 
 ##  <a name="getcurrencyptr"></a>  CComCurrency::GetCurrencyPtr
 
-
-  `m_currency` 데이터 멤버의 주소를 반환합니다.
+`m_currency` 데이터 멤버의 주소를 반환합니다.
 
 ```
 CURRENCY* GetCurrencyPtr() throw();
@@ -606,8 +597,7 @@ HRESULT Roundint nDecimals);
 
 ##  <a name="setfraction"></a>  CComCurrency::SetFraction
 
-
-  `CComCurrency` 개체의 소수 부분을 설정하려면 이 메서드를 호출합니다.
+`CComCurrency` 개체의 소수 부분을 설정하려면 이 메서드를 호출합니다.
 
 ```
 HRESULT SetFraction(SHORT nFraction);
@@ -628,8 +618,7 @@ HRESULT SetFraction(SHORT nFraction);
 
 ##  <a name="setinteger"></a>  CComCurrency::SetInteger
 
-
-  `CComCurrency` 개체의 정수 부분을 설정하려면 이 메서드를 호출합니다.
+`CComCurrency` 개체의 정수 부분을 설정하려면 이 메서드를 호출합니다.
 
 ```
 HRESULT SetInteger(LONGLONG nInteger);

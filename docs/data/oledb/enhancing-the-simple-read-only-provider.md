@@ -8,11 +8,11 @@ helpviewer_keywords:
 - simple read-only poviders [C++]
 ms.assetid: cba0e09f-44c1-41c1-9456-332aa13dc158
 ms.openlocfilehash: d61f24a9a9abffe836a7f11bd5d1517fddf97fe7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62175357"
 ---
 # <a name="enhancing-the-simple-read-only-provider"></a>단순한 읽기 전용 공급자의 기능 향상
 

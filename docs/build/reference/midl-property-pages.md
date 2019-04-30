@@ -7,11 +7,11 @@ helpviewer_keywords:
 - property pages, MIDL
 ms.assetid: 57498a01-fccc-4a0e-a036-6ff702f83126
 ms.openlocfilehash: df312e09aa639e53f1d4cdb7261fe2942acf40e5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62321425"
 ---
 # <a name="midl-property-pages"></a>MIDL 속성 페이지
 
@@ -27,4 +27,4 @@ C++ 프로젝트의 MIDL 옵션에 프로그래밍 방식으로 액세스하는 
 
 ## <a name="see-also"></a>참고자료
 
-[C + + 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)
+[C++ 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)

@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 오류 C2200 ~ C2299
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C2202
 - C2209
@@ -52,12 +52,12 @@ helpviewer_keywords:
 - C2291
 - C2294
 ms.assetid: 9b36d11b-9510-4390-96f1-0c9235124d14
-ms.openlocfilehash: b41887e941796e7f8f2f919ed76fbaaa624227ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 5af97ab46a97d3019abcc937cc0a74c5f865a9ff
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62360517"
 ---
 # <a name="compiler-errors-c2200-through-c2299"></a>컴파일러 오류 C2200 ~ C2299
 
@@ -131,7 +131,7 @@ ms.locfileid: "50432528"
 |[컴파일러 오류 C2259](compiler-error-c2259.md)|'*클래스*': 추상 클래스를 인스턴스화할 수 없습니다.|
 |컴파일러 오류 C2260|'*지정자*': InternalsVisibleToAttribute friend 어셈블리 지정 자가 잘못 되었습니다.|
 |[컴파일러 오류 C2261](compiler-error-c2261.md)|'*문자열*': 어셈블리 참조가 잘못 되어 확인할 수 없습니다|
-|[컴파일러 오류 C2262](compiler-error-c2262.md)|'*지정자*': InternalsVisibleTo 선언에 지정 된 버전, 문화권 또는 프로세서 아키텍처를 사용할 수 없습니다|
+|[컴파일러 오류 C2262](compiler-error-c2262.md)|'*specifier*': InternalsVisibleTo 선언에 지정 된 버전, 문화권 또는 프로세서 아키텍처를 사용할 수 없습니다.|
 |컴파일러 오류 C2263|사용되지 않습니다.|
 |[컴파일러 오류 C2264](compiler-error-c2264.md)|'*함수*': 함수 정의 또는 선언에 오류가; 함수가 호출 되지 않습니다|
 |컴파일러 오류 C2265|사용되지 않습니다.|
@@ -159,7 +159,7 @@ ms.locfileid: "50432528"
 |[컴파일러 오류 C2287](compiler-error-c2287.md)|'*식별자*': 상속 표현: '*inheritiance*'입니다. 필요한 보다 덜 일반적'*상속*'|
 |컴파일러 오류 C2288|사용되지 않습니다.|
 |[컴파일러 오류 C2289](compiler-error-c2289.md)|동일한 형식 한정자를 두 번 이상 사용했습니다.|
-|[컴파일러 오류 C2290](compiler-error-c2290.md)|C + + asm 구문이 무시 됩니다. __asm을 사용하세요.|
+|[컴파일러 오류 C2290](compiler-error-c2290.md)|C++'asm' 구문이 무시 됩니다. __asm을 사용하세요.|
 |컴파일러 오류 C2291|익명 네임 스페이스를 내보낼 수 없습니다.|
 |[컴파일러 오류 C2292](compiler-error-c2292.md)|'*식별자*': 최적 case 상속 표현: *inheritance1*' 선언 되지만 '*상속 2*' 필요|
 |[컴파일러 오류 C2293](compiler-error-c2293.md)|'*식별자*': 멤버 변수를 __based 지정자로 잘못 되었습니다.|
@@ -169,3 +169,8 @@ ms.locfileid: "50432528"
 |[컴파일러 오류 C2297](compiler-error-c2297.md)|'*연산자*': 오른쪽 피연산자의 형식이 '*형식*'|
 |[컴파일러 오류 C2298](compiler-error-c2298.md)|멤버 함수에 대 한 포인터를 바인딩된 호출이 누락 되었습니다.|
 |[컴파일러 오류 C2299](compiler-error-c2299.md)|'*함수*': 동작 변경: 명시적 특수화는 복사 생성자 또는 복사 할당 연산자 여야 합니다.|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

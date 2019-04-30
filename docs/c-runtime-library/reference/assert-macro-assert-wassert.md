@@ -29,11 +29,11 @@ helpviewer_keywords:
 - assert macro
 ms.assetid: a9ca031a-648b-47a6-bdf1-65fc7399dd40
 ms.openlocfilehash: 7ac299213ba3de878f7cf2dc99b44c45273bc3b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341368"
 ---
 # <a name="assert-macro-assert-wassert"></a>assert Macro, _assert, _wassert
 
@@ -59,7 +59,7 @@ void _wassert(
 
 ### <a name="parameters"></a>매개 변수
 
-*식*<br/>
+*expression*<br/>
 에 0이 아닌 값을 평가 하는 스칼라 식 (포인터 식 포함) (**true**) 또는 0 (**false**).
 
 *message*<br/>
@@ -68,7 +68,7 @@ void _wassert(
 *filename*<br/>
 어설션이 실패한 소스 파일의 이름입니다.
 
-*줄*<br/>
+*line*<br/>
 실패한 어설션의 소스 파일에 있는 줄 번호입니다.
 
 ## <a name="remarks"></a>설명
@@ -79,9 +79,9 @@ void _wassert(
 
 진단 메시지는 와이드 문자로 출력됩니다. 따라서 식에 유니코드 문자가 있어도 예상대로 작동합니다.
 
-진단 메시지의 대상은 루틴을 호출한 응용 프로그램의 형식에 따라 달라집니다. 콘솔 응용 프로그램을 통해 메시지를 항상 받을 **stderr**합니다. Windows 기반 응용 프로그램에서는 **assert** 는 Windows를 호출 [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) 와 함께 메시지를 표시 하는 메시지 상자를 만드는 함수를 **확인** 단추입니다. 사용자가 **확인**을 클릭하면 프로그램이 즉시 중단됩니다.
+진단 메시지의 대상은 루틴을 호출한 애플리케이션의 형식에 따라 달라집니다. 콘솔 응용 프로그램을 통해 메시지를 항상 받을 **stderr**합니다. Windows 기반 응용 프로그램에서는 **assert** 는 Windows를 호출 [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) 와 함께 메시지를 표시 하는 메시지 상자를 만드는 함수를 **확인** 단추입니다. 사용자가 **확인**을 클릭하면 프로그램이 즉시 중단됩니다.
 
-응용 프로그램 런타임 라이브러리의 디버그 버전과 연결 된 경우 **assert** 세 개의 단추를 사용 하 여 메시지 상자를 만듭니다: **중단**를 **을 다시 시도**, 및 **무시**합니다. 사용자가 **중단**을 클릭하면 프로그램이 즉시 중단됩니다. 사용자가 **다시 시도**를 클릭하면 디버거가 호출되고 JIT(Just-In-Time) 디버깅을 사용하는 경우 사용자가 프로그램을 디버깅할 수 있습니다. 클릭 하면 **무시**, **assert** 정상적인 실행이 계속: 메시지 상자를 사용 하 여 만들며 합니다 **확인** 단추입니다. 오류 조건이 있을 때 **무시** 를 클릭하면 정의되지 않은 동작이 발생할 수 있습니다.
+응용 프로그램 런타임 라이브러리의 디버그 버전과 연결 된 경우 **assert** 세 개의 단추를 사용 하 여 메시지 상자를 만듭니다. **Abort**, **다시 시도**, 및 **무시**합니다. 사용자가 **중단**을 클릭하면 프로그램이 즉시 중단됩니다. 사용자가 **다시 시도**를 클릭하면 디버거가 호출되고 JIT(Just-In-Time) 디버깅을 사용하는 경우 사용자가 프로그램을 디버깅할 수 있습니다. 클릭 하면 **무시**, **assert** 정상적인 실행이 계속: 메시지 상자를 사용 하 여 만들며 합니다 **확인** 단추입니다. 오류 조건이 있을 때 **무시** 를 클릭하면 정의되지 않은 동작이 발생할 수 있습니다.
 
 CRT 디버깅에 대한 자세한 내용은 [CRT 디버깅 기술](/visualstudio/debugger/crt-debugging-techniques)을 참조하세요.
 
@@ -93,7 +93,7 @@ CRT 디버깅에 대한 자세한 내용은 [CRT 디버깅 기술](/visualstudio
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**어설션**, **_wassert**|\<assert.h>|
+|**assert**, **_wassert**|\<assert.h>|
 
 서명의 합니다 **_assert** 헤더 파일에 함수를 사용할 수 없습니다. 서명의 합니다 **_wassert** 함수 때만 사용할 수는 **NDEBUG** 매크로가 정의 되지 않았습니다.
 

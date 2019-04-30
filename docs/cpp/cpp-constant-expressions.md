@@ -7,11 +7,11 @@ helpviewer_keywords:
 - expressions [C++], constant
 ms.assetid: b07245a5-4c21-4589-b503-e6ffd631996f
 ms.openlocfilehash: 97059066adadc3a7897cbd2c4c747e2a673e7201
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154674"
 ---
 # <a name="c-constant-expressions"></a>C++ 상수 식
 
@@ -35,7 +35,7 @@ C++에서는 다음 선언에 대해 상수 식(상수로 계산되는 식)이 �
 
 - 상수 식을 사용하여 초기화되며 const로 선언된 값
 
-- **sizeof** 식
+- **sizeof** expressions
 
 비정수 상수는 명시적이거나 암시적으로 상수 식에 사용할 수 있는 정수 계열 형식으로 변환해야 합니다. 따라서 다음 코드를 사용할 수 있습니다.
 

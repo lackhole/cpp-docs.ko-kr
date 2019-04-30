@@ -38,11 +38,11 @@ helpviewer_keywords:
 - va_copy macro
 ms.assetid: a700dbbd-bfe5-4077-87b6-3a07af74a907
 ms.openlocfilehash: cc0a903f6bc4895f7d2ea6e80990dea94f28c6c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353575"
 ---
 # <a name="vaarg-vacopy-vaend-vastart"></a>va_arg, va_copy, va_end, va_start
 
@@ -94,7 +94,7 @@ void va_start(
 
 ## <a name="remarks"></a>설명
 
-합니다 **va_arg**, **va_copy**를 **va_end**, 및 **va_start** 매크로 함수에 인수에 액세스할 수 있는 간편한 방법을 제공 경우는 함수는 가변 개수의 인수를 사용 합니다. 매크로에는 두 가지 버전이 있습니다. STDARG.H에서 정의되는 매크로는 ISO C99 표준을 준수합니다. VARARGS.H에서 정의되는 매크로는 더 이상 사용되지 않지만 ANSI C89 표준이 적용되기 전에 작성된 이전 버전 코드와의 호환성을 위해 유지됩니다.
+합니다 **va_arg**, **va_copy**를 **va_end**, 및 **va_start** 매크로 함수에 인수에 액세스할 수 있는 간편한 방법을 제공 경우는 함수는 가변 개수의 인수를 사용 합니다. 매크로 중 두 가지 버전이 있습니다. STDARG에 정의 된 매크로입니다. H; 표준 ISO C99 준수 VARARGS에 정의 된 매크로입니다. H 되지 되지만 표준 ANSI C89 되기 전에 작성 된 코드를 사용 하 여 이전 버전과 호환성을 위해 유지 됩니다.
 
 이러한 매크로는 함수가 고정된 수의 필수 인수에 가변 수의 선택적 인수가 붙은 형식을 사용한다고 가정합니다. 필수 인수는 함수에 대한 일반 매개 변수로 선언되며 매개 변수 이름을 통해 액세스할 수 있습니다. 선택적 인수의 경우 STDARG.H(ANSI C89 표준이 적용되기 전에 작성된 코드의 경우 VARARGS.H) 매크로를 통해 액세스합니다. 이 경우 인수 목록의 첫 번째 선택적 인수에 대한 포인터를 설정하고, 목록에서 인수를 검색한 다음 인수 처리가 완료되면 포인터를 다시 설정합니다.
 

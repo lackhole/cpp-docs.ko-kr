@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Platform::ValueType Class
 ms.assetid: 79aa8754-b140-4974-a5b1-be046938a10a
 ms.openlocfilehash: 889cf3a53468491517d37978ca09472756ad9b7e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182953"
 ---
 # <a name="platformvaluetype-class"></a>Platform::ValueType 클래스
 
@@ -60,4 +60,4 @@ platform:: string 값을 나타내는입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)
+[Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)

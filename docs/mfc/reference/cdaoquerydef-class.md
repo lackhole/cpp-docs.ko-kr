@@ -67,11 +67,11 @@ helpviewer_keywords:
 - CDaoQueryDef [MFC], m_pDatabase
 ms.assetid: 9676a4a3-c712-44d4-8c5d-d1cc78288d3a
 ms.openlocfilehash: 08fb2909a4fd2e5bda3dfc63d19224a515c7c699
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57283646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399748"
 ---
 # <a name="cdaoquerydef-class"></a>CDaoQueryDef 클래스
 
@@ -97,7 +97,7 @@ class CDaoQueryDef : public CObject
 |----------|-----------------|
 |[CDaoQueryDef::Append](#append)|저장 된 쿼리로 QueryDefs 컬렉션 데이터베이스의 쿼리 정의 추가합니다.|
 |[CDaoQueryDef::CanUpdate](#canupdate)|쿼리는 데이터베이스를 업데이트할 수 있는 경우 0이 아닌 값을 반환 합니다.|
-|[CDaoQueryDef::Close](#close)|쿼리 정의 개체를 닫습니다. 이 사용 하 여 완료 하면 c + + 개체를 삭제 합니다.|
+|[CDaoQueryDef::Close](#close)|쿼리 정의 개체를 닫습니다. 삭제는 C++ 개체와 완료 합니다.|
 |[CDaoQueryDef::Create](#create)|기본 DAO 쿼리 정의 개체를 만듭니다. 쿼리 정의 사용 하 여 임시 쿼리 또는 호출 `Append` 데이터베이스에 저장 합니다.|
 |[CDaoQueryDef::Execute](#execute)|쿼리 정의 개체로 정의 된 쿼리를 실행 합니다.|
 |[CDaoQueryDef::GetConnect](#getconnect)|쿼리 정의 사용 하 여 연결 된 연결 문자열을 반환 합니다. 연결 문자열에는 데이터 원본을 식별 합니다. (Sql 통과 쿼리의 고, 그렇지 않으면 빈 문자열입니다.)|
@@ -252,7 +252,7 @@ CDaoQueryDef(CDaoDatabase* pDatabase);
 
 쿼리 정의의 특성을 설정 하려면 사용할 수 있습니다 합니다 [SetName](#setname)를 [SetSQL](#setsql)를 [SetConnect](#setconnect)를 [SetODBCTimeout](#setodbctimeout), 및 [SetReturnsRecords](#setreturnsrecords) 멤버 함수입니다.
 
-쿼리 정의 개체를 완료 하면 호출 해당 [닫기](#close) 멤버 함수입니다. 쿼리 정의에 대 한 포인터를 사용 하는 경우 사용 합니다 **삭제** c + + 개체를 제거 하는 연산자입니다.
+쿼리 정의 개체를 완료 하면 호출 해당 [닫기](#close) 멤버 함수입니다. 쿼리 정의에 대 한 포인터를 사용 하는 경우 사용 합니다 **삭제** 제거할 연산자는 C++ 개체입니다.
 
 ##  <a name="close"></a>  CDaoQueryDef::Close
 
@@ -264,7 +264,7 @@ virtual void Close();
 
 ### <a name="remarks"></a>설명
 
-기본 DAO 개체를 해제 하지만 저장된 된 DAO 쿼리 정의 개체 또는 c + +를 제거 하지 않습니다 쿼리 정의 닫는 `CDaoQueryDef` 개체입니다. 이것이 동일 [CDaoDatabase::DeleteQueryDef](../../mfc/reference/cdaodatabase-class.md#deletequerydef), DAO (없는 경우 임시 쿼리 정의)에서 데이터베이스의 QueryDefs 컬렉션의 쿼리 정의 삭제 하는 합니다.
+쿼리 정의 닫으면 기본 DAO 개체를 해제 하지만 저장된 된 DAO 쿼리 정의 개체를 제거 하지 않습니다 또는 C++ `CDaoQueryDef` 개체입니다. 이것이 동일 [CDaoDatabase::DeleteQueryDef](../../mfc/reference/cdaodatabase-class.md#deletequerydef), DAO (없는 경우 임시 쿼리 정의)에서 데이터베이스의 QueryDefs 컬렉션의 쿼리 정의 삭제 하는 합니다.
 
 ##  <a name="create"></a>  CDaoQueryDef::Create
 
@@ -636,7 +636,7 @@ short GetType();
 
 - `dbQSelect` 선택
 
-- `dbQAction` 동작
+- `dbQAction` 작업
 
 - `dbQCrosstab` 크로스탭
 

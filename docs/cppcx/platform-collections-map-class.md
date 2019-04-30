@@ -16,11 +16,11 @@ helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
 ms.openlocfilehash: ce50290217c7c06e26f26fc50564d3e37c873157
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161760"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections::Map 클래스
 
@@ -63,7 +63,7 @@ ref class Map sealed;
 
 - public enum 클래스
 
-Map은 기본적으로 [std::map](../standard-library/map-class.md)에 대한 래퍼입니다. 구체적인 c + + 구현 된 [Windows::Foundation::Collections::IMap < Windows::Foundation::Collections::IKeyValuePair\<K, V >>](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) 하 고 [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) Windows 런타임 인터페이스를 공용 전반에서 전달 되는 형식입니다. 공용 반환 값 또는 매개 변수에서 `Platform::Collections::Map` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. 매개 변수 또는 반환 값의 형식을 변경 하 여 오류를 해결할 수 있습니다 [Windows::Foundation::Collections::IMap\<K, V >](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)합니다.
+Map은 기본적으로 [std::map](../standard-library/map-class.md)에 대한 래퍼입니다. 것이 C++ 의 구체적인 구현을 합니다 [Windows::Foundation::Collections::IMap < Windows::Foundation::Collections::IKeyValuePair\<K, V >>](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) 하 고 [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_)공용 전반에서 전달 되는 Windows 런타임 인터페이스입니다. 공용 반환 값 또는 매개 변수에서 `Platform::Collections::Map` 형식을 사용하려고 하면 컴파일러 오류 C3986이 발생합니다. 매개 변수 또는 반환 값의 형식을 변경 하 여 오류를 해결할 수 있습니다 [Windows::Foundation::Collections::IMap\<K, V >](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)합니다.
 
 자세한 내용은 [컬렉션](../cppcx/collections-c-cx.md)합니다.
 

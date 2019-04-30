@@ -15,11 +15,11 @@ helpviewer_keywords:
 - .lib files
 ms.assetid: dc5d2b1c-2487-41fa-aa71-ad1e0647958b
 ms.openlocfilehash: 02f719b3101b04ad6b219bf882a50a994061af0c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62293643"
 ---
 # <a name="lib-files-as-linker-input"></a>링커 입력 파일로 사용하는 .Lib 파일
 
@@ -29,7 +29,7 @@ ms.locfileid: "57822615"
 
 ## <a name="to-add-lib-files-as-linker-input-in-the-development-environment"></a>개발 환경에서 링커 입력 파일로.lib 파일을 추가 하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 선택 된 **입력** 속성 페이지에는 **링커** 폴더.
 

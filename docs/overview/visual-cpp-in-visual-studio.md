@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 6430d57ddc8718c419076d2da1008e21efdb9b13
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.openlocfilehash: d8826c92077ac374b67a7294fe040d6fe8dea927
+ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58898715"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60124748"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio의 C++
 
@@ -29,7 +29,7 @@ ms.locfileid: "58898715"
 [Visual Studio의 새로운 C++ 기능](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 Visual Studio의 새로운 기능을 알아봅니다.
 
-[Visual Studio 2003~2015의 새로운 C++ 기능](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
+[Visual Studio 2003 - 2015의 새로운 C++ 기능](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
 2003 - 2015에서 Visual Studio의 각 버전용 C++의 새로운 기능에 대해 알아봅니다.
 
 [Visual Studio의 C++ 규칙 향상](cpp-conformance-improvements.md)<br/>
@@ -43,7 +43,7 @@ MSVC C++ 컴파일러의 기능별 규칙 상태 목록입니다.
 
 ## <a name="install-visual-studio-and-upgrade-from-earlier-versions"></a>Visual Studio 설치 및 이전 버전에서 업그레이드
 
-[Visual Studio에 C++ 지원 설치](../build/vscpp-step-0-installation.md)<br/>
+[Visual Studio에서 C++ 지원 설치](../build/vscpp-step-0-installation.md)<br/>
 Visual Studio 2015 또는 Visual Studio 2017을 다운로드하고 Visual C++ 도구 집합을 설치합니다.
 
 [Visual C++ 포팅 및 업그레이드 가이드](../porting/visual-cpp-porting-and-upgrading-guide.md)<br/>
@@ -57,7 +57,7 @@ C++ 코드를 Windows 10 및 유니버설 Windows 플랫폼으로 포팅하는 �
 
 ## <a name="learn-c"></a>C++ 알아보기
 
-[C++ 시작하기](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 코드를 빠르고 안전하게 작성하고 C 스타일 프로그래밍에서 흔히 저지르는 많은 실수를 피할 수 있도록 C++11 및 C++14를 기반으로 C++ 프로그래밍 방법에 대해 자세히 알아봅니다.
 
 [표준 C++](http://isocpp.org/)<br/>
@@ -71,16 +71,16 @@ C++를 배우기 시작합니다.
 
 ## <a name="c-development-tools"></a>C++ 개발 도구
 
-[Visual Studio의 C++ 개발 개요](overview-of-cpp-development.md)<br/>
+[Visual Studio에서 C++ 개발 개요](overview-of-cpp-development.md)<br/>
 Visual Studio IDE를 사용하여 프로젝트 만들기, 코드 편집, 라이브러리에 연결, 컴파일, 디버그, 단위 테스트 만들기, 정적 분석 수행, 배포 등의 작업을 수행하는 방법입니다.
 
 [프로젝트 및 빌드 시스템](../build/projects-and-build-systems-cpp.md)<br/>
 MSVC 컴파일러 및 링커 옵션을 사용하여 Visual Studio C++ 프로젝트, CMake 프로젝트 및 기타 프로젝트를 만들고 구성하는 방법입니다.
 
-[C++ 코드 작성 및 리팩터](../ide/writing-and-refactoring-code-cpp.md)<br/>
+[C++ 코드 작성 및 리팩터링](../ide/writing-and-refactoring-code-cpp.md)<br/>
 C++ 편집기의 생산성 기능을 사용하여 코드를 리팩터링, 탐색 및 작성하는 방법입니다.
 
-[네이티브 코드 디버깅](/visualstudio/debugger/debugging-native-code)<br/>
+[네이티브 코드 디버그](/visualstudio/debugger/debugging-native-code)<br/>
 C++ 프로젝트에서 Visual Studio 디버거를 사용합니다.
 
 [C/C++용 코드 분석 개요](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)<br/>
@@ -109,7 +109,7 @@ Win32, ATL 및 MFC를 사용하여 Windows 데스크톱 DLL을 만드는 방법�
 [병렬 프로그래밍](../parallel/parallel-programming-in-visual-cpp.md)<br/>
 병렬 패턴 라이브러리, C++ AMP, OpenMP 및 Windows에서의 다중 스레딩과 관련된 기타 기능을 사용하는 방법에 대해 알아봅니다.
 
-[최선의 보안 구현 방법](../security/security-best-practices-for-cpp.md)<br/>
+[보안 모범 사례](../security/security-best-practices-for-cpp.md)<br/>
 악의적 코드나 무단 사용으로부터 애플리케이션을 보호하는 방법에 대해 알아봅니다.
 
 [클라우드 및 웹 프로그래밍](../cloud/cloud-and-web-programming-in-visual-cpp.md)<br/>
@@ -125,7 +125,7 @@ ODBC 및 기타 데이터베이스 액세스 기술을 사용하여 데이터베
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)
 
-[C/C++ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)
+[ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)
 
 [C 언어 참조](../c-language/c-language-reference.md)
 
@@ -168,8 +168,8 @@ CLR(공용 언어 런타임)에 대한 프로그래밍입니다.
 [Visual C++ 도구 집합의 문제를 보고하는 방법](how-to-report-a-problem-with-the-visual-cpp-toolset.md)<br/>
 Visual C++ 도구 집합(컴파일러, 링커 및 기타 도구)과 대조하여 효과적인 오류 보고서를 만드는 방법과 보고서를 전송하는 방법을 알아봅니다.
 
-[Visual C++ 팀 블로그](http://blogs.msdn.com/b/vcblog/)<br/>
-새로운 기능과 [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)]의 개발자가 제공하는 최신 정보를 더 자세히 알아봅니다.
+Microsoft[C++ Team Blog](https://devblogs.microsoft.com/cppblog/)(C++ 팀 블로그)<br/>
+새로운 기능과 Visual Studio의 C++ 도구 개발자가 제공하는 최신 정보를 자세히 알아봅니다.
 
 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)<br/>
 Visual Studio에 대한 도움말을 보고 버그를 제출하고 제안을 하는 방법에 대해 알아봅니다.

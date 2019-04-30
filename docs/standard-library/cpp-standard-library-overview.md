@@ -8,11 +8,11 @@ helpviewer_keywords:
 - C++ Standard Library, headers
 ms.assetid: 7acb83a4-da73-4ad3-bc30-a71289db7f60
 ms.openlocfilehash: 57abafbcbd899d3eca7369205afba4ca262ad2c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62210803"
 ---
 # <a name="c-standard-library-overview"></a>C++ 표준 라이브러리 개요
 
@@ -44,7 +44,7 @@ C++ 라이브러리 헤더에는 광범위한 두 개의 하위 영역이 있습
 
 - [안전한 라이브러리: C++ 표준 라이브러리](../standard-library/safe-libraries-cpp-standard-library.md)
 
-- [확인된 반복기](../standard-library/checked-iterators.md)
+- [Checked Iterators](../standard-library/checked-iterators.md)
 
 - [Debug Iterator Support](../standard-library/debug-iterator-support.md)
 

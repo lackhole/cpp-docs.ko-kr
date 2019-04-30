@@ -32,11 +32,11 @@ helpviewer_keywords:
 - DLL modules [C++], ATL
 ms.assetid: f5face2c-8fd8-40e6-9ec3-54ab74701769
 ms.openlocfilehash: 6d95460902c44ff058a4c7b90c810ab44489d952
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62259276"
 ---
 # <a name="ccommodule-class"></a>CComModule 클래스
 
@@ -58,9 +58,9 @@ class CComModule : public _ATL_MODULE
 |이름|설명|
 |----------|-----------------|
 |[CComModule::GetClassObject](#getclassobject)|지정 된 CLSID의 개체를 만듭니다. Dll에 해당 합니다.|
-|[CComModule::GetModuleInstance](#getmoduleinstance)|`m_hInst`을 반환합니다.|
-|[CComModule::GetResourceInstance](#getresourceinstance)|`m_hInstResource`을 반환합니다.|
-|[CComModule::GetTypeLibInstance](#gettypelibinstance)|`m_hInstTypeLib`을 반환합니다.|
+|[CComModule::GetModuleInstance](#getmoduleinstance)|`m_hInst`를 반환합니다.|
+|[CComModule::GetResourceInstance](#getresourceinstance)|`m_hInstResource`를 반환합니다.|
+|[CComModule::GetTypeLibInstance](#gettypelibinstance)|`m_hInstTypeLib`를 반환합니다.|
 |[CComModule::Init](#init)|데이터 멤버를 초기화합니다.|
 |[CComModule::RegisterClassHelper](#registerclasshelper)|시스템 레지스트리에 개체의 표준 클래스 등록을 입력합니다.|
 |[CComModule::RegisterClassObjects](#registerclassobjects)|클래스 개체를 등록합니다. 에 대 한 Exe에만 해당 합니다.|

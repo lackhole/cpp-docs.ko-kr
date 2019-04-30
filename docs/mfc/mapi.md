@@ -11,11 +11,11 @@ helpviewer_keywords:
 - enabling applications for mail [MFC]
 ms.assetid: 193449f7-b131-4ab0-9301-8d4f6cd1e7c4
 ms.openlocfilehash: a5f60e1ba8c2b68ddca312859694f532e38da965
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62365164"
 ---
 # <a name="mapi"></a>MAPI
 
@@ -27,7 +27,7 @@ MAPI는 메일 지원 및 메일 인식 응용 프로그램이 메일 메시지�
 
 MAPI에 대 한 자세한 내용은 Windows sdk 설명서의 Win32 메시징 (MAPI) 문서를 참조 하세요.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [MFC의 MAPI 지원](../mfc/mapi-support-in-mfc.md)
 

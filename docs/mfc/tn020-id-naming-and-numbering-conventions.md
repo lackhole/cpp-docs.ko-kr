@@ -9,11 +9,11 @@ helpviewer_keywords:
 - resource identifiers
 ms.assetid: aecbd2cf-68b3-47f6-ae21-b1f507917245
 ms.openlocfilehash: f1cd44ed448cc4c0fc60d490a613f0ad91071376
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306066"
 ---
 # <a name="tn020-id-naming-and-numbering-conventions"></a>TN020: ID 명명 및 번호 매기기 규칙
 
@@ -21,13 +21,13 @@ ms.locfileid: "57267396"
 
 다음 요구 사항을 충족 하도록 MFC ID 명명 및 번호 매기기 규칙은:
 
-- MFC 라이브러리와 Visual c + + 리소스 편집기에서 지원 되는 MFC 응용 프로그램에서 사용 되는 일관 된 ID 명명 표준을 제공 합니다. 이렇게 하면 형식 및 해당 ID에서 리소스의 원본 해석 때문에 프로그래머가 쉽게
+- MFC 라이브러리 및 시각적 개체에서 지원 되는 MFC 응용 프로그램에서 사용 하는 일관 된 ID 명명 표준 C++ 리소스 편집기입니다. 이렇게 하면 형식 및 해당 ID에서 리소스의 원본 해석 때문에 프로그래머가 쉽게
 
 - 특정 유형의 Id 간의 강력한-1-1 관계를 강조 합니다.
 
 - Windows Id 명명에 대 한 이미 널리 사용 되는 표준을 준수 합니다.
 
-- ID 번호 공간을 분할 합니다. 프로그래머, MFC, Windows, 및 Visual c + + 편집 리소스 ID 번호를 할당할 수 있습니다. 적절 한 분할 ID 번호가 중복 되지 않도록 하는 데 도움이 됩니다.
+- ID 번호 공간을 분할 합니다. 프로그래머, MFC, Windows, 및 시각적 개체에서 ID 번호를 할당할 수 있습니다 C++-도구에서 편집한 리소스입니다. 적절 한 분할 ID 번호가 중복 되지 않도록 하는 데 도움이 됩니다.
 
 ## <a name="the-id-prefix-naming-convention"></a>ID 접두사 명명 규칙
 

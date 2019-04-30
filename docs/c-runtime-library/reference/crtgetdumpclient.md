@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CrtGetDumpClient function
 ms.assetid: 9051867f-341b-493b-b53d-45d2b454a3ad
 ms.openlocfilehash: e4700bd936bec97014508c4a971f6e6c278c6a11
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339925"
 ---
 # <a name="crtgetdumpclient"></a>_CrtGetDumpClient
 
@@ -61,7 +61,7 @@ _CRT_DUMP_CLIENT _CrtGetDumpClient( void );
 
 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)의 디버그 버전만 해당됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [디버그 루틴](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtReportBlockType](crtreportblocktype.md)<br/>

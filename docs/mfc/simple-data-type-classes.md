@@ -9,15 +9,15 @@ helpviewer_keywords:
 - simple data type classes [MFC]
 ms.assetid: 0d591d68-0a33-49e9-8a6d-90c90de5c16a
 ms.openlocfilehash: 4e415805301d7d12bd418a3b55509a7732851492
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307420"
 ---
 # <a name="simple-data-type-classes"></a>단순 데이터 형식 클래스
 
-다음 클래스는 그리기 좌표, 문자열, 시간 및 날짜 정보를 캡슐화하여 C++ 구문을 편리하게 사용할 수 있게 해줍니다. 이러한 개체는 클래스 라이브러리에서 Windows 클래스의 멤버 함수에 대한 매개 변수로 광범위하게 사용됩니다. 때문에 `CPoint`, `CSize`, 및 `CRect` 에 해당 하는 **지점**를 **크기**, 및 **RECT** 각각 Windows SDK의 구조 이러한 C 언어 구조체에 사용할 때마다 이러한 c + + 클래스의 개체를 사용할 수 있습니다. 클래스는 해당 멤버 함수를 통해 유용한 인터페이스를 제공합니다. `CStringT`는 매우 유연한 동적 문자열을 제공합니다. `CTime`를 `COleDateTime`, `CTimeSpan`, 및 `COleTimeSpan` 날짜 및 시간 값을 나타냅니다. 이러한 클래스에 대 한 자세한 내용은 문서 참조 [날짜 및 시간](../atl-mfc-shared/date-and-time.md)합니다.
+다음 클래스는 그리기 좌표, 문자열, 시간 및 날짜 정보를 캡슐화하여 C++ 구문을 편리하게 사용할 수 있게 해줍니다. 이러한 개체는 클래스 라이브러리에서 Windows 클래스의 멤버 함수에 대한 매개 변수로 광범위하게 사용됩니다. 때문에 `CPoint`, `CSize`, 및 `CRect` 에 해당 하는 **지점**를 **크기**, 및 **RECT** 각각 Windows SDK의 구조 이러한 개체를 사용할 수 있습니다 C++ 클래스를 이러한 C 언어 구조체를 사용할 수 있습니다. 클래스는 해당 멤버 함수를 통해 유용한 인터페이스를 제공합니다. `CStringT`는 매우 유연한 동적 문자열을 제공합니다. `CTime`를 `COleDateTime`, `CTimeSpan`, 및 `COleTimeSpan` 날짜 및 시간 값을 나타냅니다. 이러한 클래스에 대 한 자세한 내용은 문서 참조 [날짜 및 시간](../atl-mfc-shared/date-and-time.md)합니다.
 
 로 시작 하는 클래스를 "`COle`"의 OLE에서 제공 하는 데이터 형식 캡슐화 됩니다. 이러한 데이터 형식은 다른 OLE 기능이 사용되는지 여부에 관계없이 Windows 프로그램에서 사용할 수 있습니다.
 

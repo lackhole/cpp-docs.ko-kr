@@ -9,17 +9,17 @@ helpviewer_keywords:
 - serialization [MFC], bypassing
 ms.assetid: fb596a18-4522-47e0-96e0-192732d24c12
 ms.openlocfilehash: 5c7dec140635b6d83bdae936d1bb0cef144f825b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308215"
 ---
 # <a name="serialization-in-mfc"></a>MFC의 Serialization
 
 이 문서는 프로그램의 실행에 MFC Microsoft Foundation Class 라이브러리 () 개체 사이 지속할 수 있도록 제공 하는 serialization 메커니즘을 설명 합니다.
 
-Serialization은 쓰거나 읽을 하거나 개체 디스크 파일과 같은 영구 저장 매체에서의 프로세스입니다. Serialization 중 또는 프로그램으로 실행 된 후 구조화 된 데이터 (예: c + + 클래스 또는 구조체)의 상태를 유지 하기 위해 필요한 상황에 적합 합니다. MFC에서 제공 된 serialization 개체를 사용 하 여이 사용자의 파일 작업을 수동으로 수행 해야 하므로 표준 및 일관 된 방식으로 발생할 수 있습니다.
+Serialization은 쓰거나 읽을 하거나 개체 디스크 파일과 같은 영구 저장 매체에서의 프로세스입니다. Serialization은 구조화 된 데이터의 상태를 유지 하기 위해 필요한 경우에 이상적 (같은 C++ 클래스 또는 구조체) 중 이나 후 프로그램을 실행 합니다. MFC에서 제공 된 serialization 개체를 사용 하 여이 사용자의 파일 작업을 수동으로 수행 해야 하므로 표준 및 일관 된 방식으로 발생할 수 있습니다.
 
 MFC 클래스의 serialization에 대 한 기본 제공 지원을 제공 `CObject`합니다. 모든 클래스에서 파생 되는 따라서 `CObject` 활용 `CObject`의 serialization 프로토콜입니다.
 
@@ -36,11 +36,11 @@ A `CArchive` 오버 로드 된 삽입을 사용 하 여 개체 (**<\<**) 및 추
 
 다음 문서를 직렬화 하는 데 필요한 두 가지 주요 작업을 설명 합니다.
 
-- [Serialization: Serializable 클래스 만들기](../mfc/serialization-making-a-serializable-class.md)
+- [Serialization: 직렬화할 수 있는 클래스 만들기](../mfc/serialization-making-a-serializable-class.md)
 
-- [Serialization: 개체를 직렬화 하는 작업](../mfc/serialization-serializing-an-object.md)
+- [Serialization: 개체 Serialize](../mfc/serialization-serializing-an-object.md)
 
-문서 [직렬화 합니다. Serialization vs입니다. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md) 경우 직렬화는 데이터베이스 응용 프로그램에 적절 한 입/출력 기술에 설명 합니다.
+문서 [직렬화 합니다. Serialization 및 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md) 경우 직렬화는 데이터베이스 응용 프로그램에 적절 한 입/출력 기술에 설명 합니다.
 
 ## <a name="see-also"></a>참고자료
 

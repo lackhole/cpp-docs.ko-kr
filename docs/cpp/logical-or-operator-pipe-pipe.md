@@ -10,17 +10,17 @@ helpviewer_keywords:
 - logical OR operator
 ms.assetid: 31837c99-2655-4bf3-8ded-f13b7a9dc533
 ms.openlocfilehash: 5db1af870644d1552aeac813edce0985a31d95b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368684"
 ---
 # <a name="logical-or-operator-"></a>논리 OR 연산자: | |
 
 ## <a name="syntax"></a>구문
 
-> *또는-논리식* **||** *논리-및-식*
+> *logical-or-expression* **||** *logical-and-expression*
 
 ## <a name="remarks"></a>설명
 
@@ -64,6 +64,6 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[C + + 기본 제공 연산자 우선순위 및 결합성](cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++기본 제공 연산자 우선순위 및 결합성](cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [C 논리 연산자](../c-language/c-logical-operators.md)

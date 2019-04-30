@@ -9,18 +9,18 @@ helpviewer_keywords:
 - fenv_access pragma
 ms.assetid: 2ccea292-0ae4-42ce-9c67-cc189299857b
 ms.openlocfilehash: 507e78dd9f9571cc9ce44d7fd91e78b1c955ba73
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389257"
 ---
 # <a name="fenvaccess"></a>fenv_access
 사용 하지 않도록 설정 (**온**)을 선택 하거나 (**해제**) 부동 소수점 환경을 변경할 수 있는 최적화 플래그 테스트 및 모드 변경 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **#pragma fenv_access (** {0} **온** | **해제** } **)**
+> **#pragma fenv_access (** { **on** | **off** } **)**
 
 ## <a name="remarks"></a>설명
 

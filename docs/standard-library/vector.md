@@ -7,11 +7,11 @@ helpviewer_keywords:
 - vector header
 ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f
 ms.openlocfilehash: 348b5c53ecd3fb7900d03fed7c1209a2c94eeb4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410859"
 ---
 # <a name="ltvectorgt"></a>&lt;vector&gt;
 
@@ -77,7 +77,7 @@ void swap (
 *Type*<br/>
 벡터에 저장되는 데이터 형식에 대한 템플릿 매개 변수입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 메모리 할당 및 할당 취소를 수행하는 저장된 할당자 개체에 대한 템플릿 매개 변수입니다.
 
 *left*<br/>

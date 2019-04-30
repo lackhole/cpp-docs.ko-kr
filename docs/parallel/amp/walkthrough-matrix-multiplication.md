@@ -3,21 +3,21 @@ title: '연습: 행렬 곱'
 ms.date: 11/19/2018
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
 ms.openlocfilehash: 597ba0f47c7b081f62c82bf8e1ca01c286d35140
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62237294"
 ---
 # <a name="walkthrough-matrix-multiplication"></a>연습: 행렬 곱
 
-이 단계별 연습에는 행렬 곱셈의 실행을 가속화 하 c + + AMP를 사용 하는 방법을 보여 줍니다. 바둑판식 배열을 사용 하 여 여러 개 있는 바둑판식 배열 없이 한 두 가지 알고리즘 표시 됩니다.
+이 단계별 연습에 사용 하는 방법을 보여 줍니다. C++ AMP가 행렬 곱셈의 실행을 가속화 합니다. 바둑판식 배열을 사용 하 여 여러 개 있는 바둑판식 배열 없이 한 두 가지 알고리즘 표시 됩니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
 시작하기 전에
 
-- 읽기 [c + + AMP 개요](../../parallel/amp/cpp-amp-overview.md)합니다.
+- 읽기 [ C++ AMP 개요](../../parallel/amp/cpp-amp-overview.md)합니다.
 
 - 읽기 [타일을 사용 하 여](../../parallel/amp/using-tiles.md)입니다.
 
@@ -27,7 +27,7 @@ ms.locfileid: "57300975"
 
 1. Visual Studio의 메뉴 모음에서 선택 **파일** > **새로 만들기** > **프로젝트**합니다.
 
-1. 아래 **설치 됨** 템플릿 창에서 선택 **Visual c + +** 합니다.
+1. 아래 **설치 됨** 템플릿 창에서 선택 **시각적 C++** 합니다.
 
 1. 선택 **빈 프로젝트**를 입력 *MatrixMultiply* 에 **이름** 상자를 선택한 후는 **확인** 단추입니다.
 
@@ -35,7 +35,7 @@ ms.locfileid: "57300975"
 
 1. **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 **소스 파일**를 선택한 후 **추가** > **새 항목**합니다.
 
-1. 에 **새 항목 추가** 대화 상자에서 **c + + 파일 (.cpp)** 를 입력 *MatrixMultiply.cpp* 에 **이름** 상자를 열고 다음을  **추가** 단추입니다.
+1. 에 **새 항목 추가** 대화 상자에서  **C++ 파일 (.cpp)** 를 입력 *MatrixMultiply.cpp* 에 **이름** 상자를 선택한 후를 **추가** 단추입니다.
 
 ## <a name="multiplication-without-tiling"></a>바둑판식 배열 없이 곱하기
 
@@ -49,7 +49,7 @@ ms.locfileid: "57300975"
 
 ![3&#45;에서&#45;3 제품 매트릭스](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;에서&#45;의 3 개 제품 매트릭스")
 
-### <a name="to-multiply-without-using-c-amp"></a>C + + AMP를 사용 하지 않고 곱할
+### <a name="to-multiply-without-using-c-amp"></a>사용 하지 않고 곱할 C++ AMP
 
 1. MatrixMultiply.cpp 열고 기존 코드를 대체 하려면 다음 코드를 사용 합니다.
 
@@ -87,7 +87,7 @@ void main() {
 
 1. 선택할 **Enter** 응용 프로그램을 종료 합니다.
 
-### <a name="to-multiply-by-using-c-amp"></a>C + + AMP를 사용 하 여 곱할
+### <a name="to-multiply-by-using-c-amp"></a>사용 하 여 곱할 C++ AMP
 
 1. MatrixMultiply.cpp를 추가 하기 전에 다음 코드는 `main` 메서드.
 
@@ -296,4 +296,4 @@ void main() {
 ## <a name="see-also"></a>참고자료
 
 [C++ AMP(C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
-[연습: C + + AMP 응용 프로그램 디버깅](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)
+[연습: C++ AMP 애플리케이션 디버깅](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)

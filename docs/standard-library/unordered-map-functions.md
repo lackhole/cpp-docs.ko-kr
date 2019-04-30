@@ -9,11 +9,11 @@ ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
 helpviewer_keywords:
 - std::swap (unordered_map/multimap)
 ms.openlocfilehash: ae00a9204e2bd5dc5220f3b2755e16b895193df3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62158549"
 ---
 # <a name="ltunorderedmapgt-functions"></a>&lt;unordered_map&gt; 함수
 
@@ -46,7 +46,7 @@ void swap(
 *pred*<br/>
 같음 비교 함수 개체 형식입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *left*<br/>
@@ -139,7 +139,7 @@ void swap(
 *pred*<br/>
 같음 비교 함수 개체 형식입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *left*<br/>

@@ -1,19 +1,19 @@
 ---
-title: '방법: 이동 생성자 및 이동 할당 연산자 (c + +)를 정의 합니다.'
+title: '방법: 정의 이동 생성자 및 이동 할당 연산자 (C++)'
 ms.date: 03/05/2018
 helpviewer_keywords:
 - move constructor [C++]
 ms.assetid: e75efe0e-4b74-47a9-96ed-4e83cfc4378d
 ms.openlocfilehash: b601c53c01940fe110036d569e0be9d43a123a91
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504522"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345021"
 ---
 # <a name="move-constructors-and-move-assignment-operators-c"></a>이동 생성자 및 이동 할당 연산자(C++)
 
-이 항목에서는 작성 하는 방법에 설명 합니다는 *이동 생성자* 와 c + + 클래스에 대 한 이동 할당 연산자입니다. 이동 생성자는 rvalue lvalue로 복사 하지 않고 이동 될 개체를 소유한 리소스 수 있습니다. 이동 의미 체계에 대 한 자세한 내용은 참조 하세요. [Rvalue 참조 선언 자: & &](../cpp/rvalue-reference-declarator-amp-amp.md)합니다.
+이 항목에서는 작성 하는 방법에 설명 합니다는 *이동 생성자* 와 이동 할당 연산자에 대 한를 C++ 클래스. 이동 생성자는 rvalue lvalue로 복사 하지 않고 이동 될 개체를 소유한 리소스 수 있습니다. 이동 의미 체계에 대 한 자세한 내용은 참조 하세요. [Rvalue 참조 선언 자: & &](../cpp/rvalue-reference-declarator-amp-amp.md)합니다.
 
 이 항목은 메모리 버퍼를 관리하는 다음 C++클래스 `MemoryBlock`을 기반으로 합니다.
 
@@ -312,4 +312,4 @@ MemoryBlock(MemoryBlock&& other)
 ## <a name="see-also"></a>참고자료
 
 [Rvalue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
-[std:: move](../standard-library/utility-functions.md#move)
+[std::move](../standard-library/utility-functions.md#move)

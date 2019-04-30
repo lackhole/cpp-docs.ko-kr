@@ -8,11 +8,11 @@ helpviewer_keywords:
 - -homeparams compiler option [C++]
 ms.assetid: 51067de4-24f7-436b-b8d9-bc867a7d53aa
 ms.openlocfilehash: a1f9269c7deae6c9ae2e4f198006ad09dd37abc3
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57820665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291420"
 ---
 # <a name="homeparams-copy-register-parameters-to-stack"></a>/homeparams(스택에 레지스터 매개 변수 복사)
 
@@ -34,9 +34,9 @@ X64 호출 규칙에는 레지스터에 전달 된 매개 변수에 대해서도
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 엽니다는 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. 엽니다는 **구성 속성** > **C /C++** > **명령줄** 속성 페이지.
 
 1. 컴파일러 옵션을 입력 합니다 **추가 옵션** 상자입니다.
 

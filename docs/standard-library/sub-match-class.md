@@ -21,11 +21,11 @@ helpviewer_keywords:
 - std::sub_match [C++], value_type
 ms.assetid: 804e2b9e-d16a-4c4c-ac60-024e0b2dd0e8
 ms.openlocfilehash: e0edfbc69d6cba6ee352a34406860e4c999dc3a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412217"
 ---
 # <a name="submatch-class"></a>sub_match 클래스
 
@@ -50,7 +50,7 @@ class sub_match
 
 캡처 그룹이 개체의 데이터 멤버와 일치하지 않는 경우 `matched` 는 false를 보유하고 두 개의 반복기 `first` 와 `second` (기본 `std::pair`에서 상속됨)가 동일합니다. 캡처 그룹이 일치하는 경우 `matched` 는 true를 보유하고, 반복기 `first` 는 캡처 그룹과 일치하는 대상 시퀀스의 첫 번째 문자를 가리키며, 반복기 `second` 는 캡처 그룹과 일치하는 대상 시퀀스의 마지막 문자를 지난 한 위치를 가리킵니다. 멤버와 길이가 0인 일치의 경우 `matched` 는 true를 보유하고, 두 개의 반복기가 동일하며, 둘 다 일치 항목의 위치를 가리킵니다.
 
-길이가 0인 일치는 캡처 그룹이 어설션으로만 구성되거나 0 반복을 허용하는 반복으로 구성된 경우에 발생할 수 있습니다. 예:
+길이가 0인 일치는 캡처 그룹이 어설션으로만 구성되거나 0 반복을 허용하는 반복으로 구성된 경우에 발생할 수 있습니다. 예를 들어:
 
 "^"은 대상 시퀀스 "a"와 일치합니다. 즉, 캡처 그룹 0에 해당하는 `sub_match` 개체는 둘 다 시퀀스의 첫 번째 문자를 가리키는 반복기를 보유합니다.
 
@@ -70,14 +70,14 @@ class sub_match
 |-|-|
 |[compare](#compare)|시퀀스에 대해 부분 일치를 비교합니다.|
 |[length](#length)|부분 일치의 길이를 반환합니다.|
-|[일치](#matched)|일치에 성공했는지를 나타냅니다.|
+|[matched](#matched)|일치에 성공했는지를 나타냅니다.|
 |[str](#str)|부분 일치를 문자열로 변환합니다.|
 
 ### <a name="operators"></a>연산자
 
 |연산자|설명|
 |-|-|
-|[operator basic_string < value_type >](#op_basic_string_lt_value_type_gt)|문자열에 부분 일치를 캐스팅합니다.|
+|[operator basic_string<value_type>](#op_basic_string_lt_value_type_gt)|문자열에 부분 일치를 캐스팅합니다.|
 
 ## <a name="example"></a>예제
 

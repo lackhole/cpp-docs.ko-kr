@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3797
 ms.assetid: ab27ff34-8c1d-4297-b004-9e39bd3a4f25
 ms.openlocfilehash: 76206cdffce3f551ff472cbd83df486eb41ae80b
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59776174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400138"
 ---
 # <a name="compiler-error-c3797"></a>컴파일러 오류 C3797
 

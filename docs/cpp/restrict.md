@@ -8,11 +8,11 @@ helpviewer_keywords:
 - restrict __declspec keyword
 ms.assetid: f39cf632-68d8-4362-a497-2d4c15693689
 ms.openlocfilehash: 40c1c05ca72f639829f2d3658497b0e9f3199640
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403375"
 ---
 # <a name="restrict"></a>restrict
 
@@ -34,7 +34,7 @@ ms.locfileid: "50431748"
 
 함수에는 앨리어싱에 적용 되는 다른 주석을 참조 하세요 [__declspec(noalias)](../cpp/noalias.md)합니다.
 
-에 대 한 자세한 합니다 **제한** c + + AMP의 일부인 키워드 참조 [(c + + AMP) 제한](../cpp/restrict-cpp-amp.md)합니다.
+에 대 한 자세한 합니다 **제한할** 키워드의 일부인 C++ AMP 참조 [제한 (C++ AMP)](../cpp/restrict-cpp-amp.md).
 
 ## <a name="example"></a>예제
 
@@ -111,8 +111,8 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [__declspec](../cpp/declspec.md)<br/>
 [__declspec(noalias)](../cpp/noalias.md)

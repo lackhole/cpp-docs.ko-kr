@@ -10,11 +10,11 @@ helpviewer_keywords:
 - __asm keyword [C++]
 ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
 ms.openlocfilehash: 6b94bf73e66550d0245ef1f55c17d6676e3b4356
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62167558"
 ---
 # <a name="asm"></a>__asm
 
@@ -27,13 +27,13 @@ ms.locfileid: "50591285"
 
 ## <a name="grammar"></a>문법
 
-*asm 블록이*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__asm** *어셈블리 명령* **;** <sub>최적화</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__asm {** *어셈블리 명령 목록* **}** **;** <sub>최적화</sub>
+*asm-block*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__asm** *assembly-instruction* **;**<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__asm {** *assembly-instruction-list* **}** **;**<sub>opt</sub>
 
-*어셈블리 명령 목록*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*어셈블리 명령* **;** <sub>최적화</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*어셈블리 명령* **;** *어셈블리 명령 목록* **;** <sub>최적화</sub>
+*assembly-instruction-list*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*assembly-instruction* **;**<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*assembly-instruction* **;** *assembly-instruction-list* **;**<sub>opt</sub>
 
 ## <a name="remarks"></a>설명
 
@@ -85,7 +85,7 @@ C 및 C++의 중괄호와 달리 `__asm` 블록을 묶는 중괄호는 변수 �
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[키워드](../../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../../cpp/keywords-cpp.md)<br/>
 [인라인 어셈블러](../../assembler/inline/inline-assembler.md)<br/>

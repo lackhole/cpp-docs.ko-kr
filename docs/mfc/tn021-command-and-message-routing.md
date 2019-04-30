@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Windows messages [MFC], routing
 ms.assetid: b5952c8b-123e-406c-a36d-a6ac7c6df307
 ms.openlocfilehash: ce8aa2013c8f2f351ca1028f0d6103135ba5ecd8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306183"
 ---
 # <a name="tn021-command-and-message-routing"></a>TN021: 명령 및 메시지 라우팅
 
@@ -22,7 +22,7 @@ ms.locfileid: "57294397"
 
 이 참고는 일반 창 메시지 라우팅에 대 한 고급 항목 뿐만 아니라 명령 라우팅 및 디스패치 아키텍처를 설명합니다.
 
-참조 하십시오 Visual c + +에 대 한 일반적인 내용은 여기에 설명 된 아키텍처에서는 특히 구별 Windows 메시지, 컨트롤 알림 및 명령. 이 참고 인쇄 된 문서에 설명 된 문제에 잘 알고 있고만 고급 항목을 다룹니다 가정 합니다.
+시각적 개체를 참조 하십시오 C++ 일반 정보 여기에 설명 된 아키텍처에서 특히 구별 Windows 메시지, 컨트롤 알림 및 명령에 대 한 합니다. 이 참고 인쇄 된 문서에 설명 된 문제에 잘 알고 있고만 고급 항목을 다룹니다 가정 합니다.
 
 ## <a name="command-routing-and-dispatch-mfc-10-functionality-evolves-to-mfc-20-architecture"></a>명령 라우팅 및 디스패치 MFC 1.0 MFC 2.0 하도록 발전 된 기능 아키텍처
 
@@ -38,7 +38,7 @@ MFC 1.0 명령 라우팅의 인터페이스 MDI (다중 문서) 구현에 대 �
 
 ## <a name="command-ids"></a>명령 ID
 
-명령 라우팅 및 바인딩 프로세스의 설명은 Visual c + +를 참조 하십시오. [Technical Note 20](../mfc/tn020-id-naming-and-numbering-conventions.md) ID 명명에 대 한 정보를 포함 합니다.
+시각적 개체를 참조 하세요. C++ 에 대 한 설명은 라우팅 및 바인딩 프로세스 명령입니다. [Technical Note 20](../mfc/tn020-id-naming-and-numbering-conventions.md) ID 명명에 대 한 정보를 포함 합니다.
 
 명령 Id에 대 한 제네릭 접두사 "ID_"를 사용합니다. 명령 Id는 > = 0x8000 합니다. 메시지 줄 또는 상태 표시줄이 표시 됩니다 명령 설명 문자열을 명령 ID와 동일한 Id 사용 하 여 STRINGTABLE 리소스 인지
 
@@ -80,7 +80,7 @@ IDC의 적절 한 명령 ID로 설정 하 고 단추를 사용 하 여 일반적
 
 `CFrameWnd` 또한 현재 메뉴 상태 표시줄 (라고도: 메시지 줄)에서 선택한 항목을 설명 하기 위해 WM_ENTERIDLE 메시지를 처리 합니다.
 
-Visual c + +에서 편집 되는 응용 프로그램의 메뉴 구조 WM_INITMENUPOPUP 시 사용할 수 있는 잠재적인 명령을 나타내는 데 사용 됩니다. ON_UPDATE_COMMAND_UI 처리기 상태 또는 메뉴의 텍스트를 수정 하거나 파일 MRU 목록 또는 OLE 동사 팝업 메뉴와 같은 고급 사용에 대 한 실제로 수정 메뉴 구조 메뉴를 그리기 전에 수 있습니다.
+응용 프로그램의 메뉴 구조, 시각적 개체에서 편집 C++, WM_INITMENUPOPUP 시 사용할 수 있는 잠재적인 명령을 나타내는 데 사용 됩니다. ON_UPDATE_COMMAND_UI 처리기 상태 또는 메뉴의 텍스트를 수정 하거나 파일 MRU 목록 또는 OLE 동사 팝업 메뉴와 같은 고급 사용에 대 한 실제로 수정 메뉴 구조 메뉴를 그리기 전에 수 있습니다.
 
 도구 모음 (및 다른 컨트롤 막대)에 대 한 동일한 종류의 ON_UPDATE_COMMAND_UI 처리 이루어집니다 응용 프로그램의 유휴 루프를 입력 하는 경우. 참조 된 *클래스 라이브러리 참조* 하 고 [Technical Note 31](../mfc/tn031-control-bars.md) 컨트롤 막대에 대 한 자세한 내용은 합니다.
 
@@ -153,7 +153,7 @@ void CMyApp::OnUpdateNewChart(CCmdUI* pCmdUI)
 
 ## <a name="cwnd-issues"></a>CWnd 문제
 
-구현 멤버 함수 **cwnd:: Onchildnotify** 후크 하거나 그렇지 않으면 알림을 받을 메시지, 명령 및 컨트롤을 자식 창 (컨트롤이 라고도 함)에 대 한 강력 하 고 확장 가능한 아키텍처를 제공 합니다. 해당 부모 (또는 "owner")로 이동 하는 알림입니다. 경우 자식 창 (/ 제어) c + + **CWnd** 자체는 가상 함수 개체 **OnChildNotify** 원본 메시지에서 매개 변수를 사용 하 여 먼저 호출 됩니다 (즉,는 **MSG**구조). 자식 창 메시지를 두면,에서는 하거나 (드물게) 부모에 대 한 메시지를 수정 수 있습니다.
+구현 멤버 함수 **cwnd:: Onchildnotify** 후크 하거나 그렇지 않으면 알림을 받을 메시지, 명령 및 컨트롤을 자식 창 (컨트롤이 라고도 함)에 대 한 강력 하 고 확장 가능한 아키텍처를 제공 합니다. 해당 부모 (또는 "owner")로 이동 하는 알림입니다. 경우 자식 창 (/ 제어)는는 C++ **CWnd** 자체는 가상 함수 개체 **OnChildNotify** 원본 메시지에서 매개 변수를 사용 하 여 먼저 호출 됩니다 (즉,을 **메시지**  구조). 자식 창 메시지를 두면,에서는 하거나 (드물게) 부모에 대 한 메시지를 수정 수 있습니다.
 
 기본값 **CWnd** 구현을 다음 메시지를 처리 하 고 사용 하는 **OnChildNotify** 후크 자식 windows (컨트롤) 메시지에서 첫 번째 액세스를 허용 하려면:
 

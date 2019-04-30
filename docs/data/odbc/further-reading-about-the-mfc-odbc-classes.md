@@ -5,11 +5,11 @@ helpviewer_keywords:
 - MFC ODBC classes
 ms.assetid: 155c092b-3577-4cb8-b00e-f1adf4cb2adc
 ms.openlocfilehash: 96286fc7a60a6ab43190dae6262948ac99ca30d6
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395900"
 ---
 # <a name="further-reading-about-the-mfc-odbc-classes"></a>MFC ODBC 클래스에 대한 추가 정보
 
@@ -27,7 +27,7 @@ ms.locfileid: "59035191"
 
 - [MFC: 문서 및 뷰를 이용한 데이터베이스 클래스 사용](../../data/mfc-using-database-classes-with-documents-and-views.md)
 
-- [MFC: 문서 및 뷰 하지 않는 데이터베이스 클래스 사용](../../data/mfc-using-database-classes-without-documents-and-views.md)
+- [MFC: 문서 및 뷰를 이용하지 않는 데이터베이스 클래스 사용](../../data/mfc-using-database-classes-without-documents-and-views.md)
 
 - [ODBC](../../data/odbc/odbc-basics.md)
 
@@ -39,7 +39,7 @@ ms.locfileid: "59035191"
 
 - [레코드 뷰](../../data/record-views-mfc-data-access.md)
 
-- [Serialization: Serialization vs입니다. 입/출력 데이터베이스](../../mfc/serialization-serialization-vs-database-input-output.md)
+- [Serialization: Serialization 및 입/출력 데이터베이스](../../mfc/serialization-serialization-vs-database-input-output.md)
 
 - [스냅숏](../../data/odbc/snapshot.md)
 

@@ -44,11 +44,11 @@ helpviewer_keywords:
 - _wtol function
 ms.assetid: cedfc21c-2d64-4e9c-bd04-bdf60b12db46
 ms.openlocfilehash: 486b6dc3bdfbbaf4b7becadde76768a0bb1c7c00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62347810"
 ---
 # <a name="atol-atoll-wtol-wtoll"></a>atol, _atol_l, _wtol, _wtol_l
 
@@ -95,7 +95,7 @@ long _wtol_l(
 
 합니다 *str* 인수를 **atol** 다음과 같은 형식을 갖습니다.
 
-> [*공백을*] [*sign*] [*자릿수*]]
+> [*whitespace*] [*sign*] [*digits*]]
 
 A *공백* 무시 되는 공백 또는 탭 문자로 구성 됩니다 *로그인* 는 더하기 (+) 또는 빼기 (-) 이며 및 *숫자* 하나 이상의 숫자가 됩니다.
 
@@ -115,7 +115,7 @@ A *공백* 무시 되는 공백 또는 탭 문자로 구성 됩니다 *로그인
 |루틴|필수 헤더|
 |--------------|---------------------|
 |**atol**|\<stdlib.h>|
-|**_atol_l**하십시오 **_wtol**, **_wtol_l**|\<stdlib.h> 및 \<wchar.h>|
+|**_atol_l**, **_wtol**, **_wtol_l**|\<stdlib.h> 및 \<wchar.h>|
 
 ## <a name="example"></a>예제
 

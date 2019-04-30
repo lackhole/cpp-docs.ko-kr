@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::move [C++]
 - std::swap [C++]
 ms.openlocfilehash: 7a061ede19c5c4c181b5fea912b9c6212c583267
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362369"
 ---
 # <a name="ltutilitygt-functions"></a>&lt;utility&gt; 함수
 
@@ -100,7 +100,7 @@ constexpr Type&& forward(typename remove_reference<Type>::type&& Arg) noexcept
 |매개 변수|설명|
 |---------------|-----------------|
 |*Type*|전달 된 값의 형식을 *Arg*의 형식과 다 수 있음 *Arg*합니다. 일반적으로 전달 함수의 템플릿 인수에 의해 결정됩니다.|
-|*arg*|캐스팅할 인수입니다.|
+|*Arg*|캐스팅할 인수입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -276,7 +276,7 @@ constexpr typename remove_reference<Type>::type&& move(Type&& Arg) noexcept;
 |매개 변수|설명|
 |---------------|-----------------|
 |*Type*|전달 된 인수 형식에서 추론 된 형식 *Arg*참조 축소 규칙과 함께 합니다.|
-|*arg*|캐스팅할 인수입니다. 하지만 유형의 *Arg* 는 rvalue 참조로 지정 되 `move` 도 lvalue 참조가 rvalue 참조에 바인딩할 수 있으므로 lvalue 인수를 허용 합니다.|
+|*Arg*|캐스팅할 인수입니다. 하지만 유형의 *Arg* 는 rvalue 참조로 지정 되 `move` 도 lvalue 참조가 rvalue 참조에 바인딩할 수 있으므로 lvalue 인수를 허용 합니다.|
 
 ### <a name="return-value"></a>반환 값
 

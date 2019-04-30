@@ -195,18 +195,17 @@ helpviewer_keywords:
 - CMFCTasksPane [MFC], OnActivateTasksPanePage
 ms.assetid: b456328e-2525-4642-b78b-9edd1a1a7d3f
 ms.openlocfilehash: 137f30262ce01ad82c075302b6e85bf67ae7b9be
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62218672"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane 클래스
 
 더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
-
-  `CMFCTasksPane` 클래스는 클릭할 수 있는 항목(작업) 목록을 구현합니다.
+`CMFCTasksPane` 클래스는 클릭할 수 있는 항목(작업) 목록을 구현합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -327,8 +326,7 @@ class CMFCTasksPane : public CDockablePane
 
 ## <a name="remarks"></a>설명
 
-
-  `CMFCTasksPane` 클래스는 다음 기능을 구현합니다.
+`CMFCTasksPane` 클래스는 다음 기능을 구현합니다.
 
 - 항목을 그룹화할 수 있고 각 항목 그룹에는 연결된 캡션이 포함될 수 있습니다.
 
@@ -340,8 +338,7 @@ class CMFCTasksPane : public CDockablePane
 
 응용 프로그램에서 `CMFCTasksPane` 컨트롤을 사용하려면 다음 단계를 수행합니다.
 
-1. 
-  `CMFCTasksPane` 개체를 주 프레임 창 클래스에 포함합니다.
+1. `CMFCTasksPane` 개체를 주 프레임 창 클래스에 포함합니다.
 
 1. WM_CREATE 메시지를 처리 하는 경우 호출 된 `Create` 메서드. 일반을 사용할 수 있습니다 [CControlBar](../../mfc/reference/ccontrolbar-class.md) 스타일입니다. 자세한 내용은 `CControlBar::Create`을 참조하세요.
 

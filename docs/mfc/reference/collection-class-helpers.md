@@ -11,11 +11,11 @@ helpviewer_keywords:
 - helper functions collection class [MFC]
 ms.assetid: bc3a2368-9edd-4748-9e6a-13cba79517ca
 ms.openlocfilehash: 3992e6c0cf25925e01858016e4bac93d5552fe8b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62373468"
 ---
 # <a name="collection-class-helpers"></a>컬렉션 클래스 도우미
 
@@ -69,7 +69,7 @@ CompareElements(
 
 비교의 결과 반환 하는 기본 구현은  *\*pElement1* 하 고  *\*pElement2*합니다. 응용 프로그램에 적절 한 방식으로 요소를 비교 하는이 함수를 재정의 합니다.
 
-비교 연산자를 정의 하는 c + + 언어 ( `==`) 단순 형식에 대 한 (**char**를 **int**를 **float**등)에 대 한 비교 연산자를 정의 하지 않습니다 하지만 클래스 및 구조체입니다. 사용 하려는 경우 `CompareElements` 사용 하는 컬렉션 클래스 중 하나를 인스턴스화할 때 비교 연산자를 정의 하거나 오버 로드 또는 `CompareElements` 적절 한 값을 반환 하는 버전으로 합니다.
+C++ 비교 연산자를 정의 하는 언어 ( `==`) 단순 형식 (**char**, **int**, **float**등) 되지만 비교를 정의 하지 않습니다 클래스 및 구조에 대 한 연산자입니다. 사용 하려는 경우 `CompareElements` 사용 하는 컬렉션 클래스 중 하나를 인스턴스화할 때 비교 연산자를 정의 하거나 오버 로드 또는 `CompareElements` 적절 한 값을 반환 하는 버전으로 합니다.
 
 ### <a name="requirements"></a>요구 사항
 

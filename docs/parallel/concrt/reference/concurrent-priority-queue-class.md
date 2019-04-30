@@ -16,16 +16,15 @@ helpviewer_keywords:
 - concurrent_priority_queue class
 ms.assetid: 3e740381-0f4e-41fc-8b66-ad0bb55f17a3
 ms.openlocfilehash: 5804675ffdaf6de2e73327103398316566b41627
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160041"
 ---
 # <a name="concurrentpriorityqueue-class"></a>concurrent_priority_queue 클래스
 
-
-  `concurrent_priority_queue` 클래스는 여러 스레드에서 동시에 항목을 푸시 및 팝할 수 있도록 허용하는 컨테이너입니다. 항목은 우선순위에 따라 팝되고, 우선순위는 템플릿 인수로 제공된 함수에 의해 결정됩니다.
+`concurrent_priority_queue` 클래스는 여러 스레드에서 동시에 항목을 푸시 및 팝할 수 있도록 허용하는 컨테이너입니다. 항목은 우선순위에 따라 팝되고, 우선순위는 템플릿 인수로 제공된 함수에 의해 결정됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -151,8 +150,7 @@ concurrent_priority_queue(
 이 개체에 사용할 할당자 클래스입니다.
 
 *_Init_capacity*<br/>
-
-  `concurrent_priority_queue` 개체의 초기 용량입니다.
+`concurrent_priority_queue` 개체의 초기 용량입니다.
 
 *_Begin*<br/>
 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.

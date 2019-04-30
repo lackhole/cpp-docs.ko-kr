@@ -9,15 +9,15 @@ helpviewer_keywords:
 - C++/CX, threading issues
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
 ms.openlocfilehash: c5bce60e564bef490bcfafd6f8559dffe5fd4f1d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404639"
 ---
 # <a name="threading-and-marshaling-ccx"></a>스레딩 및 마샬링(C++/CX)
 
-대부분의 경우에 표준 c + + 개체와 같은 Windows 런타임 클래스의 인스턴스는 모든 스레드에서 액세스할 수 있습니다. 이러한 클래스를 "agile"이라고 합니다. 그러나 소수의 Windows와 함께 제공 되는 Windows 런타임 클래스는 agile, 및 표준 c + + 개체 보다는 COM 개체 처럼 더 사용 해야 합니다. agile이 아닌 클래스를 사용하기 위해 COM 전문가일 필요는 없지만 클래스의 스레딩 모델과 마샬링 동작을 고려해야 합니다. 이 문서에서는 agile이 아닌 클래스의 인스턴스를 사용해야 하는 드문 경우에 대한 배경 정보와 지침을 제공합니다.
+대부분의 경우 Windows 런타임 클래스의 인스턴스 같은 표준 C++ 개체는 모든 스레드에서 액세스할 수 있습니다. 이러한 클래스를 "agile"이라고 합니다. 소수의 Windows와 함께 제공 되는 Windows 런타임 클래스는 agile, 및 표준 보다는 COM 개체 처럼 더 사용할 수 있지만 C++ 개체입니다. agile이 아닌 클래스를 사용하기 위해 COM 전문가일 필요는 없지만 클래스의 스레딩 모델과 마샬링 동작을 고려해야 합니다. 이 문서에서는 agile이 아닌 클래스의 인스턴스를 사용해야 하는 드문 경우에 대한 배경 정보와 지침을 제공합니다.
 
 ## <a name="threading-model-and-marshaling-behavior"></a>스레딩 모델 및 마샬링 동작
 
@@ -93,11 +93,11 @@ ref class MyOptions
 
 `Agile` 은 ref 클래스에 반환 값 또는 매개 변수로 전달할 수 없습니다. `Agile<T>::Get()` 메서드는 ABI(애플리케이션 이진 인터페이스) 너머로 공용 메서드 또는 속성에 전달할 수 있는 개체 핸들(^)을 반환합니다.
 
-Visual c + +에서 "None"의 마샬링 동작이 있는-in-proc Windows 런타임 클래스에 대 한 참조를 만들 때 컴파일러가 경고 C4451 있지만 사용을 고려해 야 제안 하지 않습니다 `Platform::Agile<T>`합니다.  컴파일러는 이러한 경고 이외에 다른 지원을 제공할 수 없으므로 클래스를 올바르게 사용하고 코드가 STA 구성 요소를 사용자 인터페이스 스레드에서만 호출하고, MTA 구성 요소를 백그라운드 스레드에서만 호출하도록 하는 것은 사용자의 책임입니다.
+시각적 개체의 C++마샬링 동작이 "None", 컴파일러가 경고 C4451 갖지만 사용을 고려해 야 제안 하지 않습니다 하는 프로시저에서 Windows 런타임 클래스에 대 한 참조를 만들 때 `Platform::Agile<T>`합니다.  컴파일러는 이러한 경고 이외에 다른 지원을 제공할 수 없으므로 클래스를 올바르게 사용하고 코드가 STA 구성 요소를 사용자 인터페이스 스레드에서만 호출하고, MTA 구성 요소를 백그라운드 스레드에서만 호출하도록 하는 것은 사용자의 책임입니다.
 
 ## <a name="authoring-agile-windows-runtime-components"></a>Agile Windows 런타임 구성 요소 제작
 
-C + ref 클래스를 정의 하는 경우 +는 기본적으로 agile CX,-즉,에 `ThreadingModel`= Both 및 `MarshallingType`= Agile 합니다.  Windows Runtime c + + 템플릿 라이브러리를 사용 하는 경우 가능 클래스 agile에서 파생 시켜 `FtmBase`를 사용 하는 `FreeThreadedMarshaller`합니다.  `ThreadingModel`=Both 또는 `ThreadingModel`=MTA가 있는 클래스를 작성하는 경우 클래스가 스레드로부터 안전한지 확인하세요.
+C + ref 클래스를 정의 하는 경우 +는 기본적으로 agile CX,-즉,에 `ThreadingModel`= Both 및 `MarshallingType`= Agile 합니다.  Windows 런타임을 사용 하는 경우 C++ 템플릿 라이브러리 가능 클래스가 agile에서 파생 하 여 `FtmBase`를 사용 합니다 `FreeThreadedMarshaller`합니다.  `ThreadingModel`=Both 또는 `ThreadingModel`=MTA가 있는 클래스를 작성하는 경우 클래스가 스레드로부터 안전한지 확인하세요.
 
 사용자는 ref 클래스의 스레딩 모델 및 마샬링 동작을 수정할 수 있습니다. 그러나 클래스를 agile이 아닌 것으로 렌더링하는 변경 작업을 수행하는 경우 이러한 변경 사항과 관련된 영향을 알고 있어야 합니다.
 

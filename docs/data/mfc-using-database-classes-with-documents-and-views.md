@@ -15,11 +15,11 @@ helpviewer_keywords:
 - ODBC [C++], forms
 ms.assetid: 83979974-fc63-46ac-b162-e8403a572e2c
 ms.openlocfilehash: 78765d17b52889123f13c492699230834decba66
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59026294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182901"
 ---
 # <a name="mfc-using-database-classes-with-documents-and-views"></a>MFC: 문서 및 뷰를 이용한 데이터베이스 클래스 사용
 
@@ -63,7 +63,7 @@ ms.locfileid: "59026294"
 
 ##  <a name="_core_other_factors"></a> 다른 요소
 
-폼 기반 응용 프로그램 종종 없는 프레임 워크의 문서 serialization 메커니즘을 사용 하 여 모든 않으므로 제거, 사용 안 함, 또는 교체 해야 할 수는 **새로 만들기** 하 고 **열기** 명령에는 **파일** 메뉴. 문서를 참조 [직렬화 합니다. Serialization vs입니다. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)합니다.
+폼 기반 응용 프로그램 종종 없는 프레임 워크의 문서 serialization 메커니즘을 사용 하 여 모든 않으므로 제거, 사용 안 함, 또는 교체 해야 할 수는 **새로 만들기** 하 고 **열기** 명령에는 **파일** 메뉴. 문서를 참조 [직렬화 합니다. Serialization 및 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)합니다.
 
 확인 하려는 수도 프레임 워크를 지원할 수 있는 많은 사용자 인터페이스 기능을 활용 합니다. 예를 들어, 여러 개 사용할 수 있습니다 `CRecordView` 분할자 창에서 개체 여러 문서 MDI (인터페이스) 자식 창, 및 등 다른 다중 레코드 집합을 엽니다.
 

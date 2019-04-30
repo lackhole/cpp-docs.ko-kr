@@ -27,18 +27,18 @@ helpviewer_keywords:
 - getdiskfree function
 ms.assetid: 47a3f6cf-4816-452a-8f3d-1c3ae02a0f2a
 ms.openlocfilehash: 03c39802301406bc4250328983c8cf8bad94497f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331768"
 ---
 # <a name="getdiskfree"></a>_getdiskfree
 
 사용 하 여 디스크 드라이브에 대 한 정보를 **_diskfree_t** 구조입니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -51,7 +51,7 @@ unsigned _getdiskfree(
 
 ### <a name="parameters"></a>매개 변수
 
-*드라이브*<br/>
+*drive*<br/>
 정보를 표시할 디스크 드라이브입니다.
 
 *driveinfo*<br/>

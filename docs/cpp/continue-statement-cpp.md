@@ -7,11 +7,11 @@ helpviewer_keywords:
 - continue keyword [C++]
 ms.assetid: 3c94ee57-f732-4c1d-8537-d0ce5382bfd4
 ms.openlocfilehash: 6fbc4af6a9a56f3406582ea9ba59f4d5759b88a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154635"
 ---
 # <a name="continue-statement-c"></a>continue 문 (C++)
 
@@ -63,4 +63,4 @@ after the do loop
 ## <a name="see-also"></a>참고자료
 
 [점프 문](../cpp/jump-statements-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

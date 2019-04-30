@@ -11,11 +11,11 @@ helpviewer_keywords:
 - OLE component object model (COM)
 ms.assetid: 5193479d-1239-4697-aea4-e82f92c707ab
 ms.openlocfilehash: 09d80e7c45875ad2e6ed8b599d4e01d2110d562f
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378325"
 ---
 # <a name="ole-in-mfc"></a>MFC의 OLE
 
@@ -36,7 +36,7 @@ ms.locfileid: "57267227"
 > [!NOTE]
 >  OLE 나타내는 기술을 연결 및 포함을 사용 하 여 연결 된 OLE 컨테이너, OLE 서버, OLE 항목, 현재 위치 활성화 (또는 비주얼 편집)를 포함 하 여 추적기를 끌어서 놓기, 용어 및 메뉴 병합 합니다. 활성은 ActiveX 컨트롤 같은 구성 요소 개체 모델 (COM) 및 COM 기반 개체에 적용 됩니다 용어입니다. OLE Automation 자동화를 라고 합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [OLE 백그라운드](../mfc/ole-background.md)<br/>
 OLE에 설명 하 고 작동 하는 방법에 대 한 개념 정보를 제공 합니다.

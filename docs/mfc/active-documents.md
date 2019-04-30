@@ -10,11 +10,11 @@ helpviewer_keywords:
 - active documents [MFC], views
 ms.assetid: 1378f18e-aaa6-420b-8501-4b974905baa0
 ms.openlocfilehash: 519dd51ab9b46adf862999104e97c6e478ccd86b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394951"
 ---
 # <a name="active-documents"></a>액티브 문서
 
@@ -49,8 +49,7 @@ interface IOleDocument : IUnknown
 
 액티브 문서 컨테이너에 표시할 수 있는 액티브 문서의 요구 사항은 다음과 같습니다.
 
-- 
-  `IPersistStorage`를 구현하여 OLE의 복합 파일을 저장 메커니즘으로 사용해야 합니다.
+- `IPersistStorage`를 구현하여 OLE의 복합 파일을 저장 메커니즘으로 사용해야 합니다.
 
 - OLE 포함 한 문서의 기본 포함 기능을 지 원하는 **파일에서 만들기**합니다. 이를 위해서는 `IPersistFile`, `IOleObject` 및 `IDataObject` 인터페이스가 필요합니다.
 

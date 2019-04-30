@@ -47,11 +47,11 @@ helpviewer_keywords:
 - reflected messages
 ms.assetid: 3417ff51-ff9f-458c-bff4-17c200f00d96
 ms.openlocfilehash: 2f6aea30fbf86865b5d42ea8da364685010c95c0
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309059"
 ---
 # <a name="reflected-window-message-ids"></a>리플렉션된 창 메시지 ID
 
@@ -87,4 +87,4 @@ ActiveX 컨트롤을 만들거나 다른 특수 한 컨트롤을 신속 하 게 
 ## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤: Windows 컨트롤 서브클래싱](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)<br/>
-[TN062: Windows 컨트롤에 대 한 메시지 리플렉션](../mfc/tn062-message-reflection-for-windows-controls.md)
+[TN062: Windows 컨트롤에 대한 메시지 리플렉션](../mfc/tn062-message-reflection-for-windows-controls.md)

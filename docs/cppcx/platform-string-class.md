@@ -19,12 +19,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::String
 ms.assetid: 72dd04a4-a694-40d3-b899-eaa0b503eab8
-ms.openlocfilehash: ac9ee843f5f11d4a42377b16ec77b266238fc461
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 0b8a29efc5b18432eabfeddc75af12737538281c
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330208"
 ---
 # <a name="platformstring-class"></a>Platform::String 클래스
 
@@ -85,11 +85,11 @@ String 클래스에 다음과 같은 연산자입니다.
 
 |멤버|설명|
 |------------|-----------------|
-|[String:: operator = = 연산자](#operator-equality)|지정된 두 String 개체의 값이 같은지 여부를 나타냅니다.|
+|[String:: operator = = 연산자](#operator-equality)|지정 된 두 String 개체 값이 동일한 지 여부를 나타냅니다.|
 |[operator+ Operator](#operator-plus)|두 String 개체를 새 String 개체에 연결합니다.|
 |[String:: operator > 연산자](#operator-greater-than)|String 개체 값이 두 번째 String 개체 값보다 큰지 여부를 나타냅니다.|
 |[String:: operator > = 연산자](#operator-greater-than-or-equals)|String 개체 값이 두 번째 String 개체 값보다 크거나 같은지 여부를 나타냅니다.|
-|[String:: operator! = 연산자](#operator-inequality)|지정된 두 String 개체의 값이 다른지 여부를 나타냅니다.|
+|[String:: operator! = 연산자](#operator-inequality)|지정 된 두 String 개체 값이 다른 지 여부를 나타냅니다.|
 |[String:: operator < 연산자](#operator-less-than)|String 개체 값이 두 번째 String 개체 값보다 작은지 여부를 나타냅니다.|
 
 ### <a name="requirements"></a>요구 사항
@@ -164,13 +164,9 @@ String^ Concat( String^ str1, String^ str2);
 
 ### <a name="return-value"></a>반환 값
 
+`str1` 값과 `str2` 값의 연결을 값으로 하는 새로운 String^ 개체입니다.
 
-  `str1` 값과 `str2` 값의 연결을 값으로 하는 새로운 String^ 개체입니다.
-
-
-  `str1`가 `null`이고 `str2`이l 아니면 `str1`가 반환됩니다. 
-  `str2`가 `null`이고 `str1`이l 아니면 `str2`가 반환됩니다. 
-  `str1`과 `str2`가 모두 `null`이면 빈 문자열(L"")이 반환됩니다.
+`str1`가 `null`이고 `str2`이l 아니면 `str1`가 반환됩니다. `str2`가 `null`이고 `str1`이l 아니면 `str2`가 반환됩니다. `str1`과 `str2`가 모두 `null`이면 빈 문자열(L"")이 반환됩니다.
 
 ## <a name="data"></a>  String:: data 메서드
 
@@ -188,8 +184,7 @@ const char16* Data();
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 사용하여 `Platform::String^`에서 `wchar_t*`로 변환합니다. 
-  `String` 개체가 범위를 벗어나는 경우 데이터 포인터의 유효성이 더 이상 보장되지 않습니다. 원래의 수명 넘어서는 데이터를 저장할 `String` 개체를 사용 하 여 [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) 직접 할당 한 메모리로 배열을 복사 합니다.
+이 메서드를 사용하여 `Platform::String^`에서 `wchar_t*`로 변환합니다. `String` 개체가 범위를 벗어나는 경우 데이터 포인터의 유효성이 더 이상 보장되지 않습니다. 원래의 수명 넘어서는 데이터를 저장할 `String` 개체를 사용 하 여 [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) 직접 할당 한 메모리로 배열을 복사 합니다.
 
 ## <a name="dispose"></a>  String:: dispose 메서드
 
@@ -416,7 +411,7 @@ bool String::operator>=( String^ str1, String^ str2);
 
 ## <a name="operator-inequality"></a> String::operator!=
 
-나타냅니다 두 지정 `String` 개체에 다른 값입니다.
+지정 된 두 나타냅니다 `String` 개체에 다른 값입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -503,4 +498,4 @@ String^ String::ToString();
 
 ## <a name="see-also"></a>참고자료
 
-[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)
+[Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)

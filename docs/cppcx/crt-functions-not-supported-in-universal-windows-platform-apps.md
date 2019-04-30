@@ -3,11 +3,11 @@ title: 유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수
 ms.date: 12/30/2016
 ms.assetid: cbfc957d-6c60-48f4-97e3-1ed8526743b4
 ms.openlocfilehash: 763d76dd9eb139c10f4147e5fa069a0901fe5398
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188384"
 ---
 # <a name="crt-functions-not-supported-in-universal-windows-platform-apps"></a>유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수
 
@@ -31,7 +31,7 @@ UWP(유니버설 Windows 플랫폼) 앱을 빌드할 때는 대부분 CRT(C 런�
 |_resetstkoflw|지원 Win32 API는 UWP 앱에 사용할 수 없습니다.|해결 방법이 없습니다.|
 |_getsystime _setsystime|이들 API는 이전 CRT 버전에서 더 이상 사용되지 않습니다. 또한 사용자는 권한이 없으므로 UWP 앱에서 시스템 시간을 설정할 수 없습니다.|시스템 시간만 가져오려면 Win32 API `GetSystemTime`을 사용합니다. 시스템 시간을 설정할 수 없습니다.|
 |_environ _putenv _putenv_s _searchenv _searchenv_s _dupenv_s _wputenv _wputenv_s _wsearchenv getenv getenv_s putenv _wdupenv_s _wenviron _wgetenv _wgetenv_s _wsearchenv_s tzset|환경 변수는 UWP 앱에 사용할 수 없습니다.|해결 방법이 없습니다. 표준 시간대를 설정하려면 _tzset를 사용합니다.|
-|_loaddll _getdllprocaddr _unloaddll|이들 함수는 이전 CRT 버전에서 더 이상 사용되지 않습니다. 또한 사용자는 같은 응용 프로그램 패키지의 DLL에서만 DLL을 로드할 수 있습니다.|Win32 API `LoadPackagedLibrary`, `GetProcAddress`및 `FreeLibrary` 를 사용하여 패키지된 DLL을 로드 및 사용합니다.|
+|_loaddll _getdllprocaddr _unloaddll|이들 함수는 이전 CRT 버전에서 더 이상 사용되지 않습니다. 또한 사용자는 같은 애플리케이션 패키지의 DLL에서만 DLL을 로드할 수 있습니다.|Win32 API `LoadPackagedLibrary`, `GetProcAddress`및 `FreeLibrary` 를 사용하여 패키지된 DLL을 로드 및 사용합니다.|
 |_wexecl _wexecle _wexeclp _wexeclpe _wexecv _wexecve _wexecvp _wexecvpe _execl _execle _execlp _execlpe _execv _execve _execvp _execvpe _spawnl _spawnle _spawnlp _spawnlpe _spawnv _spawnve _spawnvp _spawnvpe _wspawnl _wspawnle _wspawnlp _wspawnlpe _wspawnv _wspawnve _wspawnvp _wspawnvpe _wsystem execl execle execlp execlpe execv execve execvp execvpe spawnl spawnle spawnlp spawnlpe spawnv spawnve spawnvp spawnvpe system|이 기능은 UWP 앱에서 사용할 수 없습니다. UWP 앱은 다른 UWP 앱이나 데스크톱 앱을 호출할 수 없습니다.|해결 방법이 없습니다.|
 |_heapwalk _heapadd _heapchk _heapset _heapused|일반적으로 이들 기능은 힙 작업을 하는 데 사용됩니다. 그러나 해당 Win32 API는 UWP 앱에서 지원되지 않습니다. 또한 앱에서 더 이상 전용 힙을 만들거나 사용할 수 없습니다.|해결 방법이 없습니다. 그러나 `_heapwalk` 는 DEBUG CRT에서 디버깅 목적으로만 사용할 수 있습니다. 이러한 Microsoft Store 업로드 되는 앱에서 사용할 수 없습니다.|
 

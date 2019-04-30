@@ -10,17 +10,17 @@ helpviewer_keywords:
 - square brackets [ ]
 ms.assetid: a26ccfd4-40ae-4a61-952f-c417982aa8dd
 ms.openlocfilehash: a871c19942252bf6a1a4901f8854b7b759700cd9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166505"
 ---
 # <a name="using-operators-in-asm-blocks"></a>__asm 블록에서 연산자 사용
 
 **Microsoft 전용**
 
-`__asm` 블록은 같은 C 또는 c + + 관련 연산자를 사용할 수 없습니다 합니다 **<<** 연산자입니다. 그러나 공유 하는 연산자 C 및 MASM에서 같은 \* 연산자 어셈블리 언어 연산자로 해석 됩니다. 예를 들어, 외부 프로그램 `__asm` 대괄호를 차단 (**[]**) 바깥쪽 C 배열에 있는 요소의 크기를 자동으로 배율을 조정 하는 배열 첨자로 해석 됩니다. `__asm` 블록 안에서 MASM 인덱스 연산자로 표시되며, 이 연산자는 임의의 데이터 개체 또는 레이블(배열만이 아님)로부터 크기를 조절하지 않은 바이트 오프셋을 만듭니다. 다음 코드에서는 차이점을 보여 줍니다.
+`__asm` 블록에서 C를 사용할 수 없습니다 또는 C++ 특정 연산자와 같은 합니다 **<<** 연산자입니다. 그러나 공유 하는 연산자 C 및 MASM에서 같은 \* 연산자 어셈블리 언어 연산자로 해석 됩니다. 예를 들어, 외부 프로그램 `__asm` 대괄호를 차단 (**[]**) 바깥쪽 C 배열에 있는 요소의 크기를 자동으로 배율을 조정 하는 배열 첨자로 해석 됩니다. `__asm` 블록 안에서 MASM 인덱스 연산자로 표시되며, 이 연산자는 임의의 데이터 개체 또는 레이블(배열만이 아님)로부터 크기를 조절하지 않은 바이트 오프셋을 만듭니다. 다음 코드에서는 차이점을 보여 줍니다.
 
 ```cpp
 int array[10];

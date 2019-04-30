@@ -4,11 +4,11 @@ ms.custom: get-started-article
 ms.date: 09/27/2018
 ms.assetid: df80d255-e7ea-49d9-b940-3f012e90cf9b
 ms.openlocfilehash: 9287b7a15e3653212ed6a5428cdfe5a530ececc3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62198515"
 ---
 # <a name="adding-a-property-page-atl-tutorial-part-6"></a>속성 페이지 추가(ATL 자습서, 6부)
 
@@ -44,7 +44,7 @@ ms.locfileid: "57264765"
 
 |파일|설명|
 |----------|-----------------|
-|PolyProp.h|C + + 클래스를 포함 `CPolyProp`, 속성 페이지를 구현 하는 합니다.|
+|PolyProp.h|포함 된 C++ 클래스 `CPolyProp`, 속성 페이지를 구현 하는 합니다.|
 |PolyProp.cpp|PolyProp.h 파일이 포함 됩니다.|
 |PolyProp.rgs|속성 페이지 개체를 등록 하는 레지스트리 스크립트입니다.|
 

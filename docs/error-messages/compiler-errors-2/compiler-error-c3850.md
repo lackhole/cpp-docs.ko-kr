@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3850
 ms.assetid: 028f3a37-f3ad-4ebc-9168-3cdea47524d4
 ms.openlocfilehash: 9cd0428726f92c7347b162f74b46035f99cc2d3c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62380957"
 ---
 # <a name="compiler-error-c3850"></a>컴파일러 오류 C3850
 
@@ -23,7 +23,7 @@ ms.locfileid: "50572668"
 
 C로 컴파일된 코드에서 유니버설 문자 이름은 009f 0000-사이 범위의 문자를 나타내지 않을 수 있습니다 0000-009f(포함 0024 ('$'), 0040 ('\@') 및 0060 (' ').
 
-C++로 컴파일된 코드에서 유니버설 문자 이름은 문자열 또는 문자 리터럴의 유효한 유니코드 코드 포인트를 모두 사용할 수 있습니다. 리터럴 외부에서 유니버설 문자 이름은 0000-001F(포함) 또는 007F-009F(포함) 범위의 제어 문자나 기본 소스 문자 집합의 멤버를 나타낼 수 없습니다.  자세한 내용은 [Character Sets](../../cpp/character-sets.md)을 참조하세요.
+C++로 컴파일된 코드에서 유니버설 문자 이름은 문자열 또는 문자 리터럴의 유효한 유니코드 코드 포인트를 모두 사용할 수 있습니다. 리터럴 외부에서 유니버설 문자 이름은 0000-001F(포함) 또는 007F-009F(포함) 범위의 제어 문자나 기본 소스 문자 집합의 멤버를 나타낼 수 없습니다.  자세한 내용은 [문자 집합](../../cpp/character-sets.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

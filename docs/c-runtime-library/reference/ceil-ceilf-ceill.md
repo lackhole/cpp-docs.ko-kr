@@ -30,11 +30,11 @@ helpviewer_keywords:
 - ceilf function
 ms.assetid: f4e5acab-5c8f-4b10-9ae2-9561e6453718
 ms.openlocfilehash: b128f20593d41fff3c4c50f6d68f8643798c5b66
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335442"
 ---
 # <a name="ceil-ceilf-ceill"></a>ceil, ceilf, ceill
 
@@ -71,19 +71,19 @@ long double ceill(
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|**QNAN**, **찾기**|없음|**(_D)**|
+|± **QNAN**, **IND**|없음|**_DOMAIN**|
 
 **ceil** sse2(스트리밍 SIMD 확장 2 ()를 사용 하는 구현 합니다. SSE2 구현의 사용 제한 사항 및 그 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **ceil** 사용 하는 **float** 하거나 **긴** **double** 형식입니다. C 프로그램에서 **ceil** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **ceil** 사용 하는 **float** 또는 **긴** **double** 형식입니다. C 프로그램에서 **ceil** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**ceil**하십시오 **ceilf**, **ceill**|\<math.h>|
+|**ceil**, **ceilf**, **ceill**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

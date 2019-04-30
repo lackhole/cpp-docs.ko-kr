@@ -9,11 +9,11 @@ helpviewer_keywords:
 - identifiers [C++]
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
 ms.openlocfilehash: 6f87486d0bb2614a3b2542cf050172a47f152c4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184603"
 ---
 # <a name="identifiers-c"></a>식별자 (C++)
 
@@ -87,7 +87,7 @@ int main() {
 }
 ```
 
-식별자에서 허용되는 문자의 범위는 C++/CLI 코드를 컴파일하는 경우보다 덜 제한적입니다. /clr을 사용하여 컴파일된 코드의 식별자는  [Standard ECMA-335: Common Language Infrastructure(CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm)를 준수해야 합니다.
+식별자에서 허용되는 문자의 범위는 C++/CLI 코드를 컴파일하는 경우보다 덜 제한적입니다. /Clr을 사용 하 여 컴파일된 코드의 식별자 따라야 [표준 ECMA-335: Common Language Infrastructure (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm)합니다.
 
 **Microsoft 전용 종료**
 
@@ -95,7 +95,7 @@ int main() {
 
 식별자는 키워드와 정확히 동일한 철자와 대/소문자를 사용할 수 없습니다. 키워드가 포함된 식별자를 사용할 수 있습니다. 예를 들어 `Pint` 는 올바른 식별자를 포함 하는 경우에 **int**, 키워드는 합니다.
 
-두 개의 연속 밑줄 문자 ( **__** ) 식별자 또는 단일 선행 밑줄 뒤에 대문자, 모든 범위에서 c + + 구현을 위해 예약 됩니다. 현재 또는 나중에 예약되는 식별자와 충돌할 수 있기 때문에 파일 범위가 있는 이름에 소문자가 뒤에 오는 단일 선행 밑줄을 사용하지 않도록 해야 합니다.
+두 개의 연속 밑줄 문자 ( **__** ) 식별자 또는 단일 선행 밑줄 문자가 뒤에 예약 되어 C++ 모든 범위에서 구현 합니다. 현재 또는 나중에 예약되는 식별자와 충돌할 수 있기 때문에 파일 범위가 있는 이름에 소문자가 뒤에 오는 단일 선행 밑줄을 사용하지 않도록 해야 합니다.
 
 ## <a name="see-also"></a>참고자료
 

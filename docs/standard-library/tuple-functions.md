@@ -14,11 +14,11 @@ helpviewer_keywords:
 - std::make_tuple [C++]
 - std::tie [C++]
 ms.openlocfilehash: 93c11a89f7cdfa3949be2d97e401fad199a17d97
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278972"
 ---
 # <a name="lttuplegt-functions"></a>&lt;tuple&gt; 함수
 
@@ -121,7 +121,7 @@ template <class T1, class T2, ..., class TN>
 *TN*<br/>
 Nth 함수 매개 변수의 형식입니다.
 
-*TN*<br/>
+*tN*<br/>
 Nth 함수 매개 변수의 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -165,7 +165,7 @@ int main() {
 4 5 6 7
 ```
 
-## <a name="tie"></a>  동률
+## <a name="tie"></a>  tie
 
 요소 선언에서 `tuple`을 만듭니다.
 

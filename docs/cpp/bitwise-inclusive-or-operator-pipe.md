@@ -1,4 +1,4 @@
-﻿---
+---
 title: '포괄적 비트 OR 연산자: |'
 ms.date: 06/14/2018
 f1_keywords:
@@ -11,11 +11,11 @@ helpviewer_keywords:
 - '| operator'
 ms.assetid: 4c8a6a68-d828-447d-875a-aedb4ce3aa9a
 ms.openlocfilehash: 848bf3b2ec61084b59ab5b1ee6807f6066a4675e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184295"
 ---
 # <a name="bitwise-inclusive-or-operator-"></a>포괄적 비트 OR 연산자: |
 
@@ -50,7 +50,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [C 비트 연산자](../c-language/c-bitwise-operators.md)

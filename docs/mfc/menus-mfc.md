@@ -8,11 +8,11 @@ helpviewer_keywords:
 - menus [MFC]
 ms.assetid: 6a181495-47a9-4356-83fc-b89152d6cb4c
 ms.openlocfilehash: 202a8c791f3ecaa6180eb91134b28a86572f6e19
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396381"
 ---
 # <a name="menus-mfc"></a>메뉴(MFC)
 
@@ -22,7 +22,7 @@ MFC 메뉴를 사용 하 여 사용할 수 있도록 두 요소를 제공 합니
 
 - 메뉴 및 도구 모음 단추를 업데이트 하는 메커니즘: 설정을 지정 하거나 현재 프로그램 상태에 맞게 즉시 해제 합니다.
 
-Visual c + +에서는 [메뉴 편집기](../windows/menu-editor.md) 만들고 프로그램의 메뉴 리소스를 편집 합니다.
+Visual C++ 제공을 [메뉴 편집기](../windows/menu-editor.md) 만들고 프로그램의 메뉴 리소스를 편집 합니다.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 

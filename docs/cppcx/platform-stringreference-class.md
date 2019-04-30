@@ -10,11 +10,11 @@ f1_keywords:
 - VCCORLIB/Platform::StringReference::GetString
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
 ms.openlocfilehash: 7b6ab42dc630ce7e0014534064e8f1ce6da00857
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62182992"
 ---
 # <a name="platformstringreference-class"></a>Platform::StringReference 클래스
 
@@ -144,12 +144,11 @@ StringReference& operator=(const ::default::char16* __strArg);
 
 ### <a name="return-value"></a>반환 값
 
-
-  `StringReference` 형식의 개체에 대한 참조입니다.
+`StringReference` 형식의 개체에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-때문에 `StringReference` 표준 c + + 클래스 및 ref 클래스가 아닌 이면에 나타나지 않으면 합니다 **개체 브라우저**합니다.
+때문에 `StringReference` 표준 C++ 클래스 및 ref 클래스가 아닌에 나타나지 않습니다는 **개체 브라우저**합니다.
 
 ## <a name="operator-call"></a>  StringReference::operator()  Operator
 
@@ -164,8 +163,7 @@ __declspec(no_release_return) __declspec(no_refcount)
 
 ### <a name="return-value"></a>반환 값
 
-
-  `Platform::String` 형식의 개체에 대한 핸들입니다.
+`Platform::String` 형식의 개체에 대한 핸들입니다.
 
 ## <a name="ctor"></a>  StringReference::StringReference 생성자
 

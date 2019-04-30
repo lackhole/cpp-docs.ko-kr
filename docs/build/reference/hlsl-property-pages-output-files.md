@@ -9,15 +9,15 @@ f1_keywords:
 - VC.Project.FXCompilerTool.AssemblerOutputFile
 ms.assetid: c5ba1e72-30de-43eb-a15a-5b0ae58e55c2
 ms.openlocfilehash: 6ee8042fccf2e0b635535a77d9c9a6bc68bd9999
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291550"
 ---
 # <a name="hlsl-property-pages-output-files"></a>HLSL 속성 페이지: 출력 파일
 
-HLSL 컴파일러(fxc.exe)의 다음 속성을 구성하려면 해당 **출력 파일** 속성을 사용합니다. 액세스 하는 방법에 대 한 자세한 합니다 **출력 파일** HLSL 폴더 속성 페이지를에서 참조 하십시오 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+HLSL 컴파일러(fxc.exe)의 다음 속성을 구성하려면 해당 **출력 파일** 속성을 사용합니다. 액세스 하는 방법에 대 한 자세한 합니다 **출력 파일** HLSL 폴더 속성 페이지를에서 참조 하십시오 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 ## <a name="uielement-list"></a>UI 요소 목록
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Web references, properties
 ms.assetid: b80f7c77-af88-4551-9943-99748ebacf09
 ms.openlocfilehash: 9e33fc1d53253c3da09e812110015cfdfdbe2d02
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316472"
 ---
 # <a name="web-references-property-page"></a>웹 참조 속성 페이지
 
@@ -38,8 +38,8 @@ ms.locfileid: "57826366"
 
    프록시 DLL에서 참조하는 추가 DLL을 지정합니다.
 
-액세스 하는 방법에 대 한 정보에 대 한 합니다 **웹 참조** 속성 페이지 참조 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+액세스 하는 방법에 대 한 정보에 대 한 합니다 **웹 참조** 속성 페이지 참조 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[C + + 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)
+[C++ 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;포함 > (c + + 문서 주석)'
+title: '&lt;포함 > (C++ 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - include
@@ -9,11 +9,11 @@ helpviewer_keywords:
 - <include> C++ XML tag
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3
 ms.openlocfilehash: b7d1033aa5b6c95c0db8eb9debf74596dc214fb0
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291329"
 ---
 # <a name="ltincludegt"></a>&lt;include&gt;
 
@@ -28,8 +28,7 @@ ms.locfileid: "57827387"
 #### <a name="parameters"></a>매개 변수
 
 *filename*<br/>
-문서가 포함된 파일의 이름입니다. 경로를 사용하여 파일 이름을 정규화할 수 있습니다.  이름을 단일 또는 이중 따옴표로 묶습니다.  
-  `filename`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
+문서가 포함된 파일의 이름입니다. 경로를 사용하여 파일 이름을 정규화할 수 있습니다.  이름을 단일 또는 이중 따옴표로 묶습니다.  `filename`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
 
 *tagpath*<br/>
 파일에 포함된 원하는 노드 집합을 선택하는 유효한 XPath 식입니다.

@@ -17,11 +17,11 @@ helpviewer_keywords:
 - variables, size
 ms.assetid: b62c2f2b-a7ad-4145-bae4-d890db86d348
 ms.openlocfilehash: 36c97ee866ca449e9bbcf514e464a13f24f12cd9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166895"
 ---
 # <a name="type-and-variable-sizes-in-inline-assembly"></a>인라인 어셈블리의 형식 및 다양한 크기
 
@@ -31,9 +31,9 @@ ms.locfileid: "50539102"
 
 - 합니다 **길이** 연산자는 배열의 요소 수를 반환할 수 있습니다. 배열이 아닌 변수에 대해 값 1을 반환합니다.
 
-- 합니다 **크기** 연산자는 C 또는 c + + 변수의 크기를 반환할 수 있습니다. 변수의 크기를 곱한 값은 해당 **길이** 하 고 **형식**합니다.
+- 합니다 **크기** 연산자는 C의 크기를 반환할 수 있습니다 또는 C++ 변수입니다. 변수의 크기를 곱한 값은 해당 **길이** 하 고 **형식**합니다.
 
-- 합니다 **형식** 연산자는 C 또는 c + + 형식 또는 변수의 크기를 반환할 수 있습니다. 변수가 배열을 **형식** 배열의 단일 요소 크기를 반환 합니다.
+- 합니다 **형식** 연산자는 C의 크기를 반환할 수 있습니다 또는 C++ 형식 또는 변수입니다. 변수가 배열을 **형식** 배열의 단일 요소 크기를 반환 합니다.
 
 예를 들어 프로그램에 요소가 8 **int** 배열
 

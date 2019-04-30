@@ -9,15 +9,15 @@ helpviewer_keywords:
 - types [C++], exception handling
 ms.assetid: 202dbf07-8ace-4b3b-b3ae-4b45c275e0b4
 ms.openlocfilehash: 7504439c565d4dfb720bc2fa7e097e3230733423
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50475150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153686"
 ---
 # <a name="how-catch-blocks-are-evaluated-c"></a>Catch 블록 평가 방법 (C++)
 
-일반적으로 std::exception에서 파생되는 형식을 throw할 것을 권장하지만 C++를 사용하면 모든 형식의 예외를 throw할 수 있습니다. c + + 예외를 낼 수 있습니다는 **catch** throw 된 예외 또는 모든 형식의 예외를 catch 할 수 있는 처리기에서 동일한 형식을 지정 하는 처리기.
+일반적으로 std::exception에서 파생되는 형식을 throw할 것을 권장하지만 C++를 사용하면 모든 형식의 예외를 throw할 수 있습니다. C++ 에서 예외를 낼 수 있습니다는 **catch** throw 된 예외 또는 모든 형식의 예외를 catch 할 수 있는 처리기에서 동일한 형식을 지정 하는 처리기.
 
 throw된 예외의 형식이 하나의 기본 클래스 또는 여러 개의 클래스를 가진 클래스인 경우 예외 형식의 기본 클래스 및 예외 형식의 기본에 대한 참조를 허용하는 처리기로 catch할 수 있습니다. 예외가 참조에 의해 catch될 때 실제 throw된 예외 개체에 바인딩됩니다. 바인딩되지 않는 예외는 복사본입니다(함수에 대한 인수와 동일).
 

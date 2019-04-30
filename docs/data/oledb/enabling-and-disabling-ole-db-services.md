@@ -6,11 +6,11 @@ helpviewer_keywords:
 - service providers [OLE DB]
 ms.assetid: 445f97eb-32a8-41c2-ad26-1169f78a074f
 ms.openlocfilehash: df17a55950b03d4d63dea2199e3bc19bedb8a7e3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59028956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62175344"
 ---
 # <a name="enabling-and-disabling-ole-db-services"></a>OLE DB 서비스 사용 및 사용 안 함
 

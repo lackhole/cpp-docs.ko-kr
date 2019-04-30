@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::basic_istringstream [C++], swap
 ms.assetid: 1d5bb4b5-793d-4833-98e5-14676c451915
 ms.openlocfilehash: fdf622bbef370e8b3625f419be29f293bc06eacc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400632"
 ---
 # <a name="basicistringstream-class"></a>basic_istringstream 클래스
 
@@ -34,7 +34,7 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *Elem*<br/>
@@ -105,7 +105,7 @@ basic_istringstream(
 
 ### <a name="parameters"></a>매개 변수
 
-*모드 (_m)*<br/>
+*_Mode*<br/>
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
 *str*<br/>

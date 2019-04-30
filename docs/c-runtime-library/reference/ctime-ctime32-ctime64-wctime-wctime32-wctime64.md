@@ -51,11 +51,11 @@ helpviewer_keywords:
 - time, converting
 ms.assetid: 2423de37-a35c-4f0a-a378-3116bc120a9d
 ms.openlocfilehash: d1858a36c68a2ca5cedf70a1d74d5f250cbac8df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288605"
 ---
 # <a name="ctime-ctime32-ctime64-wctime-wctime32-wctime64"></a>ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
 
@@ -87,7 +87,7 @@ wchar_t *_wctime64( const __time64_t *sourceTime );
 
 - 사용 하는 경우 **_ctime64** 하거나 **_wctime64** 하 고 *sourceTime* 23시 59분: 59, 3000 년 12 월 31 일, UTC 이후 날짜를 나타냅니다.
 
-**ctime** 계산 되는 인라인 함수 이며 **_ctime64** 하 고 **time_t** 동일 **__time64_t**합니다. 해석 하도록 컴파일러에 게 해야 하는 경우 **time_t** 이전 32 비트로 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**합니다. 이렇게 하면 **ctime** 로 평가 **_ctime32**합니다. 2038년 1월 18일 이후에는 응용 프로그램에서 오류가 발생할 수 있으므로 이 방식은 사용하지 않는 것이 좋으며, 64비트 플랫폼에서는 이러한 방식이 허용되지 않습니다.
+**ctime** 계산 되는 인라인 함수 이며 **_ctime64** 하 고 **time_t** 동일 **__time64_t**합니다. 해석 하도록 컴파일러에 게 해야 하는 경우 **time_t** 이전 32 비트로 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**합니다. 이렇게 하면 **ctime** 로 평가 **_ctime32**합니다. 2038년 1월 18일 이후에는 애플리케이션에서 오류가 발생할 수 있으므로 이 방식은 사용하지 않는 것이 좋으며, 64비트 플랫폼에서는 이러한 방식이 허용되지 않습니다.
 
 ## <a name="remarks"></a>설명
 

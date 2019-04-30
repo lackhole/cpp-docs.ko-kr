@@ -16,11 +16,11 @@ helpviewer_keywords:
 - <= operator
 ms.assetid: d346b53d-f14d-4962-984f-89d39a17ca0f
 ms.openlocfilehash: 52a3c10e6da42f6c181d3f93de13168e22141bec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50458957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404756"
 ---
 # <a name="relational-operators-lt-gt-lt-and-gt"></a>관계형 연산자: &lt;하십시오 &gt;, &lt;=, 및 &gt;=
 
@@ -78,7 +78,7 @@ int main() {
 
 다음과 같은 경우에만 형식이 다른 두 포인터를 비교할 수 있습니다.
 
-- 한 형식이 다른 형식에서 파생 클래스 형식입니다.
+- 한 형식이 다른 형식에서 파생된 클래스 형식입니다.
 
 - 하나 이상의 포인터를 명시적으로 변환 (캐스트) 형식으로 `void *`입니다. (다른 포인터 형식으로 암시적으로 변환 됩니다 `void *` 변환 합니다.)
 

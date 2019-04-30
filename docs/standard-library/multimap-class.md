@@ -87,11 +87,11 @@ helpviewer_keywords:
 - std::multimap [C++], value_comp
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
 ms.openlocfilehash: caffa84052f774803b92730f7906bf53cb3c824a
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348369"
 ---
 # <a name="multimap-class"></a>multimap 클래스
 
@@ -120,7 +120,7 @@ multimap에 저장되는 요소 데이터 형식입니다.
 
 C++14에서는 형식 매개 변수가 없는 `std::less<>` 또는 `std::greater<>` 조건자를 지정하여 유형이 다른 조회를 사용하도록 설정할 수 있습니다. 자세한 내용은 [연관 컨테이너의 유형이 다른 조회](../standard-library/stl-containers.md#heterogeneous-lookup-in-associative-containers-c14)를 참조하세요
 
-*할당자*<br/>
+*Allocator*<br/>
 map의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<pair <const Key, Type> >`입니다.
 
 ## <a name="remarks"></a>설명
@@ -515,7 +515,7 @@ multimap에서 일치하는지 확인할 요소의 키입니다.
 
 멤버 함수는 다음 범위에 있는 요소 중에서
 
-\[ lower_bound (*키*), upper_bound (*키*))
+\[ lower_bound(*key*), upper_bound(*key*) )
 
 키 값이 있는 *키*합니다.
 
@@ -737,7 +737,7 @@ iterator emplace(Args&&... args);
 
 |매개 변수|설명|
 |-|-|
-|*인수*|multimap에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
+|*args*|multimap에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -807,7 +807,7 @@ iterator emplace_hint(
 
 |매개 변수|설명|
 |-|-|
-|*인수*|multimap에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
+|*args*|multimap에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
 |*where*|올바른 삽입 지점 검색을 시작할 위치입니다. (해당 지점 바로 앞에 있으면 *여기서*, 로그 시간 대신 분할 상환된 상수 시간에 삽입이 발생할 수 있습니다.)|
 
 ### <a name="return-value"></a>반환 값
@@ -993,7 +993,7 @@ size_type erase(
 *Where*<br/>
 제거할 요소의 위치입니다.
 
-*첫 번째*<br/>
+*첫째*<br/>
 제거할 첫 번째 요소의 위치입니다.
 
 *마지막*<br/>
@@ -1213,10 +1213,10 @@ IList);
 
 |매개 변수|설명|
 |-|-|
-|*val*|multimap에 삽입할 요소의 값입니다.|
+|*Val*|multimap에 삽입할 요소의 값입니다.|
 |*Where*|올바른 삽입 지점 검색을 시작할 위치입니다. (해당 지점 바로 앞에 있으면 *여기서*, 로그 시간 대신 분할 상환된 상수 시간에 삽입이 발생할 수 있습니다.)|
 |*ValTy*|Map의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하는 템플릿 매개 변수 [value_type](../standard-library/map-class.md#value_type), 및 완벽 하 게 전달 *Val* 인수로 합니다.|
-|*첫 번째*|복사할 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 마지막 요소 바로 다음 위치입니다.|
 |*InputIterator*|[value_type](../standard-library/map-class.md#value_type) 개체를 생성하는 데 사용할 수 있는 형식의 요소를 가리키는 [입력 반복기](../standard-library/input-iterator-tag-struct.md)의 요구 사항을 충족하는 템플릿 함수 인수입니다.|
 |*IList*|요소를 복사할 원본 [initializer_list](../standard-library/initializer-list.md)입니다.|
@@ -1656,7 +1656,7 @@ multimap(
 |*Al*|이 multimap 개체에 사용할 스토리지 할당자 클래스로, 기본값은 Allocator입니다.|
 |*구성 요소*|map의 요소 순서를 지정하는 데 사용되는 `constTraits` 형식의 비교 함수로, 기본값은 `Traits`입니다.|
 |*오른쪽*|생성된 set을 복사할 map입니다.|
-|*첫 번째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.|
 |*IList*|요소를 복사해올 initializer_list입니다.|
 

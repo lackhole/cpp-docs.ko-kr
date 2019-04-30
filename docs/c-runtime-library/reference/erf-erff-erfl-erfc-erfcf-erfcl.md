@@ -37,11 +37,11 @@ helpviewer_keywords:
 - erfc function
 ms.assetid: 144d90d3-e437-41c2-a659-cd57596023b5
 ms.openlocfilehash: 4270d8366686ea282a4dd37741d9f8e37991b88f
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62289213"
 ---
 # <a name="erf-erff-erfl-erfc-erfcf-erfcl"></a>erf, erff, erfl, erfc, erfcf, erfcl
 
@@ -99,7 +99,7 @@ long double erfcl(
 
 가우스 보상 오차 함수 란 1-erf (x). 합니다 **erf** 함수 1.0-1.0 범위의 값을 반환 합니다. 반환되는 오류가 없습니다. 합니다 **erfc** 함수는 0 ~ 2 범위에 값을 반환 합니다. 하는 경우 *x* 에 대해 너무 큽니다 **erfc**의 **errno** 변수로 설정 됩니다 **ERANGE**합니다.
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **erf** 하 고 **erfc** 및 반환 하는 **float** 고 **긴** **이중** 형식입니다. C 프로그램에서 **erf** 하 고 **erfc** 항상 하 고 반환을 **double**합니다.
+때문에 C++ 오버 로드를 허용의 오버 로드를 호출할 수 있습니다 **erf** 하 고 **erfc** 및 반환 하는 **float** 하 고 **긴** **이중** 형식입니다. C 프로그램에서 **erf** 하 고 **erfc** 항상 하 고 반환을 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 

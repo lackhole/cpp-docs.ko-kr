@@ -8,11 +8,11 @@ helpviewer_keywords:
 - limits header
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
 ms.openlocfilehash: c029095d5298048874a7eb6f1a41209d6a6f4779
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413244"
 ---
 # <a name="ltlimitsgt"></a>&lt;limits&gt;
 
@@ -26,7 +26,7 @@ ms.locfileid: "51524887"
 
 ## <a name="remarks"></a>설명
 
-명시적 특수화 된 `numeric_limits` 클래스는 문자, 정수 및 부동 소수점 형식은 포함 하 여 기본 형식의 많은 속성을 설명 하 고 **bool** 구현으로 해결 하는 것이 아니라 정의 된 c + + 언어의 규칙입니다. \<limits>에 설명된 속성에는 정확도, 최소 및 최대 크기 표현, 반올림 및 신호 형식 오류가 포함됩니다.
+명시적 특수화 된 `numeric_limits` 클래스는 문자, 정수 및 부동 소수점 형식은 포함 하 여 기본 형식의 많은 속성을 설명 하 고 **bool** 구현으로 해결 하는 것이 아니라 정의 된 규칙에는 C++ 언어입니다. \<limits>에 설명된 속성에는 정확도, 최소 및 최대 크기 표현, 반올림 및 신호 형식 오류가 포함됩니다.
 
 ### <a name="enumerations"></a>열거형
 

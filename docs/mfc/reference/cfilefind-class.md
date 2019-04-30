@@ -57,11 +57,11 @@ helpviewer_keywords:
 - CFileFind [MFC], m_pTM
 ms.assetid: 9990068c-b023-4114-9580-a50182d15240
 ms.openlocfilehash: da08b04b314df4916a290d4929a4cbaac87434d8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62296633"
 ---
 # <a name="cfilefind-class"></a>CFileFind 클래스
 
@@ -130,7 +130,7 @@ class CFileFind : public CObject
 
 [!code-cpp[NVC_MFCFiles#31](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_1.cpp)]
 
-이 코드 예제를 단순하게 유지 하기 c + + 표준 라이브러리를 사용 `cout` 클래스입니다. 합니다 `cout` 줄에 대 한 호출을 사용 하 여 바꿀 수 없습니다 `CListBox::AddString`, 예를 들어 그래픽 사용자 인터페이스를 사용 하 여 프로그램에서 합니다.
+이 코드에서는 간단히 유지 하기 위해이 예제에서는 다음을 사용 합니다.는 C++ 표준 라이브러리 `cout` 클래스입니다. 합니다 `cout` 줄에 대 한 호출을 사용 하 여 바꿀 수 없습니다 `CListBox::AddString`, 예를 들어 그래픽 사용자 인터페이스를 사용 하 여 프로그램에서 합니다.
 
 사용 하는 방법에 대 한 자세한 내용은 `CFileFind` 문서를 참조 하는 다른 WinInet 클래스 및 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
 

@@ -16,11 +16,11 @@ helpviewer_keywords:
 - casting CString objects
 ms.assetid: 5048de8a-5298-4891-b8a0-c554b5a3ac1b
 ms.openlocfilehash: eee23296d9aac40849dacf58c3b3d9bdf583d1df
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62236101"
 ---
 # <a name="cstring-operations-relating-to-c-style-strings"></a>C 스타일 문자열 관련 CString 작업
 
@@ -50,12 +50,9 @@ char myString[256];
 strcpy(myString, (LPCTSTR)aCString);
 ```
 
+`CString` 등의 `SetAt` 메서드를 사용하여 문자열 개체에서 개별 문자를 수정할 수 있습니다. 그러나 LPCTSTR 포인터 임시 이며 변경한 경우 없게 `CString`합니다. `CString`이 범위를 벗어나 자동으로 삭제될 수도 있습니다. 새로운 LPCTSTR 포인터를 표시 하는 것이 좋습니다는 `CString` 때마다 개체를 하나를 사용 합니다.
 
-  `CString` 등의 `SetAt` 메서드를 사용하여 문자열 개체에서 개별 문자를 수정할 수 있습니다. 그러나 LPCTSTR 포인터 임시 이며 변경한 경우 없게 `CString`합니다. 
-  `CString`이 범위를 벗어나 자동으로 삭제될 수도 있습니다. 새로운 LPCTSTR 포인터를 표시 하는 것이 좋습니다는 `CString` 때마다 개체를 하나를 사용 합니다.
-
-
-  `CString` 데이터의 복사본을 직접 수정해야 할 수도 있습니다. `strcpy_s` 개체를 별도의 버퍼에 복사하려면 보다 안전한 `_tcscpy_s` 함수 또는 유니코드/MBCS 이식 가능 `CString`를 사용합니다. 이렇게 하면 다음 예에 나와 있는 것처럼 문자를 안전하게 수정할 수 있습니다.
+`CString` 데이터의 복사본을 직접 수정해야 할 수도 있습니다. `strcpy_s` 개체를 별도의 버퍼에 복사하려면 보다 안전한 `_tcscpy_s` 함수 또는 유니코드/MBCS 이식 가능 `CString`를 사용합니다. 이렇게 하면 다음 예에 나와 있는 것처럼 문자를 안전하게 수정할 수 있습니다.
 
 [!code-cpp[NVC_ATLMFC_Utilities#189](../atl-mfc-shared/codesnippet/cpp/cstring-operations-relating-to-c-style-strings_1.cpp)]
 
@@ -64,11 +61,9 @@ strcpy(myString, (LPCTSTR)aCString);
 
 ##  <a name="_core_working_with_standard_run.2d.time_library_string_functions"></a> 표준 런타임 라이브러리 문자열 함수 사용
 
+`CString` 또는 유니코드/MBCS 이식 가능 `strcmp`와 같은 표준 C 런타임 라이브러리 문자열 함수를 사용할 수 있는 모든 문자열 작업을 수행하는 `_tcscmp` 메서드를 찾을 수 있습니다.
 
-  `CString` 또는 유니코드/MBCS 이식 가능 `strcmp`와 같은 표준 C 런타임 라이브러리 문자열 함수를 사용할 수 있는 모든 문자열 작업을 수행하는 `_tcscmp` 메서드를 찾을 수 있습니다.
-
-C 런타임 문자열 함수를 사용 해야 할 경우 _core_using_cstring_as_a_c.2d.style_null.2d.terminated_string에서 설명 하는 기술을 사용할 수 있습니다. 
-  `CString` 개체를 해당하는 C 스타일 문자열 버퍼에 복사하고 버퍼에 대해 작업을 수행한 다음 결과로 생성된 C 스타일 문자열을 `CString` 개체에 다시 할당할 수 있습니다.
+C 런타임 문자열 함수를 사용 해야 할 경우 _core_using_cstring_as_a_c.2d.style_null.2d.terminated_string에서 설명 하는 기술을 사용할 수 있습니다. `CString` 개체를 해당하는 C 스타일 문자열 버퍼에 복사하고 버퍼에 대해 작업을 수행한 다음 결과로 생성된 C 스타일 문자열을 `CString` 개체에 다시 할당할 수 있습니다.
 
 ##  <a name="_core_modifying_cstring_contents_directly"></a> CString 콘텐츠 직접 수정
 
@@ -84,8 +79,7 @@ C 런타임 문자열 함수를 사용 해야 할 경우 _core_using_cstring_as_
 
 1. `GetBuffer`에서 반환하는 포인터를 사용하여 `CString` 개체에 문자를 직접 씁니다.
 
-1. `ReleaseBuffer` 개체에 대해 `CString`를 호출하여 문자열 길이 등의 모든 내부 `CString` 상태 정보를 업데이트합니다. 
-  `CString` 개체의 콘텐츠를 직접 수정한 후에는 `ReleaseBuffer`를 호출한 후에 다른 `CString` 멤버 함수를 호출해야 합니다.
+1. `ReleaseBuffer` 개체에 대해 `CString`를 호출하여 문자열 길이 등의 모든 내부 `CString` 상태 정보를 업데이트합니다. `CString` 개체의 콘텐츠를 직접 수정한 후에는 `ReleaseBuffer`를 호출한 후에 다른 `CString` 멤버 함수를 호출해야 합니다.
 
 ##  <a name="_core_using_cstring_objects_with_variable_argument_functions"></a> 가변 인수 함수와 함께 CString 개체 사용
 

@@ -16,11 +16,11 @@ helpviewer_keywords:
 - Yc compiler option [C++]
 ms.assetid: 47c2e555-b4f5-46e6-906e-ab5cf21f0678
 ms.openlocfilehash: 0d902b9ebb35bc7f267cb67861b7be0763f378a6
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316706"
 ---
 # <a name="yc-create-precompiled-header-file"></a>/Yc(미리 컴파일된 헤더 파일 만들기)
 
@@ -56,9 +56,9 @@ ms.locfileid: "57821432"
 
 1. .Cpp 파일을 선택 합니다. .Cpp 파일은 #include 미리 컴파일된 헤더 정보가 포함 된.h 파일입니다. 프로젝트의 **/Yc** 설정은 파일 수준에서 재정의할 수 있습니다.
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 엽니다는 **구성 속성**를 **C/c + +** 를 **미리 컴파일된 헤더** 속성 페이지.
+1. 엽니다는 **구성 속성**를 **C /C++** 를 **미리 컴파일된 헤더** 속성 페이지.
 
 1. 수정 된 **미리 컴파일된 헤더** 속성입니다.
 

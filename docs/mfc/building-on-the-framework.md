@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MFC, application development
 ms.assetid: 883f0f19-866f-4221-8a3d-5607941dc8d0
 ms.openlocfilehash: 989aecdfafc0d57bfb28874ee84dbf40f8fefc30
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385338"
 ---
 # <a name="building-on-the-framework"></a>프레임워크를 기반으로 구축
 
-MFC 프레임 워크를 사용 하 여 응용 프로그램을 구성 역할을 맡고 응용 프로그램별 소스 코드를 제공 하 고 메시지와 응답 하는 명령을 정의 하 여 구성 요소를 연결 합니다. 클래스 라이브러리에서 제공 된 사용자 고유의 응용 프로그램 관련 클래스를 파생 하 고을 재정의 하 고 기본 클래스의 동작을 보강 c + + 언어 및 표준 c + + 기술을 사용 합니다.
+MFC 프레임 워크를 사용 하 여 응용 프로그램을 구성 역할을 맡고 응용 프로그램별 소스 코드를 제공 하 고 메시지와 응답 하는 명령을 정의 하 여 구성 요소를 연결 합니다. 사용 된 C++ 언어 및 표준 C++ 에서 클래스 라이브러리에서 제공 된 사용자 고유의 응용 프로그램 관련 클래스를 파생 하 고 재정의 하 고 기본 클래스의 동작을 보강 하는 기술입니다.
 
 관련된 항목을 다음 표에서 일반적으로 수행 하는 작업과 프레임 워크의 역할 및 책임의 일반적인 순서를 설명 합니다.
 

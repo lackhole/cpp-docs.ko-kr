@@ -35,11 +35,11 @@ helpviewer_keywords:
 - _get_purecall_handler function
 ms.assetid: 2759b878-8afa-4129-86e7-72afc2153d9c
 ms.openlocfilehash: 0009b4bc1c7bf70bd84b9a82ecdc8643789e8164
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287402"
 ---
 # <a name="getpurecallhandler-setpurecallhandler"></a>_get_purecall_handler, _set_purecall_handler
 
@@ -66,7 +66,7 @@ _purecall_handler __cdecl _set_purecall_handler(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_get_purecall_handler** 하 고 **_set_purecall_handler** 함수는 Microsoft 고유의 및 c + + 코드에만 적용 합니다.
+합니다 **_get_purecall_handler** 하 고 **_set_purecall_handler** 함수는 Microsoft 고유의 및에 적용 됩니다 C++ 코드입니다.
 
 순수 가상 함수에 대한 호출은 구현이 없으므로 오류입니다. 기본적으로 순수 가상 함수를 호출하면 컴파일러는 오류 처리기 함수를 호출하는 코드를 생성하므로 프로그램이 종료됩니다. 순수 가상 함수 호출을 위해 고유한 오류 처리기 함수를 설치하여 디버깅 또는 보고용으로 이러한 호출을 catch할 수 있습니다. 사용자 고유의 오류 처리기를 사용 하려면 포함 된 함수를 만듭니다는 **_purecall_handler** 서명을 사용 하 여 **_set_purecall_handler** 현재 처리기를 확인 합니다.
 

@@ -17,11 +17,11 @@ helpviewer_keywords:
 - collection classes [MFC], shapes
 ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
 ms.openlocfilehash: c72a57385b0036d98629d1ee24111500b9d2f8ad
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62218614"
 ---
 # <a name="recommendations-for-choosing-a-collection-class"></a>컬렉션 클래스 선택에 대한 권장 사항
 

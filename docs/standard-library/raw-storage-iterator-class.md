@@ -11,11 +11,11 @@ helpviewer_keywords:
 - std::raw_storage_iterator [C++], iter_type
 ms.assetid: 6f033f15-f48e-452a-a326-647ea2cf346f
 ms.openlocfilehash: 8e13d03e577df4c64e85704993cfc0ff81af5f8f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369764"
 ---
 # <a name="rawstorageiterator-class"></a>raw_storage_iterator 클래스
 
@@ -95,7 +95,7 @@ typedef ForwardIterator iter_type;
 
 이 형식은 템플릿 매개 변수 `ForwardIterator`의 동의어입니다.
 
-## <a name="op_star"></a>  raw_storage_iterator:: operator\*
+## <a name="op_star"></a>  raw_storage_iterator::operator\*
 
 원시 저장소 반복기 식 \* *ii* = *x*를 구현하는 데 사용되는 역참조 연산자입니다.
 

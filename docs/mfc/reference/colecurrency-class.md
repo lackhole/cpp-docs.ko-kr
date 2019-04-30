@@ -23,11 +23,11 @@ helpviewer_keywords:
 - COleCurrency [MFC], m_status
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
 ms.openlocfilehash: 64f2b00c8a5aefe8a39c24d26af2a97625225059
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375745"
 ---
 # <a name="colecurrency-class"></a>COleCurrency 클래스
 
@@ -204,7 +204,7 @@ enum CurrencyStatus {
 
   - `COleCurrency::invalid` 나타냅니다이 `COleCurrency` 개체가 잘못 되었습니다. 즉, 해당 값 잘못 되었을 수 있습니다.
 
-  - `COleCurrency::null` 나타냅니다이 `COleCurrency` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 경우 "null" 의"값 없음" c + + NULL 대신 데이터베이스 관점에서)
+  - `COleCurrency::null` 나타냅니다이 `COleCurrency` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 값이 "null" 의"값 없음."와 반대로 데이터베이스 점에서 C++ NULL입니다.)
 
 상태를 `COleCurrency` 개체가 같은 경우에 유효 하지 않습니다.
 
@@ -265,7 +265,7 @@ enum CurrencyStatus{
 
 - `COleCurrency::invalid` 나타냅니다이 `COleCurrency` 개체가 잘못 되었습니다. 즉, 해당 값 잘못 되었을 수 있습니다.
 
-- `COleCurrency::null` 나타냅니다이 `COleCurrency` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 경우 "null" 의"값 없음" c + + NULL 대신 데이터베이스 관점에서)
+- `COleCurrency::null` 나타냅니다이 `COleCurrency` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 값이 "null" 의"값 없음."와 반대로 데이터베이스 점에서 C++ NULL입니다.)
 
 상태를 `COleCurrency` 개체가 같은 경우에 유효 하지 않습니다.
 
@@ -569,7 +569,7 @@ enum CurrencyStatus {
 
 - `COleCurrency::invalid` 나타냅니다이 `COleCurrency` 개체가 잘못 되었습니다. 즉, 해당 값 잘못 되었을 수 있습니다.
 
-- `COleCurrency::null` 나타냅니다이 `COleCurrency` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 경우 "null" 의"값 없음" c + + NULL 대신 데이터베이스 관점에서)
+- `COleCurrency::null` 나타냅니다이 `COleCurrency` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 값이 "null" 의"값 없음."와 반대로 데이터베이스 점에서 C++ NULL입니다.)
 
 > [!CAUTION]
 >  이 기능은 고급 프로그래밍 시나리오에 대 한 합니다. 이 함수는이 개체의 데이터를 변경 하지 않습니다. null 또는 잘못 된 상태를 설정 하려면 가장 자주 사용 됩니다. 대입 연산자 ( [연산자 =](#operator_eq)) 및 [SetCurrency](#setcurrency) 원본 값에 따라 개체의 상태를 설정 하려면.

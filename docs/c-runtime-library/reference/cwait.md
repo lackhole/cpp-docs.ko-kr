@@ -23,18 +23,18 @@ helpviewer_keywords:
 - _cwait function
 ms.assetid: d9b596b5-45f4-4e03-9896-3f383cb922b8
 ms.openlocfilehash: f7a49497ac71ec15261e1215bd2bbed2e49f42ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50489624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288786"
 ---
 # <a name="cwait"></a>_cwait
 
 다른 프로세스가 종료될 때까지 기다립니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -55,7 +55,7 @@ intptr_t _cwait(
 대기 하는 프로세스에 대 한 핸들 (즉, 프로세스에서 종료 된 후에 **_cwait** 반환할 수 있습니다).
 
 *action*<br/>
-Windows 운영 체제 응용 프로그램에서 NULL: 무시 다른 응용 프로그램: 작업 코드에서 수행할 *procHandle*합니다.
+NULL: Windows 운영 체제 응용 프로그램에서 무시 다른 응용 프로그램: 작업 코드에서 수행할 *procHandle*합니다.
 
 ## <a name="return-value"></a>반환 값
 

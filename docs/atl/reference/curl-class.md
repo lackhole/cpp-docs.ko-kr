@@ -36,11 +36,11 @@ helpviewer_keywords:
 - CUrl class
 ms.assetid: b3894d34-47b9-4961-9719-4197153793da
 ms.openlocfilehash: 913365e2b20015b22480dfd364d75b2be3c6355b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62277255"
 ---
 # <a name="curl-class"></a>CUrl 클래스
 
@@ -189,7 +189,7 @@ BOOL CrackUrl(LPCTSTR lpszUrl, DWORD dwFlags = 0) throw();
 URL입니다.
 
 *dwFlags*<br/>
-모든 이스케이프 문자를 변환할 ATL_URL_DECODE 또는 ATL_URL_ESCAPE 지정할 *lpszUrl* 구문 분석 한 후 실제 값으로. (Visual c + + 2005 전의 ATL_URL_DECODE 변환 모든 이스케이프 문자 구문 분석 하기 전에.)
+모든 이스케이프 문자를 변환할 ATL_URL_DECODE 또는 ATL_URL_ESCAPE 지정할 *lpszUrl* 구문 분석 한 후 실제 값으로. (Visual 하기 전에 C++ 2005 ATL_URL_DECODE 모든 이스케이프 문자 구문 분석 하기 전에 변환 합니다.)
 
 ### <a name="return-value"></a>반환 값
 

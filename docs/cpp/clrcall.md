@@ -7,11 +7,11 @@ helpviewer_keywords:
 - __clrcall keyword [C++]
 ms.assetid: 92096695-683a-40ed-bf65-0c8443572152
 ms.openlocfilehash: bc44feb97223de47f45734f75777ee040d0ebdd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62364573"
 ---
 # <a name="clrcall"></a>__clrcall
 
@@ -29,9 +29,9 @@ ms.locfileid: "50534578"
 
 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 모든 함수와 함수 포인터는 의미 **__clrcall** 컴파일러 이외의표시할compiland안의함수를허용하지것입니다 **__clrcall**합니다. 때 **/clr: pure** 사용 됩니다 **__clrcall** 함수 포인터와 외부 선언에만 지정할 수 있습니다.
 
-직접 호출할 수 있습니다 **__clrcall** 함수를 사용 하 여 컴파일된 기존의 c + + 코드에서 **/clr** 해당 함수에 MSIL 구현이 하기만 합니다. **__clrcall** 이러한 함수를 사용 하 여 컴파일되는 경우에 인라인 asm 및 예를 들어 CPU 별 intrinisics를 호출 하는 함수에서 직접 함수를 호출할 수 없습니다 `/clr`합니다.
+직접 호출할 수 있습니다 **__clrcall** 기존 계획에서 함수 C++ 를 사용 하 여 컴파일된 코드 **/clr** 함수에 MSIL 구현이 하기만 합니다. **__clrcall** 이러한 함수를 사용 하 여 컴파일되는 경우에 인라인 asm 및 예를 들어 CPU 별 intrinisics를 호출 하는 함수에서 직접 함수를 호출할 수 없습니다 `/clr`합니다.
 
-**__clrcall** 함수 포인터는 생성 된 응용 프로그램 도메인으로 사용 하려는 합니다.  전달 하는 대신 **__clrcall** 응용 프로그램 도메인 간에 대 한 포인터를 함수를 사용 하 여 <xref:System.CrossAppDomainDelegate>입니다. 자세한 내용은 [응용 프로그램 도메인 및 Visual c + +](../dotnet/application-domains-and-visual-cpp.md)합니다.
+**__clrcall** 함수 포인터는 생성 된 응용 프로그램 도메인으로 사용 하려는 합니다.  전달 하는 대신 **__clrcall** 응용 프로그램 도메인 간에 대 한 포인터를 함수를 사용 하 여 <xref:System.CrossAppDomainDelegate>입니다. 자세한 내용은 [응용 프로그램 도메인 및 시각적 개체 C++ ](../dotnet/application-domains-and-visual-cpp.md)합니다.
 
 ## <a name="example"></a>예제
 
@@ -95,4 +95,4 @@ int main() {
 ## <a name="see-also"></a>참고자료
 
 [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

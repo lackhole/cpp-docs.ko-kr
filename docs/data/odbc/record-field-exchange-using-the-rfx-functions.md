@@ -11,11 +11,11 @@ helpviewer_keywords:
 - function calls, RFX functions
 ms.assetid: c594300b-5a29-4119-a68b-e7ca32def696
 ms.openlocfilehash: dc717336a5279e7eda1b7c39b19a7c76f9055cd3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395692"
 ---
 # <a name="record-field-exchange-using-the-rfx-functions"></a>레코드 필드 교환: RFX 함수 사용
 
@@ -66,7 +66,7 @@ RFX 전역 함수는 레코드 집합에서 데이터 원본 및 필드 데이�
 
 [RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [레코드 필드 교환: RFX 작동 방식](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>
-[레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
-[레코드 집합: 동적으로 데이터 열 바인딩 (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
+[레코드 집합 레코드 집합 매개 변수화(ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
+[레코드 집합 데이터 열 동적 바인딩(ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
 [CRecordset 클래스](../../mfc/reference/crecordset-class.md)<br/>
 [CFieldExchange 클래스](../../mfc/reference/cfieldexchange-class.md)

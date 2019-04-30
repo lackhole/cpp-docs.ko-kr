@@ -9,11 +9,11 @@ helpviewer_keywords:
 - importing DLLs [C++], __declspec(dllimport)
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42
 ms.openlocfilehash: 30e0f6517f2d749962c5cf49dddb1662c9ccf129
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810226"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64341653"
 ---
 # <a name="import-into-an-application-using-declspecdllimport"></a>__Declspec (dllimport)을 사용 하 여 응용 프로그램으로 가져오기
 

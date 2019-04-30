@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4251
 ms.assetid: a9992038-f0c2-4fc4-a9be-4509442cbc1e
 ms.openlocfilehash: d2fff1d2f30c4ac80af6d5b9ca452fa5f30f5a15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62207359"
 ---
 # <a name="compiler-warning-level-1-c4251"></a>컴파일러 경고(수준 1) C4251
 
@@ -29,7 +29,7 @@ ms.locfileid: "50649659"
 
 가상 함수를 사용 하 여 클래스를 정의 하 고 함수는 DLL 인스턴스화하기 위해 호출할 수를 정의 하 고 형식의 개체를 삭제 하면 클래스를 내보내지 방지할 수 있습니다.  그런 다음 가상 함수 형식에만 호출할 수 있습니다.
 
-디버그 릴리스에 컴파일할 c + + 표준 라이브러리의 형식에서 파생 하는 경우에 C4251를 무시할 수 있습니다 (**/MTd**) 및 컴파일러 오류 메시지 _Container_base를 참조 하는 위치입니다.
+형식에서 파생 하는 경우에 C4251를 무시할 수 있습니다는 C++ 디버그 릴리스에 컴파일 표준 라이브러리 (**/MTd**) 컴파일러 오류 메시지 _Container_base를 참조 하는 위치 및 합니다.
 
 ```cpp
 // C4251.cpp

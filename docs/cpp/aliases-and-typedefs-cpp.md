@@ -5,11 +5,11 @@ f1_keywords:
 - typedef_cpp
 ms.assetid: af1c24d2-4bfd-408a-acfc-482e264232f5
 ms.openlocfilehash: 155f1868123514dfec89ab448ef22f2da225c4d3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62155292"
 ---
 # <a name="aliases-and-typedefs-c"></a>별칭 및 typedef(C++)
 
@@ -335,7 +335,7 @@ POINT ptOrigin;
 struct point_t ptOrigin;
 ```
 
-C + +에서 차이점 **typedef** 이름과 실제 형식 (사용 하 여 선언 합니다 **클래스**를 **구조체**를 **union**, 및 **enum** 키워드) 더 분명 합니다. 하지만 C 사례에 이름이 없는 구조체를 선언 하는 **typedef** 문을 계속 작동, C에서와 마찬가지로 없습니다 표기법 상의 이점을 제공
+C++, 간의 차이 **typedef** 이름과 실제 형식 (사용 하 여 선언 합니다 **클래스**, **구조체**를 **union**, 및 **enum** 키워드) 더 분명 합니다. 하지만 C 사례에 이름이 없는 구조체를 선언 하는 **typedef** 문을 계속 작동, C에서와 마찬가지로 없습니다 표기법 상의 이점을 제공
 
 ```cpp
 // typedef_with_class_types2.cpp

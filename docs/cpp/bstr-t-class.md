@@ -9,11 +9,11 @@ helpviewer_keywords:
 - BSTR object [C++], COM encapsulation
 ms.assetid: 58841fef-fe21-4a84-aab9-780262b5201f
 ms.openlocfilehash: f394a48c0326058be705d14fb0413e23e8052ae2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386163"
 ---
 # <a name="bstrt-class"></a>_bstr_t 클래스
 
@@ -44,7 +44,7 @@ A `_bstr_t` 개체를 캡슐화 합니다 [BSTR 데이터 형식](/previous-vers
 |||
 |-|-|
 |[operator =](../cpp/bstr-t-operator-equal.md)|기존 `_bstr_t` 개체에 새 값을 할당합니다.|
-|[operator + =](../cpp/bstr-t-operator-add-equal-plus.md)|`_bstr_t` 개체의 끝 부분에 문자를 추가합니다.|
+|[operator +=](../cpp/bstr-t-operator-add-equal-plus.md)|`_bstr_t` 개체의 끝 부분에 문자를 추가합니다.|
 |[연산자 +](../cpp/bstr-t-operator-add-equal-plus.md)|두 문자열을 연결합니다.|
 |[연산자 !](../cpp/bstr-t-operator-logical-not.md)|확인 캡슐화 된 `BSTR` NULL 문자열입니다.|
 |[operator ==, !=, \<, >, \<=, >=](../cpp/bstr-t-relational-operators.md)|두 `_bstr_t` 개체를 비교합니다.|
@@ -56,7 +56,7 @@ A `_bstr_t` 개체를 캡슐화 합니다 [BSTR 데이터 형식](/previous-vers
 
 **헤더:** \<comutil.h >
 
-**Lib:** comsuppw.lib 또는 comsuppwd.lib (참조 [/zc: wchar_t (wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 자세한)
+**Lib:** comsuppw.lib 또는 comsuppwd.lib(자세한 내용은 [/zc: wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조)
 
 ## <a name="see-also"></a>참고자료
 

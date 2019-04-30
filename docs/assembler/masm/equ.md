@@ -7,11 +7,11 @@ helpviewer_keywords:
 - EQU directive
 ms.assetid: 96db466a-1eab-45bd-a3c2-5a59bd754eab
 ms.openlocfilehash: b08b103886330a7ffc604d0070aa6956ba68b873
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62185077"
 ---
 # <a name="equ"></a>EQU
 
@@ -19,9 +19,9 @@ ms.locfileid: "51328723"
 
 ## <a name="syntax"></a>구문
 
-> *이름을* EQU *식*
+> *name* EQU *expression*
 >
-> *이름을* EQU \< *텍스트*>
+> *name* EQU \<*text*>
 
 ## <a name="remarks"></a>설명
 

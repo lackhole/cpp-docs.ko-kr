@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Windows Sockets [MFC], with archives
 ms.assetid: 2e3c9bb2-7e7b-4f28-8dc5-6cb7a484edac
 ms.openlocfilehash: 4ea1e2911b156066360da09993fa7302db79f12b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305296"
 ---
 # <a name="windows-sockets-example-of-sockets-using-archives"></a>Windows 소켓: 아카이브를 사용 하는 소켓의 예
 
@@ -49,7 +49,7 @@ ms.locfileid: "57295262"
 
 - [Windows 소켓: 소켓 클래스에서 파생](../mfc/windows-sockets-deriving-from-socket-classes.md)
 
-- [Windows 소켓: 보관이 포함 된 소켓의 작동 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+- [Windows 소켓: 소켓과 아카이브를 함께 사용하는 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
 
 - [Windows 소켓: 배경](../mfc/windows-sockets-background.md)
 

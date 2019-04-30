@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Marshaling Library, extending
 ms.assetid: 4c4a56d7-1d44-4118-b85f-f9686515e6e9
 ms.openlocfilehash: f289539807b1e9499cef51427d3f6a494545cc60
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387307"
 ---
 # <a name="how-to-extend-the-marshaling-library"></a>방법: 마샬링 라이브러리 확장
 
 이 항목에서는 데이터 형식 간의 변환을 제공 마샬링 라이브러리를 확장 하는 방법에 설명 합니다. 사용자는 현재 지원 하지 않는 라이브러리에서 데이터 변환을 수행할 마샬링 라이브러리를 확장할 수 있습니다.
 
-마샬링 라이브러리에 유무에 관계 없이 두 가지 방법 중 하나를 확장할 수 있습니다는 [marshal_context 클래스](../dotnet/marshal-context-class.md)합니다. 검토 합니다 [Overview of Marshaling c + +에서](../dotnet/overview-of-marshaling-in-cpp.md) 새 변환 컨텍스트를 필요한 지 여부를 결정 하는 항목입니다.
+마샬링 라이브러리에 유무에 관계 없이 두 가지 방법 중 하나를 확장할 수 있습니다는 [marshal_context 클래스](../dotnet/marshal-context-class.md)합니다. 검토 합니다 [마샬링 개요 C++ ](../dotnet/overview-of-marshaling-in-cpp.md) 새 변환 컨텍스트를 필요한 지 여부를 결정 하는 항목입니다.
 
 두 경우 모두 먼저 새 마샬링 변환에 대 한 파일을 만듭니다. 이렇게 하면 표준 마샬링 라이브러리 파일의 무결성을 유지 합니다. 다른 컴퓨터 또는 다른 프로그래머가 프로젝트를 이식 하려는 경우 프로젝트의 나머지와 함께 새 마샬링 파일을 복사 해야 합니다. 이런 방식으로 프로젝트를 수신 하는 사용자가 새 변환을 수신을 보장할 수는 및 라이브러리 파일을 수정할 필요가 없습니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "57750365"
 
    - windows 데이터 형식에 대 한 marshal_windows.h 합니다.
 
-   - c + + 표준 라이브러리 데이터 형식에 대 한 marshal_cppstd.h 합니다.
+   - 에 대 한 marshal_cppstd.h C++ 표준 라이브러리 데이터 형식입니다.
 
    - ATL 데이터 형식에 대 한 marshal_atl.h 합니다.
 
@@ -59,7 +59,7 @@ namespace msclr {
 
    - windows 데이터 형식에 대 한 marshal_windows.h 합니다.
 
-   - c + + 표준 라이브러리 데이터 형식에 대 한 marshal_cppstd.h 합니다.
+   - 에 대 한 marshal_cppstd.h C++ 표준 라이브러리 데이터 형식입니다.
 
    - ATL 데이터 형식에 대 한 marshal_atl.h 합니다.
 

@@ -27,11 +27,11 @@ helpviewer_keywords:
 - std::setprecision [C++]
 - std::setw [C++]
 ms.openlocfilehash: b5ead8b1000fd6c2708b2450f71da3dc612dc51d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62158562"
 ---
 # <a name="ltiomanipgt-functions"></a>&lt;iomanip&gt; 함수
 
@@ -53,7 +53,7 @@ T7 get_money(Money& _Amount, bool _Intl);
 
 ### <a name="parameters"></a>매개 변수
 
-*(_A)*<br/>
+*_Amount*<br/>
 추출된 통화 값입니다.
 
 *_Intl*<br/>
@@ -97,7 +97,7 @@ T8 put_money(const Money& _Amount, bool _Intl);
 
 ### <a name="parameters"></a>매개 변수
 
-*(_A)*<br/>
+*_Amount*<br/>
 스트림에 삽입할 금액입니다.
 
 *_Intl*<br/>
@@ -150,10 +150,10 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 *str*<br/>
 Std:: string, char\*, 리터럴, 원시 문자열 리터럴 또는 이러한의 다양 한 버전 문자열 (예: std:: wstring, wchar_t\*).
 
-*구분 기호*<br/>
+*delimiter*<br/>
 문자열의 시작과 끝에 대한 구분 기호로 사용할 사용자 지정 문자 또는 와이드 문자입니다.
 
-*이스케이프*<br/>
+*escape*<br/>
 문자열 내의 이스케이프 시퀀스에 대한 이스케이프 문자로 사용할 사용자 지정 문자 또는 와이드 문자입니다.
 
 ### <a name="remarks"></a>설명
@@ -311,7 +311,7 @@ T1 resetiosflags(ios_base::fmtflags Mask);
 
 ### <a name="parameters"></a>매개 변수
 
-*마스크*<br/>
+*Mask*<br/>
 선택을 취소할 플래그입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -332,7 +332,7 @@ T3 setbase(int _Base);
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Base*<br/>
 숫자 밑입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -362,7 +362,7 @@ T4 setfill(Elem Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 오른쪽 맞춤된 디스플레이에서 공백을 채우는데 사용할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -383,7 +383,7 @@ T2 setiosflags(ios_base::fmtflags Mask);
 
 ### <a name="parameters"></a>매개 변수
 
-*마스크*<br/>
+*Mask*<br/>
 설정할 플래그입니다.
 
 ### <a name="return-value"></a>반환 값

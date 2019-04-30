@@ -89,11 +89,11 @@ helpviewer_keywords:
 - std::deque [C++], swap
 ms.assetid: 64842ee5-057a-4063-8c16-4267a0332584
 ms.openlocfilehash: 8a50d04751ac5b4abaf94d0d9fd16f57c6200f66
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394015"
 ---
 # <a name="deque-class"></a>deque 클래스
 
@@ -111,7 +111,7 @@ class deque
 *Type*<br/>
 deque에 저장되는 요소 데이터 형식입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 deque의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수 선택 사항이 며 기본값은 **할당자\<유형 >** 합니다.
 
 ## <a name="remarks"></a>설명
@@ -235,7 +235,7 @@ void assign(initializer_list<Type> IList);
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*<br/>
+*첫째*<br/>
 인수 deque에서 복사할 요소 범위에 있는 첫 번째 요소의 위치입니다.
 
 *마지막*<br/>
@@ -244,7 +244,7 @@ void assign(initializer_list<Type> IList);
 *개수*<br/>
 deque에 삽입되는 요소의 복사본의 수입니다.
 
-*val*<br/>
+*Val*<br/>
 deque에 삽입되는 요소의 값입니다.
 
 *IList*<br/>
@@ -773,11 +773,11 @@ deque(initializer_list<value_type> IList, const Allocator& Al);
 |-|-|
 |*Al*|이 개체에 사용할 할당자 클래스입니다.|
 |*개수*|생성된 deque에 있는 요소의 수입니다.|
-|*val*|생성된 deque에 있는 요소의 값입니다.|
+|*Val*|생성된 deque에 있는 요소의 값입니다.|
 |*오른쪽*|생성된 deque가 복사본으로 지정될 deque입니다.|
-|*첫 번째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 요소의 범위를 벗어난 첫 번째 요소의 위치입니다.|
-|* IList'|복사할 initializer_list입니다.|
+|* IList'| 복사할 initializer_list입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -1518,9 +1518,9 @@ IList);
 |매개 변수|설명|
 |-|-|
 |*Where*|대상 deque에서 첫 번째 요소를 삽입하는 위치입니다.|
-|*val*|deque에 삽입되는 요소의 값입니다.|
+|*Val*|deque에 삽입되는 요소의 값입니다.|
 |*개수*|deque에 삽입되는 요소의 수입니다.|
-|*첫 번째*|인수 deque에서 복사할 요소 범위에 있는 첫 번째 요소의 위치입니다.|
+|*첫째*|인수 deque에서 복사할 요소 범위에 있는 첫 번째 요소의 위치입니다.|
 |*마지막*|인수 deque에서 복사할 요소 범위를 벗어난 첫 번째 요소의 위치입니다.|
 |*IList*|삽입할 요소의 initializer_list입니다.|
 

@@ -7,11 +7,11 @@ ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ms.openlocfilehash: 2c2bed4063194bdc3c0f3fbc405be6bf9a4031e7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58870782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315197"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio에 C++ 지원 설치
 
@@ -21,7 +21,7 @@ ms.locfileid: "58870782"
 
 ## <a name="visual-studio-2019-installation"></a>Visual Studio 2019 Installation
 
-시작 하려면 Visual Studio 2019! 이 버전에서 선택 하 고 필요한 기능만 설치 하기 쉽습니다. 고 감소는 최소 사용 공간도 때문이 빠르고 적은 시스템에 미치는 영향을 설치 합니다.
+Visual Studio 2019를 시작합니다. 이 버전에서는 필요한 기능만 선택하여 쉽게 설치할 수 있습니다. 또한 최소 설치 공간이 줄어들기 때문에 시스템에 미치는 영향을 최소화하면서 빠르게 설치됩니다.
 
 > [!NOTE]
 > 이 항목에서는 Windows에서 Visual Studio의 설치에 적용 됩니다. [Visual Studio Code](https://code.visualstudio.com/) Windows, Mac 및 Linux 시스템에서 실행 되는 경량, 플랫폼 간 개발 환경입니다. Microsoft [C /C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) 확장 프로그램은 IntelliSense, 디버깅, 코드 서식 지정, 자동 완성을 지원 합니다. Mac 용 visual Studio에서 Microsoft를 지원 하지 않습니다 C++에.NET 언어 및 플랫폼 간 개발 지원 하지만 합니다. 설치 지침은 [Mac 용 Visual Studio 설치](/visualstudio/mac/installation/)합니다.
@@ -34,7 +34,7 @@ ms.locfileid: "58870782"
 
 Visual Studio 설치를 시작하기 전에
 
-1. [시스템 요구 사항](/visualstudio/releases/2019/system-requirements)을 확인합니다. 이러한 요구 사항을 컴퓨터에 Visual Studio 2019 지원 하는지 여부를 알 수 있습니다.
+1. [시스템 요구 사항](/visualstudio/releases/2019/system-requirements)을 확인합니다. 이러한 요구 사항은 컴퓨터에서 Visual Studio 2019를 지원하는지 여부를 확인하는 데 도움이 됩니다.
 
 1. 최신 Windows 업데이트를 적용합니다. 이러한 업데이트는 컴퓨터에 최신 보안 업데이트와 Visual Studio에 필요한 시스템 구성 요소가 모두 설치되어 있는지 확인합니다.
 
@@ -42,18 +42,18 @@ Visual Studio 설치를 시작하기 전에
 
 1. 공간을 확보합니다. 예를 들어 디스크 정리 앱을 실행하여 %SystemDrive%에서 불필요한 파일 및 애플리케이션을 제거합니다.
 
-Visual Studio 2019를 사용 하 여 이전 버전의 Visual Studio 나란히 실행 하는 방법에 대 한 질문에 대 한 참조를 [Visual Studio 2019 플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility/) 페이지입니다.
+Visual Studio 2019와 함께 이전 버전의 Visual Studio를 실행하는 방법에 대한 의문 사항은 [Visual Studio 2019 플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility/) 페이지를 참조하세요.
 
 ### <a name="step-2---download-visual-studio"></a>2단계 - Visual Studio 다운로드
 
-다음으로 Visual Studio 부트스트래퍼 파일을 다운로드합니다. 이렇게 하려면 다음 단추를 선택 하 고 선택 하려는 Visual Studio의 버전 **저장할**를 선택한 후 **폴더 열기**.
+다음으로 Visual Studio 부트스트래퍼 파일을 다운로드합니다. 이렇게 하려면 다음 단추를 선택하고, 원하는 Visual Studio 버전을 선택하고, **저장**을 선택한 다음, **폴더 열기**를 선택합니다.
 
  > [!div class="button"]
  > [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
 ### <a name="step-3---install-the-visual-studio-installer"></a>3단계 - Visual Studio 설치 관리자 설치
 
-Visual Studio 설치 관리자를 설치 하려면 부트스트래퍼 파일을 실행 합니다. 이 새 경량 설치 관리자를 설치 하 고 Visual Studio 사용자 지정 하는 데 필요한 모든 포함 합니다.
+Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 실행합니다. 이 새 경량 설치 관리자는 Visual Studio를 설치하고 사용자 지정하는 데 필요한 모든 항목을 포함합니다.
 
 1. **다운로드** 폴더에서 다음 파일 중 하나와 일치하거나 비슷한 부트스트래퍼 파일을 두 번 클릭합니다.
 
@@ -61,17 +61,17 @@ Visual Studio 설치 관리자를 설치 하려면 부트스트래퍼 파일을 
    * Visual Studio Professional용 **vs_professional.exe**
    * Visual Studio Enterprise용 **vs_enterprise.exe**
 
-   사용자 계정 컨트롤 알림을 받으면, 선택 **예**합니다.
+   사용자 계정 컨트롤 알림을 받으면 **예**를 선택합니다.
 
-1. Microsoft [사용 약관](https://visualstudio.microsoft.com/license-terms/) 및 Microsoft [개인정보처리방침](https://privacy.microsoft.com/privacystatement)에 동의하도록 요청하는 메시지가 표시됩니다. 선택할 **계속**합니다.
+1. Microsoft [사용 약관](https://visualstudio.microsoft.com/license-terms/) 및 Microsoft [개인정보처리방침](https://privacy.microsoft.com/privacystatement)에 동의하도록 요청하는 메시지가 표시됩니다. **계속**을 선택합니다.
 
-### <a name="step-4---choose-workloads"></a>4 단계-워크 로드를 선택 합니다.
+### <a name="step-4---choose-workloads"></a>4단계 - 워크로드 선택
 
 설치 관리자를 설치한 후 설치를 선택 하 여 사용자 지정에 사용할 수 있습니다 합니다 *워크 로드*, 또는 집합을 기능입니다. 방법은 다음과 같습니다.
 
 1. **Visual Studio 설치** 화면에서 원하는 작업을 찾습니다.
 
-   ![Visual Studio 2019: 워크 로드를 설치 합니다.](../get-started/media/vs-installer-workloads.png)
+   ![Visual Studio 2019: 워크로드 설치](../get-started/media/vs-installer-workloads.png)
 
    Core에 대 한 C++ 지원을 선택 합니다 "를 사용한 데스크톱 개발 C++" 워크 로드. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
 
@@ -84,19 +84,19 @@ Visual Studio 설치 관리자를 설치 하려면 부트스트래퍼 파일을 
     다음으로 Visual Studio 설치 진행률을 보여 주는 상태 화면이 나타납니다.
 
 > [!TIP]
-> 설치 후에 언제든지 초기에 설치하지 않은 워크로드 또는 구성 요소를 설치할 수 있습니다. Visual Studio가 열려 있으면 **도구** > **도구 및 기능 가져오기...** 로 이동하여 Visual Studio 설치 관리자를 엽니다. 또는 [시작] 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. 여기에서 워크 로드를 설치 하려는 구성 요소를 선택할 수 있습니다. 그런 다음 선택할 **수정**합니다.
+> 설치 후에 언제든지 초기에 설치하지 않은 워크로드 또는 구성 요소를 설치할 수 있습니다. Visual Studio가 열려 있으면 **도구** > **도구 및 기능 가져오기...** 로 이동하여 Visual Studio 설치 관리자를 엽니다. 또는 [시작] 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. 여기에서 설치할 워크로드 또는 구성 요소를 선택합니다. 그런 다음, **수정**을 선택합니다.
 
-## <a name="step-5---choose-individual-components-optional"></a>5 단계-개별 구성 요소 (선택 사항)를 선택 합니다.
+## <a name="step-5---choose-individual-components-optional"></a>5단계 - 개별 구성 요소 선택(선택 사항)
 
-Visual Studio 설치에 맞게 워크 로드 기능을 사용 하지 않으려는 경우 워크 로드를 설치 하는 보다 자세한 구성 요소를 추가할 수 있습니다 이렇게 하면 설치 하거나 개별 구성 요소를 추가 하 여는 **개별구성요소** 탭 합니다. 선택 내용을 지정 하 고 다음 표시 되는 메시지입니다.
+Workloads 기능을 사용하여 Visual Studio 설치를 사용자 지정하지 않거나 워크로드 설치보다 더 많은 구성 요소를 추가하려는 경우, **개별 구성 요소** 탭에서 개별 구성 요소를 설치하거나 추가하여 수행할 수 있습니다. 원하는 것을 선택한 다음, 지시를 따릅니다.
 
-  ![Visual Studio 2019-개별 구성 요소 설치](../get-started/media/vs-installer-individual-components.png "Visual Studio 설치 개별 구성 요소")
+  ![Visual Studio 2019 - 개별 구성 요소 설치](../get-started/media/vs-installer-individual-components.png "Visual Studio 개별 구성 요소 설치")
 
 ## <a name="step-6---install-language-packs-optional"></a>6단계 - 언어 팩 설치(선택 사항)
 
-기본적으로 설치 관리자 프로그램은 처음 실행될 때 운영 체제의 언어와 일치시키려고 합니다. 선택한 언어로 Visual Studio를 설치 하려면 선택 합니다 **언어 팩** 에서 Visual Studio 설치 관리자를 탭 한 다음 지시를 따릅니다.
+기본적으로 설치 관리자 프로그램은 처음 실행될 때 운영 체제의 언어와 일치시키려고 합니다. 선택한 언어로 Visual Studio를 설치하려면 Visual Studio 설치 관리자에서 **언어 팩** 탭을 선택한 다음, 지시에 따릅니다.
 
-  ![Visual Studio 2019-언어 팩 설치](../get-started/media/vs-installer-language-packs.png "Visual Studio 설치 언어 팩")
+  ![Visual Studio 2019 - 언어 팩 설치](../get-started/media/vs-installer-language-packs.png "Visual Studio 언어 팩 설치")
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>명령줄에서 설치 관리자 언어 변경
 
@@ -104,24 +104,24 @@ Visual Studio 설치에 맞게 워크 로드 기능을 사용 하지 않으려�
 
 ### <a name="step-7---change-the-installation-location-optional"></a>7단계 - 설치 위치 변경(선택 사항)
 
-시스템 드라이브에 Visual Studio의 설치 공간을 줄일 수 있습니다. 다운로드 캐시, 공유 구성 요소, SDK 및 도구를 다른 드라이브로 이동하고 Visual Studio를 가장 빠르게 실행되는 드라이브에 유지하도록 선택할 수 있습니다.
+시스템 드라이브에서 Visual Studio의 설치 공간을 줄일 수 있습니다. 다운로드 캐시, 공유 구성 요소, SDK 및 도구를 다른 드라이브로 이동하고 Visual Studio를 가장 빠르게 실행되는 드라이브에 유지하도록 선택할 수 있습니다.
 
-  ![Visual Studio 2019-설치 위치 변경](../get-started/media/vs-installer-installation-locations.png "설치 위치 변경")
+  ![Visual Studio 2019 - 설치 위치 변경](../get-started/media/vs-installer-installation-locations.png "설치 위치 변경")
 
 > [!IMPORTANT]
-> Visual Studio를 처음 설치할 때에 다른 드라이브를 선택할 수 있습니다. 이미 설치 했으면 하 고 드라이브를 변경 하려는 경우 Visual Studio를 제거 하 고 다시 설치 해야 합니다.
+> Visual Studio를 처음 설치할 때만 다른 드라이브를 선택할 수 있습니다. 이미 설치하고 드라이브를 변경하려면 Visual Studio를 제거한 다음, 다시 설치해야 합니다.
 
 ## <a name="step-8---start-developing"></a>8단계 - 개발 시작
 
-1. Visual Studio 설치를 완료 한 후 선택 합니다 **시작** 단추 Visual Studio를 사용 하 여 개발을 시작 합니다.
+1. Visual Studio 설치가 완료되면 **시작** 단추를 선택하여 Visual Studio에서 개발을 시작합니다.
 
 1. 시작 창에서 **새 프로젝트 만들기**를 선택합니다.
 
-1. 검색 상자에서 사용 가능한 템플릿 목록을 보려면 만들려는 앱의 유형을 입력 합니다. 템플릿 목록 설치 도중에 선택한 워크 로드에 따라 달라 집니다. 다른 템플릿을 보려면 다양 한 워크 로드를 선택 합니다.
+1. 검색 상자에 생성할 앱 유형을 입력하여 사용 가능한 템플릿 목록을 확인합니다. 템플릿 목록은 설치 중에 선택한 워크로드에 따라 달라집니다. 다른 템플릿을 보려면 다른 워크로드를 선택합니다.
 
-   사용 하 여 특정 프로그래밍 언어에 대 한 검색어를 필터링 할 수도 있습니다는 **언어** 드롭 다운 목록. 사용 하 여 필터링 할 수 있습니다는 **플랫폼** 목록 및 **프로젝트 형식을** 너무을 나열 합니다.
+   **언어** 드롭다운 목록을 사용하여 특정 프로그래밍 언어 검색을 필터링할 수도 있습니다. **플랫폼** 목록 및 **프로젝트 형식** 목록을 사용하여 필터링할 수도 있습니다.
 
-1. Visual Studio 새 프로젝트를 열고 코드 준비가!
+1. Visual Studio에서 새 프로젝트를 열면 코딩할 준비가 완료됩니다.
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ Visual Studio 설치에 맞게 워크 로드 기능을 사용 하지 않으려�
 
 ## <a name="visual-studio-2017-installation"></a>Visual Studio 2017 Installation
 
-Visual Studio 2017에서 선택 하 고 필요한 기능만 설치 하기 쉽습니다. 고 감소는 최소 사용 공간도 때문이 빠르고 적은 시스템에 미치는 영향을 설치 합니다.
+Visual Studio 2017에서 선택 하 고 필요한 기능만 설치 하기 쉽습니다. 또한 최소 설치 공간이 줄어들기 때문에 시스템에 미치는 영향을 최소화하면서 빠르게 설치됩니다.
 
 ### <a name="prerequisites"></a>전제 조건
 

@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Yd compiler option [C++]
 ms.assetid: c5a699fe-65ce-461e-964c-7f5eb2a8320a
 ms.openlocfilehash: e6719226d28088d10da6c4f0e6caf3bdb78bea27
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316173"
 ---
 # <a name="yd-place-debug-information-in-object-file"></a>/Yd(개체 파일에 디버그 정보 삽입)
 
@@ -28,7 +28,7 @@ ms.locfileid: "57820158"
 
 ## <a name="remarks"></a>설명
 
-**/Yd** 사용 되지 않습니다. Visual c + +는 이제 단일.pdb 파일에 쓰는 여러 개체를 사용 하 여 **/Zi** 대신 합니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)합니다.
+**/Yd** 사용 되지 않습니다. Visual C++ 에서는 이제 여러 개체를 단일.pdb 파일에 쓸 사용 **/Zi** 대신 합니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)합니다.
 
 디버깅 정보를 포함 하는 라이브러리 배포에 필요 하지 않은 경우 사용 합니다 [/Zi](z7-zi-zi-debug-information-format.md) 옵션 대신 **/z7** 하 고 **/Yd**합니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "57820158"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
 ms.openlocfilehash: afcdb1246d9c02f83dbc8708326d10e802ad2779
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212094"
 ---
 # <a name="ltcomplexgt"></a>&lt;complex&gt;
 
@@ -44,7 +44,7 @@ ms.locfileid: "50525868"
 
 복소수를 나타내는 방법으로 *z* = (*는*를 *b*) 형태로 *z* = *를*  +  *bi*, 여기서 *합니까*<sup>2</sup> =-1, 규칙에 실수 집합의 대 수는 복소수 집합 및 해당 구성 요소에 적용할 수 있습니다. 예를 들어:
 
-   (1 + 2*있습니까*) \* (2 + 3*합니까*) = 1 \* (2 + 3*있나요*) + 2*하나요* \* (2 + 3*i*) = (2 + 3*있나요*) + (4*있나요* + 6*합니까*<sup>2</sup>) (2-6) + (3 + 4) =*하나요* =-4 + 7*있나요*
+   (1 + 2*i*) \* (2 + 3*i*) = 1 \* (2 + 3*i*) + 2*i* \* (2 + 3*i*) = (2 + 3*i*) + (4*i* + 6*i*<sup>2</sup>) = (2 - 6) + (3 + 4)*i* = -4 + 7*i*
 
 복소수 시스템은 필드이지만 순서가 지정된 필드가 아닙니다. 순서가 없다는 복소수의 실수는 복소수를 같지를 적용할 수 없습니다 있도록 실수 및 해당 하위 집합의 필드에 대 한 없기 때문에 있습니다.
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - Error lookup tool
 ms.assetid: 6040ffc1-2355-4a45-8998-84cbcba4ca91
 ms.openlocfilehash: c8afcafa7d1b8cd666eb5b02f09a14782f8621ca
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62271777"
 ---
 # <a name="errlook-reference"></a>ERRLOOK 참조
 
@@ -35,4 +35,4 @@ ERRLOOK Look Up 단추를 설명합니다.
 ## <a name="related-sections"></a>관련 단원
 
 [추가 MSVC 빌드 도구](c-cpp-build-tools.md)<br/>
-Visual c + +에서 제공 하는 도구를 빌드는 C/c + + 항목의 링크를 제공 합니다.
+C를 설명 하는 항목에 대 한 링크를 제공 합니다. /C++ 시각적 개체에 제공 하는 도구를 빌드 C++합니다.

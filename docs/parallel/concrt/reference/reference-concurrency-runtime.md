@@ -454,24 +454,24 @@ helpviewer_keywords:
 - HRESULT typedef
 ms.assetid: a057c776-7caa-4605-8f33-9815cf6f9b27
 ms.openlocfilehash: fa1156aa6406f1c34712e845612147a42b753184
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180149"
 ---
 # <a name="reference-concurrency-runtime"></a>참조(동시성 런타임)
 
 이 섹션에서는 동시성 런타임에 대 한 참조 정보를 포함합니다.
 
 > [!Note]
-> C + + 언어 표준 라이브러리와 같은 구현을 위해 밑줄 (_) 문자로 시작 하는 식별자의 사용을 예약 합니다. 코드에서는 이러한 이름을 사용하지 마세요. 해당 이름이 이 규칙을 따르는 코드 요소의 동작은 보장되지 않으며 이후 릴리스에서 변경될 수 있습니다. 이러한 이유로, 동시성 런타임에서 설명서에서 해당 코드 요소가 생략 됩니다.
+> C++ 언어 표준 라이브러리와 같은 구현을 위해 밑줄 (_) 문자로 시작 하는 식별자의 사용이 예약 됩니다. 코드에서는 이러한 이름을 사용하지 마세요. 해당 이름이 이 규칙을 따르는 코드 요소의 동작은 보장되지 않으며 이후 릴리스에서 변경될 수 있습니다. 이러한 이유로, 동시성 런타임에서 설명서에서 해당 코드 요소가 생략 됩니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
-동시성 런타임에서 c + + 용 동시 프로그래밍 프레임 워크에 대 한 액세스를 제공 하는 함수 및 동시성 네임 스페이스 클래스를 제공 합니다. 자세한 내용은 [Concurrency Runtime](../concurrency-runtime.md)을 참조하세요.
+Concurrency 네임 스페이스 클래스를 제공 하 고 동시성 런타임에서 대 한 동시 프로그래밍 프레임 워크에 대 한 액세스를 제공 하는 함수 C++입니다. 자세한 내용은 [동시성 런타임](../concurrency-runtime.md)을 참조하세요.
 
 [std 네임 스페이스](std-namespace.md)
 
-[stdx 네임 스페이스](stdx-namespace.md)
+[stdx namespace](stdx-namespace.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - data marshaling [C++], platform invoke
 ms.assetid: 18e5218c-6916-48a1-a127-f66e22ef15fc
 ms.openlocfilehash: ee9d77920f04f7eba5112c66a906b02b7fc4a658
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384428"
 ---
 # <a name="using-explicit-pinvoke-in-c-dllimport-attribute"></a>C++에서 명시적 PInvoke 사용(DllImport 특성)
 
-사용 하 여 명시적 플랫폼 호출 (또는 PInvoke) 기능을 제공 하는.NET Framework는 `Dllimport` 특성 관리 되는 응용 프로그램이 Dll 내에서 패키지 관리 되지 않는 함수를 호출할 수 있도록 합니다. 명시적 PInvoke 관리 되지 않는 Api는 Dll로 패키지 된 소스 코드를 사용할 수 없는 경우에 필요 합니다. PInvoke 필요 예를 들어 Win32 함수를 호출 합니다. 그렇지 않은 경우 암시적 P를 사용 하 여 {Invoke; 참조 [c + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md) 자세한 내용은 합니다.
+사용 하 여 명시적 플랫폼 호출 (또는 PInvoke) 기능을 제공 하는.NET Framework는 `Dllimport` 특성 관리 되는 응용 프로그램이 Dll 내에서 패키지 관리 되지 않는 함수를 호출할 수 있도록 합니다. 명시적 PInvoke 관리 되지 않는 Api는 Dll로 패키지 된 소스 코드를 사용할 수 없는 경우에 필요 합니다. PInvoke 필요 예를 들어 Win32 함수를 호출 합니다. 그렇지 않은 경우 암시적 P를 사용 {Invoke; 참조 [사용 C++ (암시적 PInvoke) Interop](../dotnet/using-cpp-interop-implicit-pinvoke.md) 자세한 내용은 합니다.
 
 PInvoke를 사용 하 여 작동 <xref:System.Runtime.InteropServices.DllImportAttribute>합니다. 첫 번째 인수로 DLL의 이름을, 사용 하는이 특성에 사용 되는 각 DLL 진입점에 대 한 함수 선언 앞에 배치 됩니다. 함수의 시그니처와 해당 DLL에서 내보내기 함수의 이름과 같아야 합니다. (그러나 일부 형식 변환이 정의 하 여 암시적으로 수행할 수 있습니다는 `DllImport` 관리 되는 형식으로 선언 합니다.)
 

@@ -14,11 +14,11 @@ helpviewer_keywords:
 - WM_NOTIFY message
 ms.assetid: 04a96dde-7049-41df-9954-ad7bb5587caf
 ms.openlocfilehash: 74eb39a855da3ff3e6da7f14a76bf0804919826d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399579"
 ---
 # <a name="tn061-onnotify-and-wmnotify-messages"></a>TN061: ON_NOTIFY 및 WM_NOTIFY 메시지
 
@@ -31,7 +31,7 @@ ms.locfileid: "50658850"
 
 Windows의 부모에 대 한 메시지를 전송 하 여 콘텐츠 및 선택 컨트롤 배경에 그리기 3.x 변경 컨트롤의 마우스 클릭 같은 이벤트의 부모에 게 알립니다. 간단한 알림 (예: BN_CLICKED) 알림 코드를 사용 하 여 특수 WM_COMMAND 메시지로 전송 됩니다 및 ID에 압축을 제어할 *wParam* 하 고 있는 컨트롤의 핸들 *lParam*합니다. 이후 유의 *wParam* 및 *lParam* 는 추가 데이터를 전달할 방법이 전체-이러한 메시지는 간단한 알림만 될 수 있습니다. 예를 들어 BN_CLICKED 알림에서 방법이 있으면 단추를 클릭 했을 때 마우스 커서의 위치에 대 한 정보를 보내도록 합니다.
 
-WM_CTLCOLOR, WM_VSCROLL, 하, WM_DRAWITEM, WM_MEASUREITEM, WM_COMPAREITEM, WM_DELETEITEM, WM_ 메시지 특수 한 용도의 다양 한 컨트롤 3.x 해야 Windows에서 추가 데이터를 포함 하는 알림 메시지를 보내면 사용 CHARTOITEM, WM_VKEYTOITEM, 및 등입니다. 이러한 메시지는 다시 전송 하는 컨트롤에 반영 될 수 있습니다. 자세한 내용은 [TN062: Windows 컨트롤에 대 한 메시지 리플렉션](../mfc/tn062-message-reflection-for-windows-controls.md)합니다.
+WM_CTLCOLOR, WM_VSCROLL, 하, WM_DRAWITEM, WM_MEASUREITEM, WM_COMPAREITEM, WM_DELETEITEM, WM_ 메시지 특수 한 용도의 다양 한 컨트롤 3.x 해야 Windows에서 추가 데이터를 포함 하는 알림 메시지를 보내면 사용 CHARTOITEM, WM_VKEYTOITEM, 및 등입니다. 이러한 메시지는 다시 전송 하는 컨트롤에 반영 될 수 있습니다. 자세한 내용은 참조 하세요. [TN062: Windows 컨트롤에 대 한 리플렉션 메시지](../mfc/tn062-message-reflection-for-windows-controls.md)합니다.
 
 **Win32에서 알림 메시지**
 
@@ -114,7 +114,7 @@ afx_msg void memberFxn(NMHDR* pNotifyStruct, LRESULT* result);
 *pNotifyStruct*<br/>
 위 섹션에 설명 된 대로 알림 구조에 대 한 포인터입니다.
 
-*결과*<br/>
+*result*<br/>
 결과 코드에 대 한 포인터를 반환 하기 전에 설정 합니다.
 
 ## <a name="example"></a>예제
@@ -183,7 +183,7 @@ afx_msg void memberFxn(UINT id, NMHDR* pNotifyStruct, LRESULT* result);
 *pNotifyStruct*<br/>
 위에서 설명한 것 처럼 알림 구조에 대 한 포인터입니다.
 
-*결과*<br/>
+*result*<br/>
 결과 코드에 대 한 포인터를 반환 하기 전에 설정 합니다.
 
 ##  <a name="_mfcnotes_tn061_on_notify_ex.2c_.on_notify_ex_range"></a> ON_NOTIFY_EX, ON_NOTIFY_EX_RANGE

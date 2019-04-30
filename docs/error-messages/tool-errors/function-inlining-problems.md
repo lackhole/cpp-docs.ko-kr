@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -Ob2 C++ compiler option
 - function inlining problems
 ms.assetid: 65d59943-4b3c-4a43-aeb6-dccbf7686740
-ms.openlocfilehash: fec3884dff0dda7140f18fa53e493c12996edcf0
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: f088b0f3ec94ad59c9c5576e6090a895bb88c3ad
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59031526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62255502"
 ---
 # <a name="function-inlining-problems"></a>함수 인라이닝 문제
 
@@ -24,7 +24,7 @@ ms.locfileid: "59031526"
 
 - 가 인라인 헤더 파일에서 ON으로 설정 합니다.
 
-```
+```cpp
 // LNK2019_function_inline.cpp
 // compile with: /c
 // post-build command: lib LNK2019_function_inline.obj
@@ -39,7 +39,7 @@ void _load_config_used::Test() { printf("in Test\n"); }
 
 그리고
 
-```
+```cpp
 // LNK2019_function_inline_2.cpp
 // compile with: LNK2019_function_inline.lib
 struct _load_config_used {
@@ -60,7 +60,7 @@ int main() {
 
 마찬가지로, 인라인 함수를 사용 하는 프로젝트 함수를 정의.cpp 파일에 파일 헤더에 LNK2019를 가져올 수도 대신 합니다. 헤더 파일은 어디에서 나 적절 한 것으로 간주 포함 되지만 함수만 인라인 컴파일러를 통해.cpp 파일을 전달 하는 경우 따라서 링커는 다른 모듈에 사용 되는 경우 외부 참조로 함수를 볼 수 있습니다.
 
-```
+```cpp
 // LNK2019_FIP.h
 struct testclass {
    void PublicStatMemFunc1(void);
@@ -69,7 +69,7 @@ struct testclass {
 
 그런 다음
 
-```
+```cpp
 // LNK2019_FIP.cpp
 // compile with: /c
 #include "LNK2019_FIP.h"
@@ -78,7 +78,7 @@ inline void testclass::PublicStatMemFunc1(void) {}
 
 그런 다음
 
-```
+```cpp
 // LNK2019_FIP_2.cpp
 // compile with: LNK2019_FIP.cpp
 // LNK2019 expected

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - document data [MFC]
 ms.assetid: b42a0c68-4bc4-4012-9938-5433a26d2c24
 ms.openlocfilehash: af3cde9445ae4b128e7e54a5f154db01b2eecd3b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62308073"
 ---
 # <a name="serializing-data-to-and-from-files"></a>파일로/파일에서 데이터 Serialize
 
@@ -25,7 +25,7 @@ ms.locfileid: "57279265"
 
 프레임 워크에 대 한 응답에 디스크 파일에 문서를 저장 하는 것에 대 한 기본 구현을 제공 하 고 디스크 파일 열기 명령에 대 한 응답에서에서 문서를 로드 한 파일 메뉴에서 다른 이름으로 저장 명령을 합니다. 매우 적은 노력을 사용 하 여 파일에서 해당 데이터를 읽고 쓰는 데는 문서의 기능을 구현할 수 있습니다. 해야 할 중요 한 점은 재정의가 합니다 [직렬화](../mfc/reference/cobject-class.md#serialize) 문서 클래스에서 멤버 함수입니다.
 
-MFC 응용 프로그램 마법사의 기본 재정의 저장 합니다 `CDocument` 멤버 함수 `Serialize` 문서 클래스를 만듭니다. 응용 프로그램의 멤버 변수를 구현한 후 채울 수 있습니다 프로그램 `Serialize` "보관 개체" 파일에 연결 된 데이터를 전송 하는 코드를 사용 하 여 재정의 합니다. [CArchive](../mfc/reference/carchive-class.md) 개체는 합니다 **cin** 하 고 **cout** c + + iostream 라이브러리의 개체에 대 한 입/출력 합니다. 그러나 `CArchive` 이진 형식으로 포맷된 되지 않은 텍스트를 읽고 씁니다.
+MFC 응용 프로그램 마법사의 기본 재정의 저장 합니다 `CDocument` 멤버 함수 `Serialize` 문서 클래스를 만듭니다. 응용 프로그램의 멤버 변수를 구현한 후 채울 수 있습니다 프로그램 `Serialize` "보관 개체" 파일에 연결 된 데이터를 전송 하는 코드를 사용 하 여 재정의 합니다. [CArchive](../mfc/reference/carchive-class.md) 개체는 비슷합니다는 **cin** 및 **cout** 입/출력에서 개체를 C++ iostream 라이브러리. 그러나 `CArchive` 이진 형식으로 포맷된 되지 않은 텍스트를 읽고 씁니다.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 

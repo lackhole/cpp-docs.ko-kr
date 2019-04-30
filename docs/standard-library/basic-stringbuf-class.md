@@ -31,11 +31,11 @@ helpviewer_keywords:
 - std::basic_stringbuf [C++], underflow
 ms.assetid: 40c85f9e-42a5-4a65-af5c-23c8e3bf8113
 ms.openlocfilehash: 1ed9deee46f7c99750ee3260a6b2a8de1f0f3397
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409761"
 ---
 # <a name="basicstringbuf-class"></a>basic_stringbuf 클래스
 
@@ -51,7 +51,7 @@ class basic_stringbuf : public basic_streambuf<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *Elem*<br/>
@@ -128,7 +128,7 @@ basic_stringbuf(
 
 ### <a name="parameters"></a>매개 변수
 
-*모드 (_m)*<br/>
+*_Mode*<br/>
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
 *str*<br/>
@@ -241,7 +241,7 @@ virtual pos_type seekoff(
 *_Way*<br/>
 오프셋 작업의 시작 지점입니다. 가능한 값은 [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir)을 참조하세요.
 
-*모드 (_m)*<br/>
+*_Mode*<br/>
 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다. 자세한 내용은 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)를 참조하세요.
 
 ### <a name="return-value"></a>반환 값
@@ -277,7 +277,7 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Mode = ios_base::in |
 *_Sp*<br/>
 찾을 위치입니다.
 
-*모드 (_m)*<br/>
+*_Mode*<br/>
 포인터 위치에 대한 모드를 지정합니다. 기본적으로는 읽기 및 쓰기 위치를 수정할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -379,7 +379,7 @@ virtual int_type underflow();
 
 ### <a name="remarks"></a>설명
 
-보호 된 가상 멤버 함수를 현재 요소를 추출 하려고 `byte` 입력된 버퍼에서 현재 스트림 위치로 이동 하 고 요소로 반환 **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **바이트**). 한 방식으로 수행할 수 있는: 읽기 위치를 사용할 수 있으면 `byte` 읽기 위치에 저장 되는 요소와 입력된 버퍼의 다음 포인터로 이동 합니다.
+보호 된 가상 멤버 함수를 현재 요소를 추출 하려고 `byte` 입력된 버퍼에서 현재 스트림 위치로 이동 하 고 요소로 반환 **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **바이트**). 수행할 수 있는 방법 중 하나에서: 읽기 위치를 사용할 수 있으면 `byte` 읽기 위치에 저장 되는 요소와 입력된 버퍼의 다음 포인터로 이동 합니다.
 
 ## <a name="swap"></a>  basic_streambuf::swap
 

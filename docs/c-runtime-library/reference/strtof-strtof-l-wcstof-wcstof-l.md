@@ -39,11 +39,11 @@ helpviewer_keywords:
 - strtof function
 ms.assetid: 52221b46-876d-4fcc-afb1-97512c17a43b
 ms.openlocfilehash: 10a50a175685f3e8f7f1241683c7705fd9a9b142
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62376434"
 ---
 # <a name="strtof-strtofl-wcstof-wcstofl"></a>strtof, _strtof_l, wcstof, _wcstof_l
 
@@ -95,7 +95,7 @@ float wcstof_l(
 
 각 함수는 입력된 문자열을 변환 *strSource* 에 **float**합니다. 합니다 **strtof** 변환 함수 *strSource* 단 정밀도 값입니다. **strtof** 문자열 읽기를 중지 *strSource* 숫자의 일부분으로 인식할 수 없는 첫 문자에서 합니다. 이 문자는 종료 null 문자일 수 있습니다. **wcstof** 의 와이드 문자 버전이 **strtof**; 해당 *strSource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 동작합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|

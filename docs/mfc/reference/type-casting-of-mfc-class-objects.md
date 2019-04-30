@@ -11,11 +11,11 @@ helpviewer_keywords:
 - macros [MFC], casting pointers
 ms.assetid: e138465e-c35f-4e84-b788-bd200ccf2f0e
 ms.openlocfilehash: 3107b860747bc2434ae9afca39b517d8dcc9eb01
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309813"
 ---
 # <a name="type-casting-of-mfc-class-objects"></a>MFC 클래스 개체의 형식 캐스팅
 

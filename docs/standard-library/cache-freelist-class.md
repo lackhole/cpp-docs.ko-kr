@@ -11,11 +11,11 @@ helpviewer_keywords:
 - stdext::cache_freelist [C++], deallocate
 ms.assetid: 840694de-36ba-470f-8dae-2b723d5a8cd9
 ms.openlocfilehash: 56fdfb191f9208a5ffa692e1d599545ddeaeb36c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352114"
 ---
 # <a name="cachefreelist-class"></a>cache_freelist 클래스
 
@@ -32,7 +32,7 @@ class cache_freelist
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*sz*|할당할 배열의 요소 수입니다.|
+|*Sz*|할당할 배열의 요소 수입니다.|
 |*Max*|사용 가능한 목록의 최대 크기를 나타내는 최대 클래스입니다. [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md) 또는 [max_variable_size](../standard-library/max-variable-size-class.md)일 수 있습니다.|
 
 ## <a name="remarks"></a>설명

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - task_handle class
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
 ms.openlocfilehash: 8528bc212603484be9325ed967e9475e4faa1348
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565102"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346152"
 ---
 # <a name="taskhandle-class"></a>task_handle 클래스
 
@@ -54,7 +54,7 @@ class task_handle : public ::Concurrency::details::_UnrealizedChore;
 
 작성자는 `task_handle` 개체가 만들어진의 수명 동안 유지 관리를 담당 `task_handle` 동시성 런타임에서 더 이상는 필요할 때까지 개체입니다. 즉 일반적으로 `task_handle` 될 때까지 개체 소멸 되지 해야 합니다는 `wait` 또는 `run_and_wait` 메서드를 `task_group` 또는 `structured_task_group` 대기 하는 호출 된 합니다.
 
-`task_handle` 개체는 일반적으로 c + + 람다와 함께에서 사용 됩니다. 람다 식에서의 true 형식을 확인할 수 없는 때문에 [make_task](concurrency-namespace-functions.md#make_task) 함수는 만드는 데 일반적으로 `task_handle` 개체.
+`task_handle` 개체는 일반적으로 함께에서 사용 됩니다 C++ 람다 식입니다. 람다 식에서의 true 형식을 확인할 수 없는 때문에 [make_task](concurrency-namespace-functions.md#make_task) 함수는 만드는 데 일반적으로 `task_handle` 개체.
 
 런타임에서 작업 함수에 전달 하는 복사본을 만듭니다는 `task_handle` 개체입니다. 따라서 함수에서 발생 하는 모든 상태 변경 내용을 개체에 전달 해야 하는 `task_handle` 개체는 함수 개체의 복사본에 나타나지 것입니다.
 

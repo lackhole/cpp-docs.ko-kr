@@ -14,11 +14,11 @@ helpviewer_keywords:
 - CRBMultiMap class
 ms.assetid: 94d3ec0c-3e30-4ab7-a101-d8da4fb8add3
 ms.openlocfilehash: 03a9639e8b0b3d11a414e5db0ce874d7ca8f2d45
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278139"
 ---
 # <a name="crbmultimap-class"></a>CRBMultiMap 클래스
 
@@ -234,7 +234,7 @@ POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
 *key*<br/>
 추가할 키 값을 `CRBMultiMap` 개체입니다.
 
-*value*<br/>
+*값*<br/>
 에 추가할 값을 `CRBMultiMap` 와 연결 된 개체 *키*합니다.
 
 ### <a name="return-value"></a>반환 값

@@ -5,11 +5,11 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::filesystem_error
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
 ms.openlocfilehash: add1e0da43a44c35f39c96e8d65e36aeea0d3afb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405159"
 ---
 # <a name="filesystemerror-class"></a>filesystem_error 클래스
 
@@ -35,9 +35,9 @@ class filesystem_error    : public system_error;
 
 |멤버 함수|설명|
 |-|-|
-|[1 번 경로 입구](#path1)|`mypval1`를 반환합니다.|
-|[2 번 경로 입구](#path2)|`mypval2`를 반환합니다.|
-|[새로운](#what)|`NTBS`에 대한 포인터를 반환합니다.|
+|[path1](#path1)|`mypval1`를 반환합니다.|
+|[path2](#path2)|`mypval2`를 반환합니다.|
+|[what](#what)|`NTBS`에 대한 포인터를 반환합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -45,7 +45,7 @@ class filesystem_error    : public system_error;
 
 **네임스페이스:** std::experimental::filesystem
 
-## <a name="filesystem_error"></a> filesystem_error:: filesystem_error
+## <a name="filesystem_error"></a> filesystem_error::filesystem_error
 
 메시지를 생성 하는 첫 번째 생성자는 *what_arg* 하 고 *ec*합니다. 두 번째 생성자는 또한에서 해당 메시지를 생성 *pval1*에 저장 되 `mypval1`합니다. 세 번째 생성자 또한에서 해당 메시지를 생성 *pval1*에 저장 되 `mypval1`, 및 *pval2*에 저장 되 `mypval2`합니다.
 

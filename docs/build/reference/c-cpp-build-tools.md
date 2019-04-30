@@ -8,15 +8,15 @@ helpviewer_keywords:
 - tools [C++], build
 ms.assetid: 48d9daf4-6bbf-473a-8ce2-bf2923b69f80
 ms.openlocfilehash: e41a6dcb8de4a8608d065cce5bce2595cd96a84f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272847"
 ---
 # <a name="additional-msvc-build-tools"></a>추가 MSVC 빌드 도구
 
-Visual c + +는 보거나 빌드 출력을 조작 하기 위한 다음 명령줄 유틸리티를 제공 합니다.
+Visual C++ 보거나 빌드 출력을 조작 하기 위한 다음 명령줄 유틸리티를 제공 합니다.
 
 
 - [LIB 합니다. EXE](lib-reference.md) 만들기 및 개체 파일 형식 COFF (공용) 개체 파일의 라이브러리를 관리 하는 데 사용 됩니다. 내보내기 파일을 만들고 내보낸 정의 참조 하려면 라이브러리를 가져오는 데도 수 있습니다.

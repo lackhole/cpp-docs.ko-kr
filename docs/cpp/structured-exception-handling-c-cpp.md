@@ -10,33 +10,33 @@ helpviewer_keywords:
 - C++ exception handling, exception handlers
 ms.assetid: dd3b647d-c269-43a8-aab9-ad1458712976
 ms.openlocfilehash: b77a218340399578e3c9428100476787e2e60b25
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330572"
 ---
 # <a name="structured-exception-handling-cc"></a>Structured Exception Handling (C/C++)
 
-구조적된 예외 처리 (SEH)는 하드웨어 오류와 같은 특정 예외 코드 상황을 정상적으로 처리 하는 C에 대 한 Microsoft 확장입니다. Windows 및 Visual c + +가 SEH를 지원 하지만 포팅 가능 하 고 유연한 코드를 사용 하면 ISO 표준 c + + 예외 처리를 사용 하는 것이 좋습니다. 그럼에도 불구 하 고 기존 코드를 유지 하기 위해 또는 특정 종류의 프로그램을 계속 해야 SEH를 사용 합니다.
+구조적된 예외 처리 (SEH)는 하드웨어 오류와 같은 특정 예외 코드 상황을 정상적으로 처리 하는 C에 대 한 Microsoft 확장입니다. 하지만 Windows 및 시각적 개체 C++ SEH를 지원 ISO 표준을 사용 하는 것이 좋습니다 C++ 포팅 가능 하 고 유연한 코드를 했기 때문에 예외 처리 합니다. 그럼에도 불구 하 고 기존 코드를 유지 하기 위해 또는 특정 종류의 프로그램을 계속 해야 SEH를 사용 합니다.
 
 **Microsoft 전용:**
 
 ## <a name="grammar"></a>문법
 
-*문을 제외 하 고 시도* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__try** *복합 문* **__except** **(** *식* **)** *복합 문*
+*try-except-statement* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__try** *compound-statement* **__except** **(** *expression* **)** *compound-statement*
 
-*시도--문* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__try** *복합 문* **__finally** *복합 문*
+*try-finally-statement* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__try** *compound-statement* **__finally** *compound-statement*
 
 ## <a name="remarks"></a>설명
 
 SEH를 사용 하 여 실행이 예기치 않게 종료 되는 경우 메모리 블록 및 파일과 같은 리소스가 제대로 해제를 확인할 수 있습니다. 특정 문제를 처리할 수도 있습니다-메모리가 부족 하 여 예를 들어-에 의존 하지 않는 간결한 구조의 코드나 사용 하 여 **goto** 문이나 반환 코드의 정교한 테스트 합니다.
 
-이 문서에서 참조된 try-except 및 try-finally 문은 C 언어에 대한 Microsoft 확장입니다. 둘 다 응용 프로그램이 그렇지 않을 경우 실행을 종료하는 이벤트 후에 프로그램을 제어할 수 있도록 하여 SEH를 지원합니다. SEH는 C++ 소스 파일에서 작동하지만 C++용으로 특별히 설계된 것은 아닙니다. 사용 하 여 컴파일하는 c + + 프로그램에서 SEH를 사용 하는 경우는 [/EHa 또는 /EHsc](../build/reference/eh-exception-handling-model.md) 옵션을 소멸자 로컬 개체를 호출 했지만 다른 실행 동작은 예상과 되지 않을 수 있습니다. 예시의 경우이 문서의 뒷부분에 나오는 예제를 참조 하세요. 대부분의 경우에서 SEH 대신 것이 좋습니다 ISO 표준을 사용 하는 [c + + 예외 처리](../cpp/try-throw-and-catch-statements-cpp.md), Visual c + + 지원 하기도 합니다. C++ 예외 처리를 사용하면 코드 포팅 가능성이 향상되며 모든 형식의 예외를 처리할 수 있습니다.
+이 문서에서 참조된 try-except 및 try-finally 문은 C 언어에 대한 Microsoft 확장입니다. 둘 다 응용 프로그램이 그렇지 않을 경우 실행을 종료하는 이벤트 후에 프로그램을 제어할 수 있도록 하여 SEH를 지원합니다. SEH는 C++ 소스 파일에서 작동하지만 C++용으로 특별히 설계된 것은 아닙니다. SEH를 사용 하는 경우는 C++ 를 사용 하 여 컴파일하는 프로그램을 [/EHa 또는 /EHsc](../build/reference/eh-exception-handling-model.md) 옵션을 소멸자 로컬 개체를 호출 했지만 다른 실행 동작은 예상과 되지 않을 수 있습니다. 예시의 경우이 문서의 뒷부분에 나오는 예제를 참조 하세요. 대부분의 경우에서 SEH 대신 것이 좋습니다 ISO 표준을 사용 하는 [ C++ 예외 처리](../cpp/try-throw-and-catch-statements-cpp.md), 시각적 C++ 도 지원 합니다. C++ 예외 처리를 사용하면 코드 포팅 가능성이 향상되며 모든 형식의 예외를 처리할 수 있습니다.
 
-C 코드 SEH를 사용 하는 경우에 c + + 예외 처리를 사용 하는 c + + 코드와 혼합할 수 있습니다. 정보를 참조 하세요 [c + +에서 구조적된 예외 처리](../cpp/exception-handling-differences.md)합니다.
+C 코드 SEH를 사용 하는 경우와 함께 사용할 수 있습니다 C++ 코드를 사용 하는 C++ 예외 처리 합니다. 정보를 참조 하세요 [의 구조적된 예외 처리 C++ ](../cpp/exception-handling-differences.md)합니다.
 
 SEH 메커니즘에는 다음 두 가지가 있습니다.
 
@@ -66,7 +66,7 @@ SEH 메커니즘에는 다음 두 가지가 있습니다.
 
 ## <a name="example"></a>예제
 
-C + + 프로그램에서 SEH를 사용 하 고 사용 하 여 컴파일하는 경우 로컬 개체는 호출에 대 한 소멸자 이전에 설명한 대로 합니다 **/EHa** 하거나 **/EHsc** 옵션입니다. 그러나 C++ 예외도 사용하는 경우 실행 중의 동작은 예상과 다를 수 있습니다. 이 예제에서는 이러한 동작의 차이 보여 줍니다.
+앞에서 설명한 대로, 소멸자에 SEH를 사용 하는 경우 로컬 개체 라고에 대 한는 C++ 프로그램 및 사용 하 여 컴파일하는 **/EHa** 또는 **/EHsc** 옵션입니다. 그러나 C++ 예외도 사용하는 경우 실행 중의 동작은 예상과 다를 수 있습니다. 이 예제에서는 이러한 동작의 차이 보여 줍니다.
 
 ```cpp
 #include <stdio.h>
@@ -122,7 +122,7 @@ Triggering SEH exception
 Executing SEH __except block
 ```
 
-사용 하는 경우 **/EHsc** 코드를 컴파일하려면 코드 및 `CPPEX` 를 사용 하 여 정의 됩니다 `/DCPPEX` (있도록 c + + 예외가 발생), `TestClass` 소멸자가 실행 되며 출력은 다음과 같습니다.
+사용 하는 경우 **/EHsc** 코드를 컴파일하려면 코드 및 `CPPEX` 를 사용 하 여 정의 됩니다 `/DCPPEX` (있도록를 C++ 예외가 throw 됩니다), `TestClass` 소멸자가 실행 되며 출력은 다음과 같습니다.
 
 ```Output
 Throwing C++ exception
@@ -145,7 +145,7 @@ Executing SEH __except block
 ## <a name="see-also"></a>참고자료
 
 [예외 처리](../cpp/exception-handling-in-visual-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [\<exception>](../standard-library/exception.md)<br/>
-[오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[오류 및 예외 처리(모던 C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [구조적된 예외 처리 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms680657.aspx)

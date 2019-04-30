@@ -26,11 +26,11 @@ helpviewer_keywords:
 - -RTCc compiler option [C++]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
 ms.openlocfilehash: a830ff5b8ba4b7fcd95eb462f899f2eadce6de11
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318552"
 ---
 # <a name="rtc-run-time-error-checks"></a>/RTC(런타임 오류 검사)
 
@@ -91,7 +91,7 @@ b = &a;
 c = a;  // No run-time error with /RTCu
 ```
 
-변수 초기화 될 수 없습니다, 경우 하 여 런타임 시 보고 되지 것입니다 **/RTC**`u`합니다. 예를 들어 변수는 포인터를 통해 별칭이 지정 되 면 컴파일러는 추적 변수 및 초기화 되지 않은 사용을 보고 합니다. 실제로 해당 주소를 수행 하 여 변수를 초기화할 수 있습니다. & 연산자는 이 경우에 할당 연산자와 같이 사용됩니다.
+변수 초기화 될 수 없습니다, 경우 하 여 런타임 시 보고 되지 것입니다 **/RTC**`u`합니다. 예를 들어 변수는 포인터를 통해 별칭이 지정 되 면 컴파일러는 추적 변수 및 초기화 되지 않은 사용을 보고 합니다. 실제로 해당 주소를 수행 하 여 변수를 초기화할 수 있습니다. & 연산자는 같은이 이런 경우에 할당 연산자입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -105,7 +105,7 @@ __MSVC_RUNTIME_CHECKS 전처리기 지시문을 사용할 때 정의 됩니다 *
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -115,8 +115,7 @@ __MSVC_RUNTIME_CHECKS 전처리기 지시문을 사용할 때 정의 됩니다 *
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
-- 
-  <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BasicRuntimeChecks%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SmallerTypeCheck%2A> 속성을 참조하십시오.
+- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BasicRuntimeChecks%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SmallerTypeCheck%2A> 속성을 참조하십시오.
 
 ## <a name="see-also"></a>참고자료
 

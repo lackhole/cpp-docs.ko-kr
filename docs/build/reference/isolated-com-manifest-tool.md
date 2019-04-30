@@ -8,11 +8,11 @@ f1_keywords:
 - VC.Project.VCManifestTool.ReplacementsFile
 ms.assetid: 457582b8-cfde-49c0-92e3-3a6b9e8c08eb
 ms.openlocfilehash: 2fda169ecf304373d27d699bf313bde124dc399f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62269715"
 ---
 # <a name="isolated-com-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>격리 COM, 매니페스트 도구, 구성 속성, &lt;Projectname&gt; 속성 페이지 대화 상자
 
@@ -47,4 +47,4 @@ ms.locfileid: "57827497"
 [격리된 응용 프로그램](/windows/desktop/SbsCs/isolated-applications)<br>
 [ndptecclick](/visualstudio/deployment/clickonce-application-manifest)<br>
 [매니페스트 도구 속성 페이지](manifest-tool-property-pages.md)<br>
-[Visual Studio에서 속성을 빌드하고 c + + 컴파일러를 설정 합니다.](../working-with-project-properties.md)
+[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)

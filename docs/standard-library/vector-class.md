@@ -87,11 +87,11 @@ helpviewer_keywords:
 - std::vector [C++], swap
 ms.assetid: a3e0a8f8-7565-4fe0-93e4-e4d74ae1b70d
 ms.openlocfilehash: 80416e3af18774a7a8bf64264dca2906995ae202
-ms.sourcegitcommit: 185b8ee6dd4e10045df730c5b957b9729813da2d
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53411964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410904"
 ---
 # <a name="vector-class"></a>vector 클래스
 
@@ -109,7 +109,7 @@ class vector
 *Type*<br/>
 벡터에 저장되는 요소 데이터 형식입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 벡터의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<Type>`입니다.
 
 ## <a name="remarks"></a>설명
@@ -224,7 +224,7 @@ void assign(InputIterator First, InputIterator Last);
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*<br/>
+*첫째*<br/>
 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
 *마지막*<br/>
@@ -233,7 +233,7 @@ void assign(InputIterator First, InputIterator Last);
 *개수*<br/>
 벡터에 삽입되는 요소의 복사본 수입니다.
 
-*val*<br/>
+*Val*<br/>
 벡터에 삽입되는 요소의 값입니다.
 
 *IList*<br/>
@@ -1386,7 +1386,7 @@ const_reference operator[](size_type Pos) const;
 
 |매개 변수|설명|
 |-|-|
-|*pos*|벡터 요소의 위치입니다.|
+|*Pos*|벡터 요소의 위치입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -1546,7 +1546,7 @@ void push_back(T&& Val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*Val*<br/>
 벡터의 끝에 추가된 요소에 할당할 값입니다.
 
 ### <a name="example"></a>예제
@@ -1756,7 +1756,7 @@ void resize(size_type Newsize, Type Val);
 *Newsize*<br/>
 벡터의 새 크기입니다.
 
-*val*<br/>
+*Val*<br/>
 새 크기가 원래 크기보다 큰 경우 벡터에 추가된 새 요소의 초기화 값입니다. 이 값이 생략되면 새 개체는 기본 생성자를 사용합니다.
 
 ### <a name="remarks"></a>설명
@@ -2100,9 +2100,9 @@ vector(InputIterator First, InputIterator Last, const Allocator& Al);
 |-|-|
 |*Al*|이 개체에 사용할 할당자 클래스입니다. [get_allocator](#get_allocator)는 개체에 대한 할당자 클래스를 반환합니다.|
 |*개수*|생성된 벡터에 있는 요소의 수입니다.|
-|*val*|생성된 벡터에 있는 요소의 값입니다.|
+|*Val*|생성된 벡터에 있는 요소의 값입니다.|
 |*오른쪽*|해당 복사본으로 벡터를 생성할 벡터입니다.|
-|*첫 번째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 요소의 범위를 벗어난 첫 번째 요소의 위치입니다.|
 |*IList*|복사할 요소를 포함하는 initializer_list입니다.|
 

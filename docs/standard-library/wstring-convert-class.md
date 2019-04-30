@@ -23,11 +23,11 @@ helpviewer_keywords:
 - std::wstring_convert [C++], state
 ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
 ms.openlocfilehash: df3b003289dcd86e8033521d8cb0cacdbb7dfbd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410800"
 ---
 # <a name="wstringconvert-class"></a>wstring_convert 클래스
 
@@ -139,7 +139,7 @@ wide_string from_bytes(const char* first, const char* last);
 |---------------|-----------------|
 |*Byte*|변환할 단일 요소 바이트 시퀀스입니다.|
 |*ptr*|변환할 C 스타일의 null 종료 문자 시퀀스입니다.|
-|*bstr*|변환할 [byte_string](#byte_string)입니다.|
+|*Bstr*|변환할 [byte_string](#byte_string)입니다.|
 |*first*|변환할 문자 범위의 첫 문자입니다.|
 |*last*|변환할 문자 범위의 마지막 문자입니다.|
 

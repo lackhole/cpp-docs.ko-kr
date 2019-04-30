@@ -8,11 +8,11 @@ helpviewer_keywords:
 - union keyword [C++]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
 ms.openlocfilehash: f14f1197c4c835e9dfb753b1396e12e2d2f12772
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62312185"
 ---
 # <a name="unions"></a>Unions
 
@@ -31,7 +31,7 @@ union [name]  { member-list };
 *name*<br/>
 공용 구조체에 지정된 형식 이름입니다.
 
-*멤버 목록*<br/>
+*member-list*<br/>
 공용 구조체에 포함할 수 있는 멤버입니다. 설명 부분을 참조하세요.
 
 ## <a name="remarks"></a>설명
@@ -654,7 +654,7 @@ union  {  member-list  }
 
 ## <a name="see-also"></a>참고자료
 
-[클래스 및 구조체](../cpp/classes-and-structs-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[클래스 및 구조체(C++)](../cpp/classes-and-structs-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [class](../cpp/class-cpp.md)<br/>
 [struct](../cpp/struct-cpp.md)

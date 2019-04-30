@@ -32,11 +32,11 @@ helpviewer_keywords:
 - time structure conversion
 ms.assetid: 315501f3-477e-475d-a414-ef100ee0db27
 ms.openlocfilehash: 4f32da5920a0cb892619195207d6501a4b1fd874
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157619"
 ---
 # <a name="gmtime-gmtime32-gmtime64"></a>gmtime, _gmtime32, _gmtime64
 
@@ -75,7 +75,7 @@ struct tm *_gmtime64( const __time64_t *sourceTime );
 
 **_gmtime64**를 사용 합니다 **__time64_t** 구조체를 사용 하면 날짜를 23시 59분: 59 까지의 3000 년 12 월 31 일을 UTC로 표현할 수 반면 **_gmtime32** 23시 59분: 59 까지의 날짜만 나타냅니다 2038 년 1 월 18 일 UTC입니다. 1970년 1월 1일 자정은 두 함수 모두에 대한 날짜 범위의 하한입니다.
 
-**gmtime** 으로 계산 되는 인라인 함수 이며 **_gmtime64**, 및 **time_t** 동일 **__time64_t** 하지 않는 한 **_USE_32BIT_TIME_ T** 정의 됩니다. 해석 하도록 컴파일러에 해야 할 경우 **time_t** 를 이전 32 비트 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**, 이렇게 하면 되지만 **gmtime** 에 인라인 할 **_gmtime32** 하 고 **time_t** 로 정의 되어야 **__time32_t**합니다. 이 방법은 64비트 플랫폼에서 허용되지 않고 2038년 1월 18일 이후 응용 프로그램이 작동하지 않을 수 있기 때문에 권장되지 않습니다.
+**gmtime** 으로 계산 되는 인라인 함수 이며 **_gmtime64**, 및 **time_t** 동일 **__time64_t** 하지 않는 한 **_USE_32BIT_TIME_ T** 정의 됩니다. 해석 하도록 컴파일러에 해야 할 경우 **time_t** 를 이전 32 비트 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**, 이렇게 하면 되지만 **gmtime** 에 인라인 할 **_gmtime32** 하 고 **time_t** 로 정의 되어야 **__time32_t**합니다. 이 방법은 64비트 플랫폼에서 허용되지 않고 2038년 1월 18일 이후 애플리케이션이 작동하지 않을 수 있기 때문에 권장되지 않습니다.
 
 이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 하는 경우 *sourceTime* 가 null 포인터인 경우 또는 경우에는 *sourceTime* 값이 음수인 경우 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) . 실행을 계속 하도록 허용 된 경우이 함수는 반환 **NULL** 설정 **errno** 하 **EINVAL**합니다.
 
@@ -90,7 +90,7 @@ struct tm *_gmtime64( const __time64_t *sourceTime );
 
 |루틴에서 반환된 값|필수 C 헤더|필수 C++ 헤더|
 |-------------|---------------------|-|
-|**gmtime**하십시오 **_gmtime32**, **_gmtime64**|\<time.h>|\<ctime > 또는 \<time.h >|
+|**gmtime**, **_gmtime32**, **_gmtime64**|\<time.h>|\<ctime > 또는 \<time.h >|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

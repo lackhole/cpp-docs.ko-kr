@@ -19,16 +19,15 @@ helpviewer_keywords:
 - transformer class
 ms.assetid: eea71925-7043-4a92-bfd4-dbc0ece5d081
 ms.openlocfilehash: c07017539bc0125e9e8c27e208480a50ccc7a719
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57299181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408071"
 ---
 # <a name="transformer-class"></a>transformer 클래스
 
-
-  `transformer` 메시징 블록은 한 형식의 메시지를 수락하고 다른 형식의 메시지를 개수에 제한 없이 저장할 수 있는 순서가 지정된 단일 대상 다중 소스 `propagator_block`입니다.
+`transformer` 메시징 블록은 한 형식의 메시지를 수락하고 다른 형식의 메시지를 개수에 제한 없이 저장할 수 있는 순서가 지정된 단일 대상 다중 소스 `propagator_block`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -68,8 +67,7 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
 |[reserve_message](#reserve_message)|이전에 제공한 메시지를 예약 `transformer` 메시징 블록입니다. (재정의 [source_block:: reserve_message](source-block-class.md#reserve_message).)|
 |[resume_propagation](#resume_propagation)|예약을 해제 된 후에 전파를 다시 시작 합니다. (재정의 [source_block:: resume_propagation](source-block-class.md#resume_propagation).)|
 |[send_message](#send_message)|메시지를 동기적으로 전달 된 `ISource` 이 블록 `transformer` 메시징 블록입니다. 호출한는 `send` 메서드의 소스 블록에서 호출 하는 경우.|
-|[supports_anonymous_source](#supports_anonymous_source)|
-  `supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다. (재정의 [itarget:: Supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
+|[supports_anonymous_source](#supports_anonymous_source)|`supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다. (재정의 [itarget:: Supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
 
 ## <a name="remarks"></a>설명
 
@@ -152,8 +150,7 @@ virtual message_status propagate_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-
-  `message` 개체에 대한 포인터입니다.
+`message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -225,8 +222,7 @@ virtual message_status send_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-
-  `message` 개체에 대한 포인터입니다.
+`message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -237,8 +233,7 @@ A [message_status](concurrency-namespace-enums.md) 메시지와 함께 수행 �
 
 ##  <a name="supports_anonymous_source"></a> supports_anonymous_source
 
-
-  `supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다.
+`supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다.
 
 ```
 virtual bool supports_anonymous_source();

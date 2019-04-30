@@ -5,15 +5,15 @@ helpviewer_keywords:
 - Unicode, string objects
 ms.assetid: 0b53a542-eeb1-4108-9ada-6700645b6f8f
 ms.openlocfilehash: b247e97f5aa6b5e85a6a6b6f57a64224a9e0f435
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62252664"
 ---
 # <a name="string-data-management"></a>문자열 데이터 관리
 
-Visual c + + 문자열 데이터를 관리 하는 여러 방법을 제공 합니다.
+Visual C++ 문자열 데이터를 관리 하는 여러 방법을 제공 합니다.
 
 - [문자열 조작](../c-runtime-library/string-manipulation-crt.md) C 스타일 null로 끝나는 문자열을 사용 하 여 작업에 대 한
 
@@ -33,7 +33,7 @@ Visual c + + 문자열 데이터를 관리 하는 여러 방법을 제공 합니
 
 - [CString 참조 횟수](#_core_cstring_reference_counting)
 
-합니다 [CStringT 클래스](../atl-mfc-shared/reference/cstringt-class.md) 클래스는 문자열 조작에 대 한 지원을 제공 합니다. 대체 하 고 일반적으로 C 런타임 라이브러리 문자열 패키지에서 제공 하는 기능을 확장 것입니다. `CString` 클래스 멤버 함수 및 간소화 된 문자열 처리, Basic에 있는 것과 비슷한에 대 한 연산자를 제공 합니다. 클래스는 생성자와 연산자를 생성, 할당 및 비교에 대 한 `CString`및 표준 c + + 문자열 데이터 형식입니다. 때문에 `CString` 에서 파생 되지 않은 `CObject`를 사용할 수 있습니다 `CString` 대부분 Microsoft Foundation 클래스 라이브러리 (MFC)의 독립적으로 개체입니다.
+합니다 [CStringT 클래스](../atl-mfc-shared/reference/cstringt-class.md) 클래스는 문자열 조작에 대 한 지원을 제공 합니다. 대체 하 고 일반적으로 C 런타임 라이브러리 문자열 패키지에서 제공 하는 기능을 확장 것입니다. `CString` 클래스 멤버 함수 및 간소화 된 문자열 처리, Basic에 있는 것과 비슷한에 대 한 연산자를 제공 합니다. 클래스는 생성자와 연산자를 생성, 할당 및 비교에 대 한 `CString`표준 및 C++ 문자열 데이터 형식입니다. 때문에 `CString` 에서 파생 되지 않은 `CObject`를 사용할 수 있습니다 `CString` 대부분 Microsoft Foundation 클래스 라이브러리 (MFC)의 독립적으로 개체입니다.
 
 `CString` 개체에 따라 "의미 체계를 값입니다." `CString` 개체 고유 값을 나타냅니다. 생각할는 `CString` 는 실제 문자열로, 문자열에 대 한 포인터 아니라 합니다.
 

@@ -17,11 +17,11 @@ helpviewer_keywords:
 - CWin32Heap class
 ms.assetid: 69176022-ed98-4e3b-96d8-116b0c58ac95
 ms.openlocfilehash: 35c12a58adc846e0db6d7ee23f19984acbcfa861
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276915"
 ---
 # <a name="cwin32heap-class"></a>CWin32Heap 클래스
 
@@ -157,8 +157,7 @@ CWin32Heap(
 
 [!code-cpp[NVC_ATL_Utilities#92](../../atl/codesnippet/cpp/cwin32heap-class_1.cpp)]
 
-또한 새 개체가 힙의 소유권을 계승하지 않는 경우 생성자에게 기존 힙 핸들을 제공할 수 있습니다. 
-  `CWin32Heap` 개체를 삭제해도 원래 힙 핸들은 계속해서 유효합니다.
+또한 새 개체가 힙의 소유권을 계승하지 않는 경우 생성자에게 기존 힙 핸들을 제공할 수 있습니다. `CWin32Heap` 개체를 삭제해도 원래 힙 핸들은 계속해서 유효합니다.
 
 기존 힙을 새 연결할 수 있습니다 개체를 사용 하 여 [CWin32Heap::Attach](#attach)합니다.
 

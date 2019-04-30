@@ -7,11 +7,11 @@ f1_keywords:
 helpviewer_keywords:
 - signbit function
 ms.openlocfilehash: ce2f632f11296bf71036011a57f242365951d7f2
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356331"
 ---
 # <a name="signbit"></a>signbit
 
@@ -44,15 +44,15 @@ inline bool signbit(
 
 ## <a name="return-value"></a>반환 값
 
-**signbit** 0이 아닌 값을 반환 합니다 (**true** c + +에서) 하는 경우 인수 *x* 는 음수 또는 음수 무한대. 0을 반환 합니다 (**false** c + +에서) 인수가 음수가 아닌, 양의 무한대 또는 NAN 인 경우.
+**signbit** 0이 아닌 값을 반환 합니다 (**true** 에서 C++) 하는 경우 인수 *x* 음수 또는 음의 무한대가 있습니다. 0을 반환 합니다 (**false** 에서 C++) 인수가 음수가 아닌, 양의 무한대 또는 NAN 인 경우.
 
 ## <a name="remarks"></a>설명
 
-**signbit** 는 C 및 c + +로 컴파일된 경우 오버 로드 된 인라인 함수를 컴파일할 때 매크로입니다.
+**signbit** 매크로로 컴파일된 경우 오버 로드 된 인라인 함수를 C로 컴파일될 때 C++합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더(C)|필수 헤더(C++)|
+|함수|필수 헤더(C)|필수 헤더(C++)|
 |--------------|---------------------------|-------------------------------|
 |**signbit**|\<math.h>|\<math.h> 또는 \<cmath>|
 

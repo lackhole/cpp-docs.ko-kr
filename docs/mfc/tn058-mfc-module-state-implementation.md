@@ -13,11 +13,11 @@ helpviewer_keywords:
 - process state [MFC]
 ms.assetid: 72f5b36f-b3da-4009-a144-24258dcd2b2f
 ms.openlocfilehash: db34f528e70a7dcc437836684656b3ce8a4078fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399603"
 ---
 # <a name="tn058-mfc-module-state-implementation"></a>TN058: MFC 모듈 상태 구현
 
@@ -30,7 +30,7 @@ ms.locfileid: "50626049"
 
 ## <a name="overview"></a>개요
 
-MFC 상태 정보의 세 가지 종류가 있습니다: 모듈 상태, 프로세스 상태 및 스레드 상태입니다. 경우에 따라 이러한 상태 형식은 결합할 수 있습니다. 예를 들어, MFC의 핸들 맵은 모듈을 로컬 및 스레드 로컬 모두입니다. 이렇게 하면 서로 다른 두 모듈에 해당 스레드의 각 지도 있습니다.
+MFC 상태 정보는 다음과 같은 세 가지 종류가 있습니다. 모듈 상태, 프로세스 상태 및 스레드 상태입니다. 경우에 따라 이러한 상태 형식은 결합할 수 있습니다. 예를 들어, MFC의 핸들 맵은 모듈을 로컬 및 스레드 로컬 모두입니다. 이렇게 하면 서로 다른 두 모듈에 해당 스레드의 각 지도 있습니다.
 
 프로세스 상태 및 스레드 상태 비슷합니다. 이러한 데이터 항목은가 일반적으로 전역 변수 되었지만 지정된 된 프로세스 관련 되거나 적절 한 win32 지원에 대 한 지원이 필요 하거나 적절 한 다중 스레딩 스레드 해야 할 것입니다. 지정 된 데이터 항목에 적합 한 범주는 해당 항목 및 프로세스 및 스레드 경계와 관련 하 여 필요한 의미 체계에 따라 달라 집니다.
 

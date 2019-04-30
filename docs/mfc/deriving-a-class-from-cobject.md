@@ -14,11 +14,11 @@ helpviewer_keywords:
 - CObject class [MFC], deriving from
 ms.assetid: 5ea4ea41-08b5-4bd8-b247-c5de8c152a27
 ms.openlocfilehash: 26fdab5165ca098c5d7813ebf44983c261094449
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58328443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62152062"
 ---
 # <a name="deriving-a-class-from-cobject"></a>CObject에서 클래스 파생시키기
 
@@ -53,7 +53,7 @@ ms.locfileid: "58328443"
 
 #### <a name="to-use-basic-cobject-functionality"></a>기본 CObject 기능을 사용 하려면
 
-1. 표준 c + + 구문을 사용 하 여에서 클래스를 파생 `CObject` (또는에서 파생 된 클래스에서 `CObject`).
+1. 일반을 사용 하 여 C++ 에서 클래스를 파생 하는 구문을 `CObject` (에서 파생 된 클래스로 / 로부터의 `CObject`).
 
    다음 예제에서는 가장 간단한 경우는 클래스의 파생 `CObject`:
 

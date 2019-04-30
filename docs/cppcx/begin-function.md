@@ -7,11 +7,11 @@ helpviewer_keywords:
 - begin Function
 ms.assetid: 5a44fb33-e247-49fd-b7a1-4a5b42e9e1e4
 ms.openlocfilehash: 1b95e4d32321aadf7de65ecb25109fbecd9eb614
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258293"
 ---
 # <a name="begin-function"></a>begin 함수
 
@@ -67,4 +67,4 @@ IIterable 액세스할 수 있는 임의의 Windows 런타임 개체의 컬렉�
 
 ## <a name="see-also"></a>참고자료
 
-[Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)
+[Windows::Foundation::Collections 네임스페이스](../cppcx/windows-foundation-collections-namespace-c-cx.md)

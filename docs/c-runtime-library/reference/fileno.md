@@ -25,11 +25,11 @@ helpviewer_keywords:
 - streams, getting file handles
 ms.assetid: 86474174-2f17-4100-bcc4-352dd976c7b5
 ms.openlocfilehash: 682ab4b01a663bd9a6314138aa692b1c05b7437a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333770"
 ---
 # <a name="fileno"></a>_fileno
 
@@ -45,7 +45,7 @@ int _fileno(
 
 ### <a name="parameters"></a>매개 변수
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -55,7 +55,7 @@ int _fileno(
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 > [!NOTE]
-> 하는 경우 **stdout** 하거나 **stderr** 연결 되어 있지 않습니다 (예를 들어 콘솔 창이 없는 Windows 응용 프로그램)에 출력 스트림을 사용 하 여 반환 된 파일 설명자는-2입니다. 이전 버전에서 반환된 파일 설명자는 -1이었습니다. 이렇게 변경되어 응용 프로그램이 이 조건을 오류와 구분할 수 있습니다.
+> 하는 경우 **stdout** 하거나 **stderr** 연결 되어 있지 않습니다 (예를 들어 콘솔 창이 없는 Windows 응용 프로그램)에 출력 스트림을 사용 하 여 반환 된 파일 설명자는-2입니다. 이전 버전에서 반환된 파일 설명자는 -1이었습니다. 이렇게 변경되어 애플리케이션이 이 조건을 오류와 구분할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 

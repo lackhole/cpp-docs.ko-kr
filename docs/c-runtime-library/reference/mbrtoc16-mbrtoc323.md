@@ -27,11 +27,11 @@ helpviewer_keywords:
 - mbrtoc32 function
 ms.assetid: 099ade4d-56f7-4e61-8b45-493f1d7a64bd
 ms.openlocfilehash: f8573ac321772d19141be0228891b290ba48b217
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331586"
 ---
 # <a name="mbrtoc16-mbrtoc32"></a>mbrtoc16, mbrtoc32
 
@@ -57,7 +57,7 @@ size_t mbrtoc32(
 
 ### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
+*destination*<br/>
 에 대 한 포인터를 **char16_t** 하거나 **char32_t** 변환할 멀티 바이트 문자에 해당 합니다. Null인 경우 함수는 값을 저장하지 않습니다.
 
 *source*<br/>

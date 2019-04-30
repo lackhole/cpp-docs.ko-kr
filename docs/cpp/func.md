@@ -1,15 +1,15 @@
-﻿---
+---
 title: __func__
 ms.date: 10/19/2017
 f1_keywords:
 - __func__
 ms.assetid: a5299b8d-f0ee-4af2-91dd-8fb165e68798
 ms.openlocfilehash: eecd3efea6239c92a8bc81c0ed13a9563e5b87d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154297"
 ---
 # <a name="func"></a>__func__
 
@@ -23,7 +23,7 @@ __func__
 
 ## <a name="return-value"></a>반환 값
 
-함수 이름을 포함하는 문자의 null로 끝나는 const char 배열을 반환합니다.  
+함수 이름을 포함하는 문자의 null로 끝나는 const char 배열을 반환합니다.
 
 ## <a name="example"></a>예제
 

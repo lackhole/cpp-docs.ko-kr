@@ -14,17 +14,17 @@ helpviewer_keywords:
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
 ms.openlocfilehash: 3db919f40caf4e5dbf42b4e10c549b165c0a9fe4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322217"
 ---
 # <a name="exception-processing"></a>예외 처리
 
 프로그램을 실행 하는 경우 다양 한 비정상적인 상태 및 "예외" 라는 오류가 발생할 수 있습니다. 이러한 메모리, 리소스 할당 오류 및 파일을 찾는 데 실패의 부족을 포함할 수 있습니다.
 
-Microsoft Foundation Class 라이브러리를 c + +에 대 한 ANSI 표준 위원회에서 제안 된 후 밀접 하 게 모델링 되는 예외 처리 체계를 사용 합니다. 비정상적인 상황이 발생할 수 있는 함수를 호출 하기 전에 예외 처리기를 설정 해야 합니다. 함수는 비정상 상태를 발견 하는 경우 예외를 throw 하 고 제어 예외 처리기로 전달 됩니다.
+Microsoft Foundation Class 라이브러리에 대 한 ANSI 표준 위원회에서 제안 된 다음 밀접 하 게 모델링 되는 예외 처리 체계를 사용 하 여 C++입니다. 비정상적인 상황이 발생할 수 있는 함수를 호출 하기 전에 예외 처리기를 설정 해야 합니다. 함수는 비정상 상태를 발견 하는 경우 예외를 throw 하 고 제어 예외 처리기로 전달 됩니다.
 
 Microsoft Foundation Class 라이브러리를 포함 하는 몇 가지 매크로 예외 처리기를 설정 합니다. 필요한 경우 특수 한 예외를 throw 하 고 프로그램을 종료 하는 다른 여러 가지 전역 함수 도움말입니다. 이러한 매크로 및 전역 함수는 다음 범주로 구분 됩니다.
 
@@ -135,7 +135,7 @@ CATCH(exception_class, exception_object_pointer_name)
 예외 개체 포인터는 매크로 의해 생성 됩니다. 직접 선언할 필요가 없습니다.
 
 > [!NOTE]
->  합니다 **CATCH** 블록은 중괄호로 구분 된 c + + 범위로 정의 됩니다. 이 범위에서 변수를 선언하면 해당 범위 내에서만 액세스할 수 있습니다. 이에 적용 됩니다 *exception_object_pointer_name*합니다.
+>  합니다 **CATCH** 블록으로 정의 됩니다는 C++ 중괄호로 구분 된 범위입니다. 이 범위에서 변수를 선언하면 해당 범위 내에서만 액세스할 수 있습니다. 이에 적용 됩니다 *exception_object_pointer_name*합니다.
 
 예외 CATCH 매크로에 대 한 자세한 내용은 문서 참조 [예외](../../mfc/exception-handling-in-mfc.md)합니다.
 
@@ -158,11 +158,10 @@ CATCH_ALL(exception_object_pointer_name)
 
 ### <a name="remarks"></a>설명
 
-예외 처리 코드는 필요한 경우 예외 개체를 확인하여 예외의 특정 원인에 대한 추가 정보를 가져올 수 있습니다. 
-  `THROW_LAST` 매크로를 호출하여 다음 외부 예외 프레임으로 처리를 이동합니다. 사용 하는 경우 **CATCH_ALL**를 종료 합니다 **시도** END_CATCH_ALL 매크로 사용 하 여 블록입니다.
+예외 처리 코드는 필요한 경우 예외 개체를 확인하여 예외의 특정 원인에 대한 추가 정보를 가져올 수 있습니다. `THROW_LAST` 매크로를 호출하여 다음 외부 예외 프레임으로 처리를 이동합니다. 사용 하는 경우 **CATCH_ALL**를 종료 합니다 **시도** END_CATCH_ALL 매크로 사용 하 여 블록입니다.
 
 > [!NOTE]
->  합니다 **CATCH_ALL** 블록은 중괄호로 구분 된 c + + 범위로 정의 됩니다. 이 범위에서 변수를 선언하면 해당 범위 내에서만 액세스할 수 있습니다.
+>  합니다 **CATCH_ALL** 블록으로 정의 됩니다는 C++ 중괄호로 구분 된 범위입니다. 이 범위에서 변수를 선언하면 해당 범위 내에서만 액세스할 수 있습니다.
 
 예외에 대 한 자세한 내용은 문서 참조 [예외](../../mfc/exception-handling-in-mfc.md)합니다.
 
@@ -197,7 +196,7 @@ AND_CATCH(exception_class, exception_object_pointer_name)
 예외 처리 코드는 필요한 경우 예외 개체를 확인하여 예외의 특정 원인에 대한 추가 정보를 가져올 수 있습니다. 내 THROW_LAST 매크로 호출 합니다 **AND_CATCH** 다음 외부 예외 프레임으로 처리 하는 shift를 차단 합니다. **AND_CATCH** 앞의 끝을 표시 **CATCH** 하거나 **AND_CATCH** 블록입니다.
 
 > [!NOTE]
->  합니다 **AND_CATCH** 블록 (중괄호로 구분) c + + 범위로 정의 됩니다. 이 범위에서 변수를 선언 하는 경우 해당 범위 내 에서만 액세스할 수는 기억 합니다. 이에 적용 됩니다는 *exception_object_pointer_name* 변수입니다.
+>  합니다 **AND_CATCH** 블록으로 정의 됩니다는 C++ 범위 (중괄호로 구분 됨). 이 범위에서 변수를 선언 하는 경우 해당 범위 내 에서만 액세스할 수는 기억 합니다. 이에 적용 됩니다는 *exception_object_pointer_name* 변수입니다.
 
 ### <a name="example"></a>예제
 
@@ -226,7 +225,7 @@ AND_CATCH_ALL(exception_object_pointer_name)
 예외 처리 코드는 필요한 경우 예외 개체를 확인하여 예외의 특정 원인에 대한 추가 정보를 가져올 수 있습니다. 내 THROW_LAST 매크로 호출 합니다 **AND_CATCH_ALL** 다음 외부 예외 프레임으로 처리 하는 shift를 차단 합니다. **AND_CATCH_ALL** 앞의 끝을 표시 **CATCH** 하거나 **AND_CATCH_ALL** 블록입니다.
 
 > [!NOTE]
->  합니다 **AND_CATCH_ALL** 블록 (괄호로 구분 된) c + + 범위로 정의 됩니다. 이 범위에서 변수를 선언 하는 경우 해당 범위 내 에서만 액세스할 수는 기억 합니다.
+>  합니다 **AND_CATCH_ALL** 블록으로 정의 됩니다는 C++ 범위 (중괄호로 구분 된). 이 범위에서 변수를 선언 하는 경우 해당 범위 내 에서만 액세스할 수는 기억 합니다.
 
 ### <a name="requirements"></a>요구 사항
 

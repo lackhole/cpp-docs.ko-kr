@@ -7,20 +7,20 @@ helpviewer_keywords:
 - arrays [C++]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
 ms.openlocfilehash: 176e358bd0217ac914eb4ee6079126d3f429b6dd
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62184520"
 ---
 # <a name="arrays-c"></a>배열 (C++)
 
 배열은 서로 유사한 개체의 컬렉션입니다. 가장 간단한 배열은 다음과 같은 시퀀스로 선언될 수 있는 벡터입니다.
 
-> *선언 지정자* *식별자* **\[** *상수 식* **]**<br/>
-> *선언 지정자* *식별자*  **\[]**<br/>
-> *선언 지정자* *식별자* **\[]\[** *상수-식* **]** 합니다. . .<br/>
-> *선언 지정자* *식별자* **\[** *상수 식* **]** **\[** *상수-식* **]** 합니다. . .
+> *decl-specifier* *identifier* **\[** *constant-expression* **]**<br/>
+> *decl-specifier* *identifier* **\[]**<br/>
+> *decl-specifier* *identifer* **\[]\[** *constant-expression* **]** . . .<br/>
+> *decl-specifier* *identifier* **\[** *constant-expression* **]** **\[** *constant-expression* **]** . . .
 
 1. 선언 지정자:
 

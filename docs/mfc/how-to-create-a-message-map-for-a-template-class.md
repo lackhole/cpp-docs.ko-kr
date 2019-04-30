@@ -6,15 +6,15 @@ helpviewer_keywords:
 - message maps [MFC], template classes
 ms.assetid: 4e7e24f8-06df-4b46-82aa-7435c8650de3
 ms.openlocfilehash: 676e698a899327eee8305731b5d609b5b95ece76
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389504"
 ---
 # <a name="how-to-create-a-message-map-for-a-template-class"></a>방법: 템플릿 클래스에 대 한 메시지 맵 만들기
 
-MFC의 메시지 매핑 적절 한 c + + 개체 인스턴스를 Windows 메시지를 전송 하는 효율적인 방법을 제공 합니다. MFC 메시지 맵에 대상의 예로 응용 프로그램 클래스, 문서 및 뷰 클래스, 컨트롤 클래스 및 등이 있습니다.
+MFC의 메시지 매핑을 적절 한 Windows 메시지를 전송 하는 효율적인 방법을 제공 C++ 개체 인스턴스입니다. MFC 메시지 맵에 대상의 예로 응용 프로그램 클래스, 문서 및 뷰 클래스, 컨트롤 클래스 및 등이 있습니다.
 
 기존의 MFC 메시지 맵을 사용 하 여 선언 되는 [BEGIN_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_message_map) 시작 메시지 맵의 각 메시지 처리기 클래스 메서드에 대해 매크로 항목을 선언 하는 매크로 및 마지막를 [END_MESSAGE_MAP](reference/message-map-macros-mfc.md#end_message_map)매크로를 메시지 map의 끝을 선언 합니다.
 

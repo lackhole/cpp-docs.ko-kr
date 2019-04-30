@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Internet applications [MFC], FTP client applications
 ms.assetid: 70bed7b5-6040-40d1-bc77-702e63a698f2
 ms.openlocfilehash: d08edf704e748767f3b566252ad328baf40b55ea
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62307019"
 ---
 # <a name="steps-in-a-typical-ftp-client-application"></a>일반적인 FTP 클라이언트 응용 프로그램의 단계
 

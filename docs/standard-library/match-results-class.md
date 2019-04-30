@@ -7,11 +7,11 @@ helpviewer_keywords:
 - match_results class
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
 ms.openlocfilehash: 32a5f9d20999740d4368f7901c797d87acce0be9
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412971"
 ---
 # <a name="matchresults-class"></a>match_results 클래스
 
@@ -29,7 +29,7 @@ class match_results
 *BidIt*<br/>
 부분 일치에 대한 반복기 형식입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 스토리지 관리를 위한 할당자의 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -68,11 +68,11 @@ class match_results
 |[get_allocator](#get_allocator)|저장된 할당자를 반환합니다.|
 |[length](#length)|부분 일치의 길이를 반환합니다.|
 |[max_size](#max_size)|부분 일치의 최대 수를 가져옵니다.|
-|[위치](#position)|하위 그룹의 시작 오프셋을 가져옵니다.|
+|[position](#position)|하위 그룹의 시작 오프셋을 가져옵니다.|
 |[prefix](#prefix)|첫 번째 부분 일치 전의 시퀀스를 가져옵니다.|
 |[size](#size)|부분 일치 수를 계산합니다.|
 |[str](#str)|부분 일치 항목을 반환합니다.|
-|[접미사](#suffix)|마지막 부분 일치 후 시퀀스를 가져옵니다.|
+|[suffix](#suffix)|마지막 부분 일치 후 시퀀스를 가져옵니다.|
 |[swap](#swap)|두 match_results 개체를 바꿉니다.|
 
 ### <a name="operators"></a>연산자
@@ -369,7 +369,7 @@ match_results(const match_results& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*할당*<br/>
+*alloc*<br/>
 저장할 할당자 개체입니다.
 
 *right*<br/>

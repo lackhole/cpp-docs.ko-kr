@@ -3,11 +3,11 @@ title: OpenMP C 및 C++ 응용 프로그램 프로그램 인터페이스
 ms.date: 03/20/2019
 ms.assetid: efec8865-a755-452f-838f-ddbfecab44d4
 ms.openlocfilehash: dc3ab50059f16abc2cc6148395ef6982e5f85449
-ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60124839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362701"
 ---
 # <a name="openmp-c-and-c-application-program-interface"></a>OpenMP C 및 C++ 응용 프로그램 프로그램 인터페이스
 
@@ -37,11 +37,11 @@ B. [런타임 라이브러리 함수의 스텁](b-stubs-for-run-time-library-fun
 
 C. [OpenMP C 및 C++ 문법](c-openmp-c-and-cpp-grammar.md)
 
-D. [일정 절](d-using-the-schedule-clause.md)
+D. [schedule 절](d-using-the-schedule-clause.md)
 
-E. [구현 정의 동작 OpenMP c에서 /C++](e-implementation-defined-behaviors-in-openmp-c-cpp.md)
+E. [OpenMP C/C++에서 구현이 정의된 동작](e-implementation-defined-behaviors-in-openmp-c-cpp.md)
 
-F. [버전 2.0에서에서 새 기능 및 설명](f-new-features-and-clarifications-in-version-2-0.md)
+F. [Version 2.0에서 새 기능 및 설명](f-new-features-and-clarifications-in-version-2-0.md)
 
 ## <a name="see-also"></a>참고자료
 

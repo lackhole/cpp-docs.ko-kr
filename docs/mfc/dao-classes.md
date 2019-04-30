@@ -8,11 +8,11 @@ helpviewer_keywords:
 - DAO [MFC], classes
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
 ms.openlocfilehash: 238aab0a1948f16a85b8ea16719b75b49f5e69c8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62241603"
 ---
 # <a name="dao-classes"></a>DAO 클래스
 
@@ -21,7 +21,7 @@ ms.locfileid: "57287494"
 DAO 데이터베이스를 사용 하는 프로그램 해야 적어도 `CDaoDatabase` 개체 및 `CDaoRecordset` 개체입니다.
 
 > [!NOTE]
->  Visual c + + 환경 및 마법사를 더 이상 지원 DAO (하지만 DAO 클래스에 포함 되어 있으며 계속 사용할 수 없습니다). 새 MFC 프로젝트에 대 한 ODBC를 사용 하는 것이 좋습니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
+>  시각적 개체 C++ 환경 및 마법사 이상 DAO (하지만 지원 DAO 클래스에 포함 되어 있으며 계속 사용할 수 없습니다). 새 MFC 프로젝트에 대 한 ODBC를 사용 하는 것이 좋습니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
 
 [CDaoWorkspace](../mfc/reference/cdaoworkspace-class.md)<br/>
 로그 오프 하려면 로그인에서 명명 된, 암호로 보호 된 데이터베이스 세션을 관리합니다. 대부분의 프로그램 기본 작업 영역을 사용합니다.

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - -Ox compiler option [C++]
 ms.assetid: 3ad7c30b-c615-428c-b1d0-2e024f81c760
 ms.openlocfilehash: e39905608087425fe5a445f4ef88434d73bb2ded
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320099"
 ---
 # <a name="ox-enable-most-speed-optimizations"></a>/Ox (대부분의 속도 최적화 사용)
 
@@ -56,9 +56,9 @@ ms.locfileid: "57811279"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 아래 **구성 속성**오픈 **C/c + +** 를 선택한 후는 **최적화** 속성 페이지.
+1. 아래 **구성 속성**오픈 **C /C++**  를 선택한 후는 **최적화** 속성 페이지.
 
 1. 수정 된 **최적화** 속성입니다.
 

@@ -1,15 +1,15 @@
 ---
-title: ARM 프로세서에 대 한 c + + 프로젝트 구성
+title: 구성 C++ ARM 프로세서에 대 한 프로젝트
 ms.date: 07/11/2018
 ms.assetid: 3d95f221-656a-480d-9651-9ad263895747
 ms.openlocfilehash: 7e6e0c97245c0941abc49096d1693a8d152c1709
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273830"
 ---
-# <a name="configure-c-projects-for-arm-processors"></a>ARM 프로세서에 대 한 c + + 프로젝트 구성
+# <a name="configure-c-projects-for-arm-processors"></a>구성 C++ ARM 프로세서에 대 한 프로젝트
 
 설명서의이 섹션에서는 ARM 하드웨어를 대상 MSVC 빌드 도구를 사용 하는 방법에 대 한 정보를 포함 합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: MSVC C/c + + 컴파일러 참조-Visual Studio
+title: MSVC C /C++ 컴파일러 참조-Visual Studio
 description: MSVC 컴파일러 도구 집합 옵션입니다.
 ms.date: 12/10/2018
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 - cl.exe compiler, setting options
 ms.assetid: f3eef5ab-d0be-4fb2-90f9-927e6ed58736
 ms.openlocfilehash: 2269ba69cea2702ff190c791eb6753acb3619f7d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294150"
 ---
-# <a name="compiling-a-cc-project"></a>C/c + + 프로젝트 컴파일
+# <a name="compiling-a-cc-project"></a>컴파일 C /C++ 프로젝트
 
-Visual Studio IDE 또는 명령줄에서 C 및 c + + 컴파일러 옵션을 설정할 수 있습니다. 
+C 및 C++ Visual Studio IDE 또는 명령줄에서 컴파일러 옵션을 설정할 수 있습니다. 
 
-## <a name="in-visual-studio"></a>Visual Studio에서
+## <a name="in-visual-studio"></a>Visual Studio
 
 해당 Visual Studio에서 각 프로젝트에 대 한 컴파일러 옵션을 설정할 수 있습니다 **속성 페이지** 대화 상자. 왼쪽된 창에서 선택 **구성 속성**를 **C/C++** 컴파일러 옵션 범주를 선택 합니다. 각 컴파일러 옵션에 대한 항목에서는 설정하는 방법과 개발 환경의 어느 부분에 있는지 설명합니다. 참조 [MSVC 컴파일러 옵션](compiler-options.md) 목록은 합니다.
 
@@ -43,7 +43,7 @@ CL 환경 변수에서 지정한 옵션은 CL을 실행할 때마다 사용됩�
 
 - [CL에서의 링커 호출](cl-invokes-the-linker.md)
 
-컴파일러 호스트 및 대상 아키텍처 선택에 대 한 내용은 참조 하세요 [64 비트 x64 프로젝트 구성 c + + 대상](../configuring-programs-for-64-bit-visual-cpp.md)합니다.
+컴파일러 호스트 및 대상 아키텍처 선택에 대 한 내용은 참조 하세요 [구성 C++ 64 비트, x64에 대 한 대상 프로젝트](../configuring-programs-for-64-bit-visual-cpp.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

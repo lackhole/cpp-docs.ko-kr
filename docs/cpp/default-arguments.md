@@ -11,11 +11,11 @@ helpviewer_keywords:
 - defaults [C++], arguments
 ms.assetid: d32cf516-05cb-4d4d-b169-92f5649fdfa2
 ms.openlocfilehash: 5ffc0301e7a89a379a2ea1eda9a113276df7a88e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154518"
 ---
 # <a name="default-arguments"></a>기본 인수
 
@@ -79,7 +79,7 @@ print( d, 0 ); // Override default argument to achieve other
 //  results.
 ```
 
-기본 인수를 사용하는 경우 다음 사항에 유의하세요.
+기본 인수를 사용하는 경우 다음 사항에 유의하십시오.
 
 - 기본 인수는 후행 인수가 생략되는 함수 호출에서만 사용되며 마지막 인수여야 합니다. 따라서 다음 코드는 올바르지 않습니다.
 

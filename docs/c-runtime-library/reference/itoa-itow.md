@@ -100,11 +100,11 @@ helpviewer_keywords:
 - _itoa function
 ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
 ms.openlocfilehash: 016f3474345b623415be9fe33556bb9f466542ad
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157372"
 ---
 # <a name="itoa-itoa-ltoa-ltoa-ultoa-ultoa-i64toa-ui64toa-itow-ltow-ultow-i64tow-ui64tow"></a>itoa, _itoa, ltoa, _ltoa, ultoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
 
@@ -165,7 +165,7 @@ wchar_t * _ui64tow( unsigned long long value, wchar_t (&buffer)[size],
 
 ### <a name="parameters"></a>매개 변수
 
-*value*<br/>
+*값*<br/>
 변환할 숫자입니다.
 
 *buffer*<br/>
@@ -175,7 +175,7 @@ wchar_t * _ui64tow( unsigned long long value, wchar_t (&buffer)[size],
 변환에 사용할 기본 *값*, 2 개에서 36 개의 범위의 이어야 합니다.
 
 *size*<br/>
-문자 유형의 단위 버퍼의 길이입니다. 이 매개 변수에서 유추 되는 *버퍼* c + +의 인수입니다.
+문자 유형의 단위 버퍼의 길이입니다. 이 매개 변수에서 유추 되는 *버퍼* 인수에서 C++합니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -197,9 +197,9 @@ wchar_t * _ui64tow( unsigned long long value, wchar_t (&buffer)[size],
 #include <stdlib.h>
 ```
 
-C + +에서는 이러한 함수는 안전 하 게 대응을 호출 하는 템플릿 오버 로드가 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
+C++에서 이러한 함수는 안전 하 게 대응을 호출 하는 템플릿 오버 로드 합니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
-Posix 이름을 **itoa**를 **ltoa**, 및 **ultoa** 에 대 한 별칭으로 존재 합니다 **_itoa**를 **_ltoa**, 및 **_ultoa** 함수입니다. Posix 이름은 ISO C의 구현 별 함수 이름 규칙을 따르지 때문에 사용 되지 않음 기본적으로 이러한 함수는 사용 중단 경고를 발생 [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **이 항목에 대 한 POSIX 이름은 사용 되지 않습니다. 대신 ISO C 및 c + +와 호환 되는 이름:** *new_name*합니다. 이러한 함수의 더 안전한 버전을 사용 하도록 소스 코드를 변경 하는 것이 좋습니다 **_itoa_s**하십시오 **_ltoa_s**, 또는 **_ultoa_s**합니다. 자세한 내용은 [_itoa_s, _itow_s 함수](itoa-s-itow-s.md)합니다.
+Posix 이름을 **itoa**를 **ltoa**, 및 **ultoa** 에 대 한 별칭으로 존재 합니다 **_itoa**를 **_ltoa**, 및 **_ultoa** 함수입니다. Posix 이름은 ISO C의 구현 별 함수 이름 규칙을 따르지 때문에 사용 되지 않음 기본적으로 이러한 함수는 사용 중단 경고를 발생 [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **이 항목에 대 한 POSIX 이름은 사용 되지 않습니다. 대신 ISO C를 사용 하 고 C++ 와 호환 되는 이름:** *new_name*합니다. 이러한 함수의 더 안전한 버전을 사용 하도록 소스 코드를 변경 하는 것이 좋습니다 **_itoa_s**하십시오 **_ltoa_s**, 또는 **_ultoa_s**합니다. 자세한 내용은 [_itoa_s, _itow_s 함수](itoa-s-itow-s.md)합니다.
 
 소스 코드 이식성에 대 한 코드에서 Posix 이름을 유지 하는 것이 좋습니다. 사용 중단 경고가 없는 이러한 함수를 사용 하려면 둘 다를 정의 합니다 **_CRT_NONSTDC_NO_WARNINGS** 하 고 **_CRT_SECURE_NO_WARNINGS** CRT 헤더를 포함 하기 전에 전처리기 매크로입니다. 추가 하 여 개발자 명령 프롬프트에서 명령줄에서 이렇게 하려면 합니다 **/D_CRT_SECURE_NO_WARNINGS** 하 고 **/D_CRT_NONSTDC_NO_WARNINGS** 컴파일러 옵션을 **cl**명령입니다. 그렇지 않으면 소스 파일에서 매크로 정의 합니다. 미리 컴파일된 헤더를 사용 하면 정의 미리 컴파일된 헤더의 맨 위에 있는 매크로 일반적으로 stdafx.h 파일을 포함 합니다. 소스 코드에서 매크로 정의 하려면 사용할 **#define** 지시문이이 예제와 같이 모든 CRT 헤더를 포함 하기 전에:
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - SECTIONS .def file statement
 ms.assetid: 7b974366-9ef5-4e57-bbcc-73a1df6f8857
 ms.openlocfilehash: 5125b09675969c784aafe375faf1fdbc36d8c5d9
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318630"
 ---
 # <a name="sections-cc"></a>SECTIONS(C/C++)
 
@@ -50,7 +50,7 @@ SECTIONS
 
 `SECTIONS` 섹션 목록 시작 부분을 표시 `definitions`합니다. 각 `definition` 별도 줄에 있어야 합니다. 합니다 `SECTIONS` 키워드는 첫 번째 같은 줄에 있을 수 있습니다 `definition` 앞의 줄 또는 합니다. .Def 파일에는 하나 이상 포함 될 수 있습니다 `SECTIONS` 문입니다. 합니다 `SEGMENTS` 키워드에 대 한 동의어로 사용할 `SECTIONS`합니다.
 
-이전 버전의 Visual c + + 지원 됩니다.
+시각적 개체의 이전 버전 C++ 지원:
 
 ```
 section [CLASS 'classname'] specifier

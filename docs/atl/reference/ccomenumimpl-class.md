@@ -19,11 +19,11 @@ helpviewer_keywords:
 - CComEnumImpl class
 ms.assetid: cc0d8e76-e608-46db-87cd-4c7161fe32d2
 ms.openlocfilehash: ccd083f3bfd9ae694c97e466fcb40b348fec0c27
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62259863"
 ---
 # <a name="ccomenumimpl-class"></a>CComEnumImpl 클래스
 
@@ -82,7 +82,7 @@ COM 열거자 인터페이스입니다. 참조 [IEnumString](/windows/desktop/ap
 
 ## <a name="remarks"></a>설명
 
-참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 메서드 구현의 예입니다. `CComEnumImpl` 열거 되 고 있는 항목을 배열에 저장 되어 있는 COM 열거자 인터페이스에 대 한 구현을 제공 합니다. 이 클래스는 비슷합니다는 `IEnumOnSTLImpl` 열거자 인터페이스의 구현을 제공 하는 클래스 c + + 표준 라이브러리 컨테이너를 기반으로 합니다.
+참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 메서드 구현의 예입니다. `CComEnumImpl` 열거 되 고 있는 항목을 배열에 저장 되어 있는 COM 열거자 인터페이스에 대 한 구현을 제공 합니다. 이 클래스는 비슷합니다는 `IEnumOnSTLImpl` 열거자 인터페이스의 구현을 제공 하는 클래스를 기반으로 C++ 표준 라이브러리 컨테이너입니다.
 
 > [!NOTE]
 >  간의 추가 차이점에 대 한 내용은 `CComEnumImpl` 하 고 `IEnumOnSTLImpl`를 참조 하세요 [CComEnumImpl::Init](#init)합니다.

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - execution [MFC], returns from within catch block
 ms.assetid: 7c233ff0-89de-4de0-a68a-9e9cdb164311
 ms.openlocfilehash: 511850c3c17a4eb70529202f4b0c2b36132fc8ff
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62173295"
 ---
 # <a name="exceptions-catching-and-deleting-exceptions"></a>예외: 예외 catch 및 삭제
 
-다음 지침 및 예제를 catch 하 고 예외를 삭제 하는 방법을 보여 줍니다. 대 한 자세한 내용은 합니다 **시도**, **catch**, 및 **throw** 키워드를 참조 하십시오 [c + + 예외 처리](../cpp/cpp-exception-handling.md).
+다음 지침 및 예제를 catch 하 고 예외를 삭제 하는 방법을 보여 줍니다. 대 한 자세한 내용은 합니다 **시도**, **catch**, 및 **throw** 키워드를 참조 하십시오 [ C++ 예외 처리](../cpp/cpp-exception-handling.md).
 
 예외 핸들러가 예외를 삭제 하지 않으면 예외를 catch 하는 코드 때마다 메모리 누수가 발생 하기 때문에, 처리 된 예외 개체를 삭제 해야 합니다.
 

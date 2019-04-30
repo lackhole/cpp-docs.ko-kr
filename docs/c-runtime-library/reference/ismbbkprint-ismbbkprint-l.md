@@ -29,11 +29,11 @@ helpviewer_keywords:
 - _ismbbkprint_l function
 ms.assetid: 8d1d3258-1e34-4365-81ed-97c95de25475
 ms.openlocfilehash: 9d30abb0bcb587aeb15087ceb80d60d54ac1bebe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157528"
 ---
 # <a name="ismbbkprint-ismbbkprintl"></a>_ismbbkprint, _ismbbkprint_l
 
@@ -61,7 +61,7 @@ int _ismbbkprint_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbkprint** 이면 0이 아닌 값을 반환 정수 *c* 되지 경우 ASCII가 아닌 텍스트 또는 ASCII가 아닌 문장 부호인 0입니다. 예를 들어 **_ismbbkprint**는 932 코드 페이지에서만 가타카나 영숫자 또는 가타카나 문장 부호를 테스트합니다(범위: 0xA1 – 0xDF). **_ismbbkprint** 로캘 종속 문자 설정에 대해 현재 로캘을 사용 합니다. **_ismbbkprint_l** 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_ismbbkprint** 이면 0이 아닌 값을 반환 정수 *c* 되지 경우 ASCII가 아닌 텍스트 또는 ASCII가 아닌 문장 부호인 0입니다. 코드 페이지 932에에서 예를 들어 **_ismbbkprint** 가타카나 영숫자 또는 가타카나 문장 부호에 대 한 테스트 (범위: 0xA1-0xDF). **_ismbbkprint** 로캘 종속 문자 설정에 대해 현재 로캘을 사용 합니다. **_ismbbkprint_l** 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

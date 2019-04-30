@@ -11,11 +11,11 @@ helpviewer_keywords:
 - superclassing, ATL
 ms.assetid: 1d12b708-de3e-49d5-9e41-42fe4769fa62
 ms.openlocfilehash: 15c59f964e6b6794f64ed8da64cba6f569879fac
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223331"
 ---
 # <a name="atl-window-classes"></a>ATL 창 클래스
 
@@ -23,7 +23,7 @@ ATL 사용 하 고 windows를 구현할 수 있는 몇 가지 클래스를 포�
 
 이 섹션에서는 ATL 창 클래스 및 사용 하는 방법을 설명 합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [ATL 창 클래스 소개](../atl/introduction-to-atl-window-classes.md)<br/>
 간단 하 게 각 ATL 창 클래스를 설명 하 고 에서도 참조 자료에 대 한 링크를 제공 합니다.

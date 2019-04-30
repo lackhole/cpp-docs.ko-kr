@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Windows Forms [C++], MFC support
 ms.assetid: 03a53032-2f03-4fa2-b567-031615a26011
 ms.openlocfilehash: bdf7e2f4961a16e6538c7bbcc690ef44ba87fcaf
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378975"
 ---
 # <a name="how-to-create-the-user-control-and-host-in-a-dialog-box"></a>방법: 대화 상자에서 사용자 정의 컨트롤 및 호스트 만들기
 
@@ -43,7 +43,7 @@ ms.locfileid: "57751494"
 
 1. MFC 응용 프로그램 프로젝트를 만듭니다.
 
-   **파일** 메뉴에서 **새로 만들기** 를 클릭한 다음 **프로젝트**를 클릭합니다. 에 **Visual c + +** 폴더 선택 **MFC 응용 프로그램**합니다.
+   **파일** 메뉴에서 **새로 만들기** 를 클릭한 다음 **프로젝트**를 클릭합니다. 에 **시각적 C++**  폴더를 선택 **MFC 응용 프로그램**합니다.
 
    **이름** 상자에 `MFC01`을 입력합니다. 솔루션 설정 변경 **솔루션을 추가할**합니다. **확인**을 클릭합니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "57751494"
 
    에 **속성 페이지** 대화 상자의 **구성 속성**를 선택 **일반**합니다. 에 **프로젝트 기본값** 으로 설정 **공용 언어 런타임 지원을** 하 **공용 언어 런타임 지원 (/ clr)** 합니다.
 
-   아래 **구성 속성**, 확장 **C/c + +** 선택 합니다 **일반** 노드. 설정할 **디버그 정보 형식** 하 **프로그램 데이터베이스 (/Zi)** 합니다.
+   아래 **구성 속성**, 확장 **C /C++**  선택 합니다 **일반** 노드. 설정할 **디버그 정보 형식** 하 **프로그램 데이터베이스 (/Zi)** 합니다.
 
    선택 된 **코드 생성** 노드. 설정 **최소 다시 빌드 가능** 하 **없음 (/ Gm-)** 합니다. 설정할 수도 **기본 런타임 검사** 하 **기본**입니다.
 
