@@ -40,7 +40,7 @@ ms.locfileid: "62273159"
 
 /analyze: stacksize `number` 는 `number` 이 옵션을 사용 하 여 사용 되는 매개 변수 (바이트)는 경고에 대 한 스택 프레임의 크기를 지정 [C6262](/visualstudio/code-quality/c6262) 생성 됩니다. 이 매개 변수가 지정되지 않은 경우 스택 프레임 크기는 기본적으로 16KB입니다.
 
-/analyze: max_paths `number` 는 `number` 이 옵션을 사용 하 여 사용 되는 매개 변수는 분석할 코드 경로의 최대 수를 지정 합니다. 이 매개 변수가 지정되지 않은 경우 숫자는 기본적으로 256입니다. 값이 클수록 더욱 철저한 검사를 수행하지만 분석 시간이 길어질 수 있습니다.
+/analyze: max_paths `number` 이 옵션과 함께 사용되는 `number` 매개 변수는 분석할 코드 경로의 최대 수를 지정합니다. 이 매개 변수가 지정되지 않은 경우 숫자는 기본적으로 256입니다. 값이 클수록 더욱 철저한 검사를 수행하지만 분석 시간이 길어질 수 있습니다.
 
 /analyze: 컴파일러가 코드를 생성 하 고 추가 구문 분석기를 실행 한 후 검사는 일반적으로 합니다. 합니다 **/analyze:만** 옵션은이 코드 생성 통과 해제 하지만 이렇게 하면 분석이 빨라지지만 컴파일러의 코드 생성 통과 하 여 검색 된는 컴파일 오류 및 경고를 내보냅니다. 프로그램에 코드 생성 오류가 있는 경우 분석 결과가 안정적이지 않을 수 있습니다. 따라서 코드가 이미 오류 없이 코드 생성 구문 검사를 통과하는 경우에만 이 옵션을 사용하는 것이 좋습니다.
 
@@ -63,7 +63,7 @@ Visual Studio와 함께 제공 되는 규칙 집합에 포함 됩니다 **%VSINS
 /analyze: 플러그 인 부분에서는 코드 분석 실행 될 때 지정 된 PREfast 플러그 인을 사용 하도록 설정 합니다.
 LocalEspC.dll 범위의 C261XX 경고에서 동시성 관련 코드 분석을 구현 하는 플러그 인 검사입니다. 예를 들어 [C26100](/visualstudio/code-quality/c26100)하십시오 [C26101](/visualstudio/code-quality/c26101),..., [C26167](/visualstudio/code-quality/c26167)합니다.
 
-LocalEspC.dll를 실행 하려면이 컴파일러 옵션을 사용 하 여: **/analyze: LocalEspC.dll 플러그 인**
+LocalEspC.dll을 실행하려면 다음 컴파일러 옵션을 사용합니다: **/analyze:plugin LocalEspC.dll**
 
 CppCoreCheck.dll를 실행 하려면 먼저 개발자 명령 프롬프트에서이 명령을 실행 합니다.
 
@@ -71,11 +71,11 @@ CppCoreCheck.dll를 실행 하려면 먼저 개발자 명령 프롬프트에서�
 set Esp.Extensions=CppCoreCheck.dll
 ```
 
-그런 다음이 컴파일러 옵션을 사용: **/analyze: 플러그 인 EspXEngine.dll**합니다.
+그런 다음 다음 컴파일러 옵션을 사용합니다: **/analyze:plugin EspXEngine.dll**
 
 ## <a name="remarks"></a>설명
 
-자세한 내용은 [C/C++ 개요에 대 한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) 하 고 [C/C++ 경고에 대 한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-warnings)합니다.
+자세한 내용은 [C/C++ 개요에 대한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-overview)과 [C/C++ 경고에 대한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-warnings)을 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
