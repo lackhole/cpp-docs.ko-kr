@@ -98,11 +98,11 @@ helpviewer_keywords:
 - vector member [STL/CLR]
 ms.assetid: f90060d5-097a-4e9d-9a26-a634b5b9c6c2
 ms.openlocfilehash: 09a0919cd47937960736c6cccf31343c5e12087d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384389"
 ---
 # <a name="vector-stlclr"></a>vector(STL/CLR)
 
@@ -205,7 +205,7 @@ template<typename Value>
 |<xref:System.Collections.Generic.IEnumerable%601>|형식화 된 요소 시퀀스입니다.|
 |<xref:System.Collections.Generic.ICollection%601>|형식화 된 요소 그룹을 유지 합니다.|
 |<xref:System.Collections.Generic.IList%601>|형식화 된 요소의 순서가 지정 된 그룹을 유지 합니다.|
-|IVector < 값\>|제네릭 컨테이너를 유지 합니다.|
+|IVector<Value\>|제네릭 컨테이너를 유지 합니다.|
 
 ## <a name="remarks"></a>설명
 

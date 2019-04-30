@@ -9,15 +9,15 @@ helpviewer_keywords:
 - task groups, exception handling [Concurrency Runtime]
 ms.assetid: 4d1494fb-3089-4f4b-8cfb-712aa67d7a7a
 ms.openlocfilehash: 8239913c369605503134a9ea4c99789528911868
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413933"
 ---
 # <a name="exception-handling-in-the-concurrency-runtime"></a>동시성 런타임에서 예외 처리
 
-동시성 런타임은 다양 한 종류의 오류 통신을 처리 하는 c + + 예외를 사용 합니다. 이러한 오류는 작업 및 작업 그룹을 제공 하는 작업 함수에 런타임과을 리소스를 획득 하지 못하면 같은 런타임 오류가 발생 하는 오류를 잘못 사용을 포함 합니다. 태스크 또는 작업 그룹 예외를 throw 하면 런타임에서 해당 예외를 보유 하 고 태스크 또는 작업 그룹이 완료 되기를 대기 하는 컨텍스트에 마샬링합니다. 간단한 작업 및 에이전트와 같은 구성 요소에 대 한 런타임 예외를 관리 하지 않습니다. 이러한 경우 사용자 고유의 예외 처리 메커니즘을 구현 해야 합니다. 이 항목에서는 런타임에서 작업, 작업 그룹, 간단한 작업 및 비동기 에이전트에서 throw 된 예외를 처리 하는 방법 및 응용 프로그램에서 예외에 응답 하는 방법을 설명 합니다.
+동시성 런타임을 사용 하 여 C++ 다양 한 종류의 오류를 통신 하는 예외 처리 합니다. 이러한 오류는 작업 및 작업 그룹을 제공 하는 작업 함수에 런타임과을 리소스를 획득 하지 못하면 같은 런타임 오류가 발생 하는 오류를 잘못 사용을 포함 합니다. 태스크 또는 작업 그룹 예외를 throw 하면 런타임에서 해당 예외를 보유 하 고 태스크 또는 작업 그룹이 완료 되기를 대기 하는 컨텍스트에 마샬링합니다. 간단한 작업 및 에이전트와 같은 구성 요소에 대 한 런타임 예외를 관리 하지 않습니다. 이러한 경우 사용자 고유의 예외 처리 메커니즘을 구현 해야 합니다. 이 항목에서는 런타임에서 작업, 작업 그룹, 간단한 작업 및 비동기 에이전트에서 throw 된 예외를 처리 하는 방법 및 응용 프로그램에서 예외에 응답 하는 방법을 설명 합니다.
 
 ## <a name="key-points"></a>주요 사항
 
@@ -75,7 +75,7 @@ ms.locfileid: "57272635"
 > [!CAUTION]
 >  코드에서 `task_canceled`를 throw하지 마세요. 호출 [concurrency:: cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) 대신 합니다.
 
-런타임 예외를 throw 하는 작업 및 연속 작업이 나 기본 앱 중 하나는 작업에서 예외 잡히지 않는 경우 앱을 종료 합니다. 응용 프로그램이 충돌 하는 경우에 c + + 예외가 throw 되 면 중단 되도록 Visual Studio를 구성할 수 있습니다. 처리 되지 않은 예외가 위치의 진단 하는 후 처리 하는 작업 기반 연속 작업을 사용 합니다.
+런타임 예외를 throw 하는 작업 및 연속 작업이 나 기본 앱 중 하나는 작업에서 예외 잡히지 않는 경우 앱을 종료 합니다. 응용 프로그램이 충돌 하는 경우 되 면 중단 하려면 Visual Studio를 구성할 수 있습니다 C++ 예외가 throw 됩니다. 처리 되지 않은 예외가 위치의 진단 하는 후 처리 하는 작업 기반 연속 작업을 사용 합니다.
 
 섹션 [런타임에서 예외를 Throw](#runtime) 이 문서에서 자세히 런타임 예외를 사용 하는 방법에 설명 합니다.
 

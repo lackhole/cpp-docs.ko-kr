@@ -22,11 +22,11 @@ f1_keywords:
 - amp/Concurrency::direct3d::umin
 ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
 ms.openlocfilehash: 0a2977faf094aafb6290063e39e062ffaeaaec81
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405588"
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>Concurrency::direct3d 네임 스페이스 함수 (AMP)
 
@@ -152,11 +152,11 @@ Direct3D 장치 인터페이스에 대 한 포인터입니다.
 
 `accelerator_view` 이 함수를 사용 하 여 만든 개체는 스레드로부터 안전 합니다. 동시 사용을 동기화 해야 합니다는 `accelerator_view` 개체입니다. 동시 사용을 `accelerator_view` 개체 및 원시 ID3D11Device 인터페이스 정의 되지 않은 동작이 발생 합니다.
 
-C + + AMP 런타임이 사용 하는 경우 D3D 디버그 레이어를 사용 하 여 디버그 모드에서 자세한 오류 정보를 제공 합니다 `D3D11_CREATE_DEVICE_DEBUG` 플래그입니다.
+C++ AMP 런타임이 사용 하는 경우 D3D 디버그 레이어를 사용 하 여 디버그 모드에서 자세한 오류 정보를 제공 합니다 `D3D11_CREATE_DEVICE_DEBUG` 플래그입니다.
 
 ##  <a name="d3d_access_lock"></a>  d3d_access_lock
 
-Accelerator_view와 공유 되는 리소스에서 D3D 작업을 안전 하 게 수행할 목적으로 accelerator_view에 대 한 잠금을 획득 합니다. 액셀러레이터 뷰와 내부적으로 액셀러레이터이 뷰와 연관 된 모든 c + + AMP 리소스 작업을 수행할 때이 잠금을 수행 하 고 다른 스레드가 D3D 액세스 잠금을 보유 하는 동안 차단 됩니다. 이 잠금은 비재귀적 같습니다. 스레드에서 이미 잠금을 보유 하는이 함수를 호출 하는 정의 되지 않은 동작은 합니다. Accelerator_view 또는 D3D 액세스 잠금을 보유 하는 스레드의 accelerator_view와 연결 된 모든 데이터 컨테이너에 대 한 작업을 수행 하는 정의 되지 않은 동작은 합니다. 범위 기반 D3D 액세스 잠금에 대 한 한 RAII 스타일 클래스인 scoped_d3d_access_lock도 참조 하세요.
+Accelerator_view와 공유 되는 리소스에서 D3D 작업을 안전 하 게 수행할 목적으로 accelerator_view에 대 한 잠금을 획득 합니다. Accelerator_view와 모든 C++ 내부적으로 액셀러레이터이 뷰와 연관 AMP 리소스 잠금을이 작업을 수행할 때 다른 스레드가 D3D 액세스 잠금을 보유 하는 동안 차단 됩니다. 이 잠금은 비재귀적 같습니다. 스레드에서 이미 잠금을 보유 하는이 함수를 호출 하는 정의 되지 않은 동작은 합니다. Accelerator_view 또는 D3D 액세스 잠금을 보유 하는 스레드의 accelerator_view와 연결 된 모든 데이터 컨테이너에 대 한 작업을 수행 하는 정의 되지 않은 동작은 합니다. 범위 기반 D3D 액세스 잠금에 대 한 한 RAII 스타일 클래스인 scoped_d3d_access_lock도 참조 하세요.
 
 ```
 void __cdecl d3d_access_lock(accelerator_view& _Av);
