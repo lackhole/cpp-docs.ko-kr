@@ -29,11 +29,11 @@ helpviewer_keywords:
 - CComSafeArray class
 ms.assetid: ee349aef-33db-4c85-bd08-5d86a3c9d53a
 ms.openlocfilehash: 0262764c950b01acdb610873a995a9a6fd912997
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62259445"
 ---
 # <a name="ccomsafearray-class"></a>CComSafeArray 클래스
 
@@ -318,7 +318,7 @@ HRESULT Create(ULONG ulCount = 0, LONG lLBound = 0);
 
 ### <a name="remarks"></a>설명
 
-A `CComSafeArray` 기존 개체를 만들 수 있습니다 `SAFEARRAYBOUND` 구조 및 배열의 하한값에서 요소 수를 지정 하 여 또는 차원 수입니다. 배열 Visual c + +에서 액세스할 경우 하한값 0 이어야 합니다. 다른 언어 하한값 (예를 들어,-10 ~ 10 같은 범위를 사용 하 여 요소를 사용 하 여 Visual Basic 지원 배열)에 대 한 다른 값이 허용 될 수 있습니다.
+A `CComSafeArray` 기존 개체를 만들 수 있습니다 `SAFEARRAYBOUND` 구조 및 배열의 하한값에서 요소 수를 지정 하 여 또는 차원 수입니다. 배열에 시각적 개체에서 액세스할 수 있으면 C++, 하한값 0 이어야 합니다. 다른 언어 하한값 (예를 들어,-10 ~ 10 같은 범위를 사용 하 여 요소를 사용 하 여 Visual Basic 지원 배열)에 대 한 다른 값이 허용 될 수 있습니다.
 
 ##  <a name="destroy"></a>  CComSafeArray::Destroy
 

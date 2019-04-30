@@ -22,11 +22,11 @@ helpviewer_keywords:
 - floating palettes
 ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
 ms.openlocfilehash: 01450dca56ad662c8db0a35f89749c4a288109b3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58768136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352296"
 ---
 # <a name="docking-and-floating-toolbars"></a>도구 모음 고정 및 고정 해제
 

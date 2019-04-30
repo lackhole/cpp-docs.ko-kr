@@ -7,15 +7,15 @@ helpviewer_keywords:
 - C4412
 ms.assetid: f28dc531-1a98-497b-a366-0a13e1bc81c7
 ms.openlocfilehash: 2c9d50fc3433321c0ca92366a512892212545754
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402439"
 ---
 # <a name="compiler-warning-level-2-c4412"></a>컴파일러 경고(수준 2) C4412
 
-> '*함수*': 함수 시그니처에 형식 '*형식*'; C + + 개체에는 순수 코드 간에 전달 하는 안전 하지 않은 혼합형 / 네이티브 됩니다.
+> '*함수*': 함수 시그니처에 형식 '*형식*'; C++ 개체는 순수 코드 간에 전달 하는 안전 하지 않은 혼합형 / 네이티브 합니다.
 
 ## <a name="remarks"></a>설명
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Windows Forms [C++], MFC support
 ms.assetid: b2957370-cf1f-4779-94ac-228cd393686c
 ms.openlocfilehash: 558c763fd18cd1569ff23435bf6156b3117f117d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387320"
 ---
 # <a name="how-to-do-ddxddv-data-binding-with-windows-forms"></a>방법: 바인딩 Windows Forms에서 DDX/DDV 데이터
 
@@ -19,7 +19,7 @@ ms.locfileid: "57740956"
 
 호출 `DDX_ManagedControl` 에 [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) 리소스 Id에서에서 컨트롤을 만들려고 합니다. 데이터 교환에 대 한 Windows Forms 컨트롤에서 DDX/DDV 함수를 사용할 필요가 없습니다. 대신 관리 되는 컨트롤의 속성에 액세스 하는 코드를 배치할 수 있습니다는 `DoDataExchange` 다음 예제와 같이 대화 상자 (또는 뷰) 클래스의 메서드.
 
-다음 예제에서는 네이티브 c + + 문자열.NET 사용자 정의 컨트롤에 바인딩하는 방법을 보여 줍니다.
+다음 예제에서는 네이티브 바인딩하는 방법 C++ .NET 사용자 정의 컨트롤 문자열입니다.
 
 ## <a name="example"></a>예제
 

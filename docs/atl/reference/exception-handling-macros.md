@@ -10,11 +10,11 @@ helpviewer_keywords:
 - C++ exception handling, macros
 ms.assetid: a8385d34-3fb0-4006-a42a-de045cacf0f4
 ms.openlocfilehash: 8afb2019e38f7548467e85d9a2c1c12c538cf744
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276261"
 ---
 # <a name="exception-handling-macros"></a>예외 처리 매크로
 
@@ -45,7 +45,7 @@ _ATLCATCH(e)
 
 ### <a name="remarks"></a>설명
 
-와 함께 사용할 `_ATLTRY`합니다. C + +로 확인 되 [catch (CAtlException e)](../../cpp/try-throw-and-catch-statements-cpp.md) 특정된 유형의 c + + 예외를 처리 합니다.
+와 함께 사용할 `_ATLTRY`합니다. 확인 C++ [CAtlException e ()를 catch](../../cpp/try-throw-and-catch-statements-cpp.md) 처리의 지정된 된 형식에 대 한 C++ 예외입니다.
 
 ##  <a name="_atlcatchall"></a>  _ATLCATCHALL
 
@@ -57,7 +57,7 @@ _ATLCATCHALL
 
 ### <a name="remarks"></a>설명
 
-와 함께 사용할 `_ATLTRY`합니다. C + + 확인 [catch (...) ](../../cpp/try-throw-and-catch-statements-cpp.md) 모든 유형의 c + + 예외를 처리 합니다.
+와 함께 사용할 `_ATLTRY`합니다. 확인 C++ [catch (...) ](../../cpp/try-throw-and-catch-statements-cpp.md) 모든 유형의 처리에 대 한 C++ 예외입니다.
 
 ##  <a name="_atltry"></a>  _ATLTRY
 
@@ -69,7 +69,7 @@ _ATLTRY
 
 ### <a name="remarks"></a>설명
 
-와 함께 사용할 [_ATLCATCH](#_atlcatch) 하거나 [_ATLCATCHALL](#_atlcatchall)합니다. C + + 기호를 확인 [시도](../../cpp/try-throw-and-catch-statements-cpp.md)합니다.
+와 함께 사용할 [_ATLCATCH](#_atlcatch) 하거나 [_ATLCATCHALL](#_atlcatchall)합니다. 로 확인 되는 C++ 기호 [시도](../../cpp/try-throw-and-catch-statements-cpp.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

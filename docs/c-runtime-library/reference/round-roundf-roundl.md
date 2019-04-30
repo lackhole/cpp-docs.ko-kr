@@ -28,11 +28,11 @@ helpviewer_keywords:
 - roundf function
 ms.assetid: 6be90877-193c-4b80-a32b-c3eca33f9c6f
 ms.openlocfilehash: 126c6bace2b79123094a7f8bcc8f3d3378391d96
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357449"
 ---
 # <a name="round-roundf-roundl"></a>round, roundf, roundl
 
@@ -69,17 +69,17 @@ long double roundl(
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|**QNAN**, **찾기**|없음|**(_D)**|
+|± **QNAN**, **IND**|없음|**_DOMAIN**|
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **반올림** 및 반환 하는 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **반올림** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **반올림** 및 반환 하는 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **반올림** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**반올림**하십시오 **roundf**, **roundl**|\<math.h>|
+|**round**, **roundf**, **roundl**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

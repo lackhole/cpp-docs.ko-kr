@@ -1,5 +1,5 @@
 ---
-title: 매니페스트 도구, c + + 입 / 출력 속성
+title: 매니페스트 도구, C++ 입 / 출력 속성
 ms.date: 08/27/2018
 f1_keywords:
 - VC.Project.VCManifestTool.OutputManifestFile
@@ -11,11 +11,11 @@ f1_keywords:
 - VC.Project.VCManifestTool.GenerateCatalogFiles
 ms.assetid: a8bb20f6-7ace-45ca-bab0-b4f4a5caf170
 ms.openlocfilehash: 1731665ffa6117896490115028b4744e195beae2
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291057"
 ---
 # <a name="input-and-output-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>입력 및 출력, 매니페스트 도구, 구성 속성, &lt;Projectname&gt; 속성 페이지 대화 상자
 
@@ -65,4 +65,4 @@ ms.locfileid: "57827747"
 
 [ndptecclick](/visualstudio/deployment/clickonce-application-manifest)<br/>
 [매니페스트 도구 속성 페이지](manifest-tool-property-pages.md)<br/>
-[Visual Studio에서 속성을 빌드하고 c + + 컴파일러를 설정 합니다.](../working-with-project-properties.md)<br/>
+[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)<br/>

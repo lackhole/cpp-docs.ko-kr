@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2561
 ms.assetid: 0abe955b-53a6-4a3c-8362-b1a8eb40e8d1
 ms.openlocfilehash: 8350c5baf129b88c178be280d2da7fe856c6cf57
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368424"
 ---
 # <a name="compiler-error-c2561"></a>컴파일러 오류 C2561
 
@@ -25,7 +25,7 @@ ms.locfileid: "50517613"
 
 1. 프로토타입에서 선언 된 형식의 값을 반환 하는 함수의 가능한 모든 분기를 확인 합니다.
 
-1. C + + 함수에서 반환 값을 저장 하는 인라인 어셈블리 루틴을 포함 하는 `AX` 등록 return 문이 해야 할 수 있습니다. 값을 복사 `AX` 를 임시 변수에 함수에서 해당 변수를 반환 합니다.
+1. C++반환 값을 저장 하는 인라인 어셈블리 루틴을 포함 하는 함수는 `AX` 등록 return 문이 해야 할 수 있습니다. 값을 복사 `AX` 를 임시 변수에 함수에서 해당 변수를 반환 합니다.
 
 다음 샘플에서는 C2561 오류가 생성 됩니다.
 

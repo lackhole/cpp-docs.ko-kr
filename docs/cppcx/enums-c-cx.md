@@ -3,15 +3,15 @@ title: 열거형(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: 99fbbe28-c1cd-43af-9ead-60f90eba6e68
 ms.openlocfilehash: f16a288a0b928b74ef42de5781fd1b54930927d6
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752144"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345810"
 ---
 # <a name="enums-ccx"></a>열거형(C++/CX)
 
-C + + /cli CX 지원 합니다 `public enum class` 표준 c + +과 유사한 키워드를 `scoped  enum`입니다. `public enum class` 키워드를 사용하여 선언된 열거자를 사용할 경우 열거형 식별자를 사용하여 각 열거자 값의 범위를 지정해야 합니다.
+C++/CX를 지원 합니다 `public enum class` 표준과 유사한 키워드를 C++ `scoped  enum`합니다. `public enum class` 키워드를 사용하여 선언된 열거자를 사용할 경우 열거형 식별자를 사용하여 각 열거자 값의 범위를 지정해야 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -40,5 +40,5 @@ A `public enum class` 또는 `public enum struct` 선언은 내부 형식이 모
 ## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
-[Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[네임 스페이스 참조](../cppcx/namespaces-reference-c-cx.md)
+[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

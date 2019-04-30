@@ -14,11 +14,11 @@ helpviewer_keywords:
 - ignore libraries linker option
 ms.assetid: 7270b673-6711-468e-97a7-c2925ac2be6e
 ms.openlocfilehash: 24528eb4c387c4cd0921ab089370d72b076ad640
-ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58508756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62320521"
 ---
 # <a name="nodefaultlib-ignore-libraries"></a>/NODEFAULTLIB(라이브러리 무시)
 
@@ -45,7 +45,7 @@ ms.locfileid: "58508756"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 선택 된 **구성 속성** > **링커** > **입력** 속성 페이지.
 

@@ -31,11 +31,11 @@ helpviewer_keywords:
 - ilogbl function
 ms.assetid: 9ef19d57-1caa-41d5-8233-2faad3562fcb
 ms.openlocfilehash: 272544124dd8a8a666fc434516d3c45c73b1d011
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331679"
 ---
 # <a name="ilogb-ilogbf-ilogbl"></a>ilogb, ilogbf, ilogbl
 
@@ -85,7 +85,7 @@ int ilogbl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **ilogb** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **ilogb** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **ilogb** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **ilogb** 항상 받아서 반환 된 **double**합니다.
 
 이 함수를 호출 하는 것은 해당 호출 비슷합니다 **logb** 함수를 다음 반환 값을 캐스팅 **int**합니다.
 
@@ -93,7 +93,7 @@ C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니�
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**ilogb**하십시오 **ilogbf**, **ilogbl**|\<math.h>|\<cmath>|
+|**ilogb**, **ilogbf**, **ilogbl**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

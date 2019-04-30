@@ -9,15 +9,15 @@ helpviewer_keywords:
 - ActiveX control containers [MFC], inserting controls
 ms.assetid: 46f195b0-b8ca-4409-8cca-fbfaf2c9ab9f
 ms.openlocfilehash: 70a67a6952d5361177b89e3ba514d7036b5799b6
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394873"
 ---
 # <a name="activex-control-containers-using-controls-in-a-non-dialog-container"></a>ActiveX 컨트롤 컨테이너: 대화 상자가 아닌 컨테이너에서 컨트롤을 사용 하 여
 
-일부 SDI 등의 응용 프로그램 또는 MDI 응용 프로그램에서 응용 프로그램의 창에서 컨트롤을 포함 해야 합니다. 합니다 **만들기** Visual c + +에 의해 삽입 된 래퍼 클래스의 멤버 함수 인스턴스를 만들 수는 컨트롤의 동적으로 대화 상자에 대 한 필요 하지 않습니다.
+일부 SDI 등의 응용 프로그램 또는 MDI 응용 프로그램에서 응용 프로그램의 창에서 컨트롤을 포함 해야 합니다. 합니다 **만들기** 시각적 개체에 의해 삽입 된 래퍼 클래스의 멤버 함수 C++, 대화 상자에 대 한 필요 없이 동적으로 컨트롤의 인스턴스를 만들 수 있습니다.
 
 합니다 **만들기** 멤버 함수에 다음 매개 변수:
 

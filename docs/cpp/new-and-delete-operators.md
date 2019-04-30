@@ -10,19 +10,19 @@ helpviewer_keywords:
 - delete keyword [C++], syntax
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
 ms.openlocfilehash: 1ac6282ecbf45f22e7dd66b94f8bccdbc4e505ce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441303"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345890"
 ---
 # <a name="new-and-delete-operators"></a>new 및 delete 연산자
 
-C + +에서는 동적 할당 및 할당 취소를 사용 하 여 개체를 [새](../cpp/new-operator-cpp.md) 하 고 [삭제](../cpp/delete-operator-cpp.md) 연산자. 이러한 연산자는 사용 가능한 저장소라고 하는 풀에서 개체에 대한 메모리를 할당합니다. 합니다 **새** 특수 함수를 호출 하는 연산자 [new 연산자](../cpp/new-operator-cpp.md), 및 **삭제** 특수 함수를 호출 하는 연산자 [연산자 delete](../cpp/delete-operator-cpp.md).
+C++동적 할당 및 개체를 사용 하 여 할당 취소를 지원 합니다 [새](../cpp/new-operator-cpp.md) 하 고 [삭제](../cpp/delete-operator-cpp.md) 연산자입니다. 이러한 연산자는 사용 가능한 저장소라고 하는 풀에서 개체에 대한 메모리를 할당합니다. 합니다 **새** 특수 함수를 호출 하는 연산자 [new 연산자](../cpp/new-operator-cpp.md), 및 **삭제** 특수 함수를 호출 하는 연산자 [연산자 delete](../cpp/delete-operator-cpp.md).
 
-합니다 **새** c + + 표준 라이브러리의 함수는 메모리 할당이 실패 하는 경우 std:: bad_alloc 예외를 throw 하는 c + + 표준에 지정 된 동작을 지원 합니다. Throw 되지 않는 버전을 원하는 경우 **새**, 프로그램을 nothrownew.obj와 연결 합니다. 그러나 연결 하면 기본 nothrownew.obj와 연결 **new 연산자** c + + 표준 라이브러리에서 더 이상 작동 합니다.
+합니다 **새** 함수를 C++ 표준 라이브러리에서 지정 된 동작을 지원 합니다 C++ 메모리 할당이 실패 하는 경우 std:: bad_alloc 예외를 throw 하는 표준입니다. Throw 되지 않는 버전을 원하는 경우 **새**, 프로그램을 nothrownew.obj와 연결 합니다. 그러나 연결 하면 기본 nothrownew.obj와 연결 **new 연산자** 에 C++ 표준 라이브러리에서 더 이상 작동 합니다.
 
-C 런타임 라이브러리와 c + + 표준 라이브러리를 구성 하는 라이브러리 파일의 목록을 참조 하세요 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)합니다.
+C 런타임 라이브러리를 구성 하는 라이브러리 파일의 목록 및 C++ 표준 라이브러리를 참조 하세요 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)합니다.
 
 ##  <a id="new_operator"> </a> New 연산자
 
@@ -42,8 +42,8 @@ char *pch = new char[BUFFER_SIZE];
 
 |연산자|범위|
 |--------------|-----------|
-|**:: new 연산자**|Global|
-|*클래스 이름을* **:: new 연산자**|클래스|
+|**::operator new**|Global|
+|*class-name* **::operator new**|클래스|
 
 첫 번째 인수 **new 연산자** 유형 이어야 `size_t` (에 정의 된 형식 \<stddef.h >), 하며 반환 형식은 항상 **void** <strong>\*</strong>.
 
@@ -85,9 +85,9 @@ int main()
 Blanks *SomeBlanks = new Blanks;
 ```
 
-Visual c + + 5.0 및 이전 버전의 경우 비 클래스 형식 및 모든 배열 (된 여부에 관계 없이 **클래스** 형식)를 사용 하 여 할당 된 **새** 연산자는 항상 전역 사용 **new 연산자** 함수입니다.
+시각적 개체의 C++ 5.0 및 이전 버전의 경우 비 클래스 형식 및 모든 배열 (된 여부에 관계 없이 **클래스** 형식) 사용 하 여 할당 된 **새** 연산자는 항상 전역 사용 **new 연산자**  함수입니다.
 
-Visual c + + 5.0부터 컴파일러가 지 원하는 멤버 배열을 **새** 하 고 **삭제** 클래스 선언에서 연산자입니다. 예를 들어:
+시각적 개체를 사용 하 여 시작 C++ 5.0, 컴파일러는 멤버 배열을 지원 **새** 하 고 **삭제** 클래스 선언에서 연산자. 예를 들어:
 
 ```cpp
 // spec1_the_operator_new_function2.cpp
@@ -203,7 +203,7 @@ int main( int argc, char *argv[] ) {
 
 앞의 코드를 사용하여 "메모리 누수"를 검색할 수 있습니다. 메모리 누수는 사용 가능한 저장소에 할당되었지만 비워지지 않은 메모리를 의미합니다. 전역이 검색을 수행 하도록 **새** 하 고 **삭제** 연산자 수 할당 및 메모리 할당 취소 하도록 다시 정의 됩니다.
 
-Visual c + + 5.0부터 컴파일러가 지 원하는 멤버 배열을 **새** 하 고 **삭제** 클래스 선언에서 연산자입니다. 예를 들어:
+시각적 개체를 사용 하 여 시작 C++ 5.0, 컴파일러는 멤버 배열을 지원 **새** 하 고 **삭제** 클래스 선언에서 연산자. 예를 들어:
 
 ```cpp
 // spec1_the_operator_delete_function2.cpp

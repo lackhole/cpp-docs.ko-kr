@@ -4,11 +4,11 @@ ms.date: 09/17/2018
 ms.topic: conceptual
 ms.assetid: a6c111d0-24f9-4bbb-997d-3db4569761b7
 ms.openlocfilehash: c3def77d8b7a22be05259784e3b80562c8728c15
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62398916"
 ---
 # <a name="errors-and-exception-handling-modern-c"></a>오류 및 예외 처리(모던 C++)
 
@@ -100,7 +100,7 @@ SEH에 대 한 자세한 내용은 참조 하세요. [구조적 예외 처리 (C
 
 ## <a name="see-also"></a>참고자료
 
-[방법: 예외 및 비 예외 코드 간 인터페이스](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
+[방법: 예외 코드와 예외가 아닌 코드 간 인터페이스](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
 [C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

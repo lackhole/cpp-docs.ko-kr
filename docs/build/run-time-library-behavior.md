@@ -1,5 +1,5 @@
 ---
-title: Dll 및 Visual c + + 런타임 라이브러리 동작
+title: Dll 및 시각적 개체 C++ 런타임 라이브러리 동작
 ms.date: 11/04/2016
 f1_keywords:
 - _DllMainCRTStartup
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - DLLs [C++], startup sequence
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
 ms.openlocfilehash: ea970f010e86d655963485339c48b8f7d36d6270
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62314795"
 ---
-# <a name="dlls-and-visual-c-run-time-library-behavior"></a>Dll 및 Visual c + + 런타임 라이브러리 동작
+# <a name="dlls-and-visual-c-run-time-library-behavior"></a>Dll 및 시각적 개체 C++ 런타임 라이브러리 동작
 
-기본적으로 Visual c + +를 사용 하 여 동적 연결 라이브러리 (DLL)를 빌드할 때 링커는 Visual c + + 런타임 라이브러리 (VCRuntime)을 포함 합니다. VCRuntime 초기화 및 C/c + + 실행 파일을 종료 하는 데 필요한 코드를 포함 합니다. VCRuntime 코드 제공 이라는 내부 DLL 진입점 함수를 DLL로 연결 하는 경우 `_DllMainCRTStartup` Windows OS 메시지 DLL에 연결 또는 스레드 또는 프로세스에서 분리를 처리 하는 합니다. `_DllMainCRTStartup` 함수 C 런타임 라이브러리 (CRT) 초기화 및 종료를 설정 하는 스택 버퍼 보안과 같은 필수 작업을 수행 하 고 정적 및 전역 개체에 대 한 생성자 및 소멸자를 호출 합니다. `_DllMainCRTStartup` 또한 호출 자체 초기화 및 종료 하는 데 WinRT, MFC 및 ATL 등의 기타 라이브러리에 대 한 함수를 연결 합니다. 이 초기화, CRT 및 다른 라이브러리와 정적 변수를 없이 초기화 되지 않은 상태로 유지할 수 됩니다. 동일한 VCRuntime 내부 초기화 및 종료 루틴에는 DLL을 정적으로 연결 된 CRT 또는 동적으로 연결 된 CRT DLL 사용 이라고 합니다.
+시각적 개체를 사용 하 여 동적 연결 라이브러리 (DLL)를 빌드할 때 C++를 기본적으로 링커는 시각적 개체를 포함 C++ 런타임 라이브러리 (VCRuntime). 초기화 하 고 C를 종료 하는 데 필요한 코드를 포함 하는 VCRuntime /C++ 실행 합니다. VCRuntime 코드 제공 이라는 내부 DLL 진입점 함수를 DLL로 연결 하는 경우 `_DllMainCRTStartup` Windows OS 메시지 DLL에 연결 또는 스레드 또는 프로세스에서 분리를 처리 하는 합니다. `_DllMainCRTStartup` 함수 C 런타임 라이브러리 (CRT) 초기화 및 종료를 설정 하는 스택 버퍼 보안과 같은 필수 작업을 수행 하 고 정적 및 전역 개체에 대 한 생성자 및 소멸자를 호출 합니다. `_DllMainCRTStartup` 또한 호출 자체 초기화 및 종료 하는 데 WinRT, MFC 및 ATL 등의 기타 라이브러리에 대 한 함수를 연결 합니다. 이 초기화, CRT 및 다른 라이브러리와 정적 변수를 없이 초기화 되지 않은 상태로 유지할 수 됩니다. 동일한 VCRuntime 내부 초기화 및 종료 루틴에는 DLL을 정적으로 연결 된 CRT 또는 동적으로 연결 된 CRT DLL 사용 이라고 합니다.
 
 ## <a name="default-dll-entry-point-dllmaincrtstartup"></a>기본 DLL 항목 지점 _DllMainCRTStartup
 
@@ -32,7 +32,7 @@ Windows에서 Dll을 모두 일반적으로 호출 하는 선택적 진입점 �
 
 호출 하는 진입점 함수를 제공 하는 VCRuntime 라이브러리 `_DllMainCRTStartup` 기본 초기화 및 종료 작업을 처리할 수 있습니다. 프로세스에 연결 된 `_DllMainCRTStartup` 함수 버퍼 보안 검사 설정, CRT 및 다른 라이브러리를 초기화, 런타임 형식 정보를 초기화, 초기화 및 정적 및 로컬이 아닌 데이터에 대 한 생성자를 호출, 스레드 로컬 저장소를 초기화 합니다. 에서 각 연결에 대 한 내부 정적 카운터를 증가 시키고 다음 호출 하는 사용자 또는 라이브러리-제공 `DllMain`합니다. 프로세스 분리, 함수 역순에서이 단계를 거칩니다. 호출한 `DllMain`내부 카운터를 감소 시킵니다 소멸자를 호출, 호출 CRT 종료 함수와 등록 `atexit` 함수 및 다른 라이브러리의 종료를에 알립니다. 첨부 파일 카운터가 0이 되 면 하는 경우 함수 반환 `FALSE` 에 알리기 위해 Windows DLL을 로드할 수는 있습니다. `_DllMainCRTStartup` 함수도 호출 해야 하는 동안 스레드 연결 및 스레드 분리 합니다. 이러한 경우 VCRuntime 코드 추가 초기화 또는 자체적으로 종료 하지 않으며 호출 `DllMain` 함께 메시지를 전달 하도록 합니다. 경우 `DllMain` 반환 `FALSE` 프로세스에서 연결 오류 신호 `_DllMainCRTStartup` 호출 `DllMain` 다시 전달 `DLL_PROCESS_DETACH` 로 *이유* 인수 다음의 rest를 통해 이동 합니다 종료 프로세스입니다.
 
-Visual c + +에서 기본 진입점 Dll을 빌드할 때 `_DllMainCRTStartup` 제공한 VCRuntime에 자동으로 연결 합니다. 사용 하 여 DLL에 대 한 진입점 함수를 지정 해야 합니다 [/ENTRY (진입점 기호)](reference/entry-entry-point-symbol.md) 링커 옵션입니다.
+시각적 개체에 대 한 Dll을 빌드할 때 C++를 기본 진입점 `_DllMainCRTStartup` 제공한 VCRuntime에 자동으로 연결 합니다. 사용 하 여 DLL에 대 한 진입점 함수를 지정 해야 합니다 [/ENTRY (진입점 기호)](reference/entry-entry-point-symbol.md) 링커 옵션입니다.
 
 > [!NOTE]
 > /ENTRY를 사용 하 여 DLL에 대 한 다른 진입점 함수를 지정할 수 있지만: 링커 옵션을 권장 하지는 않습니다를 모든 진입점 함수는 있으므로 `_DllMainCRTStartup` 같은 순서로 수행 합니다. VCRuntime 해당 동작을 중복 할 수 있는 함수를 제공 합니다. 예를 들어, 호출할 수 있습니다 [__security_init_cookie](../c-runtime-library/reference/security-init-cookie.md) 즉시 프로세스를 지원 하기 위해 연결 된 [/GS (버퍼 보안 검사)](reference/gs-buffer-security-check.md) 버퍼 옵션을 선택 합니다. 호출할 수 있습니다는 `_CRT_INIT` 함수에 DLL 초기화 및 종료 함수의 나머지 부분을 수행 하는 항목 지점 함수와 동일한 매개 변수를 전달 합니다.
@@ -41,7 +41,7 @@ Visual c + +에서 기본 진입점 Dll을 빌드할 때 `_DllMainCRTStartup` �
 
 ## <a name="initialize-a-dll"></a>DLL 초기화
 
-DLL에는 해당 DLL이 로드 될 때 실행 되어야 하는 초기화 코드가 있을 수 있습니다. 사용자 DLL 초기화 및 종료 함수를 수행 하는 순서 대로 `_DllMainCRTStartup` 라는 함수를 호출 `DllMain` 제공할 수 있는 합니다. 프로그램 `DllMain` DLL 진입점에 대 한 필수 시그니처가 있어야 합니다. 기본 진입점 함수 `_DllMainCRTStartup` 호출 `DllMain` 동일한 매개 변수를 사용 하 여 Windows에서 전달 합니다. 기본적으로 제공 하지 않는 경우는 `DllMain` 함수를 Visual c + +에서 제공 하 고 연결에 있도록 `_DllMainCRTStartup` 항상 호출 하는 합니다. 이 DLL 초기화할 필요가 없는 경우 별도 DLL을 빌드할 때 수행할 작업을 의미 합니다.
+DLL에는 해당 DLL이 로드 될 때 실행 되어야 하는 초기화 코드가 있을 수 있습니다. 사용자 DLL 초기화 및 종료 함수를 수행 하는 순서 대로 `_DllMainCRTStartup` 라는 함수를 호출 `DllMain` 제공할 수 있는 합니다. 프로그램 `DllMain` DLL 진입점에 대 한 필수 시그니처가 있어야 합니다. 기본 진입점 함수 `_DllMainCRTStartup` 호출 `DllMain` 동일한 매개 변수를 사용 하 여 Windows에서 전달 합니다. 기본적으로 제공 하지 않는 경우는 `DllMain` 함수를 Visual C++ 에서 제공 하 고 연결에 있도록 `_DllMainCRTStartup` 항상 호출 하는 합니다. 이 DLL 초기화할 필요가 없는 경우 별도 DLL을 빌드할 때 수행할 작업을 의미 합니다.
 
 에 사용 되는 시그니처 `DllMain`:
 
@@ -98,7 +98,7 @@ extern "C" BOOL WINAPI DllMain (
 ```
 
 > [!NOTE]
-> 이전 Windows SDK 설명서는 DLL 진입점 함수가의 실제 이름 링커 /ENTRY 옵션을 사용 하 여 명령줄에 지정 해야 표시 됩니다. Visual c + +를 사용 하 여 필요가 없습니다 진입점 함수의 이름이 /ENTRY 옵션을 사용 하려면 `DllMain`합니다. 사실, /ENTRY 옵션 및 이름을 사용 하는 경우 프로그램 진입점 것 이외의 함수 `DllMain`, 진입점 함수 호출 동일한 초기화 하는 경우가 아니면 CRT 올바르게 초기화 되지 않습니다 `_DllMainCRTStartup` 수 있습니다.
+> 이전 Windows SDK 설명서는 DLL 진입점 함수가의 실제 이름 링커 /ENTRY 옵션을 사용 하 여 명령줄에 지정 해야 표시 됩니다. 시각적 개체를 사용 하 여 C++, 진입점 함수의 이름은 /ENTRY 옵션을 사용할 필요가 없습니다 `DllMain`합니다. 사실, /ENTRY 옵션 및 이름을 사용 하는 경우 프로그램 진입점 것 이외의 함수 `DllMain`, 진입점 함수 호출 동일한 초기화 하는 경우가 아니면 CRT 올바르게 초기화 되지 않습니다 `_DllMainCRTStartup` 수 있습니다.
 
 <a name="initializing-regular-dlls"></a>
 

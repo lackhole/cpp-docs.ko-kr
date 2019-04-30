@@ -9,15 +9,15 @@ helpviewer_keywords:
 - _SCL_SECURE_NO_WARNINGS
 ms.assetid: ef0ddea9-7c62-4b53-8b64-5f4fd369776f
 ms.openlocfilehash: 77c60aed511fc3dbbea2d74e83e36dae735dcb0e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348310"
 ---
 # <a name="sclsecurenowarnings"></a>_SCL_SECURE_NO_WARNINGS
 
-C + + 표준 라이브러리에서 안전 하지 않은 방법 중 하나를 호출 하면 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)합니다. 이 경고를 비활성화 하려면 코드에서 매크로 _SCL_SECURE_NO_WARNINGS를 정의 합니다.
+안전 하지 않은 메서드 중 하나를 호출 합니다 C++ 표준 라이브러리에서 결과 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)합니다. 이 경고를 비활성화 하려면 코드에서 매크로 _SCL_SECURE_NO_WARNINGS를 정의 합니다.
 
 ```cpp
 #define _SCL_SECURE_NO_WARNINGS
@@ -35,7 +35,7 @@ C4996 경고를 비활성화하는 다른 방법은 다음과 같습니다.
 
 - [/w](../build/reference/compiler-option-warning-level.md) 컴파일러 옵션을 사용합니다.
 
-   > cl /wd4996 [다른 컴파일러 옵션] myfile.cpp
+   > cl /wd4996 [other compiler options] myfile.cpp
 
 - [#pragma warning](../preprocessor/warning.md) 경고를 사용합니다.
 
@@ -45,7 +45,7 @@ C4996 경고를 비활성화하는 다른 방법은 다음과 같습니다.
 
 **/w\<l>\<n>** 컴파일러 옵션을 사용하여 경고 C4996의 수준을 수동으로 변경할 수도 있습니다. 예를 들어 C4996 경고를 수준 4로 설정하려면 다음 코드를 사용합니다.
 
-> cl /w44996 [다른 컴파일러 옵션] myfile.cpp
+> cl /w44996 [other compiler options] myfile.cpp
 
 자세한 내용은 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX(경고 수준)](../build/reference/compiler-option-warning-level.md)를 참조하세요.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1060
 ms.assetid: feaf305c-c84c-4160-b974-50e283412849
 ms.openlocfilehash: 876ae7a368d2d1a1ee94a04fc9ecf50d0f4b8d78
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62364235"
 ---
 # <a name="fatal-error-c1060"></a>심각한 오류 C1060
 
@@ -25,7 +25,7 @@ ms.locfileid: "50607067"
 
    경우는 [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) 옵션이 이미 설정 되어, 제거해 봅니다. 옵션에 지정된 메모리 할당 제한이 너무 높으면 힙 공간이 모두 사용되었을 수 있습니다. 컴파일러에서 제거 하는 경우 기본 제한 값을 사용 합니다 [/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md) 옵션입니다.
 
-1. 64비트 플랫폼에서 컴파일하는 경우 64비트 컴파일러 도구 집합을 사용합니다. 정보를 참조 하세요 [방법: 명령줄에서 64 비트 Visual c + + 도구를 사용 하도록 설정](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)합니다.
+1. 64비트 플랫폼에서 컴파일하는 경우 64비트 컴파일러 도구 집합을 사용합니다. 자세한 내용은 [방법: 64 비트 시각적 개체를 사용 하도록 설정 C++ 명령줄에서 도구 집합](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)합니다.
 
 1. 32 비트 Windows에서 사용 하 여 시도 합니다 [3GB](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) boot.ini 스위치가 있습니다.
 

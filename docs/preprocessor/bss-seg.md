@@ -9,11 +9,11 @@ helpviewer_keywords:
 - bss_seg pragma
 ms.assetid: 755f0154-de51-4778-97d3-c9b24e445079
 ms.openlocfilehash: 489ced11bb6024fdf9818872c07ab7feebfeabf3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212417"
 ---
 # <a name="bssseg"></a>bss_seg
 
@@ -36,11 +36,11 @@ ms.locfileid: "50566311"
 *identifier*<br/>
 (선택 사항) 와 함께 사용할 때 **푸시**, 내부 컴파일러 스택의 레코드에 이름을 할당 합니다. *식별자* 여러 레코드는 단일으로 팝 될 수 있습니다 **pop** 명령입니다. 와 함께 사용할 때 **pop**, 지시문 될 때까지 내부 스택에서 기록을 팝 *식별자* 가 제거 *식별자* 없는 내부 스택에서 아무 것도 팝 합니다.
 
-*"세그먼트 이름이"*<br/>
+*"segment-name"*<br/>
 (선택 사항) 세그먼트의 이름입니다. 와 함께 사용할 경우 **pop**, 스택이 팝 되 고 *세그먼트 이름이* 활성 세그먼트 이름이 됩니다.
 
-*"세그먼트-클래스"*<br/>
-(선택 사항) 버전 2.0 이전의 c + +를 사용 하 여 호환성을 위해 포함 되어 있습니다. 무시됩니다.
+*"segment-class"*<br/>
+(선택 사항) 호환성을 위해 포함 된 C++ 버전 2.0 이전 합니다. 무시됩니다.
 
 ## <a name="remarks"></a>설명
 

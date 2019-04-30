@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Web applications [MFC], creating
 ms.assetid: 257f8c03-33c3-428c-832e-0b70aff6168d
 ms.openlocfilehash: 12df36188bd858f73ff4834236a19583023e5f93
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57809875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372233"
 ---
 # <a name="creating-a-web-browser-style-mfc-application"></a>웹 브라우저 스타일 MFC 응용 프로그램 만들기
 
@@ -39,7 +39,7 @@ WebBrowser 컨트롤 로케이터 URL (Uniform Resource) 탐색 및 하이퍼링
 
 때문에 `CHtmlView` 같은 다른 인쇄 되지 Microsoft 웹 브라우저 컨트롤을 지 원하는 간단히 구현 [CView](../../mfc/reference/cview-class.md)-클래스를 파생 합니다. 대신 WebBrowser 컨트롤 인쇄 고 프린터 사용자 인터페이스를 구현합니다. 결과적으로, `CHtmlView` 는 인쇄 미리 보기, 지원 하지 않습니다 하 고 기타 인쇄 지원 기능에 대 한 프레임 워크를 제공 하지 않습니다: 예를 들어 [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting), [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting), 및 [CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting), 다른 MFC 응용 프로그램에서 사용할 수 있는 합니다.
 
-`CHtmlView` 응용 프로그램에 웹 페이지나 HTML 페이지 보기를 제공 하는 웹 브라우저 컨트롤에 대 한 래퍼로 작동 합니다. 마법사에서는 재정의 만듭니다.는 [OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) Microsoft Visual c + + 웹 사이트에 대 한 탐색 링크를 제공 하는 뷰 클래스의 함수:
+`CHtmlView` 응용 프로그램에 웹 페이지나 HTML 페이지 보기를 제공 하는 웹 브라우저 컨트롤에 대 한 래퍼로 작동 합니다. 마법사에서는 재정의 만듭니다.는 [OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) Microsoft 시각적 개체를 탐색 링크를 제공 하는 뷰 클래스의 함수 C++ 웹 사이트:
 
 ```cpp
 void CWebView::OnInitialUpdate()

@@ -3,11 +3,11 @@ title: x64 스택 사용
 ms.date: 12/17/2018
 ms.assetid: 383f0072-0438-489f-8829-cca89582408c
 ms.openlocfilehash: 902e4304ac124be46c6edf0860118dc522b34890
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57425603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62314824"
 ---
 # <a name="x64-stack-usage"></a>x64 스택 사용
 
@@ -47,9 +47,9 @@ RSP의 현재 주소를 넘는 모든 메모리에 일시적으로 간주 됩니
 
 ## <a name="malloc-alignment"></a>malloc 맞춤
 
-[malloc](../c-runtime-library/reference/malloc.md) 에 할당 되는 메모리에 맞출 수 있고 기본 맞춤이 있는 개체를 저장 하도록 적절히 정렬 되는 메모리를 반환 합니다. A *기본 맞춤* 는 맞춤은 맞춤 사양 없이 구현에서 지원 되는 가장 큰 맞춤 보다 작거나 같은입니다. (이것은 맞춤에 대 한 필요한 Visual c + +에서는 `double`, 또는 8 바이트입니다. 64비트 플랫폼을 대상으로 하는 코드에서는 16바이트입니다. 예를 들어, 4 바이트 할당 4 바이트 보다 작은 개체를 지 원하는 경계에 정렬 합니다.
+[malloc](../c-runtime-library/reference/malloc.md) 에 할당 되는 메모리에 맞출 수 있고 기본 맞춤이 있는 개체를 저장 하도록 적절히 정렬 되는 메모리를 반환 합니다. A *기본 맞춤* 는 맞춤은 맞춤 사양 없이 구현에서 지원 되는 가장 큰 맞춤 보다 작거나 같은입니다. (시각적 개체의 C++에 대 한 필요한 맞춤은이 `double`, 또는 8 바이트입니다. 64비트 플랫폼을 대상으로 하는 코드에서는 16바이트입니다. 예를 들어, 4 바이트 할당 4 바이트 보다 작은 개체를 지 원하는 경계에 정렬 합니다.
 
-Visual c + +를 갖는 형식이 허용 *확장 된 맞춤*, 라고도 되 *과도 하 게 정렬* 형식입니다. 예를 들어 SSE 형식 [__m128](../cpp/m128.md) 및 `__m256`를 사용 하 여 선언 된 형식과 `__declspec(align( n ))` 여기서 `n` 은 8 보다 큼, 맞춤 확장. 확장 된 맞춤이 필요한 개체에 적합 한 경계에서 메모리 맞춤은 반드시 `malloc`입니다. 사용 과다 정렬 된 형식에 대 한 메모리를 할당할 [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) 및 관련 함수입니다.
+Visual C++ 을 갖는 형식이 허용 *확장 된 맞춤*를 라 하는 *과도 하 게 정렬* 형식입니다. 예를 들어 SSE 형식 [__m128](../cpp/m128.md) 및 `__m256`를 사용 하 여 선언 된 형식과 `__declspec(align( n ))` 여기서 `n` 은 8 보다 큼, 맞춤 확장. 확장 된 맞춤이 필요한 개체에 적합 한 경계에서 메모리 맞춤은 반드시 `malloc`입니다. 사용 과다 정렬 된 형식에 대 한 메모리를 할당할 [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) 및 관련 함수입니다.
 
 ## <a name="alloca"></a>alloca
 

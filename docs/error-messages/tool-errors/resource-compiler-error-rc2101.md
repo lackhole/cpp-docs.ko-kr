@@ -7,11 +7,11 @@ helpviewer_keywords:
 - RC2101
 ms.assetid: 580f9d74-162f-41e9-9438-ddbe3457c359
 ms.openlocfilehash: 595e87b73d79a01993e0e9b3aaa814332b21413f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448024"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345281"
 ---
 # <a name="resource-compiler-error-rc2101"></a>리소스 컴파일러 오류 RC2101
 
@@ -19,7 +19,7 @@ ms.locfileid: "50448024"
 
 리소스 컴파일러 파일은 포함 된 **#pragma** 지시문입니다.
 
-사용 된 **#ifndef** 리소스 컴파일러를 정의 하는 include 파일을 처리할 때 RC_INVOKED 상수를 사용 하 여 전처리기 지시문입니다. 위치는 **#pragma** RC_INVOKED 상수 정의 될 때 처리 되지 않은 코드 블록 안에 지시문입니다. C/c + + 컴파일러에 의해서만 및 리소스 컴파일러가 아니라 블록의 코드에서에서 처리 됩니다. 다음 샘플 코드에는이 기술을 보여 줍니다.
+사용 된 **#ifndef** 리소스 컴파일러를 정의 하는 include 파일을 처리할 때 RC_INVOKED 상수를 사용 하 여 전처리기 지시문입니다. 위치는 **#pragma** RC_INVOKED 상수 정의 될 때 처리 되지 않은 코드 블록 안에 지시문입니다. 블록의 코드는 C에 의해서만 처리 /C++ 컴파일러 및 리소스 컴파일러에 의해 없습니다. 다음 샘플 코드에는이 기술을 보여 줍니다.
 
 ```
 #ifndef RC_INVOKED

@@ -97,11 +97,11 @@ helpviewer_keywords:
 - std::array [C++], swap
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
 ms.openlocfilehash: fdc3705980ac8f763e0438f19920148437e7ed27
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62377506"
 ---
 # <a name="array-class-c-standard-library"></a>array 클래스(C++ 표준 라이브러리)
 
@@ -162,11 +162,11 @@ class array;
 |연산자|설명|
 |-|-|
 |[array::operator=](#op_eq)|제어되는 시퀀스를 바꿉니다.|
-|[array:: operator\[\]](#op_at)|지정된 위치에 있는 요소에 액세스합니다.|
+|[array::operator\[\]](#op_at)|지정된 위치에 있는 요소에 액세스합니다.|
 
 ## <a name="remarks"></a>설명
 
-형식에 기본 생성자 `array()`와 기본 대입 연산자 `operator=`가 있고 `aggregate`에 대한 요구 사항을 충족합니다. 따라서 집계 이니셜라이저를 사용하여 `array<Ty, N>` 형식의 개체를 초기화할 수 있습니다. 예를 들어 개체에 적용된
+형식에 기본 생성자 `array()`와 기본 대입 연산자 `operator=`가 있고 `aggregate`에 대한 요구 사항을 충족합니다. 따라서 집계 이니셜라이저를 사용하여 `array<Ty, N>` 형식의 개체를 초기화할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 array<int, 4> ai = { 1, 2, 3 };
@@ -303,7 +303,7 @@ constexpr const_reference at(size_type off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*off*<br/>
 액세스할 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
@@ -1149,7 +1149,7 @@ constexpr const_reference operator[](size_type off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*off*<br/>
 액세스할 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
@@ -1675,6 +1675,6 @@ int main()
 0 1 2 3
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [\<array>](../standard-library/array.md)<br/>

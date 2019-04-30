@@ -7,11 +7,11 @@ helpviewer_keywords:
 - linear_congruential_engine class
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1
 ms.openlocfilehash: 83306e47995f652014682d6bcc94966aab75c062
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413257"
 ---
 # <a name="linearcongruentialengine-class"></a>linear_congruential_engine 클래스
 
@@ -49,13 +49,13 @@ class linear_congruential_engine{
 부호가 없는 정수 결과 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 *A*<br/>
-**승수**. **사전 조건**: 설명 섹션을 참조하세요.
+**승수**. **전제 조건**: 주의 섹션을 참조 하세요.
 
 *C*<br/>
-**증분**. **사전 조건**: 설명 섹션을 참조하세요.
+**증분**. **전제 조건**: 주의 섹션을 참조 하세요.
 
 *M*<br/>
-**모듈러스**. **사전 조건**: 설명을 참조하세요.
+**모듈러스**. **전제 조건**: 설명을 참조 하세요.
 
 ## <a name="members"></a>멤버
 

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - 'msbuild (c++), howto: modify target framework and platform toolset'
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
 ms.openlocfilehash: cf2078432f629a353e0c325b407db59681ffd9d3
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273497"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>방법: 대상 프레임 워크 및 플랫폼 도구 집합 수정
 
@@ -61,4 +61,4 @@ ms.locfileid: "57820080"
 
 ## <a name="see-also"></a>참고자료
 
-[명령줄 c + +의 MSBuild](msbuild-visual-cpp.md)
+[명령줄에서 MSBuildC++](msbuild-visual-cpp.md)

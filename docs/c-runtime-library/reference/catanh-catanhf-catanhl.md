@@ -31,11 +31,11 @@ helpviewer_keywords:
 - catanhl function
 ms.assetid: 1b6021cb-647a-41b4-9d7f-919cc8b57b86
 ms.openlocfilehash: 8c71d4e44de72b54fd334fc2464ca221f36855a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340965"
 ---
 # <a name="catanh-catanhf-catanhl"></a>catanh, catanhf, catanhl
 
@@ -72,13 +72,13 @@ _Lcomplex catanhl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **catanh** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **catanh** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **catanh** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **catanh** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**catanh**하십시오 **catanhf**, **catanhl**|\<complex.h>|\<ccomplex>|
+|**catanh**,               **catanhf**, **catanhl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

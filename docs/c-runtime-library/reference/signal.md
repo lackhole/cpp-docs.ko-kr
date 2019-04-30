@@ -21,11 +21,11 @@ f1_keywords:
 helpviewer_keywords:
 - signal function
 ms.openlocfilehash: 351bdbe1d787fc5e5d741460adfe415df7fda756
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356292"
 ---
 # <a name="signal"></a>신호
 
@@ -58,9 +58,9 @@ void __cdecl *signal(int sig, int (*func)(int, int));
 
 합니다 **신호** 함수를 사용 하면 운영 체제에서 인터럽트 신호를 처리 하는 몇 가지 방법 중 하나를 선택 하는 프로세스입니다. 합니다 *sig* 인수가 하는 인터럽트 **신호** 응답 신호에 정의 된 다음 매니페스트 상수 중 하나 여야 합니다. 8.
 
-|*sig* 값|설명|
+|*sig* value|설명|
 |-----------------|-----------------|
-|**SIGABRT와**|비정상적인 종료|
+|**SIGABRT**|비정상적인 종료|
 |**SIGFPE**|부동 소수점 오류|
 |**SIGILL**|잘못된 명령|
 |**SIGINT**|Ctrl+C 신호|

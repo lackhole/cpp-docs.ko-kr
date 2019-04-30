@@ -87,15 +87,15 @@ helpviewer_keywords:
 - RPTW1 macro
 ms.assetid: a5bf8b30-57f7-4971-8030-e773b7a1ae13
 ms.openlocfilehash: 61748cca2cdfcc2d72b6943bfeedd9597009e20b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357508"
 ---
 # <a name="rpt-rptf-rptw-rptfw-macros"></a>_RPT, _RPTF, _RPTW, _RPTFW 매크로
 
-디버그 보고서를 생성하여 응용 프로그램의 진행률을 추적합니다(디버그 버전에만 해당함). 사실은 *n* 의 인수 개수를 지정 *args* 및 0, 1, 2, 3, 4 또는 5 일 수 있습니다.
+디버그 보고서를 생성하여 애플리케이션의 진행률을 추적합니다(디버그 버전에만 해당함). 사실은 *n* 의 인수 개수를 지정 *args* 및 0, 1, 2, 3, 4 또는 5 일 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -132,7 +132,7 @@ _RPTFWn(
 *format*<br/>
 사용자 메시지를 만드는 데 사용되는 형식 제어 문자열입니다.
 
-*인수*<br/>
+*args*<br/>
 사용 되는 대체 인수 *형식*합니다.
 
 ## <a name="remarks"></a>설명
@@ -163,8 +163,8 @@ _RPTFWn(
 
 |매크로|필수 헤더|
 |-----------|---------------------|
-|**_RPT** 매크로|\<crtdbg.h>|
-|**_RPTF** 매크로|\<crtdbg.h>|
+|**_RPT** macros|\<crtdbg.h>|
+|**_RPTF** macros|\<crtdbg.h>|
 |**_RPTW** 매크로|\<crtdbg.h>|
 |**_RPTFW** 매크로|\<crtdbg.h>|
 
@@ -174,7 +174,7 @@ _RPTFWn(
 
 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)의 디버그 버전만 해당됩니다.
 
-이러한 항목은 매크로이며 Crtdbg.h를 포함하면 가져올 수 있지만, 이러한 매크로는 다른 런타임 함수를 호출하므로 응용 프로그램을 디버그 라이브러리 중 하나와 연결해야 합니다.
+이러한 항목은 매크로이며 Crtdbg.h를 포함하면 가져올 수 있지만, 이러한 매크로는 다른 런타임 함수를 호출하므로 애플리케이션을 디버그 라이브러리 중 하나와 연결해야 합니다.
 
 ## <a name="example"></a>예제
 

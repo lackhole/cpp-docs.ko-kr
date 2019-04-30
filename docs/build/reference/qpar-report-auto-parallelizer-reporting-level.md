@@ -3,11 +3,11 @@ title: /Qpar-report(자동 병렬화 도우미 보고 수준)
 ms.date: 11/04/2016
 ms.assetid: 562673b9-02da-4bf8-bb64-70bc25ef4651
 ms.openlocfilehash: 25732900fa201258331dcb8eee96af9ba97a6def
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319956"
 ---
 # <a name="qpar-report-auto-parallelizer-reporting-level"></a>/Qpar-report(자동 병렬화 도우미 보고 수준)
 
@@ -33,14 +33,13 @@ ms.locfileid: "57818390"
 
 1. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다.
 
-1. 에 **속성 페이지** 대화 상자의 **C/c + +** 를 선택 **명령줄**합니다.
+1. 에 **속성 페이지** 대화 상자의 **C /C++** 선택 **명령줄**.
 
 1. 에 **추가 옵션** 상자에 입력 합니다 `/Qpar-report:1` 또는 `/Qpar-report:2`합니다.
 
 ### <a name="to-set-the-qpar-report-compiler-option-programmatically"></a>프로그래밍 방식으로 /Qpar-report 컴파일러 옵션을 설정하려면
 
-- 
-  <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>에 있는 코드 예제를 사용합니다.
+- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>에 있는 코드 예제를 사용합니다.
 
 ## <a name="see-also"></a>참고자료
 

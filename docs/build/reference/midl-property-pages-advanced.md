@@ -17,11 +17,11 @@ helpviewer_keywords:
 - MIDL, property pages
 ms.assetid: d1c92e01-f403-4ed6-ab45-4043a3c9c6bb
 ms.openlocfilehash: 350563d140823910667812930f9283c7640cc1ff
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62321477"
 ---
 # <a name="midl-property-pages-advanced"></a>MIDL 속성 페이지: 고급
 
@@ -57,7 +57,7 @@ to
 #define _WIN32_WINNT 0x0500   //for Windows NT 4.0 or Windows 95 with DCOM
 ```
 
-액세스 하는 방법에 대 한 정보에 대 한는 **고급** 속성 페이지에는 **MIDL** 폴더를 참조 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+액세스 하는 방법에 대 한 정보에 대 한 합니다 **고급** 속성 페이지에서를 **MIDL** 폴더를 참조 하세요 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md).
 
 C++ 프로젝트의 MIDL 옵션에 프로그래밍 방식으로 액세스하는 방법에 대한 자세한 내용은 <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>을 참조하세요.
 

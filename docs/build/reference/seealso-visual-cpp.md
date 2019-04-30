@@ -1,5 +1,5 @@
 ---
-title: '&lt;seealso > (c + + 문서 주석)'
+title: '&lt;seealso > (C++ 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - <seealso>
@@ -9,11 +9,11 @@ helpviewer_keywords:
 - <seealso> C++ XML tag
 ms.assetid: cb33d100-9c50-4485-8d0c-573429eff155
 ms.openlocfilehash: ea399e98723a265ef3c17f2282b7c81299b4abc5
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318838"
 ---
 # <a name="ltseealsogt"></a>&lt;seealso&gt;
 
@@ -30,8 +30,7 @@ ms.locfileid: "57826987"
 *member*<br/>
 현재 컴파일 환경에서 호출할 수 있는 멤버 또는 필드에 대한 참조입니다.  이름을 단일 또는 이중 따옴표로 묶습니다.
 
-컴파일러는 지정된 코드 요소가 있는지 확인하고, 출력 XML의 요소 이름에 대한 `member`를 확인합니다.  
-  `member`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
+컴파일러는 지정된 코드 요소가 있는지 확인하고, 출력 XML의 요소 이름에 대한 `member`를 확인합니다.  `member`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
 
 제네릭 형식에 대한 cref 참조를 만드는 방법에 대한 자세한 내용은 [\<see>](see-visual-cpp.md)를 참조하세요.
 

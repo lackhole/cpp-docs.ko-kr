@@ -25,18 +25,18 @@ helpviewer_keywords:
 - _resetstkoflw function
 ms.assetid: 319529cd-4306-4d22-810b-2063f3ad9e14
 ms.openlocfilehash: ad8c9b470c33a4c84f46ac7758d368917e7938e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357540"
 ---
 # <a name="resetstkoflw"></a>_resetstkoflw
 
 스택 오버플로에서 복구합니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -52,7 +52,7 @@ int _resetstkoflw( void );
 
 합니다 **_resetstkoflw** 함수는 프로그램이 예외 오류와 함께 실패 하는 대신 계속 실행 하도록 허용 하는 스택 오버플로 상태를 복구 합니다. 경우는 **_resetstkoflw** 이전 예외 다음에 가드 페이지가 없습니다 가지, 함수는 호출 되지 않습니다. 다음번에 스택 오버플로가 발생하는 경우에는 예외가 전혀 발생하지 않으며 프로세스는 경고 없이 종료됩니다.
 
-응용 프로그램의 스레드에서 **EXCEPTION_STACK_OVERFLOW** 예외가 발생하는 경우 스레드의 스택이 손상된 상태로 남습니다. 이는 스택이 손상되지 않는 **EXCEPTION_ACCESS_VIOLATION** 또는 **EXCEPTION_INT_DIVIDE_BY_ZERO**와 같은 다른 예외와 반대입니다. 프로그램이 처음 로드될 때 스택은 임의로 작은 값으로 설정됩니다. 그런 다음 스택은 스레드의 요구 사항을 충족하도록 요구에 맞게 증가합니다. 이는 PAGE_GUARD가 있는 페이지를 현재 스택의 끝에 배치하여 구현됩니다. 자세한 내용은 [가드 페이지 만들기](/windows/desktop/Memory/creating-guard-pages)를 참조하세요.
+애플리케이션의 스레드에서 **EXCEPTION_STACK_OVERFLOW** 예외가 발생하는 경우 스레드의 스택이 손상된 상태로 남습니다. 이는 스택이 손상되지 않는 **EXCEPTION_ACCESS_VIOLATION** 또는 **EXCEPTION_INT_DIVIDE_BY_ZERO**와 같은 다른 예외와 반대입니다. 프로그램이 처음 로드될 때 스택은 임의로 작은 값으로 설정됩니다. 그런 다음 스택은 스레드의 요구 사항을 충족하도록 요구에 맞게 증가합니다. 이는 PAGE_GUARD가 있는 페이지를 현재 스택의 끝에 배치하여 구현됩니다. 자세한 내용은 [가드 페이지 만들기](/windows/desktop/Memory/creating-guard-pages)를 참조하세요.
 
 코드로 인해 스택 포인터가 이 페이지의 주소를 가리키는 경우 예외가 발생하고 시스템에서 다음 세 가지 작업이 수행됩니다.
 
@@ -88,7 +88,7 @@ int _resetstkoflw( void );
 
 이러한 지점에서 스택이 아직 충분하게 해제되지 않습니다.
 
-스택 오버플로 예외 하므로 c + + 예외가 아닌 구조적 예외로 생성 되어 **_resetstkoflw** 일반적인에서 유용 하지 않습니다 **catch** 스택 오버플로 예외를 catch 하지 않기 때문에 차단 합니다. 그러나 [_set_se_translator](set-se-translator.md)가 C++ 예외를 throw하는 구조적 예외 변환기를 구현하는 데 사용되는 경우(두 번째 예제) 스택 오버플로 예외는 C++ catch 블록에 의해 처리될 수 있는 C++ 예외를 발생시킵니다.
+스택 오버플로 예외는 구조적 예외로 생성 된 C++ 예외 이므로 **_resetstkoflw** 일반적인에서 유용 하지 않습니다 **catch** 스택 오버플로 catch 하지 않기 때문에 차단 예외입니다. 그러나 [_set_se_translator](set-se-translator.md)가 C++ 예외를 throw하는 구조적 예외 변환기를 구현하는 데 사용되는 경우(두 번째 예제) 스택 오버플로 예외는 C++ catch 블록에 의해 처리될 수 있는 C++ 예외를 발생시킵니다.
 
 구조적 예외 변환기 함수에 의해 throw된 예외로부터 도달한 C++ catch 블록에서 **_resetstkoflw**를 호출하는 것은 안전하지 않습니다. 이 경우 catch 블럭 이전에 소멸적인 개체에 대한 소멸자가 호출되었어도 catch 블럭 외부까지 스택 공간이 비워지지 않고 스택 포인터가 다시 설정되지 않습니다. 이 함수는 스택 공간이 비워지고 스택 포인터가 다시 설정될 때까지 호출되지 않아야 합니다. 따라서 catch 블록을 종료한 후에만 이 함수를 호출해야 합니다. 이전 스택 오버플로에서 자체적으로 복구하려고 하는 catch 블록에서 수행되는 스택 오버플로가 복구할 수 없으며 catch 블록의 오버플로가 자체적으로 동일한 catch 블록에 의해 처리되는 예외를 트리거함에 따라 프로그램에서 응답을 중지하도록 할 수 있습니다.
 
@@ -104,7 +104,7 @@ int _resetstkoflw( void );
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-**라이브러리:** 모든 버전의 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)입니다.
+**라이브러리:** 모든 버전의 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)합니다.
 
 ## <a name="example"></a>예제
 
@@ -212,7 +212,7 @@ resetting stack overflow
 
 ### <a name="description"></a>설명
 
-다음 예에서는 권장 되는 사용을 보여 줍니다 **_resetstkoflw** 구조화 된 예외가 c + + 예외는 변환할 프로그램에서입니다.
+다음 예에서는 권장 되는 사용을 보여 줍니다 **_resetstkoflw** 구조적된 예외 변환 되는 프로그램에서 C++ 예외입니다.
 
 ### <a name="code"></a>코드
 

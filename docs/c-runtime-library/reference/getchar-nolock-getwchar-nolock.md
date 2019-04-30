@@ -30,11 +30,11 @@ helpviewer_keywords:
 - standard input, reading from
 ms.assetid: dc49ba60-0647-4ae9-aa9a-a0618b1666de
 ms.openlocfilehash: feeda65d06dbcfecb6ea5adc60934abf3d0df415
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62331809"
 ---
 # <a name="getcharnolock-getwcharnolock"></a>_getchar_nolock, _getwchar_nolock
 
@@ -53,7 +53,7 @@ wint_t _getwchar_nolock( void );
 
 ## <a name="remarks"></a>설명
 
-**_getchar_nolock** 하 고 **_getwchar_nolock** 동일 **getchar** 하 고 **getwchar** 는 다른 간섭에서 보호 되지 않는다는 점을 제외 하 고 스레드입니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**_getchar_nolock** 하 고 **_getwchar_nolock** 동일 **getchar** 하 고 **getwchar** 는 다른 간섭에서 보호 되지 않는다는 점을 제외 하 고 스레드입니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 

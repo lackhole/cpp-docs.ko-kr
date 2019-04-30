@@ -8,11 +8,11 @@ helpviewer_keywords:
 - nothrow __declspec keyword
 ms.assetid: 0a475139-459c-4ec6-99e8-7ecd0d7f44a3
 ms.openlocfilehash: 88041b374cc48ac31c8990aa7f867ba25b33e1d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548137"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345877"
 ---
 # <a name="nothrow-c"></a>nothrow (C++)
 
@@ -22,7 +22,7 @@ A **__declspec** 함수 선언에서 사용할 수 있는 확장 된 특성입�
 
 ## <a name="syntax"></a>구문
 
-> *반환 형식은* __declspec (nothrow) [*호출 규칙*] *함수 이름* ([*인수 목록*])
+> *return-type* __declspec(nothrow) [*call-convention*] *function-name* ([*argument-list*])
 
 ## <a name="remarks"></a>설명
 
@@ -42,7 +42,7 @@ void __stdcall f3() throw();
 
 **/std: c + + 17** 모드 `throw()` 사용 하는 다른 사용자에 게 동일 `__declspec(nothrow)` 발생 하기 때문에 `std::terminate` 함수에서 예외가 throw 되 면 호출할 합니다.
 
-`void __stdcall f3() throw();` 선언 c + + 표준에서 정의한 구문을 사용 합니다. C++17에서는 `throw()` 키워드가 사용 되지 않습니다.
+합니다 `void __stdcall f3() throw();` 선언에 정의한 구문을 사용 하는 C++ 표준입니다. C++17에서는 `throw()` 키워드가 사용 되지 않습니다.
 
 **Microsoft 전용 종료**
 
@@ -50,4 +50,4 @@ void __stdcall f3() throw();
 
 [__declspec](../cpp/declspec.md)<br/>
 [noexcept](noexcept-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

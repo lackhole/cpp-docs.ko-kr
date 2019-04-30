@@ -5,11 +5,11 @@ helpviewer_keywords:
 - output streams [C++], member functions
 ms.assetid: 38aaf710-8035-4a34-a0c4-123a5327f28a
 ms.openlocfilehash: eba627c69437754a9c0a819167443aa00c025fef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370842"
 ---
 # <a name="output-file-stream-member-functions"></a>Output File Stream Member 함수
 
@@ -102,14 +102,14 @@ int main( )
 
 스트림에 쓰는 중에 오류를 테스트하려면 다음 구성원 함수를 사용합니다.
 
-|기능|반환 값|
+|함수|반환 값|
 |--------------|------------------|
 |[bad](basic-ios-class.md#bad)|복구할 수 없는 오류가 발생하는 경우 **true**를 반환합니다.|
 |[fail](basic-ios-class.md#fail)|복구할 수 없는 오류 또는 "정상" 상황(예: 변환 오류)이 발생하거나 파일을 찾을 수 없는 경우 **true**를 반환합니다. 처리를 호출한 후 자주 다시 시작할 수 `clear` 0 인수를 사용 합니다.|
 |[good](basic-ios-class.md#good)|복구 가능 여부와 관계없이 오류 조건이 없으며 파일 끝 플래그가 설정되어 있지 않은 경우 **true**를 반환합니다.|
 |[eof](basic-ios-class.md#eof)|파일 끝 조건에서 **true**를 반환합니다.|
 |[clear](basic-ios-class.md#clear)|내부 오류 상태를 설정합니다. 기본 인수를 사용하여 호출된 경우에는 모든 오류 비트를 지웁니다.|
-|[rdstate] (basic-ios-class.md #rdstate|현재 오류 상태를 반환합니다.|
+|[rdstate](basic-ios-class.md#rdstate|현재 오류 상태를 반환합니다.|
 
 **!** 연산자는 동일한 기능을 수행 하도록 오버 로드는 `fail` 함수입니다. 따라서 다음 식은
 

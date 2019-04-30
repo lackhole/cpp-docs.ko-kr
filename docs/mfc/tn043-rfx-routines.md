@@ -9,11 +9,11 @@ helpviewer_keywords:
 - RFX (record field exchange)
 ms.assetid: f552d0c1-2c83-4389-b472-42c9940aa713
 ms.openlocfilehash: 18820c7d17ddea355490ee32679d5d690ec3533e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305400"
 ---
 # <a name="tn043-rfx-routines"></a>TN043: RFX 루틴
 
@@ -24,7 +24,7 @@ ms.locfileid: "57294488"
 
 ## <a name="overview-of-record-field-exchange"></a>레코드 필드 교환 개요
 
-모든 레코드 집합 필드 함수는 c + + 코드를 사용 하 여 수행 됩니다. 특수 리소스 또는 magic 매크로 없는 합니다. 메커니즘의 핵심은 모든 레코드 집합 파생된 클래스에서 재정의 되어야 하는 가상 함수입니다. 항상이 폼에서 발견 되었습니다.
+모든 레코드 집합 필드 함수 완료 하는 C++ 코드입니다. 특수 리소스 또는 magic 매크로 없는 합니다. 메커니즘의 핵심은 모든 레코드 집합 파생된 클래스에서 재정의 되어야 하는 가상 함수입니다. 항상이 폼에서 발견 되었습니다.
 
 ```cpp
 void CMySet::DoFieldExchange(CFieldExchange* pFX)
@@ -62,7 +62,7 @@ MFC를 사용 하 여 제공 하는 모든 레코드 필드 교환 루틴의 목
 
 레코드 집합 필드 함수 에서만 작동 하도록 설계 됩니다는 `CRecordset` 클래스입니다. 다른 MFC 클래스에서 일반적으로 사용할 수 없습니다.
 
-데이터의 초기 값은 일반적으로 사용 하 여 블록에서 표준 c + + 생성자에서 설정 됩니다 `//{{AFX_FIELD_INIT(CMylSet)` 고 `//}}AFX_FIELD_INIT` 설명 합니다.
+표준 데이터의 초기 값을 설정 C++ 블록에 일반적으로 생성자 `//{{AFX_FIELD_INIT(CMylSet)` 하 고 `//}}AFX_FIELD_INIT` 주석입니다.
 
 각 **RFX_** 함수까지 필드를 편집 하는 준비 과정에서 필드를 보관 하는 필드의 변경 상태를 반환 하는 다양 한 작업을 지원 해야 합니다.
 
@@ -126,7 +126,7 @@ MFC를 사용 하 여 제공 하는 모든 레코드 필드 교환 루틴의 목
         BIGINT& value);
     ```
 
-- 가 `DoFieldExchange` 멤버 함수는 조건에 따라 추가 RFX 호출이 나 다른 유효한 c + + 문을 포함 합니다.
+- 가 합니다 `DoFieldExchange` 멤버 함수는 조건에 따라 추가 RFX 호출 또는 모든 기타 유효한 포함 C++ 문입니다.
 
     ```cpp
     while (posExtraFields != NULL)
@@ -150,7 +150,7 @@ MFC를 사용 하 여 제공 하는 모든 레코드 필드 교환 루틴의 목
 
 `RFX_Text` 및 `RFX_Binary`: 이 두 함수는 문자열/이진 정보를 저장 하는 정적 버퍼를 미리 할당 및 등록 (& v) 대신 ODBC SQLBindCol를 사용 하 여 이러한 버퍼를 등록 해야 합니다. 이 때문에이 두 함수를 사용 하면 특별 한 경우 코드의 많은 합니다.
 
-`RFX_Date`: ODBC는 고유한 TIMESTAMP_STRUCT 데이터 구조에 날짜 및 시간 정보를 반환합니다. 이 함수는 TIMESTAMP_STRUCT "프록시"로 날짜 시간 데이터 보내기 및 받기에 대 한 동적으로 할당 합니다. 다양 한 작업 c + + 사이의 날짜 및 시간 정보를 전송 해야 `CTime` 개체 및 TIMESTAMP_STRUCT 프록시입니다. 이 인해이 함수 상당히 이지만 데이터 전송에 대 한 프록시를 사용 하는 방법의 좋은 예입니다.
+`RFX_Date`: ODBC는 고유한 TIMESTAMP_STRUCT 데이터 구조에 날짜 및 시간 정보를 반환합니다. 이 함수는 TIMESTAMP_STRUCT "프록시"로 날짜 시간 데이터 보내기 및 받기에 대 한 동적으로 할당 합니다. 다양 한 작업 간에 날짜 및 시간 정보를 전송 해야는 C++ `CTime` 개체 및 TIMESTAMP_STRUCT 프록시입니다. 이 인해이 함수 상당히 이지만 데이터 전송에 대 한 프록시를 사용 하는 방법의 좋은 예입니다.
 
 `RFX_LongBinary`: 이것이 유일한 클래스 라이브러리 데이터를 보내고 받도록 열 바인딩을 사용 하지 않는 RFX 함수입니다. 이 함수 무시 BindFieldToColumn 작업 대신 수정 작업 중 들어오는 SQL_LONGVARCHAR 또는 SQL_LONGVARBINARY 데이터를 저장할 저장소를 할당 하 고 할당 된 저장소에 값을 검색에 대 한 SQLGetData 호출을 수행 합니다. 데이터 원본 (예: NameValue 및 값 작업)에 데이터 값을 다시 보낼 준비를 하는 경우이 함수는 ODBC의 DATA_AT_EXEC 기능을 사용 합니다. 참조 [기술 참고 45](../mfc/tn045-mfc-database-support-for-long-varchar-varbinary.md) SQL_LONGVARBINARY 및 SQL_LONGVARCHARs 작업에 대 한 자세한 내용은 합니다.
 

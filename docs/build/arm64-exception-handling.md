@@ -2,11 +2,11 @@
 title: ARM64 예외 처리
 ms.date: 11/19/2018
 ms.openlocfilehash: 55476119499a3216f6801877dba692b2a0d1d9ee
-ms.sourcegitcommit: 88631cecbe3e3fa752eae3ad05b7f9d9f9437b4d
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59534125"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342294"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 예외 처리
 
@@ -357,7 +357,7 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 
 위의 섹션에서 1, 2 (하지 않고 나가는 매개 변수 영역), 3 및 4 범주에 속하는 정식 프롤로그는 압축 된 해제 형식으로 나타낼 수 있습니다.  에필로그 정식 함수에 따라 매우 유사한 폼에 대 한 제외 **H** 해도 아무런 영향이 없습니다는 `set_fp` 명령은 생략 하 고 에필로그의 각 단계에 대 한 지침 뿐만 아니라 단계 순서가 바뀝니다. 압축된 xdata 알고리즘을 다음 표에서 자세히 설명 하는 이러한 단계를 따릅니다.
 
-0 단계: 각 영역의 크기를 사전 계산을 수행 합니다.
+0단계: 각 영역의 크기를 사전 계산을 수행 합니다.
 
 1단계: Int 호출 수신자 저장 레지스터를 저장 합니다.
 

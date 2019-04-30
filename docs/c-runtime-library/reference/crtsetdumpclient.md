@@ -23,11 +23,11 @@ helpviewer_keywords:
 - CrtSetDumpClient function
 ms.assetid: f3dd06d0-c331-4a12-b68d-25378d112033
 ms.openlocfilehash: 09f319f6298dbec6b229b2923bd86fc9b50314de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470749"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342991"
 ---
 # <a name="crtsetdumpclient"></a>_CrtSetDumpClient
 
@@ -78,7 +78,7 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );
 
 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)의 디버그 버전만 해당됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [디버그 루틴](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtReportBlockType](crtreportblocktype.md)<br/>

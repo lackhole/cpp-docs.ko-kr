@@ -14,11 +14,11 @@ helpviewer_keywords:
 - U compiler option [C++]
 ms.assetid: 7bc0474f-6d1f-419b-807d-0d8816763b2a
 ms.openlocfilehash: bfc03ebd5c900bf8bf81b4a50eed02111baf85ee
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317005"
 ---
 # <a name="u-u-undefine-symbols"></a>/U, /u(기호 정의 해제)
 
@@ -44,7 +44,7 @@ ms.locfileid: "57822492"
 
 기본적으로 컴파일러는 다음과 같은 Microsoft 관련 기호를 정의합니다.
 
-|기호|기능|
+|기호|함수|
 |------------|--------------|
 |_CHAR_UNSIGNED|기본 char 형식은 부호가 없습니다. 경우 정의 된 [/J](j-default-char-type-is-unsigned.md) 옵션을 지정 합니다.|
 |_CPPRTTI|로 컴파일된 코드에 대해 정의 된 [/GR](gr-enable-run-time-type-information.md) 옵션입니다.|
@@ -57,7 +57,7 @@ ms.locfileid: "57822492"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
@@ -67,8 +67,7 @@ ms.locfileid: "57822492"
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
-- 
-  <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefineAllPreprocessorDefinitions%2A> 또는 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefinePreprocessorDefinitions%2A>을 참조하십시오.
+- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefineAllPreprocessorDefinitions%2A> 또는 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefinePreprocessorDefinitions%2A>을 참조하십시오.
 
 ## <a name="see-also"></a>참고자료
 

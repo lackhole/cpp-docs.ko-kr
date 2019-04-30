@@ -1,15 +1,15 @@
-﻿---
+---
 title: 점프 문 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - jump statements
 ms.assetid: 7d8ff59c-b1bd-4164-85e9-f508851ed62c
 ms.openlocfilehash: 6207b500e643179bd3ce064e62effc01b93c6612
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62366630"
 ---
 # <a name="jump-statements-c"></a>점프 문 (C++)
 
@@ -38,4 +38,4 @@ C++ 점프 문에 대한 설명은 다음 항목을 참조하십시오.
 
 ## <a name="see-also"></a>참고 항목
 
-[C++문 개요](../cpp/overview-of-cpp-statements.md)
+[C++ 문 개요](../cpp/overview-of-cpp-statements.md)

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - ATL, classes
 ms.assetid: 7da42e2d-ac84-4506-92bd-502a86d68bdc
 ms.openlocfilehash: 561d6cb41ca066f5a2435b4eb1e8710ccaa99ea1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62248942"
 ---
 # <a name="atl-classes-and-structs"></a>ATL 클래스 및 구조체
 
@@ -84,7 +84,7 @@ ms.locfileid: "57265572"
 |[CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md)|이 클래스의 배열을 저장 `IUnknown` 포인터입니다.|atlcom.h|
 |[CComEnum](../../atl/reference/ccomenum-class.md)|이 클래스는 배열을 기반으로 COM 열거자 개체를 정의 합니다.|atlcom.h|
 |[CComEnumImpl](../../atl/reference/ccomenumimpl-class.md)|이 클래스는 열거 되 고 있는 항목을 배열에 저장 되어 있는 COM 열거자 인터페이스에 대 한 구현을 제공 합니다.|atlcom.h|
-|[CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)|이 클래스는 c + + 표준 라이브러리 컬렉션을 기반으로 COM 열거자 개체를 정의 합니다.|atlcom.h|
+|[CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)|이 클래스 정의에 따라 COM 열거자 개체를 C++ 표준 라이브러리 컬렉션입니다.|atlcom.h|
 |[CComFakeCriticalSection](../../atl/reference/ccomfakecriticalsection-class.md)|이 클래스와 같은 방법으로 제공 [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) 하지만 임계 영역을 제공 하지 않습니다.|atlcore.h|
 |[CComGITPtr](../../atl/reference/ccomgitptr-class.md)|이 클래스는 인터페이스 포인터를 처리 하기 위한 메서드 및 전역 인터페이스 테이블 (GIT)를 제공합니다.|atlbase.h|
 |[CComHeap](../../atl/reference/ccomheap-class.md)|이 클래스는 구현 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) COM 메모리 할당 함수를 사용 합니다.|ATLComMem.h|
@@ -190,7 +190,7 @@ ms.locfileid: "57265572"
 |[IDispEventImpl](../../atl/reference/idispeventimpl-class.md)|이 클래스의 구현을 제공 하는 `IDispatch` 메서드.|atlcom.h|
 |[IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md)|이 클래스의 구현을 제공 하는 `IDispatch` 형식 라이브러리에서 형식 정보를 가져오지 않고 메서드.|atlcom.h|
 |[IDocHostUIHandlerDispatch](../../atl/reference/idochostuihandlerdispatch-interface.md)|인터페이스는 Microsoft HTML 구문 분석 및 렌더링 엔진입니다.|atlbase.h, ATLIFace.h|
-|[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)|이 클래스는 c + + 표준 라이브러리 컬렉션을 기반으로 하는 열거자 인터페이스를 정의 합니다.|atlcom.h|
+|[IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)|이 클래스 정의 기반으로 하는 열거자 인터페이스는 C++ 표준 라이브러리 컬렉션입니다.|atlcom.h|
 |[IObjectSafetyImpl](../../atl/reference/iobjectsafetyimpl-class.md)|이 클래스의 기본 구현을 제공 합니다 `IObjectSafety` 인터페이스 클라이언트를 검색 하 고 개체의 보안 수준을 설정할 수 있도록 합니다.|atlctl.h|
 |[IObjectWithSiteImpl](../../atl/reference/iobjectwithsiteimpl-class.md)|이 클래스는 해당 사이트와 통신 하는 개체를 허용 하는 메서드를 제공 합니다.|atlcom.h|
 |[IOleControlImpl](../../atl/reference/iolecontrolimpl-class.md)|이 클래스의 기본 구현을 제공 합니다 `IOleControl` 인터페이스와 구현 `IUnknown`합니다.|atlctl.h|

@@ -27,11 +27,11 @@ helpviewer_keywords:
 - array_view class
 ms.assetid: 7e7ec9bc-05a2-4372-b05d-752b50006c5a
 ms.openlocfilehash: e73639ffd11e08edb2fdb03471f2c6c88730f02d
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405562"
 ---
 # <a name="arrayview-class"></a>array_view 클래스
 
@@ -107,8 +107,7 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 
 |이름|설명|
 |----------|-----------------|
-|[extent](#extent)|
-  `extent` 개체의 모양을 정의하는 `array_view` 개체를 가져옵니다.|
+|[extent](#extent)|`extent` 개체의 모양을 정의하는 `array_view` 개체를 가져옵니다.|
 |[source_accelerator_view](#source_accelerator_view)|가져옵니다 합니다 [accelerator_view](accelerator-view-class.md) 여기서의 데이터 소스는 `array_view` 위치한|
 |[value_type](#value_type)|값 형식의 `array_view` 및 바인딩된 배열의 합니다.|
 
@@ -386,8 +385,7 @@ const value_type* data() const restrict(amp,
 
 ### <a name="return-value"></a>반환 값
 
-
-  `array_view`의 원시 데이터에 대한 포인터입니다.
+`array_view`의 원시 데이터에 대한 포인터입니다.
 
 ##  <a name="discard_data"></a> discard_data
 
@@ -399,8 +397,7 @@ void discard_data() const restrict(cpu);
 
 ##  <a name="extent"></a> 범위
 
-
-  `extent` 개체의 모양을 정의하는 `array_view` 개체를 가져옵니다.
+`extent` 개체의 모양을 정의하는 `array_view` 개체를 가져옵니다.
 
 ```
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;
@@ -416,8 +413,7 @@ Concurrency::extent<_Rank> get_extent() const restrict(cpu, amp);
 
 ### <a name="return-value"></a>반환 값
 
-
-  `extent` 개체의 `array_view` 개체입니다.
+`extent` 개체의 `array_view` 개체입니다.
 
 ##  <a name="get_ref"></a> get_ref
 

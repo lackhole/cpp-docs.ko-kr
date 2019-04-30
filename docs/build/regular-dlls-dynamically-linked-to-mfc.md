@@ -9,11 +9,11 @@ helpviewer_keywords:
 - dynamically linked DLLs [C++]
 ms.assetid: b4f7ab92-8723-42a5-890e-214f4e29dcd0
 ms.openlocfilehash: 3bfed5f75dab4c501708950fdb99f53c40ec142c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57821302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315003"
 ---
 # <a name="regular-mfc-dlls-dynamically-linked-to-mfc"></a>동적으로 MFC에 링크 된 기본 MFC Dll
 
@@ -27,9 +27,9 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 
 일반 MFC DLL을 동적으로 MFC에 링크에 다음 기능이 있습니다.
 
-- Visual c + + 4.0에서 도입 된 DLL의 새 형식입니다.
+- 시각적 개체에 의해 정의 된 DLL의 새 형식입니다 C++ 4.0입니다.
 
-- 클라이언트 실행 파일은 Dll (C, c + +, Pascal, Visual Basic 및 등); 사용을 지 원하는 언어를 작성할 수 있습니다. MFC 응용 프로그램 이어야 하는 것이 없습니다.
+- 클라이언트 실행 파일은 Dll의 사용을 지 원하는 언어를 작성할 수 있습니다 (C C++, Pascal, Visual Basic 및 등); MFC 응용 프로그램 이어야 하는 것이 없습니다.
 
 - 정적으로 연결 된 기본 MFC DLL 달리 이러한 종류의 DLL MFC DLL (라고도: 공유 MFC DLL)을 동적으로 연결 됩니다.
 

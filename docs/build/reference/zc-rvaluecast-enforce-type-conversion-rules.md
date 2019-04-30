@@ -13,11 +13,11 @@ helpviewer_keywords:
 - Zc compiler options (C++)
 ms.assetid: 7825277d-e565-4c48-b0fb-76ac0b0c6e38
 ms.openlocfilehash: e5a6abd3b85136b05ae58ebc8750aa9120cabc33
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315783"
 ---
 # <a name="zcrvaluecast-enforce-type-conversion-rules"></a>/Zc:rvalueCast(형식 변환 규칙 적용)
 
@@ -86,9 +86,9 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. 수정 된 **추가 옵션** 포함할 속성을 **/zc: rvaluecast** 를 선택한 후 **확인**합니다.
 

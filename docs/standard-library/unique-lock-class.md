@@ -5,11 +5,11 @@ f1_keywords:
 - mutex/std::unique_lock
 ms.assetid: f4ed8ba9-c8af-446f-8ef0-0b356bad14bd
 ms.openlocfilehash: 784969bea25bfff49a21c23b350afbfc8bdab59a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383518"
 ---
 # <a name="uniquelock-class"></a>unique_lock 클래스
 
@@ -64,7 +64,7 @@ class unique_lock;
 |[operator bool](#op_bool)|연결된 `mutex`의 소유권이 호출 스레드에 있는지를 지정합니다.|
 |[operator=](#op_eq)|저장된 `mutex` 포인터 및 연결된 소유권 상태를 지정한 개체에서 복사합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 *unique_lock*<br/>
 

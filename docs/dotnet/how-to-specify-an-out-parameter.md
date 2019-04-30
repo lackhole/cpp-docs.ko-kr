@@ -7,21 +7,21 @@ helpviewer_keywords:
 - out parameters
 ms.assetid: 02862448-603c-4e9d-a5c5-b45fe38446e3
 ms.openlocfilehash: 901257b92aaa5e13e6e79d612ca590b734e15881
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387222"
 ---
 # <a name="how-to-specify-an-out-parameter"></a>방법: Out 지정 매개 변수
 
 이 샘플에는 함수 매개 변수는 out 매개 변수를 지정 하는 방법 및 C# 프로그램에서 해당 함수를 호출 하는 방법을 보여 줍니다.
 
-Out 매개 변수를 사용 하 여 Visual c + +에 지정 된 <xref:System.Runtime.InteropServices.OutAttribute> 합니다.
+시각적 개체에는 out 매개 변수를 지정 하는 C++ 사용 하 여 <xref:System.Runtime.InteropServices.OutAttribute> 합니다.
 
 ## <a name="example"></a>예제
 
-이 샘플의 첫 번째 부분은 out 매개 변수를 사용 하 여 함수를 포함 하는 형식과 Visual c + + DLL입니다.
+이 샘플의 첫 번째 부분은 시각적 개체 C++ 는 out 매개 변수를 사용 하 여 함수를 포함 하는 형식이 있는 DLL입니다.
 
 ```
 // cpp_out_param.cpp
@@ -36,7 +36,7 @@ public value struct TestStruct {
 
 ## <a name="example"></a>예제
 
-이 이전 예제에서 만든 Visual c + + 구성 요소를 사용 하는 C# 클라이언트입니다.
+이 C# 시각적 개체를 사용 하는 클라이언트 C++ 앞의 예제에서 만든 구성 요소입니다.
 
 ```
 // cpp_out_param_2.cs

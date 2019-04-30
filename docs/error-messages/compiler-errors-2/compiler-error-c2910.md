@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2910
 ms.assetid: 09c50e6a-e099-42f6-8ed6-d80e292a7a36
 ms.openlocfilehash: 58d56ad834b34425cda4ac7ba081eabd2424e451
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408357"
 ---
 # <a name="compiler-error-c2910"></a>컴파일러 오류 C2910
 
@@ -56,7 +56,7 @@ template <> A<void>::A(void* p){}   // C2910
 
 이 오류는 Visual Studio.NET 2003에서 수행 된 컴파일러 규칙 작업의 결과로 생성 됩니다: 합니다.
 
-코드를 Visual c + +의 Visual Studio.NET 2003 및 VISUAL Studio 버전에서 사용할 수에 대 한 제거 `template <>`합니다.
+코드를 시각적 개체의 Visual Studio.NET 2003 및 VISUAL Studio 버전에서 사용할 수에 대 한 C++를 제거 `template <>`합니다.
 
 다음 샘플에서는 C2910를 생성합니다.
 

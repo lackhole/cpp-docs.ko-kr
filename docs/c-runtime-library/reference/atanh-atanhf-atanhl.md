@@ -28,11 +28,11 @@ helpviewer_keywords:
 - atanh funciton
 ms.assetid: 83a43b5b-2580-4461-854f-dc84236d9f32
 ms.openlocfilehash: 6044c40427e407ee9746867e4b04104c1ca29c7c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341290"
 ---
 # <a name="atanh-atanhf-atanhl"></a>atanh, atanhf, atanhl
 
@@ -63,17 +63,17 @@ long double atanh( long double x );  // C++ only
 |입력|SEH 예외|**Matherr** 예외|
 |-----------|-------------------|-------------------------|
 |± QNAN,IND|없음|없음|
-|*X* ≥ 1 *x* ≤-1|없음|없음|
+|*X* ≥ 1; *x* ≤ -1|없음|없음|
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **atanh** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **atanh** 항상 받아서 반환 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **atanh** 및 반환 하는 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **atanh** 항상 받아서 반환 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**atanh**하십시오 **atanhf**, **atanhl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**atanh**, **atanhf**, **atanhl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

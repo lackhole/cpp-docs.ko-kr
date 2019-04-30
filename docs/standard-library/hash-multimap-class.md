@@ -87,11 +87,11 @@ helpviewer_keywords:
 - stdext::hash_multimap::value_comp
 ms.assetid: f41a6db9-67aa-43a3-a3c5-dbfe9ec3ae7d
 ms.openlocfilehash: 8510bbc89a22fe3eb8df6bbf8ce77db44c7a65a0
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405081"
 ---
 # <a name="hashmultimap-class"></a>hash_multimap 클래스
 
@@ -121,7 +121,7 @@ hash_multimap에 저장되는 요소 데이터 형식입니다.
 *특성*<br/>
 클래스 중 하나는 두 함수 개체를 포함 하는 형식 *Traits* 상대적 순서를 결정 하는 단항 조건자 매핑 요소의 키 값은 해시 함수의 정렬 키로 두 요소 값을 비교할 수는 부호 없는 정수 형식의 `size_t`합니다. 이 인수는 선택 사항이며 기본값은 `hash_compare<Key, less<Key>>`입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 hash_multimap의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<pair <const Key, Type>>`입니다.
 
 ## <a name="remarks"></a>설명
@@ -1518,7 +1518,7 @@ hash_multimap(
 |*Al*|이 hash_multimap 개체에 사용할 스토리지 할당자 클래스로, 기본값은 `Allocator`입니다.|
 |*구성 요소*|map의 요소 순서를 지정하는 데 사용되는 `const Traits` 형식의 비교 함수로, 기본값은 `Traits`입니다.|
 |*오른쪽*|생성된 set을 복사할 map입니다.|
-|*첫 번째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.|
 |*IList*|복사할 원본 initializer_list입니다.|
 
@@ -1575,9 +1575,9 @@ iterator insert(
 
 |매개 변수|설명|
 |-|-|
-|*val*|해당 요소를 이미 포함하고 있지 않을 경우 또는 보다 일반적으로 키가 동등하게 정렬된 요소를 이미 포함하고 있지 않을 경우 hash_multimap에 삽입되는 요소의 값입니다.|
+|*Val*|해당 요소를 이미 포함하고 있지 않을 경우 또는 보다 일반적으로 키가 동등하게 정렬된 요소를 이미 포함하고 있지 않을 경우 hash_multimap에 삽입되는 요소의 값입니다.|
 |*Where*|올바른 삽입 지점 검색을 시작할 위치에 대한 힌트입니다.|
-|*첫 번째*|맵에서 복사할 첫 번째 요소의 위치입니다.|
+|*첫째*|맵에서 복사할 첫 번째 요소의 위치입니다.|
 |*마지막*|맵에서 복사할 마지막 요소 바로 다음 위치입니다.|
 
 ### <a name="return-value"></a>반환 값

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - inline_depth pragma
 ms.assetid: 2bba60fe-43ea-4d09-90f7-aafaba3bad07
 ms.openlocfilehash: 18d772c8a9f6218ed3afaa385f214445bd0fe8e6
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383687"
 ---
 # <a name="inlinedepth"></a>inline_depth
 인라인 추론 검색 수준을, 지정 된 수준 (의 호출 그래프) 보다 큰 경우 함수가 인라인 될가 되도록 *n*합니다.

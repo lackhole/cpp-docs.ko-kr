@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CObject class [MFC], when to use
 ms.assetid: 26021031-feaf-424c-80d1-9547c4409d6a
 ms.openlocfilehash: 30eb3ce5bbb72ab685ed891644a478a36026ebea
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58772308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62352387"
 ---
 # <a name="do-i-have-to-derive-new-classes-from-cobject"></a>CObject에서 새 클래스를 파생시켜야 합니까?
 
@@ -22,4 +22,4 @@ ms.locfileid: "58772308"
 
 ## <a name="see-also"></a>참고자료
 
-[CObject 클래스: 질문과 대답](../mfc/cobject-class-frequently-asked-questions.md)
+[CObject 클래스: 자주 묻는 질문](../mfc/cobject-class-frequently-asked-questions.md)

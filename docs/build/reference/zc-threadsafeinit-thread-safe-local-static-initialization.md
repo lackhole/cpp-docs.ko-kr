@@ -12,11 +12,11 @@ helpviewer_keywords:
 - Zc compiler options (C++)
 ms.assetid: a0fc4b34-2cf0-45a7-a642-b8afc4ca19f2
 ms.openlocfilehash: 92a1bfa5ec3bab2814397d51e35e617b7666c706
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315705"
 ---
 # <a name="zcthreadsafeinit-thread-safe-local-static-initialization"></a>/Zc: threadsafeinit (스레드로부터 안전한 로컬 정적 초기화)
 
@@ -40,11 +40,11 @@ Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstand
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **구성을** 드롭다운 메뉴에서 선택 **모든 구성**합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. 수정 된 **추가 옵션** 포함할 속성을 **/zc: threadsafeinit** 또는 **/zc: threadsafeinit-** 를 선택한 후 **확인**합니다.
 

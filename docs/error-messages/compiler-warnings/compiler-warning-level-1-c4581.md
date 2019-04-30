@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C4581
 ms.assetid: 598bcd87-257d-4eb3-94e4-15bb31aadc99
 ms.openlocfilehash: 9e370bcff0c30fb508ebc22aaff1f6a56dd420a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397278"
 ---
 # <a name="compiler-warning-level-1-c4581"></a>컴파일러 경고(수준 1) C4581
 
 사용 되지 않는 동작: '"string1" ' 'string2' 프로세스 특성을 사용 하 여 대체
 
-이 오류는 Visual c + + 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다: Visual c + + 특성에 대 한 확인 하는 매개 변수입니다.
+이 오류는 시각적 개체에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다 C++ 2005: 시각적 개체에 대해 확인 하는 매개 변수 C++ 특성입니다.
 
 이전 버전에서는 특성 값은 따옴표로 묶여 있는지 여부 또는 허용 되었습니다. 값이 열거형 인 경우 하지 인용 부호로 묶어야 합니다.
 

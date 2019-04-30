@@ -9,15 +9,15 @@ helpviewer_keywords:
 - data marshaling [C++], calling native DLLs
 ms.assetid: 3273eb4b-38d1-4619-92a6-71bda542be72
 ms.openlocfilehash: e51e094cc013250fc254a09e279745f1f9c108ac
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222813"
 ---
 # <a name="how-to-call-native-dlls-from-managed-code-using-pinvoke"></a>방법: PInvoke를 사용 하 여 관리 되는 코드에서 네이티브 Dll 호출
 
-플랫폼 호출 (P/Invoke) 기능을 사용 하 여 관리 코드에서 관리 되지 않는 Dll에서 구현 되는 함수를 호출할 수 있습니다. DLL에 대 한 소스 코드를 사용할 수 없는 경우 P/Invoke 상호 운용에 대 한 유일한 옵션입니다. 그러나 다른.NET 언어와 달리 Visual c + + P/Invoke를 대안을 제공합니다. 자세한 내용은 [c + + Interop 사용 (암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다.
+플랫폼 호출 (P/Invoke) 기능을 사용 하 여 관리 코드에서 관리 되지 않는 Dll에서 구현 되는 함수를 호출할 수 있습니다. DLL에 대 한 소스 코드를 사용할 수 없는 경우 P/Invoke 상호 운용에 대 한 유일한 옵션입니다. 그러나 Visual 다른.NET 언어와 달리 C++ P/Invoke를 대안을 제공 합니다. 자세한 내용은 [사용 C++ (암시적 PInvoke) Interop](../dotnet/using-cpp-interop-implicit-pinvoke.md)합니다.
 
 ## <a name="example"></a>예제
 

@@ -3,11 +3,11 @@ title: /APPCONTAINER (UWP/Microsoft Store 앱)
 ms.date: 11/04/2016
 ms.assetid: 9a432db5-7640-460b-ab18-6f61fa7daf6f
 ms.openlocfilehash: f7ab8cf1ce034580953fdf1403264e8ef3d3ff09
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62295121"
 ---
 # <a name="appcontainer-microsoft-store-app"></a>/APPCONTAINER (Microsoft Store 앱)
 
@@ -29,7 +29,7 @@ ms.locfileid: "57812410"
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **구성 속성** 노드를 확장합니다.
 

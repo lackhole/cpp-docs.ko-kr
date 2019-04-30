@@ -36,11 +36,11 @@ helpviewer_keywords:
 - file sharing [C++]
 ms.assetid: 5e4502ab-48a9-4bee-a263-ebac8d638dec
 ms.openlocfilehash: 197a4f690a6626edbfec27ea4abef1999b6cedaf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287705"
 ---
 # <a name="fsopen-wfsopen"></a>_fsopen, _wfsopen
 
@@ -112,7 +112,7 @@ FILE *_wfsopen(
 
 |용어|정의|
 |----------|----------------|
-|**_SH_COMPAT**|16비트 응용 프로그램에 대한 호환성 모드를 설정합니다.|
+|**_SH_COMPAT**|16비트 애플리케이션에 대한 호환성 모드를 설정합니다.|
 |**_SH_DENYNO**|읽기 및 쓰기 액세스 권한을 허용합니다.|
 |**_SH_DENYRD**|파일에 대한 읽기 권한을 거부합니다.|
 |**_SH_DENYRW**|파일에 대한 읽기 및 쓰기 권한을 거부합니다.|

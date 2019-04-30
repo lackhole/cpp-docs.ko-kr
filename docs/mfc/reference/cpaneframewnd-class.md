@@ -133,11 +133,11 @@ helpviewer_keywords:
 - CPaneFrameWnd [MFC], m_bUseSaveBits
 ms.assetid: ea3423a3-2763-482e-b763-817036ded10d
 ms.openlocfilehash: 3172556b3b12141aaae45992dee36061aebf2a15
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372909"
 ---
 # <a name="cpaneframewnd-class"></a>CPaneFrameWnd 클래스
 
@@ -241,8 +241,7 @@ class CPaneFrameWnd : public CWnd
 
 미니 프레임 창에 포함된 창 스타일에 따라 캡션에 단추가 표시됩니다. 창을 닫을 수 있는 경우 ( [cbasepane:: Canbeclosed](../../mfc/reference/cbasepane-class.md#canbeclosed)), 닫기 단추를 표시 합니다. 창 스타일을 AFX_CBRS_AUTO_ROLLUP 있으면 핀이 표시 됩니다.
 
-
-  `CPaneFrameWnd`에서 클래스를 파생하는 경우 프레임워크에 만드는 방법을 알려야 합니다. 재정의 하 여 클래스를 만들거나 [cpane:: Createdefaultminiframe](../../mfc/reference/cpane-class.md#createdefaultminiframe)를 설정 또는 `CPane::m_pMiniFrameRTC` 멤버는 클래스에 대 한 런타임 클래스 정보를 가리킵니다.
+`CPaneFrameWnd`에서 클래스를 파생하는 경우 프레임워크에 만드는 방법을 알려야 합니다. 재정의 하 여 클래스를 만들거나 [cpane:: Createdefaultminiframe](../../mfc/reference/cpane-class.md#createdefaultminiframe)를 설정 또는 `CPane::m_pMiniFrameRTC` 멤버는 클래스에 대 한 런타임 클래스 정보를 가리킵니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 

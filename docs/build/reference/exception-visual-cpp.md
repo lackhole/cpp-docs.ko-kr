@@ -1,5 +1,5 @@
 ---
-title: '&lt;예외 > (c + + 문서 주석)'
+title: '&lt;예외 > (C++ 문서 주석)'
 ms.date: 11/04/2016
 f1_keywords:
 - exception
@@ -9,11 +9,11 @@ helpviewer_keywords:
 - exception C++ XML tag
 ms.assetid: 24451e79-9b89-4b77-98fb-702c6516b818
 ms.openlocfilehash: 327c1bc27f4ae71aa214e09f375f963dad5b33d7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292967"
 ---
 # <a name="ltexceptiongt"></a>&lt;exception&gt;
 
@@ -28,8 +28,7 @@ ms.locfileid: "57826627"
 #### <a name="parameters"></a>매개 변수
 
 *member*<br/>
-현재 컴파일 환경에서 사용할 수 있는 예외에 대한 참조입니다. 컴파일러는 이름 조회 규칙을 사용하여 지정된 예외가 있는지 확인하고 `member`를 출력 XML의 표준 요소 이름으로 변환합니다.  
-  `member`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
+현재 컴파일 환경에서 사용할 수 있는 예외에 대한 참조입니다. 컴파일러는 이름 조회 규칙을 사용하여 지정된 예외가 있는지 확인하고 `member`를 출력 XML의 표준 요소 이름으로 변환합니다.  `member`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
 
 이름을 단일 또는 이중 따옴표로 묶습니다.
 

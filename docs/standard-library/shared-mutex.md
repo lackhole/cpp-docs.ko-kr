@@ -46,11 +46,11 @@ f1_keywords:
 - shared_mutex/std::shared_timed_mutex::unlock_shared
 ms.assetid: 0b37a97d-ee5d-4050-b29f-09db9f76beb3
 ms.openlocfilehash: 97d77399357030feaa90228a1b0cdeb80d48034c
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412568"
 ---
 # <a name="ltsharedmutex"></a>&lt;shared_mutex>
 
@@ -104,7 +104,7 @@ void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
 `shared_lock` 템플릿 클래스는 소유권 전송 및 시간이 지정된 잠금 지원을 공유 뮤텍스로 확장합니다. 뮤텍스의 소유권은 생성 시나 생성 후에 가져와서 다른 `shared_lock` 개체로 전송할 수 있습니다. `shared_lock` 형식의 개체는 이동할 수는 있지만 복사할 수는 없습니다.
 
 > [!WARNING]
-> Visual Studio 2015부터 c + + 표준 라이브러리 동기화 형식은 Windows 동기화 기본 형식에 기반한 및 더 이상 ConcRT를 사용 하 여 (대상 플랫폼이 Windows XP 인 경우)는 제외 합니다. 에 정의 된 형식을 &lt;shared_mutex > 모든 ConcRT 형식 및 함수와 함께 쓰일 수 없습니다.
+> Visual Studio 2015에서 시작 하는 C++ 표준 라이브러리 동기화 형식은 Windows 동기화 기본 형식을 기반으로 하 고 더 이상 ConcRT를 사용 하 여 (대상 플랫폼이 Windows XP 인 경우) 제외 합니다. 에 정의 된 형식을 &lt;shared_mutex > 모든 ConcRT 형식 및 함수와 함께 쓰일 수 없습니다.
 
 ## <a name="classes"></a>클래스
 

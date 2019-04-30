@@ -50,11 +50,11 @@ helpviewer_keywords:
 - _atodbl_l function
 ms.assetid: 2d2530f4-4bd4-42e3-8083-f2d2fbc8432a
 ms.openlocfilehash: bb8d711dc8dfa912333f34603ad607f0a74143bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349279"
 ---
 # <a name="atodbl-atodbll-atoldbl-atoldbll-atoflt-atofltl"></a>_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 
@@ -98,7 +98,7 @@ int _atoflt_l( _CRT_FLOAT * value, const char * str, locale_t locale );
 
 |루틴|필수 헤더|
 |--------------|---------------------|
-|**_atodbl**하십시오 **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**하십시오 **_atoldbl_l**, **_atoflt_l**|\<stdlib.h>|
+|**_atodbl**, **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**, **_atoldbl_l**, **_atoflt_l**|\<stdlib.h>|
 
 ## <a name="example"></a>예제
 

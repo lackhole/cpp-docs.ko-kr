@@ -28,11 +28,11 @@ helpviewer_keywords:
 - remquo function
 ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
 ms.openlocfilehash: 4c7e93806600ff674baf186a66662aafdeceeaca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357553"
 ---
 # <a name="remquo-remquof-remquol"></a>remquo, remquof, remquol
 
@@ -53,13 +53,13 @@ long double remquo( long double numer, long double denom, int* quo ); /* C++ onl
 
 ### <a name="parameters"></a>매개 변수
 
-*필드가*<br/>
+*numer*<br/>
 분자입니다.
 
 *denom*<br/>
 분모입니다.
 
-*현재*<br/>
+*quo*<br/>
 몫의 대략적인 크기와 부호가 포함된 값을 저장하는 정수에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -70,13 +70,13 @@ long double remquo( long double numer, long double denom, int* quo ); /* C++ onl
 
 합니다 **remquo** 함수는 부동 소수점 나머지를 계산 *f* 의 *x* / *y* 되도록 *x*   =  *합니까* \* *y* + *f*여기서 *있습니까* 정수가 를 *f* 와 부호가 같도록 *x*, 및의 절대값 *f* 의 절대값 보다 작습니다 *y*합니다.
 
-C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **remquo** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **remquo** 는 항상 두 가지 **double** 인수 및 반환 된 **double**합니다.
+C++오버 로드를 호출할 수 있도록 오버 로드를 허용 **remquo** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **remquo** 는 항상 두 가지 **double** 인수 및 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더(C)|필수 헤더(C++)|
+|함수|필수 헤더(C)|필수 헤더(C++)|
 |--------------|---------------------|-|
-|**remquo**하십시오 **remquof**, **remquol**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**remquo**, **remquof**, **remquol**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

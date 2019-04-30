@@ -41,11 +41,11 @@ helpviewer_keywords:
 - std::codecvt [C++], unshift
 ms.assetid: 37d3efa1-2b7f-42b6-b04f-7a972c8c2c86
 ms.openlocfilehash: be1075da65284ac3f9672a839622b59c8926bfb9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405240"
 ---
 # <a name="codecvt-class"></a>codecvt 클래스
 
@@ -209,11 +209,11 @@ explicit codecvt(size_t _Refs = 0);
 
 에 대 한 가능한 값을 *_Refs* 매개 변수 및 중요성은:
 
-- 0: 개체를 포함하는 로캘에 의해 개체의 수명이 관리됩니다.
+- 0: 개체의 수명은 포함 하는 로캘에 의해 관리 됩니다.
 
-- 1: 개체의 수명을 수동으로 관리해야 합니다.
+- 1: 개체의 수명은 수동으로 관리 해야 합니다.
 
-- 2: 이러한 값은 정의 되지 않습니다.
+- 2: 이러한 값이 정의 되지 않습니다.
 
 생성자는 초기화 해당 `locale::facet` 사용 하 여 기본 개체 **로캘::**[패싯](../standard-library/locale-class.md#facet_class)(`_Refs`).
 

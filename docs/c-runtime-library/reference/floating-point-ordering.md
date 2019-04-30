@@ -22,11 +22,11 @@ helpviewer_keywords:
 - islessgreater function
 - isunordered function
 ms.openlocfilehash: 748360cae1dd0ee43645dee369c60c835246ed03
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333705"
 ---
 # <a name="isgreater-isgreaterequal-isless-islessequal-islessgreater-isunordered"></a>isgreater isgreaterequal, isless, islessequal, islessgreater, isunordered
 
@@ -121,11 +121,11 @@ inline bool isunordered(
 
 ## <a name="remarks"></a>설명
 
-이러한 비교 연산은 C와 c + +로 컴파일할 때 인라인 템플릿 함수를 컴파일할 때 매크로로 구현 됩니다.
+이러한 비교 작업으로 컴파일할 때 인라인 템플릿 함수 C로 컴파일된 경우 매크로로 구현 됩니다 C++입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 헤더(C)|필수 헤더(C++)|
+|함수|필수 헤더(C)|필수 헤더(C++)|
 |--------------|---------------------------|-------------------------------|
 | **isgreater**, **isgreaterequal**, **isless**,<br/>**islessequal**, **islessgreater**, **isunordered** | \<math.h> | \<math.h> 또는 \<cmath> |
 

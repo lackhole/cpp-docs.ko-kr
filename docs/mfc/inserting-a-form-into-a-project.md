@@ -7,11 +7,11 @@ helpviewer_keywords:
 - forms, adding to projects
 ms.assetid: f3bd2998-3ce2-496d-ac5c-57ca70eec7cb
 ms.openlocfilehash: 2fa344f2d84b39be4ee36fd845edb82c14b6c519
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57286532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383865"
 ---
 # <a name="inserting-a-form-into-a-project"></a>프로젝트에 폼 삽입
 
@@ -29,7 +29,7 @@ ms.locfileid: "57286532"
 
 1. MFC 클래스 마법사를 사용 하 여 새 클래스에서 파생 수행해 [CFormView](../mfc/reference/cformview-class.md)합니다.
 
-Visual c + + 폼에 추가 응용 프로그램을 시작할 수 있도록 대화 상자 편집기에서 열고 컨트롤 추가 및 전반적인 디자인에서 작동 합니다.
+Visual C++ 를 시작할 수 있도록 대화 상자 편집기에서 열고, 응용 프로그램에 폼 추가 컨트롤을 추가 하 고 전반적인 디자인에서 작업 합니다.
 
 (대화 상자 기반 응용 프로그램에는 적용 되지 않음) 다음과 같은 추가 단계를 수행 하는 것이 좋습니다.
 

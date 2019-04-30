@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ATL Active Server Page Component Wizard
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
 ms.openlocfilehash: f020ed9b58f631bfff09fe54c70e36146eb03368
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62249018"
 ---
 # <a name="atl-active-server-page-component-wizard"></a>ATL Active Server Page 구성 요소 마법사
 
@@ -35,7 +35,7 @@ Visual Studio 2008부터,이 마법사에서 생성 된 등록 스크립트 등�
 
 ### <a name="c"></a>C++
 
-개체에 대해 생성 된 c + + 클래스에 대 한 정보를 제공 합니다.
+에 대 한 정보를 제공 합니다 C++ 개체에 대해 생성 된 클래스입니다.
 
 - **짧은 이름**
 

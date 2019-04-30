@@ -15,11 +15,11 @@ helpviewer_keywords:
 - member access
 ms.assetid: f8fc3df9-d728-40c5-b384-276927f5f1b3
 ms.openlocfilehash: 0f370aa04af2e78efd5edfb7836fb71a4c4516a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468746"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345984"
 ---
 # <a name="member-access-operators--and--gt"></a>멤버 액세스 연산자:. and -&gt;
 
@@ -80,5 +80,5 @@ int main() {
 
 [후위 식](../cpp/postfix-expressions.md)<br/>
 [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[클래스 및 구조체](../cpp/classes-and-structs-cpp.md)<br/>
+[클래스 및 구조체(C++)](../cpp/classes-and-structs-cpp.md)<br/>
 [구조체 및 공용 구조체 구성원](../c-language/structure-and-union-members.md)

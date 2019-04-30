@@ -34,18 +34,18 @@ helpviewer_keywords:
 - _putwch_nolock function
 ms.assetid: edbc811d-bac6-47fa-a872-fe4f3a1590b0
 ms.openlocfilehash: 3b3ce1bb36e8a6d938ad620af21e8c1d3bc768db
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358212"
 ---
 # <a name="putchnolock-putwchnolock"></a>_putch_nolock, _putwch_nolock
 
 스레드를 잠그지 않고 콘솔에 문자를 씁니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -69,7 +69,7 @@ wchar_t c
 
 ## <a name="remarks"></a>설명
 
-**_putch_nolock** 및 **_putwch_nolock**은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 각각 **_putch** 및 **_putwch**와 동일합니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**_putch_nolock** 및 **_putwch_nolock**은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 각각 **_putch** 및 **_putwch**와 동일합니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 

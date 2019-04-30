@@ -8,11 +8,11 @@ helpviewer_keywords:
 - COM interfaces, adding classes
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
 ms.openlocfilehash: a2c291e1c9e78d288bdb2d15f224520d764dfa1b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62297010"
 ---
 # <a name="add-class-from-typelib-wizard"></a>Typelib에서 클래스 추가 마법사
 
@@ -70,4 +70,4 @@ ms.locfileid: "57273883"
 ## <a name="see-also"></a>참고자료
 
 [형식 라이브러리에서 MFC 클래스](../../mfc/reference/adding-an-mfc-class-from-a-type-library.md)<br/>
-[자동화 클라이언트: 형식 라이브러리를 사용 하 여](../../mfc/automation-clients-using-type-libraries.md)
+[자동화 클라이언트: 형식 라이브러리 사용](../../mfc/automation-clients-using-type-libraries.md)

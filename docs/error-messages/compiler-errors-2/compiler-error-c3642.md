@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C3642
 ms.assetid: 429790c2-9614-4d85-b31c-687c8d8f83ff
 ms.openlocfilehash: d524c49075c400caa345dd26ed681734ea0cfb94
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385623"
 ---
 # <a name="compiler-error-c3642"></a>컴파일러 오류 C3642
 
@@ -21,7 +21,7 @@ ms.locfileid: "50582653"
 
 *return_type/args* 은 함수의 이름 또는 형식의 `__clrcall` 함수를 호출 하는 것입니다.  형식에는 함수 포인터를 통해 호출할 때 사용 됩니다.
 
-네이티브 컨텍스트에서 관리 되는 함수를 호출 하려면 호출 하는 "래퍼" 함수를 추가할 수 있습니다는 `__clrcall` 함수입니다. 또는 CLR 마샬링 메커니즘;를 사용할 수 있습니다. 참조 [방법: PInvoke를 사용 하 여 함수 포인터 마샬링](../../dotnet/how-to-marshal-function-pointers-using-pinvoke.md) 자세한 내용은 합니다.
+네이티브 컨텍스트에서 관리 되는 함수를 호출 하려면 호출 하는 "래퍼" 함수를 추가할 수 있습니다는 `__clrcall` 함수입니다. 또는 CLR 마샬링 메커니즘;를 사용할 수 있습니다. 참조 [방법: 함수 포인터를 사용 하 여 PInvoke 마샬링할](../../dotnet/how-to-marshal-function-pointers-using-pinvoke.md) 자세한 내용은 합니다.
 
 다음 샘플에서는 C3642를 생성합니다.
 

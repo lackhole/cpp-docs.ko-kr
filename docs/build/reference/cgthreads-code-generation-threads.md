@@ -10,11 +10,11 @@ helpviewer_keywords:
 - cgthreads
 ms.assetid: 64bc768c-6caa-4baf-9dea-7cfa1ffb01c2
 ms.openlocfilehash: df353eb255c731478863ed6088cafa1cc38053fb
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294696"
 ---
 # <a name="cgthreads-code-generation-threads"></a>/cgthreads(코드 생성 스레드)
 

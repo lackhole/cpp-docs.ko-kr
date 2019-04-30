@@ -11,11 +11,11 @@ helpviewer_keywords:
 - SQL aggregate values, retrieving from recordsets
 ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
 ms.openlocfilehash: e10f2e1574dae234d98d210784d4a8ddef3bb57e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59025324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397785"
 ---
 # <a name="recordset-obtaining-sums-and-other-aggregate-results-odbc"></a>레코드 집합: 합계 및 다른 집계 결과 (ODBC) 구하기
 
@@ -91,4 +91,4 @@ DDX_FieldText(pDX, IDC_SUMSALES, m_pSet->m_dblSumSales, m_pSet);
 ## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 레코드 집합 선택 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)
+[레코드 집합 레코드 집합의 레코드 선택 방법(ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)

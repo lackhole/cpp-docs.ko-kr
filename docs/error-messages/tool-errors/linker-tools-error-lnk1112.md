@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1112
 ms.assetid: 425793d8-37e6-4072-9b6e-c3d4e9c12562
 ms.openlocfilehash: bc01d56fb8144d23b91c82a7f791a70a5dadb7ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62255487"
 ---
 # <a name="linker-tools-error-lnk1112"></a>링커 도구 오류 LNK1112
 
@@ -25,7 +25,7 @@ ms.locfileid: "50607092"
 
 마찬가지로, x64를 사용 하 여 모듈을 만든 경우 컴파일러 및 x86 사용 하 여 다른 모듈 컴파일러 및 연결을 하려고 링커에서 LNK1112를 생성 합니다.
 
-이 오류는 64비트 응용 프로그램을 개발하고 있지만 Visual C++ 64비트 컴파일러 중 하나를 설치하지 않은 경우에 발생할 수 있습니다. 이런 경우 64비트 구성을 사용할 수 없습니다. 이 문제를 해결하려면 Visual Studio 설치 관리자를 실행하고 누락된 C++ 구성 요소를 설치하세요.
+이 오류는 64비트 애플리케이션을 개발하고 있지만 Visual C++ 64비트 컴파일러 중 하나를 설치하지 않은 경우에 발생할 수 있습니다. 이런 경우 64비트 구성을 사용할 수 없습니다. 이 문제를 해결하려면 Visual Studio 설치 관리자를 실행하고 누락된 C++ 구성 요소를 설치하세요.
 
 또한 이 오류는 **Configuration Manager** 에서 **활성 솔루션 구성** 을 변경한 다음 중간 프로젝트 파일을 삭제하기 전에 프로젝트를 빌드하려고 하면 발생할 수 있습니다. 이 오류를 해결하려면 **빌드** 메뉴에서 **솔루션 다시 빌드** 를 선택합니다. **빌드** 메뉴에서 **솔루션 정리** 를 선택한 다음 솔루션을 빌드할 수도 있습니다.
 

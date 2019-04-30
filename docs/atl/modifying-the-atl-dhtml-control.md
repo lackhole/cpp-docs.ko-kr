@@ -7,15 +7,15 @@ helpviewer_keywords:
 - DHTML controls, modifying
 ms.assetid: c053f35f-8629-4600-9595-721f5956777a
 ms.openlocfilehash: 6c8976c013d0114a3115d3b0bc38fa4bc6acb5b7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261659"
 ---
 # <a name="modifying-the-atl-dhtml-control"></a>ATL DHTML 컨트롤 수정
 
-ATL 컨트롤 마법사 빌드를 해당 컨트롤의 실행 및 메서드를 프로젝트 파일에 작성 되는 방법 및 DHTML 디스패치 메서드를 사용 하 여 컨트롤의 c + + 코드를 호출 하는 방법을 볼 수 있도록 시작 코드를 제공 합니다. 인터페이스에 디스패치 메서드를 추가할 수 있습니다. 그런 다음 HTML 리소스에서 메서드를 호출할 수 있습니다.
+ATL 컨트롤 마법사 줄어들고 시작 코드 빌드를 컨트롤에 실행 메서드를 프로젝트 파일에 작성 되는 방법 및 DHTML 컨트롤의를 호출 하는 방법을 볼 수 있도록 C++ 디스패치 메서드를 사용 하는 코드입니다. 인터페이스에 디스패치 메서드를 추가할 수 있습니다. 그런 다음 HTML 리소스에서 메서드를 호출할 수 있습니다.
 
 ## <a name="to-modify-the-atl-dhtml-control"></a>ATL DHTML 컨트롤 수정
 

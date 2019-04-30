@@ -1,5 +1,5 @@
 ---
-title: 숫자, 부울 및 포인터 리터럴 (c + +)
+title: 숫자, 부울 및 포인터 리터럴 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - literals, C++
@@ -7,15 +7,15 @@ helpviewer_keywords:
 - literals [C++]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
 ms.openlocfilehash: f263e9a2ed357cdc80ec29fc5d1b6d58c9e093e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245104"
 ---
-# <a name="numeric-boolean-and-pointer-literals--c"></a>숫자, 부울 및 포인터 리터럴 (c + +)
+# <a name="numeric-boolean-and-pointer-literals--c"></a>숫자, 부울 및 포인터 리터럴 (C++)
 
-리터럴은 값을 직접 나타내는 프로그램 요소입니다. 이 문서에서는 정수, 부동 소수점, 부울 및 포인터 형식의 리터럴에 대해 설명합니다. 문자열 및 문자 리터럴에 대 한 정보를 참조 하세요 [문자열 및 문자 리터럴 (c + +)](../cpp/string-and-character-literals-cpp.md)합니다. 이러한 범주; 중 하나에 따라 고유한 리터럴을 정의할 수도 있습니다. 자세한 내용은 참조 하세요. [사용자 정의 리터럴 (c + +)](../cpp/user-defined-literals-cpp.md)
+리터럴은 값을 직접 나타내는 프로그램 요소입니다. 이 문서에서는 정수, 부동 소수점, 부울 및 포인터 형식의 리터럴에 대해 설명합니다. 문자열 및 문자 리터럴에 대 한 정보를 참조 하세요 [문자열 및 문자 리터럴 (C++)](../cpp/string-and-character-literals-cpp.md)합니다. 이러한 범주; 중 하나에 따라 고유한 리터럴을 정의할 수도 있습니다. 자세한 내용은 참조 [사용자 정의 리터럴 (C++)](../cpp/user-defined-literals-cpp.md)
 
 . 리터럴은 많은 컨텍스트에서 사용할 수 있지만 가장 일반적으로 명명된 변수를 초기화하고 인수를 함수에 전달하는 데 사용됩니다.
 
@@ -71,7 +71,7 @@ auto val_4 = 108LL;                           // signed long long
 auto val_4 = 0x8000000000000000ULL << 16;     // unsigned long long
 ```
 
-**자릿수 구분 기호**: 구분 하 여 읽기 쉽게 많은 수의 자리 값을 작은따옴표 문자 (아포스트로피)를 사용할 수 있습니다. 구분 기호는 컴파일에 영향을 주지 않습니다.
+**자릿수 구분 기호**: 쉽게 읽을 많은 수의 자리 값을 구분 하는 작은따옴표 (아포스트로피)를 사용할 수 있습니다. 구분 기호는 컴파일에 영향을 주지 않습니다.
 
 ```cpp
 long long i = 24'847'458'121
@@ -81,7 +81,7 @@ long long i = 24'847'458'121
 
 부동 소수점 리터럴은 소수 부분이 있어야 하는 값을 지정합니다. 소수점이 하를 포함 하는 이러한 값 (**.**) 지 수를 포함할 수 있습니다.
 
-부동 소수점 리터럴에는 숫자의 값을 지정하는 "가수", 숫자의 크기를 지정하는 "지수" 및 리터럴의 형식을 지정하는 선택적 접미사가 있습니다. 가수는 숫자 시퀀스 및 그 뒤의 점과 숫자의 소수 부분을 나타내는 그 뒤의 선택적 숫자 시퀀스로 지정됩니다. 예를 들면 다음과 같습니다.
+부동 소수점 리터럴에는 숫자의 값을 지정하는 "가수", 숫자의 크기를 지정하는 "지수" 및 리터럴의 형식을 지정하는 선택적 접미사가 있습니다. 가수는 숫자 시퀀스 및 그 뒤의 점과 숫자의 소수 부분을 나타내는 그 뒤의 선택적 숫자 시퀀스로 지정됩니다. 예를 들어:
 
 ```cpp
 18.46
@@ -105,7 +105,7 @@ long long i = 24'847'458'121
 void func( double );
 ```
 
-를 갖는
+및
 
 ```cpp
 void func( long double );
@@ -117,7 +117,7 @@ void func( long double );
 
 ## <a name="pointer-literal-c11"></a>포인터 리터럴(C++11)
 
-C + +에서는 합니다 [nullptr](../cpp/nullptr.md) 0으로 초기화 포인터를 지정 하려면 리터럴. 이식 가능한 코드 **nullptr** 정수 계열 형식의 0 또는 NULL 등 매크로 대신 사용 해야 합니다.
+C++소개 합니다 [nullptr](../cpp/nullptr.md) 0으로 초기화 포인터를 지정 하려면 리터럴. 이식 가능한 코드 **nullptr** 정수 계열 형식의 0 또는 NULL 등 매크로 대신 사용 해야 합니다.
 
 ## <a name="binary-literals-c14"></a>이진 리터럴(C++14)
 
@@ -142,5 +142,5 @@ if (num < 100)
 ## <a name="see-also"></a>참고자료
 
 [어휘 규칙](../cpp/lexical-conventions.md)<br/>
-[C + + 문자열 리터럴](../cpp/string-and-character-literals-cpp.md)<br/>
-[C + + 사용자 정의 리터럴](../cpp/user-defined-literals-cpp.md)
+[C++문자열 리터럴](../cpp/string-and-character-literals-cpp.md)<br/>
+[C++사용자 정의 리터럴](../cpp/user-defined-literals-cpp.md)

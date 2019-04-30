@@ -12,19 +12,19 @@ helpviewer_keywords:
 - operator overloading
 ms.assetid: 56ad4c4f-dd0c-45e0-adaa-08fe98cb1f8e
 ms.openlocfilehash: d6a294af3ea7ef6085eae0f7069ea2d1fdbb30e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62377363"
 ---
-# <a name="operator-overloading"></a>연산자 오버 로드
+# <a name="operator-overloading"></a>연산자 오버로드
 
 합니다 **연산자** 키워드를 지정 하는 함수 선언 *연산자 기호* 클래스의 인스턴스를 적용할 때를 의미 합니다. 이 키워드는 연산자에게 둘 이상의 의미를 제공 즉, 오버로드합니다. 컴파일러는 피연산자의 형식을 검사하여 연산자의 여러 가지 의미 간을 구분합니다.
 
 ## <a name="syntax"></a>구문
 
-> *형식* **연산자** *연산자 기호* **(** *매개 변수 목록을* **)**
+> *type* **operator** *operator-symbol* **(** *parameter-list* **)**
 
 ## <a name="remarks"></a>설명
 
@@ -60,16 +60,16 @@ ms.locfileid: "50621743"
 |**-=**|빼기 할당|이항|
 |**->**|멤버 선택|이항|
 |**->&#42;**|멤버 포인터 선택|이항|
-|**/**|나누기|이항|
+|**/**|나눗셈 기호|이항|
 |**/=**|나누기 할당|이항|
 |**\<**|보다 작음|이항|
-|**<<**|왼쪽 <Shift>|이항|
+|**<<**|왼쪽 |이항|
 |**<<=**|왼쪽 시프트 할당|이항|
 |**<=**|작거나 같음|이항|
-|**=**|대입|이항|
+|**=**|할당|이항|
 |**==**|같음|이항|
 |**>**|보다 큼|이항|
-|**>=**|크거나 같음|이항|
+|**>=**|다음보다 크거나 같음|이항|
 |**>>**|오른쪽 Shift|이항|
 |**>>=**|오른쪽 시프트 할당|이항|
 |**[ ]**|배열 첨자|—|
@@ -179,4 +179,4 @@ int main() {
 ## <a name="see-also"></a>참고자료
 
 [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

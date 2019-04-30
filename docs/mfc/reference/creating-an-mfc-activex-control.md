@@ -8,11 +8,11 @@ helpviewer_keywords:
 - ActiveX controls [MFC], creating
 ms.assetid: 8bd5a93c-d04d-414e-bb28-163fdc1c0dd5
 ms.openlocfilehash: b2dc48e2568e180820f8bca008c66878af4b575e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372298"
 ---
 # <a name="creating-an-mfc-activex-control"></a>MFC ActiveX 컨트롤 만들기
 
@@ -25,7 +25,7 @@ MFC ActiveX 컨트롤을 만드는 가장 쉬운 방법은 사용 하는 것은 
 
 ### <a name="to-create-an-mfc-activex-control-using-the-mfc-activex-control-wizard"></a>MFC ActiveX 컨트롤 마법사를 사용 하 여 MFC ActiveX 컨트롤을 만들려면
 
-1. 도움말 항목의 지침을 따릅니다 [c + + 콘솔 앱 프로젝트를 만들고](../../get-started/tutorial-console-cpp.md)합니다.
+1. 도움말 항목의 지침을 따릅니다 [만들기를 C++ 콘솔 앱 프로젝트](../../get-started/tutorial-console-cpp.md)합니다.
 
 1. 에 **새 프로젝트** 대화 상자를 선택 합니다 **MFC ActiveX 컨트롤** MFC ActiveX 컨트롤 마법사를 열려면 템플릿 창에서 아이콘입니다.
 
@@ -36,7 +36,7 @@ MFC ActiveX 컨트롤을 만드는 가장 쉬운 방법은 사용 하는 것은 
 
 1. 클릭 **완료** 마법사를 닫고 개발 환경에서 새 프로젝트를 엽니다.
 
-프로젝트를 만든 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [Visual c + + 프로젝트용으로 만들어지는 파일 형식](../../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
+프로젝트를 만든 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [시각적 개체에 대해으로 만들어지는 파일 형식 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
 
 프로젝트를 만든 후 추가할 코드 마법사를 사용할 수 있습니다 [함수](../../ide/add-member-function-wizard.md), [변수](../../ide/add-member-variable-wizard.md), [이벤트](../../ide/add-event-wizard.md)하십시오 [속성](../../ide/names-add-property-wizard.md), 및 [메서드](../../ide/add-method-wizard.md)합니다. ActiveX 컨트롤을 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [MFC ActiveX 컨트롤](../../mfc/mfc-activex-controls.md)합니다.
 

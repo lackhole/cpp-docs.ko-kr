@@ -20,11 +20,11 @@ helpviewer_keywords:
 - fonts [MFC], ActiveX controls
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
 ms.openlocfilehash: ce1e913bb3bd1c3b74db43dc02d9d360b9cfd00c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62239514"
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX 컨트롤: 글꼴 사용
 
@@ -237,4 +237,4 @@ DISP_PROPERTY_EX 매크로 연결 합니다 `HeadingFont` 속성을 해당 이�
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용](../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)<br/>
-[MFC ActiveX 컨트롤: 스톡 속성 페이지를 사용 하 여](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+[MFC ActiveX 컨트롤: 스톡 속성 페이지 사용](../mfc/mfc-activex-controls-using-stock-property-pages.md)

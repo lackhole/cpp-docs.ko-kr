@@ -29,11 +29,11 @@ helpviewer_keywords:
 - putwchar function
 ms.assetid: 93657c7f-cca1-4032-8e3a-cd6ab6193748
 ms.openlocfilehash: becee3d79f58ac018d1161c1af36e9a4646640bf
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357997"
 ---
 # <a name="putchar-putwchar"></a>putchar, putwchar
 
@@ -65,7 +65,7 @@ wint_t putwchar(
 
 합니다 **putc** 루틴 단일 문자를 씁니다 *c* 출력 *stream* 현재 위치에서. 임의의 정수를 전달할 수 **putc**, 낮은 8 비트만 기록 됩니다. 합니다 **putchar** 루틴은 동일 `putc( c, stdout )`합니다. 각 루틴에 대해 읽기 오류가 발생하는 경우 스트림에 대한 오류 표시기가 설정됩니다. **putc** 하 고 **putchar** 비슷합니다 **fputc** 하 고 **_fputchar**각각 함수 및 매크로로 구현 됩니다 (참조 [ 함수와 매크로 중 선택](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md)). **putwc** 하 고 **putwchar** 와이드 문자 버전입니다 **putc** 하 고 **putchar**, 각각.
 
-**_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 이러한 버전에서는 다른 스레드를 잠그는 오버헤드가 발생하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 이러한 버전에서는 다른 스레드를 잠그는 오버헤드가 발생하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

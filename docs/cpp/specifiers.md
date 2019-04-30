@@ -7,11 +7,11 @@ helpviewer_keywords:
 - specifiers, in declarations
 ms.assetid: 8b14e844-9880-4571-8779-28c8efe44633
 ms.openlocfilehash: aef967b26321f289cb8c7bd0402d7fe8f12b77b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62330988"
 ---
 # <a name="specifiers"></a>지정자
 
@@ -19,17 +19,17 @@ ms.locfileid: "50611408"
 
 다음 자리 표시자 및 언어 키워드는 선언 지정자입니다.
 
-*저장소 클래스 지정자*
+*storage-class-specifier*
 
-*형식 지정자*
+*type-specifier*
 
-*함수 지정자*
+*function-specifier*
 
 [friend](friend-cpp.md)
 
-[typedef](aliases-and-typedefs-cpp.md) `(` *확장-선언-한정자-seq* `)`
+[typedef](aliases-and-typedefs-cpp.md) `(` *extended-decl-modifier-seq* `)`
 
-[__declspec](declspec.md) `(` *확장-선언-한정자-seq* `)`
+[__declspec](declspec.md) `(` *extended-decl-modifier-seq* `)`
 
 ## <a name="remarks"></a>설명
 
@@ -37,7 +37,7 @@ ms.locfileid: "50611408"
 
 다음 표에서는 4개의 선언을 나열한 후 각 선언의 *decl-specifers* 및 *declarator* 구성 요소를 따로 나열합니다.
 
-|선언|*선언 지정자*|`declarator`|
+|선언|*decl-specifiers*|`declarator`|
 |-----------------|------------------------|------------------|
 |`char *lpszAppName;`|**char**|`*lpszAppName`|
 |`typedef char * LPSTR;`|**char**|`*LPSTR`|

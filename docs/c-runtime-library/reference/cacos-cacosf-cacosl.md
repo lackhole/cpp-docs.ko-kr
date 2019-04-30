@@ -31,11 +31,11 @@ helpviewer_keywords:
 - cacosl function
 ms.assetid: 78118c00-0a07-49c1-8a13-4bf19ce3aea8
 ms.openlocfilehash: 18757ecd30f399ca3d1fdb77e8bff8213a265e74
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348577"
 ---
 # <a name="cacos-cacosf-cacosl"></a>cacos, cacosf, cacosl
 
@@ -65,13 +65,13 @@ _Lcomplex cacos( _Lcomplex z );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **cacos** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **cacos** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **cacos** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **cacos** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**cacos**하십시오 **cacosf**, **cacosl**|\<complex.h>|\<ccomplex>|
+|**cacos**,               **cacosf**, **cacosl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

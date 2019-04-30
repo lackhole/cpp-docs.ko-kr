@@ -3,15 +3,15 @@ title: 대리자(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38
 ms.openlocfilehash: e2158adad288045c9a98889dbe97e834dc93ea71
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406927"
 ---
 # <a name="delegates-ccx"></a>대리자(C++/CX)
 
-`delegate` 키워드 표준 c + +에서 함수 개체에 Windows 런타임 상응 하는 참조 형식을 선언 하는 데 사용 됩니다. 대리자 선언은 함수 서명과 유사하며, 래핑된 함수에 있어야 하는 반환 형식과 매개 변수 형식을 지정합니다. 다음은 사용자 정의 대리자 선언입니다.
+합니다 `delegate` 키워드는 표준에서 함수 개체를 Windows 런타임 해당 하는 참조 형식을 선언 하는 데 사용 됩니다 C++합니다. 대리자 선언은 함수 서명과 유사하며, 래핑된 함수에 있어야 하는 반환 형식과 매개 변수 형식을 지정합니다. 다음은 사용자 정의 대리자 선언입니다.
 
 ```cpp
 public delegate void PrimeFoundHandler(int result);
@@ -133,5 +133,5 @@ C++/CX의 제네릭 대리자에는 제네릭 클래스의 선언과 유사한 �
 ## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
-[Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[네임 스페이스 참조](../cppcx/namespaces-reference-c-cx.md)
+[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

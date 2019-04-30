@@ -23,11 +23,11 @@ helpviewer_keywords:
 - exception handling, termination
 ms.assetid: ebcef032-4771-48e5-88aa-2a1ab8750aa6
 ms.openlocfilehash: 6c38421e447ca7b3f263148f51f0ade5c59e2804
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356403"
 ---
 # <a name="setunexpected-crt"></a>set_unexpected(CRT)
 
@@ -50,7 +50,7 @@ unexpected_function set_unexpected( unexpected_function unexpFunction );
 
 ## <a name="remarks"></a>설명
 
-합니다 **set_unexpected** 설치 함수 *unexpFunction* 호출한 함수로 **예기치 않은**합니다. **예기치 않은** 현재 c + + 예외 처리 구현에서 사용 되지 않습니다. 합니다 **unexpected_function** EH에 형식이 정의 되어 있습니다. 사용자 정의 unexpected 함수 포인터로 H *unexpFunction* 반환 **void**합니다. 사용자 지정 *unexpFunction* 함수 호출자에 게 반환 되어서는 안 됩니다.
+합니다 **set_unexpected** 설치 함수 *unexpFunction* 호출한 함수로 **예기치 않은**합니다. **예기치 않은** 현재에서 사용 되지 않습니다 C++ 예외 처리 구현 합니다. 합니다 **unexpected_function** EH에 형식이 정의 되어 있습니다. 사용자 정의 unexpected 함수 포인터로 H *unexpFunction* 반환 **void**합니다. 사용자 지정 *unexpFunction* 함수 호출자에 게 반환 되어서는 안 됩니다.
 
 ```cpp
 typedef void ( *unexpected_function )( );
@@ -62,7 +62,7 @@ typedef void ( *unexpected_function )( );
 
 다중 스레드 환경에서 unexpected 함수는 각 스레드에 대해 개별적으로 유지 관리됩니다. 각 새 스레드는 자체 unexpected 함수를 설치해야 합니다. 따라서 각 스레드는 자체 unexpected 처리를 담당합니다.
 
-현재 Microsoft 구현의 c + + 예외 처리 **예기치 않은** 호출 **종료** 기본적으로 예외 처리 런타임 라이브러리에서 호출 되지 됩니다. 호출에 특별 한 이점은 없으며 방법이 **예기치 않은** 대신 **종료**합니다.
+현재 Microsoft 구현에서 C++ 예외 처리 **예기치 않은** 호출 **종료** 기본적으로 예외 처리 런타임 라이브러리에서 호출 되지 됩니다. 호출에 특별 한 이점은 없으며 방법이 **예기치 않은** 대신 **종료**합니다.
 
 단일 **set_unexpected** 처리기에 대 한 모든 동적으로 연결 된 Dll 또는 Exe; 호출 하는 경우에 **set_unexpected** 처리기 바꿀 수 있습니다 하거나 설정 하는 처리기로 바뀌거나 사용자 다른 DLL 또는 EXE
 

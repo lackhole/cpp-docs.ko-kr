@@ -7,11 +7,11 @@ helpviewer_keywords:
 - hosting Windows Forms control [C++]
 ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
 ms.openlocfilehash: 4c4ee8c8b4570b598ba20b3bd5e1cf4c706ee885
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62222951"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>Windows Form 사용자 정의 컨트롤을 MFC 대화 상자로 호스팅
 
@@ -25,7 +25,7 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
 
 1. MFC 응용 프로그램 프로젝트를 만듭니다.
 
-   에 **파일** 메뉴에서 **새로 만들기**를 클릭 하 고 **프로젝트**합니다. 에 **Visual c + +** 폴더 선택 **MFC 응용 프로그램**합니다.
+   에 **파일** 메뉴에서 **새로 만들기**를 클릭 하 고 **프로젝트**합니다. 에 **시각적 C++**  폴더를 선택 **MFC 응용 프로그램**합니다.
 
    에 **이름** 상자에 입력 합니다 `MFC03` 솔루션 설정을 변경 하 고 **솔루션을 추가할**합니다. 클릭 **확인**합니다.
 

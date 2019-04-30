@@ -13,11 +13,11 @@ helpviewer_keywords:
 - unmanaged pragma
 ms.assetid: f072ddcc-e1ec-408a-8ce1-326ddb60e4a4
 ms.openlocfilehash: 7fa1e3274b85faa9f3f72f4db5bf586ee5d8e274
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59022348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409865"
 ---
 # <a name="managed-unmanaged"></a>관리되는, 관리되지 않는
 함수를 관리되거나 관리되지 않는 것으로 컴파일하기 위해 함수 수준 제어를 사용하도록 설정합니다.

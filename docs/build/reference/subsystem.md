@@ -9,11 +9,11 @@ helpviewer_keywords:
 - SUBSYSTEM editbin option
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215
 ms.openlocfilehash: b13313d57226719086cb73584543488f842057c1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317720"
 ---
 # <a name="subsystem"></a>/SUBSYSTEM
 
@@ -63,8 +63,7 @@ WINDOWSCE 하위 시스템은 앱이 Windows CE 커널 버전이 있는 장치�
 
 - 버전 번호의 소수 부분(소수점 오른쪽에 있는 부분)은 `minor`로 나타냅니다.
 
-- 
-  `major` 및 `minor` 값은 0에서 65,535 사이여야 합니다.
+- `major` 및 `minor` 값은 0에서 65,535 사이여야 합니다.
 
 하위 시스템 선택은 프로그램의 기본 시작 주소에 영향을 줍니다. 자세한 내용은 [/ENTRY (진입점 기호)](entry-entry-point-symbol.md), linker /ENTRY:*함수* 옵션입니다.
 

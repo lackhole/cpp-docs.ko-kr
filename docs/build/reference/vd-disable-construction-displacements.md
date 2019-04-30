@@ -17,11 +17,11 @@ helpviewer_keywords:
 - Disable Construction Displacements compiler option
 ms.assetid: 93258964-14d7-4b1c-9cbc-d6f4d74eab69
 ms.openlocfilehash: db198dbdc7bd43ffd4de9bde39ee81a8b95a25ab
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316888"
 ---
 # <a name="vd-disable-construction-displacements"></a>/vd(생성 치환 비활성화)
 
@@ -46,9 +46,9 @@ Vtordisp 생성자/소멸자 치환 멤버를 표시 하지 않습니다. 모든
 
 ## <a name="remarks"></a>설명
 
-이러한 옵션은 가상 기본을 사용 하는 c + + 코드에만 적용 됩니다.
+이러한 옵션에만 적용 됩니다 C++ 가상 기본을 사용 하는 코드입니다.
 
-Visual c + + 가상 상속 사용 되는 경우 c + + 생성 치환 지원을 구현 합니다. 생성 치환 때 가상 기본에 선언 되 고 파생된 클래스에서 재정의 되는 가상 함수를 생성 하는 문제 해결, 추가로 파생된 되는 클래스를 생성 하는 동안 생성자에서 호출 됩니다.
+Visual C++ 구현 C++ 가상 상속 사용 되는 경우 생성 치환 지원 합니다. 생성 치환 때 가상 기본에 선언 되 고 파생된 클래스에서 재정의 되는 가상 함수를 생성 하는 문제 해결, 추가로 파생된 되는 클래스를 생성 하는 동안 생성자에서 호출 됩니다.
 
 문제는 가상 함수 전달 될 수 있다는 잘못 된 `this` 포인터 결과적으로 가상 치환 간의 불일치의 기본 클래스 및 파생된 된 클래스에 치환입니다. 솔루션에 클래스의 각 가상 기본에 대해 vtordisp 필드를 호출 하는 단일 생성 치환 조정을 제공 합니다.
 
@@ -58,7 +58,7 @@ Visual c + + 가상 상속 사용 되는 경우 c + + 생성 치환 지원을 �
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 

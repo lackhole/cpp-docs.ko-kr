@@ -9,11 +9,11 @@ helpviewer_keywords:
 - generic lists
 ms.assetid: 4139a09c-4338-4f42-9eea-51336120b43c
 ms.openlocfilehash: 5b88b0950b3b46f9738bd26080883c00d46f8555
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372441"
 ---
 # <a name="cptrlist-class"></a>CPtrList 클래스
 
@@ -41,8 +41,7 @@ class CPtrList : public CObject
 
 포인터 목록은 serialize할 수 없습니다.
 
-
-  `CPtrList` 개체를 삭제하거나 해당 요소를 제거할 경우 참조하는 엔터티가 아니라 포인터만 제거됩니다.
+`CPtrList` 개체를 삭제하거나 해당 요소를 제거할 경우 참조하는 엔터티가 아니라 포인터만 제거됩니다.
 
 사용 하 여 대 한 자세한 내용은 `CPtrList`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md)합니다.
 

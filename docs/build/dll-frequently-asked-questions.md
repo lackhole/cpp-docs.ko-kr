@@ -7,11 +7,11 @@ helpviewer_keywords:
 - FAQs [C++], DLLs
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
 ms.openlocfilehash: 33a0c9dd1abbfb9375ce1aef53fd152a521ac97d
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57821939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62274120"
 ---
 # <a name="dll-frequently-asked-questions"></a>DLL 관련 질문과 대답
 
@@ -41,11 +41,11 @@ MFC DLL를 시작 하는 동안 새 MFC 스레드를 만드는 응용 프로그�
 
 ## <a name="mfc_multithreaded_2"></a> 다중 스레드 응용 프로그램을 서로 다른 스레드에서 MFC DLL에 액세스할 수 있습니까?
 
-다중 스레드 응용 프로그램에는 서로 다른 여러 스레드에서 MFC에 동적으로 연결 된 기본 MFC Dll 및 MFC 확장명 Dll 액세스할 수 있습니다. 및 Visual c + + 4.2 버전을 기준으로 응용 프로그램 응용 프로그램에서 생성 하는 여러 스레드에서 정적으로 MFC에 링크는 기본 MFC Dll에 액세스할 수 있습니다.
+다중 스레드 응용 프로그램에는 서로 다른 여러 스레드에서 MFC에 동적으로 연결 된 기본 MFC Dll 및 MFC 확장명 Dll 액세스할 수 있습니다. 시각적 개체를 기준으로 하 고 C++ 버전 4.2, 응용 프로그램에 응용 프로그램에서 생성 하는 여러 스레드에서 정적으로 MFC에 링크는 기본 MFC Dll에 액세스할 수 있습니다.
 
 버전 4.2 이전 외부에 하나의 스레드만 정적으로 MFC에 링크 된 기본 MFC DLL에 연결할 수 없습니다.
 
-용어 USRDLL Visual c + + 설명서에 더 이상 사용 되는 참고 합니다. 정적으로 MFC에 링크는 기본 MFC DLL은 이전의 usrdll과 같은 특징에 있습니다.
+참고 용어 USRDLL 시각적 개체에 더 이상 사용 되는 C++ 설명서. 정적으로 MFC에 링크는 기본 MFC DLL은 이전의 usrdll과 같은 특징에 있습니다.
 
 ## <a name="mfc_prohibited_classes"></a> ? 모든 MFC 클래스 또는 MFC DLL에서 사용할 수 없는 함수
 

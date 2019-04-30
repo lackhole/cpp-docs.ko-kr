@@ -8,11 +8,11 @@ helpviewer_keywords:
 - .def files [C++], exporting from DLLs
 ms.assetid: 66d773ed-935c-45c2-ad03-1a060874b34d
 ms.openlocfilehash: 974c32cef87801599ba0d14fd146e84ad874467f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273739"
 ---
 # <a name="determine-which-exporting-method-to-use"></a>사용할 내보내기 방법 결정
 
@@ -28,13 +28,13 @@ ms.locfileid: "57816297"
 
 .Def 파일을 사용 하 여 또 다른 이점은 사용할 수 있는 것은 `NONAME` 함수를 내보내려면 특성입니다. 서 수만 DLL의 내보내기 테이블에 추가합니다. 사용 하 여 내보낸 함수의 다를 수 있는 Dll에 대 한는 `NONAME` 특성 DLL 파일의 크기를 줄일 수 있습니다. 모듈 정의 문을 작성 하는 방법에 대 한 자세한 내용은 [모듈 정의 문의 규칙](reference/rules-for-module-definition-statements.md)합니다. 서 수 내보내기에 대 한 정보를 참조 하세요 [이름 대신 서 수를 사용 하 여 DLL에서 함수 내보내기](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)합니다.
 
-.Def 파일을 사용 하는 단점은 인지는 c + + 파일에서 함수를 내보내는 경우 데코레이팅된 이름을.def는에 삽입할 해야 하거나 파일을 이름 데코레이션을 방지 하려면 extern "C"를 사용 하 여 내보낸된 함수를 정의 MSVC 컴파일러에서.
+.Def 파일을 사용 하는 단점은 함수를 내보내는 경우는 C++ 파일 데코레이팅된 이름을.def는에 삽입할 해야 하거나 파일 또는 수행 하는 이름 데코레이션을 방지 하려면 extern "C"를 사용 하 여 내보낸된 함수를 정의 MSVC 컴파일러에서.
 
 데코레이팅된 이름을.def 파일에 추가한 경우이 사용 하 여 가져올 수 있습니다 합니다 [DUMPBIN](reference/dumpbin-reference.md) 도구 또는 링커를 사용 하 여 [/map](reference/map-generate-mapfile.md) 옵션입니다. 컴파일러에서 생성 되는 트 데코 레이 된 이름이 컴파일러로 적용 됩니다. 따라서 데코레이팅된 이름을.def 파일에 컴파일러에서 생성 되는 경우, DLL에 연결 하는 응용 프로그램 빌드해야 호출 응용 프로그램의 데코레이팅된 이름과 일치 내보낸 동일한 버전의 컴파일러를 사용 하 여 i 이름 n DLL의.def 파일을 사용 합니다.
 
 ## <a name="pros-and-cons-of-using-declspecdllexport"></a>__Declspec (dllexport)을 사용 하 여의 장점 및 단점
 
-사용 하 여 `__declspec(dllexport)` .def 파일을 유지 하 고 내보낸 함수의 데코레이팅된 이름을 가져오기에 대해 걱정할 필요가 없습니다 때문에 유용 합니다. 그러나이 방법으로 내보내기의 유용성 의향이 없다면 다시 작성 하는 연결 된 응용 프로그램의 수로 제한 됩니다. 새로운 내보내기 사용 하 여 DLL을 빌드해야 하는 경우 내보낸 c + + 함수의 데코레이팅된 이름을 다시 다른 버전의 컴파일러를 사용 하는 경우 변경 될 수 있으므로 응용 프로그램을 다시 작성할 수도 있습니다.
+사용 하 여 `__declspec(dllexport)` .def 파일을 유지 하 고 내보낸 함수의 데코레이팅된 이름을 가져오기에 대해 걱정할 필요가 없습니다 때문에 유용 합니다. 그러나이 방법으로 내보내기의 유용성 의향이 없다면 다시 작성 하는 연결 된 응용 프로그램의 수로 제한 됩니다. 데코레이팅된 이름을 내보내는 때문에 응용 프로그램을 다시 작성 해야 새 내보내기 사용 하 여 DLL을 빌드해야 하는 경우 C++ 함수는 다시 다른 버전의 컴파일러를 사용 하는 경우 변경 될 수 있습니다.
 
 ### <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 

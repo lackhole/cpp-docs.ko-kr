@@ -89,11 +89,11 @@ helpviewer_keywords:
 - stdext::hash_map::value_comp
 ms.assetid: 40879dfc-51ba-4a59-9f9e-26208de568a8
 ms.openlocfilehash: da046a467333fba9aa106b97e21cf583c8cef75d
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405068"
 ---
 # <a name="hashmap-class"></a>hash_map 클래스
 
@@ -123,7 +123,7 @@ hash_map에 저장되는 요소 데이터 형식입니다.
 *특성*<br/>
 두 요소 값을 정렬 키로 비교하여 상대 순서를 확인할 수 있는 클래스 비교 중 하나와 요소의 키 값을 `size_t` 형식의 부호 없는 정수에 매핑하는 단항 조건자인 해시 함수의 두 개체를 포함하는 형식입니다. 이 인수는 선택 사항이며 hash_compare<`Key`, less<`Key`> >가 기본값입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 hash_map의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 allocator<pair <const `Key`, `Type`>>입니다.
 
 ## <a name="remarks"></a>설명
@@ -648,7 +648,7 @@ hash_map에 정렬 키가 매개 변수 키와 일치하는 요소가 있는 경
 
 구성원 함수는 다음 범위에 있는 요소 수 *x*를 반환합니다.
 
-\[ lower_bound (*키*), upper_bound (*키*))
+\[ lower_bound(*key*), upper_bound(*key*) )
 
 고유한 결합형 컨테이너인 hash_map의 경우 0 또는 1입니다.
 
@@ -1538,7 +1538,7 @@ hash_map(
 |*Al*|기본값은이 hash_map 개체에 대해 사용할 저장소 할당자 클래스로 `Allocator`합니다.|
 |*구성 요소*|hash_map의 요소 순서를 지정하는 데 사용되는 상수 `Traits` 형식의 비교 함수로, 기본값은 `hash_compare`입니다.|
 |*오른쪽*|생성된 map이 복사본으로 지정될 hash_map입니다.|
-|*첫 번째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.|
 |*IList*|initializer_list|
 

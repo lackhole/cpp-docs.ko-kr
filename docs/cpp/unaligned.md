@@ -9,11 +9,11 @@ helpviewer_keywords:
 - __unaligned keyword [C++]
 ms.assetid: 0cd83aad-1840-47e3-ad33-59bfcbe6375b
 ms.openlocfilehash: 8eb1b93aa55601125600b6c69d9bff3d9ca43aa3
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62244118"
 ---
 # <a name="unaligned"></a>__unaligned
 
@@ -39,6 +39,6 @@ ms.locfileid: "53626866"
 
 - [구조체 맞춤 예제](../build/x64-software-conventions.md#examples-of-structure-alignment)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 키워드](../cpp/keywords-cpp.md)

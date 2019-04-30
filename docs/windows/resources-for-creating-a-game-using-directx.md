@@ -1,5 +1,5 @@
-﻿---
-title: DirectX를 사용 하 여 c + + 게임을 만들기 위한 리소스
+---
+title: 만들기 위한 리소스는 C++ Directx 게임
 ms.date: 06/08/2018
 helpviewer_keywords:
 - games [C++]
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - DirectX [C++]
 ms.assetid: 863090ed-6091-45db-aabb-7fd02f76c1df
 ms.openlocfilehash: f17b2ddcc6db68f2045d9887a799555fa6ed0643
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388230"
 ---
-# <a name="resources-for-creating-a-c-game-using-directx"></a>DirectX를 사용 하 여 c + + 게임을 만들기 위한 리소스
+# <a name="resources-for-creating-a-c-game-using-directx"></a>만들기 위한 리소스는 C++ Directx 게임
 
 최고의 데스크톱 게임을 만들려면 Visual C++와 DirectX를 함께 사용합니다.
 
 ## <a name="resources"></a>자료
 
-Visual c + +, Visual Studio의 모든 버전에 포함 되어 있지만 기본적으로 설치 되지 않습니다. Visual Studio 및 c + + 개발 도구를 설치 하는 방법에 대 한 정보를 참조 하세요 [Visual Studio에서 c + + 설치 지원](../build/vscpp-step-0-installation.md)합니다.
+Visual C++ 기본적으로 설치 되지의 Visual Studio의 모든 버전에 포함 됩니다. Visual Studio를 설치 하는 방법에 대 한 내용은 및 C++ 개발 도구, 참조 [설치 C++ Visual Studio에서 지 원하는](../build/vscpp-step-0-installation.md).
 
 Windows 8.1 이상, DirectX SDK는 Windows SDK에 포함 됩니다. 다른 기능을 별도로 다운로드하지 않아도 됩니다. 자세한 내용은 [Where is DirectX SDK?](https://msdn.microsoft.com/library/windows/desktop/ee663275.aspx)합니다.
 

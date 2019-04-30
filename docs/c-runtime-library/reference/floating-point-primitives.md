@@ -123,11 +123,11 @@ helpviewer_keywords:
 - _ldsin
 - _fdsin
 ms.openlocfilehash: 230d0def145bcb443437b59303b2b36e348da2bb
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333614"
 ---
 # <a name="floating-point-primitives"></a>부동 소수점 기본 형식
 
@@ -225,7 +225,7 @@ short __cdecl _fdtest(float* px);
 
 ### <a name="remarks"></a>설명
 
-CRT 함수의 c + + 버전을 구현 하는 부동 소수점 이러한 기본형 [fpclassify](fpclassify.md) 부동 소수점 형식에 대 한 합니다. 인수 *x* 평가 분류 math.h에 정의 된 이러한 상수 중 하나로 반환 됩니다.
+같은 부동 소수점 기본 형식 구현 된 C++ 버전의 CRT 함수가 [fpclassify](fpclassify.md) 부동 소수점 형식에 대 한 합니다. 인수 *x* 평가 분류 math.h에 정의 된 이러한 상수 중 하나로 반환 됩니다.
 
 |값|설명|
 |-----------|-----------------|

@@ -115,16 +115,15 @@ helpviewer_keywords:
 - CMFCRibbonButton [MFC], OnClick
 ms.assetid: 732e941c-9504-4b83-a691-d18075965d53
 ms.openlocfilehash: 9d0d16062f6808cbeb2d3e73fac9f4bbdfd7e69c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358216"
 ---
 # <a name="cmfcribbonbutton-class"></a>CMFCRibbonButton 클래스
 
-
-  `CMFCRibbonButton` 클래스는 패널, 빠른 실행 도구 모음 및 팝업 메뉴와 같은 리본 막대 요소에 배치할 수 있는 단추를 구현합니다.
+`CMFCRibbonButton` 클래스는 패널, 빠른 실행 도구 모음 및 팝업 메뉴와 같은 리본 막대 요소에 배치할 수 있는 단추를 구현합니다.
 
 더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - refreshing recordsets
 ms.assetid: 4ebc3b5b-5b91-4f51-a967-245223c6b8e1
 ms.openlocfilehash: 7edc1c04da617f96165b25a47ce169b266ae0003
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397707"
 ---
 # <a name="recordset-requerying-a-recordset-odbc"></a>레코드 집합: (ODBC) 레코드 집합 다시 쿼리
 
@@ -58,5 +58,5 @@ ms.locfileid: "59024597"
 ## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 동적으로 데이터 열 바인딩 (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
-[레코드 집합: 만들 레코드 집합 및 닫기 (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)
+[레코드 집합 데이터 열 동적 바인딩(ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
+[레코드 집합 레코드 집합 만들기 및 닫기(ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)

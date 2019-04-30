@@ -5,12 +5,12 @@ helpviewer_keywords:
 - global constants
 - constants, global
 ms.assetid: df5a9bd4-d0a8-4c1c-956e-b481d0bded7d
-ms.openlocfilehash: 1ae29b8744e24b6471f0d5536f3f13cc5ae59499
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: 2f0621f52fe445f8f2058ef902824ddc1f5e2bb5
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59030195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62255432"
 ---
 # <a name="global-constants-in-c"></a>C++의 전역 상수
 
@@ -20,7 +20,7 @@ C++전역 상수에 정적 링크가 있습니다. 3. 다릅니다. 전역 상�
 
 다음 샘플에서는 C2019를 생성합니다.
 
-```
+```cpp
 // global_constants.cpp
 // LNK2019 expected
 void test(void);
@@ -33,7 +33,7 @@ int main() {
 
 그리고
 
-```
+```cpp
 // global_constants_2.cpp
 // compile with: global_constants.cpp
 extern int lnktest1;

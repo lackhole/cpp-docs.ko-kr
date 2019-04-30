@@ -7,17 +7,17 @@ helpviewer_keywords:
 - run-time object model services macros
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
 ms.openlocfilehash: 59f5be1d8bb38295b50732583fea47924160cecf
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310034"
 ---
 # <a name="run-time-object-model-services"></a>런타임 개체 모델 서비스
 
 클래스 [CObject](../../mfc/reference/cobject-class.md) 하 고 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 런타임 클래스 정보, serialization 및 동적 개체 만들기에 대 한 액세스를 포함 하 여 여러 개체 서비스를 캡슐화 합니다. 모든 클래스에서 파생 된 `CObject` 이 기능을 상속 합니다.
 
-런타임 클래스 정보에 대 한 액세스를 사용 하면 런타임 시 개체의 클래스에 대 한 정보를 확인할 수 있습니다. 런타임 시 개체의 클래스를 결정 하는 기능 추가 형식 검사 함수 인수 및 개체의 클래스를 기반으로 하는 특수 한 용도의 코드를 작성 해야 할 때 유용 합니다. 런타임 클래스 정보는 c + + 언어에서 직접 지원 되지 않습니다.
+런타임 클래스 정보에 대 한 액세스를 사용 하면 런타임 시 개체의 클래스에 대 한 정보를 확인할 수 있습니다. 런타임 시 개체의 클래스를 결정 하는 기능 추가 형식 검사 함수 인수 및 개체의 클래스를 기반으로 하는 특수 한 용도의 코드를 작성 해야 할 때 유용 합니다. 런타임 클래스 정보로 직접 지원 되지 않습니다는 C++ 언어입니다.
 
 Serialization은 쓰거나 읽을 하거나 개체의 내용을 파일에서의 프로세스입니다. 응용 프로그램 종료 후에 개체의 내용을 저장 하려면 serialization을 사용할 수 있습니다. 응용 프로그램 다시 시작 되 면 개체 파일에서 읽을 수 있습니다. 이러한 데이터 개체를 "영구." 라고 합니다.
 
@@ -217,7 +217,7 @@ DECLARE_PROPPAGEIDS( class_name )
 
 ##  <a name="declare_serial"></a>  DECLARE_SERIAL
 
-에 필요한 c + + 헤더 코드를 생성 한 `CObject`-serialize 할 수 있는 클래스를 파생 합니다.
+생성은 C++ 에 필요한 헤더 코드를 `CObject`-serialize 할 수 있는 클래스를 파생 합니다.
 
 ```
 DECLARE_SERIAL(class_name)
@@ -254,7 +254,7 @@ DECLARE_SERIAL 매크로에 대 한 자세한 내용은 참조 하세요. [CObje
 
 ##  <a name="implement_dynamic"></a>  IMPLEMENT_DYNAMIC
 
-동적에 필요한 c + + 코드를 생성 `CObject`-클래스 이름 및 계층 내 위치에 런타임 액세스를 사용 하 여 클래스를 파생 합니다.
+생성 된 C++ 동적 하는 데 필요한 코드 `CObject`-클래스 이름 및 계층 내 위치에 런타임 액세스를 사용 하 여 클래스를 파생 합니다.
 
 ```
 IMPLEMENT_DYNAMIC(class_name, base_class_name)
@@ -399,7 +399,7 @@ IMPLEMENT_OLECTLTYPE, 외에도 DECLARE_OLECTLTYPE 매크로 컨트롤 클래스
 
 ##  <a name="implement_serial"></a>  IMPLEMENT_SERIAL
 
-동적에 필요한 c + + 코드를 생성 `CObject`-클래스 이름 및 계층 내 위치에 런타임 액세스를 사용 하 여 클래스를 파생 합니다.
+생성 된 C++ 동적 하는 데 필요한 코드 `CObject`-클래스 이름 및 계층 내 위치에 런타임 액세스를 사용 하 여 클래스를 파생 합니다.
 
 ```
 IMPLEMENT_SERIAL(class_name, base_class_name, wSchema)
@@ -436,7 +436,7 @@ AFX_API 매크로 사용 하 여 자동으로 내보낼 수는 `CArchive` DECLAR
 
 ##  <a name="runtime_class"></a>  RUNTIME_CLASS
 
-이름에서 c + + 클래스의 런타임 클래스 구조를 가져옵니다.
+이름에서의 런타임 클래스 구조를 가져옵니다는 C++ 클래스입니다.
 
 ```
 RUNTIME_CLASS(class_name)

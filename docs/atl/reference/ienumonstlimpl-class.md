@@ -16,15 +16,15 @@ helpviewer_keywords:
 - IEnumOnSTLImpl class
 ms.assetid: 1789e77b-88b8-447d-a490-806b918912ce
 ms.openlocfilehash: 8ff29522351b542d0b674bc173040d4468d00f1c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57277451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62275271"
 ---
 # <a name="ienumonstlimpl-class"></a>IEnumOnSTLImpl 클래스
 
-이 클래스는 c + + 표준 라이브러리 컬렉션을 기반으로 하는 열거자 인터페이스를 정의 합니다.
+이 클래스 정의 기반으로 하는 열거자 인터페이스는 C++ 표준 라이브러리 컬렉션입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,7 +49,7 @@ COM 열거자입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-obji
 A [복사 정책 클래스](../../atl/atl-copy-policy-classes.md)합니다.
 
 *CollType*<br/>
-C + + 표준 라이브러리 컨테이너 클래스입니다.
+C++ 표준 라이브러리 컨테이너 클래스입니다.
 
 ## <a name="members"></a>멤버
 
@@ -68,17 +68,17 @@ C + + 표준 라이브러리 컨테이너 클래스입니다.
 |이름|설명|
 |----------|-----------------|
 |[IEnumOnSTLImpl::m_iter](#m_iter)|컬렉션에서 열거자의 현재 위치를 나타내는 반복기입니다.|
-|[IEnumOnSTLImpl::m_pcollection](#m_pcollection)|열거할 항목을 보유 하는 c + + 표준 라이브러리 컨테이너에 대 한 포인터입니다.|
+|[IEnumOnSTLImpl::m_pcollection](#m_pcollection)|에 대 한 포인터를 C++ 항목을 열거할 수를 보유 하는 표준 라이브러리 컨테이너입니다.|
 |[IEnumOnSTLImpl::m_spUnk](#m_spunk)|`IUnknown` 컬렉션을 제공 하는 개체의 포인터입니다.|
 
 ## <a name="remarks"></a>설명
 
-`IEnumOnSTLImpl` 열거할 항목 호환 c + + 표준 라이브러리 컨테이너에 저장 되어 있는 COM 열거자 인터페이스에 대 한 구현을 제공 합니다. 이 클래스는 비슷합니다는 [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) 열거자 인터페이스에 대 한 구현을 제공 하는 클래스 배열을 기반으로 합니다.
+`IEnumOnSTLImpl` 열거 되 고 있는 항목에 저장 되어 있는 COM 열거자 인터페이스에 대 한 구현을 제공 된 C++ 호환 표준 라이브러리 컨테이너입니다. 이 클래스는 비슷합니다는 [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) 열거자 인터페이스에 대 한 구현을 제공 하는 클래스 배열을 기반으로 합니다.
 
 > [!NOTE]
 >  참조 [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#init) 간의 추가 차이점에 대 한 자세한 내용은 `CComEnumImpl` 고 `IEnumOnSTLImpl`입니다.
 
-일반적으로 *되지* 이 인터페이스 구현에서 파생 하 여 사용자 지정 열거자 클래스를 만들어야 합니다. C + + 표준 라이브러리 컨테이너 기반 ATL 제공한 표시기를 사용 하려는 경우 것이 더 일반적의 인스턴스를 만드는 [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)합니다 에서파생하여열거자를반환하는컬렉션클래스를만들려면[ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md)합니다.
+일반적으로 *되지* 이 인터페이스 구현에서 파생 하 여 사용자 지정 열거자 클래스를 만들어야 합니다. ATL 제공한 열거자에 따라 사용 하려는 경우는 C++ 의 인스턴스를 만드는 일반적인 것이 표준 라이브러리 컨테이너 [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md), 에서파생하여열거자를반환하는컬렉션클래스를만들려면[ ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md)합니다.
 
 그러나 (예를 들어 하나 열거자 인터페이스 외에 인터페이스를 노출 하는) 사용자 지정 열거자를 제공 해야 수행 하는 경우이 클래스에서 파생할 수 있습니다. 이런에서 것을 재정의 해야 합니다 [복제](#clone) 고유한 구현을 제공 하는 방법입니다.
 
@@ -108,7 +108,7 @@ HRESULT Init(
 [in] `IUnknown` 유지 해야 하는 활성 열거자의 수명 동안 개체의 포인터입니다. 이러한 개체가 없는 경우 NULL을 전달 합니다.
 
 *collection*<br/>
-열거할 항목을 포함 하는 c + + 표준 라이브러리 컨테이너에 대 한 참조입니다.
+에 대 한 참조는 C++ 항목을 열거할 수를 보유 하는 표준 라이브러리 컨테이너입니다.
 
 ### <a name="return-value"></a>반환 값
 

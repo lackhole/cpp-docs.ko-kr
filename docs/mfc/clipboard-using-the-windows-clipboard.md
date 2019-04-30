@@ -12,11 +12,11 @@ helpviewer_keywords:
 - Clipboard [MFC], Windows Clipboard API
 ms.assetid: 24415b42-9301-4a70-b69a-44c97918319f
 ms.openlocfilehash: 49111e4efd2a12264d61030fe038d80b974514c1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62326991"
 ---
 # <a name="clipboard-using-the-windows-clipboard"></a>클립보드: Windows 클립보드 사용
 
@@ -32,7 +32,7 @@ Windows에 대 한 대부분의 응용 프로그램에 잘라내기 또는 Windo
 
 Microsoft Foundation Class 라이브러리는 텍스트를 사용한 편집에 대 한 클립보드 지원을 제공 합니다 `CEdit` 및 `CEditView` 클래스입니다. OLE 클래스는 또한 OLE 항목을 포함 하는 구현 클립보드 작업을 간소화 합니다. OLE 클래스에 대 한 자세한 내용은 참조 하세요. [클립보드: OLE 클립보드 메커니즘을 사용 하 여](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)입니다.
 
-실행 취소 같은 메뉴 명령을 편집 다른 구현 (**ID_EDIT_UNDO**) 다시 실행 하 고 (**ID_EDIT_REDO**)에 그대로 있습니다. 응용 프로그램에 이러한 명령을 지원 하지 않습니다, 경우 쉽게 삭제할 수 있습니다 하에서 Visual c + + 리소스 편집기를 사용 하 여 리소스 파일입니다.
+실행 취소 같은 메뉴 명령을 편집 다른 구현 (**ID_EDIT_UNDO**) 다시 실행 하 고 (**ID_EDIT_REDO**)에 그대로 있습니다. 응용 프로그램에 이러한 명령을 지원 하지 않습니다, 경우 쉽게 삭제할 수 있습니다 이러한 시각적 개체를 사용 하 여 리소스 파일에서 C++ 리소스 편집기입니다.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 

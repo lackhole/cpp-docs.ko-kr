@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4275
 ms.assetid: 18de967a-0a44-4dbc-a2e8-fc4c067ba909
 ms.openlocfilehash: 6e0e80d465d77bd4fe99fbcaa98e289b8a4c8b63
-ms.sourcegitcommit: 966e4466f10c93fc12faf33d28e03b39489423fc
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62349687"
 ---
 # <a name="compiler-warning-level-2-c4275"></a>컴파일러 경고(수준 2) C4275
 
@@ -33,7 +33,7 @@ ms.locfileid: "55987029"
 
 가상 함수를 사용 하 여 클래스를 정의 하 고 함수는 DLL 인스턴스화하기 위해 호출할 수를 정의 하 고 형식의 개체를 삭제 하면 클래스를 내보내지 방지할 수 있습니다.  그런 다음 가상 함수 형식에만 호출할 수 있습니다.
 
-디버그 릴리스에 컴파일할 c + + 표준 라이브러리의 형식에서 파생 하는 경우 Visual c + +에서 C4275를 무시할 수 있습니다 (**/MTd**) 하 고 컴파일러 오류 메시지는 여기서 `_Container_base`합니다.
+시각적 개체에 C4275를 무시할 수 있습니다 C++ 의 형식에서 파생 하는 경우는 C++ 디버그 릴리스에 컴파일 표준 라이브러리 (**/MTd**) 고 컴파일러 오류 메시지 가리킵니다 `_Container_base`.
 
 ```cpp
 // C4275.cpp

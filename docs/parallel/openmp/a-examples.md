@@ -3,11 +3,11 @@ title: '대답: 예제'
 ms.date: 01/18/2019
 ms.assetid: c0f6192f-a205-449b-b84c-cb30dbcc8b8f
 ms.openlocfilehash: 061490d34829175bfbdcd84d6208aa396bb19671
-ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55087303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362974"
 ---
 # <a name="a-examples"></a>대답: 예제
 
@@ -202,7 +202,7 @@ omp_set_num_threads(16);
 
 사용 하는 이점은 `atomic` 지시문이이 예제에서 두 개의 다른 요소의 병렬로 발생할 수 x 업데이트 수 있다는 점입니다. 경우는 [중요](2-directives.md#262-critical-construct) 지시문은 모든 요소에 업데이트를 대신 사용 됩니다 *x* 순차적으로 (하지만 아닌 순서를 보장) 실행 됩니다.
 
-`atomic` 지시문은 C 또는 c + + 문을 바로 다음에 적용 됩니다.  결과적으로 요소의 *y* 이 예제에서 원자 단위로 업데이트 되지 않습니다.
+합니다 `atomic` 지시문은 C에만 적용 됩니다. 또는 C++ 바로 다음 문입니다.  결과적으로 요소의 *y* 이 예제에서 원자 단위로 업데이트 되지 않습니다.
 
 ## <a name="a13-a-flush-directive-with-a-list"></a>A.13 목록이 있는 flush 지시문
 
@@ -841,7 +841,7 @@ int sub()
 다음 예제에서 C99 가변 길이 배열 (Vla)를 사용 하는 방법에 설명 된 [firstprivate](2-directives.md#2722-firstprivate) 지시문입니다.
 
 > [!NOTE]
-> Visual c + +에서 가변 길이 배열 현재 지원 되지 않습니다.
+> 가변 길이 배열 시각적 개체의 현재 지원 되지 않습니다 C++입니다.
 
 ```cpp
 void f(int m, int C[m][m])
@@ -917,7 +917,7 @@ int i, a;
 
 ## <a name="a31-thread-safe-lock-functions"></a>A.31 스레드로부터 안전한 lock 함수
 
-다음 c + + 예제를 사용 하 여 병렬 영역에서 잠금 배열을 초기화 하는 방법을 보여 줍니다 [omp_init_lock](3-run-time-library-functions.md#321-omp_init_lock-and-omp_init_nest_lock-functions)합니다.
+다음 C++ 예제를 사용 하 여 병렬 영역에 있는 잠금의 배열을 초기화 하는 방법을 보여 줍니다 [omp_init_lock](3-run-time-library-functions.md#321-omp_init_lock-and-omp_init_nest_lock-functions)합니다.
 
 ```cpp
 // A_13_omp_init_lock.cpp

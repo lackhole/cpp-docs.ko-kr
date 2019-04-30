@@ -7,15 +7,15 @@ helpviewer_keywords:
 - properties [MFC]
 ms.assetid: b678a53c-0d9e-476f-8aa0-23b80baaba46
 ms.openlocfilehash: 5e01854e7ae7acdc33275351d0d26a76dfeabc9b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62324326"
 ---
 # <a name="mfc-activex-controls-properties"></a>MFC ActiveX 컨트롤: 속성
 
-ActiveX 컨트롤을 해당 컨트롤 컨테이너와 통신 하는 이벤트를 발생 시킵니다. 컨테이너를 사용 하 여 메서드 및 속성 컨트롤을 사용 하 여 통신 하도록 합니다. 메서드 및 속성 비슷합니다 사용 및 용도 각각 멤버 함수 및 c + + 클래스의 멤버 변수입니다. 속성은 모든 컨테이너에 노출 되는 ActiveX 컨트롤의 데이터 멤버입니다. 자동화 클라이언트 및 ActiveX 컨트롤 컨테이너와 같은 ActiveX 컨트롤을 포함 하는 응용 프로그램에 대 한 인터페이스를 제공 하는 속성입니다.
+ActiveX 컨트롤을 해당 컨트롤 컨테이너와 통신 하는 이벤트를 발생 시킵니다. 컨테이너를 사용 하 여 메서드 및 속성 컨트롤을 사용 하 여 통신 하도록 합니다. 메서드 및 속성 비슷합니다 사용 및 용도 각각 멤버 함수 및 멤버 변수를 C++ 클래스입니다. 속성은 모든 컨테이너에 노출 되는 ActiveX 컨트롤의 데이터 멤버입니다. 자동화 클라이언트 및 ActiveX 컨트롤 컨테이너와 같은 ActiveX 컨트롤을 포함 하는 응용 프로그램에 대 한 인터페이스를 제공 하는 속성입니다.
 
 속성은 특성이 라고도 합니다.
 

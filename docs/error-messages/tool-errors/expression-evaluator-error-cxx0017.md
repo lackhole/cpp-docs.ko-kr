@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CXX0017
 ms.assetid: af74db02-a64d-49ca-8363-3e044a107580
 ms.openlocfilehash: bbf16ae9a503a8525edb42d6bf1fc4336c3f5267
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397135"
 ---
 # <a name="expression-evaluator-error-cxx0017"></a>식 계산기 오류 CXX0017
 
@@ -20,7 +20,7 @@ ms.locfileid: "50602535"
 
 식에 지정 된 기호를 찾을 수 없습니다.
 
-이 오류의 한 가지 가능한 원인은 기호 이름에 사례 일치 하지 않습니다. C 및 c + +에 대/소문자 구분 언어 이기 때문에 정확한 경우 원본에 정의 된 기호 이름을 지정 합니다.
+이 오류의 한 가지 가능한 원인은 기호 이름에 사례 일치 하지 않습니다. 때문에 C 및 C++ 은 대/소문자 구분의 언어는 대 소문자 구분 원본에 정의 된 기호 이름을 지정 해야 합니다.
 
 이 오류는 디버깅 하는 동안 변수를 감시 하기 위해 변수 형식을 캐스팅 하려고 할 때 발생할 수 있습니다. `typedef` 형식에 대 한 새 이름을 선언 하지만 새 형식을 정의 하지 않습니다. 디버거에서 디버거에서 정의 된 형식 이름이 필요 합니다.
 

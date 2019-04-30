@@ -11,11 +11,11 @@ helpviewer_keywords:
 - recordsets [C++], joining tables
 ms.assetid: ca720900-a156-4780-bf01-4293633bea64
 ms.openlocfilehash: 9e589f00ec0512794d14accc6bb33c0e7adbd378
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397733"
 ---
 # <a name="recordset-performing-a-join-odbc"></a>레코드 집합: 조인 수행 (ODBC)
 
@@ -38,6 +38,6 @@ SQL 키워드에 의해 조인 된 여러 쌍의 열을 연결 하 여 동일한
 ## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 미리 정의 된 쿼리 (ODBC)에 대 한 클래스 선언](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
-[레코드 집합: 테이블 (ODBC)에 대 한 클래스 선언](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
-[레코드 집합: (ODBC) 레코드 집합 다시 쿼리](../../data/odbc/recordset-requerying-a-recordset-odbc.md)
+[레코드 집합 미리 정의된 쿼리에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
+[레코드 집합 테이블에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[레코드 집합 레코드 집합 다시 쿼리(ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - OLE exceptions [MFC], classes for handling
 ms.assetid: 2f8e0161-b94f-48bb-a5a2-6f644b192527
 ms.openlocfilehash: e404005a88398ec909e3043cfa55c7e8fbe2f594
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57297907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405966"
 ---
 # <a name="exceptions-ole-exceptions"></a>예외: OLE 예외
 
-기술 및 OLE의 예외 처리 기능 다른 예외를 처리 하는 것에 대 한 것과 동일 합니다. 예외 처리에 대 한 추가 내용은 문서 참조 [c + + 예외 처리](../cpp/cpp-exception-handling.md)합니다.
+기술 및 OLE의 예외 처리 기능 다른 예외를 처리 하는 것에 대 한 것과 동일 합니다. 예외 처리에 대 한 추가 내용은 문서 참조 [ C++ 예외 처리](../cpp/cpp-exception-handling.md)합니다.
 
 모든 예외 개체의 추상 기본 클래스에서 파생 된 `CException`합니다. MFC는 OLE 예외를 처리 하기 위한 두 개의 클래스를 제공 합니다.
 

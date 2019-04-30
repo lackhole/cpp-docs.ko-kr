@@ -117,11 +117,11 @@ helpviewer_keywords:
 - std::basic_string [C++], swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
 ms.openlocfilehash: ab93f8b225e27c0cf4d294d176c566bd6f2b5d02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409787"
 ---
 # <a name="basicstring-class"></a>basic_string 클래스
 
@@ -137,12 +137,12 @@ class basic_string;
 ### <a name="parameters"></a>매개 변수
 
 *CharType*<br/>
-문자열에 저장되는 단일 문자의 데이터 형식입니다. C + + 표준 라이브러리 형식 정의 사용 하 여이 템플릿 클래스의 특수화를 제공 [문자열](../standard-library/string-typedefs.md#string) 형식의 요소에 대 한 **char**하십시오 [wstring](../standard-library/string-typedefs.md#wstring), 에대한**wchar_t**하십시오 [u16string](../standard-library/string-typedefs.md#u16string) 에 대 한 `char16_t`, 및 [u32string](../standard-library/string-typedefs.md#u32string) 에 대 한 `char32_t`합니다.
+문자열에 저장되는 단일 문자의 데이터 형식입니다. C++ 형식 정의 사용 하 여이 템플릿 클래스의 특수화를 제공 하는 표준 라이브러리 [문자열](../standard-library/string-typedefs.md#string) 형식의 요소에 대 한 **char**를 [wstring](../standard-library/string-typedefs.md#wstring), 에대한**wchar_t**하십시오 [u16string](../standard-library/string-typedefs.md#u16string) 에 대 한 `char16_t`, 및 [u32string](../standard-library/string-typedefs.md#u32string) 에 대 한 `char32_t`합니다.
 
 *특성*<br/>
 여러 중요 속성을 `CharType` basic_string 특수화 내 요소를 클래스에 의해 설명 `Traits`합니다. 기본값은 `char_traits`< `CharType`>입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 문자열의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 기본값은 **allocator**< `CharType`>입니다.
 
 ### <a name="constructors"></a>생성자
@@ -486,7 +486,7 @@ basic_string<CharType, Traits, Allocator>& assign(
 *last*<br/>
 대상 범위에 할당할 소스 문자열 범위에서 마지막 문자 다음 문자의 주소를 지정하는 입력 반복기, const_pointer 또는 const_iterator입니다.
 
-*해제*<br/>
+*off*<br/>
 새 문자의 할당을 시작할 위치입니다.
 
 ### <a name="return-value"></a>반환 값

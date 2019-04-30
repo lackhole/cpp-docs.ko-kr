@@ -7,11 +7,11 @@ helpviewer_keywords:
 - private keyword [C++]
 ms.assetid: 94e99983-46a5-4e21-800c-28f8a7c6a8ff
 ms.openlocfilehash: 19ea551f625cac02e639753a976eddb7a5fa164b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622276"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345833"
 ---
 # <a name="private-c"></a>private (C++)
 
@@ -37,7 +37,7 @@ private base-class
 
 ## <a name="clr-specific"></a>/clr 관련
 
-CLR 형식에서 c + + 액세스 지정자 키워드 (**공개**를 **사설**, 및 **보호**) 형식 및 어셈블리와 관련 된 메서드 표시 여부에 영향을 줄 수 있습니다. 자세한 내용은 [멤버 Access Control](member-access-control-cpp.md)합니다.
+CLR 형식에는 C++ 액세스 지정자 키워드 (**공용**를 **개인**, 및 **보호**) 형식 및 어셈블리와 관련 된 메서드 표시 여부에 영향을 줄 수 있습니다. 자세한 내용은 [멤버 Access Control](member-access-control-cpp.md)합니다.
 
 > [!NOTE]
 >  파일을 컴파일하면 [/LN](../build/reference/ln-create-msil-module.md) 이 동작의 영향을 받지 않습니다. 이 경우 관리되는 클래스(공용 또는 전용)가 모두 표시됩니다.
@@ -84,4 +84,4 @@ int main() {
 ## <a name="see-also"></a>참고자료
 
 [클래스 멤버에 대한 액세스 제어](member-access-control-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

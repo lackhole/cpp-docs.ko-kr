@@ -49,11 +49,11 @@ f1_keywords:
 - atomic/std::atomic_uint_least64_t
 ms.assetid: e79a6b9f-52ff-48da-9554-654c4e1999f6
 ms.openlocfilehash: e2146c7424d4903523372ad54b0cd2eece525cbe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62376603"
 ---
 # <a name="ltatomicgt"></a>&lt;atomic&gt;
 
@@ -78,7 +78,7 @@ ms.locfileid: "50600488"
 
 일부 플랫폼에서는 `mutex` 잠금을 사용하지 않고서는 몇몇 형식의 원자 연산을 효율적으로 구현하지 못할 수 있습니다. 원자 형식의 어떤 원자 연산도 잠금을 사용하지 않는 경우 해당 원자 형식은 *잠금 해제*입니다.
 
-**C++11**: `obj.is_lock_free()` 또는 `atomic_is_lock_free(x)`가 true인 경우 일부 신호 처리기에서 `obj` 개체에 대한 원자 연산을 수행할 수 없습니다.
+**C++11**: 신호 처리기에서 개체에 원자성 작업을 수행할 수 있습니다 `obj` 하는 경우 `obj.is_lock_free()` 또는 `atomic_is_lock_free(x)` true입니다.
 
 클래스 [atomic_flag](../standard-library/atomic-flag-structure.md) 보유 하는 최소 원자성 형식을 제공 된 **bool** 플래그입니다. 해당 연산은 항상 잠금 해제입니다.
 
@@ -101,7 +101,7 @@ ms.locfileid: "50600488"
 |`atomic_integral` 형식|정수 형식|`atomic_is_lock_free` 매크로|
 |----------------------------|-------------------|---------------------------------|
 |`atomic_char`|**char**|ATOMIC_CHAR_LOCK_FREE|
-|`atomic_schar`|**서명 된 char**|ATOMIC_CHAR_LOCK_FREE|
+|`atomic_schar`|**signed) char**|ATOMIC_CHAR_LOCK_FREE|
 |`atomic_uchar`|**unsigned char**|ATOMIC_CHAR_LOCK_FREE|
 |`atomic_char16_t`|`char16_t`|ATOMIC_CHAR16_T_LOCK_FREE|
 |`atomic_char32_t`|`char32_t`|ATOMIC_CHAR32_T_LOCK_FREE|
@@ -113,7 +113,7 @@ ms.locfileid: "50600488"
 |`atomic_long`|**long**|ATOMIC_LONG_LOCK_FREE|
 |`atomic_ulong`|**unsigned long**|ATOMIC_LONG_LOCK_FREE|
 |`atomic_llong`|**long long**|ATOMIC_LLONG_LOCK_FREE|
-|`atomic_ullong`|**부호 없는 long long**|ATOMIC_LLONG_LOCK_FREE|
+|`atomic_ullong`|**unsigned long long**|ATOMIC_LLONG_LOCK_FREE|
 
 Typedef 이름은 \<inttypes.h> 헤더에 정의된 일부 형식에 대한 원자성 템플릿의 특수화를 위해 존재합니다.
 

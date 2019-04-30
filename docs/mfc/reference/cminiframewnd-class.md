@@ -13,11 +13,11 @@ helpviewer_keywords:
 - CMiniFrameWnd [MFC], CreateEx
 ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749
 ms.openlocfilehash: 70f090e2d9830ccfdd98640b54ff07440064d542
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337819"
 ---
 # <a name="cminiframewnd-class"></a>CMiniFrameWnd 클래스
 
@@ -202,7 +202,7 @@ WS_VISIBLE 스타일을 지정 하는 경우 Windows는 활성화 하 고 창을
 
 합니다 *dwStyle* 매개 변수 조합 될 수 있습니다 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다.
 
-이전 스타일 팔레트 도구 상자 창은 더 이상 지원 합니다. MFC 응용 프로그램을 이전 버전의 Windows 실행 하는 경우 "X" 닫기 단추를 하지 않은, 하는 이전 스타일을 지원 하지만 Visual c + +.net에서는 지원 되지 않습니다. 새 WS_EX_TOOLWINDOW 스타일만 이제 지원 됩니다. 이 스타일의 설명을 참조 하세요 [확장 창 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)합니다.
+이전 스타일 팔레트 도구 상자 창은 더 이상 지원 합니다. MFC 응용 프로그램을 이전 버전의 Windows 실행 하는 경우 "X" 닫기 단추를 하지 않은, 하는 이전 스타일 지원 된 시각적 개체에 더 이상 지원 되지 않지만 C++.NET입니다. 새 WS_EX_TOOLWINDOW 스타일만 이제 지원 됩니다. 이 스타일의 설명을 참조 하세요 [확장 창 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)합니다.
 
 ## <a name="see-also"></a>참고자료
 

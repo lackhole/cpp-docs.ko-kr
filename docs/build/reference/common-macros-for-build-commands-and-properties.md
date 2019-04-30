@@ -94,11 +94,11 @@ helpviewer_keywords:
 - SolutionPath macro $(SolutionPath)
 ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
 ms.openlocfilehash: 46fdd5e356ded96388a154ff459ef4cc3c02267f
-ms.sourcegitcommit: c1f646c8b72f330fa8cf5ddb0f8f261ba10d16f0
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58327680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294452"
 ---
 # <a name="common-macros-for-msbuild-commands-and-properties"></a>MSBuild 명령 및 속성에 대 한 일반 매크로
 
@@ -106,7 +106,7 @@ ms.locfileid: "58327680"
 
 ## <a name="view-the-current-properties-and-macros"></a>현재 속성 및 매크로 보기
 
-모든 현재 사용 가능한 매크로 표시 합니다 **속성 페이지** 대화 아래에 있는 **VC + + 디렉터리**, 속성 행의 끝에 있는 드롭다운 화살표를 선택 합니다. 클릭할 **편집** 을 선택한 다음 편집 대화 상자를 선택 합니다 **매크로** 단추입니다. Visual Studio에 표시되는 현재 속성 및 매크로 집합은 각각에 대한 현재 값과 함께 나열됩니다. 자세한 내용은 참조는 **Specifying User-Defined 값** 부분 [c + + 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)합니다.
+모든 현재 사용 가능한 매크로 표시 합니다 **속성 페이지** 대화 아래에 있는 **VC + + 디렉터리**, 속성 행의 끝에 있는 드롭다운 화살표를 선택 합니다. 클릭할 **편집** 을 선택한 다음 편집 대화 상자를 선택 합니다 **매크로** 단추입니다. Visual Studio에 표시되는 현재 속성 및 매크로 집합은 각각에 대한 현재 값과 함께 나열됩니다. 자세한 내용은 참조는 **Specifying User-Defined 값** 부분 [ C++ 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md).
 
 ![VC + + 매크로 단추](../media/vcppdir_libdir_macros.png "매크로 메뉴")
 
@@ -166,6 +166,6 @@ Visual Studio 2008에서 Visual Studio 2010으로 가면서 C++ 빌드 시스템
 
 ## <a name="see-also"></a>참고자료
 
-- [Visual Studio 프로젝트 - C++](../creating-and-managing-visual-cpp-projects.md)
+- [C++-Visual Studio 프로젝트](../creating-and-managing-visual-cpp-projects.md)
 - [Visual C++ 이식 및 업그레이드 가이드](../../porting/visual-cpp-porting-and-upgrading-guide.md)
 - [잠재적인 업그레이드 문제 개요](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md)

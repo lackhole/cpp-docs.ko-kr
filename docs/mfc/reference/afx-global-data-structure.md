@@ -56,11 +56,11 @@ helpviewer_keywords:
 - AFX_GLOBAL_DATA constructor
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
 ms.openlocfilehash: 0fd8143564beecccd8943f3ceba531e8697151d1
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212924"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA 구조체
 
@@ -188,7 +188,7 @@ HRESULT D2D1MakeRotateMatrix(
 ### <a name="parameters"></a>매개 변수
 
 *angle*<br/>
-시계 방향 회전 각도(도)입니다.
+시계 방향 회전 각도 (도)에서입니다.
 
 *center*<br/>
 회전 하는 방법에 대 한 점입니다.

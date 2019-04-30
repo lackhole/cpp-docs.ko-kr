@@ -14,11 +14,11 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::swap [C++]
 ms.openlocfilehash: 47b3ae9d59db7c39d7b9667038d216f24530d5dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369607"
 ---
 # <a name="ltregexgt-functions"></a>&lt;regex&gt; 함수
 
@@ -87,7 +87,7 @@ bool regex_match(
 *BidIt*<br/>
 부분 일치에 대한 반복기 형식입니다. 대부분의 경우이 중 `string::const_iterator`, `wstring::const_iterator`를 `const char*` 또는 `const wchar_t*`합니다.
 
-*할당*<br/>
+*Alloc*<br/>
 일치 결과 할당자 클래스입니다.
 
 *Elem*<br/>
@@ -229,7 +229,7 @@ basic_string<Elem> regex_replace(
 *RXtraits*<br/>
 요소에 대한 특성 클래스입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 정규식 할당자 클래스입니다.
 
 *Elem*<br/>
@@ -356,7 +356,7 @@ bool regex_search(
 *BidIt*<br/>
 부분 일치에 대한 반복기 형식입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 일치 결과 할당자 클래스입니다.
 
 *Elem*<br/>

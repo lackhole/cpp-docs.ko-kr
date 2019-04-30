@@ -12,11 +12,11 @@ helpviewer_keywords:
 - file types [C++], project files
 ms.assetid: 5823b954-36cf-42d3-8fd5-25bab3ef63d9
 ms.openlocfilehash: b4b82aa3837558b2c325fb6cba6819422c0db7ff
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319579"
 ---
 # <a name="project-and-solution-files"></a>프로젝트 및 솔루션 파일
 
@@ -31,7 +31,7 @@ ms.locfileid: "57827722"
 |*Projname*.sdf|*Projname*|솔루션 탐색기에 표시 안 됨|*데이터베이스 탐색* 파일입니다. **정의로 이동**, **모든 참조 찾기** 및 **클래스 뷰** 등의 찾아보기 및 탐색 기능을 지원합니다. 헤더 파일을 구문 분석하여 생성됩니다.|
 |*Projname*.vcxproj.filters|*Projname*|솔루션 탐색기에 표시 안 됨|*필터* 파일입니다. 솔루션에 추가된 파일을 저장할 위치를 지정합니다. 예를 들어, .h 파일은 **헤더 파일** 노드에 저장됩니다.|
 |*Projname*.vcxproj.user|*Projname*|솔루션 탐색기에 표시 안 됨|*마이그레이션 사용자* 파일입니다. 프로젝트를 Visual Studio 2008에서 마이그레이션한 후 이 파일은 모든 .vsprops 파일에서 변환된 정보가 들어 있습니다.|
-|*Projname*.idl|*Projname*|소스|(프로젝트에 따라 다름) 컨트롤 형식 라이브러리의 IDL(인터페이스 설명 언어) 소스 코드가 포함되어 있습니다. 이 파일은 Visual C++에 의해 형식 라이브러리를 생성하는 데 사용됩니다. 생성된 라이브러리는 다른 자동화 클라이언트에 컨트롤 인터페이스를 제공합니다. 자세한 내용은 Windows SDK의 [인터페이스 정의(IDL) 파일](/windows/desktop/Rpc/the-interface-definition-language-idl-file)을 참조하세요.|
+|*Projname*.idl|*Projname*|Source|(프로젝트에 따라 다름) 컨트롤 형식 라이브러리의 IDL(인터페이스 설명 언어) 소스 코드가 포함되어 있습니다. 이 파일은 Visual C++에 의해 형식 라이브러리를 생성하는 데 사용됩니다. 생성된 라이브러리는 다른 자동화 클라이언트에 컨트롤 인터페이스를 제공합니다. 자세한 내용은 Windows SDK의 [인터페이스 정의(IDL) 파일](/windows/desktop/Rpc/the-interface-definition-language-idl-file)을 참조하세요.|
 |ReadMe.txt|*Projname*|프로젝트|*추가 정보* 파일입니다. 응용 프로그램 마법사에서 생성되며 프로젝트의 파일에 대해 설명합니다.|
 
 ## <a name="see-also"></a>참고자료

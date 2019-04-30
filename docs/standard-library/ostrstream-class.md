@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::ostrstream [C++], str
 ms.assetid: e2e34679-b266-4728-a8e1-8eda5d400e46
 ms.openlocfilehash: 2d4a7a780f1a7db27bcb600c13430deaa0dc35cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370874"
 ---
 # <a name="ostrstream-class"></a>ostrstream 클래스
 
@@ -98,7 +98,7 @@ ostrstream(char* ptr,
 *count*<br/>
 버퍼의 크기(바이트)입니다.
 
-*모드 (_m)*<br/>
+*_Mode*<br/>
 버퍼의 입력 및 출력 모드입니다. 자세한 내용은 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)를 참조하세요.
 
 ### <a name="remarks"></a>설명

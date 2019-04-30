@@ -93,11 +93,11 @@ helpviewer_keywords:
 - _tfindnexti64 function
 ms.assetid: 75d97188-5add-4698-a46c-4c492378f0f8
 ms.openlocfilehash: c7df8649625488a83239a19e4afcecea129f9072
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333731"
 ---
 # <a name="findnext-findnext32-findnext32i64-findnext64-findnext64i32-findnexti64-wfindnext-wfindnext32-wfindnext32i64-wfindnext64-wfindnext64i32-wfindnexti64"></a>_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 
@@ -178,7 +178,7 @@ int _wfindnext64i32(
 
 ## <a name="remarks"></a>설명
 
-호출 해야 합니다 [_findclose](findclose.md) 중 하나를 사용 하 여 작업을 마친 후 합니다 **_findfirst** 하거나 **_findnext** 함수 (또는 모든 변형). 그러면 응용 프로그램에서 이러한 함수에 사용된 리소스가 해제됩니다.
+호출 해야 합니다 [_findclose](findclose.md) 중 하나를 사용 하 여 작업을 마친 후 합니다 **_findfirst** 하거나 **_findnext** 함수 (또는 모든 변형). 그러면 애플리케이션에서 이러한 함수에 사용된 리소스가 해제됩니다.
 
 사용 하 여 이러한 함수의 변형은 합니다 **w** 접두사는 와이드 문자 버전 이며 해당 단일 바이트 함수와 동일이 고, 그렇지 합니다.
 
@@ -188,7 +188,7 @@ int _wfindnext64i32(
 
 ### <a name="time-type-and-file-length-type-variations-of-findnext"></a>_findnext의 시간 형식 및 파일 길이 형식 변형
 
-|함수|**_USE_32BIT_TIME_T** 정의?|시간 형식|파일 길이 형식|
+|함수|**_USE_32BIT_TIME_T** defined?|시간 형식|파일 길이 형식|
 |---------------|----------------------------------|---------------|----------------------|
 |**_findnext**, **_wfindnext**|정의되지 않음|64비트|32비트|
 |**_findnext**, **_wfindnext**|정의됨|32비트|32비트|

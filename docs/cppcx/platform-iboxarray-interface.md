@@ -9,11 +9,11 @@ helpviewer_keywords:
 - Platform::IBoxArray
 ms.assetid: 6cd82c9e-4230-4147-9edb-7a652875dbf1
 ms.openlocfilehash: ea2517ad64cfd6742ef072d24e94a9b3899cea2d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392078"
 ---
 # <a name="platformiboxarray-interface"></a>Platform::IBoxArray 인터페이스
 
@@ -33,7 +33,7 @@ interface class IBoxArray
 
 ### <a name="remarks"></a>설명
 
-`IBoxArray` C + + /cli CX 이름을 `Windows::Foundation::IReferenceArray`입니다.
+`IBoxArray` C++이름을 /CX `Windows::Foundation::IReferenceArray`합니다.
 
 ### <a name="members"></a>멤버
 

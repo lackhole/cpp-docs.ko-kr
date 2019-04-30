@@ -11,11 +11,11 @@ helpviewer_keywords:
 - -H compiler option [C++]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
 ms.openlocfilehash: bdd3da8d3a5165262c00bc3475122e31f5770726
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57811266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62270395"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H(외부 이름 길이 제한)
 
@@ -32,7 +32,7 @@ ms.locfileid: "57811266"
 
 ## <a name="remarks"></a>설명
 
-기본적으로 외부 (공용) 이름의 길이 2,047 자입니다. 이 C 및 c + + 프로그램 마찬가지입니다. 사용 하 여 **/H** 줄어들를 식별자의 최대 허용 길이 줄어들 수 있습니다. 사이 공백을 **/H** 하 고 *번호* 선택 사항입니다.
+기본적으로 외부 (공용) 이름의 길이 2,047 자입니다. C 용 그렇습니다 및 C++ 프로그램입니다. 사용 하 여 **/H** 줄어들를 식별자의 최대 허용 길이 줄어들 수 있습니다. 사이 공백을 **/H** 하 고 *번호* 선택 사항입니다.
 
 프로그램 보다 긴 외부 이름이 있으면 *번호*, 나머지 문자는 무시 됩니다. 없이 프로그램을 컴파일하는 경우 **/H** 2,047 개 이상의 문자열을 포함 하는 식별자는 컴파일러에서 생성 하 고 [심각한 오류 C1064](../../error-messages/compiler-errors-1/fatal-error-c1064.md)합니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "57811266"
 
 - 컴파일러에 선행 밑줄이 추가 (**\_**)에 의해 수정 된 이름에는 `__cdecl` (기본값) 및 `__stdcall` 호출 규칙 및 최고의 at 기호 (**\@** )에 의해 수정 된 이름에는 `__fastcall` 호출 규칙입니다.
 
-- 컴파일러에서 수정한 이름 인수 크기 정보를 추가 합니다 `__fastcall` 및 `__stdcall` 호출 규칙 및 c + + 이름에 유형 정보를 추가 합니다.
+- 컴파일러에서 수정한 이름 인수 크기 정보를 추가 합니다 `__fastcall` 및 `__stdcall` 호출 규칙 및 형식 정보를 추가 하는 C++ 이름입니다.
 
 사용할 수 있습니다 **/H** 유용 합니다.
 
@@ -74,9 +74,9 @@ void func2(void) {}
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. 컴파일러 옵션을 입력 합니다 **추가 옵션** 상자입니다.
 

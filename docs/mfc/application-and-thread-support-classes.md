@@ -12,11 +12,11 @@ helpviewer_keywords:
 - application support classes [MFC]
 ms.assetid: 3c1d14fd-c35c-48f1-86ce-1e0f9a32c36d
 ms.openlocfilehash: 667725a60fb0c907a9c2d017674f9d097d1f4946
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394678"
 ---
 # <a name="application-and-thread-support-classes"></a>응용 프로그램 및 스레드 지원 클래스
 
@@ -24,7 +24,7 @@ ms.locfileid: "57262040"
 
 Microsoft Foundation 클래스 (MFC) 라이브러리는 다중 스레드 응용 프로그램 내에서 실행을 지원합니다. 모든 응용 프로그램에는 하나 이상의 스레드가; 있어야 합니다. 사용 하는 스레드가 프로그램 `CWinApp` 개체가 주 스레드입니다.
 
-`CWinThread` 운영 체제의 스레딩 기능 부분을 캡슐화합니다. 여러 스레드를 쉽게 사용 하도록 MFC 동기화를 Win32 동기화 개체에 대 한 c + + 인터페이스를 제공 하는 개체 클래스도 제공 합니다.
+`CWinThread` 운영 체제의 스레딩 기능 부분을 캡슐화합니다. 여러 스레드를 쉽게 사용 하도록 MFC 클래스도 제공 동기화 개체를 제공 하는 C++ Win32 동기화 개체에 대 한 인터페이스입니다.
 
 ## <a name="application-and-thread-classes"></a>응용 프로그램 및 스레드 클래스
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2955
 ms.assetid: 77709fb6-d69b-46fd-a62f-e8564563d01b
 ms.openlocfilehash: c012e5189b9ca1d0b0e786cbddacedee7c6728d2
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62300741"
 ---
 # <a name="compiler-error-c2955"></a>컴파일러 오류 C2955
 
@@ -70,7 +70,7 @@ int main() {
 
 ## <a name="example"></a>예제
 
-**Visual Studio 2017 이상:** 템플릿 (예를 들어의 일부로 기본 템플릿 인수 또는 비형식 템플릿 매개 변수) 템플릿 매개 변수 목록에 표시 되 면 올바르게 컴파일러 누락 된 템플릿 인수 목록을 진단 합니다. 다음 코드는 Visual Studio 2015에서는 컴파일되지만 Visual Studio 2017에서는 오류를 생성합니다.
+**Visual Studio 2017 이상:** 컴파일러는 올바르게 서식 파일 (예를 들어의 일부로 기본 템플릿 인수 또는 비형식 템플릿 매개 변수) 템플릿 매개 변수 목록에 표시 되 면 누락 된 템플릿 인수 목록을 진단 합니다. 다음 코드는 Visual Studio 2015에서는 컴파일되지만 Visual Studio 2017에서는 오류를 생성합니다.
 
 ```
 template <class T> class ListNode;

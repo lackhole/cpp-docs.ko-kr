@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4959
 ms.assetid: 3a128f3e-4d8a-4565-ba1a-5d32fdeb5982
 ms.openlocfilehash: 646347dec7bc2bac7fa73c8f754d2f9549cb2ba6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388666"
 ---
 # <a name="compiler-warning-c4959"></a>컴파일러 경고 C4959
 
@@ -21,7 +21,7 @@ ms.locfileid: "50473660"
 
 관리되지 않는 형식의 멤버에 액세스하면 확인할 수 없는 (peverify.exe) 이미지가 생성됩니다.
 
-자세한 내용은 [순수형 및 안정형 코드 (C + + /cli CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md)합니다.
+자세한 내용은 [순수형 및 안정형 코드 (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md)합니다.
 
 합니다 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않습니다.
 

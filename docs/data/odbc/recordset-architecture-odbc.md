@@ -14,11 +14,11 @@ helpviewer_keywords:
 - m_nFields data member, recordsets
 ms.assetid: 47555ddb-11be-4b9e-9b9a-f2931764d298
 ms.openlocfilehash: 5904a69f81dd1fbf22171a46040da5d4f5511588
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59039652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395640"
 ---
 # <a name="recordset-architecture-odbc"></a>레코드 집합: 아키텍처 (ODBC)
 
@@ -94,5 +94,5 @@ SELECT CourseID, CourseTitle FROM Course WHERE CourseID = MATH101
 ## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 테이블 (ODBC)에 대 한 클래스 선언](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[레코드 집합 테이블에 대한 클래스 선언(ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
 [RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)

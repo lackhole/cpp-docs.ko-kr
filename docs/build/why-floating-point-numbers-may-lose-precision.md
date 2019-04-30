@@ -7,11 +7,11 @@ helpviewer_keywords:
 - floating-point numbers, precision
 ms.assetid: 1acb1add-ac06-4134-a2fd-aff13d8c4c15
 ms.openlocfilehash: 387b2f4a7156e42e59bd70c5a6f747943fb54ca7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62313586"
 ---
 # <a name="why-floating-point-numbers-may-lose-precision"></a>부동 소수점 숫자의 정밀도가 떨어지는 이유
 
@@ -25,7 +25,7 @@ ms.locfileid: "57827917"
 
 문제를 해결 하려면 대부분의 프로그래머는 값이 크면 필요 하거나 보다 적은 있는지 확인 하거나 가져오기 및 전체 자릿수를 유지 관리 Binary Coded Decimal (BCD) 라이브러리를 사용 합니다.
 
-부동 소수점 값의 이진 표현을 전체 자릿수와 부동 소수점 계산의 정확도 영향을 줍니다. Microsoft Visual c + +를 사용 하 여 [IEEE 부동 소수점 형식](ieee-floating-point-representation.md)합니다.
+부동 소수점 값의 이진 표현을 전체 자릿수와 부동 소수점 계산의 정확도 영향을 줍니다. Microsoft Visual C++ 사용 하 여 [IEEE 부동 소수점 형식](ieee-floating-point-representation.md)합니다.
 
 ## <a name="example"></a>예제
 

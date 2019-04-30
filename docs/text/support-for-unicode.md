@@ -1,4 +1,4 @@
-﻿---
+---
 title: 유니코드 지원
 ms.date: 1/09/2018
 helpviewer_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - localization [C++], character sets
 - Unicode [C++], installing support
 ms.openlocfilehash: fea49bff2a4563b8617e19636e27afbae1c55811
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410553"
 ---
 # <a name="support-for-unicode"></a>유니코드 지원
 
-유니코드는 ANSI를 포함하여 1바이트만으로는 문자를 표현할 수 없는 대부분의 문자 집합을 지원합니다. 마이크로소프트는 전 세계를 대상으로 배포할 애플리케이션을 프로그래밍하는 경우 유니코드나 [멀티 바이트 문자 집합(MBCS, Multibyte character set)](../text/support-for-multibyte-character-sets-mbcss.md) 중 하나를 사용하거나 두가지 코드를 스위칭하여 빌드할 수 있도록 개발하는 것을 추천합니다.
+유니코드는 1바이트만으로는 표현할 수 없는(대부분의 경우에 해당) 모든 문자 집합을 지원합니다. 전 세계를 대상으로 배포할 애플리케이션을 프로그래밍하는 경우 유니코드나 [멀티바이트 문자 집합(MBCS, Multibyte character set)](../text/support-for-multibyte-character-sets-mbcss.md) 중 하나를 사용하거나 스위치를 변경하여 두 가지 모두를 위해 빌드할 수 있도록 개발하는 것을 추천합니다.
 
 와이드 문자는 2바이트 다국어 문자 코드입니다. 기술 기호 및 특별한 게시 문자를 포함하여 전 세계의 현대적인 컴퓨팅 환경에서 사용되는 거의 모든 문자열을 구성하는 수만 개의 문자는 UTF-16을 사용하여 인코딩된 하나의 와이드 문자로 유니코드 사양에 따라 표현될 수 있습니다. 하나의 와이드 문자로 표현할 수 없는 문자는 유니코드 서로게이트 쌍(Unicode surrogate pair)을 이용하여 하나의 유니코드 쌍으로 표현할 수 있습니다. 일반적으로 사용되는 거의 모든 문자가 하나의 16비트 크기의 와이드 문자 UTF-16으로 표현되므로, 와이드 문자를 사용하면 국가별 문자 집합을 사용하는 프로그래밍을 단순화시킬 수 있습니다. 리틀엔디안(Little endian)용인 UTF-16LE를 사용하여 인코딩된 와이드 문자는 Windows용 기본 문자 형식입니다.
 

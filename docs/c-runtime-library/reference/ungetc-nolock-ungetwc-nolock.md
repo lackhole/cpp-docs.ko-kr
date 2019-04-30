@@ -33,11 +33,11 @@ helpviewer_keywords:
 - ungetc_nolock function
 ms.assetid: aa02d5c2-1be1-46d2-a8c4-b61269e9d465
 ms.openlocfilehash: 55888f122af0848c92204168a23cca93e2517904
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62268886"
 ---
 # <a name="ungetcnolock-ungetwcnolock"></a>_ungetc_nolock, _ungetwc_nolock
 
@@ -61,7 +61,7 @@ wint_t _ungetwc_nolock(
 *c*<br/>
 푸시할 문자 수입니다.
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -72,7 +72,7 @@ wint_t _ungetwc_nolock(
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 잠기지 않은 버전의 **ungetc** 하 고 **ungetwc**합니다. **_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 이러한 버전에서는 다른 스레드를 잠그는 오버헤드가 발생하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+이러한 함수는 잠기지 않은 버전의 **ungetc** 하 고 **ungetwc**합니다. **_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 이러한 버전에서는 다른 스레드를 잠그는 오버헤드가 발생하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

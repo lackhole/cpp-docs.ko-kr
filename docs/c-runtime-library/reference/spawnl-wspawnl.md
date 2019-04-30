@@ -32,18 +32,18 @@ helpviewer_keywords:
 - process creation
 ms.assetid: dd4584c9-7173-4fc5-b93a-6e7d3c2316d7
 ms.openlocfilehash: 11ff3447487fcaf1a4225825c222b873005b2a1c
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62355278"
 ---
 # <a name="spawnl-wspawnl"></a>_spawnl, _wspawnl
 
 새 프로세스를 만들고 실행합니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -74,7 +74,7 @@ intptr_t _wspawnl(
 *cmdname*<br/>
 실행할 파일의 경로입니다.
 
-*arg0*하십시오 *arg1*,... *argn*<br/>
+*arg0*, *arg1*, ... *argn*<br/>
 인수에 대한 포인터 목록입니다. 합니다 *arg0* 인수에 대 한 포인터는 일반적으로 *cmdname*합니다. 인수 *arg1* 를 통해 *argn* 새로운 인수 목록을 구성 하는 문자열에 대 한 포인터입니다. 다음 *argn*에 있어야는 **NULL** 인수 목록의 끝을 표시에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값

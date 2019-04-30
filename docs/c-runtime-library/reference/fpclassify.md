@@ -23,11 +23,11 @@ helpviewer_keywords:
 - fpclassify function
 ms.assetid: bf549499-7ff9-4a58-8692-f2d1cb6bab81
 ms.openlocfilehash: a25897a110d96923a45695d61f923dc7818c7e3a
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287943"
 ---
 # <a name="fpclassify"></a>fpclassify
 
@@ -72,7 +72,7 @@ int fpclassify(
 
 ## <a name="remarks"></a>설명
 
-C에서 **fpclassify** 매크로임; c + +에서는 **fpclassify** 의 인수 형식을 사용 하 여 오버 로드 된 함수 **float**를 **double**, 또는 **긴** **double**합니다. 두 경우 모두 반환되는 값은 인수 식의 유효 형식에 따라 결정되고 중간 표현의 영향은 받지 않습니다. 예를 들어, 일반적인 **이중** 또는 **긴** **double** 값 수 있게 무한대, 비정상 또는 0 값으로 변환할 때를 **float**합니다.
+C에서 **fpclassify** 는 매크로, C++를 **fpclassify** 의 인수 형식을 사용 하 여 오버 로드 된 함수 **float**를 **double**, 또는 **긴** **double**합니다. 두 경우 모두 반환되는 값은 인수 식의 유효 형식에 따라 결정되고 중간 표현의 영향은 받지 않습니다. 예를 들어, 일반적인 **이중** 또는 **긴** **double** 값 수 있게 무한대, 비정상 또는 0 값으로 변환할 때를 **float**합니다.
 
 ## <a name="requirements"></a>요구 사항
 

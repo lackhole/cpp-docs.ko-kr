@@ -33,11 +33,11 @@ helpviewer_keywords:
 - fabsl function
 ms.assetid: 23bca210-f408-4f5e-b46b-0ccaaec31e36
 ms.openlocfilehash: 8df36c06fb3ca9af9be4cf704998946b3eaf9a6c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334946"
 ---
 # <a name="fabs-fabsf-fabsl"></a>fabs, fabsf, fabsl
 
@@ -78,13 +78,13 @@ long double fabsl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **fabs** 포함 하는 경우는 \<cmath > 헤더입니다. C 프로그램에서 **fabs** 항상 받아서 반환 된 **double**합니다.
+C++오버 로드를 호출할 수 있도록 오버 로드를 허용 **fabs** 포함 하는 경우는 \<cmath > 헤더입니다. C 프로그램에서 **fabs** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|기능|필수 C 헤더|필수 C++ 헤더|
+|함수|필수 C 헤더|필수 C++ 헤더|
 |--------------|-----------------------|---------------------------|
-|**fabs**하십시오 **fabsf**, **fabsl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**fabs**, **fabsf**, **fabsl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -6,15 +6,15 @@ f1_keywords:
 - VC.Project.FXCompilerTool.TreatWarningAsError
 ms.assetid: a4f05aed-2c0e-4e7d-b7a4-bc2f228112c5
 ms.openlocfilehash: 32e14bef5b8612c37d3d0de9f2e34a65d8331c44
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62291407"
 ---
 # <a name="hlsl-property-pages-advanced"></a>HLSL 속성 페이지: 고급
 
-HLSL 컴파일러(fxc.exe)의 다음 속성을 구성하려면 해당 **고급** 속성 페이지를 사용합니다. 액세스 하는 방법에 대 한 자세한 합니다 **고급** HLSL 폴더 속성 페이지를에서 참조 하십시오 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+HLSL 컴파일러(fxc.exe)의 다음 속성을 구성하려면 해당 **고급** 속성 페이지를 사용합니다. 액세스 하는 방법에 대 한 자세한 합니다 **고급** HLSL 폴더 속성 페이지를에서 참조 하십시오 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 ## <a name="uielement-list"></a>UI 요소 목록
 

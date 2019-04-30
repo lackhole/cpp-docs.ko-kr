@@ -26,11 +26,11 @@ helpviewer_keywords:
 - _fcloseall function
 ms.assetid: c3c6ea72-92c6-450a-a33e-3e568d2784a4
 ms.openlocfilehash: 4713ffb7ecdf8da73e5f949bbef7be124dfaf28a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334881"
 ---
 # <a name="fclose-fcloseall"></a>fclose, _fcloseall
 
@@ -47,7 +47,7 @@ int _fcloseall( void );
 
 ### <a name="parameters"></a>매개 변수
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -62,7 +62,7 @@ int _fcloseall( void );
 
 합니다 **_fcloseall** 함수를 제외 하 고 모든 열린 스트림을 닫습니다 **stdin**를 **stdout**를 **stderr** (및 MS-DOS **_stdaux**  하 고 **_stdprn**). 또한 닫히고 하 여 만들어진 모든 임시 파일을 삭제 **tmpfile**합니다. 두 함수에서 모두 스트림과 연결된 모든 버퍼가 플러시된 후 닫힙니다. 시스템 할당 버퍼는 스트림이 닫힐 때 해제됩니다. 사용 하 여 사용자가 할당 한 버퍼 **setbuf** 하 고 **setvbuf** 자동으로 해제 되지 않습니다.
 
-**참고:** 이러한 함수를 사용하여 스트림을 닫으면 기본 파일 설명자와 OS 파일 핸들(또는 소켓)이 닫히고 스트림도 닫힙니다. 따라서 파일을 처음 연 경우 파일을 처리할 파일 설명자 및 사용 하 여 닫혀 **fclose**, 하지 마세요. 또한 호출 **_close** 에 파일 설명자를 닫기; Win32 함수를 호출 하지 마십시오  **CloseHandle** 파일 핸들을 닫습니다.
+**참고:** 이러한 함수는 스트림 사용 하는 경우의 기본 파일 설명자와 OS 파일 핸들 (또는 소켓) 닫혀 스트림도 있습니다. 따라서 파일을 처음 연 경우 파일을 처리할 파일 설명자 및 사용 하 여 닫혀 **fclose**, 하지 마세요. 또한 호출 **_close** 에 파일 설명자를 닫기; Win32 함수를 호출 하지 마십시오  **CloseHandle** 파일 핸들을 닫습니다.
 
 **fclose** 하 고 **_fcloseall** 다른 스레드의 간섭 으로부터 보호 하기 위해 코드를 포함 합니다. 잠기지 않은 버전의 **fclose**를 참조 하세요 **_fclose_nolock**합니다.
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - Platform::Exception Class
 ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
 ms.openlocfilehash: d37d55c56e3c23d8d9129c985cb4272d2e3ee47a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368736"
 ---
 # <a name="platformexception-class"></a>Platform::Exception 클래스
 
@@ -149,8 +149,8 @@ Windows 런타임에서 발생하는 예외의 경우, 이것은 오류에 대�
 
 ### <a name="remarks"></a>설명
 
-Windows 8,이 속성은 읽기 전용 하므로 해당 버전의 Windows 런타임 예외 HRESULTS로만 abi 전반에서 전송 됩니다. Windows 8.1에서는 다양한 예외 정보가 ABI 전체에 전송되며 다른 구성 요소에서 프로그래밍 방식으로 액세스할 수 있는 사용자 지정 메시지를 제공할 수 있습니다. 자세한 내용은 [예외 (C + + /cli CX)](../cppcx/exceptions-c-cx.md)합니다.
+Windows 8,이 속성은 읽기 전용 하므로 해당 버전의 Windows 런타임 예외 HRESULTS로만 abi 전반에서 전송 됩니다. Windows 8.1에서는 다양한 예외 정보가 ABI 전체에 전송되며 다른 구성 요소에서 프로그래밍 방식으로 액세스할 수 있는 사용자 지정 메시지를 제공할 수 있습니다. 자세한 내용은 [예외 (C++/CX)](../cppcx/exceptions-c-cx.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)
+[Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)

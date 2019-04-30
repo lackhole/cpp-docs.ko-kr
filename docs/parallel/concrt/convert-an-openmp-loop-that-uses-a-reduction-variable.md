@@ -6,11 +6,11 @@ helpviewer_keywords:
 - reduction variables, converting from OpenMP to the Concurrency Runtime
 ms.assetid: 96623f36-5e57-4d3f-8c13-669e6cd535b1
 ms.openlocfilehash: d75e115bdb1d13c9e8f45ed67d0f3993eac1b387
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57257321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413959"
 ---
 # <a name="how-to-convert-an-openmp-loop-that-uses-a-reduction-variable-to-use-the-concurrency-runtime"></a>방법: 동시성 런타임을 사용 하기 위해 환산 변수를 사용 하는 OpenMP 루프 변환
 
@@ -41,7 +41,7 @@ The sum of the first 35 Fibonacci numbers is 14930351.
 
 예제 코드를 복사하여 Visual Studio 프로젝트 또는 `concrt-omp-fibonacci-reduction.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
-**cl.exe /EHsc /openmp concrt-omp-피보나치-reduction.cpp**
+**cl.exe /EHsc /openmp concrt-omp-fibonacci-reduction.cpp**
 
 ## <a name="see-also"></a>참고자료
 

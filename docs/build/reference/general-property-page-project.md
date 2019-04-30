@@ -26,11 +26,11 @@ helpviewer_keywords:
 - output files, setting directory
 - Unicode, creating C++ build configuration
 ms.openlocfilehash: c9b0eae9c0a1e074fb4f3f12ac38a737ef14c644
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62270902"
 ---
 # <a name="general-property-page-project"></a>일반 속성 페이지(프로젝트)
 
@@ -40,7 +40,7 @@ ms.locfileid: "57827442"
 
 - 프로젝트 기본값
 
-비 Windows 프로젝트를 참조 하세요 [Linux c + + 속성 페이지 참조](../../linux/prop-pages-linux.md)합니다.
+비 Windows 프로젝트를 참조 하세요 [Linux C++ 속성 페이지 참조](../../linux/prop-pages-linux.md)합니다.
 
 ## <a name="general"></a>일반
 
@@ -172,4 +172,4 @@ ms.locfileid: "57827442"
 
 ## <a name="see-also"></a>참고자료
 
-[C + + 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)
+[C++ 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)

@@ -13,11 +13,11 @@ helpviewer_keywords:
 - MIDL, property pages
 ms.assetid: b850b21b-ed38-46dd-a712-807e8eabd9aa
 ms.openlocfilehash: 44397eb0c5d14e63a5d971d86356225d63faa431
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62321178"
 ---
 # <a name="midl-property-pages-output"></a>MIDL 속성 페이지: 출력
 
@@ -37,7 +37,7 @@ ms.locfileid: "57826246"
 
 - 형식 라이브러리([/tlb](https://msdn.microsoft.com/library/windows/desktop/aa367372))
 
-액세스 하는 방법에 대 한 정보에 대 한는 **출력** 속성 페이지에는 **MIDL** 폴더를 참조 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+액세스 하는 방법에 대 한 정보에 대 한 합니다 **출력** 속성 페이지에서를 **MIDL** 폴더를 참조 하세요 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md).
 
 C++ 프로젝트의 MIDL 옵션에 프로그래밍 방식으로 액세스하는 방법에 대한 자세한 내용은 <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>을 참조하세요.
 

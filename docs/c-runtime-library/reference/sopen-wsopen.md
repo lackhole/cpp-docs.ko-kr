@@ -33,11 +33,11 @@ helpviewer_keywords:
 - _wsopen function
 ms.assetid: a9d4cccf-06e9-414d-96fa-453fca88cc1f
 ms.openlocfilehash: b3773550fd32df75f0a3819767de1171daebaf0f
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62355395"
 ---
 # <a name="sopen-wsopen"></a>_sopen, _wsopen
 
@@ -102,21 +102,21 @@ int _wsopen(
 
 정수 식 *oflag* 에 정의 된 다음 매니페스트 상수 중 한 개 이상을 결합 하 여 형성 됩니다 \<t l. h >입니다. 두 개 이상의 상수 인수를 형성 하는 경우 *oflag*에 비트 OR 연산자와 결합 됩니다 ( **&#124;** ).
 
-|*oflag* 상수|동작|
+|*oflag* constant|동작|
 |-|-|
 | **_O_APPEND** | 모든 쓰기 작업 전에 파일 끝으로 파일 포인터를 이동합니다. |
 | **_O_BINARY** | 파일을 이진(변환되지 않음) 모드에서 엽니다. 이진 모드에 대한 설명은 [fopen](fopen-wfopen.md)을 참조하세요. |
 | **_O_CREAT** | 파일을 만든 다음 쓰기 위해 엽니다. 파일을 지정 하면 아무 효과가 *filename* 존재 합니다. 합니다 *pmode* 인수는 필수 **_O_CREAT** 지정 됩니다. |
-| **_O_CREAT** &AMP;#124; **_O_SHORT_LIVED** | 파일을 임시로 만든 다음 가능한 경우 디스크로 플러시하지 않습니다. 합니다 *pmode* 인수는 필수 **_O_CREAT** 지정 됩니다. |
-| **_O_CREAT** &AMP;#124; **_O_TEMPORARY** | 파일을 임시로 만듭니다. 마지막 파일 설명자가 닫히면 파일이 삭제됩니다. 합니다 *pmode* 인수는 필수 **_O_CREAT** 지정 됩니다. |
-| **_O_CREAT**&AMP;#124; ` _O_EXCL` | 지정 된 파일이 있으면 오류 값을 반환 *filename* 존재 합니다. 사용 하는 경우에 적용 됩니다 **_O_CREAT**합니다. |
+| **_O_CREAT** &#124; **_O_SHORT_LIVED** | 파일을 임시로 만든 다음 가능한 경우 디스크로 플러시하지 않습니다. 합니다 *pmode* 인수는 필수 **_O_CREAT** 지정 됩니다. |
+| **_O_CREAT** &#124; **_O_TEMPORARY** | 파일을 임시로 만듭니다. 마지막 파일 설명자가 닫히면 파일이 삭제됩니다. 합니다 *pmode* 인수는 필수 **_O_CREAT** 지정 됩니다. |
+| **_O_CREAT** &#124; ` _O_EXCL` | 지정 된 파일이 있으면 오류 값을 반환 *filename* 존재 합니다. 사용 하는 경우에 적용 됩니다 **_O_CREAT**합니다. |
 | **_O_NOINHERIT** | 공유 파일 설명자의 생성을 방지합니다. |
 | **_O_RANDOM** | 캐싱이 디스크에서 임의 액세스를 위해 최적화되며 이에 제한되지 않습니다. |
 | **_O_RDONLY** | 읽으려는 경우에만 파일을 엽니다. 사용 하 여 지정할 수 없습니다 **_O_RDWR** 하거나 **_O_WRONLY**합니다. |
 | **_O_RDWR** | 읽고 쓰기 위해 파일을 엽니다. 사용 하 여 지정할 수 없습니다 **_O_RDONLY** 하거나 **_O_WRONLY**합니다. |
 | **_O_SEQUENTIAL** | 캐싱이 디스크에서 순차적 액세스를 위해 최적화되며 이에 제한되지 않습니다. |
 | **_O_TEXT** | 파일을 텍스트(변환됨) 모드에서 엽니다. 자세한 내용은 [텍스트 및 이진 모드 파일 I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) 및 [fopen](fopen-wfopen.md)을 참조하세요. |
-| **_O_TRUNC** | 파일을 열고 길이가 0이 되도록 자릅니다. 이 파일에는 쓰기 권한이 있어야 합니다. 사용 하 여 지정할 수 없습니다 **_O_RDONLY**합니다. **_O_TRUNC** 사용한 **_O_CREAT** 기존 파일을 열거나 파일을 만듭니다. **참고:** 는 **_O_TRUNC** 플래그 지정된 된 파일의 내용을 제거 합니다. |
+| **_O_TRUNC** | 파일을 열고 길이가 0이 되도록 자릅니다. 이 파일에는 쓰기 권한이 있어야 합니다. 사용 하 여 지정할 수 없습니다 **_O_RDONLY**합니다. **_O_TRUNC** 사용한 **_O_CREAT** 기존 파일을 열거나 파일을 만듭니다. **참고:** 합니다 **_O_TRUNC** 플래그 지정된 된 파일의 내용을 제거 합니다. |
 | **_O_WRONLY** | 쓰려는 경우에만 파일을 엽니다. 사용 하 여 지정할 수 없습니다 **_O_RDONLY** 하거나 **_O_RDWR**합니다. |
 | **_O_U16TEXT** | 유니코드 UTF-16 모드에서 파일을 엽니다. |
 | **_O_U8TEXT** | 유니코드 UTF-8 모드에서 파일을 엽니다. |
@@ -130,7 +130,7 @@ int _wsopen(
 
 인수 *shflag* 에 정의 된 다음 매니페스트 상수 중 하나로 구성 된 상수 식 \<share.h >.
 
-|*shflag* 상수|동작|
+|*shflag* constant|동작|
 |-|-|
 | **_SH_DENYRW** | 파일에 대한 읽기 및 쓰기 액세스를 거부합니다. |
 | **_SH_DENYWR** | 파일에 대한 쓰기 액세스를 거부합니다. |
@@ -143,7 +143,7 @@ int _wsopen(
 |-|-|
 | **_S_IREAD** | 읽기만 허용합니다. |
 | **_S_IWRITE** | 쓰기를 허용합니다. 실제로는 읽기 및 쓰기를 모두 허용합니다. |
-| **_S_IREAD** &AMP;#124; **_S_IWRITE** | 읽기 및 쓰기를 허용합니다. |
+| **_S_IREAD** &#124; **_S_IWRITE** | 읽기 및 쓰기를 허용합니다. |
 
 쓰기 권한이 부여되지 않은 경우 파일은 읽기 전용입니다. Windows 운영 체제에서 모든 파일을 읽을 수 있지만 쓰기 전용 권한을 부여할 수는 없습니다. 따라서 **_S_IWRITE** 하 고 **_S_IREAD** | **_S_IWRITE** 동일 합니다.
 

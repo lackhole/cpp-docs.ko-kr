@@ -13,11 +13,11 @@ helpviewer_keywords:
 - ActiveX controls [MFC], wrapper classes
 ms.assetid: ef9b2480-92d6-4191-b16e-8055c4fd7b73
 ms.openlocfilehash: eaeb5275ce825272e1c605e7ceeefa24db7a32ab
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378117"
 ---
 # <a name="activex-control-containers-programming-activex-controls-in-an-activex-control-container"></a>ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 컨테이너에서 ActiveX 컨트롤 프로그래밍
 
@@ -58,7 +58,7 @@ Circ 컨트롤 (1 단계) 프로젝트에 삽입 되 면 응용 프로그램의 
 
 ## <a name="modifications-to-the-project"></a>프로젝트 수정
 
-Circ 컨트롤에 액세스 하려면 컨테이너 응용 프로그램을 사용 하려면 Visual c + + 자동으로 추가 하는 래퍼 클래스 (`CCirc`) 구현 파일 (합니다. CPP)를 컨테이너 프로젝트에 래퍼 클래스 헤더 (합니다. H) 대화 상자 헤더 파일에 파일:
+Circ 컨트롤, 시각적 개체에 액세스 하려면 컨테이너 응용 프로그램을 사용 하도록 설정 하려면 C++ 자동으로 래퍼 클래스를 추가 (`CCirc`) 구현 파일 (합니다. CPP)를 컨테이너 프로젝트에 래퍼 클래스 헤더 (합니다. H) 대화 상자 헤더 파일에 파일:
 
 [!code-cpp[NVC_MFC_AxCont#1](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_1.h)]
 
@@ -69,11 +69,11 @@ Get 및 속성을 설정 (및 메서드 호출) Circ 컨트롤용는 `CCirc` 래
 [!code-cpp[NVC_MFC_AxCont#2](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_2.h)]
 [!code-cpp[NVC_MFC_AxCont#3](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_3.h)]
 
-이러한 함수는 다음 다른 표준 c + + 구문을 사용 하 여 응용 프로그램의 프로시저에서 호출할 수 있습니다. 컨트롤의 메서드 및 속성 액세스로이 멤버 함수를 사용 하 여에 대 한 자세한 내용은 섹션을 참조 하세요 [ActiveX 컨트롤 프로그래밍](#_core_programming_the_activex_control)합니다.
+이러한 함수 호출할 수 있습니다 사용 하 여 응용 프로그램의 프로시저의 다른 일반적인 C++ 구문입니다. 컨트롤의 메서드 및 속성 액세스로이 멤버 함수를 사용 하 여에 대 한 자세한 내용은 섹션을 참조 하세요 [ActiveX 컨트롤 프로그래밍](#_core_programming_the_activex_control)합니다.
 
 ##  <a name="_core_member_variable_modifications_to_the_project"></a> 프로젝트에 멤버 변수를 수정
 
-ActiveX 컨트롤 프로젝트에 추가 되었으며 대화 상자 컨테이너에 포함 되 면 프로젝트의 다른 부분에서 액세스할 수 있습니다. 가장 쉬운 액세스를 제어 하는 것 [멤버 변수를 만듭니다](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md) 대화 상자 클래스의 `CContainerDlg` (2 단계), 즉 Visual c + +에서 프로젝트에 추가 하는 래퍼 클래스와 동일한 형식입니다. 그런 다음 언제 든 지 포함 된 컨트롤에 액세스 하려면 멤버 변수를 사용할 수 있습니다.
+ActiveX 컨트롤 프로젝트에 추가 되었으며 대화 상자 컨테이너에 포함 되 면 프로젝트의 다른 부분에서 액세스할 수 있습니다. 가장 쉬운 액세스를 제어 하는 것 [멤버 변수를 만듭니다](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md) 대화 상자 클래스의 `CContainerDlg` (2 단계), 즉 Visual 하 여 프로젝트에 추가 하는 래퍼 클래스와 동일한 형식의 C++. 그런 다음 언제 든 지 포함 된 컨트롤에 액세스 하려면 멤버 변수를 사용할 수 있습니다.
 
 경우는 **멤버 변수 추가** 대화 상자를 추가 합니다 *m_circctl* 멤버 프로젝트에 변수를 다음 줄에 추가 헤더 파일 (합니다. H)는 `CContainerDlg` 클래스:
 
@@ -86,7 +86,7 @@ ActiveX 컨트롤 프로젝트에 추가 되었으며 대화 상자 컨테이너
 
 ##  <a name="_core_programming_the_activex_control"></a> ActiveX 컨트롤 프로그래밍
 
-이 시점에서 ActiveX 컨트롤을 대화 상자 템플릿에 삽입할 수 있고에 멤버 변수를 생성 합니다. 이제 포함된 된 컨트롤의 메서드와 속성에 액세스 하려면 일반적인 c + + 구문을 사용할 수 있습니다.
+이 시점에서 ActiveX 컨트롤을 대화 상자 템플릿에 삽입할 수 있고에 멤버 변수를 생성 합니다. 이제 사용할 수 있습니다 일반 C++ 포함된 된 컨트롤의 메서드 및 속성에 액세스 하는 구문입니다.
 
 설명 했 듯이 (에서 [의 래퍼 클래스 헤더 (합니다. H)](#_core_the_wrapper_class_header_28h29_file)), 헤더 파일 (합니다. H)에 `CCirc` 가변이 사례 원형에서 래퍼 클래스 H, get 및 set 노출 된 속성 값을 사용할 수 있는 멤버 함수의 목록을 포함 합니다. 멤버 함수를 노출 된 메서드를 사용할 수 있습니다.
 

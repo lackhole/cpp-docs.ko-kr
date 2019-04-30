@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C3732
 ms.assetid: 2d55a7e1-9c39-4379-a093-2f7beb27e2ca
 ms.openlocfilehash: c71cca3643f6337060de6e4bb56ac64d8f0d6e4e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62327992"
 ---
 # <a name="compiler-error-c3732"></a>컴파일러 오류 C3732
 
 'interface': COM 이벤트를 발생 시키는 사용자 지정 인터페이스는 IDispatch에서 상속할 수 없습니다
 
-COM 이벤트를 지 원하는 인터페이스에서 상속할 수 없습니다 `IDispatch`합니다. 자세한 내용은 [COM에서 이벤트 처리](../../cpp/event-handling-in-com.md)합니다.
+COM 이벤트를 지 원하는 인터페이스에서 상속할 수 없습니다 `IDispatch`합니다. 자세한 내용은 [COM에서 이벤트 처리](../../cpp/event-handling-in-com.md) 를 참조합니다.
 
 다음 오류 C3732를 생성합니다.
 

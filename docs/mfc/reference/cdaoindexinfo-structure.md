@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CDaoIndexInfo structure [MFC]
 ms.assetid: 251d8285-78ce-4716-a0b3-ccc3395fc437
 ms.openlocfilehash: 55f64fcebc308bd0e63643cfb5447608c4e2e37c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399774"
 ---
 # <a name="cdaoindexinfo-structure"></a>CDaoIndexInfo 구조체
 
@@ -61,7 +61,7 @@ struct CDaoIndexInfo {
 *m_bUnique*<br/>
 인덱스 개체를 테이블에 대 한 고유 인덱스를 나타내는지 여부를 나타냅니다. 이 속성이 TRUE 인 경우 인덱스 개체를 고유 인덱스를 나타냅니다. 고유 인덱스를 논리적으로 고유 하 고 미리 정의 된 순서에 따라 테이블의 모든 레코드를 정렬 하는 하나 이상의 필드로 구성 됩니다. 인덱스 하나 필드로 구성 된 경우 해당 필드의 값이 전체 테이블에 대해 고유 해야 합니다. 인덱스 개 필드로 구성 된 경우 각 필드에 중복 값이 포함 될 수 있습니다 하지만 각 인덱싱된 모든 필드에서 값 조합이 고유 해야 합니다.
 
-Unique 및 primary 인덱스는 인덱스 개체의 고유 및 기본 속성을 TRUE로 설정 하는 경우: 미리 정의 된, 논리적 순서에 따라 테이블의 모든 레코드를 고유 하 게 식별 합니다. 기본 속성은 FALSE로 설정 하는 경우 인덱스는 보조 인덱스가입니다. (키 및 키가 아닌) 보조 인덱스는 테이블의 레코드에 대 한 식별자로 처리 하지 않고 미리 정의 된 순서로 레코드를 논리적으로 정렬 합니다.
+인덱스 개체의 고유 및 기본 속성을 TRUE로 설정 하는 경우 인덱스가 unique 및 primary: 미리 정의 된, 논리적 순서에 따라 테이블의 모든 레코드를 고유 하 게 식별합니다. 기본 속성은 FALSE로 설정 하는 경우 인덱스는 보조 인덱스가입니다. (키 및 키가 아닌) 보조 인덱스는 테이블의 레코드에 대 한 식별자로 처리 하지 않고 미리 정의 된 순서로 레코드를 논리적으로 정렬 합니다.
 
 자세한 내용은 "기본" 속성과 "고유 속성" DAO 도움말의 항목을 참조 합니다.
 

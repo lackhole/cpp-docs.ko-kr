@@ -16,11 +16,11 @@ helpviewer_keywords:
 - CWndClassInfo class
 ms.assetid: c36fe7e1-75f1-4cf5-a06f-9f59c43fe6fb
 ms.openlocfilehash: 4aeac558c28d0ac89707423433e51f348bc35d29
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276720"
 ---
 # <a name="cwndclassinfo-class"></a>CWndClassInfo 클래스
 
@@ -67,7 +67,7 @@ class CWndClassInfo
 
 기본적으로 [CWindowImpl](../../atl/reference/cwindowimpl-class.md) 포함 된 `DECLARE_WND_CLASS` 새 창 클래스를 기반으로 창을 만들려면 매크로입니다. DECLARE_WND_CLASS는 컨트롤에 대 한 기본 스타일 및 배경색을 제공합니다. 스타일 지정 및 배경색 직접 하려는 경우 파생 클래스에서 `CWindowImpl` 클래스 정의에 DECLARE_WND_CLASS_EX 매크로 포함 합니다.
 
-기존 창 클래스를 기반으로 창을 만들려는 경우 파생 클래스에서 `CWindowImpl` 클래스 정의에 DECLARE_WND_SUPERCLASS 매크로 포함 합니다. 예를 들면,
+기존 창 클래스를 기반으로 창을 만들려는 경우 파생 클래스에서 `CWindowImpl` 클래스 정의에 DECLARE_WND_SUPERCLASS 매크로 포함 합니다. 예를 들어:
 
 [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwndclassinfo-class_1.h)]
 

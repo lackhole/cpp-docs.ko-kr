@@ -15,11 +15,11 @@ helpviewer_keywords:
 - views [MFC], accessing document data from
 ms.assetid: 4e7f65dc-b166-45d8-bcd5-9bb0d399b946
 ms.openlocfilehash: 51f963acf5aacdfe4050a076d3bb0e651a92d021
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392977"
 ---
 # <a name="a-portrait-of-the-documentview-architecture"></a>문서/뷰 아키텍처에 대한 자세한 설명
 
@@ -27,7 +27,7 @@ ms.locfileid: "57298869"
 
 ## <a name="gaining-access-to-document-data-from-the-view"></a>문서 보기에서 데이터에 액세스
 
-뷰에 해당 문서의 데이터 액세스 사용 하 여는 [GetDocument](../mfc/reference/cview-class.md#getdocument) 함수를 반환 하는 포인터를 문서 또는 c + + 클래스 뷰를 만들어 `friend` 문서 클래스의 합니다. 뷰에 그리기 또는 다른 방법으로 조작할 준비가 될 때 데이터를 가져오기 위해 데이터에 대 한 액세스를 사용 합니다.
+뷰에 해당 문서의 데이터 액세스 사용 하 여 합니다 [GetDocument](../mfc/reference/cview-class.md#getdocument) 뷰 클래스를 만들어 또는 문서에 대 한 포인터를 반환 하는 함수를 C++ `friend` 문서 클래스의 합니다. 뷰에 그리기 또는 다른 방법으로 조작할 준비가 될 때 데이터를 가져오기 위해 데이터에 대 한 액세스를 사용 합니다.
 
 예를 들어 뷰에서 [OnDraw](../mfc/reference/cview-class.md#ondraw) 멤버 함수는 보기에 사용 `GetDocument` 문서 포인터를 가져오려고 합니다. 해당 포인터를 사용 하 여 액세스 하는 `CString` 문서에서 데이터 멤버입니다. 에 문자열을 전달 하는 뷰는 `TextOut` 함수입니다. 이 예제에 대 한 코드를 보려면 [뷰에 그리기](../mfc/drawing-in-a-view.md)합니다.
 

@@ -43,11 +43,11 @@ helpviewer_keywords:
 - _tcsdup function
 ms.assetid: 8604f8bb-95e9-45d3-93ef-20397ebf247a
 ms.openlocfilehash: 094843fdb1432aa58ec04b3b4e39ac8861b928ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353902"
 ---
 # <a name="strdup-wcsdup-mbsdup"></a>_strdup, _wcsdup, _mbsdup
 
@@ -85,7 +85,7 @@ Null 종료 소스 문자열입니다.
 
 **_wcsdup** 하 고 **_mbsdup** 와이드 문자 및 멀티 바이트 문자 버전입니다 **_strdup**합니다. 인수 및 반환 값 **_wcsdup** 은 와이드 문자열이 고 **_mbsdup** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|

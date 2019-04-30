@@ -49,11 +49,11 @@ helpviewer_keywords:
 - formatted text [C++]
 ms.assetid: 5976c9c8-876e-4ac9-a515-39f3f7fd0925
 ms.openlocfilehash: 202f2f12de3955a2c9b0f785c3e89280d91a4a95
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62355721"
 ---
 # <a name="snprintf-snprintf-snprintfl-snwprintf-snwprintfl"></a>snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l
 
@@ -187,7 +187,7 @@ C++에서 이러한 함수는 보다 최신의 안전한 대응 함수를 호출
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**snprintf**하십시오 **_snprintf**, **_snprintf_l**|\<stdio.h>|
+|**snprintf**, **_snprintf**,  **_snprintf_l**|\<stdio.h>|
 |**_snwprintf**, **_snwprintf_l**|\<stdio.h> 또는 \<wchar.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.

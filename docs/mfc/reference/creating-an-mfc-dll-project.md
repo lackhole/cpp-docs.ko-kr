@@ -10,11 +10,11 @@ helpviewer_keywords:
 - DLLs [MFC], creating
 ms.assetid: 05540b93-4781-4a90-aadf-55158313f5b2
 ms.openlocfilehash: 6ddc32ac3a2de5993e6755df0cd9fc7d3546094e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372285"
 ---
 # <a name="creating-an-mfc-dll-project"></a>MFC DLL 프로젝트 만들기
 
@@ -25,7 +25,7 @@ MFC DLL은 동시에 여러 응용 프로그램에서 사용할 수 있는 함�
 
 ### <a name="to-create-an-mfc-dll-project-using-the-mfc-dll-wizard"></a>MFC DLL 마법사를 사용 하 여 MFC DLL 프로젝트를 만들려면
 
-1. 도움말 항목의 지침을 따릅니다 [c + + 콘솔 앱 프로젝트를 만들고](../../get-started/tutorial-console-cpp.md)합니다.
+1. 도움말 항목의 지침을 따릅니다 [만들기를 C++ 콘솔 앱 프로젝트](../../get-started/tutorial-console-cpp.md)합니다.
 
 **참고** 에 **새 프로젝트** 대화 상자를 선택 합니다 `MFC DLL` MFC DLL 마법사를 열려면 템플릿 창에서 아이콘입니다.
 
@@ -36,7 +36,7 @@ MFC DLL은 동시에 여러 응용 프로그램에서 사용할 수 있는 함�
 
 1. 클릭 **완료할** 마법사를 닫고에서 새 프로젝트를 열고 **솔루션 탐색기**합니다.
 
-프로젝트가 만들어진 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [Visual c + + 프로젝트용으로 만들어지는 파일 형식](../../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
+프로젝트가 만들어진 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [시각적 개체에 대해으로 만들어지는 파일 형식 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

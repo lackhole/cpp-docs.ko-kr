@@ -16,11 +16,11 @@ helpviewer_keywords:
 - SWAPRUN linker option
 ms.assetid: 4a1e7f46-4399-4161-8dfc-d6a71beaf683
 ms.openlocfilehash: bd0b3a46f52ec9b5a292e2f45671523d8c5cdf5e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317551"
 ---
 # <a name="swaprun-load-linker-output-to-swap-file"></a>/SWAPRUN(링커 출력을 스왑 파일로 로드)
 
@@ -36,7 +36,7 @@ NET가 지정 하는 경우 운영 체제 먼저 네트워크에서 이진 이�
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 클릭 합니다 **링커** 폴더입니다.
 
@@ -50,8 +50,7 @@ NET가 지정 하는 경우 운영 체제 먼저 네트워크에서 이진 이�
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 
-1. 
-  <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SwapRunFromCD%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SwapRunFromNet%2A> 속성을 참조하십시오.
+1. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SwapRunFromCD%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SwapRunFromNet%2A> 속성을 참조하십시오.
 
 ## <a name="see-also"></a>참고자료
 

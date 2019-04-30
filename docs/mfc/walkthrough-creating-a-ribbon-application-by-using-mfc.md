@@ -6,11 +6,11 @@ helpviewer_keywords:
 - creating a ribbon aplication (MFC)
 ms.assetid: e61393e2-1d6b-4594-a7ce-157d3d1b0d9f
 ms.openlocfilehash: 29991a389a09e1fe3dc0074b80fd9a255458f673
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58781226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358309"
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>연습: MFC를 사용 하 여 리본 응용 프로그램 만들기
 
@@ -85,7 +85,7 @@ ms.locfileid: "58781226"
 
 [방법: 빠른 실행 도구 모음 사용자 지정](../mfc/how-to-customize-the-quick-access-toolbar.md)
 
-[방법: 응용 프로그램 단추 사용자 지정](../mfc/how-to-customize-the-application-button.md)
+[방법: 애플리케이션 단추 사용자 지정](../mfc/how-to-customize-the-application-button.md)
 
 종단 간 샘플을 보려면 [샘플 (MFC 기능 팩)](../overview/visual-cpp-samples.md)합니다.
 

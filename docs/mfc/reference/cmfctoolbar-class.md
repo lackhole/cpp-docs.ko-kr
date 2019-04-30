@@ -312,11 +312,11 @@ helpviewer_keywords:
 - CMFCToolBar [MFC], m_dblLargeImageRatio
 ms.assetid: e7679c01-fb94-44c0-98c6-3af955292fb5
 ms.openlocfilehash: 523e89859a6726bdff1dd27975077263abe481c4
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58775636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62218372"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar 클래스
 
@@ -3905,4 +3905,4 @@ AFX_IMPORT_DATA static BOOL m_bDontScaleImages;
 [CMFCMenuBar 클래스](../../mfc/reference/cmfcmenubar-class.md)<br/>
 [CMFCPopupMenuBar 클래스](../../mfc/reference/cmfcpopupmenubar-class.md)<br/>
 [CMFCDropDownToolBar 클래스](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
-[연습: 도구 모음에 컨트롤 넣기](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+[연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)

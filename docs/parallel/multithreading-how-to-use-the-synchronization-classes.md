@@ -14,11 +14,11 @@ helpviewer_keywords:
 - threading [C++], thread-safe class design
 ms.assetid: f266d4c6-0454-4bda-9758-26157ef74cc5
 ms.openlocfilehash: 6115d942abc61fbfc9d60ca1ccf97d4b423ff7c1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407694"
 ---
 # <a name="multithreading-how-to-use-the-mfc-synchronization-classes"></a>다중 스레딩: MFC 동기화 클래스 사용 방법
 
@@ -54,7 +54,7 @@ singleLock.Unlock();
 
 이 방식의 단점은 클래스 되도록 동일한 클래스 보다 약간 느리지만 추가 동기화 개체가 없는 경우 또한 둘 이상의 스레드가 개체를 삭제할 수 있습니다 수 있으면 병합된 방법이 될 수 있습니다 항상 작동 하지. 이 경우 별도 동기화 개체를 유지 하는 것이 좋습니다.
 
-다양 한 상황에서 사용 하 여 동기화 클래스를 결정 하는 방법에 대 한 내용은 [다중 스레딩: 동기화 클래스를 사용 하는 경우](multithreading-when-to-use-the-synchronization-classes.md)합니다. 동기화에 대 한 자세한 내용은 참조 하세요. [동기화](/windows/desktop/Sync/synchronization) Windows SDK에 있습니다. MFC에서 다중 스레드 지원에 대 한 자세한 내용은 참조 하세요. [c + + 및 MFC 다중 스레딩](multithreading-with-cpp-and-mfc.md)합니다.
+다양 한 상황에서 사용 하 여 동기화 클래스를 결정 하는 방법에 대 한 내용은 [다중 스레딩: 동기화 클래스를 사용 하는 경우](multithreading-when-to-use-the-synchronization-classes.md)합니다. 동기화에 대 한 자세한 내용은 참조 하세요. [동기화](/windows/desktop/Sync/synchronization) Windows SDK에 있습니다. MFC에서 다중 스레드 지원에 대 한 자세한 내용은 참조 하세요. [스레딩 C++ 및 MFC](multithreading-with-cpp-and-mfc.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

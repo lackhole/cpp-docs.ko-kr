@@ -1,4 +1,4 @@
----
+﻿---
 title: /AI(메타데이터 디렉터리 지정)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,16 +12,15 @@ helpviewer_keywords:
 - -AI compiler option [C++]
 ms.assetid: fb9c1846-504c-4a3b-bb39-c8696de32f6f
 ms.openlocfilehash: 3633cfe34a4f9c627f84cf401cb559f02f8c8229
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62273224"
 ---
 # <a name="ai-specify-metadata-directories"></a>/AI(메타데이터 디렉터리 지정)
 
-
-  `#using` 지시문에 전달된 파일 참조를 확인하기 위해 컴파일러가 검색할 디렉터리를 지정합니다.
+`#using` 지시문에 전달된 파일 참조를 확인하기 위해 컴파일러가 검색할 디렉터리를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,7 +37,7 @@ ms.locfileid: "57810213"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 선택 된 **구성 속성** > **C/C++** > **일반** 속성 페이지.
 

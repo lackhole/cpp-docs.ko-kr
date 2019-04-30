@@ -1,5 +1,5 @@
 ---
-title: '연습: MSBuild를 사용 하 여 Visual c + + 프로젝트를 만들려면'
+title: '연습: MSBuild를 사용 하 여 시각적 개체를 만들려면 C++ 프로젝트'
 ms.date: 09/24/2018
 f1_keywords:
 - msbuild.cpp.walkthrough.createproject
@@ -7,13 +7,13 @@ helpviewer_keywords:
 - 'msbuild (c++), walkthrough: create a project'
 ms.assetid: 52350d1c-c373-4868-923c-5e8be6f67adb
 ms.openlocfilehash: c7b038ede8c03f7016c5e9f81a9db785c49da448
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57813918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62313599"
 ---
-# <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>연습: MSBuild를 사용 하 여 Visual c + + 프로젝트를 만들려면
+# <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>연습: MSBuild를 사용 하 여 시각적 개체를 만들려면 C++ 프로젝트
 
 이 연습에서는 명령 프롬프트에서 Visual C++ 프로젝트를 빌드하려면 MSBuild를 사용 하는 방법에 설명 합니다. C++ 소스 파일 및 Visual C++ 콘솔 응용 프로그램에 대 한 XML 기반 프로젝트 파일을 만드는 방법을 알아봅니다. 프로젝트를 빌드한 후 빌드 프로세스를 사용자 지정 하는 방법을 배웁니다.
 

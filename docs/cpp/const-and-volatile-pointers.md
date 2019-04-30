@@ -8,11 +8,11 @@ helpviewer_keywords:
 - const keyword [C++], volatile pointers
 ms.assetid: 0c92dc6c-400e-4342-b345-63ddfe649d7e
 ms.openlocfilehash: c869adbbdc8a5a17d315e64e5ac15545e0c46e26
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399124"
 ---
 # <a name="const-and-volatile-pointers"></a>const 및 volatile 포인터
 
@@ -36,7 +36,7 @@ char * const pchc;
 char * volatile pchv;
 ```
 
-개체의 수정을 허용 하는 할당을 금지 하는 c + + 언어 또는로 선언한 포인터 **const**합니다. 그와 같은 할당은 개체 또는 포인터가 선언된 정보를 제거하기 때문에 원래의 선언 의도에 위배됩니다. 다음의 선언을 살펴보세요.
+C++ 개체의 수정을 허용 하는 할당을 금지 하는 언어 또는로 선언한 포인터 **const**합니다. 그와 같은 할당은 개체 또는 포인터가 선언된 정보를 제거하기 때문에 원래의 선언 의도에 위배됩니다. 다음의 선언을 살펴보세요.
 
 ```cpp
 const char cch = 'A';

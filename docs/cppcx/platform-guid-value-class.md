@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
 ms.openlocfilehash: 64c70b619380d7c2ed4aaaecad3ee01a1d0f79c7
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383323"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid 값 클래스
 
@@ -190,7 +190,7 @@ static bool Platform::Guid::operator<(Platform::Guid guid1, Platform::Guid guid2
 
 True 이면 *guid1* 앞에 정렬 되 *guid2*합니다. 각 처리 후 사전적 순서는 `Platform::Guid` 네 개의 32 비트 부호 없는 값의 배열을 말 이죠. 이 SQL Server 또는.NET Framework에서 사용 하는 정렬 되지 않으며 동일 해당 문자열 표현으로 사전순으로 정렬.
 
-이 연산자가 제공 되도록 `Guid` c + + 표준 라이브러리에서 개체를 보다 쉽게 사용할 수 있습니다.
+이 연산자가 제공 되도록 `Guid` 에서 개체를 보다 쉽게 사용할 수는 C++ 표준 라이브러리입니다.
 
 ## <a name="operator-call"></a> Guid::operator() Operator
 
@@ -208,4 +208,4 @@ A [GUID 구조체](https://msdn.microsoft.com/library/windows/desktop/aa373931)�
 
 ## <a name="see-also"></a>참고자료
 
-[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)
+[Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)

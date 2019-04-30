@@ -10,11 +10,11 @@ helpviewer_keywords:
 - TN024
 ms.assetid: c65353ce-8096-454b-ad22-1a7a1dd9a788
 ms.openlocfilehash: 029177821d37d5d26abe0b39ea1581e8a5ad602b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62306027"
 ---
 # <a name="tn024-mfc-defined-messages-and-resources"></a>TN024: MFC에서 정의한 메시지 및 리소스
 
@@ -33,7 +33,7 @@ MFC 개인 리소스 유형은 0xF0 범위의 0xFF-> 합니다.
 
 **MFC 개인 Windows 메시지**
 
-이러한 Windows 메시지는 비교적 느슨한 결합이 필요한 경우 창 개체 사이 가상 함수를 c + + 적절 한 수는 가상 함수를 c + + 대신 사용 됩니다.
+이러한 Windows 메시지 대신 사용 하는 C++ 비교적 느슨한 창 개체 간에 필요한 가상 함수 및 위치는 C++ 가상 함수는 적절 한 것입니다.
 
 이러한 개인 Windows 메시지와 연결 된 매개 변수 구조는 MFC 개인 헤더에 선언 된 ' AFXPRIV 합니다. H'입니다. 이 헤더를 포함 하는 코드의 모든 있습니다 수 의존 문서화 되지 않은 동작 및 중단 될 이후 버전의 MFC 경고가 표시 됩니다.
 
@@ -170,9 +170,9 @@ MFC 개인 리소스 유형은 0xF0 범위의 0xFF-> 합니다.
 
 ## <a name="rtdlginit-resource-format"></a>RT_DLGINIT 리소스 형식
 
-추가 대화 상자 초기화 정보를 저장 한 MFC 개인 리소스 형식이 사용 됩니다. 콤보 상자에 저장 된 초기 문자열을 포함 합니다. 이 리소스의 형식은 기능이 없는 수동으로 편집할 수 있지만 Visual c + +에서 처리 됩니다.
+추가 대화 상자 초기화 정보를 저장 한 MFC 개인 리소스 형식이 사용 됩니다. 콤보 상자에 저장 된 초기 문자열을 포함 합니다. 이 리소스의 형식은 기능이 없는 수동으로 편집할 수 있지만 시각적 개체에서 처리 됩니다 C++입니다.
 
-Visual c + + 및이 RT_DLGINIT 리소스 리소스의 정보를 사용 하는 API 대신 되므로 MFC의 관련된 기능을 사용 하는 것을 않아도 됩니다. Visual c + +를 사용 하 여 훨씬 쉽게 작성, 유지 관리 및 장기 실행 응용 프로그램을 변환 합니다.
+Visual C++ 이 RT_DLGINIT 리소스는 리소스의 정보를 사용 하는 API 대신 되므로 MFC의 관련된 기능을 사용할 필요가 없습니다. 시각적 개체를 사용 하 여 C++ 훨씬 쉽게 작성, 유지 관리 및 장기 실행 응용 프로그램을 변환 합니다.
 
 RT_DLGINIT 리소스의 기본 구조는 다음과 같습니다.
 
@@ -197,7 +197,7 @@ RT_DLGINIT 리소스의 기본 구조는 다음과 같습니다.
 SendDlgItemMessage(<Control ID>, <Message #>, 0, &<Data>);
 ```
 
-모든 Windows 메시지 및 데이터 콘텐츠는 매우 일반적인 형식입니다. Visual c + + 리소스 편집기와 MFC만 Windows 메시지의 제한 된 하위 집합을 지원합니다. CB_ADDSTRING 콤보 상자 (데이터는 텍스트 문자열)에 대 한 초기 목록을 선택 합니다.
+모든 Windows 메시지 및 데이터 콘텐츠는 매우 일반적인 형식입니다. 시각적 개체 C++ 리소스 편집기 및 MFC는만 Windows 메시지의 제한 된 하위 집합을 지원 합니다. CB_ADDSTRING 콤보 상자 (데이터는 텍스트 문자열)에 대 한 초기 목록을 선택 합니다.
 
 ## <a name="see-also"></a>참고자료
 

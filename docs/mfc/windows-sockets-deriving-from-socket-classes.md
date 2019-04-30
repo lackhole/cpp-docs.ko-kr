@@ -7,11 +7,11 @@ helpviewer_keywords:
 - sockets [MFC], deriving from socket classes
 ms.assetid: 3a26e67a-e323-433b-9b05-eca018799801
 ms.openlocfilehash: 12ab66cfd9212cd79752e2f6359b857194c6428c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385260"
 ---
 # <a name="windows-sockets-deriving-from-socket-classes"></a>Windows 소켓: 소켓 클래스에서 파생
 
@@ -27,9 +27,9 @@ ms.locfileid: "57270314"
 
 자세한 내용은 다음을 참조하세요.
 
-- [Windows 소켓: 소켓을 사용 하 여 아카이브를 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows 소켓: 소켓과 아카이브 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
 - [Windows 소켓: 차단](../mfc/windows-sockets-blocking.md)
 

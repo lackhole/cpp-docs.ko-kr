@@ -31,11 +31,11 @@ helpviewer_keywords:
 - creall function
 ms.assetid: fa3ac62f-7aa3-4238-a71f-d6b00cd0c7c8
 ms.openlocfilehash: 32fd0898ccac80b74b467dbfe0a136eef139e642
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339756"
 ---
 # <a name="creal-crealf-creall"></a>creal, crealf, creall
 
@@ -65,13 +65,13 @@ long double creal( _Lcomplex z );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **creal** 사용 하는 **_Fcomplex** 하거나 **_Lcomplex** 값 및 반환 **float** 또는 **long double** 값입니다. C 프로그램에서 **creal** 는 항상 사용을 **_Dcomplex** 값과 반환을 **double** 값입니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **creal** 사용 하는 **_Fcomplex** 하거나 **_Lcomplex** 값 및 반환 **float**나 **long double** 값입니다. C 프로그램에서 **creal** 는 항상 사용을 **_Dcomplex** 값과 반환을 **double** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**creal**하십시오 **crealf**, **creall**|\<complex.h>|\<ccomplex>|
+|**creal**, **crealf**, **creall**|\<complex.h>|\<ccomplex>|
 
 합니다 **_Fcomplex**를 **_Dcomplex**, 및 **_Lcomplex** 유형은 네이티브 구현 되지 않은 C99 형식의 해당 하는 Microsoft 전용 **float _Complex** 하십시오 **double _Complex**, 및 **long double _Complex**각각. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

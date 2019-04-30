@@ -7,11 +7,11 @@ helpviewer_keywords:
 - nonstandard behavior, compliance and compatibility
 ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
 ms.openlocfilehash: b7546914f4cd417f127af56fb7342903989d8330
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62245377"
 ---
 # <a name="nonstandard-behavior"></a>비표준 동작
 

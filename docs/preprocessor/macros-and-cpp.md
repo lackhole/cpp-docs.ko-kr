@@ -6,11 +6,11 @@ helpviewer_keywords:
 - macros
 ms.assetid: 83a344c1-73c9-4ace-8b93-cccfb62c6133
 ms.openlocfilehash: d4915526d5bb84b33f0595678781257d754aaf2d
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59024918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371791"
 ---
 # <a name="macros-and-c"></a>매크로 및 C++
 C++는 새로운 기능을 제공하며 그 중 일부는 ANSI C 전처리기에서 제공하는 기능을 대신합니다. 이 새로운 기능으로 형식이 더욱 안전해지고 효과적으로 언어를 예측할 수 있습니다.

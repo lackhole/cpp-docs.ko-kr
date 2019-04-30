@@ -17,11 +17,11 @@ helpviewer_keywords:
 - compiler options, macros
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
 ms.openlocfilehash: 79b1cabc0304e905012db5f6dd73ed71073c0c1e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278425"
 ---
 # <a name="compiler-options-macros"></a>컴파일러 옵션 매크로
 
@@ -32,7 +32,7 @@ ms.locfileid: "57258478"
 |[_ATL_ALL_WARNINGS](#_atl_all_warnings)|프로젝트에서 오류를 활성화 하는 기호 ATL.의 이전 버전에서 변환|
 |[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|아파트 스레딩 개체 중 하나 이상을 사용 하는 경우를 정의 합니다.|
 |[_ATL_CSTRING_EXPLICIT_CONSTRUCTORS](#_atl_cstring_explicit_constructors)|어느 `CString` 모든 의도 하지 않은 변환을 방지 명시적 생성자입니다.|
-|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|구문을 사용 하 여 c + + 표준 준수, 멤버 함수에 대 한 포인터를 초기화 하는 비표준 구문을 사용 하는 경우 C4867 컴파일러 오류를 생성 하기 위해이 매크로 정의 합니다.|
+|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|사용 하려면이 매크로 정의 합니다. C++ 멤버 함수에 대 한 포인터를 초기화 하는 비표준 구문을 사용 하는 경우 C4867 컴파일러 오류를 생성 하는 표준 호환 구문입니다.|
 |[_ATL_FREE_THREADED](#_atl_free_threaded)|개체의 하나 이상의 무료 또는 중립 스레딩을 사용 하는 경우 정의 합니다.|
 |[_ATL_MULTI_THREADED](#_atl_multi_threaded)|프로젝트를 나타내는 기호가 둘 다 무료 또는 중립으로 표시 되는 개체를 해야 합니다. 매크로 [_ATL_FREE_THREADED](#_atl_free_threaded) 를 대신 사용 해야 합니다.|
 |[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|ATL.로 네임 스페이스의 기본 사용을 방지 하는 기호|
@@ -51,7 +51,7 @@ ms.locfileid: "57258478"
 
 ### <a name="remarks"></a>설명
 
-Visual c + +.NET 2002 년 이전 ATL 많은 경고를 사용 하지 않도록 설정 및 남겨둔는 해당 되지 나타난 사용자 코드에서 사용 하지 않도록 설정 합니다. 구체적으로는 다음과 같습니다.
+Visual 하기 전에 C++ .NET 2002, ATL 많은 경고를 사용 하지 않도록 설정 하 고는 해당 되지 나타난 사용자 코드에서 비활성화 된 상태로 남아 있습니다. 구체적으로는 다음과 같습니다.
 
 - C4127 조건식이 상수
 
@@ -105,7 +105,7 @@ _T 매크로 모든 생성자 문자열 인수를 사용 하 여 _ATL_CSTRING_EX
 
 ##  <a name="_atl_enable_ptm_warning"></a>  _ATL_ENABLE_PTM_WARNING
 
-멤버 함수에 대 한 포인터에 대 한 ANSI c + + 표준 규격 구문의 사용을 강제로 실행 하기 위해이 매크로 정의 합니다. 이 매크로 사용 하 여 비표준 구문을 사용 하는 멤버 함수에 대 한 포인터를 초기화 하는 경우 생성 되는 C4867 컴파일러 오류가 발생 합니다.
+ANSI 사용 하도록 하려면이 매크로 정의 합니다. C++ 멤버 함수에 대 한 포인터에 대 한 표준 규격 구문입니다. 이 매크로 사용 하 여 비표준 구문을 사용 하는 멤버 함수에 대 한 포인터를 초기화 하는 경우 생성 되는 C4867 컴파일러 오류가 발생 합니다.
 
 ```
 #define _ATL_ENABLE_PTM_WARNING
@@ -113,11 +113,11 @@ _T 매크로 모든 생성자 문자열 인수를 사용 하 여 _ATL_CSTRING_EX
 
 ### <a name="remarks"></a>설명
 
-ATL 및 MFC 라이브러리는 Visual c + + 컴파일러의 향상 된 표준 c + + 규격에 맞게 변경 되었습니다. 클래스 멤버 함수에 대 한 포인터의 구문은 ANSI c + + 표준에 따라 해야 `&CMyClass::MyFunc`합니다.
+ATL 및 MFC 라이브러리 시각적 개체와 일치 하도록 변경 되었습니다 C++ 컴파일러의 향상 된 표준 C++ 준수 합니다. ANSI에 따라 C++ standard, 클래스 멤버 함수에 대 한 포인터의 구문을 해야 `&CMyClass::MyFunc`합니다.
 
-때 [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) 정의 되어 있지 않습니다 (기본적인 경우), ATL/MFC 사용 하지 않도록 설정 (특히 메시지 매핑) 매크로 맵에서 C4867 오류 이전 버전에서 생성 된 코드를 계속 이전 처럼 빌드할 수 있도록 합니다. 정의 하는 경우 **_ATL_ENABLE_PTM_WARNING**, 코드는 c + + 표준을 준수 해야 합니다.
+때 [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) 정의 되어 있지 않습니다 (기본적인 경우), ATL/MFC 사용 하지 않도록 설정 (특히 메시지 매핑) 매크로 맵에서 C4867 오류 이전 버전에서 생성 된 코드를 계속 이전 처럼 빌드할 수 있도록 합니다. 정의 하는 경우 **_ATL_ENABLE_PTM_WARNING**, 코드 해야 C++ 표준을 준수 합니다.
 
-그러나 비표준 형식에 사용 되지 않으므로 c + + 표준 규격 구문으로 기존 코드를 이동 해야 합니다. 예를 들어, 다음과 같은
+그러나 비표준 형식에 사용 되지 않으므로 기존 코드를 이동 해야 C++ 표준 호환 구문입니다. 예를 들어, 다음과 같은
 
 [!code-cpp[NVC_MFCListView#14](../../atl/reference/codesnippet/cpp/compiler-options-macros_2.cpp)]
 

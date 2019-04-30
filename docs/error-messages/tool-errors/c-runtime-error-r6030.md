@@ -7,11 +7,11 @@ helpviewer_keywords:
 - R6030
 ms.assetid: 0238a6c3-a033-4046-8adc-f8f99d961153
 ms.openlocfilehash: 7f5c61d9b39b1d655bcbf3d42ea870370ddf2842
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400021"
 ---
 # <a name="c-runtime-error-r6030"></a>C 런타임 오류 R6030
 
@@ -31,4 +31,4 @@ CRT 초기화 되지 않았습니다.
 
 이 오류는 C 런타임 (CRT)를 사용 하는 CRT 시작 코드가 실행 되지 않은 경우에 발생 합니다. 링커 스위치 하는 경우이 오류가 발생할 수 있기 [/ENTRY](../../build/reference/entry-entry-point-symbol.md) 시작 주소, 일반적으로 기본값을 재정의 하는 데 사용 됩니다 **mainCRTStartup**를 **wmainCRTStartup** 에 EXE, 콘솔 **WinMainCRTStartup** 하거나 **wWinMainCRTStartup** 는 Windows EXE에 대 한 또는 **_DllMainCRTStartup** DLL에 대 한 합니다. 위의 함수 중 하나를 시작할 때 호출 하지 않는 한 C 런타임은 초기화 되지 않습니다. 이러한 시작 함수가 C 런타임 라이브러리에 연결 하 고 일반을 사용 하는 경우 일반적으로 기본적으로 호출 된 **주**, **wmain**합니다 **WinMain**, 또는  **DllMain** 진입점입니다.
 
-다른 프로그램 코드 주입 기술을 사용 하 여 특정 DLL 라이브러리 호출은 트래핑 하는 경우이 오류가 발생할 수 이기도 합니다. 일부 침입적 인 보안 프로그램에는이 기술을 사용합니다. Visual c + + Visual Studio 2015 이전 버전에서는 것이 문제를 해결 하는 정적으로 연결 된 CRT 라이브러리를 사용할 수 있지만이 보안 및 응용 프로그램 업데이트의 이유로 권장 되지 않습니다. 이 문제를 수정 하면 최종 사용자 작업이 필요할 수 있습니다.
+다른 프로그램 코드 주입 기술을 사용 하 여 특정 DLL 라이브러리 호출은 트래핑 하는 경우이 오류가 발생할 수 이기도 합니다. 일부 침입적 인 보안 프로그램에는이 기술을 사용합니다. 시각적 개체의 버전에서 C++ Visual Studio 2015 이전 문제를 해결 하는 정적으로 연결 된 CRT 라이브러리를 사용할 수는 있지만이 보안 및 응용 프로그램 업데이트의 이유로 권장 되지 않습니다. 이 문제를 수정 하면 최종 사용자 작업이 필요할 수 있습니다.

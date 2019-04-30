@@ -11,11 +11,11 @@ f1_keywords:
 - regex/std::operator<<
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
 ms.openlocfilehash: ee0d9ba820cff55a9cfbb130c8f90ca02fbee84a
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369555"
 ---
 # <a name="ltregexgt-operators"></a>&lt;regex&gt; 연산자
 
@@ -72,7 +72,7 @@ bool operator!=(const match_results<BidIt, Alloc>& left,
 *IOtraits*<br/>
 문자열 특성 클래스입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *left*<br/>
@@ -187,7 +187,7 @@ bool operator<(const sub_match<BidIt>& left,
 *IOtraits*<br/>
 문자열 특성 클래스입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *left*<br/>
@@ -272,7 +272,7 @@ basic_ostream<Elem, IOtraits>& operator<<(basic_ostream<Elem, IOtraits>& os,
 *IOtraits*<br/>
 문자열 특성 클래스입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *BidIt*<br/>
@@ -357,7 +357,7 @@ bool operator<=(const sub_match<BidIt>& left,
 *IOtraits*<br/>
 문자열 특성 클래스입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *left*<br/>
@@ -471,7 +471,7 @@ bool operator==(const match_results<BidIt, Alloc>& left,
 *IOtraits*<br/>
 문자열 특성 클래스입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *left*<br/>
@@ -594,7 +594,7 @@ bool operator>(const sub_match<BidIt>& left,
 *IOtraits*<br/>
 문자열 특성 클래스입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *left*<br/>
@@ -704,7 +704,7 @@ bool operator>=(const sub_match<BidIt>& left,
 *IOtraits*<br/>
 문자열 특성 클래스입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 클래스입니다.
 
 *left*<br/>

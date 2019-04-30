@@ -7,17 +7,17 @@ helpviewer_keywords:
 - PRJ0007
 ms.assetid: d923948b-acc9-498f-bf3b-f14e41bed61a
 ms.openlocfilehash: 83cb02f4d9d5232eda45b3bdbb591dd819fa12d5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359594"
 ---
 # <a name="project-build-error-prj0007"></a>프로젝트 빌드 오류 PRJ0007
 
 'Directory' 출력 디렉터리를 만들지 못했습니다.
 
-Visual c + +를 출력 디렉터리를 만들지 못했습니다. 가능한 이유:
+Visual C++ 출력 디렉터리를 만들지 못했습니다. 가능한 이유:
 
 - 출력 디렉터리를 만들 수을 하는 디렉터리에는 읽기 전용입니다.
 

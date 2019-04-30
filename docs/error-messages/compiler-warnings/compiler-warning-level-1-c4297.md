@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4297
 ms.assetid: ba92fcdc-9f70-4f60-abe6-281f9582ca59
 ms.openlocfilehash: 07dd6c65498ddd0d377ec3e0fbc7b44e52bec96b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62408630"
 ---
 # <a name="compiler-warning-level-1-c4297"></a>컴파일러 경고(수준 1) C4297
 
@@ -23,7 +23,7 @@ ms.locfileid: "50540255"
 
 예외 사양에 대 한 자세한 내용은 참조 하세요. [예외 사양 (throw)](../../cpp/exception-specifications-throw-cpp.md)합니다. 도 참조 하세요 [/EH (예외 처리 모델)](../../build/reference/eh-exception-handling-model.md) 컴파일 타임에 예외 처리 동작을 수정 하는 방법에 대 한 정보에 대 한 합니다.
 
-__Declspec에도이 경고가 생성 됩니다 ([dllexport](../../cpp/dllexport-dllimport.md)) 함수는 c + + 함수는 경우에 extern "C"로 표시 합니다.
+__Declspec에도이 경고가 생성 됩니다 ([dllexport](../../cpp/dllexport-dllimport.md)) 된 경우에 extern "C" 함수에 표시 C++ 함수입니다.
 
 다음 샘플에서는 C4297 오류가 발생하는 경우를 보여 줍니다.
 

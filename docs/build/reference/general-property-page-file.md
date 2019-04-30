@@ -6,11 +6,11 @@ f1_keywords:
 - VC.Project.VCFileConfiguration.Tool
 ms.assetid: 26e3711e-9e7d-4e8d-bc4c-2474538efdad
 ms.openlocfilehash: 66e26cabf5af85091000e6cda144898789c581df
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292227"
 ---
 # <a name="general-property-page-file"></a>일반 속성 페이지(파일)
 
@@ -28,10 +28,10 @@ ms.locfileid: "57826363"
 
    프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>을 참조하세요.
 
-액세스 하는 방법에 대 한 정보에 대 한는 **일반** 속성 페이지에는 **구성 속성** 노드를 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+액세스 하는 방법에 대 한 정보에 대 한 합니다 **일반** 속성 페이지에는 **구성 속성** 노드를 참조 하세요 [설정 C++ VisualStudio에서컴파일러및빌드속성](../working-with-project-properties.md).
 
-비 Windows 프로젝트를 참조 하세요 [Linux c + + 속성 페이지 참조](../../linux/prop-pages-linux.md)합니다.
+비 Windows 프로젝트를 참조 하세요 [Linux C++ 속성 페이지 참조](../../linux/prop-pages-linux.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[C + + 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)
+[C++ 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)

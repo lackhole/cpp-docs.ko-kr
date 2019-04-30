@@ -35,11 +35,11 @@ helpviewer_keywords:
 - m_strIndexText
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
 ms.openlocfilehash: 1fac3a74ca259fe3b680355fadc7f9bbd6e3cc13
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368710"
 ---
 # <a name="crowsetimpl-class"></a>CRowsetImpl 클래스
 
@@ -117,7 +117,7 @@ class CRowsetImpl :
 
 중 하나를 구현 하는 `CRowsetImpl`-파생 `Execute` 메서드를 내부 데이터 버퍼를 입력 해야 합니다 ([m_rgRowData](../../data/oledb/crowsetimpl-m-rgrowdata.md)).
 
-## <a name="namefromdbid"></a> Crowsetimpl:: Namefromdbid
+## <a name="namefromdbid"></a> CRowsetImpl::NameFromDBID
 
 문자열을 추출를 `DBID` 에 복사 합니다 *bstr* 전달 합니다.
 
@@ -148,7 +148,7 @@ HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,
 
 이 메서드는 합니다 `CRowsetImpl` 구현의 [ValidateCommandID](../../data/oledb/crowsetimpl-validatecommandid.md) 하 고 [GetCommandFromID](../../data/oledb/crowsetimpl-getcommandfromid.md)합니다.
 
-## <a name="setcommandtext"></a> Crowsetimpl:: Setcommandtext
+## <a name="setcommandtext"></a> CRowsetImpl::SetCommandText
 
 유효성을 검사 하 고 저장 합니다 `DBID`두 문자열의 ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 하 고 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)).
 
@@ -177,7 +177,7 @@ HRESULT CRowsetBaseImpl::SetCommandText(DBID* pTableID,
 
 이 메서드를 호출 하 여 해당 작업을 위임 [ValidateCommandID](../../data/oledb/crowsetimpl-validatecommandid.md) 하 고 [GetCommandFromID](../../data/oledb/crowsetimpl-getcommandfromid.md) 캐스팅 되지 않은 포인터를 통해.
 
-## <a name="getcolumninfo"></a> Crowsetimpl:: Getcolumninfo
+## <a name="getcolumninfo"></a> CRowsetImpl::GetColumnInfo
 
 특정 클라이언트 요청에 대 한 열 정보를 검색합니다.
 
@@ -210,7 +210,7 @@ static ATLCOLUMNINFO* CRowsetBaseImpl::GetColumnInfo(T* pv,
 
 [!code-cpp[NVC_OLEDB_Provider#1](../../data/oledb/codesnippet/cpp/crowsetimpl-getcolumninfo_1.h)]
 
-## <a name="getcommandfromid"></a> Crowsetimpl:: Getcommandfromid
+## <a name="getcommandfromid"></a> CRowsetImpl::GetCommandFromID
 
 데이터 멤버에 문자열 값을 복사 하는 확인 중 하나 또는 두 매개 변수는 문자열 값을 포함 하 고 그렇다면 [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 하 고 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)합니다.
 
@@ -237,7 +237,7 @@ HRESULT CRowsetBaseImpl::GetCommandFromID(DBID* pTableID,
 
 이 메서드를 호출 하 여 정적 업캐스팅을 통해 `CRowsetImpl` 데이터 멤버를 채우는 [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 하 고 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)합니다. 기본적으로이 메서드 중 하나 또는 두 매개 변수 문자열 값을 포함 하는 경우를 확인 합니다. 문자열 값을 포함 하는 경우이 메서드는 데이터 멤버에 문자열 값을 복사 합니다. 이 서명 사용 하 여 메서드를 배치 하 여 프로그램 `CRowsetImpl`-파생 클래스 메서드의 기본 구현 대신 호출 됩니다.
 
-## <a name="validatecommandid"></a> Crowsetimpl:: Validatecommandid
+## <a name="validatecommandid"></a> CRowsetImpl::ValidateCommandID
 
 참조 하는 경우 중 하나 또는 둘 다 검사 `DBID`s 문자열 값을 포함 하 고 그렇다면 해당 데이터 멤버에 복사 [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 하 고 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)합니다.
 
@@ -264,7 +264,7 @@ HRESULT CRowsetBaseImpl::ValidateCommandID(DBID* pTableID,
 
 이 메서드를 호출 하 여 정적 업캐스팅을 통해 `CRowsetImpl` 해당 데이터 멤버를 채우는 [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) 하 고 [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)합니다. 기본적으로이 메서드를 참조 하는 경우 중 하나 또는 둘 다 확인 `DBID`의문자열 값을 포함 하 고 그렇다면 해당 데이터 멤버에 복사 합니다. 이 서명 사용 하 여 메서드를 배치 하 여 프로그램 `CRowsetImpl`-파생 클래스 메서드의 기본 구현 대신 호출 됩니다.
 
-## <a name="rgrowdata"></a> Crowsetimpl:: M_rgrowdata
+## <a name="rgrowdata"></a> CRowsetImpl::m_rgRowData
 
 기본적으로 `CAtlArray` 사용자 레코드 템플릿 인수에는 templatizes `CRowsetImpl`합니다.
 
@@ -278,7 +278,7 @@ ArrayType CRowsetBaseImpl::m_rgRowData;
 
 *ArrayType* 는 템플릿 매개 변수입니다 `CRowsetImpl`합니다.
 
-## <a name="strcommandtext"></a> Crowsetimpl:: M_strcommandtext
+## <a name="strcommandtext"></a> CRowsetImpl::m_strCommandText
 
 행 집합의 초기 명령을 포함합니다.
 
@@ -288,7 +288,7 @@ ArrayType CRowsetBaseImpl::m_rgRowData;
 CComBSTR CRowsetBaseImpl::m_strCommandText;
 ```
 
-## <a name="strindextext"></a> Crowsetimpl:: M_strindextext
+## <a name="strindextext"></a> CRowsetImpl::m_strIndexText
 
 행 집합의 초기 인덱스를 포함합니다.
 

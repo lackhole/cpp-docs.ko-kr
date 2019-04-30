@@ -1,5 +1,5 @@
 ---
-title: '연습: 명령줄에서 네이티브 c + + 프로그램 컴파일'
+title: '연습: 네이티브 컴파일 C++ 명령줄에서 프로그램'
 ms.custom: conceptual
 ms.date: 09/24/2018
 helpviewer_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - command-line applications [C++], native
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
 ms.openlocfilehash: d7b5bc88966f7edbb7179c36398b1dd95afb971f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62313885"
 ---
-# <a name="walkthrough-compiling-a-native-c-program-on-the-command-line"></a>연습: 명령줄에서 네이티브 c + + 프로그램 컴파일
+# <a name="walkthrough-compiling-a-native-c-program-on-the-command-line"></a>연습: 네이티브 컴파일 C++ 명령줄에서 프로그램
 
 Visual C++ 유니버설 Windows 플랫폼 앱에 대 한 기본적인 콘솔 앱, 데스크톱 앱, 장치 드라이버 및.NET 구성 요소에서 모든 항목을 만들 데 사용할 수 있는 명령줄 C++ 컴파일러를 포함 합니다.
 
-이 연습에서는 basic, "Hello, World" 만든-편집기에서 텍스트를 사용 하 여 C++ 프로그램을 스타일 및 다음 명령줄에서 컴파일합니다. 명령줄을 사용 하는 대신 Visual Studio IDE를 시도 하세요. 참조 하려는 경우 [연습: 프로젝트 및 솔루션 (c + +)를 작업할](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) 또는 [c + + 데스크톱 개발에 Visual Studio IDE를 사용 하 여](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)합니다.
+이 연습에서는 basic, "Hello, World" 만든-편집기에서 텍스트를 사용 하 여 C++ 프로그램을 스타일 및 다음 명령줄에서 컴파일합니다. 명령줄을 사용 하는 대신 Visual Studio IDE를 시도 하세요. 참조 하려는 경우 [연습: 프로젝트 및 솔루션 작업 (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) 나 [Visual Studio IDE를 사용 하 여에 대 한 C++ 데스크톱 개발](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)합니다.
 
 이 연습에서는 표시되는 내용을 입력하는 대신 Visual C++ 프로그램을 사용하거나 다른 도움말 문서의 Visual C++ 코드 샘플을 사용할 수 있습니다.
 
@@ -165,7 +165,7 @@ Visual Studio는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집기
 
 구성 하 고 명령줄에서 보다 복잡 한 프로젝트를 빌드할 NMAKE 메이크파일, 있고 MSBuild 및 프로젝트 파일을 사용할 수 있습니다. 이러한 도구 사용에 대 한 자세한 내용은 참조 하세요. [NMAKE 참조](reference/nmake-reference.md) 하 고 [MSBuild](msbuild-visual-cpp.md)합니다.
 
-C 및 C++ 언어는 유사 하지만 동일 하지는 않습니다. MSVC 컴파일러 코드를 컴파일할 때 사용할 언어를 결정 하는 간단한 규칙을 사용 합니다. 기본적으로 MSVC 컴파일러는 C 소스 코드로.c로 끝나는 모든 파일 및 c + + 소스 코드로.cpp으로 끝나는 모든 파일을 처리 합니다. 모든 파일 종속 되지 않는 파일 이름 확장명에 C++로 취급 하도록 컴파일러를 강제 적용 하려면 사용 합니다 [/TC](reference/tc-tp-tc-tp-specify-source-file-type.md) 컴파일러 옵션입니다.
+C 및 C++ 언어는 유사 하지만 동일 하지는 않습니다. MSVC 컴파일러 코드를 컴파일할 때 사용할 언어를 결정 하는 간단한 규칙을 사용 합니다. 기본적으로 MSVC 컴파일러가 C 소스 코드로.c로 끝나는 모든 파일 및.cpp로 끝나는 모든 파일을 처리 C++ 소스 코드입니다. 모든 파일 종속 되지 않는 파일 이름 확장명에 C++로 취급 하도록 컴파일러를 강제 적용 하려면 사용 합니다 [/TC](reference/tc-tp-tc-tp-specify-source-file-type.md) 컴파일러 옵션입니다.
 
 MSVC 컴파일러는 ISO C99 표준을 호환 되지만 엄격 하 게 준수 하지 않는 한 C 런타임 라이브러리 (CRT)를 포함 합니다. 대부분의 경우에서 이식 가능한 코드 컴파일 및 예상 대로 실행 합니다. Visual C++ ISO C11의 CRT 변경 내용 중 일부를 지원 하지 않습니다. 특정 라이브러리 함수 및 POSIX 함수 이름을 MSVC 컴파일러에서 사용 되지 않습니다. 함수는 지원 되지만 기본 이름이 변경 되었습니다. 자세한 내용은 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md) 하 고 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)합니다.
 

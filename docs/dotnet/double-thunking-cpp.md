@@ -9,15 +9,15 @@ helpviewer_keywords:
 - interoperability [C++], double thunking
 ms.assetid: a85090b2-dc3c-498a-b40c-340db229dd6f
 ms.openlocfilehash: f34af20ed3dd2c48659bdbf7794c443920dbb4e9
-ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58278400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404483"
 ---
 # <a name="double-thunking-c"></a>이중 썽킹(C++)
 
-이중 썽킹 Visual c + + 함수를 관리 하 고는 프로그램 실행을 관리 되는 상황에 맞는 호출에서 함수 호출을 관리 되는 함수를 호출 하려면 네이티브 진입점 함수를 호출할 때 발생할 수 있는 성능 저하를 가리킵니다. 이 항목에서는 이중 썽킹 발생 하 고 성능을 향상 시키기 위해이 방지 하는 방법을 설명 합니다.
+관리 되는 컨텍스트에서 함수 호출 시각적 개체를 호출할 때 발생할 수 있는 성능 저하를 가리키는 이중 썽킹 C++ 관리 되는 함수 및 프로그램 실행 관리 되는 함수를 호출 하려면 네이티브 진입점 함수를 호출 합니다. 이 항목에서는 이중 썽킹 발생 하 고 성능을 향상 시키기 위해이 방지 하는 방법을 설명 합니다.
 
 ## <a name="remarks"></a>설명
 

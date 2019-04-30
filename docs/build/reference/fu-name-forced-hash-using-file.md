@@ -11,11 +11,11 @@ helpviewer_keywords:
 - /FU compiler option [C++]
 ms.assetid: 698f8603-457f-435a-baff-5ac9243d6ca1
 ms.openlocfilehash: c47a45208ac5b5c7e0000516ed114c008feda7ca
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62292291"
 ---
 # <a name="fu-name-forced-using-file"></a>/FU(강제 #using 파일 이름 지정)
 

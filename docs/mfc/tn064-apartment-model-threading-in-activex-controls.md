@@ -11,18 +11,18 @@ helpviewer_keywords:
 - apartment model threading [MFC]
 ms.assetid: b2ab4c88-6954-48e2-9a74-01d4a60df073
 ms.openlocfilehash: d6f02b2106693226f6380e935a54e04e10d5b4f8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351828"
 ---
 # <a name="tn064-apartment-model-threading-in-activex-controls"></a>TN064: 아파트 모델 ActiveX 컨트롤의 스레딩
 
 > [!NOTE]
 >  다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.
 
-이 기술 노트는 ActiveX 컨트롤의 아파트 모델 스레딩 사용 하도록 설정 하는 방법에 설명 합니다. 아파트 모델 스레딩이 지원 된다는 Visual c + + 버전 4.2 이상 note 합니다.
+이 기술 노트는 ActiveX 컨트롤의 아파트 모델 스레딩 사용 하도록 설정 하는 방법에 설명 합니다. 아파트 모델 스레딩는 지원 시각적 개체의 C++ 버전 4.2 이상.
 
 ## <a name="what-is-apartment-model-threading"></a>아파트 모델 스레딩 하는 것이 무엇입니까
 
@@ -101,7 +101,7 @@ else
 }
 ```
 
-컨트롤 프로젝트는 Visual c + + 버전 4.1 이상 컨트롤에서 생성 되었으면,이 플래그 이미 코드에 표시 됩니다. 스레딩 모델을 등록 하는 데 필요한 변경은 하지 않습니다.
+컨트롤 프로젝트 시각적 개체의 컨트롤에 의해 생성 된 경우 C++ 버전 4.1 이상에서는이 플래그는 이미 있을 코드에서. 스레딩 모델을 등록 하는 데 필요한 변경은 하지 않습니다.
 
 프로젝트가 컨트롤의 이전 버전에서 생성 된 경우 기존 코드 여섯 번째 매개 변수로 부울 값을 갖습니다. 기존 매개 변수가 TRUE 인 경우 변경 되도록 *afxRegInsertable | afxRegApartmentThreading*합니다. 기존 매개 변수가 FALSE 인 경우 변경 되도록 *afxRegApartmentThreading*합니다.
 

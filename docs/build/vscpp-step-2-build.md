@@ -1,27 +1,27 @@
 ---
-title: C + + 콘솔 앱 프로젝트 빌드 및 실행
-description: 빌드 및 Visual c + +에서 Hello World 콘솔 앱 실행
+title: C++ 콘솔 앱 프로젝트 빌드 및 실행
+description: 빌드 및 시각적 개체에 Hello World 콘솔 앱 실행C++
 ms.custom: mvc
 ms.date: 12/12/2017
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
 ms.openlocfilehash: 59813a553a9034503d8bf432400db31e6e3d9478
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57813549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62314273"
 ---
-# <a name="build-and-run-a-c-console-app-project"></a>C + + 콘솔 앱 프로젝트 빌드 및 실행
+# <a name="build-and-run-a-c-console-app-project"></a>C++ 콘솔 앱 프로젝트 빌드 및 실행
 
-C + + 콘솔 앱 프로젝트를 만들고 코드를 입력 했을 때 빌드 수 및 Visual Studio 내에서 실행 및 명령줄에서 독립 실행형 앱으로 실행 합니다.
+만든 경우는 C++ 콘솔 앱 프로젝트 및 코드를 입력 한 빌드 및 Visual Studio 내에서 실행 및 다음 명령줄에서 독립 실행형 앱으로 실행할 수 있습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 컴퓨터에서 설치되고 실행 중인 C++ 워크로드를 사용하여 데스크톱 개발을 위해 Visual Studio를 설치합니다. 아직 설치 되지 않은 경우의 단계를 따릅니다 [Visual Studio에서 c + + 설치 지원](vscpp-step-0-installation.md)합니다.
+- 컴퓨터에서 설치되고 실행 중인 C++ 워크로드를 사용하여 데스크톱 개발을 위해 Visual Studio를 설치합니다. 아직 설치 되지 않은 경우의 단계를 따릅니다 [설치 C++ Visual Studio에서 지원](vscpp-step-0-installation.md)합니다.
 
-- "Hello, World!" 만들기 프로젝트 및 소스 코드를 입력 합니다. 이 아직 수행 하지 않았다면의 단계를 따릅니다 [c + + 콘솔 앱 프로젝트를 만들고](vscpp-step-1-create.md)합니다.
+- "Hello, World!" 만들기 프로젝트 및 소스 코드를 입력 합니다. 이 아직 수행 하지 않았다면의 단계를 따릅니다 [만들기를 C++ 콘솔 앱 프로젝트](vscpp-step-1-create.md)합니다.
 
 Visual Studio이 다음과 같은 경우을 빌드하고 앱을 실행 합니다.
 
@@ -39,7 +39,7 @@ Visual Studio이 다음과 같은 경우을 빌드하고 앱을 실행 합니다
 
    콘솔 창이 열린 다음, 앱을 실행합니다. Visual Studio에서 콘솔 앱을 시작하면 코드를 실행한 다음, "계속하려면 아무 키나 누르세요. . "를 표시하여 출력을 볼 수 있도록 합니다.
 
-지금까지 Visual Studio에서 첫 번째 "Hello, world!" 콘솔 앱을 만들었습니다. 키를 눌러서 콘솔 창을 닫고 Visual Studio로 돌아갑니다.
+축하합니다. Visual Studio에서 첫 번째 "Hello, world!" 콘솔 앱을 만들었습니다. 키를 눌러서 콘솔 창을 닫고 Visual Studio로 돌아갑니다.
 
 [문제가 발생했습니다.](#build-and-run-your-code-in-visual-studio-issues)
 
@@ -63,11 +63,11 @@ Visual Studio이 다음과 같은 경우을 빌드하고 앱을 실행 합니다
 
 ## <a name="next-steps"></a>다음 단계
 
-작성 하 고이 간단한 앱을 실행 하면, 보다 복잡 한 프로젝트에 대 한 준비가입니다. 참조 [c + + 데스크톱 개발에 Visual Studio IDE를 사용 하 여](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md) 자세한 내용을 보려면 Visual Studio에서 Visual c + +의 기능을 탐색 하는 연습입니다.
+작성 하 고이 간단한 앱을 실행 하면, 보다 복잡 한 프로젝트에 대 한 준비가입니다. 참조 [에 대 한 Visual Studio IDE를 사용 하 여 C++ 데스크톱 개발](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md) 시각적 개체의 기능을 탐색 하는 연습 자세한 C++ Visual Studio에서.
 
 ## <a name="troubleshooting-guide"></a>문제 해결 가이드
 
-여기로 솔루션에 대 한 일반적인 문제에 첫 번째 c + + 프로젝트를 만들 때.
+여기로 솔루션에 대 한 일반적인 문제를 처음 만들 때 C++ 프로젝트입니다.
 
 ### <a name="build-and-run-your-code-in-visual-studio-issues"></a>빌드 및 Visual Studio 문제에서 코드를 실행 합니다.
 
