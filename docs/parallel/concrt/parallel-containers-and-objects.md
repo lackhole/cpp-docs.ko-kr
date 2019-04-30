@@ -7,17 +7,17 @@ helpviewer_keywords:
 - concurrent containers
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
 ms.openlocfilehash: bcf3ead9fe945ecb2246fdb28b7f67cd51b1238b
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565950"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346325"
 ---
 # <a name="parallel-containers-and-objects"></a>병렬 컨테이너 및 개체
 
 병렬 패턴 라이브러리 (PPL) 여러 컨테이너 및 해당 요소에 스레드로부터 안전한 액세스를 제공 하는 개체를 포함 합니다.
 
-A *동시 컨테이너* 가장 중요 한 작업에 대 한 동시성 으로부터 안전한 액세스를 제공 합니다. 이러한 컨테이너의 기능에는 c + + 표준 라이브러리에서 제공 되는 유사 합니다. 예를 들어,를 [concurrency:: concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) 클래스와 유사 합니다 [std:: vector](../../standard-library/vector-class.md) 는 점을 제외 하면 클래스를 `concurrent_vector` 클래스를 사용 하면 요소를에서 추가 합니다. 읽기와 동일한 컨테이너에 대 한 쓰기 액세스를 필요로 하는 병렬 코드를 해야 하는 경우 동시 컨테이너를 사용 합니다.
+A *동시 컨테이너* 가장 중요 한 작업에 대 한 동시성 으로부터 안전한 액세스를 제공 합니다. 이러한 컨테이너의 기능으로 제공 되는 비슷합니다는 C++ 표준 라이브러리입니다. 예를 들어,를 [concurrency:: concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) 클래스와 유사 합니다 [std:: vector](../../standard-library/vector-class.md) 는 점을 제외 하면 클래스를 `concurrent_vector` 클래스를 사용 하면 요소를에서 추가 합니다. 읽기와 동일한 컨테이너에 대 한 쓰기 액세스를 필요로 하는 병렬 코드를 해야 하는 경우 동시 컨테이너를 사용 합니다.
 
 A *동시 개체* 동시에 구성 요소 간에 공유 됩니다. 병렬로 동시 개체의 상태를 계산 하는 프로세스는 동일한 상태를 순차적으로 계산 하는 다른 프로세스와 동일한 결과 생성 합니다. 합니다 [concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) 클래스는 동시 개체 형식의 한 가지 예입니다. `combinable` 클래스를 사용 하면 병렬에서 계산을 수행 하 고 그런 다음 이러한 계산을 최종 결과로 결합 합니다. 그렇지 않은 경우 예를 들어, 뮤텍스 동기화 메커니즘을 공유 변수 또는 리소스에 대 한 액세스를 동기화 하는 데 사용 하는 경우 동시 개체를 사용 합니다.
 
@@ -101,7 +101,7 @@ A *동시 개체* 동시에 구성 요소 간에 공유 됩니다. 병렬로 동
 |[capacity](reference/concurrent-vector-class.md#capacity)|[grow_to_at_least](reference/concurrent-vector-class.md#grow_to_at_least)|[rend](reference/concurrent-vector-class.md#rend)|
 |[empty](reference/concurrent-vector-class.md#empty)|[max_size](reference/concurrent-vector-class.md#max_size)|[size](reference/concurrent-vector-class.md#size)|
 
-예를 들어, 런타임에 c + + 표준 라이브러리를 사용 하 여 호환성을 위해 제공 하는 작업 `reserve`, 동시성 안전 하지 않습니다. 다음 표에서 일반 메서드 및 동시성이 보장 되지 않는 연산자를 보여 줍니다.
+런타임에서 호환성을 위해 제공 하는 작업을 C++ 예를 들어, 표준 라이브러리 `reserve`, 동시성 안전 하지 않습니다. 다음 표에서 일반 메서드 및 동시성이 보장 되지 않는 연산자를 보여 줍니다.
 
 |||
 |-|-|
