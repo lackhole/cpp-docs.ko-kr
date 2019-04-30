@@ -1,5 +1,5 @@
 ---
-title: '방법: 안정형 c + + 프로젝트 만들기 (C + + /cli CLI)'
+title: '방법: 안정형 만들기 C++ 프로젝트 (C++/CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - verifiable assemblies [C++], creating
@@ -7,20 +7,20 @@ helpviewer_keywords:
 - Visual C++ projects
 ms.assetid: 4ef2cc1a-e3e5-4d67-8d8d-9c614f8ec5d3
 ms.openlocfilehash: de3742717bf55c53ab4007aaed18b6ce687fbede
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387463"
 ---
-# <a name="how-to-create-verifiable-c-projects-ccli"></a>방법: 안정형 c + + 프로젝트 만들기 (C + + /cli CLI)
+# <a name="how-to-create-verifiable-c-projects-ccli"></a>방법: 안정형 만들기 C++ 프로젝트 (C++/CLI)
 
-Visual c + + 응용 프로그램 마법사에서 확인할 수 있는 프로젝트를 만들지 마십시오.
+Visual C++ 응용 프로그램 마법사는 검증할 수 있는 프로젝트를 만들지 마세요.
 
 > [!IMPORTANT]
 > 사용 되지 않는 visual Studio 2015 및 Visual Studio 2017을 지원 하지 않습니다 합니다 **/clr: pure** 및 **/clr: safe** 검증할 수 있는 프로젝트를 만들 합니다. 검증할 수 있는 코드를 필요로 하는 경우에 C# 코드를 변환 하는 것이 좋습니다.
 
-그러나 지 원하는 Visual c + + 컴파일러 도구 집합의 이전 버전을 사용 하는 경우 **/clr: pure** 및 **/clr: safe**, 프로젝트를 확인할 수로 변환할 수입니다. 이 항목에서는 프로젝트 속성을 설정 하 여 Visual c + + 프로젝트를 확인할 수 있는 응용 프로그램 생성에 변환할 프로젝트 소스 파일을 수정 하는 방법을 설명 합니다.
+그러나 시각적 개체의 이전 버전을 사용 하는 경우 C++ 컴파일러 도구 집합을 지 원하는 **/clr: pure** 및 **/clr: safe**, 프로젝트를 확인할 수로 변환할 수입니다. 이 항목에서는 프로젝트 속성을 설정 하 여 시각적 개체를 변환할 프로젝트 소스 파일을 수정 하는 방법을 설명 C++ 프로젝트를 확인할 수 있는 응용 프로그램을 생성 합니다.
 
 ## <a name="compiler-and-linker-settings"></a>컴파일러 및 링커 설정
 

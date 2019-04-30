@@ -3,17 +3,17 @@ title: Ellipses 및 Variadic 템플릿
 ms.date: 11/04/2016
 ms.assetid: f20967d9-c967-4fd2-b902-2bb1d5ed87e3
 ms.openlocfilehash: 387cf4478192cb9470804c219eee8046f8e47abe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392221"
 ---
 # <a name="ellipses-and-variadic-templates"></a>Ellipses 및 Variadic 템플릿
 
-이 문서에서는 줄임표를 사용 하는 방법을 보여 줍니다 (`...`) c + + variadic 템플릿을 사용 하 여 합니다. 줄임표는 C 및 c + +에서 다양 한 용도로 했습니다. 여기에 함수에 가변 인수 목록이 포함 됩니다. `printf()` C 런타임 라이브러리에서 함수는 가장 잘 알려진 예 중 하나입니다.
+이 문서에서는 줄임표를 사용 하는 방법을 보여 줍니다 (`...`) 사용 하 여 C++ variadic 템플릿. 줄임표는 C에서 다양 한 용도로 했습니다 및 C++입니다. 여기에 함수에 가변 인수 목록이 포함 됩니다. `printf()` C 런타임 라이브러리에서 함수는 가장 잘 알려진 예 중 하나입니다.
 
-A *variadic 템플릿* 는 임의 개수의 인수를 지 원하는 클래스 또는 함수 템플릿입니다. 이 메커니즘은 클래스 템플릿과 함수 템플릿 모두에 적용 하 여 다양 한 형식 안전 성과 특수 기능 및 유연성을 제공 하기 때문에 c + + 라이브러리 개발자에 게 특히 유용 합니다.
+A *variadic 템플릿* 는 임의 개수의 인수를 지 원하는 클래스 또는 함수 템플릿입니다. 이 메커니즘에 특히 유용 C++ 라이브러리 개발자가 있으므로 클래스 템플릿과 함수 템플릿 모두에 적용 하 고 있으므로 다양 한 형식 안전 성과 특수 기능 및 유연성을 제공할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 

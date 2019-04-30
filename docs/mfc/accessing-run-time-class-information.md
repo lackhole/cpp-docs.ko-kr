@@ -17,18 +17,18 @@ helpviewer_keywords:
 - RUNTIME_CLASS macro, using
 ms.assetid: 3445a9af-0bd6-4496-95c3-aa59b964570b
 ms.openlocfilehash: 2e4f8685033fc7a8a2f49dafa7ef4e4e019d8989
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392949"
 ---
 # <a name="accessing-run-time-class-information"></a>런타임 클래스 정보 액세스
 
 이 문서에는 런타임에 개체의 클래스에 대 한 정보를 액세스 하는 방법을 설명 합니다.
 
 > [!NOTE]
->  MFC를 사용 하지 않는 합니다 [런타임 형식 정보](../cpp/run-time-type-information.md) Visual c + + 4.0에서 도입 된 (RTTI) 지원 합니다.
+>  MFC를 사용 하지 않는 합니다 [런타임 형식 정보](../cpp/run-time-type-information.md) (RTTI) 지원 시각적 개체에 도입 된 C++ 4.0입니다.
 
 클래스를 파생 시킨 경우 [CObject](../mfc/reference/cobject-class.md) 사용 합니다 **DECLARE**_**동적** 및 `IMPLEMENT_DYNAMIC`의 `DECLARE_DYNCREATE` 및 `IMPLEMENT_DYNCREATE`, 또는 `DECLARE_SERIAL` 하 고 `IMPLEMENT_SERIAL` 문서에 설명 된 매크로 [CObject에서 클래스를 파생](../mfc/deriving-a-class-from-cobject.md), `CObject` 클래스에는 런타임에 개체의 정확한 클래스를 결정 하는 기능.
 

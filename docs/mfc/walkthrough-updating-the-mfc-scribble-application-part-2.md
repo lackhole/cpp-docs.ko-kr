@@ -1,15 +1,15 @@
 ---
 title: '연습: MFC 자유 곡선 응용 프로그램 (2 부)를 업데이트 하는 중'
-ms.date: 09/20/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - walkthroughs [MFC]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
 ms.openlocfilehash: c22a11c54b1957c1d4ac735fe8cb577d9c483d35
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58781707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62371939"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>연습: MFC 자유 곡선 응용 프로그램 (2 부)를 업데이트 하는 중
 
@@ -338,4 +338,4 @@ MFC 자유 곡선 응용 프로그램을 업데이트 했습니다. 기존 응�
 ## <a name="see-also"></a>참고자료
 
 [연습](../mfc/walkthroughs-mfc.md)<br/>
-[연습: MFC Scribble 응용 프로그램 (파트 1) 업데이트](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)
+[연습: MFC 자유 곡선 애플리케이션 업데이트(1부)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)

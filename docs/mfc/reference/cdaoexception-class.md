@@ -19,11 +19,11 @@ helpviewer_keywords:
 - CDaoException [MFC], m_scode
 ms.assetid: b2b01fa9-7ce2-42a1-842e-40f13dc50da4
 ms.openlocfilehash: 8d49291c51f66ee837f9b31a2ade390cec48c51a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399806"
 ---
 # <a name="cdaoexception-class"></a>CDaoException 클래스
 
@@ -153,7 +153,7 @@ void GetErrorInfo(int nIndex);
 
 - 오류 코드
 
-- 소스
+- Source
 
 - 설명
 
@@ -194,7 +194,7 @@ DAO 예외 및 예제 코드에 대 한 자세한 문서를 참고 [예외: 데�
 |CDaoErrorInfo 멤버|정보|의미|
 |--------------------------|-----------------|-------------|
 |`m_lErrorCode`|오류 코드|DAO 오류 코드|
-|`m_strSource`|소스|개체 또는 원래 오류를 생성 하는 응용 프로그램의 이름|
+|`m_strSource`|Source|개체 또는 원래 오류를 생성 하는 응용 프로그램의 이름|
 |`m_strDescription`|설명|오류와 관련 된 설명 문자열|
 |`m_strHelpFile`|도움말 파일|사용자는 문제에 대 한 정보를 얻을 수는 Windows 도움말 파일에 대 한 경로|
 |`m_lHelpContext`|도움말 컨텍스트|DAO 도움말 파일의 항목에 대 한 컨텍스트 ID|
