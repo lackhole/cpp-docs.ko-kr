@@ -1,6 +1,6 @@
 ---
 title: 명령줄 Visual Studio에서에서 MSVC 도구 집합을 사용 하 여
-description: Microsoft c + + 컴파일러 도구 체인 (MSVC) Visual Studio IDE 외부에서 명령줄을 사용 합니다.
+description: Microsoft C++ Visual Studio IDE 외부에서 명령줄 컴파일러 도구 체인 (MSVC).
 ms.custom: conceptual
 ms.date: 12/10/2018
 helpviewer_keywords:
@@ -11,11 +11,11 @@ helpviewer_keywords:
 - command line [C++], compilers
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ms.openlocfilehash: 21d1c9063a1d6dd154de8d2caca913ea3fd0ce37
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812124"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64342164"
 ---
 # <a name="use-the-msvc-toolset-from-the-command-line"></a>명령줄에서 MSVC 도구 집합을 사용 하 여
 
@@ -147,7 +147,7 @@ MSBuild (msbuild.exe) 및 프로젝트 파일 (.vcxproj)를 사용 하 여 빌�
 명령줄 스위치와 함께 DEVENV (devenv.exe)를 사용 하 여-예를 들어 **/빌드** 또는 **정리/**-수행 하려면 특정 빌드 명령을 Visual Studio IDE를 표시 하지 않고 있습니다. 일반적이 기본 Visual Studio MSBuild의 복잡성을 처리 하도록 할 수 있으므로 직접 MSBuild를 사용 하 여 합니다.
 
 [NMAKE](reference/nmake-reference.md)<br/>
-Windows에서 NMAKE (nmake.exe)를 사용 하 여 기존 메이크파일 기반 c + + 프로젝트를 빌드할 수 있습니다.
+Windows에서 NMAKE (nmake.exe)를 사용 하 여 빌드 C++ 기존 메이크파일을 기준으로 한 프로젝트입니다.
 
 명령줄에서 빌드할 때 F1 명령을 사용할 수 없는 경우에 대 한 빠른 도움말 대신, 경고, 오류 및 메시지에 대 한 정보를 검색 엔진을 사용할 수 있습니다 하거나 오프 라인 도움말 파일을 사용할 수 있습니다. 검색을 사용 하도록 [docs.microsoft.com](https://docs.microsoft.com/cpp/), 페이지의 맨 위에 있는 검색 상자에 검색 문자열을 입력 합니다.
 
@@ -173,7 +173,7 @@ Windows 런타임을 사용하는 C++/CX 프로그램을 만들어 컴파일하�
 [NMAKE 참조](reference/nmake-reference.md)<br/>
 Microsoft Program Maintenance Utility(NMAKE.EXE)에 대해 설명하는 문서의 링크를 제공합니다.
 
-[명령줄 c + +의 MSBuild](msbuild-visual-cpp.md)<br/>
+[명령줄에서 MSBuildC++](msbuild-visual-cpp.md)<br/>
 명령줄에서 msbuild.exe를 사용 하는 방법을 설명 하는 문서에 대 한 링크를 제공 합니다.
 
 ## <a name="related-sections"></a>관련 단원

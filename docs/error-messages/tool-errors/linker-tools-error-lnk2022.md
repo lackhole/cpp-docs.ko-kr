@@ -7,15 +7,15 @@ helpviewer_keywords:
 - LNK2022
 ms.assetid: d2128c73-dde3-4b8e-a9b2-0a153acefb3b
 ms.openlocfilehash: e55202274c5ec3982f784ad6cdf074a5a99e922f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491392"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64345330"
 ---
 # <a name="linker-tools-error-lnk2022"></a>링커 도구 오류 LNK2022
 
-> 메타 데이터 작업이 실패 했습니다 (*HRESULT*): *error_message*
+> metadata operation failed (*HRESULT*) : *error_message*
 
 메타 데이터를 병합 하는 동안 링커 오류가 발생 했습니다. 성공적으로 연결할 메타 데이터 오류를 해결 해야 합니다.
 

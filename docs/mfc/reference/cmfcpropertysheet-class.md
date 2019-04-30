@@ -41,16 +41,15 @@ helpviewer_keywords:
 - CMFCPropertySheet [MFC], SetLook
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
 ms.openlocfilehash: 7e5b553e6a10bee0e5b05bb32b9af3069269ca91
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57294566"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64344223"
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet 클래스
 
-
-  `CMFCPropertySheet` 클래스는 각 속성 페이지가 페이지 탭, 도구 모음 단추, 트리 컨트롤 노드 또는 목록 항목으로 표시되는 속성 시트를 지원합니다.
+`CMFCPropertySheet` 클래스는 각 속성 페이지가 페이지 탭, 도구 모음 단추, 트리 컨트롤 노드 또는 목록 항목으로 표시되는 속성 시트를 지원합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -93,14 +92,11 @@ class CMFCPropertySheet : public CPropertySheet
 
 ## <a name="remarks"></a>설명
 
-
-  `CMFCPropertySheet` 클래스는 속성 시트(탭 대화 상자라고도 함)를 나타냅니다. 
-  `CMFCPropertySheet` 클래스는 다양한 방식으로 속성 페이지를 표시할 수 있습니다.
+`CMFCPropertySheet` 클래스는 속성 시트(탭 대화 상자라고도 함)를 나타냅니다. `CMFCPropertySheet` 클래스는 다양한 방식으로 속성 페이지를 표시할 수 있습니다.
 
 응용 프로그램에서 `CMFCPropertySheet` 클래스를 사용하려면 다음 단계를 수행합니다.
 
-1. 
-  `CMFCPropertySheet` 클래스에서 클래스를 파생시키고 클래스 이름(예: CMyPropertySheet)을 지정합니다.
+1. `CMFCPropertySheet` 클래스에서 클래스를 파생시키고 클래스 이름(예: CMyPropertySheet)을 지정합니다.
 
 1. 생성 된 [CMFCPropertyPage](../../mfc/reference/cmfcpropertypage-class.md) 각 속성 페이지에 대 한 개체입니다.
 
@@ -110,8 +106,7 @@ class CMFCPropertySheet : public CPropertySheet
 
 1. 호출 된 [cmfcpropertysheet:: Addpage](#addpage) 메서드가 각 속성 페이지에 대 한 합니다.
 
-1. 
-  `CMFCPropertySheet` 컨트롤을 만들고 해당 `DoModal` 메서드를 호출합니다.
+1. `CMFCPropertySheet` 컨트롤을 만들고 해당 `DoModal` 메서드를 호출합니다.
 
 ## <a name="illustrations"></a>그림
 
