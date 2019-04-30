@@ -6,11 +6,11 @@ helpviewer_keywords:
 - window objects [MFC], working with
 ms.assetid: f73aa254-90e3-46a9-8e9b-d78b7054a331
 ms.openlocfilehash: c696d880ffa69b0a0399c5282621546c5783ebe4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399488"
 ---
 # <a name="working-with-window-objects"></a>창 개체 작업
 
@@ -20,7 +20,7 @@ ms.locfileid: "57265641"
 
 - 창에 그리기
 
-고유한 자식 창을 포함 하 여 모든 창에서 Windows 메시지 처리를 참조 하세요 [함수에 메시지 매핑](../mfc/reference/mapping-messages-to-functions.md) c + + 창 클래스에 메시지를 매핑합니다. 다음 클래스의 메시지 처리기 멤버 함수를 작성 합니다.
+고유한 자식 창을 포함 하 여 모든 창에서 Windows 메시지 처리를 참조 하세요 [함수에 메시지 매핑](../mfc/reference/mapping-messages-to-functions.md) 메시지를 매핑할 사용자 C++ 창 클래스입니다. 다음 클래스의 메시지 처리기 멤버 함수를 작성 합니다.
 
 뷰에서 발생 framework 응용 프로그램에서 대부분의 그리기입니다 [OnDraw](../mfc/reference/cview-class.md#ondraw) 윈도우의 콘텐츠가 그려야 때마다 멤버 함수를 호출 합니다. 창에 자식 뷰의 경우 있습니다 수 일부 위임할 뷰의 그리기 자식 창에 함으로써 `OnDraw` 창의 멤버 함수 중 하나를 호출 합니다.
 

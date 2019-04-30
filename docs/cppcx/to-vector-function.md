@@ -7,11 +7,11 @@ helpviewer_keywords:
 - to_vector Function
 ms.assetid: 9cdd5123-7243-4def-a1d3-162e0bf6219e
 ms.openlocfilehash: 4fa4e9c620519cc6bb2f96d346ded88b6cc826ae
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404626"
 ---
 # <a name="tovector-function"></a>to_vector 함수
 
@@ -45,4 +45,4 @@ inline ::std::vector<T> to_vector(IVectorView<T>^ v);
 
 ## <a name="see-also"></a>참고자료
 
-[Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)
+[Windows::Foundation::Collections 네임스페이스](../cppcx/windows-foundation-collections-namespace-c-cx.md)

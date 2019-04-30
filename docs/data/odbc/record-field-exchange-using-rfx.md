@@ -5,11 +5,11 @@ helpviewer_keywords:
 - RFX (ODBC), implementing
 ms.assetid: ada8f043-37e6-4d41-9db3-92c997a61957
 ms.openlocfilehash: 2a029f653753363e08b3c4f8b9fceab6295924af
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62395653"
 ---
 # <a name="record-field-exchange-using-rfx"></a>레코드 필드 교환: RFX 사용
 
@@ -42,7 +42,7 @@ ms.locfileid: "59034117"
 
 [RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [레코드 필드 교환: RFX 작동 방식](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>
-[레코드 집합: 합계 및 다른 집계 결과 (ODBC) 구하기](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
+[레코드 집합 합계 및 다른 집계 결과 구하기(ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
 [CRecordset 클래스](../../mfc/reference/crecordset-class.md)<br/>
 [CFieldExchange 클래스](../../mfc/reference/cfieldexchange-class.md)<br/>
 [매크로, 전역 함수 및 전역 변수](../../mfc/reference/mfc-macros-and-globals.md)

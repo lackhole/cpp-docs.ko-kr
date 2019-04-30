@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2593
 ms.assetid: 4a0fe9bb-2163-447d-91f6-1890ed8250f6
 ms.openlocfilehash: c358553a36104b5c389076f5a5ce02f94f85e85a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386917"
 ---
 # <a name="compiler-error-c2593"></a>컴파일러 오류 C2593
 
@@ -39,7 +39,7 @@ int main() {
 }
 ```
 
-이 오류를 사용 하 여 부동 소수점 변수를 직렬화 하 여 발생할 수 있습니다는 `CArchive` 개체입니다. 컴파일러 하 게 식별 하는 `<<` 모호 하다는 연산자입니다. 기본 c + + 형식에 `CArchive` serialize 할 수는 고정 크기 형식 `BYTE`를 `WORD`, `DWORD`, 및 `LONG`합니다. 모든 정수 형식 serialization에 대 한 이러한 형식 중 하나로 캐스팅 되어야 합니다. 부동 소수점 형식을 사용 하 여 보관 해야 합니다 `CArchive::Write()` 멤버 함수입니다.
+이 오류를 사용 하 여 부동 소수점 변수를 직렬화 하 여 발생할 수 있습니다는 `CArchive` 개체입니다. 컴파일러 하 게 식별 하는 `<<` 모호 하다는 연산자입니다. 만 기본 C++ 유형에 `CArchive` serialize 할 수는 고정 크기 형식 `BYTE`, `WORD`, `DWORD`, 및 `LONG`. 모든 정수 형식 serialization에 대 한 이러한 형식 중 하나로 캐스팅 되어야 합니다. 부동 소수점 형식을 사용 하 여 보관 해야 합니다 `CArchive::Write()` 멤버 함수입니다.
 
 다음 예제에서는 부동 소수점 변수에 보관 하는 방법을 보여 줍니다 (`f`)에서 보관 `ar`:
 

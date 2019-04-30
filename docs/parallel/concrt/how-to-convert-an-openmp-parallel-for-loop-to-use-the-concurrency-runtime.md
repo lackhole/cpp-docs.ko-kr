@@ -8,11 +8,11 @@ helpviewer_keywords:
 - parallel loops, converting from OpenMP to the Concurrency Runtime
 ms.assetid: d8a7b656-f86c-456e-9c5d-a7d52f94646e
 ms.openlocfilehash: bc408465f34f0558e9f426ae35b83d4610898414
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413894"
 ---
 # <a name="how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime"></a>방법: OpenMP parallel for 루프 동시성 런타임을 사용 하 여 변환
 
@@ -41,7 +41,7 @@ found 107254 prime numbers.
 
 ## <a name="example"></a>예제
 
-작업할 이전 것을 수정 하는이 예제는 [std:: array](../../standard-library/array-class-stl.md) 네이티브 배열 대신 개체입니다. OpenMP 버전 2.0 및 2.5 에서만 부호 있는 정수 인덱스 형식에 대 한 허용을 `parallel_for` 구문을 병렬에서 c + + 표준 라이브러리 컨테이너의 요소에 액세스 하려면 반복기를 사용할 수 없습니다. PPL 병렬 패턴 라이브러리 ()를 제공 합니다 [concurrency:: parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) c + + 표준 라이브러리에서 제공 하는 것과 같은 반복 컨테이너에 병렬로 작업을 수행 하는 알고리즘입니다. 동일한 분할 논리를 사용 하는 `parallel_for` 알고리즘에서 사용 합니다. `parallel_for_each` 알고리즘에는 c + + 표준 라이브러리와 비슷합니다 [std:: for_each](../../standard-library/algorithm-functions.md#for_each) 알고리즘을 한다는 점을 제외 하는 `parallel_for_each` 알고리즘이 작업을 동시에 실행 합니다.
+작업할 이전 것을 수정 하는이 예제는 [std:: array](../../standard-library/array-class-stl.md) 네이티브 배열 대신 개체입니다. OpenMP 버전 2.0 및 2.5 부호 있는 정수 인덱스 형식에만 허용 하기 때문에 `parallel_for` 구성 요소에 액세스 하는 데 반복기를 사용할 수 없습니다는 C++ 병렬로 표준 라이브러리 컨테이너입니다. PPL 병렬 패턴 라이브러리 ()를 제공 합니다 [concurrency:: parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) 동시에 제공한 것과 같은 반복 컨테이너에 작업을 수행 하는 알고리즘을는 C++ 표준 라이브러리입니다. 동일한 분할 논리를 사용 하는 `parallel_for` 알고리즘에서 사용 합니다. `parallel_for_each` 알고리즘 유사는 C++ 표준 라이브러리 [std:: for_each](../../standard-library/algorithm-functions.md#for_each) 알고리즘을 한다는 점을 제외 하는 `parallel_for_each` 알고리즘이 작업을 동시에 실행.
 
 [!code-cpp[concrt-openmp#10](../../parallel/concrt/codesnippet/cpp/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime_2.cpp)]
 

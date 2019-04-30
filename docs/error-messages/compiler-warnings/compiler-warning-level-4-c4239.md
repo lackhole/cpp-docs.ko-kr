@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C4239
 ms.assetid: a23dc16a-649e-4870-9a24-275de1584fcd
 ms.openlocfilehash: 067d1aef41280f4d14fe799e4f4ee26a9f1b9f5a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401022"
 ---
 # <a name="compiler-warning-level-4-c4239"></a>컴파일러 경고(수준 4) C4239
 
 비표준 확장이 사용 됨: 'token': 'type'에서 'type'로 변환
 
-C + + 표준에서는이 형식으로 변환할 수 없습니다 있지만 허용 된 확장으로 여기 있습니다. 이 경고 뒤에 항상 하나 이상의 줄을 위반 하는 언어 규칙을 설명 하는 설명.
+하 여이 형식으로 변환할 수 없습니다는 C++ standard 하지만 대체가 확장으로 여기입니다. 이 경고 뒤에 항상 하나 이상의 줄을 위반 하는 언어 규칙을 설명 하는 설명.
 
 ## <a name="example"></a>예제
 

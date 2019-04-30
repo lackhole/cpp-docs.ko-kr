@@ -9,11 +9,11 @@ helpviewer_keywords:
 - recordsets, updating
 ms.assetid: 5ceecc06-7a86-43b1-93db-a54fb1e717c7
 ms.openlocfilehash: bf71f562714e2dacfe75540e1e532219b3eb307f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397811"
 ---
 # <a name="recordset-how-recordsets-update-records-odbc"></a>레코드 집합: 레코드 집합 업데이트 (ODBC)를 기록 하는 방법
 
@@ -33,9 +33,9 @@ ms.locfileid: "59034484"
 
 - [레코드 집합 편집 버퍼로](#_core_the_edit_buffer) 하며 [다이너셋와 스냅숏 간의 차이](#_core_dynasets_and_snapshots)합니다.
 
-[레코드 집합: 어떻게 AddNew, Edit 및 삭제 작업 (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md) 레코드 집합의 관점에서 이러한 함수는 작업을 설명 합니다.
+[레코드 집합 어떻게 AddNew, Edit 및 삭제 작업 (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md) 레코드 집합의 관점에서 이러한 함수는 작업을 설명 합니다.
 
-[레코드 집합: 업데이트에 대 한 자세한 정보 (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md) 트랜잭션이 업데이트에 미치는 영향, 레코드 집합을 닫거나 스크롤 업데이트가 진행에서에 미치는 영향 및 다른 사용자의 업데이트를 사용 하 여 업데이트 상호 작용 하는 방법을 설명 하 여 레코드 집합 업데이트 스토리를 완료 합니다.
+[레코드 집합 업데이트에 대 한 자세한 정보 (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md) 트랜잭션이 업데이트에 미치는 영향, 레코드 집합을 닫거나 스크롤 업데이트가 진행에서에 미치는 영향 및 다른 사용자의 업데이트를 사용 하 여 업데이트 상호 작용 하는 방법을 설명 하 여 레코드 집합 업데이트 스토리를 완료 합니다.
 
 ##  <a name="_core_your_role_in_recordset_updating"></a> 레코드 집합 업데이트의 역할
 
@@ -73,4 +73,4 @@ ms.locfileid: "59034484"
 ## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: AddNew를 편집 하 고 작업 (ODBC)를 삭제 하는 방법](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)
+[레코드 집합 AddNew, Edit 및 Delete의 작동 방식(ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)

@@ -12,11 +12,11 @@ helpviewer_keywords:
 - BEGIN_EVENTSINK_MAP macro
 ms.assetid: f9c106db-052f-4e32-82ad-750646aa760b
 ms.openlocfilehash: 8087d84d2203e4f910200acdd1b00e58d14f920e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62394899"
 ---
 # <a name="activex-control-containers-handling-events-from-an-activex-control"></a>ActiveX 컨트롤 컨테이너: ActiveX 컨트롤의 이벤트 처리
 
@@ -28,7 +28,7 @@ ms.locfileid: "57293565"
 > [!NOTE]
 >  이 문서는 대화 상자 기반 ActiveX 컨트롤 컨테이너 프로젝트 라는 컨테이너와 절차 및 코드의 예로 Circ 라는 포함 된 컨트롤을 사용 합니다.
 
-이벤트 단추를 사용 하 여 속성 창에서 ActiveX 컨트롤 컨테이너 응용 프로그램에서 발생할 수 있는 이벤트의 지도 만들 수 있습니다. 라는 단어는 "이벤트 싱크 맵' 이라는이 맵에서 생성 되어 컨트롤 컨테이너 클래스에 이벤트 처리기를 추가 하면 Visual c + +에서 유지 관리 합니다. 이벤트 맵 항목을 사용 하 여 구현 되는 각 이벤트 처리기에 이벤트 처리기 컨테이너 멤버 함수에는 특정 이벤트를 매핑합니다. 이 이벤트 처리기 함수에는 ActiveX 컨트롤 개체에 의해 지정 된 이벤트를 발생 시 호출 됩니다.
+이벤트 단추를 사용 하 여 속성 창에서 ActiveX 컨트롤 컨테이너 응용 프로그램에서 발생할 수 있는 이벤트의 지도 만들 수 있습니다. 라는 단어는 "이벤트 싱크 맵' 이라는이 맵에서 생성 되어 시각적 개체에서 유지 관리 C++ 컨트롤 컨테이너 클래스에 이벤트 처리기를 추가 합니다. 이벤트 맵 항목을 사용 하 여 구현 되는 각 이벤트 처리기에 이벤트 처리기 컨테이너 멤버 함수에는 특정 이벤트를 매핑합니다. 이 이벤트 처리기 함수에는 ActiveX 컨트롤 개체에 의해 지정 된 이벤트를 발생 시 호출 됩니다.
 
 이벤트 싱크 맵에 대 한 자세한 내용은 참조 하세요. [이벤트 싱크 맵](../mfc/reference/event-sink-maps.md) 에 *클래스 라이브러리 참조*합니다.
 

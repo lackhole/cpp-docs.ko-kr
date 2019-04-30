@@ -7,15 +7,15 @@ helpviewer_keywords:
 - C4287
 ms.assetid: 1bf3bff8-6402-4d06-95ba-431678a790a7
 ms.openlocfilehash: da051bb27ec877fd6347469c9f06b09bd4e0db32
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62402101"
 ---
 # <a name="compiler-warning-level-3-c4287"></a>컴파일러 경고(수준 3) C4287
 
-'operator': 서명 되지 않은 또는 음의 상수가 일치 하지 않습니다
+'operator' : unsigned/negative constant mismatch
 
 부호 없는 변수는 음수를 사용 하 여 작업에서 사용 되었습니다.
 

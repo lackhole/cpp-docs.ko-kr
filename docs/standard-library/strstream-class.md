@@ -13,11 +13,11 @@ helpviewer_keywords:
 - std::strstream [C++], str
 ms.assetid: 63f3be31-9e36-42b1-9715-a474a5997e2a
 ms.openlocfilehash: 9494f7ee2508df1971d56c94b929a7212bedb254
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412295"
 ---
 # <a name="strstream-class"></a>strstream 클래스
 
@@ -155,7 +155,7 @@ strstream(char* ptr,
 *count*<br/>
 버퍼의 크기입니다.
 
-*모드 (_m)*<br/>
+*_Mode*<br/>
 버퍼의 입력 및 출력 모드입니다. 자세한 내용은 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)를 참조하세요.
 
 *ptr*<br/>

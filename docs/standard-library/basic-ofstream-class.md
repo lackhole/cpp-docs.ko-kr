@@ -17,11 +17,11 @@ helpviewer_keywords:
 - std::basic_ofstream [C++], swap
 ms.assetid: 3bcc9c51-6dfc-4844-8fcc-22ef57c9dff1
 ms.openlocfilehash: 9a8255a02c46a4ade33bd95635516e5d36fe8e64
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62409800"
 ---
 # <a name="basicofstream-class"></a>basic_ofstream 클래스
 
@@ -124,7 +124,7 @@ basic_ofstream(
 *_Filename*<br/>
 열어야 할 파일의 이름입니다.
 
-*모드 (_m)*<br/>
+*_Mode*<br/>
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
 *_Prot*<br/>
@@ -246,7 +246,7 @@ void open(
 *_Filename*<br/>
 열어야 할 파일의 이름입니다.
 
-*모드 (_m)*<br/>
+*_Mode*<br/>
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
 *_Prot*<br/>

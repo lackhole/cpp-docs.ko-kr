@@ -3,18 +3,18 @@ title: B. 런타임 라이브러리 함수의 스텁
 ms.date: 01/22/2019
 ms.assetid: fdfdabe0-f678-4551-80d5-827b62354427
 ms.openlocfilehash: 1e8d439eefad005c673cfb6c4ea12399b8236fb5
-ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55087264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362987"
 ---
 # <a name="b-stubs-for-run-time-library-functions"></a>B. 런타임 라이브러리 함수의 스텁
 
-이 섹션에서는 OpenMP C 및 c + + API에 정의 된 런타임 라이브러리 함수에 대 한 스텁을 제공 합니다. OpenMP C 및 c + + API를 지원 하지 않는 플랫폼에 이식성을 사용 하도록 설정 하려면 스텁은 제공 됩니다. 이러한 플랫폼에서는 OpenMP 프로그램 이러한 스텁 함수를 포함 하는 라이브러리를 사용 하 여 연결 되어야 합니다. 스텁 함수도 지시문 OpenMP 프로그램에서 무시 됩니다 것을 가정 합니다. 따라서 에뮬레이트할 직렬 의미 합니다.
+이 섹션에서는 OpenMP C로 정의 된 런타임 라이브러리 함수에 대 한 스텁을 제공 하 고 C++ API. OpenMP C를 지원 하지 않는 플랫폼에 이식성을 사용 하도록 설정 하려면 스텁을 제공 되 고 C++ API. 이러한 플랫폼에서는 OpenMP 프로그램 이러한 스텁 함수를 포함 하는 라이브러리를 사용 하 여 연결 되어야 합니다. 스텁 함수도 지시문 OpenMP 프로그램에서 무시 됩니다 것을 가정 합니다. 따라서 에뮬레이트할 직렬 의미 합니다.
 
 > [!NOTE]
-> Lock 함수에 표시 되는 잠금 변수의 이러한 함수를 통해 배타적으로 액세스할 수 있어야 합니다. 이 초기화 하거나 안 그렇지 않은 경우 사용자 프로그램에서 수정 합니다. 사용자에 게 스텁 함수가 사용 하는 체계를 기반으로 하는 잠금을 구현 하기 OpenMP C 및 c + + 구현에서 사용 하는 메커니즘에 대 한 가정을 해야 합니다.
+> Lock 함수에 표시 되는 잠금 변수의 이러한 함수를 통해 배타적으로 액세스할 수 있어야 합니다. 이 초기화 하거나 안 그렇지 않은 경우 사용자 프로그램에서 수정 합니다. 사용자 OpenMP C에서 사용 되는 메커니즘에 대 한 가정을 하지 않아야 하 고 C++ 스텁 함수가 사용 하는 체계를 기반으로 잠금을 구현 하는 구현 합니다.
 
 ## <a name="code"></a>코드
 

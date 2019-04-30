@@ -64,11 +64,11 @@ helpviewer_keywords:
 - unary_negate function [STL/CLR]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
 ms.openlocfilehash: f4a99ea972c6d2ea9b9721664cc75dec257fd7b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393755"
 ---
 # <a name="functional-stlclr"></a>functional(STL/CLR)
 
@@ -141,7 +141,7 @@ generic<typename Arg1,
 
 #### <a name="parameters"></a>매개 변수
 
-*arg1*<br/>
+*Arg1*<br/>
 첫 번째 인수의 형식입니다.
 
 *Arg2*<br/>
@@ -216,7 +216,7 @@ generic<typename Arg1,
 
 #### <a name="parameters"></a>매개 변수
 
-*arg1*<br/>
+*Arg1*<br/>
 첫 번째 인수의 형식입니다.
 
 *Arg2*<br/>
@@ -302,7 +302,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*재미 있는 작업*<br/>
+*Fun*<br/>
 형식 저장된 함수입니다.
 
 ## <a name="member-functions"></a>멤버 함수
@@ -322,7 +322,7 @@ public:
 |연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산합니다.|
-|연산자 delegate_type^()|대리자에 함수를 캐스팅합니다.|
+|operator delegate_type^()|대리자에 함수를 캐스팅합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -401,15 +401,15 @@ template<typename Fun,
 
 #### <a name="template-parameters"></a>템플릿 매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 인수 형식입니다.
 
-*재미 있는 작업*<br/>
+*Fun*<br/>
 함수의 형식입니다.
 
 #### <a name="function-parameters"></a>함수 매개 변수
 
-*함수*<br/>
+*functor*<br/>
 래핑할 함수입니다.
 
 *left*<br/>
@@ -482,15 +482,15 @@ template<typename Fun,
 
 #### <a name="template-parameters"></a>템플릿 매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 인수 형식입니다.
 
-*재미 있는 작업*<br/>
+*Fun*<br/>
 함수의 형식입니다.
 
 #### <a name="function-parameters"></a>함수 매개 변수
 
-*함수*<br/>
+*functor*<br/>
 래핑할 함수입니다.
 
 *right*<br/>
@@ -577,7 +577,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*재미 있는 작업*<br/>
+*Fun*<br/>
 형식 저장된 함수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -597,7 +597,7 @@ public:
 |연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산합니다.|
-|연산자 delegate_type^()|대리자에 함수를 캐스팅합니다.|
+|operator delegate_type^()|대리자에 함수를 캐스팅합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -682,7 +682,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*재미 있는 작업*<br/>
+*Fun*<br/>
 형식 저장된 함수입니다.
 
 ## <a name="member-functions"></a>멤버 함수
@@ -702,7 +702,7 @@ public:
 |연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산합니다.|
-|연산자 delegate_type^()|대리자에 함수를 캐스팅합니다.|
+|operator delegate_type^()|대리자에 함수를 캐스팅합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -787,7 +787,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수 및 반환 값입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -806,7 +806,7 @@ public:
 |연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산합니다.|
-|연산자 delegate_type^()|대리자에 함수를 캐스팅합니다.|
+|operator delegate_type^()|대리자에 함수를 캐스팅합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -888,7 +888,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -907,7 +907,7 @@ public:
 |연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산합니다.|
-|연산자 delegate_type^()|대리자에 함수를 캐스팅합니다.|
+|operator delegate_type^()|대리자에 함수를 캐스팅합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -989,7 +989,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -1090,7 +1090,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -1191,7 +1191,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -1292,7 +1292,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -1393,7 +1393,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -1492,7 +1492,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -1584,7 +1584,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -1685,7 +1685,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수 및 반환 값입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -1786,7 +1786,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수 및 반환 값입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -1887,7 +1887,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수 및 반환 값입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -1986,7 +1986,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -2078,7 +2078,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -2163,12 +2163,12 @@ template<typename Fun>
 
 #### <a name="template-parameters"></a>템플릿 매개 변수
 
-*재미 있는 작업*<br/>
+*Fun*<br/>
 함수의 형식입니다.
 
 #### <a name="function-parameters"></a>함수 매개 변수
 
-*함수*<br/>
+*functor*<br/>
 래핑할 함수입니다.
 
 ### <a name="remarks"></a>설명
@@ -2235,12 +2235,12 @@ template<typename Fun>
 
 #### <a name="template-parameters"></a>템플릿 매개 변수
 
-*재미 있는 작업*<br/>
+*Fun*<br/>
 함수의 형식입니다.
 
 #### <a name="function-parameters"></a>함수 매개 변수
 
-*함수*<br/>
+*functor*<br/>
 래핑할 함수입니다.
 
 ### <a name="remarks"></a>설명
@@ -2332,7 +2332,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 형식 인수 및 반환 값입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -2418,7 +2418,7 @@ generic<typename Arg,
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 인수 형식입니다.
 
 *결과*<br/>
@@ -2483,7 +2483,7 @@ generic<typename Arg>
 
 #### <a name="parameters"></a>매개 변수
 
-*arg*<br/>
+*Arg*<br/>
 인수 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -2561,7 +2561,7 @@ public:
 
 #### <a name="parameters"></a>매개 변수
 
-*재미 있는 작업*<br/>
+*Fun*<br/>
 형식 저장된 함수입니다.
 
 ### <a name="member-functions"></a>멤버 함수
@@ -2579,7 +2579,7 @@ public:
 |연산자|설명|
 |--------------|-----------------|
 |operator()|원하는 함수를 계산합니다.|
-|delegate_type ^|대리자에 함수를 캐스팅합니다.|
+|delegate_type^|대리자에 함수를 캐스팅합니다.|
 
 ### <a name="remarks"></a>설명
 

@@ -14,11 +14,11 @@ helpviewer_keywords:
 - formats [C++], exception codes
 ms.assetid: be1376c3-c46a-4f52-ad1d-c2362840746a
 ms.openlocfilehash: 49ee800bafff017c29b73c5f6fd64318009a140a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403466"
 ---
 # <a name="raising-software-exceptions"></a>소프트웨어 예외 발생
 
@@ -38,7 +38,7 @@ ms.locfileid: "50562047"
 
 |비트|권장하는 이진 설정|설명|
 |----------|--------------------------------|-----------------|
-|31-30|11|이러한 두 비트는 코드의 기본 상태(11 = 오류, 00 = 성공, 01 = 정보, 10 = 경고)를 나타냅니다.|
+|31-30|11|이러한 두 비트는 코드의 기본 상태를 설명합니다.  11 = 오류, 00 = 성공, 01 = 정보, 10 = 경고 합니다.|
 |29|1|클라이언트 비트. 사용자 정의 코드의 경우 1로 설정합니다.|
 |28|0|예약된 비트. 0으로 설정된 상태로 둡니다.|
 

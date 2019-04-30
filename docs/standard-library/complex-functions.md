@@ -43,11 +43,11 @@ helpviewer_keywords:
 - std::tan [C++]
 - std::tanh [C++]
 ms.openlocfilehash: a67955da21c1229c3492d5b52dd6e14c9caa33fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389205"
 ---
 # <a name="ltcomplexgt-functions"></a>&lt;complex&gt; 함수
 
@@ -934,7 +934,7 @@ complex<Type> pow(const Type& _Base, const complex<Type>& _Power);
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Base*<br/>
 복소수이거나 멤버 함수에 의해 거듭제곱되는 밑인 복소수의 매개 변수 형식을 가진 숫자입니다.
 
 *_Power*<br/>
@@ -1133,7 +1133,7 @@ complex<Type> sin(const complex<Type>& complexNum);
 
 복소수 사인을 정의하는 항:
 
-sin ( *z*) = (1/2 *합니까*)\*(exp ( *iz*)-exp (- *iz*))
+sin ( *z*) = (1/2 *i*)\*( exp ( *iz*) - exp (- *iz*) )
 
 sin ( *z*) = sin ( *a + bi*) = sin ( *a*) cosh ( *b*) + icos ( *a*) sinh ( *b*)
 
@@ -1481,7 +1481,7 @@ complex<Type> tanh(const complex<Type>& complexNum);
 
 복소수 쌍곡 코탄젠트를 정의하는 항:
 
-tanh ( *z*) = sinh ( *z*) cosh / ( *z*) = (exp ( *z*)-exp (- *z*)) / (exp ( *z*) + exp (- *z*))
+tanh ( *z*) = sinh ( *z*) / cosh ( *z*) = ( exp ( *z*) - exp (- *z*) ) / ( exp ( *z*) + exp (- *z*) )
 
 ### <a name="example"></a>예제
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - C2223
 ms.assetid: e4506f0f-0317-4a96-8a90-877a156d7939
 ms.openlocfilehash: 00bbce77a49af380582820362685b4f05cdc2e73
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368154"
 ---
 # <a name="compiler-error-c2223"></a>컴파일러 오류 C2223
 
-'->identifier' 왼쪽은 구조체/공용 구조체를 가리켜야 합니다.
+'-> 식별자' 왼쪽은 구조체/공용 구조체를 가리켜야
 
 `->` 왼쪽의 피연산자가 클래스, 구조체 또는 공용 구조체에 대한 포인터가 아닙니다.
 

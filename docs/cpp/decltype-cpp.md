@@ -1,5 +1,5 @@
 ---
-title: decltype (c + +)
+title: decltype (C++)
 ms.date: 11/04/2016
 f1_keywords:
 - decltype_cpp
@@ -10,13 +10,13 @@ helpviewer_keywords:
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
 ms.openlocfilehash: 6c1c91aec7d974836b1ec031a1e8b38e8abb65ce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399085"
 ---
-# <a name="decltype--c"></a>decltype (c + +)
+# <a name="decltype--c"></a>decltype (C++)
 
 합니다 **decltype** 형식 지정자는 지정 된 식의 형식을 생성 합니다. 합니다 **decltype** 형식 지정자를 함께 합니다 [auto 키워드](../cpp/auto-cpp.md), 템플릿 라이브러리를 작성 하는 개발자에 게 주로 유용 합니다. 사용 하 여 **자동** 하 고 **decltype** 반환 하는 템플릿 함수를 선언 하 형식이 해당 템플릿 인수의 형식에 종속 됩니다. 또는 사용 하 여 **자동** 하 고 **decltype** 다른 함수에 대 한 호출을 래핑한 다음 래핑된 함수의 반환 형식을 반환 하는 템플릿 함수를 선언 합니다.
 
@@ -30,7 +30,7 @@ decltype( expression )
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*식*|식입니다. 자세한 내용은 [식을](../cpp/expressions-cpp.md)합니다.|
+|*expression*|식입니다. 자세한 내용은 [식을](../cpp/expressions-cpp.md)합니다.|
 
 ## <a name="return-value"></a>반환 값
 
@@ -38,7 +38,7 @@ decltype( expression )
 
 ## <a name="remarks"></a>설명
 
-합니다 **decltype** 형식 지정자 Visual c + + 2010 이상 버전에서 지원 되 고 네이티브 또는 관리 코드에 사용 될 수 있습니다. `decltype(auto)`(C++14)는 Visual Studio 2015 이상에서 지원됩니다.
+합니다 **decltype** 시각적 개체의 형식 지정자는 C++ 2010 이상 버전에서는 네이티브 또는 관리 코드를 사용 하 여 사용할 수 있습니다. `decltype(auto)`(C++14)는 Visual Studio 2015 이상에서 지원됩니다.
 
 컴파일러의 형식을 확인 하려면 다음 규칙을 사용 합니다 *식* 매개 변수입니다.
 
@@ -99,7 +99,7 @@ decltype(auto) myFunc(T&& t, U&& u)
 
 ## <a name="decltype-and-forwarding-functions-c11"></a>Decltype 및 전달 함수(C++11)
 
-전달 함수는 다른 함수에 대한 호출을 래핑합니다. 해당 인수 또는 이러한 인수를 포함하는 식의 결과를 다른 함수로 전달하는 함수 템플릿을 고려해 보세요. 또한 전달 함수는 다른 함수를 호출한 결과를 반환합니다. 이 시나리오에서 전달 함수의 반환 형식은 래핑된 함수의 반환 형식과 동일해야 합니다.
+전달 함수는 다른 함수에 대한 호출을 래핑합니다. 해당 인수 또는 이러한 인수를 포함하는 식의 결과를 다른 함수로 전달하는 함수 템플릿을 고려해 보십시오. 또한 전달 함수는 다른 함수를 호출한 결과를 반환합니다. 이 시나리오에서 전달 함수의 반환 형식은 래핑된 함수의 반환 형식과 동일해야 합니다.
 
 이 시나리오에서는 없이 적절 한 형식 식을 쓸 수 없습니다는 **decltype** 형식 지정자입니다. 합니다 **decltype** 형식 지정자는 함수 참조 형식을 반환 하는 여부에 대 한 필요한 정보를 잃지 않기 때문에 제네릭 전달 함수를 사용 합니다. 전달 함수의 코드 예제는 이전 `myFunc` 템플릿 함수 예제를 참조하세요.
 
@@ -179,7 +179,7 @@ x3.Dump() = 42
 
 ## <a name="example"></a>예제
 
-**Visual Studio 2017 이상:** 컴파일러 템플릿에 인스턴스화가 아니라 선언 하는 경우 decltype 인수를 구문 분석 합니다. 따라서 decltype 인수에 독립적 특수화가 있는 경우 이 특수화는 인스턴스화 시점으로 연기되지 않고 즉시 처리되며 결과 오류가 이 시점에 진단됩니다.
+**Visual Studio 2017 이상:** 템플릿에 인스턴스화가 아니라 선언 하는 경우 컴파일러가 decltype 인수를 구문 분석 합니다. 따라서 decltype 인수에 독립적 특수화가 있는 경우 이 특수화는 인스턴스화 시점으로 연기되지 않고 즉시 처리되며 결과 오류가 이 시점에 진단됩니다.
 
 다음 예제에서는 선언 시점에 발생한 컴파일러 오류를 보여 줍니다.
 

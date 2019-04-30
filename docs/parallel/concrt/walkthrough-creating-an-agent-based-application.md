@@ -6,11 +6,11 @@ helpviewer_keywords:
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
 ms.openlocfilehash: 1d55c9879a3dd90bb4a40b61a3bf958dbe960bc3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62378065"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>연습: 에이전트 기반 응용 프로그램 만들기
 
@@ -40,13 +40,13 @@ ms.locfileid: "57290094"
 
 ##  <a name="createapplication"></a> 콘솔 응용 프로그램 만들기
 
-이 섹션에는 프로그램을 사용 하는 헤더 파일을 참조 하는 Visual c + + 콘솔 응용 프로그램을 만드는 방법을 보여 줍니다.
+이 섹션에는 시각적 개체를 만드는 방법을 보여 줍니다 C++ 콘솔 응용 프로그램에서 사용할 헤더 파일을 참조 하는 프로그램입니다.
 
-#### <a name="to-create-a-visual-c-application-by-using-the-win32-console-application-wizard"></a>Win32 콘솔 응용 프로그램 마법사를 사용 하 여 Visual c + + 응용 프로그램을 만들려면
+#### <a name="to-create-a-visual-c-application-by-using-the-win32-console-application-wizard"></a>시각적 개체를 만들려면 C++ Win32 콘솔 응용 프로그램 마법사를 사용 하 여 응용 프로그램
 
 1. 에 **파일** 메뉴에서 클릭 **새로 만들기**를 클릭 하 고 **프로젝트** 표시할 합니다 **새 프로젝트** 대화 상자.
 
-1. 에 **새 프로젝트** 대화 상자에서를 **Visual c + +** 에 노드를 **프로젝트 형식** 창과 선택 **Win32 콘솔 응용 프로그램** 에 **템플릿** 창입니다. 예를 들어, 프로젝트 이름을 입력 `BasicAgent`를 클릭 하 고 **확인** 표시할 합니다 **Win32 콘솔 응용 프로그램 마법사**합니다.
+1. 에 **새 프로젝트** 대화 상자에서를 **Visual C++**  에 노드를 **프로젝트 형식** 창과 선택 **Win32 콘솔 응용 프로그램** 에 **템플릿** 창입니다. 예를 들어, 프로젝트 이름을 입력 `BasicAgent`를 클릭 하 고 **확인** 표시할 합니다 **Win32 콘솔 응용 프로그램 마법사**합니다.
 
 1. 에 **Win32 콘솔 응용 프로그램 마법사** 대화 상자, 클릭 **마침**합니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "57290094"
 
 #### <a name="to-create-the-filereader-class"></a>File_reader 클래스를 만들려면
 
-1. 새 c + + 헤더 파일을 프로젝트에 추가 합니다. 이렇게 하려면 마우스 오른쪽 단추로 클릭 합니다 **헤더 파일** 노드에서 **솔루션 탐색기**, 클릭 **추가**를 클릭 하 고 **새 항목**. 에 **템플릿을** 창 **헤더 파일 (.h)** 합니다. 에 **새 항목 추가** 대화 상자에서 `file_reader.h` 에 **이름** 상자 하 고 클릭 **추가**합니다.
+1. 새 C++ 헤더 파일을 프로젝트입니다. 이렇게 하려면 마우스 오른쪽 단추로 클릭 합니다 **헤더 파일** 노드에서 **솔루션 탐색기**, 클릭 **추가**를 클릭 하 고 **새 항목**. 에 **템플릿을** 창 **헤더 파일 (.h)** 합니다. 에 **새 항목 추가** 대화 상자에서 `file_reader.h` 에 **이름** 상자 하 고 클릭 **추가**합니다.
 
 1. File_reader.h에서 다음 코드를 추가 합니다.
 

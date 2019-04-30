@@ -6,11 +6,11 @@ helpviewer_keywords:
 - context class
 ms.assetid: 22f4b9c0-ca22-4a68-90ba-39e99ea76696
 ms.openlocfilehash: 92f77fade972bff1528bc9a22416670354c70f34
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57300767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62366708"
 ---
 # <a name="how-to-use-the-context-class-to-implement-a-cooperative-semaphore"></a>방법: 상황에 맞는 클래스를 사용 하 여 공동 작업 세마포 구현
 

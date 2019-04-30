@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 ms.assetid: ec2e6759-5a8e-41d8-a275-99af8ff6f32e
 ms.openlocfilehash: 438c95c56961cc587b64e494678ade191f18ab6b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392806"
 ---
 # <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX 컨트롤: 고급 속성 구현
 
@@ -54,7 +54,7 @@ ms.locfileid: "57266967"
 
 읽기 전용 이거나 쓰기 전용 이어야 하는 기존 속성을 변경 하려는 경우 디스패치 맵 수동으로 편집한 control 클래스에서 불필요 한 Set 또는 Get 함수를 제거 합니다.
 
-정상적으로 Set 또는 Get 함수를 제공 하 고 호출 수는 속성을 조건에 따라 읽기 전용 또는 쓰기 전용 (예: 컨트롤 특정 모드에서 작동 하는 경우에)를 사용 하도록 하려는 경우는 `SetNotSupported` 또는 `GetNotSupported` 적절 한 작동 합니다. 예를 들면,
+정상적으로 Set 또는 Get 함수를 제공 하 고 호출 수는 속성을 조건에 따라 읽기 전용 또는 쓰기 전용 (예: 컨트롤 특정 모드에서 작동 하는 경우에)를 사용 하도록 하려는 경우는 `SetNotSupported` 또는 `GetNotSupported` 적절 한 작동 합니다. 예를 들어:
 
 [!code-cpp[NVC_MFC_AxUI#29](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-property-implementation_1.cpp)]
 

@@ -5,11 +5,11 @@ f1_keywords:
 - C4868
 ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
 ms.openlocfilehash: d0bc8716e53e71c52f6a31036a95d0b4cefedd79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62388711"
 ---
 # <a name="compiler-warning-level-4-c4868"></a>컴파일러 경고 (수준 4) C4868
 
@@ -17,7 +17,7 @@ ms.locfileid: "50481319"
 
 중괄호로 묶인된 이니셜라이저 목록 요소가 왼쪽에서 오른쪽 순서로 계산 되도록 합니다. 두 가지 경우에 컴파일러는이 순서를 보장할 수 없습니다: 첫 번째 값에서 전달 되는 개체 요소의 일부 경우는 로 컴파일하는 경우 두 번째는 `/clr` 요소 중 일부는 개체의 필드 또는 배열 요소가 있습니다. 컴파일러 왼쪽-오른쪽으로 계산 하지 못할 경우 경고를 C4868 내보냅니다.
 
-Visual c + + 2015 업데이트 2에 대해 수행한 컴파일러 규칙 작업의 결과로이 경고를 생성할 수 있습니다. 이제 Visual c + + 2015 업데이트 2 이전에 컴파일된 코드 C4868를 생성할 수 있습니다.
+이 경고는 시각적 개체에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 됩니다 C++ 2015 업데이트 2입니다. Visual 이전에 컴파일된 코드 C++ 2015 업데이트 2 C4868 생성할 이제 수 있습니다.
 
 기본적으로 이 경고는 해제되어 있습니다. 사용 하 여 `/Wall` 이 경고를 활성화 합니다.
 

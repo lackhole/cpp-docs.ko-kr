@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2555
 ms.assetid: 5e49ebb8-7c90-457a-aa12-7ca7ab6574b2
 ms.openlocfilehash: cc6c3a3a29665ccf65b77a3d9866986cb0a46b9e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353229"
 ---
 # <a name="compiler-error-c2555"></a>컴파일러 오류 C2555
 
@@ -21,7 +21,7 @@ ms.locfileid: "50528858"
 
 이 오류를 해결 하려면 가상 함수를 호출한 후 반환 값을 캐스팅 합니다.
 
-/Clr을 사용 하 여 컴파일하는 경우에이 오류가 나타날 수 있습니다.   예를 들어, Visual c + + 다음 C# 선언에 해당 합니다.
+/Clr을 사용 하 여 컴파일하는 경우에이 오류가 나타날 수 있습니다.   예를 들어, 시각적 개체 C++ 다음과 같음 C# 선언 합니다.
 
 ```
 Guid[] CheckSources(Guid sourceID, Guid[] carouselIDs);

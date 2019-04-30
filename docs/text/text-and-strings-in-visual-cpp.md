@@ -25,11 +25,11 @@ helpviewer_keywords:
 - MBCS [C++], international programming
 ms.assetid: a1bb27ac-abe5-4c6b-867d-f761d4b93205
 ms.openlocfilehash: c6083fcf9db8236df15d1cb5e7de4cc15fe5916e
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411801"
 ---
 # <a name="text-and-strings-in-visual-c"></a>Visual C++의 텍스트 및 문자열
 
@@ -46,10 +46,10 @@ Visual C++이 지원하는 유니코드 및 MBCS 프로그래밍 관련 내용�
 [멀티 바이트 문자 집합 (MBCS)에 대 한 지원](../text/support-for-multibyte-character-sets-mbcss.md)<br/>
 유니코드에 대한 대안으로, 단일 바이트로 표현할 수 없는 일본어, 중국어 등과 같은 문자 집합을 지원하는 멀티 바이트 문자 집합(MBCS)에 대해 설명합니다.
 
-[Tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)<br/>
+[tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)<br/>
 다양한 데이터 형식, 루틴 및 기타 개체에 대해 Microsoft가 제공하는 일반 텍스트 매핑을 설명합니다.
 
-[방법: 다양 한 문자열 형식 간 변환](../text/how-to-convert-between-various-string-types.md)<br/>
+[방법: 다양한 문자열 형식 간 변환](../text/how-to-convert-between-various-string-types.md)<br/>
 Visual C++에서 다양한 문자열 형식을 다른 문자열로 변환하는 방법에 대해 설명합니다.
 
 ## <a name="related-sections"></a>관련 단원

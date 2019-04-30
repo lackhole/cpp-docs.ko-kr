@@ -99,11 +99,11 @@ helpviewer_keywords:
 - operator>= member [STL/CLR]
 ms.assetid: dd669da3-3c0e-45e9-8596-f6b483720941
 ms.openlocfilehash: ff5ddcfa101baf4c85145d1c6d64a6a3b9e7df58
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62393768"
 ---
 # <a name="deque-stlclr"></a>deque(STL/CLR)
 
@@ -209,7 +209,7 @@ template<typename Value>
 |<xref:System.Collections.Generic.IEnumerable%601>|형식화 된 요소 시퀀스입니다.|
 |<xref:System.Collections.Generic.ICollection%601>|형식화 된 요소 그룹을 유지 합니다.|
 |<xref:System.Collections.Generic.IList%601>|형식화 된 요소의 순서가 지정 된 그룹을 유지 합니다.|
-|IDeque < 값\>|제네릭 컨테이너를 유지 합니다.|
+|IDeque<Value\>|제네릭 컨테이너를 유지 합니다.|
 
 ## <a name="remarks"></a>설명
 

@@ -9,11 +9,11 @@ helpviewer_keywords:
 - pragmas, data_seg
 ms.assetid: 65c66466-4c98-494f-93af-106beb4caf78
 ms.openlocfilehash: 414fc542aa3f84f985e326960d8cf73b67fd1580
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62389309"
 ---
 # <a name="dataseg"></a>data_seg
 
@@ -38,11 +38,11 @@ ms.locfileid: "50456383"
 
 *식별자* 여러 레코드는 단일으로 팝 될 수 있습니다 **pop** 명령입니다.
 
-*"세그먼트 이름이"*<br/>
+*"segment-name"*<br/>
 (선택 사항) 세그먼트의 이름입니다. 와 함께 사용할 경우 **pop**, 스택이 팝 되 고 *세그먼트 이름이* 활성 세그먼트 이름이 됩니다.
 
-*"세그먼트-클래스"*<br/>
-(선택 사항) 버전 2.0 이전의 c + +를 사용 하 여 호환성을 위해 포함 되어 있습니다. 무시됩니다.
+*"segment-class"*<br/>
+(선택 사항) 호환성을 위해 포함 된 C++ 버전 2.0 이전 합니다. 무시됩니다.
 
 ## <a name="remarks"></a>설명
 

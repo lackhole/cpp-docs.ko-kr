@@ -15,11 +15,11 @@ helpviewer_keywords:
 - CMFCDesktopAlertDialog [MFC], PreTranslateMessage
 ms.assetid: a53c60aa-9607-485b-b826-ec64962075f6
 ms.openlocfilehash: 02086e09ca3229fae28359b1ea81e4708c5d1865
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403713"
 ---
 # <a name="cmfcdesktopalertdialog-class"></a>CMFCDesktopAlertDialog 클래스
 
@@ -48,8 +48,7 @@ class CMFCDesktopAlertDialog : public CDialogEx
 
 다음 단계를 수행하여 팝업 창에 사용자 지정 대화 상자를 표시합니다.
 
-1. 
-  `CMFCDesktopAlertDialog`에서 클래스를 파생합니다.
+1. `CMFCDesktopAlertDialog`에서 클래스를 파생합니다.
 
 1. 프로젝트 리소스에서 자식 대화 상자 템플릿을 만듭니다.
 

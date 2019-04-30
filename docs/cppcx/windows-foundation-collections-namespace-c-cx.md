@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Windows::Foundation::Collections Namespace (C++/CX)
 ms.assetid: 04bd3543-e30f-4fd2-95ee-272a3fcd0158
 ms.openlocfilehash: 9a8118886f4556343f2e4a494fdbea6d240d1c77
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404613"
 ---
 # <a name="windowsfoundationcollections-namespace-ccx"></a>Windows::Foundation::Collections 네임스페이스(C++/CX)
 
-C + + /cli CX Vector, VectorView, 지도 및 MapView 컬렉션 클래스를 사용 하 여 단순화 하는 함수를 사용 하 여 Windows::Foundation::Collections 네임 스페이스를 보완 합니다.
+C++/CX는 Vector, VectorView, 지도 및 MapView 컬렉션 클래스를 사용 하 여 단순화 하는 함수를 사용 하 여 Windows::Foundation::Collections 네임 스페이스를 보완 합니다.
 
 ## <a name="syntax"></a>구문
 

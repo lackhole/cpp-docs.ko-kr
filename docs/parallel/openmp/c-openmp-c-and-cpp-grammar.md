@@ -1,15 +1,15 @@
 ---
-title: C. OpenMP C 및 c + + 문법
+title: C. OpenMP C 및 C++ 문법
 ms.date: 01/16/2019
 ms.assetid: 97a878ce-1533-47f7-a134-66fcbff48524
 ms.openlocfilehash: 85e18161079b49e83cc9fedb3184ee220c889e75
-ms.sourcegitcommit: 2ebbf8093fadb9a1b78a4381439bcd5c01a89267
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54397357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362948"
 ---
-# <a name="c-openmp-c-and-c-grammar"></a>C. OpenMP C 및 c + + 문법
+# <a name="c-openmp-c-and-c-grammar"></a>C. OpenMP C 및 C++ 문법
 
 [C.1 표기법](#c1-notation)<br/>
 [C.2 규칙](#c2-rules)
@@ -29,9 +29,9 @@ ms.locfileid: "54397357"
 
 ## <a name="c2-rules"></a>C.2 규칙
 
-표기법은 6.1 C 표준의 섹션에 설명 되어 있습니다. 이 문법 부록 OpenMP C 및 c + + 지시문에 대 한 기본 언어 문법을 확장을 보여 줍니다.
+표기법은 6.1 C 표준의 섹션에 설명 되어 있습니다. 이 문법 부록 OpenMP C에 대 한 기본 언어 문법에 대 한 확장을 표시 하 고 C++ 지시문입니다.
 
-**/\* c + + (ISO/IEC 14882:1998) \*/**
+**/\* C++ (ISO/IEC 14882:1998) \*/**
 
 *statement-seq*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*statement*<br/>
@@ -229,7 +229,7 @@ ms.locfileid: "54397357"
 &nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*variable-list*   `,` *identifier*
 
-**/\* c + + \*/**
+**/\* 에서C++ \*/**
 
 *variable-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*id-expression*<br/>

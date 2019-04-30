@@ -42,11 +42,11 @@ helpviewer_keywords:
 - CPalette class [MFC], HPALETTE handle type
 ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
 ms.openlocfilehash: 58ecf680d64f39ab61589a0ad668c15d1a9cd68c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62359068"
 ---
 # <a name="graphic-objects"></a>그래픽 개체
 
@@ -81,8 +81,7 @@ Windows는 디바이스 컨텍스트에서 사용할 수 있는 다양한 그리
 
 #### <a name="to-create-a-graphic-object-in-a-device-context"></a>디바이스 컨텍스트에서 그래픽 개체를 만들려면
 
-1. 스택 프레임에 그래픽 개체를 정의합니다. 
-  `CreatePen`과 같은 형식별 만들기 함수를 사용하여 개체를 초기화합니다. 또는 생성자에서 개체를 초기화합니다. 설명을 참조 하세요 [1 단계 및 2 단계 만들기](../mfc/one-stage-and-two-stage-construction-of-objects.md), 예제 코드를 제공 하는 합니다.
+1. 스택 프레임에 그래픽 개체를 정의합니다. `CreatePen`과 같은 형식별 만들기 함수를 사용하여 개체를 초기화합니다. 또는 생성자에서 개체를 초기화합니다. 설명을 참조 하세요 [1 단계 및 2 단계 만들기](../mfc/one-stage-and-two-stage-construction-of-objects.md), 예제 코드를 제공 하는 합니다.
 
 1. [개체를 현재 장치 컨텍스트로 선택](../mfc/selecting-a-graphic-object-into-a-device-context.md)를 하기 전에 선택한 이전 그래픽 개체를 저장 합니다.
 
