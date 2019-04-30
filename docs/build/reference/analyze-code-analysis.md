@@ -30,15 +30,15 @@ ms.locfileid: "62273159"
 
 ## <a name="arguments"></a>인수
 
-/analyze 결과적으로 기본 모드에서 분석 합니다. 분석 출력으로 이동 합니다 **출력** 다른 오류 메시지와 마찬가지로 창입니다. 사용 하 여 **/analyze-** 에 분석을 명시적으로 해제 합니다.
+/analyze 기본 모드에서 분석을 시작합니다. 분석 출력은 다른 오류 메시지와 마찬가지로 출력 창에 나타납니다. 분석을 명시적으로 끄려면 **/analyze-**를 사용하세요.
 
-/analyze: WX 지정 **/analyze: WX-** 사용 하 여 컴파일하는 경우 즉 코드 분석 경고는 오류로 처리 하지 **/WX**합니다. 자세한 내용은 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX(경고 수준)](compiler-option-warning-level.md)를 참조하세요.
+/analyze: WX- **/analyze: WX-** 지정은 / WX를 사용하여 컴파일할 때 코드 분석 경고가 오류로 처리되지 않음을 의미합니다. 자세한 내용은 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX(경고 수준)](compiler-option-warning-level.md)를 참조하세요.
 
 /analyze: log `filename` 자세한 분석기 결과 지정 된 파일에 XML로 작성 된 `filename`합니다.
 
 /analyze: 분석기 출력을 해제 Turns quiet 합니다 **출력** 창입니다.
 
-/analyze: stacksize `number` 는 `number` 이 옵션을 사용 하 여 사용 되는 매개 변수 (바이트)는 경고에 대 한 스택 프레임의 크기를 지정 [C6262](/visualstudio/code-quality/c6262) 생성 됩니다. 이 매개 변수가 지정되지 않은 경우 스택 프레임 크기는 기본적으로 16KB입니다.
+/analyze: stacksize `number` 이 옵션과 함께 사용되는 `number` 매개 변수는 경고 C6262가 생성되는 스택 프레임의 크기(바이트)를 지정합니다. 이 매개 변수를 지정하지 않으면 스택 프레임 크기는 기본적으로 16KB입니다.
 
 /analyze: max_paths `number` 이 옵션과 함께 사용되는 `number` 매개 변수는 분석할 코드 경로의 최대 수를 지정합니다. 이 매개 변수가 지정되지 않은 경우 숫자는 기본적으로 256입니다. 값이 클수록 더욱 철저한 검사를 수행하지만 분석 시간이 길어질 수 있습니다.
 
