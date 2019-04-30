@@ -35,7 +35,7 @@ Intel 고급 벡터 확장명 2 명령을 사용하도록 설정합니다.
 
 ### <a name="to-set-the-archavx-or-archavx2-compiler-option-in-visual-studio"></a>Visual Studio에서 /arch:AVX 또는 /arch:AVX2 컴파일러 옵션을 설정하려면
 
-1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트에 대한 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **구성 속성**, **C/C++** 폴더를 선택합니다.
 
