@@ -15,11 +15,11 @@ helpviewer_keywords:
 - decrement operators [C++]
 ms.assetid: 0204d5c8-51b0-4108-b8a1-074c5754d89c
 ms.openlocfilehash: e1a87fe4815a75b97616d7b11a4b9aa4ae65eb9f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392143"
 ---
 # <a name="postfix-increment-and-decrement-operators--and---"></a>후위 증가 및 감소 연산자: ++ 및 --
 
@@ -48,7 +48,7 @@ i++;
 
 후 위 증가 및 감소 연산자의 피연산자는 수정할 수 있어야 합니다. (되지 **const**) 산술 또는 포인터 형식의 l-value입니다. 결과의 형식은의 것과 동일 합니다 *후 위 식*, 있지만 l-value는 더 이상.
 
-**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 피연산자 후 위 증가 또는 감소 연산자는 형식의 되지 않을 수 있습니다 **bool**합니다.
+**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 피연산자는 후 위 증가 또는 감소 연산자는 형식의 되지 않을 수 있습니다 **bool**합니다.
 
 다음 코드에서는 후위 증가 연산자에 대해 설명합니다.
 

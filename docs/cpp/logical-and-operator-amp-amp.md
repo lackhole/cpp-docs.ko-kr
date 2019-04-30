@@ -9,11 +9,11 @@ helpviewer_keywords:
 - '&& operator'
 ms.assetid: 50cfa664-a8c4-4b31-9bab-2f80d7cd2d1f
 ms.openlocfilehash: 0843ba95467c3ae0d735476de48a8195a59788f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62368658"
 ---
 # <a name="logical-and-operator-ampamp"></a>논리 AND 연산자: &amp;&amp;
 
@@ -41,7 +41,7 @@ char *pch = 0;
 
 `pch`가 null(0)인 경우 식의 오른쪽이 계산되지 않습니다. 따라서 null 포인터를 통해 할당할 수 없습니다.
 
-## <a name="operator-keyword-for-"></a>&&에 대한 연산자 키워드
+## <a name="operator-keyword-for-"></a>에 대 한 연산자 키워드 & &
 
 합니다 **하 고** 연산자는 해당 하는 텍스트 **&&** 합니다. 두 가지 방법으로 액세스 하는 **및** 프로그램에서 연산자: 헤더 파일을 포함 `iso646.h`,으로 컴파일하는 [/Za](../build/reference/za-ze-disable-language-extensions.md) (언어 확장명 사용 안 함) 컴파일러 옵션.
 
@@ -69,6 +69,6 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[C + + 기본 제공 연산자 우선순위 및 결합성](cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++기본 제공 연산자 우선순위 및 결합성](cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [C 논리 연산자](../c-language/c-logical-operators.md)

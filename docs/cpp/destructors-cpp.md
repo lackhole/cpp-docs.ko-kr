@@ -10,11 +10,11 @@ helpviewer_keywords:
 - destructors, C++
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
 ms.openlocfilehash: f26f797da75f0d7d7aa6f6849c9484cea35fb125
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62398997"
 ---
 # <a name="destructors-c"></a>소멸자 (C++)
 
@@ -22,7 +22,7 @@ ms.locfileid: "52175875"
 
 컴파일러는 기본; 하면 소멸자를 정의 하지 않는 경우 많은 클래스 이것으로 충분 합니다. 클래스를 해제 해야 하는 시스템 리소스에 대 한 핸들을 저장 하는 경우 사용자 지정 소멸자를 정의 해야 하거나 메모리를 소유 하는 포인터를 가리키도록 합니다.
 
-다음 `String` 클래스 선언을 참조하세요.
+다음 `String` 클래스 선언을 참조하십시오.
 
 ```cpp
 // spec1_destructors.cpp
@@ -203,7 +203,7 @@ class E : public C, public D, virtual public B
 
 생성 또는 소멸의 순서는 주로 한 클래스의 생성자 또는 소멸자가 처음으로 만들어진 다른 구성 요소 또는 더 오래 지속되는 다른 구성 요소에 의존하는 경우 중요합니다. 예를 들어 `A`(위 그림에 표시됨)의 소멸자가 해당 코드 실행 중 계속 존재하는 `B`에 의존하는 경우가 해당합니다. 반대의 경우도 마찬가지입니다.
 
-나중에 파생 클래스가 생성과 소멸의 순서를 변경할 수 있는 가장 왼쪽 경로를 변경할 수 있기 때문에 상속 그래프에서 클래스 사이의 이러한 상호 의존성은 본질적으로 위험합니다.
+나중에 파생된 클래스가 생성과 소멸의 순서를 변경할 수 있는 가장 왼쪽 경로를 변경할 수 있기 때문에 상속 그래프에서 클래스 사이의 이러한 상호 의존성은 본질적으로 위험합니다.
 
 ### <a name="non-virtual-base-classes"></a>비가상 기본 클래스
 

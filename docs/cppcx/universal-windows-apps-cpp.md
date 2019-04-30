@@ -3,11 +3,11 @@ title: 유니버설 Windows 앱(C++)
 ms.date: 03/30/2018
 ms.assetid: 357121cc-d390-4bae-b34a-39614861a9f4
 ms.openlocfilehash: fbd5366ee52dfe32baef9458a82c16914666699e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58784823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392065"
 ---
 # <a name="universal-windows-apps-c"></a>유니버설 Windows 앱(C++)
 
@@ -35,5 +35,5 @@ Windows 런타임 C++ 는 ISO에서 낮은 수준의 COM 인터페이스를 제�
 
 ## <a name="see-also"></a>참고자료
 
-[C++Visual Studio에서](../overview/visual-cpp-in-visual-studio.md)<br/>
+[Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)<br/>
 [C++의 Windows 프로그래밍 개요](../windows/overview-of-windows-programming-in-cpp.md)<br/>

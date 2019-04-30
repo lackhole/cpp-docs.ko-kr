@@ -6,11 +6,11 @@ f1_keywords:
 - VCCORLIB/Platform::Box
 ms.assetid: b3d7ea37-e98a-4fbc-80b0-ad35e50250c6
 ms.openlocfilehash: ca8c9229d0ef5fa654f462282f257b1684984102
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62404652"
 ---
 # <a name="platformbox-class"></a>Platform::Box 클래스
 
@@ -33,16 +33,12 @@ ref class Box abstract;
 |멤버|설명|
 |------------|-----------------|
 |[Object^](#ctor) | 지정된 형식의 값을 캡슐화할 수 있는 `Box`를 만듭니다. |
-|[연산자 상자&lt;const T&gt;^](#box-const-t) | 
-  `const` 값 클래스 `T` 또는 `enum` 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
-|[연산자 상자&lt;volatile const T&gt;^](#box-const-volatile-t) | 
-  `const volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
+|[연산자 상자&lt;const T&gt;^](#box-const-t) | `const` 값 클래스 `T` 또는 `enum` 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
+|[연산자 상자&lt;volatile const T&gt;^](#box-const-volatile-t) | `const volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
 |[operator Box&lt;T&gt;^](#box-t) | 값 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
-|[연산자 상자&lt;volatile T&gt;^](#box-volatile-t) | 
-  `volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
+|[연산자 상자&lt;volatile T&gt;^](#box-volatile-t) | `volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
 |[Box:: operator T](#t) | 값 클래스 `T` 또는 `enum` 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
-|[Value 속성](#value) | 
-  `Box` 개체에 캡슐화된 값을 반환합니다. |
+|[Value 속성](#value) | `Box` 개체에 캡슐화된 값을 반환합니다. |
 
 ## <a name="ctor"></a> Box:: box 생성자
 
@@ -61,8 +57,7 @@ boxing할 값의 형식입니다(예: `int`, `bool`, `float64`, `DateTime`).
 
 ## <a name="box-const-t"></a> Box:: operator 상자가&lt;const T&gt;^ 연산자
 
-
-  `const` 값 클래스 `T` 또는 `enum` 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.
+`const` 값 클래스 `T` 또는 `enum` 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.
 
 ### <a name="syntax"></a>구문
 
@@ -81,8 +76,7 @@ operator Box<const T>^(const T valueType);
 
 ## <a name="box-const-volatile-t"></a> Box:: operator 상자가&lt;volatile const T&gt;^ 연산자
 
-
-  `const volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.
+`const volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.
 
 ### <a name="syntax"></a>구문
 
@@ -120,8 +114,7 @@ operator Box<const T>^(const T valueType);
 
 ## <a name="box-volatile-t"></a> Box:: operator 상자가&lt;volatile T&gt;^ 연산자
 
-
-  `volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.
+`volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.
 
 ### <a name="syntax"></a>구문
 
@@ -159,8 +152,7 @@ operator Box<T>^(T valueType);
 
 ## <a name="value"></a> Box:: value 속성
 
-
-  `Box` 개체에 캡슐화된 값을 반환합니다.
+`Box` 개체에 캡슐화된 값을 반환합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -176,5 +168,5 @@ boxing되기 전 형식의 boxed 값을 반환합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)<br/>
+[Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)<br/>
 [Boxing](../cppcx/boxing-c-cx.md)

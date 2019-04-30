@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C4373
 ms.assetid: 670c0ba3-b7d6-4aed-b207-1cb84da3bcde
 ms.openlocfilehash: 031b32a03d93a51f6fa00041a5b0bdf99e6eacf1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62401997"
 ---
 # <a name="compiler-warning-level-3-c4373"></a>컴파일러 경고(수준 3) C4373
 
@@ -19,7 +19,7 @@ ms.locfileid: "50456058"
 
 ## <a name="remarks"></a>설명
 
-응용 프로그램은 기본 클래스의 가상 메서드를 재정의하는 파생 클래스의 메서드를 포함하며, 재정의하는 메서드의 매개 변수는 가상 메서드의 매개 변수와 [const](../../cpp/const-cpp.md) 또는 [volatile](../../cpp/volatile-cpp.md) 한정자만 다릅니다. 이 경우 컴파일러는 함수 참조를 기본 클래스나 파생 클래스 중 하나의 메서드에 바인딩해야 합니다.
+애플리케이션은 기본 클래스의 가상 메서드를 재정의하는 파생 클래스의 메서드를 포함하며, 재정의하는 메서드의 매개 변수는 가상 메서드의 매개 변수와 [const](../../cpp/const-cpp.md) 또는 [volatile](../../cpp/volatile-cpp.md) 한정자만 다릅니다. 이 경우 컴파일러는 함수 참조를 기본 클래스나 파생 클래스 중 하나의 메서드에 바인딩해야 합니다.
 
 버전의 Visual Studio 2008 이전 컴파일러 함수를 기본 클래스의 메서드에 바인딩한 다음 경고 메시지를 실행 합니다. 후속 버전의 컴파일러를 무시 합니다 `const` 또는 `volatile` 한정자 함수를 파생된 클래스의 메서드에 바인딩한 다음 경고 **C4373**합니다. 이 두 번째 동작은 C++ 표준을 준수합니다.
 

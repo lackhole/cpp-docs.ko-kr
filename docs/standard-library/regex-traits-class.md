@@ -39,11 +39,11 @@ helpviewer_keywords:
 - std::regex_traits [C++], getloc
 ms.assetid: bc5a5eed-32fc-4eb7-913d-71c42e729e81
 ms.openlocfilehash: 80739d3d8f4bfd38dc3d252a5f3d6308653a7bb9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369126"
 ---
 # <a name="regextraits-class"></a>regex_traits 클래스
 
@@ -95,7 +95,7 @@ class regex_traits
 |[lookup_collatename](#lookup_collatename)|데이터 정렬 요소에 시퀀스를 매핑합니다.|
 |[transform](#transform)|정렬된 해당 시퀀스로 변환합니다.|
 |[transform_primary](#transform_primary)|정렬된 해당 caseless 시퀀스로 변환합니다.|
-|[번역하기](#translate)|일치하는 해당 요소로 변환합니다.|
+|[translate](#translate)|일치하는 해당 요소로 변환합니다.|
 |[translate_nocase](#translate_nocase)|해당 caseless 일치하는 요소로 변환합니다.|
 |[값](#value)|요소를 숫자 값으로 변환합니다.|
 
@@ -221,7 +221,7 @@ locale_type imbue(locale_type loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*Loc*<br/>
+*loc*<br/>
 저장할 로캘 개체입니다.
 
 ### <a name="remarks"></a>설명

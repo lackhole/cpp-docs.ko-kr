@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Concurrency Runtime
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
 ms.openlocfilehash: 6f7b70dcbee639bdd44a195709bddde9e06dee21
-ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58278556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62414011"
 ---
 # <a name="concurrency-runtime"></a>동시성 런타임
 
@@ -20,7 +20,7 @@ C++용 동시성 런타임은 강력하고 확장 가능하며 응답성이 높�
 참조 설명서를 참조 하세요 [참조](../../parallel/concrt/reference/reference-concurrency-runtime.md)합니다.
 
 > [!TIP]
->  동시성 런타임은 C++11 기능에 크게 의존하며 보다 최신 C++ 스타일을 채택합니다. 자세한 내용은 [진화 c + +](../../cpp/welcome-back-to-cpp-modern-cpp.md)합니다.
+>  동시성 런타임은 C++11 기능에 크게 의존하며 보다 최신 C++ 스타일을 채택합니다. 자세한 내용은 [진화 C++ ](../../cpp/welcome-back-to-cpp-modern-cpp.md)합니다.
 
 ## <a name="choosing-concurrency-runtime-features"></a>동시성 런타임 기능 선택
 
@@ -98,7 +98,7 @@ C++용 동시성 런타임은 강력하고 확장 가능하며 응답성이 높�
 
 |||
 |-|-|
-|[Hilo의 비동기 프로그래밍 패턴 및 팁(C++ 및 XAML을 사용하는 Windows 스토어 앱)](https://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|C + + 및 XAML을 사용 하는 Windows 런타임 앱 인 hilo에서 비동기 작업을 구현 하려면 동시성 런타임을 사용 하는 방법에 대해 알아봅니다.|
+|[Hilo의 비동기 프로그래밍 패턴 및 팁(C++ 및 XAML을 사용하는 Windows 스토어 앱)](https://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|인 hilo에서 비동기 작업을 구현 하기 동시성 런타임을 사용 하는 방법을 사용 하 여 Windows 런타임 앱 C++ 및 XAML입니다.|
 |[네이티브 코드 블로그의 병렬 프로그래밍](http://go.microsoft.com/fwlink/p/?linkid=183873)|동시성 런타임의 병렬 프로그래밍에 대한 자세한 추가 블로그 기사를 제공합니다.|
 |[C++ 및 네이티브 코드 포럼에서 병렬 컴퓨팅](http://go.microsoft.com/fwlink/p/?linkid=183874)|동시성 런타임에 대한 커뮤니티 토론에 참여할 수 있습니다.|
 |[병렬 프로그래밍](/dotnet/standard/parallel-programming/index)|.NET Framework에서 사용할 수 있는 병렬 프로그래밍 모델에 설명 합니다.|

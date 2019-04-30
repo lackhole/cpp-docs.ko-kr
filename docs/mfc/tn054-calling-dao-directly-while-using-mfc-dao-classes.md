@@ -1,5 +1,5 @@
 ---
-title: 'TN054: MFC DAO 클래스를 사용하면서 직접 DAO 호출'
+title: 'TN054: MFC DAO 클래스를 사용 하면서 직접 DAO 호출'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.mfc.dao
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - DAO (Data Access Objects), and MFC
 ms.assetid: f7de7d85-8d6c-4426-aa05-2e617c0da957
 ms.openlocfilehash: 938381f55b598911b69bb25bf7af576dfdfb2e4f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399657"
 ---
-# <a name="tn054-calling-dao-directly-while-using-mfc-dao-classes"></a>TN054: MFC DAO 클래스를 사용하면서 직접 DAO 호출
+# <a name="tn054-calling-dao-directly-while-using-mfc-dao-classes"></a>TN054: MFC DAO 클래스를 사용 하면서 직접 DAO 호출
 
 > [!NOTE]
-> Visual c + + 환경 및 마법사 (DAO 클래스에 포함 되어 있으며 계속 사용할 수 있습니다) 이지만 DAO을 지원 하지 않습니다. 사용 하는 것이 좋습니다 [OLE DB Templates](../data/oledb/ole-db-templates.md) 하거나 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 새 프로젝트에 대 한 합니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
+> 시각적 개체 C++ 환경 및 마법사 지원 하지 않습니다 DAO (하지만 DAO 클래스에 포함 되어 있으며 계속 사용할 수 있습니다). 사용 하는 것이 좋습니다 [OLE DB Templates](../data/oledb/ole-db-templates.md) 하거나 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 새 프로젝트에 대 한 합니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
 
 MFC DAO 데이터베이스 클래스를 사용할 때 DAO를 직접 사용 하는 데 필요한 한 상황이 있을 수 있습니다. 일반적으로이 경우 되지 않지만 MFC는 MFC 클래스를 직접 DAO 호출으로 결합 하는 경우 만드는 대 한 직접 DAO 호출 간단한를 용이 하 게 몇 가지 도우미 메커니즘을 제공 합니다. 직접 DAO 만드는 DAO MFC 관리 되는 개체의 메서드를 호출 하는 코드 몇 줄만 요구 해야 합니다. 만들기 및 DAO 개체를 사용 해야 하는 경우 *하지* MFC에서 관리 해야 실제로 호출 하 여 좀 더 많은 작업을 수행 `Release` 개체에 있습니다. 이 기술 노트에 직접 DAO 호출 하려는 경우, MFC 도우미를 하는 데 수행할 수 있는 작업 및 DAO OLE 인터페이스를 사용 하는 방법을 설명 합니다. 마지막으로,이 DAO 보안 기능에 대 한 직접 DAO 호출 하는 방법을 보여 주는 몇 가지 샘플 함수를 제공 합니다.
 

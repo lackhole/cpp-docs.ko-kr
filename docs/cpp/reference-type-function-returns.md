@@ -7,11 +7,11 @@ helpviewer_keywords:
 - functions [C++], return types
 ms.assetid: 5b73be1d-2dc7-41df-ab0a-adcba36f2ad1
 ms.openlocfilehash: a2d7fa9ddbc1d4a2f922b5a20930e150ae991f38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403440"
 ---
 # <a name="reference-type-function-returns"></a>참조 형식 함수 반환
 
@@ -25,11 +25,11 @@ ms.locfileid: "50461323"
 
 큰 개체를 전달할 더 효율적일 수와 마찬가지로 *하* 함수를도 수 많은 개체를 반환 하는 것이 효율적 *에서* 함수. 참조 반환 프로토콜을 사용하면 반환하기 전에 개체를 임시 위치로 복사할 필요가 없어집니다.
 
-함수가 l-value로 계산되어야 하는 경우에도 참조 반환 형식이 유용할 수 있습니다. 대부분의 오버로드된 연산자, 특히 할당 연산자가 이 범주에 속합니다. 오버 로드 된 연산자에 나와 [오버 로드 된 연산자](../cpp/operator-overloading.md)합니다.
+함수가 l-value로 계산되어야 하는 경우에도 참조 반환 형식이 유용할 수 있습니다. 대부분의 오버로드된 연산자, 특히 대입 연산자가 이 범주에 속합니다. 오버 로드 된 연산자에 나와 [오버 로드 된 연산자](../cpp/operator-overloading.md)합니다.
 
 ## <a name="example"></a>예제
 
-`Point` 예제를 참조하십시오.
+`Point` 예제를 참조하세요.
 
 ```cpp
 // refType_function_returns.cpp

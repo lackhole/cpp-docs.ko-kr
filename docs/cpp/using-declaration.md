@@ -10,11 +10,11 @@ helpviewer_keywords:
 - declarations [C++], namespaces
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
 ms.openlocfilehash: 46d8b1e13b55988efd40643482ffd6123034ccb5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403349"
 ---
 # <a name="using-declaration"></a>선언 사용
 
@@ -330,4 +330,4 @@ public:
 ## <a name="see-also"></a>참고자료
 
 [네임스페이스](../cpp/namespaces-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - marshaling [C++], callbacks and delegates
 ms.assetid: dcf396fd-a91d-49c0-ab0b-1ea160668a89
 ms.openlocfilehash: 031bda0f93d6a95aa3c774553aefca0647d0518c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400567"
 ---
 # <a name="how-to-marshal-function-pointers-using-pinvoke"></a>방법: PInvoke를 사용 하는 함수 포인터 마샬링
 
-이 항목에서는 관리 되는 대리자를 설명 합니다. 관리 되지 않는.NET Framework P/Invoke 기능을 사용 하 여 functions와의 상호 운용 하는 경우 함수 포인터 대신 사용할 수 있습니다. 그러나 Visual c + + 프로그래머는 (가능한 경우) 대신 c + + Interop 기능을 사용 하는 것이 좋습니다 P/Invoke 거의 컴파일 타임 오류를 보고, 형식이 안전한 아니며 구현 되기 번거로울 수 있습니다. 관리 되지 않는 API는 DLL로 패키지 하 고 소스 코드를 사용할 수 없는 경우 P/Invoke 유일한 옵션입니다. 그렇지 않은 경우 다음 항목을 참조 합니다.
+이 항목에서는 관리 되는 대리자를 설명 합니다. 관리 되지 않는.NET Framework P/Invoke 기능을 사용 하 여 functions와의 상호 운용 하는 경우 함수 포인터 대신 사용할 수 있습니다. 그러나 Visual C++ 프로그래머는 사용 하는 것이 좋습니다는 C++ Interop 기능 대신 (가능한 경우) P/Invoke는 작은 컴파일 타임 오류를 보고, 형식이 안전한 아니며 구현 되기 번거로울 수를 제공 하기 때문입니다. 관리 되지 않는 API는 DLL로 패키지 하 고 소스 코드를 사용할 수 없는 경우 P/Invoke 유일한 옵션입니다. 그렇지 않은 경우 다음 항목을 참조 합니다.
 
 - [C++ Interop 사용(암시적 PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
 

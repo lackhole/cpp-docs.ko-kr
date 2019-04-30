@@ -11,11 +11,11 @@ helpviewer_keywords:
 - multithreading [C++]
 ms.assetid: 24425b1f-5031-4c6b-aac7-017115a40e7c
 ms.openlocfilehash: 649e26c3f0704dfd6740b1a250613545e29316a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50457735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407746"
 ---
 # <a name="multithreading-support-for-older-code-visual-c"></a>이전 코드를 위한 다중 스레드 지원(Visual C++)
 
@@ -35,7 +35,7 @@ Microsoft Windows에서 다중 스레드 응용 프로그램을 만드는 기능
 ## <a name="related-sections"></a>관련 단원
 
 [CWinThread](../mfc/reference/cwinthread-class.md)<br/>
-응용 프로그램 내의 실행 스레드를 나타냅니다.
+애플리케이션 내의 실행 스레드를 나타냅니다.
 
 [CSyncObject](../mfc/reference/csyncobject-class.md)<br/>
 Win32의 동기화 개체에 일반적인 기능을 제공하는 순수 가상 클래스에 대해 설명합니다.
