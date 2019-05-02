@@ -20,7 +20,7 @@ ms.locfileid: "64342921"
 ---
 # <a name="doc-process-documentation-comments-cc"></a>/doc(문서 주석 처리)(C/C++)
 
-컴파일러에서 문서 주석을 처리 소스 코드 파일에 문서 주석이 포함 된 각 소스 코드 파일에 대 한.xdc 파일을 만듭니다.
+컴파일러에서 문서 주석을 처리 소스 코드 파일에 문서 주석이 포함된 각 소스 코드 파일에 대한.xdc 파일을 만듭니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,11 +41,11 @@ IntelliSense를 사용 하 여 생성 된.xml 파일을 사용 하려면 지원 
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [컴파일러 설정 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 선택 된 **구성 속성** > **C/C++** > **출력 파일** 속성 페이지.
+1. 선택된 **구성 속성** > **C/C++** > **출력 파일** 속성 페이지.
 
-1. 수정 된 **XML 문서 파일 생성** 속성입니다.
+1. 수정된 **XML 문서 파일 생성** 속성입니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 
