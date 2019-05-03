@@ -29,9 +29,9 @@ ms.locfileid: "57815166"
 
 ## <a name="remarks"></a>설명
 
-**/c**를 사용하여 컴파일하면 .obj 파일만 만듭니다. 적절한 파일 및 옵션과 함께 빌드 링크 단계를 수행을 명시적으로 호출 해야 합니다.
+**/c**를 사용하여 컴파일하면 .obj 파일만 만듭니다. 빌드의 연결 단계를 수행하려면 LINK를 적절한 파일 및 옵션과 함께 명시적으로 호출해야 합니다.
 
-개발 환경에서 만든 내부 프로젝트는 기본적으로 **/c** 옵션을 사용 합니다.
+개발 환경에서 만든 내부 프로젝트는 기본적으로 **/c** 옵션을 사용합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
