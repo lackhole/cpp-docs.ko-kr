@@ -39,13 +39,13 @@ int * __ptr64 p64;
 32비트 시스템에서 **__ptr64**로 선언한 포인터는 32비트 포인터로 잘립니다. 64비트 시스템에서 **__ptr32**로 선언한 포인터는 64비트 포인터로 강제 변환됩니다.
 
 > [!NOTE]
-> **/clr: pure** 옵션을 사용하여 컴파일할 경우 **__ptr32** 나 **__ptr64**를 사용할 수 없습니다. 사용시 C2472 컴파일러 오류가 발생합니다. **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서는 지원 중단 예정(deprecated)이고 Visual Studio 2017에서는 지원 되지 않습니다(unsupported).
+> **/clr: pure** 옵션을 사용하여 컴파일할 경우 **__ptr32**나 **__ptr64**를 사용할 수 없습니다. 사용시 C2472 컴파일러 오류가 발생합니다. **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서는 지원 중단 예정이고 Visual Studio 2017에서는 지원되지 않습니다.
 
-이전 버전과의 호환성에 위해 **_ptr32** 와 **_ptr64**는 **__ptr32** 와 **__ptr64**의 동의어입니다. 단, 컴파일러 옵션 [/Za \(언어 확장 사용안함)](../build/reference/za-ze-disable-language-extensions.md) 를 사용하면 둘은 구분됩니다.
+이전 버전과의 호환성을 위해 **_ptr32**와 **_ptr64**는 **__ptr32**와 **__ptr64**의 동의어입니다. 단, 컴파일러 옵션 [/Za \(언어 확장 사용안함)](../build/reference/za-ze-disable-language-extensions.md)를 사용하면 둘은 구분됩니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에는 **__ptr32** 와 **__ptr64** 를 사용하여 포인터를 선언하고 할당하는 방법을 보여줍니다.
+다음 예제에는 **__ptr32**와 **__ptr64**를 사용하여 포인터를 선언하고 할당하는 방법을 보여줍니다.
 
 ```cpp
 #include <cstdlib>
