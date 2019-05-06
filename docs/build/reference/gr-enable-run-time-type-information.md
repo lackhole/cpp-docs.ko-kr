@@ -35,7 +35,7 @@ ms.locfileid: "62292122"
 
 컴파일러가 코드의 개체 유형을 정적으로 확인할 수 없는 경우 **/GR**을 사용합니다. 일반적으로 코드에서 [dynamic_cast 연산자](../../cpp/dynamic-cast-operator.md)나 [typeid](../../cpp/typeid-operator.md)를 사용하는 경우 **/GR** 옵션이 필요합니다. 그러나 **/GR**은 이미지의 .rdata 섹션 크기를 늘립니다. 코드에서 **dynamic_cast**나 **typeid**를 사용하지 않는 경우 **/GR-**이 더 작은 이미지를 생성할 수 있습니다.
 
-런타임 형식 검사 하는 방법에 대 한 자세한 내용은 참조 하세요. [런타임 형식 정보](../../cpp/run-time-type-information.md) 에  *C++ 언어 참조*합니다.
+런타임 형식 검사에 대한 자세한 내용은 *C++ 언어 참조*에서 [런타임 형식 정보](../../cpp/run-time-type-information.md)를 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
