@@ -18,7 +18,7 @@ ms.locfileid: "62292587"
 ---
 # <a name="gh-enable-penter-hook-function"></a>/Gh(_penter 후크 함수 사용)
 
-에 대 한 호출으로 인해는 `_penter` 모든 메서드 또는 함수의 시작 함수입니다.
+모든 메서드 또는 함수의 시작 부분에서 `_penter` 함수를 호출합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -54,7 +54,7 @@ void __declspec(naked) __cdecl _penter( void );
 
 ## <a name="example"></a>예제
 
-다음 코드를 사용 하 여 컴파일하면 **/Gh**를 보여 줍니다 어떻게 `_penter` 두 번 호출 됩니다 함수를 입력할 때 한 번 `main` 함수를 입력할 때 한 번 `x`합니다.
+다음 코드는 **/Gh**로 컴파일될 때 `_penter`가 두 번 호출되는 방법을 보여줍니다. `main` 함수에서 한 번, `x` 함수에서 한 번입니다.
 
 ```cpp
 // Gh_compiler_option.cpp
