@@ -33,7 +33,7 @@ ms.locfileid: "62320112"
 
 - [/Fo (개체 파일 이름)](fo-object-file-name.md)
 
-- [/Fp (Name .pch File)](fp-name-dot-pch-file.md)
+- [/Fp (.pch 파일 이름)](fp-name-dot-pch-file.md)
 
 - [/FR, /Fr (.sbr 파일 만들기)](fr-fr-create-dot-sbr-file.md)
 
