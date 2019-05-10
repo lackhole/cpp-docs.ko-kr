@@ -13,11 +13,11 @@ helpviewer_keywords:
 - CAutoPtr class
 ms.assetid: 08988d53-4fb0-4711-bdfc-8ac29c63f410
 ms.openlocfilehash: 7f4f446aa97f2bf3843b830bd7fb4c4a5d74ffdb
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62260164"
 ---
 # <a name="cautoptr-class"></a>CAutoPtr 클래스
 
@@ -77,7 +77,7 @@ class CAutoPtr
 
 `CAutoPtr` 또한 포인터 컬렉션 만들기를 간소화합니다. 컬렉션 클래스를 파생 하 고 소멸자를 재정의 하는 대신 간단 하 게의 컬렉션을 만드는 것 `CAutoPtr` 개체입니다. 컬렉션 삭제 되 면를 `CAutoPtr` 개체는 범위를 벗어나 자동으로 자체를 삭제 합니다.
 
-[CHeapPtr](../../atl/reference/cheapptr-class.md) 변형으로 동일한 방식으로 작동 하 고 `CAutoPtr`할당 하 고 c + + 대신 다른 힙 함수를 사용 하 여 메모리를 확보 있는 점을 제외 하 고, **새** 하 고 **삭제** 연산자입니다. [CAutoVectorPtr](../../atl/reference/cautovectorptr-class.md) 비슷합니다 `CAutoPtr`, 유일한 차이점은 사용 한다는 **벡터 new** 하 고 **벡터 delete** 할당 및 메모리를 해제 합니다.
+[CHeapPtr](../../atl/reference/cheapptr-class.md) 변형으로 동일한 방식으로 작동 하 고 `CAutoPtr`한다는 점을 제외 하는 할당 하 고 대신 다른 힙 함수를 사용 하 여 메모리를 해제 합니다 C++ **새** 하 고 **삭제** 연산자입니다. [CAutoVectorPtr](../../atl/reference/cautovectorptr-class.md) 비슷합니다 `CAutoPtr`, 유일한 차이점은 사용 한다는 **벡터 new** 하 고 **벡터 delete** 할당 및 메모리를 해제 합니다.
 
 참고 항목 [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) 하 고 [CAutoPtrList](../../atl/reference/cautoptrlist-class.md) 배열 또는 스마트 포인터 목록을 필요한 경우.
 

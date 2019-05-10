@@ -31,11 +31,11 @@ helpviewer_keywords:
 - fmaxl function
 ms.assetid: a773ccf7-495e-4a9a-8c6d-dfb53e341e35
 ms.openlocfilehash: 371d53257427f2235048807968c82fec1b8bf699
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333435"
 ---
 # <a name="fmax-fmaxf-fmaxl"></a>fmax, fmaxf, fmaxl
 
@@ -100,7 +100,7 @@ C++는 오버로드를 허용하기 때문에 float 및 long double 형식을 �
 
 |기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**fmax**하십시오 **fmaxf**, **fmaxl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**fmax**, **fmaxf**, **fmaxl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

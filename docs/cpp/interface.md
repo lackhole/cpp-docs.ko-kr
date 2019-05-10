@@ -1,23 +1,23 @@
 ﻿---
 title: __interface
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 f1_keywords:
 - __interface_cpp
 helpviewer_keywords:
 - __interface keyword [C++]
 ms.assetid: ca5d400b-d6d8-4ba2-89af-73f67e5ec056
-ms.openlocfilehash: 1ec3a1d2cddbf8dbbb248a7366d5d56dd95ad074
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: 7c95e3700b4124c4793e0214ed3b06ecfeee72f1
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58768317"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222085"
 ---
 # <a name="interface"></a>__interface
 
 **Microsoft 전용**
 
-Visual C++ 인터페이스는 다음과 같이 정의할 수 있습니다.
+Microsoft C++ 인터페이스는 다음과 같이 정의할 수 있습니다.
 
 - 0개 이상의 기본 인터페이스에서 상속할 수 있습니다.
 

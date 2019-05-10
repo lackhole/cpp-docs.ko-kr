@@ -28,11 +28,11 @@ helpviewer_keywords:
 - CRBTree class
 ms.assetid: a1b1cb63-38e4-4fc2-bb28-f774d1721760
 ms.openlocfilehash: 59416000eecf4be25746d9dedd86ea2af116087a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62278074"
 ---
 # <a name="crbtree-class"></a>CRBTree 클래스
 
@@ -188,7 +188,7 @@ void GetAt(POSITION pos, KOUTARGTYPE key, VOUTARGTYPE value) const;
 *key*<br/>
 키를 받는 변수입니다.
 
-*value*<br/>
+*값*<br/>
 변수 값을 받습니다.입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -291,7 +291,7 @@ void GetNextAssoc(
 *key*<br/>
 템플릿 매개 변수를 트리의 키의 형식을 지정 합니다.
 
-*value*<br/>
+*값*<br/>
 템플릿 매개 변수를 트리의 값의 형식을 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -467,7 +467,7 @@ void SetValueAt(POSITION pos, VINARGTYPE value);
 *pos*<br/>
 위치 카운터를 같은 메서드에 대 한 이전 호출에서 반환한 [CRBTree::GetHeadPosition](#getheadposition) 하거나 [CRBTree::FindFirstKeyAfter](#findfirstkeyafter)합니다.
 
-*value*<br/>
+*값*<br/>
 에 추가할 값을 `CRBTree` 개체입니다.
 
 ### <a name="remarks"></a>설명

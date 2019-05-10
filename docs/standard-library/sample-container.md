@@ -6,17 +6,17 @@ helpviewer_keywords:
 - sample container
 - container headers
 ms.assetid: 4ab3dcf9-49c3-4e49-b5d6-1ec573e2aee4
-ms.openlocfilehash: ca51fde38d88d8300837bbda07ee8c697f9b2be7
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: f7b0af53b7abf7801123ed93f50cd51047f70096
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740329"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220420"
 ---
 # <a name="ltsample-containergt"></a>&lt;sample container&gt;
 
 > [!NOTE]
-> 이 항목은 C++ 표준 라이브러리에서 사용되는 작동하지 않는 컨테이너 예제로 Visual C++ 설명서에 포함되어 있습니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
+> 이 항목은 Microsoft C++ 설명서에 사용 되는 컨테이너의 작동 하지 않는 예로 C++ 표준 라이브러리입니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
 
 이 항목에서는 C++ 표준 라이브러리의 컨테이너 헤더 구조에 대해 설명합니다.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - LNK1313
 ms.assetid: 5df0b72e-bb3f-428c-8d84-6084238f9827
 ms.openlocfilehash: 380df2bff305acc47e423d69ea702d77c4eafdfd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62160434"
 ---
 # <a name="linker-tools-error-lnk1313"></a>링커 도구 오류 LNK1313
 
@@ -19,7 +19,7 @@ ms.locfileid: "50604232"
 
 ## <a name="remarks"></a>설명
 
-현재 버전의 Visual c + +로 컴파일된.obj 파일을 사용 하 여 네이티브 또는 혼합 관리/네이티브.obj 파일 연결을 지원 하지 않습니다 **/clr: pure**합니다.
+시각적 개체의 현재 버전 C++ 로 컴파일된.obj 파일을 사용 하 여 네이티브 또는 혼합 관리/네이티브.obj 파일을 연결 하는 것을 지원 하지 않습니다 **/clr: pure**합니다.
 
 **/clr: pure** 컴파일러 옵션은 Visual Studio 2015에서 사용 되지 않으며 Visual Studio 2017에서 지원 되지 않습니다.
 

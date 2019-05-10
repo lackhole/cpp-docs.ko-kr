@@ -7,11 +7,11 @@ helpviewer_keywords:
 - expressions [C++], binary operators
 ms.assetid: 6dea3df4-a4bd-42c3-9807-4a27c120ac9a
 ms.openlocfilehash: d3a966a7922c1888defbebf970ac409872fe18ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62154310"
 ---
 # <a name="expressions-with-binary-operators"></a>이항 연산자로 구성된 식
 
@@ -33,13 +33,13 @@ ms.locfileid: "50505129"
 
 - [시프트 연산자](../cpp/left-shift-and-right-shift-operators-input-and-output.md)
 
-   - 오른쪽 시프트(>>)
+   - 오른쪽 시프트 (>>)
 
-   - 왼쪽 시프트(<<)
+   - 왼쪽된 시프트 (<<)
 
 - [관계형 및 같음 연산자](../cpp/relational-operators-equal-and-equal.md)
 
-   - 보다 작은 (\<)
+   - 보다 작음(\<)
 
    - 보다 큼(>)
 
@@ -63,7 +63,7 @@ ms.locfileid: "50505129"
 
    - [논리 AND (& &)](../cpp/logical-and-operator-amp-amp.md)
 
-   - [논리 OR (&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
+   - [Logical OR (&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
 
 - [할당 연산자](../cpp/assignment-operators.md)
 
@@ -81,9 +81,9 @@ ms.locfileid: "50505129"
 
    - 왼쪽 시프트 대입 (<\<=)
 
-   - 오른쪽 시프트 대입(>>=)
+   - 오른쪽 시프트 대입 (>> =)
 
-   - 비트 AND 대입(&=)
+   - 비트 AND 대입 (& =)
 
    - 배타적 비트 OR 대입(^=)
 

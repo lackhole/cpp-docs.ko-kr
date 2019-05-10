@@ -32,11 +32,11 @@ helpviewer_keywords:
 - square roots, calculating
 ms.assetid: 2ba9467b-f172-41dc-8f10-b86f68fa813c
 ms.openlocfilehash: 7c17c973b98638195e2e2d2a5f793578437d11ae
-ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57210226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62354901"
 ---
 # <a name="sqrt-sqrtf-sqrtl"></a>sqrt, sqrtf, sqrtl
 
@@ -69,7 +69,7 @@ long double sqrtl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **sqrt** 사용 하는 **float** 하거나 **긴** **double** 형식입니다. C 프로그램에서 **sqrt** 항상 받아서 반환 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **sqrt** 사용 하는 **float** 또는 **긴** **double** 형식입니다. C 프로그램에서 **sqrt** 항상 받아서 반환 **double**합니다.
 
 ## <a name="return-value"></a>반환 값
 

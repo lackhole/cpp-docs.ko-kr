@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - idl_quote attribute
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
-ms.openlocfilehash: fd7455298c9a1b69926d85766b6cd7f96bd374cc
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 3fbec210d973926a312d3e750e806dd9ef13f5f9
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037119"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448541"
 ---
 # <a name="idlquote"></a>idl_quote
 
@@ -26,7 +26,7 @@ ms.locfileid: "59037119"
 ### <a name="parameters"></a>매개 변수
 
 *텍스트*<br/>
-특성 이름을 하려는 시각적 개체는 C++ 컴파일러에서 컴파일러 오류를 반환 하지 않고 생성된 된.idl 파일을 통과 합니다.
+Microsoft 하려는 특성 이름 C++ 컴파일러에서 컴파일러 오류를 반환 하지 않고 생성된 된.idl 파일을 통과 합니다.
 
 ## <a name="remarks"></a>설명
 

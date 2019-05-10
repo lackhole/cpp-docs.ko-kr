@@ -1,319 +1,80 @@
 ---
-title: C/C++ 빌드 오류
+title: C /C++ 빌드 도구 오류 및 경고
 ms.date: 11/17/2017
-f1_keywords:
-- CRT1002
-- CRT1003
-- CRT1004
-- CRT1005
-- CRT1006
-- CVT1101
-- CVT1102
-- CVT1104
-- CVT1106
-- CVT1107
-- CVT1108
-- CVT1109
-- CVT1110
-- LNK1100
-- LNK1101
-- LNK1102
-- LNK1105
-- LNK1108
-- LNK1109
-- LNK1111
-- LNK1114
-- LNK1115
-- LNK1117
-- LNK1118
-- LNK1119
-- LNK1121
-- LNK1129
-- LNK1130
-- LNK1131
-- LNK1132
-- LNK1137
-- LNK1144
-- LNK1145
-- LNK1146
-- LNK1147
-- LNK1148
-- LNK1149
-- LNK1154
-- LNK1155
-- LNK1156
-- LNK1159
-- LNK1160
-- LNK1161
-- LNK1162
-- LNK1163
-- LNK1165
-- LNK1167
-- LNK1170
-- LNK1171
-- LNK1172
-- LNK1173
-- LNK1174
-- LNK1175
-- LNK1178
-- LNK1180
-- LNK1182
-- LNK1183
-- LNK1184
-- LNK1185
-- LNK1186
-- LNK1187
-- LNK1190
-- LNK1194
-- LNK1195
-- LNK1197
-- LNK1198
-- LNK1199
-- LNK1207
-- LNK1209
-- LNK1210
-- LNK1212
-- LNK1213
-- LNK1214
-- LNK1216
-- LNK1219
-- LNK1220
-- LNK1227
-- LNK1229
-- LNK1230
-- LNK1232
-- LNK1233
-- LNK1234
-- LNK1235
-- LNK1236
-- LNK1242
-- LNK1243
-- LNK1244
-- LNK1246
-- LNK1247
-- LNK1249
-- LNK1250
-- LNK1252
-- LNK1253
-- LNK1255
-- LNK1257
-- LNK1258
-- LNK1260
-- LNK1261
-- LNK1262
-- LNK1263
-- LNK1265
-- LNK1266
-- LNK1267
-- LNK1268
-- LNK1269
-- LNK1270
-- LNK1272
-- LNK1274
-- LNK1276
-- LNK1279
-- LNK1280
-- LNK1281
-- LNK1283
-- LNK1285
-- LNK1286
-- LNK1289
-- LNK1290
-- LNK1291
-- LNK1292
-- LNK1293
-- LNK1294
-- LNK1295
-- LNK1297
-- LNK1298
-- LNK1299
-- LNK1300
-- LNK1301
-- LNK1303
-- LNK1304
-- LNK1305
-- LNK1307
-- LNK1308
-- LNK1310
-- LNK1311
-- LNK1315
-- LNK1316
-- LNK1317
-- LNK1318
-- LNK1319
-- LNK1320
-- LNK1321
-- LNK1322
-- LNK1323
-- LNK1324
-- LNK1325
-- LNK1327
-- LNK1328
-- LNK1329
-- LNK1330
-- LNK1331
-- LNK1332
-- LNK2002
-- LNK2003
-- LNK2009
-- LNK2014
-- LNK2015
-- LNK2016
-- LNK2018
-- LNK2021
-- LNK2024
-- LNK2029
-- LNK2030
-- LNK2032
-- LNK2034
-- LNK2035
-- LNK2036
-- LNK2037
-- LNK2039
-- LNK4003
-- LNK4012
-- LNK4013
-- LNK4017
-- LNK4018
-- LNK4019
-- LNK4020
-- LNK4030
-- LNK4031
-- LNK4038
-- LNK4040
-- LNK4041
-- LNK4042
-- LNK4043
-- LNK4046
-- LNK4047
-- LNK4048
-- LNK4051
-- LNK4052
-- LNK4056
-- LNK4060
-- LNK4061
-- LNK4062
-- LNK4066
-- LNK4067
-- LNK4068
-- LNK4069
-- LNK4072
-- LNK4077
-- LNK4079
-- LNK4081
-- LNK4085
-- LNK4087
-- LNK4088
-- LNK4093
-- LNK4094
-- LNK4097
-- LNK4103
-- LNK4108
-- LNK4195
-- LNK4196
-- LNK4198
-- LNK4202
-- LNK4203
-- LNK4207
-- LNK4208
-- LNK4209
-- LNK4223
-- LNK4225
-- LNK4226
-- LNK4228
-- LNK4232
-- LNK4233
-- LNK4236
-- LNK4238
-- LNK4239
-- LNK4240
-- LNK4241
-- LNK4242
-- LNK4243
-- LNK4244
-- LNK4245
-- LNK4246
-- LNK4249
-- LNK4250
-- LNK4251
-- LNK4252
-- LNK4255
-- LNK4256
-- LNK4257
-- LNK4258
-- LNK4259
-- LNK4260
-- LNK4261
-- LNK4262
-- LNK4263
-- LNK4264
-- PG0001
-- PG0002
-- PG0003
-- PG0061
-- PG0062
-- PG0063
-- PG0065
-- PG0066
-- PG0067
-- PG0068
-- PG0069
-- PG0070
-- PG0071
-- PG0081
-- PG0087
-- PG0090
-- PG0091
-- PG0092
-- PG0094
-- PG0096
-- PG0168
-- PG0169
-- PG0181
-- PG0188
-- PG1000
-- PG1001
-- PG1032
-- PG1033
-- PG1035
-- PG1036
-- PG1038
-- PG1051
-- PG1052
-- PG1053
-- PG1056
-- PG1058
-- PG1060
-- PG1061
-- PG1065
-- PG1066
-- PG1067
-- R6000
-- R6003
-- R6010
-- R6022
-- R6023
-- R6034
 helpviewer_keywords:
 - builds [C++], errors
 - errors [C++]
 - error messages [C++], build errors
 - errors [C++], builds
 ms.assetid: 2470b496-28fa-47e7-a238-a086d99b06ca
-ms.openlocfilehash: 183edfe6aac45fa5a16fe67e31cf8da629fdf5cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d16b691592a7b35a08bc02a0214f5415bd4ad2dd
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466133"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856900"
 ---
-# <a name="cc-build-errors"></a>C/C++ 빌드 오류
+# <a name="cc-compiler-and-build-tools-errors-and-warnings"></a>C/C++ 컴파일러와 빌드 도구 오류 및 경고
 
-진단 오류 및 경고 메시지 빌드 도구에 의해 생성 되는 설명서의이 섹션의 문서에 설명 합니다.
+진단 오류 및 Microsoft C에서 생성 되는 경고 메시지를 설명 하는 설명서의이 섹션의 문서 /C++ 컴파일러 및 빌드 도구입니다.
 
-[!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
+[!INCLUDE[error-boilerplate](../includes/error-boilerplate.md)]
+
+## <a name="in-this-section"></a>단원 내용
+
+[BSCMAKE 오류 및 경고 (BKxxxx)](../tool-errors/bscmake-errors-bk1500-through-bk4505.md) \
+오류 및 경고는 Microsoft Browse Information Maintenance Utility (BSCMAKE에서 생성. EXE)입니다.
+
+[명령줄 오류 및 경고](../tool-errors/command-line-errors-d8000-through-d9999.md) \
+오류 및 명령줄 옵션 문제에 대 한 빌드 도구에 의해 생성 된 경고입니다.
+
+[컴파일러 심각한 오류 C999-C1999](../compiler-errors-1/compiler-fatal-errors-c999-through-c1999.md) \
+중단 하는 오류는 C++ 컴파일러 (CL 합니다. EXE)입니다.
+
+[컴파일러 오류 C2001-C3999](../compiler-errors-1/compiler-errors-c2001-through-c2099.md) \
+검색 된 오류는 C++ 컴파일러 (CL 합니다. EXE)입니다.
+
+[컴파일러 경고 C4000-C5999](../compiler-warnings/compiler-warnings-c4000-through-c4199.md) \
+감지한 문제에 대 한 경고는 C++ 컴파일러 (CL 합니다. EXE)입니다.
+
+[컴파일러 버전별 컴파일러 경고](../compiler-warnings/compiler-warnings-by-compiler-version.md) \
+각 컴파일러 버전에서 도입 된 경고의 목록입니다.
+
+[C 런타임 오류 (Rxxxx)](../tool-errors/c-runtime-errors-r6002-through-r6035.md) \
+C 런타임 라이브러리 (CRT) 하 여 런타임 시 생성 된 오류입니다.
+
+[CVTRES 오류 및 경고 (CVTxxxx)](../tool-errors/cvtres-errors-cvt1100-through-cvt4001.md) \
+오류 및 Microsoft 리소스 파일에 COFF 개체 변환 유틸리티 (CVTRES에서 생성 된 경고. EXE)입니다.
+
+[식 계산기 오류 (CXXxxxx)](../tool-errors/expression-evaluator-errors-cxx0000-through-cxx0072.md) \
+디버거 및 진단 도구에서 생성 하는 오류입니다.
+
+[링커 도구 오류 및 경고 (LNKxxxx)](../tool-errors/linker-tools-errors-and-warnings.md) \
+오류 및 경고 링커에 의해 생성 및 관련 도구 (링크입니다. EXE, 라이브러리입니다. EXE, DUMPBIN 합니다. EXE, EDITBIN 합니다. EXE)입니다.
+
+[수학 오류 (Mxxxx)](../tool-errors/math-errors-m6101-through-m6205.md) \
+런타임 부동 소수점 수학 라이브러리에서 생성 된 오류입니다.
+
+[NMAKE 오류 및 경고 (Uxxxx)](../tool-errors/nmake-errors-u1000-through-u4011.md) \
+오류 및 Microsoft 메이크파일 도구 (NMAKE에서 생성 된 경고. EXE)입니다.
+
+[프로필 기반 최적화 오류 및 경고 (PGxxxx)](../tool-errors/profile-guided-optimization-errors-and-warnings.md) \
+오류 및 경고는 프로필 기반 최적화 (PGO) 도구에서 생성 합니다.
+
+[프로젝트 빌드 오류 및 경고 (PRJxxxx)](../tool-errors/project-build-errors-and-warnings-prjxxxx.md) \
+오류 및 네이티브에서 생성 된 경고 C++ 프로젝트는 Visual Studio에서 시스템을 구축 합니다.
+
+[리소스 컴파일러 오류 및 경고 (RCxxxx, RWxxxx)](../tool-errors/resource-compiler-errors-rc1000-through-rc4413.md) \
+리소스 컴파일러 (RC에 의해 생성 오류 및 경고. EXE)입니다.
+
+[벡터화 도우미 및 평행 화 도우미 메시지](../tool-errors/vectorizer-and-parallelizer-messages.md) \
+벡터화 도우미 및 평행 화 도우미 최적화 컴파일러 옵션으로 생성 되는 진단 메시지입니다.
+
+## <a name="related-sections"></a>관련 단원
+
+[기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md)
 
 ## <a name="see-also"></a>참고자료
 
-[C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md)<br/>
+[C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md) \
 [Visual Studio의 디버깅](/visualstudio/debugger/debugging-in-visual-studio)

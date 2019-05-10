@@ -10,11 +10,11 @@ helpviewer_keywords:
 - declarations, nested classes
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
 ms.openlocfilehash: 0ffe1077da76d7524ce99d825e97f68a031ca315
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301554"
 ---
 # <a name="nested-class-declarations"></a>중첩 클래스 선언
 
@@ -198,7 +198,7 @@ int main()
 }
 ```
 
-다음 코드에서는 friend 함수로 선언된 `GetExtendedErrorStatus` 함수를 보여 줍니다. 파일 범위에 정의된 함수에서는 메시지가 정적 배열에서 클래스 멤버로 복사됩니다. `GetExtendedErrorStatus`를 효과적으로 구현하려면 다음과 같이 선언하세요.
+다음 코드에서는 friend 함수로 선언된 `GetExtendedErrorStatus` 함수를 보여 줍니다. 파일 범위에 정의된 함수에서는 메시지가 정적 배열에서 클래스 멤버로 복사됩니다. `GetExtendedErrorStatus`를 효과적으로 구현하려면 다음과 같이 선언하십시오.
 
 ```cpp
 int GetExtendedErrorStatus( char *message )
@@ -208,4 +208,4 @@ int GetExtendedErrorStatus( char *message )
 
 ## <a name="see-also"></a>참고자료
 
-[클래스 및 구조체](../cpp/classes-and-structs-cpp.md)
+[클래스 및 구조체(C++)](../cpp/classes-and-structs-cpp.md)

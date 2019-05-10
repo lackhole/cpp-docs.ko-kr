@@ -9,11 +9,11 @@ helpviewer_keywords:
 - ATL Control Wizard
 ms.assetid: 991f8e72-ffbc-4382-a4ce-e255acfba5b6
 ms.openlocfilehash: 58c3ebe4c2a15aa3f0d59191c37a7f2422a63ab5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261210"
 ---
 # <a name="atl-control-wizard"></a>ATL 컨트롤 마법사
 
@@ -40,7 +40,7 @@ ATL 프로젝트 (또는 MFC 프로젝트에 ATL 지원)에 삽입 하는 ATL �
 
 ### <a name="c"></a>C++
 
-개체를 구현 하기 위해 생성 하는 c + + 클래스에 대 한 정보를 제공 합니다.
+에 대 한 정보를 제공 합니다 C++ 개체를 구현 하기 위해 생성 하는 클래스입니다.
 
 - **짧은 이름**
 

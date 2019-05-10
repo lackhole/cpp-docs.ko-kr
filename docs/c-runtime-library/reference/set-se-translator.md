@@ -24,15 +24,15 @@ helpviewer_keywords:
 - _set_se_translator function
 ms.assetid: 280842bc-d72a-468b-a565-2d3db893ae0f
 ms.openlocfilehash: 18ee500d7b884d1934c29dc91d9bcb03d507680d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57808380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356552"
 ---
 # <a name="setsetranslator"></a>_set_se_translator
 
-스레드별 콜백 함수에 c + + Win32 예외 (C 구조적 예외)를 변환할 형식 예외로 설정 합니다.
+Win32 예외 (C 구조적 예외)를 변환 하는 스레드당 콜백 함수 집합을 C++ 예외를 입력 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -53,7 +53,7 @@ _se_translator_function _set_se_translator(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_set_se_translator** 함수는 c + + Win32 예외 (C 구조적 예외)를 처리 하는 방법을 제공 예외를 입력 합니다. 각 C 예외가 c + +에서 처리할 수 있도록 **catch** 처리기를 먼저 사용 되거나 C 예외가 특정 클래스 형식 특성에서 파생 될 수 있는 C 예외 래퍼 클래스를 정의 합니다. 이 클래스를 사용하려면 C 예외가 발생할 때마다 내부 예외 처리 메커니즘을 통해 호출되는 사용자 지정 C 예외 변환기 함수를 설치합니다. 변환기 함수 내에서 일치 하는 c + +에서 발생 될 수 있는 모든 형식의 예외를 throw 할 수 있습니다 **catch** 처리기입니다.
+합니다 **_set_se_translator** 함수는 Win32 예외 (C 구조적 예외)를 처리 하는 방법으로 제공 C++ 예외를 입력 합니다. 각 C 예외를 처리 하도록 허용 하는 C++ **catch** 처리기를 먼저 사용 되거나 C 예외가 특정 클래스 형식 특성에서 파생 될 수 있는 C 예외 래퍼 클래스를 정의 합니다. 이 클래스를 사용하려면 C 예외가 발생할 때마다 내부 예외 처리 메커니즘을 통해 호출되는 사용자 지정 C 예외 변환기 함수를 설치합니다. 변환기 함수 내에서 일치 하는 수 있는 모든 형식의 예외를 throw 할 수 있습니다 C++ **catch** 처리기입니다.
 
 사용 해야 합니다 [/EHa](../../build/reference/eh-exception-handling-model.md) 사용 하는 경우 **_set_se_translator**합니다.
 

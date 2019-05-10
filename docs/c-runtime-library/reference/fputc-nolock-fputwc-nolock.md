@@ -34,11 +34,11 @@ helpviewer_keywords:
 - _fputwc_nolock function
 ms.assetid: c63eb3ad-58fa-46d0-9249-9c25f815eab9
 ms.openlocfilehash: 370b7e9f20bcc32f6243cff804381b5453801dbd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333133"
 ---
 # <a name="fputcnolock-fputwcnolock"></a>_fputc_nolock, _fputwc_nolock
 
@@ -62,7 +62,7 @@ wint_t _fputwc_nolock(
 *c*<br/>
 쓸 문자입니다.
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -71,7 +71,7 @@ wint_t _fputwc_nolock(
 
 ## <a name="remarks"></a>설명
 
-**_fputc_nolock** 하 고 **_fputwc_nolock** 동일 **fputc** 하 고 **fputwc**각각 여 간섭에서 보호 되지 않는 점을 제외 하 고 다른 스레드입니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**_fputc_nolock** 하 고 **_fputwc_nolock** 동일 **fputc** 하 고 **fputwc**각각 여 간섭에서 보호 되지 않는 점을 제외 하 고 다른 스레드입니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 스트림이 ANSI 모드에서 열리는 경우 두 함수는 동일하게 작동합니다. **_fputc_nolock** 유니코드 스트림으로 출력을 현재 지원 하지 않습니다.
 

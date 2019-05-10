@@ -8,11 +8,11 @@ helpviewer_keywords:
 - selectany __declspec keyword
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
 ms.openlocfilehash: a6bf4076dfecbd29035716285f52c0a9faf81067
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267299"
 ---
 # <a name="selectany"></a>selectany
 
@@ -34,7 +34,7 @@ __declspec( selectany ) declarator
 
 동적으로 초기화 되는 전역 개체에 대 한 **selectany** 참조 되지 않은 개체의 초기화 코드도 삭제 됩니다.
 
-보통 EXE 또는 DLL 프로젝트에서 한 번만 전역 데이터 항목을 초기화할 수 있습니다. **selectany** 헤더에 정의 된 둘 이상의 소스 파일에 같은 헤더가 나타날 경우 글로벌 데이터 초기화에 사용할 수 있습니다. **selectany** C 및 c + + 컴파일러에서 사용할 수 있습니다.
+보통 EXE 또는 DLL 프로젝트에서 한 번만 전역 데이터 항목을 초기화할 수 있습니다. **selectany** 헤더에 정의 된 둘 이상의 소스 파일에 같은 헤더가 나타날 경우 글로벌 데이터 초기화에 사용할 수 있습니다. **selectany** 모두 c에서 수 및 C++ 컴파일러.
 
 > [!NOTE]
 >  **selectany** 외부에 표시 되는 전역 데이터 항목의 실제 초기화에만 적용할 수 있습니다.

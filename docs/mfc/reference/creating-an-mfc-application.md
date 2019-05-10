@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC, creating applications
 - MFC applications
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
-ms.openlocfilehash: 251275fd866ce7c9d697787c35c6207ef77862db
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: c70c82d14227687f34309f8d125e3aeab53034a5
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818598"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448441"
 ---
 # <a name="creating-an-mfc-application"></a>MFC 애플리케이션 만들기
 
@@ -36,7 +36,7 @@ MFC 응용 프로그램 마법사에서는 선택하는 옵션에 따라 위의 
 
 ### <a name="to-create-an-mfc-application-using-the-mfc-application-wizard"></a>MFC 응용 프로그램 마법사를 사용하여 MFC 응용 프로그램을 만들려면
 
-1. 도움말 항목의 지침을 따릅니다 [c + + 콘솔 앱 프로젝트를 만들고](../../get-started/tutorial-console-cpp.md)합니다.
+1. 도움말 항목의 지침을 따릅니다 [만들기를 C++ 콘솔 앱 프로젝트](../../get-started/tutorial-console-cpp.md)합니다.
 
 1. 에 **새 프로젝트** 대화 상자에서 **MFC 응용 프로그램** 마법사를 열려면 템플릿 창에서.
 
@@ -47,7 +47,7 @@ MFC 응용 프로그램 마법사에서는 선택하는 옵션에 따라 위의 
 
 1. 클릭 **완료** 마법사를 닫고 개발 환경에서 새 프로젝트를 엽니다.
 
-프로젝트가 만들어진 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [Visual c + + 프로젝트용으로 만들어지는 파일 형식](../../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
+프로젝트가 만들어진 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [시각적 개체에 대해으로 만들어지는 파일 형식 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

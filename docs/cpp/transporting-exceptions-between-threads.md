@@ -1,6 +1,6 @@
 ---
 title: 스레드 간 예외 전송
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 helpviewer_keywords:
 - std::current_exception
 - transporting exceptions between threads
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - rethrow_exception
 - move exceptions between threads
 ms.assetid: 5c95d57b-acf5-491f-8122-57c5df0edd98
-ms.openlocfilehash: f403b1448855b60f323ed582794a00c3e6ae1b3a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: e59883c75fde9938a213fb4e888e6b05a79cf4f7
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464445"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221929"
 ---
 # <a name="transporting-exceptions-between-threads"></a>스레드 간 예외 전송
 
-Visual c + + 지원 *예외를 전송할 때* 한 스레드에서 다른 스레드로에서. 예외 전송으로 하나의 스레드에서 예외를 잡아내어 다른 스레드에서 예외가 throw되어 나타나도록 합니다. 예를 들어, 이 기능을 사용하여 기본 스레드가 보조 스레드에서 throw되는 모든 예외를 처리하는 위치에 있는 다중 스레드 응용 프로그램을 작성할 수 있습니다. 예외 전송 병렬 프로그래밍 라이브러리를 만들거나 시스템 개발자에 주로 유용합니다. Visual c + + 제공 전송 예외를 구현 하는 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) 형식 및 [current_exception](../standard-library/exception-functions.md#current_exception)에 [rethrow_exception](../standard-library/exception-functions.md#rethrow_exception), 및 [make_ exception_ptr](../standard-library/exception-functions.md#make_exception_ptr) 함수입니다.
+Microsoft C++ (MSVC) 컴파일러에서 지 원하는 *예외를 전송할 때* 한 스레드에서 다른 스레드로에서. 예외 전송으로 하나의 스레드에서 예외를 잡아내어 다른 스레드에서 예외가 throw되어 나타나도록 합니다. 예를 들어, 이 기능을 사용하여 기본 스레드가 보조 스레드에서 throw되는 모든 예외를 처리하는 위치에 있는 다중 스레드 응용 프로그램을 작성할 수 있습니다. 예외 전송 병렬 프로그래밍 라이브러리를 만들거나 시스템 개발자에 주로 유용합니다. MSVC 제공 전송 예외를 구현 하는 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) 형식 및 [current_exception](../standard-library/exception-functions.md#current_exception)를 [rethrow_exception](../standard-library/exception-functions.md#rethrow_exception), 및 [make_ exception_ptr](../standard-library/exception-functions.md#make_exception_ptr) 함수입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,7 +42,7 @@ namespace std
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*지정 되지 않은*|`exception_ptr` 형식을 구현하는 데 사용되는 지정되지 않은 내부 클래스입니다.|
+|*unspecified*|`exception_ptr` 형식을 구현하는 데 사용되는 지정되지 않은 내부 클래스입니다.|
 |*p*|예외를 참조하는 `exception_ptr` 개체입니다.|
 |*E*|예외를 나타내는 클래스입니다.|
 |*e*|매개 변수 `E` 클래스의 인스턴스입니다.|
@@ -81,14 +81,14 @@ C++ 표준 위원회 제안서에 대한 자세한 내용은 문서 번호 N2179
 
 다음 컴파일러 옵션 및 프로그래밍 문의 다음 조합만 예외를 전송할 수 있습니다. 다른 조합은 예외는 catch할 수 없거나 catch할 수는 있지만 예외를 전송할 수 없습니다.
 
-- 합니다 **/EHa** 컴파일러 옵션 및 **catch** 문은 SEH 및 c + + 예외를 전송할 수 있습니다.
+- 합니다 **/EHa** 컴파일러 옵션 및 **catch** 문은 SEH를 전송할 수 있습니다 하 고 C++ 예외입니다.
 
-- 합니다 **/EHa**를 **/EHs**, 및 **/EHsc** 컴파일러 옵션 및 **catch** 문은 c + + 예외를 전송할 수 있습니다.
+- 합니다 **/EHa**를 **/EHs**, 및 **/EHsc** 컴파일러 옵션 및 **catch** 문을 전송할 수 있습니다 C++ 예외입니다.
 
-- 합니다 **/CLR** 컴파일러 옵션 및 **catch** 문은 c + + 예외를 전송할 수 있습니다. 합니다 **/CLR** 컴파일러 옵션의 사양을 의미 합니다 **/EHa** 옵션입니다. 컴파일러는 관리되는 예외의 전송을 지원하지 않습니다. 관리 되는 예외에서 파생 되는 때문에 이것이 합니다 [System.Exception 클래스](../standard-library/exception-class.md), 개체가 이미 공용 유래한 런타임의 시설을 이용 함으로써 스레드 간에 이동할 수 있는 합니다.
+- 합니다 **/CLR** 컴파일러 옵션 및 **catch** 문은 전송할 수 있습니다 C++ 예외입니다. 합니다 **/CLR** 컴파일러 옵션의 사양을 의미 합니다 **/EHa** 옵션입니다. 컴파일러는 관리되는 예외의 전송을 지원하지 않습니다. 관리 되는 예외에서 파생 되는 때문에 이것이 합니다 [System.Exception 클래스](../standard-library/exception-class.md), 개체가 이미 공용 유래한 런타임의 시설을 이용 함으로써 스레드 간에 이동할 수 있는 합니다.
 
    > [!IMPORTANT]
-   > 지정 하는 것이 좋습니다 합니다 **/EHsc** 컴파일러 옵션과 c + + 예외를 catch 합니다. 사용 하는 경우 보안 위협에 노출 직접 합니다 **/EHa** 하거나 **/CLR** 컴파일러 옵션 및 **catch** 줄임표를 사용 하 여 문을  *예외 선언* (`catch(...)`). 사용 하려고 하는 것은 **catch** 몇 가지 특정 예외를 캡처하는 문입니다. 하지만 `catch(...)` 문은 예기치 않은 심각한 예외를 포함하여 모든 C++ 및 SEH 예외를 캡처합니다. 예기치 않은 예외를 무시하거나 잘못 처리하는 경우 악성 코드가 이 기회를 이용하여 프로그램 보안을 해칠 수 있습니다.
+   > 지정 하는 것이 좋습니다 합니다 **/EHsc** 컴파일러 옵션과 catch C++ 예외입니다. 사용 하는 경우 보안 위협에 노출 직접 합니다 **/EHa** 하거나 **/CLR** 컴파일러 옵션 및 **catch** 줄임표를 사용 하 여 문을  *예외 선언* (`catch(...)`). 사용 하려고 하는 것은 **catch** 몇 가지 특정 예외를 캡처하는 문입니다. 하지만 `catch(...)` 문은 예기치 않은 심각한 예외를 포함하여 모든 C++ 및 SEH 예외를 캡처합니다. 예기치 않은 예외를 무시하거나 잘못 처리하는 경우 악성 코드가 이 기회를 이용하여 프로그램 보안을 해칠 수 있습니다.
 
 ## <a name="usage"></a>사용법
 
@@ -122,7 +122,7 @@ C++ 표준 위원회 제안서에 대한 자세한 내용은 문서 번호 N2179
 
 ### <a name="seh-exceptions"></a>SEH 예외
 
-사용 하는 경우는 **/EHa** 컴파일러 옵션을 c + +에서 SEH 예외를 catch 할 수 있습니다 **catch** 블록입니다. `current_exception` 함수는 SEH 예외를 참조하는 `exception_ptr` 개체를 반환합니다. 하며 `rethrow_exception` thetransported를 사용 하 여 호출 하는 경우 함수는 SEH 예외를 throw `exception_ptr` 인수로 개체입니다.
+사용 하는 경우는 **/EHa** 컴파일러 옵션에서 SEH 예외를 catch 할 수 있습니다는 C++ **catch** 블록입니다. `current_exception` 함수는 SEH 예외를 참조하는 `exception_ptr` 개체를 반환합니다. 하며 `rethrow_exception` thetransported를 사용 하 여 호출 하는 경우 함수는 SEH 예외를 throw `exception_ptr` 인수로 개체입니다.
 
 합니다 `current_exception` 함수는 null을 반환 `exception_ptr` 를 seh 호출 하는 경우 **__finally** 종료 처리기는 **__except** 예외 처리기 또는 **__except**필터 식입니다.
 
@@ -142,9 +142,9 @@ SEH 예외를 catch하는 경우 `EXCEPTION_RECORD.ExceptionInformation` 데이�
 
 `make_exception_ptr` 함수는 클래스의 인스턴스를 인수로 사용한 다음 인스턴스를 참조하는 `exception_ptr`을 반환합니다. 모든 클래스 개체를 인수로 사용할 수 있지만, 일반적으로 [예외 클래스](../standard-library/exception-class.md) 개체를 `make_exception_ptr` 함수의 인수로 지정합니다.
 
-호출을 `make_exception_ptr` 함수는 해당 catch의 c + + 예외를 throw 하는 **catch** 블록을 호출한를 `current_exception` 함수를 반환 하는 `exception_ptr` 예외를 참조 하는 개체. `make_exception_ptr` 함수의 Microsoft 구현은 예외를 throw한 후 catch하는 것보다 더 효율적입니다.
+호출을 `make_exception_ptr` 함수는 throw 하는 C++ 예외를 catch 하에서 **catch** 블록을 호출한를 `current_exception` 함수를 반환 하는 `exception_ptr` 예외를 참조 하는 개체. `make_exception_ptr` 함수의 Microsoft 구현은 예외를 throw한 후 catch하는 것보다 더 효율적입니다.
 
-응용 프로그램에는 일반적으로 `make_exception_ptr` 함수가 필요하지 않으며 이 함수를 사용하지 않는 것이 좋습니다.
+애플리케이션에는 일반적으로 `make_exception_ptr` 함수가 필요하지 않으며 이 함수를 사용하지 않는 것이 좋습니다.
 
 ## <a name="example"></a>예제
 

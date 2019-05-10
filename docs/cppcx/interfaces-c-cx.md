@@ -3,11 +3,11 @@ title: 인터페이스(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
 ms.openlocfilehash: 04aaf25817cade47e89f0a06c423b68538d947b4
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375784"
 ---
 # <a name="interfaces-ccx"></a>인터페이스(C++/CX)
 
@@ -63,7 +63,7 @@ ref 클래스가 여러 인터페이스를 구현하고 이러한 인터페이�
 
 ## <a name="generic-interfaces"></a>제네릭 인터페이스
 
-C + + /CX는 `generic` 키워드 매개 변수가 있는 Windows 런타임 형식을 나타내는 데 사용 됩니다. 매개 변수화된 형식은 메타데이터로 내보내지고 형식 매개 변수를 지원하는 임의의 언어로 작성된 코드에서 사용될 수 있습니다. Windows 런타임 일부 제네릭 인터페이스를 정의 합니다.-예를 들어 [Windows::Foundation::Collections::IVector\<T >](Windows::Foundation::Collections::IVector)-C + 사용자 정의 public 제네릭 인터페이스의 생성을 지원 하지 않습니다 하지만 + CX 합니다. 하지만 private 제네릭 인터페이스를 만들 수 있습니다.
+C++/CX, 합니다 `generic` 키워드는 매개 변수가 있는 Windows 런타임 형식을 나타내는 데 사용 됩니다. 매개 변수화된 형식은 메타데이터로 내보내지고 형식 매개 변수를 지원하는 임의의 언어로 작성된 코드에서 사용될 수 있습니다. Windows 런타임 일부 제네릭 인터페이스를 정의 합니다.-예를 들어 [Windows::Foundation::Collections::IVector\<T >](Windows::Foundation::Collections::IVector)-C + 사용자 정의 public 제네릭 인터페이스의 생성을 지원 하지 않습니다 하지만 + CX 합니다. 하지만 private 제네릭 인터페이스를 만들 수 있습니다.
 
 제네릭 인터페이스를 작성 하려면 Windows 런타임 형식을 사용할 수 있는 방법을 다음과 같습니다.
 
@@ -98,5 +98,5 @@ C + + /CX는 `generic` 키워드 매개 변수가 있는 Windows 런타임 형�
 ## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
-[Visual c + + 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[네임 스페이스 참조](../cppcx/namespaces-reference-c-cx.md)
+[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

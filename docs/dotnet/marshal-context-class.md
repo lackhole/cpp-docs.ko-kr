@@ -9,11 +9,11 @@ helpviewer_keywords:
 - msclr::marshal_context class [C++]
 ms.assetid: 241b0cf6-4ca4-4812-aaee-d671c11dc034
 ms.openlocfilehash: 25fc2be80ba0e5d8c7f76cee1f22eed4d1bb4fc7
-ms.sourcegitcommit: 9813e146a4eb30929d8352872859e8fcb7ff6d2f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384870"
 ---
 # <a name="marshalcontext-class"></a>marshal_context 클래스
 
@@ -27,7 +27,7 @@ class marshal_context
 
 ## <a name="remarks"></a>설명
 
-사용 된 `marshal_context` 컨텍스트를 필요로 하는 데이터 변환에 대 한 클래스입니다. 변환이 필요한 컨텍스트 및 마샬링 파일에 포함 되도록 하는 방법에 대 한 자세한 내용은 참조 하세요. [c + + 마샬링 개요](../dotnet/overview-of-marshaling-in-cpp.md)합니다. 마샬링 컨텍스트를 사용 하는 경우의 결과 까지만 유효 합니다 `marshal_context` 개체는 소멸 됩니다. 결과 유지 하려면 데이터를 복사 해야 합니다.
+사용 된 `marshal_context` 컨텍스트를 필요로 하는 데이터 변환에 대 한 클래스입니다. 변환이 필요한 컨텍스트 및 마샬링 파일에 포함 되도록 하는 방법에 대 한 자세한 내용은 참조 하세요. [마샬링 개요 C++ ](../dotnet/overview-of-marshaling-in-cpp.md)합니다. 마샬링 컨텍스트를 사용 하는 경우의 결과 까지만 유효 합니다 `marshal_context` 개체는 소멸 됩니다. 결과 유지 하려면 데이터를 복사 해야 합니다.
 
 동일한 `marshal_context` 다양 한 데이터 변환에 사용할 수 있습니다. 이 방식으로 컨텍스트를 다시 사용 마샬링 이전 호출의 결과 영향을 주지 않습니다.
 
@@ -63,7 +63,7 @@ marshal_context();
 
 ### <a name="remarks"></a>설명
 
-일부 데이터 변환을 마샬링 컨텍스트가 필요 합니다. 번역에 대 한 자세한 컨텍스트를 필요를 응용 프로그램에 포함 해야 합니다는 마샬링 파일을 참조 하세요 [c + + 마샬링 개요](../dotnet/overview-of-marshaling-in-cpp.md)합니다.
+일부 데이터 변환을 마샬링 컨텍스트가 필요 합니다. 번역에 대 한 자세한 컨텍스트를 필요를 응용 프로그램에 포함 해야 합니다는 마샬링 파일을 참조 하세요 [마샬링 개요 C++ ](../dotnet/overview-of-marshaling-in-cpp.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -80,7 +80,7 @@ marshal_context();
 
 ### <a name="remarks"></a>설명
 
-일부 데이터 변환을 마샬링 컨텍스트가 필요 합니다. 참조 [c + + 마샬링 개요](../dotnet/overview-of-marshaling-in-cpp.md) 는 번역 컨텍스트 하며 응용 프로그램에 포함할 마샬링 파일에 대 한 자세한 내용은 합니다.
+일부 데이터 변환을 마샬링 컨텍스트가 필요 합니다. 참조 [마샬링 개요 C++ ](../dotnet/overview-of-marshaling-in-cpp.md) 는 번역 컨텍스트 하며 응용 프로그램에 포함할 마샬링 파일에 대 한 자세한 내용은 합니다.
 
 삭제를 `marshal_context` 개체 컨텍스트에서 변환 데이터를 무효화 됩니다. 이후에 데이터를 보존 하려는 경우를 `marshal_context` 개체 삭제 되 면 유지 되는 변수에 데이터를 수동으로 복사 해야 합니다.
 
@@ -105,7 +105,7 @@ To_Type marshal_as<To_Type>(
 
 ### <a name="remarks"></a>설명
 
-이 함수는 특정 데이터 개체의 마샬링을 수행 합니다. 이 함수를 사용 하 여 테이블에서 지정 된 변환 만으로 [c + + 마샬링 개요](../dotnet/overview-of-marshaling-in-cpp.md)합니다.
+이 함수는 특정 데이터 개체의 마샬링을 수행 합니다. 이 함수를 사용 하 여 테이블에서 지정 된 변환 만으로 [마샬링 개요 C++ ](../dotnet/overview-of-marshaling-in-cpp.md)합니다.
 
 지원 되지 않는 데이터 형식의 쌍 마샬링할 하려고 하면 `marshal_as` 오류가 생성 됩니다 [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) 컴파일 타임에 있습니다. 자세한 내용은이 오류와 함께 제공 되는 메시지를 읽습니다. `C4996` 이상만 사용 되지 않는 함수에 대 한 오류를 생성할 수 있습니다. 이 오류를 생성 하는 두 가지 조건은를 지원 하지 않는 데이터 형식의 한 쌍을 마샬링하는 동안 하며 사용 하는 동안 `marshal_as` 필요한 컨텍스트를 변환 합니다.
 

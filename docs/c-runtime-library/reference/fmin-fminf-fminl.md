@@ -31,11 +31,11 @@ helpviewer_keywords:
 - fminl function
 ms.assetid: 1916dfb5-99c1-4b0d-aefb-513525c3f2ac
 ms.openlocfilehash: f73853e18bd5d7f699cd2c3109fe5fb830859bf1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333380"
 ---
 # <a name="fmin-fminf-fminl"></a>fmin, fminf, fminl
 
@@ -92,13 +92,13 @@ long double fminl(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **fmin** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **fmin** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **fmin** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **fmin** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**fmin**하십시오 **fminf**, **fminl**|C: \<math.h><br />C++: \<math.h> 또는 \<cmath>|
+|**fmin**, **fminf**, **fminl**|C: \<math.h><br />C++: \<math.h> 또는 \<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

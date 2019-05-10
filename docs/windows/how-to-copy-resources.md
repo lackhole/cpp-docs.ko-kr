@@ -30,12 +30,12 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: 6b9499fbd806c04774d12750c70816d0312a4e3f
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 28678b560387fa6b111d60a7487ed44f9244a821
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59036064"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65449067"
 ---
 # <a name="how-to-manage-resources-c"></a>방법: 리소스 관리 (C++)
 
@@ -100,7 +100,7 @@ IDD_AboutBox (Finnish - XX33)
 
 ## <a name="import-and-export-resources"></a>가져오기 및 내보내기 리소스
 
-Visual C++에서 사용하도록 그래픽 리소스(비트맵, 아이콘, 커서 및 도구 모음), HTML 파일 및 사용자 지정 리소스를 가져올 수 있습니다. Visual C++ 프로젝트에서 동일한 형식의 파일을 개발 환경 외부에서 사용할 수 있는 별도의 파일로 내보낼 수 있습니다.
+Visual C++에서 사용하도록 그래픽 리소스(비트맵, 아이콘, 커서 및 도구 모음), HTML 파일 및 사용자 지정 리소스를 가져올 수 있습니다. Visual Studio에서 동일한 형식의 파일을 내보낼 수 있습니다 C++ 개발 환경 외부에서 사용할 수 있는 별도의 파일로 프로젝트입니다.
 
 > [!NOTE]
 > 액셀러레이터 키, 대화 상자 및 문자열 테이블과 같은 리소스 종류 가져오거나 독립 실행형 파일 형식이 이기 때문에 내보낼 수 없습니다.

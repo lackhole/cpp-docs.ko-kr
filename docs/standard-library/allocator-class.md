@@ -35,15 +35,15 @@ helpviewer_keywords:
 - std::allocator [C++], rebind
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
 ms.openlocfilehash: 40e99901d4d4105902010a9e5b71ed3edf7d00db
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411047"
 ---
 # <a name="allocator-class"></a>allocator 클래스
 
-저장소 할당 및 배열 형식의 개체에 대 한 해제를 관리 하는 개체를 설명 하는 템플릿 클래스 `Type`합니다. 클래스의 개체 `allocator` c + + 표준 라이브러리의 여러 컨테이너 템플릿 클래스의 생성자에 지정 된 기본 할당자 개체입니다.
+저장소 할당 및 배열 형식의 개체에 대 한 해제를 관리 하는 개체를 설명 하는 템플릿 클래스 `Type`합니다. 클래스의 개체 `allocator` 의 여러 컨테이너 템플릿 클래스의 생성자에 지정 된 기본 할당자 개체는 C++ 표준 라이브러리입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -59,7 +59,7 @@ class allocator
 
 ## <a name="remarks"></a>설명
 
-모든 c + + 표준 라이브러리 컨테이너를 기본값으로 사용 하는 템플릿 매개 변수가 `allocator`합니다. 사용자 지정 할당자로 컨테이너를 생성하면 해당 컨테이너 요소의 할당 및 해제를 제어할 수 있습니다.
+모든는 C++ 로 설정 되는 템플릿 매개 변수를 포함 하는 표준 라이브러리 컨테이너 `allocator`합니다. 사용자 지정 할당자로 컨테이너를 생성하면 해당 컨테이너 요소의 할당 및 해제를 제어할 수 있습니다.
 
 예를 들어 할당자 개체에서 전용 힙 또는 공유 메모리에 스토리지를 할당하거나, 작거나 큰 개체 크기에 맞게 최적화할 수 있습니다. 또한 제공된 형식 정의를 사용하여 공유 메모리를 관리하는 특수 접근자 개체를 통해 요소에 액세스하거나 자동 가비지 컬렉션을 수행하도록 지정할 수 있습니다. 따라서 할당자 개체를 사용하여 스토리지를 할당하는 클래스는 C++ 표준 라이브러리의 컨테이너처럼 이러한 형식을 사용하여 포인터 및 참조 개체를 선언해야 합니다.
 
@@ -77,7 +77,7 @@ class allocator
 
 이러한 `Type`은 할당 된 요소에 대 한 포인터 및 참조를 사용 해야 하는 폼을 지정 합니다. ( [allocator:: pointer](#pointer) 아닐 동일 `Type*` 모든 할당자 개체에도 있기 클래스에 대 한 명확한 정의가 `allocator`.)
 
-**C++11 이상:** 할당자에서 이동 작업을 사용하려면 최소 할당자 인터페이스를 사용하고 복사 생성자, == 및 != 연산자, 할당 및 할당 취소를 구현하세요. 자세한 내용 및 예제는 [할당자](../standard-library/allocators.md)를 참조하세요.
+**C + + 11 이상:**  할당자에서 이동 작업을 사용 하려면 최소 할당자 인터페이스를 사용 하 고 복사 생성자를 구현, = = 및! = 연산자, 할당 및 할당 취소 합니다. 자세한 내용 및 예제는 [할당자](../standard-library/allocators.md)를 참조하세요.
 
 ## <a name="members"></a>멤버
 

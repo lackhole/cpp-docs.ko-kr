@@ -9,11 +9,11 @@ helpviewer_keywords:
 - conventions [C++], C++ algorithm
 ms.assetid: dec9b373-7d5c-46cc-b7d2-21a938ecd0a6
 ms.openlocfilehash: a0a1165d731e44568d530e3ed919d73e2a3e8e5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411125"
 ---
 # <a name="algorithms"></a>알고리즘
 
@@ -25,7 +25,7 @@ ms.locfileid: "50648030"
 
 - 구 "범위의 \[ *는*를 *B*)"부터 0 개 이상 불연속 값의 시퀀스를 의미 *는* 포함 하지 않고 최대 *B* . 범위가 올바른 경우에만 *B* 에서 연결할 수 *A;* 저장할 수 있습니다 *A* 개체에 *N* (*N*  =  *A*), 개체를 0 번 이상 증가 (+ +*N*)를 비교 하 여 개체 및 *B* 한정 된 수의 증가 한 후 (*N*   ==  *B*).
 
-- 구 "각 *N* 범위의 \[ *A*, *B*)" 즉 *N* 값으로 시작 *를*0 번 이상 값과 같을 때까지 증가 하 고 *B*합니다. N == B*의 경우는 범위에 포함되지 않습니다.
+- 구 "각 *N* 범위의 \[ *A*, *B*)" 즉 *N* 값으로 시작 *를*0 번 이상 값과 같을 때까지 증가 하 고 *B*합니다. *N* == *B*의 경우는 범위에 포함되지 않습니다.
 
 - 구 "가장 낮은 값 *N* 범위의 \[ *는*를 *B*) 되도록 *X*" 조건을 즉*X* 각각에 대 한 결정 됩니다 *N* 범위의 \[ *A*를 *B*) 조건까지 *X*충족 됩니다.
 

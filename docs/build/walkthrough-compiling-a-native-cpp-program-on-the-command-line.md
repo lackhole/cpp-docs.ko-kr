@@ -1,25 +1,26 @@
 ---
-title: '연습: 명령줄에서 네이티브 c + + 프로그램 컴파일'
+title: '연습: 네이티브 컴파일 C++ 명령줄에서 프로그램'
+description: Microsoft C++ 명령 프롬프트에서 컴파일러.
 ms.custom: conceptual
-ms.date: 09/24/2018
+ms.date: 04/23/2019
 helpviewer_keywords:
 - native code [C++]
 - Visual C++, native code
 - compiling programs [C++]
 - command-line applications [C++], native
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
-ms.openlocfilehash: d7b5bc88966f7edbb7179c36398b1dd95afb971f
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 64300c8683dd5d1c40638ba7d50acfca6abc40c0
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217706"
 ---
-# <a name="walkthrough-compiling-a-native-c-program-on-the-command-line"></a>연습: 명령줄에서 네이티브 c + + 프로그램 컴파일
+# <a name="walkthrough-compiling-a-native-c-program-on-the-command-line"></a>연습: 네이티브 컴파일 C++ 명령줄에서 프로그램
 
-Visual C++ 유니버설 Windows 플랫폼 앱에 대 한 기본적인 콘솔 앱, 데스크톱 앱, 장치 드라이버 및.NET 구성 요소에서 모든 항목을 만들 데 사용할 수 있는 명령줄 C++ 컴파일러를 포함 합니다.
+Visual Studio 명령줄에 C++ 모든 항목을 기본적인 콘솔 앱부터 유니버설 Windows 플랫폼 앱, 데스크톱 앱, 장치 드라이버 및.NET 구성 요소를 만들 하는 데 사용할 수 있는 컴파일러.
 
-이 연습에서는 basic, "Hello, World" 만든-편집기에서 텍스트를 사용 하 여 C++ 프로그램을 스타일 및 다음 명령줄에서 컴파일합니다. 명령줄을 사용 하는 대신 Visual Studio IDE를 시도 하세요. 참조 하려는 경우 [연습: 프로젝트 및 솔루션 (c + +)를 작업할](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) 또는 [c + + 데스크톱 개발에 Visual Studio IDE를 사용 하 여](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)합니다.
+이 연습에서는 basic, "Hello, World" 만든-편집기에서 텍스트를 사용 하 여 C++ 프로그램을 스타일 및 다음 명령줄에서 컴파일합니다. 명령줄을 사용 하는 대신 Visual Studio IDE를 시도 하세요. 참조 하려는 경우 [연습: 프로젝트 및 솔루션 작업 (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) 나 [Visual Studio IDE를 사용 하 여에 대 한 C++ 데스크톱 개발](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)합니다.
 
 이 연습에서는 표시되는 내용을 입력하는 대신 Visual C++ 프로그램을 사용하거나 다른 도움말 문서의 Visual C++ 코드 샘플을 사용할 수 있습니다.
 
@@ -29,7 +30,7 @@ Visual C++ 유니버설 Windows 플랫폼 앱에 대 한 기본적인 콘솔 앱
 
 Visual Studio는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집기, 리소스 관리자, 디버거 및 컴파일러를 지 원하는 강력한 통합된 개발 환경 (IDE)입니다. 다운로드 무료 Visual Studio Community edition 등 Visual Studio를 설치 하 고 C/C++ 개발에 대 한 지원을 포함 하는 방법에 대 한 자세한 내용은 [Visual Studio에서 C++ 설치 지원](vscpp-step-0-installation.md)합니다.
 
-명령줄 컴파일러, 도구 및 C 및 C++ 프로그램을 작성 하는 데 필요한 라이브러리가 Visual studio Build Tools를 설치 합니다. 빌드 랩에 안성맞춤입니다 또는 클래스 룸 연습 하 고 비교적 빠르게 설치 합니다. 명령줄 도구만을 설치 하려면 다운로드 [Visual Studio 2017 용 Build Tools](https://go.microsoft.com/fwlink/p/?linkid=875721)합니다.
+명령줄 컴파일러, 도구 및 C 및 C++ 프로그램을 작성 하는 데 필요한 라이브러리가 Visual studio Build Tools를 설치 합니다. 빌드 랩에 안성맞춤입니다 또는 클래스 룸 연습 하 고 비교적 빠르게 설치 합니다. 명령줄 도구만을 설치 하려면 Build Tools for Visual Studio을 찾도록 합니다 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지입니다.
 
 명령줄에서 C 또는 C++ 프로그램을 빌드할 수 있습니다, 전에 명령줄에서 액세스할 수 있습니다 및 도구가 설치 되어 있는지 확인 해야 합니다. Visual C++에는 도구, 헤더 및 라이브러리를 사용 하 여 찾으려는 명령줄 환경에 대 한 복잡 한 요구 사항이 있습니다. **일반 명령 프롬프트 창에서 Visual C++를 사용할 수 없습니다** 몇 가지 준비를 수행 하지 않고 있습니다. 다행히 Visual C++ 명령줄 빌드에 대 한 설정 환경에 있는 개발자 명령 프롬프트를 시작할 수에 대 한 바로 가기 키를 설치 합니다. 그러나 개발자 명령 프롬프트 바로 가기 및를 위치 이름은 거의 모든 버전의 Visual C++ 및 다른 버전의 Windows에서 서로 다릅니다. 첫 번째 연습에서는 작업 사용에 적합 한을 찾는 것입니다.
 
@@ -38,11 +39,11 @@ Visual Studio는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집기
 
 ### <a name="open-a-developer-command-prompt"></a>개발자 명령 프롬프트를 열으십시오
 
-1. Windows 10에서 Visual Studio 2017을 설치한 경우 시작 메뉴를 열고 선택한 **모든 앱**합니다. 아래로 스크롤하여 엽니다는 **Visual Studio 2017** 폴더 (Visual Studio 2017 앱 제외). 선택할 **VS 2017 용 개발자 명령 프롬프트** 명령 프롬프트 창을 엽니다.
+1. Visual Studio 2017 또는 나중에 Windows 10을 설치한 경우 시작 메뉴를 열고 선택한 **모든 앱**합니다. 아래로 스크롤하여 엽니다는 **Visual Studio** 폴더 (Visual Studio 응용 프로그램이 아니라). 선택할 **VS 용 개발자 명령 프롬프트** 명령 프롬프트 창을 엽니다.
 
    Windows 10에서 Microsoft Visual C++ Build Tools 2015를 설치한 경우 엽니다는 **시작** 메뉴 선택 **모든 앱**합니다. 아래로 스크롤하여 엽니다는 **Visual C++ Build Tools** 폴더입니다. 선택할 **Visual C++ 2015 x86 Native Tools 명령 프롬프트** 명령 프롬프트 창을 엽니다.
 
-   Visual Studio의 다른 버전을 사용 하거나 다른 버전의 Windows 실행 하는 경우 시작 메뉴에서 확인 하거나 개발자 명령 프롬프트 바로 가기를 포함 하는 Visual Studio tools 폴더에 대 한 페이지를 시작 합니다. 또한 "개발자 명령 프롬프트"를 검색 하 고 Visual Studio의 설치 된 버전과 일치 하는 하나를 선택 하려면 Windows 검색 기능을 사용할 수 있습니다. 바로 가기를 사용 하 여 명령 프롬프트 창을 엽니다.
+   또한 "개발자 명령 프롬프트"를 검색 하 고 Visual Studio의 설치 된 버전과 일치 하는 하나를 선택 하려면 Windows 검색 기능을 사용할 수 있습니다. 바로 가기를 사용 하 여 명령 프롬프트 창을 엽니다.
 
 1. 다음으로, Visual C++ 개발자 명령 프롬프트를 올바르게 설정 되어 있는지 확인 합니다. 명령 프롬프트 창에서 입력 `cl` 및 다음과 같은 출력이 표시 되는지 확인 합니다.
 
@@ -87,7 +88,7 @@ Visual Studio는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집기
 
 1. 작업을 저장합니다. 메모장의 **파일** 메뉴에서 **저장**을 선택합니다.
 
-   축 하 hello.cpp 컴파일할 준비가 된 Visual C++ 소스 파일을 만들었습니다.
+   축, 만든를 C++ 원본 파일, hello.cpp 컴파일할 준비가 된 합니다.
 
 1. 개발자 명령 프롬프트 창으로 전환 합니다. 입력 `dir` c:\hello 디렉터리의 내용을 나열 하려면 명령 프롬프트에서. 원본 파일 hello.cpp 디렉터리 나열 다음과 비슷하게 표시 됩니다.
 
@@ -165,7 +166,7 @@ Visual Studio는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집기
 
 구성 하 고 명령줄에서 보다 복잡 한 프로젝트를 빌드할 NMAKE 메이크파일, 있고 MSBuild 및 프로젝트 파일을 사용할 수 있습니다. 이러한 도구 사용에 대 한 자세한 내용은 참조 하세요. [NMAKE 참조](reference/nmake-reference.md) 하 고 [MSBuild](msbuild-visual-cpp.md)합니다.
 
-C 및 C++ 언어는 유사 하지만 동일 하지는 않습니다. MSVC 컴파일러 코드를 컴파일할 때 사용할 언어를 결정 하는 간단한 규칙을 사용 합니다. 기본적으로 MSVC 컴파일러는 C 소스 코드로.c로 끝나는 모든 파일 및 c + + 소스 코드로.cpp으로 끝나는 모든 파일을 처리 합니다. 모든 파일 종속 되지 않는 파일 이름 확장명에 C++로 취급 하도록 컴파일러를 강제 적용 하려면 사용 합니다 [/TC](reference/tc-tp-tc-tp-specify-source-file-type.md) 컴파일러 옵션입니다.
+C 및 C++ 언어는 유사 하지만 동일 하지는 않습니다. MSVC 컴파일러 코드를 컴파일할 때 사용할 언어를 결정 하는 간단한 규칙을 사용 합니다. 기본적으로 MSVC 컴파일러가 C 소스 코드로.c로 끝나는 모든 파일 및.cpp로 끝나는 모든 파일을 처리 C++ 소스 코드입니다. 모든 파일 종속 되지 않는 파일 이름 확장명에 C++로 취급 하도록 컴파일러를 강제 적용 하려면 사용 합니다 [/TC](reference/tc-tp-tc-tp-specify-source-file-type.md) 컴파일러 옵션입니다.
 
 MSVC 컴파일러는 ISO C99 표준을 호환 되지만 엄격 하 게 준수 하지 않는 한 C 런타임 라이브러리 (CRT)를 포함 합니다. 대부분의 경우에서 이식 가능한 코드 컴파일 및 예상 대로 실행 합니다. Visual C++ ISO C11의 CRT 변경 내용 중 일부를 지원 하지 않습니다. 특정 라이브러리 함수 및 POSIX 함수 이름을 MSVC 컴파일러에서 사용 되지 않습니다. 함수는 지원 되지만 기본 이름이 변경 되었습니다. 자세한 내용은 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md) 하 고 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)합니다.
 

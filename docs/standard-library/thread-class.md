@@ -24,15 +24,15 @@ helpviewer_keywords:
 - std::thread [C++], native_handle
 - std::thread [C++], swap
 ms.openlocfilehash: d1405062ef553dbfea3b60b5f39e0546707343b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412074"
 ---
 # <a name="thread-class"></a>thread 클래스
 
-응용 프로그램 내의 실행 스레드를 관찰하고 관리하는 데 사용되는 개체를 정의합니다.
+애플리케이션 내의 실행 스레드를 관찰하고 관리하는 데 사용되는 개체를 정의합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -231,7 +231,7 @@ thread(thread&& Other) noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *F*<br/>
-스레드에 의해 실행되는 응용 프로그램 정의 함수
+스레드에 의해 실행되는 애플리케이션 정의 함수
 
 *A*<br/>
 에 전달할 인수의 목록을 *F*합니다.

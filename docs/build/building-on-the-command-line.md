@@ -1,8 +1,8 @@
 ﻿---
 title: 명령줄 Visual Studio에서에서 MSVC 도구 집합을 사용 하 여
-description: Microsoft c + + 컴파일러 도구 체인 (MSVC) Visual Studio IDE 외부에서 명령줄을 사용 합니다.
+description: Microsoft C++ Visual Studio IDE 외부에서 명령줄 컴파일러 도구 체인 (MSVC).
 ms.custom: conceptual
-ms.date: 12/10/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - command-line builds [C++]
 - compiling source code [C++], command line
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - command line [C++], building from
 - command line [C++], compilers
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
-ms.openlocfilehash: 21d1c9063a1d6dd154de8d2caca913ea3fd0ce37
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 5f9ac1e4753fdba412af26bcc45022dee354cacf
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812124"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877143"
 ---
 # <a name="use-the-msvc-toolset-from-the-command-line"></a>명령줄에서 MSVC 도구 집합을 사용 하 여
 
-Visual Studio에 포함 된 도구를 사용 하 여 명령줄에서 C 및 C++ 응용 프로그램을 빌드할 수 있습니다. 컴파일러 도구 집합에서 독립 실행형 패키지로 다운로드할 수도 있습니다 [Visual Studio 2017 용 Build Tools](https://go.microsoft.com/fwlink/p/?linkid=875721)합니다.
+Visual Studio에 포함 된 도구를 사용 하 여 명령줄에서 C 및 C++ 응용 프로그램을 빌드할 수 있습니다. 컴파일러 도구 집합에서 독립 실행형 패키지로 다운로드할 수도 있습니다는 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지입니다. 일부인 합니다 **for Visual Studio Build Tools** ; 패키지에 필요한 도구만을 다운로드 하도록 선택할 수 있습니다 C++ 개발 합니다.
 
 ## <a name="how-to-use-the-command-line-tools"></a>명령줄 도구를 사용 하는 방법
 
@@ -43,13 +43,11 @@ Visual Studio 설치 관리자에서 C++ 워크 로드 중 하나를 선택 하�
 - **x86_x64 Cross Tools 명령 프롬프트** -32 비트, x86 네이티브 도구를 사용 하 여 64 비트, x64 네이티브 코드를 작성 하도록 환경을 설정 합니다.
 - **x64_x86 Cross Tools 명령 프롬프트** -64 비트 x64 네이티브 도구를 사용 하 여 32 비트, x86 네이티브 코드를 작성 하도록 환경을 설정 합니다.
 
-실제 시작 메뉴 폴더 및 바로 가기 이름 하나를 설정 하는 경우를 설치한 후 Visual Studio 버전 및 설치 애칭에 따라 달라 집니다. 예를 들어, Visual Studio 2017이 설치 되어 있는 경우에 대 한 한이 지정 된 설치 애칭입니다 *미리 보기*, 개발자 명령 프롬프트 바로 가기를 이름은 **(미리 보기)VS2017용개발자명령프롬프트**, 라는 폴더에 **Visual Studio 2017**합니다.
-
-설치한 경우 합니다 [Visual Studio 2017 용 Build Tools](https://go.microsoft.com/fwlink/p/?linkid=875721) (또한 포함 Visual Studio 2015 업데이트 3 컴파일러 도구 집합) 형식인 아키텍처별 네이티브 또는 크로스 도구 옵션 설치 된 개발자 명령 프롬프트 및 일반 되지 **개발자 명령 프롬프트** 바로 가기.
+실제 시작 메뉴 폴더 및 바로 가기 이름 하나를 설정 하는 경우를 설치한 후 Visual Studio 버전 및 설치 애칭에 따라 달라 집니다. 예를 들어, Visual Studio 2017이 설치 되어 있는 경우에 대 한 한이 지정 된 설치 애칭입니다 *미리 보기*, 개발자 명령 프롬프트 바로 가기를 라고 **VS 2019 용 개발자 명령 프롬프트**의 폴더가 **Visual Studio 2019**합니다.
 
 ## <a name="developer_command_prompt"></a> 개발자 명령 프롬프트 창을 열려면
 
-1. 바탕 화면에서 Windows를 엽니다 **시작** 메뉴 및 스크롤을 찾고 예를 들어, Visual Studio의 버전에 대 한 폴더를 열고 **Visual Studio 2017**합니다. 일부 이전 버전의 Visual Studio에서 바로 가기가 있는 라는 하위 폴더 **Visual Studio Tools**합니다.
+1. 바탕 화면에서 Windows를 엽니다 **시작** 메뉴 및 스크롤을 찾고 예를 들어, Visual Studio의 버전에 대 한 폴더를 열고 **Visual Studio 2019**합니다. 일부 이전 버전의 Visual Studio에서 바로 가기가 있는 라는 하위 폴더 **Visual Studio Tools**합니다.
 
 1. 폴더를 선택 하 여 **개발자 명령 프롬프트** Visual Studio의 버전에 대 한 합니다. 이 바로 가기는 32 비트, x86 네이티브 코드를 작성 하는 기본 빌드 아키텍처의 32 비트, x86 네이티브 도구를 사용 하는 개발자 명령 프롬프트 창을 시작 합니다. 기본이 아닌 빌드 아키텍처를 원한다 면 네이티브 중 하나를 선택 또는 크로스 도구 명령 프롬프트를 호스트 및 대상 아키텍처를 지정 합니다.
 
@@ -57,11 +55,11 @@ Visual Studio 설치 관리자에서 C++ 워크 로드 중 하나를 선택 하�
 
 ## <a name="developer_command_file_locations"></a> 개발자 명령 파일 위치
 
-기존 명령 프롬프트 창에서 빌드 아키텍처 환경을 설정 하려는 경우 필요한 환경을 설정 하려면 설치 관리자가 만든 명령 파일 (일괄 처리 파일) 중 하나를 사용할 수 있습니다. 만 좋습니다 새 명령 프롬프트 창에서이 작업을 수행 하 고 권장 하지는 않습니다 있습니다 이후 동일한 명령 창에서 환경을 전환 합니다. 이러한 파일의 위치를 설치한 후 Visual Studio 버전에 위치 및 설치 하는 동안 만든 명명 옵션에 따라 달라 집니다. Visual Studio 2017 용 64 비트 컴퓨터에 일반적인 설치 위치는 \Program 파일 (x86) studio\2017에\\*edition*여기서 *edition* 커뮤니티 수 Professional, Enterprise, BuildTools, 또는 다른 이름을 입력 합니다. Visual Studio 2015 용 일반 설치 위치 \Program 파일 (x86) \Microsoft Visual Studio 14.0는 있습니다.
+기존 명령 프롬프트 창에서 빌드 아키텍처 환경을 설정 하려는 경우 필요한 환경을 설정 하려면 설치 관리자가 만든 명령 파일 (일괄 처리 파일) 중 하나를 사용할 수 있습니다. 만 좋습니다 새 명령 프롬프트 창에서이 작업을 수행 하 고 권장 하지는 않습니다 있습니다 이후 동일한 명령 창에서 환경을 전환 합니다. 이러한 파일의 위치를 설치한 후 Visual Studio 버전에 위치 및 설치 하는 동안 만든 명명 옵션에 따라 달라 집니다. Visual Studio 2019 64 비트 컴퓨터에 일반적인 설치 위치는 \Program 파일 (x86) \Microsoft Visual Studio\2019에\\*edition*여기서 *edition* 커뮤니티 수 Professional, Enterprise, BuildTools, 또는 다른 이름을 입력 합니다. Visual Studio 2017 위치는 유사 합니다. Visual Studio 2015 용 일반 설치 위치 \Program 파일 (x86) \Microsoft Visual Studio 14.0는 있습니다.
 
 VsDevCmd.bat를 주 개발자 명령 프롬프트 명령 파일 설치 디렉터리의 Common7\Tools 하위 디렉터리에 있습니다. 매개 변수 없이 지정 된, 환경 설정 및 호스트 및 대상 아키텍처 32 비트 x86 네이티브 도구를 사용 하 여 32 비트 x86 빌드를 작성 하는 경우 코드입니다.
 
-추가 명령 파일 프로세서 아키텍처 및 Visual Studio 워크 로드, 설치 옵션에 따라 특정 빌드 아키텍처를 설정할 수 있습니다. Visual Studio 2017에서는 이러한 Visual Studio 설치 디렉터리의 VC\Auxiliary\Build 하위 디렉터리에 있습니다. Visual Studio 2015에서 이러한 권장 사항은 VC, VC\bin, 또는 VC\bin\\*아키텍처* 설치 디렉터리의 하위 디렉터리를 *아키텍처* 네이티브 중 하나인 또는 크로스 컴파일러 옵션입니다. 이러한 명령 파일 기본 매개 변수를 설정 및 지정 된 빌드 아키텍처 환경을 설정 하는 VsDevCmd.bat를 호출 합니다. 일반 설치의 경우 이러한 명령 파일을 포함할 수 있습니다.
+추가 명령 파일 프로세서 아키텍처 및 Visual Studio 워크 로드, 설치 옵션에 따라 특정 빌드 아키텍처를 설정할 수 있습니다. Visual Studio 2017 및 Visual Studio 2019 이러한 권장 사항은 Visual Studio 설치 디렉터리의 VC\Auxiliary\Build 하위 디렉터리입니다. Visual Studio 2015에서 이러한 권장 사항은 VC, VC\bin, 또는 VC\bin\\*아키텍처* 설치 디렉터리의 하위 디렉터리를 *아키텍처* 네이티브 중 하나인 또는 크로스 컴파일러 옵션입니다. 이러한 명령 파일 기본 매개 변수를 설정 및 지정 된 빌드 아키텍처 환경을 설정 하는 VsDevCmd.bat를 호출 합니다. 일반 설치의 경우 이러한 명령 파일을 포함할 수 있습니다.
 
 |명령 파일|호스트 및 대상 아키텍처|
 |---|---|
@@ -107,28 +105,28 @@ VsDevCmd.bat를 주 개발자 명령 프롬프트 명령 파일 설치 디렉터
 필요에 따라 사용할 Windows SDK의 버전을 지정 합니다. 기본적으로 설치 된 최신 Windows SDK 사용 됩니다. Windows SDK 버전을 지정 하려면 사용할 수는 전체 Windows 10 SDK 번호와 같은 **10.0.10240.0**를 지정 하거나 **8.1** Windows 8.1 SDK를 사용 하도록 합니다.
 
 *vcversion*<br/>
-필요에 따라 사용 하는 Visual Studio 컴파일러 도구 집합을 지정 합니다. 기본적으로 환경의 현재 Visual Studio 2017 컴파일러 도구 집합을 사용 하도록 설정 됩니다. 사용 하 여 **-vcvars_ver 14.0 =** 는 Visual Studio 2015 컴파일러 도구 집합을 지정 합니다.
+필요에 따라 사용 하는 Visual Studio 컴파일러 도구 집합을 지정 합니다. 기본적으로 환경의 현재 Visual Studio 컴파일러 도구 집합을 사용 하도록 설정 됩니다. 사용 하 여 **-vcvars_ver 14.0 =** Visual Studio 2015 컴파일러 도구 집합을 지정 하 또는 **-vcvars_ver 15.0 =** 는 Visual Studio 2017 컴파일러 도구 집합을 지정 합니다.
 
 <a name="vcvarsall"></a>
 #### <a name="to-set-up-the-build-environment-in-an-existing-command-prompt-window"></a>기존 명령 프롬프트 창에서 빌드 환경을 설정 하려면
 
-1. 명령 프롬프트에서 CD 명령을 사용 하 여 Visual Studio 설치 디렉터리로 변경 합니다. 그런 다음 다시 사용 하 여 CD 구성별 명령 파일을 포함 하는 하위 디렉터리로 변경 합니다. Visual Studio 2017 용 VC\Auxiliary\Build 하위 디렉터리입니다. Visual Studio 2015 용 VC 하위 디렉터리를 사용 합니다.
+1. 명령 프롬프트에서 CD 명령을 사용 하 여 Visual Studio 설치 디렉터리로 변경 합니다. 그런 다음 다시 사용 하 여 CD 구성별 명령 파일을 포함 하는 하위 디렉터리로 변경 합니다. Visual Studio 2017 및 2019 VC\Auxiliary\Build 하위 디렉터리입니다. Visual Studio 2015 용 VC 하위 디렉터리를 사용 합니다.
 
-1. 기본 개발자 환경에 대 한 명령을 입력 합니다. 예를 들어, 코드를 빌드하려면 ARM UWP 용 64 비트 플랫폼에서 최신 Windows SDK 및 Visual Studio 2017 RTM 컴파일러 도구 집합을 사용 하 여,이 명령줄을 사용 합니다.
+1. 기본 개발자 환경에 대 한 명령을 입력 합니다. 예를 들어, 코드를 빌드하려면 ARM UWP 용 64 비트 플랫폼에서 최신 Windows SDK 및 Visual Studio 2019 컴파일러 도구 집합을 사용 하 여,이 명령줄을 사용 합니다.
 
-   `vcvarsall.bat amd64_arm uwp -vcvars_ver=14.10`
+   `vcvarsall.bat amd64_arm uwp`
 
 ## <a name="create-your-own-command-prompt-shortcut"></a>사용자 고유의 명령 프롬프트 바로 가기 만들기
 
-기존 개발자 명령 프롬프트 바로 가기 중 하나에 대 한 속성 대화 상자를 열면 사용 하는 명령 대상을 볼 수 있습니다. 예를 들어 대상 합니다 **x64 VS 2017 용 네이티브 도구 명령 프롬프트** 바로 가기는 비슷한:
+기존 개발자 명령 프롬프트 바로 가기 중 하나에 대 한 속성 대화 상자를 열면 사용 하는 명령 대상을 볼 수 있습니다. 예를 들어 대상 합니다 **x64 VS 2019에 대 한 네이티브 도구 명령 프롬프트** 바로 가기는 비슷한:
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"`
 
-아키텍처별 일괄 처리 파일 집합을 *아키텍처* vcvarsall.bat 매개 변수를 호출 합니다. Vcvarsall.bat를를 전달 하거나 vcvarsall.bat를 직접 호출 하기만 하면 이러한 일괄 처리 파일을 같은 추가 옵션을 전달할 수 있습니다. 자신의 명령 바로 가기에 대 한 매개 변수를 지정 하려면 큰따옴표에서 명령의 끝에 추가 합니다. 예를 들어, 설정 하려면 코드를 빌드하려면 ARM UWP 용 64 비트 플랫폼에서 최신 Windows SDK 및 Visual Studio 2017 RTM 컴파일러 도구 집합을 사용 하 여 바로 가기를 사용이 명령 대상에 같은 바로 가기에:
+아키텍처별 일괄 처리 파일 집합을 *아키텍처* vcvarsall.bat 매개 변수를 호출 합니다. Vcvarsall.bat를를 전달 하거나 vcvarsall.bat를 직접 호출 하기만 하면 이러한 일괄 처리 파일을 같은 추가 옵션을 전달할 수 있습니다. 자신의 명령 바로 가기에 대 한 매개 변수를 지정 하려면 큰따옴표에서 명령의 끝에 추가 합니다. 예를 들어, 코드를 빌드하려면 ARM UWP 용 64 비트 플랫폼에서 최신 Windows SDK 및 현재 버전 보다 이전 컴파일러 도구 집합을 사용 하 여 바로 가기의 설정 하려면 해야 버전 번호를 지정 합니다. 바로 가기에이 명령 대상 같이 사용 합니다.
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=14.10"`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=15.0"`
 
-Visual Studio 설치 디렉터리를 반영 하도록 경로 조정 해야 합니다.
+Visual Studio 설치 디렉터리를 반영 하도록 경로 조정 해야 합니다. Vcvarsall.bat 파일에 특정 버전 번호에 대 한 추가 정보가 있습니다.
 
 ## <a name="command-line-tools"></a>명령줄 도구
 
@@ -147,7 +145,7 @@ MSBuild (msbuild.exe) 및 프로젝트 파일 (.vcxproj)를 사용 하 여 빌�
 명령줄 스위치와 함께 DEVENV (devenv.exe)를 사용 하 여-예를 들어 **/빌드** 또는 **정리/**-수행 하려면 특정 빌드 명령을 Visual Studio IDE를 표시 하지 않고 있습니다. 일반적이 기본 Visual Studio MSBuild의 복잡성을 처리 하도록 할 수 있으므로 직접 MSBuild를 사용 하 여 합니다.
 
 [NMAKE](reference/nmake-reference.md)<br/>
-Windows에서 NMAKE (nmake.exe)를 사용 하 여 기존 메이크파일 기반 c + + 프로젝트를 빌드할 수 있습니다.
+Windows에서 NMAKE (nmake.exe)를 사용 하 여 빌드 C++ 기존 메이크파일을 기준으로 한 프로젝트입니다.
 
 명령줄에서 빌드할 때 F1 명령을 사용할 수 없는 경우에 대 한 빠른 도움말 대신, 경고, 오류 및 메시지에 대 한 정보를 검색 엔진을 사용할 수 있습니다 하거나 오프 라인 도움말 파일을 사용할 수 있습니다. 검색을 사용 하도록 [docs.microsoft.com](https://docs.microsoft.com/cpp/), 페이지의 맨 위에 있는 검색 상자에 검색 문자열을 입력 합니다.
 
@@ -173,7 +171,7 @@ Windows 런타임을 사용하는 C++/CX 프로그램을 만들어 컴파일하�
 [NMAKE 참조](reference/nmake-reference.md)<br/>
 Microsoft Program Maintenance Utility(NMAKE.EXE)에 대해 설명하는 문서의 링크를 제공합니다.
 
-[명령줄 c + +의 MSBuild](msbuild-visual-cpp.md)<br/>
+[명령줄에서 MSBuildC++](msbuild-visual-cpp.md)<br/>
 명령줄에서 msbuild.exe를 사용 하는 방법을 설명 하는 문서에 대 한 링크를 제공 합니다.
 
 ## <a name="related-sections"></a>관련 단원

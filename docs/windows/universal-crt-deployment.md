@@ -4,12 +4,12 @@ ms.date: 05/11/2018
 helpviewer_keywords:
 - deploying the CRT [C++]
 - application CRT deployment [C++]
-ms.openlocfilehash: 90f859eb0e9134c997e7eecad118cfb8ec00b782
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 7952d2ec6e8f502b0edf776811a492c67f495cce
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58786468"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857240"
 ---
 # <a name="universal-crt-deployment"></a>범용 CRT 배포
 
@@ -23,7 +23,9 @@ Visual Studio 2013을 통해 Visual Studio .NET에서 C++ 컴파일러 및 도�
 
 일부 Microsoft Windows 컴퓨터는 Windows Update를 사용하여 정기적으로 업데이트를 설치하고, 일부는 모든 권장 업데이트를 설치하지 않을 수도 있습니다. 이러한 컴퓨터에서 Visual Studio 2015 및 최신 C++ 도구 집합을 사용하여 빌드된 애플리케이션의 사용을 지원하려면 오프라인 배포에 사용할 수 있는 범용 CRT 재배포 가능 패키지가 있습니다. 위의 KB 링크 중 하나에서 이러한 재배포 가능 패키지를 다운로드할 수 있습니다. 범용 CRT 재배포 가능 패키지는 컴퓨터가 현재 서비스 팩으로 업데이트될 것을 요구합니다. 따라서 예를 들어 Windows 7용 재배포 가능 패키지는 Windows 7 RTM이 아닌 Windows 7 SP1에만 설치됩니다.
 
-범용 CRT는 C++ 라이브러리의 기본 종속성이기 때문에 Visual C++ 재배포 가능 패키지(VCRedist)는 C++ 라이브러리 종속성을 충족시키기에 충분하며 아직 버전이 설치되지 않은 컴퓨터에 범용 CRT의 기본 버전을 설치합니다. 애플리케이션이 범용 CRT의 최신 버전에 의존하는 경우 명시적으로 최신 버전을 설치해야 합니다. 재부팅에 대한 잠재적인 다중 요구를 방지하려면 VCRedist를 설치하기 전에 이를 설치하는 것이 가장 좋습니다.
+유니버설 CRT의 기본 종속성 이므로 C++ 시각적 개체 라이브러리 C++ 재배포 가능 패키지 (VCRedist)는 버전이 이미 설치 되어 있지 않은 컴퓨터에서 유니버설 CRT (버전 10.0.10240)의 초기 버전을 설치 합니다. 이 버전을 충족 하기에 충분 합니다 C++ 라이브러리 종속성입니다. 응용 프로그램을 최신 버전의 유니버설 CRT에 의존 하는 경우에 완벽 하 게 최신 컴퓨터를 Windows 업데이트를 사용 하거나 명시적으로 해당 버전을 설치 해야 합니다. 가 이미 MSU 또는 Windows Update를 통해 방지 하 여 VCRedist를 설치 하기 전에 설치 된 유니버설 C 런타임 필요한 여러 번 다시 부팅 하는 것이 좋습니다.
+
+일부 운영 체제는 Windows Update를 통해 최신 유니버설 C 런타임에 대 한 적합합니다. Windows 10에서 중앙에서 배포 된 버전의 운영 체제 버전을 찾습니다. 또한 유니버설 C 런타임 업데이트를 운영 체제를 업데이트 해야 합니다. Windows 8.1 통해 Windows Vista에 대 한 최신 사용 가능한 유니버설 C 런타임 추가 수정 (버전 10.0.14393)를 사용 하 여 Windows 10 1 주년 업데이트에 포함 된 버전에 따라 현재 됩니다.
 
 ## <a name="local-deployment"></a>로컬 배포
 

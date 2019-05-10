@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: fc5d41221ab0f9679e7d38a399464efc1a38dd52
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2ff6cd6e0817f74c7688fc573d4b98f70704f96c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222580"
 ---
 # <a name="cdc-class"></a>CDC 클래스
 
@@ -2047,7 +2047,7 @@ int EnumObjects(
 
 지정 된 형식의 각 개체에 대해 전달 하는 콜백 함수는 해당 개체에 대 한 정보를 사용 하 여 호출 됩니다. 시스템 개체를 더 이상 없거나 콜백 함수는 0을 반환 될 때까지 콜백 함수를 호출 합니다.
 
-Microsoft Visual c + +의 새로운 기능 하도록 설정 하는 함수에 전달 되는 일반 함수를 사용 하 여 확인 `EnumObjects`합니다. 주소 전달 `EnumObjects` 사용 하 여 내보낸 함수에 대 한 포인터 **내보내기** 와 Pascal 호출 규칙이 있습니다. 보호 모드 응용 프로그램에서 Windows MakeProcInstance 함수를 사용 하 여이 함수를 만들거나 FreeProcInstance Windows 함수를 사용 하 여 사용 후 함수를 자유 필요가 없습니다.
+참고 새 Microsoft 시각적 개체의 기능 C++ 함수에 전달 되는 일반 함수를 사용할 수 있게 `EnumObjects`합니다. 주소 전달 `EnumObjects` 사용 하 여 내보낸 함수에 대 한 포인터 **내보내기** 와 Pascal 호출 규칙이 있습니다. 보호 모드 응용 프로그램에서 Windows MakeProcInstance 함수를 사용 하 여이 함수를 만들거나 FreeProcInstance Windows 함수를 사용 하 여 사용 후 함수를 자유 필요가 없습니다.
 
 또한 필요가 없습니다에서 함수 이름을 내보낼를 **내보내기를** 응용 프로그램의 모듈 정의 파일의 문입니다. 대신 사용할 수 있습니다 합니다 **내보내기** 한정자 함수
 
@@ -3424,7 +3424,7 @@ CSize GetOutputTabbedTextExtent(
 측정할 문자열을 가리킵니다. 전달할 수도 있습니다는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *nCount*<br/>
-문자열에 있는 문자의 수를 지정합니다. 하는 경우 *nCount* 가-1 이면 길이 계산 됩니다.
+지정 된 [문자열의 길이](/windows/desktop/gdi/specifying-length-of-text-output-string) 가리키는 *lpszString*합니다.
 
 *nTabPositions*<br/>
 가 가리키는 배열의 탭 정지 위치 수를 지정 *lpnTabStopPositions*합니다.
@@ -3467,7 +3467,7 @@ CSize GetOutputTextExtent(const CString& str) const;
 문자열을 가리킵니다. 전달할 수도 있습니다는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *nCount*<br/>
-문자열에 있는 문자의 수를 지정합니다. 하는 경우 *nCount* 가-1 이면 길이 계산 됩니다.
+지정 된 [문자열의 길이](/windows/desktop/gdi/specifying-length-of-text-output-string) 가리키는 *lpszString*합니다.
 
 *str*<br/>
 `CString` 측정할 지정된 된 문자를 포함 하는 개체입니다.
@@ -3669,7 +3669,7 @@ CSize GetTabbedTextExtent(
 문자열을 가리킵니다. 전달할 수도 있습니다는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *nCount*<br/>
-문자열에 있는 문자의 수를 지정합니다. 하는 경우 *nCount* 가-1 이면 길이 계산 됩니다.
+지정 된 [문자열의 길이](/windows/desktop/gdi/specifying-length-of-text-output-string) 가리키는 *lpszString*합니다.
 
 *nTabPositions*<br/>
 가 가리키는 배열의 탭 정지 위치 수를 지정 *lpnTabStopPositions*합니다.
@@ -4087,7 +4087,7 @@ virtual BOOL GrayString(
 출력 함수에 전달할 데이터에 대 한 far 포인터를 지정 합니다. 하는 경우 *lpfnOutput* 가 null 인 경우 *lpData* 출력 문자열에 대 한 긴 포인터 여야 합니다.
 
 *nCount*<br/>
-출력할 문자 수를 지정 합니다. 이 매개 변수가 0 이면 `GrayString` 문자열의 길이 계산 (가정 *lpData* 문자열에 대 한 포인터). 하는 경우 *nCount* -1 이며에서 가리키는 함수 *lpfnOutput* 0 이미지 반환 되지만 흐리게 표시 되지 않습니다.
+출력할 문자 수를 지정 합니다. 이 매개 변수가 0 이면 `GrayString` 문자열의 길이 계산 (가정 *lpData* 문자열에 대 한 포인터). 하는 경우 *nCount* 은 1에서 가리키는 함수 *lpfnOutput* 0 이미지 반환 되지만 흐리게 표시 되지 않습니다.
 
 *x*<br/>
 문자열을 둘러싸는 사각형의 시작 위치에 대 한 논리적 x 좌표를 지정 합니다.
@@ -5738,7 +5738,7 @@ int SetAbortProc(BOOL (CALLBACK* lpfn)(HDC, int));
 
 사용 하 여 인쇄 작업이 시작 되기 전에 중단 함수를 설정 해야 합니다는 응용 프로그램을 인쇄 작업이 스풀링 중 취소 될 수 있도록 하는 경우는 [StartDoc](#startdoc) 멤버 함수입니다. 인쇄 관리자 스풀링 응용 프로그램에서 인쇄 작업을 취소 하려면 하거나 아웃의 디스크 공간 상태를 처리할 수 있도록 하는 동안 중단 함수를 호출 합니다. 중단 함수가 설정 되어 있으면 스풀링을 위해 디스크 공간이 충분 하지 않은 경우 인쇄 작업이 실패 합니다.
 
-Microsoft Visual c + +의 기능에 전달 된 콜백 함수 생성을 간소화 하 참고 `SetAbortProc`합니다. 주소를 전달 합니다 `EnumObjects` 멤버 함수는 사용 하 여 내보낸 함수에 대 한 포인터 `__declspec(dllexport)` 와 `__stdcall` 호출 규칙입니다.
+Microsoft Visual의 기능 C++ 에 전달 된 콜백 함수 생성을 간소화 `SetAbortProc`합니다. 주소를 전달 합니다 `EnumObjects` 멤버 함수는 사용 하 여 내보낸 함수에 대 한 포인터 `__declspec(dllexport)` 와 `__stdcall` 호출 규칙입니다.
 
 또한 필요가 없습니다에서 함수 이름을 내보낼를 **내보내기를** 응용 프로그램의 모듈 정의 파일의 문입니다. 대신 사용할 수 있습니다 합니다 **내보내기** 한정자 함수
 
@@ -6816,13 +6816,11 @@ BOOL StretchBlt(
 
 `StretchBlt` 함수는 경우 비트맵의 미러 이미지를 만드는의 기호를 *nSrcWidth* 및 *nWidth* 또는 *nSrcHeight* 및 *nHeight* 매개 변수가 다릅니다. 하는 경우 *nSrcWidth* 하 고 *nWidth* 부호가 다른 함수 x 축 따라 비트맵의 미러 이미지를 만듭니다. 하는 경우 *nSrcHeight* 하 고 *nHeight* 부호가 다른 함수 y 축 따라 비트맵의 미러 이미지를 만듭니다.
 
-
-  `StretchBlt` 함수는 메모리에서 소스 비트맵을 늘이거나 줄인 다음 결과를 대상으로 복사합니다. 패턴을 결과와 병합해야 하는 경우 늘어난 소스 비트맵이 대상에 복사될 때까지 병합되지 않습니다. 브러시를 사용하는 경우 대상 장치 컨텍스트의 선택된 브러시입니다. 대상 좌표는 대상 장치 컨텍스트에 따라 변환됩니다. 소스 좌표는 소스 장치 컨텍스트에 따라 변환됩니다.
+`StretchBlt` 함수는 메모리에서 소스 비트맵을 늘이거나 줄인 다음 결과를 대상으로 복사합니다. 패턴을 결과와 병합해야 하는 경우 늘어난 소스 비트맵이 대상에 복사될 때까지 병합되지 않습니다. 브러시를 사용하는 경우 대상 장치 컨텍스트의 선택된 브러시입니다. 대상 좌표는 대상 장치 컨텍스트에 따라 변환됩니다. 소스 좌표는 소스 장치 컨텍스트에 따라 변환됩니다.
 
 대상, 소스 및 패턴 비트맵의 색 형식이 다르면 `StretchBlt`는 소스와 패턴 비트맵을 대상 비트맵에 맞게 변환합니다. 대상 장치 컨텍스트의 전경 및 배경 색이 변환에 사용됩니다.
 
-
-  `StretchBlt`가 단색 비트맵을 컬러로 변환해야 하는 경우 흰색 비트(1)를 배경색으로, 검정색 비트(0)를 전경색으로 설정합니다. 컬러를 단색으로 변환하기 위해 배경색과 일치하는 픽셀을 흰색(1)으로 설정하고 다른 모든 픽셀을 검정색(0)으로 설정합니다. 색이 있는 장치 컨텍스트의 전경 및 배경색이 사용됩니다.
+`StretchBlt`가 단색 비트맵을 컬러로 변환해야 하는 경우 흰색 비트(1)를 배경색으로, 검정색 비트(0)를 전경색으로 설정합니다. 컬러를 단색으로 변환하기 위해 배경색과 일치하는 픽셀을 흰색(1)으로 설정하고 다른 모든 픽셀을 검정색(0)으로 설정합니다. 색이 있는 장치 컨텍스트의 전경 및 배경색이 사용됩니다.
 
 모든 장치가 `StretchBlt` 기능을 지원하지는 않습니다. 장치를 지원 하는지 여부를 결정할 `StretchBlt`를 호출 합니다 `GetDeviceCaps` 멤버 RASTERCAPS 인덱스를 사용 하 여 함수 및 RC_STRETCHBLT 플래그에 대 한 반환 값을 확인 합니다.
 
@@ -6893,7 +6891,7 @@ CSize TabbedTextOut(
 그릴 문자열을 가리킵니다. 문자의 배열에 포인터를 전달할 수 있습니다 또는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *nCount*<br/>
-문자열에 있는 문자의 수를 지정합니다. 하는 경우 *nCount* 가-1 이면 길이 계산 됩니다.
+지정 된 [문자열의 길이](/windows/desktop/gdi/specifying-length-of-text-output-string) 가리키는 *lpszString*합니다.
 
 *nTabPositions*<br/>
 탭 정지 위치 배열에 값의 개수를 지정합니다.

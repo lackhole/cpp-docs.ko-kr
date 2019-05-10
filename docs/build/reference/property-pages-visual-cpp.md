@@ -1,6 +1,6 @@
 ---
-title: C + + 프로젝트 속성 페이지 참조-Visual Studio
-ms.date: 12/12/2018
+title: C++프로젝트 속성 페이지 참조-Visual Studio
+ms.date: 05/06/2019
 f1_keywords:
 - VC.Project.NotAProp.Edit
 helpviewer_keywords:
@@ -10,22 +10,22 @@ helpviewer_keywords:
 - project properties [C++], setting
 - macros, project-file
 - property pages, project settings
-- Visual C++ projects, properties
+- C++ projects, properties
 - build macro
 - user-defined macros
 ms.assetid: 13ffe3ea-1bc3-4bee-be5e-053a8a99cce4
-ms.openlocfilehash: 8a5d696c385c9c7a1c953bd28ea4da3c67369a2c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 7b10e3c7eef846d72220545b89a217da7a4bb9a1
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827812"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217791"
 ---
-# <a name="c-project-property-page-reference"></a>C + + 프로젝트 속성 페이지 참조
+# <a name="c-project-property-page-reference"></a>C++프로젝트 속성 페이지 참조
 
-속성 페이지를 사용하여 Visual Studio 프로젝트에 대한 설정을 지정할 수 있습니다. Visual Studio 프로젝트에 대한 **속성 페이지** 대화 상자를 열려면 **프로젝트** 메뉴에서 **속성**을 선택합니다. 프로젝트 속성에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+속성 페이지를 사용하여 Visual Studio 프로젝트에 대한 설정을 지정할 수 있습니다. Visual Studio 프로젝트에 대한 **속성 페이지** 대화 상자를 열려면 **프로젝트** 메뉴에서 **속성**을 선택합니다. 프로젝트 속성에 대 한 자세한 내용은 참조 하세요. [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-Windows가 아닌 프로젝트의 속성 페이지를 참조 하세요 [Linux c + + 속성 페이지 참조](../../linux/prop-pages-linux.md)합니다.
+Windows가 아닌 프로젝트의 속성 페이지를 참조 하세요 [Linux C++ 속성 페이지 참조](../../linux/prop-pages-linux.md)합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

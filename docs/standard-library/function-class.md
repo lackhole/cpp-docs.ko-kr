@@ -19,11 +19,11 @@ helpviewer_keywords:
 - std::function [C++], target_type
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
 ms.openlocfilehash: 44c7691cc967b13b4fa94a7c51da57b7bf4d511f
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159719"
 ---
 # <a name="function-class"></a>function 클래스
 
@@ -203,7 +203,7 @@ template <class Fx, class Alloc>
 *_Func*<br/>
 래핑할 호출 가능 개체입니다.
 
-*할당*<br/>
+*Alloc*<br/>
 할당자 형식입니다.
 
 *Ax*<br/>
@@ -344,7 +344,7 @@ result_type operator()(
 *TN*<br/>
 N번째 인수의 형식입니다.
 
-*TN*<br/>
+*tN*<br/>
 N번째 호출 인수입니다.
 
 ### <a name="remarks"></a>설명

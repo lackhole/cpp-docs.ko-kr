@@ -6,12 +6,12 @@ helpviewer_keywords:
 - application deployment [C++], ClickOnce
 - ClickOnce deployment [C++], C++ applications
 ms.assetid: 9988c546-0936-452c-932f-9c76daa42157
-ms.openlocfilehash: 83ee85dbf952fd78a1cd1b8d0c932b9dcd02682d
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: f78aca6621462ccbd86cfe09ae71b715b5e56f09
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58786372"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448466"
 ---
 # <a name="clickonce-deployment-for-visual-c-applications"></a>ClickOnce Deployment for Visual C++ Applications
 
@@ -19,10 +19,10 @@ Visual Studio는 Windows 애플리케이션을 배포하는 두 가지 기술인
 
 ## <a name="clickonce-deployment-in-c"></a>C++의 ClickOnce 배포
 
-Visual C++ 배포 환경에서는 ClickOnce를 사용한 Visual C++ 프로젝트 배포를 직접 지원하지 않지만 적절한 도구를 사용하면 이 방식으로 배포할 수 있습니다.
+시각적 개체 C++ 개발 환경에서 Visual Studio의 배포를 직접 지원 하지 않습니다 C++ ClickOnce, 하지만 도구를 사용 하 여 프로젝트를 사용 하 여 사용할 수 있습니다.
 
 > [!NOTE]
->  Visual Studio는 Visual C# 및 Visual Basic 개발 환경에서 ClickOnce를 지원합니다. Visual C++ 프로젝트가 Visual C# 프로젝트에 종속되어 있는 경우 Visual C# 배포 환경에서 ClickOnce 배포를 사용하여 애플리케이션과 해당 종속 파일을 게시할 수 있습니다.
+>  Visual Studio는 Visual C# 및 Visual Basic 개발 환경에서 ClickOnce를 지원합니다. 하는 경우 Visual Studio C++ 프로젝트는 시각적 개체의 종속성 C# 프로젝트 종속성 등 응용 프로그램을 게시할 수 있습니다 시각적 개체에서 ClickOnce 배포를 사용 하 여 C# 개발 환경입니다.
 
 ClickOnce를 사용하여 Visual C++ 애플리케이션을 배포하려면 먼저 [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)를 사용하여 [ClickOnce 애플리케이션 매니페스트](/visualstudio/deployment/clickonce-application-manifest) 및 [ClickOnce 배포 매니페스트](/visualstudio/deployment/clickonce-deployment-manifest) 또는 그래픽 사용자 인터페이스 버전을 빌드해야 합니다(자세한 내용은 [MageUI.exe(매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) 참조).
 

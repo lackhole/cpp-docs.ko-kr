@@ -35,11 +35,11 @@ helpviewer_keywords:
 - std::toupper [C++]
 - std::use_facet [C++]
 ms.openlocfilehash: b1ffe9e5294e4b945f81dbecbabba64c15c188a7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413166"
 ---
 # <a name="ltlocalegt-functions"></a>&lt;locale&gt; 함수
 
@@ -105,7 +105,7 @@ bool isalnum(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 테스트할 영숫자 요소입니다.
 
 *Loc*<br/>
@@ -172,7 +172,7 @@ bool isalpha(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 테스트할 요소입니다.
 
 *Loc*<br/>
@@ -237,7 +237,7 @@ bool iscntrl(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 테스트할 요소입니다.
 
 *Loc*<br/>
@@ -302,7 +302,7 @@ bool isdigit(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 테스트할 요소입니다.
 
 *Loc*<br/>
@@ -367,7 +367,7 @@ bool isgraph(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 테스트할 요소입니다.
 
 *Loc*<br/>
@@ -432,7 +432,7 @@ bool islower(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 테스트할 요소입니다.
 
 *Loc*<br/>
@@ -497,7 +497,7 @@ bool isprint(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 테스트할 요소입니다.
 
 *Loc*<br/>
@@ -561,7 +561,7 @@ bool ispunct(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 테스트할 요소입니다.
 
 *Loc*<br/>
@@ -626,7 +626,7 @@ bool isspace(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 테스트할 요소입니다.
 
 *Loc*<br/>
@@ -691,7 +691,7 @@ bool isupper(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 테스트할 요소입니다.
 
 *Loc*<br/>
@@ -756,7 +756,7 @@ bool isxdigit(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 테스트할 요소입니다.
 
 *Loc*<br/>
@@ -823,7 +823,7 @@ CharType tolower(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 소문자로 변환할 문자입니다.
 
 *Loc*<br/>
@@ -872,7 +872,7 @@ CharType toupper(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*Ch*<br/>
 대문자로 변환할 문자입니다.
 
 *Loc*<br/>

@@ -1,14 +1,14 @@
 ﻿---
 title: 프로젝트 만들기(ATL 자습서, 1부)
 ms.custom: get-started-article
-ms.date: 09/26/2018
+ms.date: 05/06/2019
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-ms.openlocfilehash: 4a608fb3a096dee2420ef652ba213c534d8fb426
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.openlocfilehash: 292faf1769baa2e1c3fc6e52ba6df065cf08766e
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273933"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221410"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>프로젝트 만들기(ATL 자습서, 1부)
 
@@ -36,9 +36,9 @@ ms.locfileid: "57273933"
 
 ### <a name="to-create-the-initial-atl-project-using-the-atl-project-wizard"></a>ATL 프로젝트 마법사를 사용하여 초기 ATL 프로젝트를 만들려면
 
-1. Visual Studio 개발 환경의 **파일** 메뉴에서 **새로만들기**를 클릭하고 차례로 **프로젝트**를 클릭합니다.
+1. Visual Studio 2017 및 이전 버전: **파일** > **새** > **프로젝트**합니다. 엽니다는 **시각적 C++**  탭을 선택한 **MFC/ATL**. 그리고 **ATL 프로젝트**를 선택합니다.
 
-1. **Visual C++** 탭의 **MFC/ATL**을 선택합니다. 그리고 **ATL 프로젝트**를 선택합니다.
+   In Visual Studio 2019: 선택할 **파일** > **새로 만들기** > **프로젝트**검색 상자에 "atl"를 입력 하 고 선택 **ATL 프로젝트**합니다.
 
 1. *Polygon*을 프로젝트 이름으로 입력합니다.
 

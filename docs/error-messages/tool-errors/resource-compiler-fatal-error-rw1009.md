@@ -7,11 +7,11 @@ helpviewer_keywords:
 - RW1009
 ms.assetid: c11aceaf-3527-4509-867d-e7b22254e276
 ms.openlocfilehash: 77fe8e69d5357e61ab6863e4557ed9a0ed714080
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62374259"
 ---
 # <a name="resource-compiler-fatal-error-rw1009"></a>리소스 컴파일러 심각한 오류 RW1009
 

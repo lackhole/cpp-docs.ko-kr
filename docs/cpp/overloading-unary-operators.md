@@ -12,11 +12,11 @@ helpviewer_keywords:
 - plus operator
 ms.assetid: 7683ef08-42a4-4283-928f-d3dd4f3ab4c0
 ms.openlocfilehash: 802380bad59534e8402020142e394b3948032476
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62377233"
 ---
 # <a name="overloading-unary-operators"></a>단항 연산자 오버로드
 
@@ -24,7 +24,7 @@ ms.locfileid: "50497223"
 
 1. `!` ([논리적 NOT](../cpp/logical-negation-operator-exclpt.md))
 
-1. `&` ([주소](../cpp/address-of-operator-amp.md))
+1. `&` ([address-of](../cpp/address-of-operator-amp.md))
 
 1. `~` ([1의 보수](../cpp/one-s-complement-operator-tilde.md))
 
@@ -46,13 +46,13 @@ ms.locfileid: "50497223"
 
 다음 규칙은 다른 모든 단항 연산자에 적용됩니다. 단항 연산자 함수를 비정적 멤버로 선언하려면 해당 함수를 다음 형식으로 선언해야 합니다.
 
-> *만료 유형* **연산자** *op* **)**
+> *ret-type* **operator** *op* **()**
 
 여기서 *ret 형식당* 반환 형식 및 *op* 연산자 중 하나 앞의 표에 나열 됩니다.
 
 단항 연산자 함수를 전역 함수로 선언하려면 해당 함수를 다음 형식으로 선언해야 합니다.
 
-> *만료 유형* **연산자** *op* **(** *arg* **)**
+> *ret-type* **operator** *op* **(** *arg* **)**
 
 여기서 *ret 형식* 및 *op* 는 멤버 연산자 함수로 설명 되는 *arg* 연산을 수행할 클래스 형식의 인수입니다.
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - resource files, multiple
 - TN035
 ms.assetid: 1f08ce5e-a912-44cc-ac56-7dd93ad73fb6
-ms.openlocfilehash: 0493dd45caf5eb78da435987a4590442a908a5a3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 8ce38c2f3f4effa993dfa32221d82bece65096dd
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58772766"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448540"
 ---
 # <a name="tn035-using-multiple-resource-files-and-header-files-with-visual-c"></a>TN035: 여러 리소스 파일과 헤더 파일을 사용 하 여 시각적 개체를 사용 하 여C++
 
@@ -204,7 +204,7 @@ RESOURCE.H     AFXRES.H
     AFXPRINT.RC
 ```
 
-컴파일 시간 지시문을 사용하여 Visual C++ 편집할 수 있거나 편집할 수 없는 리소스를 여러 .RC 파일로 구성할 수 있으며, 이 경우 "마스터" MYAPP.RC 파일에서는 다른 .RC 파일을 #include로 지정할 뿐 아무 기능도 수행하지 않습니다. Visual C++ 프로젝트 .MAK 파일을 사용하려는 경우 "마스터" .RC 파일을 프로젝트에 포함하여 #include로 지정된 모든 리소스가 응용 프로그램과 함께 컴파일되도록 해야 합니다.
+컴파일 시간 지시문을 사용하여 Visual C++ 편집할 수 있거나 편집할 수 없는 리소스를 여러 .RC 파일로 구성할 수 있으며, 이 경우 "마스터" MYAPP.RC 파일에서는 다른 .RC 파일을 #include로 지정할 뿐 아무 기능도 수행하지 않습니다. Visual Studio를 사용 하는 경우 C++ 프로젝트입니다. MAK 파일을 "master"를 포함 해야 합니다. RC 파일을 프로젝트에 따라서 하는 모든를 # include로 지정 된 리소스 응용 프로그램을 사용 하 여 컴파일됩니다.
 
 **편집할 수 없는 시각적 개체의 적용 C++ 파일**
 

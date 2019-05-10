@@ -1,21 +1,21 @@
 ---
 title: ATL 데이터베이스 클래스(OLE DB 템플릿)
-ms.date: 11/04/2016
+ms.date: 05/02/2019
 helpviewer_keywords:
 - OLE DB templates [C++], ATL database classes
 - database classes [C++], OLE DB
 - database classes [C++], ATL
 ms.assetid: 219766aa-e18a-405f-9e36-d7a0fdb31b2b
-ms.openlocfilehash: 2ecde060f10a7c2a056869525f58d0bb4da67963
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: dc016a5e1e1d9652f6a69f73b5760f42dec5e889
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023440"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222561"
 ---
 # <a name="atl-database-classes-ole-db-templates"></a>ATL 데이터베이스 클래스(OLE DB 템플릿)
 
-Microsoft OLE DB 데이터를 다양 한 소스 및 형식에 대 한 균일 한 액세스를 제공 하는 COM 인터페이스 집합의 몇 가지 구현을 제공 합니다.  OLE DB는 공식적으로 사용 되지 않습니다. 이 설명서는 레거시 코드를 유지 하는 개발자입니다. 새 응용 프로그램은 SQL 데이터 원본에 연결할 ODBC를 사용 해야 합니다.
+Microsoft OLE DB 데이터를 다양 한 소스 및 형식에 대 한 균일 한 액세스를 제공 하는 COM 인터페이스 집합의 몇 가지 구현을 제공 합니다.
 
 OLE DB 템플릿은 C++ OLE DB 데이터베이스 기술을 쉽게 여러 가지 자주 사용 되는 OLE DB 인터페이스를 구현 하는 클래스를 제공 하 여 사용할 수 있도록 ATL에서 템플릿.
 

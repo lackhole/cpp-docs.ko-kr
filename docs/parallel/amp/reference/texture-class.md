@@ -18,15 +18,15 @@ f1_keywords:
 - AMP_GRAPHICS/concurrency::graphics::texture::row_pitch
 ms.assetid: 16e85d4d-e80a-474a-995d-8bf63fbdf34c
 ms.openlocfilehash: cfcb65fa23fe4593e7dcf11da3b5da4b1785ce71
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351536"
 ---
 # <a name="texture-class"></a>texture 클래스
 
-텍스처에 대 한 데이터 집계는 `accelerator_view` 범위 도메인에서 합니다. 범위 도메인에서 각 요소에 대 한 변수 컬렉션입니다. C + + 기본 형식에 해당 하는 값을 보유 하는 각 변수 ( `unsigned int`, `int`를 `float`를 `double`), 스칼라 형식 ( `norm`, 또는 `unorm`), 또는 short 벡터 형식입니다.
+텍스처에 대 한 데이터 집계는 `accelerator_view` 범위 도메인에서 합니다. 범위 도메인에서 각 요소에 대 한 변수 컬렉션입니다. 각 변수는 해당 하는 값 C++ 기본 형식 ( `unsigned int`, `int`를 `float`를 `double`), 스칼라 형식 ( `norm`, 또는 `unorm`), 또는 short 벡터 형식입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -335,7 +335,7 @@ void set(
 *_Rank*<br/>
 인덱스의 순위입니다.
 
-*value*<br/>
+*값*<br/>
 요소의 새 값입니다.
 
 ##  <a name="ctor"></a> 질감

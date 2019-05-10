@@ -2,13 +2,13 @@
 title: C++-Visual Studio 프로젝트에서 속성 상속
 ms.date: 12/10/2018
 helpviewer_keywords:
-- Visual C++ projects, property inheritance
-ms.openlocfilehash: edd6d3bf82f7a13cf6687abeba3758dcceca5e84
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+- C++ projects, property inheritance
+ms.openlocfilehash: 7e6e2ec4e4f1999639a1b0a0d7ce35873736e5e3
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827272"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220444"
 ---
 # <a name="property-inheritance-in-visual-studio-projects"></a>Visual Studio 프로젝트에서 속성 상속
 

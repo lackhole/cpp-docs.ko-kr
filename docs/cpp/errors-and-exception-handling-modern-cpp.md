@@ -1,14 +1,14 @@
 ﻿---
 title: 오류 및 예외 처리(모던 C++)
-ms.date: 09/17/2018
+ms.date: 05/07/2019
 ms.topic: conceptual
 ms.assetid: a6c111d0-24f9-4bbb-997d-3db4569761b7
-ms.openlocfilehash: c3def77d8b7a22be05259784e3b80562c8728c15
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
-ms.translationtype: MT
+ms.openlocfilehash: bb27a92347b327e22afc4f6bb2fb248c12290cae
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220571"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222150"
 ---
 # <a name="errors-and-exception-handling-modern-c"></a>오류 및 예외 처리(모던 C++)
 
@@ -90,17 +90,17 @@ C++에서 예외를 사용 하면 C# 및 Java와 같은 언어에서 비슷합�
 
 ## <a name="c-exceptions-versus-windows-seh-exceptions"></a>Windows SEH 예외와 C++ 예외
 
-C 및 C++ 프로그램에는 구조적된 예외 처리 (SEH) 메커니즘이 Windows 운영 체제에서 사용할 수 있습니다. SEH의 개념 유사 C++ 예외를 제외 하 고 SEH를 사용 합니다 **__try**를 **__except**, 및 **__finally** 대신 생성 **시도** 하 고 **catch**합니다. Visual C++, C++ 예외는 SEH에 대해 구현 됩니다. 그러나 C++ 코드를 작성할 때 C++ 예외 구문을 사용 합니다.
+C 및 C++ 프로그램에는 구조적된 예외 처리 (SEH) 메커니즘이 Windows 운영 체제에서 사용할 수 있습니다. SEH의 개념 유사 C++ 예외를 제외 하 고 SEH를 사용 합니다 **__try**를 **__except**, 및 **__finally** 대신 생성 **시도** 하 고 **catch**합니다. Microsoft에서 C++ 컴파일러 (MSVC) C++ 예외를 SEH를 구현 합니다. 그러나 C++ 코드를 작성할 때 C++ 예외 구문을 사용 합니다.
 
 SEH에 대 한 자세한 내용은 참조 하세요. [구조적 예외 처리 (C/C++)](../cpp/structured-exception-handling-c-cpp.md)합니다.
 
 ## <a name="exception-specifications-and-noexcept"></a>예외 사양 및 noexcept
 
-예외 사양은 함수가 throw 할 수 있는 예외를 지정 하는 방법으로 C++에 도입 되었습니다. 그러나 예외 사양 실제로 문제가 입증 및 c+11 초안 표준에서 사용 되지 않습니다. 제외 하 고 예외 사양을 사용 하지 않는 것이 좋습니다 `throw()`, 함수 예외가 이스케이프를 허용 하는지 나타냅니다. 형식의 예외 사양을 사용 해야 하는 경우 `throw(` *형식을*`)`, Visual C++ 표준에서 다양 한 방식으로 분리 하는 알고 있어야 합니다. 자세한 내용은 [예외 사양 (throw)](../cpp/exception-specifications-throw-cpp.md)합니다. 합니다 `noexcept` 지정자를 안으로 c++11에서 도입 된 `throw()`합니다.
+예외 사양은 함수가 throw 할 수 있는 예외를 지정 하는 방법으로 C++에 도입 되었습니다. 그러나 예외 사양 실제로 문제가 입증 및 c+11 초안 표준에서 사용 되지 않습니다. 제외 하 고 예외 사양을 사용 하지 않는 것이 좋습니다 `throw()`, 함수 예외가 이스케이프를 허용 하는지 나타냅니다. 형식의 예외 사양을 사용 해야 하는 경우 `throw(` *형식을*`)`, MSVC 몇 가지에서 표준에서 벗어납니다는 주의 합니다. 자세한 내용은 [예외 사양 (throw)](../cpp/exception-specifications-throw-cpp.md)합니다. 합니다 `noexcept` 지정자를 안으로 c++11에서 도입 된 `throw()`합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[방법: 예외 및 비 예외 코드 간 인터페이스](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
+[방법: 예외 코드와 예외가 아닌 코드 간 인터페이스](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
 [C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

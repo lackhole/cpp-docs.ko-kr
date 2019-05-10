@@ -1,16 +1,16 @@
 ---
 title: '연습: COM 사용 응용 프로그램에서 동시성 런타임 사용'
-ms.date: 11/04/2016
+ms.date: 04/25/2019
 helpviewer_keywords:
 - Concurrency Runtime, use with COM
 - COM, use with the Concurrency Runtime
 ms.assetid: a7c798b8-0fc8-4bee-972f-22ef158f7f48
-ms.openlocfilehash: 9d306377be4a000c54fb5556b15263a15b2d4618
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 7249dc1c715861230170bc3efd4fb4aa75029bdb
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57278199"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857508"
 ---
 # <a name="walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application"></a>연습: COM 사용 응용 프로그램에서 동시성 런타임 사용
 

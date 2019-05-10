@@ -27,11 +27,11 @@ helpviewer_keywords:
 - CInterpolatorBase [MFC], SetInitialValueAndVelocity
 ms.assetid: bbc3dce7-8398-47f9-b97e-e4fd2d737232
 ms.openlocfilehash: 379aa5607e459ad8acfd99c5899315afb84ac4a3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392663"
 ---
 # <a name="cinterpolatorbase-class"></a>CInterpolatorBase 클래스
 
@@ -162,7 +162,7 @@ IFACEMETHOD(GetFinalValue)(__out DOUBLE* value);
 
 ### <a name="parameters"></a>매개 변수
 
-*value*<br/>
+*값*<br/>
 출력입니다. 전환의 끝에 변수의 최종 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -184,7 +184,7 @@ IFACEMETHOD(InterpolateValue)(
 *offset*<br/>
 전환의 시작 오프셋입니다. 오프셋 보다 큰 또는 0 및 전환 기간 보다 작은 항상입니다. 전환 기간은 0 하는 경우에이 메서드가 호출 되지 않습니다.
 
-*value*<br/>
+*값*<br/>
 출력입니다. 보간된 값입니다.
 
 ### <a name="return-value"></a>반환 값

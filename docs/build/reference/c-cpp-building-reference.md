@@ -1,27 +1,27 @@
 ﻿---
-title: C/c + + 빌드 참조-Visual Studio
-description: Visual Studio에서 C/c + + 프로젝트 시스템 및 빌드 도구에 대 한 참조 콘텐츠입니다.
-ms.date: 12/10/2018
+title: C /C++ 참조-Visual Studio 빌드
+description: C에 대 한 참조 콘텐츠 /C++ 프로젝트 시스템 및 Visual Studio의 도구를 작성 합니다.
+ms.date: 05/06/2019
 helpviewer_keywords:
 - compiling source code [C++], additional information
 - cl.exe compiler [C++], building programs
 - linker [C++], building reference
 - builds [C++], additional information
 ms.assetid: 100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d
-ms.openlocfilehash: 4c3f7aa598a9c43af04c148ed0d4b3f555566ec7
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: abe946ce516e915cd597a0f863c5949fed212bfa
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812488"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221448"
 ---
 # <a name="cc-building-reference"></a>C/C++ 빌드 참조
 
-Visual C++는 C/C++ 프로그램을 구축 하는 두 가지를 제공 합니다. (가장 쉽고 일반적인) 하는 방법은 [Visual Studio IDE 내에서 빌드](../creating-and-managing-visual-cpp-projects.md)합니다. 다른 방법은 [명령줄 도구를 사용 하 여 명령 프롬프트에서 빌드](../building-on-the-command-line.md)합니다. 두 경우 모두 만들 하 고 선택한 타사 편집기나 Visual Studio를 사용 하 여 원본 파일을 편집할 수 있습니다.
+Visual Studio에서는 C를 구축 하는 두 가지 /C++ 프로그램입니다. (가장 쉽고 일반적인) 하는 방법은 [Visual Studio IDE 내에서 빌드](../creating-and-managing-visual-cpp-projects.md)합니다. 다른 방법은 [명령줄 도구를 사용 하 여 명령 프롬프트에서 빌드](../building-on-the-command-line.md)합니다. 두 경우 모두 만들 하 고 선택한 타사 편집기나 Visual Studio를 사용 하 여 원본 파일을 편집할 수 있습니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[C + + 프로젝트에 대 한 MSBuild 참조](msbuild-visual-cpp-overview.md)
+[C++ 프로젝트용 MSBuild 참조](msbuild-visual-cpp-overview.md)
 
 [MSVC 컴파일러 참조](compiling-a-c-cpp-program.md)<br/>
 기계어 코드로, 링커 지시문, 섹션, 외부 참조 이름과 함수/데이터를 포함 하는 개체 파일을 만드는 MSVC 컴파일러를 설명 합니다.
@@ -32,7 +32,7 @@ Visual C++는 C/C++ 프로그램을 구축 하는 두 가지를 제공 합니다
 [컴파일러 및 링커에서의 유니코드 지원](unicode-support-in-the-compiler-and-linker.md)
 
 [추가 MSVC 빌드 도구](c-cpp-build-tools.md)<br/>
-C + +에 대 한 명령줄 도구를 추가 합니다.
+추가 명령줄 도구에 대 한 C++입니다.
 
 [C++ 빌드 오류](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)<br/>
 콘텐츠의 테이블의 빌드 오류 섹션을 소개합니다.

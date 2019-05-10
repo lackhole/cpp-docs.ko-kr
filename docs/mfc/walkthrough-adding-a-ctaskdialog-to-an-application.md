@@ -1,25 +1,25 @@
 ---
 title: '연습: 응용 프로그램에 CTaskDialog 추가'
-ms.date: 09/19/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - CTaskDialog, adding
 - walkthroughs [MFC], dialogs
 ms.assetid: 3a62abb8-2d86-4bec-bdb8-5784d5f9a9f8
-ms.openlocfilehash: f0992d476326e5175db799ea0f9e5667eab3704b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8cf2223b2859a2dfa6ecc7582ec2f171a056152c
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492278"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64558200"
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>연습: 응용 프로그램에 CTaskDialog 추가
 
-이 연습에서는 [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md) 를 소개하고 이를 응용 프로그램에 추가하는 방법을 보여 줍니다.
+이 연습에서는 [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md) 를 소개하고 이를 애플리케이션에 추가하는 방법을 보여 줍니다.
 
 `CTaskDialog` 는 Windows Vista 이상에서 Windows 메시지 상자를 대체 하는 작업 대화 상자. `CTaskDialog` 는 원래 메시지 상자를 개선하고 기능을 추가합니다. Windows 메시지 상자는 Visual Studio에서 계속 지원 됩니다.
 
 > [!NOTE]
-> 이전 버전 Windows의 Windows vista 지원 하지 않습니다는 `CTaskDialog`합니다. 이전 버전의 Windows에서 응용 프로그램을 실행하는 사용자에게 메시지를 표시하려면 다른 대화 상자 옵션을 프로그래밍해야 합니다. 정적 메서드 [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) 를 사용하여 런타임에 사용자 컴퓨터에서 `CTaskDialog`에서 Windows 메시지 상자를 대체하는 작업 대화 상자입니다. 또한 `CTaskDialog` 는 응용 프로그램이 유니코드 라이브러리와 함께 빌드된 경우에만 사용할 수 있습니다.
+> 이전 버전 Windows의 Windows vista 지원 하지 않습니다는 `CTaskDialog`합니다. 이전 버전의 Windows에서 애플리케이션을 실행하는 사용자에게 메시지를 표시하려면 다른 대화 상자 옵션을 프로그래밍해야 합니다. 정적 메서드 [CTaskDialog::IsSupported](../mfc/reference/ctaskdialog-class.md#issupported) 를 사용하여 런타임에 사용자 컴퓨터에서 `CTaskDialog`에서 Windows 메시지 상자를 대체하는 작업 대화 상자입니다. 또한 `CTaskDialog` 는 애플리케이션이 유니코드 라이브러리와 함께 빌드된 경우에만 사용할 수 있습니다.
 
 `CTaskDialog` 는 정보를 수집하고 표시할 수 있도록 여러 선택적 요소를 지원합니다. 예를 들어 `CTaskDialog` 는 명령 링크, 사용자 지정 단추, 사용자 지정 아이콘 및 바닥글을 표시할 수 있습니다. 또한 `CTaskDialog` 에는 사용자가 선택한 선택적 요소를 확인하기 위해 작업 대화 상자를 쿼리하는 데 사용할 수 있는 여러 메서드가 있습니다.
 
@@ -37,7 +37,9 @@ ms.locfileid: "50492278"
 
 ### <a name="to-replace-a-windows-message-box-with-a-ctaskdialog"></a>Windows 메시지 상자를 CTaskDialog로 대체하려면
 
-1. 기본 설정으로 새 MFC 응용 프로그램 프로젝트를 만듭니다. 호출할 *MyProject*합니다.
+1. 사용 된 **MFC 응용 프로그램 마법사** 모든 기본 설정을 사용 하 여 MFC 응용 프로그램을 만들려면. [연습: 새 MFC 셸 컨트롤을 사용 하 여](walkthrough-using-the-new-mfc-shell-controls.md) 방법은 Visual Studio의 버전에 대 한 마법사를 엽니다.
+
+1. 호출할 *MyProject*합니다. 
 
 1. **솔루션 탐색기** 를 사용하여 MyProject.cpp 파일을 엽니다.
 
@@ -84,7 +86,7 @@ ms.locfileid: "50492278"
 
 하지 못하도록 하려는 경우에 7 단계를 방지할 수 있습니다는 `CTaskDialog` Windows 메시지 상자와 동일한 아이콘을 표시 합니다. 해당 단계를 방지 하는 경우는 `CTaskDialog` 응용 프로그램이 표시 하는 경우에 아이콘이 없습니다.
 
-응용 프로그램을 컴파일하고 실행합니다. 응용 프로그램이 시작된 후 작업 대화 상자가 표시됩니다.
+애플리케이션을 컴파일하고 실행합니다. 애플리케이션이 시작된 후 작업 대화 상자가 표시됩니다.
 
 ## <a name="adding-functionality-to-the-ctaskdialog"></a>CTaskDialog에 기능 추가
 
@@ -163,7 +165,7 @@ ms.locfileid: "50492278"
 
 9 단계의 코드에서 사용 하 여 시작 하는 주석을 대체 `PROCESS IF` 지정 된 조건에서 실행 하려는 코드를 사용 하 여 합니다.
 
-응용 프로그램을 컴파일하고 실행합니다. 새 컨트롤 및 추가 정보를 사용하는 작업 대화 상자가 응용 프로그램에 표시됩니다.
+애플리케이션을 컴파일하고 실행합니다. 새 컨트롤 및 추가 정보를 사용하는 작업 대화 상자가 애플리케이션에 표시됩니다.
 
 ## <a name="displaying-a-ctaskdialog-without-creating-a-ctaskdialog-object"></a>CTaskDialog 개체를 만들지 않고 CTaskDialog 표시
 
@@ -185,7 +187,7 @@ ms.locfileid: "50492278"
         TEMP_LINE2);
     ```
 
-응용 프로그램을 컴파일하고 실행합니다. 두 개의 작업 대화 상자가 응용 프로그램에 표시됩니다. 첫 번째 대화 상자가 표시 됩니다는 **CTaskDialog에 기능을 추가 하려면** 프로시저 않으면 두 번째 대화 상자는 마지막 절차에서 합니다.
+애플리케이션을 컴파일하고 실행합니다. 두 개의 작업 대화 상자가 애플리케이션에 표시됩니다. 첫 번째 대화 상자가 표시 됩니다는 **CTaskDialog에 기능을 추가 하려면** 프로시저 않으면 두 번째 대화 상자는 마지막 절차에서 합니다.
 
 이러한 예제에 대 한 모든 사용 가능한 옵션 설명 하지는 `CTaskDialog`, 있지만 시작 하는 데 도움이 됩니다. 클래스에 대한 전체 설명은 [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md) 를 참조하세요.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - event sink maps [MFC]
 ms.assetid: a9757eb2-5f4a-45ec-a2cd-ce5eec85b16f
 ms.openlocfilehash: 8e33636253b269692f87f99980b9da0cd60867ee
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322360"
 ---
 # <a name="event-sink-maps"></a>이벤트 싱크 맵
 
@@ -243,7 +243,7 @@ OLE 컨트롤의 컨트롤 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-*vtsParams* 인수는 공백으로 구분 된 목록에서 값을 **VTS_** 상수입니다. 공백 (쉼표가 아님)으로 구분 된 이러한 값 중 하나 이상이 함수의 매개 변수 목록을 지정 합니다. 예를 들면,
+*vtsParams* 인수는 공백으로 구분 된 목록에서 값을 **VTS_** 상수입니다. 공백 (쉼표가 아님)으로 구분 된 이러한 값 중 하나 이상이 함수의 매개 변수 목록을 지정 합니다. 예를 들어:
 
 [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]
 

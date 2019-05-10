@@ -19,11 +19,11 @@ helpviewer_keywords:
 - subclassing windows, ATL
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
 ms.openlocfilehash: f835f2869af20a1cb22595837c317eb165ef5fe9
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276889"
 ---
 # <a name="cwindowimpl-class"></a>CWindowImpl 클래스
 
@@ -42,8 +42,7 @@ class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 #### <a name="parameters"></a>매개 변수
 
 *T*<br/>
-
-  `CWindowImpl`에서 파생된 새 클래스입니다.
+`CWindowImpl`에서 파생된 새 클래스입니다.
 
 *TBase*<br/>
 클래스의 기본 클래스입니다. 기본 클래스는 기본적으로 [CWindow](../../atl/reference/cwindow-class.md)합니다.
@@ -92,12 +91,9 @@ A [traits 클래스](../../atl/understanding-window-traits.md) 창 스타일을 
 [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwindowimpl-class_1.h)]
 
 > [!NOTE]
->  
-  `CWndClassInfo`는 한 윈도우 클래스의 정보만 관리하기 때문에, `CWindowImpl`의 인스턴스를 통해 생성된 각 창은 동일한 창 클래스를 기반으로 합니다.
+>  `CWndClassInfo`는 한 윈도우 클래스의 정보만 관리하기 때문에, `CWindowImpl`의 인스턴스를 통해 생성된 각 창은 동일한 창 클래스를 기반으로 합니다.
 
-`CWindowImpl`은 또한 창 서브클래싱도 지원합니다. 
-  `SubclassWindow` 메서드는 기존 창을 `CWindowImpl` 개체에 연결하고 창 프로시저를 `CWindowImpl::WindowProc`로 변경합니다. 
-  `CWindowImpl`의 각 인스턴스는 다른 창을 서브클래싱할 수 있습니다.
+`CWindowImpl`은 또한 창 서브클래싱도 지원합니다. `SubclassWindow` 메서드는 기존 창을 `CWindowImpl` 개체에 연결하고 창 프로시저를 `CWindowImpl::WindowProc`로 변경합니다. `CWindowImpl`의 각 인스턴스는 다른 창을 서브클래싱할 수 있습니다.
 
 > [!NOTE]
 >  지정 된 모든 `CWindowImpl` 개체 중 하나를 호출 `Create` 또는 `SubclassWindow`합니다. 동일한 개체에서 두 메서드를 모두 호출하지는 마십시오.

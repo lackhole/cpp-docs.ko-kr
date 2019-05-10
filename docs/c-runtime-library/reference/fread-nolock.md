@@ -27,11 +27,11 @@ helpviewer_keywords:
 - streams [C++], reading data from
 ms.assetid: 60e4958b-1097-46f5-a77b-94af5e7dba40
 ms.openlocfilehash: 81827363d670c7cdeeddcb86390323bf431c6f98
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287917"
 ---
 # <a name="freadnolock"></a>_fread_nolock
 
@@ -59,7 +59,7 @@ size_t _fread_nolock(
 *count*<br/>
 읽힐 항목의 최대 수입니다.
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값

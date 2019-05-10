@@ -1,21 +1,21 @@
 ﻿---
 title: 비표준 동작
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - compatibility and compliance, nonstandard behavior
 - Microsoft-specific, compiler behavior
 - nonstandard behavior, compliance and compatibility
 ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
-ms.openlocfilehash: b7546914f4cd417f127af56fb7342903989d8330
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 82c5faae68f9da747017119d76578cc88163d8bb
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638206"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222032"
 ---
 # <a name="nonstandard-behavior"></a>비표준 동작
 
-다음 섹션은 Visual C++ 구현이 C++ 표준을 준수하지 않는 일부 알려진 장소를 나열합니다. 아래의 섹션 번호는 C++ 11 표준(ISO/IEC 14882:2011(E))의 섹션 번호를 나타냅니다.
+다음 섹션에서는 일부 알려진 장소를 나열 합니다. 여기서의 Microsoft 구현 C++ 준수 하지 않습니다는 C++ 표준. 아래의 섹션 번호는 C++ 11 표준(ISO/IEC 14882:2011(E))의 섹션 번호를 나타냅니다.
 
 C++ 표준에 정의된 내용 및 다른 컴파일러의 한계 목록은 [컴파일러 한계](../cpp/compiler-limits.md)에서 제공됩니다.
 
@@ -38,7 +38,7 @@ class B : virtual A
 
 ## <a name="binding-nondependent-names-in-templates"></a>템플릿에서 독립적인 이름 바인딩
 
-Visual C++ 컴파일러는 최초 템플릿 구문 분석 시 독립적인 이름 바인딩을 현재 지원하지 않습니다. 이것은 C++ ISO 사양의 단원 14.6.3에 맞지 않습니다. 이로 인해 템플릿이 확인되고 인스턴스화되기 전에 오버로드가 선언될 수 있습니다.
+Microsoft C++ 처음에 서식 파일을 구문 분석할 때 컴파일러 현재 독립적인 이름 바인딩을 지원 하지는 않습니다. 이것은 C++ ISO 사양의 단원 14.6.3에 맞지 않습니다. 이로 인해 템플릿이 확인되고 인스턴스화되기 전에 오버로드가 선언될 수 있습니다.
 
 ```cpp
 #include <iostream>
@@ -75,7 +75,7 @@ void g() throw();    // parsed and used
 
 ## <a name="chartraitseof"></a>char_traits::eof()
 
-C++ 표준에는 [char_traits:: eof](../standard-library/char-traits-struct.md#eof)가 유효한 `char_type` 값에 해당하면 안된다고 기술되어 있습니다. Visual C++ 컴파일러에서는 이 제약 조건을 **char** 형식에는 적용하지만 **wchar_t** 형식에는 적용하지 않습니다. 이것은 C++ ISO 사양의 섹션 12.1.1, 표 62의 요구 사항에 맞지 않습니다. 아래 예제에서는 이 작업을 보여 줍니다.
+C++ 표준에는 [char_traits:: eof](../standard-library/char-traits-struct.md#eof)가 유효한 `char_type` 값에 해당하면 안된다고 기술되어 있습니다. Microsoft C++ 컴파일러는 형식에 대 한이 제약 조건은 **char**에 형식이 아니라 **wchar_t**합니다. 이것은 C++ ISO 사양의 섹션 12.1.1, 표 62의 요구 사항에 맞지 않습니다. 아래 예제에서는 이 작업을 보여 줍니다.
 
 ```cpp
 #include <iostream>
@@ -94,4 +94,4 @@ int main()
 
 ## <a name="storage-location-of-objects"></a>개체 저장소 위치
 
-C++ 표준(단원 1.8, 6항)에서는 전체 C++ 개체에 고유한 저장소 위치가 있어야 합니다. 그러나 Visual C++에서는 데이터 멤버가 없는 형식이 개체의 수명이 지속되는 동안 다른 형식과 저장소 위치를 공유하는 경우가 있습니다.
+C++ 표준(단원 1.8, 6항)에서는 전체 C++ 개체에 고유한 저장소 위치가 있어야 합니다. 그러나 microsoft C++, 여기서 데이터 멤버가 없는 형식이와 공유 하는 저장소 위치를 다른 형식 개체의 수명에 대 한 경우가 있습니다.

@@ -2,12 +2,12 @@
 title: 종속적인 형식에 대한 이름 확인
 ms.date: 11/04/2016
 ms.assetid: 34066bb4-0c79-4fd8-bda7-539a60a277ab
-ms.openlocfilehash: 04db4b0efc5e58dbd3de6fc9979c3a3cdd44d84e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 798cc7067967e8992c32d7c0ced9f647e4877110
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563155"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222408"
 ---
 # <a name="name-resolution-for-dependent-types"></a>종속적인 형식에 대한 이름 확인
 
@@ -90,7 +90,7 @@ Int MyNamespace::myFunction
 
 ### <a name="template-disambiguation"></a>템플릿 명확성
 
-Visual Studio 2012의 Visual C++는 "템플릿" 키워드를 사용하여 명확성에 대한 C++ 98/03/11 표준 규칙을 적용합니다. 다음 예제에서 Visual C++ 2010은 표준에 맞지 않는 줄과 표준에 맞는 줄을 모두 허용합니다. Visual Studio 2012의 Visual C++는 표준에 맞는 줄만 허용합니다.
+Visual Studio 2012의 Visual C++는 "템플릿" 키워드를 사용하여 명확성에 대한 C++ 98/03/11 표준 규칙을 적용합니다. 다음 예제에서는 Visual Studio 2010는 표준에 맞지 않는 줄 및 표준에 맞는 줄 수락 합니다.  Visual Studio 2012의 Visual C++는 표준에 맞는 줄만 허용합니다.
 
 ```cpp
 #include <iostream>
@@ -123,4 +123,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[이름 확인](../cpp/templates-and-name-resolution.md)
+[템플릿 및 이름 확인](../cpp/templates-and-name-resolution.md)

@@ -24,11 +24,11 @@ helpviewer_keywords:
 - _malloc_dbg function
 ms.assetid: c97eca51-140b-4461-8bd2-28965b49ecdb
 ms.openlocfilehash: 64fb40028d9130278077f3d05dd1e25914dba212
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62156943"
 ---
 # <a name="mallocdbg"></a>_malloc_dbg
 
@@ -69,11 +69,11 @@ void *_malloc_dbg(
 
 **_malloc_dbg** 의 디버그 버전이 합니다 [malloc](malloc.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_malloc_dbg** 대 한 호출으로 줄어듭니다 **malloc**합니다. 둘 다 **malloc** 및 **_malloc_dbg** 기본 힙에서 메모리 블록을 할당 하지만 **_malloc_dbg** 여러 디버깅 기능을 제공 합니다: 사용자의 양쪽에서 버퍼 부분 블록 누수 테스트, 블록 형식 매개 변수로 특정 할당 형식 추적 및 *filename*/*linenumber* 의 출처를 확인 하는 정보 할당 요청 수입니다.
 
-**_malloc_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 메모리 블록 할당 *크기*합니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 응용 프로그램에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 블록이 할당되면 블록의 사용자 부분은 값 0xCD로 채워지고 각 덮어쓰기 버퍼는 0xFD로 채워집니다.
+**_malloc_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 메모리 블록 할당 *크기*합니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 애플리케이션에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 블록이 할당되면 블록의 사용자 부분은 값 0xCD로 채워지고 각 덮어쓰기 버퍼는 0xFD로 채워집니다.
 
 **_malloc_dbg** 설정 **errno** 하려면 **ENOMEM** 메모리 할당이 실패 하는 경우 또는 (앞에서 언급 한 오버 헤드 포함)는 데 필요한 메모리 양을 초과 **_HEAP_ MAXREQ**합니다. 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
-기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요. 할당 블록 형식과 이러한 형식의 사용 방법에 대한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요. 응용 프로그램의 디버그 빌드에서 표준 힙 함수와 이 함수의 디버그 버전을 호출하는 경우의 차이점에 대한 자세한 내용은 [힙 할당 함수의 디버그 버전](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)을 참조하세요.
+기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요. 할당 블록 형식과 이러한 형식의 사용 방법에 대한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요. 애플리케이션의 디버그 빌드에서 표준 힙 함수와 이 함수의 디버그 버전을 호출하는 경우의 차이점에 대한 자세한 내용은 [힙 할당 함수의 디버그 버전](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

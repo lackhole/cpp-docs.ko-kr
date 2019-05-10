@@ -7,11 +7,11 @@ helpviewer_keywords:
 - helper functions, return types
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
 ms.openlocfilehash: a85825eb49b1f8faab7862e902b226c1c1fb6d58
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294709"
 ---
 # <a name="calling-conventions-parameters-and-return-type"></a>호출 규칙, 매개 변수, 반환 형식
 
@@ -44,8 +44,7 @@ A `const` 에 대 한 포인터를 `ImgDelayDescr` 포함 하는 다양 한 가�
 
 - 지정된 DLL에서 실패한 `LoadLibrary`
 
-- 
-  `GetProcAddress`의 실패
+- `GetProcAddress`의 실패
 
 이러한 예외를 처리 해야 하는 것입니다.
 

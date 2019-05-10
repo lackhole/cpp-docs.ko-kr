@@ -13,11 +13,11 @@ f1_keywords:
 - CONCRT/concurrency::message_status Enumeration
 ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
 ms.openlocfilehash: d3eb49cd1555f23cc83efb0d8d912998295b3c55
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337611"
 ---
 # <a name="concurrency-namespace-enums"></a>concurrency 네임 스페이스 열거형
 
@@ -31,8 +31,7 @@ ms.locfileid: "57271192"
 
 ##  <a name="agent_status"></a>  agent_status 열거형
 
-
-  `agent`에 유효한 상태입니다.
+`agent`에 유효한 상태입니다.
 
 ```
 enum agent_status;
@@ -153,8 +152,7 @@ enum CriticalRegionType;
 
 ##  <a name="dynamicprogressfeedbacktype"></a>  DynamicProgressFeedbackType 열거형
 
-
-  `DynamicProgressFeedback` 정책에서 스케줄러에 대한 리소스를 스케줄러에서 수집한 통계 정보에 따라 균형을 조정할지, 아니면 `IVirtualProcessorRoot` 인터페이스의 `Activate` 및 `Deactivate` 메서드 호출을 통해 유휴 상태로 들어오고 나가는 가상 프로세서를 기준으로만 균형을 조정할지를 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
+`DynamicProgressFeedback` 정책에서 스케줄러에 대한 리소스를 스케줄러에서 수집한 통계 정보에 따라 균형을 조정할지, 아니면 `IVirtualProcessorRoot` 인터페이스의 `Activate` 및 `Deactivate` 메서드 호출을 통해 유휴 상태로 들어오고 나가는 가상 프로세서를 기준으로만 균형을 조정할지를 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
 
 ```
 enum DynamicProgressFeedbackType;
@@ -169,8 +167,7 @@ enum DynamicProgressFeedbackType;
 
 ##  <a name="join_type"></a>  join_type 열거형
 
-
-  `join` 메시징 블록의 형식입니다.
+`join` 메시징 블록의 형식입니다.
 
 ```
 enum join_type;
@@ -238,8 +235,7 @@ enum PolicyElementKey;
 
 ##  <a name="schedulertype"></a>  SchedulerType 열거형
 
-
-  `SchedulerKind` 정책에서 스케줄러가 기본 실행 컨텍스트에 활용해야 하는 스레드 형식을 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
+`SchedulerKind` 정책에서 스케줄러가 기본 실행 컨텍스트에 활용해야 하는 스레드 형식을 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
 
 ```
 enum SchedulerType;
@@ -250,8 +246,7 @@ enum SchedulerType;
 |이름|설명|
 |----------|-----------------|
 |`ThreadScheduler`|일반 Win32 스레드를 명시적으로 요청을 나타냅니다.|
-|`UmsThreadDefault`|사용자 모드 예약 가능 (UMS) 스레드는 동시성 런타임에서 Visual Studio 2013에서 지원 되지 않습니다. 
-  `UmsThreadDefault`를 `SchedulerType` 정책의 값으로 사용하면 오류가 발생하지 않습니다. 그러나 해당 정책을 사용하여 만들어진 스케줄러는 기본적으로 Win32 스레드를 사용합니다.|
+|`UmsThreadDefault`|사용자 모드 예약 가능 (UMS) 스레드는 동시성 런타임에서 Visual Studio 2013에서 지원 되지 않습니다. `UmsThreadDefault`를 `SchedulerType` 정책의 값으로 사용하면 오류가 발생하지 않습니다. 그러나 해당 정책을 사용하여 만들어진 스케줄러는 기본적으로 Win32 스레드를 사용합니다.|
 
 ### <a name="requirements"></a>요구 사항
 
@@ -259,8 +254,7 @@ enum SchedulerType;
 
 ##  <a name="schedulingprotocoltype"></a>  SchedulingProtocolType Enumeration
 
-
-  `SchedulingProtocol` 정책에서 스케줄러에 활용되는 일정 알고리즘을 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
+`SchedulingProtocol` 정책에서 스케줄러에 활용되는 일정 알고리즘을 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
 
 ```
 enum SchedulingProtocolType;
@@ -301,8 +295,7 @@ enum SwitchingProxyState;
 
 ##  <a name="task_group_status"></a>  task_group_status 열거형
 
-
-  `task_group` 또는 `structured_task_group` 개체의 실행 상태를 설명합니다. 이 형식의 값은 작업 그룹에 예약된 작업이 완료되기를 기다리는 수많은 메서드에 의해 반환됩니다.
+`task_group` 또는 `structured_task_group` 개체의 실행 상태를 설명합니다. 이 형식의 값은 작업 그룹에 예약된 작업이 완료되기를 기다리는 수많은 메서드에 의해 반환됩니다.
 
 ```
 enum task_group_status;
@@ -312,12 +305,9 @@ enum task_group_status;
 
 |이름|설명|
 |----------|-----------------|
-|`canceled`|
-  `task_group` 또는 `structured_task_group` 개체가 취소되었습니다. 하나 이상의 작업이 실행되지 않았을 수 있습니다.|
-|`completed`|
-  `task_group` 또는 `structured_task_group` 개체의 큐에 대기 중인 작업이 성공적으로 완료되었습니다.|
-|`not_complete`|
-  `task_group` 개체의 큐에 대기 중인 작업이 완료되지 않았습니다. 이 값은 현재 동시성 런타임에서 반환되지 않습니다.|
+|`canceled`|`task_group` 또는 `structured_task_group` 개체가 취소되었습니다. 하나 이상의 작업이 실행되지 않았을 수 있습니다.|
+|`completed`|`task_group` 또는 `structured_task_group` 개체의 큐에 대기 중인 작업이 성공적으로 완료되었습니다.|
+|`not_complete`|`task_group` 개체의 큐에 대기 중인 작업이 완료되지 않았습니다. 이 값은 현재 동시성 런타임에서 반환되지 않습니다.|
 
 ### <a name="requirements"></a>요구 사항
 
@@ -325,8 +315,7 @@ enum task_group_status;
 
 ##  <a name="winrtinitializationtype"></a>  WinRTInitializationType 열거형
 
-
-  `WinRTInitialization` 정책에서 Windows 8 또는 그 이상 버전의 운영 체제에서 실행되는 응용 프로그램에 대한 스케줄러 스레드에서 Windows 런타임이 초기화될지 여부와 초기화되는 방법을 설명하는데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
+`WinRTInitialization` 정책에서 Windows 8 또는 그 이상 버전의 운영 체제에서 실행되는 응용 프로그램에 대한 스케줄러 스레드에서 Windows 런타임이 초기화될지 여부와 초기화되는 방법을 설명하는데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
 
 ```
 enum WinRTInitializationType;

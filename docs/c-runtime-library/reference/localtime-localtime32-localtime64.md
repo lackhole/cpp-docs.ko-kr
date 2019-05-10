@@ -33,11 +33,11 @@ helpviewer_keywords:
 - time, converting values
 ms.assetid: 4260ec3d-43ee-4538-b998-402a282bb9b8
 ms.openlocfilehash: d34a45ff20cb74d61a8eb189282bfdce4d8954ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157515"
 ---
 # <a name="localtime-localtime32-localtime64"></a>localtime, _localtime32, _localtime64
 
@@ -68,7 +68,7 @@ struct tm *_localtime64( const __time64_t *sourceTime );
 
 **_localtime64**를 사용 합니다 **__time64_t** 구조에 날짜를 23시 59분: 59, 3000 년 12 월 31 일, UTC (coordinated universal time)를 통해 표현할 수 있습니다. 반면 **_localtime32** 23시 59분: 59 까지의 2038 년 1 월 18 일 UTC 날짜를 나타냅니다.
 
-**localtime** 계산 되는 인라인 함수 이며 **_localtime64**, 및 **time_t** 동일 **__time64_t**합니다. 해석 하도록 컴파일러에 게 해야 하는 경우 **time_t** 이전 32 비트로 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**합니다. 이렇게 하면 **localtime** 로 평가 **_localtime32**합니다. 2038년 1월 18일 이후에는 응용 프로그램에서 오류가 발생할 수 있으므로 이 방식은 사용하지 않는 것이 좋으며, 64비트 플랫폼에서는 이러한 방식이 허용되지 않습니다.
+**localtime** 계산 되는 인라인 함수 이며 **_localtime64**, 및 **time_t** 동일 **__time64_t**합니다. 해석 하도록 컴파일러에 게 해야 하는 경우 **time_t** 이전 32 비트로 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**합니다. 이렇게 하면 **localtime** 로 평가 **_localtime32**합니다. 2038년 1월 18일 이후에는 애플리케이션에서 오류가 발생할 수 있으므로 이 방식은 사용하지 않는 것이 좋으며, 64비트 플랫폼에서는 이러한 방식이 허용되지 않습니다.
 
 구조체 형식의 필드 [tm](../../c-runtime-library/standard-types.md) 있으며 각각 다음 값을 저장 한 **int**:
 
@@ -103,7 +103,7 @@ struct tm *_localtime64( const __time64_t *sourceTime );
 
 |루틴에서 반환된 값|필수 C 헤더|필수 C++ 헤더|
 |-------------|---------------------|-|
-|**localtime**하십시오 **_localtime32**, **_localtime64**|\<time.h>|\<ctime > 또는 \<time.h >|
+|**localtime**, **_localtime32**, **_localtime64**|\<time.h>|\<ctime > 또는 \<time.h >|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

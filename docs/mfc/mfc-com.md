@@ -12,11 +12,11 @@ helpviewer_keywords:
 - COM [MFC], MFC support
 ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
 ms.openlocfilehash: 67c7ea3e93b3158abc552c552c450c31c109be80
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57257828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62239195"
 ---
 # <a name="mfc-com"></a>MFC COM
 
@@ -48,7 +48,7 @@ ms.locfileid: "57257828"
 
 OLE 액티브 기술 이라고 이제와 여전히 이라고의 내용은 항목을 참조 [OLE](../mfc/ole-in-mfc.md)합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [활성 문서 포함](../mfc/active-document-containment.md)
 

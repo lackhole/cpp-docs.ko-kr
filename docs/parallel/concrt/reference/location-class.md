@@ -11,11 +11,11 @@ helpviewer_keywords:
 - location class
 ms.assetid: c3289f51-5bf1-4dff-a18d-d0dab8e5d9c7
 ms.openlocfilehash: 5e90dd3b23b33f6699f2df4ce0df9178f95816b8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57273254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62375459"
 ---
 # <a name="location-class"></a>위치 클래스
 
@@ -96,8 +96,7 @@ static location __cdecl from_numa_node(unsigned short _NumaNodeNumber);
 
 ### <a name="return-value"></a>반환 값
 
-
-  `_NumaNodeNumber` 매개 변수로 지정된 NUMA 노드를 나타내는 위치입니다.
+`_NumaNodeNumber` 매개 변수로 지정된 NUMA 노드를 나타내는 위치입니다.
 
 ##  <a name="ctor"></a> 위치
 

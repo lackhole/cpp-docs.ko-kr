@@ -14,16 +14,15 @@ helpviewer_keywords:
 - debug memory allocator
 - optimization [C++], compiler
 - projects [C++], debug configuration
-- troubleshooting Visual C++
 - troubleshooting release builds
 - memory [C++], overwrites
 ms.assetid: 73cbc1f9-3e33-472d-9880-39a8e9977b95
-ms.openlocfilehash: 7420fd5bbdeec30e9839206803952c02b8b56421
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 5372fe4e96c444d454c277394dd811cfac14d1f6
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827657"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220903"
 ---
 # <a name="common-problems-when-creating-a-release-build"></a>릴리스 빌드를 만들 때의 일반적인 문제
 

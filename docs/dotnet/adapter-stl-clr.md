@@ -50,11 +50,11 @@ helpviewer_keywords:
 - range_adapter member [STL/CLR]
 ms.assetid: 71ce7e51-42b6-4f70-9595-303791a97677
 ms.openlocfilehash: d5c554439d9bb418b9b62484ee10cd6917cf1777
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397681"
 ---
 # <a name="adapter-stlclr"></a>adapter(STL/CLR)
 
@@ -79,7 +79,7 @@ STL/CLR 헤더 `<cliext/adapter>` 두 템플릿 클래스를 지정 합니다 (`
 |[collection_adapter(STL/CLR)](#collection_adapter)|클래스 라이브러리 (BCL (기본) 컬렉션으로를 범위를 래핑합니다.|
 |[range_adapter(STL/CLR)](#range_adapter)|BCL 컬렉션으로 범위를 래핑합니다.|
 
-|기능|설명|
+|함수|설명|
 |--------------|-----------------|
 |[make_collection(STL/CLR)](#make_collection)|반복기 쌍을 사용 하 여 범위 어댑터를 만듭니다.|
 
@@ -138,7 +138,7 @@ template<typename Key,
 |IEnumerable\<값 >|형식화 된 요소 시퀀스입니다.|
 |ICollection\<값 >|형식화 된 요소 그룹을 유지 관리합니다.|
 |IList\<값 >|형식화 된 요소의 순서가 지정 된 그룹을 유지 관리합니다.|
-|IDictionary\<값 >|형식의 {0} 키의 값을 (를) 집합을 유지 관리 쌍입니다.|
+|IDictionary\<Value>|형식의 {0} 키의 값을 (를) 집합을 유지 관리 쌍입니다.|
 
 ### <a name="members"></a>멤버
 

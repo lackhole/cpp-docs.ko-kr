@@ -7,11 +7,11 @@ helpviewer_keywords:
 - binary operators [C++]
 ms.assetid: c0e7fbff-bc87-4708-8333-504ac09ee83e
 ms.openlocfilehash: 700d8fd784862c3e9f81fcde839063ff0a4696bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176657"
 ---
 # <a name="binary-operators"></a>이항 연산자
 
@@ -39,13 +39,13 @@ ms.locfileid: "50602408"
 |**/**|나눗셈 기호|
 |**/=**|나누기/할당|
 |**<**|보다 작음|
-|**<<**|왼쪽 <Shift>|
+|**<<**|왼쪽 |
 |**<<=**|왼쪽 시프트/할당|
 |**<=**|작거나 같음|
 |**=**|할당|
 |**==**|같음|
 |**>**|보다 큼|
-|**>=**|크거나 같음|
+|**>=**|다음보다 크거나 같음|
 |**>>**|오른쪽 Shift|
 |**>>=**|오른쪽 시프트/할당|
 |**^**|배타적 OR|
@@ -56,13 +56,13 @@ ms.locfileid: "50602408"
 
 이항 연산자 함수를 비정적 멤버로 선언하려면 해당 함수를 다음과 같은 형태로 선언해야 합니다.
 
-> *만료 유형* **연산자** *op* **(** *arg* **)**
+> *ret-type* **operator** *op* **(** *arg* **)**
 
 여기서 *ret 형식* 반환 형식이 *op* 앞의 표에 나와 있는 연산자 중 하나는 및 *arg* 모든 형식의 인수입니다.
 
 이항 연산자 함수를 전역 함수로 선언하려면 해당 함수를 다음과 같은 형태로 선언해야 합니다.
 
-> *만료 유형* **연산자** *op* **(** _arg1_**하십시오** _arg2_ **)**
+> *ret-type* **operator** *op* **(** _arg1_**,** _arg2_ **)**
 
 여기서 *ret 형식* 및 *op* 는 멤버 연산자 함수로 설명 되 고 *arg1* 및 *arg2* 인수가 합니다. 인수 중 하나 이상이 클래스 형식이어야 합니다.
 

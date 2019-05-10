@@ -17,11 +17,11 @@ helpviewer_keywords:
 - std::money_get [C++], get
 ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
 ms.openlocfilehash: 40ce364d768e682c9e85506d2af9e46a01c76e65
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383531"
 ---
 # <a name="moneyget-class"></a>money_get 클래스
 
@@ -114,7 +114,7 @@ virtual iter_type do_get(iter_type first,
 *Intl*<br/>
 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*iosbase*<br/>
+*Iosbase*<br/>
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
 *상태*<br/>
@@ -196,7 +196,7 @@ iter_type get(iter_type first,
 *Intl*<br/>
 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*iosbase*<br/>
+*Iosbase*<br/>
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
 *상태*<br/>
@@ -291,11 +291,11 @@ explicit money_get(size_t _Refs = 0);
 
 에 대 한 가능한 값을 *_Refs* 매개 변수 및 중요성은:
 
-- 0: 개체를 포함하는 로캘에 의해 개체의 수명이 관리됩니다.
+- 0: 개체의 수명은 포함 하는 로캘에 의해 관리 됩니다.
 
-- 1: 개체의 수명을 수동으로 관리해야 합니다.
+- 1: 개체의 수명은 수동으로 관리 해야 합니다.
 
-- \> 1: 이러한 값은 정의 되지 않습니다.
+- \> 1: 이러한 값이 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 

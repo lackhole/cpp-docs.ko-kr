@@ -16,11 +16,11 @@ helpviewer_keywords:
 - std::vector [C++], swap
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
 ms.openlocfilehash: f7663987b2759c762d1f6c1604923478915f5726
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62365002"
 ---
 # <a name="vectorltboolgt-class"></a>vector&lt;bool&gt; 클래스
 
@@ -142,7 +142,7 @@ vector&<bool&>::const_reference operator[](size_type Pos) const;
 
 |매개 변수|설명|
 |-|-|
-|*pos*|`vector<bool>` 요소의 위치입니다.|
+|*Pos*|`vector<bool>` 요소의 위치입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -285,7 +285,7 @@ reference& operator=(bool Val);
 *오른쪽*<br/>
 해당 값을 비트에 할당할 요소 참조입니다.
 
-*val*<br/>
+*Val*<br/>
 비트에 할당될 부울 값입니다.
 
 #### <a name="example"></a>예제

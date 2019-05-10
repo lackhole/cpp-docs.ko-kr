@@ -1,16 +1,16 @@
 ---
 title: '연습: 사용자 지정 메시지 블록 만들기'
-ms.date: 11/04/2016
+ms.date: 04/25/2019
 helpviewer_keywords:
 - creating custom message blocks Concurrency Runtime]
 - custom message blocks, creating [Concurrency Runtime]
 ms.assetid: 4c6477ad-613c-4cac-8e94-2c9e63cd43a1
-ms.openlocfilehash: e897163a1d394228ac1d8f566e4b0d761fbeeb42
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: e7dfc5d78d2281d77b9ce882b302c4d7db776d3b
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272739"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856991"
 ---
 # <a name="walkthrough-creating-a-custom-message-block"></a>연습: 사용자 지정 메시지 블록 만들기
 
@@ -72,7 +72,7 @@ ms.locfileid: "57272739"
 
 #### <a name="to-define-the-prioritybuffer-class"></a>Priority_buffer 클래스를 정의 하려면
 
-1. C + + 헤더 파일을 만들고 이름을 `priority_buffer.h`입니다. 또는 프로젝트의 일부인 기존 헤더 파일을 사용할 수 있습니다.
+1. 만들기는 C++ 헤더 파일 하 고 이름을 `priority_buffer.h`합니다. 또는 프로젝트의 일부인 기존 헤더 파일을 사용할 수 있습니다.
 
 1. `priority_buffer.h`, 다음 코드를 추가 합니다.
 

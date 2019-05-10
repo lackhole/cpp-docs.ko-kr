@@ -15,11 +15,11 @@ helpviewer_keywords:
 - types [C++], alignment requirements
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
 ms.openlocfilehash: 96c85db83c133af6f1712baa8597ed3360277854
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62258254"
 ---
 # <a name="alignof-operator"></a>__alignof 연산자
 
@@ -37,17 +37,17 @@ C + + 11 소개 합니다 **alignof** 바이트 단위로 지정 된 형식의 �
 
 ## <a name="remarks"></a>설명
 
-예를 들면 다음과 같습니다.
+예를 들어:
 
 |식|값|
 |----------------|-----------|
-|**__alignof (char)**|1|
-|**__alignof (short)**|2|
-|**__alignof (int)**|4|
+|**__alignof( char )**|1|
+|**__alignof( short )**|2|
+|**__alignof( int )**|4|
 |**__alignof( \__int64 )**|8|
-|**__alignof (float)**|4|
-|**__alignof (double)**|8|
-|**__alignof (char\* )**|4|
+|**__alignof( float )**|4|
+|**__alignof( double )**|8|
+|**__alignof( char\* )**|4|
 
 합니다 **__alignof** 값에 대 한 값으로 동일 `sizeof` 기본 형식에 대 한 합니다. 그러나 다음과 같은 예제를 고려해야 합니다.
 
@@ -94,7 +94,7 @@ X86 및 x64 관련 코드에서 맞춤의 차이점에 대한 자세한 내용�
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

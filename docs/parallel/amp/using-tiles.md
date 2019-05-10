@@ -3,15 +3,15 @@ title: 타일 사용
 ms.date: 11/19/2018
 ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
 ms.openlocfilehash: ede62c80a83b5f5fc1d691bf52dde67140e68246
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62405383"
 ---
 # <a name="using-tiles"></a>타일 사용
 
-앱의 가속을 최대화할 바둑판식 배열을 사용할 수 있습니다. 바둑판식 배열 동일한 사각형 하위 집합으로 스레드를 분할 하거나 *타일*합니다. 적절 한 타일 크기와 바둑판식된 알고리즘을 사용 하는 경우에 c + + AMP 코드에서 더 많은 가속을 얻을 수 있습니다. 바둑판식 배열의 기본 구성 요소는:
+앱의 가속을 최대화할 바둑판식 배열을 사용할 수 있습니다. 바둑판식 배열 동일한 사각형 하위 집합으로 스레드를 분할 하거나 *타일*합니다. 적절 한 타일 크기와 바둑판식된 알고리즘을 사용 하는 경우에에서 더 많은 가속을 얻을 수 있습니다 프로그램 C++ AMP 코드입니다. 바둑판식 배열의 기본 구성 요소는:
 
 - `tile_static` 변수입니다. 바둑판식 배열의 가장 큰 이점은 통한 성능 향상은 `tile_static` 액세스 합니다. 데이터에 액세스 `tile_static` 메모리 전역 공간에서 데이터 액세스 보다 상당히 빠를 수 있습니다 (`array` 또는 `array_view` 개체). 인스턴스의 `tile_static` 변수 각 타일에 대해 생성 되 고 타일에 있는 모든 스레드가 변수에 액세스할 수 있습니다. 일반적인 바둑판식된 알고리즘에서 데이터에 복사 됩니다 `tile_static` 전역 메모리에서 메모리에서 여러 차례 액세스 하 고는 `tile_static` 메모리입니다.
 
@@ -289,7 +289,7 @@ t_idx.barrier.wait();
 
 - `tile_static`
 
-A *메모리 펜스* 메모리 액세스가 스레드 타일의 다른 스레드를 사용할 수 있고 메모리 액세스가 프로그램 순서에 따라 실행 되도록 합니다. 이 위해 컴파일러와 프로세서가 수행 순서를 변경 하지 읽기 및 쓰기는 펜스에서. C + + AMP에서 메모리 펜스를 이러한 방법 중 하나를 호출 하 여 만들어집니다.
+A *메모리 펜스* 메모리 액세스가 스레드 타일의 다른 스레드를 사용할 수 있고 메모리 액세스가 프로그램 순서에 따라 실행 되도록 합니다. 이 위해 컴파일러와 프로세서가 수행 순서를 변경 하지 읽기 및 쓰기는 펜스에서. C++ AMP 메모리 펜스를 이러한 방법 중 하나를 호출 하 여 만들어집니다.
 
 - [tile_barrier:: wait 메서드](reference/tile-barrier-class.md#wait): 전역 주변에 펜스를 만듭니다 및 `tile_static` 메모리입니다.
 

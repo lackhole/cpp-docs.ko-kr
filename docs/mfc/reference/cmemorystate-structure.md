@@ -9,11 +9,11 @@ helpviewer_keywords:
 - detecting memory leaks [MFC]
 ms.assetid: 229d9de7-a6f3-4cc6-805b-5a9d9b1bfe1d
 ms.openlocfilehash: a110e1345cb970c117de125bd8105e1bc86eaf94
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62163756"
 ---
 # <a name="cmemorystate-structure"></a>CMemoryState 구조체
 
@@ -52,9 +52,9 @@ struct CMemoryState
 
 - Windows API 메모리 관리 함수를 사용 하 여 `LocalAlloc` /  `LocalFree` 하 고 `GlobalAlloc` /  `GlobalFree`합니다.
 
-- C + +를 사용 하 여 **새** 하 고 **삭제** 연산자입니다.
+- 사용 하는 C++ **새** 하 고 **삭제** 연산자입니다.
 
-합니다 `CMemoryState` 진단만 메모리를 찾아내는 데 도움이 누수를 사용 하 여 메모리를 할당할 때 발생 합니다 **새** 연산자를 사용 하 여 할당이 해제 되지 않습니다 **삭제**합니다. 다른 두 그룹의 메모리 관리 함수는 아닌 c + + 프로그램을 사용 하 여 혼합 **새** 및 **삭제** 동일한 프로그램에서 권장 되지 않습니다. DEBUG_NEW, 추가 매크로 대체 하기 위해 제공 됩니다는 **새** 파일 및 메모리 할당의 줄 번호 추적 해야 하는 경우 연산자입니다. DEBUG_NEW 일반적으로 사용 될 때마다 사용 되는 **새** 연산자입니다.
+합니다 `CMemoryState` 진단만 메모리를 찾아내는 데 도움이 누수를 사용 하 여 메모리를 할당할 때 발생 합니다 **새** 연산자를 사용 하 여 할당이 해제 되지 않습니다 **삭제**합니다. 에 대 한 메모리 관리 함수는 다른 두 개의 그룹을 비-C++ 프로그램 및 사용 하 여 혼합 **새** 하 고 **삭제** 동일한 프로그램에서 권장 되지 않습니다. DEBUG_NEW, 추가 매크로 대체 하기 위해 제공 됩니다는 **새** 파일 및 메모리 할당의 줄 번호 추적 해야 하는 경우 연산자입니다. DEBUG_NEW 일반적으로 사용 될 때마다 사용 되는 **새** 연산자입니다.
 
 다른 진단 마찬가지로 `CMemoryState` 진단 프로그램의 디버그 버전에서 에서만 사용할 수 있습니다. 디버그 버전에 정의 된 _DEBUG 상수가 있어야 합니다.
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - Windows Forms [C++], MFC support
 ms.assetid: 625b5821-f923-4701-aca0-c1a4ceca4f63
 ms.openlocfilehash: 7d535fce47be5504f6f521cda1267344206287da
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387437"
 ---
 # <a name="how-to-create-the-user-control-and-host-mdi-view"></a>방법: 사용자 정의 컨트롤 및 호스트 MDI 뷰 만들기
 
@@ -28,7 +28,7 @@ Windows Forms 사용자 정의 컨트롤을 만들고 컨트롤 클래스 라이
 
 1. MFC 응용 프로그램 프로젝트를 만듭니다.
 
-   에 **파일** 메뉴에서 **새로 만들기**를 클릭 하 고 **프로젝트**합니다. 에 **Visual c + +** 폴더 선택 **MFC 응용 프로그램**합니다.
+   에 **파일** 메뉴에서 **새로 만들기**를 클릭 하 고 **프로젝트**합니다. 에 **시각적 C++**  폴더를 선택 **MFC 응용 프로그램**합니다.
 
    에 **이름** 상자에 입력 합니다 `MFC02` 변경 합니다 **솔루션** 로 설정 **솔루션에 추가**. **확인**을 클릭합니다.
 
@@ -40,7 +40,7 @@ Windows Forms 사용자 정의 컨트롤을 만들고 컨트롤 클래스 라이
 
    아래 **구성 속성**를 선택 **일반**합니다. 아래는 **프로젝트 기본값** 으로 설정 **공용 언어 런타임 지원을** 하 **공용 언어 런타임 지원 (/ clr)** 합니다.
 
-   아래 **구성 속성**, 확장 **C/c + +** 을 클릭 합니다 **일반** 노드. 설정할 **디버그 정보 형식** 하 **프로그램 데이터베이스 (/Zi)** 합니다.
+   아래 **구성 속성**, 확장 **C /C++**  을 클릭 합니다 **일반** 노드. 설정할 **디버그 정보 형식** 하 **프로그램 데이터베이스 (/Zi)** 합니다.
 
    클릭 합니다 **코드 생성** 노드. 설정 **최소 다시 빌드 가능** 하 **없음 (/ Gm-)** 합니다. 설정할 수도 **기본 런타임 검사** 하 **기본**입니다.
 

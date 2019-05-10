@@ -1,6 +1,6 @@
 ---
 title: '연습: MFC Scribble 응용 프로그램 (파트 1) 업데이트'
-ms.date: 09/20/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - examples [MFC], update existing application
 - ribbon UI, porting to
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC Feature Pack, update existing application
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-ms.openlocfilehash: 213bc8087b58eac232cc8fcfccc88e13785a807e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: cba28039cb7755149b35a47ddee82b6274fe4c72
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57258764"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64558217"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>연습: MFC Scribble 응용 프로그램 (파트 1) 업데이트
 
@@ -24,7 +24,7 @@ ms.locfileid: "57258764"
 
 ## <a name="prerequisites"></a>전제 조건
 
-합니다 [Scribble 1.0 MFC 샘플](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe)합니다. Visual Studio 2017에 변환에 대 한 도움말을 참조 하세요. [포팅 가이드: MFC Scribble](../porting/porting-guide-mfc-scribble.md)합니다.
+합니다 [Scribble 1.0 MFC 샘플](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe)합니다. Visual Studio 2017에 또는 나중에 변환에 대 한 도움말을 참조 하세요. [포팅 가이드: MFC Scribble](../porting/porting-guide-mfc-scribble.md)합니다.
 
 ##  <a name="top"></a> 섹션
 
@@ -87,14 +87,11 @@ ms.locfileid: "57258764"
 
 1. mainfrm.cpp 파일에서
 
-    1. 
-  `m_wndToolBar.SetBarStyle`를 `m_wndToolBar.SetPaneStyle`으로 대체합니다.
+    1. `m_wndToolBar.SetBarStyle`를 `m_wndToolBar.SetPaneStyle`으로 대체합니다.
 
-    1. 
-  `m_wndToolBar.GetBarStyle`를 `m_wndToolBar.GetPaneStyle`으로 대체합니다.
+    1. `m_wndToolBar.GetBarStyle`를 `m_wndToolBar.GetPaneStyle`으로 대체합니다.
 
-    1. 
-  `DockControlBar(&m_wndToolBar)`를 `DockPane(&m_wndToolBar)`으로 대체합니다.
+    1. `DockControlBar(&m_wndToolBar)`를 `DockPane(&m_wndToolBar)`으로 대체합니다.
 
 1. ipframe.cpp 파일에서 코드의 다음 세 줄을 주석으로 처리합니다.
 
@@ -272,4 +269,4 @@ A *비주얼 관리자* 는 응용 프로그램에 대 한 모든 그리기를 �
 ## <a name="see-also"></a>참고자료
 
 [연습](../mfc/walkthroughs-mfc.md)<br/>
-[연습: MFC 자유 곡선 응용 프로그램 (2 부)를 업데이트 하는 중](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)
+[연습: MFC 자유 곡선 애플리케이션 업데이트(2부)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)

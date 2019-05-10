@@ -20,16 +20,15 @@ helpviewer_keywords:
 - single_assignment class
 ms.assetid: ccc34728-8de9-4e07-b83d-a36a58d9d2b9
 ms.openlocfilehash: 436d0d4cc16ee18449178782b775a25bb1d8592a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57268964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159914"
 ---
 # <a name="singleassignment-class"></a>single_assignment 클래스
 
-
-  `single_assignment` 메시징 블록은 하나의 한 번 쓰기 `message`를 저장할 수 있는, 순서가 지정된 다중 대상 다중 소스 `propagator_block`입니다.
+`single_assignment` 메시징 블록은 하나의 한 번 쓰기 `message`를 저장할 수 있는, 순서가 지정된 다중 대상 다중 소스 `propagator_block`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -57,7 +56,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 |이름|설명|
 |----------|-----------------|
 |[has_value](#has_value)|확인 여부를이 `single_assignment` 아직 메시징 블록 값으로 초기화 했습니다.|
-|[value](#value)|현재 페이로드의에 저장 되는 메시지에 대 한 참조를 가져옵니다는 `single_assignment` 메시징 블록입니다.|
+|[값](#value)|현재 페이로드의에 저장 되는 메시지에 대 한 참조를 가져옵니다는 `single_assignment` 메시징 블록입니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
@@ -177,8 +176,7 @@ virtual message_status propagate_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-
-  `message` 개체에 대한 포인터입니다.
+`message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -255,8 +253,7 @@ virtual message_status send_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-
-  `message` 개체에 대한 포인터입니다.
+`message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - ALIGN directive
 ms.assetid: 1c386b23-439f-4ec3-a6de-74427b25e47f
 ms.openlocfilehash: eb42b1952b3fd59438f0dd4c29d48c91c4d8864d
-ms.sourcegitcommit: cce52b2232b94ce8fd8135155b86e2d38a4e4562
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54031228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62166479"
 ---
 # <a name="align-masm"></a>ALIGN (MASM)
 
@@ -19,7 +19,7 @@ ms.locfileid: "54031228"
 
 ## <a name="syntax"></a>구문
 
-> 맞춤 [[*번호*]]
+> ALIGN [[*number*]]
 
 ## <a name="remarks"></a>설명
 
@@ -29,7 +29,7 @@ ms.locfileid: "54031228"
 
 데이터 aligned 인 경우 건너뛴된 공간을 0으로 채워집니다. 지침, 맞춰진 경우 건너뛴된 공간 크기가 적절 하 게 NOP 지침으로 채워집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [EVEN](even.md)<br/>
 [지시문 참조](../../assembler/masm/directives-reference.md)<br/>

@@ -28,11 +28,11 @@ helpviewer_keywords:
 - rintl function
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
 ms.openlocfilehash: 9e0e3875b7484735b5439c6c0e0a7252940d4552
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357592"
 ---
 # <a name="rint-rintf-rintl"></a>rint, rintf, rintl
 
@@ -67,13 +67,13 @@ long double rint( long double x );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **인쇄** 및 반환 하는 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **인쇄** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **인쇄** 및 반환 하는 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **인쇄** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**인쇄**하십시오 **rintf**, **rintl**|\<math.h>|\<cmath>|
+|**rint**, **rintf**, **rintl**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

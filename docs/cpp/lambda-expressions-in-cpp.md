@@ -1,17 +1,17 @@
 ---
 title: C++의 람다 식
-ms.date: 11/19/2018
+ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++]
 - lambda expressions [C++], overview
 - lambda expressions [C++], vs. function objects
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
-ms.openlocfilehash: 9ebe4fec06996e908c619b6ac14af098b1c07a01
-ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
-ms.translationtype: MT
+ms.openlocfilehash: c7543b3558da88b41102fa7b790bb9d9f3f18463
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53978311"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222380"
 ---
 # <a name="lambda-expressions-in-c"></a>C++의 람다 식
 
@@ -45,7 +45,7 @@ void abssort(float* x, unsigned n) {
 
 ![람다 식의 구조적 요소](../cpp/media/lambdaexpsyntax.png "람다 식의 구조적 요소")
 
-1. *캡처 절* (라고도 합니다 *람다 도입부* c + + 사양에.)
+1. *캡처 절* (라고도 합니다 *람다 도입부* 에 C++ 사양입니다.)
 
 1. *매개 변수 목록* 선택 사항입니다. (라고도 합니다 *람다 선언 자*)
 
@@ -138,7 +138,7 @@ auto y = [] (int first, int second)
 };
 ```
 
-**c + + 14**, 매개 변수 형식이 제네릭인 경우 형식 지정자로 auto 키워드를 사용할 수 있습니다. 이렇게 하면 함수 호출 연산자를 템플릿으로 만들도록 컴파일러에 지시합니다. 매개 변수 목록에 있는 각 auto 인스턴스는 고유한 형식 매개 변수와 같습니다.
+ **C++ 14**에 매개 변수 형식이 제네릭인 경우 형식 지정자로 auto 키워드를 사용할 수 있습니다. 이렇게 하면 함수 호출 연산자를 템플릿으로 만들도록 컴파일러에 지시합니다. 매개 변수 목록에 있는 각 auto 인스턴스는 고유한 형식 매개 변수와 같습니다.
 
 ```cpp
 auto y = [] (auto first, auto second)
@@ -157,7 +157,7 @@ auto y = [] (auto first, auto second)
 
 ### <a name="exception-specification"></a>예외 사양
 
-람다 식이 어떠한 예외도 throw하지 않음을 나타내기 위해 `noexcept` 예외 사양을 사용할 수 있습니다. 일반 함수를 사용 하 여 Visual c + + 컴파일러 경고를 생성 합니다 [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) 람다 식을 선언 하는 경우는 `noexcept` 예외 사양 및 람다 본문이 다음과 같이 예외를 throw 합니다.
+람다 식이 어떠한 예외도 throw하지 않음을 나타내기 위해 `noexcept` 예외 사양을 사용할 수 있습니다. Microsoft 일반 함수와 마찬가지로 C++ 컴파일러 경고를 생성 [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) 람다 식을 선언 하는 경우를 `noexcept` 예외 사양 및 람다 본문이 다음과 같이 예외를 throw 합니다.
 
 ```cpp
 // throw_lambda_expression.cpp
@@ -174,7 +174,7 @@ int main() // C4297 expected
 
 람다 식의 반환 형식은 자동으로 추론됩니다. 사용할 필요가 없습니다 합니다 [자동](../cpp/auto-cpp.md) 키워드를 지정 하지 않으면를 *후행 반환 형식당*합니다. 합니다 *후행 반환 형식당* 일반 메서드 또는 함수의 반환 형식 부분 유사 합니다. 그러나 반환 형식은 매개 변수 목록 뒤에 와야 하며 반환 형식 앞에 trailing-return-type 키워드 `->`를 포함해야 합니다.
 
-람다 본문에 return 문이 하나만 포함되거나 식이 값을 반환하지 않으면 람다 식의 반환 형식 부분을 생략할 수 있습니다. 람다 본문에 단일 return 문이 포함되어 있으면 컴파일러는 반환 식의 형식에서 반환 형식을 추론합니다. 컴파일러는 반환 형식이 추론 하는 고, 그렇지 **void**합니다. 이 원칙을 설명하는 다음 예제 코드 조각을 참조하세요.
+람다 본문에 return 문이 하나만 포함되거나 식이 값을 반환하지 않으면 람다 식의 반환 형식 부분을 생략할 수 있습니다. 람다 본문에 단일 return 문이 포함되어 있으면 컴파일러는 반환 식의 형식에서 반환 형식을 추론합니다. 컴파일러는 반환 형식이 추론 하는 고, 그렇지 **void**합니다. 이 원칙을 설명하는 다음 예제 코드 조각을 참조하십시오.
 
 ```cpp
 auto x1 = [](int i){ return i; }; // OK: return type is int
@@ -240,7 +240,7 @@ void fillVector(vector<int>& v)
 
 자세한 내용은 [생성](../standard-library/algorithm-functions.md#generate)합니다.
 
-다음 코드 예제에서는 이전 예제의 함수를 사용 하 고 c + + 표준 라이브러리 알고리즘을 사용 하는 람다 식의 예제를 추가 `generate_n`합니다. 이 람다 식은 `vector` 개체의 요소를 이전의 두 요소의 합에 할당합니다. **변경할 수** 키워드는 람다 식의 본문이 외부 변수 복사본을 수정할 수 있도록 사용 됩니다 `x` 고 `y`, 람다 식이 값별로 캡처. 람다 식이 원래 변수 `x` 및 `y`를 값별로 캡처하기 때문에 람다가 실행된 후에도 값이 `1`로 유지됩니다.
+다음 코드 예제에서는 이전 예제의 함수를 사용 하 고 사용 하는 람다 식의 예제를 추가 합니다 C++ 표준 라이브러리 알고리즘 `generate_n`합니다. 이 람다 식은 `vector` 개체의 요소를 이전의 두 요소의 합에 할당합니다. **변경할 수** 키워드는 람다 식의 본문이 외부 변수 복사본을 수정할 수 있도록 사용 됩니다 `x` 고 `y`, 람다 식이 값별로 캡처. 람다 식이 원래 변수 `x` 및 `y`를 값별로 캡처하기 때문에 람다가 실행된 후에도 값이 `1`로 유지됩니다.
 
 ```cpp
 // compile with: /W4 /EHsc
@@ -376,7 +376,7 @@ auto Sqr = [](int t) __declspec(code_seg("PagedMem")) -> int { return t*t; };
 
 C++11 표준 람다 기능을 하는 것 외에도 Visual Studio 상태 비저장 람다를 통해 임의의 호출 규칙을 사용 하는 함수 포인터에 대 한 포인터로 지원 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리의 함수 개체](../standard-library/function-objects-in-the-stl.md)<br/>

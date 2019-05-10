@@ -1,6 +1,6 @@
 ---
 title: switch 문 (C++)
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 f1_keywords:
 - default_cpp
 - switch_cpp
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - case keyword [C++], in switch statements
 - default keyword [C++]
 ms.assetid: 6c3f3ed3-5593-463c-8f4b-b33742b455c6
-ms.openlocfilehash: 67918b7df747d3bee923da500729e60b4fe04336
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
-ms.translationtype: MT
+ms.openlocfilehash: 8136b03d9e54b4d49bcb1417238066bd86bc6b89
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328853"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221943"
 ---
 # <a name="switch-statement-c"></a>switch 문 (C++)
 
@@ -78,7 +78,7 @@ int main() {
 
 위의 예제에서 `capa`는 `c`가 대문자 `A`인 경우 증가됩니다. **중단** 뒤의 문으로 `capa++` 의 실행을 종료 합니다 **전환** 문 본문 및 제어를 전달 합니다 **하는 동안** 루프. 없이 합니다 **나누기** 문의 실행은 "이동" 다음 레이블이 지정 된 문, 있도록 `lettera` 및 `nota` 도 증가 됩니다. 용도 비슷하지만 의해 제공 되는 **나누기** 방침 `case 'a'`합니다. 경우 `c` 는 소문자 `a`, `lettera` 증가 및 **중단** 문이 종료 되는 **전환** 문 본문입니다. 하는 경우 `c` 아닙니다를 `a` 또는 `A`의 **기본** 문이 실행 됩니다.
 
-**Visual Studio 2017 이상:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md))는 `[[fallthrough]]` 표준 C + + 17 특성을 지정 합니다. 사용할 수는 **전환** 문을 해당 제어 이동 동작이 의도 된 컴파일러 (또는 코드를 읽는 사람에 게) 힌트로 합니다. Visual c + + 컴파일러 현재 경고 하지 않습니다 fallthrough 동작에 있으므로이 특성에 컴파일러 동작에 영향을 주지 않습니다. Labeled 문; 내에서 빈 문에 특성이 적용 되는 참고 즉 세미콜론 필요는 없습니다.
+**Visual Studio 2017 이상:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md))는 `[[fallthrough]]` 표준 C + + 17 특성을 지정 합니다. 사용할 수는 **전환** 문을 해당 제어 이동 동작이 의도 된 컴파일러 (또는 코드를 읽는 사람에 게) 힌트로 합니다. Microsoft C++ 컴파일러 현재 경고 하지 않습니다 fallthrough 동작에 있으므로이 특성에 컴파일러 동작에 영향을 주지 않습니다. Labeled 문; 내에서 빈 문에 특성이 적용 되는 참고 즉 세미콜론 필요는 없습니다.
 
 ```cpp
 int main()
@@ -106,7 +106,7 @@ int main()
 }
 ```
 
-**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): switch 문을 소개 하 고 범위가 블록 switch 문의 제한 된 변수를 초기화할 수 있습니다.
+**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)):  Switch 문을 소개 하 고 범위가 블록 switch 문의 제한 된 변수를 초기화할 수 있습니다.
 
 ```cpp
     switch (Gadget gadget(args); auto s = gadget.get_status())
@@ -166,5 +166,5 @@ Microsoft C의 경우 값의 수를 제한 하지 않습니다는 **전환** 문
 
 ## <a name="see-also"></a>참고자료
 
-[선택 문](../cpp/selection-statements-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[선택 문(C++)](../cpp/selection-statements-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)

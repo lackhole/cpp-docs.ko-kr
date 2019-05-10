@@ -23,11 +23,11 @@ helpviewer_keywords:
 - _CrtSetReportFile function
 ms.assetid: 3126537e-511b-44af-9c1c-0605265eabc4
 ms.openlocfilehash: 32a560e09c47468daf48c185e23d6e289c6d1d9b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464248"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64343015"
 ---
 # <a name="crtsetreportfile"></a>_CrtSetReportFile
 
@@ -60,7 +60,7 @@ _HFILE _CrtSetReportFile(
 
 다음 목록에 대 한 사용 가능한 선택 항목을 보여 줍니다 *reportFile* 의 결과 동작 **_CrtDbgReport**합니다. 이러한 옵션은 Crtdbg.h에서 비트 플래그로 정의되어 있습니다.
 
-- **파일 핸들**
+- **file handle**
 
    메시지의 대상이 될 파일에 대한 핸들입니다. 핸들의 유효성이 확인되지는 않습니다. 파일에 대한 핸들을 열고 닫아야 합니다. 예를 들어:
 
@@ -106,7 +106,7 @@ _HFILE _CrtSetReportFile(
 
 콘솔 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 콘솔을 사용 하 여 연결 된 표준 스트림 핸들 **stdin**하십시오 **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-**라이브러리:** 디버그 버전의 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)만 해당합니다.
+**라이브러리:** 디버그 버전 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md) 만 합니다.
 
 ## <a name="see-also"></a>참고자료
 

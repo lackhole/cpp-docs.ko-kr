@@ -1,17 +1,20 @@
 ---
 title: '연습: 컴파일하는 C++on the Command Line /CX 프로그램'
-ms.date: 09/24/2018
+ms.date: 04/23/2019
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-ms.openlocfilehash: 099bef402d22abc12a31f105f63e5405c65a1d82
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: cbf5a48de3c029e36fc6daabe2b3f0db55dc173c
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58766068"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877173"
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>연습: 컴파일하는 C++on the Command Line /CX 프로그램
 
-Windows 런타임을 대상으로 하는 Visual C++ 프로그램을 만들어 명령줄에서 빌드할 수 있습니다. Visual C++는 Windows 런타임 프로그래밍 모델을 대상으로 하는 추가 형식 및 연산자가 있는 Visual C++ 구성 요소 확장명(C++/CX)을 지원합니다. 에서는 C++ 유니버설 Windows 플랫폼 (UWP), Windows Phone 8.1 및 Windows 데스크톱 앱을 빌드할 CX 합니다. 자세한 내용은 [는 C+ 둘러보기 + CX](https://msdn.microsoft.com/magazine/dn166929.aspx) 하 고 [런타임 플랫폼용 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)합니다.
+> [!NOTE] 
+> 새 UWP 앱 및 구성 요소를 사용 하는 권장 [ C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), 표준 C + + 17 개의 언어 프로젝션 Windows 런타임 Api에 대 한 합니다. C++/ WinRT는 Windows 10 SDK 부터는 버전 1803에서에서 사용할 수 있습니다. C++/ WinRT 헤더 파일에서 완전히 구현 되 고 최신 Windows API에 대 한 최고 수준의 액세스를 사용 하 여 제공 하도록 설계 되었습니다.
+
+Microsoft C++ (MSVC) 컴파일러에서 지 원하는 C++ 구성 요소 확장 (C++/CX)에 추가 형식 및 연산자가 Windows 런타임 프로그래밍 모델을 대상으로 합니다. 사용할 수 있습니다 C++/CX 유니버설 Windows 플랫폼 (UWP) 및 Windows 데스크톱 앱을 빌드할 수 있습니다. 자세한 내용은 [는 C+ 둘러보기 + CX](https://msdn.microsoft.com/magazine/dn166929.aspx) 하 고 [런타임 플랫폼용 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)합니다.
 
 이 연습에서는 텍스트 편집기를 사용하여 기본적인 C++/CX 프로그램을 만든 다음 명령줄에서 컴파일합니다. 여기에 나와 있는 내용을 입력하는 대신 C++/CX 프로그램을 직접 사용할 수도 있고 다른 도움말 문서의 C++/CX 코드 샘플을 사용할 수도 있습니다. 이 방법은 구축 하 고 UI 요소가 없는 소형 모듈을 테스트 하는 데 유용 합니다.)
 
@@ -49,7 +52,7 @@ C++ 언어의 기본적인 사항을 알고 있습니다.
 
 1. 메뉴 모음에서 선택 **파일** > **저장**합니다.
 
-   Windows 런타임을 사용 하는 Visual C++ 소스 파일을 만들었습니다 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md) 네임 스페이스입니다.
+   사용자가 만든를 C++ Windows 런타임을 사용 하는 원본 파일 [Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md) 네임 스페이스입니다.
 
 1. 명령 프롬프트에서 입력 **cl /EHsc /ZW basiccx.cpp /link /subsystem: console**합니다. cl.exe 컴파일러는 이 소스 파일을 .obj 파일로 컴파일한 다음 링커를 실행하여 실행 프로그램인 basiccx.exe를 생성합니다. (합니다 [/EHsc](reference/eh-exception-handling-model.md) 컴파일러 옵션에는 C++ 예외 처리 모델을 지정 하며 [/l i n](reference/link-pass-options-to-linker.md) 콘솔 응용 프로그램을 지정 하는 플래그입니다.)
 

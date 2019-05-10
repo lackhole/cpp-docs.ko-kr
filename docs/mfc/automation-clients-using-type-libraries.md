@@ -15,11 +15,11 @@ helpviewer_keywords:
 - .odl files
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
 ms.openlocfilehash: 32179f3913b52ca46f9ea7314b9957f4f4970713
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62374196"
 ---
 # <a name="automation-clients-using-type-libraries"></a>자동화 클라이언트: 형식 라이브러리를 사용 하 여
 
@@ -29,9 +29,9 @@ ms.locfileid: "57282944"
 
 에 대 한 내용은 [MkTypLib](/windows/desktop/Midl/differences-between-midl-and-mktyplib), Windows SDK를 참조 하세요.
 
-Visual c + + 형식 라이브러리 파일을 읽고 수에서 파생 된 디스패치 클래스를 만듭니다 [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md)합니다. 해당 클래스의 개체 속성 및 서버 개체의 복제 작업에 있습니다. 이 개체의 속성 및 작업을 호출 하는 응용 프로그램 및 기능에서 상속 `COleDispatchDriver` OLE 시스템에서 서버 개체에 라우팅하는 이러한 호출을 라우팅합니다.
+Visual C++ 형식 라이브러리 파일을 읽고 디스패치 파생 클래스를 만들 수 있습니다 [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md)합니다. 해당 클래스의 개체 속성 및 서버 개체의 복제 작업에 있습니다. 이 개체의 속성 및 작업을 호출 하는 응용 프로그램 및 기능에서 상속 `COleDispatchDriver` OLE 시스템에서 서버 개체에 라우팅하는 이러한 호출을 라우팅합니다.
 
-프로젝트를 만들 때 자동화를 포함 하도록 선택한 경우 visual c + +는를이 형식 라이브러리 파일을 유지 관리는 자동으로 합니다. 각 빌드의 일부로,.tlb 파일 MkTypLib를 사용 하 여 빌드됩니다.
+Visual C++ 프로젝트를 만들 때 자동화를 포함 하도록 선택한 경우를이 형식 라이브러리 파일을 자동으로 유지 합니다. 각 빌드의 일부로,.tlb 파일 MkTypLib를 사용 하 여 빌드됩니다.
 
 ### <a name="to-create-a-dispatch-class-from-a-type-library-tlb-file"></a>형식 라이브러리 (.tlb) 파일에서 디스패치 클래스를 만들려면
 

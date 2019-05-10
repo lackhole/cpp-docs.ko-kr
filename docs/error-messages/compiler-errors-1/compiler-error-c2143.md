@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2143
 ms.assetid: 1d8d1456-e031-4965-9240-09a6e33ba81c
 ms.openlocfilehash: ed4bc7eea85e5263d59817082caed99bde3d75d5
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62353484"
 ---
 # <a name="compiler-error-c2143"></a>컴파일러 오류 C2143
 
@@ -19,7 +19,7 @@ ms.locfileid: "51520116"
 
 컴파일러 특정 토큰 (즉, 공백 문자 이외의 언어 요소)를 예상 하 고 다른 토큰이 발견 합니다.
 
-확인 합니다 [c + + 언어 참조](../../cpp/cpp-language-reference.md) 코드 구문이 잘못 되지 않는 확인 합니다. 컴파일러 문제를 발생 시키는 줄을 발견 한 후이 오류를 보고, 때문에 여러 줄 코드의 오류를 확인 합니다.
+확인 합니다 [ C++ 언어 참조](../../cpp/cpp-language-reference.md) 코드 구문이 잘못 되지 않는 확인 합니다. 컴파일러 문제를 발생 시키는 줄을 발견 한 후이 오류를 보고, 때문에 여러 줄 코드의 오류를 확인 합니다.
 
 C2143은 다양 한 상황에서 발생할 수 있습니다.
 
@@ -122,7 +122,7 @@ void func1() {
 }
 ```
 
-C + + 표준 라이브러리의 형식에는 정규화 되지 않은 호출이 수행 될 때 오류가 발생할 수 있습니다.
+형식에 정규화 되지 않은 호출이 수행 될 때 오류가 발생할 수 있습니다는 C++ 표준 라이브러리:
 
 ```cpp
 // C2143g.cpp

@@ -10,19 +10,19 @@ helpviewer_keywords:
 - referencing objects, declarator syntax
 ms.assetid: 68156f7f-97a0-4b66-b26d-b25ade5e3bd8
 ms.openlocfilehash: aafc582299402eabab2736ac7d07b6c4c397413c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62244223"
 ---
 # <a name="references-c"></a>참조 (C++)
 
-참조는 포인터와 마찬가지로, 메모리의 다른 위치에 있는 개체의 주소를 저장합니다. 하지만 포인터와는 달리, 참조는 초기화되고 나면 다른 개체를 참조하도록 설정하거나 null로 설정할 수 없습니다. 두 가지 종류의 참조: 참조 하는 명명 된 변수 및 rvalue 참조에 대 한 참조는 lvalue 참조를 [임시 개체](../cpp/temporary-objects.md)합니다. & 연산자는 lvalue 참조를 나타내고, && 연산자는 컨텍스트에 따라 rvalue 참조나 범용 참조(rvalue 또는 lvalue)를 나타냅니다.
+참조는 포인터와 마찬가지로, 메모리의 다른 위치에 있는 개체의 주소를 저장합니다. 하지만 포인터와는 달리, 참조는 초기화되고 나면 다른 개체를 참조하도록 설정하거나 null로 설정할 수 없습니다. 두 가지 종류의 참조: 참조 하는 명명 된 변수 및 rvalue 참조에 대 한 참조는 lvalue 참조를 [임시 개체](../cpp/temporary-objects.md)합니다. & 연산자는 lvalue 참조를 나타냅니다 및 & & 연산자는 rvalue 참조 또는 컨텍스트에 따라 범용 참조 (rvalue 또는 lvalue)를 나타냅니다.
 
 참조를 선언할 수 있는 구문은 다음과 같습니다.
 
-> \[*저장소 클래스 지정자*] \[ *cv 한정자*] *형식 지정자* \[ *ms 한정자*]  *선언 자* \[ **=** *식*]**;**
+> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[*ms-modifier*] *declarator* \[**=** *expression*]**;**
 
 참조를 지정하는 임의의 유효한 선언자를 사용할 수 있습니다. 참조가 함수 또는 배열 형식에 대한 참조가 아닌 한 다음 단순화된 구문이 적용됩니다.
 

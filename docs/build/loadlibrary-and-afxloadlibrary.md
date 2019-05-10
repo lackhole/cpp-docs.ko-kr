@@ -10,12 +10,12 @@ helpviewer_keywords:
 - LoadLibrary method
 - explicit linking [C++]
 ms.assetid: b4535d19-6243-4146-a31a-a5cca4c7c9e3
-ms.openlocfilehash: 96b8c0ce1116dbb08260573f25f941ca54169127
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 661d7742fb0fedae45bc063ba3821193d6c5438e
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822420"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220617"
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary 및 AfxLoadLibrary
 
@@ -48,4 +48,4 @@ Windows에서 DLL을 로드할 수 없는 경우 프로세스 오류 로부터 �
 
 ## <a name="see-also"></a>참고자료
 
-- [Visual C++의 DLL](dlls-in-visual-cpp.md)
+- [C를 만들기 /C++ Visual Studio에서 Dll](dlls-in-visual-cpp.md)

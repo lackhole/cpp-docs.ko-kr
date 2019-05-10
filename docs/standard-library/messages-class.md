@@ -23,11 +23,11 @@ helpviewer_keywords:
 - std::messages [C++], open
 ms.assetid: c4c71f40-4f24-48ab-9f7c-daccd8d5bd83
 ms.openlocfilehash: 7a024a8cad8c536b25127d033468874de5ebd8af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62383583"
 ---
 # <a name="messages-class"></a>messages 클래스
 
@@ -152,10 +152,10 @@ virtual string_type do_get(
 *_Catval*<br/>
 검색할 메시지 카탈로그를 지정하는 ID 값입니다.
 
-*설정 (_s)*<br/>
+*_Set*<br/>
 메시지 카탈로그에서 메시지를 찾는 데 사용되는 첫 번째 식별자입니다.
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 메시지 카탈로그에서 메시지를 찾는 데 사용되는 두 번째 식별자입니다.
 
 *_Dfault*<br/>
@@ -222,10 +222,10 @@ string_type get(
 *_Catval*<br/>
 검색할 메시지 카탈로그를 지정하는 ID 값입니다.
 
-*설정 (_s)*<br/>
+*_Set*<br/>
 메시지 카탈로그에서 메시지를 찾는 데 사용되는 첫 번째 식별자입니다.
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 메시지 카탈로그에서 메시지를 찾는 데 사용되는 두 번째 식별자입니다.
 
 *_Dfault*<br/>
@@ -264,11 +264,11 @@ protected: messages(
 
 에 대 한 가능한 값을 *_Refs* 매개 변수 및 중요성은:
 
-- 0: 개체를 포함하는 로캘에 의해 개체의 수명이 관리됩니다.
+- 0: 개체의 수명은 포함 하는 로캘에 의해 관리 됩니다.
 
-- 1: 개체의 수명을 수동으로 관리해야 합니다.
+- 1: 개체의 수명은 수동으로 관리 해야 합니다.
 
-- \> 1: 이러한 값은 정의 되지 않습니다.
+- \> 1: 이러한 값이 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 

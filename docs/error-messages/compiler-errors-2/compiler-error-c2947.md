@@ -7,15 +7,15 @@ helpviewer_keywords:
 - C2947
 ms.assetid: 6c056f62-ec90-4883-8a67-aeeb6ec13546
 ms.openlocfilehash: 3738c257192134eedb8554b0d875023862441416
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62227218"
 ---
 # <a name="compiler-error-c2947"></a>컴파일러 오류 C2947
 
-construct을(를) 끝내려면 '>' 기호가 있어야 하는데 'syntax'이(가) 있습니다.
+필요한 ' >' 구문을 종료 하려면 '구문을' 찾을 수
 
 제네릭 또는 템플릿 인수 목록은 올바르게 종료 되지 않을 수 있습니다.
 

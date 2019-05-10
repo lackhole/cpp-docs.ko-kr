@@ -99,11 +99,11 @@ helpviewer_keywords:
 - std::list [C++], unique
 ms.assetid: d3707f4a-10fd-444f-b856-f9ca2077c1cd
 ms.openlocfilehash: d990efb7d4c363b8d8e38f42f9edac7eea0a3882
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62413218"
 ---
 # <a name="list-class"></a>list 클래스
 
@@ -121,7 +121,7 @@ class list
 *Type*<br/>
 목록에 저장되는 요소 데이터 형식입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 목록의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수 선택 사항이 며 기본값은 **할당자**\<*형식*>.
 
 ## <a name="remarks"></a>설명
@@ -242,7 +242,7 @@ void assign(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*<br/>
+*첫째*<br/>
 인수 목록에서 복사할 요소 범위에 있는 첫 번째 요소의 위치입니다.
 
 *마지막*<br/>
@@ -251,7 +251,7 @@ void assign(
 *개수*<br/>
 목록에 삽입되는 요소의 복사본의 수입니다.
 
-*val*<br/>
+*Val*<br/>
 목록에 삽입되는 요소의 값입니다.
 
 *IList*<br/>
@@ -1151,9 +1151,9 @@ void insert(iterator Where, InputIterator First, InputIterator Last);
 |매개 변수|설명|
 |-|-|
 |*Where*|대상 목록에서 첫 번째 요소를 삽입하는 위치입니다.|
-|*val*|목록에 삽입되는 요소의 값입니다.|
+|*Val*|목록에 삽입되는 요소의 값입니다.|
 |*개수*|목록에 삽입되는 요소의 수입니다.|
-|*첫 번째*|인수 목록에서 복사할 요소 범위에 있는 첫 번째 요소의 위치입니다.|
+|*첫째*|인수 목록에서 복사할 요소 범위에 있는 첫 번째 요소의 위치입니다.|
 |*마지막*|인수 목록에서 복사할 요소의 범위 밖에 있는 첫 번째 요소의 위치입니다.|
 
 ### <a name="return-value"></a>반환 값
@@ -1274,9 +1274,9 @@ list(InputIterator First, InputIterator Last, const Allocator& Al);
 |-|-|
 |*Al*|이 개체에 사용할 할당자 클래스입니다.|
 |*개수*|생성된 목록의 요소 수입니다.|
-|*val*|목록에 있는 요소의 값입니다.|
+|*Val*|목록에 있는 요소의 값입니다.|
 |*오른쪽*|생성된 목록이 복사본으로 지정될 목록입니다.|
-|*첫 번째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.|
 |*IList*|복사할 요소가 포함된 initializer_list입니다.|
 
@@ -2366,7 +2366,7 @@ void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator
 *Iter*<br/>
 원본 목록에서 삽입할 요소입니다.
 
-*첫 번째*<br/>
+*첫째*<br/>
 원본 목록에서 삽입할 범위 내 첫 번째 요소입니다.
 
 *마지막*<br/>

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - applications [OLE], implementing OLE
 ms.assetid: 0875ddae-99df-488c-82c6-164074a81058
 ms.openlocfilehash: 83a1089ecaaaa9bd0dd1d928cd3d1869e5017a4a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58774388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62186867"
 ---
 # <a name="ole-background-implementation-strategies"></a>OLE 백그라운드: Implementation Strategies
 
@@ -38,6 +38,6 @@ ms.locfileid: "58774388"
 ## <a name="see-also"></a>참고자료
 
 [OLE 백그라운드](../mfc/ole-background.md)<br/>
-[컨테이너: 컨테이너를 구현합니다.](../mfc/containers-implementing-a-container.md)<br/>
+[컨테이너: 컨테이너 구현](../mfc/containers-implementing-a-container.md)<br/>
 [서버: 서버 구현](../mfc/servers-implementing-a-server.md)<br/>
 [MFC 응용 프로그램 마법사](../mfc/reference/mfc-application-wizard.md)

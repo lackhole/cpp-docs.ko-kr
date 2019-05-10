@@ -1,16 +1,16 @@
 ---
 title: '연습: 도구 모음에 컨트롤 넣기'
-ms.date: 09/20/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - Customize dialog box, adding controls
 - toolbars [MFC], adding controls
 ms.assetid: 8fc94bdf-0da7-45d9-8bc4-52b7b1edf205
-ms.openlocfilehash: 0b5b8685b3062bf63187a765b7e90e26f8c65681
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: f3e4653d1be2f4a1830288ba724d20ddb7610958
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291391"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64558146"
 ---
 # <a name="walkthrough-putting-controls-on-toolbars"></a>연습: 도구 모음에 컨트롤 넣기
 
@@ -26,11 +26,9 @@ ms.locfileid: "57291391"
 
 1. 처리 하는 메시지 처리기를 `AFX_WM_RESETTOOLBAR` 메시지에서 다음 단계를 수행 합니다.
 
-   1. 
-  `CMFCToolbarButton` 파생 클래스를 사용하여 단추 컨트롤을 생성합니다.
+   1. `CMFCToolbarButton` 파생 클래스를 사용하여 단추 컨트롤을 생성합니다.
 
-   1. 더미 단추를 사용 하 여 새 컨트롤 바꿉니다 [CMFCToolBar::ReplaceButton](../mfc/reference/cmfctoolbar-class.md#replacebutton)합니다. 
-  `ReplaceButton`은 단추 개체를 복사하고 복사본을 유지하므로 스택에서 단추 개체를 생성할 수 있습니다.
+   1. 더미 단추를 사용 하 여 새 컨트롤 바꿉니다 [CMFCToolBar::ReplaceButton](../mfc/reference/cmfctoolbar-class.md#replacebutton)합니다. `ReplaceButton`은 단추 개체를 복사하고 복사본을 유지하므로 스택에서 단추 개체를 생성할 수 있습니다.
 
 > [!NOTE]
 >  사용 하 여 도구 모음 다시 설정 해야 응용 프로그램에서 사용자 지정을 사용 하는 경우는 **다시 설정** 단추를 **도구 모음** 탭의 **사용자 지정** 보려면 대화 상자를는 다시 컴파일한 후 응용 프로그램에서 컨트롤을 업데이트 합니다. 도구 모음 상태는 Windows 레지스트리에 저장되며 레지스트리 정보는 응용 프로그램이 시작하는 동안 `ReplaceButton` 메서드가 실행된 후 로드됩니다.
@@ -58,28 +56,23 @@ ms.locfileid: "57291391"
    1. 새로운 문자열 "텍스트 찾기\n찾기"를 문자열 테이블에 추가하고 `ID_EDIT_FIND_COMBO` 명령 ID를 할당합니다. 이 ID의 명령 ID로 사용할 합니다 **찾을** 콤보 상자 단추입니다.
 
         > [!NOTE]
-        > 
-  `ID_EDIT_FIND`는 `CEditView`에 의해 처리되는 표준 명령이므로 이 명령을 위해 특수한 처리기를 구현하지 않아도 됩니다.  그러나 새 `ID_EDIT_FIND_COMBO` 명령에 대한 처리기를 구현해야 합니다.
+        > `ID_EDIT_FIND`는 `CEditView`에 의해 처리되는 표준 명령이므로 이 명령을 위해 특수한 처리기를 구현하지 않아도 됩니다.  그러나 새 `ID_EDIT_FIND_COMBO` 명령에 대한 처리기를 구현해야 합니다.
 
 1. 새 클래스를 만듭니다 `CFindComboBox`에서 파생 된 [CComboBox 클래스](../mfc/reference/ccombobox-class.md)합니다.
 
-1. 
-  `CFindComboBox` 클래스에서 `PreTranslateMessage` 가상 메서드를 재정의합니다. 이 메서드를 처리 하는 데 콤보 상자를 통해 합니다 [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) 메시지입니다. 사용자가 Esc 키를 누르면(`VK_ESCAPE`) 주 프레임 창으로 포커스를 반환합니다. 사용자가 Enter 키를 누르면(`VK_ENTER`) `WM_COMMAND` 명령 ID를 포함하는 `ID_EDIT_FIND_COMBO` 메시지를 주 프레임 창에 게시합니다.
+1. `CFindComboBox` 클래스에서 `PreTranslateMessage` 가상 메서드를 재정의합니다. 이 메서드를 처리 하는 데 콤보 상자를 통해 합니다 [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) 메시지입니다. 사용자가 Esc 키를 누르면(`VK_ESCAPE`) 주 프레임 창으로 포커스를 반환합니다. 사용자가 Enter 키를 누르면(`VK_ENTER`) `WM_COMMAND` 명령 ID를 포함하는 `ID_EDIT_FIND_COMBO` 메시지를 주 프레임 창에 게시합니다.
 
-1. 클래스를 만듭니다는 **찾을** 에서 파생 되는 콤보 상자 단추 [CMFCToolBarComboBoxButton 클래스](../mfc/reference/cmfctoolbarcomboboxbutton-class.md)합니다. 이 예제에서는 라는 `CFindComboButton`합니다.
+1. 클래스를 만듭니다는 **찾을** 에서 파생 되는 콤보 상자 단추 [CMFCToolBarComboBoxButton 클래스](../mfc/reference/cmfctoolbarcomboboxbutton-class.md)합니다. 이 예제에서는 `CFindComboButton`라는 이름으로 지정됩니다.
 
-1. 
-  `CMFCToolbarComboBoxButton`의 생성자에는 세 개의 매개 변수(단추의 명령 ID, 단추 이미지 인덱스 및 콤보 상자의 스타일)가 있습니다. 이러한 매개 변수를 다음과 같이 설정합니다.
+1. `CMFCToolbarComboBoxButton`의 생성자에는 세 개의 매개 변수(단추의 명령 ID, 단추 이미지 인덱스 및 콤보 상자의 스타일)가 있습니다. 이러한 매개 변수를 다음과 같이 설정합니다.
 
-   1. 
-  `ID_EDIT_FIND_COMBO`를 명령 ID로 전달합니다.
+   1. `ID_EDIT_FIND_COMBO`를 명령 ID로 전달합니다.
 
    1. 사용 하 여 [CCommandManager::GetCmdImage](reference/internal-classes.md) 사용 하 여 `ID_EDIT_FIND` 이미지 인덱스를 가져오려고 합니다.
 
    1. 사용 가능한 콤보 상자 스타일의 목록은 참조 하세요 [콤보 상자 스타일](../mfc/reference/styles-used-by-mfc.md#combo-box-styles)합니다.
 
-1. 
-  `CFindComboButton` 클래스에서 `CMFCToolbarComboBoxButton::CreateCombo` 메서드를 재정의합니다. 여기서 `CFindComboButton` 개체를 만들고 해당 개체에 대한 포인터를 반환해야 합니다.
+1. `CFindComboButton` 클래스에서 `CMFCToolbarComboBoxButton::CreateCombo` 메서드를 재정의합니다. 여기서 `CFindComboButton` 개체를 만들고 해당 개체에 대한 포인터를 반환해야 합니다.
 
 1. 사용 합니다 [IMPLEMENT_SERIAL](../mfc/reference/run-time-object-model-services.md#implement_serial) 매크로를 콤보 단추를 지속 되도록 할 것입니다. 작업 영역 관리자가 Windows 레지스트리에서 단추의 상태를 자동으로 로드 및 저장합니다.
 
@@ -99,8 +92,7 @@ ms.locfileid: "57291391"
 1. 에 `AFX_WM_RESETTOOLBAR` 처리기를 도구 모음 ID를 검사 하는, *WPARAM* AFX_WM_RESETTOOLBAR 메시지입니다. 도구 모음 ID를 포함 하는 도구 모음과 동일한 경우는 **찾을** 콤보 상자 단추, 호출 [CMFCToolBar::ReplaceButton](../mfc/reference/cmfctoolbar-class.md#replacebutton) 바꾸려면 합니다 **찾을** 단추 (즉,는 명령 ID 사용 하 여 단추 `ID_EDIT_FIND)` 사용 하 여를 `CFindComboButton` 개체입니다.
 
     > [!NOTE]
-    > 
-  `CFindComboBox`이 단추 개체를 복사하고 복사본을 유지하므로 스택에서 `ReplaceButton`를 생성할 수 있습니다.
+    > `CFindComboBox`이 단추 개체를 복사하고 복사본을 유지하므로 스택에서 `ReplaceButton`를 생성할 수 있습니다.
 
 ### <a name="adding-the-find-control-to-the-customize-dialog-box"></a>사용자 지정 대화 상자에 찾기 컨트롤 추가
 

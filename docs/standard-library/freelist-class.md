@@ -11,11 +11,11 @@ helpviewer_keywords:
 - stdext::freelist [C++], push
 ms.assetid: 8ad7e35c-4c80-4479-8ede-1a2497b06d71
 ms.openlocfilehash: ef1f2e617e93869a1084dc030c6496c819f1ed96
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159394"
 ---
 # <a name="freelist-class"></a>freelist 클래스
 
@@ -32,7 +32,7 @@ class freelist : public Max
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*sz*|할당할 배열의 요소 수입니다.|
+|*Sz*|할당할 배열의 요소 수입니다.|
 |*Max*|사용 가능 목록에 저장할 최대 요소 수를 나타내는 최대 클래스입니다. 최대 클래스는 [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md) 또는 [max_variable_size](../standard-library/max-variable-size-class.md)가 될 수 있습니다.|
 
 ## <a name="remarks"></a>설명

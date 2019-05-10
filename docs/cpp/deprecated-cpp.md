@@ -8,15 +8,15 @@ helpviewer_keywords:
 - deprecated __declspec keyword
 ms.assetid: beef1129-9434-4cb3-8392-f1eb29e04805
 ms.openlocfilehash: 34f9c10cd898b0359463d5933141822576fa4a11
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62398955"
 ---
 # <a name="deprecated-c"></a>사용되지 않음 (C++)
 
-이 항목에서는 Microsoft 전용에 대해 declspec 선언은 사용 되지 않습니다. C + + 14에 대 한 자세한 `[[deprecated]]` 특성 및 해당 특성 및 Microsoft 전용 declspec 또는 pragma를 사용 하는 경우에 대 한 지침 참조 [c + + 표준 특성](attributes.md)합니다.
+이 항목에서는 Microsoft 전용에 대해 declspec 선언은 사용 되지 않습니다. C + + 14에 대 한 자세한 `[[deprecated]]` 특성 및 해당 특성 및 Microsoft 전용 declspec 또는 pragma를 사용 하는 경우에 대 한 지침 참조 [ C++ 표준 특성](attributes.md)합니다.
 
 아래 설명 된 예외를 사용 하 여는 **더 이상 사용 되지** 선언으로 동일한 기능을 제공 합니다 [사용 되지 않는](../preprocessor/deprecated-c-cpp.md) pragma:
 

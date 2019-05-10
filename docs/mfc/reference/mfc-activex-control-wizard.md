@@ -10,12 +10,12 @@ helpviewer_keywords:
 - MFC ActiveX Control Wizard
 - OLE controls [MFC]
 ms.assetid: f19d698c-bdc3-4c74-af97-3d6ccb441b75
-ms.openlocfilehash: cec4c3aa6aedfa7a1f8234c6cc2355970d453f56
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 3341f840c46584c4e45afe3607c83433976e6c37
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822680"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217640"
 ---
 # <a name="mfc-activex-control-wizard"></a>MFC ActiveX 컨트롤 마법사
 
@@ -32,7 +32,7 @@ ActiveX 컨트롤에는 복잡 한 사용자 인터페이스를 사용할 수 �
 
 ActiveX 개체에 대 한 컨테이너를 만들어야 하는 경우 참조 [ActiveX 컨트롤 컨테이너를 만들려면](../../mfc/reference/creating-an-mfc-activex-control-container.md)합니다.
 
-MFC 스타터 프로그램에는 c + + 소스 (.cpp) 파일, 리소스 (.rc) 파일 및 프로젝트 (.vcxproj) 파일을 포함합니다. 이 기초 파일에서 생성 된 코드는 MFC를 기반으로 합니다.
+MFC 스타터 프로그램에 포함 된 C++ 소스 파일 (.cpp), 리소스 (.rc) 파일 및 프로젝트 (.vcxproj) 파일입니다. 이 기초 파일에서 생성 된 코드는 MFC를 기반으로 합니다.
 
 다음 샘플은 태스크 및 ActiveX 컨트롤에 대 한 향상 된 기능 유형을 보여 줍니다.
 
@@ -64,6 +64,6 @@ MFC 스타터 프로그램에는 c + + 소스 (.cpp) 파일, 리소스 (.rc) 파
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트 만들기 및 관리](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
-[Visual C++ 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
+[C++-Visual Studio 프로젝트](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[C++Visual Studio에서 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
 [개념](../../atl/active-template-library-atl-concepts.md)

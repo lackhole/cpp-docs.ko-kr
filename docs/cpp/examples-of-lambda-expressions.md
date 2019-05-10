@@ -1,15 +1,15 @@
 ---
 title: 람다 식의 예
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], examples
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
-ms.openlocfilehash: 6854c5710d8a27093078c0f2013d691ac22c5870
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: f9f2c3e014e44c9f6a9ce10dd8388a1578ba3987
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663955"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222096"
 ---
 # <a name="examples-of-lambda-expressions"></a>람다 식의 예
 
@@ -61,7 +61,7 @@ int main()
 
 ### <a name="example-2"></a>예제 2
 
-식을 호출할 때 대신 식을 선언할 때 Visual C++ 컴파일러는 캡처된 변수에 람다 식을 바인딩합니다. 다음 예제에서는 변수 지역 변수 `i`값과 참조로서 변수 `j`를 캡처하는 람다 식을 보여 줍니다. 람다 식은 `i`를 값으로 캡처하기 때문에 프로그램에서 `i` 이상을 다시 할당하면 식의 결과에 영향을 주지 않습니다. 그러나 람다 식을 `j`를 참조로 캡처하기 때문에 `j`를 다시 할당하면 식의 결과에 영향을 주지 않습니다.
+Microsoft C++ 식을 호출할 때 대신 식을 선언할 때 컴파일러는 캡처된 변수에 람다 식을 바인딩합니다. 다음 예제에서는 변수 지역 변수 `i`값과 참조로서 변수 `j`를 캡처하는 람다 식을 보여 줍니다. 람다 식은 `i`를 값으로 캡처하기 때문에 프로그램에서 `i` 이상을 다시 할당하면 식의 결과에 영향을 주지 않습니다. 그러나 람다 식을 `j`를 참조로 캡처하기 때문에 `j`를 다시 할당하면 식의 결과에 영향을 주지 않습니다.
 
 ### <a name="code"></a>코드
 
@@ -101,7 +101,7 @@ int main()
 
 ##  <a name="callingLambdaExpressions"></a> 람다 식 호출
 
-다음 코드 조각과 같이 람다 식을 즉시 호출할 수 있습니다. 두 번째 조각은 람다를 인수로 전달 c + + 표준 라이브러리 알고리즘 같은 방법을 보여 줍니다 `find_if`합니다.
+다음 코드 조각과 같이 람다 식을 즉시 호출할 수 있습니다. 두 번째 조각은 람다에 인수로 전달 하는 방법을 보여 줍니다 C++ 와 같은 표준 라이브러리 알고리즘 `find_if`합니다.
 
 ### <a name="example-1"></a>예제 1
 
@@ -175,7 +175,7 @@ The first even number in the list is 42.
 
 ### <a name="remarks"></a>설명
 
-에 대 한 자세한 내용은 합니다 `find_if` 함수를 참조 하세요 [find_if](../standard-library/algorithm-functions.md#find_if)합니다. 공용 알고리즘을 수행 하는 c + + 표준 라이브러리 함수에 대 한 자세한 내용은 참조 하세요. [ \<알고리즘 >](../standard-library/algorithm.md)합니다.
+에 대 한 자세한 내용은 합니다 `find_if` 함수를 참조 하세요 [find_if](../standard-library/algorithm-functions.md#find_if)합니다. 에 대 한 자세한 내용은 C++ 공용 알고리즘을 수행 하는 표준 라이브러리 함수를 참조 하세요 [ \<알고리즘 >](../standard-library/algorithm.md)합니다.
 
 [[이 문서의 내용](#top)]
 
@@ -221,7 +221,7 @@ int main()
 
 ### <a name="example"></a>예제
 
-대부분의 프로그래밍 언어의 개념을 지원 한 *고차 함수입니다.* 고차 함수는 람다 식으로, 다른 람다 식을 인수로 취하거나 람다 식을 반환합니다. 사용할 수는 [함수](../standard-library/function-class.md) 클래스를 사용 하는 동작에 c + + 람다 식을 같은 고차 함수입니다. 다음 예제에서는 `function` 개체를 반환하는 람다 식과 인수로서 `function` 개체를 취하는 람다 식을 보여 줍니다.
+대부분의 프로그래밍 언어의 개념을 지원 한 *고차 함수입니다.* 고차 함수는 람다 식으로, 다른 람다 식을 인수로 취하거나 람다 식을 반환합니다. 사용할 수는 [함수](../standard-library/function-class.md) 클래스를 사용 하는 C++ 동작에 람다 식을 같은 고차 함수입니다. 다음 예제에서는 `function` 개체를 반환하는 람다 식과 인수로서 `function` 개체를 취하는 람다 식을 보여 줍니다.
 
 ### <a name="code"></a>코드
 
@@ -271,7 +271,7 @@ int main()
 ### <a name="example"></a>예제
 
 함수의 본문에서 람다 식을 사용할 수 있습니다. 람다 식은 바깥쪽 함수에서 액세스할 수 있는 모든 함수 또는 데이터 멤버에 액세스할 수 있습니다. 명시적 또는 암시적으로 캡처할 수는 **이** 포인터 바깥쪽 클래스의 함수 및 데이터 멤버에 대 한 액세스를 제공 합니다.
-**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 캡처 **이** 값별로 (`[*this]`) 비동기 또는 병렬 작업에서 람다를 사용 하는 경우 후 코드를 실행할 수 있습니다 하는 경우 원래 개체 범위를 벗어납니다.
+**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 캡처 **이렇게** 값별로 (`[*this]`) 람다를 사용할 경우 비동기 또는 병렬 작업의 원본 개체 범위를 벗어난 후 코드를 실행할 수 있습니다 위치 합니다.
 
 사용할 수는 **이** 포인터를 함수를 다음과 같이 명시적으로:
 
@@ -419,7 +419,7 @@ After negate_all():
 
 ### <a name="remarks"></a>설명
 
-C + + 템플릿에 대 한 자세한 내용은 참조 하십시오 [템플릿](../cpp/templates-cpp.md)합니다.
+에 대 한 자세한 내용은 C++ 을 참조 하십시오 [템플릿](../cpp/templates-cpp.md)합니다.
 
 [[이 문서의 내용](#top)]
 
@@ -427,7 +427,7 @@ C + + 템플릿에 대 한 자세한 내용은 참조 하십시오 [템플릿](.
 
 ### <a name="example"></a>예제
 
-람다 수식의 본문은 SEH(구조적 예외 처리)와 C++ 예외 처리에 대한 규칙을 따릅니다. 람다 식의 본문에는 양각된 예외를 처리하거나 예외 처리를 포함하는 범위를 지연시킬 수 있습니다. 다음 예제에서는 합니다 **for_each** 함수 및 람다 식을 입력을 `vector` 다른 값을 사용 하 여 개체입니다. 사용 된 **시도**/**catch** 첫 번째 벡터에 대 한 잘못 된 액세스를 처리 하는 블록입니다.
+람다 식의 본문은 SEH(구조적 예외 처리)와 C++ 예외 처리에 대한 규칙을 따릅니다. 람다 식의 본문에는 양각된 예외를 처리하거나 예외 처리를 포함하는 범위를 지연시킬 수 있습니다. 다음 예제에서는 합니다 **for_each** 함수 및 람다 식을 입력을 `vector` 다른 값을 사용 하 여 개체입니다. 사용 된 **시도**/**catch** 첫 번째 벡터에 대 한 잘못 된 액세스를 처리 하는 블록입니다.
 
 ### <a name="code"></a>코드
 
@@ -479,7 +479,7 @@ Caught 'invalid vector<T> subscript'.
 
 [[이 문서의 내용](#top)]
 
-##  <a name="managedLambdaExpressions"></a> 사용 하 여 람다 식을 사용 하 여 관리 되는 형식 (C + + /cli CLI)
+##  <a name="managedLambdaExpressions"></a> 관리 되는 형식으로 람다 식을 사용 하 여 (C++/CLI)
 
 ### <a name="example"></a>예제
 

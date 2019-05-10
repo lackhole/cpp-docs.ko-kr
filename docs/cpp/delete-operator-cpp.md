@@ -9,11 +9,11 @@ helpviewer_keywords:
 - delete keyword [C++]
 ms.assetid: de39c900-3f57-489c-9598-dcb73c4b3930
 ms.openlocfilehash: 5e4f5685ea1bb8cd7c405373ba774fe36af08672
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62398968"
 ---
 # <a name="delete-operator-c"></a>delete 연산자 (C++)
 
@@ -48,7 +48,7 @@ delete [] set;
 
 사용 하는 **삭제** 개체에 연산자의 메모리 할당을 취소 합니다. 개체가 삭제된 후에 포인터를 역참조하는 프로그램에서는 예기치 않은 결과나 충돌이 발생할 수 있습니다.
 
-때 **삭제** 는 c + + 클래스 개체에 대 한 메모리 할당을 취소 하는 데, 개체의 소멸자가 되기 전에 호출 됩니다 (개체에 소멸자가) 하는 경우 해당 개체의 메모리 할당이 취소 됩니다.
+때 **삭제할** 에 대 한 메모리 할당을 취소 하는 데 사용 되는 C++ 클래스 개체를 개체의 소멸자 (개체에 소멸자가) 하는 경우 개체의 메모리 할당이 취소 되기 전에 호출 됩니다.
 
 경우에 있는 피연산자는 **삭제** 연산자는 수정 가능한 l-value 이면 개체가 삭제 된 후에 해당 값이 정의 되지 않습니다.
 
@@ -95,5 +95,5 @@ int main()
 ## <a name="see-also"></a>참고자료
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [new 및 delete 연산자](../cpp/new-and-delete-operators.md)

@@ -8,11 +8,11 @@ helpviewer_keywords:
 - wizards [MFC]
 ms.assetid: ad3b0989-d307-43b2-9417-3f9a78889024
 ms.openlocfilehash: fa9b947ae6fc0e48aaecde61e35a5f4152c85f27
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412737"
 ---
 # <a name="mfc-add-class-wizard"></a>MFC 클래스 추가 마법사
 
@@ -24,7 +24,7 @@ ms.locfileid: "57304095"
 
 - **클래스 이름**
 
-  새 클래스의 이름을 지정 하 고 기본 기반 Id 및이 페이지에 있는 파일의 이름을 제공 합니다. 일반적으로 c + + 클래스 예를 들어 "CMyClass"가 "MyClass.h", "C"로 시작 합니다.
+  새 클래스의 이름을 지정 하 고 기본 기반 Id 및이 페이지에 있는 파일의 이름을 제공 합니다. C++일반적으로 클래스 예를 들어 "CMyClass"가 "MyClass.h", "C"로 시작 합니다.
 
 - **기본 클래스**
 

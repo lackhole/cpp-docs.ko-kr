@@ -7,12 +7,12 @@ helpviewer_keywords:
 - nochkclr.obj
 - LNK2019
 - _check_commonlanguageruntime_version
-ms.openlocfilehash: af40a48e36d316842ec9a744ad95d6c3b3af3731
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ef0bfd565b8c76816cc1f8a20b1521da238cdfc
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555599"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447713"
 ---
 # <a name="linker-tools-error-lnk2019"></a>링커 도구 오류 LNK2019
 
@@ -48,9 +48,9 @@ Visual Studio에서 정의가 포함 된 소스 파일 작성 및 프로젝트�
 
 호출 규칙([__cdecl](../../cpp/cdecl.md), [__stdcall](../../cpp/stdcall.md), [__fastcall](../../cpp/fastcall.md)또는 [__vectorcall](../../cpp/vectorcall.md))은 트데코레이된 이름의 일부로써 인코딩됩니다. 호출 규칙이 동일한지 확인하세요.
 
-### <a name="a-symbol-is-defined-in-a-c-file-but-declared-without-using-extern-c-in-a-c-file"></a>기호가 C 파일에 정의 되어 있지만 c + + 파일에서 extern "C"를 사용 하지 않고 선언
+### <a name="a-symbol-is-defined-in-a-c-file-but-declared-without-using-extern-c-in-a-c-file"></a>기호가 C 파일에 정의 되어 있지만에서 extern "C"를 사용 하지 않고 선언 된 C++ 파일
 
-[extern "C"](../../cpp/using-extern-to-specify-linkage.md) 한정자를 사용하는 경우를 제외하고, C로 컴파일된 파일에 정의된 기호에 C++ 파일에 선언된 기호와 다른 트데코레이된 이름이 있습니다. 선언이 각 기호의 컴파일 링크와 일치하는지 확인하세요. 마찬가지로, C 프로그램에서 사용할 기호를 C++ 파일에서 정의하는 경우 정의에 `extern "C"` 을 사용하세요.
+ [extern "C"](../../cpp/using-extern-to-specify-linkage.md) 한정자를 사용하는 경우를 제외하고, C로 컴파일된 파일에 정의된 기호에 C++ 파일에 선언된 기호와 다른 트데코레이된 이름이 있습니다. 선언이 각 기호의 컴파일 링크와 일치하는지 확인하세요. 마찬가지로, C 프로그램에서 사용할 기호를 C++ 파일에서 정의하는 경우 정의에 `extern "C"` 을 사용하세요.
 
 ### <a name="a-symbol-is-defined-as-static-and-then-later-referenced-outside-the-file"></a>기호를 static으로 정의 되 고 후 나중에 파일 외부 참조
 
@@ -86,11 +86,11 @@ Visual Studio의 이전 버전에서는이 수준의 종속성만 있어도 충�
 
 ### <a name="you-mix-code-that-uses-native-wchart-with-code-that-doesnt"></a>네이티브 wchar를 사용 하는 코드를 혼합\_하지 않은 코드를 사용 하 여 t
 
-Visual C++ 2005에서 수행된 C++ 언어 규칙 작업은 `wchar_t` 를 기본적으로 네이티브 형식으로 만듭니다. 이전 버전의 Visual C++를 사용하여 컴파일된 라이브러리 및 개체 파일과 호환되는 코드를 생성하려면 [/Zc:wchar_t-](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 컴파일러 옵션을 사용해야 합니다. 일부 파일이 동일한를 사용 하 여 컴파일되지 않은 경우 **/Zc:wchar\_t** 설정, 형식 참조가 호환 되는 형식으로 확인 되지 않을 수 있습니다. 사용된 형식을 업데이트하거나 컴파일할 때 일관된 `wchar_t` 설정을 사용하여 모든 라이브러리 및 개체 파일의 **/Zc:wchar_t** 형식이 호환되는지 확인하세요.
+C++Visual Studio 2005에서 수행 된 언어 규칙 작업 `wchar_t` 기본적으로 네이티브 형식입니다. 사용 해야 합니다 [/zc: wchar_t-](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 컴파일러 옵션을 이전 버전의 Visual Studio를 사용 하 여 컴파일된 라이브러리 및 개체 파일과 호환 되는 코드를 생성 합니다. 일부 파일이 동일한를 사용 하 여 컴파일되지 않은 경우 **/Zc:wchar\_t** 설정, 형식 참조가 호환 되는 형식으로 확인 되지 않을 수 있습니다. 사용된 형식을 업데이트하거나 컴파일할 때 일관된 `wchar_t` 설정을 사용하여 모든 라이브러리 및 개체 파일의 **/Zc:wchar_t** 형식이 호환되는지 확인하세요.
 
 ## <a name="third-party-library-issues-and-vcpkg"></a>Vcpkg 및 타사 라이브러리 문제
 
-빌드의 일부로 타사 라이브러리를 구성 하려는 경우이 오류를 표시 하는 경우 사용을 고려 [Vcpkg](../../vcpkg.md), Visual c + + 패키지 관리자를 설치 하 여 라이브러리를 빌드합니다. Vcpkg 지 원하는 점점 [타사 라이브러리의 목록](https://github.com/Microsoft/vcpkg/tree/master/ports), 모든 구성 속성 및 프로젝트의 일환으로 빌드가 성공한 경우에 필요한 종속성을 가져오거나 설정 합니다. 자세한 내용은 참조는 관련 [Visual c + + 블로그](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) 게시 합니다.
+빌드의 일부로 타사 라이브러리를 구성 하려는 경우이 오류를 표시 하는 경우 사용을 고려 [Vcpkg](../../vcpkg.md), 시각적 개체 C++ 패키지 관리자를 설치 하 여 라이브러리를 빌드합니다. Vcpkg 지 원하는 점점 [타사 라이브러리의 목록](https://github.com/Microsoft/vcpkg/tree/master/ports), 모든 구성 속성 및 프로젝트의 일환으로 빌드가 성공한 경우에 필요한 종속성을 가져오거나 설정 합니다. 자세한 내용은 참조는 관련 [시각적 C++ 블로그](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) 게시 합니다.
 
 ## <a name="diagnosis-tools"></a>진단 도구
 

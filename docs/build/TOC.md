@@ -46,7 +46,6 @@
 #### [pgomgr](pgomgr.md)
 #### [pgosweep](pgosweep.md)
 #### [방법: 여러 개의 PGO 프로필을 단일 프로필로 병합](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
-#### [성능 및 진단 허브의 Visual Studio 2013 PGO 추가 기능](profile-guided-optimization-in-the-performance-and-diagnostics-hub.md)
 # [명령줄에서 MSVC 도구 집합 사용](building-on-the-command-line.md)
 ## [연습: 명령줄에서 네이티브 C++ 프로그램 컴파일](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)
 ## [연습: 명령줄에서 C 프로그램 컴파일](walkthrough-compile-a-c-program-on-the-command-line.md)

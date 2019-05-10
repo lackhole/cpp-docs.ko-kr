@@ -1,4 +1,4 @@
-﻿---
+---
 title: 속성 (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,11 +8,11 @@ helpviewer_keywords:
 - __declspec keyword [C++], property
 ms.assetid: f3b850ba-bf48-4df7-a1d6-8259d97309ce
 ms.openlocfilehash: ece1016b7a18873dfa477b0f8b6ae4271a0f8001
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301489"
 ---
 # <a name="property-c"></a>속성 (C++)
 
@@ -30,7 +30,7 @@ ms.locfileid: "50616998"
 
 ## <a name="remarks"></a>설명
 
-컴파일러가 멤버 선택 연산자("." 또는 "->")의 오른쪽에서 이 특성을 사용하여 선언된 데이터 멤버를 확인하면 해당 식이 I-value인지 아니면 r-value인지에 따라 **get** 또는 **put** 함수로 연산을 변환합니다. "`+=`"와 같은 보다 복잡한 컨텍스트에서는 **get** 및 **put**을 둘 다 수행하여 다시 작성됩니다.
+컴파일러는 멤버 선택 연산자의 오른쪽에이 특성으로 선언 된 데이터 멤버를 확인 하는 경우 ("**.**" or "**->**")를 변환 하는 작업을 `get` 또는 `put` 함수를 이러한 식은 l-value 또는 r-value 인지에 따라 합니다. "`+=`"와 같은 보다 복잡한 컨텍스트에서는 `get` 및 `put` 을 둘 다 수행하여 다시 작성됩니다.
 
 이 특성은 클래스 또는 구조체 정의에 있는 빈 배열의 선언에서도 사용할 수 있습니다. 예를 들면 다음과 같습니다.
 
@@ -69,4 +69,4 @@ int main() {
 ## <a name="see-also"></a>참고 항목
 
 [__declspec](../cpp/declspec.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)

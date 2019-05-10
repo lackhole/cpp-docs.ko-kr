@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Concurrency Runtime, walkthroughs
 ms.assetid: 7374c5e9-54eb-44bf-9ed9-5e190cfd290b
 ms.openlocfilehash: d176049bb3b03ae0f55170e45e20e7c2c0e322ff
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62296496"
 ---
 # <a name="concurrency-runtime-walkthroughs"></a>동시성 런타임 연습
 
 이 섹션의 시나리오 기반 항목에는 다양 한 동시성 런타임의 기능을 사용 하는 방법을 보여 줍니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [연습: 작업 및 XML HTTP 요청을 사용하여 연결](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
 [IXMLHTTPRequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) 및 [IXMLHTTPRequest2Callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) 인터페이스를 작업과 함께 사용하여 HTTP GET 및 POST 요청을 유니버설 Windows 플랫폼(UWP) 앱의 웹 서비스에 보내는 방법을 살펴봅니다.

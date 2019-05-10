@@ -7,11 +7,11 @@ helpviewer_keywords:
 - IF directive
 ms.assetid: 82e43712-4f0c-4bf6-90ce-0663e81af707
 ms.openlocfilehash: 2b91698640e028bf91d822c12b85ded651a04d8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62203066"
 ---
 # <a name="if-masm"></a>IF (MASM)
 
@@ -23,13 +23,13 @@ ms.locfileid: "50555790"
 > *ifstatements*<br/>
 > [[ELSEIF *expression2*<br/>
 > *elseifstatements*]]<br/>
-> [[다른<br/>
+> [[ELSE<br/>
 > *elsestatements*]]<br/>
 > ENDIF
 
 ## <a name="remarks"></a>설명
 
-다음 지시문 대신 사용할 수 있습니다 [ELSEIF](../../assembler/masm/elseif-masm.md): **ELSEIFB**, **ELSEIFDEF**하십시오 **ELSEIFDIF**, **ELSEIFDIFI** , **ELSEIFE**를 **ELSEIFIDN**를 **ELSEIFIDNI**를 **ELSEIFNB**, 및 **ELSEIFNDEF** . 필요에 따라 조합 *elsestatements* 이전 식이 false 인 경우. 어셈블리 타임 식 계산 되는 참고 합니다.
+다음 지시문 대신 사용할 수 있습니다 [ELSEIF](../../assembler/masm/elseif-masm.md): **ELSEIFB**, **ELSEIFDEF**를 **ELSEIFDIF**를 **ELSEIFDIFI**를 **ELSEIFE**, **ELSEIFIDN**하십시오 **ELSEIFIDNI**, **ELSEIFNB**, 및 **ELSEIFNDEF**. 필요에 따라 조합 *elsestatements* 이전 식이 false 인 경우. 어셈블리 타임 식 계산 되는 참고 합니다.
 
 ## <a name="see-also"></a>참고자료
 

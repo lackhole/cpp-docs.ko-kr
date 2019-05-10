@@ -27,11 +27,11 @@ helpviewer_keywords:
 - _controlfp_s function
 ms.assetid: a51fc3f6-ab13-41f0-b227-6bf02d98e987
 ms.openlocfilehash: 0624cbfb4870ca87efebac01a8de682b588a4ca3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335385"
 ---
 # <a name="controlfps"></a>_controlfp_s
 
@@ -55,7 +55,7 @@ errno_t _controlfp_s(
 *newControl*<br/>
 새 제어 단어 비트 값입니다.
 
-*마스크*<br/>
+*mask*<br/>
 설정할 새 제어 단어 비트의 마스크입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -68,7 +68,7 @@ errno_t _controlfp_s(
 
 경우에 대 한 값 *마스크* 는 0과 같지 **_controlfp_s** 부동 소수점 제어 단어를 가져와에서 검색된 된 값 *currentControl*합니다.
 
-경우 *마스크* 는 0이 아닌 경우 새 제어 단어 값 설정 되어: 설정 되어 있는 모든 비트 (즉, 1과 같음)의 *마스크*의 해당 비트가 *새* 컨트롤을 업데이트 하는 데 사용 됩니다 단어입니다. 다시 말해 *fpcntrl* = ((*fpcntrl* & ~*마스크*) &#124; (*newControl* & *마스크* )) 여기서 *fpcntrl* 부동 소수점 제어 단어입니다. 이 시나리오에서는 *currentControl* 후 값으로 설정 된 경우 변경이 완료 된; 이전 제어 단어 비트 값이 아닙니다.
+하는 경우 *마스크* 는 0이 아닌 경우 새 제어 단어 값 설정 됩니다. 모든 비트는 설정 됩니다 (즉, 1과 같음)에서 *마스크*에서의 해당 비트가 *새* 제어 단어를 업데이트 하는 데 사용 됩니다. 다시 말해 *fpcntrl* = ((*fpcntrl* & ~*마스크*) &#124; (*newControl* & *마스크* )) 여기서 *fpcntrl* 부동 소수점 제어 단어입니다. 이 시나리오에서는 *currentControl* 후 값으로 설정 된 경우 변경이 완료 된; 이전 제어 단어 비트 값이 아닙니다.
 
 > [!NOTE]
 > 기본적으로 런타임 라이브러리는 모든 부동 소수점 예외를 마스킹합니다.

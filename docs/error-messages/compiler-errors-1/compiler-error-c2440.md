@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2440
 ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
-ms.openlocfilehash: c85a8284c91037e981f0d1ea82507b49be8121a3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 8de433361901b5d247616c154afc48d637373d43
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59777137"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448035"
 ---
 # <a name="compiler-error-c2440"></a>컴파일러 오류 C2440
 
@@ -194,7 +194,7 @@ C2440은 특성 기능이 변경 내용으로 인해 발생할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-시각적 개체 C++ 컴파일러는 더 이상 허용 합니다 [const_cast 연산자](../../cpp/const-cast-operator.md) 다운 캐스트가 경우 소스 코드를 사용 하는 **/clr** 프로그래밍 컴파일됩니다.
+Microsoft C++ 컴파일러는 더 이상 허용 합니다 [const_cast 연산자](../../cpp/const-cast-operator.md) 다운 캐스트가 경우 소스 코드를 사용 하는 **/clr** 프로그래밍 컴파일됩니다.
 
 이 C2440을 해결 하려면 올바른 캐스트 연산자를 사용 합니다. 자세한 내용은 [캐스팅 연산자](../../cpp/casting-operators.md)합니다.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2653
 ms.assetid: 3f49e731-affd-43a0-a8d0-181db7650bc3
-ms.openlocfilehash: d4a3a8a74483317b87e16458f44016f0aeca1379
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2882764e1c0a84634c500d920f327fbebc4b19a9
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471151"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447946"
 ---
 # <a name="compiler-error-c2653"></a>컴파일러 오류 C2653
 
@@ -21,7 +21,7 @@ ms.locfileid: "50471151"
 
 이 오류는 클래스, 구조체, 공용 구조체 또는 범위 연산자 앞에 네임 스페이스 선언 되지 않은 이름을 사용 하는 경우에 발생할 수 있습니다. 이 문제를 해결 하려면 이름을 선언 또는 사용 하기 전에 이름을 선언 하는 헤더를 포함 합니다.
 
-C2653 가능 정의 하려는 경우는 *복합 네임 스페이스*, 하나 이상의 범위를 중첩 된 네임 스페이스 이름이 포함 된 네임 스페이스입니다. 복합 네임 스페이스 정의 c++17 이전 c + +에서 사용할 수 없습니다. 복합 네임 스페이스 지정 하는 경우 Visual Studio 2015 업데이트 3부터 지원 합니다 [/std: c + + 최신](../../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션입니다. Visual c + + 2017 버전 15.5부터 컴파일러가 지 원하는 복합 네임 스페이스 정의 경우 합니다 [/std: c + + 17](../../build/reference/std-specify-language-standard-version.md) 옵션을 지정 합니다.
+C2653 가능 정의 하려는 경우는 *복합 네임 스페이스*, 하나 이상의 범위를 중첩 된 네임 스페이스 이름이 포함 된 네임 스페이스입니다. 복합 네임 스페이스 정의에서 허용 되지 않습니다 C++ c++17 이전 합니다. 복합 네임 스페이스 지정 하는 경우 Visual Studio 2015 업데이트 3부터 지원 합니다 [/std: c + + 최신](../../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션입니다. Visual Studio 2017 버전 15.5부터 컴파일러가 지 원하는 복합 네임 스페이스 정의 경우 합니다 [/std: c + + 17](../../build/reference/std-specify-language-standard-version.md) 옵션을 지정 합니다.
 
 ## <a name="examples"></a>예제
 
@@ -42,7 +42,7 @@ void yy::func1(int m) {}   // OK
 
 ```cpp
 // C2653b.cpp
-namespace a::b {int i;}   // C2653 prior to Visual C++ 2015 Update 3,
+namespace a::b {int i;}   // C2653 prior to Visual Studio 2015 Update 3,
                           // C2429 thereafter. Use /std:c++17 or /std:c++latest to fix.
 
 namespace a {             // Use this form for compliant code under /std:c++14 (the default)

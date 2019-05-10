@@ -39,11 +39,11 @@ helpviewer_keywords:
 - std::tan [C++]
 - std::tanh [C++]
 ms.openlocfilehash: c4e5873e9a511311d2c49b34791df82038fe9f9b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62365186"
 ---
 # <a name="ltvalarraygt-functions"></a>&lt;valarray&gt; 함수
 
@@ -1210,7 +1210,7 @@ valarray<Type> tanh(const valarray<Type>& left);
 
 지수 함수로 쌍곡선 탄젠트를 정의하는 ID입니다.
 
-tanh ( *z* ) = sinh ( *z* ) cosh / ( *z* ) = (exp ( *z* )-exp (- *z* )) / (exp ( *z* ) + exp (- *z* ))
+tanh ( *z* ) = sinh ( *z* ) / cosh ( *z* ) = ( exp ( *z* ) - exp ( - *z* ) ) / ( exp ( *z* ) + exp ( - *z* ) )
 
 ### <a name="example"></a>예제
 

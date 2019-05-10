@@ -14,16 +14,15 @@ helpviewer_keywords:
 - call class
 ms.assetid: 1521970a-1e9c-4b0c-a681-d18e40976f49
 ms.openlocfilehash: 9651a74fdb07ad96d6f01edb6818ea48d697c37c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337910"
 ---
 # <a name="call-class"></a>call 클래스
 
-
-  `call` 메시징 블록은 메시지를 받을 때 지정된 함수를 호출하는 순서가 지정된 다중 소스 `target_block`입니다.
+`call` 메시징 블록은 메시지를 받을 때 지정된 함수를 호출하는 순서가 지정된 다중 소스 `target_block`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -57,8 +56,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 |[process_message](#process_message)|이 허용 된 메시지를 처리 `call` 메시징 블록입니다.|
 |[propagate_message](#propagate_message)|메시지를 비동기적으로 전달 된 `ISource` 이 블록 `call` 메시징 블록입니다. 호출한는 `propagate` 메서드의 소스 블록에서 호출 하는 경우.|
 |[send_message](#send_message)|메시지를 동기적으로 전달 된 `ISource` 이 블록 `call` 메시징 블록입니다. 호출한는 `send` 메서드의 소스 블록에서 호출 하는 경우.|
-|[supports_anonymous_source](#supports_anonymous_source)|
-  `supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다. (재정의 [itarget:: Supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
+|[supports_anonymous_source](#supports_anonymous_source)|`supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다. (재정의 [itarget:: Supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
 
 ## <a name="remarks"></a>설명
 
@@ -178,8 +176,7 @@ virtual message_status propagate_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-
-  `message` 개체에 대한 포인터입니다.
+`message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -201,8 +198,7 @@ virtual message_status send_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-
-  `message` 개체에 대한 포인터입니다.
+`message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -213,8 +209,7 @@ A [message_status](concurrency-namespace-enums.md) 메시지와 함께 수행 �
 
 ##  <a name="supports_anonymous_source"></a> supports_anonymous_source
 
-
-  `supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다.
+`supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다.
 
 ```
 virtual bool supports_anonymous_source();

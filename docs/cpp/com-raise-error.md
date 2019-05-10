@@ -7,11 +7,11 @@ helpviewer_keywords:
 - _com_raise_error function
 ms.assetid: a98226c2-c3fe-44f1-8ff5-85863de11cd6
 ms.openlocfilehash: 5790fceef26d6de4edff604270cc7108f764aced
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50627567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399254"
 ---
 # <a name="comraiseerror"></a>_com_raise_error
 
@@ -56,7 +56,7 @@ void __stdcall _com_raise_error(HRESULT hr, IErrorInfo* perrinfo) {
 
 **헤더:** \<comdef.h >
 
-**Lib:** 경우는 **wchar_t is Native Type** 컴파일러 옵션이 설정 되어 있는 경우 comsuppw.lib 또는 comsuppwd.lib를 사용 합니다. 하는 경우 **wchar_t is Native Type** 해제가 comsupp.lib를 사용 합니다. 자세한 내용은 [/Zc:wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조하세요.
+**Lib:** 경우는 **wchar_t is Native Type** 컴파일러 옵션이 설정 되어 있는 경우 comsuppw.lib 또는 comsuppwd.lib를 사용 합니다. 만일 **wchar_t를 빌트인 타입으로 취급하기(Treat WChar_t As Built in Type)** 가 해제되어 있는 경우 comsupp.lib를 사용합니다. 자세한 내용은 [/Zc:wchar_t(wchar_t를 네이티브 형식으로 인식)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

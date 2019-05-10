@@ -23,11 +23,11 @@ helpviewer_keywords:
 - _CrtDbgBreak function
 ms.assetid: 01f8b4a2-a2c7-4e1f-9f39-e573b4a7871f
 ms.openlocfilehash: 4cf64daaea3193f7cf6b3aaa0b1aab031f104704
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340172"
 ---
 # <a name="crtdbgbreak"></a>_CrtDbgBreak
 
@@ -59,7 +59,7 @@ void _CrtDbgBreak( void );
 
 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)의 디버그 버전만 해당됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [디버그 루틴](../../c-runtime-library/debug-routines.md)<br/>
 [__debugbreak](../../intrinsics/debugbreak.md)<br/>

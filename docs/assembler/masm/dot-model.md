@@ -7,11 +7,11 @@ helpviewer_keywords:
 - .MODEL directive
 ms.assetid: 057f00df-1515-4c55-852a-d936c8a34b53
 ms.openlocfilehash: c3917fea0f13e54d5f8f73599a2d28482bb6d259
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62204099"
 ---
 # <a name="model"></a>.MODEL
 
@@ -50,7 +50,7 @@ ms.locfileid: "57743943"
 
 ## <a name="code"></a>코드
 
-MASM 관련 샘플에서 컴파일러 예제를 다운로드할 [Visual c + + 샘플 및 Visual Studio 2010에 대 한 관련 문서](http://go.microsoft.com/fwlink/p/?linkid=178749)합니다.
+MASM 관련 샘플에서 컴파일러 예제를 다운로드할 [시각적 C++ 샘플 및 Visual Studio 2010에 대 한 관련 설명서](http://go.microsoft.com/fwlink/p/?linkid=178749)합니다.
 
 다음 예제에서는 사용 된 `.MODEL` 지시문입니다.
 

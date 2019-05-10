@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C4471
 ms.assetid: ccfd8bd5-bc1b-4be7-a6ea-0e3a7add6607
 ms.openlocfilehash: 0345b730b8fc37329f632bb5d8486c67efd8e3b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62400788"
 ---
 # <a name="compiler-warning-level-4-c4471"></a>컴파일러 경고 (수준 4) C4471
 
 '*열거형*': 범위가 지정 되지 않은 열거형의 정방향 선언에는 기본 형식 (int로 가정) 있어야 합니다.
 
-기본 형식에 대 한 범위가 지정 되지 않은 열거형의 정방향 선언 지정 자가 없는 찾았습니다. Visual c + +에서는 기본적으로 다음을 가정 합니다. `int` 열거형의 기본 형식입니다. 다른 형식을 사용 하는 경우 열거형 정의에서 예를 들어 다른 명시적 종류를 지정 하는 경우 또는 다른 형식 이니셜라이저를 암시적으로 설정 된 경우이 문제가 발생할 수 있습니다. 이식성 문제; 할 수도 있습니다. 다른 컴파일러 가정 하지 마십시오 `int` 열거형의 기본 형식입니다.
+기본 형식에 대 한 범위가 지정 되지 않은 열거형의 정방향 선언 지정 자가 없는 찾았습니다. 기본적으로 시각적 개체 C++ 가정 `int` 열거형의 기본 형식입니다. 다른 형식을 사용 하는 경우 열거형 정의에서 예를 들어 다른 명시적 종류를 지정 하는 경우 또는 다른 형식 이니셜라이저를 암시적으로 설정 된 경우이 문제가 발생할 수 있습니다. 이식성 문제; 할 수도 있습니다. 다른 컴파일러 가정 하지 마십시오 `int` 열거형의 기본 형식입니다.
 
 이 경고는 기본적으로 해제 되어 /Wall 또는 /w 사용할 수 있습니다*N*4471를 명령줄에서 사용 하도록 설정 하거나 #pragma 사용 [경고](../../preprocessor/warning.md) 소스 파일에 있습니다.
 

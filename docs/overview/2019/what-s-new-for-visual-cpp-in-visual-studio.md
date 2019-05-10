@@ -6,11 +6,11 @@ ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: 493b96a8ce3359cc18287adbae8cbd6c374671ec
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899409"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59779495"
 ---
 <!--NOTE all https:// links to docs.microsoft.com need to be converted to site-relative links prior to publishing-->
 
@@ -58,7 +58,7 @@ Visual Studio 2019에는 Microsoft C++ 환경에 대한 많은 업데이트와 �
 
 - OpenMP SIMD 벡터화에 대한 기본 지원을 추가했습니다. 새 CL 스위치 `-openmp:experimental`을 사용하여 설정할 수 있습니다. 이 옵션을 사용하면 `#pragma omp simd`로 주석을 단 루프가 잠재적으로 벡터화될 수 있습니다. 벡터화는 보장되지 않으며 주석이 있지만 벡터화되지 않은 루프에는 보고된 경고가 표시됩니다. SIMD 절은 지원되지 않고 보고된 경고를 표시하여 무시됩니다.
 
-- `-Ob2`의 적극적인 버전인 새로운 인라인 명령줄 스위치 `-Ob3`을 추가했습니다. `-O2` (속도를 위해 이진 파일 최적화)기본적으로 `-Ob2`를 의미합니다. 컴파일러가 충분히 적극적으로 인라인하지 않는다면 `-O2 -Ob3`을 전달하는 것이 좋습니다.
+- `-Ob2`의 적극적인 버전인 새로운 인라인 명령줄 스위치 `-Ob3`을 추가했습니다. `-O2`(속도를 위해 이진 파일 최적화)는 기본적으로 `-Ob2`를 의미합니다. 컴파일러가 충분히 적극적으로 인라인하지 않는다면 `-O2 -Ob3`을 전달하는 것이 좋습니다.
 
 - 수학 라이브러리 함수 및 정수 나누기와 같은 특정 다른 작업에 대한 호출을 포함하는 루프의 수동 벡터화를 지원하기 위해 SVML(Short Vector Math Library) 내장 함수에 대한 지원을 추가했습니다. 이러한 함수는 해당하는 128비트, 256비트 또는 512비트 벡터를 계산합니다. 지원되는 기능에 대한 정의는 [Intel Intrinsic 가이드](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#!=undefined&techs=SVML)를 참조하세요.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2885
 ms.assetid: 7743e5f3-a034-44b4-9ee8-5a6254c27f8c
-ms.openlocfilehash: 8174faed09bdffbdc6974390cceb7c17661eab4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ff5e770052301e95f694d3712f95b82732c2faba
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652129"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447692"
 ---
 # <a name="compiler-error-c2885"></a>컴파일러 오류 C2885
 
@@ -21,7 +21,7 @@ ms.locfileid: "50652129"
 
 ## <a name="example"></a>예제
 
-이 오류는 Visual c + + 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 없습니다: 필요가 더 이상 유효를 `using` 중첩된 형식이 선언 이름을에 형식을 배치 하는 중첩된 형식에 대 한 각 참조를 명시적으로 한 정해야 공간 또는 형식 정의 만듭니다.
+이 오류는 Visual Studio 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 없습니다: 필요가 더 이상 유효를 `using` 중첩된 형식이 선언 n에 형식을 배치 하는 중첩된 형식에 대 한 각 참조를 명시적으로 한 정해야 amespace, 하거나 형식 정의 만듭니다.
 
 다음 샘플 C2885를 생성합니다.
 
@@ -54,7 +54,7 @@ int main () {
 
 ## <a name="example"></a>예제
 
-사용 하는 경우는 `using` 키워드는 클래스 멤버를 c + +를 사용 하 여 다른 클래스 (파생된 클래스) 내에서 해당 멤버를 정의 해야 합니다.
+사용 하는 경우는 `using` 키워드를 클래스 멤버를 사용 하 여 C++ 다른 클래스 (파생된 클래스) 내에서 해당 멤버를 정의 해야 합니다.
 
 다음 샘플 C2885를 생성합니다.
 

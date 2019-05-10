@@ -1,19 +1,19 @@
 ---
 title: 입력-출력 대체
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 helpviewer_keywords:
 - I/O [C++], alternatives
 ms.assetid: 9f8401c7-d90d-4285-8918-63573df74a80
-ms.openlocfilehash: bc595b64c991ada8e958e71e13f8cb9d134adb8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5fb98714a96dedf725ea17332d7c1627e3390896
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221394"
 ---
 # <a name="inputoutput-alternatives"></a>입력/출력 대체
 
-Visual C++는 I/O 프로그래밍을 위해 여러 가지 대체 방법을 제공합니다.
+Microsoft C++ 컴파일러는 I/O 프로그래밍을 위한 몇 가지 대안을 제공 합니다.
 
 - C 런타임 라이브러리 버퍼링되지 않은 직접 I/O
 

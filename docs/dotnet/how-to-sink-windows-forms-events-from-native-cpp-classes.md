@@ -1,5 +1,5 @@
 ---
-title: '방법: 네이티브 c + + 클래스에서 Windows Forms 이벤트 싱크'
+title: '방법: 네이티브에서 Windows Forms 이벤트 싱크 C++ 클래스'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 - event handling, Windows Forms in C++
 ms.assetid: 6e30ddee-d058-4c8d-9956-2a43d86f19d5
 ms.openlocfilehash: d02bcea4efce03c8fb11650d344468236737cfbd
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387268"
 ---
-# <a name="how-to-sink-windows-forms-events-from-native-c-classes"></a>방법: 네이티브 c + + 클래스에서 Windows Forms 이벤트 싱크
+# <a name="how-to-sink-windows-forms-events-from-native-c-classes"></a>방법: 네이티브에서 Windows Forms 이벤트 싱크 C++ 클래스
 
-Windows Forms 컨트롤 또는 MFC 매크로 map 형식 사용 하 여 다른 폼에서 발생 하는 관리 되는 이벤트에서 콜백을 받으려면를 네이티브 c + + 클래스를 사용할 수 있습니다. 뷰 및 대화 상자에 이벤트를 싱크하기 컨트롤에 대 한 동일한 작업을 수행 하는 것과 비슷합니다.
+네이티브 설정할 수 있습니다. C++ 관리 되는 Windows Forms 컨트롤 또는 MFC 매크로 map 형식 사용 하 여 다른 폼에서 발생 하는 이벤트에서 콜백을 받으려면 클래스입니다. 뷰 및 대화 상자에 이벤트를 싱크하기 컨트롤에 대 한 동일한 작업을 수행 하는 것과 비슷합니다.
 
 이 작업을 수행 하려면을 지정 해야 합니다.
 

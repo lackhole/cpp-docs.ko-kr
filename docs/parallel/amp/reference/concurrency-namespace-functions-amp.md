@@ -14,23 +14,23 @@ f1_keywords:
 - amp/Concurrency::tile_static_memory_fence
 ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
 ms.openlocfilehash: 7baae51480c273ca023856253af7963ac83d7c92
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62180390"
 ---
 # <a name="concurrency-namespace-functions-amp"></a>Concurrency 네임 스페이스 함수 (AMP)
 
 ||||
 |-|-|-|
 |[all_memory_fence](#all_memory_fence)|[amp_uninitialize](#amp_uninitialize)|[atomic_compare_exchange](#atomic_compare_exchange)|
-|[atomic_exchange 함수 (c + + AMP)](#atomic_exchange)|[atomic_fetch_add 함수 (c + + AMP)](#atomic_fetch_add)|[atomic_fetch_and 함수 (c + + AMP)](#atomic_fetch_and)|
+|[atomic_exchange 함수 (C++ AMP)](#atomic_exchange)|[atomic_fetch_add 함수 (C++ AMP)](#atomic_fetch_add)|[atomic_fetch_and 함수 (C++ AMP)](#atomic_fetch_and)|
 |[atomic_fetch_dec](#atomic_fetch_dec)|[atomic_fetch_inc](#atomic_fetch_inc)|[atomic_fetch_max](#atomic_fetch_max)|
-|[atomic_fetch_min](#atomic_fetch_min)|[atomic_fetch_or 함수 (c + + AMP)](#atomic_fetch_or)|[atomic_fetch_sub 함수 (c + + AMP)](#atomic_fetch_sub)|
-|[atomic_fetch_xor 함수 (c + + AMP)](#atomic_fetch_xor)|[copy](#copy)|[copy_async](#copy_async)|
+|[atomic_fetch_min](#atomic_fetch_min)|[atomic_fetch_or 함수 (C++ AMP)](#atomic_fetch_or)|[atomic_fetch_sub 함수 (C++ AMP)](#atomic_fetch_sub)|
+|[atomic_fetch_xor 함수 (C++ AMP)](#atomic_fetch_xor)|[copy](#copy)|[copy_async](#copy_async)|
 |[direct3d_abort](#direct3d_abort)|[direct3d_errorf](#direct3d_errorf)|[direct3d_printf](#direct3d_printf)|
-|[global_memory_fence](#global_memory_fence)|[parallel_for_each 함수 (c + + AMP)](#parallel_for_each)|[tile_static_memory_fence](#tile_static_memory_fence)|
+|[global_memory_fence](#global_memory_fence)|[parallel_for_each 함수 (C++ AMP)](#parallel_for_each)|[tile_static_memory_fence](#tile_static_memory_fence)|
 
 ##  <a name="all_memory_fence"></a>  all_memory_fence
 
@@ -47,7 +47,7 @@ inline void all_memory_fence(const tile_barrier& _Barrier) restrict(amp);
 
 ##  <a name="amp_uninitialize"></a>  amp_uninitialize
 
-C + + AMP 런타임 초기화를 취소 합니다. 응용 프로그램 수명 동안 여러 번이이 함수를 호출 하는 것이 유효 합니다. 이 함수를 호출한 모든 c + + AMP API 후 호출에 c + + AMP 런타임이 다시 초기화 됩니다. 이 함수에 대 한 호출에서 c + + AMP 개체를 사용 하는 것이 올바르지을 발생할 정의 되지 않은 동작이 note 합니다. 또한이 함수 및 다른 AMP Api를 동시에 호출 유효 하지 않은 및 정의 되지 않은 동작이 초래 합니다.
+초기화를 취소 합니다 C++ AMP 런타임이 합니다. 응용 프로그램 수명 동안 여러 번이이 함수를 호출 하는 것이 유효 합니다. 호출 C++ 이 함수를 호출 하는 AMP API 한 후 다시 초기화 됩니다는 C++ AMP 런타임이 합니다. 사용할 수는 C++ 이므로이 함수를 수행 하는 호출 간에 AMP 개체 정의 되지 않은 동작이 발생 합니다. 또한이 함수 및 다른 AMP Api를 동시에 호출 유효 하지 않은 및 정의 되지 않은 동작이 초래 합니다.
 
 ```
 void __cdecl amp_uninitialize();
@@ -79,14 +79,14 @@ inline bool atomic_compare_exchange(
 *_Expected_value*<br/>
 비교할 두 번째 값 읽어올 위치입니다.
 
-*value*<br/>
+*값*<br/>
 에 지정 된 메모리 위치에 저장 되는 값 `_Dest` 하는 경우 `_Dest` 값과 같음 `_Expected_value`합니다.
 
 ### <a name="return-value"></a>반환 값
 
 **true 이면** 작업이 고, 그렇지 않으면 성공한 경우 **false**합니다.
 
-##  <a name="atomic_exchange"></a>  atomic_exchange 함수 (c + + AMP)
+##  <a name="atomic_exchange"></a>  atomic_exchange 함수 (C++ AMP)
 
 원자 단위 작업으로 대상 위치의 값을 설정합니다.
 
@@ -112,14 +112,14 @@ inline float atomic_exchange(
 *_Dest*<br/>
 대상 위치에 대한 포인터입니다.
 
-*value*<br/>
+*값*<br/>
 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
 대상 위치의 원본 값입니다.
 
-##  <a name="atomic_fetch_add"></a>  atomic_fetch_add 함수 (c + + AMP)
+##  <a name="atomic_fetch_add"></a>  atomic_fetch_add 함수 (C++ AMP)
 
 원자 단위로 메모리 위치의 값에 값을 추가 합니다.
 
@@ -140,14 +140,14 @@ inline unsigned int atomic_fetch_add(
 *_Dest*<br/>
 메모리 위치에 대한 포인터입니다.
 
-*value*<br/>
+*값*<br/>
 추가할 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
 메모리 위치의 원본 값입니다.
 
-##  <a name="atomic_fetch_and"></a>  atomic_fetch_and 함수 (c + + AMP)
+##  <a name="atomic_fetch_and"></a>  atomic_fetch_and 함수 (C++ AMP)
 
 원자 값 및 메모리 위치의 값의 비트 AND 연산을 수행합니다.
 
@@ -168,7 +168,7 @@ inline unsigned int atomic_fetch_and(
 *_Dest*<br/>
 메모리 위치에 대한 포인터입니다.
 
-*value*<br/>
+*값*<br/>
 비트 AND 계산에 사용할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -235,7 +235,7 @@ inline unsigned int atomic_fetch_max(
 *_Dest*<br/>
 비교할 값 중 하나가 있는 위치를 읽고 저장 되는 두 값의 최대값입니다.
 
-*value*<br/>
+*값*<br/>
 지정 된 위치의 값을 비교할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -263,14 +263,14 @@ inline unsigned int atomic_fetch_min(
 *_Dest*<br/>
 비교할 값 중 하나가 있는 위치를 읽고 저장 되는 두 값의 최소값입니다.
 
-*value*<br/>
+*값*<br/>
 지정 된 위치의 값을 비교할 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
 지정된 된 위치에 저장 된 원래 값입니다.
 
-##  <a name="atomic_fetch_or"></a>  atomic_fetch_or 함수 (c + + AMP)
+##  <a name="atomic_fetch_or"></a>  atomic_fetch_or 함수 (C++ AMP)
 
 값 및 메모리 위치의 값으로 비트 OR 연산을 원자 단위로 수행합니다.
 
@@ -291,14 +291,14 @@ inline unsigned int atomic_fetch_or(
 *_Dest*<br/>
 메모리 위치에 대한 포인터입니다.
 
-*value*<br/>
+*값*<br/>
 비트 OR 계산에 사용할 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
 메모리 위치의 원본 값입니다.
 
-##  <a name="atomic_fetch_sub"></a>  atomic_fetch_sub 함수 (c + + AMP)
+##  <a name="atomic_fetch_sub"></a>  atomic_fetch_sub 함수 (C++ AMP)
 
 원자 단위로 메모리 위치의 값을 뺍니다.
 
@@ -319,14 +319,14 @@ inline unsigned int atomic_fetch_sub(
 *_Dest*<br/>
 대상 위치에 대한 포인터입니다.
 
-*value*<br/>
+*값*<br/>
 뺄 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
 메모리 위치의 원본 값입니다.
 
-##  <a name="atomic_fetch_xor"></a>  atomic_fetch_xor 함수 (c + + AMP)
+##  <a name="atomic_fetch_xor"></a>  atomic_fetch_xor 함수 (C++ AMP)
 
 원자 단위로 peforms 메모리 위치 및 특정 값의 비트 XOR 작업 합니다.
 
@@ -347,7 +347,7 @@ inline unsigned int atomic_fetch_xor(
 *_Dest*<br/>
 메모리 위치에 대한 포인터입니다.
 
-*value*<br/>
+*값*<br/>
 XOR 계산에 사용할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -356,7 +356,7 @@ XOR 계산에 사용할 값입니다.
 
 ##  <a name="copy"></a>  copy
 
-C + + AMP 개체를 복사합니다. 모든 동기 데이터 전송 요구 사항이 충족 됩니다. 액셀러레이터에서 코드를 실행 하는 경우에 데이터를 복사할 수 없습니다. 이 함수의 일반 형식은 `copy(src, dest)`합니다.
+복사본을 C++ AMP 개체입니다. 모든 동기 데이터 전송 요구 사항이 충족 됩니다. 액셀러레이터에서 코드를 실행 하는 경우에 데이터를 복사할 수 없습니다. 이 함수의 일반 형식은 `copy(src, dest)`합니다.
 
 ```
 template <typename value_type, int _Rank>
@@ -453,7 +453,7 @@ void copy(
 
 ##  <a name="copy_async"></a>  copy_async
 
-C + + AMP 개체를 복사 하 고 반환 된 [completion_future](completion-future-class.md) 대기할 수 있는 개체입니다. 액셀러레이터에서 코드를 실행 하는 경우에 데이터를 복사할 수 없습니다.  이 함수의 일반 형식은 `copy(src, dest)`합니다.
+복사본을 C++ AMP 개체를 반환 합니다는 [completion_future](completion-future-class.md) 대기할 수 있는 개체입니다. 액셀러레이터에서 코드를 실행 하는 경우에 데이터를 복사할 수 없습니다.  이 함수의 일반 형식은 `copy(src, dest)`합니다.
 
 ```
 template <typename value_type, int _Rank>
@@ -585,9 +585,9 @@ inline void global_memory_fence(const tile_barrier& _Barrier) restrict(amp);
 *_Barrier*<br/>
 Tile_barrier 개체
 
-##  <a name="parallel_for_each"></a>  parallel_for_each 함수 (c + + AMP)
+##  <a name="parallel_for_each"></a>  parallel_for_each 함수 (C++ AMP)
 
-계산 도메인에서 함수를 실행 합니다. 자세한 내용은 [c + + AMP 개요](../../../parallel/amp/cpp-amp-overview.md)합니다.
+계산 도메인에서 함수를 실행 합니다. 자세한 내용은 [ C++ AMP 개요](../../../parallel/amp/cpp-amp-overview.md)합니다.
 
 ```
 template <int _Rank, typename _Kernel_type>

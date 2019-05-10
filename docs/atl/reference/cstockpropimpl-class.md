@@ -1,6 +1,6 @@
 ---
 title: CStockPropImpl 클래스
-ms.date: 11/06/2018
+ms.date: 05/06/2019
 f1_keywords:
 - CStockPropImpl
 - ATLCTL/ATL::CStockPropImpl
@@ -64,12 +64,12 @@ helpviewer_keywords:
 - controls [ATL], stock properties
 - stock properties, ATL controls
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
-ms.openlocfilehash: 148c9571bb37e2b9063ca9290f51caa1fabb2d21
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.openlocfilehash: 246e2a26db6adde0fec06523c1b8db09c5f552f3
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270789"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221068"
 ---
 # <a name="cstockpropimpl-class"></a>CStockPropImpl 클래스
 
@@ -182,7 +182,7 @@ class ATL_NO_VTABLE CStockPropImpl :
 
 `CStockPropImpl` 제공 **배치** 하 고 **가져오기** 각 스톡 속성에 대 한 메서드. 이러한 메서드는 각 속성에 연결 된 데이터 멤버를 가져오거나 설정 하 고 알리고 모든 속성이 변경 되 면 컨테이너와 동기화 하는 데 필요한 코드를 제공 합니다.
 
-Visual c + + 해당 마법사를 통해 스톡 속성에 대 한 지원을 제공합니다. 컨트롤에 스톡 속성을 추가 하는 방법에 대 한 자세한 내용은 참조는 [ATL 자습서](../../atl/active-template-library-atl-tutorial.md)합니다.
+Visual Studio의 마법사를 통해 스톡 속성에 대 한 지원을 제공합니다. 컨트롤에 스톡 속성을 추가 하는 방법에 대 한 자세한 내용은 참조는 [ATL 자습서](../../atl/active-template-library-atl-tutorial.md)합니다.
 
 이전 버전과 호환성을 위해 `CStockPropImpl` 노출 `get_Window` 하 고 `put_Window` 메서드를 호출 하기만 하면 됩니다 `get_HWND` 및 `put_HWND`, 각각. 기본 구현을 `put_HWND` HWND는 읽기 전용 속성 해야 하므로 E_FAIL을 반환 합니다.
 

@@ -5,11 +5,11 @@ helpviewer_keywords:
 - Parallel Patterns Library (PPL)
 ms.assetid: 40fd86b2-69fa-45e5-93d8-98a75636c242
 ms.openlocfilehash: 11440d56b9618d4763e1b7e47a21b365bbdc0c15
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62301853"
 ---
 # <a name="parallel-patterns-library-ppl"></a>PPL(병렬 패턴 라이브러리)
 
@@ -25,10 +25,9 @@ PPL은 다음과 같은 기능을 제공합니다.
 
 ## <a name="example"></a>예제
 
-PPL은 c + + 표준 라이브러리를 유사한 프로그래밍 모델을 제공 합니다. 다음 예제에서는 PPL의 여러 기능을 보여 줍니다. 이 예제에서는 여러 피보나치 수를 직렬 및 병렬로 계산합니다. 두 계산 작업을 [std:: array](../../standard-library/array-class-stl.md) 개체입니다. 또한 두 계산을 모두 수행하는 데 필요한 시간을 콘솔에 출력합니다.
+PPL은 유사한 프로그래밍 모델을 제공 합니다 C++ 표준 라이브러리입니다. 다음 예제에서는 PPL의 여러 기능을 보여 줍니다. 이 예제에서는 여러 피보나치 수를 직렬 및 병렬로 계산합니다. 두 계산 작업을 [std:: array](../../standard-library/array-class-stl.md) 개체입니다. 또한 두 계산을 모두 수행하는 데 필요한 시간을 콘솔에 출력합니다.
 
-직렬 버전과 c + + 표준 라이브러리를 사용 [std:: for_each](../../standard-library/algorithm-functions.md#for_each) 배열을 트래버스하 고 알고리즘에서 결과 저장 하 고는 [std:: vector](../../standard-library/vector-class.md) 개체입니다. 병렬 버전을 동일한 작업을 수행 하지만 PPL을 사용 하 여 [concurrency:: parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) 알고리즘의 결과 저장 하 고는 [concurrency:: concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) 개체입니다. 
-  `concurrent_vector` 클래스를 사용하면 컨테이너에 대한 쓰기 권한을 동기화하지 않아도 각 루프 반복이 요소를 동시에 추가할 수 있습니다.
+직렬 버전을 사용 하 여는 C++ 표준 라이브러리 [std:: for_each](../../standard-library/algorithm-functions.md#for_each) 배열을 트래버스하 고 알고리즘에서 결과 저장 하 고를 [std:: vector](../../standard-library/vector-class.md) 개체입니다. 병렬 버전을 동일한 작업을 수행 하지만 PPL을 사용 하 여 [concurrency:: parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) 알고리즘의 결과 저장 하 고는 [concurrency:: concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) 개체입니다. `concurrent_vector` 클래스를 사용하면 컨테이너에 대한 쓰기 권한을 동기화하지 않아도 각 루프 반복이 요소를 동시에 추가할 수 있습니다.
 
 `parallel_for_each`는 동시에 동작하므로 이 예제의 병렬 버전은 직렬 버전과 같은 결과를 생성하기 위해 `concurrent_vector` 개체를 정렬해야 합니다.
 
@@ -55,8 +54,7 @@ fib(42): 267914296
 |제목|설명|
 |-----------|-----------------|
 |[작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)|PPL의 작업 및 작업 그룹 역할에 대해 설명합니다.|
-|[병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)|
-  `parallel_for` 및 `parallel_for_each`와 같은 병렬 알고리즘을 사용하는 방법에 대해 설명합니다.|
+|[병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)|`parallel_for` 및 `parallel_for_each`와 같은 병렬 알고리즘을 사용하는 방법에 대해 설명합니다.|
 |[병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)|PPL에서 제공하는 여러 병렬 컨테이너 및 개체에 대해 설명합니다.|
 |[PPL에서의 취소](cancellation-in-the-ppl.md)|병렬 알고리즘에서 수행 중인 작업을 취소하는 방법을 설명합니다.|
 |[동시성 런타임](../../parallel/concrt/concurrency-runtime.md)|병렬 프로그래밍을 간소화하는 동시성 런타임에 대해 설명하고 관련 항목의 링크를 제공합니다.|

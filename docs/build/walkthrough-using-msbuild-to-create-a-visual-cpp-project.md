@@ -1,21 +1,19 @@
 ---
-title: '연습: MSBuild를 사용 하 여 Visual c + + 프로젝트를 만들려면'
-ms.date: 09/24/2018
-f1_keywords:
-- msbuild.cpp.walkthrough.createproject
+title: '연습: MSBuild를 사용 하 여 시각적 개체를 만들려면 C++ 프로젝트'
+ms.date: 05/06/2019
 helpviewer_keywords:
 - 'msbuild (c++), walkthrough: create a project'
 ms.assetid: 52350d1c-c373-4868-923c-5e8be6f67adb
-ms.openlocfilehash: c7b038ede8c03f7016c5e9f81a9db785c49da448
-ms.sourcegitcommit: faa42c8a051e746d99dcebe70fd4bbaf3b023ace
-ms.translationtype: MT
+ms.openlocfilehash: 8fb985cbf4e471589946e730e8bb09b43f0a5d84
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57813918"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446218"
 ---
-# <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>연습: MSBuild를 사용 하 여 Visual c + + 프로젝트를 만들려면
+# <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>연습: MSBuild를 사용 하 여 시각적 개체를 만들려면 C++ 프로젝트
 
-이 연습에서는 명령 프롬프트에서 Visual C++ 프로젝트를 빌드하려면 MSBuild를 사용 하는 방법에 설명 합니다. C++ 소스 파일 및 Visual C++ 콘솔 응용 프로그램에 대 한 XML 기반 프로젝트 파일을 만드는 방법을 알아봅니다. 프로젝트를 빌드한 후 빌드 프로세스를 사용자 지정 하는 방법을 배웁니다.
+이 연습에는 MSBuild 빌드는 Visual Studio를 사용 하는 방법을 보여 줍니다. C++ 명령 프롬프트에서 프로젝트입니다. C++ 소스 파일 및 Visual C++ 콘솔 응용 프로그램에 대 한 XML 기반 프로젝트 파일을 만드는 방법을 알아봅니다. 프로젝트를 빌드한 후 빌드 프로세스를 사용자 지정 하는 방법을 배웁니다.
 
 이 연습에서는 다음 작업을 수행합니다.
 
@@ -39,7 +37,7 @@ ms.locfileid: "57813918"
 > Visual Studio IDE를 사용 하 여 나중에 프로젝트 파일을 편집 하려는 경우에이 방법을 사용 하지 마십시오. .Vcxproj 파일을 수동으로 만든 프로젝트는 프로젝트 항목에 와일드 카드를 사용 하는 경우에 특히 Visual Studio IDE 편집 또는 로드 하 여 되지 않습니다.
 
 > [!NOTE]
-> 대부분의 하위 수준 빌드 지침에 포함 된 합니다 **.targets** 하 고 **.props** 속성에 저장 VCTargets 디렉터리에 정의 된 파일을 `$(VCTargetsPath)`. Visual Studio 2017 Enterprise Edition에서 이러한 파일에 대 한 기본 경로 c:\\프로그램 파일 (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Common7\\IDE\\ VC\\VCTargets\\합니다.
+> 대부분의 하위 수준 빌드 지침에 포함 된 합니다 **.targets** 하 고 **.props** 속성에 저장 VCTargets 디렉터리에 정의 된 파일을 `$(VCTargetsPath)`. Visual Studio 2019 Enterprise Edition에서 이러한 파일에 대 한 기본 경로 C:\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props 합니다.
 
 ## <a name="creating-the-c-source-files"></a>C++ 소스 파일 만들기
 
@@ -81,10 +79,10 @@ MSBuild 프로젝트 파일은 프로젝트 루트 요소를 포함 하는 XML �
 
 ### <a name="to-create-the-msbuild-project-file"></a>MSBuild 프로젝트 파일을 만들려면
 
-1. 텍스트 편집기를 사용 하 여 명명 된 프로젝트 파일을 만듭니다 `myproject.vcxproj`를 추가한 다음 루트 `<Project>` 요소입니다. 루트 간에 다음 절차의 단계에 요소를 삽입 `<Project>` 태그:
+1. 텍스트 편집기를 사용 하 여 명명 된 프로젝트 파일을 만듭니다 `myproject.vcxproj`를 추가한 다음 루트 `<Project>` 요소입니다. 루트 간에 다음 절차의 단계에 요소를 삽입 `<Project>` 태그입니다. (ToolsVersion을 사용 하 여 Visual Studio 2017을 사용 하는 경우 "15.0" =.)
 
     ```xml
-    <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     </Project>
     ```
 
@@ -109,12 +107,12 @@ MSBuild 프로젝트 파일은 프로젝트 루트 요소를 포함 하는 XML �
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
     ```
 
-1. 다음 속성 그룹 요소 추가 (`<PropertyGroup>`)를 지정 하는 두 개의 프로젝트 속성:
+1. 다음 속성 그룹 요소 추가 (`<PropertyGroup>`)를 지정 하는 두 개의 프로젝트 속성입니다. (Visual Studio 2017을 사용 하는 경우 v141 사용 합니다.)
 
     ```xml
     <PropertyGroup>
       <ConfigurationType>Application</ConfigurationType>
-      <PlatformToolset>v141</PlatformToolset>
+      <PlatformToolset>v142</PlatformToolset>
     </PropertyGroup>
     ```
 
@@ -151,10 +149,10 @@ MSBuild 프로젝트 파일은 프로젝트 루트 요소를 포함 하는 XML �
 
 ### <a name="complete-project-file"></a>전체 프로젝트 파일
 
-다음 코드는 이전 절차에서 만든 전체 프로젝트 파일을 보여 줍니다.
+다음 코드는 이전 절차에서 만든 전체 프로젝트 파일을 보여 줍니다. (Use ToolsVersion="15.0" for Visual Studio 2017.)
 
 ```xml
-<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -168,7 +166,7 @@ MSBuild 프로젝트 파일은 프로젝트 루트 요소를 포함 하는 XML �
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
   <PropertyGroup>
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ItemGroup>
@@ -235,7 +233,7 @@ A *빌드 대상을* 는 명명 된 집합 빌드하는 동안 실행 될 수 �
 
 ### <a name="using-msbuild-with-the-64-bit-compiler-and-tools"></a>64 비트 컴파일러 및 도구를 사용 하 여 MSBuild를 사용 하 여
 
-Visual C++ 64 비트 Windows에서 기본적으로를 설치한 경우 64 비트 x64 네이티브 및 cross tools 설치 됩니다. 64 비트 컴파일러 및 도구를 설정 하 여 응용 프로그램을 빌드하는 데 MSBuild를 구성할 수 있습니다는 `PreferredToolArchitecture` 속성입니다. 이 속성은 프로젝트 구성 또는 플랫폼 속성에 영향을 주지 않습니다. 도구의 32 비트 버전은 기본적으로 사용 됩니다. 64 비트 버전의 컴파일러 및 도구를 지정 하려면 다음 속성 그룹 요소를 Myproject.vcxproj 프로젝트 파일에 추가 합니다 `Microsoft.Cpp.default.props` \<가져오기 / > 요소:
+기본적으로 64 비트 Windows에서 Visual Studio를 설치한, 64 비트 x64 네이티브 및 cross tools 설치 됩니다. 64 비트 컴파일러 및 도구를 설정 하 여 응용 프로그램을 빌드하는 데 MSBuild를 구성할 수 있습니다는 `PreferredToolArchitecture` 속성입니다. 이 속성은 프로젝트 구성 또는 플랫폼 속성에 영향을 주지 않습니다. 도구의 32 비트 버전은 기본적으로 사용 됩니다. 64 비트 버전의 컴파일러 및 도구를 지정 하려면 다음 속성 그룹 요소를 Myproject.vcxproj 프로젝트 파일에 추가 합니다 `Microsoft.Cpp.default.props` \<가져오기 / > 요소:
 
 ```xml
 <PropertyGroup>

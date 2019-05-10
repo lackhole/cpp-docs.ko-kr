@@ -25,12 +25,12 @@ helpviewer_keywords:
 - Clean Build option
 - output files, setting directory
 - Unicode, creating C++ build configuration
-ms.openlocfilehash: c9b0eae9c0a1e074fb4f3f12ac38a737ef14c644
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: e6d418c1668a0757349c7e5c3bb38f7cda801223
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827442"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446568"
 ---
 # <a name="general-property-page-project"></a>일반 속성 페이지(프로젝트)
 
@@ -40,7 +40,7 @@ ms.locfileid: "57827442"
 
 - 프로젝트 기본값
 
-비 Windows 프로젝트를 참조 하세요 [Linux c + + 속성 페이지 참조](../../linux/prop-pages-linux.md)합니다.
+비 Windows 프로젝트를 참조 하세요 [Linux C++ 속성 페이지 참조](../../linux/prop-pages-linux.md)합니다.
 
 ## <a name="general"></a>일반
 
@@ -98,7 +98,7 @@ ms.locfileid: "57827442"
 
 - **플랫폼 도구 집합**
 
-   프로젝트가 다른 버전의 Visual C++ 라이브러리 및 컴파일러를 대상으로 할 수 있도록 허용합니다. Visual C++ 프로젝트는 Windowx XP에서 실행할 수 있는 실행 파일을 만드는 도구 집합을 비롯한 Visual Studio에서 설치한 기본 도구 집합 또는 Visual Studio의 여러 이전 버전에서 설치한 도구 집합 중 하나를 대상으로 지정할 수 있습니다. 플랫폼 도구 집합을 변경 내용은 참조 하세요. [방법: 대상 프레임워크 및 플랫폼 도구 세트 수정](../how-to-modify-the-target-framework-and-platform-toolset.md)을 참조하세요.
+   프로젝트가 다른 버전의 Visual C++ 라이브러리 및 컴파일러를 대상으로 할 수 있도록 허용합니다. Visual Studio C++ 프로젝트 중 하나는 기본 도구 집합 Visual Studio 또는 Windowx XP에서 실행할 수 있는 실행 파일을 만들도록 하는 도구 집합을 비롯해 Visual Studio의 여러 이전 버전에서 설치 된 도구 집합 중 하나에서 설치 대상으로 지정할 수 있습니다. 플랫폼 도구 집합을 변경 내용은 참조 하세요. [방법: 대상 프레임워크 및 플랫폼 도구 세트 수정](../how-to-modify-the-target-framework-and-platform-toolset.md)을 참조하세요.
 
 - **관리 증분 빌드 사용**
 
@@ -172,4 +172,4 @@ ms.locfileid: "57827442"
 
 ## <a name="see-also"></a>참고자료
 
-[C + + 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)
+[C++ 프로젝트 속성 페이지 참조](property-pages-visual-cpp.md)

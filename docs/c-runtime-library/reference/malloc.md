@@ -23,11 +23,11 @@ helpviewer_keywords:
 - memory allocation
 ms.assetid: 144fcee2-be34-4a03-bb7e-ed6d4b99eea0
 ms.openlocfilehash: e6a007fb6f089ebf1c9f5fc9ce59cbcbf0b13888
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157180"
 ---
 # <a name="malloc"></a>malloc
 
@@ -48,7 +48,7 @@ void *malloc(
 
 ## <a name="return-value"></a>반환 값
 
-**malloc** 할당된 된 공간에 대 한 void 포인터를 반환 하거나 **NULL** 사용할 수 있는 메모리가 부족 한 경우. 이외의 다른 형식에 대 한 포인터를 반환 하려면 **void**, 반환 값에 형식 캐스팅을 사용 합니다. 반환 값이 가리키는 스토리지 공간은 맞춤 요구 사항이 기본 맞춤보다 작거나 같은 모든 형식의 개체 스토리지에 적절하게 맞춰지도록 보장됩니다. (Visual c + +에서 기본 맞춤은 맞춤에 대 한 필요한를 **이중**, 또는 8 바이트입니다. 64비트 플랫폼을 대상으로 하는 코드에서는 16바이트입니다. 사용 하 여 [_aligned_malloc](aligned-malloc.md) 보다 큰 맞춤 요구 사항이 있는 개체에 대 한 저장소를 할당 하려면-예를 들어 SSE 형식 [__m128](../../cpp/m128.md) 및 **__m256**, 된 형식과 사용 하 여 선언 `__declspec(align( n ))` 여기서 **n** 8 보다 큽니다. 하는 경우 *크기* 가 0 이면 **malloc** 힙에서 길이가 0 인 항목을 할당 하 고 해당 항목에 대 한 유효한 포인터를 반환 합니다. 반환 된 값을 검사할 **malloc**요청 된 메모리 양이 작은 경우에 합니다.
+**malloc** 할당된 된 공간에 대 한 void 포인터를 반환 하거나 **NULL** 사용할 수 있는 메모리가 부족 한 경우. 이외의 다른 형식에 대 한 포인터를 반환 하려면 **void**, 반환 값에 형식 캐스팅을 사용 합니다. 반환 값이 가리키는 스토리지 공간은 맞춤 요구 사항이 기본 맞춤보다 작거나 같은 모든 형식의 개체 스토리지에 적절하게 맞춰지도록 보장됩니다. (시각적 개체의 C++를 기본 맞춤은 맞춤에 대 한 필수입니다는 **이중**, 또는 8 바이트입니다. 64비트 플랫폼을 대상으로 하는 코드에서는 16바이트입니다. 사용 하 여 [_aligned_malloc](aligned-malloc.md) 보다 큰 맞춤 요구 사항이 있는 개체에 대 한 저장소를 할당 하려면-예를 들어 SSE 형식 [__m128](../../cpp/m128.md) 및 **__m256**, 된 형식과 사용 하 여 선언 `__declspec(align( n ))` 여기서 **n** 8 보다 큽니다. 하는 경우 *크기* 가 0 이면 **malloc** 힙에서 길이가 0 인 항목을 할당 하 고 해당 항목에 대 한 유효한 포인터를 반환 합니다. 반환 된 값을 검사할 **malloc**요청 된 메모리 양이 작은 경우에 합니다.
 
 ## <a name="remarks"></a>설명
 

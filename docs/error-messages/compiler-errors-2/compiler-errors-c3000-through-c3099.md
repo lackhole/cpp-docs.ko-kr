@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 오류 C3000 ~ C3099
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C3051
 - C3061
@@ -38,12 +38,12 @@ helpviewer_keywords:
 - C3093
 - C3098
 ms.assetid: 01b7b9cb-b351-4b5a-8cb0-1fcddb08d2ab
-ms.openlocfilehash: b7a01c35086fe503e39af2af60655c03301dc7c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 08c7b691d6390e6c1070fc71dff116604731ebab
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50475493"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856918"
 ---
 # <a name="compiler-errors-c3000-through-c3099"></a>컴파일러 오류 C3000 ~ C3099
 
@@ -58,7 +58,7 @@ ms.locfileid: "50475493"
 |컴파일러 오류 C3000|사용되지 않습니다.|
 |[컴파일러 오류 C3001](compiler-error-c3001.md)|'*메시지*': OpenMP 지시문 이름이 필요 합니다.|
 |[컴파일러 오류 C3002](compiler-error-c3002.md)|'*name1* *name2*': OpenMP 지시문 이름이 여러 개|
-|[컴파일러 오류 C3003](compiler-error-c3003.md)|'*지시문*': OpenMP 지시문 이름이 지시문 절 올 수 없습니다|
+|[컴파일러 오류 C3003](compiler-error-c3003.md)|'*directive*': OpenMP 지시문 이름이 지시문 절 올 수 없습니다|
 |[컴파일러 오류 C3004](compiler-error-c3004.md)|'*절*': OpenMP에서 유효 하지 않은 절 '*지시문*' 지시문|
 |[컴파일러 오류 C3005](compiler-error-c3005.md)|'*메시지*': OpenMP에 예기치 못한 토큰이 '*지시문*' 지시문|
 |[컴파일러 오류 C3006](compiler-error-c3006.md)|'*절*': OpenMP 절 '*지시문*' 지시문에 필요한 인수가 없습니다.|
@@ -73,7 +73,7 @@ ms.locfileid: "50475493"
 |[컴파일러 오류 C3015](compiler-error-c3015.md)|OpenMP 'for' 문의 초기화 형식이 잘못되었습니다.|
 |[컴파일러 오류 C3016](compiler-error-c3016.md)|'*식별자*': OpenMP 'for' 문의 인덱스 변수는 부호 있는 해야 정수 계열 형식|
 |[컴파일러 오류 C3017](compiler-error-c3017.md)|OpenMP 'for' 문의 종료 테스트 형식이 잘못되었습니다.|
-|[컴파일러 오류 C3018](compiler-error-c3018.md)|'*식별자*': OpenMP 'for' 테스트 또는 증분 인덱스 변수를 사용 해야 합니다 '*변수*'|
+|[컴파일러 오류 C3018](compiler-error-c3018.md)|'*identifier*': OpenMP 'for' 테스트 또는 증분 인덱스 변수를 사용 해야 합니다 '*변수*'|
 |[컴파일러 오류 C3019](compiler-error-c3019.md)|OpenMP 'for' 문의 증가 식 형식이 잘못 되었습니다.|
 |[컴파일러 오류 C3020](compiler-error-c3020.md)|'*변수*': OpenMP 'for' 루프 인덱스 변수는 루프 본문에서 수정할 수 없습니다|
 |[컴파일러 오류 C3021](compiler-error-c3021.md)|'*인수*': OpenMP에서 인수가 비어 '*지시문*' 지시문|
@@ -123,7 +123,7 @@ ms.locfileid: "50475493"
 |[컴파일러 오류 C3065](compiler-error-c3065.md)|클래스 범위가 아닌 범위에서는 속성을 선언할 수 없습니다.|
 |[컴파일러 오류 C3066](compiler-error-c3066.md)|여러 가지 방법으로이 형식의 개체를 호출할 수 있습니다 이러한 인수를 사용 하 여|
 |컴파일러 오류 C3067|이니셜라이저 목록은 built-in operator 사용 하 여 사용할 수 없습니다.|
-|[컴파일러 오류 C3068](compiler-error-c3068.md)|'*식별자*': 'naked' 함수를 c + + 예외를 발생 한 경우에 필요한 해제는 개체를 포함할 수 없습니다|
+|[컴파일러 오류 C3068](compiler-error-c3068.md)|'*식별자*': 'naked' 함수는 해제가 필요한 개체를 포함할 수 없습니다는 C++ 예외가 발생 했습니다.|
 |[컴파일러 오류 C3069](compiler-error-c3069.md)|연산자 '*연산자*': 열거형 형식에 사용할 수 없습니다|
 |[컴파일러 오류 C3070](compiler-error-c3070.md)|'*식별자*': 속성에 'set' 메서드가 없습니다.|
 |[컴파일러 오류 C3071](compiler-error-c3071.md)|연산자 '*연산자*'는 ref 클래스 또는 값 형식 인스턴스의에 적용할 수|
@@ -155,3 +155,8 @@ ms.locfileid: "50475493"
 |[컴파일러 오류 C3097](compiler-error-c3097.md)|'*특성*': 특성의 범위는 수 해야 ' 어셈블리:' 또는 ' 모듈:'|
 |컴파일러 오류 C3098|'*식별자*': 특성에 사용자 정의 생성자 없음|
 |[컴파일러 오류 C3099](compiler-error-c3099.md)|'*키워드*': [system:: attributeusageattribute]를 사용 하 여 / [Windows::Foundation::Metadata::AttributeUsageAttribute] 관리 되는 WinRT 특성에 대 한|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

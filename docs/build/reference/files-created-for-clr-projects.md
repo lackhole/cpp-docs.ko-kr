@@ -2,15 +2,15 @@
 title: CLR 프로젝트용 파일
 ms.date: 11/04/2016
 helpviewer_keywords:
-- Visual C++ projects, CLR programming
+- Visual Studio C++ projects, CLR programming
 - .NET applications, C++
 ms.assetid: 59ae9020-5f26-4ad0-bbdd-97c2e2023a20
-ms.openlocfilehash: 8c3e4b4187e507f7e52f8764b546f85258902879
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: e41544adb040175fc8e53ab0e6bc4f8275891580
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827717"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446318"
 ---
 # <a name="files-created-for-clr-projects"></a>CLR 프로젝트용 파일
 

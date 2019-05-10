@@ -10,11 +10,11 @@ helpviewer_keywords:
 - attributes [C++/CLI], OLE DB consumer
 ms.assetid: 017b591f-8f9a-42b4-84d5-cc42a21ab0cc
 ms.openlocfilehash: 9f89af963c9c49a8a94b2a4f0c8930ab714926e7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407564"
 ---
 # <a name="ole-db-consumer-attributes"></a>OLE DB 소비자 특성
 OLE DB 소비자 특성을 기준으로 코드를 삽입 합니다 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-reference.md), 소비자를 만드는 작업 OLE DB 여 테이블과 같은 작업을 수행 하는 데이터에 액세스 하 고 명령을 실행 합니다.

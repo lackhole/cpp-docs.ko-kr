@@ -3,15 +3,15 @@ title: MSVC 링커 참조
 ms.date: 12/10/2018
 ms.assetid: bb736587-d13b-4f3c-8982-3cc2c015c59c
 ms.openlocfilehash: 3a9eebef0a264b0131311b5ca96011a4d56264a1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62176631"
 ---
 # <a name="linking"></a>연결
 
-C + + 프로젝트에는 *연결* 컴파일러는 개체 파일 (*.obj)로 소스 코드를 컴파일한 후 단계를 수행 합니다. 링커 (link.exe) 개체 파일을 단일 실행 파일을 결합합니다. 
+에 C++ 프로젝트를 *연결* 컴파일러는 개체 파일 (*.obj)로 소스 코드를 컴파일한 후 단계를 수행 합니다. 링커 (link.exe) 개체 파일을 단일 실행 파일을 결합합니다. 
 
 내부 또는 Visual Studio 외부에서 링커 옵션을 설정할 수 있습니다. 링커 옵션에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 여 액세스 하는 Visual Studio 내 **솔루션 탐색기** 선택 하 고 **속성** 속성 페이지를 표시 합니다. 선택할 **링커** 노드를 확장 하 고 모든 옵션을 보려면 왼쪽된 창에서. 
 
@@ -83,7 +83,7 @@ LINK 도구는 다음과 같은 환경 변수를 사용합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[C/c + + 빌드 참조](c-cpp-building-reference.md)
+[C /C++ 참조를 작성](c-cpp-building-reference.md)
 [MSVC 링커 옵션](linker-options.md)
 [모듈 정의 (.def) 파일](module-definition-dot-def-files.md)
-[링커의 지원 지연 로드 된 Dll](linker-support-for-delay-loaded-dlls.md)
+[링커 지원 지연 로드 된 Dll에 대 한](linker-support-for-delay-loaded-dlls.md)

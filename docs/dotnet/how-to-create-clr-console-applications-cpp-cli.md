@@ -1,18 +1,18 @@
 ---
-title: '방법: CLR 콘솔 응용 프로그램 만들기 (C + + /cli CLI)'
+title: '방법: CLR 콘솔 응용 프로그램 만들기 (C++/CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - console applications, templates
 - CLR console applications, project template
 ms.assetid: e89bce3c-706f-4ae0-8a90-cb1a0f674e70
 ms.openlocfilehash: ba0fa81aa42f946dbaf005c00380573e44312c5a
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62387482"
 ---
-# <a name="how-to-create-clr-console-applications-ccli"></a>방법: CLR 콘솔 응용 프로그램 만들기 (C + + /cli CLI)
+# <a name="how-to-create-clr-console-applications-ccli"></a>방법: CLR 콘솔 응용 프로그램 만들기 (C++/CLI)
 
 콘솔 애플리케이션 템플릿을 사용하여 이미 필수 프로젝트 참조 및 파일이 있는 콘솔 애플리케이션 프로젝트를 만들 수 있습니다.
 

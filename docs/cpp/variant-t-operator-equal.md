@@ -9,11 +9,11 @@ helpviewer_keywords:
 - = operator [C++], with specific Visual C++ objects
 ms.assetid: 77622723-6e49-4dec-9e0f-fa74028f1a3c
 ms.openlocfilehash: 6a8f31e8db6f5ca5a680dd47b5d5391c84ce5025
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62403321"
 ---
 # <a name="varianttoperator-"></a>_variant_t::operator =
 
@@ -131,11 +131,11 @@ _variant_t& operator=(
 
 - **연산자 = (***fltSrc***)** 할당 된 **float** 숫자 값을 `_variant_t` 개체입니다.
 
-- **연산자 = (***dblSrc***)** 할당 한 **double** 숫자 값을 `_variant_t` 개체입니다.
+- **operator=(**  *dblSrc*  **)** Assigns a **double** numerical value to a `_variant_t` object.
 
 - **operator = (***cySrc***)** 할당을 `CY` 개체를 `_variant_t` 개체.
 
-- **operator = (***bstrSrc***)** 할당을 `BSTR` 개체를 `_variant_t` 개체.
+- **operator=(**  *bstrSrc*  **)** Assigns a `BSTR` object to a `_variant_t` object.
 
 - **operator = (***wstrSrc***)** 유니코드 문자열을 할당을 `_variant_t` 개체입니다.
 
@@ -147,7 +147,7 @@ _variant_t& operator=(
 
 - **operator = (***pIUnknownSrc***)** 할당을 `VT_UNKNOWN` 개체를 `_variant_t` 개체.
 
-- **연산자 = (***decSrc***)** 할당 된 `DECIMAL` 값을 `_variant_t` 개체입니다.
+- **operator=(**  *decSrc*  **)** Assigns a `DECIMAL` value to a `_variant_t` object.
 
 - **연산자 = (** `bSrc` **)** 할당 한 `BYTE` 값을 `_variant_t` 개체입니다.
 

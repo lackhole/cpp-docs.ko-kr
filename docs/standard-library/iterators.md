@@ -5,12 +5,12 @@ helpviewer_keywords:
 - iterator conventions
 - C++ Standard Library, iterator conventions
 ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
-ms.openlocfilehash: 3b6713a80244d7063baac2c75ffead76fe93facc
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: ae4193b8e6edf94ab0f8d839ac36fc1addfd8d04
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326501"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220319"
 ---
 # <a name="iterators"></a>반복기
 
@@ -86,7 +86,7 @@ C++ 표준 라이브러리의 컨테이너 및 알고리즘에서 반복기가 �
 > [!NOTE]
 > range-for 루프를 사용하여 반복기를 명시적으로 사용하지 않도록 할 수 있습니다. 자세한 내용은 [범위 기반 for 문](../cpp/range-based-for-statement-cpp.md)합니다.
 
-Visual c + +는 이제 컨테이너의 경계를 덮어쓰지 않도록 하려면 확인 된 반복기 및 디버그 반복기를 제공 합니다. 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md) 및 [디버그 반복기 지원](../standard-library/debug-iterator-support.md)을 참조하세요.
+Microsoft C++ 이제 제품에 컨테이너의 경계를 덮어쓰지 않도록 하는 반복기 및 디버그 반복기 확인 합니다. 자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md) 및 [디버그 반복기 지원](../standard-library/debug-iterator-support.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

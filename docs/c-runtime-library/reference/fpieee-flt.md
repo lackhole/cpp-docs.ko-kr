@@ -26,11 +26,11 @@ helpviewer_keywords:
 - fpieee_flt function
 ms.assetid: 2bc4801e-0eed-4e73-b518-215da8cc9740
 ms.openlocfilehash: 9a49ec403b1cb95407b0a366accf1d9374d9cb22
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50458619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333250"
 ---
 # <a name="fpieeeflt"></a>_fpieee_flt
 
@@ -54,7 +54,7 @@ int _fpieee_flt(
 *excInfo*<br/>
 Windows NT 예외 정보 구조체에 대한 포인터입니다.
 
-*처리기*<br/>
+*handler*<br/>
 사용자의 IEEE 트랩 처리기 루틴에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -70,7 +70,7 @@ Windows NT 예외 정보 구조체에 대한 포인터입니다.
 |_FPIEEE_RECORD 필드|설명|
 |----------------------------|-----------------|
 |**RoundingMode**<br/>**전체 자릿수**|이러한 **unsigned** **int** 필드에 대 한 정보가 부동 소수점 환경을 시 예외가 발생 합니다.|
-|**작업**|이렇게 **부호 없는** **int** 필드 트랩이 발생 시킨 작업의 유형을 나타냅니다. 형식이 비교 하는 경우 (**_FpCodeCompare**), 특수 한 중 하나를 제공할 수 있습니다 **_FPIEEE_COMPARE_RESULT** 값 (Fpieee.h에 정의 됨)에 **Result.Value** 필드입니다. 변환 형식 (**_FpCodeConvert**) 부동 소수점 변환 작업을 하는 동안 트랩이 발생 했음을 나타냅니다. 살펴볼 수 있습니다는 **Operand1** 하 고 **결과** 시도 되는 변환 형식을 확인 하는 형식입니다.|
+|**연산**|이렇게 **부호 없는** **int** 필드 트랩이 발생 시킨 작업의 유형을 나타냅니다. 형식이 비교 하는 경우 (**_FpCodeCompare**), 특수 한 중 하나를 제공할 수 있습니다 **_FPIEEE_COMPARE_RESULT** 값 (Fpieee.h에 정의 됨)에 **Result.Value** 필드입니다. 변환 형식 (**_FpCodeConvert**) 부동 소수점 변환 작업을 하는 동안 트랩이 발생 했음을 나타냅니다. 살펴볼 수 있습니다는 **Operand1** 하 고 **결과** 시도 되는 변환 형식을 확인 하는 형식입니다.|
 |**Operand1**<br/>**Operand2**<br/>**결과**|이러한 **_FPIEEE_VALUE** 구조체 형식 및 제안 된 결과 및 피연산자의 값을 나타냅니다. 각 구조에는 다음이 필드가 포함 됩니다.<br /><br /> **OperandValid** -응답 값이 올바른지 여부를 나타내는 플래그입니다.<br />**형식** -해당 값의 데이터 형식입니다. 해당 값이 잘못되어도 형식 유형이 반환될 수 있습니다.<br />**값** -결과 또는 피연산자 데이터 값입니다.|
 |**원인**<br/>**Enable**<br/>**Status**|**_FPIEEE_EXCEPTION_FLAGS** 부동 소수점 예외 형식당 1 비트 필드를 포함 합니다. 이러한 필드와 [_controlfp](control87-controlfp-control87-2.md)에 제공된 예외를 마스크하는 데 사용하는 인수 간에 대응 관계가 있습니다. 각 비트의 정확한 의미는 컨텍스트에 따라 달라집니다.<br /><br /> **원인** -각 설정 비트 발생 하는 특정 예외를 나타냅니다.<br />**사용 하도록 설정** -각 설정 비트는 특정 예외가 현재 마스크 되지 않음을 나타냅니다.<br />**상태** -각 설정 비트는 특정 예외가 현재 보류 중임을 나타냅니다. 여기에 의해 마스크 되었기 때문에 발생 하지는 예외 **_controlfp**합니다.|
 

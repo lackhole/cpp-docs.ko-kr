@@ -12,11 +12,11 @@ helpviewer_keywords:
 - multithreading [C++], synchronization classes
 ms.assetid: 4914f54e-68ac-438f-93c9-c013455a657e
 ms.openlocfilehash: 72cf5310704c1ae959cc012146a03dd32cff4068
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57284374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62407655"
 ---
 # <a name="multithreading-when-to-use-the-mfc-synchronization-classes"></a>다중 스레딩: MFC 동기화 클래스를 사용 하는 경우
 
@@ -52,7 +52,7 @@ MFC와 함께 제공 되는 다중 스레드 클래스 두 가지 범주로 나�
 
 훨씬 간단한 동기화 액세스 클래스를 사용 하 여 선택 합니다. 응용 프로그램 제어 된 단일 리소스에만 액세스와 관련 된 경우 사용 하 여 `CSingleLock`입니다. 사용 하 여 다양 한 제어 된 리소스 중 하나에 대 한 액세스를 해야 하는 경우 `CMultiLock`합니다. 예제 1에서는 `CSingleLock` 사용 되었을, 각각의 경우에서 하나의 리소스에만 특정 시간에 필요 하므로 합니다.
 
-동기화 클래스를 사용 하는 방법에 대 한 자세한 내용은 [다중 스레딩: 동기화 클래스 사용 방법](multithreading-how-to-use-the-synchronization-classes.md)합니다. 동기화에 대 한 자세한 내용은 [동기화](/windows/desktop/Sync/synchronization) Windows SDK에 있습니다. MFC에서 다중 스레딩 지원에 대 한 자세한 내용은 [c + + 및 MFC 다중 스레딩](multithreading-with-cpp-and-mfc.md)합니다.
+동기화 클래스를 사용 하는 방법에 대 한 자세한 내용은 [다중 스레딩: 동기화 클래스 사용 방법](multithreading-how-to-use-the-synchronization-classes.md)합니다. 동기화에 대 한 자세한 내용은 [동기화](/windows/desktop/Sync/synchronization) Windows SDK에 있습니다. MFC에서 다중 스레딩 지원에 대 한 자세한 내용은 [스레딩 C++ 및 MFC](multithreading-with-cpp-and-mfc.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -1,6 +1,6 @@
 ---
 title: '&lt;chrono&gt;'
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 f1_keywords:
 - chrono/std::chrono::nanoseconds
 - chrono/std::chrono::minutes
@@ -10,18 +10,18 @@ f1_keywords:
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-ms.openlocfilehash: 1fcf87d84b2c99b89217b7f2e0fc7fecd55fff02
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 44620b6ea6c970027a8e9a023c0972c6dec43ee0
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331479"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220249"
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 
 표준 헤더 \<chrono>를 포함하여 기간 및 시간 인스턴트를 나타내고 조작하는 클래스와 함수를 정의합니다.
 
-Visual Studio 2015에서 구현부터 `steady_clock` 속성 및 단 조성에 대 한 c + + 표준 요구 사항을 충족 하도록 변경 되었습니다. 현재 `steady_clock`은 QueryPerformanceCounter()를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. 따라서 Visual C++에서 `steady_clock::time_point`는 현재 `chrono::time_point<steady_clock>`에 대한 typedef이나, 다른 구현에 이를 반드시 적용할 필요는 없습니다.
+Visual Studio 2015에서 구현부터 `steady_clock` 충족 하도록 변경 되었습니다 합니다 C++ 속성 및 단 조성에 대 한 표준 요구 사항입니다. 현재 `steady_clock`은 QueryPerformanceCounter()를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. Microsoft에서 결과적으로, C++ 컴파일러 `steady_clock::time_point` 에 대 한 typedef `chrono::time_point<steady_clock>`하지만이 아닐 경우 다른 구현에 대 한 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,7 +36,7 @@ Visual Studio 2015에서 구현부터 `steady_clock` 속성 및 단 조성에 �
 |[duration 클래스](../standard-library/duration-class.md)|시간 간격을 포함하는 유형을 설명합니다.|
 |[time_point 클래스](../standard-library/time-point-class.md)|시점을 나타내는 형식을 설명합니다.|
 
-### <a name="structs"></a>Structs
+### <a name="structs"></a>구조체
 
 |이름|설명|
 |----------|-----------------|

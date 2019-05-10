@@ -11,11 +11,11 @@ helpviewer_keywords:
 - messages [MFC], Windows
 ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
 ms.openlocfilehash: d60ae52225ddd993c1768d0b5ce1989ab0192e45
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358242"
 ---
 # <a name="handlers-for-standard-windows-messages"></a>표준 Windows 메시지에 대한 처리기
 
@@ -23,7 +23,7 @@ ms.locfileid: "57275391"
 
 `afx_msg void OnPaint();`
 
-합니다 **afx_msg** 키워드는 c + +의 효과 제안 **가상** 처리기는 서로 구분 하 여 `CWnd` 멤버 함수입니다. 하지만 이러한 함수는 실제로 가상이 아니며, 대신 메시지 맵을 통해 구현됩니다. 메시지 맵은 C++ 언어의 확장이 아닌 표준 전처리기 매크로에만 의존합니다. 합니다 **afx_msg** 키워드 전처리 후 공백으로 확인 합니다.
+**afx_msg** 키워드의 효과 제안 합니다 C++ **가상** 처리기는 서로 구분 하 여 `CWnd` 멤버 함수입니다. 하지만 이러한 함수는 실제로 가상이 아니며, 대신 메시지 맵을 통해 구현됩니다. 메시지 맵은 C++ 언어의 확장이 아닌 표준 전처리기 매크로에만 의존합니다. 합니다 **afx_msg** 키워드 전처리 후 공백으로 확인 합니다.
 
 기본 클래스에 정의된 처리기를 재정의하려면 단순히 파생된 클래스의 동일 프로토타입으로 함수를 정의하고 처리기에 대한 메시지-맵 항목을 만듭니다. 처리기는 클래스의 기본 클래스에서 동일한 이름의 모든 처리기를 "재정의"합니다.
 

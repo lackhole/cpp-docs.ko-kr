@@ -1,6 +1,6 @@
 ---
 title: char_traits 구조체
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 f1_keywords:
 - iosfwd/std::char_traits
 - iosfwd/std::char_traits::char_type
@@ -27,12 +27,12 @@ helpviewer_keywords:
 - char_traits struct
 - char_traits class
 ms.assetid: 568e59f0-4521-4207-9223-9dcf6a16d620
-ms.openlocfilehash: 2975c839e07093a22d910f295be730fdd68839cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 541f468071e315b205abb8f7b9c865f045c510fe
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640377"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220514"
 ---
 # <a name="chartraits-struct"></a>char_traits 구조체
 
@@ -255,10 +255,10 @@ static char_type *copy(char_type* _To,
 
 ### <a name="parameters"></a>매개 변수
 
-*위치 (_t)*<br/>
+*_To*<br/>
 복사된 문자 시퀀스를 수신하도록 지정된 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*기반 (_f)*<br/>
+*_From*<br/>
 복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
 *_Num*<br/>
@@ -323,7 +323,7 @@ static char_type *_Copy_s(
 *dest_size*<br/>
 크기인 *dest*합니다. 하는 경우 `char_type` 됩니다 **char**,이 크기는 바이트 단위입니다. 하는 경우 `char_type` 됩니다 **wchar_t**,이 크기는 단어 단위입니다.
 
-*기반 (_f)*<br/>
+*_From*<br/>
 복사할 소스 문자열 또는 문자 배열입니다.
 
 *count*<br/>
@@ -384,7 +384,7 @@ EOF 문자입니다.
 
 (예: EOF 또는 WEOF) 파일의 끝을 나타내는 값입니다.
 
-C++ 표준에서는 이 값이 유효한 `char_type` 값에 해당하면 안 됩니다. Visual c + + 컴파일러는 형식에 대 한이 제약 조건은 **char**, 형식이 아니라 **wchar_t**합니다. 아래 예제에서는 이 작업을 보여 줍니다.
+C++ 표준에서는 이 값이 유효한 `char_type` 값에 해당하면 안 됩니다. Microsoft C++ 컴파일러는 형식에 대 한이 제약 조건은 **char**에 형식이 아니라 **wchar_t**합니다. 아래 예제에서는 이 작업을 보여 줍니다.
 
 ### <a name="example"></a>예제
 
@@ -763,10 +763,10 @@ static char_type *move(char_type* _To,
 
 ### <a name="parameters"></a>매개 변수
 
-*위치 (_t)*<br/>
+*_To*<br/>
 복사된 문자 시퀀스를 수신하도록 지정된 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*기반 (_f)*<br/>
+*_From*<br/>
 복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
 *_Num*<br/>
@@ -846,7 +846,7 @@ static char_type *_Move_s(
 *dest_size*<br/>
 크기인 *dest*합니다. 하는 경우 `char_type` 됩니다 **char**, (바이트)에서입니다. 하는 경우 `char_type` 됩니다 **wchar_t**, 단어에서입니다.
 
-*기반 (_f)*<br/>
+*_From*<br/>
 복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
 *count*<br/>

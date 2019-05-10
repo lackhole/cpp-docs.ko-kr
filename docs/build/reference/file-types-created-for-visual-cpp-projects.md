@@ -1,5 +1,5 @@
 ---
-title: Visual C++ 프로젝트용으로 만들어지는 파일 형식
+title: Visual Studio 용으로 만들어지는 형식 파일 C++ 프로젝트
 ms.date: 04/08/2019
 helpviewer_keywords:
 - header files [C++], Visual Studio projects
@@ -14,12 +14,12 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-ms.openlocfilehash: eee53acbb8b0b8432a7d5819fb773b616f0e8897
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: 42040854b7a038ebe32d67e305c947d095d5391a
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59424095"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446295"
 ---
 # <a name="file-types-created-for-visual-studio-c-projects"></a>Visual Studio에 대해 만들어진 형식 파일 C++ 프로젝트
 

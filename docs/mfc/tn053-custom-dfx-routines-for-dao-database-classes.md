@@ -14,16 +14,16 @@ helpviewer_keywords:
 - custom DFX routines [MFC]
 ms.assetid: fdcf3c51-4fa8-4517-9222-58aaa4f25cac
 ms.openlocfilehash: b610604c1b7a68128dc9eb6fb5515225ed22b16e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399683"
 ---
 # <a name="tn053-custom-dfx-routines-for-dao-database-classes"></a>TN053: DAO 데이터베이스 클래스에 대 한 사용자 지정 DFX 루틴
 
 > [!NOTE]
->  Visual c + + 환경 및 마법사 (DAO 클래스에 포함 되어 있으며 계속 사용할 수 있습니다) 이지만 DAO을 지원 하지 않습니다. 사용 하는 것이 좋습니다 [OLE DB Templates](../data/oledb/ole-db-templates.md) 하거나 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 새 프로젝트에 대 한 합니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
+>  시각적 개체 C++ 환경 및 마법사 지원 하지 않습니다 DAO (하지만 DAO 클래스에 포함 되어 있으며 계속 사용할 수 있습니다). 사용 하는 것이 좋습니다 [OLE DB Templates](../data/oledb/ole-db-templates.md) 하거나 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 새 프로젝트에 대 한 합니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
 
 이 기술 노트는 DAO 레코드 필드 교환 (DFX) 메커니즘을 설명합니다. DFX 루틴의 상황을 이해 하는 데는 `DFX_Text` 함수 예를 자세히 설명 합니다. 이 기술 노트에 정보 추가 원본으로 검사할 수 있는 코드를 다른 개별 DFX 함수입니다. 아마도 필요는 없습니다 사용자 지정 DFX 루틴 만큼 사용자 지정 RFX 루틴 (ODBC 데이터베이스 클래스 사용) 해야 할 수 있습니다.
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - base classes [C++]
 ms.assetid: 6e6d54d0-6f21-4a16-9103-22935d98f596
 ms.openlocfilehash: 59c474f54ea439acf83cf6923eba6e167901dd37
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62392419"
 ---
 # <a name="base-classes"></a>기본 클래스
 
-상속 프로세스는 기본 클래스의 멤버와 파생 클래스에 의해 추가된 모든 새 멤버로 구성된 새로운 파생 클래스를 만듭니다. 다중 상속에서는 동일한 기본 클래스가 둘 이상의 파생 클래스에 속하는 상속 그래프를 생성할 수 있습니다. 다음 그림에서는 이러한 그래프를 보여 줍니다.
+상속 프로세스는 기본 클래스의 멤버와 파생된 클래스에 의해 추가된 모든 새 멤버로 구성된 새로운 파생 클래스를 만듭니다. 다중 상속에서는 동일한 기본 클래스가 둘 이상의 파생 클래스에 속하는 상속 그래프를 생성할 수 있습니다. 다음 그림에서는 이러한 그래프를 보여 줍니다.
 
 ![기본 클래스의 여러 인스턴스](../cpp/media/vc38xn1.gif "기본 클래스의 여러 인스턴스") <br/>
 단일 기본 클래스의 여러 인스턴스

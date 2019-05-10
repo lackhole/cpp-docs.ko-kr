@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 오류 C3100 ~ C3199
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C3102
 - C3105
@@ -66,12 +66,12 @@ helpviewer_keywords:
 - C3191
 - C3193
 ms.assetid: 7bc40c2f-6a8d-488a-b665-f39375afee77
-ms.openlocfilehash: 72228be503cee9b080ae667f36b042af88161894
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: efa3207a9fdfb81a52bf319a1cbc2da84084b6cd
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481876"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856818"
 ---
 # <a name="compiler-errors-c3100-through-c3199"></a>컴파일러 오류 C3100 ~ C3199
 
@@ -116,7 +116,7 @@ ms.locfileid: "50481876"
 |[컴파일러 오류 C3130](compiler-error-c3130.md)|내부 컴파일러 오류: 삽입 된 코드 블록을 PDB에 쓰지 못했습니다.|
 |[컴파일러 오류 C3131](compiler-error-c3131.md)|프로젝트에 'name' 속성과 'module' 특성이 있어야 합니다.|
 |[컴파일러 오류 C3132](compiler-error-c3132.md)|'*매개 변수*': 'WinRT 관리 되는 1 차원 배열' 형식의 형식 인수에 매개 변수 배열만 적용할 수|
-|[컴파일러 오류 C3133](compiler-error-c3133.md)|C + + varargs에 특성을 적용할 수 없습니다.|
+|[컴파일러 오류 C3133](compiler-error-c3133.md)|특성에 적용할 수 없습니다 C++ varargs|
 |[컴파일러 오류 C3134](compiler-error-c3134.md)|'*값*': 특성 인수의 값이 '*인수*'형식이 아닌 유효한'*형식*'|
 |[컴파일러 오류 C3135](compiler-error-c3135.md)|'*식별자*': 속성을 'const' 또는 'volatile' 형식을 수 없습니다.|
 |[컴파일러 오류 C3136](compiler-error-c3136.md)|'*인터페이스*': COM 인터페이스를 다른 COM 인터페이스에서 에서만 상속할 수 '*인터페이스*' COM 인터페이스가 아니므로|
@@ -183,3 +183,8 @@ ms.locfileid: "50481876"
 |[컴파일러 오류 C3197](compiler-error-c3197.md)|'*키워드*': 정의에 사용할 수 있습니다|
 |[컴파일러 오류 C3198](compiler-error-c3198.md)|부동 소수점 pragma 잘못 사용 했습니다: fenv_access pragma는 precise 모드 에서만에서 작동|
 |[컴파일러 오류 C3199](compiler-error-c3199.md)|부동 소수점 pragma 잘못 사용 했습니다: 예외는 명확 하지 않은 모드에서 지원 되지 않습니다|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

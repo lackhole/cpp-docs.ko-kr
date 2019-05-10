@@ -1,17 +1,15 @@
 ---
 title: 이벤트 처리
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 helpviewer_keywords:
-- attributes [C++], event handling
-- intrinsic functions [C++], event handling
-- event handling [C++], Visual C++
+- event handling [C++]
 ms.assetid: 82de3f9a-2d88-470c-9527-8a5b54c8ced4
-ms.openlocfilehash: 4c6701f04544b336de97196e8b65f4d0cd4be296
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: bd74ba0b20e2058f0b04d0d0d3c22c9d526157a0
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769474"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222114"
 ---
 # <a name="event-handling"></a>이벤트 처리
 
@@ -21,7 +19,7 @@ COM 개체를 구현하지 않는 C++ 클래스인 네이티브 C++ 클래스도
 
 이벤트 처리는 단일 및 다중 스레드 사용을 지원하며 동시 다중 스레드 액세스로부터 데이터를 보호합니다. 이벤트 처리를 사용하면 이벤트를 주고 받는 클래스에서 하위 클래스를 파생시키고 파생된 클래스에서 확장된 이벤트를 보내고 받을 수 있습니다.
 
-Visual C++에는 이벤트와 이벤트 처리기를 선언하는 특성과 키워드가 있습니다. CLR 프로그램과 네이티브 C++ 프로그램에서 이벤트 특성과 키워드를 사용할 수 있습니다.
+Microsoft C++ 컴파일러는 특성 및 이벤트와 이벤트 처리기를 선언 하는 것에 대 한 키워드를 포함 합니다. CLR 프로그램과 네이티브 C++ 프로그램에서 이벤트 특성과 키워드를 사용할 수 있습니다.
 
 |항목|설명|
 |-----------|-----------------|

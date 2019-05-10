@@ -31,11 +31,11 @@ helpviewer_keywords:
 - fdiml function
 ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
 ms.openlocfilehash: 263635a32b21b01faa84405ab97bd5518f054ba5
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62334790"
 ---
 # <a name="fdim-fdimf-fdiml"></a>fdim, fdimf, fdiml
 
@@ -99,7 +99,7 @@ long double fdiml(
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **fdim** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **fdim** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **fdim** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **fdim** 항상 받아서 반환 된 **double**합니다.
 
 NaN 처리를 제외 하 고이 함수는 동일 `fmax(x - y, 0)`합니다.
 
@@ -107,7 +107,7 @@ NaN 처리를 제외 하 고이 함수는 동일 `fmax(x - y, 0)`합니다.
 
 |기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**fdim**하십시오 **fdimf**, **fdiml**|\<math.h>|\<cmath>|
+|**fdim**, **fdimf**, **fdiml**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

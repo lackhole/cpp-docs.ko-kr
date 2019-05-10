@@ -13,16 +13,15 @@ helpviewer_keywords:
 - task_continuation_context class
 ms.assetid: 1fb5a76a-3682-45c2-a615-8b6b527741f0
 ms.openlocfilehash: 5d7d92fcd1bb00513b9e05030afa56726e87183b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57280294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212859"
 ---
 # <a name="taskcontinuationcontext-class"></a>task_continuation_context 클래스
 
-
-  `task_continuation_context` 클래스를 사용하면 연속 실행 위치를 지정할 수 있습니다. 만 Windows 런타임 앱에서이 클래스를 사용 하는 것이 유용 합니다. 비-Windows 런타임 앱에 대 한 작업 연속의 실행 컨텍스트는 런타임에 의해 결정 및 구성할 수 없습니다.
+`task_continuation_context` 클래스를 사용하면 연속 실행 위치를 지정할 수 있습니다. 만 Windows 런타임 앱에서이 클래스를 사용 하는 것이 유용 합니다. 비-Windows 런타임 앱에 대 한 작업 연속의 실행 컨텍스트는 런타임에 의해 결정 및 구성할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -74,7 +73,7 @@ static task_continuation_context get_current_winrt_context();
 
 반환한 값 `get_current_winrt_context` 선행 작업이 아파트를 인식 하는지 여부에 관계 없이 캡처된 컨텍스트 (STA 및 MTA)의 아파트 모델에서 연속 작업을 실행 해야 런타임에 나타내는 데 사용할 수 있습니다. 아파트 인식 작업에는 Windows 런타임의 래핑을 해제 하는 작업은 `IAsyncInfo` 인터페이스 또는 그러한 작업의 하위 작업을 합니다.
 
-이 메서드는 비슷합니다는 `use_current` 메서드 하지만 C + 없이 네이티브 c + + 코드를 사용할 수도 있습니다. + CX 확장 지원 합니다. 것으로 사용 하 여 고급 사용자가 작성 C + + /cli CX 제약 없는 라이브러리 코드를 네이티브와 Windows 런타임 호출자에 대 한 합니다. 이 기능이 필요 하지 않는 한 것이 좋습니다는 `use_current` 메서드를만 사용할 수 있는 C + + CX 클라이언트.
+이 메서드는 비슷합니다는 `use_current` 메서드를 하지만 네이티브를 사용할 수도 있습니다. C++ 없이 코드 C++/CX 확장 지원 합니다. 사용 하 여 고급 사용자가 작성 한 것은 C++native와 Windows 런타임 호출자에 대 한 /CX-agnostic 라이브러리 코드입니다. 이 기능이 필요 하지 않는 한 것이 좋습니다 합니다 `use_current` 메서드를 사용할 수 있는 C++/CX 클라이언트입니다.
 
 ##  <a name="use_arbitrary"></a> use_arbitrary
 

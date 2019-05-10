@@ -11,16 +11,16 @@ helpviewer_keywords:
 - -ZW
 - Windows Runtime compiler option
 ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248
-ms.openlocfilehash: 73295866004fd506fd5f06ff25c048d14b821016
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: 0808f66c4d4c4e99b3038ea18a1f71f4ebaca89a
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59424042"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446171"
 ---
 # <a name="zw-windows-runtime-compilation"></a>/ZW(Windows Runtime 컴파일)
 
-소스 시각적 개체를 지원 하기 위해 코드를 컴파일합니다 C++ 구성 요소 확장 C++유니버설 Windows 플랫폼 (UWP) 앱을 만들 /CX입니다.
+소스 Microsoft를 지원 하기 위해 코드를 컴파일합니다 C++ 구성 요소 확장 C++유니버설 Windows 플랫폼 (UWP) 앱을 만들 /CX입니다.
 
 사용 하는 경우 **/ZW** 컴파일하려면를 항상 지정 **/EHsc** 도 합니다.
 

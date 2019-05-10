@@ -5,18 +5,18 @@ helpviewer_keywords:
 - Concurrency Runtime, migrating from OpenMP
 - OpenMP, migrating to the Concurrency Runtime
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
-ms.openlocfilehash: 16b0f175867e18e127997749098cce998674b3d2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ba2b413d40da601029f5c4e1d861576212c10494
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259505"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448429"
 ---
 # <a name="migrating-from-openmp-to-the-concurrency-runtime"></a>OpenMP에서 동시성 런타임으로 마이그레이션
 
 동시성 런타임은 다양한 프로그래밍 모델을 사용합니다. 이러한 모델은 중복되거나 다른 라이브러리의 모델을 보완할 수 있습니다. 이 문서의 섹션 비교 [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp) 동시성 런타임으로 동시성 런타임을 사용 하도록 기존 OpenMP 코드를 마이그레이션하는 방법에 대 한 예제를 제공 합니다.
 
-OpenMP 프로그래밍 모델은 공개 표준에 의해 정의되며, Fortran 및 C/C++ 프로그래밍 언어에 대한 잘 정의된 바인딩을 가지고 있습니다. OpenMP 버전 2.0 및 Visual c + + 컴파일러가 지 원하는 2.5는 반복적인;는 병렬 알고리즘에 적합 즉, 데이터의 배열에 대해 병렬 반복을 수행 합니다. OpenMP 3.0 반복적인 작업 외에 비 반복 작업을 지원합니다.
+OpenMP 프로그래밍 모델은 공개 표준에 의해 정의되며, Fortran 및 C/C++ 프로그래밍 언어에 대한 잘 정의된 바인딩을 가지고 있습니다. OpenMP 버전 2.0 및 2.5는 Microsoft에서 지원 되는 C++ 컴파일러는 반복적인;는 병렬 알고리즘에 적합된 즉, 데이터의 배열에 대해 병렬 반복을 수행 합니다. OpenMP 3.0 반복적인 작업 외에 비 반복 작업을 지원합니다.
 
 OpenMP는 병렬 처리 수준이 미리 결정되어 있고 시스템에서 사용 가능한 리소스와 일치할 때 가장 효율적입니다. OpenMP 모델은 대규모 컴퓨팅 문제가 한 컴퓨터의 처리 리소스 간에 분산 되어 있는 고성능 컴퓨팅, 특히 적합 합니다. 이 시나리오에서는 하드웨어 환경이 일반적으로 고정 되어 있고 개발자는 알고리즘이 실행 될 때 모든 컴퓨팅 리소스에 대 한 단독 액세스를 가질 수 있습니다.
 
@@ -44,7 +44,7 @@ OpenMP는 병렬 처리 수준이 미리 결정되어 있고 시스템에서 사
 |-----------|-----------------|
 |요구 사항을 충족 하는 응용 프로그램에 이미 있습니다.|응용 프로그램 성능 및 현재 디버깅 지원에 만족 하는 경우 마이그레이션을 적절 한 수 없습니다.|
 |병렬 루프 본문이 약간의 작업을 수행합니다.|동시성 런타임 작업 scheduler의 오버 헤드가 루프 본문 상대적으로 적은 경우에 특히 병렬로 루프 본문을 실행 하는 이점이 크지 않을 수 있습니다.|
-|C에서 작성 된 응용 프로그램|동시성 런타임은 다양 한 c + + 기능을 사용 하므로 아닐 적합 한 완벽 하 게 사용 하는 C 응용 프로그램을 사용 하는 코드를 쓸 수 없는 경우.|
+|C에서 작성 된 응용 프로그램|여러 동시성 런타임을 사용 하기 때문에 C++ 기능을이 적합 하지 않을 C 응용 프로그램을 완벽 하 게 사용할 수 있도록 하는 코드를 쓸 수 없는 경우.|
 
 ## <a name="related-topics"></a>관련 항목
 

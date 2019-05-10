@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Zc:alignedNew
 - -Zc:alignedNew
 ms.openlocfilehash: e0d850d54611579288b81a334af4abdfab6e411c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315802"
 ---
 # <a name="zcalignednew-c17-over-aligned-allocation"></a>/Zc:alignedNew (C + + 17 과다 정렬 된 할당)
 
@@ -93,13 +93,13 @@ aligned new(256, 256) = 009FE800
 aligned sized delete(009FE800, 256, 256)
 ```
 
-Visual c + +의 규칙과 관련 된 문제에 대 한 정보를 참조 하세요 [비표준 동작](../../cpp/nonstandard-behavior.md)합니다.
+시각적 개체의 규칙과 관련 된 문제에 대 한 내용은 C++를 참조 하세요 [비표준 동작](../../cpp/nonstandard-behavior.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. 수정 된 **추가 옵션** 포함할 속성을 **/Zc:alignedNew** 또는 **/Zc:alignedNew-** 를 선택한 후 **확인**합니다.
 

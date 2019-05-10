@@ -6,11 +6,11 @@ helpviewer_keywords:
 - tabbed grous [MFC]
 ms.assetid: 0a464f36-39b7-4e68-8b67-ec175de28377
 ms.openlocfilehash: 6b68d1bc06a6827ca94b05fa2760206f424d40fe
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62310844"
 ---
 # <a name="mdi-tabbed-groups"></a>MDI 탭 그룹
 
@@ -42,8 +42,7 @@ ms.locfileid: "57289522"
 
 다음은 MDI 탭 그룹에서 일반적으로 수행되는 작업입니다.
 
-- 주 프레임 창에 대해 MDI 탭 그룹을 사용 하도록 설정 하려면 호출 [cmdiframewndex:: Enablemditabbedgroups](../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups)합니다. 이 메서드의 두 번째 매개 변수는 `CMDITabInfo` 클래스의 인스턴스입니다. 
-  `CMDIFrameWndEx::EnableMDITabbedGroups`를 호출하기 전에 기본 매개 변수를 사용하거나 이를 수정할 수 있습니다.
+- 주 프레임 창에 대해 MDI 탭 그룹을 사용 하도록 설정 하려면 호출 [cmdiframewndex:: Enablemditabbedgroups](../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups)합니다. 이 메서드의 두 번째 매개 변수는 `CMDITabInfo` 클래스의 인스턴스입니다. `CMDIFrameWndEx::EnableMDITabbedGroups`를 호출하기 전에 기본 매개 변수를 사용하거나 이를 수정할 수 있습니다.
 
 - 런타임에 MDI 탭 그룹의 속성을 수정하려면 `CMDITabInfo` 개체를 만들거나 수정하고 `CMDIFrameWndEx::EnableMDITabbedGroups`를 다시 호출합니다.
 

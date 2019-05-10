@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - XML documentation, delimiters
 ms.assetid: debfbdd9-63fa-4c58-a18e-a4d203d241d7
-ms.openlocfilehash: fec10171270a76ed90e2a7459103a148af0ba735
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: a5a0534ba74cc9b125e94d4ece133c2449700a67
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57828112"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446534"
 ---
 # <a name="delimiters-for-visual-c-documentation-tags"></a>Visual C++ 문서 태그의 구분 기호
 
@@ -19,7 +19,7 @@ XML 문서 태그에 다음과 같은 종류의 구분 기호를 사용할 수 �
 
 | | |
 |-|-|
-| `///` | 문서 예제에 표시되고 Visual C++ 프로젝트 템플릿에 사용되는 형식입니다.  |
+| `///` | 이러한 형식은 문서 예제에 표시 되 고 Visual Studio를 사용 하는 C++ 프로젝트 템플릿.  |
 | `/** */`  | 여러 줄 구분 기호입니다.  |
 
 `/** */` 구분 기호를 사용할 때 몇 가지 서식 규칙이 있습니다.

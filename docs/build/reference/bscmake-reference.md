@@ -1,6 +1,6 @@
 ---
 title: BSCMAKE 참조
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - BSCMAKE, reference
 - Microsoft Browse Information Maintenance Utility
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - bsc files, building
 - BSCMAKE
 ms.assetid: b97ad994-1355-4809-98db-6abc12c6fb13
-ms.openlocfilehash: 4303e48e3d02f0f69b177e8a888157a6f90aaa89
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 72ad297ee5a24bc0c7ffd3ed25959031d0b8a309
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822355"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220552"
 ---
 # <a name="bscmake-reference"></a>BSCMAKE 참조
 
@@ -24,7 +24,7 @@ ms.locfileid: "57822355"
 
 Microsoft Browse Information Maintenance Utility(BSCMAKE.EXE)에서는 컴파일 중에 생성된 .sbr 파일에서 찾아보기 정보 파일(.bsc)이 빌드됩니다. 특정 타사 도구는 코드 분석을 위한.bsc 파일을 사용합니다.
 
-프로그램을 빌드할 때 BSCMAKE를 사용하여 파일을 빌드하면 프로그램에 대한 찾아보기 정보를 자동으로 만들 수 있습니다. Visual C++ 개발 환경에서 찾아보기 정보 파일을 만들면 BSCMAKE를 실행하는 방법을 알 필요가 없습니다. 그러나 이 항목을 읽으면 사용 가능한 선택 항목을 이해할 수 있습니다.
+프로그램을 빌드할 때 BSCMAKE를 사용하여 파일을 빌드하면 프로그램에 대한 찾아보기 정보를 자동으로 만들 수 있습니다. Visual Studio 개발 환경에서 찾아보기 정보 파일을 만들면 BSCMAKE를 실행 하는 방법을 알 필요가 없습니다. 그러나 이 항목을 읽으면 사용 가능한 선택 항목을 이해할 수 있습니다.
 
 개발 환경 외부에서 프로그램을 빌드하면 해당 환경에서 검사할 수 있는 사용자 지정 .bsc를 만들 수 있습니다. 컴파일 중에 만든 .sbr 파일에서 BSCMAKE를 실행합니다.
 

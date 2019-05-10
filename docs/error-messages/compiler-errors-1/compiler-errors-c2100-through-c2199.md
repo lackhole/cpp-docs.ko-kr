@@ -1,6 +1,6 @@
 ---
-title: 컴파일러 오류s C2100 through C2199
-ms.date: 11/17/2017
+title: 컴파일러 오류 C2100 ~ C2199
+ms.date: 04/21/2019
 f1_keywords:
 - C2119
 - C2123
@@ -23,14 +23,14 @@ helpviewer_keywords:
 - C2187
 - C2189
 ms.assetid: 1ccab076-0954-4386-b959-d3112a6793ae
-ms.openlocfilehash: 31974bb830364b2ef41a7da17cb0ad95d931f771
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: 3a5a5368700eb1c4c585826021fefc21c25ecedf
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57423536"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857407"
 ---
-# <a name="compiler-errors-c2100-through-c2199"></a>컴파일러 오류s C2100 through C2199
+# <a name="compiler-errors-c2100-through-c2199"></a>컴파일러 오류 C2100 ~ C2199
 
 설명서의이 섹션의 문서는 컴파일러에서 생성 되는 오류 메시지의 하위 집합을 설명 합니다.
 
@@ -140,3 +140,8 @@ ms.locfileid: "57423536"
 |[컴파일러 오류 C2197](compiler-error-c2197.md)|'*함수*': 호출에 대 한 인수가 너무 많습니다.|
 |[컴파일러 오류 C2198](compiler-error-c2198.md)|'*함수*': 호출에 대 한 인수가 너무 적습니다.|
 |[컴파일러 오류 C2199](compiler-error-c2199.md)|구문 오류: 찾을 수 '*식별자* (' 전역 범위에서 (계획 된 선언?)|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

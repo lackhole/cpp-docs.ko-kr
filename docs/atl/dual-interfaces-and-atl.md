@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dual interfaces, about dual interfaces
 ms.assetid: 5a390e89-d2c4-41f0-8538-cab2c5e5d4c8
 ms.openlocfilehash: efa523099aaca77fba06efdaeabd1c7562a372a5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62234841"
 ---
 # <a name="dual-interfaces-and-atl"></a>이중 인터페이스 및 ATL
 
 이중 인터페이스의 메서드를 dispinterface 메서드로 나 vtable 메서드로 액세스 될 수 있습니다. 이 섹션에서는 ATL의 관점에서 이중 인터페이스의 기능 중 일부를 다룹니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [이중 인터페이스 구현](../atl/implementing-a-dual-interface.md)<br/>
 클래스 및 이중 인터페이스 구현에 관련 된 마법사에 설명 합니다.

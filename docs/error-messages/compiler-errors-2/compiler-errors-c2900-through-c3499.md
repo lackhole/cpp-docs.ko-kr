@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 오류 C2900 ~ C2999
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C2900
 - C2901
@@ -72,12 +72,12 @@ helpviewer_keywords:
 - C2997
 - C2999
 ms.assetid: e3440738-e11b-4878-9ae3-6bc6c53ba461
-ms.openlocfilehash: 4d430d1d446147c662f7f6405185aee75d95bc0b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5d443153582921775a72e5af647d65b102b80b0b
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466900"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857216"
 ---
 # <a name="compiler-errors-c2900-through-c2999"></a>컴파일러 오류 C2900 ~ C2999
 
@@ -90,7 +90,7 @@ ms.locfileid: "50466900"
 |Error|메시지|
 |-----------|-------------|
 |컴파일러 오류 C2900|'*declarator*': WinRT 클래스의 멤버 함수 템플릿은 'private', 'internal' 또는 'protected private' 해야 합니다.|
-|컴파일러 오류 C2901|'*식별자*': 제네릭 인터페이스 또는 대리자는 public 일 수 없습니다|
+|컴파일러 오류 C2901|'*identifier*': 제네릭 인터페이스 또는 대리자는 public 일 수 없습니다.|
 |[컴파일러 오류 C2902](compiler-error-c2902.md)|'*토큰*': 예기치 않은 토큰 다음 ' 템플릿/제네릭 ', 식별자가 필요|
 |[컴파일러 오류 C2903](compiler-error-c2903.md)|'*식별자*': 기호가 클래스 템플릿/제네릭 아니고 함수 템플릿/제네릭|
 |[컴파일러 오류 C2904](compiler-error-c2904.md)|'*식별자*': 이름이 현재 범위의 템플릿으로 이미 사용|
@@ -107,11 +107,11 @@ ms.locfileid: "50466900"
 |컴파일러 오류 C2915|'*식별자*': '*형식*'는 WinRT 형식의 게시 된 표면에서 직접 사용할 수 없습니다. 사용 하 여 ' platform:: object ^' 대신이 형식을 전달|
 |컴파일러 오류 C2916|'*식별자*': [FlagsAttribute] 지정 해야 합니다 (전용) public 열거형에는 'unsigned int' 내부 형식을 사용 하 여|
 |[컴파일러 오류 C2917](compiler-error-c2917.md)|'*식별자*': 잘못 된 템플릿 매개 변수|
-|[컴파일러 오류 C2918](compiler-error-c2918.md)|'*식별자*': WinRT 형식의 게시 된 표면에서는 인덱싱된 속성을 사용할 수 없습니다.|
-|[컴파일러 오류 C2919](compiler-error-c2919.md)|'*형식*': WinRT 형식의 게시 된 표면에서는 연산자를 사용할 수 없습니다|
+|[컴파일러 오류 C2918](compiler-error-c2918.md)|'*identifier*': WinRT 형식의 게시 된 표면에서는 인덱싱된 속성을 사용할 수 없습니다.|
+|[컴파일러 오류 C2919](compiler-error-c2919.md)|'*type*': WinRT 형식의 게시 된 표면에서는 연산자를 사용할 수 없습니다.|
 |[컴파일러 오류 C2920](compiler-error-c2920.md)|재정의: '*형식*': 클래스 템플릿/제네릭 이미 선언 되었습니다. '*선언*'|
 |[컴파일러 오류 C2921](compiler-error-c2921.md)|재정의: '*형식*': 클래스 템플릿/제네릭 다시 선언 되는 '*선언*'|
-|컴파일러 오류 C2922|'*인터페이스*': WinRT는 인터페이스는 정적 멤버를 포함할 수 없습니다|
+|컴파일러 오류 C2922|'*interface*': WinRT 인터페이스는 정적 멤버를 포함할 수 없습니다.|
 |[컴파일러 오류 C2923](compiler-error-c2923.md)|'*형식*': '*식별자*'is not 매개 변수에 대 한 올바른 템플릿/제네릭 형식 인수'*매개 변수*'|
 |컴파일러 오류 C2924|__declspec (interrupt) 루틴 인수가 R2에 없습니다.|
 |컴파일러 오류 C2925|__declspec (interrupt) 루틴 부동 소수점을 사용할 수 없습니다.|
@@ -127,7 +127,7 @@ ms.locfileid: "50466900"
 |[컴파일러 오류 C2935](compiler-error-c2935.md)|'*형식*': 템플릿 id/제네릭 id가 전역 함수로 재정의 되었습니다.|
 |[컴파일러 오류 C2936](compiler-error-c2936.md)|'*형식*': 템플릿 id/제네릭 id가 글로벌 데이터 변수로 재정의 되었습니다.|
 |[컴파일러 오류 C2937](compiler-error-c2937.md)|'*형식*': 템플릿 id/제네릭 id가 전역 typedef로 재정의 되었습니다.|
-|컴파일러 오류 C2938|'*식별자*': 별칭 템플릿을 특수화 하지 못했습니다.|
+|컴파일러 오류 C2938|'*식별자*'. 별칭 템플릿을 특수화 하지 못했습니다.|
 |[컴파일러 오류 C2939](compiler-error-c2939.md)|'*형식*': 템플릿 id/제네릭 id가 로컬 데이터 변수로 재정의 되었습니다.|
 |[컴파일러 오류 C2940](compiler-error-c2940.md)|'*형식*': 템플릿 id/제네릭 id가 지역 typedef로 재정의 되었습니다.|
 |[컴파일러 오류 C2941](compiler-error-c2941.md)|'*형식*': 템플릿-id/제네릭-id 로컬으로 재정의 되었습니다. '*항목*'|
@@ -169,7 +169,7 @@ ms.locfileid: "50466900"
 |[컴파일러 오류 C2977](compiler-error-c2977.md)|'*형식*': 템플릿/제네릭 인수가 너무 많습니다.|
 |[컴파일러 오류 C2978](compiler-error-c2978.md)|구문 오류: 필요 합니다. '*keyword1*'또는'*keyword2*';의 형식이'*형식*'; 형식이 아닌 제네릭의 매개 변수를 사용할 수 없습니다|
 |[컴파일러 오류 C2979](compiler-error-c2979.md)|제네릭에서는 명시적 특수화가 지원되지 않습니다.|
-|컴파일러 오류 C2980|C + + 예외 처리는 /kernel에서 지원 되지 않습니다.|
+|컴파일러 오류 C2980|C++예외 처리는 /kernel에서 지원 되지 않습니다.|
 |컴파일러 오류 C2981|동적 형식은 '*키워드*' /kernel에서 지원 되지 않습니다|
 |컴파일러 오류 C2982|'*선언*': 사용 되는 다른 code_seg: 되었습니다 '*identifier1*'지금'*identifier2*'|
 |컴파일러 오류 C2983|'*선언*': 모든 선언에는 동일한 code_seg 있어야 합니다.|
@@ -188,4 +188,9 @@ ms.locfileid: "50466900"
 |[컴파일러 오류 C2996](compiler-error-c2996.md)|'*함수*': 재귀 함수 템플릿 정의|
 |컴파일러 오류 C2997|'*함수*': 기본 멤버 이니셜라이저에서 배열 범위를 추론할 수 없습니다|
 |[컴파일러 오류 C2998](compiler-error-c2998.md)|'*declarator*': 템플릿 정의 일 수 없습니다.|
-|컴파일러 오류 C2999|알 수 없는 오류 하세요 Visual c + + 도움말 메뉴에서 [기술 지원] 명령을 선택 또는 자세한 정보에 대 한 기술 지원 도움말 파일|
+|컴파일러 오류 C2999|알 수 없는 오류 하세요 시각적 개체에서 [기술 지원] 명령을 선택 C++ 자세한 정보에 대 한 기술 지원 도움말 파일을 열거나 도움말 메뉴에서|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

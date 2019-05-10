@@ -7,11 +7,11 @@ helpviewer_keywords:
 - MFC ActiveX Control Wizard, control settings
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
 ms.openlocfilehash: 34cc49fff88399a6c3cf5f7db71410c88e5c9bab
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62373286"
 ---
 # <a name="control-settings-mfc-activex-control-wizard"></a>MFC ActiveX 컨트롤 마법사, 컨트롤 설정
 
@@ -25,7 +25,7 @@ ms.locfileid: "57289639"
 
    이 목록에 컨트롤이 상속 해야 하는 컨트롤의 종류를 선택할 수 있습니다. 목록에 사용할 수 있는 컨트롤 클래스의 하위 집합인 `CreateWindowEx` 및 commctrl.h에 지정 된 공용 컨트롤을 추가 합니다. 선택 영역에서 컨트롤의 스타일을 결정 합니다 `PreCreateWindow` 함수는 *ProjName*Ctrl.cpp 파일입니다. 자세한 내용은 참조 하세요. [MFC ActiveX 컨트롤: Windows 컨트롤 서브클래싱](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md)합니다.
 
-   |Control|설명|
+   |컨트롤|설명|
    |-------------|-----------------|
    |**BUTTON**|Windows 단추 컨트롤|
    |**COMBOBOX**|Windows 콤보 상자 컨트롤|

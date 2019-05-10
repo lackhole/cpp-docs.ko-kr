@@ -37,11 +37,11 @@ helpviewer_keywords:
 - COleObjectFactory [MFC], VerifyUserLicense
 ms.assetid: ab179c1e-4af2-44aa-a576-37c48149b427
 ms.openlocfilehash: 25dce92f49ba9de08fcf33d54db8e97d520f5ea4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62224390"
 ---
 # <a name="coleobjectfactory-class"></a>COleObjectFactory 클래스
 
@@ -136,7 +136,7 @@ COleObjectFactory(
 이 개체 팩터리 OLE 클래스 ID에 대 한 참조를 나타냅니다.
 
 *pRuntimeClass*<br/>
-이 팩터리를 만들 수 있는 c + + 개체의 런타임 클래스에 대 한 포인터입니다.
+런타임 클래스에 대 한 포인터를 C++ 개체를이 팩터리를 만들 수 있습니다.
 
 *bMultiInstance*<br/>
 단일 인스턴스 응용 프로그램의 여러 인스턴스화를 지원할 수 있는지 여부를 나타냅니다. TRUE 이면 개체를 만드는 각 요청에 대 한 응용 프로그램의 여러 인스턴스가 시작 됩니다.

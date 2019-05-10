@@ -189,16 +189,15 @@ helpviewer_keywords:
 - CMFCRibbonBar [MFC], TranslateChar
 ms.assetid: a65d06fa-1a28-4cc0-8971-bc9d7c9198fe
 ms.openlocfilehash: 3656b6a135757a4658f2ef08b80a54efffe89012
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57288417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351984"
 ---
 # <a name="cmfcribbonbar-class"></a>CMFCRibbonBar 클래스
 
-
-  `CMFCRibbonBar` 클래스는 Office 2007에서 사용한 것과 비슷한 리본 표시줄을 구현합니다.
+`CMFCRibbonBar` 클래스는 Office 2007에서 사용한 것과 비슷한 리본 표시줄을 구현합니다.
 
 더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
@@ -318,8 +317,7 @@ Microsoft에서는 Microsoft Office 2007을 릴리스할 때 동시에 Office Fl
 
 리본 표시줄에 표시되는 요소가 사용 가능한 공간에 가장 적합한 크기로 확장 및 축소됩니다. 예를 들어 리본 패널에 해당 요소를 표시할 공간이 부족하면 리본 메뉴는 하위 항목을 팝업 메뉴에 표시하는 메뉴 단추가 됩니다. 리본 표시줄은 정적(부동화되지 않음) 컨트롤 막대로 동작하고 프레임의 위쪽에 도킹될 수 있습니다.
 
-
-  `CMFCRibbonStatusBar` 클래스를 사용하여 Office 2007에서 사용된 것과 비슷한 상태 표시줄을 구현할 수 있습니다. 리본 범주를 포함 (및 표시)의 그룹 [리본 패널](../../mfc/reference/cmfcribbonpanel-class.md)합니다. 파생 되는 하나 이상의 리본 요소를 포함 하는 각 리본 패널 [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)합니다.
+`CMFCRibbonStatusBar` 클래스를 사용하여 Office 2007에서 사용된 것과 비슷한 상태 표시줄을 구현할 수 있습니다. 리본 범주를 포함 (및 표시)의 그룹 [리본 패널](../../mfc/reference/cmfcribbonpanel-class.md)합니다. 파생 되는 하나 이상의 리본 요소를 포함 하는 각 리본 패널 [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)합니다.
 
 기존 MFC 응용 프로그램에 리본 표시줄을 추가 하는 방법에 대 한 정보를 참조 하세요. [연습: MFC Scribble 응용 프로그램 업데이트](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)합니다.
 

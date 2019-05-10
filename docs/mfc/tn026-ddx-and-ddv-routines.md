@@ -10,11 +10,11 @@ helpviewer_keywords:
 - DDV (dialog data validation), procedures
 ms.assetid: c2eba87a-4b47-4083-b28b-e2fa77dfb4c4
 ms.openlocfilehash: 89916e60d9677240f2d70e37e9a80e6ad7a76fc3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62305868"
 ---
 # <a name="tn026-ddx-and-ddv-routines"></a>TN026: DDX 및 DDV 루틴
 
@@ -25,7 +25,7 @@ ms.locfileid: "50581911"
 
 ## <a name="overview-of-dialog-data-exchange"></a>대화 상자 데이터 교환 개요
 
-모든 대화 상자 데이터 함수는 c + + 코드를 사용 하 여 수행 됩니다. 특수 리소스 또는 magic 매크로 없는 합니다. 메커니즘의 핵심은 하는 대화 상자 데이터 교환 모든 대화 상자 클래스에서 재정의 되는 가상 함수 및 유효성 검사. 항상이 폼에서 발견 되었습니다.
+모든 대화 상자 데이터 함수 완료 하는 C++ 코드입니다. 특수 리소스 또는 magic 매크로 없는 합니다. 메커니즘의 핵심은 하는 대화 상자 데이터 교환 모든 대화 상자 클래스에서 재정의 되는 가상 함수 및 유효성 검사. 항상이 폼에서 발견 되었습니다.
 
 ```cpp
 void CMyDialog::DoDataExchange(CDataExchange* pDX)
@@ -63,7 +63,7 @@ DDV_Custom(pDX, field, ...);
 
 모든 기능에서 파생 된 클래스에서 사용할 수 있지만이 "대화 상자 데이터"를 호출할 `CWnd` 및 대화 상자만 제한 되지 않습니다.
 
-데이터의 초기 값은 일반적으로 사용 하 여 블록에서 표준 c + + 생성자에서 설정 됩니다 `//{{AFX_DATA_INIT` 고 `//}}AFX_DATA_INIT` 설명 합니다.
+표준 데이터의 초기 값을 설정 C++ 블록에 일반적으로 생성자 `//{{AFX_DATA_INIT` 하 고 `//}}AFX_DATA_INIT` 주석입니다.
 
 `CWnd::UpdateData` 초기화 및 오류에 대 한 호출 주위 처리를 수행 하는 작업이 `DoDataExchange`합니다.
 
@@ -85,9 +85,9 @@ DDV_ 루틴에 대 한 DDX_ 루틴 다음에 나와야 *필드*합니다.
 
 세 가지 다른 흥미로운 가지 `CDataExchange` 멤버:
 
-- `m_pDlgWnd`: 창 (일반적으로 대화 상자) 컨트롤이 들어 있는입니다. 이 방법은를 DDX_ 및 DDV_ 전역 함수의 호출자가 'this' 전달 하는 것과 모든 DDX/DDV 루틴입니다.
+- `m_pDlgWnd`: 컨트롤이 들어 있는 창 (일반적으로 대화 상자). 이 방법은를 DDX_ 및 DDV_ 전역 함수의 호출자가 'this' 전달 하는 것과 모든 DDX/DDV 루틴입니다.
 
-- `PrepareCtrl`및 `PrepareEditCtrl`: 데이터 교환에 대 한 대화 상자 컨트롤을 준비 합니다. 유효성 검사에 실패할 경우 포커스를 설정 하는 것에 대 한 해당 컨트롤의 핸들을 저장 합니다. `PrepareCtrl` 비 편집 컨트롤에 사용 되 고 `PrepareEditCtrl` 편집 컨트롤에 사용 됩니다.
+- `PrepareCtrl`및 `PrepareEditCtrl`: 데이터 교환에 대 한 대화 상자 컨트롤을 준비합니다. 유효성 검사에 실패할 경우 포커스를 설정 하는 것에 대 한 해당 컨트롤의 핸들을 저장 합니다. `PrepareCtrl` 비 편집 컨트롤에 사용 되 고 `PrepareEditCtrl` 편집 컨트롤에 사용 됩니다.
 
 - `Fail`: 사용자 입력된 오류를 경고 메시지 상자를 표시 한 후 호출 됩니다. 이 루틴 마지막 컨트롤에 포커스를 복원 됩니다 (마지막 호출 `PrepareCtrl` 또는 `PrepareEditCtrl`) 예외를 throw 합니다. DDX_와 DDV_ 루틴에서이 멤버 함수를 호출할 수 있습니다.
 
@@ -123,7 +123,7 @@ DDV_ 루틴에 대 한 DDX_ 루틴 다음에 나와야 *필드*합니다.
     > [!NOTE]
     > 이러한 임의의 식 classwizard 함께 사용 하 여 편집할 수 없습니다 및 따라서 특별 한 형식 설명을 외부로 이동 하도록 해야 합니다 (/ / {{AFX_DATA_MAP(CMyClass)) 합니다.
 
-가 `DoDialogExchange` 조건 또는 intermixed 교환 및 유효성 검사 함수 호출을 사용 하 여 다른 유효한 c + + 문 멤버 함수를 포함 합니다.
+가 합니다 `DoDialogExchange` 멤버 함수는 조건 또는 모든 기타 유효한 포함 C++ 문을 intermixed 교환 및 유효성 검사를 사용 하 여 함수 호출.
 
 ```cpp
 //{{AFX_DATA_MAP(CMyClass)
@@ -143,21 +143,21 @@ else
 
 클래스 마법사 클래스 마법사 사용자 인터페이스를 사용자 고유의 DDX_ 및 DDV_ 루틴에 통합할 수 있도록 하 여 DDX/DDV 사용자 지정의 하위 집합을 지원 합니다. 이 비용은 유용한 여러 프로젝트 또는 프로젝트에서 특정 DDX 및 DDV 루틴을 다시 사용 하려는 경우입니다.
 
-이렇게 하려면 특수 한 항목은 DDX에서 이루어집니다. CLW (이전 버전의 Visual c + + APSTUDIO이이 정보를 저장 하는 데 사용 합니다. INI) 또는 프로젝트의 합니다. CLW 파일입니다. 특별 한 항목 수의 프로젝트의 [일반 정보] 섹션에서 입력 합니다. CLW 파일 또는 DDX의 [ExtraDDX] 섹션에 있습니다. \Program Files\Microsoft Studio\Visual Visual C++ \bin 디렉터리에 CLW 파일입니다. DDX를 만들려고 해야 합니다. 이미 존재 하지 않는 경우 CLW 파일입니다. 특정 프로젝트에만 사용자 지정 DDX_/DDV_ 루틴을 사용 하려는 경우 프로젝트의 [일반 정보] 섹션에 항목을 추가 합니다. CLW 파일을 대신 합니다. 여러 프로젝트에서 루틴을 사용 하려는 경우 DDX의 [ExtraDDX] 섹션에 항목을 추가 합니다. CLW 합니다.
+이렇게 하려면 특수 한 항목은 DDX에서 이루어집니다. CLW (시각적 개체의 이전 버전 C++ APSTUDIO에이 정보를 저장 합니다. INI) 또는 프로젝트의 합니다. CLW 파일입니다. 특별 한 항목 수의 프로젝트의 [일반 정보] 섹션에서 입력 합니다. CLW 파일 또는 DDX의 [ExtraDDX] 섹션에 있습니다. Visual Studio\Visual \Program Files\Microsoft에서 CLW 파일 C++\bin 디렉터리에 있습니다. DDX를 만들려고 해야 합니다. 이미 존재 하지 않는 경우 CLW 파일입니다. 특정 프로젝트에만 사용자 지정 DDX_/DDV_ 루틴을 사용 하려는 경우 프로젝트의 [일반 정보] 섹션에 항목을 추가 합니다. CLW 파일을 대신 합니다. 여러 프로젝트에서 루틴을 사용 하려는 경우 DDX의 [ExtraDDX] 섹션에 항목을 추가 합니다. CLW 합니다.
 
 이러한 특수 한 항목의 일반 형식은 다음과 같습니다.
 
-> ExtraDDXCount =*n*
+> ExtraDDXCount=*n*
 
 여기서 *n* ExtraDDX 수가? 형식에 따라 줄
 
-> ExtraDDX? =*키*; *vb 키*; *프롬프트*; *형식*; *initValue*; *DDX_Proc* [; *DDV_Proc*; *prompt1*; *arg1* [; *prompt2*; *fmt2*]]
+> ExtraDDX?=*keys*; *vb-keys*; *prompt*; *type*; *initValue*; *DDX_Proc* [; *DDV_Proc*; *prompt1*; *arg1* [; *prompt2*; *fmt2*]]
 
 여기서? 1-숫자인 *n* 정의 되는 목록에서 DDX 형식을 나타내는입니다.
 
 각 필드는 ';' 문자로 구분 됩니다. 필드 및 해당 용도 다음과 같습니다.
 
-- *키*
+- *keys*
 
   목록이 변수 형식을 사용할 수 있는 대화 상자 컨트롤에 대 한을 나타내는 단일 문자입니다.
 
@@ -174,7 +174,7 @@ else
   n | 정렬 된 드롭다운 목록
   1 | DDX 삽입 목록 헤드에 추가 해야 하는 경우 (기본값은 비상 추가)이 일반적으로 'Control' 속성을 전송 하는 DDX 루틴에 대 한 합니다.
 
-- *vb 키*
+- *vb-keys*
 
   이 필드는 VBX 컨트롤 (VBX 컨트롤은 32 비트 제품에서 지원 되지 않음)에 대 한 16 비트 제품에만 사용
 
@@ -186,17 +186,17 @@ else
 
   헤더 파일에 내보낼 형식에 대 한 단일 식별자입니다. DDX_Time 사용 하 여 위의 예제에서는이 CTime를 설정할 수 됩니다.
 
-- *vb 키*
+- *vb-keys*
 
   이 버전에서는 사용 되지 않으며 항상 비어 있어야 합니다
 
 - *initValue*
 
-  초기 값-0 또는 비어 있습니다. 비어 있는 경우 초기화 선이 없습니다 구현 파일의 //{{AFX_DATA_INIT 섹션에 기록 됩니다. C + + 개체에 대 한 빈 항목을 사용 해야 (같은 `CString`, `CTime`등) 있는 올바른 초기화를 보장 하는 생성자입니다.
+  초기 값-0 또는 비어 있습니다. 비어 있는 경우 초기화 선이 없습니다 구현 파일의 //{{AFX_DATA_INIT 섹션에 기록 됩니다. 빈 항목을 사용 해야 C++ 개체 (같은 `CString`, `CTime`등)는 올바른 초기화를 보장 하는 생성자가 있는 합니다.
 
 - *DDX_Proc*
 
-  DDX_ 프로시저에 대 한 단일 식별자입니다. C + + 함수 이름을 "DDX_,"로 시작 해야 하지만 "DDX_"에 포함 하지 않습니다는 \<DDX_Proc > 식별자입니다. 위의 예제는 \<DDX_Proc > 식별자 시간 됩니다. 클래스 마법사는 구현 파일에서 함수 호출을 기록 하는 경우는 {{AFX_DATA_MAP 섹션인 것이 이름에 추가 DDX_, 따라서 DDX_Time 도착 합니다.
+  DDX_ 프로시저에 대 한 단일 식별자입니다. C++ 함수 이름을 "DDX_,"로 시작 해야 하지만 "DDX_"에 포함 하지 마세요 합니다 \<DDX_Proc > 식별자입니다. 위의 예제는 \<DDX_Proc > 식별자 시간 됩니다. 클래스 마법사는 구현 파일에서 함수 호출을 기록 하는 경우는 {{AFX_DATA_MAP 섹션인 것이 이름에 추가 DDX_, 따라서 DDX_Time 도착 합니다.
 
 - *comment*
 
@@ -208,7 +208,7 @@ else
 
 - *arg*
 
-  DDV_ 프로시저에 대 한 단일 식별자입니다. C + + 함수 이름을 "DDV_"로 시작 해야 하지만 "DDX_"에 포함 하지 마십시오는 \<DDX_Proc > 식별자입니다.
+  DDV_ 프로시저에 대 한 단일 식별자입니다. C++ 함수 이름을 "DDV_"로 시작 해야 하지만 "DDX_"에 포함 하지 마십시오는 \<DDX_Proc > 식별자입니다.
 
   *arg* 뒤에 1 또는 2 DDV 인수:
 
@@ -222,13 +222,13 @@ else
 
       |문자|형식|
       |-|-|
-      |d | int|
+      |일 | int|
       |u | unsigned int|
       |D | (즉, long) int를 긴|
       |U | 부호 없는 long (즉, DWORD)|
       |f | float|
       |F | double|
-      |s | string|
+      |초 | string|
 
 ## <a name="see-also"></a>참고자료
 

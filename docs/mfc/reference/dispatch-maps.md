@@ -9,11 +9,11 @@ helpviewer_keywords:
 - dispatch map macros [MFC]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
 ms.openlocfilehash: 5ebedaa02a03bcc7802110977b96659dae45f174
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322516"
 ---
 # <a name="dispatch-maps"></a>디스패치 맵
 
@@ -154,7 +154,7 @@ DISP_FUNCTION(
 
 `VTS_` 상수 및 해당 의미는 다음과 같습니다.
 
-|기호|매개 변수 형식|
+|기호|매개 변수 유형|
 |------------|--------------------|
 |VTS_I2|**short**|
 |VTS_I4|**long**|
@@ -169,7 +169,7 @@ DISP_FUNCTION(
 |VTS_VARIANT|`const VARIANT*` 또는 `VARIANT&`|
 |VTS_UNKNOWN|LPUNKNOWN|
 |VTS_PI2|__short\*__|
-|VTS_PI4|__Long\*__|
+|VTS_PI4|__long\*__|
 |VTS_PR4|__float\*__|
 |VTS_PR8|__double\*__|
 |VTS_PCY|`CY*`|
@@ -206,7 +206,7 @@ DISP_PROPERTY(
 *pszName*<br/>
 속성의 외부 이름입니다.
 
-*MemberName*<br/>
+*memberName*<br/>
 속성이 저장 되는 멤버 변수의 이름입니다.
 
 *vtPropType*<br/>
@@ -261,7 +261,7 @@ DISP_PROPERTY_EX(
 *memberGet*<br/>
 속성을 가져오는 데 멤버 함수의 이름입니다.
 
-*멤버 집합*<br/>
+*memberSet*<br/>
 속성을 설정 하는 데 사용 하는 멤버 함수의 이름입니다.
 
 *vtPropType*<br/>
@@ -298,7 +298,7 @@ DISP_PROPERTY_NOTIFY(
 *szExternalName*<br/>
 속성의 외부 이름입니다.
 
-*MemberName*<br/>
+*memberName*<br/>
 속성이 저장 되는 멤버 변수의 이름입니다.
 
 *pfnAfterSet*<br/>

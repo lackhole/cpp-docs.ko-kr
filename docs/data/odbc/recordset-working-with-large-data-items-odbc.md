@@ -9,11 +9,11 @@ helpviewer_keywords:
 - CLongBinary class, using in recordsets
 ms.assetid: 3e80b5a8-b6e7-43c6-a816-e54befc513a3
 ms.openlocfilehash: 3ba8d4af5b0781c425dd3b1223e2208b279f055e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59033046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62230984"
 ---
 # <a name="recordset-working-with-large-data-items-odbc"></a>레코드 집합: 대형 데이터 항목 (ODBC)를 사용 하 여 작업
 
@@ -62,5 +62,5 @@ A [CLongBinary](../../mfc/reference/clongbinary-class.md) 주위 간단한 셸 �
 ## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 합계 및 다른 집계 결과 (ODBC) 구하기](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
+[레코드 집합 합계 및 다른 집계 결과 구하기(ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
 [RFX(레코드 필드 교환)](../../data/odbc/record-field-exchange-rfx.md)

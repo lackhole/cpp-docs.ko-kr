@@ -1,5 +1,5 @@
 ---
-title: div를 ldiv, lldiv
+title: div, ldiv, lldiv
 ms.date: 04/05/2018
 apiname:
 - div
@@ -26,13 +26,13 @@ helpviewer_keywords:
 - remainder computing
 ms.assetid: 8ae80d97-54fd-499e-b14c-e30993b58119
 ms.openlocfilehash: 0ee1b3b6a5d7b15470ffe1e667b4077d1f9581e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62339262"
 ---
-# <a name="div-ldiv-lldiv"></a>div를 ldiv, lldiv
+# <a name="div-ldiv-lldiv"></a>div, ldiv, lldiv
 
 두 정수 값의 몫과 나머지를 계산합니다.
 
@@ -66,7 +66,7 @@ lldiv_t div(
 
 ### <a name="parameters"></a>매개 변수
 
-*필드가*<br/>
+*numer*<br/>
 분자입니다.
 
 *denom*<br/>
@@ -80,13 +80,13 @@ lldiv_t div(
 
 **div** 함수 *필드가* 하 여 *denom* 있으므로 몫과 나머지를 계산 하 고 있습니다. 합니다 [div_t](../../c-runtime-library/standard-types.md) 구조에는 몫인 **q u o t**, 및 나머지 인 **rem**합니다. 몫의 부호는 수학적 몫의 부호와 같습니다. 몫의 절대 값은 수학적 몫의 절대 값보다 작은 가장 큰 정수입니다. 분모가 0이면 프로그램이 종료되고 오류 메시지가 표시됩니다.
 
-오버 로드 **div** 형식의 인수를 사용 하는 **긴** 하거나 **긴** **긴** c + + 코드 에서만 사용할 합니다. 반환 형식은 [ldiv_t](../../c-runtime-library/standard-types.md) 하 고 [lldiv_t](../../c-runtime-library/standard-types.md) 멤버가 포함 되어 **q u o t** 및 **rem**, 의멤버와동일한의미를포함하는**div_t**합니다.
+오버 로드 **div** 형식의 인수를 사용 하는 **긴** 또는 **긴** **긴** 이용할 C++ 코드입니다. 반환 형식은 [ldiv_t](../../c-runtime-library/standard-types.md) 하 고 [lldiv_t](../../c-runtime-library/standard-types.md) 멤버가 포함 되어 **q u o t** 및 **rem**, 의멤버와동일한의미를포함하는**div_t**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**div**하십시오 **ldiv**, **lldiv**|\<stdlib.h>|
+|**div**, **ldiv**, **lldiv**|\<stdlib.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -6,11 +6,11 @@ helpviewer_keywords:
 - operators [C++], preprocessor
 ms.assetid: 884126d1-0ce2-48b6-9e06-8a2d7c4a9656
 ms.openlocfilehash: 0b105cc2039e2aa50c11b796e5474a97d8c5c702
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59035691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62179895"
 ---
 # <a name="preprocessor-operators"></a>전처리 연산자
 네 가지 전처리기 관련 연산자를 사용 하 여의 컨텍스트에서 `#define` 지시문 (각각에 대 한 요약에 대 한 다음 목록 참조). 문자열 화, charizing, 및 토큰 붙여넣기 연산자 다음 세 섹션에서 설명 합니다. 에 대 한 정보에 대 한 합니다 `defined` 연산자를 참조 하세요 [#if, #elif, #else 및 #endif 지시문](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)합니다.

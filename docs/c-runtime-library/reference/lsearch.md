@@ -29,11 +29,11 @@ helpviewer_keywords:
 - lsearch function
 ms.assetid: 8200f608-159a-46f0-923b-1a37ee1af7e0
 ms.openlocfilehash: 340e8ac382972b15acc52013d5d6a51352db969c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62285658"
 ---
 # <a name="lsearch"></a>_lsearch
 
@@ -59,7 +59,7 @@ void *_lsearch(
 *base*<br/>
 검색할 배열의 기준에 대한 포인터입니다.
 
-*수*<br/>
+*number*<br/>
 요소의 수입니다.
 
 *width*<br/>

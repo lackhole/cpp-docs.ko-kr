@@ -8,16 +8,16 @@ helpviewer_keywords:
 - agility, C++/CX
 - C++/CX, threading issues
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
-ms.openlocfilehash: c5bce60e564bef490bcfafd6f8559dffe5fd4f1d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: MT
+ms.openlocfilehash: 4206dd9c675325d3141a56b0e57f6cf67dc5693d
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751702"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448154"
 ---
 # <a name="threading-and-marshaling-ccx"></a>스레딩 및 마샬링(C++/CX)
 
-대부분의 경우에 표준 c + + 개체와 같은 Windows 런타임 클래스의 인스턴스는 모든 스레드에서 액세스할 수 있습니다. 이러한 클래스를 "agile"이라고 합니다. 그러나 소수의 Windows와 함께 제공 되는 Windows 런타임 클래스는 agile, 및 표준 c + + 개체 보다는 COM 개체 처럼 더 사용 해야 합니다. agile이 아닌 클래스를 사용하기 위해 COM 전문가일 필요는 없지만 클래스의 스레딩 모델과 마샬링 동작을 고려해야 합니다. 이 문서에서는 agile이 아닌 클래스의 인스턴스를 사용해야 하는 드문 경우에 대한 배경 정보와 지침을 제공합니다.
+대부분의 경우 Windows 런타임 클래스의 인스턴스 같은 표준 C++ 개체는 모든 스레드에서 액세스할 수 있습니다. 이러한 클래스를 "agile"이라고 합니다. 소수의 Windows와 함께 제공 되는 Windows 런타임 클래스는 agile, 및 표준 보다는 COM 개체 처럼 더 사용할 수 있지만 C++ 개체입니다. agile이 아닌 클래스를 사용하기 위해 COM 전문가일 필요는 없지만 클래스의 스레딩 모델과 마샬링 동작을 고려해야 합니다. 이 문서에서는 agile이 아닌 클래스의 인스턴스를 사용해야 하는 드문 경우에 대한 배경 정보와 지침을 제공합니다.
 
 ## <a name="threading-model-and-marshaling-behavior"></a>스레딩 모델 및 마샬링 동작
 
@@ -35,7 +35,7 @@ Windows 런타임 클래스에 적용 되는 두 가지 특성에 표시 된 대
 
 ### <a name="compiler-warning-c4451-when-consuming-non-agile-classes"></a>컴파일러 경고 C4451 agile이 아닌 클래스를 사용 합니다.
 
-일부 클래스는 여러 가지 이유로 인해 agile이 될 수 없습니다. 사용자 인터페이스 스레드와 백그라운드 스레드 모두에서 agile이 아닌 클래스의 인스턴스에 액세스하는 경우 런타임에 올바른 동작을 보장하기 위해 특별히 주의를 기울여야 합니다. 응용 프로그램의 agile이 아닌 런타임 클래스를 전역 범위에서 인스턴스화하거나 agile이 아닌 형식을 그 자체가 agile로 표시된 ref 클래스의 클래스 멤버로 선언하면 Visual C++ 컴파일러에서 경고를 발생시킵니다.
+일부 클래스는 여러 가지 이유로 인해 agile이 될 수 없습니다. 사용자 인터페이스 스레드와 백그라운드 스레드 모두에서 agile이 아닌 클래스의 인스턴스에 액세스하는 경우 런타임에 올바른 동작을 보장하기 위해 특별히 주의를 기울여야 합니다. Microsoft C++ 컴파일러 그 자체가 ref 클래스에서 클래스 멤버를 agile로 표시 되어 agile이 아닌 형식을 선언 하거나 전역 범위에서 앱에서 agile이 아닌 런타임 클래스를 인스턴스화할 때 경고를 발생 시킵니다.
 
 agile이 아닌 클래스 중 가장 처리하기 쉬운 것은 `ThreadingModel`=Both 및 `MarshallingType`=Standard를 사용하는 클래스입니다.  `Agile<T>` 도우미 클래스를 사용하기만 하면 이러한 클래스를 agile로 만들 수 있습니다.   다음 예제에서는 `Windows::Security::Credentials::UI::CredentialPickerOptions^`형식의 agile이 아닌 개체 선언과 그 결과로 실행된 컴파일러 경고를 보여줍니다.
 
@@ -93,11 +93,11 @@ ref class MyOptions
 
 `Agile` 은 ref 클래스에 반환 값 또는 매개 변수로 전달할 수 없습니다. `Agile<T>::Get()` 메서드는 ABI(애플리케이션 이진 인터페이스) 너머로 공용 메서드 또는 속성에 전달할 수 있는 개체 핸들(^)을 반환합니다.
 
-Visual c + +에서 "None"의 마샬링 동작이 있는-in-proc Windows 런타임 클래스에 대 한 참조를 만들 때 컴파일러가 경고 C4451 있지만 사용을 고려해 야 제안 하지 않습니다 `Platform::Agile<T>`합니다.  컴파일러는 이러한 경고 이외에 다른 지원을 제공할 수 없으므로 클래스를 올바르게 사용하고 코드가 STA 구성 요소를 사용자 인터페이스 스레드에서만 호출하고, MTA 구성 요소를 백그라운드 스레드에서만 호출하도록 하는 것은 사용자의 책임입니다.
+시각적 개체의 C++마샬링 동작이 "None", 컴파일러가 경고 C4451 갖지만 사용을 고려해 야 제안 하지 않습니다 하는 프로시저에서 Windows 런타임 클래스에 대 한 참조를 만들 때 `Platform::Agile<T>`합니다.  컴파일러는 이러한 경고 이외에 다른 지원을 제공할 수 없으므로 클래스를 올바르게 사용하고 코드가 STA 구성 요소를 사용자 인터페이스 스레드에서만 호출하고, MTA 구성 요소를 백그라운드 스레드에서만 호출하도록 하는 것은 사용자의 책임입니다.
 
 ## <a name="authoring-agile-windows-runtime-components"></a>Agile Windows 런타임 구성 요소 제작
 
-C + ref 클래스를 정의 하는 경우 +는 기본적으로 agile CX,-즉,에 `ThreadingModel`= Both 및 `MarshallingType`= Agile 합니다.  Windows Runtime c + + 템플릿 라이브러리를 사용 하는 경우 가능 클래스 agile에서 파생 시켜 `FtmBase`를 사용 하는 `FreeThreadedMarshaller`합니다.  `ThreadingModel`=Both 또는 `ThreadingModel`=MTA가 있는 클래스를 작성하는 경우 클래스가 스레드로부터 안전한지 확인하세요.
+C + ref 클래스를 정의 하는 경우 +는 기본적으로 agile CX,-즉,에 `ThreadingModel`= Both 및 `MarshallingType`= Agile 합니다.  Windows 런타임을 사용 하는 경우 C++ 템플릿 라이브러리 가능 클래스가 agile에서 파생 하 여 `FtmBase`를 사용 합니다 `FreeThreadedMarshaller`합니다.  `ThreadingModel`=Both 또는 `ThreadingModel`=MTA가 있는 클래스를 작성하는 경우 클래스가 스레드로부터 안전한지 확인하세요.
 
 사용자는 ref 클래스의 스레딩 모델 및 마샬링 동작을 수정할 수 있습니다. 그러나 클래스를 agile이 아닌 것으로 렌더링하는 변경 작업을 수행하는 경우 이러한 변경 사항과 관련된 영향을 알고 있어야 합니다.
 

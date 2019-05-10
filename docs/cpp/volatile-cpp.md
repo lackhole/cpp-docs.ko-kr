@@ -1,6 +1,6 @@
 ---
 title: volatile (C++)
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 f1_keywords:
 - volatile_cpp
 helpviewer_keywords:
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - volatile objects
 - objects [C++], volatile
 ms.assetid: 81db4a85-ed5a-4a2c-9a53-5d07a771d2de
-ms.openlocfilehash: 73243841b2ad02bcc165b2910ac54283028e6cf3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 2396b5afaed09a28fd83f22fccde0be04e3d7790
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664024"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221868"
 ---
 # <a name="volatile-c"></a>volatile (C++)
 
@@ -50,7 +50,7 @@ Visual Studio에서 해석 된 **volatile** 대상 아키텍처에 따라 다르
 
 ## <a name="iso-compliant"></a>ISO 규격
 
-C# volatile 키워드를 사용 하 여 친숙 한 또는 동작을 잘 알고 있다면 **volatile** Visual c + +의 이전 버전에서는 주의 하는 C + + 11 ISO 표준 **volatile** 키워드는 다른 이며 Visual Studio에서 지원 되는 경우는 [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) 컴파일러 옵션을 지정 합니다. ARM의 경우 기본적으로 지정됩니다. 합니다 **volatile** 하드웨어 액세스를 위해서만 사용할 C + + 11 ISO 표준 코드에서 키워드는 스레드 간 통신에 사용 하지 마세요. 스레드 간 통신 메커니즘을 같은 사용할 [std:: atomic\<T >](../standard-library/atomic.md) 에서 합니다 [c + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)합니다.
+에 익숙한 경우는 C# volatile 키워드 또는의 동작에 익숙한 **volatile** 이전 버전의 Microsoft C++ (MSVC) 컴파일러에 유의 하는 C + + 11 ISO 표준 **volatile** MSVC 사용할 다른 키워드 이며 때 합니다 [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) 컴파일러 옵션을 지정 합니다. ARM의 경우 기본적으로 지정됩니다. 합니다 **volatile** 하드웨어 액세스를 위해서만 사용할 C + + 11 ISO 표준 코드에서 키워드는 스레드 간 통신에 사용 하지 마세요. 스레드 간 통신 메커니즘을 같은 사용할 [std:: atomic\<T >](../standard-library/atomic.md) 에서 합니다 [ C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md).
 
 ## <a name="end-of-iso-compliant"></a>ISO 규격의 끝
 
@@ -69,8 +69,8 @@ C# volatile 키워드를 사용 하 여 친숙 한 또는 동작을 잘 알고 �
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [const](../cpp/const-cpp.md)<br/>
 [const 및 volatile 포인터](../cpp/const-and-volatile-pointers.md)

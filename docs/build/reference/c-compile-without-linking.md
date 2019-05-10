@@ -11,15 +11,15 @@ helpviewer_keywords:
 - /c compiler option [C++]
 ms.assetid: 8017fc3d-e5dd-4668-a1f7-3120daa95d20
 ms.openlocfilehash: bfe351daf43b913f10df74b1059ba98f7d5d657b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62294852"
 ---
 # <a name="c-compile-without-linking"></a>/c(링크 없이 컴파일)
 
-링크에 대 한 자동 호출을 방지합니다.
+링크에 대한 자동 호출을 방지합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,9 +29,9 @@ ms.locfileid: "57815166"
 
 ## <a name="remarks"></a>설명
 
-사용 하 여 컴파일하면 **/c** 만.obj 파일을 만듭니다. 적절 한 파일 및 빌드 링크 단계를 수행 하는 옵션을 사용 하 여 연결을 명시적으로 호출 해야 합니다.
+**/c**를 사용하여 컴파일하면 .obj 파일만 만듭니다. 빌드의 연결 단계를 수행하려면 LINK를 적절한 파일 및 옵션과 함께 명시적으로 호출해야 합니다.
 
-개발 환경에서 만든 내부 프로젝트를 사용 합니다 **/c** 옵션이 기본적으로 합니다.
+개발 환경에서 만든 내부 프로젝트는 기본적으로 **/c** 옵션을 사용합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - RW2002
 ms.assetid: b1d1a49b-b50b-4b0b-9f09-c7762e2dbe8f
 ms.openlocfilehash: 4cd922fff691b524ec9d278ac5948992fc096e09
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62396791"
 ---
 # <a name="resource-compiler-error-rw2002"></a>리소스 컴파일러 오류 RW2002
 
@@ -69,7 +69,7 @@ ms.locfileid: "51523507"
 
 1. **필요한 컨트롤 클래스 이름**
 
-   `class` 필드를 **컨트롤** 문에서 **대화** 문을 다음 유형 중 하나 여야 합니다: 단추, 콤보 상자, 편집, LISTBOX, 스크롤 막대, 정적 또는 사용자 정의 합니다. 클래스의 철자가 올바른지 확인 합니다.
+   합니다 `class` 필드를 **컨트롤** 문에서 **대화** 문을 다음 유형 중 하나 여야 합니다: 단추, 콤보 상자, 편집, LISTBOX, 스크롤 막대, STATIC 또는 사용자 정의 합니다. 클래스의 철자가 올바른지 확인 합니다.
 
 1. **글꼴 이름 필요**
 
@@ -141,7 +141,7 @@ ms.locfileid: "51523507"
 
 1. **잘못 된 컨트롤 형식**
 
-   각 컨트롤 문에 **대화 상자** 문을 다음 중 하나 여야 합니다: 확인란, 콤보 상자, 컨트롤, CTEXT, DEFPUSHBUTTON, EDITTEXT, GROUPBOX, 아이콘, LISTBOX, LTEXT, 누름 단추, 라디오 단추, RTEXT, 스크롤 막대. 이러한 제어 문을 제대로 입력 했는지 확인 합니다.
+   각 control 문의 **대화 상자** 문을 다음 중 하나 여야 합니다. CHECKBOX, COMBOBOX, CONTROL, CTEXT, DEFPUSHBUTTON, EDITTEXT, GROUPBOX, ICON, LISTBOX, LTEXT, PUSHBUTTON, RADIOBUTTON, RTEXT, SCROLLBAR. 이러한 제어 문을 제대로 입력 했는지 확인 합니다.
 
 1. **잘못 된 형식**
 

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - preprocessor
 - preprocessor, reference overview
 ms.assetid: e4a52843-7016-4f6d-8b40-cb1ace18f805
-ms.openlocfilehash: a9e5be5895d8a90d93d0060e2bd2a7d0a9f84dbd
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: 9eb94b105af976d1e1f49e212e0117c43c430683
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814425"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220397"
 ---
 # <a name="cc-preprocessor-reference"></a>C/C++ 전처리기 도움말
 *C/C++ 전처리기 도움말*은 Microsoft C/C++에서의 전처리기 구현 사항에 대하여 설명합니다. 전처리기는 C 및 C++ 파일이 컴파일러로 전달되기 전에 해당 파일에 대한 선행 작업을 수행합니다. 전처리기를 사용하여 조건에 따라 코드를 컴파일하고, 파일을 삽입하고, 컴파일 시간 오류 메시지를 지정하고, 코드 섹션에 시스템별 특정 규칙을 적용할 수 있습니다.
@@ -40,5 +40,5 @@ C 언어의 Microsoft 구현에 대한 참조 자료를 제공합니다.
 [C/c + + 프로그램 빌드](../build/reference/c-cpp-building-reference.md)<br/>
 컴파일러 및 링커 옵션에 대해 설명하는 항목의 링크를 제공합니다.
 
-[Visual C++ 프로젝트 만들기 및 관리](../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[C++-Visual Studio 프로젝트](../build/creating-and-managing-visual-cpp-projects.md)<br/>
 프로젝트 시스템에서 C++ 프로젝트용 파일을 찾기 위해 검색할 디렉터리를 지정할 수 있도록 하는 Visual Studio 사용자 인터페이스에 대해 설명합니다.

@@ -21,16 +21,15 @@ helpviewer_keywords:
 - choice class
 ms.assetid: 4157a539-d5c2-4161-b1ab-536ce2888397
 ms.openlocfilehash: aa4945bb5f9ef28937487ba504e23c461992b263
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57267019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337572"
 ---
 # <a name="choice-class"></a>choice 클래스
 
-
-  `choice` 메시징 블록은 소스 집합과의 제어 흐름 상호 작용을 나타내는 다중 소스 단일 대상 블록입니다. 선택한 블록은 여러 소스 중 하나가 메시지를 생성할 때까지 대기하고 메시지를 생성한 소스의 인덱스를 전파합니다.
+`choice` 메시징 블록은 소스 집합과의 제어 흐름 상호 작용을 나타내는 다중 소스 단일 대상 블록입니다. 선택한 블록은 여러 소스 중 하나가 메시지를 생성할 때까지 대기하고 메시지를 생성한 소스의 인덱스를 전파합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -76,7 +75,7 @@ class choice: public ISource<size_t>;
 |[reserve](#reserve)|이전에 제공한 메시지를 예약 `choice` 메시징 블록입니다.|
 |[unlink_target](#unlink_target)|이 대상 블록을 연결 해제 `choice` 메시징 블록입니다.|
 |[unlink_targets](#unlink_targets)|이 모든 대상의 연결을 해제 `choice` 메시징 블록입니다. (재정의 [isource:: Unlink_targets](isource-class.md#unlink_targets).)|
-|[value](#value)|인덱스를 포함 하 여 선택 된 메시지를 가져옵니다는 `choice` 메시징 블록입니다.|
+|[값](#value)|인덱스를 포함 하 여 선택 된 메시지를 가져옵니다는 `choice` 메시징 블록입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -358,8 +357,7 @@ _Payload_type const& value();
 
 ### <a name="remarks"></a>설명
 
-
-  `choice` 메시징 블록은 페이로드 형식이 서로 다른 입력을 사용할 수 있기 때문에 검색 시 페이로드의 형식을 지정해야 합니다. 결과에 따라 형식을 확인할 수 있습니다는 `index` 메서드.
+`choice` 메시징 블록은 페이로드 형식이 서로 다른 입력을 사용할 수 있기 때문에 검색 시 페이로드의 형식을 지정해야 합니다. 결과에 따라 형식을 확인할 수 있습니다는 `index` 메서드.
 
 ## <a name="see-also"></a>참고자료
 

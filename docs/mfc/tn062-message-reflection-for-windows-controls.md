@@ -1,5 +1,5 @@
 ---
-title: 'TN062: Windows 컨트롤에 대한 메시지 리플렉션'
+title: 'TN062: Windows 컨트롤에 대 한 메시지 리플렉션'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.controls.messages
@@ -28,20 +28,20 @@ helpviewer_keywords:
 - ON_CONTROL_REFLECT macro
 ms.assetid: 53efb0ba-fcda-4fa0-a3c7-14e0b78fb494
 ms.openlocfilehash: aa189eec430d72bef753fef7ebbe9ad929d76c87
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62351849"
 ---
-# <a name="tn062-message-reflection-for-windows-controls"></a>TN062: Windows 컨트롤에 대한 메시지 리플렉션
+# <a name="tn062-message-reflection-for-windows-controls"></a>TN062: Windows 컨트롤에 대 한 메시지 리플렉션
 
 > [!NOTE]
 > 다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.
 
 이 기술 노트에서는 메시지 리플렉션, MFC 4.0의 새로운 기능을 설명합니다. 또한 메시지 리플렉션을 사용 하는 간단한 재사용 가능한 컨트롤 만들기에 대 한 지침을 포함 합니다.
 
-이 기술 노트는 ActiveX 컨트롤 (이전의 OLE 컨트롤)에 적용 될 때 메시지 리플렉션을 설명 하지 않습니다. 문서를 참조 하세요 [ActiveX 컨트롤: Windows 컨트롤 서브클래싱](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)합니다.
+이 기술 노트는 ActiveX 컨트롤 (이전의 OLE 컨트롤)에 적용 될 때 메시지 리플렉션을 설명 하지 않습니다. 문서를 참조 하십시오 [ActiveX 컨트롤: Windows 컨트롤 서브클래싱](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)합니다.
 
 **메시지 리플렉션 란**
 
@@ -87,28 +87,28 @@ WM_NOTIFY 메시지를 보낼 때 컨트롤을 처리 하는 첫 번째 기회�
 
 |맵 항목|함수 프로토타입|
 |---------------|------------------------|
-|**ON_CONTROL_REFLECT (** `wNotifyCode` **하십시오** `memberFxn` **)**|**afx_msg void** `memberFxn` **();**|
-|**ON_NOTIFY_REFLECT (** `wNotifyCode` **하십시오** `memberFxn` **)**|**afx_msg void** `memberFxn` **(NMHDR** <strong>\*</strong> `pNotifyStruct` **, LRESULT** <strong>\*</strong> *결과* **);**|
-|**ON_UPDATE_COMMAND_UI_REFLECT (** `memberFxn` **)**|**afx_msg void** `memberFxn` **(CCmdUI** <strong>\*</strong> `pCmdUI` **);**|
-|**ON_WM_CTLCOLOR_REFLECT)**|**HBRUSH CtlColor afx_msg (CDC** <strong>\*</strong> `pDC` **, UINT** `nCtlColor` **);**|
-|**ON_WM_DRAWITEM_REFLECT)**|**afx_msg DrawItem void (LPDRAWITEMSTRUCT** `lpDrawItemStruct` **);**|
-|**ON_WM_MEASUREITEM_REFLECT)**|**afx_msg MeasureItem void (LPMEASUREITEMSTRUCT** `lpMeasureItemStruct` **);**|
-|**ON_WM_DELETEITEM_REFLECT)**|**afx_msg DeleteItem void (LPDELETEITEMSTRUCT** `lpDeleteItemStruct` **);**|
-|**ON_WM_COMPAREITEM_REFLECT)**|**afx_msg int CompareItem (LPCOMPAREITEMSTRUCT** `lpCompareItemStruct` **);**|
-|**ON_WM_CHARTOITEM_REFLECT)**|**afx_msg int CharToItem (UINT** `nKey` **, UINT** `nIndex` **);**|
-|**ON_WM_VKEYTOITEM_REFLECT)**|**afx_msg int VKeyToItem (UINT** `nKey` **, UINT** `nIndex` **);**|
-|**ON_WM_HSCROLL_REFLECT)**|**afx_msg HScroll void (UINT** `nSBCode` **, UINT** `nPos` **);**|
-|**ON_WM_VSCROLL_REFLECT)**|**afx_msg VScroll void (UINT** `nSBCode` **, UINT** `nPos` **);**|
-|**ON_WM_PARENTNOTIFY_REFLECT)**|**afx_msg ParentNotify void (UINT** `message` **, LPARAM** `lParam` **);**|
+|**ON_CONTROL_REFLECT(** `wNotifyCode` **,** `memberFxn` **)**|**afx_msg void** `memberFxn` **( );**|
+|**ON_NOTIFY_REFLECT(** `wNotifyCode` **,** `memberFxn` **)**|**afx_msg void** `memberFxn` **( NMHDR** <strong>\*</strong> `pNotifyStruct` **, LRESULT**<strong>\*</strong> *result* **);**|
+|**ON_UPDATE_COMMAND_UI_REFLECT(** `memberFxn` **)**|**afx_msg void** `memberFxn` **( CCmdUI**<strong>\*</strong> `pCmdUI` **);**|
+|**ON_WM_CTLCOLOR_REFLECT( )**|**afx_msg HBRUSH CtlColor ( CDC**<strong>\*</strong> `pDC` **, UINT** `nCtlColor` **);**|
+|**ON_WM_DRAWITEM_REFLECT( )**|**afx_msg void DrawItem ( LPDRAWITEMSTRUCT** `lpDrawItemStruct` **);**|
+|**ON_WM_MEASUREITEM_REFLECT( )**|**afx_msg MeasureItem void (LPMEASUREITEMSTRUCT** `lpMeasureItemStruct` **);**|
+|**ON_WM_DELETEITEM_REFLECT( )**|**afx_msg void DeleteItem ( LPDELETEITEMSTRUCT** `lpDeleteItemStruct` **);**|
+|**ON_WM_COMPAREITEM_REFLECT( )**|**afx_msg int CompareItem (LPCOMPAREITEMSTRUCT** `lpCompareItemStruct` **);**|
+|**ON_WM_CHARTOITEM_REFLECT( )**|**afx_msg int CharToItem (UINT** `nKey` **, UINT** `nIndex` **);**|
+|**ON_WM_VKEYTOITEM_REFLECT( )**|**afx_msg int VKeyToItem ( UINT** `nKey` **, UINT** `nIndex` **);**|
+|**ON_WM_HSCROLL_REFLECT( )**|**afx_msg void HScroll ( UINT** `nSBCode` **, UINT** `nPos` **);**|
+|**ON_WM_VSCROLL_REFLECT( )**|**afx_msg VScroll void (UINT** `nSBCode` **, UINT** `nPos` **);**|
+|**ON_WM_PARENTNOTIFY_REFLECT( )**|**afx_msg void ParentNotify ( UINT** `message` **, LPARAM** `lParam` **);**|
 
 ON_NOTIFY_REFLECT 및 ON_CONTROL_REFLECT 매크로 변형이 지정된 된 메시지를 처리 하려면 둘 이상의 개체 (예: 컨트롤 및 해당 부모)를 허용 하는 경우
 
 |맵 항목|함수 프로토타입|
 |---------------|------------------------|
-|**ON_NOTIFY_REFLECT_EX (** `wNotifyCode` **하십시오** `memberFxn` **)**|**BOOL afx_msg** `memberFxn` **(NMHDR** <strong>\*</strong> `pNotifyStruct` **, LRESULT** <strong>\*</strong> *결과* **);**|
-|**ON_CONTROL_REFLECT_EX (** `wNotifyCode` **하십시오** `memberFxn` **)**|**BOOL afx_msg** `memberFxn` **();**|
+|**ON_NOTIFY_REFLECT_EX(** `wNotifyCode` **,** `memberFxn` **)**|**afx_msg BOOL** `memberFxn` **( NMHDR** <strong>\*</strong> `pNotifyStruct` **, LRESULT**<strong>\*</strong> *result* **);**|
+|**ON_CONTROL_REFLECT_EX(** `wNotifyCode` **,** `memberFxn` **)**|**afx_msg BOOL** `memberFxn` **( );**|
 
-## <a name="handling-reflected-messages-an-example-of-a-reusable-control"></a>재사용 가능한 컨트롤을 예가 리플렉션 메시지를 처리 합니다.
+## <a name="handling-reflected-messages-an-example-of-a-reusable-control"></a>리플렉션된 메시지 처리 합니다. 재사용 가능한 컨트롤의 예
 
 이라는 재사용 가능한 컨트롤을 만드는 간단한 예제 `CYellowEdit`합니다. 노란색 배경 기반 검은색 텍스트를 표시 한다는 컨트롤이 일반 편집 컨트롤을 동일 하 게 작동 합니다. 쉽게 허용 하는 멤버 함수를 추가할 수는 `CYellowEdit` 컨트롤을 다른 색으로 표시 합니다.
 
@@ -118,7 +118,7 @@ ON_NOTIFY_REFLECT 및 ON_CONTROL_REFLECT 매크로 변형이 지정된 된 메�
 
    재사용 가능한 컨트롤을 개발 하는 응용 프로그램이 있어야 합니다. 사용 하 여 기존 응용 프로그램에 없는 경우 응용 프로그램 마법사를 사용 하 여 대화 상자 기반 응용 프로그램을 만듭니다.
 
-2. Visual c + +에 로드 된 프로젝트를 사용 하 여 클래스 마법사 라는 새 클래스를 만듭니다 `CYellowEdit` 기반 `CEdit`입니다.
+2. 프로젝트를 사용 하 여 시각적 개체로 로드 C++를 클래스 마법사를 사용 하 여 라는 새 클래스를 만듭니다 `CYellowEdit` 기반 `CEdit`합니다.
 
 3. 세 가지 멤버 변수를 추가 하 여 `CYellowEdit` 클래스입니다. 처음 두 됩니다 *COLORREF* 텍스트 색과 배경색을 보유할 변수입니다. 세 번째는 `CBrush` 배경을 그리는 브러시를 포함 하는 개체입니다. 합니다 `CBrush` 개체를 사용 하면 한 번, 단순히 그 참조 하는 브러시를 만들고 브러시를 자동으로 제거 하는 `CYellowEdit` 컨트롤이 소멸 될 합니다.
 

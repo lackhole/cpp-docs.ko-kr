@@ -7,15 +7,15 @@ helpviewer_keywords:
 - -Zc:__cplusplus compiler option (C++)
 - __cplusplus macro (C++)
 ms.openlocfilehash: 89545f541f32374a47dce7f87958e61873c1b47c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315718"
 ---
 # <a name="zccplusplus-enable-updated-cplusplus-macro"></a>/Zc: __cplusplus (업데이트 __cplusplus 매크로 사용)
 
-**/zc: __cplusplus** 컴파일러 옵션이 사용 하도록 설정 합니다  **\_ \_cplusplus** 전처리기 매크로를 최신 c + + 언어 표준 지원에 대 한 업데이트 된 값을 보고 합니다. 기본적으로 Visual Studio 항상 값 "199711 L"을 반환 합니다  **\_ \_cplusplus** 전처리기 매크로입니다.
+**/zc: __cplusplus** 컴파일러 옵션이 사용 하도록 설정 합니다  **\_ \_cplusplus** 전처리기 매크로 대 한 업데이트 된 값을 보고를 최근 C++ 언어 표준을 지원 합니다. 기본적으로 Visual Studio 항상 값 "199711 L"을 반환 합니다  **\_ \_cplusplus** 전처리기 매크로입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,7 +23,7 @@ ms.locfileid: "57810096"
 
 ## <a name="remarks"></a>설명
 
-합니다  **\_ \_cplusplus** 전처리기 매크로 c + + 표준의 특정 버전을 지 원하는 보고서 일반적으로 사용 됩니다. 기존 코드를 많이 "199711 L"와 일치 하는이 매크로의 값에 따라 달라 지도록 나타나므로 컴파일러 변경 되지 않습니다 매크로의 값을 명시적으로 옵트인 할를 사용 하 여 경우가 아니면 합니다 **/zc: __cplusplus** 컴파일러 옵션입니다. 합니다 **/zc: __cplusplus** 옵션 Visual Studio 2017 버전 15.7부터 사용할 수 있고 기본적으로 해제 되어 있습니다. 이전 버전의 Visual Studio 및 기본적으로 이거나 **/Zc:__cplusplus-** 으로 지정 되지 "199711 L" 값을 반환 하는 Visual Studio는  **\_ \_cplusplus** 전처리기 매크로입니다. [/ permissive-](permissive-standards-conformance.md) 옵션이 사용 되지 않습니다 **/zc: __cplusplus**합니다.
+합니다  **\_ \_cplusplus** 전처리기 매크로 특정 버전의 보고서 지원에 일반적으로 사용 되는 C++ 표준입니다. 기존 코드를 많이 "199711 L"와 일치 하는이 매크로의 값에 따라 달라 지도록 나타나므로 컴파일러 변경 되지 않습니다 매크로의 값을 명시적으로 옵트인 할를 사용 하 여 경우가 아니면 합니다 **/zc: __cplusplus** 컴파일러 옵션입니다. 합니다 **/zc: __cplusplus** 옵션 Visual Studio 2017 버전 15.7부터 사용할 수 있고 기본적으로 해제 되어 있습니다. 이전 버전의 Visual Studio 및 기본적으로 이거나 **/Zc:__cplusplus-** 으로 지정 되지 "199711 L" 값을 반환 하는 Visual Studio는  **\_ \_cplusplus** 전처리기 매크로입니다. [/ permissive-](permissive-standards-conformance.md) 옵션이 사용 되지 않습니다 **/zc: __cplusplus**합니다.
 
 경우는 **/zc: __cplusplus** 옵션을 사용 하면에서 보고 된 값을  **\_ \_cplusplus** 매크로에 따라 달라 집니다를 [/std](std-specify-language-standard-version.md) 버전 스위치 설정입니다. 이 표에서 매크로 대 한 가능한 값을 보여 줍니다.
 
@@ -41,9 +41,9 @@ Zc:__cplusplus-(사용 안 함)|모든 값|199711L
 
 ### <a name="to-set-this-compiler-option-in-visual-studio"></a>Visual Studio에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. 추가 **/zc: __cplusplus** 하거나 **/Zc:__cplusplus-** 하는 **추가 옵션:** 창.
 

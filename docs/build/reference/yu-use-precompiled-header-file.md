@@ -12,11 +12,11 @@ helpviewer_keywords:
 - precompiled header files, use existing
 ms.assetid: 24f1bd0e-b624-4296-a17e-d4b53e374e1f
 ms.openlocfilehash: c0dcb045450d6e6eca31b8c76a92726e62400656
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62316147"
 ---
 # <a name="yu-use-precompiled-header-file"></a>/Yu(미리 컴파일된 헤더 파일 사용)
 
@@ -63,7 +63,7 @@ ms.locfileid: "57810122"
 
 1. 지정할 [/Yc (미리 컴파일된 헤더 파일 만들기)](yc-create-precompiled-header-file.md) 프로젝트에서.cpp 파일입니다.
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 

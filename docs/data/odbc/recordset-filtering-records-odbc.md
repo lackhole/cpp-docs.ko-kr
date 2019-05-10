@@ -9,11 +9,11 @@ helpviewer_keywords:
 - filters [C++], recordset object
 ms.assetid: 5c075f37-c837-464d-90c1-d028a9d1c175
 ms.openlocfilehash: 050524df840be28d661da89d04b685a44238f88c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59041217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62397863"
 ---
 # <a name="recordset-filtering-records-odbc"></a>레코드 집합: 레코드 필터링 (ODBC)
 
@@ -90,7 +90,7 @@ ODBC 사양에 맞는 위의 인용 되지만 일부 Dbms에 다른 따옴표 �
 ## <a name="see-also"></a>참고자료
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[레코드 집합: 레코드 정렬 (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)<br/>
-[레코드 집합: 레코드 집합 선택 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
-[레코드 집합: 레코드 집합 업데이트 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
-[레코드 집합: 레코드 잠금 (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+[레코드 집합 레코드 정렬(ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)<br/>
+[레코드 집합 레코드 집합의 레코드 선택 방법(ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
+[레코드 집합 레코드 집합의 레코드 업데이트 방법(ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
+[레코드 집합 레코드 잠금(ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

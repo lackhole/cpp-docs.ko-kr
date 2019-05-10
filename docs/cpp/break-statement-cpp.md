@@ -7,11 +7,11 @@ helpviewer_keywords:
 - break keyword [C++]
 ms.assetid: 63739928-8985-4b05-93ce-016322e6da3d
 ms.openlocfilehash: 3dda0b19fffaaf725ab363a0c4fe70d2ca54e3f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62267717"
 ---
 # <a name="break-statement-c"></a>break 문 (C++)
 
@@ -154,5 +154,5 @@ int main() {
 ## <a name="see-also"></a>참고자료
 
 [점프 문](../cpp/jump-statements-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [continue 문](../cpp/continue-statement-cpp.md)

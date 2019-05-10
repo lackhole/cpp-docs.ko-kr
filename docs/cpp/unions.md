@@ -1,18 +1,18 @@
 ---
 title: Unions
-ms.date: 11/19/2018
+ms.date: 05/06/2019
 f1_keywords:
 - union_cpp
 helpviewer_keywords:
 - class types [C++], unions as
 - union keyword [C++]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
-ms.openlocfilehash: f14f1197c4c835e9dfb753b1396e12e2d2f12772
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
-ms.translationtype: MT
+ms.openlocfilehash: 58f4940d209b783b00c7167265ff1a2a733c947c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176525"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222335"
 ---
 # <a name="unions"></a>Unions
 
@@ -31,7 +31,7 @@ union [name]  { member-list };
 *name*<br/>
 공용 구조체에 지정된 형식 이름입니다.
 
-*멤버 목록*<br/>
+*member-list*<br/>
 공용 구조체에 포함할 수 있는 멤버입니다. 설명 부분을 참조하세요.
 
 ## <a name="remarks"></a>설명
@@ -64,7 +64,6 @@ int main()
 이전 예제에서 공용 구조체에 액세스하는 코드는 데이터를 보유하고 있는 멤버를 알고 있어야 합니다. 이 문제의 가장 일반적인 솔루션은 현재 공용 구조체에 저장되는 데이터의 형식을 나타내는 추가 열거형 멤버와 함께 구조체의 용 구조체를 묶는 것입니다. 이 호출 되는 *구분 된 공용 구조체* 다음 예제에서는 기본 패턴을 보여 줍니다.
 
 ```cpp
-#include "stdafx.h"
 #include <queue>
 
 using namespace std;
@@ -654,7 +653,7 @@ union  {  member-list  }
 
 ## <a name="see-also"></a>참고자료
 
-[클래스 및 구조체](../cpp/classes-and-structs-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[클래스 및 구조체(C++)](../cpp/classes-and-structs-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [class](../cpp/class-cpp.md)<br/>
 [struct](../cpp/struct-cpp.md)

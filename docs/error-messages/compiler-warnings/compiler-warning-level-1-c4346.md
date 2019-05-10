@@ -7,17 +7,17 @@ helpviewer_keywords:
 - C4346
 ms.assetid: 68ee562d-cca9-4a2a-9a1b-14ad1a1e7396
 ms.openlocfilehash: 53381ca6e33321001299ce27bce550c5b2b8f59e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62187220"
 ---
 # <a name="compiler-warning-level-1-c4346"></a>컴파일러 경고(수준 1) C4346
 
 'name': 종속 이름이 형식이 아닙니다.
 
-합니다 [typename](../../cpp/typename.md) 키워드는 종속 이름이 형식으로 취급 하는 경우에 필요 합니다. 모든 버전의 Visual c + +에서 동일한 방식으로 작동 하는 코드에 대 한 추가 `typename` 를 선언 합니다.
+합니다 [typename](../../cpp/typename.md) 키워드는 종속 이름이 형식으로 취급 하는 경우에 필요 합니다. 동일한 시각적 개체의 모든 버전에서 작동 하는 코드에 대 한 C++를 추가 `typename` 를 선언 합니다.
 
 다음 샘플에서는 C4346을 생성합니다.
 

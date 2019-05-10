@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C1076
 ms.assetid: 84ac1180-3e8a-48e8-9f77-7f18a778b964
 ms.openlocfilehash: 91753a49498548b4e523cd8564ee7a7ca7a3b373
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62406953"
 ---
 # <a name="fatal-error-c1076"></a>심각한 오류 C1076
 
@@ -25,7 +25,7 @@ ms.locfileid: "57751676"
 
 1. 사용 하 여 지정 된 병렬 프로세스의 수를 줄이고 합니다 **/maxcpucount** msbuild 옵션입니다. 와 함께에서 EXE 합니다 **/MP** CL 옵션입니다. EXE 수 있습니다. 자세한 내용은 [미리 컴파일된 헤더 (PCH) 문제와 권장 사항을](https://devblogs.microsoft.com/cppblog/precompiled-header-pch-issues-and-recommendations/)합니다.
 
-1. 64비트 운영 체제에서 32비트로 호스팅된 컴파일러를 사용하는 경우 64비트로 호스팅된 컴파일러를 대신 사용하십시오. 자세한 내용은 [방법: 명령줄에서 64 비트 Visual c + + 도구를 사용 하도록 설정](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)합니다.
+1. 64비트 운영 체제에서 32비트로 호스팅된 컴파일러를 사용하는 경우 64비트로 호스팅된 컴파일러를 대신 사용하십시오. 자세한 내용은 [방법: 64 비트 시각적 개체를 사용 하도록 설정 C++ 명령줄에서 도구 집합](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)합니다.
 
 1. 필요 없는 포함 파일을 제거합니다.
 

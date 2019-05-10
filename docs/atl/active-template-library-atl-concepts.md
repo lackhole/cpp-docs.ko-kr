@@ -1,21 +1,21 @@
 ---
 title: ATL(액티브 템플릿 라이브러리) 개념
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - ATL, about ATL
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
-ms.openlocfilehash: 7eb7eb1c369f825fbb689cd476d43be538ae8d9a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: 785b929e935962f6461ffbc3722f573a61cb8749
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58774622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221306"
 ---
 # <a name="active-template-library-atl-concepts"></a>ATL(액티브 템플릿 라이브러리) 개념
 
 액티브 템플릿 라이브러리 (ATL)는 작고 빠른 구성 요소 개체 모델(COM, Component Object Model)을 만들 수 있도록 해 주는 템플릿 기반의 C++ 클래스의 집합입니다. 스토크 구현, 이중 인터페이스, 표준 COM 열거자 인터페이스, 연결 지점, 분리 인터페이스 및 ActiveX 컨트롤을 포함한 핵심 COM 기능에 대한 특별한 지원을 해 줍니다.
 
-다수의 ATL 프로그래밍을 수행하기 위해 특성이나 COM 프로그래밍 간소화를 위해 설계된 Visual C++.NET의 새로운 기능에 대한 학습이 필요할 수도 있습니다. 자세한 내용은 [특성 사용 프로그래밍](../windows/attributed-programming-concepts.md)을 참조합니다.
+ATL 프로그래밍 많은 경우 해야 COM 및.NET 특성에 대 한 자세한 COM 프로그래밍을 단순화 하도록 설계 된 합니다. 자세한 내용은 [특성 사용 프로그래밍](../windows/attributed-programming-concepts.md)을 참조합니다. (혼동 해서는 COM 및.NET 특성은는 \[ \[특성]] 기능을 C++ 표준.)
 
 ## <a name="in-this-section"></a>섹션 내용
 

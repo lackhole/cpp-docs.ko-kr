@@ -21,11 +21,11 @@ helpviewer_keywords:
 - std::promise [C++], set_value_at_thread_exit
 - std::promise [C++], swap
 ms.openlocfilehash: 101c9939f1636d87780aa15aea9459ebb927684d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369958"
 ---
 # <a name="promise-class"></a>promise 클래스
 
@@ -63,7 +63,7 @@ class promise;
 |----------|-----------------|
 |[promise::operator=](#op_eq)|이 promise 개체의 공유 상태에 대한 할당입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 *promise*<br/>
 
@@ -145,7 +145,7 @@ void set_exception(exception_ptr Exc);
 
 ### <a name="parameters"></a>매개 변수
 
-*전용*<br/>
+*Exc*<br/>
 이 메서드가 예외 결과로 저장한 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)입니다.
 
 ### <a name="remarks"></a>설명
@@ -166,7 +166,7 @@ void set_exception_at_thread_exit(exception_ptr Exc);
 
 ### <a name="parameters"></a>매개 변수
 
-*전용*<br/>
+*Exc*<br/>
 이 메서드가 예외 결과로 저장한 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)입니다.
 
 ### <a name="remarks"></a>설명
@@ -190,7 +190,7 @@ void promise<void>::set_value();
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*Val*<br/>
 결과로 저장할 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -222,7 +222,7 @@ void promise<void>::set_value_at_thread_exit();
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*Val*<br/>
 결과로 저장할 값입니다.
 
 ### <a name="remarks"></a>설명

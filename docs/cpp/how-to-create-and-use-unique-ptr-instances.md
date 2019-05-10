@@ -5,11 +5,11 @@ ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 9a373030-e587-452f-b9a5-c5f9d58b7673
 ms.openlocfilehash: 48e459b69592bf4c231407c2a378a7b7e01ff4ae
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153663"
 ---
 # <a name="how-to-create-and-use-uniqueptr-instances"></a>방법: unique_ptr 인스턴스 만들기 및 사용
 

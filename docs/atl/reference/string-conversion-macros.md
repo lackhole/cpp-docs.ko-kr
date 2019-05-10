@@ -12,11 +12,11 @@ f1_keywords:
 - atlconv/ATL::TEXTMETRICW2A
 ms.assetid: 2ff7c0b6-2bde-45fe-897f-6128e18e0c27
 ms.openlocfilehash: 889f8459e81418197420bc2efd410225d4f220bc
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57271764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62197257"
 ---
 # <a name="string-conversion-macros"></a>문자열 변환 매크로
 
@@ -36,7 +36,7 @@ MACRONAME( address_of_structure )
 
 ### <a name="remarks"></a>설명
 
-예를 들면,
+예를 들어:
 
 [!code-cpp[NVC_ATL_Utilities#128](../../atl/codesnippet/cpp/string-conversion-macros_1.cpp)]
 

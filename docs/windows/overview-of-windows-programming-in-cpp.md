@@ -1,13 +1,13 @@
 ---
 title: C++를 이용한 Windows 프로그래밍 개요
-ms.date: 03/28/2019
+ms.date: 05/06/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 48c7f419b6c69955ab25db528c8d3d86a7249391
-ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
+ms.openlocfilehash: 40028794a6df30db619965181f2e31d7c9a2745c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60124943"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221333"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++를 이용한 Windows 프로그래밍 개요
 
@@ -21,7 +21,7 @@ C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍
 
 용어 *데스크톱 네이티브 클라이언트 응용 프로그램* C를 가리킵니다 또는 C++ 원래 네이티브를 사용 하는 응용 프로그램과 [Windows C Api 및/또는 COM Api](/windows/desktop/apiindex/windows-api-list) 운영 시스템에 액세스할 수 있습니다. 이러한 API 자체는 주로 C 언어로 작성됩니다. 응용 프로그램을 만들 때 운영 체제 이벤트를 처리하는 C 스타일의 메시지 루프를 직접 프로그래밍하거나 다소 객체 지향적인 방식으로 Win32를 래핑한 *Microsoft Foundation Classes* (MFC)를 사용할 수 있습니다. 두 접근 방식에는 "최신" 유니버설 Windows 플랫폼 (아래 참조) 비교할 수 있지만 모두 여전히 완전히 지원되며 현재 환경에서 실행되는 코드의 줄에 수백만 개의 으로 간주됩니다. Win32 응용 프로그램은 개발자가 Windows 프로시저 함수 내에서 Windows 메시지를 명시적으로 처리해준 Windows로 실행될 수 있습니다.  Win32 응용 프로그램이라는 공통된 이름을 사용하지만 32비트(x86) 또는 64비트(x64) 이진 파일로 컴파일할 수 있습니다. Visual Studio IDE에서 x86과 Win32 용어는 동의어입니다.
 
-기존의 Windows C++ 프로그래밍을 시작하려면 [Win32 및 C++ 시작](/windows/desktop/LearnWin32/learn-to-program-for-windows)을 참조하세요. Win32에 대해 이해를 하면 [MFC 데스크톱 응용 프로그램](/mfc/mfc-desktop-applications)에 대해 더 쉽게 배울 수 있습니다. 기존의의 예 C++ 정교한 그래픽을 사용 하는 데스크톱 응용 프로그램 참조 [Hilo: 개발 C++ Windows 용 응용 프로그램](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)합니다.
+기존의 Windows C++ 프로그래밍을 시작하려면 [Win32 및 C++ 시작](/windows/desktop/LearnWin32/learn-to-program-for-windows)을 참조하세요. Win32에 대해 이해를 하면 [MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)에 대해 더 쉽게 배울 수 있습니다. 기존의의 예 C++ 정교한 그래픽을 사용 하는 데스크톱 응용 프로그램 참조 [Hilo: 개발 C++ Windows 용 응용 프로그램](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)합니다.
 
 ### <a name="c-or-net"></a>C++? .NET? 
 

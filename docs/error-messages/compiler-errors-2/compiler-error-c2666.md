@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2666
 ms.assetid: 78364d15-c6eb-439a-9088-e04a0176692b
 ms.openlocfilehash: 4a1d46f3b000b5054564b05ca2c3c94a9e7b6398
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62386878"
 ---
 # <a name="compiler-error-c2666"></a>컴파일러 오류 C2666
 
@@ -43,7 +43,7 @@ Visual Studio.NET 2003에 대해 수행한 컴파일러 규칙 작업의 결과�
 
 이항 연산자 \<, >, \<= 및 > =, 전달 되 매개 변수는 이제 암시적으로 변환할 피연산자의 형식 매개 변수의 형식 피연산자의 형식으로 변환 하는 사용자 정의 변환 연산자를 정의 하는 경우. 잠재적으로 모호성에 대 한 합니다.
 
-Visual Studio.NET 2003 및 Visual c + +의 Visual Studio.NET 버전 둘 다에 적용 되는 코드에 대 한 명시적으로 함수 구문을 사용 하 여 클래스 연산자를 호출 합니다.
+시각적 개체의 Visual Studio.NET 2003와 Visual Studio.NET 버전에 적용 되는 코드에 대 한 C++를 명시적으로 함수 구문을 사용 하 여 클래스 연산자를 호출 합니다.
 
 ## <a name="example"></a>예제
 

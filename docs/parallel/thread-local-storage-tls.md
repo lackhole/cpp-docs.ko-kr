@@ -9,22 +9,22 @@ helpviewer_keywords:
 - thread attribute
 - Thread Local Storage [C++]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-ms.openlocfilehash: f5a75f7964b0291a980b22d36e7ce6a0a87d3dc3
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5c7bf2ae7cb5bfe71be9a1d72147e97c894064b3
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293461"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448900"
 ---
 # <a name="thread-local-storage-tls"></a>TLS
 
-TLS(스레드 로컬 저장소)는 지정된 다중 스레드 프로세스의 각 스레드에서 스레드별 데이터를 저장하는 위치를 할당하는 방법입니다. 동적으로 바인딩 (런타임) 스레드별 데이터 TLS API를 통해 지원 됩니다 ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)합니다.  Win32 및 Visual C++ 컴파일러는 이제 기존 API 구현 외에도 정적으로 바인딩된(로드 타임) 스레드별 데이터도 지원합니다.
+TLS(스레드 로컬 저장소)는 지정된 다중 스레드 프로세스의 각 스레드에서 스레드별 데이터를 저장하는 위치를 할당하는 방법입니다. 동적으로 바인딩 (런타임) 스레드별 데이터 TLS API를 통해 지원 됩니다 ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)합니다.  Win32 및 Microsoft C++ 컴파일러 지원 (로드 타임) 스레드별 데이터는 기존 API 구현 외에도 정적으로 바인딩할 이제 합니다.
 
 ##  <a name="_core_compiler_implementation_for_tls"></a> TLS의 컴파일러 구현
 
-**C++11:**  `thread_local` 저장소 클래스 지정자는 클래스 멤버 및 개체에 대 한 스레드 로컬 저장소를 지정 하는 방법이 권장된 됩니다. 자세한 내용은 [저장소 클래스 (c + +)](../cpp/storage-classes-cpp.md)합니다.
+**C++11:**  `thread_local` 저장소 클래스 지정자는 클래스 멤버 및 개체에 대 한 스레드 로컬 저장소를 지정 하는 방법이 권장된 됩니다. 자세한 내용은 [저장소 클래스 (C++)](../cpp/storage-classes-cpp.md)합니다.
 
-Visual c + +에서는 Microsoft 전용 특성인 [스레드](../cpp/thread.md), 확장된 저장소 클래스 한정자로 합니다. 사용 된 **__declspec** 키워드를 선언 하는 **스레드** 변수. 예를 들어, 다음 코드는 정수 스레드 로컬 변수를 선언한 다음 값으로 초기화합니다.
+Visual C++ 에서는 다음 Microsoft 전용 특성인 [스레드](../cpp/thread.md)확장된 저장소 클래스 한정자로 합니다. 사용 된 **__declspec** 키워드를 선언 하는 **스레드** 변수. 예를 들어, 다음 코드는 정수 스레드 로컬 변수를 선언한 다음 값으로 초기화합니다.
 
 ```
 __declspec( thread ) int tls_i = 1;
@@ -40,7 +40,7 @@ __declspec( thread ) int tls_i = 1;
     __declspec( thread )void func();     // This will generate an error.
     ```
 
-- 합니다 **스레드** 한정자를 사용 하 여 데이터 항목에만 지정할 수 있습니다 **정적** 범위입니다. 여기에 전역 데이터 개체 (둘 다 **정적** 하 고 **extern**), 지역 정적 개체 및 c + + 클래스의 정적 데이터 멤버입니다. 자동 데이터 개체를 사용 하 여 선언할 수 없습니다는 **스레드** 특성입니다. 다음 코드는 컴파일러 오류를 생성합니다.
+- 합니다 **스레드** 한정자를 사용 하 여 데이터 항목에만 지정할 수 있습니다 **정적** 범위입니다. 여기에 전역 데이터 개체 (둘 다 **정적** 하 고 **extern**), 지역 정적 개체 및 정적 데이터 멤버의 C++ 클래스. 자동 데이터 개체를 사용 하 여 선언할 수 없습니다는 **스레드** 특성입니다. 다음 코드는 컴파일러 오류를 생성합니다.
 
     ```
     void func1()
@@ -68,7 +68,7 @@ __declspec( thread ) int tls_i = 1;
     char __declspec( thread ) *ch;        // Error
     ```
 
-- C + +의 선언에 사용 하는 개체가 **스레드** 특성은 허용, 다음 두 예제는 의미 체계가 같습니다.
+- 때문에 선언의 C++ 사용 하는 개체를 **스레드** 특성은 허용, 다음 두 예제는 의미 체계가 같습니다.
 
     ```
     __declspec( thread ) class B
@@ -104,8 +104,7 @@ __declspec( thread ) int tls_i = 1;
 
    C++에서는 향후 스레드 로컬 저장소 기능이 향상될 수 있으므로 이런 방식으로 스레드 데이터를 동적으로 초기화할 수 없습니다.
 
-- Windows Vista 이전의 Windows 운영 체제에서 `__declspec`(스레드)에 몇 가지 제한 사항이 있습니다. DLL에서 데이터 또는 개체를 `__declspec`( thread )로 선언하는 경우 동적으로 로드하면 보호 오류가 발생할 수 있습니다. DLL을 사용 하 여 로드 한 후 [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya), 코드를 참조할 때마다 시스템 오류가 발생 합니다 `__declspec`(thread) 데이터. 런타임에 스레드에 대한 전역 변수 공간이 할당되기 때문에, 이 공간의 크기는 응용 프로그램의 요구 사항과 정적으로 연결되는 모든 DLL의 요구 사항을 계산하여 결정됩니다. 
-  `LoadLibrary`를 사용할 때는 `__declspec`( thread )로 스레드 로컬 변수를 선언할 수 있도록 이 공간을 확장할 수 없습니다. 와 같은 TLS Api를 사용 하 여 [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)를 사용 하 여 DLL을 로드 될 수 하는 경우 TLS에 할당할 DLL의 `LoadLibrary`합니다.
+- Windows Vista 이전의 Windows 운영 체제에서 `__declspec`(스레드)에 몇 가지 제한 사항이 있습니다. DLL에서 데이터 또는 개체를 `__declspec`( thread )로 선언하는 경우 동적으로 로드하면 보호 오류가 발생할 수 있습니다. DLL을 사용 하 여 로드 한 후 [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya), 코드를 참조할 때마다 시스템 오류가 발생 합니다 `__declspec`(thread) 데이터. 런타임에 스레드에 대한 전역 변수 공간이 할당되기 때문에, 이 공간의 크기는 응용 프로그램의 요구 사항과 정적으로 연결되는 모든 DLL의 요구 사항을 계산하여 결정됩니다. `LoadLibrary`를 사용할 때는 `__declspec`( thread )로 스레드 로컬 변수를 선언할 수 있도록 이 공간을 확장할 수 없습니다. 와 같은 TLS Api를 사용 하 여 [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)를 사용 하 여 DLL을 로드 될 수 하는 경우 TLS에 할당할 DLL의 `LoadLibrary`합니다.
 
 ## <a name="see-also"></a>참고자료
 

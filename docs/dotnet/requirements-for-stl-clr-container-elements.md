@@ -9,11 +9,11 @@ helpviewer_keywords:
 - containers, C++ Standard Library
 ms.assetid: 59ab240c-15bf-4701-a9f9-e7c56e5ab53f
 ms.openlocfilehash: 113624b15a0c2c6062feb7113c4771fda6d6cf39
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62384703"
 ---
 # <a name="requirements-for-stlclr-container-elements"></a>STL/CLR 컨테이너 요소에 대한 요구 사항
 

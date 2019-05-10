@@ -24,11 +24,11 @@ helpviewer_keywords:
 - setvbuf function
 ms.assetid: 6aa5aa37-3408-4fa0-992f-87f9f9c4baea
 ms.openlocfilehash: d4336c6cc478a035fcc0b9b059a7161d58bc4442
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356318"
 ---
 # <a name="setvbuf"></a>setvbuf
 
@@ -47,7 +47,7 @@ int setvbuf(
 
 ### <a name="parameters"></a>매개 변수
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 *buffer*<br/>
@@ -57,7 +57,7 @@ int setvbuf(
 버퍼링 모드입니다.
 
 *size*<br/>
-버퍼 크기(바이트)입니다. 허용 되는 범위: 2 < = *크기* < = INT_MAX (2147483647). 내부적으로 제공 된 값 *크기* 가장 가까운 2의 배수로 내림 합니다.
+버퍼 크기(바이트)입니다. 허용 되는 범위: 2 <= *size* <= INT_MAX (2147483647). 내부적으로 제공 된 값 *크기* 가장 가까운 2의 배수로 내림 합니다.
 
 ## <a name="return-value"></a>반환 값
 

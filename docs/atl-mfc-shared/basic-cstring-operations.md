@@ -10,11 +10,11 @@ helpviewer_keywords:
 - characters, accessing in CStrings
 ms.assetid: 41db66b2-9427-4bb3-845a-9b6869159a6c
 ms.openlocfilehash: 08c496038efc9e24e1c1610da07b6824c3a50b64
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62216859"
 ---
 # <a name="basic-cstring-operations"></a>기본 CString 작업
 
@@ -97,7 +97,7 @@ CString cs("meow");
 wcout << (const wchar_t*) cs << endl;
 ```
 
-캐스트를 사용 하지 않고 `cs` 로 처리 됩니다는 `void*` 고 `wcout` 개체의 주소를 출력 합니다. 이 문제는 c + + 표준 템플릿 인수 감소 및 오버 로드 확인의 올바른 자체는 및와 호환 되는 간에 미묘한 상호 작용을 통해 발생 합니다.
+캐스트를 사용 하지 않고 `cs` 로 처리 됩니다는 `void*` 고 `wcout` 개체의 주소를 출력 합니다. 템플릿 인수 감소 및 오버 로드 확인 되는 올바른 자체와 준수 간의 미묘한 상호 작용 하 여이 문제는 발생 된 C++ 표준입니다.
 
 ## <a name="see-also"></a>참고자료
 

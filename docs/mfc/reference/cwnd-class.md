@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: 493fe04f34f615d9113196e3db8bc744f420d4a2
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.openlocfilehash: e88c375560c617e970c70adda245125ac8242ae4
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57426266"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220346"
 ---
 # <a name="cwnd-class"></a>CWnd 클래스
 
@@ -8262,7 +8262,7 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
 
 ### <a name="return-value"></a>반환 값
 
-마우스 적중 테스트 중 아래에 나열 된 값을 열거 합니다.
+마우스 적중 테스트 중 열거형 값입니다. 참조 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 값 목록에 대 한 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -8282,7 +8282,7 @@ afx_msg void OnNcLButtonDblClk(
 ### <a name="parameters"></a>매개 변수
 
 *nHitTest*<br/>
-지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
+지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다. 참조 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 값 목록에 대 한 합니다.
 
 *point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
@@ -8307,7 +8307,7 @@ afx_msg void OnNcLButtonDown(
 ### <a name="parameters"></a>매개 변수
 
 *nHitTest*<br/>
-지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
+지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다. 참조 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 값 목록에 대 한 합니다.
 
 *point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
@@ -8332,7 +8332,7 @@ afx_msg void OnNcLButtonUp(
 ### <a name="parameters"></a>매개 변수
 
 *nHitTest*<br/>
-지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
+지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다. 참조 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 값 목록에 대 한 합니다.
 
 *point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.

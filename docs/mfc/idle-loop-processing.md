@@ -17,11 +17,11 @@ helpviewer_keywords:
 - background processing [MFC]
 ms.assetid: 5c7c46c1-6107-4304-895f-480983bb1e44
 ms.openlocfilehash: 0d0e3fcba9ce447ec359958fc5ed59c6d596dd7a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57287139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62219492"
 ---
 # <a name="idle-loop-processing"></a>유휴 루프 처리
 
@@ -50,7 +50,7 @@ MFC를 사용 하 여 개발한 응용 프로그램에서 주 메시지 루프�
 
 [!code-cpp[NVC_MFCDocView#8](../mfc/codesnippet/cpp/idle-loop-processing_1.cpp)]
 
-이 코드는 함수에 포함 된 작업을 수행 하는 유휴 상태 처리가으로 루프입니다. 해당 루프 내에서 중첩 된 루프를 반복적으로 호출 `PeekMessage`합니다. 루프를 호출 하는 호출 하는 0이 아닌 값을 반환 하기만 `CWinThread::PumpMessage` 일반 메시지 변환 및 디스패치를 수행 하 합니다. 하지만 `PumpMessage` 문서화 되 없는 Visual c + + 설치의 \atlmfc\src\mfc 디렉터리 ThrdCore.Cpp 파일에서 소스 코드를 검사할 수 있습니다.
+이 코드는 함수에 포함 된 작업을 수행 하는 유휴 상태 처리가으로 루프입니다. 해당 루프 내에서 중첩 된 루프를 반복적으로 호출 `PeekMessage`합니다. 루프를 호출 하는 호출 하는 0이 아닌 값을 반환 하기만 `CWinThread::PumpMessage` 일반 메시지 변환 및 디스패치를 수행 하 합니다. 하지만 `PumpMessage` 문서화 되 없는 시각적 개체의 \atlmfc\src\mfc 디렉터리 ThrdCore.Cpp 파일에서 소스 코드를 검사할 수 있습니다 C++ 설치 합니다.
 
 한 번 내부 루프가 종료 외부 루프 유휴 처리를 수행 하려면 하나 이상의 호출을 사용 하 여 `OnIdle`입니다. 첫 번째 호출은 MFC의 목적입니다. 추가 호출을 할 수 있습니다 `OnIdle` 고유한 백그라운드 작업을 수행 합니다.
 

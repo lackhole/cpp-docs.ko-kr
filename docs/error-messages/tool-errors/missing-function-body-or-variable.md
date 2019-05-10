@@ -5,12 +5,12 @@ helpviewer_keywords:
 - function body
 - variables, missing
 ms.assetid: 1a88d809-b14f-46a4-97c4-3e48beb418f2
-ms.openlocfilehash: c287d804df3222475d7cf32c6eb025f642dfb913
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 5e3436054d69da7fb67c240c1d684585734635c3
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59031862"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857153"
 ---
 # <a name="missing-function-body-or-variable"></a>함수 본문 또는 변수 누락
 
@@ -20,7 +20,7 @@ ms.locfileid: "59031862"
 
 Main 함수 호출의 프로토타입 함수가 존재 생각 하는 컴파일러를 허용 하기 때문에 lnk2019가 발생 합니다.  링커를 찾지 못합니다.
 
-```
+```cpp
 // LNK2019_MFBV.cpp
 // LNK2019 expected
 void DoSomething(void);
@@ -33,7 +33,7 @@ int main() {
 
 C++를 클래스 정의에서 클래스 및 프로토타입 뿐 아니라 특정 함수의 구현이 포함 되었는지 확인 합니다. 헤더 파일 외부에서 클래스를 정의 하는 경우 포함 해야 함수 전의 클래스 이름 (`Classname::memberfunction`).
 
-```
+```cpp
 // LNK2019_MFBV_2.cpp
 // LNK2019 expected
 struct A {

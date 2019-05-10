@@ -11,16 +11,15 @@ helpviewer_keywords:
 - task_completion_event class
 ms.assetid: fb19ed98-f245-48dc-9ba5-487ba879b28a
 ms.openlocfilehash: 9d0ab271b20eb02c1dc4cb8e54cf2632eead4325
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57293890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212887"
 ---
 # <a name="taskcompletionevent-class"></a>task_completion_event 클래스
 
-
-  `task_completion_event` 클래스를 사용하면 조건이 충족될 때까지 작업 실행을 지연하거나 외부 이벤트에 대한 응답으로 작업을 시작할 수 있습니다.
+`task_completion_event` 클래스를 사용하면 조건이 충족될 때까지 작업 실행을 지연하거나 외부 이벤트에 대한 응답으로 작업을 시작할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 

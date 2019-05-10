@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - container classes [C++]
 ms.assetid: 5b1451f2-c708-45da-bbf0-9e42fd687a1a
-ms.openlocfilehash: dbfa076756b9e4829898d38e0277ad90106ba579
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c797a893549c8ec708cfb60e6f002b35c27cd35c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536229"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220235"
 ---
 # <a name="sample-container-class"></a>Sample Container 클래스
 
 > [!NOTE]
-> 이 항목은 C++ 표준 라이브러리에서 사용되는 작동하지 않는 컨테이너 예제로 Visual C++ 설명서에 포함되어 있습니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
+> 이 항목은 Microsoft C++ 설명서에 사용 되는 컨테이너의 작동 하지 않는 예로 C++ 표준 라이브러리입니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
 
 다양 한 길이의 요소를 일반적으로 형식의 시퀀스를 제어 하는 개체에 설명 합니다 `Ty`합니다. 시퀀스는 실제 컨테이너에 따라 다른 방식으로 저장됩니다.
 
@@ -32,9 +32,9 @@ ms.locfileid: "50536229"
 
 컨테이너 템플릿 클래스 [list](../standard-library/list-class.md)는 위에서 설명한 예외가 발생하더라도 명확하게 정의되는 유용한 동작을 제공합니다. 예를 들어 요소 하나 이상을 삽입하는 동안 예외가 throw되어도 컨테이너는 변경되지 않고 그대로 유지되며 예외가 다시 throw됩니다.
 
-에 대 한 *모든* 다음 멤버 함수를 호출 하는 동안 예외가 발생 하는 경우 c + + 표준 라이브러리를 통해 정의 된 컨테이너 클래스 `insert`, `push_back`, 또는 `push_front`를 컨테이너 왼쪽은 변경 되지 않은 및 예외가 다시 throw 됩니다.
+에 대 한 *모든* 정의한 컨테이너 클래스 C++ 다음 멤버 함수를 호출 하는 동안 예외가 발생 하는 경우 표준 라이브러리 `insert`합니다 `push_back`, 또는 `push_front`, 컨테이너 그대로 변경 되지 않은 및 예외 다시 throw 됩니다.
 
-에 대 한 *모든* c + + 표준 라이브러리에서 정의 된 컨테이너 클래스, 예외가 발생 하지 않습니다 다음 멤버 함수를 호출 하는 동안: `pop_back`, `pop_front`합니다.
+에 대 한 *모든* 정의한 컨테이너 클래스 C++ 표준 라이브러리, 예외가 발생 하지 않습니다 다음 멤버 함수를 호출 하는 동안: `pop_back`하십시오 `pop_front`합니다.
 
 구성원 함수 [erase](../standard-library/container-class-erase.md)는 복사 작업(할당 또는 복사본 생성)에서 예외가 throw되는 경우에만 예외를 throw합니다.
 
@@ -48,7 +48,7 @@ ms.locfileid: "50536229"
 
 C++ 표준 라이브러리를 통해 정의되는 컨테이너 클래스의 개체는 `Alloc` 형식의 저장된 개체(대개 템플릿 매개 변수)를 통해 제어하는 시퀀스용 스토리지를 할당하고 확보합니다. 그러한 할당자 개체는 클래스의 개체와 같은 외부 인터페이스가 있어야 합니다. `allocator<Ty>`합니다. 특히 `Alloc` 와 동일한 형식 이어야 합니다 `Alloc::rebind<value_type>::other`
 
-에 대 한 *모든* 멤버 함수를 c + + 표준 라이브러리에서 정의 하는 컨테이너 클래스 `Alloc get_allocator const;` 저장된 된 할당자 개체의 복사본을 반환 합니다. container 개체를 할당하는 경우 저장된 allocator 개체는 복사되지 *않습니다*. 모든 생성자는 저장 된 값을 초기화 `allocator`를 `Alloc` 생성자는 allocator 매개 변수가 포함 된 경우.
+에 대 한 *모든* 정의한 컨테이너 클래스 C++ 표준 라이브러리, 멤버 함수 `Alloc get_allocator const;` 저장된 된 할당자 개체의 복사본을 반환 합니다. container 개체를 할당하는 경우 저장된 allocator 개체는 복사되지 *않습니다*. 모든 생성자는 저장 된 값을 초기화 `allocator`를 `Alloc` 생성자는 allocator 매개 변수가 포함 된 경우.
 
 C++ 표준에 따라 C++ 표준 라이브러리를 통해 정의되는 컨테이너 클래스에 대해서는 다음 사항을 가정할 수 있습니다.
 

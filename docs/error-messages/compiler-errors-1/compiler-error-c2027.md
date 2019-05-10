@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2027
 ms.assetid: a39150c0-ec04-45ec-934c-a838bfe76627
-ms.openlocfilehash: 3f3fac9d5410595fe5653e257d97d2fd7c858545
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 901e9b791616c5684b352c1fda7687f67b895d9c
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446035"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447365"
 ---
 # <a name="compiler-error-c2027"></a>컴파일러 오류 C2027
 
@@ -43,7 +43,7 @@ int main() {
 
 ## <a name="example"></a>예제
 
-선언 되지만 정의 되지 않은 형식에 대 한 포인터를 선언 하는 것이 가능 합니다.  하지만 Visual c + +는 정의 되지 않은 형식에 대 한 참조를 허용 하지 않습니다.
+선언 되지만 정의 되지 않은 형식에 대 한 포인터를 선언 하는 것이 가능 합니다. 하지만 C++ 는 정의 되지 않은 형식에 대 한 참조를 허용 하지 않습니다.
 
 다음 샘플에서는 C2027 오류가 발생 합니다.
 

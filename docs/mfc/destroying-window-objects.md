@@ -8,15 +8,15 @@ helpviewer_keywords:
 - window objects [MFC], removing
 ms.assetid: 3241fea0-c614-4a25-957d-20f21bd5fd0c
 ms.openlocfilehash: f50d198f9868a70d25370f6c1399b66efaa5490b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57289847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62297244"
 ---
 # <a name="destroying-window-objects"></a>창 개체 소멸시키기
 
-주의 해야 자신의 자식 창을 사용 하 여 사용자가 창을 사용 하 여 완료 하는 경우 c + + 창 개체를 삭제 하려면. 이러한 개체를 소멸 되지 않습니다 하는 경우 응용 프로그램의 메모리를 복구 되지 않습니다. 다행 스럽게도 프레임 워크는 프레임 창, 뷰 및 대화 상자에 대 한 작성 뿐만 아니라 창 소멸을 관리합니다. 추가 windows를 만든 있다면 제거 하는 일을 담당 합니다.
+제거할 고유한 자식 창으로 주의 기울여 수는 C++ 창을 사용 하 여 사용자가 완료 될 때 창 개체입니다. 이러한 개체를 소멸 되지 않습니다 하는 경우 응용 프로그램의 메모리를 복구 되지 않습니다. 다행 스럽게도 프레임 워크는 프레임 창, 뷰 및 대화 상자에 대 한 작성 뿐만 아니라 창 소멸을 관리합니다. 추가 windows를 만든 있다면 제거 하는 일을 담당 합니다.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 

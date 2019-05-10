@@ -11,15 +11,15 @@ helpviewer_keywords:
 - COM_INTERFACE_ENTRY_IID macro
 ms.assetid: 7fea86e6-247f-4063-be6e-85588a9e3719
 ms.openlocfilehash: 2ed0e9e8c74e02917e852b8f95ebff1b048afaef
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57257360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62261581"
 ---
 # <a name="multiple-dual-interfaces"></a>여러 개의 이중 인터페이스
 
-이중 인터페이스 (즉, vtable 및 런타임에 바인딩, 따라서 클래스를 사용할 수 있도록 스크립팅 언어 뿐 아니라 c + + 모두의 유연성)의 장점을 결합 하려는 경우 다중 상속 하는 데 사용 합니다.
+이중 인터페이스의 장점을 결합 하는 것이 좋습니다 (vtable 및로 스크립팅 언어 에서도 사용할 수 있는 클래스 하므로 런타임에 바인딩을 둘 다의 유연성, C++) 다중 상속 하는 데 사용 합니다.
 
 단일 COM 개체에서 여러 개의 이중 인터페이스를 노출할 수 있지만 권장 되지 않습니다. 여러 개의 이중 인터페이스의 경우 있어야 하나만 `IDispatch` 인터페이스를 노출 합니다. 대/소문자 인지 확인 하십시오. 사용할 수 있는 기법 처벌을 받을 함수 또는 향상 된 코드 복잡성의 손실 등을 수행 합니다. 이 방법을 사용을 고려 하는 개발자는 장점 및 단점에 신중 하 게 평가 해야 합니다.
 

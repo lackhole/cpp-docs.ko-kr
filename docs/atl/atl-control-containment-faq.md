@@ -9,11 +9,11 @@ helpviewer_keywords:
 - controls [ATL]
 ms.assetid: d4bdfbe0-82ca-4f2f-bb95-cb89bdcc9b53
 ms.openlocfilehash: 42f9b41b99e13fcfe2fb003acb348c9464e0fd05
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62223321"
 ---
 # <a name="atl-control-containment-faq"></a>ATL 컨트롤 포함 FAQ
 
@@ -33,7 +33,7 @@ ms.locfileid: "57296568"
 
 ATL의 컨트롤 호스팅 API는 ActiveX 컨트롤 컨테이너 역할을 허용 하는 함수 집합입니다. 이러한 함수 정적으로 또는 동적으로 소스 코드로 제공 되므로 프로젝트에 연결 되며 ATL90.dll에 의해 노출 합니다. 컨트롤 호스팅 함수는 아래 표에 나열 됩니다.
 
-|기능|설명|
+|함수|설명|
 |--------------|-----------------|
 |[AtlAxAttachControl](reference/composite-control-global-functions.md#atlaxattachcontrol)|호스트 개체를 만듭니다, 그리고 제공된 된 창에 연결한 다음 기존 컨트롤을 연결 합니다.|
 |[AtlAxCreateControl](reference/composite-control-global-functions.md#atlaxcreatecontrol)|호스트 개체를 만듭니다, 그리고 제공된 된 창에 연결한 다음 컨트롤을 로드 합니다.|

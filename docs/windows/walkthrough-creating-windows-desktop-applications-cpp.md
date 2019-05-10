@@ -1,17 +1,17 @@
 ---
 title: '연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (C++)'
 ms.custom: get-started-article
-ms.date: 09/18/2018
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: cb6d09acc00f2e38ee41180c81c1877bc53027c2
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 0bc9ef82863fde361964234cca54f12aac1e2abe
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59037964"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877384"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (C++)
 
@@ -26,7 +26,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 - Microsoft Windows 7 이상을 실행 하는 컴퓨터입니다. 최상의 개발 환경을 위해 Windows 10이 좋습니다.
 
-- Visual Studio 2017의 복사본입니다. 다운로드 하 여 Visual Studio를 설치 하는 방법에 대 한 정보를 참조 하세요 [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다. 설치 관리자를 실행 해야 합니다 **를 사용한 데스크톱 개발 C++**  작업 확인란이 선택 되어 있습니다. Visual Studio를 설치할 때이 워크 로드를 설치 하지 않은 경우 걱정 하지 마세요. 설치 관리자를 다시 실행 하 고 지금 설치 수 있습니다.
+- Visual Studio의 복사본입니다. 다운로드 하 여 Visual Studio를 설치 하는 방법에 대 한 정보를 참조 하세요 [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다. 설치 관리자를 실행 해야 합니다 **를 사용한 데스크톱 개발 C++**  작업 확인란이 선택 되어 있습니다. Visual Studio를 설치할 때이 워크 로드를 설치 하지 않은 경우 걱정 하지 마세요. 설치 관리자를 다시 실행 하 고 지금 설치 수 있습니다.
 
    ![사용한 데스크톱 개발 C++ ](../build/media/desktop-development-with-cpp.png "를 사용한 데스크톱 개발C++")
 
@@ -36,9 +36,37 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 ## <a name="create-a-windows-desktop-project"></a>Windows 데스크톱 프로젝트 만들기
 
-첫 번째 Windows 데스크톱 프로젝트를 만들고 작동 하는 Windows 데스크톱 응용 프로그램에 대 한 코드를 입력 하려면 다음이 단계를 따릅니다. Visual Studio 2017 15.3 버전 보다 오래 된 Visual Studio의 버전을 사용 하는 경우 건너 뛰 세요 [Visual Studio 2017 RTM에서 Windows 데스크톱 프로젝트를 만들려면](#create-in-vs2017-rtm)합니다.
+첫 번째 Windows 데스크톱 프로젝트를 만들고 작동 하는 Windows 데스크톱 응용 프로그램에 대 한 코드를 입력 하려면 다음이 단계를 따릅니다. 이 페이지의 왼쪽 위에 있는 버전 선택기를 사용 하는 Visual Studio의 올바른 버전으로 설정 되어 있는지 확인 합니다.
 
-### <a name="to-create-a-windows-desktop-project-in-visual-studio-2017-update-153-and-later"></a>Visual Studio 2017 업데이트 15.3 이상 Windows 데스크톱 프로젝트를 만들려면
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-windows-desktop-project-in-visual-studio-2019"></a>Visual Studio 2019에는 Windows 데스크톱 프로젝트를 만들려면
+
+1. 주 메뉴에서 선택 **파일** > **새로 만들기** > **프로젝트** 열려는 합니다 **새 프로젝트를 만들** 대화 상자입니다.
+
+1. 설정 대화 상자 맨 **언어** 를 **C++** 설정 **플랫폼** 하 **Windows**, 설정 및 **프로젝트 형식을** 하 **Desktop**합니다. 
+
+1. 필터링된 된 프로젝트 형식 목록에서 선택 **Windows 데스크톱 마법사** 선택한 **다음**합니다. 다음 페이지에서 프로젝트의 이름을 입력 하 고 원하는 경우 프로젝트 위치를 지정 합니다.
+
+1. 선택 된 **만들기** 프로젝트를 만들려면 단추입니다.
+
+1. 합니다 **Windows 데스크톱 프로젝트** 대화 나타납니다. 아래 **응용 프로그램 종류**를 선택 **Windows 응용 프로그램 (.exe)** 합니다. **추가 옵션**에서 **빈 프로젝트**를 선택합니다. 선택할 **확인** 프로젝트를 만듭니다.
+
+1. **솔루션 탐색기**, 마우스 오른쪽 단추로 클릭 합니다 **DesktopApp** 프로젝트 **추가**를 선택한 후 **새 항목**.
+
+   ![DesktopApp 프로젝트에 새 항목 추가](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp 프로젝트에 새 항목 추가")
+
+1. **새 항목 추가** 대화 상자에서 **C++ 파일(.cpp)** 을 선택합니다. 에 **이름을** 상자 예를 들어 파일의 이름을 입력 합니다 *HelloWindowsDesktop.cpp*합니다. **추가**를 선택합니다.
+
+   ![.Cpp 파일 DesktopApp 프로젝트에 추가](../build/media/desktop-app-add-cpp-file-153.png "DesktopApp 프로젝트.cpp 파일 추가")
+
+프로젝트가 만들어집니다 및 원본 파일을 편집기에서 열립니다. 계속 하려면 건너 뛰 세요 [코드를 만들](#create-the-code)합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="to-create-a-windows-desktop-project-in-visual-studio-2017"></a>Visual Studio 2017에서 Windows 데스크톱 프로젝트를 만들려면
 
 1. **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.
 
@@ -62,7 +90,11 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 프로젝트가 만들어집니다 및 원본 파일을 편집기에서 열립니다. 계속 하려면 건너 뛰 세요 [코드를 만들](#create-the-code)합니다.
 
-### <a id="create-in-vs2017-rtm"></a> Visual Studio 2017 RTM에서 Windows 데스크톱 프로젝트를 만들려면
+::: moniker-end
+
+::: moniker range="vs-2015"
+
+### <a name="to-create-a-windows-desktop-project-in-visual-studio-2015"></a>Visual Studio 2015의 Windows 데스크톱 프로젝트를 만들려면
 
 1. **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.
 
@@ -89,6 +121,8 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    ![.Cpp 파일 DesktopApp 프로젝트에 추가](../build/media/desktop-app-add-cpp-file-150.png "DesktopApp 프로젝트.cpp 파일 추가")
 
 프로젝트가 만들어집니다 및 원본 파일을 편집기에서 열립니다.
+
+::: moniker-end
 
 ## <a name="create-the-code"></a>코드 작성
 

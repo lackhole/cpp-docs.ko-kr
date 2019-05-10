@@ -11,11 +11,11 @@ helpviewer_keywords:
 - std::front_insert_iterator [C++], reference
 ms.assetid: a9a9c075-136a-4419-928b-c4871afa033c
 ms.openlocfilehash: 322b513dc648bf10fe593d9541560c4d22da21fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62159589"
 ---
 # <a name="frontinsertiterator-class"></a>front_insert_iterator 클래스
 
@@ -169,7 +169,7 @@ After the front insertions, the list L is:
 */
 ```
 
-## <a name="op_star"></a>  front_insert_iterator:: operator\*
+## <a name="op_star"></a>  front_insert_iterator::operator\*
 
 주소가 지정된 요소를 반환하는 삽입 반복기를 역참조합니다.
 

@@ -39,11 +39,11 @@ helpviewer_keywords:
 - atan2f function
 ms.assetid: 7a87a18e-c94d-4727-9cb1-1bb5c2725ae4
 ms.openlocfilehash: 59a67b0d213a11630f551fd7582b44aab60e314f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62341719"
 ---
 # <a name="atan-atanf-atanl-atan2-atan2f-atan2l"></a>atan, atanf, atanl, atan2, atan2f, atan2l
 
@@ -82,7 +82,7 @@ long double atan2( long double y, long double x );  // C++ only
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|**QNAN**, **찾기**|없음|**(_D)**|
+|± **QNAN**, **IND**|없음|**_DOMAIN**|
 
 ## <a name="remarks"></a>설명
 
@@ -90,13 +90,13 @@ long double atan2( long double y, long double x );  // C++ only
 
 **atan** sse2(스트리밍 SIMD 확장 2 ()를 사용 하는 구현 합니다. SSE2 구현의 사용 제한 사항 및 그 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **atan** 하 고 **atan2** 사용 하는 **float** 하거나 **긴** **double**  인수입니다. C 프로그램에서 **atan** 하 고 **atan2** 항상 **double** 인수 및 반환을 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **atan** 하 고 **atan2** 사용 하는 **float** 또는 **긴**  **double** 인수입니다. C 프로그램에서 **atan** 하 고 **atan2** 항상 **double** 인수 및 반환을 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C++)|
 |-------------|---------------------|-|
-|**atan**, **atan2**합니다 **atanf**를 **atan2f**를 **atanl**, **atan2l**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**atan**, **atan2**, **atanf**, **atan2f**, **atanl**, **atan2l**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 ## <a name="example"></a>예제
 

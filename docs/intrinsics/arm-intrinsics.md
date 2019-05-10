@@ -1931,24 +1931,24 @@ helpviewer_keywords:
 - cl.exe compiler, intrinsics
 - intrinsics, ARM
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
-ms.openlocfilehash: 47fd2f449568494bafde993e035d3ec37c44f6fe
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 8590f6ac056bf561960f9c02ff4a4cc6a4d3bfa0
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59027633"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447727"
 ---
 # <a name="arm-intrinsics"></a>ARM 내장 함수
 
-Visual C++ 컴파일러에서 다음 내장 함수를 ARM 아키텍처에서 사용 가능하도록 만듭니다. ARM에 대 한 자세한 내용은 참조는 [ARM 아키텍처 참조 설명서](http://go.microsoft.com/fwlink/p/?LinkId=522049) 하 고 [ARM 어셈블러 도구 가이드](http://go.microsoft.com/fwlink/p/?LinkId=246102) ARM Infocenter 웹 사이트에서 합니다.
+Microsoft C++ 컴파일러 (MSVC) 하면 다음 내장 함수에서 사용할 수는 ARM 아키텍처입니다. ARM에 대 한 자세한 내용은 참조는 [ARM 아키텍처 참조 설명서](http://go.microsoft.com/fwlink/p/?LinkId=522049) 하 고 [ARM 어셈블러 도구 가이드](http://go.microsoft.com/fwlink/p/?LinkId=246102) ARM Infocenter 웹 사이트에서 합니다.
 
 ##  <a name="top"></a> NEON
 
 ARM의 NEON 벡터 명령 집합 확장에서는 x86 및 x64 아키텍처 프로세서에 공통적인 MMX와 SSE 벡터 명령 집합의 기능과 비슷한 SIMD(Single Instruction Multiple Data) 기능이 제공됩니다.
 
-NEON 내장 함수는 `arm_neon.h` 헤더 파일에서 제공된 데로 지원됩니다. NEON 내장 함수에 대 한 Visual C++ 컴파일러 지원의 부록 G에 설명 되어 있는 ARM 컴파일러 유사 합니다 [ARM 컴파일러 도구 체인, 버전 4.1 컴파일러 참조](http://go.microsoft.com/fwlink/p/?LinkId=251083) ARM Infocenter 웹 사이트에서 합니다.
+NEON 내장 함수는 `arm_neon.h` 헤더 파일에서 제공된 데로 지원됩니다. NEON 내장 함수에 대 한 MSVC 지원의 부록 G에 설명 되어 있는 ARM 컴파일러 유사 합니다 [ARM 컴파일러 도구 체인, 버전 4.1 컴파일러 참조](http://go.microsoft.com/fwlink/p/?LinkId=251083) ARM Infocenter 웹 사이트에서 합니다.
 
-Visual C++ 컴파일러와 ARM 컴파일러의 주요 차이점은 Visual C++ 컴파일러에서는 `_ex` 및 `vldX` 벡터 로드 및 저장 지침의 `vstX` 변형을 추가합니다. `_ex` 변형은 포인터 인수의 맞춤을 지정하는 추가 매개 변수를 사용하지만 그 외에는 `_ex`가 아닌 유형과 동일합니다.
+MSVC와 ARM 컴파일러 사이의 주요 차이점은의 MSVC 추가 되는 `_ex` 변형의 합니다 `vldX` 및 `vstX` 벡터 로드 및 저장 지침입니다. `_ex` 변형은 포인터 인수의 맞춤을 지정하는 추가 매개 변수를 사용하지만 그 외에는 `_ex`가 아닌 유형과 동일합니다.
 
 ##  <a name="A"></a> ARM 관련 내장 목록
 

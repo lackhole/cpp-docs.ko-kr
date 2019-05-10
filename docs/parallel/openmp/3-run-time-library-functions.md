@@ -3,15 +3,15 @@ title: 3. 런타임 라이브러리 함수
 ms.date: 01/17/2019
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
 ms.openlocfilehash: 4e72d2d74bb26f8eeeb422881cabf92630cced43
-ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55087316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62363234"
 ---
 # <a name="3-run-time-library-functions"></a>3. 런타임 라이브러리 함수
 
-이 섹션에는 OpenMP C 및 c + + 런타임 라이브러리 함수를 설명합니다. 헤더  **\<omp.h >** 두 형식, 제어 및 병렬 실행 환경으로 쿼리 및 데이터에 대 한 액세스를 동기화 하는 함수를 잠글 수 있는 몇 가지 함수를 선언 합니다.
+이 섹션에서는 설명 OpenMP C 및 C++ 런타임 라이브러리 함수입니다. 헤더  **\<omp.h >** 두 형식, 제어 및 병렬 실행 환경으로 쿼리 및 데이터에 대 한 액세스를 동기화 하는 함수를 잠글 수 있는 몇 가지 함수를 선언 합니다.
 
 형식 `omp_lock_t` 잠금 수를 표현할 수 있는 되지 않는 개체 유형 또는 스레드가 잠금을 소유 하 고 있습니다. 이러한 잠금은 이라고 *간단한 잠금을*합니다.
 

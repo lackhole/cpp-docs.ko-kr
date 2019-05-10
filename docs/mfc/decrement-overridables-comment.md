@@ -8,17 +8,17 @@ helpviewer_keywords:
 - comments, MFC
 ms.assetid: 8968dea5-0d94-451f-bcb2-991580e65ba2
 ms.openlocfilehash: 90d6a585f62de589299147edce87332d96c6dbb8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57282047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153239"
 ---
 # <a name="-overridables-comment"></a>// 재정의 가능 주석
 
 `// Overridables` MFC 클래스 선언 섹션에 기본 클래스 동작을 수정 해야 할 때 파생된 클래스에서 재정의할 수 있는 가상 함수가 포함 되어 있습니다. 일반적으로 이름이 지정 되어 "On"으로 시작 하지만 반드시 필요 하지 않음. 함수 여기 재정의할 수 자주 구현 또는 일종의 "callback" 또는 "후크"를 제공 하도록 설계 됩니다. 일반적으로 이러한 멤버 보호 됩니다.
 
-MFC에서 순수 가상 함수는 항상이 섹션에 배치 됩니다. C + +의 순수 가상 함수에는 형식 중 하나입니다.
+MFC에서 순수 가상 함수는 항상이 섹션에 배치 됩니다. 순수 가상 함수에서 C++ 형식 중 하나입니다.
 
 `virtual void OnDraw( ) = 0;`
 

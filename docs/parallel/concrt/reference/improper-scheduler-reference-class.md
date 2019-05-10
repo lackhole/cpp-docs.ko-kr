@@ -9,11 +9,11 @@ helpviewer_keywords:
 - improper_scheduler_reference class
 ms.assetid: 434a7512-7796-4255-92a7-f3bf71c6a7a7
 ms.openlocfilehash: 121e61447775cdcb5d7f5f1187c5d4cc6b7d68b7
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62262907"
 ---
 # <a name="improperschedulerreference-class"></a>improper_scheduler_reference 클래스
 
@@ -31,8 +31,7 @@ class improper_scheduler_reference : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[improper_scheduler_reference](#ctor)|오버로드됨. 
-  `improper_scheduler_reference` 개체를 생성합니다.|
+|[improper_scheduler_reference](#ctor)|오버로드됨. `improper_scheduler_reference` 개체를 생성합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -48,8 +47,7 @@ class improper_scheduler_reference : public std::exception;
 
 ##  <a name="ctor"></a> improper_scheduler_reference
 
-
-  `improper_scheduler_reference` 개체를 생성합니다.
+`improper_scheduler_reference` 개체를 생성합니다.
 
 ```
 explicit _CRTIMP improper_scheduler_reference(_In_z_ const char* _Message) throw();

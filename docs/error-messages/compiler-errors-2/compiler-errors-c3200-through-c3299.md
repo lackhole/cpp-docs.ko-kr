@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 오류 C3200 ~ C3299
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C3220
 - C3221
@@ -34,12 +34,12 @@ helpviewer_keywords:
 - C3281
 - C3294
 ms.assetid: 6b3104f6-63bc-4823-b6f3-b8a16be4b87f
-ms.openlocfilehash: e8a9c1db4cba837a5780e51f84035492cd0e9e76
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6965fcde5f7cc93464593e83f787d0a5838398dd
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490602"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856964"
 ---
 # <a name="compiler-errors-c3200-through-c3299"></a>컴파일러 오류 C3200 ~ C3299
 
@@ -124,7 +124,7 @@ ms.locfileid: "50490602"
 |[컴파일러 오류 C3270](compiler-error-c3270.md)|'*필드*': FieldOffset 특성을 사용 하 여 StructLayout(LayoutKind::Explicit)의 컨텍스트에서 수|
 |[컴파일러 오류 C3271](compiler-error-c3271.md)|'*필드*': 잘못 된 값 '*번호*' FieldOffset 특성에 대 한|
 |[컴파일러 오류 C3272](compiler-error-c3272.md)|'*기호*': 기호 구조체/클래스의 멤버 이므로 FieldOffset이 필요 합니다 *type_name* StructLayout(LayoutKind::Explicit)를 사용 하 여 정의|
-|[컴파일러 오류 C3273](compiler-error-c3273.md)|'*키워드*': c + + try 블록에서 허용 되지 않습니다|
+|[컴파일러 오류 C3273](compiler-error-c3273.md)|'*키워드*': 허용 되지 C++ try 블록|
 |[컴파일러 오류 C3274](compiler-error-c3274.md)|마지막으로 /&#95;&#95;마지막 시도 일치 하지|
 |[컴파일러 오류 C3275](compiler-error-c3275.md)|'*식별자*': 한정자 없이이 기호를 사용할 수 없습니다.|
 |[컴파일러 오류 C3276](compiler-error-c3276.md)|'*키워드*': 마지막의 외부로 이동할 /&#95;&#95;finally 블록에 정의 되지 않은 동작이 종료 처리 중|
@@ -151,3 +151,8 @@ ms.locfileid: "50490602"
 |[컴파일러 오류 C3297](compiler-error-c3297.md)|' *constraint2*': 사용할 수 없습니다 ' *constraint1*' 제약 조건으로 하므로 ' *constraint1*'에 값 제약 조건이|
 |[컴파일러 오류 C3298](compiler-error-c3298.md)|' *constraint1*': 사용할 수 없습니다 ' *constraint2*' 제약 조건으로 하므로 ' *constraint2*'에 ref 제약 조건이 고 ' *constraint1*' 에 값 제약 조건이|
 |[컴파일러 오류 C3299](compiler-error-c3299.md)|' *함수*': 제약 조건을 지정할 수 없습니다 기본 메서드에서 상속|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

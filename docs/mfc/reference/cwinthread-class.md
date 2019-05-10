@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pActiveWnd
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-ms.openlocfilehash: 0e02f123580696519e59d828ec590456cbd2a81c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 9f17561941d785e5eb7b5fd8c52ab452aa6369e7
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220430"
 ---
 # <a name="cwinthread-class"></a>CWinThread 클래스
 
@@ -126,7 +126,7 @@ class CWinThread : public CCmdTarget
 
 호출 하는 대신 `AfxBeginThread`를 생성할 수는 `CWinThread`-파생 개체와 호출 `CreateThread`합니다. 이 두 단계 생성 방법은 다시 사용 하려는 경우에 유용 합니다 `CWinThread` 연속 생성 및 종료 스레드 실행 간에 개체입니다.
 
-에 대 한 자세한 `CWinThread`, 문서를 참조 하세요 [c + + 및 MFC 다중 스레딩](../../parallel/multithreading-with-cpp-and-mfc.md), [다중 스레딩: 사용자 인터페이스 스레드 만들기](../../parallel/multithreading-creating-user-interface-threads.md), [다중 스레딩: 작업자 스레드를 만들지](../../parallel/multithreading-creating-worker-threads.md), 및 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
+대 한 자세한 내용은 `CWinThread`, 문서를 참조 하세요 [스레딩 C++ 및 MFC](../../parallel/multithreading-with-cpp-and-mfc.md)하십시오 [다중 스레딩: 사용자 인터페이스 스레드 만들기](../../parallel/multithreading-creating-user-interface-threads.md), [다중 스레딩: 작업자 스레드를 만들지](../../parallel/multithreading-creating-worker-threads.md), 및 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -311,7 +311,7 @@ BOOL m_bAutoDelete;
 
 `m_bAutoDelete` 데이터 멤버는 BOOL 형식의 공용 변수입니다.
 
-`m_bAutoDelete`의 값은 해당 스레드 핸들이 닫히는 방식에 영향을 주지 않습니다. 스레드 핸들은 항상 `CWinThread` 개체가 제거될 때 닫힙니다.
+값 `m_bAutoDelete` 스레드 핸들이 닫혀 어떻게 영향을 주지 않습니다 하지만 핸들을 닫는 시기에 영향 을지 않습니다. 스레드 핸들은 항상 `CWinThread` 개체가 제거될 때 닫힙니다.
 
 ##  <a name="m_hthread"></a>  CWinThread::m_hThread
 
@@ -323,7 +323,9 @@ HANDLE m_hThread;
 
 ### <a name="remarks"></a>설명
 
-`m_hThread` 데이터 멤버는 핸들 형식의 공용 변수입니다. 현재 스레드를 기본 경우에 유효 합니다.
+`m_hThread` 데이터 멤버는 핸들 형식의 공용 변수입니다. 핸들을 아직 닫히지 기본 커널 스레드 개체 현재 있는 경우에 유효 합니다.
+
+CWinThread 소멸자에서 CloseHandle 호출 `m_hThread`합니다. 하는 경우 [m_bAutoDelete](#m_bautodelete) 는 스레드가 종료 되 면 TRUE이 고는 CWinThread 개체 제거 CWinThread 개체 및 해당 멤버 변수에 대 한 모든 포인터를 무효화 하는 합니다. 해야 할 수도 있습니다는 `m_hThread` 멤버 스레드 종료 값을 확인 하거나 신호를 기다려야 합니다. CWinThread 개체를 유지 하 고 `m_hThread` 멤버 스레드 실행 중 이며, 종료 된 후 설정 `m_bAutoDelete` 스레드 실행을 계속 허용 하기 전에 FALSE로 합니다. 이 고, 그렇지 스레드 수 종료, CWinThread 개체를 제거 하 고 사용 하기 전에 핸들을 닫습니다. 이 기법을 사용 하는 CWinThread 개체의 삭제를 담당 합니다.
 
 ##  <a name="m_nthreadid"></a>  CWinThread::m_nThreadID
 
@@ -335,7 +337,8 @@ DWORD m_nThreadID;
 
 ### <a name="remarks"></a>설명
 
-`m_nThreadID` 데이터 멤버는 DWORD 형식의 공용 변수입니다. 현재 스레드를 기본 경우에 유효 합니다.
+`m_nThreadID` 데이터 멤버는 DWORD 형식의 공용 변수입니다. 기본 커널 스레드 개체는 현재 존재 하는 경우에 유효 합니다.
+에 대 한 설명을 참조 하세요 [m_hThread](#m_hthread) 수명입니다.
 
 ### <a name="example"></a>예제
 

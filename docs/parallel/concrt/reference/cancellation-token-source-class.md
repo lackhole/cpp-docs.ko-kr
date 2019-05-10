@@ -12,16 +12,15 @@ helpviewer_keywords:
 - cancellation_token_source class
 ms.assetid: 3548b1a0-12b0-4334-95db-4bf57141c066
 ms.openlocfilehash: 330473db1011af661e2cfa2c5861987bce786e40
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57296789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62391027"
 ---
 # <a name="cancellationtokensource-class"></a>cancellation_token_source 클래스
 
-
-  `cancellation_token_source` 클래스는 일부 취소 가능한 작업을 취소하는 기능을 나타냅니다.
+`cancellation_token_source` 클래스는 일부 취소 가능한 작업을 취소하는 기능을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -116,15 +115,14 @@ static cancellation_token_source create_linked_source(_Iter _Begin, _Iter _End);
 취소 시 반환된 토큰 소스가 취소되는 토큰입니다. 반환된 토큰 소스 역시 이 매개 변수에 포함된 소스와 별도로 취소될 수 있습니다.
 
 *_Begin*<br/>
-해당 되는 c + + 표준 라이브러리 반복기 토큰 범위의 시작 부분에 취소에 대 한 수신 대기 하도록 합니다.
+C++ 의 취소를 수신 대기할 토큰 범위의 시작 부분에 해당 표준 라이브러리 반복기입니다.
 
 *_End*<br/>
-해당 되는 c + + 표준 라이브러리 반복기 토큰 범위의 끝에 취소에 대 한 수신 대기 하도록 합니다.
+C++ 의 취소를 수신 대기할 토큰 범위의 끝에 해당 표준 라이브러리 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
-
-  `cancellation_token_source` 매개 변수에서 제공된 토큰이 취소된 경우 취소되는 `_Src`입니다.
+`cancellation_token_source` 매개 변수에서 제공된 토큰이 취소된 경우 취소되는 `_Src`입니다.
 
 ##  <a name="get_token"></a> get_token
 

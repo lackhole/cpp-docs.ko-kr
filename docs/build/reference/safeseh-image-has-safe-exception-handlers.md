@@ -9,11 +9,11 @@ helpviewer_keywords:
 - SAFESEH linker option
 ms.assetid: 7722ff99-b833-4c65-a855-aaca902ffcb7
 ms.openlocfilehash: 62784933cbecd4f312c52ae98cab7d232b893f35
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62318643"
 ---
 # <a name="safeseh-image-has-safe-exception-handlers"></a>/SAFESEH(이미지에 안전한 예외 처리기 포함)
 
@@ -29,13 +29,13 @@ ms.locfileid: "57822342"
 
 하는 경우 **/SAFESEH:NO** 지정, 링커는 모든 모듈은 안전한 예외 처리 기능을 사용 하 여 호환 되는 경우에 안전한 예외 처리기 테이블을 사용 하 여 이미지를 생성 하지 않습니다.
 
-링커 입력된 파일 (모듈)의 하나 이상의 안전한 예외 처리기 기능을 사용 하 여 호환 되지 않으므로 이미지를 생성할 수 있으려면 필요가 링커에 대 한 가장 일반적인 이유. 안전한 예외 처리기를 사용 하 여 호환 되지 모듈에 대 한 일반적인 이유는 이전 버전의 Visual c + + 컴파일러를 사용 하 여 만들어졌기 때문에 경우
+링커 입력된 파일 (모듈)의 하나 이상의 안전한 예외 처리기 기능을 사용 하 여 호환 되지 않으므로 이미지를 생성할 수 있으려면 필요가 링커에 대 한 가장 일반적인 이유. 시각적 개체의 이전 버전의 컴파일러를 사용 하 여 만들어졌기 때문에 안전한 예외 처리기를 사용 하 여 호환 되지 모듈에 대 한 일반적인 이유는 C++입니다.
 
 사용 하 여 구조적된 예외 처리기로 함수를 등록할 수도 있습니다 [합니다. SAFESEH](../../assembler/masm/dot-safeseh.md)합니다.
 
 기존 표시할 수 없는 안전한 예외 처리기 (또는 예외 처리기가 없는) 것으로 이진 빌드 시간에 안전한 예외 처리에 대 한 정보를 추가 해야 합니다.
 
-링커의 안전한 예외 처리기 테이블을 작성할 수는 C 런타임 라이브러리를 사용 하 여 응용 프로그램에 따라 달라 집니다. 사용 하 여 링크 [/NODEFAULTLIB](nodefaultlib-ignore-libraries.md) 안전한 예외 처리기 테이블을 (예: loadcfg.c CRT 소스 파일에서 찾을 수 있습니다)를 로드 구성 구조를 제공 해야 Visual c + +에 대해 정의 된 모든 항목을 포함 하는 합니다. 예를 들어:
+링커의 안전한 예외 처리기 테이블을 작성할 수는 C 런타임 라이브러리를 사용 하 여 응용 프로그램에 따라 달라 집니다. 사용 하 여 링크 [/NODEFAULTLIB](nodefaultlib-ignore-libraries.md) 안전한 예외 처리기 테이블, (예: loadcfg.c CRT 소스 파일에서 찾을 수 있습니다)를 로드 구성 구조를 제공 해야 하 고 시각적 개체에 대해 정의 된 모든 항목을 포함 하는 C++합니다. 예를 들어:
 
 ```
 #include <windows.h>
@@ -98,7 +98,7 @@ const IMAGE_LOAD_CONFIG_DIRECTORY32_2 _load_config_used = {
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. 선택 된 **링커** 폴더입니다.
 

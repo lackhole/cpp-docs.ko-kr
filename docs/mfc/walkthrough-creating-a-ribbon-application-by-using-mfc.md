@@ -1,16 +1,16 @@
 ---
 title: '연습: MFC를 사용 하 여 리본 응용 프로그램 만들기'
-ms.date: 11/04/2016
+ms.date: 04/25/2019
 helpviewer_keywords:
 - ribbon application, creating (MFC)
 - creating a ribbon aplication (MFC)
 ms.assetid: e61393e2-1d6b-4594-a7ce-157d3d1b0d9f
-ms.openlocfilehash: 29991a389a09e1fe3dc0074b80fd9a255458f673
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: a45df5258a16885b50e11d4cca8ba99eb4b3d458
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58781226"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64558234"
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>연습: MFC를 사용 하 여 리본 응용 프로그램 만들기
 
@@ -22,9 +22,7 @@ ms.locfileid: "58781226"
 
 ### <a name="to-create-an-mfc-application-that-has-a-ribbon"></a>리본 메뉴를 포함하고 있는 MFC 응용 프로그램을 만들려면
 
-1. 사용 된 **MFC 응용 프로그램 마법사** 리본 메뉴가 있는 MFC 응용 프로그램을 만들려면. 마법사를 실행 하는 **파일** 메뉴에서 **새로 만들기**를 클릭 하 고 **프로젝트**합니다.
-
-1. 에 **새 프로젝트** 대화 상자에서 **Visual C++**  노드에서 **설치 된 템플릿**을 선택 **MFC**를 선택한 후 **MFC 응용 프로그램**합니다. 예를 들어, 프로젝트 이름을 입력 *MFCRibbonApp*를 클릭 하 고 **확인**합니다.
+1. 사용 된 **MFC 응용 프로그램 마법사** 리본 메뉴가 있는 MFC 응용 프로그램을 만들려면. [연습: 새 MFC 셸 컨트롤을 사용 하 여](walkthrough-using-the-new-mfc-shell-controls.md) 방법은 Visual Studio의 버전에 대 한 마법사를 엽니다.
 
 1. 다음 옵션을 설정 합니다 **MFC 응용 프로그램 마법사**:
 
@@ -34,7 +32,7 @@ ms.locfileid: "58781226"
 
     1. 에 **문서 템플릿 속성** 섹션을 **파일 확장명** 상자 예를 들어,이 응용 프로그램에서 문서에 대 한 파일 이름 확장명을 입력 합니다 *mfcrbnapp*.
 
-    1. 에 **데이터베이스 지원** 섹션에서 확인 **None** 선택 합니다.
+    1. 에 **데이터베이스 지원** 절 (Visual Studio 2015만 해당)에 있는지 확인 **None** 을 선택 합니다.
 
     1. 에 **사용자 인터페이스 기능** 섹션에서 확인 **리본 메뉴를 사용 하 여** 선택 합니다.
 
@@ -85,7 +83,7 @@ ms.locfileid: "58781226"
 
 [방법: 빠른 실행 도구 모음 사용자 지정](../mfc/how-to-customize-the-quick-access-toolbar.md)
 
-[방법: 응용 프로그램 단추 사용자 지정](../mfc/how-to-customize-the-application-button.md)
+[방법: 애플리케이션 단추 사용자 지정](../mfc/how-to-customize-the-application-button.md)
 
 종단 간 샘플을 보려면 [샘플 (MFC 기능 팩)](../overview/visual-cpp-samples.md)합니다.
 

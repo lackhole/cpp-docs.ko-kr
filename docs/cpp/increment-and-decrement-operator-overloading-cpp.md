@@ -8,11 +8,11 @@ helpviewer_keywords:
 - decrement operators [C++], types of
 ms.assetid: 5423c6ce-3999-4a77-92f6-ad540add1b1d
 ms.openlocfilehash: 4413c2bba600d1118870faca9a15b20398ec4dd4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62183570"
 ---
 # <a name="increment-and-decrement-operator-overloading-c"></a>증가 및 감소 연산자 오버로드(C++)
 
@@ -22,7 +22,7 @@ ms.locfileid: "50557275"
 
 - 사전 감소 및 사후 감소
 
-오버로드된 연산자 함수를 작성하는 경우 이러한 연산자의 전위 버전과 후위 버전에 대해 별도의 버전을 구현하는 것이 유용할 수 있습니다. 둘 사이 구분 하기 위해 다음 규칙이 적용 됩니다: 동일한 방식으로 다른 단항 연산자; 연산자의 전위 형태는 선언 형식의 추가 인수를 허용 하는 후 위 형식 **int**합니다.
+오버로드된 연산자 함수를 작성하는 경우 이러한 연산자의 전위 버전과 후위 버전에 대해 별도의 버전을 구현하는 것이 유용할 수 있습니다. 둘을 구분 하기 위해 다음 규칙은 관찰 됩니다. 연산자의 전위 형태는 선언 동일한 방식으로 다른 단항 연산자입니다. 형식의 추가 인수를 허용 하는 후 위 형식 **int**합니다.
 
 > [!NOTE]
 >  증가 또는 감소 연산자의 후 위 형태에 대 한 오버 로드 된 연산자를 지정 하는 경우 추가 인수 형식 이어야 합니다 **int**; 다른 형식을 지정 해도 오류가 발생 합니다.

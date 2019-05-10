@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3104
 ms.assetid: b5648d47-e5d3-4b45-a3c0-f46e04eae731
-ms.openlocfilehash: 3b2737bd67798fd467649be175d581ca551e1331
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: fee023809246634f2f3da266a718e45861eae76e
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59778119"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447839"
 ---
 # <a name="compiler-error-c3104"></a>컴파일러 오류 C3104
 
@@ -21,7 +21,7 @@ ms.locfileid: "59778119"
 
 참조 [특성 매개 변수 형식](../../extensions/attribute-parameter-types-cpp-component-extensions.md) 자세한 내용은 합니다.
 
-이 오류는 시각적 개체에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 없습니다 C++ 2005: 집합체 초기화 목록에서 배열의 형식 추론 됩니다 더 이상 관리 되는 배열, 사용자 지정 특성에 전달 하는 경우. 이제 컴파일러를 사용 하면 이니셜라이저 목록 뿐만 아니라 배열 형식을 지정 해야 합니다.
+이 오류는 Visual Studio 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 없습니다: 집계 초기화 목록에서 배열의 형식 추론 됩니다 더 이상 관리 되는 배열, 사용자 지정 특성에 전달 하는 경우. 이제 컴파일러를 사용 하면 이니셜라이저 목록 뿐만 아니라 배열 형식을 지정 해야 합니다.
 
 ## <a name="example"></a>예제
 

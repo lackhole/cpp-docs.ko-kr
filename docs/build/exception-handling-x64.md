@@ -6,15 +6,15 @@ helpviewer_keywords:
 - exception handling, x64
 ms.assetid: 41fecd2d-3717-4643-b21c-65dcd2f18c93
 ms.openlocfilehash: 7dab7f3b6593bf4eaed1b8c804deb915677ccf5b
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57422977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62195207"
 ---
 # <a name="x64-exception-handling"></a>x64 예외 처리
 
-구조적된 예외 처리 및 코딩 규칙 및 x64에서 동작 하는 c + + 예외 처리 개요. 예외 처리에 대 한 일반적인 내용은 참조 하세요. [Visual c + +에서 예외 처리](../cpp/exception-handling-in-visual-cpp.md)합니다.
+구조적된 예외 처리 개요 및 C++ 규칙 및 x64에는 동작을 코딩 하는 예외 처리 합니다. 예외 처리에 대 한 일반적인 내용은 참조 하세요. [시각적 개체의 예외 처리 C++ ](../cpp/exception-handling-in-visual-cpp.md)합니다.
 
 ## <a name="unwind-data-for-exception-handling-debugger-support"></a>예외 처리, 디버거 지원에 대 한 데이터를 해제 합니다.
 

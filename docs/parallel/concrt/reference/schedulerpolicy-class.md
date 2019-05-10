@@ -12,16 +12,15 @@ helpviewer_keywords:
 - SchedulerPolicy class
 ms.assetid: bcebf51a-65f8-45a3-809b-d1ff93527dc4
 ms.openlocfilehash: 2eff40b11e4e9a5981ad85c37c8345abefb13fed
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62337331"
 ---
 # <a name="schedulerpolicy-class"></a>SchedulerPolicy 클래스
 
-
-  `SchedulerPolicy` 클래스에는 정책 요소마다 하나씩, 스케줄러 인스턴스의 동작을 제어하는 키/값 쌍 집합을 포함합니다.
+`SchedulerPolicy` 클래스에는 정책 요소마다 하나씩, 스케줄러 인스턴스의 동작을 제어하는 키/값 쌍 집합을 포함합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -186,7 +185,7 @@ unsigned int SetPolicyValue(
 *key*<br/>
 에 대 한 값을 설정 하려면 정책 키입니다.
 
-*value*<br/>
+*값*<br/>
 정책 키를 설정할 값입니다.
 
 ### <a name="return-value"></a>반환 값

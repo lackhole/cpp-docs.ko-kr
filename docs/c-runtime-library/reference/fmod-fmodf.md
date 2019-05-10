@@ -30,11 +30,11 @@ helpviewer_keywords:
 - floating-point numbers, calculating remainders
 ms.assetid: 6962d369-d11f-40b1-a6d7-6f67239f8a23
 ms.openlocfilehash: 78677be1a0c9921c35e54d43a00b8956a9d858b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62333354"
 ---
 # <a name="fmod-fmodf-fmodl"></a>fmod, fmodf, fmodl
 
@@ -78,13 +78,13 @@ long double fmodl(
 
 합니다 **fmod** 함수는 부동 소수점 나머지를 계산 *f* 의 *x* / *y* 되도록 *x*  =  *있습니까* \* *y* + *f*여기서 *i* 정수 이면 *f* 와 부호가 같도록 *x*, 및의 절대값 *f* 의 절대값 보다 작습니다 *y*합니다.
 
-C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **fmod** 및 반환 하는 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **fmod** 는 항상 두 가지 **double** 인수 및 반환 된 **double**합니다.
+C++오버 로드를 호출할 수 있도록 오버 로드를 허용 **fmod** 및 반환 하는 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **fmod** 는 항상 두 가지 **double** 인수 및 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |기능|필수 헤더|
 |--------------|---------------------|
-|**fmod**하십시오 **fmodf**, **fmodl**|\<math.h>|
+|**fmod**, **fmodf**, **fmodl**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

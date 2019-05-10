@@ -9,15 +9,15 @@ f1_keywords:
 helpviewer_keywords:
 - Unicode, Visual C++
 ms.openlocfilehash: 71458ab345670c0a5715576a7da80c4e6ff2955b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62317330"
 ---
 # <a name="unicode-support-in-the-compiler-and-linker"></a>컴파일러 및 링커에서의 유니코드 지원
 
-대부분의 Visual c + + 빌드 도구는 유니코드 입력 및 출력을 지원합니다.
+가장 Visual C++ 빌드 도구 유니코드 입력 및 출력을 지원 합니다.
 
 ## <a name="filenames"></a>파일 이름
 
@@ -49,4 +49,4 @@ ms.locfileid: "57807513"
 
 ## <a name="see-also"></a>참고자료
 
-[명령줄에서 MSVC 도구 집합을 사용 하 여](../building-on-the-command-line.md)
+[명령줄에서 MSVC 도구 집합 사용](../building-on-the-command-line.md)

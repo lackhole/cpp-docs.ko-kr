@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, generated classes
 ms.assetid: 5f33209c-7f01-4f72-8c1c-6f02f507ba9f
-ms.openlocfilehash: ac402591692720c15ec8a118fea04d9b3c444f06
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: d19952e00413cc1c05d675bbe3800e13b5eea1ab
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57810330"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448550"
 ---
 # <a name="generated-classes-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 생성된 클래스
 
@@ -42,5 +42,5 @@ ms.locfileid: "57810330"
 ## <a name="see-also"></a>참고자료
 
 [MFC 응용 프로그램 마법사, 고급 기능](../../mfc/reference/advanced-features-mfc-application-wizard.md)<br/>
-[Visual C++ 프로젝트용 파일 형식](../../build/reference/file-types-created-for-visual-cpp-projects.md)
+[시각적 개체에 대해 만들어지는 형식 파일 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md)
 

@@ -1,6 +1,6 @@
 ---
 title: 데이터 형식 범위
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 helpviewer_keywords:
 - float keyword [C++]
 - char keyword [C++]
@@ -35,16 +35,16 @@ helpviewer_keywords:
 - long int keyword [C++]
 - unsigned long int [C++]
 ms.assetid: 3691ceca-05fb-4b82-b1ae-5c4618cda91a
-ms.openlocfilehash: 88fbb128d995338e5976fbb3df939524f3ef8b63
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 9eed9b35df6f5a970d05b09a604507df719345db
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495032"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222178"
 ---
 # <a name="data-type-ranges"></a>데이터 형식 범위
 
-Visual C++ 32비트 및 64비트 컴파일러는 이 문서의 뒷부분의 표에 나온 형식을 인식합니다.
+Microsoft C++ 32 비트 및 64 비트 컴파일러는이 문서의 뒷부분에 나오는 테이블의 형식을 인식 합니다.
 
 - `int` (`unsigned int`)
 
@@ -71,23 +71,23 @@ Visual C++ 32비트 및 64비트 컴파일러는 이 문서의 뒷부분의 표�
 |**int**|4|**signed**|–2,147,483,648 ~ 2,147,483,647|
 |**unsigned int**|4|**unsigned**|0 ~ 4,294,967,295|
 |**__int8**|1|**char**|-128 ~ 127|
-|**부호 없는 __int8**|1|**unsigned char**|0 ~ 255|
-|**__int16**|2|**짧은**하십시오 **short int**, **short int 서명**|–32,768 ~ 32,767|
-|**부호 없는 __int16**|2|**unsigned short**, **부호 없는 short int**|0 ~ 65,535|
-|**__int32**|4|**서명**하십시오 **int 서명**, **int**|–2,147,483,648 ~ 2,147,483,647|
-|**부호 없는 __int32**|4|**부호 없는**, **부호 없는 int**|0 ~ 4,294,967,295|
-|**__int64**|8|**long long**, **기호가 있는 long long**|–9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807|
-|**unsigned __int64**|8|**부호 없는 long long**|0 ~ 18,446,744,073,709,551,615|
+|**unsigned __int8**|1|**unsigned char**|0 ~ 255|
+|**__int16**|2|**short**, **short int**, **signed short int**|–32,768 ~ 32,767|
+|**unsigned __int16**|2|**unsigned short**, **unsigned short int**|0 ~ 65,535|
+|**__int32**|4|**signed**, **signed int**, **int**|–2,147,483,648 ~ 2,147,483,647|
+|**unsigned __int32**|4|**unsigned**, **unsigned int**|0 ~ 4,294,967,295|
+|**__int64**|8|**long long**, **signed long long**|–9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807|
+|**unsigned __int64**|8|**unsigned long long**|0 ~ 18,446,744,073,709,551,615|
 |**bool**|1|없음|**false** 또는 **true**|
-|**char**|1|없음|-기본적으로 128 ~ 127<br /><br /> [/J](../build/reference/j-default-char-type-is-unsigned.md)를 사용하여 컴파일된 경우 0~255|
-|**서명 된 char**|1|없음|-128 ~ 127|
+|**char**|1|없음|-기본적으로 128 ~ 127<br /><br />  [/J](../build/reference/j-default-char-type-is-unsigned.md)를 사용하여 컴파일된 경우 0~255|
+|**signed) char**|1|없음|-128 ~ 127|
 |**unsigned char**|1|없음|0 ~ 255|
-|**short**|2|**short int**, **short int 서명**|–32,768 ~ 32,767|
+|**short**|2|**short int**, **signed short int**|–32,768 ~ 32,767|
 |**unsigned short**|2|**unsigned short int**|0 ~ 65,535|
-|**long**|4|**long int**, **long int 서명**|–2,147,483,648 ~ 2,147,483,647|
+|**long**|4|**long int**, **signed long int**|–2,147,483,648 ~ 2,147,483,647|
 |**unsigned long**|4|**unsigned long int**|0 ~ 4,294,967,295|
 |**long long**|8|없음 (하지만 같음 **__int64**)|–9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807|
-|**부호 없는 long long**|8|없음 (하지만 같음 **unsigned __int64**)|0 ~ 18,446,744,073,709,551,615|
+|**unsigned long long**|8|없음 (하지만 같음 **unsigned __int64**)|0 ~ 18,446,744,073,709,551,615|
 |**enum**|varies|없음| |
 |**float**|4|없음|3.4E+/-38(7개의 자릿수)|
 |**double**|8|없음|1.7E+/-308(15개의 자릿수)|
@@ -108,5 +108,5 @@ Visual Studio의 C/C++에서도 크기가 지정된 정수 형식을 지원합�
 
 ## <a name="see-also"></a>참고자료
 
-[키워드](../cpp/keywords-cpp.md)<br/>
-[기본 형식](../cpp/fundamental-types-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[기본 형식(C++)](../cpp/fundamental-types-cpp.md)

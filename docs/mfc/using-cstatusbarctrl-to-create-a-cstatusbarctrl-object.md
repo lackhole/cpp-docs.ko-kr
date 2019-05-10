@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CStatusBarCtrl class [MFC], creating
 ms.assetid: 365c2b65-12de-49e6-9a2e-416c6ee10d60
 ms.openlocfilehash: 3242986d66de7d423b8ab744a691ca1904328de8
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57264211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62411710"
 ---
 # <a name="using-cstatusbarctrl-to-create-a-cstatusbarctrl-object"></a>CStatusBarCtrl을 사용하여 CStatusBarCtrl 개체 만들기
 
@@ -20,8 +20,7 @@ ms.locfileid: "57264211"
 
 ### <a name="to-use-a-status-bar-control-with-parts"></a>파트를 사용 하 여 상태 표시줄 컨트롤을 사용 하려면
 
-1. 
-  `CStatusBarCtrl` 개체를 생성합니다.
+1. `CStatusBarCtrl` 개체를 생성합니다.
 
 1. 호출 [SetMinHeight](../mfc/reference/cstatusbarctrl-class.md#setminheight) 의 그리기 영역 상태 표시줄 컨트롤의 최소 높이 설정 하려는 경우.
 

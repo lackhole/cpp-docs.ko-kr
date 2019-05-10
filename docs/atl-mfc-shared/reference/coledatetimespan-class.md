@@ -27,11 +27,11 @@ helpviewer_keywords:
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
 ms.openlocfilehash: b68a984488f37326f3b0c1249a5f17a3eb76548b
-ms.sourcegitcommit: 309dc532f13242854b47759cef846de59bb807f1
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58565651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62198202"
 ---
 # <a name="coledatetimespan-class"></a>COleDateTimeSpan 클래스
 
@@ -391,7 +391,7 @@ enum DateTimeSpanStatus{
 
 - `COleDateTimeSpan::invalid` 나타냅니다이 `COleDateTimeSpan` 개체가 잘못 되었습니다. 즉, 해당 값 잘못 되었을 수 있습니다.
 
-- `COleDateTimeSpan::null` 나타냅니다이 `COleDateTimeSpan` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 경우 "null" 의"값 없음" c + + NULL 대신 데이터베이스 관점에서)
+- `COleDateTimeSpan::null` 나타냅니다이 `COleDateTimeSpan` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 값이 "null" 의"값 없음."와 반대로 데이터베이스 점에서 C++ NULL입니다.)
 
 상태를 `COleDateTimeSpan` 개체가 같은 경우에 유효 하지 않습니다.
 
@@ -588,7 +588,7 @@ enum DateTimeSpanStatus{
 
 - `COleDateTimeSpan::invalid` 나타냅니다이 `COleDateTimeSpan` 개체가 잘못 되었습니다. 즉, 해당 값 잘못 되었을 수 있습니다.
 
-- `COleDateTimeSpan::null` 나타냅니다이 `COleDateTimeSpan` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 경우 "null" 의"값 없음" c + + NULL 대신 데이터베이스 관점에서)
+- `COleDateTimeSpan::null` 나타냅니다이 `COleDateTimeSpan` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 값이 "null" 의"값 없음."와 반대로 데이터베이스 점에서 C++ NULL입니다.)
 
 상태를 `COleDateTimeSpan` 개체가 같은 경우에 유효 하지 않습니다.
 
@@ -742,7 +742,7 @@ enum DateTimeSpanStatus{
 
 - `COleDateTimeSpan::invalid` 나타냅니다이 `COleDateTimeSpan` 개체가 잘못 되었습니다. 즉, 해당 값 잘못 되었을 수 있습니다.
 
-- `COleDateTimeSpan::null` 나타냅니다이 `COleDateTimeSpan` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 경우 "null" 의"값 없음" c + + NULL 대신 데이터베이스 관점에서)
+- `COleDateTimeSpan::null` 나타냅니다이 `COleDateTimeSpan` 개체가 null 인 경우 즉,이 개체에 대해 제공 된 값입니다. (이 값이 "null" 의"값 없음."와 반대로 데이터베이스 점에서 C++ NULL입니다.)
 
    > [!CAUTION]
    > 이 기능은 고급 프로그래밍 시나리오에 대 한 합니다. 이 함수는이 개체의 데이터를 변경 하지 않습니다. 상태를 설정 하는 데 사용 될 가장 자주 됩니다 **null** 하거나 **잘못 된**합니다. 대입 연산자 ([연산자 =](#operator_eq)) 및 [SetDateTimeSpan](#setdatetimespan) 원본 값에 따라 개체의 상태를 설정 하려면.

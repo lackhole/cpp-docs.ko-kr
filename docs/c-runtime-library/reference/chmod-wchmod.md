@@ -30,11 +30,11 @@ helpviewer_keywords:
 - _wchmod function
 ms.assetid: 92f7cb86-b3b0-4232-a599-b8c04a2f2c19
 ms.openlocfilehash: 278ee1e6dda9e153b55676ce5c0ca389f383efd1
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62348473"
 ---
 # <a name="chmod-wchmod"></a>_chmod, _wchmod
 
@@ -67,7 +67,7 @@ int _wchmod( const wchar_t *filename, int pmode );
 |-|-|
 | **\_S\_IREAD** | 읽기만 허용합니다. |
 | **\_S\_IWRITE** | 쓰기를 허용합니다. 실제로는 읽기 및 쓰기를 모두 허용합니다. |
-| **\_S\_IREAD** &AMP;#124;  **\_S\_IWRITE** | 읽기 및 쓰기를 허용합니다. |
+| **\_S\_IREAD** &#124; **\_S\_IWRITE** | 읽기 및 쓰기를 허용합니다. |
 
 두 상수가 지정 된 비트를 사용 하 여 결합 됩니다 or 연산자 (**\|**). 쓰기 권한이 부여되지 않은 경우 파일은 읽기 전용입니다. 모든 파일을 항상 읽을 수 있으므로 쓰기 전용 권한을 부여할 수 없습니다. 따라서 모드 **_S_IWRITE** 하 고 **_S_IREAD** \| **_S_IWRITE** 동일 합니다.
 

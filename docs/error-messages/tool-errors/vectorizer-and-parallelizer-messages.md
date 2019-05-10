@@ -1,6 +1,6 @@
 ---
 title: 벡터화 도우미 및 병렬화 도우미 메시지
-ms.date: 11/04/2016
+ms.date: 04/17/2019
 f1_keywords:
 - C5011
 - C5002
@@ -8,34 +8,18 @@ f1_keywords:
 - C5001
 - C5012
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-ms.openlocfilehash: 6f80bc9d2a2438a6003c93ce7e60de50fd639a16
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: c38bfca4c1b93d373c86bbc710ccb30c43dafd4f
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023908"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857460"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>벡터화 도우미 및 병렬화 도우미 메시지
 
-시각적 개체를 사용할 수 있습니다 C++ 컴파일러 옵션 [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) 하 고 [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) 설정 하는 [자동 병렬화 및 자동 벡터화](../../parallel/auto-parallelization-and-auto-vectorization.md) 출력 이유 코드 및 해당 작업에 대 한 정보 메시지입니다. 이 문서는 이유 코드 및 메시지를 설명합니다.
+Microsoft를 사용할 수 있습니다 C++ 컴파일러 옵션 [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) 하 고 [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) 설정 하는 [자동 병렬화 및 자동 벡터화](../../parallel/auto-parallelization-and-auto-vectorization.md) 출력 원인은 코드 및 해당 작업에 대 한 정보 메시지입니다. 이 문서는 이유 코드 및 메시지를 설명합니다.
 
-- [정보 메시지](#BKMK_InformationalMessages)
-
-- [5xx](#BKMK_ReasonCode50x)
-
-- [10xx](#BKMK_ReasonCode100x)
-
-- [11xx](#BKMK_ReasonCode110x)
-
-- [12xx](#BKMK_ReasonCode120x)
-
-- [13xx](#BKMK_ReasonCode130x)
-
-- [14xx](#BKMK_ReasonCode140x)
-
-- [15xx](#BKMK_ReasonCode150x)
-
-##  <a name="BKMK_InformationalMessages"></a> 정보 메시지
+## <a name="BKMK_InformationalMessages"></a> 정보 메시지
 
 지정한 보고 수준에 따라 각 루프에 대해 다음과 같은 정보 메시지 중 하나가 표시됩니다.
 
@@ -43,27 +27,25 @@ ms.locfileid: "59023908"
 
 |알림 메시지|설명|
 |---------------------------|-----------------|
-|5001|루프가 벡터화되었습니다.|
-|5002|'설명' 이유로 루프가 벡터화되지 않았습니다.|
-|5011|루프가 병렬화되었습니다.|
-|5012|'설명' 이유로 루프가 병렬화되지 않았습니다.|
-|5021|Pragma를 사용하여 루프를 연결할 수 없습니다.|
+|5001|`Loop vectorized.`|
+|5002|`Loop not vectorized due to reason '*description*'.`|
+|5011|`Loop parallelized.`|
+|5012|`Loop not parallelized due to reason '*description*'.`|
+|5021|`Unable to associate loop with pragma.`|
 
-## <a name="reason-codes"></a>이유 코드
+다음 섹션에서는 벡터화 도우미 및 평행 화 도우미 가능한 이유 코드를 나열합니다.
 
-다음 영역은 자동 병렬화 및 자동 벡터화에서 가능한 이유 코드를 나열합니다.
+## <a name="BKMK_ReasonCode50x"></a> 5xx 이유 코드
 
-###  <a name="BKMK_ReasonCode50x"></a> 5xx
-
-5*xx* 이유 코드는 자동 병렬화 및 자동 벡터화에 적용 합니다.
+5*xx* 이유 코드를 평행 화 도우미와 벡터화에 적용 합니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
-|500|이는 몇몇 사례에 해당하는 제네릭 메시지입니다. 예를 들어, 루프의 종료 지점이 여러 개이거나 루프 헤더가 유도 변수의 증가에 의해 종료되지 않는 경우입니다.|
-|501|유도 변수가 지역 변수가 아닙니다. 또는 상한이 루프 고정되어 있지 않습니다.|
-|502|유도 변수는 단순한 +1 이외의 다른 방법으로도 실행됩니다.|
-|503|루프는 예외 처리 또는 switch 문을 포함합니다.|
-|504|루프 본문은 C++ 개체의 소멸을 요구하는 예외를 던질 수 있습니다.|
+|500|몇 가지 사례를 설명 하는 제네릭 메시지-예를 들어, 루프 포함 여러 종료 또는 루프 헤더가 유도 변수의 증가 시켜 끝나지 않습니다.|
+|501|`Induction variable is not local; or upper bound is not loop-invariant.`|
+|502|`Induction variable is stepped in some manner other than a simple +1.`|
+|503|`Loop includes exception-handling or switch statements.`|
+|504|`Loop body may throw an exception that requires destruction of a C++ object.`|
 
 ```cpp
 void code_500(int *A)
@@ -216,23 +198,23 @@ void code_504(int *A) {
 }
 ```
 
-###  <a name="BKMK_ReasonCode100x"></a> 10xx
+## <a name="BKMK_ReasonCode100x"></a> 10xx 이유 코드
 
-10 개*xx* 이유 코드는 자동 병렬화에 적용 합니다.
+10 개*xx* 이유 코드를 평행 화 도우미에 적용 합니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
-|1000|컴파일러가 루프 본문에서 데이터 종속성을 발견했습니다.|
-|1001|컴파일러가 루프 본문에서 스칼라 변수를 저장하고 해당 스칼라를 루프 외에서 사용하는 것을 발견했습니다.|
-|1002|컴파일러가 이미 병렬화된 내부 루프가 있는 루프를 병렬화하려 했습니다.|
-|1003|루프 본문이 메모리를 읽거나 쓰는 내장 호출을 포함합니다.|
-|1004|루프 본문에서 스칼라 감소가 있습니다. 루프가 벡터화되면 스칼라 감소가 발생할 수 있습니다.|
-|1005|합니다 **no_parallel** pragma가 지정 합니다.|
-|1006|이 함수를 포함 **openmp**합니다. 하나를 제거 하 여이 문제를 해결할 **openmp** 이 함수에서.|
-|1007|루프 유도 변수 또는 루프 범위가 부호 있는 32비트 숫자가 아닙니다(`int` 또는 `long`). 유도 변수의 형식을 변경하여 이를 해결합니다.|
-|1008|컴파일러가 이 루프는 자동 병렬화를 충분히 보장하지 못하는 작업을 수행한다는 것을 발견했습니다.|
-|1009|컴파일러가 "do-while" 루프를 병렬화하려고 했습니다. 자동 병렬화는 `for` 루프만을 대상으로 합니다.|
-|1010|컴파일러가 루프에서 "같지 않음"(!=)을 조건에 사용하고 있음을 발견했습니다.|
+|1000|`The compiler detected a data dependency in the loop body.`|
+|1001|`The compiler detected a store to a scalar variable in the loop body, and that scalar has a use beyond the loop.`|
+|1002|`The compiler tried to parallelize a loop that has an inner loop that was already parallelized.`|
+|1003|`The loop body contains an intrinsic call that may read or write to memory.`|
+|1004|`There is a scalar reduction in the loop body. Scalar reduction can occur if the loop has been vectorized.`|
+|1005|`The no_parallel pragma was specified.`|
+|1006|`This function contains openmp. Resolve this by removing any openmp in this function.`|
+|1007|`The loop induction variable or the loop bounds are not signed 32-bit numbers (int or long). Resolve this by changing the type of the induction variable.`|
+|1008|`The compiler detected that this loop does not perform enough work to warrant auto-parallelization.`|
+|1009|`The compiler detected an attempt to parallelize a "do-while" loop. The auto-parallelizer only targets "for" loops.`|
+|1010|`The compiler detected that the loop is using "not-equals" (!=) for its condition.`|
 
 ```cpp
 int A[1000];
@@ -425,19 +407,19 @@ void code_1010()
 }
 ```
 
-###  <a name="BKMK_ReasonCode110x"></a> 11xx
+## <a name="BKMK_ReasonCode110x"></a> 11xx 이유 코드
 
-11*xx* 이유 코드는 자동 벡터화에 적용 합니다.
+11*xx* 이유 코드 벡터화에 적용 합니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
-|1100|루프는 "if" 또는 "?" 등의 흐름 제어를 포함합니다.|
-|1101|루프는 벡터화할 수 없는 암시적 데이터 형식 변환을 포함합니다.|
-|1102|루프는 비산술적이거나 다른 비벡터화 작업을 포함합니다.|
-|1103|루프 본문이 루프 내에서 크기가 다를 수 있는 시프트 연산을 포함합니다.|
-|1104|루프 본문은 스칼라 변수를 포함합니다.|
-|1105|루프는 인식되지 않은 감소 작업을 포함합니다.|
-|1106|외부 루프는 벡터화되지 않습니다.|
+|1100|`Loop contains control flow—for example, "if" or "?".`|
+|1101|`Loop contains datatype conversion—perhaps implicit—that cannot be vectorized.`|
+|1102|`Loop contains non-arithmetic or other non-vectorizable operations.`|
+|1103|`Loop body includes shift operations whose size might vary within the loop.`|
+|1104|`Loop body includes scalar variables.`|
+|1105|`Loop includes a unrecognized reduction operation.`|
+|1106|`Outer loop not vectorized.`|
 
 ```cpp
 void code_1100(int *A, int x)
@@ -573,16 +555,16 @@ void code_1106(int *A)
 }
 ```
 
-###  <a name="BKMK_ReasonCode120x"></a> 12xx
+## <a name="BKMK_ReasonCode120x"></a> 12xx 이유 코드
 
-12*xx* 이유 코드는 자동 벡터화에 적용 합니다.
+12*xx* 이유 코드 벡터화에 적용 합니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
-|1200|루프는 벡터화를 막는 루프 전달 데이터 종속성을 포함합니다. 루프의 다른 반복문이 서로를 방해합니다. 루프의 벡터화는 잘못된 응답을 생산하며 자동 벡터화는 자신이 그러한 데이터 의존성이 없다는 것을 입증할 수 없습니다.|
-|1201|배열의 시작점이 루프 도중에 변경됩니다.|
-|1202|구조체의 필드가 32 또는 64비트 폭이 아닙니다.|
-|1203|루프 본문이 연속되지 않은 배열 액세스를 포함합니다.|
+|1200|`Loop contains loop-carried data dependences that prevent vectorization. Different iterations of the loop interfere with each other such that vectorizing the loop would produce wrong answers, and the auto-vectorizer cannot prove to itself that there are no such data dependences.`|
+|1201|`Array base changes during the loop.`|
+|1202|`Field in a struct is not 32 or 64 bits wide.`|
+|1203|`Loop body includes non-contiguous accesses into an array.`|
 
 ```cpp
 void fn();
@@ -648,18 +630,18 @@ void code_1203(int *A)
 }
 ```
 
-###  <a name="BKMK_ReasonCode130x"></a> 13xx
+## <a name="BKMK_ReasonCode130x"></a> 13xx 이유 코드
 
-13*xx* 이유 코드는 자동 벡터화에 적용 합니다.
+13*xx* 이유 코드 벡터화에 적용 합니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
-|1300|루프 본문은 계산을 (혹은 거의) 포함하지 않습니다.|
-|1301|루프의 진행 폭이 +1이 아닙니다.|
-|1302|루프는 "do-하는 동안"입니다.|
-|1303|벡터화하여 값을 제공하기에는 너무 적은 루프 반복입니다.|
-|1304|루프는 다양한 크기의 할당을 포함합니다.|
-|1305|형식 정보가 충분하지 않습니다.|
+|1300|`Loop body contains no—or very little—computation.`|
+|1301|`Loop stride is not +1.`|
+|1302|`Loop is a "do-while".`|
+|1303|`Too few loop iterations for vectorization to provide value.`|
+|1304|`Loop includes assignments that are of different sizes.`|
+|1305|`Not enough type information.`|
 
 ```cpp
 void code_1300(int *A, int *B)
@@ -780,18 +762,18 @@ void code_1305( S_1305 *s, S_1305 x)
 }
 ```
 
-###  <a name="BKMK_ReasonCode140x"></a> 14xx
+## <a name="BKMK_ReasonCode140x"></a> 14xx 이유 코드
 
-14*xx* 이유 코드는 자동 벡터화와 호환 되지 않는 일부 옵션이 지정 되 면 발생 합니다.
+14*xx* 이유 코드는 벡터화와 호환 되지 않는 일부 옵션이 지정 된 경우 발생 합니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
-|1400|**#pragma loop (no_vector)** 지정 됩니다.|
-|1401|**/kernel** x86 또는 ARM을 대상으로 하는 경우 스위치를 지정 합니다.|
-|1402|**/ arch:sse2** 이거나 더 높은 스위치에는 x86을 대상으로 할 때 지정 되지 않은 합니다.|
-|1403|**/arch:ATOM** 스위치가 지정 되 고 루프가 double에 대 한 작업을 포함 합니다.|
-|1404|**/ O1** 나 **/Os** 스위치를 지정 합니다.|
-|1405|벡터화가 동적 초기화에서 정적 초기화로의 최적화를 돕기 위해서 비활성화됩니다.|
+|1400|`#pragma loop(no_vector) is specified.`|
+|1401|`/kernel switch is specified when targeting x86 or ARM.`|
+|1402|`/arch:SSE2 or higher switch is not specified when targeting x86.`|
+|1403|`/arch:ATOM switch is specified and the loop includes operations on doubles.`|
+|1404|`/O1 or /Os switch is specified.`|
+|1405|`Vectorization is disabled to aid in dynamic-initializer-to-static-initializer optimization.`|
 
 ```cpp
 void code_1400(int *A)
@@ -852,18 +834,18 @@ void code_1404(int *A)
 }
 ```
 
-###  <a name="BKMK_ReasonCode150x"></a> 15xx
+## <a name="BKMK_ReasonCode150x"></a> 15xx 이유 코드
 
-15 블록*xx* 이유 코드는 앨리어싱에 적용 합니다. 앨리어싱은 메모리의 한 영역에 두 가지 다른 이름으로 접근할 때 일어납니다.
+15 개의*xx* 이유 코드는 앨리어싱에 적용 합니다. 앨리어싱은 메모리의 한 영역에 두 가지 다른 이름으로 접근할 때 일어납니다.
 
 |이유 코드|설명|
 |-----------------|-----------------|
-|1500|다차원 배열에서 앨리어싱이 가능합니다.|
-|1501|구조체의 배열에 앨리어싱이 가능합니다.|
-|1502|가능한 앨리어싱 및 배열 인덱스는 n + K 외의 다른 것입니다.|
-|1503|가능한 앨리어싱 및 배열 인덱스는 여러 오프셋을 가집니다.|
-|1504|앨리어싱이 가능합니다. 너무 많은 런타임 검사가 필요합니다.|
-|1505|앨리어싱이 가능합니다. 하지만 런타임 검사가 너무 복잡합니다.|
+|1500|`Possible aliasing on multi-dimensional arrays.`|
+|1501|`Possible aliasing on arrays-of-structs.`|
+|1502|`Possible aliasing and array index is other than n + K.`|
+|1503|`Possible aliasing and array index has multiple offsets.`|
+|1504|`Possible aliasing; would require too many runtime checks.`|
+|1505|`Possible aliasing, but runtime checks are too complex.`|
 
 ```cpp
 void code_1500(int A[100][100], int B[100][100])
@@ -982,9 +964,10 @@ void code_1505(int *A, int *B)
 
 ## <a name="see-also"></a>참고자료
 
-[자동 병렬화 및 자동 벡터화](../../parallel/auto-parallelization-and-auto-vectorization.md)<br/>
-[네이티브 코드의 병렬 프로그래밍](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
-[#pragma loop()](../../preprocessor/loop.md)<br/>
-[/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
-[/Qpar-report(자동 평행화 도우미 보고 수준)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)
+[자동 병렬화 및 자동 벡터화](../../parallel/auto-parallelization-and-auto-vectorization.md) \
+[자동 벡터화 in Visual Studio 2012 – 개요](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/) \
+[#pragma loop()](../../preprocessor/loop.md) \
+[/Q 옵션 (하위 수준 작업)](../../build/reference/q-options-low-level-operations.md) \
+[/Qpar-report (자동 평행 화 도우미 보고 수준)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) \
 [/Qvec-report(자동 벡터화 도우미 보고 수준)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)

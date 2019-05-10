@@ -1,15 +1,15 @@
 ---
-title: 소스 코드 조직 (c + + 템플릿)
+title: 소스 코드 조직 (C++ 템플릿)
 ms.date: 11/04/2016
 ms.assetid: 50569c5d-0219-4966-9bcf-a8689074ad1d
-ms.openlocfilehash: 94e386b6301519b98b101adfca699b7f3128e3c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 592f17c08b9d4de0f67f17c60521d6e9a11dfc3a
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434447"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222007"
 ---
-# <a name="source-code-organization-c-templates"></a>소스 코드 조직 (c + + 템플릿)
+# <a name="source-code-organization-c-templates"></a>소스 코드 조직 (C++ 템플릿)
 
 클래스 템플릿을 정의 하는 경우이 필요할 때 멤버 정의 컴파일러에 표시 되는 방식으로 소스 코드를 구성 해야 합니다.   사용 하 여 선택할 수 있습니다 합니다 *포함할 모델* 또는 *명시적 인스턴스화* 모델입니다. 포함 모델에서는 템플릿을 사용 하는 모든 파일의 멤버 정의 포함할 수 있습니다. 이 접근 방식을 가장 간단 하 고 구체적인 유형의 템플릿을 사용 하 여 최대 유연성을 제공 합니다. 해당 단점은 컴파일 시간을 늘릴 수 있는 것입니다. 자체 포함 된 파일은 대용량 되거나 영향 경우 프로젝트에 중요 될 수 있습니다. 명시적 인스턴스화 방식의 경우 템플릿 자체는 구체적인 클래스 또는 특정 유형에 대 한 클래스 멤버를 인스턴스화합니다.  이 이렇게 컴파일 시간 속도 높일 수 있지만 템플릿 구현 자가 미리 설정한 클래스만 사용량을 제한 합니다. 일반적으로 컴파일 시간에 문제가 경우가 아니면 포함 모델을 사용 하는 것이 좋습니다.
 
@@ -78,7 +78,6 @@ public:
 #endif
 
 //MyArray.cpp
-#include "stdafx.h"
 #include <iostream>
 #include "MyArray.h"
 

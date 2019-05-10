@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual C++, x64 calling conventions
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
 ms.openlocfilehash: 11d29b6c31ccecfe5b9c51c2f9311213bd4a6732
-ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57420273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62313857"
 ---
 # <a name="x64-software-conventions"></a>x64 소프트웨어 규칙
 
-이 섹션에서는 c + + 호출 규칙 x64, x86 64 비트 확장에 대 한 설명 아키텍처입니다.
+이 섹션에서는 설명의 C++ 호출 규칙 x64, x86 64 비트 확장에 대 한 아키텍처입니다.
 
 ## <a name="overview-of-x64-calling-conventions"></a>X64 호출 규칙 개요
 
@@ -193,7 +193,7 @@ _declspec(align(8)) union {
 
 ||||
 |-|-|-|
-|레지스터|상태|기능|
+|레지스터|상태|사용|
 |RAX|휘발성|반환 값 레지스터|
 |RCX|휘발성|첫 번째 정수 인수|
 |RDX|휘발성|두 번째 정수 인수|
@@ -226,7 +226,7 @@ _declspec(align(8)) union {
 
 ## <a name="x64-exception-handling"></a>x64 예외 처리
 
-구조적된 예외 처리 및 c + + 예외 처리 x64에서 동작을 구현 하는 데 사용 하는 데이터 구조 및 규칙에 대 한 내용은 참조 하세요 [x64 예외 처리](exception-handling-x64.md)합니다.
+구조적된 예외 처리를 구현 하는 데 사용 하는 규칙 및 데이터 구조에 대 한 내용은 및 C++ x64에서 예외 처리 동작을 참조 하세요 [x64 예외 처리](exception-handling-x64.md)합니다.
 
 ## <a name="intrinsics-and-inline-assembly"></a>내장 및 인라인 어셈블리
 

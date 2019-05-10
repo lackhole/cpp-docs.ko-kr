@@ -34,11 +34,11 @@ helpviewer_keywords:
 - tmakepath function
 ms.assetid: 5930b197-a7b8-46eb-8519-2841a58cd026
 ms.openlocfilehash: 073f8aba6936aa33dafcef7ed47f5286802a4948
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62285701"
 ---
 # <a name="makepath-wmakepath"></a>_makepath, _wmakepath
 
@@ -68,7 +68,7 @@ void _wmakepath(
 *path*<br/>
 전체 경로 버퍼입니다.
 
-*드라이브*<br/>
+*drive*<br/>
 원하는 드라이브에 따른 문자(A, B 등) 및 후행 콜론(선택 사항)을 포함합니다. **_makepath** 없을 경우 복합 경로에 콜론을 자동으로 삽입 합니다. 하는 경우 *드라이브* 됩니다 **NULL** 복합 빈 문자열을 가리킵니다, 드라이브 문자 없이 표시 *경로* 문자열입니다.
 
 *dir*<br/>

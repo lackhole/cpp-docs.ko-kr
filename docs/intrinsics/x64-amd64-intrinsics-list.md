@@ -5,16 +5,16 @@ helpviewer_keywords:
 - cl-exe compiler, intrinsics
 - intrinsics, x64
 - intrinsics, amd64
-ms.openlocfilehash: 141ffa24a87d7794815c10f407ee23718071dacf
-ms.sourcegitcommit: 2ce88de75e7681220ae09a0ab13056f22f357a46
+ms.openlocfilehash: 7b1a0b664d0b67925cd6a2ed01e128741e641b48
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59982410"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448583"
 ---
 # <a name="x64-amd64-intrinsics-list"></a>x64 (amd64) 내장 목록
 
-이 문서에서는 x64(amd64라고도 함)를 대상으로 하는 경우 Visual C++ 컴파일러가 지원하는 내장 함수를 보여 줍니다.
+이 문서에서는 내장 함수를 나열 하는 Microsoft C++ (amd64 라고도 함) x64를 대상으로 하는 경우 컴파일러는 지원 합니다.
 
 개별 내장 함수에 대한 자세한 내용은 대상으로 하는 프로세스에 따라 다음 리소스를 참조하세요.
 

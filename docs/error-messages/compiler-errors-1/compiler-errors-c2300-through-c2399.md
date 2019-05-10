@@ -1,6 +1,6 @@
 ---
-title: 컴파일러 오류s C2300 Through C2399
-ms.date: 11/17/2017
+title: 컴파일러 오류 C2300 ~ C2399
+ms.date: 04/21/2019
 f1_keywords:
 - C2303
 - C2304
@@ -56,14 +56,14 @@ helpviewer_keywords:
 - C2398
 - C2399
 ms.assetid: 07ca45b5-b2f0-4049-837b-40a7a3caed88
-ms.openlocfilehash: 6f95ec90a08b842259a383d7bfc6af2cba119e14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28ab73857b46fed29e2ba8d7bc051ffb81b54bb3
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580637"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857361"
 ---
-# <a name="compiler-errors-c2300-through-c2399"></a>컴파일러 오류s C2300 Through C2399
+# <a name="compiler-errors-c2300-through-c2399"></a>컴파일러 오류 C2300 ~ C2399
 
 설명서의이 섹션의 문서는 컴파일러에서 생성 되는 오류 메시지의 하위 집합을 설명 합니다.
 
@@ -124,7 +124,7 @@ ms.locfileid: "50580637"
 |[컴파일러 오류 C2348](compiler-error-c2348.md)|'*형식*': 포함 IDL에서 내보낼 수 없습니다, C 스타일 집합체가 아닙니다.|
 |[컴파일러 오류 C2349](compiler-error-c2349.md)|'*함수*' 관리 되는 코드로 컴파일할 수 없습니다: '*설명은*'; #pragma 관리 되지 않는 사용|
 |[컴파일러 오류 C2350](compiler-error-c2350.md)|'*식별자*' 정적 멤버가 아닙니다|
-|[컴파일러 오류 C2351](compiler-error-c2351.md)|사용 되지 않는 c + + 생성자 초기화 구문입니다.|
+|[컴파일러 오류 C2351](compiler-error-c2351.md)|사용 되지 않는 C++ 생성자 초기화 구문입니다.|
 |[컴파일러 오류 C2352](compiler-error-c2352.md)|'*식별자*': 비정적 멤버 함수를 잘못 호출 했습니다.|
 |[컴파일러 오류 C2353](compiler-error-c2353.md)|예외 사양이 허용 되지 않습니다.|
 |컴파일러 오류 C2354|사용되지 않습니다.|
@@ -167,9 +167,14 @@ ms.locfileid: "50580637"
 |[컴파일러 오류 C2391](compiler-error-c2391.md)|'*식별자*': 형식 정의 하는 동안 'friend'를 사용할 수 없습니다|
 |[컴파일러 오류 C2392](compiler-error-c2392.md)|'*member1*': 공변 (covariant) 반환 형식은 지원 되지 않습니다 관리/WinRT 형식에서는 그렇지 않으면 '*member2*' 재정의 해야 할 수|
 |[컴파일러 오류 C2393](compiler-error-c2393.md)|'*기호*': 세그먼트에 appdomain 별 기호를 할당할 수 없습니다 '*세그먼트*'|
-|[컴파일러 오류 C2394](compiler-error-c2394.md)|'*형식*:: operator *연산자*': CLR/WinRT 연산자가 잘못 됩니다. 다음 형식 중 하나 이상의 매개 변수 여야 합니다: ' T ^', ' T ^ %', ' T ^ &', 여기서 T = '*형식*'|
-|[컴파일러 오류 C2395](compiler-error-c2395.md)|'*형식*:: operator *연산자*': CLR/WinRT 연산자가 잘못 됩니다. 다음 형식 중 하나 이상의 매개 변수 여야 합니다: ' T '를 ' T %', ' T &', ' T ^', ' T ^ %', ' T ^ &', 여기서 T = '*형식*'|
-|[컴파일러 오류 C2396](compiler-error-c2396.md)|'*type1*:: operator *type2*': CLR/WinRT 사용자 정의 변환 함수가 유효 하지 않습니다. 변환 하거나 변환할: ' T ^', ' T ^ %', ' T ^ &', 여기서 T = '*type1*'|
+|[컴파일러 오류 C2394](compiler-error-c2394.md)|'*type*::operator *operator*': CLR/WinRT 연산자가 유효 하지 않습니다. 하나 이상의 매개 변수가 다음 형식 이어야 합니다.  ' T ^', ' T ^ %', ' T ^ &', 여기서 T = '*형식*'|
+|[컴파일러 오류 C2395](compiler-error-c2395.md)|'*type*::operator *operator*': CLR/WinRT 연산자가 유효 하지 않습니다. 하나 이상의 매개 변수가 다음 형식 이어야 합니다. ' T '를 ' T %', ' T &', ' T ^', ' T ^ %', ' T ^ &', 여기서 T = '*형식*'|
+|[컴파일러 오류 C2396](compiler-error-c2396.md)|'*type1*::operator *type2*': CLR/WinRT 사용자 정의 변환 함수가 잘못 되었습니다. 변환 하거나 변환 합니다. ' T ^', ' T ^ %', ' T ^ &', 여기서 T = '*type1*'|
 |[컴파일러 오류 C2397](compiler-error-c2397.md)|변환에서 '*type1*'to'*type2*' 축소 변환이 필요 합니다.|
 |컴파일러 오류 C2398|요소 '*번호*': 변환할 '*type1*'to'*type2*' 축소 변환이 필요 합니다.|
 |컴파일러 오류 C2399|사용되지 않습니다.|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

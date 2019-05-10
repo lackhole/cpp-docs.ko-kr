@@ -5,17 +5,17 @@ helpviewer_keywords:
 - ATL projects, default configurations
 ms.assetid: 7e272722-41af-4330-b965-a6d74ec16880
 ms.openlocfilehash: 24f518f3ca5fefbfed1d89da9209bc2c27d890e2
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62276577"
 ---
 # <a name="default-atl-project-configurations"></a>기본 ATL 프로젝트 구성
 
 ATL 프로젝트 마법사는 기본적으로 두 가지 프로젝트 구성을 만듭니다.
 
-|구성하기|문자 집합|ATL 사용|
+|구성|문자 집합|ATL 사용|
 |-------------------|-------------------|----------------|
 |Release|MBCS|DLL|
 |디버그|MBCS|DLL|

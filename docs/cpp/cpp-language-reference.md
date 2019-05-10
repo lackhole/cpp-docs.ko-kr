@@ -1,23 +1,20 @@
 ---
 title: C++ 언어 참조
 ms.custom: index-page
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
-- language reference
 - C++, language reference
-- language reference, Visual C++
-- Visual C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-ms.openlocfilehash: 8da5a4f7113bbb4256e45e7ec3c91a9c6677643c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: 1790f5d7ecf834c97a9242e8f42d1fb402604ac6
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58774037"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222484"
 ---
 # <a name="c-language-reference"></a>C++ 언어 참조
 
-이 문서에서는 Microsoft Visual C++에서 사용하는 C++ 프로그래밍 언어를 설명하며 기반으로 [ *은 주석이 추가 된 C++ Reference Manual* ](http://www.stroustrup.com/arm.html) 구성은 Margaret Ellis와 Bjarne Stroustrup과 ANSI/ISO C++ 국제 표준 (ISO/IEC FDIS 14882). 또한 C++ 언어 기능의 Microsoft 전용 구현 사항이 포함되어 있습니다.
+이 참조에 설명 합니다 C++ 프로그래밍 언어는 Microsoft에서 구현 될 때 C++ 컴파일러. 기반으로 [ *은 주석이 추가 된 C++ Reference Manual* ](http://www.stroustrup.com/arm.html) 구성은 Margaret Ellis와 Bjarne Stroustrup과 ANSI/ISO C++ 국제 표준 (ISO/IEC FDIS 14882). 또한 C++ 언어 기능의 Microsoft 전용 구현 사항이 포함되어 있습니다.
 
 모던 C++ 프로그래밍 방법은 [C++의 진화(최신 C++)](welcome-back-to-cpp-modern-cpp.md)를 참조합니다.
 
@@ -90,15 +87,15 @@ COM 형식을 지원하는 데 사용되는 Microsoft 전용 클래스 및 전�
 C++에 대한 Microsoft 확장입니다.
 
 [비표준 동작](../cpp/nonstandard-behavior.md)<br/>
-Visual C++ 컴파일러의 비표준 동작에 대한 정보입니다.
+Microsoft의 비표준 동작에 대 한 내용은 C++ 컴파일러.
 
-[C++의 진화(최신 C++)](welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](welcome-back-to-cpp-modern-cpp.md)<br/>
 최신 C++ 프로그래밍을 도입해 안전하고, 올바른 효율적인 프로그램을 작성하는 것에 대한 사례를 간략하게 설명합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
 [런타임 플랫폼용 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)<br/>
-참조 자료 시각적 개체를 사용 하 여 C++ .NET을 대상으로 합니다.
+참조 자료는 Microsoft를 사용 하 여 C++ 컴파일러의 대상이.NET.
 
 [C/C++ 빌드 참조](../build/reference/c-cpp-building-reference.md)<br/>
 컴파일러 옵션, 링커 옵션 및 기타 빌드 도구입니다.
@@ -107,7 +104,7 @@ Visual C++ 컴파일러의 비표준 동작에 대한 정보입니다.
 pragma, 전처리기 지시문, 미리 정의된 매크로 및 전처리기에 대한 참조 자료입니다.
 
 [Visual C++ 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
-다양한 Visual C++ 라이브러리에 대한 참조 시작 페이지의 링크 목록입니다.
+다양 한 Microsoft에 대 한 참조에 대 한 링크 목록이 시작 페이지 C++ 라이브러리입니다.
 
 ## <a name="see-also"></a>참고자료
 

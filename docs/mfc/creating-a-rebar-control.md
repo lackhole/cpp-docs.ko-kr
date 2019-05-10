@@ -6,11 +6,11 @@ helpviewer_keywords:
 - CReBarCtrl class [MFC], creating
 ms.assetid: 0a012e08-772b-4f6a-af86-7cb651d11d3e
 ms.openlocfilehash: 0fb651aef599b64b787d96a668e2e1496c1dff8e
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57274458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62153347"
 ---
 # <a name="creating-a-rebar-control"></a>Rebar 컨트롤 만들기
 
@@ -18,8 +18,7 @@ ms.locfileid: "57274458"
 
 예를 들어, rebar 컨트롤(프레임 창 개체에 사용)은 일반적으로 도구 모음 컨트롤에 대한 부모 창으로 사용됩니다. 따라서 rebar 컨트롤의 부모는 프레임 창 개체입니다. 프레임 창 개체가 부모이기 때문에, 해당 부모의 `OnCreate` 멤버 함수는 rebar 컨트롤을 생성하기 위한 최적의 위치입니다.
 
-
-  `CReBarCtrl` 개체를 사용하려면, 일반적으로 다음 단계를 수행해야 합니다.
+`CReBarCtrl` 개체를 사용하려면, 일반적으로 다음 단계를 수행해야 합니다.
 
 ### <a name="to-use-a-crebarctrl-object"></a>CReBarCtrl 개체를 사용하려면
 

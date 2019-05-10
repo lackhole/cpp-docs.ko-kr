@@ -24,11 +24,11 @@ helpviewer_keywords:
 - recalloc function
 ms.assetid: 1db8305a-3f03-418c-8844-bf9149f63046
 ms.openlocfilehash: 3bcc238dcb950a8e30af16efc557e99d933efe92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62357724"
 ---
 # <a name="recalloc"></a>_recalloc
 
@@ -49,7 +49,7 @@ void *_recalloc(
 *memblock*<br/>
 이전에 할당된 메모리 블록에 대한 포인터입니다.
 
-*수*<br/>
+*number*<br/>
 요소의 수입니다.
 
 *size*<br/>
@@ -73,7 +73,7 @@ void *_recalloc(
 
 **_recalloc** 설정 **errno** 하 **ENOMEM** 메모리 할당이 실패 하는 메모리 양을 초과 요청 아니면 **_HEAP_MAXREQ**합니다. 이 오류 코드 및 기타 오류 코드에 대한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
-**recalloc** 호출 **realloc** c + +를 사용 하려면 [_set_new_mode](set-new-mode.md) 새 처리기 모드를 설정 하는 함수입니다. 새 처리기 모드를 나타내는 실패 하는지를 **realloc** 에서 설정한 대로 새 처리기 루틴을 호출 하는 것 [_set_new_handler](set-new-handler.md)합니다. 기본적으로 **realloc** 메모리 할당 실패 시 새 처리기 루틴을 호출 하지 않습니다. 이 기본 동작을 재정의할 수 있도록 때 **_recalloc** 메모리를 할당 하지 못했습니다 **realloc** 과 같은 새 처리기 루틴을 호출 방식으로 **새** 연산자 같은 이유로 실패 한 경우를 수행 합니다. 기본값을 재정의하려면 다음을
+**recalloc** 호출 **realloc** 사용 하려면를 C++ [_set_new_mode](set-new-mode.md) 함수를 새 처리기 모드를 설정 합니다. 새 처리기 모드를 나타내는 실패 하는지를 **realloc** 에서 설정한 대로 새 처리기 루틴을 호출 하는 것 [_set_new_handler](set-new-handler.md)합니다. 기본적으로 **realloc** 메모리 할당 실패 시 새 처리기 루틴을 호출 하지 않습니다. 이 기본 동작을 재정의할 수 있도록 때 **_recalloc** 메모리를 할당 하지 못했습니다 **realloc** 과 같은 새 처리기 루틴을 호출 방식으로 **새** 연산자 같은 이유로 실패 한 경우를 수행 합니다. 기본값을 재정의하려면 다음을
 
 ```C
 _set_new_mode(1);

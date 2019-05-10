@@ -15,11 +15,11 @@ helpviewer_keywords:
 - std::random_device [C++], entropy
 ms.assetid: 4393d515-0cb6-4e0d-a2ba-c780f05dc1bf
 ms.openlocfilehash: 783b8f587094c6d603cc02f41b516ebd7b1e9a08
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62369893"
 ---
 # <a name="randomdevice-class"></a>random_device 클래스
 
@@ -58,7 +58,7 @@ public:
 
 ## <a name="remarks"></a>설명
 
-이 클래스는 난수의 소스를 설명하고 ISO C++ 표준에 따라 명확하지 않거나 안전을 위해 암호화하는 것이 허용되지만 그럴 필요는 없습니다. Visual Studio 구현 시 생성된 값은 명확하지 않거나 암호화되지만 엔진 및 엔진 어댑터(예: 대부분의 응용 프로그램에 선택되는 빠른 고품질 엔진인 [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md))에서 생성된 생성기보다 훨씬 느리게 실행됩니다.
+이 클래스는 난수의 소스를 설명하고 ISO C++ 표준에 따라 명확하지 않거나 안전을 위해 암호화하는 것이 허용되지만 그럴 필요는 없습니다. Visual Studio 구현 시 생성된 값은 명확하지 않거나 암호화되지만 엔진 및 엔진 어댑터(예: 대부분의 애플리케이션에 선택되는 빠른 고품질 엔진인 [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md))에서 생성된 생성기보다 훨씬 느리게 실행됩니다.
 
 `random_device` 결과는 닫힌 범위 [ `0, 2`<sup>32</sup>) 내에서 균일하게 분포됩니다.
 

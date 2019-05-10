@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - debug executable, preparing a test machine to run
 ms.assetid: f0400989-cc2e-4dce-9788-6bdbe91c6f5a
-ms.openlocfilehash: 9598d7a0480ee762892d1026a1eb64dcc5c64399
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 6d7e9c2e0a29c2871fd86922151f2226dd9078fc
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58786452"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448449"
 ---
 # <a name="preparing-a-test-machine-to-run-a-debug-executable"></a>디버그 실행 파일을 실행하기 위한 테스트 컴퓨터 준비
 
@@ -25,7 +25,7 @@ Visual C++로 빌드한 응용 프로그램의 디버그 버전을 테스트하�
 - 애플리케이션의 설치 디렉터리에 특정 Visual C++ DLL의 디버그 버전을 설치하기 위해서는 Program Files 또는 Program Files (x86) 디렉터리의 \Microsoft Visual Studio \<버전&gt;\VC\redist\Debug_NonRedist\\에 제공된 파일을 이용하여 로컬 배포를 수행합니다.
 
     > [!NOTE]
-    >  다른 컴퓨터에서 Visual C++ 2005 또는 Visual C++ 2008로 빌드한 응용 프로그램을 원격으로 디버깅하려면 Visual C++ 라이브러리 DLL 디버그 버전을 공유 side-by-side 어셈블리로 배포해야 합니다. 설치 프로젝트 또는 Windows Installer를 사용하여 해당 병합 모듈을 설치할 수 있습니다.
+    >  다른 컴퓨터에 Visual Studio 2005 또는 Visual Studio 2008을 사용 하 여 빌드한 응용 프로그램의 원격 디버깅에 대 한 시각적 개체의 디버그 버전을 배포 해야 C++ 라이브러리 공유 side-by-side-어셈블리와 Dll입니다. 설치 프로젝트 또는 Windows Installer를 사용하여 해당 병합 모듈을 설치할 수 있습니다.
 
 - Visual Studio의 **구성 관리자** 대화 상자에 있는 **배포** 옵션을 사용하여 프로젝트 출력물 및 기타 파일을 원격 컴퓨터에 복사합니다.
 

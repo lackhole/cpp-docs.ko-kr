@@ -1,25 +1,25 @@
 ---
 title: '연습: 명령줄에서 C 프로그램 컴파일'
 ms.custom: conceptual
-ms.date: 09/24/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - command-line applications [C++], C programs
 - Visual C, compiling
 - compiling programs [C++]
 - C program compiling [C++]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
-ms.openlocfilehash: 54f5810e60cdaada6a99651a732570c88ea883ce
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 03876ba47270252caa21d7e2994a4f8321a6d59e
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57822225"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877192"
 ---
 # <a name="walkthrough-compile-a-c-program-on-the-command-line"></a>연습: 명령줄에서 C 프로그램 컴파일
 
 Visual C++에는 전체 Windows 데스크톱 응용 프로그램, 모바일 앱 등 기본적인 콘솔 프로그램에서 모든이 만드는 데 사용할 수 있는 C 컴파일러가 포함 됩니다.
 
-이 연습에서는 basic, "Hello, World"를 만드는 방법을 보여 줍니다.-C 프로그램 텍스트를 사용 하 여 편집기에서 스타일 및 다음 명령줄에서 컴파일합니다. 대신 명령줄에서 c + +에서 작동 됩니다, 참조 [연습: 명령줄에서 네이티브 C++ 프로그램 컴파일](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)을 참조하세요. 명령줄을 사용 하는 대신 Visual Studio IDE를 시도 하세요. 참조 하려는 경우 [연습: 프로젝트 및 솔루션 (c + +)를 작업할](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) 또는 [c + + 데스크톱 개발에 Visual Studio IDE를 사용 하 여](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)합니다.
+이 연습에서는 basic, "Hello, World"를 만드는 방법을 보여 줍니다.-C 프로그램 텍스트를 사용 하 여 편집기에서 스타일 및 다음 명령줄에서 컴파일합니다. 원한다 면 C++ 명령줄 참조 [연습: 명령줄에서 네이티브 C++ 프로그램 컴파일](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)을 참조하세요. 명령줄을 사용 하는 대신 Visual Studio IDE를 시도 하세요. 참조 하려는 경우 [연습: 프로젝트 및 솔루션 작업 (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) 나 [Visual Studio IDE를 사용 하 여에 대 한 C++ 데스크톱 개발](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -27,40 +27,65 @@ Visual C++에는 전체 Windows 데스크톱 응용 프로그램, 모바일 앱 
 
 Visual Studio에는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집기, 리소스 관리자, 디버거 및 컴파일러를 지 원하는 강력한 통합된 개발 환경입니다. 이러한 기능 및 다운로드 하 고 무료 Visual Studio Community edition을 비롯해 Visual Studio를 설치 하는 방법에 대 한 내용은 [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다.
 
-명령줄 도구 집합, 컴파일러, 도구,만 C 및 C++ 프로그램을 작성 하는 데 필요한 라이브러리가 Visual Studio 버전의 Visual Studio Build Tools를 설치 합니다. 빌드 랩에 안성맞춤입니다 또는 클래스 룸 연습 하 고 비교적 빠르게 설치 합니다. 명령줄 도구 집합을 설치 하려면 다운로드 [for Visual Studio Build Tools](https://go.microsoft.com/fwlink/p/?linkid=875721) 설치 관리자를 실행 합니다.
+명령줄 도구 집합, 컴파일러, 도구,만 C 및 C++ 프로그램을 작성 하는 데 필요한 라이브러리가 Visual Studio 버전의 Visual Studio Build Tools를 설치 합니다. 빌드 랩에 안성맞춤입니다 또는 클래스 룸 연습 하 고 비교적 빠르게 설치 합니다. 명령줄 도구 집합을 설치 하려면에서 Visual Studio 용 빌드 도구를 다운로드 합니다 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지 및 설치 관리자를 실행 합니다.
 
 명령줄에서 C 또는 C++ 프로그램을 빌드할 수 있습니다, 전에 명령줄에서 액세스할 수 있습니다 및 도구가 설치 되어 있는지 확인 해야 합니다. Visual C++에는 도구, 헤더 및 라이브러리를 사용 하 여 찾으려는 명령줄 환경에 대 한 복잡 한 요구 사항이 있습니다. **일반 명령 프롬프트 창에서 Visual C++를 사용할 수 없습니다** 몇 가지 준비 없이 합니다. 필요는 *개발자 명령 프롬프트* 창 일반 명령 프롬프트 창에 설정 된 모든 필수 환경 변수입니다. 다행히 Visual C++ 명령줄 빌드에 대 한 설정 환경을 설정 하는 개발자 명령 프롬프트를 시작할 수에 대 한 바로 가기 키를 설치 합니다. 그러나 개발자 명령 프롬프트 바로 가기 및를 위치 이름은 거의 모든 버전의 Visual C++ 및 다른 버전의 Windows에서 서로 다릅니다. 첫 번째 연습에서는 작업의 오른쪽 바로 가기를 사용 하 여 찾는 것입니다.
 
 > [!NOTE]
 > 개발자 명령 프롬프트 바로 가기를 컴파일러 및 도구에 대 한 및 모든 필수 헤더 및 라이브러리에 대 한 올바른 경로 자동으로 설정합니다. 각 빌드 구성에 대 한 이러한 값 중 일부 다릅니다. 값을 설정 해야 이러한 환경을 직접 바로 가기 중 하나를 사용 하지 않는 경우. 자세한 내용은 [명령줄 빌드에 맞는 경로 및 환경 변수 설정](setting-the-path-and-environment-variables-for-command-line-builds.md)합니다. 복잡 한 빌드 환경 이기 때문에 개발자 명령 프롬프트 바로 가기를 사용 하 여 직접 작성 하는 대신 것이 좋습니다.
 
-## <a name="open-a-developer-command-prompt"></a>개발자 명령 프롬프트를 열으십시오
+이러한 지침은 사용 중인 Visual Studio의 버전에 따라 다릅니다. 계속 하기 전에 왼쪽 위에 있는 버전 선택기가이 페이지의 올바르게 설정 되어 있는지를 확인 합니다.
 
-1. Windows 10에서 Visual Studio 2017을 설치한 경우 시작 메뉴를 연 다음 아래쪽으로 스크롤하여 및 엽니다는 **Visual Studio 2017** 폴더 (Visual Studio 2017 앱 제외). 선택할 **VS 2017 용 개발자 명령 프롬프트** 명령 프롬프트 창을 엽니다.
+::: moniker range="vs-2019"
 
-   Windows 10에서 Microsoft Visual C++ Build Tools 2015를 설치한 경우 엽니다는 **시작** 메뉴에서 다음 아래로 스크롤하여 및 열기를 **Visual C++ Build Tools** 폴더. 선택할 **Visual C++ 2015 x86 Native Tools 명령 프롬프트** 명령 프롬프트 창을 엽니다.
+## <a name="open-a-developer-command-prompt-in-visual-studio-2019"></a>Visual Studio 2019의 개발자 명령 프롬프트를 열으십시오
 
-   Visual Studio의 다른 버전을 사용 하거나 다른 버전의 Windows 실행 하는 경우 시작 메뉴에서 확인 하거나 개발자 명령 프롬프트 바로 가기를 포함 하는 Visual Studio tools 폴더에 대 한 페이지를 시작 합니다. 또한 "개발자 명령 프롬프트"를 검색 하 고 Visual Studio의 설치 된 버전과 일치 하는 하나를 선택 하려면 Windows 검색 기능을 사용할 수 있습니다. 바로 가기를 사용 하 여 명령 프롬프트 창을 엽니다.
+Windows 10에서 Visual Studio 2019를 설치한 경우 시작 메뉴를 연 다음 아래쪽으로 스크롤하여 및 엽니다는 **Visual Studio 2019** 폴더 (Visual Studio 2019 앱 제외). 선택할 **VS 2019 용 개발자 명령 프롬프트** 명령 프롬프트 창을 엽니다.
 
-1. 다음으로, Visual C++ 개발자 명령 프롬프트를 올바르게 설정 되어 있는지 확인 합니다. 명령 프롬프트 창에서 입력 `cl` 및 다음과 같은 출력이 표시 되는지 확인 합니다.
+다른 버전의 Windows 사용 하는 경우 시작 메뉴에서 확인 하거나 개발자 명령 프롬프트 바로 가기를 포함 하는 Visual Studio tools 폴더에 대 한 페이지를 시작 합니다. 또한 "개발자 명령 프롬프트"를 검색 하 고 Visual Studio의 설치 된 버전과 일치 하는 하나를 선택 하려면 Windows 검색 기능을 사용할 수 있습니다. 바로 가기를 사용 하 여 명령 프롬프트 창을 엽니다.
 
-   ```Output
-   C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
-   Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86
-   Copyright (C) Microsoft Corporation.  All rights reserved.
+::: moniker-end
 
-   usage: cl [ option... ] filename... [ /link linkoption... ]
-   ```
+::: moniker range="vs-2017"
 
-   현재 디렉터리 또는 Visual C++ 및 설치 된 업데이트의 버전에 따라 버전 번호가 차이점이 있을 수 있습니다. 위의 출력은 표시 되는 항목을 다음 경우 명령줄에서 C 또는 C++ 프로그램을 빌드할 준비가 됩니다.
+## <a name="open-a-developer-command-prompt-in-visual-studio-2017"></a>Visual Studio 2017의 개발자 명령 프롬프트를 열으십시오
 
-   > [!NOTE]
-   > "'C l' is not recognized as는 내부 또는 외부 명령, 실행할 수 있는 프로그램 또는 배치 파일"와 같은 오류가 발생할 경우 오류 C1034 또는 오류 LNK1104 실행할 때 합니다 **cl** 하거나 개발자 명령 프롬프트를 사용 하지 않는 명령을 또는 Visual C++ 설치를 사용 하 여 문제가 발생 했습니다. 계속 하기 전에이 문제를 수정 해야 합니다.
+Windows 10에서 Visual Studio 2017을 설치한 경우 시작 메뉴를 연 다음 아래쪽으로 스크롤하여 및 엽니다는 **Visual Studio 2017** 폴더 (Visual Studio 2017 앱 제외). 선택할 **VS 2017 용 개발자 명령 프롬프트** 명령 프롬프트 창을 엽니다.
 
-   개발자 명령 프롬프트 바로 가기를 찾을 수 없으면 또는 입력 하면 오류 메시지를 받게 되 면 `cl`, 다음 Visual C++ 설치에 문제가 있을 수 있습니다. Visual Studio 2017을 사용 하는 경우 다시 설치 합니다 **C++를 사용한 데스크톱 개발** Visual Studio 설치 관리자에서 작업 합니다. 자세한 내용은 참조 하세요 [Visual Studio에서 C++ 설치 지원](vscpp-step-0-installation.md)합니다. 또는 다시 설치 합니다 [for Visual Studio Build Tools](https://go.microsoft.com/fwlink/p/?linkid=875721)합니다. 작동 될 때까지 다음 섹션으로 하지 마십시오. 설치 및 Visual Studio 문제 해결에 대 한 자세한 내용은 참조 하세요. [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다.
+다른 버전의 Windows 실행 하는 경우 시작 메뉴에서 확인 하거나 개발자 명령 프롬프트 바로 가기를 포함 하는 Visual Studio tools 폴더에 대 한 페이지를 시작 합니다. 또한 "개발자 명령 프롬프트"를 검색 하 고 Visual Studio의 설치 된 버전과 일치 하는 하나를 선택 하려면 Windows 검색 기능을 사용할 수 있습니다. 바로 가기를 사용 하 여 명령 프롬프트 창을 엽니다.
 
-   > [!NOTE]
-   > 개발자 명령 프롬프트 바로 가기에 대 한 바로 가기 메뉴를 열고 선택한 후 마우스 오른쪽 단추로 클릭 해야 컴퓨터 시스템 보안 구성에서 Windows의 버전에 따라 **관리자 권한으로 실행** 를 성공적으로 작성 하 고이 연습을 수행 하 여 만든 프로그램을 실행 합니다.
+::: moniker-end
+
+::: moniker range="vs-2015"
+
+## <a name="open-a-developer-command-prompt-in-visual-studio-2015"></a>Visual Studio 2015의 개발자 명령 프롬프트를 열으십시오
+
+Windows 10에서 Microsoft Visual C++ Build Tools 2015를 설치한 경우 엽니다는 **시작** 메뉴에서 다음 아래로 스크롤하여 및 열기를 **Visual C++ Build Tools** 폴더. 선택할 **Visual C++ 2015 x86 Native Tools 명령 프롬프트** 명령 프롬프트 창을 엽니다.
+
+다른 버전의 Windows 실행 하는 경우 시작 메뉴에서 확인 하거나 개발자 명령 프롬프트 바로 가기를 포함 하는 Visual Studio tools 폴더에 대 한 페이지를 시작 합니다. 또한 "개발자 명령 프롬프트"를 검색 하 고 Visual Studio의 설치 된 버전과 일치 하는 하나를 선택 하려면 Windows 검색 기능을 사용할 수 있습니다. 바로 가기를 사용 하 여 명령 프롬프트 창을 엽니다.
+   
+::: moniker-end
+
+
+다음으로, Visual C++ 개발자 명령 프롬프트를 올바르게 설정 되어 있는지 확인 합니다. 명령 프롬프트 창에서 입력 `cl` 및 다음과 같은 출력이 표시 되는지 확인 합니다.
+
+```Output
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
+Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+usage: cl [ option... ] filename... [ /link linkoption... ]
+```
+
+현재 디렉터리 또는 Visual C++ 및 설치 된 업데이트의 버전에 따라 버전 번호가 차이점이 있을 수 있습니다. 위의 출력은 표시 되는 항목을 다음 경우 명령줄에서 C 또는 C++ 프로그램을 빌드할 준비가 됩니다.
+
+> [!NOTE]
+> "'C l' is not recognized as는 내부 또는 외부 명령, 실행할 수 있는 프로그램 또는 배치 파일"와 같은 오류가 발생할 경우 오류 C1034 또는 오류 LNK1104 실행할 때 합니다 **cl** 하거나 개발자 명령 프롬프트를 사용 하지 않는 명령을 또는 Visual C++ 설치를 사용 하 여 문제가 발생 했습니다. 계속 하기 전에이 문제를 수정 해야 합니다.
+
+개발자 명령 프롬프트 바로 가기를 찾을 수 없으면 또는 입력 하면 오류 메시지를 받게 되 면 `cl`, 다음 Visual C++ 설치에 문제가 있을 수 있습니다. 나중에 다시 설치 하거나 Visual Studio 2017을 사용 하는 경우는 **를 사용한 데스크톱 개발 C++**  Visual Studio 설치 관리자에서 작업 합니다. 자세한 내용은 참조 하세요 [Visual Studio에서 C++ 설치 지원](vscpp-step-0-installation.md)합니다. 또는에서 Build Tools를 다시 설치 합니다 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지입니다. 작동 될 때까지 다음 섹션으로 하지 마십시오. 설치 및 Visual Studio 문제 해결에 대 한 자세한 내용은 참조 하세요. [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다.
+
+> [!NOTE]
+> 개발자 명령 프롬프트 바로 가기에 대 한 바로 가기 메뉴를 열고 선택한 후 마우스 오른쪽 단추로 클릭 해야 컴퓨터 시스템 보안 구성에서 Windows의 버전에 따라 **관리자 권한으로 실행** 를 성공적으로 작성 하 고이 연습을 수행 하 여 만든 프로그램을 실행 합니다.
 
 ## <a name="create-a-c-source-file-and-compile-it-on-the-command-line"></a>C 소스 파일을 만들고 명령줄에서 컴파일하십시오.
 
@@ -154,9 +179,9 @@ Visual Studio에는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집
 
 구성 하 고 명령줄에서 보다 복잡 한 프로젝트를 빌드할 NMAKE 메이크파일, 있고 MSBuild 및 프로젝트 파일을 사용할 수 있습니다. 이러한 도구 사용에 대 한 자세한 내용은 참조 하세요. [NMAKE 참조](reference/nmake-reference.md) 하 고 [MSBuild](msbuild-visual-cpp.md)합니다.
 
-C 및 C++ 언어는 유사 하지만 동일 하지는 않습니다. MSVC 컴파일러 코드를 컴파일할 때 사용할 언어를 결정 하는 간단한 규칙을 사용 합니다. 기본적으로 MSVC 컴파일러는 C 소스 코드로.c로 끝나는 모든 파일 및 c + + 소스 코드로.cpp으로 끝나는 모든 파일을 처리 합니다. 모든 파일 C 종속 되지 않는 파일 이름 확장명으로 취급 하도록 컴파일러를 강제 적용 하려면 사용 합니다 [/Tc](reference/tc-tp-tc-tp-specify-source-file-type.md) 컴파일러 옵션입니다.
+C 및 C++ 언어는 유사 하지만 동일 하지는 않습니다. Microsoft C /C++ 컴파일러 (MSVC)는 간단한 규칙을 사용 하 여 코드를 컴파일할 때 사용할 언어를 결정 합니다. 기본적으로 MSVC 컴파일러가 C 소스 코드로.c로 끝나는 모든 파일 및.cpp로 끝나는 모든 파일을 처리 C++ 소스 코드입니다. 모든 파일 C 종속 되지 않는 파일 이름 확장명으로 취급 하도록 컴파일러를 강제 적용 하려면 사용 합니다 [/Tc](reference/tc-tp-tc-tp-specify-source-file-type.md) 컴파일러 옵션입니다.
 
-Visual C++ C 컴파일러는 ISO C99 표준을 호환 되지만 엄격 하 게 준수 하지 않는 경우 대부분의 경우에서 이식 가능한 C 코드 컴파일 및 예상 대로 실행 합니다. Visual C++ ISO C11의 변경 사항 중 대부분을 지원 하지 않습니다. 특정 라이브러리 함수 및 POSIX 함수 이름을 MSVC 컴파일러에서 사용 되지 않습니다. 함수는 지원 되지만 기본 이름이 변경 되었습니다. 자세한 내용은 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md) 하 고 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)합니다.
+MSVC는 ISO C99 표준을 호환 되지만 엄격 하 게 준수 하지 않는 경우 대부분의 경우에서 이식 가능한 C 코드 컴파일 및 예상 대로 실행 합니다. Visual C++ ISO C11의 변경 사항 중 대부분을 지원 하지 않습니다. 특정 라이브러리 함수 및 POSIX 함수 이름을 MSVC에서 사용 되지 않습니다. 함수는 지원 되지만 기본 이름이 변경 되었습니다. 자세한 내용은 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md) 하 고 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

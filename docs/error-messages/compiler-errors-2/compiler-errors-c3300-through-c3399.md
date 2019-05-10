@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 오류 C3300 ~ C3399
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C3300
 - C3301
@@ -100,12 +100,12 @@ helpviewer_keywords:
 - C3377
 - C3378
 ms.assetid: 190b7d29-ffe6-4261-921d-140da1935d00
-ms.openlocfilehash: 22964c9482d87c466665949ad4b340d43b3a5622
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca55e19534f722a7231a1d30c63e2dbb77d25ec7
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652701"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857730"
 ---
 # <a name="compiler-errors-c3300-through-c3399"></a>컴파일러 오류 C3300 ~ C3399
 
@@ -152,10 +152,10 @@ ms.locfileid: "50652701"
 |컴파일러 오류 C3332|'*속성*': 문법 일치 하지 않아 속성 '*속성*'가 모두 필요 하며 기본값|
 |[컴파일러 오류 C3333](compiler-error-c3333.md)|'*라이브러리*': #import 손상 된 형식 라이브러리를 가져올 수 없습니다.|
 |[컴파일러 오류 C3334](compiler-error-c3334.md)|손상된 형식 라이브러리를 #import 할 수 없습니다.|
-|컴파일러 오류 C3335|'*식별자*': 있을 수 있습니다 최대 coclass'에 대 한 기본 인터페이스를 둘*클래스*'|
+|컴파일러 오류 C3335|'*identifier*': 수에 coclass'에 대 한 기본 인터페이스를 둘*클래스*'|
 |컴파일러 오류 C3336|클래스 범위에서이 작업을 수행 해야 합니다.|
 |컴파일러 오류 C3337|'*식별자*': defaultvtable은 coclass'에 대 한 이벤트 소스 이어야 합니다*클래스*'|
-|컴파일러 오류 C3338|'*식별자*': 있을 수 있습니다 최대 하나의 기본 인터페이스는 coclass'에 대 한 이벤트 소스 이기도*클래스*'|
+|컴파일러 오류 C3338|'*identifier*': 있을 수 있습니다 최대 하나의 기본 인터페이스는 coclass'에 대 한 이벤트 소스 이기도*클래스*'|
 |컴파일러 오류 C3339|template 템플릿 매개 변수를 매개 변수 목록 뒤 'class' 또는 'typename' 필요|
 |[컴파일러 오류 C3340](compiler-error-c3340.md)|'*식별자*': 인터페이스에 'restricted' 및 '기본' coclass'에 있을 수 없습니다*클래스*'|
 |컴파일러 오류 C3341|'*인터페이스*': defaultvtable 인터페이스는 'dual' 또는 '사용자 지정' 있어야 합니다.|
@@ -165,7 +165,7 @@ ms.locfileid: "50652701"
 |[컴파일러 오류 C3345](compiler-error-c3345.md)|'*이름을*': 모듈 이름의 잘못 된 식별자|
 |컴파일러 오류 C3346|비 네임 스페이스 범위에서 선언을 내보냈습니다.|
 |[컴파일러 오류 C3347](compiler-error-c3347.md)|'*인수*': 특성에 인수를 지정 하지 않으면 필요한 *asttribute*|
-|컴파일러 오류 C3348|내보낸된 템플릿이 현재 c + + 표준의 일부가 아닌|
+|컴파일러 오류 C3348|내보낸된 템플릿이 현재의 일부가 아닌 C++ 표준|
 |컴파일러 오류 C3349|'*클래스*::*멤버*': 멀티 캐스트 특성 공급자에 의해 이미 구현 된 *공급자*|
 |[컴파일러 오류 C3350](compiler-error-c3350.md)|' *함수*': 생성자에 인수가 *번호* 인수|
 |[컴파일러 오류 C3351](compiler-error-c3351.md)|' *함수*': NULL 개체 인스턴스를 대리 생성자에 전달 하는 경우 정적 멤버 함수의 주소도 전달 해야 합니다|
@@ -217,3 +217,8 @@ ms.locfileid: "50652701"
 |[컴파일러 오류 C3397](compiler-error-c3397.md)|기본 인수에서는 집합체 초기화가 허용되지 않습니다.|
 |[컴파일러 오류 C3398](compiler-error-c3398.md)|'*연산자*':에서 변환할 수 없습니다 '*유형*'to'*형식*'. 소스 식은 함수 기호여야 합니다.|
 |[컴파일러 오류 C3399](compiler-error-c3399.md)|'*형식*': 제네릭 매개 변수의 인스턴스를 만들 때 인수를 제공할 수 없습니다|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

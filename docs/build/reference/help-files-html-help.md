@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - file types [C++], HTML Help files
 ms.assetid: d30a1b1b-318f-4a78-8b60-93da53a224a8
-ms.openlocfilehash: cde4809fa270e66081088d68d806e637f64e5344
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 7fbac8bfa0427e8d6c60e88da92a525e62fb1a24
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57826278"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446285"
 ---
 # <a name="help-files-html-help"></a>도움말 파일(HTML 도움말)
 
@@ -27,4 +27,4 @@ ms.locfileid: "57826278"
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트용 파일 형식](file-types-created-for-visual-cpp-projects.md)
+[시각적 개체에 대해 만들어지는 형식 파일 C++ 프로젝트](file-types-created-for-visual-cpp-projects.md)

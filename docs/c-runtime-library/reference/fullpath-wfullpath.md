@@ -31,11 +31,11 @@ helpviewer_keywords:
 - fullpath function
 ms.assetid: 4161ec17-0d22-45dd-b07d-0222553afae9
 ms.openlocfilehash: aeacaf581b7f33ee893754c192ae547376ce73ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62287644"
 ---
 # <a name="fullpath-wfullpath"></a>_fullpath, _wfullpath
 
@@ -64,7 +64,7 @@ wchar_t *_wfullpath(
 *relPath*<br/>
 상대 경로 이름입니다.
 
-*MaxLength*<br/>
+*maxLength*<br/>
 절대 경로 이름 버퍼의 최대 길이 (*absPath*). 이 길이 바이트 단위로 **_fullpath** 있지만 와이드 문자에서 (**wchar_t**)에 대 한 **_wfullpath**합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -75,7 +75,7 @@ wchar_t *_wfullpath(
 
 합니다 **_fullpath** 함수 확장에서 상대 경로 이름을 *relPath* 완벽 하 게 정규화 된 또는 절대 경로 및 저장소에이 이름을 *absPath*합니다. 하는 경우 *absPath* 됩니다 **NULL**를 **malloc** 경로 이름을 포함 하도록 충분 한 길이의 버퍼를 할당 하는 데 사용 됩니다. 호출자가 이 버퍼를 해제해야 합니다. 상대 경로 이름은 현재 위치에서 시작되는 또 다른 위치에 대한 경로를 지정합니다(예: 현재 작업 디렉터리: "."). 절대 경로 이름은 파일 시스템의 루트에서 원하는 위치에 도달하는 데 필요한 전체 경로를 설명하는 상태 경로 이름의 확장입니다. 와 달리 **_makepath**를 **_fullpath** 상대 경로 대 한 절대 경로 이름을 가져오는 데 사용할 수 있습니다 (*relPath*)를 포함 하는 ". /"또는"... / "이름에 있습니다.
 
-예를 들어 C 런타임 루틴을 사용하려면 루틴 선언이 들어 있는 헤더 파일을 응용 프로그램에 포함해야 합니다. 각 헤더 파일의 include 문은 응용 프로그램 작업 디렉터리를 기준으로 한 상대적 방식으로 파일 위치를 참조합니다.
+예를 들어 C 런타임 루틴을 사용하려면 루틴 선언이 들어 있는 헤더 파일을 애플리케이션에 포함해야 합니다. 각 헤더 파일의 include 문은 애플리케이션 작업 디렉터리를 기준으로 한 상대적 방식으로 파일 위치를 참조합니다.
 
 ```C
 #include <stdlib.h>

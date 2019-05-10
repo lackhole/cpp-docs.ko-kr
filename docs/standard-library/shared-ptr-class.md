@@ -32,11 +32,11 @@ helpviewer_keywords:
 - std::shared_ptr [C++], use_count
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
 ms.openlocfilehash: 791a18461b3a0ee8237dec47c87f9d441221141d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62412555"
 ---
 # <a name="sharedptr-class"></a>shared_ptr 클래스
 
@@ -111,7 +111,7 @@ null 포인터를 사용하여 초기화된 `shared_ptr` 개체에는 제어 블
 
 `ptr, dtor` - 관리할 리소스에 대한 `Other*` 형식의 포인터 및 해당 리소스에 대한 삭제자입니다. 제어 블록을 할당할 수 없어 함수가 실패하면 `dtor(ptr)`을 호출하므로 잘 정의해야 합니다.
 
-`ptr, dtor, alloc` - 관리할 리소스에 대한 `Other*` 형식의 포인터, 해당 리소스에 대한 삭제자 및 할당하고 해제해야 하는 저장소를 관리할 할당자입니다. 제어 블록을 할당할 수 없어 함수가 실패하면 `dtor(ptr)`을 호출하므로 잘 정의해야 합니다.
+`ptr, dtor, alloc` -- 관리할 리소스에 대한 `Other*` 형식의 포인터, 해당 리소스에 대한 삭제자 및 할당하고 해제해야 하는 스토리지를 관리할 할당자입니다. 제어 블록을 할당할 수 없어 함수가 실패하면 `dtor(ptr)`을 호출하므로 잘 정의해야 합니다.
 
 `sp` - 관리할 리소스를 소유하는 `shared_ptr<Other>` 개체입니다.
 
@@ -155,7 +155,7 @@ null 포인터를 사용하여 초기화된 `shared_ptr` 개체에는 제어 블
 
 |연산자|설명|
 |-|-|
-|[shared_ptr:: operator bool](#op_bool)|소유하는 리소스가 있는지 테스트합니다.|
+|[shared_ptr::operator bool](#op_bool)|소유하는 리소스가 있는지 테스트합니다.|
 |[shared_ptr::operator*](#op_star)|지정된 값을 가져옵니다.|
 |[shared_ptr::operator=](#op_eq)|소유하는 리소스를 대체합니다.|
 |[shared_ptr::operator-&gt;](#op_arrow)|지정된 값으로 포인터를 가져옵니다.|
@@ -239,7 +239,7 @@ sp0.get() == 0 == true
 *sp1.get() == 5
 ```
 
-## <a name="op_bool"></a>  shared_ptr:: operator bool
+## <a name="op_bool"></a>  shared_ptr::operator bool
 
 소유하는 리소스가 있는지 테스트합니다.
 
@@ -340,7 +340,7 @@ shared_ptr& operator=(unique_ptr<Other, Deletor>&& ap);
 *sp*<br/>
 복사할 공유 포인터입니다.
 
-*아시아 태평양*<br/>
+*ap*<br/>
 복사할 자동 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -468,7 +468,7 @@ void reset(Other *ptr, D dtor, A alloc);
 *A*<br/>
 할당자의 형식입니다.
 
-*할당*<br/>
+*alloc*<br/>
 복사할 할당자입니다.
 
 ### <a name="remarks"></a>설명
@@ -597,7 +597,7 @@ shared_ptr(const unique_ptr<Other, D>& up) = delete;
 *wp*<br/>
 취약 포인터입니다.
 
-*아시아 태평양*<br/>
+*ap*<br/>
 복사할 자동 포인터입니다.
 
 ### <a name="remarks"></a>설명

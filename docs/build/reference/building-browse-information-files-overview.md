@@ -1,24 +1,28 @@
 ---
 title: '찾아보기 정보 파일 빌드: 개요'
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - .bsc files, about .bsc files
 - bsc files, about bsc files
 - browse information files (.bsc)
 - browse information files (.bsc), creating
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
-ms.openlocfilehash: 4f12bd25ca3ab718a845dbb04aba3169cc6d4b19
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 5d33460ba63e50d31e44384be382e98cfbea4c91
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820624"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220540"
 ---
 # <a name="building-browse-information-files-overview"></a>찾아보기 정보 파일 빌드: 개요
 
+
+> [!WARNING]
+> BSCMAKE는 Visual Studio와 함께 설치되지만 더 이상 IDE에서 사용되지 않습니다. Visual Studio 2008부터 찾아보기 및 기호 정보는 자동으로 솔루션 폴더의 SQL Server .sdf 파일에 저장됩니다.
+
 기호 검색에 대 한 찾아보기 정보를 만들려면 컴파일러 BSCMAKE 다음 프로젝트에서 각 소스 파일에 대 한.sbr 파일을 만듭니다. EXE는.bsc 파일 하나로.sbr 파일을 연결합니다.
 
-.Sbr 및.bsc 파일을 생성 시간이, Visual c + + 기본적으로 이러한 함수를 설정 하도록 합니다. 현재 정보를 검색 하려는 경우 찾아보기 옵션을 설정 하 고 프로젝트를 다시 작성 해야 합니다.
+.Sbr 및.bsc 파일을 생성 시간이, Visual Studio 기본적으로 이러한 함수를 설정 하도록 합니다. 현재 정보를 검색 하려는 경우 찾아보기 옵션을 설정 하 고 프로젝트를 다시 작성 해야 합니다.
 
 사용 하 여 [/FR](fr-fr-create-dot-sbr-file.md) 하거나 [/Fr](fr-fr-create-dot-sbr-file.md) .sbr 파일을 만드는 컴파일러에 지시 합니다. .Bsc 파일을 만들려면 호출할 수 있습니다 [BSCMAKE](bscmake-command-line.md) 명령줄에서. BSCMAKE를 사용 하 여 명령줄에서 보다 자세히 제어할 찾아보기 정보 파일 조작 제공 합니다. 참조 [BSCMAKE 참조](bscmake-reference.md) 자세한 내용은 합니다.
 

@@ -35,11 +35,11 @@ helpviewer_keywords:
 - _putwc_nolock function
 ms.assetid: 3cfc7f21-c9e8-4b7f-b0fb-af0d4d85e7e1
 ms.openlocfilehash: b2a30b83f0746b1b4f5ab03b4c3dfa0229656bb9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62285130"
 ---
 # <a name="putcnolock-putwcnolock"></a>_putc_nolock, _putwc_nolock
 
@@ -63,7 +63,7 @@ wint_t _putwc_nolock(
 *c*<br/>
 쓸 문자입니다.
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -72,7 +72,7 @@ wint_t _putwc_nolock(
 
 ## <a name="remarks"></a>설명
 
-**_putc_nolock** 하 고 **_putwc_nolock** 없는 버전과 동일 합니다 **_nolock** 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하면 접미사가 있습니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**_putc_nolock** 하 고 **_putwc_nolock** 없는 버전과 동일 합니다 **_nolock** 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하면 접미사가 있습니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 **_putwc_nolock** 의 와이드 문자 버전이 **_putc_nolock**; 두 함수는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 작동 합니다. **_putc_nolock** 유니코드 스트림으로 출력을 현재 지원 하지 않습니다.
 

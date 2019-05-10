@@ -1,6 +1,6 @@
 ---
-title: 심각한 컴파일러 오류(C999~C1999)
-ms.date: 11/17/2017
+title: 심각한 컴파일러 오류 C999 ~ C1999
+ms.date: 04/21/2019
 f1_keywords:
 - C1034
 - C1036
@@ -52,16 +52,16 @@ helpviewer_keywords:
 - C1505
 - C1901
 ms.assetid: 6c8df109-7594-48ed-987a-97d9fe2b04af
-ms.openlocfilehash: 17c456f6ab248964cbd19cd9695da290254ccf1b
-ms.sourcegitcommit: 42e65c171aaa17a15c20b155d22e3378e27b4642
+ms.openlocfilehash: 5ffa1a2633877c8a16eb424f1ddc100bfd6142b8
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356220"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857386"
 ---
-# <a name="compiler-fatal-errors-c999-through-c1999"></a>심각한 컴파일러 오류(C999~C1999)
+# <a name="compiler-fatal-errors-c999-through-c1999"></a>심각한 컴파일러 오류 C999 ~ C1999
 
-설명서의이 섹션의 문서는 컴파일러에서 생성 되는 오류 메시지의 하위 집합을 설명 합니다.
+Microsoft C에서 생성 되는 오류 메시지의 일부를 설명 하는 설명서의이 섹션의 문서 /C++ 컴파일러.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -214,3 +214,7 @@ ms.locfileid: "58356220"
 |[심각한 오류 C1903](fatal-error-c1903.md)|이전 오류를 복구할 수 없습니다. 컴파일이 중지됩니다.|
 |[심각한 오류 C1904](fatal-error-c1904.md)|잘못된 공급자 상호 작용: '*file*'|
 |[심각한 오류 C1905](../../error-messages/compiler-errors-1/fatal-error-c1905.md)|프런트 엔드와 백 엔드가 호환되지 않습니다. 같은 프로세서를 대상으로 해야 합니다.|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)

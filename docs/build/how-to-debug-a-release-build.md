@@ -6,11 +6,11 @@ helpviewer_keywords:
 - release builds, debugging
 ms.assetid: d333e4d1-4e6c-4384-84a9-cb549702da25
 ms.openlocfilehash: 6d93fac4e980085c322acb55e6f8758e6cea0a00
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57828082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62188966"
 ---
 # <a name="how-to-debug-a-release-build"></a>방법: 릴리스 빌드 디버깅
 
@@ -18,9 +18,9 @@ ms.locfileid: "57828082"
 
 ### <a name="to-debug-a-release-build"></a>릴리스 빌드를 디버깅 하려면
 
-1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](working-with-project-properties.md)합니다.
+1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)을 참조합니다.
 
-1. 클릭 합니다 **C/c + +** 노드. 설정 **디버그 정보 형식** 하 [C7 호환 (/ Z7)](reference/z7-zi-zi-debug-information-format.md) 하거나 **프로그램 데이터베이스 (/Zi)** 합니다.
+1. 클릭 합니다 **C /C++**  노드. 설정 **디버그 정보 형식** 하 [C7 호환 (/ Z7)](reference/z7-zi-zi-debug-information-format.md) 하거나 **프로그램 데이터베이스 (/Zi)** 합니다.
 
 1. 확장 **링커** 을 클릭 합니다 **일반** 노드. 설정 **증분 링크 사용** 하 [없음 (/ /INCREMENTAL: NO)](reference/incremental-link-incrementally.md)합니다.
 

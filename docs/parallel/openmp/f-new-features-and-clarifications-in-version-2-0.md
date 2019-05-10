@@ -3,15 +3,15 @@ title: F. 버전 2.0에서에서 새 기능 및 설명
 ms.date: 01/22/2019
 ms.assetid: 0d4beb66-f2d5-468c-8cd3-4b00dcbab061
 ms.openlocfilehash: 2e186bbc82f4f43e831dd05cdded2a9e946d1dd2
-ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55087212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62362716"
 ---
 # <a name="f-new-features-and-clarifications-in-version-20"></a>F. 버전 2.0에서에서 새 기능 및 설명
 
-이 부록에는 OpenMP C/c + + 사양 버전 1.0에서에서 2.0 버전으로 이동 하려고 하는 주요 변경 요약 되어 있습니다. 다음 항목은 사양에 추가 하는 새로운 기능:
+이 부록 요약 OpenMP C에 대 한 주요 변경 사항 /C++ 사양 버전 1.0에서에서 2.0 버전으로 이동 합니다. 다음 항목은 사양에 추가 하는 새로운 기능:
 
 - Openmp에서 쉼표 수 [지시문](2-directives.md#21-directive-format)합니다.
 
@@ -27,9 +27,9 @@ ms.locfileid: "55087212"
 
 - 또한 타이밍 루틴 [omp_get_wtick](3-run-time-library-functions.md#332-omp_get_wtick-function) 및 [omp_get_wtime](3-run-time-library-functions.md#331-omp_get_wtime-function) MPI 루틴 비슷합니다. 이러한 함수는 클록 타이밍 벽 수행 해야 합니다.
 
-- 목록이 포함 된 부록도 [구현에서 정의 된 동작](e-implementation-defined-behaviors-in-openmp-c-cpp.md) OpenMP C/c + +에서 추가 되었습니다. 구현을 정의 하 고 이러한 경우 해당 동작을 문서에 필요 합니다.
+- 목록이 포함 된 부록도 [구현에서 정의 된 동작](e-implementation-defined-behaviors-in-openmp-c-cpp.md) OpenMP c에서 /C++ 추가 되었습니다. 구현을 정의 하 고 이러한 경우 해당 동작을 문서에 필요 합니다.
 
-- 다음 변경 내용을 명확 하 게 하거나 수정 C/c + +에 대 한 이전 OpenMP API 사양에는 기능 제공:
+- 다음과 같이 변경 명확 하거나 C에 대 한 이전 OpenMP API 사양에 기능을 수정 하는 역할 /C++:
 
   - 된다고의 동작 [omp_set_nested](3-run-time-library-functions.md#319-omp_set_nested-function) 하 고 [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) 때 `omp_in_parallel` 0이 아닌 반환이 정의 되지 않습니다.
 

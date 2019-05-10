@@ -4,16 +4,16 @@ ms.date: 09/18/2018
 helpviewer_keywords:
 - .vcxproj file structure
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
-ms.openlocfilehash: 3b7c7bdad8848a3755db4ea565117459c72e939b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: a1052d0a0eeeff177f0a22883fe06cd07d7b03f6
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827962"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446496"
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj 및 .props 파일 구조
 
-[MSBuild](../msbuild-visual-cpp.md)는 Visual Studio의 기본 프로젝트 시스템입니다. Visual C++에서 **파일** > **새 프로젝트**를 차례로 선택하면 `.vcxproj` 확장명의 XML 프로젝트 파일에 설정이 저장되는 MSBuild 프로젝트를 만들 수 있습니다. 프로젝트 파일은 설정을 저장할 수 있는 .props 파일과 .targets 파일을 가져올 수도 있습니다. 대부분의 경우 프로젝트 파일을 수동으로 편집할 필요가 없으며, 실제로 MSBuild를 잘 알고 있지 않으면 수동으로 편집하지 않아야 합니다. 프로젝트 설정을 수정 하려면 Visual Studio 속성 페이지를 사용 해야 가능 (참조 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다. 그러나 경우에 따라 프로젝트 파일 또는 속성 시트를 수동으로 수정해야 할 수도 있습니다. 이 문서에는 이러한 시나리오의 파일 구조에 대한 기본 정보가 포함되어 있습니다.
+[MSBuild](../msbuild-visual-cpp.md)는 Visual Studio의 기본 프로젝트 시스템입니다. Visual C++에서 **파일** > **새 프로젝트**를 차례로 선택하면 `.vcxproj` 확장명의 XML 프로젝트 파일에 설정이 저장되는 MSBuild 프로젝트를 만들 수 있습니다. 프로젝트 파일은 설정을 저장할 수 있는 .props 파일과 .targets 파일을 가져올 수도 있습니다. 대부분의 경우 프로젝트 파일을 수동으로 편집할 필요가 없으며, 실제로 MSBuild를 잘 알고 있지 않으면 수동으로 편집하지 않아야 합니다. 프로젝트 설정을 수정 하려면 Visual Studio 속성 페이지를 사용 해야 가능 (참조 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다. 그러나 경우에 따라 프로젝트 파일 또는 속성 시트를 수동으로 수정해야 할 수도 있습니다. 이 문서에는 이러한 시나리오의 파일 구조에 대한 기본 정보가 포함되어 있습니다.
 
 **중요:**
 
@@ -21,13 +21,13 @@ ms.locfileid: "57827962"
 
 1. 파일의 구조는 이 문서에서 설명하는 규정된 양식을 따라야 합니다.
 
-1. 현재 Visual C++ 프로젝트 시스템은 프로젝트 항목에 와일드카드를 지원하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
+1. Visual Studio C++ 현재 프로젝트 시스템 프로젝트 항목에 와일드 카드를 지원 하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
 
    ```xml
    <ClCompile Include="*.cpp"/>
    ```
 
-1. 현재 Visual C++ 프로젝트 시스템은 프로젝트 항목 경로에 매크로를 지원하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
+1. Visual Studio C++ 현재 프로젝트 시스템에서 프로젝트 항목 경로 매크로 지원 하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
 
    ```xml
    <ClCompile Include="$(IntDir)\generated.cpp"/>
@@ -224,7 +224,7 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 </ItemGroup>
 ```
 
-현재 Visual C++ 프로젝트 시스템은 프로젝트 항목에 와일드카드를 지원하지 않습니다.
+Visual Studio C++ 현재 프로젝트 시스템 프로젝트 항목에 와일드 카드를 지원 하지 않습니다.
 
 ```xml
 <ItemGroup>
@@ -232,7 +232,7 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 </ItemGroup>
 ```
 
-현재 Visual C++ 프로젝트 시스템은 프로젝트 항목에 매크로를 지원하지 않습니다.
+Visual Studio C++ 현재 프로젝트 시스템에서 프로젝트 항목 매크로 지원 하지 않습니다.
 
 ```xml
 <ItemGroup>
@@ -292,5 +292,5 @@ IDE의 일반 속성 페이지에서 **UseOfAtl** 속성을 설정하면, 프로
 
 ## <a name="see-also"></a>참고자료
 
-[Visual Studio에서 속성을 빌드하고 c + + 컴파일러를 설정 합니다.](../working-with-project-properties.md)<br/>
+[Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)<br/>
 [속성 페이지 XML 파일](property-page-xml-files.md)

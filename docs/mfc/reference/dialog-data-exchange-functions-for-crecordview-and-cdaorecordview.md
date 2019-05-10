@@ -21,11 +21,11 @@ helpviewer_keywords:
 - DAO [MFC], dialog data exchange (DDX) support
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
 ms.openlocfilehash: 2a794d16b2f94bf8ba66b6c0398dec262d8829e5
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57269892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62322555"
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView 및 CDaoRecordView에 대한 대화 상자 데이터 교환 함수
 
@@ -124,7 +124,7 @@ void AFXAPI DDX_FieldCBString(
 *nIDC*<br/>
 컨트롤의 ID를 [CRecordView](../../mfc/reference/crecordview-class.md) 하거나 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 개체입니다.
 
-*value*<br/>
+*값*<br/>
 연결 된 필드 데이터 멤버에 대 한 참조가 `CRecordset` 또는 `CDaoRecordset` 개체입니다.
 
 *pRecordset*<br/>
@@ -172,7 +172,7 @@ void AFXAPI DDX_FieldCBStringExact(
 *nIDC*<br/>
 컨트롤의 ID를 [CRecordView](../../mfc/reference/crecordview-class.md) 하거나 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 개체입니다.
 
-*value*<br/>
+*값*<br/>
 연결 된 필드 데이터 멤버에 대 한 참조가 `CRecordset` 또는 `CDaoRecordset` 개체입니다.
 
 *pRecordset*<br/>
@@ -220,7 +220,7 @@ void AFXAPI DDX_FieldCheck(
 *nIDC*<br/>
 컨트롤 속성과 연결 된 확인란 컨트롤의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 대화 상자, 폼 뷰 또는 데이터를 교환할 컨트롤 뷰 개체의 멤버 변수 참조입니다.
 
 *pRecordset*<br/>
@@ -310,7 +310,7 @@ void AFXAPI DDX_FieldLBString(
 *nIDC*<br/>
 컨트롤의 ID를 [CRecordView](../../mfc/reference/crecordview-class.md) 하거나 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 개체입니다.
 
-*value*<br/>
+*값*<br/>
 연결 된 필드 데이터 멤버에 대 한 참조가 `CRecordset` 또는 `CDaoRecordset` 개체입니다.
 
 *pRecordset*<br/>
@@ -358,7 +358,7 @@ void AFXAPI DDX_FieldLBStringExact(
 *nIDC*<br/>
 컨트롤의 ID를 [CRecordView](../../mfc/reference/crecordview-class.md) 하거나 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 개체입니다.
 
-*value*<br/>
+*값*<br/>
 연결 된 필드 데이터 멤버에 대 한 참조가 `CRecordset` 또는 `CDaoRecordset` 개체입니다.
 
 *pRecordset*<br/>
@@ -406,7 +406,7 @@ void AFXAPI DDX_FieldRadio(
 *nIDC*<br/>
 첫 번째 ID 옆에 있는 라디오 단추 컨트롤 (스타일 WS_GROUP) 설정 된 그룹에는 [CRecordView](../../mfc/reference/crecordview-class.md) 또는 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 개체입니다.
 
-*value*<br/>
+*값*<br/>
 연결 된 필드 데이터 멤버에 대 한 참조가 `CRecordset` 또는 `CDaoRecordset` 개체입니다.
 
 *pRecordset*<br/>
@@ -454,7 +454,7 @@ void AFXAPI DDX_FieldScroll(
 *nIDC*<br/>
 첫 번째 ID 옆에 있는 라디오 단추 컨트롤 (스타일 WS_GROUP) 설정 된 그룹에는 [CRecordView](../../mfc/reference/crecordview-class.md) 또는 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 개체입니다.
 
-*value*<br/>
+*값*<br/>
 연결 된 필드 데이터 멤버에 대 한 참조가 `CRecordset` 또는 `CDaoRecordset` 개체입니다.
 
 *pRecordset*<br/>
@@ -503,7 +503,7 @@ void AFXAPI DDX_FieldSlider(
 *nIDC*<br/>
 슬라이더 컨트롤의 리소스 ID입니다.
 
-*value*<br/>
+*값*<br/>
 교환할 값에 대 한 참조입니다. 이 매개 변수를 보유 슬라이더 컨트롤의 현재 위치를 설정 하려면이 사용 됩니다.
 
 *pRecordset*<br/>
@@ -649,7 +649,7 @@ void AFXAPI DDX_FieldText(
 *nIDC*<br/>
 컨트롤의 ID를 [CRecordView](../../mfc/reference/crecordview-class.md) 하거나 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 개체입니다.
 
-*value*<br/>
+*값*<br/>
 연결 된 필드 데이터 멤버에 대 한 참조가 `CRecordset` 또는 `CDaoRecordset` 개체입니다. 오버 로드 된 버전의 기반이 값의 데이터 형식에 따라 달라 집니다 `DDX_FieldText` 사용 합니다.
 
 *pRecordset*<br/>

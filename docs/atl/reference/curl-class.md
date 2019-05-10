@@ -1,6 +1,6 @@
 ---
 title: CUrl 클래스
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 f1_keywords:
 - CUrl
 - ATLUTIL/ATL::CUrl
@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - CUrl class
 ms.assetid: b3894d34-47b9-4961-9719-4197153793da
-ms.openlocfilehash: 913365e2b20015b22480dfd364d75b2be3c6355b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.openlocfilehash: fe91a01fbe67580bf82ae57c0317d06057fc9098
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295658"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221497"
 ---
 # <a name="curl-class"></a>CUrl 클래스
 
@@ -189,7 +189,7 @@ BOOL CrackUrl(LPCTSTR lpszUrl, DWORD dwFlags = 0) throw();
 URL입니다.
 
 *dwFlags*<br/>
-모든 이스케이프 문자를 변환할 ATL_URL_DECODE 또는 ATL_URL_ESCAPE 지정할 *lpszUrl* 구문 분석 한 후 실제 값으로. (Visual c + + 2005 전의 ATL_URL_DECODE 변환 모든 이스케이프 문자 구문 분석 하기 전에.)
+모든 이스케이프 문자를 변환할 ATL_URL_DECODE 또는 ATL_URL_ESCAPE 지정할 *lpszUrl* 구문 분석 한 후 실제 값으로. (Visual 하기 전에 C++ 2005 ATL_URL_DECODE 모든 이스케이프 문자 구문 분석 하기 전에 변환 합니다.)
 
 ### <a name="return-value"></a>반환 값
 

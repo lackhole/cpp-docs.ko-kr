@@ -8,11 +8,11 @@ helpviewer_keywords:
 - forms-based applications [MFC]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
 ms.openlocfilehash: 6810a6c7fce91865a92d048129da29305e22abc1
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57291251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62372333"
 ---
 # <a name="creating-a-forms-based-mfc-application"></a>폼 기반 MFC 응용 프로그램 만들기
 
@@ -32,7 +32,7 @@ SDI, MDI 및 여러 최상위 문서 응용 프로그램은 모든 폼 기반으
 
 와 같은 기본 클래스를 사용 하는 경우에 [CView](../../mfc/reference/cview-class.md)를 할 수 있습니다 나중에 응용 프로그램에서 폼 기반 [MFC 클래스 추가](../../mfc/reference/adding-an-mfc-class.md) 에서 파생 `CFormView` 확인 하 고는 **DocTemplate 생성 리소스** 의 확인란을 선택 합니다 [MFC 클래스 마법사](../../mfc/reference/document-template-strings-mfc-add-class-wizard.md)합니다.
 
-프로젝트가 열리면 마법사를 마치면 선택한 경우 `CFormView` (또는 클래스에서 상속 되는 `CFormView`) 기본 클래스로 또는 대화 상자 기반 응용 프로그램을 만든 경우 Visual c + + 대화 상자 편집기를 엽니다. 이 시점에서 폼을 만들 준비가 되었습니다.
+마법사를 사용 하 여 완료 되 면 프로젝트가 열리며, 선택한 경우 `CFormView` (또는 클래스에서 상속 되는 `CFormView`) 기본 클래스로 대화 상자 기반 응용 프로그램을 시각적 개체를 만든 경우 또는 C++ 대화 상자 편집기를 엽니다. 이 시점에서 폼을 만들 준비가 되었습니다.
 
 ### <a name="to-begin-creating-a-forms-based-mfc-executable"></a>폼 기반 MFC 실행 파일을 만들기 시작
 

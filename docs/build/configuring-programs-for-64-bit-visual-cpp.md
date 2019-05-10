@@ -1,21 +1,20 @@
 ---
-title: 64 비트 x64에 대 한 c + + 프로젝트 구성 대상
+title: 구성 C++ 64 비트, x64에 대 한 대상 프로젝트
 ms.date: 11/04/2016
 helpviewer_keywords:
 - 64-bit compiler [C++], options
 - 64-bit compiler [C++]
 - 64-bit programming [C++], about 64-bit programming
 - programming [C++], 64-bit
-- Visual C++, 64-bit hardware
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
-ms.openlocfilehash: c56cd34ecbc6615b0acebde6c40c658ca0c436a4
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: c95a117205c7c0c1b44c7c7cf00fdc1a90fa3390
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57818117"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220950"
 ---
-# <a name="configure-c-projects-for-64-bit-x64-targets"></a>64 비트 x64에 대 한 c + + 프로젝트 구성 대상
+# <a name="configure-c-projects-for-64-bit-x64-targets"></a>구성 C++ 64 비트, x64에 대 한 대상 프로젝트
 
 이 단원에는 Visual C++ 빌드 도구를 사용하여 64비트 하드웨어를 대상으로 지정하는 방법에 대한 항목이 포함되어 있습니다.
 

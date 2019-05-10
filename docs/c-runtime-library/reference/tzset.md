@@ -24,18 +24,18 @@ helpviewer_keywords:
 - environment variables, setting time
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
 ms.openlocfilehash: 6312297e6daa9b4790674bd26d21812d5bee34c6
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62385195"
 ---
 # <a name="tzset"></a>_tzset
 
 시간 환경 변수를 설정합니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -47,7 +47,7 @@ void _tzset( void );
 
 합니다 **_tzset** 함수에 환경 변수의 현재 설정을 사용 하 여 **TZ** 세 개의 전역 변수 값을 할당할: **_daylight**, **_timezone** , 및 **_tzname**합니다. 사용 하는 이러한 변수를 [_ftime](ftime-ftime32-ftime64.md) 하 고 [localtime](localtime-localtime32-localtime64.md) 하 고 현지 시간을 UTC (coordinated universal time)에서 정보를 수정 하려면 함수를 [시간](time-time32-time64.md) 함수를 시스템 시간에서 UTC를 계산 합니다. 설정 하려면 다음 구문을 사용 합니다 **TZ** 환경 변수:
 
-> **TZ 설정 =**_tzn_ \[ **+** &#124; **-**]*hh* \[ **:**_mm_\[**:**_ss_]] [*dzn*]
+> **set TZ=**_tzn_ \[**+**&#124;**-**]*hh*\[**:**_mm_\[**:**_ss_] ][*dzn*]
 
 |매개 변수|설명|
 |-|-|
@@ -62,11 +62,11 @@ void _tzset( void );
 
 예를 들어, 설정 하는 **TZ** 명령줄에서 다음을 입력 하는 독일에 있는 현재 표준 시간대에 해당 하는 환경 변수:
 
-> **TZ 설정 GST 1GDT =**
+> **set TZ=GST-1GDT**
 
 이 명령은 GST를 사용하여 독일 표준 시간을 나타내고, UTC는 독일보다 한 시간 뒤, 즉 독일은 UTC보다 한 시간 앞이라고 가정하며, 독일은 일광 절약 시간을 준수한다고 가정합니다.
 
-경우는 **TZ** 값을 설정 하지 않으면 **_tzset** 운영 체제에서 지정한 표준 시간대 정보를 사용 하려고 합니다. Windows 운영 체제에서 이 정보는 제어판의 날짜/시간 응용 프로그램에 지정되어 있습니다. 하는 경우 **_tzset** 이 정보를 가져올 수 없는 PST8PDT를 사용 하 여 기본적으로 태평양 표준 시간대를 나타냅니다.
+경우는 **TZ** 값을 설정 하지 않으면 **_tzset** 운영 체제에서 지정한 표준 시간대 정보를 사용 하려고 합니다. Windows 운영 체제에서 이 정보는 제어판의 날짜/시간 애플리케이션에 지정되어 있습니다. 하는 경우 **_tzset** 이 정보를 가져올 수 없는 PST8PDT를 사용 하 여 기본적으로 태평양 표준 시간대를 나타냅니다.
 
 기반으로 합니다 **TZ** 환경 변수 값에 다음 값을 전역 변수에 할당 된 **_daylight**를 **_timezone**, 및 **_tzname** 때 **_tzset** 라고 합니다.
 

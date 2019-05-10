@@ -32,11 +32,11 @@ helpviewer_keywords:
 - sinhl function
 - hyperbolic functions
 ms.openlocfilehash: 7327809a20569c520aa799690203458d54e30fb5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62356279"
 ---
 # <a name="sinh-sinhf-sinhl"></a>sinh, sinhf, sinhl
 
@@ -67,19 +67,19 @@ long double sinh(long double x);  // C++ only
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
 |± QNAN,IND|없음|_DOMAIN|
-|&#124;x&#124; ≥ 7.104760e+002(sinh|OVERFLOW+INEXACT|OVERFLOW|
+|&#124;x&#124; ≥ 7.104760e+002|OVERFLOW+INEXACT|OVERFLOW|
 
 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **sinh** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **sinh** 항상 받아서 반환 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **sinh** 및 반환 하는 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **sinh** 항상 받아서 반환 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C++)|
 |-|-|-|
-|**sinh**하십시오 **sinhf**, **sinhl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**sinh**, **sinhf**, **sinhl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

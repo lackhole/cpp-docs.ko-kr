@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2065
 ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
-ms.openlocfilehash: 3daf2cd532cd07225b822c80b46fc28274d4e2a8
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: ff418fa332adffa1885ec9ca6d7626000e753609
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59779403"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447354"
 ---
 # <a name="compiler-error-c2065"></a>컴파일러 오류 C2065
 
@@ -222,7 +222,7 @@ int main() {
 
 ## <a name="example-ccli-attribute-parameters"></a>예제: C++/ 특성 매개 변수 CLI
 
-이 오류는 Visual C++ 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성될 수도 있습니다. 매개 변수에 Visual C++ 특성이 있는지 확인합니다.
+이 오류는 Visual Studio 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다: 시각적 개체에 대해 확인 하는 매개 변수 C++ 특성입니다.
 
 ```cpp
 // C2065_attributes.cpp

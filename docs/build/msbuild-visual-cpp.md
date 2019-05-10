@@ -1,19 +1,17 @@
 ---
-title: 명령줄 c + +의 MSBuild
+title: 명령줄에서 MSBuildC++
 ms.date: 12/12/2018
-f1_keywords:
-- MSBuild
 helpviewer_keywords:
 - MSBuild
 ms.assetid: 7a1be7ff-0312-4669-adf2-5f5bf507d560
-ms.openlocfilehash: 565b1c47b4476fa7cb830e15b978b389f4344ee1
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: e95d99cf5c63c824bb9bade8e76bc3ca99079669
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820474"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220569"
 ---
-# <a name="msbuild-on-the-command-line---c"></a>명령줄 c + +의 MSBuild
+# <a name="msbuild-on-the-command-line---c"></a>명령줄에서 MSBuildC++
 
 일반적으로 Visual Studio를 사용 하 여 프로젝트 속성을 설정 하 여 MSBuild 시스템 호출을 하는 것이 좋습니다. 사용할 수 있습니다 합니다 **MSBuild** 도구 명령 프롬프트에서 직접. 빌드 프로세스 정보를 만들고 편집할 수 있는 프로젝트 파일 (.vcxproj)에 의해 제어 됩니다. 프로젝트 파일에 따라 빌드 옵션 빌드 단계, 조건 및 이벤트를 지정 합니다. 0을 지정할 수는 또한 이상의 명령줄 *옵션* 인수입니다.
 
@@ -47,13 +45,13 @@ MSBuild에 대 한 자세한 내용은 다음을 참조 하세요.
 
 - [명령줄 참조](/visualstudio/msbuild/msbuild-command-line-reference) 명령줄 인수 및 msbuild.exe와 함께 사용할 수 있는 옵션을 설명 합니다.
 
-- [작업 참조](/visualstudio/msbuild/msbuild-task-reference) 에 대해 설명 하는 MSBuild 작업입니다. 특히 Visual c + + 관련 된 이러한 작업을 note: [BscMake 작업](/visualstudio/msbuild/bscmake-task), [CL 작업](/visualstudio/msbuild/cl-task)를 [CPPClean 작업](/visualstudio/msbuild/cppclean-task)를 [LIB 작업](/visualstudio/msbuild/lib-task)를 [링크 작업](/visualstudio/msbuild/link-task), [MIDL 작업](/visualstudio/msbuild/midl-task), [MT 작업](/visualstudio/msbuild/mt-task)를 [RC 작업](/visualstudio/msbuild/rc-task)하십시오 [SetEnv 작업](/visualstudio/msbuild/setenv-task), [VCMessage 작업](/visualstudio/msbuild/vcmessage-task)
+- [작업 참조](/visualstudio/msbuild/msbuild-task-reference) 에 대해 설명 하는 MSBuild 작업입니다. 특히 Visual 관련 된 이러한 작업을 확인 C++: [BscMake 작업](/visualstudio/msbuild/bscmake-task), [CL 작업](/visualstudio/msbuild/cl-task)를 [CPPClean 작업](/visualstudio/msbuild/cppclean-task)를 [LIB 작업](/visualstudio/msbuild/lib-task)를 [링크 작업](/visualstudio/msbuild/link-task), [MIDL 작업](/visualstudio/msbuild/midl-task), [MT 작업](/visualstudio/msbuild/mt-task)를 [RC 작업](/visualstudio/msbuild/rc-task)하십시오 [SetEnv 작업](/visualstudio/msbuild/setenv-task), [VCMessage 작업](/visualstudio/msbuild/vcmessage-task)
 
 ## <a name="in-this-section"></a>섹션 내용
 
 |용어|정의|
 |----------|----------------|
-|[연습: MSBuild를 사용하여 Visual C++ 프로젝트 만들기](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|사용 하 여 Visual C++ 프로젝트를 만드는 방법을 보여 줍니다 **MSBuild**합니다.|
+|[연습: MSBuild를 사용하여 C++ 프로젝트 만들기](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|Visual Studio를 만드는 방법을 보여 줍니다 C++ 를 사용 하 여 프로젝트 **MSBuild**합니다.|
 |[방법: MSBuild 프로젝트에서 빌드 이벤트 사용](how-to-use-build-events-in-msbuild-projects.md)|빌드에서 particuler 단계에서 발생 하는 동작을 지정 하는 방법에 설명 합니다: 빌드를 시작할; 링크 단계가 시작 하기 전에 빌드가 끝난 후 또는 합니다.|
 |[방법: MSBuild 프로젝트에 사용자 지정 빌드 단계 추가](how-to-add-a-custom-build-step-to-msbuild-projects.md)|빌드 순서에 사용자 정의 단계를 추가 하는 방법에 설명 합니다.|
 |[방법: MSBuild 프로젝트에 사용자 지정 빌드 도구 추가](how-to-add-custom-build-tools-to-msbuild-projects.md)|특정 파일을 사용 하 여 빌드 도구를 연결 하는 방법에 설명 합니다.|
@@ -62,4 +60,4 @@ MSBuild에 대 한 자세한 내용은 다음을 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 
-[명령줄에서 MSVC 도구 집합을 사용 하 여](building-on-the-command-line.md)
+[명령줄에서 MSVC 도구 집합 사용](building-on-the-command-line.md)

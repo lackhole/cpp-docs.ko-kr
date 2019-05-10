@@ -1,6 +1,6 @@
 ---
 title: MSVC 컴파일러 옵션
-ms.date: 01/29/2018
+ms.date: 05/06/2019
 helpviewer_keywords:
 - cl.exe compiler
 - x86 MSVC compiler
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - compiler options, C++
 - x64 MSVC compiler
 ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
-ms.openlocfilehash: 831aade72cd728ec42aee5ef1f320deb7bdf173d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: ab41a5de027f28b361937e58fb179fd72db54e4e
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57816518"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221745"
 ---
 # <a name="compiler-options"></a>컴파일러 옵션
 
-cl.exe는 Microsoft Visual C++ (MSVC) C 및 C++ 컴파일러 및 링커를 제어 하는 도구입니다. cl.exe는 Microsoft Visual Studio에 대 한 Windows를 지 원하는 운영 체제 에서만 실행할 수 있습니다.
+cl.exe는 Microsoft를 제어 하는 도구 C++ (MSVC) C 및 C++ 컴파일러 및 링커입니다. cl.exe는 Microsoft Visual Studio에 대 한 Windows를 지 원하는 운영 체제 에서만 실행할 수 있습니다.
 
 > [!NOTE]
 > Visual Studio 개발자 명령 프롬프트 에서만에서이 도구를 시작할 수 있습니다. 시스템 명령 프롬프트 또는 파일 탐색기에서는 시작할 수 없습니다. 자세한 내용은 [명령줄에서 MSVC 도구 집합을 사용 하 여](../building-on-the-command-line.md)입니다.

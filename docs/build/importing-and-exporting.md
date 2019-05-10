@@ -1,6 +1,6 @@
 ---
 title: 가져오기 및 내보내기
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - DLLs [C++], importing
 - exporting DLLs [C++]
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DLLs [C++], exporting from
 - __declspec(dllimport) keyword [C++]
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
-ms.openlocfilehash: 882010cd28c291e9f49ca0f7dd9d646c70130184
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 03931f7f128ab0666890bb8e76677db67dda8fc7
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815829"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220632"
 ---
 # <a name="importing-and-exporting"></a>가져오기 및 내보내기
 
@@ -31,8 +31,6 @@ ms.locfileid: "57815829"
 
 ## <a name="using-declspec"></a>__Declspec를 사용 하 여
 
-Visual c + + 사용 **__declspec (dllimport)** 하 고 **__declspec (dllexport)** 바꾸려면 합니다 **__export** 16 비트 버전의 Visual c + +에서 이전에 사용 된 키워드.
-
 사용할 필요가 없습니다 **__declspec (dllimport)** 이렇게 하지만 올바르게 컴파일되도록 하려면 코드에 대 한 더 나은 코드를 생성 하도록 컴파일러에 있습니다. 컴파일러는 함수에에서 있는지 여부를 DLL를 DLL 경계를 교차 하는 함수 호출에 제공 됩니다 일반적으로 간접 참조 수준을 건너뛰는 코드를 생성 하기 위해 컴파일러를 허용 하는 것을 결정할 수 없기 때문에 더 나은 코드를 생성할 수 있습니다. 그러나 사용 해야 합니다 **__declspec (dllimport)** DLL에 사용 되는 변수를 가져오려고 합니다.
 
 적절 한.def 파일의 EXPORTS 섹션을 사용 하 여 **__declspec (dllexport)** 필요 하지 않습니다. **__declspec (dllexport)** .def 파일을 사용 하지 않고.exe 또는.dll 파일에서 함수 내보내기 하는 쉬운 방법을 제공 하기 위해 추가 되었습니다.
@@ -47,4 +45,4 @@ Win32 이식 가능한 실행 파일 형식으로 가져오기를 수정 하기 
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](dlls-in-visual-cpp.md)
+[C를 만들기 /C++ Visual Studio에서 Dll](dlls-in-visual-cpp.md)

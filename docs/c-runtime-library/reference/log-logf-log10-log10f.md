@@ -41,11 +41,11 @@ helpviewer_keywords:
 - logarithms
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
 ms.openlocfilehash: c8e3f73e61fefa7a39a6d53d63739b094d78c499
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62286014"
 ---
 # <a name="log-logf-logl-log10-log10f-log10l"></a>log, logf, logl, log10, log10f, log10l
 
@@ -80,7 +80,7 @@ long double log10( long double x );  // C++ only
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|QNAN, 찾기|없음|_DOMAIN|
+|± QNAN, IND|없음|_DOMAIN|
 |± 0|ZERODIVIDE|_SING|
 |*x* < 0|INVALID|_DOMAIN|
 
@@ -88,13 +88,13 @@ long double log10( long double x );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 있습니다 **로그** 하 고 **log10** 및 반환 하는 **float** 하거나 **long double** 값입니다. C 프로그램에서 **로그** 하 고 **log10** 항상 하 고 반환을 **double**합니다.
+C++오버 로드를 호출할 수 있도록 오버 로드를 허용 **로그** 하 고 **log10** 및 반환 하는 **float** 하거나 **long double** 값. C 프로그램에서 **로그** 하 고 **log10** 항상 하 고 반환을 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**로그**, **logf**합니다 **logl**를 **log10**를 **log10f**, **log10l**|\<math.h>|
+|**log**, **logf**, **logl**, **log10**, **log10f**, **log10l**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -1,15 +1,15 @@
 ---
 title: 네이티브 C++에서 이벤트 처리
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 helpviewer_keywords:
-- event handling [C++], Visual C++
+- event handling [C++]
 ms.assetid: e4b9219a-15d8-42fb-83c8-6d2e4e087c8d
-ms.openlocfilehash: 93bfcc93c680618ea3a51eabd145548a4f47563a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: 9eb0334e3633921842fcc06155ba0300ff6192e1
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58772334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222184"
 ---
 # <a name="event-handling-in-native-c"></a>네이티브 C++에서 이벤트 처리
 

@@ -23,11 +23,11 @@ helpviewer_keywords:
 - calloc_dbg function
 ms.assetid: 7f62c42b-eb9f-4de5-87d0-df57036c87de
 ms.openlocfilehash: c525aa2f19b39ba3cb8304c59c96196707ad859c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62340865"
 ---
 # <a name="callocdbg"></a>_calloc_dbg
 
@@ -47,7 +47,7 @@ void *_calloc_dbg(
 
 ### <a name="parameters"></a>매개 변수
 
-*수*<br/>
+*number*<br/>
 요청된 메모리 블록 수입니다.
 
 *size*<br/>
@@ -80,11 +80,11 @@ void *_calloc_dbg(
 
 - *filename*/*linenumber* 정보로 할당 요청의 원점을 확인 하 합니다.
 
-**_calloc_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 각 메모리 블록 할당 *크기*합니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 응용 프로그램에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 블록이 할당되면 블록의 사용자 부분은 값 0xCD로 채워지고 각 덮어쓰기 버퍼는 0xFD로 채워집니다.
+**_calloc_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 각 메모리 블록 할당 *크기*합니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 애플리케이션에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 블록이 할당되면 블록의 사용자 부분은 값 0xCD로 채워지고 각 덮어쓰기 버퍼는 0xFD로 채워집니다.
 
 **_calloc_dbg** 설정 **errno** 하려면 **ENOMEM** 메모리를 할당 하지 못하면; **EINVAL** 이 반환 됩니다 (앞에서 언급 한 오버 헤드 포함)는 데 필요한 메모리 양을 초과 하는 경우 **_HEAP_MAXREQ**합니다. 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
-기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요. 응용 프로그램의 디버그 빌드에서 표준 힙 함수를 호출하는 것과 해당 함수의 디버그 버전을 호출하는 것의 차이에 대한 자세한 내용은 [힙 할당 함수의 디버그 버전](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)을 참조하세요.
+기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요. 애플리케이션의 디버그 빌드에서 표준 힙 함수를 호출하는 것과 해당 함수의 디버그 버전을 호출하는 것의 차이에 대한 자세한 내용은 [힙 할당 함수의 디버그 버전](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

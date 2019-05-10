@@ -1,7 +1,8 @@
 ---
 title: ATL(액티브 템플릿 라이브러리) 자습서
+description: Microsoft를 사용 하 여 ActiveX 컨트롤을 만듭니다 C++ 및 액티브 템플릿 라이브러리입니다.
 ms.custom: get-started-article
-ms.date: 11/04/2016
+ms.date: 05/03/2019
 helpviewer_keywords:
 - ATL projects, tutorials
 - controls [ATL], tutorials
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - tutorials [ATL]
 - ATL, tutorials
 ms.assetid: f921a121-09c8-4812-9317-e15b2f1471fa
-ms.openlocfilehash: 716818306c751a8d774a8fc6c311694a7932be2c
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
-ms.translationtype: MT
+ms.openlocfilehash: ae336c0192214261d61792715353fc54b8b37fba
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270113"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221314"
 ---
 # <a name="active-template-library-atl-tutorial"></a>ATL(액티브 템플릿 라이브러리) 자습서
 

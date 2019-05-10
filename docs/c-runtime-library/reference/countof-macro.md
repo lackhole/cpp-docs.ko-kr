@@ -21,11 +21,11 @@ helpviewer_keywords:
 - _countof macro
 ms.assetid: 86198767-f7e5-4beb-898d-3cbbf60350a3
 ms.openlocfilehash: 60b4350d6cf14a545de67de0bdaee70ee2099006
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62335349"
 ---
 # <a name="countof-macro"></a>_countof 매크로
 
@@ -48,9 +48,9 @@ ms.locfileid: "50536138"
 
 ## <a name="remarks"></a>설명
 
-**_countof** 함수와 비슷한 전처리기 매크로로 구현 됩니다. C + + 버전에 대 한 포인터를 정적으로 선언 된 배열 대신 전달 되는 경우 컴파일 시 검색할 추가 템플릿 메커니즘을 있습니다.
+**_countof** 함수와 비슷한 전처리기 매크로로 구현 됩니다. C++ 버전에 대 한 포인터를 정적으로 선언 된 배열 대신 전달 되는 경우 컴파일 시 검색할 추가 템플릿 메커니즘입니다.
 
-했는지 *배열* 가 실제로 배열에 대 한 포인터가 아닌 합니다. C에서는 **_countof** 경우에 잘못 된 결과 생성 *배열* 대 한 포인터입니다. C + +에서는 **_countof** 경우 컴파일되지 않습니다 *배열* 대 한 포인터입니다.  배열 함수에 매개 변수로 전달 *포인터로 decays*, 함수 내에서 사용할 수 없다는 의미 **_countof** 배열의 범위를 확인 합니다.
+했는지 *배열* 가 실제로 배열에 대 한 포인터가 아닌 합니다. C에서는 **_countof** 경우에 잘못 된 결과 생성 *배열* 대 한 포인터입니다. C++를 **_countof** 면 컴파일되지 않습니다 *배열* 대 한 포인터입니다.  배열 함수에 매개 변수로 전달 *포인터로 decays*, 함수 내에서 사용할 수 없다는 의미 **_countof** 배열의 범위를 확인 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-ms.openlocfilehash: 1946fdabe66934e64cf95d3c3f12e16bc98ba664
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
-ms.translationtype: MT
+ms.openlocfilehash: ea4a878afea4453796277486da88b85e7f74883c
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58779354"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446529"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr(공용 언어 런타임 컴파일)
 
@@ -53,7 +53,7 @@ ms.locfileid: "58779354"
 
    매니페스트에 어셈블리 메타데이터가 없는 관리되는 프로그램을 *모듈*이라고 합니다. **noAssembly** 옵션은 모듈을 생성하는 데만 사용할 수 있습니다. [/c](c-compile-without-linking.md) 및 **/clr:noAssembly**를 사용하여 컴파일하는 경우 링커 단계에서 [/NOASSEMBLY](noassembly-create-a-msil-module.md) 옵션을 지정하여 모듈을 만듭니다.
 
-   Visual C++ 2005 이전은, **/clr:noAssembly** 에 **/LD**가 필요합니다. **/clr:noAssembly** 를 지정할 때 **/LD**가 암시됩니다.
+   Visual Studio 2005 전의 **/clr:noAssembly** 필요 **/LD**합니다. **/clr:noAssembly** 를 지정할 때 **/LD**가 암시됩니다.
 
 - **initialAppDomain**
 

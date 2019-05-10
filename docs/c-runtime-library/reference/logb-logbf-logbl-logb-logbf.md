@@ -39,11 +39,11 @@ helpviewer_keywords:
 - exponents and mantissas
 ms.assetid: 780c4daa-6fe6-4fbc-9412-4c1ba1a1766f
 ms.openlocfilehash: 9f598eedaf30b1f2a1858129e648a117355d112e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62285715"
 ---
 # <a name="logb-logbf-logbl-logb-logbf"></a>logb, logbf, logbl, _logb, _logbf
 
@@ -88,7 +88,7 @@ float _logbf(
 
 합니다 **logb** 함수에 부동 소수점 인수의 지 수 값을 추출 *x*처럼 *x* 무한 범위로 표현 된 합니다. 경우는 인수 *x* 는 비 정규화 것 처럼 처리 됩니다 정규화 된 합니다.
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **logb** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **logb** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **logb** 및 반환 하는 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **logb** 항상 받아서 반환 된 **double**합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -100,7 +100,7 @@ C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니�
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_logb**|\<float.h>|
-|**logb**하십시오 **logbf**하십시오 **logbl**, **_logbf**|\<math.h>|
+|**logb**, **logbf**, **logbl**, **_logbf**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

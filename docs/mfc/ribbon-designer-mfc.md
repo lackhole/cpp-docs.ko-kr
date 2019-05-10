@@ -8,11 +8,11 @@ helpviewer_keywords:
 - MFC Ribbon Designer
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
 ms.openlocfilehash: 5740b2f93f451a74407483c98ce5bf547b79bf35
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62309219"
 ---
 # <a name="ribbon-designer-mfc"></a>리본 디자이너(MFC)
 
@@ -85,13 +85,13 @@ MFC 응용 프로그램에서 리본 리소스를 사용 하려면 호출 하 �
 
 다음 항목에서는 리본 디자이너의 기능을 사용하는 방법에 대해 설명합니다.
 
-- [방법: 응용 프로그램 단추 사용자 지정](../mfc/how-to-customize-the-application-button.md)
+- [방법: 애플리케이션 단추 사용자 지정](../mfc/how-to-customize-the-application-button.md)
 
 - [방법: 빠른 실행 도구 모음 사용자 지정](../mfc/how-to-customize-the-quick-access-toolbar.md)
 
 - [방법: 리본 컨트롤 및 이벤트 처리기 추가](../mfc/how-to-add-ribbon-controls-and-event-handlers.md)
 
-- [방법: MFC 응용 프로그램에서 리본 리소스 로드](../mfc/how-to-load-a-ribbon-resource-from-an-mfc-application.md)
+- [방법: MFC 애플리케이션에서 리본 리소스 로드](../mfc/how-to-load-a-ribbon-resource-from-an-mfc-application.md)
 
 ## <a name="definitions-of-ribbon-elements"></a>리본 요소의 정의
 

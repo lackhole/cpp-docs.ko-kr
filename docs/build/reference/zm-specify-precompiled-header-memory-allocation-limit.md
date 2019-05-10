@@ -15,11 +15,11 @@ helpviewer_keywords:
 - -Zm compiler option [C++]
 ms.assetid: 94c77d5e-6672-46a7-92e0-3f69e277727d
 ms.openlocfilehash: 09df8e1ee9a97289e29e1191e8c1585580435b79
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57807899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62315276"
 ---
 # <a name="zm-specify-precompiled-header-memory-allocation-limit"></a>/Zm(미리 컴파일된 헤더 메모리 할당 제한 지정)
 
@@ -40,7 +40,7 @@ ms.locfileid: "57807899"
 
 ## <a name="remarks"></a>설명
 
-Visual Studio 2015 이전 버전에서는 몇 가지 개별 힙을 사용 하는 c + + 컴파일러 및 일정 한 제한이 있었습니다. 현재 컴파일러 동적으로 총 힙 크기 한계까지 필요에 따라 힙을 증가 하 고 여러 주소 범위를 구성 하는 미리 컴파일된 헤더를 허용 합니다. 따라서 합니다 **/Zm** 컴파일러 옵션은 거의 필요 하지 않습니다.
+Visual Studio 2015 이전 버전에는 C++ 컴파일러가 여러 개별 힙을 사용 했으며 각 제한 합니다. 현재 컴파일러 동적으로 총 힙 크기 한계까지 필요에 따라 힙을 증가 하 고 여러 주소 범위를 구성 하는 미리 컴파일된 헤더를 허용 합니다. 따라서 합니다 **/Zm** 컴파일러 옵션은 거의 필요 하지 않습니다.
 
 컴파일러의 힙 공간이 부족 하 고 내보내는 경우 합니다 [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) 사용 하는 경우 오류 메시지를 **/Zm** 컴파일러 옵션을 너무 많은 메모리를 예약한 것일 수 있습니다. 제거해 합니다 **/Zm** 옵션입니다.
 
@@ -60,9 +60,9 @@ Visual Studio 2015 이전 버전에서는 몇 가지 개별 힙을 사용 하는
 
 ### <a name="to-set-the-zm-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 /Zm 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 탐색 창에서 선택 **구성 속성** > **C/c + +** > **명령줄**합니다.
+1. 탐색 창에서 선택 **구성 속성** > **C /C++** > **명령줄**.
 
 1. 입력 된 **/Zm** 컴파일러 옵션을 **추가 옵션** 상자.
 

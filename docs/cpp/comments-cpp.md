@@ -1,5 +1,5 @@
-﻿---
-title: 주석 (c + +)
+---
+title: 주석 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - code comments, C++
@@ -8,15 +8,15 @@ helpviewer_keywords:
 - white space, C++ comments
 ms.assetid: 6fcb906c-c264-4083-84bc-373800b2e514
 ms.openlocfilehash: a90d9d37e69cb2e8be4ab18f77026fdce1221307
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399176"
 ---
-# <a name="comments-c"></a>주석 (c + +)
+# <a name="comments-c"></a>주석 (C++)
 
-주석이란 컴파일 시에는 무시되지만 프로그래머에게 해설을 제공하고 이해를 돕는 유용한 문장입니다. 주석은 향후 참조를 위해 일반적으로 코드에 설명을 덧붙이는 데 사용됩니다. 컴파일러에서는 주석을 공백으로 취급합니다. 특정 코드 줄을 비활성으로 만들면 테스트 시 메모를 사용할 수 있습니다. 그러나 주석이 포함된 코드를 묶을 수는 있지만 주석은 중첩될 수 없기 때문에 `#if` / `#endif` 전처리기 지시문이 더 잘 작동합니다.
+주석이란 컴파일 시에는 무시되지만 프로그래머에게 해설을 제공하고 이해를 돕는 유용한 문장입니다. 주석은 향후 참조를 위해 일반적으로 코드에 설명을 덧붙이는 데 사용됩니다. 컴파일러에서는 주석을 공백으로 취급합니다. 특정 코드 줄을 비활성으로 만들면 테스트 시 메모를 사용할 수 있습니다. 그러나 주석이 포함된 코드를 묶을 수는 있지만 주석은 중첩될 수 없기 때문에 `#if`/`#endif` 전처리기 지시문이 더 잘 작동합니다.
 
 C++ 주석은 다음 방법 중 하나로 기록됩니다.
 

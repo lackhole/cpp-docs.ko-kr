@@ -31,11 +31,11 @@ helpviewer_keywords:
 - log1pl function
 ms.assetid: a40d965d-b4f6-42f4-ba27-2395546f7c12
 ms.openlocfilehash: 2ac864d7e28823c95b0202c0a8f2454d03c64aff
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62285988"
 ---
 # <a name="log1p-log1pf-log1pl"></a>log1p, log1pf, log1pl
 
@@ -93,7 +93,7 @@ long double log1pl(
 
 합니다 **log1p** 함수를 사용 하 여 보다 더 정확할 수 있습니다 `log(x + 1)` 때 *x* 0에 가까우면 됩니다.
 
-C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **log1p** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **log1p** 항상 받아서 반환 된 **double**합니다.
+때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **log1p** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **log1p** 항상 받아서 반환 된 **double**합니다.
 
 하는 경우 *x* 가 자연 수 인의 계승의 로그를 반환 하는이 함수 (*x* -1).
 
@@ -101,7 +101,7 @@ C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니�
 
 |기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**log1p**하십시오 **log1pf**, **log1pl**|\<math.h>|\<cmath>|
+|**log1p**, **log1pf**, **log1pl**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

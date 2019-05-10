@@ -1,6 +1,6 @@
 ---
 title: 식별자 (C++)
-ms.date: 09/12/2018
+ms.date: 05/07/2019
 helpviewer_keywords:
 - decorated names
 - decorated names, about decorated names
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - white space, in C++ identifiers
 - identifiers [C++]
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
-ms.openlocfilehash: 6f87486d0bb2614a3b2542cf050172a47f152c4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.openlocfilehash: 61ca021a8f41074dcef6bf9df2e5683ede98deee
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653663"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222438"
 ---
 # <a name="identifiers-c"></a>식별자 (C++)
 
@@ -70,7 +70,7 @@ Microsoft C++ 식별자의 처음 2048자만 의미가 있습니다. 사용자 �
 
 - 함수에 사용되는 인수의 수
 
-달러 기호 `$` 는 Visual C++에서 유효한 식별자 문자입니다. 또한 Visual C++에서는 식별자에서 허용되는 유니버설 문자 이름 범위로 표시된 실제 문자를 사용할 수 있습니다. 이러한 문자를 사용하려면 해당 문자를 포함하는 파일 인코딩 코드 페이지를 사용하여 파일을 저장해야 합니다.  이 예에서는 확장 문자와 유니버설 문자 이름을 코드에서 서로 바꿔 사용할 수 있는 방법을 보여 줍니다.
+달러 기호 `$` 은 Microsoft의 유효한 식별자 문자 C++ 컴파일러 (MSVC). MSVC 유니버설 문자 이름도 식별자에서 허용 된 범위를 나타내는 실제 문자를 사용할 수도 있습니다. 이러한 문자를 사용하려면 해당 문자를 포함하는 파일 인코딩 코드 페이지를 사용하여 파일을 저장해야 합니다.  이 예에서는 확장 문자와 유니버설 문자 이름을 코드에서 서로 바꿔 사용할 수 있는 방법을 보여 줍니다.
 
 ```cpp
 // extended_identifier.cpp
@@ -87,7 +87,7 @@ int main() {
 }
 ```
 
-식별자에서 허용되는 문자의 범위는 C++/CLI 코드를 컴파일하는 경우보다 덜 제한적입니다. /clr을 사용하여 컴파일된 코드의 식별자는  [Standard ECMA-335: Common Language Infrastructure(CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm)를 준수해야 합니다.
+식별자에서 허용되는 문자의 범위는 C++/CLI 코드를 컴파일하는 경우보다 덜 제한적입니다. /Clr을 사용 하 여 컴파일된 코드의 식별자 따라야 [표준 ECMA-335: Common Language Infrastructure (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm)합니다.
 
 **Microsoft 전용 종료**
 
@@ -95,7 +95,7 @@ int main() {
 
 식별자는 키워드와 정확히 동일한 철자와 대/소문자를 사용할 수 없습니다. 키워드가 포함된 식별자를 사용할 수 있습니다. 예를 들어 `Pint` 는 올바른 식별자를 포함 하는 경우에 **int**, 키워드는 합니다.
 
-두 개의 연속 밑줄 문자 ( **__** ) 식별자 또는 단일 선행 밑줄 뒤에 대문자, 모든 범위에서 c + + 구현을 위해 예약 됩니다. 현재 또는 나중에 예약되는 식별자와 충돌할 수 있기 때문에 파일 범위가 있는 이름에 소문자가 뒤에 오는 단일 선행 밑줄을 사용하지 않도록 해야 합니다.
+두 개의 연속 밑줄 문자 ( **__** ) 식별자 또는 단일 선행 밑줄 문자가 뒤에 예약 되어 C++ 모든 범위에서 구현 합니다. 현재 또는 나중에 예약되는 식별자와 충돌할 수 있기 때문에 파일 범위가 있는 이름에 소문자가 뒤에 오는 단일 선행 밑줄을 사용하지 않도록 해야 합니다.
 
 ## <a name="see-also"></a>참고자료
 

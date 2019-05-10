@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Unicode [C++], enabling
 ms.assetid: b077f4ca-5865-40ef-a46e-d9e4d686ef21
 ms.openlocfilehash: 22f2dba49e894e93cb6791d76a65730f3269199e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62410618"
 ---
 # <a name="international-enabling"></a>국가별 사용
 
-대부분의 기존 C 및 c + + 코드에서는 국가별 응용 프로그램에 대 한 제대로 작동 하지 않는 문자 및 문자열 조작에 대 한 가정 합니다. 런타임 라이브러리와 MFC MBCS 또는 유니코드를 지원 하지만 아직 해결 방법이 수행할 수 있습니다. 이 섹션에서는 안내, Visual c + +에서 "국가별 사용"의 의미를 설명 합니다.
+가장 일반적인 C 및 C++ 코드에서는 국가별 응용 프로그램에 대 한 제대로 작동 하지 않는 문자 및 문자열 조작에 대 한 가정 합니다. 런타임 라이브러리와 MFC MBCS 또는 유니코드를 지원 하지만 아직 해결 방법이 수행할 수 있습니다. 시각적 개체의이 섹션에서는 설명 "국가별 사용"의 의미를 안내 합니다 C++:
 
 - 유니코드와 MBCS MFC 함수 매개 변수 목록에서 이식 가능한 데이터 형식을 통해 활성화 됩니다 및 형식을 반환 합니다. 이러한 형식은 빌드 기호를 정의 하는 여부에 따라 적절 한 방법으로 조건부로 정의 됩니다 `_UNICODE` 기호 또는 `_MBCS` (즉 DBCS). MFC 라이브러리의 여러 변형은 빌드 정의 이러한 두 기호에 따라 응용 프로그램을 자동으로 연결 됩니다.
 

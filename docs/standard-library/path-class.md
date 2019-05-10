@@ -5,11 +5,11 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::path
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
 ms.openlocfilehash: 486245df3433f552c289786a0b20deb33c8fb6c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62370452"
 ---
 # <a name="path-class"></a>path 클래스
 
@@ -94,7 +94,7 @@ class path;
 |[operator=](#op_as)|경로 요소의 다른 경로의 복사본으로 바꿉니다.|
 |[operator+=](#op_add)|다양 한 `concat` 식입니다.|
 |[operator/=](#op_divide)|다양 한 `append` 식입니다.|
-|[string_type 연산자](#op_string)|`myname`를 반환합니다.|
+|[operator string_type](#op_string)|`myname`를 반환합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -125,7 +125,7 @@ path& append(InIt first, InIt last);
 *last*<br/>
 지정 된 시퀀스의 끝입니다.
 
-## <a name="assign"></a> path:: assign
+## <a name="assign"></a> path::assign
 
 대체 `mypath` 지정된 된 시퀀스를 사용 하 여 필요에 따라 변환 합니다.
 
@@ -148,7 +148,7 @@ path& assign(InIt first, InIt last);
 *last*<br/>
 지정 된 시퀀스의 끝입니다.
 
-## <a name="begin"></a> path:: begin
+## <a name="begin"></a> path::begin
 
 반환 된 `path::iterator` 있는 경우 경로 이름에서 첫 번째 경로 요소를 지정 합니다.
 
@@ -164,7 +164,7 @@ iterator begin() const;
 const value_type& *c_str() const noexcept;
 ```
 
-## <a name="clear"></a> path:: clear
+## <a name="clear"></a> path::clear
 
 실행 `mypath.clear()`합니다.
 
@@ -172,7 +172,7 @@ const value_type& *c_str() const noexcept;
 void clear() noexcept;
 ```
 
-## <a name="compare"></a> path:: compare
+## <a name="compare"></a> path::compare
 
 첫 번째 함수는 `mypath.compare(pval.native())`를 반환합니다. 두 번째 함수는 `mypath.compare(str)`를 반환합니다. 세 번째 함수 반환 `mypath.compare(ptr)`합니다.
 
@@ -193,7 +193,7 @@ int compare(const value_type *ptr) const;
 *ptr*<br/>
 비교에 대 한 포인터입니다.
 
-## <a name="concat"></a> path:: concat
+## <a name="concat"></a> path::concat
 
 지정된 된 시퀀스에 추가 `mypath`, 변환 (그러나 구분 기호를 삽입 하지 않는) 필요에 따라 합니다.
 
@@ -224,7 +224,7 @@ path& concat(InIt first, InIt last);
 typedef iterator const_iterator;
 ```
 
-## <a name="empty"></a> path:: empty
+## <a name="empty"></a> path::empty
 
 `mypath.empty()`를 반환합니다.
 
@@ -232,7 +232,7 @@ typedef iterator const_iterator;
 bool empty() const noexcept;
 ```
 
-## <a name="end"></a> path:: end
+## <a name="end"></a> path::end
 
 형식의 시퀀스의 끝 반복기를 반환 `iterator`합니다.
 
@@ -240,7 +240,7 @@ bool empty() const noexcept;
 iterator end() const;
 ```
 
-## <a name="extension"></a> path:: extension
+## <a name="extension"></a> path::extension
 
 접미사를 반환 `filename()`합니다.
 
@@ -256,7 +256,7 @@ path extension() const;
 
 그렇지 않은 경우 접미사가 맨 오른쪽 점으로 시작되고 해당 점을 포함합니다.
 
-## <a name="filename"></a> path:: filename
+## <a name="filename"></a> path::filename
 
 myname의 루트 디렉터리 구성 요소, 특히 `empty() path() : *--end()`을 참조하세요. 구성 요소는 비어 있을 수 있습니다.
 
@@ -318,7 +318,7 @@ wstring generic_wstring() const;
 bool has_extension() const;
 ```
 
-## <a name="has_filename"></a> path:: has_filename
+## <a name="has_filename"></a> path::has_filename
 
 `!filename().empty()`를 반환합니다.
 
@@ -326,7 +326,7 @@ bool has_extension() const;
 bool has_filename() const;
 ```
 
-## <a name="has_parent_path"></a> path:: has_parent_path
+## <a name="has_parent_path"></a> path::has_parent_path
 
 `!parent_path().empty()`를 반환합니다.
 
@@ -334,7 +334,7 @@ bool has_filename() const;
 bool has_parent_path() const;
 ```
 
-## <a name="has_relative_path"></a> path:: has_relative_path
+## <a name="has_relative_path"></a> path::has_relative_path
 
 `!relative_path().empty()`를 반환합니다.
 
@@ -342,7 +342,7 @@ bool has_parent_path() const;
 bool has_relative_path() const;
 ```
 
-## <a name="has_root_directory"></a> path:: has_root_directory
+## <a name="has_root_directory"></a> path::has_root_directory
 
 `!root_directory().empty()`를 반환합니다.
 
@@ -350,7 +350,7 @@ bool has_relative_path() const;
 bool has_root_directory() const;
 ```
 
-## <a name="has_root_name"></a> path:: has_root_name
+## <a name="has_root_name"></a> path::has_root_name
 
 `!root_name().empty()`를 반환합니다.
 
@@ -358,7 +358,7 @@ bool has_root_directory() const;
 bool has_root_name() const;
 ```
 
-## <a name="has_root_path"></a> path:: has_root_path
+## <a name="has_root_path"></a> path::has_root_path
 
 `!root_path().empty()`를 반환합니다.
 
@@ -374,7 +374,7 @@ bool has_root_path() const;
 bool has_stem() const;
 ```
 
-## <a name="is_absolute"></a> path:: is_absolute
+## <a name="is_absolute"></a> path::is_absolute
 
 Windows, 함수 반환 `has_root_name() && has_root_directory()`합니다. Posix에서 함수 반환 `has_root_directory()`합니다.
 
@@ -382,7 +382,7 @@ Windows, 함수 반환 `has_root_name() && has_root_directory()`합니다. Posix
 bool is_absolute() const;
 ```
 
-## <a name="is_relative"></a> path:: is_relative
+## <a name="is_relative"></a> path::is_relative
 
 `!is_absolute()`를 반환합니다.
 
@@ -390,7 +390,7 @@ bool is_absolute() const;
 bool is_relative() const;
 ```
 
-## <a name="iterator"></a> path:: iterator
+## <a name="iterator"></a> path::iterator
 
 경로 구성 요소를 지정 하는 양방향 상수 반복기 `myname`합니다.
 
@@ -431,7 +431,7 @@ class iterator
 
 1. 변경 `myname` 의 요소를 지정 하는 모든 반복기를 무효화 `myname`합니다.
 
-## <a name="make_preferred"></a> path:: make_preferred
+## <a name="make_preferred"></a> path::make_preferred
 
 각 구분 기호를 변환 된 `preferred_separator` 필요에 따라 합니다.
 
@@ -447,7 +447,7 @@ path& make_preferred();
 const string_type& native() const noexcept;
 ```
 
-## <a name="op_as"></a> path:: operator =
+## <a name="op_as"></a> path::operator=
 
 경로 요소의 다른 경로의 복사본으로 바꿉니다.
 
@@ -471,7 +471,7 @@ path& operator=(const Source& source);
 
 첫 번째 멤버 연산자 복사본 `right.myname` 에 `myname`입니다. 두 번째 멤버 연산자 이동 `right.myname` 에 `myname`입니다. 세 번째 멤버 연산자와 동일 `*this = path(source)`합니다.
 
-## <a name="op_add"></a> path:: operator + =
+## <a name="op_add"></a> path::operator+=
 
 다양 한 `concat` 식입니다.
 
@@ -499,7 +499,7 @@ path& operator+=(Elem elem);
 *ptr*<br/>
 추가 포인터입니다.
 
-*Elem*<br/>
+*elem*<br/>
 추가 된 `value_type` 또는 `Elem`합니다.
 
 *source*<br/>
@@ -521,7 +521,7 @@ path& operator+=(Elem elem);
 
 1. `concat(path(basic_string<Elem>(1, elem)));`
 
-## <a name="op_divide"></a> path:: operator / =
+## <a name="op_divide"></a> path::operator/=
 
 다양 한 `append` 식입니다.
 
@@ -548,7 +548,7 @@ path& operator/=(const Source& source);
 
 1. `append(source);`
 
-## <a name="op_string"></a> path:: operator string_type
+## <a name="op_string"></a> path::operator string_type
 
 `myname`를 반환합니다.
 
@@ -556,7 +556,7 @@ path& operator/=(const Source& source);
 operator string_type() const;
 ```
 
-## <a name="parent_path"></a> path:: parent_path
+## <a name="parent_path"></a> path::parent_path
 
 부모 경로 구성 요소를 반환 합니다. `myname`합니다.
 
@@ -568,7 +568,7 @@ path parent_path() const;
 
 부모 경로 구성 요소를 반환 합니다. `myname`, 특히 접두사 `myname` 제거한 후 `filename().native()` 와 바로 앞 디렉터리 구분 기호입니다. (경우에 동일 하 게 `begin() != end()`, 범위에 있는 모든 요소 결합 `[begin(), --end())` 연속적으로 적용 하 여 `operator/=`.) 구성 요소는 비어 있을 수 있습니다.
 
-## <a name="path"></a> path:: path
+## <a name="path"></a> path::path
 
 생성 된 `path` 다양 한 방식입니다.
 
@@ -599,7 +599,7 @@ path(InIt first, InIt last, const locale& loc);
 *source*<br/>
 복사본으로 생성 된 경로 소스입니다.
 
-*Loc*<br/>
+*loc*<br/>
 지정 된 로캘입니다.
 
 *first*<br/>
@@ -642,7 +642,7 @@ static constexpr value_type preferred_separator == '/';
 
 대부분의 Windows 컨텍스트에서는 L'/'을 대신 사용하여 동일하게 허용됩니다.
 
-## <a name="relative_path"></a> path:: relative_path
+## <a name="relative_path"></a> path::relative_path
 
 상대 경로 구성 요소를 반환 `myname`합니다.
 
@@ -654,7 +654,7 @@ path relative_path() const;
 
 상대 경로 구성 요소를 반환 `myname`, 특히 접미사가 `myname` 제거한 후 `root_path().native()` 와 바로 뒤의 중복 디렉터리 구분 기호입니다. 구성 요소는 비어 있을 수 있습니다.
 
-## <a name="remove_filename"></a> path:: remove_filename
+## <a name="remove_filename"></a> path::remove_filename
 
 파일을 제거합니다.
 
@@ -662,7 +662,7 @@ path relative_path() const;
 path& remove_filename();
 ```
 
-## <a name="replace_extension"></a> path:: replace_extension
+## <a name="replace_extension"></a> path::replace_extension
 
 확장명을 바꿉니다 `myname`합니다.
 
@@ -679,7 +679,7 @@ path& replace_extension(const path& newext = path());
 
 먼저 접미사를 제거 `extension().native()` 에서 `myname`합니다. 경우 `!newext.empty() && newext[0] != dot` (여기서 `dot` 됩니다 `*path(".").c_str()`), 한 다음 `dot` 에 추가 됩니다 `myname`. 그런 다음 *newext* 에 추가 됩니다 `myname`합니다.
 
-## <a name="replace_filename"></a> path:: replace_filename
+## <a name="replace_filename"></a> path::replace_filename
 
 파일 이름을으로 바꿉니다.
 
@@ -703,7 +703,7 @@ remove_filename();
 return (*this);
 ```
 
-## <a name="root_directory"></a> path:: root_directory
+## <a name="root_directory"></a> path::root_directory
 
 루트 디렉터리 구성 요소를 반환 `myname`합니다.
 
@@ -715,7 +715,7 @@ path root_directory() const;
 
 구성 요소는 비어 있을 수 있습니다.
 
-## <a name="root_name"></a> path:: root_name
+## <a name="root_name"></a> path::root_name
 
 루트 이름 구성 요소를 반환 `myname`합니다.
 
@@ -727,7 +727,7 @@ path root_name() const;
 
 구성 요소는 비어 있을 수 있습니다.
 
-## <a name="root_path"></a> path:: root_path
+## <a name="root_path"></a> path::root_path
 
 루트 경로 구성 요소를 반환 `myname`합니다.
 
@@ -751,7 +751,7 @@ path stem() const;
 
 반환 된 `stem` 구성 요소 `myname`, 특히 `filename().native()` 모든 후행 `extension().native()` 제거 합니다. 구성 요소는 비어 있을 수 있습니다.
 
-## <a name="string"></a> path:: string
+## <a name="string"></a> path::string
 
 에 저장 된 시퀀스 변환 `mypath`합니다.
 
@@ -783,7 +783,7 @@ string string() const;
 typedef basic_string<value_type> string_type;
 ```
 
-## <a name="swap"></a> path:: swap
+## <a name="swap"></a> path::swap
 
 실행 `swap(mypath, right.mypath)`합니다.
 

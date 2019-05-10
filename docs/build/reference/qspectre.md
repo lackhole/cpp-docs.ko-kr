@@ -6,11 +6,11 @@ f1_keywords:
 helpviewer_keywords:
 - /Qspectre
 ms.openlocfilehash: 42adff6564dc1c2ef47abffe9f9e6e630279ea7d
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57812462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62319189"
 ---
 # <a name="qspectre"></a>/Qspectre
 
@@ -28,7 +28,7 @@ ms.locfileid: "57812462"
 
 초기 릴리스에서는 **/Qspectre** 최적화 된 코드에만 작동 하는 옵션입니다. Visual Studio 2017 버전 15.7 이상의 경우에 **/Qspectre** 옵션은 모든 최적화 수준에서 지원 됩니다.
 
-Microsoft Visual c + + 라이브러리 스펙터 완화를 사용 하 여 버전에서 사용할 수 있습니다. Visual Studio 설치 관리자에서 Visual Studio 2017에 대 한 스펙터 완화 라이브러리를 다운로드할 수 있습니다. 있는 합니다 **개별 구성 요소** 탭 **컴파일러, 빌드 도구 및 런타임**, 이름에 "라이브러리에 대 한 스펙터"를 포함 하 고 있습니다. DLL 및 정적 런타임 라이브러리 사용 하도록 설정 하는 완화를 사용 하 여 모두 Visual c + + 런타임의 하위 집합에 제공 됩니다. VC + + 시작 코드, vcruntime140, msvcp140, concrt140, 및 vcamp140 합니다. Dll 응용 프로그램 지역 배포만 지원 됩니다. Visual c + + 2017 런타임 라이브러리 재배포 가능 패키지의 내용은 수정 되지 않은 합니다. MFC 및 ATL에 대 한 스펙터 완화 라이브러리를 설치할 수도 있습니다는 **개별 구성 요소** 탭에서 **Sdk, 라이브러리 및 프레임 워크**합니다.
+Microsoft Visual C++ 라이브러리도 스펙터 완화를 사용 하 여 버전에서 사용할 수 있습니다. Visual Studio 설치 관리자에서 Visual Studio 2017에 대 한 스펙터 완화 라이브러리를 다운로드할 수 있습니다. 있는 합니다 **개별 구성 요소** 탭 **컴파일러, 빌드 도구 및 런타임**, 이름에 "라이브러리에 대 한 스펙터"를 포함 하 고 있습니다. DLL 및 정적 런타임 라이브러리 사용 하도록 설정 하는 완화를 사용 하 여 시각적 개체의 하위 집합에 사용할 수 C++ 런타임: VC + + 시작 코드, vcruntime140, msvcp140, concrt140, 및 vcamp140 합니다. Dll 응용 프로그램 지역 배포만 지원 됩니다. 시각적 개체의 내용을 C++ 2017 런타임 라이브러리 재배포 가능 패키지를 수정 되지 않은 합니다. MFC 및 ATL에 대 한 스펙터 완화 라이브러리를 설치할 수도 있습니다는 **개별 구성 요소** 탭에서 **Sdk, 라이브러리 및 프레임 워크**합니다.
 
 ### <a name="applicability"></a>적용 대상
 
@@ -55,20 +55,20 @@ Microsoft Visual c + + 라이브러리 스펙터 완화를 사용 하 여 버전
 합니다 **/Qspectre** 컴파일러 옵션 스펙터 완화를 위해 구축 된 런타임 라이브러리의 버전을 암시적으로 연결 하는 코드를 생성 합니다. 이러한 라이브러리는 Visual Studio 설치 관리자를 사용 하 여 설치 해야 하는 선택적 구성 요소:
 
 - VC + + 2017 버전 *version_numbers* 스펙터 용 라이브러리 \[(x86 및 x64) | (ARM) | (ARM64)]
-- 에 대 한 visual c + + ATL \[(x64 x86) | ARM | ARM64] 스펙터 완화를 사용 하 여
-- 에 대 한 visual c + + MFC \[x86 x64 | ARM | ARM64] 스펙터 완화를 사용 하 여
+- Visual C++ 에 대 한 ATL \[(x64 x86) | ARM | ARM64] 스펙터 완화를 사용 하 여
+- Visual C++ 에 대 한 MFC \[x86 x64 | ARM | ARM64] 스펙터 완화를 사용 하 여
 
 사용 하 여 코드를 작성 하는 경우 **/Qspectre** 없는 이러한 라이브러리를 설치 하 고 빌드 시스템 보고서 **MSB8038 경고: 스펙터 완화 설정 되어 있지만 스펙터 완화 된 라이브러리를 찾을 수 없는**합니다. MFC 또는 ATL 코드 빌드가 실패 하 고 링커와 같은 오류를 보고 하는 경우 **심각한 오류 LNK1104: 'oldnames.lib' 파일을 열 수 없습니다.**, 이러한 누락 된 라이브러리를 일으킬 수 있습니다.
 
 ### <a name="additional-information"></a>추가 정보
 
-자세한 내용을 참조 하세요. 공식 [투기적 실행 사이드 채널 취약성을 완화 하기 위해 Microsoft 보안 공지 ADV180002, 지침](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002)합니다. 지침 Intel에서 제공 됩니다 [투기적 실행 쪽 채널 완화](https://software.intel.com/sites/default/files/managed/c5/63/336996-Speculative-Execution-Side-Channel-Mitigations.pdf), 및 ARM를 [캐시 추론 쪽 채널](https://developer.arm.com/-/media/Files/pdf/Cache_Speculation_Side-channels.pdf)합니다. 스펙터와 멜트다운 완화 기능이 Windows 관련 개요를 참조 하세요 [스펙터와 멜트다운 완화 Windows 시스템 성능에 영향을 이해](https://cloudblogs.microsoft.com/microsoftsecure/2018/01/09/understanding-the-performance-impact-of-spectre-and-meltdown-mitigations-on-windows-systems/) Microsoft 보안 블로그에서입니다. MSVC 완화에서 해결 된 스펙터 취약점의 개요를 보려면 [MSVC에 스펙터 완화](https://blogs.msdn.microsoft.com/vcblog/2018/01/15/spectre-mitigations-in-msvc./) Visual c + + 팀 블로그.
+자세한 내용을 참조 하세요. 공식 [투기적 실행 사이드 채널 취약성을 완화 하기 위해 Microsoft 보안 공지 ADV180002, 지침](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002)합니다. 지침 Intel에서 제공 됩니다 [투기적 실행 쪽 채널 완화](https://software.intel.com/sites/default/files/managed/c5/63/336996-Speculative-Execution-Side-Channel-Mitigations.pdf), 및 ARM를 [캐시 추론 쪽 채널](https://developer.arm.com/-/media/Files/pdf/Cache_Speculation_Side-channels.pdf)합니다. 스펙터와 멜트다운 완화 기능이 Windows 관련 개요를 참조 하세요 [스펙터와 멜트다운 완화 Windows 시스템 성능에 영향을 이해](https://cloudblogs.microsoft.com/microsoftsecure/2018/01/09/understanding-the-performance-impact-of-spectre-and-meltdown-mitigations-on-windows-systems/) Microsoft 보안 블로그에서입니다. MSVC 완화에서 해결 된 스펙터 취약점의 개요를 보려면 [MSVC에 스펙터 완화](https://blogs.msdn.microsoft.com/vcblog/2018/01/15/spectre-mitigations-in-msvc./) 시각적 개체에 C++ 팀 블로그.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **C/c + +** > **명령줄** 속성 페이지.
+1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
 
 1. 입력 된 **/Qspectre** 컴파일러 옵션을 **추가 옵션** 상자. 선택할 **확인** 에 변경 내용을 적용 합니다.
 

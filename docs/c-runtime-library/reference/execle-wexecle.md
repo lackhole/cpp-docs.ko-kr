@@ -28,18 +28,18 @@ helpviewer_keywords:
 - _execle function
 ms.assetid: 75efa9c5-96b7-4e23-acab-06258901f63a
 ms.openlocfilehash: dbd84dd8d8e150a063dad4dc89a572c317bce544
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62288164"
 ---
 # <a name="execle-wexecle"></a>_execle, _wexecle
 
 새 자식 프로세스를 로드하고 실행합니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -65,7 +65,7 @@ intptr_t _wexecle(
 *cmdname*<br/>
 실행할 파일의 경로입니다.
 
-*arg0*,... *argn*<br/>
+*arg0*, ... *argn*<br/>
 매개 변수에 대한 포인터 목록입니다.
 
 *envp*<br/>

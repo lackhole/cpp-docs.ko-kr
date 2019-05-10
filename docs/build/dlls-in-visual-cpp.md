@@ -1,6 +1,6 @@
 ---
-title: Visual Studio에서 C/c + + Dll 만들기
-ms.date: 12/10/2018
+title: C를 만들기 /C++ Visual Studio에서 Dll
+ms.date: 05/06/2019
 helpviewer_keywords:
 - executable files [C++]
 - dynamic linking [C++]
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - DLLs [C++]
 - DLLs [C++], about DLLs
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
-ms.openlocfilehash: 5bd30c84ba202c3f772ad4451368efde10285e6c
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 7f1c2b71a58c59bf0662aa4ffec53344ce657df0
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57815816"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220749"
 ---
-# <a name="create-cc-dlls-in-visual-studio"></a>Visual Studio에서 C/c + + Dll 만들기
+# <a name="create-cc-dlls-in-visual-studio"></a>C를 만들기 /C++ Visual Studio에서 Dll
 
 Windows, 동적 연결 라이브러리 (DLL)의 함수 및 리소스의 공유 라이브러리로 사용 되는 실행 파일의 종류입니다. 동적 연결 함수를 호출 하거나 별도 파일에 저장 된 리소스를 사용 하 여 실행 파일을 사용 하도록 설정 하는 운영 체제 기능입니다. 이러한 함수 및 리소스는 사용하는 실행 파일과 별도로 컴파일 및 배포할 수 있습니다. DLL을 독립 실행형 실행 파일입니다. 호출 하는 응용 프로그램의 컨텍스트에서 실행 됩니다. 응용 프로그램이 로드 될 때 운영 체제는 응용 프로그램의 메모리 공간에 DLL을 로드할 수 있습니다 (*암시적 링크*), 또는 런타임 시 주문형 (*명시적 링크*). DLL을 통해 실행 파일 간에 함수 및 리소스를 쉽게 공유할 수 있습니다. 즉, 여러 개의 응용 프로그램이 메모리에 있는 하나의 DLL 복사본 내용을 동시에 액세스할 수 있습니다.
 
@@ -59,7 +59,7 @@ Dll 및 응용 프로그램은 모두 실행 모듈에도 여러 가지 방법�
 
 ## <a name="more-information-on-how-to-create-and-use-dlls"></a>만들기 및 Dll을 사용 하는 방법에 대 한 자세한 내용
 
-다음 항목에서는 Visual c + +에서 Dll을 프로그래밍 하는 방법에 대 한 자세한 정보를 제공합니다.
+C를 만드는 방법에 대 한 자세한 정보를 제공 하는 다음 항목 /C++ Visual Studio에서 Dll입니다.
 
 [연습: 동적 연결 라이브러리 만들기 및 사용(C++)](walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
 Visual Studio를 사용하여 DLL을 만들고 사용하는 방법에 대해 설명합니다.

@@ -7,11 +7,11 @@ helpviewer_keywords:
 - C2632
 ms.assetid: b15a6b1b-42d2-4e1b-8660-e6bfde61052d
 ms.openlocfilehash: b92d44bcfd04d4de7b39c5bdab5ee146d9b6693b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62257636"
 ---
 # <a name="compiler-error-c2632"></a>컴파일러 오류 C2632
 
@@ -36,4 +36,4 @@ int float i;   // C2632
 void f(int bool);   // C2632
 ```
 
-이 오류 코드는 Visual Studio.NET 2003 및 Visual Studio.NET 버전 모두 Visual c + +에서 유효한를 해결 하려면 식별자를 이름을 바꿉니다.
+코드의 시각적 개체의 Visual Studio.NET 2003와 VISUAL Studio 버전에서 유효한이 오류를 해결 하려면 C++, 식별자 이름을 바꿉니다.

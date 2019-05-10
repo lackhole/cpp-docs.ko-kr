@@ -8,11 +8,11 @@ helpviewer_keywords:
 - Platform::ArrayReference Class
 ms.assetid: 9ab3b15e-8a60-4600-8fcb-7d6c86284f4b
 ms.openlocfilehash: 923f60e90517e377b99d5e29f38c48b2633c3c46
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62161573"
 ---
 # <a name="platformarrayreference-class"></a>Platform::ArrayReference 클래스
 
@@ -96,8 +96,7 @@ ArrayReference& operator=(ArrayReference&& otherArg);
 
 ### <a name="return-value"></a>반환 값
 
-
-  `ArrayReference` 형식의 개체에 대한 참조입니다.
+`ArrayReference` 형식의 개체에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -119,8 +118,8 @@ Array<TArg>^ operator ();
 
 ### <a name="remarks"></a>설명
 
-[Platform:: arrayreference](../cppcx/platform-arrayreference-class.md) 하 고 [platform:: array](../cppcx/platform-array-class.md) 템플릿은 표준 c + + 클래스를 하지 ref 클래스입니다.
+[Platform:: arrayreference](../cppcx/platform-arrayreference-class.md) 하 고 [platform:: array](../cppcx/platform-array-class.md) 표준 C++ 클래스 템플릿, ref 클래스가 아닌 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)
+[Platform 네임스페이스](../cppcx/platform-namespace-c-cx.md)

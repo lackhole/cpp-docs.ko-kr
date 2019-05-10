@@ -1,8 +1,6 @@
 ---
 title: 확장명 DLL
-ms.date: 11/04/2016
-f1_keywords:
-- afxdll
+ms.date: 05/06/2019
 helpviewer_keywords:
 - memory [C++], DLLs
 - MFC extension DLLs [C++]
@@ -15,12 +13,12 @@ helpviewer_keywords:
 - extension DLLs [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
-ms.openlocfilehash: eca33b60b8fa6ba812bf5fa68520f51ceb1d164b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 55b1e55a9c7bdf6daaff98a7fe3f1a2a55f68334
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57820444"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220769"
 ---
 # <a name="mfc-extension-dlls"></a>MFC 확장명 Dll
 
@@ -52,7 +50,7 @@ MFC 확장 DLL 공유 버전의 MFC 사용 하 여 동일한 방식으로 응용
 
 MFC 버전 4.0이이 유형의 DLL AFXDLL 호출 되었습니다. AFXDLL 참조는 `_AFXDLL` DLL을 빌드할 때 정의 된 전처리기 기호입니다.
 
-MFC의 공유 버전에 대 한 가져오기 라이브러리에 설명 된 규칙에 따라 라고 [MFC Dll의 명명 규칙](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)합니다. Visual c + + MFC Dll을 더한 숫자의 비 MFC Dll 응용 프로그램을 사용 하 여 배포 및 사용할 수 있는 미리 빌드된 버전을 제공 합니다. 이러한 Program Files\Microsoft Visual Studio 폴더에 설치 되는 Redist.txt에 나와 있습니다.
+MFC의 공유 버전에 대 한 가져오기 라이브러리에 설명 된 규칙에 따라 라고 [MFC Dll의 명명 규칙](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)합니다. Visual Studio의 MFC Dll 및 숫자의 비 MFC Dll 응용 프로그램을 사용 하 여 배포 및 사용할 수 있는 미리 빌드된 버전을 제공 합니다. 이러한 Program Files\Microsoft Visual Studio 폴더에 설치 되는 Redist.txt에 나와 있습니다.
 
 .Def 파일을 사용 하 여 내보내려는 경우 헤더 파일의 시작과 끝에 다음 코드를 추가 합니다.
 
@@ -68,7 +66,7 @@ MFC의 공유 버전에 대 한 가져오기 라이브러리에 설명 된 규�
 
 MFC를 전달 해야 할 경우 MFC DLL, DLL 간에 MFC 파생 개체 포인터는 MFC 확장 DLL을 이어야 합니다. 전달 된 개체에 연결 된 멤버 함수는 개체가 만들어진 모듈에 존재 합니다. 공유 DLL 버전의 MFC 사용 하는 경우 이러한 함수를 적절 하 게 내보내므로 MFC 자유롭게 전달할 수 있습니다 또는 응용 프로그램 및 MFC 확장 Dll 로드 간에 MFC 파생 개체 포인터입니다.
 
-C + + 이름 꾸미기 및 내보내기 문제로 인해 MFC 확장 내보내기 목록 DLL 수 있습니다 다른 플랫폼에 대 한 동일한 DLL의 디버그 버전과 소매 간에 다릅니다. 소매 MFCx0.dll에 약 2,000 내보낸 진입점이 있습니다. 디버그 MFCx0D.dll에 약 3,000 내보낸된 진입점이 있습니다.
+로 인해 C++ 이름 꾸미기 및 내보내기 문제는 MFC 확장 DLL에서에서 내보내기 목록 다를 수 있습니다 동일한 DLL의 디버그 버전과 소매 간의 다양 한 플랫폼에 대 한 합니다. 소매 MFCx0.dll에 약 2,000 내보낸 진입점이 있습니다. 디버그 MFCx0D.dll에 약 3,000 내보낸된 진입점이 있습니다.
 
 ## <a name="memory-management"></a>메모리 관리
 
@@ -86,7 +84,7 @@ MFC 확장 DLL이 메모리를 할당 하는 경우 해당 메모리가 다른 �
 
 함수를 사용 하 여 목록으로 이동 하 여만 특정 위치에서 리소스를 로드 하지 않으려면 `AfxGetResourceHandle` 고 `AfxSetResourceHandle` 이전 핸들을 저장 하 고 새 핸들을 설정 합니다. 클라이언트 응용 프로그램에 반환 하기 전에 이전 리소스 핸들을 복원 해야 합니다. 이 방법을 사용 하 여 명시적으로 메뉴를 로드 하는 예로, Testdll2.cpp MFC 샘플에서을 참조 하세요 [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk)합니다.
 
-MFC 이름 MFC 개체의 동적 생성이 비슷합니다. MFC 개체 deserialization 메커니즘이 해야 모든는 `CRuntimeClass` 개체를 등록 하 여 저장 된 순서에 따라 필요한 형식의 c + + 개체를 동적으로 만들어 다시 구성할 수 있습니다.
+MFC 이름 MFC 개체의 동적 생성이 비슷합니다. 일부 MFC 개체 deserialization 메커니즘이 필요 합니다 `CRuntimeClass` 개체를 등록 하 여 동적으로 만들어 다시 구성할 수 있습니다 C++ 이전에 저장 된 내용을 기반으로 필요한 형식의 개체입니다.
 
 MFC 샘플 [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk), 목록와 같습니다.
 
@@ -132,4 +130,4 @@ MFCxx.dll은 대개 마지막 리소스 및 클래스 목록에 있습니다. MF
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](dlls-in-visual-cpp.md)
+[C를 만들기 /C++ Visual Studio에서 Dll](dlls-in-visual-cpp.md)

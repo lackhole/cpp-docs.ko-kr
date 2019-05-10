@@ -8,11 +8,11 @@ helpviewer_keywords:
 - CDaoFieldInfo structure [MFC]
 ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
 ms.openlocfilehash: a5c4013a323c85ad19a3fade20f76852e053362a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57275144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62399826"
 ---
 # <a name="cdaofieldinfo-structure"></a>CDaoFieldInfo 구조체
 
@@ -94,7 +94,7 @@ struct CDaoFieldInfo
 |`dbGUID`|16|전역적으로 고유 식별자/Universally Unique Identifier 원격 프로시저 호출을 사용 합니다.|
 
 *m_lAttributes*<br/>
-테이블 정의 레코드 집합, 쿼리 또는 인덱스 개체를 포함 하는 필드 개체의 특성을 지정 합니다. 반환 된 값이이 상수를 OR c + +를 사용 하 여 만든의 합계를 수 있습니다 (**&#124;**) 연산자:
+테이블 정의 레코드 집합, 쿼리 또는 인덱스 개체를 포함 하는 필드 개체의 특성을 지정 합니다. 반환 된 값이이 상수를 사용 하 여 만든 총 수는 C++ 비트 OR (**&#124;**) 연산자:
 
 - `dbFixedField` 필드 크기 (숫자 필드에 대 한 기본값) 고정 됩니다.
 
@@ -106,7 +106,7 @@ struct CDaoFieldInfo
 
 - `dbDescending` 필드를 내림차순으로 정렬 됩니다 (Z-A 0 100) 순서 (MFC 개체 자체 테이블 정의 개체에 포함 된 인덱스에서에서 인덱스 개체의 필드 컬렉션에 필드 개체에만 적용 됨). 이 상수를 생략 하면 필드를 오름차순으로 정렬 됩니다 (A-Z 또는 0-100) 순서 (기본값).
 
-이 속성의 설정을 검사 하는 경우 사용할 수는 c + + 비트-및 연산자 (**&**) 특정 특성을 테스트 합니다. 여러 특성을 설정할 때 비트 OR를 사용 하 여 적절 한 상수를 결합 하 여 결합 수 있습니다 (**&#124;**) 연산자. 세부 정보를 DAO 도움말의 "특성 속성" 항목을 참조 하세요.
+이 속성의 설정을 검사 하는 경우 사용할 수 있습니다는 C++ 비트-및 연산자 (**&**) 특정 특성을 테스트 합니다. 여러 특성을 설정할 때 비트 OR를 사용 하 여 적절 한 상수를 결합 하 여 결합 수 있습니다 (**&#124;**) 연산자. 세부 정보를 DAO 도움말의 "특성 속성" 항목을 참조 하세요.
 
 *m_nOrdinalPosition*<br/>
 다른 필드를 기준으로 표시 되는 DAO 필드 개체를 나타내는 필드를 원하는 숫자 순서를 지정 하는 값입니다. 이 속성을 설정할 수 있습니다 [CDaoTableDef::CreateField](../../mfc/reference/cdaotabledef-class.md#createfield)합니다. 자세한 내용은 DAO 도움말의 "OrdinalPosition Property" 항목을 참조 합니다.

@@ -30,11 +30,11 @@ helpviewer_keywords:
 - Ei BSCMAKE option
 ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2
 ms.openlocfilehash: b1d62e8d122cb4f08feef60d6936359b3e246749
-ms.sourcegitcommit: 06fc71a46e3c4f6202a1c0bc604aa40611f50d36
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58508783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62272873"
 ---
 # <a name="bscmake-options"></a>BSCMAKE 옵션
 
@@ -43,7 +43,7 @@ ms.locfileid: "58508783"
 
 이 섹션에서는 BSCMAKE를 제어 하는 것에 대 한 사용 가능한 옵션을 설명 합니다. 여러 옵션에는 특정 정보를 포함 시키거나 제외 시켜 찾아보기 정보 파일의 내용을 제어 합니다. 제외 옵션을 더 빠르게 실행 BSCMAKE를 허용할 수 고.bsc 파일을 더 작게 될 수 있습니다. 옵션 이름은 대/소문자 구분 (제외한 **/help** 하 고 **/NOLOGO**).
 
-만 **/NOLOGO** 하 고 **/o** Visual Studio 개발 환경 내에서 사용할 수 있습니다.  참조 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md) 에 대 한 정보에 대 한 프로젝트의 속성 페이지에 액세스 합니다.
+만 **/NOLOGO** 하 고 **/o** Visual Studio 개발 환경 내에서 사용할 수 있습니다.  참조 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md) 에 대 한 정보에 대 한 프로젝트의 속성 페이지에 액세스 합니다.
 
 **/Ei (** *filename*... **)**<br/>
 찾아보기 정보 파일에서 지정된 된 포함 파일의 콘텐츠를 제외합니다. 여러 파일을 지정 하려면 공백을 사용 하 여 이름을 구분 하 고 목록을 괄호로 묶습니다. 괄호가 하나만 지정 하는 경우에 필요 하지 않습니다 *filename*합니다. 사용 하 여 **/Ei** 함께 합니다 **/Es** 옵션에서 제외 되지 않은 파일을 제외할 **/Es**합니다.

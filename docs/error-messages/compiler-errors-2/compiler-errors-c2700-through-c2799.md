@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 오류 C2700 ~ C2799
-ms.date: 11/17/2017
+ms.date: 04/21/2019
 f1_keywords:
 - C2716
 - C2717
@@ -40,12 +40,12 @@ helpviewer_keywords:
 - C2796
 - C2799
 ms.assetid: 6ee257bb-94bc-42b9-af2c-3c73926afba4
-ms.openlocfilehash: e29f344e0e45374f85715552f9ecc19ab90a9e7b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6f4391008bf9b0a066ba65f27a41697c6097c2e
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677853"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857640"
 ---
 # <a name="compiler-errors-c2700-through-c2799"></a>컴파일러 오류 C2700 ~ C2799
 
@@ -130,7 +130,7 @@ ms.locfileid: "50677853"
 |[컴파일러 오류 C2770](compiler-error-c2770.md)|잘못 된 명시적 템플릿/제네릭 인수에 대 한 '*템플릿*'|
 |[컴파일러 오류 C2771](compiler-error-c2771.md)|#import는 전역 범위 또는 네임스페이스 범위에서만 사용할 수 있습니다.|
 |컴파일러 오류 C2772|사용되지 않습니다.|
-|[컴파일러 오류 C2773](compiler-error-c2773.md)|#import 및 #using c + + 컴파일러 에서만 사용할 수 있습니다|
+|[컴파일러 오류 C2773](compiler-error-c2773.md)|#import 및 #using 에서만 사용할 수 있습니다 C++ 컴파일러|
 |[컴파일러 오류 C2774](compiler-error-c2774.md)|'*식별자*':이 속성과 연결 된 'put' 메서드가 없습니다|
 |[컴파일러 오류 C2775](compiler-error-c2775.md)|'*식별자*': 없음 'get' 메서드는이 속성을 사용 하 여 연결|
 |[컴파일러 오류 C2776](compiler-error-c2776.md)|속성 당 'get' 메서드 하나만 지정할 수 있습니다.|
@@ -157,3 +157,8 @@ ms.locfileid: "50677853"
 |[컴파일러 오류 C2797](compiler-error-c2797.md)|(사용 되지 않음) '*식별자*': 멤버 이니셜라이저 목록 또는 비정적 데이터 멤버 이니셜라이저 내의 목록 초기화가 구현 되지 않았습니다|
 |[컴파일러 오류 C2798](compiler-error-c2798.md)|' super::*식별자*' 모호 합니다.|
 |컴파일러 오류 C2799|'*식별자*': 사용자가 제공한 기본 생성자 없이 const 한정 클래스 형식의 개체를 초기화 합니다|
+
+## <a name="see-also"></a>참고자료
+
+[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[컴파일러 오류 C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

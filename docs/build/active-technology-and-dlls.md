@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Active technology [C++]
 - MFC DLLs [C++], Active Technology
 ms.assetid: 3ed27f8d-164a-4562-ad61-9f2333404cc7
-ms.openlocfilehash: 9633d60520a2a634ffe78d0fb9d48f6dd2ca7333
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: f67fb9548601ac705ceda08d20d3049f0bf1e0a5
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57817454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221008"
 ---
 # <a name="active-technology-and-dlls"></a>액티브 기술 및 DLL
 
@@ -27,4 +27,4 @@ ms.locfileid: "57817454"
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](dlls-in-visual-cpp.md)
+[C를 만들기 /C++ Visual Studio에서 Dll](dlls-in-visual-cpp.md)

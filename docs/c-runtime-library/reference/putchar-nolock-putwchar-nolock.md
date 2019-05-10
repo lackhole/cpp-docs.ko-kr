@@ -33,11 +33,11 @@ helpviewer_keywords:
 - puttchar_nolock function
 ms.assetid: 9ac68092-bfc3-4352-b486-c3e780220575
 ms.openlocfilehash: 2a70c2363b5ae35faab9a0167200366b286408b3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62358166"
 ---
 # <a name="putcharnolock-putwcharnolock"></a>_putchar_nolock, _putwchar_nolock
 
@@ -65,7 +65,7 @@ wint_t _putwchar_nolock(
 
 ## <a name="remarks"></a>설명
 
-**putchar_nolock** 하 고 **_putwchar_nolock** 없는 버전과 동일 합니다 **_nolock** 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하면 접미사가 있습니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**putchar_nolock** 하 고 **_putwchar_nolock** 없는 버전과 동일 합니다 **_nolock** 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하면 접미사가 있습니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 

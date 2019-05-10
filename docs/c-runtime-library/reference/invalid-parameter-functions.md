@@ -20,11 +20,11 @@ f1_keywords:
 - _invoke_watson
 ms.assetid: a4d6f1fd-ce56-4783-8719-927151a7a814
 ms.openlocfilehash: e43d5caaeebb6303d209d870c804357117812985
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62157541"
 ---
 # <a name="invalidparameter-invalidparameternoinfo-invalidparameternoinfonoreturn-invokewatson"></a>_invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson
 
@@ -58,7 +58,7 @@ _invoke_watson(
 
 ## <a name="parameters"></a>매개 변수
 
-*식*<br/>
+*expression*<br/>
 잘못된 소스 코드 매개 변수 식을 나타내는 문자열입니다.
 
 *function_name*<br/>
@@ -91,7 +91,7 @@ C 런타임 라이브러리 함수가 유효하지 않은 매개 변수를 전�
 
 |기능|필수 헤더|
 |--------------|------------------|
-|**_invalid_parameter**하십시오 **_invalid_parameter_noinfo**하십시오 **_invalid_parameter_noinfo_noreturn**, **_invoke_watson**|\<corecrt.h>|
+|**_invalid_parameter**, **_invalid_parameter_noinfo**, **_invalid_parameter_noinfo_noreturn**, **_invoke_watson**|\<corecrt.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - resource-only DLLs [C++], creating
 - DLLs [C++], creating
 ms.assetid: e6b1d4da-7275-467f-a58c-a0a8a5835199
-ms.openlocfilehash: 7f0bad94cf3f126d27cc29567bd4f6c4a846bf1e
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 0d729be60ebec7a37d07fed1d14c4fd5330c7242
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57814386"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220830"
 ---
 # <a name="creating-a-resource-only-dll"></a>리소스 전용 DLL 만들기
 
@@ -49,4 +49,4 @@ ms.locfileid: "57814386"
 ## <a name="see-also"></a>참고자료
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
-[Visual C++의 DLL](dlls-in-visual-cpp.md)
+[C를 만들기 /C++ Visual Studio에서 Dll](dlls-in-visual-cpp.md)

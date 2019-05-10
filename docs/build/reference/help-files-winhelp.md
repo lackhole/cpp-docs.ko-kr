@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - file types [C++], WinHelp files
 ms.assetid: 4fdcbd66-66b0-4866-894a-fd7b4c2557e4
-ms.openlocfilehash: 376d9faa87868cce842a1cb70273e220ff691fa4
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
-ms.translationtype: MT
+ms.openlocfilehash: 835300d2fe39688f3b9c41dad801f1a79984c803
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827242"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446553"
 ---
 # <a name="help-files-winhelp"></a>도움말 파일(WinHelp)
 
@@ -35,4 +35,4 @@ MFC ActiveX 컨트롤 마법사의 [애플리케이션 설정](../../mfc/referen
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트용 파일 형식](file-types-created-for-visual-cpp-projects.md)
+[시각적 개체에 대해 만들어지는 형식 파일 C++ 프로젝트](file-types-created-for-visual-cpp-projects.md)

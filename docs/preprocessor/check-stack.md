@@ -10,11 +10,11 @@ helpviewer_keywords:
 - pragmas, check_stack usage table
 ms.assetid: f18e20cc-9abb-48b7-ad62-8d384875b996
 ms.openlocfilehash: 49477a3b39db17047f349e341bd05c04954c964c
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59023381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62212401"
 ---
 # <a name="checkstack"></a>check_stack
 경우 스택 프로브를 해제 하려면 컴파일러에 지시 `off` (또는 `-`) 지정 된 경우 스택 프로브 하 `on` (또는 `+`) 지정 합니다.
