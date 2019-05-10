@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CLR empty projects
 - CLR empty projects, creating
 ms.assetid: edb4574f-fea7-426d-9b5c-fa4ecad2befb
-ms.openlocfilehash: 068b1328925c2e5040316d197b80076549aea321
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: bd57ac4c6a821536b1c2cf3d222327d9924700cb
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387456"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221825"
 ---
 # <a name="how-to-create-clr-empty-projects"></a>방법: CLR 빈 프로젝트 만들기
 
@@ -36,5 +36,5 @@ CLR 빈 프로젝트를 생성하려면 **새 프로젝트** 대화 상자에서
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트 형식](../build/reference/visual-cpp-project-types.md)<br/>
+[C++Visual Studio에서 프로젝트 형식](../build/reference/visual-cpp-project-types.md)<br/>
 [디버깅 C++ 프로젝트](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)

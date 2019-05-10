@@ -3,11 +3,11 @@ title: 명령줄 오류 및 경고
 ms.date: 04/17/2019
 ms.assetid: d02ec7df-26a5-4198-ac92-87b29ec9d5c8
 ms.openlocfilehash: d5cd53a23c4f043715fa7e2372fb5c256337da20
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214248"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857354"
 ---
 # <a name="command-line-errors-and-warnings"></a>명령줄 오류 및 경고
 

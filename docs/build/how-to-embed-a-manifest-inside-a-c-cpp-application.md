@@ -1,21 +1,21 @@
 ---
 title: '방법: C에 매니페스트 포함 /C++ 응용 프로그램'
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - manifests [C++]
 - embedding manifests
 - makefiles, updating to embed manifest
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
-ms.openlocfilehash: 332d6d75080be3fdde6b8238ab79b8e5b1d1121e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: ee60620f2815bb20e2d0f3ecec768d99533437a9
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274384"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220708"
 ---
 # <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>방법: C에 매니페스트 포함 /C++ 응용 프로그램
 
-것이 좋습니다 C /C++ 응용 프로그램 (또는 라이브러리) 되어 해당 매니페스트 대부분의 시나리오에서 올바른 런타임 동작을 이렇게 최종 이진 포함 합니다. 기본적으로 Visual Studio 소스 파일에서 프로젝트를 빌드할 때 매니페스트를 포함 하려고 참조 [Visual Studio에서 매니페스트 생성](manifest-generation-in-visual-studio.md) 자세한 내용은 합니다. 그러나를 nmake를 사용 하 여 응용 프로그램을 빌드하는 경우 일부 기존 메이크파일으로 변경이 필요 합니다. 이 섹션에서는 자동으로 최종 이진에는 매니페스트를 포함 하도록 기존 메이크파일을 변경 하는 방법에 설명 합니다.
+대부분의 시나리오에서 올바른 런타임 동작을 사용 하면이 없기 때문에 응용 프로그램 또는 최종 이진 라이브러리의 매니페스트를 포함 하는 것이 좋습니다. 기본적으로 Visual Studio는 프로젝트를 빌드할 때 매니페스트를 포함 하려고 합니다. 자세한 내용은 [Visual Studio에서 매니페스트 생성](manifest-generation-in-visual-studio.md)합니다. 그러나 nmake를 사용 하 여 응용 프로그램을 빌드할 경우 메이크파일에 일부 변경을 수행 해야 합니다. 이 섹션에는 최종 이진 파일에 매니페스트를 자동으로 포함 되도록 메이크파일을 변경 하는 방법을 보여 줍니다.
 
 ## <a name="two-approaches"></a>두 가지 방법
 
@@ -23,15 +23,19 @@ ms.locfileid: "62274384"
 
 - 증분 빌드를 수행 하지 않습니다 하는 경우 빌드 후 단계로 다음과 같은 명령줄을 사용 하 여 매니페스트를 직접 포함할 수 있습니다.
 
-   **mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1**
+   ```cmd
+   mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1
+   ```
 
    또는
 
-   **mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2**
+   ```cmd
+   mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2
+   ```
 
-   (exe, DLL에 대 한 2 1.)
+   DLL에 대 한 EXE 및 2에 대 한 1을 사용 합니다.
 
-- 증분 빌드를 수행 하는 경우 다음과 같이 리소스를 직접 편집 증분 빌드를 사용 하지 않도록 설정 되며 전체 다시; 따라서 다른 방법을 사용 해야 합니다.
+- 증분 빌드를 수행 하는 경우 다음 단계를 사용 합니다.
 
    - MyApp.exe.manifest 파일을 생성 하기 위해 이진 파일을 연결 합니다.
 
@@ -63,7 +67,7 @@ clean :
     del MyApp.obj MyApp.exe
 ```
 
-시각적 개체를 사용 하 여 변경 하지 않고이 스크립트가 실행 되는 경우 C++를 MyApp.exe 성공적으로 만듭니다. 또한 런타임에 종속 어셈블리를 로드 하는 운영 체제에서 사용할 외부 매니페스트 파일 MyApp.exe.manifest를 만듭니다.
+이 스크립트를 Visual Studio를 사용 하 여 변경 되지 않고 실행 하는 경우 성공적으로 MyApp.exe를 만듭니다. 또한 런타임에 종속 어셈블리를 로드 하는 운영 체제에서 사용할 외부 매니페스트 파일 MyApp.exe.manifest를 만듭니다.
 
 Nmake 스크립트가 MyLibrary.dll 매우 유사 합니다.
 
@@ -226,7 +230,7 @@ _VC_MANIFEST_CLEAN=
 ####################################################
 ```
 
-이제 makefile.targ.inc 만들고를 다음을 복사 합니다.
+만들어서 **makefile.targ.inc** 에 다음을 복사 합니다.
 
 ```
 # makefile.targ.inc - include this at the very bottom of the existing makefile

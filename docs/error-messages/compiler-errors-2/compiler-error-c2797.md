@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2797
 ms.assetid: 9fb26d35-eb5c-46fc-9ff5-756fba5bdaff
-ms.openlocfilehash: 04a7b2b1d33ab7efa77563406ab3c12831cf80fc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ccd007bf193bd6529748004a96745fafcb9f3226
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360127"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447831"
 ---
 # <a name="compiler-error-c2797"></a>컴파일러 오류 C2797
 
 (사용 되지 않음) 멤버 이니셜라이저 목록 또는 비정적 데이터 멤버 이니셜라이저 내의 목록 초기화가 구현 되지 않았습니다.
 
-이 경고는 Visual Studio 2015에서 사용 되지 않습니다. Visual Studio 2013 및 이전 버전에서 시각적 개체 C++ 컴파일러는 멤버 이니셜라이저 목록 또는 비정적 데이터 멤버 이니셜라이저 내의 목록 초기화를 구현 하지 않습니다. Visual Studio 2013 업데이트 3 이전에는 이 초기화가 함수 호출로 자동 변환되어 잘못된 코드가 생성될 수 있었습니다. Visual Studio 2013 업데이트 3에서는 이러한 초기화를 오류로 보고합니다.
+이 경고는 Visual Studio 2015에서 사용 되지 않습니다. Visual Studio 2013 및 이전 버전에서는 Microsoft C++ 컴파일러는 멤버 이니셜라이저 목록 또는 비정적 데이터 멤버 이니셜라이저 내의 목록 초기화를 구현 하지 않습니다. Visual Studio 2013 업데이트 3 이전에는 이 초기화가 함수 호출로 자동 변환되어 잘못된 코드가 생성될 수 있었습니다. Visual Studio 2013 업데이트 3에서는 이러한 초기화를 오류로 보고합니다.
 
 이 예제에서는 C2797 오류를 생성합니다.
 

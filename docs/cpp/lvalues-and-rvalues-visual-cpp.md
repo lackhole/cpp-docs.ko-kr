@@ -1,18 +1,18 @@
 ---
-title: '값 종류: Lvalue 및 Rvalue (Visual C++)'
-ms.date: 04/06/2018
+title: '값 종류: Lvalue 및 Rvalue (C++)'
+ms.date: 05/07/2019
 helpviewer_keywords:
 - R-values [C++]
 - L-values [C++]
 ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
-ms.openlocfilehash: 74bfac5f5bb56549eee41a5479babf8e71b00aa6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 4e3cfa87a8f1ae9b17f7c08afd8faeabea7102b3
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222012"
 ---
-# <a name="lvalues-and-rvalues-visual-c"></a>Lvalue 및 Rvalue (Visual C++)
+# <a name="lvalues-and-rvalues-c"></a>Lvalue 및 Rvalue (C++)
 
 모든 C++ 식에는 형식이 고 속한를 *값 범주가*합니다. 값 범주에는 컴파일러는 만들기, 복사 및 식 평가 중에 임시 개체를 이동 하는 경우 따라야 하는 규칙에 대 한 기반이 됩니다.
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - -Zg compiler option [C++]
 - generate function prototypes compiler option
 ms.assetid: c8df1b46-24ff-46f2-8356-e0a144b21dd2
-ms.openlocfilehash: 684174cf46e644c22e072e3fa60f75f9434c7e54
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 591460b78a461aa2e33f873b79d6dcec0277f99f
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315900"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446204"
 ---
 # <a name="zg-generate-function-prototypes"></a>/Zg(함수 프로토타입 생성)
 
@@ -29,7 +29,7 @@ ms.locfileid: "62315900"
 
 ## <a name="remarks"></a>설명
 
-이 컴파일러 옵션은 더 이상 사용할 수 없습니다. Visual C++ 2015에서 제거되었습니다. 이 페이지는 이전 버전의 Visual C++ 사용자를 위해 남아 있습니다.
+이 컴파일러 옵션은 더 이상 사용할 수 없습니다. Visual Studio 2015에서 제거 되었습니다. 이 페이지는 이전 버전의 Visual Studio의 사용자를 위해 남아 있습니다.
 
 함수 프로토타입에는 함수 반환 형식 및 인수 형식 목록이 포함되어 있습니다. 인수 형식 목록은 함수의 정식 매개 변수 형식에서 만들어집니다. 소스 파일에 이미 있는 모든 함수 프로토타입은 무시됩니다.
 

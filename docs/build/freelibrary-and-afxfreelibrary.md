@@ -13,12 +13,12 @@ helpviewer_keywords:
 - explicit linking [C++]
 - DLLs [C++], unloading
 ms.assetid: 4a48d290-3971-43e9-8e97-ba656cd0c8f8
-ms.openlocfilehash: 709e4fdbc24d6fbbac44944e686a6fecf8c9b8db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 59deb75ad77b0a80efc69d9991e093ecef95c51e
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274042"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221419"
 ---
 # <a name="freelibrary-and-afxfreelibrary"></a>FreeLibrary 및 AfxFreeLibrary
 
@@ -40,6 +40,6 @@ MFC 응용 프로그램에서 사용 하 여 [AfxFreeLibrary](../mfc/reference/a
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](dlls-in-visual-cpp.md)<br/>
+[C를 만들기 /C++ Visual Studio에서 Dll](dlls-in-visual-cpp.md)<br/>
 [FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)
 [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary)

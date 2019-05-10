@@ -45,11 +45,11 @@ f1_keywords:
 - PG1067
 ms.assetid: f67b1011-fb64-4df3-9356-d52c9423ff3f
 ms.openlocfilehash: 9be94ee3145dc23543fa5880c14e08a2ed25c76b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359750"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64856096"
 ---
 # <a name="profile-guided-optimization-errors-and-warnings-pgxxxx"></a>프로필 기반 최적화 오류 및 경고 (PGxxxx)
 

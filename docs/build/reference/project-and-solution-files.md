@@ -1,8 +1,6 @@
 ---
 title: 프로젝트 및 솔루션 파일
-ms.date: 11/04/2016
-f1_keywords:
-- vc.files.projectandsolution
+ms.date: 05/06/2019
 helpviewer_keywords:
 - project files [C++]
 - file types [C++], makefiles
@@ -11,12 +9,12 @@ helpviewer_keywords:
 - browsing database file, .sdf
 - file types [C++], project files
 ms.assetid: 5823b954-36cf-42d3-8fd5-25bab3ef63d9
-ms.openlocfilehash: b4b82aa3837558b2c325fb6cba6819422c0db7ff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 153480331d3300555c78a3489ca603d854893f5b
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319579"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446595"
 ---
 # <a name="project-and-solution-files"></a>프로젝트 및 솔루션 파일
 
@@ -26,7 +24,7 @@ ms.locfileid: "62319579"
 |--------------|------------------------|--------------------------------|-----------------|
 |*Solname*.sln|*Projname*|솔루션 탐색기에 표시 안 됨|*솔루션* 파일입니다. 하나 또는 여러 프로젝트의 모든 요소를 한 솔루션으로 구성합니다.|
 |*Projname*.suo|*Projname*|솔루션 탐색기에 표시 안 됨|*솔루션 옵션* 파일입니다. 솔루션에 있는 프로젝트나 파일을 열 때마다 원하는 모양과 동작을 갖도록 솔루션에 대한 사용자 지정을 저장합니다.|
-|*Projname*.vcxproj|*Projname*|솔루션 탐색기에 표시 안 됨|*프로젝트* 파일입니다. 각 프로젝트에 대한 정보를 저장합니다. (이전 버전에서는 이 파일은 *Projname*.vcproj 또는 *Projname*.dsp.로 명명되었습니다.) Visual C++ 프로젝트 파일의 예제는 [프로젝트 파일](project-files.md)을 참조하세요.|
+|*Projname*.vcxproj|*Projname*|솔루션 탐색기에 표시 안 됨|*프로젝트* 파일입니다. 각 프로젝트에 대한 정보를 저장합니다. (이전 버전에서는 이 파일은 *Projname*.vcproj 또는 *Projname*.dsp.로 명명되었습니다.) 예는 C++ 프로젝트 파일 (.vcxproj)을 참조 하십시오 [프로젝트 파일](project-files.md)합니다.|
 |*Projname*.vcxitems|*Projname*|솔루션 탐색기에 표시 안 됨|*공유 항목 프로젝트* 파일입니다. 이 프로젝트는 빌드되지 않습니다.  대신 해당 프로젝트는 다른 C++ 프로젝트에서 참조할 수 있으며, 해당 파일은 참조하는 프로젝트의 빌드 프로세스의 일부가 됩니다. 공통 코드를 플랫폼 간 C++ 프로젝트와 공유하는 데 사용될 수 있습니다.|
 |*Projname*.sdf|*Projname*|솔루션 탐색기에 표시 안 됨|*데이터베이스 탐색* 파일입니다. **정의로 이동**, **모든 참조 찾기** 및 **클래스 뷰** 등의 찾아보기 및 탐색 기능을 지원합니다. 헤더 파일을 구문 분석하여 생성됩니다.|
 |*Projname*.vcxproj.filters|*Projname*|솔루션 탐색기에 표시 안 됨|*필터* 파일입니다. 솔루션에 추가된 파일을 저장할 위치를 지정합니다. 예를 들어, .h 파일은 **헤더 파일** 노드에 저장됩니다.|
@@ -36,4 +34,4 @@ ms.locfileid: "62319579"
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트용 파일 형식](file-types-created-for-visual-cpp-projects.md)
+[시각적 개체에 대해 만들어지는 형식 파일 C++ 프로젝트](file-types-created-for-visual-cpp-projects.md)

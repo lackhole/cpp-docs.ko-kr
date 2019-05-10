@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - container classes [C++]
 ms.assetid: 5b1451f2-c708-45da-bbf0-9e42fd687a1a
-ms.openlocfilehash: dbfa076756b9e4829898d38e0277ad90106ba579
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c797a893549c8ec708cfb60e6f002b35c27cd35c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220235"
 ---
 # <a name="sample-container-class"></a>Sample Container 클래스
 
 > [!NOTE]
-> 이 항목은 C++ 표준 라이브러리에서 사용되는 작동하지 않는 컨테이너 예제로 Visual C++ 설명서에 포함되어 있습니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
+> 이 항목은 Microsoft C++ 설명서에 사용 되는 컨테이너의 작동 하지 않는 예로 C++ 표준 라이브러리입니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
 
 다양 한 길이의 요소를 일반적으로 형식의 시퀀스를 제어 하는 개체에 설명 합니다 `Ty`합니다. 시퀀스는 실제 컨테이너에 따라 다른 방식으로 저장됩니다.
 

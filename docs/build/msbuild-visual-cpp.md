@@ -1,17 +1,15 @@
 ---
 title: 명령줄에서 MSBuildC++
 ms.date: 12/12/2018
-f1_keywords:
-- MSBuild
 helpviewer_keywords:
 - MSBuild
 ms.assetid: 7a1be7ff-0312-4669-adf2-5f5bf507d560
-ms.openlocfilehash: 565b1c47b4476fa7cb830e15b978b389f4344ee1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: e95d99cf5c63c824bb9bade8e76bc3ca99079669
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220569"
 ---
 # <a name="msbuild-on-the-command-line---c"></a>명령줄에서 MSBuildC++
 
@@ -53,7 +51,7 @@ MSBuild에 대 한 자세한 내용은 다음을 참조 하세요.
 
 |용어|정의|
 |----------|----------------|
-|[연습: MSBuild를 사용하여 Visual C++ 프로젝트 만들기](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|사용 하 여 Visual C++ 프로젝트를 만드는 방법을 보여 줍니다 **MSBuild**합니다.|
+|[연습: MSBuild를 사용하여 C++ 프로젝트 만들기](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|Visual Studio를 만드는 방법을 보여 줍니다 C++ 를 사용 하 여 프로젝트 **MSBuild**합니다.|
 |[방법: MSBuild 프로젝트에서 빌드 이벤트 사용](how-to-use-build-events-in-msbuild-projects.md)|빌드에서 particuler 단계에서 발생 하는 동작을 지정 하는 방법에 설명 합니다: 빌드를 시작할; 링크 단계가 시작 하기 전에 빌드가 끝난 후 또는 합니다.|
 |[방법: MSBuild 프로젝트에 사용자 지정 빌드 단계 추가](how-to-add-a-custom-build-step-to-msbuild-projects.md)|빌드 순서에 사용자 정의 단계를 추가 하는 방법에 설명 합니다.|
 |[방법: MSBuild 프로젝트에 사용자 지정 빌드 도구 추가](how-to-add-custom-build-tools-to-msbuild-projects.md)|특정 파일을 사용 하 여 빌드 도구를 연결 하는 방법에 설명 합니다.|

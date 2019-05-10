@@ -1,15 +1,15 @@
 ---
 title: 람다 식 구문
-ms.date: 03/25/2019
+ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], syntax
 ms.assetid: 5d6154a4-f34d-4a15-970d-7e7de45f54e9
-ms.openlocfilehash: 2df2c203024e1b50cffdcb15af834fe09effaae2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 37e4a512678bf276b5244fd54945f49a37ff8d01
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216513"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222392"
 ---
 # <a name="lambda-expression-syntax"></a>람다 식 구문
 
@@ -83,7 +83,7 @@ There are 4 even numbers in the vector.
 
 ## <a name="example-2-using-a-function-object"></a>예제 2: 함수 개체를 사용 하 여
 
-때로는 람다가 너무 비대해져서 이전 예제보다 훨씬 더 확장할 수 없습니다. 다음 예제에서는 람다 대신에 함수 개체와 함께 사용 하 여는 **for_each** 함수 예 1과 동일한 결과를 생성 합니다. 두 예제 모두 `vector` 개체에 짝수의 수를 저장합니다. 연산의 상태를 유지하기 위해 `FunctorClass` 클래스는 `m_evenCount` 변수를 멤버 변수로 참조하면서 저장합니다. 작업을 수행할 `FunctorClass` 함수 호출 연산자를 구현 **operator ()** 합니다. Visual C++ 컴파일러는 성능과 사이즈가 예제 1의 람다 코드와 비슷한 코드를 생성합니다. 이 문서의 문제와 같은 기본적인 문제의 경우 함수 개체 디자인보다 간단한 람다 디자인이 더 좋습니다. 그러나 이 기능에 나중에 중요한 확장이 필요할 수 있다면 코드 유지 관리를 더 수월하게 할 수 있도록 함수 개체 디자인을 사용합니다.
+때로는 람다가 너무 비대해져서 이전 예제보다 훨씬 더 확장할 수 없습니다. 다음 예제에서는 람다 대신에 함수 개체와 함께 사용 하 여는 **for_each** 함수 예 1과 동일한 결과를 생성 합니다. 두 예제 모두 `vector` 개체에 짝수의 수를 저장합니다. 연산의 상태를 유지하기 위해 `FunctorClass` 클래스는 `m_evenCount` 변수를 멤버 변수로 참조하면서 저장합니다. 작업을 수행할 `FunctorClass` 함수 호출 연산자를 구현 **operator ()** 합니다. Microsoft C++ 컴파일러 크기 및 성능 예제 1의 람다 코드를 비교할 수 있는 코드를 생성 합니다. 이 문서의 문제와 같은 기본적인 문제의 경우 함수 개체 디자인보다 간단한 람다 디자인이 더 좋습니다. 그러나 이 기능에 나중에 중요한 확장이 필요할 수 있다면 코드 유지 관리를 더 수월하게 할 수 있도록 함수 개체 디자인을 사용합니다.
 
 에 대 한 자세한 내용은 합니다 **operator ()** 를 참조 하세요 [함수 호출](../cpp/function-call-cpp.md). 에 대 한 자세한 내용은 합니다 **for_each** 함수를 참조 하십시오 [for_each](../standard-library/algorithm-functions.md#for_each)합니다.
 

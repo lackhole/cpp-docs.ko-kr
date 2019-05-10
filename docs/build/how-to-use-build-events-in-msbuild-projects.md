@@ -1,17 +1,15 @@
 ﻿---
 title: '방법: MSBuild 프로젝트에서 빌드 이벤트 사용'
 ms.date: 11/04/2016
-f1_keywords:
-- msbuild.cpp.howto.usebuildevents
 helpviewer_keywords:
 - 'msbuild (c++), howto: use build events in projects'
 ms.assetid: 2a58dc9d-3d50-4e49-97c1-86c5a05ce218
-ms.openlocfilehash: 7678b975558b245fb730bff35fb156bf21d7f895
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 8f4ccea66f7346512df88fc4c6078752c624aaa9
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273484"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221466"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>방법: MSBuild 프로젝트에서 빌드 이벤트 사용
 
@@ -39,7 +37,7 @@ ms.locfileid: "62273484"
 
 ## <a name="example"></a>예제
 
-다음 예제에서 만든 myproject.vcxproj 파일의 프로젝트 요소 안에 추가할 수 있습니다 [연습: MSBuild를 사용 하 여 시각적 개체를 만들려면 C++ 프로젝트](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)합니다. A *빌드 전* 이벤트는 main.cpp 복사본에 있으며 *링크 전* main.obj; 복사본 및 이벤트는 *빌드 후* 이벤트 myproject.exe의 복사본을 만듭니다. 릴리스 구성을 사용 하 여 프로젝트를 빌드할 빌드 이벤트에 실행 됩니다. 프로젝트가 디버그 구성을 사용 하 여 빌드될, 빌드 이벤트는 실행 되지 않습니다.
+다음 예제에서 만든 myproject.vcxproj 파일의 프로젝트 요소 안에 추가할 수 있습니다 [연습: MSBuild를 사용 하 여 만들기는 C++ 프로젝트](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)합니다. A *빌드 전* 이벤트는 main.cpp 복사본에 있으며 *링크 전* main.obj; 복사본 및 이벤트는 *빌드 후* 이벤트 myproject.exe의 복사본을 만듭니다. 릴리스 구성을 사용 하 여 프로젝트를 빌드할 빌드 이벤트에 실행 됩니다. 프로젝트가 디버그 구성을 사용 하 여 빌드될, 빌드 이벤트는 실행 되지 않습니다.
 
 ```
 <ItemDefinitionGroup>
@@ -73,4 +71,4 @@ ms.locfileid: "62273484"
 ## <a name="see-also"></a>참고자료
 
 [명령줄에서 MSBuildC++](msbuild-visual-cpp.md)<br/>
-[연습: MSBuild를 사용하여 Visual C++ 프로젝트 만들기](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)
+[연습: MSBuild를 사용하여 C++ 프로젝트 만들기](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)

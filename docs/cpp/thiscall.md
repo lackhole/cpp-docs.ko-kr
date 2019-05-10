@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __thiscall keyword [C++]
 ms.assetid: a6a22dd2-0101-4885-b33b-22f6057965df
-ms.openlocfilehash: fc5a32fedf52377889b61103856e2125733cd696
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: e51879ae62b2881e0adadbe59859605f6cc58947
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266789"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221917"
 ---
 # <a name="thiscall"></a>__thiscall
 
@@ -22,9 +22,9 @@ ms.locfileid: "62266789"
 
 사용 하는 이유 **__thiscall** 클래스가 해당 멤버 함수는 사용 중인 `__clrcall` 기본적으로 합니다. 이 경우 사용할 수 있습니다 **__thiscall** 구성원으로 지정 하려면 개별 함수 네이티브 코드에서 호출할 수 있습니다.
 
-로 컴파일하는 경우 [/clr: pure](../build/reference/clr-common-language-runtime-compilation.md), 모든 함수 및 함수 포인터는 `__clrcall` 달리 지정 되지 않은 합니다. **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다.
+로 컴파일하는 경우 [/clr: pure](../build/reference/clr-common-language-runtime-compilation.md), 모든 함수 및 함수 포인터는 `__clrcall` 달리 지정 되지 않은 합니다. **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서는 지원 중단 예정이고 Visual Studio 2017에서는 지원되지 않습니다.
 
-Visual 이전 릴리스에서 C++ 2005 합니다 **__thiscall** 호출 규칙 지정할 수 없습니다 명시적으로 프로그램에서 있으므로 **__thiscall** 키워드가 없습니다.
+Visual Studio 2005 이전 릴리스에서 **__thiscall** 호출 규칙 지정할 수 없습니다 명시적으로 프로그램에서 있으므로 **__thiscall** 키워드가 없습니다.
 
 `vararg` 멤버 함수만 사용 합니다 **__cdecl** 호출 규칙입니다. 사용 하 여 모든 함수 인수가 스택에 푸시되는 **이** 포인터 마지막 스택에 배치
 

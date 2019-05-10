@@ -2,12 +2,12 @@
 title: 정적 라이브러리(C++/CX)
 ms.date: 02/03/2017
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
-ms.openlocfilehash: 242ba10b29a8efe0c3e9580f1d0d0c3be529a7d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 188ba06518bf6cdd154b7d6bd61216ed1e4ffad3
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398864"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877251"
 ---
 # <a name="static-libraries-ccx"></a>정적 라이브러리(C++/CX)
 
@@ -15,11 +15,32 @@ ms.locfileid: "62398864"
 
 ## <a name="creating-static-libraries"></a>정적 라이브러리 만들기
 
-#### <a name="to-create-a-static-library-for-use-in-a-uwp-app"></a>UWP 앱에서 사용 하 여 정적 라이브러리를 만들려면
+
+새 프로젝트를 만들기 위한 지침은 Visual Studio 버전을 설치한 경우에 따라 달라 집니다. 버전 선택기를 올바른 버전으로 설정 왼쪽 위에 있는 있는지 확인 합니다.
+
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-uwp-static-library-in-visual-studio-2019"></a>Visual Studio 2019에 UWP 정적 라이브러리를 만들려면
+
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 열려는 합니다 **새 프로젝트를 만들** 대화 상자.
+
+1. 설정 대화 상자 맨 **언어** 를 **C++** 설정 **플랫폼** 하 **Windows**, 설정 및 **프로젝트 형식을** 하 **UWP**합니다. 
+
+1. 필터링된 된 프로젝트 형식 목록에서 선택 **정적 라이브러리 (유니버설 Windows- C++/CX)** 선택한 **다음**합니다. 다음 페이지에서 프로젝트에 이름을 지정 하 고 원하는 경우 프로젝트 위치를 지정 합니다.
+
+1. 선택 된 **만들기** 프로젝트를 만들려면 단추입니다.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### <a name="to-create-a-uwp-static-library-in-visual-studio-2017-or-visual-studio-2015"></a>Visual Studio 2017 또는 Visual Studio 2015에서 UWP 정적 라이브러리를 만들려면
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다. 아래 **시각적 C++**   >  **Windows 범용** 선택 **정적 라이브러리 (유니버설 Windows)**.
 
 1. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다. 에 **속성** 대화 상자의 합니다 **구성 속성** > **C /C++**  페이지에서 설정 **Windows 런타임 확장 사용**  하 **예 (/ZW)** 합니다.
+
+::: moniker-end
 
 컴파일러 오류 C3861 "식별자를 찾을 수 없습니다." UWP 앱에 대 한 제외 된 Win32 api를 호출 하는 경우 새 정적 라이브러리를 컴파일할 때 발생 Windows 런타임에 대 한 지원 되는 다른 방법을 찾아보려면, 참조 [UWP 앱에서 Windows Api에 대 한 대안](/uwp/win32-and-com/alternatives-to-windows-apis-uwp)합니다.
 

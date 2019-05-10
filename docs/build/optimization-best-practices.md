@@ -1,26 +1,26 @@
 ---
 title: 최적화에 대 한 유용한 정보
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
-- Visual C++, optimization
+- C++, optimization
 - optimization, best practices
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
-ms.openlocfilehash: edb036292b87593a3f8bb9b3f5ec5f7beb84c3a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 42178f8326def78f37bfcc905b96f37c7fc3affc
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274172"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220273"
 ---
 # <a name="optimization-best-practices"></a>최적화에 대 한 유용한 정보
 
-이 문서에서는 시각적 개체의 최적화에 대 한 몇 가지 모범 사례를 설명 C++입니다.
+이 문서를 최적화 하기 위한 몇 가지 모범 사례를 설명 합니다. C++ Visual Studio에서 프로그램입니다.
 
 ## <a name="compiler-and-linker-options"></a>컴파일러 및 링커 옵션
 
 ### <a name="profile-guided-optimization"></a>프로필 기반 최적화
 
-Visual C++ 지원 *프로필 기반 최적화* (PGO). 이 최적화는 응용 프로그램의 뒷부분에 나오는 최적화를 수행 하는 응용 프로그램의 계측된 된 버전의 교육 실행에서 프로필 데이터를 사용 합니다. PGO 사용 시간이 걸릴 수 있습니다, 되므로 모든 개발자가 사용 하는 항목이 없을 있지만 PGO를 사용 하 여 제품의 최종 릴리스 빌드에 대 한 권장지 않습니다. 자세한 내용은 [프로필 기반 최적화](profile-guided-optimizations.md)합니다.
+Visual Studio 지원 *프로필 기반 최적화* (PGO). 이 최적화는 응용 프로그램의 뒷부분에 나오는 최적화를 수행 하는 응용 프로그램의 계측된 된 버전의 교육 실행에서 프로필 데이터를 사용 합니다. PGO 사용 시간이 걸릴 수 있습니다, 되므로 모든 개발자가 사용 하는 항목이 없을 있지만 PGO를 사용 하 여 제품의 최종 릴리스 빌드에 대 한 권장지 않습니다. 자세한 내용은 [프로필 기반 최적화](profile-guided-optimizations.md)합니다.
 
 또한 *전체 프로그램 최적화* (링크 타임 코드 생성으로 인식) 및 **/o1** 하 고 **/o2** 최적화 향상 되었습니다. 일반적으로 이러한 옵션 중 하나를 사용 하 여 컴파일된 응용 프로그램을 이전 버전의 컴파일러를 사용 하 여 컴파일된 동일한 응용 프로그램 보다 빠를 수 됩니다.
 
@@ -93,13 +93,13 @@ int myFunc() {...}
 
 ## <a name="restrict-and-assume"></a>__restrict 및 \__assume
 
-시각적 개체에는 키워드의 두 가지가 있습니다 C++ 성능을 향상 시킬 수 있는: [__restrict](../cpp/extension-restrict.md) 하 고 [__assume](../intrinsics/assume.md)합니다.
+성능에 도움이 되는 Visual Studio에서 키워드의 두 가지가 있습니다: [__restrict](../cpp/extension-restrict.md) 하 고 [__assume](../intrinsics/assume.md)합니다.
 
 먼저이 점에 유의 해야 하는 `__restrict` 및 `__declspec(restrict)` 서로 구분 합니다. 어느 정도 관련이 있지만 그에 따라 의미가 다릅니다. `__restrict` 형식 한정자를 같은입니다 `const` 또는 `volatile`, 포인터 형식에 대해서만 합니다.
 
 사용 하 여 수정 된 포인터 `__restrict` 라고는 *포인터 __restrict*합니다. __Restrict 포인터가 통해서만 액세스할 수 있는 포인터를 \__restrict 포인터입니다. 즉, 가리키는 데이터에 액세스 하려면 다른 포인터를 사용할 수 없습니다는 \__restrict 포인터입니다.
 
-`__restrict` 시각적 개체에 대 한 강력한 도구를 수 있습니다 C++ 최적화 프로그램 있지만 주의 사용 하 여 사용 합니다. 부적절 하 게 사용 되는 경우 최적화 프로그램은 응용 프로그램이 중단 되는 최적화를 수행할 수 있습니다.
+`__restrict` microsoft는 강력한 도구를 수 있습니다 C++ 최적화 프로그램 있지만 주의 사용 하 여 사용 합니다. 부적절 하 게 사용 되는 경우 최적화 프로그램은 응용 프로그램이 중단 되는 최적화를 수행할 수 있습니다.
 
 합니다 `__restrict` 키워드를 대체 합니다 **/Oa** 이전 버전에서 전환 합니다.
 

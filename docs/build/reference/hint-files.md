@@ -11,16 +11,16 @@ helpviewer_keywords:
 - cpp.stop
 - Class View, hint file
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
-ms.openlocfilehash: 3d8b3be76fea454ed3b3dd3fd2a44174f34c065c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 919cbedd0c0d7c610273d597328979d1fb449f8f
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62291919"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446301"
 ---
 # <a name="hint-files"></a>힌트 파일
 
-*힌트 파일*에는 C++ 검색 데이터베이스 파서가 코드 영역을 건너뛰도록 하는 매크로가 포함됩니다. Visual C++ 프로젝트를 열면 파서가 프로젝트의 각 소스 파일에 있는 코드를 분석하고 모든 식별자에 대한 정보로 데이터베이스를 빌드합니다. IDE는 해당 정보를 사용하여 **클래스 뷰** 브라우저 및 **탐색 모음**과 같은 코드 검색 기능을 지원합니다.
+*힌트 파일*에는 C++ 검색 데이터베이스 파서가 코드 영역을 건너뛰도록 하는 매크로가 포함됩니다. Visual Studio를 열면 C++ 파서가 프로젝트 프로젝트의 각 소스 파일의 코드를 분석 하 고 모든 식별자에 대 한 정보를 사용 하 여 데이터베이스를 빌드합니다. IDE는 해당 정보를 사용하여 **클래스 뷰** 브라우저 및 **탐색 모음**과 같은 코드 검색 기능을 지원합니다.
 
 C++ 검색 데이터베이스 파서는 짧은 시간 내에 많은 양의 코드를 구문 분석할 수 있는 유사 파서입니다. 이 파서는 블록의 내용을 건너뛰기 때문에 빠릅니다. 예를 들어 함수의 매개 변수와 위치만 기록하고 그 내용은 무시합니다. 일부 매크로는 블록의 시작과 끝을 확인하는 데 사용된 추론에 대한 문제를 일으킬 수 있습니다. 이러한 문제로 인해 코드 영역이 잘못 기록됩니다.
 
@@ -118,7 +118,7 @@ Visual Studio 2017 버전 15.8부터 방해가 되는 매크로를 식별할 수
 
 - Visual C++용 설치 패키지(**vcpackages**)가 있는 디렉터리입니다. 이 디렉터리에는 자주 사용되는 시스템 파일의 기호를 설명하는 기본 제공 힌트 파일(예: **windows.h**)이 포함되어 있습니다. 따라서 프로젝트에서 필요한 대부분의 힌트를 자동으로 상속받습니다.
 
-- 소스 파일의 루트 디렉터리에서 소스 파일 자체가 포함된 디렉터리로의 경로입니다. 일반적인 Visual C++ 프로젝트의 경우 루트 디렉터리에 솔루션 또는 프로젝트 파일이 포함되어 있습니다.
+- 소스 파일의 루트 디렉터리에서 소스 파일 자체가 포함된 디렉터리로의 경로입니다. 일반적인 Visual Studio에서 C++ 프로젝트 루트 디렉터리는 솔루션 또는 프로젝트 파일을 포함 합니다.
 
    이 규칙의 예외는 *중지 파일*이 소스 파일의 경로에 있는 경우입니다. 중지 파일은 이름이 **cpp.stop**인 모든 파일입니다. 중지 파일은 검색 순서에 대한 추가 제어를 제공합니다. 구문 분석 시스템은 루트 디렉터리에서 시작하는 대신 중지 파일이 포함된 디렉터리에서 소스 파일이 있는 디렉터리로 검색합니다. 일반적인 프로젝트에서는 중지 파일이 필요하지 않습니다.
 
@@ -162,7 +162,7 @@ Visual Studio 2017 버전 15.8부터 방해가 되는 매크로를 식별할 수
 
 이 예제에서는 힌트 파일에서 힌트가 누적되는 방법을 보여 줍니다. 중지 파일은 이 예제에서 사용되지 않습니다.
 
-그림에서는 Visual C++ 프로젝트의 실제 디렉터리 중 일부를 보여 줍니다. `vcpackages`, `Debug`, `A1` 및 `A2` 디렉터리에 힌트 파일이 있습니다.
+그림에서는 Visual Studio에서 실제 디렉터리의 일부를 보여 줍니다 C++ 프로젝트입니다. `vcpackages`, `Debug`, `A1` 및 `A2` 디렉터리에 힌트 파일이 있습니다.
 
 ### <a name="hint-file-directories"></a>힌트 파일 디렉터리
 
@@ -244,7 +244,7 @@ Visual Studio 2017 버전 15.8부터 방해가 되는 매크로를 식별할 수
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트용 파일 형식](file-types-created-for-visual-cpp-projects.md)<br>
+[시각적 개체에 대해 만들어지는 형식 파일 C++ 프로젝트](file-types-created-for-visual-cpp-projects.md)<br>
 [#define 지시문(C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>
 [#undef 지시문(C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br>
 [SAL 주석](../../c-runtime-library/sal-annotations.md)<br>

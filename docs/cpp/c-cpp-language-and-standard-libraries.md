@@ -2,12 +2,12 @@
 title: C/C++ 언어 및 표준 라이브러리
 ms.date: 11/04/2016
 ms.assetid: c26a6682-961a-43ef-ad33-2adc612f69ac
-ms.openlocfilehash: 8642371018a1fdbba46d5dee52e8e88cd2b09ace
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
-ms.translationtype: MT
+ms.openlocfilehash: 8e7a51fc18b24475c5545fa912e376cc49645d94
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345135"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222227"
 ---
 # <a name="cc-language-and-standard-libraries"></a>C/C++ 언어 및 표준 라이브러리
 
@@ -23,6 +23,6 @@ ms.locfileid: "64345135"
 |[C# 언어 참조](../c-language/c-language-reference.md)|C 언어의 Microsoft 구현에 대한 참조 콘텐츠입니다.|
 |[C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)|C 런타임(CRT)의 Microsoft 구현에 대한 참조 콘텐츠입니다.|
 |[SafeInt 라이브러리](../safeint/safeint-library.md)|오버플로의 위험 없이 정수를 처리 하는 함수의 이식 가능한 라이브러리에 대 한 참조 콘텐츠입니다.|
-|[Visual C++](../overview/visual-cpp-in-visual-studio.md)|Visual Studio에 포함된 Visual C++의 주요 기능을 설명하고 Visual C++ 설명서 각 부분에 대한 정보를 제공합니다.|
+|[Visual C++](../overview/visual-cpp-in-visual-studio.md)|주요 기능에 설명 합니다 C++ Visual Studio 및 Visual Studio의 나머지 부분에 대 한 링크 C++ 설명서.|
 |[Visual Studio에서 C++ 개발 개요](../overview/overview-of-cpp-development.md)|Visual Studio와 관련된 도구를 사용하여 C++ 앱을 생성하고 빌드하며 배포하는 과정에 대한 정보를 포함하는 문서를 찾을 수 있습니다.|
 |[Visual C++의 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)|이번 릴리스의 새 기능과 향상된 기능에 대해 설명합니다.|

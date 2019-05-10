@@ -5,12 +5,12 @@ f1_keywords:
 - LNK2038
 helpviewer_keywords:
 - LNK2038
-ms.openlocfilehash: a22b31f1ac3226271ed7ff03b5be7dad7fff6b93
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2839494232e7b57325b6f7abb960a258ba13078
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62298869"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446959"
 ---
 # <a name="linker-tools-error-lnk2038"></a>링커 도구 오류 LNK2038
 
@@ -24,9 +24,9 @@ ms.locfileid: "62298869"
 
 Visual Studio는 런타임 오류 또는 기타 예기치 않은 동작을 일으킬 수 있는 호환할 수 없는 코드 링크를 방지하기 위해 다음과 같은 기호를 정의합니다.
 
-- `_MSC_VER` 시각적 개체의 주 및 부 버전 번호를 나타내는 C++ 앱 또는 라이브러리를 빌드하는 데는 컴파일러입니다. Visual C++ 컴파일러의 한 버전을 사용해서 컴파일된 코드는 주 버전 및 부 버전 번호가 다른 버전을 사용해서 컴파일된 코드와 호환되지 않습니다. 자세한 내용은 `_MSC_VER` 에 [미리 정의 된 매크로](../../preprocessor/predefined-macros.md)합니다.
+- `_MSC_VER` Microsoft의 주 및 부 버전 번호를 나타내는 C++ 앱 또는 라이브러리를 빌드하는 데 사용 하는 컴파일러 (MSVC). MSVC의 한 버전을 사용 하 여 컴파일되는 코드의 다른 주 버전과 부 버전 번호는 버전을 사용 하 여 컴파일되는 코드를 사용 하 여 호환 되지 않습니다. 자세한 내용은 `_MSC_VER` 에 [미리 정의 된 매크로](../../preprocessor/predefined-macros.md)합니다.
 
-   시각적 개체의 버전과 호환 되지 않는 라이브러리에 연결 하는 경우 C++ 를 사용 하는 및 획득 하거나 라이브러리의 호환 버전을 빌드할 수 없습니다는 컴파일러, 프로젝트를 빌드하는 이전 버전의 컴파일러를 사용할 수: 변경 된 **플랫폼 도구 집합** 이전 도구 집합 프로젝트의 속성입니다. 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 세트 수정](../../build/how-to-modify-the-target-framework-and-platform-toolset.md)을 참조하세요.
+   를 사용 하는 및 획득 하거나 라이브러리의 호환 버전을 빌드할 수 없습니다는 MSVC의 버전과 호환 되지 않는 라이브러리에 연결 하 고 하는 경우 프로젝트를 빌드하는 이전 버전의 컴파일러를 사용할 수 있습니다: 변경 된  **플랫폼 도구 집합** 이전 도구 집합 프로젝트의 속성입니다. 자세한 내용은 [방법: 대상 프레임워크 및 플랫폼 도구 세트 수정](../../build/how-to-modify-the-target-framework-and-platform-toolset.md)을 참조하세요.
 
 - `_ITERATOR_DEBUG_LEVEL` 보안 및 디버깅 기능에서 사용 되는 수준을 나타냅니다는 C++ 표준 라이브러리입니다. 이러한 기능은 특정 C++ 표준 라이브러리 개체의 표현을 변경할 수 있으며, 그 결과 다른 보안 및 디버깅 기능을 사용하는 개체와 호환되지 않을 수 있습니다. 자세한 내용은 [_ITERATOR_DEBUG_LEVEL](../../standard-library/iterator-debug-level.md)을 참조하세요.
 

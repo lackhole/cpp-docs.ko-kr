@@ -5,12 +5,12 @@ helpviewer_keywords:
 - structs [C++]
 - classes [C++], instantiating
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
-ms.openlocfilehash: 090259a4ad6b46eccf66dca6c99b4eb532b7ae5c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 5fe7d6876b094c84fe3d4cdbba417106edcca528
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387489"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447279"
 ---
 # <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>방법: 클래스 및 구조체 정의 및 사용 (C++/CLI)
 
@@ -127,7 +127,7 @@ int main() {
 
 `public` 형식을 포함 하는 소스 파일에 표시 되는지 나타냅니다는 `#using` 형식을 포함 하는 어셈블리에 대 한 지시문입니다.  `private` 형식이 포함 된 소스 파일에 표시 되지 않음을 나타냅니다는 `#using` 형식을 포함 하는 어셈블리에 대 한 지시문입니다. 그러나 private 형식은 동일한 어셈블리 내에는 표시됩니다. 기본적으로 클래스에 대한 표시 유형은 `private`입니다.
 
-기본적으로 Visual C++ 2005 이전에는 네이티브 형식에 어셈블리 외부의 public 액세스 가능성이 있었습니다. 사용 하도록 설정 [컴파일러 경고 (수준 1) C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) 참조는 private 네이티브 형식이 잘못 사용할 수 있도록 합니다. 사용 된 [make_public](../preprocessor/make-public.md) pragma를 수정할 수 없는 소스 코드 파일에서 네이티브 형식에 public 액세스 가능성을 제공 합니다.
+Visual Studio 2005 이전 기본적으로 네이티브 형식에는 어셈블리 외부에 public 액세스 가능성이 있었습니다. 사용 하도록 설정 [컴파일러 경고 (수준 1) C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) 참조는 private 네이티브 형식이 잘못 사용할 수 있도록 합니다. 사용 된 [make_public](../preprocessor/make-public.md) pragma를 수정할 수 없는 소스 코드 파일에서 네이티브 형식에 public 액세스 가능성을 제공 합니다.
 
 자세한 내용은 [#using 지시문](../preprocessor/hash-using-directive-cpp.md)을 참조하세요.
 
@@ -588,7 +588,7 @@ int main() {
 Base::Test
 ```
 
-다음 샘플은 Visual C++ 컴파일러가 매개 변수를 하나 이상 일치하기 위해 변환이 필요한 경우에도 가장 많이 파생된 클래스의 함수를 호출하고 함수 호출과 더 잘 일치하는 기본 클래스의 함수를 호출하지 않음을 보여 줍니다.
+다음 샘플에 따르면 Microsoft C++ 가장 많이 파생 된 클래스의 함수를 호출 하는 컴파일러-변환 매개 변수 중 하나 이상과 일치 해야 하는 경우에, 함수 호출에 대 한 더 나은 일치 하는 기본 클래스의 함수를 호출 하지.
 
 ```cpp
 // compile with: /clr
@@ -736,7 +736,7 @@ CLR 가비지 수집기는 사용하지 않은 관리되는 개체를 삭제하�
 
 Visual C++ 종료자와 <xref:System.Object.Finalize%2A> 메서드는 같지 않습니다. CLR 문서는 종료자와 <xref:System.Object.Finalize%2A> 메서드를 같은 뜻으로 사용합니다. <xref:System.Object.Finalize%2A> 메서드는 클래스 상속 체인의 각 종료자를 호출하는 가비지 수집기에 의해 호출됩니다. Visual C++ 소멸자와 달리 파생 클래스 종료자가 호출되면 컴파일러는 모든 기본 클래스의 종료자를 호출하지 않습니다.
 
-Visual C++ 컴파일러는 리소스의 명확한 해제를 지원하므로 <xref:System.IDisposable.Dispose%2A> 또는 <xref:System.Object.Finalize%2A> 메서드를 구현하지 마십시오. 그러나 이러한 메서드에 익숙한 경우 Visual C++ 종료자 및 소멸자가 <xref:System.IDisposable.Dispose%2A> 패턴에 매핑하도록 종료자를 호출하는 방법은 다음과 같습니다.
+때문에 Microsoft C++ 컴파일러는 리소스의 명확한 해제를 지원, 구현 하지 마십시오는 <xref:System.IDisposable.Dispose%2A> 나 <xref:System.Object.Finalize%2A> 메서드. 그러나 이러한 메서드에 익숙한 경우 Visual C++ 종료자 및 소멸자가 <xref:System.IDisposable.Dispose%2A> 패턴에 매핑하도록 종료자를 호출하는 방법은 다음과 같습니다.
 
 ```cpp
 // Visual C++ code
@@ -757,7 +757,7 @@ void Dispose(bool disposing) {
 
 관리되는 형식은 명확하게 해제하려는 관리되는 리소스도 사용할 수 있으며 개체가 더 이상 필요하지 않게 된 후 어느 시점에 가비지 수집기가 불명확하게 해제하도록 허용하지 않습니다. 리소스의 명확한 해제는 성능을 현저하게 개선할 수 있습니다.
 
-Visual C++ 컴파일러는 소멸자의 정의를 사용하여 개체를 명확하게 정리할 수 있습니다. 소멸자를 사용하여 명확하게 해제하려는 리소스를 모두 해제하십시오.  종료자가 존재하는 경우 코드의 중복을 피하기 위해 소멸자에서 호출하십시오.
+Microsoft C++ 컴파일러 개체를 명확 하 게 정리 하는 소멸자의 정의 사용 하도록 설정 합니다. 소멸자를 사용하여 명확하게 해제하려는 리소스를 모두 해제하십시오.  종료자가 존재하는 경우 코드의 중복을 피하기 위해 소멸자에서 호출하십시오.
 
 ```cpp
 // compile with: /clr /c

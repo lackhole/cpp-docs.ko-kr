@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
-ms.openlocfilehash: f9d339860e9d2bdb8d66f6b7f8f49d3993b2d5cf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9b985799849a268010dff63f9f7bc25e474b365e
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148333"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448519"
 ---
 # <a name="c-attributes-for-com-and-net"></a>COM 및.NET에 대한 C++ 특성
 
@@ -34,7 +34,7 @@ Microsoft은.NET Framework 공용 언어 런타임 개발 및 COM 프로그래�
 
 - 몇 가지 간단한 특성을 사용 하 여 COM 구성 요소에서 필요한 IDL 코드의 양이 대체 합니다.
 
-예를 들어 제네릭 ATL 클래스에 대 한 간단한 이벤트 싱크를 구현 하려면 적용할 수 있습니다 합니다 [event_receiver](event-receiver.md) 와 같은 특정 클래스에 특성 `CMyReceiver`합니다. `event_receiver` 특성은 개체 파일에 적절 한 코드를 삽입 하는 Visual C++ 컴파일러에 의해 컴파일됩니다.
+예를 들어 제네릭 ATL 클래스에 대 한 간단한 이벤트 싱크를 구현 하려면 적용할 수 있습니다 합니다 [event_receiver](event-receiver.md) 와 같은 특정 클래스에 특성 `CMyReceiver`합니다. 합니다 `event_receiver` 특성은 Microsoft에서 컴파일됩니다. C++ 개체 파일에 적절 한 코드를 삽입 하는 컴파일러입니다.
 
 ```cpp
 [event_receiver(com)]
@@ -49,7 +49,7 @@ class CMyReceiver
 
 ## <a name="basic-mechanics-of-attributes"></a>특성의 기본 메커니즘
 
-프로젝트에 특성을 삽입 하는 방법은 세 가지가 있습니다. 첫째, 삽입할 수 있습니다 이러한 수동으로 소스 코드입니다. 둘째,이 프로젝트에서 개체의 속성 표를 사용 하 여 삽입할 수 있습니다. 마지막으로, 다양 한 마법사를 사용 하 여 삽입할 수 있습니다. 사용 하 여 대 한 자세한 내용은 합니다 **속성** 창 및 다양 한 마법사를 참조 하십시오 [Creating and Managing Visual C++ Projects](../../build/creating-and-managing-visual-cpp-projects.md)합니다.
+프로젝트에 특성을 삽입 하는 방법은 세 가지가 있습니다. 첫째, 삽입할 수 있습니다 이러한 수동으로 소스 코드입니다. 둘째,이 프로젝트에서 개체의 속성 표를 사용 하 여 삽입할 수 있습니다. 마지막으로, 다양 한 마법사를 사용 하 여 삽입할 수 있습니다. 사용 하 여 대 한 자세한 내용은 합니다 **속성** 창 및 다양 한 마법사를 참조 하십시오 [Visual Studio 프로젝트- C++ ](../../build/creating-and-managing-visual-cpp-projects.md)합니다.
 
 로 이전에 프로젝트를 빌드할 때 컴파일러 구문 분석 각 C++ 소스 파일을 개체 파일을 생성 합니다. 그러나 컴파일러는 특성을 발견 하면 해당 구문 분석 되 고 구문적으로 확인 합니다. 컴파일러가 다음 동적으로 공급자를 호출할 특성 코드를 삽입 하거나 컴파일 타임에 기타 수정 작업을 확인 합니다. 공급자 구현 형식 특성에 따라 다릅니다. 예를 들어, ATL 관련 특성 Atlprov.dll 여 구현 됩니다.
 
@@ -64,7 +64,7 @@ class CMyReceiver
 
 ## <a name="building-an-attributed-program"></a>특성을 사용하는 프로그램 빌드
 
-소스 코드를 Visual C++ 특성을 추가한 후를 형식 라이브러리 및.idl 파일을 생성 하기 위해 Visual C++ 컴파일러를 확인할 수 있습니다. 다음 링커 옵션.tlb 및.idl 파일을 빌드할 수 있습니다.
+시각적 개체를 추가한 후 C++ 특성에 소스 코드에 Microsoft 확인할 수 있습니다 C++ 를 형식 라이브러리 및.idl 파일을 생성 하는 컴파일러입니다. 다음 링커 옵션.tlb 및.idl 파일을 빌드할 수 있습니다.
 
 - [/IDLOUT](../../build/reference/idlout-name-midl-output-files.md)
 

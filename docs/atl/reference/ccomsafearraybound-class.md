@@ -1,6 +1,6 @@
 ---
 title: CComSafeArrayBound 클래스
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 f1_keywords:
 - CComSafeArrayBound
 - ATLSAFE/ATL::CComSafeArrayBound
@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArrayBound class
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
-ms.openlocfilehash: a79079c95536746cf5a4fa4b35caf39a55ca0f42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 6d4650273661c0ce40558a37ef02bb2a3ff81809
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62246142"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221145"
 ---
 # <a name="ccomsafearraybound-class"></a>CComSafeArrayBound 클래스
 
@@ -76,7 +76,7 @@ CComSafeArrayBound(ULONG ulCount = 0, LONG lLowerBound = 0) throw();
 
 ### <a name="remarks"></a>설명
 
-배열에서 시각적 개체에 액세스할 수 있으면 C++ 프로그램인 것이 좋습니다 하한값은 0으로 정의 합니다. Visual Basic과 같은 다른 언어와 함께 사용 될 경우 다른 하 한 값을 사용 하는 것이 좋습니다 수도 있습니다.
+배열에서 액세스 하는 경우는 C++ 프로그램인 것이 좋습니다 하한값은 0으로 정의 합니다. Visual Basic과 같은 다른 언어와 함께 사용 될 경우 다른 하 한 값을 사용 하는 것이 좋습니다 수도 있습니다.
 
 ##  <a name="getcount"></a>  CComSafeArrayBound::GetCount
 

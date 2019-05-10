@@ -9,16 +9,16 @@ helpviewer_keywords:
 - thread attribute
 - Thread Local Storage [C++]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-ms.openlocfilehash: f5a75f7964b0291a980b22d36e7ce6a0a87d3dc3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5c7bf2ae7cb5bfe71be9a1d72147e97c894064b3
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362727"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448900"
 ---
 # <a name="thread-local-storage-tls"></a>TLS
 
-TLS(스레드 로컬 저장소)는 지정된 다중 스레드 프로세스의 각 스레드에서 스레드별 데이터를 저장하는 위치를 할당하는 방법입니다. 동적으로 바인딩 (런타임) 스레드별 데이터 TLS API를 통해 지원 됩니다 ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)합니다.  Win32 및 Visual C++ 컴파일러는 이제 기존 API 구현 외에도 정적으로 바인딩된(로드 타임) 스레드별 데이터도 지원합니다.
+TLS(스레드 로컬 저장소)는 지정된 다중 스레드 프로세스의 각 스레드에서 스레드별 데이터를 저장하는 위치를 할당하는 방법입니다. 동적으로 바인딩 (런타임) 스레드별 데이터 TLS API를 통해 지원 됩니다 ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)합니다.  Win32 및 Microsoft C++ 컴파일러 지원 (로드 타임) 스레드별 데이터는 기존 API 구현 외에도 정적으로 바인딩할 이제 합니다.
 
 ##  <a name="_core_compiler_implementation_for_tls"></a> TLS의 컴파일러 구현
 

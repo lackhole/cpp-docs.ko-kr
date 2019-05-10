@@ -1,20 +1,19 @@
 ---
 title: new 및 delete 연산자
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 f1_keywords:
 - delete_cpp
 - new
 helpviewer_keywords:
-- new keyword [C++], dynamic allocation of objects
-- nothrownew.obj
-- delete keyword [C++], syntax
+- new keyword [C++]
+- delete keyword [C++]
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
-ms.openlocfilehash: 1ac6282ecbf45f22e7dd66b94f8bccdbc4e505ce
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
-ms.translationtype: MT
+ms.openlocfilehash: 8dd5e6a555872c443e32e9ea464ea49d4ae18f99
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345890"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222372"
 ---
 # <a name="new-and-delete-operators"></a>new 및 delete 연산자
 
@@ -85,9 +84,7 @@ int main()
 Blanks *SomeBlanks = new Blanks;
 ```
 
-시각적 개체의 C++ 5.0 및 이전 버전의 경우 비 클래스 형식 및 모든 배열 (된 여부에 관계 없이 **클래스** 형식) 사용 하 여 할당 된 **새** 연산자는 항상 전역 사용 **new 연산자**  함수입니다.
-
-시각적 개체를 사용 하 여 시작 C++ 5.0, 컴파일러는 멤버 배열을 지원 **새** 하 고 **삭제** 클래스 선언에서 연산자. 예를 들어:
+컴파일러가 멤버 배열을 지 원하는 **새** 하 고 **삭제** 클래스 선언에서 연산자. 예를 들어:
 
 ```cpp
 // spec1_the_operator_new_function2.cpp
@@ -203,7 +200,7 @@ int main( int argc, char *argv[] ) {
 
 앞의 코드를 사용하여 "메모리 누수"를 검색할 수 있습니다. 메모리 누수는 사용 가능한 저장소에 할당되었지만 비워지지 않은 메모리를 의미합니다. 전역이 검색을 수행 하도록 **새** 하 고 **삭제** 연산자 수 할당 및 메모리 할당 취소 하도록 다시 정의 됩니다.
 
-시각적 개체를 사용 하 여 시작 C++ 5.0, 컴파일러는 멤버 배열을 지원 **새** 하 고 **삭제** 클래스 선언에서 연산자. 예를 들어:
+컴파일러가 멤버 배열을 지 원하는 **새** 하 고 **삭제** 클래스 선언에서 연산자. 예를 들어:
 
 ```cpp
 // spec1_the_operator_delete_function2.cpp

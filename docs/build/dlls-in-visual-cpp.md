@@ -1,6 +1,6 @@
 ---
 title: C를 만들기 /C++ Visual Studio에서 Dll
-ms.date: 12/10/2018
+ms.date: 05/06/2019
 helpviewer_keywords:
 - executable files [C++]
 - dynamic linking [C++]
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DLLs [C++]
 - DLLs [C++], about DLLs
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
-ms.openlocfilehash: 5bd30c84ba202c3f772ad4451368efde10285e6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 7f1c2b71a58c59bf0662aa4ffec53344ce657df0
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195464"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220749"
 ---
 # <a name="create-cc-dlls-in-visual-studio"></a>C를 만들기 /C++ Visual Studio에서 Dll
 
@@ -59,7 +59,7 @@ Dll 및 응용 프로그램은 모두 실행 모듈에도 여러 가지 방법�
 
 ## <a name="more-information-on-how-to-create-and-use-dlls"></a>만들기 및 Dll을 사용 하는 방법에 대 한 자세한 내용
 
-시각적 개체의 Dll을 프로그래밍 하는 방법에 대 한 자세한 정보를 제공 하는 다음 항목에서는 C++입니다.
+C를 만드는 방법에 대 한 자세한 정보를 제공 하는 다음 항목 /C++ Visual Studio에서 Dll입니다.
 
 [연습: 동적 연결 라이브러리 만들기 및 사용(C++)](walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
 Visual Studio를 사용하여 DLL을 만들고 사용하는 방법에 대해 설명합니다.
