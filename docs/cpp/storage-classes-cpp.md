@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - storage classes [C++], basic concepts
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
-ms.openlocfilehash: e50e5da5ea24d59131f123bb0c772897f9a30218
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 92435b2bab670dd366f26c981443e98e4a4e3c29
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266935"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221991"
 ---
 # <a name="storage-classes-c"></a>저장소 클래스(C++)
 
@@ -24,7 +24,7 @@ A *저장소 클래스가* 컨텍스트에서 C++ 변수를 선언 하는 개체
 
 1. 합니다 [변경할 수 있는](../cpp/mutable-data-members-cpp.md) 키워드는 저장소 클래스 지정자로 간주 될 수 있습니다. 하지만 클래스 정의의 멤버 목록에만 사용할 수 있습니다.
 
-1. **Visual C++ 2010 이상:** 합니다 **자동** 키워드는 더 이상를 C++ 저장소 클래스 지정자, 및 **등록** 키워드가 사용 되지 않습니다. **Visual Studio 2017 버전 15.7 이상의:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 합니다 **등록** 에서 키워드를 제거 합니다 C++ 언어입니다.
+1. **Visual Studio 2010 이상:** 합니다 **자동** 키워드는 더 이상를 C++ 저장소 클래스 지정자, 및 **등록** 키워드가 사용 되지 않습니다. **Visual Studio 2017 버전 15.7 이상의:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 합니다 **등록** 에서 키워드를 제거 합니다 C++ 언어입니다.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class

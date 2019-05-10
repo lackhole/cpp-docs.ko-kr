@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - delayed loading of DLLs, linker support
 ms.assetid: b2d7e449-2809-42b1-9c90-2c0ca5e31a14
-ms.openlocfilehash: b6e514a6b13aced4fcd765df091810504f948588
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 384ea563853906a76e2c9993cbcedb3b15c354f2
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217598"
 ---
 # <a name="linker-support-for-delay-loaded-dlls"></a>링커의 지연 로드된 DLL 지원
 
@@ -51,5 +51,5 @@ DLL의 지연 된 로드 중 빌드 중 지정할 수는 있습니다. EXE 또�
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](../dlls-in-visual-cpp.md)<br/>
+[C를 만들기 /C++ Visual Studio에서 Dll](../dlls-in-visual-cpp.md)<br/>
 [MSVC 링커 참조](linking.md)

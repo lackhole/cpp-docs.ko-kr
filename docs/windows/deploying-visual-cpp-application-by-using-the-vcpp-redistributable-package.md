@@ -1,15 +1,15 @@
 ---
 title: 재배포 가능 패키지(C++)를 사용하여 앱 배포
-ms.date: 09/17/2018
+ms.date: 04/23/2019
 helpviewer_keywords:
 - walkthrough, deploying a Visual C++ application by using the redistributable package
 ms.assetid: e59becbf-b8c6-4c8e-bab3-b69cc1ed3e5e
-ms.openlocfilehash: ccf6b74096894c2e48258e6e0a60b807c7c6c5b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a235fa12138fd00a0f6d722cad7776980ad3d292
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345463"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877281"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-by-using-the-visual-c-redistributable-package"></a>연습: Visual C++ 재배포 가능 패키지를 사용하여 Visual C++ 애플리케이션 배포
 

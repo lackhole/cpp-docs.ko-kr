@@ -1,17 +1,17 @@
 ---
 title: 일반적인 Visual C++ ARM 마이그레이션 문제
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 ms.assetid: 0f4c434e-0679-4331-ba0a-cc15dd435a46
-ms.openlocfilehash: a39e1d5e26a62cafa093067bb42f33178a1af6af
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 78d87000240acd394edf823a778ae29060c6d09c
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195268"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220889"
 ---
 # <a name="common-visual-c-arm-migration-issues"></a>일반적인 Visual C++ ARM 마이그레이션 문제
 
-Microsoft Visual을 사용 하는 경우 C++ (MSVC) 동일한 C++ x86 또는 x64 아키텍처에서 사용 하지 않고 소스 코드는 ARM 아키텍처에 다른 결과 생성할 수 있습니다.
+Microsoft를 사용 하는 경우 C++ 동일한 컴파일러 (MSVC) C++ x86 또는 x64 아키텍처에서 사용 하지 않고 소스 코드는 ARM 아키텍처에 다른 결과 생성할 수 있습니다.
 
 ## <a name="sources-of-migration-issues"></a>마이그레이션 문제의 소스
 

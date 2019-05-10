@@ -1,17 +1,17 @@
 ---
 title: DEF 파일을 사용하여 DLL에서 내보내기
-ms.date: 01/09/2018
+ms.date: 05/06/2019
 helpviewer_keywords:
 - def files [C++], exporting from DLLs
 - .def files [C++], exporting from DLLs
 - exporting DLLs [C++], DEF files
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
-ms.openlocfilehash: 35f55ea525bd03c5b0b1b1750d25c1223bc608fc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 92a140c6491e9e3f0d356509862dee39ebe3fae6
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220776"
 ---
 # <a name="exporting-from-a-dll-using-def-files"></a>DEF 파일을 사용하여 DLL에서 내보내기
 
@@ -36,7 +36,10 @@ EXPORTS
 
 사용 하는 경우는 [MFC DLL 마법사](../mfc/reference/mfc-dll-wizard.md) MFC DLL을 만들려면 마법사 스 켈 레 톤 DEF 파일을 만들고 프로젝트에 자동으로 추가 합니다. 이 파일에 내보낼 함수의 이름을 추가 합니다. 비 MFC Dll의 경우 직접 DEF 파일을 만들어 프로젝트에 추가 합니다. 로 이동 **프로젝트** > **속성** > **링커** > **입력**  >  **모듈 정의 파일** DEF 파일의 이름을 입력 합니다. 각 구성 및 플랫폼에 대해이 단계를 반복 하거나 선택 하 여 한 번에 수행 **구성 = 모든 구성을**, 및 **플랫폼 모든 플랫폼 =** 합니다.
 
-함수를 내보내는 경우는 C++ 파일을 데코 레이트 된 이름을 DEF 파일에 배치 또는 extern "C"를 사용 하 여 표준 C 링크가 있는 내보낸된 함수를 정의 해야 합니다. DEF 파일에 데코레이팅된 이름을 배치 해야 하는 경우 사용 하 여 가져올 수 있습니다 합니다 [DUMPBIN](../build/reference/dumpbin-reference.md) 도구 또는 링커를 사용 하 여 [/map](../build/reference/map-generate-mapfile.md) 옵션입니다. 특정 컴파일러는 컴파일러에서 생성 된 데코레이팅된 이름이 참고 합니다. 시각적 개체에서 생성 된 데코레이팅된 이름을 배치 하는 경우 C++ DEF 파일로 컴파일러 DLL에 링크 되는 응용 프로그램 빌드해야 시각적 개체의 동일한 버전을 사용 하 여 C++ 호출 응용 프로그램의 데코레이팅된 이름과의 내보낸된 이름과 일치 하도록 DLL의 DEF 파일입니다.
+함수를 내보내는 경우는 C++ 파일을 데코 레이트 된 이름을 DEF 파일에 배치 또는 extern "C"를 사용 하 여 표준 C 링크가 있는 내보낸된 함수를 정의 해야 합니다. DEF 파일에 데코레이팅된 이름을 배치 해야 하는 경우 사용 하 여 가져올 수 있습니다 합니다 [DUMPBIN](../build/reference/dumpbin-reference.md) 도구 또는 링커를 사용 하 여 [/map](../build/reference/map-generate-mapfile.md) 옵션입니다. 특정 컴파일러는 컴파일러에서 생성 된 데코레이팅된 이름이 참고 합니다. Microsoft에서 생성 된 데코레이팅된 이름을 배치 하는 경우 C++ DEF 파일로 (MSVC) 컴파일러 DLL에 링크 되는 응용 프로그램 빌드해야 호출 응용 프로그램의 데코레이팅된 이름과의 내보낸된 이름과 일치 하도록 MSVC의 동일한 버전을 사용 합니다. DLL의 DEF 파일입니다. 
+
+> [!NOTE]
+> Visual Studio 2015를 사용 하 여 작성 된 DLL은 Visual Studio 2017 또는 Visual Studio 2019로 작성 된 응용 프로그램에서 사용할 수 있습니다.
 
 빌드하는 경우는 [확장 DLL](../build/extension-dlls-overview.md)는 내보내는 클래스가 들어 있는 헤더 파일의 시작과 끝에 다음 코드를 추가 DEF 파일을 사용 하 여 내보내기 및:
 

@@ -80,12 +80,12 @@ helpviewer_keywords:
 - std::forward_list::swap
 - std::forward_list::unique
 ms.assetid: 89a3b805-ab60-4858-b772-5855130c11b1
-ms.openlocfilehash: 5eaa8eba1904dc0a729fb66b280b8d3fa4bb78f1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d1f6f7500446081bd0b2dec0fea12b03f4e87d6
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159784"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877531"
 ---
 # <a name="forwardlist-class"></a>forward_list 클래스
 
@@ -219,7 +219,7 @@ void assign(InputIterator First, InputIterator Last);
 |*count*|할당할 요소 수입니다.|
 |*val*|각 요소에 할당할 값입니다.|
 |*Type*|값의 형식입니다.|
-|* IList'| 복사할 initializer_list입니다.|
+|*IList*|복사할 initializer_list입니다.|
 
 ### <a name="remarks"></a>설명
 

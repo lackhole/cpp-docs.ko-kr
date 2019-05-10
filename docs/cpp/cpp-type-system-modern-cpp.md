@@ -3,12 +3,12 @@ title: C++ 형식 시스템(모던 C++)
 ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-ms.openlocfilehash: 4dfbf408654ccc92c92d6855c15238cb07c01b58
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 3fa13d2f0b274361c2ad34b0eb64421d2d1d037e
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392289"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222137"
 ---
 # <a name="c-type-system-modern-c"></a>C++ 형식 시스템(모던 C++)
 
@@ -53,7 +53,7 @@ int maxValue;                // Not recommended! maxValue contains
 
 ## <a name="fundamental-built-in-types"></a>기본(기본 제공) 형식
 
-일부 언어와 달리, C++에는 다른 형식이 파생되는 유니버설 기본 형식이 없습니다. 여러 언어의 Visual C++ 구현을 포함 *기본 형식*라고도 *기본 제공 형식*합니다. 와 같은 숫자 형식이 포함 됩니다 **int**, **double**, **긴**, **bool**와 **char** 및**wchar_t** 각각 ASCII 및 유니코드 문자 형식입니다. 가장 기본적인 유형 (제외한 **bool**, **double**를 **wchar_t** 와 관련 유형) 미등록 버전이 변수에 저장할 수 있는 값의 범위를 수정 하는 합니다. 예를 들어를 **int**, 32 비트 부호 있는 정수를 저장 하는 값을 나타낼 수-2,147,483,648에서 2,147,483,647까지 합니다. **부호 없는 int**, 0에서 4,294,967,295 사이의 값을 저장할 수는 32 비트도 저장 됩니다. 각 사례에서 사용할 수 있는 값의 총 수는 동일하며, 범위만 다릅니다.
+일부 언어와 달리, C++에는 다른 형식이 파생되는 유니버설 기본 형식이 없습니다. 언어는 많은 *기본 형식*라고도 *기본 제공 형식*합니다. 와 같은 숫자 형식이 포함 됩니다 **int**, **double**, **긴**, **bool**와 **char** 및**wchar_t** 각각 ASCII 및 유니코드 문자 형식입니다. 가장 기본적인 유형 (제외한 **bool**, **double**를 **wchar_t** 와 관련 유형) 미등록 버전이 변수에 저장할 수 있는 값의 범위를 수정 하는 합니다. 예를 들어를 **int**, 32 비트 부호 있는 정수를 저장 하는 값을 나타낼 수-2,147,483,648에서 2,147,483,647까지 합니다. **부호 없는 int**, 0에서 4,294,967,295 사이의 값을 저장할 수는 32 비트도 저장 됩니다. 각 사례에서 사용할 수 있는 값의 총 수는 동일하며, 범위만 다릅니다.
 
 제어 기본 항목은 어떤 작업을 수행할 수 있는지 및 기본 형식 및 방법들이 다른 기본 형식으로 변환될 수 있는지를 통제하도록 만든 컴파일러에 의해 인식됩니다. 기본 제공 형식 및 크기와 숫자 제한의 전체 목록은 참조 하세요 [기본 형식](../cpp/fundamental-types-cpp.md)합니다.
 

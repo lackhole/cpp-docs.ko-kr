@@ -1,27 +1,18 @@
 ---
 title: 문자열 및 문자 리터럴 (C++)
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 f1_keywords:
 - R
 helpviewer_keywords:
-- L constant
-- escape sequences
-- Null strings, null-terminated strings
-- literal strings, C++
-- Null strings
-- string literals, syntax
-- string literals
-- literal strings
-- strings [C++], string literals
-- NULL, character constant
-- wide characters, strings
+- literal strings [C++]
+- string literals [C++]
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
-ms.openlocfilehash: d3721f3624a64a24de0a5458d88de4836b07a9c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: d3c85854256816d5553959a16526ad0d13cf14b4
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330845"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221982"
 ---
 # <a name="string-and-character-literals--c"></a>문자열 및 문자 리터럴 (C++)
 
@@ -328,7 +319,7 @@ const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);
 
 **Microsoft 전용**
 
-시각적 개체의 C++ 리터럴 문자열을 사용 하 여 비 const에 대 한 포인터를 초기화 **char** 하거나 **wchar_t**합니다. 이는 C99 코드에서 허용되지만 C++98에서는 더 이상 사용되지 않으며 C++11에서는 제거되었습니다. 문자열을 수정하려고 하면 다음 예제와 같이 액세스 위반이 발생합니다.
+Microsoft에서 C++ 리터럴 문자열을 사용 하 여 비 const에 대 한 포인터를 초기화 **char** 하거나 **wchar_t**합니다. 이는 C99 코드에서 허용되지만 C++98에서는 더 이상 사용되지 않으며 C++11에서는 제거되었습니다. 문자열을 수정하려고 하면 다음 예제와 같이 액세스 위반이 발생합니다.
 
 ```cpp
 wchar_t* str = L"hello";

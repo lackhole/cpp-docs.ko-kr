@@ -1,6 +1,6 @@
 ---
 title: 식별자 (C++)
-ms.date: 09/12/2018
+ms.date: 05/07/2019
 helpviewer_keywords:
 - decorated names
 - decorated names, about decorated names
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - white space, in C++ identifiers
 - identifiers [C++]
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
-ms.openlocfilehash: 6f87486d0bb2614a3b2542cf050172a47f152c4c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 61ca021a8f41074dcef6bf9df2e5683ede98deee
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184603"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222438"
 ---
 # <a name="identifiers-c"></a>식별자 (C++)
 
@@ -70,7 +70,7 @@ Microsoft C++ 식별자의 처음 2048자만 의미가 있습니다. 사용자 �
 
 - 함수에 사용되는 인수의 수
 
-달러 기호 `$` 는 Visual C++에서 유효한 식별자 문자입니다. 또한 Visual C++에서는 식별자에서 허용되는 유니버설 문자 이름 범위로 표시된 실제 문자를 사용할 수 있습니다. 이러한 문자를 사용하려면 해당 문자를 포함하는 파일 인코딩 코드 페이지를 사용하여 파일을 저장해야 합니다.  이 예에서는 확장 문자와 유니버설 문자 이름을 코드에서 서로 바꿔 사용할 수 있는 방법을 보여 줍니다.
+달러 기호 `$` 은 Microsoft의 유효한 식별자 문자 C++ 컴파일러 (MSVC). MSVC 유니버설 문자 이름도 식별자에서 허용 된 범위를 나타내는 실제 문자를 사용할 수도 있습니다. 이러한 문자를 사용하려면 해당 문자를 포함하는 파일 인코딩 코드 페이지를 사용하여 파일을 저장해야 합니다.  이 예에서는 확장 문자와 유니버설 문자 이름을 코드에서 서로 바꿔 사용할 수 있는 방법을 보여 줍니다.
 
 ```cpp
 // extended_identifier.cpp

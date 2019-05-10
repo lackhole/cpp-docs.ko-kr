@@ -1,16 +1,16 @@
 ---
 title: '연습: MFC 프로젝트에 애니메이션 추가'
-ms.date: 09/20/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - animation [MFC]
 - MFC, animation
 ms.assetid: 004f832c-9fd5-4f88-9ca9-ae65dececdc2
-ms.openlocfilehash: 25e29654f1e192e03a078e4a963f27abeea6056d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 07b0c5f712cd645246ecfb4e8c93543377a340a3
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358606"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64558191"
 ---
 # <a name="walkthrough-adding-animation-to-an-mfc-project"></a>연습: MFC 프로젝트에 애니메이션 추가
 
@@ -38,9 +38,9 @@ ms.locfileid: "62358606"
 
 ### <a name="to-create-an-mfc-application"></a>MFC 응용 프로그램을 만들려면
 
-1. **파일** 메뉴에서 **새로 만들기** 를 가리킨 다음 **프로젝트**를 클릭합니다.
+1. 사용 된 **MFC 응용 프로그램 마법사** MFC 응용 프로그램을 만들려면. [연습: 새 MFC 셸 컨트롤을 사용 하 여](walkthrough-using-the-new-mfc-shell-controls.md) 방법은 Visual Studio의 버전에 대 한 마법사를 엽니다.
 
-1. 에 **새 프로젝트** 대화 상자의 아래 왼쪽된 창에서 **설치 된 템플릿**, 확장 **시각적 C++**  선택한 후 **MFC**. 가운데 창에서 선택 **MFC 응용 프로그램**합니다. 에 **이름을** 상자에 입력 *MFCAnimationWalkthrough*합니다. **확인**을 클릭합니다.
+1. 에 **이름을** 상자에 입력 *MFCAnimationWalkthrough*합니다. **확인**을 클릭합니다.
 
 1. 에 **MFC 응용 프로그램 마법사** 대화 상자에서 확인 하는 **응용 프로그램 유형** 는 **여러 문서**, **프로젝트 스타일** 는 **Visual Studio**, 및 **문서/뷰 아키텍처 지원** 옵션을 선택 합니다. **마침**을 클릭합니다.
 

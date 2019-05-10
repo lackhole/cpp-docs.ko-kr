@@ -93,12 +93,12 @@ helpviewer_keywords:
 - $(PlatformShortName) macro
 - SolutionPath macro $(SolutionPath)
 ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
-ms.openlocfilehash: 46fdd5e356ded96388a154ff459ef4cc3c02267f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: abb42db6a44f1c48d120eff1f117e06c970b6b44
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294452"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221787"
 ---
 # <a name="common-macros-for-msbuild-commands-and-properties"></a>MSBuild 명령 및 속성에 대 한 일반 매크로
 
@@ -121,7 +121,7 @@ ms.locfileid: "62294452"
 |**$(FrameworkDir)**|.NET Framework가 설치된 디렉터리입니다.|
 |**$(FrameworkSDKDir)**|.NET Framework를 설치한 디렉터리입니다. .NET Framework는 Visual Studio의 일부로 설치하거나 별도로 설치할 수 있습니다.|
 |**$(FrameworkVersion)**|Visual Studio에서 사용하는 .NET Framework의 버전입니다. **$(FrameworkDir)** 과 함께 사용할 경우 Visual Studio에서 사용하는 .NET Framework 버전의 전체 경로입니다.|
-|**$(FxCopDir)**|fxcop.cmd 파일의 경로입니다. fxcop.cmd 파일은 일부 Visual C++ 버전에서 설치되지 않습니다.|
+|**$(FxCopDir)**|fxcop.cmd 파일의 경로입니다. Fxcop.cmd 파일은 모든 Visual Studio 버전을 사용 하 여 설치 되지 않았습니다.|
 |**$(IntDir)**|중간 파일에 대해 지정된 디렉터리 경로입니다. 상대 경로인 경우 중간 파일은 프로젝트 디렉터리에 추가된 이 경로로 이동합니다. 이 경로의 끝에는 슬래시가 있어야 합니다. **Intermediate Directory** 속성에 대한 값으로 확인됩니다. **$(OutDir)** 을 사용하여 이 속성을 정의할 수 없습니다.|
 |**$(OutDir)**|출력 파일 디렉터리에 대한 경로입니다. 상대 경로인 경우 출력 파일은 프로젝트 디렉터리에 추가된 이 경로로 이동합니다. 이 경로의 끝에는 슬래시가 있어야 합니다. **Output Directory** 속성에 대한 값으로 확인됩니다. **$(IntDir)** 을 사용하여 이 속성을 정의할 수 없습니다.|
 |**$(Platform)**|현재 프로젝트 플랫폼의 이름(예: "Win32")입니다.|
@@ -143,7 +143,7 @@ ms.locfileid: "62294452"
 |**$(TargetFileName)**|빌드에 대한 기본 출력 파일의 파일 이름(기본이름 + 파일 확장명으로 정의됨)입니다.|
 |**$(TargetName)**|빌드에 대한 기본 출력 파일의 기본 이름입니다.|
 |**$(TargetPath)**|빌드에 대한 기본 출력 파일의 절대 경로 이름(드라이브 + 경로 + 기본 이름 + 파일 확장명으로 정의됨)입니다.|
-|**$(VCInstallDir)**|Visual Studio 설치의 C++ 컨텐츠가 들어 있는 디렉터리입니다. 이 속성에는 대상 Visual C++ 도구 집합의 버전이 포함되며, 이 버전은 호스트 Visual Studio와 다를 수 있습니다. 예를 들어 `$(PlatformToolset) = v140`으로 빌드하는 경우 **$(VCInstallDir)** 에는 Visual C++ 2015 설치 경로가 포함됩니다.|
+|**$(VCInstallDir)**|Visual Studio 설치의 C++ 컨텐츠가 들어 있는 디렉터리입니다. 이 속성의 대상 버전을 포함 C++ 다 수 있습니다 (MSVC) 도구 집합은 Visual Studio 호스트 합니다. 예를 들어, 사용 하 여 빌드하면 `$(PlatformToolset) = v140`, **$ (vcinstalldir)** Visual Studio 2015 설치 경로가 포함 되어 있습니다.|
 |**$(VSInstallDir)**|Visual Studio을 설치한 디렉터리입니다. 이 속성에는 대상 Visual Studio의 도구 집합 버전이 포함되며, 이 버전은 호스트 Visual Studio와 다를 수 있습니다. 예를 들어 `$(PlatformToolset) = v110`으로 빌드하는 경우 **$(VSInstallDir)** 에는 Visual Studio 2012 설치 경로가 포함됩니다.|
 |**$(WebDeployPath)**|웹 배포 루트에서 프로젝트 출력이 속하는 상대 경로입니다. <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath%2A>와 동일한 값을 반환합니다.|
 |**$(WebDeployRoot)**|**\<localhost>** 의 위치에 대한 절대 경로입니다. 예를 들어 c:\inetpub\wwwroot입니다.|

@@ -1,6 +1,6 @@
 ---
 title: CL 환경 변수
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 f1_keywords:
 - cl
 helpviewer_keywords:
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - LIBPATH environment variable
 - environment variables, CL compiler
 ms.assetid: 2606585b-a681-42ee-986e-1c9a2da32108
-ms.openlocfilehash: a15bedc0a5aa8215356a98c3635a2edd1f3cfc5f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 620ec386e06b1a0eed91c94e9b2b891d9955fd00
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294475"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217628"
 ---
 # <a name="cl-environment-variables"></a>CL 환경 변수
 
@@ -22,7 +22,7 @@ CL 도구는 다음과 같은 환경 변수를 사용합니다.
 
 - CL 및 \_CL\_정의 합니다. CL 도구 옵션 및 명령줄 인수를 CL 환경 변수에 정의 된 인수 앞에 추가 옵션을 추가 하 고에 정의 된 인수 \_CL\_를 처리 하기 전에 합니다.
 
-- INCLUDE. Visual C++ 설치의 \include 하위 디렉터리를 가리켜야 합니다.
+- 포함 하는 Visual Studio 설치의 \include 하위 디렉터리를 가리켜야 합니다.
 
 - 사용 하 여 참조 하는 메타 데이터 파일을 검색할 디렉터리를 지정 하는 LIBPATH [#using](../../preprocessor/hash-using-directive-cpp.md)합니다. LIBPATH에 대한 자세한 내용은 `#using`을 참조하세요.
 

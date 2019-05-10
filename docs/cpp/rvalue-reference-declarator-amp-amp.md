@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - '&& rvalue reference declarator'
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
-ms.openlocfilehash: 185c2de5dc21dd305a2792d4ee8e6baf69c35b28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 663b639dbfecf9253547e1dd3b4e40480c27b470
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331092"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222038"
 ---
 # <a name="rvalue-reference-declarator-ampamp"></a>Rvalue 참조 선언 자: &amp;&amp;
 
@@ -35,7 +35,7 @@ Rvalue 참조의 구현을 지원 *의미 체계 이동*, 응용 프로그램의
 
 이동 의미 체계를 구현 하려면 일반적으로 제공를 *이동 생성자* 및 이동 할당 연산자를 필요에 따라 (**연산자 =**), 클래스에 있습니다. 이렇게 하면 해당 소스가 rvalue인 복사 및 할당 작업에서 자동으로 의미 체계 이동을 활용합니다. 기본 복사 생성자와 달리, 컴파일러는 기본 이동 생성자를 제공하지 않습니다. 이동 생성자를 작성 하는 방법 및 응용 프로그램에서 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [이동 생성자 및 이동 할당 연산자 (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)합니다.
 
-일반 함수 및 연산자를 오버로드하여 의미 체계 이동을 활용할 수도 있습니다. Visual C++ 2010에 이동 의미 체계를 소개 합니다 C++ 표준 라이브러리입니다. 예를 들어 `string` 클래스는 의미 체계 이동을 수행하는 작업을 구현합니다. 여러 문자열을 연결하고 결과를 출력하는 다음 예제를 살펴보십시오.
+일반 함수 및 연산자를 오버로드하여 의미 체계 이동을 활용할 수도 있습니다. Visual Studio 2010에 이동 의미 체계를 소개 합니다 C++ 표준 라이브러리입니다. 예를 들어 `string` 클래스는 의미 체계 이동을 수행하는 작업을 구현합니다. 여러 문자열을 연결하고 결과를 출력하는 다음 예제를 살펴보십시오.
 
 ```cpp
 // string_concatenation.cpp
@@ -51,15 +51,15 @@ int main()
 }
 ```
 
-Visual 하기 전에 C++ 를 호출할 때마다 2010 **operator +** 할당 하 고 새 임시 반환 `string` 개체 (rvalue). **operator +** 소스 문자열이 lvalue 또는 rvalue 되는지 여부를 알지 못하므로 다른 하나의 문자열을 추가할 수 없습니다. 소스 문자열이 둘 다 lvalue인 경우 프로그램의 다른 곳에서 참조될 수 있으므로 수정되지 않아야 합니다. Rvalue 참조를 사용 하 여 **operator +** 프로그램의 다른 곳에서 참조 될 수 없는 rvalue를 사용 하도록 수정할 수 있습니다. 따라서 **operator +** 다른 이제 문자열 하나를 추가할 수 있습니다. 이에 따라 `string` 클래스가 수행해야 하는 동적 메모리 할당 수가 크게 줄어들 수 있습니다. 에 대 한 자세한 내용은 합니다 `string` 클래스를 참조 하십시오 [basic_string 클래스](../standard-library/basic-string-class.md)합니다.
+호출할 때마다 Visual Studio 2010 이전의 **operator +** 할당 하 고 새 임시 반환 `string` 개체 (rvalue). **operator +** 소스 문자열이 lvalue 또는 rvalue 되는지 여부를 알지 못하므로 다른 하나의 문자열을 추가할 수 없습니다. 소스 문자열이 둘 다 lvalue인 경우 프로그램의 다른 곳에서 참조될 수 있으므로 수정되지 않아야 합니다. Rvalue 참조를 사용 하 여 **operator +** 프로그램의 다른 곳에서 참조 될 수 없는 rvalue를 사용 하도록 수정할 수 있습니다. 따라서 **operator +** 다른 이제 문자열 하나를 추가할 수 있습니다. 이에 따라 `string` 클래스가 수행해야 하는 동적 메모리 할당 수가 크게 줄어들 수 있습니다. 에 대 한 자세한 내용은 합니다 `string` 클래스를 참조 하십시오 [basic_string 클래스](../standard-library/basic-string-class.md)합니다.
 
-의미 체계 이동은 컴파일러에서 RVO(반환 값 최적화) 또는 NRVO(명명된 반환 값 최적화)를 사용할 수 없는 경우에도 도움이 됩니다. 이러한 경우에 컴파일러는 형식에 정의된 이동 생성자를 호출합니다. 명명 된 반환 값 최적화에 대 한 자세한 내용은 참조 하세요. [Named Return Value Optimization 시각적 개체의 C++ 2005](https://msdn.microsoft.com/library/ms364057.aspx)합니다.
+의미 체계 이동은 컴파일러에서 RVO(반환 값 최적화) 또는 NRVO(명명된 반환 값 최적화)를 사용할 수 없는 경우에도 도움이 됩니다. 이러한 경우에 컴파일러는 형식에 정의된 이동 생성자를 호출합니다. 명명 된 반환 값 최적화에 대 한 자세한 내용은 참조 하세요. [명명 된 Return Value Optimization in Visual Studio 2005](https://msdn.microsoft.com/library/ms364057.aspx)합니다.
 
 의미 체계 이동에 대해 자세히 이해하려면 요소를 `vector` 개체에 삽입하는 예를 참조하십시오. `vector` 개체의 용량이 초과될 경우 `vector` 개체는 해당 요소를 위해 메모리를 재할당한 다음 각 요소를 다른 메모리 위치로 복사하여 삽입된 요소를 위한 공간을 만들어야 합니다. 삽입 작업은 요소를 복사할 때 새 요소를 만들고 데이터를 이전 요소에서 새 요소로 복사하는 복사 생성자를 호출한 후 이전 요소를 소멸시킵니다. 의미 체계 이동을 사용하면 비용이 많이 드는 메모리 할당 및 복사 작업을 수행할 필요 없이 개체를 직접 이동할 수 있습니다.
 
 `vector` 예에서 의미 체계 이동을 활용하기 위해 한 개체에서 다른 개체로 데이터를 이동하는 이동 생성자를 작성할 수 있습니다.
 
-에 의미 체계 이동 도입에 대 한 자세한 정보에 대 한는 C++ 시각적 개체의 표준 라이브러리 C++ 2010 참조 [ C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md).
+에 의미 체계 이동 도입에 대 한 자세한 정보에 대 한는 C++ Visual Studio 2010의 표준 라이브러리 참조 [ C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)합니다.
 
 ## <a name="perfect-forwarding"></a>완벽한 전달
 

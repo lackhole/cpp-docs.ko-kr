@@ -1,15 +1,15 @@
 ---
 title: 람다 식의 예
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], examples
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
-ms.openlocfilehash: 6854c5710d8a27093078c0f2013d691ac22c5870
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: f9f2c3e014e44c9f6a9ce10dd8388a1578ba3987
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222096"
 ---
 # <a name="examples-of-lambda-expressions"></a>람다 식의 예
 
@@ -61,7 +61,7 @@ int main()
 
 ### <a name="example-2"></a>예제 2
 
-식을 호출할 때 대신 식을 선언할 때 Visual C++ 컴파일러는 캡처된 변수에 람다 식을 바인딩합니다. 다음 예제에서는 변수 지역 변수 `i`값과 참조로서 변수 `j`를 캡처하는 람다 식을 보여 줍니다. 람다 식은 `i`를 값으로 캡처하기 때문에 프로그램에서 `i` 이상을 다시 할당하면 식의 결과에 영향을 주지 않습니다. 그러나 람다 식을 `j`를 참조로 캡처하기 때문에 `j`를 다시 할당하면 식의 결과에 영향을 주지 않습니다.
+Microsoft C++ 식을 호출할 때 대신 식을 선언할 때 컴파일러는 캡처된 변수에 람다 식을 바인딩합니다. 다음 예제에서는 변수 지역 변수 `i`값과 참조로서 변수 `j`를 캡처하는 람다 식을 보여 줍니다. 람다 식은 `i`를 값으로 캡처하기 때문에 프로그램에서 `i` 이상을 다시 할당하면 식의 결과에 영향을 주지 않습니다. 그러나 람다 식을 `j`를 참조로 캡처하기 때문에 `j`를 다시 할당하면 식의 결과에 영향을 주지 않습니다.
 
 ### <a name="code"></a>코드
 

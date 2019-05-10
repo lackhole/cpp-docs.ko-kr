@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: 17320b6f-8305-445b-9ec2-75833f4b29e0
 ms.openlocfilehash: 9db595daa7de7820b594a8515ece7481b4382c98
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62293097"
 ---
 # <a name="f-set-stack-size"></a>/F(스택 크기 설정)
 
-프로그램의 스택 크기를 바이트 단위로 설정 합니다.
+프로그램의 스택 크기를 바이트 단위로 설정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,15 +32,15 @@ ms.locfileid: "62293097"
 
 ## <a name="remarks"></a>설명
 
-이 옵션이 없으면 스택 크기를 1MB로 기본값은입니다. 합니다 *번호* 인수 10 진수 또는 C 언어 표기법에 있을 수 있습니다. 인수는 1에서 링커에 의해 허용 된 최대 스택 크기까지 수 있습니다. 링커는 가장 가까운 4 바이트에 지정된 된 값으로 반올림합니다. 사이 공백을 **/F** 하 고 *수* 선택 사항입니다.
+이 옵션이 없다면 스택 크기는 기본값인 1MB로 설정됩니다. *number* 인수는 10진수 또는 C 언어 표기법의 수가 될 수 있습니다. 인수의 범위는 1에서 부터 링커가 허용하는 최대 스택 크기까지입니다. 링커는 지정된 값을 가장 가까운 4 바이트로 반올림합니다. **/F**와 *number* 사이 공백은 선택 사항입니다.
 
-프로그램 스택 오버플로 메시지를 가져오는 경우 스택 크기를 증가 해야 합니다.
+프로그램이 스택 오버플로 메시지를 받는다면 스택 크기를 증가시켜야 합니다.
 
-또한 스택 크기를 설정할 수 있습니다.
+또한 다음과 같이 스택 크기를 설정할 수 있습니다.
 
 - **/STACK** 링커 옵션을 사용합니다. 자세한 내용은 [/STACK](stack.md)을 참조합니다.
 
-- .Exe 파일에서 EDITBIN를 사용합니다. 자세한 내용은 [EDITBIN 참조](editbin-reference.md)합니다.
+- .exe 파일에서 EDITBIN를 사용합니다. 자세한 내용은 [EDITBIN 참조](editbin-reference.md)를 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
