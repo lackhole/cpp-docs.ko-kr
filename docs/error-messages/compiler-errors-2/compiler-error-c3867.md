@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3867
 ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
-ms.openlocfilehash: 9308e238c86c7b8a957720228a823688fac289d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a5094b6c3d914c2f66ee8ed94bcdcce5827f130
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62242881"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447194"
 ---
 # <a name="compiler-error-c3867"></a>컴파일러 오류 C3867
 
@@ -19,7 +19,7 @@ ms.locfileid: "62242881"
 
 멤버 함수를 클래스 이름 및 address-of 연산자로 한정하지 않고 멤버 함수의 이름을 사용하려고 했습니다.
 
-이 오류는 Visual C++ 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성될 수도 있습니다. 멤버 포인터 규칙이 향상되었습니다. Visual C++ 2005 이전에 컴파일된 코드에서는 C3867 오류가 발생합니다.
+이 오류는 Visual Studio 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다: 멤버 포인터 규칙이 향상 되었습니다. Visual Studio 2005 이전에 컴파일된 코드에서는 c3867 합니다.
 
 ## <a name="example"></a>예제
 

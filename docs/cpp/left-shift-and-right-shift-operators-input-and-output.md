@@ -13,12 +13,12 @@ helpviewer_keywords:
 - shift operators [C++]
 - operators [C++], shift
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
-ms.openlocfilehash: 2f118c11aab9fb2bbdd6cfa4f23425077b382b23
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: fd048bedc45b14bdc7b83120ad039296b54aa850
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216423"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222053"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>왼쪽된 시프트 및 오른쪽 시프트 연산자 (&gt; &gt; 하 고 &lt; &lt;)
 
@@ -61,7 +61,7 @@ int main() {
 }
 ```
 
-부호 비트가 영향을 받도록 부호 있는 숫자를 왼쪽 시프트하면 결과가 정의되지 않습니다. 다음 예제에서는 1비트가 부호 비트 위치로 왼쪽 이동하면 Visual C++에서 어떤 일이 발생하는지 보여 줍니다.
+부호 비트가 영향을 받도록 부호 있는 숫자를 왼쪽 시프트하면 결과가 정의되지 않습니다. 다음 예제에서는 1 비트가 부호 비트 위치로 왼쪽 이동 하는 경우를 보여 줍니다.
 
 ```cpp
 #include <iostream>
@@ -89,7 +89,7 @@ int main() {
 오른쪽 시프트 연산자를 통해에서 비트 패턴이 *시프트 식* 지정 된 위치 수 만큼 오른쪽으로 이동할 *덧셈 식을*합니다. 부호 없는 숫자의 경우 시프트 연산으로 비워진 비트 위치는 0으로 채워집니다. 부호 있는 숫자의 경우 부호 비트는 비워진 비트 위치를 채우는 데 사용됩니다. 즉, 숫자가 양수이면 0이 사용되고 숫자가 음수이면 1이 사용됩니다.
 
 > [!IMPORTANT]
-> 부호 있는 음수의 오른쪽 시프트 결과는 구현에 따라 다릅니다. Visual C++는 부호를 사용하여 비워진 비트 위치를 채우지만 다른 구현도 마찬가지라는 보장은 없습니다.
+> 부호 있는 음수의 오른쪽 시프트 결과는 구현에 따라 다릅니다. 하지만 Microsoft C++ 컴파일러 부호 비트를 사용 하 여 비워진된 비트 위치에 맞게, 보장이 없습니다는 다른 구현도 마찬가지입니다.
 
 이 예제에서는 부호 없는 숫자를 사용하는 오른쪽 시프트 연산을 보여 줍니다.
 

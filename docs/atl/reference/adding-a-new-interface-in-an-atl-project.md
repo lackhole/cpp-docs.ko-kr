@@ -9,12 +9,12 @@ helpviewer_keywords:
 - controls [ATL], interfaces
 - ATL projects, adding interfaces
 ms.assetid: 7d34b023-2c6b-4155-aca3-d47a40968063
-ms.openlocfilehash: 99f262d420cd503c6ca385ed29bcaa2647c5f556
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 15283439bdcf76fea64d677ad84bee333833dc71
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62249195"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221227"
 ---
 # <a name="adding-a-new-interface-in-an-atl-project"></a>ATL 프로젝트에 새 인터페이스 추가
 
@@ -43,7 +43,7 @@ ms.locfileid: "62249195"
 ## <a name="see-also"></a>참고자료
 
 [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)<br/>
-[Visual C++ 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
+[C++Visual Studio에서 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
 [ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4459
 ms.assetid: ee9f6287-9c70-4b10-82a0-add82a13997f
-ms.openlocfilehash: 0cbab7c7cca1fc88bb99210262be45c56b6be7a8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 441d01eca7c8266b6d7948508eeb561341e64c57
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391428"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447763"
 ---
 # <a name="compiler-warning-level-4-c4459"></a>컴파일러 경고 (수준 4) C4459
 
@@ -19,7 +19,7 @@ ms.locfileid: "62391428"
 
 선언의 *식별자* 로컬 범위에 같은 이름의 선언을 숨깁니다 *식별자* 전역 범위에 있습니다. 이 경고를 사용 하면에 대 한 참조는 알고 *식별자* 이 범위에는 의도 하지 않을 수도 있고 전역 버전이 아니라 로컬로 선언 된 버전을 확인 합니다. 일반적으로 적절 한 엔지니어링 실무와 전역 변수의 사용을 최소화 하는 것이 좋습니다. 전역 네임 스페이스 공해를 최소화 하려면 전역 변수에 대 한 명명된 된 네임 스페이스의 사용을 좋습니다.
 
-이 경고가 시각적 개체의 Visual Studio 2015의 새로운 기능 C++ 컴파일러 버전 18.00 합니다. 컴파일러 또는 코드를 마이그레이션하는 동안 나중에 해당 버전에서 발생 한 경고를 표시 하지 않으려면 사용 합니다 [/wv:18](../../build/reference/compiler-option-warning-level.md) 컴파일러 옵션입니다.
+이 경고를 microsoft에서 Visual Studio 2015의 새로운 기능 C++ 컴파일러 버전 18.00 합니다. 컴파일러 또는 코드를 마이그레이션하는 동안 나중에 해당 버전에서 발생 한 경고를 표시 하지 않으려면 사용 합니다 [/wv:18](../../build/reference/compiler-option-warning-level.md) 컴파일러 옵션입니다.
 
 ## <a name="example"></a>예제
 
