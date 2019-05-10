@@ -1,6 +1,6 @@
 ---
 title: C/C++ 격리된 애플리케이션 및 side-by-side 어셈블리 빌드
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - isolated applications [C++]
 - WinSxS [C++]
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - side-by-side applications [C++]
 - builds [C++], side-by-side assemblies
 ms.assetid: 9465904e-76f7-48bd-bb3f-c55d8f1699b6
-ms.openlocfilehash: b962796c3bf32bc312d3047535ae90a40a37094d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 8164ede1379e573b08f699cd55c199f6fa228823
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62196692"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220980"
 ---
 # <a name="building-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ 격리된 애플리케이션 및 side-by-side 어셈블리 빌드
 
-Visual C++은 [격리된 애플리케이션](/windows/desktop/SbsCs/isolated-applications) 및 [side-by-side 어셈블리](/windows/desktop/SbsCs/about-side-by-side-assemblies-)아이디어를 기반으로 Windows 클라이언트 애플리케이션의 배포 모델을 지원합니다. 기본적으로 Visual C++은 모든 네이티브 C/C++ 애플리케이션을 [매니페스트](/windows/desktop/sbscs/manifests) 를 사용하여 Visual C++ 라이브러리에 대한 종속성을 설명하는 격리된 애플리케이션으로 빌드합니다.
+Visual Studio의 배포 모델의 아이디어를 기반으로 하는 Windows 클라이언트 응용 프로그램에 대 한 지원 [격리 된 응용 프로그램](/windows/desktop/SbsCs/isolated-applications) 하 고 [side-by-side-어셈블리](/windows/desktop/SbsCs/about-side-by-side-assemblies-)합니다. 기본적으로 Visual Studio에서는 모든 네이티브 C /C++ 를 사용 하는 격리 된 응용 프로그램으로 응용 프로그램 [매니페스트](/windows/desktop/sbscs/manifests) 시각적 개체에서 해당 종속성을 설명 하기 위해 C++ 라이브러리입니다.
 
 C/C++ 프로그램을 격리된 애플리케이션으로 빌드하면 여러 가지 이점을 얻을 수 있습니다. 예를 들어 격리된 애플리케이션은 다른 C/C++ 애플리케이션이 Visual C++ 라이브러리를 설치 또는 제거하는 경우 영향을 받지 않습니다. 격리된 애플리케이션에서 사용하는 Visual C++ 라이브러리는 애플리케이션의 로컬 폴더에 재배포하거나 네이티브 어셈블리 캐시(WinSxS)를 설치하여 재배포할 수 있습니다. 그러나 [게시자 구성 파일](/windows/desktop/SbsCs/publisher-configuration)을 사용하여 이미 배포된 애플리케이션에 대한 Visual C++ 라이브러리 서비스를 간소화할 수 있습니다. 이러한 격리된 애플리케이션 배포 모델을 사용하면 특정 컴퓨터에서 실행 중인 C/C++ 애플리케이션이 가장 최신 버전의 Visual C++ 라이브러리 사용을 보다 쉽게 보장함과 동시에 시스템 관리자 및 애플리케이션 작성자가 자신의 종속 DLL에 대한 명시적 버전 바인딩을 제어할 수 있는 가능성을 열어 둘 수 있습니다.
 
-이 섹션에서는 C/C++ 애플리케이션을 격리된 애플리케이션으로 빌드하는 방법과 해당 애플리케이션이 매니페스트를 사용하여 Visual C++ 라이브러리로 바인딩되도록 보장하는 방법에 대해 설명합니다. 이 섹션의 정보는 주로 네이티브 또는 관리되지 않는 Visual C++ 애플리케이션에 적용됩니다. Visual C++로 빌드된 네이티브 애플리케이션 배포에 대한 자세한 내용은 [Redistributing Visual C++ Files](../windows/redistributing-visual-cpp-files.md)를 참조하세요.
+이 섹션에서는 C/C++ 애플리케이션을 격리된 애플리케이션으로 빌드하는 방법과 해당 애플리케이션이 매니페스트를 사용하여 Visual C++ 라이브러리로 바인딩되도록 보장하는 방법에 대해 설명합니다. 이 섹션의 정보는 주로 네이티브 또는 관리 되지 않는에 적용 됩니다 C++ 응용 프로그램입니다. 기본 배포에 대 한 내용은 C++ Visual Studio를 사용 하 여 빌드된 응용 프로그램을 참조 하세요 [시각적 재배포 C++ 파일](../windows/redistributing-visual-cpp-files.md)합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

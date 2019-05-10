@@ -9,12 +9,12 @@ helpviewer_keywords:
 - operators [C++], type of an expression
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
-ms.openlocfilehash: 6c1c91aec7d974836b1ec031a1e8b38e8abb65ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 0a4e9eb015df056dfe2a35da18cfa50875ced432
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399085"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222464"
 ---
 # <a name="decltype--c"></a>decltype (C++)
 
@@ -38,7 +38,7 @@ decltype( expression )
 
 ## <a name="remarks"></a>설명
 
-합니다 **decltype** 시각적 개체의 형식 지정자는 C++ 2010 이상 버전에서는 네이티브 또는 관리 코드를 사용 하 여 사용할 수 있습니다. `decltype(auto)`(C++14)는 Visual Studio 2015 이상에서 지원됩니다.
+합니다 **decltype** 형식 지정자 Visual Studio 2010 이상 버전에서 지원 되 고 네이티브 또는 관리 코드에 사용 될 수 있습니다. `decltype(auto)`(C++14)는 Visual Studio 2015 이상에서 지원됩니다.
 
 컴파일러의 형식을 확인 하려면 다음 규칙을 사용 합니다 *식* 매개 변수입니다.
 
@@ -204,6 +204,6 @@ static_assert(test2, "PASS2");
 
 ## <a name="requirements"></a>요구 사항
 
-Visual C++ 2010 이상 버전
+Visual Studio 2010 또는 이상 버전입니다.
 
 `decltype(auto)` Visual Studio 2015 이상이 필요합니다.
