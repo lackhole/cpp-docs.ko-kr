@@ -1,23 +1,25 @@
 ---
 title: MFC ODBC 소비자 마법사
-ms.date: 10/03/2018
-f1_keywords:
-- vc.codewiz.class.mfc.consumer.overview
+ms.date: 05/09/2019
 helpviewer_keywords:
-- MFC ODBC Consumer Wizard
 - wizards [MFC]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-ms.openlocfilehash: b6009a1e6b6100eabaa2ed05404217c0d2906be0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 20357646bbb7aa4fe00db43d8e77f9bf0b95c9b5
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310314"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525361"
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC 소비자 마법사
 
-> [!WARNING]
-> Visual Studio 2017 버전 15.9에서 이 코드 마법사는 더 이상 사용되지 않으므로 Visual Studio의 이후 버전에서 제거됩니다. 이 마법사는 거의 사용되지 않습니다. 이 마법사가 제거되더라도 ATL 및 MFC에 대한 일반 지원은 그대로 유지됩니다. 이 지원 중단에 대한 의견을 공유하려면 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)를 완료하세요. 여러분의 의견은 소중합니다.
+::: moniker range="vs-2019"
+
+이 마법사는 Visual Studio 2019에서 사용할 수 있는 이상 없습니다.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 이 마법사는 지정 된 데이터 원본에 액세스 하는 데 필요한 ODBC 레코드 집합 클래스와 데이터 바인딩을 설정 합니다.
 
@@ -73,6 +75,8 @@ ms.locfileid: "62310314"
 - **모든 열 바인딩**
 
    선택한 테이블의 모든 열을 바인딩한 여부를 지정 합니다. 이 상자 (기본값)을 선택 하면 모든 열이 바인딩됩니다. 이 확인란을 선택 하면 열이 바인딩되지 및 레코드 집합 클래스에 수동으로 바인딩해야 합니다.
+
+::: moniker-end
 
 ## <a name="see-also"></a>참고자료
 

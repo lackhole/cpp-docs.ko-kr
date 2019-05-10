@@ -2,12 +2,12 @@
 title: 3. 런타임 라이브러리 함수
 ms.date: 01/17/2019
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
-ms.openlocfilehash: 4e72d2d74bb26f8eeeb422881cabf92630cced43
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3eb6dc4110145a6c45dbdd772deaee3023e68e9d
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363234"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525038"
 ---
 # <a name="3-run-time-library-functions"></a>3. 런타임 라이브러리 함수
 
@@ -40,7 +40,7 @@ ms.locfileid: "62363234"
 - [omp_set_nested](#319-omp_set_nested-function)
 - [omp_get_nested](#3110-omp_get_nested-function)
 
-### <a name="311-ompsetnumthreads-function"></a>3.1.1 omp_set_num_threads 함수
+### <a name="311-omp_set_num_threads-function"></a>3.1.1 omp_set_num_threads 함수
 
 합니다 `omp_set_num_threads` 기본 개수를 지정 하지 않은 병렬 영역 나중에 사용할 스레드를 설정 하는 함수를 `num_threads` 절. 형식은 다음과 같습니다.
 
@@ -62,7 +62,7 @@ void omp_set_num_threads(int num_threads);
 - [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads) 환경 변수
 - [num_threads](2-directives.md#23-parallel-construct) 절
 
-### <a name="312-ompgetnumthreads-function"></a>3.1.2 omp_get_num_threads 함수
+### <a name="312-omp_get_num_threads-function"></a>3.1.2 omp_get_num_threads 함수
 
 `omp_get_num_threads` 함수의 수를 반환 스레드의 현재 호출 하는 병렬 영역을 실행 하는 팀에서. 형식은 다음과 같습니다.
 
@@ -81,7 +81,7 @@ int omp_get_num_threads(void);
 - [num_threads](2-directives.md#23-parallel-construct)
 - [parallel](2-directives.md#23-parallel-construct)
 
-### <a name="313-ompgetmaxthreads-function"></a>3.1.3 omp_get_max_threads 함수
+### <a name="313-omp_get_max_threads-function"></a>3.1.3 omp_get_max_threads 함수
 
 `omp_get_max_threads` 하는 경우 병렬 영역 없이 팀을 구성 하는 데 사용 하는 스레드의 수 이상이 되도록 보장에 정수를 반환 하는 함수를 `num_threads` 코드의 경우 이때 표시 된 절. 형식은 다음과 같습니다.
 
@@ -109,7 +109,7 @@ threads-used-for-next-team
 - [omp_set_dynamic](#317-omp_set_dynamic-function)
 - [num_threads](2-directives.md#23-parallel-construct)
 
-### <a name="314-ompgetthreadnum-function"></a>3.1.4 omp_get_thread_num 함수
+### <a name="314-omp_get_thread_num-function"></a>3.1.4 omp_get_thread_num 함수
 
 `omp_get_thread_num` 함수를 실행 하는 스레드의 해당 팀 내에서 스레드 수를 반환 합니다. 스레드 번호 힘은 0 및 `omp_get_num_threads()`-1을 포함 합니다. 팀의 마스터 스레드는 스레드 0입니다.
 
@@ -126,7 +126,7 @@ int omp_get_thread_num(void);
 
 - [omp_get_num_threads](#312-omp_get_num_threads-function) 함수
 
-### <a name="315-ompgetnumprocs-function"></a>3.1.5 omp_get_num_procs 함수
+### <a name="315-omp_get_num_procs-function"></a>3.1.5 omp_get_num_procs 함수
 
 `omp_get_num_procs` 함수의 함수 호출 시 프로그램에 사용할 수 있는 프로세서의 수를 반환 합니다. 형식은 다음과 같습니다.
 
@@ -135,7 +135,7 @@ int omp_get_thread_num(void);
 int omp_get_num_procs(void);
 ```
 
-### <a name="316-ompinparallel-function"></a>3.1.6 omp_in_parallel 함수
+### <a name="316-omp_in_parallel-function"></a>3.1.6 omp_in_parallel 함수
 
 `omp_in_parallel` 병렬로 실행 하는 병렬 영역 동적 범위 내에서 호출 되 면 함수는 0이 아닌 값을 반환, 그렇지 않으면 0을 반환 합니다. 형식은 다음과 같습니다.
 
@@ -146,7 +146,7 @@ int omp_in_parallel(void);
 
 이 함수에는 serialize 되는 중첩 된 영역을 포함 하 여 병렬로 실행 하는 지역 내에서 호출 될 경우 0이 아닌 값을 반환 합니다.
 
-### <a name="317-ompsetdynamic-function"></a>3.1.7 omp_set_dynamic 함수
+### <a name="317-omp_set_dynamic-function"></a>3.1.7 omp_set_dynamic 함수
 
 `omp_set_dynamic` 함수를 사용할지 지역 병렬 실행에 사용 가능한 스레드 수를 동적으로 조정 합니다. 형식은 다음과 같습니다.
 
@@ -171,7 +171,7 @@ void omp_set_dynamic(int dynamic_threads);
 - [OMP_DYNAMIC](4-environment-variables.md#43-omp_dynamic)
 - [omp_in_parallel](#316-omp_in_parallel-function)
 
-### <a name="318-ompgetdynamic-function"></a>3.1.8 omp_get_dynamic 함수
+### <a name="318-omp_get_dynamic-function"></a>3.1.8 omp_get_dynamic 함수
 
 `omp_get_dynamic` 스레드를 동적으로 조정 사용 하 고 그렇지 않으면 0을 반환 하는 경우 함수는 0이 아닌 값을 반환 합니다. 형식은 다음과 같습니다.
 
@@ -186,7 +186,7 @@ int omp_get_dynamic(void);
 
 - 동적 스레드 조정에 대 한 참조 [omp_set_dynamic](#317-omp_set_dynamic-function)합니다.
 
-### <a name="319-ompsetnested-function"></a>3.1.9 omp_set_nested 함수
+### <a name="319-omp_set_nested-function"></a>3.1.9 omp_set_nested 함수
 
 `omp_set_nested` 함수 하거나 중첩 된 병렬 처리를 사용 하지 않도록 설정 합니다. 형식은 다음과 같습니다.
 
@@ -208,7 +208,7 @@ void omp_set_nested(int nested);
 - [OMP_NESTED](4-environment-variables.md#44-omp_nested)
 - [omp_in_parallel](#316-omp_in_parallel-function)
 
-### <a name="3110-ompgetnested-function"></a>3.1.10 omp_get_nested 함수
+### <a name="3110-omp_get_nested-function"></a>3.1.10 omp_get_nested 함수
 
 `omp_get_nested` 비활성화 된 경우 함수는 중첩 된 병렬 처리를 사용 하는 경우 0이 아닌 값 및 0 반환 합니다. 중첩 된 병렬 처리에 대 한 자세한 내용은 참조 하세요. [omp_set_nested](#319-omp_set_nested-function)합니다. 형식은 다음과 같습니다.
 
@@ -241,7 +241,7 @@ int omp_get_nested(void);
 
 OpenMP lock 함수에는 항상 읽기 하며 최신 잠금 변수의 값을 업데이트 하는 방식으로 잠금을 변수에 액세스 합니다. OpenMP 프로그램 명시적 포함할 필요는 없습니다 따라서 `flush` 지시문을 잠금 변수의 값 다른 스레드 간에 일관 되는지 확인 합니다. (에 대 한 요구가 있을 `flush` 지시문을 다른 변수 값을 일관 되 게 합니다.)
 
-### <a name="321-ompinitlock-and-ompinitnestlock-functions"></a>3.2.1 omp_init_lock and omp_init_nest_lock 함수
+### <a name="321-omp_init_lock-and-omp_init_nest_lock-functions"></a>3.2.1 omp_init_lock and omp_init_nest_lock 함수
 
 이러한 함수에는 잠금을 초기화 하는 유일한 수단을 제공 합니다. 각 함수 초기화 매개 변수를 사용 하 여 연결 된 잠금을 *잠금* 예정 된 호출에 사용 합니다. 형식은 다음과 같습니다.
 
@@ -253,7 +253,7 @@ void omp_init_nest_lock(omp_nest_lock_t *lock);
 
 초기 상태를 잠긴 아닙니다 (즉, 스레드가 소유 하지 않는 잠금). 중첩 가능 잠금을 초기 중첩 개수는 0입니다. 비규격 이미 초기화 된 잠금 변수를 사용 하 여 이러한 루틴 중 하나를 호출 하는 것입니다.
 
-### <a name="322-ompdestroylock-and-ompdestroynestlock-functions"></a>3.2.2 omp_destroy_lock and omp_destroy_nest_lock 함수
+### <a name="322-omp_destroy_lock-and-omp_destroy_nest_lock-functions"></a>3.2.2 omp_destroy_lock and omp_destroy_nest_lock 함수
 
 이러한 기능을 확인 변수 뾰족한 *잠금* 초기화 되지 않았습니다. 형식은 다음과 같습니다.
 
@@ -265,7 +265,7 @@ void omp_destroy_nest_lock(omp_nest_lock_t *lock);
 
 가 초기화 되지 않은 잠금 변수를 사용 하 여 이러한 루틴 중 하나를 호출 하는 정책을 준수 하지 않는 또는 잠금 해제입니다.
 
-### <a name="323-ompsetlock-and-ompsetnestlock-functions"></a>3.2.3 omp_set_lock and omp_set_nest_lock 함수
+### <a name="323-omp_set_lock-and-omp_set_nest_lock-functions"></a>3.2.3 omp_set_lock and omp_set_nest_lock 함수
 
 이러한 각 함수는 지정 된 잠금을 사용할 수 있고 잠금이 설정 될 때까지 함수를 실행 하는 스레드를 차단 합니다. 간단한 잠겨 있으면 사용 가능한 잠금 해제 합니다. 있으면 중첩 가능 잠금 수 잠금이 해제 된 스레드가 함수를 실행 하 여 이미 소유 하는 경우. 형식은 다음과 같습니다.
 
@@ -279,7 +279,7 @@ void omp_set_nest_lock(omp_nest_lock_t *lock);
 
 인수에서 중첩 가능 잠금는 `omp_set_nest_lock` 함수 초기화 잠금 변수를 가리켜야 합니다. 중첩 수 증가 하 고 스레드 부여 또는 잠금 소유권을 유지 합니다.
 
-### <a name="324-ompunsetlock-and-ompunsetnestlock-functions"></a>3.2.4 omp_unset_lock and omp_unset_nest_lock 함수
+### <a name="324-omp_unset_lock-and-omp_unset_nest_lock-functions"></a>3.2.4 omp_unset_lock and omp_unset_nest_lock 함수
 
 이러한 함수는 잠금 소유권을 해제 하는 수단을 제공 합니다. 형식은 다음과 같습니다.
 
@@ -295,7 +295,7 @@ void omp_unset_nest_lock(omp_nest_lock_t *lock);
 
 중첩 가능 잠금는 `omp_unset_nest_lock` 함수는 중첩 개수 및 릴리스 결과 횟수가 0 이면 잠금 소유권에서 함수를 실행 하는 스레드입니다.
 
-### <a name="325-omptestlock-and-omptestnestlock-functions"></a>3.2.5 omp_test_lock and omp_test_nest_lock 함수
+### <a name="325-omp_test_lock-and-omp_test_nest_lock-functions"></a>3.2.5 omp_test_lock and omp_test_nest_lock 함수
 
 이러한 함수 잠금을 설정 하려고 하지만 스레드 실행을 차단 하지 않습니다. 형식은 다음과 같습니다.
 
@@ -318,7 +318,7 @@ int omp_test_nest_lock(omp_nest_lock_t *lock);
 - 합니다 [omp_get_wtime](#331-omp_get_wtime-function) 함수 경과 된 벽 시계 시간을 반환 합니다.
 - 합니다 [omp_get_wtick](#332-omp_get_wtick-function) 연속 클록 틱 간 시간 (초)을 반환 합니다.
 
-### <a name="331-ompgetwtime-function"></a>3.3.1 omp_get_wtime 함수
+### <a name="331-omp_get_wtime-function"></a>3.3.1 omp_get_wtime 함수
 
 `omp_get_wtime` 함수 반환 배정밀도 부동 소수점 값 경과 된 벽 시계 시간을 몇 가지 "과거의 지정 시간" 이후의 초 단위입니다.  실제 "시간 이전에" 임의적 이지만 응용 프로그램의 실행 하는 동안 변경 되지 않도록 보장에 해당 합니다. 형식은 다음과 같습니다.
 
@@ -340,7 +340,7 @@ printf_s("Work took %f sec. time.\n", end-start);
 
 반환 된 시간은 응용 프로그램에 참여 하는 모든 스레드에서 전역적으로 일관 되 게 필요가 있는 것으로 "스레드별 times" 이며
 
-### <a name="332-ompgetwtick-function"></a>3.3.2 omp_get_wtick 함수
+### <a name="332-omp_get_wtick-function"></a>3.3.2 omp_get_wtick 함수
 
 `omp_get_wtick` 반환 배정밀도 부동 소수점 값 시간 (초) 수와 같은 연속 클록 틱 간입니다. 형식은 다음과 같습니다.
 
