@@ -1,14 +1,14 @@
 ---
 title: 형식 변환 및 형식 안전성(모던 C++)
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-ms.openlocfilehash: 79285e4870b73ff01ed3b230a0162f87c0400aa8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: e06ea3f9c3ea427f205764c35988ea3316c3794a
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404691"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221856"
 ---
 # <a name="type-conversions-and-type-safety-modern-c"></a>형식 변환 및 형식 안전성(모던 C++)
 
@@ -84,7 +84,7 @@ cout << u3 << endl; // prints 4294967295
 
 ### <a name="pointer-conversions"></a>포인터 변환
 
-많은 식에서 C 스타일 배열은 배열의 첫 번째 요소에 대한 포인터로 암시적으로 변환되고 상수 변환이 자동으로 발생할 수 있습니다. 이 방법이 편리하지만 잠재적으로 오류가 발생할 수도 있습니다. 예를 들어 다음 잘못 디자인된 코드 예제는 무의미한 것 같지만 Visual C++에서 컴파일되고 'p'의 결과를 생성합니다. 먼저 "Help" 문자열 상수 리터럴은 배열의 첫 번째 요소를 가리키는 `char*`로 변환되고 해당 포인터는 이제 마지막 요소 'p'를 가리키도록 세 가지 요소로 증가됩니다.
+많은 식에서 C 스타일 배열은 배열의 첫 번째 요소에 대한 포인터로 암시적으로 변환되고 상수 변환이 자동으로 발생할 수 있습니다. 이 방법이 편리하지만 잠재적으로 오류가 발생할 수도 있습니다. 예를 들어 다음 잘못 디자인 된 코드 예제에서는 무의미 힘들고 아직 컴파일되지 하 고 'p'의 결과 생성 합니다. 먼저 "Help" 문자열 상수 리터럴은 배열의 첫 번째 요소를 가리키는 `char*`로 변환되고 해당 포인터는 이제 마지막 요소 'p'를 가리키도록 세 가지 요소로 증가됩니다.
 
 ```cpp
 char* s = "Help" + 3;

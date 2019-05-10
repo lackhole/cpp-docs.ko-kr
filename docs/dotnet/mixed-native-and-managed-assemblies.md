@@ -12,12 +12,12 @@ helpviewer_keywords:
 - mixed assemblies [C++]
 - native code [C++], .NET interoperatibility
 ms.assetid: 4299dfce-392f-4933-8bf0-5da2f0d1c282
-ms.openlocfilehash: 78e95177282804369bac2065582a06b8acbc975b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 043390a2ebefcadac300b7fb0b05ae7f5ed411f3
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384857"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447294"
 ---
 # <a name="mixed-native-and-managed-assemblies"></a>혼합형된 (네이티브 및 관리) 어셈블리
 
@@ -25,9 +25,9 @@ ms.locfileid: "62384857"
 
 네이티브 완전히 구성 된 기존 라이브러리 예를 들어, C++ 코드 제공 될 수 있습니다.NET 플랫폼을 사용 하 여 하나의 모듈을 다시 컴파일하여 합니다 **/clr** 컴파일러 스위치입니다. 이 모듈 다음.NET 기능을 사용할 수 있지만 나머지 응용 프로그램의 호환성이 유지 됩니다. 동일한 파일 내에서 함수에서 함수 별로 관리 및 네이티브 컴파일을 선택할 수도 (참조 [관리 되는, 관리 되지 않는](../preprocessor/managed-unmanaged.md)).
 
-Visual C++ 만 사용 하 여 혼합 된 관리 되는 어셈블리의 생성을 지원 합니다 **/clr** 컴파일러 옵션입니다. **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다. 순수 이미지나 검증할 수 있는 관리 되는 어셈블리를 필요로 하는 경우에 C#을 사용 하 여 만든 것이 좋습니다.
+Visual C++ 만 사용 하 여 혼합 된 관리 되는 어셈블리의 생성을 지원 합니다 **/clr** 컴파일러 옵션입니다. **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서는 지원 중단 예정이고 Visual Studio 2017에서는 지원되지 않습니다. 순수 이미지나 검증할 수 있는 관리 되는 어셈블리를 필요로 하는 경우에 C#을 사용 하 여 만든 것이 좋습니다.
 
-시각적 개체의 이전 버전 C++ 컴파일러 도구 집합 세 가지 유형의 관리 되는 어셈블리의 생성을 지원 합니다: 혼합형, 순수형 및 안정형 합니다. 후자의 두에 설명 되어 [순수형 및 안정형 코드 (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)합니다.
+이전 버전의 Microsoft C++ 컴파일러 도구 집합 세 가지 유형의 관리 되는 어셈블리의 생성을 지원 합니다: 혼합형, 순수형 및 안정형 합니다. 후자의 두에 설명 되어 [순수형 및 안정형 코드 (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)합니다.
 
 ## <a name="in-this-section"></a>단원 내용
 

@@ -2,12 +2,12 @@
 title: Windows XP 용 프로그램 구성
 ms.date: 02/02/2018
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
-ms.openlocfilehash: 989a4e2c7e91c05498902bf1c5cb9d838ee47c3b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: f27921e062fd8abb7bc9b63bfbb9b050f25ee54b
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273804"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446366"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Windows XP 용 프로그램 구성
 
@@ -25,7 +25,7 @@ Visual Studio에 포함 된 Windows XP 플랫폼 도구 집합을 사용 하면 
 
 1. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다.
 
-1. 에 **속성 페이지** 대화 상자의 프로젝트에 대 한 **구성 속성** > **일반**설정의 **플랫폼 도구 집합** 속성을 원하는 Windows XP 도구 집합입니다. 예를 들어 선택할 **Visual Studio 2017-Windows XP (v141_xp)** Microsoft Visual C++ 2017 컴파일러를 사용 하 여 Windows XP 및 Windows Server 2003에 대 한 코드를 만듭니다.
+1. 에 **속성 페이지** 대화 상자의 프로젝트에 대 한 **구성 속성** > **일반**설정의 **플랫폼 도구 집합** 속성을 원하는 Windows XP 도구 집합입니다. 예를 들어 선택할 **Visual Studio 2017-Windows XP (v141_xp)** Microsoft를 사용 하 여 Windows XP 및 Windows Server 2003에 대 한 코드를 만드는 C++ Visual Studio 2017에서는 컴파일러.
 
 ### <a name="c-runtime-support"></a>C++ 런타임 지원
 

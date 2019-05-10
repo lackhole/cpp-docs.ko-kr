@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual C++ projects, properties
 - projects [C++], properties
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-ms.openlocfilehash: ab5456bfc8a1b8305813f4ee4a4399091de15aee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: a8c15de43a3843b8ff12cb4ad3d951d76b90c039
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314123"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446188"
 ---
 # <a name="set-compiler-and-build-properties"></a>컴파일러 설정 및 빌드 속성
 
@@ -23,7 +23,7 @@ IDE에서 프로젝트를 빌드하는 데 필요한 모든 정보는 *속성*�
 
 프로젝트를 만들 때 시스템은 다양한 속성에 대해 값을 지정합니다. 기본값은 프로젝트의 종류 및 앱 마법사에서 선택한 옵션에 따라 다소 다릅니다. 예를 들어 ATL 프로젝트에는 MIDL 파일과 관련된 속성이 있지만 이 파일들은 기본 콘솔 애플리케이션에는 없습니다. 기본 속성은 속성 페이지의 일반 창에 표시됩니다.
 
-![Visual C&#43; &#43; 프로젝트 기본값](media/visual-c---project-defaults.png "Visual C++ 프로젝트 기본값")
+![Visual C&#43; &#43; 프로젝트 기본값](media/visual-c---project-defaults.png "시각적 C++ 프로젝트 기본값")
 
 ## <a name="applying-properties-to-build-configurations-and-target-platforms"></a>속성을 구성 하 고 대상 플랫폼 빌드를 적용 합니다.
 
@@ -61,7 +61,7 @@ C++ 컴파일러 및 링커 옵션은 아래에 **C/C++** 하 고 **링커** 노
 
 MSBuild는 디렉터리 및 경로 포함 하는 특정 문자열 값에 대 한 "매크로"를 호출 하는 컴파일 타임 상수의 사용을 지원 합니다. 참조 하 고 사용 하 여 수정할 수 있는 속성 페이지의 [속성 편집기](#property_editor)합니다. 
 
-다음 그림에는 Visual C++ 프로젝트에 대한 속성 페이지가 나와 있습니다. 왼쪽 창에서 **VC++ 디렉터리** *규칙*을 선택하면 오른쪽 창에 해당 규칙과 연결된 속성이 나열됩니다. 합니다 `$(...)` 값 이라고 *매크로*합니다. *매크로*는 Visual Studio 또는 MSBuild 시스템에서 정의한 값 또는 사용자 정의 값을 참조할 수 있는 컴파일 시간 상수입니다. 프로젝트 설정에 올바르게 참여는 확인 및 매크로 디렉터리 경로 같은 하드 코드 된 값 대신 사용 하 여 더 쉽게 공유할 수 있습니다 및 버전의 Visual Studio 컴퓨터 간의 속성 설정을 [ 속성 상속](project-property-inheritance.md)합니다. 
+다음 그림에서는 Visual Studio에 대 한 속성 페이지를 보여 줍니다. C++ 프로젝트입니다. 왼쪽 창에서 **VC++ 디렉터리** *규칙*을 선택하면 오른쪽 창에 해당 규칙과 연결된 속성이 나열됩니다. 합니다 `$(...)` 값 이라고 *매크로*합니다. *매크로*는 Visual Studio 또는 MSBuild 시스템에서 정의한 값 또는 사용자 정의 값을 참조할 수 있는 컴파일 시간 상수입니다. 프로젝트 설정에 올바르게 참여는 확인 및 매크로 디렉터리 경로 같은 하드 코드 된 값 대신 사용 하 여 더 쉽게 공유할 수 있습니다 및 버전의 Visual Studio 컴퓨터 간의 속성 설정을 [ 속성 상속](project-property-inheritance.md)합니다. 
 
 ![프로젝트 속성 페이지](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 

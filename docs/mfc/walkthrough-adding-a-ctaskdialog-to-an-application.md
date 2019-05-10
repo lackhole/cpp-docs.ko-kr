@@ -1,16 +1,16 @@
 ---
 title: '연습: 응용 프로그램에 CTaskDialog 추가'
-ms.date: 09/19/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - CTaskDialog, adding
 - walkthroughs [MFC], dialogs
 ms.assetid: 3a62abb8-2d86-4bec-bdb8-5784d5f9a9f8
-ms.openlocfilehash: f0992d476326e5175db799ea0f9e5667eab3704b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 8cf2223b2859a2dfa6ecc7582ec2f171a056152c
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358265"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64558200"
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>연습: 응용 프로그램에 CTaskDialog 추가
 
@@ -37,7 +37,9 @@ ms.locfileid: "62358265"
 
 ### <a name="to-replace-a-windows-message-box-with-a-ctaskdialog"></a>Windows 메시지 상자를 CTaskDialog로 대체하려면
 
-1. 기본 설정으로 새 MFC 애플리케이션 프로젝트를 만듭니다. 호출할 *MyProject*합니다.
+1. 사용 된 **MFC 응용 프로그램 마법사** 모든 기본 설정을 사용 하 여 MFC 응용 프로그램을 만들려면. [연습: 새 MFC 셸 컨트롤을 사용 하 여](walkthrough-using-the-new-mfc-shell-controls.md) 방법은 Visual Studio의 버전에 대 한 마법사를 엽니다.
+
+1. 호출할 *MyProject*합니다. 
 
 1. **솔루션 탐색기** 를 사용하여 MyProject.cpp 파일을 엽니다.
 

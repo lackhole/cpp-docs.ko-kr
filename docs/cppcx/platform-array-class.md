@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-ms.openlocfilehash: 597f8e32e2da95370169cdbfe2ccd209296322cc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 94166dfcb222d5cfece146e7ad67bb04d6ad06e9
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161671"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221833"
 ---
 # <a name="platformarray-class"></a>Platform::Array 클래스
 
@@ -56,8 +56,6 @@ Array 클래스는 봉인되므로 상속할 수 없습니다.
 Windows 런타임 형식 시스템에서는 가변된 배열의 개념이 없습니다 및 IVector 전달할 수 있으므로 < platform:: array\<T >> 반환 값 또는 메서드 매개 변수로 합니다. ABI 전반에서 가변 배열 또는 시퀀스의 시퀀스를 전달하려면 `IVector<IVector<T>^>`를 사용합니다.
 
 시간과 platform:: array를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [Array 및 WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)합니다.
-
-Windows 런타임 형식 시스템에서는 가변된 배열의 개념이 없습니다 및 IVector 전달할 수 있으므로 < platform:: array\<T >> 반환 값 또는 메서드 매개 변수로 합니다. ABI 전반에서 가변 배열 또는 시퀀스의 시퀀스를 전달하려면 `IVector<IVector<T>^>`를 사용합니다.
 
 이 클래스는 컴파일러가 자동으로 포함하는 vccorlib.h 헤더에 정의됩니다. Platform.winmd에 정의 된 public 형식이 아니기 때문에 IntelliSense에 없는 개체 브라우저에 표시 됩니다.
 

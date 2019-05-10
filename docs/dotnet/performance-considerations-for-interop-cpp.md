@@ -8,12 +8,12 @@ helpviewer_keywords:
 - mixed assemblies [C++], performance considerations
 - interoperability [C++], performance considerations
 ms.assetid: bb9a282e-c3f8-40eb-a2fa-45d80d578932
-ms.openlocfilehash: c6b4456d9c75061c9a8c93f37f98b58f92adc899
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 29dbfa6465f6bcbcf4d0618b1820e59a8edbd3a3
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384753"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447256"
 ---
 # <a name="performance-considerations-for-interop-c"></a>Interop에 대한 성능 고려 사항(C++)
 
@@ -21,7 +21,7 @@ ms.locfileid: "62384753"
 
 Visual C++ 에서는 Visual Basic과 같은 다른.NET 언어와 동일한 상호 운용성 메커니즘을 지원 하 고 C# (P/Invoke) 시각적 개체와 관련 된 interop 지원 기능을 제공 하지만 C++ (C++ interop). 성능이 중요 한 응용 프로그램에 대 한 것이 각 interop 기술 성능에 미치는 영향을 이해 해야 합니다.
 
-Interop 기술을 사용, 썽크를 호출 하는 특별 한 전환 시퀀스 필요한에 관계 없이 관리 되는 함수는 관리 되지 않는 함수 또는 그 반대로 호출 될 때마다 합니다. 이러한 썽크 시각적 개체에서 자동으로 삽입 됩니다 C++ 컴파일러에 있지만 이러한 전환은 누적 되므로 성능이 저하 될 수도 있다는 점을 염두에 중요 합니다.
+Interop 기술을 사용, 썽크를 호출 하는 특별 한 전환 시퀀스 필요한에 관계 없이 관리 되는 함수는 관리 되지 않는 함수 또는 그 반대로 호출 될 때마다 합니다. 이러한 썽크는 Microsoft에서 자동으로 삽입 C++ 컴파일러에 있지만 이러한 전환은 누적 되므로 성능이 저하 될 수도 있다는 점을 염두에 중요 합니다.
 
 ## <a name="reducing-transitions"></a>전환 줄이기
 

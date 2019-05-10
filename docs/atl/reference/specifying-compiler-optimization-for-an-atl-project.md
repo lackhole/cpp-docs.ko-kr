@@ -9,12 +9,12 @@ helpviewer_keywords:
 - ATL projects, compiler optimization
 - ATL_NO_VTABLE macro
 ms.assetid: 7f379318-66d5-43dd-a53d-530758d3a228
-ms.openlocfilehash: 5b6620b73713886301e4efc29754cf407d9576f4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 812245133b4b3b870c0c763eabcda0ec8d26e028
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62276252"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221035"
 ---
 # <a name="specifying-compiler-optimization-for-an-atl-project"></a>ATL 프로젝트에 대 한 컴파일러 최적화 지정
 
@@ -54,7 +54,7 @@ stdafx.h, 다른 모든 ATL 하기 전에 헤더 파일이 포함 됩니다.
 ## <a name="see-also"></a>참고자료
 
 [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)<br/>
-[Visual C++ 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
+[C++Visual Studio에서 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
 [ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [novtable](../../cpp/novtable.md)<br/>

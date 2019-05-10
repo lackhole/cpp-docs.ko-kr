@@ -1,19 +1,19 @@
 ---
-title: '방법: Visual 구성 C++ 플랫폼 대상 64 비트 x64 프로젝트'
+title: '방법: Visual Studio 구성 C++ 플랫폼 대상 64 비트 x64 프로젝트'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - platforms [C++], 64-bit
 - 64-bit programming [C++], configuring projects
 - project configurations [C++]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
-ms.openlocfilehash: 21c812efd101c64e250a545d2a40df6adc31c414
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: a063c2f333a755ab86a4f91c9d14d0c65a6d1414
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274475"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446399"
 ---
-# <a name="how-to-configure-visual-c-projects-to-target-64-bit-x64-platforms"></a>방법: Visual 구성 C++ 플랫폼 대상 64 비트 x64 프로젝트
+# <a name="how-to-configure-visual-studio-c-projects-to-target-64-bit-x64-platforms"></a>방법: Visual Studio 구성 C++ 플랫폼 대상 64 비트 x64 프로젝트
 
 설정 하기 위해 Visual Studio IDE에서 프로젝트 구성을 사용할 수 있습니다 C++ 대상 응용 프로그램을 64 비트, x64 플랫폼입니다. 또한 Win32 프로젝트 설정을 64비트 프로젝트 구성에 마이그레이션할 수 있습니다.
 
@@ -21,7 +21,7 @@ ms.locfileid: "62274475"
 
 1. 구성하려는 C++ 프로젝트를 엽니다.
 
-1. 해당 프로젝트의 속성 페이지를 엽니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](working-with-project-properties.md)합니다.
+1. 해당 프로젝트의 속성 페이지를 엽니다. 자세한 내용은 [Visual Studio에서 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)을 참조합니다.
 
    > [!NOTE]
    > .NET 프로젝트에 대 한 확인 합니다 **구성 속성** 에서 노드 또는 해당 자식 노드 중 하나를 선택 합니다  **\<Projectname > 속성 페이지** 대화 상자 고, 그렇지 않으면 합니다  **Configuration Manager** 단추를 사용할 수 있습니다.
