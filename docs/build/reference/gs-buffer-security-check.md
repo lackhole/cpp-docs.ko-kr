@@ -1,4 +1,4 @@
----
+﻿---
 title: /GS(버퍼 보안 검사)
 ms.date: 11/04/2016
 f1_keywords:
@@ -33,7 +33,7 @@ ms.locfileid: "62292174"
 
 ## <a name="remarks"></a>설명
 
-**/GS**는 기본적으로 켜져 있습니다. 보안 위험에 노출되지 않기를 원하는 경우 **/GS-** 를 사용합니다. 버퍼 오버런 탐지를 억제하는 방법에 대한 자세한 내용은 [safebuffers](../../cpp/safebuffers.md)를 참조합니다.
+**/GS**는 기본적으로 켜져 있습니다. 보안 위험에 노출되지 않기를 원하는 경우 **/GS-**를 사용합니다. 버퍼 오버런 탐지를 억제하는 방법에 대한 자세한 내용은 [safebuffers](../../cpp/safebuffers.md)를 참조합니다.
 
 ## <a name="security-checks"></a>보안 검사
 
