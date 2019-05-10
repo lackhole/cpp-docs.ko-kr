@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: b0de5a84-da72-4e5a-9a4e-541099f939e0
-ms.openlocfilehash: b2563ba0ae2a07bc9f9d81128745ed4b9651fb6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 962bb2aaa2f05ad0dc4c9c86cd5cc9694cfad98b
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315640"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446166"
 ---
 # <a name="zcwchart-wchart-is-native-type"></a>/Zc:wchar_t(wchar_t를 네이티브 형식으로 인식)
 
@@ -31,7 +31,7 @@ C++ 표준에 따라 `wchar_t`를 기본 제공 형식으로 구문 분석합니
 
 하는 경우 **/zc: wchar_t** 켜져 `wchar_t` 로 컴파일된 코드에서 기본 제공 정수 계열 형식에 대 한 키워드는 C++. 하는 경우 **/zc: wchar_t-** (빼기 기호)로 지정 하거나 코드에서 C로 컴파일된, `wchar_t` 기본 제공 형식이 아닙니다. 대신 `wchar_t` 으로 정의 되는 `typedef` 에 대 한 `unsigned short` canonical 헤더 stddef.h에 합니다. (Microsoft에서 구현한 정의 다른 표준 헤더 stddef.h로 포함 되는 다른 헤더에 함.)
 
-하지 않는 것이 좋습니다 **/zc: wchar_t-** 때문에 C++ 표준에서는 `wchar_t` 기본 제공 형식 이어야 합니다. `typedef` 버전을 사용하면 이식성 문제가 발생할 수 있습니다. 시각적 개체의 이전 버전에서 업그레이드 하는 경우 C++ 컴파일러 오류 발생 [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) 코드를 암시적으로 변환 하 려 하기 때문에 `wchar_t` 에 `unsigned short`, 오류를 해결 하는 코드를 변경 하는 것이 좋습니다 설정 하는 대신 **/zc: wchar_t-** 합니다.
+하지 않는 것이 좋습니다 **/zc: wchar_t-** 때문에 C++ 표준에서는 `wchar_t` 기본 제공 형식 이어야 합니다. `typedef` 버전을 사용하면 이식성 문제가 발생할 수 있습니다. 이전 버전의 Visual Studio에서 업그레이드 하 고 컴파일러 오류가 발생 하는 경우 [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) 코드를 암시적으로 변환 하 려 하기 때문에 `wchar_t` 에 `unsigned short`, 오류를 해결 하는 코드를 변경 하는 것이 좋습니다 설정 하는 대신 **/zc: wchar_t-** 합니다.
 
 합니다 **/zc: wchar_t** 옵션이 기본적으로 켜져 C++ 컴파일에 C 컴파일에서 무시 됩니다. 합니다 [/ permissive-](permissive-standards-conformance.md) 옵션이 적용 되지 않습니다 **/zc: wchar_t**합니다.
 

@@ -1,15 +1,15 @@
 ---
 title: 속성 페이지 XML 규칙 파일
-ms.date: 04/27/2017
+ms.date: 05/06/2019
 helpviewer_keywords:
 - property page XML files
 ms.assetid: dd9d9734-4387-4098-8ba6-85b93507731d
-ms.openlocfilehash: 17b89f00b2e51c960ed7d3219427b56d92851b81
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 610dc7341a35845b35d8ed80f52b421d1c2fb5d1
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217723"
 ---
 # <a name="property-page-xml-rule-files"></a>속성 페이지 XML 규칙 파일
 
@@ -19,7 +19,7 @@ IDE의 프로젝트 속성 페이지는 VCTargets 폴더의 XML 파일로 구성
 
 먼저 프로젝트의 속성 페이지를 엽니다(**솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 속성 선택).
 
-![Visual C++ 프로젝트 속성](../media/cpp-property-page-2017.png)
+![Visual Studio C++ 프로젝트 속성](../media/cpp-property-page-2017.png)
 
 **구성 속성** 아래의 각 노드를 규칙이라고 합니다. 규칙은 때때로 컴파일러와 같은 단일 도구를 나타내는 경우도 있지만, 일반적으로 이 용어는 속성을 가지고 실행되며 출력을 생성할 수 있는 것을 나타냅니다. 각 규칙은 VCTargets 폴더의 xml 파일에서 채워집니다. 예를 들어 위에 표시된 C/C++ 규칙은 'cl.xml'로 채워집니다.
 

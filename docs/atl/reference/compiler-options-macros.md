@@ -1,6 +1,6 @@
 ---
 title: 컴파일러 옵션 매크로
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 f1_keywords:
 - _ATL_ALL_WARNINGS
 - _ATL_APARTMENT_THREADED
@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - compiler options, macros
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
-ms.openlocfilehash: 79b1cabc0304e905012db5f6dd73ed71073c0c1e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: e1d0f6e068989179dd9498e399ca5304a2b378b8
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278425"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221122"
 ---
 # <a name="compiler-options-macros"></a>컴파일러 옵션 매크로
 
@@ -36,7 +36,7 @@ ms.locfileid: "62278425"
 |[_ATL_FREE_THREADED](#_atl_free_threaded)|개체의 하나 이상의 무료 또는 중립 스레딩을 사용 하는 경우 정의 합니다.|
 |[_ATL_MULTI_THREADED](#_atl_multi_threaded)|프로젝트를 나타내는 기호가 둘 다 무료 또는 중립으로 표시 되는 개체를 해야 합니다. 매크로 [_ATL_FREE_THREADED](#_atl_free_threaded) 를 대신 사용 해야 합니다.|
 |[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|ATL.로 네임 스페이스의 기본 사용을 방지 하는 기호|
-|[_ATL_NO_COM_SUPPORT](#_atl_no_com_support)|COM 관련 코드 프로젝트를 사용 하 여 컴파일할 하지 못하게 하는 기호입니다.|
+|[_ATL_NO_COM_SUPPORT](#_atl_no_com_support)|COM 관련 코드 프로젝트를 사용 하 여 컴파일되는 것을 방지 하는 기호입니다.|
 |[ATL_NO_VTABLE](#atl_no_vtable)|Vtable 포인터는 클래스의 생성자와 소멸자에서 초기화 되는 것을 방지 하는 기호입니다.|
 |[ATL_NOINLINE](#atl_noinline)|인라인 함수를 나타내는 기호 되지 않아야 합니다.|
 |[_ATL_SINGLE_THREADED](#_atl_single_threaded)|개체의 모든 단일 스레딩 모델을 사용 하는 경우 정의 합니다.|
@@ -113,7 +113,7 @@ ANSI 사용 하도록 하려면이 매크로 정의 합니다. C++ 멤버 함수
 
 ### <a name="remarks"></a>설명
 
-ATL 및 MFC 라이브러리 시각적 개체와 일치 하도록 변경 되었습니다 C++ 컴파일러의 향상 된 표준 C++ 준수 합니다. ANSI에 따라 C++ standard, 클래스 멤버 함수에 대 한 포인터의 구문을 해야 `&CMyClass::MyFunc`합니다.
+ATL 및 MFC 라이브러리는 Microsoft와 일치 하도록 변경 되었습니다 C++ 컴파일러의 향상 된 표준 C++ 준수 합니다. ANSI에 따라 C++ standard, 클래스 멤버 함수에 대 한 포인터의 구문을 해야 `&CMyClass::MyFunc`합니다.
 
 때 [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) 정의 되어 있지 않습니다 (기본적인 경우), ATL/MFC 사용 하지 않도록 설정 (특히 메시지 매핑) 매크로 맵에서 C4867 오류 이전 버전에서 생성 된 코드를 계속 이전 처럼 빌드할 수 있도록 합니다. 정의 하는 경우 **_ATL_ENABLE_PTM_WARNING**, 코드 해야 C++ 표준을 준수 합니다.
 
@@ -165,7 +165,7 @@ _ATL_NO_AUTOMATIC_NAMESPACE
 
 ##  <a name="_atl_no_com_support"></a>  _ATL_NO_COM_SUPPORT
 
-COM 관련 코드 프로젝트를 사용 하 여 컴파일할 하지 못하게 하는 기호입니다.
+COM 관련 코드 프로젝트를 사용 하 여 컴파일되는 것을 방지 하는 기호입니다.
 
 ```
 _ATL_NO_COM_SUPPORT

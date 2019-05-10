@@ -1,16 +1,16 @@
 ---
 title: '연습: MFC 프로젝트에 D2D 개체 추가'
-ms.date: 09/20/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - MFC, D2D
 - D2D [MFC]
 ms.assetid: dda36c33-c231-4da6-a62f-72d69a12b6dd
-ms.openlocfilehash: 0793511f09be9dcb37732c4c16bfd2b3038a6cf4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: 5710add59c0e5d27b2969ae22087533cae901ca9
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358619"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64558178"
 ---
 # <a name="walkthrough-adding-a-d2d-object-to-an-mfc-project"></a>연습: MFC 프로젝트에 D2D 개체 추가
 
@@ -36,9 +36,9 @@ Visual Studio를 설치 하려면이 연습을 완료 해야 합니다 **를 사
 
 ## <a name="to-create-an-mfc-application"></a>MFC 응용 프로그램을 만들려면
 
-1. 에 **파일** 메뉴에서 **새로 만들기** 를 선택한 후 **프로젝트**합니다.
+1. 사용 된 **MFC 응용 프로그램 마법사** MFC 응용 프로그램을 만들려면. [연습: 새 MFC 셸 컨트롤을 사용 하 여](walkthrough-using-the-new-mfc-shell-controls.md) 방법은 Visual Studio의 버전에 대 한 마법사를 엽니다.
 
-1. 에 **새 프로젝트** 대화 상자의 아래 왼쪽된 창에서 **설치 된 템플릿**, 확장 **시각적 C++**  선택한 후 **MFC**. 가운데 창에서 선택 **MFC 응용 프로그램**합니다. 에 **이름을** 상자에 입력 *MFCD2DWalkthrough*합니다. **확인**을 선택합니다.
+1. 에 **이름을** 상자에 입력 *MFCD2DWalkthrough*합니다. **확인**을 선택합니다.
 
 1. 에 **MFC 응용 프로그램 마법사**, 선택 **마침** 설정을 변경 하지 않고 있습니다.
 

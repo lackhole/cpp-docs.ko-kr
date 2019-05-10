@@ -1,5 +1,5 @@
 ---
-title: 컴파일러 오류 C2700 통해 C2799
+title: 컴파일러 오류 C2700 ~ C2799
 ms.date: 04/21/2019
 f1_keywords:
 - C2716
@@ -41,13 +41,13 @@ helpviewer_keywords:
 - C2799
 ms.assetid: 6ee257bb-94bc-42b9-af2c-3c73926afba4
 ms.openlocfilehash: a6f4391008bf9b0a066ba65f27a41697c6097c2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153221"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857640"
 ---
-# <a name="compiler-errors-c2700-through-c2799"></a>컴파일러 오류 C2700 통해 C2799
+# <a name="compiler-errors-c2700-through-c2799"></a>컴파일러 오류 C2700 ~ C2799
 
 설명서의이 섹션의 문서는 컴파일러에서 생성 되는 오류 메시지의 하위 집합을 설명 합니다.
 

@@ -1,8 +1,6 @@
 ---
 title: 확장명 DLL
-ms.date: 11/04/2016
-f1_keywords:
-- afxdll
+ms.date: 05/06/2019
 helpviewer_keywords:
 - memory [C++], DLLs
 - MFC extension DLLs [C++]
@@ -15,12 +13,12 @@ helpviewer_keywords:
 - extension DLLs [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
-ms.openlocfilehash: eca33b60b8fa6ba812bf5fa68520f51ceb1d164b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 55b1e55a9c7bdf6daaff98a7fe3f1a2a55f68334
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195662"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220769"
 ---
 # <a name="mfc-extension-dlls"></a>MFC 확장명 Dll
 
@@ -52,7 +50,7 @@ MFC 확장 DLL 공유 버전의 MFC 사용 하 여 동일한 방식으로 응용
 
 MFC 버전 4.0이이 유형의 DLL AFXDLL 호출 되었습니다. AFXDLL 참조는 `_AFXDLL` DLL을 빌드할 때 정의 된 전처리기 기호입니다.
 
-MFC의 공유 버전에 대 한 가져오기 라이브러리에 설명 된 규칙에 따라 라고 [MFC Dll의 명명 규칙](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)합니다. Visual C++ 미리 빌드된 버전의 MFC Dll의 경우와의 비 MFC Dll 응용 프로그램을 사용 하 여 배포 및 사용할 수 있는 숫자를 제공 합니다. 이러한 Program Files\Microsoft Visual Studio 폴더에 설치 되는 Redist.txt에 나와 있습니다.
+MFC의 공유 버전에 대 한 가져오기 라이브러리에 설명 된 규칙에 따라 라고 [MFC Dll의 명명 규칙](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)합니다. Visual Studio의 MFC Dll 및 숫자의 비 MFC Dll 응용 프로그램을 사용 하 여 배포 및 사용할 수 있는 미리 빌드된 버전을 제공 합니다. 이러한 Program Files\Microsoft Visual Studio 폴더에 설치 되는 Redist.txt에 나와 있습니다.
 
 .Def 파일을 사용 하 여 내보내려는 경우 헤더 파일의 시작과 끝에 다음 코드를 추가 합니다.
 
@@ -132,4 +130,4 @@ MFCxx.dll은 대개 마지막 리소스 및 클래스 목록에 있습니다. MF
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](dlls-in-visual-cpp.md)
+[C를 만들기 /C++ Visual Studio에서 Dll](dlls-in-visual-cpp.md)

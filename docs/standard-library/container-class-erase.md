@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - erase method
 ms.assetid: abc091c5-5a80-4bd8-93a8-a2d9bde2efec
-ms.openlocfilehash: 11e13fc74de779076b40ba338a21a6736eb04e06
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0ef4db1c14942fc896f10095ff2331648d27c820
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62211058"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221643"
 ---
 # <a name="container-classerase"></a>Container Class::erase
 
 > [!NOTE]
-> 이 항목은 C++ 표준 라이브러리에서 사용되는 작동하지 않는 컨테이너 예제로 Visual C++ 설명서에 포함되어 있습니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
+> 이 항목은 Microsoft C++ 설명서에 사용 되는 컨테이너의 작동 하지 않는 예로 C++ 표준 라이브러리입니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
 
 요소를 지웁니다.
 

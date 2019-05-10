@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC Application Wizard
 - executable files, creating
 ms.assetid: 227ac090-921d-4b2f-be0a-66a5f4cab0d4
-ms.openlocfilehash: 808e8364764dd826ee82e445627ba21b06946ed6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f69f0a19cdcd3526d8afac2e1492da806c2dffd3
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412750"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448470"
 ---
 # <a name="mfc-application-wizard"></a>MFC 응용 프로그램 마법사
 
@@ -35,7 +35,7 @@ ms.locfileid: "62412750"
 
    - 프로젝트에서 Visual Studio 프로젝트 스타일을 사용 하 여 만들어집니다 및 비주얼 스타일 전환 사용 하도록 설정 합니다.
 
-   - 프로젝트 공유 DLL에서 MFC를 사용합니다. 자세한 내용은 [Visual C++의 DLL](../../build/dlls-in-visual-cpp.md)을 참조하세요.
+   - 프로젝트 공유 DLL에서 MFC를 사용합니다. 자세한 내용은 [C 만들기 /C++ Visual Studio에서 Dll](../../build/dlls-in-visual-cpp.md)합니다.
 
 - [MFC 애플리케이션 마법사, 복합 문서 지원](../../mfc/reference/compound-document-support-mfc-application-wizard.md)
 

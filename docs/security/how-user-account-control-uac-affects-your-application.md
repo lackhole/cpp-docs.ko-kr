@@ -7,12 +7,12 @@ helpviewer_keywords:
 - user accounts [C++]
 - User Account Control [C++]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
-ms.openlocfilehash: 3702462ec892025cfb4f24d9c91e6db705b1b9a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3818b0ff7d4e4c551c41726dd44935beb5d32842
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179255"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448481"
 ---
 # <a name="how-user-account-control-uac-affects-your-application"></a>UAC(사용자 계정 컨트롤)가 애플리케이션에 주는 영향
 
@@ -22,7 +22,7 @@ UAC(사용자 계정 컨트롤)는 사용자 계정의 권한을 제한하는 Wi
 
 ## <a name="building-projects-after-enabling-uac"></a>UAC를 사용하도록 설정한 후에 프로젝트 빌드
 
-UAC를 사용하지 않는 Windows Vista에 Visual C++ 프로젝트를 빌드하고 나중에 UAC를 사용하도록 설정하는 경우에는 프로젝트를 지운 후에 다시 빌드해야 제대로 작동합니다.
+Visual Studio를 작성 하는 경우 C++ 프로젝트 UAC 사용 하 여 Windows Vista에서 사용 하지 않도록 설정 하 고 나중에 UAC를 사용 하면, 정리 하 고 올바르게 작동 하기 위해 프로젝트를 다시 작성 해야 합니다.
 
 ## <a name="applications-that-require-administrative-privileges"></a>관리 권한이 필요한 응용 프로그램
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -LN compiler option [C++]
 - /LN compiler option [C++]
 ms.assetid: 4f38f4f4-3176-4caf-8200-5c7585dc1ed3
-ms.openlocfilehash: 18b0e72d50f328afc1f2856f833cec1aa7d46f30
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 2dbd5ae5ddf802185912c49caf37aa61c6a7d4c3
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176218"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446268"
 ---
 # <a name="ln-create-msil-module"></a>/LN(MSIL 모듈 만들기)
 
@@ -36,7 +36,7 @@ ms.locfileid: "62176218"
 
 모듈의 기본 파일 확장명은 .netmodule입니다.
 
-시각적 개체의 C++ Visual 이전의 릴리스 C++ 2005 모듈을 사용 하 여 만든 **/clr:noAssembly**합니다.
+Visual Studio 2005 이전 버전에서 모듈을 사용 하 여 만든 **/clr:noAssembly**합니다.
 
 MSVC 링커는.netmodule 파일 입력을 및 어셈블리 또는.netmodule를 링커에 입력 된.netmodules에 런타임에 종속 되지 않음 출력 파일을 링커에 의해 생성 됩니다.  자세한 내용은 [링커 입력 파일로 사용하는 .netmodule 파일](netmodule-files-as-linker-input.md)을 참조하세요.
 

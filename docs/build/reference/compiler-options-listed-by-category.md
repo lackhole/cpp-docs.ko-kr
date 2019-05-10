@@ -1,15 +1,15 @@
 ---
 title: 컴파일러 옵션 범주별 목록
-ms.date: 11/12/2018
+ms.date: 05/06/2019
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: d3ebfbc3661ba648c2fdb73c697db42735faf422
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 0d12c0f82d3595ee6b61edcd21fb01dd7f49163b
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221750"
 ---
 # <a name="compiler-options-listed-by-category"></a>컴파일러 옵션 범주별 목록
 
@@ -153,7 +153,7 @@ ms.locfileid: "62294163"
 |[/bigobj](bigobj-increase-number-of-sections-in-dot-obj-file.md)|.obj 파일에서 주소 지정 가능한 섹션의 수를 늘립니다.|
 |[/c](c-compile-without-linking.md)|링크하지 않고 컴파일합니다.|
 |[/cgthreads](cgthreads-code-generation-threads.md)|최적화 및 코드 생성에 사용할 cl.exe 스레드 수를 지정합니다.|
-|[/errorReport](errorreport-report-internal-compiler-errors.md)|ICE(내부 컴파일러 오류) 정보를 Visual C++ 팀에 직접 제공할 수 있도록 합니다.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)|내부 컴파일러 오류 (ICE) 정보를 Microsoft에 직접 제공할 수 있도록 C++ 팀입니다.|
 |[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|진단 텍스트에서 cl.exe에 전달된 소스 코드 파일의 전체 경로를 표시합니다.|
 |[/FS](fs-force-synchronous-pdb-writes.md)|MSPDBSRV.EXE를 통해 serialize될 프로그램 데이터베이스(PDB) 파일에 강제로 씁니다.|
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|
@@ -213,7 +213,7 @@ ms.locfileid: "62294163"
 |[/Yd](yd-place-debug-information-in-object-file.md)|더 이상 사용되지 않습니다. 모든 개체 파일에 완전한 디버깅 정보를 저장합니다. 대신 [/Zi](z7-zi-zi-debug-information-format.md) 를 사용합니다.|
 |[/Zc:forScope-](zc-forscope-force-conformance-in-for-loop-scope.md)|더 이상 사용되지 않습니다. for 루프 범위의 규칙을 사용하지 않도록 설정합니다.|
 |[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. 언어 확장을 사용합니다.|
-|[/Zg](zg-generate-function-prototypes.md)|Visual C++ 2015에서 제거되었습니다. 함수 프로토타입을 생성합니다.|
+|[/Zg](zg-generate-function-prototypes.md)|Visual Studio 2015에서 제거 합니다. 함수 프로토타입을 생성합니다.|
 
 ## <a name="see-also"></a>참고자료
 

@@ -1,13 +1,13 @@
 ---
 title: 특성C++
-ms.date: 06/01/2018
+ms.date: 05/06/2019
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-ms.openlocfilehash: 81de2816c208d5ddc879f04d70912c3dddcd7832
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: bc92e5f3e279edc6fbea7f99d52c469f9fdf04f8
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62284749"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222298"
 ---
 # <a name="attributes-in-c"></a>특성C++
 
@@ -41,7 +41,7 @@ void Foo(int);
 
 - `[[deprecated]]` **Visual Studio 2015 이상:** 함수는 사용할 수 없습니다 지정 되 고 나중에 라이브러리 인터페이스의 버전 존재 하지 않을 수 있습니다. 컴파일러는 클라이언트 코드에서 함수를 호출 하려고 하면 정보 메시지를 생성 하는 데 사용할 수 있습니다. 클래스, typedef 이름, 변수, 비정적 데이터 멤버, 함수, 네임 스페이스, 열거형, 열거자, 또는 템플릿 특수화의 선언에 적용할 수 있습니다.
 
-- `[[fallthrough]]` **Visual Studio 2017 이상:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md))는 `[[fallthrough]]` 컨텍스트의 특성을 사용할 수 있습니다 [전환](switch-statement-cpp.md) 컴파일러 (또는 읽는 독자 라면 누구나 힌트로 문 코드)는 fallthrough 동작 합니다. 시각적 개체 C++ 컴파일러 현재 경고 하지 않습니다 fallthrough 동작에 있으므로이 특성에 적용 컴파일러 동작이 없습니다.
+- `[[fallthrough]]` **Visual Studio 2017 이상:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md))는 `[[fallthrough]]` 컨텍스트의 특성을 사용할 수 있습니다 [전환](switch-statement-cpp.md) 컴파일러 (또는 읽는 독자 라면 누구나 힌트로 문 코드)는 fallthrough 동작 합니다. Microsoft C++ 컴파일러 현재 경고 하지 않습니다 fallthrough 동작에 있으므로이 특성에 적용 컴파일러 동작이 없습니다.
 
 - `[[nodiscard]]` **Visual Studio 2017 버전 15.3 이상:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)) 지정 하는 함수의 반환 값이 아닙니다 삭제 됩니다. 이 예제에 표시 된 대로, C4834 경고를 발생 시킵니다.
 

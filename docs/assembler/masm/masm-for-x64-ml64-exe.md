@@ -6,28 +6,28 @@ helpviewer_keywords:
 - ml64.exe
 - masm for x64
 ms.assetid: 89059103-f372-4968-80ea-0c7f90bb9c91
-ms.openlocfilehash: 0404bff54a08988a72fcb0a0c075a4446bf90f48
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 1a92d2a22e8aa9df29c18fa36ff4508eb8eec57f
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178243"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65445858"
 ---
 # <a name="masm-for-x64-ml64exe"></a>x64용 MASM (ml64.exe)
 
-Visual Studio 코드를 x64 대상으로 호스트 된 버전의 어셈블러 MASM (Microsoft)을 32 비트 및 64 비트를 포함합니다. X64를 받아들이는 어셈블러는이 ml64.exe 라는 어셈블러 언어입니다. 선택 하면 MASM 명령줄 도구가 설치 된 C++ Visual Studio를 설치 하는 동안 작업 합니다. MASM 도구는 별도 다운로드로 제공 됩니다. 다운로드 하 여 Visual Studio의 복사본을 설치 하는 방법에 지침은 [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다. 전체 Visual Studio IDE를 설치 하지 않을 않지만 원하는 명령줄 도구를 다운로드 합니다 [Visual Studio 2017 용 Build Tools](https://go.microsoft.com/fwlink/p/?linkid=875721)합니다.
+Visual Studio 코드를 x64 대상으로 호스트 된 버전의 어셈블러 MASM (Microsoft)을 32 비트 및 64 비트를 포함합니다. X64를 받아들이는 어셈블러는이 ml64.exe 라는 어셈블러 언어입니다. 선택 하면 MASM 명령줄 도구가 설치 된 C++ Visual Studio를 설치 하는 동안 작업 합니다. MASM 도구는 별도 다운로드로 제공 됩니다. 다운로드 하 여 Visual Studio의 복사본을 설치 하는 방법에 지침은 [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다. 전체 Visual Studio IDE를 설치 하지 않을 않지만 원하는 명령줄 도구를 다운로드 합니다 [for Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/)합니다.
 
 MASM을 사용 하 여 빌드를 명령줄에서 대상으로 x64에 대 한 코드, x64 용 개발자 명령 프롬프트를 사용 해야 필요한 경로 및 기타 환경 변수가 설정 하는 대상입니다. 개발자 명령 프롬프트를 시작 하는 방법에 대 한 자세한 내용은 [C 빌드 /C++ 명령 줄의 코드가](../../build/building-on-the-command-line.md)합니다.
 
 Ml64.exe 명령줄 옵션에 대 한 자세한 내용은 [ML 및 ML64 명령줄 참조](../../assembler/masm/ml-and-ml64-command-line-reference.md)합니다.
 
-인라인 어셈블러 또는 ASM 키워드를 사용 하는 x64 또는 ARM 대상에 대 한 지원 되지 않습니다. X86 코드는 인라인 어셈블러는 포트를 x64 또는 ARM 코드를 변환할 수 있습니다 C++컴파일러 내장 함수를 사용 하 여, 또는 어셈블러 언어 소스 파일을 만듭니다. 시각적 개체 C++ 컴파일러 내장 함수 예제에서는 privileged, 검색/테스트, 연동, 등에에서으로 플랫폼 간 방식으로 최대한 가까운 비트에 대 한 특수 함수 지침을 사용 하 여 수 있도록 지원 합니다. 사용할 수 있는 내장 함수에 대 한 내용은 참조 하세요 [컴파일러 내장 함수](../../intrinsics/compiler-intrinsics.md)합니다.
+인라인 어셈블러 또는 ASM 키워드를 사용 하는 x64 또는 ARM 대상에 대 한 지원 되지 않습니다. X86 코드는 인라인 어셈블러는 포트를 x64 또는 ARM 코드를 변환할 수 있습니다 C++컴파일러 내장 함수를 사용 하 여, 또는 어셈블러 언어 소스 파일을 만듭니다. Microsoft C++ 컴파일러 내장 함수 예제에서는 privileged, 검색/테스트, 연동, 등에에서으로 플랫폼 간 방식으로 최대한 가까운 비트에 대 한 특수 함수 지침을 사용 하 여 수 있도록 지원 합니다. 사용할 수 있는 내장 함수에 대 한 내용은 참조 하세요 [컴파일러 내장 함수](../../intrinsics/compiler-intrinsics.md)합니다.
 
-## <a name="add-an-assembler-language-file-to-a-visual-c-project"></a>어셈블러 언어 파일을 시각적 개체 추가 C++ 프로젝트
+## <a name="add-an-assembler-language-file-to-a-visual-studio-c-project"></a>Visual Studio에 어셈블러 언어 파일을 추가 C++ 프로젝트
 
 Visual Studio 프로젝트 시스템에는 MASM을 사용 하 여 빌드된 어셈블러 언어 파일을 지원 하면 C++ 프로젝트입니다. X64 어셈블러 언어 소스 파일 및 x64를 완벽 하 게 지 원하는 MASM을 사용 하 여 개체 파일에 빌드를 만들 수 있습니다. 이러한 개체 파일에 연결할 수 있습니다 프로그램 C++ 코드를 x64 용으로 빌드된 대상입니다. 이 x64 부족을 해결 하기 위해 한 가지 방법은 인라인 어셈블러 합니다.
 
-### <a name="to-add-an-assembler-language-file-to-an-existing-visual-c-project"></a>기존 시각적 개체를 어셈블러 언어 파일을 추가 하려면 C++ 프로젝트
+### <a name="to-add-an-assembler-language-file-to-an-existing-visual-studio-c-project"></a>어셈블러 언어 파일을 기존 Visual Studio에 추가할 C++ 프로젝트
 
 1. **솔루션 탐색기**에서 프로젝트를 선택합니다. 메뉴 모음에서 선택 **프로젝트**하십시오 **빌드 사용자 지정**합니다.
 

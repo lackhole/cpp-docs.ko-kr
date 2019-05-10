@@ -21,12 +21,12 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: 774575e978a8e7f94868eb1b5dad90c6ac345460
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a752122d89b3d952aec664f0dec092af1599f143
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388178"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448923"
 ---
 # <a name="resource-editors-c"></a>리소스 편집기 (C++)
 
@@ -39,15 +39,15 @@ ms.locfileid: "62388178"
 
 |사용...|편집...|
 |----------------|----------------|
-|[액셀러레이터 키 편집기](../windows/accelerator-editor.md)|Visual C++ 프로젝트의 액셀러레이터 키 테이블입니다.|
+|[액셀러레이터 키 편집기](../windows/accelerator-editor.md)|Visual Studio에서 액셀러레이터 키 테이블 C++ 프로젝트입니다.|
 |[Binary Editor](binary-editor.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 이진 데이터 정보 및 사용자 지정 리소스입니다.|
-|[대화 상자 편집기](../windows/dialog-editor.md)|Visual C++ 프로젝트의 대화 상자입니다.|
+|[대화 상자 편집기](../windows/dialog-editor.md)|Visual Studio에서 대화 상자 C++ 프로젝트입니다.|
 |[Image Editor](../windows/image-editor-for-icons.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 비트맵, 아이콘, 커서 및 기타 이미지 파일입니다.|
-|[메뉴 편집기](../windows/menu-editor.md)|Visual C++ 프로젝트의 메뉴 리소스입니다.|
+|[메뉴 편집기](../windows/menu-editor.md)|Visual Studio에서 메뉴 리소스 C++ 프로젝트입니다.|
 |[리본 편집기](../mfc/ribbon-designer-mfc.md)|MFC 프로젝트의 리본 리소스입니다.|
-|[문자열 편집기](../windows/string-editor.md)|Visual C++ 프로젝트의 문자열 표입니다.|
-|[도구 모음 편집기](../windows/toolbar-editor.md)|Visual C++ 프로젝트의 도구 모음 리소스입니다. 합니다 **도구 모음 편집기** 의 일부인 합니다 **이미지 편집기**합니다.|
-|[버전 정보 편집기](../windows/version-information-editor.md)|Visual C++ 프로젝트의 버전 정보입니다.|
+|[문자열 편집기](../windows/string-editor.md)|Visual Studio의 문자열 표 C++ 프로젝트입니다.|
+|[도구 모음 편집기](../windows/toolbar-editor.md)|Visual Studio의 도구 모음 리소스 C++ 프로젝트입니다. 합니다 **도구 모음 편집기** 의 일부인 합니다 **이미지 편집기**합니다.|
+|[버전 정보 편집기](../windows/version-information-editor.md)|Visual Studio에서 버전 정보 C++ 프로젝트입니다.|
 
 > [!NOTE]
 > 프로젝트에.rc 파일이 없으면 하세요 [방법: 리소스 만들기](../windows/how-to-create-a-resource-script-file.md)합니다.

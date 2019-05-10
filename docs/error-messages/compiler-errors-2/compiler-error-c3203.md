@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3203
 ms.assetid: 6356770e-22c1-434c-91fe-f60b0aa23b91
-ms.openlocfilehash: 65b7e1d8f03b5e59bd21091531bc9d21472e4ae4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c55160c855a6188a616f957acee43e409b751b62
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402738"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447803"
 ---
 # <a name="compiler-error-c3203"></a>컴파일러 오류 C3203
 
@@ -19,7 +19,7 @@ ms.locfileid: "62402738"
 
 클래스 템플릿 또는 제네릭에 잘못된 인수를 전달했습니다. 클래스 템플릿 또는 제네릭에는 매개 변수로 형식이 필요합니다.
 
-이 오류는 Visual C++ 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성될 수 있습니다. 특수화되지 않은 클래스 템플릿은 기본 클래스 목록에서 템플릿 인수로 사용할 수 없습니다. C3203 오류를 해결하려면 템플릿 형식 매개 변수를 기본 클래스 목록의 템플릿 매개 변수로 사용할 때 명시적으로 템플릿 클래스 이름에 추가합니다.
+이 오류는 Visual Studio 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다: 기본 클래스 목록의 템플릿 인수로 특수화 되지 않은 클래스 템플릿을 사용할 수 없습니다. C3203 오류를 해결하려면 템플릿 형식 매개 변수를 기본 클래스 목록의 템플릿 매개 변수로 사용할 때 명시적으로 템플릿 클래스 이름에 추가합니다.
 
 ```
 // C3203.cpp

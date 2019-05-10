@@ -7,12 +7,12 @@ helpviewer_keywords:
 - nochkclr.obj
 - LNK2019
 - _check_commonlanguageruntime_version
-ms.openlocfilehash: af40a48e36d316842ec9a744ad95d6c3b3af3731
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0ef0bfd565b8c76816cc1f8a20b1521da238cdfc
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386345"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447713"
 ---
 # <a name="linker-tools-error-lnk2019"></a>링커 도구 오류 LNK2019
 
@@ -86,7 +86,7 @@ Visual Studio의 이전 버전에서는이 수준의 종속성만 있어도 충�
 
 ### <a name="you-mix-code-that-uses-native-wchart-with-code-that-doesnt"></a>네이티브 wchar를 사용 하는 코드를 혼합\_하지 않은 코드를 사용 하 여 t
 
-Visual C++ 2005에서 수행된 C++ 언어 규칙 작업은 `wchar_t` 를 기본적으로 네이티브 형식으로 만듭니다. 이전 버전의 Visual C++를 사용하여 컴파일된 라이브러리 및 개체 파일과 호환되는 코드를 생성하려면 [/Zc:wchar_t-](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 컴파일러 옵션을 사용해야 합니다. 일부 파일이 동일한를 사용 하 여 컴파일되지 않은 경우 **/Zc:wchar\_t** 설정, 형식 참조가 호환 되는 형식으로 확인 되지 않을 수 있습니다. 사용된 형식을 업데이트하거나 컴파일할 때 일관된 `wchar_t` 설정을 사용하여 모든 라이브러리 및 개체 파일의 **/Zc:wchar_t** 형식이 호환되는지 확인하세요.
+C++Visual Studio 2005에서 수행 된 언어 규칙 작업 `wchar_t` 기본적으로 네이티브 형식입니다. 사용 해야 합니다 [/zc: wchar_t-](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 컴파일러 옵션을 이전 버전의 Visual Studio를 사용 하 여 컴파일된 라이브러리 및 개체 파일과 호환 되는 코드를 생성 합니다. 일부 파일이 동일한를 사용 하 여 컴파일되지 않은 경우 **/Zc:wchar\_t** 설정, 형식 참조가 호환 되는 형식으로 확인 되지 않을 수 있습니다. 사용된 형식을 업데이트하거나 컴파일할 때 일관된 `wchar_t` 설정을 사용하여 모든 라이브러리 및 개체 파일의 **/Zc:wchar_t** 형식이 호환되는지 확인하세요.
 
 ## <a name="third-party-library-issues-and-vcpkg"></a>Vcpkg 및 타사 라이브러리 문제
 

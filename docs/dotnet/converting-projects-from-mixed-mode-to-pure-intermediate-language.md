@@ -7,12 +7,12 @@ helpviewer_keywords:
 - mixed-mode applications, intermediate language
 - projects [C++], converting to intermediate language
 ms.assetid: 855f9e3c-4f09-4bfe-8eab-a45f68292be9
-ms.openlocfilehash: 93eff646fb582e25ad70549afc714c5321e56079
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 2f63b6860157e315d44f7c050812a7f0b97f2726
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209245"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448046"
 ---
 # <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>혼합된 모드에서 순수 intermediate language로 프로젝트를 변환
 
@@ -21,7 +21,7 @@ ms.locfileid: "62209245"
 > [!IMPORTANT]
 > 사용 되지 않는 visual Studio 2015 및 Visual Studio 2017은 더 이상 생성을 지원할 **/clr: pure** 또는 **/clr: safe** CLR 응용 프로그램에 대 한 코드입니다. 순수 이미지나 안전 어셈블리를 필요로 하는 경우에 C# 응용 프로그램을 변환 하는 것이 좋습니다.
 
-시각적 개체의 이전 버전을 사용 하는 경우 C++ 컴파일러 도구 집합을 지 원하는 **/clr: pure** 또는 **/clr: safe**, 순수 MSIL로 코드를 변환 하려면이 절차를 사용할 수 있습니다:
+Microsoft의 이전 버전을 사용 하는 경우 C++ 컴파일러 도구 집합을 지 원하는 **/clr: pure** 또는 **/clr: safe**,이 절차를 사용 하 여 순수형 MSIL 코드를 변환할 수 있습니다:
 
 ### <a name="to-convert-your-mixed-mode-application-into-pure-intermediate-language"></a>순수 중간 언어로 혼합 모드 응용 프로그램을 변환 하려면
 
