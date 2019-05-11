@@ -12,12 +12,12 @@ helpviewer_keywords:
 - resource-only DLLs [C++], MFC applications
 - satellite DLLs [C++]
 ms.assetid: 3a1100ae-a9c8-47b5-adbd-cbedef5992ef
-ms.openlocfilehash: c593d0bae6fc23cfd765116c44b07caa2a6d8ccf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 1f512cc17832564b5eb530b97f8bfb2642c43d43
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188741"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220747"
 ---
 # <a name="localized-resources-in-mfc-applications-satellite-dlls"></a>MFC 응용 프로그램의 지역화 된 리소스: 위성 Dll
 
@@ -53,5 +53,5 @@ MFC 위성 Dll을 찾을 수 없는 경우 응용 프로그램 자체에 포함 
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++의 DLL](dlls-in-visual-cpp.md)<br/>
+[C를 만들기 /C++ Visual Studio에서 Dll](dlls-in-visual-cpp.md)<br/>
 [TN057: MFC 구성 요소의 지역화](../mfc/tn057-localization-of-mfc-components.md)

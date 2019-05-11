@@ -1,14 +1,14 @@
 ---
 title: 컴파일러 옵션 사전순 목록
-ms.date: 04/08/2019
+ms.date: 05/06/2019
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: d8ab1cbac7ad8eb44f16c7829ccac20a6d3e73ff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: ba4357f4c14e5cca9363ad2029374ede93529a2a
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272336"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221770"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
@@ -34,7 +34,7 @@ ms.locfileid: "62272336"
 |[/E](e-preprocess-to-stdout.md)|전처리기 출력을 표준 출력에 복사합니다.|
 |[/EH](eh-exception-handling-model.md)|예외 처리 모델을 지정합니다.|
 |[/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|전처리기 출력을 표준 출력에 복사합니다.|
-|[/errorReport](errorreport-report-internal-compiler-errors.md)|ICE(내부 컴파일러 오류) 정보를 Visual C++ 팀에 직접 제공할 수 있습니다.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)|내부 컴파일러 오류 (ICE) 정보를 Microsoft에 직접 제공할 수 있습니다 C++ 팀입니다.|
 |[/execution-charset](execution-charset-set-execution-character-set.md)|실행 문자 집합입니다.|
 |[/F](f-set-stack-size.md)|스택 크기를 설정합니다.|
 |[/favor](favor-optimize-for-architecture-specifics.md)|특정 x64에 최적화 된 코드 생성 아키텍처 또는 AMD64 및 확장 메모리 64 Em64t 아키텍처에서 마이크로 아키텍처 사양입니다.|
@@ -153,7 +153,7 @@ ms.locfileid: "62272336"
 |[/Zc](zc-conformance.md)|표준 동작을 지정 [/Ze](za-ze-disable-language-extensions.md).[ /Za, /Ze (언어 확장명 사용 안 함)](za-ze-disable-language-extensions.md)|
 |[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. 언어 확장을 사용합니다.|
 |[/Zf](zf.md)|PDB 병렬 빌드에서 생성 시간을 개선합니다.|
-|[/Zg](zg-generate-function-prototypes.md)|Visual C++ 2015에서 제거되었습니다. 함수 프로토타입을 생성합니다.|
+|[/Zg](zg-generate-function-prototypes.md)|Visual Studio 2015에서 제거 합니다. 함수 프로토타입을 생성합니다.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|편집하며 계속하기와 호환되는 프로그램 데이터베이스에 디버깅 정보를 포함합니다.|
 |[/Zi](z7-zi-zi-debug-information-format.md)|완전한 디버깅 정보를 생성합니다.|
 |[/Zl](zl-omit-default-library-name.md)|.obj 파일에서 기본 라이브러리 이름을 제거합니다. x86 전용입니다.|

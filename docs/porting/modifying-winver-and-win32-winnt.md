@@ -51,8 +51,7 @@ Visual C++에서는 더 이상 Windows 95, Windows 98, Windows ME, Windows NT �
 > [!NOTE]
 > 내부 MFC 헤더를 애플리케이션에 포함하는 경우에는 값 작동 여부가 보장되지 않습니다.
 
-
-  `/D` 컴파일러 옵션을 사용하여 이 매크로를 정의할 수도 있습니다. 자세한 내용은 [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md)을 참조하세요.
+`/D` 컴파일러 옵션을 사용하여 이 매크로를 정의할 수도 있습니다. 자세한 내용은 [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md)을 참조하세요.
 
 이러한 매크로의 의미에 대한 자세한 내용은 [Windows 헤더 사용](/windows/desktop/WinProg/using-the-windows-headers)을 참조하세요.
 

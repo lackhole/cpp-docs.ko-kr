@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, database support
 ms.assetid: 9ddf4558-fd41-4ac7-8d9b-c93d9c68ab59
-ms.openlocfilehash: a1e0519e1351a48bbd969168d62f163c9dde7e7e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 94ed75ffd59294d5beb076ef4d66e57ef763f10e
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323116"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525464"
 ---
 # <a name="database-support-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 데이터베이스 지원
 
@@ -46,15 +46,15 @@ ms.locfileid: "62323116"
 
 - **데이터 원본**
 
+   > [!NOTE]
+   > ATL OLE DB 소비자 마법사와 MFC ODBC 소비자 마법사 않습니다 이상 Visual Studio 2019에 사용할 수 있습니다. 여전히 기능을 수동으로 추가할 수 있습니다. 자세한 내용은 [마법사는 소비자를 사용 하지 않고 만들기](../../data/oledb/creating-a-consumer-without-using-a-wizard.md)합니다.
+
    클릭 합니다 **데이터 원본** 지정한 드라이버 또는 공급자 및 데이터베이스를 사용 하 여 데이터 소스를 설정 하는 단추입니다. OLE DB를 선택한 경우에 **클라이언트 유형** 옵션을이 단추가 표시 됩니다는 **데이터 연결 속성** 대화 상자. ODBC를 선택 하는 경우는 **클라이언트 유형** 옵션을이 단추를 클릭 합니다 **데이터 원본 선택** 대화 상자. 이 옵션은 데이터베이스 뷰를 응용 프로그램에 포함 하려는 경우에 사용할 수 있습니다.
 
    |옵션|설명|
    |------------|-----------------|
    |**데이터 연결 속성** (OLE DB)|지정된 된 OLE DB 공급자를 사용 하 여 지정 된 데이터 소스를 설정 합니다. OLE DB 공급자, 데이터, 데이터 원본, 로그온 ID 및 (선택 사항) 암호의 위치를 지정 해야 합니다. 이 대화 상자에서 세부 정보를 참조 하세요 **데이터 원본** 에 [ATL OLE DB 소비자 마법사](../../atl/reference/atl-ole-db-consumer-wizard.md)합니다.|
    |**데이터 원본을 선택** (ODBC)|지정된 된 ODBC 드라이버를 사용 하 여 지정 된 데이터 소스를 설정 합니다. 데이터 원본에 대 한 테이블을 선택 하 고 데이터 원본 이름을 선택 해야 합니다. 마법사의 멤버 변수에 바인딩되는 테이블의 모든 열을 `CRecordset`-클래스를 파생 합니다. 이 대화 상자에서 세부 정보를 참조 하세요 **데이터 원본** 에 [MFC ODBC 소비자 마법사](../../mfc/reference/mfc-odbc-consumer-wizard.md)합니다.|
-
-   > [!NOTE]
-   > 클릭 하면 이전 릴리스에서 **데이터 원본** 단추는 파일 열기 대화 상자가 열려 데이터 연결 (.udl) 파일을 선택할 수 있습니다. 이 기능은 지원 되지 않습니다.
 
 - **특성 사용된 하는 database 클래스를 생성 합니다.**
 

@@ -9,16 +9,16 @@ helpviewer_keywords:
 - try-catch keyword [C++], termination handlers
 - C++ exception handling, exception handlers
 ms.assetid: dd3b647d-c269-43a8-aab9-ad1458712976
-ms.openlocfilehash: b77a218340399578e3c9428100476787e2e60b25
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: e948d941afa1459623619e385aa67b1c60490245
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330572"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221953"
 ---
 # <a name="structured-exception-handling-cc"></a>Structured Exception Handling (C/C++)
 
-구조적된 예외 처리 (SEH)는 하드웨어 오류와 같은 특정 예외 코드 상황을 정상적으로 처리 하는 C에 대 한 Microsoft 확장입니다. 하지만 Windows 및 시각적 개체 C++ SEH를 지원 ISO 표준을 사용 하는 것이 좋습니다 C++ 포팅 가능 하 고 유연한 코드를 했기 때문에 예외 처리 합니다. 그럼에도 불구 하 고 기존 코드를 유지 하기 위해 또는 특정 종류의 프로그램을 계속 해야 SEH를 사용 합니다.
+구조적된 예외 처리 (SEH)는 하드웨어 오류와 같은 특정 예외 코드 상황을 정상적으로 처리 하는 C에 대 한 Microsoft 확장입니다. 하지만 Windows 및 Microsoft C++ SEH를 지원 합니다. ISO 표준을 사용 하는 것이 좋습니다 C++ 포팅 가능 하 고 유연한 코드를 했기 때문에 예외 처리 합니다. 그럼에도 불구 하 고 기존 코드를 유지 하기 위해 또는 특정 종류의 프로그램을 계속 해야 SEH를 사용 합니다.
 
 **Microsoft 전용:**
 
@@ -34,7 +34,7 @@ ms.locfileid: "62330572"
 
 SEH를 사용 하 여 실행이 예기치 않게 종료 되는 경우 메모리 블록 및 파일과 같은 리소스가 제대로 해제를 확인할 수 있습니다. 특정 문제를 처리할 수도 있습니다-메모리가 부족 하 여 예를 들어-에 의존 하지 않는 간결한 구조의 코드나 사용 하 여 **goto** 문이나 반환 코드의 정교한 테스트 합니다.
 
-이 문서에서 참조된 try-except 및 try-finally 문은 C 언어에 대한 Microsoft 확장입니다. 둘 다 응용 프로그램이 그렇지 않을 경우 실행을 종료하는 이벤트 후에 프로그램을 제어할 수 있도록 하여 SEH를 지원합니다. SEH는 C++ 소스 파일에서 작동하지만 C++용으로 특별히 설계된 것은 아닙니다. SEH를 사용 하는 경우는 C++ 를 사용 하 여 컴파일하는 프로그램을 [/EHa 또는 /EHsc](../build/reference/eh-exception-handling-model.md) 옵션을 소멸자 로컬 개체를 호출 했지만 다른 실행 동작은 예상과 되지 않을 수 있습니다. 예시의 경우이 문서의 뒷부분에 나오는 예제를 참조 하세요. 대부분의 경우에서 SEH 대신 것이 좋습니다 ISO 표준을 사용 하는 [ C++ 예외 처리](../cpp/try-throw-and-catch-statements-cpp.md), 시각적 C++ 도 지원 합니다. C++ 예외 처리를 사용하면 코드 포팅 가능성이 향상되며 모든 형식의 예외를 처리할 수 있습니다.
+이 문서에서 참조된 try-except 및 try-finally 문은 C 언어에 대한 Microsoft 확장입니다. 둘 다 응용 프로그램이 그렇지 않을 경우 실행을 종료하는 이벤트 후에 프로그램을 제어할 수 있도록 하여 SEH를 지원합니다. SEH는 C++ 소스 파일에서 작동하지만 C++용으로 특별히 설계된 것은 아닙니다. SEH를 사용 하는 경우는 C++ 를 사용 하 여 컴파일하는 프로그램을 [/EHa 또는 /EHsc](../build/reference/eh-exception-handling-model.md) 옵션을 소멸자 로컬 개체를 호출 했지만 다른 실행 동작은 예상과 되지 않을 수 있습니다. 예시의 경우이 문서의 뒷부분에 나오는 예제를 참조 하세요. 대부분의 경우에서 SEH 대신 것이 좋습니다 ISO 표준을 사용 하는 [ C++ 예외 처리](../cpp/try-throw-and-catch-statements-cpp.md)는 Microsoft C++ 컴파일러도 지원 합니다. C++ 예외 처리를 사용하면 코드 포팅 가능성이 향상되며 모든 형식의 예외를 처리할 수 있습니다.
 
 C 코드 SEH를 사용 하는 경우와 함께 사용할 수 있습니다 C++ 코드를 사용 하는 C++ 예외 처리 합니다. 정보를 참조 하세요 [의 구조적된 예외 처리 C++ ](../cpp/exception-handling-differences.md)합니다.
 

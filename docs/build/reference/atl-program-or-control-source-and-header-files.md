@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - file types [C++], ATL source and headers
 ms.assetid: cb65372f-4880-4007-b582-a52eaa568fd1
-ms.openlocfilehash: e315586de57ca65c60c435c436734bcdededed54
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 15d49cf984e45feeaad454de13c4ab37622000a4
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273029"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446572"
 ---
 # <a name="atl-program-or-control-source-and-header-files"></a>ATL 프로그램 또는 컨트롤 소스 및 헤더 파일
 
@@ -27,6 +27,6 @@ Visual Studio에서 ATL 프로젝트를 만들 때, 생성하는 프로젝트에
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트용 파일 형식](file-types-created-for-visual-cpp-projects.md)<br>
+[시각적 개체에 대해 만들어지는 형식 파일 C++ 프로젝트](file-types-created-for-visual-cpp-projects.md)<br>
 [MFC 프로그램 또는 컨트롤 소스 및 헤더 파일](mfc-program-or-control-source-and-header-files.md)<br>
 [CLR 프로젝트](files-created-for-clr-projects.md)

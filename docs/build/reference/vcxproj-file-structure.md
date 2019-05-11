@@ -4,12 +4,12 @@ ms.date: 09/18/2018
 helpviewer_keywords:
 - .vcxproj file structure
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
-ms.openlocfilehash: 3b7c7bdad8848a3755db4ea565117459c72e939b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: a1052d0a0eeeff177f0a22883fe06cd07d7b03f6
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317122"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446496"
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj 및 .props 파일 구조
 
@@ -21,13 +21,13 @@ ms.locfileid: "62317122"
 
 1. 파일의 구조는 이 문서에서 설명하는 규정된 양식을 따라야 합니다.
 
-1. 현재 Visual C++ 프로젝트 시스템은 프로젝트 항목에 와일드카드를 지원하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
+1. Visual Studio C++ 현재 프로젝트 시스템 프로젝트 항목에 와일드 카드를 지원 하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
 
    ```xml
    <ClCompile Include="*.cpp"/>
    ```
 
-1. 현재 Visual C++ 프로젝트 시스템은 프로젝트 항목 경로에 매크로를 지원하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
+1. Visual Studio C++ 현재 프로젝트 시스템에서 프로젝트 항목 경로 매크로 지원 하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
 
    ```xml
    <ClCompile Include="$(IntDir)\generated.cpp"/>
@@ -224,7 +224,7 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 </ItemGroup>
 ```
 
-현재 Visual C++ 프로젝트 시스템은 프로젝트 항목에 와일드카드를 지원하지 않습니다.
+Visual Studio C++ 현재 프로젝트 시스템 프로젝트 항목에 와일드 카드를 지원 하지 않습니다.
 
 ```xml
 <ItemGroup>
@@ -232,7 +232,7 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 </ItemGroup>
 ```
 
-현재 Visual C++ 프로젝트 시스템은 프로젝트 항목에 매크로를 지원하지 않습니다.
+Visual Studio C++ 현재 프로젝트 시스템에서 프로젝트 항목 매크로 지원 하지 않습니다.
 
 ```xml
 <ItemGroup>

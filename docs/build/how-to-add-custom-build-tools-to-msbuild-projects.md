@@ -1,17 +1,15 @@
 ---
 title: '방법: MSBuild 프로젝트에 사용자 지정 빌드 도구 추가'
 ms.date: 11/04/2016
-f1_keywords:
-- msbuild.cpp.howto.addcustombuildtools
 helpviewer_keywords:
 - 'msbuild (c++), howto: add custom build tools'
 ms.assetid: de03899a-371d-4396-9bf9-34f45a65e909
-ms.openlocfilehash: 05f160e650c0dd717d7ce0f29259f866d751fdba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 812932d9e668ab5ee0eb75eadbf75be3d791cddb
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188901"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220712"
 ---
 # <a name="how-to-add-custom-build-tools-to-msbuild-projects"></a>방법: MSBuild 프로젝트에 사용자 지정 빌드 도구 추가
 
@@ -50,6 +48,6 @@ ms.locfileid: "62188901"
 
 ## <a name="see-also"></a>참고자료
 
-[연습: MSBuild를 사용하여 Visual C++ 프로젝트 만들기](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
+[연습: MSBuild를 사용하여 C++ 프로젝트 만들기](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
 [방법: MSBuild 프로젝트에서 빌드 이벤트 사용](how-to-use-build-events-in-msbuild-projects.md)<br/>
 [방법: MSBuild 프로젝트에 사용자 지정 빌드 단계 추가](how-to-add-a-custom-build-step-to-msbuild-projects.md)

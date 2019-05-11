@@ -1,16 +1,16 @@
 ---
 title: 격리된 애플리케이션 및 side-by-side 어셈블리 개념
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - side-by-side assemblies [C++]
 - isolated assemblies [C++]
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
-ms.openlocfilehash: 448d2088a9e91de8fc34b4f23721ffec77f6c697
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: f569381b9efe9a8ca7704dc87bcb8e8102e0cde2
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62196705"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220914"
 ---
 # <a name="concepts-of-isolated-applications-and-side-by-side-assemblies"></a>격리된 애플리케이션 및 side-by-side 어셈블리 개념
 
@@ -32,7 +32,7 @@ side-by-side 어셈블리는 공유 또는 전용으로 설정할 수 있습니�
 
 ## <a name="visual-c-libraries"></a>Visual C++ 라이브러리
 
-Visual Studio 2005 및 Visual Studio 2008에서 ATL, MFC, CRT, 표준 C++, OpenMP, MSDIA 등의 재배포 가능 라이브러리는 공유 side-by-side 어셈블리로 네이티브 어셈블리 캐시에 배포됩니다. 현재 버전에서는 재배포 가능 라이브러리가 중앙 배포를 사용합니다. 기본적으로 Visual C++를 사용하여 빌드된 모든 애플리케이션은 매니페스트를 최종 이진에 포함하여 빌드되고 매니페스트는 Visual C++ 라이브러리에 대한 이진의 종속성을 설명합니다. Visual C++ 애플리케이션에 대한 매니페스트 생성과 관련된 자세한 내용은 [Understanding Manifest Generation for C/C++ Programs](understanding-manifest-generation-for-c-cpp-programs.md)를 참조하세요. 매니페스트는 애플리케이션이 사용하거나 로컬 배포를 사용하는 라이브러리에 정적으로 연결된 애플리케이션에는 필요하지 않습니다. 배포에 대한 자세한 내용은 [Deployment in Visual C++](../windows/deployment-in-visual-cpp.md)를 참조하세요.
+Visual Studio 2005 및 Visual Studio 2008에서 ATL, MFC, CRT, 표준 C++, OpenMP, MSDIA 등의 재배포 가능 라이브러리는 공유 side-by-side 어셈블리로 네이티브 어셈블리 캐시에 배포됩니다. 현재 버전에서는 재배포 가능 라이브러리가 중앙 배포를 사용합니다. 기본적으로 Visual Studio를 사용 하 여 빌드된 모든 응용 프로그램 최종 이진에 포함 된 매니페스트를 사용 하 여 빌드되고 매니페스트는 시각적 개체에 이진 파일의 종속성을 설명 합니다. C++ 라이브러리입니다. 에 대 한 매니페스트 생성 이해 하려면 C++ 응용 프로그램을 참조 하세요 [Understanding Manifest Generation for C /C++ 프로그램](understanding-manifest-generation-for-c-cpp-programs.md)합니다. 매니페스트는 애플리케이션이 사용하거나 로컬 배포를 사용하는 라이브러리에 정적으로 연결된 애플리케이션에는 필요하지 않습니다. 배포에 대한 자세한 내용은 [Deployment in Visual C++](../windows/deployment-in-visual-cpp.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

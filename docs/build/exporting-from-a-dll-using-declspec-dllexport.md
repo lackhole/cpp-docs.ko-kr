@@ -1,6 +1,6 @@
 ---
 title: __declspec(dllexport)을 사용하여 DLL에서 내보내기
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 f1_keywords:
 - dllexport
 - __declspec
@@ -10,18 +10,16 @@ helpviewer_keywords:
 - export directives [C++]
 - exporting DLLs [C++], __declspec(dllexport) keyword
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
-ms.openlocfilehash: 3b6b9733776f30fc8dcbfeee709b7d24e0f0187b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 167060d0270004b8648d32af206865bfe66c3b4b
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220798"
 ---
 # <a name="exporting-from-a-dll-using-declspecdllexport"></a>__declspec(dllexport)을 사용하여 DLL에서 내보내기
 
-Microsoft 도입 **__export** 시각적 개체의 16 비트 컴파일러 버전의 C++ 컴파일러에서 내보내기 이름을 자동으로 생성 하는.lib 파일에 배치할 수 있도록 합니다. 이.lib 파일 DLL을 사용 하 여 연결 하려면 정적.lib와 마찬가지로 사용할 수 있습니다.
-
-새 컴파일러 버전에서는 내보낼 수 있습니다 데이터, 함수, 클래스 또는 클래스 멤버 함수의 사용 하 여 DLL을 **__declspec (dllexport)** 키워드입니다. **__declspec (dllexport)** .def 파일을 사용할 필요가 개체 파일에 내보내기 지시문을 추가 합니다.
+데이터, 함수, 클래스 또는 클래스 멤버 함수를 사용 하 여 DLL에서 내보낼 수 있습니다 합니다 **__declspec (dllexport)** 키워드입니다. **__declspec (dllexport)** .def 파일을 사용할 필요가 개체 파일에 내보내기 지시문을 추가 합니다.
 
 데코 레이트 된 내보내려고 할 때이 편의 가장 두드러지게 나타납니다는 C++ 함수 이름입니다. 이름 데코레이션 표준 사양이 없으므로 내보내기 함수의 이름을 컴파일러 버전 간에 변경 될 수 있습니다. 사용 하는 경우 **__declspec (dllexport)**, DLL 및 종속 된.exe 파일은 명명 규칙 변경에 대 한 계정에만 필요 합니다.
 
@@ -50,11 +48,6 @@ class __declspec(dllexport) CExampleExport : public CObject
 ```
 
 **__declspec (dllexport)** 함수 이름을 DLL의 내보내기 테이블에 저장 합니다. 테이블의 크기를 최적화 하려면를 참조 하세요 [이름 대신 서 수를 사용 하 여 DLL에서 함수 내보내기](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)합니다.
-
-> [!NOTE]
->  DLL 소스 코드를 Win16에서에서 Win32로 이식 하는 경우 대체의 인스턴스마다 **__export** 사용 하 여 **__declspec (dllexport)** 합니다.
-
-참조로 Win32 Winbase.h 헤더 파일을 통해 검색 합니다. 예제가 **__declspec (dllimport)** 사용 합니다.
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 

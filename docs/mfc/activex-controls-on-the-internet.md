@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Internet applications [MFC], ActiveX controls
 - networks [MFC], downloading with ActiveX controls
 ms.assetid: 7ab943c8-2022-41df-9065-d629b616eeec
-ms.openlocfilehash: c019c922a5690d4ead861c40bed3c0c1c76cea28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d268da8bef4facfb9259e6ce43648c8713464ec9
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394847"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448196"
 ---
 # <a name="activex-controls-on-the-internet"></a>인터넷의 ActiveX 컨트롤
 
@@ -85,7 +85,7 @@ ActiveX 컨트롤 인터넷에 제한 되지 않습니다. ActiveX 컨트롤 데
 
 1. 클릭 **새로 만들기** 에 **파일** 메뉴.
 
-1. 선택 **MFC ActiveX 컨트롤 마법사** 시각적 개체에서 C++ 프로젝트 및 프로젝트 이름을 지정 합니다.
+1. 선택 **MFC ActiveX 컨트롤 마법사** Visual Studio에서 C++ 프로젝트 및 프로젝트 이름을 지정 합니다.
 
 1. 에 **제어 설정을** 페이지에서 **속성을 비동기적으로 로드**합니다. 이 옵션을 선택 하면에 대 한 준비 상태 속성 및 준비 상태 변경 이벤트를 설정 합니다.
 

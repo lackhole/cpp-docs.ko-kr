@@ -1,6 +1,6 @@
 ---
 title: IEEE 부동 소수점 표시
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - float keyword
 - real*8 value
@@ -11,16 +11,16 @@ helpviewer_keywords:
 - long double
 - real*4 value
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
-ms.openlocfilehash: 69686e7e1c8994b799607eebf7e50387ed688272
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 130a79ae6846df27ffabfd6cb6649e0a0de03e4b
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188836"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220627"
 ---
 # <a name="ieee-floating-point-representation"></a>IEEE 부동 소수점 표시
 
-Microsoft Visual C++ IEEE 숫자 표준과 일치 됩니다. IEEE-754 표준 부동 소수점 형식을으로 하드웨어의 실제 숫자를 나타내는 방법을 설명 합니다. MSVC 컴파일러에 의해 대상으로 하는 하드웨어에서 표현할 수 있는 부동 소수점 숫자에 대 한 최소 5 개의 내부 형식 있지만 그 중 두 개는 컴파일러만 사용 합니다. 합니다 *정밀도* (4 바이트) 및 *배정밀도* 시각적 개체에 사용 되는 형식 (8 바이트) C++. 단 정밀도 키워드를 사용 하 여 선언 됩니다 **float**합니다. 배정밀도 키워드를 사용 하 여 선언 됩니다 **이중**합니다. IEEE 표준도 지정 *반 정밀도* (2 바이트) 및 *네 번 자릿수* (16 바이트) 형식으로 뿐만 *배정밀 확장도* (10 바이트) 형식으로 일부 C 및 C++ 으로 컴파일러 구현 합니다 **long double** 데이터 형식입니다. MSVC 컴파일러에서를 **long double** 데이터 형식은 고유 형식으로 처리 됩니다 있지만 저장소 형식에 매핑됩니다 **double**합니다. 그러나가 내장 및 어셈블리 언어 지원 확장-배정밀 (10 비트) 형식으로 포함 하는 다른 형식을 사용 하 여 계산에 대 한 하드웨어에서 지원 되는 경우.
+Microsoft C++ (MSVC)은 IEEE 숫자 표준과 일치 합니다. IEEE-754 표준 부동 소수점 형식을으로 하드웨어의 실제 숫자를 나타내는 방법을 설명 합니다. MSVC 컴파일러에 의해 대상으로 하는 하드웨어에서 표현할 수 있는 부동 소수점 숫자에 대 한 최소 5 개의 내부 형식 있지만 그 중 두 개는 컴파일러만 사용 합니다. 합니다 *정밀도* (4 바이트) 및 *배정밀도* MSVC에 사용 되는 형식 (8 바이트)입니다. 단 정밀도 키워드를 사용 하 여 선언 됩니다 **float**합니다. 배정밀도 키워드를 사용 하 여 선언 됩니다 **이중**합니다. IEEE 표준도 지정 *반 정밀도* (2 바이트) 및 *네 번 자릿수* (16 바이트) 형식으로 뿐만 *배정밀 확장도* (10 바이트) 형식으로 일부 C 및 C++ 으로 컴파일러 구현 합니다 **long double** 데이터 형식입니다. MSVC 컴파일러에서를 **long double** 데이터 형식은 고유 형식으로 처리 됩니다 있지만 저장소 형식에 매핑됩니다 **double**합니다. 그러나가 내장 및 어셈블리 언어 지원 확장-배정밀 (10 비트) 형식으로 포함 하는 다른 형식을 사용 하 여 계산에 대 한 하드웨어에서 지원 되는 경우.
 
 값은 다음과 같이 저장 됩니다.
 

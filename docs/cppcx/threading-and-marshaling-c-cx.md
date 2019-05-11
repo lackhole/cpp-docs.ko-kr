@@ -8,12 +8,12 @@ helpviewer_keywords:
 - agility, C++/CX
 - C++/CX, threading issues
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
-ms.openlocfilehash: c5bce60e564bef490bcfafd6f8559dffe5fd4f1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 4206dd9c675325d3141a56b0e57f6cf67dc5693d
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404639"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448154"
 ---
 # <a name="threading-and-marshaling-ccx"></a>스레딩 및 마샬링(C++/CX)
 
@@ -35,7 +35,7 @@ Windows 런타임 클래스에 적용 되는 두 가지 특성에 표시 된 대
 
 ### <a name="compiler-warning-c4451-when-consuming-non-agile-classes"></a>컴파일러 경고 C4451 agile이 아닌 클래스를 사용 합니다.
 
-일부 클래스는 여러 가지 이유로 인해 agile이 될 수 없습니다. 사용자 인터페이스 스레드와 백그라운드 스레드 모두에서 agile이 아닌 클래스의 인스턴스에 액세스하는 경우 런타임에 올바른 동작을 보장하기 위해 특별히 주의를 기울여야 합니다. 응용 프로그램의 agile이 아닌 런타임 클래스를 전역 범위에서 인스턴스화하거나 agile이 아닌 형식을 그 자체가 agile로 표시된 ref 클래스의 클래스 멤버로 선언하면 Visual C++ 컴파일러에서 경고를 발생시킵니다.
+일부 클래스는 여러 가지 이유로 인해 agile이 될 수 없습니다. 사용자 인터페이스 스레드와 백그라운드 스레드 모두에서 agile이 아닌 클래스의 인스턴스에 액세스하는 경우 런타임에 올바른 동작을 보장하기 위해 특별히 주의를 기울여야 합니다. Microsoft C++ 컴파일러 그 자체가 ref 클래스에서 클래스 멤버를 agile로 표시 되어 agile이 아닌 형식을 선언 하거나 전역 범위에서 앱에서 agile이 아닌 런타임 클래스를 인스턴스화할 때 경고를 발생 시킵니다.
 
 agile이 아닌 클래스 중 가장 처리하기 쉬운 것은 `ThreadingModel`=Both 및 `MarshallingType`=Standard를 사용하는 클래스입니다.  `Agile<T>` 도우미 클래스를 사용하기만 하면 이러한 클래스를 agile로 만들 수 있습니다.   다음 예제에서는 `Windows::Security::Credentials::UI::CredentialPickerOptions^`형식의 agile이 아닌 개체 선언과 그 결과로 실행된 컴파일러 경고를 보여줍니다.
 

@@ -1,6 +1,6 @@
 ---
 title: MFC 라이브러리 버전
-ms.date: 1/09/2018
+ms.date: 05/08/2019
 helpviewer_keywords:
 - class libraries [MFC], building versions
 - version information [MFC], MFC library
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC libraries
 - MFC, library versions
 - libraries [MFC], versions
-ms.openlocfilehash: c0dc724566063066175ea54e2b7734892e3c6e05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8e32366d9ff43bd6e5770f64f0ba9d8bf6e56ab
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62238507"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524793"
 ---
 # <a name="mfc-library-versions"></a>MFC 라이브러리 버전
 
@@ -129,7 +129,7 @@ MFC dll *버전* 이진 호환성을 나타내는 숫자입니다. 다른 라이
 
 동적으로 연결 하는 경우 MFC의 공유 DLL 버전에는 MFC 확장 DLL 또는 응용 프로그램에서 인지, 일치 하는 MFC 포함 해야 합니다*버전*합니다. DLL 또는 MFC*버전*U.DLL 제품을 배포 하는 경우.
 
-시각적 개체의 목록은 C++ 응용 프로그램과 함께 배포할 수 있습니다, 참조 하는 Dll [Microsoft Visual Studio 2017 SDK (포함 유틸리티 및 BuildServer 파일) 및 Microsoft Visual Studio 2017 용 배포 가능 코드](http://go.microsoft.com/fwlink/p/?LinkId=823098)합니다.
+시각적 개체의 목록은 C++ 응용 프로그램과 함께 배포할 수 있습니다, 참조 하는 Dll [Microsoft Visual Studio 2017 SDK (포함 유틸리티 및 BuildServer 파일) 및 Microsoft Visual Studio 2017 용 배포 가능 코드](/visualstudio/productinfo/2017-redistribution-vs) 또는 [ Visual Studio 2019 용 배포 가능 코드](/visualstudio/releases/2019/redistribution)합니다.
 
 MFC의 MBCS 및 유니코드 지원에 대 한 자세한 내용은 참조 하세요. [유니코드 및 멀티 바이트 문자 집합 (MBCS) 지원](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)합니다.
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - MFC ActiveX Control Wizard
 - OLE controls [MFC]
 ms.assetid: f19d698c-bdc3-4c74-af97-3d6ccb441b75
-ms.openlocfilehash: cec4c3aa6aedfa7a1f8234c6cc2355970d453f56
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3341f840c46584c4e45afe3607c83433976e6c37
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412776"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217640"
 ---
 # <a name="mfc-activex-control-wizard"></a>MFC ActiveX 컨트롤 마법사
 
@@ -64,6 +64,6 @@ MFC 스타터 프로그램에 포함 된 C++ 소스 파일 (.cpp), 리소스 (.r
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트 만들기 및 관리](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
-[Visual C++ 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
+[C++-Visual Studio 프로젝트](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[C++Visual Studio에서 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
 [개념](../../atl/active-template-library-atl-concepts.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 5f5bc102-44c3-4688-bbe1-080594dcee5c
-ms.openlocfilehash: ea977020286d720ed3a6b1b13bf8ff8f5c85e5b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 9609bc484310fbc9999182add384eb4e438378bf
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315965"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446234"
 ---
 # <a name="zcauto-deduce-variable-type"></a>/Zc:auto(변수 형식 추론)
 
@@ -26,7 +26,7 @@ ms.locfileid: "62315965"
 
 ## <a name="remarks"></a>설명
 
-C++ 표준에는 `auto` 키워드의 원래 의미와 수정된 의미가 정의되어 있습니다. Visual 하기 전에 C++ 2010 키워드는 자동 저장소 클래스에서 변수를 선언 합니다 즉, 변수에는 로컬 수명을 갖고 있습니다. 시각적 개체를 사용 하 여 시작 C++ 2010 키워드는 선언의 초기화 식에서 변수의 형식을 추론 합니다. 사용 합니다 **/zc: auto [-]** 컴파일러 옵션의 원래 또는 수정 된 의미를 사용 하도록 컴파일러에 지시 하는 `auto` 키워드입니다. 합니다 **/zc: auto** 옵션이 기본적으로 켜져 있습니다. 합니다 [/ permissive-](permissive-standards-conformance.md) 옵션의 기본 설정은 변경 되지 않습니다 **/zc: auto**합니다.
+C++ 표준에는 `auto` 키워드의 원래 의미와 수정된 의미가 정의되어 있습니다. Visual Studio 2010 이전 키워드는 자동 저장소 클래스에서 변수를 선언 즉, 변수에는 로컬 수명을 갖고 있습니다. Visual Studio 2010부터 키워드는 선언의 초기화 식에서 변수 형식을 추론 합니다. 사용 합니다 **/zc: auto [-]** 컴파일러 옵션의 원래 또는 수정 된 의미를 사용 하도록 컴파일러에 지시 하는 `auto` 키워드입니다. 합니다 **/zc: auto** 옵션이 기본적으로 켜져 있습니다. 합니다 [/ permissive-](permissive-standards-conformance.md) 옵션의 기본 설정은 변경 되지 않습니다 **/zc: auto**합니다.
 
 경우 적절 한 진단 메시지를 컴파일러가 사용 합니다 `auto` 키워드 현재 모순 **/zc: auto** 컴파일러 옵션입니다. 자세한 내용은 [auto 키워드](../../cpp/auto-keyword.md)합니다. 시각적 개체를 사용 하 여 규칙과 관련 된 문제에 대 한 자세한 내용은 C++를 참조 하세요 [비표준 동작](../../cpp/nonstandard-behavior.md)합니다.
 

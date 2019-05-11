@@ -1,6 +1,6 @@
 ---
 title: 디버깅 및 오류 보고 매크로
-ms.date: 03/27/2019
+ms.date: 05/06/2019
 f1_keywords:
 - atldef/ATL::_ATL_DEBUG_INTERFACES
 - atldef/ATL::_ATL_DEBUG_QI
@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-ms.openlocfilehash: 0d5010f913521848675987b145a1277c7b00decf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: a243351ff337cb517f8a8231c18c495c8d2ca302
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62276629"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221083"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>디버깅 및 오류 보고 매크로
 
@@ -176,7 +176,7 @@ ATLTRACE(
 ### <a name="parameters"></a>매개 변수
 
 *exp*<br/>
-[in] 문자열 및 시각적 개체에 보낼 변수를 C++ 출력 창 또는 이러한 메시지를 트래핑 하는 모든 응용 프로그램입니다.
+[in] 문자열 및 출력 창이 나 이러한 메시지를 트래핑 하는 모든 응용 프로그램에 보낼 변수입니다.
 
 *category*<br/>
 [in] 보고서에는 메서드 또는 이벤트의 형식입니다. 범주 목록에 대 한 설명을 참조 하세요.
@@ -207,7 +207,7 @@ ATLTRACE2(
 ### <a name="parameters"></a>매개 변수
 
 *exp*<br/>
-[in] 시각적 개체에 보낼 문자열입니다 C++ 출력 창 또는 이러한 메시지를 트래핑 하는 모든 응용 프로그램입니다.
+[in] 출력 창이 나 이러한 메시지를 트래핑 하는 모든 응용 프로그램에 보낼 문자열입니다.
 
 *category*<br/>
 [in] 보고서에는 메서드 또는 이벤트의 형식입니다. 범주 목록에 대 한 설명을 참조 하세요.

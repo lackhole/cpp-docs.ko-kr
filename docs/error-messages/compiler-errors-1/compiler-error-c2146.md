@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2146
 ms.assetid: 6bfb7de6-6723-4486-9350-c66ef88d7a64
-ms.openlocfilehash: 3a0fd9c49a71f6f53d1a109378e3a6894bb68723
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f00de0ce491d517da11f251b89ccb9a7ae66b77d
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175430"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447283"
 ---
 # <a name="compiler-error-c2146"></a>컴파일러 오류 C2146
 
@@ -73,7 +73,7 @@ typename X<T>::Y func() { }
 
 Visual Studio.NET 2003에 대해 수행한 컴파일러 규칙 작업의 결과로이 오류가 나타납니다: 명시적 특수화가 더 이상 기본 템플릿에서 템플릿 매개 변수를 찾습니다.
 
-사용 `T` 기본 템플릿에서에서 허용 되지 않는 명시적 특수화입니다. 시각적 개체의 Visual Studio.NET 2003 및 VISUAL Studio 버전에서 유효한 것으로 코드에 대 한 C++를 명시적으로 특수화 된 형식으로 모든 인스턴스의 특수화에 템플릿 매개 변수를 대체 합니다.
+사용 `T` 기본 템플릿에서에서 허용 되지 않는 명시적 특수화입니다. Visual Studio.NET 2003 및 Visual Studio.NET에서 유효한 것으로 코드에 대 한 특수화에 템플릿 매개 변수의 모든 인스턴스가 명시적으로 특수화 된 형식으로 대체 합니다.
 
 다음 샘플 Visual Studio.NET에서는 컴파일되지만 Visual Studio.NET 2003에서는 실패 합니다.
 

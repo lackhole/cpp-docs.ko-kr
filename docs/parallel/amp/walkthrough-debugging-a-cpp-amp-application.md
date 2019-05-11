@@ -1,18 +1,18 @@
 ---
 title: '연습: 디버깅을 C++ AMP 응용 프로그램'
-ms.date: 11/19/2018
+ms.date: 04/23/2019
 helpviewer_keywords:
 - debugging, C++ Accelerated Massive Parallelism
 - C++ AMP, debugging
 - C++ Accelerated Massive Parallelism, debugging
 - debugging, C++ AMP
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
-ms.openlocfilehash: 5312ba7354c28286cafb092711d66d56a920581a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f358f66d1e8a64c5042b60d7385de26a559642e
+ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62238015"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64877540"
 ---
 # <a name="walkthrough-debugging-a-c-amp-application"></a>연습: 디버깅을 C++ AMP 응용 프로그램
 
@@ -38,11 +38,33 @@ ms.locfileid: "62238015"
 
 - 해야 해당 줄 번호 텍스트 편집기에 표시 됩니다. 자세한 내용은 [방법: 편집기에서 줄 번호 표시](/visualstudio/ide/reference/how-to-display-line-numbers-in-the-editor)합니다.
 
-- 소프트웨어 에뮬레이터 상의 디버깅을 지원 하도록 Windows 8 또는 Windows Server 2012 실행 되 고 있는지 확인 하십시오.
+- 이상에서 실행 중인지 확인 Windows 8 또는 Windows Server 2012 소프트웨어 에뮬레이터 상의 디버깅을 지원할 수 있습니다. 
 
 [!INCLUDE[note_settings_general](../../mfc/includes/note_settings_general_md.md)]
 
 ### <a name="to-create-the-sample-project"></a>샘플 프로젝트를 만들려면
+
+프로젝트를 만드는 지침을 사용 중인 Visual Studio의 버전에 따라 달라 집니다. 이 페이지의 왼쪽 위에서 선택한 올바른 버전이 있는지 확인 합니다.
+
+::: moniker range="vs-2019"
+
+### <a name="to-create-the-sample-project-in-visual-studio-2019"></a>Visual Studio 2019에서 샘플 프로젝트를 만들려면
+
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 열려는 합니다 **새 프로젝트를 만들** 대화 상자.
+
+1. 설정 대화 상자 맨 **언어** 를 **C++** 설정 **플랫폼** 하 **Windows**, 설정 및 **프로젝트 형식을** 하 **콘솔**합니다. 
+
+1. 필터링된 된 프로젝트 형식 목록에서 선택 **콘솔 앱** 선택한 **다음**합니다. 다음 페이지에서 입력 `AMPMapReduce` 에 **이름을** 상자에 프로젝트의 이름을 지정 하 고 원하는 경우 프로젝트 위치를 지정 합니다.
+
+   ![프로젝트 이름을](../../build/media/mathclient-project-name-2019.png "프로젝트 이름을")
+
+1. 선택 된 **만들기** 클라이언트 프로젝트를 만들려면 단추입니다.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### <a name="to-create-the-sample-project-in-visual-studio-2017-or-visual-studio-2015"></a>Visual Studio 2017 또는 Visual Studio 2015에서 샘플 프로젝트를 만들려면
 
 1. Visual Studio를 시작합니다.
 
@@ -57,6 +79,9 @@ ms.locfileid: "62238015"
 6. 선택을 취소 합니다 **미리 컴파일된 헤더** 확인란을 선택한 후 합니다 **마침** 단추입니다.
 
 7. **솔루션 탐색기**, 프로젝트에서 stdafx.h, targetver.h 및 stdafx.cpp를 삭제 합니다.
+
+::: moniker-end
+
 
 8. AMPMapReduce.cpp 열고 내용을 다음 코드로 바꿉니다.
 

@@ -1,6 +1,6 @@
 ---
 title: char_traits 구조체
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 f1_keywords:
 - iosfwd/std::char_traits
 - iosfwd/std::char_traits::char_type
@@ -27,12 +27,12 @@ helpviewer_keywords:
 - char_traits struct
 - char_traits class
 ms.assetid: 568e59f0-4521-4207-9223-9dcf6a16d620
-ms.openlocfilehash: 2975c839e07093a22d910f295be730fdd68839cf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 541f468071e315b205abb8f7b9c865f045c510fe
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220514"
 ---
 # <a name="chartraits-struct"></a>char_traits 구조체
 
@@ -384,7 +384,7 @@ EOF 문자입니다.
 
 (예: EOF 또는 WEOF) 파일의 끝을 나타내는 값입니다.
 
-C++ 표준에서는 이 값이 유효한 `char_type` 값에 해당하면 안 됩니다. Visual C++ 컴파일러에서는 이 제약 조건을 **char** 형식에는 적용하지만 **wchar_t** 형식에는 적용하지 않습니다. 아래 예제에서는 이 작업을 보여 줍니다.
+C++ 표준에서는 이 값이 유효한 `char_type` 값에 해당하면 안 됩니다. Microsoft C++ 컴파일러는 형식에 대 한이 제약 조건은 **char**에 형식이 아니라 **wchar_t**합니다. 아래 예제에서는 이 작업을 보여 줍니다.
 
 ### <a name="example"></a>예제
 

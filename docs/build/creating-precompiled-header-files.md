@@ -1,20 +1,18 @@
 ---
 title: 미리 컴파일된 헤더 파일
-ms.date: 12/10/2018
-f1_keywords:
-- pch
+ms.date: 05/06/2019
 helpviewer_keywords:
 - precompiled header files, creating
 - PCH files, creating
 - cl.exe compiler, precompiling code
 - .pch files, creating
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
-ms.openlocfilehash: 5afda50c43f93baa2d73e6afb68f436560c3243e
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
-ms.translationtype: MT
+ms.openlocfilehash: 1dc6ff9de94f98a4eef3d3827bec177f22672674
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341756"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220826"
 ---
 # <a name="precompiled-header-files"></a>미리 컴파일된 헤더 파일
 
@@ -43,7 +41,7 @@ C를 미리 컴파일할 수 있습니다 하 고 C++ 프로그램입니다. C++
 
 ## <a name="two-choices-for-precompiling-code"></a>코드를 미리 컴파일하기 위한 두 가지 선택 사항
 
-시각적 개체를 사용 하 여 C++, C를 미리 컴파일할 수 있습니다 또는 C++ 코드 헤더 파일에만 미리 컴파일하도록 제한 되지 않습니다.
+C를 미리 컴파일할 수 또는 C++ 코드 헤더 파일에만 미리 컴파일하도록 제한 되지 않습니다.
 
 계획이 필요 하지만 더 빨라 컴파일 간단한 헤더 파일이 아닌 소스 코드를 미리 컴파일하는 경우.
 
@@ -133,7 +131,7 @@ PCH 파일을 만들 때 일반적으로 처리 하는 Pragma 이후에 PCH 파�
 
 이전 섹션에서는 미리 컴파일된 헤더의 개요를 제공 합니다. /Yc 및 /Yu를 /Fp 옵션 및 [hdrstop](../preprocessor/hdrstop.md) pragma입니다. 이 섹션에서는 프로젝트에 수동 미리 컴파일된 헤더 옵션을 사용 하는 방법 설명 예제 메이크파일 및 관리 하는 코드를 사용 하 여 종료 됩니다.
 
-프로젝트에 수동 미리 컴파일된 헤더 옵션을 사용 하 여 다른 방법에 대 한 시각적 개체의 기본 설치 중에 만든 MFC\SRC 디렉터리에 있는 메이크파일 중 하나를 연구 C++입니다. 이러한 메이크파일 여기에 제시 된 것과 비슷한 방법 데 Microsoft 프로그램 유지 관리 유틸리티 (NMAKE) 매크로 사용 있고 빌드 프로세스의 제어를 제공 합니다.
+프로젝트에 수동 미리 컴파일된 헤더 옵션을 사용 하 여 다른 방법에 대 한 Visual Studio의 기본 설치 중에 만든 MFC\SRC 디렉터리에 있는 메이크파일 중 하나를 조사 합니다. 이러한 메이크파일 여기에 제시 된 것과 비슷한 방법 데 Microsoft 프로그램 유지 관리 유틸리티 (NMAKE) 매크로 사용 있고 빌드 프로세스의 제어를 제공 합니다.
 
 ## <a name="pch-files-in-the-build-process"></a>빌드 프로세스의 PCH 파일
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - IDL files [C++], attributes
 - .idl files [C++]
 ms.assetid: 04c596f4-c97b-4952-8053-316678b1d0b6
-ms.openlocfilehash: a699e327eec056bbb36747840990bb9c7ccc259b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29761d814505d2c2dd435d3416fe2367e1c16073
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409553"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448412"
 ---
 # <a name="idl-attributes"></a>IDL 특성
 
@@ -27,7 +27,7 @@ ms.locfileid: "62409553"
 
 사용 하 여 사용 하지 않는 경우 [COM 특성](com-attributes.md), IDL 특성 인터페이스를 정의할 수 있습니다. 소스 코드를 컴파일할 때 생성 된.idl 파일을 정의 하는 특성이 사용 됩니다. ATL 프로젝트에서 COM 특성을 사용 하는 경우 일부 IDL 특성을 같은 `coclass`, 코드를 프로젝트에 삽입 합니다.
 
-사실은 [idl_quote](idl-quote.md) 시각적 개체의 현재 버전에서 지원 되지 않는 MIDL 구문을 사용할 수 있습니다 C++합니다. 이 기타 특성과 같은 [importlib](importlib.md) 하 고 [includelib](includelib-cpp.md) 현재 시각적 개체에서 기존.idl 파일을 사용 하는 데 도움이 C++ 프로젝트입니다.
+사실은 [idl_quote](idl-quote.md) 시각적 개체의 현재 버전에서 지원 되지 않는 MIDL 구문을 사용할 수 있습니다 C++합니다. 이 기타 특성과 같은 [importlib](importlib.md) 하 고 [includelib](includelib-cpp.md) 현재 Visual Studio에서 기존.idl 파일을 사용 하는 데 도움이 C++ 프로젝트입니다.
 
 |특성|설명|
 |---------------|-----------------|

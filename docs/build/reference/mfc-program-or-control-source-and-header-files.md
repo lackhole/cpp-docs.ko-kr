@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - file types [C++], MFC source and header
 ms.assetid: f61419a8-bf69-4bbb-8f7c-1734be5e6db6
-ms.openlocfilehash: a46fedc9f9bbc888e9b59d2ed313eaf7146394ff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 89e02054b72946c4b1b773ce79b1c380da6ef01a
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321321"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446247"
 ---
 # <a name="mfc-program-or-control-source-and-header-files"></a>MFC 프로그램 또는 컨트롤 소스 및 헤더 파일
 
@@ -34,6 +34,6 @@ Visual Studio에서 MFC 프로젝트를 만들 때, 생성하는 프로젝트에
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트용 파일 형식](file-types-created-for-visual-cpp-projects.md)<br>
+[시각적 개체에 대해 만들어지는 형식 파일 C++ 프로젝트](file-types-created-for-visual-cpp-projects.md)<br>
 [ATL 프로그램 또는 컨트롤 소스 및 헤더 파일](atl-program-or-control-source-and-header-files.md)<br>
 [CLR 프로젝트](files-created-for-clr-projects.md)

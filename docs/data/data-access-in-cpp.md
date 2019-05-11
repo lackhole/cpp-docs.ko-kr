@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data [C++], data access technologies
 - data access [C++], class libraries for databases
 ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
-ms.openlocfilehash: 142d067b6fbc9e2357ff8fc23fd931a1194477e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: a68c4a9df3b439ae641c5e4cbe6f3fbc8b8e6355
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398071"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222538"
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++의 데이터 액세스
 
@@ -40,11 +40,11 @@ C에서 Azure SQL Database에 연결 하거나 C++ 응용 프로그램입니다.
 [에 대 한 Microsoft Azure Storage 클라이언트 라이브러리C++](https://github.com/Azure/azure-storage-cpp)<br/>
 [Azure Storage](/azure/storage/storage-introduction)는 내구성, 가용성, 확장성을 활용하여 고객의 요구 사항을 충족하는 최신 응용 프로그램을 위한 클라우드 저장소 솔루션입니다. C++용 Microsoft Azure Storage Client Library를 사용하여 C++에서 Azure Storage에 연결하세요.
 
-[ODBC Driver 13.1 for SQL Server-Windows 출시](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server)<br/>
-최신 ODBC 드라이버는 Microsoft SQL Server 2016 C/C++용 Microsoft Azure SQL Database 기반 애플리케이션에 대한 강력한 데이터 액세스를 제공합니다. 상시 암호화를 비롯 한 기능 지원, Azure Active Directory 및 AlwaysOn 가용성 그룹을 제공 합니다. MacOS 및 Linux에서도 사용할 수 있습니다.
+[ODBC Driver for SQL Server](/sql/connect/odbc/microsoft-odbc-driver-for-sql-server)<br/>
+최신 ODBC 드라이버에서 Microsoft SQL Server 및 Microsoft Azure SQL 데이터베이스 C에 대 한 강력한 데이터 액세스를 제공 /C++ 기반 응용 프로그램입니다. 상시 암호화를 비롯 한 기능 지원, Azure Active Directory 및 AlwaysOn 가용성 그룹을 제공 합니다. MacOS 및 Linux에서도 사용할 수 있습니다.
 
-[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client-programming)<br/>
-SQL Server Native Client는 OLE DB 및 ODBC 모두에 사용되는 독립 실행형 데이터 액세스 API(응용 프로그래밍 인터페이스)로, SQL Server 2005에서 SQL Server 2014까지 지원합니다. 새 애플리케이션은 ODBC Driver 13.1 for SQL Server를 사용해야 합니다.
+[SQL Server용 OLE DB 드라이버](/sql/connect/oledb/oledb-driver-for-sql-server)<br/>
+최신 OLE DB 드라이버는 독립 실행형 데이터 액세스 응용 프로그래밍 인터페이스 (API) Microsoft SQL Server 및 Microsoft Azure SQL Database를 지 원하는 경우
 
 [Microsoft Azure C 및 C++ 개발자 센터](https://azure.microsoft.com/develop/cpp/)<br/>
 향상된 유연성, 확장성 및 안정성을 제공하는 Azure에서는 원하는 도구를 사용하여 C++ 애플리케이션을 쉽게 빌드할 수 있습니다.

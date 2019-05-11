@@ -6,12 +6,12 @@ f1_keywords:
 - -std
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: 32c63240f578b6170ae351cdf0cd1628167464b6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: de3389a52781f541143268e3ede79eae375ff1d3
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317889"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446232"
 ---
 # <a name="std-specify-language-standard-version"></a>/std (언어 표준 버전 지정)
 
@@ -48,10 +48,10 @@ ms.locfileid: "62317889"
 
 **/std** 적용 하는 동안 옵션을 C++ 컴파일을 사용 하 여 검색할 수 있습니다를 [ \_MSVC\_LANG](../../preprocessor/predefined-macros.md) 전처리기 매크로입니다. 자세한 내용은 [전처리기 매크로](../../preprocessor/predefined-macros.md)합니다.
 
-합니다 **/std: c + + 14** 하 고 **/std: c + + 최신** 옵션은 Visual부터 사용할 수 있습니다 C++ 2015 업데이트 3입니다. 합니다 **/std: c + + 17** 옵션은 Visual부터 사용할 수 있습니다 C++ 2017 버전 15.3 합니다. 동작으로 활성화 되어 일부 c++17 표준 위에서 설명한 것 처럼 합니다 **/std: c + + 14** 옵션을 사용 하지만 다른 모든 C + + 17 기능으로 사용 됩니다 **/std: c + + 17**합니다.
+합니다 **/std: c + + 14** 하 고 **/std: c + + 최신** 옵션은 Visual Studio 2015 업데이트 3부터 사용할 수 있습니다. 합니다 **/std: c + + 17** 옵션은 Visual Studio 2017 버전 15.3부터 사용할 수 있습니다. 동작으로 활성화 되어 일부 c++17 표준 위에서 설명한 것 처럼 합니다 **/std: c + + 14** 옵션을 사용 하지만 다른 모든 C + + 17 기능으로 사용 됩니다 **/std: c + + 17**합니다.
 
 > [!NOTE]
-> MSVC 컴파일러 버전 또는 업데이트 수준에 따라 특정 C + + 14 또는 C + + 17 기능 하지 구현 될 수 있습니다 완전히 또는 완전히와 호환 되는 지정 하는 경우는 **/std: c + + 14** 또는 **/std: c + + 17** 옵션입니다. 예를 들어, 시각적 개체 C++ 2017 RTM 컴파일러가 C + + 14을 준수 하는 완벽 하 게 지원 하지 않습니다 `constexpr`, SFINAE 식 또는 2 단계 이름 조회 합니다. 개요 C++ 시각적 개체의 언어 규칙 C++ 릴리스 버전을 확인할 [Visual C++ 언어 규칙](../../overview/visual-cpp-language-conformance.md)합니다.
+> MSVC 컴파일러 버전 또는 업데이트 수준에 따라 특정 C + + 14 또는 C + + 17 기능 하지 구현 될 수 있습니다 완전히 또는 완전히와 호환 되는 지정 하는 경우는 **/std: c + + 14** 또는 **/std: c + + 17** 옵션입니다. 예를 들어, Visual Studio 2017 RTM 컴파일러가 C + + 14을 준수 하는 완벽 하 게 지원 하지 않습니다 `constexpr`, SFINAE 식 또는 2 단계 이름 조회 합니다. 개요 C++ 시각적 개체의 언어 규칙 C++ 릴리스 버전을 확인할 [Visual C++ 언어 규칙](../../overview/visual-cpp-language-conformance.md)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 

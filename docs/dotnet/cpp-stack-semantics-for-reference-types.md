@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - reference types, C++ stack semantics for
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
-ms.openlocfilehash: 69771de120dc413496a3b7b0613e51a13d208e22
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 4d9aaa493eab39199ac75b6b9fe888c3e103f115
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209163"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448075"
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>참조 형식에 대한 C++ 스택 의미 체계
 
-Visual 하기 전에 C++ 2005 참조 형식의 인스턴스를 만들 수 있었습니다를 사용 하는 `new` 가비지에 개체를 생성 하는 연산자가 수집 되는 힙에 합니다. 그러나 스택에 네이티브 형식의 인스턴스를 만드는 데 사용할 수 있는 동일한 구문을 사용 하는 참조 형식의 인스턴스로 만들 수 있습니다. 따라서 사용 하 여 필요가 없습니다 [ref new, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) 참조 형식의 개체를 만듭니다. 및 개체 범위를 벗어나면 컴파일러가 개체의 소멸자를 호출 합니다.
+Visual Studio 2005 이전 참조 형식의 인스턴스를 만들 수 있었습니다를 사용 하 여 `new` 가비지에 개체를 생성 하는 연산자가 수집 되는 힙에. 그러나 스택에 네이티브 형식의 인스턴스를 만드는 데 사용할 수 있는 동일한 구문을 사용 하는 참조 형식의 인스턴스로 만들 수 있습니다. 따라서 사용 하 여 필요가 없습니다 [ref new, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) 참조 형식의 개체를 만듭니다. 및 개체 범위를 벗어나면 컴파일러가 개체의 소멸자를 호출 합니다.
 
 ## <a name="remarks"></a>설명
 

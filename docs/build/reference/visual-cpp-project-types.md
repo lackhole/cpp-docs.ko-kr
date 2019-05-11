@@ -8,25 +8,25 @@ helpviewer_keywords:
 - projects [C++], types
 - templates [C++], projects
 - applications [C++], projects
-- Visual C++ projects, types
+- C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-ms.openlocfilehash: cac194ed2c830541711161dc139a42ed0529340f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: dce96a221804e5538929d63fa3c125a27e7fc36d
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217781"
 ---
 # <a name="c-project-templates"></a>C++프로젝트 템플릿
 
-Visual Studio 프로젝트 템플릿 생성 소스 코드 파일, 컴파일러 옵션, 메뉴, 도구 모음, 아이콘, 참조 및 `#include` 문을 만들려는 프로젝트의 종류에 적합 합니다. Visual Studio는 여러 종류의 Visual C++ 프로젝트 템플릿을 포함하며 대부분의 템플릿에 대해 마법사를 제공하므로 프로젝트를 만들면서 사용자 지정할 수 있습니다. 프로젝트를 만든 직후에 애플리케이션을 빌드하고 실행할 수 있으므로, 애플리케이션을 개발하면서 간간이 빌드하는 것이 좋습니다.
+Visual Studio 프로젝트 템플릿 생성 소스 코드 파일, 컴파일러 옵션, 메뉴, 도구 모음, 아이콘, 참조 및 `#include` 문을 만들려는 프로젝트의 종류에 적합 합니다. Visual Studio에 여러 종류의 C++ 프로젝트 템플릿 및를 만들면서 프로젝트를 사용자 지정할 수 있도록 이들 중 다 수에 대 한 마법사를 제공 합니다. 프로젝트를 만든 직후에 애플리케이션을 빌드하고 실행할 수 있으므로, 애플리케이션을 개발하면서 간간이 빌드하는 것이 좋습니다.
 
 > [!NOTE]
 > C++ 프로젝트 템플릿을 사용하여 C 언어 프로젝트를 만들 수 있습니다. 생성된 프로젝트에서 파일 이름 확장명이 .cpp인 파일을 찾아 확장명을 .c로 변경합니다. 그런 다음 솔루션이 아닌 프로젝트의 **프로젝트 속성** 페이지에서 **구성 속성**, **C/C++** 를 차례로 확장하고 **고급**을 선택합니다. **컴파일 옵션** 설정을 **C 코드로 컴파일(/TC)** 로 변경합니다.
 
 ## <a name="project-templates"></a>프로젝트 템플릿
 
-Visual Studio에 포함된 프로젝트 템플릿은 설치한 제품 버전 및 워크로드에 따라 다릅니다. C++ 워크로드를 사용하여 데스크톱 개발을 설치한 경우 Visual Studio에는 이러한 Visual C++ 프로젝트 템플릿이 있습니다.
+Visual Studio에 포함된 프로젝트 템플릿은 설치한 제품 버전 및 워크로드에 따라 다릅니다. 사용한 데스크톱 개발을 설치한 경우 C++ Visual Studio 워크 로드에는 C++ 프로젝트 템플릿.
 
 ### <a name="windows-desktop"></a>Windows 바탕 화면
 

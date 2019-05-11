@@ -1,6 +1,6 @@
 ---
 title: 코드 최적화
-ms.date: 04/23/2019
+ms.date: 05/06/2019
 helpviewer_keywords:
 - performance, optimizing code
 - optimization
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - optimization, C++ code
 - code, optimizing
 - performance, compiler
-ms.openlocfilehash: 430ac9ef1b2946e511d04f7ce18bb0f20d727d75
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: f44fb734c8441e10b656c5326c8df4bf6879499a
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341111"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220186"
 ---
 # <a name="optimizing-your-code"></a>코드 최적화
 
-실행 파일을 최적화 하 여 빠른 실행 속도 및 작은 코드 크기 간의 균형을 얻을 수 있습니다. 일부 메커니즘을 설명 하는이 항목에서는 해당 시각적 개체 C++ 코드를 최적화할 수 있도록 제공 합니다.
+실행 파일을 최적화 하 여 빠른 실행 속도 및 작은 코드 크기 간의 균형을 얻을 수 있습니다. 이 항목에서는 Visual Studio 코드를 활용할 수 있도록 제공 하는 메커니즘 중 일부를 설명 합니다.
 
 ## <a name="language-features"></a>언어 기능
 

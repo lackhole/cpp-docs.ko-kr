@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4867
 ms.assetid: 8a257d70-c3a7-462d-b285-e57c952a8bf7
-ms.openlocfilehash: 9fa9b382b42a2fb8ba72fd9744c612af5dd598d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0fd5de46f713aed08508f8755c9e54c3ff46366b
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62311074"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447198"
 ---
 # <a name="compiler-warning-c4867"></a>컴파일러 경고 C4867
 
@@ -19,7 +19,7 @@ ms.locfileid: "62311074"
 
 멤버 함수에 대 한 포인터를 올바르게 초기화 되었습니다.
 
-이 경고는 시각적 개체에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 됩니다 C++ 2005: 멤버 포인터 규칙이 향상 되었습니다.  Visual 이전에 컴파일된 코드 C++ 2005 C4867 이제 생성 됩니다.
+이 경고는 Visual Studio 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 됩니다: 멤버 포인터 규칙이 향상 되었습니다.  Visual Studio 2005 이전에 컴파일된 코드 C4867 생성할 됩니다.
 
 항상이 경고는 오류로 발생 됩니다. [warning](../../preprocessor/warning.md) pragma를 사용하여 이 경고를 사용하지 않도록 설정합니다. C4867 및 MFC/ATL에 대 한 자세한 내용은 참조 하세요. [_ATL_ENABLE_PTM_WARNING](../../atl/reference/compiler-options-macros.md#_atl_enable_ptm_warning)합니다.
 

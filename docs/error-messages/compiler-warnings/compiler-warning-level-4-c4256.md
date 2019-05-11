@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4256
 ms.assetid: a755a32e-895a-4837-a2b5-4ea06b736798
-ms.openlocfilehash: b1f7534098a04c7c65a380d302999260c960f284
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e8a3ab1b11c719730016e6a0cd248770cd89af8
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400963"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65447780"
 ---
 # <a name="compiler-warning-level-4-c4256"></a>컴파일러 경고(수준 4) C4256
 
@@ -19,7 +19,7 @@ ms.locfileid: "62400963"
 
 호환 되지 않을 수도 있습니다.
 
-다음 코드 예제를 살펴봅니다. 경우 정의 생성자 S2::S2 (int i,...) 시각적 개체의 버전을 사용 하 여 컴파일된 C++ 컴파일러 버전 7, 하지만 다음 예제에서는 하기 전에 현재 버전을 사용해 서 컴파일된, S3에 대 한 생성자 호출 올바르게 작동 하지 않습니다. 특별 한 경우 호출 규칙 변경 합니다. 두 항목이 모두 Visual C++ 6.0을 사용해서 컴파일된 경우, 줄임표에 대해 전달된 매개 변수가 없지 않은 한 어느 항목에서도 호출이 올바르게 작동하지 않습니다.
+다음 코드 예제를 살펴봅니다. 경우 생성자 S2::S2 정의 (int i,...)는 Microsoft의 버전을 사용 하 여 컴파일된 C++ 현재 버전을 사용해 서 컴파일된 버전 7, 하지만 다음 예제에서는 이전 컴파일러, S3에 대 한 생성자 호출 올바르게 작동 하지 않습니다. 특별 한 경우 호출 규칙 변경 합니다. 두 항목이 모두 Visual C++ 6.0을 사용해서 컴파일된 경우, 줄임표에 대해 전달된 매개 변수가 없지 않은 한 어느 항목에서도 호출이 올바르게 작동하지 않습니다.
 
 이 경고를 해결 하려면
 

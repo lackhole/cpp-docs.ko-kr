@@ -10,12 +10,12 @@ helpviewer_keywords:
 - migration [C++], /clr compiler option
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-ms.openlocfilehash: 6ac470b85a14bfe32c7f3fe47168180687669ec6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 9abc85227d6091005d7e097d3305150f4ca347a1
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387255"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448090"
 ---
 # <a name="how-to-migrate-to-clr"></a>방법: /Clr으로 마이그레이션
 
@@ -41,13 +41,13 @@ Visual Studio 라이브러리 프로젝트를 컴파일할 때 알려진된 문�
 
 다음 단계를 순서 대로 가장 쉬운 경로를 제공 된 **/clr** 컴파일. 컴파일 및 이러한 각 단계 후 프로젝트를 실행 하는 것이 반드시 합니다.
 
-### <a name="versions-prior-to-visual-c-2003"></a>Visual 이전 버전 C++ 2003
+### <a name="versions-prior-to-visual-studio-2003"></a>Visual Studio 2003 이전 버전
 
-Visual 이전 버전에서 Visual Studio 2010으로 업그레이드 하는 경우 C++ 2003, 컴파일러 오류와 관련 된 향상 된 표시 될 수 있습니다 C++ 시각적 개체의 표준 규칙 C++ 2003
+컴파일러 오류와 관련 된 향상 된 Visual Studio 2003 이전 버전에서 Visual Studio 2010으로 업그레이드 하는 경우 표시 될 수 있습니다 C++ Visual Studio 2003에서 표준 준수
 
-### <a name="upgrading-from-visual-c-2003"></a>시각적 개체에서 업그레이드 C++ 2003
+### <a name="upgrading-from-visual-studio-2003"></a>Visual Studio 2003에서 업그레이드
 
-시각적 개체를 사용 하 여 빌드한 프로젝트 이전 C++ 없이 2003 먼저 컴파일해야 할지 **/clr** Visual Studio 이제 늘어났습니다 ANSI/ISO 규정 준수 및 몇 가지 주요 변경 내용으로 합니다. 주의가 가장 가능성이 있는 변경 내용이 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md)합니다. CRT를 사용 하는 코드 사용 중단 경고를 생성 하기 위해 매우 높습니다. 이러한 경고는 표시 되지 않는, 하지만 새 마이그레이션 수 [CRT 함수의 버전 보안이 강화 된](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) 는 것이 좋습니다, 향상 된 보안을 제공 하며 코드에서 보안 문제를 통해 확인할 수 있습니다.
+Visual Studio 2003을 사용 하 여 빌드한 프로젝트 이전 먼저 컴파일해야 없이 **/clr** Visual Studio 이제 늘어났습니다 ANSI/ISO 규정 준수 및 몇 가지 주요 변경 내용으로 합니다. 주의가 가장 가능성이 있는 변경 내용이 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md)합니다. CRT를 사용 하는 코드 사용 중단 경고를 생성 하기 위해 매우 높습니다. 이러한 경고는 표시 되지 않는, 하지만 새 마이그레이션 수 [CRT 함수의 버전 보안이 강화 된](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) 는 것이 좋습니다, 향상 된 보안을 제공 하며 코드에서 보안 문제를 통해 확인할 수 있습니다.
 
 ### <a name="upgrading-from-managed-extensions-for-c"></a>Managed Extensions for에서 업그레이드C++
 
@@ -98,7 +98,7 @@ COMObj2->Method(args);  // C++ equivalent
 **/clr** 의 지침에 따라 개발 환경에서 선택할 수 있습니다 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)합니다. 이전에 설명한 대로이 단계는 충돌 하는 프로젝트 설정을 자동으로 비활성화 됩니다.
 
 > [!NOTE]
->  시각적 개체에서 관리 되는 라이브러리 또는 웹 서비스 프로젝트를 업그레이드 하는 경우 C++ 2003 합니다 **/Zl** 컴파일러 옵션이 추가 됩니다는 **명령줄** 속성 페이지. 그러면 LNK2001 합니다. 제거 **/Zl** 에서 합니다 **명령줄** 속성 페이지를 확인 합니다. 참조 [/Zl (기본 라이브러리 이름 생략)](../build/reference/zl-omit-default-library-name.md) 하 고 [컴파일러 설정 및 빌드 속성](../build/working-with-project-properties.md) 자세한 내용은 합니다. 또는 링커의 msvcrt.lib와 msvcmrt.lib 추가할 **추가 종속성** 속성입니다.
+>  Visual Studio 2003에서 관리 되는 라이브러리 또는 웹 서비스 프로젝트를 업그레이드 하는 경우는 **/Zl** 컴파일러 옵션이 추가 됩니다 합니다 **명령줄** 속성 페이지. 그러면 LNK2001 합니다. 제거 **/Zl** 에서 합니다 **명령줄** 속성 페이지를 확인 합니다. 참조 [/Zl (기본 라이브러리 이름 생략)](../build/reference/zl-omit-default-library-name.md) 하 고 [컴파일러 설정 및 빌드 속성](../build/working-with-project-properties.md) 자세한 내용은 합니다. 또는 링커의 msvcrt.lib와 msvcmrt.lib 추가할 **추가 종속성** 속성입니다.
 
 프로젝트의 메이크파일을 사용 하 여 빌드한 경우 호환 되지 않는 컴파일러 옵션을 비활성화 해야 수동으로 한 번 **/clr** 추가 됩니다. 참조 /[/clr 제한](../build/reference/clr-restrictions.md) 와 호환 되지 않는 컴파일러 옵션에 대 한 내용은 **/clr**합니다.
 

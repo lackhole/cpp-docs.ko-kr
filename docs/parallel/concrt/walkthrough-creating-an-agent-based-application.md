@@ -1,16 +1,16 @@
 ---
 title: '연습: 에이전트 기반 응용 프로그램 만들기'
-ms.date: 11/04/2016
+ms.date: 04/25/2019
 helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-ms.openlocfilehash: 1d55c9879a3dd90bb4a40b61a3bf958dbe960bc3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: c249bc8138a3617cce3eae836751575b2626f4aa
+ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378065"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64857308"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>연습: 에이전트 기반 응용 프로그램 만들기
 
@@ -40,9 +40,27 @@ ms.locfileid: "62378065"
 
 ##  <a name="createapplication"></a> 콘솔 응용 프로그램 만들기
 
-이 섹션에는 시각적 개체를 만드는 방법을 보여 줍니다 C++ 콘솔 응용 프로그램에서 사용할 헤더 파일을 참조 하는 프로그램입니다.
+이 섹션에는 만드는 방법을 보여 줍니다는 C++ 콘솔 응용 프로그램에서 사용할 헤더 파일을 참조 하는 프로그램입니다. 초기 단계를 사용 중인 Visual Studio의 버전에 따라 달라 집니다. 이 페이지의 왼쪽 위에 있는 버전 선택기를 올바르게 설정 되어 있는지 확인 합니다.
 
-#### <a name="to-create-a-visual-c-application-by-using-the-win32-console-application-wizard"></a>시각적 개체를 만들려면 C++ Win32 콘솔 응용 프로그램 마법사를 사용 하 여 응용 프로그램
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-c-console-application-in-visual-studio-2019"></a>만들려는 C++ 콘솔 응용 프로그램을 Visual Studio 2019
+
+1. 주 메뉴에서 선택 **파일** > **새로 만들기** > **프로젝트** 열려는 합니다 **새 프로젝트를 만들** 대화 상자입니다.
+
+1. 설정 대화 상자 맨 **언어** 를 **C++** 설정 **플랫폼** 하 **Windows**, 설정 및 **프로젝트 형식을** 하 **콘솔**합니다. 
+
+1. 필터링된 된 프로젝트 형식 목록에서 선택 **콘솔 앱** 선택한 **다음**합니다. 다음 페이지에서 입력 `BasicAgent` 프로젝트의 이름으로 원하는 경우 프로젝트 위치를 지정 합니다.
+
+1. 선택 된 **만들기** 프로젝트를 만들려면 단추입니다.
+
+1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭 **솔루션 탐색기**, 선택한 **속성**합니다. 아래 **구성 속성** > **C /C++** > **미리 컴파일된 헤더** > **미리 컴파일된 헤더** 선택할 **만들기**합니다.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### <a name="to-create-a-c-console-application-in-visual-studio-2017-and-earlier"></a>만들려는 C++ 콘솔 응용 프로그램 Visual Studio 2017 및 이전 버전
 
 1. 에 **파일** 메뉴에서 클릭 **새로 만들기**를 클릭 하 고 **프로젝트** 표시할 합니다 **새 프로젝트** 대화 상자.
 
@@ -50,7 +68,9 @@ ms.locfileid: "62378065"
 
 1. 에 **Win32 콘솔 응용 프로그램 마법사** 대화 상자, 클릭 **마침**합니다.
 
-1. Stdafx.h에서 다음 코드를 추가 합니다.
+::: moniker-end
+
+1. Stdafx.h (또는 Visual Studio의 버전에 따라 pch.h)에서 다음 코드를 추가 합니다.
 
 [!code-cpp[concrt-basic-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_1.h)]
 

@@ -1,24 +1,24 @@
 ---
 title: Visual C++ 새 항목 추가 템플릿 사용
-ms.date: 11/04/2016
+ms.date: 05/06/2019
 helpviewer_keywords:
 - Add New Item
 - Add New Item templates
 - Add New Item command
 - templates, Add New Item
 ms.assetid: 286d1be6-0473-407f-9a51-437dff1bfab7
-ms.openlocfilehash: afa6f7e3a1e3a6ac293a23fc18ecd0834d70555f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: e6ef78d1a43bc649a31b715afd4ce1d44f25a8c6
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317148"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217768"
 ---
 # <a name="using-visual-c-add-new-item-templates"></a>Visual C++ 새 항목 추가 템플릿 사용
 
-**새 항목 추가** 명령을 사용하여 Visual C++ 프로젝트에 공통된 항목을 쉽게 추가할 수 있습니다. **새 항목 추가** 명령을 사용하는 경우 적절한 파일을 프로젝트에 추가하는 항목 템플릿 목록이 포함된 `Add New Item` 대화 상자가 나타납니다.
+사용 하 여 Visual Studio 프로젝트에 공통 되는 항목을 쉽게 추가할 수 있습니다 합니다 **새 항목 추가** 명령입니다. **새 항목 추가** 명령을 사용하는 경우 적절한 파일을 프로젝트에 추가하는 항목 템플릿 목록이 포함된 `Add New Item` 대화 상자가 나타납니다.
 
-다음 표는 Visual C++ 새 항목 추가 템플릿의 사전순 목록입니다.
+다음 표는 Visual Studio 새 항목 추가 템플릿 목록을 사전순으로 합니다.
 
 |템플릿|설명|
 |--------------|-----------------|
@@ -38,7 +38,7 @@ ms.locfileid: "62317148"
 |설치 관리자 클래스|CLR 기능을 사용하여 <xref:System.Configuration.Install.Installer>에서 상속된 클래스를 추가합니다.|
 |MIDL 파일(.idl)|IDL(Interface Definition Language) 파일을 만듭니다.|
 |모듈 정의 파일(.def)|DLL 내보내기 정의 파일을 만듭니다.|
-|속성 시트(.props)|Visual C++ 속성 시트 파일을 만듭니다.|
+|속성 시트(.props)|속성 시트 파일을 만듭니다.|
 |등록 스크립트(.rgs)|ATL 등록 스크립트 파일을 만듭니다.|
 |보고서(.rdlc)|보고서 파일을 만듭니다.|
 |리소스 파일(.rc)|Win32 리소스 파일을 만듭니다.|

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - security [C++]
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-ms.openlocfilehash: bc449d0bbf222391868dc7586e0245fd6e8cd2ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b43658eda749e68c17659fcb41248b88fd843792
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411268"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448508"
 ---
 # <a name="security-best-practices-for-c"></a>C++의 최선의 보안 구현 방법
 
@@ -21,7 +21,7 @@ ms.locfileid: "62411268"
 
 ## <a name="visual-c-security-features"></a>Visual C++ 보안 기능
 
-이러한 보안 기능은 Visual C++ 컴파일러 및 링커에 기본 제공됩니다.
+이러한 보안 기능을 Microsoft에 기본 제공 된 C++ 컴파일러 및 링커:
 
 [/guard(제어 흐름 보호 사용)](../build/reference/guard-enable-control-flow-guard.md)<br/>
 컴파일러가 컴파일 시간에 간접 호출 대상에 대 한 제어 흐름을 분석 하 고 다음 런타임에 대상을 확인 하는 코드를 삽입 합니다.

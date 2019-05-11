@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1104
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
-ms.openlocfilehash: eadeeb7ac19e3975a37a1364502b33400018cb05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bc6305ab2e96496aa212004e186150d4a51cf3fc
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255515"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446974"
 ---
 # <a name="linker-tools-error-lnk1104"></a>링커 도구 오류 LNK1104
 
@@ -59,7 +59,7 @@ Visual Studio IDE 프로젝트를 빌드하는 다른 컴퓨터에서 복사 된
 
 ### <a name="cannot-open-a-file-built-by-your-project"></a>프로젝트를 통해 빌드된 파일을 열 수 없습니다.
 
-하는 경우이 오류가 나타날 수 있습니다 파일 *filename* 솔루션 하 여 작성 됩니다 있지만 링커 액세스 하려고 할 때 아직 존재 하지 않습니다. 이 하나의 프로젝트가 다른 프로젝트에 따라 달라 집니다 하지만 프로젝트가 올바른 순서로 빌드되지 않는 경우 발생할 수 있습니다. 이 문제를 해결 하려면 누락 된 파일을 필요할 때 까지는 빌드는 하므로 파일을 사용 하는 프로젝트에 프로젝트 참조 설정 되어 있는지 확인 합니다. 자세한 내용은 [시각적 개체에 대 한 참조를 추가 C++ 프로젝트](../../build/adding-references-in-visual-cpp-projects.md) 하 고 [프로젝트의 참조 관리](/visualstudio/ide/managing-references-in-a-project)합니다.
+하는 경우이 오류가 나타날 수 있습니다 파일 *filename* 솔루션 하 여 작성 됩니다 있지만 링커 액세스 하려고 할 때 아직 존재 하지 않습니다. 이 하나의 프로젝트가 다른 프로젝트에 따라 달라 집니다 하지만 프로젝트가 올바른 순서로 빌드되지 않는 경우 발생할 수 있습니다. 이 문제를 해결 하려면 누락 된 파일을 필요할 때 까지는 빌드는 하므로 파일을 사용 하는 프로젝트에 프로젝트 참조 설정 되어 있는지 확인 합니다. 자세한 내용은 [Visual Studio에서 참조 추가 C++ 프로젝트](../../build/adding-references-in-visual-cpp-projects.md) 하 고 [프로젝트의 참조 관리](/visualstudio/ide/managing-references-in-a-project)합니다.
 
 ### <a name="cannot-open-file-cprogramobj"></a>파일을 열 수 없습니다. ' c:\\Program.obj'
 

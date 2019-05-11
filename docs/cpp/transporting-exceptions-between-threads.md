@@ -1,6 +1,6 @@
 ---
 title: 스레드 간 예외 전송
-ms.date: 11/04/2016
+ms.date: 05/07/2019
 helpviewer_keywords:
 - std::current_exception
 - transporting exceptions between threads
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - rethrow_exception
 - move exceptions between threads
 ms.assetid: 5c95d57b-acf5-491f-8122-57c5df0edd98
-ms.openlocfilehash: f403b1448855b60f323ed582794a00c3e6ae1b3a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: e59883c75fde9938a213fb4e888e6b05a79cf4f7
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404743"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221929"
 ---
 # <a name="transporting-exceptions-between-threads"></a>스레드 간 예외 전송
 
-Visual C++ 지원 *예외를 전송할 때* 한 스레드에서 다른 스레드로에서. 예외 전송으로 하나의 스레드에서 예외를 잡아내어 다른 스레드에서 예외가 throw되어 나타나도록 합니다. 예를 들어, 이 기능을 사용하여 기본 스레드가 보조 스레드에서 throw되는 모든 예외를 처리하는 위치에 있는 다중 스레드 응용 프로그램을 작성할 수 있습니다. 예외 전송 병렬 프로그래밍 라이브러리를 만들거나 시스템 개발자에 주로 유용합니다. 전송 예외를 시각적 개체를 구현 하려면 C++ 제공 합니다 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) 형식 및 [current_exception](../standard-library/exception-functions.md#current_exception), [rethrow_exception](../standard-library/exception-functions.md#rethrow_exception), 및 [make_exception_ptr](../standard-library/exception-functions.md#make_exception_ptr) 함수입니다.
+Microsoft C++ (MSVC) 컴파일러에서 지 원하는 *예외를 전송할 때* 한 스레드에서 다른 스레드로에서. 예외 전송으로 하나의 스레드에서 예외를 잡아내어 다른 스레드에서 예외가 throw되어 나타나도록 합니다. 예를 들어, 이 기능을 사용하여 기본 스레드가 보조 스레드에서 throw되는 모든 예외를 처리하는 위치에 있는 다중 스레드 응용 프로그램을 작성할 수 있습니다. 예외 전송 병렬 프로그래밍 라이브러리를 만들거나 시스템 개발자에 주로 유용합니다. MSVC 제공 전송 예외를 구현 하는 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) 형식 및 [current_exception](../standard-library/exception-functions.md#current_exception)를 [rethrow_exception](../standard-library/exception-functions.md#rethrow_exception), 및 [make_ exception_ptr](../standard-library/exception-functions.md#make_exception_ptr) 함수입니다.
 
 ## <a name="syntax"></a>구문
 

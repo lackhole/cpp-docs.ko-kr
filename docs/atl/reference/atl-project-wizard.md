@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, creating
 - ATL Project Wizard
 ms.assetid: 564d2aaf-5b8e-4c2a-a925-ca40a283ea34
-ms.openlocfilehash: 4059961d70e6486f7417a5eff034b194d9860558
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 384847738f5410d750d53d3125c18f6a5256cccf
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261435"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65221250"
 ---
 # <a name="atl-project-wizard"></a>ATL 프로젝트 마법사
 
@@ -48,8 +48,8 @@ ms.locfileid: "62261435"
 
 ## <a name="see-also"></a>참고자료
 
-[Visual C++ 프로젝트 만들기 및 관리](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
-[Visual C++ 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
+[C++-Visual Studio 프로젝트](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[C++Visual Studio에서 프로젝트 형식](../../build/reference/visual-cpp-project-types.md)<br/>
 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [자습서](../../atl/active-template-library-atl-tutorial.md)
