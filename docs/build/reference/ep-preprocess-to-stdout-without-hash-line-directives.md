@@ -20,7 +20,7 @@ ms.locfileid: "62293253"
 ---
 # <a name="ep-preprocess-to-stdout-without-line-directives"></a>/EP(#line 지시문 없이 stdout로 전처리)
 
-C 및 C++ 소스 파일을 전처리하고 표준 출력 장치에 전처리 된 파일을 복사 합니다.
+C 및 C++ 소스 파일을 전처리하고 표준 출력 장치에 전처리된 파일을 복사합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,13 +30,13 @@ C 및 C++ 소스 파일을 전처리하고 표준 출력 장치에 전처리 된
 
 ## <a name="remarks"></a>설명
 
-프로세스에서 모든 전처리기 지시문이 실행되고 매크로 확장을 수행되며 주석이 제거됩니다. 전처리 된 출력에 주석을 유지하려면 **/EP** 옵션과 함께 [/C (전처리 중 주석 유지)](c-preserve-comments-during-preprocessing.md) 옵션을 사용합니다.
+프로세스에서 모든 전처리기 지시문이 실행되고 매크로 확장이 수행되며 주석이 제거됩니다. 전처리된 출력에 주석을 유지하려면 **/EP** 옵션과 함께 [/C(전처리 중 주석 유지)](c-preserve-comments-during-preprocessing.md) 옵션을 사용합니다.
 
-**/EP** 옵션은 컴파일을 억제합니다. 컴파일을 위해 전처리 된 파일을 다시 제출해야 합니다. **/EP**, **/FA**, **/Fa** 및 **/Fm** 옵션도 출력 파일을 표시하지 합니다. 자세한 내용은 [/FA, /Fa (목록 파일)](fa-fa-listing-file.md)와 [/Fm (맵 파일 이름)](fm-name-mapfile.md)을 참조합니다.
+**/EP** 옵션은 컴파일을 억제합니다. 컴파일을 위해 전처리된 파일을 다시 제출해야 합니다. **/EP**는 또한 **/FA**, **/Fa** 및 **/Fm** 옵션으로부터의 출력 파일을 억제합니다. 자세한 내용은 [/FA, /Fa (목록 파일)](fa-fa-listing-file.md)와 [/Fm(맵 파일 이름)](fm-name-mapfile.md)을 참조합니다.
 
-이후 단계 중에 생성 된 오류 정보는 원래 원본 파일 보다는 전처리 된 파일의 줄 번호를 참조 하십시오. 원래 소스 파일에 대한 줄 번호를 참조를 하려는 경우 [/E (stdout으로 전처리)](e-preprocess-to-stdout.md)를 대신 사용합니다. **/E** 옵션은 `#line` 지시문을 출력하려는 목적으로 사용합니다.
+이후 단계 중에 생성된 오류 정보는 원래 원본 파일보다는 전처리된 파일의 줄 번호를 참조합니다. 줄 번호가 원래 원본 파일에 대해 참조하게 하려는 경우 [/E(stdout으로 전처리)](e-preprocess-to-stdout.md)를 대신 사용합니다. **/E** 옵션은 이 목적을 위해 `#line` 지시문을 출력에 추가합니다.
 
-`#line` 지시문을 사용하여 전처리된 출력을 파일에 보내려면 [/P (파일로 전처리)](p-preprocess-to-a-file.md) 옵션을 대신 사용 합니다.
+`#line` 지시문을 사용하여 전처리된 출력을 파일에 보내려면 [/P (파일로 전처리)](p-preprocess-to-a-file.md) 옵션을 대신 사용합니다.
 
 `#line` 지시문을 사용하여 전처리된 출력을 stdout으로 보내려면 **/P**와 **/EP**를 함께 사용합니다.
 
@@ -44,7 +44,7 @@ C 및 C++ 소스 파일을 전처리하고 표준 출력 장치에 전처리 된
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [컴파일러 설정 및 빌드 속성](../working-with-project-properties.md)을 참조합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
