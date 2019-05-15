@@ -4,16 +4,16 @@ ms.date: 06/21/2018
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 266ea37510b636cd1dc1cfa5909552ace50df1bc
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 21931fc4976c909c77120e696f25f93c0a0fda0b
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58782365"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446779"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ 도구 집합 또는 설명서의 문제를 보고하는 방법
 
-Microsoft Visual C++ 컴파일러, 링커 또는 기타 도구 및 라이브러리에 문제가 발생하는 경우 문제를 파악하고자 합니다. 문제가 설명서에 있으면 해당 내용도 알고 싶습니다.
+Microsoft C++ 컴파일러, 링커 또는 기타 도구 및 라이브러리에 문제가 발생하는 경우 문제를 파악하고자 합니다. 문제가 설명서에 있으면 해당 내용도 알고 싶습니다.
 
 ## <a name="how-to-report-a-c-toolset-issue"></a>C++ 도구 집합 문제를 보고하는 방법
 
