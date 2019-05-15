@@ -1,19 +1,17 @@
 ---
 title: 'TN045: Long Varchar-varbinary에 대 한 MFC 데이터베이스 지원'
 ms.date: 11/04/2016
-f1_keywords:
-- vc.mfc.data
 helpviewer_keywords:
 - TN045
 - Varbinary data type
 - Varchar data type
 ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
-ms.openlocfilehash: d356f094759775f709838de149769b1671fdf9ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e8b356027e5c5b7c604a0354624d9f11e32fb9a
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305374"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611038"
 ---
 # <a name="tn045-mfcdatabase-support-for-long-varcharvarbinary"></a>TN045: Long Varchar/Varbinary에 대 한 c/데이터베이스 지원
 
