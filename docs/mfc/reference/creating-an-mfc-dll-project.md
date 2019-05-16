@@ -9,12 +9,12 @@ helpviewer_keywords:
 - projects [MFC], creating
 - DLLs [MFC], creating
 ms.assetid: 05540b93-4781-4a90-aadf-55158313f5b2
-ms.openlocfilehash: 44671985b2ab22e866a63b284a4b22d87b614667
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: cd1d7910d95fa7e412f9843da2cec7ae10a38ef6
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446743"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708218"
 ---
 # <a name="creating-an-mfc-dll-project"></a>MFC DLL 프로젝트 만들기
 
@@ -36,7 +36,7 @@ MFC DLL은 동시에 여러 응용 프로그램에서 사용할 수 있는 함�
 
 1. 클릭 **완료할** 마법사를 닫고에서 새 프로젝트를 열고 **솔루션 탐색기**합니다.
 
-프로젝트가 만들어진 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [시각적 개체에 대해으로 만들어지는 파일 형식 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
+프로젝트가 만들어진 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [Visual Studio 용으로 만들어지는 파일 형식 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

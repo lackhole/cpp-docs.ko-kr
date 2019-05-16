@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - wizards [MFC]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-ms.openlocfilehash: 20357646bbb7aa4fe00db43d8e77f9bf0b95c9b5
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 2e8741677031ff9b12989d75243a13550d74b608
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525361"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707380"
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC 소비자 마법사
 
@@ -19,7 +19,7 @@ ms.locfileid: "65525361"
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 이 마법사는 지정 된 데이터 원본에 액세스 하는 데 필요한 ODBC 레코드 집합 클래스와 데이터 바인딩을 설정 합니다.
 

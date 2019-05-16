@@ -2,12 +2,12 @@
 title: 컴파일러 내장 및 어셈블리 언어
 ms.date: 11/04/2016
 ms.assetid: ddd51620-d01b-44cf-853b-e11420d13137
-ms.openlocfilehash: 016303262db40917099dfd6d13b4b11ad6ec2797
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 6e2617290b368eff3fded4053db124f5d88d62ec
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345212"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708317"
 ---
 # <a name="compiler-intrinsics-and-assembly-language"></a>컴파일러 내장 및 어셈블리 언어
 
@@ -21,4 +21,4 @@ ms.locfileid: "64345212"
 |[인라인 어셈블러](../assembler/inline/inline-assembler.md)|x86 프로세서에서 Visual C/C++ 인라인 어셈블러를 사용하는 방법을 설명합니다.|
 |[ARM 어셈블러 참조](../assembler/arm/arm-assembler-reference.md)|Microsoft ARM 어셈블러(armasm) 및 관련 도구에 대한 참조 자료를 제공합니다.|
 |[Microsoft 매크로 어셈블러 참조](../assembler/masm/microsoft-macro-assembler-reference.md)|Microsoft 매크로 어셈블러(masm)에 대한 참조 자료를 제공합니다.|
-|[Visual C++](../overview/visual-cpp-in-visual-studio.md)|Visual C++ 설명서의 최상위 문서입니다.|
+|[Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)|Visual C++ 설명서의 최상위 문서입니다.|

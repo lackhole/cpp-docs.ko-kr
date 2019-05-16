@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - COM interfaces, adding classes
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
-ms.openlocfilehash: 794df6c207c2f2e93cdcc63a6b83cd3434764e87
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 7a866c0e6b772a992f5ae81dbb17646765f172e6
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525471"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708335"
 ---
 # <a name="add-class-from-typelib-wizard"></a>Typelib에서 클래스 추가 마법사
 
@@ -19,7 +19,7 @@ ms.locfileid: "65525471"
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 이 마법사를 사용 하 여 사용 가능한 형식 라이브러리에서 MFC 클래스를 추가 합니다. 마법사는 선택한 형식 라이브러리에서 추가한 각 인터페이스에 대 한 클래스를 만듭니다.
 

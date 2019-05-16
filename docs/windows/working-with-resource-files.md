@@ -6,12 +6,12 @@ helpviewer_keywords:
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-ms.openlocfilehash: a08c7ecb153b790f06da386ac93d1f05f5981e61
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 44b744ec18ef46df366547bf03e980b3e7032b09
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387671"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707340"
 ---
 # <a name="working-with-resource-files"></a>리소스 파일 작업
 
@@ -49,7 +49,7 @@ ms.locfileid: "62387671"
 
 ## <a name="related-sections"></a>관련 단원
 
-[Visual C++](../overview/visual-cpp-in-visual-studio.md)<br/>
+[Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)<br/>
 Visual C++ 설명서에 대한 링크를 제공합니다.
 
 [의견 보내기](/visualstudio/ide/talk-to-us)<br/>
