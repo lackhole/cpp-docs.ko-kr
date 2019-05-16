@@ -95,7 +95,7 @@
 ## [ATL 컬렉션 클래스](atl-collection-classes.md)
 ## [ATL 레지스트리 구성 요소(등록자)](atl-registry-component-registrar.md)
 ### [등록자 스크립트 만들기](creating-registrar-scripts.md)
-#### [BNF(Backus Nauer Form) 구문 이해](understanding-backus-nauer-form-bnf-syntax.md)
+#### [BNF(Backus-Naur 형식) 구문 이해](understanding-backus-naur-form-bnf-syntax.md)
 #### [구문 분석 트리 이해](understanding-parse-trees.md)
 #### [레지스트리 스크립팅 예](registry-scripting-examples.md)
 #### [대체 가능 매개 변수 사용(등록자 전처리기)](using-replaceable-parameters-the-registrar-s-preprocessor.md)
