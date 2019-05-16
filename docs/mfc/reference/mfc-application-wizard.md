@@ -7,19 +7,19 @@ helpviewer_keywords:
 - MFC Application Wizard
 - executable files, creating
 ms.assetid: 227ac090-921d-4b2f-be0a-66a5f4cab0d4
-ms.openlocfilehash: f69f0a19cdcd3526d8afac2e1492da806c2dffd3
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: e97c7a29dd56a69fad99e85c206ca2104fa71798
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448470"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708183"
 ---
 # <a name="mfc-application-wizard"></a>MFC 응용 프로그램 마법사
 
 응용 프로그램을 생성 하는 MFC 응용 프로그램 마법사를 컴파일하면 Windows 실행 파일 (.exe) 응용 프로그램의 기본 기능을 구현 합니다. MFC 시작 응용 프로그램에 C++ (.cpp) 파일, 리소스 (.rc) 파일, 헤더 (.h) 파일 및 프로젝트 (.vcxproj) 파일 원본입니다. 이러한 시작 파일에서 생성 된 코드는 MFC를 기반으로 합니다.
 
 > [!NOTE]
->  선택한 옵션에 따라 마법사는 프로젝트에서 추가 파일을 만듭니다. 예를 들어 선택한 **상황에 맞는 도움말** 에 [고급 기능](../../mfc/reference/advanced-features-mfc-application-wizard.md) 페이지에서 마법사는 프로젝트의 도움말 파일을 컴파일하는 데 필요한 파일을 만듭니다. 마법사에서 생성 하는 파일에 대 한 자세한 내용은 참조 하세요. [시각적 개체에 대해으로 만들어지는 파일 형식 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md), 및 프로젝트의 Readme.txt 파일을 참조 합니다.
+>  선택한 옵션에 따라 마법사는 프로젝트에서 추가 파일을 만듭니다. 예를 들어 선택한 **상황에 맞는 도움말** 에 [고급 기능](../../mfc/reference/advanced-features-mfc-application-wizard.md) 페이지에서 마법사는 프로젝트의 도움말 파일을 컴파일하는 데 필요한 파일을 만듭니다. 마법사에서 생성 하는 파일에 대 한 자세한 내용은 참조 하세요. [Visual Studio 용으로 만들어지는 파일 형식 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md), 및 프로젝트의 Readme.txt 파일을 참조 합니다.
 
 ## <a name="overview"></a>개요
 

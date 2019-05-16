@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Windows Desktop Wizard
 - Win32 Project Wizard
 ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
-ms.openlocfilehash: b86536cb6177390ab89d235ecb8e093006dd8cff
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: a434a329febc38d6a46881dcabba6b05a402fbca
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448570"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708059"
 ---
 # <a name="windows-desktop-wizard"></a>Windows 데스크톱 마법사
 
@@ -83,7 +83,7 @@ Windows 데스크톱 애플리케이션을 만들었으면 [제네릭](../ide/ge
 > [!NOTE]
 > ATL 클래스는 추가할 수 없으며 MFC 클래스는 MFC를 지원하는 Windows 데스크톱 애플리케이션 형식(이전 표 참조)에만 추가할 수 있습니다.
 
-마법사에서 프로젝트용으로 만든 파일은 **솔루션 탐색기**에서 볼 수 있습니다. 마법사에서 프로젝트용 파일에 대 한 자세한 내용은 프로젝트에서 생성 한 파일을 참조 하세요. `ReadMe.txt`합니다. 파일 형식에 대 한 자세한 내용은 [시각적 개체에 대해으로 만들어지는 파일 형식 C++ 프로젝트](../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
+마법사에서 프로젝트용으로 만든 파일은 **솔루션 탐색기**에서 볼 수 있습니다. 마법사에서 프로젝트용 파일에 대 한 자세한 내용은 프로젝트에서 생성 한 파일을 참조 하세요. `ReadMe.txt`합니다. 파일 형식에 대 한 자세한 내용은 [Visual Studio 용으로 만들어지는 파일 형식 C++ 프로젝트](../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
