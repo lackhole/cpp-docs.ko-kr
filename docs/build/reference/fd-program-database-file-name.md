@@ -37,13 +37,13 @@ ms.locfileid: "62292733"
 
 파일 이름이 포함되지 않은 경로명(백슬래시로 끝나는 경로)으로 지정할 경우 컴파일러는 지정된 디렉터리에 VC*x*0.pdb이라는 .pdb 파일을 만듭니다.
 
-확장자을 포함 하지 않는 파일 이름을 지정하면 컴파일러는 .pdb를 확장자로 사용합니다.
+확장자를 포함하지 않는 파일 이름을 지정하면 컴파일러는 .pdb를 확장자로 사용합니다.
 
-또한 이 옵션은 최소 다시 빌드 및 증분 컴파일을 사용되는 상태 (.idb) 파일의 이름을 지정합니다.
+또한 이 옵션은 최소 다시 빌드 및 증분 컴파일을 위해 사용되는 상태 (.idb) 파일의 이름을 지정합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)을 참조합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
