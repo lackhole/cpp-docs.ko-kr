@@ -1,25 +1,27 @@
 ---
 title: Typelib에서 클래스 추가 마법사
-ms.date: 10/03/2018
-f1_keywords:
-- vc.codewiz.class.typelib
+ms.date: 05/09/2019
 helpviewer_keywords:
-- Add Class from TypeLib Wizard [MFC]
 - COM interfaces, adding classes
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
-ms.openlocfilehash: a2c291e1c9e78d288bdb2d15f224520d764dfa1b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a866c0e6b772a992f5ae81dbb17646765f172e6
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62297010"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708335"
 ---
 # <a name="add-class-from-typelib-wizard"></a>Typelib에서 클래스 추가 마법사
 
-이 마법사를 사용 하 여 사용 가능한 형식 라이브러리에서 MFC 클래스를 추가 합니다. 마법사는 선택한 형식 라이브러리에서 추가한 각 인터페이스에 대 한 클래스를 만듭니다.
+::: moniker range="vs-2019"
 
-> [!WARNING]
-> Visual Studio 2017 버전 15.9에서 이 코드 마법사는 더 이상 사용되지 않으므로 Visual Studio의 이후 버전에서 제거됩니다. 이 마법사는 거의 사용되지 않습니다. 이 마법사가 제거되더라도 ATL 및 MFC에 대한 일반 지원은 그대로 유지됩니다. 이 지원 중단에 대한 의견을 공유하려면 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)를 완료하세요. 여러분의 의견은 소중합니다.
+이 마법사는 Visual Studio 2019에서 사용할 수 있는 이상 없습니다.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+이 마법사를 사용 하 여 사용 가능한 형식 라이브러리에서 MFC 클래스를 추가 합니다. 마법사는 선택한 형식 라이브러리에서 추가한 각 인터페이스에 대 한 클래스를 만듭니다.
 
 - **클래스를 추가 합니다.**
 
@@ -66,6 +68,8 @@ ms.locfileid: "62297010"
    새 클래스의 헤더 파일 이름을 설정합니다. 기본적으로 이 이름은 **생성된 클래스**에 제공한 이름을 기반으로 합니다. 파일 이름을 선택한 위치에 저장하거나 클래스 선언을 기존 파일에 추가하려면 줄임표 단추를 클릭합니다. 기존 파일을 선택하면 마법사에서 **마침**을 클릭해야 해당 파일이 선택한 위치에 저장됩니다.
 
    마법사는 파일을 덮어쓰지 않습니다. 기존 파일의 이름을 선택하면 마법사에서 **마침**을 클릭할 때 클래스 선언을 파일의 내용에 추가해야 하는지 여부를 나타내는 메시지가 표시됩니다. **예**를 클릭하여 파일을 추가하거나, **아니요**를 클릭하여 마법사로 돌아가서 다른 파일 이름을 지정합니다.
+
+::: moniker-end
 
 ## <a name="see-also"></a>참고자료
 

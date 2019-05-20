@@ -1,15 +1,15 @@
 ---
 layout: HubPage
 title: Visual C++ 설명서
-description: C++를 사용하여 플랫폼과 장치용 애플리케이션, 서비스 및 도구를 개발하는 방법을 알아봅니다.
+description: C++를 사용하여 플랫폼과 디바이스용 응용 프로그램, 서비스 및 도구를 개발하는 방법을 알아봅니다.
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: f402087b101487a444996e7e27b186382c4874fd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5db891bd1ed7a51a623dadfd5cc4e40a081cf0e7
+ms.sourcegitcommit: bc1b14f29a02685f97c7ef5c098d16db6eaf369f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264441"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65789010"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -423,7 +423,7 @@ ms.locfileid: "62264441"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/Microsoft/cpprestsdk">
+                                <a href="/cpp/cloud/cloud-and-web-programming-in-visual-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -433,8 +433,8 @@ ms.locfileid: "62264441"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>네트워킹 라이브러리</h3>
-                                                    <p>웹 프로그래밍을 위한 C++ REST SDK(코드 이름 카사블랑카) 오픈 소스 라이브러리입니다.</p>
+                                                    <h3>클라우드 및 네트워킹 라이브러리</h3>
+                                                    <p>IoT, 스토리지 등에 대하여 Microsoft Azure C/C++ SDK를 사용하고, 웹 프로그래밍을 위해 C++ REST SDK 오픈 소스 라이브러리를 사용합니다.</p>
                                                 </div>
                                             </div>
                                         </div>

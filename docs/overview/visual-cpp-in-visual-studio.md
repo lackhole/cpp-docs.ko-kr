@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: d8826c92077ac374b67a7294fe040d6fe8dea927
-ms.sourcegitcommit: 14b292596bc9b9b883a9c58cd3e366b282a1f7b3
+ms.openlocfilehash: a01c6448174a35da900b7b50a1df5916a2983201
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60124748"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222607"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio의 C++
 
@@ -103,7 +103,7 @@ C# 또는 Visual Basic과 같은 언어로 작성된 네이티브 C++ 및 .NET �
 [Linux 프로그래밍](../linux/index.md)<br/>
 Visual Studio IDE를 사용하여 GCC로 컴파일을 위해 원격 Linux 머신으로 코딩 및 배포합니다.
 
-[Visual C++의 DLL](../build/dlls-in-visual-cpp.md)<br/>
+[Visual Studio에서 C/C++ DLL 만들기](../build/dlls-in-visual-cpp.md)<br/>
 Win32, ATL 및 MFC를 사용하여 Windows 데스크톱 DLL을 만드는 방법을 설명하고 DLL을 컴파일 및 등록하는 방법에 대해 알아봅니다.
 
 [병렬 프로그래밍](../parallel/parallel-programming-in-visual-cpp.md)<br/>

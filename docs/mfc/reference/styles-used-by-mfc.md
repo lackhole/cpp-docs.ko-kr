@@ -1,8 +1,6 @@
 ---
 title: MFC에서 사용하는 스타일
 ms.date: 06/20/2018
-f1_keywords:
-- vc.mfc.styles
 helpviewer_keywords:
 - button objects (CButton), button styles
 - button styles [MFC]
@@ -196,12 +194,12 @@ helpviewer_keywords:
 - WS_EX_TRANSPARENT constant [MFC]
 - WS_EX_WINDOWEDGE constant [MFC]
 ms.assetid: d3b9af37-31b5-4c97-a8ad-189fd724b04c
-ms.openlocfilehash: eb5123c347fdb847cade54f15764f175ee0ab799
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 450a907ba69e7bc48e58e6aea4162c053f789e00
+ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309826"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65611716"
 ---
 # <a name="styles-used-by-mfc"></a>MFC에서 사용하는 스타일
 
@@ -372,7 +370,7 @@ ms.locfileid: "62309826"
 |스타일|설명|
 |-----------|-----------------|
 |MB_APPLMODAL|사용자는 현재 창에 작업을 계속 하기 전에 messagebox에 응답 해야 합니다. 그러나 사용자는 다른 응용 프로그램의 windows로 이동 하 고 해당 창에 작업 수 있습니다. 기본값인 MB_APPLMODAL MB_SYSTEMMODAL 아니고 MB_TASKMODAL 지정 된 경우.|
-|MB_SYSTEMMODAL|모든 응용 프로그램에는 사용자가 messagebox에 응답할 때까지 일시 중단 됩니다. 시스템 모달 메시지 상자는 사용자에 게 심각한를 초래할 수 있는 오류 즉각적인 주목이 필요한 및 제한적으로 사용 해야 하는 데 사용 됩니다.|
+|MB_SYSTEMMODAL|모든 애플리케이션에는 사용자가 messagebox에 응답할 때까지 일시 중단 됩니다. 시스템 모달 메시지 상자는 사용자에 게 심각한를 초래할 수 있는 오류 즉각적인 주목이 필요한 및 제한적으로 사용 해야 하는 데 사용 됩니다.|
 |MB_TASKMODAL|비슷하지만 MB_APPLMODAL, Microsoft Foundation 클래스 응용 프로그램에서 유용 하지 않음. 이 플래그를 호출 하는 응용 프로그램이 나 라이브러리 창 핸들을 사용할 수 없는 예약 되어 있습니다.|
 
 ### <a name="message-box-icons"></a>메시지 상자 아이콘

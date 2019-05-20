@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: f6367f30-2710-4178-b43a-639eed824acb
 ms.openlocfilehash: 38db548bb71f8dc3e21cb1d544ba70d4fdebb6b7
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62320112"
@@ -33,7 +33,7 @@ ms.locfileid: "62320112"
 
 - [/Fo (개체 파일 이름)](fo-object-file-name.md)
 
-- [/Fp (Name .pch File)](fp-name-dot-pch-file.md)
+- [/Fp(.pch 파일 이름)](fp-name-dot-pch-file.md)
 
 - [/FR, /Fr (.sbr 파일 만들기)](fr-fr-create-dot-sbr-file.md)
 

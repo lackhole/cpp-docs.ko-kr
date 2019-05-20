@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control names
 ms.assetid: 9b8b81d2-36df-48ed-b58a-a771a0e269ee
-ms.openlocfilehash: e7eb1686f191e3bfc60632447978e16ff48b2ab8
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 17c1b30811fa1d9c3f3bc04a46553c617eff966b
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448597"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708151"
 ---
 # <a name="control-names-mfc-activex-control-wizard"></a>MFC ActiveX 컨트롤 마법사, 컨트롤 이름
 
@@ -86,5 +86,5 @@ ms.locfileid: "65448597"
 [MFC ActiveX 컨트롤 마법사](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
 [애플리케이션 설정, MFC ActiveX 컨트롤 마법사](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
 [MFC ActiveX 컨트롤 마법사, 컨트롤 설정](../../mfc/reference/control-settings-mfc-activex-control-wizard.md)<br/>
-[시각적 개체에 대해 만들어지는 형식 파일 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md)
+[Visual Studio 용으로 만들어지는 형식 파일 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md)
 

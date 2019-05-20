@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - accelerator_view class
 ms.assetid: 9f298c21-bf62-46e0-88b8-01c5c78ef144
-ms.openlocfilehash: 4075051ec07fc1331d815534a715c0411160fe14
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35bcd4d951ee0340709976807de3a1d5e984cf29
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405640"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524835"
 ---
 # <a name="acceleratorview-class"></a>accelerator_view 클래스
 
@@ -121,7 +121,7 @@ accelerator_view( const accelerator_view & other );
 *other*<br/>
 `accelerator_view` 복사할 개체입니다.
 
-## <a name="createmarker"></a>create_marker
+## <a name="create_marker"></a>create_marker
 
 지금이 전송 된 모든 명령의 완료를 추적 하는 future를 반환 `accelerator_view` 개체입니다.
 
@@ -149,7 +149,7 @@ void flush();
 
 `void`를 반환합니다.
 
-## <a name="getaccelerator"></a>get_accelerator
+## <a name="get_accelerator"></a>get_accelerator
 
 Accelerator_view 개체에 대 한 액셀러레이터 개체를 반환합니다.
 ### <a name="syntax"></a>구문
@@ -162,7 +162,7 @@ accelerator get_accelerator() const;
 
 Accelerator_view 개체에 대 한 액셀러레이터 키 개체입니다.
 
-## <a name="getisautoselection"></a>get_is_auto_selection
+## <a name="get_is_auto_selection"></a>get_is_auto_selection
 
 선택할지 여부를 자동으로 적절 한 액셀러레이터 accelerator_view 전달 될 때를 나타내는 부울 값을 반환 된 [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each)합니다.
 
@@ -176,7 +176,7 @@ bool get_is_auto_selection() const;
 
 **true 이면** 런타임에서 자동으로 적절 한 액셀러레이터;를 선택 하는 경우이 고, 그렇지 **false**합니다.
 
-## <a name="getisdebug"></a>get_is_debug
+## <a name="get_is_debug"></a> get_is_debug
 
 Accelerator_view 개체를 위해 DEBUG 레이어가 활성화 폭넓은 오류 보고에 있는지 여부를 나타내는 부울 값을 반환 합니다.
 
@@ -190,7 +190,7 @@ bool get_is_debug() const;
 
 `accelerator_view` 개체에 확장 오류 보고를 위해 DEBUG 레이어가 활성화되었는지 여부를 나타내는 부울 값입니다.
 
-## <a name="getqueuingmode"></a>get_queuing_mode
+## <a name="get_queuing_mode"></a>get_queuing_mode
 
 Accelerator_view 개체에 대 한 큐 모드를 반환합니다.
 
@@ -204,7 +204,7 @@ queuing_mode get_queuing_mode() const;
 
 `accelerator_view` 개체의 큐 모드입니다.
 
-## <a name="getversion"></a>get_version
+## <a name="get_version"></a>get_version
 
 Accelerator_view의 버전을 반환 합니다.
 
@@ -218,7 +218,7 @@ unsigned int get_version() const;
 
 버전을 `accelerator_view`입니다.
 
-## <a name="isautoselection"></a>is_auto_selection
+## <a name="is_auto_selection"></a>is_auto_selection
 
 선택할지 여부를 자동으로 적절 한 액셀러레이터 accelerator_view 전달 될 때를 나타내는 부울 값을 가져옵니다를 [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each)합니다.
 
@@ -228,7 +228,7 @@ unsigned int get_version() const;
 __declspec(property(get= get_is_auto_selection)) bool is_auto_selection;
 ```
 
-## <a name="isdebug"></a>is_debug
+## <a name="is_debug"></a>is_debug
 
 Accelerator_view 개체를 위해 DEBUG 레이어가 활성화 폭넓은 오류 보고에 있는지 여부를 나타내는 부울 값을 가져옵니다.
 
@@ -295,7 +295,7 @@ bool operator== ( const accelerator_view & other ) const;
 
 **true 이면** 두 개체가 동일 하면이 고, 그렇지 **false**합니다.
 
-## <a name="queuingmode"></a>queuing_mode
+## <a name="queuing_mode"></a>queuing_mode
 
 Accelerator_view 개체에 대 한 큐 모드를 가져옵니다.
 

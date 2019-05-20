@@ -6,12 +6,12 @@ ms.author: mblome
 ms.date: 03/18/2019
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: 2ca1b88f492d96f8a08d296cab7f35f3b72409c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5dba6877c4489337625eed016c77b853f84af990
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314629"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65217660"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux 및 MacOS용 C++ 패키지 관리자
 
@@ -124,7 +124,7 @@ zlib:x86-windows        1.2.11   A compression library
 
 ## <a name="integrate-with-visual-studio-code-linuxmacos"></a>Visual Studio Code와 통합(Linux/MacOS)
 
-**vcpkg 통합 설치**를 실행하여 Linux/MacOS에서 vcpkg enlistement의 위치를 사용하여 Visual Studio Code를 구성하고 소스 파일에서 IntelliSense를 활성화합니다.
+**vcpkg 통합 설치**를 실행하여 Linux/MacOS에서 vcpkg enlistment의 위치를 사용하여 Visual Studio Code를 구성하고 소스 파일에서 IntelliSense를 활성화합니다.
 
 ## <a name="target-linux-from-windows-via-wsl"></a>WSL을 통해 Windows에서 Linux 대상 지정
 

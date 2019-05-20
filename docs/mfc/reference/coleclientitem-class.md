@@ -164,12 +164,12 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnScrollBy
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
-ms.openlocfilehash: 2687dfc9941a512523a7cb771cb872c78b97ce2d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd04b2aa6dd1d539e357a69666bafc80e3ea5eba
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152178"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708155"
 ---
 # <a name="coleclientitem-class"></a>COleClientItem 클래스
 
@@ -2151,7 +2151,7 @@ BOOL SetPrintDevice(const PRINTDLG* ppd);
 에 대 한 포인터를 [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) 새 대상 인쇄 장치에 대 한 정보를 포함 하는 데이터 구조입니다. NULL 일 수 있습니다.
 
 *ppd*<br/>
-에 대 한 포인터를 [PRINTDLG](https://msdn.microsoft.com/library/windows/desktop/ms646940) 새 대상 인쇄 장치에 대 한 정보를 포함 하는 데이터 구조입니다. NULL 일 수 있습니다.
+에 대 한 포인터를 [PRINTDLG](/windows/desktop/ms646940) 새 대상 인쇄 장치에 대 한 정보를 포함 하는 데이터 구조입니다. NULL 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 

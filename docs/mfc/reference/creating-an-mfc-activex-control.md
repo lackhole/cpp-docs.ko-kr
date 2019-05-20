@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], creating
 - ActiveX controls [MFC], creating
 ms.assetid: 8bd5a93c-d04d-414e-bb28-163fdc1c0dd5
-ms.openlocfilehash: 27b82fb7a688c8cc7a3df734a7e60a17f7ffa184
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: c67f925773854258111b3a2aa1967f51de4df127
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446754"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708246"
 ---
 # <a name="creating-an-mfc-activex-control"></a>MFC ActiveX 컨트롤 만들기
 
@@ -36,7 +36,7 @@ MFC ActiveX 컨트롤을 만드는 가장 쉬운 방법은 사용 하는 것은 
 
 1. 클릭 **완료** 마법사를 닫고 개발 환경에서 새 프로젝트를 엽니다.
 
-프로젝트를 만든 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [시각적 개체에 대해으로 만들어지는 파일 형식 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
+프로젝트를 만든 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [Visual Studio 용으로 만들어지는 파일 형식 C++ 프로젝트](../../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
 
 프로젝트를 만든 후 추가할 코드 마법사를 사용할 수 있습니다 [함수](../../ide/add-member-function-wizard.md), [변수](../../ide/add-member-variable-wizard.md), [이벤트](../../ide/add-event-wizard.md)하십시오 [속성](../../ide/names-add-property-wizard.md), 및 [메서드](../../ide/add-method-wizard.md)합니다. ActiveX 컨트롤을 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [MFC ActiveX 컨트롤](../../mfc/mfc-activex-controls.md)합니다.
 
