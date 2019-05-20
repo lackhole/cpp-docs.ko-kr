@@ -31,7 +31,7 @@ ms.locfileid: "62293058"
 
 ## <a name="remarks"></a>설명
 
-이 옵션은 명령줄, CL 환경변수 또는 명령 파일에 지정된 모든 소스 파일의 첫 행에 있는 `#include` 지시문에 큰 따옴표로 파일을 지정하는 것과 동일한 효과가 있습니다. 여러 개의 **/FI** 옵션을 사용하면 파일은 CL에 의해 처리되는 순서대로 포함됩니다.
+이 옵션은 명령줄, CL 환경 변수 또는 명령 파일에 지정된 모든 소스 파일의 첫 행에 있는 `#include` 지시문에 큰 따옴표로 파일을 지정하는 것과 동일한 효과가 있습니다. 여러 개의 **/FI** 옵션을 사용하면 파일은 CL에 의해 처리되는 순서대로 포함됩니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
