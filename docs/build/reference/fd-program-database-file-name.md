@@ -23,7 +23,7 @@ ms.locfileid: "62292733"
 ---
 # <a name="fd-program-database-file-name"></a>/Fd(프로그램 데이터베이스 파일 이름)
 
-만든 프로그램 데이터베이스 (PDB) 파일에 대 한 파일 이름을 지정 [/z7, /Zi, /ZI (디버그 정보 형식)](z7-zi-zi-debug-information-format.md)합니다.
+[/Z7, /Zi, /ZI (디버그 정보 형식)](z7-zi-zi-debug-information-format.md)로 생성된 프로그램 데이터베이스(PDB) 파일의 이름을 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,21 +35,21 @@ ms.locfileid: "62292733"
 
 **/Fd**가 없으면 PDB 파일 이름의 기본값은 VC*x*0.pdb입니다. 여기서 *x*는 사용 중인 Visual C++의 주 버전입니다.
 
-컴파일러 VC 라는.pdb 파일을 만듭니다 (경로가 백슬래시로 끝나는) 파일 이름을 포함 하지 않는 경로 이름을 지정 하는 경우*x*0.pdb 지정된 된 디렉터리에 있습니다.
+파일 이름이 포함되지 않은 경로명(백슬래시로 끝나는 경로)으로 지정할 경우 컴파일러는 지정된 디렉터리에 VC*x*0.pdb이라는 .pdb 파일을 만듭니다.
 
-확장을 포함 하지 않는 파일 이름을 지정 하면 컴파일러는.pdb 확장명으로 사용 합니다.
+확장자를 포함하지 않는 파일 이름을 지정하면 컴파일러는 .pdb를 확장자로 사용합니다.
 
-또한이 옵션은 최소 다시 빌드 및 증분 컴파일을 사용 되는 상태 (.idb) 파일을 이름을 지정 합니다.
+또한 이 옵션은 최소 다시 빌드 및 증분 컴파일을 위해 사용되는 상태 (.idb) 파일의 이름을 지정합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
 1. **출력 파일** 속성 페이지를 클릭합니다.
 
-1. 수정 된 **프로그램 데이터베이스 파일 이름** 속성입니다.
+1. **프로그램 데이터베이스 파일 이름** 속성을 수정합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
