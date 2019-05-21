@@ -1,0 +1,966 @@
+- name: ATL(액티브 템플릿 라이브러리)
+  href: atl-com-desktop-components.md
+- name: ATL(액티브 템플릿 라이브러리) 개념
+  expanded: false
+  items:
+    - name: ATL(액티브 템플릿 라이브러리) 개념
+      href: active-template-library-atl-concepts.md
+    - name: COM 및 ATL 소개
+      expanded: false
+      items:
+        - name: COM 및 ATL 소개
+          href: introduction-to-com-and-atl.md
+        - name: COM 소개
+          expanded: false
+          items:
+            - name: COM 소개
+              href: introduction-to-com.md
+            - name: 인터페이스(ATL)
+              href: interfaces-atl.md
+            - name: IUnknown
+              href: iunknown.md
+            - name: 참조 개수
+              href: reference-counting.md
+            - name: QueryInterface
+              href: queryinterface.md
+            - name: 마샬링
+              href: marshaling.md
+            - name: 집계
+              href: aggregation.md
+        - name: ATL 소개
+          expanded: false
+          items:
+            - name: ATL 소개
+              href: introduction-to-atl.md
+            - name: 템플릿 라이브러리 사용
+              href: using-a-template-library.md
+            - name: ATL의 범위
+              href: scope-of-atl.md
+            - name: ATL과 MFC 중 선택에 대한 권장 사항
+              href: recommendations-for-choosing-between-atl-and-mfc.md
+    - name: ATL COM 개체 기본 사항
+      expanded: false
+      items:
+        - name: ATL COM 개체 기본 사항
+          href: fundamentals-of-atl-com-objects.md
+        - name: CComObjectRootEx 구현
+          href: implementing-ccomobjectrootex.md
+        - name: 'CComObject, CComAggObject 및 CComPolyObject 구현'
+          href: implementing-ccomobject-ccomaggobject-and-ccompolyobject.md
+        - name: IDispatch 및 IErrorInfo 지원
+          href: supporting-idispatch-and-ierrorinfo.md
+        - name: IDispEventImpl 지원
+          href: supporting-idispeventimpl.md
+        - name: 기본 클래스 팩터리 및 집계 모델 변경
+          href: changing-the-default-class-factory-and-aggregation-model.md
+        - name: 집계 개체 만들기
+          href: creating-an-aggregated-object.md
+    - name: 이중 인터페이스 및 ATL
+      expanded: false
+      items:
+        - name: 이중 인터페이스 및 ATL
+          href: dual-interfaces-and-atl.md
+        - name: 이중 인터페이스 구현
+          href: implementing-a-dual-interface.md
+        - name: 여러 개의 이중 인터페이스
+          href: multiple-dual-interfaces.md
+        - name: nonextensible 특성
+          href: nonextensible-attribute.md
+        - name: 이중 인터페이스 및 이벤트
+          href: dual-interfaces-and-events.md
+    - name: ATL 컬렉션 및 열거자
+      expanded: false
+      items:
+        - name: ATL 컬렉션 및 열거자
+          href: atl-collections-and-enumerators.md
+        - name: ATL 컬렉션 및 열거자 클래스
+          href: atl-collection-and-enumerator-classes.md
+        - name: 컬렉션 및 열거자 인터페이스에 대한 디자인 원칙
+          href: design-principles-for-collection-and-enumerator-interfaces.md
+        - name: C++ 표준 라이브러리 기반 컬렉션 구현
+          expanded: false
+          items:
+            - name: C++ 표준 라이브러리 기반 컬렉션 구현
+              href: implementing-an-stl-based-collection.md
+            - name: ATL 복사 정책 클래스
+              href: atl-copy-policy-classes.md
+    - name: ATL 합성 컨트롤 기본 사항
+      expanded: false
+      items:
+        - name: ATL 합성 컨트롤 기본 사항
+          href: atl-composite-control-fundamentals.md
+        - name: 복합 컨트롤 삽입
+          href: inserting-a-composite-control.md
+        - name: ATL 프로젝트 수정
+          href: modifying-the-atl-project.md
+        - name: 복합 컨트롤에 기능 추가
+          href: adding-functionality-to-the-composite-control.md
+        - name: ATL 프로젝트 빌드 및 테스트
+          href: building-and-testing-the-atl-project.md
+    - name: ATL 컨트롤 포함 FAQ
+      href: atl-control-containment-faq.md
+    - name: ATL COM 속성 페이지
+      expanded: false
+      items:
+        - name: ATL COM 속성 페이지
+          href: atl-com-property-pages.md
+        - name: 속성 페이지 지정
+          href: specifying-property-pages.md
+        - name: 속성 페이지 구현
+          expanded: false
+          items:
+            - name: 속성 페이지 구현
+              href: implementing-property-pages.md
+            - name: '예제: 속성 페이지 구현'
+              href: example-implementing-a-property-page.md
+    - name: DHTML 컨트롤에 대한 ATL 지원
+      expanded: false
+      items:
+        - name: DHTML 컨트롤에 대한 ATL 지원
+          href: atl-support-for-dhtml-controls.md
+        - name: DHTML 컨트롤 프로젝트의 요소 식별
+          href: identifying-the-elements-of-the-dhtml-control-project.md
+        - name: DHTML에서 C++ 코드 호출
+          href: calling-cpp-code-from-dhtml.md
+        - name: ATL DHTML 컨트롤 만들기
+          href: creating-an-atl-dhtml-control.md
+        - name: ATL DHTML 컨트롤 테스트
+          href: testing-the-atl-dhtml-control.md
+        - name: ATL DHTML 컨트롤 수정
+          href: modifying-the-atl-dhtml-control.md
+        - name: 수정된 ATL DHTML 컨트롤 테스트
+          href: testing-the-modified-atl-dhtml-control.md
+    - name: ATL 연결 지점
+      expanded: false
+      items:
+        - name: ATL 연결 지점
+          href: atl-connection-points.md
+        - name: ATL 연결 지점 클래스
+          href: atl-connection-point-classes.md
+        - name: 개체에 연결 지점 추가
+          href: adding-connection-points-to-an-object.md
+        - name: ATL 연결 지점 예제
+          href: atl-connection-point-example.md
+    - name: 이벤트 처리 및 ATL
+      expanded: false
+      items:
+        - name: 이벤트 처리 및 ATL
+          href: event-handling-and-atl.md
+        - name: 이벤트 처리 원리
+          href: event-handling-principles.md
+        - name: 이벤트 처리 인터페이스 구현
+          href: implementing-the-event-handling-interface.md
+        - name: IDispEventImpl 사용
+          href: using-idispeventimpl.md
+        - name: IDispEventSimpleImpl 사용
+          href: using-idispeventsimpleimpl.md
+        - name: ATL 이벤트 처리 요약
+          href: atl-event-handling-summary.md
+    - name: ATL 및 자유 스레드된 마샬러
+      href: atl-and-the-free-threaded-marshaler.md
+    - name: 프로젝트의 스레딩 모델 지정(ATL)
+      href: specifying-the-threading-model-for-a-project-atl.md
+    - name: ATL 모듈 클래스
+      href: atl-module-classes.md
+    - name: ATL 서비스
+      expanded: false
+      items:
+        - name: ATL 서비스
+          href: atl-services.md
+        - name: 'CAtlServiceModuleT::Start 함수'
+          href: catlservicemodulet-start-function.md
+        - name: 'CAtlServiceModuleT::ServiceMain 함수'
+          href: catlservicemodulet-servicemain-function.md
+        - name: 'CAtlServiceModuleT::Run 함수'
+          href: catlservicemodulet-run-function.md
+        - name: 'CAtlServiceModuleT::Handler 함수'
+          href: catlservicemodulet-handler-function.md
+        - name: 레지스트리 항목
+          href: registry-entries.md
+        - name: DCOMCNFG
+          href: dcomcnfg.md
+        - name: 디버깅 팁
+          expanded: false
+          items:
+            - name: 디버깅 팁
+              href: debugging-tips.md
+            - name: 작업 관리자 사용
+              href: using-task-manager.md
+            - name: 어설션 표시
+              href: displaying-assertions.md
+            - name: 로컬 서버로 프로그램 실행
+              href: running-the-program-as-a-local-server.md
+    - name: ATL 창 클래스
+      expanded: false
+      items:
+        - name: ATL 창 클래스
+          href: atl-window-classes.md
+        - name: ATL 창 클래스 소개
+          href: introduction-to-atl-window-classes.md
+        - name: 창 사용
+          href: using-a-window.md
+        - name: 창 구현
+          expanded: false
+          items:
+            - name: 창 구현
+              href: implementing-a-window.md
+            - name: ATL 메시지 처리기 추가
+              href: adding-an-atl-message-handler.md
+            - name: 메시지 맵(ATL)
+              href: message-maps-atl.md
+            - name: 메시지 처리기 함수
+              expanded: false
+              items:
+                - name: 메시지 처리기 함수
+                  href: message-handler-functions.md
+                - name: CommandHandler
+                  href: commandhandler.md
+                - name: MessageHandler
+                  href: messagehandler.md
+                - name: NotifyHandler
+                  href: notifyhandler.md
+            - name: CWindowImpl을 사용하여 창 구현
+              href: implementing-a-window-with-cwindowimpl.md
+        - name: 대화 상자 구현
+          href: implementing-a-dialog-box.md
+        - name: 포함된 창 사용
+          href: using-contained-windows.md
+        - name: 창 특성 이해
+          href: understanding-window-traits.md
+    - name: ATL 컬렉션 클래스
+      href: atl-collection-classes.md
+    - name: ATL 레지스트리 구성 요소(등록자)
+      expanded: false
+      items:
+        - name: ATL 레지스트리 구성 요소(등록자)
+          href: atl-registry-component-registrar.md
+        - name: 등록자 스크립트 만들기
+          expanded: false
+          items:
+            - name: 등록자 스크립트 만들기
+              href: creating-registrar-scripts.md
+            - name: BNF(Backus-Naur 양식) 구문 이해
+              href: understanding-backus-nauer-form-bnf-syntax.md
+            - name: 구문 분석 트리 이해
+              href: understanding-parse-trees.md
+            - name: 레지스트리 스크립팅 예
+              href: registry-scripting-examples.md
+            - name: 대체 가능 매개 변수 사용(등록자 전처리기)
+              href: using-replaceable-parameters-the-registrar-s-preprocessor.md
+            - name: 스크립트 호출
+              href: invoking-scripts.md
+        - name: 등록자 코드에 대한 정적 링크 설정(C++ 전용)
+          href: setting-up-a-static-link-to-the-registrar-code-cpp-only.md
+    - name: ATL 및 C 런타임 코드를 사용한 프로그래밍
+      expanded: false
+      items:
+        - name: ATL 및 C 런타임 코드를 사용한 프로그래밍
+          href: programming-with-atl-and-c-run-time-code.md
+        - name: CRT에 링크하는 데 사용되는 방법의 장단점
+          href: benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt.md
+        - name: ATL 프로젝트에서 CRT에 링크
+          href: linking-to-the-crt-in-your-atl-project.md
+    - name: CComBSTR을 사용한 프로그래밍(ATL)
+      href: programming-with-ccombstr-atl.md
+    - name: ATL 인코딩 참조
+      href: atl-encoding-reference.md
+    - name: ATL 유틸리티 참조
+      href: atl-utilities-reference.md
+- name: ATL(액티브 템플릿 라이브러리) 자습서
+  expanded: false
+  items:
+    - name: ATL(액티브 템플릿 라이브러리) 자습서
+      href: active-template-library-atl-tutorial.md
+    - name: '프로젝트 만들기(ATL 자습서, 1부)'
+      href: creating-the-project-atl-tutorial-part-1.md
+    - name: '컨트롤 추가(ATL 자습서, 2부)'
+      href: adding-a-control-atl-tutorial-part-2.md
+    - name: '컨트롤에 속성 추가(ATL 자습서, 3부)'
+      href: adding-a-property-to-the-control-atl-tutorial-part-3.md
+    - name: '그리기 코드 변경(ATL 자습서, 4부)'
+      href: changing-the-drawing-code-atl-tutorial-part-4.md
+    - name: '이벤트 추가(ATL 자습서, 5부)'
+      href: adding-an-event-atl-tutorial-part-5.md
+    - name: '속성 페이지 추가(ATL 자습서, 6부)'
+      href: adding-a-property-page-atl-tutorial-part-6.md
+    - name: '웹 페이지에 컨트롤 배치(ATL 자습서, 7부)'
+      href: putting-the-control-on-a-web-page-atl-tutorial-part-7.md
+- name: 범주별 ATL 클래스 개요
+  expanded: false
+  items:
+    - name: ATL 클래스 개요
+      href: atl-class-overview.md
+    - name: 클래스 팩터리 클래스
+      href: class-factories-classes.md
+    - name: 클래스 정보 클래스
+      href: class-information-classes.md
+    - name: 컬렉션 클래스
+      href: collection-classes.md
+    - name: COM 모듈 클래스
+      href: com-modules-classes.md
+    - name: 복합 컨트롤 클래스
+      href: composite-controls-classes.md
+    - name: 연결 지점 클래스
+      href: connection-points-classes.md
+    - name: 컨트롤 포함 클래스
+      href: control-containment-classes.md
+    - name: '컨트롤: 일반 지원 클래스'
+      href: controls-general-support-classes.md
+    - name: 데이터 전송 클래스
+      href: data-transfer-classes.md
+    - name: 데이터 형식 클래스
+      href: data-types-classes.md
+    - name: 디버깅 및 예외 클래스
+      href: debugging-and-exceptions-classes.md
+    - name: 이중 인터페이스 클래스
+      href: dual-interfaces-classes.md
+    - name: 열거자 및 컬렉션 클래스
+      href: enumerators-and-collections-classes.md
+    - name: 오류 정보 클래스
+      href: error-information-classes.md
+    - name: 파일 처리 클래스
+      href: file-handling-classes.md
+    - name: 인터페이스 포인터 클래스
+      href: interface-pointers-classes.md
+    - name: IUnknown 구현 클래스
+      href: iunknown-implementation-classes.md
+    - name: 메모리 관리 클래스
+      href: memory-management-classes.md
+    - name: MMC 스냅인 클래스
+      href: mmc-snap-in-classes.md
+    - name: 개체 보안 클래스
+      href: object-safety-classes.md
+    - name: 지속성 클래스
+      href: persistence-classes.md
+    - name: 속성 및 속성 페이지 클래스
+      href: properties-and-property-pages-classes.md
+    - name: 레지스트리 지원 클래스
+      href: registry-support-classes.md
+    - name: 개체 실행 클래스
+      href: running-objects-classes.md
+    - name: 보안 클래스
+      href: security-classes.md
+    - name: 서비스 공급자 지원 클래스
+      href: service-provider-support-classes.md
+    - name: 사이트 정보 클래스
+      href: site-information-classes.md
+    - name: 문자열 및 텍스트 클래스
+      href: string-and-text-classes.md
+    - name: 분리 인터페이스 클래스
+      href: tear-off-interfaces-classes.md
+    - name: 스레드 풀링 클래스
+      href: thread-pooling-classes.md
+    - name: 스레딩 모델 및 임계 영역 클래스
+      href: threading-models-and-critical-sections-classes.md
+    - name: UI 지원 클래스
+      href: ui-support-classes.md
+    - name: 유틸리티 클래스
+      href: utility-classes.md
+    - name: Windows 지원 클래스
+      href: windows-support-classes.md
+- name: ATL 라이브러리 참조
+  expanded: false
+  items:
+    - name: ATL 클스 및 구조체 참조
+      expanded: false
+      items:
+        - name: ATL 클래스 및 구조체
+          href: reference/atl-classes.md
+        - name: _ATL_BASE_MODULE70 구조체
+          href: reference/atl-base-module70-structure.md
+        - name: _ATL_COM_MODULE70 구조체
+          href: reference/atl-com-module70-structure.md
+        - name: _ATL_FUNC_INFO 구조체
+          href: reference/atl-func-info-structure.md
+        - name: _ATL_MODULE70 구조체
+          href: reference/atl-module70-structure.md
+        - name: _ATL_WIN_MODULE70 구조체
+          href: reference/atl-win-module70-structure.md
+        - name: _AtlCreateWndData 구조체
+          href: reference/atlcreatewnddata-structure.md
+        - name: ATL_DRAWINFO 구조체
+          href: reference/atl-drawinfo-structure.md
+        - name: _U_MENUorID 클래스
+          href: reference/u-menuorid-class.md
+        - name: _U_RECT 클래스
+          href: reference/u-rect-class.md
+        - name: _U_STRINGorID 클래스
+          href: reference/u-stringorid-class.md
+        - name: CA2AEX 클래스
+          href: reference/ca2aex-class.md
+        - name: CA2CAEX 클래스
+          href: reference/ca2caex-class.md
+        - name: CA2WEX 클래스
+          href: reference/ca2wex-class.md
+        - name: CAccessToken 클래스
+          href: reference/caccesstoken-class.md
+        - name: CAcl 클래스
+          href: reference/cacl-class.md
+        - name: CAdapt 클래스
+          href: reference/cadapt-class.md
+        - name: CAtlArray 클래스
+          href: reference/catlarray-class.md
+        - name: CAtlAutoThreadModule 클래스
+          href: reference/catlautothreadmodule-class.md
+        - name: CAtlAutoThreadModuleT 클래스
+          href: reference/catlautothreadmodulet-class.md
+        - name: CAtlBaseModule 클래스
+          href: reference/catlbasemodule-class.md
+        - name: CAtlComModule 클래스
+          href: reference/catlcommodule-class.md
+        - name: CAtlDebugInterfacesModule 클래스
+          href: reference/catldebuginterfacesmodule-class.md
+        - name: CAtlDllModuleT 클래스
+          href: reference/catldllmodulet-class.md
+        - name: CAtlException 클래스
+          href: reference/catlexception-class.md
+        - name: CAtlExeModuleT 클래스
+          href: reference/catlexemodulet-class.md
+        - name: CAtlFile 클래스
+          href: reference/catlfile-class.md
+        - name: CAtlFileMapping 클래스
+          href: reference/catlfilemapping-class.md
+        - name: CAtlFileMappingBase 클래스
+          href: reference/catlfilemappingbase-class.md
+        - name: CAtlList 클래스
+          href: reference/catllist-class.md
+        - name: CAtlMap 클래스
+          href: reference/catlmap-class.md
+        - name: CAtlModule 클래스
+          href: reference/catlmodule-class.md
+        - name: CAtlModuleT 클래스
+          href: reference/catlmodulet-class.md
+        - name: CAtlPreviewCtrlImpl 클래스
+          href: reference/catlpreviewctrlimpl-class.md
+        - name: CAtlServiceModuleT 클래스
+          href: reference/catlservicemodulet-class.md
+        - name: CAtlTemporaryFile 클래스
+          href: reference/catltemporaryfile-class.md
+        - name: CAtlTransactionManager 클래스
+          href: reference/catltransactionmanager-class.md
+        - name: CAtlWinModule 클래스
+          href: reference/catlwinmodule-class.md
+        - name: CAutoPtr 클래스
+          href: reference/cautoptr-class.md
+        - name: CAutoPtrArray 클래스
+          href: reference/cautoptrarray-class.md
+        - name: CAutoPtrElementTraits 클래스
+          href: reference/cautoptrelementtraits-class.md
+        - name: CAutoPtrList 클래스
+          href: reference/cautoptrlist-class.md
+        - name: CAutoRevertImpersonation 클래스
+          href: reference/cautorevertimpersonation-class.md
+        - name: CAutoVectorPtr 클래스
+          href: reference/cautovectorptr-class.md
+        - name: CAutoVectorPtrElementTraits 클래스
+          href: reference/cautovectorptrelementtraits-class.md
+        - name: CAxDialogImpl 클래스
+          href: reference/caxdialogimpl-class.md
+        - name: CAxWindow 클래스
+          href: reference/caxwindow-class.md
+        - name: CAxWindow2T 클래스
+          href: reference/caxwindow2t-class.md
+        - name: CBindStatusCallback 클래스
+          href: reference/cbindstatuscallback-class.md
+        - name: CComAggObject 클래스
+          href: reference/ccomaggobject-class.md
+        - name: CComAllocator 클래스
+          href: reference/ccomallocator-class.md
+        - name: CComApartment 클래스
+          href: reference/ccomapartment-class.md
+        - name: CComAutoCriticalSection 클래스
+          href: reference/ccomautocriticalsection-class.md
+        - name: CComAutoDeleteCriticalSection 클래스
+          href: reference/ccomautodeletecriticalsection-class.md
+        - name: CComAutoThreadModule 클래스
+          href: reference/ccomautothreadmodule-class.md
+        - name: CComBSTR 클래스
+          href: reference/ccombstr-class.md
+        - name: CComCachedTearOffObject 클래스
+          href: reference/ccomcachedtearoffobject-class.md
+        - name: CComClassFactory 클래스
+          href: reference/ccomclassfactory-class.md
+        - name: CComClassFactory2 클래스
+          href: reference/ccomclassfactory2-class.md
+        - name: CComClassFactoryAutoThread 클래스
+          href: reference/ccomclassfactoryautothread-class.md
+        - name: CComClassFactorySingleton 클래스
+          href: reference/ccomclassfactorysingleton-class.md
+        - name: CComCoClass 클래스
+          href: reference/ccomcoclass-class.md
+        - name: CComCompositeControl 클래스
+          href: reference/ccomcompositecontrol-class.md
+        - name: CComContainedObject 클래스
+          href: reference/ccomcontainedobject-class.md
+        - name: CComControl 클래스
+          href: reference/ccomcontrol-class.md
+        - name: CComControlBase 클래스
+          href: reference/ccomcontrolbase-class.md
+        - name: CComCriticalSection 클래스
+          href: reference/ccomcriticalsection-class.md
+        - name: CComCritSecLock 클래스
+          href: reference/ccomcritseclock-class.md
+        - name: CComCurrency 클래스
+          href: reference/ccomcurrency-class.md
+        - name: CComDynamicUnkArray 클래스
+          href: reference/ccomdynamicunkarray-class.md
+        - name: CComEnum 클래스
+          href: reference/ccomenum-class.md
+        - name: CComEnumImpl 클래스
+          href: reference/ccomenumimpl-class.md
+        - name: CComEnumOnSTL 클래스
+          href: reference/ccomenumonstl-class.md
+        - name: CComFakeCriticalSection 클래스
+          href: reference/ccomfakecriticalsection-class.md
+        - name: CComGITPtr 클래스
+          href: reference/ccomgitptr-class.md
+        - name: CComHeap 클래스
+          href: reference/ccomheap-class.md
+        - name: CComHeapPtr 클래스
+          href: reference/ccomheapptr-class.md
+        - name: CComModule 클래스
+          href: reference/ccommodule-class.md
+        - name: CComMultiThreadModel 클래스
+          href: reference/ccommultithreadmodel-class.md
+        - name: CComMultiThreadModelNoCS 클래스
+          href: reference/ccommultithreadmodelnocs-class.md
+        - name: CComObject 클래스
+          href: reference/ccomobject-class.md
+        - name: CComObjectGlobal 클래스
+          href: reference/ccomobjectglobal-class.md
+        - name: CComObjectNoLock 클래스
+          href: reference/ccomobjectnolock-class.md
+        - name: CComObjectRoot 클래스
+          href: reference/ccomobjectroot-class.md
+        - name: CComObjectRootEx 클래스
+          href: reference/ccomobjectrootex-class.md
+        - name: CComObjectStack 클래스
+          href: reference/ccomobjectstack-class.md
+        - name: CComPolyObject 클래스
+          href: reference/ccompolyobject-class.md
+        - name: CComPtr 클래스
+          href: reference/ccomptr-class.md
+        - name: CComPtrBase 클래스
+          href: reference/ccomptrbase-class.md
+        - name: CComQIPtr 클래스
+          href: reference/ccomqiptr-class.md
+        - name: CComQIPtrElementTraits 클래스
+          href: reference/ccomqiptrelementtraits-class.md
+        - name: CComSafeArray 클래스
+          href: reference/ccomsafearray-class.md
+        - name: CComSafeArrayBound 클래스
+          href: reference/ccomsafearraybound-class.md
+        - name: CComSafeDeleteCriticalSection 클래스
+          href: reference/ccomsafedeletecriticalsection-class.md
+        - name: CComSimpleThreadAllocator 클래스
+          href: reference/ccomsimplethreadallocator-class.md
+        - name: CComSingleThreadModel 클래스
+          href: reference/ccomsinglethreadmodel-class.md
+        - name: CComTearOffObject 클래스
+          href: reference/ccomtearoffobject-class.md
+        - name: CComUnkArray 클래스
+          href: reference/ccomunkarray-class.md
+        - name: CComVariant 클래스
+          href: reference/ccomvariant-class.md
+        - name: CContainedWindowT 클래스
+          href: reference/ccontainedwindowt-class.md
+        - name: CCRTAllocator 클래스
+          href: reference/ccrtallocator-class.md
+        - name: CCRTHeap 클래스
+          href: reference/ccrtheap-class.md
+        - name: CDacl 클래스
+          href: reference/cdacl-class.md
+        - name: CDebugReportHook 클래스
+          href: reference/cdebugreporthook-class.md
+        - name: CDefaultCharTraits 클래스
+          href: reference/cdefaultchartraits-class.md
+        - name: CDefaultCompareTraits 클래스
+          href: reference/cdefaultcomparetraits-class.md
+        - name: CDefaultElementTraits 클래스
+          href: reference/cdefaultelementtraits-class.md
+        - name: CDefaultHashTraits 클래스
+          href: reference/cdefaulthashtraits-class.md
+        - name: CDialogImpl 클래스
+          href: reference/cdialogimpl-class.md
+        - name: CDynamicChain 클래스
+          href: reference/cdynamicchain-class.md
+        - name: CElementTraits 클래스
+          href: reference/celementtraits-class.md
+        - name: CElementTraitsBase 클래스
+          href: reference/celementtraitsbase-class.md
+        - name: CFirePropNotifyEvent 클래스
+          href: reference/cfirepropnotifyevent-class.md
+        - name: CGlobalHeap 클래스
+          href: reference/cglobalheap-class.md
+        - name: CHandle 클래스
+          href: reference/chandle-class.md
+        - name: CHeapPtr 클래스
+          href: reference/cheapptr-class.md
+        - name: CHeapPtrBase 클래스
+          href: reference/cheapptrbase-class.md
+        - name: CHeapPtrElementTraits 클래스
+          href: reference/cheapptrelementtraits-class.md
+        - name: CHeapPtrList 클래스
+          href: reference/cheapptrlist-class.md
+        - name: CInterfaceArray 클래스
+          href: reference/cinterfacearray-class.md
+        - name: CInterfaceList 클래스
+          href: reference/cinterfacelist-class.md
+        - name: CLocalHeap 클래스
+          href: reference/clocalheap-class.md
+        - name: CMessageMap 클래스
+          href: reference/cmessagemap-class.md
+        - name: CNonStatelessWorker 클래스
+          href: reference/cnonstatelessworker-class.md
+        - name: CNoWorkerThread 클래스
+          href: reference/cnoworkerthread-class.md
+        - name: CPathT 클래스
+          href: reference/cpatht-class.md
+        - name: CPrimitiveElementTraits 클래스
+          href: reference/cprimitiveelementtraits-class.md
+        - name: CPrivateObjectSecurityDesc 클래스
+          href: reference/cprivateobjectsecuritydesc-class.md
+        - name: CRBMap 클래스
+          href: reference/crbmap-class.md
+        - name: CRBMultiMap 클래스
+          href: reference/crbmultimap-class.md
+        - name: CRBTree 클래스
+          href: reference/crbtree-class.md
+        - name: CRegKey 클래스
+          href: reference/cregkey-class.md
+        - name: CRTThreadTraits 클래스
+          href: reference/crtthreadtraits-class.md
+        - name: CSacl 클래스
+          href: reference/csacl-class.md
+        - name: CSecurityAttributes 클래스
+          href: reference/csecurityattributes-class.md
+        - name: CSecurityDesc 클래스
+          href: reference/csecuritydesc-class.md
+        - name: CSid 클래스
+          href: reference/csid-class.md
+        - name: CSimpleArray 클래스
+          href: reference/csimplearray-class.md
+        - name: CSimpleArrayEqualHelper 클래스
+          href: reference/csimplearrayequalhelper-class.md
+        - name: CSimpleArrayEqualHelperFalse 클래스
+          href: reference/csimplearrayequalhelperfalse-class.md
+        - name: CSimpleDialog 클래스
+          href: reference/csimpledialog-class.md
+        - name: CSimpleMap 클래스
+          href: reference/csimplemap-class.md
+        - name: CSimpleMapEqualHelper 클래스
+          href: reference/csimplemapequalhelper-class.md
+        - name: CSimpleMapEqualHelperFalse 클래스
+          href: reference/csimplemapequalhelperfalse-class.md
+        - name: CSnapInItemImpl 클래스
+          href: reference/csnapinitemimpl-class.md
+        - name: CSnapInPropertyPageImpl 클래스
+          href: reference/csnapinpropertypageimpl-class.md
+        - name: CSocketAddr 클래스
+          href: reference/csocketaddr-class.md
+        - name: CStockPropImpl 클래스
+          href: reference/cstockpropimpl-class.md
+        - name: CStringElementTraits 클래스
+          href: reference/cstringelementtraits-class.md
+        - name: CStringElementTraitsI 클래스
+          href: reference/cstringelementtraitsi-class.md
+        - name: CStringRefElementTraits 클래스
+          href: reference/cstringrefelementtraits-class.md
+        - name: CThreadPool 클래스
+          href: reference/cthreadpool-class.md
+        - name: CTokenGroups 클래스
+          href: reference/ctokengroups-class.md
+        - name: CTokenPrivileges 클래스
+          href: reference/ctokenprivileges-class.md
+        - name: CUrl 클래스
+          href: reference/curl-class.md
+        - name: CW2AEX 클래스
+          href: reference/cw2aex-class.md
+        - name: CW2CWEX 클래스
+          href: reference/cw2cwex-class.md
+        - name: CW2WEX 클래스
+          href: reference/cw2wex-class.md
+        - name: CWin32Heap 클래스
+          href: reference/cwin32heap-class.md
+        - name: CWindow 클래스
+          href: reference/cwindow-class.md
+        - name: CWindowImpl 클래스
+          href: reference/cwindowimpl-class.md
+        - name: CWinTraits 클래스
+          href: reference/cwintraits-class.md
+        - name: CWinTraitsOR 클래스
+          href: reference/cwintraitsor-class.md
+        - name: CWndClassInfo 클래스
+          href: reference/cwndclassinfo-class.md
+        - name: CWorkerThread 클래스
+          href: reference/cworkerthread-class.md
+        - name: IAtlAutoThreadModule 클래스
+          href: reference/iatlautothreadmodule-class.md
+        - name: IAtlMemMgr 클래스
+          href: reference/iatlmemmgr-class.md
+        - name: IAxWinAmbientDispatch 인터페이스
+          href: reference/iaxwinambientdispatch-interface.md
+        - name: IAxWinAmbientDispatchEx 인터페이스
+          href: reference/iaxwinambientdispatchex-interface.md
+        - name: IAxWinHostWindow 인터페이스
+          href: reference/iaxwinhostwindow-interface.md
+        - name: IAxWinHostWindowLic 인터페이스
+          href: reference/iaxwinhostwindowlic-interface.md
+        - name: ICollectionOnSTLImpl 클래스
+          href: reference/icollectiononstlimpl-class.md
+        - name: IConnectionPointContainerImpl 클래스
+          href: reference/iconnectionpointcontainerimpl-class.md
+        - name: IConnectionPointImpl 클래스
+          href: reference/iconnectionpointimpl-class.md
+        - name: IDataObjectImpl 클래스
+          href: reference/idataobjectimpl-class.md
+        - name: IDispatchImpl 클래스
+          href: reference/idispatchimpl-class.md
+        - name: IDispEventImpl 클래스
+          href: reference/idispeventimpl-class.md
+        - name: IDispEventSimpleImpl 클래스
+          href: reference/idispeventsimpleimpl-class.md
+        - name: IDocHostUIHandlerDispatch 인터페이스
+          href: reference/idochostuihandlerdispatch-interface.md
+        - name: IEnumOnSTLImpl 클래스
+          href: reference/ienumonstlimpl-class.md
+        - name: IObjectSafetyImpl 클래스
+          href: reference/iobjectsafetyimpl-class.md
+        - name: IObjectWithSiteImpl 클래스
+          href: reference/iobjectwithsiteimpl-class.md
+        - name: IOleControlImpl 클래스
+          href: reference/iolecontrolimpl-class.md
+        - name: IOleInPlaceActiveObjectImpl 클래스
+          href: reference/ioleinplaceactiveobjectimpl-class.md
+        - name: IOleInPlaceObjectWindowlessImpl 클래스
+          href: reference/ioleinplaceobjectwindowlessimpl-class.md
+        - name: IOleObjectImpl 클래스
+          href: reference/ioleobjectimpl-class.md
+        - name: IPerPropertyBrowsingImpl 클래스
+          href: reference/iperpropertybrowsingimpl-class.md
+        - name: IPersistPropertyBagImpl 클래스
+          href: reference/ipersistpropertybagimpl-class.md
+        - name: IPersistStorageImpl 클래스
+          href: reference/ipersiststorageimpl-class.md
+        - name: IPersistStreamInitImpl 클래스
+          href: reference/ipersiststreaminitimpl-class.md
+        - name: IPointerInactiveImpl 클래스
+          href: reference/ipointerinactiveimpl-class.md
+        - name: IPropertyNotifySinkCP 클래스
+          href: reference/ipropertynotifysinkcp-class.md
+        - name: IPropertyPage2Impl 클래스
+          href: reference/ipropertypage2impl-class.md
+        - name: IPropertyPageImpl 클래스
+          href: reference/ipropertypageimpl-class.md
+        - name: IProvideClassInfo2Impl 클래스
+          href: reference/iprovideclassinfo2impl-class.md
+        - name: IQuickActivateImpl 클래스
+          href: reference/iquickactivateimpl-class.md
+        - name: IRegistrar 인터페이스
+          href: reference/iregistrar-class.md
+        - name: IRunnableObjectImpl 클래스
+          href: reference/irunnableobjectimpl-class.md
+        - name: IServiceProviderImpl 클래스
+          href: reference/iserviceproviderimpl-class.md
+        - name: ISpecifyPropertyPagesImpl 클래스
+          href: reference/ispecifypropertypagesimpl-class.md
+        - name: ISupportErrorInfoImpl 클래스
+          href: reference/isupporterrorinfoimpl-class.md
+        - name: IThreadPoolConfig 인터페이스
+          href: reference/ithreadpoolconfig-interface.md
+        - name: IViewObjectExImpl 클래스
+          href: reference/iviewobjecteximpl-class.md
+        - name: IWorkerThreadClient 인터페이스
+          href: reference/iworkerthreadclient-interface.md
+        - name: Win32ThreadTraits 클래스
+          href: reference/win32threadtraits-class.md
+        - name: Worker 원형
+          href: reference/worker-archetype.md
+    - name: ATL_URL_SCHEME 열거형
+      href: reference/atl-url-scheme-enum.md
+    - name: ATL 함수 참조
+      expanded: false
+      items:
+        - name: ATL 함수
+          href: reference/atl-functions.md
+        - name: ATL HTTP 유틸리티 함수
+          href: reference/atl-http-utility-functions.md
+        - name: ATL 텍스트 인코딩 함수
+          href: reference/atl-text-encoding-functions.md
+        - name: ATL 경로 함수
+          href: reference/atl-path-functions.md
+        - name: COM 맵 글로벌 함수
+          href: reference/com-map-global-functions.md
+        - name: 복합 컨트롤 글로벌 함수
+          href: reference/composite-control-global-functions.md
+        - name: 연결 지점 글로벌 함수
+          href: reference/connection-point-global-functions.md
+        - name: 디버깅 및 오류 보고 글로벌 함수
+          href: reference/debugging-and-error-reporting-global-functions.md
+        - name: 디바이스 컨텍스트 글로벌 함수
+          href: reference/device-context-global-functions.md
+        - name: 이벤트 처리 글로벌 함수
+          href: reference/event-handling-global-functions.md
+        - name: 마샬링 글로벌 함수
+          href: reference/marshaling-global-functions.md
+        - name: 픽셀-HIMETRIC 변환 글로벌 함수
+          href: reference/pixel-himetric-conversion-global-functions.md
+        - name: 레지스트리 및 TypeLib 글로벌 함수
+          href: reference/registry-and-typelib-global-functions.md
+        - name: 보안 글로벌 함수
+          href: reference/security-global-functions.md
+        - name: 보안 식별자 글로벌 함수
+          href: reference/security-identifier-global-functions.md
+        - name: 서버 등록 글로벌 함수
+          href: reference/server-registration-global-functions.md
+        - name: WinModule 글로벌 함수
+          href: reference/winmodule-global-functions.md
+    - name: ATL 매크로 참조
+      expanded: false
+      items:
+        - name: ATL 매크로
+          href: reference/atl-macros.md
+        - name: 집계 및 클래스 팩터리 매크로
+          href: reference/aggregation-and-class-factory-macros.md
+        - name: 범주 매크로
+          href: reference/category-macros.md
+        - name: COM 맵 매크로
+          href: reference/com-map-macros.md
+        - name: COM 인터페이스 항목 매크로
+          href: reference/com-interface-entry-macros.md
+        - name: 컴파일러 옵션 매크로
+          href: reference/compiler-options-macros.md
+        - name: 복합 컨트롤 매크로
+          href: reference/composite-control-macros.md
+        - name: 연결 지점 매크로
+          href: reference/connection-point-macros.md
+        - name: 디버깅 및 오류 보고 매크로
+          href: reference/debugging-and-error-reporting-macros.md
+        - name: 예외 처리 매크로
+          href: reference/exception-handling-macros.md
+        - name: 메시지 맵 매크로(ATL)
+          href: reference/message-map-macros-atl.md
+        - name: 개체 맵 매크로
+          href: reference/object-map-macros.md
+        - name: 개체 상태 매크로
+          href: reference/object-status-macros.md
+        - name: 속성 맵 매크로
+          href: reference/property-map-macros.md
+        - name: 레지스트리 데이터 교환 매크로
+          href: reference/registry-data-exchange-macros.md
+        - name: 레지스트리 매크로
+          href: reference/registry-macros.md
+        - name: 서비스 맵 매크로
+          href: reference/service-map-macros.md
+        - name: 스냅인 개체 매크로
+          href: reference/snap-in-object-macros.md
+        - name: 문자열 변환 매크로
+          href: reference/string-conversion-macros.md
+        - name: 창 클래스 매크로
+          href: reference/window-class-macros.md
+        - name: Windows 메시지 매크로
+          href: reference/windows-messages-macros.md
+    - name: ATL 연산자 참조
+      href: reference/atl-operators.md
+    - name: ATL 글로벌 변수 참조
+      href: reference/atl-global-variables.md
+    - name: ATL typedef 참조
+      href: reference/atl-typedefs.md
+- name: Visual Studio의 ATL 프로젝트
+  expanded: false
+  items:
+    - name: ATL 마법사 및 대화 상자 참조
+      expanded: false
+      items:
+        - name: ATL 마법사 및 대화 상자
+          href: reference/atl-wizards-and-dialog-boxes.md
+        - name: ATL Active Server Page 구성 요소 마법사 참조
+          expanded: false
+          items:
+            - name: ATL Active Server Page 구성 요소 마법사
+              href: reference/atl-active-server-page-component-wizard.md
+            - name: 'ATL Active Server Page 구성 요소 마법사, ASP'
+              href: reference/asp-atl-active-server-page-component-wizard.md
+            - name: 'ATL Active Server Page 구성 요소 마법사, 옵션'
+              href: reference/options-atl-active-server-page-component-wizard.md
+        - name: ATL COM+ 1.0 구성 요소 마법사 참조
+          expanded: false
+          items:
+            - name: ATL COM+ 1.0 구성 요소 마법사
+              href: reference/atl-com-plus-1-0-component-wizard.md
+            - name: 'COM+ 1.0, ATL COM+ 1.0 구성 요소 마법사'
+              href: reference/com-plus-1-0-atl-com-plus-1-0-component-wizard.md
+        - name: ATL 컨트롤 마법사 참조
+          expanded: false
+          items:
+            - name: ATL 컨트롤 마법사
+              href: reference/atl-control-wizard.md
+            - name: 'ATL 컨트롤 마법사, 모양'
+              href: reference/appearance-atl-control-wizard.md
+            - name: 'ATL 컨트롤 마법사, 인터페이스'
+              href: reference/interfaces-atl-control-wizard.md
+            - name: 'ATL 컨트롤 마법사, 옵션'
+              href: reference/options-atl-control-wizard.md
+            - name: 'ATL 컨트롤 마법사, 스톡 속성'
+              href: reference/stock-properties-atl-control-wizard.md
+        - name: ATL 대화 상자 마법사 참조
+          href: reference/atl-dialog-wizard.md
+        - name: ATL OLE DB 소비자 마법사 참조
+          href: reference/atl-ole-db-consumer-wizard.md
+        - name: ATL OLE DB 공급자 마법사 참조
+          href: reference/atl-ole-db-provider-wizard.md
+        - name: ATL 프로젝트 마법사 참조
+          expanded: false
+          items:
+            - name: ATL 프로젝트 마법사
+              href: reference/atl-project-wizard.md
+            - name: '애플리케이션 설정, ATL 프로젝트 마법사'
+              href: reference/application-settings-atl-project-wizard.md
+        - name: ATL 속성 페이지 마법사 참조
+          expanded: false
+          items:
+            - name: ATL 속성 페이지 마법사
+              href: reference/atl-property-page-wizard.md
+            - name: 'ATL 속성 페이지 마법사, 옵션'
+              href: reference/options-atl-property-page-wizard.md
+            - name: 'ATL 속성 페이지 마법사, 문자열'
+              href: reference/strings-atl-property-page-wizard.md
+        - name: 'ATL 단순 개체 마법사, 참조'
+          expanded: false
+          items:
+            - name: ATL 단순 개체 마법사
+              href: reference/atl-simple-object-wizard.md
+            - name: 'ATL 단순 개체 마법사, 옵션'
+              href: reference/options-atl-simple-object-wizard.md
+    - name: ATL 프로젝트에 새 인터페이스 추가
+      href: reference/adding-a-new-interface-in-an-atl-project.md
+    - name: ATL Active Server Page 구성 요소 추가
+      href: reference/adding-an-atl-active-server-page-component.md
+    - name: ATL COM+ 1.0 구성 요소 추가
+      href: reference/adding-an-atl-com-plus-1-0-component.md
+    - name: ATL 컨트롤 추가
+      href: reference/adding-an-atl-control.md
+    - name: ATL 대화 상자 추가
+      href: reference/adding-an-atl-dialog-box.md
+    - name: ATL OLE DB 소비자 추가
+      href: reference/adding-an-atl-ole-db-consumer.md
+    - name: ATL OLE DB 공급자 추가
+      href: reference/adding-an-atl-ole-db-provider.md
+    - name: ATL 속성 페이지 추가
+      href: reference/adding-an-atl-property-page.md
+    - name: ATL 단순 개체 추가
+      href: reference/adding-an-atl-simple-object.md
+    - name: ATL 프로젝트에 개체 및 컨트롤 추가
+      href: reference/adding-objects-and-controls-to-an-atl-project.md
+    - name: ATL 프로젝트 만들기
+      href: reference/creating-an-atl-project.md
+    - name: ATL 프로젝트의 COM+ 1.0 지원
+      href: reference/com-plus-1-0-support-in-atl-projects.md
+    - name: 기본 ATL 프로젝트 구성
+      href: reference/default-atl-project-configurations.md
+    - name: ATL 개체를 noncreatable로 설정
+      href: reference/making-an-atl-object-noncreatable.md
+    - name: ATL 프로젝트의 MFC 지원
+      href: reference/mfc-support-in-atl-projects.md
+    - name: ATL 프로젝트에 대해 컴파일러 최적화 지정
+      href: reference/specifying-compiler-optimization-for-an-atl-project.md
