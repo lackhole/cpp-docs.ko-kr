@@ -28,7 +28,7 @@ helpviewer_keywords:
 ms.assetid: d6cb33eb-d209-485f-8d41-229eb743c027
 ms.openlocfilehash: 8a770965a03e43227b99f122924c723691f79c61
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62358101"
@@ -54,7 +54,7 @@ void qsort(
 대상 배열의 시작 부분입니다.
 
 *number*<br/>
-요소의 배열 크기입니다.
+요소의 배열 길이입니다.
 
 *width*<br/>
 요소 크기(바이트)입니다.
