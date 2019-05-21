@@ -5,18 +5,16 @@ ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: e74f8270d241b9725a24ee257fb846a7cc4e079e
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 0a32e4fcc959d7fcdc8e99bb77510d5f292c1986
+ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59779496"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934114"
 ---
 # <a name="whats-new-for-c-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 C++ 기능
 
 Visual Studio 2017에는 C++ 환경에 대한 많은 업데이트와 수정이 포함되었습니다. 대부분 **피드백 보내기** 아래의 [문제 보고 및 제안하기](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) 옵션을 통해 고객이 제출한 250개 이상의 버그와 보고된 문제를 해결했습니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2017의 새로운 기능](/visualstudio/ide/whats-new-in-visual-studio)을 참조하세요.
-
-<!--The compiler and tools version number in Visual Studio 2017 is 14.10.24629. -->
 
 ## <a name="c-compiler"></a>C++ 컴파일러
 
