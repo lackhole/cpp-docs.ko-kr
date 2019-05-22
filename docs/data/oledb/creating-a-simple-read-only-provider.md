@@ -1,27 +1,37 @@
 ---
 title: 단순한 읽기 전용 공급자 만들기
-ms.date: 10/26/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB providers, creating
 - OLE DB provider templates, creating providers
 ms.assetid: ade8ccdd-9ea4-4e46-a964-18460c2a2401
-ms.openlocfilehash: a80678f6bc512c45c0df2ea5cbfc4708f1252ac0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 466530cb8c2ebca7f1c87370389309d3a0486e26
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362001"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707619"
 ---
 # <a name="creating-a-simple-read-only-provider"></a>단순한 읽기 전용 공급자 만들기
 
-**ATL 프로젝트 마법사**와 **ATL OLE DB 공급자 마법사**를 사용하여 OLE DB 공급자를 만들었으면 지원할 다른 기능을 추가할 수 있습니다. 먼저 소비자에게 보낼 데이터 종류와 데이터를 보내는 조건을 검토하여 공급자 디자인을 시작합니다. 특히 명령이나 트랜잭션 및 기타 선택적 개체를 지원해야 하는지를 결정하는 것이 중요합니다. 시작할 때 디자인을 잘하면 구현과 테스트 속도가 빨라집니다.
+::: moniker range="vs-2019"
 
-다음 두 장에서 예제가 제공됩니다.
+Visual Studio 2019 이상에서는 ATL OLE DB 공급자 마법사를 사용할 수 없습니다.
 
-- 첫 번째 장에서는 문자열 쌍을 읽는 [단순한 읽기 전용 공급자 구현](../../data/oledb/implementing-the-simple-read-only-provider.md) 방법을 볼 수 있습니다.
+::: moniker-end
 
-- 두 번째 장에서는 `IRowsetLocate` 인터페이스를 추가하여 [단순한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md) 방법을 볼 수 있습니다.
+::: moniker range="<=vs-2017"
 
-## <a name="see-also"></a>참고자료
+**ATL 프로젝트 마법사** 및 **ATL OLE DB 공급자 마법사**를 사용하여 OLE DB 공급자를 만든 경우, 지원하려는 다른 기능을 추가할 수 있습니다. 소비자에게 보낼 데이터 종류와 해당 조건을 검사하여 공급자 설계를 시작합니다. 특히 명령, 트랜잭션 및 기타 선택적 개체를 지원해야 하는지 여부를 확인하는 것이 중요합니다. 사전 설계가 완벽하면 구현 및 테스트를 빠르게 진행할 수 있습니다.
+
+이 예제는 다음 두 부분으로 제공됩니다.
+
+- 첫 번째 부분에서는 문자열 쌍을 읽는 [단순한 읽기 전용 공급자를 만드는](../../data/oledb/implementing-the-simple-read-only-provider.md) 방법을 보여 줍니다.
+
+- 두 번째 부분에서는 `IRowsetLocate` 인터페이스를 추가하여 [단순한 읽기 전용 공급자의 기능을 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)하는 방법을 보여 줍니다.
+
+::: moniker-end
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 공급자 만들기](../../data/oledb/creating-an-ole-db-provider.md)<br/>

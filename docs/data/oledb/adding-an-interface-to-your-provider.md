@@ -1,21 +1,24 @@
 ---
 title: 공급자에 인터페이스 추가
-ms.date: 10/29/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB provider templates, object interfaces
 ms.assetid: b0fc7cf8-428a-4584-9d64-ce9074d0eb66
-ms.openlocfilehash: c0452ca74509b65de3787af93bff41b3cb399c99
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: a1d219568c1787558674c47edd55436b8690a61c
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384974"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65524801"
 ---
 # <a name="adding-an-interface-to-your-provider"></a>공급자에 인터페이스 추가
 
-인터페이스를 추가 하려는 개체는 확인 (데이터 원본, 행 집합, 명령 또는 세션 개체에 의해 생성 되는 일반적으로 **OLE DB 공급자 마법사**). 인터페이스를 추가 해야 하는 개체는 공급자에 게 현재 지원 하지 않습니다 하는 것입니다. 이 경우 실행를 **ATL OLE DB 공급자 마법사** 개체를 만들려고 합니다. 프로젝트를 마우스 오른쪽 단추로 클릭 **클래스 뷰**, 클릭 **추가** > **새 항목** 메뉴에서 선택 **설치 된**  >  **시각적 C++**   >  **ATL**를 클릭 하 고 **ATL OLEDB 공급자**. 인터페이스 코드를 별도 디렉터리에 저장 한 다음 공급자 프로젝트에 파일을 복사 하려는 경우
+> [!NOTE]
+> Visual Studio 2019 이상에서는 ATL OLE DB 공급자 마법사를 사용할 수 없습니다.
 
-인터페이스를 지 원하는 새 클래스를 만든 경우 해당 클래스에서 상속 된 개체를 확인 합니다. 예를 들어, 클래스를 추가할 수 있습니다 `IRowsetIndexImpl` 행 집합 개체:
+인터페이스를 추가하려는 개체를 결정합니다(일반적으로 데이터 소스, 행 집합, 명령 또는 **OLE DB 공급자 마법사**에서 생성된 세션 개체). 인터페이스를 추가해야 하는 개체가 공급자에서 현재 지원하지 않는 개체일 수 있습니다. 이 경우, **ATL OLE DB 공급자 마법사**를 실행하여 개체를 만듭니다. **클래스 뷰**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 메뉴에서 **추가** > **새 항목**을 클릭한 다음, **설치됨** > **Visual C++** > **ATL**을 선택하고 **ATL OLEDB 공급자**를 클릭합니다. 인터페이스 코드를 별도의 디렉터리에 배치한 다음, 공급자 프로젝트에 파일을 복사하는 것이 좋습니다.
+
+인터페이스를 지원하는 새 클래스를 만든 경우 개체가 해당 클래스에서 상속받도록 합니다. 예를 들어 행 집합 개체에 `IRowsetIndexImpl` 클래스를 추가할 수 있습니다.
 
 ```cpp
 template <class Creator>
@@ -24,7 +27,7 @@ class CCustomRowset :
     public IRowsetIndexImpl< ... >
 ```
 
-COM_INTERFACE_ENTRY 매크로 사용 하는 개체에서 COM_MAP에 인터페이스를 추가 합니다. 맵이 있는 경우 하나 만듭니다. 예를 들어:
+COM_INTERFACE_ENTRY 매크로를 사용하여 개체의 COM_MAP에 인터페이스를 추가합니다. 맵이 없으면 새로 만듭니다. 예:
 
 ```cpp
 BEGIN_COM_MAP(CCustomRowset)
@@ -32,7 +35,7 @@ BEGIN_COM_MAP(CCustomRowset)
 END_COM_MAP()
 ```
 
-행 집합 개체에 대 한 부모의 맵을 연결 개체는 부모 클래스에 위임할 수 있도록 개체입니다. 이 예제에서는 맵에 COM_INTERFACE_ENTRY_CHAIN 매크로 추가 합니다.
+행 집합 개체의 경우 개체가 부모 클래스에 위임할 수 있도록 부모 개체의 맵을 연결합니다. 이 예제에서는 COM_INTERFACE_ENTRY_CHAIN 매크로를 맵에 추가합니다.
 
 ```cpp
 BEGIN_COM_MAP(CCustomRowset)
@@ -41,6 +44,6 @@ BEGIN_COM_MAP(CCustomRowset)
 END_COM_MAP()
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 공급자 템플릿을 사용하여 작업](../../data/oledb/working-with-ole-db-provider-templates.md)

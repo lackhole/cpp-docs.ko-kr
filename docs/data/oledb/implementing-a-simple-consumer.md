@@ -1,36 +1,43 @@
 ---
 title: 단순 소비자 구현
-ms.date: 10/12/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
-- clients, creating
 - OLE DB consumers, implementing
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-ms.openlocfilehash: 9067e8645fac9a06bd85ca5ef18fbaff45d16aae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 592a51dd77f7a2e115ee67a481e56dc558209253
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390804"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525076"
 ---
 # <a name="implementing-a-simple-consumer"></a>단순 소비자 구현
 
-다음 항목에서 만든 파일을 편집 하는 방법을 보여 줍니다 합니다 **MFC 응용 프로그램 마법사** 및 **ATL OLE DB 소비자 마법사** 간단한 소비자를 만듭니다. 이 예제에는 다음과 같은 부분에 있습니다.
+::: moniker range="vs-2019"
 
-- [소비자를 사용 하 여 데이터를 검색](#retrieve) 데이터베이스 테이블에서 모든 데이터를 행 단위로 읽는 소비자 코드를 구현 하는 방법을 보여 줍니다.
+Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 수 없습니다. 수동으로 기능을 추가할 수는 있습니다. 자세한 내용은 [마법사를 사용하지 않고 소비자 만들기](creating-a-consumer-without-using-a-wizard.md)를 참조하세요.
 
-- [소비자에 게 책갈피 지원을 추가](#bookmark) 소비자에 책갈피 지원을 추가 하는 방법을 보여 줍니다.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+다음 항목에서는 **MFC 애플리케이션 마법사** 및 **ATL OLE DB 소비자 마법사**를 통해 만든 파일을 편집하여 간단한 소비자를 만드는 방법을 보여 줍니다. 이 예제는 다음 부분으로 이루어져 있습니다.
+
+- [소비자를 사용하여 데이터 검색](#retrieve)에서는 데이터베이스 테이블의 모든 데이터를 행 단위로 읽는 코드를 소비자에 구현하는 방법을 보여 줍니다.
+
+- [소비자에 책갈피 지원 추가](#bookmark)에서는 소비자에 책갈피 지원을 추가하는 방법을 보여 줍니다.
 
 > [!NOTE]
-> 이 섹션에 설명 된 소비자 응용 프로그램을 사용 하 여 테스트 합니다 `MyProv` 및 `Provider` 공급자 샘플입니다.
+> 이 섹션에 설명된 소비자 애플리케이션을 사용하여 `MyProv` 및 `Provider` 샘플 공급자를 테스트할 수 있습니다.
 
 > [!NOTE]
-> 테스트할 소비자 응용 프로그램을 빌드하 `MyProv` (동일한 공급자에서 설명한 [간단한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md))에 설명 된 대로 책갈피 지원을 포함 해야 [에 책갈피 지원을 추가 합니다 소비자](#bookmark)합니다.
+> `MyProv`([단순한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)에 설명된 공급자와 같음)를 테스트할 소비자 애플리케이션을 빌드하려면 [소비자에 책갈피 지원 추가](#bookmark)에 설명된 대로 책갈피 지원을 포함해야 합니다.
 
-## <a name="retrieve" ></a> 소비자를 사용 하 여 데이터를 검색합니다.
+## <a name="retrieve" ></a> 소비자를 사용하여 데이터 검색
 
-### <a name="to-modify-the-console-application-to-use-the-ole-db-consumer"></a>OLE DB 소비자를 사용 하 여 콘솔 응용 프로그램을 수정 하려면
+### <a name="to-modify-the-console-application-to-use-the-ole-db-consumer"></a>OLE DB 소비자를 사용하도록 콘솔 애플리케이션을 수정하려면 다음을 수행합니다.
 
-1. `MyCons.cpp`, 다음과 같은 굵은 텍스트를 삽입 하 여 기본 코드를 변경 합니다.
+1. `MyCons.cpp`에서 다음과 같이 굵은 텍스트를 삽입하여 주 코드를 변경합니다.
 
     ```cpp
     // MyCons.cpp : Defines the entry point for the console application.
@@ -57,32 +64,32 @@ ms.locfileid: "62390804"
     }
     ```
 
-## <a name="bookmark" ></a> 소비자에 게 추가 책갈피 지원
+## <a name="bookmark" ></a> 소비자에 책갈피 지원 추가
 
-책갈피에는 테이블의 행을 고유 하 게 식별 하는 열입니다. 일반적으로 것이 키 열이 있지만 항상 그렇지는 않습니다. 이 공급자별으로 다릅니다. 이 섹션에서는 책갈피 지원을 추가 하는 방법을 보여 줍니다. 이렇게 하려면 사용자 레코드 클래스에서 다음 단계를 수행 해야 합니다.
+책갈피는 테이블에서 행을 고유하게 식별하는 열입니다. 일반적으로 키 열이지만 항상 그런 것은 아니며, 공급자별로 다릅니다. 이 섹션에서는 책갈피 지원을 추가하는 방법을 보여 줍니다. 책갈피 지원을 추가하려면 사용자 레코드 클래스에서 다음 단계를 수행해야 합니다.
 
-- 책갈피를 인스턴스화하십시오. 형식의 개체를 이들은 [CBookmark](../../data/oledb/cbookmark-class.md)합니다.
+- 책갈피를 인스턴스화합니다. [CBookmark](../../data/oledb/cbookmark-class.md) 형식의 개체입니다.
 
-- 책갈피 열을 설정 하 여 공급자 로부터 요청을 `DBPROP_IRowsetLocate` 속성입니다.
+- `DBPROP_IRowsetLocate` 속성을 설정하여 공급자의 책갈피 열을 요청합니다.
 
-- 책갈피 항목을 사용 하 여 열 지도에 추가 합니다 [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md) 매크로입니다.
+- [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md) 매크로를 사용하여 열 맵에 책갈피 항목을 추가합니다.
 
-이전 단계를 작업 하는 책갈피 개체 및 지원을 제공 합니다. 이 코드 예제에서는 책갈피를 다음과 같이 보여 줍니다.
+이전 단계에서는 책갈피 지원과 사용할 책갈피 개체를 제공합니다. 이 코드 예제에서는 다음과 같이 책갈피를 보여 줍니다.
 
 - 파일을 쓰기용으로 엽니다.
 
-- 출력 행 집합 파일의 데이터를 행 단위로 합니다.
+- 행 집합 데이터를 파일에 행 단위로 출력합니다.
 
-- 호출 하 여 행 집합 커서는 책갈피로 이동할 [MoveToBookmark](../../data/oledb/crowset-movetobookmark.md)합니다.
+- [MoveToBookmark](../../data/oledb/crowset-movetobookmark.md)를 호출하여 행 집합 커서를 책갈피로 이동합니다.
 
-- 파일의 끝에 추가 하 여 책갈피가 표시 된 행을 출력 합니다.
+- 책갈피가 지정된 행을 출력하고 파일의 끝에 추가합니다.
 
 > [!NOTE]
-> 이 소비자 응용 프로그램 테스트를 사용 하는 경우는 `Provider` 샘플 공급자 응용 프로그램, 책갈피 지원은이 섹션에 설명 된 상태로 둡니다.
+> 이 소비자 애플리케이션을 사용하여 `Provider` 샘플 공급자 애플리케이션을 테스트하는 경우 이 섹션에 설명된 책갈피 지원을 생략합니다.
 
-### <a name="to-instantiate-the-bookmark"></a>책갈피를 인스턴스화
+### <a name="to-instantiate-the-bookmark"></a>책갈피를 인스턴스화하려면 다음을 수행합니다.
 
-1. 형식의 개체를 포함 해야 하는 접근자 [CBookmark](../../data/oledb/cbookmark-class.md)합니다. 합니다 *nSize* 매개 변수 (일반적으로 32 비트 플랫폼에 대 한 4) 및 64 비트 플랫폼에 대 한 8 바이트에서 책갈피 버퍼의 크기를 지정 합니다. 사용자 레코드 클래스의 열 데이터 멤버에 다음 선언을 추가 합니다.
+1. 접근자가 [CBookmark](../../data/oledb/cbookmark-class.md) 형식의 개체를 보유해야 합니다. *nSize* 매개 변수는 책갈피 버퍼의 크기를 바이트 단위로 지정합니다(일반적으로 32비트 플랫폼은 4바이트, 64비트 플랫폼은 8바이트임). 사용자 레코드 클래스의 열 데이터 멤버에 다음 선언을 추가합니다.
 
     ```cpp
     //////////////////////////////////////////////////////////////////////
@@ -95,9 +102,9 @@ ms.locfileid: "62390804"
        ...
     ```
 
-### <a name="to-request-a-bookmark-column-from-the-provider"></a>책갈피 열 공급자를 요청 하려면
+### <a name="to-request-a-bookmark-column-from-the-provider"></a>공급자의 책갈피 열을 요청하려면 다음을 수행합니다.
 
-1. 다음 코드를 추가 합니다 `GetRowsetProperties` 사용자 레코드 클래스의 메서드:
+1. 사용자 레코드 클래스의 `GetRowsetProperties` 메서드에 다음 코드를 추가합니다.
 
     ```cpp
     // Set the DBPROP_IRowsetLocate property.
@@ -109,9 +116,9 @@ ms.locfileid: "62390804"
     }
     ```
 
-### <a name="to-add-a-bookmark-entry-to-the-column-map"></a>책갈피 항목 열 지도를 추가 하려면
+### <a name="to-add-a-bookmark-entry-to-the-column-map"></a>열 맵에 책갈피 항목을 추가하려면 다음을 수행합니다.
 
-1. 사용자 레코드 클래스의 열 지도에 다음 항목을 추가 합니다.
+1. 사용자 레코드 클래스의 열 맵에 다음 항목을 추가합니다.
 
     ```cpp
     // Set a bookmark entry in the column map.
@@ -123,9 +130,9 @@ ms.locfileid: "62390804"
     END_COLUMN_MAP()
     ```
 
-### <a name="to-use-a-bookmark-in-your-main-code"></a>기본 코드에 책갈피를 사용 하려면
+### <a name="to-use-a-bookmark-in-your-main-code"></a>주 코드에서 책갈피를 사용하려면 다음을 수행합니다.
 
-1. 에 `MyCons.cpp` 콘솔 응용 프로그램의 이전에 만든 코드를 변경 하면 주요를 다음과 같이 파일입니다. 책갈피를 사용 하려면 주 코드 자체 책갈피 개체를 인스턴스화하려면 요구 (`myBookmark`);는이 접근자에서 다른 책갈피 (`m_bookmark`).
+1. 이전에 만든 콘솔 애플리케이션의 `MyCons.cpp` 파일에서 주 코드를 다음과 같이 변경합니다. 책갈피를 사용하려면 주 코드에서 자체 책갈피 개체(`myBookmark`)를 인스턴스화해야 합니다. 이 책갈피는 접근자의 책갈피(`m_bookmark`)와 다릅니다.
 
     ```cpp
     ///////////////////////////////////////////////////////////////////////
@@ -194,8 +201,10 @@ ms.locfileid: "62390804"
     }
     ```
 
-책갈피에 대 한 자세한 내용은 참조 하세요. [책갈피를 사용 하 여](../../data/oledb/using-bookmarks.md)입니다. 책갈피의 예에도 표시 됩니다 [행 집합 업데이트](../../data/oledb/updating-rowsets.md)합니다.
+책갈피에 대한 자세한 내용은 [책갈피 사용](../../data/oledb/using-bookmarks.md)을 참조하세요. 책갈피 예제는 [행 집합 업데이트](../../data/oledb/updating-rowsets.md)에도 나와 있습니다.
 
-## <a name="see-also"></a>참고자료
+::: moniker-end
+
+## <a name="see-also"></a>참고 항목
 
 [마법사를 사용하여 OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

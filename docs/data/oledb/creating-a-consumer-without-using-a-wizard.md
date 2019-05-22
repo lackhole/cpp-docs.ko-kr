@@ -1,23 +1,23 @@
 ---
 title: 마법사를 사용하지 않고 소비자 만들기
-ms.date: 10/12/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
-ms.openlocfilehash: 029fe6866df81d366cc3bc15096f638791faa413
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 421723ed561e8ed986a64024c4c5d29c9fba6110
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362506"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525112"
 ---
 # <a name="creating-a-consumer-without-using-a-wizard"></a>마법사를 사용하지 않고 소비자 만들기
 
-다음 예제에서는 기존 ATL 프로젝트에 OLE DB 소비자 지원을 추가 하는 것을 가정 합니다. MFC 응용 프로그램에 OLE DB 소비자 지원을 추가 하려는 경우 실행 해야 합니다 **MFC 응용 프로그램 마법사**, 모든 지원이 필요한 생성 되 고 응용 프로그램을 실행 하는 데 필요한 MFC 루틴을 호출 합니다.
+다음 예제에서는 기존 ATL 프로젝트에 OLE DB 소비자 지원을 추가한다고 가정합니다. MFC 애플리케이션에 OLE DB 소비자 지원을 추가하려는 경우 **MFC 애플리케이션 마법사**를 실행해야 합니다. 이 마법사는 필요한 모든 지원을 만들고, 애플리케이션을 실행하는 데 필요한 MFC 루틴을 호출합니다.
 
-사용 하지 않고 OLE DB 소비자 지원을 추가 하는 **ATL OLE DB 소비자 마법사**:
+**ATL OLE DB 소비자 마법사**를 사용하지 않고 OLE DB 소비자 지원을 추가하려면 다음을 수행합니다.
 
-- Pch.h 파일에 다음 추가 `#include` 문:
+- pch.h 파일에 다음 `#include` 문을 추가합니다.
 
     ```cpp
     #include <atlbase.h>
@@ -25,14 +25,14 @@ ms.locfileid: "62362506"
     #include <atldbsch.h> // if you are using schema templates
     ```
 
-프로그래밍 방식으로 소비자는 일반적으로 다음과 같은 일련의 작업을 수행합니다.
+소비자는 일반적으로 다음과 같은 일련의 작업을 프로그래밍 방식으로 수행합니다.
 
-1. 지역 변수 열에 바인딩되는 사용자 레코드 클래스를 만듭니다. 이 예에서 `CMyTableNameAccessor` 는 사용자 레코드 클래스 (참조 [사용자 레코드](../../data/oledb/user-records.md)). 이 클래스에는 열 지도 및 매개 변수 맵을 포함합니다. 열 지도;에서 지정한 각 필드에 대 한 사용자 레코드 클래스의 데이터 멤버를 선언 합니다. 이러한 데이터 멤버의 각각에 대 한 상태 데이터 멤버 및 길이 데이터 멤버를 선언할 수도 있습니다. 자세한 내용은 [마법사 생성 접근자의 필드 상태 데이터 멤버](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md)합니다.
+1. 지역 변수에 열을 바인딩하는 사용자 레코드 클래스를 만듭니다. 이 예제에서 `CMyTableNameAccessor`는 사용자 레코드 클래스입니다([사용자 레코드](../../data/oledb/user-records.md) 참조). 이 클래스에는 열 맵과 매개 변수 맵이 포함됩니다. 열 맵에서 지정한 각 필드에 대한 데이터 멤버를 사용자 레코드 클래스에 선언합니다. 이러한 각 데이터 멤버에 대해 상태 데이터 멤버와 길이 데이터 멤버도 선언합니다. 자세한 내용은 [마법사 생성 접근자의 필드 상태 데이터 멤버](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md)를 참조하세요.
 
     > [!NOTE]
-    > 사용자 고유의 소비자를 작성 하는 경우 데이터 변수가 상태 및 길이 변수 앞에 나와야 합니다.
+    > 고유한 소비자를 작성하는 경우 데이터 변수가 상태 및 길이 변수 앞에 와야 합니다.
 
-- 데이터 소스 및 세션을 인스턴스화하십시오. 접근자 및 행 집합의 형식을 사용 하 고 다음 사용 하 여 행 집합을 인스턴스화할 결정 [CCommand](../../data/oledb/ccommand-class.md) 하거나 [CTable](../../data/oledb/ctable-class.md):
+- 데이터 소스 및 세션을 인스턴스화합니다. 사용할 접근자 및 행 집합의 형식을 결정하고, [CCommand](../../data/oledb/ccommand-class.md) 또는 [CTable](../../data/oledb/ctable-class.md)을 사용하여 행 집합을 인스턴스화합니다.
 
     ```cpp
     CDataSource ds;
@@ -40,15 +40,15 @@ ms.locfileid: "62362506"
     class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor>>
     ```
 
-- 호출 `CoInitialize` COM을 초기화 하려면 이 기본 코드에서 호출 됩니다. 예를 들어:
+- `CoInitialize`를 호출하여 COM을 초기화합니다. 주 코드에서 호출됩니다. 예:
 
     ```cpp
     HRESULT hr = CoInitialize(NULL);
     ```
 
-- 호출 [cdatasource:: Open](../../data/oledb/cdatasource-open.md) 또는 해당 변형 중 하나입니다.
+- [CDataSource::Open](../../data/oledb/cdatasource-open.md) 또는 해당 변형 중 하나를 호출합니다.
 
-- 데이터 원본에 대 한 연결, 세션을 연 후 열 및 행 집합 초기화 (열고 경우 명령을 실행할 수도):
+- 데이터 소스에 대한 연결과 세션을 열고, 행 집합을 열어서 초기화합니다(명령이 있을 경우 명령도 실행함).
 
     ```cpp
     hr = ds.Open();
@@ -56,11 +56,11 @@ ms.locfileid: "62362506"
     hr = rs.Open();            // (Open also executes the command)
     ```
 
-- 필요에 따라 행 집합 속성 설정 사용 하 여 `CDBPropSet::AddProperty` 에 대 한 매개 변수로 전달 하 고 및 `rs.Open`합니다. 이렇게 하는 방법의 예제를 참조 하세요 `GetRowsetProperties` 에 [소비자 마법사 생성 메서드](../../data/oledb/consumer-wizard-generated-methods.md)합니다.
+- 필요에 따라 `CDBPropSet::AddProperty`를 사용하여 행 집합 속성을 설정하고 `rs.Open`에 매개 변수로 전달합니다. 이 작업을 수행하는 방법의 예제는 [소비자 마법사 생성 메서드](../../data/oledb/consumer-wizard-generated-methods.md)의 `GetRowsetProperties`를 참조하세요.
 
-- 이제 데이터를 검색/조작 하는 행 집합을 사용할 수 있습니다.
+- 이제 행 집합을 사용하여 데이터를 검색/조작할 수 있습니다.
 
-- 응용 프로그램이 완료 되 면 연결, 세션 및 행 집합을 닫습니다.
+- 애플리케이션이 완료되면 연결, 세션 및 행 집합을 닫습니다.
 
     ```cpp
     rs.Close();
@@ -68,14 +68,14 @@ ms.locfileid: "62362506"
     ds.Close();
     ```
 
-   호출 하려는 명령을 사용 하는 경우 `ReleaseCommand` 후 `Close`합니다. 코드 예제 [ccommand:: Close](../../data/oledb/ccommand-close.md) 를 호출 하는 방법을 보여 줍니다 `Close` 고 `ReleaseCommand`입니다.
+   명령을 사용하는 경우 `Close` 다음에 `ReleaseCommand`를 호출하는 것이 좋습니다. [CCommand::Close](../../data/oledb/ccommand-close.md)의 코드 예제에서는 `Close` 및 `ReleaseCommand`를 호출하는 방법을 보여 줍니다.
 
-- 호출 `CoUnInitialize` COM.의 초기화를 취소 하려면 이 기본 코드에서 호출 됩니다.
+- `CoUnInitialize`를 호출하여 COM 초기화를 취소합니다. 주 코드에서 호출됩니다.
 
     ```cpp
     CoUninitialize();
     ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 소비자 만들기](../../data/oledb/creating-an-ole-db-consumer.md)

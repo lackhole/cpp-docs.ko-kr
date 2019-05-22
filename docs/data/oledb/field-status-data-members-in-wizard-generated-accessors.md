@@ -1,24 +1,32 @@
 ---
 title: 마법사 생성 접근자의 필드 상태 데이터 멤버
-ms.date: 10/24/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-ms.openlocfilehash: dd650b7cafef78e23c23ddfef791c88b6b93727f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: c92a450a00e6218d2ccc679d56aeff0f379762a3
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409007"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525061"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>마법사 생성 접근자의 필드 상태 데이터 멤버
 
-사용 하는 경우는 **ATL OLE DB 소비자 마법사** 소비자를 만들려면 마법사를 열 지도에서 지정 하는 각 필드에 대 한 사용자 레코드 클래스의 데이터 멤버를 생성 합니다. 각 데이터 멤버는 형식의 `DWORD` 해당 필드에 해당 하는 상태 값을 포함 합니다.
+::: moniker range="vs-2019"
 
-데이터 멤버에 대 한 예를 들어 *m_OwnerID*, 필드의 상태에 대 한 추가 데이터 멤버를 생성 하는 마법사 (*dwOwnerIDStatus*) 및 필드 길이 대 한 다른 (*dwOwnerIDLength*). 또한 COLUMN_ENTRY_LENGTH_STATUS 엔터티와 함께 열 맵을 생성합니다.
+Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 수 없습니다. 수동으로 기능을 추가할 수는 있습니다. 자세한 내용은 [마법사를 사용하지 않고 소비자 만들기](creating-a-consumer-without-using-a-wizard.md)를 참조하세요.
 
-이 다음 코드에 표시 됩니다.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+**ATL OLE DB 소비자 마법사**를 사용하여 소비자를 만드는 경우, 열 맵에 지정한 각 필드에 대한 데이터 멤버가 사용자 레코드 클래스에 생성됩니다. 각 데이터 멤버는 `DWORD` 형식이며, 해당 필드의 상태 값을 포함합니다.
+
+예를 들어 데이터 멤버 *m_OwnerID*의 경우 필드 상태에 대한 추가 데이터 멤버(*dwOwnerIDStatus*)와 필드 길이에 대한 다른 데이터 멤버(*dwOwnerIDLength*)가 생성됩니다. 또한 COLUMN_ENTRY_LENGTH_STATUS 항목을 사용하여 열 맵이 생성됩니다.
+
+이 작업은 다음 코드에서 확인할 수 있습니다.
 
 ```cpp
 class CAuthorsAccessor
@@ -54,21 +62,21 @@ public:
 > [!NOTE]
 > 사용자 레코드 클래스를 수정하거나 사용자 고유의 소비자를 작성하는 경우 데이터 변수가 상태 및 길이 변수 앞에 와야 합니다.
 
-디버깅 목적으로 상태 값을 사용할 수 있습니다. 코드에서 생성 하는 경우는 **ATL OLE DB 소비자 마법사** 컴파일 오류를 생성 DB_S_ERRORSOCCURRED 또는 DB_E_ERRORSOCCURRED 등을 고려해 야 필드 상태 데이터 멤버의 현재 값입니다. 0이 아닌 값이 있는 잘못 된 열에 해당 합니다.
+디버깅 목적으로 상태 값을 사용할 수 있습니다. **ATL OLE DB 소비자 마법사**에서 생성된 코드가 DB_S_ERRORSOCCURRED, DB_E_ERRORSOCCURRED 등의 컴파일 오류를 생성하는 경우 필드 상태 데이터 멤버의 현재 값을 먼저 확인해야 합니다. 값이 0이 아닌 데이터 멤버는 위반 열에 해당합니다.
 
-또한 특정 필드에 NULL 값을 설정 하는 상태 값을 사용할 수 있습니다. 이렇게 하면 0이 아닌 NULL로 필드 값을 구분 하고자 하는 경우에 도움이 됩니다. 유효한 값 또는 특수 한 값을 NULL 인지 여부를 결정 하 고 응용 프로그램 처리 해야 하는 방법을 결정 하는 것입니다. OLE DB 일반 NULL 값을 지정 하는 올바른 수단으로 DBSTATUS_S_ISNULL을 정의 합니다. 소비자 데이터를 읽고, 값이 null, status 필드 DBSTATUS_S_ISNULL에 설정 됩니다. 소비자를 NULL 값을 설정 하려는 소비자는 공급자를 호출 하기 전에 상태 값을 DBSTATUS_S_ISNULL을 설정 합니다.
+상태 값을 사용하여 특정 필드에 NULL 값을 설정할 수도 있습니다. 이렇게 하면 필드 값을 0이 아닌 NULL로 구분하려는 경우에 도움이 됩니다. NULL이 유효한 값인지 또는 특수 값인지 여부와 애플리케이션에서 NULL을 처리하는 방법을 결정해야 합니다. OLE DB에서는 제네릭 NULL 값을 지정하는 올바른 수단으로 DBSTATUS_S_ISNULL을 정의합니다. 소비자가 데이터를 읽고 값이 Null이면 상태 필드가 DBSTATUS_S_ISNULL로 설정됩니다. 소비자가 NULL 값을 설정하려는 경우 공급자를 호출하기 전에 상태 값을 DBSTATUS_S_ISNULL로 설정합니다.
 
-다음으로 열고 Oledb.h DBSTATUSENUM 검색 합니다. DBSTATUSENUM 열거형 값에 대해 0이 아닌 상태를 나타내는 숫자 값을 일치 시킬 수 있습니다. 열거형 이름 무엇이 잘못 인지 여부를 알려줍니다. 즉, 충분 하지 않으면를 **상태** 항목에는 **바인딩 데이터 값** 부분을 [OLE DB Programmer's Guide](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming). 이 항목의 상태 값을 가져오거나 데이터를 설정할 때 사용 되는 테이블을 포함 합니다. 길이 값에 대 한 자세한 내용은 합니다 **길이** 동일한 섹션에서 항목입니다.
+다음으로, Oledb.h를 열고 DBSTATUSENUM을 검색합니다. DBSTATUSENUM 열거형 값과 0이 아닌 상태의 숫자 값을 일치시킬 수 있습니다. 열거형 이름을 통해 오류를 확인할 수 없는 경우 [OLE DB 프로그래머 가이드](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)의 **데이터 값 바인딩** 섹션에서 **상태** 항목을 참조하세요. 이 항목에는 데이터를 가져오거나 설정할 때 사용되는 상태 값 표가 포함되어 있습니다. 길이 값에 대한 자세한 내용은 동일한 섹션의 **길이** 항목을 참조하세요.
 
-## <a name="retrieving-the-length-or-status-of-a-column"></a>길이 또는 열의 상태를 검색합니다.
+## <a name="retrieving-the-length-or-status-of-a-column"></a>열의 길이 또는 상태 검색
 
-가변 길이 열의 길이 또는 열의 (DBSTATUS_S_ISNULL, 예를 들어 확인) 상태를 검색할 수 있습니다.
+가변 길이 열의 길이 또는 열의 상태(예: DBSTATUS_S_ISNULL 확인)를 검색할 수 있습니다.
 
-- 길이 가져오려면 COLUMN_ENTRY_LENGTH 매크로 사용 합니다.
+- 길이를 가져오려면 COLUMN_ENTRY_LENGTH 매크로를 사용합니다.
 
-- 상태를 가져오려면 COLUMN_ENTRY_STATUS 매크로 사용 합니다.
+- 상태를 가져오려면 COLUMN_ENTRY_STATUS 매크로를 사용합니다.
 
-- 둘 다를 가져오려면 COLUMN_ENTRY_LENGTH_STATUS를 같이 사용 합니다.
+- 둘 다 가져오려면 다음과 같이 COLUMN_ENTRY_LENGTH_STATUS를 사용합니다.
 
     ```cpp
     class CProducts
@@ -86,7 +94,7 @@ public:
     };
     ```
 
-- 그런 다음에 액세스할 길이 및/또는 상태를 표시 된 것 처럼.
+- 그런 후에 다음과 같이 길이 및 상태에 액세스합니다.
 
     ```cpp
     CTable<CAccessor<CProducts >> product;
@@ -102,8 +110,10 @@ public:
     }
     ```
 
-사용 하는 경우 `CDynamicAccessor`, 길이 및 상태를 자동으로 바인딩된 됩니다. 길이 및 상태 값을 검색 하려면 사용 합니다 `GetLength` 및 `GetStatus` 멤버 함수입니다.
+`CDynamicAccessor`를 사용하면 길이와 상태가 자동으로 바인딩됩니다. 길이 및 상태 값을 검색하려면 `GetLength` 및 `GetStatus` 멤버 함수를 사용합니다.
 
-## <a name="see-also"></a>참고자료
+::: moniker-end
+
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)
