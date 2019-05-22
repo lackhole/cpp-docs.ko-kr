@@ -47,7 +47,7 @@ ms.locfileid: "62292798"
 **/Fr**은 사용되지 않습니다. 대신 **/FR**을 사용하세요. 자세한 내용은 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)에서 사용되지 않는 컴파일러 옵션을 참조하세요.
 
 > [!NOTE]
->  .sbr 확장명을 변경하지 마세요. BSCMAKE의 중간 처리 과정에서 해당 확장자가 필요합니다.
+>  .sbr 확장명을 변경하지 마세요. BSCMAKE의 중간 파일에서 해당 확장자가 필요합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
