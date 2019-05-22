@@ -4,12 +4,12 @@ ms.date: 03/27/2019
 helpviewer_keywords:
 - run-time object model services macros
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
-ms.openlocfilehash: 5ea7900df8d71157a7ea77dd27a8ba83dfe259a1
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 2dccb1c2081996ce7336652b207f3a68b20a3f9e
+ms.sourcegitcommit: a61d17cffdd50f1c3c6e082a01bbcbc85b6cc5a7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611756"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975115"
 ---
 # <a name="run-time-object-model-services"></a>런타임 개체 모델 서비스
 
@@ -165,7 +165,7 @@ DECLARE_DYNCREATE 매크로에 대 한 자세한 내용은 참조 하세요. [CO
 
 **헤더:** afx.h
 
-## <a name="declareolectltype"></a>DECLARE_OLECTLTYPE
+## <a name="declare_olectltype"></a> declare_olectltype
 
 선언 된 `GetUserTypeNameID` 고 `GetMiscStatus` 컨트롤 클래스의 멤버 함수입니다.
 
@@ -188,7 +188,7 @@ DECLARE_OLECTLTYPE( class_name )
 
 **헤더:** afxctl.h
 
-## <a name="declareproppageids"></a>DECLARE_PROPPAGEIDS
+## <a name="a-namedeclareproppageids-declareproppageids"></a><a name="declare_proppageids"> declare_proppageids
 
 OLE 컨트롤 속성을 표시 하도록 속성 페이지의 목록을 제공 하는 선언 합니다.
 
@@ -361,7 +361,7 @@ OLE 클래스 ID가 고유 128 비트 식별자 개체입니다. 하나 이루�
 
 **헤더:** afxdisp.h
 
-## <a name="implementolectltype"></a>IMPLEMENT_OLECTLTYPE
+## <a name="a-nameimplementolectltype-implementolectltype"></a><a name="implement_olectltype"> implement_olectltype
 
 구현 된 `GetUserTypeNameID` 고 `GetMiscStatus` 컨트롤 클래스의 멤버 함수입니다.
 
