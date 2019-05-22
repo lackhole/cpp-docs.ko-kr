@@ -30,7 +30,7 @@ ms.locfileid: "62293045"
 
 ## <a name="remarks"></a>설명
 
-이 옵션을 사용하지 않는 경우 개체 파일은 소스 파일의 기본이름과 .obj 확장자를 사용합니다. 원하는 이름이나 확장자를 사용할 수 있지만 .obj를 사용하는 것이 좋습니다.
+이 옵션을 사용하지 않는 경우 개체 파일은 소스 파일의 기본 이름과 .obj 확장자를 사용합니다. 원하는 이름이나 확장자를 사용할 수 있지만 .obj를 사용하는 것이 좋습니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -40,7 +40,7 @@ ms.locfileid: "62293045"
 
 1. **출력 파일** 속성 페이지를 클릭합니다.
 
-1. **개체 파일 이름** 속성을 수정합니다. 개발 환경에서는 개체 파일 확장명이 .obj 여야합니다.
+1. **개체 파일 이름** 속성을 수정합니다. 개발 환경에서는 개체 파일 확장명이 .obj여야 합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
@@ -48,7 +48,7 @@ ms.locfileid: "62293045"
 
 ## <a name="example"></a>예제
 
-다음 명령줄은 생성되어 있는 B드라이브의 \OBJECT 디렉토리에 THIS.obj라는 개체 파일명으로 오브젝트 파일을 만듭니다.
+다음 명령줄은 B드라이브의 기존 \OBJECT 디렉터리에 THIS.obj라는 파일명으로 개체 파일을 만듭니다.
 
 ```
 CL /FoB:\OBJECT\ THIS.C
