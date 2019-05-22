@@ -32,9 +32,9 @@ ms.locfileid: "62270994"
 
 ## <a name="remarks"></a>설명
 
-[/Yc (미리 컴파일된 헤더 파일 만들기)](yc-create-precompiled-header-file.md)와 [/Yu (미리 컴파일된 헤더 파일 사용)](yu-use-precompiled-header-file.md)과 함께 이 옵션을 사용하면 기본 경로 이름을 사용하는 대신 미리 컴파일된 헤더에 대한 경로 이름을 제공할 수 있습니다.또한 **/Yc**와 함께 **/Fp**를 사용하여 **/Yc**<em>filename</em> 인수 및 원본 파일의 기본 이름과 다른 미리 컴파일 된 헤더 파일의 사용을 지정할 수 있습니다.
+[/Yc(미리 컴파일된 헤더 파일 만들기)](yc-create-precompiled-header-file.md) 또는 [/Yu(미리 컴파일된 헤더 파일 사용)](yu-use-precompiled-header-file.md)와 함께 이 옵션을 사용하면 기본 경로 이름을 사용하는 대신 미리 컴파일된 헤더에 대한 경로 이름을 제공할 수 있습니다. 또한 **/Yc**와 함께 **/Fp**를 사용하여 **/Yc**<em>filename</em> 인수 및 원본 파일의 기본 이름과 다른, 미리 컴파일된 헤더 파일의 사용을 지정할 수 있습니다.
 
-경로 이름의 일부로 확장자를 지정 하지 않면 확장자는 .pch로 간주 됩니다. 파일 이름 없이 디렉터리를 지정 하는 경우 기본 파일 이름은 VC*x*0.pch로 지정되며 여기서 *x*는 Visual C++의 주 버전입니다.
+경로 이름의 일부로 확장자를 지정하지 않면 확장자는 .pch로 간주됩니다. 파일 이름 없이 디렉터리를 지정하는 경우 기본 파일 이름은 VC*x*0.pch로 지정되며 여기서 *x*는 사용되는 Visual C++의 주 버전입니다.
 
 **/Yu**와 함께 **/Fp** 옵션을 사용할 수도 있습니다.
 
@@ -62,7 +62,7 @@ CL /DDEBUG /Zi /Yc /FpDPROG.PCH PROG.CPP
 
 ## <a name="example"></a>예제
 
-다음 명령을 MYPCH.pch 라는 미리 컴파일된 헤더 파일을 사용 하도록 지정 합니다. 컴파일러는 PROG.cpp의 소스 코드를 통해 MYAPP.h를 통해 미리 컴파일된 코드가 MYPCH.pch에 미리 있다고 가정 합니다. MYPCH.pch의 콘텐츠를 사용하고 나머지 PROG.cpp를 컴파일 하여 .obj 파일을 만듭니다. 이 예제의 출력은 PROG.exe 라는 파일입니다.
+다음 명령은 MYPCH.pch라는 미리 컴파일된 헤더 파일을 사용하도록 지정합니다. 컴파일러는 PROG.cpp의 소스 코드가 MYAPP.h를 통해 사전 컴파일되고 미리 컴파일된 코드가 MYPCH.pch에 있다고 가정합니다. MYPCH.pch의 콘텐츠를 사용하고 나머지 PROG.cpp를 컴파일하여 .obj 파일을 만듭니다. 이 예제의 출력은 PROG.exe라는 파일입니다.
 
 ```
 CL /YuMYAPP.H /FpMYPCH.PCH PROG.CPP
