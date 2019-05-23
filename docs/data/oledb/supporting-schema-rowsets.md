@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB providers, schema rowsets
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-ms.openlocfilehash: 09af59d97ab87c66a0a7096e72cc7b92bc3a5dbf
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 1ad1a91e8a79238eee773d92a756b0238e8901d5
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525279"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707499"
 ---
 # <a name="supporting-schema-rowsets"></a>스키마 행 집합 지원
 
@@ -38,7 +38,7 @@ Visual Studio 2019 이상에서는 ATL OLE DB 공급자 마법사를 사용할 �
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 **ATL OLE DB 공급자 마법사**에서는 세션 헤더 파일에 다음 세 개의 스키마 클래스를 만듭니다.
 

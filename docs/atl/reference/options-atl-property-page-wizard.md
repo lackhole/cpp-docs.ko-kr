@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Property Page Wizard, options
 ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
-ms.openlocfilehash: c883b3e79bd857bb457da0a1bd540a08ddddf017
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 205f6d3debafe22373355af12ef88c83d6a01911
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65524548"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707009"
 ---
 # <a name="options-atl-property-page-wizard"></a>옵션, ATL 속성 페이지 마법사
 
@@ -22,7 +22,7 @@ Visual Studio 2019 이상에서는 ATL 속성 페이지 마법사를 사용할 �
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 이 마법사 페이지를 사용하여 만드는 속성 페이지의 스레딩 모델 및 집계 수준을 정의할 수 있습니다.
 

@@ -4,12 +4,12 @@ ms.date: 05/08/2019
 helpviewer_keywords:
 - ATL projects, adding components
 ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
-ms.openlocfilehash: e8ab9238f921b3c4e5c0eb396f0b26e46ab2a244
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 24b4698ebc8dd4f61dfd88ad14e64d4f70b2ef35
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65524680"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707028"
 ---
 # <a name="atl-com-10-component-wizard"></a>ATL COM+ 1.0 구성 요소 마법사
 
@@ -19,7 +19,7 @@ Visual Studio 2019 이상에서는 이 마법사를 사용할 수 없습니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 이 마법사를 사용하여 트랜잭션을 비롯한 COM+ 1.0 서비스를 지원하는 개체를 프로젝트에 추가할 수 있습니다.
 
