@@ -31,7 +31,7 @@ ms.locfileid: "62292304"
 
 ## <a name="remarks"></a>설명
 
-병합된 소스 파일과 원본 소스 파일을 구분하기 위해 **/Fx**는 파일 이름과 확장명 사이에 .mrg 확장명을 추가합니다. 예를 들어 특성 사용 코드를 포함하며 **/Fx** 을 사용하여 빌드한 MyCode.cpp 파일은 MyCode.mrg.cpp 파일을 만들고 다음 코드가 포함됩니다. 
+병합된 소스 파일과 원본 소스 파일을 구분하기 위해 **/Fx**는 파일 이름과 확장명 사이에 .mrg 확장명을 추가합니다. 예를 들어 특성 사용 코드를 포함하며 **/Fx**를 사용하여 빌드한 MyCode.cpp 파일은 MyCode.mrg.cpp 파일을 만들고 다음 코드가 포함됩니다. 
 
 ```
 //+++ Start Injected Code
@@ -58,7 +58,7 @@ ms.locfileid: "62292304"
 
 .mrg 파일에서는 매크로가 확장되지 않습니다.
 
-프로그램이 삽입된 코드를 사용하는 헤더 파일을 포함하는 경우 **/Fx**는 해당 헤더에 대한 .mrg.h 파일을 생성합니다. **/Fx** 은 삽입된 코드를 사용하지 않는 include 파일을 병합하지 않습니다.
+프로그램이 삽입된 코드를 사용하는 헤더 파일을 포함하는 경우 **/Fx**는 해당 헤더에 대한 .mrg.h 파일을 생성합니다. **/Fx**는 삽입된 코드를 사용하지 않는 include 파일을 병합하지 않습니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
