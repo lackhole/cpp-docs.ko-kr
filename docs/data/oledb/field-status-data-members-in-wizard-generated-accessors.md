@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-ms.openlocfilehash: c92a450a00e6218d2ccc679d56aeff0f379762a3
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: a6623cb02f14650d92e4adabed749b0b37725d45
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525061"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707553"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>마법사 생성 접근자의 필드 상태 데이터 멤버
 
@@ -20,7 +20,7 @@ Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 �
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 **ATL OLE DB 소비자 마법사**를 사용하여 소비자를 만드는 경우, 열 맵에 지정한 각 필드에 대한 데이터 멤버가 사용자 레코드 클래스에 생성됩니다. 각 데이터 멤버는 `DWORD` 형식이며, 해당 필드의 상태 값을 포함합니다.
 

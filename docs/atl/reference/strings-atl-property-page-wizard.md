@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Property Page Wizard, strings
 ms.assetid: 00547db6-911f-49eb-92e1-2ba67079d4df
-ms.openlocfilehash: 29a7129e25f7db992fec7214e66996fbbd3248ff
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 04178c435bbd0ca80e412efc39a1b736062d95e7
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65524481"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706772"
 ---
 # <a name="strings-atl-property-page-wizard"></a>문자열, ATL 속성 페이지 마법사
 
@@ -21,7 +21,7 @@ Visual Studio 2019 이상에서는 ATL 속성 페이지 마법사를 사용할 �
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 속성 페이지와 관련된 텍스트를 제공합니다.
 

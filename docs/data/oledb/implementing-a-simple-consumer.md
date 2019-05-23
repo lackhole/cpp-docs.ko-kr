@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, implementing
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-ms.openlocfilehash: 592a51dd77f7a2e115ee67a481e56dc558209253
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 67bce55a19a2aaaf3a8cbb62d7db228513e93c91
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707527"
 ---
 # <a name="implementing-a-simple-consumer"></a>단순 소비자 구현
 
@@ -19,7 +19,7 @@ Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 �
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 다음 항목에서는 **MFC 애플리케이션 마법사** 및 **ATL OLE DB 소비자 마법사**를 통해 만든 파일을 편집하여 간단한 소비자를 만드는 방법을 보여 줍니다. 이 예제는 다음 부분으로 이루어져 있습니다.
 
