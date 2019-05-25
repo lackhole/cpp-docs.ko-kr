@@ -19,7 +19,7 @@ ms.locfileid: "62292317"
 ---
 # <a name="ga-optimize-for-windows-application"></a>/GA(Windows 응용 프로그램 최적화)
 
-그 결과는 스레드 로컬 저장소(TLS) 변수에 액세스하는 것을 위한 .exe 파일에 대한 보다 효율적인 코드입니다.
+스레드 로컬 저장소(TLS) 변수에 액세스하는 효율적인 코드의 .exe 파일이 생성됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,7 +29,7 @@ ms.locfileid: "62292317"
 
 ## <a name="remarks"></a>설명
 
-**/GA**는 Windows 기반 프로그램에서 [__declspec(thread)](../../cpp/declspec.md)로 선언된 데이터에 대한 액세스 속도를 향상시킵니다. 이 옵션을 설정하면 [__tls_index](/windows/desktop/ProcThread/thread-local-storage) 매크로는 0으로 간주됩니다.
+**/GA**는 Windows 기반 프로그램에서 [__declspec(thread)](../../cpp/declspec.md)로 선언된 데이터의 액세스 속도를 향상시킵니다. 이 옵션을 설정하면 [__tls_index](/windows/desktop/ProcThread/thread-local-storage) 매크로는 0으로 간주됩니다.
 
 DLL에 **/GA**를 사용할 경우 잘못된 코드가 생성될 수 있습니다.
 
