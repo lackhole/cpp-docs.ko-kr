@@ -1,15 +1,15 @@
 ﻿---
 title: '방법: shared_ptr 인스턴스 만들기 및 사용'
 ms.custom: how-to
-ms.date: 11/19/2018
+ms.date: 05/22/2019
 ms.topic: conceptual
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-ms.openlocfilehash: 8363139efddb2fa64057fdb995ab7bd5dfbcfd9b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4e7d63840f60c00f97b02825965cc247cddc38fd
+ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153754"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174807"
 ---
 # <a name="how-to-create-and-use-sharedptr-instances"></a>방법: shared_ptr 인스턴스 만들기 및 사용
 
@@ -19,9 +19,60 @@ ms.locfileid: "62153754"
 
 ![공유 포인터 다이어그램](../cpp/media/shared_ptr.png "공유 포인터 다이어그램")
 
+## <a name="example-setup"></a>예제 설정
+
+다음에 나오는 예제에서는 다음과 같이 필수 헤더를 포함하고 필요한 형식을 선언했다고 가정합니다.
+
+```cpp
+// shared_ptr-examples.cpp
+// The following examples assume these declarations:
+#include <algorithm>
+#include <iostream>
+#include <memory>
+#include <string>
+#include <vector>
+
+struct MediaAsset
+{
+    virtual ~MediaAsset() = default; // make it polymorphic
+};
+
+struct Song : public MediaAsset
+{
+    std::wstring artist;
+    std::wstring title;
+    Song(const std::wstring& artist_, const std::wstring& title_) :
+        artist{ artist_ }, title{ title_ } {}
+};
+
+struct Photo : public MediaAsset
+{
+    std::wstring date;
+    std::wstring location;
+    std::wstring subject;
+    Photo(
+        const std::wstring& date_,
+        const std::wstring& location_,
+        const std::wstring& subject_) :
+        date{ date_ }, location{ location_ }, subject{ subject_ } {}
+};
+
+using namespace std;
+
+int main()
+{
+    // The examples go here, in order:
+    // Example 1
+    // Example 2
+    // Example 3
+    // Example 4
+    // Example 6
+}
+```
+
 ## <a name="example-1"></a>예제 1
 
-가능 하면 사용 된 [make_shared](../standard-library/memory-functions.md#make_shared) 만드는 함수를 `shared_ptr` 메모리 리소스를 처음 만들어질 때. `make_shared`는 예외로부터 안전합니다. 동일한 호출을 사용하여 제어 블록 및 리소스에 대한 메모리를 할당하고 이를 통해 생성 오버헤드가 감소됩니다. `make_shared`를 사용하지 않는 경우 `shared_ptr` 생성자에 전달하기 전에 새 명시적 식을 사용하여 개체를 만들어야 합니다. 다음 예제에서는 새 개체와 함께 `shared_ptr`을 선언하고 초기화하는 다양한 방법을 보여 줍니다.
+가능하면 메모리 리소스를 처음으로 만들 때 [make_shared](../standard-library/memory-functions.md#make_shared) 함수를 사용하여 `shared_ptr`을 만듭니다. `make_shared`는 예외로부터 안전합니다. 동일한 호출을 사용하여 제어 블록 및 리소스에 대한 메모리를 할당하므로 생성 오버헤드가 감소됩니다. `make_shared`를 사용하지 않는 경우 `shared_ptr` 생성자에 전달하기 전에 명시적 `new` 식을 사용하여 개체를 만들어야 합니다. 다음 예제에서는 새 개체와 함께 `shared_ptr`을 선언하고 초기화하는 다양한 방법을 보여 줍니다.
 
 [!code-cpp[stl_smart_pointers#1](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_1.cpp)]
 
@@ -33,7 +84,7 @@ ms.locfileid: "62153754"
 
 ## <a name="example-3"></a>예제 3
 
-`shared_ptr` 유용도 C++ 표준 라이브러리 컨테이너의 요소를 복사 하는 알고리즘을 사용 하는 경우입니다. `shared_ptr`에 요소를 래핑한 다음 내부 메모리가 필요할 때까지 유효하거나 더 이상 유효하지 않음을 인식하며 해당 요소를 다른 컨테이너에 복사할 수 있습니다. 다음 예제에서는 벡터의 `replace_copy_if` 인스턴스에서 `shared_ptr` 알고리즘을 사용하는 방법을 보여 줍니다.
+`shared_ptr`은 요소를 복사하는 알고리즘을 사용할 때 C++ 표준 템플릿 라이브러리 컨테이너에서도 유용합니다. `shared_ptr`에 요소를 래핑한 다음 내부 메모리가 필요할 때까지 유효하거나 더 이상 유효하지 않음을 인식하며 해당 요소를 다른 컨테이너에 복사할 수 있습니다. 다음 예제에서는 벡터의 `replace_copy_if` 인스턴스에서 `shared_ptr` 알고리즘을 사용하는 방법을 보여 줍니다.
 
 [!code-cpp[stl_smart_pointers#4](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_3.cpp)]
 
@@ -47,9 +98,9 @@ ms.locfileid: "62153754"
 
 `shared_ptr`을 다음과 같은 방법으로 다른 함수에 전달할 수 있습니다.
 
-- `shared_ptr`을 값으로 전달합니다. 이 방법은 복사 생성자를 호출하고 참조 횟수를 늘리며 호출 수신자를 소유자로 변경합니다. 이 작업에는 적은 양의 오버헤드가 있으며 이는 상당 부분 전달하는 `shared_ptr` 개체 수에 따라 달라질 수 있습니다. 호출자와 호출 수신자 사이의 코드 계약(암시적 또는 명시적)이 호출 수신자가 소유자일 것을 요구하는 경우 이 옵션을 사용합니다.
+- `shared_ptr`을 값으로 전달합니다. 이 방법은 복사 생성자를 호출하고 참조 횟수를 늘리며 호출 수신자를 소유자로 변경합니다. 이 작업에는 적은 양의 오버헤드가 있으며 이는 전달하는 상당 수의 `shared_ptr` 개체 수에 따라 달라질 수 있습니다. 호출자와 호출 수신자 간의 암시적 또는 명시적 코드 계약이 호출 수신자가 소유자일 것을 요구하는 경우 이 옵션을 사용합니다.
 
-- 참조 또는 const 참조로 `shared_ptr`을 전달합니다. 이 경우 참조 횟수는 늘어나지 않고 호출 수신자는 호출자가 범위를 벗어나지 않는 한 포인터에 액세스할 수 있습니다. 또는 호출 수신자는 참조를 기반으로 `shared_ptr`을 만들고 이에 따라 공유 소유자가 됩니다. 호출자가 호출 수신자를 모르는 경우 또는 `shared_ptr`을 전달해야 하고 성능상의 이유로 복사 작업을 하지 않아야 할 경우 이 옵션을 사용합니다.
+- 참조 또는 const 참조로 `shared_ptr`을 전달합니다. 이 경우 참조 횟수는 늘어나지 않고 호출 수신자는 호출자가 범위를 벗어나지 않는 한 포인터에 액세스할 수 있습니다. 또는 호출 수신자는 참조를 기반으로 `shared_ptr`을 만들고 공유 소유자가 될 수 있습니다. 호출자가 호출 수신자를 모르는 경우 또는 `shared_ptr`을 전달해야 하고 성능상의 이유로 복사 작업을 하지 않아야 할 경우 이 옵션을 사용합니다.
 
 - 내부 포인터 또는 내부 개체에 대한 참조를 전달합니다. 이를 통해 호출 수신자는 개체를 사용하지만 소유권을 공유하거나 수명을 연장할 수 없습니다. 호출 수신자가 원시 포인터에서 `shared_ptr`을 만드는 경우 새 `shared_ptr`은 원본에 독립적이고 내부 리소스를 제어하지 않습니다. 호출자와 호출 수신자 사이의 계약이 호출자가 `shared_ptr` 수명에 대한 소유권을 보유함을 명확하게 지정하는 경우 이 옵션을 사용하십시오.
 
@@ -65,6 +116,6 @@ ms.locfileid: "62153754"
 
 [!code-cpp[stl_smart_pointers#3](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_6.cpp)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [스마트 포인터(모던 C++)](../cpp/smart-pointers-modern-cpp.md)

@@ -5,12 +5,12 @@ ms.technology: cpp-ide
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 8fdd48c026485e55db01f6f70b0dde3c1e68d847
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: a897f3b6154368c7381f1cac8e51ed5acfac5d32
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58782353"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708175"
 ---
 # <a name="visual-c-help-and-community"></a>Visual C++ 도움말 및 커뮤니티
 
@@ -26,7 +26,7 @@ ms.locfileid: "58782353"
 
 |제목|설명|
 |-----------|-----------------|
-|[Visual C++](visual-cpp-in-visual-studio.md)|Visual C++에 대한 참조 및 개념 설명서를 포함합니다. MSDN Library의 일부입니다.|
+|[Visual Studio의 C++](visual-cpp-in-visual-studio.md)|Visual C++에 대한 참조 및 개념 설명서를 포함합니다. MSDN Library의 일부입니다.|
 |[Windows 개발자 센터](https://developer.microsoft.com/windows/)|C++ 및 기타 언어를 사용하여 Windows 10용 앱을 개발하는 방법에 대한 정보를 포함합니다. Windows 개발자 센터의 일부이며, C++ 콘텐츠는 문서 > 언어 참조 노드 아래에 있습니다.|
 
 ### <a name="online-and-offline-documentation"></a>온라인 및 오프라인 설명서

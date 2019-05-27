@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - file types [C++], WinHelp files
 ms.assetid: 4fdcbd66-66b0-4866-894a-fd7b4c2557e4
-ms.openlocfilehash: 835300d2fe39688f3b9c41dad801f1a79984c803
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: 6810b3f608b9fa7892b686d72056994fb98c92db
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446553"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707465"
 ---
 # <a name="help-files-winhelp"></a>도움말 파일(WinHelp)
 
@@ -33,6 +33,6 @@ MFC ActiveX 컨트롤 마법사의 [애플리케이션 설정](../../mfc/referen
 |Makehelp.bat|*Projname*|소스 파일|프로젝트가 컴파일될 때 시스템이 도움말 프로젝트를 빌드하는 데 사용합니다.|
 |Bullet.bmp|*Projname*|리소스 파일|표준 도움말 파일 항목에서 글머리 기호 목록을 나타내는 데 사용됩니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[시각적 개체에 대해 만들어지는 형식 파일 C++ 프로젝트](file-types-created-for-visual-cpp-projects.md)
+[Visual Studio C++ 프로젝트용으로 만든 파일 형식](file-types-created-for-visual-cpp-projects.md)

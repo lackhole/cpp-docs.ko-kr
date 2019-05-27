@@ -28,12 +28,12 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-ms.openlocfilehash: b1cc721ed994ae1c6704011199ac635ee462ded8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec6e638a1099db8baeefe220215485b6480c30e4
+ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412828"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174768"
 ---
 # <a name="message-map-macros-mfc"></a>메시지 맵 매크로(MFC)
 
@@ -108,7 +108,7 @@ END_MESSAGE_MAP()
 
 **헤더:** afxwin.h
 
-## <a name="begintemplatemessagemap"></a>BEGIN_TEMPLATE_MESSAGE_MAP
+## <a name="begin_template_message_map"></a> BEGIN_TEMPLATE_MESSAGE_MAP
 
 단일 템플릿 인수를 포함 하는 클래스 형식의 메시지 맵 정의 시작 합니다.
 

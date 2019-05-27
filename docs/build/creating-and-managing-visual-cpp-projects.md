@@ -1,5 +1,5 @@
 ﻿---
-title: C++-visual Studio 프로젝트
+title: Visual Studio 프로젝트 - C++
 ms.date: 12/12/2018
 helpviewer_keywords:
 - ATL projects, creating
@@ -8,70 +8,82 @@ helpviewer_keywords:
 - Visual Studio C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: 15adae6cb9908f74d62709622ca3302fd35faa46
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: 30d3b13ba4d392cdc5d1c7c611b61066503647a2
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446356"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837059"
 ---
-# <a name="visual-studio-projects---c"></a>Visual Studio 프로젝트-C++
+# <a name="visual-studio-projects---c"></a>Visual Studio 프로젝트 - C++
 
-A *Visual Studio 프로젝트* 프로젝트를 MSBuild 빌드 시스템에 기반 합니다. MSBuild는 Visual Studio 용 네이티브 빌드 시스템 이며 일반적으로 MFC 또는 ATL 라이브러리, COM 구성 요소 및 기타 Windows 전용 프로그램을 사용 하는 데스크톱 응용 프로그램 뿐만 아니라 UWP 앱에 대 한 사용 하는 시스템을 구축 하는 가장 합니다. MSBuild는 Visual studio에 긴밀 하 게 통합 되지만 명령줄에서도 사용할 수 있습니다. 
+*Visual Studio 프로젝트* 프로젝트를 MSBuild 빌드 시스템에 기반합니다. MSBuild는 Visual C++의 네이티브 빌드 시스템으로, 일반적으로 UWP 앱과 MFC 또는 ATL 라이브러리, COM 구성 요소 및 기타 Windows 특정 프로그램을 사용하는 데스크톱 애플리케이션에 사용할 수 있는 최상의 빌드 시스템입니다. MSBuild는 Visual Studio와 긴밀하게 통합되어 있지만, 명령줄에서도 사용할 수도 있습니다. 
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-선택 하 여 C++ 프로젝트를 만들 수 있습니다 **파일 &#124; 새로 만들기 &#124; 프로젝트**, 왼쪽된 창에서 Visual C++를 선택 합니다. 가운데 창에서 프로젝트 템플릿 목록을 표시 합니다. 
+::: moniker range="vs-2019"
+
+**파일** > **새로 만들기** > **프로젝트**를 선택한 다음, **언어**를 C++로 설정하여 C++ 프로젝트를 만들 수 있습니다. 결과 목록에는 **플랫폼** 또는 **프로젝트 형식**을 설정하고 검색 상자에 키워드를 입력하여 필터링할 수 있는 프로젝트 템플릿 목록이 표시됩니다. 
+
+   ![Visual Studio 2019 프로젝트 템플릿](../build/media/vs2019-choose-console-app.png " Visual Studio 2019 새 프로젝트 대화 상자")
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+**파일** > **새로 만들기** > **프로젝트**를 선택한 다음, 왼쪽 창에서 Visual C++를 선택하여 C++ 프로젝트를 만들 수 있습니다. 가운데 창에 프로젝트 템플릿 목록이 표시됩니다.
 
    ![프로젝트 템플릿](../overview/media/vs2017-new-project.png " Visual Studio 2017 새 프로젝트 대화 상자")
 
-Visual Studio에 포함 된 모든 기본 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 C++ 프로젝트 템플릿](reference/visual-cpp-project-types.md)합니다. 사용자 고유의 프로젝트 템플릿을 만들 수 있습니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](/visualstudio/ide/how-to-create-project-templates)합니다.
+::: moniker-end
 
-프로젝트를 만든 후에 저장 되는 [솔루션 탐색기](/visualstudio/ide/solutions-and-projects-in-visual-studio) 창:
+Visual Studio에 포함된 모든 기본 프로젝트 템플릿에 대한 자세한 정보는 [Visual Studio의 C++ 프로젝트 템플릿](reference/visual-cpp-project-types.md)을 참조하세요. 자체 프로젝트 템플릿을 만들 수 있습니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](/visualstudio/ide/how-to-create-project-templates)를 참조하세요.
+
+프로젝트를 만든 후에는 [솔루션 탐색기](/visualstudio/ide/solutions-and-projects-in-visual-studio) 창에 표시됩니다.
 
    ![솔루션 탐색기](media/mathlibrary-solution-explorer-153.png)
 
-새 프로젝트를 만들면 솔루션 파일 (.sln) 만들어집니다. 마우스 오른쪽 단추로 클릭 하 여 솔루션에 추가 프로젝트를 추가할 수 있습니다 **솔루션 탐색기**합니다. 솔루션 파일을 여러 개의 관련된 프로젝트를 갖지만 보다 훨씬 더 하지 하는 경우 빌드 종속성을 조정 하기 위해 사용 됩니다. 모든 컴파일러 옵션이 프로젝트 수준에서 설정 됩니다.
+새 프로젝트를 만들면 솔루션 파일(.sln)도 만들어집니다. **솔루션 탐색기** 안에서 해당 항목을 마우스 오른쪽 단추로 클릭하여 다른 프로젝트를 솔루션에 추가할 수 있습니다. 솔루션 파일은 여러 관련 프로젝트가 있을 때 빌드 종속성을 조정하는 데 사용되며 그 이상의 의미는 없습니다. 모든 컴파일러 옵션은 프로젝트 수준에서 설정됩니다.
 
 ## <a name="add-items"></a>항목 추가
 
-프로젝트를 마우스 오른쪽 단추로 클릭 하 여 프로젝트에 소스 코드 파일, 아이콘 또는 다른 모든 항목을 추가 **솔루션 탐색기** 선택 하 고 **추가 > 새로 만들기** 하거나 **추가 > 기존**합니다.
+**솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 새로 만들기** 또는 **추가 > 기존**을 선택하여 원본 코드 파일, 아이콘 또는 기타 항목을 프로젝트에 추가합니다.
 
-## <a name="add-third-party-libraries"></a>타사 라이브러리를 추가 합니다.
+## <a name="add-third-party-libraries"></a>타사 라이브러리 추가
 
-타사 라이브러리를 추가 하려면 사용 합니다 [vcpkg](vcpkg.md) 패키지 관리자입니다. 모든 Visual Studio 프로젝트에서 참조 하는 경우 해당 라이브러리에 대 한 경로 설정 하는 Visual Studio 통합 단계를 실행 합니다. 
+타사 라이브러리를 추가하려면 [vcpkg](vcpkg.md) 패키지 관리자를 사용합니다. Visual Studio 통합 단계를 실행하여 모든 Visual Studio 프로젝트에서 참조할 때 해당 라이브러리에 대한 경로를 설정합니다. 
 
 ## <a name="set-compiler-options-and-other-build-properties"></a>컴파일러 옵션 및 기타 빌드 속성 설정
 
-프로젝트를 마우스 오른쪽 단추로 프로젝트의 빌드 설정을 구성 하려면 **솔루션 탐색기** 선택한 **속성**합니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](working-with-project-properties.md)합니다.
+프로젝트에 대한 빌드 속성을 구성하려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 자세한 정보는 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)을 참조하세요.
 
 ## <a name="compile-and-run"></a>컴파일 및 실행
 
-를 컴파일하고 새 프로젝트를 실행 하려면 키를 누릅니다 **F5** 누르거나 합니다 *디버그 드롭다운* 주 도구 모음에서 녹색 화살표가 있는 합니다. *구성 드롭다운 목록* 수행할지 여부를 선택 하는 위치를 *디버그* 또는 *릴리스* 빌드 (또는 일부 다른 사용자 지정 구성).
+새 프로젝트를 컴파일하여 실행하려면 **F5**를 누르거나 기본 도구 모음에 녹색 화살표가 있는 *디버그 드롭다운*을 클릭합니다. *구성 드롭다운*에서는 빌드 *디버그* 또는 *릴리스*를 수행할지 선택합니다(또는 기타 사용자 지정 구성).
 
-새 프로젝트를 오류 없이 컴파일합니다. 사용자 고유의 코드를 추가할 때 경우에 따라 오류가 발생할 수도 있습니다 경고를 트리거합니다. 오류가 완료; 빌드 방지 경고 하지 않습니다. 모든 오류 및 경고 나타납니다 오류 목록에서 및 출력 창에 프로젝트를 빌드할 때. 
+새 프로젝트가 오류 없이 컴파일됩니다. 자체 코드를 추가할 때 경우에 따라 오류가 발생하거나 경고가 트리거될 수 있습니다. 오류가 발생하면 빌드가 완료되지 않으나 경고는 그렇지 않습니다. 모든 오류 및 경고는 프로젝트를 빌드할 때 출력 창과 오류 목록에 모두 표시됩니다. 
 
    ![출력 창과 오류 목록](../overview/media/vs2017-output-error-list.png)
 
-오류 목록에서 눌러도 **F1** 해당 설명서 항목으로 이동 하려면 강조 표시 된 오류입니다.
+오류 목록에 강조 표시된 오류에서 **F1**을 눌러 해당 설명서 항목으로 이동할 수 있습니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)<br/>
-프로젝트 설정을 지정 하려면 속성 페이지 및 속성 시트를 사용 하는 방법입니다.
+속성 페이지 및 속성 시트를 사용하여 프로젝트 설정을 지정하는 방법
 
 [빌드 시 참조 라이브러리 및 구성 요소](adding-references-in-visual-cpp-projects.md)<br/>
-프로젝트에 라이브러리를 Dll에 COM 및.NET 구성 요소를 포함 하는 방법.
+프로젝트에 lib, DLL, COM 및 .NET 구성 요소를 포함하는 방법
  
 [프로젝트 출력 파일 구성](how-to-organize-project-output-files-for-builds.md)<br/>
-빌드 프로세스에서 만든 실행 파일의 위치를 사용자 지정 하는 방법입니다.
+빌드 프로세스에서 만든 실행 파일의 위치를 사용자 지정하는 방법
 
 [사용자 지정 빌드 단계 및 빌드 이벤트](understanding-custom-build-steps-and-build-events.md)<br/>
-지정 된 지점에서 빌드 프로세스에 임의의 명령을 추가 하는 방법입니다.
+특정 지점에서 프로세스에 대한 임의의 명령을 추가하는 방법
 
 [기존 코드로 프로젝트 만들기](how-to-create-a-cpp-project-from-existing-code.md)<br/>
-소스 파일의 느슨한 컬렉션에서 새 Visual Studio 프로젝트를 만드는 방법입니다.
+대강의 원본 파일 컬렉션에서 새 Visual Studio 프로젝트를 만드는 방법
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [프로젝트 및 빌드 시스템](projects-and-build-systems-cpp.md)<br>

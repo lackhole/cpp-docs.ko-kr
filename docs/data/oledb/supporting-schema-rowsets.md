@@ -7,32 +7,40 @@ helpviewer_keywords:
 - OLE DB providers, schema rowsets
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-ms.openlocfilehash: b49d53836179d765a72409d28304d7166dcf51d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 1ad1a91e8a79238eee773d92a756b0238e8901d5
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389172"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707499"
 ---
 # <a name="supporting-schema-rowsets"></a>스키마 행 집합 지원
 
-스키마 행 집합에 소비자가 해당 기본 구조 또는 스키마를 알 필요 없이 데이터 저장소에 대 한 정보를 가져올 수 있습니다. 예를 들어, 데이터 저장소를 읽는 것 외에 스키마를 알 수 없기 때문에 사용자 정의 계층을 구성 하는 테이블이 있을 수 있습니다. (또 다른 예로, 시각적 개체 C++ 마법사 소비자에 대 한 접근자를 생성 하려면 스키마 행 집합을 사용 합니다.) 이 작업을 수행 하기 위해 소비자를 허용 하려면 공급자의 세션 개체에 메서드를 노출 합니다 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스입니다. 시각적 개체의 C++ 사용할 응용 프로그램을 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) 구현 하는 클래스 `IDBSchemaRowset`합니다.
+스키마 행 집합을 사용하면 소비자가 기본 구조 또는 스키마를 몰라도 데이터 저장소에 대한 정보를 가져올 수 있습니다. 예를 들어 데이터 저장소의 테이블이 사용자 정의 계층 구조로 구성되었을 수 있으므로 읽지 않으면 스키마를 알 수가 없습니다. 또 다른 예로, Visual C++ 마법사에서는 스키마 행 집합을 사용하여 소비자의 접근자를 생성합니다. 소비자가 이 작업을 수행할 수 있도록, 공급자의 세션 개체는 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스에 메서드를 공개합니다. Visual C++ 애플리케이션에서 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) 클래스를 사용하여 `IDBSchemaRowset`를 구현합니다.
 
-`IDBSchemaRowsetImpl` 다음 메서드를 지원합니다.
+`IDBSchemaRowsetImpl`에서는 다음 메서드를 지원합니다.
 
-- [CheckRestrictions](../../data/oledb/idbschemarowsetimpl-checkrestrictions.md) 스키마 행 집합에 대해 제한의 유효성을 검사 합니다.
+- [CheckRestrictions](../../data/oledb/idbschemarowsetimpl-checkrestrictions.md) - 스키마 행 집합에 대한 제한의 유효성을 검사합니다.
 
-- [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md) 템플릿 매개 변수로 지정 된 개체에 대 한 COM 개체 작성자 함수를 구현 합니다.
+- [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md) - 템플릿 매개 변수에 지정된 개체의 COM 개체 작성자 함수를 구현합니다.
 
-- [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) 특정 스키마 행 집합에서 지원 되는 제한을 지정 합니다.
+- [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) - 특정 스키마 행 집합에서 지원되는 제한을 지정합니다.
 
-- [Idbschemarowset:: Getrowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) (인터페이스에서 상속) 스키마 행 집합을 반환 합니다.
+- [IDBSchemaRowset::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) - 스키마 행 집합을 반환합니다(인터페이스에서 상속됨).
 
-- [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) 스키마 행 집합 목록을 액세스할 반환 `IDBSchemaRowsetImpl::GetRowset` (인터페이스에서 상속).
+- [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) - `IDBSchemaRowsetImpl::GetRowset`에서 액세스할 수 있는 스키마 행 집합 목록을 반환합니다(인터페이스에서 상속됨).
 
 ## <a name="atl-ole-db-provider-wizard-support"></a>ATL OLE DB 공급자 마법사 지원
 
-합니다 **ATL OLE DB 공급자 마법사** 세션 헤더 파일에 세 개의 스키마 클래스를 만듭니다.
+::: moniker range="vs-2019"
+
+Visual Studio 2019 이상에서는 ATL OLE DB 공급자 마법사를 사용할 수 없습니다.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+**ATL OLE DB 공급자 마법사**에서는 세션 헤더 파일에 다음 세 개의 스키마 클래스를 만듭니다.
 
 - **C**<em>ShortName</em>**SessionTRSchemaRowset**
 
@@ -40,27 +48,29 @@ ms.locfileid: "62389172"
 
 - **C**<em>ShortName</em>**SessionPTSchemaRowset**
 
-이러한 클래스는 스키마 정보에 대 한 소비자 요청에 응답 OLE DB 사양에 이러한 세 개의 스키마 행 집합 지원 될 수는 note:
+이 클래스는 스키마 정보에 대한 소비자 요청에 응답합니다. OLE DB 사양에 따라 다음 세 개의 스키마 행 집합을 지원해야 합니다.
 
-- **C**<em>ShortName</em>**SessionTRSchemaRowset** 테이블 정보 (DBSCHEMA_TABLES 스키마 행 집합)에 대 한 요청을 처리 합니다.
+- **C**<em>ShortName</em>**SessionTRSchemaRowset** - 테이블 정보(DBSCHEMA_TABLES 스키마 행 집합) 요청을 처리합니다.
 
-- **C**<em>ShortName</em>**SessionColSchemaRowset** 열 정보 (DBSCHEMA_COLUMNS 스키마 행 집합)에 대 한 요청을 처리 합니다. 마법사는 DOS 공급자에 대 한 스키마 정보를 반환 하는 이러한 클래스에 대 한 샘플 구현을 제공 합니다.
+- **C**<em>ShortName</em>**SessionColSchemaRowset** - 열 정보(DBSCHEMA_COLUMNS 스키마 행 집합) 요청을 처리합니다. 마법사는 DOS 공급자의 스키마 정보를 반환하는 이러한 클래스의 샘플 구현을 제공합니다.
 
-- **C**<em>ShortName</em>**SessionPTSchemaRowset** 공급자 유형 (DBSCHEMA_PROVIDER_TYPES 스키마 행 집합)에 대 한 스키마 정보에 대 한 요청을 처리 합니다. 마법사에서 제공 하는 기본 구현은 S_OK를 반환 합니다.
+- **C**<em>ShortName</em>**SessionPTSchemaRowset** - 공급자 유형(DBSCHEMA_PROVIDER_TYPES 스키마 행 집합)의 스키마 정보 요청을 처리합니다. 마법사에서 제공하는 기본 구현은 S_OK를 반환합니다.
 
-이러한 클래스를 공급자에 게 적절 한 스키마 정보를 처리를 사용자 지정할 수 있습니다.
+이러한 클래스를 사용자 지정하여 해당 공급자에 적합한 스키마 정보를 처리할 수 있습니다.
 
-- **C**<em>ShortName</em>**SessionTRSchemaRowset**, 카탈로그, 테이블 및 설명 필드를 작성 해야 (`trData.m_szType`, `trData.m_szTable`, 및 `trData.m_szDesc`). 마법사에서 생성 된 예제는 하나의 행 (테이블)를 사용합니다. 다른 공급자는 둘 이상의 테이블을 반환할 수 있습니다.
+- **C**<em>ShortName</em>**SessionTRSchemaRowset**에서 카탈로그, 테이블 및 설명 필드(`trData.m_szType`, `trData.m_szTable` 및 `trData.m_szDesc`)에 정보를 입력해야 합니다. 마법사 생성 예제에서는 하나의 행(테이블)만 사용합니다. 다른 공급자는 둘 이상의 테이블을 반환할 수 있습니다.
 
-- **C**<em>ShortName</em>**SessionColSchemaRowset**, 테이블의 이름을 전달는 `DBID`합니다.
+- **C**<em>ShortName</em>**SessionColSchemaRowset**에서 테이블 이름을 `DBID`로 전달합니다.
+
+::: moniker-end
 
 ## <a name="setting-restrictions"></a>제한 설정
 
-스키마 행 집합 지원에서 중요 한 개념은 설정 하는 사용 하 여 작업을 수행할 있습니다 `SetRestrictions`합니다. 제한을 통해 소비자는 일치하는 행만 페치할 수 있습니다. 예를 들어 "MyTable" 테이블의 모든 열을 찾을 수 있습니다. 제한은 선택 사항이므로 지원되는 제한이 없는 경우(기본값) 항상 모든 데이터가 반환됩니다. 에서는 제한 사항을 지원 하는 공급자의 예제를 참조 합니다 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플입니다.
+스키마 행 집합 지원에서 중요한 개념은 제한 설정으로, `SetRestrictions`를 사용하여 수행합니다. 제한을 통해 소비자는 일치하는 행만 페치할 수 있습니다. 예를 들어 "MyTable" 테이블의 모든 열을 찾을 수 있습니다. 제한은 선택 사항이므로 지원되는 제한이 없는 경우(기본값) 항상 모든 데이터가 반환됩니다. 제한을 지원하는 공급자 예제는 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플을 참조하세요.
 
 ## <a name="setting-up-the-schema-map"></a>스키마 맵 설정
 
-UpdatePV에서 Session.h에서이 이와 같은 스키마 맵을 설정 합니다.
+UpdatePV의 Session.h에서 다음과 같은 스키마 맵을 설정합니다.
 
 ```cpp
 BEGIN_SCHEMA_MAP(CUpdateSession)
@@ -70,9 +80,9 @@ BEGIN_SCHEMA_MAP(CUpdateSession)
 END_SCHEMA_MAP()
 ```
 
-지원 하기 위해 `IDBSchemaRowset`, DBSCHEMA_TABLES 고 DBSCHEMA_COLUMNS, DBSCHEMA_PROVIDER_TYPES 지원 해야 합니다. 판단에 따라 추가 스키마 행 집합을 추가할 수 있습니다.
+`IDBSchemaRowset`를 지원하려면 DBSCHEMA_TABLES, DBSCHEMA_COLUMNS, DBSCHEMA_PROVIDER_TYPES를 지원해야 합니다. 임의로 스키마 행 집합을 더 추가할 수 있습니다.
 
-사용 하 여 스키마 행 집합 클래스를 선언를 `Execute` 메서드와 같은 `CUpdateSessionTRSchemaRowset` 에서 `UpdatePV`:
+`Execute` 메서드를 사용하여 `UpdatePV`의 `CUpdateSessionTRSchemaRowset`와 같은 스키마 행 집합 클래스를 선언합니다.
 
 ```cpp
 class CUpdateSessionTRSchemaRowset :
@@ -84,33 +94,33 @@ class CUpdateSessionTRSchemaRowset :
                     ULONG cRestrictions, const VARIANT* rgRestrictions)
 ```
 
-`CUpdateSession` 상속 `IDBSchemaRowsetImpl`모든 제한 메서드를 처리 하므로, 합니다. 사용 하 여 `CSchemaRowsetImpl`합니다 (위의 스키마 구조의 나열 됨) 하는 세 개의 자식 클래스를 선언: `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, 및 `CUpdateSessionPTSchemaRowset`합니다. 각 자식 클래스에는 `Execute` 해당 집합이 제한 (검색 조건)를 처리 하는 메서드. 각 `Execute` 메서드 값을 비교 합니다 *cRestrictions* 하 고 *rgRestrictions* 매개 변수입니다. 이러한 매개 변수 설명을 참조 [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md)합니다.
+`CUpdateSession`은 `IDBSchemaRowsetImpl`에서 상속받으므로 모든 제한 처리 메서드가 있습니다. `CSchemaRowsetImpl`을 사용하여 위의 스키마 맵에 나열된 세 개의 자식 클래스(`CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, `CUpdateSessionPTSchemaRowset`)를 선언합니다. 각 자식 클래스에는 해당 제한 집합(검색 조건)을 처리하는 `Execute` 메서드가 있습니다. 각 `Execute` 메서드는 *cRestrictions* 및 *rgRestrictions* 매개 변수의 값을 비교합니다. 이러한 매개 변수에 대한 자세한 내용은 [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md)를 참조하세요.
 
-특정 스키마 행 집합으로 해당 제한 사항에 대 한 자세한 내용은의 스키마 행 집합 Guid 표를 참조에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 **OLE DB Programmer's Reference** Windows sdk .
+특정 스키마 행 집합에 해당하는 제한에 대한 자세한 내용은 Windows SDK의 **OLE DB 프로그래머 참조**에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85))의 스키마 행 집합 GUID 표를 참조하세요.
 
-예를 들어, TABLE_NAME 제한 DBSCHEMA_TABLES를 지원 하 하는 경우 있습니다 다음을 수행 합니다.
+예를 들어 DBSCHEMA_TABLES의 TABLE_NAME 제한을 지원하는 경우 다음을 수행합니다.
 
-먼저 DBSCHEMA_TABLES를 조회 하 고 순서 대로 4 개의 제한 지원함을 참조 하세요.
+먼저 DBSCHEMA_TABLES를 조회하고 네 가지 제한을 순서대로 지원함을 확인합니다.
 
 |스키마 행 집합 제한|제한 값|
 |-------------------------------|-----------------------|
-|TABLE_CATALOG|0x1 (이진 1)|
-|TABLE_SCHEMA|0x2 (이진 10)|
-|TABLE_NAME|0x4 (이진 100)|
-|TABLE_TYPE|0x8 (이진 1000)|
+|TABLE_CATALOG|0x1(이진 1)|
+|TABLE_SCHEMA|0x2(이진 10)|
+|TABLE_NAME|0x4(이진 100)|
+|TABLE_TYPE|0x8(이진 1000)|
 
-다음으로, 각 제한에 대해 하나의 비트가 있습니다. 0x4 TABLE_NAME 지원 하려고 하기 때문에 반환 된 `rgRestrictions` 요소입니다. TABLE_CATALOG 및 TABLE_NAME, 지원 0x5 (이진 101)를 반환 합니다.
+다음으로, 제한마다 1비트가 있습니다. TABLE_NAME만 지원하려고 하기 때문에 `rgRestrictions` 요소에 0x4를 반환합니다. TABLE_CATALOG 및 TABLE_NAME을 지원하는 경우 0x5(이진 101)를 반환합니다.
 
-기본적으로 구현 (제한이 지원 하지 않습니다) 모든 요청에 대해 0을 반환 합니다. UpdatePV은 예에서는 제한 사항을 지원 하는 공급자입니다.
+기본적으로, 이 구현에서는 모든 요청에 대해 0(제한 지원 안 함)을 반환합니다. UpdatePV는 제한을 지원하는 공급자 예제입니다.
 
 ### <a name="example"></a>예제
 
-이 코드에서 수행 되는 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플입니다. `UpdatePv` 세 가지 필수 스키마 행 집합을 지원합니다. DBSCHEMA_TABLES DBSCHEMA_COLUMNS, 하며 DBSCHEMA_PROVIDER_TYPES 합니다. 공급자에서 지 원하는 스키마를 구현 하는 방법의 예를 들어,이 항목에서는 안내 DBSCHEMA_TABLE 행 집합을 구현 합니다.
+이 코드는 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플에서 가져온 것입니다. `UpdatePv`에서는 세 가지 필수 스키마 행 집합인 DBSCHEMA_TABLES, DBSCHEMA_COLUMNS, DBSCHEMA_PROVIDER_TYPES를 지원합니다. 공급자에서 스키마 지원을 구현하는 방법의 예제로, 이 항목에서는 DBSCHEMA_TABLE 행 집합을 구현하는 과정을 안내합니다.
 
 > [!NOTE]
-> 샘플 코드입니다; 여기에 표시 된 것과 다를 수 있습니다. 샘플 코드를 좀 더 최신 버전으로 간주 해야 합니다.
+> 샘플 코드가 여기에 표시된 것과 다를 수도 있습니다. 샘플 코드가 더 최신 버전입니다.
 
-첫 번째 단계에서 지 원하는 스키마 추가 되는 제한을 지원 하려는 결정 하는 것입니다. 정의 대 한 OLE DB 사양에 표시 되는 제한을 스키마 행 집합 수를 확인 하려면 `IDBSchemaRowset`합니다. 기본 정의 다음 스키마 행 집합 이름, 수가 제한 사항 및 제한 열을 포함 하는 표가 표시 합니다. 지원 제한 사항 및 제한 열 수가 적어 하려는 스키마 행 집합을 선택 합니다. 예를 들어 DBSCHEMA_TABLES 네 가지 제한 사항 (TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME 및 TABLE_TYPE)를 지원합니다.
+스키마 지원을 추가하는 첫 번째 단계는 지원할 제한을 결정하는 것입니다. 해당 스키마 행 집합에 사용할 수 있는 제한을 확인하려면 OLE DB 사양에서 `IDBSchemaRowset`의 정의를 살펴봅니다. 기본 정의 다음에 스키마 행 집합 이름, 제한 수, 제한 열을 포함하는 표가 표시됩니다. 지원하려는 스키마 행 집합을 선택하고 제한 수와 제한 열을 적어둡니다. 예를 들어 DBSCHEMA_TABLES는 네 가지 제한(TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE)을 지원합니다.
 
 ```cpp
 void SetRestrictions(ULONG cRestrictions, GUID* rguidSchema,
@@ -129,25 +139,25 @@ void SetRestrictions(ULONG cRestrictions, GUID* rguidSchema,
 }
 ```
 
-잠시 각 제한 열을 나타냅니다. 지원 제한 하려는 경우 (즉, 쿼리할 수 있습니다 하), 해당 비트를 1로 설정 합니다. 제한을 지원 하지 않으려는 경우 해당 비트를 0으로 설정 합니다. 위의 코드 줄에서 `UpdatePV` DBSCHEMA_TABLES 행 집합에서 TABLE_NAME 및 TABLE_TYPE 제한을 지원 합니다. 이 세 번째 (비트 마스크 100)와 네 번째 (비트 마스크 1000) 제한 합니다. 에 대 한 비트 마스크 따라서 `UpdatePv` 1100 (또는 0x0C):
+1비트가 각 제한 열을 나타냅니다. 제한을 지원하려면(즉, 제한으로 쿼리할 수 있음) 해당 비트를 1로 설정합니다. 제한을 지원하지 않으려면 해당 비트를 0으로 설정합니다. 위의 코드 줄에서는 `UpdatePV`가 DBSCHEMA_TABLES 행 집합에서 TABLE_NAME 및 TABLE_TYPE 제한을 지원합니다. 세 번째(비트 마스크 100) 제한과 네 번째(비트 마스크 1000) 제한입니다. 따라서 `UpdatePv`의 비트 마스크는 1100(또는 0x0C)입니다.
 
 ```cpp
 if (InlineIsEqualGUID(rguidSchema[l], DBSCHEMA_TABLES))
     rgRestrictions[l] = 0x0C;
 ```
 
-다음 `Execute` 함수는 일반 행 집합의 경우와 비슷합니다. 세 가지 인수가 있는: *pcRowsAffected*를 *cRestrictions*, 및 *rgRestrictions*합니다. 합니다 *pcRowsAffected* 변수가 출력 매개 변수 공급자가 스키마 행 집합에서의 행 수를 반환할 수 있습니다. 합니다 *cRestrictions* 매개 변수는 공급자에는 소비자가 전달한 제한 수를 포함 하는 입력된 매개 변수입니다. 합니다 *rgRestrictions* 매개 변수는 제한 값을 보유 하는 VARIANT 값의 배열입니다.
+다음 `Execute` 함수는 일반 행 집합의 함수와 비슷합니다. *pcRowsAffected*, *cRestrictions*, *rgRestrictions* 등 세 개의 인수가 있습니다. *pcRowsAffected* 변수는 공급자가 스키마 행 집합의 행 수를 반환할 수 있는 출력 매개 변수입니다. *cRestrictions* 매개 변수는 소비자가 공급자에 전달하는 제한 수를 보유하는 입력 매개 변수입니다. *rgRestrictions* 매개 변수는 제한 값을 보유하는 VARIANT 값 배열입니다.
 
 ```cpp
 HRESULT Execute(DBROWCOUNT* pcRowsAffected, ULONG cRestrictions,
                 const VARIANT* rgRestrictions)
 ```
 
-합니다 *cRestrictions* 변수 공급자를 지원 하는지 여부에 관계 없이 스키마 행 집합에 대 한 제한의 총 수를 기반으로 합니다. UpdatePv 두 가지 제한은 (세 번째 및 네 번째)를 지원 하므로이 코드 검색을 *cRestrictions* 값 보다 크거나 같은 세 가지입니다.
+*cRestrictions* 변수는 공급자의 지원 여부에 관계없이 스키마 행 집합에 대한 총 제한 수를 기반으로 합니다. UpdatePv가 두 개의 제한(세 번째와 네 번째)을 지원하므로, 이 코드에서는 3보다 크거나 같은 *cRestrictions* 값만 찾습니다.
 
-TABLE_NAME 제한에 대 한 값에 저장 됩니다 *rgRestrictions [2]* (첫 번째 열에서 세 번째 제한 역시 2). 제한이 없습니다 VT_EMPTY 실제로 지원 하도록 확인 합니다. 나타내는 VT_NULL 값을 vt_empty로 같지 참고 합니다. VT_NULL 유효한 제한 값을 지정 합니다.
+TABLE_NAME 제한의 값은 *rgRestrictions[2]* 에 저장됩니다(0부터 시작하는 배열의 세 번째 제한은 2임). 제한이 실제로 이 제한을 지원하는 VT_EMPTY가 아님을 확인합니다. VT_NULL은 VT_EMPTY와 다릅니다. VT_NULL은 유효한 제한 값을 지정합니다.
 
-`UpdatePv` 정의 된 테이블 이름의 텍스트 파일 하는 정규화 된 경로 이름입니다. 제한 값을 추출 하 고 파일에 실제로 존재 하는지 확인 하려면 파일을 열려고 시도 합니다. 파일이 없는 경우 S_OK를 반환 합니다. 약간 이상 해 보이지만이 이지만 코드는 소비자를 알리는 실제로 지정 된 이름으로 지원 되는 테이블이 되었습니다. S_OK가 반환 되 면 코드가 올바르게 실행을 의미 합니다.
+테이블 이름의 `UpdatePv` 정의는 텍스트 파일의 정규화된 경로 이름입니다. 제한 값을 추출하고 파일 열기를 시도하여 파일이 실제로 존재하는지 확인합니다. 파일이 없으면 S_OK를 반환합니다. 약간 역방향으로 진행하는 것처럼 보일 수도 있지만, 코드에서 실제로 소비자에게 알리는 내용은 지정한 이름으로 지원되는 테이블이 없다는 것입니다. S_OK가 반환되면 코드가 올바르게 실행된 것입니다.
 
 ```cpp
 USES_CONVERSION;
@@ -184,7 +194,7 @@ if (cRestrictions >= 3 && rgRestrictions[2].vt != VT_EMPTY)
 }
 ```
 
-네 번째 제한 지원 (TABLE_TYPE)는 세 번째 제한 비슷합니다. 값을 VT_EMPTY 없습니다 확인 합니다. 이 제한은 테이블 형식에 테이블 반환 합니다. 확인 된 DBSCHEMA_TABLES에 대 한 유효한 값을 결정할 **부록 B** 의 **OLE DB Programmer's Reference** 테이블 행 집합 섹션에서.
+네 번째 제한(TABLE_TYPE) 지원은 세 번째 제한과 비슷합니다. 값이 VT_EMPTY가 아님을 확인합니다. 이 제한은 테이블 형식인 TABLE만 반환합니다. DBSCHEMA_TABLES에 유효한 값을 확인하려면 **OLE DB 프로그래머 참조**의 **부록 B**에서 TABLES 행 집합 섹션을 살펴봅니다.
 
 ```cpp
 // TABLE_TYPE restriction:
@@ -203,7 +213,7 @@ if (cRestrictions >=4 && rgRestrictions[3].vt != VT_EMPTY)
 }
 ```
 
-이 실제로 행 집합에 대 한 행 항목을 만듭니다. 변수의 `trData` 에 해당 `CTABLESRow`, OLE DB 공급자 템플릿에 정의 된 구조체입니다. `CTABLESRow` 테이블 행 집합 정의 해당 **부록 B** OLE DB 사양입니다. 한 번에 하나의 테이블만 지원할 수 있기 때문에 추가할 하나의 행을 하나만 있습니다.
+여기서 실제로 행 집합의 행 항목을 만듭니다. `trData` 변수는 OLE DB 공급자 템플릿에 정의된 구조체인 `CTABLESRow`에 해당합니다. `CTABLESRow`는 OLE DB 사양의 **부록 B**에 있는 TABLES 행 집합 정의에 해당합니다. 한 번에 하나의 테이블만 지원할 수 있기 때문에 추가할 행은 하나뿐입니다.
 
 ```cpp
 // Bring over the data:
@@ -214,7 +224,7 @@ wcspy_s(trData.m_szDesc, OLESTR("The Directory Table"), 19);
 wcsncpy_s(trData.m_szTable, T2OLE(szFile), _TRUNCATE());
 ```
 
-`UpdatePV` 세 개의 열만 설정합니다. TABLE_NAME, TABLE_TYPE, 및 설명 합니다. 구현 하는 경우이 정보가 필요 하므로 정보를 반환할 열의 기록해 `GetDBStatus`:
+`UpdatePV`는 TABLE_NAME, TABLE_TYPE, DESCRIPTION 등 세 개의 열만 설정합니다. 정보를 반환하는 열을 적어둡니다. 이 정보는 `GetDBStatus`를 구현할 때 필요합니다.
 
 ```cpp
     _ATLTRY
@@ -232,7 +242,7 @@ wcsncpy_s(trData.m_szTable, T2OLE(szFile), _TRUNCATE());
 }
 ```
 
-`GetDBStatus` 함수는 스키마 행 집합의 올바른 작동에 중요 합니다. 테이블 행 집합의 모든 열에 대 한 데이터를 반환 하지 않습니다, 때문에 대 한 데이터를 반환 하 고 하지 않을 열을 지정 해야 합니다.
+`GetDBStatus` 함수는 스키마 행 집합이 올바르게 작동하는 데 중요합니다. TABLES 행 집합에 있는 모든 열의 데이터를 반환하지는 않으므로, 데이터를 반환하는 열과 반환하지 않는 열을 지정해야 합니다.
 
 ```cpp
 virtual DBSTATUS GetDBStatus(CSimpleRow* , ATLCOLUMNINFO* pColInfo)
@@ -253,14 +263,14 @@ virtual DBSTATUS GetDBStatus(CSimpleRow* , ATLCOLUMNINFO* pColInfo)
 }
 ```
 
-때문에 `Execute` TABLES 행 집합에서 TABLE_NAME, TABLE_TYPE, 및 설명 필드에 대 한 데이터를 반환 하는 함수, 볼 수 있습니다 **부록 B** OLE DB 사양의 (세어 위에서) 확인 서 수 3, 4 및 6 일입니다. 각 열에 대해 DBSTATUS_S_OK를 반환 합니다. 다른 모든 열에는 DBSTATUS_S_ISNULL을 반환 합니다. 소비자 사용자가 반환한 값이 NULL 또는 다른 요소는 것을 알 수 없기 때문에 것이 상태를 반환 해야 합니다. NULL 없습니다 빈 같음 참고 다시 합니다.
+`Execute` 함수는 TABLES 행 집합에서 TABLE_NAME, TABLE_TYPE 및 DESCRIPTION 필드의 데이터를 반환하기 때문에 OLE DB 사양의 **부록 B**를 살펴보고 위에서 아래로 개수를 계산하여 서수 3, 4, 6인지 확인할 수 있습니다. 해당 열에 대해 각각 DBSTATUS_S_OK를 반환합니다. 다른 모든 열에 대해서는 DBSTATUS_S_ISNULL을 반환합니다. 소비자가 반환된 값이 NULL 또는 다른 값인지 이해하지 못할 수 있기 때문에 이 상태를 반환하는 것이 중요합니다. 다시 강조하지만, NULL은 빈 값이 아닙니다.
 
-OLE DB 스키마 행 집합 인터페이스에 대 한 자세한 내용은 참조는 [IDBSchemaRowset](../../data/oledb/idbschemarowsetimpl-class.md) 인터페이스는 **OLE DB Programmer's Reference**합니다.
+OLE DB 스키마 행 집합 인터페이스에 대한 자세한 내용은 **OLE DB 프로그래머 참조**에서 [IDBSchemaRowset](../../data/oledb/idbschemarowsetimpl-class.md) 인터페이스를 참조하세요.
 
-소비자가 사용 하 여 방법에 대 한 자세한 `IDBSchemaRowset` 메서드를 참조 하세요 [스키마 행 집합을 사용 하 여 메타 데이터 구하기](../../data/oledb/obtaining-metadata-with-schema-rowsets.md)합니다.
+소비자가 `IDBSchemaRowset` 메서드를 사용할 수 있는 방법에 대한 자세한 내용은 [스키마 행 집합을 사용하여 메타데이터 구하기](../../data/oledb/obtaining-metadata-with-schema-rowsets.md)를 참조하세요.
 
-스키마 행 집합을 지 원하는 공급자의 예제를 참조 합니다 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플입니다.
+스키마 행 집합을 지원하는 공급자 예제는 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [고급 공급자 기술](../../data/oledb/advanced-provider-techniques.md)

@@ -1,36 +1,36 @@
 ---
 title: 사용할 접근자 형식 결정
-ms.date: 10/24/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - rowsets [C++], data types
 - accessors [C++], types
 ms.assetid: 22483dd2-f4e0-4dcb-8e4d-cd43a9c1a3db
-ms.openlocfilehash: 98234852d0577e581135980d6b8e525aeead5dc2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: f32b3375a517c8716324a2d5b35ec16826605f8e
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175371"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525086"
 ---
 # <a name="determining-which-type-of-accessor-to-use"></a>사용할 접근자 형식 결정
 
-컴파일 타임 또는 런타임에 행 집합의 데이터 형식을 확인할 수 있습니다.
+컴파일 시간 또는 런타임에 행 집합의 데이터 형식을 확인할 수 있습니다.
 
-정적 접근자를 사용 하 여 컴파일 시간에 데이터 형식을 결정 해야 할 경우 (같은 `CAccessor`). 수동 또는 사용 하 여 데이터 형식을 확인할 수 있습니다 합니다 **ATL OLE DB 소비자 마법사**합니다.
+컴파일 시간에 데이터 형식을 확인해야 하는 경우 정적 접근자(예: `CAccessor`)를 사용합니다. 
 
-런타임 시 데이터 형식을 결정 해야 할 경우 동적 사용 (`CDynamicAccessor` 또는 하위) 또는 수동 접근자 (`CManualAccessor`). 이러한 경우에 호출할 수 있습니다 `GetColumnInfo` 형식을 결정할 수 있습니다 열 바인딩 정보를 반환 하는 행 집합에 있습니다.
+런타임에 데이터 형식을 확인해야 하는 경우 동적 접근자(`CDynamicAccessor` 또는 자식) 또는 수동 접근자(`CManualAccessor`)를 사용합니다. 이러한 경우, 행 집합에서 `GetColumnInfo`를 호출하여 열 바인딩 정보를 반환할 수 있으며, 이 정보를 통해 형식을 확인할 수 있습니다.
 
-다음 표에서 소비자 템플릿에서 제공 하는 접근자의 목록을 표시 합니다. 각 접근자에는 각각 장단점이 있습니다. 상황에 따라 하나의 접근자 유형이 요구에 맞게 해야 합니다.
+다음 표에는 소비자 템플릿에서 제공되는 접근자 형식이 나와 있습니다. 접근자마다 장단점이 있습니다. 상황에 따라 요구에 적합한 접근자 형식이 다릅니다.
 
 |접근자 클래스|바인딩|매개 변수|주석|
 |--------------------|-------------|---------------|-------------|
-|`CAccessor`|COLUMN_ENTRY 매크로 사용 하 여 사용자 레코드를 만듭니다. 매크로 접근자에 해당 레코드의 데이터 멤버를 바인딩합니다. 행 집합을 만들면 열 바인딩되지 않은 일 수 없습니다.|예, param_map이 있습니다 매크로 항목을 사용 하 여 합니다. 바인딩되면 매개 변수 바인딩을 해제할 수 없습니다.|약간의 코드가 가장 빠른 접근자입니다.|
-|`CDynamicAccessor`|자동.|아니요.|행 집합의 데이터 유형을 알 수 없는 경우에 유용 합니다.|
-|`CDynamicParameterAccessor`|자동으로 수 있지만 [재정의](../../data/oledb/overriding-a-dynamic-accessor.md)합니다.|예, 공급자가 지 원하는 경우 `ICommandWithParameters`합니다. 매개 변수는 자동으로 바인딩됩니다.|보다 느린 `CDynamicAccessor` 제네릭 프로시저 호출에 유용 합니다.|
-|`CDynamicStringAccessor[A,W]`|자동.|아니요.|문자열 데이터를 데이터 저장소에서 액세스 하는 데이터를 검색 합니다.|
-|`CManualAccessor`|사용 하 여 수동 `AddBindEntry`합니다.|사용 하 여 수동으로 `AddParameterEntry`합니다.|빠른; 한 번만 매개 변수 및 열 바인딩됩니다. 사용 하 여 데이터의 형식을 결정 합니다. (참조 [DBVIEWER](https://github.com/Microsoft/VCSamples) 예제에 대 한 샘플.) 보다 더 많은 코드가 필요 `CDynamicAccessor` 또는 `CAccessor`합니다. 같은 OLE DB를 직접 호출 하는 것이 더 합니다.|
-|`CXMLAccessor`|자동.|아니요.|문자열 데이터로 데이터 저장소에서 액세스 하는 데이터를 검색 하 고 해당 데이터와 XML 태그의 형식을 지정 합니다.|
+|`CAccessor`|COLUMN_ENTRY 매크로를 사용하여 사용자 레코드를 만듭니다. 이 매크로는 해당 레코드의 데이터 멤버를 접근자에 바인딩합니다. 행 집합을 만들 때는 열 바인딩을 해제할 수 없습니다.|예(PARAM_MAP 매크로 항목 사용). 바인딩한 후에는 매개 변수 바인딩을 해제할 수 없습니다.|코드 양이 적기 때문에 가장 빠른 접근자입니다.|
+|`CDynamicAccessor`|자동.|아니요.|행 집합의 데이터 형식을 알 수 없는 경우에 유용합니다.|
+|`CDynamicParameterAccessor`|자동이지만, [재정의](../../data/oledb/overriding-a-dynamic-accessor.md)할 수 있습니다.|예(공급자가 `ICommandWithParameters`를 지원하는 경우). 매개 변수가 자동으로 바인딩됩니다.|`CDynamicAccessor`보다 느리지만, 제네릭 저장 프로시저를 호출하는 데 유용합니다.|
+|`CDynamicStringAccessor[A,W]`|자동.|아니요.|데이터 저장소에서 액세스된 데이터를 문자열 데이터로 검색합니다.|
+|`CManualAccessor`|수동(`AddBindEntry` 사용).|수동(`AddParameterEntry` 사용).|빠르고, 매개 변수와 열이 한 번만 바인딩됩니다. 사용할 데이터 형식을 직접 결정합니다. 예제는 [DBVIEWER](https://github.com/Microsoft/VCSamples) 샘플을 참조하세요. `CDynamicAccessor` 또는 `CAccessor`보다 많은 코드가 필요합니다. OLE DB를 직접 호출하는 것과 같습니다.|
+|`CXMLAccessor`|자동.|아니요.|데이터 저장소에서 액세스된 데이터를 문자열 데이터로 검색하고, XML 태그 데이터로 서식을 지정합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [접근자 사용](../../data/oledb/using-accessors.md)

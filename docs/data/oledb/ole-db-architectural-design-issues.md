@@ -1,43 +1,46 @@
 ---
 title: OLE DB 아키텍처 설계 문제
-ms.date: 10/22/2018
+ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB, application design considerations
 ms.assetid: 8caa7d99-d2bb-42c9-8884-74f228bb6ecc
-ms.openlocfilehash: 2f0a7a114c671e17d8f95280ab00ed93570e8609
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: ef2837ea80c61f074cf567ee1fe61fa2cfa0ae73
+ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395562"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525312"
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB 아키텍처 설계 문제
 
-OLE DB 응용 프로그램을 시작 하기 전에 다음 사항을 고려 하십시오.
+> [!NOTE]
+> Visual Studio 2019 이상에서는 ATL OLE DB 소비자 마법사를 사용할 수 없습니다. 수동으로 기능을 추가할 수는 있습니다. 자세한 내용은 [마법사를 사용하지 않고 소비자 만들기](creating-a-consumer-without-using-a-wizard.md)를 참조하세요.
 
-## <a name="what-programming-implementation-will-you-use-to-write-your-ole-db-application"></a>OLE DB 응용 프로그램을 작성 하는 프로그래밍 구현을 사용할 것인가?
+OLE DB 애플리케이션을 시작하기 전에 다음 문제를 고려합니다.
 
-Microsoft는이 작업을 수행 하는 몇 가지 라이브러리를 제공 합니다: OLE DB 템플릿 라이브러리를, OLE DB 특성 및 OLE DB SDK에서 원시 OLE DB 인터페이스입니다. 또한 마법사가 프로그램을 작성 하는 데 도움이 되도록 합니다. 이러한 구현에 설명 되어 있습니다 [OLE DB 템플릿, 특성 및 기타 구현](../../data/oledb/ole-db-templates-attributes-and-other-implementations.md)합니다.
+## <a name="what-programming-implementation-will-you-use-to-write-your-ole-db-application"></a>OLE DB 애플리케이션을 작성하는 데 사용할 프로그래밍 구현
 
-## <a name="do-you-need-to-write-your-own-provider"></a>고유한 공급자를 작성 해야 하나요?
+Microsoft에서는 OLE DB 템플릿 라이브러리, OLE DB 특성, OLE DB SDK의 원시 OLE DB 인터페이스 등 이 작업을 수행하는 여러 라이브러리를 제공합니다. 프로그램 작성을 도와주는 마법사도 있습니다. 이러한 구현에 대해서는 [OLE DB 템플릿, 특성 및 기타 구현](../../data/oledb/ole-db-templates-attributes-and-other-implementations.md)에서 설명합니다.
 
-대부분의 개발자는 고유한 공급자를 작성할 필요가 없습니다. Microsoft는 여러 공급자를 제공합니다. 데이터 연결을 만들 때마다 (예를 들어 추가한 경우 소비자를 사용 하 여 프로젝트를 **ATL OLE DB 소비자 마법사**), **데이터 연결 속성** 대화 상자에 사용 가능한 모든 공급자 나열 시스템에 등록합니다. 사용자 고유의 데이터 저장소 및 데이터 액세스 응용 프로그램에 대 한 적절 한 경우 공급자 중 하나는 가장 쉬운 방법은 다음 중 하나를 사용 하 합니다. 그러나 이러한 범주 중 하나를 데이터 저장소에 맞지 않으면 고유한 공급자를 만들 필요가 있습니다. 공급자를 만드는 방법에 대 한 자세한 내용은 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)합니다.
+## <a name="do-you-need-to-write-your-own-provider"></a>고유한 공급자를 작성해야 하는지 여부
 
-## <a name="what-level-of-support-do-you-need-for-your-consumer"></a>소비자에 대 한 어떤 수준의 지원이 필요 한가요?
+대부분의 개발자는 고유한 공급자를 작성할 필요가 없습니다. Microsoft에서 여러 공급자를 제공합니다. 데이터 연결을 만들 때마다(예: **ATL OLE DB 소비자 마법사**를 사용하여 프로젝트에 소비자를 추가하는 경우) **데이터 연결 속성** 대화 상자에 시스템에 등록된 사용 가능한 모든 공급자가 나열됩니다. 공급자 중 하나가 고유한 데이터 저장소 및 데이터 액세스 애플리케이션에 적합한 경우 해당 공급자를 사용하는 것이 가장 편리합니다. 그러나 데이터 저장소가 이러한 범주 중 하나에 맞지 않는 경우 고유한 공급자를 만들어야 합니다. 공급자를 만드는 방법에 대한 자세한 내용은 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)을 참조하세요.
 
-소비자가 기본; 수 있습니다. 하지만 다른 복잡할 수 있습니다. OLE DB 개체의 기능 속성으로 지정 됩니다. 사용 하는 경우는 **ATL OLE DB 소비자 마법사** 소비자를 만드는 또는 **데이터베이스 공급자 마법사** 적절 한 개체의 속성을 표준 집합을 제공 하는 공급자를 만들려면 설정 기능입니다. 그러나 마법사 생성 소비자 또는 공급자 클래스를 지원 하지 않아도 되 작업을 수행 하 고 모든 경우에서 해당 클래스에 대 한 인터페이스를 참조 하는 [OLE DB 템플릿 라이브러리](../../data/oledb/ole-db-templates.md)합니다. 이러한 인터페이스를 사용 하 여 쉽게를 추가로 구현 제공 원시 OLE DB 인터페이스를 래핑합니다.
+## <a name="what-level-of-support-do-you-need-for-your-consumer"></a>소비자에 필요한 지원 수준
 
-예를 들어, 행 집합의 데이터를 업데이트 하려고 하지만 경우 마법사를 사용 하 여 소비자를 만든 경우이 값을 지정 하지 않았습니다 수 기능을 사후 설정 하 여 지정 된 `DBPROP_IRowsetChange` 및 `DBPROP_UPDATABILITY` 명령 개체의 속성입니다. 그런 다음 행 집합 만들어질 때에 `IRowsetChange` 인터페이스입니다.
+기본적인 소비자도 있고, 복잡한 소비자도 있습니다. OLE DB 개체의 기능은 속성으로 지정됩니다. **ATL OLE DB 소비자 마법사**를 사용하여 소비자를 만들거나 **데이터베이스 공급자 마법사**를 사용하여 공급자를 만드는 경우, 마법사에서 적절한 개체 속성을 설정하여 표준 기능 집합을 제공합니다. 그러나 마법사 생성 소비자 또는 공급자 클래스에서 필요한 일부 기능을 지원하지 않는 경우 [OLE DB 템플릿 라이브러리](../../data/oledb/ole-db-templates.md)에서 해당 클래스의 인터페이스를 참조해야 합니다. 이러한 인터페이스는 원시 OLE DB 인터페이스를 래핑하여, 사용하기 편리하도록 추가 구현을 제공합니다.
 
-## <a name="do-you-have-older-code-using-another-data-access-technology-ado-odbc-or-dao"></a>다른 데이터 액세스 기술 (예: ADO, ODBC 또는 DAO)를 사용 하 여 이전 코드 있습니까?
+예를 들어 행 집합의 데이터를 업데이트하려고 하는데 마법사를 사용하여 소비자를 만들 때 이 옵션을 지정하지 않은 경우, 명령 개체의 `DBPROP_IRowsetChange` 및 `DBPROP_UPDATABILITY` 속성을 설정하여 팩트 후에 기능을 지정할 수 있습니다. 그런 다음, 행 집합을 만들면 `IRowsetChange` 인터페이스가 표시됩니다.
 
-시각적 개체의 범위를 벗어납니다 모든 상황을 다루는 기술 (예: ADO 구성 요소를 사용 하 여 OLE DB 구성 요소를 사용 하 여 및 ODBC 코드 OLE DB로 마이그레이션)의 가능한 조합 지정 되 면 C++ 설명서. 그러나 다양 한 시나리오를 다루는 여러 문서는 다음 Microsoft 웹 사이트에서 사용할 수 있습니다.
+## <a name="do-you-have-older-code-using-another-data-access-technology-ado-odbc-or-dao"></a>다른 데이터 액세스 기술(ADO, ODBC 또는 DAO)을 사용하는 이전 코드가 있는지 여부
+
+가능한 기술 조합(예: ADO 구성 요소와 OLE DB 구성 요소를 함께 사용, ODBC 코드를 OLE DB로 마이그레이션)을 고려할 때 모든 상황을 설명하는 것은 Visual C++ 설명서의 범위를 벗어납니다. 그러나 다음 Microsoft 웹 사이트에서 다양한 시나리오를 다루는 여러 문서를 확인할 수 있습니다.
 
 - [Microsoft 도움말 및 지원](https://support.microsoft.com/)
 
 - [Microsoft 데이터 액세스 기술 문서 개요](https://msdn.microsoft.com/library/ms810811.aspx)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [OLE DB 프로그래밍](../../data/oledb/ole-db-programming.md)<br/>
 [OLE DB 프로그래밍 개요](../../data/oledb/ole-db-programming-overview.md)
