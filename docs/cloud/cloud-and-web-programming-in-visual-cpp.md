@@ -1,25 +1,21 @@
 ---
 title: Visual C++의 클라우드 및 웹 프로그래밍
-ms.date: 11/04/2016
+ms.date: 05/14/2019
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
-ms.openlocfilehash: 3d71e36b6209c693940f2ebe6b5e9c73bc0c9d9d
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
-ms.translationtype: HT
+ms.openlocfilehash: 677e9da18e8d171f523994d21bfbd0411270e3c8
+ms.sourcegitcommit: bc1b14f29a02685f97c7ef5c098d16db6eaf369f
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708036"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65790354"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++의 클라우드 및 웹 프로그래밍
 
 C++에는 웹 및 클라우드에 연결하기 위한 다양한 옵션이 있습니다.
 
-## <a name="cloud-programming-options"></a>클라우드 프로그래밍 옵션
+## <a name="microsoft-azure-sdks-and-rest-services"></a>Microsoft Azure SDK 및 REST 서비스
 
-- [Microsoft Azure 모바일 서비스](http://www.windowsazure.com/develop/mobile/)
-
-  Microsoft Azure 모바일 서비스에 연결할 UWP(Universal Windows Platform) 또는 Windows 데스크톱 앱에서 사용할 수 있는 API를 제공합니다. 웹 사이트의 대부분 예제는 C#으로 작성되지만 C++를 사용할 수도 있습니다. 자세한 내용은 [빠른 시작: C++를 사용하여 모바일 서비스 추가](https://msdn.microsoft.com/library/windows/apps/dn263181.aspx)를 참조하세요.
-
-- [C++용 Microsoft Azure Storage Client Library](https://blogs.msdn.microsoft.com/windowsazurestorage/2015/04/29/microsoft-azure-storage-client-library-for-c-v1-0-0-general-availability/)
+- [C++용 Microsoft Azure Storage Client Library](https://azure.github.io/azure-storage-cpp/)
 
   C++용 Azure Storage Client Library는 Azure 스토리지 작업에 대해 다음 기능을 포함하되 이에 국한되지 않는 포괄적인 API를 제공합니다.
 
@@ -29,18 +25,22 @@ C++에는 웹 및 클라우드에 연결하기 위한 다양한 옵션이 있습
   - Azure 큐에서 메시지를 큐에 넣고 큐에서 제거합니다.
   - 지연 목록 컨테이너, Blob, 테이블, 큐 및 지연 쿼리 엔터티
 
-- [OneDrive API](https://dev.onedrive.com/README.htm)
+- 사물인터넷을 위한 ANSI C99 [Azure IoT Hub SDK](/azure/iot-hub/iot-hub-devguide-sdks)를 사용하면 IoT 애플리케이션을 디바이스 또는 백엔드에서 실행할 수 있습니다.
+
+- [Microsoft Graph의 OneDrive 및 SharePoint](https://dev.onedrive.com/README.htm)
 
   OneDrive API는 애플리케이션을 Office 365 및 SharePoint Server 2016의 파일 및 폴더에 연결하는 HTTP 서비스 세트를 제공합니다.
 
-- [C++ REST SDK(코드명 "Casablanca")](https://github.com/Microsoft/cpprestsdk)
+## <a name="windows-and-cross-platform-networking-apis"></a>Windows 및 플랫폼 간 네트워킹 API
+
+- [C++ REST SDK(코드명 “Casablanca”)](https://github.com/Microsoft/cpprestsdk)
 
   REST 서비스와 상호 작용하기 위한 최신 플랫폼 간 비동기 API를 제공합니다.
 
   - JSON 문서 구문 분석 및 serialization에 대한 지원이 기본 제공되는 HTTP 서버에 대해 REST 호출 수행
   - 로컬 리디렉션 수신기를 포함하여 OAuth 1 및 2 지원
-  - 원격 서비스에 대한 Websocket 연결
-  - 기본 제공 threadpool을 비롯한 PPL 기반의 완전 비동기 작업 API
+  - 원격 서비스에 대한 WebSocket 연결
+  - 기본 제공 스레드 풀을 비롯한 PPL 기반의 완전 비동기 작업 API
 
   Windows Desktop(7+), Windows Server(2012+), 유니버설 Windows 플랫폼, Linux, OSX, Android 및 iOS를 지원합니다.
 
@@ -59,4 +59,5 @@ C++에는 웹 및 클라우드에 연결하기 위한 다양한 옵션이 있습
 ## <a name="see-also"></a>참고 항목
 
 [Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md) <br/>
-[네트워크 및 웹 서비스](/windows/uwp/networking/)
+[Microsoft Azure C 및 C++ 개발자 센터](https://azure.microsoft.com/develop/cpp/) <br/>
+[네트워크 및 웹 서비스(UWP)](/windows/uwp/networking/)
