@@ -1,5 +1,5 @@
 ---
-title: '레코드 집합: 합계 및 다른 집계 결과 (ODBC) 구하기'
+title: '레코드 집합: 합계 및 다른 집계 결과 구하기(ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - SQL, retrieving aggregate values from recordsets
@@ -10,56 +10,59 @@ helpviewer_keywords:
 - SQL Server projects, retrieving aggregate values from recordsets
 - SQL aggregate values, retrieving from recordsets
 ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
-ms.openlocfilehash: e10f2e1574dae234d98d210784d4a8ddef3bb57e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 29906366e6e9a5a852fcf40d9e7ecc8593d1b0b0
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397785"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707839"
 ---
-# <a name="recordset-obtaining-sums-and-other-aggregate-results-odbc"></a>레코드 집합: 합계 및 다른 집계 결과 (ODBC) 구하기
+# <a name="recordset-obtaining-sums-and-other-aggregate-results-odbc"></a>레코드 집합: 합계 및 다른 집계 결과 구하기(ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용됩니다.
+> [!NOTE] 
+> Visual Studio 2019 이상에서는 MFC ODBC 소비자 마법사를 사용할 수 없습니다. 여전히 수동으로 소비자를 만들 수 있습니다.
 
-이 항목에서는 다음을 사용 하는 집계 결과를 얻는 방법을 설명 [SQL](../../data/odbc/sql.md) 키워드:
+이 항목은 MFC ODBC 클래스에 적용됩니다.
 
-- **SUM** 숫자 데이터 형식의 열에 있는 값의 합계를 계산 합니다.
+이 항목에서는 다음 [SQL](../../data/odbc/sql.md) 키워드를 사용하여 집계 결과를 얻는 방법을 설명합니다.
 
-- **MIN** 숫자 데이터 형식의 열에서 가장 작은 값을 추출 합니다.
+- **SUM** 숫자 데이터 형식을 사용하여 열에 있는 값의 합계를 계산합니다.
 
-- **최대** 숫자 데이터 형식의 열에서 가장 큰 값을 추출 합니다.
+- **MIN** 숫자 데이터 형식을 사용하여 열에서 가장 작은 값을 추출합니다.
 
-- **AVG** 숫자 데이터 형식의 열에 있는 모든 값의 평균 값을 계산 합니다.
+- **MAX** 숫자 데이터 형식을 사용하여 열에서 가장 큰 값을 추출합니다.
 
-- **개수** 모든 데이터 형식의 열에 있는 레코드의 수를 계산 합니다.
+- **AVG** 숫자 데이터 형식을 사용하여 열에 있는 모든 값의 평균값을 계산합니다.
 
-데이터 원본에서 레코드를 추출 하기 보다는 데이터 원본에서 레코드에 대 한 통계 정보를 얻으려면 이러한 SQL 함수를 사용 합니다. 일반적으로 만든 레코드 집합 개로만 이루어진 값을 포함 하는 레코드 (모든 열 집계 경우). (사용 하는 경우 둘 이상의 레코드 수를 **GROUP BY** 절.) 이 값은 SQL 함수에 의해 추출 된 계산의 결과입니다.
+- **COUNT** 모든 데이터 형식의 열에 있는 레코드의 수를 계산합니다.
+
+이러한 SQL 함수를 사용하여 데이터 원본에서 레코드를 추출하는 대신 데이터 원본의 레코드에 대한 통계 정보를 가져옵니다. 일반적으로 만든 레코드 집합은 값을 포함하는 단일 레코드(모든 열이 집계된 경우)로 구성됩니다. (**GROUP BY** 절을 사용하면 둘 이상의 레코드가 있을 수 있습니다.) 이 값은 SQL 함수에 의해 수행된 계산 또는 추출의 결과입니다.
 
 > [!TIP]
->  SQL에 추가할 **GROUP BY** 절 (및를 **HAVING** 절)의 끝에 추가 하 여 SQL 문을 `m_strFilter`합니다. 예를 들어:
+>  SQL **GROUP BY** 절(및 가능하면 **HAVING** 절)을 SQL 문에 추가하려면 `m_strFilter`의 끝에 추가합니다. 예:
 
 ```
 m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";
 ```
 
-집계 결과를 얻는 필터링 및 열을 정렬 하 여 사용 하는 레코드 수를 제한할 수 있습니다.
+열을 필터링하고 정렬하여 집계 결과를 얻는 데 사용하는 레코드 수를 제한할 수 있습니다.
 
 > [!CAUTION]
->  일부 집계 연산자는 집계는 열에서 다른 데이터 형식을 반환 합니다.
+>  일부 집계 연산자는 집계하는 열에서 다른 데이터 형식을 반환합니다.
 
-- **합계** 및 **AVG** 다음 더 큰 데이터 형식을 반환할 수 있습니다 (예를 들어, 사용 하 여 호출 `int` 반환 **긴** 또는 **double**).
+- **SUM** 및 **AVG**는 다음으로 큰 데이터 형식을 반환할 수 있습니다(예: `int`로 호출하면 **LONG** 또는 **double**을 반환함).
 
-- **개수** 일반적으로 반환 **긴** 대상 열 형식에 관계 없이 합니다.
+- **COUNT**는 일반적으로 대상 열 유형에 관계없이 **LONG**을 반환합니다.
 
-- **최대** 하 고 **MIN** 은 계산 열과 동일한 데이터 형식을 반환 합니다.
+- **MAX** 및 **MIN**은 계산하는 열과 동일한 데이터 형식을 반환합니다.
 
-     예를 들어를 **클래스 추가** 만들어집니다 `long` `m_lSales` 사용 하 여 대체 해야 할 수 있지만 Sales 열을 수용 하기 위해는 `double m_dblSumSales` 집계 결과 수용 하기 위해 데이터 멤버입니다. 다음 예제를 참조하세요.
+     예를 들어 **클래스 추가** 마법사는 Sales 열을 수용할 수 있도록 `long` `m_lSales`를 만들지만 집계 결과를 수용하려면 이를 `double m_dblSumSales` 데이터 멤버로 바꿔야 합니다. 다음 예제를 참조하세요.
 
-#### <a name="to-obtain-an-aggregate-result-for-a-recordset"></a>레코드 집합에 대 한 집계 결과 얻으려면
+#### <a name="to-obtain-an-aggregate-result-for-a-recordset"></a>레코드 집합에 대한 집계 결과를 가져오려면
 
-1. 에 설명 된 대로 레코드 집합을 만듭니다 [MFC ODBC 소비자 추가](../../mfc/reference/adding-an-mfc-odbc-consumer.md) 집계 결과를 얻으려면 원하는 열을 포함 합니다.
+1. 집계 결과를 가져올 열이 포함된 [MFC ODBC 소비자 추가](../../mfc/reference/adding-an-mfc-odbc-consumer.md)에서 설명된 대로 레코드 집합을 만듭니다.
 
-1. 수정 된 [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) 레코드 집합에 대 한 함수입니다. 열 이름을 나타내는 문자열 (두 번째 인수는 [RFX](../../data/odbc/record-field-exchange-using-rfx.md) 함수 호출) 열에 집계 함수를 나타내는 문자열을 사용 하 여 합니다. 예를 들어 바꿉니다.
+1. 레코드 집합에 대한 [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) 함수를 수정합니다. 열 이름을 나타내는 문자열([RFX](../../data/odbc/record-field-exchange-using-rfx.md) 함수 호출의 두 번째 인수)을 열의 집계 함수를 나타내는 문자열로 바꿉니다. 예를 들어 다음을 바꿉니다.
 
     ```
     RFX_Long(pFX, "Sales", m_lSales);
@@ -71,12 +74,12 @@ m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";
     RFX_Double(pFX, "Sum(Sales)", m_dblSumSales)
     ```
 
-1. 레코드 집합을 엽니다. 집계 작업의 결과에 그대로 `m_dblSumSales`합니다.
+1. 레코드 집합을 엽니다. 집계 작업의 결과는 `m_dblSumSales`에 남아 있습니다.
 
 > [!NOTE]
->  마법사에는 실제로 Hungarian 접두사 없이 데이터 멤버 이름을 할당합니다. 예를 들어, 마법사에서 산출 `m_Sales` Sales 열에 대 한 보다는 `m_lSales` 이전 예제에 대 한 예시입니다.
+>  마법사는 실제로 헝가리어 접두사 없이 데이터 멤버 이름을 할당합니다. 예를 들어 마법사는 앞에 그림에 사용된 `m_lSales` 이름 대신 Sales 열에 대해 `m_Sales`를 생성합니다.
 
-사용 중인 경우는 [CRecordView](../../mfc/reference/crecordview-class.md) 데이터를 보려면 클래스, 새 데이터 멤버 값을 표시할 DDX 함수 호출을 변경 해야 합니다.이 경우에서 변경:
+[CRecordView](../../mfc/reference/crecordview-class.md) 클래스를 사용하여 데이터를 보는 경우 새 데이터 멤버 값을 표시하도록 DDX 함수 호출을 변경해야 합니다. 이 경우 다음에서 변경합니다.
 
 ```
 DDX_FieldText(pDX, IDC_SUMSALES, m_pSet->m_lSales, m_pSet);
@@ -88,7 +91,7 @@ DDX_FieldText(pDX, IDC_SUMSALES, m_pSet->m_lSales, m_pSet);
 DDX_FieldText(pDX, IDC_SUMSALES, m_pSet->m_dblSumSales, m_pSet);
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [레코드 집합 레코드 집합의 레코드 선택 방법(ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)

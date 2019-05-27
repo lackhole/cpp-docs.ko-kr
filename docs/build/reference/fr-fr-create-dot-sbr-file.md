@@ -38,16 +38,16 @@ ms.locfileid: "62292798"
 
 빌드 프로세스 중 Microsoft Browse Information File Maintenance Utility(BSCMAKE)는 이러한 파일을 사용하여 찾아보기 정보를 표시하는 데 사용되는 .BSC 파일을 만듭니다.
 
-**/FR** 은 전체 기호화된 정보를 사용하여 .sbr 파일을 만듭니다.
+**/FR**은 전체 기호화된 정보를 사용하여 .sbr 파일을 만듭니다.
 
-**/Fr** 은 지역 변수에 대한 정보 없이.sbr 파일을 만듭니다.
+**/Fr**은 지역 변수에 대한 정보 없이.sbr 파일을 만듭니다.
 
 `filename`을 지정하지 않으면 .sbr 파일은 소스 파일과 동일한 기본 이름을 가져옵니다.
 
-**/Fr** 은 사용되지 않습니다. 대신 **/FR** 을 사용하세요. 자세한 내용은 [Compiler Options Listed by Category](compiler-options-listed-by-category.md)에서 사용되지 않는 컴파일러 옵션을 참조하세요.
+**/Fr** 은 사용되지 않습니다. 대신 **/FR** 을 사용하세요. 자세한 내용은 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)에서 사용되지 않는 컴파일러 옵션을 참조하세요.
 
 > [!NOTE]
->  .sbr 확장명을 변경하지 마세요. BSCMAKE는 해당 확장명을 사용하려면 매개자 파일이 필요합니다.
+>  .sbr 확장명을 변경하지 마세요. BSCMAKE의 중간 파일에서 해당 확장자가 필요합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 

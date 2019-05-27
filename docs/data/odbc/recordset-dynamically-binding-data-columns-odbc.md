@@ -1,6 +1,6 @@
 ---
-title: '레코드 집합: 동적으로 데이터 열 바인딩 (ODBC)'
-ms.date: 11/19/2018
+title: '레코드 집합: 데이터 열 동적 바인딩(ODBC)'
+ms.date: 05/09/2019
 helpviewer_keywords:
 - ODBC recordsets [C++], binding columns dynamically
 - data binding [C++], recordset columns
@@ -8,152 +8,156 @@ helpviewer_keywords:
 - data binding [C++], columns in recordsets
 - columns [C++], binding to recordsets
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
-ms.openlocfilehash: c2f2a6a6696f46fb5b8f2777c6c911269c9e7a80
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: bde61348bbfb33eef42e36bd75830c23e5b2a5f5
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397905"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707940"
 ---
-# <a name="recordset-dynamically-binding-data-columns-odbc"></a>레코드 집합: 동적으로 데이터 열 바인딩 (ODBC)
+# <a name="recordset-dynamically-binding-data-columns-odbc"></a>레코드 집합: 데이터 열 동적 바인딩(ODBC)
 
-이 항목에서는 MFC ODBC 클래스에 적용됩니다.
+이 토픽은 MFC ODBC 클래스에 적용됩니다.
 
-레코드 집합은 디자인 타임에 지정 된 테이블 열의 바인딩을 관리 하지만 경우가 디자인 타임에 알 수 없는 열을 바인딩하는 것이 좋습니다. 이 항목에 설명 합니다.
+레코드 집합은 디자인 시간에 지정하는 테이블 열의 바인딩을 관리하지만 디자인 시간에 알려지지 않은 열을 바인딩하려는 경우가 있습니다. 이 토픽에서는 다음 내용을 설명합니다.
 
-- [레코드 집합에 열을 동적으로 바인딩할 하려는 경우](#_core_when_you_might_bind_columns_dynamically)합니다.
+- [레코드 집합에 동적으로 열을 바인딩하려는 경우](#_core_when_you_might_bind_columns_dynamically)
 
-- [런타임에 동적으로 열을 바인딩하는 방법](#_core_how_to_bind_columns_dynamically)합니다.
+- [런타임에 동적으로 열을 바인딩하는 방법](#_core_how_to_bind_columns_dynamically)
 
 > [!NOTE]
->  이 항목에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치 사용 중인 경우에 일반적으로 설명 하는 기술은 권장 되지 않습니다. 대량 행 페치에 대 한 자세한 내용은 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+>  이 토픽은 대량 행 페치가 구현되지 않은 `CRecordset`에서 파생된 개체에 적용됩니다. 여기서 설명하는 방법은 대량 행 페치를 사용 중인 경우 일반적으로 권장되지 않습니다. 대량 행 페치에 대한 자세한 내용은 [레코드 집합: 대량 레코드 페치(ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)를 참조하세요.
 
-##  <a name="_core_when_you_might_bind_columns_dynamically"></a> 동적으로 열을 바인딩할 수는 경우
+##  <a name="_core_when_you_might_bind_columns_dynamically"></a> 동적으로 열을 바인딩하려는 경우
 
-디자인 타임에 MFC 응용 프로그램 마법사 또는 [MFC ODBC 소비자 마법사](../../mfc/reference/adding-an-mfc-odbc-consumer.md) (에서 **클래스 추가**) 알려진된 테이블 및 데이터 원본에 따라 열을 기반으로 하는 레코드 집합 클래스를 만듭니다. 데이터베이스를 디자인할 때 응용 프로그램 실행 시 해당 테이블과 열을 사용 하는 경우 이상 하 달라질 수 있습니다. 사용자 또는 다른 사용자 수 추가 또는 삭제 테이블 또는 추가 하거나 응용 프로그램의 레코드 집합에서 사용 하는 테이블에서 열을 삭제 합니다. 아마도 모든 데이터 액세스 응용 프로그램의 경우 문제가 없지만 여러분 에게도 경우 수 있습니다에 대처 방법을 다시 컴파일 및 다시 디자인 하는 대신 데이터베이스 스키마의 변경 내용으로? 이 항목의 목적은 질문에 대답 하는 것입니다.
+> [!NOTE] 
+> Visual Studio 2019 이상에서는 MFC ODBC 소비자 마법사를 사용할 수 없습니다. 수동으로 소비자를 만들 수는 있습니다.
 
-이 항목에서는 동적으로 열 바인딩 수는 가장 일반적인 사례를 설명 합니다.-런타임에 추가 열을 처리 하려는 알려진된 데이터베이스 스키마를 기반으로 레코드 집합을 시작한, 합니다. 추가 항목에서는 추가 열을 매핑할 가정 `CString` 제안 다른 데이터 형식을 관리 하는 데 매핑된다고 필드 데이터 멤버에는 가장 일반적인 경우입니다.
+디자인 타임에 MFC 애플리케이션 마법사 또는 [MFC ODBC 소비자 마법사](../../mfc/reference/adding-an-mfc-odbc-consumer.md)(**클래스 추가**에서 나온)는 데이터 원본의 알려진 테이블 및 열을 기반으로 레코드 집합 클래스를 만듭니다. 해당 테이블 및 열을 디자인할 때와 나중에 애플리케이션이 런타임에 이들을 사용할 때의 사이에 데이터베이스를 변경할 수 있습니다. 개발자 또는 다른 사용자가 애플리케이션의 레코드 집합이 의존하는 테이블에서 테이블을 추가 또는 삭제하거나 열을 추가 또는 삭제할 수 있습니다. 아마도 모든 데이터 액세스 애플리케이션의 경우 이 상황은 문제가 없지만, 데이터베이스 스키마가 변경된 경우 다시 디자인하고 다시 컴파일하는 방법 외에 다른 해결 방법이 있을까요? 이 토픽의 목적은 바로 이 질문에 답하는 것입니다.
 
-약간의 추가 코드를 사용 하 여 다음을 수행할 수 있습니다.
+이 토픽에서는 동적으로 열을 바인딩할 수 있는 가장 일반적인 상황을 설명합니다. 먼저, 알려진 데이터베이스 스키마를 기반으로 하는 레코드 집합으로 시작하고 런타임에 추가 열을 처리하려고 합니다. 또한 이 토픽에서는 추가 열이 `CString` 데이터 멤버에 매핑된다고 가정하지만(가장 일반적인 경우), 다른 데이터 형식을 관리하는 데 도움이 되는 추천도 제공합니다.
 
-- [런타임 시 사용 가능한 열을 확인](#_core_how_to_bind_columns_dynamically)합니다.
+약간의 추가 코드를 사용하여 다음을 수행할 수 있습니다.
 
-- [런타임에 동적으로 추가 열 레코드 집합에 바인딩할](#_core_adding_the_columns)합니다.
+- [런타임에 사용 가능한 열 확인](#_core_how_to_bind_columns_dynamically)
 
-레코드 집합에는 디자인 타임에 사용한 열에 대 한 데이터 멤버가 포함 됩니다. 또한 약간의 동적으로 새 열을 대상 테이블에 추가한 여부를 결정 하는 추가 코드를 포함 하 고, 그렇다면 동적으로 할당 된 저장소 (아닌 데이터 멤버 레코드 집합)이 새 열을 바인딩합니다.
+- [런타임에 동적으로 추가 열을 레코드 집합에 바인딩](#_core_adding_the_columns)
 
-이 항목에서는 삭제 된 테이블 또는 열 같은 동적 바인딩 경우도 다루지 않습니다. 이러한 경우 더 직접 ODBC API 호출을 사용 해야 합니다. 내용은 ODBC SDK를 참조 하세요 *프로그래머 참고 자료* MSDN 라이브러리 cd 합니다.
+레코드 집합은 여전히 디자인 타임에 알고 있는 열에 대한 데이터 멤버를 포함합니다. 또한 새 열이 대상 테이블에 추가되었는지 여부를 동적으로 결정하고, 추가된 경우 해당 새 열을 할당된 스토리지(레코드 집합 데이터 멤버가 아닌)에 동적으로 바인딩하는 약간의 추가 코드도 포함합니다.
 
-##  <a name="_core_how_to_bind_columns_dynamically"></a> 열을 동적으로 바인딩하는 방법
+삭제된 테이블 또는 열 등의 다른 동적 바인딩 사례는 이 토픽에서 다루지 않습니다. 그러한 경우에는 ODBC API 호출을 더 직접적으로 사용해야 합니다. 자세한 내용은 MSDN 라이브러리 CD의 ODBC SDK *프로그래머 참조*를 참조하세요.
 
-열을 동적으로 바인딩하려면 사용자 해야 알고 (또는 확인할 수) 추가 열 이름. 또한 추가 필드 데이터 멤버에 대 한 저장소 할당, 해당 이름과 해당 형식을 지정 하며 추가 하는 열의 수를 지정 합니다.
+##  <a name="_core_how_to_bind_columns_dynamically"></a> 동적으로 열을 바인딩하는 방법
 
-아래에서는 두 개의 레코드 집합을 언급 합니다. 첫 번째는 기본 레코드 집합 대상 테이블에서 레코드를 선택 합니다. 두 번째는 대상 테이블의 열에 대 한 정보를 가져오는 데 특별 한 열 레코드 집합입니다.
+동적으로 열을 바인딩하려면 추가 열의 이름을 알고 있어야(또는 결정할 수 있어야) 합니다. 또한 추가 필드 데이터 멤버에 대한 스토리지를 할당하고, 해당 이름 및 형식을 지정하고, 추가하는 열 수를 지정해야 합니다.
+
+다음 설명에서는 두 개의 서로 다른 레코드 집합을 언급합니다. 첫 번째는 대상 테이블에서 레코드를 선택하는 기본 레코드 집합입니다. 두 번째는 대상 테이블의 열에 대 한 정보를 가져오는 데 사용되는 특수 열 레코드 집합입니다.
 
 ###  <a name="_core_the_general_process"></a> 일반 프로세스
 
-가장 일반적인 수준에서 다음이 단계를 수행 합니다.
+가장 일반적인 수준에서 다음 단계를 따릅니다.
 
-1. 기본 레코드 집합 개체를 생성 합니다.
+1. 기본 레코드 집합 개체를 생성합니다.
 
-   필요에 따라 개방적이 고에 대 한 포인터를 전달 `CDatabase` 개체 또는 다른 방법으로 열 레코드 집합에 대 한 연결 정보를 제공할 수 있습니다.
+   필요에 따라 열린 `CDatabase`에 대한 포인터를 전달하거나 무언가 다른 방법으로 열 레코드 집합에 연결 정보를 제공할 수 있습니다.
 
-1. 열을 동적으로 추가 하는 단계를 수행 합니다.
+1. 동적으로 열을 추가하는 단계를 수행합니다.
 
-   추가 열 아래에서 설명한 프로세스를 참조 하세요.
+   아래의 열 추가에서 설명하는 프로세스를 참조하세요.
 
 1. 기본 레코드 집합을 엽니다.
 
-   레코드 집합 레코드를 선택 하 고 (해당 되는 레코드 집합 필드 데이터 멤버에 매핑된) 정적 열과 동적 열 (할당 하는 추가 저장소에 매핑됨)를 모두 바인딩할 레코드 필드 교환 (RFX)를 사용 합니다.
+   레코드 집합은 레코드를 선택하고 RFX(레코드 필드 교환)를 사용하여 정적 열(레코드 집합 필드 데이터 멤버에 매핑된 열) 및 동적 열(할당하는 추가 스토리지에 매핑된 열)을 모두 바인딩합니다.
 
 ###  <a name="_core_adding_the_columns"></a> 열 추가
 
-동적 바인딩 추가 런타임에 열에는 다음 단계를 수행 합니다.
+런타임에 추가된 열을 동적으로 바인딩하려면 다음 단계를 수행해야 합니다.
 
-1. 대상 테이블의 열은 런타임에 결정 합니다. 레코드 집합 클래스 디자인 된 이후 테이블에 추가 된 열 목록을 해당 정보를 추출 합니다.
+1. 런타임에 대상 테이블에 있는 열을 결정합니다. 레코드 집합 클래스가 디자인되었으므로 테이블에 추가된 열의 목록에서 해당 정보를 추출합니다.
 
-   (예: 열 이름과 데이터 형식) 대상 테이블에 대 한 열 정보에 대 한 데이터 원본을 쿼리하려면 설계 열 레코드 집합 클래스를 사용 하는 것이 좋습니다.
+   데이터 원본에서 대상 테이블에 대한 열 정보(예: 열 이름 및 데이터 형식)를 쿼리하도록 디자인된 열 레코드 집합 클래스를 사용하는 것이 좋은 방법입니다.
 
-1. 새 필드 데이터 멤버에 대 한 저장소를 제공 합니다. 기본 레코드 집합 클래스는 알 수 없는 열에 대 한 필드 데이터 멤버 없으므로 (열 데이터 형식이 다른 경우) 이름, 결과 값 및 가능한 경우 데이터 형식 정보를 저장할 위치를 제공 해야 합니다.
+1. 새 필드 데이터 멤버에 대한 스토리지를 제공합니다. 기본 레코드 집합 클래스는 알려지지 않은 열에 대한 필드 데이터 멤버를 포함하지 않으므로 이름, 결과 값, 그리고 아마도 데이터 형식 정보(열의 데이터 형식이 다른 경우)를 저장할 위치를 제공해야 합니다.
 
-   한 가지 방법은 빌드용 하나 이상의 동적 목록, 새 열의 이름, 다른 해당 결과 값과 해당 데이터 형식에 대 한 세 번째 (필요한 경우). 이러한 목록, 특히 값 목록에 있는 정보 및 바인딩에 대 한 필요한 저장소를 제공합니다. 다음 그림은 목록 만들기를 보여 줍니다.
+   한 가지 방법은 하나 이상의 동적 목록을 만드는 것입니다(예: 새 열의 이름에 대한 목록, 해당 결과 값에 대한 목록 및 해당 데이터 형식에 대한 목록(필요한 경우)). 이 목록, 특히 값 목록은 해당 정보 및 바인딩에 필요한 스토리지를 제공합니다. 다음 그림은 목록 만들기를 보여줍니다.
 
    ![동적으로 바인딩할 열 목록 만들기](../../data/odbc/media/vc37w61.gif "동적으로 바인딩할 열 목록 만들기")<br/>
    동적으로 바인딩할 열 목록 만들기
 
-1. RFX 함수 호출에서 기본 레코드 집합의 추가 `DoFieldExchange` 되는 각 열에 대해 작동 합니다. 이러한 RFX 호출 레코드를 인출 하 고 추가 열을 포함 하 여에 동적으로 제공 된 저장소 또는 데이터 멤버 레코드 집합에 열을 바인딩 작업을 수행 합니다.
+1. 각 추가된 열에 대한 기본 레코드 집합의 `DoFieldExchange` 함수에 RFX 함수 호출을 추가합니다. 해당 RFX 호출은 추가 열을 포함한 레코드를 페치하는 작업과 레코드 집합 데이터 멤버 또는 동적으로 제공된 멤버용 스토리지에 열을 바인딩하는 작업을 수행합니다.
 
-   기본 레코드 집합의 루프를 추가 하는 한 가지 방법은 `DoFieldExchange` 목록의 각 열에 대 한 적절 한 RFX 함수를 호출 하는 새 열 목록을 반복 하는 함수입니다. 각 RFX 호출의 결과 값은 해당 멤버의 저장소 위치 및 열 이름 목록에서 열 이름을 전달 합니다.
+   한 가지 방법은 기본 레코드 집합의 `DoFieldExchange` 함수에 새 열의 목록을 순환하면서 목록의 각 열에 적절한 RFX 함수를 호출하는 루프를 추가하는 것입니다. 각 RFX 호출 시, 열 이름 목록의 열 이름 및 결과 값 목록의 해당 멤버의 스토리지 위치를 전달합니다.
 
 ###  <a name="_core_lists_of_columns"></a> 열 목록
 
-사용 해야 합니다. 네 개의 목록은 다음 표에 표시 됩니다.
+작업해야 하는 목록 4개는 다음 표와 같습니다.
 
 |||
 |-|-|
-|**Current-Table-Columns**| (그림에서 1 목록) 목록 데이터 원본에 테이블의 현재 열입니다. 이 목록에는 현재 레코드 집합의 바인딩된 열 목록과 일치 될 수 있습니다.|
-|**Bound-Recordset-Columns**| (그림에서 2 목록) 레코드 집합의 열 목록이 바인딩됩니다. 이러한 열 RFX 문을에 이미 있는 프로그램 `DoFieldExchange` 함수입니다.|
-|**열-에-바인딩-동적**| (그림에서 3 목록) 테이블에에서만 있는 레코드 집합에 없는 열 목록이 있습니다. 이 동적으로 바인딩할 열.|
-|**Dynamic-Column-Values**| (그림에서 4 목록) 동적 바인딩 열에서 값에 대 한 저장소를 포함 하는 목록을 검색 합니다. 이 목록의 요소에 열-에-바인딩-동적으로 한 일에 해당합니다.|
+|**Current-Table-Columns**| (그림에서 목록 1) 데이터 원본의 테이블에 현재 있는 열의 목록입니다. 이 목록은 레코드 집합에 현재 바인딩된 열의 목록과 일치할 수 있습니다.|
+|**Bound-Recordset-Columns**| (그림에서 목록 2) 레코드 집합에 바인딩된 열의 목록입니다. 이 열은 `DoFieldExchange` 함수에 RFX 문을 이미 포함합니다.|
+|**Columns-To-Bind-Dynamically**| (그림에서 목록 3) 테이블에 있지만 레코드 집합에 없는 열의 목록입니다. 이는 동적으로 바인딩할 열입니다.|
+|**Dynamic-Column-Values**| (그림에서 목록 4) 동적으로 바인딩하는 열에서 검색한 값에 대한 스토리지를 포함하는 목록입니다. 이 목록의 요소는 Columns-to-Bind-Dynamically의 요소와 일대일로 대응합니다.|
 
 ###  <a name="_core_building_your_lists"></a> 목록 만들기
 
-유의 해야 하는 일반적인 전략을 사용 하 여 세부 정보를 설정할 수 있습니다. 이 항목의 나머지 부분에 나오는 절차에 표시 된 목록을 작성 하는 방법을 보여 줍니다. [열 목록](#_core_lists_of_columns)합니다. 절차 과정을 안내 합니다.
+일반적인 전략을 염두에 두고 세부 정보를 설정할 수 있습니다. 이 토픽의 나머지 부분에 나오는 절차는 [열 목록](#_core_lists_of_columns)에 표시된 목록을 만드는 방법을 보여줍니다. 이 절차는 다음과 같은 작업을 안내합니다.
 
-- [레코드 집합에 없는 열 이름 확인](#_core_determining_which_table_columns_are_not_in_your_recordset)합니다.
+- [레코드 집합에 없는 열 이름 확인](#_core_determining_which_table_columns_are_not_in_your_recordset)
 
-- [테이블에 새로 추가 된 열에 대 한 동적 저장소 제공](#_core_providing_storage_for_the_new_columns)합니다.
+- [테이블에 새로 추가된 열에 대한 동적 스토리지 제공](#_core_providing_storage_for_the_new_columns)
 
-- [새 열에 대 한 호출 RFX를 동적으로 추가](#_core_adding_rfx_calls_to_bind_the_columns)합니다.
+- [새 열에 대한 RFX 호출을 동적으로 추가](#_core_adding_rfx_calls_to_bind_the_columns)
 
-###  <a name="_core_determining_which_table_columns_are_not_in_your_recordset"></a> 테이블 열은 레코드 집합에 없는 결정
+###  <a name="_core_determining_which_table_columns_are_not_in_your_recordset"></a> 레코드 집합에 없는 테이블 열 결정
 
-기본 레코드 집합에 이미 바인딩된 열의 목록을 포함 하는 (바인딩-레코드 집합-열, 그림과에서 목록 2와 같이) 목록을 작성 합니다. 그런 다음 목록 (열-에-바인딩-동적으로 현재-테이블-열 및 바인딩된 레코드 집합 열에서 파생) 있지만 기본 레코드 집합에 없는 데이터 원본에 테이블에는 열 이름이 포함 된를 빌드하십시오.
+기본 레코드 집합에 이미 바인딩된 열의 목록을 포함하는 목록(Bound-Recordset-Columns, 그림에서 목록 2)을 만듭니다. 그런 다음, 데이터 원본의 테이블에 있지만 기본 레코드 집합에 없는 열 이름을 포함하는 목록(Columns-to-Bind-Dynamically: Current-Table-Columns와 Bound-Recordset-Columns에서 파생됨)을 만듭니다.
 
-##### <a name="to-determine-the-names-of-columns-not-in-the-recordset-columns-to-bind-dynamically"></a>레코드 집합 (열-에-바인딩-동적으로)에 없는 열 이름을 확인 하려면
+##### <a name="to-determine-the-names-of-columns-not-in-the-recordset-columns-to-bind-dynamically"></a>레코드 집합에 없는 열(Columns-to-Bind-Dynamically)의 이름을 확인하려면 다음을 수행합니다.
 
-1. 기본 레코드 집합에 이미 바인딩된 열의 목록을 (바인딩된 레코드 집합 열)을 빌드하십시오.
+1. 기본 레코드 집합에 이미 바인딩된 열의 목록(Bound-Recordset-Columns)을 만듭니다.
 
-   한 가지 방법은 디자인 타임에 바인딩된 레코드 집합 열을 만드는 것입니다. 레코드 집합의 RFX 함수 호출을 시각적으로 검사할 수 있습니다 `DoFieldExchange` 함수 이러한 이름을 가져올 수 있습니다. 다음 목록 이름을 사용 하 여 초기화 된 배열로 설정 합니다.
+   한 가지 방법은 디자인 타임에 Bound-Recordset-Columns를 만드는 것입니다. 레코드 집합의 `DoFieldExchange` 함수에서 RFX 함수 호출을 시각적으로 검사하여 해당 이름을 가져올 수 있습니다. 그런 다음, 목록을 해당 이름으로 초기화된 배열로 설정합니다.
 
-   예를 들어, 그림은 세 가지 요소를 사용 하 여 바인딩된 레코드 집합 열 (목록 2)를 보여줍니다. 바인딩된 레코드 집합 열에는 현재 테이블 열 (목록 1)에 표시 된 Phone 열을 누락 되었습니다.
+   예를 들어 다음 그림은 요소가 3개인 Bound-Recordset-Columns(목록 2)를 보여줍니다. Bound-Recordset-Columns에는 Current-Table-Columns(목록 1)에 표시된 전화 번호 열이 없습니다.
 
-1. 아직 바인딩되어 있지 않은 기본 레코드 집합의 열 목록 (열-에-바인딩-동적으로) 만들 수는 현재-테이블-열 및 바인딩된 레코드 집합 열 비교 합니다.
+1. Current-Table-Columns와 Bound-Recordset-Columns를 비교하여 기본 레코드 집합에 아직 바인딩되지 않은 열의 목록(Columns-to-Bind-Dynamically)을 만듭니다.
 
-   한 가지 방법은 런타임 (현재-테이블-열) 및 동시에 (바인딩된 레코드 집합 열) 레코드 집합에 이미 바인딩된 열의 목록에서 테이블의 열 목록을 반복 하는 것입니다. 열-에-바인딩-동적으로 배치 모든 이름을 현재-테이블-열에 바인딩된 레코드 집합 열에 표시 되지 않습니다.
+   한 가지 방법은 런타임에 테이블의 열 목록(Current-Table-Columns) 및 레코드 집합에 이미 바인딩된 열의 목록(Bound-Recordset-Columns)을 병렬로 순환하는 것입니다. Bound-Recordset-Columns에 나타나지 않는 Current-Table-Columns의 이름을 Columns-to-Bind-Dynamically에 넣습니다.
 
-   예를 들어 그림과 열-에-바인딩-동적 (목록 3) 하나의 요소가 표시 된: 현재 테이블 열 (목록 1) 찾았지만 바인딩된 레코드 집합 열 (목록 2)에 없는 Phone 열입니다.
+   예를 들어 그림은 요소 한 개(전화 번호 열)가 있는 Columns-to-Bind-Dynamically(목록 3)를 보여줍니다. 전화 번호 열은 Current-Table-Columns(목록 1)에는 있지만 Bound-Recordset-Columns(목록 2)에는 없습니다.
 
-1. 각 열 이름에 동적으로 바인딩할 열 목록에 저장 (열-에-바인딩-동적으로) 해당 데이터 값을 저장 하는 동적 열-값 (예: 그림과에서 목록 4) 목록을 작성 합니다.
+1. 동적으로 바인딩할 열의 목록(Columns-to-Bind-Dynamically)에 저장된 각 열 이름에 해당하는 데이터 값을 저장하는 Dynamic-Column-Values의 목록(그림의 목록 4)을 만듭니다.
 
-   이 목록의 요소 역할을 새 레코드 집합의 필드 데이터 멤버입니다. 이들은 동적 열을 바인딩할 저장소 위치입니다. 목록의 설명은 참조 하십시오 [열 목록](#_core_lists_of_columns)합니다.
+   이 목록의 요소는 새 레코드 집합 필드 데이터 멤버 역할을 하며, 동적 열이 바인딩되는 스토리지 위치입니다. 목록에 대한 자세한 내용은 [열 목록](#_core_lists_of_columns)을 참조하세요.
 
-###  <a name="_core_providing_storage_for_the_new_columns"></a> 새 열에 대 한 저장소를 제공합니다.
+###  <a name="_core_providing_storage_for_the_new_columns"></a> 새 열에 대한 스토리지 제공
 
-다음으로, 동적으로 바인딩할 열에 대 한 저장소 위치를 설정 합니다. 각 열의 값을 저장 하는 목록 요소를 제공 하는 개념이입니다. 일반적으로 바인딩된 열을 저장 하는 레코드 집합 멤버 변수를 이러한 저장소 위치와 유사 합니다.
+다음으로, 동적으로 바인딩할 열에 대한 스토리지 위치를 설정합니다. 그 목적은 각 열의 값을 저장하는 목록 요소를 제공하는 것입니다. 이 스토리지 위치는 일반적으로 바인딩된 열을 저장하는 레코드 집합 멤버 변수와 유사합니다.
 
-#### <a name="to-provide-dynamic-storage-for-new-columns-dynamic-column-values"></a>새 열 (동적 열 값)에 대 한 동적 저장소를 제공 합니다.
+#### <a name="to-provide-dynamic-storage-for-new-columns-dynamic-column-values"></a>새 열(Dynamic-Column-Values)에 대한 동적 스토리지를 제공하려면 다음을 수행합니다.
 
-1. 동적 열-값, 열-에-바인딩-동적으로 각 열에 있는 데이터의 값을 포함 하는 병렬 빌드.
+1. 각 열에 있는 데이터의 값을 포함하는 Dynamic-Column-Values를
+Columns-to-Bind-Dynamically와 병렬로 만듭니다.
 
-   그림은 하나의 요소를 사용 하 여 동적 열 값 (목록 4)을 표시 하는 예를 들어:는 `CString` 현재 레코드에 대 한 실제 전화 번호를 포함 하는 개체: "555-1212".
+   예를 들어 아래 그림은 요소 한 개가 있는 Dynamic-Column-Values(목록 4)를 보여줍니다. 해당 요소는 `CString` 개체이며, 현재 레코드에 대한 실제 전화 번호: "555-1212"를 포함합니다.
 
-   가장 일반적인 경우 동적 열 값에 형식 요소의 `CString`합니다. 다양 한 데이터 형식의 열을 처리 하는 다양 한 종류의 요소를 포함할 수 있는 목록이 필요 합니다.
+   가장 일반적인 경우 Dynamic-Column-Values는 `CString` 형식의 요소를 포함합니다. 다양한 데이터 형식의 열을 처리하는 경우 다양한 형식의 요소를 포함할 수 있는 목록이 필요합니다.
 
-이전 절차의 결과 두 개의 주 목록: 열-에-바인딩-동적으로 열 이름을 포함 하 고 열-Dynamic-values 현재 레코드의 열에 값이 포함 된.
+앞에서 설명한 절차의 결과는 두 개의 기본 목록, 즉 열의 이름을 포함하는 Columns-to-Bind-Dynamically 및 현재 레코드에 대한 열의 값을 포함하는 Dynamic-Column-Values입니다.
 
 > [!TIP]
-> 새 열 모두 동일한 데이터 형식이 아닌 경우는 추가 병렬 목록 열 목록에서 각 해당 요소의 형식을 정의 하는 항목을 포함 하는 것이 좋습니다. (값, AFX_RFX_BOOL AFX_RFX_BYTE를 사용할 수 있습니다 및 등이 경우 원하는 합니다. 이러한 상수는 AFXDB에 정의 됩니다. 8.) 열 데이터 형식을 표시 하는 방법에 따라 목록 형식을 선택 합니다.
+> 새 열 중 일부의 데이터 형식이 다른 경우 열 목록에서 각 해당 요소의 형식을 어떻게든 정의하는 항목을 포함하는 추가 병렬 목록을 원할 수 있습니다. (원한다면 이를 위해 AFX_RFX_BOOL, AFX_RFX_BYTE 등의 값을 사용할 수 있습니다. 해당 상수는 AFXDB.H에 정의되어 있습니다.) 열 데이터 형식을 표시하는 방법에 따라 목록 형식을 선택합니다.
 
-###  <a name="_core_adding_rfx_calls_to_bind_the_columns"></a> 열에 바인딩할 RFX 호출 추가
+###  <a name="_core_adding_rfx_calls_to_bind_the_columns"></a> RFX 호출을 추가하여 열 바인딩
 
-RFX에 새 열에 대 한 호출을 배치 하 여 발생 하는 동적 바인딩에 대 한 마지막으로 정렬 하면 `DoFieldExchange` 함수입니다.
+끝으로, 새 열에 대한 RFX 호출을 `DoFieldExchange` 함수에 배치하여 동적 바인딩이 일어나도록 배열합니다.
 
-##### <a name="to-dynamically-add-rfx-calls-for-new-columns"></a>RFX를 동적으로 추가할 새 열에 대 한 호출
+##### <a name="to-dynamically-add-rfx-calls-for-new-columns"></a>새 열에 대한 RFX 호출을 동적으로 추가하려면 다음을 수행합니다.
 
-1. 기본 레코드 집합의에서 `DoFieldExchange` 멤버 함수 (열-에-바인딩-동적으로)에 새 열 목록을 반복 하는 코드를 추가 합니다. 각 루프를 열 이름 열-에-바인딩-동적으로 및 동적 열 값의 열에 대 한 결과 값을 추출 합니다. 열의 데이터 형식에 적합 한 RFX 함수 호출에 이러한 항목을 전달 합니다. 목록의 설명은 참조 하십시오 [열 목록](#_core_lists_of_columns)합니다.
+1. 기본 레코드 집합의 `DoFieldExchange` 멤버 함수에서 새 열의 목록(Columns-to-Bind-Dynamically)을 순환하는 코드를 추가합니다. 각 루프에서는 Columns-to-Bind-Dynamically에서 열 이름을 추출하고 Dynamic-Column-Value에서 열에 대한 결과 값을 추출합니다. 해당 항목을 열의 데이터 형식에 적절한 RFX 함수 호출에 전달합니다. 목록에 대한 자세한 내용은 [열 목록](#_core_lists_of_columns)을 참조하세요.
 
-일반적인 경우에 프로그램 `RFX_Text` 함수 호출 수를 추출 `CString` 인 열-에-바인딩-동적으로 코드의 다음 줄에서와 같이 목록에서 개체를 `CStringList` 호출 `m_listName` 동적 열 값을 이며`CStringList` 호출 `m_listValue`:
+일반적인 경우 Columns-to-Bind-Dynamically가 `m_listName`이라는 `CStringList`이고 Dynamic-Column-Values가 `m_listValue`라는 `CStringList`인 다음 코드 줄과 같이 `RFX_Text` 함수 호출에서 `CString` 개체를 목록에서 추출합니다.
 
 ```cpp
 RFX_Text( pFX,
@@ -161,14 +165,14 @@ RFX_Text( pFX,
             m_listValue.GetNext( posValue ));
 ```
 
-RFX 함수에 대 한 자세한 내용은 참조 하세요. [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md) 에 *클래스 라이브러리 참조*합니다.
+RFX 함수에 대한 자세한 내용은 *클래스 라이브러리 참조*의 [매크로 및 전역 요소](../../mfc/reference/mfc-macros-and-globals.md)를 참조하세요.
 
 > [!TIP]
-> 새 열 데이터 형식이 다른 경우 각 형식에 대 한 적절 한 RFX 함수를 호출 하는 switch 문 루프에서 사용 합니다.
+> 새 열의 데이터 형식이 다른 경우 루프에 switch 문을 사용하여 각 형식에 적절한 RFX 함수를 호출합니다.
 
-프레임 워크를 호출 하면 `DoFieldExchange` 중는 `Open` 정적 열 바인딩 해당 열에 대해 RFX 호출 하 여 레코드 집합에 열을 바인딩하는 프로세스입니다. 다음 루프 동적 열에 대해 RFX 함수를 반복적으로 호출합니다.
+프레임워크가 `Open` 프로세스 중에 `DoFieldExchange`를 호출하면 정적 열에 대한 RFX 호출이 해당 열을 바인딩합니다. 그러면 루프에서 동적 열에 대해 RFX 함수를 반복적으로 호출합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [레코드 집합 대형 데이터 항목 작업(ODBC)](../../data/odbc/recordset-working-with-large-data-items-odbc.md)

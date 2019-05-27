@@ -1,6 +1,6 @@
 ---
-title: '방법: 명령줄에서 64 비트 MSVC 도구 집합을 사용 하도록 설정'
-ms.date: 03/29/2018
+title: '방법: 명령줄에서 64비트 MSVC 도구 집합 사용'
+ms.date: 05/16/2019
 helpviewer_keywords:
 - x64 [C++]
 - 64-bit compiler [C++], command line usage
@@ -12,32 +12,32 @@ helpviewer_keywords:
 - IPF, command-line compiler
 - x64 [C++], command-line compiler
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
-ms.openlocfilehash: 8436254a3d8c5c1dae018c2309ceaad7bd5b2408
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 24dd6355578e8e9e00064ccfdf31bc51b7fd12ec
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188914"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65836982"
 ---
-# <a name="how-to-enable-a-64-bit-x64-hosted-msvc-toolset-on-the-command-line"></a>방법: 64 비트, x64 호스트 명령줄에서 MSVC 도구 집합
+# <a name="how-to-enable-a-64-bit-x64-hosted-msvc-toolset-on-the-command-line"></a>방법: 명령줄에서 64비트 x64 호스팅 MSVC 도구 집합 사용
 
-Visual Studio에는 C++ 컴파일러, 링커 및 기타 도구는 32 비트, 64 비트 또는 ARM 기반 Windows 운영 체제에서 실행할 수 있는 앱의 플랫폼별 버전을 만드는 데 사용할 수 있습니다. 다른 선택적 Visual Studio 워크 로드를 사용 하면 C++ iOS, Android 및 Linux와 같은 다른 플랫폼을 대상으로 하는 도구입니다. 기본 빌드 아키텍처 32 비트, x86에 호스트 된 도구를 사용 하 여 32 비트, x86 네이티브 Windows 코드를 작성 합니다. 그러나 있을 것은 64 비트 컴퓨터입니다. X86, x64 또는 ARM 프로세서에 대 한 코드를 작성 하는 경우 64 비트, x64 호스트 도구 집합을 사용 하 여 프로세서 및 64 비트 코드에 사용 가능한 메모리 공간 활용을 걸릴 수 있습니다.
+Visual Studio에는 32비트, 64비트 또는 ARM 기반 Windows 운영 체제에서 실행 가능한 플랫폼 특정 버전을 만드는 데 사용할 수 있는 C++ 컴파일러, 링커 및 기타 도구가 포함됩니다. 다른 선택적 Visual Studio 워크로드에서는 C++ 도구를 사용하여 iOS, Android, Linux 같은 다른 플랫폼을 대상으로 할 수 있습니다. 기본 빌드 아키텍처는 32비트 x86 호스팅 도구를 사용하여 32비트 x86 네이티브 Windows 코드를 빌드합니다. 그러나 64비트 컴퓨터인 경우가 있습니다. X86, x64 또는 ARM 프로세서에 대한 코드를 빌드할 때는 64비트 x64 호스팅 도구 집합을 사용하여 64비트에 사용 가능한 프로세서 및 메모리 공간을 활용할 수 있습니다.
 
 > [!NOTE]
-> 각 Visual Studio 버전에 포함 된 특정 도구에 대 한 자세한 내용은 [시각적 C++ Visual Studio 버전의 도구 및 기능](../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md)합니다.
+> 각 Visual Studio 버전에 포함된 특정 도구에 대한 자세한 정보는 [Visual Studio 버전의 Visual C++도구 및 기능](../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md)을 참조하세요.
 >
-> 64 비트 응용 프로그램을 만들려면 Visual Studio IDE를 사용 하는 방법에 대 한 정보를 참조 하세요. [방법: 64비트, x64 플랫폼을 대상으로 한 Visual C++ 프로젝트 구성](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)을 참조하세요.
+> Visual Studio IDE를 사용하여 64비트 애플리케이션을 만드는 방법에 대한 자세한 내용은 [방법: 64비트, x64 플랫폼을 대상으로 한 Visual C++ 프로젝트 구성](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)을 참조하세요.
 
-설치 하는 경우는 C++ Visual Studio 설치 관리자에서 워크 로드를 항상 설치 32 비트, x86에 호스트 된, 네이티브 및 크로스 컴파일러 도구 x86 및 x64 코드를 작성 합니다. 유니버설 Windows 플랫폼 워크 로드를 포함 하는 경우 또한 ARM 코드를 빌드하려면 크로스 컴파일러 x86에 호스트 된 도구를 설치 합니다. 64 비트 x64에서 이러한 워크 로드를 설치 하는 경우 프로세서도 64 비트 네이티브를 얻고 코드 컴파일러 및 도구를 빌드 x86, x64, ARM 교차 합니다. 32 비트 및 64 비트 도구는 동일한 코드를 생성 하지만 64 비트 도구 미리 컴파일된 헤더 기호 및 전체 프로그램 최적화에 대 한 더 많은 메모리를 지원 합니다 ([/GL](reference/gl-whole-program-optimization.md) 하 고 [/LTCG](reference/ltcg-link-time-code-generation.md)) 옵션입니다. 32 비트 도구를 사용 하는 경우 실행 메모리 한계에 도달 하는 경우 64 비트 도구를 사용해 보세요.
+Visual Studio 설치 관리자에서 C++ 워크로드를 설치할 때는 항상 x86 및 x64 코드 빌드를 위해 32비트 x86 호스팅 네이티브 및 교차 컴파일러 도구를 설치합니다. 유니버설 Windows 플랫폼 워크로드를 포함할 경우 ARM 코드 빌드를 위해 x86 호스팅 교차 컴파일러 도구도 설치합니다. 64비트 x64 프로세서에 이러한 워크로드를 설치할 경우, x86, x64 및 ARM 코드 빌드를 위한64비트 네이티브 및 교차 컴파일러 도구도 포함됩니다. 32비트 및 64비트 도구는 동일한 코드를 생성하지만 64비트 도구는 미리 컴파일된 헤더 기호 및 전체 프로그램 최적화([/GL](reference/gl-whole-program-optimization.md) 및 [/LTCG](reference/ltcg-link-time-code-generation.md)) 옵션을 위해 더 많은 메모리를 지원합니다. 32비트 도구를 사용할 때 메모리 제한이 발생하는 경우 64비트 도구를 사용해 보십시오.
 
-## <a name="use-a-64-bit-hosted-developer-command-prompt-shortcut"></a>64 비트 호스트 개발자 명령 프롬프트 바로 가기를 사용 하 여
+## <a name="use-a-64-bit-hosted-developer-command-prompt-shortcut"></a>64비트 호스팅 개발자 명령 프롬프트 바로 가기
 
-Visual Studio 64 비트 Windows 운영 체제에서 설치 될 때 64 비트, x64 호스트 네이티브 및 크로스 컴파일러 추가 개발자 명령 프롬프트 바로 가기를 사용할 수 있습니다. Windows 10에서 이러한 명령 프롬프트에 액세스 하려면 합니다 **시작** 메뉴에서 예를 들어 Visual Studio의 버전에 대 한 폴더를 열고 **Visual Studio 2017**, x64 네이티브 또는 크로스 도구 중 하나를 선택 하 고 개발자 명령 프롬프트입니다. Windows 8에서 이러한 명령 프롬프트에 액세스 하려면 합니다 **시작** 화면이 열리면서 **모든 앱**합니다. 설치 된 버전의 Visual Studio에 대 한 머리글 아래에서 엽니다는 **Visual Studio** 폴더 (Visual Studio의 이전 버전에서에 이름을 지정할 수 있습니다 **Visual Studio Tools**). 이전 버전의 Windows에서는 선택 **시작**, 확장 **프로그램도**, 버전에 대 한 폴더 **Visual Studio** (및 이전 버전의 Visual Studio  **Visual Studio Tools**). 자세한 내용은 [개발자 명령 프롬프트 바로 가기](building-on-the-command-line.md#developer_command_prompt_shortcuts)를 참조하세요.
+Visual Studio를 64비트 Windows 운영 체제에 설치하면 64비트 x64 호스팅 네이티브 및 교차 컴파일러에 대한 추가적인 개발자 명령 프롬프트 바로 가기를 사용할 수 있습니다. Windows 10에서 이 명령 프롬프트에 액세스하려면 **시작** 메뉴에서 **Visual Studio 2019** 등과 같은 Visual Studio 버전에 대한 폴더를 연 다음, x64 네이티브 또는 교차 도구 개발자 명령 프롬프트 중 하나를 선택합니다. Windows 8에서 이러한 명령 프롬프트에 액세스하려면 **시작** 화면에서 **모든 앱**을 엽니다. 설치된 Visual Studio 버전에 대한 제목에서 **Visual Studio** 폴더(이전 Visual Studio 버전의 경우 **Visual Studio Tools**일 수 있음)를 엽니다. 이전 버전의 Windows에서는 **시작**을 선택하고 **모든 프로그램**을 확장한 다음, 해당 **Visual Studio** 버전에 대한 폴더(및 이전 버전의 Visual Studio에서는  **Visual Studio Tools**)를 선택합니다. 자세한 내용은 [개발자 명령 프롬프트 바로 가기](building-on-the-command-line.md#developer_command_prompt_shortcuts)를 참조하세요.
 
-## <a name="use-vcvarsallbat-to-set-a-64-bit-hosted-build-architecture"></a>Vcvarsall.bat를 사용 하 여 64 비트로 호스팅된 빌드 아키텍처를 설정 합니다.
+## <a name="use-vcvarsallbat-to-set-a-64-bit-hosted-build-architecture"></a>Vcvarsall.bat를 사용하여 64비트 호스팅 빌드 아키텍처 설정
 
-파일을 명령 네이티브 또는 크로스 컴파일러 도구는 vcvarsall.bat를 실행 하 여 명령줄에서 빌드 구성을 사용할 수 있습니다. 이 명령 파일의 경로 구성 하 고 있는 특정 환경 변수 기존 명령 프롬프트 창에서 아키텍처를 빌드합니다. 특정 지침은 [개발자 명령 파일 위치](building-on-the-command-line.md#developer_command_file_locations)합니다.
+네이티브 또는 교차 컴파일러 도구 빌드 구성은 명령줄에서 vcvarsall.bat를 실행하여 사용할 수 있습니다. 이 명령 파일은 기존 명령 프롬프트 창에서 특정 빌드 아키텍처를 사용할 수 있게 하는 경로 및 환경 변수를 구성합니다. 특정 지침은 [개발자 명령 파일 위치](building-on-the-command-line.md#developer_command_file_locations)를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[구성 C++ 64 비트, x64에 대 한 대상 프로젝트](configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[64비트, x64 대상에 대한 C++ 프로젝트 구성](configuring-programs-for-64-bit-visual-cpp.md)<br/>

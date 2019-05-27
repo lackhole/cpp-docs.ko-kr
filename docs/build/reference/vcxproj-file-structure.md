@@ -1,19 +1,19 @@
 ---
 title: .vcxproj 및 .props 파일 구조
-ms.date: 09/18/2018
+ms.date: 05/16/2019
 helpviewer_keywords:
 - .vcxproj file structure
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
-ms.openlocfilehash: a1052d0a0eeeff177f0a22883fe06cd07d7b03f6
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: 86c393796b1ce3efdb92d8aefd1f653390619ea4
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446496"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837510"
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj 및 .props 파일 구조
 
-[MSBuild](../msbuild-visual-cpp.md)는 Visual Studio의 기본 프로젝트 시스템입니다. Visual C++에서 **파일** > **새 프로젝트**를 차례로 선택하면 `.vcxproj` 확장명의 XML 프로젝트 파일에 설정이 저장되는 MSBuild 프로젝트를 만들 수 있습니다. 프로젝트 파일은 설정을 저장할 수 있는 .props 파일과 .targets 파일을 가져올 수도 있습니다. 대부분의 경우 프로젝트 파일을 수동으로 편집할 필요가 없으며, 실제로 MSBuild를 잘 알고 있지 않으면 수동으로 편집하지 않아야 합니다. 프로젝트 설정을 수정 하려면 Visual Studio 속성 페이지를 사용 해야 가능 (참조 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다. 그러나 경우에 따라 프로젝트 파일 또는 속성 시트를 수동으로 수정해야 할 수도 있습니다. 이 문서에는 이러한 시나리오의 파일 구조에 대한 기본 정보가 포함되어 있습니다.
+[MSBuild](../msbuild-visual-cpp.md)는 Visual Studio의 기본 프로젝트 시스템입니다. Visual C++에서 **파일** > **새 프로젝트**를 차례로 선택하면 `.vcxproj` 확장명의 XML 프로젝트 파일에 설정이 저장되는 MSBuild 프로젝트를 만들 수 있습니다. 프로젝트 파일은 설정을 저장할 수 있는 .props 파일과 .targets 파일을 가져올 수도 있습니다. 대부분의 경우 프로젝트 파일을 수동으로 편집할 필요가 없으며, 실제로 MSBuild를 잘 알고 있지 않으면 수동으로 편집하지 않아야 합니다. 가능하면 Visual Studio 속성 페이지를 사용하여 프로젝트 설정을 수정해야 합니다([Visual Studio에서 C++ 컴파일러 설정 및 속성 빌드](../working-with-project-properties.md) 참조). 그러나 경우에 따라 프로젝트 파일 또는 속성 시트를 수동으로 수정해야 할 수도 있습니다. 이 문서에는 이러한 시나리오의 파일 구조에 대한 기본 정보가 포함되어 있습니다.
 
 **중요:**
 
@@ -21,13 +21,13 @@ ms.locfileid: "65446496"
 
 1. 파일의 구조는 이 문서에서 설명하는 규정된 양식을 따라야 합니다.
 
-1. Visual Studio C++ 현재 프로젝트 시스템 프로젝트 항목에 와일드 카드를 지원 하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
+1. 현재 Visual Studio C++ 프로젝트 시스템은 프로젝트 항목에 와일드카드를 지원하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
 
    ```xml
    <ClCompile Include="*.cpp"/>
    ```
 
-1. Visual Studio C++ 현재 프로젝트 시스템에서 프로젝트 항목 경로 매크로 지원 하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
+1. 현재 Visual Studio C++ 프로젝트 시스템은 프로젝트 항목 경로에 매크로를 지원하지 않습니다. 예를 들어 다음 예제는 지원되지 않습니다.
 
    ```xml
    <ClCompile Include="$(IntDir)\generated.cpp"/>
@@ -47,7 +47,7 @@ ms.locfileid: "65446496"
 
 텍스트 또는 XML 편집기를 사용하여 .vcxproj 파일의 내용을 검사할 수 있습니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고, **프로젝트 언로드**를 선택한 다음, **Foo.vcxproj 편집**을 선택하여 Visual Studio에서 볼 수 있습니다.
 
-가장 먼저 주목해야 할 것은 최상위 요소가 특정 순서로 표시된다는 것입니다. 예를 들어:
+가장 먼저 주목해야 할 것은 최상위 요소가 특정 순서로 표시된다는 것입니다. 예:
 
 - 대부분의 속성 그룹 및 항목 정의 그룹은 Microsoft.Cpp.Default.props를 가져온 후에 표시됩니다.
 
@@ -104,7 +104,7 @@ MSBuild는 순차적 평가 모델을 기반으로 하므로 프로젝트 파일
 
 ### <a name="projectconfiguration-elements"></a>ProjectConfiguration 요소
 
-다음 코드 조각에서는 프로젝트 구성을 보여 줍니다. 이 예제에서 'Debug|x64'는 구성 이름입니다. 프로젝트 구성 이름은 $(구성)|$(플랫폼) 형식이어야 합니다. 프로젝트 구성 노드를 두 개의 속성이 있을 수 있습니다. 구성 및 플랫폼입니다. 구성이 활성화되면 이러한 속성이 자동으로 여기에 지정된 값으로 설정됩니다.
+다음 코드 조각에서는 프로젝트 구성을 보여 줍니다. 이 예제에서 'Debug|x64'는 구성 이름입니다. 프로젝트 구성 이름은 $(구성)|$(플랫폼) 형식이어야 합니다. 프로젝트 구성 노드에는 Configuration 및 Platform의  두 가지 속성이 있을 수 있습니다. 구성이 활성화되면 이러한 속성이 자동으로 여기에 지정된 값으로 설정됩니다.
 
 ```xml
 <ProjectConfiguration Include="Debug|x64">
@@ -213,7 +213,7 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 
 프로젝트의 항목(소스 파일 등)이 포함됩니다. 조건은 프로젝트 항목(즉, 규칙 정의에서 프로젝트 항목으로 처리되는 항목 형식)에 지원되지 않습니다.
 
-메타데이터에는 모두 동일하더라도 각 구성에 대한 구성 조건이 있어야 합니다. 예를 들어:
+메타데이터에는 모두 동일하더라도 각 구성에 대한 구성 조건이 있어야 합니다. 예:
 
 ```xml
 <ItemGroup>
@@ -224,7 +224,7 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 </ItemGroup>
 ```
 
-Visual Studio C++ 현재 프로젝트 시스템 프로젝트 항목에 와일드 카드를 지원 하지 않습니다.
+현재 Visual Studio C++ 프로젝트 시스템은 프로젝트 항목에 와일드카드를 지원하지 않습니다.
 
 ```xml
 <ItemGroup>
@@ -232,7 +232,7 @@ Visual Studio C++ 현재 프로젝트 시스템 프로젝트 항목에 와일드
 </ItemGroup>
 ```
 
-Visual Studio C++ 현재 프로젝트 시스템에서 프로젝트 항목 매크로 지원 하지 않습니다.
+현재 Visual Studio C++ 프로젝트 시스템은 프로젝트 항목에 매크로를 지원하지 않습니다.
 
 ```xml
 <ItemGroup>
@@ -272,7 +272,7 @@ Visual Studio IDE는 위에서 설명한 순서가 있는 프로젝트 파일에
 
 ## <a name="how-the-ide-uses-element-labels"></a>IDE에서 요소 레이블을 사용하는 방법
 
-IDE의 일반 속성 페이지에서 **UseOfAtl** 속성을 설정하면, 프로젝트 파일의 Configuration 속성 그룹에 작성되고 동일한 속성 페이지에서 **TargetName** 속성이 레이블이 없는 구성별 속성 그룹에 작성됩니다. Visual Studio에서는 속성 페이지의 xml 파일에서 각 속성을 작성할 위치에 대한 정보를 찾습니다. **일반** 속성 페이지(영문 버전의 Visual Studio Enterprise Edition이 있다고 가정)의 경우 해당 파일은 `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\1033\general.xml`입니다. 속성 페이지 XML 규칙 파일은 규칙 및 관련된 모든 속성에 대한 정적 정보를 정의합니다. 이러한 정보 중 하나는 대상 파일(해당 값이 작성된 파일)의 Rule 속성에 대한 기본 설정 위치입니다. 기본 설정 위치는 프로젝트 파일 요소의 Label 특성으로 지정됩니다.
+IDE의 일반 속성 페이지에서 **UseOfAtl** 속성을 설정하면, 프로젝트 파일의 Configuration 속성 그룹에 작성되고 동일한 속성 페이지에서 **TargetName** 속성이 레이블이 없는 구성별 속성 그룹에 작성됩니다. Visual Studio에서는 속성 페이지의 xml 파일에서 각 속성을 작성할 위치에 대한 정보를 찾습니다. **일반** 속성 페이지(영문 버전의 Visual Studio 2019 Enterprise Edition이 있다고 가정)의 경우 해당 파일은 `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets\1033\general.xml`입니다. 속성 페이지 XML 규칙 파일은 규칙 및 관련된 모든 속성에 대한 정적 정보를 정의합니다. 이러한 정보 중 하나는 대상 파일(해당 값이 작성된 파일)의 Rule 속성에 대한 기본 설정 위치입니다. 기본 설정 위치는 프로젝트 파일 요소의 Label 특성으로 지정됩니다.
 
 ## <a name="property-sheet-layout"></a>속성 시트 레이아웃
 
@@ -288,9 +288,9 @@ IDE의 일반 속성 페이지에서 **UseOfAtl** 속성을 설정하면, 프로
 </Project>
 ```
 
-사용자 고유의 속성 시트를 만들려면 VCTargets 폴더에 있는 .props 파일 중 하나를 복사하여 용도에 맞게 수정합니다. Visual Studio 2017 Enterprise 버전의 경우 기본 VCTargets 경로는 `%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets`입니다.
+사용자 고유의 속성 시트를 만들려면 VCTargets 폴더에 있는 .props 파일 중 하나를 복사하여 용도에 맞게 수정합니다. Visual Studio 2019 Enterprise 버전의 경우 기본 VCTargets 경로는 `%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets`입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)<br/>
 [속성 페이지 XML 파일](property-page-xml-files.md)

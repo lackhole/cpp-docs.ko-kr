@@ -1,28 +1,29 @@
 ---
 title: Visual Studio의 C++
 description: Visual C++는 Visual Studio IDE에 있는 Microsoft C++ 컴파일러, 코드 편집기 및 관련 도구의 이름입니다. Visual C++를 사용하여 Windows, Linux, Android 및 iOS 프로그램을 개발합니다.
-ms.date: 09/26/2018
+ms.date: 05/13/2019
 ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: a01c6448174a35da900b7b50a1df5916a2983201
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 2706d232dba2a7971edd8d84da2b1d1399ed6e25
+ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222607"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934152"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio의 C++
 
 > [!NOTE]
-> 이 개발자 설명서는 Visual Studio 2015 및 Visual Studio 2017에 적용됩니다.
+> 이 개발자 설명서는 Visual Studio 2015 이상에 적용됩니다. 페이지의 왼쪽 위에 있는 버전 선택기를 사용하여 사용 중인 Visual Studio 버전을 선택합니다.
 >
 > 프로그램을 실행할 수 있도록 Visual C++ 재배포 가능 패키지를 찾고 있다면 [Microsoft 다운로드 센터](http://www.microsoft.com/download/)로 이동하여 검색 상자에 **Visual C++** 를 입력합니다.
 
-
 일반적으로 Visual C++ 또는 MSVC라고 줄여부르는 Microsoft Visual C++는 C++, C 및 어셈블리 언어 개발 도구 및 Windows에서 Visual Studio의 일부로 사용할 수 있는 라이브러리의 이름입니다. 이러한 도구 및 라이브러리를 통해 UWP(유니버설 Windows 플랫폼) 앱, 네이티브 Windows 데스크톱 및 서버 애플리케이션, Windows, Linux, Android 및 iOS에서 실행되는 플랫폼 간 라이브러리 및 앱뿐만 아니라 .NET Framework를 사용하는 관리 앱 및 라이브러리를 만들 수 있습니다. Visual C++를 사용하여 간단한 콘솔 앱 항목부터 Windows 데스크톱용 가장 정교하고 복잡한 앱, 디바이스 드라이버 및 운영 체제 구성 요소부터 모바일 디바이스용 플랫폼 간 게임, 가장 작은 IoT 디바이스부터 Azure 클라우드의 다중 서버 성능 컴퓨팅 기능을 작성할 수 있습니다.
+
+Visual Studio 2015, 2017 및 2019를 Side-by-Side 설치할 수 있습니다. Visual Studio 2019(컴파일러 도구 세트 v142)를 사용하면 Visual Studio 2015(v140) 및 Visual Studio 2017(v141)의 도구 세트를 통해 프로그램을 편집 및 빌드할 수 있습니다.
 
 ## <a name="whats-new-and-conformance-history"></a>새로운 기능 및 규칙 기록
 

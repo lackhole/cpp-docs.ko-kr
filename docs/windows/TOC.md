@@ -3,7 +3,7 @@
 # [연습: Windows 데스크톱 애플리케이션 만들기](walkthrough-creating-windows-desktop-applications-cpp.md)
 # [Windows 데스크톱 마법사](win32-application-wizard.md)
 # [ATL(액티브 템플릿 라이브러리)](../atl/atl-com-desktop-components.md)
-# [MFC(Microsoft Foundation Class)](../mfc/TOC.md)
+# [MFC(Microsoft Foundation Class)](../mfc/mfc-desktop-applications.md)
 # [ATL 및 MFC 공유 클래스](../atl-mfc-shared/TOC.md)
 # [데이터 액세스](../data/data-access-in-cpp.md)
 # [텍스트 및 문자열](../text/text-and-strings-in-visual-cpp.md)

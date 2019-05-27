@@ -3,19 +3,19 @@ title: vcpkg-- Windows, Linux 및 MacOS용 C++ 패키지 관리자
 description: vcpkg는 Windows에서 오픈 소스 C++ 라이브러리 획득 및 설치를 크게 간소화하는 명령줄 패키지 관리자입니다.
 author: mikeblome
 ms.author: mblome
-ms.date: 03/18/2019
+ms.date: 05/16/2019
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: 5dba6877c4489337625eed016c77b853f84af990
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 58f8a9b8223dc54bf083ebbac97528f88890777c
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217660"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837015"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux 및 MacOS용 C++ 패키지 관리자
 
-vcpkg는 Windows, Linux 및 MacOS에서 타사 라이브러리 획득 및 설치를 크게 간소화하는 명령줄 패키지 관리자입니다. 프로젝트에서 타사 라이브러리를 사용하는 경우 vcpkg를 사용하여 설치하는 것이 좋습니다. vcpkg는 오픈 소스와 독점 라이브러리를 모두 지원합니다. vcpkg Windows 카탈로그의 모든 라이브러리가 Visual Studio 2015 및 Visual Studio 2017과의 호환성 테스트를 거쳤습니다. 2018년 5월 현재 Windows 카탈로그에는 900개 이상의 라이브러리가 있고 Linux/MacOS 카탈로그에는 350개 이상의 라이브러리가 있습니다. C++ 커뮤니티는 지속적으로 두 카탈로그에 더 많은 라이브러리를 추가하고 있습니다.
+vcpkg는 Windows, Linux 및 MacOS에서 타사 라이브러리 획득 및 설치를 크게 간소화하는 명령줄 패키지 관리자입니다. 프로젝트에서 타사 라이브러리를 사용하는 경우 vcpkg를 사용하여 설치하는 것이 좋습니다. vcpkg는 오픈 소스와 독점 라이브러리를 모두 지원합니다. vcpkg Windows 카탈로그의 모든 라이브러리가 isual Studio 2015, Visual Studio 2017 및 Visual Studio 2019와의 호환성 테스트를 거쳤습니다. 2018년 5월 현재 Windows 카탈로그에는 900개 이상의 라이브러리가 있고 Linux/MacOS 카탈로그에는 350개 이상의 라이브러리가 있습니다. C++ 커뮤니티는 지속적으로 두 카탈로그에 더 많은 라이브러리를 추가하고 있습니다.
 
 ## <a name="simple-yet-flexible"></a>단순하면서도 유연한
 
@@ -23,7 +23,7 @@ vcpkg는 Windows, Linux 및 MacOS에서 타사 라이브러리 획득 및 설치
 
 ## <a name="sources-not-binaries"></a>소스는 이진 파일 아님
 
-Windows 카탈로그에 있는 라이브러리의 경우 vcpkg는 이진 파일[1] 대신 소스를 다운로드합니다. 이것은 Visual Studio 2017 또는 Visual Studio 2015(2017이 설치되지 않은 경우)를 사용하여 해당 소스를 컴파일합니다. C++에서는 사용하는 라이브러리가 연결된 애플리케이션 코드와 동일한 컴파일러 및 컴파일러 버전을 사용하여 컴파일되어야 합니다. vcpkg를 사용하여 이진 파일 불일치 및 이로 인해 발생할 수 있는 문제를 제거하거나 적어도 크게 줄일 수 있습니다. 특정 버전의 컴파일러에서 표준화된 팀에서는 한 팀 구성원이 vcpkg를 사용하여 소스를 다운로드하고 이진 파일 집합을 컴파일한 다음, 내보내기 명령을 사용하여 이진 파일과 헤더를 압축하여 다른 팀 구성원에게 내보낼 수 있습니다. 자세한 내용은 아래의 [컴파일된 이진 파일 및 헤더 내보내기](#export_binaries_per_project)를 참조하세요.
+Windows 카탈로그에 있는 라이브러리의 경우 vcpkg는 이진 파일[1] 대신 소스를 다운로드합니다. 찾을 수 있는 가장 최신 Visual Studio 버전을 사용하여 해당 소스를 컴파일합니다. C++에서는 사용하는 라이브러리가 연결된 애플리케이션 코드와 동일한 컴파일러 및 컴파일러 버전을 사용하여 컴파일되어야 합니다. vcpkg를 사용하여 이진 파일 불일치 및 이로 인해 발생할 수 있는 문제를 제거하거나 적어도 크게 줄일 수 있습니다. 특정 버전의 컴파일러에서 표준화된 팀에서는 한 팀 구성원이 vcpkg를 사용하여 소스를 다운로드하고 이진 파일 집합을 컴파일한 다음, 내보내기 명령을 사용하여 이진 파일과 헤더를 압축하여 다른 팀 구성원에게 내보낼 수 있습니다. 자세한 내용은 아래의 [컴파일된 이진 파일 및 헤더 내보내기](#export_binaries_per_project)를 참조하세요.
 
 포트 컬렉션에 있는 개인 라이브러리로 vcpkg 클론을 만들면 미리 작성된 이진 파일 및 헤더를 다운로드 하는 포트를 추가하고 원하는 위치로 해당 파일을 간단히 복사하는 portfile.cmake 파일을 작성할 수 있습니다.
 
