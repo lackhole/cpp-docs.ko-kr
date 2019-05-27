@@ -1,14 +1,14 @@
 ---
 title: CppProperties.json 스키마 참조
-ms.date: 03/21/2019
+ms.date: 05/16/2019
 helpviewer_keywords:
 - CMake in Visual Studio
-ms.openlocfilehash: 05bb92b0fe791ad8b0037665c2db32a08fa52d7c
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: e80f4e8a189510a9a3e8860609d74121b7cbb0ef
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220847"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837047"
 ---
 # <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json 스키마 참조
 
@@ -115,9 +115,9 @@ Visual Studio는 x86 및 x64 디버그와 릴리스에 대해 미리 정의된 �
 |`compilerSwitches`|IntelliSense 동작에 영향을 줄 수 있는 하나 이상의 추가 스위치|
 |`forcedInclude`|모든 컴파일 단위에 자동으로 포함될 헤더(MSVC에서 /FI에 매핑되거나 clang에서 -include에 매핑됨)|
 |`undefines`|정의되지 않은 매크로 목록(MSVC에서 /U에 매핑됨)|
-|`intelliSenseMode`|사용할 IntelliSense 엔진. MSVC, gcc 또는 Clang에 대한 아키텍처 특정 변형을 지정할 수 있습니다.<br/><br/>-windows-msvc-x86 (기본값)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
+|`intelliSenseMode`|사용할 IntelliSense 엔진. MSVC, gcc 또는 Clang에 대한 아키텍처 특정 변형을 지정할 수 있습니다.<br/><br/>- windows-msvc-x86(기본값)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
 
-참고: 값 `msvc-x86` 고 `msvc-x64` 레거시의 이유로 지원 됩니다. 사용 하십시오는 `windows-msvc*` 변형 합니다.
+참고: `msvc-x86` 및 `msvc-x64` 값은 레거시의 목적으로만 지원됩니다. `windows-msvc*` 변형을 사용하세요.
 
 ## <a name="custom-configurations"></a>사용자 지정 구성
 
@@ -264,7 +264,7 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
 |-|-|
 |`${workspaceRoot}`| 작업 영역 폴더의 전체 경로|
 |`${projectRoot}`| `CppProperties.json`이 있는 폴더의 전체 경로|
-|`${vsInstallDir}`| 실행되는 VS 2017 인스턴스가 설치된 폴더의 전체 경로|
+|`${vsInstallDir}`| 실행되는 Visual Studio 인스턴스를 실행하는 폴더의 전체 경로|
 
 예를 들어 프로젝트에 include 폴더가 있고 windows.h 및 Windows SDK의 다른 일반 헤더가 포함되어 있으면, `CppProperties.json` 구성 파일을 다음과 같은 include로 업데이트할 수 있습니다.
 
@@ -289,7 +289,7 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
 ```
 
 > [!Note]
-> `%WindowsSdkDir%` 및 `%VCToolsInstallDir%`은 전역 환경 변수로 설정되지 않으므로 devenv.exe는 이러한 변수를 정의하는 “VS 2017용 개발자 명령 프롬프트”에서 시작해야 합니다.
+> `%WindowsSdkDir%` 및 `%VCToolsInstallDir%`은 글로벌 환경 변수로 설정되지 않으므로 devenv.exe는 이러한 변수를 정의하는 개발자 명령 프롬프트에서 시작해야 합니다. (Windows 시작 메뉴에 "개발자" 입력)
 
 ## <a name="troubleshoot-intellisense-errors"></a>IntelliSense 오류 문제 해결
 

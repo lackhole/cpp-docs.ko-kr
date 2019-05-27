@@ -1,4 +1,4 @@
----
+﻿---
 title: /FR, /Fr(.Sbr 파일 만들기)
 ms.date: 11/04/2016
 f1_keywords:
@@ -44,7 +44,7 @@ ms.locfileid: "62292798"
 
 `filename`을 지정하지 않으면 .sbr 파일은 소스 파일과 동일한 기본 이름을 가져옵니다.
 
-**/Fr**은 사용되지 않습니다. 대신 **/FR**을 사용하세요. 자세한 내용은 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)에서 사용되지 않는 컴파일러 옵션을 참조하세요.
+**/Fr** 은 사용되지 않습니다. 대신 **/FR** 을 사용하세요. 자세한 내용은 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)에서 사용되지 않는 컴파일러 옵션을 참조하세요.
 
 > [!NOTE]
 >  .sbr 확장명을 변경하지 마세요. BSCMAKE의 중간 파일에서 해당 확장자가 필요합니다.

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - file types [C++], MFC source and header
 ms.assetid: f61419a8-bf69-4bbb-8f7c-1734be5e6db6
-ms.openlocfilehash: 89e02054b72946c4b1b773ce79b1c380da6ef01a
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: 6a6561e993016e70764186114e1f7cabd93cdc2d
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446247"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707451"
 ---
 # <a name="mfc-program-or-control-source-and-header-files"></a>MFC 프로그램 또는 컨트롤 소스 및 헤더 파일
 
@@ -32,8 +32,8 @@ Visual Studio에서 MFC 프로젝트를 만들 때, 생성하는 프로젝트에
 |Mainfrm.cpp, Mainfrm.h|[CFrameWnd](../../mfc/reference/cframewnd-class.md)(SDI 애플리케이션용) 또는 [CMDIFrameWnd](../../mfc/reference/cmdiframewnd-class.md)(MDI 애플리케이션용)에서 **CMainFrame** 클래스를 파생시킵니다. 애플리케이션 마법사의 **애플리케이션 옵션** 페이지(4/6 단계)에서 해당 옵션을 선택한 경우 **CMainFrame** 클래스는 도구 모음 단추 및 상태 표시줄의 생성을 처리합니다. **CMainFrame** 사용에 대한 내용은 [애플리케이션 마법사로 만든 프레임 창 클래스](../../mfc/frame-window-classes-created-by-the-application-wizard.md)를 참조합니다.|
 |Childfrm.cpp, Childfrm.h|**CChildFrame** 클래스를 [CMDIChildWnd](../../mfc/reference/cmdichildwnd-class.md)에서 파생시킵니다. **CChildFrame** 클래스는 MDI 문서 프레임 창에 사용됩니다. 이러한 파일은 MDI 옵션을 선택하는 경우 항상 만들어집니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[시각적 개체에 대해 만들어지는 형식 파일 C++ 프로젝트](file-types-created-for-visual-cpp-projects.md)<br>
+[Visual Studio C++ 프로젝트용으로 만든 파일 형식](file-types-created-for-visual-cpp-projects.md)<br>
 [ATL 프로그램 또는 컨트롤 소스 및 헤더 파일](atl-program-or-control-source-and-header-files.md)<br>
 [CLR 프로젝트](files-created-for-clr-projects.md)

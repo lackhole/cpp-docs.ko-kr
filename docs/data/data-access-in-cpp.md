@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data [C++], data access technologies
 - data access [C++], class libraries for databases
 ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
-ms.openlocfilehash: a68c4a9df3b439ae641c5e4cbe6f3fbc8b8e6355
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: e9222f16ef6356c2d89401690bda7e6d27f8aba6
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222538"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65708023"
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++의 데이터 액세스
 
@@ -23,38 +23,38 @@ Microsoft는 2011년부터 온-프레미스와 클라우드 모두에서 Microso
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[데이터 액세스 프로그래밍 (MFC/ATL)](data-access-programming-mfc-atl.md)<br/>
+[데이터 액세스 프로그래밍(MFC/ATL)](data-access-programming-mfc-atl.md)<br/>
 Visual C++를 사용하는 레거시 데이터 액세스 프로그래밍에 대해 설명합니다. 이 프로그램에서는 기본적으로 ATL(액티브 템플릿 클래스 라이브러리) 또는 MFC(Microsoft Foundation Class) 라이브러리와 같은 클래스 라이브러리 중 하나를 사용하므로 데이터베이스 API를 간편하게 사용할 수 있습니다.
 
 [ODBC(Open Database Connectivity)](odbc/open-database-connectivity-odbc.md)<br/>
 MFC(Microsoft Foundation Classes) 라이브러리는 ODBC(Open Database Connectivity)를 사용하여 프로그래밍하는 데 필요한 클래스를 제공합니다.
 
 [OLE DB 프로그래밍](oledb/ole-db-programming.md)<br/>
-연결 된 서버에 대해 프로그래밍 하는 경우에 특히 일부 시나리오에서는 여전히 필요한 대부분의 레거시 인터페이스입니다.
+대부분의 레거시 인터페이스는 일부 시나리오에서, 특히 연결된 서버에 대해 프로그래밍할 때 여전히 필요합니다.
 
 ## <a name="related-topics"></a>관련 항목
 
-[C를 사용 하 여 SQL Database에 연결 하 고C++](/azure/sql-database/sql-database-develop-cplusplus-simple)<br/>
-C에서 Azure SQL Database에 연결 하거나 C++ 응용 프로그램입니다.
+[C 및 C++를 사용하여 SQL Database에 연결](/azure/sql-database/sql-database-develop-cplusplus-simple)<br/>
+C 또는 C++ 애플리케이션에서 Azure SQL Database에 연결합니다.
 
-[에 대 한 Microsoft Azure Storage 클라이언트 라이브러리C++](https://github.com/Azure/azure-storage-cpp)<br/>
-[Azure Storage](/azure/storage/storage-introduction)는 내구성, 가용성, 확장성을 활용하여 고객의 요구 사항을 충족하는 최신 응용 프로그램을 위한 클라우드 저장소 솔루션입니다. C++용 Microsoft Azure Storage Client Library를 사용하여 C++에서 Azure Storage에 연결하세요.
+[C++용 Microsoft Azure Storage Client Library](https://github.com/Azure/azure-storage-cpp)<br/>
+[Azure Storage](/azure/storage/storage-introduction)는 내구성, 가용성, 확장성을 활용하여 고객의 요구 사항을 충족하는 최신 애플리케이션을 위한 클라우드 저장소 솔루션입니다. C++용 Microsoft Azure Storage Client Library를 사용하여 C++에서 Azure Storage에 연결하세요.
 
-[ODBC Driver for SQL Server](/sql/connect/odbc/microsoft-odbc-driver-for-sql-server)<br/>
-최신 ODBC 드라이버에서 Microsoft SQL Server 및 Microsoft Azure SQL 데이터베이스 C에 대 한 강력한 데이터 액세스를 제공 /C++ 기반 응용 프로그램입니다. 상시 암호화를 비롯 한 기능 지원, Azure Active Directory 및 AlwaysOn 가용성 그룹을 제공 합니다. MacOS 및 Linux에서도 사용할 수 있습니다.
+[SQL Server용 ODBC 드라이버](/sql/connect/odbc/microsoft-odbc-driver-for-sql-server)<br/>
+최신 ODBC 드라이버는 Microsoft SQL Server 및 C/C++용 Microsoft Azure SQL Database 기반 애플리케이션에 대한 강력한 데이터 액세스를 제공합니다. Always Encrypted, Azure Active Directory 및 AlwaysOn 가용성 그룹을 비롯한 여러 기능을 지원합니다. MacOS 및 Linux에서도 사용할 수 있습니다.
 
 [SQL Server용 OLE DB 드라이버](/sql/connect/oledb/oledb-driver-for-sql-server)<br/>
-최신 OLE DB 드라이버는 독립 실행형 데이터 액세스 응용 프로그래밍 인터페이스 (API) Microsoft SQL Server 및 Microsoft Azure SQL Database를 지 원하는 경우
+최신 OLE DB 드라이버는 Microsoft SQL Server 및 Microsoft Azure SQL Database를 지원하는 독립 실행형 데이터 액세스 API(애플리케이션 프로그래밍 인터페이스)입니다.
 
 [Microsoft Azure C 및 C++ 개발자 센터](https://azure.microsoft.com/develop/cpp/)<br/>
 향상된 유연성, 확장성 및 안정성을 제공하는 Azure에서는 원하는 도구를 사용하여 C++ 애플리케이션을 쉽게 빌드할 수 있습니다.
 
-[Blob Storage를 사용 하는 방법C++](https://docs.microsoft.com/azure/storage/storage-c-plus-plus-how-to-use-blobs)<br/>
+[C++에서 Blob Storage를 사용하는 방법](https://docs.microsoft.com/azure/storage/storage-c-plus-plus-how-to-use-blobs)<br/>
 Azure Blob Storage는 클라우드에서 구조화되지 않은 데이터를 개체/Blob으로 저장하는 서비스입니다. Blob Storage는 문서, 미디어 파일, 애플리케이션 설치 관리자 등과 같은 모든 유형의 텍스트 또는 이진 데이터를 저장할 수 있습니다. Blob 스토리지를 개체 스토리지라고도 합니다.
 
-[ ODBC 프로그래머 참조](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
-ODBC 인터페이스는 C 프로그래밍 언어와 함께 사용하도록 설계되었습니다. 세 가지 영역에 걸쳐 ODBC 인터페이스 사용: SQL 문, ODBC 함수 호출 및 C 프로그래밍 합니다.
+[ODBC 프로그래머 참조](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
+ODBC 인터페이스는 C 프로그래밍 언어와 함께 사용하도록 설계되었습니다. ODBC 인터페이스 사용은 다음 세 가지 영역에 걸쳐 있습니다. SQL 문, ODBC 함수 호출 및 C 프로그래밍.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[Visual C++](../overview/visual-cpp-in-visual-studio.md)
+[Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)

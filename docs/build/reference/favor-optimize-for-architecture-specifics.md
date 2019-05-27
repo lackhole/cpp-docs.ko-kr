@@ -1,4 +1,4 @@
----
+﻿---
 title: /favor(아키텍처에 맞게 최적화)
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,11 +16,11 @@ ms.locfileid: "62292824"
 ---
 # <a name="favor-optimize-for-architecture-specifics"></a>/favor(아키텍처에 맞게 최적화)
 
-**/favor:**`option`은 AMD 및 Intel 아키텍처에서 마이크로 아키텍처나 특정 아키텍처에 최적화된 코드를 생성합니다.
+**/favor:** `option`은 AMD 및 Intel 아키텍처에서 마이크로 아키텍처나 특정 아키텍처에 최적화된 코드를 생성합니다.
 
 ## <a name="syntax"></a>구문
 
-> **/favor:**{0}**blend** | **ATOM** | **AMD64** | **INTEL64**}
+> **/favor:** {0}**blend** | **ATOM** | **AMD64** | **INTEL64**}
 
 ## <a name="remarks"></a>설명
 
