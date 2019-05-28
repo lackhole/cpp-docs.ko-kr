@@ -42,7 +42,7 @@ int main( ) {
 
 - c:\test\compiler_option_fc.cpp(5) : error C2143: syntax error : missing ';' before '}'
 
-**/FC** 사용 하는 경우 파일 이름의 전체 경로 표시 하려는 경우 필요 합니다 &#95; &#95;파일&#95; &#95; 매크로입니다. 참조 [미리 정의 된 매크로](../../preprocessor/predefined-macros.md) 대 한 자세한 내용은 &#95; &#95;파일&#95;&#95;합니다.
+__FILE__ 매크로를 사용할 때 파일 이름의 전체 경로를 확인하는 경우에도 **/FC**가 필요합니다. __FILE__에 대한 보다 자세한 내용은 [미리 정의된 매크로](../../preprocessor/predefined-macros.md)를 참조합니다.
 
 **/FC** 옵션은 **/ZI**에 포함됩니다. **/ZI**에 대한 자세한 내용은 [/Z7, /Zi, /ZI (디버그 정보 형식)](z7-zi-zi-debug-information-format.md)을 참조합니다.
 
@@ -52,7 +52,7 @@ int main( ) {
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **구성 속성** > **C/C++** > **고급** 속성 페이지를 선택하세요.
+1. **구성 속성** > **C/C++**  > **고급** 속성 페이지를 선택하세요.
 
 1. **전체 경로 사용** 속성을 수정합니다.
 
