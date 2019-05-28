@@ -1,6 +1,6 @@
 ---
 title: UNIX에서 Win32로 이식
-ms.date: 08/02/2018
+ms.date: 05/02/2019
 helpviewer_keywords:
 - APIs [C++], porting to Win32
 - Windows API [C++], migrating from UNIX
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - porting to Win32 [C++]
 - Win32 applications [C++], migrating from UNIX
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
-ms.openlocfilehash: 3146c94879532a5c58208369bb6d131a3a027c33
-ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
+ms.openlocfilehash: 66ac5b478929a42b37d6d0b712063552cfae9104
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58278478"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65449018"
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX에서 Win32로 이식
 
@@ -39,17 +39,9 @@ UNIX 프로그래머가 일반적으로 고려하는 한 가지 옵션은 UNIX�
 
 [Unix Migration Project Guide](https://technet.microsoft.com/library/bb656287.aspx)(Unix 마이그레이션 프로젝트 가이드)에서는 UNIX에서 Win32로 많은 프로젝트를 마이그레이션하는 방법에 대한 개괄적인 도움말을 제공하여 UNIX 사용자 지정 애플리케이션 마이그레이션 가이드를 보완합니다. 이 가이드에서는 프로젝트 마이그레이션의 각 단계에서 고려해야 할 문제에 대해 조언합니다.
 
-### <a name="interopsystemscom"></a>InteropSystems.com
-
-[http://www.interopsystems.com/](http://www.interopsystems.com/)
-
-UNIX에서 Win32로의 포팅을 지원하는 소프트웨어를 제공하는 회사를 위한 타사 사이트입니다.
-
 ### <a name="c-boost-web-site"></a>C++ Boost 웹 사이트
 
-[http://boost.sourceforge.net/regression-logs/](http://boost.sourceforge.net/regression-logs/)
-
-[http://boost.sourceforge.net/boost-build2/](http://boost.sourceforge.net/boost-build2/)
+[https://www.boost.org/](https://www.boost.org/)
 
 ## <a name="porting-unix-applications-directly-to-win32"></a>Win32로 직접 UNIX 애플리케이션 포팅
 
