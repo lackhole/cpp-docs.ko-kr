@@ -18,7 +18,7 @@ ms.locfileid: "62270915"
 ---
 # <a name="gh-enable-pexit-hook-function"></a>/GH(_pexit 후크 함수 사용)
 
-호출된 `_pexit` 함수의 모든 메서드 또는 함수의 끝입니다.
+모든 메서드와 함수의 끝에 `_pexit` 함수를 호출합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,15 +28,15 @@ ms.locfileid: "62270915"
 
 ## <a name="remarks"></a>설명
 
-합니다 `_pexit` 함수 라이브러리의 일부가 아니며에 대한 정의 제공 하는 것 `_pexit`입니다.
+`_pexit` 함수는 라이브러리의 일부가 아니며, `_pexit`에 대한 정의는 개발자의 제공에 따라 달라집니다.
 
-명시적으로 `_pexit`를 호출하지 않는다면 프로토타입을 제공하지 않아도 됩니다. 함수 처럼 다음과 같은 프로토타입의 되었 및 항목에 대해 모든 레지스터의 콘텐츠를 푸시하며 종료시 변경 되지 않은 콘텐츠를 pop에 나타나야 합니다.
+명시적으로 `_pexit`를 호출하지 않는다면 프로토타입을 제공하지 않아도 됩니다. 마치 함수에 이어 프로토타입이 있는것 처럼 실행되며 레지스터에 있는 모든 내용을 푸시하고 종료시 변경되지 않은 내용을 팝 해야 합니다.
 
 ```
 void __declspec(naked) __cdecl _pexit( void );
 ```
 
-`_pexit` 비슷합니다 `_penter`; 참조 [/Gh (_penter 후크 함수 사용)](gh-enable-penter-hook-function.md) 작성하는 방법의 예는 `_pexit` 함수입니다.
+`_pexit`는 `_penter`와 비슷합니다; `_pexit` 함수의 작성방법은 [/Gh (_penter 후크 함수 사용)](gh-enable-penter-hook-function.md)을 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
