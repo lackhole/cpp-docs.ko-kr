@@ -21,7 +21,7 @@ ms.locfileid: "62292187"
 ---
 # <a name="ge-enable-stack-probes"></a>/Ge(스택 조사 사용)
 
-지역 변수를 사용하여 저장공간이 필요한 모든 함수 호출에 대한 스택 조사를 활성화 합니다.
+지역 변수에 대한 저장소를 필요로 하는 모든 함수 호출에 대한 스택 프로브를 활성화합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -31,11 +31,11 @@ ms.locfileid: "62292187"
 
 ## <a name="remarks"></a>설명
 
-이 메커니즘은 스택 조사 기능을 갱신할 때 유용 합니다. 스택 조사 기능을 갱신하는 대신 [/Gh (_penter 후크 함수 사용)](gh-enable-penter-hook-function.md) 를 사용하는 것이 좋습니다.
+이 메커니즘은 스택 프로브 기능을 다시 쓸 때 유용합니다. 스택 프로브 기능을 다시 쓰는 대신 [/Gh(_penter 후크 함수 사용)](gh-enable-penter-hook-function.md)를 사용하는 것이 좋습니다.
 
-[/Gs (스택 검사 호출 제어)](gs-control-stack-checking-calls.md) 는 동일한 효과를 냅니다.
+[/Gs(스택 검사 호출 제어)](gs-control-stack-checking-calls.md)는 동일한 효과를 냅니다.
 
-**/Ge**는 더이상 사용 되지 않습니다; Visual Studio 2005부터 컴파일러가 자동으로 스택 검사를 수행 합니다. 사용 되지 않는 컴파일러 옵션은**컴파일러 옵션 및 사용 되지 않음**의 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)을 참조합니다.
+**/Ge**는 더 이상 사용되지 않습니다. Visual Studio 2005부터 컴파일러가 자동으로 스택 검사를 수행합니다. 사용되지 않는 컴파일러 옵션은 [범주별 컴파일러 옵션 목록](compiler-options-listed-by-category.md)의 **사용되지 않는 컴파일러 옵션**을 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
