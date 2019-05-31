@@ -1,67 +1,67 @@
 ---
-title: /std (언어 표준 버전 지정)
-ms.date: 11/26/2018
+title: /std(언어 표준 버전 지정)
+ms.date: 05/16/2019
 f1_keywords:
 - /std
 - -std
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: de3389a52781f541143268e3ede79eae375ff1d3
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: 0f45727c61d55ff57befc7ff23a3d434e86673bc
+ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446232"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65837523"
 ---
-# <a name="std-specify-language-standard-version"></a>/std (언어 표준 버전 지정)
+# <a name="std-specify-language-standard-version"></a>/std(언어 표준 버전 지정)
 
-지원 사용 C++ 에서 지정된 된 버전의 언어 기능을 C++ 언어 표준입니다.
+지정된 C++ 언어 표준 버전에서 지원되는 C++ 언어 기능을 사용합니다.
 
 ## <a name="syntax"></a>구문
 
 > /std:\[c++14\|c++17\|c++latest]
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-합니다 **/std** 옵션은 이상 Visual Studio 2017에서 사용할 수 있습니다. 버전별 ISO 제어를 C++ 프로그래밍 언어 표준 기능 코드를 컴파일할 때 사용 하도록 설정 합니다. 이 옵션을 사용 하면 표준 언어의 특정 버전을 준수 하는 기존 코드를 손상 시킬 수 있는 일부 새로운 언어 및 라이브러리 기능에 대 한 지원을 사용 하지 않도록 설정할 수 있습니다. 기본적으로 **/std: c + + 14** 지정 된 언어 및 이후 버전의 표준 라이브러리 기능이 사용 하지 않도록 설정 하는 C++ 언어 표준입니다. 사용 하 여 **/std: c + + 17** c++17 표준 관련 기능 및 동작을 사용 하도록 설정 합니다. 현재 구현 된 컴파일러 및 표준 라이브러리 기능이 다음 초안 표준에 대 한 제안 된 명시적으로 사용 하려면 **/std: c + + 최신**합니다.
+**/std** 옵션은 Visual Studio 2017 이상에서 사용할 수 있습니다. 이 옵션은 코드 컴파일 중에 사용하도록 설정된 버전 특정 ISO C++ 프로그래밍 언어를 제어하는 데 사용합니다. 이 옵션을 통해 특정 언어 표준 버전을 준수하는 기존 코드를 손상시킬 수 있는 특정 새 언어 및 라이브러리에 대한 기능을 사용하지 않도록 설정할 수 있습니다. 기본적으로 이후의 C++ 언어 표준에서 제공하는 언어 및 표준 라이브러리 기능을 사용하지 않게 설정하는 **/std:c++14**를 지정합니다. C++17 표준 특정 기능 및 동작을 사용하려면 **/std:c++17**을 사용합니다. 다음 초안 표준에 대해 현재 구현된 컴파일러와 제안된 표준 라이브러리 기능을 명시적으로 사용하려면 **/std:c++latest**를 사용합니다. 모든 C++20 기능에는 **/std:latest**가 필요하며 구현이 완료되면 새 **/std:c++20** 옵션을 사용할 것입니다.
 
-기본값 **/std: c + + 14** 옵션을 사용 하면 C + + 14 기능 집합 MSVC 컴파일러에서 구현 합니다. 이 옵션은 컴파일러 및 일부 c++17 기능 이미 MSVC 컴파일러의 이전 릴리스에서 구현를 제외 하 고 표준 언어의 최신 버전의 새로운 변경 된 기능에 대 한 또는 표준 라이브러리 지원을 사용 하지 않도록 설정 합니다. Visual Studio 2015 업데이트 2부터 제공 되는 기능에서 종속성을 이미 사용 하는 사용자에 대해 상당한 변화를 방지 하려면이 기능이 계속 사용 되도록 설정 될 때를 **/std: c + + 14** 옵션을 지정 합니다.
+기본 **/std:c++14** 옵션은 MSVC 컴파일러에서 구현된 전체 C++14 기능 집합을 사용하도록 설정합니다. 이 옵션은 이후의 언어 표준 버전에서 변경되었거나 새로 도입된 기능에 대한 컴파일러와 표준 라이브러리 지원을 사용하지 않게 설정합니다. 단 이전 MSVC 컴파일러 릴리스에서 이미 구현된 C++17 컴파일러 기능은 예외입니다. Visual Studio 2015 업데이트 2에서 제공되는 기능에 대해 이미 종속성이 있는 사용자에게 중대한 변화가 발생하지 않도록, **/std: c + + 14** 옵션을 지정하면 이 기능을 그대로 사용합니다.
 
-- [중괄호로 묶인 init 목록을 사용한 auto에 대 한 규칙](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3922.html)
+- [중괄호로 묶인 init 목록을 사용한 auto 규칙](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3922.html)
 
-- [템플릿 template-parameters의 typename](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4051.html)
+- [template-parameters 템플릿의 typename](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4051.html)
 
-- [삼중 자 제거](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4086.html)
+- [삼중자 제거](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4086.html)
 
-- [네임 스페이스 및 열거자에 대 한 특성](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4266.html)
+- [네임스페이스 및 열거자에 대한 특성](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4266.html)
 
 - [u8 문자 리터럴](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)
 
-추가 정보에 대 한 기능에 따라 C + + 14 및 C + + 17 설정 된 경우 **/std: c + + 14** 는 지정에서 정보를 참조 하세요 [시각적 C++ 언어 규칙](../../overview/visual-cpp-language-conformance.md).
+**/std:c++14**를 지정했을 때 사용하는 C++14 및 C++17 기능에 대한 추가 정보는 [Visual C++ 언어 규칙](../../overview/visual-cpp-language-conformance.md)의 참고를 참조하세요.
 
-합니다 **/std: c + + 17** 옵션을 사용 하면 전체 C + + 17 기능 집합 MSVC 컴파일러에서 구현 합니다. 이 옵션에서는 C++17 이후의 C++표준 규격 초안(Working Draft) 및 결함 업데이트의 전에서 변경되거나 새로운 기능에 대한 컴파일러 및 표준 라이브러리 지원을 사용하지 않습니다.
+**/std:c++17** 옵션은 MSVC 컴파일러에서 구현된 전체 C++17 기능 집합을 사용하도록 설정합니다. 이 옵션에서는 C++17 이후의 C++표준 규격 초안(Working Draft) 및 결함 업데이트의 전에서 변경되거나 새로운 기능에 대한 컴파일러 및 표준 라이브러리 지원을 사용하지 않습니다.
 
-합니다 **/std: c + + 최신** 옵션을 사용 하면 게시물-c++17 언어 및 라이브러리 기능이 컴파일러 및 라이브러리의 현재 구현 합니다. C + + 20 초안 작업 및 결함 업데이트의 기능이 포함 될 수 있습니다는 C++ 표준 C + + 17, 뿐만 아니라 초안 표준에 대 한 실험적 제안에 포함 되지 않은입니다. 지원 되는 언어 및 라이브러리 기능 목록을 참조 하세요 [시각적 개체에 대 한 새로운 기능 C++ ](../../overview/what-s-new-for-visual-cpp-in-visual-studio.md)합니다. 합니다 **/std: c + + 최신** 옵션에서 보호 하는 기능을 사용 하지 않습니다는 **실험적 /** 를 전환 하지만 사용 하도록 설정 해야 할 수 있습니다.
+**/std:c++latest** 옵션은 현재 컴파일러와 라이브러리에 구현된 C++17 이후 언어 및 라이브러리 기능을 사용하도록 설정합니다. 여기에는 C++17에 포함되지 않은 C++20 초안의 기능과 C++ 표준의 결함 업데이트의 기능과, 초안 표준의 실험적 제안이 포함될 수 있습니다. 지원되는 언어 및 라이브러리 기능 목록은 [Visual C++의 새로운 기능](../../overview/what-s-new-for-visual-cpp-in-visual-studio.md)을 참조하세요. **/std:c++latest** 옵션은 **/experimental** 스위치로 보호되는 기능은 사용하지 않으나 이를 사용하도록 설정해야 할 수 있습니다.
 
 > [!IMPORTANT]
-> 컴파일러 및 라이브러리 기능으로 사용 하도록 설정 **/std: c + + 최신** 로 제공 됩니다-은 지원 하지 않고 있습니다. 이들은 통지 없이 변경 또는 제거 될 수 있습니다. 표준의 다음 버전에서 나타날 수 있는 언어 기능의 미리 보기로 제공 됩니다 이지만 표준 진행 중인 작업입니다. 사용 하 여 **/std: c + + 17** 최신 ISO의 기능을 사용 하려면 C++ 표준입니다.
+> **/std:c++latest**로 사용하는 컴파일러와 라이브러리 기능은 향후의 C++ 표준과, 승인된 C++20 기능에 있을 수 있는 기능을 나타냅니다. 승인되지 않은 기능은 예고 없이 갑자기 변경되거나 제거될 수 있고, 있는 그대로 제공됩니다. 
 
-**/std** 적용 하는 동안 옵션을 C++ 컴파일을 사용 하 여 검색할 수 있습니다를 [ \_MSVC\_LANG](../../preprocessor/predefined-macros.md) 전처리기 매크로입니다. 자세한 내용은 [전처리기 매크로](../../preprocessor/predefined-macros.md)합니다.
+C++ 컴파일 중에 적용되는 **/std** 옵션은 [ \_MSVC\_LANG](../../preprocessor/predefined-macros.md) 전처리기 매크로를 사용하여 검색할 수 있습니다. 자세한 내용은 [전처리기 매크로](../../preprocessor/predefined-macros.md)를 참조하세요.
 
-합니다 **/std: c + + 14** 하 고 **/std: c + + 최신** 옵션은 Visual Studio 2015 업데이트 3부터 사용할 수 있습니다. 합니다 **/std: c + + 17** 옵션은 Visual Studio 2017 버전 15.3부터 사용할 수 있습니다. 동작으로 활성화 되어 일부 c++17 표준 위에서 설명한 것 처럼 합니다 **/std: c + + 14** 옵션을 사용 하지만 다른 모든 C + + 17 기능으로 사용 됩니다 **/std: c + + 17**합니다.
+**/std:c++14** 및 **/std:c++latest** 옵션은 Visual Studio 2015 업데이트 3부터 사용할 수 있습니다. **/std:c++17** 옵션은 Visual Studio 2017 버전 15.3부터 사용할 수 있습니다. 앞서 설명한 것처럼 일부 C++17 표준 동작은 **/std:c++14** 옵션으로 사용하나 그 밖의 모든 C++17 기능은 **/std:c++17**로 사용합니다. C++ 20 기능은 구현이 완료될 때까지 **/std:latest**로 사용합니다.
 
 > [!NOTE]
-> MSVC 컴파일러 버전 또는 업데이트 수준에 따라 특정 C + + 14 또는 C + + 17 기능 하지 구현 될 수 있습니다 완전히 또는 완전히와 호환 되는 지정 하는 경우는 **/std: c + + 14** 또는 **/std: c + + 17** 옵션입니다. 예를 들어, Visual Studio 2017 RTM 컴파일러가 C + + 14을 준수 하는 완벽 하 게 지원 하지 않습니다 `constexpr`, SFINAE 식 또는 2 단계 이름 조회 합니다. 개요 C++ 시각적 개체의 언어 규칙 C++ 릴리스 버전을 확인할 [Visual C++ 언어 규칙](../../overview/visual-cpp-language-conformance.md)합니다.
+> MSVC 컴파일러 버전이나 업데이트 수준에 따라, **/std:c++17** 옵션을 지정했을 때 C++17 기능이 일부 구현되지 않거나 호환되지 않을 수 있습니다. 릴리스 버전별 Visual C++의 C++ 언어 호환 개요는 [Visual C++ 언어 규칙](../../overview/visual-cpp-language-conformance.md)을 참조하세요.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
 
-1. 선택 **구성 속성**를 **C /C++** 하십시오 **언어**.
+1. **구성 속성**, **C/C++**, **언어**를 차례로 선택합니다.
 
-1.  **C++ 언어 표준**를 선택 하기 위해 선택한 드롭다운 컨트롤에서 지 원하는 언어 표준을 **확인** 또는 **적용** 변경 내용을 저장 하려면.
+1. **C++ 언어 표준**의 드롭다운 컨트롤에서 지원할 언어 표준을 선택한 다음, **확인** 또는 **적용**을 선택하여 변경 내용을 저장합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

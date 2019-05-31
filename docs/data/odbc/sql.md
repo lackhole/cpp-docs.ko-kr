@@ -1,89 +1,92 @@
 ---
 title: SQL
-ms.date: 11/04/2016
+ms.date: 05/09/2019
 helpviewer_keywords:
 - database classes [C++], SQL statements
 - SQL [C++]
 - SQL [C++], ODBC
 - ODBC [C++], SQL implementation
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
-ms.openlocfilehash: 8f93d97530068695359273b523e7d2ae46de01cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 68c01623ef97e89623dff3f46a952c75ea31a774
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62329894"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707825"
 ---
 # <a name="sql"></a>SQL
 
-SQL (Structured Query Language)은 정의 쿼리, 수정 및 데이터를 제어할 수 있는 관계형 데이터베이스와 통신 하는 방법입니다. SQL 구문을 사용 하 여, 사용자가 지정한 조건에 따라 레코드를 추출 하는 문을 생성할 수 있습니다.
+SQL(구조적 쿼리 언어)은 데이터를 정의, 쿼리, 수정 및 제어할 수 있는 관계형 데이터베이스와 통신하는 방법입니다. SQL 구문을 사용하면 지정한 기준에 따라 레코드를 추출하는 명령문을 구성할 수 있습니다.
 
 > [!NOTE]
->  이 정보는 MFC ODBC 클래스에 적용 됩니다. MFC DAO 클래스를 사용 하 여 작업 하는 경우에 DAO 도움말의 ANSI SQL 및 항목 비교 Microsoft Jet 데이터베이스 엔진 SQL 참조 하세요.
+>  이 정보는 MFC ODBC 클래스에 적용됩니다. MFC DAO 클래스를 사용하여 작업하는 경우 DAO 도움말의 Microsoft Jet Database Engine SQL과 ANSI SQL 비교 항목을 참조하세요.
 
-SQL 문 같은 키워드 동사를 사용 하 여 시작 **CREATE** 또는 **선택**합니다. SQL은 매우 강력한 언어입니다. 단일 문의 전체 테이블을 발생할 수 있습니다.
+SQL 문은 **CREATE** 또는 **SELECT**와 같은 키워드 동사로 시작합니다. SQL은 매우 강력한 언어입니다. 단일 명령문이 전체 테이블에 영향을 줄 수 있습니다.
 
-여러 버전의 SQL 각 개발 염두에서 특정 DBMS에 있습니다. MFC 데이터베이스 클래스에는 x / Open 해당 하는 SQL 문 및 SQL 액세스 그룹 일반적인 응용 프로그램 환경 (CAE) SQL 초안 (1991) 사양 집합을 인식 합니다. 이러한 문의 구문에 대 한 정보를 참조 부록 C 합니다 *ODBC SDK* *프로그래머 참고 자료* MSDN 라이브러리 cd 합니다.
+여러 버전의 SQL이 있으며 각각은 특정 DBMS를 염두에 두고 개발되었습니다. MFC 데이터베이스 클래스는 X/Open 및 SQL Access Group CAE(공통 애플리케이션 환경) SQL 초안 사양(1991)에 해당하는 SQL 문 세트를 인식합니다. 이러한 명령문의 구문에 대한 자세한 내용은 MSDN Library CD의 *ODBC SDK* *프로그래머 참조*에 있는 부록 C를 참조하세요.
 
-이 항목에 설명 합니다.
+이 항목에서는 다음 내용을 설명합니다.
 
-- [ODBC 및 SQL 사이의 관계](#_core_open_database_connectivity_.28.odbc.29)합니다.
+- [ODBC와 SQL 간의 관계](#_core_open_database_connectivity_.28.odbc.29).
 
-- [데이터베이스 클래스에서 사용 된 가장 일반적인 SQL 키워드](#_core_the_database_classes)합니다.
+- [데이터베이스 클래스에서 사용되는 가장 일반적인 SQL 키워드](#_core_the_database_classes).
 
-- [데이터베이스 클래스는 SQL을 사용 하는 방법을](#_core_how_the_database_classes_use_sql)합니다.
+- [데이터베이스 클래스가 SQL을 사용하는 방법](#_core_how_the_database_classes_use_sql).
 
-##  <a name="_core_open_database_connectivity_.28.odbc.29"></a> ODBC (open Database Connectivity)
+##  <a name="_core_open_database_connectivity_.28.odbc.29"></a> ODBC(Open Database Connectivity)
 
-데이터베이스 클래스는 SQL 코드에서 SQL 명령을 포함 하는 것이 아니라 호출 수준 인터페이스를 사용 하는 ODBC를 사용 하 여 구현 됩니다. ODBC SQL을 사용 하 여와 통신 하는 [데이터 원본](../../data/odbc/data-source-odbc.md) ODBC 드라이버를 통해. 이러한 드라이버는 SQL을 해석 하 고, Microsoft Access와 같은 특정 데이터베이스 형식으로 사용 하기 위해 필요한 경우 변환 합니다. ODBC SQL을 사용 하는 방법에 대 한 자세한 내용은 참조 하십시오 [ODBC](../../data/odbc/odbc-basics.md) 및 ODBC SDK *프로그래머 참고 자료* MSDN 라이브러리 cd 합니다.
+데이터베이스 클래스는 ODBC에서 구현되며 코드에 SQL 명령을 포함하는 대신 호출 수준 인터페이스에서 SQL을 사용합니다. ODBC는 SQL을 사용하여 ODBC 드라이버를 통해 [데이터 원본](../../data/odbc/data-source-odbc.md)과 통신합니다. 이러한 드라이버는 SQL을 해석하고 필요한 경우 Microsoft Access와 같은 특정 데이터베이스 형식으로 사용하기 위해 변환합니다. ODBC가 SQL을 사용하는 방법에 대한 자세한 내용은 MSDN Library CD의 [ODBC](../../data/odbc/odbc-basics.md) 및 ODBC SDK *프로그래머 참조*를 참조하세요.
 
 ##  <a name="_core_the_database_classes"></a> 데이터베이스 클래스
 
-데이터베이스 클래스를 조작 하 고 기존 데이터를 업데이트할 수 있도록 고안 된 [데이터 원본](../../data/odbc/data-source-odbc.md)합니다. [MFC 응용 프로그램 마법사](../../mfc/reference/database-support-mfc-application-wizard.md)의 [MFC ODBC 소비자 마법사](../../mfc/reference/adding-an-mfc-odbc-consumer.md) (통해 액세스할 **클래스 추가**), 데이터베이스 클래스를 대부분의 SQL 문 생성 합니다.
+> [!NOTE] 
+> Visual Studio 2019 이상에서는 MFC ODBC 소비자 마법사를 사용할 수 없습니다. 여전히 수동으로 소비자를 만들 수 있습니다.
 
-데이터베이스 클래스는 데이터 조작 언어 (dml) SQL 부분을 사용 합니다. 이러한 명령은 사용 하 여 전체 또는 일부 데이터 원본의 사용, 새 레코드를 추가, 레코드를 편집 및 레코드를 삭제할 수 있습니다. 다음 표에서 가장 일반적인 SQL 키워드 및 방법 데이터베이스 클래스를 사용 합니다.
+데이터베이스 클래스는 기존 [데이터 원본](../../data/odbc/data-source-odbc.md)의 데이터를 조작하고 업데이트할 수 있도록 설계되었습니다. [MFC 애플리케이션 마법사](../../mfc/reference/database-support-mfc-application-wizard.md), [MFC ODBC 소비자 마법사](../../mfc/reference/adding-an-mfc-odbc-consumer.md)(**클래스 추가**를 통해 액세스됨) 및 데이터베이스 클래스가 대부분의 SQL 문을 구성합니다.
 
-### <a name="some-common-sql-keywords"></a>일반적인 SQL 키워드
+데이터베이스 클래스는 DML(데이터 조작 언어)로 알려진 SQL 부분을 사용합니다. 이러한 명령을 사용하면 데이터 원본의 전체 또는 일부를 작업하고, 새 레코드를 추가하고, 레코드를 편집하고, 레코드를 삭제할 수 있습니다. 다음 표에는 가장 일반적인 SQL 키워드 및 데이터베이스 클래스에서 사용하는 방법이 나열되어 있습니다.
 
-|SQL 키워드|마법사 및 데이터베이스 클래스 사용|
+### <a name="some-common-sql-keywords"></a>몇 가지 공통 SQL 키워드
+
+|SQL 키워드|마법사 및 데이터베이스 클래스에서 사용|
 |-----------------|---------------------------------------------|
-|**SELECT**|사용 해야 하는 테이블 및 데이터 원본에서 열을 식별 합니다.|
-|**WHERE**|선택 항목을 범위를 좁히는 필터를 적용 합니다.|
-|**ORDER BY**|레코드 집합에 정렬 순서를 적용 합니다.|
-|**INSERT**|레코드 집합에 새 레코드를 추가 합니다.|
-|**DELETE**|레코드 집합에서 레코드를 삭제 합니다.|
-|**UPDATE**|레코드의 필드를 수정 합니다.|
+|**SELECT**|데이터 원본에서 사용할 테이블 및 열을 식별하는 방법.|
+|**WHERE**|선택 항목을 좁히는 필터를 적용하는 방법.|
+|**ORDER BY**|레코드 집합에 정렬 순서를 적용하는 방법.|
+|**INSERT**|레코드 집합에 새 레코드를 추가하는 방법.|
+|**DELETE**|레코드 집합에서 레코드를 삭제하는 방법.|
+|**UPDATE**|레코드의 필드를 수정하는 방법.|
 
-또한 데이터베이스 클래스를 인식 ODBC **호출** 일부 데이터 소스에 대해 미리 정의 된 쿼리 (또는 저장된 프로시저)를 호출 하는 데 사용할 수 있는 문. ODBC 데이터베이스 드라이버 이러한 문을 해석 하 고 각 DBMS에 대 한 적절 한 명령을 대체 합니다.
+또한 데이터베이스 클래스는 일부 데이터 원본에서 미리 정의된 쿼리(또는 저장 프로시저)를 호출하는 데 사용할 수 있는 ODBC **CALL** 문을 인식합니다. ODBC 데이터베이스 드라이버는 이러한 명령문을 해석하고 각 DBMS에 적절한 명령을 대체합니다.
 
 > [!NOTE]
->  일부 Dbms 지원 **호출** 문입니다.
+>  모든 DBMS가 **CALL** 문을 지원하는 것은 아닙니다.
 
-클래스에서 사용자가 제공한 문을 인식할 수 없는 경우 `CRecordset::Open`, 테이블 이름으로 해석 됩니다.
+클래스가 `CRecordset::Open`에서 사용자 제공 명령문을 인식할 수 없는 경우 테이블 이름으로 해석됩니다.
 
-프레임 워크 SQL 문을 생성 하는 방법의 설명은 참조 하세요. [레코드 집합: 레코드 집합 선택 (ODBC)를 기록 하는 방법](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) 고 [SQL: 레코드 집합의 SQL 문 (ODBC) 사용자 지정](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)합니다.
+프레임워크가 SQL 문을 구성하는 방법에 대한 설명은 [레코드 집합: 레코드 집합의 레코드 선택 방법(ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md) 및 [SQL: 레코드 집합의 SQL 문 사용자 지정(ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)을 참조하세요.
 
-SQL 데이터베이스 C에 사용 되는 것과 비슷한 데이터 형식을 사용 하 고 C++입니다. 이러한 유사성 설명은 참조 하세요. [SQL: SQL 및 C++ 데이터 형식 (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)합니다.
+SQL 데이터베이스는 C 및 C++에서 사용되는 것과 유사한 데이터 형식을 사용합니다. 이러한 유사성에 대한 설명은 [SQL: SQL 및 C++ 데이터 형식(ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)을 참조하세요.
 
-SQL, 지원 되는 SQL 문, 데이터 형식, SQL core 문법 및 읽기 목록을 SQL에 대 한 권장 되는 게시의 목록을 포함 하는 방법에 대 한 자세한 정보를 찾을 수 있습니다 합니다 *ODBC SDK* *프로그래머 참고 자료*  MSDN 라이브러리 cd 합니다.
+MSDN Library CD의 *ODBC SDK* *프로그래머 참조*에서 지원되는 SQL 문, 데이터 형식, SQL 핵심 문법 및 SQL에 대한 권장 게시 목록을 비롯하여 SQL에 대한 자세한 정보를 찾을 수 있습니다.
 
-##  <a name="_core_how_the_database_classes_use_sql"></a> 데이터베이스 클래스는 SQL을 사용 하는 방법
+##  <a name="_core_how_the_database_classes_use_sql"></a> 데이터베이스 클래스가 SQL을 사용하는 방법
 
-데이터베이스 클래스에서 파생 된 레코드 집합은 ODBC를 사용 하 여 데이터 소스와 통신 하 고 ODBC SQL 문을 전송 하 여 데이터 원본에서 레코드를 검색 합니다. 이 항목에서는 데이터베이스 클래스와 SQL 간의 관계를 설명 합니다.
+데이터베이스 클래스에서 파생된 레코드 집합은 ODBC를 사용하여 데이터 원본과 통신하고 ODBC는 SQL 문을 전송하여 데이터 원본에서 레코드를 검색합니다. 이 항목에서는 데이터베이스 클래스와 SQL 간의 관계를 설명합니다.
 
-레코드 집합에 SQL 문의 여러 부분을 구축 하 여 SQL 문을 생성 한 `CString`합니다. 해당 문자열으로 생성 됩니다는 **선택** 레코드 집합을 반환 하는 문입니다.
+레코드 집합은 SQL 문의 여러 부분을 `CString`으로 빌드하여 SQL 문을 구성합니다. 문자열은 레코드 세트를 반환하는 **SELECT** 문으로 구성됩니다.
 
-레코드 집합에서 ODBC 데이터 원본에 SQL 문을 보내는를 호출 하면 ODBC 드라이버 관리자에서 ODBC 드라이버에 문을 전달 하 고 드라이버 원본 DBMS에 보냅니다. DBMS 레코드를 결과 집합을 반환 하 고 ODBC 드라이버 응용 프로그램에 레코드를 반환 합니다. 데이터베이스 클래스 수를 형식이 안전한에 결과 집합에 액세스 하는 프로그램 C++ 에서 파생 된 클래스 `CRecordset`합니다.
+레코드 집합이 ODBC를 호출하여 SQL 문을 데이터 원본으로 보내면 ODBC 드라이버 관리자는 명령문을 ODBC 드라이버에 전달하고 드라이버는 이를 기본 DBMS에 보냅니다. DBMS는 레코드의 결과 집합을 반환하고 ODBC 드라이버는 레코드를 애플리케이션에 반환합니다. 데이터베이스 클래스를 통해 프로그램이 `CRecordset`에서 파생된 형식이 안전한 C++ 클래스의 결과 집합에 액세스할 수 있습니다.
 
-데이터베이스 클래스는 SQL을 사용 하는 방법에 대 한 자세한 정보를 제공 하는 다음 항목:
+다음 항목에서는 데이터베이스 클래스에서 SQL을 사용하는 방법에 대한 자세한 정보를 제공합니다.
 
-- [SQL: 레코드 집합의 SQL 문 (ODBC) 사용자 지정](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)
+- [SQL: 레코드 집합의 SQL 문 사용자 지정(ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)
 
 - [SQL: SQL 및 C++ 데이터 형식(ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)
 
 - [SQL: SQL 직접 호출(ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [ODBC(Open Database Connectivity)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
 [ODBC 기본 사항](../../data/odbc/odbc-basics.md)

@@ -1,23 +1,22 @@
 ---
 title: 리소스 파일(C++)
-ms.date: 11/04/2016
+ms.date: 05/14/2019
 helpviewer_keywords:
 - resource files
 - resources [C++]
-- file types [C++], resource files
 ms.assetid: 338a4a0f-0c62-4ef1-a34f-5d86262d93a4
-ms.openlocfilehash: f1e32ba4776f3e975dc0fbc72334a85d6c793c93
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: 20e57aa51cff8c4e3392c313645468387c2a4244
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446339"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65707400"
 ---
 # <a name="resource-files-c"></a>리소스 파일(C++)
 
-리소스는 사용자에게 정보를 제공하는 인터페이스 요소입니다. 비트맵, 아이콘, 도구 모음 및 커서는 모두 리소스입니다. 메뉴에서 선택하거나 대화 상자에 데이터를 입력하는 등 작업을 수행하기 위해 일부 리소스를 조작할 수 있습니다.
+리소스는 사용자에게 정보를 제공하는 인터페이스 요소입니다. 비트맵, 아이콘, 도구 모음 및 커서는 모두 리소스입니다. 일부 리소스는 메뉴에서 선택하거나 대화 상자에 데이터를 입력하는 등의 작업을 수행할 수 있습니다.
 
-자세한 내용은 [리소스 사용](../../windows/working-with-resource-files.md)을 참조하세요.
+ 자세한 내용은 [리소스 사용](../../windows/working-with-resource-files.md)을 참조하세요.
 
 |파일 이름|디렉터리 위치|솔루션 탐색기 위치|설명|
 |---------------|------------------------|--------------------------------|-----------------|
@@ -30,6 +29,6 @@ ms.locfileid: "65446339"
 |Toolbar.bmp|*Projname*\res|리소스 파일|도구 모음이나 색상표에서 애플리케이션 또는 컨트롤을 나타내는 비트맵 파일입니다. 이 비트맵은 프로젝트의 리소스 파일에 포함됩니다. 초기 도구 모음 및 상태 표시줄은 **CMainFrame** 클래스에 생성됩니다.|
 |ribbon.mfcribbon-ms|*Projname*\res|리소스 파일|리본의 단추, 컨트롤 및 특성을 정의하는 XML 코드가 포함된 리소스 파일입니다. 자세한 내용은 [Ribbon Designer (MFC)](../../mfc/ribbon-designer-mfc.md)을 참조하세요.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[시각적 개체에 대해 만들어지는 형식 파일 C++ 프로젝트](file-types-created-for-visual-cpp-projects.md)
+[Visual Studio C++ 프로젝트용으로 만든 파일 형식](file-types-created-for-visual-cpp-projects.md)

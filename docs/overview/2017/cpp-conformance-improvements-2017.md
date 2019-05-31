@@ -5,16 +5,16 @@ ms.technology: cpp-language
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 6a0e296e4a5542c1aad848c55d35d3e40244478d
-ms.sourcegitcommit: b72a10a7b12e722fd91a17406b91b270026f763a
+ms.openlocfilehash: 726d9f6573b4a3457205001875dac80b3a2997d7
+ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899449"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934166"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159improvements159"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#improvements_159)의 C++ 규칙 향상
 
-Microsoft Visual C++ 컴파일러는 일반화된 constexpr을 지원하고 집계에 NSDMI를 사용할 수 있기 때문에 이제 C++14 표준에 추가된 기능을 완벽히 갖췄습니다. 하지만 아직까지 C++11 표준 기능과 C++98 표준 기능이 몇 가지 부족합니다. 컴파일러의 현재 상태를 보여 주는 테이블은 [Visual C++ Language Conformance](../visual-cpp-language-conformance.md)(Visual C++ 언어 규칙)를 참조하세요.
+Microsoft C++ 컴파일러는 일반화된 constexpr을 지원하고 집계에 NSDMI를 사용할 수 있기 때문에 이제 C++14 표준에 추가된 기능을 완벽히 갖췄습니다. 하지만 아직까지 C++11 표준 기능과 C++98 표준 기능이 몇 가지 부족합니다. 컴파일러의 현재 상태를 보여 주는 테이블은 [Visual C++ Language Conformance](../visual-cpp-language-conformance.md)(Visual C++ 언어 규칙)를 참조하세요.
 
 ## <a name="c11"></a>C++11
 
@@ -70,7 +70,7 @@ Range-based for 루프에 더 이상 동일한 유형의 begin() 및 end() 반�
 
 ### <a name="structured-bindings"></a>구조적 바인딩
 
-이제 단일 선언에서 값이 배열, std::tuple 또는 std::pair이거나 모든 공용 비정적 데이터 멤버가 있는 경우 구성 요소에 대한 개별 이름을 포함하는 값을 저장할 수 있습니다. 자세한 내용은 [구조적 바인딩](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) 및 [함수에서 여러 값 반환](../../cpp/functions-cpp.md#multi_val)을 참조하세요.
+이제 단일 선언에서 값이 배열, `std::tuple` 또는 `std::pair`이거나 모든 공용 비정적 데이터 멤버가 있는 경우 구성 요소에 대한 개별 이름을 포함하는 값을 저장할 수 있습니다. 자세한 내용은 [구조적 바인딩](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) 및 [함수에서 여러 값 반환](../../cpp/functions-cpp.md#multi_val)을 참조하세요.
 
 ### <a name="construction-rules-for-enum-class-values"></a>enum 클래스 값에 대한 생성 규칙
 
@@ -82,7 +82,7 @@ Range-based for 루프에 더 이상 동일한 유형의 begin() 및 end() 반�
 
 ### <a name="removing-operator-for-bool"></a>bool 형식 operator++ 제거
 
-`operator++` 더 이상 `bool` 형식에서 지원되지 않습니다. 자세한 내용은 [사용되지 않는 operator++(bool) 제거(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0002r1.html)를 참조하세요.
+`operator++`는 더 이상 `bool` 형식에서 지원되지 않습니다. 자세한 내용은 [사용되지 않는 operator++(bool) 제거(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0002r1.html)를 참조하세요.
 
 ### <a name="removing-deprecated-register-keyword"></a>사용되지 않는 "register" 키워드 제거
 
@@ -955,7 +955,7 @@ C;      // warning C4091 : '' : ignored on left of 'C' when no variable is decla
 
 ### <a name="stdisconvertible-for-array-types"></a>배열 형식에 대한 std::is_convertible
 
-이전 버전의 컴파일러는 배열 형식에 대한 [std::is_convertible](../../standard-library/is-convertible-class.md)에 대해 잘못된 결과를 제공했습니다. 따라서 라이브러리 작성자는 `std::is_convertible<...>` 형식 특성을 사용할 때 특별히 Visual C++ 컴파일러를 사용해야 했습니다. 다음 예제에서는 정적 어설션이 이전 버전의 Visual Studio에서는 통과하지만 Visual Studio 2017 업데이트 버전 15.3에서는 실패합니다.
+이전 버전의 컴파일러는 배열 형식에 대한 [std::is_convertible](../../standard-library/is-convertible-class.md)에 대해 잘못된 결과를 제공했습니다. 따라서 라이브러리 작성자는 `std::is_convertible<...>` 형식 특성을 사용할 때 특별히 Microsoft C++ 컴파일러를 사용해야 했습니다. 다음 예제에서는 정적 어설션이 이전 버전의 Visual Studio에서는 통과하지만 Visual Studio 2017 업데이트 버전 15.3에서는 실패합니다.
 
 ```cpp
 #include <type_traits>
@@ -968,7 +968,7 @@ static_assert(std::is_convertible<Array&, Array>::value, "");
 static_assert(std::is_convertible<Array, Array&>::value, "");
 ```
 
-`std::is_convertible<From, To>` 가상의 함수 정의가 올바른 형식으로 되어 있는지 확인하는 방법으로 계산됩니다.
+가상의 함수 정의가 올바른 형식으로 되어 있는지 확인하는 방법으로 `std::is_convertible<From, To>`가 계산됩니다.
 
 ```cpp
    To test() { return std::declval<From>(); }
@@ -991,7 +991,7 @@ private:
 static_assert(std::is_constructible<PrivateDtor, int>::value);
 ```
 
-비공개 소멸자는 형식을 non-constructible로 만듭니다. `std::is_constructible<T, Args...>` 다음 선언이 작성된 것처럼 계산됩니다.
+비공개 소멸자는 형식을 non-constructible로 만듭니다. 다음 선언이 작성된 것처럼 `std::is_constructible<T, Args...>`가 계산됩니다.
 
 ```cpp
    T obj(std::declval<Args>()...)
@@ -1343,7 +1343,7 @@ error C2027: use of undefined type 'S'
 
 ### <a name="stdisconvertible-target-type"></a>std::is_convertible target type
 
-`std::is_convertible` 대상 유형이 유효한 반환 형식이어야 합니다. 이전 버전의 Visual Studio에서는 컴파일러가 추상 형식을 잘못 허용하여 오버로드 확인이 잘못되고 의도하지 않은 런타임 동작이 발생할 가능성이 있었습니다.  이제 다음 코드는 C2338을 올바르게 생성합니다.
+`std::is_convertible`에서는 대상 유형이 유효한 반환 형식이어야 합니다. 이전 버전의 Visual Studio에서는 컴파일러가 추상 형식을 잘못 허용하여 오버로드 확인이 잘못되고 의도하지 않은 런타임 동작이 발생할 가능성이 있었습니다.  이제 다음 코드는 C2338을 올바르게 생성합니다.
 
 ```cpp
 #include <type_traits>
