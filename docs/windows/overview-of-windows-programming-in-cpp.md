@@ -2,12 +2,12 @@
 title: C++를 이용한 Windows 프로그래밍 개요
 ms.date: 05/06/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 957e3565ad4caa12da5e7d10915ca159d00954b8
-ms.sourcegitcommit: 79e985d3c6e8ccaf94f6e641972887cae8c6eeb0
+ms.openlocfilehash: 585fda614acce85e286e25b807d0fda57d03758b
+ms.sourcegitcommit: af580f3a11b19d22288424eac7ceae1bc24ab312
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197749"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66355560"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++를 이용한 Windows 프로그래밍 개요
 
@@ -101,7 +101,7 @@ Visual Studio는 네이티브 코드에 대한 강력한 디버거, 정적 분�
 |[Windows 데스크톱 마법사](windows-desktop-wizard.md)|새 Windows 프로젝트를 만들려면 마법사를 사용 합니다.|
 |[ATL(액티브 템플릿 라이브러리)](../atl/atl-com-desktop-components.md)|C++에서 COM 구성 요소를 만들려면 ATL 라이브러리를 사용합니다.|
 |[MFC(Microsoft Foundation Class)](../mfc/mfc-desktop-applications.md)|MFC를 사용하여 대화상자 및 컨트롤이 포함된 크고 작은 Windows 응용 프로그램을 만드는 방법입니다.|
-|[ATL 및 MFC 공유 클래스](../atl-mfc-shared/TOC.md)|CString 같은 ATL 및 MFC에서 공유하는 클래스를 사용합니다.|
+|[ATL 및 MFC 공유 클래스](../atl-mfc-shared/atl-mfc-shared-classes.md)|CString 같은 ATL 및 MFC에서 공유하는 클래스를 사용합니다.|
 |[데이터 액세스](../data/data-access-in-cpp.md)| OLE DB 및 ODBC|
 |[텍스트 및 문자열](../text/text-and-strings-in-visual-cpp.md)|Windows에서 다양 한 문자열 형식입니다.|
 |[DirectX를 사용하여 게임을 만들기 위한 리소스](resources-for-creating-a-game-using-directx.md)
