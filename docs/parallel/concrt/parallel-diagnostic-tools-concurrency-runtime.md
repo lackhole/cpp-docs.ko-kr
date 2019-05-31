@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Parallel Diagnostic Tools [Concurrency Runtime]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-ms.openlocfilehash: 2af1898312a4f448d618fcfc4e43ea93f5f0bc76
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 182171bfcfbaf1476cc25fe3160114bc1d96ca7e
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346312"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449242"
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>병렬 진단 도구(동시성 런타임)
 
@@ -27,7 +27,7 @@ Visual Studio 디버거를 포함 합니다 **병렬 스택** 창 **병렬 태�
 
 동시성 런타임을 사용 하 여 [Windows 이벤트 추적에 대 한](/windows/desktop/ETW/event-tracing-portal) (ETW)에 다양 한 이벤트가 발생할 때 프로파일러 등의 계측 도구에 알립니다. 이러한 이벤트는 병렬 알고리즘을 시작 하거나 끝날 때 스케줄러를 활성화 또는 비활성화 하는 경우, 컨텍스트를 시작, 종료, 차단, 차단 해제, 또는 생성 하는 경우 및 포함 됩니다.
 
-와 같은 도구를 [동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer) 이 기능을 활용; 따라서 일반적으로 필요가 없습니다 이러한 이벤트를 사용 하 여 직접 작동 하도록 합니다. 그러나 이러한 이벤트는 사용자 지정 프로파일러를 개발할 때 또는 같은 이벤트 추적 도구를 사용 하면 유용 [Xperf](http://go.microsoft.com/fwlink/p/?linkid=160628)합니다.
+와 같은 도구를 [동시성 시각화 도우미](/visualstudio/profiling/concurrency-visualizer) 이 기능을 활용; 따라서 일반적으로 필요가 없습니다 이러한 이벤트를 사용 하 여 직접 작동 하도록 합니다. 그러나 이러한 이벤트는 사용자 지정 프로파일러를 개발할 때 또는 같은 이벤트 추적 도구를 사용 하면 유용 [Xperf](https://go.microsoft.com/fwlink/p/?linkid=160628)합니다.
 
 동시성 런타임에서 추적을 사용 하는 경우에 이러한 이벤트를 발생 시킵니다. 호출 된 [concurrency::EnableTracing](reference/concurrency-namespace-functions.md#enabletracing) 이벤트 추적을 설정 하는 함수 및 [concurrency:: disabletracing](reference/concurrency-namespace-functions.md#disabletracing) 함수 추적을 사용 하지 않도록 설정 합니다.
 

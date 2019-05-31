@@ -5,12 +5,12 @@ ms.date: 05/06/2019
 helpviewer_keywords:
 - 'msbuild (c++), howto: modify target framework and platform toolset'
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
-ms.openlocfilehash: c3d6b50a57cab9cc63657949fceccebf4ea6b8c9
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: b2cf5ac5c6a339917b87a25001be568a7caa2247
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220679"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450743"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>방법: 대상 프레임 워크 및 플랫폼 도구 집합 수정
 
@@ -22,7 +22,7 @@ Visual Studio를 변경할 수 있습니다 C++ 프로젝트를 다른 버전의
 대상 프레임워크를 변경하는 경우 플랫폼 도구 집합도 해당 프레임워크를 지원하는 버전으로 변경합니다. 예를 들어 .NET Framework 4.5를 대상으로 하려면 Visual Studio 2015(v140), Visual Studio 2013(v120) 또는 Visual Studio 2012(v110)와 같은 호환되는 플랫폼 도구 집합을 사용해야 합니다. .NET Framework 2.0, 3.0, 3.5, 4 및 x86, Itanium, x64 플랫폼을 대상으로 하는 **Windows7.1SDK** 플랫폼 도구 집합을 사용할 수 있습니다.
 
 > [!NOTE]
->  대상 플랫폼 도구 집합을 변경하려면 연관된 버전의 Visual Studio 또는 Windows 플랫폼 SDK가 설치되어 있어야 합니다. 예를 들어 **Windows7.1SDK** 플랫폼 도구 집합이 있는 Itanium 플랫폼을 대상으로 하려면 [Windows 7용 Microsoft Windows SDK 및 .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) 이 설치되어 있어야 합니다. 그러나 올바른 Framework 버전 및 플랫폼 도구 집합을 대상으로 한 경우 Visual Studio의 다른 호환 버전을 사용하여 개발 작업을 수행할 수 있습니다.
+>  대상 플랫폼 도구 집합을 변경하려면 연관된 버전의 Visual Studio 또는 Windows 플랫폼 SDK가 설치되어 있어야 합니다. 예를 들어 **Windows7.1SDK** 플랫폼 도구 집합이 있는 Itanium 플랫폼을 대상으로 하려면 [Windows 7용 Microsoft Windows SDK 및 .NET Framework 4 SP1](https://www.microsoft.com/download/details.aspx?id=8279) 이 설치되어 있어야 합니다. 그러나 올바른 Framework 버전 및 플랫폼 도구 집합을 대상으로 한 경우 Visual Studio의 다른 호환 버전을 사용하여 개발 작업을 수행할 수 있습니다.
 
 사용자 지정 플랫폼 도구 집합을 만들어 대상 플랫폼을 추가로 확장할 수 있습니다. 자세한 내용은 Visual C++ 블로그의 [C++ Native Multi-Targeting](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) 을 참조하세요.
 
@@ -59,4 +59,4 @@ Visual Studio를 변경할 수 있습니다 C++ 프로젝트를 다른 버전의
 
 ## <a name="see-also"></a>참고자료
 
-[명령줄에서 MSBuildC++](msbuild-visual-cpp.md)
+[명령줄의 MSBuild - C++](msbuild-visual-cpp.md)

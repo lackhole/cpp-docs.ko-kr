@@ -200,12 +200,12 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: 260b2ee780956550678fcb01b3a018a60fb58deb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b914b3d2ed61c81629c06739eac86692d1444e58
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411190"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450423"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algorithm&gt; 함수
 
@@ -5490,7 +5490,7 @@ void push_heap( RandomAccessIterator first, RandomAccessIterator last, BinaryPre
 
 끝에서 새로 추가된 요소를 제외한 범위는 힙이어야 합니다.
 
-복잡성은 로그 이며, 로그 요구에 가장 ( *성-*) 비교 합니다.
+복잡성은 로그 이며, 로그 요구에 가장 ( *성-* ) 비교 합니다.
 
 ### <a name="example"></a>예제
 
@@ -5561,7 +5561,7 @@ int main() {
 
 ## <a name="random_shuffle"></a>  random_shuffle
 
-Std::random_shuffle() 함수 되지 바뀝니다 [std:: shuffle](../standard-library/algorithm-functions.md#shuffle)합니다. 코드 예제 및 자세한 내용은 참조 하세요 [ \<임의 >](../standard-library/random.md) 및 Stack Overflow 게시물 [이유는 std:: random_shuffle 메서드가 사용 되지 않는 C + + 14에서?](http://go.microsoft.com/fwlink/p/?linkid=397954)합니다.
+Std::random_shuffle() 함수 되지 바뀝니다 [std:: shuffle](../standard-library/algorithm-functions.md#shuffle)합니다. 코드 예제 및 자세한 내용은 참조 하세요 [ \<임의 >](../standard-library/random.md) 및 Stack Overflow 게시물 [이유는 std:: random_shuffle 메서드가 사용 되지 않는 C + + 14에서?](https://go.microsoft.com/fwlink/p/?linkid=397954)합니다.
 
 ## <a name="remove"></a>  remove
 
@@ -7775,7 +7775,7 @@ template<class RandomAccessIterator, class Predicate>
 
 참조된 범위는 유효해야 하고 모든 포인터는 역참조 가능해야 하며 시퀀스 내에서 처음 위치에서 증분하여 마지막 위치까지 도달할 수 있어야 합니다.
 
-복잡성은 많아야 *N* 로그 *N*여기서 *N* = ( *성-*).
+복잡성은 많아야 *N* 로그 *N*여기서 *N* = ( *성-* ).
 
 ### <a name="example"></a>예제
 

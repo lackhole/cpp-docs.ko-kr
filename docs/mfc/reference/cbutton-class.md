@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: b1a02d995594f5e079359151167ac970a3d1ab37
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3283e974dc2b933049599fba0b6cf51c32a18ef3
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348694"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450837"
 ---
 # <a name="cbutton-class"></a>CButton 클래스
 
@@ -153,7 +153,7 @@ class CButton : public CWnd
 
 각 메시지 맵 항목은 다음 형식을 사용 합니다.
 
-**ON\_**_Notification_ **(** _id_, _memberFxn_ **)**
+**ON\_** _Notification_ **(** _id_, _memberFxn_ **)**
 
 여기서 *id* 알림을 전송 하는 컨트롤의 자식 창 ID를 지정 하 고 *memberFxn* 알림을 처리 하는 것이 기록한 부모 멤버 함수의 이름입니다.
 
@@ -808,7 +808,7 @@ BOOL SetElevationRequired(BOOL fElevationRequired);
 
 ### <a name="remarks"></a>설명
 
-단추 또는 명령 링크 컨트롤에 작업을 수행 하려면 높은 보안 권한이 필요한 경우 컨트롤을 설정 `elevation required` 상태입니다. 그런 다음 Windows 컨트롤에 사용자 계정 컨트롤 (UAC) 방패 아이콘을 표시합니다. 자세한 내용은 "사용자 계정 컨트롤"를 참조 하세요 [MSDN](http://go.microsoft.com/fwlink/p/?linkid=18507)합니다.
+단추 또는 명령 링크 컨트롤에 작업을 수행 하려면 높은 보안 권한이 필요한 경우 컨트롤을 설정 `elevation required` 상태입니다. 그런 다음 Windows 컨트롤에 사용자 계정 컨트롤 (UAC) 방패 아이콘을 표시합니다. 자세한 내용은 "사용자 계정 컨트롤"를 참조 하세요 [MSDN](https://go.microsoft.com/fwlink/p/?linkid=18507)합니다.
 
 이 메서드는 전송 된 [BCM_SETSHIELD](/windows/desktop/Controls/bcm-setshield) Windows SDK에 설명 된 메시지입니다.
 

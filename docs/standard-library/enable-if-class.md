@@ -7,12 +7,12 @@ helpviewer_keywords:
 - enable_if class
 - enable_if
 ms.assetid: c6b8d41c-a18f-4e30-a39e-b3aa0e8fd926
-ms.openlocfilehash: b6990dba20643b35dde36a492d40c3e3e76ae0b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 450664f71851778cc40160e55cbb80bcb51330d5
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413764"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451257"
 ---
 # <a name="enableif-class"></a>enable_if 클래스
 
@@ -46,7 +46,7 @@ template <bool B, class T = void>
 using enable_if_t = typename enable_if<B,T>::type;
 ```
 
-C++에서 템플릿 매개 변수의 대체 실패는 그 자체만으로는 오류가 아닙니다. 이를 *SFINAE*(대체 실패는 오류가 아닙니다)라고도 합니다. 일반적으로 `enable_if`는 오버로드 확인에서 후보를 제거하는 데 사용됩니다. 즉, 오버로드 집합을 선별합니다. 따라서 다른 정의를 사용하기 위해 정의 하나가 거부될 수 있습니다. 이는 SFINAE 동작을 따릅니다. SFINAE에 대한 자세한 내용은 Wikipedia에서 [Substitution failure is not an error](http://go.microsoft.com/fwlink/p/?linkid=394798)(대체 실패는 오류가 아닙니다)를 참조하세요.
+C++에서 템플릿 매개 변수의 대체 실패는 그 자체만으로는 오류가 아닙니다. 이를 *SFINAE*(대체 실패는 오류가 아닙니다)라고도 합니다. 일반적으로 `enable_if`는 오버로드 확인에서 후보를 제거하는 데 사용됩니다. 즉, 오버로드 집합을 선별합니다. 따라서 다른 정의를 사용하기 위해 정의 하나가 거부될 수 있습니다. 이는 SFINAE 동작을 따릅니다. SFINAE에 대한 자세한 내용은 Wikipedia에서 [Substitution failure is not an error](https://go.microsoft.com/fwlink/p/?linkid=394798)(대체 실패는 오류가 아닙니다)를 참조하세요.
 
 다음은 4가지 예제 시나리오입니다.
 

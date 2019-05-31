@@ -2,12 +2,12 @@
 title: ARM 예외 처리
 ms.date: 07/11/2018
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
-ms.openlocfilehash: 8a2bae8e42ac6a624bebe7c185ac7e0ade8d5491
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f4e56284ce8db18ec76b0143253ee1e25f3fd82c
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195357"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450487"
 ---
 # <a name="arm-exception-handling"></a>ARM 예외 처리
 
@@ -21,7 +21,7 @@ ARM EABI(포함된 응용 프로그램 이진 인터페이스)는 해제 코드�
 
 ### <a name="assumptions"></a>Assumptions
 
-Windows on ARM의 실행 가능 이미지는 PE(이식 가능한 실행 파일) 형식을 사용합니다. 자세한 내용은 [Microsoft PE 및 COFF 사양](http://go.microsoft.com/fwlink/p/?linkid=84140)합니다. 예외 처리 정보는 이미지의 .pdata 및 .xdata 섹션에 저장됩니다.
+Windows on ARM의 실행 가능 이미지는 PE(이식 가능한 실행 파일) 형식을 사용합니다. 자세한 내용은 [Microsoft PE 및 COFF 사양](https://go.microsoft.com/fwlink/p/?linkid=84140)합니다. 예외 처리 정보는 이미지의 .pdata 및 .xdata 섹션에 저장됩니다.
 
 예외 처리 메커니즘은 Windows on ARM용 ABI를 따르는 코드에 대해 다음과 같은 특정 사항을 가정합니다.
 
