@@ -35,7 +35,7 @@ ms.locfileid: "62292187"
 
 [/Gs(스택 검사 호출 제어)](gs-control-stack-checking-calls.md)는 동일한 효과를 냅니다.
 
-**/Ge** 는 사용 되지 않습니다; Visual Studio 2005부터 컴파일러가 자동으로 스택 검사를 수행 합니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)합니다.
+**/Ge**는 더 이상 사용되지 않습니다. Visual Studio 2005부터 컴파일러가 자동으로 스택 검사를 수행합니다. 사용되지 않는 컴파일러 옵션은 [범주별 컴파일러 옵션 목록](compiler-options-listed-by-category.md)의 **사용되지 않는 컴파일러 옵션**을 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
