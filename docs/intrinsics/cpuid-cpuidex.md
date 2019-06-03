@@ -9,12 +9,12 @@ helpviewer_keywords:
 - cpuid instruction
 - cpuid intrinsic
 ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc
-ms.openlocfilehash: 30b66c78c6c3477c4da634901058d77d0e362101
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c66a3fe7b923b214c4cf2bd84fc03f535d5f4973
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349084"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449989"
 ---
 # <a name="cpuid-cpuidex"></a>__cpuid, __cpuidex
 
@@ -63,9 +63,9 @@ EAX, EBX, ECX 및 EDX에서 CPU의 지원되는 기능에 대해 반환되는 �
 
 `__cpuid` 내장 함수는 `cpuid` 명령을 호출하기 전에 ECX 레지스터를 지웁니다. 합니다 `__cpuidex` 내장 함수를 ECX 레지스터의 값을 설정 *subfunction_id* 생성 하기 전에 `cpuid` 명령입니다. 따라서 프로세서에 대한 추가 정보를 수집할 수 있습니다.
 
-특정 매개 변수를 사용 하 여 및 Intel 프로세서에서 이러한 내장 함수가 반환 하는 값에 대 한 자세한 내용은 설명서를 참조 합니다 `cpuid` 의 지침에 [Intel 64 및 IA-32 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조](http://go.microsoft.com/fwlink/p/?LinkID=510021) 하 고 [Intel 아키텍처 명령 집합 확장 프로그래밍 참조](http://go.microsoft.com/fwlink/p/?LinkID=506627)합니다. 에 대 한 용어 "leaf" 및 "subleaf 라는" 사용 하는 Intel 설명서를 *function_id* 하 고 *subfunction_id* EAX 및 ECX에서 전달 된 매개 변수입니다.
+특정 매개 변수를 사용 하 여 및 Intel 프로세서에서 이러한 내장 함수가 반환 하는 값에 대 한 자세한 내용은 설명서를 참조 합니다 `cpuid` 의 지침에 [Intel 64 및 IA-32 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조](https://go.microsoft.com/fwlink/p/?LinkID=510021) 하 고 [Intel 아키텍처 명령 집합 확장 프로그래밍 참조](https://go.microsoft.com/fwlink/p/?LinkID=506627)합니다. 에 대 한 용어 "leaf" 및 "subleaf 라는" 사용 하는 Intel 설명서를 *function_id* 하 고 *subfunction_id* EAX 및 ECX에서 전달 된 매개 변수입니다.
 
-특정 매개 변수를 사용 하 여 및 AMD 프로세서에서 이러한 내장 함수가 반환 하는 값에 대 한 자세한 내용은 설명서를 참조 합니다 `cpuid` AMD64 아키텍처 프로그래머 설명서 볼륨 3에 있는 명령: 범용 및 시스템 명령에 특정 프로세서 제품군에 대 한 수정 지침입니다. 이러한 문서 및 기타 정보에 대 한 링크에 대 한 참조는 AMD [개발자 가이드, 설명서 및 ISA 문서](http://go.microsoft.com/fwlink/p/?LinkId=510023) 페이지입니다. AMD 설명서에 대 한 사용 약관 "function number" 및 "subfunction number"를 사용 합니다 *function_id* 하 고 *subfunction_id* EAX 및 ECX에서 전달 된 매개 변수입니다.
+특정 매개 변수를 사용 하 여 및 AMD 프로세서에서 이러한 내장 함수가 반환 하는 값에 대 한 자세한 내용은 설명서를 참조 합니다 `cpuid` AMD64 아키텍처 프로그래머 설명서 볼륨 3에 있는 명령: 범용 및 시스템 명령에 특정 프로세서 제품군에 대 한 수정 지침입니다. 이러한 문서 및 기타 정보에 대 한 링크에 대 한 참조는 AMD [개발자 가이드, 설명서 및 ISA 문서](https://go.microsoft.com/fwlink/p/?LinkId=510023) 페이지입니다. AMD 설명서에 대 한 사용 약관 "function number" 및 "subfunction number"를 사용 합니다 *function_id* 하 고 *subfunction_id* EAX 및 ECX에서 전달 된 매개 변수입니다.
 
 경우는 *function_id* 인수가 0 *cpuInfo*[0] 반환 된 가장 높은 사용 가능한 비확장 *function_id* 프로세서에 의해 지원 되는 값. 프로세서 제조업체에서 인코딩됩니다 *cpuInfo*[1] *cpuInfo*[2], 및 *cpuInfo*[3].
 

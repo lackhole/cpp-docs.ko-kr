@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: e88c375560c617e970c70adda245125ac8242ae4
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: fc92497c4d43238f9cf6aea7132afb8c8dc27fbd
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220346"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451223"
 ---
 # <a name="cwnd-class"></a>CWnd 클래스
 
@@ -1652,7 +1652,7 @@ void BringWindowToTop();
 
 또한 `BringWindowToTop`은 팝업, 최상위 및 MDI 자식 창을 활성화합니다. `BringWindowToTop` 멤버 함수를 사용하여 겹치는 창에 의해 부분적으로 또는 완전히 가려진 모든 창을 발견해야 합니다.
 
-이 함수는 Win32 호출 [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) 함수입니다. 호출 된 [SetWindowPos](#setwindowpos) 함수 Z-순서에서 창의 위치를 변경 합니다. `BringWindowToTop` 함수는 창 스타일을 변경하여 최상위 창으로 만들지 않습니다. 자세한 내용은 참조 하세요. [HWND_TOP와 HWND_TOPMOST의 차이 란](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
+이 함수는 Win32 호출 [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) 함수입니다. 호출 된 [SetWindowPos](#setwindowpos) 함수 Z-순서에서 창의 위치를 변경 합니다. `BringWindowToTop` 함수는 창 스타일을 변경하여 최상위 창으로 만들지 않습니다. 자세한 내용은 참조 하세요. [HWND_TOP와 HWND_TOPMOST의 차이 란](https://devblogs.microsoft.com/oldnewthing/?p=33263)
 
 ### <a name="example"></a>예제
 
@@ -2455,7 +2455,7 @@ int DlgDirList(
 
 `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`
 
-이 예제에서는 *드라이브* 드라이브 문자입니다 *디렉터리* 은 올바른 디렉터리 이름, 및 *filename* 가 하나 이상의 와일드 카드를 포함 해야 하는 올바른 파일입니다. 와일드 카드는 물음표 (**?**), 즉 모든 문자를 나타내고 별표 일치 (<strong>\*</strong>), 임의 개수의 문자를 일치 의미 합니다.
+이 예제에서는 *드라이브* 드라이브 문자입니다 *디렉터리* 은 올바른 디렉터리 이름, 및 *filename* 가 하나 이상의 와일드 카드를 포함 해야 하는 올바른 파일입니다. 와일드 카드는 물음표 ( **?** ), 즉 모든 문자를 나타내고 별표 일치 (<strong>\*</strong>), 임의 개수의 문자를 일치 의미 합니다.
 
 에 대 한 길이가 0 인 문자열을 지정 하는 경우 *lpPathSpec*, 문자열으로 변경 됩니다 디렉터리 이름만 지정 해도 모든 파일 사양이 없는 경우 또는 "\*.\*"입니다.
 
@@ -2523,7 +2523,7 @@ int DlgDirListComboBox(
 
 `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`
 
-이 예제에서는 *드라이브* 드라이브 문자입니다 *디렉터리* 은 올바른 디렉터리 이름, 및 *filename* 가 하나 이상의 와일드 카드를 포함 해야 하는 올바른 파일입니다. 와일드 카드는 물음표 (**?**), 즉 모든 문자를 나타내고 별표 일치 (<strong>\*</strong>), 즉 문자의 번호와 일치 합니다.
+이 예제에서는 *드라이브* 드라이브 문자입니다 *디렉터리* 은 올바른 디렉터리 이름, 및 *filename* 가 하나 이상의 와일드 카드를 포함 해야 하는 올바른 파일입니다. 와일드 카드는 물음표 ( **?** ), 즉 모든 문자를 나타내고 별표 일치 (<strong>\*</strong>), 즉 문자의 번호와 일치 합니다.
 
 에 대 한 빈 문자열을 지정 하는 경우 *lpPathSpec*, 현재 디렉터리가 사용 됩니다 하 고 *lpPathSpec* 수정 되지 것입니다. 문자열을로 변경 됩니다 디렉터리 이름만 지정 해도 모든 파일 사양이 없는 경우 "\*"입니다.
 

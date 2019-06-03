@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2001
 ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
-ms.openlocfilehash: 824fa9108e6322b1bcf77d6c28c7fb843b743833
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 916c37e3283f40ff5ded865a573ff45839de6e2a
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161019"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449625"
 ---
 # <a name="linker-tools-error-lnk2001"></a>링커 도구 오류 LNK2001
 
@@ -71,7 +71,7 @@ C 함수를 호출 하는 경우이 오류가 발생할 수 있습니다는 C++ 
 
 현재 없는 표준 [ C++ 명명](../../error-messages/tool-errors/name-decoration.md) 컴파일러 공급 업체나 다른 컴파일러 버전 간에 합니다. 따라서 다른 컴파일러로 컴파일한 개체 파일을 링크할 수 하지 않고 동일한 명명 스키마를 생성을 오류 LNK2001.
 
-[혼합 인라인이 아닌 컴파일 옵션](../../error-messages/tool-errors/function-inlining-problems.md) 서로 다른 모듈에서 해도 LNK2001이 발생할 수 있습니다. 경우는 C++ 라이브러리가 켜져 함수 인라이닝 만들어집니다 (**/Ob1** 또는 **/ob2**) 함수를 설명 하는 해당 헤더 파일에 인라인 해제 되어 있지만 (없습니다 `inline` 키워드), 이 오류가 발생합니다. 이 문제를 해결 하려면 함수 정의 `inline` 다른 소스 파일에 포함할 헤더 파일에 있습니다.
+[혼합 인라인이 아닌 컴파일 옵션](../../error-messages/tool-errors/function-inlining-problems.md) 서로 다른 모듈에서 해도 LNK2001이 발생할 수 있습니다. 경우는 C++ 라이브러리가 켜져 함수 인라이닝 만들어집니다 ( **/Ob1** 또는 **/ob2**) 함수를 설명 하는 해당 헤더 파일에 인라인 해제 되어 있지만 (없습니다 `inline` 키워드), 이 오류가 발생합니다. 이 문제를 해결 하려면 함수 정의 `inline` 다른 소스 파일에 포함할 헤더 파일에 있습니다.
 
 사용 하는 경우는 `#pragma inline_depth` 컴파일러 지시문에 있어야는 [2 이상 집합의 값](../../error-messages/tool-errors/function-inlining-problems.md), 이용할 수 있는지 확인 합니다 [/Ob1](../../build/reference/ob-inline-function-expansion.md) 또는 [/ob2](../../build/reference/ob-inline-function-expansion.md) 컴파일러 옵션.
 
@@ -101,5 +101,5 @@ C++ 컴파일러 및 링커 사용 [이름 데코레이션](../../error-messages
 
 ## <a name="additional-resources"></a>추가 자료
 
-LNK2001에 대 한 가능한 원인 및 해결 하는 방법에 대 한 자세한 내용은 스택 오버플로 질문을 참조 하세요 [정의 되지 않은 참조/확인 되지 않은 외부 기호 오류가 이란 무엇 이며 어떻게 해결 하나요?](http://stackoverflow.com/q/12573816/2002113)합니다.
+LNK2001에 대 한 가능한 원인 및 해결 하는 방법에 대 한 자세한 내용은 스택 오버플로 질문을 참조 하세요 [정의 되지 않은 참조/확인 되지 않은 외부 기호 오류가 이란 무엇 이며 어떻게 해결 하나요?](https://stackoverflow.com/q/12573816/2002113)합니다.
 

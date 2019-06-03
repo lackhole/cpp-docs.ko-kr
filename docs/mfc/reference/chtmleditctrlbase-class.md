@@ -220,12 +220,12 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-ms.openlocfilehash: a3c90f4b75b79dc51091c87a5a84b5c59a70646f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a336804889a3ad10818ff0883c55f9141f9e210d
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375823"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450264"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase 클래스
 
@@ -1700,7 +1700,7 @@ long QueryStatus(long cmdID) const;
 ### <a name="parameters"></a>매개 변수
 
 *cmdID*<br/>
-명령 ID입니다. 명령 식별자 CGID_MSHTML 명령 그룹에서 수행 됩니다. 이러한 명령은 Mshtmcid.h에서 정의 됩니다. 온라인에서 찾을 수도 있습니다 [MSHTML 명령 식별자](http://go.microsoft.com/fwlink/p/?linkid=149220)합니다.
+명령 ID입니다. 명령 식별자 CGID_MSHTML 명령 그룹에서 수행 됩니다. 이러한 명령은 Mshtmcid.h에서 정의 됩니다. 온라인에서 찾을 수도 있습니다 [MSHTML 명령 식별자](https://go.microsoft.com/fwlink/p/?linkid=149220)합니다.
 
 ### <a name="return-value"></a>반환 값
 

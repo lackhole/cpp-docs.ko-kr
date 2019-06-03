@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: 258266768d3f456fb761a9d5a403a92c502dbe32
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4098a1467b0f81b5f66a2e45a4bb2138e8c1c262
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349911"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449954"
 ---
 # <a name="c-amp-overview"></a>C++ AMP 개요
 
@@ -431,7 +431,7 @@ for (int i = 0; i <4; i++) {
 
 ## <a name="math-libraries"></a>수학 라이브러리
 
-C++AMP 두 수학 라이브러리가 포함 되어 있습니다. 배정밀도 라이브러리에는 [concurrency:: precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) 배정밀도 함수에 대 한 지원을 제공 합니다. 또한 하드웨어에 이중 정밀도 지원은 계속 필요 하지만 정밀도 함수에 대 한 지원을 제공 합니다. 준수 하는 [C99 사양 (ISO/IEC 9899)](http://go.microsoft.com/fwlink/p/?linkid=225887)합니다. 액셀러레이터는 배정밀도 전체를 지원 해야 합니다. 값을 확인 하 여 수행 여부를 확인할 수 있습니다 합니다 [accelerator:: supports_double_precision 데이터 멤버](reference/accelerator-class.md#supports_double_precision)합니다. fast math 라이브러리의를 [concurrency:: fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), 다른 수학 함수 집합이 포함 되어 있습니다. 이러한 함수에만 지 `float` 피연산자를 더욱 빠르게 실행 되지만 배정밀도 수학 라이브러리의 것 정확 하지 않습니다. 에 포함 된 함수는 \<amp_math.h > 헤더 파일 및 모든 선언 된 `restrict(amp)`합니다. 함수에는 \<cmath > 헤더 파일 모두 가져와집니다 합니다 `fast_math` 및 `precise_math` 네임 스페이스입니다. **제한** 키워드와 구분 되는 \<cmath > 버전 및 C++ AMP 버전입니다. 다음 코드를 계산 도메인에 있는 각 값의 빠른 메서드를 사용 하 여 밑이 10 인 로그를 계산 합니다.
+C++AMP 두 수학 라이브러리가 포함 되어 있습니다. 배정밀도 라이브러리에는 [concurrency:: precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) 배정밀도 함수에 대 한 지원을 제공 합니다. 또한 하드웨어에 이중 정밀도 지원은 계속 필요 하지만 정밀도 함수에 대 한 지원을 제공 합니다. 준수 하는 [C99 사양 (ISO/IEC 9899)](https://go.microsoft.com/fwlink/p/?linkid=225887)합니다. 액셀러레이터는 배정밀도 전체를 지원 해야 합니다. 값을 확인 하 여 수행 여부를 확인할 수 있습니다 합니다 [accelerator:: supports_double_precision 데이터 멤버](reference/accelerator-class.md#supports_double_precision)합니다. fast math 라이브러리의를 [concurrency:: fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), 다른 수학 함수 집합이 포함 되어 있습니다. 이러한 함수에만 지 `float` 피연산자를 더욱 빠르게 실행 되지만 배정밀도 수학 라이브러리의 것 정확 하지 않습니다. 에 포함 된 함수는 \<amp_math.h > 헤더 파일 및 모든 선언 된 `restrict(amp)`합니다. 함수에는 \<cmath > 헤더 파일 모두 가져와집니다 합니다 `fast_math` 및 `precise_math` 네임 스페이스입니다. **제한** 키워드와 구분 되는 \<cmath > 버전 및 C++ AMP 버전입니다. 다음 코드를 계산 도메인에 있는 각 값의 빠른 메서드를 사용 하 여 밑이 10 인 로그를 계산 합니다.
 
 ```cpp
 #include <amp.h>
@@ -473,13 +473,13 @@ C++AMP 가속 된 그래픽 프로그래밍을 위해 설계 된 그래픽 라�
 
 - [UWP 앱에서 C++ AMP 사용](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)
 
-- [연습: 기본 Windows 런타임 구성 요소를 만드는 C++ JavaScript에서 호출](http://go.microsoft.com/fwlink/p/?linkid=249077)
+- [연습: 기본 Windows 런타임 구성 요소를 만드는 C++ JavaScript에서 호출](https://go.microsoft.com/fwlink/p/?linkid=249077)
 
-- [Bing Maps Trip Optimizer, javascript에서 Windows 스토어 앱 및C++](http://go.microsoft.com/fwlink/p/?linkid=249078)
+- [Bing Maps Trip Optimizer, javascript에서 Windows 스토어 앱 및C++](https://go.microsoft.com/fwlink/p/?linkid=249078)
 
-- [사용 하는 방법 C++ 에서 AMP C# Windows 런타임 사용](http://go.microsoft.com/fwlink/p/?linkid=249080)
+- [사용 하는 방법 C++ 에서 AMP C# Windows 런타임 사용](https://go.microsoft.com/fwlink/p/?linkid=249080)
 
-- [사용 하는 방법 C++ 에서 AMPC#](http://go.microsoft.com/fwlink/p/?linkid=249081)
+- [사용 하는 방법 C++ 에서 AMPC#](https://go.microsoft.com/fwlink/p/?linkid=249081)
 
 - [관리 코드에서 네이티브 함수 호출](../../dotnet/calling-native-functions-from-managed-code.md)
 
@@ -508,4 +508,4 @@ C++AMP 가속 된 그래픽 프로그래밍을 위해 설계 된 그래픽 라�
 [C++ AMP(C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [람다 식 구문](../../cpp/lambda-expression-syntax.md)<br/>
 [참조(C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)<br/>
-[네이티브 코드 블로그의 병렬 프로그래밍](http://go.microsoft.com/fwlink/p/?linkid=238472)
+[네이티브 코드 블로그의 병렬 프로그래밍](https://go.microsoft.com/fwlink/p/?linkid=238472)

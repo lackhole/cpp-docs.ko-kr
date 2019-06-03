@@ -7,12 +7,12 @@ helpviewer_keywords:
 - nochkclr.obj
 - LNK2019
 - _check_commonlanguageruntime_version
-ms.openlocfilehash: 0ef0bfd565b8c76816cc1f8a20b1521da238cdfc
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: eb28ff3673c054b8ac1876d8ba736ceddfa5fd1a
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447713"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449604"
 ---
 # <a name="linker-tools-error-lnk2019"></a>링커 도구 오류 LNK2019
 
@@ -50,7 +50,7 @@ Visual Studio에서 정의가 포함 된 소스 파일 작성 및 프로젝트�
 
 ### <a name="a-symbol-is-defined-in-a-c-file-but-declared-without-using-extern-c-in-a-c-file"></a>기호가 C 파일에 정의 되어 있지만에서 extern "C"를 사용 하지 않고 선언 된 C++ 파일
 
- [extern "C"](../../cpp/using-extern-to-specify-linkage.md) 한정자를 사용하는 경우를 제외하고, C로 컴파일된 파일에 정의된 기호에 C++ 파일에 선언된 기호와 다른 트데코레이된 이름이 있습니다. 선언이 각 기호의 컴파일 링크와 일치하는지 확인하세요. 마찬가지로, C 프로그램에서 사용할 기호를 C++ 파일에서 정의하는 경우 정의에 `extern "C"` 을 사용하세요.
+[extern "C"](../../cpp/using-extern-to-specify-linkage.md) 한정자를 사용하는 경우를 제외하고, C로 컴파일된 파일에 정의된 기호에 C++ 파일에 선언된 기호와 다른 트데코레이된 이름이 있습니다. 선언이 각 기호의 컴파일 링크와 일치하는지 확인하세요. 마찬가지로, C 프로그램에서 사용할 기호를 C++ 파일에서 정의하는 경우 정의에 `extern "C"` 을 사용하세요.
 
 ### <a name="a-symbol-is-defined-as-static-and-then-later-referenced-outside-the-file"></a>기호를 static으로 정의 되 고 후 나중에 파일 외부 참조
 
@@ -217,5 +217,5 @@ int main() {
 
 ## <a name="additional-resources"></a>추가 자료
 
-LNK2001에 대 한 가능한 원인 및 해결 하는 방법에 대 한 자세한 내용은 스택 오버플로 질문을 참조 하세요 [정의 되지 않은 참조/확인 되지 않은 외부 기호 오류가 이란 무엇 이며 어떻게 해결 하나요?](http://stackoverflow.com/q/12573816/2002113)합니다.
+LNK2001에 대 한 가능한 원인 및 해결 하는 방법에 대 한 자세한 내용은 스택 오버플로 질문을 참조 하세요 [정의 되지 않은 참조/확인 되지 않은 외부 기호 오류가 이란 무엇 이며 어떻게 해결 하나요?](https://stackoverflow.com/q/12573816/2002113)합니다.
 
