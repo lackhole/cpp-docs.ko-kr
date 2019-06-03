@@ -9,18 +9,18 @@ helpviewer_keywords:
 - background colors, dialog boxes
 - MFC dialog boxes [MFC], colors
 ms.assetid: 05ee28a4-f3ae-4203-84ac-022f266ff2ab
-ms.openlocfilehash: 495ab827d6185826cc4d261a6a990f751e525d22
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3fcbeea5dc6137d7b7f0f2f6c1e0d034e6111b9a
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307746"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449670"
 ---
 # <a name="setting-the-dialog-boxs-background-color"></a>대화 상자의 배경색 설정
 
 대화 상자 창에 대 한 WM_CTLCOLOR 메시지를 처리 하 여 사용자가 대화 상자의 배경색을 설정할 수 있습니다. 설정한 색은 지정된 대화 상자에만 사용됩니다.
 
-참조 [codexpert 블로그](http://codexpert.ro/blog/2013/03/13/painting-the-dialog-backround/) 예입니다.
+참조 [codexpert 블로그](https://codexpert.ro/blog/2013/03/13/painting-the-dialog-backround/) 예입니다.
 
 ## <a name="see-also"></a>참고자료
 

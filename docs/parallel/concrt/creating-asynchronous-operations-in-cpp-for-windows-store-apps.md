@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: 8815861e525a2824bb1bc7a7d0e40f96b053c6a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92226d8db9fa87ce829ae96b4802ad2f45bc3e54
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413991"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450191"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>비동기 작업 만들기 C++ UWP 앱 용
 
@@ -77,7 +77,7 @@ Windows 런타임을 사용 하 여 다양 한 프로그래밍 언어의 유용�
 
 다음 표에는 앱에서 비동기 작업을 정의하는 데 사용할 수 있는 조합이 요약되어 있습니다.
 
-|이 Windows 런타임 인터페이스를 만들려면| `create_async`|암시적 취소 토큰을 사용하기 위해 작업 함수에 전달할 매개 변수 형식|명시적 취소 토큰을 사용하기 위해 작업 함수에 전달할 매개 변수 형식|
+|이 Windows 런타임 인터페이스를 만들려면|`create_async`|암시적 취소 토큰을 사용하기 위해 작업 함수에 전달할 매개 변수 형식|명시적 취소 토큰을 사용하기 위해 작업 함수에 전달할 매개 변수 형식|
 |----------------------------------------------------------------------------------|------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 |`IAsyncAction`|`void` 또는 `task<void>`|(없음)|(`cancellation_token`)|
 |`IAsyncActionWithProgress<TProgress>`|`void` 또는 `task<void>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
@@ -126,7 +126,7 @@ MainPage.xaml의 `MainPage` 클래스에 다음 코드를 추가합니다. 이 �
 
 ![Windows 런타임 앱 Primes](../../parallel/concrt/media/concrt_windows_primes.png "Windows 런타임 Primes 앱")
 
-`create_async` 를 사용하여 다른 언어에서 사용할 수 있는 비동기 작업을 만드는 예는 [Bing 지도 여정 최적화 프로그램 샘플에서 C++ 사용](https://msdn.microsoft.com/library/windows/apps/hh699891.aspx) 및 [PPL을 사용하는 C++의 Windows 8 비동기 작업](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d)을 참조하세요.
+`create_async` 를 사용하여 다른 언어에서 사용할 수 있는 비동기 작업을 만드는 예는 [Bing 지도 여정 최적화 프로그램 샘플에서 C++ 사용](https://msdn.microsoft.com/library/windows/apps/hh699891.aspx) 및 [PPL을 사용하는 C++의 Windows 8 비동기 작업](https://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d)을 참조하세요.
 
 ##  <a name="exethread"></a> 실행 스레드 제어
 

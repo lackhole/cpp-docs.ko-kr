@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1104
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
-ms.openlocfilehash: bc6305ab2e96496aa212004e186150d4a51cf3fc
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: fcd3c06ae2db5c43aacbf781800870a83d2d77c1
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446974"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451141"
 ---
 # <a name="linker-tools-error-lnk1104"></a>링커 도구 오류 LNK1104
 
@@ -81,7 +81,7 @@ IDE에서이 문제를 해결 하려면 다음을 확인 합니다 **라이브�
 
 이 오류가 나타날 수 있습니다 때에 대 한 경로 *filename* 260 자 보다 더 확장 됩니다. 이름을 변경 하거나 필요한 파일의 경로를 단축 하는 데 필요한 경우에 디렉터리 구조를 다시 정렬 합니다.
 
-파일이 너무 큽니다.이 오류가 발생할 수 있습니다. 라이브러리 또는 개체 파일 보다 크기가 1gb 32 비트 링커에 대 한 문제가 발생할 수 있습니다. 이 문제에 대 한 가능한 해결 64 비트 도구 집합을 사용 하는 것입니다. 명령줄에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 64 비트 시각적 개체를 사용 하도록 설정 C++ 명령줄에서 도구 집합](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)합니다. IDE에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 [64 비트 컴파일러 및 도구를 사용 하 여 MSBuild를 사용 하 여](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project) 및이 Stack Overflow 게시물: [Visual Studio amd64 네이티브 도구 체인을 사용 하는 방법을](http://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055)합니다.
+파일이 너무 큽니다.이 오류가 발생할 수 있습니다. 라이브러리 또는 개체 파일 보다 크기가 1gb 32 비트 링커에 대 한 문제가 발생할 수 있습니다. 이 문제에 대 한 가능한 해결 64 비트 도구 집합을 사용 하는 것입니다. 명령줄에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 64 비트 시각적 개체를 사용 하도록 설정 C++ 명령줄에서 도구 집합](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)합니다. IDE에서이 작업을 수행 하는 방법에 대 한 자세한 내용은 [64 비트 컴파일러 및 도구를 사용 하 여 MSBuild를 사용 하 여](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project) 및이 Stack Overflow 게시물: [Visual Studio amd64 네이티브 도구 체인을 사용 하는 방법을](https://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055)합니다.
 
 권한이 부족 하 여 파일에 액세스 하는 경우이 오류가 발생할 수 있습니다 *filename*합니다. 이 라이브러리 파일을 보호 된 시스템 디렉터리에 액세스 하려면 일반 사용자 계정 및 시도 사용 하거나 자신의 원래 사용 권한을 가진 다른 사용자가에서 복사 된 파일을 사용 하는 경우에 발생할 수 있습니다 설정 합니다. 이 문제를 해결 하려면 파일을 쓰기 가능한 프로젝트 디렉터리로 이동 합니다. 파일 쓰기 가능한 디렉터리에 액세스할 수 있는 권한이 있지만 경우 관리자 명령 프롬프트를 사용 하 여 수 있으며 파일의 소유권을 takeown.exe 명령을 실행할 수 있습니다.
 

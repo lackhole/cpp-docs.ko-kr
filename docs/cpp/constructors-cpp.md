@@ -6,12 +6,12 @@ helpviewer_keywords:
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: a45cee1abd9351a8fef56769706fe8944a7965b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 79b68fe08fd77dfacd485ea61df7ab7af08e2f08
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154739"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450874"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -140,7 +140,7 @@ myclass mc();     // warning C4930: prototyped function not called (was a variab
 }
 ```
 
-이는 가장 까다로운 구문 분석 문제의 한 예입니다. 예제 식을 함수 선언 또는 기본 생성자 호출로 해석할 수 있고 C++ 파서에서는 선언을 다른 항목보다 우선하므로 식이 함수 선언으로 처리됩니다. 자세한 내용은 [가장 까다로운 구문 분석](http://en.wikipedia.org/wiki/Most_vexing_parse)합니다.
+이는 가장 까다로운 구문 분석 문제의 한 예입니다. 예제 식을 함수 선언 또는 기본 생성자 호출로 해석할 수 있고 C++ 파서에서는 선언을 다른 항목보다 우선하므로 식이 함수 선언으로 처리됩니다. 자세한 내용은 [가장 까다로운 구문 분석](https://en.wikipedia.org/wiki/Most_vexing_parse)합니다.
 
 기본값이 아닌 생성자가 선언된 경우 컴파일러는 기본 생성자를 제공하지 않습니다.
 

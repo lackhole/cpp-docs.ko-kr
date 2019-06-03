@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::negative_binomial_distribution [C++], param_type
 - std::negative_binomial_distribution [C++], param_type
 ms.assetid: 7f5f0967-7fdd-4578-99d4-88f292b4fe9c
-ms.openlocfilehash: a2cc6479c9da3b51c28e5408eb44ff1d02b97023
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8f6552d9f9b0b34b1cb721e726c95845210c8bb9
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223677"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449273"
 ---
 # <a name="negativebinomialdistribution-class"></a>negative_binomial_distribution 클래스
 
@@ -95,7 +95,7 @@ public:
 
 분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-음 이항 분포 이산 확률 함수에 대 한 자세한 내용은 Wolfram MathWorld 문서를 참조 하세요 [음 이항 분포](http://go.microsoft.com/fwlink/p/?linkid=400516)합니다.
+음 이항 분포 이산 확률 함수에 대 한 자세한 내용은 Wolfram MathWorld 문서를 참조 하세요 [음 이항 분포](https://go.microsoft.com/fwlink/p/?linkid=400516)합니다.
 
 ## <a name="example"></a>예제
 
