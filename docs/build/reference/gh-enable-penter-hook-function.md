@@ -54,7 +54,7 @@ void __declspec(naked) __cdecl _penter( void );
 
 ## <a name="example"></a>예제
 
-다음 코드는 **/Gh**로 컴파일될 때 `_penter`가 두 번 호출되는 방법을 보여줍니다. `main` 함수에서 한 번, `x` 함수에서 한 번입니다.
+다음 코드는 **/Gh**로 컴파일될 때 `_penter`가 두 번 호출되는 예를 보여줍니다. `main` 함수에서 한번, `x` 함수에서 다시 한번 호출됩니다.
 
 ```cpp
 // Gh_compiler_option.cpp
