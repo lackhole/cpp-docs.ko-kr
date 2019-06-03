@@ -30,13 +30,13 @@ ms.locfileid: "62270915"
 
 `_pexit` 함수는 라이브러리의 일부가 아니며, `_pexit`에 대한 정의는 개발자의 제공에 따라 달라집니다.
 
-명시적으로 `_pexit`를 호출하지 않는다면 프로토타입을 제공하지 않아도 됩니다. 마치 함수에 이어 프로토타입이 있는것 처럼 실행되며 레지스터에 있는 모든 내용을 푸시하고 종료시 변경되지 않은 내용을 팝 해야 합니다.
+명시적으로 `_pexit`를 호출하지 않는다면 프로토타입을 제공하지 않아도 됩니다. 마치 함수에 이어 프로토타입이 있는 것처럼 실행되며 레지스터에 있는 모든 내용을 푸시하고 종료 시 변경되지 않은 내용을 팝해야 합니다.
 
 ```
 void __declspec(naked) __cdecl _pexit( void );
 ```
 
-`_pexit`는 `_penter`와 비슷합니다; `_pexit` 함수의 작성방법은 [/Gh (_penter 후크 함수 사용)](gh-enable-penter-hook-function.md)을 참조합니다.
+`_pexit`는 `_penter`와 비슷합니다. `_pexit` 함수의 작성 방법은 [/Gh(_penter 후크 함수 사용)](gh-enable-penter-hook-function.md)을 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
