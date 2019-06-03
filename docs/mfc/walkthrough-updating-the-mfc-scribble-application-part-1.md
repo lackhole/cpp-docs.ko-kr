@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC Feature Pack, update existing application
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-ms.openlocfilehash: cba28039cb7755149b35a47ddee82b6274fe4c72
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: a12c2bd2c1c1963630a1bd74b56f2c832573cc94
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64558217"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450518"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>연습: MFC Scribble 응용 프로그램 (파트 1) 업데이트
 
@@ -24,7 +24,7 @@ ms.locfileid: "64558217"
 
 ## <a name="prerequisites"></a>전제 조건
 
-합니다 [Scribble 1.0 MFC 샘플](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe)합니다. Visual Studio 2017에 또는 나중에 변환에 대 한 도움말을 참조 하세요. [포팅 가이드: MFC Scribble](../porting/porting-guide-mfc-scribble.md)합니다.
+합니다 [Scribble 1.0 MFC 샘플](https://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe)합니다. Visual Studio 2017에 또는 나중에 변환에 대 한 도움말을 참조 하세요. [포팅 가이드: MFC Scribble](../porting/porting-guide-mfc-scribble.md)합니다.
 
 ##  <a name="top"></a> 섹션
 
@@ -171,7 +171,7 @@ ms.locfileid: "64558217"
 
 1. 디자인 뷰를 클릭 합니다 **응용 프로그램** 해당 속성을 표시 하는 단추입니다. 속성 값을 다음과 같이 변경 합니다. **이미지** 하 `IDB_RIBBON_MAIN`, **프롬프트** 에 `File`, **키** 에 `f`, **큰 이미지** 에 `IDB_RIBBON_FILELARGE`, 및 **Small Images** 하려면 `IDB_RIBBON_FILESMALL`합니다.
 
-1. 클릭할 때 나타나는 메뉴를 만들려면 다음과 같이 수정 합니다 **응용 프로그램** 단추입니다. 줄임표 (**...** ) 옆에 **주 항목** 열려는 합니다 **항목 편집기**합니다.
+1. 클릭할 때 나타나는 메뉴를 만들려면 다음과 같이 수정 합니다 **응용 프로그램** 단추입니다. 줄임표 ( **...** ) 옆에 **주 항목** 열려는 합니다 **항목 편집기**합니다.
 
    1. 사용 하 여는 **항목** 형식 **단추** 선택 **추가** 단추를 추가 합니다. 변경 **캡션** 하 `&New`, **ID** 에 `ID_FILE_NEW`, **이미지** 에 `0`, **큰 이미지** 에`0`.
 
@@ -199,7 +199,7 @@ ms.locfileid: "64558217"
 
 1. 다음과 같이 수정 맨 아래에 나타나는 종료 단추가 만듭니다는 **응용 프로그램** 단추 메뉴입니다.
 
-   1. 에 **속성** 창에서 줄임표 (**...** ) 옆에 **단추** 열려는 합니다 **항목 편집기**합니다.
+   1. 에 **속성** 창에서 줄임표 ( **...** ) 옆에 **단추** 열려는 합니다 **항목 편집기**합니다.
 
    1. 사용 하 여는 **항목** 형식 **단추** 선택 **추가** 단추를 추가 합니다. 변경 **캡션** 하 `E&xit`, **ID** 에 `ID_APP_EXIT`, **이미지** 에 `8`입니다.
 

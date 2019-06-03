@@ -20,12 +20,12 @@ helpviewer_keywords:
 - A4508
 - A4509
 ms.assetid: 52b38267-6023-4bdc-a0ef-863362f48eec
-ms.openlocfilehash: 867ef50065c6ed63a4da6d37523bd5a1f3cbadba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72c1ea64501ef8104fee9bdf914a1464c07c3b76
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167845"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449219"
 ---
 # <a name="arm-assembler-diagnostic-messages"></a>ARM 어셈블러 진단 메시지
 
@@ -33,13 +33,13 @@ Microsoft ARM 어셈블러 (*armasm*)가 발견 될 때 진단 경고 및 오류
 
 ## <a name="syntax"></a>구문
 
-> <em>filename</em>**(**<em>line-number</em>**) :** \[**error**|**warning**] **A**<em>number</em>**:** *message*
+> <em>filename</em> **(** <em>line-number</em> **) :** \[**error**|**warning**] **A**<em>number</em> **:** *message*
 
 ## <a name="diagnostic-messages---errors"></a>진단 메시지-오류
 
 > A2193:이 명령은 예기치 않은 동작이 생성
 
-ARM 아키텍처는이 명령이 실행 될 때 일어나 보장할 수 없습니다.  이 명령의 잘 정의 된 양식에 대 한 자세한 내용은 참조는 [ARM 아키텍처 참조 설명서](http://go.microsoft.com/fwlink/p/?linkid=246464)합니다.
+ARM 아키텍처는이 명령이 실행 될 때 일어나 보장할 수 없습니다.  이 명령의 잘 정의 된 양식에 대 한 자세한 내용은 참조는 [ARM 아키텍처 참조 설명서](https://go.microsoft.com/fwlink/p/?linkid=246464)합니다.
 
 ```asm
     ADD r0, r8, pc         ; A2193: this instruction generates unpredictable behavior
@@ -115,7 +115,7 @@ ARM 모드에서 상수를 지정 하는 것에 대 한 대체 구문이 있습�
 
 > A4509: 조건부 명령의이 폼은 사용 되지 않습니다.
 
-ARMv8 아키텍처에서 ARM으로 이러한 형태의 조건부 명령에 사용 되지 않습니다. 조건부 분기를 사용 하는 코드를 변경 하는 것이 좋습니다. 조건부 지침 여전히 지를 확인 하려면 참조는 [ARM 아키텍처 참조 설명서](http://go.microsoft.com/fwlink/p/?linkid=246464)합니다.
+ARMv8 아키텍처에서 ARM으로 이러한 형태의 조건부 명령에 사용 되지 않습니다. 조건부 분기를 사용 하는 코드를 변경 하는 것이 좋습니다. 조건부 지침 여전히 지를 확인 하려면 참조는 [ARM 아키텍처 참조 설명서](https://go.microsoft.com/fwlink/p/?linkid=246464)합니다.
 
 이 경고가 때 내보낸 합니다 **-oldit** 명령줄 스위치를 사용 합니다.
 

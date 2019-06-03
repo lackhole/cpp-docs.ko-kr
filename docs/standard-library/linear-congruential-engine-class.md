@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - linear_congruential_engine class
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1
-ms.openlocfilehash: 83306e47995f652014682d6bcc94966aab75c062
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 41ce5590476a8327c9449ece5e3173146a04760f
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413257"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449896"
 ---
 # <a name="linearcongruentialengine-class"></a>linear_congruential_engine 클래스
 
@@ -92,7 +92,7 @@ typedef linear_congruential_engine<unsigned int, 16807, 0, 2147483647> minstd_ra
 typedef linear_congruential_engine<unsigned int, 48271, 0, 2147483647> minstd_rand;
 ```
 
-선형 합동 엔진 알고리즘에 대한 자세한 내용은 Wikipedia 문서 [Linear congruential generator](http://go.microsoft.com/fwlink/p/?linkid=402446)(선형 합동 발생기)를 참조하세요.
+선형 합동 엔진 알고리즘에 대한 자세한 내용은 Wikipedia 문서 [Linear congruential generator](https://go.microsoft.com/fwlink/p/?linkid=402446)(선형 합동 발생기)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

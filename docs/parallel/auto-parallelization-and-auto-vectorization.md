@@ -2,12 +2,12 @@
 title: 자동 병렬화 및 자동 벡터화
 ms.date: 11/04/2016
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3
-ms.openlocfilehash: 018289bc9499aee8d1739ebeed0c1cb847769a08
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ff908d1c7d45c8f757b8efe29f4f392102dc61d
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62236701"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450245"
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>자동 병렬화 및 자동 벡터화
 
@@ -107,12 +107,12 @@ for (int i = 0; i < 1000; ++i)
 
 이유 코드 및 메시지에 대 한 자세한 내용은 참조 하세요. [벡터화 도우미 및 평행 화 도우미 메시지](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)합니다.
 
-실제로 벡터화 도우미가 작동 하는 방법을 보여 주는 예제를 참조 하세요. [프로젝트 오스틴 6의 2 부: 페이지 컬링](http://blogs.msdn.com/b/vcblog/archive/2012/09/27/10348494.aspx)
+실제로 벡터화 도우미가 작동 하는 방법을 보여 주는 예제를 참조 하세요. [프로젝트 오스틴 6의 2 부: 페이지 컬링](https://devblogs.microsoft.com/cppblog/project-austin-part-2-of-6-page-curling/)
 
 ## <a name="see-also"></a>참고자료
 
 [loop](../preprocessor/loop.md)<br/>
-[네이티브 코드의 병렬 프로그래밍](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
+[네이티브 코드의 병렬 프로그래밍](https://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
 [/Qpar(자동 평행화 도우미)](../build/reference/qpar-auto-parallelizer.md)<br/>
 [/Qpar-report(자동 평행화 도우미 보고 수준)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
 [/Qvec-report(자동 벡터화 도우미 보고 수준)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)<br/>

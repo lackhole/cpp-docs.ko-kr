@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::exponential_distribution [C++], param_type
 - std::exponential_distribution [C++], param_type
 ms.assetid: d54f3126-a09b-45f9-a30b-0d94d03bcdc9
-ms.openlocfilehash: b419869785e9b6c2086ec6614363af3a3e12cb50
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8dd8168075a0fff3b61154098c0bee100961f98
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62371571"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451238"
 ---
 # <a name="exponentialdistribution-class"></a>exponential_distribution 클래스
 
@@ -88,7 +88,7 @@ public:
 
 분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-지수 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [Exponential Distribution](http://go.microsoft.com/fwlink/p/?linkid=401098)(지수 분포)을 참조하세요.
+지수 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [Exponential Distribution](https://go.microsoft.com/fwlink/p/?linkid=401098)(지수 분포)을 참조하세요.
 
 ## <a name="example"></a>예제
 

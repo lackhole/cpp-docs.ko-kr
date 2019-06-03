@@ -36,7 +36,7 @@ ms.locfileid: "62270915"
 void __declspec(naked) __cdecl _pexit( void );
 ```
 
-`_pexit` 비슷합니다 `_penter`; 참조 [/Gh (_penter 후크 함수 사용)](gh-enable-penter-hook-function.md) 작성하는 방법의 예는 `_pexit` 함수입니다.
+`_pexit`는 `_penter`와 비슷합니다. `_pexit` 함수의 작성 방법은 [/Gh(_penter 후크 함수 사용)](gh-enable-penter-hook-function.md)을 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 

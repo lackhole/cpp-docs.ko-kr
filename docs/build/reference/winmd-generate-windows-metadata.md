@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCLinkerTool.GenerateWindowsMetadata
 ms.assetid: bcfb4901-411e-4c9e-9f78-23028b6e5fcc
-ms.openlocfilehash: 93db20d14d3477734e35d33111246f9459310b90
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 45d6492c87b7543a54d031f02dcf09e319150131
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317161"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449711"
 ---
 # <a name="winmd-generate-windows-metadata"></a>/WINMD(Windows 메타데이터 생성)
 
 Windows 런타임 메타데이터(.winmd) 파일을 생성할 수 있게 해줍니다.
 
-> **/WINMD**\[**:**{**NO**\|**ONLY**}]
+> **/WINMD**\[ **:** {**NO**\|**ONLY**}]
 
 ## <a name="arguments"></a>인수
 
@@ -30,7 +30,7 @@ Windows 런타임 메타데이터(.winmd) 파일을 생성할 수 있게 해줍�
 
 ## <a name="remarks"></a>설명
 
-합니다 **/WINMD** 링커 옵션은 데 UWP 앱 및 Windows 런타임 구성 요소에 대 한 Windows 런타임 메타 데이터 (.winmd) 파일의 생성을 제어 합니다. .Winmd 파일은 Windows 런타임 형식 및 런타임 구성 요소를 해당 형식의 구현의 경우 메타 데이터가 포함 된 DLL의 종류입니다. 메타 데이터를 [ECMA-335](http://www.ecma-international.org/publications/standards/Ecma-335.htm) 표준입니다.
+합니다 **/WINMD** 링커 옵션은 데 UWP 앱 및 Windows 런타임 구성 요소에 대 한 Windows 런타임 메타 데이터 (.winmd) 파일의 생성을 제어 합니다. .Winmd 파일은 Windows 런타임 형식 및 런타임 구성 요소를 해당 형식의 구현의 경우 메타 데이터가 포함 된 DLL의 종류입니다. 메타 데이터를 [ECMA-335](https://www.ecma-international.org/publications/standards/Ecma-335.htm) 표준입니다.
 
 기본적으로 출력 파일의 이름 형식은 *binaryname*.winmd입니다. 다른 파일 이름을 지정 하려면 사용 합니다 [/WINMDFILE](winmdfile-specify-winmd-file.md) 옵션입니다.
 

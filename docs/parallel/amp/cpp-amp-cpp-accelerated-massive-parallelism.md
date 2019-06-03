@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++ AMP (see C++ Accelerated Massive Parallelism)
 - C++ Accelerated Massive Parallelism, getting started
 ms.assetid: e27824cb-3167-409b-8c3f-a0e476d8f349
-ms.openlocfilehash: f8ac71023f66868a66fb8c54a5e86678225378a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3dbd7d646b455ac57833d28b18602b533c8388e6
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400697"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450353"
 ---
 # <a name="c-amp-c-accelerated-massive-parallelism"></a>C++ AMP(C++ Accelerated Massive Parallelism)
 
@@ -37,6 +37,6 @@ C++AMP (C++ Accelerated Massive Parallelism)의 실행을 가속화 하 C++ 일�
 
 ## <a name="other-resources"></a>기타 리소스
 
-[네이티브 코드 블로그의 병렬 프로그래밍](http://go.microsoft.com/fwlink/p/?linkid=238472)<br/>
-[C++AMP 샘플 프로젝트 다운로드](http://go.microsoft.com/fwlink/p/?linkid=248508)<br/>
+[네이티브 코드 블로그의 병렬 프로그래밍](https://go.microsoft.com/fwlink/p/?linkid=238472)<br/>
+[C++AMP 샘플 프로젝트 다운로드](https://go.microsoft.com/fwlink/p/?linkid=248508)<br/>
 [분석 C++ 동시성 시각화 도우미를 사용 하 여 AMP 코드](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)
