@@ -64,12 +64,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-ms.openlocfilehash: 51cdfb481892ba5057d4ca26ff4d6e51665557e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5268a5ae336b0f96dfd6c0bd348a883e85ac32e6
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160200"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503550"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl 클래스
 
@@ -761,7 +761,7 @@ int OrderToIndex(int nOrder) const;
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 매크로의 동작을 구현 [HDM_ORDERTOINDEX](https://msdn.microsoft.com/library/windows/desktop/bb775355)Windows SDK에 설명 된 대로 합니다. 헤더 항목 순서 지정을 지원 하기 위해 제공 됩니다.
+이 멤버 함수는 Win32 매크로의 동작을 구현 [HDM_ORDERTOINDEX](/windows/desktop/controls/hdm-ordertoindex)Windows SDK에 설명 된 대로 합니다. 헤더 항목 순서 지정을 지원 하기 위해 제공 됩니다.
 
 ##  <a name="setbitmapmargin"></a>  CHeaderCtrl::SetBitmapMargin
 

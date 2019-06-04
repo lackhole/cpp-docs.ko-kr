@@ -94,12 +94,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-ms.openlocfilehash: 45c03d142c34186660aa2715081ffb0f45e85ccc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 295a58a86f35fca3b8d25706857162facc9cb3ea
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62164074"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503742"
 ---
 # <a name="cedit-class"></a>CEdit Class
 
@@ -181,7 +181,7 @@ class CEdit : public CWnd
 
 각 메시지 맵 항목은 다음 형식을 사용 합니다.
 
-  **ON_**_NOTIFICATION_**(** _id_**,** _memberFxn_ **)**
+  **ON_** _NOTIFICATION_ **(** _id_ **,** _memberFxn_ **)**
 
 여기서 `id` 알림을 전송 하는 편집 컨트롤의 자식 창 ID를 지정 하 고 `memberFxn` 알림을 처리 하는 것이 기록한 부모 멤버 함수의 이름입니다.
 
@@ -708,7 +708,7 @@ TCHAR GetPasswordChar() const;
 
 ### <a name="remarks"></a>설명
 
-ES_PASSWORD 스타일을 사용 하 여 편집 컨트롤을 만드는 경우 컨트롤을 지 원하는 DLL의 기본 암호 문자를 결정 합니다. 매니페스트 또는 [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) 메서드 결정을 지 원하는 DLL 편집 컨트롤입니다. 기본 암호 문자는 별표 user32.dll 편집 컨트롤을 지 원하는 경우 ('* ', U + 002A). Comctl32.dll 버전 6 편집 컨트롤을 지 원하는 경우 기본 문자는 검정색 원 ('●', U + 25CF). 공용 컨트롤을 참조 하는 DLL 및 버전 지원에 대 한 자세한 [셸 및 공용 컨트롤 버전](https://msdn.microsoft.com/library/windows/desktop/bb776779)합니다.
+ES_PASSWORD 스타일을 사용 하 여 편집 컨트롤을 만드는 경우 컨트롤을 지 원하는 DLL의 기본 암호 문자를 결정 합니다. 매니페스트 또는 [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) 메서드 결정을 지 원하는 DLL 편집 컨트롤입니다. 기본 암호 문자는 별표 user32.dll 편집 컨트롤을 지 원하는 경우 ('* ', U + 002A). Comctl32.dll 버전 6 편집 컨트롤을 지 원하는 경우 기본 문자는 검정색 원 ('●', U + 25CF). 공용 컨트롤을 참조 하는 DLL 및 버전 지원에 대 한 자세한 [셸 및 공용 컨트롤 버전](/previous-versions/windows/desktop/legacy/bb776779\(v=vs.85\))합니다.
 
 이 메서드는 전송 된 [EM_GETPASSWORDCHAR](/windows/desktop/Controls/em-getpasswordchar) Windows SDK에 설명 된 메시지입니다.
 
@@ -867,7 +867,7 @@ int LineIndex(int nLine = -1) const;
 
 이 멤버 함수는 여러 줄 편집 컨트롤에서만 처리 됩니다.
 
-자세한 내용은 [EM_LINEINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761611) Windows SDK에 있습니다.
+자세한 내용은 [EM_LINEINDEX](/windows/desktop/controls/em-lineindex) Windows SDK에 있습니다.
 
 ### <a name="example"></a>예제
 

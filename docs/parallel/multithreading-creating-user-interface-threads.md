@@ -11,12 +11,12 @@ helpviewer_keywords:
 - user interface threads [C++]
 - threading [MFC], user interface threads
 ms.assetid: 446925c1-db59-46ea-ae5b-d5ae5d5b91d8
-ms.openlocfilehash: ac22fad95041b07e132d31a2d246e58c3b40d30c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2fb23bd502de87aefe01d91e2b0640ee3137b00
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212911"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504591"
 ---
 # <a name="multithreading-creating-mfc-user-interface-threads"></a>다중 스레딩: MFC 사용자 인터페이스 스레드 만들기
 
@@ -45,7 +45,7 @@ MFC는 매개 변수 오버로드를 통해 `AfxBeginThread`의 두 가지 버�
 
 - (선택 사항) CREATE_SUSPENDED 스레드를 일시 중단 된 상태로 만들 수 하려는 경우. 기본값은 0 또는 스레드를 정상적으로 시작 합니다.
 
-- (선택 사항) 원하는 보안 특성입니다. 기본값은 부모 스레드와 동일한 액세스 합니다. 이 보안 정보를 형식에 대 한 자세한 내용은 참조 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.
+- (선택 사항) 원하는 보안 특성입니다. 기본값은 부모 스레드와 동일한 액세스 합니다. 이 보안 정보를 형식에 대 한 자세한 내용은 참조 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) Windows SDK에 있습니다.
 
 `AfxBeginThread` 대부분의 작업을 수행 합니다. 클래스의 새 개체를 만들고, 사용자가 제공한 정보 및 호출을 사용 하 여 초기화 [CWinThread::CreateThread](../mfc/reference/cwinthread-class.md#createthread) 스레드 실행을 시작 하도록 합니다. 검사가 모든 개체가 제대로 할당 해제 생성 부분이 실패 했는지를 전체 프로시저에서 수행 됩니다.
 

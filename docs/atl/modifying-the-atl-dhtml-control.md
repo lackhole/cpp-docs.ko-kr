@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DHTML controls
 - DHTML controls, modifying
 ms.assetid: c053f35f-8629-4600-9595-721f5956777a
-ms.openlocfilehash: 6c8976c013d0114a3115d3b0bc38fa4bc6acb5b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e594360cc6752a60bf2e07a1fb1d02041604d959
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261659"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503001"
 ---
 # <a name="modifying-the-atl-dhtml-control"></a>ATL DHTML 컨트롤 수정
 
@@ -35,7 +35,7 @@ ATL 컨트롤 마법사 줄어들고 시작 코드 빌드를 컨트롤에 실행
 
    [!code-cpp[NVC_ATL_COM#6](../atl/codesnippet/cpp/modifying-the-atl-dhtml-control_2.cpp)]
 
-1. 세 번째 메서드를 추가 `GoToURL`를 인터페이스에 끝나지 "U"를 선택 합니다. 이 메서드를 호출 하 여 구현 [IWebBrowser2::Navigate](https://msdn.microsoft.com/library/aa752133.aspx)다음과 같이 합니다.
+1. 세 번째 메서드를 추가 `GoToURL`를 인터페이스에 끝나지 "U"를 선택 합니다. 이 메서드를 호출 하 여 구현 [IWebBrowser2::Navigate](/previous-versions//aa752133\(v=vs.85\))다음과 같이 합니다.
 
    [!code-cpp[NVC_ATL_COM#7](../atl/codesnippet/cpp/modifying-the-atl-dhtml-control_3.cpp)]
 

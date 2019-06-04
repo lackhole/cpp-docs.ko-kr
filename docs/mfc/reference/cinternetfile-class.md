@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CInternetFile [MFC], WriteString
 - CInternetFile [MFC], m_hFile
 ms.assetid: 96935681-ee71-4a8d-9783-5abc7b3e6f10
-ms.openlocfilehash: 65bc36856e253d086cc430a600daa9255e21ea75
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: facd1c10781546fc692e8896e463d70637a33630
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405744"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503479"
 ---
 # <a name="cinternetfile-class"></a>CInternetFile 클래스
 
@@ -337,7 +337,7 @@ BOOL SetReadBufferSize(UINT nReadSize);
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -362,7 +362,7 @@ BOOL SetWriteBufferSize(UINT nWriteSize);
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
 
 ### <a name="remarks"></a>설명
 

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL_DRAWINFO structure
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
-ms.openlocfilehash: 70329d3b2c18c8cd8e94854f40ff971c0b39a8f4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 77ef56f73be1ed9ddfc63c459b6bab3ad4decb3f
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261067"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503422"
 ---
 # <a name="atldrawinfo-structure"></a>ATL_DRAWINFO 구조체
 
@@ -60,7 +60,7 @@ struct ATL_DRAWINFO {
 그릴 디바이스 컨텍스트입니다. 창 없는 개체에 대 한 합니다 `hdcDraw` 멤버가 `MM_TEXT` 포함 하는 창의 클라이언트 좌표에 일치 하는 논리적 좌표를 사용 하 여 매핑 모드입니다. 장치 컨텍스트를 일반적으로 전달한 것과 동일한 상태 여야 합니다 또한을 `WM_PAINT` 메시지입니다.
 
 `prcBounds`<br/>
-에 대 한 포인터를 [RECTL](https://msdn.microsoft.com/library/windows/desktop/dd162907) 에 사각형을 지정 하는 구조 `hdcDraw` 및 개체를 그립니다. 이 멤버는 위치 및 개체의 늘이기를 제어 합니다. 이 멤버에는 창 전체 활성 개체를 그릴 NULL 이어야 합니다. 다른 모든 상황에서 NULL은 올바른 값이 아닙니다 및 개가 수신 되어야는 `E_INVALIDARG` 오류 코드입니다. 창 없는 개체에 NULL이 아닌 값을 전달 하는 컨테이너를 개체는 사각형에 지정 된 디바이스 컨텍스트 요청한 측면을 렌더링 해야 합니다. 컨테이너 개체의 두 번째, 비활성 뷰를 렌더링 하거나 개체를 인쇄 합니다. 창 없는 개체에서이 요청할 수 있습니다.
+에 대 한 포인터를 [RECTL](/previous-versions//dd162907\(v=vs.85\)) 에 사각형을 지정 하는 구조 `hdcDraw` 및 개체를 그립니다. 이 멤버는 위치 및 개체의 늘이기를 제어 합니다. 이 멤버에는 창 전체 활성 개체를 그릴 NULL 이어야 합니다. 다른 모든 상황에서 NULL은 올바른 값이 아닙니다 및 개가 수신 되어야는 `E_INVALIDARG` 오류 코드입니다. 창 없는 개체에 NULL이 아닌 값을 전달 하는 컨테이너를 개체는 사각형에 지정 된 디바이스 컨텍스트 요청한 측면을 렌더링 해야 합니다. 컨테이너 개체의 두 번째, 비활성 뷰를 렌더링 하거나 개체를 인쇄 합니다. 창 없는 개체에서이 요청할 수 있습니다.
 
 `prcWBounds`<br/>
 하는 경우 `hdcDraw` 메타 파일 장치 컨텍스트는 (참조 [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) Windows SDK에서),이에 대 한 포인터는를 `RECTL` 내부 메타 파일의 경계 사각형을 지정 하는 구조입니다. 창 크기와 창 원본 사각형 구조에 포함 되어 있습니다. 이러한 값은 메타 파일 그리기에 유용 합니다. 사각형에 나타난 `prcBounds` 이 중첩 `prcWBounds` 사각형의 동일한 좌표 공간에서.

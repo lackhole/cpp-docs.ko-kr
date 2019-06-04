@@ -54,12 +54,12 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-ms.openlocfilehash: 14a4691e0c1f25a8f9e8b2b652c6e582f51c954a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0b61d38d141392dc85a150ddd2caf50b28146ae7
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62235124"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503166"
 ---
 # <a name="cimage-class"></a>CImage 클래스
 
@@ -158,7 +158,7 @@ class CImage
 > [!NOTE]
 > 전역을 사용 하 여 `CImage` 개체 DLL에 권장 되지 않습니다. 전역 사용 해야 하는 경우 `CImage` 개체를 dll로 호출 [CImage::ReleaseGDIPlus](#releasegdiplus) 를 명시적으로 GDI +에서 사용 되는 리소스를 해제 합니다.
 
-`CImage` 새 선택할 수 없습니다 [CDC](../../mfc/reference/cdc-class.md)합니다. `CImage` 이미지에 대 한 자체 HDC를 만듭니다. HBITMAP 연관만 HBITMAP를 한 번에 하나의 HDC를 선택할 수 있습니다, 되므로 `CImage` 다른 HDC를 선택할 수 없습니다. CDC를 해야 하는 경우 검색에서 HDC는 `CImage` [CDC::FromHandle]에 게 제공 하 고 (... /.. /mfc/reference/cdc-class.md#cdc__fromhandle 합니다.
+`CImage` 새 선택할 수 없습니다 [CDC](../../mfc/reference/cdc-class.md)합니다. `CImage` 이미지에 대 한 자체 HDC를 만듭니다. HBITMAP 연관만 HBITMAP를 한 번에 하나의 HDC를 선택할 수 있습니다, 되므로 `CImage` 다른 HDC를 선택할 수 없습니다. CDC를 해야 하는 경우 검색에서 HDC 합니다 `CImage` 를 지정 하 고 [CDC::FromHandle](../../mfc/reference/cdc-class.md#fromhandle)합니다.
 
 ## <a name="example"></a>예제
 
@@ -480,7 +480,7 @@ BOOL CreateEx(
 - BI_BITFIELDS 형식으로 압축 되지 및 색상표의 각 픽셀의 각각 빨강, 녹색 및 파랑 구성 요소를 지정 하는 세 가지 DWORD 색 마스크 구성 됩니다. 16 및 32 bpp 비트맵을 사용 하는 경우에 유효 합니다.
 
 *pdwBitfields*<br/>
-경우에 사용 *eCompression* 설정할지를 BI_BITFIELDS, 그렇지 않으면 NULL 이어야 합니다. 비트를 각 픽셀의 색의 빨강, 녹색 및 파랑 구성 요소에 대해 각각 사용 지정, 세 개의 DWORD 비트 마스크의 배열에 대 한 포인터입니다. 비트 필드에 대 한 제한 사항에 대 한 자세한 내용은 [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) Windows SDK에 있습니다.
+경우에 사용 *eCompression* 설정할지를 BI_BITFIELDS, 그렇지 않으면 NULL 이어야 합니다. 비트를 각 픽셀의 색의 빨강, 녹색 및 파랑 구성 요소에 대해 각각 사용 지정, 세 개의 DWORD 비트 마스크의 배열에 대 한 포인터입니다. 비트 필드에 대 한 제한 사항에 대 한 자세한 내용은 [BITMAPINFOHEADER](/previous-versions//dd183376\(v=vs.85\)) Windows SDK에 있습니다.
 
 *dwFlags*<br/>
 비트맵 개체에 알파 채널이 있는지를 지정 합니다. 0 개 이상의 다음 값의 조합일 수 있습니다.
@@ -648,7 +648,7 @@ int GetBPP() const throw();
 
 이 값이 각 픽셀을 정의 하는 비트 수 및 최대 수가 비트맵의 색을 결정 합니다.
 
-픽셀당 비트는 일반적으로 1, 4, 8, 16, 24 또는 32입니다. 참조를 `biBitCount` 소속 [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) 이 값에 대 한 자세한 내용은 Windows SDK에 있습니다.
+픽셀당 비트는 일반적으로 1, 4, 8, 16, 24 또는 32입니다. 참조를 `biBitCount` 소속 [BITMAPINFOHEADER](/previous-versions//dd183376\(v=vs.85\)) 이 값에 대 한 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="getcolortable"></a>  CImage::GetColorTable
 
