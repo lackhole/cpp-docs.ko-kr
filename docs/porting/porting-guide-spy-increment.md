@@ -2,12 +2,12 @@
 title: '포팅 가이드: Spy++'
 ms.date: 11/19/2018
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: b28de2396ba94578a8d06038a1191be42dce49ea
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: bca5e912d28124e8d5d6e56cc234ef7bf9bceb89
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751376"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451128"
 ---
 # <a name="porting-guide-spy"></a>포팅 가이드: Spy++
 
@@ -51,7 +51,7 @@ MSBuild에서 **Link.OutputFile** 속성이 **TargetPath** 및 **TargetName** �
 warning MSB8012: TargetPath(...\spyxx\spyxxhk\.\..\Debug\SpyxxHk.dll) does not match the Linker's OutputFile property value (...\spyxx\Debug\SpyHk55.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).warning MSB8012: TargetName(SpyxxHk) does not match the Linker's OutputFile property value (SpyHk55). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
 ```
 
-**Link.OutputFile**은 빌드 출력(예: EXE, DLL)이며, 일반적으로 `$(TargetDir)$(TargetName)$(TargetExt)`에서 생성되고 경로, 파일 이름 및 확장명을 제공합니다. 이는 이전 Visual C++ 빌드 도구(vcbuild.exe)에서 새 빌드 도구(MSBuild.exe)로 프로젝트를 마이그레이션하는 경우의 일반적인 오류입니다. Visual Studio 2010에서 빌드 도구가 변경되었으므로 2010 이전 프로젝트를 2010 이상 버전으로 마이그레이션할 때마다 이 문제가 발생할 수 있습니다. 기본적인 문제는 해당 값이 다른 프로젝트 설정을 기반으로 해야 하는지 확인할 수 없는 경우가 있기 때문에 프로젝트 마이그레이션 마법사가 **Link.OutputFile**을 업데이트하지 않는 것입니다. 따라서 일반적으로 수동으로 설정해야 합니다. 자세한 내용은 Visual C++ 블로그에서 이 [게시물](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx)을 참조하세요.
+**Link.OutputFile**은 빌드 출력(예: EXE, DLL)이며, 일반적으로 `$(TargetDir)$(TargetName)$(TargetExt)`에서 생성되고 경로, 파일 이름 및 확장명을 제공합니다. 이는 이전 Visual C++ 빌드 도구(vcbuild.exe)에서 새 빌드 도구(MSBuild.exe)로 프로젝트를 마이그레이션하는 경우의 일반적인 오류입니다. Visual Studio 2010에서 빌드 도구가 변경되었으므로 2010 이전 프로젝트를 2010 이상 버전으로 마이그레이션할 때마다 이 문제가 발생할 수 있습니다. 기본적인 문제는 해당 값이 다른 프로젝트 설정을 기반으로 해야 하는지 확인할 수 없는 경우가 있기 때문에 프로젝트 마이그레이션 마법사가 **Link.OutputFile**을 업데이트하지 않는 것입니다. 따라서 일반적으로 수동으로 설정해야 합니다. 자세한 내용은 Visual C++ 블로그에서 이 [게시물](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/)을 참조하세요.
 
 이 경우 변환된 프로젝트의 **Link.OutputFile** 속성이 구성에 따라 Spy++ 프로젝트에 대한 .\Debug\Spyxx.exe 및 .\Release\Spyxx.exe로 설정되었습니다. **모든 구성**에 대해 이러한 하드 코딩된 값을 `$(TargetDir)$(TargetName)$(TargetExt)`로 바꾸는 것이 가장 좋습니다. 이 방법이 효과가 없을 경우 여기서 사용자 지정하거나, 해당 값이 설정된 **일반** 섹션의 속성을 변경할 수 있습니다(속성은 **출력 디렉터리**, **대상 이름** 및 **대상 확장**임). 보려는 속성이 매크로를 사용하는 경우 드롭다운 목록에서 **편집**을 선택하여 매크로 대체가 수행된 최종 문자열을 보여 주는 대화 상자를 표시할 수 있습니다. **매크로** 단추를 선택하여 사용 가능한 모든 매크로 및 현재 값을 볼 수 있습니다.
 
@@ -618,7 +618,7 @@ strFace.ReleaseBuffer();
 
 ##  <a name="porting_to_secure_crt"></a> 12단계. 보안 CRT를 사용하도록 포팅
 
-보안 버전(**_s** 접미사가 있는 버전)의 CRT 함수를 사용하도록 코드를 포팅하는 것이 다음 작업입니다. 이 경우 일반적인 전략은 함수를 **_s** 버전으로 바꾼 다음, 일반적으로 필요한 추가 버퍼 크기 매개 변수를 추가하는 것입니다. 대부분의 경우 크기가 알려져 있으므로 이 작업은 간단합니다. 크기가 즉시 제공되지 않는 경우에는 CRT 함수를 사용하는 함수에 매개 변수를 더 추가하거나 대상 버퍼의 사용을 검사하고 적절한 크기 제한을 확인해야 합니다.
+보안 버전( **_s** 접미사가 있는 버전)의 CRT 함수를 사용하도록 코드를 포팅하는 것이 다음 작업입니다. 이 경우 일반적인 전략은 함수를 **_s** 버전으로 바꾼 다음, 일반적으로 필요한 추가 버퍼 크기 매개 변수를 추가하는 것입니다. 대부분의 경우 크기가 알려져 있으므로 이 작업은 간단합니다. 크기가 즉시 제공되지 않는 경우에는 CRT 함수를 사용하는 함수에 매개 변수를 더 추가하거나 대상 버퍼의 사용을 검사하고 적절한 크기 제한을 확인해야 합니다.
 
 Visual C++에서는 크기 매개 변수를 많이 추가하지 않고 쉽게 코드 보안을 설정하는 트릭을 제공하며, 템플릿 오버로드를 사용하여 수행됩니다. 이러한 오버로드는 템플릿이므로 C가 아니라 C++로 컴파일하는 경우에만 사용할 수 있습니다. Spyxxhk는 C 프로젝트이므로 트릭이 작동하지 않습니다.  그러나 Spyxx는 C 프로젝트가 아니므로 트릭을 사용할 수 있습니다. 트릭은 stdafx.h와 같은 프로젝트의 각 파일에서 컴파일되는 위치에 다음과 같은 줄을 추가하는 것입니다.
 
