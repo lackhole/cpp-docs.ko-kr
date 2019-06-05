@@ -41,19 +41,19 @@ helpviewer_keywords:
 - painting and device context [MFC]
 - CPalette class [MFC], HPALETTE handle type
 ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
-ms.openlocfilehash: 58ecf680d64f39ab61589a0ad668c15d1a9cd68c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3058bc5793a7766b0a6849ba77f0533f0bbbcef6
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359068"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503814"
 ---
 # <a name="graphic-objects"></a>그래픽 개체
 
 Windows는 디바이스 컨텍스트에서 사용할 수 있는 다양한 그리기 도구를 제공합니다. 선을 그리는 펜, 내부를 채우는 브러시 및 텍스트를 그리는 글꼴을 제공합니다. MFC는 Windows의 그리기 도구에 해당하는 그래픽 개체 클래스를 제공합니다. 아래 표에서는 사용 가능한 클래스와 그에 해당하는 Windows GDI(그래픽 장치 인터페이스) 핸들 형식을 보여 줍니다.
 
 > [!NOTE]
->  자세한 내용은 GDI + SDK 설명서를 참조 하세요. [ https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp ](https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp)합니다.
+>  자세한 내용은 참조는 [GDI + SDK 설명서](/windows/desktop/gdiplus/-gdiplus-gdi-start)합니다.
 
 이 문서에서는 이러한 그래픽 개체 클래스의 사용에 대해 설명합니다.
 

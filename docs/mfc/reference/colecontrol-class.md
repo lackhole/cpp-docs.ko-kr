@@ -334,12 +334,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: 30d73d546ee68a25f1e59776020477d038da65e8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: edad2ca391639868e7af1db6e13aaec66733f383
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160317"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503857"
 ---
 # <a name="colecontrol-class"></a>COleControl 클래스
 
@@ -2811,7 +2811,7 @@ virtual BOOL OnGetViewRect(DWORD dwAspect, LPRECTL pRect);
 - 모든 투명 하거나 불규칙 한 부분을 다루는 DVASPECT_TRANSPARENT 사각형입니다.
 
 *pRect*<br/>
-가리키는 합니다 [RECTL](https://msdn.microsoft.com/library/windows/desktop/dd162907) 개체 그리 사각형을 지정 하는 구조입니다. 이 매개 변수는 위치 및 개체의 늘이기를 제어 합니다.
+가리키는 합니다 [RECTL](/previous-versions/dd162907\(v=vs.85\)) 개체 그리 사각형을 지정 하는 구조입니다. 이 매개 변수는 위치 및 개체의 늘이기를 제어 합니다.
 
 ### <a name="return-value"></a>반환 값
 

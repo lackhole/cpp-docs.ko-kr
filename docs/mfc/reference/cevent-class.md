@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CEvent [MFC], SetEvent
 - CEvent [MFC], Unlock
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395
-ms.openlocfilehash: d7731c87c6d6b0ebdec9a0c72c24b04334aa0662
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 54501e5ff690b855ca65652e76d45b9c6cfb6259
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206045"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503712"
 ---
 # <a name="cevent-class"></a>CEvent 클래스
 
@@ -110,7 +110,7 @@ TRUE 이면 이벤트 개체는 수동 이벤트에 이벤트 개체는 자동 �
 `CEvent` 개체의 이름입니다. 프로세스 경계를 넘어 개체를 사용할 경우에 제공 되어야 합니다. 생성자 빌드 새 이름이 기존 이벤트와 일치 하는 경우 `CEvent` 해당 이름의 이벤트를 참조 하는 개체입니다. 이름이 일치 이벤트를 발생 하지 않은 기존 동기화 개체를 생성 하지 못합니다. NULL 인 경우 이름이 null이 됩니다.
 
 *lpsaAttribute*<br/>
-이벤트 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.
+이벤트 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) Windows SDK에 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -119,7 +119,7 @@ TRUE 이면 이벤트 개체는 수동 이벤트에 이벤트 개체는 자동 �
 상태를 변경 하는 `CEvent` 개체가 신호를 (스레드가 없는 경우 대기), 호출 [SetEvent](#setevent) 또는 [PulseEvent](#pulseevent)합니다. 상태를 설정 하는 `CEvent` 신호를 개체 (스레드가 대기 해야 합니다), 호출 [ResetEvent](#resetevent)합니다.
 
 > [!IMPORTANT]
->  만든 후는 `CEvent` 개체를 사용 하 여 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 뮤텍스 이미 존재 하지 않는지 확인 합니다. 뮤텍스 예기치 않게가 불량 프로세스 무단 점유 이며 뮤텍스를 악의적으로 사용 하려는 수 수를 나타낼 수 있습니다. 이 경우 권장 되는 보안에 민감한 프로시저 핸들을 닫고 개체를 만드는 오류가 발생 하는 경우에 따라 계속입니다.
+>  만든 후는 `CEvent` 개체를 사용 하 여 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 뮤텍스 이미 존재 하지 않는지 확인 합니다. 뮤텍스 예기치 않게가 불량 프로세스 무단 점유 이며 뮤텍스를 악의적으로 사용 하려는 수 수를 나타낼 수 있습니다. 이 경우 권장 되는 보안에 민감한 프로시저 핸들을 닫고 개체를 만드는 오류가 발생 하는 경우에 따라 계속입니다.
 
 ##  <a name="pulseevent"></a>  CEvent::PulseEvent
 

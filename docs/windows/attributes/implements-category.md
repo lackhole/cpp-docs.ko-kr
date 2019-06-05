@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements_category attribute
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
-ms.openlocfilehash: beca804fae8d6e82b4664102b39d76a23e66ca59
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bbd859018210d3c972ae9d4b0e9f659d96d95aab
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409410"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504193"
 ---
 # <a name="implementscategory"></a>implements_category
 
@@ -30,7 +30,7 @@ ms.locfileid: "62409410"
 
 ## <a name="remarks"></a>설명
 
-합니다 **implements_category** C++ 특성 대상 클래스에 의해 구현 된 구성 요소 범주를 지정 합니다. 범주 지도 만들고 지정 된 별도 항목을 추가 하 여 이렇게 합니다 **implements_category** 특성입니다. 자세한 내용은 [구성 요소 범주 및 수행할 해당 작동 방법 이란?](https://msdn.microsoft.com/library/windows/desktop/ms694322)합니다.
+합니다 **implements_category** C++ 특성 대상 클래스에 의해 구현 된 구성 요소 범주를 지정 합니다. 범주 지도 만들고 지정 된 별도 항목을 추가 하 여 이렇게 합니다 **implements_category** 특성입니다. 자세한 내용은 [구성 요소 범주 and How They](/windows/desktop/com/component-categories-and-how-they-work)합니다.
 
 이 특성을 사용하려면 [coclass](coclass.md), [progid](progid.md)또는 [vi_progid](vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다. 단일 특성을 사용하는 경우 다른 두 특성도 자동으로 적용됩니다. 예를 들어 있으면 `progid` 적용 됩니다 `vi_progid` 및 `coclass` 도 적용 됩니다.
 
