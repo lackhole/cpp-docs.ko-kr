@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - random header
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
-ms.openlocfilehash: 5b246be02c860ede6691db1c4d21af7e6b4da26a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3fd6272ebcb58d48cc943541f32d1195c3fab498
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369815"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450797"
 ---
 # <a name="ltrandomgt"></a>&lt;random&gt;
 
@@ -49,7 +49,7 @@ ms.locfileid: "62369815"
 
 - 대부분의 애플리케이션의 경우 가장 유용한 연결은 이 문서 뒷부분의 [코드 예제](#code)에 나와 있는 `uniform_int_distribution`을 사용하는 `mt19937` 엔진입니다.
 
-선택 하는 방법은 여러 가지는 \<임의 > 헤더 및 그 중 하나 보다 오래 된 C 런타임 함수가 적합 `rand()`합니다. 무엇이 잘못 된에 대 한 자세한 `rand()` 방법과 \<임의 > 이러한 문제를 해결 참조 [이 비디오](http://go.microsoft.com/fwlink/p/?linkid=397615)합니다.
+선택 하는 방법은 여러 가지는 \<임의 > 헤더 및 그 중 하나 보다 오래 된 C 런타임 함수가 적합 `rand()`합니다. 무엇이 잘못 된에 대 한 자세한 `rand()` 방법과 \<임의 > 이러한 문제를 해결 참조 [이 비디오](https://go.microsoft.com/fwlink/p/?linkid=397615)합니다.
 
 ## <a name="code"></a> 예제
 
@@ -500,7 +500,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
 <sup>* 알려진 시드와 함께 제공되는 경우</sup>
 
-ISO C++ 표준에서는 `random_device`를 암호로 보호하도록 요구하지 않지만 Visual Studio에서 이 URNG는 암호로 보호되도록 구현되었습니다. "암호로 보호"라는 용어는 보증을 암시하지는 않지만 지정된 불규칙화 알고리즘이 제공하는 최소 수준의 엔트로피, 즉 예측성 수준을 나타냅니다. 자세한 내용은 Wikipedia 문서 [암호로 의사 난수 생성기 보](http://go.microsoft.com/fwlink/p/?linkid=398017)를 참조하세요. ISO C++ 표준에서는 암호로 보호를 요구하지 않기 때문에 다른 플랫폼이 `random_device`를 암호로 보호되지 않은 단일 의사 난수 생성기로 구현할 수 있어 다른 생성기에서는 시드 소스로만 적절할 수 있습니다. 플랫폼 간 코드에서 `random_device`를 사용하는 경우 이러한 플랫폼의 설명서를 참조하세요.
+ISO C++ 표준에서는 `random_device`를 암호로 보호하도록 요구하지 않지만 Visual Studio에서 이 URNG는 암호로 보호되도록 구현되었습니다. "암호로 보호"라는 용어는 보증을 암시하지는 않지만 지정된 불규칙화 알고리즘이 제공하는 최소 수준의 엔트로피, 즉 예측성 수준을 나타냅니다. 자세한 내용은 Wikipedia 문서 [암호로 의사 난수 생성기 보](https://go.microsoft.com/fwlink/p/?linkid=398017)를 참조하세요. ISO C++ 표준에서는 암호로 보호를 요구하지 않기 때문에 다른 플랫폼이 `random_device`를 암호로 보호되지 않은 단일 의사 난수 생성기로 구현할 수 있어 다른 생성기에서는 시드 소스로만 적절할 수 있습니다. 플랫폼 간 코드에서 `random_device`를 사용하는 경우 이러한 플랫폼의 설명서를 참조하세요.
 
 정의된 대로 `random_device`의 결과는 재현될 수 없으며 다른 URNG보다 훨씬 느리게 실행되는 부작용이 발생할 수 있습니다. [코드 예제](#code)에 나와 있는 것처럼, `random_device`에 대한 호출을 통해 시드하려고 하더라도 암호로 보호할 필요가 없는 대부분의 응용 프로그램에서는 `mt19937` 또는 유사한 엔진을 사용합니다.
 

@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::bernoulli_distribution [C++], param_type
 - std::bernoulli_distribution [C++], param_type
 ms.assetid: 586bcde1-95ca-411a-bf17-4aaf19482f34
-ms.openlocfilehash: b5ddbadea4d16d7a76df332074ec5c80fae57eb4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dbd5229e8b8a2c2b368688635d9d596a8538356b
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62414128"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450868"
 ---
 # <a name="bernoullidistribution-class"></a>bernoulli_distribution 클래스
 
@@ -90,7 +90,7 @@ public:
 
 분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-베르누이 분포 이산 확률 함수에 대한 자세한 내용은 Wolfram MathWorld 문서 [베르누이 분포](http://go.microsoft.com/fwlink/p/?linkid=398467)를 참조하세요.
+베르누이 분포 이산 확률 함수에 대한 자세한 내용은 Wolfram MathWorld 문서 [베르누이 분포](https://go.microsoft.com/fwlink/p/?linkid=398467)를 참조하세요.
 
 ## <a name="example"></a>예제
 

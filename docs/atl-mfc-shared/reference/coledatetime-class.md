@@ -34,12 +34,12 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-ms.openlocfilehash: 46b5f15a2f6048745a12b8c3a8c8a63404f71aa2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 63c2971f5d55cb5198925650bcf90b2f1a8b0958
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252703"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503222"
 ---
 # <a name="coledatetime-class"></a>COleDateTime 클래스
 
@@ -169,7 +169,7 @@ bool operator>=(const COleDateTime& date) const throw();
 
 ### <a name="example"></a>예제
 
-연산자 **>=**, **\< =** 하십시오 **>**, 및 **<**, 경우는 어설션는 `COleDateTime` 개체가 설정 된 null로 합니다.
+연산자 **>=** , **\< =** 하십시오 **>** , 및 **<** , 경우는 어설션는 `COleDateTime` 개체가 설정 된 null로 합니다.
 
 [!code-cpp[NVC_ATLMFC_Utilities#170](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_3.cpp)]
 
@@ -225,7 +225,7 @@ A `FILETIME` 날짜/시간 값으로 변환 되어 새 복사 구조 `COleDateTi
 MS-DOS 날짜 및 시간 값을 날짜/시간 값으로 변환 되어 새 복사 `COleDateTime` 개체입니다.
 
 *timeStamp*<br/>
-에 대 한 참조를 [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) 현재 현지 시간을 포함 하는 구조체.
+에 대 한 참조를 [DBTimeStamp](/dotnet/api/system.data.oledb.oledbtype) 현재 현지 시간을 포함 하는 구조체.
 
 ### <a name="remarks"></a>설명
 
@@ -347,7 +347,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& timeStamp) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *timeStamp*<br/>
-에 대 한 참조를 [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) 구조입니다.
+에 대 한 참조를 [DBTimeStamp](/dotnet/api/system.data.oledb.oledbtype) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1094,7 +1094,7 @@ int SetDateTime(
 |1|3|3|01:03:03|
 |23|45|0|23:45:00|
 |25|30|0|유효하지 않음|
-|10|60|0|유효하지 않음|
+|9|60|0|유효하지 않음|
 
 날짜 값의 몇 가지 예는 다음과 같습니다.
 
@@ -1196,7 +1196,7 @@ int SetTime(
 |1|3|3|01:03:03|
 |23|45|0|23:45:00|
 |25|30|0|유효하지 않음|
-|10|60|0|유효하지 않음|
+|9|60|0|유효하지 않음|
 
 날짜 및 시간을 설정 하려면을 참조 하세요 [COleDateTime::SetDateTime](#setdatetime)합니다.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control settings
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
-ms.openlocfilehash: 34cc49fff88399a6c3cf5f7db71410c88e5c9bab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d7653e61e6aada9205f599cf7a7ca6187dd139d
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373286"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450549"
 ---
 # <a name="control-settings-mfc-activex-control-wizard"></a>MFC ActiveX 컨트롤 마법사, 컨트롤 설정
 
@@ -57,7 +57,7 @@ ms.locfileid: "62373286"
    컨트롤에는 표준 Windows 지정 **에 대 한** 버전 번호 및 저작권 정보를 표시 하는 대화 상자.
 
    > [!NOTE]
-   > 사용자가 액세스 하는 컨트롤에 대 한 도움말을 구현한 방법 도움말 컨테이너 도움말을 사용 하 여 컨트롤 도움말 통합 했는지 여부에 따라 달라 집니다. 도움말을 통합 하는 방법에 대 한 자세한 내용은 합니다 [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) 웹 사이트에서 "추가 상황에 맞는 도움말에 MFC ActiveX 컨트롤"를 검색 합니다.
+   > 사용자가 액세스 하는 컨트롤에 대 한 도움말을 구현한 방법 도움말 컨테이너 도움말을 사용 하 여 컨트롤 도움말 통합 했는지 여부에 따라 달라 집니다. 도움말을 통합 하는 방법에 대 한 자세한 내용은 합니다 [MSDN Library](https://go.microsoft.com/fwlink/p/?linkid=150542) 웹 사이트에서 "추가 상황에 맞는 도움말에 MFC ActiveX 컨트롤"를 검색 합니다.
 
    삽입이 옵션을 선택 합니다 `AboutBox` 프로젝트 컨트롤 클래스의 메서드를 제어 (C*ProjName*Ctrl.cpp) AboutBox 프로젝트 디스패치 맵에 추가 합니다. 기본적으로 이 옵션이 선택됩니다.
 
@@ -87,7 +87,7 @@ ms.locfileid: "62373286"
 
 - **단순 프레임 컨트롤로 역할**
 
-   컨트롤에 대 한 비트가 OLEMISC_SIMPLEFRAME를 설정 하 여 컨트롤이 다른 컨트롤에 대 한 컨테이너 임을 지정 합니다. 자세한 내용은는 [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) 웹 사이트에서 "간단한 프레임 사이트 포함 항목"를 검색 합니다.
+   컨트롤에 대 한 비트가 OLEMISC_SIMPLEFRAME를 설정 하 여 컨트롤이 다른 컨트롤에 대 한 컨테이너 임을 지정 합니다. 자세한 내용은는 [MSDN Library](https://go.microsoft.com/fwlink/p/?linkid=150542) 웹 사이트에서 "간단한 프레임 사이트 포함 항목"를 검색 합니다.
 
 - **속성을 비동기적으로 로드**
 

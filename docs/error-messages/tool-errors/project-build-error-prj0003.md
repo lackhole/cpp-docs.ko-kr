@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0003
 ms.assetid: fc5a84bb-c6d3-41d6-8dd6-475455820778
-ms.openlocfilehash: 00d101e62d49078ebfcfff9455497f30224b84fe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e30a63ba48434196478b52283880864d3e4ae6ea
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359698"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450760"
 ---
 # <a name="project-build-error-prj0003"></a>프로젝트 빌드 오류 PRJ0003
 
@@ -21,7 +21,7 @@ ms.locfileid: "62359698"
 
 이 오류의 가능한 원인은 다음과 같습니다.
 
-- 프로젝트에 ATL 서버에 따라 달라 집니다. Visual Studio 2008부터 ATL 서버 더 이상 Visual Studio의 일부로 포함 되었지만 CodePlex에서 공유 소스 프로젝트로 놓았습니다. ATL 서버 소스 코드 및 도구를 다운로드 하려면로 이동 [ATL 서버 라이브러리 및 도구](http://go.microsoft.com/fwlink/p/?linkid=81979)합니다.
+- 프로젝트에 ATL 서버에 따라 달라 집니다. Visual Studio 2008부터 ATL 서버 더 이상 Visual Studio의 일부로 포함 되었지만 CodePlex에서 공유 소스 프로젝트로 놓았습니다. ATL 서버 소스 코드 및 도구를 다운로드 하려면로 이동 [ATL 서버 라이브러리 및 도구](https://go.microsoft.com/fwlink/p/?linkid=81979)합니다.
 
 - 시스템 리소스가 부족 합니다. 이 해결 하려면 일부 응용 프로그램을 닫습니다.
 

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CGopherFileFind [MFC], GetScreenName
 - CGopherFileFind [MFC], IsDots
 ms.assetid: 8465a979-6323-496d-ab4b-e81383fb999d
-ms.openlocfilehash: c1157b3583e266a09840f710b46766ffc4f31b5e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bced5a95f65713915a1f06094bfe059db79aab2d
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345762"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503636"
 ---
 # <a name="cgopherfilefind-class"></a>CGopherFileFind 클래스
 
@@ -161,7 +161,7 @@ virtual BOOL FindFile(
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오기, Win32 함수 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오기, Win32 함수 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -177,7 +177,7 @@ virtual BOOL FindNextFile();
 
 ### <a name="return-value"></a>반환 값
 
-더 많은 파일; 없으면 0이 아닌 값 파일을 찾을 수는 디렉터리에 마지막 또는 오류가 발생 한 경우 0입니다. 확장 오류 정보를 가져오기, Win32 함수 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다. 찾은 파일 디렉터리에 마지막 파일 되었거나 일치 하는 경우에 파일을 찾을 수 있습니다는 `GetLastError` ERROR_NO_MORE_FILES를 반환 합니다.
+더 많은 파일; 없으면 0이 아닌 값 파일을 찾을 수는 디렉터리에 마지막 또는 오류가 발생 한 경우 0입니다. 확장 오류 정보를 가져오기, Win32 함수 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다. 찾은 파일 디렉터리에 마지막 파일 되었거나 일치 하는 경우에 파일을 찾을 수 있습니다는 `GetLastError` ERROR_NO_MORE_FILES를 반환 합니다.
 
 ##  <a name="getcreationtime"></a>  CGopherFileFind::GetCreationTime
 

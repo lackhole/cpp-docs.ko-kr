@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: e88c375560c617e970c70adda245125ac8242ae4
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 50558e6959789dddc8223804394a0b242f793de5
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220346"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504248"
 ---
 # <a name="cwnd-class"></a>CWnd 클래스
 
@@ -1652,7 +1652,7 @@ void BringWindowToTop();
 
 또한 `BringWindowToTop`은 팝업, 최상위 및 MDI 자식 창을 활성화합니다. `BringWindowToTop` 멤버 함수를 사용하여 겹치는 창에 의해 부분적으로 또는 완전히 가려진 모든 창을 발견해야 합니다.
 
-이 함수는 Win32 호출 [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) 함수입니다. 호출 된 [SetWindowPos](#setwindowpos) 함수 Z-순서에서 창의 위치를 변경 합니다. `BringWindowToTop` 함수는 창 스타일을 변경하여 최상위 창으로 만들지 않습니다. 자세한 내용은 참조 하세요. [HWND_TOP와 HWND_TOPMOST의 차이 란](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
+이 함수는 Win32 호출 [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) 함수입니다. 호출 된 [SetWindowPos](#setwindowpos) 함수 Z-순서에서 창의 위치를 변경 합니다. `BringWindowToTop` 함수는 창 스타일을 변경하여 최상위 창으로 만들지 않습니다. 자세한 내용은 참조 하세요. [HWND_TOP와 HWND_TOPMOST의 차이 란](https://devblogs.microsoft.com/oldnewthing/?p=33263)
 
 ### <a name="example"></a>예제
 
@@ -2455,7 +2455,7 @@ int DlgDirList(
 
 `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`
 
-이 예제에서는 *드라이브* 드라이브 문자입니다 *디렉터리* 은 올바른 디렉터리 이름, 및 *filename* 가 하나 이상의 와일드 카드를 포함 해야 하는 올바른 파일입니다. 와일드 카드는 물음표 (**?**), 즉 모든 문자를 나타내고 별표 일치 (<strong>\*</strong>), 임의 개수의 문자를 일치 의미 합니다.
+이 예제에서는 *드라이브* 드라이브 문자입니다 *디렉터리* 은 올바른 디렉터리 이름, 및 *filename* 가 하나 이상의 와일드 카드를 포함 해야 하는 올바른 파일입니다. 와일드 카드는 물음표 ( **?** ), 즉 모든 문자를 나타내고 별표 일치 (<strong>\*</strong>), 임의 개수의 문자를 일치 의미 합니다.
 
 에 대 한 길이가 0 인 문자열을 지정 하는 경우 *lpPathSpec*, 문자열으로 변경 됩니다 디렉터리 이름만 지정 해도 모든 파일 사양이 없는 경우 또는 "\*.\*"입니다.
 
@@ -2523,7 +2523,7 @@ int DlgDirListComboBox(
 
 `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`
 
-이 예제에서는 *드라이브* 드라이브 문자입니다 *디렉터리* 은 올바른 디렉터리 이름, 및 *filename* 가 하나 이상의 와일드 카드를 포함 해야 하는 올바른 파일입니다. 와일드 카드는 물음표 (**?**), 즉 모든 문자를 나타내고 별표 일치 (<strong>\*</strong>), 즉 문자의 번호와 일치 합니다.
+이 예제에서는 *드라이브* 드라이브 문자입니다 *디렉터리* 은 올바른 디렉터리 이름, 및 *filename* 가 하나 이상의 와일드 카드를 포함 해야 하는 올바른 파일입니다. 와일드 카드는 물음표 ( **?** ), 즉 모든 문자를 나타내고 별표 일치 (<strong>\*</strong>), 즉 문자의 번호와 일치 합니다.
 
 에 대 한 빈 문자열을 지정 하는 경우 *lpPathSpec*, 현재 디렉터리가 사용 됩니다 하 고 *lpPathSpec* 수정 되지 것입니다. 문자열을로 변경 됩니다 디렉터리 이름만 지정 해도 모든 파일 사양이 없는 경우 "\*"입니다.
 
@@ -5607,7 +5607,7 @@ BOOL LockWindowUpdate();
 
 잠긴된 창의 이동할 수 없습니다. 한 번에 하나의 창만 잠글 수 있습니다. 사용 하 여 잠긴 창의 잠금을 해제 하려면 `LockWindowUpdate`, 호출 [UnlockWindowUpdate](#unlockwindowupdate)합니다.
 
-경우는 잠긴된 창 (또는 모든 잠긴된 자식 창)를 사용 하 여 응용 프로그램 호출을 [GetDC,](https://msdn.microsoft.com/library/windows/desktop/dd144871) [GetDCEx를](https://msdn.microsoft.com/library/windows/desktop/dd144873) 또는 [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) Windows 함수 호출된 된 함수가 반환 장치 표시 된 지역은 빈 컨텍스트. 이 응용 프로그램 창을 호출 하 여 계정의 잠금을 해제할 때까지 진행 된 `UnlockWindowUpdate` 멤버 함수입니다.
+경우는 잠긴된 창 (또는 모든 잠긴된 자식 창)를 사용 하 여 응용 프로그램 호출을 [GetDC,](/windows/desktop/api/winuser/nf-winuser-getdc) [GetDCEx를](/windows/desktop/api/winuser/nf-winuser-getdcex) 또는 [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) Windows 함수 호출된 된 함수가 반환 장치 표시 된 지역은 빈 컨텍스트. 이 응용 프로그램 창을 호출 하 여 계정의 잠금을 해제할 때까지 진행 된 `UnlockWindowUpdate` 멤버 함수입니다.
 
 창이 업데이트 잠겨 하는 동안 시스템 잠긴된 창과 연결 된 장치 컨텍스트와 모든 그리기 작업의 경계 사각형을를 추적 합니다. 이 경계 사각형 잠긴된 창 및 최종를 강제로 해당 자식 창에서 무효화 되기 그리기를 다시 사용 하도록 설정 하는 경우 [WM_PAINT](/windows/desktop/gdi/wm-paint) 화면을 업데이트 하는 메시지입니다. 없는 그리기 창이 업데이트 된 잠겨 있는 동안 수행 되 면 영역이 무효화 됩니다.
 
@@ -10038,7 +10038,7 @@ afx_msg void OnUserChanged();
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 수신 합니다 [WM_USERCHANGED](https://msdn.microsoft.com/library/windows/desktop/ms632651) Windows SDK에 설명 된 알림 메시지입니다. 사용자가 켜거나 로그, 운영 체제는 사용자별 설정을 업데이트 합니다. 시스템 설정 업데이트 직후이 메시지를 보냅니다.
+이 메서드를 수신 합니다 [WM_USERCHANGED](/windows/desktop/winmsg/wm-userchanged) Windows SDK에 설명 된 알림 메시지입니다. 사용자가 켜거나 로그, 운영 체제는 사용자별 설정을 업데이트 합니다. 시스템 설정 업데이트 직후이 메시지를 보냅니다.
 
 > [!NOTE]
 > 이 멤버 함수는 애플리케이션에서 Windows 메시지를 처리할 수 있도록 프레임워크에서 호출됩니다. 함수에 전달되는 매개 변수는 해당 메시지가 수신되었을 때 프레임워크에서 받았던 매개 변수를 반영합니다. 이 함수의 기본 클래스 구현을 호출하는 경우, 해당 구현은 해당 함수에 공급한 매개변수가 아닌, 메시지와 함께 전달 받았던 원래의 매개 변수를 사용할 것입니다.

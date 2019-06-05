@@ -162,12 +162,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: 3819e861b7a5e6ff27fe632a33413b588a5a4835
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2428c94eaa5dd371d58680f6317173709f684507
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323637"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449571"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl Class
 
@@ -1505,7 +1505,7 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
 
 ### <a name="remarks"></a>설명
 
-접근성 보조 기능은 장애가 있는 사용자를 도울 응용 프로그램은 컴퓨터를 사용 합니다. 내게 필요한 옵션 식별자가 사용 하 여는 `IAccessible` 인터페이스를 고유 하 게 창에서 요소를 지정 합니다. 내게 필요한 옵션 식별자에 대 한 자세한 내용은 "에 대 한 활성 내게 필요한 옵션 지원" 항목에 대 한 검색 [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322)합니다.
+접근성 보조 기능은 장애가 있는 사용자를 도울 응용 프로그램은 컴퓨터를 사용 합니다. 내게 필요한 옵션 식별자가 사용 하 여는 `IAccessible` 인터페이스를 고유 하 게 창에서 요소를 지정 합니다. 내게 필요한 옵션 식별자에 대 한 자세한 내용은 "에 대 한 활성 내게 필요한 옵션 지원" 항목에 대 한 검색 [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)합니다.
 
 이 메서드는 전송 된 [TVM_MAPACCIDTOHTREEITEM](/windows/desktop/Controls/tvm-mapaccidtohtreeitem) Windows SDK에 설명 된 메시지입니다.
 
@@ -1541,7 +1541,7 @@ UINT MapItemToAccID(HTREEITEM hItem) const;
 
 ### <a name="remarks"></a>설명
 
-접근성 보조 기능은 장애가 있는 사용자를 도울 응용 프로그램은 컴퓨터를 사용 합니다. 내게 필요한 옵션 식별자가 사용 하 여는 `IAccessible` 인터페이스를 고유 하 게 창에서 요소를 지정 합니다. 내게 필요한 옵션 식별자에 대 한 자세한 내용은 "에 대 한 활성 내게 필요한 옵션 지원" 항목에 대 한 검색 [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322)합니다.
+접근성 보조 기능은 장애가 있는 사용자를 도울 응용 프로그램은 컴퓨터를 사용 합니다. 내게 필요한 옵션 식별자가 사용 하 여는 `IAccessible` 인터페이스를 고유 하 게 창에서 요소를 지정 합니다. 내게 필요한 옵션 식별자에 대 한 자세한 내용은 "에 대 한 활성 내게 필요한 옵션 지원" 항목에 대 한 검색 [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)합니다.
 
 이 메서드는 전송 된 [TVM_MAPHTREEITEMTOACCID](/windows/desktop/Controls/tvm-maphtreeitemtoaccid) Windows SDK에 설명 된 메시지입니다.
 
@@ -2281,7 +2281,7 @@ void ShowInfoTip(HTREEITEM hItem);
 
 ### <a name="remarks"></a>설명
 
-도구 설명 및 정보 팁의 차이점에 대 한 자세한 내용은 "도구 설명 및 정보 팁" 항목에 대 한 검색 [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322)합니다.
+도구 설명 및 정보 팁의 차이점에 대 한 자세한 내용은 "도구 설명 및 정보 팁" 항목에 대 한 검색 [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)합니다.
 
 이 메서드는 전송 된 [TVM_SHOWINFOTIP](/windows/desktop/Controls/tvm-showinfotip) Windows SDK에 설명 된 메시지입니다.
 

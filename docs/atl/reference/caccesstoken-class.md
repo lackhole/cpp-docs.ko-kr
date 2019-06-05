@@ -52,12 +52,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-ms.openlocfilehash: 0b98df740b751d019c9b2852d682f61a51384818
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ce5c29c2399fd47bdb1ad0135257b41617094aa9
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62260729"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503375"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken 클래스
 
@@ -246,7 +246,7 @@ bool CreatePrimaryToken(
 새 토큰에 대 한 요청 된 액세스 권한을 지정합니다. 기본값인 MAXIMUM_ALLOWED, 호출자가 사용할 수 있는 모든 액세스 권한을 요청 합니다. 참조 [액세스 권한 및 액세스 마스크](/windows/desktop/SecAuthZ/access-rights-and-access-masks) 자세한 on 액세스 권한에 대 한 합니다.
 
 *pTokenAttributes*<br/>
-에 대 한 포인터를 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 새 토큰의 보안 설명자를 지정 하 고 자식 프로세스 토큰을 상속할 수 있는지 여부를 결정 하는 구조입니다. 하는 경우 *pTokenAttributes* 가 NULL이 고, 토큰에는 기본 보안 설명자를 가져옵니다 핸들을 상속할 수 없습니다.
+에 대 한 포인터를 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) 새 토큰의 보안 설명자를 지정 하 고 자식 프로세스 토큰을 상속할 수 있는지 여부를 결정 하는 구조입니다. 하는 경우 *pTokenAttributes* 가 NULL이 고, 토큰에는 기본 보안 설명자를 가져옵니다 핸들을 상속할 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -295,10 +295,10 @@ bool CreateProcessAsUser(
 사용자의 프로필을 사용 하 여 로드 되 고 TRUE 인 경우 [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea)합니다.
 
 *pProcessAttributes*<br/>
-에 대 한 포인터를 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 새 프로세스에 대 한 보안 설명자를 지정 하 고 자식 프로세스가 반환된 된 핸들을 상속할 수 있는지 여부를 결정 하는 구조입니다. 하는 경우 *pProcessAttributes* 가 NULL이 고, 프로세스는 기본 보안 설명자를 가져옵니다 핸들을 상속할 수 없습니다.
+에 대 한 포인터를 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) 새 프로세스에 대 한 보안 설명자를 지정 하 고 자식 프로세스가 반환된 된 핸들을 상속할 수 있는지 여부를 결정 하는 구조입니다. 하는 경우 *pProcessAttributes* 가 NULL이 고, 프로세스는 기본 보안 설명자를 가져옵니다 핸들을 상속할 수 없습니다.
 
 *pThreadAttributes*<br/>
-에 대 한 포인터를 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 새 스레드에 대 한 보안 설명자를 지정 하 고 자식 프로세스가 반환된 된 핸들을 상속할 수 있는지 여부를 결정 하는 구조입니다. 하는 경우 *pThreadAttributes* 가 NULL이 고, 스레드는 기본 보안 설명자를 가져옵니다 핸들을 상속할 수 없습니다.
+에 대 한 포인터를 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) 새 스레드에 대 한 보안 설명자를 지정 하 고 자식 프로세스가 반환된 된 핸들을 상속할 수 있는지 여부를 결정 하는 구조입니다. 하는 경우 *pThreadAttributes* 가 NULL이 고, 스레드는 기본 보안 설명자를 가져옵니다 핸들을 상속할 수 없습니다.
 
 *bInherit*<br/>
 새 프로세스가 호출 프로세스에서 핸들을 상속 되는지 여부를 나타냅니다. TRUE 이면 호출 프로세스에 상속할 수 있는 열린 핸들 각 새 프로세스에 의해 상속 됩니다. 상속 된 핸들에는 원래 핸들으로 동일한 값 및 액세스 권한이 있습니다.

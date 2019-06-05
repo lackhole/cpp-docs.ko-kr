@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::cauchy_distribution [C++], param_type
 - std::cauchy_distribution [C++], param_type
 ms.assetid: 21522351-f2f1-46d9-97f0-d358c932356c
-ms.openlocfilehash: 2aeb45054a06446c1fae092d4c07f297580684ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 680ceb29514265ff77be6f6ae708fea0a8e769af
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351237"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450231"
 ---
 # <a name="cauchydistribution-class"></a>cauchy_distribution 클래스
 
@@ -97,7 +97,7 @@ public:
 
 분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-코시 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [Cauchy Distribution](http://go.microsoft.com/fwlink/p/?linkid=400523)(코시 분포)을 참조하세요.
+코시 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [Cauchy Distribution](https://go.microsoft.com/fwlink/p/?linkid=400523)(코시 분포)을 참조하세요.
 
 ## <a name="example"></a>예제
 

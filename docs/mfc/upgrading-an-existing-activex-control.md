@@ -12,12 +12,12 @@ helpviewer_keywords:
 - upgrading ActiveX controls
 - licensing ActiveX controls
 ms.assetid: 4d12ddfa-b491-4f9f-a0b7-b51458e05651
-ms.openlocfilehash: fc7313c862d3536326894c947fa371d833e8fab8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 22cbeaa5ac0f92e2b7bcc9dcbd06df9ab4ccaff5
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180761"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503830"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>기존 ActiveX 컨트롤 업그레이드
 
@@ -181,7 +181,7 @@ Internet Explorer에서 사용이 허가 된 ActiveX 컨트롤을 사용 하려�
 
 - 코드 베이스 매개 변수를 사용
 
-라이센스가 없는 컴퓨터에서 HTML 페이지에 사용이 허가 된 컨트롤을 사용 하려면 라이선스 패키지 파일 (LPK)을 생성 해야 합니다. LPK 파일 HTML 페이지의 사용이 허가 된 컨트롤에 대 한 런타임 라이선스를 포함 합니다. 이 파일은 LPK_TOOL 통해 생성 됩니다. ActiveX SDK와 함께 제공 되는 EXE 수 있습니다. 자세한 내용은 참조는 MSDN 웹 사이트 [ http://msdn.microsoft.com ](http://msdn.microsoft.com)합니다.
+라이센스가 없는 컴퓨터에서 HTML 페이지에 사용이 허가 된 컨트롤을 사용 하려면 라이선스 패키지 파일 (LPK)을 생성 해야 합니다. LPK 파일 HTML 페이지의 사용이 허가 된 컨트롤에 대 한 런타임 라이선스를 포함 합니다. 이 파일은 LPK_TOOL 통해 생성 됩니다. ActiveX SDK와 함께 제공 되는 EXE 수 있습니다.
 
 #### <a name="to-create-an-lpk-file"></a>LPK 파일을 만들려면
 

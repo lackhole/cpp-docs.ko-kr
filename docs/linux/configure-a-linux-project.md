@@ -2,12 +2,12 @@
 title: Visual Studio에서 C++ Linux 프로젝트 구성
 ms.date: 11/12/2018
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 84b9242ad5af79ed48d716fb5a35db56428e9a98
-ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
+ms.openlocfilehash: 8e8bf2b12462a18c8a0e6c1c4d6677f18e2f0f34
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57808367"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451156"
 ---
 # <a name="configure-a-linux-project"></a>Linux 프로젝트 구성
 
@@ -40,7 +40,7 @@ Visual Studio를 사용하여 Linux 프로젝트에 대해 다양한 옵션을 �
 
 **Visual Studio 2017 버전 15.6 이하**:<br/>
 기본적으로 Visual Studio에는 Linux 컴퓨터의 모든 시스템 수준 포함 파일이 포함되지 않습니다.  예를 들어 **/usr/include** 디렉터리의 항목은 Visual Studio에 없습니다.
-완전한 [IntelliSense](/visualstudio/ide/using-intellisense) 지원을 위해서는, 개발 컴퓨터의 일부 위치로 해당 파일을 복사하고 Visual Studio에 이 위치를 가리켜야 합니다.  한 가지 방법은 scp(보안 복사)를 사용하여 파일을 복사합니다.  Windows 10에서 [Bash on Windows](https://msdn.microsoft.com/commandline/wsl/about)(Windows의 Bash)를 사용하여 scp를 실행할 수 있습니다.  이전 버전의 Windows에서는 [PSCP(PuTTY 보안 복사)](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)와 같은 방법을 사용할 수 있습니다.
+완전한 [IntelliSense](/visualstudio/ide/using-intellisense) 지원을 위해서는, 개발 컴퓨터의 일부 위치로 해당 파일을 복사하고 Visual Studio에 이 위치를 가리켜야 합니다.  한 가지 방법은 scp(보안 복사)를 사용하여 파일을 복사합니다.  Windows 10에서 [Bash on Windows](https://msdn.microsoft.com/commandline/wsl/about)(Windows의 Bash)를 사용하여 scp를 실행할 수 있습니다.  이전 버전의 Windows에서는 [PSCP(PuTTY 보안 복사)](https://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)와 같은 방법을 사용할 수 있습니다.
 
 다음과 비슷한 명령을 사용하여 파일을 복사할 수 있습니다.
 

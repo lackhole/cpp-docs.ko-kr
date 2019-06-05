@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-ms.openlocfilehash: 5c69e0aa9e3444ec9b43470f8feb4d1f870dc9c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8348a56171836642db5c44cd5d075ba9d2c33769
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409189"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503848"
 ---
 # <a name="module-c"></a>module(C++)
 
@@ -97,7 +97,7 @@ ATL을 사용하는 프로젝트 내에서 이 특성을 사용하는 경우 특
 
 - `type` = **dll**
 
-   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) 는 COM 서버에 필요한 기본 클래스 및 표준 DLL 진입점으로 사용됩니다. 이러한 진입점은 [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow)및 [DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891)입니다.
+   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) 는 COM 서버에 필요한 기본 클래스 및 표준 DLL 진입점으로 사용됩니다. 이러한 진입점은 [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow)및 [DllGetClassObject](/previous-versions//dd797891\(v=vs.85\))입니다.
 
 - `type` = **exe**
 

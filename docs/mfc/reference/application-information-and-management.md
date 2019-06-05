@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-ms.openlocfilehash: 84d11b5c2d456a55e09b8512a3c0af06409939e8
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: b106a8874d1b0243f408a6c6c7311a9ce791e019
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65612290"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504502"
 ---
 # <a name="application-information-and-management"></a>응용 프로그램 정보 및 관리
 
@@ -98,7 +98,7 @@ CWinThread* AfxBeginThread(
 - **0** 스레드를 만든 후 즉시 시작 합니다.
 
 *lpSecurityAttrs*<br/>
-가리키는 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 스레드에 대 한 보안 특성을 지정 하는 구조입니다. NULL 인 경우 만드는 스레드와 동일한 보안 특성이 사용 됩니다. 이 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
+가리키는 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) 스레드에 대 한 보안 특성을 지정 하는 구조입니다. NULL 인 경우 만드는 스레드와 동일한 보안 특성이 사용 됩니다. 이 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -648,7 +648,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
 ### <a name="parameters"></a>매개 변수
 
 *nClassStyle*<br/>
-Windows 클래스 스타일 또는 조합 스타일에 비트 OR를 사용 하 여 만든 지정 ( **&#124;**) 창 클래스에 대 한 연산자입니다. 클래스 스타일의 목록은 참조 하세요. 합니다 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) Windows SDK에는 구조입니다. NULL 인 경우 기본값을 다음과 같이 설정 됩니다.
+Windows 클래스 스타일 또는 조합 스타일에 비트 OR를 사용 하 여 만든 지정 ( **&#124;** ) 창 클래스에 대 한 연산자입니다. 클래스 스타일의 목록은 참조 하세요. 합니다 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) Windows SDK에는 구조입니다. NULL 인 경우 기본값을 다음과 같이 설정 됩니다.
 
 - CS_DBLCLKS를 보내고 메시지 창 프로시저를 두 번 클릭 마우스를 두 번 클릭할 때를 마우스로 스타일을 설정 합니다.
 

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2659
 ms.assetid: b0883600-4d27-4ca7-a931-8ca6bd48654d
-ms.openlocfilehash: b8b6493b01ac2b88ea50ba50157328f59fdbedf9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1b44ef825626f60e9ae6c6e8600953959fcd7b3a
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360387"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449235"
 ---
 # <a name="compiler-error-c2659"></a>컴파일러 오류 C2659
 
 'operator' : 함수를 왼쪽 피연산자로 사용했습니다.
 
-함수가 지정된 연산자의 왼쪽에 위치되었습니다. 이 오류의 가장 일반적인 이유는 개발자가 변수로 지정하려던 연산자 왼쪽의 식별자를 컴파일러가 함수로 구문 분석했기 때문입니다. 자세한 내용은 Wikipedia 참조 문서 [가장 까다로운 구문 분석](http://en.wikipedia.org/wiki/Most_vexing_parse)합니다. 이 예제에서는 혼동하기 쉬운 함수 선언과 변수 정의를 보여 줍니다.
+함수가 지정된 연산자의 왼쪽에 위치되었습니다. 이 오류의 가장 일반적인 이유는 개발자가 변수로 지정하려던 연산자 왼쪽의 식별자를 컴파일러가 함수로 구문 분석했기 때문입니다. 자세한 내용은 Wikipedia 참조 문서 [가장 까다로운 구문 분석](https://en.wikipedia.org/wiki/Most_vexing_parse)합니다. 이 예제에서는 혼동하기 쉬운 함수 선언과 변수 정의를 보여 줍니다.
 
 ```
 // C2659a.cpp

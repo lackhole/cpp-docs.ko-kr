@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: ec4d7aa6f2a1061e632b81a27a0233cf5fdd1c63
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23160c51466ce1a2857d3648dd5f4970dfe172f7
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373822"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504213"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl 클래스
 
@@ -74,7 +74,7 @@ class CNetAddressCtrl : public CEdit
 
 ## <a name="example"></a>예제
 
-대화 헤더 파일에서 다음 코드 예제에서는 정의 [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) 하 고 [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) 에 필요한 변수를 [CNetAddressCtrl::GetAddress](#getaddress)메서드.
+대화 헤더 파일에서 다음 코드 예제에서는 정의 [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) 하 고 [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) 에 필요한 변수를 [CNetAddressCtrl::GetAddress](#getaddress)메서드.
 
 [!code-cpp[NVC_MFC_CNetAddressCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cnetaddressctrl-class_2.h)]
 
@@ -191,7 +191,7 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
 ### <a name="parameters"></a>매개 변수
 
 *pAddress*<br/>
-[out에서] 에 대 한 포인터를 [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) 구조입니다.  설정 된 *pAddrInfo* 주소로이 구조체의 멤버는 [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) GetAddress 메서드를 호출 하기 전에 구조체입니다.
+[out에서] 에 대 한 포인터를 [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) 구조입니다.  설정 된 *pAddrInfo* 주소로이 구조체의 멤버는 [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) GetAddress 메서드를 호출 하기 전에 구조체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -199,7 +199,7 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 성공 하는 경우는 [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) 구조 네트워크 주소에 대 한 추가 정보를 포함 합니다.
+이 메서드는 성공 하는 경우는 [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) 구조 네트워크 주소에 대 한 추가 정보를 포함 합니다.
 
 사용 된 [CNetAddressCtrl::SetAllowType](#setallowtype) 현재 네트워크 주소 컨트롤 수 주소의 형식을 지정 하는 방법입니다. 사용 된 [CNetAddressCtrl::GetAddress](#getaddress) 의 유효성을 검사 하 고 사용자가 입력 하는 네트워크 주소를 구문 분석 방법입니다. 사용 합니다 [CNetAddressCtrl::DisplayErrorTip](#displayerrortip) 하는 경우 오류 메시지 정보 팁을 표시 하는 메서드를 [CNetAddressCtrl::GetAddress](#getaddress) 메서드를 성공적으로 수행 되지 합니다.
 
@@ -215,7 +215,7 @@ DWORD GetAllowType() const;
 
 ### <a name="return-value"></a>반환 값
 
-비트 조합 (OR) 플래그 주소의 형식을 지정 하는 네트워크 주소 컨트롤을 지원할 수 있습니다. 자세한 내용은 [NET_STRING](https://msdn.microsoft.com/library/windows/desktop/bb762586)합니다.
+비트 조합 (OR) 플래그 주소의 형식을 지정 하는 네트워크 주소 컨트롤을 지원할 수 있습니다. 자세한 내용은 [NET_STRING](/windows/desktop/shell/net-string)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -233,7 +233,7 @@ HRESULT SetAllowType(DWORD dwAddrMask);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*dwAddrMask*|[in] 비트 조합 (OR) 플래그 주소의 형식을 지정 하는 네트워크 주소 컨트롤을 지원할 수 있습니다. 자세한 내용은 [NET_STRING](https://msdn.microsoft.com/library/windows/desktop/bb762586)합니다.|
+|*dwAddrMask*|[in] 비트 조합 (OR) 플래그 주소의 형식을 지정 하는 네트워크 주소 컨트롤을 지원할 수 있습니다. 자세한 내용은 [NET_STRING](/windows/desktop/shell/net-string)합니다.|
 
 ### <a name="return-value"></a>반환 값
 

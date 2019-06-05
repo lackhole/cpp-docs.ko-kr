@@ -25,12 +25,12 @@ f1_keywords:
 - atlenc/ATL::UUEncode
 - atlenc/ATL::UUEncodeGetRequiredLength
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
-ms.openlocfilehash: 13c521bae6790a030212c4a8edac460c960ecfc0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e3e44e99e6f3a53a930ed5b3ac1f7cd5ae23063
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62247866"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66449563"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL 텍스트 인코딩 함수
 
@@ -295,7 +295,7 @@ inline BOOL BEncode(
 
 ### <a name="remarks"></a>설명
 
-RFC 2047에 설명 된 "B" 인코딩 스키마 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+RFC 2047에 설명 된 "B" 인코딩 스키마 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="bencodegetrequiredlength"></a> BEncodeGetRequiredLength
 
@@ -319,7 +319,7 @@ inline int BEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 
 ### <a name="remarks"></a>설명
 
-RFC 2047에 설명 된 "B" 인코딩 스키마 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+RFC 2047에 설명 된 "B" 인코딩 스키마 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="escapexml"></a> EscapeXML
 
@@ -447,7 +447,7 @@ inline BOOL QEncode(
 
 ### <a name="remarks"></a>설명
 
-RFC 2047에 설명 된 "Q" 인코딩 스키마 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+RFC 2047에 설명 된 "Q" 인코딩 스키마 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="qencodegetrequiredlength"></a> QEncodeGetRequiredLength
 
@@ -471,7 +471,7 @@ inline int QEncodeGetRequiredLength(int nSrcLen, int nCharsetLen) throw();
 
 ### <a name="remarks"></a>설명
 
-RFC 2047에 설명 된 "Q" 인코딩 스키마 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+RFC 2047에 설명 된 "Q" 인코딩 스키마 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="qpdecode"></a> QPDecode
 
@@ -509,7 +509,7 @@ inline BOOL QPDecode(
 
 ### <a name="remarks"></a>설명
 
-따옴표 붙은 인쇄 가능한 인코딩 체계 RFC 2045에 설명 된 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+따옴표 붙은 인쇄 가능한 인코딩 체계 RFC 2045에 설명 된 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="qpdecodegetrequiredlength"></a> QPDecodeGetRequiredLength
 
@@ -530,7 +530,7 @@ inline int QPDecodeGetRequiredLength(int nSrcLen) throw();
 
 ### <a name="remarks"></a>설명
 
-따옴표 붙은 인쇄 가능한 인코딩 체계 RFC 2045에 설명 된 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+따옴표 붙은 인쇄 가능한 인코딩 체계 RFC 2045에 설명 된 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="qpencode"></a> QPEncode
 
@@ -566,7 +566,7 @@ inline BOOL QPEncode(
 
 - ATLSMTP_QPENCODE_TRAILING_SOFT 추가 `=\r\n` 인코딩된 문자열입니다.
 
-따옴표 붙은 인쇄 가능한 인코딩 체계에 설명 되어 [RFC 2045](http://www.ietf.org/rfc/rfc2045.txt)합니다.
+따옴표 붙은 인쇄 가능한 인코딩 체계에 설명 되어 [RFC 2045](https://www.ietf.org/rfc/rfc2045.txt)합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -574,7 +574,7 @@ inline BOOL QPEncode(
 
 ### <a name="remarks"></a>설명
 
-따옴표 붙은 인쇄 가능한 인코딩 체계 RFC 2045에 설명 된 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+따옴표 붙은 인쇄 가능한 인코딩 체계 RFC 2045에 설명 된 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="qpencodegetrequiredlength"></a> QPEncodeGetRequiredLength
 
@@ -595,7 +595,7 @@ inline int QPEncodeGetRequiredLength(int nSrcLen) throw ();
 
 ### <a name="remarks"></a>설명
 
-따옴표 붙은 인쇄 가능한 인코딩 체계 RFC 2045에 설명 된 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+따옴표 붙은 인쇄 가능한 인코딩 체계 RFC 2045에 설명 된 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="uudecode"></a> UUDecode
 
