@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: eea37d03ca5a4fab450fbca0c4c3f6c76fefb407
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1cdc4bfacee4913d3a38aaa45aadf0a430e547ab
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62225254"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503450"
 ---
 # <a name="clistctrl-class"></a>CListCtrl 클래스
 
@@ -1367,7 +1367,7 @@ BOOL GetGroupInfoByIndex(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [LVM_GETGROUPINFOBYINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774933) --> Windows SDK에 설명 된 메시지입니다.
+이 메서드는 전송 된 [LVM_GETGROUPINFOBYINDEX](/windows/desktop/controls/lvm-getgroupinfobyindex) --> Windows SDK에 설명 된 메시지입니다.
 
 ### <a name="example"></a>예제
 
@@ -1787,7 +1787,7 @@ BOOL GetItemIndexRect(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*pItemIndex*|[in] 에 대 한 포인터를 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 하위 항목의 부모 항목에 대 한 구조입니다.<br /><br /> 호출자가 할당 하 고 멤버를 설정 하는 일을 담당 합니다 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|
+|*pItemIndex*|[in] 에 대 한 포인터를 [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) 하위 항목의 부모 항목에 대 한 구조입니다.<br /><br /> 호출자가 할당 하 고 멤버를 설정 하는 일을 담당 합니다 [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|
 |*iColumn*|[in] 컨트롤에 있는 열의 0부터 시작 인덱스입니다.|
 |*rectType*|[in] 경계 사각형을 검색 되는 목록 뷰 하위 항목의 부분입니다. 다음 값 중 하나를 지정합니다.<br /><br /> LVIR_BOUNDS-아이콘 및 레이블 포함 한 전체 하위 항목의 경계 사각형을 반환 합니다.<br /><br /> LVIR_ICON-아이콘 또는 작은 아이콘의 하위 항목의 경계 사각형을 반환 합니다.<br /><br /> LVIR_LABEL-하위 항목 텍스트의 경계 사각형을 반환 합니다.|
 |*pRect*|[out] 에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 하위 항목의 경계 사각형에 대 한 정보를 수신 하는 구조입니다.<br /><br /> 호출자가 할당 하는 일을 담당 합니다 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|
@@ -2093,8 +2093,8 @@ BOOL GetNextItemIndex(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*pItemIndex*|[out에서] 에 대 한 포인터를 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 검색이 시작 되는 항목을 설명 하는 구조 또는-1의 플래그와 일치 하는 첫 번째 항목을 찾을 합니다 *nFlags* 매개 변수입니다.<br /><br /> 이 메서드는 성공 하는 경우는 `LVITEMINDEX` 구조 검색 하 여 찾은 항목에 설명 합니다.|
-|*nFlags*|[in] 검색을 수행 하는 방법을 지정 하는 플래그의 비트 조합 (OR)입니다.<br /><br /> 검색 인덱스, 상태 또는 대상 항목의 모양에 따라 달라질 수 있습니다 또는 항목을 기준으로 대상 항목의 실제 위치를 지정 하는 *pItemIndex* 매개 변수입니다. 자세한 내용은 참조는 *플래그* 에서 매개 변수를 [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) 메시지.|
+|*pItemIndex*|[out에서] 에 대 한 포인터를 [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) 검색이 시작 되는 항목을 설명 하는 구조 또는-1의 플래그와 일치 하는 첫 번째 항목을 찾을 합니다 *nFlags* 매개 변수입니다.<br /><br /> 이 메서드는 성공 하는 경우는 `LVITEMINDEX` 구조 검색 하 여 찾은 항목에 설명 합니다.|
+|*nFlags*|[in] 검색을 수행 하는 방법을 지정 하는 플래그의 비트 조합 (OR)입니다.<br /><br /> 검색 인덱스, 상태 또는 대상 항목의 모양에 따라 달라질 수 있습니다 또는 항목을 기준으로 대상 항목의 실제 위치를 지정 하는 *pItemIndex* 매개 변수입니다. 자세한 내용은 참조는 *플래그* 에서 매개 변수를 [LVM_GETNEXTITEMINDEX](/windows/desktop/controls/lvm-getnextitemindex) 메시지.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -2104,7 +2104,7 @@ BOOL GetNextItemIndex(
 
 호출자가 할당 하 고 멤버를 설정 하는 일을 담당 합니다 `LVITEMINDEX` 가리키는 구조는 *pItemIndex* 매개 변수입니다.
 
-이 메서드는 전송 된 [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 전송 된 [LVM_GETNEXTITEMINDEX](/windows/desktop/controls/lvm-getnextitemindex) Windows SDK에 설명 된 메시지입니다.
 
 ## <a name="getnextselecteditem"></a>  CListCtrl::GetNextSelectedItem
 
@@ -2909,7 +2909,7 @@ UINT MapIDToIndex(UINT id) const;
 
 다중 스레드 환경에서 백그라운드 스레드에서 없습니다 목록 뷰 컨트롤을 호스팅하는 스레드에서만 인덱스 보장 됩니다 note 합니다.
 
-이 메서드는 전송 된 [LVM_MAPIDTOINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761137) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 전송 된 [LVM_MAPIDTOINDEX](/windows/desktop/controls/lvm-mapidtoindex) Windows SDK에 설명 된 메시지입니다.
 
 ## <a name="mapindextoid"></a>  CListCtrl::MapIndexToID
 
@@ -3822,7 +3822,7 @@ BOOL SetItemIndexState(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*pItemIndex*|[in] 에 대 한 포인터를 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 항목을 설명 하는 구조입니다. 호출자는이 구조를 할당 하 고 해당 멤버를 설정 하는 일을 담당 합니다.|
+|*pItemIndex*|[in] 에 대 한 포인터를 [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) 항목을 설명 하는 구조입니다. 호출자는이 구조를 할당 하 고 해당 멤버를 설정 하는 일을 담당 합니다.|
 |*dwState*|[in] 상태 항목을 설정 하는 비트 조합 [목록 보기 항목 상태](/windows/desktop/Controls/list-view-item-states)합니다. 다시 설정, 0 또는 상태를 설정 하려면 하나를 지정 합니다.|
 |*dwMask*|[in] 지정 된 상태로의 유효한 비트 마스크를 *dwState* 매개 변수입니다. 비트 조합 (OR)을 지정 [목록 보기 항목 상태](/windows/desktop/Controls/list-view-item-states)합니다.|
 

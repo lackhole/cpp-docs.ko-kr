@@ -72,12 +72,12 @@ helpviewer_keywords:
 - COleControlContainer [MFC], m_pWnd
 - COleControlContainer [MFC], m_siteMap
 ms.assetid: f7ce9246-0fb7-4f07-a83a-6c2390d0fdf8
-ms.openlocfilehash: 6e97f7ceafb92098d701cba64b4ec01d26d3991a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1d386072b67568ecf58afd0853df2d7fbaeac68d
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310440"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504561"
 ---
 # <a name="colecontrolcontainer-class"></a>COleControlContainer 클래스
 
@@ -473,7 +473,7 @@ virtual UINT GetDlgItemInt(
 함수가 성공/실패 값을 수신 하는 부울 변수에 대 한 포인터 (성공한 TRUE, FALSE 이면 실패).
 
 *bSigned*<br/>
-함수 시작 부분에 빼기 기호에 대 한 텍스트를 검토 하며 발견 되 면 부호 있는 정수 값을 반환 하는지 여부를 지정 합니다. 경우는 *bSigned* 매개 변수가 TRUE 이면 반환 값을 캐스팅 값을 검색할 수는 부호 있는 정수 인지를 지정 하는 **int** 형식입니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.
+함수 시작 부분에 빼기 기호에 대 한 텍스트를 검토 하며 발견 되 면 부호 있는 정수 값을 반환 하는지 여부를 지정 합니다. 경우는 *bSigned* 매개 변수가 TRUE 이면 반환 값을 캐스팅 값을 검색할 수는 부호 있는 정수 인지를 지정 하는 **int** 형식입니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -515,7 +515,7 @@ virtual int GetDlgItemText(
 
 함수가 성공 하면 반환 값은 null 종결 문자를 포함 하지 않습니다, 버퍼에 복사 하는 문자 수를 지정 합니다.
 
-함수가 실패하면 반환 값은 0입니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.
+함수가 실패하면 반환 값은 0입니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다.
 
 ##  <a name="handlesetfocus"></a>  COleControlContainer::HandleSetFocus
 
