@@ -84,12 +84,12 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-ms.openlocfilehash: 464b59f7e598ea1901cf88c47c5887cbbf308607
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5df6515573cfca784d1e59f34342466dde2e42e4
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375797"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504854"
 ---
 # <a name="cmenu-class"></a>CMenu 클래스
 
@@ -769,7 +769,7 @@ BOOL GetMenuItemInfo(
 
 ### <a name="return-value"></a>반환 값
 
-함수가 성공 하면 반환 값은 0이 아닌 값입니다. 함수가 실패하면 반환 값은 0입니다. 확장 정보를 가져오려면 오류, Win32 함수를 사용 하 여 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)Windows SDK에 설명 된 대로 합니다.
+함수가 성공 하면 반환 값은 0이 아닌 값입니다. 함수가 실패하면 반환 값은 0입니다. 확장 정보를 가져오려면 오류, Win32 함수를 사용 하 여 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)Windows SDK에 설명 된 대로 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1267,7 +1267,7 @@ BOOL SetDefaultItem(
 
 ### <a name="return-value"></a>반환 값
 
-함수가 성공 하면 반환 값은 0이 아닌 값입니다. 함수가 실패하면 반환 값은 0입니다. 확장 정보를 가져오려면 오류, Win32 함수를 사용 하 여 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)Windows SDK에 설명 된 대로 합니다.
+함수가 성공 하면 반환 값은 0이 아닌 값입니다. 함수가 실패하면 반환 값은 0입니다. 확장 정보를 가져오려면 오류, Win32 함수를 사용 하 여 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)Windows SDK에 설명 된 대로 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1476,7 +1476,7 @@ BOOL TrackPopupMenuEx(
 
 TPM_RETURNCMD를 지정 하는 경우는 *fuFlags* 매개 변수, 반환 값은 사용자가 선택한 항목의 메뉴 항목 식별자입니다. 사용자 메뉴를 선택 하지 않고 취소 또는 오류가 발생 한 경우 반환 값은 0입니다.
 
-TPM_RETURNCMD 지정 하지 않으면 경우는 *fuFlags* 매개 변수, 반환 값은 함수가 성공 하면 0이 아닌 값 및 0 실패 한 경우. 확장 오류 정보를 가져오기, 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.
+TPM_RETURNCMD 지정 하지 않으면 경우는 *fuFlags* 매개 변수, 반환 값은 함수가 성공 하면 0이 아닌 값 및 0 실패 한 경우. 확장 오류 정보를 가져오기, 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다.
 
 ### <a name="remarks"></a>설명
 

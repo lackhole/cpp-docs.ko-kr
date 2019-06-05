@@ -6,12 +6,12 @@ helpviewer_keywords:
 - application deployment [C++], ClickOnce
 - ClickOnce deployment [C++], C++ applications
 ms.assetid: 9988c546-0936-452c-932f-9c76daa42157
-ms.openlocfilehash: f78aca6621462ccbd86cfe09ae71b715b5e56f09
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: a7b738c2deb909d2a8f222bf7f62dc80cf8eeb8b
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448466"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504779"
 ---
 # <a name="clickonce-deployment-for-visual-c-applications"></a>ClickOnce Deployment for Visual C++ Applications
 
@@ -42,7 +42,7 @@ ClickOnce를 사용하여 Visual C++ 애플리케이션을 배포하려면 먼�
 
 [Mage.exe(매니페스트 생성 및 편집 도구)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)<br>
 [MageUI.exe(매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)<br>
-[Makecert.exe(인증서 작성 도구)](https://msdn.microsoft.com/library/windows/desktop/aa386968)<br>
+[Makecert.exe(인증서 작성 도구)](/windows/desktop/SecCrypto/makecert)<br>
 [데스크톱 응용 프로그램 배포](deploying-native-desktop-applications-visual-cpp.md)<br>
 [응용 프로그램, 서비스 및 구성 요소 배포](/visualstudio/deployment/deploying-applications-services-and-components)<br>
 [ClickOnce 보안 및 배포](/visualstudio/deployment/clickonce-security-and-deployment)<br>
