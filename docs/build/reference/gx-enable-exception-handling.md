@@ -20,7 +20,7 @@ ms.locfileid: "62292005"
 ---
 # <a name="gx-enable-exception-handling"></a>/GX(예외 처리 사용)
 
-이 컴파일 옵션은 더 이상 사용되지 않습니다. `extern "C"`를 사용하여 선언된 함수가 절대 예외를 throw 하지 않는다는 가정하에 동기 예외 처리를 활성화 합니다.
+이 컴파일 옵션은 더 이상 사용되지 않습니다. `extern "C"`를 사용하여 선언된 함수가 절대 예외를 throw하지 않는다는 가정 하에 동기 예외 처리를 활성화합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,9 +30,9 @@ ms.locfileid: "62292005"
 
 ## <a name="remarks"></a>설명
 
-**/GX**는 더이상 사용 되지 않습니다. 대신 [/EHsc](eh-exception-handling-model.md) 옵션을 사용 합니다. 사용되지 않는 컴파일러 옵션의 목록은 **컴파일러 옵션 및 사용 되지 않음** 섹션의 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)을 참조합니다.
+**/GX**는 더 이상 사용되지 않습니다. 대신 이에 상응하는 [/EHsc](eh-exception-handling-model.md) 옵션을 사용합니다. 사용되지 않는 컴파일러 옵션의 목록은 [범주별 컴파일러 옵션 목록](compiler-options-listed-by-category.md)의 **사용되지 않는 컴파일러 옵션** 섹션을 참조합니다.
 
-기본적으로 **/EHsc**는 **/GX**에 해당하는 것으로 Visual Studio 개발 환경을 사용하여 컴파일하는 경우 적용 됩니다. 명령줄 도구를 사용하는 경우 예외처리를 하지 않도록 지정 됩니다. 이것은 **/GX-**와 동일 합니다.
+기본적으로 **/EHsc**는 **/GX**에 상응하는 것으로 Visual Studio 개발 환경을 사용하여 컴파일하는 경우 적용됩니다. 명령줄 도구를 사용하는 경우 예외 처리를 하지 않도록 지정됩니다. 이것은 **/GX-**에 상응합니다.
 
 자세한 내용은 [ C++ 예외 처리](../../cpp/cpp-exception-handling.md)를 참조합니다.
 
