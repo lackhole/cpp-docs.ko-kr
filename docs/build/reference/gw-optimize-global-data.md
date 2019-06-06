@@ -16,7 +16,7 @@ ms.locfileid: "66450140"
 ---
 # <a name="gw-optimize-global-data"></a>/Gw(전역 데이터 최적화)
 
-최적화를 위해 COMDAT 섹션의 전역 데이터 패키지화 합니다.
+최적화를 위해 COMDAT 섹션의 전역 데이터를 패키지화합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,9 +26,9 @@ ms.locfileid: "66450140"
 
 ## <a name="remarks"></a>설명
 
-**/Gw** 옵션을 사용하면 컴파일러가 개별 COMDAT 섹션에 전역 데이터를 패키지화 합니다. 기본적으로 **/Gw** 옵션은 해제되어 있으므로 명시적으로 설정해야 합니다. 명시적으로 사용하지 않으려면 **/Gw-**로 설정합니다. **/Gw**와 [/GL](gl-whole-program-optimization.md)이 모두 활성화되면 링커는 전체 프로그램 최적화를 사용하여 참조되지 않은 전역 데이터를 제외하거나 동일한 읽기 전용 전역 데이터를 병합하기 위해 여러 개체 파일의 COMDAT 섹션을 비교합니다. 이렇게 하면 결과로 생성되는 바이너리 실행 파일의 크기를 크게 줄일 수 있습니다.
+**/Gw** 옵션을 사용하면 컴파일러가 개별 COMDAT 섹션에 전역 데이터를 패키지화합니다. 기본적으로 **/Gw** 옵션은 해제되어 있으므로 명시적으로 설정해야 합니다. 명시적으로 사용하지 않음으로 설정하려면 **/Gw-**로 설정합니다. **/Gw**와 [/GL](gl-whole-program-optimization.md)이 모두 활성화되면 링커는 전체 프로그램 최적화를 사용하여 참조되지 않은 전역 데이터를 제외하거나 동일한 읽기 전용 전역 데이터를 병합하기 위해 여러 개체 파일의 COMDAT 섹션을 비교합니다. 이렇게 하면 결과로 생성되는 바이너리 실행 파일의 크기를 크게 줄일 수 있습니다.
 
-컴파일과 링크를 각각 진행한다면 [/OPT:REF](opt-optimizations.md) 링커 옵션으로 **/Gw** 옵션으로 컴파일 된 개체 파일에서 참조되지 않은 전역 데이터를 실행 파일에서 제외할 수 있습니다.
+컴파일과 링크를 각각 진행한다면 [/OPT:REF](opt-optimizations.md) 링커 옵션으로 **/Gw** 옵션으로 컴파일된 개체 파일에서 참조되지 않은 전역 데이터를 실행 파일에서 제외할 수 있습니다.
 
 또한 [/OPT:ICF](opt-optimizations.md)와 [/LTCG](ltcg-link-time-code-generation.md) 링커 옵션을 함께 사용하여 **/Gw**옵션으로 컴파일된 여러 개체 파일에서 동일한 모든 읽기 전용 전역 데이터를 병합할 수 있습니다.
 
@@ -36,7 +36,7 @@ ms.locfileid: "66450140"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **C/C++** 폴더를 선택합니다.
 
