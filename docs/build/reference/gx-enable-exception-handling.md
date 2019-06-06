@@ -34,7 +34,7 @@ ms.locfileid: "62292005"
 
 기본적으로 **/EHsc**는 해당 **/GX**, Visual Studio 개발 환경을 사용 하 여 컴파일하는 경우 적용 됩니다. 명령줄 도구를 사용 하는 경우 예외 처리 하지 않아도 지정 됩니다. 에 해당 하는 이것이 **/GX-** 합니다.
 
-자세한 내용은 [ C++ 예외 처리](../../cpp/cpp-exception-handling.md)합니다.
+자세한 내용은 [ C++ 예외 처리](../../cpp/cpp-exception-handling.md)를 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
