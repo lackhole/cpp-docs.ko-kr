@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows messages [MFC], adding message handlers
 - message maps [MFC], mapping messages to functions
 ms.assetid: a7727a62-f638-4b20-b7f5-131f47200d6a
-ms.openlocfilehash: 7ed2b66ffe382cc8683b811362fb014597168037
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 33aa12626e92eb40606e3ec9b12ebb7bcac571ec
+ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321977"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66741646"
 ---
 # <a name="mapping-messages-to-functions"></a>함수에 메시지 매핑
 
@@ -51,4 +51,4 @@ ms.locfileid: "62321977"
 [멤버 변수 추가](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
 [가상 함수 재정의](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [대화 상자 컨트롤에 사용할 이벤트 처리기 추가](../../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
-[클래스 구조 탐색](../../ide/navigating-the-class-structure-visual-cpp.md)
+[클래스 구조 탐색](../../ide/navigate-code-cpp.md)

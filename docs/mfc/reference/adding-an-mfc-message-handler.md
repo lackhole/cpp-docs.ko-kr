@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - message handling [MFC], adding handlers
 ms.assetid: 4251cfce-76ca-443d-bd2f-6303afa6d942
-ms.openlocfilehash: c4b0a4507df7f352355fc95354e1e83aa7b6d0a7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90d7f843c91956b679fe794c68adab12d85122b7
+ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62296698"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66741743"
 ---
 # <a name="adding-an-mfc-message-handler"></a>MFC 메시지 처리기 추가
 
@@ -29,5 +29,5 @@ ms.locfileid: "62296698"
 [멤버 함수 추가](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [멤버 변수 추가](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
 [가상 함수 재정의](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
-[클래스 구조 탐색](../../ide/navigating-the-class-structure-visual-cpp.md)<br/>
+[클래스 구조 탐색](../../ide/navigate-code-cpp.md)<br/>
 [대화 상자 편집기](../../windows/dialog-editor.md)
