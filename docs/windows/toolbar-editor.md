@@ -50,12 +50,12 @@ helpviewer_keywords:
 - buttons [C++], tool tips
 - Toolbar editor [C++], creating tool tips
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
-ms.openlocfilehash: 9d50561c598f17e251425972590c0663efe6e832
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0faa93cd4ea1fdc2fad90a5d4d47f2feeef65e6
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387908"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504202"
 ---
 # <a name="toolbar-editor-c"></a>도구 모음 편집기 (C++)
 
@@ -107,7 +107,7 @@ ms.locfileid: "62387908"
 
 1. 에 **리소스 추가** 대화 상자에서 **도구 모음** 에 **리소스 종류** 목록에서 선택한 **새로 만들기**합니다.
 
-   더하기 기호 (**+**) 옆에 표시 되는 **도구 모음** 리소스 종류, 즉 모음 템플릿을 사용할 수 있습니다. 템플릿의 목록을 확장 하는 템플릿을 선택 하 고 선택 하려면 더하기 기호 **새로 만들기**합니다.
+   더하기 기호 ( **+** ) 옆에 표시 되는 **도구 모음** 리소스 종류, 즉 모음 템플릿을 사용할 수 있습니다. 템플릿의 목록을 확장 하는 템플릿을 선택 하 고 선택 하려면 더하기 기호 **새로 만들기**합니다.
 
 ### <a name="to-convert-bitmaps-to-toolbar-resources"></a>비트맵을 도구 모음 리소스로 변환
 
@@ -204,6 +204,5 @@ MFC 또는 ATL
 ## <a name="see-also"></a>참고자료
 
 [리소스 편집기](../windows/resource-editors.md)
-<!--
-[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)<br/>
-[Toolbar Button Properties](../windows/toolbar-button-properties.md)<br/>-->
+[메뉴 및 기타 리소스](/windows/desktop/menurc/resources)<br/>
+[도구 모음 단추 속성](../windows/toolbar-button-properties.md)<br/>

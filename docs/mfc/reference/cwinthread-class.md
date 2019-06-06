@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pActiveWnd
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-ms.openlocfilehash: 9f17561941d785e5eb7b5fd8c52ab452aa6369e7
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 4d3582493489faf44afece9338b1491620ca798a
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220430"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504649"
 ---
 # <a name="cwinthread-class"></a>CWinThread 클래스
 
@@ -164,7 +164,7 @@ BOOL CreateThread(
 새 스레드의 스택 (바이트)에서 크기를 지정합니다. 하는 경우 **0**, 스택 크기를 프로세스의 주 스레드는 동일한 크기를 기본값으로 합니다.
 
 *lpSecurityAttrs*<br/>
-가리키는 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 스레드에 대 한 보안 특성을 지정 하는 구조입니다.
+가리키는 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) 스레드에 대 한 보안 특성을 지정 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 

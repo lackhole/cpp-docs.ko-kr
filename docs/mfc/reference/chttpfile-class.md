@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequest
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-ms.openlocfilehash: 3c701f933d622adc5f3d8b1eb2371406e5b45e6f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a637ef8feb28396b1427341c8174e9a7adaa69a9
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345801"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503503"
 ---
 # <a name="chttpfile-class"></a>CHttpFile 클래스
 
@@ -126,7 +126,7 @@ BOOL AddRequestHeaders(
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -319,7 +319,7 @@ Win32 포인터로 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-sy
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -398,7 +398,7 @@ BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
 
 ### <a name="remarks"></a>설명
 

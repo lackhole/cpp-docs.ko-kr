@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSemaphore [MFC], CSemaphore
 ms.assetid: 385fc7e4-8f86-4be2-85e1-d23b38c12f7f
-ms.openlocfilehash: f2a05963f39393bcc73650beb44c5dbb8e5535ee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6c518b6a9ad0fe857b0878bcecd3020ba97174e6
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62324209"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504707"
 ---
 # <a name="csemaphore-class"></a>CSemaphore 클래스
 
@@ -83,14 +83,14 @@ CSemaphore(
 세마포의 이름입니다. 세마포 프로세스 경계를 넘어 액세스할 경우에 제공 되어야 합니다. 경우 `NULL`, 개체를 명명 되지 것입니다. 생성자 작성 새 이름을 기존 세마포는 일치 하는 경우 `CSemaphore` 해당 이름의 세마포를 참조 하는 개체입니다. 이름이 일치 세마포를 하지 않은 기존 동기화 개체를 생성 하지 못합니다.
 
 *lpsaAttributes*<br/>
-Semaphore 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.
+Semaphore 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) Windows SDK에 있습니다.
 
 ### <a name="remarks"></a>설명
 
 액세스 하거나 릴리스를 `CSemaphore` 개체를 만듭니다를 [CMultiLock](../../mfc/reference/cmultilock-class.md) 또는 [CSingleLock](../../mfc/reference/csinglelock-class.md) 개체와 호출 해당 [잠금](../../mfc/reference/csinglelock-class.md#lock) 하 고 [잠금 해제](../../mfc/reference/csinglelock-class.md#unlock) 멤버 함수입니다.
 
 > [!IMPORTANT]
->  만든 후 합니다 `CSemaphore` 개체를 사용 하 여 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 뮤텍스 이미 존재 하지 않으면 되도록 합니다. 뮤텍스 예기치 않게가 불량 프로세스 무단 점유 이며 뮤텍스를 악의적으로 사용 하려는 수 수를 나타낼 수 있습니다. 이 경우 권장 되는 보안에 민감한 프로시저 핸들을 닫고 개체를 만드는 오류가 발생 하는 경우에 따라 계속입니다.
+>  만든 후 합니다 `CSemaphore` 개체를 사용 하 여 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 뮤텍스 이미 존재 하지 않으면 되도록 합니다. 뮤텍스 예기치 않게가 불량 프로세스 무단 점유 이며 뮤텍스를 악의적으로 사용 하려는 수 수를 나타낼 수 있습니다. 이 경우 권장 되는 보안에 민감한 프로시저 핸들을 닫고 개체를 만드는 오류가 발생 하는 경우에 따라 계속입니다.
 
 ## <a name="see-also"></a>참고자료
 

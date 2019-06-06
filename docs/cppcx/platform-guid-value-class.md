@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-ms.openlocfilehash: 64c70b619380d7c2ed4aaaecad3ee01a1d0f79c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d6c71028e4f93064c7b4df978678b5f7c26d6bc
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383323"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504527"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid 값 클래스
 
-Windows 런타임 형식 시스템의 [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931) 형식을 나타냅니다.
+Windows 런타임 형식 시스템의 [GUID](/previous-versions/aa373931\(v=vs.80\)) 형식을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -115,7 +115,7 @@ Guid(
 다음 바이트를 `GUID`입니다.
 
 *m*<br/>
-A `GUID` 형태로 [GUID 구조체](https://msdn.microsoft.com/library/windows/desktop/aa373931)합니다.
+A `GUID` 형태로 [GUID 구조체](/previous-versions/aa373931\(v=vs.80\))합니다.
 
 *n*<br/>
 나머지 8 바이트는 `GUID`합니다.
@@ -194,7 +194,7 @@ True 이면 *guid1* 앞에 정렬 되 *guid2*합니다. 각 처리 후 사전적
 
 ## <a name="operator-call"></a> Guid::operator() Operator
 
-암시적으로 변환 합니다는 `Platform::Guid` 에 [GUID 구조체](https://msdn.microsoft.com/library/windows/desktop/aa373931)합니다.
+암시적으로 변환 합니다는 `Platform::Guid` 에 [GUID 구조체](/previous-versions/aa373931\(v=vs.80\))합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -204,7 +204,7 @@ const GUID& Platform::Guid::operator();
 
 ### <a name="return-value"></a>반환 값
 
-A [GUID 구조체](https://msdn.microsoft.com/library/windows/desktop/aa373931)합니다.
+A [GUID 구조체](/previous-versions/aa373931\(v=vs.80\))합니다.
 
 ## <a name="see-also"></a>참고자료
 

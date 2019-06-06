@@ -42,12 +42,12 @@ helpviewer_keywords:
 - registry, writing to
 - registry, deleting keys
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
-ms.openlocfilehash: 1215c66f1f40cfbc96b813d4eb5084f07698bc01
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 58b7b180f5b4925f64078f8c799036252003549e
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278087"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503235"
 ---
 # <a name="cregkey-class"></a>CRegKey 클래스
 
@@ -195,7 +195,7 @@ LONG Create(
 키에 대 한 보안 액세스 합니다. 기본값은 KEY_READ &#124; KEY_WRITE 합니다. 가능한 값 및 설명의 목록을 참조 하세요. `RegCreateKeyEx`합니다.
 
 *lpSecAttr*<br/>
-에 대 한 포인터를 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 키의 핸들을 자식 프로세스가 상속할 수 있는지 여부를 나타내는 구조입니다. 기본적으로이 매개 변수는 NULL (즉 핸들을 상속할 수 없습니다)입니다.
+에 대 한 포인터를 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) 키의 핸들을 자식 프로세스가 상속할 수 있는지 여부를 나타내는 구조입니다. 기본적으로이 매개 변수는 NULL (즉 핸들을 상속할 수 없습니다)입니다.
 
 *lpdwDisposition*<br/>
 [out] NULL이 아닌 경우 (키 있으며 생성 된) 경우 REG_CREATED_NEW_KEY 또는 REG_OPENED_EXISTING_KEY (경우 검색 키가 있고 열린).

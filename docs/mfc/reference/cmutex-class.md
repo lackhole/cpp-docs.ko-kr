@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMutex [MFC], CMutex
 ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1
-ms.openlocfilehash: f85e562af9d048503be20d1ab5d219fe8d2d039f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c55da8a7692982fc18589fa69e9e2b0749cb6eb
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373650"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504181"
 ---
 # <a name="cmutex-class"></a>CMutex 클래스
 
@@ -77,14 +77,14 @@ CMutex(
 `CMutex` 개체의 이름입니다. 동일한 이름의 다른 뮤텍스 있으면 *lpszName* 프로세스 경계를 넘어 개체를 사용할 경우 제공 해야 합니다. 하는 경우 **NULL**, 뮤텍스 명명 되지 것입니다. 생성자는 새 빌드를 기존 뮤텍스 이름 일치 하는 경우 `CMutex` 해당 이름의 뮤텍스를 참조 하는 개체입니다. 이름이 일치 뮤텍스 없는 기존 동기화 개체를 생성 하지 못합니다.
 
 *lpsaAttribute*<br/>
-뮤텍스 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.
+뮤텍스 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) Windows SDK에 있습니다.
 
 ### <a name="remarks"></a>설명
 
 액세스 하거나 릴리스를 `CMutex` 개체를 만듭니다를 [CMultiLock](../../mfc/reference/cmultilock-class.md) 또는 [CSingleLock](../../mfc/reference/csinglelock-class.md) 개체와 호출 해당 [잠금](../../mfc/reference/csinglelock-class.md#lock) 하 고 [잠금 해제](../../mfc/reference/csinglelock-class.md#unlock) 멤버 함수입니다. 경우는 `CMutex` 개체를 독립 실행형으로 사용 되는, 호출 해당 `Unlock` 멤버 함수를 해제 합니다.
 
 > [!IMPORTANT]
->  만든 후 합니다 `CMutex` 개체를 사용 하 여 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 뮤텍스 이미 존재 하지 않으면 되도록 합니다. 뮤텍스 예기치 않게가 불량 프로세스 무단 점유 이며 뮤텍스를 악의적으로 사용 하려는 수 수를 나타낼 수 있습니다. 이 경우 권장 되는 보안에 민감한 프로시저 핸들을 닫고 개체를 만드는 오류가 발생 하는 경우에 따라 계속입니다.
+>  만든 후 합니다 `CMutex` 개체를 사용 하 여 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 뮤텍스 이미 존재 하지 않으면 되도록 합니다. 뮤텍스 예기치 않게가 불량 프로세스 무단 점유 이며 뮤텍스를 악의적으로 사용 하려는 수 수를 나타낼 수 있습니다. 이 경우 권장 되는 보안에 민감한 프로시저 핸들을 닫고 개체를 만드는 오류가 발생 하는 경우에 따라 계속입니다.
 
 ## <a name="see-also"></a>참고자료
 

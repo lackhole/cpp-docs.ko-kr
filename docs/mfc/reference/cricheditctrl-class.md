@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: 5517efca66744c43eeccd3fb91b97a6fedc8180e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bcb2f354314a0b0d1220a1ecb1c0fa2b8a913d5e
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372103"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504728"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl 클래스
 
@@ -1122,7 +1122,7 @@ long GetSelText(LPSTR lpBuf) const;  CString GetSelText() const;
 
 ### <a name="remarks"></a>설명
 
-첫 번째 형태에서 사용 하는 경우 **GetSelText (** `lpBuf` **)**, 버퍼 받을 텍스트에 충분 한지 확인 해야 합니다. 호출 [GetSel](#getsel) 현재 선택 영역에 있는 문자의 수를 결정 합니다.
+첫 번째 형태에서 사용 하는 경우 **GetSelText (** `lpBuf` **)** , 버퍼 받을 텍스트에 충분 한지 확인 해야 합니다. 호출 [GetSel](#getsel) 현재 선택 영역에 있는 문자의 수를 결정 합니다.
 
 자세한 내용은 [EM_GETSELTEXT](/windows/desktop/Controls/em-getseltext) Windows SDK에 있습니다.
 
@@ -1354,7 +1354,7 @@ int LineIndex(int nLine = -1) const;
 
 문자 인덱스를 지정된 된 줄에 rich edit 컨트롤의 시작 부분에서 문자입니다.
 
-자세한 내용은 [EM_LINEINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761611) Windows SDK에 있습니다.
+자세한 내용은 [EM_LINEINDEX](/windows/desktop/controls/em-lineindex) Windows SDK에 있습니다.
 
 ### <a name="example"></a>예제
 

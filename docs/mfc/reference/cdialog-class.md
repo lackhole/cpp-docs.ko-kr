@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDialog [MFC], OnCancel
 - CDialog [MFC], OnOK
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
-ms.openlocfilehash: 9918b1ae38caacf2b2355ace6337e8e5e6260605
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23d170cf023374fe61e13d907e3c3466c0352fe6
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62168325"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504452"
 ---
 # <a name="cdialog-class"></a>CDialog 클래스
 
@@ -276,7 +276,7 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>반환 값
 
-**int** 의 값을 지정 하는 값을 *n 결과* 에 전달 된 매개 변수를 [CDialog::EndDialog](#enddialog) 대화 상자를 사용 하는 멤버 함수입니다. 함수를 만들 수 없는 경우 대화 상자 또는 IDABORT 출력 창에서 오류 정보를 포함 하는 경우, 다른 일부 오류가 발생 한 경우 반환 값은-1 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.
+**int** 의 값을 지정 하는 값을 *n 결과* 에 전달 된 매개 변수를 [CDialog::EndDialog](#enddialog) 대화 상자를 사용 하는 멤버 함수입니다. 함수를 만들 수 없는 경우 대화 상자 또는 IDABORT 출력 창에서 오류 정보를 포함 하는 경우, 다른 일부 오류가 발생 한 경우 반환 값은-1 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다.
 
 ### <a name="remarks"></a>설명
 

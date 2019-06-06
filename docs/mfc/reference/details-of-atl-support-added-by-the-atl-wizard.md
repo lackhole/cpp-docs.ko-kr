@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC, ATL support
 - ATL, MFC projects
 ms.assetid: aa66bad0-008f-4886-94c1-2a0a0d04bce4
-ms.openlocfilehash: 0b849ffb585ef99512cc68e1c734dc5b3a87d507
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2651a83c50b03dfffd1ac0238b6c6d0a61888c88
+ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323322"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66741567"
 ---
 # <a name="details-of-atl-support-added-by-the-atl-wizard"></a>ATL 마법사로 추가한 ATL 지원에 대한 세부 정보
 
@@ -37,4 +37,4 @@ MFC DLL 프로젝트에 ATL 지원을 추가 하면 약간의 차이가 표시 �
 [멤버 변수 추가](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
 [가상 함수 재정의](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [MFC 메시지 처리기](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
-[클래스 구조 탐색](../../ide/navigating-the-class-structure-visual-cpp.md)
+[클래스 구조 탐색](../../ide/navigate-code-cpp.md)
