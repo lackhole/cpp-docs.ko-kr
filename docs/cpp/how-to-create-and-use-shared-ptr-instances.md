@@ -4,12 +4,12 @@ ms.custom: how-to
 ms.date: 05/22/2019
 ms.topic: conceptual
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-ms.openlocfilehash: 4e7d63840f60c00f97b02825965cc247cddc38fd
-ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
+ms.openlocfilehash: ac6db74122383ef8adb0f208860a6f6fba02dcc7
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174807"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821687"
 ---
 # <a name="how-to-create-and-use-sharedptr-instances"></a>방법: shared_ptr 인스턴스 만들기 및 사용
 
@@ -108,7 +108,7 @@ int main()
 
 - 내부 포인터에 도우미 함수 액세스를 제공해야 하고 도우미 함수가 포인터를 사용하고 호출 함수가 반환되기 전에 반환하는 것을 알고 있는 경우 해당 함수는 내부 포인터의 소유권을 공유하지 않아야 합니다. 호출자의 `shared_ptr` 수명 내에 포인터에 액세스해야 합니다. 이러한 경우 참조로 `shared_ptr`을 전달하거나 원시 포인터 또는 참조를 내부 개체로 전달하는 것이 안전합니다. 이 방법으로 전달하면 약간의 성능 이점이 제공되고 프로그래밍 의도를 표시하는 데 유용할 수도 있습니다.
 
-- 경우에 따라 `std:vector<shared_ptr<T>>`의 예제에서 각 `shared_ptr`을 람다 식 본문 또는 명명된 함수 개체로 전달해야 할 수도 있습니다. 람다 또는 함수가 포인터를 저장하지 않는 경우 참조로 `shared_ptr`을 전달하여 각 요소에 대한 복사 생성자를 호출하지 않습니다.
+- 경우에 따라 `std::vector<shared_ptr<T>>`의 예제에서 각 `shared_ptr`을 람다 식 본문 또는 명명된 함수 개체로 전달해야 할 수도 있습니다. 람다 또는 함수가 포인터를 저장하지 않는 경우 참조로 `shared_ptr`을 전달하여 각 요소에 대한 복사 생성자를 호출하지 않습니다.
 
 ## <a name="example-6"></a>예제 6
 
@@ -116,6 +116,6 @@ int main()
 
 [!code-cpp[stl_smart_pointers#3](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_6.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [스마트 포인터(모던 C++)](../cpp/smart-pointers-modern-cpp.md)
