@@ -1,22 +1,20 @@
 ---
 title: 연결점 구현
-ms.date: 11/12/2018
-f1_keywords:
-- vc.codewiz.impl.cp.overview
+ms.date: 05/14/2019
 helpviewer_keywords:
 - connection points [C++], implementing
 - implement connection point wizard [C++]
 ms.assetid: 5b37e4f9-73c9-4bef-b26d-365bc0662260
-ms.openlocfilehash: 7afa61246c5251936967e281f7237dc37e5be045
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 8a75a5fbbabd20f4591e3a119c175d68cdfb1f90
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693284"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "66182603"
 ---
 # <a name="implement-a-connection-point"></a>연결점 구현
 
-연결 지점 구현 마법사를 사용하여 연결 지점을 구현하려면 ATL COM 응용 프로그램 또는 ATL 지원이 포함된 MFC 응용 프로그램으로 프로젝트를 만들어야 합니다. [ATL 프로젝트 마법사](../atl/reference/atl-project-wizard.md)를 사용하여 ATL 애플리케이션을 만들거나 [MFC 애플리케이션에 ATL 개체를 추가](../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 애플리케이션에 ATL 지원을 구현할 수 있습니다.
+연결 지점 구현 마법사를 사용하여 연결 지점을 구현하려면 ATL COM 애플리케이션 또는 ATL 지원이 포함된 MFC 애플리케이션으로 프로젝트를 만들어야 합니다. [ATL 프로젝트 마법사](../atl/reference/atl-project-wizard.md)를 사용하여 ATL 애플리케이션을 만들거나 [MFC 애플리케이션에 ATL 개체를 추가](../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 애플리케이션에 ATL 지원을 구현할 수 있습니다.
 
 > [!NOTE]
 > MFC 프로젝트의 연결점 구현에 대한 자세한 내용은 [연결점](../mfc/connection-points.md)을 참조하세요.
@@ -61,7 +59,7 @@ ms.locfileid: "51693284"
 
 ## <a name="implement-connection-point-wizard"></a>연결점 구현 마법사
 
-이 마법사는 COM 개체의 연결 지점을 구현합니다. 연결 가능한 개체(즉, 원본)는 자체 인터페이스 또는 모든 송신 인터페이스에 대한 연결점을 보여줄 수 있습니다. Visual C++ 및 Windows는 모두 송신 인터페이스가 있는 형식 라이브러리를 제공합니다. 각 송신 인터페이스는 클라이언트가 개체(예: 싱크)에 구현할 수 있습니다.
+이 마법사는 COM 개체의 연결 지점을 구현합니다. 연결 가능한 개체(즉, 원본)는 자체 인터페이스 또는 모든 송신 인터페이스에 대한 연결점을 보여줄 수 있습니다. MSVC 및 Windows는 모두 송신 인터페이스가 있는 형식 라이브러리를 제공합니다. 각 송신 인터페이스는 클라이언트가 개체(예: 싱크)에 구현할 수 있습니다.
 
 자세한 내용은 [ATL 연결점](../atl/atl-connection-points.md)을 참조하세요.
 

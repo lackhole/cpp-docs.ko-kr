@@ -1,8 +1,7 @@
 ---
 title: 클래스 추가
-ms.date: 11/08/2018
+ms.date: 05/14/2019
 f1_keywords:
-- vc.codewiz.classes.adding
 - vc.addclass
 helpviewer_keywords:
 - ATL projects, adding classes
@@ -10,16 +9,16 @@ helpviewer_keywords:
 - classes [C++], adding
 - Add Class dialog box
 ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
-ms.openlocfilehash: 21dd4b1936eda201df8283146ba9f41fa81e11de
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: fa53c2af5cd3e81c2d4877ef255430eac9525aad
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693583"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "66182683"
 ---
 # <a name="add-a-class"></a>클래스 추가
 
-Visual C++ 프로젝트에서 클래스를 추가하려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고, **추가**를 선택한 다음, **클래스**를 선택합니다. 그러면 [클래스 추가 대화 상자](#add-class-dialog-box)가 열립니다.
+Visual Studio C++ 프로젝트에서 클래스를 추가하려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **클래스**를 선택합니다. 그러면 [클래스 추가 대화 상자](#add-class-dialog-box)가 열립니다.
 
 클래스를 추가할 때 MFC 또는 ATL에 이미 존재하는 클래스와 다른 이름을 지정해야 합니다. 라이브러리에 이미 있는 이름을 지정하면 IDE에는 오류 메시지가 표시됩니다.
 
@@ -81,13 +80,8 @@ NET, ATL, MFC 및 제네릭이라는 네 가지 범주의 **클래스 추가** �
 |템플릿|마법사|
 |--------------|------------|
 |MFC에 ATL 지원 추가|사용할 수 없음|
-|ATL Active Server Page 구성 요소|[ATL Active Server Page 구성 요소 마법사](../atl/reference/atl-active-server-page-component-wizard.md)|
 |ATL 컨트롤|[ATL 컨트롤 마법사](../atl/reference/atl-control-wizard.md)|
 |ATL 대화 상자|[ATL 대화 상자 마법사](../atl/reference/atl-dialog-wizard.md)|
-|ATL COM+ 1.0 구성 요소|[ATL COM+ 1.0 구성 요소 마법사](../atl/reference/atl-com-plus-1-0-component-wizard.md)|
-|ATL OLEDB 소비자|[ATL OLE DB 소비자 마법사](../atl/reference/atl-ole-db-consumer-wizard.md)|
-|ATL OLEDB 공급자|[ATL OLE DB 공급자 마법사](../atl/reference/atl-ole-db-provider-wizard.md)|
-|ATL 속성 페이지|[ATL 속성 페이지 마법사](../atl/reference/atl-property-page-wizard.md)|
 |ATL 단순 개체|[ATL 단순 개체 마법사](../atl/reference/atl-simple-object-wizard.md)|
 |WMI 이벤트 공급자|WMI 이벤트 공급자 마법사|
 |WMI 인스턴스 공급자|WMI 인스턴스 공급자 마법사|
@@ -97,9 +91,6 @@ NET, ATL, MFC 및 제네릭이라는 네 가지 범주의 **클래스 추가** �
 |템플릿|마법사|
 |--------------|------------|
 |MFC 클래스|[MFC 클래스 추가 마법사](../mfc/reference/mfc-add-class-wizard.md)|
-|ActiveX 컨트롤의 MFC 클래스|[ActiveX 컨트롤의 클래스 추가 마법사](../ide/add-class-from-activex-control-wizard.md)|
-|TypeLib의 MFC 클래스|[Typelib의 클래스 추가 마법사](../mfc/reference/add-class-from-typelib-wizard.md)|
-|MFC ODBC 소비자|[MFC ODBC 소비자 마법사](../mfc/reference/mfc-odbc-consumer-wizard.md)|
 
 #### <a name="generic-classes"></a>일반 클래스
 

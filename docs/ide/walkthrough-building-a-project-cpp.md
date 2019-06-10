@@ -1,21 +1,21 @@
 ---
 title: '연습: 프로젝트 빌드(C++)'
-ms.date: 09/14/2018
+ms.date: 04/25/2019
 helpviewer_keywords:
 - building projects [C++]
 - projects [C++], building
 - project building [C++]
 ms.assetid: d459bc03-88ef-48d0-9f9a-82d17f0b6a4d
-ms.openlocfilehash: 8aadb6983cc096ff75785c6bab7ace6bd5f0c632
-ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
+ms.openlocfilehash: ea477e7b2f5435e049b242e68d151cc1f2d20624
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57809012"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "66182693"
 ---
 # <a name="walkthrough-building-a-project-c"></a>연습: 프로젝트 빌드(C++)
 
-이 연습에서는 코드에 일부러 Visual C++ 구문 오류를 포함한 다음 어떠한 컴파일 오류가 발생하는지 확인하고 이를 수정하는 방법에 대해 살펴봅니다. 프로젝트를 컴파일하면 어디에 어떠한 문제가 있는지 표시하는 오류 메시지가 나타납니다.
+이 연습에서는 의도적으로 코드에 C++ 구문 오류를 도입하여 어떠한 컴파일 오류가 발생하는지 확인하고 이를 수정하는 방법에 대해 살펴봅니다. 프로젝트를 컴파일하면 어디에 어떠한 문제가 있는지 표시하는 오류 메시지가 나타납니다.
 
 ## <a name="prerequisites"></a>전제 조건
 

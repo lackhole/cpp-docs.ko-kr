@@ -1,6 +1,6 @@
 ---
 title: '연습: 프로그램 배포(C++)'
-ms.date: 09/14/2018
+ms.date: 05/14/2019
 helpviewer_keywords:
 - deploying applications [C++], walkthroughs
 - setup projects [C++]
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - projects [C++], deploying programs
 - application deployment [C++], walkthroughs
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
-ms.openlocfilehash: aa0e1cd6ec7c27b8d3ccc1e327f3cb8da526d4f7
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 4232edd10b71c70097002511ef4ee663e67d6598
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58769266"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "66182663"
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>연습: 프로그램 배포(C++)
 
@@ -30,13 +30,49 @@ ms.locfileid: "58769266"
 
 - Visual Studio Express 버전에서는 연습을 수행할 수 없습니다.
 
-- 아직 다운로드하지 않은 경우 이후 추가 단계에 설명된 대로 Microsoft Visual Studio 설치 관리자 프로젝트 확장을 다운로드합니다. 확장은 Visual Studio 개발자를 위한 무료 버전이며 설치 및 배포 프로젝트 템플릿 기능을 Visual Studio에 추가합니다.
+## <a name="install-the-visual-studio-setup-and-deployment-project-template"></a>Visual Studio 설치 및 배포 프로젝트 템플릿 설치
 
-### <a name="to-install-the-visual-studio-setup-and-deployment-project-template"></a>Visual Studio 설치 및 배포 프로젝트 템플릿을 설치하려면
+이 섹션의 단계는 설치한 Visual Studio 버전에 따라 다릅니다. 이 페이지의 왼쪽 위에 있는 버전 선택기가 올바르게 설정되어 있는지 확인합니다.
 
-1. 인터넷에 연결되어 있으면 Visual Studio에서 **도구** >  **확장 및 업데이트**를 선택합니다.
+::: moniker range="vs-2019"
 
-1. **확장 및 업데이트**에서 **온라인** 탭을 선택하고 검색 상자에 ‘Microsoft Visual Studio 설치 관리자 프로젝트’를 입력합니다. **Enter** 키를 누르고, **Microsoft Visual Studio \<버전> 설치 관리자 프로젝트**를 선택한 후, **다운로드**를 클릭합니다.
+### <a name="to-install-the-setup-and-deployment-project-template-for-visual-studio-2019"></a>Visual Studio 2019용 설치 및 배포 프로젝트 템플릿을 설치하려면
+
+1. 아직 다운로드하지 않은 경우 Microsoft Visual Studio 설치 관리자 프로젝트 확장을 다운로드합니다. 확장은 Visual Studio 개발자를 위한 무료 버전이며 설치 및 배포 프로젝트 템플릿 기능을 Visual Studio에 추가합니다. 인터넷에 연결되면 Visual Studio에서 **확장** > **확장 관리**를 선택합니다. **확장 및 업데이트** 대화 상자에서 **온라인** 탭을 선택하고 검색 상자에 ‘Microsoft Visual Studio 설치 관리자 프로젝트’를 입력합니다.  **Enter** 키를 누르고, **Microsoft Visual Studio \<버전> 설치 관리자 프로젝트**를 선택한 후, **다운로드**를 클릭합니다. 확장을 선택하여 실행하고 설치한 후 Visual Studio를 다시 시작합니다.
+
+1. Visual Studio 메뉴 모음에서 **파일** > **최근에 사용한 프로젝트 및 솔루션**을 선택한 다음, 프로젝트를 선택하여 다시 엽니다.
+
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택하여 **새 프로젝트 만들기** 대화 상자를 엽니다. 검색 상자에 "Setup"을 입력하고 결과 목록에서 **설치 프로젝트**를 선택합니다.
+
+1. **이름** 상자에 설치 프로젝트의 이름을 입력합니다. **솔루션** 드롭다운 목록에서 **솔루션에 추가**를 선택합니다. **확인** 단추를 선택하여 설치 프로젝트를 만듭니다. 편집기 창에 **파일 도우미(ProjectName)** 탭이 열립니다.
+
+1. **애플리케이션 폴더** 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **프로젝트 출력**을 선택하여 **프로젝트 출력 그룹 추가** 대화 상자를 엽니다.
+
+1. 대화 상자에서 **기본 출력**을 선택하고 **확인**을 클릭합니다. **Game의 기본 출력(활성)** 이라는 새 항목이 표시됩니다.
+
+1. **의 기본 출력(활성)** 항목을 선택하고, **의 기본 출력(활성) 바로 가기 만들기**를 마우스 오른쪽 단추로 클릭하여 선택합니다. **Game의 기본 출력(활성) 바로 가기**라는 새 항목이 표시됩니다.
+
+1. *Game* 바로 가기 항목의 이름을 바꾸고 창의 왼쪽에 있는 **사용자 프로그램 메뉴** 노드로 항목을 끌어서 놓을 수 있습니다.
+
+1. **솔루션 탐색기**에서 **Game Installer** 프로젝트를 선택하고 **보기** > **속성 창**을 선택하거나 **F4** 키를 눌러 **속성** 창을 엽니다.
+
+1. 설치 관리자에 표시할 추가 세부 정보를 지정합니다.  예를 들어 **제조업체**에 *Contoso*를 사용하고, **제품 이름**에 *Game Installer*를 사용하고, **SupportUrl**에 *http\://www.contoso.com*을 사용합니다.
+
+1. 메뉴 모음에서 **빌드** > **구성 관리자**를 선택합니다. **프로젝트** 테이블의 **빌드** 열 아래에서 **Game Installer**의 확인란을 선택합니다. **닫기**를 클릭합니다.
+
+1. 메뉴 모음에서 **빌드** >**솔루션 빌드**를 선택하여 게임 프로젝트와 게임 설치 관리자 프로젝트를 빌드합니다.
+
+1. 솔루션 폴더에서, 게임 설치 프로젝트에 내장된 setup.exe 프로그램을 찾아 실행 게임 응용 프로그램을 컴퓨터에 설치합니다. 이 파일(및 GameInstaller.msi)을 복사하여 다른 컴퓨터에 애플리케이션 및 기타 필요한 라이브러리 파일을 설치할 수 있습니다.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### <a name="to-install-the-setup-and-deployment-project-template-for-visual-studio-2017-and-earlier"></a>Visual Studio 2017 이상용 설치 및 배포 프로젝트 템플릿을 설치하려면
+
+1. 인터넷에 연결되어 있으면 Visual Studio에서 **도구** > **확장 및 업데이트**를 선택합니다.
+
+1. **확장 및 업데이트**에서 **온라인** 탭을 선택하고 검색 상자에 ‘Microsoft Visual Studio 설치 관리자 프로젝트’를 입력합니다.  **Enter** 키를 누르고, **Microsoft Visual Studio \<버전> 설치 관리자 프로젝트**를 선택한 후, **다운로드**를 클릭합니다.
 
 1. 확장을 선택하여 설치한 후 Visual Studio를 다시 시작합니다.
 
@@ -66,9 +102,11 @@ ms.locfileid: "58769266"
 
 1. 메뉴 모음에서 **빌드** > **구성 관리자**를 선택합니다. **프로젝트** 테이블의 **빌드** 열 아래에서 **Game Installer**의 확인란을 선택합니다. **닫기**를 클릭합니다.
 
-1. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택하여 게임 프로젝트와 게임 설치 관리자 프로젝트를 빌드합니다.
+1. 메뉴 모음에서 **빌드** >**솔루션 빌드**를 선택하여 게임 프로젝트와 게임 설치 관리자 프로젝트를 빌드합니다.
 
 1. 솔루션 폴더에서, 게임 설치 프로젝트에 내장된 setup.exe 프로그램을 찾아 실행 게임 응용 프로그램을 컴퓨터에 설치합니다. 이 파일(및 GameInstaller.msi)을 복사하여 다른 컴퓨터에 애플리케이션 및 기타 필요한 라이브러리 파일을 설치할 수 있습니다.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>다음 단계
 

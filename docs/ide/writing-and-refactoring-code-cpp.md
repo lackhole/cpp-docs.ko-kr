@@ -1,17 +1,18 @@
 ---
 title: 코드 작성 및 리팩터링(C++)
-ms.date: 04/30/2018
+description: Visual Studio의 C++ 코드 편집기를 사용하여 코드를 서식 지정, 탐색, 이해 및 리팩터링합니다.
+ms.date: 05/14/2019
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
-ms.openlocfilehash: bc839a759d2ff3f403ca001ab32702d3fe27833e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04f738cd6fdd456c432c334df42f37339e7fa49e
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570432"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "66182633"
 ---
 # <a name="writing-and-refactoring-code-c"></a>코드 작성 및 리팩터링(C++)
 
-Visual C++ 코드 편집기 및 IDE에서는 많은 코딩 보조 기능을 제공합니다. 일부는 C++에 고유하고, 일부는 기본적으로 모든 Visual Studio 언어에서 동일합니다. 공유 기능에 대한 자세한 내용은 [코드 및 텍스트 편집기에서 코드 작성](/visualstudio/ide/writing-code-in-the-code-and-text-editor)을 참조하세요. C++ 관련 기능을 사용하고 구성하기 위한 옵션은 **도구 &#124; 옵션 &#124; 텍스트 편집기 &#124; C/C++** 에 있습니다. 설정하려는 옵션을 선택한 후 대화 상자에 초점이 맞춰져 있을 때 **F1** 키를 누르면 추가 도움말을 확인할 수 있습니다. 일반적인 코드 서식 지정 옵션의 경우 **빠른 실행**에 `Editor C++`을 입력합니다.
+C++ 코드 편집기 및 Visual Studio IDE에서는 많은 코딩 보조 기능을 제공합니다. 일부는 C++에 고유하고, 일부는 기본적으로 모든 Visual Studio 언어에서 동일합니다. 공유 기능에 대한 자세한 내용은 [코드 및 텍스트 편집기에서 코드 작성](/visualstudio/ide/writing-code-in-the-code-and-text-editor)을 참조하세요. C++ 관련 기능을 사용하고 구성하기 위한 옵션은 **도구 &#124; 옵션 &#124; 텍스트 편집기 &#124; C/C++** 에 있습니다. 설정하려는 옵션을 선택한 후 대화 상자에 초점이 맞춰져 있을 때 **F1** 키를 누르면 추가 도움말을 확인할 수 있습니다. 일반적인 코드 서식 지정 옵션의 경우 **빠른 실행**에 `Editor C++`을 입력합니다.
 
 향후 버전의 Visual Studio에 포함될 수도 포함되지 않을 수 있는 실험적 기능은 [텍스트 편집기 C++ 실험적](/visualstudio/ide/reference/options-text-editor-c-cpp-experimental) 대화 상자에 있습니다. Visual Studio 2017의 이 대화 상자에서 **예측 IntelliSense**를 사용하도록 설정할 수 있습니다.
 

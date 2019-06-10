@@ -12,16 +12,16 @@ helpviewer_keywords:
 - Build system changes, $(Inherit)
 - Build system changes, $(NoInherit)
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
-ms.openlocfilehash: 621e62379657da66d6eaec7a3ceff780fd610066
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: c3e51aa7e5a4346137e94191b551b0d53452e460
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57828179"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65449015"
 ---
 # <a name="build-system-changes"></a>빌드 시스템 변경 사항
 
-MSBuild 시스템은 Visual C++ 프로젝트를 빌드하는 데 사용됩니다. 하지만 Visual Studio 2008 및 이전 버전에서는 VCBuild 시스템이 사용되었습니다. VCBuild에 의존하는 특정 파일 형식 및 개념은 현재 시스템에 존재하지 않거나 다르게 표현됩니다. 이 문서에서는 현재 빌드 시스템의 차이점을 설명합니다.
+MSBuild 시스템은 Visual Studio C++ 프로젝트를 빌드하는 데 사용됩니다. 하지만 Visual Studio 2008 및 이전 버전에서는 VCBuild 시스템이 사용되었습니다. VCBuild에 의존하는 특정 파일 형식 및 개념은 현재 시스템에 존재하지 않거나 다르게 표현됩니다. 이 문서에서는 현재 빌드 시스템의 차이점을 설명합니다.
 
 ## <a name="vcproj-is-now-vcxproj"></a>.vcproj는 이제 .vcxproj입니다.
 
@@ -37,7 +37,7 @@ MSBuild 시스템은 Visual C++ 프로젝트를 빌드하는 데 사용됩니다
 
 ## <a name="custom-build-rules-and-rules-files"></a>사용자 지정 빌드 규칙 및 .rules 파일
 
-이전 릴리스에서 *규칙 파일*은 .rules 파일 이름 확장명을 가진 XML 기반 파일입니다. 규칙 파일을 사용하면 사용자 지정 빌드 규칙을 정의하고 Visual C++ 프로젝트의 빌드 프로세스에 통합할 수 있습니다. 하나 이상의 파일 이름 확장명과 연결할 수 있는 사용자 지정 빌드 규칙을 사용하면 하나 이상의 출력 파일을 만드는 도구에 입력 파일을 전달할 수 있습니다.
+이전 릴리스에서 *규칙 파일*은 .rules 파일 이름 확장명을 가진 XML 기반 파일입니다. 규칙 파일을 사용하면 사용자 지정 빌드 규칙을 정의하고 Visual Studio C++ 프로젝트의 빌드 프로세스에 통합할 수 있습니다. 하나 이상의 파일 이름 확장명과 연결할 수 있는 사용자 지정 빌드 규칙을 사용하면 하나 이상의 출력 파일을 만드는 도구에 입력 파일을 전달할 수 있습니다.
 
 이 릴리스에서는 사용자 지정 빌드 규칙이 .rules 파일 대신 .xml, .props 및 .targets의 세 가지 파일 형식으로 표시됩니다. 이전 버전의 Visual C++를 사용하여 만든 .rules 파일이 현재 릴리스로 마이그레이션되면 해당하는 .xml, .props 및 .targets 파일이 생성되어 원래 .rules 파일과 함께 프로젝트에 저장됩니다.
 
@@ -50,7 +50,7 @@ MSBuild 시스템은 Visual C++ 프로젝트를 빌드하는 데 사용됩니다
 
 현재 릴리스에서는 하나 이상의 리터럴 값과 속성 매크로를 연결한 속성 값을 지정하여 상속을 지원합니다. **$(Inherit)** 및 **$(NoInherit)** 매크로는 지원되지 않습니다.
 
-다음 예제에서는 세미콜론으로 구분된 목록이 속성 페이지의 속성으로 할당됩니다. 이 목록은 매크로 표기법 **$(**<em>MyProperty</em>**)** 를 사용해서 액세스되는 `MyProperty` 속성 값 및 *\<value>* 리터럴의 연결로 구성됩니다.
+다음 예제에서는 세미콜론으로 구분된 목록이 속성 페이지의 속성으로 할당됩니다. 이 목록은 매크로 표기법 **$(** <em>MyProperty</em> **)** 를 사용해서 액세스되는 `MyProperty` 속성 값 및 *\<value>* 리터럴의 연결로 구성됩니다.
 
 ```
 Property=<value>;$(MyProperty)
