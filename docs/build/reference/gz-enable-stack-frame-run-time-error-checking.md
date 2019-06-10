@@ -19,7 +19,7 @@ ms.locfileid: "62292059"
 ---
 # <a name="gz-enable-stack-frame-run-time-error-checking"></a>/GZ(스택 프레임 런타임 오류 검사 사용)
 
-동일한 작업을 수행 합니다 [/RTC (런타임 오류 검사)](rtc-run-time-error-checks.md) 옵션입니다. 더 이상 사용되지 않습니다.
+[/RTC(런타임 오류 검사)](rtc-run-time-error-checks.md) 옵션과 동일한 작업을 수행합니다. 더 이상 사용되지 않습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,7 +29,7 @@ ms.locfileid: "62292059"
 
 ## <a name="remarks"></a>설명
 
-**/GZ** 는 최적화 되지 않은 빌드에 사용 하기 위한만 ([/Od (비활성화 (디버그))](od-disable-debug.md)) 작성 합니다.
+**/GZ**는 최적화되지 않은([/Od(비활성화(디버그))](od-disable-debug.md)) 빌드에서만 사용됩니다.
 
 **/GZ** ; Visual Studio 2005부터 사용 되지 않습니다 사용 [/RTC (런타임 오류 검사)](rtc-run-time-error-checks.md) 대신 합니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)합니다.
 
