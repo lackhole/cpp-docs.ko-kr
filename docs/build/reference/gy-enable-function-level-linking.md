@@ -38,10 +38,10 @@ ms.locfileid: "62270726"
 
 링커 옵션 [/ORDER(순서대로 함수 넣기)](order-put-functions-in-order.md)를 사용하여 패키지된 함수를 .exe 파일에 지정된 순서로 포함할 수 있습니다.
 
-인라인 함수는 호출으로 인스턴스화되는 경우 항상 패키지로 (있는 경우, 예를 들어, 인라인 off 인지 함수 주소를 사용). 또한 C++ 클래스 선언에 정의 된 멤버 함수 자동으로 패키지 됩니다. 다른 함수 되지 않으며 패키지 함수로 컴파일하기 위해 반드시이 옵션을 선택 합니다.
+인라인 함수는 호출으로 인스턴스화되는 경우 항상 패키지됩니다(예를 들어, 인라인이 꺼짐으로 되어 있거나 함수 주소를 사용하는 경우). 또한 C++ 클래스 선언에 정의된 멤버 함수는 자동으로 패키지됩니다. 다른 함수는 그렇지 않으며 패키지 함수로 컴파일하기 위해서는 반드시 이 옵션을 선택해야 합니다.
 
 > [!NOTE]
->  편집과 계속에 사용되는 [/ZI](z7-zi-zi-debug-information-format.md) 옵션은 자동으로 **/Gy** 옵션을 설정합니다.
+> 편집과 계속에 사용되는 [/ZI](z7-zi-zi-debug-information-format.md) 옵션은 자동으로 **/Gy** 옵션을 설정합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
