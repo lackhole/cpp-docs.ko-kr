@@ -2,16 +2,16 @@
 title: '포팅 가이드: COM Spy'
 ms.date: 11/04/2016
 ms.assetid: 24aa0d52-4014-4acb-8052-f4e2e4bbc3bb
-ms.openlocfilehash: ca81b240a102195109c0ad6ef05bfaed10306704
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 791b2e88166caae39c3b8e645ca1cc053f0b9379
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751689"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451177"
 ---
 # <a name="porting-guide-com-spy"></a>포팅 가이드: COM Spy
 
-이 항목은 이전 Visual C++ 프로젝트를 최신 버전의 Visual Studio로 업그레이드하는 프로세스를 보여 주는 일련의 문서 중 두 번째입니다. 이 항목의 예제 코드는 Visual Studio 2005를 사용하여 마지막으로 컴파일되었습니다.
+이 항목은 이전 Visual Studio C++ 프로젝트를 최신 버전의 Visual Studio로 업그레이드하는 프로세스를 보여주는 일련의 문서 중 두 번째입니다. 이 항목의 예제 코드는 Visual Studio 2005를 사용하여 마지막으로 컴파일되었습니다.
 
 ## <a name="comspy"></a>COMSpy
 
@@ -24,7 +24,7 @@ COMSpy는 컴퓨터에서 서비스 구성 요소의 활동을 모니터링 및 
 ComSpyAudit\ComSpyAudit.vcproj: MSB8012: $(TargetPath) ('C:\Users\UserName\Desktop\spy\spy\ComSpyAudit\.\XP32_DEBUG\ComSpyAudit.dll') does not match the Librarian's OutputFile property value '.\XP32_DEBUG\ComSpyAudit.dll' ('C:\Users\UserName\Desktop\spy\spy\XP32_DEBUG\ComSpyAudit.dll') in project configuration 'Unicode Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).
 ```
 
-프로젝트를 업그레이드할 때 자주 발생하는 문제 중 하나는 프로젝트 속성 대화 상자의 **링커 OutputFile** 설정을 검토해야 할 수도 있다는 것입니다. Visual Studio 2010 이전 프로젝트에서 OutputFile은 비표준 값으로 설정할 경우 자동 변환 마법사에서 문제가 발생하는 설정 중 하나입니다. 이 경우 출력 파일의 경로가 비표준 폴더인 XP32_DEBUG로 설정되었습니다. 이 오류에 대해 자세히 알아보기 위해, 중요한 변경 내용인 vcbuild에서 msbuild로의 변경을 포함하는 업그레이드인 Visual C++ 2010 프로젝트 업그레이드와 관련된 [블로그 게시물](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx)을 참조했습니다. 이 정보에 따라 새 프로젝트를 만들 때 **출력 파일** 설정의 기본값은 `$(OutDir)$(TargetName)$(TargetExt)`이지만, 변환된 프로젝트에서 모두 올바른지 확인할 수 없기 때문에 변환 중에는 설정되지 않았습니다. 그러나 OutputFile에 대해 이 값을 설정하고 작동하는지 살펴보겠습니다.  작동하므로 계속 진행할 수 있습니다. 비표준 출력 폴더를 사용할 특별한 이유가 없는 경우 표준 위치를 사용하는 것이 좋습니다. 이 경우 포팅 및 업그레이드 프로세스 중에 출력 위치를 비표준 폴더로 그대로 두었습니다. `$(OutDir)`은 **디버그** 구성의 XP32_DEBUG 폴더 및 **릴리스** 구성의 ReleaseU 폴더로 확인됩니다.
+프로젝트를 업그레이드할 때 자주 발생하는 문제 중 하나는 프로젝트 속성 대화 상자의 **링커 OutputFile** 설정을 검토해야 할 수도 있다는 것입니다. Visual Studio 2010 이전 프로젝트에서 OutputFile은 비표준 값으로 설정할 경우 자동 변환 마법사에서 문제가 발생하는 설정 중 하나입니다. 이 경우 출력 파일의 경로가 비표준 폴더인 XP32_DEBUG로 설정되었습니다. 이 오류에 대해 자세히 알아보기 위해, 중요한 변경 내용인 vcbuild에서 msbuild로의 변경을 포함하는 업그레이드인 Visual Studio 2010 프로젝트 업그레이드와 관련된 [블로그 게시물](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/)을 참조했습니다. 이 정보에 따라 새 프로젝트를 만들 때 **출력 파일** 설정의 기본값은 `$(OutDir)$(TargetName)$(TargetExt)`이지만, 변환된 프로젝트에서 모두 올바른지 확인할 수 없기 때문에 변환 중에는 설정되지 않았습니다. 그러나 OutputFile에 대해 이 값을 설정하고 작동하는지 살펴보겠습니다.  작동하므로 계속 진행할 수 있습니다. 비표준 출력 폴더를 사용할 특별한 이유가 없는 경우 표준 위치를 사용하는 것이 좋습니다. 이 경우 포팅 및 업그레이드 프로세스 중에 출력 위치를 비표준 폴더로 그대로 두었습니다. `$(OutDir)`은 **디버그** 구성의 XP32_DEBUG 폴더 및 **릴리스** 구성의 ReleaseU 폴더로 확인됩니다.
 
 ### <a name="step-2-getting-it-to-build"></a>2단계. 빌드
 포팅된 프로젝트를 빌드하면 다양한 오류와 경고가 발생합니다.

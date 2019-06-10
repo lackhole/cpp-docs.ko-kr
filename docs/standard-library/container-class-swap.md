@@ -26,7 +26,7 @@ void swap(Container& right);
 
 ## <a name="remarks"></a>설명
 
- **\*this.get\_allocator ==** _right_**.get_allocator**인 경우 일정한 시간 내에 교환합니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
+**\*this.get\_allocator ==** _right_ **.get_allocator**인 경우 일정한 시간 내에 교환합니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
 
 ## <a name="see-also"></a>참고자료
 

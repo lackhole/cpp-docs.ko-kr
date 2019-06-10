@@ -1,25 +1,25 @@
 ---
 title: Visual Studio의 C++
 description: Visual C++는 Visual Studio IDE에 있는 Microsoft C++ 컴파일러, 코드 편집기 및 관련 도구의 이름입니다. Visual C++를 사용하여 Windows, Linux, Android 및 iOS 프로그램을 개발합니다.
-ms.date: 05/13/2019
+ms.date: 05/14/2019
 ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 2706d232dba2a7971edd8d84da2b1d1399ed6e25
-ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
+ms.openlocfilehash: c2a38d13cd7b34880b64521af99103ed8192bfd0
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934152"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451197"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio의 C++
 
 > [!NOTE]
 > 이 개발자 설명서는 Visual Studio 2015 이상에 적용됩니다. 페이지의 왼쪽 위에 있는 버전 선택기를 사용하여 사용 중인 Visual Studio 버전을 선택합니다.
 >
-> 프로그램을 실행할 수 있도록 Visual C++ 재배포 가능 패키지를 찾고 있다면 [Microsoft 다운로드 센터](http://www.microsoft.com/download/)로 이동하여 검색 상자에 **Visual C++** 를 입력합니다.
+> 프로그램을 실행할 수 있도록 Visual C++ 재배포 가능 패키지를 찾고 있다면 [Microsoft 다운로드 센터](https://www.microsoft.com/download/)로 이동하여 검색 상자에 **Visual C++** 를 입력합니다.
 
 일반적으로 Visual C++ 또는 MSVC라고 줄여부르는 Microsoft Visual C++는 C++, C 및 어셈블리 언어 개발 도구 및 Windows에서 Visual Studio의 일부로 사용할 수 있는 라이브러리의 이름입니다. 이러한 도구 및 라이브러리를 통해 UWP(유니버설 Windows 플랫폼) 앱, 네이티브 Windows 데스크톱 및 서버 애플리케이션, Windows, Linux, Android 및 iOS에서 실행되는 플랫폼 간 라이브러리 및 앱뿐만 아니라 .NET Framework를 사용하는 관리 앱 및 라이브러리를 만들 수 있습니다. Visual C++를 사용하여 간단한 콘솔 앱 항목부터 Windows 데스크톱용 가장 정교하고 복잡한 앱, 디바이스 드라이버 및 운영 체제 구성 요소부터 모바일 디바이스용 플랫폼 간 게임, 가장 작은 IoT 디바이스부터 Azure 클라우드의 다중 서버 성능 컴퓨팅 기능을 작성할 수 있습니다.
 
@@ -45,10 +45,10 @@ MSVC C++ 컴파일러의 기능별 규칙 상태 목록입니다.
 ## <a name="install-visual-studio-and-upgrade-from-earlier-versions"></a>Visual Studio 설치 및 이전 버전에서 업그레이드
 
 [Visual Studio에서 C++ 지원 설치](../build/vscpp-step-0-installation.md)<br/>
-Visual Studio 2015 또는 Visual Studio 2017을 다운로드하고 Visual C++ 도구 집합을 설치합니다.
+Visual Studio 2017 또는 Visual Studio 2019를 다운로드하고 Visual C++ 도구 집합을 설치합니다.
 
 [Visual C++ 포팅 및 업그레이드 가이드](../porting/visual-cpp-porting-and-upgrading-guide.md)<br/>
-C++ 코드를 Windows 10 및 유니버설 Windows 플랫폼으로 포팅하는 작업을 포함하여 Visual Studio 2015 또는 Visual Studio 2017로 코드를 포팅하고 프로젝트를 업그레이드하기 위한 지침입니다.
+Visual Studio 2015 이상으로 코드를 포팅하고 프로젝트를 업그레이드하여 C++ 표준에 대한 컴파일러 규칙을 활용하고 컴파일 시간 및 Spectre 완화와 같은 보안 기능을 크게 개선하기 위한 지침.
 
 [Visual Studio 버전의 Visual C++ 도구 및 기능](visual-cpp-tools-and-features-in-visual-studio-editions.md)<br/>
 여러 버전의 Visual Studio에 대해 알아봅니다.
@@ -59,9 +59,9 @@ C++ 코드를 Windows 10 및 유니버설 Windows 플랫폼으로 포팅하는 �
 ## <a name="learn-c"></a>C++ 알아보기
 
 [C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
-코드를 빠르고 안전하게 작성하고 C 스타일 프로그래밍에서 흔히 저지르는 많은 실수를 피할 수 있도록 C++11 및 C++14를 기반으로 C++ 프로그래밍 방법에 대해 자세히 알아봅니다.
+코드를 빠르고 안전하게 작성하고 C 스타일 프로그래밍에서 흔히 저지르는 많은 실수를 피할 수 있도록 C++11 이상을 기반으로 하는 최신 C++ 프로그래밍 기술에 대해 자세히 알아봅니다.
 
-[표준 C++](http://isocpp.org/)<br/>
+[표준 C++](https://isocpp.org/)<br/>
 C++에 대해 알아보기, 최신 C++ 개요 살펴보기, 서적, 문서, 토론 및 이벤트 링크 찾기
 
 [Visual C++ 살펴보기](../build/vscpp-step-1-create.md)<br/>
@@ -79,7 +79,7 @@ Visual Studio IDE를 사용하여 프로젝트 만들기, 코드 편집, 라이�
 MSVC 컴파일러 및 링커 옵션을 사용하여 Visual Studio C++ 프로젝트, CMake 프로젝트 및 기타 프로젝트를 만들고 구성하는 방법입니다.
 
 [C++ 코드 작성 및 리팩터링](../ide/writing-and-refactoring-code-cpp.md)<br/>
-C++ 편집기의 생산성 기능을 사용하여 코드를 리팩터링, 탐색 및 작성하는 방법입니다.
+C++ 편집기의 생산성 기능을 사용하여 코드를 리팩터링, 탐색, 이해 및 작성하는 방법입니다.
 
 [네이티브 코드 디버그](/visualstudio/debugger/debugging-native-code)<br/>
 C++ 프로젝트에서 Visual Studio 디버거를 사용합니다.
@@ -117,7 +117,7 @@ Win32, ATL 및 MFC를 사용하여 Windows 데스크톱 DLL을 만드는 방법�
 C++에는 웹 및 클라우드에 연결하기 위한 다양한 옵션이 있습니다.
 
 [데이터 액세스](../data/data-access-in-cpp.md)<br/>
-ODBC 및 기타 데이터베이스 액세스 기술을 사용하여 데이터베이스에 연결합니다.
+ODBC 및 OLE DB를 사용하여 데이터베이스에 연결합니다.
 
 [텍스트 및 문자열](../text/text-and-strings-in-visual-cpp.md)<br/>
 현지 및 국제적 개발을 위한 다양한 텍스트 및 문자열 형식과 인코딩을 사용하는 방법을 알아봅니다.

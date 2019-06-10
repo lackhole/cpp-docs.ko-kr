@@ -9,12 +9,12 @@ helpviewer_keywords:
 - date functions
 - time functions
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
-ms.openlocfilehash: b763361d2cdd732025e492a25ac63fc01f06c2b8
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: e9842d8c24089c7fbb33745c3bf5d4edb1d29343
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739735"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65446792"
 ---
 # <a name="time-management"></a>시간 관리
 
@@ -47,7 +47,7 @@ ms.locfileid: "57739735"
 > Microsoft C/C++ 버전 7.0을 제외한 모든 버전의 Microsoft C/C++과 모든 버전의 Visual C++에서, 시간 함수는 1970년 1월 1일 자정 이후 경과된 초 시간으로 현재 시간을 반환합니다. Microsoft C/C++ 버전 7.0에서 **time**은 현재 시간을 1899년 12월 31일 자정 이후 경과된 시간(초)으로 반환했습니다.
 
 > [!NOTE]
-> Visual C++ 2005 이전의 Visual C++ 및 Microsoft C/C++ 버전에서 **time_t**는 **long** **int**(32비트)이며, 이에 따라 2038년 1월 19일 3시 14분 7초(UTC) 이후의 날짜에는 사용할 수 없었습니다. 이제 **time_t**는 기본적으로 **__time64_t**와 동일하지만, **_USE_32BIT_TIME_T**를 정의하면 **time_t**가 **__time32_t**로 변경되고 많은 시간 함수에서 32비트 **time_t**를 사용하는 버전을 호출하도록 합니다. 자세한 내용은 [표준 형식](../c-runtime-library/standard-types.md) 및 개별 시간 함수 문서의 설명을 참조하세요.
+> Visual Studio 2005 이전의 Visual C++ 및 Microsoft C/C++ 버전에서 **time_t**는 **long** **int**(32비트)이며, 이에 따라 2038년 1월 19일 3시 14분 7초(UTC) 이후의 날짜에는 사용할 수 없었습니다. 이제 **time_t**는 기본적으로 **__time64_t**와 동일하지만, **_USE_32BIT_TIME_T**를 정의하면 **time_t**가 **__time32_t**로 변경되고 많은 시간 함수에서 32비트 **time_t**를 사용하는 버전을 호출하도록 합니다. 자세한 내용은 [표준 형식](../c-runtime-library/standard-types.md) 및 개별 시간 함수 문서의 설명을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

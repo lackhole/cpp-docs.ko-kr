@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++ native multi-targeting
 - upgrading Visual C++ applications, retargeting
 ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
-ms.openlocfilehash: 57e9556ccb7313c137c173e0f2143dc6e563d4c3
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 35f6ac980a451b375d5005c20853fdd29c78d96d
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58898819"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448947"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드
 
@@ -44,7 +44,7 @@ Visual Studio는 프로젝트를 지속적으로 업그레이드합니다. 프�
 
 ## <a name="instructions-for-visual-studio-2008"></a>Visual Studio 2008에 대한 지침
 
-Visual Studio 2008에는 **VCBuild**라는 C++에 대한 자체 전용 빌드 시스템이 있었습니다. Visual Studio 2010부터 Visual C++ 프로젝트는 **MSBuild**를 사용하도록 변경되었습니다. 즉, 최신 버전의 Visual Studio에서 Visual Studio 2008 프로젝트를 빌드하려면 업데이트 단계를 거쳐야 합니다. 업데이트된 프로젝트는 Visual Studio 2008 IDE를 사용하여 만들어진 이진 파일과 완전히 호환되는 이진 파일을 생성합니다.
+Visual Studio 2008에는 **VCBuild**라는 C++에 대한 자체 전용 빌드 시스템이 있었습니다. Visual Studio 2010부터 Visual Studio C++ 프로젝트는 **MSBuild**를 사용하도록 변경되었습니다. 즉, 최신 버전의 Visual Studio에서 Visual Studio 2008 프로젝트를 빌드하려면 업데이트 단계를 거쳐야 합니다. 업데이트된 프로젝트는 Visual Studio 2008 IDE를 사용하여 만들어진 이진 파일과 완전히 호환되는 이진 파일을 생성합니다.
 
 먼저 현재 버전의 Visual Studio 외에 Visual Studio 2010을 Visual Studio 2008과 같은 컴퓨터에 설치해야 합니다. Visual Studio 2008 프로젝트를 대상으로 지정하는 데 필요한 **MSBuild** 스크립트는 Visual Studio 2010에서만 설치합니다.
 
@@ -58,7 +58,7 @@ Visual Studio 2008에는 **VCBuild**라는 C++에 대한 자체 전용 빌드 �
 
 ## <a name="install-an-older-visual-studio-toolset"></a>이전 Visual Studio 도구 집합 설치
 
-업그레이드할 수 없거나 업그레이드하지 않으려는 이전 Visual C++ 프로젝트가 있지만 프로젝트와 일치하는 플랫폼 도구 집합 버전이 없을 수 있습니다. 이 경우 도구 집합을 얻으려면 필요한 버전의 무료 Visual Studio Community 또는 Express 버전을 설치합니다. Visual Studio 2008부터 Visual Studio의 모든 버전은 현재 Visual Studio에서 해당 버전을 대상으로 지정하는 데 필요한 컴파일러, 도구 및 라이브러리를 설치할 수 있습니다. Microsoft 다운로드 센터를 검색하여 특정 버전의 Visual Studio를 찾고 다운로드합니다. 설치하는 동안 C++ 설치 옵션을 선택해야 합니다. 설치가 완료되면 업데이트를 설치할 Visual Studio의 해당 버전을 실행합니다. 또한 필요한 Windows 업데이트 변경 내용이 있는지 확인합니다. 모든 업데이트를 받기 위해 이 업데이트 확인 프로세스를 두 번 이상 반복해야 할 수 있습니다.
+업그레이드할 수 없거나 업그레이드하지 않으려는 이전 Visual Studio C++ 프로젝트가 있지만 프로젝트와 일치하는 플랫폼 도구 집합 버전이 없을 수 있습니다. 이 경우 도구 집합을 얻으려면 필요한 버전의 무료 Visual Studio Community 또는 Express 버전을 설치합니다. Visual Studio 2008부터 Visual Studio의 모든 버전은 현재 Visual Studio에서 해당 버전을 대상으로 지정하는 데 필요한 컴파일러, 도구 및 라이브러리를 설치할 수 있습니다. Microsoft 다운로드 센터를 검색하여 특정 버전의 Visual Studio를 찾고 다운로드합니다. 설치하는 동안 C++ 설치 옵션을 선택해야 합니다. 설치가 완료되면 업데이트를 설치할 Visual Studio의 해당 버전을 실행합니다. 또한 필요한 Windows 업데이트 변경 내용이 있는지 확인합니다. 모든 업데이트를 받기 위해 이 업데이트 확인 프로세스를 두 번 이상 반복해야 할 수 있습니다.
 
 현재 사용 가능한 다운로드는 [이전 버전의 Visual Studio 소프트웨어 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/)를 참조하세요.
 

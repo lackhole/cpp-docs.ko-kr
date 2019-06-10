@@ -1,18 +1,18 @@
 ---
 title: C 복합 수학식 지원
-ms.date: 03/30/2018
+ms.date: 05/14/2019
 f1_keywords:
 - c.complex
 helpviewer_keywords:
 - complex numbers, math routines
 - math routines
 - complex numbers
-ms.openlocfilehash: 12ba858993d3712cbf390288df60faedc602c90a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 493886fcf1dbfd3dc16487dd8650206c428bb06d
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452613"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "66186094"
 ---
 # <a name="c-complex-math-support"></a>C 복합 수학식 지원
 
@@ -28,15 +28,15 @@ complex.h 헤더의 Microsoft 구현은 C99 표준 기본 복합 형식에 대�
 
 |표준 형식|Microsoft 형식|
 |-|-|
-|**float complex** 또는 **float _Complex**|**_FComplex**|
-|**double complex** 또는 **double _Complex**|**_DComplex**|
-|**long double complex** 또는 **long double _Complex**|**_LComplex**|
+|**float complex** 또는 **float _Complex**|**_Fcomplex**|
+|**double complex** 또는 **double _Complex**|**_Dcomplex**|
+|**long double complex** 또는 **long double _Complex**|**_Lcomplex**|
 
 math.h 헤더는 [_cabs](../c-runtime-library/reference/cabs.md) 함수에 사용되는 별도 형식 **struct _complex**를 정의합니다. **struct _complex** 형식은 동등한 복합 수학 함수 [cabs, cabsf, cabsl](../c-runtime-library/reference/cabs-cabsf-cabsl.md)에서 사용되지 않습니다.
 
 ## <a name="complex-constants-and-macros"></a>복합 상수 및 매크로
 
-**I**는 `{ 0.0f, 1.0f }`에 의해 초기화된 **부동** 복합 형식 **_FComplex**로 정의됩니다.
+**I**는 `{ 0.0f, 1.0f }`에 의해 초기화된 **부동** 복합 형식 **_Fcomplex**로 정의됩니다.
 
 ## <a name="trigonometric-functions"></a>삼각 함수
 
