@@ -1,16 +1,17 @@
 ---
 title: 이전 버전의 Visual C++에서 프로젝트 업그레이드
-ms.date: 11/04/2016
+description: 이전 버전의 Visual Studio에서 Microsoft C++ 프로젝트를 업그레이드하는 방법.
+ms.date: 05/03/2019
 helpviewer_keywords:
 - 32-bit code porting
 - upgrading Visual C++ applications, 32-bit code
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
-ms.openlocfilehash: 41cac1b23d5ab16825891ef654341016958ab826
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: fca4a87310f7ba0c21a6a7512dd93dce0f915f6b
+ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59034915"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65220392"
 ---
 # <a name="upgrading-projects-from-earlier-versions-of-visual-c"></a>이전 버전의 Visual C++에서 프로젝트 업그레이드
 
@@ -45,6 +46,6 @@ ms.locfileid: "59034915"
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual Studio 2017의 Visual C++에 대한 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[Visual Studio의 Visual C++에 대한 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual C++ 변경 기록 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
 [비표준 동작](../cpp/nonstandard-behavior.md)

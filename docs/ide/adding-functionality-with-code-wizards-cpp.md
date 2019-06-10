@@ -1,35 +1,39 @@
 ---
 title: 코드 마법사로 기능 추가(C++)
-ms.date: 10/03/2018
-f1_keywords:
-- vc.codewiz.classes
+ms.date: 05/14/2019
 helpviewer_keywords:
 - code wizards [C++]
-- wizards [C++], code
-- Visual C++ projects, adding functionality
-- projects [C++], adding functionality
-- class wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-ms.openlocfilehash: 87c46be17c20bf9d592dd2b5c537897fa629e9c2
-ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
+ms.openlocfilehash: 8c88936edcb9110fe7482281f483f11c542b83c1
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57822576"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "66182653"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>코드 마법사로 기능 추가(C++)
 
 프로젝트가 만들어졌으면 프로젝트의 기능을 변경하거나 추가하려고 합니다. 이러한 작업에는 새 클래스 만들기, 새 멤버 함수 및 변수 추가, 자동화 메서드 및 속성 추가 등이 포함됩니다. 코드 마법사는 이러한 모든 작업을 수행할 수 있도록 설계되었습니다.
 
-> [!WARNING]
-> 일부 ATL 및 MFC 코드 마법사가 현재 더 이상 사용되지 않으며 이후 버전의 Visual Studio에서 제거될 예정입니다. 이러한 마법사는 거의 사용되지 않습니다. ATL 및 MFC에 대한 일반 지원은 이러한 마법사를 제거해도 영향을 받지 않습니다. 이 지원 중단에 대한 의견을 공유하려면 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)를 완료하세요. 여러분의 의견은 소중합니다.
+> [!NOTE]
+> 다음과 같이 거의 사용되지 않는 코드 마법사는 Visual Studio 2019에서 제거되었습니다. ATL 및 MFC에 대한 일반 지원은 이러한 마법사를 제거해도 영향을 받지 않습니다. 이러한 기술에 대한 샘플 코드는 Microsoft Docs 및 VCSamples GitHub 리포지토리에 보관됩니다.
+
+- ATL COM+ 1.0 구성 요소 마법사
+- ATL Active Server Pages 구성 요소 마법사
+- ATL OLE DB 공급자 마법사
+- ATL 속성 페이지 마법사
+- ATL OLE DB 소비자 마법사
+- MFC ODBC 소비자
+- ActiveX 컨트롤의 MFC 클래스
+- TypeLib의 MFC 클래스
+
 
 > [!NOTE]
 >  이제 메시지 처리기를 추가하고, 메시지를 이러한 메시지에 매핑하고, [속성 창](/visualstudio/ide/reference/properties-window)을 사용하여 MFC 가상 함수를 재정의할 수 있습니다.
 
-## <a name="accessing-visual-c-code-wizards"></a>Visual C++ 코드 마법사 액세스
+## <a name="accessing-c-code-wizards"></a>C++ 코드 마법사 액세스
 
-Visual C++ 코드 마법사에 액세스할 수 있는 세 가지 위치가 있습니다.
+C++ 코드 마법사에 액세스할 수 있는 세 가지 위치가 있습니다.
 
 - **프로젝트** 메뉴에서 **새 항목 추가** 명령을 사용하면 프로젝트에 새 파일을 추가하는 데 유용한 `Add New Item` 대화 상자를 표시할 수 있습니다. **클래스 추가** 명령은 프로젝트에 추가할 수 있는 각 클래스 유형에 대한 마법사를 여는 [클래스 추가](../ide/add-class-dialog-box.md) 대화 상자를 표시합니다. **리소스 추가** 명령은 프로젝트에 추가할 리소스를 만들거나 선택할 수 있는 [리소스 추가](../windows/add-resource-dialog-box.md) 대화 상자를 표시합니다.
 
@@ -73,5 +77,5 @@ Visual C++ 코드 마법사에 액세스할 수 있는 세 가지 위치가 있�
 
 [가상 함수 재정의](../ide/overriding-a-virtual-function-visual-cpp.md)<br>
 [클래스 구조 탐색](../ide/navigating-the-class-structure-visual-cpp.md)<br>
-[Visual C++ 프로젝트 형식](../build/reference/visual-cpp-project-types.md)<br>
-[Visual C++ 프로젝트용 파일 형식](../build/reference/file-types-created-for-visual-cpp-projects.md)
+[Visual Studio의 C++ 프로젝트 형식](../build/reference/visual-cpp-project-types.md)<br>
+[Visual Studio C++ 프로젝트용으로 만든 파일 형식](../build/reference/file-types-created-for-visual-cpp-projects.md)

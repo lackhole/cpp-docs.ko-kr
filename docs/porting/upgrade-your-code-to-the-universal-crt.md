@@ -2,12 +2,12 @@
 title: 코드를 유니버설 CRT로 업그레이드
 ms.date: 03/31/2017
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-ms.openlocfilehash: bdf1615d47361654e9690977520d01c332098438
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 68edcd57ee03ac861a6d2105456f4dbf699c1210
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58898767"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65449001"
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>코드를 유니버설 CRT로 업그레이드
 
@@ -19,7 +19,7 @@ UCRT는 이제 Windows 구성 요소이며 Windows 10의 일부로 제공됩니�
 
 ## <a name="where-to-find-the-universal-crt-files"></a>유니버설 CRT 파일의 위치
 
-Windows 구성 요소인 UCRT 라이브러리 파일 및 헤더는 이제 Windows SDK(소프트웨어 개발 키트)에 포함됩니다. Visual Studio를 설치하면 UCRT를 사용하는 데 필요한 Windows SDK 부분도 설치됩니다. Visual Studio 설치 관리자는 UCRT 헤더, 라이브러리 및 DLL 파일의 위치를 Visual Studio 프로젝트 빌드 시스템에 사용되는 기본 경로에 추가합니다. Visual C++ 프로젝트를 업데이트할 때 기본 프로젝트 설정을 사용하면 IDE에서는 자동으로 헤더 파일의 새 위치를 찾고 링커는 자동으로 새로운 기본 UCRT 및 vcruntime 라이브러리를 사용합니다. 마찬가지로 개발자 명령 프롬프트를 사용하여 명령줄 빌드를 실행하면 헤더 및 라이브러리의 경로가 포함된 환경 변수가 업데이트되고 자동으로 작동합니다.
+Windows 구성 요소인 UCRT 라이브러리 파일 및 헤더는 이제 Windows SDK(소프트웨어 개발 키트)에 포함됩니다. Visual Studio를 설치하면 UCRT를 사용하는 데 필요한 Windows SDK 부분도 설치됩니다. Visual Studio 설치 관리자는 UCRT 헤더, 라이브러리 및 DLL 파일의 위치를 Visual Studio 프로젝트 빌드 시스템에 사용되는 기본 경로에 추가합니다. Visual Studio C++ 프로젝트를 업데이트할 때 기본 프로젝트 설정을 사용하면 IDE에서는 자동으로 헤더 파일의 새 위치를 찾고 링커는 자동으로 새로운 기본 UCRT 및 vcruntime 라이브러리를 사용합니다. 마찬가지로 개발자 명령 프롬프트를 사용하여 명령줄 빌드를 실행하면 헤더 및 라이브러리의 경로가 포함된 환경 변수가 업데이트되고 자동으로 작동합니다.
 
 표준 C 라이브러리 헤더 파일은 이제 SDK 버전별 디렉터리에 있는 include 폴더의 Windows SDK에서 찾을 수 있습니다. 일반적인 헤더 파일 위치는 Windows Kits\\10\\Include\\_sdk-version_\\ucrt 아래 Program Files 또는 Program Files (x86) 디렉터리입니다. 여기서 _sdk-version_은 Windows 버전 또는 업데이트에 해당합니다(예: Windows 10 1주년 업데이트의 경우 10.0.14393.0).
 
@@ -29,7 +29,7 @@ UCRT 정적 라이브러리 및 동적 링크 스텁 라이브러리는 Windows 
 
 C 및 C++ 컴파일러별 런타임 지원 라이브러리인 **vcruntime**에는 예외 처리 및 내장 함수와 같이 프로그램 시작 및 기능을 지원하는 데 필요한 코드가 포함됩니다. 라이브러리 및 해당 헤더 파일은 Program Files 또는 Program files (x86) 디렉터리의 버전별 Microsoft Visual Studio 폴더에 있습니다. Visual Studio 2017에서 헤더는 Microsoft Visual Studio\\2017\\_edition_\\VC\\Tools\\MSVC\\_lib-version_\\include 아래에 있고 링크 라이브러리는 Microsoft Visual Studio\\2017\\_edition_\\VC\\Tools\\MSVC\\_lib-version_\\lib\\_architecture_ 아래에 있습니다. 여기서 _edition_은 설치된 Visual Studio 버전이고, _lib-version_은 라이브러리 버전이고, _architecture_는 프로세서 아키텍처입니다. OneCore 및 Store에 대한 링크 라이브러리는 libraries 폴더에도 있습니다. 정적 라이브러리의 정품 및 디버그 버전은 libvcruntime.lib 및 libvcruntimed.lib입니다. 동적 링크 정품 및 디버그 스텁 라이브러리는 각각 vcruntime.lib 및 vcruntimed.lib입니다.
 
-Visual C++ 프로젝트를 업데이트할 때 프로젝트의 **Linker** 속성 **모든 기본 라이브러리 무시**를 **예**로 설정했거나 명령줄에서 `/NODEFAULTLIB` 링커 옵션을 사용할 경우에는 새로운 리팩터링된 라이브러리를 포함하도록 라이브러리 목록을 업데이트해야 합니다. 이전 CRT 라이브러리(예: libcmt.lib, libcmtd.lib, msvcrt.lib 또는 msvcrtd.lib)를 해당하는 리팩터링된 라이브러리로 바꿉니다. 사용할 특정 라이브러리에 대한 자세한 내용은 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)을 참조하세요.
+Visual Studio C++ 프로젝트를 업데이트할 때 프로젝트의 **Linker** 속성 **모든 기본 라이브러리 무시**를 **예**로 설정했거나 명령줄에서 `/NODEFAULTLIB` 링커 옵션을 사용할 경우에는 새로운 리팩터링된 라이브러리를 포함하도록 라이브러리 목록을 업데이트해야 합니다. 이전 CRT 라이브러리(예: libcmt.lib, libcmtd.lib, msvcrt.lib 또는 msvcrtd.lib)를 해당하는 리팩터링된 라이브러리로 바꿉니다. 사용할 특정 라이브러리에 대한 자세한 내용은 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)을 참조하세요.
 
 ## <a name="deployment-and-redistribution-of-the-universal-crt"></a>유니버설 CRT의 배포 및 재배포
 

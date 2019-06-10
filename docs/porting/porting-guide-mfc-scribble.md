@@ -2,16 +2,16 @@
 title: '포팅 가이드: MFC Scribble'
 ms.date: 11/19/2018
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-ms.openlocfilehash: 436dd27d8c2669e21ddc8a9e453f369cdd14f70c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 0424b5e8c87c0103b4ebee65765244b40e8fa553
+ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741302"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65448974"
 ---
 # <a name="porting-guide-mfc-scribble"></a>포팅 가이드: MFC Scribble
 
-이 항목은 이전 버전의 Visual Studio에서 만든 Visual C++ 프로젝트를 Visual Studio 2017로 업그레이드하는 절차를 소개하는 여러 항목 중 첫 번째입니다. 이러한 항목에서는 예를 들어 매우 간단한 프로젝트부터 좀더 복잡한 프로젝트로 이동하는 업그레이드 프로세스를 소개합니다. 이 항목에서는 MFC Sribble이라는 특정 프로젝트에 대한 업그레이드 프로세스를 안내합니다. C++ 프로젝트에 대한 업그레이드 프로세스의 기본 사항을 소개하는 데 적합합니다.
+이 항목은 이전 버전의 Visual Studio에서 만든 Visual Studio C++ 프로젝트를 Visual Studio 2017로 업그레이드하는 절차를 소개하는 여러 항목 중 첫 번째입니다. 이러한 항목에서는 예를 들어 매우 간단한 프로젝트부터 좀더 복잡한 프로젝트로 이동하는 업그레이드 프로세스를 소개합니다. 이 항목에서는 MFC Sribble이라는 특정 프로젝트에 대한 업그레이드 프로세스를 안내합니다. C++ 프로젝트에 대한 업그레이드 프로세스의 기본 사항을 소개하는 데 적합합니다.
 
 각 Visual Studio 버전에는 이전 버전의 Visual Studio에서 최신 버전으로의 코드 이동을 복잡하게 하는 비호환성이 있을 수 있습니다. 코드에 필요한 변경이 있어서 코드를 다시 컴파일하고 업데이트해야 하는 경우도 있고, 프로젝트 파일에 필요한 변경이 있는 경우도 있습니다. 이전 버전의 Visual Studio에서 만든 프로젝트를 여는 경우 Visual Studio에서 프로젝트 또는 솔루션을 최신 버전으로 업데이트할지 여부를 묻는 메시지를 자동으로 표시합니다. 이러한 도구는 일반적으로 프로젝트 파일만 업그레이드하고 소스 코드를 수정하지 않습니다.
 
@@ -49,7 +49,7 @@ Platform 'Itanium' is missing from this project. All the configurations and thei
 
 ### <a name="step-2-getting-it-to-build"></a>2단계. 빌드
 
-빌드하기 전에 프로젝트 시스템에서 사용 중인 컴파일러 버전을 알 수 있도록 플랫폼 도구 집합을 확인합니다. 프로젝트 속성 대화 상자의 **구성 속성** 아래, **일반** 범주에서 **플랫폼 도구 집합** 속성을 확인합니다. Visual Studio 버전 및 플랫폼 도구 버전 번호(이 경우 Visual Studio 2017 버전의 도구에 해당하는 v141)이 포함되어 있습니다. 원래 Visual C++ 2010, 2012, 2013 또는 2015를 사용하여 컴파일된 프로젝트를 변환하는 경우 도구 집합이 Visual Studio 2017 도구 집합으로 자동으로 업데이트되지 않습니다.
+빌드하기 전에 프로젝트 시스템에서 사용 중인 컴파일러 버전을 알 수 있도록 플랫폼 도구 집합을 확인합니다. 프로젝트 속성 대화 상자의 **구성 속성** 아래, **일반** 범주에서 **플랫폼 도구 집합** 속성을 확인합니다. Visual Studio 버전 및 플랫폼 도구 버전 번호(이 경우 Visual Studio 2017 버전의 도구에 해당하는 v141)이 포함되어 있습니다. 원래 Visual Studio 2010, 2012, 2013 또는 2015를 사용하여 컴파일된 프로젝트를 변환하는 경우 도구 집합이 Visual Studio 2017 도구 집합으로 자동 업데이트되지 않습니다.
 
 유니코드로 전환하려면 프로젝트의 속성을 열고 **구성 속성** 아래에서 **일반** 섹션을 선택한 다음 **문자 집합** 속성을 찾습니다. 이 속성을 **멀티바이트 문자 집합 사용**에서 **유니코드 문자 집합 사용**으로 변경합니다. 이렇게 변경하면 _UNICODE 및 UNICODE 매크로가 정의되고 _MBCS는 정의되지 않습니다. 이는 속성 대화 상자의 **C/C++** 범주 아래, **명령줄** 속성에서 확인할 수 있습니다.
 
@@ -65,7 +65,7 @@ Scribble 프로젝트는 유니코드 문자를 사용하여 컴파일되도록 
 _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
 ```
 
-이는 오류가 아니라 경고이며, Visual C++ 프로젝트를 업그레이드할 때 흔히 발생합니다. 애플리케이션이 실행되는 가장 낮은 버전의 Windows를 정의하는 매크로입니다. 경고를 무시하는 경우 현재 버전의 Windows를 의미하는 기본값 _WIN32_WINNT_MAXVER을 수락하는 것입니다. 가능한 값의 테이블은 [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers)(Windows 헤더 사용)을 참조하세요. 예를 들어 Vista부터 모든 버전에서 실행되도록 설정할 수 있습니다.
+이는 오류가 아니라 경고이며, Visual Studio C++ 프로젝트를 업그레이드할 때 흔히 발생합니다. 애플리케이션이 실행되는 가장 낮은 버전의 Windows를 정의하는 매크로입니다. 경고를 무시하는 경우 현재 버전의 Windows를 의미하는 기본값 _WIN32_WINNT_MAXVER을 수락하는 것입니다. 가능한 값의 테이블은 [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers)(Windows 헤더 사용)을 참조하세요. 예를 들어 Vista부터 모든 버전에서 실행되도록 설정할 수 있습니다.
 
 ```cpp
 #define _WIN32_WINNT _WIN32_WINNT_VISTA
