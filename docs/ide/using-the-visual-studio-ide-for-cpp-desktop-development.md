@@ -1,16 +1,16 @@
 ---
 title: C++ 데스크톱 개발에 Visual Studio IDE 사용
-ms.date: 03/14/2019
+ms.date: 04/25/2019
 helpviewer_keywords:
 - IDE [C++]
 - Visual Studio IDE [C++]
 ms.assetid: d985c230-8e81-49d6-92be-2db9cac8d023
-ms.openlocfilehash: 7417c46097b1f0c6282e3684a7556880c21be42a
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 7a9559f1aac9f0bd26b35dd03729ab86ad695b04
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58773569"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "66182773"
 ---
 # <a name="using-the-visual-studio-ide-for-c-desktop-development"></a>C++ 데스크톱 개발에 Visual Studio IDE 사용
 
@@ -20,19 +20,21 @@ Visual Studio IDE(통합 개발 환경)는 정적 분석 및 강력한 디버깅
 
 아직 Visual Studio를 설치하지 않았다면, 지금이 적기입니다. 다운로드 링크와 빠른 연습은 [Visual Studio에서 C++ 지원 설치](../build/vscpp-step-0-installation.md)를 참조합니다. 일반적으로 Visual Studio 설치 방법 및 문제 해결 팁에 대한 자세한 내용은 [Visual Studio 설치](/visualstudio/install/install-visual-studio)를 참조합니다. 기본적으로 C++ 컴파일러, 도구 및 라이브러리가 설치되어 있지 않으므로 Visual Studio를 설치할 때 이들을 포함하려면 **C++를 사용한 데스크톱 개발** 워크로드를 선택했는지 확인합니다.
 
-이 연습에서는 Windows 데스크톱 개발에 필요한 Visual Studio와 Visual C++ 언어 및 구성 요소를 설치했다고 가정합니다. 또한 개발자는 C++ 언어의 기본적인 사항을 이해하고 있다고 가정합니다. C++를 배워야 할 경우, 많은 책과 웹 리소스를 이용할 수 있습니다. 시작하기 좋은 곳 중 하나는 표준 C++ Foundation 웹 사이트의 [시작하기](https://isocpp.org/get-started) 페이지입니다.
+이 연습에서는 Windows 데스크톱 개발에 필요한 C++ 구성 요소를 설치했다고 가정합니다. 또한 개발자는 C++ 언어의 기본적인 사항을 이해하고 있다고 가정합니다. C++를 배워야 할 경우, 많은 책과 웹 리소스를 이용할 수 있습니다. 시작하기 좋은 곳 중 하나는 표준 C++ Foundation 웹 사이트의 [시작하기](https://isocpp.org/get-started) 페이지입니다.
 
-아직 Visual Studio를 설치하지 않았다면, 지금이 적기입니다.
+아직 Visual Studio를 설치하지 않았다면, 지금이 적기입니다. 일반적으로 Visual Studio 2017 또는 Visual Studio 2015 컴파일러를 사용하여 코드를 컴파일해야 하는 경우에도 Visual Studio 2019를 사용하는 것이 좋습니다. 자세한 내용은 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](../porting/use-native-multi-targeting.md)를 참조하세요.
+
+**Visual Studio 2019 설치**
+
+Visual Studio 2019를 가져오려면 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/)에서 다운로드하면 됩니다. Visual Studio를 설치할 때 기본적으로 설치되지 않으므로, C++ 개발 도구를 포함해야 합니다. Visual Studio를 설치하는 방법에 대한 자세한 내용은 [Visual Studio 설치](/visualstudio/install/install-visual-studio)를 참조하세요.
 
 **Visual Studio 2017 설치**
 
-Visual Studio 2017을 받으려면 [Visual Studio 다운로드](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 다운로드하면 됩니다. Visual Studio를 설치할 때 기본적으로 설치되지 않으므로, Visual C++ 개발 도구를 포함해야 합니다. Visual Studio를 설치하는 방법에 대한 자세한 내용은 [Visual Studio 설치](/visualstudio/install/install-visual-studio)를 참조하세요.
+Visual Studio 2017을 가져오려면 [Visual Studio의 이전 버전 다운로드](https://www.visualstudio.com/vs/older-downloads/)에서 다운로드하면 됩니다. Visual Studio를 설치할 때 기본적으로 설치되지 않으므로, C++ 개발 도구를 포함해야 합니다. Visual Studio를 설치하는 방법에 대한 자세한 내용은 [Visual Studio 설치](/visualstudio/install/install-visual-studio)를 참조하고 페이지의 버전 선택기를 **Visual Studio 2017**로 설정합니다.
 
 **Visual Studio 2015 설치**
 
 Visual Studio 2015를 설치하려면 [이전 버전의 Visual Studio 다운로드](https://www.visualstudio.com/vs/older-downloads/)로 이동합니다. 설치 프로그램을 실행하고 **사용자 지정 설치**를 선택한 다음, C++ 구성 요소를 선택합니다.
-
-일반적으로 Visual Studio 2015 컴파일러를 사용하여 코드를 컴파일해야 하는 경우에도 Visual Studio 2017을 사용하는 것이 좋습니다. 자세한 내용은 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](../porting/use-native-multi-targeting.md)를 참조하세요.
 
 Visual Studio 설치가 완료되면 계속 진행할 준비가 된 것입니다.
 
@@ -52,7 +54,7 @@ Visual Studio IDE를 사용하여 C++ 앱을 빌드하려면 각 항목을 순�
 
 ## <a name="next-steps"></a>다음 단계
 
-이러한 연습을 완료하면 자신의 프로젝트를 만들기 시작할 준비가 된 것입니다. Visual C++ 개발에 대한 자세한 내용과 리소스는 [Visual Studio의 Visual C++](../overview/visual-cpp-in-visual-studio.md)를 참조하세요.
+이러한 연습을 완료하면 자신의 프로젝트를 만들기 시작할 준비가 된 것입니다. C++ 개발에 대한 자세한 내용과 리소스는 [Visual Studio의 Visual C++](../overview/visual-cpp-in-visual-studio.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

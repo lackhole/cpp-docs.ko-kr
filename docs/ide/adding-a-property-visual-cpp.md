@@ -12,12 +12,12 @@ helpviewer_keywords:
 - stock properties, about stock properties
 - stock properties
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
-ms.openlocfilehash: 06940bb72f9113e0a8148e15418504b35fc95099
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 79938cb5c762292c5e1802832477c3a568ae2fdb
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694259"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504466"
 ---
 # <a name="add-a-property"></a>속성 추가
 
@@ -191,5 +191,5 @@ ms.locfileid: "51694259"
 |`Font`|컨트롤의 앰비언트 글꼴을 반환하거나 설정합니다. 컨트롤에 글꼴이 없으면 Null입니다.|
 |`ForeColor`|컨트롤의 앰비언트 `ForeColor` 속성을 반환하거나 설정합니다.|
 |`hWnd`|컨트롤의 `hWnd` 속성을 반환하거나 설정합니다. `hWnd`에는 **멤버 변수** 구현 형식이 없습니다.|
-|`ReadyState`|컨트롤의 `ReadyState` 속성을 반환하거나 설정합니다. 컨트롤이는 초기화되지 않거나, 초기화되거나, 로드되거나, 대화형이거나, 완료될 수 있습니다. 자세한 정보는 *인터넷 SDK*에서 [READYSTATE](https://msdn.microsoft.com/library/aa768362.aspx)를 참조하세요.|
+|`ReadyState`|컨트롤의 `ReadyState` 속성을 반환하거나 설정합니다. 컨트롤이는 초기화되지 않거나, 초기화되거나, 로드되거나, 대화형이거나, 완료될 수 있습니다. 자세한 정보는 *인터넷 SDK*에서 [READYSTATE](/previous-versions//aa768362\(v=vs.85\))를 참조하세요.|
 |`Text`|컨트롤에 포함된 텍스트를 반환하거나 설정합니다. `Text`에는 **멤버 변수** 구현 형식이 없습니다.|

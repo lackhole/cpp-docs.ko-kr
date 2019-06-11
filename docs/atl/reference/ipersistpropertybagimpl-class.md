@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - IPersistPropertyBagImpl class
 ms.assetid: 712af24d-99f8-40f2-9811-53b3ff6e5b19
-ms.openlocfilehash: 800c38c15e4ec8028fba9188d75e49be7ca51146
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 569a24fd08801de952e998f772afbc3478096628
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274895"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503141"
 ---
 # <a name="ipersistpropertybagimpl-class"></a>IPersistPropertyBagImpl 클래스
 
@@ -50,9 +50,9 @@ class ATL_NO_VTABLE IPersistPropertyBagImpl : public IPersistPropertyBag
 
 ## <a name="remarks"></a>설명
 
-합니다 [IPersistPropertyBag](https://msdn.microsoft.com/library/aa768205.aspx) 인터페이스를 사용 하면 클라이언트에서 제공한 속성 모음에 해당 속성을 저장 하는 개체입니다. 클래스 `IPersistPropertyBagImpl` 이 인터페이스의 기본 구현을 제공 하 고 구현 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.
+합니다 [IPersistPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768205\(v=vs.85\)) 인터페이스를 사용 하면 클라이언트에서 제공한 속성 모음에 해당 속성을 저장 하는 개체입니다. 클래스 `IPersistPropertyBagImpl` 이 인터페이스의 기본 구현을 제공 하 고 구현 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.
 
-`IPersistPropertyBag` 와 함께 작동 [IPropertyBag](https://msdn.microsoft.com/library/aa768196.aspx) 하 고 [IErrorLog](https://msdn.microsoft.com/library/aa768231.aspx)합니다. 후자의 두 인터페이스는 클라이언트에 의해 구현 되어야 합니다. 통해 `IPropertyBag`, 클라이언트는 저장 하 고 개체의 개별 속성을 로드 합니다. 통해 `IErrorLog`, 개체와 클라이언트 모두에서 발생 한 오류를 보고할 수 있습니다.
+`IPersistPropertyBag` 와 함께 작동 [IPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768196\(v=vs.85\)) 하 고 [IErrorLog](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768231\(v=vs.85\))합니다. 후자의 두 인터페이스는 클라이언트에 의해 구현 되어야 합니다. 통해 `IPropertyBag`, 클라이언트는 저장 하 고 개체의 개별 속성을 로드 합니다. 통해 `IErrorLog`, 개체와 클라이언트 모두에서 발생 한 오류를 보고할 수 있습니다.
 
 **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)
 
@@ -92,7 +92,7 @@ S_OK 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-참조 [IPersistPropertyBag::InitNew](https://msdn.microsoft.com/library/aa768204.aspx) Windows SDK에에서 있습니다.
+참조 [IPersistPropertyBag::InitNew](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768204\(v=vs.85\)) Windows SDK에에서 있습니다.
 
 ##  <a name="load"></a>  IPersistPropertyBagImpl::Load
 
@@ -106,7 +106,7 @@ STDMETHOD(Load)(LPPROPERTYBAG pPropBag, LPERRORLOG pErrorLog);
 
 ATL 개체의 속성 맵에 사용 하 여이 정보를 검색 합니다.
 
-참조 [IPersistPropertyBag::Load](https://msdn.microsoft.com/library/aa768206.aspx) Windows SDK에에서 있습니다.
+참조 [IPersistPropertyBag::Load](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768206\(v=vs.85\)) Windows SDK에에서 있습니다.
 
 ##  <a name="save"></a>  IPersistPropertyBagImpl::Save
 
@@ -123,7 +123,7 @@ STDMETHOD(Save)(
 
 ATL 개체의 속성 맵에 사용 하 여이 정보를 저장 합니다. 기본적으로이 메서드는 값에 관계 없이 모든 속성을 저장 *fSaveAllProperties*합니다.
 
-참조 [IPersistPropertyBag::Save](https://msdn.microsoft.com/library/aa768207.aspx) Windows SDK에에서 있습니다.
+참조 [IPersistPropertyBag::Save](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768207\(v=vs.85\)) Windows SDK에에서 있습니다.
 
 ## <a name="see-also"></a>참고자료
 

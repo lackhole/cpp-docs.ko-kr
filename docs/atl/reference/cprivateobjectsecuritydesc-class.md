@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPrivateObjectSecurityDesc class
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-ms.openlocfilehash: 99b47c15af4cdb87fb35d5c7342ea2719d341868
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cc726892515ea38a559bdf182affa96f84be3449
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278152"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503296"
 ---
 # <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc 클래스
 
@@ -173,7 +173,7 @@ bool Create(
 새 개체가 다른 개체를 포함할 수 있는지 여부를 지정 합니다. 값이 true 이면 새 개체 컨테이너 임을 나타냅니다. False 이면 새 개체 컨테이너 임을 나타냅니다.
 
 *AutoInheritFlags*<br/>
-액세스 제어 항목 (Ace)에서 상속 되는 방식을 제어 하는 비트 플래그 집합이 *pParent*합니다. 참조 [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581) 대 한 자세한 내용은 합니다.
+액세스 제어 항목 (Ace)에서 상속 되는 방식을 제어 하는 비트 플래그 집합이 *pParent*합니다. 참조 [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -181,7 +181,7 @@ bool Create(
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출 [CreatePrivateObjectSercurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) 하거나 [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581)합니다.
+이 메서드를 호출 [CreatePrivateObjectSercurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) 하거나 [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex)합니다.
 
 두 번째 메서드는 새 개체의 개체 유형 GUID를 지정 하거나 Ace 상속 되는 방식을 제어를 허용 합니다.
 
@@ -265,7 +265,7 @@ bool Set(
 에 대 한 참조를 [CAccessToken](../../atl/reference/caccesstoken-class.md) 주체인 개체 만들어지는 클라이언트 프로세스에 대 한 개체입니다.
 
 *AutoInheritFlags*<br/>
-액세스 제어 항목 (Ace)에서 상속 되는 방식을 제어 하는 비트 플래그 집합이 *pParent*합니다. 참조 [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581) 대 한 자세한 내용은 합니다.
+액세스 제어 항목 (Ace)에서 상속 되는 방식을 제어 하는 비트 플래그 집합이 *pParent*합니다. 참조 [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
 

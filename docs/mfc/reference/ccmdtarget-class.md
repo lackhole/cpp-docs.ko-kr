@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CCmdTarget [MFC], OnFinalRelease
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
-ms.openlocfilehash: 9314717fab53b1a89b87d657ec617a4c6bd45b8b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4db220ce28ecd762796f196e611a69ce157d2efa
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206443"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504456"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget 클래스
 
@@ -284,7 +284,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
 ### <a name="parameters"></a>매개 변수
 
 *pIID*<br/>
-인터페이스 ID에 대 한 포인터 (한 [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931)).
+인터페이스 ID에 대 한 포인터 (한 [GUID](/previous-versions/aa373931\(v=vs.80\))).
 
 ### <a name="return-value"></a>반환 값
 
@@ -350,7 +350,7 @@ HRESULT GetTypeInfoOfGuid(
 로캘 식별자 ( `LCID`).
 
 *guid*<br/>
-합니다 [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931) 형식 설명입니다.
+합니다 [GUID](/previous-versions/aa373931\(v=vs.80\)) 형식 설명입니다.
 
 *ppTypeInfo*<br/>
 에 대 한 포인터에 대 한 포인터를 `ITypeInfo` 인터페이스입니다.

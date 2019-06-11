@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: 17979dce7899820db3da3c24968385914c3a57e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5ea7b59ccb95078324ae85bbf04c11c537f0f525
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337897"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503559"
 ---
 # <a name="chtmlview-class"></a>CHtmlView 클래스
 
@@ -493,7 +493,7 @@ void ExecWB(
 
 ### <a name="remarks"></a>설명
 
-참조 [IWebBrowser2::ExecWB](https://msdn.microsoft.com/library/aa752117.aspx) Windows SDK에에서 있습니다.
+참조 [IWebBrowser2::ExecWB](/previous-versions//aa752117\(v=vs.85\)) Windows SDK에에서 있습니다.
 
 ##  <a name="getaddressbar"></a>  CHtmlView::GetAddressBar
 
@@ -759,7 +759,7 @@ READYSTATE GetReadyState() const;
 
 ### <a name="return-value"></a>반환 값
 
-A [READYSTATE](https://msdn.microsoft.com/library/aa768362.aspx) Windows SDK에 설명 된 대로 값입니다.
+A [READYSTATE](/previous-versions//aa768362\(v=vs.85\)) Windows SDK에 설명 된 대로 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1307,7 +1307,7 @@ virtual HRESULT OnFrameWindowActivate(BOOL fActivate);
 
 ##  <a name="onfullscreen"></a>  CHtmlView::OnFullScreen
 
-이 멤버 함수는 프레임 워크에서 호출 됩니다 때 합니다 [전체 화면](https://msdn.microsoft.com/library/aa752119.aspx) 속성이 변경 합니다.
+이 멤버 함수는 프레임 워크에서 호출 됩니다 때 합니다 [전체 화면](/previous-versions/aa752119\(v=vs.85\)) 속성이 변경 합니다.
 
 ```
 virtual void OnFullScreen(BOOL bFullScreen);
@@ -1430,7 +1430,7 @@ virtual HRESULT OnHideUI();
 
 ##  <a name="onmenubar"></a>  CHtmlView::OnMenuBar
 
-이 멤버 함수는 프레임 워크에서 호출 됩니다 때 합니다 [MenuBar](https://msdn.microsoft.com/library/aa752131.aspx) 속성이 변경 합니다.
+이 멤버 함수는 프레임 워크에서 호출 됩니다 때 합니다 [MenuBar](/previous-versions/aa752131\(v=vs.85\)) 속성이 변경 합니다.
 
 ```
 virtual void OnMenuBar(BOOL bMenuBar);
@@ -1481,7 +1481,7 @@ virtual void OnNavigateError(
 리소스를 표시 하거나 명명 된 프레임이 없는 리소스에 대 한 대상으로 지정 된 경우 NULL 인 프레임의 이름입니다.
 
 *dwError*<br/>
-오류 상태 코드를 사용할 수 있는 경우입니다. 가능한 HRESULT 및 HTTP 상태 코드의 목록은 참조 하세요. [NavigateError 이벤트 상태 코드입니다.](https://msdn.microsoft.com/library/aa768365.aspx)
+오류 상태 코드를 사용할 수 있는 경우입니다. 목록을 가능한 HRESULT 및 HTTP 상태 코드를 참조 하세요 [NavigateError 이벤트 상태 코드.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768365\(v=vs.85\))합니다.
 
 *pbCancel*<br/>
 오류 페이지 또는 모든 추가 자동 검색에 대 한 이동을 취소할지 여부를 지정 합니다. 경우 TRUE (기본값), 오류 페이지 또는 자동 검색; 탐색을 사용 하 여 계속 합니다. false 인 경우, 오류 페이지 또는 자동 검색에 대 한 탐색을 취소 합니다.
@@ -1490,7 +1490,7 @@ virtual void OnNavigateError(
 
 사용자 지정 탐색 오류 처리를 제공 하려면이 메서드를 재정의 합니다.
 
-자세한 내용은 참조 하세요. [DWebBrowserEvents2::NavigateError](https://msdn.microsoft.com/library/aa768286.aspx)
+자세한 내용은 참조 하세요. [DWebBrowserEvents2::NavigateError](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768286\(v=vs.85\))
 
 ##  <a name="onnewwindow2"></a>  CHtmlView::OnNewWindow2
 
@@ -1661,7 +1661,7 @@ virtual HRESULT OnShowUI(
 
 ##  <a name="onstatusbar"></a>  CHtmlView::OnStatusBar
 
-이 멤버 함수는 프레임 워크에서 호출 됩니다 때 합니다 [StatusBar](https://msdn.microsoft.com/library/aa768270.aspx) 속성이 변경 합니다.
+이 멤버 함수는 프레임 워크에서 호출 됩니다 때 합니다 [StatusBar](/previous-versions//aa768270\(v=vs.85\)) 속성이 변경 합니다.
 
 ```
 virtual void OnStatusBar(BOOL bStatusBar);
@@ -1687,7 +1687,7 @@ virtual void OnStatusTextChange(LPCTSTR lpszText);
 
 ##  <a name="ontheatermode"></a>  CHtmlView::OnTheaterMode
 
-프레임 워크에서이 구성원 함수가 호출 되는 경우는 [TheaterMode](https://msdn.microsoft.com/library/aa768273.aspx) 속성이 변경.
+프레임 워크에서이 구성원 함수가 호출 되는 경우는 [TheaterMode](/previous-versions/aa768273\(v=vs.85\)) 속성이 변경.
 
 ```
 virtual void OnTheaterMode(BOOL bTheaterMode);
@@ -1717,7 +1717,7 @@ HTML에 대 한 제목을 변경 될 수 있습니다. HTML을 아직 다운로�
 
 ##  <a name="ontoolbar"></a>  CHtmlView::OnToolBar
 
-프레임 워크에서이 구성원 함수가 호출 되는 경우는 [도구 모음](https://msdn.microsoft.com/library/aa768274.aspx) 속성이 변경.
+프레임 워크에서이 구성원 함수가 호출 되는 경우는 [도구 모음](/previous-versions/aa768274\(v=vs.85\)) 속성이 변경.
 
 ```
 virtual void OnToolBar(BOOL bToolBar);
@@ -1956,7 +1956,7 @@ void Refresh2(int nLevel);
 ### <a name="parameters"></a>매개 변수
 
 *nLevel*<br/>
-새로 고침 수준을 지정 하는 변수의 주소입니다. 가능한 변수에서 정의 됩니다 [RefreshConstants](https://msdn.microsoft.com/library/aa768363.aspx), Windows SDK에 있습니다.
+새로 고침 수준을 지정 하는 변수의 주소입니다. 가능한 변수에서 정의 됩니다 [RefreshConstants](/previous-versions/aa768363\(v=vs.85\)), Windows SDK에 있습니다.
 
 ### <a name="remarks"></a>설명
 

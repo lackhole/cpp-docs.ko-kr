@@ -10,12 +10,12 @@ helpviewer_keywords:
 - merging toolbar and status bar [MFC]
 - menus [MFC], OLE document applications
 ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
-ms.openlocfilehash: e00464e59de5e20627fd2423c101c23629d7c4d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1f7af7007e72cb8e01022c81a244fc70ba52a5cc
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62225541"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504817"
 ---
 # <a name="menus-and-resources-menu-merging"></a>메뉴 및 리소스: 메뉴 병합
 
@@ -29,9 +29,7 @@ ms.locfileid: "62225541"
 
 ##  <a name="_core_menu_layouts"></a> 메뉴 레이아웃
 
-첫 번째 단계는 메뉴 레이아웃을 조정 하는 것입니다. 자세한 내용은 참조는 **메뉴 만들기** 섹션 [메뉴 프로그래밍 고려 사항](https://msdn.microsoft.com/library/ms647557.aspx) Windows SDK의 합니다.
-
-컨테이너 응용 프로그램 내부에서 포함 된 항목은 활성화 하는 경우에 사용할 새 메뉴를 만들어야 합니다. 최소한이 메뉴 나열 된 순서로 다음을 구성 되어야 합니다.
+첫 번째 단계는 메뉴 레이아웃을 조정 하는 것입니다. 컨테이너 응용 프로그램 내부에서 포함 된 항목은 활성화 하는 경우에 사용할 새 메뉴를 만들어야 합니다. 최소한이 메뉴 나열 된 순서로 다음을 구성 되어야 합니다.
 
 1. 파일 메뉴에 파일이 열려 있는 경우 사용 하는 것과 동일 합니다. (일반적으로 다른 메뉴 항목이 사항이 다음 항목 앞.)
 

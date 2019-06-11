@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 2ff6cd6e0817f74c7688fc573d4b98f70704f96c
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: a6b6c872963dbbdf991d013cceba66ffd20bac5c
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222580"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504395"
 ---
 # <a name="cdc-class"></a>CDC 클래스
 
@@ -3220,7 +3220,7 @@ int GetGraphicsMode() const;
 
 그렇지 않으면 0을 반환합니다.
 
-확장 오류 정보를 가져오기, 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.
+확장 오류 정보를 가져오기, 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -3276,7 +3276,7 @@ DWORD GetLayout() const;
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 현재 장치 컨텍스트에 대 한 레이아웃 플래그입니다. 그렇지 않으면 GDI_ERROR 합니다. 확장된 오류 정보에 대 한 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다. 레이아웃 플래그 목록은 참조 하세요 [CDC::SetLayout](#setlayout)합니다.
+성공 하면 현재 장치 컨텍스트에 대 한 레이아웃 플래그입니다. 그렇지 않으면 GDI_ERROR 합니다. 확장된 오류 정보에 대 한 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다. 레이아웃 플래그 목록은 참조 하세요 [CDC::SetLayout](#setlayout)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4012,7 +4012,7 @@ BOOL GetWorldTransform(XFORM& rXform) const;
 
 그렇지 않으면 0을 반환합니다.
 
-확장 오류 정보를 가져오기, 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.
+확장 오류 정보를 가져오기, 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4459,7 +4459,7 @@ BOOL ModifyWorldTransform(
 
 그렇지 않으면 0을 반환합니다.
 
-확장 오류 정보를 가져오기, 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.
+확장 오류 정보를 가져오기, 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -6003,7 +6003,7 @@ int SetGraphicsMode(int iMode);
 
 성공 시 이전 그래픽 모드를 반환합니다.
 
-그렇지 않으면 0을 반환합니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.
+그렇지 않으면 0을 반환합니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -6032,7 +6032,7 @@ DWORD SetLayout(DWORD dwLayout);
 
 성공 하면 장치 컨텍스트의 이전 레이아웃 합니다.
 
-실패 하면 GDI_ERROR 합니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.
+실패 하면 GDI_ERROR 합니다. 확장 오류 정보를 가져오기, 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -6657,7 +6657,7 @@ BOOL SetWorldTransform(const XFORM& rXform);
 
 그렇지 않으면 0을 반환합니다.
 
-확장 오류 정보를 가져오기, 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)합니다.
+확장 오류 정보를 가져오기, 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)합니다.
 
 ### <a name="remarks"></a>설명
 

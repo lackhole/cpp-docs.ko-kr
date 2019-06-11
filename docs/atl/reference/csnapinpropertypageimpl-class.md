@@ -25,12 +25,12 @@ helpviewer_keywords:
 - property pages, ATL
 - CSnapInPropertyPageImpl class
 ms.assetid: 75bdce5a-985e-4166-bd44-493132e023c4
-ms.openlocfilehash: d4e363f7de46de6f875a28a62d4ecdf929decdc3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dd60afc34b1a2de8f86037eb180aab86a9b8afde
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62277508"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503076"
 ---
 # <a name="csnapinpropertypageimpl-class"></a>CSnapInPropertyPageImpl 클래스
 
@@ -150,7 +150,7 @@ PROPSHEETPAGE m_psp;
 
 이 구조를 사용 하 여 생성 된 후 속성 페이지의 모양을 초기화 합니다.
 
-해당 멤버의 목록을 포함 하 여이 구조에 대 한 자세한 내용은 참조 하세요 [PROPSHEETPAGE](https://msdn.microsoft.com/library/aa815151) Windows SDK에 있습니다.
+해당 멤버의 목록을 포함 하 여이 구조에 대 한 자세한 내용은 참조 하세요 [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v3) Windows SDK에 있습니다.
 
 ##  <a name="onapply"></a>  CSnapInPropertyPageImpl::OnApply
 

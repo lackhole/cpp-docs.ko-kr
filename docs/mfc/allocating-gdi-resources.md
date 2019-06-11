@@ -1,24 +1,24 @@
 ---
 title: GDI 리소스 할당
-ms.date: 11/04/2016
+ms.date: 06/03/2019
 helpviewer_keywords:
 - resources [MFC], printing
 - GDI objects [MFC], allocating during printing
 - printing [MFC], allocating GDI resources
 ms.assetid: cef7e94d-5a27-4aea-a9ee-8369fc895d3a
-ms.openlocfilehash: 5f5f6c6585217393a6008fafa875a83e67ab8016
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: adfd8b19f683b82eec213890c8e1345e070ff3ec
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305005"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504624"
 ---
 # <a name="allocating-gdi-resources"></a>GDI 리소스 할당
 
 이 문서에서는 인쇄에 필요한 Windows GDI(그래픽 장치 인터페이스) 개체를 할당 및 할당 취소하는 방법을 설명합니다.
 
 > [!NOTE]
->  자세한 내용은 GDI + SDK 설명서를 참조 하세요. [ https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp ](https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp)합니다.
+>  자세한 내용은 참조는 [GDI + SDK 설명서](/windows/desktop/gdiplus/-gdiplus-gdi-start)합니다.
 
 화면 표시가 아니라 인쇄를 위해 특정 글꼴, 펜 또는 기타 GDI 개체를 사용해야 한다고 가정합니다. 필요한 메모리 때문에 응용 프로그램이 시작될 때 이러한 개체를 할당하는 것은 비효율적입니다. 응용 프로그램이 문서를 인쇄하지 않는 경우 해당 메모리가 다른 용도에 필요할 수 있습니다. 인쇄가 시작될 때 할당한 후 인쇄가 끝나면 삭제하는 것이 좋습니다.
 

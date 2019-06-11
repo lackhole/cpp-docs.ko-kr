@@ -1,25 +1,22 @@
 ---
 title: COM 인터페이스 만들기
-ms.date: 11/12/2018
-f1_keywords:
-- vc.codewiz.com.creating.interfaces
-- vc.codewiz.com.editing.interfaces
+ms.date: 05/14/2019
 helpviewer_keywords:
 - COM interfaces, creating
 - methods [C++], adding to COM interfaces
 - COM interfaces, editing
 - properties [C++], adding to COM interfaces
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
-ms.openlocfilehash: dfc4b09f4fa42b179bdef91877e0a004caa69187
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 09ddc113450fadb208e4f8471bc9aacf596a53f1
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693703"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "66182613"
 ---
 # <a name="create-a-com-interface"></a>COM 인터페이스 만들기
 
-Visual C++는 COM 개체 및 자동화 클래스에 대한 COM 정의 인터페이스 및 dispinterface를 사용하는 프로젝트를 만드는 마법사와 템플릿을 제공합니다.
+Visual Studio는 COM 개체 및 자동화 클래스에 대한 COM 정의 인터페이스 및 dispinterface를 사용하는 프로젝트를 만드는 마법사와 템플릿을 제공합니다.
 
 이러한 마법사를 사용하여 다음과 같은 세 가지 일반 작업을 수행할 수 있습니다.
 
@@ -64,7 +61,7 @@ ATL 기반 COM 개체 클래스의 경우, 클래스 뷰는 ATL 클래스의 COM
 
 클래스 뷰 및 해당 바로 가기 메뉴에서 다음과 같이 인터페이스로 작업할 수 있습니다.
 
-- ATL 개체를 MFC 기반 응용 프로그램에 추가합니다.
+- ATL 개체를 MFC 기반 애플리케이션에 추가합니다.
 - 메서드, 속성 및 이벤트를 추가합니다.
 - 항목을 두 번 클릭하여 항목의 인터페이스 코드로 직접 이동합니다.
 
@@ -74,7 +71,7 @@ ATL 기반 COM 개체 클래스의 경우, 클래스 뷰는 ATL 클래스의 COM
 
 ## <a name="edit-a-com-interface"></a>COM 인터페이스 편집
 
-클래스 뷰 바로 가기 메뉴의 명령을 사용하여 Visual C++ 프로젝트의 COM 인터페이스에 대한 새 메서드와 속성을 정의할 수 있습니다. 도구 상자에서 ActiveX 컨트롤의 이벤트를 정의할 수도 있습니다.
+클래스 뷰 바로 가기 메뉴의 명령을 사용하여 Visual Studio C++ 프로젝트의 COM 인터페이스에 대한 새 메서드와 속성을 정의할 수 있습니다. 도구 상자에서 ActiveX 컨트롤의 이벤트를 정의할 수도 있습니다.
 
 ATL 및 MFC 기반 COM 개체 클래스의 경우, 인터페이스를 편집하는 동시에 클래스 구현을 편집할 수 있습니다.
 

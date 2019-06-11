@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CWinFormsControl [MFC], GetControl
 - CWinFormsControl [MFC], GetControlHandle
 ms.assetid: 6406dd7b-fb89-4a18-ac3a-c010d6b6289a
-ms.openlocfilehash: 91691203f88f07f597aaad6a5db32b03e7ad11c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1c7a394317fefba7911e9500126919e83389f20
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323302"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504671"
 ---
 # <a name="cwinformscontrol-class"></a>CWinFormsControl 클래스
 
@@ -108,7 +108,7 @@ inline BOOL CreateManagedControl(
 ### <a name="parameters"></a>매개 변수
 
 *pType*<br/>
-만들려는 컨트롤의 데이터 형식입니다. 이어야 합니다는 [형식](https://msdn.microsoft.com/library/system.type) 데이터 형식입니다.
+만들려는 컨트롤의 데이터 형식입니다. 이어야 합니다는 [형식](/dotnet/api/system.type) 데이터 형식입니다.
 
 *dwStyle*<br/>
 컨트롤에 적용할 창 스타일입니다. 조합을 지정할 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다. 현재, 다음과 같은 스타일만 지원 됩니다. WS_TABSTOP, WS_VISIBLE, WS_DISABLED 및 WS_GROUP 합니다.
@@ -136,7 +136,7 @@ A [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 컨트롤의 �
 
 이 메서드는 MFC 컨테이너에서.NET Framework Windows Forms 컨트롤을 인스턴스화합니다.
 
-메서드의 첫 번째 오버 로드는.NET Framework 데이터 형식을 허용 *pType* MFC는이 형식의 새 개체를 인스턴스화할 수 있도록 합니다. *pType* 이어야 합니다는 [형식](https://msdn.microsoft.com/library/system.type) 데이터 형식입니다.
+메서드의 첫 번째 오버 로드는.NET Framework 데이터 형식을 허용 *pType* MFC는이 형식의 새 개체를 인스턴스화할 수 있도록 합니다. *pType* 이어야 합니다는 [형식](/dotnet/api/system.type) 데이터 형식입니다.
 
 메서드의 두 번째 오버 로드에 따라 Windows Forms 컨트롤을 만듭니다는 `TManagedControl` 템플릿 매개 변수에 `CWinFormsControl` 클래스입니다. 크기와 컨트롤의 위치를 기반으로 합니다 `RECT` 메서드에 전달 하는 구조입니다. 만 *dwStyle* 스타일에 대 한 중요 합니다.
 

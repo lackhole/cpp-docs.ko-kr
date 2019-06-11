@@ -4246,6 +4246,8 @@
           href: compiler-warnings/c5046.md
 - name: 컴파일러 버전별 컴파일러 경고
   href: compiler-warnings/compiler-warnings-by-compiler-version.md
+- name: 기본적으로 해제되어 있는 컴파일러 경고
+  href: ../preprocessor/compiler-warnings-that-are-off-by-default.md
 - name: 런타임 오류
   expanded: false
   items:

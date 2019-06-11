@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM interface entry macros
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
-ms.openlocfilehash: ed2b8445a0f13b82338d2904d43fd17688d05b9e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f8439e973c935108d645076bb7e2bfae7207e65d
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245584"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503338"
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY 매크로
 
@@ -39,7 +39,7 @@ ms.locfileid: "62245584"
 |[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|동일 [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)한다는 점을 제외 하는 쿼리를 전달 하면 모든 IID에 대 한 쿼리 *punk*합니다.|
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|동일 [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), 경우를 제외 하 고 *punk* 가 null 인 경우에서 설명 하는 집계를 자동으로 생성 합니다 *clsid*.|
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|동일 [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)한다는 점을 제외 하는 쿼리를 전달 하면 모든 IID에 대 한 쿼리 *punk*, 경우에 *punk* 가 null 인 경우 자동으로 만들기 에 설명 된 집계를 *clsid*합니다.|
-|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|프로그램이 호출 [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297) 지정된 된 인터페이스에 대 한 쿼리 될 경우.|
+|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|프로그램이 호출 [DebugBreak](/windows/desktop/api/debugapi/nf-debugapi-debugbreak) 지정된 된 인터페이스에 대 한 쿼리 될 경우.|
 |[COM_INTERFACE_ENTRY_CACHED_TEAR_OFF](#com_interface_entry_cached_tear_off)|모든 인스턴스에 대 한 인터페이스 관련 데이터를 저장합니다.|
 |[COM_INTERFACE_ENTRY_TEAR_OFF](#com_interface_entry_tear_off)|분리 인터페이스를 노출합니다.|
 |[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|처리 하는 COM 맵에이 항목에 도달할 때 기본 클래스의 COM 맵에 처리 합니다.|
@@ -243,7 +243,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
 
 ##  <a name="com_interface_entry_break"></a>  COM_INTERFACE_ENTRY_BREAK
 
-프로그램이 호출 [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297) 지정된 된 인터페이스에 대 한 쿼리 될 경우.
+프로그램이 호출 [DebugBreak](/windows/desktop/api/debugapi/nf-debugapi-debugbreak) 지정된 된 인터페이스에 대 한 쿼리 될 경우.
 
 ```
 COM_INTERFACE_ENTRY_BREAK(x)
@@ -328,7 +328,7 @@ COM_INTERFACE_ENTRY_CHAIN(classname)
 
 [!code-cpp[NVC_ATL_Windowing#116](../../atl/codesnippet/cpp/com-map-macros_9.h)]
 
-COM에서 첫 번째 항목에 매핑하는 COM 맵이 포함 된 개체의 인터페이스 여야 합니다. 다른 지점에서 검색할 개체의 COM 맵에 COM_INTERFACE_ENTRY_CHAIN를 사용 하 여 COM 맵 항목을 시작할 수 없습니다 따라서 여기서 **COM_INTERFACE_ENTRY_CHAIN (**`COtherObject`**)** 개체의 COM 맵에 표시 됩니다. 다른 개체의 COM 맵에 먼저 검색 하려는 경우에 대 한 인터페이스 항목을 추가 합니다. `IUnknown` COM 맵에, 그런 다음 다른 개체의 COM 맵에 연결 합니다. 예를 들어:
+COM에서 첫 번째 항목에 매핑하는 COM 맵이 포함 된 개체의 인터페이스 여야 합니다. 다른 지점에서 검색할 개체의 COM 맵에 COM_INTERFACE_ENTRY_CHAIN를 사용 하 여 COM 맵 항목을 시작할 수 없습니다 따라서 여기서 **COM_INTERFACE_ENTRY_CHAIN (** `COtherObject` **)** 개체의 COM 맵에 표시 됩니다. 다른 개체의 COM 맵에 먼저 검색 하려는 경우에 대 한 인터페이스 항목을 추가 합니다. `IUnknown` COM 맵에, 그런 다음 다른 개체의 COM 맵에 연결 합니다. 예를 들어:
 
 [!code-cpp[NVC_ATL_Windowing#111](../../atl/codesnippet/cpp/com-map-macros_10.h)]
 

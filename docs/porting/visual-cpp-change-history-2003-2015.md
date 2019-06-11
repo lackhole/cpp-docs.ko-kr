@@ -4,12 +4,12 @@ ms.date: 08/30/2017
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: b381a2b7cc9a4ad4749f382838bdec5872a3decf
-ms.sourcegitcommit: 88631cecbe3e3fa752eae3ad05b7f9d9f9437b4d
+ms.openlocfilehash: f05656612e464395117e77c82fb9dc9eb2290e0e
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "58898884"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451278"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ 변경 기록 2003 - 2015
 
@@ -36,7 +36,7 @@ ms.locfileid: "58898884"
 
 - [동시성 런타임 주요 변경 내용](#BK_ConcRT)
 
-## <a name="VC_2015"></a> Visual C++ 2015 규칙 변경 내용
+## <a name="VC_2015"></a> Visual Studio 2015 규칙 변경 내용
 
 ###  <a name="BK_CRT"></a> CRT(C 런타임 라이브러리)
 
@@ -641,7 +641,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 - **Placement new 및 delete**
 
-   **delete** 연산자는 C++14 표준을 준수하도록 변경되었습니다. 표준 변경에 대한 자세한 내용은 [C++ 크기 지정된 할당 해제](http://isocpp.org/files/papers/n3778.html)(영문)를 참조하세요. 변경을 통해 크기 매개 변수를 사용하는 글로벌 **delete** 연산자의 형식이 추가됩니다. 주요 변경 내용에 따르면 이전에는 **placement new** 연산자에 해당하도록 같은 서명으로 **delete** 연산자를 사용하면 placement new가 사용된 지점에서 컴파일러 오류(C2956)가 발생했습니다. 이 지점은 컴파일러가 적절하게 일치하는 **delete** 연산자를 식별하려고 하는 코드의 위치이기 때문입니다.
+   **delete** 연산자는 C++14 표준을 준수하도록 변경되었습니다. 표준 변경에 대한 자세한 내용은 [C++ 크기 지정된 할당 해제](https://isocpp.org/files/papers/n3778.html)(영문)를 참조하세요. 변경을 통해 크기 매개 변수를 사용하는 글로벌 **delete** 연산자의 형식이 추가됩니다. 주요 변경 내용에 따르면 이전에는 **placement new** 연산자에 해당하도록 같은 서명으로 **delete** 연산자를 사용하면 placement new가 사용된 지점에서 컴파일러 오류(C2956)가 발생했습니다. 이 지점은 컴파일러가 적절하게 일치하는 **delete** 연산자를 식별하려고 하는 코드의 위치이기 때문입니다.
 
    `void operator delete(void *, size_t)` 함수는 C++11의 **placement new** 함수 `void * operator new(size_t, size_t)`에 해당하는 **placement delete** 연산자였습니다. C++14 크기 지정된 할당 해제를 사용하면 이 delete 함수는 이제 *일반 할당 해제 함수*(글로벌 **delete** 연산자)입니다. 표준에 따르면 placement new를 사용하여 해당하는 delete 함수를 조회하고 usual deallocation 함수를 찾으면 프로그램에 잘못된 형식이 사용됩니다.
 
@@ -1106,7 +1106,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 - **문자열 리터럴이 상수 배열임**
 
-   다음 코드는 C2664를 생성합니다. ‘void f(void *)’: 인수 1을 ‘const char (*)[2]’에서 ‘void *’로 변환할 수 없습니다.
+   다음 코드는 C2664를 생성합니다. ‘void f(void *)’: 인수 1을 ‘const char (* )[2]’에서 ‘void *’로 변환할 수 없습니다.
 
     ```cpp
     void f(void *);
@@ -2064,7 +2064,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
     #include "C4426.h"
     ```
 
-- **#pragma warning(push)** 및 **#pragma warning(pop)**(`/Wall` `/WX`에만 영향을 줌)
+- **#pragma warning(push)** 및 **#pragma warning(pop)** (`/Wall` `/WX`에만 영향을 줌)
 
    이전 버전의 컴파일러는 다른 소스 파일에서 `#pragma warning(push)` 상태 변경이 `#pragma warning(pop)` 상태 변경과 쌍을 이루는 것(의도되는 경우가 드묾)을 검색하지 못했습니다. 이 이전 동작으로 프로그램이 프로그래머가 의도한 것과 다르게 설정된 경고 집합으로 컴파일되어 잘못된 자동 런타임 동작이 발생하는 위험이 초래됩니다. 이제 컴파일러는 이러한 방식으로 작성된 코드를 검색하여 프로그래머에게 알립니다. 그리고 사용하도록 설정된 경우 일치하는 `#pragma warning(pop)`의 위치에서 선택적으로 컴파일러 경고 C5031이 발생합니다. 이 경고에는 해당 #pragma warning(push)의 위치를 참조하는 참고가 포함되어 있습니다.
 
@@ -2756,7 +2756,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
         }
     ```
 
-- C++ 표준은 클래스에서 명시적 특수화를 허용하지 않습니다. Microsoft Visual C++ 컴파일러는 어떤 경우에는 명시적 특수화를 허용하지만, 다음 예제와 같은 경우에는 컴파일러가 두 번째 함수를 첫 번째 함수의 특수화로 간주하지 않기 때문에 이제 오류가 생성됩니다.
+- C++ 표준은 클래스에서 명시적 특수화를 허용하지 않습니다. Microsoft C++ 컴파일러는 어떤 경우에는 명시적 특수화를 허용하지만, 다음 예제와 같은 경우에는 컴파일러가 두 번째 함수를 첫 번째 함수의 특수화로 간주하지 않기 때문에 이제 오류가 생성됩니다.
 
     ```cpp
     template < int N>
@@ -2994,7 +2994,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - ATL DLL과 함께 ATL/MFC 추적 도구가 제거되고 추적 메커니즘이 간소화되었습니다. `CTraceCategory` 생성자는 이제 하나의 매개 변수(범주 이름)를 사용하며, TRACE매크로는 CRT 디버그 보고 함수를 호출합니다.
 
-## <a name="visual-c-2012-breaking-changes"></a>Visual C++ 2012의 주요 변경 내용
+## <a name="visual-studio-2012-breaking-changes"></a>Visual Studio 2012 호환성이 손상되는 변경
 
 ### <a name="compiler"></a>컴파일러
 
@@ -3042,19 +3042,19 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - C++98/03 및 C++11 표준 간의 주요 변경 내용에 따라 명시적 템플릿 인수를 사용하여 `make_pair()`를 호출하는 경우(예: `make_pair<int, int>(x, y)`) 일반적으로 Visual Studio 2012의 Visual C++에서 컴파일되지 않습니다. 해결 방법은 `make_pair(x, y)`와 같이 항상 명시적 템플릿 인수 없이 `make_pair() `를 호출하는 것입니다. 명시적 템플릿 인수를 제공하면 이 함수의 목적에서 벗어납니다. 결과 형식을 정밀하게 제어해야 하는 경우 `pair<short, short>(int1, int2)`와 같이 `make_pair` 대신 `pair`를 사용합니다.
 
-- C++98/03 및 C++11 표준 간의 또 다른 주요 변경 내용: A를 B로 암시적으로 변환할 수 있고 B를 C로 암시적으로 변환할 수 있지만, A를 C로 암시적으로 변환할 수 없는 경우 C++98/03 및 Visual C++ 2010에서는 암시적 또는 명시적으로 `pair<A, X>`를 `pair<C, X>`로 변환할 수 있었습니다. 다른 형식 X는 여기서 중요하지 않으며, 쌍의 첫 번째 형식과 관련이 없습니다. Visual Studio 2012의 C++ 컴파일러에서 A를 C로 암시적으로 변환할 수 없음을 검색하고, 오버로드 확인에서 쌍 변환을 제거합니다. 이 변경은 다양한 시나리오에서 유용합니다. 예를 들어 `func(const pair<int, int>&)` 및 `func(const pair<string, string>&)`을 오버로드하고 `pair<const char *, const char *>`에서 `func()`을 호출하면 이 변경 내용으로 컴파일합니다. 그러나 이 변경으로 인해 적극적인 쌍 변환을 사용한 코드가 손상됩니다. 일반적으로 이러한 코드는 `pair<C, X>`가 필요한 함수에 `make_pair(static_cast<B>(a), x)` 전달 등의 방법으로 변환의 일부를 명시적으로 수행하여 수정할 수 있습니다.
+- C++98/03 및 C++11 표준 간의 또 다른 주요 변경 내용: A를 B로 암시적으로 변환할 수 있고 B를 C로 암시적으로 변환할 수 있지만, A를 C로 암시적으로 변환할 수 없는 경우 C++98/03 및 Visual Studio 2010에서는 암시적 또는 명시적으로 `pair<A, X>`를 `pair<C, X>`로 변환할 수 있었습니다. 다른 형식 X는 여기서 중요하지 않으며, 쌍의 첫 번째 형식과 관련이 없습니다. Visual Studio 2012의 C++ 컴파일러에서 A를 C로 암시적으로 변환할 수 없음을 검색하고, 오버로드 확인에서 쌍 변환을 제거합니다. 이 변경은 다양한 시나리오에서 유용합니다. 예를 들어 `func(const pair<int, int>&)` 및 `func(const pair<string, string>&)`을 오버로드하고 `pair<const char *, const char *>`에서 `func()`을 호출하면 이 변경 내용으로 컴파일합니다. 그러나 이 변경으로 인해 적극적인 쌍 변환을 사용한 코드가 손상됩니다. 일반적으로 이러한 코드는 `pair<C, X>`가 필요한 함수에 `make_pair(static_cast<B>(a), x)` 전달 등의 방법으로 변환의 일부를 명시적으로 수행하여 수정할 수 있습니다.
 
-- Visual C++ 2010에서는 전처리기 기계로 오버로드와 특수화를 제거하여 variadic 템플릿(예: `make_shared<T>(arg1, arg2, argN)`)을 10개 인수 제한까지 시뮬레이트했습니다. Visual Studio 2012에서 이 제한은 5개 인수로 축소되어 대부분의 사용자에 대한 컴파일 시간과 컴파일러 메모리 소비를 개선합니다. 그러나 프로젝트 수준에서 _VARIADIC_MAX를 10으로 명시적으로 정의하여 이전 제한을 설정할 수 있습니다.
+- Visual Studio 2010에서는 전처리기 머신으로 오버로드와 특수화를 제거하여 variadic 템플릿(예: `make_shared<T>(arg1, arg2, argN)`)을 10개 인수 제한까지 시뮬레이트했습니다. Visual Studio 2012에서 이 제한은 5개 인수로 축소되어 대부분의 사용자에 대한 컴파일 시간과 컴파일러 메모리 소비를 개선합니다. 그러나 프로젝트 수준에서 _VARIADIC_MAX를 10으로 명시적으로 정의하여 이전 제한을 설정할 수 있습니다.
 
 - C++11 17.6.4.3.1 [macro.names]/2에서는 C++ 표준 라이브러리 헤더가 포함된 경우 키워드를 매크로로 대체하는 것을 금지합니다. 이제 헤더가 매크로로 대체된 키워드를 검색하면 컴파일러 오류를 내보냅니다. _ALLOW_KEYWORD_MACROS를 정의하면 이러한 코드를 컴파일할 수 있지만 사용하지 않는 것이 좋습니다. 헤더가 `#pragma push_macro("new")`/`#undef new`/`#pragma pop_macro("new")`를 사용하여 포괄적으로 스스로를 보호하기 때문에 예외적으로 `new` 형식의 매크로는 기본적으로 대체됩니다. _ENFORCE_BAN_OF_MACRO_NEW 정의는 이름이 암시하는 작업을 정확히 수행합니다.
 
-- 다양한 최적화 및 디버깅 검사를 구현하기 위해 C++ 표준 라이브러리는 Visual Studio 버전(2005, 2008, 2010, 2012) 간에 이진 호환성을 의도적으로 중단합니다. C++ 표준 라이브러리가 사용되는 경우 서로 다른 버전을 사용하여 컴파일된 개체 파일 및 정적 라이브러리를 하나의 이진 파일(EXE 또는 DLL)에 혼합할 수 없고, 서로 다른 버전을 사용하여 컴파일된 이진 파일 간에 C++ 표준 라이브러리 개체를 전달할 수 없습니다. 개체 파일과 고정 라이브러리를 혼합(Visual C++ 2010으로 컴파일된 C++ 표준 라이브러리와 Visual Studio 2012의 C++ 컴파일러로 컴파일된 C++ 표준 라이브러리를 함께 사용)하면 _MSC_VER 불일치에 대한 링커 오류가 내보내집니다. 여기서 _MSC_VER은 컴파일러의 주 버전(Visual Studio 2012의 Visual C++의 경우 1700)을 포함하는 매크로입니다. 이 검사에서는 DLL 혼합을 비롯하여 Visual C++ 2008 이전 버전과 관련된 혼합을 검색할 수 없습니다.
+- 다양한 최적화 및 디버깅 검사를 구현하기 위해 C++ 표준 라이브러리는 Visual Studio 버전(2005, 2008, 2010, 2012) 간에 이진 호환성을 의도적으로 중단합니다. C++ 표준 라이브러리가 사용되는 경우 서로 다른 버전을 사용하여 컴파일된 개체 파일 및 정적 라이브러리를 하나의 이진 파일(EXE 또는 DLL)에 혼합할 수 없고, 서로 다른 버전을 사용하여 컴파일된 이진 파일 간에 C++ 표준 라이브러리 개체를 전달할 수 없습니다. 개체 파일과 고정 라이브러리를 혼합(Visual Studio 2010으로 컴파일된 C++ 표준 라이브러리와 Visual Studio 2012의 C++ 컴파일러로 컴파일된 C++ 표준 라이브러리를 함께 사용)하면 _MSC_VER 불일치에 대한 링커 오류가 내보내집니다. 여기서 _MSC_VER은 컴파일러의 주 버전(Visual Studio 2012의 Visual C++의 경우 1700)을 포함하는 매크로입니다. 이 검사에서는 DLL 혼합을 비롯하여 Visual Studio 2008 이전 버전과 관련된 혼합을 검색할 수 없습니다.
 
-- Visual Studio 2012의 C++ 컴파일러는 Visual C++ 2010에서 구현된 _ITERATOR_DEBUG_LEVEL 불일치 검색 외에도 런타임 라이브러리 불일치를 검색합니다. 컴파일러 옵션 `/MT`(정적 릴리스), `/MTd`(정적 디버그), `/MD`(동적 릴리스) 및 `/MDd`(동적 디버그)가 혼합되면 이러한 불일치가 발생합니다.
+- Visual Studio 2012의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _ITERATOR_DEBUG_LEVEL 불일치 검색 외에도 런타임 라이브러리 불일치를 검색합니다. 컴파일러 옵션 `/MT`(정적 릴리스), `/MTd`(정적 디버그), `/MD`(동적 릴리스) 및 `/MDd`(동적 디버그)가 혼합되면 이러한 불일치가 발생합니다.
 
 - `operator<()`, `operator>()`, `operator<=()` 및 `operator>=()`는 이전에 컨테이너의 `std::unordered_map` 및 `stdext::hash_map` 계열에 사용할 수 있었지만 해당 구현이 실제로 유용하지는 않았습니다. Visual Studio 2012의 Visual C++에서는 이러한 비표준 연산자가 제거되었습니다. 또한 `std::unordered_map` 계열에 대한 `operator==()` 및 `operator!=()`의 구현은 `stdext::hash_map` 계열을 포함하도록 확장되었습니다. 새 코드에서는 `stdext::hash_map` 계열을 사용하지 않는 것이 좋습니다.
 
-- C++11 22.4.1.4 [locale.codecvt]는 `codecvt::length()` 및 `codecvt::do_length()`가 수정 가능한 `stateT&` 매개 변수를 사용해야 한다고 지정하지만 Visual C++ 2010는 `const stateT&`를 사용했습니다. Visual Studio 2012의 C++ 컴파일러에서는 표준에 따라 `stateT&`를 사용합니다. 이러한 차이는 가상 함수 `do_length()`를 재정의하려는 사용자에게 중요합니다.
+- C++11 22.4.1.4 [locale.codecvt]는 `codecvt::length()` 및 `codecvt::do_length()`가 수정 가능한 `stateT&` 매개 변수를 사용해야 한다고 지정하지만 Visual Studio 2010는 `const stateT&`를 사용했습니다. Visual Studio 2012의 C++ 컴파일러에서는 표준에 따라 `stateT&`를 사용합니다. 이러한 차이는 가상 함수 `do_length()`를 재정의하려는 사용자에게 중요합니다.
 
 ### <a name="crt"></a>CRT
 
@@ -3228,7 +3228,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - `CPane::GetDockSiteRow(CDockingPanesRow *)`의 이름이 `CPane::SetDockSiteRow`로 바뀌었습니다.
 
-## <a name="visual-c-2010-breaking-changes"></a>Visual C++ 2010의 주요 변경 내용
+## <a name="visual-studio-2010-breaking-changes"></a>Visual Studio 2010 호환성이 손상되는 변경
 
 ### <a name="compiler"></a>컴파일러
 
@@ -3244,23 +3244,23 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - `/GL`(전체 프로그램 최적화) 및 `/clr`(공용 언어 런타임 컴파일) 컴파일러 옵션을 둘 다 사용하여 컴파일하는 경우 `/GL`은 무시됩니다. 이 변경은 컴파일러 옵션 조합 시 혜택이 거의 없기 때문입니다. 이 변경의 결과로 빌드 성능이 향상됩니다.
 
-- 기본적으로 Visual C++ 2010에서는 삼중자 지원이 사용되지 않습니다. 삼중자 지원을 사용하려면 `/Zc:trigraphs` 컴파일러 옵션을 사용합니다. 삼중자는 두 개의 연속 물음표("??")와 고유한 세 번째 문자로 구성됩니다. 컴파일러는 삼중자를 해당 문장 부호 문자로 바꿉니다. 예를 들어 컴파일러는 `??=` 삼중자를 '#' 문자로 바꿉니다. 삼중자는 특정 문장 부호 문자에 대한 편리한 그래픽 표현을 포함하지 않는 문자 집합이 사용되는 C 소스 파일에서 사용합니다.
+- 기본적으로 Visual Studio 2010에서는 삼중자 지원이 사용되지 않습니다. 삼중자 지원을 사용하려면 `/Zc:trigraphs` 컴파일러 옵션을 사용합니다. 삼중자는 두 개의 연속 물음표("??")와 고유한 세 번째 문자로 구성됩니다. 컴파일러는 삼중자를 해당 문장 부호 문자로 바꿉니다. 예를 들어 컴파일러는 `??=` 삼중자를 '#' 문자로 바꿉니다. 삼중자는 특정 문장 부호 문자에 대한 편리한 그래픽 표현을 포함하지 않는 문자 집합이 사용되는 C 소스 파일에서 사용합니다.
 
 - 링커가 Windows 98용 최적화를 더 이상 지원하지 않습니다. `/OPT:WIN98` 또는 `/OPT:NOWIN98`을 지정하는 경우 `/OPT`(최적화) 옵션에서 컴파일 시간 오류가 생성됩니다.
 
 - RuntimeLibrary 및 DebugInformationFormat 빌드 시스템 속성으로 지정되는 기본 컴파일러 옵션이 변경되었습니다. 기본적으로 이러한 빌드 속성은 Visual C++ 릴리스 7.0 ~ 10.0에서 생성된 프로젝트에 지정됩니다. Visual C++ 6.0에서 생성된 프로젝트를 마이그레이션하는 경우 이러한 속성 값을 지정할지 여부를 고려합니다.
 
-- Visual C++ 2010에서는 RuntimeLibrary = MultiThreaded(`/MD`) 및 DebugInformationFormat = ProgramDatabase(`/Zi`)입니다. Visual C++ 9.0에서는 RuntimeLibrary = MultiThreaded(`/MT`) 및 DebugInformationFormat = Disabled입니다.
+- Visual Studio 2010에서는 RuntimeLibrary = MultiThreaded(`/MD`) 및 DebugInformationFormat = ProgramDatabase(`/Zi`)입니다. Visual C++ 9.0에서는 RuntimeLibrary = MultiThreaded(`/MT`) 및 DebugInformationFormat = Disabled입니다.
 
 ### <a name="clr"></a>CLR
 
 - Microsoft C# 및 Visual Basic 컴파일러에서 이제 no-PIA(no 주 interop 어셈블리)를 생성할 수 있습니다. no-PIA 어셈블리는 관련 PIA(주 interop 어셈블리)를 배포하지 않고 COM 형식을 사용할 수 있습니다. Visual C# 또는 Visual Basic에서 생성된 no-PIA 어셈블리를 사용하는 경우 라이브러리를 사용하는 no-PIA 어셈블리를 참조하기 전에 컴파일 명령에서 PIA 어셈블리를 참조해야 합니다.
 
-### <a name="visual-c-projects-and-msbuild"></a>Visual C++ 프로젝트 및 MSBuild
+### <a name="visual-studio-c-projects-and-msbuild"></a>Visual Studio C++ 프로젝트 및 MSBuild
 
-- 이제 Visual C++ 프로젝트가 MSBuild 도구를 기반으로 합니다. 따라서 프로젝트 파일이 새로운 XML 파일 형식과 .vcxproj 파일 접미사를 사용합니다. Visual C++ 2010에서는 이전 Visual Studio 버전의 프로젝트 파일을 새 파일 형식으로 자동 변환합니다. 이전 빌드 도구인 VCBUILD.exe 또는 프로젝트 파일 접미사 .vcproj를 사용하는 기존 프로젝트에 영향을 줍니다.
+- 이제 Visual Studio C++ 프로젝트가 MSBuild 도구를 기반으로 합니다. 따라서 프로젝트 파일이 새로운 XML 파일 형식과 .vcxproj 파일 접미사를 사용합니다. Visual Studio 2010에서는 이전 Visual Studio 버전의 프로젝트 파일을 새 파일 형식으로 자동 변환합니다. 이전 빌드 도구인 VCBUILD.exe 또는 프로젝트 파일 접미사 .vcproj를 사용하는 기존 프로젝트에 영향을 줍니다.
 
-- 이전 릴리스에서는 Visual C++가 속성 시트의 런타임 평가를 지원했습니다. 예를 들어 부모 속성 시트가 자식 속성 시트를 가져올 수 있고, 부모가 자식에 정의된 변수를 사용하여 다른 변수를 정의할 수 있었습니다. 런타임 평가를 통해 부모가 자식 속성 시트를 가져오기 전에도 자식 변수를 사용할 수 있었습니다. Visual C++ 2010에서는 MSBuild가 초기 평가만 지원하기 때문에 프로젝트 시트 변수가 정의되기 전에는 사용할 수 없습니다.
+- 이전 릴리스에서는 Visual C++가 속성 시트의 런타임 평가를 지원했습니다. 예를 들어 부모 속성 시트가 자식 속성 시트를 가져올 수 있고, 부모가 자식에 정의된 변수를 사용하여 다른 변수를 정의할 수 있었습니다. 런타임 평가를 통해 부모가 자식 속성 시트를 가져오기 전에도 자식 변수를 사용할 수 있었습니다. Visual Studio 2010에서는 MSBuild가 초기 평가만 지원하기 때문에 프로젝트 시트 변수가 정의되기 전에는 사용할 수 없습니다.
 
 ### <a name="ide"></a>IDE
 
@@ -3274,7 +3274,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - 라이브러리 배포 모델은 더 이상 매니페스트를 사용하여 특정 버전의 동적 연결 라이브러리를 찾지 않습니다. 대신, 각 동적 연결 라이브러리의 이름에 해당 버전 번호가 포함되므로 이름을 사용하여 라이브러리를 찾습니다.
 
-- 이전 버전의 Visual Studio에서는 런타임 라이브러리를 다시 빌드할 수 있었습니다. Visual C++ 2010에서는 더 이상 C 런타임 라이브러리 파일의 고유 복사본을 작성할 수 없습니다.
+- 이전 버전의 Visual Studio에서는 런타임 라이브러리를 다시 빌드할 수 있었습니다. Visual Studio 2010에서는 더 이상 C 런타임 라이브러리 파일의 고유 복사본을 작성할 수 없습니다.
 
 ### <a name="standard-library"></a>표준 라이브러리
 
@@ -3306,7 +3306,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - Microsoft 매크로 어셈블러 참조 컴파일러에서 여러 지시문이 제거되었습니다. 제거된 지시문은 `.186`, `.286`, `.286P`, `.287`, `.8086`, `.8087` 및 `.NO87`입니다.
 
-## <a name="visual-c-2008-breaking-changes"></a>Visual C++ 2008의 주요 변경 내용
+## <a name="visual-studio-2008-breaking-changes"></a>Visual Studio 2008 호환성이 손상되는 변경
 
 ### <a name="compiler"></a>컴파일러
 
@@ -3330,7 +3330,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
    - tag_name
 
-### <a name="visual-c-projects"></a>Visual C++ 프로젝트
+### <a name="visual-studio-c-projects"></a>Visual Studio C++ 프로젝트
 
 - 이전 버전의 Visual Studio에서 프로젝트를 업그레이드하는 경우 WINVER 및 _WIN32_WINNT 매크로를 0x0500보다 크거나 같도록 수정해야 할 수도 있습니다.
 
@@ -3386,7 +3386,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 ### <a name="atl"></a>ATL
 
-- CRT에 대한 종속성 없이 ATL을 빌드할 수 없습니다. 이전 버전의 Visual Studio에서는 #define ATL_MIN_CRT를 사용하여 ATL 프로젝트의 CRT 종속성을 최소화할 수 있었습니다. Visual C++ 2008에서는 ATL_MIN_CRT 정의 여부에 관계없이 모든 ATL 프로젝트의 CRT 종속성이 최소화됩니다.
+- CRT에 대한 종속성 없이 ATL을 빌드할 수 없습니다. 이전 버전의 Visual Studio에서는 #define ATL_MIN_CRT를 사용하여 ATL 프로젝트의 CRT 종속성을 최소화할 수 있었습니다. Visual Studio 2008에서는 ATL_MIN_CRT 정의 여부에 관계없이 모든 ATL 프로젝트의 CRT 종속성이 최소화됩니다.
 
 - ATL 서버 코드베이스가 CodePlex에 공유 소스 프로젝트로 릴리스되었으며 Visual Studio의 일부로 설치되지 않습니다. atlenc.h의 데이터 인코딩 및 디코딩 클래스와 atlutil.h 및 atlpath.h의 유틸리티 함수 및 클래스는 유지되고 ATL 라이브러리에 포함되었습니다. ATL 서버와 관련된 여러 파일이 더 이상 Visual Studio의 일부로 제공되지 않습니다.
 
@@ -3396,7 +3396,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 ### <a name="atlmfc-shared-classes"></a>ATL/MFC 공유 클래스
 
-- CRT에 대한 종속성 없이 ATL을 빌드할 수 없습니다. 이전 버전의 Visual Studio에서는 `#define ATL_MIN_CRT`를 사용하여 ATL 프로젝트의 CRT 종속성을 최소화할 수 있었습니다. Visual C++ 2008에서는 ATL_MIN_CRT 정의 여부에 관계없이 모든 ATL 프로젝트의 CRT 종속성이 최소화됩니다.
+- CRT에 대한 종속성 없이 ATL을 빌드할 수 없습니다. 이전 버전의 Visual Studio에서는 `#define ATL_MIN_CRT`를 사용하여 ATL 프로젝트의 CRT 종속성을 최소화할 수 있었습니다. Visual Studio 2008에서는 ATL_MIN_CRT 정의 여부에 관계없이 모든 ATL 프로젝트의 CRT 종속성이 최소화됩니다.
 
 - ATL 서버 코드베이스가 CodePlex에 공유 소스 프로젝트로 릴리스되었으며 Visual Studio의 일부로 설치되지 않습니다. atlenc.h의 데이터 인코딩 및 디코딩 클래스와 atlutil.h 및 atlpath.h의 유틸리티 함수 및 클래스는 유지되고 ATL 라이브러리에 포함되었습니다. ATL 서버와 관련된 여러 파일이 더 이상 Visual Studio의 일부로 제공되지 않습니다.
 
@@ -3420,7 +3420,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - 사용되지 않는 ANSI API: 여러 MFC 메서드의 ANSI 버전이 사용되지 않습니다. 이후 애플리케이션에서는 해당 메서드의 유니코드 버전을 사용합니다. 자세한 내용은 **Windows Vista 공용 컨트롤의 빌드 요구 사항**을 참조하세요.
 
-## <a name="visual-c-2005-breaking-changes"></a>Visual C++ 2005의 주요 변경 내용
+## <a name="visual-studio-2005-breaking-changes"></a>Visual Studio 2005 호환성이 손상되는 변경
 
 ### <a name="crt"></a>CRT
 

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CMonikerFile [MFC], Open
 - CMonikerFile [MFC], CreateBindContext
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
-ms.openlocfilehash: ecffdb3a6f44f60004cf4f039bdab9c98e212ce1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7fb0ad3eef781be1b5ca358e825c09a88c0109e3
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338040"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503817"
 ---
 # <a name="cmonikerfile-class"></a>CMonikerFile 클래스
 
@@ -117,7 +117,7 @@ IBindCtx* CreateBindContext(CFileException* pError);
 
 ### <a name="return-value"></a>반환 값
 
-바인드 컨텍스트에 대 한 포인터로 [IBindCtx](/windows/desktop/api/objidl/nn-objidl-ibindctx) 바인딩할 성공 하면 NULL입니다. 인스턴스를 사용 하 여 열린 경우는 `IBindHost` 인터페이스를 바인드 컨텍스트에에서 검색 되는 `IBindHost`합니다. 없는 경우 없는 `IBindHost` 인터페이스 또는 인터페이스 반환 되지 않으면 바인딩 컨텍스트, 바인딩 컨텍스트가 만들어집니다. 에 대 한 설명은 합니다 [IBindHost](https://msdn.microsoft.com/library/ie/ms775076) 인터페이스, Windows SDK를 참조 하세요.
+바인드 컨텍스트에 대 한 포인터로 [IBindCtx](/windows/desktop/api/objidl/nn-objidl-ibindctx) 바인딩할 성공 하면 NULL입니다. 인스턴스를 사용 하 여 열린 경우는 `IBindHost` 인터페이스를 바인드 컨텍스트에에서 검색 되는 `IBindHost`합니다. 없는 경우 없는 `IBindHost` 인터페이스 또는 인터페이스 반환 되지 않으면 바인딩 컨텍스트, 바인딩 컨텍스트가 만들어집니다. 에 대 한 설명은 합니다 [IBindHost](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775076\(v=vs.85\)) 인터페이스, Windows SDK를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 

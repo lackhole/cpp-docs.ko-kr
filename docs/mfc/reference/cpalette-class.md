@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CPalette [MFC], ResizePalette
 - CPalette [MFC], SetPaletteEntries
 ms.assetid: 8cd95498-53ed-4852-85e1-70e522541114
-ms.openlocfilehash: f0105a8ee33a57f7431a9c6a97b4b132f291f42a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1dc29a675f6ab3883683b3afae7e22e7ed0f1cc3
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373182"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504752"
 ---
 # <a name="cpalette-class"></a>CPalette 클래스
 
@@ -111,7 +111,7 @@ void AnimatePalette(
 애니메이션을 적용할 수 있도록 색상표에 항목 수를 지정 합니다.
 
 *lpPaletteColors*<br/>
-배열의 첫 번째 멤버를 가리킵니다 [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) 구조에서 식별 된 색상표 항목을 바꾸려면 *nStartIndex* 하 고 *nNumEntries*합니다.
+배열의 첫 번째 멤버를 가리킵니다 [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) 구조에서 식별 된 색상표 항목을 바꾸려면 *nStartIndex* 하 고 *nNumEntries*합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -245,7 +245,7 @@ UINT GetPaletteEntries(
 검색할 논리 색상표의 항목 수를 지정 합니다.
 
 *lpPaletteColors*<br/>
-배열을 가리킵니다 [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) 색상표 항목을 수신 하도록 데이터 구조입니다. 배열에 지정 된 대로 이상의 데이터 구조에 포함 되어야 *nNumEntries*합니다.
+배열을 가리킵니다 [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) 색상표 항목을 수신 하도록 데이터 구조입니다. 배열에 지정 된 대로 이상의 데이터 구조에 포함 되어야 *nNumEntries*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -312,7 +312,7 @@ UINT SetPaletteEntries(
 설정할 논리 색상표의 항목 수를 지정 합니다.
 
 *lpPaletteColors*<br/>
-배열을 가리킵니다 [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) 색상표 항목을 수신 하도록 데이터 구조입니다. 배열에 지정 된 대로 이상의 데이터 구조에 포함 되어야 *nNumEntries*합니다.
+배열을 가리킵니다 [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) 색상표 항목을 수신 하도록 데이터 구조입니다. 배열에 지정 된 대로 이상의 데이터 구조에 포함 되어야 *nNumEntries*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -322,7 +322,7 @@ UINT SetPaletteEntries(
 
 응용 프로그램을 호출할 때 논리 팔레트를 장치 컨텍스트로 선택 됩니다 `SetPaletteEntries`, 응용 프로그램이 호출 될 때까지 변경 내용이 적용 되지 것입니다 [CDC::RealizePalette](../../mfc/reference/cdc-class.md#realizepalette)합니다.
 
-Windows 구조에 대 한 자세한 내용은 `PALETTEENTRY`를 참조 하세요 [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) Windows SDK에 있습니다.
+자세한 내용은 [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) Windows SDK에 있습니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - IObjectSafety, ATL implementation
 - IObjectSafetyImpl class
 ms.assetid: 64e32082-d910-4a8a-a5bf-ebed9145359d
-ms.openlocfilehash: e75c52b016fff5bf04fefc86d4289021efc4db8e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 17a1b362f2cfe40be99c10298a780a6bf4f6419f
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62277026"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503133"
 ---
 # <a name="iobjectsafetyimpl-class"></a>IObjectSafetyImpl 클래스
 
@@ -97,7 +97,7 @@ HRESULT GetInterfaceSafetyOptions(
 > [!IMPORTANT]
 >  지 원하는 개체 `IObjectSafety` 자체 보안 및 위임 하는 모든 개체에 대 한 일을 담당 합니다. 프로그래머가는 사용자의 컨텍스트에서 코드 실행으로 인해 발생 하는 계정에, 사이트 간 스크립팅 하 고 적합 한 영역 확인을 수행 합니다.
 
-참조 [IObjectSafety::GetInterfaceSafetyOptions](https://msdn.microsoft.com/library/aa768223.aspx) Windows SDK에에서 있습니다.
+참조 [IObjectSafety::GetInterfaceSafetyOptions](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768223\(v=vs.85\)) Windows SDK에에서 있습니다.
 
 ##  <a name="m_dwcurrentsafety"></a>  IObjectSafetyImpl::m_dwCurrentSafety
 
@@ -125,9 +125,9 @@ HRESULT SetInterfaceSafetyOptions(
 > [!IMPORTANT]
 >  지 원하는 개체 `IObjectSafety` 자체 보안 및 위임 하는 모든 개체에 대 한 일을 담당 합니다. 프로그래머가는 사용자의 컨텍스트에서 코드 실행으로 인해 발생 하는 계정에, 사이트 간 스크립팅 하 고 적합 한 영역 확인을 수행 합니다.
 
-참조 [IObjectSafety::SetInterfaceSafetyOptions](https://msdn.microsoft.com/library/aa768225.aspx) Windows SDK에에서 있습니다.
+참조 [IObjectSafety::SetInterfaceSafetyOptions](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768225\(v=vs.85\)) Windows SDK에에서 있습니다.
 
 ## <a name="see-also"></a>참고자료
 
-[IObjectSafety 인터페이스](https://msdn.microsoft.com/library/aa768224.aspx)<br/>
+[IObjectSafety 인터페이스](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768224\(v=vs.85\))<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -4,12 +4,12 @@ ms.date: 06/21/2018
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 21931fc4976c909c77120e696f25f93c0a0fda0b
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: da703d6649cb430b572d4d0db44adcfdef8ed8c4
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446779"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451167"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ 도구 집합 또는 설명서의 문제를 보고하는 방법
 
@@ -112,7 +112,7 @@ cl : Command line error D8003 : missing source filename
 
 - 관련된 경우 **다른 컴파일러에서 확인**하세요. 포팅 가능한 C++ 코드를 포함하는 재현은 가능한 경우 다른 컴파일러에서 동작을 확인해야 합니다. Standard는 궁극적으로 프로그램 정확성을 결정하며 어떤 컴파일러도 완벽하지는 않습니다. 그러나 Clang 및 GCC는 진단 없이 코드를 수락하고 MSVC는 수락하지 않으면 컴파일러에 버그가 있을 가능성이 높습니다. (그 외의 가능성으로 Unix와 Windows의 동작이 서로 다르거나 C++ 표준 구현의 수준이 다를 수 있습니다.) 반면, 모든 컴파일러에서 코드를 거부하는 경우 코드가 잘못되었을 가능성이 높습니다. 여러 오류 메시지를 보면 직접 문제를 진단하는 데 도움이 될 수 있습니다.
 
-   ISO C++ 웹 사이트의 [온라인 C++ 컴파일러](https://isocpp.org/blog/2013/01/online-c-compilers)에서 또는 GitHub의 엄선된 [온라인 C++ 컴파일러 목록](https://arnemertz.github.io/online-compilers/)에서 코드를 테스트할 온라인 컴파일러 목록을 찾을 수 있습니다. 몇 가지 구체적인 예제로 [Wandbox](https://wandbox.org/), [컴파일러 탐색기](https://godbolt.org/) 및 [Coliru](http://coliru.stacked-crooked.com/)가 포함됩니다.
+   ISO C++ 웹 사이트의 [온라인 C++ 컴파일러](https://isocpp.org/blog/2013/01/online-c-compilers)에서 또는 GitHub의 엄선된 [온라인 C++ 컴파일러 목록](https://arnemertz.github.io/online-compilers/)에서 코드를 테스트할 온라인 컴파일러 목록을 찾을 수 있습니다. 몇 가지 구체적인 예제로 [Wandbox](https://wandbox.org/), [컴파일러 탐색기](https://godbolt.org/) 및 [Coliru](https://coliru.stacked-crooked.com/)가 포함됩니다.
 
    > [!NOTE]
    > 온라인 컴파일러 웹 사이트는 Microsoft와 관련이 없습니다. 많은 온라인 컴파일러 웹 사이트가 개인 프로젝트로 실행되며 이러한 사이트 중에는 현재 사용할 수 없는 곳도 있을 것입니다. 하지만 검색을 통해 사용 가능한 다른 사이트를 찾을 수 있습니다.

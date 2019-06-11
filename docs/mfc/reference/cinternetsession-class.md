@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CInternetSession [MFC], SetCookie
 - CInternetSession [MFC], SetOption
 ms.assetid: ef54feb4-9d0f-4e65-a45d-7a4cf6c40e51
-ms.openlocfilehash: 5ad1a1a0dde32358828d58a8f237337c4f62f3e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3d6d319a963fbc24e89bf8c4c0858cd80ec5a9d
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345593"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503453"
 ---
 # <a name="cinternetsession-class"></a>CInternetSession 클래스
 
@@ -156,7 +156,7 @@ CInternetSession(
 
 - 로컬 또는 게이트웨이 서버에서 데이터를 캐시 하지 INTERNET_FLAG_DONT_CACHE 않습니다.
 
-- 작업 INTERNET_FLAG_OFFLINE 다운로드만 영구 캐시를 통해 충족 됩니다. 항목이 캐시에 없는 경우 적절 한 오류 코드가 반환 됩니다. 이 플래그는 비트를 사용 하 여 결합할 수 있습니다 **나** ( **&#124;**) 연산자.
+- 작업 INTERNET_FLAG_OFFLINE 다운로드만 영구 캐시를 통해 충족 됩니다. 항목이 캐시에 없는 경우 적절 한 오류 코드가 반환 됩니다. 이 플래그는 비트를 사용 하 여 결합할 수 있습니다 **나** ( **&#124;** ) 연산자.
 
 ### <a name="remarks"></a>설명
 
@@ -258,7 +258,7 @@ URL이 포함 된 문자열에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-그렇지 않은 경우 성공 하면 TRUE 또는 FALSE를 반환 합니다. 호출이 실패 하는 경우 Win32 함수 호출 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 합니다. 다음 오류 값에는 다음이 적용 됩니다.
+그렇지 않은 경우 성공 하면 TRUE 또는 FALSE를 반환 합니다. 호출이 실패 하는 경우 Win32 함수 호출 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 오류의 원인을 확인 합니다. 다음 오류 값에는 다음이 적용 됩니다.
 
 - 지정된 된 URL에 대 한 없습니다 쿠키 및 모든 해당 부모는 ERROR_NO_MORE_ITEMS 있습니다.
 
@@ -536,7 +536,7 @@ FTP, GOPHER, HTTP 및 파일 형식 인터넷 서비스에 대 한 파일 핸들
 
 ### <a name="remarks"></a>설명
 
-매개 변수 *dwFlags* INTERNET_FLAG_TRANSFER_ASCII 또는 INTERNET_FLAG_TRANSFER_BINARY, 하지만 둘 다 포함 해야 합니다. 나머지 플래그 비트를 사용 하 여 결합할 수 있습니다 **나** 연산자 ( **&#124;**).
+매개 변수 *dwFlags* INTERNET_FLAG_TRANSFER_ASCII 또는 INTERNET_FLAG_TRANSFER_BINARY, 하지만 둘 다 포함 해야 합니다. 나머지 플래그 비트를 사용 하 여 결합할 수 있습니다 **나** 연산자 ( **&#124;** ).
 
 `OpenURL`Win32 함수를 래핑하는 `InternetOpenURL`만 다운로드, 검색 및 인터넷 서버에서 데이터를 읽을 수 있습니다. `OpenURL` 원격 위치에 없는 파일 조작에서는 필요 하지 않습니다 하는 하므로 [CInternetConnection](../../mfc/reference/cinternetconnection-class.md) 개체입니다.
 
@@ -616,11 +616,11 @@ BOOL SetOption(
 
 - 로컬 또는 게이트웨이 서버에서 데이터를 캐시 하지 INTERNET_FLAG_DONT_CACHE 않습니다.
 
-- 작업 INTERNET_FLAG_OFFLINE 다운로드만 영구 캐시를 통해 충족 됩니다. 항목이 캐시에 없는 경우 적절 한 오류 코드가 반환 됩니다. 이 플래그는 비트를 사용 하 여 결합할 수 있습니다 **나** ( **&#124;**) 연산자.
+- 작업 INTERNET_FLAG_OFFLINE 다운로드만 영구 캐시를 통해 충족 됩니다. 항목이 캐시에 없는 경우 적절 한 오류 코드가 반환 됩니다. 이 플래그는 비트를 사용 하 여 결합할 수 있습니다 **나** ( **&#124;** ) 연산자.
 
 ### <a name="return-value"></a>반환 값
 
-작업에 성공 하면 TRUE 값이 반환 됩니다. 오류가 발생 하는 경우 FALSE 값이 반환 됩니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
+작업에 성공 하면 TRUE 값이 반환 됩니다. 오류가 발생 하는 경우 FALSE 값이 반환 됩니다. Win32 함수 호출이 실패 한 경우 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
 
 ## <a name="see-also"></a>참고자료
 

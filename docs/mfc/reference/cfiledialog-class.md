@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-ms.openlocfilehash: f74d883fa0dcdce025345848caf49069736ee0fa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe4994b91813e2965972b47c838ddaf5333cc5f0
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385367"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66503763"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog 클래스
 
@@ -512,7 +512,7 @@ void ApplyOFNToShellDialog();
 
 ### <a name="remarks"></a>설명
 
-Windows Vista을 멤버 이전 Windows 버전에서 [OPENFILENAME](https://msdn.microsoft.com/library/ms911906.aspx) 데이터 구조체의 상태를 사용 하 여 지속적으로 동기화 된는 `CFileDialog`합니다. 변경 된 [m_ofn](#m_ofn) 멤버 변수 대화 상자 상태의에 즉시 반영 되었습니다. 또한 대화 상자 상태의 변경 내용을 업데이트 즉시는 `m_ofn` 멤버 변수입니다.
+Windows Vista을 멤버 이전 Windows 버전에서 [OPENFILENAME](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) 데이터 구조체의 상태를 사용 하 여 지속적으로 동기화 된는 `CFileDialog`합니다. 변경 된 [m_ofn](#m_ofn) 멤버 변수 대화 상자 상태의에 즉시 반영 되었습니다. 또한 대화 상자 상태의 변경 내용을 업데이트 즉시는 `m_ofn` 멤버 변수입니다.
 
 Windows Vista 이상 버전에서는 값을 `m_ofn` 멤버 변수와의 상태를 `CFileDialog` 동기화 되도록 보장 되지 않습니다. 이 함수는 상태를 강제로 합니다 `CFileDialog` 일치 하도록 업데이트 되어야 합니다 `m_ofn` 구조입니다. Windows는 동안 자동으로이 함수를 호출 [CFileDialog::DoModal](#domodal)합니다.
 
@@ -1626,7 +1626,7 @@ void UpdateOFNFromShellDialog();
 
 ### <a name="remarks"></a>설명
 
-Windows Vista을 멤버 이전 Windows 버전에서 [OPENFILENAME](https://msdn.microsoft.com/library/ms911906.aspx) 데이터 구조체의 상태를 사용 하 여 지속적으로 동기화 된는 `CFileDialog`합니다. 변경 된 [m_ofn](#m_ofn) 멤버 변수 대화 상자의 상태에 직접적인 영향을 받습니다. 또한 대화 상자 상태의 변경 내용을 즉시 m_ofn 멤버 변수를 업데이트합니다.
+Windows Vista을 멤버 이전 Windows 버전에서 [OPENFILENAME](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) 데이터 구조체의 상태를 사용 하 여 지속적으로 동기화 된는 `CFileDialog`합니다. 변경 된 [m_ofn](#m_ofn) 멤버 변수 대화 상자의 상태에 직접적인 영향을 받습니다. 또한 대화 상자 상태의 변경 내용을 즉시 m_ofn 멤버 변수를 업데이트합니다.
 
 Windows Vista 이상 버전에서는 `m_ofn` 데이터 구조가 자동으로 업데이트 되지 않습니다. 에 있는 데이터의 정확성을 보장 하려면 합니다 `m_ofn` 를 호출 해야 멤버 변수를 `UpdateOFNFromShellDialog` 데이터에 액세스 하기 전에 함수입니다. Windows이 함수를 호출이 자동으로 처리 하는 동안 [IFileDialog::OnFileOK](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok)합니다.
 

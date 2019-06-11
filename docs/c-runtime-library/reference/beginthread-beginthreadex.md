@@ -29,12 +29,12 @@ helpviewer_keywords:
 - _beginthreadex function
 - beginthread function
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
-ms.openlocfilehash: d70d2fb0ecb647d4854a6277d6c69cd9886e072f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f64fd7b945fc8ea2e5c111d300266e07faade0e7
+ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349266"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66504535"
 ---
 # <a name="beginthread-beginthreadex"></a>_beginthread, _beginthreadex
 
@@ -83,7 +83,7 @@ uintptr_t _beginthreadex( // MANAGED CODE
 새 스레드에 전달할 인수 목록 또는 **NULL**합니다.
 
 *보안*<br/>
-반환된 핸들이 자식 프로세스에 의해 상속되는지 여부를 결정하는 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) 구조에 대한 포인터입니다. 하는 경우 *보안* 됩니다 **NULL**, 핸들을 상속할 수 없습니다. 여야 **NULL** Windows 95 응용 프로그램에 대 한 합니다.
+반환된 핸들이 자식 프로세스에 의해 상속되는지 여부를 결정하는 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) 구조에 대한 포인터입니다. 하는 경우 *보안* 됩니다 **NULL**, 핸들을 상속할 수 없습니다. 여야 **NULL** Windows 95 응용 프로그램에 대 한 합니다.
 
 *initflag*<br/>
 새 스레드의 초기 상태를 제어하는 플래그입니다. 설정 *initflag* 즉시 실행 하는 0 또는 **CREATE_SUSPENDED** 스레드를 만들지는 일시 중단 된 상태에서 사용 하 여 [ResumeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-resumethread) 스레드를 실행 하려면. 설정 *initflag* 하 **STACK_SIZE_PARAM_IS_A_RESERVATION** 플래그를 사용 하 여 *stack_size* 초기 예약 크기 (바이트)에서 스택의 경우이 플래그를 지정 하지 않으면 대로*stack_size* 커밋 크기를 지정 합니다.

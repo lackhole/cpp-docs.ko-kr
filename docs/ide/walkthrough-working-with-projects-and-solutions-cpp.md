@@ -1,18 +1,18 @@
 ---
 title: '연습: 프로젝트 및 솔루션 작업(C++)'
-ms.date: 09/14/2018
+ms.date: 05/14/2019
 helpviewer_keywords:
 - solutions [C++]
 - projects [C++], about projects
 - projects [C++]
 - solutions [C++], about solutions
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
-ms.openlocfilehash: 9408938b670d8130305f2e1c1258fc6fcb9875bb
-ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
+ms.openlocfilehash: 6dfee695092a69252069dbfc73b6260bd65245e2
+ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57820067"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "66182643"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>연습: 프로젝트 및 솔루션 작업(C++)
 
@@ -22,24 +22,43 @@ Visual Studio에서는 프로젝트와 솔루션으로 작업을 구성합니다
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-이 연습을 완료하려면 Visual Studio 2017 버전 15.3 이상이 필요합니다. 복사본이 필요한 경우 다음과 같은 간단한 가이드를 참조하세요. [Visual Studio에서 C++ 지원을 설치합니다](../build/vscpp-step-0-installation.md). 아직 설치하지 않았다면 "Hello, World" 자습서를 통해 설치한 후, 다음 단계를 수행하여 Visual C++가 올바르게 설치되었고 완전히 작동하는지 확인합니다.
+이 연습을 완료하려면 Visual Studio 2017 이상이 필요합니다. 복사본이 필요한 경우 다음과 같은 간단한 가이드를 참조하세요. [Visual Studio에서 C++ 지원을 설치합니다](../build/vscpp-step-0-installation.md). 아직 설치하지 않았다면 "Hello, World" 자습서를 통해 설치한 후, 다음 단계를 수행하여 C++ 구성 요소가 올바르게 설치되고 모두 작동하는지 확인합니다.
 
 C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디버거가 사용되는 용도를 파악하면 도움이 됩니다. 이 자습서에서는 Windows 및 메뉴, 대화 상자를 사용하는 방법에 익숙하다고 가정합니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-프로젝트를 만들려면 먼저 프로젝트 형식 템플릿을 선택합니다. 각 프로젝트 형식에 대해 Visual Studio에서는 컴파일러 설정을 지정하고 형식에 따라 시작 코드를 생성합니다. 이 시작 코드는 나중에 수정할 수 있습니다.
+프로젝트를 만들려면 먼저 프로젝트 형식 템플릿을 선택합니다. 각 프로젝트 형식에 대해 Visual Studio에서는 컴파일러 설정을 지정하고 형식에 따라 시작 코드를 생성합니다. 이 시작 코드는 나중에 수정할 수 있습니다. 다음 단계는 사용 중인 Visual Studio 버전에 따라 다릅니다. 이 페이지의 왼쪽 위에 있는 버전 선택기가 올바른 버전으로 설정되어 있는지 확인합니다.
 
-### <a name="to-create-a-project"></a>프로젝트를 만들려면
+::: moniker range="vs-2019"
+
+### <a name="to-create-a-project-in-visual-studio-2019"></a>Visual Studio 2019에서 프로젝트를 만들려면
+
+1. 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택하여 **새 프로젝트 만들기** 대화 상자를 엽니다.
+
+1. 대화 상자 맨 위에서 **언어**를 **C++** 로 설정하고 **플랫폼**을 **Windows**로 설정하고 **프로젝트 형식**을 **콘솔**로 설정합니다. 
+
+1. 필터링된 프로젝트 형식 목록에서 **콘솔 앱**을 선택한 후 **다음**을 선택합니다. 다음 페이지에서 *게임*을 프로젝트 이름으로 입력합니다.
+
+   **위치** 드롭다운 목록에서 기본 위치를 적용하거나 다른 위치를 입력하거나 **찾아보기** 단추를 선택하여 프로젝트를 저장할 디렉터리를 찾아볼 수 있습니다.
+
+   프로젝트를 만들면 Visual Studio에서 해당 프로젝트가 솔루션에 추가됩니다. 기본적으로 솔루션의 이름은 프로젝트 이름과 같습니다. **솔루션 이름** 상자에서 이름을 변경할 수 있지만 이 예제에서는 기본 이름을 유지합니다.
+
+1. **만들기** 단추를 선택하여 프로젝트를 만듭니다.
+
+   Visual Studio는 새 솔루션 및 프로젝트 파일을 만들고 생성된 Game.cpp 소스 코드 파일의 편집기를 엽니다.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="to-create-a-project-in-visual-studio-2017"></a>Visual Studio 2017에서 프로젝트를 만들려면
 
 1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
 1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **설치됨**을 확장하고, 아직 열려 있지 않은 경우 **Visual C++** 를 선택합니다.
 
 1. 가운데 창의 설치된 템플릿 목록에서 **Windows 콘솔 애플리케이션**을 선택합니다.
-
-   > [!NOTE]
-   > 이전 버전의 Visual Studio에서는 설치된 템플릿을 **Win32 콘솔 애플리케이션**이라고 합니다.
 
 1. **이름** 상자에 프로젝트의 이름을 입력합니다. 이 예에서는 *Game*을 입력합니다.
 
@@ -50,6 +69,30 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 1. **확인** 단추를 선택하여 프로젝트를 만듭니다.
 
    Visual Studio는 새 솔루션 및 프로젝트 파일을 만들고 생성된 Game.cpp 소스 코드 파일의 편집기를 엽니다.
+
+::: moniker-end
+
+::: moniker range="vs-2015"
+
+### <a name="to-create-a-project-in-visual-studio-2015"></a>Visual Studio 2015에서 프로젝트를 만들려면
+
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+
+1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **설치됨**을 확장하고, 아직 열려 있지 않은 경우 **Visual C++** 를 선택합니다.
+
+1. 가운데 창의 설치된 템플릿 목록에서 **Win32 콘솔 애플리케이션**을 선택합니다.
+
+1. **이름** 상자에 프로젝트의 이름을 입력합니다. 이 예에서는 *Game*을 입력합니다.
+
+   **위치** 드롭다운 목록에서 기본 위치를 적용하거나 다른 위치를 입력하거나 **찾아보기** 단추를 선택하여 프로젝트를 저장할 디렉터리를 찾아볼 수 있습니다.
+
+   프로젝트를 만들면 Visual Studio에서 해당 프로젝트가 솔루션에 추가됩니다. 기본적으로 솔루션의 이름은 프로젝트 이름과 같습니다. **솔루션 이름** 상자에서 이름을 변경할 수 있지만 이 예제에서는 기본 이름을 유지합니다.
+
+1. **확인** 단추를 선택하여 프로젝트를 만듭니다.
+
+   Visual Studio는 새 솔루션 및 프로젝트 파일을 만들고 생성된 Game.cpp 소스 코드 파일의 편집기를 엽니다.
+
+::: moniker-end
 
 ## <a name="organize-projects-and-files"></a>프로젝트 및 파일 구성
 
@@ -117,7 +160,7 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#111](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_5.cpp)]-->
 
     ```cpp
-    #include "pch.h"
+    #include "pch.h" // remove this line in Visual Studio 2019
     #include "Cardgame.h"
     #include <iostream>
 
@@ -155,7 +198,7 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
     // Game.cpp : Defines the entry point for the console application.
     //
 
-    #include "pch.h"
+    #include "pch.h" // remove this line in Visual Studio 2019
     #include "Cardgame.h"
     #include <iostream>
 

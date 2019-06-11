@@ -2,12 +2,12 @@
 title: Visual C++ 포팅 및 업그레이드 가이드
 ms.date: 09/18/2018
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-ms.openlocfilehash: 8798d8b3da5a91adfc6f77912d4f34bf62549f54
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: 5659ca362204c62ab8fb21a74dccf8e29f33912c
+ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58898793"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66450383"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ 포팅 및 업그레이드 가이드
 
@@ -53,7 +53,7 @@ Visual Studio의 빌드 시스템을 사용하지 않는 경우 MSBuild를 사�
 
 8. 동작 변경 내용으로 인한 런타임 오류 또는 예기치 않은 결과
 
-9. 도구에 도입된 오류로 인한 오류 문제가 발생하는 경우 일반적인 지원 채널을 통해 또는 [Visual Studio 사용자 의견 센터](http://connect.microsoft.com/VisualStudio/Feedback)를 사용하여 Visual C++ 팀에 보고합니다.
+9. 도구에 도입된 오류로 인한 오류 문제가 발생하는 경우 일반적인 지원 채널을 통해 또는 [Visual Studio C++ 개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/62/index.html) 페이지를 사용하여 Visual C++ 팀에 보고합니다.
 
 컴파일러 오류로 인한 필연적인 변경 내용 외에도 다음과 같은 일부 변경 내용은 업그레이드 프로세스에서 선택 사항입니다.
 
@@ -75,7 +75,7 @@ Visual Studio의 빌드 시스템을 사용하지 않는 경우 MSBuild를 사�
 
 |제목|설명|
 |-----------|-----------------|
-|[이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|이전 버전의 Visual C++에서 만든 프로젝트를 사용하는 방법을 설명합니다.|
+|[이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|이전 버전의 Visual Studio에서 만든 프로젝트를 사용하는 방법을 설명합니다.|
 |[Visual Studio에서 C++ 컴파일러의 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)|IDE 및 도구를 현재 버전의 Visual Studio로 변경|
 |[Visual Studio의 C++ 규칙 향상](../overview/cpp-conformance-improvements.md)|Visual Studio 2015에서 Visual Studio로 표준 준수 향상|
 |[Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md)|코드 변경이 필요할 수 있는 Visual Studio 2003과 2015 간 Visual C++ 라이브러리 및 빌드 도구의 모든 변경 내용 목록입니다.|
@@ -88,4 +88,4 @@ Visual Studio의 빌드 시스템을 사용하지 않는 경우 MSBuild를 사�
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual C++](../overview/visual-cpp-in-visual-studio.md)
+[Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)
