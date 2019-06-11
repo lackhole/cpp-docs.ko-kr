@@ -35,7 +35,7 @@ ms.locfileid: "62270434"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-- 명령줄에서 이 컴파일러 옵션에 액세스 해야 합니다.
+- 명령줄에서만 이 컴파일러 옵션에 액세스해야 합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
