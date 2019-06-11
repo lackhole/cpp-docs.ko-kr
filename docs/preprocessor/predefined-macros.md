@@ -186,7 +186,7 @@ MSVC는 ANSI/ISO C99 표준을 ISO c++14 및 c++17 표준에 필요한 미리 �
 
 - **&#95;&#95;STDCPP&#95;스레드&#95; &#95;**  프로그램 실행의 둘 이상의 스레드를 가질 수 있습니다 하는 경우에 1로 정의 하 고로 컴파일한 C++합니다. 그렇지 않으면 정의 되지 않았습니다.
 
-- **&#95;&#95;시간&#95; &#95;**  전처리 된 변환 단위 변환 시간입니다. 에 문자열 형식의 리터럴 *hh: mm:*, CRT가 반환 된 시간이 동일 [asctime](../c-runtime-library/reference/asctime-wasctime.md) 함수입니다. 이 매크로 항상 정의 됩니다.
+- **&#95;&#95;시간&#95; &#95;**  전처리 된 변환 단위 변환 시간입니다. 에 문자열 형식의 리터럴 *hh: mm:* , CRT가 반환 된 시간이 동일 [asctime](../c-runtime-library/reference/asctime-wasctime.md) 함수입니다. 이 매크로 항상 정의 됩니다.
 
 ## <a name="microsoft-specific-predefined-macros"></a>Microsoft 전용 미리 정의 된 매크로
 
@@ -421,7 +421,7 @@ MSVC는 이러한 추가 미리 정의 된 매크로 지원합니다.
 
 - **&#95;VC&#95;NODEFAULTLIB** 하면 1로 정의 된 [/Zl (기본 라이브러리 이름 생략)](../build/reference/zl-omit-default-library-name.md) 컴파일러 옵션을 설정 합니다. 그렇지 않으면 정의 되지 않았습니다.
 
-- **&#95;WCHAR&#95;T&#95;정의** 하면 1로 정의 된 기본값 [/zc: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 컴파일러 옵션을 설정 합니다.  **&#95;WCHAR&#95;T&#95;정의** 매크로 정의 되어 있지만 값이 없는 경우는 `/Zc:wchar_t-` 컴파일러 옵션을 설정 하 고 **wchar_t** 에 포함 된 시스템 헤더 파일에 정의 된 사용자 프로젝트입니다. 그렇지 않으면 정의 되지 않았습니다.
+- **&#95;WCHAR&#95;T&#95;정의** 하면 1로 정의 된 기본값 [/zc: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) 컴파일러 옵션을 설정 합니다. **&#95;WCHAR&#95;T&#95;정의** 매크로 정의 되어 있지만 값이 없는 경우는 `/Zc:wchar_t-` 컴파일러 옵션을 설정 하 고 **wchar_t** 에 포함 된 시스템 헤더 파일에 정의 된 사용자 프로젝트입니다. 그렇지 않으면 정의 되지 않았습니다.
 
 - **&#95;WIN32** x64 또는 컴파일 대상 32 비트 ARM, 64 비트 ARM, x86, 경우에 1로 정의 합니다. 그렇지 않으면 정의 되지 않았습니다.
 

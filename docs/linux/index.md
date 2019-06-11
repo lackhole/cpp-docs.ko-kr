@@ -2,16 +2,16 @@
 layout: LandingPage
 title: Linux 개발을 위한 C++ 관련 설명서
 description: Linux에서 실행되는 애플리케이션을 만들고 디버그합니다.
-ms.openlocfilehash: 516b57ca976ddd89081581978c6ac5f86c64876e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f57777451e861a8ea0df1eb81fc97553c176ebec
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393144"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821641"
 ---
 # <a name="linux-development-with-c-documentation"></a>Linux 개발을 위한 C++ 관련 설명서
 
-Visual Studio 2017을 사용하여 Linux에서 실행되는 애플리케이션을 만들고 디버그합니다.
+Visual Studio 2017 이상을 사용하여 Linux 원격 머신 또는 Linux용 Windows 하위 시스템에서 실행되는 애플리케이션을 만들고 디버깅합니다.
 
 <ul class="panelContent cardsF">
     <li>
@@ -64,8 +64,8 @@ Visual Studio 2017을 사용하여 Linux에서 실행되는 애플리케이션�
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">Visual C++</a></h3>
-                        <p><a href="/cpp/overview-of-cpp-development">IDE 및 Visual C++ 개발 도구</a></p>
+                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">Visual Studio의 C++</a></h3>
+                        <p><a href="/cpp/overview-of-cpp-development">Visual Studio에서 C++ 개발 개요</a></p>
                     </div>
                 </div>
             </div>
