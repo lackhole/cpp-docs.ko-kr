@@ -1,4 +1,4 @@
----
+﻿---
 title: /homeparams(스택에 레지스터 매개 변수 복사)
 ms.date: 12/17/2018
 f1_keywords:
