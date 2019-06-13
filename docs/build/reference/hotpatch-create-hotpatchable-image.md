@@ -33,7 +33,7 @@ ms.locfileid: "62291654"
 
 이미지를 핫 패칭 가능하게 만들기 위한 준비를 위해서는, **/hotpatch**를 사용하여 컴파일한 후 [/FUNCTIONPADMIN(핫 패치 가능 이미지 만들기)](functionpadmin-create-hotpatchable-image.md)를 사용하여 링크해야 합니다. cl.exe를 한번 호출하여 이미지를 컴파일하고 연결할 때 **/hotpatch**는 **/functionpadmin**을 의미합니다.
 
-지침은 항상 2 바이트 이상 ARM 아키텍처 이므로 컴파일은 항상 처리 하는 x64 처럼 **/hotpatch** 지정 지정할 필요가 **/hotpatch** 때 이러한 대상;에 대 한 컴파일 그러나 사용 하 여 여전히 연결 해야 합니다 **/functionpadmin** 에 핫 패치 가능 이미지를 만들 수 있습니다. 합니다 **/hotpatch** 컴파일러 옵션만 영향을 줍니다 x86 컴파일.
+ARM 아키텍처 지침에는 명령어가 항상 2바이트 이상이므로 x64 컴파일은 항상 **/hotpatch**가 지정된 것처럼 처리되므로 이러한 대상에 대해 컴파일할 때 **/hotpatch**를 지정하지 않아도 됩니다. 하지만 **/functionpadmin**를 사용하여 링크하여 핫 패치 가능 이미지를 만들어야 합니다. **/hotpatch** 컴파일러 옵션은 x86 컴파일에만 영향을 줍니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
