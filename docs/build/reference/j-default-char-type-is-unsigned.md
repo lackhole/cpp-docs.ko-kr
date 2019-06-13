@@ -22,7 +22,7 @@ ms.locfileid: "62269403"
 ---
 # <a name="j-default-char-type-is-unsigned"></a>/J(부호 없는 기본 문자 형식)
 
-기본 `char` 형식을 `signed char`에서 `unsigned char`로 변경하고, `char` 형식은 `int` 형식으로 확장될 때 제로 확장됩니다.
+기본 `char` 형식을 `signed char`에서 `unsigned char`로 변경하고, `char` 형식은 `int` 형식으로 형변환 시 확장되는 부분을 0으로 채웁니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,9 +32,9 @@ ms.locfileid: "62269403"
 
 ## <a name="remarks"></a>설명
 
-경우는 `char` 값으로 명시적으로 선언 되었습니다 `signed`, **/J** 옵션, 레코드에 영향을 주지는 않습니다 및 때 값이 부호 확장 확장 되는 `int` 형식.
+`char` 값이 명시적으로 `signed`라고 선언된 경우 **/J** 옵션은 영향을 주지 않으며 `int` 형식으로 확장되면 부호 확장됩니다.
 
-**/J** 옵션을 정의 `_CHAR_UNSIGNED`를 사용 하 여 사용 되는 `#ifndef` 기본값의 범위를 정의 하려면 LIMITS.h 파일의 `char` 형식.
+**/J** 옵션은 `_CHAR_UNSIGNED`를 정의하며 LIMITS.h 파일의 `#ifndef`와 함께 사용되어 `char` 형식의 범위를 정의합니다.
 
 ANSI C 및 C++ 의 특정 구현 하지 않아도 합니다 `char` 형식입니다. 이 옵션은 결국 영어 이외의 언어로 변환 될 문자 데이터로 작업할 때 유용 합니다.
 
