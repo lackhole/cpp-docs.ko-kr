@@ -1,15 +1,15 @@
 ---
 title: Visual Studio의 CMake 프로젝트
-ms.date: 03/27/2019
+ms.date: 06/12/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: ae686383d82453f291bbf81428748524160082f7
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
-ms.translationtype: HT
+ms.openlocfilehash: f2bafb75aae2eabb4e8f289435ddaeb61e6aabf4
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64877175"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042674"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio의 CMake 프로젝트
 
@@ -20,13 +20,13 @@ CMake는 여러 플랫폼에서 실행되는 빌드 프로세스를 정의하는
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 소개 합니다 **CMake 설정 편집기** 및 Visual Studio 2017을 통해 다른 향상 된 기능입니다. **CMake용 Visual C++ 도구** 구성 요소에서 **폴더 열기** 기능을 사용하여 IDE에서 IntelliSense 및 검색을 수행하는 데 CMake 프로젝트 파일(예: CMakeLists.txt)을 직접 사용할 수 있습니다. Ninja 및 Visual Studio 생성기 모두 지원됩니다. Visual Studio 생성기를 사용하는 경우 임시 프로젝트 파일이 생성되어 msbuild.exe에 전달되지만 IntelliSense 또는 검색을 위해 로드되지는 않습니다. 또한 기존 CMake 캐시를 가져올 수 있습니다. 
+Visual Studio 2019 소개 합니다 **CMake 설정 편집기** 및 Visual Studio 2017을 통해 다른 향상 된 기능입니다. 합니다  **C++ Windows 용 CMake 도구** 구성 요소를 사용 합니다 **폴더 열기** IntelliSense의 목적을 위해 직접 CMake 프로젝트 파일 (예: CMakeLists.txt)를 사용 하도록 IDE를 사용 하도록 설정 하려면 기능 및 검색 합니다. Ninja 및 Visual Studio 생성기 모두 지원됩니다. Visual Studio 생성기를 사용하는 경우 임시 프로젝트 파일이 생성되어 msbuild.exe에 전달되지만 IntelliSense 또는 검색을 위해 로드되지는 않습니다. 또한 기존 CMake 캐시를 가져올 수 있습니다. 
 
 ## <a name="installation"></a>설치
 
-**CMake용 Visual C++ 도구**는 기본적으로 **C++를 사용한 데스크톱 개발** 워크로드의 일부 및 **C++를 사용한 Linux 개발** 워크로드의 일부로 설치됩니다. 참조 [플랫폼 간 CMake 프로젝트](../linux/cmake-linux-project.md) 자세한 내용은 합니다.
+**C++Windows 용 CMake 도구** 의 일부로 기본적으로 설치 됩니다 합니다 **를 사용한 데스크톱 개발 C++**  워크 로드의 일부로 합니다 **를 사용한 Linux 개발 C++**  워크 로드. 참조 [플랫폼 간 CMake 프로젝트](../linux/cmake-linux-project.md) 자세한 내용은 합니다.
 
-![C++ 데스크톱 워크로드의 CMake 구성 요소](media/cmake-install.png)
+![C++ 데스크톱 워크로드의 CMake 구성 요소](media/cmake-install-2019.png)
 
 자세한 내용은 [Visual Studio에서 C++ Linux 워크로드 설치](../linux/download-install-and-setup-the-linux-development-workload.md)를 참조하세요.
 

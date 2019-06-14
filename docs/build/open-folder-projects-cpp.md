@@ -4,24 +4,24 @@ ms.date: 03/21/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual Studio
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 4f59781833a303ad2db837549eddca2f2ce291b1
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: 8856a5b1782c75c5a59dfdc93a8203627059ea12
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220488"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042725"
 ---
 # <a name="open-folder-projects-for-c"></a>C++의 폴더 열기 프로젝트
 
 Visual Studio 2017 이상에서 "폴더 열기" 기능을 통해 소스 파일의 폴더를 열고 IntelliSense, 검색, 리팩터링, 디버깅 등의 지원을 통해 코딩을 즉시 시작할 수 있습니다. .sln 또는 .vcxproj 파일이 로드되지 않습니다. 필요한 경우 간단한 .json 파일을 통해 매개 변수를 작성하고 시작할 수 있을 뿐만 아니라 사용자 지정 작업을 지정할 수도 있습니다. 폴더 열기에 대한 일반적인 내용은 [프로젝트 또는 솔루션 없이 Visual Studio에서 코드 개발](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions)을 참조하세요.
 
-CMake는 C++ 데스크톱 워크로드의 구성 요소인 Visual Studio용 CMake 도구로 Visual Studio IDE에 통합되어 있습니다. 자세한 내용은 [Visual Studio의 CMake 프로젝트](cmake-projects-in-visual-studio.md)를 참조하세요. 다른 빌드 시스템에서 폴더 열기 기능을 사용할 수 있습니다. 폴더 열기는 빌드 시스템 및 컴파일러 도구 세트로부터 코드 편집기, 디버거 및 분석기를 효과적으로 분리합니다. CMake, Ninja, QMake(Qt 프로젝트의 경우), gyp, SCons, Gradle, Buck, make 등을 비롯한 거의 모든 빌드 시스템을 사용하여 다양한 IntelliSense 기능, 코드 분석기 및 Visual Studio 디버거에서 C++ 코드 편집기를 사용할 수 있습니다. 빌드 시스템이 없는 단일 파일 또는 느슨한 파일 컬렉션에서도 작동합니다.
+CMake의 구성 요소로 Visual Studio IDE에 통합 되는 C++ 데스크톱 워크 로드. 자세한 내용은 [Visual Studio의 CMake 프로젝트](cmake-projects-in-visual-studio.md)를 참조하세요. 다른 빌드 시스템에서 폴더 열기 기능을 사용할 수 있습니다. 폴더 열기는 빌드 시스템 및 컴파일러 도구 세트로부터 코드 편집기, 디버거 및 분석기를 효과적으로 분리합니다. CMake, Ninja, QMake(Qt 프로젝트의 경우), gyp, SCons, Gradle, Buck, make 등을 비롯한 거의 모든 빌드 시스템을 사용하여 다양한 IntelliSense 기능, 코드 분석기 및 Visual Studio 디버거에서 C++ 코드 편집기를 사용할 수 있습니다. 빌드 시스템이 없는 단일 파일 또는 느슨한 파일 컬렉션에서도 작동합니다.
 
 폴더 열기를 사용하려면 주 메뉴에서 **파일 | 열기 | 폴더**를 차례대로 선택하거나 **Ctrl +Shift+Alt+O**를 누릅니다. 솔루션 탐색기에서 폴더의 모든 파일이 즉시 표시됩니다. 파일을 클릭하여 편집을 시작할 수 있습니다. 백그라운드에서 Visual Studio는 IntelliSense, 탐색 및 리팩터링 기능을 사용할 수 있도록 파일 인덱싱을 시작합니다. 파일을 편집, 생성, 이동 또는 삭제하면 Visual Studio는 변경 내용을 자동으로 추적하고 해당 IntelliSense 인덱스를 계속해서 업데이트합니다. 
 
 ## <a name="qmake-projects-that-target-the-qt-framework"></a>Qt 프레임워크를 대상으로 하는 QMake 프로젝트
 
-Visual Studio용 CMake 도구를 사용하여 Qt를 대상으로 하는 Qt 프로젝트를 만들거나 Visual Studio 2015 또는 Visual Studio 2017에 [Qt Visual Studio 확장](https://download.qt.io/development_releases/vsaddin/)을 사용할 수 있습니다.
+Qt 프로젝트를 빌드하려면 CMake을 사용할 수 또는 사용할 수는 [Qt Visual Studio 확장](https://download.qt.io/development_releases/vsaddin/) Visual Studio 2015 또는 Visual Studio 2017에 대 한 합니다.
 
 ## <a name="gyp-cons-scons-buck-etc"></a>gyp, Cons, SCons, Buck 등
 
