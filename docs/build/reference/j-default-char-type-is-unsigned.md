@@ -22,7 +22,7 @@ ms.locfileid: "62269403"
 ---
 # <a name="j-default-char-type-is-unsigned"></a>/J(부호 없는 기본 문자 형식)
 
-기본 `char` 형식을 `signed char`에서 `unsigned char`로 변경하고, `char` 형식은 `int` 형식으로 형변환시 확장되는 부분을 0으로 채웁니다.
+기본 `char` 형식을 `signed char`에서 `unsigned char`로 변경하고, `char` 형식은 `int` 형식으로 형변환 시 확장되는 부분을 0으로 채웁니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,14 +32,14 @@ ms.locfileid: "62269403"
 
 ## <a name="remarks"></a>설명
 
-`char` 값이 명시적으로 `signed`라고 선언된 경우 **/J** 옵션은 영향을 주지 않으며 `int` 형식으로 확장되면 부호확장 됩니다.
+`char` 값이 명시적으로 `signed`라고 선언된 경우 **/J** 옵션은 영향을 주지 않으며 `int` 형식으로 확장되면 부호 확장됩니다.
 
-**/J** 옵션은 `_CHAR_UNSIGNED`를 정의하며 LIMITS.h 파일의 `#ifndef`과 함께 사용되어 `char` 형식의 범위를 정의합니다.
+**/J** 옵션은 `_CHAR_UNSIGNED`를 정의하며 LIMITS.h 파일의 `#ifndef`와 함께 사용되어 `char` 형식의 범위를 정의합니다.
 
-ANSI C 및 C++에서는 `char` 형식의 특정된 구현이 필요하지 않습니다. 이 옵션은 결국 영어 이외의 언어로 변환될 문자 데이터로 작업할 때 유용 합니다.
+ANSI C 및 C++에서는 `char` 형식의 특정된 구현이 필요하지 않습니다. 이 옵션은 결국 영어 이외의 언어로 변환될 문자 데이터로 작업할 때 유용합니다.
 
 > [!NOTE]
->  ATL/MFC에서 이 컴파일러 옵션을 사용하면 오류가 생성될 수 있습니다. `_ATL_ALLOW_CHAR_UNSIGNED`를 정의해서 이 오류를 비활성화할 수도 있지만 이 해결 방법은 지원되지 않으며, 항상 작동하지 않을 수 있습니다.
+> ATL/MFC에서 이 컴파일러 옵션을 사용하면 오류가 생성될 수 있습니다. `_ATL_ALLOW_CHAR_UNSIGNED`를 정의해서 이 오류를 비활성화할 수도 있지만 이 해결 방법은 지원되지 않으며, 항상 작동하지는 않을 수 있습니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
