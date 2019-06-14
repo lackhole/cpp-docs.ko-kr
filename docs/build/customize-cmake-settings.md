@@ -3,12 +3,12 @@ title: Visual Studio에서 CMake 빌드 설정 사용자 지정
 ms.date: 05/16/2019
 helpviewer_keywords:
 - CMake build settings
-ms.openlocfilehash: d8102250fa59dc787cc48fc293ac740b81b4446c
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: a00b18f163758be0238a05c4d2af3195014d79b0
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837102"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042541"
 ---
 # <a name="customize-cmake-build-settings"></a>CMake 빌드 설정 사용자 지정
 
@@ -94,7 +94,7 @@ rsync에 전달할 명령 인수를 제공합니다.
   - "Unix 메이크파일"
   - "Visual Studio 16 2019"
   - "Visual Studio 16 2019 Win64"
-  - - "Visual Studio 16 2019 ARM"
+  - "Visual Studio 16 2019 ARM"
   - "Visual Studio 15 2017"
   - "Visual Studio 15 2017 Win64"
   - "Visual Studio 15 2017 ARM"
@@ -204,7 +204,7 @@ JSON IntelliSense를 사용하면 `CMakeSettings.json` 파일을 편집할 수 �
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual Studio의 CMake 프로젝트](cmake-projects-in-visual-studio.md)<br/>
 [Linux CMake 프로젝트 구성](../linux/cmake-linux-project.md)<br/>
