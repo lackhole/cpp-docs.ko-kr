@@ -4,12 +4,12 @@ ms.date: 05/14/2019
 helpviewer_keywords:
 - code wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-ms.openlocfilehash: 8c88936edcb9110fe7482281f483f11c542b83c1
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: efced3be3a0bcc7efe16aef1061c4cd9ec1ed21c
+ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "66182653"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66741634"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>코드 마법사로 기능 추가(C++)
 
@@ -76,6 +76,6 @@ C++ 코드 마법사에 액세스할 수 있는 세 가지 위치가 있습니�
 ## <a name="see-also"></a>참고 항목
 
 [가상 함수 재정의](../ide/overriding-a-virtual-function-visual-cpp.md)<br>
-[클래스 구조 탐색](../ide/navigating-the-class-structure-visual-cpp.md)<br>
+[Visual Studio에서 C++ 코드 베이스 탐색](../ide/navigate-code-cpp.md)<br>
 [Visual Studio의 C++ 프로젝트 형식](../build/reference/visual-cpp-project-types.md)<br>
 [Visual Studio C++ 프로젝트용으로 만든 파일 형식](../build/reference/file-types-created-for-visual-cpp-projects.md)

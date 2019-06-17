@@ -2,12 +2,12 @@
 layout: LandingPage
 title: Linux 개발을 위한 C++ 관련 설명서
 description: Linux에서 실행되는 애플리케이션을 만들고 디버그합니다.
-ms.openlocfilehash: f57777451e861a8ea0df1eb81fc97553c176ebec
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: ac80c6ad3b0650d7da20f18b049af0242ffa5704
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821641"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042739"
 ---
 # <a name="linux-development-with-c-documentation"></a>Linux 개발을 위한 C++ 관련 설명서
 
@@ -34,7 +34,7 @@ Visual Studio 2017 이상을 사용하여 Linux 원격 머신 또는 Linux용 Wi
         </a>
     </li>
     <li>
-        <a href="https://blogs.msdn.microsoft.com/vcblog/2016/03/30/visual-c-for-linux-development/">
+        <a href="https://devblogs.microsoft.com/cppblog/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -44,8 +44,8 @@ Visual Studio 2017 이상을 사용하여 Linux 원격 머신 또는 Linux용 Wi
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual C++ 블로그에서의 Linux 개발</h3>
-                        <p>Linux 작업과 관련된 Visual C++의 새로운 기능에 대한 최신 정보를 받으세요.</p>
+                        <h3>C++ team blog(C++ 팀 블로그)</h3>
+                        <p>Visual Studio의 모든 최신 C++ 기능을 최신 상태로 유지하세요.</p>
                     </div>
                 </div>
             </div>
@@ -64,8 +64,7 @@ Visual Studio 2017 이상을 사용하여 Linux 원격 머신 또는 Linux용 Wi
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">Visual Studio의 C++</a></h3>
-                        <p><a href="/cpp/overview-of-cpp-development">Visual Studio에서 C++ 개발 개요</a></p>
+                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio">Visual Studio의 C++</a></h3>
                     </div>
                 </div>
             </div>

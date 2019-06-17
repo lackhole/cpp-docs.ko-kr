@@ -1,18 +1,30 @@
 ---
 title: Visual Studio에서 원격 Linux 컴퓨터에 연결
 description: Visual Studio C++ 프로젝트 내의 원격 Linux 머신에 연결하는 방법입니다.
-ms.date: 07/20/2018
+ms.date: 06/07/2019
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: e20714308448349ee5dac8951a7b5d7bfd2f29ef
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 6348681ecc8e6f7863b2119810db24879526a1c6
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562850"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821602"
 ---
 # <a name="connect-to-your-remote-linux-computer"></a>원격 Linux 컴퓨터에 연결
 
-Visual Studio에서 C++ Linux 프로젝트를 빌드할 때 Linux 코드가 원격 Linux 머신에 복사된 다음, Visual Studio 설정에 따라 컴파일됩니다. 이 원격 연결을 설정하려면:
+::: moniker range="vs-2015"
+
+Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+WSL(Linux용 Windows 하위 시스템)을 대상으로 할 때 Visual Studio는 파일 시스템을 통해 Linux 배포판과 직접 상호 작용합니다. 원격 연결이 필요하지 않습니다.
+
+::: moniker-end
+
+원격 Linux 시스템(VM 또는 물리적 머신)에 대해 C++ Linux 프로젝트를 빌드할 때 Linux 코드가 원격 Linux 컴퓨터에 복사된 다음, Visual Studio 설정에 따라 컴파일됩니다. 이 원격 연결을 설정하려면:
 
 1. 처음으로 프로젝트를 빌드하거나 **도구 > 옵션**을 선택한 다음 **플랫폼 간 > 연결 관리자** 노드를 열고 **추가** 단추를 클릭하여 수동으로 새 항목을 만듭니다.
 
