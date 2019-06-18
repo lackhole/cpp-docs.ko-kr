@@ -31,7 +31,7 @@ ms.locfileid: "62292059"
 
 **/GZ**는 최적화되지 않은([/Od(비활성화(디버그))](od-disable-debug.md)) 빌드에서만 사용됩니다.
 
-**/GZ** ; Visual Studio 2005부터 사용 되지 않습니다 사용 [/RTC (런타임 오류 검사)](rtc-run-time-error-checks.md) 대신 합니다. 사용 되지 않는 컴파일러 옵션의 목록을 참조 하세요 **컴파일러 옵션 및 사용 되지 않음** 에 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)합니다.
+**/GZ**는 Visual Studio 2005부터 사용되지 않습니다. 대신 [/RTC(런타임 오류 검사)](rtc-run-time-error-checks.md)를 사용합니다. 사용되지 않는 컴파일러 옵션은 [범주별 컴파일러 옵션 목록](compiler-options-listed-by-category.md)의 **사용되지 않는 컴파일러 옵션**을 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
