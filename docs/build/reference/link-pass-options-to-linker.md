@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -link compiler option [C++]
 - cl.exe compiler [C++], passing options to linker
 ms.assetid: 16902a94-c094-4328-841f-3ac94ca04848
-ms.openlocfilehash: ef81a6617df811660506c08434f3b65e29155794
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 37743e855c933b6236b5e7a837db257f332a3037
+ms.sourcegitcommit: bbaf65f8ed1af12828b38f8eacd24f934ac0e538
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290685"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67155776"
 ---
 # <a name="link-pass-options-to-linker"></a>/link(옵션을 링커로 전달)
 
@@ -33,7 +33,7 @@ ms.locfileid: "62290685"
 
 ## <a name="remarks"></a>설명
 
-합니다 **/l i n** 옵션 및 링커 옵션으로 모든 파일 이름 및 CL 옵션 뒤에 나타나야 합니다. 사이 공백을 않습니다 **/l i n** 고 `linkeroptions`입니다. 자세한 내용은 [MSVC 링커 참조](linking.md)합니다.
+합니다 **/l i n** 옵션 및 링커 옵션으로 모든 파일 이름 및 CL 옵션 뒤에 나타나야 합니다. 사이 공백을 않습니다 **/l i n** 및 링커 옵션입니다. 자세한 내용은 [MSVC 링커 참조](linking.md)합니다.
 
 ## <a name="example"></a>예제
 

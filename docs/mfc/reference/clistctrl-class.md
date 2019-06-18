@@ -1,6 +1,6 @@
 ---
 title: CListCtrl 클래스
-ms.date: 11/04/2016
+ms.date: 06/13/2019
 f1_keywords:
 - CListCtrl
 - AFXCMN/CListCtrl
@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: 1cdc4bfacee4913d3a38aaa45aadf0a430e547ab
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 63668de8134267880b48a3406c552d06376ea4f7
+ms.sourcegitcommit: e79188287189b76b34eb7e8fb1bfe646bdb586bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503450"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141675"
 ---
 # <a name="clistctrl-class"></a>CListCtrl 클래스
 
@@ -522,8 +522,7 @@ class CListCtrl : public CWnd
 
 ```
 CSize ApproximateViewRect(
-    CSize sz = CSize(-1,
--1),
+    CSize sz = CSize(-1, -1),
     int iCount = -1) const;
 ```
 
@@ -683,7 +682,7 @@ virtual BOOL CreateEx(
 
 사용 하 여 `CreateEx` of [Create](#create) Windows 확장된 스타일 앞으로 지정 된 Windows 확장된 스타일을 적용할 **WS_EX_** 합니다.
 
-`CreateEx` 지정 된 Windows 확장된 스타일을 사용 하 여 컨트롤을 만듭니다 *dwExStyle*합니다. 컨트롤에 관련 확장된 스타일을 설정, 호출 [SetExtendedStyle](#setextendedstyle)합니다. 사용 예를 들어 `CreateEx` 이러한 스타일 WS_EX_CONTEXTHELP와 이지만 사용 하 여 `SetExtendedStyle` LVS_EX_FULLROWSELECT으로 이러한 스타일을 설정 하려면. 자세한 내용은 참조 항목에서 설명 하는 스타일 [확장 목록 뷰 스타일](/windows/desktop/Controls/extended-list-view-styles) Windows sdk에서입니다.
+`CreateEx` 지정 된 Windows 확장된 스타일을 사용 하 여 컨트롤을 만듭니다 *dwExStyle*합니다. 컨트롤에 관련 확장된 스타일을 설정, 호출 [SetExtendedStyle](#setextendedstyle)합니다. 사용 예를 들어 `CreateEx` 이러한 스타일 WS_EX_CONTEXTHELP와 이지만 사용 하 여 `SetExtendedStyle` LVS_EX_FULLROWSELECT으로 이러한 스타일을 설정 하려면. 자세한 내용은 문서에 설명 된 스타일을 참조 하세요 [확장 목록 뷰 스타일](/windows/desktop/Controls/extended-list-view-styles) Windows sdk에서입니다.
 
 ## <a name="createdragimage"></a>  CListCtrl::CreateDragImage
 
@@ -971,7 +970,7 @@ RGB 색을 지정 하는 데 사용 되는 32 비트 값입니다.
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::SetBkColor](#setbkcolor)합니다.
+예를 참조 하세요 [CListCtrl::SetBkColor](#setbkcolor)합니다.
 
 ## <a name="getbkimage"></a>  CListCtrl::GetBkImage
 
@@ -1027,7 +1026,7 @@ UINT GetCallbackMask() const;
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::SetCallbackMask](#setcallbackmask)합니다.
+예를 참조 하세요 [CListCtrl::SetCallbackMask](#setcallbackmask)합니다.
 
 ## <a name="getcheck"></a>  CListCtrl::GetCheck
 
@@ -1052,7 +1051,7 @@ BOOL GetCheck(int nItem) const;
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::SetCheck](#setcheck)합니다.
+예를 참조 하세요 [CListCtrl::SetCheck](#setcheck)합니다.
 
 ## <a name="getcolumn"></a>  CListCtrl::GetColumn
 
@@ -1134,7 +1133,7 @@ BOOL GetColumnOrderArray(
             int  nColumnCount = pHeaderCtrl->GetItemCount();
             LPINT pnOrder = (LPINT) malloc(nColumnCount*sizeof(int));
             ASSERT(pnOrder != NULL);
-m_myListCtrl.GetColumnOrderArray(pnOrder, nColumnCount);
+            m_myListCtrl.GetColumnOrderArray(pnOrder, nColumnCount);
 
             int i, j, nTemp;
             for (i = 0, j = nColumnCount-1; i < j; i++, j--)
@@ -1188,7 +1187,7 @@ int GetCountPerPage() const;
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetTopIndex](#gettopindex)합니다.
+예를 참조 하세요 [CListCtrl::GetTopIndex](#gettopindex)합니다.
 
 ## <a name="geteditcontrol"></a>  CListCtrl::GetEditControl
 
@@ -1243,7 +1242,7 @@ DWORD GetExtendedStyle();
 
 ### <a name="return-value"></a>반환 값
 
-목록에서 사용 중인 확장된 스타일의 조합 뷰 컨트롤입니다. 이러한 확장된 스타일의 설명이 포함 된 목록은 참조 하세요. 합니다 [확장 목록 뷰 스타일](/windows/desktop/Controls/extended-list-view-styles) Windows SDK에는 항목입니다.
+목록에서 사용 중인 확장된 스타일의 조합 뷰 컨트롤입니다. 이러한 확장된 스타일의 설명이 포함 된 목록은 참조 하세요. 합니다 [확장 목록 뷰 스타일](/windows/desktop/Controls/extended-list-view-styles) Windows SDK에는 문서입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1251,7 +1250,7 @@ DWORD GetExtendedStyle();
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::SetExtendedStyle](#setextendedstyle)합니다.
+예를 참조 하세요 [CListCtrl::SetExtendedStyle](#setextendedstyle)합니다.
 
 ## <a name="getfirstselecteditemposition"></a>  CListCtrl::GetFirstSelectedItemPosition
 
@@ -1381,7 +1380,7 @@ public:
 
 ### <a name="example"></a>예제
 
-다음 코드 예제는 `GetGroupInfoByIndex` 메서드. 이 코드의 이전 섹션에는 목록 뷰 컨트롤을 만든 예제 보고서 보기에서 "ClientID" 및 "등급" 라는 두 개의 열을 표시 합니다. 다음 코드 예제에서는 이러한 그룹이 있으면 해당 인덱스는 0, 그룹에 대 한 정보를 검색 합니다.
+다음 코드 예제는 `GetGroupInfoByIndex` 메서드. 이 코드 예제에서는 이전 단원에서 보고서 보기에서 "ClientID" 및 "등급" 라는 두 개의 열을 표시 하는 목록 뷰 컨트롤을 만들었습니다. 다음 코드 예제에서는 이러한 그룹이 있으면 해당 인덱스는 0, 그룹에 대 한 정보를 검색 합니다.
 ```cpp
     // GetGroupInfoByIndex
     const int GROUP_HEADER_BUFFER_SIZE = 40;
@@ -1528,7 +1527,7 @@ CHeaderCtrl* GetHeaderCtrl();
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetColumnOrderArray](#getcolumnorderarray)합니다.
+예를 참조 하세요 [CListCtrl::GetColumnOrderArray](#getcolumnorderarray)합니다.
 
 ## <a name="gethotcursor"></a>  CListCtrl::GetHotCursor
 
@@ -1634,7 +1633,7 @@ CImageList* GetImageList(int nImageList) const;
 
 ```cpp
         ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == NULL);
-m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
+        m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
         ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == &m_lcImageList);
 ```
 
@@ -1643,12 +1642,12 @@ m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
 삽입 표시의 현재 위치를 검색합니다.
 
 ```
-BOOL GetInsertMark(LPLVINSERTMARK lvim) const;
+BOOL GetInsertMark(LPLVINSERTMARK plvim) const;
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*lvim*<br/>
+*plvim*<br/>
 에 대 한 포인터를 [LVINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-lvinsertmark) 삽입 표시에 대 한 정보를 포함 하는 구조체.
 
 ### <a name="return-value"></a>반환 값
@@ -1735,7 +1734,7 @@ int GetItemCount() const;
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::DeleteItem](#deleteitem)합니다.
+예를 참조 하세요 [CListCtrl::DeleteItem](#deleteitem)합니다.
 
 ## <a name="getitemdata"></a>  CListCtrl::GetItemData
 
@@ -1905,7 +1904,7 @@ BOOL GetItemRect(
 void CListCtrlDlg::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
 {
     UNREFERENCED_PARAMETER(pResult);
-LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
+    LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
 
     // Get the current mouse location and convert it to client
     // coordinates.
@@ -1995,7 +1994,7 @@ UINT GetItemState(
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetTopIndex](#gettopindex)합니다.
+예를 참조 하세요 [CListCtrl::GetTopIndex](#gettopindex)합니다.
 
 ## <a name="getitemtext"></a>  CListCtrl::GetItemText
 
@@ -2388,7 +2387,7 @@ RGB 색을 지정 하는 데 사용 되는 32 비트 값입니다.
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::SetTextBkColor](#settextbkcolor)합니다.
+예를 참조 하세요 [CListCtrl::SetTextBkColor](#settextbkcolor)합니다.
 
 ## <a name="gettextcolor"></a>  CListCtrl::GetTextColor
 
@@ -2404,19 +2403,19 @@ RGB 색을 지정 하는 데 사용 되는 32 비트 값입니다.
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::SetTextColor](#settextcolor)합니다.
+예를 참조 하세요 [CListCtrl::SetTextColor](#settextcolor)합니다.
 
 ## <a name="gettileinfo"></a>  CListCtrl::GetTileInfo
 
 목록 뷰 컨트롤에서 타일에 대 한 정보를 검색합니다.
 
 ```
-BOOL GetTileInfo(PLVTILEINFO pti) const;
+BOOL GetTileInfo(PLVTILEINFO plvti) const;
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pti*<br/>
+*plvti*<br/>
 에 대 한 포인터를 [LVTILEINFO](/windows/desktop/api/commctrl/ns-commctrl-taglvtileinfo) 타일 정보를 수신 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2548,15 +2547,15 @@ BOOL GetViewRect(LPRECT lpRect) const;
 ```
 void GetWorkAreas(
     int nWorkAreas,
-    LPRECT prc) const;
+    LPRECT pRect) const;
 ```
 
 ### <a name="parameters"></a>매개 변수
 
 *nWorkAreas*<br/>
-수가 `RECT` 구조에 포함 된 *중국* 배열.
+수가 `RECT` 구조에 포함 된 *pRect* 배열입니다.
 
-*prc*<br/>
+*pRect*<br/>
 배열에 대 한 포인터 `RECT` 구조 (또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체) 작업 영역 목록 뷰 컨트롤을 수신 합니다. 이러한 구조체의 값은 클라이언트 좌표입니다.
 
 ### <a name="remarks"></a>설명
@@ -2565,7 +2564,7 @@ void GetWorkAreas(
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetNumberOfWorkAreas](#getnumberofworkareas)합니다.
+예를 참조 하세요 [CListCtrl::GetNumberOfWorkAreas](#getnumberofworkareas)합니다.
 
 ## <a name="hasgroup"></a>  CListCtrl::HasGroup
 
@@ -2781,10 +2780,10 @@ int InsertItem(
 합니다 *nMask* 어떤 항목을 지정 하는 매개 변수 특성을 매개 변수로 전달 된 유효 합니다. 하나일 수 있습니다 또는 마스크 값에서 설명한 [LVITEM 구조](/windows/desktop/api/commctrl/ns-commctrl-taglvitema) Windows SDK에 있습니다. 유효한 값은 비트 OR 연산자를 사용 하 여 결합할 수 있습니다.
 
 *nState*<br/>
-항목의 상태, 상태 이미지와 오버레이 이미지를 나타냅니다. Windows SDK 항목을 참조 하세요 [LVITEM 구조](/windows/desktop/api/commctrl/ns-commctrl-taglvitema) 자세한 내용은 및 [목록 뷰 항목 상태](/windows/desktop/Controls/list-view-item-states) 유효한 플래그의 목록은 합니다.
+항목의 상태, 상태 이미지와 오버레이 이미지를 나타냅니다. 자세한 내용은 Windows SDK 항목을 참조 하세요 [LVITEM 구조](/windows/desktop/api/commctrl/ns-commctrl-taglvitema) 하 고 [목록 뷰 항목 상태](/windows/desktop/Controls/list-view-item-states) 유효한 플래그의 목록은 합니다.
 
 *nStateMask*<br/>
-상태 멤버의 비트를 검색 하거나 수정할 수를 나타냅니다. 참조 [LVITEM 구조](/windows/desktop/api/commctrl/ns-commctrl-taglvitema) 자세한 내용은 Windows SDK에 있습니다.
+상태 멤버의 비트를 검색 하거나 수정할 수를 나타냅니다. 자세한 내용은 [LVITEM 구조](/windows/desktop/api/commctrl/ns-commctrl-taglvitema) Windows SDK에 있습니다.
 
 *lParam*<br/>
 항목과 연결 된 32 비트 응용 프로그램 관련 값입니다. 이 매개 변수를 지정 하는 경우 설정 해야 합니다 *nMask* LVIF_PARAM 특성입니다.
@@ -2795,7 +2794,7 @@ int InsertItem(
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출 하면 제어 창에 보낼 LVM_INSERTITEM 메시지가 발생할 수 있습니다. 컨트롤에 대 한 연결 된 메시지 처리기는 특정 조건 (예: LVS_OWNERDRAW 같은 창 스타일을 사용 하 여) 아래에 있는 항목 텍스트를 설정 하려면 실패할 수 있습니다. 이러한 조건에 대 한 자세한 내용은 참조 [LVM_INSERTITEM](/windows/desktop/Controls/lvm-insertitem) Windows SDK에 있습니다.
+이 메서드를 호출 하면 제어 창에 보낼 LVM_INSERTITEM 메시지가 발생할 수 있습니다. 컨트롤에 대 한 연결 된 메시지 처리기는 특정 조건 (예: LVS_OWNERDRAW 같은 창 스타일을 사용 하 여) 아래에 있는 항목 텍스트를 설정 하려면 실패할 수 있습니다. 이러한 조건에 대 한 자세한 내용은 참조 하세요. [LVM_INSERTITEM](/windows/desktop/Controls/lvm-insertitem) Windows SDK에 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2828,7 +2827,7 @@ int InsertItem(
 ```
 int InsertMarkHitTest(
     LPPOINT pPoint,
-    LPLVINSERTMARK lvim) const;
+    LPLVINSERTMARK plvim) const;
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -2836,7 +2835,7 @@ int InsertMarkHitTest(
 *pPoint*<br/>
 에 대 한 포인터를 [지점](/previous-versions/dd162805\(v=vs.85\)) 목록 컨트롤의 클라이언트 영역을 기준으로 적중 횟수 테스트를 포함 하는 구조를 조정 합니다.
 
-*lvim*<br/>
+*plvim*<br/>
 에 대 한 포인터를 [LVINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-lvinsertmark) 지점 매개 변수에 의해 정의 된 좌표에 가장 가까운 삽입 지점을 지정 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2879,7 +2878,7 @@ BOOL IsItemVisible(int index) const;
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 지정된 된 항목이 표시 되 고, 그렇지 않으면 FALSE입니다.
+지정된 된 항목이 표시 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -3138,7 +3137,7 @@ BOOL SetBkColor(COLORREF cr);
 BOOL SetBkImage(LVBKIMAGE* plvbkImage);
 
 BOOL SetBkImage(
-    HBITMAP hbm,
+    HBITMAP hBitmap,
     BOOL fTile = TRUE,
     int xOffsetPercent = 0,
     int yOffsetPercent = 0);
@@ -3155,7 +3154,7 @@ BOOL SetBkImage(
 *plvbkImage*<br/>
 주소는 `LVBKIMAGE` 구조에 새 배경 이미지 정보를 포함 합니다.
 
-*hbm*<br/>
+*hBitmap*<br/>
 비트맵에 대 한 핸들입니다.
 
 *pszUrl*<br/>
@@ -3181,7 +3180,7 @@ BOOL SetBkImage(
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetBkImage](#getbkimage)합니다.
+예를 참조 하세요 [CListCtrl::GetBkImage](#getbkimage)합니다.
 
 ## <a name="setcallbackmask"></a>  CListCtrl::SetCallbackMask
 
@@ -3273,7 +3272,7 @@ BOOL SetColumn(
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetColumn](#getcolumn)합니다.
+예를 참조 하세요 [CListCtrl::GetColumn](#getcolumn)합니다.
 
 ## <a name="setcolumnorderarray"></a>  CListCtrl::SetColumnOrderArray
 
@@ -3303,7 +3302,7 @@ BOOL SetColumnOrderArray(
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetColumnOrderArray](#getcolumnorderarray)합니다.
+예를 참조 하세요 [CListCtrl::GetColumnOrderArray](#getcolumnorderarray)합니다.
 
 ## <a name="setcolumnwidth"></a>  CListCtrl::SetColumnWidth
 
@@ -3424,7 +3423,7 @@ HCURSOR SetHotCursor(HCURSOR hc);
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetHotCursor](#gethotcursor)합니다.
+예를 참조 하세요 [CListCtrl::GetHotCursor](#gethotcursor)합니다.
 
 ## <a name="sethotitem"></a>  CListCtrl::SetHotItem
 
@@ -3449,7 +3448,7 @@ int SetHotItem(int iIndex);
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetHotItem](#gethotitem)합니다.
+예를 참조 하세요 [CListCtrl::GetHotItem](#gethotitem)합니다.
 
 ## <a name="sethovertime"></a>  CListCtrl::SetHoverTime
 
@@ -3474,7 +3473,7 @@ DWORD SetHoverTime(DWORD dwHoverTime = (DWORD)-1);
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetHoverTime](#gethovertime)합니다.
+예를 참조 하세요 [CListCtrl::GetHoverTime](#gethovertime)합니다.
 
 ## <a name="seticonspacing"></a>  CListCtrl::SetIconSpacing
 
@@ -3544,7 +3543,7 @@ CImageList* SetImageList(
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetImageList](#getimagelist)합니다.
+예를 참조 하세요 [CListCtrl::GetImageList](#getimagelist)합니다.
 
 ## <a name="setinfotip"></a>  CListCtrl::SetInfoTip
 
@@ -3572,12 +3571,12 @@ BOOL SetInfoTip(PLVSETINFOTIP plvInfoTip);
 정의 된 위치에 삽입 포인터를 설정합니다.
 
 ```
-BOOL SetInsertMark(LPLVINSERTMARK lvim);
+BOOL SetInsertMark(LPLVINSERTMARK plvim);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*lvim*<br/>
+*plvim*<br/>
 에 대 한 포인터를 [LVINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-lvinsertmark) 구조에 삽입 포인터를 설정 하는 위치를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -3686,7 +3685,7 @@ BOOL SetItem(
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::HitTest](#hittest)합니다.
+예를 참조 하세요 [CListCtrl::HitTest](#hittest)합니다.
 
 ## <a name="setitemcount"></a>  CListCtrl::SetItemCount
 
@@ -3868,7 +3867,7 @@ List view 컨트롤 LVS_AUTOARRANGE 스타일 있으면 목록 보기 항목의 
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetItemPosition](#getitemposition)합니다.
+예를 참조 하세요 [CListCtrl::GetItemPosition](#getitemposition)합니다.
 
 ## <a name="setitemstate"></a>  CListCtrl::SetItemState
 
@@ -3909,7 +3908,7 @@ BOOL SetItemState(
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetTopIndex](#gettopindex)합니다.
+예를 참조 하세요 [CListCtrl::GetTopIndex](#gettopindex)합니다.
 
 ## <a name="setitemtext"></a>  CListCtrl::SetItemText
 
@@ -3943,7 +3942,7 @@ BOOL SetItemText(
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::InsertItem](#insertitem)합니다.
+예를 참조 하세요 [CListCtrl::InsertItem](#insertitem)합니다.
 
 ## <a name="setoutlinecolor"></a>  CListCtrl::SetOutlineColor
 
@@ -4010,7 +4009,7 @@ int SetSelectionMark(int iIndex);
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetSelectionMark](#getselectionmark)합니다.
+예를 참조 하세요 [CListCtrl::GetSelectionMark](#getselectionmark)합니다.
 
 ## <a name="settextbkcolor"></a>  CListCtrl::SetTextBkColor
 
@@ -4070,12 +4069,12 @@ BOOL SetTextColor(COLORREF cr);
 목록 뷰 컨트롤의 타일에 대 한 정보를 설정합니다.
 
 ```
-BOOL SetTileInfo(PLVTILEINFO pti);
+BOOL SetTileInfo(PLVTILEINFO pTileInfo);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*pti*<br/>
+*pTileInfo*<br/>
 에 대 한 포인터를 [LVTILEINFO](/windows/desktop/api/commctrl/ns-commctrl-taglvtileinfo) 설정 정보를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -4257,7 +4256,7 @@ int CALLBACK CListCtrlDlg::MyCompareProc(LPARAM lParam1, LPARAM lParam2,
     LPARAM lParamSort)
 {
     UNREFERENCED_PARAMETER(lParamSort);
-return (int)(lParam1 - lParam2);
+    return (int)(lParam1 - lParam2);
 }
 ```
 
@@ -4381,7 +4380,7 @@ int SubItemHitTest(LPLVHITTESTINFO pInfo);
 void CListCtrlDlg::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
 {
     UNREFERENCED_PARAMETER(pResult);
-LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
+    LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
     LVHITTESTINFO lvhti;
 
     // Clear the subitem text the user clicked on.
@@ -4418,7 +4417,7 @@ BOOL Update(int nItem);
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CListCtrl::GetSelectedCount](#getselectedcount)합니다.
+예를 참조 하세요 [CListCtrl::GetSelectedCount](#getselectedcount)합니다.
 
 ## <a name="see-also"></a>참고자료
 
