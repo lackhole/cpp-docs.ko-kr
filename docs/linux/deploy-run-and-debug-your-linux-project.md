@@ -1,32 +1,59 @@
 ---
 title: Visual Studio에서 C++ Linux 프로젝트 배포, 실행 및 디버그
 description: Visual Studio에 있는 C++ Linux 프로젝트 내의 원격 대상에서 코드를 컴파일하고, 실행하고, 디버그하는 방법을 설명합니다.
-ms.date: 09/12/2018
+ms.date: 06/07/2019
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
-ms.openlocfilehash: cdafb064f8a6269c5ccae938e280b5f47bff3b00
-ms.sourcegitcommit: b4645761ce5acf8c2fc7a662334dd5a471ea976d
+ms.openlocfilehash: 707915a502aafefee47af7e84b534e06ba678b3d
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562889"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821622"
 ---
 # <a name="deploy-run-and-debug-your-linux-project"></a>Linux 프로젝트 배포, 실행 및 디버그
 
+::: moniker range="vs-2015"
+
+Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
+
+::: moniker-end
+
 Visual Studio에서 Linux C++ 프로젝트를 만들고 [Linux 연결 관리자](connect-to-your-remote-linux-computer.md)를 사용하여 프로젝트에 연결하면 해당 프로젝트를 실행하고 디버그할 수 있습니다. 원격 대상에서 코드를 컴파일, 실행 및 디버그합니다.
+
+::: moniker range="vs-2019"
+
+**Visual Studio 2019 버전 16.1** 디버깅 및 빌드에 다른 Linux 시스템을 대상으로 지정할 수 있습니다. **일반** 속성 페이지에서 빌드 머신을 지정하고 **디버깅** 속성 페이지에서 디버깅 머신을 지정합니다.
+
+::: moniker-end
 
 Linux 프로젝트를 조작하고 디버그할 수 있는 여러 가지 방법이 있습니다.
 
 - 중단점, 조사식 창과 같은 기존의 Visual Studio 기능을 사용하여 변수를 마우스 단추로 가리켜 디버그합니다. 이러한 메서드를 사용하여 다른 프로젝트 형식에 사용하는 일반적인 방법으로 디버그할 수 있습니다.
 
-- 특별한 Linux 콘솔 창에서 대상 컴퓨터의 출력을 봅니다. 또한 콘솔을 사용하여 대상 컴퓨터에 입력을 보낼 수 있습니다.
+- Linux 콘솔 창에서 대상 컴퓨터의 출력을 봅니다. 또한 콘솔을 사용하여 대상 컴퓨터에 입력을 보낼 수 있습니다.
 
 ## <a name="debug-your-linux-project"></a>Linux 프로젝트 디버그
 
 1. **디버깅** 속성 페이지에서 디버깅 모드를 선택합니다.
 
+   
+   
+   ::: moniker range="vs-2019"
+
+   GDB는 Linux에서 실행되는 애플리케이션을 디버그하는 데 사용됩니다. 원격 시스템(WSL 아님)에서 디버깅할 때 GDB는 두 가지 모드에서 실행할 수 있고, 모드는 프로젝트의 **디버깅** 속성 페이지에 있는 **디버깅 모드** 옵션에서 선택할 수 있습니다.
+
+   ![GDB 옵션](media/vs2019-debugger-settings.png)
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2017"
+
    GDB는 Linux에서 실행되는 애플리케이션을 디버그하는 데 사용됩니다. GDB는 두 가지 모드에서 실행할 수 있고, 모드는 프로젝트의 **디버깅** 속성 페이지에 있는 **디버깅 모드**에서 선택할 수 있습니다.
 
-   ![GDB 옵션](media/settings_debugger.png)
+   ![GDB 옵션](media/vs2017-debugger-settings.png)
+
+   ::: moniker-end
+
 
    - **gdbserver** 모드에서 원격 시스템의 gdbserver에 연결된 GDB는 로컬에서 실행됩니다.  Linux 콘솔 창이 지원하는 모드는 이 모드뿐입니다.
 
@@ -77,11 +104,30 @@ Linux 프로젝트를 조작하고 디버그할 수 있는 여러 가지 방법�
 
    `handle SIGILL nostop noprint`
 
+## <a name="debug-with-attach-to-process"></a>프로세스에 연결을 사용하여 디버그
+
+Visual Studio 프로젝트에 대한 [디버깅](prop-pages/debugging-linux.md) 속성 페이지 및 CMake 프로젝트에 대한 **Launch.vs.json** 설정은 실행 중인 프로세스에 연결할 수 있도록 하는 설정을 갖습니다. 이러한 설정에 제공된 것 이외의 추가 컨트롤이 필요한 경우 솔루션 또는 작업 영역의 루트에 `Microsoft.MIEngine.Options.xml`이라는 파일을 배치할 수 있습니다. 다음은 간단한 예제입니다.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<SupplementalLaunchOptions>
+    <AttachOptions>
+      <AttachOptionsForConnection AdditionalSOLibSearchPath="/home/user/solibs">
+        <ServerOptions MIDebuggerPath="C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\Common7\IDE\VC\Linux\bin\gdb\7.9\x86_64-linux-gnu-gdb.exe"
+ExePath="C:\temp\ConsoleApplication17\ConsoleApplication17\bin\x64\Debug\ConsoleApplication17.out"/>
+        <SetupCommands>
+          <Command IgnoreFailures="true">-enable-pretty-printing</Command>
+        </SetupCommands>
+      </AttachOptionsForConnection>
+    </AttachOptions>
+</SupplementalLaunchOptions>
+```
+
+**AttachOptionsForConnection**에는 필요할 수 있는 대부분의 특성이 있습니다. 위의 예제에서는 추가 .so 라이브러리를 검색할 위치를 지정하는 방법을 보여 줍니다. 자식 요소 **ServerOptions**는 gdbserver를 대신 사용하여 원격 프로세스에 연결할 수 있습니다. 이렇게 하려면 기호를 사용하여 로컬 gdb 클라이언트(Visual Studio 2017에서 제공되는 것은 위에 표시됨) 및 이진 파일의 로컬 복사본을 지정해야 합니다. **SetupCommands** 요소를 통해 gdb에 직접 명령을 전달할 수 있습니다. GitHub의 [LaunchOptions.xsd 스키마](https://github.com/Microsoft/MIEngine/blob/master/src/MICore/LaunchOptions.xsd)에서 사용 가능한 모든 옵션을 찾을 수 있습니다.
+
 ## <a name="next-steps"></a>다음 단계
 
 - Linux에서 ARM 디바이스를 디버깅하려면 다음 블로그 게시물을 참조하세요. [Visual Studio에서 포함 ARM 디바이스 디버깅](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/debugging-an-embedded-arm-device-in-visual-studio/).
-
-- **프로세스에 연결** 명령을 사용하여 디버깅하려면 블로그 게시물을 참조하세요. [프로젝트 시스템에 대한 Linux C++ 워크로드 개선 사항, Linux 콘솔 창, rsync 및 프로세스에 연결](https://blogs.msdn.microsoft.com/vcblog/2018/03/13/linux-c-workload-improvements-to-the-project-system-linux-console-window-rsync-and-attach-to-process/).
 
 ## <a name="see-also"></a>참고 항목
 

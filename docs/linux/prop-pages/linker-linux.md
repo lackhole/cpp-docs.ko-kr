@@ -1,15 +1,23 @@
 ---
 title: 링커 속성(Linux C++)
-ms.date: 9/26/2017
+ms.date: 06/07/2019
 ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
-ms.openlocfilehash: 2e5c3446d8daeeb052937b5e172fc9fa4b6ad302
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.openlocfilehash: 01e8a9e45272ff55db6bbf738b48c75f4e1f6c48
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678342"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821300"
 ---
 # <a name="linker-properties-linux-c"></a>링커 속성(Linux C++)
+
+::: moniker range="vs-2015"
+
+Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 
 ## <a name="general"></a>일반
 
@@ -55,3 +63,5 @@ ms.locfileid: "51678342"
 직접 함수 바인딩 사용 | 이 옵션을 사용하면 직접 함수 바인딩에 대한 개체가 표시됩니다.
 실행 가능한 스택 필요 없음 | 이 옵션을 사용하면 실행 가능한 스택 필요 없음으로 출력이 표시됩니다.
 전체 보관 파일 | 전체 보관 파일이 소스와 추가 종속성의 모든 코드를 사용합니다.
+
+::: moniker-end

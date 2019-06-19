@@ -1,15 +1,23 @@
 ---
 title: 사용자 지정 빌드 단계 속성(Linux C++)
-ms.date: 10/17/2017
+ms.date: 06/07/2019
 ms.assetid: 77a9c1fb-7c41-4a9b-9418-18ac17ce4e74
-ms.openlocfilehash: 5e6580263e63547e3564eaee260158a312e5fa6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e09af7642171d0d73d2b06c048067bbe61290ddc
+ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644706"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66821419"
 ---
 # <a name="custom-build-step-properties-linux-c"></a>사용자 지정 빌드 단계 속성(Linux C++)
+
+::: moniker range="vs-2015"
+
+Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 
 속성 | 설명
 --- | ---
@@ -19,3 +27,5 @@ ms.locfileid: "50644706"
 추가 종속성 | 사용자 지정 빌드 단계에 사용할 추가 입력 파일의 세미콜론으로 구분한 목록입니다.
 이후 실행 및 이전 실행 | 이러한 옵션은 나열된 대상 기준으로 빌드 프로세스에서 사용자 지정 빌드 단계가 실행되는 때를 정의합니다. 가장 일반적으로 나열되는 대상은 빌드 프로세스의 주요 단계를 나타내는 BuildGenerateSources, BuildCompile, BuildLink입니다. 종종 나열되는 다른 대상은 Midl, CLCompile, Link입니다.
 출력을 콘텐츠로 처리 | 이 옵션은 .appx 패키지의 모든 콘텐츠 파일을 포함하는 Microsoft Store 또는 Windows Phone 앱에만 의미가 있습니다.
+
+::: moniker-end
