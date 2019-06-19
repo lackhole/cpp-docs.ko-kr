@@ -33,11 +33,11 @@ ms.locfileid: "62290685"
 
 ## <a name="remarks"></a>설명
 
-**/link** 옵션과 및 링커 옵션은 반드시 어떤 파일이름과 CL 옵션 뒤에 있어야 합니다. **/link**와 `linker-options` 사이에는 공백이 있어야 합니다. 자세한 내용은 [MSVC 링커 참조](linking.md)를 살펴봅니다.
+**/link** 옵션과 및 링커 옵션은 반드시 어떤 파일 이름과 CL 옵션 뒤에 있어야 합니다. **/link**와 `linker-options` 사이에는 공백이 있어야 합니다. 자세한 내용은 [MSVC 링커 참조](linking.md)를 살펴봅니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플은 명령줄에서 *hello.cpp*를 컴파일하고 기존 개체 파일 *there.obj*에 링크합니다. 그런 다음 추가 전달 **/VERSION** 명령을 링커에 전달합니다.
+다음 샘플은 명령줄에서 *hello.cpp*를 컴파일하고 기존 개체 파일 *there.obj*에 링크합니다. 그런 다음 추가 **/VERSION** 명령을 링커에 전달합니다.
 
 `cl /W4 /EHsc hello.cpp there.obj /link /VERSION:3.14`
 
