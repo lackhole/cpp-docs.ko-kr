@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], optimizing
 ms.assetid: 29ff985d-9bf5-4678-b62d-aad12def75fb
-ms.openlocfilehash: 4d0037ebdfe56690be2f18a2790b2b13967e337c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 354ec1678747be57d387673f2611d526df8dfb47
+ms.sourcegitcommit: 0ad35b26e405bbde17dc0bd0141e72f78f0a38fb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378318"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67194730"
 ---
 # <a name="optimizing-control-drawing"></a>컨트롤 그리기 최적화
 
@@ -46,7 +46,6 @@ ForeColor 또는 BackColor 속성이 변경되는 경우 펜 또는 브러시를
 
 [MFC ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)<br/>
 [COleControl 클래스](../mfc/reference/colecontrol-class.md)<br/>
-[MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX 컨트롤 마법사](../mfc/reference/mfc-activex-control-wizard.md)<br/>
 [MFC ActiveX 컨트롤: ActiveX 컨트롤 그리기](../mfc/mfc-activex-controls-painting-an-activex-control.md)
