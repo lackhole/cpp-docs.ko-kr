@@ -36,9 +36,9 @@ ms.locfileid: "65446268"
 
 모듈의 기본 파일 확장명은 .netmodule입니다.
 
-Visual Studio 2005 이전 버전에서 모듈을 사용 하 여 만든 **/clr:noAssembly**합니다.
+Visual Studio 2005 이전 버전에서는 **/clr:noAssembly**를 사용하여 모듈을 만듭니다.
 
-MSVC 링커는.netmodule 파일 입력을 및 어셈블리 또는.netmodule를 링커에 입력 된.netmodules에 런타임에 종속 되지 않음 출력 파일을 링커에 의해 생성 됩니다.  자세한 내용은 [링커 입력 파일로 사용하는 .netmodule 파일](netmodule-files-as-linker-input.md)을 참조하세요.
+MSVC 링커는 .netmodule 파일을 입력으로 받고 링커에서 만들어진 출력 파일은 링커에 입력된 .netmodule로 런타임 종속성이 없는 어셈블리나 .ntmodules가 됩니다.  자세한 내용은 [링커 입력 파일로 사용하는 .netmodule 파일](netmodule-files-as-linker-input.md)을 참조하세요.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
