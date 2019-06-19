@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 4f38f4f4-3176-4caf-8200-5c7585dc1ed3
 ms.openlocfilehash: 2dbd5ae5ddf802185912c49caf37aa61c6a7d4c3
 ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/08/2019
 ms.locfileid: "65446268"
 ---
 # <a name="ln-create-msil-module"></a>/LN(MSIL 모듈 만들기)
 
-어셈블리 매니페스트를 출력 파일에 삽입하지 않도록 지정합니다.
+어셈블리 매니페스트가 출력 파일에 삽입되지 않도록 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,11 +26,11 @@ ms.locfileid: "65446268"
 
 ## <a name="remarks"></a>설명
 
-기본적으로 **/LN** (어셈블리 매니페스트가 출력 파일에 삽입 됩니다.)는 적용 되지 않습니다.
+기본적으로 **/LN**은 적용되지 않습니다(어셈블리 매니페스트가 출력 파일에 삽입됩니다).
 
-때 **/LN** 를 사용 중 하나는 [/clr (공용 언어 런타임 컴파일)](clr-common-language-runtime-compilation.md) 옵션 사용 해야 합니다.
+**/LN**을 사용하면 [/clr(공용 언어 런타임 컴파일)](clr-common-language-runtime-compilation.md) 옵션 중 하나를 사용해야 합니다.
 
-매니페스트에 어셈블리 메타 데이터가 없는 관리 되는 프로그램 모듈을 이라고 합니다. 로 컴파일하는 경우 [(컴파일 없이 링크 사용)는 /c](c-compile-without-linking.md) 및 **/LN**를 지정 [/NOASSEMBLY (MSIL 모듈 만들기)](noassembly-create-a-msil-module.md) 링커 단계 출력 파일을 만듭니다.
+매니페스트에 어셈블리 메타데이터가 없는 관리되는 프로그램을 모듈이라고 합니다. [/c(링크 없이 컴파일)](c-compile-without-linking.md) 및 **/LN**을 지정하여 컴파일하는 경우 링커 단계에서 [/NOASSEMBLY(MSIL 모듈 만들기)](noassembly-create-a-msil-module.md)를 지정하여 출력 파일을 만듭니다.
 
 어셈블리를 작성 하는 구성 요소 기반 접근 방식을 사용 하려는 경우 모듈을 만들 수도 있습니다.  즉, 형식을 작성 하 고 모듈을 컴파일할 수 있습니다.  그런 다음 하나 이상의 모듈에서 어셈블리를 생성할 수 있습니다.  모듈에서 어셈블리를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [링커 입력으로.netmodule 파일](netmodule-files-as-linker-input.md) 하거나 [Al.exe (어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)합니다.
 
