@@ -1,5 +1,5 @@
 ---
-title: C를 만들기 /C++ Visual Studio에서 Dll
+title: Visual Studio에서 C/C++ DLL 빌드
 ms.date: 05/06/2019
 helpviewer_keywords:
 - executable files [C++]
@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65220749"
 ---
-# <a name="create-cc-dlls-in-visual-studio"></a>C를 만들기 /C++ Visual Studio에서 Dll
+# <a name="create-cc-dlls-in-visual-studio"></a>Visual Studio에서 C/C++ DLL 빌드
 
 Windows, 동적 연결 라이브러리 (DLL)의 함수 및 리소스의 공유 라이브러리로 사용 되는 실행 파일의 종류입니다. 동적 연결 함수를 호출 하거나 별도 파일에 저장 된 리소스를 사용 하 여 실행 파일을 사용 하도록 설정 하는 운영 체제 기능입니다. 이러한 함수 및 리소스는 사용하는 실행 파일과 별도로 컴파일 및 배포할 수 있습니다. DLL을 독립 실행형 실행 파일입니다. 호출 하는 응용 프로그램의 컨텍스트에서 실행 됩니다. 응용 프로그램이 로드 될 때 운영 체제는 응용 프로그램의 메모리 공간에 DLL을 로드할 수 있습니다 (*암시적 링크*), 또는 런타임 시 주문형 (*명시적 링크*). DLL을 통해 실행 파일 간에 함수 및 리소스를 쉽게 공유할 수 있습니다. 즉, 여러 개의 응용 프로그램이 메모리에 있는 하나의 DLL 복사본 내용을 동시에 액세스할 수 있습니다.
 
