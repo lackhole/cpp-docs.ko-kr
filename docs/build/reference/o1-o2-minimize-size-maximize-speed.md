@@ -25,7 +25,7 @@ ms.locfileid: "62320359"
 ---
 # <a name="o1-o2-minimize-size-maximize-speed"></a>/O1, /O2(크기 최소화, 속도 최대화)
 
-생성 된 코드의 속도 및 미리 정의 된 집합이 크기에 영향을 주는 옵션을 선택 합니다.
+생성되는 코드의 크기와 속도에 영향을 주는 미리 정의된 옵션 집합을 선택합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,25 +33,25 @@ ms.locfileid: "62320359"
 
 ## <a name="remarks"></a>설명
 
-**/o1** 하 고 **/o2** 컴파일러 옵션은 신속 하 게 한 번에 몇 가지 특정 최적화 옵션을 설정 합니다. 합니다 **/o1** 옵션의 대부분의 경우 가장 작은 코드를 작성 하는 개별 최적화 옵션을 설정 합니다. 합니다 **/o2** 대부분의 경우 가장 빠른 코드를 만드는 옵션을 설정 하는 옵션입니다. 합니다 **/o2** 옵션이 릴리스 빌드에 대 한 기본 옵션입니다. 이 테이블에서 설정 된 특정 옵션을 보여 줍니다 **/o1** 하 고 **/o2**:
+**/O1**과 **/O2** 컴파일러 옵션은 몇가지 옵션 지정을 단번에 지정할 수 있는 신속한 방법입니다. **/O1** 옵션의 대부분의 경우 가장 작은 코드를 작성하는 개별 최적화 옵션을 설정합니다. **/O2** 옵션은 대부분의 경우 가장 빠른 코드를 만드는 옵션이 설정됩니다. **/O2** 옵션이 릴리스 빌드에 대한 기본 옵션입니다. 이 표는 **/O1**과 **/O2**에 의해 설정되는 특정 옵션을 보여 줍니다.
 
 |옵션|에 해당|
 |------------|-------------------|
 |**/ O1** (크기 최소화)|[/Og](og-global-optimizations.md) [/Os](os-ot-favor-small-code-favor-fast-code.md) [/Oy](oy-frame-pointer-omission.md) [/Ob2](ob-inline-function-expansion.md) [/GF](gf-eliminate-duplicate-strings.md) [/Gy](gy-enable-function-level-linking.md)|
 |**/ O2** (속도 최대화)|[/Og](og-global-optimizations.md) [/Oi](oi-generate-intrinsic-functions.md) [/Ot](os-ot-favor-small-code-favor-fast-code.md) [/Oy](oy-frame-pointer-omission.md) [/Ob2](ob-inline-function-expansion.md) [/GF](gf-eliminate-duplicate-strings.md) [/Gy](gy-enable-function-level-linking.md)|
 
-**/ O1** 하 고 **/o2** 함께 사용할 수 없습니다.
+**/O1**과 **/O2**는 함께 사용할 수 없습니다.
 
 > [!NOTE]
-> **x86 특정** 프레임 포인터 생략 사용을 의미 하는 이러한 옵션 ([/Oy](oy-frame-pointer-omission.md)) 옵션입니다.
+> **x86 특정** 옵션은 프레임 포인터 생략([/Oy](oy-frame-pointer-omission.md))옵션의 사용을 의미합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 아래 **구성 속성**오픈 **C /C++**  를 선택한 후는 **최적화** 속성 페이지.
+1. **구성 속성**에서 **C/C++**을 연 다음 **최적화** 속성 페이지를 선택합니다.
 
-1. 수정 된 **최적화** 속성입니다.
+1. **최적화** 속성을 수정합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
