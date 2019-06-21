@@ -32,7 +32,7 @@ ms.locfileid: "65446268"
 
 매니페스트에 어셈블리 메타데이터가 없는 관리되는 프로그램을 모듈이라고 합니다. [/c(링크 없이 컴파일)](c-compile-without-linking.md) 및 **/LN**을 지정하여 컴파일하는 경우 링커 단계에서 [/NOASSEMBLY(MSIL 모듈 만들기)](noassembly-create-a-msil-module.md)를 지정하여 출력 파일을 만듭니다.
 
-어셈블리를 작성 하는 구성 요소 기반 접근 방식을 사용 하려는 경우 모듈을 만들 수도 있습니다.  즉, 형식을 작성 하 고 모듈을 컴파일할 수 있습니다.  그런 다음 하나 이상의 모듈에서 어셈블리를 생성할 수 있습니다.  모듈에서 어셈블리를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [링커 입력으로.netmodule 파일](netmodule-files-as-linker-input.md) 하거나 [Al.exe (어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)합니다.
+어셈블리를 작성할 때 구성요소 기반 접근 방식을 사용하려는 경우 모듈을 만들 수 있습니다.  즉, 형식을 작성하고 모듈로 컴파일할 수 있습니다.  그런 다음 하나 이상의 모듈에서 어셈블리를 생성할 수 있습니다.  모듈에서 어셈블리를 만드는 방법에 대한 자세한 내용은 [링커 입력의 .netmodule 파일](netmodule-files-as-linker-input.md)이나 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)를 참조합니다.
 
 모듈의 기본 파일 확장명은 .netmodule입니다.
 
