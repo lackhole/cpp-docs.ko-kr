@@ -43,12 +43,12 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: 2e3e671cd92313ad120d2cd6aae3f7e815e09e65
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 01116116ad6bb455d3b0fd8966e65b2fec4c5a35
+ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390986"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344372"
 ---
 # <a name="how-to-add-edit-or-delete-controls-c"></a>방법: Add, Edit, 또는 컨트롤 삭제 (C++)
 
@@ -69,9 +69,9 @@ ms.locfileid: "62390986"
 
    - 컨트롤을 배치 하려는 위치 대화 상자를 선택 하 고 선택한 위치 컨트롤이 나타납니다.
 
-   - 끌어서 놓기 컨트롤을 **도구 상자** 대화 상자에서 위치를 창 컨트롤을 이동 하거나 크기와 모양을 변경 후 수 있습니다.
+   - 끌어서 놓기 컨트롤을 **도구 상자** 대화 상자에서 위치를 창입니다. 그런 다음, 컨트롤을 이동 하거나 크기와 셰이프를 변경할 수 있습니다.
 
-   - 컨트롤을 두 번 클릭 합니다 **도구 상자** 창 대화 상자에서 표시, 한 다음 원하는 위치로 컨트롤 위치를 변경 합니다.
+   - 컨트롤을 두 번 클릭 합니다 **도구 상자** 창 대화 상자에 표시 합니다. 컨트롤의 위치를 원하는 위치로 변경 합니다.
 
 ### <a name="to-add-multiple-controls"></a>여러 컨트롤을 추가 하려면
 
@@ -87,7 +87,7 @@ ms.locfileid: "62390986"
 
 1. 대화 상자에 새 컨트롤의 왼쪽 위 모퉁이 만들려는 십자선으로 표시 되는 커서를 놓습니다.
 
-1. 선택 하 고 대화 상자에서 컨트롤의 왼쪽 위 모퉁이 고정 하려면 마우스 단추를 누른 후 컨트롤의 원하는 크기가 될 때까지 커서를 오른쪽 아래로 끕니다.
+1. 선택 하 고 대화 상자에서 컨트롤의 왼쪽 위 모퉁이 고정 하려면 마우스 단추를 길게 누른 키를 누릅니다. 다음 커서를 오른쪽 아래로 끕니다, 컨트롤의 원하는 크기가 될 때까지 합니다.
 
    > [!NOTE]
    > 그릴 컨트롤의 네 모퉁이 고정할 수 있습니다. 이 절차 예를 들어 왼쪽 위 모퉁이 사용 합니다.
@@ -99,7 +99,7 @@ ms.locfileid: "62390986"
 
 ### <a name="to-add-a-custom-control"></a>사용자 지정 컨트롤을 추가하려면
 
-선택 하 여 대화 상자에 사용자 지정 컨트롤을 추가할 수 있습니다는 **사용자 지정 컨트롤** 아이콘에는 **도구 상자** 끌어서 놓아 대화 상자. 추가 하는 **Syslink** 컨트롤, 사용자 지정 컨트롤을 추가한 다음 컨트롤의 변경 **클래스** 속성을 **Syslink**합니다. 이 작업에는 속성을 새로 고치고 표시 하면 합니다 **Syslink** 속성을 제어 합니다. MFC 래퍼 클래스에 대 한 자세한 내용은 [CLinkCtrl](../mfc/reference/clinkctrl-class.md)합니다.
+대화 상자에 사용자 지정 컨트롤을 추가할 수 있습니다. 선택 합니다 **사용자 지정 컨트롤** 아이콘에는 **도구 상자** 대화 상자에 놓습니다. 추가 하는 `Syslink` 제어, 사용자 지정 컨트롤을 추가한 다음 컨트롤의 변경 **클래스** 속성을 `Syslink`입니다. 이 작업에는 속성을 새로 고치고 표시 하면는 `Syslink` 속성을 제어 합니다. MFC 래퍼 클래스에 대 한 자세한 내용은 [CLinkCtrl](../mfc/reference/clinkctrl-class.md)합니다.
 
 ## <a name="edit-controls"></a>Edit 컨트롤
 
@@ -139,7 +139,7 @@ ms.locfileid: "62390986"
 > [!TIP]
 > 대화 상자 컨트롤에서 기존 처리기로 이동하려면 컨트롤을 두 번 클릭합니다.
 
-사용할 수도 있습니다는 **멤버 변수** 탭에서 [MFC 클래스 마법사](../mfc/reference/mfc-class-wizard.md) , 지정된 된 클래스에 대 한 새 멤버 변수를 추가 하 여 이미 정의 된 멤버 변수를 표시 합니다.
+사용할 수도 있습니다는 **멤버 변수** 탭에 [MFC 클래스 마법사](../mfc/reference/mfc-class-wizard.md) , 지정된 된 클래스에 대 한 새 멤버 변수를 추가 하 고 미리 정의 된 멤버 변수를 표시 하 합니다.
 
 ## <a name="delete-controls"></a>컨트롤 삭제
 
@@ -149,7 +149,7 @@ ms.locfileid: "62390986"
 
 ### <a name="troubleshooting"></a>문제 해결
 
-공용 컨트롤 또는 서식 있는 편집 컨트롤을 대화 상자를 추가한 후 대화 상자를 테스트할 때나 예를 들어 대화 상자 자체가 표시 되지 않습니다는 표시 되지 않습니다.
+대화 상자에는 공용 컨트롤 또는 rich edit 컨트롤을 추가한 후 대화 상자를 테스트 하는 경우 표시 되지 않습니다. 또는 자체 대화 상자 표시 되지 않습니다. 예를 들어:
 
 1. Windows 응용 프로그램 (콘솔 앱)을 만든 하므로 응용 프로그램 설정을 수정 Win32 프로젝트를 만듭니다.
 
@@ -196,7 +196,7 @@ Visual Studio에서는 ActiveX 컨트롤을 대화 상자에 삽입할 수 있�
 |**Path**|ActiveX 컨트롤은 찾을 수 있는 파일이 표시 됩니다.|
 
 > [!CAUTION]
-> 시스템에 일부 ActiveX 컨트롤을 배포하지 못할 수 있습니다. 컨트롤을 설치한 소프트웨어에 대한 사용권 계약을 참조하거나 소프트웨어 회사에 문의하세요.
+> 시스템에 일부 ActiveX 컨트롤을 배포하지 못할 수 있습니다. 컨트롤을 설치 하는 소프트웨어에 대 한 사용권 계약 참조 하거나 소프트웨어 회사에 게 문의 하십시오.
 
 #### <a name="to-add-an-activex-control"></a>ActiveX 컨트롤을 추가 하려면
 
@@ -215,7 +215,7 @@ Visual Studio에서는 ActiveX 컨트롤을 대화 상자에 삽입할 수 있�
 
 #### <a name="to-edit-properties-for-an-activex-control"></a>ActiveX 컨트롤에 대 한 속성을 편집 하려면
 
-개별 공급 업체에서 제공 하는 ActiveX 컨트롤 속성 및 특성 자체와 함께 가져올 수 있습니다. 이러한 속성에 표시 되는 **속성** 창에서 ActiveX 컨트롤의 작성자가 만든 페이지에 표시 되는 모든 속성을 포함 하는 **속성 페이지** (보려는 는대화상자 **속성 페이지** 특정 ActiveX 컨트롤을 선택 합니다 **속성 페이지** 단추를 [속성 창](/visualstudio/ide/reference/properties-window)).
+개별 공급 업체에서 제공 하는 ActiveX 컨트롤 속성 및 특성 자체와 함께 가져올 수 있습니다. 이러한 속성에 표시 되는 **속성** 창입니다. ActiveX 컨트롤의 작성자가 만든 모든 속성 페이지에 표시 되는 **속성 페이지** 대화 상자. (보려는 합니다 **속성 페이지** 특정 ActiveX 컨트롤을 선택 합니다 **속성 페이지** 단추를 [속성 창](/visualstudio/ide/reference/properties-window)).
 
 - 선택 합니다 **ActiveX** 컨트롤을 메뉴로 이동 **보기** > **속성 페이지** 속성을 보려면. 속성 페이지에서 필요에 따라 변경 합니다.
 
