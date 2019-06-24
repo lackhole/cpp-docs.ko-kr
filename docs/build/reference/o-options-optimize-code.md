@@ -32,9 +32,9 @@ ms.locfileid: "62320424"
 
 - [/Oi](oi-generate-intrinsic-functions.md)는 적절한 함수 호출을 위한 내장 함수를 생성합니다.
 
-- [/Os](os-ot-favor-small-code-favor-fast-code.md) 크기 최적화 속도 최적화 보다 우선. 컴파일러에 지시 합니다.
+- [/Os](os-ot-favor-small-code-favor-fast-code.md)는 크기 최적화를 속도 최적화보다 우선하도록 컴파일러에 지시합니다.
 
-- [/Ot](os-ot-favor-small-code-favor-fast-code.md) (기본 설정) 속도 최적화 크기 최적화 보다 우선. 컴파일러에 지시 합니다.
+- [/Ot](os-ot-favor-small-code-favor-fast-code.md)(기본 설정)는 속도 최적화를 크기 최적화보다 우선하도록 컴파일러에 지시합니다.
 
 - [/Ox](ox-full-optimization.md) 다양한 속도에 중점을 두어 최적화를 선택하는 옵션을 조합합니다. **/O2** 최적화의 엄격한 하위집합입니다.
 
