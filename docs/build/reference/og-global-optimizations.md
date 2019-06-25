@@ -22,7 +22,7 @@ ms.locfileid: "62320294"
 ---
 # <a name="og-global-optimizations"></a>/Og(전역 최적화)
 
-더 이상 사용되지 않습니다. 로컬 및 전역 최적화, 자동 레지스터 할당 및 fnvm 최적화를 제공 합니다. [/O1 (크기 최소화)](o1-o2-minimize-size-maximize-speed.md)나 [/O2 (속도 최대화)](o1-o2-minimize-size-maximize-speed.md)중 하나를 사용하는것이 좋습니다.
+더 이상 사용되지 않습니다. 로컬 및 전역 최적화, 자동 레지스터 할당 및 루프 최적화를 제공합니다. [/O1(크기 최소화)](o1-o2-minimize-size-maximize-speed.md)나 [/O2(속도 최대화)](o1-o2-minimize-size-maximize-speed.md) 중 하나를 사용하는 것이 좋습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,13 +30,13 @@ ms.locfileid: "62320294"
 
 ## <a name="remarks"></a>설명
 
-**/Og**는 더이상 사용되지 않습니다. 이제 이러한 최적화는 기본적으로 적용됩니다. 최적화에 대한 자세한 내용은 [/O1, /O2 (크기 최소화, 속도 최대화)](o1-o2-minimize-size-maximize-speed.md) 및 [/Ox (대부분의 속도 최적화 사용)](ox-full-optimization.md)을 참조합니다.
+**/Og**는 더 이상 사용되지 않습니다. 이제 이러한 최적화는 기본적으로 적용됩니다. 최적화에 대한 자세한 내용은 [/O1, /O2 (크기 최소화, 속도 최대화)](o1-o2-minimize-size-maximize-speed.md) 및 [/Ox(대부분의 속도 최적화 사용)](ox-full-optimization.md)를 참조합니다.
 
-**/Og** 최적화는에서 다음을 사용할 수 있습니다.
+**/Og**에서는 다음 최적화를 사용할 수 있습니다.
 
-- 로컬 및 전역 공통 하위 식제거
+- 로컬 및 전역 공통 하위 식 제거
 
-   이 최적화는 공통 하위 식의 값이 한번 계산 됩니다. 다음 예의 경우 `b` 및 `c` 값 세식 사이에서 변경 되지 않으면, 컴파일러가 `b + c`의 계산값을 임시변수에 할당하고 `b + c`에 그 값을 대입할 수 있습니다.
+   이 최적화에서는 공통 하위 식의 값이 한 번 계산됩니다. 다음 예의 경우 `b` 및 `c` 값이 세 식 사이에서 변경되지 않으면, 컴파일러가 `b + c`의 계산 값을 임시 변수에 할당하고 `b + c`를 그 값으로 대체할 수 있습니다.
 
     ```C
     a = b + c;
@@ -48,11 +48,11 @@ ms.locfileid: "62320294"
 
 - 자동 레지스터 할당
 
-   이 최적화는 컴파일러가 자주 사용하는 변수와 하위식을 레지스터에 저장할 수 있게 합니다. `register` 키워드는 무시 됩니다.
+   이 최적화는 컴파일러가 자주 사용하는 변수와 하위 식을 레지스터에 저장할 수 있게 합니다. `register` 키워드는 무시됩니다.
 
 - 루프 최적화
 
-   이 최적화는 루프의 본문에서 변하지 않는 부분식을 제거합니다. 최적 루프는 루프의 각 실행을 통해 값이 변경되는 식만 포함 합니다. 다음 예제에서 `x + y`는 루프 본문에서 변경되지 않습니다.
+   이 최적화는 루프의 본문에서 변하지 않는 부분 식을 제거합니다. 최적 루프는 루프의 각 실행을 통해 값이 변경되는 식만 포함합니다. 다음 예제에서 식 `x + y`는 루프 본문에서 변경되지 않습니다.
 
     ```C
     i = -100;
@@ -61,7 +61,7 @@ ms.locfileid: "62320294"
     }
     ```
 
-   최적화 후 `x + y`는 루프가 실행 될 때마다 계산되는것이 아닌 한 번만 계산 됩니다.
+   최적화 후 `x + y`는 루프가 실행될 때마다 계산되는 대신 한 번만 계산됩니다.
 
     ```C
     i = -100;
@@ -71,12 +71,12 @@ ms.locfileid: "62320294"
     }
     ```
 
-   루프 최적화는 컴파일러가 [__restrict](../../cpp/extension-restrict.md), [noalias](../../cpp/noalias.md) 또는 [restrict](../../cpp/restrict.md)를 이용해 별칭을 지정하는 경우 훨씬 효과적입니다.
+   루프 최적화는 컴파일러가 별칭이 없다고 가정할 수 있는 경우 훨씬 효과적이며, 이는 [__restrict](../../cpp/extension-restrict.md), [noalias](../../cpp/noalias.md) 또는 [restrict](../../cpp/restrict.md)를 이용해 설정할 수 있습니다.
 
    > [!NOTE]
    > `g` 옵션과 함께 `optimize` pragma를 사용하여 함수 별로 전역 최적화를 사용하거나 사용하지 않도록 설정할 수 있습니다.
 
-관련 정보는 [/Oi (내장 함수 생성)](oi-generate-intrinsic-functions.md) 및 [/Ox (사용 가장 속도 최적화)](ox-full-optimization.md)를 참조합니다.
+관련 정보는 [/Oi(내장 함수 생성)](oi-generate-intrinsic-functions.md) 및 [/Ox(최고 속도 사용 최적화)](ox-full-optimization.md)를 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -86,7 +86,7 @@ ms.locfileid: "62320294"
 
 1. **명령줄** 속성 페이지를 클릭합니다.
 
-1. **추가 옵션** 상자에서 컴파일러 옵션을 입력 합니다.
+1. **추가 옵션** 상자에서 컴파일러 옵션을 입력합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
