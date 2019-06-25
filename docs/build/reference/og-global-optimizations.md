@@ -22,7 +22,7 @@ ms.locfileid: "62320294"
 ---
 # <a name="og-global-optimizations"></a>/Og(전역 최적화)
 
-더 이상 사용되지 않습니다. 로컬 및 전역 최적화를 제공 합니다. 자동 레지스터 할당 및 최적화를 반복 합니다. 하나를 사용 하는 것이 좋습니다 [/o1 (크기 최소화)](o1-o2-minimize-size-maximize-speed.md) 하거나 [/o2 (속도 최대화)](o1-o2-minimize-size-maximize-speed.md) 대신 합니다.
+더 이상 사용되지 않습니다. 로컬 및 전역 최적화, 자동 레지스터 할당 및 루프 최적화를 제공합니다. [/o1 (크기 최소화)](o1-o2-minimize-size-maximize-speed.md) 나 [/o2 (속도 최대화)](o1-o2-minimize-size-maximize-speed.md) 중 하나를 사용하는 것이 좋습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,7 +30,7 @@ ms.locfileid: "62320294"
 
 ## <a name="remarks"></a>설명
 
-**/Og** 는 사용 되지 않습니다. 이제 이러한 최적화는 기본적으로 일반적으로 사용 됩니다. 최적화에 대 한 자세한 내용은 참조 하세요. [/o1, / o2 (크기 최소화, 속도 최대화)](o1-o2-minimize-size-maximize-speed.md) 하거나 [/Ox (사용 가장 속도 최적화)](ox-full-optimization.md)합니다.
+**/Og** 는 더 이상 사용되지 않습니다. 이제 이러한 최적화는 기본적으로 적용됩니다. 최적화에 대한 자세한 내용은 [/o1, / o2 (크기 최소화, 속도 최대화)](o1-o2-minimize-size-maximize-speed.md) 및 [/Ox (대부분의 속도 최적화 사용)](ox-full-optimization.md)를 참조합니다.
 
 **/Og**에서는 다음 최적화를 사용할 수 있습니다.
 
@@ -48,7 +48,7 @@ ms.locfileid: "62320294"
 
 - 자동 레지스터 할당
 
-   이 최적화 컴파일러가를 자주 사용 되는 저장소 변수와 하위 식을 레지스터로; `register` 키워드는 무시 됩니다.
+   이 최적화는 컴파일러가 자주 사용하는 변수와 하위 식을 레지스터에 저장할 수 있게 합니다. `register` 키워드는 무시됩니다.
 
 - 루프 최적화
 
