@@ -20,12 +20,12 @@ helpviewer_keywords:
 - __leave keyword [C++], try-finally statement
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
-ms.openlocfilehash: d2a1c63f686b46aad4e174c86895f6f9fc00d260
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c52921d2e9c4265d42b3e0187af1396ff8946bde
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404733"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400808"
 ---
 # <a name="try-finally-statement"></a>try-finally 문
 
@@ -40,12 +40,12 @@ ms.locfileid: "62404733"
 > **\_\_finally**<br/>
 > {<br/>
 > &nbsp;&nbsp;&nbsp;&nbsp;종료 코드<br/>
-> }<br/>
+> }
 
 ## <a name="grammar"></a>문법
 
 *try-finally-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**\_\_try** *compound-statement* **\_\_finally** *compound-statement*
+&nbsp;&nbsp;&nbsp;&nbsp; **\_\_try** *compound-statement* **\_\_finally** *compound-statement*
 
 **try finally** 문에 C에 대 한 Microsoft 확장 및 C++ 코드 블록의 실행이 중단 된 경우 정리 코드 실행을 보장 하기 위해 대상 응용 프로그램을 사용 하도록 설정 하는 언어입니다. 정리는 메모리 할당 해제, 파일 닫기 및 파일 핸들 해제와 같은 작업으로 구성됩니다. 합니다 **try-finally** 문에 루틴에서 반환 하는 위치는 검사가 수행 됩니다 오류가 발생할 수 있는 중간 많은 루틴에 특히 유용 합니다.
 

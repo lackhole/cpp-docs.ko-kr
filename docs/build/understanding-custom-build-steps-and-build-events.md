@@ -11,12 +11,12 @@ helpviewer_keywords:
 - build steps [C++], build events
 - builds [C++], custom build steps
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
-ms.openlocfilehash: fc12689148e3bf23c233e4656249625d1156f9a7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 93a1c787a863c2c52986a00fdeabbc4d44b0fcce
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314678"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400444"
 ---
 # <a name="understanding-custom-build-steps-and-build-events"></a>사용자 지정 빌드 단계 및 빌드 이벤트 이해
 
@@ -69,7 +69,7 @@ Visual C++ 개발 환경 내에서 빌드 프로세스를 사용자 지정하는
 [사용자 지정 빌드 도구 지정](specifying-custom-build-tools.md)<br/>
 [빌드 이벤트 지정](specifying-build-events.md)<br/>
 [빌드 사용자 지정 문제 해결](troubleshooting-build-customizations.md)<br/>
-[사용자 지정 빌드 단계 또는 빌드 이벤트의 출력 형식 지정](formatting-the-output-of-a-custom-build-step-or-build-event.md)<br/>
+[사용자 지정 빌드 단계 또는 빌드 이벤트의 출력 형식 지정](formatting-the-output-of-a-custom-build-step-or-build-event.md)
 
 ## <a name="see-also"></a>참고자료
 

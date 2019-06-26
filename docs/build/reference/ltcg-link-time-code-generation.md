@@ -13,12 +13,12 @@ helpviewer_keywords:
 - -LTCG linker option
 - LTCG linker option
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
-ms.openlocfilehash: a8f13c32593d1cfef690d63d506faf14490de02d
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 1e33d62694fe782b1a1719fa3c5a36c6fb04670a
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837262"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400622"
 ---
 # <a name="ltcg-link-time-code-generation"></a>/LTCG(링크 타임 코드 생성)
 
@@ -26,11 +26,11 @@ ms.locfileid: "65837262"
 
 ## <a name="syntax"></a>구문
 
-> **/LTCG**[ **:** {**INCREMENTAL**|**NOSTATUS**|**STATUS**|**OFF**}]<br/>
+> **/LTCG**[ **:** {**INCREMENTAL**|**NOSTATUS**|**STATUS**|**OFF**}]
 
 이 옵션은 Visual Studio 2015부터 더 이상 사용되지 않습니다.
 
-> **/LTCG:** {**PGINSTRUMENT**|**PGOPTIMIZE**|**PGUPDATE**}<br/>
+> **/LTCG:** {**PGINSTRUMENT**|**PGOPTIMIZE**|**PGUPDATE**}
 
 ### <a name="arguments"></a>인수
 
@@ -52,7 +52,7 @@ ms.locfileid: "65837262"
 **PGUPDATE**<br/>
 (선택 사항) 이 옵션은 Visual Studio 2015부터 더 이상 사용되지 않습니다. 대신 **/LTCG** 및 **/USEPROFILE**을 사용하여 최적화된 이미지를 다시 빌드합니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요. 이 옵션의 약식 표현은 **/LTCG:PGU**입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 **/LTCG** 옵션은 링커가 컴파일러를 호출하고 전체 프로그램 최적화를 수행하도록 지정합니다. 프로필 기반 최적화를 수행할 수도 있습니다. 자세한 내용은 [프로필 기반 최적화](../profile-guided-optimizations.md)를 참조하세요.
 
@@ -150,7 +150,7 @@ PGO를 초기화하기 위해 **/LTCG** 및 **/GENPROFILE** 옵션과 함께 지
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LinkTimeCodeGeneration%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [MSVC 링커 참조](linking.md)
 - [MSVC 링커 옵션](linker-options.md)
