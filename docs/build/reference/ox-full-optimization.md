@@ -18,8 +18,6 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62320099"
 ---
-https://github.com/MicrosoftDocs/cpp-docs.ko-kr/blob/live/docs/build/reference/ox-full-optimization.md
-
 # <a name="ox-enable-most-speed-optimizations"></a>/Ox (대부분의 속도 최적화 사용)
 
 **/Ox** 컴파일러 옵션은 속도를 우선시하는 최적화 조합입니다. 일부 버전의 Visual Studio IDE 및 컴파일러 도움말 메시지에서는 이를 *전체 최적화*라고 부르지만 **/Ox** 컴파일러 옵션은 **/O2**를 사용한 속도 최적화 옵션의 하위 집합만 가능합니다.
