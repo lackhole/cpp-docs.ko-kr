@@ -21,12 +21,12 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: a752122d89b3d952aec664f0dec092af1599f143
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 850d4b72ddb45551528526cd9e02345aee74d751
+ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448923"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344221"
 ---
 # <a name="resource-editors-c"></a>리소스 편집기 (C++)
 
@@ -50,7 +50,7 @@ ms.locfileid: "65448923"
 |[버전 정보 편집기](../windows/version-information-editor.md)|Visual Studio에서 버전 정보 C++ 프로젝트입니다.|
 
 > [!NOTE]
-> 프로젝트에.rc 파일이 없으면 하세요 [방법: 리소스 만들기](../windows/how-to-create-a-resource-script-file.md)합니다.
+> 프로젝트에.rc 파일이 없으면 참조 [방법: 리소스 만들기](../windows/how-to-create-a-resource-script-file.md)합니다.
 
 ## <a name="view-and-edit-resources"></a>보기 및 편집 리소스
 

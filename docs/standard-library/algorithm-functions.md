@@ -200,12 +200,12 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: 17ce5628dbf7c781cfc9d3ebdf348d003c863f76
-ms.sourcegitcommit: 0ad35b26e405bbde17dc0bd0141e72f78f0a38fb
+ms.openlocfilehash: 7dc5554b2d49e4c306aa64c32d7c9f8cc8a5bb6a
+ms.sourcegitcommit: 1acb6755e11379026a96f63facac4d33f4dc47ae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67194771"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67314277"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algorithm&gt; 함수
 
@@ -405,7 +405,7 @@ int main()
 ```
 
 ```Output
-L = ( 50 40 10 20 20 )
+li = ( 50 40 10 20 20 )
 All the elements are even numbers.
 ```
 
@@ -472,7 +472,7 @@ int main()
 ```
 
 ```Output
-L = ( 51 41 11 21 20 )
+li = ( 51 41 11 21 20 )
 There's an even element in li.
 ```
 
@@ -859,6 +859,35 @@ OutputIterator copy_n(
 ### <a name="remarks"></a>설명
 
 템플릿 함수는 `*(dest + N) = *(first + N))` 마다 한 번씩 `N` 범위의 `[0, count)`, 엄격 하 게 값을 높이기 위한 `N` 가장 낮은 값을 사용 하 여 시작 합니다. 그런 다음 `dest + N`를 반환합니다. 하는 경우 *dest* 하 고 *첫 번째* 저장소, 영역을 지정 *dest* 범위에 없어야 `[first, last)`합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// alg_copy_n.cpp
+// compile with: cl /EHsc /W4 alg_copy_n.cpp
+#include <algorithm>
+#include <iostream>
+#include <string>
+
+int main()
+{
+    using namespace std;
+    string s1{"dandelion"};
+    string s2{"badger"};
+
+    cout << s1 << " + " << s2 << " = ";
+    
+    // Copy the first 3 letters from s1 
+    // to the first 3 positions in s2
+    copy_n(s1.begin(), 3, s2.begin());
+
+    cout << s2 << endl;
+}
+```
+
+```Output
+dandelion + badger = danger
+```
 
 ## <a name="count"></a>  count
 

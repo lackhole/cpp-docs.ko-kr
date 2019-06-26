@@ -14,19 +14,19 @@ helpviewer_keywords:
 - dialog boxes [C++], size
 - dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-ms.openlocfilehash: c5f026683881ba8e608bd00089879e0e2a7b4af2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 28ed6c8be262e0446b828cfa3e6e9fe2ba53672a
+ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223573"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344216"
 ---
 # <a name="how-to-create-a-dialog-box-c"></a>방법: 대화 상자를 만들려면 (C++)
 
 크기와 위치는 C++ 대화 상자, 위치 및 안에 있는 컨트롤의 크기 대화 단위로 측정 됩니다. 개별 컨트롤 및 대화 상자에 대 한 값은 Visual Studio 상태를 선택 하면 표시줄의 오른쪽 아래에 나타납니다.
 
 > [!NOTE]
-> 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
+> 참조 프로젝트에.rc 파일이 없으면 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)합니다.
 
 ## <a name="how-to"></a>방법
 
@@ -38,7 +38,7 @@ ms.locfileid: "62223573"
 
 1. 에 **리소스 추가** 대화 상자에서 **대화** 에 **리소스 종류** 목록에서 선택한 **새로 만들기**합니다.
 
-   더하기 기호 (**+**) 옆에 표시 되는 **대화** 리소스 유형에 의미는 대화 상자 템플릿을 사용할 수 있습니다. 템플릿의 목록을 확장 하는 템플릿을 선택 하 고 선택 하려면 더하기 기호 **새로 만들기**합니다.
+   더하기 기호 ( **+** ) 옆에 표시 되는 **대화** 리소스 유형에 의미는 대화 상자 템플릿을 사용할 수 있습니다. 템플릿의 목록을 확장 하는 템플릿을 선택 하 고 선택 하려면 더하기 기호 **새로 만들기**합니다.
 
    새 대화 상자에서 열립니다는 **대화 상자 편집기**합니다.
 
