@@ -6,12 +6,12 @@ helpviewer_keywords:
 - release builds
 - debug builds, converting to release build
 ms.assetid: fa9a78fa-f4b5-4722-baf4-aec655c4ff0f
-ms.openlocfilehash: cf11e63354502be000ba5f7259d9e36dfa774060
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1db396136af4a6ce8cc005753dded9eea2bfbeb
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315068"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400476"
 ---
 # <a name="release-builds"></a>릴리스 빌드
 
@@ -25,7 +25,7 @@ ms.locfileid: "62315068"
 [디버그 빌드를 사용한 메모리 덮어쓰기 확인](using-the-debug-build-to-check-for-memory-overwrite.md)<br/>
 [방법: 릴리스 빌드 디버그](how-to-debug-a-release-build.md)<br/>
 [메모리 덮어쓰기 확인](checking-for-memory-overwrites.md)<br/>
-[코드 최적화](optimizing-your-code.md)<br/>
+[코드 최적화](optimizing-your-code.md)
 
 ## <a name="see-also"></a>참고자료
 
