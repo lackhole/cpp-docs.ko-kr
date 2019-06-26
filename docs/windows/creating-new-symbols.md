@@ -19,19 +19,19 @@ helpviewer_keywords:
 - View Use button
 - resource editors [C++], resource symbols
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
-ms.openlocfilehash: 8bb73c1a9e8d253492a7068c444dd7ddea8417da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d03246d2c701961c824b55fb0cbb781ee3f65028
+ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350951"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344196"
 ---
 # <a name="how-to-create-symbols-c"></a>방법: 기호를 만듭니다 (C++)
 
 새 프로젝트를 시작 하는 경우 있습니다 됩니다 수 할당 된 리소스를 만들기 전에 필요한 기호 이름을 매핑하는 것이 편리할 수 있습니다.
 
 > [!NOTE]
-> 프로젝트에.rc 파일이 없으면 하세요 [방법: 리소스 만들기](../windows/how-to-create-a-resource-script-file.md)합니다.
+> 프로젝트에.rc 파일이 없으면 참조 [방법: 리소스 만들기](../windows/how-to-create-a-resource-script-file.md)합니다.
 
 합니다 **리소스 기호** 대화 상자를 사용 하면 새 리소스 기호 추가을 기호를 사용에서 하는 소스 코드의 위치를 건너뛸지 표시 되는 기호를 변경 합니다.
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: /link(옵션을 링커로 전달)
 ms.date: 03/25/2019
 f1_keywords:

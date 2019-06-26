@@ -3,12 +3,12 @@ title: CppProperties.json 스키마 참조
 ms.date: 05/16/2019
 helpviewer_keywords:
 - CMake in Visual Studio
-ms.openlocfilehash: e80f4e8a189510a9a3e8860609d74121b7cbb0ef
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 8432b72deaef99ee20147505030cbc8a9a270869
+ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837047"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344411"
 ---
 # <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json 스키마 참조
 
@@ -17,9 +17,9 @@ CMake를 사용하지 않는 폴더 열기 프로젝트는 `CppProperties.json` 
 
 ## <a name="default-configurations"></a>기본 구성
 
-Visual Studio는 x86 및 x64 디버그와 릴리스에 대해 미리 정의된 구성을 제공합니다. 기본적으로 프로젝트는 `CppProperties.json`에 x86-디버그 구성이 있습니다. 새 구성을 추가하려면 **솔루션 탐색기**에서 `CppProperties.json` 파일을 마우스 오른쪽 단추로 클릭하고 **구성 추가**를 선택합니다.
+Visual Studio는 x86 및 x64 디버그와 릴리스에 대해 미리 정의된 구성을 제공합니다. 기본적으로 프로젝트는 `CppProperties.json`에 x86-디버그 구성이 있습니다. 새 구성에 추가 하려면 마우스 오른쪽 단추로 클릭 합니다 `CppProperties.json` 파일 **솔루션 탐색기** 선택한 **구성 추가**:
 
-![폴더 열기 구성 추가](media/open-folder-add-config.png "폴더 열기 새 구성 추가")
+![폴더 열기-새 구성 추가](media/open-folder-add-config.png "폴더 열기에 새 구성 추가")
 
 기본 구성은 다음과 같습니다.
 
@@ -115,9 +115,9 @@ Visual Studio는 x86 및 x64 디버그와 릴리스에 대해 미리 정의된 �
 |`compilerSwitches`|IntelliSense 동작에 영향을 줄 수 있는 하나 이상의 추가 스위치|
 |`forcedInclude`|모든 컴파일 단위에 자동으로 포함될 헤더(MSVC에서 /FI에 매핑되거나 clang에서 -include에 매핑됨)|
 |`undefines`|정의되지 않은 매크로 목록(MSVC에서 /U에 매핑됨)|
-|`intelliSenseMode`|사용할 IntelliSense 엔진. MSVC, gcc 또는 Clang에 대한 아키텍처 특정 변형을 지정할 수 있습니다.<br/><br/>- windows-msvc-x86(기본값)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
+|`intelliSenseMode`|사용할 IntelliSense 엔진. MSVC, 항목은 gcc 또는 Clang 아키텍처별 변형을 지정할 수 있습니다.<br/><br/>- windows-msvc-x86(기본값)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
 
-참고: `msvc-x86` 및 `msvc-x64` 값은 레거시의 목적으로만 지원됩니다. `windows-msvc*` 변형을 사용하세요.
+참고: `msvc-x86` 및 `msvc-x64` 값은 레거시의 목적으로만 지원됩니다. 사용 된 `windows-msvc-*` 변형 대신 합니다.
 
 ## <a name="custom-configurations"></a>사용자 지정 구성
 
@@ -208,7 +208,7 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
 ```
 ## <a name="per-configuration-environment-variables"></a>구성별 환경 변수
 
-또한 구성 내에 **environments** 속성을 정의하여 해당 구성에만 적용하고 동일한 이름의 전역 변수를 재정의할 수 있습니다. 다음 예제에서 x64 구성은 전역 값을 재정의하는 지역 **INCLUDE** 변수를 정의합니다.
+정의할 수도 있습니다는 **환경** 속성을 구성 합니다. 해당 구성을 적용 하 고 동일한 이름의 모든 전역 변수를 재정의 합니다. 다음 예제에서 x64 구성은 전역 값을 재정의하는 지역 **INCLUDE** 변수를 정의합니다.
 
 ```json
 {
@@ -266,7 +266,7 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
 |`${projectRoot}`| `CppProperties.json`이 있는 폴더의 전체 경로|
 |`${vsInstallDir}`| 실행되는 Visual Studio 인스턴스를 실행하는 폴더의 전체 경로|
 
-예를 들어 프로젝트에 include 폴더가 있고 windows.h 및 Windows SDK의 다른 일반 헤더가 포함되어 있으면, `CppProperties.json` 구성 파일을 다음과 같은 include로 업데이트할 수 있습니다.
+예를 들어, 프로젝트에 있는 include 폴더를 windows.h 및 Windows SDK에서 일반적인 다른 헤더를 포함 하려는 업데이트 프로그램 `CppProperties.json` 다음 구성 파일에 포함 됩니다.
 
 ```json
 {
@@ -294,6 +294,3 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
 ## <a name="troubleshoot-intellisense-errors"></a>IntelliSense 오류 문제 해결
 
 include 경로 누락으로 인한 IntelliSense 오류 문제를 해결하려면, **오류 목록**을 열고, 출력을 "IntelliSense 전용" 및 E1696 오류 코드("소스 파일을 열 수 없습니다. ...")로 필터링합니다.
-
-
-

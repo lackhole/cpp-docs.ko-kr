@@ -5,10 +5,10 @@ helpviewer_keywords:
 - regular expressions [C++]
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
 ms.openlocfilehash: 291b25959f790db328080aa74a6320775a33e981
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.sourcegitcommit: 0ad35b26e405bbde17dc0bd0141e72f78f0a38fb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 06/20/2019
 ms.locfileid: "65220305"
 ---
 # <a name="regular-expressions-c"></a>정규식(C++)
@@ -478,7 +478,7 @@ non-greedy 반복은 패턴과 일치하는 대상 시퀀스의 가장 짧은 �
 |"$&"|"&"|전체 정규식과 일치하는 문자 시퀀스(`[match[0].first, match[0].second)`)|
 |"$$"||"$"|
 ||"\\&"|"&"|
-|"$\`" (달러 기호와 역따옴표) | | 정규식과 일치 하는 하위 시퀀스 앞에 오는 문자 시퀀스 (`[match.prefix().first, match.prefix().second)`)|
+|"$\`" (달러 기호와 역따옴표)||시퀀스 앞의 정규식과 일치하는 문자 시퀀스(`[match.prefix().first, match.prefix().second)`)|
 |"$'"(달러 기호와 작은따옴표)||시퀀스 다음의 정규식과 일치하는 문자 시퀀스(`[match.suffix().first, match.suffix().second)`)|
 |"$n"|"\n"|위치에서 캡처 그룹과 일치 하는 문자 시퀀스 `n`, 여기서 `n` 는 0에서 9 사이의 숫자 (`[match[n].first, match[n].second)`)|
 ||"\\\n"|"\n"|
