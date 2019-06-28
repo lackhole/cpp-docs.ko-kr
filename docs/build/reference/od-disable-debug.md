@@ -31,7 +31,7 @@ ms.locfileid: "62320684"
 
 ## <a name="remarks"></a>설명
 
-이 옵션은 기본값입니다. **/Od** 코드 이동을 하지 않아 디버깅를 쉽게 하도록 합니다. 디버깅과 관련된 컴파일러 옵션에 대한 자세한 내용은 [/Z7, /Zi, /ZI (디버그 정보 형식)](z7-zi-zi-debug-information-format.md)을 참조합니다.
+이 옵션은 기본값입니다. **/Od**는 코드 이동을 하지 않게 하여 디버깅을 간소화합니다. 디버깅과 관련된 컴파일러 옵션에 대한 자세한 내용은 [/Z7, /Zi, /ZI (디버그 정보 형식)](z7-zi-zi-debug-information-format.md)을 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
