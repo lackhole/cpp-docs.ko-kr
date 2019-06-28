@@ -26,7 +26,7 @@ ms.locfileid: "67412238"
 ---
 # <a name="os-ot-favor-small-code-favor-fast-code"></a>/Os, /OT(크기 우선 코드, 속도 우선 코드)
 
-최소화 또는 Exe 및 Dll의 크기를 최대화 합니다.
+EXE와 DLL의 크기를 최소화하거나 최대화합니다.
 
 ## <a name="syntax"></a>구문
 
