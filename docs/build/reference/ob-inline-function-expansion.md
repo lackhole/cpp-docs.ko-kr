@@ -1,4 +1,4 @@
----
+﻿---
 title: /Ob(인라인 함수 확장)
 ms.date: 09/25/2017
 f1_keywords:

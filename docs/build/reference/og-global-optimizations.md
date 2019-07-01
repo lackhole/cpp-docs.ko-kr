@@ -1,4 +1,4 @@
----
+﻿---
 title: /Og(전역 최적화)
 ms.date: 09/22/2017
 f1_keywords:

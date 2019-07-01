@@ -1,4 +1,4 @@
----
+﻿---
 title: / MD,-MT,-LD (런타임 라이브러리 사용)
 ms.date: 11/04/2016
 f1_keywords:
@@ -37,7 +37,7 @@ helpviewer_keywords:
 ms.assetid: cf7ed652-dc3a-49b3-aab9-ad60e5395579
 ms.openlocfilehash: 4ae63f2d45d5a1170f94de0480711bc719e4a2e0
 ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65217619"
