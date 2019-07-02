@@ -8,12 +8,12 @@ helpviewer_keywords:
 - equality operator, syntax
 - operators [C], relational
 ms.assetid: c89a3815-a65e-4e0d-8333-0e8dc7fdb30b
-ms.openlocfilehash: 78dfd9f208b4c5cf484f0ff43c5e07ce1aadec35
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.openlocfilehash: 25e9bb65492e0c4b100ecd7a800491d238b1dd38
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56149650"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400525"
 ---
 # <a name="c-relational-and-equality-operators"></a>C 관계 및 같음 연산자
 
@@ -26,7 +26,7 @@ ms.locfileid: "56149650"
 &nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **&lt;** *shift-expression*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **>** *shift-expression*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **&lt;=** *shift-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **>=** *shift-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*relational-expression* **>=** *shift-expression*
 
 *equality-expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*relational-expression*<br/>
@@ -48,7 +48,7 @@ ms.locfileid: "56149650"
 
 피연산자는 정수 계열, 부동 또는 포인터 형식일 수 있습니다. 피연산자의 형식은 서로 다를 수 있습니다. 관계형 연산자는 정수 계열 및 부동 형식 피연산자에 대한 일반적인 산술 변환을 수행합니다. 또한 관계형 연산자와 같음 연산자에서 다음과 같은 피연산자 형식의 조합을 사용할 수 있습니다.
 
-- 모든 관계형 연산자나 같음 연산자의 피연산자는 둘 다 동일한 형식에 대한 포인터일 수 있습니다. 같음(`==`) 및 같지 않음(`!=`) 연산자의 경우 비교의 결과는 두 개의 포인터가 동일한 메모리 위치를 가리키는지 여부를 나타냅니다. 다른 관계형 연산자(**\<**, **>**, **\<**= 및 **>**=)의 경우 비교의 결과는 가리킨 개체에 대한 두 메모리 주소의 상대적 위치를 나타냅니다. 관계형 연산자는 오프셋만 비교합니다.
+- 모든 관계형 연산자나 같음 연산자의 피연산자는 둘 다 동일한 형식에 대한 포인터일 수 있습니다. 같음(`==`) 및 같지 않음(`!=`) 연산자의 경우 비교의 결과는 두 개의 포인터가 동일한 메모리 위치를 가리키는지 여부를 나타냅니다. 다른 관계형 연산자( **\<** , **>** , **\<** = 및 **>** =)의 경우 비교의 결과는 가리킨 개체에 대한 두 메모리 주소의 상대적 위치를 나타냅니다. 관계형 연산자는 오프셋만 비교합니다.
 
    포인터 비교는 같은 개체의 부분에 대해서만 정의됩니다. 포인터가 배열의 멤버를 참조하는 경우 비교는 해당 아래 첨자의 비교와 동일합니다. 첫 번째 배열 요소의 주소는 마지막 요소의 주소보다 "작습니다." 구조체의 경우 나중에 선언된 구조체 멤버에 대한 포인터는 구조체에서 이전에 선언된 멤버에 대한 포인터보다 "큽니다." 같은 공용 구조체의 멤버에 대한 포인터는 동일합니다.
 

@@ -4,49 +4,49 @@ ms.date: 02/27/2018
 helpviewer_keywords:
 - integer constants
 ms.assetid: fcf6b83c-2038-49ec-91ca-3d5ca1f83037
-ms.openlocfilehash: 4a3d6b945f3611b8e51029c0a5ec5dc77b2cbaa0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48561599896bb8a6f9ee159630ff15df6c0454be
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620222"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400521"
 ---
 # <a name="c-integer-constants"></a>C 정수 상수
 
-‘정수 상수’는 정수 계열 값을 나타내는 10진수(기수 10), 8진수(기수 8) 또는 16진수(기수 16)입니다. 정수 상수는 변경할 수 없는 정수 값을 나타낼 때 사용합니다.
+‘정수 상수’는 정수 계열 값을 나타내는 10진수(기수 10), 8진수(기수 8) 또는 16진수(기수 16)입니다.  정수 상수는 변경할 수 없는 정수 값을 나타낼 때 사용합니다.
 
 ## <a name="syntax"></a>구문
 
 *integer-constant*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*decimal-constant* *integer-suffix*<sub>opt</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*octal-constant* *integer-suffix*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-constant* *integer-suffix*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-constant* *integer-suffix*<sub>opt</sub>
 
 *decimal-constant*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*nonzero-digit*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*decimal-constant* *digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*decimal-constant* *digit*
 
 *octal-constant*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*octal-constant* *octal-digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*octal-constant* *octal-digit*
 
 *hexadecimal-constant*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-prefix* *hexadecimal-digit*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-constant* *hexadecimal-digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-constant* *hexadecimal-digit*
 
 *hexadecimal-prefix*: 다음 중 하나<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0x**  **0X**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0x**  **0X**
 
 *nonzero-digit*: 다음 중 하나<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**1 2 3 4 5 6 7 8 9**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**1 2 3 4 5 6 7 8 9**
 
 *octal-digit*: 다음 중 하나<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**
 
 *hexadecimal-digit*: 다음 중 하나<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**a b c d e f**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**A B C D E F**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**A B C D E F**
 
 *integer-suffix*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*unsigned-suffix* *long-suffix*<sub>opt</sub><br/>
@@ -54,23 +54,23 @@ ms.locfileid: "50620222"
 &nbsp;&nbsp;&nbsp;&nbsp;*unsigned-suffix* *64-bit-integer-suffix*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*long-suffix* *unsigned-suffix*<sub>opt</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*long-long-suffix* *unsigned-suffix*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*64-bit-integer-suffix*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*64-bit-integer-suffix*
 
 *unsigned-suffix*: 다음 중 하나<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**u U**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**u U**
 
 *long-suffix*: 다음 중 하나<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**l L**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**l L**
 
 *long-long-suffix*: 다음 중 하나<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**ll LL**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**ll LL**
 
 *64-bit-integer-suffix*: 다음 중 하나<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**i64 I64**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**i64 I64**
 
 **i64** 및 **I64**는 Microsoft 고유의 접미사입니다.
 
-정수 상수는 빼기 기호(**-**)가 앞에 없는 경우 양수입니다. 빼기 기호는 단항 산술 부정 연산자로 해석됩니다. 이 연산자에 대한 자세한 내용은 [단항 산술 연산자](../c-language/unary-arithmetic-operators.md)를 참조하세요.
+정수 상수는 빼기 기호( **-** )가 앞에 없는 경우 양수입니다. 빼기 기호는 단항 산술 부정 연산자로 해석됩니다. 이 연산자에 대한 자세한 내용은 [단항 산술 연산자](../c-language/unary-arithmetic-operators.md)를 참조하세요.
 
 정수 상수가 **0x** 또는 **0X**로 시작되는 경우 16진수이고, 숫자 **0**으로 시작되는 경우에는 8진수입니다. 두 경우에 해당하지 않으면 10진수로 간주됩니다.
 
