@@ -16,7 +16,7 @@ ms.locfileid: "62319319"
 ---
 # <a name="qfasttranscendentals-force-fast-transcendentals"></a>/Qfast_transcendentals(빠른 초월수 강제 적용)
 
-초월수 함수에 대 한 인라인 코드를 생성합니다.
+초월 함수에 대한 인라인 코드를 생성합니다.
 
 ## <a name="syntax"></a>구문
 
