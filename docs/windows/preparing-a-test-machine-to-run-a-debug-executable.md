@@ -1,15 +1,15 @@
 ---
 title: 디버그 실행 파일을 실행하기 위한 테스트 컴퓨터 준비
-ms.date: 11/04/2016
+ms.date: 07/02/2019
 helpviewer_keywords:
 - debug executable, preparing a test machine to run
 ms.assetid: f0400989-cc2e-4dce-9788-6bdbe91c6f5a
-ms.openlocfilehash: 6d7e9c2e0a29c2871fd86922151f2226dd9078fc
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 87d2bf434aef3a85bf7fa19f5886bec106515809
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448449"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552333"
 ---
 # <a name="preparing-a-test-machine-to-run-a-debug-executable"></a>디버그 실행 파일을 실행하기 위한 테스트 컴퓨터 준비
 
@@ -29,11 +29,11 @@ Visual C++로 빌드한 응용 프로그램의 디버그 버전을 테스트하�
 
 - Visual Studio의 **구성 관리자** 대화 상자에 있는 **배포** 옵션을 사용하여 프로젝트 출력물 및 기타 파일을 원격 컴퓨터에 복사합니다.
 
-Visual C++ DLL이 설치되었으면 네트워크 공유를 통해 원격 디버거를 실행할 수 있습니다. 원격 디버깅에 대한 자세한 내용은 [원격 디버깅](/visualstudio/debugger/remote-debugging.md)을 참조하세요.
+Visual C++ DLL이 설치되었으면 네트워크 공유를 통해 원격 디버거를 실행할 수 있습니다. 원격 디버깅에 대한 자세한 내용은 [원격 디버깅](/visualstudio/debugger/remote-debugging)을 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 
 [Visual C++의 개발](deployment-in-visual-cpp.md)<br>
 [Windows Installer 명령줄 옵션](/windows/desktop/Msi/command-line-options)<br>
 [배포 예제](deployment-examples.md)<br>
-[Remote Debugging](/visualstudio/debugger/remote-debugging.md)
+[Remote Debugging](/visualstudio/debugger/remote-debugging)

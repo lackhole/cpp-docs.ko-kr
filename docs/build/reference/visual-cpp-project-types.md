@@ -1,6 +1,6 @@
 ---
 title: Visual C++ 프로젝트 형식
-ms.date: 11/29/2018
+ms.date: 07/02/2019
 helpviewer_keywords:
 - programs [C++], projects
 - project templates [Visual Studio], C++
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - applications [C++], projects
 - C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-ms.openlocfilehash: dce96a221804e5538929d63fa3c125a27e7fc36d
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: 98f8ea11cce61ca91fbdc8f8afb900a7ba5b42c9
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217781"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552222"
 ---
-# <a name="c-project-templates"></a>C++프로젝트 템플릿
+# <a name="c-project-templates"></a>C++ 프로젝트 템플릿
 
 Visual Studio 프로젝트 템플릿 생성 소스 코드 파일, 컴파일러 옵션, 메뉴, 도구 모음, 아이콘, 참조 및 `#include` 문을 만들려는 프로젝트의 종류에 적합 합니다. Visual Studio에 여러 종류의 C++ 프로젝트 템플릿 및를 만들면서 프로젝트를 사용자 지정할 수 있도록 이들 중 다 수에 대 한 마법사를 제공 합니다. 프로젝트를 만든 직후에 애플리케이션을 빌드하고 실행할 수 있으므로, 애플리케이션을 개발하면서 간간이 빌드하는 것이 좋습니다.
 
@@ -72,7 +72,7 @@ MFC 및 ATL 지원 구성 요소를 Visual Studio 설치에 추가하는 경우 
 
 C++ Windows 유니버설 플랫폼 도구 구성 요소를 Visual Studio 설치에 추가하는 경우 이러한 프로젝트 템플릿이 Visual Studio에 추가됩니다.
 
-C++에서 Windows 유니버설 앱의 개요는 [유니버설 Windows 앱(C++)](../../windows/universal-windows-apps-cpp.md)을 참조합니다.
+C++에서 Windows 유니버설 앱의 개요는 [유니버설 Windows 앱(C++)](../../cppcx/universal-windows-apps-cpp.md)을 참조합니다.
 
 |프로젝트 템플릿|설명|
 |----------------------|-----------------------------|

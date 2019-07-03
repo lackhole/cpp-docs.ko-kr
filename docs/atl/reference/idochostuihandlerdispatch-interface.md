@@ -1,18 +1,18 @@
 ---
 title: IDocHostUIHandlerDispatch 인터페이스
-ms.date: 11/04/2016
+ms.date: 07/02/2019
 f1_keywords:
 - IDocHostUIHandlerDispatch
 - atlbase/ATL::IDocHostUIHandlerDispatch
 helpviewer_keywords:
 - IDocHostUIHandlerDispatch interface
 ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
-ms.openlocfilehash: f4f5024e282885797858c800640bc5651819ca20
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: a60c178eff1e02c3032e792f9a0420dfeab82388
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503064"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552164"
 ---
 # <a name="idochostuihandlerdispatch-interface"></a>IDocHostUIHandlerDispatch 인터페이스
 
@@ -32,7 +32,7 @@ interface IDocHostUIHandlerDispatch : IDispatch
 ### <a name="public-methods"></a>Public 메서드
 
 > [!NOTE]
->  멤버에 대 한 INet SDK 참조 항목에는 다음 표의 링크를 클릭 합니다 [IDocUIHostHandler](/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\)) 인터페이스입니다. `IDocHostUIHandlerDispatch` 동일한 기능이 `IDocUIHostHandler`는 차이점 `IDocHostUIHandlerDispatch` 는 dispinterface는 반면 `IDocUIHostHandler` 사용자 지정 인터페이스입니다.
+>  멤버에 대 한 INet SDK 참조 항목에는 다음 표의 링크를 클릭 합니다 [IDocUIHostHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\)) 인터페이스입니다. `IDocHostUIHandlerDispatch` 동일한 기능이 `IDocUIHostHandler`는 차이점 `IDocHostUIHandlerDispatch` 는 dispinterface는 반면 `IDocUIHostHandler` 사용자 지정 인터페이스입니다.
 
 |||
 |-|-|
@@ -67,4 +67,4 @@ interface IDocHostUIHandlerDispatch : IDispatch
 
 ## <a name="see-also"></a>참고자료
 
-[IDocUIHostHandler](/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\))
+[IDocUIHostHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\))

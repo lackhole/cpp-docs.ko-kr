@@ -1,17 +1,17 @@
 ---
 title: 생성자 (C++)
-ms.date: 04/06/2018
+ms.date: 07/02/2019
 helpviewer_keywords:
 - constructors [C++]
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: 79b68fe08fd77dfacd485ea61df7ab7af08e2f08
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 98e4a35a362b659307d92e57d826e7ac85b9bd09
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450874"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552291"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -636,7 +636,11 @@ Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
 ```
 
+::: moniker range=">=vs-2017"
+
 **Visual Studio 2017 버전 15.7 이상:** 합니다 **를 사용 하 여** 문에서 **/std: c + + 17** 모드 제외 생성자와 동일한 서명이 파생된 클래스에서 기본 클래스에서 모든 생성자를 범위로 가져옵니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다. 참고 항목 [Visual Studio 2017 버전 15.7의에서 개선 사항](../overview/cpp-conformance-improvements.md#improvements_157)합니다.
+
+::: moniker-end
 
 클래스 템플릿은 해당 형식이 기본 클래스를 지정하는 경우 형식 인수에서 모든 생성자를 상속할 수 있습니다.
 
