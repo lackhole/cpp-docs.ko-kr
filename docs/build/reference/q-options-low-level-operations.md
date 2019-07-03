@@ -16,7 +16,7 @@ ms.locfileid: "62319397"
 ---
 # <a name="q-options-low-level-operations"></a>/Q 옵션(하위 수준 작업)
 
-사용할 수는 **/Q** 다음 하위 수준의 컴파일러 작업을 수행 하려면 컴파일러 옵션:
+**/Q** 컴파일러 옵션을 사용하여 다음과 같은 저수준 컴파일러 작업을 수행할 수 있습니다.
 
 - [/Qfast_transcendentals (빠른 초월수 강제 적용)](qfast-transcendentals-force-fast-transcendentals.md): 빠른 초월수를 생성합니다.
 

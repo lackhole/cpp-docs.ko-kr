@@ -60,12 +60,12 @@ helpviewer_keywords:
 - CFile [MFC], m_hFile
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-ms.openlocfilehash: db499ffa5f1d82b6e3622287f86132930a929102
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dcfe2fb30269f3f3a4c14664d9f57f5b937c8c6d
+ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385312"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344426"
 ---
 # <a name="cfile-class"></a>CFile 클래스
 
@@ -138,7 +138,7 @@ class CFile : public CObject
 
 이 클래스와 파생된 클래스 간의 계층 관계 인스턴스는 다형성을 통해 모든 파일 개체에 대해 작동 하도록 프로그램을 사용 하면 `CFile` 인터페이스입니다. 예를 들어, 메모리 파일을 디스크 파일은 작동합니다.
 
-사용 하 여 `CFile` 및 범용 디스크 I/O에 대 한 파생된 클래스입니다. 사용 하 여 `ofstream` 또는 디스크 파일을 전송 하는 서식 있는 텍스트에 대 한 다른 Microsoft iostream 클래스입니다.
+사용 하 여 `CFile` 및 범용 디스크 I/O에 대 한 파생된 클래스입니다. 사용 하 여 `ofstream` 또는 기타 Microsoft `iostream` 디스크 파일을 전송 하는 서식 있는 텍스트에 대 한 클래스입니다.
 
 일반적으로 디스크 파일을 열에 자동으로 `CFile` 생성과 소멸에 종결된 합니다. 정적 멤버 함수를 허용 하 파일을 열지 않고 파일의 상태를 검색할 수 있습니다.
 
@@ -164,9 +164,9 @@ virtual void Abort();
 
 ### <a name="remarks"></a>설명
 
-개체를 소멸 하기 전에 파일을 닫지 않은 경우 소멸자를 닫습니다.
+개체를 소멸 하기 전에 파일을 닫을 하지 않은, 경우 소멸자를 닫습니다.
 
-예외를 처리 하는 경우 `CFile::Abort` 에서 다른 `CFile::Close` 중요 한 두 가지가 있습니다. 먼저 합니다 `Abort` 함수는 예외를 throw 하지 오류에에서 오류를 무시 하므로 `Abort`합니다. 두 번째로 `Abort` 것입니다 **ASSERT** 파일이 아직 열려 있지 않거나 이전에 종료 되었습니다.
+예외를 처리 하는 경우 `CFile::Abort` 에서 다른 `CFile::Close` 중요 한 두 가지가 있습니다. 먼저 합니다 `Abort` 에서 오류를 무시 하기 때문에 함수 실패에서 예외가 발생 하지 `Abort`합니다. 두 번째로 `Abort` 없습니다 **ASSERT** 파일이 열려 않은 되거나 이전에 닫힌 경우.
 
 사용 하는 경우 **새** 할당할는 `CFile` 힙에 개체 파일을 닫은 후 삭제 해야 합니다. `Abort` 설정 `m_hFile` 에 `CFile::hFileNull`입니다.
 
@@ -240,17 +240,17 @@ CAtlTransactionManager 개체에 대한 포인터
 
 |값|설명|
 |-----------|-----------------|
-|`CFile::modeCreate`|파일이 없으면 새 파일을 만듭니다. 파일이 이미 있는 경우 덮어쓸 이므로 처음에 길이가 0으로 설정 합니다.|
-|`CFile::modeNoTruncate`|파일이 없으면 새 파일을 만듭니다. 파일이 이미 있으면 `CFile` 개체에 연결됩니다.|
+|`CFile::modeCreate`|파일이 없으면 새 파일을 만듭니다. 파일이 이미 있는 경우 덮어쓸 고 초기 길이를 0으로 설정 합니다.|
+|`CFile::modeNoTruncate`|파일이 없으면; 새 파일을 만듭니다. 그렇지 않은 경우 파일이 이미 있는 경우에 연결 되어를 `CFile` 개체입니다.|
 
-설명에 따라 다음 파일 캐싱 옵션을 선택합니다. 기본적으로 시스템은 옵션으로 제공되지 않는 범용 캐싱 구성표를 사용합니다.
+설명에 따라 다음 파일 캐싱 옵션을 선택합니다. 기본적으로 시스템 옵션으로 제공 되지 않는 범용 캐싱 구성표를 사용 합니다.
 
 |값|설명|
 |-----------|-----------------|
-|`CFile::osNoBuffer`|시스템에서 파일에 대해 중간 캐시를 사용하지 않습니다. 이 옵션은 다음 2개 옵션을 취소합니다.|
-|`CFile::osRandomAccess`|임의 액세스를 위해 파일 캐시가 최적화됩니다. 이 옵션과 순차 검색 옵션을 함께 사용해서는 안 됩니다.|
-|`CFile::osSequentialScan`|순차 액세스를 위해 파일 캐시가 최적화됩니다. 이 옵션과 임의 액세스 옵션을 함께 사용해서는 안 됩니다.|
-|`CFile::osWriteThrough`|쓰기 작업이 지연 없이 수행됩니다.|
+|`CFile::osNoBuffer`|시스템 파일에 대 한 중간 캐시를 사용 하지 않습니다. 이 옵션은 다음 2개 옵션을 취소합니다.|
+|`CFile::osRandomAccess`|임의 액세스를 위해 파일 캐시가 최적화됩니다. 이 옵션과 순차 검색 옵션을 모두 사용 하지 마세요.|
+|`CFile::osSequentialScan`|순차 액세스를 위해 파일 캐시가 최적화됩니다. 이 옵션과 임의 액세스 옵션을 모두 사용 하지 마세요.|
+|`CFile::osWriteThrough`|작성 작업은 지연 없이 수행 됩니다.|
 
 파일 핸들이 상속되지 않도록 하려면 다음 보안 옵션을 선택합니다. 기본적으로 새 자식 프로세스는 파일 핸들을 사용할 수 있습니다.
 
@@ -258,13 +258,13 @@ CAtlTransactionManager 개체에 대한 포인터
 |-----------|-----------------|
 |`CFile::modeNoInherit`|자식 프로세스가 파일 핸들을 사용하지 못하도록 차단합니다.|
 
-기본 생성자는 멤버를 초기화하지만 파일을 `CFile` 개체에 연결하지는 않습니다. 이 생성자를 사용한 후 사용 합니다 [CFile::Open](#open) 파일을 열에 연결 하는 메서드를 `CFile` 개체입니다.
+기본 생성자는 멤버를 초기화 하지만 파일을 연결 하지는 `CFile` 개체입니다. 이 생성자를 사용한 후 사용 합니다 [CFile::Open](#open) 파일을 열에 연결 하는 메서드를 `CFile` 개체입니다.
 
 매개 변수가 하나 포함된 생성자는 멤버를 초기화하고 기존 파일을 `CFile` 개체에 연결합니다.
 
 매개 변수가 두 개 포함된 생성자는 멤버를 초기화하고 지정한 파일 열기를 시도합니다. 이 생성자가 지정한 파일을 정상적으로 열면 파일은 `CFile` 개체에 연결되고, 그렇지 않으면 이 생성자가 `CInvalidArgException` 개체에 대한 포인터를 throw합니다. 예외를 처리 하는 방법에 대 한 자세한 내용은 참조 하세요. [예외](../../mfc/exception-handling-in-mfc.md)합니다.
 
-`CFile` 개체가 지정한 파일을 정상적으로 열면 `CFile` 개체 제거 시 이 파일이 자동으로 닫힙니다. 그렇지 않으면 `CFile` 개체에서 파일 연결을 끊은 후 파일을 명시적으로 닫아야 합니다.
+경우는 `CFile` 개체 성공적으로 지정 된 파일을 열면 닫힙니다이 파일이 자동으로 경우는 `CFile` 개체가 소멸;이 고, 그렇지 명시적으로 닫아야 파일에 더 이상 연결 된 후의 `CFile` 개체.
 
 ### <a name="example"></a>예제
 
@@ -282,7 +282,7 @@ virtual void Close();
 
 ### <a name="remarks"></a>설명
 
-개체를 소멸 하기 전에 파일을 닫지 않은 경우 소멸자를 닫습니다.
+개체를 소멸 하기 전에 파일을 닫을 하지 않은, 경우 소멸자를 닫습니다.
 
 사용 하는 경우 **새** 할당할는 `CFile` 힙에 개체 파일을 닫은 후 삭제 해야 합니다. `Close` 설정 `m_hFile` 에 `CFile::hFileNull`입니다.
 
@@ -304,7 +304,7 @@ virtual CFile* Duplicate() const;
 
 ### <a name="remarks"></a>설명
 
-이 C 런타임 함수에 해당 하는 `_dup`합니다.
+이 함수는 C 런타임 함수를 `_dup`입니다.
 
 ##  <a name="flush"></a>  CFile::Flush
 
@@ -316,7 +316,7 @@ virtual void Flush();
 
 ### <a name="remarks"></a>설명
 
-사용 `Flush` 플러시하도록를 보장 하지는 않습니다 `CArchive` 버퍼입니다. 보관을 사용 하는 경우 호출 [CArchive::Flush](../../mfc/reference/carchive-class.md#flush) 첫 번째입니다.
+사용 `Flush` 플러시하도록 보장 하지 않습니다 `CArchive` 버퍼입니다. 보관을 사용 하는 경우 호출 [CArchive::Flush](../../mfc/reference/carchive-class.md#flush) 첫 번째입니다.
 
 ### <a name="example"></a>예제
 
@@ -382,7 +382,7 @@ virtual CString GetFileTitle() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출 [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) 검색할 파일의 제목입니다. 성공 하면 메서드는 시스템 사용자에 게 파일 이름을 표시 하는 데 사용할 문자열을 반환 합니다. 메서드를 호출 하는 고, 그렇지 [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) 를 기본 파일의 파일 이름 (파일 확장명 포함)를 검색 합니다. 따라서 파일 확장명은 항상 수에 포함 되지 반환 되는 파일 제목 문자열. 자세한 내용은 [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) 하 고 [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) Windows SDK의 합니다.
+이 메서드를 호출 [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) 검색할 파일의 제목입니다. 성공 하면 메서드는 시스템 사용자에 게 파일 이름을 표시 하는 데 사용할 문자열을 반환 합니다. 메서드를 호출 하는 고, 그렇지 [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) 를 기본 파일의 파일 이름 (파일 확장명 포함)를 검색 합니다. 즉, 파일 확장명 반환 되는 파일 제목 문자열에 항상 포함 되지 않습니다. 자세한 내용은 [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) 하 고 [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) Windows SDK의 합니다.
 
 이름을 포함 하는 파일의 전체 경로 반환 하려면 호출 [GetFilePath](#getfilepath)합니다. 파일의 이름을 반환할 호출 [GetFileName](#getfilename)합니다.
 
@@ -408,7 +408,7 @@ virtual ULONGLONG GetLength() const;
 
 ##  <a name="getposition"></a>  CFile::GetPosition
 
-에 대 한 후속 호출에서 사용할 수 있는 파일 포인터의 현재 값을 가져와 `Seek`합니다.
+에 대 한 이후 호출에서 사용할 수 있는 파일 포인터의 현재 값을 가져와 `Seek`합니다.
 
 ```
 virtual ULONGLONG GetPosition() const;
@@ -464,7 +464,7 @@ TRUE 이면 지정된 된 파일에 대 한 상태 정보를 성공적으로 가
 
 ### <a name="remarks"></a>설명
 
-Static이 아닌 버전의 `GetStatus` 와 연결 된 열려 있는 파일의 상태 정보를 검색 합니다 지정 `CFile` 개체입니다.  정적 버전 `GetStatus` 실제로 파일을 열지 않고 지정 된 파일 경로에서 파일 상태를 가져옵니다. 파일의 존재 여부 및 액세스 권한이 테스트에 유용 합니다.
+Static이 아닌 버전의 `GetStatus` 와 연결 된 열려 있는 파일의 상태 정보를 검색 합니다 지정 `CFile` 개체입니다.  정적 버전 `GetStatus` 실제로 파일을 열지 않고 지정 된 파일 경로에서 파일 상태를 가져옵니다. 이 버전은 파일의 존재 여부 및 액세스 권한을 테스트 하는 데 유용 합니다.
 
 합니다 `m_attribute` 의 멤버는 `CFileStatus` 구조 파일 특성 집합을 나타냅니다. 합니다 `CFile` 클래스를 제공 합니다 **특성** 파일 특성을 상징적으로 지정할 수 있도록 열거형 형식:
 
@@ -522,10 +522,10 @@ virtual void LockRange(
 
 파일의 바이트를 잠그면 다른 프로세스에서 해당 바이트에 액세스할 수 없습니다. 파일의 둘 이상의 영역을 잠글 수 있습니다 하지만 없습니다 겹치는 영역을 사용할 수는 있습니다.
 
-지역의 잠금을 해제 하면 사용 하 여 `UnlockRange` 멤버 함수는 바이트 범위 이전에 잠근 지역으로 정확 하 게 일치 해야 합니다. `LockRange` 각 영역을 별도로 잠금 해제 해야 잠긴된 두 영역이 인접 한 경우; 함수는 인접 한 영역을 병합 하지 않습니다.
+잠금을 해제를 사용 하 여 영역을 `UnlockRange` 멤버 함수는 바이트 범위 이전에 잠근 지역으로 정확 하 게 일치 해야 합니다. `LockRange` 함수는 인접 한 영역을 병합 하지 않습니다. 잠긴된 두 영역이 인접 한 경우 각 지역을 별도로 잠금 해제 해야 있습니다.
 
 > [!NOTE]
->  이 함수를 사용할 수 없는 경우는 `CMemFile`-클래스를 파생 합니다.
+>  이 함수에 사용할 수 없습니다는 `CMemFile`-클래스를 파생 합니다.
 
 ### <a name="example"></a>예제
 
@@ -541,7 +541,7 @@ HANDLE m_hFile;
 
 ### <a name="remarks"></a>설명
 
-`m_hFile` UINT 형식의 공용 변수가입니다. 포함 된 `CFile::hFileNull` (운영 체제-독립적인 빈 파일 표시기) 핸들을 할당 되지 않은 경우.
+`m_hFile` UINT 형식의 공용 변수가입니다. 포함 된 `CFile::hFileNull`, 핸들을 할당 되지 않은 경우 운영 체제-독립적인 빈 파일 표시기입니다.
 
 사용 `m_hFile` 멤버의 의미는 파생된 클래스에 따라 달라 지므로 권장 되지 않습니다. `m_hFile` 비 다형 지원에 편의 위해 공용 멤버 클래스의 사용 됩니다.
 
@@ -575,7 +575,7 @@ virtual BOOL Open(
 ### <a name="parameters"></a>매개 변수
 
 *lpszFileName*<br/>
-문자열은 원하는 파일을 경로입니다. Relative, absolute, 또는 네트워크 이름 (UNC) 경로 수 있습니다.
+원하는 파일의 경로를 포함 하는 문자열입니다. Relative, absolute, 또는 네트워크 이름 (UNC) 경로 수 있습니다.
 
 *nOpenFlags*<br/>
 파일의 공유 및 액세스 모드를 정의 하는 UINT 합니다. 파일을 열 때 수행할 동작을 지정 합니다. 비트 OR를 사용 하 여 옵션을 결합할 수 있습니다 ( **&#124;** ) 연산자. 에 대 한 액세스 권한과 하나 공유 옵션은 필요한; 합니다 `modeCreate` 고 `modeNoInherit` 모드는 선택 사항입니다. 참조 된 [CFile](#cfile) 모드 옵션의 목록에 대 한 생성자입니다.
@@ -592,9 +592,9 @@ CAtlTransactionManager 개체에 대한 포인터
 
 ### <a name="remarks"></a>설명
 
-두 함수는 오류는 일반적으로 필요한 조건을이 파일을 열기 위한 "안전" 메서드를 형성 합니다.
+두 `Open` 함수는 오류는 일반적으로 필요한 조건을 인 파일을 열에 대 한 "안전한" 메서드입니다.
 
-하지만 합니다 `CFile` 생성자는 오류 조건에서는 예외가 throw 됩니다 `Open` 오류 조건에 대해 FALSE를 반환 합니다. `Open` 하지만 여전히 초기화할 수는 [CFileException](../../mfc/reference/cfileexception-class.md) 오류를 설명 하는 개체입니다. 제공 하지 않으면 합니다 *pError* 매개 변수를 NULL을 전달 하는 경우 또는 *pError*, `Open` FALSE를 반환 하 고 throw 하지는 `CFileException`. 기존에 대 한 포인터를 전달 하면 `CFileException`, 및 `Open` 에서 오류가 발생 하는 함수는 채울 해당 오류를 설명 하는 정보입니다. 사례는 모두에서 `Open` 예외를 throw 합니다.
+하는 동안 합니다 `CFile` 생성자에 오류 조건이 예외를 throw `Open` 오류 조건에 대해 FALSE를 반환 합니다. `Open` 하지만 여전히 초기화할 수는 [CFileException](../../mfc/reference/cfileexception-class.md) 오류를 설명 하는 개체입니다. 제공 하지 않으면 합니다 *pError* 매개 변수를 NULL을 전달 하는 경우 또는 *pError*, `Open` FALSE를 반환 하 고 throw 하지 않습니다는 `CFileException`. 기존에 대 한 포인터를 전달 하면 `CFileException`, 및 `Open` 에서 오류가 발생 하는 함수 채웁니다 해당 오류를 설명 하는 정보를 사용 하 여 합니다. `Open` 두 경우 모두 예외를 throw 하지 않습니다.
 
 다음 표에서 가능한 결과 `Open`합니다.
 
@@ -639,13 +639,13 @@ virtual UINT Read(
 
 ### <a name="return-value"></a>반환 값
 
-버퍼로 전송된 바이트 수입니다. 모든 유의 `CFile` 클래스, 반환 값 수 미만 *nCount* 파일의 끝에 도달한 경우입니다.
+버퍼로 전송된 바이트 수입니다. 모든 `CFile` 클래스, 반환 값 수 미만 *nCount* 파일의 끝에 도달한 경우입니다.
 
 ### <a name="example"></a>예제
 
 [!code-cpp[NVC_MFCFiles#15](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_11.cpp)]
 
-다른 예제를 참조 하세요. [CFile::Open](#open)합니다.
+다른 예제를 보려면 [CFile::Open](#open)합니다.
 
 ##  <a name="remove"></a>  CFile::Remove
 
@@ -667,9 +667,9 @@ CAtlTransactionManager 개체에 대한 포인터
 
 ### <a name="remarks"></a>설명
 
-디렉터리를 제거 하지 않습니다.
+`Remove` 디렉터리를 제거 하지 않습니다.
 
-`Remove` 멤버 함수는 열려 있는 연결 된 파일 또는 파일을 제거할 수 없는 경우 예외를 throw 합니다. DEL 명령을 하는 것과 같습니다.
+`Remove` 멤버 함수는 열려 있는 연결 된 파일 또는 파일을 제거할 수 없는 경우 예외를 throw 합니다. 이 함수는 DEL 명령과 동일 합니다.
 
 ### <a name="example"></a>예제
 
@@ -699,7 +699,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 ### <a name="remarks"></a>설명
 
-디렉터리의 이름을 바꿀 수 없습니다. REN 명령에는 것과 같습니다.
+디렉터리의 이름을 바꿀 수 없습니다. 이 함수는 REN 명령과 동일 합니다.
 
 ### <a name="example"></a>예제
 
@@ -739,7 +739,7 @@ UINT nFrom);
 
 파일을 열면 파일 포인터는 0으로 파일의 시작에 배치 됩니다.
 
-파일의 끝을 넘어 위치로 파일 포인터를 설정할 수 있습니다. 이렇게 하면 파일에 쓸 때까지 파일의 크기 증가 하지 않습니다.
+파일의 끝을 넘어 위치로 파일 포인터를 설정할 수 있습니다. 이렇게 하면 파일에 쓸 때까지 파일 크기가 증가 하지 않습니다.
 
 이 메서드에 대 한 예외 처리기는 예외 처리 된 후 예외 개체를 삭제 해야 합니다.
 
@@ -853,7 +853,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 수정 시간을 설정 하는 `m_mtime` 필드에 *상태*합니다.
 
-유의 사항에 대 한 호출을 하는 경우 `SetStatus` 만 파일의 특성을 변경 하려고 하며 `m_mtime` 파일 상태 구조체의 멤버 이면 0이 아닌 특성을 영향을 받습니다 (-시간 스탬프에 부작용을 미칠 수를 변경 하는 중 특성)입니다. 만 파일의 특성을 변경 하려는 경우 먼저 설정 합니다 `m_mtime` 0 및 다음에 대 한 호출을 확인 하는 파일 상태 구조체의 멤버 `SetStatus`합니다.
+호출 하는 경우 `SetStatus` 만 파일의 특성을 변경 하려고 하며 `m_mtime` 파일 상태 구조체의 멤버 이면 0이 아닌 특성을 영향을 받습니다 (스탬프 특성에 부작용이 있을 수 있습니다 시간 변경). 만 파일의 특성을 변경 하려는 경우 먼저 설정 합니다 `m_mtime` 0 및 다음에 대 한 호출을 확인 하는 파일 상태 구조체의 멤버 `SetStatus`합니다.
 
 ### <a name="example"></a>예제
 

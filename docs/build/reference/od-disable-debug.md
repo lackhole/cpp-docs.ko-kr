@@ -21,7 +21,7 @@ ms.locfileid: "62320684"
 ---
 # <a name="od-disable-debug"></a>/Od(디버그 비활성화)
 
-프로그램에서 모든 최적화를 해제 하 고 컴파일 속도가 빨라집니다.
+프로그램에서 모든 최적화를 해제하여 컴파일 속도를 빠르게 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -31,7 +31,7 @@ ms.locfileid: "62320684"
 
 ## <a name="remarks"></a>설명
 
-이 옵션은 기본값입니다. 때문에 **/Od** 코드 이동 하지 않습니다. 디버깅 프로세스를 간소화 합니다. 디버깅에 대 한 컴파일러 옵션에 대 한 자세한 내용은 참조 하세요. [/z7, /Zi, /ZI (디버그 정보 형식)](z7-zi-zi-debug-information-format.md)합니다.
+이 옵션은 기본값입니다. **/Od**는 코드 이동을 하지 않게 하여 디버깅을 간소화합니다. 디버깅과 관련된 컴파일러 옵션에 대한 자세한 내용은 [/Z7, /Zi, /ZI (디버그 정보 형식)](z7-zi-zi-debug-information-format.md)을 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -39,9 +39,9 @@ ms.locfileid: "62320684"
 
 1. **C/C++** 폴더를 클릭합니다.
 
-1. 클릭 합니다 **최적화** 속성 페이지.
+1. **최적화** 속성 페이지를 클릭합니다.
 
-1. 수정 된 **최적화** 속성입니다.
+1. **최적화** 속성을 수정합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 

@@ -5,14 +5,14 @@ helpviewer_keywords:
 - warnings, compiler
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-ms.openlocfilehash: ee2b6097a62a8f1030dc631354f96ec7a33d2f11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0f306ef11b17ac94281dc9a5fdba55a34d236eb1
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62236572"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400920"
 ---
-# <a name="compiler-warnings-that-are-off-by-default"></a>기본적으로 해제 되어 있는 컴파일러 경고
+# <a name="compiler-warnings-that-are-off-by-default"></a>기본적으로 해제되어 있는 컴파일러 경고
 
 컴파일러는 대부분의 개발자 액세스 하지 유용 하지 때문에 기본적으로 해제 되어 있는 경고를 지원 합니다. 경우에 따라 이전 코드에서 일반적인 관용구 또는 선택 하는 스타일에 대 한 경고는 합니다. 언어에 대 한 Microsoft 확장 사용에 대 한 다른 경고는입니다. 다른 경우에 영역 프로그래머에 게 예기치 않은 또는 정의 되지 않은 동작이 발생할 수 있는 잘못 된 가정을 자주 확인 되는 위치를 나타냅니다. 사용 하도록 설정 하는 경우 라이브러리 헤더에 여러 번 나타날 수 있습니다 이러한 경고 중. C 런타임 라이브러리 및 C++ 표준 라이브러리 내보내기 경고 수준에만 경고가 하고자 [/w4](../build/reference/compiler-option-warning-level.md)합니다.
 
@@ -159,7 +159,7 @@ ms.locfileid: "62236572"
 ::: moniker range=">= vs-2019"
 <sup>16.0</sup> 이 경고는 Visual Studio 2019 RTM부터 사용할 수 있습니다.<br/>
 ::: moniker-end
-<sup>권한</sup> 하지 않는 한이 경고는 해제 되어 합니다 [관대 한 /-](../build/reference/permissive-standards-conformance.md) 컴파일러 옵션을 설정 합니다.<br/>
+<sup>권한</sup> 하지 않는 한이 경고는 해제 되어 합니다 [관대 한 /-](../build/reference/permissive-standards-conformance.md) 컴파일러 옵션을 설정 합니다.
 
 ## <a name="warnings-off-by-default-in-earlier-versions"></a>이전 버전에서 기본적으로 해제 경고
 

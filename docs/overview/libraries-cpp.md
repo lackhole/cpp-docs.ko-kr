@@ -1,12 +1,12 @@
 ---
 title: 라이브러리
 ms.date: 11/18/2018
-ms.openlocfilehash: 8837bd005cd5c75307874ec293f3ef956431d32e
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 7eba3905fc0010f37b15b4af40f6135c4fd97f47
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "66182573"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400697"
 ---
 # <a name="libraries"></a>라이브러리
 
@@ -23,5 +23,5 @@ Visual Studio에는 하나 이상의 C++ 워크로드를 설치할 때 다음과
 
 [MFC/ATL](../mfc/mfc-and-atl.md)<br/>
 [병렬 라이브러리](../parallel/parallel-programming-in-visual-cpp.md)<br/>
-[데이터 액세스 라이브러리](../data/data-access-in-cpp.md)<br/>
+[데이터 액세스 라이브러리](../data/data-access-in-cpp.md)
 

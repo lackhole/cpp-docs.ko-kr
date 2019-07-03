@@ -48,18 +48,18 @@ helpviewer_keywords:
 - InterlockedCompareExchange64_rel intrinsic
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
-ms.openlocfilehash: 6c0fabe7cbada87253960faca8e207bb10dd07bd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ac3ea1c97fe78cf2a145cd2ce62f7b3f198ab3c
+ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263739"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344446"
 ---
 # <a name="interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange 내장 함수
 
 **Microsoft 전용**
 
-연관 비교 및 교환을 수행합니다.
+연동 된 비교 및 교환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -202,25 +202,25 @@ __int64 _InterlockedCompareExchange64_rel(
 
 ## <a name="remarks"></a>설명
 
-`_InterlockedCompareExchange`는 `Destination` 값과 `Comparand` 값의 원자성 비교를 수행합니다. `Destination` 값이 `Comparand` 값과 같으면 `Exchange`으로 지정된 주소에 `Destination` 값이 저장됩니다. 그렇지 않으면 작업이 수행되지 않습니다.
+`_InterlockedCompareExchange` 원자성 비교를 수행 합니다 `Destination` 값을 `Comparand` 값입니다. `Destination` 값이 `Comparand` 값과 같으면 `Exchange`으로 지정된 주소에 `Destination` 값이 저장됩니다. 그렇지 않으면 없는 작업을 수행합니다.
 
 `_InterlockedCompareExchange` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedCompareExchange](/windows/desktop/api/winnt/nf-winnt-interlockedcompareexchange) 함수입니다.
 
-사용되는 데이터 형식과 프로세서별 획득 또는 해제 의미 체계에 따라 다른 `_InterlockedCompareExchange`의 여러 변형이 있습니다.
+여러 변형이 `_InterlockedCompareExchange` 는 데이터 형식과 프로세서별 획득 여부에 따라 또는 release 의미 체계가 사용 됩니다.
 
-`_InterlockedCompareExchange` 함수는 long 정수 값에 대해 작동하는 반면 `_InterlockedCompareExchange8`은 8비트 정수 값에 대해, `_InterlockedCompareExchange16`은 short 정수 값에 대해 그리고 `_InterlockedCompareExchange64`는 64비트 정수 값에 대해 작동합니다.
+동안 합니다 `_InterlockedCompareExchange` 함수는 정수 (long) 값에 작동 `_InterlockedCompareExchange8` 8 비트 정수 값에 대해 `_InterlockedCompareExchange16` 정수 (short) 값에 작동 및 `_InterlockedCompareExchange64` 64 비트 정수 값에 작동 합니다.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 ARM 내장 함수는 메모리 장벽으로 작동하지 않습니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. 포함 된 ARM 내장 함수는 `_nf` ("no fence") 접미사는 메모리 장벽으로 작동 하지 않습니다.
 
 `_np`("no prefetch"의 약어) 접미사가 포함된 내장 함수는 컴파일러가 가능한 프리페치 연산을 삽입하지 못하도록 차단합니다.
 
-HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcquire` 및 `_HLERelease` 접미사가 포함된 내장 함수는 하드웨어에서 잠금 쓰기 단계를 제거하여 성능을 향상시킬 수 있는 힌트를 프로세서에 포함합니다. HLE를 지원하지 않는 플랫폼에서 이러한 내장 함수를 호출하면 힌트는 무시됩니다.
+HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcquire` 및 `_HLERelease` 접미사가 포함된 내장 함수는 하드웨어에서 잠금 쓰기 단계를 제거하여 성능을 향상시킬 수 있는 힌트를 프로세서에 포함합니다. 를 HLE를 지원 하지 않는 플랫폼에서 이러한 내장 함수를 호출 하는 경우에 힌트가 무시 됩니다.
 
 이러한 루틴은 내장 함수로만 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 간단한 하위 수준 스레드 동기화에 `_InterlockedCompareExchange`를 사용합니다. 이 방식은 다중 스레드 프로그래밍의 기준으로 사용하기에는 한계가 있으며, 일반적인 연관 내장 함수 사용 방법을 보여 주기 위한 용도로 제공됩니다. 최상의 결과를 얻으려면 Windows API를 사용합니다. 다중 스레드 프로그래밍에 대 한 자세한 내용은 참조 하세요. [다중 스레드 Win32 프로그램 작성](../parallel/writing-a-multithreaded-win32-program.md)합니다.
+다음 예제에서는 간단한 하위 수준 스레드 동기화에 `_InterlockedCompareExchange`를 사용합니다. 접근 방식은 다중 스레드 프로그래밍;에 대 한 기준으로 제한 사항이 있습니다. interlocked 내장 함수를 사용 하는 일반적인 설명에 표시 됩니다. 최상의 결과를 얻으려면 Windows API를 사용합니다. 다중 스레드 프로그래밍에 대 한 자세한 내용은 참조 하세요. [다중 스레드 Win32 프로그램 작성](../parallel/writing-a-multithreaded-win32-program.md)합니다.
 
 ```
 // intrinExample.cpp
@@ -248,7 +248,7 @@ using namespace std;
 //#define SKIP_LOCKING
 
 // A common way of locking using _InterlockedCompareExchange.
-// Please refer to other sources for a discussion of the many issues
+// Refer to other sources for a discussion of the many issues
 // involved. For example, this particular locking scheme performs well
 // when lock contention is low, as the while loop overhead is small and
 // locks are acquired very quickly, but degrades as many callers want
