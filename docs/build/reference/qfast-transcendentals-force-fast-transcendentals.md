@@ -16,7 +16,7 @@ ms.locfileid: "62319319"
 ---
 # <a name="qfasttranscendentals-force-fast-transcendentals"></a>/Qfast_transcendentals(빠른 초월수 강제 적용)
 
-초월수 함수에 대한 인라인 코드를 생성합니다.
+초월 함수에 대한 인라인 코드를 생성합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,9 +26,9 @@ ms.locfileid: "62319319"
 
 ## <a name="remarks"></a>설명
 
-이 컴파일러 옵션은 초월수 함수 실행 속도 개선을 위해 인라인 코드로 변환합니다. 이 옵션은 **/fp:except** 또는 **/fp:precise**와 함께 사용되는 경우에만 효과가 있습니다. 초월 함수에 대한 인라인 코드 생성은 이미 **/fp:fast**의 기본 동작입니다.
+이 컴파일러 옵션은 실행 속도 개선을 위해 초월 함수를 인라인 코드로 변환합니다. 이 옵션은 **/fp:except** 또는 **/fp:precise**와 함께 사용되는 경우에만 효과가 있습니다. 초월 함수에 대한 인라인 코드 생성은 이미 **/fp:fast**의 기본 동작입니다.
 
-이 옵션은 **/fp:strict**와 호환되지 않습니다. 부동 소수점 컴파일러 옵션에 대한 자세한 내용은 [/fp (부동 소수점 동작 지정)](fp-specify-floating-point-behavior.md)을 참조합니다.
+이 옵션은 **/fp:strict**와 호환되지 않습니다. 부동 소수점 컴파일러 옵션에 대한 자세한 내용은 [/fp(부동 소수점 동작 지정)](fp-specify-floating-point-behavior.md)를 참조합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
