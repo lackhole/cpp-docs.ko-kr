@@ -6,12 +6,12 @@ helpviewer_keywords:
 - 32-bit code porting
 - upgrading Visual C++ applications, 32-bit code
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
-ms.openlocfilehash: fca4a87310f7ba0c21a6a7512dd93dce0f915f6b
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 25cf8d451c0efb5234fba5e56b6bfe7ceb7c2c08
+ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220392"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67400822"
 ---
 # <a name="upgrading-projects-from-earlier-versions-of-visual-c"></a>이전 버전의 Visual C++에서 프로젝트 업그레이드
 
@@ -42,7 +42,7 @@ ms.locfileid: "65220392"
 [부동 소수점 마이그레이션 문제](floating-point-migration-issues.md)<br/>
 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](use-native-multi-targeting.md)<br/>
 [Visual C++ 기능은 Visual Studio 2019 미리 보기에서 사용되지 않음](features-deprecated-in-visual-studio.md)<br/>
-[빌드 시스템 변경 내용](build-system-changes.md)<br/>
+[빌드 시스템 변경 내용](build-system-changes.md)
 
 ## <a name="see-also"></a>참고 항목
 

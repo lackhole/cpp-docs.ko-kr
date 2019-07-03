@@ -3,12 +3,12 @@ title: CppProperties.json 스키마 참조
 ms.date: 05/16/2019
 helpviewer_keywords:
 - CMake in Visual Studio
-ms.openlocfilehash: 8432b72deaef99ee20147505030cbc8a9a270869
-ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
+ms.openlocfilehash: cf5cd964068ad2e3aeeaf1e057c9bf407f4985f5
+ms.sourcegitcommit: b233f05adae607f75815111006a771c432df5a9d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344411"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67516369"
 ---
 # <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json 스키마 참조
 
@@ -264,7 +264,7 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
 |-|-|
 |`${workspaceRoot}`| 작업 영역 폴더의 전체 경로|
 |`${projectRoot}`| `CppProperties.json`이 있는 폴더의 전체 경로|
-|`${vsInstallDir}`| 실행되는 Visual Studio 인스턴스를 실행하는 폴더의 전체 경로|
+|`${env.vsInstallDir}`| 실행되는 Visual Studio 인스턴스를 실행하는 폴더의 전체 경로|
 
 예를 들어, 프로젝트에 있는 include 폴더를 windows.h 및 Windows SDK에서 일반적인 다른 헤더를 포함 하려는 업데이트 프로그램 `CppProperties.json` 다음 구성 파일에 포함 됩니다.
 

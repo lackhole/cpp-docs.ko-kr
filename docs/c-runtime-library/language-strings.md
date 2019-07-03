@@ -23,9 +23,9 @@ Microsoft C 런타임 라이브러리 구현은 다음 언어 문자열도 지�
 
 |언어 문자열|해당 로캘 이름|
 |---------------------|----------------------------|
-|american|ko-KR|
-|american english|ko-KR|
-|american-english|ko-KR|
+|american|en-US|
+|american english|en-US|
+|american-english|en-US|
 |australian|en-AU|
 |belgian|nl-BE|
 |canadian|en-CA|
@@ -37,7 +37,7 @@ Microsoft C 런타임 라이브러리 구현은 다음 언어 문자열도 지�
 |chinese-singapore|zh-SG|
 |chinese-traditional|zh-TW|
 |dutch-belgian|nl-BE|
-|english-american|ko-KR|
+|english-american|en-US|
 |english-aus|en-AU|
 |english-belize|en-BZ|
 |english-can|en-CA|
@@ -48,8 +48,8 @@ Microsoft C 런타임 라이브러리 구현은 다음 언어 문자열도 지�
 |english-south africa|en-ZA|
 |english-trinidad y tobago|en-TT|
 |english-uk|en-GB|
-|english-us|ko-KR|
-|english-usa|ko-KR|
+|english-us|en-US|
+|english-usa|en-US|
 |french-belgian|fr-BE|
 |french-canadian|fr-CA|
 |french-luxembourg|fr-LU|
@@ -86,8 +86,8 @@ Microsoft C 런타임 라이브러리 구현은 다음 언어 문자열도 지�
 |swedish-finland|sv-FI|
 |swiss|de-CH|
 |uk|en-GB|
-|us|ko-KR|
-|usa|ko-KR|
+|us|en-US|
+|usa|en-US|
 
 ## <a name="see-also"></a>참고 항목
 
