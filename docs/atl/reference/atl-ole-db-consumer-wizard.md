@@ -1,15 +1,15 @@
 ---
 title: ATL OLE DB 소비자 마법사
-ms.date: 05/09/2019
+ms.date: 07/02/2019
 helpviewer_keywords:
 - ATL projects, adding ATL OLE DB consumers
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-ms.openlocfilehash: bd7af5c9788f5075f38f85bd035ba8cd09e8baec
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
-ms.translationtype: HT
+ms.openlocfilehash: 7195d712474765258ac0319539697b3517cb91b3
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706988"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552235"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB 소비자 마법사
 
@@ -30,7 +30,7 @@ Visual Studio 2019 이상에서는 이 마법사를 사용할 수 없습니다.
 
 - **데이터 소스**
 
-   **데이터 소스** 단추를 사용하면 지정한 OLE DB 공급자를 사용하여 지정한 데이터 소스를 설정할 수 있습니다. 이 단추를 클릭하면 **데이터 연결 속성** 대화 상자가 나타납니다. 연결 문자열을 작성하는 방법 및 **데이터 연결 속성** 대화 상자에 대한 자세한 내용은 Windows SDK 설명서에서 [데이터 연결 API 개요](/previous-versions/windows/desktop/ms718102)를 참조하세요.
+   **데이터 소스** 단추를 사용하면 지정한 OLE DB 공급자를 사용하여 지정한 데이터 소스를 설정할 수 있습니다. 이 단추를 클릭하면 **데이터 연결 속성** 대화 상자가 나타납니다. 연결 문자열을 작성하는 방법 및 **데이터 연결 속성** 대화 상자에 대한 자세한 내용은 Windows SDK 설명서에서 [데이터 연결 API 개요](/previous-versions/windows/desktop/ms718102(v=vs.85))를 참조하세요.
 
    다음 추가 정보는 **데이터 연결 속성** 대화 상자의 탭에 대해 설명합니다.
 
@@ -171,7 +171,7 @@ Visual Studio 2019 이상에서는 이 마법사를 사용할 수 없습니다.
 
 - **지원**
 
-   확인란을 선택하여 소비자에서 지원할 업데이트 종류를 지정합니다(없음이 기본값임). 다음 옵션은 각각 속성 집합 맵의 [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676)에 대한 해당 항목과 [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892)를 설정합니다.
+   확인란을 선택하여 소비자에서 지원할 업데이트 종류를 지정합니다(없음이 기본값임). 다음 옵션은 각각 속성 집합 맵의 [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676(v=vs.85))에 대한 해당 항목과 [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892(v=vs.85))를 설정합니다.
 
    - **변경 내용**
 
@@ -187,8 +187,8 @@ Visual Studio 2019 이상에서는 이 마법사를 사용할 수 없습니다.
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL OLE DB 소비자](../../atl/reference/adding-an-atl-ole-db-consumer.md)<br/>
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[연결 문자열 및 데이터 연결(OLE DB)](/previous-versions/windows/desktop/ms718376)
+[연결 문자열 및 데이터 연결(OLE DB)](/previous-versions/windows/desktop/ms718376(v=vs.85))

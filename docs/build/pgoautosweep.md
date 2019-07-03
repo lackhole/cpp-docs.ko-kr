@@ -1,20 +1,20 @@
 ---
 title: PgoAutoSweep
-ms.date: 03/14/2018
+ms.date: 07/02/2019
 f1_keywords:
 - PgoAutoSweep
 - PogoAutoSweepA
 - PogoAutoSweepW
-ms.openlocfilehash: 2d9804e5ce90663d44ac389ab4f71d10290e6470
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 57bcd1b2e9f0a3312867c4373fd1e50bcf91576e
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295337"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552237"
 ---
 # <a name="pgoautosweep"></a>PgoAutoSweep
 
-`PgoAutoSweep` 파일에 현재 프로필 카운터 정보를 저장 하 고 카운터를 다시 설정 합니다. 함수를 사용 하 여 나중에 사용할 최적화 빌드에서.pgc 파일에 실행 중인 프로그램에서 모든 프로필 데이터를 쓸 학습 하는 프로필 기반 최적화 중입니다.
+`PgoAutoSweep` 파일에 현재 프로필 카운터 정보를 저장 하 고 카운터를 다시 설정 합니다. 함수를 사용 하 여 프로필 기반 최적화를 실행 중인 프로그램에서 모든 프로필 데이터를 쓸 학습 하는 동안는 `.pgc` 최적화 빌드에서 나중에 사용할 파일입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,7 +26,7 @@ void PgoAutoSweep(const wchar_t* name); // UNICODE
 ### <a name="parameters"></a>매개 변수
 
 *name*<br/>
-저장 된.pgc 파일을 식별 하는 문자열입니다.
+저장 된 항목에 대 한 식별 문자열 `.pgc` 파일입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -34,11 +34,11 @@ void PgoAutoSweep(const wchar_t* name); // UNICODE
 
 라는 파일에 저장 된 프로필 카운터 데이터를 놓입니다 *base_name*-*이름*! *값*.pgc, 여기서 *base_name* 실행 파일의 기본 이름인 *이름* 에 전달 되는 매개 변수 `PgoAutoSweep`, 및 *값* 일반적으로 증가 하는 숫자, 파일 이름 충돌을 방지 하는 고유 값이입니다.
 
-만든.pgc 파일 `PgoAutoSweep` .pgd 파일로 최적화 된 실행 파일을 만드는 데 사용할에 병합 해야 합니다. 사용할 수는 [pgomgr](pgomgr.md) 병합을 수행 하는 명령입니다.
+합니다 `.pgc` 에서 생성 된 파일 `PgoAutoSweep` 에 병합 해야는 `.pgd` 최적화 된 실행 파일을 만드는 데 사용할 파일입니다. 사용할 수는 [pgomgr](pgomgr.md) 병합을 수행 하는 명령입니다.
 
-사용 하 여 최적화 빌드하는 동안 병합된.pgd 파일의 이름을 링커에 전달할 수는 **PGD =**_filename_ 인수를 [/USEPROFILE](reference/useprofile.md) 링커 옵션 또는 사용 되지 않는 **/PGD** 링커 옵션입니다. 라는 파일에.pgc 파일을 병합 하는 경우 *base_name*.pgd를 필요가 없습니다 명령줄에서 파일 이름을 지정 하는 링커 기본적으로이 파일 이름을 선택 하기 때문에 있습니다.
+병합 된의 이름을 전달할 수 있습니다 `.pgd` 파일을 사용 하 여 최적화 빌드하는 동안 링커를 **PGD =** _filename_ 인수를 [/USEPROFILE](reference/useprofile.md) 링커 옵션을 사용 하거나 사용 되지 않는 **/PGD** 링커 옵션입니다. 병합 하는 경우는 `.pgc` 라는 파일에는 파일 *base_name*.pgd를 필요가 없습니다 명령줄에서 파일 이름을 지정 하는 링커 기본적으로이 파일 이름을 선택 하기 때문에 있습니다.
 
-`PgoAutoSweep` 함수 계측 된 빌드를 만들 때 지정한 스레드로부터의 안전성 설정이 유지 관리 합니다. 기본 설정을 사용 하거나 지정 하는 경우는 **NOEXACT** 인수를 [/GENPROFILE 또는 /FASTGENPROFILE]() 링커 옵션을 호출 `PgoAutoSweep` 는 스레드로부터 안전 하지 않습니다. 합니다 **EXACT** 인수 만듭니다 스레드로부터 안전 하 고 더 정확 하지만 느린 계측 된 실행 파일입니다.
+`PgoAutoSweep` 함수 계측 된 빌드를 만들 때 지정한 스레드로부터의 안전성 설정이 유지 관리 합니다. 기본 설정을 사용 하거나 지정 하는 경우는 **NOEXACT** 인수를 [/GENPROFILE 또는 /FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md) 링커 옵션을 호출 `PgoAutoSweep` 는 스레드로부터 안전 하지 않습니다. 합니다 **EXACT** 인수 만듭니다 스레드로부터 안전 하 고 더 정확 하지만 느린 계측 된 실행 파일입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -50,7 +50,7 @@ void PgoAutoSweep(const wchar_t* name); // UNICODE
 
 ## <a name="example"></a>예제
 
-사용 하 여 아래 예제에서는 `PgoAutoSweep` 두를 만들려고 합니다. 실행 하는 동안 여러 시점에서 PGC 파일입니다. 될 때까지 런타임 동작을 설명 하는 데이터를 포함 하는 첫 번째 `count` 가 3, 두 번째 응용 프로그램 종료 직전까지이 시점 이후에 수집 된 데이터를 포함 합니다.
+사용 하 여 아래 예제에서는 `PgoAutoSweep` 만들려는 두 `.pgc` 실행 중 여러 지점에서 파일입니다. 될 때까지 런타임 동작을 설명 하는 데이터를 포함 하는 첫 번째 `count` 가 3, 두 번째 응용 프로그램 종료 직전까지이 시점 이후에 수집 된 데이터를 포함 합니다.
 
 ```cpp
 // pgoautosweep.cpp
