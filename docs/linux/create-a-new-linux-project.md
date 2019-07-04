@@ -1,13 +1,13 @@
 ---
 title: Visual Studio에서 새로운 C++ Linux 프로젝트 만들기
-ms.date: 06/07/2019
+ms.date: 06/11/2019
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
-ms.openlocfilehash: e39e60c906901420a4809c22b4f4e71d3b621da1
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: 0377e21177b29d998fc3e66bb1863dbc127c1fbe
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821646"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042711"
 ---
 # <a name="create-a-new-linux-project"></a>새 Linux 프로젝트 만들기
 
@@ -19,7 +19,7 @@ Linux 프로젝트는 Visual Studio 2017 이상에서 사용할 수 있습니다
 
 먼저 Visual Studio용 **Linux 개발 작업 워크로드**가 설치되어 있는지 확인합니다. 자세한 내용은 [Linux 워크로드 다운로드, 설치, 설정](download-install-and-setup-the-linux-development-workload.md)을 참조하세요.
 
-Visual Studio에서 Linux에 대한 새로운 C++ 프로젝트를 만들 때 Visual Studio 프로젝트 또는 CMake 프로젝트를 만들도록 선택할 수 있습니다. 이 문서에서는 Visual Studio 프로젝트를 만드는 방법을 설명합니다. 기존 CMake 프로젝트로 만들고 작업하는 방법에 대한 자세한 내용은 [Linux CMake 프로젝트 구성](cmake-linux-project.md)을 참조하세요.
+Visual Studio에서 Linux에 대한 새로운 C++ 프로젝트를 만들 때 Visual Studio 프로젝트 또는 CMake 프로젝트를 만들도록 선택할 수 있습니다. 이 문서에서는 Visual Studio 프로젝트를 만드는 방법을 설명합니다. 기존 CMake 프로젝트를 만들고 작업하는 방법에 대한 자세한 내용은 [Linux CMake 프로젝트 만들기 및 구성](cmake-linux-project.md)을 참조하세요.
 
 ## <a name="to-create-a-new-linux-project"></a>새 Linux 프로젝트를 만들려면
 
@@ -49,6 +49,12 @@ Visual Studio에서 새 Linux 프로젝트를 만들려면 다음 단계를 따�
    | **콘솔 애플리케이션(Linux)** | Linux 컴퓨터를 대상으로 하는 프로젝트로, 콘솔에 텍스트를 출력하는 샘플 코드가 포함되어 있습니다. |
    | **빈 프로젝트(Linux)**       | Linux 컴퓨터를 대상으로 하는 프로젝트로, 샘플 코드가 없습니다. |
    | **메이크파일 프로젝트(Linux)**    | Linux 컴퓨터를 대상으로 하는 프로젝트로, 표준 메이크파일 빌드 시스템을 사용하여 빌드됩니다. |
+
+   ::: moniker range="vs-2019"
+
+   Visual Studio 2019에서는 새 CMake 프로젝트를 만들 수 있습니다. 자세한 내용은 [Linux CMake 프로젝트 만들기 및 구성](cmake-linux-project.md)을 참조하세요.
+   
+   ::: moniker-end
 
 ## <a name="next-steps"></a>다음 단계
 
