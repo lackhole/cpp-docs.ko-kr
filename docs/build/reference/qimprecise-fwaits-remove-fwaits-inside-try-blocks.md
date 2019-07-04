@@ -16,7 +16,7 @@ ms.locfileid: "62319592"
 ---
 # <a name="qimprecisefwaits-remove-fwaits-inside-try-blocks"></a>/Qimprecise_fwaits(Try 블록 내의 fwait 제거)
 
-제거 합니다 `fwait` 내부 명령을 `try` 사용 하는 경우 차단 합니다 [/fp: 제외 하 고](fp-specify-floating-point-behavior.md) 컴파일러 옵션입니다.
+[/fp:except](fp-specify-floating-point-behavior.md) 컴파일러 옵션을 사용할 때 `try` 블록 내의 `fwait` 명령을 제거합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,7 +26,7 @@ ms.locfileid: "62319592"
 
 ## <a name="remarks"></a>설명
 
-하는 경우이 옵션은 효과가 없습니다 **/fp: 제외한** 도 지정 하지 않으면. 지정 하는 경우는 **/fp: 제외 하 고** 컴파일러는 삽입 옵션을는 `fwait` 명령을 각 줄의 코드 주위를 `try` 블록입니다. 컴파일러는 이러한 방식으로 예외를 생성 하는 코드의 특정 줄을 식별할 수 있습니다. **/Qimprecise_fwaits** 제거 내부 `fwait` 지침을 관련 대기만 종료를 `try` 블록. 성능 향상이 되지만 컴파일러를 말할 수 있는 수만 `try` 블록 하면 예외가 줄 없습니다.
+이 옵션은 **/fp:except**가 지정되지 않은 경우 아무런 효과가 없습니다. **/fp:except** 옵션을 지정하면 컴파일러는 `try` 블록의 코드 줄마다 `fwait` 명령을 삽입합니다. 컴파일러는 이러한 방식으로 예외를 발생시키는 코드의 특정 줄을 식별할 수 있습니다. **/Qimprecise_fwaits**는 내부 `fwait` 명령을 제거하여 `try` 블록 주위의 대기만을 남겨둡니다. 이렇게 되면 성능은 향상이 되지만 컴파일러는 몇 라인인가가 아닌 어떤 `try` 블록이 예외를 발생시키는지에 대해서만 알 수 있습니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
