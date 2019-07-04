@@ -1,13 +1,13 @@
 ---
 title: Visual Studio에서 C++ Linux 프로젝트 구성
-ms.date: 06/07/2019
+ms.date: 06/11/2019
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 5acd9edeef8f09f86c394c39939d8408821dd691
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: a4e20222cc0b04f496989bf2d51fc12c85f5d162
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821572"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042627"
 ---
 # <a name="configure-a-linux-project"></a>Linux 프로젝트 구성
 
@@ -37,7 +37,7 @@ Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 
 ![일반 구성](media/settings_general.png)
 
-기본적으로는 실행 파일(.out)은 도구를 사용하여 빌드됩니다. 정적 또는 동적 라이브러리를 빌드하거나 기존 메이크파일을 사용하려면 **구성 형식** 설정을 사용합니다.
+기본적으로 실행 파일(.out)이 빌드됩니다. 정적 또는 동적 라이브러리를 빌드하거나 기존 메이크파일을 사용하려면 **구성 형식** 설정을 사용합니다.
 
 속성 페이지의 설정에 대한 자세한 내용은 [Linux 프로젝트 속성 페이지 참조](prop-pages-linux.md)를 참조하세요.
 
@@ -105,7 +105,7 @@ Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 이 기능은 zip이 설치된 Linux 컴퓨터에 따라 다릅니다. 이 apt-get 명령을 사용하여 zip을 설치할 수 있습니다.
 
 ```cmd
-apt install zip
+sudo apt install zip
 ```
 
 헤더 캐시를 관리하려면 **도구 > 옵션, 플랫폼 간 > 연결 관리자> 원격 헤더 IntelliSense 관리자**로 이동합니다. Linux 컴퓨터에서 변경한 후 헤더 캐시를 업데이트하려면 원격 연결을 선택한 후 **업데이트**를 선택합니다. 연결 자체를 삭제하지 않고 헤더를 제거하려면 **삭제**를 선택합니다. **탐색**을 선택하여 **파일 탐색기**에서 로컬 디렉터리를 엽니다. 이 폴더를 읽기 전용으로 취급합니다. Visual Studio 2017 15.3 이전 버전에서 작성된 기존 연결의 헤더를 다운로드하려면 연결을 선택한 다음, **다운로드**를 선택합니다.

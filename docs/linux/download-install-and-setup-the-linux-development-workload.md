@@ -1,17 +1,22 @@
 ---
 title: Visual Studio에서 C++ Linux 워크로드 설치
 description: Visual Studio에서 C++에 대한 Linux 워크로드를 다운로드하고, 설치하고, 설정하는 방법을 설명합니다.
-ms.date: 06/07/2019
+ms.date: 06/11/2019
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: af4e3ec0ac21951163e92786555559cd02e8148f
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: d5c099794f781fa9e6217f3796d24d1a63fd7b53
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821586"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042748"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Linux 워크로드 다운로드, 설치 및 설정
 
+::: moniker range="vs-2015"
+
+Linux 프로젝트는 Visual Studio 2017 이상에서 지원됩니다.
+
+::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
@@ -35,7 +40,10 @@ Visual Studio 2019에서 빌드 및 디버깅에 대한 별도 대상을 지정�
 
 ## <a name="visual-studio-setup"></a>Visual Studio 설치
 
-1. Windows 검색 상자: ![Windows 검색 상자](media/visual-studio-installer-search.png)에 "Visual Studio 설치 관리자"를 입력합니다.
+1. Windows 검색 상자:
+
+   ![Windows 검색 상자](media/visual-studio-installer-search.png)
+
 2. **앱** 결과에서 설치 관리자를 찾아 두 번 클릭합니다. 설치 프로그램이 열리면 **수정**을 선택한 다음, **워크로드** 탭을 클릭합니다. **기타 도구 집합**으로 아래로 스크롤하여 **C++를 사용한 Linux 개발** 워크로드를 선을 선택합니다.
 
    ![Linux 개발용 Visual C++ 워크로드](media/linuxworkload.png)
@@ -56,10 +64,10 @@ Windows 10에서 WSL(Linux용 Windows 하위 시스템)에 선호하는 Linux �
 
 ## <a name="linux-setup-ubuntu-on-wsl"></a>Linux 설정: WSL에서 Ubuntu
 
-WSL에서 원격 연결이 필요하지 않습니다. Intellisense 지원을 위해 Visual Studio를 사용하는 Linux 헤더의 자동 동기화에 **zip** 및 **rsync**가 필요합니다. 필요한 애플리케이션이 없다면 다음과 같이 설치할 수 있습니다.
+WSL을 대상으로 하는 경우, 빌드 및 디버그를 위해 원격 연결을 추가하거나 SSH를 구성할 필요가 없습니다. Intellisense 지원을 위해 Visual Studio를 사용하는 Linux 헤더의 자동 동기화에 **zip** 및 **rsync**가 필요합니다. 필요한 애플리케이션이 없다면 다음과 같이 설치할 수 있습니다.
 
 ```bash
-sudo g++ gdb make rsync zip
+sudo apt-get install g++ gdb make rsync zip
 ```
 ::: moniker-end
 

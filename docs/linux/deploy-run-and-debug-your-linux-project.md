@@ -3,12 +3,12 @@ title: Visual Studio에서 C++ Linux 프로젝트 배포, 실행 및 디버그
 description: Visual Studio에 있는 C++ Linux 프로젝트 내의 원격 대상에서 코드를 컴파일하고, 실행하고, 디버그하는 방법을 설명합니다.
 ms.date: 06/07/2019
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
-ms.openlocfilehash: 707915a502aafefee47af7e84b534e06ba678b3d
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: 70770385bde859d47532b130463a1cc54e32a570
+ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821622"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67042755"
 ---
 # <a name="deploy-run-and-debug-your-linux-project"></a>Linux 프로젝트 배포, 실행 및 디버그
 
@@ -22,7 +22,7 @@ Visual Studio에서 Linux C++ 프로젝트를 만들고 [Linux 연결 관리자]
 
 ::: moniker range="vs-2019"
 
-**Visual Studio 2019 버전 16.1** 디버깅 및 빌드에 다른 Linux 시스템을 대상으로 지정할 수 있습니다. **일반** 속성 페이지에서 빌드 머신을 지정하고 **디버깅** 속성 페이지에서 디버깅 머신을 지정합니다.
+**Visual Studio 2019 버전 16.1** 디버깅 및 빌드에 다른 Linux 시스템을 대상으로 지정할 수 있습니다. 예를 들어 IoT 시나리오를 대상으로 하는 경우, x64에서 교차 컴파일하여 ARM 디바이스에 배포할 수 있습니다. 자세한 내용은 이 문서의 뒷부분에 있는 [빌드 및 디버깅에 다른 머신 지정](#separate_build_debug)을 참조하세요.
 
 ::: moniker-end
 
@@ -35,8 +35,6 @@ Linux 프로젝트를 조작하고 디버그할 수 있는 여러 가지 방법�
 ## <a name="debug-your-linux-project"></a>Linux 프로젝트 디버그
 
 1. **디버깅** 속성 페이지에서 디버깅 모드를 선택합니다.
-
-   
    
    ::: moniker range="vs-2019"
 
@@ -94,15 +92,19 @@ Linux 프로젝트를 조작하고 디버그할 수 있는 여러 가지 방법�
 
    ![Linux 콘솔 창](media/consolewindow.png)
 
-## <a name="configure-other-debugging-options"></a>다른 디버깅 옵션 구성
+## <a name="configure-other-debugging-options-msbuild-based-projects"></a>다른 디버깅 옵션 구성(MSBuild 기반 프로젝트)
 
 - 프로젝트의 **디버깅** 속성 페이지에서 **프로그램 인수** 항목을 사용하여 명령줄 인수를 실행 파일에 전달할 수 있습니다.
 
    ![프로그램 인수](media/settings_programarguments.png)
 
-- 특정 디버거 옵션은 **추가 디버거 명령** 항목을 통해 GDB에 전달될 수 있습니다.  예를 들어 SIGILL(잘못된 명령) 신호를 무시하고자 할 경우  **handle** 명령을 사용하여 신호를 무시할 수 있습니다.  위 그림처럼 **추가 디버거 명령** 항목에 다음 내용을 추가하면 됩니다.
+- 특정 디버거 옵션은 **추가 디버거 명령** 항목을 통해 GDB에 전달될 수 있습니다.  예를 들어 SIGILL(잘못된 명령) 신호를 무시하고자 할 경우  위 그림처럼 **추가 디버거 명령** 항목에 다음 내용을 추가하면 **handle** 명령을 사용하여 이 작업을 수행할 수 있습니다.
 
    `handle SIGILL nostop noprint`
+
+## <a name="configure-other-debugging-options-cmake-projects"></a>다른 디버깅 옵션 구성(CMake 프로젝트)
+
+launch.vs.json 파일에서 CMake 프로젝트에 대한 명령줄 인수를 추가로 지정할 수 있습니다. 자세한 내용은 [CMake 프로젝트 디버그](cmake-linux-project.md#debug_cmake_project)를 참조하세요.
 
 ## <a name="debug-with-attach-to-process"></a>프로세스에 연결을 사용하여 디버그
 
@@ -124,6 +126,72 @@ ExePath="C:\temp\ConsoleApplication17\ConsoleApplication17\bin\x64\Debug\Console
 ```
 
 **AttachOptionsForConnection**에는 필요할 수 있는 대부분의 특성이 있습니다. 위의 예제에서는 추가 .so 라이브러리를 검색할 위치를 지정하는 방법을 보여 줍니다. 자식 요소 **ServerOptions**는 gdbserver를 대신 사용하여 원격 프로세스에 연결할 수 있습니다. 이렇게 하려면 기호를 사용하여 로컬 gdb 클라이언트(Visual Studio 2017에서 제공되는 것은 위에 표시됨) 및 이진 파일의 로컬 복사본을 지정해야 합니다. **SetupCommands** 요소를 통해 gdb에 직접 명령을 전달할 수 있습니다. GitHub의 [LaunchOptions.xsd 스키마](https://github.com/Microsoft/MIEngine/blob/master/src/MICore/LaunchOptions.xsd)에서 사용 가능한 모든 옵션을 찾을 수 있습니다.
+
+::: moniker range="vs-2019"
+
+## <a name="separate_build_debug"></a> 빌드 및 디버깅에 다른 머신 지정
+
+Visual Studio 2019 버전 16.1에서는 MSBuild 기반 Linux 프로젝트와 원격 Linux 머신을 대상으로 하는 CMake 프로젝트 둘 다에 대해, 원격 빌드 머신과 원격 디버그 머신을 분리할 수 있습니다. 예를 들어 IoT 시나리오를 대상으로 하는 경우, 이제 x64에서 교차 컴파일하여 ARM 디바이스에 배포할 수 있습니다.
+
+### <a name="msbuild-based-projects"></a>MSBuild 기반 프로젝트
+
+기본적으로 원격 디버그 머신은 원격 빌드 머신과 같습니다(**구성 속성** > **일반** > **원격 빌드 머신**). 새 원격 디버그 머신을 지정하려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **구성 속성** > **디버깅** > **원격 디버그 머신**으로 이동합니다.  
+
+![Linux 원격 디버그 머신](media/linux-remote-debug-machine.png)
+
+**원격 디버그 머신**의 드롭다운 메뉴에는 설정된 원격 연결이 모두 채워져 있습니다. 새 원격 연결을 추가하려면 **도구** > **옵션** > **플랫폼 간** > **연결 관리자**로 이동하거나, **빠른 실행**에서 “연결 관리자”를 검색합니다. 프로젝트의 속성 페이지에서 새 원격 배포 디렉터리를 지정할 수도 있습니다(**구성 속성** > **일반** > **원격 배포 디렉터리**).
+
+기본적으로 프로세스에서 디버그하는 데 필요한 파일만 원격 디버깅 머신에 배포됩니다. **솔루션 탐색기**를 사용하여 원격 디버그 머신에 배포할 소스 파일을 구성할 수 있습니다. 소스 파일을 클릭하면 솔루션 탐색기 바로 아래에 해당 파일 속성의 미리 보기가 표시됩니다.
+
+![Linux 배포 가능 파일](media/linux-deployable-content.png)
+
+**콘텐츠** 속성은 원격 디버그 머신에 파일을 배포할지 여부를 지정합니다. **속성 페이지** > **Configuration Manager**로 이동한 다음, 해당 구성의 **배포**를 선택 취소하면 배포를 완전히 해제할 수 있습니다.
+
+프로젝트 배포를 더 세부적으로 제어해야 하는 경우도 있습니다. 예를 들어 배포하려는 파일 중 일부가 솔루션 외부에 있거나, 파일 또는 디렉터리별로 원격 배포 디렉터리를 사용자 지정하려고 합니다. 이러한 경우 .vcxproj 파일에 다음 코드 블록을 추가하고 “example.cpp”를 실제 파일 이름으로 바꿉니다.
+
+```xml
+
+<ItemGroup>
+   <RemoteDeploy Include="__example.cpp">
+<!-- This is the source Linux machine, can be empty if DeploymentType is LocalRemote -->
+      <SourceMachine>$(RemoteTarget)</SourceMachine>
+      <TargetMachine>$(RemoteDebuggingTarget)</TargetMachine>
+      <SourcePath>~/example.cpp</SourcePath>
+      <TargetPath>~/example.cpp</TargetPath>
+<!-- DeploymentType can be LocalRemote, in which case SourceMachine will be empty and SourcePath is a local file on Windows -->
+      <DeploymentType>RemoteRemote</DeploymentType>
+<!-- Indicates whether the deployment contains executables -->
+      <Executable>true</Executable>
+   </RemoteDeploy>
+</ItemGroup>
+```
+
+### <a name="cmake-projects"></a>CMake 프로젝트
+
+원격 Linux 머신을 대상으로 하는 CMake 프로젝트의 경우 launch.vs.json에서 새 원격 디버그 머신을 지정할 수 있습니다. 기본적으로 “remoteMachineName” 값은 사용자의 원격 빌드 머신에 해당하는 CMakeSettings.json의 “remoteMachineName” 속성과 동기화됩니다. 이러한 속성은 더 이상 일치하지 않아도 되며, launch.vs.json의 “remoteMachineName” 값에 따라 배포 및 디버그에 사용되는 원격 머신이 결정됩니다.
+
+![CMake 원격 디버그 머신](media/cmake-remote-debug-machine.png)
+
+IntelliSense에서 설정된 모든 원격 연결 목록을 제안합니다. **도구** > **옵션** > **플랫폼 간** > **연결 관리자**로 이동하거나, **빠른 실행**에서 “연결 관리자”를 검색하면 새 원격 연결을 추가할 수 있습니다.
+
+배포를 완전히 제어하려는 경우 launch.vs.json 파일에 다음 코드 블록을 추가할 수 있습니다. 자리 표시자 값을 실제 값으로 바꿔야 합니다.
+
+```json
+
+"disableDeploy": false,
+"deployDirectory": "~\foo",
+"deploy" : [
+   {
+      "sourceMachine": "127.0.0.1 (username=example1, port=22, authentication=Password)",
+      "targetMachine": "192.0.0.1 (username=example2, port=22, authentication=Password)",
+      "sourcePath": "~/example.cpp",
+      "targetPath": "~/example.cpp",
+      "executable": "false"
+   }
+]
+
+```
+::: moniker-end
 
 ## <a name="next-steps"></a>다음 단계
 
