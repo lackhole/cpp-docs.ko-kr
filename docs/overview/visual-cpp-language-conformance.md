@@ -1,16 +1,16 @@
 ---
 title: Microsoft C++ 언어 규칙 테이블
-ms.date: 05/20/2019
+ms.date: 07/02/2019
 ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 17d6a1b0685d6981c7df79e76ecc5142083e14c7
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: 2b5d7774734eae992935af9bd4abd408dd387d7d
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400899"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552356"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ 언어 규칙 테이블
 
@@ -115,7 +115,7 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0306R4 쉼표 생략 및 쉼표 삭제에 \_\_VA_OPT\_\_ 추가(영문)](https://wg21.link/P0306R4)|아니요|
 |&nbsp;&nbsp;[P0315R4 Allowing lambdas in unevaluated contexts](https://wg21.link/P0315R4)(P0315R4 평가되지 않은 컨텍스트에서 람다 허용)|아니요|
 |&nbsp;&nbsp;[P0409R2 Allowing lambda-capture \[=, this\]](https://wg21.link/P0409R2)(P0409R2 람다 캡처 [=, this] 허용)|아니요|
-|&nbsp;&nbsp;[P0428R2 일반 람다에 대한 친숙한 템플릿 구문(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/pa pers/2017/p0428r2.pdf)|아니요|
+|&nbsp;&nbsp;[P0428R2 일반 람다에 대한 친숙한 템플릿 구문(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0428r2.pdf)|아니요|
 |&nbsp;&nbsp;[P0479R5 \[\[likely\]\] and \[\[unlikely\]\] attributes](https://wg21.link/P0479R5)(P0479R5 [[likely]] 및 [[unlikely]] 특성)|아니요|
 |&nbsp;&nbsp;[P0542R5 Contracts](https://wg21.link/P0542R5)(P0542R5 계약)|아니요|
 |&nbsp;&nbsp;[P0614R1 Range-based for-loops with initializers](https://wg21.link/P0614R1)(P0614R1 이니셜라이저를 사용한 범위 기반 for 루프)|아니요|

@@ -1,13 +1,13 @@
 ---
 title: Visual C++ 2003 ~ 2015의 새로운 기능
-ms.date: 11/04/2016
+ms.date: 07/02/2019
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: 4bcf661284d447b18542bb158940d539ef9c0686
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 1aff65ff998d9b3bb86fbf7288850287f4445275
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449802"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552210"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ 2003 ~ 2015의 새로운 기능
 
@@ -1279,7 +1279,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
    이 변경과 관련된 컴파일러 진단은 없습니다.
 
-   예제
+   예
 
    ```cpp
     #include <type_traits>
@@ -1682,7 +1682,7 @@ C++11 명시적 변환 연산자, 이니셜라이저 목록, 범위가 지정된
 ### <a name="windows-runtime-app-development-support"></a>Windows 런타임 앱 개발 지원
 
 - **네이티브 XAML 기반 UI 모델** Windows 런타임 앱의 경우 새로운 네이티브 XAML 기반 UI 모델을 사용할 수 있습니다.
-- **Visual C++ 구성 요소 확장** 이러한 확장은 Windows 런타임 앱의 필수 구성 요소인 Windows 런타임 개체의 사용을 간소화합니다. 자세한 내용은 C++ [및 Visual C++ 언어 참조(C++/CX)](../cppcx/visual-c-language-reference-c-cx.md)를 [사용하는 Windows 런타임 앱에 대한 로드맵을 참조하세요.](../windows/universal-windows-apps-cpp.md)
+- **Visual C++ 구성 요소 확장** 이러한 확장은 Windows 런타임 앱의 필수 구성 요소인 Windows 런타임 개체의 사용을 간소화합니다. 자세한 내용은 C++ [및 Visual C++ 언어 참조(C++/CX)](../cppcx/visual-c-language-reference-c-cx.md)를 [사용하는 Windows 런타임 앱에 대한 로드맵을 참조하세요.](../cppcx/universal-windows-apps-cpp.md)
 - **DirectX 게임** Windows 런타임 앱에 대한 새로운 DirectX 지원을 사용하여 흥미로운 게임을 개발할 수 있습니다.
 - **XAML/DirectX interop** XAML과 DirectX를 모두 사용하는 Windows 런타임 앱이 효율적으로 상호 운용됩니다.
 - **Windows 런타임 구성 요소 DLL 개발** 구성 요소 DLL 개발을 통해 Windows 런타임 환경을 확장할 수 있습니다.

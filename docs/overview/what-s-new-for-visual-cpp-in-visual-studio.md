@@ -1,22 +1,22 @@
 ---
 title: Visual Studio의 새로운 C++ 기능
-ms.date: 06/17/2019
+ms.date: 07/02/2019
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: b408036fdee3d8163ef48cdbdab6e0f0a9c939ab
-ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
+ms.openlocfilehash: f02c5878f5f741c216499f619bfd1392483bfa86
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344179"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552353"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio의 새로운 C++ 기능
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019에는 Microsoft C++ 환경에 대한 많은 업데이트와 수정이 포함되었습니다. 컴파일러 및 도구에서 많은 버그와 문제가 해결되었습니다. 이러한 문제는 대부분, 고객이 **피드백 보내기** 아래의 [문제 보고](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) 및 [제안하기](https://developercommunity.visualstudio.com/spaces/62/index.html) 옵션을 통해 제출한 것입니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2019의 새로운 기능](/visualstudio/ide/whats-new-visual-studio-2019)을 참조하세요. Visual Studio 2017의 새로운 C++ 기능에 대한 자세한 내용은 [Visual Studio 2017의 새로운 C++ 기능](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2017)을 참조하세요. Visual Studio 2015 및 이전 버전의 새로운 C++ 기능에 대한 자세한 내용은 [Visual C++ 2003~2015의 새로운 기능](/cpp/porting/visual-cpp-what-s-new-2003-through-2015)을 참조하세요.
+Visual Studio 2019에는 Microsoft C++ 환경에 대한 많은 업데이트와 수정이 포함되었습니다. 컴파일러 및 도구에서 많은 버그와 문제가 해결되었습니다. 이러한 문제는 대부분, 고객이 **피드백 보내기** 아래의 [문제 보고](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019) 및 [제안하기](https://developercommunity.visualstudio.com/spaces/62/index.html) 옵션을 통해 제출한 것입니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2019의 새로운 기능](/visualstudio/ide/whats-new-visual-studio-2019)을 참조하세요. Visual Studio 2017의 새로운 C++ 기능에 대한 자세한 내용은 [Visual Studio 2017의 새로운 C++ 기능](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2017)을 참조하세요. Visual Studio 2015 및 이전 버전의 새로운 C++ 기능에 대한 자세한 내용은 [Visual C++ 2003~2015의 새로운 기능](/cpp/porting/visual-cpp-what-s-new-2003-through-2015)을 참조하세요.
 
 ## <a name="c-compiler"></a>C++ 컴파일러
 
@@ -241,7 +241,7 @@ Clang/C2 실험적 구성 요소가 제거되었습니다. C++ 표준을 완전�
 
 ::: moniker range="=vs-2017"
 
-Visual Studio 2017에는 C++ 환경에 대한 많은 업데이트와 수정이 포함되었습니다. 대부분 **피드백 보내기** 아래의 [문제 보고 및 제안하기](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) 옵션을 통해 고객이 제출한 250개 이상의 버그와 보고된 문제를 해결했습니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2017의 새로운 기능](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017)을 참조하세요. Visual Studio 2019의 새로운 C++ 기능에 대한 자세한 내용은 [Visual Studio의 새로운 C++ 기능](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2019)을 참조하세요. Visual Studio 2015 및 이전 버전의 새로운 C++ 기능에 대한 자세한 내용은 [Visual C++ 2003~2015의 새로운 기능](/cpp/porting/visual-cpp-what-s-new-2003-through-2015)을 참조하세요.
+Visual Studio 2017에는 C++ 환경에 대한 많은 업데이트와 수정이 포함되었습니다. 대부분 **피드백 보내기** 아래의 [문제 보고 및 제안하기](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2017) 옵션을 통해 고객이 제출한 250개 이상의 버그와 보고된 문제를 해결했습니다. 버그를 알려 주셔서 감사합니다. 모든 Visual Studio의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2017의 새로운 기능](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017)을 참조하세요. Visual Studio 2019의 새로운 C++ 기능에 대한 자세한 내용은 [Visual Studio의 새로운 C++ 기능](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio?view=vs-2019)을 참조하세요. Visual Studio 2015 및 이전 버전의 새로운 C++ 기능에 대한 자세한 내용은 [Visual C++ 2003~2015의 새로운 기능](/cpp/porting/visual-cpp-what-s-new-2003-through-2015)을 참조하세요.
 
 ## <a name="c-compiler"></a>C++ 컴파일러
 
