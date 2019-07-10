@@ -26,7 +26,7 @@ ms.locfileid: "62319592"
 
 ## <a name="remarks"></a>설명
 
-이 옵션은 **/fp:except**가 지정되지 않은 경우 아무런 효과가 없습니다. **/fp:except** 옵션을 지정하면 컴파일러는 `try` 블록의 코드 줄마다 `fwait` 명령을 삽입합니다. 컴파일러는 이러한 방식으로 예외를 발생시키는 코드의 특정 줄을 식별할 수 있습니다. **/Qimprecise_fwaits**는 내부 `fwait` 명령을 제거하여 `try` 블록 주위의 대기만을 남겨둡니다. 이렇게 되면 성능은 향상이 되지만 컴파일러는 몇 라인인가가 아닌 어떤 `try` 블록이 예외를 발생시키는지에 대해서만 알 수 있습니다.
+이 옵션은 **/fp:except**가 지정되지 않은 경우 아무런 효과가 없습니다. **/fp:except** 옵션을 지정하면 컴파일러는 `try` 블록의 코드 줄마다 `fwait` 명령을 삽입합니다. 컴파일러는 이러한 방식으로 예외를 발생시키는 코드의 특정 줄을 식별할 수 있습니다. **/Qimprecise_fwaits**는 내부 `fwait` 명령을 제거하여 `try` 블록 주위의 대기만을 남겨둡니다. 이렇게 되면 성능은 향상이 되지만 컴파일러는 몇 번째 라인에서가 아니라 어떤 `try` 블록이 예외를 발생시키는지에 대해서만 알 수 있습니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
