@@ -11,7 +11,7 @@ ms.locfileid: "62319956"
 ---
 # <a name="qpar-report-auto-parallelizer-reporting-level"></a>/Qpar-report(자동 병렬화 도우미 보고 수준)
 
-컴파일러의 보고 기능을 활성화 [자동 평행 화](../../parallel/auto-parallelization-and-auto-vectorization.md) 컴파일하는 동안 출력에 대 한 정보 메시지의 수준을 지정 합니다.
+컴파일러의 [자동 병렬화](../../parallel/auto-parallelization-and-auto-vectorization.md) 보고 기능을 활성화하고 컴파일하는 동안 출력에 대한 정보 메시지의 수준을 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -22,10 +22,10 @@ ms.locfileid: "62319956"
 ## <a name="remarks"></a>설명
 
 **/Qpar-report:1**<br/>
-평행화되는 루프에 대해 정보 메시지를 출력합니다.
+병렬화되는 루프에 대해 정보 메시지를 출력합니다.
 
 **/Qpar-report:2**<br/>
-평행화되는 루프와 평행화되지 않는 루프 둘 다에 대해 정보 메시지와 이유 코드를 출력합니다.
+병렬화되는 루프와 병렬화되지 않는 루프 둘 다에 대한 정보 메시지와 이유 코드를 출력합니다.
 
 메시지는 stdout에 보고됩니다. 정보 메시지가 보고되지 않는 경우에는 코드에 루프가 없거나 평행화되지 않은 루프를 보고하도록 보고 수준을 설정하지 않은 것입니다. 이유 코드 및 메시지에 대 한 자세한 내용은 참조 하세요. [벡터화 도우미 및 평행 화 도우미 메시지](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)합니다.
 
@@ -35,7 +35,7 @@ ms.locfileid: "62319956"
 
 1. 에 **속성 페이지** 대화 상자의 **C /C++** 선택 **명령줄**.
 
-1. 에 **추가 옵션** 상자에 입력 합니다 `/Qpar-report:1` 또는 `/Qpar-report:2`합니다.
+1. **추가 옵션** 상자에 `/Qpar-report:1` 또는 `/Qpar-report:2`를 입력합니다.
 
 ### <a name="to-set-the-qpar-report-compiler-option-programmatically"></a>프로그래밍 방식으로 /Qpar-report 컴파일러 옵션을 설정하려면
 
