@@ -11,7 +11,7 @@ ms.locfileid: "62319254"
 ---
 # <a name="qvec-report-auto-vectorizer-reporting-level"></a>/Qvec-report(자동 벡터화 도우미 보고 수준)
 
-컴파일러의 [자동 벡터화 도우미](../../parallel/auto-parallelization-and-auto-vectorization.md) 보고 기능을 사용하도록 설정하고  컴파일하는 동안 출력할 정보 메시지의 수준을 지정 합니다.
+컴파일러의 [자동 벡터화 도우미](../../parallel/auto-parallelization-and-auto-vectorization.md) 보고 기능을 사용하도록 설정하고 컴파일하는 동안 출력할 정보 메시지의 수준을 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -22,10 +22,10 @@ ms.locfileid: "62319254"
 ## <a name="remarks"></a>설명
 
 **/Qvec-report:1**<br/>
-벡터화된 for 루프의 정보 메시지를 출력 합니다.
+벡터화된 for 루프의 정보 메시지를 출력합니다.
 
 **/Qvec-report:2**<br/>
-벡터화된 그리고 벡터화되지 않은 for 루프에 대한 이유 코드와 함께 정보 메시지를 출력 합니다.
+벡터화된 그리고 벡터화되지 않은 for 루프에 대한 이유 코드와 함께 정보 메시지를 출력합니다.
 
 이유 코드 및 메시지에 대한 내용은 [벡터화 도우미 및 병렬화 도우미 메시지](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)를 참조합니다.
 
