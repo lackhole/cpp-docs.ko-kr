@@ -21,7 +21,7 @@ ms.locfileid: "62318162"
 ---
 # <a name="showincludes-list-include-files"></a>/showIncludes(포함 파일 나열)
 
-컴파일러가 포함 파일의 목록을 출력합니다. 중첩된 포함 파일(포함된 파일을 포함 하는 파일)도 표시됩니다.
+컴파일러가 포함 파일의 목록을 출력하도록 합니다. 중첩된 포함 파일(포함한 파일에서 포함하는 파일)도 표시됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -31,22 +31,22 @@ ms.locfileid: "62318162"
 
 ## <a name="remarks"></a>설명
 
-컴파일하는 동안 포함파일을 발견하는 경우 다음과 같은 메시지가 출력 됩니다.
+컴파일하는 동안 포함 파일을 발견하는 경우 다음과 같은 메시지가 출력됩니다.
 
 ```
 Note: including file: d:\MyDir\include\stdio.h
 ```
 
-중첩된 포함 파일은 들여 쓰기로 표시되며 중첩의 각 수준에 대하여 하나의 공백을 표시합니다.
+중첩된 포함 파일은 들여 쓰기로 표시되며 중첩의 각 수준에 대하여 하나의 공백을 표시합니다. 예는 다음과 같습니다.
 
 ```
 Note: including file: d:\temp\1.h
 Note: including file:  d:\temp\2.h
 ```
 
-이 예에서 `2.h`는 `1.h`에 포함되어 있었으므로 들여쓰기가 됩니다.
+이 예에서 `2.h`는 `1.h`에 포함되었으므로 들여쓰기 합니다.
 
-**/showIncludes** 옵션은 `stdout`이 아니라 `stdout`으로 출력됩니다.
+**/showIncludes** 옵션은 `stdout`이 아니라 `stderr`로 출력됩니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
