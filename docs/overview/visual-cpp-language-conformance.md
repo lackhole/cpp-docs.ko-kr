@@ -182,7 +182,7 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0475R1 Guaranteed Copy Elision For Piecewise Construction](https://wg21.link/P0475R1)(P0475R1 Piecewise 구문에 대한 보장된 복사 생략)|아니요|
 |&nbsp;&nbsp;[P0476R2 <bit> bit_cast](https://wg21.link/P0476R2)|아니요|
 |&nbsp;&nbsp;[P0482R6 char8_t: A type for UTF-8 characters and strings](https://wg21.link/P0482R6)(P0482R6 char8_t: UTF-8 문자 및 문자열 형식)|아니요|
-|&nbsp;&nbsp;[P0487R1 Fixing operator>>(basic_istream&, CharT*)](https://wg21.link/P0487R1)(P0487R1 연산자>>(basic_istream&, CharT*) 수정)|아니요|
+|&nbsp;&nbsp;[P0487R1 연산자>>(basic_istream&, CharT* 수정](https://wg21.link/P0487R1)|아니요|
 |&nbsp;&nbsp;[P0528R3 Atomic Compare-And-Exchange With Padding Bits](https://wg21.link/P0528R3)(P0528R3 패딩 비트를 사용한 원자성 비교 및 교환)|아니요|
 |&nbsp;&nbsp;[P0556R3 <bit> ispow2(), ceil2(), floor2(), log2p1()](https://wg21.link/P0556R3)|아니요|
 |&nbsp;&nbsp;[P0591R4 Utility Functions For Uses-Allocator Construction](https://wg21.link/P0591R4)(P0591R4 할당자 사용 구문에 대한 유틸리티 함수)|아니요|
@@ -210,7 +210,7 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0935R0 Eradicating Unnecessarily Explicit Default Constructors](https://wg21.link/P0935R0)(P0935R0 불필요하게 명시적인 기본 생성자 제거)|아니요|
 |&nbsp;&nbsp;[P0966R1 string::reserve() Should Not Shrink](https://wg21.link/P0966R1)(P0966R1 string::reserve() 축소하지 않아야 함)|아니요|
 |&nbsp;&nbsp;[P1001R2 execution::unseq](https://wg21.link/P1001R2)|아니요|
-|&nbsp;&nbsp;[P1006R1 constexpr For pointer_traits<T*>::pointer_to()](https://wg21.link/P1006R1)(P1006R1 pointer_traits<T*>::pointer_to()에 대한 constexpr)|아니요|
+|&nbsp;&nbsp;[P1006R1 pointer_traits<T*>::pointer_to()에 대한 constexpr](https://wg21.link/P1006R1)|아니요|
 |&nbsp;&nbsp;[P1007R3 assume_aligned()](https://wg21.link/P1007R3)|아니요|
 |&nbsp;&nbsp;[P1020R1 Smart Pointer Creation With Default Initialization](https://wg21.link/P1020R1)(P1020R1 기본 초기화를 사용한 스마트 포인터 만들기)|아니요|
 |&nbsp;&nbsp;[P1023R0 constexpr For std::array Comparisons](https://wg21.link/P1023R0)(P1023R0 std::array 비교에 대한 constexpr)|아니요|
