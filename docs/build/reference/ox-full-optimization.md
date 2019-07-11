@@ -28,11 +28,11 @@ ms.locfileid: "62320099"
 
 ## <a name="remarks"></a>설명
 
-**/Ox** 컴파일러 옵션이 사용 하도록 설정 합니다 **/O** 컴파일러 옵션는 속도입니다. 합니다 **/Ox** 컴파일러 옵션이 추가 포함 되지 않습니다 [/GF (중복 문자열 제거)](gf-eliminate-duplicate-strings.md) 하 고 [/Gy (함수 수준 링크 사용)](gy-enable-function-level-linking.md) 로사용하도록설정하는옵션[/O1 또는/o2 (크기 최소화, 속도 최대화)](o1-o2-minimize-size-maximize-speed.md)합니다. 적용 하 여 추가 옵션 **/o1** 하 고 **/o2** 문자열 또는 디버깅에 영향을 줄 수 있는 대상 주소 및 엄격한 언어 규칙을 공유 하는 함수에 대 한 포인터를 발생할 수 있습니다. 합니다 **/Ox** 옵션은 포함 하지 않고 대부분의 최적화를 사용 하는 쉬운 방법을 **/GF** 하 고 **/Gy**합니다. 자세한 설명은 참조 하세요. 합니다 [/GF](gf-eliminate-duplicate-strings.md) 하 고 [/Gy](gy-enable-function-level-linking.md) 옵션입니다.
+**/Ox** 컴파일러 옵션을 사용하면 속도를 높이는 **/O** 컴파일러 옵션을 사용할 수 있습니다. **/Ox** 컴파일러 옵션에는 [/O1 또는/O2(크기 최소화, 속도 최대화)](o1-o2-minimize-size-maximize-speed.md)로 사용할 수 있는 [/GF(중복 문자열 제거)](gf-eliminate-duplicate-strings.md)와 [/Gy(함수 수준 링크 사용)](gy-enable-function-level-linking.md) 옵션이 포함되어 있지 않습니다. **/O1**과 **/O2**에 의해 추가 옵션을 적용하면 문자열이나 함수에 대한 포인터가 대상 주소를 공유하게 되어 디버깅 및 엄격한 언어 규칙에 영향을 줄 수 있습니다. **/Ox** 옵션은 **/GF**와 **/Gy**를 포함하지 않고 대부분의 최적화를 쉽게 수행할 수 있는 방법입니다. 자세한 설명은 [/GF](gf-eliminate-duplicate-strings.md)와 [/Gy](gy-enable-function-level-linking.md) 옵션을 참조합니다.
 
 **/Ox** 컴파일러 옵션은 다음 옵션을 조합하여 사용하는 것과 같습니다.
 
-- [/Ob (인라인 함수 확장)](ob-inline-function-expansion.md)option 매개 변수 2는 위치 ( **/ob2**)
+- [/Ob(인라인 함수 확장)](ob-inline-function-expansion.md)option 매개 변수 자리에는 2를 넣습니다. ( **/Ob2**)
 
 - [/Og(전역 최적화)](og-global-optimizations.md)
 
@@ -58,7 +58,7 @@ ms.locfileid: "62320099"
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 아래 **구성 속성**오픈 **C /C++**  를 선택한 후는 **최적화** 속성 페이지.
+1. **구성 속성**에서 **C/C++** 를 연 다음 **최적화** 속성 페이지를 선택합니다.
 
 1. **최적화** 속성을 수정합니다.
 
