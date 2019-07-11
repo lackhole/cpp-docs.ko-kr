@@ -44,7 +44,7 @@ Visual Studio 2017 이상을 사용하여 Linux 원격 머신 또는 Linux용 Wi
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>C++ team blog(C++ 팀 블로그)</h3>
+                        <h3>C++ Team blog(C++ 팀 블로그)</h3>
                         <p>Visual Studio의 모든 최신 C++ 기능을 최신 상태로 유지하세요.</p>
                     </div>
                 </div>
