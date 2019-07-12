@@ -1,6 +1,6 @@
 ---
 title: '형식 사양 구문: printf 및 wprintf 함수'
-ms.date: 11/04/2016
+ms.date: 07/02/2019
 helpviewer_keywords:
 - format specification fields for printf function
 - printf function format specification fields
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - width fields, printf function
 - precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
-ms.openlocfilehash: bccbe435d926a75990a4ca35b98c9b352dd40e8b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 07565da17eb53274e0c3203abbc8cddb9e61da90
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740310"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552260"
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>형식 사양 구문: printf 및 wprintf 함수
 
@@ -22,7 +22,7 @@ ms.locfileid: "57740310"
 
 다음 양식에서 변환 사양은 선택적 필드 및 필수 필드로 이루어져 있습니다.
 
-**%**[[*flags*](#flags)][[*width*](#width)][.[*precision*](#precision)][[*size*](#size)][*type*](#type)
+**%** [[*flags*](#flags)][[*width*](#width)][.[*precision*](#precision)][[*size*](#size)][*type*](#type)
 
 각 변환 사양 필드는 특정 형식 옵션 또는 변환 지정자를 의미하는 문자 또는 숫자입니다. 필수 *type* 필드는 인수에 적용될 변환 종류를 지정합니다. 선택적 *flags*, *width* 및 *precision* 필드는 선행 공백 또는 0, 양쪽 맞춤 및 표시되는 전체 자릿수와 같은 추가 형식 요소를 제어합니다. *size* 필드는 사용되고 변환되는 인수의 크기를 지정합니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "57740310"
 |**X**|정수|부호 없는 16진수 정수이며 "ABCDEF"를 사용합니다.|
 |**e**|부동 소수점|부호 있는 값으로서 형식은 [–]*d.dddd*__e±__*dd*[*d*]입니다. 여기서 *d*는 하나의 10진수이고 *dddd*는 지정된 전체 자릿수에 따라 하나 이상의 10진수이거나 기본적으로 6 자릿수입니다. *dd*[*d*]는 [출력 형식](../c-runtime-library/set-output-format.md) 및 지수 크기에 따라 두 개 또는 세 개의 10진수입니다.|
 |**E**|부동 소수점|**e**가 아니라 **E**가 지수를 도입한다는 점을 제외하고는 **e** 형식과 동일합니다.|
-|**f**|부동 소수점|형식이 [–]*dddd*__.__*dddd*인 부호 있는 값입니다. 여기서 *dddd*는 하나 이상의 10진수입니다. 소수점 앞의 자릿수는 수의 크기에 따라 다르며, 소수점 뒤의 자릿수는 요청된 전체 자릿수에 따라 다릅니다. 기본 자릿수는 6입니다.|
+|**f**|부동 소수점|형식이 [–]*dddd* __.__ *dddd*인 부호 있는 값입니다. 여기서 *dddd*는 하나 이상의 10진수입니다. 소수점 앞의 자릿수는 수의 크기에 따라 다르며, 소수점 뒤의 자릿수는 요청된 전체 자릿수에 따라 다릅니다. 기본 자릿수는 6입니다.|
 |**F**|부동 소수점|무한대 및 NAN 출력이 대문자로 표시되는 점을 제외하고 **f** 형식과 동일합니다.|
 |**g**|부동 소수점|**f** 또는 **e** 형식으로 표시되는 부호 있는 값으로서, 두 형식 중 주어진 값 및 전체 자릿수에 대해 더 간단한 형식이 사용됩니다. **e** 형식은 값의 지수가 –4보다 작거나 *precision* 인수보다 크거나 같을 때만 사용됩니다. 뒤에 나오는 0은 잘리고, 소수점은 뒤에 하나 이상의 수가 나오는 경우에만 나타납니다.|
 |**G**|부동 소수점|**e**가 아니라 **E**가 지수를 도입(해당하는 경우)한다는 점을 제외하고는 **g** 형식과 동일합니다.|
@@ -74,11 +74,11 @@ ms.locfileid: "57740310"
 |**p**|포인터 유형|인수를 16진수로 된 주소로 표시합니다.|
 |**s**|문자열|`printf` 함수와 함께 사용될 때 단일 바이트 또는 멀티바이트 문자열을 지정하고, `wprintf` 함수와 함께 사용될 때는 와이드 문자열을 지정합니다. 첫 번째 null 문자 직전까지 또는 *precision* 값에 도달할 때까지 문자가 표시됩니다.|
 |**S**|문자열|`printf` 함수와 함께 사용될 때 와이드 문자열을 지정하고, `wprintf` 함수와 함께 사용될 때는 단일 바이트 또는 멀티바이트 문자열을 지정합니다. 첫 번째 null 문자 직전까지 또는 *precision* 값에 도달할 때까지 문자가 표시됩니다.|
-|**Z**|`ANSI_STRING` 또는 `UNICODE_STRING` 구조체|[ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-_string) 또는 [UNICODE_STRING](/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_unicode_string) 구조체의 주소가 인수로 전달될 때 구조체의 `Buffer` 필드에서 가리키는 버퍼에 포함되는 문자열을 표시합니다. **w**의 *size* 한정자 접두사를 사용하여 `UNICODE_STRING` 인수를 지정합니다(예: `%wZ`). 구조체의 `Length` 필드를 문자열의 길이(바이트 단위)로 설정해야 합니다. 구조체의 `MaximumLength` 필드를 버퍼의 길이(바이트 단위)로 설정해야 합니다.<br /><br /> 일반적으로 **Z** 형식 문자는 `dbgPrint` 및 `kdPrint` 등의 변환 사양을 사용하는 드라이버 디버깅 함수에서만 사용됩니다.|
+|**Z**|`ANSI_STRING` 또는 `UNICODE_STRING` 구조체|[ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-_string) 또는 [UNICODE_STRING](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) 구조체의 주소가 인수로 전달될 때 구조체의 `Buffer` 필드에서 가리키는 버퍼에 포함되는 문자열을 표시합니다. **w**의 *size* 한정자 접두사를 사용하여 `UNICODE_STRING` 인수를 지정합니다(예: `%wZ`). 구조체의 `Length` 필드를 문자열의 길이(바이트 단위)로 설정해야 합니다. 구조체의 `MaximumLength` 필드를 버퍼의 길이(바이트 단위)로 설정해야 합니다.<br /><br /> 일반적으로 **Z** 형식 문자는 `dbgPrint` 및 `kdPrint` 등의 변환 사양을 사용하는 드라이버 디버깅 함수에서만 사용됩니다.|
 
 Visual Studio 2015부터 부동 소수점 변환 지정자(**a**, **A**, **e**, **E**, **f**, **F**, **g**, **G**)에 해당하는 인수가 제한 없음, 무한 또는 NAN인 경우 형식이 지정된 출력은 C99 표준을 따릅니다. 이 표에는 형식이 지정된 출력이 나와 있습니다.
 
-|값|출력|
+|값|Output|
 |-----------|------------|
 |infinity|`inf`|
 |자동 NaN|`nan`|
@@ -89,7 +89,7 @@ Visual Studio 2015부터 부동 소수점 변환 지정자(**a**, **A**, **e**, 
 
 Visual Studio 2015 이전에는 CRT에서 제한 없음, 무한 및 NAN 값의 출력에 대해 다른 비표준 형식을 사용했습니다.
 
-|값|출력|
+|값|Output|
 |-----------|------------|
 |+ 무한대|`1.#INF` *random-digits*|
 |- 무한대|`-1.#INF` *random-digits*|
@@ -129,7 +129,7 @@ Visual Studio 2015 이전에는 CRT에서 제한 없음, 무한 및 NAN 값의 �
 
 ## <a name="width-specification"></a>너비 사양
 
-변환 사양에서 선택적인 너비 사양 필드는 *flags* 문자 뒤에 표시됩니다. *width* 인수는 출력 문자의 최소 개수를 제어하는 음수가 아닌 10진수 정수입니다. 출력 값의 문자 수가 지정된 너비보다 작은 경우 왼쪽 정렬 플래그(**-**)가 지정되었는지의 여부에 따라 최소 너비 값에 도달할 때까지 값의 왼쪽 또는 오른쪽에 공백이 추가됩니다. *width*가 0으로 시작하는 경우 변환이 무한대 또는 NAN인 경우를 제외하고 최소 너비에 도달할 때까지 정수 또는 부동 소수점 변환에 선행 0이 추가됩니다.
+변환 사양에서 선택적인 너비 사양 필드는 *flags* 문자 뒤에 표시됩니다. *width* 인수는 출력 문자의 최소 개수를 제어하는 음수가 아닌 10진수 정수입니다. 출력 값의 문자 수가 지정된 너비보다 작은 경우 왼쪽 정렬 플래그( **-** )가 지정되었는지의 여부에 따라 최소 너비 값에 도달할 때까지 값의 왼쪽 또는 오른쪽에 공백이 추가됩니다. *width*가 0으로 시작하는 경우 변환이 무한대 또는 NAN인 경우를 제외하고 최소 너비에 도달할 때까지 정수 또는 부동 소수점 변환에 선행 0이 추가됩니다.
 
 너비 지정은 값을 자르지 않습니다. 출력 값의 문자 수가 지정된 너비보다 크거나 *width*가 지정되지 않은 경우 *precision* 사양에 따라 값의 모든 문자가 출력됩니다.
 

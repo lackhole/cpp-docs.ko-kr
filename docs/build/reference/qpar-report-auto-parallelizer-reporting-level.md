@@ -1,4 +1,4 @@
----
+﻿---
 title: /Qpar-report(자동 병렬화 도우미 보고 수준)
 ms.date: 11/04/2016
 ms.assetid: 562673b9-02da-4bf8-bb64-70bc25ef4651

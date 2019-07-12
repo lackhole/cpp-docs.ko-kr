@@ -143,12 +143,12 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-ms.openlocfilehash: dedcab9b0addd3696749b50fef92b70081981c03
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf74bc3b5293cba018c07b6b5c56c85695db7635
+ms.sourcegitcommit: 6cb0670ca7d40e8ec55f162b8ce2847f5ae15f5c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179908"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67787364"
 ---
 # <a name="predefined-macros"></a>미리 정의된 매크로
 
@@ -381,6 +381,9 @@ MSVC는 이러한 추가 미리 정의 된 매크로 지원합니다.
    |Visual Studio 2017 버전 15.8|1915|
    |Visual Studio 2017 버전 15.9|1916|
    |Visual Studio 2019 RTW (16.0)|1920|
+   |Visual Studio 2019 버전 16.1|1921|
+   |Visual Studio 2019 16.2 버전|1922|
+   |Visual Studio 2019 버전 16.3|1923|
 
    컴파일러 릴리스 또는 특정된 버전의 Visual Studio 또는 후에 업데이트를 사용 하 여 테스트 하는 **>=** 연산자입니다. 비교할 조건부 지시문에서 사용할 수 있습니다  **&#95;MSC&#95;VER** 알려진된 해당 버전에 대 한 합니다. 비교할 여러 상호 배타적인 버전에 있는 경우 버전 번호의 내림차순 비교를 정렬 합니다. 예를 들어이 코드는 Visual Studio 2017 이상 버전을 출시 하는 컴파일러에 대 한 확인 합니다. 그런 다음 컴파일러 후 Visual Studio 2015 출시를 확인 합니다. 그런 다음 Visual Studio 2015 이전에 릴리스된 모든 컴파일러에 대 한 확인 합니다.
 

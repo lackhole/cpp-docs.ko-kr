@@ -1,18 +1,18 @@
 ---
 title: Visual Studio의 C++
 description: Visual C++는 Visual Studio IDE에 있는 Microsoft C++ 컴파일러, 코드 편집기 및 관련 도구의 이름입니다. Visual C++를 사용하여 Windows, Linux, Android 및 iOS 프로그램을 개발합니다.
-ms.date: 05/14/2019
+ms.date: 07/02/2019
 ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: c2a38d13cd7b34880b64521af99103ed8192bfd0
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 67bed9a8ce9b5cfbe11a5383d2f67ea6c02d1106
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451197"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552368"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio의 C++
 
@@ -92,7 +92,7 @@ C++, Google Test, Boost.Test 또는 CTest에 대한 Microsoft 유닛 테스트 �
 
 ## <a name="write-applications-in-c"></a>C++에서 애플리케이션 작성
 
-[유니버설 Windows 앱](../windows/universal-windows-apps-cpp.md)<br/>
+[유니버설 Windows 앱(C++)](../cppcx/universal-windows-apps-cpp.md)<br/>
 Windows 개발자 센터의 가이드 및 참조 내용을 알아봅니다. UWP 앱 개발에 대한 자세한 내용은 [유니버설 Windows 플랫폼 소개](/windows/uwp/get-started/universal-application-platform-guide) 및 [C++을 사용하여 첫 번째 UWP 앱 만들기](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)를 참조하세요.
 
 [데스크톱 애플리케이션(C++)](../windows/desktop-applications-visual-cpp.md)<br/>

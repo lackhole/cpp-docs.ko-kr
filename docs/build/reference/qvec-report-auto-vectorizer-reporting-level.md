@@ -1,4 +1,4 @@
----
+﻿---
 title: /Qvec-report(자동 벡터화 도우미 보고 수준)
 ms.date: 11/04/2016
 ms.assetid: 4778c9a3-0692-4085-9b05-1bfeadf4c74a

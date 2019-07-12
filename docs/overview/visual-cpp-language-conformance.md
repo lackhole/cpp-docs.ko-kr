@@ -1,16 +1,16 @@
 ﻿---
 title: Microsoft C++ 언어 규칙 테이블
-ms.date: 05/20/2019
+ms.date: 07/02/2019
 ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 17d6a1b0685d6981c7df79e76ecc5142083e14c7
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: 2b5d7774734eae992935af9bd4abd408dd387d7d
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400899"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552356"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ 언어 규칙 테이블
 
@@ -115,7 +115,7 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0306R4 쉼표 생략 및 쉼표 삭제에 \_\_VA_OPT\_\_ 추가(영문)](https://wg21.link/P0306R4)|아니요|
 |&nbsp;&nbsp;[P0315R4 Allowing lambdas in unevaluated contexts](https://wg21.link/P0315R4)(P0315R4 평가되지 않은 컨텍스트에서 람다 허용)|아니요|
 |&nbsp;&nbsp;[P0409R2 Allowing lambda-capture \[=, this\]](https://wg21.link/P0409R2)(P0409R2 람다 캡처 [=, this] 허용)|아니요|
-|&nbsp;&nbsp;[P0428R2 일반 람다에 대한 친숙한 템플릿 구문(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/pa pers/2017/p0428r2.pdf)|아니요|
+|&nbsp;&nbsp;[P0428R2 일반 람다에 대한 친숙한 템플릿 구문(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0428r2.pdf)|아니요|
 |&nbsp;&nbsp;[P0479R5 \[\[likely\]\] and \[\[unlikely\]\] attributes](https://wg21.link/P0479R5)(P0479R5 [[likely]] 및 [[unlikely]] 특성)|아니요|
 |&nbsp;&nbsp;[P0542R5 Contracts](https://wg21.link/P0542R5)(P0542R5 계약)|아니요|
 |&nbsp;&nbsp;[P0614R1 Range-based for-loops with initializers](https://wg21.link/P0614R1)(P0614R1 이니셜라이저를 사용한 범위 기반 for 루프)|아니요|
@@ -182,7 +182,7 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0475R1 Guaranteed Copy Elision For Piecewise Construction](https://wg21.link/P0475R1)(P0475R1 Piecewise 구문에 대한 보장된 복사 생략)|아니요|
 |&nbsp;&nbsp;[P0476R2 <bit> bit_cast](https://wg21.link/P0476R2)|아니요|
 |&nbsp;&nbsp;[P0482R6 char8_t: A type for UTF-8 characters and strings](https://wg21.link/P0482R6)(P0482R6 char8_t: UTF-8 문자 및 문자열 형식)|아니요|
-|&nbsp;&nbsp;[P0487R1 Fixing operator>>(basic_istream&, CharT*)](https://wg21.link/P0487R1)(P0487R1 연산자>>(basic_istream&, CharT*) 수정)|아니요|
+|&nbsp;&nbsp;[P0487R1 연산자>>(basic_istream&, CharT* 수정](https://wg21.link/P0487R1)|아니요|
 |&nbsp;&nbsp;[P0528R3 Atomic Compare-And-Exchange With Padding Bits](https://wg21.link/P0528R3)(P0528R3 패딩 비트를 사용한 원자성 비교 및 교환)|아니요|
 |&nbsp;&nbsp;[P0556R3 <bit> ispow2(), ceil2(), floor2(), log2p1()](https://wg21.link/P0556R3)|아니요|
 |&nbsp;&nbsp;[P0591R4 Utility Functions For Uses-Allocator Construction](https://wg21.link/P0591R4)(P0591R4 할당자 사용 구문에 대한 유틸리티 함수)|아니요|
@@ -210,7 +210,7 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0935R0 Eradicating Unnecessarily Explicit Default Constructors](https://wg21.link/P0935R0)(P0935R0 불필요하게 명시적인 기본 생성자 제거)|아니요|
 |&nbsp;&nbsp;[P0966R1 string::reserve() Should Not Shrink](https://wg21.link/P0966R1)(P0966R1 string::reserve() 축소하지 않아야 함)|아니요|
 |&nbsp;&nbsp;[P1001R2 execution::unseq](https://wg21.link/P1001R2)|아니요|
-|&nbsp;&nbsp;[P1006R1 constexpr For pointer_traits<T*>::pointer_to()](https://wg21.link/P1006R1)(P1006R1 pointer_traits<T*>::pointer_to()에 대한 constexpr)|아니요|
+|&nbsp;&nbsp;[P1006R1 pointer_traits<T*>::pointer_to()에 대한 constexpr](https://wg21.link/P1006R1)|아니요|
 |&nbsp;&nbsp;[P1007R3 assume_aligned()](https://wg21.link/P1007R3)|아니요|
 |&nbsp;&nbsp;[P1020R1 Smart Pointer Creation With Default Initialization](https://wg21.link/P1020R1)(P1020R1 기본 초기화를 사용한 스마트 포인터 만들기)|아니요|
 |&nbsp;&nbsp;[P1023R0 constexpr For std::array Comparisons](https://wg21.link/P1023R0)(P1023R0 std::array 비교에 대한 constexpr)|아니요|

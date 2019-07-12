@@ -1,6 +1,6 @@
 ---
 title: CHandle 클래스
-ms.date: 11/04/2016
+ms.date: 07/09/2019
 f1_keywords:
 - CHandle
 - ATLBASE/ATL::CHandle
@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CHandle class
 ms.assetid: 883e9db5-40ec-4e29-9c74-4dd2ddd2e35d
-ms.openlocfilehash: 19e761ea8eb133db55b4d24600f2a1fd01ac3e34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86d2cba6c3ee2e914d96ae2a09b642d556d46027
+ms.sourcegitcommit: 07b34ca1c1fecced9fadc95de15dc5fee4f31e5a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245636"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693403"
 ---
 # <a name="chandle-class"></a>CHandle 클래스
 
@@ -85,7 +85,7 @@ void Attach(HANDLE h) throw();
 
 ### <a name="remarks"></a>설명
 
-할당 된 `CHandle` 개체를 *h* 처리 합니다. 디버그 빌드에서 ATLASSERT 발생 *h* NULL입니다. 핸들의 유효성에 대 한 다른 없습니다 확인이 됩니다.
+할당 된 `CHandle` 개체를 *h* 핸들 및 호출 **h.Detach()** 합니다. 디버그 빌드에서 ATLASSERT 발생 *h* NULL입니다. 핸들의 유효성에 대 한 다른 없습니다 확인이 됩니다.
 
 ##  <a name="chandle"></a>  CHandle::CHandle
 

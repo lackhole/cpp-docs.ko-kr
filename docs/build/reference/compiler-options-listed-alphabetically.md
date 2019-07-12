@@ -3,12 +3,12 @@ title: 컴파일러 옵션 사전순 목록
 ms.date: 05/06/2019
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: ba4357f4c14e5cca9363ad2029374ede93529a2a
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: 7e69aa501dd0a7dbf2af51b6fa2c5bf4339eb416
+ms.sourcegitcommit: 07b34ca1c1fecced9fadc95de15dc5fee4f31e5a
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221770"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693426"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
@@ -116,7 +116,7 @@ ms.locfileid: "65221770"
 |[/source-charset](source-charset-set-source-character-set.md)|소스 문자 집합입니다.|
 |[/std](std-specify-language-standard-version.md)|C++ 표준 버전 호환성 선택기입니다.|
 |[/Tc](tc-tp-tc-tp-specify-source-file-type.md)|C 소스 파일을 지정합니다.|
-|[/TC](tc-tp-tc-tp-specify-source-file-type.md)|3. 모든 원본 파일 지정|
+|[/TC](tc-tp-tc-tp-specify-source-file-type.md)|3\. 모든 원본 파일 지정|
 |[/Tp](tc-tp-tc-tp-specify-source-file-type.md)|C++ 소스 파일을 지정합니다.|
 |[/TP](tc-tp-tc-tp-specify-source-file-type.md)|모든 원본 파일은 C++를 지정 합니다.|
 |[/U](u-u-undefine-symbols.md)|미리 정의된 매크로를 제거합니다.|
@@ -158,6 +158,7 @@ ms.locfileid: "65221770"
 |[/Zi](z7-zi-zi-debug-information-format.md)|완전한 디버깅 정보를 생성합니다.|
 |[/Zl](zl-omit-default-library-name.md)|.obj 파일에서 기본 라이브러리 이름을 제거합니다. x86 전용입니다.|
 |[/Zm](zm-specify-precompiled-header-memory-allocation-limit.md)|미리 컴파일된 헤더 메모리의 할당 제한을 지정합니다.|
+|[/Zo](zo-enhance-optimized-debugging.md)|최적화 된 코드에 대 한 향상 된 디버깅 정보를 생성합니다.|
 |[/Zp](zp-struct-member-alignment.md)|구조체 멤버를 압축합니다.|
 |[/Zs](zs-syntax-check-only.md)|구문만 확인합니다.|
 |[/ZW](zw-windows-runtime-compilation.md)|Windows 런타임에서 실행 하는 출력 파일을 생성 합니다.|
