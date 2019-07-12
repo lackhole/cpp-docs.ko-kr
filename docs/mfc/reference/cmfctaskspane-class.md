@@ -1,6 +1,6 @@
 ---
 title: CMFCTasksPane 클래스
-ms.date: 11/19/2018
+ms.date: 07/02/2019
 f1_keywords:
 - CMFCTasksPane
 - AFXTASKSPANE/CMFCTasksPane
@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CMFCTasksPane [MFC], Update
 - CMFCTasksPane [MFC], OnActivateTasksPanePage
 ms.assetid: b456328e-2525-4642-b78b-9edd1a1a7d3f
-ms.openlocfilehash: 137f30262ce01ad82c075302b6e85bf67ae7b9be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eeb24a0a02d1a084c83e280705344a9e5c505724
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62218672"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552279"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane 클래스
 
@@ -294,7 +294,7 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::RemovePage](#removepage)|작업 창에서 지정된 페이지를 제거합니다.|
 |[CMFCTasksPane::RemoveTask](#removetask)|작업 그룹에서 작업을 제거합니다.|
 |[CMFCTasksPane::SaveState](#savestate)|(재정의 [cdockablepane:: Savestate](cdockablepane-class.md).)|
-|[CMFCTasksPane::Serialize](#serialize)|(재정의 [cdockablepane:: Serialize]().)|
+|[CMFCTasksPane::Serialize](#serialize)|(재정의 [cdockablepane:: Serialize](cdockablepane-class.md).)|
 |[CMFCTasksPane::SetActivePage](#setactivepage)|작업 창에서 지정된 페이지를 활성화합니다.|
 |[CMFCTasksPane::SetCaption](#setcaption)|작업 창의 캡션 이름을 설정합니다.|
 |[CMFCTasksPane::SetGroupCaptionHeight](#setgroupcaptionheight)|그룹 캡션의 높이를 설정합니다.|

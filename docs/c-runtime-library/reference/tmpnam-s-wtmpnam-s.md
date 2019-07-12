@@ -78,7 +78,7 @@ errno_t _wtmpnam_s(
 
 |||||
 |-|-|-|-|
-|*str*|*sizeInChars*|**반환 값**|**내용의***str*|
+|*str*|*sizeInChars*|**반환 값**|**내용의**  *str*|
 |**NULL**|any|**EINVAL**|수정 안 됨|
 |되지 **NULL** (유효한 메모리를 가리킴)|너무 짧음|**ERANGE**|수정 안 됨|
 

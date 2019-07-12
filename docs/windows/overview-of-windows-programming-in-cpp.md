@@ -1,13 +1,13 @@
 ---
 title: C++를 이용한 Windows 프로그래밍 개요
-ms.date: 05/06/2019
+ms.date: 07/02/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 585fda614acce85e286e25b807d0fda57d03758b
-ms.sourcegitcommit: af580f3a11b19d22288424eac7ceae1bc24ab312
+ms.openlocfilehash: 1f49c9f8f78f83d6ae991b7427b28f7f5cbf7f0c
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66355560"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552313"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++를 이용한 Windows 프로그래밍 개요
 
@@ -19,7 +19,7 @@ C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍
 
 ## <a name="native-desktop-client-applications"></a>네이티브 데스크톱 클라이언트 응용 프로그램
 
-*데스크톱 네이티브 클라이언트 응용 프로그램* 는 c 또는 C++ 원래 네이티브를 사용 하는 응용 프로그램과 [Windows C Api 또는 COM 구성 요소 개체 모델 () Api](/windows/desktop/apiindex/windows-api-list) 운영 시스템에 액세스할 수 있습니다. 이러한 Api는 주로 C로 작성 된 자체 네이티브 데스크톱 앱을 만드는 방법이 둘 이상: 프로그래밍할 수 있습니다 Win32 Api를 직접 사용 하 여 운영 체제 이벤트를 처리 하는 C 스타일 메시지 루프를 사용 하 여. 또는 사용 하 여 프로그래밍할 수 있습니다 *Microsoft Foundation Classes* (MFC)를 가볍게 개체 지향 C++ Win32을 래핑하는 라이브러리입니다. 모두 접근 방식으로 간주 됩니다 "최신"을 Windows 플랫폼 (UWP (유니버설)을 비교 없지만 모두 완벽 하 게 지원 됩니다 있어야 수백만 라인 현재 환경에서 실행 되는 코드의 합니다. Win32 응용 프로그램은 개발자가 Windows 프로시저 함수 내에서 Windows 메시지를 명시적으로 처리해준 Windows로 실행될 수 있습니다.  이름에도 불구 하 고 32 비트 (x86) 또는 64 비트 (x64) 이진 Win32 응용 프로그램을 컴파일할 수 있습니다. Visual Studio IDE에서 x86과 Win32 용어는 동의어입니다.
+*데스크톱 네이티브 클라이언트 응용 프로그램* 는 c 또는 C++ 원래 네이티브를 사용 하는 응용 프로그램과 [Windows C Api 또는 COM 구성 요소 개체 모델 () Api](/windows/desktop/apiindex/windows-api-list) 운영 시스템에 액세스할 수 있습니다. 이러한 Api는 주로 C로 작성 된 자체 네이티브 데스크톱 앱을 만드는 방법이 둘 이상: 프로그래밍할 수 있습니다 Win32 Api를 직접 사용 하 여 운영 체제 이벤트를 처리 하는 C 스타일 메시지 루프를 사용 하 여. 또는 사용 하 여 프로그래밍할 수 있습니다 *Microsoft Foundation Classes* (MFC)를 가볍게 개체 지향 C++ Win32을 래핑하는 라이브러리입니다. 모두 접근 방식으로 간주 됩니다 "최신"을 Windows 플랫폼 (UWP (유니버설)을 비교 없지만 모두 완벽 하 게 지원 됩니다 있어야 수백만 라인 현재 환경에서 실행 되는 코드의 합니다. Win32 응용 프로그램은 개발자가 Windows 프로시저 함수 내에서 Windows 메시지를 명시적으로 처리해준 Windows로 실행될 수 있습니다. 이름에도 불구 하 고 32 비트 (x86) 또는 64 비트 (x64) 이진 Win32 응용 프로그램을 컴파일할 수 있습니다. Visual Studio IDE에서 x86과 Win32 용어는 동의어입니다.
 
 기존의 Windows C++ 프로그래밍을 시작하려면 [Win32 및 C++ 시작](/windows/desktop/LearnWin32/learn-to-program-for-windows)을 참조하세요. Win32에 대해 이해를 하면 [MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)에 대해 더 쉽게 배울 수 있습니다. 기존의의 예 C++ 정교한 그래픽을 사용 하는 데스크톱 응용 프로그램 참조 [Hilo: 개발 C++ Windows 용 응용 프로그램](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)합니다.
 
@@ -118,5 +118,5 @@ Visual Studio는 네이티브 코드에 대한 강력한 디버거, 정적 분�
 |[Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)|Visual C++ 개발자 콘텐츠에 대한 부모 항목입니다.|
 [C++/CLI를 사용한 .NET 개발](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|.NET 응용 프로그램 및 구성 요소와의 상호운용이 가능하도록 네이티브 C++ 라이브러리의 래퍼를 만듭니다.|
 |[.NET 및 UWP용 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)|C++/CX 및 C++/CLI에서 공유하는 구문요소에 대한 참조입니다.|
-|[유니버설 Windows 앱(C++)](universal-windows-apps-cpp.md)|C++/CX 또는 Windows 런타임 템플릿 라이브러리(WRL)를 이용한 UWP 응용 프로그램 개발하기.|
+|[유니버설 Windows 앱(C++)](../cppcx/universal-windows-apps-cpp.md)|C++/CX 또는 Windows 런타임 템플릿 라이브러리(WRL)를 이용한 UWP 응용 프로그램 개발하기.|
 |[COM 및 .NET에 대한 C++ 특성](attributes/cpp-attributes-com-net.md)|.NET 또는 COM을 사용할 때의 Windows 전용 프로그래밍용 비표준 특성|

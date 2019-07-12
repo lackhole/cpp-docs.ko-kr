@@ -1,13 +1,13 @@
 ---
 title: 예외(C++/CX)
-ms.date: 01/18/2018
+ms.date: 07/02/2019
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
-ms.openlocfilehash: 7134cbb9e90f0355a3b2a912330027cf73876443
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 93a3c096c79140787a46dcbd0ae6ec7edc0bf2e4
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301528"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552176"
 ---
 # <a name="exceptions-ccx"></a>예외(C++/CX)
 
@@ -63,7 +63,7 @@ C++/CX는 일반적인 HRESULT 오류를 나타내는 표준 예외 집합을 �
 
 ## <a name="unhandlederrordetected-event"></a>UnhandledErrorDetected 이벤트
 
-Windows 8.1 구독할 수 있습니다 합니다 [:: unhandlederrordetected](/uwp/api/windows.applicationmodel.core.icoreapplicationunhandlederror#Windows_ApplicationModel_Core_ICoreApplicationUnhandledError_UnhandledErrorDetected) 프로세스를 종료 하려고 합니다. 처리 되지 않은 오류에 대 한 액세스를 제공 하는 정적 이벤트를 합니다. 오류가 발생한 위치와 관계없이 이벤트 인수와 함께 전달되는 [Windows::ApplicationModel::Core::UnhandledError](/uwp/api/windows.applicationmodel.core.unhandlederror) 개체로 이 처리기에 수신됩니다. 개체에서 `Propagate` 를 호출하면 해당 개체가 오류 코드에 해당하는 형식의 `Platform::*Exception` 을 만들고 throw합니다. Catch 블록에서는 필요한 경우 사용자 상태를 저장할 수 있으며, 그런 다음 `throw`를 호출하여 프로세스가 종료되도록 허용하거나 프로그램을 알려진 상태로 되돌리기 위한 작업을 수행합니다. 다음 예제에서는 기본 패턴을 보여 줍니다.
+Windows 8.1 구독할 수 있습니다 합니다 [:: unhandlederrordetected](/uwp/api/windows.applicationmodel.core.icoreapplicationunhandlederror.unhandlederrordetected) 프로세스를 종료 하려고 합니다. 처리 되지 않은 오류에 대 한 액세스를 제공 하는 정적 이벤트를 합니다. 오류가 발생한 위치와 관계없이 이벤트 인수와 함께 전달되는 [Windows::ApplicationModel::Core::UnhandledError](/uwp/api/windows.applicationmodel.core.unhandlederror) 개체로 이 처리기에 수신됩니다. 개체에서 `Propagate` 를 호출하면 해당 개체가 오류 코드에 해당하는 형식의 `Platform::*Exception` 을 만들고 throw합니다. Catch 블록에서는 필요한 경우 사용자 상태를 저장할 수 있으며, 그런 다음 `throw`를 호출하여 프로세스가 종료되도록 허용하거나 프로그램을 알려진 상태로 되돌리기 위한 작업을 수행합니다. 다음 예제에서는 기본 패턴을 보여 줍니다.
 
 app.xaml.h:
 

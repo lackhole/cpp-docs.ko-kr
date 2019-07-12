@@ -1,6 +1,6 @@
 ---
 title: CAccessToken 클래스
-ms.date: 11/04/2016
+ms.date: 07/02/2019
 f1_keywords:
 - CAccessToken
 - ATLSECURITY/ATL::CAccessToken
@@ -52,12 +52,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-ms.openlocfilehash: ce5c29c2399fd47bdb1ad0135257b41617094aa9
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: d66b126ce5fd6c3da80d2bb4e6322f8180f0b8cf
+ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503375"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552190"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken 클래스
 
@@ -283,7 +283,7 @@ bool CreateProcessAsUser(
 실행할 명령줄을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
 *pProcessInformation*<br/>
-에 대 한 포인터를 [PROCESS_INFORMATION](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_process_information) 새 프로세스에 대 한 식별 정보를 수신 하는 구조입니다.
+에 대 한 포인터를 [PROCESS_INFORMATION 구조](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) 새 프로세스에 대 한 식별 정보를 받는입니다.
 
 *pStartupInfo*<br/>
 에 대 한 포인터를 [STARTUPINFO](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_startupinfoa) 새 프로세스의 주 창 표시 방법을 지정 하는 구조입니다.

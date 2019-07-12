@@ -1,6 +1,6 @@
 ---
 title: localtime_s, _localtime32_s, _localtime64_s
-ms.date: 11/04/2016
+ms.date: 07/09/2019
 apiname:
 - _localtime64_s
 - _localtime32_s
@@ -32,12 +32,12 @@ helpviewer_keywords:
 - time, converting values
 - localtime_s function
 ms.assetid: 842d1dc7-d6f8-41d3-b340-108d4b90df54
-ms.openlocfilehash: 44b2eb2515035d56143a2aab251437a92515e652
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 454ab492fbe8a31b9ceeca518fa5e590271dbf06
+ms.sourcegitcommit: 07b34ca1c1fecced9fadc95de15dc5fee4f31e5a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157292"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693420"
 ---
 # <a name="localtimes-localtime32s-localtime64s"></a>localtime_s, _localtime32_s, _localtime64_s
 
@@ -84,9 +84,9 @@ errno_t _localtime64_s(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_localtime32_s** 함수 변환으로 저장 된 시간을 [time_t](../../c-runtime-library/standard-types.md) 형식의 구조체에 결과 가져와 값 [tm](../../c-runtime-library/standard-types.md)합니다. 합니다 **긴** 값 *sourceTime* 자정 이후 경과 된 초를 나타냅니다 (00: 00:00) 1970 년 1 월 1, UTC입니다. 이 값에서 가져온 일반적으로 [시간](time-time32-time64.md) 함수입니다.
+합니다 **localtime_s** 함수 변환으로 저장 된 시간을 [time_t](../../c-runtime-library/standard-types.md) 형식의 구조체에 결과 가져와 값 [tm](../../c-runtime-library/standard-types.md)합니다. 합니다 **time_t** 값 *sourceTime* 자정 이후 경과 된 초를 나타냅니다 (00: 00:00) 1970 년 1 월 1, UTC입니다. 이 값에서 가져온 일반적으로 [시간](time-time32-time64.md) 함수입니다.
 
-**_localtime32_s** 사용자는 먼저 전역 환경 변수를 설정 하는 경우 현지 표준 시간대에 맞게 수정 **TZ**합니다. 때 **TZ** 설정 되어 다른 세 가지 환경 변수 (**_timezone**에 **_daylight**, 및 **_tzname**)도 자동으로 설정 됩니다. 경우는 **TZ** 변수를 설정 하지 않으면 **localtime32_s** 제어판의 날짜/시간 응용 프로그램에서 지정한 표준 시간대 정보를 사용 하려고 합니다. 이 정보를 가져올 수 없으면 기본적으로 태평양 표준 시간대를 의미하는 PST8PDT가 사용됩니다. 이러한 변수에 대한 설명은 [_tzset](tzset.md)을 참조하세요. **TZ** 는 Microsoft 확장 이며 ANSI 표준 정의의 일부가 아닌 **localtime**합니다.
+**localtime_s** 사용자는 먼저 전역 환경 변수를 설정 하는 경우 현지 표준 시간대에 맞게 수정 **TZ**합니다. 때 **TZ** 설정 되어 다른 세 가지 환경 변수 ( **_timezone**에 **_daylight**, 및 **_tzname**)도 자동으로 설정 됩니다. 경우는 **TZ** 변수를 설정 하지 않으면 **localtime_s** 제어판의 날짜/시간 응용 프로그램에서 지정한 표준 시간대 정보를 사용 하려고 합니다. 이 정보를 가져올 수 없으면 기본적으로 태평양 표준 시간대를 의미하는 PST8PDT가 사용됩니다. 이러한 변수에 대한 설명은 [_tzset](tzset.md)을 참조하세요. **TZ** 는 Microsoft 확장 이며 ANSI 표준 정의의 일부가 아닌 **localtime**합니다.
 
 > [!NOTE]
 > 대상 환경에서는 일광 절약 시간이 적용되는지 확인해야 합니다.
