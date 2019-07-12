@@ -13,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - VC++ Directories Property Page
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
-ms.openlocfilehash: e739ea99df424f44dc43a28e3dc01c3529bb0c1a
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: aff143fca47cb5958b90e4a3f4c7ec284f2129f5
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450709"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861051"
 ---
 # <a name="vc-directories-property-page-windows"></a>VC++ 디렉터리 속성 페이지
 
-이 속성 페이지를 사용하여 Visual Studio에서 현재 선택한 프로젝트를 빌드할 때 사용할 디렉터리를 지시합니다. 솔루션의 여러 프로젝트에 대 한 디렉터리를 설정 하려면 사용 하 여 사용자 지정 속성 시트에 설명 된 대로 [공유 또는 resuse Visual Studio C++ 프로젝트 설정](../create-reusable-property-configurations.md)합니다.
+이 속성 페이지를 사용하여 Visual Studio에서 현재 선택한 프로젝트를 빌드할 때 사용할 디렉터리를 지시합니다. 솔루션의 여러 프로젝트에 대 한 디렉터리를 설정 하려면 사용 하 여 사용자 지정 속성 시트에 설명 된 대로 [공유 또는 Visual Studio를 다시 사용할 수 있도록 C++ 프로젝트 설정](../create-reusable-property-configurations.md)합니다.
 
 이 페이지의 Linux 버전은 [VC++ 디렉터리(Linux C++)](../../linux/prop-pages/directories-linux.md)를 참조하세요.
 
@@ -54,7 +54,7 @@ VC++ 디렉터리 속성은 최상위 솔루션 노드가 아닌 프로젝트에
 
 ![라이브러리 디렉터리 보기](../media/vcppdir_libdir.png "라이브러리 경로를 추가하거나 제거하는 대화 상자")
 
-이 대화 상자를 사용하여 현재 디렉터리를 볼 수 있습니다. 그러나 디렉터리를 추가하거나 변경하려는 경우 **속성 관리자**를 사용하여 속성 시트를 만들거나 기본 사용자 속성 시트를 수정하는 것이 좋습니다. 자세한 내용은 [공유 또는 resuse Visual Studio C++ 프로젝트 설정](../create-reusable-property-configurations.md)합니다.
+이 대화 상자를 사용하여 현재 디렉터리를 볼 수 있습니다. 그러나 디렉터리를 추가하거나 변경하려는 경우 **속성 관리자**를 사용하여 속성 시트를 만들거나 기본 사용자 속성 시트를 수정하는 것이 좋습니다. 자세한 내용은 [공유 또는 Visual Studio를 다시 사용할 수 있도록 C++ 프로젝트 설정](../create-reusable-property-configurations.md)합니다.
 
 위와 같이 다양한 상속 경로가 매크로로 지정됩니다.  매크로의 현재 값을 검사하려면 대화 상자의 오른쪽 아래에 있는 **매크로** 단추를 선택합니다. 대부분의 매크로가 구성 형식에 따라 달라집니다. 디버그 빌드의 매크로는 릴리스 빌드의 동일한 매크로와 다른 경로로 평가할 수 있습니다.
 
