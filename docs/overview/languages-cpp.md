@@ -18,4 +18,4 @@ ms.locfileid: "66182423"
 [C 언어](../c-language/c-language-reference.md)<br/>
 [C++ 언어](../cpp/cpp-language-reference.md)<br/>
 [C/C++ 전처리기](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
-[컴파일러 내장 및 어셈블리 언어](../intrinsics/compiler-intrinsics-and-assembly-language.md)
+[컴파일러 내장 함수 및 어셈블리 언어](../intrinsics/compiler-intrinsics-and-assembly-language.md)
