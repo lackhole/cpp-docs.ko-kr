@@ -1,5 +1,5 @@
 ---
-title: 컴파일러 내장 및 어셈블리 언어
+title: 컴파일러 내장 함수 및 어셈블리 언어
 ms.date: 11/04/2016
 ms.assetid: ddd51620-d01b-44cf-853b-e11420d13137
 ms.openlocfilehash: 6e2617290b368eff3fded4053db124f5d88d62ec
@@ -9,7 +9,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/15/2019
 ms.locfileid: "65708317"
 ---
-# <a name="compiler-intrinsics-and-assembly-language"></a>컴파일러 내장 및 어셈블리 언어
+# <a name="compiler-intrinsics-and-assembly-language"></a>컴파일러 내장 함수 및 어셈블리 언어
 
 설명서의 이 단원에는 컴파일러 내장 함수 및 어셈블리 언어에 대한 정보가 포함되어 있습니다.
 
