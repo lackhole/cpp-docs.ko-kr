@@ -1,5 +1,3 @@
-https://github.com/MicrosoftDocs/cpp-docs.ko-kr/blob/live/docs/intrinsics/x86-intrinsics-list.md
-
 ---
 title: x86 내장 함수 목록
 ms.date: 04/18/2019
