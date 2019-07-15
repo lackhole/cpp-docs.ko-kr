@@ -1,5 +1,7 @@
+https://github.com/MicrosoftDocs/cpp-docs.ko-kr/blob/live/docs/intrinsics/x86-intrinsics-list.md
+
 ---
-title: x86 내장 목록
+title: x86 내장 함수 목록
 ms.date: 04/18/2019
 helpviewer_keywords:
 - cl.exe compiler, intrinsics
@@ -11,7 +13,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62389647"
 ---
-# <a name="x86-intrinsics-list"></a>x86 내장 목록
+# <a name="x86-intrinsics-list"></a>x86 내장 함수 목록
 
 이 문서에서는 내장 함수를 나열 하는 Microsoft C /C++ 컴파일러는 x86을 대상으로 하는 경우를 지원 합니다.
 
