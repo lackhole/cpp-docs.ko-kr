@@ -1,11 +1,12 @@
 ---
 title: HStringReference 클래스
-ms.date: 09/25/2018
+ms.date: 07/15/2019
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::CopyTo
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::Get
+- corewrappers/Microsoft::WRL::Wrappers::GetRawBuffer
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::HStringReference
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator=
 - corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator==
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HStringReference::operator!= operator
 - Microsoft::WRL::Wrappers::HStringReference::operator< operator
 ms.assetid: 9bf823b1-17eb-4ac4-8c5d-27d27c7a4150
-ms.openlocfilehash: b9d2e49d0a7e1321e2259c06e1313a90d55dc90e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c17a9df8fcc7d849bbbd4f613bf5dce6dae8983
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398279"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894387"
 ---
 # <a name="hstringreference-class"></a>HStringReference 클래스
 
@@ -46,20 +47,21 @@ class HStringReference;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-이름                                                    | 설명
+이름                                                    | Description
 ------------------------------------------------------- | -----------------------------------------------------------
 [HStringReference::HStringReference](#hstringreference) | `HStringReference` 클래스의 새 인스턴스를 초기화합니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
-멤버                              | 설명
+멤버                              | Description
 ----------------------------------- | ------------------------------------------------------------------
 [HStringReference::CopyTo](#copyto) | 현재 복사 `HStringReference` 개체를 HSTRING 개체로 합니다.
 [HStringReference::Get](#get)       | 기본 HSTRING 핸들의 값을 검색 합니다.
+[HStringReference::GetRawBuffer](#getrawbuffer) | 내부 문자열 데이터에 대 한 포인터를 검색합니다.
 
 ### <a name="public-operators"></a>Public 연산자
 
-이름                                                  | 설명
+이름                                                  | Description
 ----------------------------------------------------- | ----------------------------------------------------------------------------------------------
 [HStringReference::operator=](#operator-assign)       | 다른 값으로 이동 `HStringReference` 개체를 현재 `HStringReference` 개체입니다.
 [HStringReference::operator==](#operator-equality)    | 두 매개 변수가 같은지 여부를 나타냅니다.
@@ -106,6 +108,21 @@ HSTRING Get() const throw()
 ### <a name="return-value"></a>반환 값
 
 기본 HSTRING 핸들의 값입니다.
+
+## <a name="getrawbuffer"></a>HStringReference::GetRawBuffer
+
+내부 문자열 데이터에 대 한 포인터를 검색합니다.
+
+```cpp
+const wchar_t* GetRawBuffer(unsigned int* length) const;
+```
+### <a name="parameters"></a>매개 변수
+
+*길이* 에 대 한 포인터를 **int** 데이터의 길이 받는 변수입니다.
+
+### <a name="return-value"></a>반환 값
+
+A **const** 기본 문자열 데이터에 대 한 포인터입니다.
 
 ## <a name="hstringreference"></a>HStringReference::HStringReference
 

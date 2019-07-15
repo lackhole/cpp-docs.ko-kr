@@ -1,6 +1,6 @@
 ---
 title: 재배포할 DLL 확인
-ms.date: 03/25/2019
+ms.date: 07/15/2019
 helpviewer_keywords:
 - redistributing DLLs
 - DLLs [C++], redistributing
@@ -8,18 +8,18 @@ helpviewer_keywords:
 - application deployment [C++], DLL redistribution
 - deploying applications [C++], DLL redistribution
 ms.assetid: f7a2cb42-fb48-42ab-abd2-b35e2fd5601a
-ms.openlocfilehash: 4e4b53745c76a8e5b630bdd92633779e84262188
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 82fb582cae129b517a96deb3d4a9572ef8370a9d
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451270"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894475"
 ---
 # <a name="determining-which-dlls-to-redistribute"></a>재배포할 DLL 확인
 
 Visual Studio에서 제공하는 라이브러리 DLL을 사용하는 애플리케이션을 빌드할 때, 애플리케이션 사용자는 해당 DLL을 컴퓨터에 설치해야 애플리케이션을 실행할 수 있습니다. 대부분의 사용자는 Visual Studio가 설치되어 있지 않기 때문에 이러한 DLL을 제공해야 합니다. Visual Studio는 이러한 DLL을 애플리케이션 설치 관리자에 포함할 수 있는 *재배포 가능 파일*로 사용할 수 있도록 해줍니다.
 
-재배포 가능 DLL을 설치 관리자에 보다 쉽게 포함하려면, 독립 실행형 *재배포 가능 패키지*를 사용하면 됩니다. 이들은 중앙 배포를 사용하여 사용자의 컴퓨터에 재배포 가능 파일을 설치하는 아키텍처별 실행 파일입니다. 예를 들어 vcredist\_x86.exe x86 32 비트 라이브러리를 설치 컴퓨터, vcredist\_x64.exe x64 용 64 비트 라이브러리를 설치 합니다. 컴퓨터 및 vcredist\_ARM.exe ARM 컴퓨터에 대 한 라이브러리를 설치 합니다. Microsoft는 Windows 업데이트 서비스를 사용하여 이러한 라이브러리를 독립적으로 업데이트할 수 있으므로 중앙 배포를 권장합니다. Visual Studio 설치의 복사본 외에도 현재 재배포 가능 패키지는 다운로드할 수 있습니다. 현재 및 이전 버전의 도구 집합에 지원되는 최신 재배포 가능 패키지에 대한 연결은 [지원되는 최신 Visual C++ 다운로드](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)를 참조하세요. 특정한 이전 버전의 재배포 가능 패키지는 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/p/?LinkId=158431)에서 "Visual C++ 재배포 가능 패키지"를 검색하면 찾을 수 있습니다.
+재배포 가능 DLL을 설치 관리자에 보다 쉽게 포함하려면, 독립 실행형 *재배포 가능 패키지*를 사용하면 됩니다. 이들은 중앙 배포를 사용하여 사용자의 컴퓨터에 재배포 가능 파일을 설치하는 아키텍처별 실행 파일입니다. 예를 들어 vcredist\_vcredist x86 및 x64 컴퓨터에 대 한 32 비트 라이브러리를 설치 하는 x86.exe\_x64.exe x64 용 64 비트 라이브러리 설치 컴퓨터 및 vcredist\_ARM.exe ARM에 대 한 라이브러리를 설치 컴퓨터입니다. Microsoft는 Windows 업데이트 서비스를 사용하여 이러한 라이브러리를 독립적으로 업데이트할 수 있으므로 중앙 배포를 권장합니다. Visual Studio 설치의 복사본 외에도 현재 재배포 가능 패키지는 다운로드할 수 있습니다. 현재 및 이전 버전의 도구 집합에 지원되는 최신 재배포 가능 패키지에 대한 연결은 [지원되는 최신 Visual C++ 다운로드](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)를 참조하세요. 특정한 이전 버전의 재배포 가능 패키지는 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/p/?LinkId=158431)에서 "Visual C++ 재배포 가능 패키지"를 검색하면 찾을 수 있습니다.
 
 배포할 재배포 가능 패키지의 주 버전 번호는 애플리케이션을 만드는 데 사용되는 Visual Studio 도구 집합의 버전과 일치해야 하며, 부 버전은 동일 버전 이상이어야 합니다. Visual Studio 2017 및 Visual Studio 2015 간에 호환되는 도구 집합 버전 번호가 있습니다. 즉, Visual Studio 2017 재배포 가능 파일은 2015 도구 집합을 사용하여 빌드된 앱에서 사용할 수 있습니다. 이러한 파일은 호환될 수 있지만, 2017 도구 집합을 사용하여 빌드된 앱에서는 2015 재배포 가능 파일을 사용할 수 없습니다. 도구 집합 버전과 동일하거나 최신 버전의 재배포 가능 패키지만 사용할 수 있습니다.
 
