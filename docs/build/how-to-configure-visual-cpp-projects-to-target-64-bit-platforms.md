@@ -1,5 +1,5 @@
 ---
-title: '방법: 64비트, x64 플랫폼을 대상으로하는 Viausl Studio C++ 프로젝트 구성'
+title: '방법: 64비트, x64 플랫폼을 대상으로 하는 Viausl Studio C++ 프로젝트 구성'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - platforms [C++], 64-bit
@@ -13,7 +13,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/08/2019
 ms.locfileid: "65446399"
 ---
-# <a name="how-to-configure-visual-studio-c-projects-to-target-64-bit-x64-platforms"></a>방법: 64비트, x64 플랫폼을 대상으로하는 Viausl Studio C++ 프로젝트 구성
+# <a name="how-to-configure-visual-studio-c-projects-to-target-64-bit-x64-platforms"></a>방법: 64비트, x64 플랫폼을 대상으로 하는 Viausl Studio C++ 프로젝트 구성
 
 설정 하기 위해 Visual Studio IDE에서 프로젝트 구성을 사용할 수 있습니다 C++ 대상 응용 프로그램을 64 비트, x64 플랫폼입니다. 또한 Win32 프로젝트 설정을 64비트 프로젝트 구성에 마이그레이션할 수 있습니다.
 
@@ -58,5 +58,5 @@ ms.locfileid: "65446399"
 
 ## <a name="see-also"></a>참고자료
 
-[64비트, x64를 대상으로하는 C++ 프로젝트 구성](configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[64비트, x64를 대상으로 하는 C++ 프로젝트 구성](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [64비트 응용 프로그램 디버그](/visualstudio/debugger/debug-64-bit-applications)
