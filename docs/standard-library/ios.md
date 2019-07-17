@@ -7,22 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - ios header
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
-ms.openlocfilehash: 1566f9105a61b1c037e86fd2e4b280ed6dd2020e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 013888a1ae11042645ef48c4fae15cbe6c2d939f
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385221"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245244"
 ---
 # <a name="ltiosgt"></a>&lt;ios&gt;
 
 Iostreams 작업의 여러 기본 형식 및 함수를 정의합니다. 이 헤더는 일반적으로 다른 iostream 헤더에 의해 포함되며, 직접 포함하는 경우는 거의 없습니다.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <ios>
-```
+**헤더**: \<ios >
+
+**네임스페이스:** std
+
+> [!NOTE]
+> 합니다 \<ios > 라이브러리를 사용 하는 `#include <iosfwd>` 문.
 
 ## <a name="remarks"></a>설명
 
@@ -36,9 +39,11 @@ istr>> noskipws;
 
 [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**)를 호출합니다.
 
+## <a name="members"></a>멤버
+
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|||
 |-|-|
 |[ios](../standard-library/ios-typedefs.md#ios)|이전 iostream 라이브러리의 ios 클래스를 지원합니다.|
 |[streamoff](../standard-library/ios-typedefs.md#streamoff)|내부 작업을 지원합니다.|
@@ -56,6 +61,7 @@ istr>> noskipws;
 |[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|부동 소수점 값에 기본 표시 형식을 사용하도록 `ios_base` 개체의 플래그를 구성합니다.|
 |[fixed](../standard-library/ios-functions.md#fixed)|부동 소수점 숫자가 고정 Decimal 표기법으로 표시되도록 지정합니다.|
 |[hex](../standard-library/ios-functions.md#hex)|정수 변수가 밑수 16 표기법으로 표시되도록 지정합니다.|
+|[hexfloat](../standard-library/ios-functions.md#hexfloat)|
 |[internal](../standard-library/ios-functions.md#internal)|숫자의 부호를 왼쪽에 맞추고 숫자를 오른쪽에 맞춥니다.|
 |[left](../standard-library/ios-functions.md#left)|너비가 출력 너비보다 작은 텍스트를 왼쪽에 여백을 두고 스트림 플러시에 표시합니다.|
 |[noboolalpha](../standard-library/ios-functions.md#noboolalpha)|[bool](../cpp/bool-cpp.md) 형식의 변수가 스트림에서 1 또는 0으로 표시되도록 지정합니다.|
@@ -75,9 +81,19 @@ istr>> noskipws;
 |[unitbuf](../standard-library/ios-functions.md#unitbuf)|버퍼가 비어 있지 않으면 출력이 처리됩니다.|
 |[uppercase](../standard-library/ios-functions.md#uppercase)|16진수 숫자와 과학적 표기법의 지수가 대문자로 표시되도록 지정합니다.|
 
+### <a name="error-reporting"></a>오류 보고
+
+|||
+|-|-|
+|[io_errc](../standard-library/ios-functions.md#io_errc)||
+|[is_error_code_enum](../standard-library/ios-functions.md#is_error_code_enum)||
+|[iostream_category](../standard-library/ios-functions.md#iostream_category)||
+|[make_error_code](../standard-library/ios-functions.md#make_error_code)||
+|[make_error_condition](../standard-library/ios-functions.md#make_error_condition)||
+
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|||
 |-|-|
 |[basic_ios](../standard-library/basic-ios-class.md)|이 템플릿 클래스는 템플릿 매개 변수에 따라 달라지는 입력 스트림(템플릿 클래스 [basic_istream](../standard-library/basic-istream-class.md)) 및 출력 스트림(템플릿 클래스 [basic_ostream](../standard-library/basic-ostream-class.md))에 공통된 스토리지 및 멤버 함수를 설명합니다.|
 |[fpos](../standard-library/fpos-class.md)|이 템플릿 클래스는 스트림 내의 임의 파일 위치 표시기를 복원하는 데 필요한 모든 정보를 저장할 수 있는 개체를 설명합니다.|

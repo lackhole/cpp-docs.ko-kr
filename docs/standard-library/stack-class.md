@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::stack [C++], size
 - std::stack [C++], top
 ms.assetid: 02151c1e-eab0-41b8-be94-a839ead78ecf
-ms.openlocfilehash: cc18a62db3f39bc85c0a3bb7e84e6a27011c2b5a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36074f75830f92ba3fb9e5edb4e1507aa5ae1407
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412438"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241059"
 ---
 # <a name="stack-class"></a>stack 클래스
 
@@ -40,11 +40,11 @@ class stack
 
 ### <a name="parameters"></a>매개 변수
 
-*Type*<br/>
+*형식*\
 스택에 저장되는 요소 데이터 형식입니다.
 
-*컨테이너*<br/>
-스택을 구현하는 데 사용된 기본 컨테이너의 형식입니다. 기본값은 클래스 `deque`*\<Type>* 입니다.
+*컨테이너*\
+스택을 구현하는 데 사용된 기본 컨테이너의 형식입니다. 기본값은 클래스 `deque` *\<Type>* 입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -60,23 +60,25 @@ class stack
 
 - [priority_queue 클래스](../standard-library/priority-queue-class.md)는 가장 큰 요소가 항상 최상위 위치에 있도록 요소를 정렬합니다. 이 클래스는 요소의 삽입과 최상위 요소의 검사 및 제거를 지원합니다. 나이, 키 또는 기타 조건을 기준으로 정렬된 줄을 선 사람들의 예로 이해할 수 있습니다.
 
+## <a name="members"></a>멤버
+
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|||
 |-|-|
 |[stack](#stack)|비어 있거나 기본 컨테이너 개체의 복사본인 `stack`을 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|||
 |-|-|
 |[container_type](#container_type)|`stack`에서 조정할 기본 컨테이너를 제공하는 형식입니다.|
 |[size_type](#size_type)|`stack`에서 요소 수를 표현할 수 있는 부호 없는 정수 형식입니다.|
 |[value_type](#value_type)|`stack`에 있는 요소로 저장된 개체의 형식을 나타내는 형식입니다.|
 
-### <a name="member-functions"></a>멤버 함수
+### <a name="functions"></a>함수
 
-|멤버 함수|설명|
+|||
 |-|-|
 |[empty](#empty)|`stack`이 비어 있는지를 테스트합니다.|
 |[pop](#pop)|`stack`의 맨 위에 있는 요소를 제거합니다.|
@@ -84,13 +86,7 @@ class stack
 |[size](#size)|`stack`에 있는 요소 수를 반환합니다.|
 |[top](#top)|`stack`의 맨 위에 있는 요소에 대한 참조를 반환합니다.|
 
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<stack>
-
-**네임스페이스:** std
-
-## <a name="container_type"></a>  stack::container_type
+## <a name="container_type"></a> container_type
 
 조정할 기본 컨테이너를 제공하는 형식입니다.
 
@@ -108,7 +104,7 @@ typedef Container container_type;
 
 `container_type`을 선언하고 사용하는 방법에 대한 예제는 [stack::stack](#stack)의 예제를 참조하세요.
 
-## <a name="empty"></a>  stack::empty
+## <a name="empty"></a> empty
 
 스택이 비어 있는지 테스트합니다.
 
@@ -153,7 +149,7 @@ The stack s1 is not empty.
 The stack s2 is empty.
 ```
 
-## <a name="pop"></a>  stack::pop
+## <a name="pop"></a> pop
 
 stack의 가장 윗부분의 요소를 제거합니다.
 
@@ -209,7 +205,7 @@ After a pop, the stack length is 2.
 After a pop, the element at the top of the stack is 20.
 ```
 
-## <a name="push"></a>  stack::push
+## <a name="push"></a> 푸시
 
 스택의 맨 위에 요소를 추가합니다.
 
@@ -219,7 +215,7 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*val*\
 스택의 맨 위에 추가되는 요소입니다.
 
 ### <a name="remarks"></a>설명
@@ -258,7 +254,7 @@ The stack length is 3.
 The element at the top of the stack is 30.
 ```
 
-## <a name="size"></a>  stack::size
+## <a name="size"></a> 크기
 
 스택의 요소 수를 반환합니다.
 
@@ -299,7 +295,7 @@ The stack length is 1.
 The stack length is now 2.
 ```
 
-## <a name="size_type"></a>  stack::size_type
+## <a name="size_type"></a> size_type
 
 스택에서 요소 수를 표현할 수 있는 부호 없는 정수 형식입니다.
 
@@ -313,9 +309,9 @@ typedef typename Container::size_type size_type;
 
 ### <a name="example"></a>예제
 
-`size_type`을 선언하고 사용하는 방법에 대한 예제는 [size](#size)의 예제를 참조하세요.
+`size_type`을 선언하고 사용하는 방법에 대한 예제는 [size](#size)에 대한 예제를 참조하세요.
 
-## <a name="stack"></a>  stack::stack
+## <a name="stack"></a> 스택
 
 비어 있거나 기본 컨테이너 개체의 복사본인 스택을 생성합니다.
 
@@ -327,7 +323,7 @@ explicit stack(const container_type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 생성된 스택이 복사본이 되는 컨테이너입니다.
 
 ### <a name="example"></a>예제
@@ -369,7 +365,7 @@ int main( )
 The element at the top of stack vsi2 is 1.
 ```
 
-## <a name="top"></a>  stack::top
+## <a name="top"></a> 맨 위로
 
 stack의 가장 윗부분의 요소에 대한 참조를 반환합니다.
 
@@ -420,7 +416,7 @@ The top integer of the stack s1 is 2.
 The next integer down is 1.
 ```
 
-## <a name="value_type"></a>  stack::value_type
+## <a name="value_type"></a> value_type
 
 스택에 있는 요소로 저장된 개체의 형식을 나타내는 형식입니다.
 

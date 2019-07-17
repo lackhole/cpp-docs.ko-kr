@@ -16,21 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (stack)
 - std::operator&lt;= (stack)
 - std::operator== (stack)
-ms.openlocfilehash: f6ec0855179e41c78f32fe45429ec0bea1ae2e59
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 169698d30edd4a7995cb05e1909c1ffc38b0b6ef
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412451"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243659"
 ---
 # <a name="ltstackgt-operators"></a>&lt;stack&gt; 연산자
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[연산자==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 연산자의 좌변에 있는 stack 개체가 우변에 있는 stack 개체와 같지 않은지 테스트합니다.
 
@@ -40,10 +35,10 @@ bool operator!=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `stack` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `stack` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -95,7 +90,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.
 ```
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> 연산자&lt;
 
 연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 작은지 테스트합니다.
 
@@ -105,10 +100,10 @@ bool operator<(const stack <Type, Container>& left, const stack <Type, Container
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `stack` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `stack` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -179,7 +174,7 @@ The stack s1 is greater than or equal to the stack s3.
 The stack s1 from the top down is: ( 8 6 4 2 ).
 ```
 
-## <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a> 연산자&lt;=
 
 연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 작거나 같은지 테스트합니다.
 
@@ -189,10 +184,10 @@ bool operator<=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `stack` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `stack` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -246,7 +241,7 @@ The stack s1 is greater than the stack s2.
 The stack s1 is less than or equal to the stack s3.
 ```
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> 연산자 = =
 
 연산자의 좌변에 있는 stack 개체가 우변에 있는 stack 개체와 같은지 테스트합니다.
 
@@ -256,10 +251,10 @@ bool operator==(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `stack` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `stack` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -311,7 +306,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.
 ```
 
-## <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a> 연산자&gt;
 
 연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 큰지 테스트합니다.
 
@@ -321,10 +316,10 @@ bool operator>(const stack <Type, Container>& left, const stack <Type, Container
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `stack` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `stack` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -380,7 +375,7 @@ The stack s1 is not greater than the stack s2.
 The stack s1 is greater than the stack s3.
 ```
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a> 연산자&gt;=
 
 연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 크거나 같은지 테스트합니다.
 
@@ -390,10 +385,10 @@ bool operator>=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `stack` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `stack` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -447,7 +442,3 @@ int main( )
 The stack s1 is less than the stack s2.
 The stack s1 is greater than or equal to the stack s3.
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<stack>](../standard-library/stack.md)<br/>

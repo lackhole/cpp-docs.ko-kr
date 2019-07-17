@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: a1f5ace58af427645a0ad4eb8706506cc52ab08c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dedc1b5812357c84944654d1c352be2a51e9393c
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413179"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245404"
 ---
 # <a name="locale-class"></a>locale 클래스
 
@@ -146,7 +146,7 @@ cout.imbue(loc);
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|형식 이름|Description|
 |-|-|
 |[category](#category)|표준 패싯 범주를 나타내는 비트 마스크 값을 제공하는 정수 형식입니다.|
 
@@ -168,13 +168,14 @@ cout.imbue(loc);
 
 |연산자|설명|
 |-|-|
+|[operator=](#op_eq)|로캘을 지정합니다.|
 |[operator!=](#op_neq)|두 로캘이 다른지 테스트합니다.|
 |[operator( )](#op_call)|두 `basic_string` 개체를 비교합니다.|
 |[연산자==](#op_eq_eq)|두 로캘이 같은지 테스트합니다.|
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|클래스|Description|
 |-|-|
 |[facet](#facet_class)|모든 로캘 패싯에 대한 기본 클래스로 사용하는 클래스입니다.|
 |[ID](#id_class)|멤버 클래스는 로캘의 패싯을 조회하기 위한 인덱스로 사용되는 고유한 패싯 ID를 제공합니다.|
@@ -417,7 +418,7 @@ class id
 
 ## <a name="locale"></a>  locale::locale
 
-패싯 또는 범주를 다른 로캘의 패싯 또는 범주로 대체한 경우 로캘 또는 로캘의 복사본을 만듭니다.
+패싯 또는 범주를 다른 로캘의 패싯 또는 범주로 대체한 경우 로캘 또는 로캘의 복사본을 만듭니다. 소멸자가 포함 됩니다.
 
 ```cpp
 locale();
@@ -430,6 +431,8 @@ locale(const locale& Loc, const char* Locname, category Cat);
 
 template <class Facet>
 locale(const locale& Loc, const Facet* Fac);
+
+~locale();
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -546,6 +549,14 @@ int main( )
 ```Output
 The name of the previous locale is: C.
 The name of the current locale is: German_Germany.1252.
+```
+
+## <a name="op_eq"></a>  locale:: operator =
+
+로캘을 지정합니다.
+
+```cpp
+const locale& operator=(const locale& other) noexcept;
 ```
 
 ## <a name="op_neq"></a>  locale::operator!=

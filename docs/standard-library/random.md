@@ -6,22 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - random header
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
-ms.openlocfilehash: 3fd6272ebcb58d48cc943541f32d1195c3fab498
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 1448ad2b703aa6dcf26fad2e4adcbeb2aec2c956
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450797"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240411"
 ---
 # <a name="ltrandomgt"></a>&lt;random&gt;
 
 난수 생성을 위한 기능을 정의하여 균등하게 분포된 난수를 생성할 수 있도록 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <random>
-```
+**헤더**: \<임의 >
+
+**네임스페이스:** std
+
+> [!NOTE]
+> \<임의 > 라이브러리를 사용 하 여는 ' #include < initializer_list >' 문.
 
 ## <a name="summary"></a>요약
 
@@ -496,7 +499,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 |URNG|Fast|암호로 보호|시드 가능|명확함|
 |----------|-----------|---------------------|---------------|--------------------|
 |`mt19937`|예|아니요|예|예<sup>*</sup>|
-|`random_device`|아니요|예|아니요|아니요|
+|`random_device`|아니요|예|아니오|아니요|
 
 <sup>* 알려진 시드와 함께 제공되는 경우</sup>
 

@@ -2,12 +2,12 @@
 title: '방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용'
 ms.date: 04/08/2019
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-ms.openlocfilehash: 3aeef205effe072a25fc0b3dabb9145245461d45
-ms.sourcegitcommit: 72583d30170d6ef29ea5c6848dc00169f2c909aa
+ms.openlocfilehash: b46cbdc088908f59d6cbdc0ecd7cd6475da370d8
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59424198"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861127"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용
 
@@ -135,7 +135,7 @@ UWP로 포팅하려는 기존 COM 라이브러리가 있는 경우 [WRL(Windows 
 
 2. DLL 프로젝트에 대한 **프로젝트 속성**을 열고 **구성**을 **모든 구성**으로 설정합니다.
 
-3. **프로젝트 속성**의 **C/C++** > **일반** 탭에서 **Windows 런타임 확장 사용**을 **예(/ZW)** 로 설정합니다. 이렇게 하면 구성 요소 확장명(C++/CX)이 활성화됩니다.
+3. **프로젝트 속성**의 **C/C++**  > **일반** 탭에서 **Windows 런타임 확장 사용**을 **예(/ZW)** 로 설정합니다. 이렇게 하면 구성 요소 확장명(C++/CX)이 활성화됩니다.
 
 4. **솔루션 탐색기**에서 프로젝트 노드를 선택하고 바로 가기 메뉴를 연 다음 **프로젝트 언로드**를 선택합니다. 그런 다음 언로드된 프로젝트 노드에서 바로 가기 메뉴를 열고 프로젝트 파일을 편집하도록 선택합니다. `WindowsTargetPlatformVersion` 요소를 찾아서 다음 요소로 바꿉니다.
 
@@ -193,9 +193,9 @@ UWP 프로젝트에서 네이티브 C++ 정적 라이브러리를 사용할 수 
 
 ### <a name="to-use-a-native-c-static-library-in-a-uwp-project"></a>UWP 프로젝트에서 네이티브 C++ 정적 라이브러리를 사용하려면
 
-1. UWP 프로젝트에 대한 프로젝트 속성의 **링커** 섹션에서 **Input** 속성에 라이브러리 경로를 추가합니다. 예를 들어 출력을 *SolutionFolder*\Debug\MyNativeLibrary\MyNativeLibrary.lib에 배치하는 프로젝트 라이브러리의 경우 상대 경로 `Debug\MyNativeLibrary\MyNativeLibrary.lib`를 추가합니다.
+1. UWP 프로젝트의 프로젝트 속성에 있는 왼쪽 창에서 **구성 속성** > **링커** > **입력**을 선택합니다. 오른쪽 창에서 **추가 종속성** 속성의 라이브러리에 경로를 추가합니다. 예를 들어 출력을 *SolutionFolder*\Debug\MyNativeLibrary\MyNativeLibrary.lib에 배치하는 프로젝트 라이브러리의 경우 상대 경로 `Debug\MyNativeLibrary\MyNativeLibrary.lib`를 추가합니다.
 
-2. UWP 프로젝트에서 헤더 파일 pch.h를 참조하는 include 문을 추가하고 라이브러리를 사용하는 코드를 추가하기 시작합니다.
+2. pch.h 파일(있는 경우) 또는 필요에 따라 .cpp 파일 내에 헤더 파일을 참조하는 include 문을 추가하고 라이브러리를 사용하는 코드를 추가하기 시작합니다.
 
    ```cpp
    #include "..\MyNativeLibrary\giraffe.h"

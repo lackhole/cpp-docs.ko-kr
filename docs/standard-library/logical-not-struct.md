@@ -7,12 +7,12 @@ helpviewer_keywords:
 - logical_not class
 - logical_not struct
 ms.assetid: 892db678-31da-4540-974b-17b05efc0849
-ms.openlocfilehash: 7fd554a28775a6b625332ac250a46171dd369f50
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 731b99faed6515268b93ec3a1a43c96796e49dd3
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413101"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246479"
 ---
 # <a name="logicalnot-struct"></a>logical_not 구조체
 
@@ -39,10 +39,10 @@ struct logical_not<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*Type*<br/>
+*형식*\
 지정되었거나 유추된 형식의 피연산자를 사용하는 `operator!`를 지원하는 모든 형식입니다.
 
-*왼쪽*<br/>
+*왼쪽*\
 논리적 NOT 연산의 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *형식*합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -86,21 +86,11 @@ int main( )
       cout << *iter2 << " ";
    cout << ")" << endl;
 }
-/* Output:
+```
+
+```Output
 Original deque:
 d1 = ( false true false true false true false )
 The deque with its values negated is:
 d2 = ( true false true false true false true )
-*/
 ```
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<functional>
-
-**네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>

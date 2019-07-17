@@ -1,13 +1,13 @@
 ---
 title: 이벤트(C++/CX)
-ms.date: 01/22/2017
+ms.date: 07/15/2019
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-ms.openlocfilehash: 8e7e8616831e66a7f59ed849fc92ef2553aadb5b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d0a3ab01628487dcca081eb300470cbd1bf3bb83
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301541"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894461"
 ---
 # <a name="events-ccx"></a>이벤트(C++/CX)
 
@@ -15,7 +15,7 @@ Windows 런타임 형식을 선언할 수 있습니다 (즉, 게시) 이벤트 �
 
 ## <a name="consuming-events-in-windows-components"></a>Windows 구성 요소의 이벤트 사용
 
-Windows 런타임에서 많은 구성 요소가 이벤트를 노출 합니다. 예를 들어 LightSensor 개체는 센서가 새 luminescence 값을 보고하면 ReadingChanged 이벤트를 발생시킵니다. 프로그램에서 LightSensor 개체를 사용하는 경우 ReadingChanged 이벤트가 발생할 때 호출되는 메서드를 정의할 수 있습니다. 메서드를 원하는 것으로 작업을 수행할 수 있습니다. 유일한 요구 사항은 해당 서명이 대리자 이벤트 처리기를 만듭니다 및 이벤트를 구독 하려면 참조 하는 방법에 대 한 자세한 내용은 사용 되는 대리자의 서명과 일치 해야 하는 [대리자](../cppcx/delegates-c-cx.md)합니다.
+Windows 런타임에서 많은 구성 요소가 이벤트를 노출 합니다. 예를 들어 LightSensor 개체는 센서가 새 luminescence 값을 보고하면 ReadingChanged 이벤트를 발생시킵니다. 프로그램에서 LightSensor 개체를 사용하는 경우 ReadingChanged 이벤트가 발생할 때 호출되는 메서드를 정의할 수 있습니다. 메서드를 원하는 것으로 작업을 수행할 수 있습니다. 유일한 요구 사항은 해당 서명이 호출 되는 대리자의 서명과 일치 해야 한다는 됩니다. 대리자 이벤트 처리기를 작성 하 고 이벤트에 가입 하는 방법에 대 한 자세한 내용은 참조 하세요. [대리자](../cppcx/delegates-c-cx.md)합니다.
 
 ## <a name="creating-custom-events"></a>사용자 지정 이벤트 만들기
 

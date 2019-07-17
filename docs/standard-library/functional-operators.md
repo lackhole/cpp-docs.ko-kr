@@ -7,40 +7,36 @@ f1_keywords:
 helpviewer_keywords:
 - functional operators
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
-ms.openlocfilehash: 6fd4e25b3ca7b56e2221cb99b64f7c8e109bf452
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b396e5c692129821c0deb9aef9469a5c54e600b0
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159558"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243766"
 ---
 # <a name="ltfunctionalgt-operators"></a>&lt;functional&gt; 연산자
 
-|||
-|-|-|
-|[operator!=](#op_neq)|[연산자==](#op_eq_eq)|
-
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> 연산자 = =
 
 호출 가능 개체가 비어 있는지 테스트합니다.
 
 ```cpp
 template <class Fty>
-bool operator==(const function<Fty>& f, null_ptr_type npc);
+    bool operator==(const function<Fty>& f, null_ptr_type npc);
 
 template <class Fty>
-bool operator==(null_ptr_type npc, const function<Fty>& f);
+    bool operator==(null_ptr_type npc, const function<Fty>& f);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*Fty*<br/>
+*Fty*\
 래핑할 함수 형식입니다.
 
-*f*<br/>
+*F*\
 함수 개체입니다.
 
-*npc*<br/>
+*npc*\
 null 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -79,27 +75,27 @@ empty == true
 empty == false
 ```
 
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 호출 가능 개체가 비어 있지 않은지 테스트합니다.
 
 ```cpp
 template <class Fty>
-bool operator!=(const function<Fty>& f, null_ptr_type npc);
+    bool operator!=(const function<Fty>& f, null_ptr_type npc);
 
 template <class Fty>
-bool operator!=(null_ptr_type npc, const function<Fty>& f);
+    bool operator!=(null_ptr_type npc, const function<Fty>& f);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*Fty*<br/>
+*Fty*\
 래핑할 함수 형식입니다.
 
-*f*<br/>
+*F*\
 함수 개체입니다.
 
-*npc*<br/>
+*npc*\
 null 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -137,7 +133,3 @@ int main()
 not empty == false
 not empty == true
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<functional>](../standard-library/functional.md)<br/>

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Standard Library, algorithms
 - <algorithm> header
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
-ms.openlocfilehash: 042523cddf640e7cf6fd7f9a1dac9f3adbc360b6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36dfca8418cbbabd7dcfb30b2cece483406a5667
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411151"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245951"
 ---
 # <a name="ltalgorithmgt"></a>&lt;algorithm&gt;
 
@@ -24,6 +24,9 @@ ms.locfileid: "62411151"
 ```cpp
 (see relevant links below for specific algorithm syntax)
 ```
+
+> [!NOTE]
+> 합니다 \<알고리즘 > 라이브러리 사용을 `#include <initializer_list>` 문입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -43,12 +46,13 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 
 ### <a name="function-templates"></a>함수 템플릿
 
-|함수 템플릿|설명|
+|||
 |-|-|
 |[adjacent_find](../standard-library/algorithm-functions.md#adjacent_find)|같지 않거나 지정한 조건을 충족하는 인접 요소 두 개를 검색합니다.|
 |[all_of](../standard-library/algorithm-functions.md#all_of)|반환 **true** 조건이 지정된 된 범위에서 각 요소에 있는 경우.|
 |[any_of](../standard-library/algorithm-functions.md#any_of)|반환 **true** 조건이 지정 된 범위의 요소에 한 번 이상 있는 경우.|
 |[binary_search](../standard-library/algorithm-functions.md#binary_search)|정렬된 범위에 지정된 값과 같거나 이진 조건자가 지정한 의미에 따라 지정된 값과 같은 요소가 있는지 여부를 테스트합니다.|
+|[clamp](../standard-library/algorithm-functions.md#clamp)||
 |[copy](../standard-library/algorithm-functions.md#copy)|소스 범위의 요소를 대상 범위에 할당하여 요소의 소스 시퀀스 전체에서 반복하고 정방향으로 새 위치를 할당합니다.|
 |[copy_backward](../standard-library/algorithm-functions.md#copy_backward)|소스 범위의 요소를 대상 범위에 할당하여 요소의 소스 시퀀스 전체에서 반복하고 역방향으로 새 위치를 할당합니다.|
 |[copy_if](../standard-library/algorithm-functions.md#copy_if)|테스트 하는 지정 된 범위의 모든 요소를 복사 **true** 지정 된 조건|
@@ -65,6 +69,7 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 |[find_if](../standard-library/algorithm-functions.md#find_if)|범위에서 지정된 조건을 만족하는 요소가 첫 번째 나타나는 위치를 찾습니다.|
 |[find_if_not](../standard-library/algorithm-functions.md#find_if_not)|표시된 범위에서 조건을 충족하지 않는 첫 번째 요소를 반환합니다.|
 |[for_each](../standard-library/algorithm-functions.md#for_each)|범위 내에서 정방향으로 각 요소에 지정된 함수 개체를 적용하고 함수 개체를 반환합니다.|
+|[for_each_n](../standard-library/algorithm-functions.md#for_each_n)||
 |[generate](../standard-library/algorithm-functions.md#generate)|범위에 있는 각 요소에 함수 개체에 의해 생성된 값을 할당합니다.|
 |[generate_n](../standard-library/algorithm-functions.md#generate_n)|함수 개체에 의해 생성된 값을 범위 내 지정된 수의 요소에 할당하고 마지막에 할당된 값 하나 다음의 위치로 반환합니다.|
 |[includes](../standard-library/algorithm-functions.md#includes)|요소 간 순서 지정 또는 동등성 기준을 이진 조건자로 지정할 수 있을 경우 하나의 정렬된 범위가 두 번째 정렬된 범위에 포함된 모든 요소를 포함할 수 있는지 여부를 테스트합니다.|
@@ -113,6 +118,7 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 |[reverse_copy](../standard-library/algorithm-functions.md#reverse_copy)|소스 범위 내의 요소의 순서를 바꾸는 동시에 요소를 대상 범위로 복사합니다.|
 |[rotate](../standard-library/algorithm-functions.md#rotate)|인접한 두 범위에 있는 요소를 교환합니다.|
 |[rotate_copy](../standard-library/algorithm-functions.md#rotate_copy)|소스 범위 내의 인접한 두 범위의 요소를 교환하고 결과를 대상 범위로 복사합니다.|
+|[sample](../standard-library/algorithm-functions.md#sample)||
 |[search](../standard-library/algorithm-functions.md#search)|대상 범위 내에서 시퀀스의 요소가 지정된 요소 시퀀스와 동일하거나 이진 조건자가 지정한 의미에 따라 지정된 시퀀스의 요소와 동일한 첫 번째 시퀀스를 검색합니다.|
 |[search_n](../standard-library/algorithm-functions.md#search_n)|범위에서 특정 값의 요소가 지정된 수만큼 있거나 이진 조건자가 지정한 해당 값과 관련이 있는 첫 번째 하위 시퀀스를 검색합니다.|
 |[set_difference](../standard-library/algorithm-functions.md#set_difference)|한 정렬된 소스 범위에 속하지만 두 번째 정렬된 소스 범위에 속하지 않는 모든 요소를 정렬된 단일 대상 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|

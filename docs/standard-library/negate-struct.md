@@ -7,12 +7,12 @@ helpviewer_keywords:
 - negate struct
 - negate class
 ms.assetid: 8a372686-786e-4262-b37c-ca13dc11e62f
-ms.openlocfilehash: d865577ed7052937b9fa2c2c1023b3a4befcb776
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb45f61323a407e90c2a455460a4d2cdd7b6720a
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223766"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240560"
 ---
 # <a name="negate-struct"></a>negate 구조체
 
@@ -39,15 +39,15 @@ struct negate<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*Type*<br/>
+*형식*\
 지정되었거나 유추된 형식의 피연산자를 사용하는 `operator-`를 지원하는 모든 형식입니다.
 
-*왼쪽*<br/>
+*왼쪽*\
 부정할 피연산자입니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *형식*합니다.
 
 ## <a name="return-value"></a>반환 값
 
-`-Left.`의 결과. 특수화된 템플릿은 단항 `operator-`에 의해 반환되는 형식을 가지고 있는 결과를 완벽하게 전달합니다.
+`-Left`의 결과입니다. 특수화 된 템플릿은 단항에서 반환 되는 형식을 포함 하는 결과의 전달을 완벽 하 게 `operator-`합니다.
 
 ## <a name="example"></a>예제
 
@@ -85,19 +85,9 @@ int main( )
       cout << *Iter2 << " ";
    cout << ")" << endl;
 }
-/* Output:
-The vector v1 = ( -10 -5 0 5 10 15 20 25 )
-The negated elements of the vector = ( 10 5 0 -5 -10 -15 -20 -25 )
-*/
 ```
 
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<functional>
-
-**네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+```Output
+The vector v1 = ( -10 -5 0 5 10 15 20 25 )
+The negated elements of the vector = ( 10 5 0 -5 -10 -15 -20 -25 )
+```

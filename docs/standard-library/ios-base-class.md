@@ -108,12 +108,12 @@ helpviewer_keywords:
 - std::ios_base [C++], width
 - std::ios_base [C++], xalloc
 ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
-ms.openlocfilehash: 8911c3763e6a0c861c162611e1b2617ec26f0cf9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0aa79d458c964bf3e8bdd34e564bba4965546930
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158593"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245309"
 ---
 # <a name="iosbase-class"></a>ios_base 클래스
 
@@ -135,15 +135,17 @@ Ios_base 클래스의 개체는 다음 항목으로 구성되는 형식 지정 �
 
 ios_base 클래스의 개체는 [iostate](#iostate) 형식의 개체에 스트림 상태 정보와 콜백 스택도 저장합니다.
 
+## <a name="members"></a>멤버
+
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|||
 |-|-|
 |[ios_base](#ios_base)|`ios_base` 개체를 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|||
 |-|-|
 |[event_callback](#event_callback)|[register_call](#register_callback)에 전달된 함수에 대해 설명합니다.|
 |[fmtflags](#fmtflags)|출력의 모양을 지정하는 상수입니다.|
@@ -193,9 +195,9 @@ ios_base 클래스의 개체는 [iostate](#iostate) 형식의 개체에 스트�
 |[unitbuf](#fmtflags)|각 삽입 후 출력이 플러시되도록 합니다.|
 |[uppercase](#fmtflags)|특정 삽입의 소문자에 해당하는 대문자를 삽입하도록 지정합니다.|
 
-### <a name="member-functions"></a>멤버 함수
+### <a name="functions"></a>함수
 
-|멤버 함수|설명|
+|||
 |-|-|
 |[failure](#failure)|멤버 클래스는 템플릿 클래스 [basic_ios](../standard-library/basic-ios-class.md)에서 멤버 함수 [clear](../standard-library/basic-ios-class.md#clear)에 의해 throw된 모든 예외에 대한 기본 클래스로 사용됩니다.|
 |[flags](#flags)|현재 플래그 설정을 설정하거나 반환합니다.|
@@ -214,7 +216,7 @@ ios_base 클래스의 개체는 [iostate](#iostate) 형식의 개체에 스트�
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
 |[operator=](#op_eq)|`ios_base` 개체에 사용할 대입 연산자입니다.|
 
@@ -224,7 +226,7 @@ ios_base 클래스의 개체는 [iostate](#iostate) 형식의 개체에 스트�
 
 **네임스페이스:** std
 
-## <a name="event"></a>  ios_base::event
+## <a name="event"></a> 이벤트
 
 이벤트 유형을 지정합니다.
 
@@ -249,7 +251,7 @@ enum event {
 
 예제는 [register_callback](#register_callback)을 참조하세요.
 
-## <a name="event_callback"></a>  ios_base::event_callback
+## <a name="event_callback"></a> event_callback
 
 [register_call](#register_callback)에 전달된 함수에 대해 설명합니다.
 
@@ -262,13 +264,13 @@ typedef void (__cdecl *event_callback)(
 
 ### <a name="parameters"></a>매개 변수
 
-*_E*<br/>
+*(_E)* \
 [이벤트](#event)입니다.
 
-*_Base*<br/>
+*(_B)* \
 이벤트가 호출된 스트림입니다.
 
-*_I*<br/>
+*(_I).* \
 사용자 정의 숫자입니다.
 
 ### <a name="remarks"></a>설명
@@ -279,7 +281,7 @@ typedef void (__cdecl *event_callback)(
 
 `event_callback`을 사용하는 예제는 [register_call](#register_callback)을 참조하세요.
 
-## <a name="failure"></a>  ios_base::failure
+## <a name="failure"></a> 오류
 
 `failure` 클래스는 예외로 throw된 모든 개체의 형식에 대한 기본 클래스를 `iostreams` 라이브러리의 함수별로 정의하여 스트림 버퍼 작업 중 검색된 오류를 보고합니다.
 
@@ -331,7 +333,7 @@ int main ( )
 Caught an exception: ios_base::failbit set
 ```
 
-## <a name="flags"></a>  ios_base::flags
+## <a name="flags"></a> 플래그
 
 현재 플래그 설정을 설정하거나 반환합니다.
 
@@ -342,7 +344,7 @@ fmtflags flags(fmtflags fmtfl);
 
 ### <a name="parameters"></a>매개 변수
 
-*fmtfl*<br/>
+*fmtfl*\
 새 `fmtflags` 설정입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -377,7 +379,7 @@ int main ( )
 16896
 ```
 
-## <a name="fmtflags"></a>  ios_base::fmtflags
+## <a name="fmtflags"></a> fmtflags
 
 출력의 모양을 지정하는 상수입니다.
 
@@ -453,7 +455,7 @@ public:
 
 이러한 형식 플래그를 수정하는 함수의 예는 [\<iomanip>](../standard-library/iomanip.md)를 참조하세요.
 
-## <a name="getloc"></a>  ios_base::getloc
+## <a name="getloc"></a> getloc
 
 저장된 로캘 개체를 반환합니다.
 
@@ -483,7 +485,7 @@ int main( )
 C
 ```
 
-## <a name="imbue"></a>  ios_base::imbue
+## <a name="imbue"></a> imbue
 
 로캘을 변경합니다.
 
@@ -493,7 +495,7 @@ locale imbue(const locale& _Loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Loc*<br/>
+*_Loc*\
 새 로캘 설정입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -508,7 +510,7 @@ locale imbue(const locale& _Loc);
 
 샘플은 [basic_ios:: imbue](../standard-library/basic-ios-class.md#imbue)를 참조하세요.
 
-## <a name="init"></a>  ios_base::Init
+## <a name="init"></a> Init
 
 생성될 때 표준 iostream 개체를 만듭니다.
 
@@ -520,7 +522,7 @@ class Init { };
 
 중첩 클래스는 임의의 정적 개체에 대한 생성자를 실행하기 전에도 생성을 통해 표준 iostreams 개체가 제대로 생성되도록 하는 개체에 대해 설명합니다.
 
-## <a name="ios_base"></a>  ios_base::ios_base
+## <a name="ios_base"></a> ios_base
 
 ios_base 개체를 생성합니다.
 
@@ -530,9 +532,9 @@ ios_base();
 
 ### <a name="remarks"></a>설명
 
-(보호된) 생성자는 아무 작업도 수행하지 않습니다. 나중에 **basic_ios::**[init](../standard-library/basic-ios-class.md#init)를 호출할 경우 개체를 안전하게 삭제하려면 먼저 개체를 초기화해야 합니다. 따라서 ios_base 클래스를 안전하게 사용하려면 템플릿 클래스 [basic_ios](../standard-library/basic-ios-class.md)의 기본 클래스로 사용합니다.
+(보호된) 생성자는 아무 작업도 수행하지 않습니다. 나중에 **basic_ios::** [init](../standard-library/basic-ios-class.md#init)를 호출할 경우 개체를 안전하게 삭제하려면 먼저 개체를 초기화해야 합니다. 따라서 ios_base 클래스를 안전하게 사용하려면 템플릿 클래스 [basic_ios](../standard-library/basic-ios-class.md)의 기본 클래스로 사용합니다.
 
-## <a name="iostate"></a>  ios_base::iostate
+## <a name="iostate"></a> iostate
 
 스트림의 상태를 설명하는 상수의 형식입니다.
 
@@ -560,7 +562,7 @@ public:
 
 또한 유용한 값은 `goodbit`하나도 앞에서 설명한 비트는 설정 (`goodbit` 0이 되도록 보장 됩니다).
 
-## <a name="iword"></a>  ios_base::iword
+## <a name="iword"></a> iword
 
 `iword`로 저장할 수 있는 값을 할당합니다.
 
@@ -570,14 +572,14 @@ long& iword(int idx);
 
 ### <a name="parameters"></a>매개 변수
 
-*idx*<br/>
+*idx*\
 `iword`로 저장할 값의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 요소에 대 한 참조를 반환 *idx* 형식의 요소를 사용 하 여 확장 가능한 배열의 **긴**합니다. 모든 요소는 효과적으로 존재하며 처음에는 0 값을 저장합니다. 반환된 참조는 개체에 대한 `iword`를 다음에 호출한 후, **basic_ios::**[copyfmt](../standard-library/basic-ios-class.md#copyfmt)를 호출하여 개체가 변경된 후 또는 개체가 삭제된 후에는 유효하지 않게 됩니다.
+멤버 함수는 요소에 대 한 참조를 반환 *idx* 형식의 요소를 사용 하 여 확장 가능한 배열의 **긴**합니다. 모든 요소는 효과적으로 존재하며 처음에는 0 값을 저장합니다. 반환된 참조는 개체에 대한 `iword`를 다음에 호출한 후, **basic_ios::** [copyfmt](../standard-library/basic-ios-class.md#copyfmt)를 호출하여 개체가 변경된 후 또는 개체가 삭제된 후에는 유효하지 않게 됩니다.
 
-하는 경우 *idx* 음수 또는 고유한 저장소를 요소에 대해 사용할 수 없는 경우 함수 호출 [setstate](../standard-library/basic-ios-class.md#setstate)**(badbit)** 고유 하지 않을 수 있는 참조를 반환 합니다.
+하는 경우 *idx* 음수 또는 고유한 저장소를 요소에 대해 사용할 수 없는 경우 함수 호출 [setstate](../standard-library/basic-ios-class.md#setstate) **(badbit)** 고유 하지 않을 수 있는 참조를 반환 합니다.
 
 `ios_base` 형식의 모든 개체에서 사용하도록 고유 인덱스를 가져오려면 [xalloc](#xalloc)를 호출합니다.
 
@@ -585,7 +587,7 @@ long& iword(int idx);
 
 `iword`를 사용하는 방법에 대한 샘플은 [xalloc](#xalloc)를 참조하세요.
 
-## <a name="openmode"></a>  ios_base::openmode
+## <a name="openmode"></a> openmode
 
 스트림과 상호 작용하는 방법을 설명합니다.
 
@@ -635,7 +637,7 @@ int main ( )
 }
 ```
 
-## <a name="op_eq"></a>  ios_base::operator=
+## <a name="op_eq"></a> 연산자 =
 
 ios_base 개체에 대한 대입 연산자입니다.
 
@@ -645,7 +647,7 @@ ios_base& operator=(const ios_base& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 `ios_base` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -658,7 +660,7 @@ ios_base& operator=(const ios_base& right);
 
 이 연산자는 `ios_base`에서 파생된 클래스에서만 사용됩니다.
 
-## <a name="precision"></a>  ios_base::precision
+## <a name="precision"></a> 전체 자릿수
 
 부동 소수점 숫자에 표시할 자릿수를 지정합니다.
 
@@ -669,7 +671,7 @@ streamsize precision(streamsize _Prec);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Prec*<br/>
+*_Prec*\
 표시할 유효 자릿수 또는 고정 표기법에서 소수점 뒤의 자릿수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -704,7 +706,7 @@ int main( )
 31.312
 ```
 
-## <a name="pword"></a>  ios_base::pword
+## <a name="pword"></a> pword
 
 `pword`로 저장할 수 있는 값을 할당합니다.
 
@@ -714,14 +716,14 @@ void *& pword(int _Idx);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Idx*<br/>
+*_Idx*\
 `pword`로 저장할 값의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 요소 _에 대 한 참조를 반환 *Idx* 형식의 요소를 사용 하 여 확장 가능한 배열의 **void** 포인터입니다. 모든 요소는 효과적으로 존재하며 처음에는 null 포인터를 저장합니다. 반환된 참조는 개체에 대한 `pword`를 다음에 호출한 후, **basic_ios::**[copyfmt](../standard-library/basic-ios-class.md#copyfmt)를 호출하여 개체가 변경된 후 또는 개체가 삭제된 후에는 유효하지 않게 됩니다.
+멤버 함수는 요소 _에 대 한 참조를 반환 *Idx* 형식의 요소를 사용 하 여 확장 가능한 배열의 **void** 포인터입니다. 모든 요소는 효과적으로 존재하며 처음에는 null 포인터를 저장합니다. 반환된 참조는 개체에 대한 `pword`를 다음에 호출한 후, **basic_ios::** [copyfmt](../standard-library/basic-ios-class.md#copyfmt)를 호출하여 개체가 변경된 후 또는 개체가 삭제된 후에는 유효하지 않게 됩니다.
 
-_*Idx*가 음수인 경우 또는 요소에 대해 고유한 스토리지를 사용할 수 없는 경우 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)**(badbit)** 를 호출하고 고유하지 않을 수 있는 참조를 반환합니다.
+_*Idx*가 음수인 경우 또는 요소에 대해 고유한 스토리지를 사용할 수 없는 경우 함수는 [setstate](../standard-library/basic-ios-class.md#setstate) **(badbit)** 를 호출하고 고유하지 않을 수 있는 참조를 반환합니다.
 
 `ios_base` 형식의 모든 개체에서 사용하도록 고유 인덱스를 가져오려면 [xalloc](#xalloc)를 호출합니다.
 
@@ -729,7 +731,7 @@ _*Idx*가 음수인 경우 또는 요소에 대해 고유한 스토리지를 사
 
 `pword` 사용 예제는 [xalloc](#xalloc)를 참조하세요.
 
-## <a name="register_callback"></a>  ios_base::register_callback
+## <a name="register_callback"></a> register_callback
 
 콜백 함수를 지정합니다.
 
@@ -740,10 +742,10 @@ void register_callback(
 
 ### <a name="parameters"></a>매개 변수
 
-*pfn*<br/>
+*pfn*\
 콜백 함수에 대한 포인터입니다.
 
-*idx*<br/>
+*idx*\
 사용자 정의 숫자입니다.
 
 ### <a name="remarks"></a>설명
@@ -837,7 +839,7 @@ in callback2
 an erase event
 ```
 
-## <a name="seekdir"></a> ios_base::seekdir
+## <a name="seekdir"></a> seekdir
 
 오프셋 작업에 대한 시작 지점을 지정합니다.
 
@@ -886,7 +888,7 @@ int main ( )
 }
 ```
 
-## <a name="setf"></a> ios_base::setf
+## <a name="setf"></a> setf
 
 지정된 플래그를 설정합니다.
 
@@ -902,10 +904,10 @@ fmtflags setf(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Mask*<br/>
+*마스크 (_m)* \
 설정할 플래그입니다.
 
-*_Unset*<br/>
+*_Unset*\
 해제 하는 플래그입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -940,7 +942,7 @@ int main( )
 }
 ```
 
-## <a name="sync_with_stdio"></a> ios_base::sync_with_stdio
+## <a name="sync_with_stdio"></a> sync_with_stdio
 
 iostream 및 C 런타임 라이브러리 작업이 소스 코드에 표시되는 순서로 수행되도록 합니다.
 
@@ -952,7 +954,7 @@ static bool sync_with_stdio(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Sync*<br/>
+*_Sync*\
 모든 스트림을 사용 하 여 동기화 되는지 `stdio`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -963,7 +965,7 @@ static bool sync_with_stdio(
 
 정적 멤버 함수는 한 `stdio` 플래그는 처음에 동기화 **true**합니다. 때 **true**,이 플래그 하면 동일한 파일에 대 한 작업 간의 적절 하 게 동기화 합니다 [iostreams](../standard-library/iostreams-conventions.md) 함수와에 정의 된를 C++ 표준 라이브러리. 이 고, 그렇지 동기화 보장할 수 수 있으 나 성능이 향상 될 수 있습니다. 함수 저장소 *_Sync* 에 `stdio` 플래그를 동기화 하 고 저장된 된 이전 값을 반환 합니다. 표준 스트림에서 작업을 수행 하기 전에 작업을 안정적으로 호출할 수 있습니다.
 
-## <a name="unsetf"></a> ios_base::unsetf
+## <a name="unsetf"></a> unsetf
 
 지정된 플래그가 해제되도록 합니다.
 
@@ -975,18 +977,18 @@ void unsetf(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Mask*<br/>
+*마스크 (_m)* \
 해제하려는 플래그입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 효과적으로 호출한 [플래그](#flags)(`~`*_Mask* **& 플래그**) (선택한 비트 지우기).
+멤버 함수는 효과적으로 호출한 [플래그](#flags)(`~` *_Mask* **& 플래그**) (선택한 비트 지우기).
 
 ### <a name="example"></a>예제
 
 참조 [ios_base:: setf](#setf) 사용 하는 예제에 대 한 `unsetf`합니다.
 
-## <a name="width"></a> ios_base::width
+## <a name="width"></a> 너비
 
 출력 스트림의 길이를 설정합니다.
 
@@ -999,7 +1001,7 @@ streamsize width(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Wide*<br/>
+*_Wide*\
 출력 스트림의 원하는 크기입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1031,7 +1033,7 @@ int main( ) {
 0
 ```
 
-## <a name="xalloc"></a> ios_base::xalloc
+## <a name="xalloc"></a> xalloc
 
 변수 스트림의 일부로 임을 지정 합니다.
 

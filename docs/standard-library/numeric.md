@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - <numeric> header
 ms.assetid: 6d6ccb94-48cc-479b-b4a9-bd9c78d4896a
-ms.openlocfilehash: ee93d254dcf49b38cb817ba460060fa72b81e01f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ce195742605c3dd2e127c84ac2f4e1e696c75bd0
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62371458"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246691"
 ---
 # <a name="ltnumericgt"></a>&lt;numeric&gt;
 
 숫자 처리 알고리즘을 수행하는 컨테이너 템플릿 함수를 정의합니다.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <numeric>
-```
+**헤더**: \<숫자 >
+
+**네임스페이스:** std
 
 ## <a name="remarks"></a>설명
 
@@ -29,15 +29,25 @@ numeric 알고리즘은 [\<algorithm>](algorithm.md)의 C++ 표준 라이브러�
 
 알고리즘은 각 C++ 표준 라이브러리 컨테이너의 작업 및 구성원 함수로 지원되는 작업을 확장하며, 동시에 다른 형식의 컨테이너 개체와 상호 작용할 수 있습니다.
 
+## <a name="members"></a>멤버
+
 ### <a name="functions"></a>함수
 
-|기능|설명|
+|||
 |-|-|
 |[accumulate](../standard-library/numeric-functions.md#accumulate)|몇 개의 초기 값을 포함하고 연속적 부분 합계를 계산하여 지정된 범위의 모든 요소의 합계를 계산하거나 합계 연산 대신 지정된 이진 연산을 사용하여 얻은 연속적 부분 결과를 계산합니다.|
 |[adjacent_difference](../standard-library/numeric-functions.md#adjacent_difference)|각 요소와 입력 범위의 해당 선행 작업간 연속 차이를 계산하고 결과를 대상 범위로 출력하거나 차이 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차 결과를 계산합니다.|
+|[exclusive_scan](../standard-library/numeric-functions.md#exclusive_scan)||
+|[gcd](../standard-library/numeric-functions.md#gcd)||
+|[inclusive_scan](../standard-library/numeric-functions.md#inclusive_scan)||
 |[inner_product](../standard-library/numeric-functions.md#inner_product)|두 범위의 요소 전체의 곱의 합을 계산하여 지정된 초기값에 추가하거나 합 및 곱의 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차의 결과를 계산합니다.|
 |[iota](../standard-library/numeric-functions.md#iota)|시작 값을 저장하고, 첫 번째 요소부터 시작하여 간격 `value++`의 각 요소에서 값의 연속적 증분(`[first, last)`)으로 채웁니다.|
+|[lcm](../standard-library/numeric-functions.md#lcm)||
 |[partial_sum](../standard-library/numeric-functions.md#partial_sum)|첫 번째 요소부터 *i*번째 요소까지 입력 범위에서 일련의 합계를 계산하고 각 합계의 결과를 대상 범위의 *i*번째 요소에 저장하거나 합 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차 결과를 계산합니다.|
+|[줄이기](../standard-library/numeric-functions.md#reduce)||
+|[transform_exclusive_scan](../standard-library/numeric-functions.md#transform_exclusive_scan)||
+|[transform_inclusive_scan](../standard-library/numeric-functions.md#transform_inclusive_scan)||
+|[transform_reduce](../standard-library/numeric-functions.md#transform_reduce)||
 
 ## <a name="see-also"></a>참고자료
 

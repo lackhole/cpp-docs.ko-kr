@@ -1,6 +1,6 @@
 ---
 title: friend (C++)
-ms.date: 11/19/2018
+ms.date: 07/15/2019
 f1_keywords:
 - friend_cpp
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - friend classes [C++]
 - friend keyword [C++]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
-ms.openlocfilehash: 769720877cc58de530791b268811d7d01adad3e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03b6cb7f856ec59c10f5e410c947f74d17ec4e46
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154495"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894413"
 ---
 # <a name="friend-c"></a>friend (C++)
 
@@ -119,7 +119,7 @@ class G
 
 ## <a name="friend-functions"></a>friend 함수
 
-A **friend** 함수는 클래스의 멤버인 되지 않지만 클래스의 private 및 protected 멤버에 액세스할 수 있는 함수입니다. friend 함수는 클래스 멤버로 간주되지 않으며, 특수 액세스 권한이 부여된 일반 외부 함수입니다. Friend는 클래스의 범위에 포함 되지 및 멤버 선택 연산자를 사용 하 여 호출 되지는 (**합니다.** 및-**>**) 다른 클래스의 멤버가 아닌 합니다. A **friend** 함수 액세스 권한을 부여 하는 클래스에서 선언 됩니다. 합니다 **friend** 선언이 클래스 선언에서 아무 곳 이나 배치할 수 있습니다. 액세스 제어 키워드의 영향을 받지 않습니다.
+A **friend** 함수는 클래스의 멤버인 되지 않지만 클래스의 private 및 protected 멤버에 액세스할 수 있는 함수입니다. friend 함수는 클래스 멤버로 간주되지 않으며, 특수 액세스 권한이 부여된 일반 외부 함수입니다. Friend는 클래스의 범위에 포함 되지 및 멤버 선택 연산자를 사용 하 여 호출 되지는 (**합니다.** 및- **>** ) 다른 클래스의 멤버가 아닌 합니다. A **friend** 함수 액세스 권한을 부여 하는 클래스에서 선언 됩니다. 합니다 **friend** 선언이 클래스 선언에서 아무 곳 이나 배치할 수 있습니다. 액세스 제어 키워드의 영향을 받지 않습니다.
 
 다음 예제에서는 `Point` 클래스와 `ChangePrivate`라는 friend 함수를 보여 줍니다. **friend** 함수에의 전용 데이터 멤버에 대 한 액세스는 `Point` 매개 변수로 받을 개체입니다.
 
@@ -224,7 +224,7 @@ int main() {
 
 friendship은 이와 같이 명시적으로 지정되지 않은 경우 상호적이 아닙니다. 위의 예제에서 `YourClass`의 멤버 함수는 `YourOtherClass`의 전용 멤버에 액세스할 수 없습니다.
 
-관리되는 형식에는 friend 함수, friend 클래스 또는 friend 인터페이스가 있을 수 없습니다.
+관리 되는 형식 (에서 C++/CLI) 모든 friend 함수, friend 클래스 또는 friend 인터페이스가 있을 수 없습니다.
 
 friendship은 상속되지 않습니다. 즉, `YourOtherClass`에서 파생 클래스는 `YourClass`의 전용 멤버에 액세스할 수 없습니다. friendship은 전이적이 아니므로 `YourOtherClass`의 friend인 클래스는 `YourClass`의 전용 멤버에 액세스할 수 없습니다.
 
@@ -235,9 +235,7 @@ friendship은 상속되지 않습니다. 즉, `YourOtherClass`에서 파생 클�
 
 ## <a name="inline-friend-definitions"></a>인라인 friend 정의
 
-클래스 선언 안에 friend 함수를 정의할 수 있습니다. 이러한 함수는 인라인 함수이며 멤버 인라인 함수와 같이 클래스 범위가 닫히기 전에(클래스 선언의 종료) 모든 클래스 멤버가 표시된 이후 즉시 정의되도록 동작합니다.
-
-클래스 선언 내에 정의된 friend 함수는 바깥쪽 클래스가 아닌 파일 범위에 있는 것으로 간주됩니다.
+클래스 선언 안에 Friend 함수 (지정 된 함수 본문) 정의할 수 있습니다. 이러한 함수는 인라인 함수이며 멤버 인라인 함수와 같이 클래스 범위가 닫히기 전에(클래스 선언의 종료) 모든 클래스 멤버가 표시된 이후 즉시 정의되도록 동작합니다. 클래스 선언 안에 정의 된 Friend 함수는 바깥쪽 클래스의 범위에 있습니다.
 
 ## <a name="see-also"></a>참고자료
 

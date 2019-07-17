@@ -5,20 +5,16 @@ f1_keywords:
 - limits/std::float_denorm_style
 - limits/std::float_round_style
 ms.assetid: c86680a2-ba97-4ed9-8c20-a448857d7dc5
-ms.openlocfilehash: 68f0ba605b62f2492f49a2b81030c42dca80bf5f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 567e0538f59c40d57f85d652a8919be6e034cf0b
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413231"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245352"
 ---
 # <a name="ltlimitsgt-enums"></a>&lt;limits&gt; 열거형
 
-|||
-|-|-|
-|[float_denorm_style](#float_denorm_style)|[float_round_style](#float_round_style)|
-
-## <a name="float_denorm_style"></a>  float_denorm_style 열거형
+## <a name="float_denorm_style"></a> float_denorm_style
 
 이 열거형은 구현에서 비정규화된 부동 소수점 값(너무 작아서 정규화된 값으로 나타낼 수 없는 값)을 나타내기 위해 선택할 수 있는 다양한 메서드를 설명합니다.
 
@@ -43,7 +39,7 @@ enum float_denorm_style {
 
 이 열거형의 값에 액세스할 수 있는 예제는 [numeric_limits::has_denorm](../standard-library/numeric-limits-class.md#has_denorm)을 참조하세요.
 
-## <a name="float_round_style"></a>  float_round_style 열거형
+## <a name="float_round_style"></a> float_round_style
 
 이 열거형은 구현에서 부동 소수점 값을 정수 값으로 반올림하기 위해 선택할 수 있는 다양한 메서드를 설명합니다.
 
@@ -73,7 +69,3 @@ enum float_round_style {
 ### <a name="example"></a>예제
 
 이 열거형의 값에 액세스할 수 있는 예제는 [numeric_limits::round_style](../standard-library/numeric-limits-class.md#round_style)을 참조하세요.
-
-## <a name="see-also"></a>참고자료
-
-[\<limits>](../standard-library/limits.md)<br/>

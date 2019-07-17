@@ -1,17 +1,17 @@
 ---
 title: 함수 템플릿
-ms.date: 11/04/2016
+ms.date: 07/15/2019
 helpviewer_keywords:
 - function templates
 - templates, function
 - function templates, about function templates
 ms.assetid: 59b56a4b-0689-4161-9c07-25021562e2a7
-ms.openlocfilehash: 77f3d1ee704c8094fd3bd94597311976e54ba6a6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d430ad7650ffa47f0d6334a827b416cfb05ae6c2
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154173"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894370"
 ---
 # <a name="function-templates"></a>함수 템플릿
 
@@ -55,9 +55,9 @@ int main(int j) {
 }
 ```
 
-템플릿 인수가 명시적으로 지정되면 함수 인수를 해당 함수 템플릿 매개 변수의 형식으로 변환하기 위해 표준 암시적 변환이 수행됩니다. 위의 예제에서 컴파일러는 `char j`를 **int** 형식으로 변환합니다.
+템플릿 인수가 명시적으로 지정되면 함수 인수를 해당 함수 템플릿 매개 변수의 형식으로 변환하기 위해 표준 암시적 변환이 수행됩니다. 위의 예제에서 컴파일러는 변환 `j` 입력할 **char**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [템플릿](../cpp/templates-cpp.md)<br/>
 [함수 템플릿 인스턴스화](../cpp/function-template-instantiation.md)<br/>

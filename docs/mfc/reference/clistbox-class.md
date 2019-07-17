@@ -102,12 +102,12 @@ helpviewer_keywords:
 - CListBox [MFC], SetTopIndex
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-ms.openlocfilehash: b448f725bac68c2b67dc44d660c664c075aa86da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f7b62ecf64c70c554fe14883c45d6b7936c668d7
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62225271"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243574"
 ---
 # <a name="clistbox-class"></a>CListBox 클래스
 
@@ -123,7 +123,7 @@ class CListBox : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CListBox::CListBox](#clistbox)|`CListBox` 개체를 생성합니다.|
 
@@ -146,7 +146,7 @@ class CListBox : public CWnd
 |[CListBox::GetCount](#getcount)|목록 상자에서 문자열의 수를 반환합니다.|
 |[CListBox::GetCurSel](#getcursel)|목록 상자에서 현재 선택된 된 문자열의 0부터 시작 인덱스를 반환합니다.|
 |[CListBox::GetHorizontalExtent](#gethorizontalextent)|목록 상자를 가로로 스크롤할 수는 픽셀에서 너비를 반환 합니다.|
-|[CListBox::GetItemData](#getitemdata)|목록 상자 항목과 연결 된 32 비트 값을 반환 합니다.|
+|[CListBox::GetItemData](#getitemdata)|목록 상자 항목과 연결 된 값을 반환 합니다.|
 |[CListBox::GetItemDataPtr](#getitemdataptr)|목록 상자 항목에 대 한 포인터를 반환합니다.|
 |[CListBox::GetItemHeight](#getitemheight)|목록 상자의 항목 높이 결정합니다.|
 |[CListBox::GetItemRect](#getitemrect)|현재 표시 되는 목록 상자 항목의 경계 사각형을 반환 합니다.|
@@ -170,7 +170,7 @@ class CListBox : public CWnd
 |[CListBox::SetColumnWidth](#setcolumnwidth)|여러 열 목록 상자의 열 너비를 설정합니다.|
 |[CListBox::SetCurSel](#setcursel)|목록 상자 문자열을 선택합니다.|
 |[CListBox::SetHorizontalExtent](#sethorizontalextent)|목록 상자를 가로로 스크롤할 수는 픽셀에서 너비를 설정 합니다.|
-|[CListBox::SetItemData](#setitemdata)|목록 상자 항목과 연결 된 32 비트 값을 설정 합니다.|
+|[CListBox::SetItemData](#setitemdata)|목록 상자 항목과 연결 된 값을 설정 합니다.|
 |[CListBox::SetItemDataPtr](#setitemdataptr)|목록 상자 항목에 대 한 포인터를 설정합니다.|
 |[CListBox::SetItemHeight](#setitemheight)|목록 상자에서 항목의 높이 설정합니다.|
 |[CListBox::SetLocale](#setlocale)|목록 상자에 대 한 로캘 식별자를 설정합니다.|
@@ -702,7 +702,7 @@ DWORD_PTR GetItemData(int nIndex) const;
 
 ### <a name="return-value"></a>반환 값
 
-또는 연결 된 항목을 LB_ERR 오류가 발생 하는 경우 32 비트 값입니다.
+오류가 발생 하는 경우 항목 또는 LB_ERR 연관 된 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1288,7 +1288,7 @@ void SetHorizontalExtent(int cxExtent);
 
 ##  <a name="setitemdata"></a>  CListBox::SetItemData
 
-목록 상자에 지정 된 항목과 연결 된 32 비트 값을 설정 합니다.
+목록 상자에 지정 된 항목과 연결 된 값을 설정 합니다.
 
 ```
 int SetItemData(

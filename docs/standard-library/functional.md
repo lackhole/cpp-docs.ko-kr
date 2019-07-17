@@ -9,22 +9,22 @@ helpviewer_keywords:
 - functors
 - functional header
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
-ms.openlocfilehash: 317344db856a7a0568aca422ecfe8280b80db097
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a72941c7b8c351f7b4fb8fa0e40afb809ea7cbe
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159420"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243754"
 ---
 # <a name="ltfunctionalgt"></a>&lt;functional&gt;
 
 정의 C++ 표준 라이브러리 함수는 도움말 구문 *함수 개체*라고도 *함수*, 및 해당 바인더입니다. 함수 개체는 `operator()`를 정의하는 형식의 개체입니다. 함수 개체는 함수 포인터일 수 있지만, 개체를 사용하여 함수 호출 중에 액세스할 수 있는 추가 정보를 저장하는 것이 더 일반적입니다.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <functional>
-```
+**헤더:** \<functional>
+
+**네임스페이스:** std
 
 ## <a name="remarks"></a>설명
 
@@ -72,18 +72,23 @@ C++11, c++14 및 c++17에 다음과 같은 기능이 추가 됩니다.
 
 각 호출 래퍼에 이동 생성자 및 복사 생성자가 있습니다. *단순 호출 래퍼*는 대입 연산자가 있고 해당 복사 생성자, 이동 생성자 및 대입 연산자에서 예외가 발생하지 않는 호출 래퍼입니다. *전달 호출 래퍼*는 임의의 인수 목록을 사용하여 호출할 수 있고 래핑된 호출 가능 개체에 인수를 참조로 전달하는 호출 래퍼입니다. 모든 rvalue 인수는 rvalue 참조로 전달되고 lvalue 인수는 lvalue 참조로 전달됩니다.
 
-## <a name="classes"></a>클래스
+## <a name="members"></a>멤버
 
-|클래스|설명|
+### <a name="classes"></a>클래스
+
+|||
 |-|-|
 |[bad_function_call](../standard-library/bad-function-call-class.md)|개체가 비어 있어서 [function](../standard-library/function-class.md) 개체에 대한 `operator()` 호출이 실패했음을 나타내기 위해 발생한 예외를 설명하는 클래스입니다.|
 |[binary_negate](../standard-library/binary-negate-class.md)|지정된 이항 함수의 반환 값을 부정하는 멤버 함수를 제공하는 템플릿 클래스입니다.<br/> (C++17에서 사용 중단 합니다.) |
 |[binder1st](../standard-library/binder1st-class.md)|이항 함수의 첫 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 생성자를 제공하는 템플릿 클래스입니다.<br/> (사용 되지 않는 C + + 11에서 c++17에서 제거 합니다.) |
 |[binder2nd](../standard-library/binder2nd-class.md)|이항 함수의 두 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 생성자를 제공하는 템플릿 클래스입니다.<br/> (사용 되지 않는 C + + 11에서 c++17에서 제거 합니다.) |
+|[boyer_moore_horspool_searcher](../standard-library/boyer-moore-horspool-searcher-class.md)||
+|[boyer_moore_searcher](../standard-library/boyer-moore-searcher-class.md)||
 |[const_mem_fun_ref_t](../standard-library/const-mem-fun-ref-t-class.md)|참조 인수를 사용하여 초기화할 때 인수를 사용하지 않는 const 멤버 함수를 단항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> (사용 되지 않는 C + + 11에서 c++17에서 제거 합니다.) |
 |[const_mem_fun_t](../standard-library/const-mem-fun-t-class.md)|포인터 인수를 사용하여 초기화할 때 인수를 사용하지 않는 const 멤버 함수를 단항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> (사용 되지 않는 C + + 11에서 c++17에서 제거 합니다.) |
 |[const_mem_fun1_ref_t](../standard-library/const-mem-fun1-ref-t-class.md)|참조 인수를 사용하여 초기화할 때 단일 인수를 사용하는 const 멤버 함수를 이항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> (사용 되지 않는 C + + 11에서 c++17에서 제거 합니다.) |
 |[const_mem_fun1_t](../standard-library/const-mem-fun1-t-class.md)|포인터 인수를 사용하여 초기화할 때 단일 인수를 사용하는 const 멤버 함수를 이항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> (사용 되지 않는 C + + 11에서 c++17에서 제거 합니다.) |
+|[default_searcher](../standard-library/default-searcher-class.md)||
 |[function](../standard-library/function-class.md)|호출 가능 개체를 래핑하는 클래스입니다.|
 |[hash](../standard-library/hash-class.md)|값에 대한 해시 코드를 계산하는 클래스입니다.|
 |[is_bind_expression](../standard-library/is-bind-expression-class.md)|`bind`를 호출하여 특정 형식이 생성되었는지 테스트하는 클래스입니다.|
@@ -97,9 +102,9 @@ C++11, c++14 및 c++17에 다음과 같은 기능이 추가 됩니다.
 |[reference_wrapper](../standard-library/reference-wrapper-class.md)|참조를 래핑하는 클래스입니다.|
 |[unary_negate](../standard-library/unary-negate-class.md)|지정된 단항 함수의 반환 값을 부정하는 멤버 함수를 제공하는 템플릿 클래스입니다.<br/> (C++17에서 사용 중단 합니다.)  |
 
-## <a name="functions"></a>함수
+### <a name="functions"></a>함수
 
-|기능|설명|
+|||
 |-|-|
 |[bind](../standard-library/functional-functions.md#bind)|호출 가능 개체에 인수를 바인딩합니다.|
 |[bind1st](../standard-library/functional-functions.md#bind1st)|이항 함수의 첫 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 어댑터를 만드는 도우미 템플릿 함수입니다.<br/> (사용 되지 않는 C + + 11에서 c++17에서 제거 합니다.) |
@@ -109,6 +114,7 @@ C++11, c++14 및 c++17에 다음과 같은 기능이 추가 됩니다.
 |[bit_or](../standard-library/functional-functions.md#bit_or)|두 매개 변수의 비트 논리적 OR(operator&#124;)를 반환합니다.|
 |[bit_xor](../standard-library/functional-functions.md#bit_xor)|두 매개 변수의 비트 논리적 XOR(operator^)을 반환합니다.|
 |[cref](../standard-library/functional-functions.md#cref)|인수에서 const `reference_wrapper`를 생성합니다.|
+|[invoke](../standard-library/functional-functions.md#invoke)||
 |[mem_fn](../standard-library/functional-functions.md#mem_fn)|단순 호출 래퍼를 생성합니다.|
 |[mem_fun](../standard-library/functional-functions.md#mem_fun)|포인터 인수를 사용하여 초기화할 때 멤버 함수에 대한 함수 개체 어댑터를 생성하는 데 사용되는 도우미 템플릿 함수입니다.<br/> (사용 되지 않는 C + + 11에서 c++17에서 제거 합니다.) |
 |[mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref)|참조 인수를 사용하여 초기화할 때 멤버 함수에 대한 함수 개체 어댑터를 생성하는 데 사용되는 도우미 템플릿 함수입니다.|
@@ -119,9 +125,9 @@ C++11, c++14 및 c++17에 다음과 같은 기능이 추가 됩니다.
 |[ref](../standard-library/functional-functions.md#ref)|인수에서 `reference_wrapper` 를 생성합니다.|
 |[swap](../standard-library/functional-functions.md#swap)|두 `function` 개체를 교환합니다.|
 
-## <a name="structs"></a>구조체
+### <a name="structs"></a>구조체
 
-|구조체|설명|
+|||
 |-|-|
 |[binary_function](../standard-library/binary-function-struct.md)|이항 함수 개체를 제공하는 파생 클래스에 상속될 수 있는 형식을 정의하는 빈 기본 클래스입니다.<br/> (사용 되지 않는 C + + 11에서 c++17에서 제거 합니다.) |
 |[divides](../standard-library/divides-struct.md)|클래스는 지정된 값 형식의 요소에 대해 나누기 산술 연산을 수행하는 미리 정의된 함수 개체를 제공합니다.|
@@ -141,15 +147,15 @@ C++11, c++14 및 c++17에 다음과 같은 기능이 추가 됩니다.
 |[plus](../standard-library/plus-struct.md)|클래스는 지정된 값 형식의 요소에 대해 더하기 산술 연산을 수행하는 미리 정의된 함수 개체를 제공합니다.|
 |[unary_function](../standard-library/unary-function-struct.md)|단항 함수 개체를 제공하는 파생 클래스에 상속될 수 있는 형식을 정의하는 빈 기본 클래스입니다.<br/> (사용 되지 않는 C + + 11에서 c++17에서 제거 합니다.) |
 
-## <a name="objects"></a>개체
+### <a name="objects"></a>개체
 
-|개체|설명|
+|||
 |-|-|
 |[_1.._M](../standard-library/1-object.md)|대체 가능한 인수에 대한 자리 표시자입니다.|
 
-## <a name="operators"></a>연산자
+### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
 |[연산자==](../standard-library/functional-operators.md#op_eq_eq)|호출 가능 개체의 같음 비교를 허용하지 않습니다.|
 |[operator!=](../standard-library/functional-operators.md#op_neq)|호출 가능 개체의 같지 않음 비교를 허용하지 않습니다.|

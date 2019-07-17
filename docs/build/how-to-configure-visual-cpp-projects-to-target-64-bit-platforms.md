@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
 ms.openlocfilehash: a063c2f333a755ab86a4f91c9d14d0c65a6d1414
 ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/08/2019
 ms.locfileid: "65446399"
@@ -58,5 +58,5 @@ ms.locfileid: "65446399"
 
 ## <a name="see-also"></a>참고자료
 
-[구성 C++ 64 비트, x64에 대 한 대상 프로젝트](configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[64비트, x64를 대상으로 하는 C++ 프로젝트 구성](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [64비트 응용 프로그램 디버그](/visualstudio/debugger/debug-64-bit-applications)

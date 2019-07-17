@@ -3,12 +3,12 @@ title: Visual Studio에서 대상 Linux 시스템에 연결
 description: Visual Studio C++ 프로젝트 내에서 원격 Linux 머신 또는 WSL에 연결하는 방법입니다.
 ms.date: 06/19/2019
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: 7fa09c49df3da39084edb6735a7a2ccc724c34d3
-ms.sourcegitcommit: 3ae8025df7fd50f5f56a0a2b5396533218bcc7dc
+ms.openlocfilehash: 00d7facca2857efb0b8b43b5aaf38edce348a511
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67285254"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861143"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio에서 대상 Linux 시스템에 연결
 

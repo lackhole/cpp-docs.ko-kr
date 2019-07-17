@@ -3,12 +3,12 @@ title: x64 호출 규칙
 description: ABI 기본 x64 호출 규칙의 세부 정보입니다.
 ms.date: 12/17/2018
 ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
-ms.openlocfilehash: 02bf4719766366049b600b148ad88fc238f4e54e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2cad00ac7f2cb5fe086fa262a0f512330997391f
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313624"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861158"
 ---
 # <a name="x64-calling-convention"></a>x64 호출 규칙
 
@@ -142,12 +142,12 @@ Struct2 func4(int a, double b, int c, float d);
 
 ## <a name="callercallee-saved-registers"></a>호출자/호출 수신자 저장 레지스터
 
-RAX, RCX, RDX, R8, R9, R10, R11 레지스터는 volatile로 간주되고, 전체 프로그램 최적화 같은 분석에 의해 안전성이 증명될 수 없는 한 함수를 호출할 때 소멸되는 것으로 취급해야 합니다.
+함수 호출 시 레지스터 RAX, RCX, RDX, R8, R9, R10, R11, XMM0-5, 및 위 부분 YMM0 15 및 ZMM0 15 일시적인 것으로 간주 됩니다 및 고려해 야 제거 (하지 않는 한 안전성이 전체 프로그램 최적화와 같은 분석을 통해). AVX512VL, ZMM 고 YMM, XMM 레지스터 16-31은 일시적입니다.
 
-RBX, RBP, RDI, RSI, RSP, R12, R13, R14 및 R15 레지스터는 비volatile로 간주되고, 이들 레지스터를 사용하는 함수에서 저장하고 복원해야 합니다.
+레지스터 RBX, RBP, RDI, RSI, RSP, R12, R13, R14, r, 15 및 XMM6 15 일시적이 아닌 것으로 간주 됩니다 저장 해야 및 함수에서 복원 하는 사용 합니다.
 
 ## <a name="function-pointers"></a>함수 포인터
-
+ 
 함수 포인터는 각 함수의 레이블에 대한 단순한 포인터입니다. 함수 포인터에 적용되는 TOC(목차) 요구 사항은 없습니다.
 
 ## <a name="floating-point-support-for-older-code"></a>이전 코드에 대 한 부동 소수점 지원

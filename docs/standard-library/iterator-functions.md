@@ -32,40 +32,30 @@ helpviewer_keywords:
 - std::make_unchecked_array_iterator [C++]
 - std::next [C++]
 - std::prev [C++]
-ms.openlocfilehash: f6ea1ac49dabbfc34af9c8ddd020543f606d37a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69f1007f0c7f587e81313f5de97947410bf243df
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224144"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244030"
 ---
 # <a name="ltiteratorgt-functions"></a>&lt;iterator&gt; 함수
 
-||||
-|-|-|-|
-|[advance](#advance)|[back_inserter](#back_inserter)|[begin](#begin)|
-|[cbegin](#cbegin)|[cend](#cend)|[distance](#distance)|
-|[end](#end)|[front_inserter](#front_inserter)|[inserter](#inserter)|
-|[make_checked_array_iterator](#make_checked_array_iterator)|[make_move_iterator](#make_move_iterator)|[make_unchecked_array_iterator](#make_unchecked_array_iterator)|
-|[next](#next)|[prev](#prev)|
-
-## <a name="advance"></a>  advance
+## <a name="advance"></a> 고급
 
 지정된 위치 수만큼 반복기를 증가시킵니다.
 
 ```cpp
 template <class InputIterator, class Distance>
-void advance(
-    InputIterator& InIt,
-    Distance Off);
+    void advance(InputIterator& InIt, Distance Off);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*InIt*<br/>
+*InIt*\
 입력 반복기에 대해 증가하고 요구 사항을 충족해야 하는 반복기입니다.
 
-*Off*<br/>
+*해제*\
 반복기의 차이 형식으로 변환할 수 있고 반복기의 위치를 증가시킬 횟수를 지정하는 정수 계열 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -123,7 +113,7 @@ LPOS is advanced 4 steps forward to point to the fifth element: 5.
 LPOS is moved 3 steps back to point to the 2nd element: 2.
 ```
 
-## <a name="back_inserter"></a>  back_inserter
+## <a name="back_inserter"></a> back_inserter
 
 지정된 컨테이너 뒤에 요소를 삽입할 수 있는 반복기를 만듭니다.
 
@@ -134,7 +124,7 @@ back_insert_iterator<Container> back_inserter(Container& _Cont);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Cont*<br/>
+*_Cont*\
 후면 삽입을 실행할 컨테이너입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -194,7 +184,7 @@ The initial vector vec is: ( 0 1 2 ).
 After the insertions, the vector vec is: ( 0 1 2 30 40 500 600 ).
 ```
 
-## <a name="begin"></a>  begin
+## <a name="begin"></a> 시작
 
 지정된 컨테이너의 첫 번째 요소에 대한 반복기를 검색합니다.
 
@@ -213,10 +203,10 @@ Ty *begin(Ty (& array)[Size]);
 
 ### <a name="parameters"></a>매개 변수
 
-*cont*<br/>
+*계속*\
 컨테이너입니다.
 
-*array*<br/>
+*배열*\
 `Ty` 형식의 개체의 배열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -296,7 +286,7 @@ void reverse_sort(C& c) {
 error C2228: left of '.begin' must have class/struct/union
 ```
 
-## <a name="cbegin"></a>  cbegin
+## <a name="cbegin"></a> cbegin
 
 지정된 컨테이너의 첫 번째 요소에 대한 상수 반복기를 검색합니다.
 
@@ -308,7 +298,7 @@ auto cbegin(const Container& cont)
 
 ### <a name="parameters"></a>매개 변수
 
-*cont*<br/>
+*계속*\
 컨테이너 또는 initializer_list입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -329,7 +319,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>  cend
+## <a name="cend"></a> cend
 
 지정된 컨테이너에서 마지막 요소 다음에 있는 요소에 대한 상수 반복기를 검색합니다.
 
@@ -341,7 +331,7 @@ auto cend(const Container& cont)
 
 ### <a name="parameters"></a>매개 변수
 
-*cont*<br/>
+*계속*\
 컨테이너 또는 initializer_list입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -362,7 +352,28 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="distance"></a>  distance
+## <a name="crbegin"></a> crbegin
+
+```cpp
+template <class C> constexpr auto crbegin(const C& c) -> decltype(std::rbegin(c));
+```
+
+## <a name="crend"></a> crend
+
+```cpp
+template <class C> constexpr auto crend(const C& c) -> decltype(std::rend(c));
+```
+
+## <a name="data"></a> 데이터
+
+```cpp
+template <class C> constexpr auto data(C& c) -> decltype(c.data());
+template <class C> constexpr auto data(const C& c) -> decltype(c.data());
+template <class T, size_t N> constexpr T* data(T (&array)[N]) noexcept;
+template <class E> constexpr const E* data(initializer_list<E> il) noexcept;
+```
+
+## <a name="distance"></a> 거리
 
 두 반복기에 의해 주소가 지정된 위치 사이의 간격의 수를 결정합니다.
 
@@ -373,10 +384,10 @@ typename iterator_traits<InputIterator>::difference_type distance(InputIterator 
 
 ### <a name="parameters"></a>매개 변수
 
-*first*<br/>
+*첫 번째*\
 두 번째로부터의 거리를 결정해야 하는 첫 번째 반복기입니다.
 
-*last*<br/>
+*마지막*\
 첫 번째로부터의 거리를 결정해야 하는 두 번째 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -435,7 +446,15 @@ LPOS is advanced 7 steps forward to point  to the eighth element: 12.
 The distance from L.begin( ) to LPOS is: 7.
 ```
 
-## <a name="end"></a>  end
+## <a name="empty"></a> empty
+
+```cpp
+template <class C> constexpr auto empty(const C& c) -> decltype(c.empty());
+template <class T, size_t N> constexpr bool empty(const T (&array)[N]) noexcept;
+template <class E> constexpr bool empty(initializer_list<E> il) noexcept;
+```
+
+## <a name="end"></a> 끝
 
 지정된 컨테이너에서 마지막 요소 다음의 요소에 대한 반복기를 검색합니다.
 
@@ -454,10 +473,10 @@ Ty *end(Ty (& array)[Size]);
 
 ### <a name="parameters"></a>매개 변수
 
-*cont*<br/>
+*계속*\
 컨테이너입니다.
 
-*array*<br/>
+*배열*\
 `Ty` 형식의 개체의 배열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -470,7 +489,7 @@ Ty *end(Ty (& array)[Size]);
 
 코드 예제는 [begin](../standard-library/iterator-functions.md#begin)을 참조하세요.
 
-## <a name="front_inserter"></a>  front_inserter
+## <a name="front_inserter"></a> front_inserter
 
 지정된 컨테이너 앞에 요소를 삽입할 수 있는 반복기를 만듭니다.
 
@@ -481,7 +500,7 @@ front_insert_iterator<Container> front_inserter(Container& _Cont);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Cont*<br/>
+*_Cont*\
 앞에 요소를 삽입할 컨테이너 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -541,7 +560,7 @@ After the front insertions, the list L is:
 ( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
 ```
 
-## <a name="inserter"></a>  inserter
+## <a name="inserter"></a> inserter
 
 사용할 수 있도록 하는 도우미 템플릿 함수 `inserter(_Cont, _Where)` 대신 `insert_iterator<Container>(_Cont, _Where)`합니다.
 
@@ -555,10 +574,10 @@ inserter(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Cont*<br/>
+*_Cont*\
 새 요소를 추가할 컨테이너입니다.
 
-*_Where*<br/>
+*_Where*\
 삽입 지점을 찾고 있는 반복기입니다.
 
 ### <a name="remarks"></a>설명
@@ -612,7 +631,7 @@ After the insertions, the list L is:
 ( 1 20 30 40 500 ).
 ```
 
-## <a name="make_checked_array_iterator"></a>  make_checked_array_iterator
+## <a name="make_checked_array_iterator"></a> make_checked_array_iterator
 
 다른 알고리즘에서 사용할 수 있는 [checked_array_iterator](../standard-library/checked-array-iterator-class.md)를 만듭니다.
 
@@ -630,13 +649,13 @@ Iter Ptr,
 
 ### <a name="parameters"></a>매개 변수
 
-*Ptr*<br/>
+*ptr*\
 대상 배열에 대한 포인터입니다.
 
-*Size*<br/>
+*크기*\
 대상 배열의 크기입니다.
 
-*Index*<br/>
+*인덱스*\
 배열에 대한 선택적 크기입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -706,7 +725,7 @@ int main()
 }
 ```
 
-## <a name="make_move_iterator"></a>  make_move_iterator
+## <a name="make_move_iterator"></a> make_move_iterator
 
 제공된 반복기를 `stored` 반복기로 포함하는 `move iterator`를 만듭니다.
 
@@ -718,14 +737,14 @@ make_move_iterator(const Iterator& _It);
 
 ### <a name="parameters"></a>매개 변수
 
-*_It*<br/>
+*_It*\
 새 이동 반복기에 저장되는 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
 템플릿 함수 `move_iterator` `<Iterator>(_It)`합니다.
 
-## <a name="make_unchecked_array_iterator"></a>  make_unchecked_array_iterator
+## <a name="make_unchecked_array_iterator"></a> make_unchecked_array_iterator
 
 다른 알고리즘에서 사용할 수 있는 [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md)를 만듭니다.
 
@@ -740,7 +759,7 @@ unchecked_array_iterator<Iter>
 
 ### <a name="parameters"></a>매개 변수
 
-*Ptr*<br/>
+*ptr*\
 대상 배열에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -804,7 +823,7 @@ int main()
 }
 ```
 
-## <a name="next"></a>  next
+## <a name="next"></a> 다음
 
 지정된 횟수만큼 반복하고 새 반복기 위치를 반환합니다.
 
@@ -817,10 +836,10 @@ InputIterator next(
 
 ### <a name="parameters"></a>매개 변수
 
-*first*<br/>
+*첫 번째*\
 현재 위치입니다.
 
-*_Off*<br/>
+*_Off*\
 반복할 횟수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -831,7 +850,7 @@ InputIterator next(
 
 템플릿 함수 `next` 증가 *_Off* 시간
 
-## <a name="prev"></a>  prev
+## <a name="prev"></a> 이전
 
 역순으로 지정된 횟수만큼 반복하고 새 반복기 위치를 반환합니다.
 
@@ -844,16 +863,33 @@ BidirectionalIterator prev(
 
 ### <a name="parameters"></a>매개 변수
 
-*first*<br/>
+*첫 번째*\
 현재 위치입니다.
 
-*_Off*<br/>
+*_Off*\
 반복할 횟수입니다.
 
 ### <a name="remarks"></a>설명
 
 이 템플릿 함수는 `off`번 감소된 `next`를 반환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="rbegin"></a> rbegin
 
-[\<iterator>](../standard-library/iterator.md)<br/>
+```cpp
+template <class C> constexpr auto rbegin(C& c) -> decltype(c.rbegin());
+template <class C> constexpr auto rbegin(const C& c) -> decltype(c.rbegin());
+```
+
+## <a name="rend"></a> rend
+
+```cpp
+template <class C> constexpr auto rend(C& c) -> decltype(c.rend());
+template <class C> constexpr auto rend(const C& c) -> decltype(c.rend());
+```
+
+## <a name="size"></a> 크기
+
+```cpp
+template <class C> constexpr auto size(const C& c) -> decltype(c.size());
+template <class T, size_t N> constexpr size_t size(const T (&array)[N]) noexcept;
+```

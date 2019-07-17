@@ -7,12 +7,12 @@ helpviewer_keywords:
 - typetrait header
 - type_traits
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-ms.openlocfilehash: c80629fd8771206d193b53aa7c32073de0ba45dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c83949a2c74447735f6863c5f1af68b4dfe2ee4e
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278984"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243519"
 ---
 # <a name="lttypetraitsgt"></a>&lt;type_traits&gt;
 
@@ -109,7 +109,8 @@ using add_const_t = typename add_const<T>::type;
 |[is_empty](../standard-library/is-empty-class.md)|형식이 빈 클래스인지 테스트합니다.|
 |[is_polymorphic](../standard-library/is-polymorphic-class.md)|형식이 다형 클래스인지 테스트합니다.|
 |[is_abstract](../standard-library/is-abstract-class.md)|형식이 추상 클래스인지 테스트합니다.|
-|[is_final](../standard-library/is-final-class.md)|형식이 `final`로 표시된 클래스 종류인지 테스트합니다.|
+|[is_final](../standard-library/is-final-class.md)|형식이 `final`로 표시된 클래스 형식인지 테스트합니다.|
+|[is_aggregate](../standard-library/is-aggregate-class.md)||
 |[is_signed](../standard-library/is-signed-class.md)|형식이 부호 있는 정수인지 테스트합니다.|
 |[is_unsigned](../standard-library/is-unsigned-class.md)|형식이 부호가 없는 정수인지 테스트합니다.|
 |[is_constructible](../standard-library/is-constructible-class.md)|형식이 지정된 인수 유형을 사용하여 생성 가능한지 테스트합니다.|
@@ -119,6 +120,8 @@ using add_const_t = typename add_const<T>::type;
 |[is_assignable](../standard-library/type-traits-functions.md#is_assignable)|첫 번째 형식에 두 번째 형식의 값을 할당할 수 있는지 테스트합니다.|
 |[is_copy_assignable](../standard-library/type-traits-functions.md#is_copy_assignable)|형식에 해당 형식의 const 참조 값을 할당할 수 있는지 테스트합니다.|
 |[is_move_assignable](../standard-library/type-traits-functions.md#is_move_assignable)|형식에 해당 형식의 rvalue 참조를 할당할 수 있는지 테스트합니다.|
+|[is_swappable](../standard-library/type-traits-functions.md#is_swappable)||
+|[is_swappable_with](../standard-library/type-traits-functions.md#is_swappable_with)||
 |[is_destructible](../standard-library/is-destructible-class.md)|형식이 소멸 가능한지 테스트합니다.|
 |[is_trivially_constructible](../standard-library/is-trivially-constructible-class.md)|지정된 형식을 사용하여 생성될 때 형식이 특수 작업을 사용하지 않는지 테스트합니다.|
 |[is_trivially_default_constructible](../standard-library/is-trivially-default-constructible-class.md)|기본 생성될 때 형식이 특수 작업을 사용하지 않는지 테스트합니다.|
@@ -135,8 +138,11 @@ using add_const_t = typename add_const<T>::type;
 |[is_nothrow_assignable](../standard-library/is-nothrow-assignable-class.md)|형식이 지정된 형식을 사용하여 할당 가능하며 할당이 throw되지 않는 것으로 확인되는지 테스트합니다.|
 |[is_nothrow_copy_assignable](../standard-library/is-nothrow-copy-assignable-class.md)|형식이 복사 할당 가능하며 할당이 throw되지 않는 것으로 확인되는지 테스트합니다.|
 |[is_nothrow_move_assignable](../standard-library/type-traits-functions.md#is_nothrow_move_assignable)|형식이 이동 할당 가능하며 할당이 throw되지 않는 것으로 확인되는지 테스트합니다.|
+|[is_nothrow_swappable](../standard-library/type-traits-functions.md#is_nothrow_swappable)||
+|[is_nothrow_swappable_with](../standard-library/type-traits-functions.md#is_nothrow_swappable_with)||
 |[is_nothrow_destructible](../standard-library/is-nothrow-destructible-class.md)|형식이 소멸 가능하며 소멸자가 throw되지 않는 것으로 확인되는지 테스트합니다.|
 |`has_virtual_destructor`|형식에 가상 소멸자가 있는지 테스트합니다.|
+|`has_unique_object_representations`||
 | [is_invocable](is-invocable-classes.md) | 호출 가능 형식의 지정 된 인수 형식을 사용 하 여 호출할 수 있는지 테스트 합니다.<br/> C + + 17에 추가 합니다. |
 | [is_invocable_r](is-invocable-classes.md) | 지정된 된 형식으로 변환 될 지정 된 인수 형식 및 결과 사용 하 여 호출 가능 형식의 수 호출 여부를 테스트 합니다.<br/> C + + 17에 추가 합니다. |
 | [is_nothrow_invocable](is-invocable-classes.md) | 형식 및 예외를 throw 되지 않는 것 호출 가능 형식의 지정 된 인수를 사용 하 여 호출할 수 있는지 여부를 테스트 합니다.<br/> C + + 17에 추가 합니다. |
@@ -211,6 +217,14 @@ const-volatile 수정
 |[invoke_result](invoke-result-class.md)|지정된 인수 유형을 사용하는 호출 가능 형식의 반환 형식을 결정합니다. <br/>C + + 17에 추가 합니다. |
 |[result_of](../standard-library/result-of-class.md)|지정된 인수 유형을 사용하는 호출 가능 형식의 반환 형식을 결정합니다. <br/>C++14, c++17에서 사용 되지 않는 추가 합니다. |
 |[underlying_type](../standard-library/underlying-type-class.md)|열거형 형식에 대한 내부 정수 계열 형식을 생성합니다.|
+
+논리 연산자 특성
+
+|||
+|-|-|
+|[함께](../standard-library/conjunction-class.md)||
+|[분리](../standard-library/disjunction-class.md)||
+|[부정](../standard-library/negation-class.md)||
 
 ## <a name="see-also"></a>참고자료
 

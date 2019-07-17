@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: 0bc9ef82863fde361964234cca54f12aac1e2abe
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.openlocfilehash: 2cf9928d56c564edc0e3bda1935eb11004000985
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64877384"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861110"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (C++)
 
@@ -24,15 +24,15 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 ## <a name="prerequisites"></a>전제 조건
 
-- Microsoft Windows 7 이상을 실행 하는 컴퓨터입니다. 최상의 개발 환경을 위해 Windows 10이 좋습니다.
+- Microsoft Windows 7 이상 버전을 실행하는 컴퓨터. 최상의 개발 환경을 위해서는 Windows 10이 권장됩니다.
 
-- Visual Studio의 복사본입니다. 다운로드 하 여 Visual Studio를 설치 하는 방법에 대 한 정보를 참조 하세요 [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다. 설치 관리자를 실행 해야 합니다 **를 사용한 데스크톱 개발 C++**  작업 확인란이 선택 되어 있습니다. Visual Studio를 설치할 때이 워크 로드를 설치 하지 않은 경우 걱정 하지 마세요. 설치 관리자를 다시 실행 하 고 지금 설치 수 있습니다.
+- Visual Studio. Visual Studio를 다운로드 및 설치하는 방법에 대한 자세한 내용은 [Visual Studio 설치](/visualstudio/install/install-visual-studio)를 참조하세요. 설치 관리자를 실행할 때 **C++를 사용한 데스크톱 개발** 워크로드를 선택해야 합니다. Visual Studio를 설치할 때 이 워크로드를 설치하지 않은 경우 걱정하지 마세요. 설치 관리자를 다시 실행하고 바로 설치할 수 있습니다.
 
-   ![사용한 데스크톱 개발 C++ ](../build/media/desktop-development-with-cpp.png "를 사용한 데스크톱 개발C++")
+   ![C++를 사용한 데스크톱 개발](../build/media/desktop-development-with-cpp.png "C++를 사용한 데스크톱 개발")
 
-- Visual Studio IDE를 사용 하 여의 기본 사항 이해 합니다. 이전 Windows 데스크톱 앱을 사용한 경우 아마도 유지할 수 있습니다. 참조에 대 한 소개 [Visual Studio IDE 기능 둘러보기](/visualstudio/ide/visual-studio-ide)합니다.
+- Visual Studio IDE 사용의 기본 사항에 대한 이해. 이전에 Windows 데스크톱 앱을 사용한 경우 내용을 따라갈 수 있습니다. 소개 내용을 살펴보려면 [Visual Studio IDE 기능 둘러보기](/visualstudio/ide/visual-studio-ide)를 참조하세요.
 
-- 기본 사항을 충분히 이해 합니다 C++ 과정을 따르려면 언어입니다. 걱정 하지 마십시오, 너무 복잡 아무일도 하지 않는 것입니다.
+- 내용을 따라가기에 충분한 C++ 언어의 기본 사항에 대한 이해. 너무 복잡한 내용을 다루지는 않으므로 걱정하지 마세요.
 
 ## <a name="create-a-windows-desktop-project"></a>Windows 데스크톱 프로젝트 만들기
 
@@ -42,13 +42,13 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 ### <a name="to-create-a-windows-desktop-project-in-visual-studio-2019"></a>Visual Studio 2019에는 Windows 데스크톱 프로젝트를 만들려면
 
-1. 주 메뉴에서 선택 **파일** > **새로 만들기** > **프로젝트** 열려는 합니다 **새 프로젝트를 만들** 대화 상자입니다.
+1. 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택하여 **새 프로젝트 만들기** 대화 상자를 엽니다.
 
 1. 설정 대화 상자 맨 **언어** 를 **C++** 설정 **플랫폼** 하 **Windows**, 설정 및 **프로젝트 형식을** 하 **Desktop**합니다. 
 
 1. 필터링된 된 프로젝트 형식 목록에서 선택 **Windows 데스크톱 마법사** 선택한 **다음**합니다. 다음 페이지에서 프로젝트의 이름을 입력 하 고 원하는 경우 프로젝트 위치를 지정 합니다.
 
-1. 선택 된 **만들기** 프로젝트를 만들려면 단추입니다.
+1. **만들기** 단추를 선택하여 프로젝트를 만듭니다.
 
 1. 합니다 **Windows 데스크톱 프로젝트** 대화 나타납니다. 아래 **응용 프로그램 종류**를 선택 **Windows 응용 프로그램 (.exe)** 합니다. **추가 옵션**에서 **빈 프로젝트**를 선택합니다. 선택할 **확인** 프로젝트를 만듭니다.
 
@@ -76,7 +76,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
    ![DesktopApp 프로젝트 이름을](../build/media/desktop-app-new-project-name-153.png "DesktopApp 프로젝트 이름을")
 
-1. 에 **Windows 데스크톱 프로젝트** 대화 상자 아래에 있는 **응용 프로그램 유형**를 선택 **Windows 응용 프로그램 (.exe)**. **추가 옵션**에서 **빈 프로젝트**를 선택합니다. 선택할 **확인** 프로젝트를 만듭니다.
+1. 에 **Windows 데스크톱 프로젝트** 대화 상자 아래에 있는 **응용 프로그램 유형**를 선택 **Windows 응용 프로그램 (.exe)** . **추가 옵션**에서 **빈 프로젝트**를 선택합니다. 선택할 **확인** 프로젝트를 만듭니다.
 
    ![Windows 데스크톱 프로젝트 마법사에서 DesktopApp 만들](../build/media/desktop-app-new-project-wizard-153.png "DesktopApp Windows 데스크톱 프로젝트 마법사에서 만들기")
 
@@ -589,7 +589,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 1. 응용 프로그램을 실행 하려면 키를 누릅니다 **F5**합니다. "Hello, Windows desktop!" 텍스트가 있는 창 디스플레이의 왼쪽 위에 표시됩니다.
 
-   ![DesktopApp 프로젝트 실행](../build/media/desktop-app-project-run-157.png "DesktopApp 프로젝트 실행")
+   ![DesktopApp 프로젝트 실행](../build/media/desktop-app-project-run-157.PNG "DesktopApp 프로젝트 실행")
 
 지금까지 이 연습을 완료 하 고 기존 Windows 데스크톱 응용 프로그램을 구축 했습니다.
 

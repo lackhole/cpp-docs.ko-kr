@@ -1,6 +1,6 @@
 ---
 title: HString 클래스
-ms.date: 09/24/2018
+ms.date: 07/15/2019
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HString
@@ -8,6 +8,7 @@ f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::HString::CopyTo
 - corewrappers/Microsoft::WRL::Wrappers::HString::Detach
 - corewrappers/Microsoft::WRL::Wrappers::HString::Get
+- corewrappers/Microsoft::WRL::Wrappers::HString::GetRawBuffer
 - corewrappers/Microsoft::WRL::Wrappers::HString::GetAddressOf
 - corewrappers/Microsoft::WRL::Wrappers::HString::HString
 - corewrappers/Microsoft::WRL::Wrappers::HString::IsValid
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HString::Set method
 - Microsoft::WRL::Wrappers::HString::~HString, destructor
 ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
-ms.openlocfilehash: 19ef11a5d33e69bb77049e450df1b386528b7f7b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 884efb2a69b05589ad9458148409533880073878
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398292"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894398"
 ---
 # <a name="hstring-class"></a>HString 클래스
 
@@ -69,13 +70,14 @@ Windows 런타임을 통해 문자열에 대 한 액세스를 제공 [HSTRING](/
 
 ### <a name="public-methods"></a>Public 메서드
 
-이름                                     | 설명
+이름                                     | Description
 ---------------------------------------- | -------------------------------------------------------------------------------------------------------------
 [HString::Attach](#attach)               | 연결 된 `HString` 개체와 현재 `HString` 개체입니다.
 [HString::CopyTo](#copyto)               | 현재 복사 `HString` 개체를 HSTRING 개체로 합니다.
 [HString::Detach](#detach)               | 지정 된 연결을 끊습니다 `HString` 해당 내부 값 개체입니다.
 [HString::Get](#get)                     | 기본 HSTRING 핸들의 값을 검색 합니다.
 [HString::GetAddressOf](#getaddressof)   | 기본 HSTRING 핸들에 대 한 포인터를 검색합니다.
+[HString::GetRawBuffer](#getrawbuffer)   | 내부 문자열 데이터에 대 한 포인터를 검색합니다.
 [HString::IsValid](#isvalid)             | 나타냅니다 여부 현재 `HString` 개체는 유효 합니다.
 [HString::MakeReference](#makereference) | 만듭니다는 `HStringReference` 지정 된 문자열 매개 변수에서 개체입니다.
 [HString::Release](#release)             | 원본 문자열 값을 삭제 하 고 현재 초기화 `HString` 개체를 빈 값입니다.
@@ -90,7 +92,7 @@ Windows 런타임을 통해 문자열에 대 한 액세스를 제공 [HSTRING](/
 [HString::operator!=](#operator-inequality)  | 두 매개 변수가 같지 않은지를 나타냅니다.
 [HString::operator&lt;](#operator-less-than) | 첫 번째 매개 변수 인지 보다 작은 두 번째 매개 변수를 나타냅니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 `HString`
 
@@ -181,6 +183,22 @@ HSTRING* GetAddressOf() throw()
 ### <a name="remarks"></a>설명
 
 이 작업 후에 기본 HSTRING 핸들의 문자열 값이 삭제됩니다.
+
+## <a name="getrawbuffer"></a>HString::GetRawBuffer
+
+내부 문자열 데이터에 대 한 포인터를 검색합니다.
+
+```cpp
+const wchar_t* GetRawBuffer(unsigned int* length) const;
+```
+### <a name="parameters"></a>매개 변수
+
+*길이* 에 대 한 포인터를 **int** 데이터의 길이 받는 변수입니다.
+
+### <a name="return-value"></a>반환 값
+
+A **const** 기본 문자열 데이터에 대 한 포인터입니다.
+
 
 ## <a name="hstring"></a>HString::HString
 

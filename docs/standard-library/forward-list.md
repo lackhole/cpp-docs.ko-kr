@@ -6,26 +6,31 @@ f1_keywords:
 helpviewer_keywords:
 - <forward_list>
 ms.assetid: 8b4ab09e-1475-434a-b4e0-fdbc07a08b5b
-ms.openlocfilehash: cbde6268be0f501a220721cae498254dd0588eb4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d20c5b83e0ce00c7634d32e6b63c92242c24d1b2
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159381"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240646"
 ---
 # <a name="ltforwardlistgt"></a>&lt;forward_list&gt;
 
 컨테이너 템플릿 클래스 forward_list 및 다양한 지원 템플릿을 정의합니다.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <forward_list>
-```
+**헤더:** \<forward_list>
+
+**네임스페이스:** std
+
+> [!NOTE]
+> 합니다 \<forward_list > 라이브러리 사용을 `#include <initializer_list>` 문입니다.
+
+## <a name="members"></a>멤버
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
 |[연산자==](../standard-library/forward-list-operators.md#op_eq_eq)|연산자의 좌변에 있는 정방향 목록 개체가 우변에 있는 정방향 목록 개체와 같은지 테스트합니다.|
 |[operator!=](../standard-library/forward-list-operators.md#op_neq)|연산자의 좌변에 있는 정방향 목록 개체가 우변에 있는 정방향 목록 개체와 같지 않은지 테스트합니다.|
@@ -36,13 +41,13 @@ ms.locfileid: "62159381"
 
 ### <a name="functions"></a>함수
 
-|기능|설명|
+|||
 |-|-|
 |[swap](../standard-library/forward-list-functions.md#swap)|두 정방향 목록의 요소를 교환합니다.|
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|||
 |-|-|
 |[forward_list](../standard-library/forward-list-class.md)|다양한 길이의 요소 시퀀스를 제어하는 개체를 설명합니다. 각각 `Type` 형식의 멤버를 포함하는 요소의 단일 연결 목록으로 시퀀스가 저장됩니다.|
 
