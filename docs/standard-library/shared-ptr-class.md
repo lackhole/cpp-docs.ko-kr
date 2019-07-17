@@ -31,12 +31,12 @@ helpviewer_keywords:
 - std::shared_ptr [C++], unique
 - std::shared_ptr [C++], use_count
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
-ms.openlocfilehash: 791a18461b3a0ee8237dec47c87f9d441221141d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca427bd364a5ab66112f23e0a920598ad8ba190b
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412555"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246366"
 ---
 # <a name="sharedptr-class"></a>shared_ptr 클래스
 
@@ -46,7 +46,7 @@ ms.locfileid: "62412555"
 
 ```cpp
 template <class T>
-class shared_ptr;
+    class shared_ptr;
 ```
 
 ## <a name="remarks"></a>설명
@@ -129,44 +129,67 @@ null 포인터를 사용하여 초기화된 `shared_ptr` 개체에는 제어 블
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|||
 |-|-|
 |[shared_ptr](#shared_ptr)|`shared_ptr`를 생성합니다.|
-|[shared_ptr::~shared_ptr](#dtorshared_ptr)|`shared_ptr`을 삭제합니다.|
+|[~ shared_ptr](#dtorshared_ptr)|`shared_ptr`을 삭제합니다.|
 
-### <a name="types"></a>유형
+### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|||
 |-|-|
 |[element_type](#element_type)|요소의 형식입니다.|
 
 ### <a name="functions"></a>함수
 
-|기능|설명|
+|||
 |-|-|
+|[allocate_shared](#allocate_shared)||
+|[const_pointer_cast](#const_pointer_cast)||
+|[dynamic_pointer_cast](#dynamic_pointer_cast)||
 |[get](#get)|소유하는 리소스의 주소를 가져옵니다.|
+|[get_deleter](#get_deleter)||
+|[make_shared](#make_shared)||
 |[owner_before](#owner_before)|`shared_ptr`이 제공된 포인터 앞에 정렬되는(또는 보다 작은) 경우 true를 반환합니다.|
+|[reinterpret_pointer_cast](#reinterpret_pointer_cast)||
 |[reset](#reset)|소유하는 리소스를 대체합니다.|
+|[static_pointer_cast](#static_pointer_cast)||
 |[swap](#swap)|두 `shared_ptr` 개체를 교환합니다.|
 |[unique](#unique)|소유하는 리소스가 고유한지 테스트합니다.|
 |[use_count](#use_count)|리소스 소유자 수를 계산합니다.|
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
-|[shared_ptr::operator bool](#op_bool)|소유하는 리소스가 있는지 테스트합니다.|
-|[shared_ptr::operator*](#op_star)|지정된 값을 가져옵니다.|
-|[shared_ptr::operator=](#op_eq)|소유하는 리소스를 대체합니다.|
-|[shared_ptr::operator-&gt;](#op_arrow)|지정된 값으로 포인터를 가져옵니다.|
+|[operator bool](#op_bool)|소유하는 리소스가 있는지 테스트합니다.|
+|[operator*](#op_star)|지정된 값을 가져옵니다.|
+|[operator=](#op_eq)|소유하는 리소스를 대체합니다.|
+|[연산자-&gt;](#op_arrow)|지정된 값으로 포인터를 가져옵니다.|
+|[operator&lt;&lt;](#op_arrowarrow)||
 
-## <a name="requirements"></a>요구 사항
+### <a name="allocate_shared"></a> allocate_shared
 
-**헤더:** \<memory>
+```cpp
+template<class T, class A, class... Args>
+    shared_ptr<T> allocate_shared(const A& a, Args&&... args);
+```
 
-**네임스페이스:** std
+### <a name="const_pointer_cast"></a> const_pointer_cast
 
-## <a name="element_type"></a>  shared_ptr::element_type
+```cpp
+template<class T, class U>
+    shared_ptr<T> const_pointer_cast(const shared_ptr<U>& r) noexcept;
+```
+
+### <a name="dynamic_pointer_cast"></a> dynamic_pointer_cast
+
+```cpp
+template<class T, class U>
+    shared_ptr<T> dynamic_pointer_cast(const shared_ptr<U>& r) noexcept;
+```
+
+### <a name="element_type"></a> element_type
 
 요소의 형식입니다.
 
@@ -174,11 +197,11 @@ null 포인터를 사용하여 초기화된 `shared_ptr` 개체에는 제어 블
 typedef T element_type;
 ```
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 이 형식은 템플릿 매개 변수 `T`의 동의어입니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_element_type.cpp
@@ -201,7 +224,7 @@ int main()
 *sp0 == 5
 ```
 
-## <a name="get"></a>  shared_ptr::get
+### <a name="get"></a> get
 
 소유하는 리소스의 주소를 가져옵니다.
 
@@ -209,11 +232,11 @@ int main()
 T *get() const;
 ```
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 구성원 함수는 소유하는 리소스의 주소를 반환합니다. 개체가 리소스를 소유하지 않는 경우에는 0을 반환합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_get.cpp
@@ -239,7 +262,21 @@ sp0.get() == 0 == true
 *sp1.get() == 5
 ```
 
-## <a name="op_bool"></a>  shared_ptr::operator bool
+### <a name="get_deleter"></a> get_deleter
+
+```cpp
+template<class D, class T>
+    D* get_deleter(const shared_ptr<T>& p) noexcept;
+```
+
+### <a name="make_shared"></a> make_shared
+
+```cpp
+template<class T, class... Args>
+    shared_ptr<T> make_shared(Args&&... args);
+```
+
+### <a name="op_bool"></a> 연산자 bool
 
 소유하는 리소스가 있는지 테스트합니다.
 
@@ -247,11 +284,11 @@ sp0.get() == 0 == true
 explicit operator bool() const noexcept;
 ```
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 연산자의 값 반환 **true** 때 `get() != nullptr`고, 그렇지 않으면 **false**합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_operator_bool.cpp
@@ -278,7 +315,7 @@ int main()
 (bool)sp1 == true
 ```
 
-## <a name="op_star"></a>  shared_ptr::operator*
+### <a name="op_star"></a> 연산자 *
 
 지정된 값을 가져옵니다.
 
@@ -286,11 +323,11 @@ int main()
 T& operator*() const;
 ```
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 간접 연산자는 `*get()`을 반환합니다. 따라서 저장된 포인터는 null이 아니어야 합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_operator_st.cpp
@@ -312,7 +349,7 @@ int main()
 *sp0 == 5
 ```
 
-## <a name="op_eq"></a>  shared_ptr::operator=
+### <a name="op_eq"></a> 연산자 =
 
 소유하는 리소스를 대체합니다.
 
@@ -320,34 +357,34 @@ int main()
 shared_ptr& operator=(const shared_ptr& sp);
 
 template <class Other>
-shared_ptr& operator=(const shared_ptr<Other>& sp);
+    shared_ptr& operator=(const shared_ptr<Other>& sp);
 
 template <class Other>
-shared_ptr& operator=(auto_ptr<Other>& ap);
+    shared_ptr& operator=(auto_ptr<Other>& ap);
 
 template <class Other>
-shared_ptr& operator=(auto_ptr<Other>& ap);
+    shared_ptr& operator=(auto_ptr<Other>& ap);
 
 template <class Other>
-shared_ptr& operator=(auto_ptr<Other>&& ap);
+    shared_ptr& operator=(auto_ptr<Other>&& ap);
 
 template <class Other, class Deletor>
-shared_ptr& operator=(unique_ptr<Other, Deletor>&& ap);
+    shared_ptr& operator=(unique_ptr<Other, Deletor>&& ap);
 ```
 
-### <a name="parameters"></a>매개 변수
+#### <a name="parameters"></a>매개 변수
 
-*sp*<br/>
+*sp*\
 복사할 공유 포인터입니다.
 
-*ap*<br/>
+*아시아 태평양*\
 복사할 자동 포인터입니다.
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 모든 연산자는 현재 `*this`가 소유한 리소스의 참조 수를 줄이고 피연산자 시퀀스로 이름이 지정된 리소스의 소유권을 `*this`에 할당합니다. 참조 수가 0으로 감소하면 리소스가 해제됩니다. 연산자 실행이 실패하면 `*this`는 변경되지 않습니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_operator_as.cpp
@@ -376,7 +413,7 @@ int main()
 *sp0 == 10
 ```
 
-## <a name="op_arrow"></a>  shared_ptr::operator-&gt;
+### <a name="op_arrow"></a> 연산자-&gt;
 
 지정된 값으로 포인터를 가져옵니다.
 
@@ -384,11 +421,11 @@ int main()
 T * operator->() const;
 ```
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 선택 연산자는 `get()`을 반환합니다. 따라서 `sp->member` 식은 `(sp.get())->member`와 동일하게 동작하며, 여기서 `sp`는 클래스 `shared_ptr<T>`의 개체입니다. 따라서 저장된 포인터는 null이 아니어야 하며, `T`는 클래스, 구조체 또는 `member` 구성원이 있는 공용 구조체 형식이어야 합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_operator_ar.cpp
@@ -413,28 +450,42 @@ sp0->first == 1
 sp0->second == 2
 ```
 
-## <a name="owner_before"></a>  shared_ptr::owner_before
+### <a name="op_arrowarrow"></a> 연산자&lt;&lt;
+
+```cpp
+template<class E, class T, class Y>
+    basic_ostream<E, T>& operator<< (basic_ostream<E, T>& os, const shared_ptr<Y>& p);
+```
+
+### <a name="owner_before"></a> owner_before
 
 `shared_ptr`이 제공된 포인터 앞에 정렬되는(또는 보다 작은) 경우 true를 반환합니다.
 
 ```cpp
 template <class Other>
-bool owner_before(const shared_ptr<Other>& ptr);
+    bool owner_before(const shared_ptr<Other>& ptr);
 
 template <class Other>
-bool owner_before(const weak_ptr<Other>& ptr);
+    bool owner_before(const weak_ptr<Other>& ptr);
 ```
 
-### <a name="parameters"></a>매개 변수
+#### <a name="parameters"></a>매개 변수
 
-*ptr*<br/>
+*ptr*\
 `shared_ptr` 또는 `weak_ptr`에 대한 `lvalue` 참조입니다.
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 템플릿 멤버 함수의 경우 true를 반환 `*this` 됩니다 `ordered before` `ptr`합니다.
 
-## <a name="reset"></a>  shared_ptr::reset
+### <a name="reinterpret_pointer_cast"></a> reinterpret_pointer_cast
+
+```cpp
+template<class T, class U>
+    shared_ptr<T> reinterpret_pointer_cast(const shared_ptr<U>& r) noexcept;
+```
+
+### <a name="reset"></a> 다시 설정
 
 소유하는 리소스를 대체합니다.
 
@@ -442,40 +493,40 @@ bool owner_before(const weak_ptr<Other>& ptr);
 void reset();
 
 template <class Other>
-void reset(Other *ptr;);
+    void reset(Other *ptr;);
 
 template <class Other, class D>
-void reset(Other *ptr, D dtor);
+    void reset(Other *ptr, D dtor);
 
 template <class Other, class D, class A>
-void reset(Other *ptr, D dtor, A alloc);
+    void reset(Other *ptr, D dtor, A alloc);
 ```
 
-### <a name="parameters"></a>매개 변수
+#### <a name="parameters"></a>매개 변수
 
-*기타*<br/>
+*다른*\
 인수 포인터에 의해 제어되는 형식입니다.
 
-*D*<br/>
+*D*\
 삭제자의 형식입니다.
 
-*ptr*<br/>
+*ptr*\
 복사할 포인터입니다.
 
-*dtor*<br/>
+*dtor*\
 복사할 deleter입니다.
 
-*A*<br/>
+*는*\
 할당자의 형식입니다.
 
-*alloc*<br/>
+*할당*\
 복사할 할당자입니다.
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 모든 연산자는 현재 `*this`가 소유한 리소스의 참조 수를 줄이고 피연산자 시퀀스로 이름이 지정된 리소스의 소유권을 `*this`에 할당합니다. 참조 수가 0으로 감소하면 리소스가 해제됩니다. 연산자 실행이 실패하면 `*this`는 변경되지 않습니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_reset.cpp
@@ -521,7 +572,7 @@ int main()
 *sp == 15
 ```
 
-## <a name="shared_ptr"></a>  shared_ptr::shared_ptr
+### <a name="shared_ptr"></a> shared_ptr
 
 `shared_ptr`를 생성합니다.
 
@@ -535,76 +586,76 @@ shared_ptr(const shared_ptr& sp);
 shared_ptr(shared_ptr&& sp);
 
 template <class Other>
-explicit shared_ptr(Other* ptr);
+    explicit shared_ptr(Other* ptr);
 
 template <class Other, class D>
-shared_ptr(Other* ptr, D dtor);
+    shared_ptr(Other* ptr, D dtor);
 
 template <class D>
-shared_ptr(nullptr_t ptr, D dtor);
+    shared_ptr(nullptr_t ptr, D dtor);
 
 template <class Other, class D, class A>
-shared_ptr(Other* ptr, D dtor, A  alloc);
+    shared_ptr(Other* ptr, D dtor, A  alloc);
 
 template <class D, class A>
-shared_ptr(nullptr_t ptr, D dtor, A alloc);
+    shared_ptr(nullptr_t ptr, D dtor, A alloc);
 
 template <class Other>
-shared_ptr(const shared_ptr<Other>& sp);
+    shared_ptr(const shared_ptr<Other>& sp);
 
 template <class Other>
-shared_ptr(const weak_ptr<Other>& wp);
+    shared_ptr(const weak_ptr<Other>& wp);
 
 template <class &>
-shared_ptr(std::auto_ptr<Other>& ap);
+    shared_ptr(std::auto_ptr<Other>& ap);
 
 template <class &>
-shared_ptr(std::auto_ptr<Other>&& ap);
+    shared_ptr(std::auto_ptr<Other>&& ap);
 
 template <class Other, class D>
-shared_ptr(unique_ptr<Other, D>&& up);
+    shared_ptr(unique_ptr<Other, D>&& up);
 
 template <class Other>
-shared_ptr(const shared_ptr<Other>& sp, T* ptr);
+    shared_ptr(const shared_ptr<Other>& sp, T* ptr);
 
 template <class Other, class D>
-shared_ptr(const unique_ptr<Other, D>& up) = delete;
+    shared_ptr(const unique_ptr<Other, D>& up) = delete;
 ```
 
-### <a name="parameters"></a>매개 변수
+#### <a name="parameters"></a>매개 변수
 
-*기타*<br/>
+*다른*\
 인수 포인터에 의해 제어되는 형식입니다.
 
-*ptr*<br/>
+*ptr*\
 복사할 포인터입니다.
 
-*D*<br/>
+*D*\
 삭제자의 형식입니다.
 
-*A*<br/>
+*는*\
 할당자의 형식입니다.
 
-*dtor*<br/>
+*dtor*\
 삭제자입니다.
 
-*ator*<br/>
+*ator*\
 할당자입니다.
 
-*sp*<br/>
+*sp*\
 복사할 스마트 포인터입니다.
 
-*wp*<br/>
+*wp*\
 취약 포인터입니다.
 
-*ap*<br/>
+*아시아 태평양*\
 복사할 자동 포인터입니다.
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 각 생성자는 피연산자 시퀀스에 의해 이름이 지정되는 리소스를 소유하는 개체를 생성합니다. `shared_ptr(const weak_ptr<Other>& wp)` 생성자는 `wp.expired()`인 경우 [bad_weak_ptr 클래스](../standard-library/bad-weak-ptr-class.md) 형식의 예외 개체를 throw합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_construct.cpp
@@ -656,7 +707,7 @@ int main()
 *sp5 == 15
 ```
 
-## <a name="dtorshared_ptr"></a>  shared_ptr::~shared_ptr
+### <a name="dtorshared_ptr"></a> ~ shared_ptr
 
 `shared_ptr`을 삭제합니다.
 
@@ -664,11 +715,11 @@ int main()
 ~shared_ptr();
 ```
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 소멸자는 현재 `*this`가 소유한 리소스의 참조 수를 줄입니다. 참조 수가 0으로 감소하면 리소스가 해제됩니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_destroy.cpp
@@ -711,7 +762,14 @@ use count == 2
 use count == 1
 ```
 
-## <a name="swap"></a>  shared_ptr::swap
+### <a name="static_pointer_cast"></a> static_pointer_cast
+
+```cpp
+template<class T, class U>
+shared_ptr<T> static_pointer_cast(const shared_ptr<U>& r) noexcept;
+```
+
+### <a name="swap"></a> 교환
 
 두 `shared_ptr` 개체를 교환합니다.
 
@@ -719,16 +777,16 @@ use count == 1
 void swap(shared_ptr& sp);
 ```
 
-### <a name="parameters"></a>매개 변수
+#### <a name="parameters"></a>매개 변수
 
-*sp*<br/>
+*sp*\
 교환할 공유 포인터입니다.
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 멤버 함수는 원래 소유한 리소스를 남겨 둡니다 `*this` 소유 였다가 이후에 *sp*, 및 원래 소유한 리소스 *sp* 소유 였다가 이후에 `*this`합니다. 함수는 두 리소스의 참조 개수를 변경하지 않으며 예외도 throw하지 않습니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_swap.cpp
@@ -781,7 +839,7 @@ int main()
 *wp1 == 5
 ```
 
-## <a name="unique"></a>  shared_ptr::unique
+### <a name="unique"></a> 고유
 
 소유하는 리소스가 고유한지 테스트합니다.
 
@@ -789,11 +847,11 @@ int main()
 bool unique() const;
 ```
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 멤버 함수는 반환 **true** 이상 다른 `shared_ptr` 소유 하는 리소스를 소유 하는 개체 `*this`고, 그렇지 않으면 **false**합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_unique.cpp
@@ -828,7 +886,7 @@ sp1.unique() == true
 sp1.unique() == false
 ```
 
-## <a name="use_count"></a>  shared_ptr::use_count
+### <a name="use_count"></a> use_count
 
 리소스 소유자 수를 계산합니다.
 
@@ -836,11 +894,11 @@ sp1.unique() == false
 long use_count() const;
 ```
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 구성원 함수는 `*this`의 소유인 리소스를 소유한 `shared_ptr` 개체의 수를 반환합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // std__memory__shared_ptr_use_count.cpp
@@ -866,8 +924,3 @@ int main()
 sp1.use_count() == 1
 sp1.use_count() == 2
 ```
-
-## <a name="see-also"></a>참고자료
-
-[weak_ptr 클래스](../standard-library/weak-ptr-class.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

@@ -6,18 +6,14 @@ f1_keywords:
 - exception/std::terminate_handler
 - exception/std::unexpected_handler
 ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768
-ms.openlocfilehash: 98a7e8197a0d729ab3a4e9ec0daf55a28cdaeb2d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3904393096422a8986414a253d515342c7382f0
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412646"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246040"
 ---
 # <a name="ltexceptiongt-typedefs"></a>&lt;exception&gt; 형식 정의
-
-||||
-|-|-|-|
-|[exception_ptr](#exception_ptr)|[terminate_handler](#terminate_handler)|[unexpected_handler](#unexpected_handler)|
 
 ## <a name="exception_ptr"></a>  exception_ptr
 
@@ -43,7 +39,7 @@ typedef unspecified exception_ptr;
 
 등호(`==`) 및 부등호(`!=`) 연산자를 사용하여 두 개의 `exception_ptr` 개체를 비교할 수 있습니다. 연산자는 예외를 나타내는 `EXCEPTION_RECORD` 구조의 이진 값(비트 패턴)을 비교하지 않습니다. 대신, 연산자는 `exception_ptr` 개체의 예외 참조 필드 주소를 비교합니다. 따라서 null `exception_ptr`과 NULL 값이 동일한 것으로 비교됩니다.
 
-## <a name="terminate_handler"></a>  terminate_handler
+## <a name="terminate_handler"></a> terminate_handler
 
 `terminate_handler`로 사용하는 데 적합한 함수에 대한 포인터를 설명하는 형식입니다.
 
@@ -59,7 +55,7 @@ typedef void (*terminate_handler)();
 
 `terminate_handler` 사용에 대한 예제는 [set_terminate](../standard-library/exception-functions.md#set_terminate)를 참조하세요.
 
-## <a name="unexpected_handler"></a>  unexpected_handler
+## <a name="unexpected_handler"></a> unexpected_handler
 
 이 형식은 `unexpected_handler`로 사용하는 데 적합한 함수에 대한 포인터를 설명합니다.
 
@@ -70,7 +66,3 @@ typedef void (*unexpected_handler)();
 ### <a name="example"></a>예제
 
 `unexpected_handler` 사용에 대한 예제는 [set_unexpected](../standard-library/exception-functions.md#set_unexpected)를 참조하세요.
-
-## <a name="see-also"></a>참고자료
-
-[\<exception>](../standard-library/exception.md)<br/>

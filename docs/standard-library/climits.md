@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - climits header
 ms.assetid: 7ca8a539-aa45-4ac3-86e8-74513be3f07e
-ms.openlocfilehash: 09989f5181e45867b5c74bb96f7d8a4891fc537c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67cddab4f42d10c4d1c78762c32ed1e4fd1e6175
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386228"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244796"
 ---
 # <a name="ltclimitsgt"></a>&lt;climits&gt;
 
-표준 C 라이브러리 헤더 \<limits.h>를 포함하고 `std` 네임스페이스에 연결된 이름을 추가합니다.
+C 표준 라이브러리 헤더를 포함 \<limits.h >에 연결된 된 이름을 추가 하 고는 `std` 네임 스페이스입니다. 외부 링크를 사용 하 여 C 표준 라이브러리 헤더에 선언 된 이름에 선언 되어 있는지 확인이 헤더를 포함 하는 `std` 네임 스페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,9 +23,29 @@ ms.locfileid: "62386228"
 #include <climits>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="macros"></a>매크로
 
-이 헤더를 포함하는 경우 표준 C 라이브러리 헤더의 외부 링크를 사용하여 선언한 이름이 `std` 네임스페이스에도 선언됩니다.
+```cpp
+#define CHAR_BIT
+#define SCHAR_MIN
+#define SCHAR_MAX
+#define UCHAR_MAX
+#define CHAR_MIN
+#define CHAR_MAX
+#define MB_LEN_MAX
+#define SHRT_MIN
+#define SHRT_MAX
+#define USHRT_MAX
+#define INT_MIN
+#define INT_MAX
+#define UINT_MAX
+#define LONG_MIN
+#define LONG_MAX
+#define ULONG_MAX
+#define LLONG_MIN
+#define LLONG_MAX
+#define ULLONG_MAX
+```
 
 ## <a name="see-also"></a>참고자료
 

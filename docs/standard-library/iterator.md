@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - iterator header
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
-ms.openlocfilehash: 1b0d3282075246f3b217f0c8acac19ed8ece79cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f859c2e11d8a800c44b93e69e4b862300c6d3a13
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224092"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245776"
 ---
 # <a name="ltiteratorgt"></a>&lt;iterator&gt;
 
 반복기 기본형, 미리 정의된 반복기, 스트림 반복기뿐만 아니라 여러 가지 지원 템플릿을 정의합니다. 미리 정의된 반복기는 삽입 및 반전 어댑터를 포함합니다. 삽입 반복기 어댑터: 앞, 뒤 및 일반의 세 가지 클래스가 있습니다. 컨테이너 멤버 함수 반복기가 제공하는 덮어쓰기 의미 체계보다 삽입 의미 체계를 제공합니다.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <iterator>
-```
+**헤더:** \<iterator>
+
+**네임스페이스:** std
 
 ## <a name="remarks"></a>설명
 
@@ -42,17 +42,23 @@ ms.locfileid: "62224092"
 
 Visual Studio는 확인 및 확인되지 않은 반복기에 대한 다양한 디버그 모드 상황을 지원하기 위해 C++ 표준 라이브러리 반복기에 대한 확장을 추가했습니다. 자세한 내용은 참조 하세요. [안전한 라이브러리: C++표준 라이브러리](../standard-library/safe-libraries-cpp-standard-library.md)합니다.
 
+## <a name="members"></a>멤버
+
 ### <a name="functions"></a>함수
 
-|기능|설명|
+|||
 |-|-|
 |[advance](../standard-library/iterator-functions.md#advance)|지정된 위치 수만큼 반복기를 증가시킵니다.|
 |[back_inserter](../standard-library/iterator-functions.md#back_inserter)|지정된 컨테이너 뒤에 요소를 삽입할 수 있는 반복기를 만듭니다.|
 |[begin](../standard-library/iterator-functions.md#begin)|지정된 컨테이너의 첫 번째 요소에 대한 반복기를 검색합니다.|
 |[cbegin](../standard-library/iterator-functions.md#cbegin)|지정된 컨테이너의 첫 번째 요소에 대한 상수 반복기를 검색합니다.|
 |[cend](../standard-library/iterator-functions.md#cend)|지정된 컨테이너에서 마지막 요소 다음에 있는 요소에 대한 상수 반복기를 검색합니다.|
+|[crbegin](../standard-library/iterator-functions.md#crbegin)||
+|[crend](../standard-library/iterator-functions.md#crend)||
+|[data](../standard-library/iterator-functions.md#data)||
 |[distance](../standard-library/iterator-functions.md#distance)|두 반복기에 의해 주소가 지정된 위치 사이의 간격의 수를 결정합니다.|
 |[end](../standard-library/iterator-functions.md#end)|지정된 컨테이너에서 마지막 요소 다음의 요소에 대한 반복기를 검색합니다.|
+|[empty](../standard-library/iterator-functions.md#empty)||
 |[front_inserter](../standard-library/iterator-functions.md#front_inserter)|지정된 컨테이너 앞에 요소를 삽입할 수 있는 반복기를 만듭니다.|
 |[inserter](../standard-library/iterator-functions.md#inserter)|지정된 삽입 지점에서 컨테이너에 새 요소를 추가하는 반복기 어댑터입니다.|
 |[make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator)|다른 알고리즘에서 사용할 수 있는 [checked_array_iterator](../standard-library/checked-array-iterator-class.md)를 만듭니다. **참고:**  이 함수는 C++ 표준 라이브러리의 Microsoft 확장입니다. 이 함수를 사용하여 구현한 코드는 이 Microsoft 확장을 지원하지 않는 C++ 표준 빌드 환경으로 이식할 수 없습니다.|
@@ -60,10 +66,13 @@ Visual Studio는 확인 및 확인되지 않은 반복기에 대한 다양한 �
 |[make_unchecked_array_iterator](../standard-library/iterator-functions.md#make_unchecked_array_iterator)|다른 알고리즘에서 사용할 수 있는 [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md)를 만듭니다. **참고:**  이 함수는 C++ 표준 라이브러리의 Microsoft 확장입니다. 이 함수를 사용하여 구현한 코드는 이 Microsoft 확장을 지원하지 않는 C++ 표준 빌드 환경으로 이식할 수 없습니다.|
 |[next](../standard-library/iterator-functions.md#next)|지정된 횟수만큼 반복하고 새 반복기 위치를 반환합니다.|
 |[prev](../standard-library/iterator-functions.md#prev)|역순으로 지정된 횟수만큼 반복하고 새 반복기 위치를 반환합니다.|
+|[rbegin](../standard-library/iterator-functions.md#rbegin)||
+|[rend](../standard-library/iterator-functions.md#rend)||
+|[size](../standard-library/iterator-functions.md#size)||
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
 |[operator!=](../standard-library/iterator-operators.md#op_neq)|연산자의 좌변에 있는 반복기 개체가 우변에 있는 반복기 개체와 다른지를 테스트합니다.|
 |[연산자==](../standard-library/iterator-operators.md#op_eq_eq)|연산자의 좌변에 있는 반복기 개체가 우변에 있는 반복기 개체와 같은지를 테스트합니다.|
@@ -76,7 +85,7 @@ Visual Studio는 확인 및 확인되지 않은 반복기에 대한 다양한 �
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|||
 |-|-|
 |[back_insert_iterator](../standard-library/back-insert-iterator-class.md)|출력 반복기 개체를 설명하는 템플릿 클래스입니다. 형식의 컨테이너에 요소를 삽입 `Container`, 보호를 통해 액세스 하는 `pointer` 저장 개체 컨테이너를 호출 합니다.|
 |[bidirectional_iterator_tag](../standard-library/bidirectional-iterator-tag-struct.md)|에 대 한 반환 형식을 제공 하는 클래스는 `iterator_category` 양방향 반복기를 나타내는 함수입니다.|

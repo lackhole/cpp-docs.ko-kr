@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CD2DRectU [MFC], CD2DRectU
 - CD2DRectU [MFC], IsNull
 ms.assetid: a62f17d1-011d-4867-8f51-fd7e7c00561d
-ms.openlocfilehash: feb8af3992b9f56164ded0e3b6a4529a46fe2a1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4bbf7014fc1b612804289dcb647f85b5e7905aeb
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396290"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244396"
 ---
 # <a name="cd2drectu-class"></a>CD2DRectU 클래스
 
@@ -31,23 +31,23 @@ class CD2DRectU : public D2D1_RECT_U;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CD2DRectU::CD2DRectU](#cd2drectu)|오버로드됨. 생성 된 `CD2DRectU` 에서 개체 `D2D1_RECT_U` 개체입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CD2DRectU::IsNull](#isnull)|반환 된 **부울** 식에 유효 하지 않은 데이터 (NULL)이 포함 되어 있는지 여부를 나타내는 값입니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CD2DRectU::operator CRect](#operator_crect)|변환 `CD2DRectU` 에 `CRect` 개체입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 `D2D1_RECT_U`
 
@@ -64,7 +64,7 @@ CRect 개체에서 CD2DRectU 개체를 생성합니다.
 ```
 CD2DRectU(const CRect& rect);
 CD2DRectU(const D2D1_RECT_U& rect);
-  CD2DRectU(const D2D1_RECT_U* rect);
+CD2DRectU(const D2D1_RECT_U* rect);
 
 CD2DRectU(
     UINT32 uLeft = 0,

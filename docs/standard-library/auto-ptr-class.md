@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::auto_ptr [C++], release
 - std::auto_ptr [C++], reset
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
-ms.openlocfilehash: f0c8e0c1f4dc2e1082d5df230c74efafcae24f29
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c64865c98f52f68fcb6d38160ac885657a7b8916
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377983"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244001"
 ---
 # <a name="autoptr-class"></a>auto_ptr 클래스
 
@@ -33,7 +33,6 @@ ms.locfileid: "62377983"
 
 ```cpp
 class auto_ptr {
-public:
     typedef Type element_type;
     explicit auto_ptr(Type* ptr = 0) throw();
     auto_ptr(auto_ptr<Type>& right) throw()
@@ -56,10 +55,10 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 기존 리소스를 가져올 `auto_ptr`입니다.
 
-*ptr*<br/>
+*ptr*\
 저장된 포인터를 바꾸도록 지정된 포인터입니다.
 
 ## <a name="remarks"></a>설명
@@ -72,19 +71,19 @@ public:
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|||
 |-|-|
 |[auto_ptr](#auto_ptr)|`auto_ptr` 형식의 개체에 대한 생성자입니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|||
 |-|-|
 |[element_type](#element_type)|이 형식은 템플릿 매개 변수 `Type`의 동의어입니다.|
 
-### <a name="member-functions"></a>멤버 함수
+### <a name="functions"></a>함수
 
-|멤버 함수|설명|
+|||
 |-|-|
 |[get](#get)|이 멤버 함수는 저장된 포인터 `myptr`을 반환합니다.|
 |[release](#release)|이 멤버는 저장된 포인터 `myptr`을 null 포인터로 대체하고 이전에 저장된 포인터를 반환합니다.|
@@ -92,7 +91,7 @@ public:
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
 |[operator=](#op_eq)|한 `auto_ptr` 개체에서 다른 개체로 소유권을 전송하는 대입 연산자입니다.|
 |[operator*](#op_star)|`auto_ptr` 형식의 개체에 대한 역참조 연산자입니다.|
@@ -100,13 +99,7 @@ public:
 |[operator auto_ptr\<Other>](#op_auto_ptr_lt_other_gt)|한 종류의 `auto_ptr`에서 다른 종류의 `auto_ptr`로 캐스팅합니다.|
 |[operator auto_ptr_ref\<Other>](#op_auto_ptr_ref_lt_other_gt)|`auto_ptr`에서 `auto_ptr_ref`로 캐스팅합니다.|
 
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<memory>
-
-**네임스페이스:** std
-
-## <a name="auto_ptr"></a>  auto_ptr::auto_ptr
+### <a name="auto_ptr"></a> auto_ptr
 
 `auto_ptr` 형식의 개체에 대한 생성자입니다.
 
@@ -121,15 +114,15 @@ template <class Other>
 auto _ptr(auto _ptr<Other>& right) throw();
 ```
 
-### <a name="parameters"></a>매개 변수
+#### <a name="parameters"></a>매개 변수
 
-*ptr*<br/>
+*ptr*\
 `auto_ptr`이 캡슐화하는 개체에 대한 포인터입니다.
 
-*right*<br/>
+*오른쪽*\
 생성자에 의해 복사될 `auto_ptr` 개체입니다.
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 첫 번째 생성자 저장소 *ptr* 에서 `myptr`, 할당된 된 개체에 저장 된 포인터입니다. 두 번째 생성자는 저장 된 포인터의 소유권을 전송 *오른쪽*에 저장 하 여 *오른쪽*합니다. [릴리스](#release) 에서 `myptr`합니다.
 
@@ -137,7 +130,7 @@ auto _ptr(auto _ptr<Other>& right) throw();
 
 템플릿 생성자는 동일 하 게 두 번째 생성자는 제공 하는에 대 한 포인터 `Other` 에 대 한 포인터로 암시적으로 변환할 수 `Type`입니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // auto_ptr_auto_ptr.cpp
@@ -196,16 +189,15 @@ Constructing 00311AF8
 Destructing 00311AF8
 ```
 
-## <a name="element_type"></a>  auto_ptr::element_type
+### <a name="element_type"></a> element_type
 
 이 형식은 템플릿 매개 변수 `Type`의 동의어입니다.
 
 ```cpp
-
 typedef Type element  _type;
 ```
 
-## <a name="get"></a>  auto_ptr::get
+### <a name="get"></a> get
 
 이 멤버 함수는 저장된 포인터 `myptr`을 반환합니다.
 
@@ -213,11 +205,11 @@ typedef Type element  _type;
 Type *get() const throw();
 ```
 
-### <a name="return-value"></a>반환 값
+#### <a name="return-value"></a>반환 값
 
 저장 된 포인터 `myptr`합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // auto_ptr_get.cpp
@@ -264,35 +256,35 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-## <a name="op_eq"></a>  auto_ptr::operator=
+### <a name="op_eq"></a> 연산자 =
 
 한 `auto_ptr` 개체에서 다른 개체로 소유권을 전송하는 대입 연산자입니다.
 
 ```cpp
 template <class Other>
-auto_ptr<Type>& operator=(auto_ptr<Other>& right) throw();
+    auto_ptr<Type>& operator=(auto_ptr<Other>& right) throw();
 auto_ptr<Type>& operator=(auto_ptr<Type>& right) throw();
 auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 ```
 
-### <a name="parameters"></a>매개 변수
+#### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 `auto_ptr` 형식의 개체입니다.
 
-### <a name="return-value"></a>반환 값
+#### <a name="return-value"></a>반환 값
 
 `auto_ptr<Type>` 형식의 개체에 대한 참조입니다.
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 할당 식을 `delete myptr`, 경우에 저장 된 포인터를 `myptr` 할당의 결과로 변경 합니다. 다음에 저장 된 포인터의 소유권을 전송 *오른쪽*에 저장 하 여 *오른쪽*.[ 릴리스](#release) 에서 `myptr`합니다. 함수는 __\*this__를 반환합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
-멤버 연산자의 사용 예는 [auto_ptr::auto_ptr](#auto_ptr)을 참조하세요.
+멤버 연산자의 사용 예제를 보려면 [auto_ptr](#auto_ptr)합니다.
 
-## <a name="op_star"></a>  auto_ptr::operator*
+### <a name="op_star"></a> 연산자 *
 
 `auto_ptr` 형식의 개체에 대한 역참조 연산자입니다.
 
@@ -300,19 +292,19 @@ auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 Type& operator*() const throw();
 ```
 
-### <a name="return-value"></a>반환 값
+#### <a name="return-value"></a>반환 값
 
 형식의 개체에 대 한 참조 `Type` 포인터를 소유 하는 합니다.
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 간접 참조 연산자는 `*`[get](#get)을 반환합니다. 따라서 저장된 포인터는 null이 아니어야 합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
-멤버 함수를 사용하는 방법의 예는 [auto_ptr::auto_ptr](#auto_ptr)을 참조하세요.
+멤버 함수를 사용 하는 방법의 예제를 참조 하세요 [auto_ptr](#auto_ptr)합니다.
 
-## <a name="op_arrow"></a>  auto_ptr::operator-&gt;
+### <a name="op_arrow"></a> 연산자-&gt;
 
 멤버 액세스를 허용하기 위한 연산자입니다.
 
@@ -320,19 +312,19 @@ Type& operator*() const throw();
 Type * operator->() const throw();
 ```
 
-### <a name="return-value"></a>반환 값
+#### <a name="return-value"></a>반환 값
 
 개체의 멤버는 `auto_ptr` 소유 합니다.
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 선택 연산자는 [get](#get)`( )`을 반환합니다. 따라서 *ap*-> **member** 식은 ( *ap*. **get**( ) )-> **member**와 동일하게 동작합니다. 여기서 *ap*는 `auto_ptr`\< **Type**> 클래스의 개체입니다. 따라서 저장 된 포인터를 null 이어야 합니다 하 고 `Type` 클래스, 구조체 또는 공용 구조체 형식과 해야는 `member` 멤버입니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
-멤버 함수를 사용하는 방법의 예는 [auto_ptr::auto_ptr](#auto_ptr)을 참조하세요.
+멤버 함수를 사용 하는 방법의 예제를 참조 하세요 [auto_ptr](#auto_ptr)합니다.
 
-## <a name="op_auto_ptr_lt_other_gt"></a>  auto_ptr::operator auto_ptr&lt;Other&gt;
+### <a name="op_auto_ptr_lt_other_gt"></a> operator auto_ptr&lt;다른&gt;
 
 한 종류의 `auto_ptr`에서 다른 종류의 `auto_ptr`로 캐스팅합니다.
 
@@ -341,11 +333,11 @@ template <class Other>
 operator auto _ptr<Other>() throw();
 ```
 
-### <a name="return-value"></a>반환 값
+#### <a name="return-value"></a>반환 값
 
 형식 캐스팅 연산자는 `auto_ptr` \< **Other**>( **\*this**)를 반환합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // auto_ptr_op_auto_ptr.cpp
@@ -362,7 +354,7 @@ int main()
 }
 ```
 
-## <a name="op_auto_ptr_ref_lt_other_gt"></a>  auto_ptr::operator auto_ptr_ref&lt;Other&gt;
+### <a name="op_auto_ptr_ref_lt_other_gt"></a> operator auto_ptr_ref&lt;다른&gt;
 
 `auto_ptr`에서 `auto_ptr_ref`로 캐스팅합니다.
 
@@ -371,11 +363,11 @@ template <class Other>
 operator auto _ptr  _ref<Other>() throw();
 ```
 
-### <a name="return-value"></a>반환 값
+#### <a name="return-value"></a>반환 값
 
 형식 캐스팅 연산자는 **auto_ptr_ref**\< **Other**>( **\*this**)를 반환합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // auto_ptr_op_auto_ptr_ref.cpp
@@ -423,7 +415,7 @@ main exiting
 ~C:  1
 ```
 
-## <a name="release"></a>  auto_ptr::release
+### <a name="release"></a> 릴리스
 
 이 멤버는 저장된 포인터 `myptr`을 null 포인터로 대체하고 이전에 저장된 포인터를 반환합니다.
 
@@ -431,15 +423,15 @@ main exiting
 Type *release() throw();
 ```
 
-### <a name="return-value"></a>반환 값
+#### <a name="return-value"></a>반환 값
 
 이전에 저장된 포인터입니다.
 
-### <a name="remarks"></a>설명
+#### <a name="remarks"></a>설명
 
 이 멤버는 저장된 포인터 `myptr`을 null 포인터로 대체하고 이전에 저장된 포인터를 반환합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // auto_ptr_release.cpp
@@ -485,7 +477,7 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-## <a name="reset"></a>  auto_ptr::reset
+### <a name="reset"></a> 다시 설정
 
 멤버 함수는 식을 `delete myptr`, 경우에 저장 된 포인터 값 `myptr` 함수 호출의 결과로 변경 합니다. 그런 다음 저장된 포인터를 `ptr`로 바꿉니다.
 
@@ -493,12 +485,12 @@ Destructing 00311B88 Value: 6
 void reset(Type* ptr = 0);
 ```
 
-### <a name="parameters"></a>매개 변수
+#### <a name="parameters"></a>매개 변수
 
-*ptr*<br/>
+*ptr*\
 저장 된 포인터를 바꾸려면 지정 된 포인터 `myptr`합니다.
 
-### <a name="example"></a>예제
+#### <a name="example"></a>예제
 
 ```cpp
 // auto_ptr_reset.cpp
@@ -547,5 +539,4 @@ Destructing 00311B88 Value: 6
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [unique_ptr 클래스](../standard-library/unique-ptr-class.md)<br/>

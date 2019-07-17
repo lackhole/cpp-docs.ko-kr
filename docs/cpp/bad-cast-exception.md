@@ -8,12 +8,12 @@ helpviewer_keywords:
 - exceptions [C++], bad_cast
 - bad_cast keyword [C++]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
-ms.openlocfilehash: 028fa8cc90b33aca6a37fb3b7f58b8c5fad81bd7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b40f64671e7c259b7dc04b31a11d20d0fc76c5c4
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62284775"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68242390"
 ---
 # <a name="badcast-exception"></a>bad_cast 예외
 
@@ -31,12 +31,7 @@ catch (bad_cast)
 **bad_cast**의 인터페이스는 다음과 같습니다.
 
 ```cpp
-class bad_cast : public exception {
-public:
-   bad_cast(const char * _Message = "bad cast");
-   bad_cast(const bad_cast &);
-   virtual ~bad_cast();
-};
+class bad_cast : public exception
 ```
 
 다음 코드에는 **bad_cast** 예외를 throw하는 실패한 **dynamic_cast**의 예제가 포함되어 있습니다.
@@ -83,7 +78,50 @@ Circle& ref_circle = circle_instance;
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="members"></a>멤버
+
+### <a name="constructors"></a>생성자
+
+|생성자|Description|
+|-|-|
+|[bad_cast](#bad_cast)|`bad_cast` 형식의 개체에 대한 생성자입니다.|
+
+### <a name="functions"></a>함수
+
+|기능|Description|
+|-|-|
+|[what](#what)|TBD|
+
+### <a name="operators"></a>연산자
+
+|연산자|설명|
+|-|-|
+|[operator=](#op_eq)|하나를 할당 하는 대입 연산자 `bad_cast` 다른 개체입니다.|
+
+## <a name="bad_cast"></a> bad_cast
+
+`bad_cast` 형식의 개체에 대한 생성자입니다.
+
+```cpp
+bad_cast(const char * _Message = "bad cast");
+bad_cast(const bad_cast &);
+```
+
+## <a name="op_eq"></a> 연산자 =
+
+하나를 할당 하는 대입 연산자 `bad_cast` 다른 개체입니다.
+
+```cpp
+bad_cast& operator=(const bad_cast&) noexcept;
+```
+
+## <a name="what"></a> 새로운
+
+```cpp
+const char* what() const noexcept override;
+```
+
+## <a name="see-also"></a>참고자료
 
 [dynamic_cast 연산자](../cpp/dynamic-cast-operator.md)<br/>
 [C++ 키워드](../cpp/keywords-cpp.md)<br/>

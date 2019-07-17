@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - binder2nd class
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
-ms.openlocfilehash: 8c1ed74da939c5f5cc83a2a109d32b43b5ac7f41
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5f59887e6c9d2965a6c8680f17a40c5bd93869c0
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62414050"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243351"
 ---
 # <a name="binder2nd-class"></a>binder2nd 클래스
 
@@ -25,7 +25,6 @@ class binder2nd
     : public unaryFunction <typename Operation::first_argument_type,
     typename Operation::result_type>
 {
-public:
     typedef typename Operation::argument_type argument_type;
     typedef typename Operation::result_type result_type;
     binder2nd(
@@ -34,22 +33,18 @@ public:
 
     result_type operator()(const argument_type& left) const;
     result_type operator()(argument_type& left) const;
-
-protected:
-    Operation op;
-    typename Operation::second_argument_type value;
 };
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*Func*<br/>
+*Func*\
 단항 함수 개체로 변환할 이항 함수 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 이항 함수 개체의 두 번째 인수가 바인딩되는 값입니다.
 
-*left*<br/>
+*왼쪽*\
 수정된 이진 개체를 두 번째 인수의 고정 값과 비교하는 인수의 값입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -58,9 +53,9 @@ protected:
 
 ## <a name="remarks"></a>설명
 
-이항 함수 개체 _의 복사본을 저장 하는 템플릿 클래스 *Func* 에서 `op`, 및 사본을 *오른쪽* 에서 `value`합니다. 그리고 **op**( `left`, **value**)를 반환하도록 해당 멤버 함수 `operator()`를 정의합니다.
+이항 함수 개체 _의 복사본을 저장 하는 템플릿 클래스 *Func* 에서 `op`, 및 사본을 *오른쪽* 에서 `value`합니다. 해당 멤버 함수를 정의 `operator()` 반환 **op**(`left`하십시오 **값**).
 
-경우 `Func` 형식의 개체인 `Operation` c가 상수 이면 및 [bind2nd](../standard-library/functional-functions.md#bind2nd) ( `Func`를 `c` ) 해당 하는 `binder2nd` 클래스 생성자 `binder2nd` \<  **작업이**> ( `Func`, `c` )이 고 더 편리 합니다.
+경우 `Func` 형식의 개체인 `Operation` c가 상수 이면 및 [bind2nd](../standard-library/functional-functions.md#bind2nd) (`Func`를 `c`) 해당 하는 `binder2nd` 클래스 생성자 `binder2nd` \<  **작업이**> (`Func`, `c`)이 고 더 편리 합니다.
 
 ## <a name="example"></a>예제
 
@@ -105,20 +100,10 @@ int main()
     cout << "The number of elements in v1 less than 10 is: "
          << result2 << "." << endl;
 }
-/* Output:
+```
+
+```Output
 The vector v1 = ( 0 5 10 15 20 25 )
 The number of elements in v1 greater than 10 is: 3.
 The number of elements in v1 less than 10 is: 2.
-*/
 ```
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<functional>
-
-**네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>

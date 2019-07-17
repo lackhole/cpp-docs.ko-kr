@@ -16,38 +16,36 @@ helpviewer_keywords:
 - std::operator&lt; (utility)
 - std::operator&lt;= (utility)
 - std::operator== (utility)
-ms.openlocfilehash: 418b18851aaf8da44ee0ed2df7ff9e60a0b5ef1f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec6c996487dc2e6c5ce628fe5e080b4f601479d9
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167571"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246288"
 ---
 # <a name="ltutilitygt-operators"></a>&lt;utility&gt; 연산자
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[연산자==](#op_eq_eq)|
+> [!NOTE]
+> 사용 하 여 운영자 `Type&` 아래에 포함 된다는 `namespace rel_ops`합니다.
 
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체와 같지 않은지 테스트합니다.
 
 ```cpp
 template <class Type>
-constexpr bool operator!=(const Type& left, const Type& right);
+    constexpr bool operator!=(const Type& left, const Type& right);
 
 template <class T, class U>
-constexpr bool operator!=(const pair<T, U>& left, const pair<T, U>& right);
+    constexpr bool operator!=(const pair<T, U>& left, const pair<T, U>& right);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `pair` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `pair` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -105,7 +103,7 @@ The pairs p1 and p2 are not equal.
 The pairs p1 and p3 are equal.
 ```
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> 연산자 = =
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체와 같은지 테스트합니다.
 
@@ -116,10 +114,10 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `pair` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `pair` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -168,7 +166,7 @@ int main( )
 }
 ```
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> 연산자&lt;
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체보다 작은지 테스트합니다.
 
@@ -179,10 +177,10 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 연산자의 좌변에 있는 `pair` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 연산자의 우변에 있는 `pair` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -242,7 +240,7 @@ The pair p1 is less than the pair p2.
 The pair p1 is not less than the pair p3.
 ```
 
-## <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a> 연산자&lt;=
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체보다 작은지 테스트합니다.
 
@@ -256,10 +254,10 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 연산자의 좌변에 있는 `pair` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 연산자의 우변에 있는 `pair` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -327,7 +325,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is less than or equal to the pair p4.
 ```
 
-## <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a> 연산자&gt;
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체보다 큰지 테스트합니다.
 
@@ -341,10 +339,10 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 연산자의 좌변에 있는 `pair` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 연산자의 우변에 있는 `pair` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -414,24 +412,24 @@ The pair p1 is greater than the pair p3.
 The pair p1 is not greater than the pair p4.
 ```
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a> 연산자&gt;=
 
 연산자의 좌변에 있는 pair 개체가 우변에 있는 pair 개체보다 크거나 같은지 테스트합니다.
 
 ```cpp
 template <class Type>
-constexpr bool operator>=(const Type& left, const Type& right);
+    constexpr bool operator>=(const Type& left, const Type& right);
 
 template <class T, class U>
-constexpr bool operator>=(const pair<T, U>& left, const pair<T, U>& right);
+    constexpr bool operator>=(const pair<T, U>& left, const pair<T, U>& right);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 연산자의 좌변에 있는 `pair` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 연산자의 우변에 있는 `pair` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -498,7 +496,3 @@ The pair p1 is less than the pair p2.
 Pair p1 is greater than or equal to pair p3.
 Pair p1 is greater than or equal to pair p4.
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<utility>](../standard-library/utility.md)<br/>

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::condition_variable::wait
 - std::condition_variable::wait_for
 - std::condition_variable::wait_until
-ms.openlocfilehash: 52e64df7522c5e58fa64398f599bffa4614a2684
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69f356301ce5b546c8bebe9429ca64fa61eff404
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212388"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244634"
 ---
 # <a name="conditionvariable-class"></a>condition_variable 클래스
 
@@ -39,16 +39,16 @@ class condition_variable;
 
 ## <a name="members"></a>멤버
 
-### <a name="public-constructors"></a>Public 생성자
+### <a name="constructors"></a>생성자
 
-|이름|설명|
-|----------|-----------------|
+|||
+|-|-|
 |[condition_variable](#condition_variable)|`condition_variable` 개체를 생성합니다.|
 
-### <a name="public-methods"></a>Public 메서드
+### <a name="functions"></a>함수
 
-|이름|설명|
-|----------|-----------------|
+|||
+|-|-|
 |[native_handle](#native_handle)|Condition_variable 핸들을 나타내는 구현 관련 형식을 반환합니다.|
 |[notify_all](#notify_all)|`condition_variable` 개체를 대기 중인 모든 스레드를 차단 해제합니다.|
 |[notify_one](#notify_one)|`condition_variable` 개체를 대기 중인 스레드 중 하나를 차단 해제합니다.|
@@ -56,13 +56,7 @@ class condition_variable;
 |[wait_for](#wait_for)|스레드를 차단하고 스레드가 차단 해제되는 시간 간격을 설정합니다.|
 |[wait_until](#wait_until)|스레드를 차단하고 스레드가 차단 해제되는 최대 시점을 설정합니다.|
 
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<condition_variable >
-
-**네임스페이스:** std
-
-## <a name="condition_variable"></a>  condition_variable::condition_variable 생성자
+## <a name="condition_variable"></a> condition_variable
 
 `condition_variable` 개체를 생성합니다.
 
@@ -74,7 +68,7 @@ condition_variable();
 
 메모리가 부족한 경우 생성자에서 `not_enough_memory` 오류 코드가 있는 [system_error](../standard-library/system-error-class.md) 개체를 throw합니다. 몇 가지 다른 리소스를 사용할 수 없기 때문에 개체를 생성할 수 없는 경우 생성자에서 `resource_unavailable_try_again` 오류 코드가 있는 `system_error` 개체를 throw합니다.
 
-## <a name="native_handle"></a>  condition_variable::native_handle
+## <a name="native_handle"></a> native_handle
 
 Condition_variable 핸들을 나타내는 구현 관련 형식을 반환합니다.
 
@@ -86,7 +80,7 @@ native_handle_type native_handle();
 
 `native_handle_type`은 동시성 런타임 내부 데이터 구조에 대한 포인터로 정의됩니다.
 
-## <a name="notify_all"></a>  condition_variable::notify_all
+## <a name="notify_all"></a> notify_all
 
 `condition_variable` 개체를 대기 중인 모든 스레드를 차단 해제합니다.
 
@@ -94,7 +88,7 @@ native_handle_type native_handle();
 void notify_all() noexcept;
 ```
 
-## <a name="notify_one"></a>  condition_variable::notify_one
+## <a name="notify_one"></a> notify_one
 
 `condition_variable` 개체를 기다리는 스레드 중 하나를 차단 해제합니다.
 
@@ -102,7 +96,7 @@ void notify_all() noexcept;
 void notify_one() noexcept;
 ```
 
-## <a name="wait"></a>  condition_variable::wait
+## <a name="wait"></a> 대기
 
 스레드를 차단합니다.
 
@@ -115,10 +109,10 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
 
 ### <a name="parameters"></a>매개 변수
 
-*Lck*<br/>
+*Lck*\
 [unique_lock\<mutex>](../standard-library/unique-lock-class.md) 개체입니다.
 
-*pred*<br/>
+*pred*\
 반환 하는 식 **true** 하거나 **false**합니다.
 
 ### <a name="remarks"></a>설명
@@ -132,7 +126,7 @@ while(!Pred())
     wait(Lck);
 ```
 
-## <a name="wait_for"></a>  condition_variable::wait_for
+## <a name="wait_for"></a> wait_for
 
 스레드를 차단하고 스레드가 차단 해제되는 시간 간격을 설정합니다.
 
@@ -151,13 +145,13 @@ bool wait_for(
 
 ### <a name="parameters"></a>매개 변수
 
-*Lck*<br/>
+*Lck*\
 [unique_lock\<mutex>](../standard-library/unique-lock-class.md) 개체입니다.
 
-*Rel_time*<br/>
+*Rel_time*\
 스레드가 대기 모드를 해제하기 전까지의 시간을 지정하는 `chrono::duration` 개체입니다.
 
-*pred*<br/>
+*pred*\
 반환 하는 식 **true** 하거나 **false**합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -180,7 +174,7 @@ while(!Pred())
 return true;
 ```
 
-## <a name="wait_until"></a>  condition_variable::wait_until
+## <a name="wait_until"></a> wait_until
 
 스레드를 차단하고 스레드가 차단 해제되는 최대 시점을 설정합니다.
 
@@ -209,13 +203,13 @@ bool wait_until(
 
 ### <a name="parameters"></a>매개 변수
 
-*Lck*<br/>
+*Lck*\
 [unique_lock\<mutex>](../standard-library/unique-lock-class.md) 개체입니다.
 
-*Abs_time*<br/>
+*Abs_time*\
 [chrono::time_point](../standard-library/time-point-class.md) 개체입니다.
 
-*pred*<br/>
+*pred*\
 반환 하는 식 **true** 하거나 **false**합니다.
 
 ### <a name="return-value"></a>반환 값

@@ -7,26 +7,31 @@ helpviewer_keywords:
 - stack, stack header
 - stack header
 ms.assetid: 89d8999e-c773-46f2-86c1-4b3b5aedb1c1
-ms.openlocfilehash: b8f2bb6cf74d0607bd3105196336a515adcade9e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 65f2197a4a9ac37ad5910bfa8dbef457fda5f611
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412464"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244127"
 ---
 # <a name="ltstackgt"></a>&lt;stack&gt;
 
 템플릿 클래스 스택 및 두 개의 지원 템플릿을 정의합니다.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <stack>
-```
+**헤더:** \<stack>
+
+**네임스페이스:** std
+
+> [!NOTE]
+> 합니다 \<스택 > 라이브러리 사용을 `#include <initializer_list>` 문입니다.
+
+## <a name="members"></a>멤버
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
 |[operator!=](../standard-library/stack-operators.md#op_neq)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체와 같지 않은지 테스트합니다.|
 |[operator<](../standard-library/stack-operators.md#op_lt)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 작은지 테스트합니다.|
@@ -35,9 +40,15 @@ ms.locfileid: "62412464"
 |[operator>](../standard-library/stack-operators.md#op_gt)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 큰지 테스트합니다.|
 |[operator>=](../standard-library/stack-operators.md#op_gt_eq)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 크거나 같은지 테스트합니다.|
 
+### <a name="functions"></a>함수
+
+|||
+|-|-|
+|[swap]()||
+
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|||
 |-|-|
 |[stack 클래스](../standard-library/stack-class.md)|최근에 일부 기본 컨테이너 형식에 추가된 요소로만 액세스를 제한하는 템플릿 컨테이너 어댑터 클래스입니다.|
 

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - <mutex>
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
-ms.openlocfilehash: 4655278e312647f4e69cf48cb772df854260ce57
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 377ec995f4e61c957e8e620749f96523b60fed3e
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224079"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240592"
 ---
 # <a name="ltmutexgt"></a>&lt;mutex&gt;
 
@@ -18,11 +18,11 @@ ms.locfileid: "62224079"
 > [!WARNING]
 > Visual Studio 2015에서 시작 하는 C++ 표준 라이브러리 동기화 형식은 Windows 동기화 기본 형식을 기반으로 하 고 더 이상 ConcRT를 사용 하 여 (대상 플랫폼이 Windows XP 인 경우) 제외 합니다. \<mutex>에 정의된 형식은 모든 ConcRT 형식 및 함수와 함께 사용하면 안 됩니다.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <mutex>
-```
+**헤더:** \<뮤텍스 >
+
+**네임스페이스:** std
 
 ## <a name="remarks"></a>설명
 
@@ -47,28 +47,33 @@ ms.locfileid: "62224079"
 
 뮤텍스 형식은 *잠금 가능 형식*이라고도 합니다. 구성원 함수 `try_lock`을 제공하지 않는 경우 *기본 잠금 형식*입니다. 시간이 지정된 뮤텍스 형식은 *시간이 지정된 잠금 가능 형식*이라고도 합니다.
 
+## <a name="members"></a>멤버
+
 ### <a name="classes"></a>클래스
 
-|이름|설명|
-|----------|-----------------|
+|||
+|-|-|
 |[lock_guard 클래스](../standard-library/lock-guard-class.md)|소멸자가 `mutex`의 잠금을 해제하는 개체를 만들기 위해 인스턴스화할 수 있는 템플릿을 나타냅니다.|
 |[mutex 클래스(C++ 표준 라이브러리)](../standard-library/mutex-class-stl.md)|뮤텍스 형식을 나타냅니다. 이 형식의 개체를 사용하면 프로그램 내에서 상호 배제를 강제로 수행할 수 있습니다.|
 |[recursive_mutex 클래스](../standard-library/recursive-mutex-class.md)|뮤텍스 형식을 나타냅니다. `mutex` 클래스와 달리 이미 잠겨 있는 개체에 대한 잠금 메서드 호출 동작이 잘 정의되어 있습니다.|
 |[recursive_timed_mutex 클래스](../standard-library/recursive-timed-mutex-class.md)|시간이 지정된 뮤텍스 형식을 나타냅니다. 이러한 형식의 개체를 사용하면 프로그램 내에서 시간이 제한된 차단이 있는 상호 배제를 강제로 수행할 수 있습니다. `timed_mutex` 형식의 개체와 달리 `recursive_timed_mutex` 개체에 대한 잠금 메서드 호출의 효과가 잘 정의되어 있습니다.|
+|[scoped_lock 클래스](../standard-library/scoped-lock-class.md)||
 |[timed_mutex 클래스](../standard-library/timed-mutex-class.md)|시간이 지정된 뮤텍스 형식을 나타냅니다. 이러한 형식의 개체를 사용하면 프로그램 내에서 시간이 제한된 차단이 있는 상호 배제를 강제로 수행할 수 있습니다.|
 |[unique_lock 클래스](../standard-library/unique-lock-class.md)|`mutex`의 잠금 및 잠금 해제를 관리하는 개체를 만들기 위해 인스턴스화할 수 있는 템플릿을 나타냅니다.|
 
 ### <a name="functions"></a>함수
 
-|이름|설명|
-|----------|-----------------|
+|||
+|-|-|
 |[call_once](../standard-library/mutex-functions.md#call_once)|지정된 호출 가능 개체를 실행 중 정확하게 한 번 호출할 수 있는 메커니즘을 제공합니다.|
 |[lock](../standard-library/mutex-functions.md#lock)|교착 상태가 발생하지 않고 모든 인수를 잠그려고 시도합니다.|
+|[swap](../standard-library/mutex-functions.md#swap)||
+|[try_lock](../standard-library/mutex-functions.md#try_lock)||
 
-### <a name="structs"></a>Structs
+### <a name="structs"></a>구조체
 
-|이름|설명|
-|----------|-----------------|
+|||
+|-|-|
 |[adopt_lock_t 구조체](../standard-library/adopt-lock-t-structure.md)|`adopt_lock`을 정의하는 데 사용되는 형식을 나타냅니다.|
 |[defer_lock_t 구조체](../standard-library/defer-lock-t-structure.md)|`unique_lock`의 오버로드된 생성자 중 하나를 선택하는 데 사용되는 `defer_lock` 개체를 정의하는 형식을 나타냅니다.|
 |[once_flag 구조체](../standard-library/once-flag-structure.md)|나타냅니다는 **구조체** 템플릿 함수를 사용 하 여 사용 되는 `call_once` 해당 초기화 되도록 코드는 한 번만 호출, 다중 스레드 방식의 실행 하는 경우에 합니다.|
@@ -76,8 +81,8 @@ ms.locfileid: "62224079"
 
 ### <a name="variables"></a>변수
 
-|이름|설명|
-|----------|-----------------|
+|||
+|-|-|
 |[adopt_lock](../standard-library/mutex-functions.md#adopt_lock)|생성자에게 전달 중인 뮤텍스 개체가 잠겨 있음을 나타내기 위해 `lock_guard` 및 `unique_lock`의 생성자에 전달할 수 있는 개체를 나타냅니다.|
 |[defer_lock](../standard-library/mutex-functions.md#defer_lock)|생성자가 전달 중인 뮤텍스 개체를 잠그면 안 됨을 나타내기 위해 `unique_lock`의 생성자에 전달할 수 있는 개체를 나타냅니다.|
 |[try_to_lock](../standard-library/mutex-functions.md#try_to_lock)|생성자가 차단 없이 전달 중인 `mutex`의 잠금을 해제하려고 하면 안 됨을 나타내기 위해 `unique_lock`의 생성자에 전달할 수 있는 개체를 나타냅니다.|

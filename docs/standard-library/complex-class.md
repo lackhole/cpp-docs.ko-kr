@@ -10,12 +10,12 @@ helpviewer_keywords:
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-ms.openlocfilehash: 2ebaee81b792f9acc475fe25ac1ef7cc7a78a0de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: db04569d3938c673653ac36eeebdabc9cb725c1e
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376161"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244737"
 ---
 # <a name="complex-class"></a>complex 클래스
 
@@ -42,28 +42,30 @@ class complex
 
 세 개의 부동 소수점 형식에 대해 템플릿 클래스 complex의 명시적 특수화가 존재합니다. 이 구현에서 다른 형식의 값입니다 `Type` 형식으로 캐스팅 됩니다 **이중** 실제 계산을 위해 사용 하 여 합니다 **double** 형식의 저장 된 개체에 다시 할당 하는 결과 `Type`합니다.
 
+## <a name="members"></a>멤버
+
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|||
 |-|-|
 |[complex](#complex)|지정된 실수 및 허수 부분을 사용하거나 다른 복소수의 복사본으로 복소수를 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|||
 |-|-|
 |[value_type](#value_type)|복소수의 실수부와 허수부를 나타내는 데 사용되는 데이터 형식을 표시하는 형식입니다.|
 
-### <a name="member-functions"></a>멤버 함수
+### <a name="functions"></a>함수
 
-|멤버 함수|설명|
+|||
 |-|-|
 |[imag](#imag)|복소수의 허수 구성 요소를 추출합니다.|
 |[real](#real)|복소수의 실수 구성 요소를 추출합니다.|
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
 |[operator*=](#op_star_eq)|대상 복소수와 요소를 곱합니다. 요소는 복소수이거나 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.|
 |[operator+=](#op_add_eq)|대상 복소수에 숫자를 더합니다. 여기서 더해지는 숫자는 복소수이거나 대상 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.|
@@ -71,13 +73,9 @@ class complex
 |[operator/=](#op_div_eq)|대상 복소수를 제수로 나눕니다. 제수는 복소수이거나 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.|
 |[operator=](#op_eq)|대상 복소수에 숫자를 할당합니다. 여기서 할당되는 숫자는 복소수이거나 대상 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.|
 
-## <a name="requirements"></a>요구 사항
 
-**헤더**: \<complex>
 
-**네임스페이스:** std
-
-## <a name="complex"></a>  complex::complex
+## <a name="complex"></a> 복잡 한
 
 지정된 실수 및 허수 부분을 사용하거나 다른 복소수의 복사본으로 복소수를 생성합니다.
 
@@ -93,13 +91,13 @@ constexpr complex(
 
 ### <a name="parameters"></a>매개 변수
 
-*_RealVal*<br/>
+*_RealVal*\
 생성되고 있는 복소수를 초기화하는데 사용되는 실수 부분의 값입니다.
 
-*_ImagVal*<br/>
+*_ImagVal*\
 생성되고 있는 복소수를 초기화하는데 사용되는 허수 부분의 값입니다.
 
-*complexNum*<br/>
+*complexNum*\
 해당 실수 및 허수 부분이 생성되고 있는 복소수를 초기화하는데 사용되는 복소수입니다.
 
 ### <a name="remarks"></a>설명
@@ -161,7 +159,7 @@ int main( )
 }
 ```
 
-## <a name="imag"></a>  complex::imag
+## <a name="imag"></a> imag
 
 복소수의 허수 구성 요소를 추출합니다.
 
@@ -173,7 +171,7 @@ T imag(const T& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 허수 값을 추출할 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -215,7 +213,7 @@ The real part of c1 is c1.real() = 4.
 The imaginary part of c1 is c1.imag() = 3.
 ```
 
-## <a name="op_star_eq"></a>  complex::operator*=
+## <a name="op_star_eq"></a> 연산자 * =
 
 대상 복소수와 요소를 곱합니다. 요소는 복소수이거나 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.
 
@@ -230,7 +228,7 @@ complex<Type>& operator*=(const complex<Type>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 복소수 또는 대상 복소수의 매개 변수와 같은 형식의 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -300,7 +298,7 @@ int main()
 }
 ```
 
-## <a name="op_add_eq"></a>  complex::operator+=
+## <a name="op_add_eq"></a> operator + =
 
 대상 복소수에 숫자를 더합니다. 여기서 더해지는 숫자는 복소수이거나 대상 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.
 
@@ -315,7 +313,7 @@ complex<Type>& operator+=(const complex<Type>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 복소수 또는 대상 복소수의 매개 변수와 같은 형식의 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -403,7 +401,7 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="operator-_eq"></a>  complex::operator-=
+## <a name="operator-_eq"></a> -= 연산자
 
 대상 복소수에서 숫자를 뺍니다. 여기서 빼는 숫자는 복소수이거나 대상 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.
 
@@ -418,10 +416,10 @@ complex<Type>& operator-=(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum*<br/>
+*complexNum*\
 대상 복소수에서 뺄 복소수입니다.
 
-*_RealPart*<br/>
+*_RealPart*\
 대상 복소수에서 뺄 실수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -511,7 +509,7 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 2.2143 radians, which is 126.87 degrees.
 ```
 
-## <a name="op_div_eq"></a>  complex::operator/=
+## <a name="op_div_eq"></a> operator / =
 
 대상 복소수를 제수로 나눕니다. 제수는 복소수이거나 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.
 
@@ -526,10 +524,10 @@ complex<Type>& operator/=(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>매개 변수
 
-*complexNum*<br/>
+*complexNum*\
 대상 복소수에서 뺄 복소수입니다.
 
-*_RealPart*<br/>
+*_RealPart*\
 대상 복소수에서 뺄 실수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -615,7 +613,7 @@ The modulus of cl2 is: 0.6
 The argument of cl2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-## <a name="op_eq"></a>  complex::operator=
+## <a name="op_eq"></a> 연산자 =
 
 대상 복소수에 숫자를 할당합니다. 여기서 할당되는 숫자는 복소수이거나 대상 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.
 
@@ -628,7 +626,7 @@ complex<Type>& operator=(const Type& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 복소수 또는 대상 복소수의 매개 변수와 같은 형식의 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -693,7 +691,7 @@ The complex number (3, 4) assigned to the complex number cl2 is:
 cl2 = (3,4)
 ```
 
-## <a name="real"></a>  complex::real
+## <a name="real"></a> 실제
 
 복소수의 실수 구성 요소를 가져오거나 설정합니다.
 
@@ -705,7 +703,7 @@ T real(const T& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 실수 값을 추출할 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -747,7 +745,7 @@ The real part of c1 is c1.real() = 4.
 The imaginary part of c1 is c1.imag() = 3.
 ```
 
-## <a name="value_type"></a>  complex::value_type
+## <a name="value_type"></a> value_type
 
 복소수의 실수부와 허수부를 나타내는 데 사용되는 데이터 형식을 표시하는 형식입니다.
 

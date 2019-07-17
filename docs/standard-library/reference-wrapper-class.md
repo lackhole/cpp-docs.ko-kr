@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::reference_wrapper [C++], type
 - std::reference_wrapper [C++], get
 ms.assetid: 90b8ed62-e6f1-44ed-acc7-9619bd58865a
-ms.openlocfilehash: baf38dd637e31f6fabdf869a242f8f18e2812717
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 83b68d1fdf89519df0a26acd478467fddec8b662
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369592"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240268"
 ---
 # <a name="referencewrapper-class"></a>reference_wrapper 클래스
 
@@ -35,7 +35,6 @@ ms.locfileid: "62369592"
 template <class Ty>
 class reference_wrapper
 {
-public:
     typedef Ty type;
 
     reference_wrapper(Ty&) noexcept;
@@ -45,9 +44,6 @@ public:
     template <class... Types>
     auto operator()(Types&&... args) const ->
         decltype(std::invoke(get(), std::forward<Types>(args)...));
-
-private:
-    Ty *ptr; // exposition only
 };
 ```
 
@@ -59,39 +55,35 @@ private:
 
 도우미 함수 [std::ref](functional-functions.md#ref) 및 [std::cref](functional-functions.md#cref)를 사용하여 `reference_wrapper` 개체를 만들 수 있습니다.
 
+## <a name="members"></a>멤버
+
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|||
 |-|-|
 |[reference_wrapper](#reference_wrapper)|`reference_wrapper`를 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|||
 |-|-|
 |[result_type](#result_type)|래핑된 참조의 약한 결과 형식입니다.|
 |[type](#type)|래핑된 참조 형식입니다.|
 
-### <a name="member-functions"></a>멤버 함수
+### <a name="functions"></a>함수
 
-|멤버 함수|설명|
+|||
 |-|-|
 |[get](#get)|래핑된 참조를 가져옵니다.|
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
-|[reference_wrapper::operator Ty&amp;](#op_ty_amp)|래핑된 참조에 대한 포인터를 가져옵니다.|
-|[reference_wrapper::operator()](#op_call)|래핑된 참조를 호출합니다.|
+|[Ty 연산자&amp;](#op_ty_amp)|래핑된 참조에 대한 포인터를 가져옵니다.|
+|[operator()](#op_call)|래핑된 참조를 호출합니다.|
 
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<functional>
-
-**네임스페이스:** std
-
-## <a name="get"></a>  reference_wrapper::get
+## <a name="get"></a> get
 
 래핑된 참조를 가져옵니다.
 
@@ -130,7 +122,7 @@ rwi = 1
 i = -1
 ```
 
-## <a name="op_ty_amp"></a>  reference_wrapper::operator Ty&amp;
+## <a name="op_ty_amp"></a> Ty 연산자&amp;
 
 래핑된 참조를 가져옵니다.
 
@@ -166,7 +158,7 @@ i = 1
 (int)rwi = 1
 ```
 
-## <a name="op_call"></a>  reference_wrapper::operator()
+## <a name="op_call"></a> operator()
 
 래핑된 참조를 호출합니다.
 
@@ -177,10 +169,10 @@ auto operator()(Types&&... args);
 
 ### <a name="parameters"></a>매개 변수
 
-*유형*<br/>
+*형식*\
 인수 목록 유형입니다.
 
-*args*<br/>
+*인수*\
 인수 목록입니다.
 
 ### <a name="remarks"></a>설명
@@ -212,7 +204,7 @@ int main() {
 rwi(3) = -3
 ```
 
-## <a name="reference_wrapper"></a>  reference_wrapper::reference_wrapper
+## <a name="reference_wrapper"></a> reference_wrapper
 
 `reference_wrapper`를 생성합니다.
 
@@ -222,10 +214,10 @@ reference_wrapper(Ty& val) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 래핑할 형식입니다.
 
-*val*<br/>
+*val*\
 래핑할 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -263,7 +255,7 @@ rwi = 1
 i = -1
 ```
 
-## <a name="result_type"></a>  reference_wrapper::result_type
+## <a name="result_type"></a> result_type
 
 래핑된 참조의 약한 결과 형식입니다.
 
@@ -302,7 +294,7 @@ int main() {
 val = -3
 ```
 
-## <a name="type"></a>  reference_wrapper::type
+## <a name="type"></a> 형식
 
 래핑된 참조 형식입니다.
 
@@ -343,8 +335,3 @@ int main() {
 i = 1
 rwi = 1
 ```
-
-## <a name="see-also"></a>참고자료
-
-[cref](../standard-library/functional-functions.md#cref)<br/>
-[ref](../standard-library/functional-functions.md#ref)<br/>

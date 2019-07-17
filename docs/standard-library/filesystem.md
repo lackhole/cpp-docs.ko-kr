@@ -9,12 +9,12 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::directory_iterator
 - <filesystem>
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
-ms.openlocfilehash: 0f397d8b0c39769fde20b6aa50412c979237f70a
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: a44fc3c6c6a37c20e1e1c294929ae3cb15cece58
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220378"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240705"
 ---
 # <a name="ltfilesystemgt"></a>&lt;filesystem&gt;
 
@@ -89,10 +89,12 @@ using namespace std::experimental::filesystem::v1;
 
 자세한 내용 및 코드 예제를 보려면 [파일 시스템 탐색(C++)](../standard-library/file-system-navigation.md)을 참조하세요.
 
-## <a name="classes"></a>클래스
+## <a name="members"></a>멤버
 
-|이름|설명|
-|----------|-----------------|
+### <a name="classes"></a>클래스
+
+|||
+|-|-|
 |[directory_entry 클래스](../standard-library/directory-entry-class.md)|`directory_iterator` 또는 `recursive_directory_iterator`에서 반환된 개체를 설명하고 경로를 포함합니다.|
 |[directory_iterator 클래스](../standard-library/directory-iterator-class.md)|파일 시스템 디렉터리에서 파일 이름을 통해 시퀀스되는 입력 반복기에 대해 설명합니다.|
 |[filesystem_error 클래스](../standard-library/filesystem-error-class.md)|하위 수준 시스템 오버플로를 보고하기 위해 throw되는 예외에 대한 기본 클래스입니다.|
@@ -100,10 +102,10 @@ using namespace std::experimental::filesystem::v1;
 |[recursive_directory_iterator 클래스](../standard-library/recursive-directory-iterator-class.md)|파일 시스템 디렉터리에서 파일 이름을 통해 시퀀스되는 입력 반복기에 대해 설명합니다. 이 반복기는 하위 디렉터리로도 상속됩니다.|
 |[file_status 클래스](../standard-library/file-status-class.md)|`file_type`을 래핑합니다.|
 
-## <a name="structs"></a>구조체
+### <a name="structs"></a>구조체
 
-|이름|설명|
-|----------|-----------------|
+|||
+|-|-|
 |[space_info 구조체](../standard-library/space-info-structure.md)|볼륨에 대한 정보를 보관합니다.|
 
 ## <a name="functions"></a>함수
@@ -116,12 +118,13 @@ using namespace std::experimental::filesystem::v1;
 
 ## <a name="enumerations"></a>열거형
 
-|이름|설명|
-|----------|-----------------|
+|||
+|-|-|
 |[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|[copy_file](../standard-library/filesystem-functions.md#copy_file) 과 함께 사용되는 열거형이며 대상 파일이 이미 있는 경우의 동작을 결정합니다.|
 |[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|[copy_file](../standard-library/filesystem-functions.md#copy_file) 과 함께 사용되는 열거형이며 대상 파일이 이미 있는 경우의 동작을 결정합니다.|
 |[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|디렉터리 반복기에 대한 옵션을 지정하는 열거형입니다.|
 |[file_type](../standard-library/filesystem-enumerations.md#file_type)|파일 형식에 대한 열거형입니다.|
+|[perm_options](../standard-library/filesystem-enumerations.md#perm_options)||
 |[perms](../standard-library/filesystem-enumerations.md#perms)|사용 권한 및 사용 권한에 대한 옵션을 전달하는 데 사용되는 비트 마스크 형식입니다.|
 
 ## <a name="see-also"></a>참고자료

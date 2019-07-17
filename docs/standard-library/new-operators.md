@@ -1,41 +1,38 @@
 ---
-title: '&lt;new&gt; 연산자'
+title: '&lt;새&gt; 연산자 및 열거형'
 ms.date: 11/04/2016
 f1_keywords:
 - new/std::operator delete
 - new/std::operator new
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
-ms.openlocfilehash: 87f7b6cfd6a06ab03b27ebe6aa4dd41b0b900673
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a3fd5b825fe1eaf3a07d9d001f03b9d0c64ffa31
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223690"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243676"
 ---
-# <a name="ltnewgt-operators"></a>&lt;new&gt; 연산자
+# <a name="ltnewgt-operators-and-enums"></a>&lt;새&gt; 연산자 및 열거형
 
-||||
-|-|-|-|
-|[operator delete](#op_delete)|[operator delete[]](#op_delete_arr)|[operator new](#op_new)|
-|[operator new[]](#op_new_arr)|
+## <a name="op_align_val_t"></a> 열거형 align_val_t
 
-## <a name="op_delete"></a>  operator delete
+```cpp
+enum class align_val_t : size_t {};
+```
 
-개별 개체에 대해 스토리지를 할당 해제하기 위해 delete 식에서 호출되는 함수입니다.
+## <a name="op_delete"></a> delete 연산자
+
+개별 개체에 대 한 저장소를 할당 해제 하기 위해 delete 식에 의해 호출 되는 함수입니다.
 
 ```cpp
 void operator delete(void* ptr) throw();
-
-void operator delete(void *,
-    void*) throw();
-
-void operator delete(void* ptr,
-    const std::nothrow_t&) throw();
+void operator delete(void *, void*) throw();
+void operator delete(void* ptr, const std::nothrow_t&) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr*<br/>
+*ptr*\
 삭제에 의해 값이 무효 처리되는 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -46,29 +43,25 @@ Null 값에 대 한 기본 동작 *ptr* 아무 작업도 수행 하는 것입니
 
 두 번째 함수는 **new**( **std::size_t**) 형식의 new 식에 해당하는 placement delete 식에 의해 호출되며, 아무 작업도 수행하지 않습니다.
 
-세 번째 함수는 **new**( **std::size_t**, **conststd::nothrow_t&**) 형식의 new 식에 해당하는 placement delete 식에 의해 호출됩니다. 프로그램은 C++ 표준 라이브러리를 통해 정의되는 기본 버전을 바꾸는 함수를 이 함수 시그니처로 정의할 수 있습니다. 필요한 동작은 이전 `operator new`( **size_t**) 호출에 의해 반환되었거나 null인 `ptr`의 값을 허용하는 것입니다. 기본 동작을 평가 하는 것 **삭제할**(`ptr`).
+세 번째 함수는 **new**( **std::size_t**, **conststd::nothrow_t&** ) 형식의 new 식에 해당하는 placement delete 식에 의해 호출됩니다. 프로그램은 C++ 표준 라이브러리를 통해 정의되는 기본 버전을 바꾸는 함수를 이 함수 시그니처로 정의할 수 있습니다. 필요한 동작은 이전 `operator new`( **size_t**) 호출에 의해 반환되었거나 null인 `ptr`의 값을 허용하는 것입니다. 기본 동작을 평가 하는 것 **삭제할**(`ptr`).
 
 ### <a name="example"></a>예제
 
 참조 [new 연산자](../standard-library/new-operators.md#op_new) 사용 하는 예로 **delete 연산자**합니다.
 
-## <a name="op_delete_arr"></a>  operator delete[]
+## <a name="op_delete_arr"></a> operator delete]
 
 개체 배열에 대해 스토리지를 할당 해제하기 위해 delete 식에서 호출되는 함수입니다.
 
 ```cpp
 void operator delete[](void* ptr) throw();
-
-void operator delete[](void *,
-    void*) throw();
-
-void operator delete[](void* ptr,
-    const std::nothrow_t&) throw();
+void operator delete[](void *, void*) throw();
+void operator delete[](void* ptr, const std::nothrow_t&) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr*<br/>
+*ptr*\
 삭제에 의해 값이 무효 처리되는 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -77,32 +70,28 @@ void operator delete[](void* ptr,
 
 배치 하 여 두 번째 함수를 호출 `delete[]` 식에 해당 하는 `new[]` 형식의 식을 `new[]`(**std:: size_t**). 아무 작업도 수행하지 않습니다.
 
-세 번째 함수는 `new[]`( **std::size_t**, **const std::nothrow_t&**) 형식의 `new[]` 식에 해당하는 placement delete 식에 의해 호출됩니다. 프로그램은 C++ 표준 라이브러리를 통해 정의되는 기본 버전을 바꾸는 함수를 이 함수 시그니처로 정의할 수 있습니다. 필요한 동작은 값에 적용할 *ptr* null 또는 연산자에 대 한 이전 호출에서 반환 된 즉 `new[]`(**size_t**). 기본 동작은 `delete[]`( `ptr`)를 평가하는 것입니다.
+세 번째 함수는 `new[]`( **std::size_t**, **const std::nothrow_t&** ) 형식의 `new[]` 식에 해당하는 placement delete 식에 의해 호출됩니다. 프로그램은 C++ 표준 라이브러리를 통해 정의되는 기본 버전을 바꾸는 함수를 이 함수 시그니처로 정의할 수 있습니다. 필요한 동작은 값에 적용할 *ptr* null 또는 연산자에 대 한 이전 호출에서 반환 된 즉 `new[]`(**size_t**). 기본 동작은 `delete[]`( `ptr`)를 평가하는 것입니다.
 
 ### <a name="example"></a>예제
 
 `operator delete[]` 사용 방법의 예제는 [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)를 참조하세요.
 
-## <a name="op_new"></a>  operator new
+## <a name="op_new"></a> new 연산자
 
 개별 개체에 대해 스토리지를 할당하기 위해 new 식에서 호출되는 함수입니다.
 
 ```cpp
 void* operator new(std::size_t count) throw(bad_alloc);
-
-void* operator new(std::size_t count,
-    const std::nothrow_t&) throw();
-
-void* operator new(std::size_t count,
-    void* ptr) throw();
+void* operator new(std::size_t count, const std::nothrow_t&) throw();
+void* operator new(std::size_t count, void* ptr) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*count*<br/>
+*개수*\
 할당할 스토리지의 바이트 수입니다.
 
-*ptr*<br/>
+*ptr*\
 반환할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -137,7 +126,7 @@ void* operator new(std::size_t count,
 
 에 의해 할당 되는 저장소를 비우려면 **new 연산자**를 호출 [delete 연산자](../standard-library/new-operators.md#op_delete)합니다.
 
-new의 throw 또는 비throw 동작에 대한 자세한 내용은 [new 및 delete 연산자](../cpp/new-and-delete-operators.md)를 참조하세요.
+throw 하는 방법은 또는 새 참조의 throw 되지 않는 동작 [새 및 delete 연산자](../cpp/new-and-delete-operators.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -182,26 +171,22 @@ int main( )
 }
 ```
 
-## <a name="op_new_arr"></a>  operator new[]
+## <a name="op_new_arr"></a> new] 연산자
 
 개체 배열에 대해 스토리지를 할당하기 위해 new 식에서 호출되는 할당 함수입니다.
 
 ```cpp
 void* operator new[](std::size_t count) throw(std::bad_alloc);
-
-void* operator new[](std::size_t count,
-    const std::nothrow_t&) throw();
-
-void* operator new[](std::size_t count,
-    void* ptr) throw();
+void* operator new[](std::size_t count, const std::nothrow_t&) throw();
+void* operator new[](std::size_t count, void* ptr) throw();
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*count*<br/>
+*개수*\
 배열 개체에 대해 할당할 스토리지의 바이트 수입니다.
 
-*ptr*<br/>
+*ptr*\
 반환할 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -260,7 +245,3 @@ int main() {
    delete[ ] fPtr3;
 }
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<new>](../standard-library/new.md)<br/>

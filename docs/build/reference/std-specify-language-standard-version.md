@@ -6,12 +6,12 @@ f1_keywords:
 - -std
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: 0f45727c61d55ff57befc7ff23a3d434e86673bc
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 9bdeb92e03b3ae00258ac48a29cec42ef7e18e81
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837523"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241221"
 ---
 # <a name="std-specify-language-standard-version"></a>/std(언어 표준 버전 지정)
 
@@ -21,9 +21,9 @@ ms.locfileid: "65837523"
 
 > /std:\[c++14\|c++17\|c++latest]
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-**/std** 옵션은 Visual Studio 2017 이상에서 사용할 수 있습니다. 이 옵션은 코드 컴파일 중에 사용하도록 설정된 버전 특정 ISO C++ 프로그래밍 언어를 제어하는 데 사용합니다. 이 옵션을 통해 특정 언어 표준 버전을 준수하는 기존 코드를 손상시킬 수 있는 특정 새 언어 및 라이브러리에 대한 기능을 사용하지 않도록 설정할 수 있습니다. 기본적으로 이후의 C++ 언어 표준에서 제공하는 언어 및 표준 라이브러리 기능을 사용하지 않게 설정하는 **/std:c++14**를 지정합니다. C++17 표준 특정 기능 및 동작을 사용하려면 **/std:c++17**을 사용합니다. 다음 초안 표준에 대해 현재 구현된 컴파일러와 제안된 표준 라이브러리 기능을 명시적으로 사용하려면 **/std:c++latest**를 사용합니다. 모든 C++20 기능에는 **/std:latest**가 필요하며 구현이 완료되면 새 **/std:c++20** 옵션을 사용할 것입니다.
+**/std** 옵션은 Visual Studio 2017 이상에서 사용할 수 있습니다. 이 옵션은 코드 컴파일 중에 사용하도록 설정된 버전 특정 ISO C++ 프로그래밍 언어를 제어하는 데 사용합니다. 이 옵션을 통해 특정 언어 표준 버전을 준수하는 기존 코드를 손상시킬 수 있는 특정 새 언어 및 라이브러리에 대한 기능을 사용하지 않도록 설정할 수 있습니다. 기본적으로 이후의 C++ 언어 표준에서 제공하는 언어 및 표준 라이브러리 기능을 사용하지 않게 설정하는 **/std:c++14**를 지정합니다. C++17 표준 특정 기능 및 동작을 사용하려면 **/std:c++17**을 사용합니다. 다음 초안 표준에 대해 현재 구현된 컴파일러와 제안된 표준 라이브러리 기능을 명시적으로 사용하려면 **/std:c++latest**를 사용합니다. 모든 C + + 20 개의 기능이 필요 **/std: c + + 최신**구현을 완료 되 면, 새 **/std: c + + 20** 옵션을 사용 합니다.
 
 기본 **/std:c++14** 옵션은 MSVC 컴파일러에서 구현된 전체 C++14 기능 집합을 사용하도록 설정합니다. 이 옵션은 이후의 언어 표준 버전에서 변경되었거나 새로 도입된 기능에 대한 컴파일러와 표준 라이브러리 지원을 사용하지 않게 설정합니다. 단 이전 MSVC 컴파일러 릴리스에서 이미 구현된 C++17 컴파일러 기능은 예외입니다. Visual Studio 2015 업데이트 2에서 제공되는 기능에 대해 이미 종속성이 있는 사용자에게 중대한 변화가 발생하지 않도록, **/std: c + + 14** 옵션을 지정하면 이 기능을 그대로 사용합니다.
 
@@ -57,11 +57,11 @@ C++ 컴파일 중에 적용되는 **/std** 옵션은 [ \_MSVC\_LANG](../../prepr
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
 
-1. **구성 속성**, **C/C++**, **언어**를 차례로 선택합니다.
+1. **구성 속성**, **C/C++** , **언어**를 차례로 선택합니다.
 
 1. **C++ 언어 표준**의 드롭다운 컨트롤에서 지원할 언어 표준을 선택한 다음, **확인** 또는 **적용**을 선택하여 변경 내용을 저장합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

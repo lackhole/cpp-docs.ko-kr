@@ -30,25 +30,16 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: 6de4b4ad75f9240fb86ff5e363f4a7d9062925d9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 231bad65e2af1ee2ab800890c83cc50e584a8c6a
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365490"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246105"
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; 연산자
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator%](#op_mod)|[operator&amp;](#op_amp)|
-|[operator&amp;&amp;](#op_amp_amp)|[operator&gt;](#op_gt)|[operator&gt;&gt;](#op_gt_gt)|
-|[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|
-|[operator&lt;=](#op_lt_eq)|[operator*](#op_star)|[operator+](#op_add)|
-|[operator-](#operator-)|[operator/](#op_div)|[연산자==](#op_eq_eq)|
-|[operator^](#op_xor)|[operator&#124;](#op_or)|[operator&#124;&#124;](#op_lor)|
-
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 크기가 같은 두 valarray의 해당 요소가 서로 같지 않은지 또는 valarray의 모든 요소가 지정된 값과 같지 않은지 테스트합니다.
 
@@ -74,10 +65,10 @@ operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 해당 요소가 같지 않은지 테스트할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 해당 요소가 같지 않은지 테스트할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -136,15 +127,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the not equal comparison test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
-*/
 ```
 
-## <a name="op_mod"></a>  operator%
+## <a name="op_mod"></a> operator %
 
 크기가 같은 두 valarray의 해당 요소를 나눈 나머지 또는 valarray를 지정된 값으로 나누거나 지정된 값을 valarray로 나눈 나머지를 가져옵니다.
 
@@ -170,10 +162,10 @@ operator%(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 다른 값이나 valarray를 나눌 피제수로 사용되는 값 또는 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 다른 값이나 valarray를 나누는 제수로 사용되는 값 또는 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -220,15 +212,16 @@ int main( )
          cout << vaREM [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 53 -67 53 -67 53 -67 ).
 The initial Right valarray is: ( 1 4 7 10 13 16 ).
 The remainders from the element-by-element division is the
 valarray: ( 0 -3 4 -7 1 -3 ).
-*/
 ```
 
-## <a name="op_amp"></a>  operator&amp;
+## <a name="op_amp"></a> 연산자&amp;
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 요소 형식의 지정된 값 간에 비트 **AND**를 가져옵니다.
 
@@ -254,10 +247,10 @@ operator&(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 개별 요소를 비트 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 개별 요소를 비트 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -310,15 +303,16 @@ int main( )
          cout << vaBWA [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is:  ( 0 2 0 4 0 6 0 8 0 10 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the bitwise operator & is the
 valarray: ( 0 0 0 0 0 4 0 0 0 8 ).
-*/
 ```
 
-## <a name="op_amp_amp"></a>  operator&amp;&amp;
+## <a name="op_amp_amp"></a> 연산자&amp;&amp;
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 valarray 요소 형식의 지정된 값 간에 논리적 **AND**를 가져옵니다.
 
@@ -344,10 +338,10 @@ operator&&(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 개별 요소를 논리적 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 개별 요소를 논리적 `AND`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -398,15 +392,16 @@ int main( )
          cout << vaLAA [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is:  ( 0 0 0 2 0 4 0 6 0 8 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the logical AND operator&& is the
 valarray: ( 0 0 0 1 0 1 0 1 0 1 ).
-*/
 ```
 
-## <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a> 연산자&gt;
 
 한 valarray의 요소가 크기가 같은 valarray의 요소보다 큰지 또는 valarray의 모든 요소가 지정된 값보다 크거나 작은지 테스트합니다.
 
@@ -432,10 +427,10 @@ operator>(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -490,15 +485,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( -1 0 1 2 3 4 5 6 7 8 ).
 The element-by-element result of the greater than comparison test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
-*/
 ```
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a> 연산자&gt;=
 
 한 valarray의 요소가 크기가 같은 valarray의 요소보다 크거나 같은지 또는 valarray의 모든 요소가 지정된 값보다 크거나 같거나 작거나 같은지 테스트합니다.
 
@@ -524,10 +520,10 @@ operator>=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -582,15 +578,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( -1 0 1 2 3 4 5 6 7 8 ).
 The element-by-element result of the greater than or equal test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
-*/
 ```
 
-## <a name="op_gt_gt"></a>  operator&gt;&gt;
+## <a name="op_gt_gt"></a> 연산자&gt;&gt;
 
 valarray의 각 요소에 대한 비트를 지정된 위치 수 또는 두 번째 valarray에 지정된 요소 양만큼 오른쪽으로 이동합니다.
 
@@ -616,10 +613,10 @@ operator>>(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 이동할 값 또는 해당 요소를 이동할 valarray
 
-*right*<br/>
+*오른쪽*\
 오른쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 오른쪽 이동 크기를 나타내는 valarray
 
 ### <a name="return-value"></a>반환 값
@@ -670,15 +667,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 64 -64 64 -64 64 -64 64 -64 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the right shift is the
 valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
-*/
 ```
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> 연산자&lt;
 
 한 valarray의 요소가 크기가 같은 valarray의 요소보다 작은지 또는 valarray의 모든 요소가 지정된 값보다 크거나 작은지 테스트합니다.
 
@@ -704,10 +702,10 @@ operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -762,15 +760,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the less-than comparson test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
-*/
 ```
 
-## <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a> 연산자&lt;=
 
 한 valarray의 요소가 크기가 같은 valarray의 요소보다 작거나 같은지 또는 valarray의 모든 요소가 지정된 값보다 크거나 같거나 작거나 같은지 테스트합니다.
 
@@ -796,10 +795,10 @@ operator<=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 해당 요소를 비교하거나 지정된 값을 valarray의 각 요소와 비교할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -854,15 +853,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( -1 0 1 2 3 4 5 6 7 8 ).
 The element-by-element result of the less than or equal test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
-*/
 ```
 
-## <a name="op_lt_lt"></a>  operator&lt;&lt;
+## <a name="op_lt_lt"></a> 연산자&lt;&lt;
 
 valarray의 각 요소에 대한 비트를 지정된 위치 수 또는 두 번째 valarray에 지정된 요소 양만큼 왼쪽으로 이동합니다.
 
@@ -888,10 +888,10 @@ operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 이동할 값 또는 해당 요소를 이동할 valarray
 
-*right*<br/>
+*오른쪽*\
 왼쪽으로 이동할 크기를 나타내는 값 또는 해당 요소가 요소 전체 왼쪽 이동 크기를 나타내는 valarray
 
 ### <a name="return-value"></a>반환 값
@@ -942,15 +942,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 1 -1 1 -1 1 -1 1 -1 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the left shift is the
 valarray: ( 1 -2 4 -8 16 -32 64 -128 ).
-*/
 ```
 
-## <a name="op_star"></a>  operator*
+## <a name="op_star"></a> 연산자 *
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 지정된 값 간에 요소 전체 곱을 가져옵니다.
 
@@ -976,10 +977,10 @@ operator*(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 해당 요소를 곱하거나 지정된 값을 valarray의 각 요소와 곱할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 해당 요소를 곱하거나 지정된 값을 valarray의 각 요소와 곱할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1026,15 +1027,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 2 -1 2 -1 2 -1 2 -1 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the multiplication is the
 valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
-*/
 ```
 
-## <a name="op_add"></a>  operator+
+## <a name="op_add"></a> operator +
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 지정된 값 간에 요소 전체 합을 가져옵니다.
 
@@ -1060,10 +1062,10 @@ operator+(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 해당 요소를 더하거나 지정된 값을 valarray의 각 요소와 더할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 해당 요소를 더하거나 지정된 값을 valarray의 각 요소와 더할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1110,15 +1112,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 2 -1 2 -1 2 -1 2 -1 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the sum is the
 valarray: ( 2 0 4 2 6 4 8 6 ).
-*/
 ```
 
-## <a name="operator-"></a>  operator-
+## <a name="operator-"></a> 연산자-
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 지정된 값 간에 요소 전체 차를 가져옵니다.
 
@@ -1144,10 +1147,10 @@ operator-(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 차를 구하기 위해 다른 값이나 valarray를 뺄 피감수로 사용되는 값 또는 valarray
 
-*right*<br/>
+*오른쪽*\
 차를 구하기 위해 다른 값이나 valarray에서 뺄 감수로 사용되는 값 또는 valarray
 
 ### <a name="return-value"></a>반환 값
@@ -1200,15 +1203,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 10 0 10 0 10 0 10 0 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the difference is the
 valarray: ( 10 -1 8 -3 6 -5 4 -7 ).
-*/
 ```
 
-## <a name="op_div"></a>  operator/
+## <a name="op_div"></a> 연산자 /
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 지정된 값 간에 요소 전체 몫을 가져옵니다.
 
@@ -1234,10 +1238,10 @@ operator/(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 몫을 구하기 위해 다른 값이나 valarray를 나눌 피제수로 사용되는 값 또는 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 몫을 구하기 위해 다른 값이나 valarray를 나누는 제수로 사용되는 값 또는 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1290,15 +1294,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 100 -100 100 -100 100 -100 ).
 The initial Right valarray is: ( 0 2 4 6 8 10 ).
 The element-by-element result of the quotient is the
 valarray: ( inf -50 25 -16.6667 12.5 -10 ).
-*/
 ```
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> 연산자 = =
 
 크기가 같은 두 valarray의 해당 요소가 서로 같은지 또는 valarray의 모든 요소가 지정된 값과 같은지 테스트합니다.
 
@@ -1324,10 +1329,10 @@ operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 해당 요소가 같은지 테스트할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 해당 요소가 같은지 테스트할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1382,15 +1387,16 @@ int main( )
          cout << vaNE [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the equality comparison test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
-*/
 ```
 
-## <a name="op_xor"></a>  operator^
+## <a name="op_xor"></a> operator ^
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 요소 형식의 지정된 값 간에 비트 배타적 `OR`(**XOR**)을 가져옵니다.
 
@@ -1416,10 +1422,10 @@ operator^(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 개별 요소를 비트 **XOR**로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 개별 요소를 비트 **XOR**로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1476,15 +1482,16 @@ int main( )
          cout << vaLAA [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is:  ( 1 0 1 0 1 0 1 0 1 0 ).
 The initial Right valarray is: ( 0 0 1 3 3 4 6 6 7 9 ).
 The element-by-element result of the bitwise XOR operator^ is the
 valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
-*/
 ```
 
-## <a name="op_or"></a>  operator&#124;
+## <a name="op_or"></a> 연산자&#124;
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 요소 형식의 지정된 값 간에 비트 `OR`을 가져옵니다.
 
@@ -1510,10 +1517,10 @@ operator|(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 개별 요소를 비트 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 개별 요소를 비트 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 비트 결합할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1570,15 +1577,16 @@ int main( )
          cout << vaLAA [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is:  ( 1 0 1 0 1 0 1 0 1 0 ).
 The initial Right valarray is: ( 0 0 1 3 3 4 6 6 7 9 ).
 The element-by-element result of the bitwise OR operator| is the
 valarray: ( 1 0 1 3 3 4 7 6 7 9 ).
-*/
 ```
 
-## <a name="op_lor"></a>  operator&#124;&#124;
+## <a name="op_lor"></a> 연산자&#124;&#124;
 
 크기가 같은 두 valarray의 해당 요소 간이나 valarray와 valarray 요소 형식의 지정된 값 간에 논리적 `OR`을 가져옵니다.
 
@@ -1604,10 +1612,10 @@ operator||(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 개별 요소를 논리적 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 첫 번째 valarray입니다.
 
-*right*<br/>
+*오른쪽*\
 개별 요소를 논리적 `OR`로 결합하거나 요소 형식의 지정된 값을 valarray의 각 요소와 결합할 두 valarray 중 두 번째 valarray입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1662,14 +1670,11 @@ int main( )
          cout << vaLOR [ i ] << " ";
    cout << ")." << endl;
 }
-/* Output:
+```
+
+```Output
 The initial Left valarray is:  ( 0 0 0 2 0 4 0 6 0 8 ).
 The initial Right valarray is: ( 0 0 0 3 0 0 6 0 0 9 ).
 The element-by-element result of the logical OR operator|| is the
 valarray: ( 0 0 0 1 0 1 1 1 0 1 ).
-*/
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<valarray>](../standard-library/valarray.md)<br/>

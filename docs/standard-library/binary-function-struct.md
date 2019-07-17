@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - binary_function class
 ms.assetid: 79b6d53d-644c-4add-b0ba-3a5f40f69c60
-ms.openlocfilehash: 2a6735ab558480039a0d2fa0e83ee4c5de02c5f2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: acbcb7496b7e6b37af61c5eb7a113c77855e6928
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62414095"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243394"
 ---
 # <a name="binaryfunction-struct"></a>binary_function 구조체
 
@@ -24,14 +24,14 @@ struct binary_function {
    typedef Arg1 first_argument_type;
    typedef Arg2 second_argument_type;
    typedef Result result_type;
-   };
+};
 ```
 
 ## <a name="remarks"></a>설명
 
 템플릿 구조체는 다음 형식의 멤버 함수를 정의하는 클래스의 기준으로 사용됩니다.
 
-> *result_type* ** operator()( const** <em>first_argument_type</em>**&, const** <em>second_argument_type</em>**& ) const**
+> *result_type* * * operator () (const * * <em>first_argument_type</em> **&, const** <em>second_argument_type</em> **&) const**
 
 이러한 모든 이항 함수는 첫 번째 인수 형식을 *first_argument_type*, 두 번째 인수 형식을 *second_argument_type*, 반환 형식을 *result_type*으로 참조할 수 있습니다.
 
@@ -88,20 +88,10 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-/* Output:
+```
+
+```Output
 The vector v1 = ( 11 5.5 3.66667 2.75 2.2 1.83333 )
 The vector v2 = ( -0 -2 -4 -6 -8 -10 )
 The element-wise averages are: ( 5.5 1.75 -0.166667 -1.625 -2.9 -4.08333 )
-*/
 ```
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<functional>
-
-**네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>

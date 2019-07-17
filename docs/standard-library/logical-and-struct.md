@@ -7,12 +7,12 @@ helpviewer_keywords:
 - logical_and class
 - logical_and struct
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610
-ms.openlocfilehash: 0a8d8c0fba8b1ad621e80fb96336eefe2aec5dd8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86b780c71a0b0265cbd0c8829fb5aea70f0fa42e
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413114"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243282"
 ---
 # <a name="logicaland-struct"></a>logical_and 구조체
 
@@ -39,12 +39,13 @@ struct logical_and<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*, *T*합니다 *U* 지 원하는 모든 형식은 `operator&&` 지정 되었거나 유추 된 형식의 피연산자를 사용 하는 합니다.
+*형식*하십시오 *T*, *U*\
+지정되었거나 유추된 형식의 피연산자를 가져오는 `operator&&`를 지원하는 모든 형식입니다.
 
-*왼쪽*<br/>
+*왼쪽*\
 논리곱 연산의 왼쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 논리곱 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -116,24 +117,13 @@ int main( )
       cout << *iter3 << " ";
    cout << ")" << endl;
 }
+```
 
-/* Output:
+```Output
 Original deque:
 d1 = ( true true true true true false false )
 Original deque:
 d2 = ( true false true true false true false )
 The deque which is the conjuction of d1 & d2 is:
 d3 = ( true false true true false false false )
-*/
 ```
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<functional>
-
-**네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>

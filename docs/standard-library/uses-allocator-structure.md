@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - future/std::uses_allocator
 ms.assetid: c418f002-62e9-4806-b70c-41c663cae583
-ms.openlocfilehash: 9046f27397ba04c601dd8af361d47cc0ea94926d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2cee318832caf70e781fa9e3490a752b097a5fbb
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362493"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245681"
 ---
 # <a name="usesallocator-structure"></a>uses_allocator 구조체
 
@@ -29,6 +29,15 @@ struct uses_allocator<packaged_task<Ty>, Alloc> : true_type;
 **헤더:** \<향후 >
 
 **네임스페이스:** std
+
+## <a name="specializations"></a>특수화
+
+### <a name="tuple"></a> \<튜플 >
+
+```cpp
+template <class... Types, class Alloc>
+struct uses_allocator<tuple<Types...>, Alloc>;
+```
 
 ## <a name="see-also"></a>참고자료
 
