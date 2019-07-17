@@ -1,6 +1,6 @@
 ---
 title: CWinApp 클래스
-ms.date: 11/04/2016
+ms.date: 07/15/2019
 f1_keywords:
 - CWinApp
 - AFXWIN/CWinApp
@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: 6366638ebfd5e78ad517a8913e4276d5cd820670
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a4ec6c976b6611563eb95cce1173d7c77c3b5ef0
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323361"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894491"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -1033,10 +1033,10 @@ virtual void HtmlHelp(
 ### <a name="parameters"></a>매개 변수
 
 *dwData*<br/>
-추가 데이터를 지정합니다. 값에 따라 사용 되는 값을 *nCmd* 매개 변수입니다.
+추가 데이터를 지정합니다. 값에 따라 사용 되는 값을 *nCmd* 매개 변수입니다. 기본값으로 `0x000F` 의미 [HH_HELP_CONTEXT](/previous-versions/windows/desktop/htmlhelp/hh-help-context-command)합니다.
 
 *nCmd*<br/>
-요청한 도움말의 형식을 지정합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 *uCommand* 에 대 한 the HTMLHelp API 함수에서 Windows SDK에 설명 된 매개 변수.
+요청한 도움말의 형식을 지정합니다. 가능한 값 목록과 미치는 영향에 대 한 합니다 *dwData* 매개 변수를 참조 합니다 *uCommand* 에 설명 된 매개 변수는 [HtmlHelpW](/windows/desktop/api/htmlhelp/nf-htmlhelp-htmlhelpw) 또는 [HtmlHelpA](/windows/desktop/api/htmlhelp/nf-htmlhelp-htmlhelpa) Windows SDK의 API 함수입니다.  
 
 ### <a name="remarks"></a>설명
 
@@ -2074,7 +2074,7 @@ BOOL RunAutomated();
 
 ##  <a name="runembedded"></a>  CWinApp::RunEmbedded
 
-확인 하려면이 함수를 호출 하는지 여부를 " **포함/**"또는" **-포함**" 옵션이 있는 서버 응용 프로그램이 클라이언트 응용 프로그램에서 시작 하는지 여부를 나타냅니다.
+확인 하려면이 함수를 호출 하는지 여부를 " **포함/** "또는" **-포함**" 옵션이 있는 서버 응용 프로그램이 클라이언트 응용 프로그램에서 시작 하는지 여부를 나타냅니다.
 
 ```
 BOOL RunEmbedded();

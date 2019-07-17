@@ -1,6 +1,6 @@
 ---
 title: CMFCMenuButton 클래스
-ms.date: 11/04/2016
+ms.date: 07/15/2019
 f1_keywords:
 - CMFCMenuButton
 - AFXMENUBUTTON/CMFCMenuButton
@@ -12,6 +12,7 @@ f1_keywords:
 - AFXMENUBUTTON/CMFCMenuButton::m_bStayPressed
 - AFXMENUBUTTON/CMFCMenuButton::m_hMenu
 - AFXMENUBUTTON/CMFCMenuButton::m_nMenuResult
+- AFXMENUBUTTON/CMFCMenuButton::m_bDefaultClick
 helpviewer_keywords:
 - CMFCMenuButton [MFC], CMFCMenuButton
 - CMFCMenuButton [MFC], PreTranslateMessage
@@ -21,13 +22,14 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_bStayPressed
 - CMFCMenuButton [MFC], m_hMenu
 - CMFCMenuButton [MFC], m_nMenuResult
+- CMFCMenuButton [MFC], m_bDefaultClick
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-ms.openlocfilehash: cbdf4005ee1a0249e7ed2b5f1d50621fb951f64f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 71d239c9d1084c69ab2e159a479e66f0cbe66d7a
+ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388425"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67894430"
 ---
 # <a name="cmfcmenubutton-class"></a>CMFCMenuButton 클래스
 
@@ -43,26 +45,27 @@ class CMFCMenuButton : public CMFCButton
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCMenuButton::CMFCMenuButton](#cmfcmenubutton)|`CMFCMenuButton` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCMenuButton::PreTranslateMessage](#pretranslatemessage)|디스패치 되기 전에 창 메시지를 변환 하기 위해 프레임 워크에서 호출 됩니다. ( `CMFCButton::PreTranslateMessage`을 재정의합니다.)|
 |[CMFCMenuButton::SizeToContent](#sizetocontent)|텍스트 및 이미지 크기에 따라 단추 크기를 변경합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCMenuButton::m_bOSMenu](#m_bosmenu)|기본 시스템 팝업 메뉴에 표시 되거나 사용 여부를 지정 [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu)합니다.|
 |[CMFCMenuButton::m_bRightArrow](#m_brightarrow)|팝업 메뉴 아래쪽 또는 오른쪽 단추에 나타날지 여부를 지정 합니다.|
 |[CMFCMenuButton::m_bStayPressed](#m_bstaypressed)|단추를 놓으면 후 메뉴 단추 상태가 변경 되는지 여부를 지정 합니다.|
 |[CMFCMenuButton::m_hMenu](#m_hmenu)|연결 된 Windows 메뉴에 대 한 핸들입니다.|
 |[CMFCMenuButton::m_nMenuResult](#m_nmenuresult)|어떤 항목을 나타내는 식별자 사용자가 팝업 메뉴에서 선택 합니다.|
+|[CMFCMenuButton::m_bDefaultClick](#m_bdefaultclick)| (단추 텍스트/이미지)에 대 한 기본 처리를 허용 합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -164,6 +167,28 @@ int m_nMenuResult;
 ### <a name="remarks"></a>설명
 
 사용자 메뉴를 선택 하지 않고 취소 하는 경우 나 오류가 발생 한 경우이 멤버 변수의 값이 0으로 지정 합니다.
+
+##  <a name="m_bdefaultclick"></a>  CMFCMenuButton::m_bDefaultClick
+
+단추 텍스트 또는 이미지의 기본 처리를 허용합니다.
+
+```
+BOOL  m_bDefaultClick;
+```
+
+### <a name="remarks"></a>설명
+
+False로 설정 m_bDefaultClick 하면 메뉴 단추에서 아무 곳 이나 클릭 하면 표시할 단추가 됩니다.
+
+##  <a name="m_nmenuresult"></a>  CMFCMenuButton::m_nMenuResult
+
+어떤 항목을 나타내는 정수를 팝업 메뉴에서 선택 합니다.
+
+```
+int m_nMenuResult;
+```
+
+### <a name="remarks"></a>설명
 
 ##  <a name="pretranslatemessage"></a>  CMFCMenuButton::PreTranslateMessage
 

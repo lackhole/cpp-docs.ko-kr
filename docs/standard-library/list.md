@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - list header
 ms.assetid: 2345823b-5612-44d8-95d3-aa96ed076d17
-ms.openlocfilehash: cfe6e8b4f75a3dbf824574654bfba83dcbbd8ba6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2c04bb73bfa379ea87ba4c950bf805931c16ba1
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413205"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245559"
 ---
 # <a name="ltlistgt"></a>&lt;list&gt;
 
@@ -24,9 +24,14 @@ ms.locfileid: "62413205"
 #include <list>
 ```
 
+> [!NOTE]
+> 합니다 \<목록 > 라이브러리 사용을 `#include <initializer_list>` 문입니다.
+
+## <a name="members"></a>멤버
+
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
 |[operator!=](../standard-library/list-operators.md#op_neq)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체와 같지 않은지 테스트합니다.|
 |[operator<](../standard-library/list-operators.md#op_lt)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체보다 작은지 테스트합니다.|
@@ -35,9 +40,15 @@ ms.locfileid: "62413205"
 |[operator>](../standard-library/list-operators.md#op_gt)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체보다 큰지 테스트합니다.|
 |[operator>=](../standard-library/list-operators.md#op_gt_eq)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체보다 크거나 같은지 테스트합니다.|
 
+### <a name="functions"></a>함수
+
+|||
+|-|-|
+|[swap](../standard-library/list-functions.md#swap)|두 목록의 요소를 교환합니다.|
+
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|||
 |-|-|
 |[list 클래스](../standard-library/list-class.md)|선형 배열에서 해당 요소를 유지 관리하고 시퀀스 내 모든 위치에서 효율적인 삽입과 삭제를 수행할 수 있도록 하는 시퀀스 컨테이너의 템플릿 클래스입니다.|
 

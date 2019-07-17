@@ -134,12 +134,12 @@ helpviewer_keywords:
 - std::unordered_set::size
 - std::unordered_set::swap
 ms.assetid: ac08084e-05a7-48c0-9ae4-d40c529922dd
-ms.openlocfilehash: 01c8b79f596c2fda8cef0a74a7b5dcdc70786dbf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 739e39dcb5dd79cfaae8875c5166eb7015134430
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362740"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243449"
 ---
 # <a name="unorderedset-class"></a>unordered_set 클래스
 
@@ -158,16 +158,23 @@ class unordered_set;
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|-|-|
-|*키*|키 형식입니다.|
-|*해시*|해시 함수 개체 형식입니다.|
-|*pred*|같음 비교 함수 개체 형식입니다.|
-|*Alloc*|할당자 클래스입니다.|
+*키*\
+키 형식입니다.
+
+*해시*\
+해시 함수 개체 형식입니다.
+
+*pred*\
+같음 비교 함수 개체 형식입니다.
+
+*할당*\
+할당자 클래스입니다.
 
 ## <a name="members"></a>멤버
 
-|형식 정의|설명|
+### <a name="typedefs"></a>형식 정의
+
+|||
 |-|-|
 |[allocator_type](#allocator_type)|스토리지 관리를 위한 할당자의 형식입니다.|
 |[const_iterator](#const_iterator)|제어되는 시퀀스에 대한 상수 반복기의 형식입니다.|
@@ -185,7 +192,9 @@ class unordered_set;
 |[size_type](#size_type)|두 요소 사이의 부호가 없는 거리의 형식입니다.|
 |[value_type](#value_type)|요소의 형식입니다.|
 
-|멤버 함수|설명|
+### <a name="functions"></a>함수
+
+|||
 |-|-|
 |[begin](#begin)|제어되는 시퀀스의 시작을 지정합니다.|
 |[bucket](#bucket)|키 값에 대한 버킷 개수를 가져옵니다.|
@@ -215,7 +224,9 @@ class unordered_set;
 |[swap](#swap)|두 컨테이너의 내용을 바꿉니다.|
 |[unordered_set](#unordered_set)|컨테이너 개체를 만듭니다.|
 
-|연산자|설명|
+### <a name="operators"></a>연산자
+
+|||
 |-|-|
 |[unordered_set::operator=](#op_eq)|해시 테이블을 복사합니다.|
 
@@ -228,12 +239,6 @@ class unordered_set;
 제어된 시퀀스의 실제 요소 순서는 해시 함수, 비교 함수, 삽입 순서, 최대 로드 비율, 현재 버킷 수에 따라 달라집니다. 제어된 시퀀스의 요소 순서는 일반적으로 예측할 수 없습니다. 하지만 동일하게 정렬된 요소의 하위 집합은 제어된 시퀀스에서 항상 인접해 있습니다.
 
 개체는 [unordered_set::allocator_type](#allocator_type) 형식의 저장된 할당자 개체를 통해 제어하는 시퀀스에 대한 스토리지를 할당하고 해제합니다. 그러한 할당자 개체는 템플릿 클래스 `allocator`의 개체와 같은 외부 인터페이스가 있어야 합니다. 컨테이너 개체를 할당하는 경우 저장된 할당자 개체는 복사되지 않습니다.
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<unordered_set>
-
-**네임스페이스:** std
 
 ## <a name="allocator_type"></a>  unordered_set::allocator_type
 
@@ -273,7 +278,7 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="begin"></a>  unordered_set::begin
+## <a name="begin"></a> 시작
 
 제어되는 시퀀스 또는 버킷의 시작을 지정합니다.
 
@@ -289,9 +294,8 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|-|-|
-|*nbucket*|버킷 번호입니다.|
+*nbucket*\
+버킷 번호입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -353,7 +357,7 @@ int main()
 [a]
 ```
 
-## <a name="bucket"></a>  unordered_set::bucket
+## <a name="bucket"></a> 버킷
 
 키 값에 대한 버킷 개수를 가져옵니다.
 
@@ -363,7 +367,7 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 매핑할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -408,7 +412,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-## <a name="bucket_count"></a>  unordered_set::bucket_count
+## <a name="bucket_count"></a> bucket_count
 
 버킷 개수를 가져옵니다.
 
@@ -493,7 +497,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="bucket_size"></a>  unordered_set::bucket_size
+## <a name="bucket_size"></a> bucket_size
 
 버킷의 크기를 가져옵니다.
 
@@ -503,7 +507,7 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nbucket*<br/>
+*nbucket*\
 버킷 번호입니다.
 
 ### <a name="remarks"></a>설명
@@ -548,7 +552,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-## <a name="cbegin"></a>  unordered_set::cbegin
+## <a name="cbegin"></a> cbegin
 
 반환 된 **const** 반복기 범위에서 첫 번째 요소를 주소입니다.
 
@@ -574,7 +578,7 @@ auto i2 = Container.cbegin();
 // i2 isContainer<T>::const_iterator
 ```
 
-## <a name="cend"></a>  unordered_set::cend
+## <a name="cend"></a> cend
 
 반환 된 **const** 반복기 범위에서 마지막 요소 바로 다음 위치를 주소입니다.
 
@@ -602,7 +606,7 @@ auto i2 = Container.cend();
 
 `cend`에서 반환한 값은 역참조되지 않아야 합니다.
 
-## <a name="clear"></a>  unordered_set::clear
+## <a name="clear"></a> 지우기
 
 모든 요소를 제거합니다.
 
@@ -666,7 +670,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="const_iterator"></a>  unordered_set::const_iterator
+## <a name="const_iterator"></a> const_iterator
 
 제어되는 시퀀스에 대한 상수 반복기의 형식입니다.
 
@@ -708,7 +712,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="const_local_iterator"></a>  unordered_set::const_local_iterator
+## <a name="const_local_iterator"></a> const_local_iterator
 
 제어되는 시퀀스에 대한 상수 버킷 반복기의 형식입니다.
 
@@ -755,7 +759,7 @@ int main()
 [a]
 ```
 
-## <a name="const_pointer"></a>  unordered_set::const_pointer
+## <a name="const_pointer"></a> const_pointer
 
 요소에 대한 상수 포인터의 형식입니다.
 
@@ -800,7 +804,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="const_reference"></a>  unordered_set::const_reference
+## <a name="const_reference"></a> const_reference
 
 요소에 대한 상수 참조의 형식입니다.
 
@@ -845,7 +849,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="count"></a>  unordered_set::count
+## <a name="count"></a> 개수
 
 지정한 키와 일치하는 요소의 수를 찾습니다.
 
@@ -855,7 +859,7 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -899,7 +903,7 @@ count('b') == 1
 count('C') == 0
 ```
 
-## <a name="difference_type"></a>  unordered_set::difference_type
+## <a name="difference_type"></a> difference_type
 
 두 요소 사이의 부호가 있는 거리의 형식입니다.
 
@@ -955,7 +959,7 @@ end()-begin() == 3
 begin()-end() == -3
 ```
 
-## <a name="emplace"></a>  unordered_set::emplace
+## <a name="emplace"></a> emplace
 
 생성된 요소를 제 위치에 삽입합니다. 복사 또는 이동 작업은 수행되지 않습니다.
 
@@ -968,9 +972,8 @@ Args&&... args);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|-|-|
-|*args*|값이 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 unordered_set에 삽입되는 요소를 생성하기 위해 전달되는 인수입니다.|
+*인수*\
+값이 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 unordered_set에 삽입되는 요소를 생성하기 위해 전달되는 인수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -986,7 +989,7 @@ A `pair` 해당 **bool** 삽입이 수행 된 경우 true, 그렇지 않으면 f
 
 코드 예제를 보려면 [set::emplace](../standard-library/set-class.md#emplace)를 참조하세요.
 
-## <a name="emplace_hint"></a>  unordered_set::emplace_hint
+## <a name="emplace_hint"></a> emplace_hint
 
 배치 힌트를 사용하여 생성된 요소를 삽입합니다. 복사 또는 이동 작업은 수행되지 않습니다.
 
@@ -999,10 +1002,11 @@ Args&&... args);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|-|-|
-|*args*|unordered_set가 해당 요소를 이미 포함하고 있지 않거나, 보다 일반적으로는 키가 동등하게 정렬된 요소를 이미 포함하고 있지 않을 경우 unordered_set에 삽입되는 요소를 생성하기 위해 전달되는 인수입니다.|
-|*where*|올바른 삽입 지점 검색을 시작할 위치와 관련된 힌트입니다.|
+*인수*\
+unordered_set가 해당 요소를 이미 포함하고 있지 않거나, 보다 일반적으로는 키가 동등하게 정렬된 요소를 이미 포함하고 있지 않을 경우 unordered_set에 삽입되는 요소를 생성하기 위해 전달되는 인수입니다.
+
+*위치*\
+올바른 삽입 지점 검색을 시작할 위치와 관련된 힌트입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1018,7 +1022,7 @@ Args&&... args);
 
 코드 예제를 보려면 [set::emplace_hint](../standard-library/set-class.md#emplace_hint)를 참조하세요.
 
-## <a name="empty"></a>  unordered_set::empty
+## <a name="empty"></a> empty
 
 요소가 있는지 여부를 테스트합니다.
 
@@ -1082,7 +1086,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="end"></a>  unordered_set::end
+## <a name="end"></a> 끝
 
 제어되는 시퀀스의 끝을 지정합니다.
 
@@ -1098,9 +1102,8 @@ const_local_iterator end(size_type nbucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|-|-|
-|*nbucket*|버킷 번호입니다.|
+*nbucket*\
+버킷 번호입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1151,7 +1154,7 @@ int main()
 [a]
 ```
 
-## <a name="equal_range"></a>  unordered_set::equal_range
+## <a name="equal_range"></a> equal_range
 
 지정된 키와 일치하는 범위를 찾습니다.
 
@@ -1165,7 +1168,7 @@ equal_range(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1219,7 +1222,7 @@ equal_range('x'):
 equal_range('b'): [b]
 ```
 
-## <a name="erase"></a>  unordered_set::erase
+## <a name="erase"></a> 지우기
 
 지정된 위치에서 unordered_set의 요소 또는 요소의 범위를 제거하거나 지정된 키와 일치하는 요소를 제거합니다.
 
@@ -1233,16 +1236,16 @@ size_type erase(const key_type& Key);
 
 ### <a name="parameters"></a>매개 변수
 
-*Where*<br/>
+*위치*\
 제거할 요소의 위치입니다.
 
-*첫째*<br/>
+*첫 번째*\
 제거할 첫 번째 요소의 위치입니다.
 
-*마지막*<br/>
+*마지막*\
 제거할 마지막 요소 바로 다음 위치입니다.
 
-*키*<br/>
+*키*\
 제거할 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1255,7 +1258,7 @@ size_type erase(const key_type& Key);
 
 코드 예제를 보려면 [set::erase](../standard-library/set-class.md#erase)를 참조하세요.
 
-## <a name="find"></a>  unordered_set::find
+## <a name="find"></a> 찾기
 
 지정된 키와 일치하는 요소를 찾습니다.
 
@@ -1265,7 +1268,7 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1314,7 +1317,7 @@ find('A') == false
 find('b') == true: [b]
 ```
 
-## <a name="get_allocator"></a>  unordered_set::get_allocator
+## <a name="get_allocator"></a> get_allocator
 
 저장된 할당자 개체를 가져옵니다.
 
@@ -1352,7 +1355,7 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="hash"></a>  unordered_set::hash_function
+## <a name="hash"></a> hash_function
 
 저장된 해시 함수 개체를 가져옵니다.
 
@@ -1390,7 +1393,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="hasher"></a>  unordered_set::hasher
+## <a name="hasher"></a> hasher
 
 해시 함수의 형식입니다.
 
@@ -1428,7 +1431,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="insert"></a>  unordered_set::insert
+## <a name="insert"></a> 삽입
 
 unordered_set에 요소 또는 요소의 범위를 삽입합니다.
 
@@ -1457,15 +1460,26 @@ void insert(initializer_list<value_type> IList);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|-|-|
-|*Val*|키가 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 unordered_set에 삽입되는 요소의 값입니다.|
-|*Where*|올바른 삽입 지점 검색을 시작할 위치입니다.|
-|*ValTy*|Unordered_set의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하는 템플릿 매개 변수[value_type](../standard-library/map-class.md#value_type), 및 완벽 하 게 전달 *Val* 인수로 합니다.|
-|*첫째*|복사할 첫 번째 요소의 위치입니다.|
-|*마지막*|복사할 마지막 요소 바로 다음 위치입니다.|
-|*InputIterator*|[value_type](../standard-library/map-class.md#value_type) 개체를 생성하는 데 사용할 수 있는 형식의 인수를 가리키는 [입력 반복기](../standard-library/input-iterator-tag-struct.md)의 요구 사항을 충족하는 템플릿 함수 인수입니다.|
-|*IList*|요소를 복사할 원본 [initializer_list](../standard-library/initializer-list.md)입니다.|
+*val*\
+키가 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 unordered_set에 삽입되는 요소의 값입니다.
+
+*위치*\
+올바른 삽입 지점 검색을 시작할 위치입니다.
+
+*ValTy*\
+Unordered_set의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하는 템플릿 매개 변수[value_type](../standard-library/map-class.md#value_type), 및 완벽 하 게 전달 *Val* 인수로 합니다.
+
+*첫 번째*\
+복사할 첫 번째 요소의 위치입니다.
+
+*마지막*\
+복사할 마지막 요소 바로 다음 위치입니다.
+
+*InputIterator*\
+[value_type](../standard-library/map-class.md#value_type) 개체를 생성하는 데 사용할 수 있는 형식의 인수를 가리키는 [입력 반복기](../standard-library/input-iterator-tag-struct.md)의 요구 사항을 충족하는 템플릿 함수 인수입니다.
+
+*IList*\
+요소를 복사할 원본 [initializer_list](../standard-library/initializer-list.md)입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1491,7 +1505,7 @@ void insert(initializer_list<value_type> IList);
 
 코드 예제를 보려면 [set::insert](../standard-library/set-class.md#insert)를 참조하세요.
 
-## <a name="iterator"></a>  unordered_set::iterator
+## <a name="iterator"></a> 반복기
 
 unordered_set의 요소를 읽을 수 있는 상수 [정방향 반복기](../standard-library/forward-iterator-tag-struct.md)를 제공하는 형식입니다.
 
@@ -1503,7 +1517,7 @@ typedef implementation-defined iterator;
 
 **반복기**를 선언하고 사용하는 방법에 대한 예제는 [begin](../standard-library/set-class.md#begin)의 예제를 참조하세요.
 
-## <a name="key_eq"></a>  unordered_set::key_eq
+## <a name="key_eq"></a> key_eq
 
 저장된 비교 함수 개체를 가져옵니다.
 
@@ -1543,7 +1557,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_equal"></a>  unordered_set::key_equal
+## <a name="key_equal"></a> key_equal
 
 비교 함수의 형식입니다.
 
@@ -1583,7 +1597,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_type"></a>  unordered_set::key_type
+## <a name="key_type"></a> key_type
 
 정렬 키의 형식입니다.
 
@@ -1635,7 +1649,7 @@ int main()
 [d] [c] [b] [a]
 ```
 
-## <a name="load_factor"></a>  unordered_set::load_factor
+## <a name="load_factor"></a> load_factor
 
 버킷당 평균 요소 수를 계산합니다.
 
@@ -1720,7 +1734,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="local_iterator"></a>  unordered_set::local_iterator
+## <a name="local_iterator"></a> local_iterator
 
 버킷 반복기의 형식입니다.
 
@@ -1767,7 +1781,7 @@ int main()
 [a]
 ```
 
-## <a name="max_bucket_count"></a>  unordered_set::max_bucket_count
+## <a name="max_bucket_count"></a> max_bucket_count
 
 최대 버킷 개수를 가져옵니다.
 
@@ -1852,7 +1866,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_load_factor"></a>  unordered_set::max_load_factor
+## <a name="max_load_factor"></a> max_load_factor
 
 버킷당 최대 요소 수를 가져오거나 설정합니다.
 
@@ -1864,7 +1878,7 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>매개 변수
 
-*factor*<br/>
+*비율*\
 새로운 최대 로드 비율입니다.
 
 ### <a name="remarks"></a>설명
@@ -1944,7 +1958,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_size"></a>  unordered_set::max_size
+## <a name="max_size"></a> max_size
 
 제어되는 시퀀스의 최대 크기를 가져옵니다.
 
@@ -1979,7 +1993,7 @@ int main()
 max_size() == 4294967295
 ```
 
-## <a name="op_eq"></a>  unordered_set::operator=
+## <a name="op_eq"></a> 연산자 =
 
 해시 테이블을 복사합니다.
 
@@ -1991,9 +2005,8 @@ unordered_set& operator=(unordered_set&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|-|-|
-|*right*|합니다[unordered_set](../standard-library/unordered-set-class.md) 에 복사 되는 `unordered_set`합니다.|
+*오른쪽*\
+합니다[unordered_set](../standard-library/unordered-set-class.md) 에 복사 되는 `unordered_set`합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2036,7 +2049,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a>  unordered_set::pointer
+## <a name="pointer"></a> 포인터
 
 요소에 대한 포인터의 형식입니다.
 
@@ -2082,7 +2095,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="reference"></a>  unordered_set::reference
+## <a name="reference"></a> 참조
 
 요소에 대한 참조의 형식입니다.
 
@@ -2128,7 +2141,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="rehash"></a>  unordered_set::rehash
+## <a name="rehash"></a> rehash
 
 해시 테이블을 다시 빌드합니다.
 
@@ -2138,7 +2151,7 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>매개 변수
 
-*nbuckets*<br/>
+*nbuckets*\
 요청된 버킷 수입니다.
 
 ### <a name="remarks"></a>설명
@@ -2205,7 +2218,7 @@ load_factor() == 0.0234375
 max_load_factor() == 0.1
 ```
 
-## <a name="size"></a>  unordered_set::size
+## <a name="size"></a> 크기
 
 요소 수를 계산합니다.
 
@@ -2270,7 +2283,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="size_type"></a>  unordered_set::size_type
+## <a name="size_type"></a> size_type
 
 두 요소 사이의 부호가 없는 거리의 형식입니다.
 
@@ -2306,7 +2319,7 @@ int main()
 size == 0
 ```
 
-## <a name="swap"></a>  unordered_set::swap
+## <a name="swap"></a> 교환
 
 두 컨테이너의 내용을 바꿉니다.
 
@@ -2316,7 +2329,7 @@ void swap(unordered_set& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 교환할 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
@@ -2375,7 +2388,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="unordered_set"></a>  unordered_set::unordered_set
+## <a name="unordered_set"></a> unordered_set
 
 컨테이너 개체를 만듭니다.
 
@@ -2424,15 +2437,26 @@ unordered_set(
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|-|-|
-|*InputIterator*|반복기 형식입니다.|
-|*Al*|저장할 할당자 개체입니다.|
-|*구성 요소*|저장할 비교 함수 개체입니다.|
-|*해시*|저장할 해시 함수 개체입니다.|
-|*bucket_count*|최소 버킷 수입니다.|
-|*오른쪽*|복사할 컨테이너입니다.|
-|*IList*|복사할 요소를 포함하는 initializer_list입니다.|
+*InputIterator*\
+반복기 형식입니다.
+
+*Al*\
+저장할 할당자 개체입니다.
+
+*구성 요소*\
+저장할 비교 함수 개체입니다.
+
+*해시*\
+저장할 해시 함수 개체입니다.
+
+*bucket_count*\
+최소 버킷 수입니다.
+
+*오른쪽*\
+복사할 컨테이너입니다.
+
+*IList*\
+복사할 요소를 포함하는 initializer_list입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2448,7 +2472,7 @@ unordered_set(
 
 할당자 개체는 인수 *Al*에 있는, 그렇지 않으면 `Alloc()`합니다.
 
-## <a name="value_type"></a>  unordered_set::value_type
+## <a name="value_type"></a> value_type
 
 요소의 형식입니다.
 
@@ -2499,10 +2523,3 @@ int main()
 [c] [b] [a]
 [d] [c] [b] [a]
 ```
-
-## <a name="see-also"></a>참고자료
-
-[<unordered_set>](../standard-library/unordered-set.md)<br/>
-[컨테이너](../cpp/containers-modern-cpp.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>

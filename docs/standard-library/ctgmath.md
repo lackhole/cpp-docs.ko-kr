@@ -2,26 +2,26 @@
 title: '&lt;ctgmath&gt;'
 ms.date: 11/04/2016
 ms.assetid: ff521893-f445-4dc8-a2f6-699185bb7024
-ms.openlocfilehash: 64d72bb643e792fe39978d5c2e92e1bcf23cfc4f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85099f3cb206dd791aade59bf9a531a714e68ac3
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394203"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246601"
 ---
 # <a name="ltctgmathgt"></a>&lt;ctgmath&gt;
 
-실제로 \<tgmath.h>와 동일한 형식-제네릭 수학 매크로를 제공하는 C++ 표준 라이브러리 헤더 \<ccomplex> 및 \<cmath>를 포함합니다.
+포함 된 C++ 표준 라이브러리 헤더 \<복잡 한 > 및 \<cmath >와 동일한 형식-제네릭 수학 매크로 제공 하는 \<tgmath.h >.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <ctgmath>
-```
+**헤더:** \<ctgmath >
+
+**네임스페이스:** std
 
 ## <a name="remarks"></a>설명
 
-표준 C 라이브러리 헤더 \<tgmath.h>의 기능은 \<ccomplex> 및 \<cmath>의 오버로드로 제공됩니다.
+표준 C 라이브러리 헤더의 기능 \<tgmath.h >의 오버 로드로 제공 됩니다 \<복잡 한 > 및 \<cmath >.
 
 이 헤더를 포함하는 경우 표준 C 라이브러리 헤더의 외부 링크를 사용하여 선언한 이름이 `std` 네임스페이스에도 선언됩니다.
 

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - <condition_variable>
 ms.assetid: 8567f7cc-20bd-42a7-9137-87c46f878009
-ms.openlocfilehash: 3ce9125a13f0dd2f2e4f98a217c4373f2be2f8a8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed98966f651df76078fa47b05f5a2d8ae1b71d05
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212068"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244573"
 ---
 # <a name="ltconditionvariablegt"></a>&lt;condition_variable&gt;
 
@@ -17,11 +17,11 @@ ms.locfileid: "62212068"
 
 이 헤더는 동시성 런타임(ConcRT)을 사용하므로 다른 ConcRT 메커니즘과 함께 사용할 수 있습니다. ConcRT에 대한 자세한 내용은 [동시성 런타임](../parallel/concrt/concurrency-runtime.md)을 참조하세요.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <condition_variable>
-```
+**헤더:** \<condition_variable >
+
+**네임스페이스:** std
 
 > [!NOTE]
 > 코드를 사용 하 여 컴파일된 **/clr**,이 헤더가 차단 됩니다.
@@ -56,6 +56,14 @@ while (condition is false)
 - `notify_one`은 조건 변수를 대기 중인 스레드 중 하나의 대기 모드를 해제합니다.
 
 - `notify_all`은 조건 변수를 대기 중인 모든 스레드의 대기 모드를 해제합니다.
+
+## <a name="functions-and-enums"></a>함수 및 열거형
+
+```cpp
+void notify_all_at_thread_exit(condition_variable& cond, unique_lock<mutex> lk);
+
+enum class cv_status { no_timeout, timeout };
+```
 
 ## <a name="see-also"></a>참고자료
 

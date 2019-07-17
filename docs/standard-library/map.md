@@ -6,22 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - map header
 ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
-ms.openlocfilehash: 0ea47a28599df543987831ee13a2c645f72a0113
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 96ca19b2562c3f145555c3c1b1d8db4fc700ed91
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412997"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243315"
 ---
 # <a name="ltmapgt"></a>&lt;map&gt;
 
 컨테이너 템플릿 클래스 map 및 multimap과 지원 템플릿을 정의합니다.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <map>
-```
+**헤더:** \<map>
+
+**네임스페이스:** std
+
+> [!NOTE]
+> 합니다 \<지도 > 라이브러리 사용을 `#include <initializer_list>` 문.
 
 ## <a name="members"></a>멤버
 
@@ -44,7 +47,7 @@ ms.locfileid: "62412997"
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|||
 |-|-|
 |[value_compare 클래스](../standard-library/value-compare-class-map.md)|키 값 비교를 통해 맵의 요소를 비교하여 map 내의 상대 순서를 확인할 수 있는 함수 개체를 제공합니다.|
 |[map 클래스](../standard-library/map-class.md)|각 요소에 데이터가 자동 정렬되는 기준인 고유한 키가 있는 컬렉션에서 데이터를 저장하고 검색하는 데 사용됩니다.|

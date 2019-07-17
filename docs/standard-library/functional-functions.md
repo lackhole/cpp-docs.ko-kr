@@ -29,34 +29,27 @@ helpviewer_keywords:
 - std::bit_xor [C++]
 - std::cref [C++]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
-ms.openlocfilehash: 93b61f1d0342d7d4b7ddfc7fce4d64ea5e10a2eb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 546d8c61e875dd7c295e892359e39fa5a76867b4
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159576"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243785"
 ---
 # <a name="ltfunctionalgt-functions"></a>&lt;functional&gt; 함수
-
-||||
-|-|-|-|
-| [bind](#bind) | [bit_and](#bit_and) | [bit_not](#bit_not) |
-| [bit_or](#bit_or) | [bit_xor](#bit_xor) | [cref](#cref) |
-| [invoke](#invoke) | [mem_fn](#mem_fn) | [not_fn](#not_fn) |
-| [ref](#ref) | [swap](#swap) | |
 
 이 함수는 c++11에서 사용 되지 않는 빠르며 c++17에서 제거 합니다.
 
 ||||
 |-|-|-|
-| [bind1st](#bind1st) | [bind2nd](#bind2nd) | [mem_fun](#mem_fun) |
-| [mem_fun_ref](#mem_fun_ref) | [ptr_fun](#ptr_fun) | |
+|[bind1st](#bind1st) |[bind2nd](#bind2nd)|[mem_fun](#mem_fun)|
+|[mem_fun_ref](#mem_fun_ref)|[ptr_fun](#ptr_fun)||
 
 이러한 함수는 c++17에서 사용 되지 않습니다.
 
 |||
 |-|-|
-| [not1](#not1) | [not2](#not2) |
+|[not1](#not1)|[not2](#not2)|
 
 ## <a name="bind"></a> 바인딩
 
@@ -64,24 +57,24 @@ ms.locfileid: "62159576"
 
 ```cpp
 template <class FT, class T1, class T2, ..., class TN>
-unspecified bind(FT fn, T1 t1, T2 t2, ..., TN tN);
+    unspecified bind(FT fn, T1 t1, T2 t2, ..., TN tN);
 
 template <class RTy, class FT, class T1, class T2, ..., class TN>
-unspecified bind(FT fn, T1 t1, T2 t2, ..., TN tN);
+    unspecified bind(FT fn, T1 t1, T2 t2, ..., TN tN);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*Fey*<br/>
+*Fey*\
 호출할 개체의 형식입니다.
 
-*TN*<br/>
+*TN*\
 N번째 인수의 형식입니다.
 
-*fn*<br/>
+*fn*\
 호출할 개체입니다.
 
-*tN*<br/>
+*TN*\
 N번째 호출 인수입니다.
 
 ### <a name="remarks"></a>설명
@@ -165,15 +158,15 @@ int main()
 
 ```cpp
 template <class Operation, class Type>
-binder1st <Operation> bind1st (const Operation& func, const Type& left);
+    binder1st <Operation> bind1st (const Operation& func, const Type& left);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*func*<br/>
+*Func*\
 단항 함수 개체로 변환할 이항 함수 개체입니다.
 
-*left*<br/>
+*왼쪽*\
 이항 함수 개체의 첫 번째 인수가 바인딩되는 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -184,7 +177,7 @@ binder1st <Operation> bind1st (const Operation& func, const Type& left);
 
 함수 바인더는 일종의 함수 어댑터. 함수 개체를 반환 하기 때문에 이러한 할 수 특정 형식의 함수 컴퍼지션에서 더 복잡 하 고 강력한 식을 생성 합니다.
 
-경우 *func* 형식의 개체인 `Operation` 및 `c` 상수 이면 `bind1st( func, c )` 동일 합니다 [binder1st](../standard-library/binder1st-class.md) 클래스 생성자 `binder1st<Operation>( func, c )`, 더 편리 하 게 되며 이 옵션을 사용 합니다.
+경우 *func* 형식의 개체인 `Operation` 및 `c` 상수 이면 `bind1st( func, c )` 동일 합니다 [binder1st](../standard-library/binder1st-class.md) 클래스 생성자 `binder1st<Operation>(func, c)`, 더 편리 하 게 되며 이 옵션을 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -259,15 +252,15 @@ The number of elements in v1 less than 10 is: 2.
 
 ```cpp
 template <class Operation, class Type>
-binder2nd <Operation> bind2nd(const Operation& func, const Type& right);
+    binder2nd <Operation> bind2nd(const Operation& func, const Type& right);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*func*<br/>
+*Func*\
 단항 함수 개체로 변환할 이항 함수 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 이항 함수 개체의 두 번째 인수가 바인딩되는 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -278,7 +271,7 @@ binder2nd <Operation> bind2nd(const Operation& func, const Type& right);
 
 함수 바인더는 일종의 함수 어댑터. 함수 개체를 반환 하기 때문에 이러한 할 수 특정 형식의 함수 컴퍼지션에서 더 복잡 하 고 강력한 식을 생성 합니다.
 
-경우 *func* 형식의 개체인 `Operation` 및 `c` 상수 이면 `bind2nd( func, c )` 동일 합니다 [binder2nd](../standard-library/binder2nd-class.md) 클래스 생성자 `binder2nd<Operation>( func, c )`를 사용 하는 것이 편리 하 고.
+경우 *func* 형식의 개체인 `Operation` 및 `c` 상수 이면 `bind2nd(func, c)` 동일 합니다 [binder2nd](../standard-library/binder2nd-class.md) 클래스 생성자 `binder2nd<Operation>(func, c)`를 사용 하는 것이 편리 하 고.
 
 ### <a name="example"></a>예제
 
@@ -371,12 +364,13 @@ struct bit_and<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*, *T*합니다 *U* 지 원하는 모든 형식은 `operator&` 지정 되었거나 유추 된 형식의 피연산자를 사용 하는 합니다.
+*형식*하십시오 *T*, *U*\
+지정되었거나 유추된 형식의 피연산자를 가져오는 `operator&`를 지원하는 모든 형식입니다.
 
-*왼쪽*<br/>
+*왼쪽*\
 비트 AND 연산의 왼쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 비트 AND 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -409,10 +403,10 @@ struct bit_not<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*Type*<br/>
+*형식*\
 이항 `operator~`를 지원하는 형식입니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 비트 보수 연산의 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 유추 된 형식의 lvalue 또는 rvalue 참조 인수 전달을 완벽 하 게 *형식*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -447,12 +441,13 @@ struct bit_or<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*, *T*합니다 *U* 지 원하는 모든 형식은 `operator|` 지정 되었거나 유추 된 형식의 피연산자를 사용 하는 합니다.
+*형식*하십시오 *T*, *U*\
+지정되었거나 유추된 형식의 피연산자를 가져오는 `operator|`를 지원하는 모든 형식입니다.
 
-*왼쪽*<br/>
+*왼쪽*\
 비트 OR 연산의 왼쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 비트 OR 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -487,12 +482,13 @@ struct bit_xor<void>
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*, *T*합니다 *U* 지 원하는 모든 형식은 `operator^` 지정 되었거나 유추 된 형식의 피연산자를 사용 하는 합니다.
+*형식*하십시오 *T*, *U*\
+지정되었거나 유추된 형식의 피연산자를 가져오는 `operator^`를 지원하는 모든 형식입니다.
 
-*왼쪽*<br/>
+*왼쪽*\
 비트 XOR 연산의 왼쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *T*합니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 비트 XOR 연산의 오른쪽 피연산자입니다. 형식의 lvalue 참조 인수를 사용 하는 특수화 되지 않은 템플릿은 *형식*합니다. 특수화 된 템플릿은 완벽 하 게 전달의 lvalue 및 rvalue 참조 인수 형식 유추 *U*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -517,10 +513,10 @@ reference_wrapper<const Ty> cref(const reference_wrapper<Ty>& arg);
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 래핑할 인수의 형식입니다.
 
-*arg*<br/>
+*arg*\
 래핑할 인수입니다.
 
 ### <a name="remarks"></a>설명
@@ -559,7 +555,7 @@ cref(i) = 1
 cref(neg)(i) = -1
 ```
 
-## <a name="invoke"></a> invoke
+## <a name="invoke"></a> 호출
 
 지정된 된 인수를 사용 하 여 호출 가능 개체를 호출합니다. C + + 17에 추가 합니다.
 
@@ -571,19 +567,19 @@ invoke_result_t<Callable, Args...>
 
 ### <a name="parameters"></a>매개 변수
 
-*호출 가능*<br/>
+*호출 가능*\
 호출할 개체의 형식입니다.
 
-*Args*<br/>
+*인수*\
 호출 인수 형식입니다.
 
-*fn*<br/>
+*fn*\
 호출할 개체입니다.
 
-*args*<br/>
+*인수*\
 호출 인수입니다.
 
-*specification*<br/>
+*사양*\
 합니다 **noexcept** 사양 `std::is_nothrow_invocable_v<Callable, Args>)`합니다.
 
 ### <a name="remarks"></a>설명
@@ -691,10 +687,10 @@ unspecified mem_fn(RTy Ty::*pm);
 
 ### <a name="parameters"></a>매개 변수
 
-*RTy*<br/>
+*RTy*\
 래핑된 함수의 반환 형식입니다.
 
-*Ty*<br/>
+*Ty*\
 멤버 함수 포인터의 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -763,7 +759,7 @@ const_mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* pMem)(Arg) const);
 
 ### <a name="parameters"></a>매개 변수
 
-*pMem*<br/>
+*pMem*\
 함수 개체로 변환할 `Type` 클래스의 멤버 함수 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -850,7 +846,7 @@ const_mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (T::* pMem)(Arg) cons
 
 ### <a name="parameters"></a>매개 변수
 
-*pMem*<br/>
+*pMem*\
 함수 개체로 변환할 `Type` 클래스의 멤버 함수 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -946,7 +942,7 @@ unary_negate<UnaryPredicate> not1(const UnaryPredicate& predicate);
 
 ### <a name="parameters"></a>매개 변수
 
-*predicate*<br/>
+*조건자*\
 부정할 단항 조건자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -955,7 +951,7 @@ unary_negate<UnaryPredicate> not1(const UnaryPredicate& predicate);
 
 ### <a name="remarks"></a>설명
 
-경우는 `unary_negate` 단항 조건자에서 생성 되 `predicate( x )`를 반환 합니다 `!predicate( x )`합니다.
+경우는 `unary_negate` 단항 조건자에서 생성 되 `predicate(x)`를 반환 합니다 `!predicate(x)`합니다.
 
 ### <a name="example"></a>예제
 
@@ -1018,7 +1014,7 @@ binary_negate<BinaryPredicate> not2(const BinaryPredicate& func);
 
 ### <a name="parameters"></a>매개 변수
 
-*func*<br/>
+*Func*\
 부정할 이항 조건자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1027,7 +1023,7 @@ binary_negate<BinaryPredicate> not2(const BinaryPredicate& func);
 
 ### <a name="remarks"></a>설명
 
-경우는 `binary_negate` 이진 조건자에서 생성 됩니다 `binary_predicate( x, y )`를 반환 합니다 `!binary_predicate( x, y )`합니다.
+경우는 `binary_negate` 이진 조건자에서 생성 됩니다 `binary_predicate(x, y)`를 반환 합니다 `!binary_predicate(x, y)`합니다.
 
 ### <a name="example"></a>예제
 
@@ -1094,7 +1090,7 @@ template <class Callable>
 
 ### <a name="parameters"></a>매개 변수
 
-*func*<br/>
+*Func*\
 전달 호출을 생성 하는 데 사용 하는 호출 가능 개체 래퍼입니다.
 
 ### <a name="remarks"></a>설명
@@ -1197,12 +1193,12 @@ pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(R
 
 ### <a name="parameters"></a>매개 변수
 
-*pfunc*<br/>
+*pfunc*\
 조정 가능한 함수로 변환할 단항 또는 이항 함수 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-단항 함수를 반환 하는 첫 번째 템플릿 함수 [pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md) < `Arg`하십시오 **결과**> (\* `pfunc`).
+단항 함수를 반환 하는 첫 번째 템플릿 함수 [pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md) <`Arg`하십시오 **결과**> (\* `pfunc`).
 
 이진 함수를 반환 하는 두 번째 템플릿 함수 [pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md) \< **Arg1**하십시오 **Arg2**, **결과**> (\* `pfunc`).
 
@@ -1220,10 +1216,10 @@ pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(R
 
 ```cpp
 template <class Ty>
-reference_wrapper<Ty> ref(Ty& arg);
+    reference_wrapper<Ty> ref(Ty& arg);
 
 template <class Ty>
-reference_wrapper<Ty> ref(reference_wrapper<Ty>& arg);
+    reference_wrapper<Ty> ref(reference_wrapper<Ty>& arg);
 ```
 
 ### <a name="return-value"></a>반환 값
@@ -1306,24 +1302,24 @@ tiger lion cougar
 tiger cougar
 ```
 
-## <a name="swap"></a> swap
+## <a name="swap"></a> 교환
 
 두 `function` 개체를 교환합니다.
 
 ```cpp
 template <class FT>
-void swap(function<FT>& f1, function<FT>& f2);
+    void swap(function<FT>& f1, function<FT>& f2);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*FT*<br/>
+*FT*\
 함수 개체에서 제어되는 형식입니다.
 
-*f1*<br/>
+*F1*\
 첫 번째 함수 개체입니다.
 
-*f2*<br/>
+*F2*\
 두 번째 함수 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -1371,7 +1367,3 @@ empty == true
 empty == false
 val == -3
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<functional>](../standard-library/functional.md)<br/>

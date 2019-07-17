@@ -10,22 +10,16 @@ f1_keywords:
 - memory/std::operator<<
 - memory/std::operator==
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
-ms.openlocfilehash: ca1412efb4d095ef9a371b3739d4c282683821dc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 661f1bb4c0f5734d88dd23f73c69b362f59a76c2
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348460"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243827"
 ---
 # <a name="ltmemorygt-operators"></a>&lt;memory&gt; 연산자
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|[operator&lt;=](#op_lt_eq)|
-|[연산자==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 개체 간의 같지 않음을 테스트합니다.
 
@@ -48,16 +42,16 @@ bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 같지 않음을 테스트할 개체 중 하나입니다.
 
-*right*<br/>
+*오른쪽*\
 같지 않음을 테스트할 개체 중 하나입니다.
 
-*Ty1*<br/>
+*Ty1*\
 왼쪽 공유 포인터로 제어되는 형식입니다.
 
-*Ty2*<br/>
+*Ty2*\
 오른쪽 공유 포인터로 제어되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -126,7 +120,7 @@ sp0 != sp0 == false
 sp0 != sp1 == true
 ```
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> 연산자 = =
 
 개체 간의 같음을 테스트합니다.
 
@@ -149,16 +143,16 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 같은지 여부를 테스트할 개체 중 하나입니다.
 
-*right*<br/>
+*오른쪽*\
 같은지 여부를 테스트할 개체 중 하나입니다.
 
-*Ty1*<br/>
+*Ty1*\
 왼쪽 공유 포인터로 제어되는 형식입니다.
 
-*Ty2*<br/>
+*Ty2*\
 오른쪽 공유 포인터로 제어되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -238,7 +232,7 @@ sp0 == sp0 == true
 sp0 == sp1 == false
 ```
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a> 연산자&gt;=
 
 한 개체가 두 번째 개체보다 크거나 같은지 테스트합니다.
 
@@ -256,23 +250,23 @@ bool operator>=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 비교할 개체 중 하나입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 개체 중 하나입니다.
 
-*Ty1*<br/>
+*Ty1*\
 왼쪽 공유 포인터로 제어되는 형식입니다.
 
-*Ty2*<br/>
+*Ty2*\
 오른쪽 공유 포인터로 제어되는 형식입니다.
 
 ### <a name="remarks"></a>설명
 
 템플릿 연산자 반환 `left.get() >= right.get()`합니다.
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> 연산자&lt;
 
 한 개체가 두 번째 개체보다 작은지 테스트합니다.
 
@@ -290,19 +284,19 @@ bool operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 비교할 개체 중 하나입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 개체 중 하나입니다.
 
-*Ty1*<br/>
+*Ty1*\
 왼쪽 포인터에 의해 제어되는 형식입니다.
 
-*Ty2*<br/>
+*Ty2*\
 오른쪽 포인터에 의해 제어되는 형식입니다.
 
-## <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a> 연산자&lt;=
 
 한 개체가 두 번째 개체보다 작거나 같은지 테스트합니다.
 
@@ -320,23 +314,23 @@ bool operator<=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 비교할 개체 중 하나입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 개체 중 하나입니다.
 
-*Ty1*<br/>
+*Ty1*\
 왼쪽 공유 포인터로 제어되는 형식입니다.
 
-*Ty2*<br/>
+*Ty2*\
 오른쪽 공유 포인터로 제어되는 형식입니다.
 
 ### <a name="remarks"></a>설명
 
 템플릿 연산자 반환 `left.get() <= right.get()`
 
-## <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a> 연산자&gt;
 
 한 개체가 두 번째 개체보다 큰지 테스트합니다.
 
@@ -354,19 +348,19 @@ bool operator>(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 비교할 개체 중 하나입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 개체 중 하나입니다.
 
-*Ty1*<br/>
+*Ty1*\
 왼쪽 공유 포인터로 제어되는 형식입니다.
 
-*Ty2*<br/>
+*Ty2*\
 오른쪽 공유 포인터로 제어되는 형식입니다.
 
-## <a name="op_lt_lt"></a>  operator&lt;&lt;
+## <a name="op_lt_lt"></a> 연산자&lt;&lt;
 
 공유 포인터를 스트림에 씁니다.
 
@@ -378,19 +372,19 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem*<br/>
+*Elem*\
 스트림 요소의 형식입니다.
 
-*Tr*<br/>
+*tr*\
 스트림 요소 특성의 형식입니다.
 
-*Ty*<br/>
+*Ty*\
 공유 포인터에 의해 제어되는 형식입니다.
 
-*out*<br/>
+*out*\
 출력 스트림입니다.
 
-*sp*<br/>
+*sp*\
 공유 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -418,7 +412,3 @@ int main()
 ```Output
 sp0 == 3f3040 (varies)
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<memory>](../standard-library/memory.md)<br/>

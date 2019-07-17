@@ -7,12 +7,12 @@ helpviewer_keywords:
 - 64-bit programming [C++], about 64-bit programming
 - programming [C++], 64-bit
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
-ms.openlocfilehash: c95a117205c7c0c1b44c7c7cf00fdc1a90fa3390
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: 0e2e4dcd1e7dabc2ffc8ac87b1670245101c16d0
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220950"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240871"
 ---
 # <a name="configure-c-projects-for-64-bit-x64-targets"></a>구성 C++ 64 비트, x64에 대 한 대상 프로젝트
 
@@ -22,7 +22,7 @@ ms.locfileid: "65220950"
 
 - [방법: X64을 64 비트 대상 Visual C++ 프로젝트 구성 플랫폼](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
-- [방법: 명령줄에서 64 비트 Visual C++ 도구를 사용 하도록 설정](how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
+- [방법: 명령줄에서 64 비트, x64 호스트 MSVC 도구 집합을 사용 하도록 설정](how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
 - [일반적인 Visual C++ 64비트 마이그레이션 문제](common-visual-cpp-64-bit-migration-issues.md)
 

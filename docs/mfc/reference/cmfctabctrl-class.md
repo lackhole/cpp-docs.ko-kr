@@ -104,12 +104,12 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], SynchronizeScrollBar
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
-ms.openlocfilehash: 43eb171ce9b3ea3454855dc1f92d9aa1b74645d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2588a4fe9903de624cbd3517c290a5439fe284a
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252947"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67860982"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Class
 
@@ -193,7 +193,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 
 ### <a name="data-members"></a>데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCTabCtrl::m_bEnableActivate](#m_benableactivate)|현재 보기를에서 새 탭을 삽입 하 고 사용 포커스를 잃을 수 없습니다.|
 
@@ -348,7 +348,7 @@ BOOL Create(
 
 다음 표에서에 지정할 수 있는 값을 *위치* 매개 변수입니다.
 
-|위치|설명|
+|위치|Description|
 |--------------|-----------------|
 |LOCATION_BOTTOM|탭은 탭 컨트롤의 아래쪽에 나와 있습니다.|
 |LOCATION_TOP|탭은 탭 컨트롤의 위쪽에 있습니다.|
@@ -1078,7 +1078,7 @@ void SetResizeMode(ResizeMode resizeMode);
 
 합니다 *resizeMode* 매개 변수는 다음 중 하나일 수 있습니다 `ResizeMode` 열거형 값입니다.
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |RESIZE_NO|탭 컨트롤의 크기를 조정할 수 없습니다.|
 |RESIZE_VERT|탭 컨트롤이 세로로 하지만 하지 가로로 조정할 수 있습니다.|
@@ -1139,6 +1139,5 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
 [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
 [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md)

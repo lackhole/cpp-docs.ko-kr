@@ -16,21 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (deque)
 - std::operator&lt;= (deque)
 - std::operator== (deque)
-ms.openlocfilehash: a5e88d421df2746cf2ca0aab5be4c19953162559
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 868909ac4346a59cade3660f288a0f0e71bc4ed0
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394002"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245655"
 ---
 # <a name="ltdequegt-operators"></a>&lt;deque&gt; 연산자
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[연산자==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체와 같지 않은지 테스트합니다.
 
@@ -40,10 +35,10 @@ bool operator!=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `deque` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -75,12 +70,13 @@ int main( )
    else
       cout << "The deques are equal." << endl;
 }
-/* Output:
-The deques are not equal.
-*/
 ```
 
-## <a name="op_lt"></a>  operator&lt;
+```Output
+The deques are not equal.
+```
+
+## <a name="op_lt"></a> 연산자&lt;
 
 연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체보다 작은지 테스트합니다.
 
@@ -90,10 +86,10 @@ bool operator<(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `deque` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -129,12 +125,13 @@ int main( )
    else
       cout << "Deque c1 is not less than deque c2." << endl;
 }
-/* Output:
-Deque c1 is less than deque c2.
-*/
 ```
 
-## <a name="op_lt_eq"></a>  operator&lt;=
+```Output
+Deque c1 is less than deque c2.
+```
+
+## <a name="op_lt_eq"></a> 연산자&lt;=
 
 연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체보다 작거나 같은지 테스트합니다.
 
@@ -144,10 +141,10 @@ bool operator<=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `deque` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -183,12 +180,13 @@ int main( )
    else
       cout << "Deque c1 is greater than deque c2." << endl;
 }
-/* Output:
-Deque c1 is less than or equal to deque c2.
-*/
 ```
 
-## <a name="op_eq_eq"></a>  operator==
+```Output
+Deque c1 is less than or equal to deque c2.
+```
+
+## <a name="op_eq_eq"></a> 연산자 = =
 
 연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체와 같은지 테스트합니다.
 
@@ -198,10 +196,10 @@ bool operator==(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `deque` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -239,13 +237,14 @@ int main( )
    else
       cout << "The deques are not equal." << endl;
 }
-/* Output:
-The deques are equal.
-The deques are not equal.
-*/
 ```
 
-## <a name="op_gt"></a>  operator&gt;
+```Output
+The deques are equal.
+The deques are not equal.
+```
+
+## <a name="op_gt"></a> 연산자&gt;
 
 연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체보다 큰지 테스트합니다.
 
@@ -255,10 +254,10 @@ bool operator>(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `deque` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -295,12 +294,13 @@ int main( )
    else
       cout << "Deque c1 is not greater than deque c2." << endl;
 }
-/* Output:
-Deque c1 is greater than deque c2.
-*/
 ```
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+```Output
+Deque c1 is greater than deque c2.
+```
+
+## <a name="op_gt_eq"></a> 연산자&gt;=
 
 연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체보다 크거나 같은지 테스트합니다.
 
@@ -310,10 +310,10 @@ bool operator>=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 `deque` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `deque` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -350,11 +350,8 @@ int main( )
    else
       cout << "Deque c1 is less than deque c2." << endl;
 }
-/* Output:
-Deque c1 is greater than or equal to deque c2.
-*/
 ```
 
-## <a name="see-also"></a>참고자료
-
-[\<deque>](../standard-library/deque.md)<br/>
+```Output
+Deque c1 is greater than or equal to deque c2.
+```
