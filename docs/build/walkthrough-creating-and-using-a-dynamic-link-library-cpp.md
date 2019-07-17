@@ -2,17 +2,17 @@
 title: '연습: 자체 동적 연결 라이브러리 만들기 및 사용(C++)'
 description: C++를 사용하여 Visual Studio에서 Windows DLL(동적 연결 라이브러리)을 만듭니다.
 ms.custom: conceptual
-ms.date: 07/14/2019
+ms.date: 07/17/2019
 helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: 5db16c834f3e42aee0cc558ab1ea18bcb2a35063
-ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
+ms.openlocfilehash: 8ca89471177ba2d1fa98bfaf51b86ed15dcd6d2f
+ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894383"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299822"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 자체 동적 연결 라이브러리 만들기 및 사용(C++)
 
@@ -34,9 +34,9 @@ ms.locfileid: "67894383"
 
 이 연습에서는 두 개의 Visual Studio 솔루션을 만듭니다. 하나는 DLL을 빌드하는 솔루션이고, 다른 하나는 클라이언트 앱을 빌드하는 솔루션입니다. DLL은 플랫폼, 호출 및 연결 규칙이 일치하는 한, 다른 언어를 사용하여 빌드된 앱에서 호출할 수 있도록 C 호출 규칙을 사용합니다. 클라이언트 앱은 Windows가 로드 시간에 앱을 DLL에 연결하는 ‘암시적 연결’을  사용합니다. 이 연결을 통해 앱은 DLL에서 제공한 함수를 정적으로 연결된 라이브러리의 함수처럼 호출할 수 있습니다.
 
-이 연습에서는 일부 일반적인 상황은 다루지 않습니다. 다른 프로그래밍 언어로 C++ DLL 사용을 표시하지 않으며, 리소스 전용 DLL을 만드는 방법도 보여 주지 않습니다. 또한 로드 시간이 아니라 런타임에 DLL을 로드하는 명시적 연결 사용도 보여 주지 않습니다. 안심할 수, Visual Studio를 사용 하 여 이러한 모든 작업을 수행할 수 있습니다. DLL에 대한 자세한 내용의 링크는 [Visual Studio에서 C/C++ DLL 만들기](dlls-in-visual-cpp.md)를 참조하세요. 암시적 연결 및 명시적 연결에 대한 자세한 내용은 [사용할 연결 방법 결정](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)을 참조하세요. C 언어 연결 규칙을 사용하는 프로그래밍 언어로 사용할 C++ DLL을 만드는 방법에 대한 자세한 내용은 [C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기](exporting-cpp-functions-for-use-in-c-language-executables.md)를 참조하세요. .NET 언어로 사용할 DLL을 만드는 방법에 대한 자세한 내용은 [Visual Basic 애플리케이션에서 DLL 함수 호출](calling-dll-functions-from-visual-basic-applications.md)을 참조하세요.
+이 연습에서는 일부 일반적인 상황은 다루지 않습니다. 다른 프로그래밍 언어로 C++ DLL 사용을 표시하지 않으며, 리소스 전용 DLL을 만드는 방법도 보여 주지 않습니다. 또한 로드 시간이 아니라 런타임에 DLL을 로드하는 명시적 연결 사용도 보여 주지 않습니다. Visual Studio를 사용 하 여 이러한 모든 작업을 수행할 수 있습니다. DLL에 대한 자세한 내용의 링크는 [Visual Studio에서 C/C++ DLL 만들기](dlls-in-visual-cpp.md)를 참조하세요. 암시적 연결 및 명시적 연결에 대한 자세한 내용은 [사용할 연결 방법 결정](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)을 참조하세요. C 언어 연결 규칙을 사용하는 프로그래밍 언어로 사용할 C++ DLL을 만드는 방법에 대한 자세한 내용은 [C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기](exporting-cpp-functions-for-use-in-c-language-executables.md)를 참조하세요. .NET 언어로 사용할 DLL을 만드는 방법에 대한 자세한 내용은 [Visual Basic 애플리케이션에서 DLL 함수 호출](calling-dll-functions-from-visual-basic-applications.md)을 참조하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 - Microsoft Windows 7 이상 버전을 실행하는 컴퓨터. 최상의 개발 환경을 위해서는 Windows 10이 권장됩니다.
 
@@ -267,7 +267,7 @@ ms.locfileid: "67894383"
    }
    ```
 
-지금까지 수행한 모든 사항이 작동하는지 확인하려면 동적 연결 라이브러리를 컴파일합니다. 컴파일하려면 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다. 다음과 같은 출력이 표시됩니다.
+지금까지 수행한 모든 사항이 작동하는지 확인하려면 동적 연결 라이브러리를 컴파일합니다. 컴파일하려면 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다. 출력은 다음과 같습니다. DLL 실행 파일 및 관련 컴파일러 출력은 솔루션 폴더 바로 아래에 있는 *Debug* 라는 폴더에 배치 됩니다. 릴리스 빌드를 만드는 경우 출력은 *릴리스*라는 폴더에 배치 됩니다.
 
 ```Output
 1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------
@@ -280,7 +280,7 @@ ms.locfileid: "67894383"
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-축, Visual Studio를 사용 하 여 DLL을 만들었습니다! 다음으로, DLL에서 내보낸 함수를 사용하는 클라이언트 앱을 만듭니다.
+축 하 합니다. Visual Studio를 사용 하 여 DLL을 만들었습니다. 다음으로, DLL에서 내보낸 함수를 사용하는 클라이언트 앱을 만듭니다.
 
 ## <a name="create-a-client-app-that-uses-the-dll"></a>DLL을 사용하는 클라이언트 앱 만들기
 
@@ -354,17 +354,17 @@ DLL을 만들 때는 DLL을 사용하는 방법에 대해 생각해야 합니다
 
 1. **추가 포함 디렉터리** 대화 상자의 위쪽 창을 두 번 클릭하여 편집 컨트롤을 사용하도록 설정합니다.
 
-1. 편집 컨트롤에서 **MathLibrary.h** 헤더 파일 위치 경로를 지정합니다. 아래쪽 화살표를 클릭 한 다음 선택  **\<편집 >** 합니다. 폴더 아이콘을 한 다음 줄임표를 클릭 하면 ( **...** ) 하는 올바른 폴더를 찾습니다.
+1. 편집 컨트롤에서 **MathLibrary.h** 헤더 파일 위치 경로를 지정합니다. 아래쪽 화살표를 클릭 한 다음  **\<> 편집**을 선택 합니다. 폴더 아이콘을 클릭 한 다음 줄임표 ( **...** )를 클릭 하 여 올바른 폴더로 이동할 수 있습니다.
  
-   이 경우 수도, DLL 프로젝트에서.h 파일이 포함 된 폴더에 클라이언트 프로젝트에서.cpp 파일이 포함 된 폴더에서 상대 경로 입력할 수 있습니다. 클라이언트 프로젝트가 DLL 솔루션과 같은 폴더의 별도 솔루션에 있는 경우 상대 경로는 다음과 같아야 합니다.
+   이 경우 클라이언트 프로젝트의 .cpp 파일이 들어 있는 폴더의 상대 경로를 DLL 프로젝트의 .h 파일을 포함 하는 폴더로 입력할 수도 있습니다. 클라이언트 프로젝트가 DLL 솔루션과 같은 폴더의 별도 솔루션에 있는 경우 상대 경로는 다음과 같아야 합니다.
 
    `..\MathLibrary\MathLibrary`
 
-   DLL과 클라이언트 프로젝트가 동일한 솔루션에 있는 경우 서로 다른 폴더에는 솔루션은 다음 있습니다 해야 상대 경로 적절 하 게 조정 그러지 않으면 앞에서 설명한 메서드를 사용 하 여 폴더 찾아보기 합니다.
+   DLL 및 클라이언트 프로젝트가 동일한 솔루션에 있거나 솔루션이 다른 폴더에 있으면 상대 경로를 적절 하 게 조정 하거나 앞에서 설명한 방법을 사용 하 여 폴더를 검색 해야 합니다.
 
    ![추가 포함 디렉터리 속성에 헤더 위치 추가](media/mathclient-additional-include-directories.png "추가 포함 디렉터리 속성에 헤더 위치 추가")
 
-1. 헤더 파일에 대 한 경로 입력 한 후는 **Additional Include Directories** 대화 상자를 선택 합니다 **확인** 돌아가려면 단추를 **속성 페이지** 대화 상자에서 선택 합니다 **확인** 변경 내용을 저장 하는 단추입니다.
+1. **추가 포함 디렉터리** 대화 상자에서 헤더 파일에 대 한 경로를 입력 한 후 **확인** 단추를 선택 하 여 **속성 페이지** 대화 상자로 돌아간 다음 **확인** 단추를 선택 하 여 변경 내용을 저장 합니다.
 
 이제 **MathLibrary.h** 파일을 포함하고 해당 파일이 클라이언트 애플리케이션에서 선언하는 함수를 사용할 수 있습니다. 다음 코드를 사용하여 **MathClient.cpp**의 내용을 바꿉니다.
 
@@ -412,16 +412,16 @@ int main()
 
    ![추가 라이브러리 디렉터리 속성 편집](media/mathclient-additional-library-directories-property.png "추가 라이브러리 디렉터리 속성 편집")
 
-1. **추가 라이브러리 디렉터리** 대화 상자의 위쪽 창을 두 번 클릭하여 편집 컨트롤을 사용하도록 설정합니다. 편집 컨트롤에서 **MathLibrary.lib** 파일 위치 경로를 지정합니다. 다음 값을 입력하여 디버그 및 릴리스 빌드 둘 다에 대해 작동하는 매크로를 사용합니다.
+1. **추가 라이브러리 디렉터리** 대화 상자의 위쪽 창을 두 번 클릭하여 편집 컨트롤을 사용하도록 설정합니다. 편집 컨트롤에서 **MathLibrary.lib** 파일 위치 경로를 지정합니다. 솔루션 폴더 바로 아래에 있는 `Debug` 라는 폴더에 있습니다. 릴리스 빌드를 만들면 출력이 라는 `Release`폴더에 배치 됩니다. 다음 매크로를 사용 하 여 링커에서 만든 빌드 종류에 관계 없이 DLL을 찾을 수 있습니다.
 
    **Visual Studio 2019:**
 
    `..\MathLibrary\$(IntDir)`
 
-   **Visual Studio 2017 및 이전 버전:**
+   **Visual Studio 2017 이전 버전:**
 
    `..\..\MathLibrary\$(IntDir)`
- 
+
    ![라이브러리 디렉터리 추가](media/mathclient-additional-library-directories.png "라이브러리 디렉터리 추가")
 
 1. **추가 라이브러리 디렉터리** 대화 상자에서 라이브러리 파일 경로를 입력한 후에는 **확인** 단추를 선택하여 **속성 페이지** 대화 상자로 돌아갑니다.
@@ -442,7 +442,7 @@ int main()
 
    `xcopy /y /d "..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"`
 
-    **Visual Studio 2017 및 이전 버전:**
+    **Visual Studio 2017 이전 버전:**
 
    `xcopy /y /d "..\..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"`
 
@@ -450,7 +450,7 @@ int main()
 
 1. **확인** 단추를 선택하여 프로젝트 속성의 변경 사항을 저장합니다.
 
-이제 클라이언트 앱을 빌드 및 실행하는 데 필요한 모든 사항이 갖춰졌습니다. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택하여 애플리케이션을 빌드합니다. 합니다 **출력** Visual Studio 창에에서 다음과 같은 Visual Studio의 버전에 따라 있어야 합니다.
+이제 클라이언트 앱을 빌드 및 실행하는 데 필요한 모든 사항이 갖춰졌습니다. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택하여 애플리케이션을 빌드합니다. Visual Studio의 **출력** 창에는 visual studio의 버전에 따라 다음 예제와 같은 항목이 있어야 합니다.
 
 ```Output
 1>------ Build started: Project: MathClient, Configuration: Debug Win32 ------
