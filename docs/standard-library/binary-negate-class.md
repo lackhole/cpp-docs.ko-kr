@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - binary_negate class
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
-ms.openlocfilehash: 5e00e398f1c43d0a8d762ca42c3f4f3ab51b9866
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d93ead4f301b6c5df918a6f402cea6963a9535e1
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62414102"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243363"
 ---
 # <a name="binarynegate-class"></a>binary_negate 클래스
 
@@ -25,7 +25,6 @@ class binary_negate
     : public binaryFunction <typename Operation::first_argument_type,
                               typename Operation::second_argument_type, bool>
 {
-public:
     explicit binary_negate(const Operation& Func);
     bool operator()(const typename Operation::first_argument_type& left,
                     const typename Operation::second_argument_type& right) const;
@@ -34,13 +33,13 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*Func*<br/>
+*Func*\
 부정할 이항 함수입니다.
 
-*left*<br/>
+*왼쪽*\
 부정할 이항 함수의 왼쪽 피연산자입니다.
 
-*right*<br/>
+*오른쪽*\
 부정할 이항 함수의 오른쪽 피연산자입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -109,20 +108,10 @@ int main( )
       cout << *Iter1 << " ";
    cout << ")" << endl;
 }
-/* Output:
+```
+
+```Output
 Original vector v1 = ( 6262 6262 2233879413 2621500314 580942933 3715465425 3739828298 )
 Sorted vector v1 = ( 6262 6262 580942933 2233879413 2621500314 3715465425 3739828298 )
 Resorted vector v1 = ( 3739828298 3715465425 2621500314 2233879413 580942933 6262 6262 )
-*/
 ```
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<functional>
-
-std
-
-## <a name="see-also"></a>참고자료
-
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>

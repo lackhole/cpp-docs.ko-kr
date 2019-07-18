@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - tuple class
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
-ms.openlocfilehash: 7e85ad445743cc02ba078eb3c09342f69915c09c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aca5cc90566fb1fa602b96568d4cda9dd5ab26b9
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279060"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241831"
 ---
 # <a name="tuple-class"></a>튜플 클래스
 
@@ -22,7 +22,6 @@ ms.locfileid: "62279060"
 
 ```
 class tuple {
-public:
    tuple();
    explicit tuple(P1, P2, ..., PN); // 0 < N
    tuple(const tuple&);
@@ -37,12 +36,12 @@ public:
       tuple& operator=(const tuple<U1, U2, ..., UN>&);
    template <class U1, class U2>
       tuple& operator=(const pair<U1, U2>&); // N == 2
-   };
+};
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*TN*<br/>
+*TN*\
 N번째 튜플 요소의 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -117,13 +116,7 @@ The tuples in the vector are
 ( 3, 0.033, three ).
 ```
 
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<tuple>
-
-**네임스페이스:** std
-
-## <a name="op_eq"></a>  tuple::operator=
+## <a name="op_eq"></a> 연산자 =
 
 `tuple` 개체를 할당합니다.
 
@@ -144,10 +137,10 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>매개 변수
 
-*UN*<br/>
+*취소*\
 N번째 복사된 튜플 요소의 형식입니다.
 
-*right*<br/>
+*오른쪽*\
 복사할 튜플입니다.
 
 ### <a name="remarks"></a>설명
@@ -196,7 +189,7 @@ int main()
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -205,7 +198,7 @@ int main()
 x 4
 ```
 
-## <a name="tuple_swap"></a>  tuple:swap
+## <a name="tuple_swap"></a> 교환
 
 두 튜플의 요소를 교환합니다.
 
@@ -216,16 +209,17 @@ template <class... Types>
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|---------------|-----------------|
-|*left*|튜플의 교환할 요소가 들어 있는 튜플을 *오른쪽*합니다.|
-|*right*|튜플의 교환할 요소가 들어 있는 튜플을 *왼쪽*합니다.|
+*왼쪽*\
+튜플의 교환할 요소가 들어 있는 튜플을 *오른쪽*합니다.
+
+*오른쪽*\
+튜플의 교환할 요소가 들어 있는 튜플을 *왼쪽*합니다.
 
 ### <a name="remarks"></a>설명
 
 함수는 `left.swap(right)`을 실행합니다.
 
-## <a name="tuple"></a>  tuple::tuple
+## <a name="tuple"></a> 튜플
 
 `tuple` 개체를 생성합니다.
 
@@ -252,10 +246,10 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>매개 변수
 
-*UN*<br/>
+*취소*\
 N번째 복사된 튜플 요소의 형식입니다.
 
-*right*<br/>
+*오른쪽*\
 복사할 튜플입니다.
 
 ### <a name="remarks"></a>설명
@@ -338,8 +332,3 @@ x 4
 0 1 2 3
 4 5 6 7
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<tuple>](../standard-library/tuple.md)<br/>
-[make_tuple](../standard-library/tuple-functions.md#make_tuple)<br/>

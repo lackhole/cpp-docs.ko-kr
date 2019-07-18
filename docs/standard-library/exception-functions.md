@@ -24,23 +24,16 @@ helpviewer_keywords:
 - std::terminate [C++]
 - std::uncaught_exception [C++]
 - std::unexpected [C++]
-ms.openlocfilehash: 22c5b34f1c87d10b48a797229bc987305fca8f9d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 34a34c48be8bb0e319a7d0eebeccba805cafbc1f
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412659"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246054"
 ---
 # <a name="ltexceptiongt-functions"></a>&lt;exception&gt; 함수
 
-||||
-|-|-|-|
-|[current_exception](#current_exception)|[get_terminate](#get_terminate)|[get_unexpected](#get_unexpected)|
-|[make_exception_ptr](#make_exception_ptr)|[rethrow_exception](#rethrow_exception)|[set_terminate](#set_terminate)|
-|[set_unexpected](#set_unexpected)|[terminate](#terminate)|[uncaught_exception](#uncaught_exception)|
-|[unexpected](#unexpected)|
-
-## <a name="current_exception"></a>  current_exception
+## <a name="current_exception"></a> current_exception
 
 현재 예외에 대한 스마트 포인터를 가져옵니다.
 
@@ -62,18 +55,18 @@ catch 블록에서 `current_exception` 함수를 호출합니다. 예외가 발�
 
 `current_exception` 수식에 대한 연속 호출은 현재 예외 건의 다른 복사본을 뜻하는 `exception_ptr` 개체를 반환합니다. 따라서 개체는 복사본에 같은 이진 값이 있더라도 다른 복사본을 참조하기 때문에 같지 않은 것으로 비교합니다.
 
-## <a name="make_exception_ptr"></a>  make_exception_ptr
+## <a name="make_exception_ptr"></a> make_exception_ptr
 
 예외 복사본이 들어 있는 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) 개체를 생성합니다.
 
 ```cpp
 template <class E>
-exception_ptr make_exception_ptr(E Except);
+    exception_ptr make_exception_ptr(E Except);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*Except*<br/>
+*제외 하*\
 복사할 예외가 있는 클래스입니다. 모든 클래스 개체를 인수로 사용할 수 있지만, 일반적으로 [예외 클래스](../standard-library/exception-class.md) 개체를 `make_exception_ptr` 함수의 인수로 지정합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -86,7 +79,7 @@ exception_ptr make_exception_ptr(E Except);
 
 애플리케이션에는 일반적으로 `make_exception_ptr` 함수가 필요하지 않으며 이 함수를 사용하지 않는 것이 좋습니다.
 
-## <a name="rethrow_exception"></a>  rethrow_exception
+## <a name="rethrow_exception"></a> rethrow_exception
 
 매개 변수로 전달되는 예외를 throw합니다.
 
@@ -96,14 +89,14 @@ void rethrow_exception(exception_ptr P);
 
 ### <a name="parameters"></a>매개 변수
 
-*P*<br/>
+*P*\
 다시 throw할 catch된 예외입니다. 하는 경우 *P* 은 null [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)을 throw [std:: bad_exception](../standard-library/bad-exception-class.md)합니다.
 
 ### <a name="remarks"></a>설명
 
 `exception_ptr` 개체에서 catch된 예외를 저장한 후 기본 스레드에서 개체를 처리할 수 있습니다. 기본 스레드에서 `rethrow_exception` 개체와 함께 작동하는 `exception_ptr` 함수를 호출합니다. `rethrow_exception` 함수는 `exception_ptr` 개체에서 예외를 추출하고, 주 스레드의 컨텍스트에서 예외를 throw합니다.
 
-## <a name="get_terminate"></a>  get_terminate
+## <a name="get_terminate"></a> get_terminate
 
 현재 `terminate_handler` 함수를 가져옵니다.
 
@@ -111,7 +104,7 @@ void rethrow_exception(exception_ptr P);
 terminate_handler get_terminate();
 ```
 
-## <a name="set_terminate"></a>  set_terminate
+## <a name="set_terminate"></a> set_terminate
 
 프로그램을 종료할 때 호출할 새 `terminate_handler`를 설정합니다.
 
@@ -121,7 +114,7 @@ terminate_handler set_terminate(terminate_handler fnew) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*fnew*<br/>
+*fnew*\
 종료 시 호출할 함수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -160,7 +153,7 @@ int main()
 }
 ```
 
-## <a name="get_unexpected"></a>  get_unexpected
+## <a name="get_unexpected"></a> get_unexpected
 
 현재 `unexpected_handler` 함수를 가져옵니다.
 
@@ -168,7 +161,18 @@ int main()
 unexpected_handler get_unexpected();
 ```
 
-## <a name="set_unexpected"></a>  set_unexpected
+## <a name="rethrow_if_nested"></a> rethrow_if_nested
+
+```cpp
+template <class E> 
+    void rethrow_if_nested(const E& e);
+```
+
+### <a name="remarks"></a>설명
+
+다형 클래스 형식이 아닌 아니면 `nested_exception` 액세스할 수 없거나 모호한 경우 영향을 주지 않습니다. 그렇지 않으면 동적 캐스팅을 수행합니다.
+
+## <a name="set_unexpected"></a> set_unexpected
 
 예기치 않은 예외가 발생할 경우를 위해 새 `unexpected_handler`를 설정합니다.
 
@@ -178,7 +182,7 @@ unexpected_handler set_unexpected(unexpected_handler fnew) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*fnew*<br/>
+*fnew*\
 예기치 않은 예외가 발생할 경우를 호출할 함수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -216,7 +220,7 @@ int main()
 }
 ```
 
-## <a name="terminate"></a>  terminate
+## <a name="terminate"></a> 종료
 
 종료 처리기를 호출합니다.
 
@@ -234,7 +238,18 @@ terminate 처리기는 호출자로 반환되지 않을 수 있습니다. Termin
 
 `terminate` 사용에 대한 예제는 [set_unexpected](../standard-library/exception-functions.md#set_unexpected)를 참조하세요.
 
-## <a name="uncaught_exception"></a>  uncaught_exception
+## <a name="throw_with_nested"></a> throw_with_nested
+
+```cpp
+template <class T> [[noreturn]]
+    void throw_with_nested(T&& t);
+```
+
+### <a name="remarks"></a>설명
+
+중첩 된 예외를 사용 하 여 예외를 throw합니다.
+
+## <a name="uncaught_exception"></a> uncaught_exception
 
 throw된 예외가 현재 처리 중인 경우만 **true**를 반환합니다.
 
@@ -299,7 +314,7 @@ In Test::~Test("outside try block")
         std::uncaught_exception( ) = 0
 ```
 
-## <a name="unexpected"></a>  unexpected
+## <a name="unexpected"></a> 예기치 않은
 
 unexpected 처리기를 호출합니다.
 
@@ -326,7 +341,3 @@ unexpected 처리기는 호출자로 반환되지 않을 수 있습니다. 다�
 ### <a name="example"></a>예제
 
 `unexpected` 사용에 대한 예제는 [set_unexpected](../standard-library/exception-functions.md#set_unexpected)를 참조하세요.
-
-## <a name="see-also"></a>참고자료
-
-[\<exception>](../standard-library/exception.md)<br/>

@@ -9,21 +9,16 @@ f1_keywords:
 - tuple/std::operator<=
 - tuple/std::operator==
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
-ms.openlocfilehash: e60de54a78f3a206ef77776761c3419bf8a2f3b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5554f08f32048bafde5bdb2c316e12e1e01c6ffb
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411879"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241656"
 ---
 # <a name="lttuplegt-operators"></a>&lt;tuple&gt; 연산자
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[연산자==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 `tuple` 개체가 다른지 비교합니다.
 
@@ -36,7 +31,7 @@ bool operator!=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>매개 변수
 
-*TN*<br/>
+*TN*\
 N번째 튜플 요소의 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -88,7 +83,7 @@ false
 true
 ```
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> 연산자&lt;
 
 `tuple` 개체를 비교하여 더 작은 개체를 확인합니다.
 
@@ -101,7 +96,7 @@ bool operator<(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>매개 변수
 
-*TN*<br/>
+*TN*\
 N번째 튜플 요소의 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -153,7 +148,7 @@ false
 true
 ```
 
-## <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a> 연산자&lt;=
 
 `tuple` 개체가 작거나 같은지 비교합니다.
 
@@ -166,7 +161,7 @@ bool operator<=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>매개 변수
 
-*TN*<br/>
+*TN*\
 N번째 튜플 요소의 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -218,7 +213,7 @@ true
 false
 ```
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> 연산자 = =
 
 `tuple` 개체가 같은지 비교합니다.
 
@@ -231,7 +226,7 @@ bool operator==(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>매개 변수
 
-*TN*<br/>
+*TN*\
 N번째 튜플 요소의 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -283,7 +278,7 @@ true
 false
 ```
 
-## <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a> 연산자&gt;
 
 `tuple` 개체를 비교하여 더 큰 개체를 확인합니다.
 
@@ -296,7 +291,7 @@ bool operator>(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>매개 변수
 
-*TN*<br/>
+*TN*\
 N번째 튜플 요소의 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -348,7 +343,7 @@ false
 true
 ```
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a> 연산자&gt;=
 
 `tuple` 개체가 크거나 같은지 비교합니다.
 
@@ -361,7 +356,7 @@ bool operator>=(const tuple<T1, T2, ..., TN>& tpl1,
 
 ### <a name="parameters"></a>매개 변수
 
-*TN*<br/>
+*TN*\
 N번째 튜플 요소의 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -412,7 +407,3 @@ int main() {
 true
 false
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<tuple>](../standard-library/tuple.md)<br/>

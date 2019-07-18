@@ -32,8 +32,14 @@ helpviewer_keywords:
 - std::dec [C++]
 - std::fixed [C++]
 - std::hex [C++]
+- std::hexfloat [C++]
+- std::io_errc [C++]
 - std::internal [C++]
+- std::iostream_category [C++]
+- std::is_error_code_enum [C++]
 - std::left [C++]
+- std::make_error_code [C++]
+- std::make_error_condition [C++]
 - std::noboolalpha [C++]
 - std::noshowbase [C++]
 - std::noshowpoint [C++]
@@ -50,27 +56,16 @@ helpviewer_keywords:
 - std::skipws [C++]
 - std::unitbuf [C++]
 - std::uppercase [C++]
-ms.openlocfilehash: 18f42f8e5bcd69872e4300d154eb72f489015e36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a08c039322c49f33ae4441851c96aa56e62fcb84
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404899"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245288"
 ---
 # <a name="ltiosgt-functions"></a>&lt;ios&gt; 함수
 
-||||
-|-|-|-|
-|[defaultfloat](#ios_defaultfloat)|[boolalpha](#boolalpha)|[dec](#dec)|
-|[fixed](#fixed)|[hex](#hex)|[internal](#internal)|
-|[left](#left)|[noboolalpha](#noboolalpha)|[noshowbase](#noshowbase)|
-|[noshowpoint](#noshowpoint)|[noshowpos](#noshowpos)|[noskipws](#noskipws)|
-|[nounitbuf](#nounitbuf)|[nouppercase](#nouppercase)|[oct](#oct)|
-|[right](#right)|[scientific](#scientific)|[showbase](#showbase)|
-|[showpoint](#showpoint)|[showpos](#showpos)|[skipws](#skipws)|
-|[unitbuf](#unitbuf)|[uppercase](#uppercase)|
-
-## <a name="boolalpha"></a>  boolalpha
+## <a name="boolalpha"></a> boolalpha
 
 [bool](../cpp/bool-cpp.md) 형식의 변수가 스트림에서 **true** 또는 **false**로 표시되도록 지정합니다.
 
@@ -80,7 +75,7 @@ ios_base& boolalpha(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -122,7 +117,7 @@ true
 true
 ```
 
-## <a name="dec"></a>  dec
+## <a name="dec"></a> 12 월
 
 정수 변수가 밑수 10 표기법으로 표시되도록 지정합니다.
 
@@ -132,7 +127,7 @@ ios_base& dec(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -175,7 +170,7 @@ int main( )
 100
 ```
 
-## <a name="ios_defaultfloat"></a>  &lt;ios&gt; defaultfloat
+## <a name="ios_defaultfloat"></a> &lt;ios&gt; defaultfloat
 
 부동 소수점 값에 기본 표시 형식을 사용하도록 `ios_base` 개체의 플래그를 구성합니다.
 
@@ -185,14 +180,14 @@ ios_base& defaultfloat(ios_base& _Iosbase);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Iosbase*<br/>
+*_Iosbase*\
 `ios_base` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 조작자는 _I `osbase.`[ios_base::unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::floatfield)`를 효과적으로 호출한 다음 _I `osbase`를 반환합니다.
 
-## <a name="fixed"></a>  fixed
+## <a name="fixed"></a> 고정
 
 부동 소수점 숫자가 고정 Decimal 표기법으로 표시되도록 지정합니다.
 
@@ -202,7 +197,7 @@ ios_base& fixed(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -240,7 +235,7 @@ int main( )
 1.1
 ```
 
-## <a name="hex"></a>  hex
+## <a name="hex"></a> 16 진수
 
 정수 변수가 16진 표기법으로 표시되도록 지정합니다.
 
@@ -250,7 +245,7 @@ ios_base& hex(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -267,7 +262,21 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 참조 [dec](../standard-library/ios-functions.md#dec) 사용 하는 방법의 예 `hex`합니다.
 
-## <a name="internal"></a>  internal
+## <a name="hexfloat"></a> hexfloat
+
+```cpp
+ios_base& hexfloat (ios_base& str);
+```
+
+## <a name="io_errc"></a> io_errc
+
+```cpp
+enum class io_errc {
+    stream = 1
+};
+```
+
+## <a name="internal"></a> 내부
 
 숫자의 부호를 왼쪽에 맞추고 숫자를 오른쪽에 맞춥니다.
 
@@ -277,7 +286,7 @@ ios_base& internal(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -313,7 +322,19 @@ int main( void )
 -..123.456
 ```
 
-## <a name="left"></a>  left
+## <a name="is_error_code_enum"></a> is_error_code_enum
+
+```cpp
+template <> struct is_error_code_enum<io_errc> : public true_type { };
+```
+
+## <a name="iostream_category"></a> iostream_category
+
+```cpp
+const error_category& iostream_category() noexcept;
+```
+
+## <a name="left"></a> 왼쪽
 
 너비가 출력 너비보다 작은 텍스트를 왼쪽에 여백을 두고 스트림 플러시에 표시합니다.
 
@@ -323,7 +344,7 @@ ios_base& left(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -352,11 +373,23 @@ int main( )
 ```
 
 ```Output
-                   5
 5
+        5
 ```
 
-## <a name="noboolalpha"></a>  noboolalpha
+## <a name="make_error_code"></a> make_error_code
+
+```cpp
+error_code make_error_code(io_errc e) noexcept;
+```
+
+## <a name="make_error_condition"></a> make_error_condition
+
+```cpp
+error_condition make_error_condition(io_errc e) noexcept;
+```
+
+## <a name="noboolalpha"></a> noboolalpha
 
 [bool](../cpp/bool-cpp.md) 형식의 변수가 스트림에서 1 또는 0으로 표시되도록 지정합니다.
 
@@ -366,7 +399,7 @@ ios_base& noboolalpha(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -385,7 +418,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 `noboolalpha` 사용 예제는 [boolalpha](../standard-library/ios-functions.md#boolalpha)를 참조하세요.
 
-## <a name="noshowbase"></a>  noshowbase
+## <a name="noshowbase"></a> noshowbase
 
 숫자가 표시되는 표기법 밑수 표시를 해제합니다.
 
@@ -395,7 +428,7 @@ ios_base& noshowbase(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -412,7 +445,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 `noshowbase`를 사용하는 방법에 대한 예제는 [showbase](../standard-library/ios-functions.md#showbase)를 참조하세요.
 
-## <a name="noshowpoint"></a>  noshowpoint
+## <a name="noshowpoint"></a> noshowpoint
 
 소수 부분이 0인 부동 소수점 숫자의 정수 부분만 표시합니다.
 
@@ -422,7 +455,7 @@ ios_base& noshowpoint(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -459,7 +492,7 @@ int main( )
 5
 ```
 
-## <a name="noshowpos"></a>  noshowpos
+## <a name="noshowpos"></a> noshowpos
 
 양수에 명시적으로 부호가 지정되지 않습니다.
 
@@ -469,7 +502,7 @@ ios_base& noshowpos(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -486,7 +519,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 `noshowpos` 사용 예제는 [showpos](../standard-library/ios-functions.md#showpos)를 참조하세요.
 
-## <a name="noskipws"></a>  noskipws
+## <a name="noskipws"></a> noskipws
 
 입력 스트림이 공백을 읽습니다.
 
@@ -496,7 +529,7 @@ ios_base& noskipws(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -528,7 +561,7 @@ int main() {
 }
 ```
 
-## <a name="nounitbuf"></a>  nounitbuf
+## <a name="nounitbuf"></a> nounitbuf
 
 출력이 버퍼링되고 버퍼가 가득 차면 처리되도록 합니다.
 
@@ -538,7 +571,7 @@ ios_base& nounitbuf(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -551,7 +584,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 조작자 `str`.[ unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::unitbuf`)를 반환 합니다 *str*합니다.
 
-## <a name="nouppercase"></a>  nouppercase
+## <a name="nouppercase"></a> nouppercase
 
 16진수 숫자와 과학적 표기법의 지수가 소문자로 표시되도록 지정합니다.
 
@@ -561,7 +594,7 @@ ios_base& nouppercase(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -576,7 +609,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 `nouppercase` 사용 예제는 [uppercase](../standard-library/ios-functions.md#uppercase)를 참조하세요.
 
-## <a name="oct"></a>  oct
+## <a name="oct"></a> 10 월
 
 정수 변수가 밑수 8 표기법으로 표시되도록 지정합니다.
 
@@ -586,7 +619,7 @@ ios_base& oct(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -603,7 +636,7 @@ ios_base& oct(ios_base& str);
 
 참조 [dec](../standard-library/ios-functions.md#dec) 사용 하는 방법의 예 `oct`합니다.
 
-## <a name="right"></a>  right
+## <a name="right"></a> 오른쪽
 
 너비가 출력 너비보다 작은 텍스트를 오른쪽에 여백을 두고 스트림 플러시에 표시합니다.
 
@@ -613,7 +646,7 @@ ios_base& right(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -660,7 +693,7 @@ int main( )
                    5
 ```
 
-## <a name="scientific"></a>  scientific
+## <a name="scientific"></a> 과학
 
 과학적 표기법을 사용하여 부동 소수점 숫자가 표시되도록 합니다.
 
@@ -670,7 +703,7 @@ ios_base& scientific(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -705,7 +738,7 @@ int main( )
 1.002300e+002
 ```
 
-## <a name="showbase"></a>  showbase
+## <a name="showbase"></a> showbase
 
 숫자가 표시되는 표기법 밑수를 표시합니다.
 
@@ -715,7 +748,7 @@ ios_base& showbase(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -759,7 +792,7 @@ int main( )
 144
 ```
 
-## <a name="showpoint"></a>  showpoint
+## <a name="showpoint"></a> showpoint
 
 소수 부분이 0인 경우에도 부동 소수점 숫자의 정수 부분과 소수점 이하 자릿수를 표시합니다.
 
@@ -769,7 +802,7 @@ ios_base& showpoint(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -786,7 +819,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 `showpoint` 사용 예제는 [noshowpoint](../standard-library/ios-functions.md#noshowpoint)를 참조하세요.
 
-## <a name="showpos"></a>  showpos
+## <a name="showpos"></a> showpos
 
 양수에 명시적으로 부호가 지정됩니다.
 
@@ -796,7 +829,7 @@ ios_base& showpos(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -831,7 +864,7 @@ int main( )
 +1
 ```
 
-## <a name="skipws"></a>  skipws
+## <a name="skipws"></a> skipws
 
 입력 스트림이 공백을 읽지 않습니다.
 
@@ -841,7 +874,7 @@ ios_base& skipws(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -883,7 +916,7 @@ Enter three characters: 1 2 3
 .3.
 ```
 
-## <a name="unitbuf"></a>  unitbuf
+## <a name="unitbuf"></a> unitbuf
 
 버퍼가 비어 있지 않으면 출력이 처리됩니다.
 
@@ -893,7 +926,7 @@ ios_base& unitbuf(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -918,7 +951,7 @@ ios_base& uppercase(ios_base& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*str*\
 [ios_base](../standard-library/ios-base-class.md) 형식의 개체에 대한 참조 또는 `ios_base`에서 상속되는 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -958,7 +991,3 @@ int main( void )
 a
 A
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<ios>](../standard-library/ios.md)<br/>

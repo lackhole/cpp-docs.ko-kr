@@ -3,12 +3,12 @@ title: 프로젝트 만들기(ATL 자습서, 1부)
 ms.custom: get-started-article
 ms.date: 05/06/2019
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-ms.openlocfilehash: 292faf1769baa2e1c3fc6e52ba6df065cf08766e
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: 0df793b23aaec57835774252eeac21b092f8a9e9
+ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221410"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67861014"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>프로젝트 만들기(ATL 자습서, 1부)
 
@@ -44,15 +44,10 @@ ms.locfileid: "65221410"
 
     소스 코드의 위치는 일반적으로 기본적으로 \Users\\\<사용자 이름 > \source\repos, 및 새 폴더를 자동으로 생성 됩니다.
 
-1. **확인**을 클릭하면 **ATL 프로젝트** 마법사가 열립니다.  
+1. Visual Studio 2019에서 기본값을 적용 하 고 클릭 **확인**합니다. 
+   Visual Studio 2017에서 클릭 **확인** 열려는 합니다 **ATL 프로젝트** 마법사. **응용 프로그램 설정**을 클릭하면 사용할 수 있는 옵션이 표시됩니다. 이 프로젝트에 컨트롤을 만듭니다 이므로 컨트롤에서 프로세스 서버를 해야 합니다. 유지 된 **응용 프로그램 종류** DLL로 합니다. **확인**을 클릭합니다.
 
-1. **응용 프로그램 설정**을 클릭하면 사용할 수 있는 옵션이 표시됩니다.
-
-1. 컨트롤을 만들 때 컨트롤은 in-process 서버여야 합니다. **응용 프로그램 종류**는 DLL로 그대로 합니다.
-
-1. 다른 옵션의 기본값을 그대로 사용하고 **확인**을 클릭합니다.
-
-**ATL 프로젝트 마법사**는 여러 개의 파일을 생성하여 프로젝트를 만듭니다. **솔루션 탐색기**에서 `Polygon` 개체를 확장하여 이러한 파일들을 볼 수 있습니다. 파일은 다음과 같습니다. 
+Visual Studio는 여러 파일을 생성 하 여 프로젝트를 만듭니다. **솔루션 탐색기**에서 `Polygon` 개체를 확장하여 이러한 파일들을 볼 수 있습니다. 파일은 다음과 같습니다.
 
 |파일|설명|
 |----------|-----------------|

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - nothrow_t class
 ms.assetid: dc7d5d42-ed5a-4919-88fe-bbad519b7a1d
-ms.openlocfilehash: 2313c436a1fd25149fa7ea72f122a6f323b40028
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd65b5006326850522a251cbcf7d655133a1aa8a
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223625"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245575"
 ---
 # <a name="nothrowt-structure"></a>nothrow_t 구조체
 
@@ -30,13 +30,3 @@ struct std::nothrow_t {};
 ## <a name="example"></a>예제
 
 `std::nothrow_t`를 함수 매개 변수로 사용하는 방법의 예제는 [operator new](../standard-library/new-operators.md#op_new) 및 [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)를 참조하세요.
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<new>
-
-**네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

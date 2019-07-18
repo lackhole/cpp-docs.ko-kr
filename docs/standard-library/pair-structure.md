@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - pair class
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
-ms.openlocfilehash: 2b7f2b736d24961376db4317d6d53e06153283c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f372ae036ff4843532efa18c3d518820b5f06111
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370647"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244426"
 ---
 # <a name="pair-structure"></a>pair 구조체
 
@@ -27,6 +27,8 @@ struct pair
     T1 first;
     T2 second;
     constexpr pair();
+    pair(const pair&) = default;
+    pair(pair&&) = default;
     constexpr pair(
         const T1& Val1,
         const T2& Val2);
@@ -39,18 +41,31 @@ struct pair
 
     template <class Other1, class Other2>
     constexpr pair(Other1&& Val1, Other2&& Val2);
+
+    template <class... Args1, class... Args2>
+    pair(piecewise_construct_t, tuple<Args1...> first_args, tuple<Args2...> second_args);
+
+    pair& operator=(const pair& p);
+    template<class U1, class U2> pair& operator=(const pair<U1, U2>& p);
+    pair& operator=(pair&& p) noexcept(see below );
+    template<class U1, class U2> pair& operator=(pair<U1, U2>&& p);
+
+    void swap(pair& p) noexcept(see below );
 };
+
+template<class T1, class T2>
+    pair(T1, T2) -> pair<T1, T2>;
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*Val1*<br/>
+*Val1*\
 `pair`의 첫 번째 요소를 초기화하는 값입니다.
 
-*Val2*<br/>
+*Val2*\
 `pair`의 두 번째 요소를 초기화하는 값입니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 다른 쌍의 요소를 초기화하는 데 해당 값을 사용할 쌍입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -144,7 +159,9 @@ int main( )
            << " is already in m1,\n so the insertion failed." << endl;
    }
 }
-/* Output:
+```
+
+```Output
 The pair p1 is: ( 10, 0.011 ).
 The pair p2 is: ( 10, 0.222 ).
 The pair p3 is: ( 10, 0.011 ).
@@ -153,15 +170,4 @@ The element (4,40) was inserted successfully in m1.
 The element with a key value of
 ( (pr2.first) -> first ) = 1 is already in m1,
 so the insertion failed.
-*/
 ```
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<utility>
-
-**네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

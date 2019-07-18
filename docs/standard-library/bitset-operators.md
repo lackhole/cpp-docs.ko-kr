@@ -12,23 +12,18 @@ helpviewer_keywords:
 - std::operator&amp; (bitset)
 - std::operator&gt;&gt; (bitset)
 - std::operator&lt;&lt; (bitset)
-ms.openlocfilehash: 1c4c1b6f6c023514a1d3ae46f6670247e4bf99d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 30367e003d2dad95e870854098e7fcae34f50efa
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380197"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243330"
 ---
 # <a name="ltbitsetgt-operators"></a>&lt;bitset&gt; 연산자
 
-||||
-|-|-|-|
-|[operator&amp;](#op_amp)|[operator&gt;&gt;](#op_gt_gt)|[operator&lt;&lt;](#op_lt_lt)|
-|[operator^](#op_xor)|[operator&#124;](#op_or)| |
+## <a name="op_amp"></a> 연산자&amp;
 
-## <a name="op_amp"></a>  operator&amp;
-
-두 bitset 간에 비트 `AND`를 수행합니다.
+두 bitset 간에 비트 `AND`을 수행합니다.
 
 ```cpp
 template <size_t size>
@@ -40,10 +35,10 @@ operator&(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 각각의 요소를 비트 `AND`로 결합할 두 bitset 중 첫 번째입니다.
 
-*right*<br/>
+*오른쪽*\
 각각의 요소를 비트 `AND`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -78,7 +73,7 @@ bitset 2: 0011
 bitset 3: 0001
 ```
 
-## <a name="op_lt_lt"></a>  operator&lt;&lt;
+## <a name="op_lt_lt"></a> 연산자&lt;&lt;
 
 비트 시퀀스의 텍스트 표현을 출력 스트림에 삽입합니다.
 
@@ -91,7 +86,7 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 출력 스트림에 문자열로 삽입할 **bitset\<N>** 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -102,7 +97,7 @@ basic_ostream<CharType, Traits>& operator<<(
 
 템플릿 함수 오버 로드 `operator<<`, bitset을 먼저 문자열로 변환 하지 않고 작성할 수 있도록 합니다. 템플릿 함수는 다음을 효과적으로 실행합니다.
 
-**ostr** << _ *Right*. [to_string](bitset-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > ( )
+**ostr** << _*오른쪽*합니다. [to_string](bitset-class.md) <**CharType**하십시오 **특성**하십시오 **할당자**\<**CharType**>>)
 
 ### <a name="example"></a>예제
 
@@ -135,7 +130,7 @@ int main( )
 }
 ```
 
-## <a name="op_gt_gt"></a>  operator&gt;&gt;
+## <a name="op_gt_gt"></a> 연산자&gt;&gt;
 
 bitset에 대한 비트 문자의 문자열을 읽습니다.
 
@@ -150,10 +145,10 @@ _Istr,
 
 ### <a name="parameters"></a>매개 변수
 
-*_Istr*<br/>
+*_Istr*\
 bitset에 삽입할 입력 스트림에 입력되는 문자열입니다.
 
-*right*<br/>
+*오른쪽*\
 입력 스트림에서 비트를 수신하는 bitset입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -221,7 +216,7 @@ int main()
 }
 ```
 
-## <a name="op_xor"></a>  operator^
+## <a name="op_xor"></a> operator ^
 
 두 bitset 간에 비트 `EXCLUSIVE-OR`을 수행합니다.
 
@@ -235,10 +230,10 @@ operator^(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 bitset 중 첫 번째입니다.
 
-*right*<br/>
+*오른쪽*\
 각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -273,7 +268,7 @@ bitset 2: 0011
 bitset 3: 0110
 ```
 
-## <a name="op_or"></a>  operator&#124;
+## <a name="op_or"></a> 연산자&#124;
 
 두 bitset 간에 비트 `OR`을 수행합니다.
 
@@ -287,10 +282,10 @@ operator|(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 각각의 요소를 비트 `OR`로 결합할 두 bitset 중 첫 번째입니다.
 
-*right*<br/>
+*오른쪽*\
 각각의 요소를 비트 `OR`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -324,7 +319,3 @@ bitset 1: 0101
 bitset 2: 0011
 bitset 3: 0111
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<bitset>](../standard-library/bitset.md)<br/>

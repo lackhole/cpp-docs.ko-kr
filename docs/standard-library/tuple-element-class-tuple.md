@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - std::tuple_element
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c
-ms.openlocfilehash: b8b50e04e530e2d21b7a4e042d9feb2984e639db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0836ed683b398981e95e401a73ded6367c7ab472
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411866"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241815"
 ---
 # <a name="tupleelement-class"></a>tuple_element 클래스
 
@@ -56,22 +56,22 @@ template <class T1, class T2>
 
 ### <a name="parameters"></a>매개 변수
 
-*Index*<br/>
+*인덱스*\
 지정된 요소의 인덱스입니다.
 
-*Tuple*<br/>
+*튜플*\
 튜플의 형식입니다.
 
-*Elem*<br/>
+*Elem*\
 배열 요소의 형식입니다.
 
-*Size*<br/>
+*크기*\
 배열의 크기입니다.
 
-*T1*<br/>
+*T1*\
 쌍의 첫 번째 요소의 형식입니다.
 
-*T2*<br/>
+*T2*\
 쌍의 두 번째 요소 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -181,7 +181,3 @@ int main() {
 **헤더:** \<유틸리티 > (쌍 특수화의 경우)에 대 한
 
 **네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[tuple ](../standard-library/tuple-class.md)<br/>

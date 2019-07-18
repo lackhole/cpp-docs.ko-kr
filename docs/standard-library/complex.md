@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-ms.openlocfilehash: afcdb1246d9c02f83dbc8708326d10e802ad2779
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3d4330f8b0fcbce940f6647ebb8920f0b1969b6
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212094"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244679"
 ---
 # <a name="ltcomplexgt"></a>&lt;complex&gt;
 
 컨테이너 템플릿 클래스를 정의 `complex` 템플릿과 해당 지원 합니다.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <complex>
-```
+**헤더**: \<complex>
+
+**네임스페이스:** std
 
 ## <a name="remarks"></a>설명
 
@@ -42,7 +42,7 @@ ms.locfileid: "62212094"
 
    (*a*/(*a*<sup>2</sup> + *b*<sup>2</sup>), -*b*/(*a*<sup>2</sup> + *b*<sup>2</sup>))
 
-복소수를 나타내는 방법으로 *z* = (*는*를 *b*) 형태로 *z* = *를*  +  *bi*, 여기서 *합니까*<sup>2</sup> =-1, 규칙에 실수 집합의 대 수는 복소수 집합 및 해당 구성 요소에 적용할 수 있습니다. 예를 들어:
+복소수를 나타내는 방법으로 *z* = (*는*를 *b*) 형태로 *z* = *를*  +  *bi*, 여기서 *합니까*<sup>2</sup> =-1, 규칙에 실수 집합의 대 수는 복소수 집합 및 해당 구성 요소에 적용할 수 있습니다. 예:
 
    (1 + 2*i*) \* (2 + 3*i*) = 1 \* (2 + 3*i*) + 2*i* \* (2 + 3*i*) = (2 + 3*i*) + (4*i* + 6*i*<sup>2</sup>) = (2 - 6) + (3 + 4)*i* = -4 + 7*i*
 
@@ -68,12 +68,20 @@ ms.locfileid: "62212094"
 
 여러 값을 반환할 수 있는 함수는-π 보다 크고 해당 인수에 대 한 보안 주체 값을 반환 하는 데 필요한 지정 되지 않는 보다 크거나 + π 또는 단일 값으로 유지 하 합니다. 모든 각도 라디안으로 나타내야 원 안에 2 π 라디안 (360도) 경우가 있습니다.
 
+## <a name="members"></a>멤버
+
 ### <a name="functions"></a>함수
 
-|기능|설명|
+|||
 |-|-|
 |[abs](../standard-library/complex-functions.md#abs)|복소수의 모듈러스를 계산합니다.|
+|[acos](../standard-library/complex-functions.md#acos)||
+|[acosh](../standard-library/complex-functions.md#acosh)||
 |[arg](../standard-library/complex-functions.md#arg)|복소수에서 인수를 추출합니다.|
+|[asin](../standard-library/complex-functions.md#asin)||
+|[asinh](../standard-library/complex-functions.md#asinh)||
+|[atan](../standard-library/complex-functions.md#atan)||
+|[atanh](../standard-library/complex-functions.md#atanh)||
 |[conj](../standard-library/complex-functions.md#conj)|복소수의 켤레 복소수를 반환합니다.|
 |[cos](../standard-library/complex-functions.md#cos)|복소수의 코사인을 반환합니다.|
 |[cosh](../standard-library/complex-functions.md#cosh)|복소수의 쌍곡 코사인을 반환합니다.|
@@ -84,6 +92,7 @@ ms.locfileid: "62212094"
 |[norm](../standard-library/complex-functions.md#norm)|복소수 기준을 추출합니다.|
 |[polar](../standard-library/complex-functions.md#polar)|지정한 모듈러스 및 인수에 해당하는 복소수를 데카르트 형태로 반환합니다.|
 |[pow](../standard-library/complex-functions.md#pow)|복소수인 밑수를 다른 복소수로 거듭제곱하여 얻은 복소수를 계산합니다.|
+|[proj](../standard-library/complex-functions.md#proj)||
 |[real](../standard-library/complex-functions.md#real)|복소수의 실수 구성 요소를 추출합니다.|
 |[sin](../standard-library/complex-functions.md#sin)|복소수의 사인을 반환합니다.|
 |[sinh](../standard-library/complex-functions.md#sinh)|복소수의 쌍곡 사인을 반환합니다.|
@@ -93,7 +102,7 @@ ms.locfileid: "62212094"
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
 |[operator!=](../standard-library/complex-operators.md#op_neq)|하나 또는 둘 모두 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 같지 않은지 테스트합니다.|
 |[operator*](../standard-library/complex-operators.md#op_star)|하나 또는 둘 다 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 곱합니다.|
@@ -106,7 +115,7 @@ ms.locfileid: "62212094"
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|||
 |-|-|
 |[complex\<double>](../standard-library/complex-double.md)|형식의 두 개체의 정렬된 된 쌍을 저장 하는 개체를 설명 하는 명시적으로 특수화 된 템플릿 클래스 **이중**, 여기서 첫 번째 복소수의 실수 부분을 나타내고 두 번째 허수부를 나타냅니다.|
 |[complex\<float>](../standard-library/complex-float.md)|형식의 두 개체의 정렬된 된 쌍을 저장 하는 개체를 설명 하는 명시적으로 특수화 된 템플릿 클래스 **float**, 여기서 첫 번째 복소수의 실수 부분을 나타내고 두 번째 허수부를 나타냅니다.|

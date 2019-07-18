@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - const_mem_fun1_t class
 ms.assetid: 250fac30-9663-4133-9051-6303f76ea259
-ms.openlocfilehash: df984d90f8b632f8e3e3b183943343952d45b8be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ccd9d7e58b9cadec83b64df5553564db20a5745
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62211977"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244524"
 ---
 # <a name="constmemfun1t-class"></a>const_mem_fun1_t 클래스
 
@@ -30,13 +30,13 @@ class const_mem_fun1_t : public binary_function<const Type *, Arg, Result>
 
 ### <a name="parameters"></a>매개 변수
 
-*member_ptr*<br/>
+*member_ptr*\
 함수 개체로 변환할 `Type` 클래스의 멤버 함수 포인터입니다.
 
-*left*<br/>
+*왼쪽*\
 **const** 개체를 *member_ptr* 멤버 함수가 호출 됩니다.
 
-*right*<br/>
+*오른쪽*\
 에 지정 되는 인수 *member_ptr*합니다.
 
 ## <a name="return-value"></a>반환 값
@@ -50,14 +50,3 @@ class const_mem_fun1_t : public binary_function<const Type *, Arg, Result>
 ## <a name="example"></a>예제
 
 `const_mem_fun1_t`의 생성자는 직접 사용되는 경우가 거의 없습니다. `mem_fn` 멤버 함수를 적용 하는 데 사용 됩니다. 참조 [mem_fn](../standard-library/functional-functions.md#mem_fn) 멤버 함수 어댑터를 사용 하는 방법의 예입니다.
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<functional>
-
-**네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>

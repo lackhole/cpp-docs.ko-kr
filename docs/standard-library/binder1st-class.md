@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - binder1st class
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
-ms.openlocfilehash: f70a1a4a0903b66edf5f42e59788b9a2d97fc967
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 384a870a10c9f806684443d8c67647e924b6b2aa
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388217"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243378"
 ---
 # <a name="binder1st-class"></a>binder1st 클래스
 
@@ -43,13 +43,13 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*binary_fn*<br/>
+*binary_fn*\
 단항 함수 개체로 변환할 이항 함수 개체입니다.
 
-*left*<br/>
+*왼쪽*\
 이항 함수 개체의 첫 번째 인수가 바인딩되는 값입니다.
 
-*right*<br/>
+*오른쪽*\
 수정된 이진 개체를 두 번째 인수의 고정 값과 비교하는 인수의 값입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -58,9 +58,9 @@ protected:
 
 ## <a name="remarks"></a>설명
 
-이항 함수 개체의 복사본을 저장 하는 템플릿 클래스 *binary_fn* 에서 `op`, 및 사본을 *왼쪽* 에서 `value`합니다. 해당 멤버 함수 정의 `operator()` 반환 `op( value, right )`합니다.
+이항 함수 개체의 복사본을 저장 하는 템플릿 클래스 *binary_fn* 에서 `op`, 및 사본을 *왼쪽* 에서 `value`합니다. 해당 멤버 함수 정의 `operator()` 반환 `op(value, right)`합니다.
 
-경우 *binary_fn* 형식의 개체인 `Operation` 하 고 `c` 상수 이면 `bind1st( binary_fn, c )` 더 편리 하 게 해당 하는 `binder1st<Operation>( binary_fn, c )`합니다. 자세한 내용은 [bind1st](../standard-library/functional-functions.md#bind1st)합니다.
+경우 *binary_fn* 형식의 개체인 `Operation` 하 고 `c` 상수 이면 `bind1st(binary_fn, c)` 더 편리 하 게 해당 하는 `binder1st<Operation>(binary_fn, c)`합니다. 자세한 내용은 [bind1st](../standard-library/functional-functions.md#bind1st)합니다.
 
 ## <a name="example"></a>예제
 
@@ -105,20 +105,10 @@ int main()
     cout << "The number of elements in v1 less than 10 is: "
          << result2 << "." << endl;
 }
-/* Output:
+```
+
+```Output
 The vector v1 = ( 0 5 10 15 20 25 )
 The number of elements in v1 greater than 10 is: 3.
 The number of elements in v1 less than 10 is: 2.
-*/
 ```
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<functional>
-
-**네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>

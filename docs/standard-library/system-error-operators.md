@@ -5,20 +5,16 @@ f1_keywords:
 - system_error/std::operator!=
 - system_error/std::operator==
 ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c
-ms.openlocfilehash: d5c8f49c4a38862d62b7fe8212d98c87949fecfc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5cf6a455beb5654ef65f7411db4783a32c71d625
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412126"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246219"
 ---
 # <a name="ltsystemerrorgt-operators"></a>&lt;system_error&gt; 연산자
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&lt;](#op_lt)|[operator==](#op_eq_eq)|
-
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> 연산자 = =
 
 연산자의 좌변에 있는 개체가 우변에 있는 개체와 같은지 테스트합니다.
 
@@ -28,14 +24,18 @@ bool operator==(const error_code& left,
 
 bool operator==(const error_condition& left,
     const error_code& right);
+
+bool operator==(const error_condition& left,
+    const error_condition& right);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|---------------|-----------------|
-|*left*|같은지 테스트할 개체입니다.|
-|*right*|같은지 테스트할 개체입니다.|
+*왼쪽*\
+같은지 테스트할 개체입니다.
+
+*오른쪽*\
+같은지 테스트할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -45,24 +45,24 @@ bool operator==(const error_condition& left,
 
 함수는 `left.category() == right.category() && left.value() == right.value()`를 반환합니다.
 
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 연산자의 좌변에 있는 개체가 우변에 있는 개체와 같지 않은지 테스트합니다.
 
 ```cpp
-bool operator!=(const error_code& left,
-    const error_condition& right);
-
-bool operator!=(const error_condition& left,
-    const error_code& right);
+bool operator!=(const error_code& left, const error_condition& right);
+bool operator!=(const error_condition& left, const error_code& right);
+bool operator!=(const error_code& left, const error_code& right);
+bool operator!=(const error_condition& left, const error_condition& right);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|---------------|-----------------|
-|*left*|같지 않은지 테스트할 개체입니다.|
-|*right*|같지 않은지 테스트할 개체입니다.|
+*왼쪽*\
+같지 않은지 테스트할 개체입니다.
+
+*오른쪽*\
+같지 않은지 테스트할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -72,7 +72,7 @@ bool operator!=(const error_condition& left,
 
 함수는 `!(left == right)`를 반환합니다.
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> 연산자&lt;
 
 개체가 비교를 위해 전달된 개체보다 작은지 여부를 테스트합니다.
 
@@ -102,10 +102,11 @@ inline bool operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|---------------|-----------------|
-|*left*|비교할 개체입니다.|
-|*right*|비교할 개체입니다.|
+*왼쪽*\
+비교할 개체입니다.
+
+*오른쪽*\
+비교할 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -115,6 +116,9 @@ inline bool operator<(
 
 이 함수는 오류 순서를 테스트합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="op_ostream"></a> 연산자&lt;&lt;
 
-[<system_error>](../standard-library/system-error.md)<br/>
+```cpp
+template <class charT, class traits> 
+    basic_ostream<charT, traits>& operator<<(basic_ostream<charT, traits>& os, const error_code& ec);
+```

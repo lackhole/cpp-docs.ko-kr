@@ -9,21 +9,16 @@ f1_keywords:
 - iosfwd/std::wios
 - iosfwd/std::wstreampos
 ms.assetid: 0b962632-3439-44de-bf26-20c67a7f0ff3
-ms.openlocfilehash: 1f0ff93c22263ca4b35377b5d9af089816e8895a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0fd73cc53c5d538469cb957b7b4c4ec56783ade
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159264"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245274"
 ---
 # <a name="ltiosgt-typedefs"></a>&lt;ios&gt; 형식 정의
 
-||||
-|-|-|-|
-|[ios](#ios)|[streamoff](#streamoff)|[streampos](#streampos)|
-|[streamsize](#streamsize)|[wios](#wios)|[wstreampos](#wstreampos)|
-
-## <a name="ios"></a>  ios
+## <a name="ios"></a> ios
 
 이전 iostream 라이브러리의 ios 클래스를 지원합니다.
 
@@ -35,7 +30,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 
 형식은 템플릿 클래스에 대 한 동의어 [basic_ios](../standard-library/basic-ios-class.md)형식의 요소용으로 특수화 된 **char** 기본 문자 특성을 포함 합니다.
 
-## <a name="streamoff"></a>  streamoff
+## <a name="streamoff"></a> streamoff
 
 내부 작업을 지원합니다.
 
@@ -51,7 +46,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 
 이 형식은 다양한 스트림 위치 지정 작업과 관련된 바이트 오프셋을 저장할 수 있는 개체를 설명하는 부호 있는 정수입니다. 해당 표현에는 32개 이상의 값 비트가 있습니다. 스트림 내에서 임의의 바이트 위치를 나타낼 만큼 충분히 크지 않아도 됩니다. 값 `streamoff(-1)` 일반적으로 잘못 된 오프셋을 나타냅니다.
 
-## <a name="streampos"></a>  streampos
+## <a name="streampos"></a> streampos
 
 버퍼 포인터 또는 파일 포인터의 현재 위치를 보유합니다.
 
@@ -134,7 +129,7 @@ typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
 
 형식은 템플릿 클래스에 대 한 동의어 [basic_ios](../standard-library/basic-ios-class.md)형식의 요소용으로 특수화 된 **wchar_t** 기본 문자 특성을 포함 합니다.
 
-## <a name="wstreampos"></a>  wstreampos
+## <a name="wstreampos"></a> wstreampos
 
 버퍼 포인터 또는 파일 포인터의 현재 위치를 보유합니다.
 
@@ -167,7 +162,3 @@ int main( )
 ```Output
 7
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<ios>](../standard-library/ios.md)<br/>

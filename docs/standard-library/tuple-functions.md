@@ -13,20 +13,41 @@ helpviewer_keywords:
 - std::get [C++]
 - std::make_tuple [C++]
 - std::tie [C++]
-ms.openlocfilehash: 93c11a89f7cdfa3949be2d97e401fad199a17d97
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 46c386ecffb8fbbf7c07d40b334afd91d261ebcf
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278972"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241670"
 ---
 # <a name="lttuplegt-functions"></a>&lt;tuple&gt; 함수
 
-||||
-|-|-|-|
-|[get](#get)|[make_tuple](#make_tuple)|[tie](#tie)|
+## <a name="apply"></a> 적용
 
-## <a name="get"></a>  get
+```cpp
+template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t);
+```
+
+### <a name="remarks"></a>설명
+
+함수 호출 *F* 튜플을 사용 하 여 *t*합니다.
+
+## <a name="forward"></a> forward_as_tuple
+
+```cpp
+template <class... TTypes>
+    constexpr tuple<TTypes&&...> forward_as_tuple(TTypes&&...) noexcept;
+```
+
+### <a name="return-value"></a>반환 값
+
+`tuple<TTypes&&...>(std::forward<TTypes>(t)...)`를 반환합니다.
+
+### <a name="remarks"></a>설명
+
+인수에 대 한 참조의 튜플을 만듭니다 *t* 함수에 인수로 전달에 적합 합니다.
+
+## <a name="get"></a> get
 
 인덱스 또는 형식(C++14)을 기준으로 `tuple` 개체에서 요소를 가져옵니다.
 
@@ -60,17 +81,17 @@ template <class T, class... Types>
 
 ### <a name="parameters"></a>매개 변수
 
-*Index*<br/>
+*인덱스*\
 가져올 요소의 인덱스입니다.
 
-*유형*<br/>
+*형식*\
 튜플에서 선언된 형식의 시퀀스로, 선언 순서대로 나열됩니다.
 
-*T*<br/>
+*T*\
 가져올 요소의 형식입니다.
 
-*Tuple*<br/>
-임의의 수의 요소가 포함된 std::tuple입니다.
+*튜플*\
+`std::tuple` 임의 개수의 요소를 포함 하는 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -107,7 +128,17 @@ int main() {
 0 1.42 Call me Tuple
 ```
 
-## <a name="make_tuple"></a>  make_tuple
+## <a name="make_from_tuple"></a> make_from_tuple
+
+```cpp
+template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
+```
+
+### <a name="remarks"></a>설명
+
+`return make_from_tuple_impl<T>(forward<Tuple>(t), make_index_sequence<tuple_size_v<decay_t<Tuple>>>{})`와 같습니다.
+
+## <a name="make_tuple"></a> make_tuple
 
 요소 값에서 `tuple`을 만듭니다.
 
@@ -118,10 +149,10 @@ template <class T1, class T2, ..., class TN>
 
 ### <a name="parameters"></a>매개 변수
 
-*TN*<br/>
+*TN*\
 Nth 함수 매개 변수의 형식입니다.
 
-*tN*<br/>
+*TN*\
 Nth 함수 매개 변수의 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -165,7 +196,14 @@ int main() {
 4 5 6 7
 ```
 
-## <a name="tie"></a>  tie
+## <a name="swap"></a> 교환
+
+```cpp
+template <class... Types>
+    void swap(tuple<Types...>& x, tuple<Types...>& y) noexcept(see below );
+```
+
+## <a name="tie"></a> 동률
 
 요소 선언에서 `tuple`을 만듭니다.
 
@@ -176,7 +214,7 @@ tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
 
 ### <a name="parameters"></a>매개 변수
 
-*TN*<br/>
+*TN*\
 N번째 튜플 요소의 기본 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -224,6 +262,26 @@ int main() {
 0 1 2 3
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="tuple_cat"></a> tuple_cat
 
-[\<tuple>](../standard-library/tuple.md)<br/>
+```cpp
+template <class... Tuples> constexpr tuple<CTypes...> tuple_cat(Tuples&&...);
+```
+
+### <a name="return-value"></a>반환 값
+
+각 type 요소를 초기화 하 여 생성 하는 튜플 개체입니다.
+
+## <a name="tuple_element_t"></a> tuple_element_t
+
+```cpp
+template <size_t I, class T>
+    using tuple_element_t = typename tuple_element<I, T>::type;
+```
+
+## <a name="tuple_size_v"></a> tuple_size_v
+
+```cpp
+template <class T>
+    inline constexpr size_t tuple_size_v = tuple_size<T>::value;
+```

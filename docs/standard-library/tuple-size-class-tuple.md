@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - std::tuple_size
 ms.assetid: 73852fc5-eb68-41f1-8379-465cedc2314a
-ms.openlocfilehash: 1a069bcf5385a014438e36983e455ec3761ce727
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c03c02dde3178a257a83720ff437f7981f5f7ed
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278945"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68241549"
 ---
 # <a name="tuplesize-class"></a>tuple_size 클래스
 
@@ -54,24 +54,28 @@ template <class Tuple>
    struct tuple_size<const volatile Tuple>;
 ```
 
+```cpp
+template <class T> inline constexpr size_t tuple_size_v = tuple_size<T>::value;
+```
+
 ### <a name="parameters"></a>매개 변수
 
-*Tuple*<br/>
+*튜플*\
 튜플의 형식입니다.
 
-*Elem*<br/>
+*Elem*\
 배열 요소의 형식입니다.
 
-*Size*<br/>
+*크기*\
 배열의 크기입니다.
 
-*T1*<br/>
+*T1*\
 쌍의 첫 번째 구성원 형식입니다.
 
-*T2*<br/>
+*T2*\
 쌍의 두 번째 구성원 형식입니다.
 
-*유형*<br/>
+*형식*\
 튜플 요소의 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -120,9 +124,3 @@ int main()
 **헤더:** \<utility>(쌍 특수화용)
 
 **네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[\<tuple>](../standard-library/tuple.md)<br/>
-[tuple](../standard-library/tuple-class.md)<br/>
-[tuple_element 클래스](../standard-library/tuple-element-class-tuple.md)<br/>

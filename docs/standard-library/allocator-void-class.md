@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - allocator<void> class
 ms.assetid: abfb40f5-c600-46a6-b130-f42c6535b2bd
-ms.openlocfilehash: 5591570527946895d1e0456b23327d7fabc4bef5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7ac7fbaa8c50eb13457271cf96ddc3412733c833
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377922"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245876"
 ---
 # <a name="allocatorltvoidgt-class"></a>allocator&lt;void&gt; 클래스
 
@@ -50,13 +50,3 @@ class allocator<void> {
 - [value_type](../standard-library/allocator-class.md#value_type).
 
 - [rebind](../standard-library/allocator-class.md#rebind), 중첩된 템플릿 클래스.
-
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<memory>
-
-**네임스페이스:** std
-
-## <a name="see-also"></a>참고자료
-
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

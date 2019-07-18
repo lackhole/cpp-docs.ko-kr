@@ -15,27 +15,20 @@ helpviewer_keywords:
 - std::operator!= (complex)
 - std::operator&gt;&gt; (complex)
 - std::operator&lt;&lt; (complex), std::operator== (complex)
-ms.openlocfilehash: 8641e2f8bcc80cd2ba9b6b68e5574a476f60312e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8f8b623ad53b84b8e614a1831d1a060df890931
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62371622"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68244703"
 ---
 # <a name="ltcomplexgt-operators"></a>&lt;complex&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;&gt;](#op_gt_gt)|[operator&lt;&lt;](#op_lt_lt)|
-|[operator*](#op_star)|[operator+](#op_add)|[operator-](#operator-)|
-|[operator/](#op_div)|[연산자==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 하나 또는 둘 모두 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 같지 않은지 테스트합니다.
 
 ```
-
 template <class Type>
 bool operator!=(
     const complex<Type>& left,
@@ -54,10 +47,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 같지 않은지 테스트할 매개 변수 형식의 복소수 또는 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 같지 않은지 테스트할 매개 변수 형식의 복소수 또는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -170,7 +163,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_star"></a>  operator\*
+## <a name="op_star"></a> 연산자\*
 
 하나 또는 둘 다 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 곱합니다.
 
@@ -194,10 +187,10 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 두 복소수를 곱할 복소수의 매개 변수 형식이 된 숫자의 첫 번째는 \* 작업 합니다.
 
-*right*<br/>
+*오른쪽*\
 두 복소수를 곱할 복소수의 매개 변수 형식을 수의 두 번째는 \* 작업 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -268,7 +261,7 @@ int main( )
 }
 ```
 
-## <a name="op_add"></a>  operator+
+## <a name="op_add"></a> operator +
 
 하나 또는 둘 다 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 더합니다.
 
@@ -295,10 +288,10 @@ complex<Type> operator+(const complex<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 두 복소수 중 첫 번째 복소수이거나 + 연산으로 더할 복소수의 매개 변수 형식을 가진 숫자입니다.
 
-*right*<br/>
+*오른쪽*\
 두 복소수 중 두 번째 복소수이거나 + 연산으로 더할 복소수의 매개 변수 형식을 가진 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -409,7 +402,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="operator-"></a>  operator-
+## <a name="operator-"></a> 연산자-
 
 하나 또는 둘 다 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 뺍니다.
 
@@ -435,10 +428,10 @@ complex<Type> operator-(const complex<Type>& left);
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 두 복소수 중 첫 번째 복소수이거나 + 연산으로 뺄 복소수의 매개 변수 형식을 가진 숫자입니다.
 
-*right*<br/>
+*오른쪽*\
 두 복소수 중 두 번째 복소수이거나 + 연산으로 뺄 복소수의 매개 변수 형식을 가진 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -551,7 +544,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ```
 
-## <a name="op_div"></a>  operator/
+## <a name="op_div"></a> 연산자 /
 
 하나 또는 둘 다 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 나눕니다.
 
@@ -574,10 +567,10 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 복소수이거나 / 연산으로 나눌 분모인 복소수의 매개 변수 형식을 가진 숫자입니다.
 
-*right*<br/>
+*오른쪽*\
 복소수이거나 / 연산으로 분자를 나누는 데 사용할 분모인 복소수의 매개 변수 형식을 가진 숫자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -671,7 +664,7 @@ The modulus of cs3 is: 1.66667
 The argument of cs3 is: -0.523599 radians, which is -30 degrees.
 ```
 
-## <a name="op_lt_lt"></a>  operator&lt;&lt;
+## <a name="op_lt_lt"></a> 연산자&lt;&lt;
 
 지정된 복소수를 출력 스트림에 삽입합니다.
 
@@ -684,10 +677,10 @@ basic_ostream<Elem, Traits>& operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ostr*<br/>
+*Ostr*\
 복소수를 입력하는 출력 스트림입니다.
 
-*right*<br/>
+*오른쪽*\
 출력 스트림에 입력하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -733,7 +726,7 @@ The modulus of c2 is: 2
 The argument of c2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> 연산자 = =
 
 하나 또는 둘 모두 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 같은지 테스트합니다.
 
@@ -757,10 +750,10 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*왼쪽*\
 같지 않은지 테스트할 매개 변수 형식의 복소수 또는 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 같지 않은지 테스트할 매개 변수 형식의 복소수 또는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -873,7 +866,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_gt_gt"></a>  operator&gt;&gt;
+## <a name="op_gt_gt"></a> 연산자&gt;&gt;
 
 입력 스트림에서 복소수 값을 추출합니다.
 
@@ -887,10 +880,10 @@ basic_istream<Elem, Traits>& operator>>(
 
 ### <a name="parameters"></a>매개 변수
 
-*Istr*<br/>
+*Istr*\
 복소수를 추출할 입력 스트림입니다.
 
-*right*<br/>
+*오른쪽*\
 입력 스트림에서 추출하는 복소수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -932,7 +925,3 @@ int main( )
 Input a complex number ( try: 2.0 ): 2.0
 2.0
 ```
-
-## <a name="see-also"></a>참고자료
-
-[\<complex>](../standard-library/complex.md)<br/>

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::function [C++], target
 - std::function [C++], target_type
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
-ms.openlocfilehash: 44c7691cc967b13b4fa94a7c51da57b7bf4d511f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d775af68b8238093c794a0f78d7e24f2a515ee56
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159719"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68243802"
 ---
 # <a name="function-class"></a>function 클래스
 
@@ -79,10 +79,10 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*Fty*<br/>
+*Fty*\
 래핑할 함수 형식입니다.
 
-*Ax*<br/>
+*Ax*\
 할당자 함수입니다.
 
 ## <a name="remarks"></a>설명
@@ -103,21 +103,23 @@ public:
 
 빈 `function` 개체는 호출 가능 개체나 호출 가능 개체에 대한 참조를 포함하지 않습니다.
 
+## <a name="members"></a>멤버
+
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|||
 |-|-|
 |[function](#function)|비어 있거나 고정된 시그니처가 포함된 임의 형식의 호출 가능 개체를 저장하는 래퍼를 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|||
 |-|-|
 |[result_type](#result_type)|호출 가능 개체의 반환 형식입니다.|
 
-### <a name="member-functions"></a>멤버 함수
+### <a name="functions"></a>함수
 
-|멤버 함수|설명|
+|||
 |-|-|
 |[assign](#assign)|이 함수 개체에 호출 가능 개체를 할당합니다.|
 |[swap](#swap)|두 개의 호출 가능 개체를 바꿉니다.|
@@ -126,19 +128,13 @@ public:
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
-|[function::operator unspecified](#op_unspecified)|저장된 호출 가능 개체가 있는지 테스트합니다.|
-|[function::operator()](#op_call)|호출 가능 개체를 호출합니다.|
-|[function::operator=](#op_eq)|저장된 호출 가능 개체를 바꿉니다.|
+|[지정 하지 않으면 연산자](#op_unspecified)|저장된 호출 가능 개체가 있는지 테스트합니다.|
+|[operator()](#op_call)|호출 가능 개체를 호출합니다.|
+|[operator=](#op_eq)|저장된 호출 가능 개체를 바꿉니다.|
 
-## <a name="requirements"></a>요구 사항
-
-**헤더:** \<functional>
-
-**네임스페이스:** std
-
-## <a name="assign"></a>  function::assign
+## <a name="assign"></a> 할당
 
 이 함수 개체에 호출 가능 개체를 할당합니다.
 
@@ -156,20 +152,20 @@ template <class Fx, class Alloc>
 
 ### <a name="parameters"></a>매개 변수
 
-*_Func*<br/>
+*_Func*\
 호출 가능 개체입니다.
 
-*_Fnref*<br/>
+*_Fnref*\
 호출 가능 개체가 포함된 참조 래퍼입니다.
 
-*Ax*<br/>
+*Ax*\
 할당자 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 멤버 함수는 각각 `*this`에 의해 포함된 `callable object`를 `operand`로 전달된 호출 가능 개체로 바꿉니다. 할당자 개체를 사용 하 여 저장소를 할당 하는 둘 다 *Ax*합니다.
 
-## <a name="function"></a>  function::function
+## <a name="function"></a> 함수
 
 비어 있거나 고정된 시그니처가 포함된 임의 형식의 호출 가능 개체를 저장하는 래퍼를 생성합니다.
 
@@ -194,22 +190,22 @@ template <class Fx, class Alloc>
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 복사할 함수 개체입니다.
 
-*Fx*<br/>
+*Fx*\
 호출 가능 개체의 형식입니다.
 
-*_Func*<br/>
+*_Func*\
 래핑할 호출 가능 개체입니다.
 
-*Alloc*<br/>
+*할당*\
 할당자 형식입니다.
 
-*Ax*<br/>
+*Ax*\
 할당자입니다.
 
-*_Fnref*<br/>
+*_Fnref*\
 래핑할 호출 가능 개체 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -286,7 +282,7 @@ f is non-empty (correct).
 g is empty (correct).
 ```
 
-## <a name="op_unspecified"></a>  function::operator unspecified
+## <a name="op_unspecified"></a> 지정 하지 않으면 연산자
 
 저장된 호출 가능 개체가 있는지 테스트합니다.
 
@@ -328,7 +324,7 @@ not empty == false
 not empty == true
 ```
 
-## <a name="op_call"></a>  function::operator()
+## <a name="op_call"></a> operator()
 
 호출 가능 개체를 호출합니다.
 
@@ -341,10 +337,10 @@ result_type operator()(
 
 ### <a name="parameters"></a>매개 변수
 
-*TN*<br/>
+*TN*\
 N번째 인수의 형식입니다.
 
-*tN*<br/>
+*TN*\
 N번째 호출 인수입니다.
 
 ### <a name="remarks"></a>설명
@@ -379,7 +375,7 @@ empty == false
 val == -3
 ```
 
-## <a name="op_eq"></a>  function::operator=
+## <a name="op_eq"></a> 연산자 =
 
 저장된 호출 가능 개체를 바꿉니다.
 
@@ -394,16 +390,16 @@ template <class Fty>
 
 ### <a name="parameters"></a>매개 변수
 
-*npc*<br/>
+*npc*\
 null 포인터 상수입니다.
 
-*right*<br/>
+*오른쪽*\
 복사할 함수 개체입니다.
 
-*fn*<br/>
+*fn*\
 래핑할 호출 가능 개체입니다.
 
-*fnref*<br/>
+*fnref*\
 래핑할 호출 가능 개체 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -461,7 +457,7 @@ empty == false
 val == -3
 ```
 
-## <a name="result_type"></a>  function::result_type
+## <a name="result_type"></a> result_type
 
 호출 가능 개체의 반환 형식입니다.
 
@@ -503,7 +499,7 @@ empty == false
 val == -3
 ```
 
-## <a name="swap"></a>  function::swap
+## <a name="swap"></a> 교환
 
 두 개의 호출 가능 개체를 바꿉니다.
 
@@ -513,7 +509,7 @@ void swap(function& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 바꿀 함수 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -562,7 +558,7 @@ empty == false
 val == -3
 ```
 
-## <a name="target"></a>  function::target
+## <a name="target"></a> 대상
 
 저장된 호출 가능 개체가 지정된 대로 호출 가능한지 테스트합니다.
 
@@ -575,7 +571,7 @@ template <class Fty2>
 
 ### <a name="parameters"></a>매개 변수
 
-*Fty2*<br/>
+*Fty2*\
 테스트할 대상 호출 가능 개체 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -623,7 +619,7 @@ empty == true
 no target == true
 ```
 
-## <a name="target_type"></a>  function::target_type
+## <a name="target_type"></a> target_type
 
 호출 가능 개체에 대한 형식 정보를 가져옵니다.
 
@@ -668,8 +664,3 @@ type == int (__cdecl*)(int)
 empty == true
 type == void
 ```
-
-## <a name="see-also"></a>참고자료
-
-[mem_fn](../standard-library/functional-functions.md#mem_fn)<br/>
-[reference_wrapper 클래스](../standard-library/reference-wrapper-class.md)<br/>

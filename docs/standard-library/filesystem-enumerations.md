@@ -11,12 +11,12 @@ f1_keywords:
 - filesystem/std::filesystem::perms
 - filesystem/std::experimental::filesystem::perms
 ms.assetid: 0096c046-d101-464c-8259-b878a48280b0
-ms.openlocfilehash: 9c4efa145455240c4420a51c4a01662a30dc0761
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9bf5f0231fbc5b694c1f4ae507feb82b0d19d600
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405133"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68240752"
 ---
 # <a name="ltfilesystemgt-enumerations"></a>&lt;filesystem&gt; 열거형
 
@@ -119,6 +119,14 @@ enum class file_type {
 |`fifo`|6|UNIX 기반 시스템의 FIFO 파일을 나타냅니다. (지원 안 됨)|
 |`socket`|7|UNIX 기반 시스템의 소켓을 나타냅니다. (지원 안 됨)|
 |`unknown`|8|해당 상태를 확인할 수 없는 파일을 나타냅니다.|
+
+## <a name="perm_options"></a>  perm_options
+
+값을 포함 `replace`, `add`를 `remove`, 및 `nofollow`합니다.
+
+```cpp
+enum class perm_options;
+```
 
 ## <a name="perms"></a>  perms
 

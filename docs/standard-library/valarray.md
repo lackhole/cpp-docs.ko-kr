@@ -6,38 +6,45 @@ f1_keywords:
 helpviewer_keywords:
 - valarray header
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-ms.openlocfilehash: 8b8118722d7219e3b30e11ad67411595c3dc36ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9154f15500863d815f56438090662416b9b6fe7f
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365418"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68246651"
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 
 템플릿 클래스 valarray 및 다양한 지원 템플릿 클래스와 함수를 정의합니다.
 
-## <a name="syntax"></a>구문
+## <a name="requirements"></a>요구 사항
 
-```cpp
-#include <valarray>
-```
+**헤더:** \<valarray>
+
+**네임스페이스:** std
+
+> [!NOTE]
+> \<valarray > 라이브러리를 사용 하 여는 ' #include < initializer_list >' 문.
 
 ## <a name="remarks"></a>설명
 
 이러한 템플릿 클래스와 함수는 향상된 성능을 위해 특이한 방식으로 허용됩니다. 특히, 반환 하는 함수 형식 `valarray<T1>` 다른 형식 T2의 개체를 반환할 수 있습니다. 형식의 하나 이상의 인수를 허용 하는 함수에 이런 경우 `valarray<T2>` 각각 T2 형식의 인수로 대체 이러한 인수의 임의 조합을 허용 하는 오버 로드가 있어야 합니다.
 
+## <a name="members"></a>멤버
+
 ### <a name="functions"></a>함수
 
-|기능|설명|
+|||
 |-|-|
 |[abs](../standard-library/valarray-functions.md#abs)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 절대값과 같은 valarray를 반환합니다.|
 |[acos](../standard-library/valarray-functions.md#acos)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 아크코사인과 같은 valarray를 반환합니다.|
 |[asin](../standard-library/valarray-functions.md#asin)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 아크사인과 같은 valarray를 반환합니다.|
 |[atan](../standard-library/valarray-functions.md#atan)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 아크탄젠트 주요 값과 같은 valarray를 반환합니다.|
 |[atan2](../standard-library/valarray-functions.md#atan2)|요소가 valarray의 요소 및 상수 조합에 의해 지정된 데카르트 구성 요소의 아크탄젠트와 같은 valarray를 반환합니다.|
+|[begin](../standard-library/valarray-functions.md#begin)||
 |[cos](../standard-library/valarray-functions.md#cos)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 코사인과 같은 valarray를 반환합니다.|
 |[cosh](../standard-library/valarray-functions.md#cosh)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 쌍곡 코사인과 같은 valarray를 반환합니다.|
+|[end](../standard-library/valarray-functions.md#end)||
 |[exp](../standard-library/valarray-functions.md#exp)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 자연 지수와 같은 valarray를 반환합니다.|
 |[log](../standard-library/valarray-functions.md#log)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 자연 로그와 같은 valarray를 반환합니다.|
 |[log10](../standard-library/valarray-functions.md#log10)|입력 valarray의 요소에서 작동하고 요소가 입력 valarray 요소의 base 10 또는 상용 로그와 같은 valarray를 반환합니다.|
@@ -51,7 +58,7 @@ ms.locfileid: "62365418"
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|||
 |-|-|
 |[operator!=](../standard-library/valarray-operators.md#op_neq)|크기가 같은 두 valarray의 해당 요소가 서로 같지 않은지 또는 valarray의 모든 요소가 valarray 요소 형식의 지정된 값과 같지 않은지 테스트합니다.|
 |[operator%](../standard-library/valarray-operators.md#op_mod)|크기가 같은 두 valarray의 해당 요소를 나눈 나머지 또는 valarray를 valarray 요소 형식의 지정된 값으로 나누거나 지정된 값을 valarray로 나눈 나머지를 가져옵니다.|
@@ -74,7 +81,7 @@ ms.locfileid: "62365418"
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|||
 |-|-|
 |[gslice 클래스](../standard-library/gslice-class.md)|valarray의 다차원 조각을 정의하는 데 사용되는 valarray에 대한 유틸리티 클래스입니다.|
 |[gslice_array 클래스](../standard-library/gslice-array-class.md)|valarray의 일반 조각으로 정의된 하위 집합 배열 간의 작업을 제공하여 일반 조각 개체를 지원하는 내부 보조 템플릿 클래스입니다.|

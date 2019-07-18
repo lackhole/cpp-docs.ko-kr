@@ -6,16 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - cassert header
 ms.assetid: 6ead15a3-ac45-4075-be8e-350bca995c26
-ms.openlocfilehash: 6634ddd9adb4e7e7364aec2354c4ebd707e6ccd1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14dda03e835ec411013b2d827bd1ccaa77f8982e
+ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380041"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68245014"
 ---
 # <a name="ltcassertgt"></a>&lt;cassert&gt;
 
-표준 C 라이브러리 헤더 \<assert.h>를 포함하고 `std` 네임스페이스에 연결된 이름을 추가합니다.
+표준 C 라이브러리 헤더를 포함 \<r t. h >에 연결된 된 이름을 추가 하 고는 `std` 네임 스페이스입니다. 외부 링크를 사용 하 여 표준 C 라이브러리 헤더에 선언 된 이름에 선언 되어 있는지 확인이 헤더를 포함 하는 `std` 네임 스페이스입니다.
+
+> [!NOTE]
+> \<r t. h >를 정의 하지 않습니다는 `static_assert` 매크로입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,9 +26,15 @@ ms.locfileid: "62380041"
 #include <cassert>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="macros"></a>매크로
 
-이 헤더를 포함하는 경우 표준 C 라이브러리 헤더의 외부 링크를 사용하여 선언한 이름이 `std` 네임스페이스에도 선언됩니다.
+```cpp
+#define assert(E)
+```
+
+### <a name="remarks"></a>설명
+
+`assert(E)` 상수 NDEBUG 정의 된 경우만 여기서 `assert` 마지막으로 정의 되어 있거나 재정의 된 또는 *E* 변환할 bool로 **true**합니다.
 
 ## <a name="see-also"></a>참고자료
 
