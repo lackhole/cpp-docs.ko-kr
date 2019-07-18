@@ -1,23 +1,23 @@
 ---
 title: Visual Studio에서 속성을 빌드하고 C++ 컴파일러를 설정 합니다.
 description: C++ 컴파일러 및 링커 옵션과 기타 빌드 설정을 변경 하려면 Visual Studio IDE를 사용 합니다.
-ms.date: 03/27/2019
+ms.date: 07/17/2019
 helpviewer_keywords:
 - project properties [C++], modifying
 - properties [C++]
 - Visual C++ projects, properties
 - projects [C++], properties
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-ms.openlocfilehash: 896587aea65d7aec24d3a11ff7d3e757937c2632
-ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
+ms.openlocfilehash: 436c9c47d7e08176860144ce62cc874919351029
+ms.sourcegitcommit: 610751254a01cba6ad15fb1e1764ecb2e71f66bf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299689"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313451"
 ---
 # <a name="set-compiler-and-build-properties"></a>컴파일러 및 빌드 속성 설정
 
-IDE에서 프로젝트를 빌드하는 데 필요한 모든 정보는 *속성*으로 공개됩니다. 이 정보에는 애플리케이션 이름, 확장명(예: DLL, LIB, EXE), 컴파일러 옵션, 링커 옵션, 디버거 설정, 사용자 지정 빌드 단계 및 다른 많은 항목이 포함됩니다. 일반적으로 *속성 페이지*(**프로젝트 &#124; 속성**)를 사용하여 이러한 속성을 보고 수정합니다. 속성 페이지에 액세스 하려면 주 메뉴에서 **프로젝트 \<> 프로젝트 이름 > 속성** 을 선택 하거나 **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다.
+IDE에서 프로젝트를 빌드하는 데 필요한 모든 정보는 *속성*으로 공개됩니다. 이 정보에는 애플리케이션 이름, 확장명(예: DLL, LIB, EXE), 컴파일러 옵션, 링커 옵션, 디버거 설정, 사용자 지정 빌드 단계 및 다른 많은 항목이 포함됩니다. 일반적으로 *속성 페이지* 를 사용 하 여 이러한 속성을 보고 수정 합니다. 속성 페이지에 액세스 하려면 주 메뉴에서 **프로젝트 프로젝트** >  **_이름_ 속성** 을 선택 하거나 **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다.
 
 ## <a name="default-properties"></a>기본 속성
 
@@ -82,7 +82,7 @@ MSBuild는 특정 문자열 값에 대해 "macros" 라는 컴파일 타임 상�
 
 #### <a name="to-create-a-user-defined-macro"></a>사용자 정의 매크로를 만들려면
 
-1. **속성 관리자** 창(메뉴 모음에서 **보기**, **속성 관리자**선택)에서 속성 시트(이름 끝에 .user)에 대한 바로 가기 메뉴를 연 다음 속성을 선택합니다. 해당 속성 시트의 **속성 페이지** 대화 상자가 열립니다.
+1. **속성 관리자** 창을 엽니다. 메뉴 모음에서**속성 관리자** **보기** > 를 선택 하거나**다른 Windows** > **속성 관리자** **보기** > 를 선택 합니다. 속성 시트에 대 한 바로 가기 메뉴를 열고 (이름이 사용자로 끝남) **속성**을 선택 합니다. 해당 속성 시트의 **속성 페이지** 대화 상자가 열립니다.
 
 1. 대화 상자의 왼쪽 창에서 **사용자 매크로**를 선택합니다. 오른쪽 창에서 **매크로 추가** 단추를 선택하여 **사용자 매크로 추가** 대화 상자를 엽니다.
 
