@@ -1,5 +1,5 @@
 ---
-title: 구성 C++ 64 비트, x64에 대 한 대상 프로젝트
+title: 64비트, x64를 대상으로 하는 C++ 프로젝트 구성
 ms.date: 11/04/2016
 helpviewer_keywords:
 - 64-bit compiler [C++], options
@@ -14,9 +14,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/16/2019
 ms.locfileid: "68240871"
 ---
-# <a name="configure-c-projects-for-64-bit-x64-targets"></a>구성 C++ 64 비트, x64에 대 한 대상 프로젝트
+# <a name="configure-c-projects-for-64-bit-x64-targets"></a>64비트, x64를 대상으로 하는 C++ 프로젝트 구성
 
-이 단원에는 Visual C++ 빌드 도구를 사용하여 64비트 하드웨어를 대상으로 지정하는 방법에 대한 항목이 포함되어 있습니다.
+이 단원에는 Visual C++ 빌드 도구로 64비트 x64  하드웨어를 대상으로 지정하는 방법에 대한 항목이 포함되어 있습니다.
 
 ## <a name="in-this-section"></a>단원 내용
 
@@ -38,7 +38,7 @@ ms.locfileid: "68240871"
 
 [/favor(아키텍처에 맞게 최적화)](reference/favor-optimize-for-architecture-specifics.md)
 
-[64비트 Windows에 대한 프로그래밍 가이드](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)
+[64비트 Windows용 프로그래밍 가이드](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)
 
 [x64용 MASM(ml64.exe)](../assembler/masm/masm-for-x64-ml64-exe.md)
 
