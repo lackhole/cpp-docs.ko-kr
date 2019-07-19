@@ -20,9 +20,9 @@ ms.locfileid: "68240871"
 
 ## <a name="in-this-section"></a>단원 내용
 
-- [방법: X64을 64 비트 대상 Visual C++ 프로젝트 구성 플랫폼](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
+- [방법: 64비트, x64 플랫폼을 대상으로 하는 Viausl Studio C++ 프로젝트 구성](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
-- [방법: 명령줄에서 64 비트, x64 호스트 MSVC 도구 집합을 사용 하도록 설정](how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
+- [방법: 명령줄에서 64비트, x64 호스팅된 MSVC 도구 세트를 사용하도록 설정](how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
 - [일반적인 Visual C++ 64비트 마이그레이션 문제](common-visual-cpp-64-bit-migration-issues.md)
 
