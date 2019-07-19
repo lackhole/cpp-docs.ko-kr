@@ -1,22 +1,22 @@
 ---
-title: / JMC (내 코드만 디버깅)
+title: /JMC(내 코드만 디버깅)
 ms.date: 08/20/2018
 f1_keywords:
-- /JMC
+- VC.Project.VCCLCompilerTool.SupportJustMyCode
 helpviewer_keywords:
 - /JMC compiler option [C++]
 - Just my code [C++]
 - -JMC compiler option [C++]
 - User code, debugging
 - JMC compiler option [C++]
-ms.openlocfilehash: c107ad7107d2a65ed19719933aa127c0557916ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90fcad40b3322f8a8ae7ffc58875c2850f143138
+ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62291641"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68341004"
 ---
-# <a name="jmc-just-my-code-debugging"></a>/ JMC (내 코드만 디버깅)
+# <a name="jmc-just-my-code-debugging"></a>/JMC(내 코드만 디버깅)
 
 Visual Studio 디버거에서 네이티브 *내 코드만 디버깅*을 위한 컴파일러 지원을 지정합니다. 이 옵션은 Visual Studio에서 시스템, 프레임워크, 라이브러리 및 기타 사용자가 호출하지 않은 부분을 건너뛰거나 및 호출 스택 창에서 해당 호출을 축소하도록 하는 사용자 설정을 지원합니다. **/JMC** 컴파일러 옵션은 Visual Studio 2017 버전 15.8부터 사용할 수 있습니다.
 
