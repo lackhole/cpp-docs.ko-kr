@@ -1,4 +1,4 @@
----
+﻿---
 title: 64비트, x64를 대상으로 하는 C++ 프로젝트 구성
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,7 +16,7 @@ ms.locfileid: "68240871"
 ---
 # <a name="configure-c-projects-for-64-bit-x64-targets"></a>64비트, x64를 대상으로 하는 C++ 프로젝트 구성
 
-이 단원에는 Visual C++ 빌드 도구로 64비트 x64  하드웨어를 대상으로 지정하는 방법에 대한 항목이 포함되어 있습니다.
+이 단원에는 Visual C++ 빌드 도구로 64비트 x64 하드웨어를 대상으로 지정하는 방법에 대한 항목이 포함되어 있습니다.
 
 ## <a name="in-this-section"></a>단원 내용
 
