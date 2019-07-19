@@ -23,16 +23,16 @@ helpviewer_keywords:
 - exception handling, changing
 - _set_se_translator function
 ms.assetid: 280842bc-d72a-468b-a565-2d3db893ae0f
-ms.openlocfilehash: 18ee500d7b884d1934c29dc91d9bcb03d507680d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23eb4e9016666567771832cefed686cb9197b02f
+ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356552"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299703"
 ---
 # <a name="setsetranslator"></a>_set_se_translator
 
-Win32 예외 (C 구조적 예외)를 변환 하는 스레드당 콜백 함수 집합을 C++ 예외를 입력 합니다.
+Win32 예외 (C 구조적 예외)를 C++ 형식화 된 예외로 변환 하도록 스레드별 콜백 함수를 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,29 +49,29 @@ _se_translator_function _set_se_translator(
 
 ## <a name="return-value"></a>반환 값
 
-등록 한 이전 변환기 함수에 대 한 포인터를 반환 **_set_se_translator**이전 함수는 나중에 복원할 수 있도록 합니다. 기본 동작을 복원 하려면 반환 값을 사용할 수 없는 이전 함수가 설정 된 경우 이 값은 **nullptr**합니다.
+이전 함수를 나중에 복원할 수 있도록 **_set_se_translator**에서 등록 한 이전 변환기 함수에 대 한 포인터를 반환 합니다. 이전 함수를 설정 하지 않은 경우 반환 값을 사용 하 여 기본 동작을 복원할 수 있습니다. 이 값은 **nullptr**일 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_set_se_translator** 함수는 Win32 예외 (C 구조적 예외)를 처리 하는 방법으로 제공 C++ 예외를 입력 합니다. 각 C 예외를 처리 하도록 허용 하는 C++ **catch** 처리기를 먼저 사용 되거나 C 예외가 특정 클래스 형식 특성에서 파생 될 수 있는 C 예외 래퍼 클래스를 정의 합니다. 이 클래스를 사용하려면 C 예외가 발생할 때마다 내부 예외 처리 메커니즘을 통해 호출되는 사용자 지정 C 예외 변환기 함수를 설치합니다. 변환기 함수 내에서 일치 하는 수 있는 모든 형식의 예외를 throw 할 수 있습니다 C++ **catch** 처리기입니다.
+**_Set_se_translator** 함수는 Win32 예외 (C 구조적 예외)를 C++ 형식화 된 예외로 처리 하는 방법을 제공 합니다. 각 c 예외를 C++ **catch** 처리기에서 처리할 수 있도록 하려면 먼저 특정 클래스 형식의 특성을 c 예외로 지정 하기 위해 사용 하거나 파생 시킬 수 있는 c 예외 래퍼 클래스를 정의 합니다. 이 클래스를 사용하려면 C 예외가 발생할 때마다 내부 예외 처리 메커니즘을 통해 호출되는 사용자 지정 C 예외 변환기 함수를 설치합니다. 변환기 함수 내에서 일치 C++ 하는 **catch** 처리기에 의해 catch 될 수 있는 모든 형식의 예외를 throw 할 수 있습니다.
 
-사용 해야 합니다 [/EHa](../../build/reference/eh-exception-handling-model.md) 사용 하는 경우 **_set_se_translator**합니다.
+**_Set_se_translator**를 사용 하는 경우 [/eha](../../build/reference/eh-exception-handling-model.md) 를 사용 해야 합니다.
 
-사용자 지정 변환 함수를 지정 하려면 호출 **_set_se_translator** 변환 함수의 이름을 인수로 사용 합니다. 작성 하는 변환기 함수에 있는 스택의 각 함수 호출에 대해 한 번씩 호출 됩니다 **시도** 블록입니다. 기본 변환기 함수가 없습니다.
+사용자 지정 변환 함수를 지정 하려면 변환 함수의 이름을 인수로 사용 하 여 **_set_se_translator** 를 호출 합니다. 작성 하는 변환기 함수는 **try** 블록이 있는 스택의 각 함수 호출에 대해 한 번씩 호출 됩니다. 기본 변환기 함수가 없습니다.
 
 변환기 함수는 C++ 형식의 예외만 발생시켜야 합니다. throw 이외에도 어떤 작업을 수행하는 경우(예: 로그 파일에 쓰기) 변환기 함수가 호출되는 횟수가 플랫폼에 따라 다르므로 프로그램이 예상대로 작동하지 않을 수 있습니다.
 
-다중 스레드 환경에서 변환기 함수는 각 스레드에 대해 개별적으로 유지 관리됩니다. 각 새 스레드는 자체 변환기 함수를 설치해야 합니다. 따라서 각 스레드는 자체 변환 처리를 담당합니다. **_set_se_translator** 는 한 스레드에 관련이 다른 DLL은 다른 변환 함수를 설치할 수 있습니다.
+다중 스레드 환경에서 변환기 함수는 각 스레드에 대해 개별적으로 유지 관리됩니다. 각 새 스레드는 자체 변환기 함수를 설치해야 합니다. 따라서 각 스레드는 자체 변환 처리를 담당합니다. **_set_se_translator** 는 하나의 스레드에만 적용 됩니다. 다른 DLL은 다른 변환 함수를 설치할 수 있습니다.
 
-합니다 *seTransFunction* 작성 하는 함수에는 (/clr을 사용 하 여 컴파일되지) 네이티브 컴파일 함수 여야 합니다. 해야 하는 데 대 한 포인터 및 부호 없는 정수로 Win32 **_EXCEPTION_POINTERS** 인수로 구조입니다. 인수는 Win32 API에 대 한 호출의 반환 값 **GetExceptionCode** 하 고 **GetExceptionInformation** 함수를 각각.
+작성 하는 *seTransFunction* 함수는 네이티브 컴파일 함수 여야 합니다 (/clr을 사용 하 여 컴파일되지 않음). 부호 없는 정수 및 Win32 **_EXCEPTION_POINTERS** 구조체에 대 한 포인터를 인수로 사용 해야 합니다. 인수는 Win32 API **Getexceptioncode** 및 **getexceptioncode** 함수에 대 한 호출의 반환 값입니다.
 
 ```cpp
 typedef void (__cdecl *_se_translator_function)(unsigned int, struct _EXCEPTION_POINTERS* );
 ```
 
-에 대 한 **_set_se_translator**, 동적으로 CRT에 연결 하는 경우 의미를 가지; 프로세스에서 DLL를 호출할 수 있습니다 다른 **_set_se_translator** 자체 처리기 바꿉니다.
+**_Set_se_translator**의 경우 CRT에 동적으로 연결 하는 경우에도 영향을 미칩니다. 프로세스의 다른 DLL이 **_set_se_translator** 를 호출 하 고 처리기를 자체 처리기로 대체할 수 있습니다.
 
-사용 하는 경우 **_set_se_translator** 관리 코드 (/clr을 사용 하 여 컴파일된 코드)에서 또는 혼합 된 네이티브 및 관리 코드를 변환기의 네이티브 코드에만 생성 된 예외에 영향을 줍니다. 관리 코드에서 생성된 관리 예외(예: `System::Exception`을 발생시키는 경우)는 변환기 함수를 통해 라우팅되지 않습니다. Win32 함수를 사용 하 여 관리 되는 코드에서 발생 하는 예외 **RaiseException** 또는 0으로 나누기 예외가 변환기를 통해 라우팅됩니다.와 같은 시스템 예외로 인해 발생 합니다.
+관리 코드 (/clr을 사용 하 여 컴파일된 코드) 또는 혼합 네이티브 및 관리 코드에서 **_set_se_translator** 를 사용 하는 경우 변환기는 네이티브 코드 에서만 생성 된 예외에 영향을 줍니다. 관리 코드에서 생성된 관리 예외(예: `System::Exception`을 발생시키는 경우)는 변환기 함수를 통해 라우팅되지 않습니다. Win32 함수를 사용 하 여 관리 코드에서 발생 하는 예외 또는 0으로 나누기 예외와 같은 시스템 예외에의 한 **RaiseException** 변환기를 통해 라우팅됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -82,6 +82,8 @@ typedef void (__cdecl *_se_translator_function)(unsigned int, struct _EXCEPTION_
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
+
+이 샘플은 호출을 래핑하여 구조화 된 예외 변환기를 설정 하 고 RAII 클래스 `Scoped_SE_Translator`에서 이전 항목을 복원 합니다. 이 클래스를 사용 하 여 범위 고유의 번역기를 단일 선언으로 도입할 수 있습니다. 클래스 소멸자는 컨트롤이 범위를 벗어날 때 원래 변환기를 복원 합니다.
 
 ```cpp
 // crt_settrans.cpp
@@ -94,11 +96,21 @@ typedef void (__cdecl *_se_translator_function)(unsigned int, struct _EXCEPTION_
 class SE_Exception : public std::exception
 {
 private:
-    unsigned int nSE;
+    const unsigned int nSE;
 public:
-    SE_Exception() : nSE{ 0 } {}
-    SE_Exception( unsigned int n ) : nSE{ n } {}
-    unsigned int getSeNumber() { return nSE; }
+    SE_Exception() noexcept : SE_Exception{ 0 } {}
+    SE_Exception( unsigned int n ) noexcept : nSE{ n } {}
+    unsigned int getSeNumber() const noexcept { return nSE; }
+};
+
+class Scoped_SE_Translator
+{
+private:
+    const _se_translator_function old_SE_translator;
+public:
+    Scoped_SE_Translator( _se_translator_function new_SE_translator ) noexcept
+        : old_SE_translator{ _set_se_translator( new_SE_translator ) } {}
+    ~Scoped_SE_Translator() noexcept { _set_se_translator( old_SE_translator ); }
 };
 
 void SEFunc()
@@ -117,23 +129,22 @@ void SEFunc()
     }
 }
 
-void trans_func(unsigned int u, EXCEPTION_POINTERS*)
+void trans_func( unsigned int u, EXCEPTION_POINTERS* )
 {
-    throw SE_Exception(u);
+    throw SE_Exception( u );
 }
 
 int main()
 {
-    auto original = _set_se_translator(trans_func);
+    Scoped_SE_Translator scoped_se_translator{ trans_func };
     try
     {
         SEFunc();
     }
-    catch(SE_Exception& e)
+    catch( const SE_Exception& e )
     {
-        printf("Caught a __try exception, error %8.8x.\n", e.getSeNumber());
+        printf( "Caught a __try exception, error %8.8x.\n", e.getSeNumber() );
     }
-    _set_se_translator(original);
 }
 ```
 
@@ -145,60 +156,70 @@ Caught a __try exception, error c0000094.
 
 ## <a name="example"></a>예제
 
-제공 하는 기능 이지만 **_set_se_translator** 는 관리 코드에서 사용할 수 없는, 있기 네이티브 코드가 아래에서 컴파일되는 경우에이 매핑을 네이티브 코드를 사용 하는 **/clr** 네이티브 코드를 사용 하 여 표시 됩니다으로 스위치 `#pragma unmanaged`합니다. 매핑되는 관리 코드에서 throw 되는 구조적된 예외를 생성 하 고 예외를 처리 하는 코드 표시 해야 합니다 `#pragma unmanaged`합니다. 다음 코드에서는 가능한 사용법을 보여 줍니다. 자세한 내용은 [Pragma 지시문 및 __Pragma 키워드](../../preprocessor/pragma-directives-and-the-pragma-keyword.md)를 참조하세요.
+**_Set_se_translator** 에서 제공 하는 기능을 관리 코드에서 사용할 수는 없지만 네이티브 코드가 다음과 같이 **/clr** 스위치를 사용 하 여 컴파일하는 경우에도 네이티브 코드에서이 매핑을 사용할 수 있습니다. 을 사용 `#pragma unmanaged`하 여 표시 됩니다. 매핑될 관리 코드에서 구조적 예외가 throw 되는 경우 예외를 생성 하 고 처리 하는 코드를로 표시 `#pragma unmanaged`해야 합니다. 다음 코드에서는 가능한 사용법을 보여 줍니다. 자세한 내용은 [Pragma 지시문 및 __Pragma 키워드](../../preprocessor/pragma-directives-and-the-pragma-keyword.md)를 참조하세요.
 
 ```cpp
 // crt_set_se_translator_clr.cpp
 // compile with: cl /W4 /clr crt_set_se_translator_clr.cpp
 #include <windows.h>
 #include <eh.h>
-#include <assert.h>
 #include <stdio.h>
 #include <exception>
 
-int thrower_func(int i) {
+int thrower_func( int i ) {
    int y = 0;
    int *p = &y;
    *p = i / *p;
    return 0;
 }
 
-class SE_Exception : public std::exception {
+class SE_Exception : public std::exception
+{
 private:
-    unsigned int nSE;
+    const unsigned int nSE;
 public:
-    SE_Exception() : nSE{ 0 } {}
-    SE_Exception(unsigned int n) : nSE{ n } {}
-    unsigned int getSeNumber() { return nSE; }
+    SE_Exception() noexcept : SE_Exception{ 0 } {}
+    SE_Exception( unsigned int n ) noexcept : nSE{ n } {}
+    unsigned int getSeNumber() const noexcept { return nSE; }
+};
+
+class Scoped_SE_Translator
+{
+private:
+    const _se_translator_function old_SE_translator;
+public:
+    Scoped_SE_Translator( _se_translator_function new_SE_translator ) noexcept
+        : old_SE_translator{ _set_se_translator( new_SE_translator ) } {}
+    ~Scoped_SE_Translator() noexcept { _set_se_translator( old_SE_translator ); }
 };
 
 #pragma unmanaged
-void my_trans_func(unsigned int u, PEXCEPTION_POINTERS)
+void my_trans_func( unsigned int u, PEXCEPTION_POINTERS )
 {
-    throw SE_Exception(u);
+    throw SE_Exception( u );
 }
 
 void DoTest()
 {
     try
     {
-        thrower_func(10);
+        thrower_func( 10 );
     }
-    catch(SE_Exception& e)
+    catch( const SE_Exception& e )
     {
-        printf("Caught SE_Exception, error %8.8x\n", e.getSeNumber());
+        printf( "Caught SE_Exception, error %8.8x\n", e.getSeNumber() );
     }
     catch(...)
     {
-        printf("Caught unexpected SEH exception.\n");
+        printf( "Caught unexpected SEH exception.\n" );
     }
 }
 #pragma managed
 
 int main() {
-    auto original = _set_se_translator(my_trans_func);
+    Scoped_SE_Translator scoped_se_translator{ my_trans_func };
+
     DoTest();
-    _set_se_translator(original);
 }
 ```
 

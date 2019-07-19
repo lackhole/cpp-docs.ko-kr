@@ -1,6 +1,6 @@
 ﻿---
-title: / MD,-MT,-LD (런타임 라이브러리 사용)
-ms.date: 11/04/2016
+title: /MD,-MT,-LD (런타임 라이브러리 사용)
+ms.date: 07/17/2019
 f1_keywords:
 - /ld
 - /mt
@@ -35,12 +35,12 @@ helpviewer_keywords:
 - LIBCMTD.lib
 - -MT compiler option [C++]
 ms.assetid: cf7ed652-dc3a-49b3-aab9-ad60e5395579
-ms.openlocfilehash: 4ae63f2d45d5a1170f94de0480711bc719e4a2e0
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 4e734233d94bf57d6838bd4d37c023d55f1d5f6b
+ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217619"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299752"
 ---
 # <a name="md-mt-ld-use-run-time-library"></a>/MD, /MT, /LD(런타임 라이브러리 사용)
 
@@ -76,7 +76,7 @@ Dll에 대한 자세한 내용은 [Visual Studio에서 C/C++ DLL 만들기](../d
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **C/C++** 폴더를 확장합니다.
+1. **구성 속성** > **C/C++**  > **명령줄** 속성 페이지를 선택합니다.
 
 1. **코드 생성** 속성 페이지를 선택합니다.
 

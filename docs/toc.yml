@@ -414,6 +414,8 @@
                   href: build/reference/general-property-page-project.md
                 - name: 일반 속성 페이지
                   href: build/reference/general-property-page-file.md
+                - name: 고급 속성 페이지
+                  href: build/reference/advanced-property-page.md
                 - name: VC++ 디렉터리 속성 페이지
                   href: build/reference/vcpp-directories-property-page.md
                 - name: 명령줄 속성 페이지

@@ -1,6 +1,6 @@
 ---
 title: VC++ 디렉터리 속성 페이지
-ms.date: 10/09/2018
+ms.date: 07/17/2019
 f1_keywords:
 - VC.Project.VCDirectories.IncludePath
 - VC.Project.VCDirectories.ReferencePath
@@ -13,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - VC++ Directories Property Page
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
-ms.openlocfilehash: aff143fca47cb5958b90e4a3f4c7ec284f2129f5
-ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
+ms.openlocfilehash: 9b005a89156db48615ec6ea8dfc4f07a7414fc3b
+ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67861051"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299783"
 ---
 # <a name="vc-directories-property-page-windows"></a>VC++ 디렉터리 속성 페이지
 
-이 속성 페이지를 사용하여 Visual Studio에서 현재 선택한 프로젝트를 빌드할 때 사용할 디렉터리를 지시합니다. 솔루션의 여러 프로젝트에 대 한 디렉터리를 설정 하려면 사용 하 여 사용자 지정 속성 시트에 설명 된 대로 [공유 또는 Visual Studio를 다시 사용할 수 있도록 C++ 프로젝트 설정](../create-reusable-property-configurations.md)합니다.
+이 속성 페이지를 사용하여 Visual Studio에서 현재 선택한 프로젝트를 빌드할 때 사용할 디렉터리를 지시합니다. 솔루션의 여러 프로젝트에 대 한 디렉터리를 설정 하려면 [Visual Studio C++ 프로젝트 설정 공유 또는 다시 사용](../create-reusable-property-configurations.md)에 설명 된 대로 사용자 지정 속성 시트를 사용 합니다.
 
 이 페이지의 Linux 버전은 [VC++ 디렉터리(Linux C++)](../../linux/prop-pages/directories-linux.md)를 참조하세요.
 
@@ -38,7 +38,7 @@ VC++ 디렉터리 속성은 최상위 솔루션 노드가 아닌 프로젝트에
 
 플랫폼 간 프로젝트의 **VC++ 디렉터리** 속성 페이지가 다르게 표시됩니다. Linux C++ 프로젝트에 대한 정보는 [VC++ 디렉터리(Linux C++)](../../linux/prop-pages/directories-linux.md)를 참조하세요.
 
-경우에 잘 알고 있다면 *프로젝트 속성* Visual Studio에서 유용할 수 있습니다이 첫 번째 읽기 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+Visual Studio의 *프로젝트 속성* 에 익숙하지 않은 경우 [Visual studio에서 Set C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)을 먼저 읽어 볼 수 있습니다.
 
 **VC++ 디렉터리** 속성에 대한 기본 설정은 프로젝트 형식에 따라 달라집니다. 데스크톱 프로젝트의 경우 특정 플랫폼 도구 집합의 C++ 도구 위치 및 Windows SDK 위치가 포함됩니다. **구성 속성** > **일반** 페이지에서 **플랫폼 도구 집합** 및 **Windows SDK 버전**을 변경할 수 있습니다.
 
@@ -54,7 +54,7 @@ VC++ 디렉터리 속성은 최상위 솔루션 노드가 아닌 프로젝트에
 
 ![라이브러리 디렉터리 보기](../media/vcppdir_libdir.png "라이브러리 경로를 추가하거나 제거하는 대화 상자")
 
-이 대화 상자를 사용하여 현재 디렉터리를 볼 수 있습니다. 그러나 디렉터리를 추가하거나 변경하려는 경우 **속성 관리자**를 사용하여 속성 시트를 만들거나 기본 사용자 속성 시트를 수정하는 것이 좋습니다. 자세한 내용은 [공유 또는 Visual Studio를 다시 사용할 수 있도록 C++ 프로젝트 설정](../create-reusable-property-configurations.md)합니다.
+이 대화 상자를 사용하여 현재 디렉터리를 볼 수 있습니다. 그러나 디렉터리를 추가하거나 변경하려는 경우 **속성 관리자**를 사용하여 속성 시트를 만들거나 기본 사용자 속성 시트를 수정하는 것이 좋습니다. 자세한 내용은 [Visual Studio C++ 프로젝트 설정 공유 또는 다시 사용](../create-reusable-property-configurations.md)을 참조 하세요.
 
 위와 같이 다양한 상속 경로가 매크로로 지정됩니다.  매크로의 현재 값을 검사하려면 대화 상자의 오른쪽 아래에 있는 **매크로** 단추를 선택합니다. 대부분의 매크로가 구성 형식에 따라 달라집니다. 디버그 빌드의 매크로는 릴리스 빌드의 동일한 매크로와 다른 경로로 평가할 수 있습니다.
 
@@ -62,11 +62,11 @@ VC++ 디렉터리 속성은 최상위 솔루션 노드가 아닌 프로젝트에
 
 ![매크로 값 확인](../media/vcppdir_libdir_macros.png "매크로를 편집하는 대화 상자")
 
-참고: 목록에 입력할 때 채워집니다. **Enter** 키를 누르지 않습니다.
+참고: 입력 하면 목록이 채워집니다. **Enter** 키를 누르지 않습니다.
 
-매크로 및 이유는 가능 하면 하드 코드 된 경로 대신 사용 해야 하는 방법에 대 한 자세한 내용은 참조 하십시오 [설정 C++ Visual Studio에서 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+매크로에 대 한 자세한 내용 및 가능한 경우 하드 코드 된 경로 대신 매크로를 사용 해야 하는 이유 [는 C++ Visual Studio에서 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조 하세요.
 
-자주 사용 되는 매크로 목록에 대해서 [명령 및 속성에 대 한 일반 매크로 빌드](common-macros-for-build-commands-and-properties.md)합니다.
+일반적으로 사용 되는 매크로 목록은 [빌드 명령 및 속성에 대 한 일반 매크로](common-macros-for-build-commands-and-properties.md)를 참조 하세요.
 
 다음과 같은 두 가지 방법으로 고유한 매크로를 정의할 수 있습니다.
 
@@ -74,7 +74,7 @@ VC++ 디렉터리 속성은 최상위 솔루션 노드가 아닌 프로젝트에
 
 - .props 파일에서 사용자 매크로를 정의합니다. 자세한 내용은 [속성 페이지 매크로](../working-with-project-properties.md)를 참조하세요.
 
-자세한 내용은 다음 블로그 게시물을 참조 하세요. [VC + + 디렉터리](https://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx)하십시오 [상속 된 속성 및 속성 시트](https://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), 및 [Visual Studio 2010 C++ 프로젝트 업그레이드 가이드](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/).
+자세한 내용은 다음 블로그 게시물을 참조 하세요. [VC + + 디렉터리](https://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [상속 된 속성 및 속성 시트](https://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx)및 [Visual Studio 2010 C++ 프로젝트 업그레이드 가이드를 참조](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/)하세요.
 
 ## <a name="directory-types"></a>디렉터리 형식
 
