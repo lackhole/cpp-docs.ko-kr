@@ -1,6 +1,6 @@
 ---
 title: /FORCE(파일 출력 강제)
-ms.date: 11/04/2016
+ms.date: 07/19/2019
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceLink
 - /force
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - /FORCE linker option
 - -FORCE linker option
 ms.assetid: b1e9a218-a5eb-4e60-a4a4-65b4be15e5da
-ms.openlocfilehash: af7962a4b3b5805e7e0c4d59752254c8ade17f7b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 28b1c21382832c8775ffe0406038a482e74076c5
+ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292473"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299715"
 ---
 # <a name="force-force-file-output"></a>/FORCE(파일 출력 강제)
 
@@ -25,29 +25,31 @@ ms.locfileid: "62292473"
 
 ## <a name="remarks"></a>설명
 
-/FORCE 옵션을 올바른.exe 파일을 만들도록 링커에 지시 또는 DLL 기호가 아닌 참조 하는 경우에 정의 또는 여러 번 정의 되어 있습니다.
+/FORCE 옵션을 지정 하면 기호가 참조 되지만 정의 되지 않았거나 여러 번 정의 된 경우에도 올바른 .exe 파일이 나 DLL을 만들도록 링커에 지시 합니다.
 
 /FORCE 옵션은 선택적 인수를 사용할 수 있습니다.
 
-- /FORCE:MULTIPLE를 사용 하 여 링크 기호에 대 한 정의 둘 이상 발견 여부 또는 출력 파일을 만듭니다.
+- /FORCE: MULTIPLE을 사용 하 여 출력 파일을 만듭니다. LINK는 기호에 대해 둘 이상의 정의를 찾을 수 있습니다.
 
-- /FORCE를 사용 하 여: UNRESOLVED를 링크 정의 되지 않은 기호를 찾습니다 여부 출력 파일을 만듭니다. / 강제: 확인 되지 않은 진입점 기호 해결 되지 않으면 무시 됩니다.
+- /FORCE: 확인할 수 없음을 사용 하 여 출력 파일을 만듭니다. LINK에서 정의 되지 않은 기호를 찾을 수 있는지 여부입니다. /FORCE: 진입점 기호를 확인할 수 없는 경우 확인 되지 않은가 무시 됩니다.
 
-/ FORCE 인수 없이 모두 여러 의미 및 확인 되지 않은 합니다.
+/FORCE를 사용 하지 않는/FORCE는 multiple 및 미확인을 모두 의미 합니다.
 
-이 옵션을 사용 하 여 만든 파일에는 예상 대로 실행 되지 않습니다. /FORCE 옵션을 지정 하는 경우 링커는 증분 방식으로 연결 되지 않습니다.
+이 옵션을 사용 하 여 만든 파일은 예상 대로 실행 되지 않을 수 있습니다. /FORCE 옵션을 지정 하면 링커가 증분식으로 연결 되지 않습니다.
 
-모듈을 사용 하 여 컴파일된 경우 **/clr**하십시오 **/force** 이미지를 만들지 것입니다.
+모듈이 **/clr**을 사용 하 여 컴파일되면 **/force** 는 이미지를 만들지 않습니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
+1. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. 
 
-1. 클릭 합니다 **링커** 폴더입니다.
+1. **Linker** 폴더를 클릭합니다.
 
 1. **명령줄** 속성 페이지를 클릭합니다.
 
-1. 에 옵션을 입력 합니다 **추가 옵션** 상자입니다.
+1. **추가 옵션** 상자에 옵션을 입력 합니다.
+
+자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 
