@@ -7,12 +7,12 @@ helpviewer_keywords:
 - translation units
 - white space, in C++ tokens
 ms.assetid: aa812fd0-6d47-4f3f-aee0-db002ee4d8b9
-ms.openlocfilehash: 1606df56191ec00ffea543dedd3fd4eda98d01c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd104b7308716ca182374bbff2df61731c84d574
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330442"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68376261"
 ---
 # <a name="tokens-c"></a>토큰 (C++)
 
@@ -26,9 +26,9 @@ ms.locfileid: "62330442"
 
 - 새로운 줄
 
-- Form feed
+- 양식 피드
 
-- 설명
+- 주석
 
 파서는 키워드, 식별자, 리터럴, 연산자 및 문장 부호를 인식합니다. 특정 토큰 종류에 대한 자세한 내용은 [키워드](../cpp/keywords-cpp.md), [식별자](../cpp/identifiers-cpp.md), [숫자, 부울 및 포인터 리터럴](../cpp/numeric-boolean-and-pointer-literals-cpp.md), [문자열 및 문자 리터럴](../cpp/string-and-character-literals-cpp.md), [사용자 정의 리터럴](../cpp/user-defined-literals-cpp.md), [C++ 기본 제공 연산자, 우선 순위 및 계산 방향](../cpp/cpp-built-in-operators-precedence-and-associativity.md)및 [문장 부호](../cpp/punctuators-cpp.md)를 참조하세요. 토큰을 구분하는 데 필요한 경우를 제외하고 공백은 무시됩니다.
 

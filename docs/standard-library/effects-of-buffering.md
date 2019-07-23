@@ -5,12 +5,12 @@ helpviewer_keywords:
 - buffers, effects of buffering
 - buffering, effects of
 ms.assetid: 5d544812-e95e-4f28-b15a-edef3f3414fd
-ms.openlocfilehash: e10b28edffdfe3411f86c031bfd12ea886410e20
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23e241794455a92f9e3628a786d75a6d4c7b037e
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413790"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68376324"
 ---
 # <a name="effects-of-buffering"></a>버퍼링 효과
 
@@ -39,7 +39,7 @@ int main( )
 cout <<"Please wait..." <<flush;
 ```
 
-이 단계에서는 버퍼를 플러시하여 메시지가 인쇄된 후 대기하도록 합니다. 사용할 수도 있습니다는 `endl` 조작자를 사용할 수 있습니다 또는 버퍼를 플러시하고 캐리지 리턴-줄 바꿈, 출력을 `cin` 개체. 이 개체는 `cerr` 또는 `clog` 개체와 함께 일반적으로 `cout` 개체에 연결됩니다. 따라서 `cin` , `cerr` 또는 `clog` 개체를 사용하면 `cout` 개체가 플러시됩니다.
+이 단계에서는 버퍼를 플러시하여 메시지가 인쇄된 후 대기하도록 합니다. 또한 버퍼를 플러시하고 캐리지 `endl` 리턴-줄 피드를 출력 하는 조작자를 사용 하거나 개체를 `cin` 사용할 수 있습니다. 이 개체는 `cerr` 또는 `clog` 개체와 함께 일반적으로 `cout` 개체에 연결됩니다. 따라서 `cin` , `cerr` 또는 `clog` 개체를 사용하면 `cout` 개체가 플러시됩니다.
 
 ## <a name="see-also"></a>참고자료
 

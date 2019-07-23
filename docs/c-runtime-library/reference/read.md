@@ -26,12 +26,12 @@ helpviewer_keywords:
 - reading data [C++]
 - files [C++], reading
 ms.assetid: 2ce9c433-57ad-47fe-9ac1-4a7d4c883d30
-ms.openlocfilehash: 40f52ea37ae5419fe986aa505aad4fddfe8403ff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f4dd599f227192b8c3ce17a0321d6399319e1925
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357657"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68376309"
 ---
 # <a name="read"></a>_read
 
@@ -56,23 +56,23 @@ int _read(
 데이터의 스토리지 위치입니다.
 
 *buffer_size*<br/>
-읽을 바이트의 최대 수입니다.
+읽을 최대 바이트 수입니다.
 
 ## <a name="return-value"></a>반환 값
 
-**_read** 작을 수 있으며는 읽은 바이트 수를 반환 합니다 보다 *buffer_size* 개 보다 적으면 *buffer_size* 파일에 남아 있는 바이트 또는 텍스트 모드에서 파일을 연 경우. 텍스트 모드에서 각 캐리지 리턴-줄 바꿈 쌍 `\r\n` 단일 줄 바꿈 문자로 바뀝니다 `\n`합니다. 반환 값에서는 단일 줄 바꿈 문자만 계산됩니다. 이러한 바꾸기는 파일 포인터에 영향을 주지 않습니다.
+**_read** 는 읽은 바이트 수를 반환 합니다 .이는 파일에 남아 있는 *buffer_size* 바이트 수가 적거나 파일을 텍스트 모드로 연 경우에는 *buffer_size* 보다 적을 수 있습니다. 텍스트 모드에서 각 캐리지 리턴-줄 바꿈 쌍 `\r\n` 은 단일 줄 바꿈 문자로 `\n`바뀝니다. 반환 값에는 단일 줄 바꿈 문자만 계산 됩니다. 이러한 바꾸기는 파일 포인터에 영향을 주지 않습니다.
 
-함수는 파일의 끝에서 읽기를 시도하는 경우 0을 반환합니다. 하는 경우 *fd* 은 유효 하지 않은 파일이 열려 있지 않으면 읽기 또는 파일이 잠겨에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행 함수는-1 반환 하 고 집합을 계속 하도록 허용 된 경우 **errno** 하 **EBADF**합니다.
+함수는 파일의 끝에서 읽기를 시도하는 경우 0을 반환합니다. *Fd* 가 유효 하지 않은 경우 파일을 읽기용으로 열지 않거나 파일을 잠 궜으 면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **ebadf**로 설정 합니다.
 
-하는 경우 *버퍼* 됩니다 **NULL**, 이거나 *buffer_size* > **INT_MAX**, 잘못 된 매개 변수 처리기가 호출 됩니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 **errno** 로 설정 된 **EINVAL**합니다.
+*Buffer* 가 **NULL**이거나 *buffer_size* > **INT_MAX**인 경우 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 는 **EINVAL**로 설정 됩니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하십시오.
 
 ## <a name="remarks"></a>설명
 
-**_read** 함수는 최대를 읽습니다 *buffer_size* 바이트 *버퍼* 연관 된 파일에서 *fd*합니다. 읽기 작업은 지정된 파일과 연결된 파일 포인터의 현재 위치에서 시작됩니다. 읽기 작업 후 파일 포인터는 읽지 않은 다음 문자를 가리킵니다.
+**_Read** 함수는 *fd*와 연결 된 파일에서 최대 *buffer_size* 바이트를 *버퍼로* 읽어옵니다. 읽기 작업은 지정된 파일과 연결된 파일 포인터의 현재 위치에서 시작됩니다. 읽기 작업 후 파일 포인터는 읽지 않은 다음 문자를 가리킵니다.
 
-읽기 종료 될 때 파일이 텍스트 모드로 열려 있으면 **_read** 파일 끝 표시기로 간주 되는 CTRL + Z 문자를 발견 합니다. 파일 끝 표시기를 지우려면 [_lseek](lseek-lseeki64.md)를 사용합니다.
+파일이 텍스트 모드에서 열린 경우 **_read** 가 파일 끝 표시기로 처리 되는 CTRL + Z 문자를 발견 하면 읽기가 종료 됩니다. 파일 끝 표시기를 지우려면 [_lseek](lseek-lseeki64.md)를 사용합니다.
 
 ## <a name="requirements"></a>요구 사항
 
