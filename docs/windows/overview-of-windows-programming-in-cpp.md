@@ -11,7 +11,7 @@ ms.locfileid: "67552313"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++를 이용한 Windows 프로그래밍 개요
 
-C++를 사용하면 다양한 종류의 Windows 응용 프로그램을 만들 수 있습니다. 각각에 자체 프로그래밍 모델 및 Windows 관련 라이브러리 집합이 있지만 C++ 표준 라이브러리 및 타사 C++ 에 라이브러리를 사용할 수 있습니다.
+C++를 사용하면 다양한 종류의 Windows 응용 프로그램을 만들 수 있습니다. 각각 고유한 프로그래밍 모델과 Windows 관련 라이브러리 집합이 있지만 C++ 표준 라이브러리나 타사 C++ 라이브러리도 사용할 수 있습니다.
 
 ## <a name="command-line-console-applications"></a>명령줄 (콘솔) 응용 프로그램
 
