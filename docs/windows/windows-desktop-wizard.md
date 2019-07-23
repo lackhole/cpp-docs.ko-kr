@@ -17,7 +17,7 @@ ms.locfileid: "66503793"
 ---
 # <a name="windows-desktop-wizard"></a>Windows 데스크톱 마법사
 
-Windows 데스크톱 마법사에는 Visual Studio 2017 이상에 Win32 응용 프로그램 마법사를 대체합니다. 마법사를 사용 하면 네 가지 형식 중 하나를 만들 수 있습니다 C++ 프로젝트 (아래 표의 머리글에 나열 됨). 각각의 경우 연 프로젝트 형식에 적합한 추가 옵션을 지정할 수 있습니다. 
+Windows 데스크톱 마법사는 Visual Studio 2017 이상의 Win32 응용 프로그램 마법사를 대체합니다. 마법사를 사용하면 아래 표의 제목에 나열된 네 가지 유형 중 하나의 C++ 프로젝트를 만들 수 있습니다. 각각의 경우 연 프로젝트 유형에 적합한 추가 옵션을 지정할 수 있습니다. 
 
    ![Windows 데스크톱 마법사](media/windows-desktop-wizard.png)
 
