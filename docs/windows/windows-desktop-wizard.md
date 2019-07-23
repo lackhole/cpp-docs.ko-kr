@@ -43,7 +43,7 @@ Windows 데스크톱 마법사는 Visual Studio 2017 이상의 Win32 응용 프�
 
 - 프로젝트에서 미리 컴파일된 헤더 파일을 사용하지 않습니다. 이 옵션은 정적 라이브러리 프로젝트에만 사용할 수 있습니다.
 
-- 프로젝트에 MFC 또는 ATL에 대한 지원이 없습니다.
+- 프로젝트는 MFC 또는 ATL에 대하여 지원하지 않습니다.
 
 ## <a name="application-type"></a>애플리케이션 유형
 
@@ -58,7 +58,7 @@ Windows 데스크톱 마법사는 Visual Studio 2017 이상의 Win32 응용 프�
 
 ## <a name="additional-options"></a>추가 옵션
 
-지원 및 해당 형식에 따라 응용 프로그램에 대 한 옵션을 정의합니다.
+해당 형식에 따라 응용 프로그램에 대한 지원 및 옵션을 정의합니다.
 
 |옵션|설명|
 |------------|-----------------|
@@ -67,7 +67,7 @@ Windows 데스크톱 마법사는 Visual Studio 2017 이상의 Win32 응용 프�
 |**미리 컴파일된 헤더**|정적 라이브러리 프로젝트에서는 미리 컴파일된 헤더를 사용하도록 지정합니다.|
 |**보안 개발 수명 주기 (SDL) 검사**|SDL에 대한 자세한 내용은 [Microsoft 보안 SDL(Security Development Lifecycle) 프로세스 지침](../build/reference/sdl-enable-additional-security-checks.md)을 참조하세요.|
 
-## <a name="add-common-headers-for"></a>에 대 한 공용 헤더를 추가 합니다.
+## <a name="add-common-headers-for"></a>공용 헤더 추가
 
 Visual C++에서 제공되는 라이브러리에 대한 지원을 추가합니다.
 
