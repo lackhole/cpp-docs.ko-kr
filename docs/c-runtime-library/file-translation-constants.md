@@ -11,12 +11,12 @@ helpviewer_keywords:
 - constants [C++], file translation mode
 - file translation [C++]
 ms.assetid: 49b13bf3-442e-4d19-878b-bd1029fa666a
-ms.openlocfilehash: ef9b986753de05c45b3071e55f9b163fa5a6a7da
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: ed2fae935850837ebace880d78c206754b3061bd
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743327"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375923"
 ---
 # <a name="file-translation-constants"></a>파일 변환 상수
 
@@ -26,15 +26,15 @@ ms.locfileid: "57743327"
 #include <stdio.h>
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-이러한 상수는 변환 모드(**"b"** 또는 **"t"**)를 지정합니다. 이 모드는 액세스 형식(**"r"**, **"w"**, **"a"**, **"r+"**, **"w+"**, **"a+"**)을 지정하는 문자열에 포함됩니다.
+이러한 상수는 변환 모드( **"b"** 또는 **"t"** )를 지정합니다. 이 모드는 액세스 형식( **"r"** , **"w"** , **"a"** , **"r+"** , **"w+"** , **"a+"** )을 지정하는 문자열에 포함됩니다.
 
 변환 모드는 다음과 같습니다.
 
 - **t**
 
-   텍스트(변환됨) 모드에서 엽니다. 이 모드에서는 CR-LF(캐리지 리턴 줄 바꿈) 조합은 입력 시 단일 LF(줄 바꿈)로 변환되고, LF 문자는 출력 시 CR-LF 조합으로 변환됩니다. 또한 CTRL+Z는 입력 시 파일 끝 문자로 변환됩니다. 읽기용으로나 읽기/쓰기용으로 열려 있는 파일에서 `fopen`은 파일 끝에 CTRL+Z가 있는지 확인하고 가능한 경우 이를 제거합니다. 이렇게 처리되는 이유는 `fseek` 및 `ftell` 함수를 사용하여 CTRL+Z로 끝나는 파일 내에서 이동하면 `fseek`가 파일 끝 부분에서 제대로 동작하지 않을 수 있기 때문입니다.
+   텍스트(변환됨) 모드에서 엽니다. 이 모드에서는 CR-LF(캐리지 리턴 줄 바꿈) 조합은 입력 시 단일 LF(줄 바꿈)로 변환되고, LF 문자는 출력 시 CR-LF 조합으로 변환됩니다. 또한 CTRL+Z는 입력 시 파일 끝 문자로 변환됩니다. 읽기용으로나 읽기 및 쓰기용으로 열려 있는 파일에서 `fopen`은 파일 끝에 CTRL+Z가 있는지 확인하고 가능한 경우 이를 제거합니다. 이렇게 처리되는 이유는 `fseek` 및 `ftell` 함수를 사용하여 CTRL+Z로 끝나는 파일 내에서 이동하면 `fseek`가 파일 끝 부분에서 제대로 동작하지 않을 수 있기 때문입니다.
 
    > [!NOTE]
    > **t** 옵션은 `fopen` 및 `freopen`에 대한 ANSI 표준에 속하지 않습니다. 이 옵션은 Microsoft 확장으로, ANSI 포팅 기능을 원할 경우 사용하면 안 됩니다.
