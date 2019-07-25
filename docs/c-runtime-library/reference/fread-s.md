@@ -20,12 +20,12 @@ f1_keywords:
 - fread_s
 - stdio/fread_s
 ms.assetid: ce735de0-f005-435d-a8f2-6f4b80ac775e
-ms.openlocfilehash: 898e813c19fd53cfdacd536c2e9819743a62a8da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1adc999d37025392f03a11daebfffdeeb637d92b
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287813"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68376143"
 ---
 # <a name="freads"></a>fread_s
 
@@ -62,15 +62,15 @@ size_t fread_s(
 
 ## <a name="return-value"></a>반환 값
 
-**fread_s** 일 수 있는 버퍼로 읽은 (전체) 번호 항목을 반환 미만 *개수* 읽기 오류 또는 파일 끝 하기 전에 발생 하는 경우 *개수* 에 도달 하면 합니다. 사용 된 **feof** 또는 **ferror** 오류가 파일 끝 조건을 구분 하기 위해 함수입니다. 하는 경우 *크기* 또는 *개수* 0 **fread_s** 0 고 버퍼 콘텐츠가 변경 되지 않은 반환 합니다. 하는 경우 *스트림을* 하거나 *버퍼* 가 null 포인터 **fread_s** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) . 이 함수를 설정 하는 경우는 계속 실행 하도록 허용 합니다 **errno** 하 **EINVAL** 0을 반환 합니다.
+**fread_s** 는 버퍼로 읽어온 (전체) 항목 수를 반환 합니다 .이 수는 읽기 오류 또는 파일 끝에 도달 하 여 *개수* 에 도달 하기 전에 *개수* 보다 적을 수 있습니다. **Feof** 또는 **ferror** 함수를 사용 하 여 파일 끝 조건과 오류를 구분 합니다. *Size* 또는 *count* 가 0 인 경우 **fread_s** 는 0을 반환 하 고 버퍼 내용은 변경 되지 않습니다. *Stream* 또는 *buffer* 가 null 포인터인 경우 **Fread_s** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
 
 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**fread_s** 함수를 읽고 *개수* 항목 *elementSize* 입력에서 바이트 *stream* 에저장합니다*버퍼*합니다.  연결 된 파일 포인터 *스트림을* (있는 경우) 실제로 읽는 바이트 수 만큼 증가 됩니다. 지정된 된 스트림에 텍스트 모드로 열리면, 캐리지 리턴-줄 바꿈 쌍 단일 줄 바꿈 문자로 바뀝니다. 이렇게 바뀌더라도 파일 포인터 또는 반환 값에는 영향을 미치지 않습니다. 오류가 발생할 경우 파일 포인터 위치는 비활성화 상태입니다. 부분적으로 읽은 항목의 값은 확인할 수 없습니다.
+**Fread_s** 함수는 입력 *스트림에서* *elementSize* 바이트의 항목 *수* 를 읽어 *버퍼*에 저장 합니다.  *스트림* (있는 경우)과 연결 된 파일 포인터는 실제로 읽은 바이트 수 만큼 증가 합니다. 지정 된 스트림이 텍스트 모드에서 열리면 캐리지 리턴-줄 바꿈 쌍이 단일 줄 바꿈 문자로 바뀝니다. 이렇게 바뀌더라도 파일 포인터 또는 반환 값에는 영향을 미치지 않습니다. 오류가 발생할 경우 파일 포인터 위치는 비활성화 상태입니다. 부분적으로 읽은 항목의 값은 확인할 수 없습니다.
 
-이 함수는 다른 스레드를 잠급니다. 잠기지 않는 버전에 필요한 경우 사용할 **_fread_nolock**합니다.
+이 함수는 다른 스레드를 잠급니다. 잠기지 않는 버전이 필요한 경우 **_fread_nolock**을 사용 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

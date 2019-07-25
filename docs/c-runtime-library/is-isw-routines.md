@@ -16,12 +16,12 @@ helpviewer_keywords:
 - is routines
 - isw routines
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-ms.openlocfilehash: 961ad52070928ba755625747546c8dc7b1c215ba
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 1550f8f012802e03e9228e67c381915b1b4e1d64
+ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750822"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68376038"
 ---
 # <a name="is-isw-routines"></a>is, isw 루틴
 
@@ -36,7 +36,7 @@ ms.locfileid: "57750822"
 |[_isctype, iswctype, _isctype_l, _iswctype_l](../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md)|[isupper, _isupper_l, iswupper, _iswupper_l](../c-runtime-library/reference/isupper-isupper-l-iswupper-iswupper-l.md)|
 |[isdigit, iswdigit, _isdigit_l, _iswdigit_l](../c-runtime-library/reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md)|[isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l](../c-runtime-library/reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이러한 루틴은 지정한 조건에 대해 문자를 테스트합니다.
 
@@ -164,7 +164,7 @@ ASCII 문자의 와이드 문자 표현(0x0000-0x007F)
 `iswxdigit`<br/>
 16진수 문자에 해당하는 와이드 문자
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```C
 // crt_isfam.c
@@ -202,7 +202,7 @@ int main( void )
 }
 ```
 
-## <a name="output"></a>출력
+## <a name="output"></a>Output
 
 ```Output
 00            AS  C                              .
