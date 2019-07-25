@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_member_pointer class
 - is_member_pointer
 ms.assetid: da07ff4e-9ee0-4baa-ad93-1741f10913d1
-ms.openlocfilehash: a02d8a156a861367f34ac0cda4744c3de9e43efe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f07e32c8ab1ea82a0c3616e96baca920a95e3042
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404782"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456144"
 ---
 # <a name="ismemberpointer-class"></a>is_member_pointer 클래스
 
@@ -27,12 +27,12 @@ struct is_member_pointer;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 멤버 함수에 대 한 포인터 또는 멤버 개체에 대 한 포인터 또는 `cv-qualified` 형태의 그 중 하나, 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 멤버 함수에 대 한 포인터 이거나 멤버 개체에 대 한 포인터 이거나 `cv-qualified` 그 중 하나의 폼인 경우 true이 고 그렇지 않은 경우 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -85,7 +85,7 @@ is_member_pointer<int (functional::*)()> == true
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_member_function_pointer 클래스](../standard-library/is-member-function-pointer-class.md)<br/>
-[is_member_object_pointer 클래스](../standard-library/is-member-object-pointer-class.md)<br/>
-[is_pointer 클래스](../standard-library/is-pointer-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_member_function_pointer 클래스](../standard-library/is-member-function-pointer-class.md)\
+[is_member_object_pointer 클래스](../standard-library/is-member-object-pointer-class.md)\
+[is_pointer 클래스](../standard-library/is-pointer-class.md)
