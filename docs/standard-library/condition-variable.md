@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - <condition_variable>
 ms.assetid: 8567f7cc-20bd-42a7-9137-87c46f878009
-ms.openlocfilehash: ed98966f651df76078fa47b05f5a2d8ae1b71d05
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: e63dc5a494f471997c28be8b2cd237aba45a6fd6
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244573"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457392"
 ---
 # <a name="ltconditionvariablegt"></a>&lt;condition_variable&gt;
 
@@ -24,7 +24,7 @@ ms.locfileid: "68244573"
 **네임스페이스:** std
 
 > [!NOTE]
-> 코드를 사용 하 여 컴파일된 **/clr**,이 헤더가 차단 됩니다.
+> **/Clr**을 사용 하 여 컴파일된 코드에서이 헤더는 차단 됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -49,9 +49,9 @@ while (condition is false)
 
 - `wait_for`는 지정된 `time interval` 동안 대기합니다.
 
-이러한 각 메서드에는 두 개의 오버로드된 버전이 있습니다. 하나는 대기만 하다가 의사적으로 대기 모드를 해제할 수 있습니다. 다른 하나는 조건자를 정의하는 추가 템플릿 인수를 사용합니다. 조건자가 될 때까지 메서드가 반환 하지 않습니다 **true**합니다.
+이러한 각 메서드에는 두 개의 오버로드된 버전이 있습니다. 하나는 대기만 하다가 의사적으로 대기 모드를 해제할 수 있습니다. 다른 하나는 조건자를 정의하는 추가 템플릿 인수를 사용합니다. 이 메서드는 조건자가 **true**일 때까지 반환 되지 않습니다.
 
-각 클래스에 조건이 있는 조건 변수에 알리는 데 사용 되는 메서드와 **true**합니다.
+또한 각 클래스에는 조건이 **참인**조건 변수를 알리는 데 사용 되는 두 개의 메서드가 있습니다.
 
 - `notify_one`은 조건 변수를 대기 중인 스레드 중 하나의 대기 모드를 해제합니다.
 
@@ -67,6 +67,6 @@ enum class cv_status { no_timeout, timeout };
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[condition_variable 클래스](../standard-library/condition-variable-class.md)<br/>
-[condition_variable_any 클래스](../standard-library/condition-variable-any-class.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[condition_variable 클래스](../standard-library/condition-variable-class.md)\
+[condition_variable_any 클래스](../standard-library/condition-variable-any-class.md)

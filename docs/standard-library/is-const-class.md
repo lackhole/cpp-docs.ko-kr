@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_const class
 - is_const
 ms.assetid: 55b8e887-9c3f-4a1d-823a-4a257337b205
-ms.openlocfilehash: 25f10d8a8aed8bad6c11663687ace56a0b65afee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92059f43e73c4b76f45ea9aeae61daf573367b43
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62336871"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452872"
 ---
 # <a name="isconst-class"></a>is_const 클래스
 
@@ -27,12 +27,12 @@ struct is_const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true *Ty* 는 `const-qualified`합니다.
+형식 조건자의 인스턴스는 *Ty* 가 `const-qualified`인 경우 true입니다.
 
 ## <a name="example"></a>예제
 
@@ -77,5 +77,5 @@ is_const<const int> == true
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_volatile 클래스](../standard-library/is-volatile-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_volatile 클래스](../standard-library/is-volatile-class.md)

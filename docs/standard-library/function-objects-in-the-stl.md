@@ -7,12 +7,12 @@ helpviewer_keywords:
 - C++ Standard Library, function objects
 - function objects
 ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
-ms.openlocfilehash: 310d846285612ad94ec9d66672fcb996557b07e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4df8096603b53d05e050750a860c76528a44b28c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159368"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454069"
 ---
 # <a name="function-objects-in-the-c-standard-library"></a>C++ 표준 라이브러리의 함수 개체
 
@@ -43,7 +43,7 @@ int main()
 }
 ```
 
-`main` 함수의 마지막 줄은 함수 개체를 호출하는 방법을 보여 줍니다. 이 호출은 해당 실제로 호출 operator () Functor 형식의 함수를 호출 합니다. 함수 개체 호출과 함수의 이러한 유사성은 함수 개체라는 용어가 나타난 방식입니다.
+`main` 함수의 마지막 줄은 함수 개체를 호출하는 방법을 보여 줍니다. 이 호출은 함수 호출 처럼 보이지만 실제로 함수 형식의 operator ()를 호출 합니다. 함수 개체 호출과 함수의 이러한 유사성은 함수 개체라는 용어가 나타난 방식입니다.
 
 ## <a name="function-objects-and-containers"></a>함수 개체 및 컨테이너
 
@@ -56,7 +56,7 @@ template <class Key,
 class set
 ```
 
-두 번째 템플릿 인수는 함수 개체 `less`입니다. 이 함수 개체를 반환 **true** 작으면 첫 번째 매개 변수가 두 번째 매개 변수 보다 합니다. 해당 요소를 정렬 하는 일부 컨테이너, 컨테이너 두 요소를 비교 하는 방법이 필요 합니다. 비교 함수 개체를 사용 하 여 수행 됩니다. 함수 개체를 만들고 컨테이너에 대한 템플릿 목록에서 지정하여 컨테이너의 고유한 정렬 기준을 정의할 수 있습니다.
+두 번째 템플릿 인수는 함수 개체 `less`입니다. 이 함수 개체는 첫 번째 매개 변수가 두 번째 매개 변수 보다 작은 경우 **true** 를 반환 합니다. 일부 컨테이너는 해당 요소를 정렬 하므로 컨테이너에 두 요소를 비교 하는 방법이 필요 합니다. 함수 개체를 사용 하 여 비교를 수행 합니다. 함수 개체를 만들고 컨테이너에 대한 템플릿 목록에서 지정하여 컨테이너의 고유한 정렬 기준을 정의할 수 있습니다.
 
 ## <a name="function-objects-and-algorithms"></a>함수 개체 및 알고리즘
 
@@ -70,8 +70,8 @@ ForwardIterator remove_if(
     Predicate pred);
 ```
 
-`remove_if` 에 대한 마지막 인수는 부울 값을 반환하는 개체 함수( *predicate*)입니다. 함수 개체의 결과가 **true**, 요소는 반복기가 액세스 하는 컨테이너에서 제거 됩니다 `first` 고 `last`입니다. 인수 `pred`에 대한 [\<functional>](../standard-library/functional.md) 헤더에 선언된 함수 개체를 사용하거나 직접 만들 수 있습니다.
+`remove_if` 에 대한 마지막 인수는 부울 값을 반환하는 개체 함수( *predicate*)입니다. 함수 개체의 결과가 **true**이면 요소가 및 `first` `last`반복기에서 액세스 하는 컨테이너에서 제거 됩니다. 인수 `pred`에 대한 [\<functional>](../standard-library/functional.md) 헤더에 선언된 함수 개체를 사용하거나 직접 만들 수 있습니다.
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - aligned_storage class
 - aligned_storage
 ms.assetid: f255e345-1f05-4d07-81e4-017f420839fb
-ms.openlocfilehash: 6a3145cb1837a3ea95c48022db391ddbccf55199
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8a4e907faa6175b9e03f5367d09501aaea388bce
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411099"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456472"
 ---
 # <a name="alignedstorage-class"></a>aligned_storage 클래스
 
@@ -30,15 +30,15 @@ using aligned_storage_t = typename aligned_storage<Len, Align>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*Len*<br/>
+*길이가*\
 개체 크기입니다.
 
-*맞춤*<br/>
+*않아*\
 개체 정렬입니다.
 
 ## <a name="remarks"></a>설명
 
-템플릿 멤버 typedef `type` 맞춤을 사용 하 여 POD 형식에 대 한 동의어 *맞춤* 크기 *Len*합니다. *Align* 같아야 `alignment_of<T>::value` 일부 형식에 대 한 `T`, 또는 기본 맞춤 합니다.
+템플릿 멤버 typedef `type` 는 맞춤 *정렬* 및 크기 *길이가*인 POD 형식의 동의어입니다. *Align* 은 일부 형식 `T`또는 `alignment_of<T>::value` 기본 맞춤에 대해와 같아야 합니다.
 
 ## <a name="example"></a>예제
 
@@ -72,5 +72,5 @@ aligned to double == 8
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[alignment_of 클래스](../standard-library/alignment-of-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[alignment_of 클래스](../standard-library/alignment-of-class.md)

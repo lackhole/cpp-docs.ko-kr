@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - time_put_byname class
 ms.assetid: e08c2348-64d2-4ace-98b1-1496e14c7b1a
-ms.openlocfilehash: ffe7aa276e9380b6544a78c1c1735ab57765507a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2da2bf4ea1c709b820c1a82dc20e288634139a83
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411970"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459997"
 ---
 # <a name="timeputbyname-class"></a>time_put_byname 클래스
 
@@ -40,15 +40,15 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*_Locname*<br/>
+*_Locname*\
 로캘 이름
 
-*_Refs*<br/>
+*참조 (_s)* \
 초기 참조 개수입니다.
 
 ## <a name="remarks"></a>설명
 
-해당 동작은에 의해 결정 됩니다 합니다 [라는](../standard-library/locale-class.md#name) 로캘 *_Locname*합니다. 각 생성자를 통해 해당 기준 개체를 초기화 [time_put](../standard-library/time-put-class.md#time_put)\<CharType, OutputIterator > (`_Refs`).
+해당 동작은 [명명](../standard-library/locale-class.md#name) 된 로캘 *_locname*에 의해 결정 됩니다. 각 생성자는 [time_put](../standard-library/time-put-class.md#time_put)\<chartype, outputiterator > (`_Refs`)를 사용 하 여 해당 기준 개체를 초기화 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -58,4 +58,4 @@ protected:
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

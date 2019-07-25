@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_polymorphic class
 - is_polymorphic
 ms.assetid: 4e1704db-d6f9-4154-a100-0ba02a373f20
-ms.openlocfilehash: 8d9846f03db60cdad88fccc04ba520eeb935dc33
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 662d68d13e076733e9923d0fad7e9272cd01b559
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413582"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455719"
 ---
 # <a name="ispolymorphic-class"></a>is_polymorphic 클래스
 
@@ -27,12 +27,12 @@ struct is_polymorphic;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 는 클래스를 선언 하거나 상속 가상 함수, 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 가상 함수를 선언 하거나 상속 하는 클래스인 경우 true이 고 그렇지 않은 경우 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -92,5 +92,5 @@ is_polymorphic<throws> == true
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_abstract 클래스](../standard-library/is-abstract-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_abstract 클래스](../standard-library/is-abstract-class.md)

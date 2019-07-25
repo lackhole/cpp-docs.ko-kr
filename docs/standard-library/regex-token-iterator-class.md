@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::regex_token_iterator [C++], pointer
 - std::regex_token_iterator [C++], reference
 ms.assetid: a213ba48-8e4e-4b6b-871a-2637acf05f15
-ms.openlocfilehash: 2cb66ce4cbee0936211e5e991b18f3ae4b8a7fe5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 78d01ed8606e65e55af7e0c8dc24c02b51c53a39
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369425"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451551"
 ---
 # <a name="regextokeniterator-class"></a>regex_token_iterator 클래스
 
@@ -45,13 +45,13 @@ class regex_token_iterator
 
 ## <a name="parameters"></a>매개 변수
 
-*BidIt*<br/>
+*BidIt*\
 부분 일치에 대한 반복기 형식입니다.
 
-*Elem*<br/>
+*E*\
 일치 항목을 찾을 요소의 형식입니다.
 
-*RXtraits*<br/>
+*RXtraits*\
 요소에 대한 특성 클래스입니다.
 
 ## <a name="remarks"></a>설명
@@ -70,7 +70,7 @@ class regex_token_iterator
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[regex_token_iterator](#regex_token_iterator)|반복기를 생성합니다.|
 
@@ -231,7 +231,7 @@ bool operator!=(const regex_token_iterator& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 비교할 반복기입니다.
 
 ### <a name="remarks"></a>설명
@@ -276,7 +276,7 @@ bool operator==(const regex_token_iterator& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 비교할 반복기입니다.
 
 ### <a name="remarks"></a>설명
@@ -342,16 +342,16 @@ regex_token_iterator(BidIt first, BidIt last,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*<br/>
+*기본*\
 일치하는 시퀀스의 시작입니다.
 
-*last*<br/>
+*최신*\
 일치하는 시퀀스의 끝입니다.
 
-*re*<br/>
+*재실행*\
 일치 항목에 대한 정규식입니다.
 
-*f*<br/>
+*350*\
 일치 항목에 대한 플래그입니다.
 
 ### <a name="remarks"></a>설명
@@ -390,11 +390,11 @@ typedef sub_match<BidIt> value_type;
 
 ## <a name="see-also"></a>참고자료
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_constants 클래스](../standard-library/regex-constants-class.md)<br/>
-[regex_error 클래스](../standard-library/regex-error-class.md)<br/>
-[\<regex> 함수](../standard-library/regex-functions.md)<br/>
-[regex_iterator 클래스](../standard-library/regex-iterator-class.md)<br/>
-[\<regex> 연산자](../standard-library/regex-operators.md)<br/>
-[regex_traits 클래스](../standard-library/regex-traits-class.md)<br/>
-[\<regex> 형식 정의](../standard-library/regex-typedefs.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[regex_constants 클래스](../standard-library/regex-constants-class.md)\
+[regex_error 클래스](../standard-library/regex-error-class.md)\
+[\<regex > 함수](../standard-library/regex-functions.md)\
+[regex_iterator 클래스](../standard-library/regex-iterator-class.md)\
+[\<regex > 연산자](../standard-library/regex-operators.md)\
+[regex_traits 클래스](../standard-library/regex-traits-class.md)\
+[\<regex> 형식 정의](../standard-library/regex-typedefs.md)

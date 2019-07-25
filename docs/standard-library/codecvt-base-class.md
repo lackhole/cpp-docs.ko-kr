@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt_base class
 ms.assetid: 7e95c083-91b4-4b3f-8918-0d4ea244a040
-ms.openlocfilehash: 6f957c39f9c78fd182b7ba2a14bdab7f27db56ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1a32ba5e583fdb20118a3397f1ddb326302f2de1
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405302"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459384"
 ---
 # <a name="codecvtbase-class"></a>codecvt_base 클래스
 
-열거형을 정의 하는 데 사용 되는 codecvt 클래스의 기본 클래스 라고 `result`변환의 결과 나타내기 위해 패싯 멤버 함수에 대 한 반환 형식으로 사용 합니다.
+로 `result`참조 되는 열거형을 정의 하는 데 사용 되는 codecvt 클래스에 대 한 기본 클래스입니다 .이 클래스는 변환 결과를 나타내기 위해 패싯 멤버 함수에 대 한 반환 형식으로 사용 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,11 +40,11 @@ protected:
 
 이 클래스는 템플릿 클래스 [codecvt](../standard-library/codecvt-class.md)의 모든 특수화에 공통적인 열거형을 설명합니다. 열거형 결과는 다음과 같이 [do_in](../standard-library/codecvt-class.md#do_in) 또는 [do_out](../standard-library/codecvt-class.md#do_out)의 가능한 반환 값을 설명합니다.
 
-- `ok` 내부 및 외부 문자 인코딩 간 변환에 성공 합니다.
+- `ok`내부 및 외부 문자 인코딩 간의 변환이 성공 하면입니다.
 
-- `partial` 대상은 변환이 성공 하기에 충분 되지 않습니다.
+- `partial`변환이 성공 하기에는 대상이 충분히 크지 않은 경우
 
-- `error` 소스 시퀀스의 형식이 잘못 된 경우 다음을 구성 합니다.
+- `error`소스 시퀀스의 형식이 잘못 된 경우
 
 - 함수가 변환을 수행하지 않은 경우 `noconv`
 
@@ -56,4 +56,4 @@ protected:
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

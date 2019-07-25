@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - unordered_map header
 ms.assetid: eb90ecb2-250a-4be1-83d2-f66b2917edde
-ms.openlocfilehash: a7238d36e27b516aa30ad89b7322e6830f57e403
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 1ac1bf2772e7eb6b2f61aa7b4f79de21fb675afe
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243457"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454756"
 ---
 # <a name="ltunorderedmapgt"></a>&lt;unordered_map&gt;
 
@@ -24,7 +24,7 @@ ms.locfileid: "68243457"
 ```
 
 > [!NOTE]
-> 합니다 \<unordered_map > 라이브러리 사용을 `#include <initializer_list>` 문입니다.
+> Unordered_map \<> 라이브러리는 `#include <initializer_list>` 문을 사용 하기도 합니다.
 
 ### <a name="classes"></a>클래스
 
@@ -35,7 +35,7 @@ ms.locfileid: "68243457"
 
 ### <a name="functions"></a>함수
 
-|기능|설명|
+|기능|Description|
 |-|-|
 |[operator!=](../standard-library/unordered-map-operators.md#op_neq)|연산자의 좌변에 있는 unordered_map 개체가 우변에 있는 unordered_map 개체와 같지 않은지 테스트합니다.|
 |[연산자==](../standard-library/unordered-map-operators.md#op_eq_eq)|연산자의 좌변에 있는 unordered_map 개체가 우변에 있는 unordered_map 개체와 같은지 테스트합니다.|
@@ -46,5 +46,5 @@ ms.locfileid: "68243457"
 
 ## <a name="see-also"></a>참고자료
 
-[unordered_multiset 클래스](../standard-library/unordered-multiset-class.md)<br/>
-[unordered_set 클래스](../standard-library/unordered-set-class.md)<br/>
+[unordered_multiset 클래스](../standard-library/unordered-multiset-class.md)\
+[unordered_set 클래스](../standard-library/unordered-set-class.md)

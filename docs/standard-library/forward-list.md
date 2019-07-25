@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - <forward_list>
 ms.assetid: 8b4ab09e-1475-434a-b4e0-fdbc07a08b5b
-ms.openlocfilehash: d20c5b83e0ce00c7634d32e6b63c92242c24d1b2
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: a8b343fbe5e175828b4b8470da486a6dea9f3455
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240646"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457004"
 ---
 # <a name="ltforwardlistgt"></a>&lt;forward_list&gt;
 
@@ -24,7 +24,7 @@ ms.locfileid: "68240646"
 **네임스페이스:** std
 
 > [!NOTE]
-> 합니다 \<forward_list > 라이브러리 사용을 `#include <initializer_list>` 문입니다.
+> Forward_list \<> 라이브러리는 `#include <initializer_list>` 문을 사용 하기도 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -53,4 +53,4 @@ ms.locfileid: "68240646"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)
