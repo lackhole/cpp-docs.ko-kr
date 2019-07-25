@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - unordered_set header
 ms.assetid: a3364d54-147d-4796-8728-9e62a2e4c226
-ms.openlocfilehash: 5065d1f2d0ea710dbaaaa09ec9079dbf502065af
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: e03fc2f1c541caedfa9ac83bb9500e50a4b513b1
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243411"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454682"
 ---
 # <a name="ltunorderedsetgt"></a>&lt;unordered_set&gt;
 
@@ -24,7 +24,7 @@ ms.locfileid: "68243411"
 **네임스페이스:** std
 
 > [!NOTE]
-> 합니다 \<unordered_set > 라이브러리 사용을 `#include <initializer_list>` 문입니다.
+> Unordered_set \<> 라이브러리는 `#include <initializer_list>` 문을 사용 하기도 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -48,5 +48,5 @@ ms.locfileid: "68243411"
 
 ## <a name="see-also"></a>참고자료
 
-[unordered_map 클래스](../standard-library/unordered-map-class.md)<br/>
-[unordered_multimap 클래스](../standard-library/unordered-multimap-class.md)<br/>
+[unordered_map 클래스](../standard-library/unordered-map-class.md)\
+[unordered_multimap 클래스](../standard-library/unordered-multimap-class.md)

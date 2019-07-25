@@ -10,12 +10,12 @@ helpviewer_keywords:
 - std::back_insert_iterator [C++], container_type
 - std::back_insert_iterator [C++], reference
 ms.assetid: a1ee07f2-cf9f-46a1-8608-cfaf207f9713
-ms.openlocfilehash: 2a0510b6df656b7925fd42a4c97d768336537424
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d8f48b1f714697aff63a4ee658a69fce6dab8041
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376447"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459532"
 ---
 # <a name="backinsertiterator-class"></a>back_insert_iterator 클래스
 
@@ -30,7 +30,7 @@ class back_insert_iterator;
 
 ### <a name="parameters"></a>매개 변수
 
-*컨테이너*<br/>
+*컨테이너*\
 `back_insert_iterator`가 뒤에 요소를 삽입할 컨테이너의 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -45,7 +45,7 @@ class back_insert_iterator;
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|형식 이름|Description|
 |-|-|
 |[container_type](#container_type)|`back_insert_iterator`에 대한 컨테이너를 제공하는 형식입니다.|
 |[reference](#reference)|`back_insert_iterator`에 대한 참조를 제공하는 형식입니다.|
@@ -54,9 +54,9 @@ class back_insert_iterator;
 
 |연산자|설명|
 |-|-|
-|[operator*](#op_star)|출력 반복기 식을 구현 하는 데 사용 된 역참조 연산자 \* `i`  =  `x` 후면 삽입을 위해.|
+|[operator*](#op_star)|뒤로 삽입을 \* 위해 출력 반복기 식을 `i`  =  `x` 구현 하는 데 사용 되는 역참조 연산자입니다.|
 |[operator++](#op_add_add)|값을 저장할 다음 위치에 `back_insert_iterator`를 증가시킵니다.|
-|[operator=](#op_eq)|출력 반복기 식을 구현 하는 데 사용 되는 대입 연산자 \* `i`  =  `x` 후면 삽입을 위해.|
+|[operator=](#op_eq)|뒤로 삽입을 \* 위해 출력 반복기 식을 `i`  =  `x` 구현 하는 데 사용 되는 할당 연산자입니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -74,7 +74,7 @@ explicit back_insert_iterator(Container& _Cont);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Cont*<br/>
+*_ 계속*\
 `back_insert_iterator`가 요소를 삽입할 컨테이너입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -315,7 +315,7 @@ back_insert_iterator<Container>& operator=(typename Container::value_type&& val)
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*짧은*\
 컨테이너에 삽입할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -423,6 +423,6 @@ The last element in the vector vec is: 3.
 
 ## <a name="see-also"></a>참고자료
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

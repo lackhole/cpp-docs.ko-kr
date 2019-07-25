@@ -5,16 +5,16 @@ f1_keywords:
 - <any>
 helpviewer_keywords:
 - <any>
-ms.openlocfilehash: 169e44880c98248dc1941ccc8c9adfe05f76f358
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 19e30b1ab0a9b0f30c1a4f3d4b614643cb8b50ac
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268655"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456279"
 ---
 # <a name="ltanygt"></a>&lt;any&gt;
 
-함수 및 클래스 및 여러 지원 클래스를 정의 합니다.
+클래스 및 여러 지원 함수와 클래스를 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -28,17 +28,17 @@ ms.locfileid: "68268655"
 
 |||
 |-|-|
-|[any_cast](../standard-library/any-functions.md#any_cast)|에 모든 개체를 만듭니다.|
+|[any_cast](../standard-library/any-functions.md#any_cast)|개체를 any로 만듭니다.|
 |[make_any](../standard-library/any-functions.md#make_any)|값을 사용 하 고 모든 개체를 만듭니다.|
-|[swap](../standard-library/any-functions.md#swap)|어떤 두 개체의 요소를 교환 합니다.|
+|[swap](../standard-library/any-functions.md#swap)|두 개체의 요소를 교환 합니다.|
 
 ### <a name="classes"></a>클래스
 
 |||
 |-|-|
-|[any](../standard-library/any-class.md)|생성자 요구 사항을 충족 하거나 값이 없는 모든 형식을 저장 합니다.|
-|[bad_any_cast](../standard-library/bad-any-cast-class.md)|실패 한 작업에서 throw 되는 개체 `any_cast`합니다.|
+|[any](../standard-library/any-class.md)|는 생성자 요구 사항을 충족 하는 모든 형식을 저장 하거나 값을 포함 하지 않습니다.|
+|[bad_any_cast](../standard-library/bad-any-cast-class.md)|에서 throw 된 개체는 `any_cast`실패 했습니다.|
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

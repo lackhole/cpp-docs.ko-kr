@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_fundamental class
 - is_fundamental
 ms.assetid: b84eee84-2fb2-4611-beaf-b384074d8b6a
-ms.openlocfilehash: d16dfeebabd5909212425fcc27b355110e891d89
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5643aa6a2d4bbfaafc86cba4251df162b59b4692
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348447"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456254"
 ---
 # <a name="isfundamental-class"></a>is_fundamental 클래스
 
@@ -27,12 +27,12 @@ struct is_fundamental;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식 *Ty* 즉,이 기본 형식이 **void**, 정수 형식, 부동 소수점 형식 또는 `cv-qualified` 고, 그렇지 않으면 false 중 하나의 형식을 합니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 기본 형식, 즉 **void**, 정수 형식, 부동 소수점 형식 또는 `cv-qualified` 이러한 형식 중 하나의 형식인 경우 true이 고 그렇지 않은 경우 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -77,5 +77,5 @@ is_fundamental<void> == true
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_compound 클래스](../standard-library/is-compound-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_compound 클래스](../standard-library/is-compound-class.md)

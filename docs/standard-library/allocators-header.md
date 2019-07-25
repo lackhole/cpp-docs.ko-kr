@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - allocators header
 ms.assetid: 4393a607-4df8-4278-bbb2-c8ec52e60b83
-ms.openlocfilehash: 064afd4467a2aedebe3a9892fc80b14597c8552f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5de872080bc02f4654f53d94928b5e44dbc36816
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375407"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453691"
 ---
 # <a name="ltallocatorsgt"></a>&lt;allocators&gt;
 
@@ -77,7 +77,7 @@ std::list<int, alloc<int> > _List1;
 
 _Lst1은 `allocator_chunklist` 및 [sync_per_thread](../standard-library/sync-per-thread-class.md) 동기화 필터를 사용하여 노드를 할당합니다.
 
-블록 할당자는 캐시 또는 필터입니다. 캐시는 std::size_t 형식의 인수 하나를 받는 템플릿 클래스입니다. 단일 크기의 메모리 블록을 할당 및 할당 취소하는 블록 할당자를 정의합니다. 연산자를 사용 하 여 메모리를 확보 해야 **새**, 연산자를 별도로 호출 해야 것 이지만 **새** 각 블록에 대 한 합니다. 예를 들어, 더 큰 블록에서 하위 할당을 수행하거나 후속 재할당을 위해 할당 취소된 블록을 캐시할 수 있습니다.
+블록 할당자는 캐시 또는 필터입니다. 캐시는 std::size_t 형식의 인수 하나를 받는 템플릿 클래스입니다. 단일 크기의 메모리 블록을 할당 및 할당 취소하는 블록 할당자를 정의합니다. Operator **new**를 사용 하 여 메모리를 가져와야 하지만 각 블록에 대해 operator **new** 를 별도로 호출할 필요는 없습니다. 예를 들어, 더 큰 블록에서 하위 할당을 수행하거나 후속 재할당을 위해 할당 취소된 블록을 캐시할 수 있습니다.
 
 rebind를 컴파일할 수 없는 컴파일러에서는, 템플릿이 인스턴스화될 때 사용되는 std::size_t 인수의 값이 캐시의 멤버 함수인 allocate 및 deallocate에 전달되는 인수 _Sz의 값과 다를 수 있습니다.
 
@@ -141,7 +141,7 @@ rebind를 컴파일할 수 없는 컴파일러에서는, 템플릿이 인스턴�
 |[allocator_base](../standard-library/allocator-base-class.md)|동기화 필터에서 사용자 정의 할당자를 만드는 데 필요한 기본 클래스 및 일반 함수를 정의합니다.|
 |[allocator_chunklist](../standard-library/allocator-chunklist-class.md)|[cache_chunklist](../standard-library/cache-chunklist-class.md) 유형의 캐시를 사용하여 개체에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.|
 |[allocator_fixed_size](../standard-library/allocator-fixed-size-class.md)|[max_fixed_size](../standard-library/max-fixed-size-class.md)에 의해 관리되는 길이와 함께 [cache_freelist](../standard-library/cache-freelist-class.md) 형식의 캐시를 사용하여 `Type` 형식의 개체에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.|
-|[allocator_newdel](../standard-library/allocator-newdel-class.md)|사용 하는 할당자를 구현 **delete 연산자** 메모리 할당을 취소 하려면 블록 및 **new 연산자** 메모리 블록을 할당 하려면.|
+|[allocator_newdel](../standard-library/allocator-newdel-class.md)|는 **operator delete** 를 사용 하 여 메모리 블록을 할당 취소 하 고 **new 연산자** 를 사용 하 여 메모리 블록을 할당 하는 할당자를 구현 합니다.|
 |[allocator_suballoc](../standard-library/allocator-suballoc-class.md)|[cache_suballoc](../standard-library/cache-suballoc-class.md) 형식의 캐시를 사용하여 `Type` 형식의 개체에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.|
 |[allocator_unbounded](../standard-library/allocator-unbounded-class.md)|[max_unbounded](../standard-library/max-unbounded-class.md)에 의해 관리되는 길이와 함께 [cache_freelist](../standard-library/cache-freelist-class.md) 형식의 캐시를 사용하여 `Type` 형식의 개체에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.|
 |[allocator_variable_size](../standard-library/allocator-variable-size-class.md)|[max_variable_size](../standard-library/max-variable-size-class.md)에 의해 관리되는 길이와 함께 [cache_freelist](../standard-library/cache-freelist-class.md) 형식의 캐시를 사용하여 `Type` 형식의 개체에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.|
@@ -167,4 +167,4 @@ rebind를 컴파일할 수 없는 컴파일러에서는, 템플릿이 인스턴�
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

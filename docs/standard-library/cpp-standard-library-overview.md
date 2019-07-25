@@ -7,12 +7,12 @@ helpviewer_keywords:
 - libraries, Standard C++
 - C++ Standard Library, headers
 ms.assetid: 7acb83a4-da73-4ad3-bc30-a71289db7f60
-ms.openlocfilehash: 57abafbcbd899d3eca7369205afba4ca262ad2c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b1e5226db751605d5352b1c5195759c34d080f5
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210803"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452445"
 ---
 # <a name="c-standard-library-overview"></a>C++ 표준 라이브러리 개요
 
@@ -60,4 +60,4 @@ Visual C++ 런타임 라이브러리에 대한 자세한 내용은 [CRT 라이�
 
 ## <a name="see-also"></a>참고 항목
 
-[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

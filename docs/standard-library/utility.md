@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - utility header
 ms.assetid: c4491103-5da9-47a1-9c2b-ed8bc64b0599
-ms.openlocfilehash: 76b04c3c26f6ec49f1d816feaeec7e21312d79a9
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: eaae94bcffcda6e113001dd7070bcc80e7c14d09
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246275"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458074"
 ---
 # <a name="ltutilitygt"></a>&lt;utility&gt;
 
@@ -28,7 +28,7 @@ ms.locfileid: "68246275"
 쌍은 C++ 표준 라이브러리에서 널리 사용됩니다. 쌍은 다양한 함수에 대한 인수 및 반환 값으로 필요하며, [map class](../standard-library/map-class.md) 및 [multimap class](../standard-library/multimap-class.md) 등의 컨테이너에 대한 요소 형식으로도 필요합니다. \<utility> 헤더는 키/값 쌍 형식 요소 관리를 지원하기 위해 자동으로 \<map>에 포함됩니다.
 
 > [!NOTE]
-> 합니다 \<유틸리티 > 헤더는 문을 사용 하 여 `#include <initializer_list>`입니다. 또한 가리킵니다 `class tuple` 에 정의 된 대로 \<튜플 >.
+> 유틸리티 \<> 헤더는 문을 `#include <initializer_list>`사용 합니다. 또한 튜플 >에 `class tuple` \<정의 된 것을 참조 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -36,7 +36,7 @@ ms.locfileid: "68246275"
 
 |||
 |-|-|
-|[chars_format](../standard-library/chars-format-class.md)|기본 숫자 변환에 대 한 부동 소수점 형식입니다.|
+|[chars_format](../standard-library/chars-format-class.md)|기본 숫자 변환을 위한 부동 소수점 형식입니다.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|`pair` 요소의 형식을 래핑하는 클래스입니다.|
 |[tuple_size](../standard-library/tuple-size-class-tuple.md)|`pair` 요소 수를 래핑하는 클래스입니다.|
 
@@ -53,8 +53,8 @@ ms.locfileid: "68246275"
 
 |||
 |-|-|
-|[as_const](../standard-library/utility-functions.md#asconst)|반환 형식입니다.|
-|[declval](../standard-library/utility-functions.md#declval)|약식 식 평가 합니다.|
+|[as_const](../standard-library/utility-functions.md#asconst)|형식을 반환 합니다.|
+|[declval](../standard-library/utility-functions.md#declval)|줄임 식 계산입니다.|
 |[exchange](../standard-library/utility-functions.md#exchange)|개체에 새 값을 할당 하 고 이전 값을 반환 합니다.|
 |[forward](../standard-library/utility-functions.md#forward)|완벽한 전달에 의해 가려지지 않도록 인수의 참조 형식(`lvalue` 또는 `rvalue` 중 하나)을 유지합니다.|
 |[from_chars](../standard-library/utility-functions.md#from_chars)||
@@ -63,7 +63,7 @@ ms.locfileid: "68246275"
 |[move](../standard-library/utility-functions.md#move)|전달된 인수를 `rvalue` 참조로 반환합니다.|
 |[move_if_noexcept](../standard-library/utility-functions.md#moveif)||
 |[swap](../standard-library/utility-functions.md#swap)|두 `pair` 개체의 요소를 교환합니다.|
-|[to_chars](../standard-library/utility-functions.md#to_chars)|값을 문자열로 변환합니다.|
+|[to_chars](../standard-library/utility-functions.md#to_chars)|값을 문자열로 변환 합니다.|
 
 ### <a name="operators"></a>연산자
 
@@ -80,15 +80,15 @@ ms.locfileid: "68246275"
 
 |||
 |-|-|
-|[from_chars_result](../standard-library/from-chars-result-structure.md)|에 사용 되는 구조체 `from_chars`합니다.|
+|[from_chars_result](../standard-library/from-chars-result-structure.md)|에 `from_chars`사용 되는 구조체입니다.|
 |[identity](../standard-library/identity-structure.md)|형식 정의를 템플릿 매개 변수로 제공하는 구조체입니다.|
-|[in_place_t](../standard-library/in-place-t-struct.md)|또한 다음 구조체 `in_place_type_t` 고 `in_place_index_t`입니다.|
+|[in_place_t](../standard-library/in-place-t-struct.md)|에는 구조체 `in_place_type_t` 및 `in_place_index_t`도 포함 됩니다.|
 |[integer_sequence](../standard-library/integer-sequence-class.md)|정수 시퀀스를 나타냅니다.|
 |[pair](../standard-library/pair-structure.md)|두 개체를 단일 개체로 처리하는 기능을 제공하는 형식입니다.|
-|[piecewise_construct_t](../standard-library/piecewise-construct-t-structure.md)|별도 생성자 및 함수 오버 로드를 유지 하는 데 사용 되는 형식입니다.|
-|[to_chars_result](../standard-library/to-chars-result-structure.md)|에 사용 되는 구조체 `to_chars`합니다.|
+|[piecewise_construct_t](../standard-library/piecewise-construct-t-structure.md)|별도의 생성자와 함수 오버 로드를 유지 하는 데 사용 되는 형식입니다.|
+|[to_chars_result](../standard-library/to-chars-result-structure.md)|에 `to_chars`사용 되는 구조체입니다.|
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

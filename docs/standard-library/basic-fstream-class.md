@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::basic_fstream [C++], rdbuf
 - std::basic_fstream [C++], swap
 ms.assetid: 8473817e-42a4-430b-82b8-b476c86bcf8a
-ms.openlocfilehash: 894ac0bf7703bf68c9125d11023dbc32cfbb5941
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d26d0fe0e4e4152cf05476f546b753650209dfe
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400673"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459597"
 ---
 # <a name="basicfstream-class"></a>basic_fstream 클래스
 
@@ -36,10 +36,10 @@ class basic_fstream : public basic_iostream<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem*<br/>
+*E*\
 파일 버퍼의 기본 요소입니다.
 
-*Tr*<br/>
+*비교한*\
 파일 버퍼 기본 요소의 특성(일반적으로 `char_traits`< `Elem`>)입니다.
 
 ## <a name="remarks"></a>설명
@@ -127,20 +127,20 @@ basic_fstream(basic_fstream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Filename*<br/>
+*파일 이름 (_s)* \
 열어야 할 파일의 이름입니다.
 
-*_Mode*<br/>
+*모드 (_s)* \
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*_Prot*<br/>
-기본 파일 열기 보호 합니다 *shflag* 에 매개 변수 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)합니다.
+*_Prot*\
+[_Fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)의 *shflag* 매개 변수와 동일한 기본 파일 열기 보호입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 기본 클래스를 호출 하 여 초기화 [basic_iostream](../standard-library/basic-iostream-class.md)(`sb`), 여기서 `sb` 클래스의 저장 개체인 [basic_filebuf](../standard-library/basic-filebuf-class.md) \< **Elem**하십시오 **Tr**>. 또한 초기화 `sb` 호출한 `basic_filebuf` \< **Elem**를 **Tr**>.
+첫 번째 생성자는 [basic_iostream](../standard-library/basic-iostream-class.md)`sb`()를 호출 하 여 기본 클래스를 `sb` 초기화 합니다. 여기서는 [basic_filebuf](../standard-library/basic-filebuf-class.md) \< **Elem**, **Tr**> 클래스의 저장 된 개체입니다. 또한 **Elem**, `sb` **Tr**> `basic_filebuf` 를 호출 \< 하 여 초기화 합니다.
 
-두 번째 및 세 번째 생성자는 `basic_iostream`( **sb**)를 호출하여 기본 클래스를 초기화합니다. 초기화 `sb` 호출한 `basic_filebuf` \< **Elem**, **Tr**>, 차례로 **sb.**[엽니다](../standard-library/basic-filebuf-class.md#open)( _ *Filename*, `_Mode`). 후자 함수가 null 포인터를 반환 하는 경우 생성자를 호출 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`).
+두 번째 및 세 번째 생성자는 `basic_iostream`( **sb**)를 호출하여 기본 클래스를 초기화합니다. 또한 **Elem**, `sb` **Tr**>를 호출 하 여를 초기화 한 다음, **sb.** [open](../standard-library/basic-filebuf-class.md#open)(_ `_Mode` *Filename*,)을 호출 `basic_filebuf` \< 합니다. 후자 함수가 null 포인터를 반환 하면 생성자는 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`)를 호출 합니다.
 
 네 번째 생성자는 rvalue 참조로 처리되는 `right`의 내용으로 개체를 초기화합니다.
 
@@ -158,7 +158,7 @@ void close();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [rdbuf](#rdbuf)**->** [close](../standard-library/basic-filebuf-class.md#close)를 호출합니다.
+멤버 함수는 [rdbuf](#rdbuf) **->** [close](../standard-library/basic-filebuf-class.md#close)를 호출합니다.
 
 ### <a name="example"></a>예제
 
@@ -178,7 +178,7 @@ bool is_open() const;
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [rdbuf](#rdbuf)**->**[is_open](../standard-library/basic-filebuf-class.md#is_open)을 반환합니다.
+멤버 함수는 [rdbuf](#rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#is_open)을 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -210,22 +210,22 @@ void open(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Filename*<br/>
+*파일 이름 (_s)* \
 열어야 할 파일의 이름입니다.
 
-*_Mode*<br/>
+*모드 (_s)* \
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*_Prot*<br/>
-기본 파일 열기 보호 합니다 *shflag* 에 매개 변수 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)합니다.
+*_Prot*\
+[_Fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)의 *shflag* 매개 변수와 동일한 기본 파일 열기 보호입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode`)를 호출합니다. 이 함수를 호출 하는 해당 함수가 null 포인터를 반환 하면 [setstate](../standard-library/basic-ios-class.md#setstate)( `failbit`).
+멤버 함수는 [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode`)를 호출합니다. 해당 함수가 null 포인터를 반환 하는 경우 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)( `failbit`)를 호출 합니다.
 
 ### <a name="example"></a>예제
 
-참조 [basic_filebuf:: open](../standard-library/basic-filebuf-class.md#open) 사용 하는 방법의 예 `open`합니다.
+를 사용 `open`하는 방법에 대 한 예제는 [basic_filebuf:: open](../standard-library/basic-filebuf-class.md#open) 을 참조 하세요.
 
 ## <a name="op_eq"></a>  basic_fstream::operator=
 
@@ -237,7 +237,7 @@ basic_fstream& operator=(basic_fstream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 `basic_fstream` 개체에 대한 lvalue 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -246,7 +246,7 @@ basic_fstream& operator=(basic_fstream&& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자의 콘텐츠를 사용 하 여 개체의 내용을 바꿉니다 *오른쪽*는 rvalue 참조로 처리 합니다.
+멤버 연산자는 rvalue 참조로 처리 되는 *오른쪽*의 내용을 사용 하 여 개체의 내용을 바꿉니다.
 
 ## <a name="rdbuf"></a>  basic_fstream::rdbuf
 
@@ -274,15 +274,15 @@ void swap(basic_fstream& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 `basic_fstream` 개체에 대한 `lvalue` 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는이 개체의 내용과의 내용을 교환 *오른쪽*합니다.
+멤버 함수는이 개체의 내용과 *오른쪽*의 내용을 교환 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

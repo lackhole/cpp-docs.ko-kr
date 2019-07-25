@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - time_base class
 ms.assetid: 9ae37f0b-9a42-496e-9870-3d9b71bab8fb
-ms.openlocfilehash: e790237e506aa32bafdb39938d841307bbc4d9c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85565dc0c0ec904551eb8dd981cfacc9a2e1f256
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412022"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460033"
 ---
 # <a name="timebase-class"></a>time_base 클래스
 
-이 클래스는 열거 형식에만 정의 되는 템플릿 클래스 time_get의 패싯에 대 한 기본 클래스로 사용 됩니다. `dateorder` 와이 형식의 여러 상수만 합니다.
+이 클래스는 템플릿 클래스 time_get의 패싯에 대 한 기본 클래스로 사용 되며, 열거 된 형식 `dateorder` 및이 형식의 여러 상수만 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,15 +38,15 @@ public:
 
 각 상수는 날짜의 구성 요소 순서를 지정하는 다른 방식을 지정합니다. 상수는 다음과 같습니다.
 
-- `no_order` 특정 순서 없이 지정합니다.
+- `no_order`특정 순서를 지정 하지 않습니다.
 
-- `dmy` 주문 날짜, 월, 2/12/1979와 같이 년을 지정 합니다.
+- `dmy`12 년 12 월 1979 일을 기준으로 주문 일, 월, 연도를 지정 합니다.
 
-- `mdy` 주문 월, 일, 1979 년 12 월 2와 같이 연도 지정 합니다.
+- `mdy`1979 년 12 월 2 일과 같이 주문 월, 일, 연도를 지정 합니다.
 
-- `ymd` 주문 연도, 월, 1979/12/2와 같이 날짜를 지정 합니다.
+- `ymd`1979/12/2에서와 같이 order 년, 월, 일을 지정 합니다.
 
-- `ydm` 주문 연도 차례로 일, 월, 1979와 같이 지정합니다. 2 년 12 월입니다.
+- `ydm`1979에서와 같이 order year, day, month를 지정 합니다. 2 Dec
 
 ## <a name="requirements"></a>요구 사항
 
@@ -56,4 +56,4 @@ public:
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

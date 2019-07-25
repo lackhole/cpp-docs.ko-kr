@@ -8,22 +8,22 @@ helpviewer_keywords:
 - _SCL_SECURE_NO_DEPRECATE
 - _SCL_SECURE_NO_WARNINGS
 ms.assetid: ef0ddea9-7c62-4b53-8b64-5f4fd369776f
-ms.openlocfilehash: 77c60aed511fc3dbbea2d74e83e36dae735dcb0e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d19d47fe7120301740e1431765fc6edbeaa48c60
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348310"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448200"
 ---
 # <a name="sclsecurenowarnings"></a>_SCL_SECURE_NO_WARNINGS
 
-안전 하지 않은 메서드 중 하나를 호출 합니다 C++ 표준 라이브러리에서 결과 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)합니다. 이 경고를 비활성화 하려면 코드에서 매크로 _SCL_SECURE_NO_WARNINGS를 정의 합니다.
+C++ 표준 라이브러리에서 잠재적으로 안전 하지 않은 메서드를 호출 하면 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)이 발생 합니다. 이 경고를 사용 하지 않도록 설정 하려면 코드에서 _SCL_SECURE_NO_WARNINGS 매크로를 정의 합니다.
 
 ```cpp
 #define _SCL_SECURE_NO_WARNINGS
 ```
 
-미리 컴파일된 헤더를 사용 하는 경우는 모든 C 런타임 라이브러리 또는 표준 라이브러리 헤더를 포함 하기 전에 미리 컴파일된 헤더 파일에서이 지시어를 배치 합니다. 추가 하면 개별 원본 코드 파일에 미리 컴파일된 헤더 파일을 포함 하기 전에, 컴파일러에서 무시 됩니다.
+미리 컴파일된 헤더를 사용 하는 경우 C 런타임 라이브러리 또는 표준 라이브러리 헤더를 포함 하기 전에 미리 컴파일된 헤더 파일에이 지시문을 추가 합니다. 미리 컴파일된 헤더 파일을 포함 하기 전에 개별 소스 코드 파일에 배치 하는 경우 컴파일러에서 무시 됩니다.
 
 ## <a name="remarks"></a>설명
 
@@ -31,7 +31,7 @@ C4996 경고를 비활성화하는 다른 방법은 다음과 같습니다.
 
 - [/D(전처리기 정의)](../build/reference/d-preprocessor-definitions.md) 컴파일러 옵션을 사용합니다.
 
-   > cl [다른 컴파일러 옵션] /D_SCL_SECURE_NO_WARNINGS myfile.cpp
+   > cl/D_SCL_SECURE_NO_WARNINGS [기타 컴파일러 옵션] myfile .cpp
 
 - [/w](../build/reference/compiler-option-warning-level.md) 컴파일러 옵션을 사용합니다.
 
@@ -51,4 +51,4 @@ C4996 경고를 비활성화하는 다른 방법은 다음과 같습니다.
 
 ## <a name="see-also"></a>참고자료
 
-[안전한 라이브러리: C++ 표준 라이브러리](../standard-library/safe-libraries-cpp-standard-library.md)<br/>
+[안전한 라이브러리: C++ 표준 라이브러리](../standard-library/safe-libraries-cpp-standard-library.md)

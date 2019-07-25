@@ -5,12 +5,12 @@ f1_keywords:
 - unordered_map/std::operator!=
 - unordered_map/std::operator==
 ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed
-ms.openlocfilehash: a27ef8e320f59464f15603c330346db86bc30aac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe4877bc5b371a2570c18950bac36a003078ccc7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158449"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454772"
 ---
 # <a name="ltunorderedmapgt-operators"></a>&lt;unordered_map&gt; 연산자
 
@@ -28,15 +28,15 @@ bool operator!=(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*\
 `unordered_map` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `unordered_map` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** unordered_map 같지 않으면 하는 경우 **false** 같으면 합니다.
+unordered_maps이 같지 않으면 **true** 입니다. 같으면 false이 고, 그렇지 않으면 **false** 입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -92,15 +92,15 @@ bool operator==(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*\
 `unordered_map` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `unordered_map` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** unordered_map이 같으면; **false** 동일 하지 않은 경우.
+unordered_maps 같으면 **true** 이 고, 같지 않으면 **false** 입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -156,15 +156,15 @@ bool operator!=(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*\
 `unordered_multimap` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `unordered_multimap` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** unordered_multimap 같지 않으면 하는 경우 **false** 같으면 합니다.
+unordered_multimaps이 같지 않으면 **true** 입니다. 같으면 false이 고, 그렇지 않으면 **false** 입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -221,15 +221,15 @@ bool operator==(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*\
 `unordered_multimap` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `unordered_multimap` 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** unordered_multimap이 같지 않으면 **false** 동일 하지 않은 경우.
+unordered_multimaps 같으면 **true** 이 고, 같지 않으면 **false** 입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -278,4 +278,4 @@ int main( )
 
 ## <a name="see-also"></a>참고자료
 
-[<unordered_map>](../standard-library/unordered-map.md)<br/>
+[<unordered_map>](../standard-library/unordered-map.md)

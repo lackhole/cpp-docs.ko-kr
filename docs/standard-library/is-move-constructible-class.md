@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_move_constructible
 ms.assetid: becdf076-7419-488d-a335-78adf2478b9b
-ms.openlocfilehash: 1b1e450338a123c51b80f40f2369207c8b987cd6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c83ed4365fd0e73a7daa8b9894c5e85f20387a79
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383635"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456111"
 ---
 # <a name="ismoveconstructible-class"></a>is_move_constructible 클래스
 
@@ -26,12 +26,12 @@ struct is_move_constructible;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 평가할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 경우 true로 계산 되는 형식 조건자 *T* 이동 작업을 사용 하 여 생성할 수 있습니다. 이 조건자는 `is_constructible<T, T&&>`과 같습니다.
+이동 작업을 사용 하 여 *T* 형식을 생성할 수 있는 경우 true로 평가 되는 형식 조건자입니다. 이 조건자는 `is_constructible<T, T&&>`과 같습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -41,4 +41,4 @@ struct is_move_constructible;
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

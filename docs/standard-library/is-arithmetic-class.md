@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_arithmetic class
 - is_arithmetic
 ms.assetid: ea427b7e-0141-4a04-848f-561054c53001
-ms.openlocfilehash: 7aff4b051786c3d77dacb65ddbdbd29fa695ca48
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e2c148b7cb58cf38e5f73d4e3d2297eac099ef7e
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404808"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456683"
 ---
 # <a name="isarithmetic-class"></a>is_arithmetic 클래스
 
@@ -27,12 +27,12 @@ struct is_arithmetic;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 는 산술 형식, 즉 정수 계열 형식 또는 부동 소수점 형식 또는 `cv-qualified` 형태의 그 중 하나, 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 산술 형식 이거나 정수 형식이 나 부동 소수점 형식 이거나 `cv-qualified` 그 중 하나의 폼인 경우 true이 고 그렇지 않은 경우 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -74,6 +74,6 @@ is_arithmetic<float> == true
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_floating_point 클래스](../standard-library/is-floating-point-class.md)<br/>
-[is_integral 클래스](../standard-library/is-integral-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_floating_point 클래스](../standard-library/is-floating-point-class.md)\
+[is_integral 클래스](../standard-library/is-integral-class.md)

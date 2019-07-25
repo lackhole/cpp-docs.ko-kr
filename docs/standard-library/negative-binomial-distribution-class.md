@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::negative_binomial_distribution [C++], param_type
 - std::negative_binomial_distribution [C++], param_type
 ms.assetid: 7f5f0967-7fdd-4578-99d4-88f292b4fe9c
-ms.openlocfilehash: 8f6552d9f9b0b34b1cb721e726c95845210c8bb9
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 11e705629675903803f7230d540417846417cc77
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449273"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456952"
 ---
 # <a name="negativebinomialdistribution-class"></a>negative_binomial_distribution 클래스
 
@@ -71,19 +71,19 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*IntType*<br/>
-정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*IntType*\
+정수 결과 형식으로, 기본적으로 **int**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-사용자 지정 정수 값을 생성 하는 분포를 설명 하는 템플릿 클래스 형식 또는 형식 **int** 음 이항 분포 이산 확률 함수에 따라 제공 하지 않으면 분산 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
+음수 이항 분포 불연속 확률 함수에 따라 분포 된 경우 템플릿 클래스는 사용자 지정 정수 형식의 값을 생성 하는 분포를 설명 하 고, 아무것도 제공 되지 않은 경우 **int** 형식을 제공 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
 
 ||||
 |-|-|-|
 |[negative_binomial_distribution](#negative_binomial_distribution)|`negative_binomial_distribution::k`|`negative_binomial_distribution::param`|
 |`negative_binomial_distribution::operator()`|`negative_binomial_distribution::p`|[param_type](#param_type)|
 
-속성 멤버 `k()` 하 고 `p()` 현재 저장 된 분포 매개 변수 값을 반환 *k* 하 고 *p* 각각.
+속성 멤버 `k()` 및 `p()` 는 각각 현재 저장 된 분포 매개 변수 값 *k* 및 *p* 를 반환 합니다.
 
 속성 구성원 `param()`은 `param_type`으로 저장된 분포 매개 변수 패키지를 설정하거나 반환합니다.
 
@@ -95,7 +95,7 @@ public:
 
 분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-음 이항 분포 이산 확률 함수에 대 한 자세한 내용은 Wolfram MathWorld 문서를 참조 하세요 [음 이항 분포](https://go.microsoft.com/fwlink/p/?linkid=400516)합니다.
+음수 이항 분포 불연속 확률 함수에 대 한 자세한 내용은 Wolfram MathWorld 문서 [음수 이항 분포](https://go.microsoft.com/fwlink/p/?linkid=400516)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
@@ -232,13 +232,13 @@ explicit negative_binomial_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*k*<br/>
+*시계의*\
 `k` 분포 매개 변수입니다.
 
-*p*<br/>
+*®*\
 `p` 분포 매개 변수입니다.
 
-*parm*<br/>
+*parm*\
 분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
 ### <a name="remarks"></a>설명
@@ -259,13 +259,13 @@ struct param_type { typedef negative_binomial_distribution`<`result_type> distri
 
 ### <a name="parameters"></a>매개 변수
 
-*k*<br/>
+*시계의*\
 `k` 분포 매개 변수입니다.
 
-*p*<br/>
+*®*\
 `p` 분포 매개 변수입니다.
 
-*right*<br/>
+*오른쪽*\
 비교에 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
@@ -276,4 +276,4 @@ struct param_type { typedef negative_binomial_distribution`<`result_type> distri
 
 ## <a name="see-also"></a>참고자료
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

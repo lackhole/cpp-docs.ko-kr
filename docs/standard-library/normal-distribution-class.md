@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-ms.openlocfilehash: df30ddb910cf2fa266a603a3ab285379ea45ec7c
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: daf9ab6b91eb4af19fdd563937b626515c4bc99b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449860"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457657"
 ---
 # <a name="normaldistribution-class"></a>normal_distribution 클래스
 
@@ -71,19 +71,19 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType*<br/>
-부동 소수점 결과 형식으로 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*\
+부동 소수점 결과 형식으로, 기본적으로 **double**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-사용자 지정 정수 값을 생성 하는 분포를 설명 하는 템플릿 클래스 형식 또는 형식 **이중** 정규 분포에 따라 제공 하지 않으면 배포 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
+정규 분포에 따라 분포 된 경우 템플릿 클래스는 사용자 지정 정수 형식의 값을 생성 하는 분포를 설명 하 고, 아무것도 제공 되지 않은 경우 **double** 형식을 제공 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
 
 ||||
 |-|-|-|
 |[normal_distribution](#normal_distribution)|`normal_distribution::mean`|`normal_distribution::param`|
 |`normal_distribution::operator()`|`normal_distribution::stddev`|[param_type](#param_type)|
 
-속성 함수 `mean()` 하 고 `stddev()` 에 저장 된 분포 매개 변수 값을 반환 *의미* 하 고 *stddev* 각각.
+속성 함수 `mean()` 및 `stddev()` 는 저장 된 분포 매개 변수의 값을 각각 *mean* 및 *stddev* 로 반환 합니다.
 
 속성 구성원 `param()`은 `param_type`으로 저장된 분포 매개 변수 패키지를 설정하거나 반환합니다.
 
@@ -198,13 +198,13 @@ explicit normal_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*mean*<br/>
+*되었음을*\
 `mean` 분포 매개 변수입니다.
 
-*stddev*<br/>
+*stddev*\
 `stddev` 분포 매개 변수입니다.
 
-*parm*<br/>
+*parm*\
 분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
 ### <a name="remarks"></a>설명
@@ -233,13 +233,13 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*mean*<br/>
+*되었음을*\
 `mean` 분포 매개 변수입니다.
 
-*stddev*<br/>
+*stddev*\
 `stddev` 분포 매개 변수입니다.
 
-*right*<br/>
+*오른쪽*\
 비교에 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
@@ -250,4 +250,4 @@ struct param_type {
 
 ## <a name="see-also"></a>참고자료
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

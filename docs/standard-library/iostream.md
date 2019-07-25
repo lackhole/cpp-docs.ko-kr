@@ -14,16 +14,16 @@ f1_keywords:
 helpviewer_keywords:
 - iostream header
 ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8
-ms.openlocfilehash: fa90a861194275d8c82a407e2ca8db6e757aab35
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 471b149eba32d163e6e3e54e1c2820bbe0b94133
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245222"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449037"
 ---
 # <a name="ltiostreamgt"></a>&lt;iostream&gt;
 
-표준 스트림에서 읽기 및 쓰기를 제어하는 개체를 선언합니다. 이 방식은 비용 입력 및 출력 수행 해야 하는 유일한 헤더는 C++ 프로그램입니다.
+표준 스트림에서 읽기 및 쓰기를 제어하는 개체를 선언합니다. 이러한 경우는 C++ 프로그램에서 입력 및 출력을 수행 하는 데 필요한 유일한 헤더입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,21 +32,21 @@ ms.locfileid: "68245222"
 ```
 
 > [!NOTE]
-> \<iostream > 라이브러리를 사용 하는 `#include <ios>`, `#include <streambuf>`, `#include <istream>`, 및 `#include <ostream>` 문.
+> Iostream \<> 라이브러리는 `#include <ios>`, `#include <streambuf>` ,`#include <istream>`및 문을`#include <ostream>` 사용 합니다.
 
 ## <a name="remarks"></a>설명
 
 개체는 다음 두 그룹으로 나뉩니다.
 
-- [cin](#cin), [cout](#cout)를 [cerr](#cerr), 및 [clog](#clog) 는 바이트 지향적 이며 일반적인 바이트 타임 전송을 수행 합니다.
+- [cin](#cin), [cin](#cout), [nr](#cerr)및 [clog](#clog) 는 바이트 지향적 이며, 기존의 바이트 단위 전송을 수행 합니다.
 
 - [wcin](#wcin), [wcout](#wcout), [wcerr](#wcerr) 및 [wclog](#wclog)는 와이드 지향적이며, 프로그램에서 내부적으로 조작하는 와이드 문자로/에서 변환을 수행합니다.
 
-표준 입력과 같은 스트림에서 특정 작업을 수행 되 면 동일한 스트림에서 다른 방향의 작업을 수행할 수 없습니다. 프로그램 둘 다에서 구분 없이 작동할 수 없습니다. 따라서 [cin](#cin) 하 고 [wcin](#wcin)예를 들어 있습니다.
+표준 입력과 같은 스트림에서 특정 작업을 수행한 후에는 동일한 스트림에서 다른 방향의 작업을 수행할 수 없습니다. 따라서 프로그램은 [cin](#cin) 과 [wcin](#wcin)에서 서로 바꿔 사용할 수 없습니다 (예:).
 
-특이 한 속성에서이 헤더 공유 선언 된 모든 개체-를 포함 하는 변환 단위에서 정의한 정적 개체 앞에 생성 하는 것으로 간주할 수 있습니다 \<iostream >. 마찬가지로 소멸자 이전에 정의한 해당 정적 개체에 대 한 이러한 개체가 제거 되지 않습니다는 가정할 수 있습니다. 그러나 출력 스트림은 프로그램 종료 중에 플러시됩니다. 따라서 프로그램 시작 전과 프로그램 종료 후에 안전하게 표준 스트림에서 읽거나 쓸 수 있습니다.
+이 헤더에 선언 된 모든 개체는 특이 한 속성을 공유 합니다. 이러한 개체는 사용자가 정의 하는 정적 개체 앞에 생성 된다고 가정할 수 있습니다 \<. 이러한 개체는 iostream > 포함 하 고 있습니다. 마찬가지로, 정의한 해당 정적 개체에 대 한 소멸자 이전에 이러한 개체가 제거 되지 않는다고 가정할 수 있습니다. 그러나 출력 스트림은 프로그램 종료 중에 플러시됩니다. 따라서 프로그램 시작 전과 프로그램 종료 후에 안전하게 표준 스트림에서 읽거나 쓸 수 있습니다.
 
-하지만이 보장 유니버설 아닙니다. 정적 생성자는 다른 변환 단위에서 함수를 호출할 수 있습니다. 호출된 된 함수는이 헤더에 선언 된 개체가 생성 되는 변환 단위는 정적 구성에 참여 하는 확실 하지 않은 순서 지정을 가정할 수 없습니다. 이러한 컨텍스트에서 해당 개체를 사용하려면 먼저 [ios_base::Init](../standard-library/ios-base-class.md#init) 클래스의 개체를 생성해야 합니다.
+그러나이 보장은 범용이 아닙니다. 정적 생성자는 다른 변환 단위에서 함수를 호출할 수 있습니다. 호출 된 함수는 변환 단위가 정적 생성에 참여 하는 불확실 한 순서를 감안 하 여이 헤더에 선언 된 개체가 생성 되었다고 가정할 수 없습니다. 이러한 컨텍스트에서 해당 개체를 사용하려면 먼저 [ios_base::Init](../standard-library/ios-base-class.md#init) 클래스의 개체를 생성해야 합니다.
 
 ### <a name="global-stream-objects"></a>전역 스트림 개체
 
@@ -61,7 +61,7 @@ ms.locfileid: "68245222"
 |[wclog](#wclog)|`wclog` 전역 스트림을 지정합니다.|
 |[wcout](#wcout)|`wcout` 전역 스트림을 지정합니다.|
 
-###  <a name="cerr"></a> cerr
+###  <a name="cerr"></a>cerr
 
 `cerr` 개체는 \<cstdio>에 선언된, `stderr` 개체와 연관된 스트림 버퍼로의 출력을 제어합니다.
 
@@ -107,7 +107,7 @@ int main( )
 }
 ```
 
-###  <a name="cin"></a> cin
+###  <a name="cin"></a>cin
 
 `cin` 전역 스트림을 지정합니다.
 
@@ -125,7 +125,7 @@ extern istream cin;
 
 #### <a name="example"></a>예제
 
-이 예제에서는 `cin` 실패 숫자가 아닌 문자를 발견할 경우 스트림에서 비트를 설정 합니다. 프로그램은이 실패 비트를 지우고 계속 스트림의 잘못 된 문자를 제거 합니다.
+이 예제에서는 `cin` 숫자가 아닌 문자에서 들어오는 경우 스트림에 fail 비트를 설정 합니다. 프로그램이 실패 비트를 지우고 스트림에서 잘못 된 문자를 제거 하 여 계속 합니다.
 
 ```cpp
 // iostream_cin.cpp
@@ -158,7 +158,7 @@ int main()
 2
 ```
 
-###  <a name="clog"></a> clog
+###  <a name="clog"></a>clog
 
 `clog` 전역 스트림을 지정합니다.
 
@@ -178,7 +178,7 @@ extern ostream clog;
 
 `clog` 사용 예제는 [cerr](#cerr)을 참조하세요.
 
-###  <a name="cout"></a> cout
+###  <a name="cout"></a>cout
 
 `cout` 전역 스트림을 지정합니다.
 
@@ -198,7 +198,7 @@ extern ostream cout;
 
 `cout` 사용 예제는 [cerr](#cerr)을 참조하세요.
 
-### <a name="wcerr"></a> wcerr
+### <a name="wcerr"></a>wcerr
 
 `wcerr` 전역 스트림을 지정합니다.
 
@@ -218,7 +218,7 @@ extern wostream wcerr;
 
 `wcerr` 사용 예제는 [cerr](#cerr)을 참조하세요.
 
-### <a name="wcin"></a> wcin
+### <a name="wcin"></a>wcin
 
 `wcin` 전역 스트림을 지정합니다.
 
@@ -238,7 +238,7 @@ extern wistream wcin;
 
 `wcin` 사용 예제는 [cerr](#cerr)을 참조하세요.
 
-### <a name="wclog"></a> wclog
+### <a name="wclog"></a>wclog
 
 `wclog` 전역 스트림을 지정합니다.
 
@@ -258,7 +258,7 @@ extern wostream wclog;
 
 `wclog` 사용 예제는 [cerr](#cerr)을 참조하세요.
 
-### <a name="wcout"></a> wcout
+### <a name="wcout"></a>wcout
 
 `wcout` 전역 스트림을 지정합니다.
 
@@ -290,7 +290,7 @@ wcout <<(const wchar_t*) cs <<endl;
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

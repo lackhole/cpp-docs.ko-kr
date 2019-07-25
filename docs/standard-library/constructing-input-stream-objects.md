@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - input stream objects
 ms.assetid: ab94866e-6ffe-4f15-b4db-0bd23e636075
-ms.openlocfilehash: 89d681f1a092957bc966d2ec788a0f9aa2261ada
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c000a9e927169ef710554372217ba15089ee11b8
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62211990"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457290"
 ---
 # <a name="constructing-input-stream-objects"></a>입력 스트림 개체 생성
 
@@ -23,7 +23,7 @@ ms.locfileid: "62211990"
 
 입력 파일 스트림을 만드는 방법에는 두 가지가 있습니다.
 
-- 사용 된 **void** 인수 생성자 호출을 `open` 멤버 함수:
+- **Void** 인수 생성자를 사용한 다음 멤버 함수를 `open` 호출 합니다.
 
    ```cpp
    ifstream myFile; // On the stack
@@ -55,4 +55,4 @@ myString>> amt; // amt contains 123.45
 
 ## <a name="see-also"></a>참고자료
 
-[입력 스트림](../standard-library/input-streams.md)<br/>
+[입력 스트림](../standard-library/input-streams.md)

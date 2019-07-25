@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_move_assignable
 ms.assetid: f33137f2-0639-4912-8745-bc0f9fd18d28
-ms.openlocfilehash: da4734507bac14ecf0278117deb7668518305be0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8563db51eeb1988697b3e07a1a8673a777783e38
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351068"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456128"
 ---
 # <a name="ismoveassignable-class"></a>is_move_assignable 클래스
 
@@ -26,7 +26,7 @@ struct is_move_assignable;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
@@ -41,4 +41,4 @@ struct is_move_assignable;
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

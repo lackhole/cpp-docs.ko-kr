@@ -7,12 +7,12 @@ helpviewer_keywords:
 - common_type class
 - common_type
 ms.assetid: 02bc4e7b-c63d-49de-9f8a-511d3a5c1e7f
-ms.openlocfilehash: f627705109315d3fee84c1777390f00e1e2010ef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3605b34a2bfc50831c889976ac5ea884053bb642
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405120"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449489"
 ---
 # <a name="commontype-class"></a>common_type 클래스
 
@@ -122,4 +122,4 @@ ClassType: true
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_void class
 - is_void
 ms.assetid: 99b0de3b-1b38-4949-b053-080e5363174e
-ms.openlocfilehash: 7ceecfd4751d3c86e26f9a6911776de92c9471f9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 28c162f6a868c8d6640ba17af875d84fef78c79a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413348"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458867"
 ---
 # <a name="isvoid-class"></a>is_void 클래스
 
@@ -27,12 +27,12 @@ struct is_void;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *T* 됩니다 **void** 또는 cv 한정 된 형식으로 **void**, 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 형식이 *T* 인 경우 **true이 고** , 그렇지 않으면 **void의 cv**한정 형식이 면 true이 고, 그렇지 않으면 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -74,4 +74,4 @@ is_void<void> == true
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)
