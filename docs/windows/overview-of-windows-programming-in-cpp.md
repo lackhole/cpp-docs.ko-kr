@@ -11,7 +11,7 @@ ms.locfileid: "67552313"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++를 이용한 Windows 프로그래밍 개요
 
-C++를 사용하면 다양한 종류의 Windows 응용 프로그램을 만들 수 있습니다. 프로그램은 각각 고유한 프로그래밍 모델과 Windows 관련 라이브러리 집합이 있지만 C++ 표준 라이브러리나 타사 C++ 라이브러리도 사용할 수 있습니다.
+C++를 사용하면 다양한 종류의 Windows 응용 프로그램을 만들 수 있습니다. 각각 고유한 프로그래밍 모델과 Windows 관련 라이브러리 집합이 있지만 C++ 표준 라이브러리나 타사 C++ 라이브러리도 사용할 수 있습니다.
 
 ## <a name="command-line-console-applications"></a>명령줄 (콘솔) 응용 프로그램
 
@@ -19,9 +19,9 @@ C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍
 
 ## <a name="native-desktop-client-applications"></a>네이티브 데스크톱 클라이언트 응용 프로그램
 
-*네이티브 데스크톱 클라이언트 응용 프로그램*은 네이티브 방식 그대로 운영체제 시스템에 액세스하기 위해 [Windows C Api 또는 구성요소 개체 모델(COM) API](/windows/desktop/apiindex/windows-api-list)를 사용하는 C 또는 C++을 이용한 윈도우 지원 애플리케이션 입니다. 이러한 API들은 주로 C로 작성되었습니다. 네이티브 데스크톱 앱을 만드는 방법중 하나는 Win32 Api를 직접 사용하여 C 스타일의 메시지 루프로 운영체제 시스템 이벤트를 처리하는 프로그램입니다. 또는 가볍게 Win32를 C++ 문법으로 감싼 라이브러리인 *Microsoft Foundation Classes*(MFC)를 사용하는 것입니다. 이러한 접근법은 유니버설 Windows 플랫폼과 비교하여 "현대적"이라고 간주되지는 않지만, 두 방법 모두 여전히 완전하게 지원되며 지금도 전 세계적으로 수백만 줄의 코드가 실행되고 있습니다. Win32 응용 프로그램은 개발자가 윈도우의 Windows 프로시저 함수 내에서 Windows 메시지를 명시적으로 처리해 줍니다. 이름이 주는 이미지와는 다르게 32비트(x86) 또는 64비트(x64) 이진 Win32 응용 프로그램을 컴파일할 수 있습니다. Visual Studio IDE에서 x86과 Win32 용어는 동의어입니다.
+*네이티브 데스크톱 클라이언트 응용 프로그램*은 운영체제 시스템에 액세스하기 위해 원래의 네이티브 [Windows C API 또는 구성 요소 개체 모델(COM) API](/windows/desktop/apiindex/windows-api-list)를 사용하는 C 또는 C++을 이용한 창을 사용하는 애플리케이션입니다. 이러한 API들은 주로 C로 작성됩니다. 네이티브 데스크톱 앱을 만드는 방법은 여러 가지입니다. 하나는 Win32 API를 직접 사용하여 C 스타일의 메시지 루프로 운영 체제 시스템 이벤트를 처리하는 프로그램입니다. 또는 Win32를 래핑하는 가벼운 객체 지향 C++ 라이브러리인 MFC(Microsoft Foundation Classes)를 사용하여 프로그래밍할 수 있습니다. 이러한 접근법은 유니버설 Windows 플랫폼(UWP) 비교하여 "현대적"이라고 간주되지는 않지만, 두 방법 모두 여전히 완전하게 지원되며 지금도 전 세계적으로 수백만 줄의 코드가 실행되고 있습니다. 윈도우에서 실행되는 Win32 응용 프로그램의 경우 개발자는 Windows 프로시저 함수 내에서 Windows 메시지를 명시적으로 사용해야 합니다. 이름과는 달리 Win32 응용 프로그램은 32비트(x86) 또는 64비트(x64) 바이너리로 컴파일될 수 있습니다. Visual Studio IDE에서 x86 및 Win32라는 용어는 동의어입니다.
 
-기존의 Windows C++ 프로그래밍을 시작하려면 [Win32 및 C++ 시작](/windows/desktop/LearnWin32/learn-to-program-for-windows)을 참조하세요. Win32에 대해 이해를 하면 [MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)에 대해 더 쉽게 배울 수 있습니다. 기존의 C++ 정교한 그래픽을 사용 하는 데스크톱 응용 프로그램의 예는 [Hilo: 개발 C++ Windows 용 응용 프로그램](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)을 참조합니다.
+기존의 Windows C++ 프로그래밍을 시작하려면 [Win32 및 C++ 시작](/windows/desktop/LearnWin32/learn-to-program-for-windows)을 참조하세요. Win32에 대해 이해하게 되면 [MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)에 대해 더 쉽게 배울 수 있습니다. 정교한 그래픽을 사용하는 기존의 C++ 데스크톱 응용 프로그램의 예는 [Hilo: Windows용 C++ 응용 프로그램 개발](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)을 참조합니다.
 
 ### <a name="c-or-net"></a>C++? .NET?
 
