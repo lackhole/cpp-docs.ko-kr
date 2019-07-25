@@ -15,16 +15,16 @@ helpviewer_keywords:
 - std::vector [C++], flip
 - std::vector [C++], swap
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
-ms.openlocfilehash: f7663987b2759c762d1f6c1604923478915f5726
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4ae53f9a14f04d5656a13c32e75494688c5cdd0
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365002"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452265"
 ---
 # <a name="vectorltboolgt-class"></a>vector&lt;bool&gt; 클래스
 
-합니다 `vector<bool>` 클래스는 부분 특수화 [벡터](../standard-library/vector-class.md) 형식의 요소에 대해 **bool**합니다. 하나를 저장 하 여 공간 최적화를 제공 하는 특수화에서 사용 되는 기본 형식에 대 한 할당자를 있기 **bool** 당 비트 값입니다.
+클래스 `vector<bool>` 는 **bool**형식의 요소에 대 한 [vector](../standard-library/vector-class.md) 의 부분 특수화입니다. 이 클래스는 특수화에서 사용 되는 기본 형식에 대 한 할당자를 포함 하 고 있으며,이는 비트 당 하나의 **bool** 값을 저장 하 여 공간 최적화를 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,14 +37,14 @@ class vector<bool, Allocator>
 
 이 클래스 템플릿 특수화는 이 문서에서 설명하는 차이를 제외하고 벡터처럼 동작합니다.
 
-처리 하는 작업은 **bool** 컨테이너 저장소의 값에 해당 하는 형식입니다. `allocator_traits::construct`는 이러한 값을 만드는 데 사용되지 않습니다.
+**Bool** 형식을 처리 하는 작업은 컨테이너 저장소의 값에 해당 합니다. `allocator_traits::construct`는 이러한 값을 만드는 데 사용되지 않습니다.
 
 ### <a name="typedefs"></a>형식 정의
 
 |형식 이름|설명|
 |-|-|
 |[const_pointer](#const_pointer)|`const_iterator`의 부울 요소에 대한 상수 포인터로 사용할 수 있는 `vector<bool>`에 대한 typedef입니다.|
-|[const_reference](#const_reference)|에 대 한 typedef **bool**합니다. 초기화 이후에는 원래 값으로의 업데이트를 따르지 않습니다.|
+|[const_reference](#const_reference)|**Bool**의 typedef입니다. 초기화 이후에는 원래 값으로의 업데이트를 따르지 않습니다.|
 |[pointer](#pointer)|`iterator`의 부울 요소에 대한 포인터로 사용할 수 있는 `vector<bool>`에 대한 typedef입니다.|
 
 ### <a name="member-functions"></a>멤버 함수
@@ -152,7 +152,7 @@ vector&<bool&>::const_reference operator[](size_type Pos) const;
 
 ### <a name="remarks"></a>설명
 
-_ITERATOR_DEBUG_LEVEL 집합을 사용 하 여 컴파일할 경우 벡터 경계 밖에 서 요소에 액세스 하면 런타임 오류가 발생 합니다.  자세한 내용은 [Checked Iterators](../standard-library/checked-iterators.md)을 참조하세요.
+_ITERATOR_DEBUG_LEVEL set를 사용 하 여 컴파일하는 경우 벡터 범위 밖의 요소에 액세스 하려고 하면 런타임 오류가 발생 합니다.  자세한 내용은 [Checked Iterators](../standard-library/checked-iterators.md)을 참조하세요.
 
 ### <a name="example"></a>예제
 
@@ -257,7 +257,7 @@ The vector with first element flipped is:
 
 ###  <a name="reference_operator_bool"></a>  vector\<bool>::reference::operator bool
 
-암시적으로 변환 `vector<bool>::reference` 하 **bool**합니다.
+에서 `vector<bool>::reference` **bool**로의 암시적 변환을 제공 합니다.
 
 ```cpp
 operator bool() const;
@@ -282,10 +282,10 @@ reference& operator=(bool Val);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*<br/>
+*오른쪽*\
 해당 값을 비트에 할당할 요소 참조입니다.
 
-*Val*<br/>
+*짧은*\
 비트에 할당될 부울 값입니다.
 
 #### <a name="example"></a>예제
@@ -371,11 +371,11 @@ static void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*<br/>
-사용 하 여 교환할 요소를 *오른쪽* 요소입니다.
+*비어*\
+*오른쪽* 요소와 교환할 요소입니다.
 
-*오른쪽*<br/>
-사용 하 여 교환할 요소를 *왼쪽* 요소입니다.
+*오른쪽*\
+*왼쪽* 요소와 교환할 요소입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -383,5 +383,5 @@ static void swap(
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - stack, stack header
 - stack header
 ms.assetid: 89d8999e-c773-46f2-86c1-4b3b5aedb1c1
-ms.openlocfilehash: 65f2197a4a9ac37ad5910bfa8dbef457fda5f611
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 8a31ccd553638b9b548db89a191da40bc513a05f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244127"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453768"
 ---
 # <a name="ltstackgt"></a>&lt;stack&gt;
 
@@ -25,7 +25,7 @@ ms.locfileid: "68244127"
 **네임스페이스:** std
 
 > [!NOTE]
-> 합니다 \<스택 > 라이브러리 사용을 `#include <initializer_list>` 문입니다.
+> 스택 \<> 라이브러리에도 `#include <initializer_list>` 문이 사용 됩니다.
 
 ## <a name="members"></a>멤버
 
@@ -54,6 +54,6 @@ ms.locfileid: "68244127"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

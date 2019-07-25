@@ -5,12 +5,12 @@ helpviewer_keywords:
 - operator<<, overloading for your own classes
 - operator <<, overloading for your own classes
 ms.assetid: ad1d2c49-d84e-48a8-9c09-121f28b10bf0
-ms.openlocfilehash: 290491f7afb22873d60abb6662b470d8e7abefc1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c470bb7335a5997ae26327f99b8c5f31d20b4edb
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370686"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452061"
 ---
 # <a name="overloading-the-ltlt-operator-for-your-own-classes"></a>고유 클래스에 대해 &lt;&lt; 연산자 오버로드
 
@@ -72,4 +72,4 @@ cout <<"The date is" <<dt <<flush;
 
 ## <a name="see-also"></a>참고자료
 
-[출력 스트림](../standard-library/output-streams.md)<br/>
+[출력 스트림](../standard-library/output-streams.md)

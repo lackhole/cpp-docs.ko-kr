@@ -14,12 +14,12 @@ helpviewer_keywords:
 - build macro
 - user-defined macros
 ms.assetid: 13ffe3ea-1bc3-4bee-be5e-053a8a99cce4
-ms.openlocfilehash: 164a8e8aff5428be36c5d921bc8078ab352f51c0
-ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
+ms.openlocfilehash: 9f0dbe31325ec894add3d2577eb977a0c6dd7c41
+ms.sourcegitcommit: ce3393846c86e7905ff0c86e4cd6610476809585
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299732"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68492141"
 ---
 # <a name="c-project-property-page-reference"></a>C++프로젝트 속성 페이지 참조
 
@@ -47,21 +47,7 @@ Linux 프로젝트의 속성 페이지는 [linux C++ 속성 페이지 참조](..
 
 [일반 속성 페이지(파일)](general-property-page-file.md)
 
-
-
-
-
 [HLSL 속성 페이지](hlsl-property-pages.md)
-
-[HLSL 속성 페이지: 고급](hlsl-property-pages-advanced.md)
-
-[HLSL 속성 페이지: 일반](hlsl-property-pages-general.md)
-
-[HLSL 속성 페이지: 출력 파일](hlsl-property-pages-output-files.md)
-
-
-
-
 
 [링커 속성 페이지](linker-property-pages.md)
 
@@ -71,17 +57,9 @@ Linux 프로젝트의 속성 페이지는 [linux C++ 속성 페이지 참조](..
 
 [MIDL 속성 페이지](midl-property-pages.md)
 
-[MIDL 속성 페이지: 고급](midl-property-pages-advanced.md)
-
-[MIDL 속성 페이지: 일반](midl-property-pages-general.md)
-
-[MIDL 속성 페이지: 출력](midl-property-pages-output.md)
-
 [NMake 속성 페이지](nmake-property-page.md)
 
 [리소스 속성 페이지](resources-property-pages.md)
-
-
 
 [웹 참조 속성 페이지](web-references-property-page.md)
 

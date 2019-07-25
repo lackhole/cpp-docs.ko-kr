@@ -444,16 +444,7 @@
                 - name: 관리되는 리소스 속성 페이지
                   href: build/reference/managed-resources-property-page.md
                 - name: MIDL 속성 페이지
-                  expanded: false
-                  items:
-                    - name: MIDL 속성 페이지
-                      href: build/reference/midl-property-pages.md
-                    - name: 'MIDL 속성 페이지: 일반'
-                      href: build/reference/midl-property-pages-general.md
-                    - name: 'MIDL 속성 페이지: Output'
-                      href: build/reference/midl-property-pages-output.md
-                    - name: 'MIDL 속성 페이지: 고급'
-                      href: build/reference/midl-property-pages-advanced.md
+                  href: build/reference/midl-property-pages.md
                 - name: 웹 참조 속성 페이지
                   href: build/reference/web-references-property-page.md
                 - name: XML 데이터 생성기 도구 속성 페이지

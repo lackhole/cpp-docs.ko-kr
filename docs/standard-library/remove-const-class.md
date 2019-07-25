@@ -7,12 +7,12 @@ helpviewer_keywords:
 - remove_const class
 - remove_const
 ms.assetid: feb76fb3-9228-41d6-80f6-2fbb04daec43
-ms.openlocfilehash: 04f7c6475d88f843ef381563f80559529e6b59e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0091c77d33e1fcd2be5b361680c9422210866be2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368970"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451351"
 ---
 # <a name="removeconst-class"></a>remove_const 클래스
 
@@ -32,12 +32,12 @@ using remove_const_t = typename remove_const<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-인스턴스의 `remove_const<T>` 는 형식인 수정 된 `T1` 때 *T* 형식인 `const T1`고, 그렇지 않으면 *T*합니다.
+의 `remove_const<T>` 인스턴스는 *t* 가 형식이 `const T1`면이 고, `T1` 그렇지 않으면 인 수정 된 형식을 보유 합니다 .
 
 ## <a name="example"></a>예제
 
@@ -69,6 +69,6 @@ remove_const_t<const int> == int
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_const 클래스](../standard-library/add-const-class.md)<br/>
-[remove_cv 클래스](../standard-library/remove-cv-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[add_const 클래스](../standard-library/add-const-class.md)\
+[remove_cv 클래스](../standard-library/remove-cv-class.md)

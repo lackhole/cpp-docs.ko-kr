@@ -22,12 +22,12 @@ helpviewer_keywords:
 - std::wstring_convert [C++], converted
 - std::wstring_convert [C++], state
 ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
-ms.openlocfilehash: df3b003289dcd86e8033521d8cb0cacdbb7dfbd8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35689f79f8987cb55c4578869369f35d8656faec
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410800"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450894"
 ---
 # <a name="wstringconvert-class"></a>wstring_convert 클래스
 
@@ -42,10 +42,10 @@ class wstring_convert
 
 ### <a name="parameters"></a>매개 변수
 
-*Codecvt*<br/>
+*Codecvt*\
 변환 개체를 나타내는 [locale](../standard-library/locale-class.md) 패싯입니다.
 
-*Elem*<br/>
+*E*\
 와이드 문자 요소 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -66,13 +66,13 @@ class wstring_convert
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[wstring_convert](#wstring_convert)|`wstring_convert` 형식의 개체를 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|형식 이름|Description|
 |-|-|
 |[byte_string](#byte_string)|바이트 문자열을 나타내는 형식입니다.|
 |[wide_string](#wide_string)|와이드 문자열을 나타내는 형식입니다.|
@@ -149,7 +149,7 @@ wide_string from_bytes(const char* first, const char* last);
 
 ### <a name="remarks"></a>설명
 
-경우는 [변환 상태](../standard-library/wstring-convert-class.md) 개체가 *하지* 기본값 (초기 변환 상태)으로 설정 되어 명시적 값을 사용 하 여 생성, 변환이 시작 됩니다. 그렇지 않으면 변경되지 않습니다.
+[변환 상태](../standard-library/wstring-convert-class.md) 개체가 명시적 값을 사용 하 여 생성 *되지 않은* 경우 변환이 시작 되기 전의 기본값 (초기 변환 상태)으로 설정 됩니다. 그렇지 않으면 변경되지 않습니다.
 
 성공적으로 변환된 입력 요소 수는 변환 개수 개체에 저장됩니다. 변환 오류가 발생하지 않는 경우 멤버 함수는 변환된 와이드 문자열을 반환합니다. 오류가 발생하는 경우, 와이드 문자열 오류 메시지에 대한 이니셜라이저를 사용하여 생성된 개체라면 멤버 함수는 와이드 문자열 오류 메시지 개체를 반환합니다. 그렇지 않으면 구성원 함수가 [range_error](../standard-library/range-error-class.md) 클래스의 개체를 발생시킵니다.
 
@@ -204,7 +204,7 @@ byte_string to_bytes(const Elem* first, const Elem* last);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |*Char*|변환할 와이드 문자입니다.|
 |*Wptr*|변환할 null로 끝나는 시퀀스로, `wptr`에서 시작되며 C 스타일입니다.|
@@ -214,7 +214,7 @@ byte_string to_bytes(const Elem* first, const Elem* last);
 
 ### <a name="remarks"></a>설명
 
-경우는 [변환 상태](../standard-library/wstring-convert-class.md) 개체가 *하지* 기본값 (초기 변환 상태)으로 설정 되어 명시적 값을 사용 하 여 생성, 변환이 시작 됩니다. 그렇지 않으면 변경되지 않습니다.
+[변환 상태](../standard-library/wstring-convert-class.md) 개체가 명시적 값을 사용 하 여 생성 *되지 않은* 경우 변환이 시작 되기 전의 기본값 (초기 변환 상태)으로 설정 됩니다. 그렇지 않으면 변경되지 않습니다.
 
 성공적으로 변환된 입력 요소 수는 변환 개수 개체에 저장됩니다. 변환 오류가 발생하지 않는 경우 멤버 함수는 변환된 바이트 문자열을 반환합니다. 오류가 발생하는 경우, 바이트 문자열 오류 메시지에 대한 이니셜라이저를 사용하여 생성된 개체라면 멤버 함수는 바이트 문자열 오류 메시지 개체를 반환합니다. 그렇지 않으면 구성원 함수가 [range_error](../standard-library/range-error-class.md) 클래스의 개체를 발생시킵니다.
 

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - stdext::checked_array_iterator [C++], reference
 - stdext::checked_array_iterator [C++], base
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
-ms.openlocfilehash: 688b93902da5b4492812b4715a248db9561ec258
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 68ee602c44a8515e1d41f04a4bd0fbb7edc924b7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379196"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452304"
 ---
 # <a name="checkedarrayiterator-class"></a>checked_array_iterator 클래스
 
@@ -141,13 +141,13 @@ int main()
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[checked_array_iterator](#checked_array_iterator)|기본 반복기에서 기본 `checked_array_iterator` 또는 `checked_array_iterator`를 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|형식 이름|Description|
 |-|-|
 |[difference_type](#difference_type)|동일한 컨테이너 안에서 요소를 참조하는 두 `checked_array_iterator` 사이의 차이를 제공하는 형식입니다.|
 |[pointer](#pointer)|`checked_array_iterator`로 주소를 지정하는 요소에 포인터를 제공하는 형식입니다.|
@@ -243,13 +243,13 @@ checked_array_iterator(
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr*<br/>
+*ptr*\
 배열에 대한 포인터입니다.
 
-*size*<br/>
+*크기가*\
 배열의 크기입니다.
 
-*index*<br/>
+*인덱싱할*\
 (선택 사항) 반복기를 초기화하는 배열의 요소입니다.  기본적으로 반복기는 배열의 첫 번째 요소로 초기화됩니다.
 
 ### <a name="remarks"></a>설명
@@ -318,7 +318,7 @@ bool operator==(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 같은지 확인할 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
@@ -374,7 +374,7 @@ bool operator!=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 같지 않은지 확인할 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
@@ -430,7 +430,7 @@ bool operator<(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 같지 않은지 확인할 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
@@ -486,7 +486,7 @@ bool operator>(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 비교할 대상인 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
@@ -505,7 +505,7 @@ bool operator<=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 비교할 대상인 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
@@ -524,7 +524,7 @@ bool operator>=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 비교할 대상인 `checked_array_iterator`입니다.
 
 ### <a name="remarks"></a>설명
@@ -755,7 +755,7 @@ checked_array_iterator<_Iterator>& operator+=(difference_type _Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*<br/>
+*_Off*\
 반복기를 증가시킬 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -803,7 +803,7 @@ checked_array_iterator<_Iterator> operator+(difference_type _Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*<br/>
+*_Off*\
 `checked_array_iterator`에 추가할 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -851,7 +851,7 @@ checked_array_iterator<_Iterator>& operator-=(difference_type _Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*<br/>
+*_Off*\
 반복기를 증가시킬 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -902,7 +902,7 @@ difference_type operator-(const checked_array_iterator& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*<br/>
+*_Off*\
 `checked_array_iterator`에서 감소될 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -923,7 +923,7 @@ reference operator[](difference_type _Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*<br/>
+*_Off*\
 `checked_array_iterator` 주소의 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -993,5 +993,5 @@ typedef typename iterator_traits<_Iterator>::reference reference;
 
 ## <a name="see-also"></a>참고자료
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

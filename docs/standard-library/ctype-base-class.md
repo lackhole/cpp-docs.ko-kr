@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ctype_base class
 ms.assetid: ccffe891-d7ab-4d22-baf8-8eb6d438a96d
-ms.openlocfilehash: 83ef35f9fac438cfa217decf222abd365ff84269
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f23b9528cf9a921e1d005756aa82751f3fdb745e
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394184"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449354"
 ---
 # <a name="ctypebase-class"></a>ctype_base 클래스
 
@@ -69,7 +69,7 @@ struct ctype_base : public locale::facet
 
 - **graph**([isgraph](../standard-library/locale-functions.md#isgraph) 함수)
 
-이러한 상수를 OR 연산하여 분류의 조합을 특징지을 수 있습니다. 특히,이 항상 true입니다 **alnum** = = ( **알파** &#124; **자리** \) 하 고 **그래프** \= \= \( **alnum** &#124; **punct**).
+이러한 상수를 OR 연산하여 분류의 조합을 특징지을 수 있습니다. 특히 **alnum과** = = ( **알파** &#124; **숫자** \) \= 및 **그래프** \= &#124; alnum과 punct)는 항상 true입니다.  \(
 
 ## <a name="requirements"></a>요구 사항
 
@@ -79,4 +79,4 @@ struct ctype_base : public locale::facet
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
