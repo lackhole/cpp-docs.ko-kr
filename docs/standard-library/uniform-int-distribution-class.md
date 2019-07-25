@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::uniform_int_distribution [C++], param_type
 - std::uniform_int_distribution [C++], param_type
 ms.assetid: a1867dcd-3bd9-4787-afe3-4b62692c1d04
-ms.openlocfilehash: 5e37f21e19be730d3437507e83f2417fa2dc020a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1307f64fb5f92b59337665d108d950b28c6ff63e
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348174"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454952"
 ---
 # <a name="uniformintdistribution-class"></a>uniform_int_distribution 클래스
 
@@ -71,8 +71,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*IntType*<br/>
-정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*IntType*\
+정수 결과 형식으로, 기본적으로 **int**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -191,20 +191,20 @@ explicit uniform_int_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*a*<br/>
+*은*\
 난수 값의 하한으로, 하한 값도 포함됩니다.
 
-*b*<br/>
+*b*\
 난수 값의 상한으로, 상한 값도 포함됩니다.
 
-*parm*<br/>
+*parm*\
 분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
 **사전 조건:** `a ≤ b`
 
-개체를 생성 하는 첫 번째 생성자는 해당 저장 *는* 값을 보유 하는 값 *는* 을 저장 *b* 값을 보유 하는 값 *b*합니다.
+첫 번째 생성자는 값 *을 저장 하* *고 저장* 된 *b* 값이 *b*값을 보유 하 고 있는 개체를 생성 합니다.
 
 두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
@@ -227,13 +227,13 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*a*<br/>
+*은*\
 난수 값의 하한으로, 하한 값도 포함됩니다.
 
-*b*<br/>
+*b*\
 난수 값의 상한으로, 상한 값도 포함됩니다.
 
-*right*<br/>
+*오른쪽*\
 이 매개 변수와 비교할 `param_type` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -244,4 +244,4 @@ struct param_type {
 
 ## <a name="see-also"></a>참고자료
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

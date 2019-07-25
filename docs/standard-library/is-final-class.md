@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_final
 ms.assetid: 9dbad82f-6685-4909-94e8-98e4a93994b9
-ms.openlocfilehash: f605b160f6ed71aaafcc7c391e17180e4b243444
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 14efbeb33193cc674c6e766b880e89d9b76d140a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346438"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452649"
 ---
 # <a name="isfinal-class"></a>is_final 클래스
 
@@ -26,12 +26,12 @@ struct is_final;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *T* 클래스 형식이 표시 되어 `final`, 그렇지 않으면 false입니다. 하는 경우 *T* 클래스 형식에는 완전 한 형식 이어야 합니다.
+형식 조건자의 인스턴스는 *T* 형식이로 표시 `final`된 클래스 형식인 경우 true이 고, 그렇지 않으면 false입니다. *T* 가 클래스 형식이 면 완전 한 형식 이어야 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -41,5 +41,5 @@ struct is_final;
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[final 지정자](../cpp/final-specifier.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[final 지정자](../cpp/final-specifier.md)

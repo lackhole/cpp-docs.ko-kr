@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::basic_ifstream [C++], rdbuf
 - std::basic_ifstream [C++], swap
 ms.assetid: 366cd9a7-efc4-4b7f-ba10-c8271e47ffcf
-ms.openlocfilehash: 30ae1e6384b3861bc4324d42f095516f80dce6e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e5e22c837ca2d6389591cec6d2cdd256ca50b1a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400684"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455512"
 ---
 # <a name="basicifstream-class"></a>basic_ifstream 클래스
 
@@ -36,10 +36,10 @@ class basic_ifstream : public basic_istream<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem*<br/>
+*E*\
 파일 버퍼의 기본 요소입니다.
 
-*Tr*<br/>
+*비교한*\
 파일 버퍼 기본 요소의 특성(일반적으로 `char_traits`< `Elem`>)입니다.
 
 ## <a name="remarks"></a>설명
@@ -85,7 +85,7 @@ This is the contents of basic_ifstream_class.txt.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[basic_ifstream](#basic_ifstream)|`basic_ifstream` 개체의 새 인스턴스를 초기화합니다.|
 
@@ -133,13 +133,13 @@ basic_ifstream(basic_ifstream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Filename*<br/>
+*파일 이름 (_s)* \
 열어야 할 파일의 이름입니다.
 
-*_Mode*<br/>
+*모드 (_s)* \
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*_Prot*<br/>
+*_Prot*\
 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)의 `shflag` 매개 변수와 같은 기본 파일 열기 보호입니다.
 
 ### <a name="remarks"></a>설명
@@ -185,7 +185,7 @@ void close();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수 호출 [rdbuf](#rdbuf) **->** [닫습니다](../standard-library/basic-filebuf-class.md#close)합니다.
+멤버 함수는 [rdbuf](#rdbuf) **->** [close](../standard-library/basic-filebuf-class.md#close)를 호출 합니다.
 
 ### <a name="example"></a>예제
 
@@ -205,7 +205,7 @@ bool is_open() const;
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 반환 [rdbuf](#rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#is_open)합니다.
+구성원 함수는 [rdbuf](#rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#is_open)를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -237,22 +237,22 @@ void open(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Filename*<br/>
+*파일 이름 (_s)* \
 열어야 할 파일의 이름입니다.
 
-*_Mode*<br/>
+*모드 (_s)* \
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*_Prot*<br/>
+*_Prot*\
 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)의 `shflag` 매개 변수와 같은 기본 파일 열기 보호입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode` &#124; **ios_base::in**)을 호출합니다. 경우 열기에 실패 하면 함수 호출 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`)에 ios_base:: failure 예외가 throw 될 수 있습니다.
+멤버 함수는 [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode` &#124; **ios_base::in**)을 호출합니다. Open이 실패 하면 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`)를 호출 하며,이 경우 ios_base:: failure 예외가 throw 될 수 있습니다.
 
 ### <a name="example"></a>예제
 
-참조 [basic_filebuf:: open](../standard-library/basic-filebuf-class.md#open) 사용 하는 예제에 대 한 `open`합니다.
+을 사용 `open`하는 예제는 [basic_filebuf:: open](../standard-library/basic-filebuf-class.md#open) 을 참조 하세요.
 
 ## <a name="op_eq"></a>  basic_ifstream::operator=
 
@@ -264,7 +264,7 @@ basic_ifstream& operator=(basic_ifstream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 `basic_ifstream` 개체에 대한 rvalue 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -273,7 +273,7 @@ basic_ifstream& operator=(basic_ifstream&& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자의 콘텐츠를 사용 하 여 개체의 내용을 바꿉니다 *오른쪽*는 rvalue 참조로 처리 합니다. 자세한 내용은 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)를 참조하세요.
+멤버 연산자는 rvalue 참조로 처리 되는 *오른쪽*의 내용을 사용 하 여 개체의 내용을 바꿉니다. 자세한 내용은 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)를 참조하세요.
 
 ## <a name="rdbuf"></a>  basic_ifstream::rdbuf
 
@@ -301,15 +301,15 @@ void swap(basic_ifstream& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 다른 스트림 버퍼에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 내용에 대해이 개체의 내용을 교환 *오른쪽*합니다.
+멤버 함수는이 개체의 내용을 *오른쪽*의 내용으로 교환 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

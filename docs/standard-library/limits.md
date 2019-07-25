@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - limits header
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
-ms.openlocfilehash: e23c47b3eaecec92e462af7b2cc47627c5bad86a
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: de8f815cd59b84a1e63c231e18e4882d0b5d6f09
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245321"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447567"
 ---
 # <a name="ltlimitsgt"></a>&lt;limits&gt;
 
@@ -26,7 +26,7 @@ ms.locfileid: "68245321"
 
 ## <a name="remarks"></a>설명
 
-명시적 특수화 된 `numeric_limits` 클래스는 문자, 정수 및 부동 소수점 형식은 포함 하 여 기본 형식의 많은 속성을 설명 하 고 **bool** 구현으로 해결 하는 것이 아니라 정의 된 규칙에는 C++ 언어입니다. \<limits>에 설명된 속성에는 정확도, 최소 및 최대 크기 표현, 반올림 및 신호 형식 오류가 포함됩니다.
+`numeric_limits` 클래스의 명시적 특수화는 문자, 정수, 부동 소수점 형식 및 **bool** C++언어. \<limits>에 설명된 속성에는 정확도, 최소 및 최대 크기 표현, 반올림 및 신호 형식 오류가 포함됩니다.
 
 ## <a name="members"></a>멤버
 
@@ -45,5 +45,5 @@ ms.locfileid: "68245321"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

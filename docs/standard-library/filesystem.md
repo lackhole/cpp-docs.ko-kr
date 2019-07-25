@@ -9,12 +9,12 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::directory_iterator
 - <filesystem>
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
-ms.openlocfilehash: a44fc3c6c6a37c20e1e1c294929ae3cb15cece58
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 6f97ad75dcf3f01406f305b713b9d14cbe527c52
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240705"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457016"
 ---
 # <a name="ltfilesystemgt"></a>&lt;filesystem&gt;
 
@@ -29,9 +29,9 @@ using namespace std::experimental::filesystem::v1;
 ```
 
 > [!IMPORTANT]
-> Visual Studio 2017의 릴리스 기준으로 합니다 \<파일 시스템 > 헤더 없습니다 아직 C++ 표준입니다. C++Visual Studio 2017 (MSVC v141) 구현에서에서 찾을 수 있는 최종 초안 표준을 [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)합니다.
+> Visual Studio 2017 \<의 릴리스에서는 filesystem > 헤더가 아직 C++ 표준이 아닙니다. C++Visual Studio 2017 (MSVC v141)에서는 [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)에 있는 최종 초안 표준을 구현 합니다.
 
-이 헤더는 호스트 운영 체제의 두 가지 광범위 한 클래스 중 하나에 대 한 파일 시스템을 지원합니다. Microsoft Windows 및 Posix 합니다.
+이 헤더는 두 가지 광범위 한 호스트 운영 체제 클래스 중 하나에 대해 파일 시스템을 지원 합니다. Microsoft Windows 및 Posix.
 
 대부분의 기능이 두 운영 체제에서 공통되지만 이 문서에서는 차이가 있는 위치를 식별합니다. 예를 들어:
 
@@ -129,4 +129,4 @@ using namespace std::experimental::filesystem::v1;
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::hash [C++]
 - std::hash [C++]
 ms.assetid: e1b500c6-a5c8-4f6f-ad33-7ec52eb8e2e4
-ms.openlocfilehash: 2f7206e3764df384004b78e6df2127833a784f70
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61446ab6b79496024d44a99fcf5f500bb871bb80
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405094"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448815"
 ---
 # <a name="hash-class"></a>hash 클래스
 
@@ -45,7 +45,7 @@ struct hash {
 
 ## <a name="remarks"></a>설명
 
-함수 개체는 *Ty* 형식의 값을 인덱스 값의 분포에 매핑하는 데 적합한 해시 함수를 정의합니다. `operator()` 멤버는 템플릿 클래스 `unordered_map`, `unordered_multimap`, `unordered_set` 및 `unordered_multiset`에서 사용하는 데 적합한 *val*에 대한 해시 코드를 반환합니다. 표준 라이브러리는 기본 형식에 대 한 특수화를 제공합니다. *Ty* 포인터 형식 및 열거형 형식을 비롯 한, 모든 스칼라 형식일 수 있습니다. 도한 라이브러리 형식 `string`, `wstring`, `u16string`, `u32string`, `string_view`, `wstring_view`, `u16string_view`, `u32string_view`, `bitset`, `error_code`, `error_condition`, `optional`, `shared_ptr`, `thread`, `type_index`, `unique_ptr`, `variant` 및 `vector<bool>`에 대한 특수화가 있습니다.
+함수 개체는 *Ty* 형식의 값을 인덱스 값의 분포에 매핑하는 데 적합한 해시 함수를 정의합니다. `operator()` 멤버는 템플릿 클래스 `unordered_map`, `unordered_multimap`, `unordered_set` 및 `unordered_multiset`에서 사용하는 데 적합한 *val*에 대한 해시 코드를 반환합니다. 표준 라이브러리는 기본 형식에 대 한 특수화를 제공 합니다. *Ty* 는 포인터 형식과 열거형 형식을 포함 한 모든 스칼라 형식일 수 있습니다. 도한 라이브러리 형식 `string`, `wstring`, `u16string`, `u32string`, `string_view`, `wstring_view`, `u16string_view`, `u32string_view`, `bitset`, `error_code`, `error_condition`, `optional`, `shared_ptr`, `thread`, `type_index`, `unique_ptr`, `variant` 및 `vector<bool>`에 대한 특수화가 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -78,7 +78,7 @@ int main()
 
 ## <a name="see-also"></a>참고자료
 
-[<unordered_map>](../standard-library/unordered-map.md)<br/>
-[unordered_multimap 클래스](../standard-library/unordered-multimap-class.md)<br/>
-[unordered_multiset 클래스](../standard-library/unordered-multiset-class.md)<br/>
-[<unordered_set>](../standard-library/unordered-set.md)<br/>
+[<unordered_map>](../standard-library/unordered-map.md)\
+[unordered_multimap 클래스](../standard-library/unordered-multimap-class.md)\
+[unordered_multiset 클래스](../standard-library/unordered-multiset-class.md)\
+[<unordered_set>](../standard-library/unordered-set.md)

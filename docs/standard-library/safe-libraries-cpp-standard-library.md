@@ -1,5 +1,5 @@
 ---
-title: '안전한 라이브러리: C++ 표준 라이브러리'
+title: '안전 라이브러리: C++ 표준 라이브러리'
 ms.date: 11/04/2016
 f1_keywords:
 - _SCL_SECURE_NO_DEPRECATE
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Safe Libraries, C++ Standard Library
 - Safe C++ Standard Library
 ms.assetid: 3993340f-1f29-4d81-b3f5-52a52bc8e148
-ms.openlocfilehash: 0c8f2de77255015254eabe018399f913b4582b7c
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 782a3610909de01e1a1991dee3a74aee9a131da3
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220460"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454552"
 ---
-# <a name="safe-libraries-c-standard-library"></a>안전한 라이브러리: C++ 표준 라이브러리
+# <a name="safe-libraries-c-standard-library"></a>안전 라이브러리: C++ 표준 라이브러리
 
-Microsoft와 함께 제공 되는 라이브러리에 몇 가지 기능이 향상 되었습니다 C++등의 C++ 표준 라이브러리, 보안을 강화 합니다.
+표준 라이브러리를 비롯 하 여 Microsoft C++와 함께 제공 되는 라이브러리에 대 한 몇 가지 향상 된 기능을 통해 더욱 안전 하 게 만들 수 있습니다. C++
 
 C++ 표준 라이브러리의 일부 메서드는 버퍼 오버런이나 다른 코드 오류가 발생시킬 수 있기 때문에 잠재적으로 안전하지 않은 것으로 식별되었습니다. 이러한 메서드는 사용하지 않는 것이 좋으며, 이러한 메서드를 대체하기 위해 보다 안전한 새 메서드를 만들었습니다. 이러한 새 메서드는 모두 `_s`로 끝납니다.
 
@@ -46,4 +46,4 @@ C++ 표준 라이브러리의 일부 메서드는 버퍼 오버런이나 다른 
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)<br/>
+[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)

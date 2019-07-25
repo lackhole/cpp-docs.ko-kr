@@ -7,12 +7,12 @@ f1_keywords:
 - std::<memory>
 helpviewer_keywords:
 - memory header
-ms.openlocfilehash: d2776e658b511208d9a295cd84a961d7691d29e0
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 7c30a44de70675af69648fdba79325a173ab62fc
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246817"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451881"
 ---
 # <a name="ltmemorygt"></a>&lt;memory&gt;
 
@@ -48,9 +48,9 @@ ms.locfileid: "68246817"
 |[declare_no_pointers](../standard-library/memory-functions.md#declare_no_pointers)|지정된 주소에서 시작하고 표시된 블록 크기 내에 속하는 문자는 추적 가능한 포인터를 포함하지 않음을 가비지 수집기에 알립니다.|
 |[declare_reachable](../standard-library/memory-functions.md#declare_reachable)|지정된 주소가 할당된 스토리지에 대한 것이며 접근할 수 있음을 가비지 컬렉션에 알립니다.|
 |[default_delete](../standard-library/memory-functions.md#default_delete)|`operator new`를 사용하여 할당된 개체를 삭제합니다. `unique_ptr`에 사용하는 데 적합합니다.|
-|[destroy_at](../standard-library/memory-functions.md#destroy_at)|약식 `destroy` 메서드.|
-|[destroy](../standard-library/memory-functions.md#destroy)|약식 `destroy` 메서드.|
-|[destroy_n](../standard-library/memory-functions.md#destroy_n)|약식 `destroy` 메서드.|
+|[destroy_at](../standard-library/memory-functions.md#destroy_at)|줄임 `destroy` 메서드.|
+|[destroy](../standard-library/memory-functions.md#destroy)|줄임 `destroy` 메서드.|
+|[destroy_n](../standard-library/memory-functions.md#destroy_n)|줄임 `destroy` 메서드.|
 |[dynamic_pointer_cast](../standard-library/memory-functions.md#dynamic_pointer_cast)|`shared_ptr`로 dynamic_cast를 수행합니다.|
 |[get_deleter](../standard-library/memory-functions.md#get_deleter)|`shared_ptr`에서 Deleter 가져오기|
 |[get_pointer_safety](../standard-library/memory-functions.md#get_pointer_safety)|모든 가비지 수집기에서 간주된 포인터 안전 형식을 반환합니다.|
@@ -65,14 +65,14 @@ ms.locfileid: "68246817"
 |[undeclare_reachable](../standard-library/memory-functions.md#undeclare_reachable)|지정된 메모리 위치에 접근할 수 없음을 `garbage_collector`에 알립니다.|
 |[uninitialized_copy](../standard-library/memory-functions.md#uninitialized_copy)|지정된 입력 범위에서 초기화되지 않은 대상 범위로 개체를 복사합니다.|
 |[uninitialized_copy_n](../standard-library/memory-functions.md#uninitialized_copy_n)|입력 반복기에서 지정된 수의 요소의 복사본을 만듭니다. 복사본은 정방향 반복기에 배치됩니다.|
-|[uninitialized_default_construct](../standard-library/memory-functions.md#uninitialized_default_construct)|약식 `uninitialized_default_construct` 메서드.|
-|[uninitialized_default_construct_n](../standard-library/memory-functions.md#uninitialized_default_construct_n)|약식 `uninitialized_construct` 메서드.|
+|[uninitialized_default_construct](../standard-library/memory-functions.md#uninitialized_default_construct)|줄임 `uninitialized_default_construct` 메서드.|
+|[uninitialized_default_construct_n](../standard-library/memory-functions.md#uninitialized_default_construct_n)|줄임 `uninitialized_construct` 메서드.|
 |[uninitialized_fill](../standard-library/memory-functions.md#uninitialized_fill)|지정된 값의 개체를 초기화되지 않은 대상 범위로 복사합니다.|
 |[uninitialized_fill_n](../standard-library/memory-functions.md#uninitialized_fill_n)|지정된 값의 개체를 초기화되지 않은 대상 범위의 지정된 수의 요소로 복사합니다.|
-|[uninitialized_move](../standard-library/memory-functions.md#uninitialized_move)|약식 `uninitialized_move` 메서드.|
-|[uninitialized_move_n](../standard-library/memory-functions.md#uninitialized_move_n)|약식 `uninitialized_move` 메서드.|
-|[uninitialized_value_construct](../standard-library/memory-functions.md#uninitialized_value_construct)|약식 `uninitialized_value_construct` 메서드.|
-|[uninitialized_value_construct_n](../standard-library/memory-functions.md#uninitialized_value_construct_n)|약식 `uninitialized_value_construct` 메서드.|
+|[uninitialized_move](../standard-library/memory-functions.md#uninitialized_move)|줄임 `uninitialized_move` 메서드.|
+|[uninitialized_move_n](../standard-library/memory-functions.md#uninitialized_move_n)|줄임 `uninitialized_move` 메서드.|
+|[uninitialized_value_construct](../standard-library/memory-functions.md#uninitialized_value_construct)|줄임 `uninitialized_value_construct` 메서드.|
+|[uninitialized_value_construct_n](../standard-library/memory-functions.md#uninitialized_value_construct_n)|줄임 `uninitialized_value_construct` 메서드.|
 |[uses_allocator_v](../standard-library/memory-functions.md#uses_allocator_v)||
 
 ### <a name="operators"></a>연산자
@@ -93,7 +93,7 @@ ms.locfileid: "68246817"
 |-|-|
 |[allocator](../standard-library/allocator-class.md)|템플릿 클래스는 **Type** 형식의 개체 배열에 대한 스토리지 할당 및 해제를 관리하는 개체를 설명합니다.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|할당자를 사용할 수 있는 컨테이너에 필요한 모든 정보를 확인하는 개체에 대해 설명합니다.|
-|[auto_ptr](../standard-library/auto-ptr-class.md)|형식의 할당 된 개체에 대 한 포인터를 저장 하는 개체를 설명 하는 템플릿 클래스 **형식** <strong>\*</strong> 하는 요소는 바깥쪽 auto_ptr 때 삭제 되는 개체를 확인 하는 소멸 됩니다.|
+|[auto_ptr](../standard-library/auto-ptr-class.md)|이 템플릿 클래스는 바깥쪽 auto_ptr이 삭제 될 때 요소가 가리키는 개체가 삭제 되도록 <strong>\*</strong> 하 **는 형식** 형식의 할당 된 개체에 대 한 포인터를 저장 하는 개체를 설명 합니다.|
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|불량 weak_ptr 예외를 보고합니다.|
 |[enabled_shared_from_this](../standard-library/enable-shared-from-this-class.md)|`shared_ptr`을 생성할 수 있습니다.|
 |[pointer_traits](../standard-library/pointer-traits-struct.md)|포인터 형식 `allocator_traits`를 사용하여 할당자를 설명하기 위해 템플릿 클래스 `Ptr`의 개체에 필요한 정보를 제공합니다.|
@@ -120,5 +120,5 @@ ms.locfileid: "68246817"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

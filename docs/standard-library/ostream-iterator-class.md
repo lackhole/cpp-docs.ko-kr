@@ -12,16 +12,16 @@ helpviewer_keywords:
 - std::ostream_iterator [C++], ostream_type
 - std::ostream_iterator [C++], traits_type
 ms.assetid: 24d842d3-9f45-4bf6-a697-62f5968f5a03
-ms.openlocfilehash: 6a065a100faf5ea40be161e980de2913add917fe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cebe127eb985e564289db100fa56b0b979104819
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370995"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447086"
 ---
 # <a name="ostreamiterator-class"></a>ostream_iterator 클래스
 
-템플릿 클래스 ostream_iterator는 연속 요소를 추출 출력 스트림에 쓰는 출력 반복기 개체를 설명 `operator <<`합니다.
+Ostream_iterator 템플릿 클래스는 연속 요소를 추출 `operator <<`하 여 출력 스트림에 쓰는 출력 반복기 개체에 대해 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,13 +32,13 @@ class ostream_iterator
 
 ### <a name="parameters"></a>매개 변수
 
-*Type*<br/>
+*입력할*\
 출력 스트림에 삽입될 개체의 형식입니다.
 
-*CharType*<br/>
-`ostream_iterator`의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 **char**합니다.
+*CharType*\
+`ostream_iterator`의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 **char**입니다.
 
-*특성*<br/>
+*특징이*\
 `ostream_iterator`의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `char_traits`\< *CharType>입니다.*
 
 ostream_iterator 클래스는 출력 반복기에 대한 요구 사항을 충족해야 합니다. 알고리즘은 `ostream_iterator`를 사용하여 출력 스트림에 직접 쓸 수 있습니다.
@@ -61,9 +61,9 @@ ostream_iterator 클래스는 출력 반복기에 대한 요구 사항을 충족
 
 |연산자|설명|
 |-|-|
-|[operator*](#op_star)|출력 반복기 식을 구현 하는 데 사용 된 역참조 연산자 \* `i`  =  `x`합니다.|
+|[operator*](#op_star)|출력 \* 반복기 식을 `i` 구현하는`x`데 사용 되는 역참조 연산자입니다.  = |
 |[operator++](#op_add_add)|연산이 호출되기 전에 주소 지정한 동일한 개체에 `ostream_iterator`를 반환한 비함수 증분 연산자.|
-|[operator=](#op_eq)|출력 반복기 식을 구현 하는 데 사용 되는 대입 연산자 \* `i`  =  `x` 출력 스트림에 작성 합니다.|
+|[operator=](#op_eq)|출력 스트림에 쓰기 \* 위해 출력 반복기 식을 `i`  =  `x` 구현 하는 데 사용 되는 할당 연산자입니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -221,7 +221,7 @@ Elements written to output stream:
 
 ## <a name="op_eq"></a>  ostream_iterator::operator=
 
-출력 반복기 식을 구현 하는 데 사용 되는 할당 연산자 \* `i`  =  `x` 출력 스트림에 작성 합니다.
+출력 스트림에 \* 쓰기 위해 output_iterator 식을 `i`  =  `x` 구현 하는 데 사용 되는 할당 연산자입니다.
 
 ```cpp
 ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
@@ -229,7 +229,7 @@ ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*짧은*\
 출력 스트림에 삽입될 `Type` 형식의 개체 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -238,7 +238,7 @@ ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 
 ### <a name="remarks"></a>설명
 
-출력 반복기에 대 한 요구 사항을 하는 `ostream_iterator` 충족 해야 합니다 식만 \* `ii`  =  `t` 유효 하 고 연산자 또는 연산자에 대해 아무런 언급이 자체적으로 =. 이 구성원 연산자는 `*this`를 반환합니다.
+에서 `ostream_iterator` 충족 해야 하는 출력 반복기에 대 한 요구 사항에는 \* 식 `ii`  =  `t` 만 유효 하 고 연산자 또는 operator =에 대해서는 아무 것도 필요 하지 않습니다. 이 구성원 연산자는 `*this`를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -288,17 +288,17 @@ ostream_iterator(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ostr*<br/>
+*_Ostr*\
 반복할 [ostream_iterator::ostream_type](#ostream_type) 형식의 출력 스트림입니다.
 
-*_Delimiter*<br/>
+*_ 구분 기호*\
 출력 스트림에서 값 사이에 삽입되는 구분 기호입니다.
 
 ### <a name="remarks"></a>설명
 
 첫 번째 생성자는 `&_Ostr`로 출력 스트림 포인터를 초기화합니다. 구분 기호 문자열 포인터는 빈 문자열을 지정합니다.
 
-두 번째 생성자는 출력 스트림 포인터를 사용 하 여 초기화 `&_Ostr` 하 고 사용 하 여 구분 기호 문자열 포인터 *(_d)* 합니다.
+두 번째 생성자는로 `&_Ostr` 출력 스트림 포인터를 초기화 하 고 *_ 구분 기호*를 사용 하 여 구분 기호 문자열 포인터를 초기화 합니다.
 
 ### <a name="example"></a>예제
 
@@ -415,6 +415,6 @@ by intOut are:
 
 ## <a name="see-also"></a>참고자료
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

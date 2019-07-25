@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (thread)
 - std::operator&lt;= (thread)
 - std::operator== (thread)
-ms.openlocfilehash: 5a2fd845598ac9f9c983bf53cbd7665ef66ffb70
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c0593b8016cf45abe64114958ccda84eb3704844
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412048"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458438"
 ---
 # <a name="ltthreadgt-operators"></a>&lt;thread&gt; 연산자
 
@@ -45,10 +45,10 @@ bool operator>= (
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*<br/>
+*비어*\
 왼쪽 `thread::id` 개체입니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 오른쪽 `thread::id` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -71,10 +71,10 @@ bool operator> (
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*<br/>
+*비어*\
 왼쪽 `thread::id` 개체입니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 오른쪽 `thread::id` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -97,10 +97,10 @@ bool operator<= (
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*<br/>
+*비어*\
 왼쪽 `thread::id` 개체입니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 오른쪽 `thread::id` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -123,15 +123,15 @@ bool operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*<br/>
+*비어*\
 왼쪽 `thread::id` 개체입니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 오른쪽 `thread::id` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** 하는 경우 *왼쪽* 앞에 오는 *오른쪽* 전체 순서;에서 고, 그렇지 **false**합니다.
+전체 순서에서 *왼쪽* 이 *오른쪽* 앞에 오면 **true** 이 고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -151,10 +151,10 @@ bool operator!= (
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*<br/>
+*비어*\
 왼쪽 `thread::id` 개체입니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 오른쪽 `thread::id` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -177,15 +177,15 @@ bool operator== (
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*<br/>
+*비어*\
 왼쪽 `thread::id` 개체입니다.
 
-*오른쪽*<br/>
+*오른쪽*\
 오른쪽 `thread::id` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true 이면** 두 개체가 동일한 실행 스레드를 나타내는 경우 또는 어떤 개체도 실행의 스레드를 나타내는 경우이 고, 그렇지 **false**합니다.
+두 개체가 동일한 실행 스레드를 나타내면 **true** 이 고, 두 개체가 모두 실행 스레드를 나타내지 않으면입니다. 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -203,22 +203,22 @@ basic_ostream<Elem, Tr>& operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ostr*<br/>
+*Ostr*\
 [basic_ostream](../standard-library/basic-ostream-class.md) 개체입니다.
 
-*ID*<br/>
+*A-id*\
 `thread::id` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-*Ostr*합니다.
+*Ostr*.
 
 ### <a name="remarks"></a>설명
 
-이 함수를 삽입 *Id* 로 *Ostr*합니다.
+이 함수는 *Ostr*에 *Id* 를 삽입 합니다.
 
 두 `thread::id` 개체가 비교 결과 같으면 해당 개체의 삽입된 텍스트 표현은 동일합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[\<thread>](../standard-library/thread.md)<br/>
+[\<thread>](../standard-library/thread.md)

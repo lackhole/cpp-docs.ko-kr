@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - hash_set header
 ms.assetid: 6b556967-c808-4869-9b4d-f9e030864435
-ms.openlocfilehash: ba7716c1c84e8a74495a67f10a78eeaad2a6c3d7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 559bbff00b8e5204dd4f381abaf9987b4752db48
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159279"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452011"
 ---
 # <a name="lthashsetgt"></a>&lt;hash_set&gt;
 
@@ -31,27 +31,27 @@ ms.locfileid: "62159279"
 
 ### <a name="operators"></a>연산자
 
-|Hash_set 버전|Hash_multiset 버전|설명|
+|Hash_set 버전|Hash_multiset 버전|Description|
 |-----------------------|----------------------------|-----------------|
 |[operator!=(hash_set)](../standard-library/hash-set-operators.md#op_neq)|[operator!=(hash_multiset)](../standard-library/hash-set-operators.md#op_neq)|연산자의 좌변에 있는 hash_set 또는 hash_multiset 개체가 우변에 있는 hash_set 또는 hash_multiset 개체와 같지 않은지 테스트합니다.|
 |[operator==(hash_set)](../standard-library/hash-set-operators.md#op_eq_eq)|[operator==(hash_multiset)](../standard-library/hash-set-operators.md#op_eq_eq)|연산자의 좌변에 있는 hash_set 또는 hash_multiset 개체가 우변에 있는 hash_set 또는 hash_multiset 개체와 같은지 테스트합니다.|
 
 ### <a name="specialized-template-functions"></a>특별 템플릿 함수
 
-|Hash_set 버전|Hash_multiset 버전|설명|
+|Hash_set 버전|Hash_multiset 버전|Description|
 |-----------------------|----------------------------|-----------------|
 |[swap(hash_set)](../standard-library/hash-set-functions.md#swap)|[swap(hash_multiset)](../standard-library/hash-set-functions.md#swap_hash_multiset)|두 hash_set 또는 hash_multiset의 요소를 교환합니다.|
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|클래스|Description|
 |-|-|
-|[hash_compare 클래스](../standard-library/hash-compare-class.md)|해시 연관 컨테이너에서 사용할 수 있는 개체를 설명-hash_map, hash_multimap, hash_set 또는 hash_multiset-기본값으로 `Traits` 를 주문 하 고 포함 된 요소의 해시 매개 변수 개체입니다.|
+|[hash_compare 클래스](../standard-library/hash-compare-class.md)|해시 연관 컨테이너 (hash_map, hash_multimap, hash_set 또는 hash_multiset) 중 하나에서 사용할 수 있는 개체를 설명 합니다 .이 개체에는 `Traits` 포함 된 요소를 정렬 하 고 해시 하는 기본 매개 변수 개체로 사용할 수 있습니다.|
 |[hash_set 클래스](../standard-library/hash-set-class.md)|포함된 요소의 값이 고유하고 키 값으로 사용된 컬렉션의 데이터를 빠르게 검색하고 저장하는 데 사용됩니다.|
 |[hash_multiset 클래스](../standard-library/hash-multiset-class.md)|포함된 요소의 값이 고유하고 키 값으로 사용된 컬렉션의 데이터를 빠르게 검색하고 저장하는 데 사용됩니다.|
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

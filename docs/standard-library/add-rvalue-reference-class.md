@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - add_rvalue_reference Class
 ms.assetid: 76b0cb7c-1031-45d0-b409-f03ab0297580
-ms.openlocfilehash: e5e658f16657c0021b78175e87d122a3accd11eb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64694f2428c1dd536df4d242a17f3f011cfb290c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411176"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456547"
 ---
 # <a name="addrvaluereference-class"></a>add_rvalue_reference 클래스
 
@@ -29,14 +29,14 @@ using add_rvalue_reference_t = typename add_rvalue_reference<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 `add_rvalue_reference` 클래스에 명명 된 멤버가 `type`를 템플릿 매개 변수를 rvalue 참조 형식의 별칭인 *T*합니다. 참조 축소의 의미 체계는 비 개체 및 비 함수 형식에 대 한 의미 *T*를 `T&&` 되는 *T*합니다. 예를 들어 *T* lvalue 참조 형식으로 `add_rvalue_reference<T>::type` 는 lvalue 참조 형식 rvalue 참조가 아닙니다.
+클래스에는 템플릿 매개 변수 `type`T에 대 한 rvalue 참조 형식의 별칭인 라는 멤버가 있습니다.  `add_rvalue_reference` 참조 축소의 의미 체계는 비 개체 및 비 함수 형식 *t* `T&&` 의 경우 t가 *t*임을 의미 합니다. 예를 들어 *T* 가 lvalue 참조 형식이 `add_rvalue_reference<T>::type` 면는 rvalue 참조가 아닌 lvalue 참조 형식입니다.
 
-편의 위해 \<type_traits > 도우미 템플릿으로 정의 `add_rvalue_reference_t`, 해당 별칭을 `type` 소속 `add_rvalue_reference`합니다.
+편의상 \<type_traits >는의 `type` 멤버`add_rvalue_reference`를 별칭으로 하 `add_rvalue_reference_t`는 도우미 템플릿를 정의 합니다.
 
 ## <a name="example"></a>예제
 
@@ -73,10 +73,10 @@ All static_assert tests of add_rvalue_reference passed.
 
 헤더: \<type_traits >
 
-Namespace: std
+네임 스페이스: std
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_lvalue_reference 클래스](../standard-library/add-lvalue-reference-class.md)<br/>
-[is_rvalue_reference 클래스](../standard-library/is-rvalue-reference-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[add_lvalue_reference 클래스](../standard-library/add-lvalue-reference-class.md)\
+[is_rvalue_reference 클래스](../standard-library/is-rvalue-reference-class.md)

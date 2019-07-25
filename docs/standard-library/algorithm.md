@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Standard Library, algorithms
 - <algorithm> header
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
-ms.openlocfilehash: 36dfca8418cbbabd7dcfb30b2cece483406a5667
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 0b9b259d49808002442492ce2912b4f9aa96d2b8
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245951"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456496"
 ---
 # <a name="ltalgorithmgt"></a>&lt;algorithm&gt;
 
@@ -26,7 +26,7 @@ ms.locfileid: "68245951"
 ```
 
 > [!NOTE]
-> 합니다 \<알고리즘 > 라이브러리 사용을 `#include <initializer_list>` 문입니다.
+> 또한 \<알고리즘 > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -40,7 +40,7 @@ C++ 표준 라이브러리 알고리즘은 각 C++ 표준 라이브러리 컨테
 
 - _copy 접미사는 알고리즘이 요소 값을 조작할 뿐만 아니라 수정된 값을 대상 범위로 복사함을 나타냅니다. `reverse` 알고리즘은 범위 내 요소의 순서를 반대로 바꾸며, `reverse_copy` 알고리즘은 또한 결과를 대상 범위로 복사합니다.
 
-C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을 나타내는 그룹으로 분류되는 경우가 많습니다. 여기에는 요소 값을 변경하지 않는 비수정 알고리즘과 달리 요소 값을 변경하는 수정 알고리즘이 포함됩니다. 파생 알고리즘은 요소 값이 아닌 요소 순서를 변경합니다. 제거 알고리즘은 범위 또는 범위 복사본에서 요소를 제거할 수 있습니다. 정렬 알고리즘 다양 한 방법으로 범위에 있는 요소를 다시 정렬 및 정렬 된 범위 알고리즘 요소가 특정 방식으로 정렬 해야 하는 범위에만 작동 합니다.
+C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을 나타내는 그룹으로 분류되는 경우가 많습니다. 여기에는 요소 값을 변경하지 않는 비수정 알고리즘과 달리 요소 값을 변경하는 수정 알고리즘이 포함됩니다. 파생 알고리즘은 요소 값이 아닌 요소 순서를 변경합니다. 제거 알고리즘은 범위 또는 범위 복사본에서 요소를 제거할 수 있습니다. 정렬 알고리즘은 다양 한 방식으로 범위에 있는 요소의 순서를 변경 하 고 정렬 된 범위 알고리즘은 해당 요소가 특정 방식으로 정렬 된 범위 에서만 작동 합니다.
 
 숫자 처리를 위해 제공된 C++ 표준 라이브러리 숫자 알고리즘에는 고유 헤더 파일 [\<numeric>](../standard-library/numeric.md)이 있으며, 함수 개체와 어댑터는 헤더 [\<functional>](../standard-library/functional.md)에서 정의됩니다. 부울 값을 반환하는 함수 개체를 조건자라고 합니다. 기본 이진 조건자는 비교 `operator<`입니다. 일반적으로, 순서를 정하는 요소는 크기를 비교할 수 있어야 합니다. 즉, 제공된 어떤 두 요소에서 두 요소가 동일하거나(어떤 것도 다른 것보다 작지 않음) 하나가 다른 것보다 작음을 정할 수 있어야 합니다. 그러면 동일하지 않은 요소 사이에 순서가 지정됩니다.
 
@@ -49,13 +49,13 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 |||
 |-|-|
 |[adjacent_find](../standard-library/algorithm-functions.md#adjacent_find)|같지 않거나 지정한 조건을 충족하는 인접 요소 두 개를 검색합니다.|
-|[all_of](../standard-library/algorithm-functions.md#all_of)|반환 **true** 조건이 지정된 된 범위에서 각 요소에 있는 경우.|
-|[any_of](../standard-library/algorithm-functions.md#any_of)|반환 **true** 조건이 지정 된 범위의 요소에 한 번 이상 있는 경우.|
+|[all_of](../standard-library/algorithm-functions.md#all_of)|지정 된 범위의 각 요소에 조건이 있을 경우 **true** 를 반환 합니다.|
+|[any_of](../standard-library/algorithm-functions.md#any_of)|지정 된 요소 범위에서 조건이 한 번 이상 있는 경우 **true** 를 반환 합니다.|
 |[binary_search](../standard-library/algorithm-functions.md#binary_search)|정렬된 범위에 지정된 값과 같거나 이진 조건자가 지정한 의미에 따라 지정된 값과 같은 요소가 있는지 여부를 테스트합니다.|
 |[clamp](../standard-library/algorithm-functions.md#clamp)||
 |[copy](../standard-library/algorithm-functions.md#copy)|소스 범위의 요소를 대상 범위에 할당하여 요소의 소스 시퀀스 전체에서 반복하고 정방향으로 새 위치를 할당합니다.|
 |[copy_backward](../standard-library/algorithm-functions.md#copy_backward)|소스 범위의 요소를 대상 범위에 할당하여 요소의 소스 시퀀스 전체에서 반복하고 역방향으로 새 위치를 할당합니다.|
-|[copy_if](../standard-library/algorithm-functions.md#copy_if)|테스트 하는 지정 된 범위의 모든 요소를 복사 **true** 지정 된 조건|
+|[copy_if](../standard-library/algorithm-functions.md#copy_if)|지정 된 조건에 대해 **true** 를 테스트 하는 지정 된 범위에 있는 모든 요소를 복사 합니다.|
 |[copy_n](../standard-library/algorithm-functions.md#copy_n)|지정된 수의 요소를 복사합니다.|
 |[count](../standard-library/algorithm-functions.md#count)|해당 값이 지정된 값과 일치하는 요소의 개수를 반환합니다.|
 |[count_if](../standard-library/algorithm-functions.md#count_if)|해당 값이 지정된 조건과 일치하는 요소의 개수를 반환합니다.|
@@ -74,12 +74,12 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 |[generate_n](../standard-library/algorithm-functions.md#generate_n)|함수 개체에 의해 생성된 값을 범위 내 지정된 수의 요소에 할당하고 마지막에 할당된 값 하나 다음의 위치로 반환합니다.|
 |[includes](../standard-library/algorithm-functions.md#includes)|요소 간 순서 지정 또는 동등성 기준을 이진 조건자로 지정할 수 있을 경우 하나의 정렬된 범위가 두 번째 정렬된 범위에 포함된 모든 요소를 포함할 수 있는지 여부를 테스트합니다.|
 |[inplace_merge](../standard-library/algorithm-functions.md#inplace_merge)|두 연속 정렬 범위의 요소를 단일 정렬 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
-|[is_heap](../standard-library/algorithm-functions.md#is_heap)|반환 **true** 지정 된 범위의 요소가 힙을 구성 하는 경우.|
-|[is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)|반환 **true** 지정된 된 범위의 마지막 요소까지 힙을 형성 하는 경우.|
-|[is_partitioned](../standard-library/algorithm-functions.md#is_partitioned)|반환 **true** 테스트는 지정된 된 범위에 있는 모든 요소 **true** 조건을 테스트 하는 요소 앞에 대 한 **false**합니다.|
+|[is_heap](../standard-library/algorithm-functions.md#is_heap)|지정 된 범위의 요소가 힙을 형성 하는 경우 **true** 를 반환 합니다.|
+|[is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)|지정 된 범위가 마지막 요소까지 힙을 형성 하는 경우 **true** 를 반환 합니다.|
+|[is_partitioned](../standard-library/algorithm-functions.md#is_partitioned)|지정 된 범위에서 조건에 대해 **true** 를 테스트 하는 모든 요소가 **false**를 테스트 하는 요소 앞에 있으면 **true** 를 반환 합니다.|
 |[is_permutation](../standard-library/algorithm-functions.md#is_permutation)|지정된 범위의 요소가 올바른 순열을 만드는지 여부를 결정합니다.|
-|[is_sorted](../standard-library/algorithm-functions.md#is_sorted)|반환 **true** 지정 된 범위의 요소가 정렬에서 하는 경우.|
-|[is_sorted_until](../standard-library/algorithm-functions.md#is_sorted_until)|반환 **true** 지정 된 범위의 요소가 정렬에서 하는 경우.|
+|[is_sorted](../standard-library/algorithm-functions.md#is_sorted)|지정 된 범위의 요소가 정렬 된 순서로 되어 있는 경우 **true** 를 반환 합니다.|
+|[is_sorted_until](../standard-library/algorithm-functions.md#is_sorted_until)|지정 된 범위의 요소가 정렬 된 순서로 되어 있는 경우 **true** 를 반환 합니다.|
 |[iter_swap](../standard-library/algorithm-functions.md#iter_swap)|지정된 반복기의 쌍이 참조하는 두 값을 교환합니다.|
 |[lexicographical_compare](../standard-library/algorithm-functions.md#lexicographical_compare)|두 시퀀스를 요소별로 비교하여 둘 중 작은 것을 결정합니다.|
 |[lower_bound](../standard-library/algorithm-functions.md#lower_bound)|정렬된 범위에서 지정된 값보다 크거나 같은 값을 갖는 첫 번째 요소의 위치를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
@@ -95,12 +95,12 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 |[&lt;alg&gt; move](../standard-library/algorithm-functions.md#alg_move)|지정된 범위와 연결된 요소를 이동합니다.|
 |[move_backward](../standard-library/algorithm-functions.md#move_backward)|한 반복기의 요소를 다른 반복기로 이동합니다. 이동은 지정된 범위의 마지막 요소에서 시작하고 해당 범위의 첫 번째 요소에서 끝납니다.|
 |[next_permutation](../standard-library/algorithm-functions.md#next_permutation)|원래 순서 지정을 사전순에 따라 다음으로 큰 순열(있는 경우)로 대체할 수 있도록 범위의 요소 순서를 재정렬합니다. 여기서 다음의 의미는 이진 조건자로 지정할 수 있습니다.|
-|[none_of](../standard-library/algorithm-functions.md#none_of)|반환 **true** 조건이 경우 지정된 된 범위에서 요소 간에 존재 하지 않습니다.|
+|[none_of](../standard-library/algorithm-functions.md#none_of)|지정 된 범위의 요소 사이에 조건이 나타나지 않는 경우 **true** 를 반환 합니다.|
 |[nth_element](../standard-library/algorithm-functions.md#nth_element)|요소 범위를 분할하여 범위에서 시퀀스의 n번째 요소 앞의 모든 요소가 n번째 요소보다 작거나 같고 그 다음의 요소는 크거나 같도록 *n*번째 요소를 정확하게 찾습니다.|
 |[partial_sort](../standard-library/algorithm-functions.md#partial_sort)|범위에 있는 지정된 수의 더 작은 요소를 비내림차순 또는 이진 조건자로 지정한 정렬 기준에 따라 정렬합니다.|
 |[partial_sort_copy](../standard-library/algorithm-functions.md#partial_sort_copy)|소스 범위의 요소를 대상 범위로 복사합니다. 여기서 소스 요소는 지정된 다른 이진 조건자보다 작거나 지정된 다른 이진 조건자로 정렬됩니다.|
 |[partition](../standard-library/algorithm-functions.md#partition)|범위의 요소를 두 개의 연결되지 않은 집합으로 분류하고, 단항 조건자를 만족하는 요소는 만족하지 않는 요소보다 앞에 오도록 합니다.|
-|[partition_copy](../standard-library/algorithm-functions.md#partition_copy)|조건이 인 요소를 복사 **true** 하나의 대상 및 조건이 되 **false** 다른 합니다. 지정된 범위의 요소여야 합니다.|
+|[partition_copy](../standard-library/algorithm-functions.md#partition_copy)|조건이 **true** 인 요소를 한 대상에 복사 하 고 조건이 **false** 인 요소를 다른 대상으로 복사 합니다. 지정된 범위의 요소여야 합니다.|
 |[partition_point](../standard-library/algorithm-functions.md#partition_point)|지정된 범위에서 조건을 충족하지 않는 첫 번째 요소를 반환합니다. 조건을 충족하는 요소가 앞에, 그렇지 않는 요소는 뒤에 정렬됩니다.|
 |[pop_heap](../standard-library/algorithm-functions.md#pop_heap)|힙 맨 앞부터 범위의 끝에서 두 번째 위치 중에서 가장 큰 요소를 제거한 다음 나머지 요소로 새 힙을 구성합니다.|
 |[prev_permutation](../standard-library/algorithm-functions.md#prev_permutation)|원래 순서 지정을 사전순에 따라 다음으로 큰 순열(있는 경우)로 대체할 수 있도록 범위의 요소 순서를 재정렬합니다. 여기서 다음의 의미는 이진 조건자로 지정할 수 있습니다.|
@@ -139,6 +139,6 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

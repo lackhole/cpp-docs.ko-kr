@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - range_error class
 ms.assetid: 8afb3e88-fc49-4213-b096-ed63d7aea37c
-ms.openlocfilehash: a4b7e90e5806713408c6779b288cafe008e2b4ed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e741604a3bb23fa8166023d115f79e7a288e2f7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369808"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458243"
 ---
 # <a name="rangeerror-class"></a>range_error 클래스
 
@@ -29,7 +29,7 @@ public:
 
 ## <a name="remarks"></a>설명
 
-반환 된 값 [무엇입니까](../standard-library/exception-class.md) 복사본이 `message.data`합니다. 자세한 내용은 [basic_string:: data](../standard-library/basic-string-class.md#data)합니다.
+[에서 반환](../standard-library/exception-class.md) 되는 값은의 `message.data`복사본입니다. 자세한 내용은 [basic_string::d ata](../standard-library/basic-string-class.md#data)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
@@ -64,5 +64,5 @@ Type: class std::range_error
 
 ## <a name="see-also"></a>참고자료
 
-[runtime_error 클래스](../standard-library/runtime-error-class.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[runtime_error 클래스](../standard-library/runtime-error-class.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - output streams, one-argument manipulators
 ms.assetid: e381dee8-6b16-4cef-805a-4a6a1d2b696b
-ms.openlocfilehash: b5f24033d8da0933b8252fdace60fb419ef2e605
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c9e9e7531733ac40022b477980297c80ac488221
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370829"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453444"
 ---
 # <a name="other-one-argument-output-stream-manipulators"></a>기타 하나의 인수 출력 스트림 조작자
 
-다음 예제에서는 클래스 `money`, 되는 **긴** 형식입니다. `setpic` 조작자는 클래스 `money`의 오버로드된 스트림 삽입 연산자가 사용할 수 있는 서식 지정 "picture" 문자열을 클래스에 연결합니다. picture 문자열은 스트림 클래스의 데이터 구성원이 아니라 `money` 클래스의 정적 변수로 저장되므로 새 출력 스트림 클래스를 파생하지 않아도 됩니다.
+다음 예제에서는 **long** 형식인 클래스 `money`를 사용 합니다. `setpic` 조작자는 클래스 `money`의 오버로드된 스트림 삽입 연산자가 사용할 수 있는 서식 지정 "picture" 문자열을 클래스에 연결합니다. picture 문자열은 스트림 클래스의 데이터 구성원이 아니라 `money` 클래스의 정적 변수로 저장되므로 새 출력 스트림 클래스를 파생하지 않아도 됩니다.
 
 ## <a name="example"></a>예제
 
@@ -77,4 +77,4 @@ int main( )
 
 ## <a name="see-also"></a>참고자료
 
-[인수 포함 사용자 지정 조작자](../standard-library/custom-manipulators-with-arguments.md)<br/>
+[인수 포함 사용자 지정 조작자](../standard-library/custom-manipulators-with-arguments.md)

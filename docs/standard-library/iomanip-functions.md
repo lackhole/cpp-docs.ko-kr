@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::setiosflags [C++]
 - std::setprecision [C++]
 - std::setw [C++]
-ms.openlocfilehash: b5ead8b1000fd6c2708b2450f71da3dc612dc51d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09bb043c40774b102dee023773349223a2fbb4a9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158562"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449223"
 ---
 # <a name="ltiomanipgt-functions"></a>&lt;iomanip&gt; 함수
 
@@ -53,15 +53,15 @@ T7 get_money(Money& _Amount, bool _Intl);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Amount*<br/>
+*금액 (_r)* \
 추출된 통화 값입니다.
 
-*_Intl*<br/>
-하는 경우 **true**, 국가별 형식을 사용 합니다. 기본값은 **false**입니다.
+*_Intl*\
+**True**이면 국가별 형식을 사용 합니다. 기본값은 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
-조작자 개체를 반환 하는, 스트림에서 추출할 때 `str`, 처럼를 `formatted input function` 멤버 함수를 호출 하는 `get` 로캘 패싯에 대 한 `money_get` 연관 `str`를 사용 하 여 *_ Intl* 국가별 형식을 나타냅니다. 성공 하면 호출에 저장 *(_a)* 추출된 된 통화 값입니다. 그런 다음 조작자는 `str`을 반환합니다.
+`str`조작자는 스트림에서 추출 될 때 *_intl* to를 사용 하 여와 `str`연결 된 `formatted input function` 로캘 패싯 `money_get` 에 대해 멤버 `get` 함수를 호출 하는로 동작 하는 개체를 반환 합니다. 국가별 형식을 표시 합니다. 성공 하면 추출 된 통화 값을 금액으로 저장 합니다 *(_w)* . 그런 다음 조작자는 `str`을 반환합니다.
 
 `Money`는 `long double` 형식이거나 `str`과 동일한 요소 및 특성 매개 변수를 사용하는 `basic_string`의 인스턴스화여야 합니다.
 
@@ -76,10 +76,10 @@ T10 put_time(struct tm *_Tptr, const Elem *_Fmt);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Tptr*<br/>
+*_Tptr*\
 시간 구조 형식의 시간입니다.
 
-*_Fmt*<br/>
+*_Fmt*\
 시간 구조를 가져오는 데 사용할 원하는 형식입니다.
 
 ### <a name="remarks"></a>설명
@@ -97,11 +97,11 @@ T8 put_money(const Money& _Amount, bool _Intl);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Amount*<br/>
+*금액 (_r)* \
 스트림에 삽입할 금액입니다.
 
-*_Intl*<br/>
-로 **true** 조작 자가 국가별 형식을 사용 하 여 **false** 하지 않아야 하는 경우.
+*_Intl*\
+조작자가 국가별 형식을 사용 해야 하는 경우 **true** 로 설정 하 고, 그렇지 않으면 **false** 로 설정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -109,7 +109,7 @@ T8 put_money(const Money& _Amount, bool _Intl);
 
 ### <a name="remarks"></a>설명
 
-조작자는 `str` 스트림에 삽입될 경우 서식 있는 출력 함수처럼 동작하는 개체를 반환합니다. 이 출력 함수는 `str`과 연결된 로캘 패싯 `money_put`에 대해 멤버 함수 `put`을 호출합니다. 성공 하면 호출 삽입 `amount` 적절 하 게 서식이 지정을 사용 하 여 * _Intl` to indicate international format and `str.fill()`, as the fill element. The manipulator then returns `str'.
+조작자는 `str` 스트림에 삽입될 경우 서식 있는 출력 함수처럼 동작하는 개체를 반환합니다. 이 출력 함수는 `str`과 연결된 로캘 패싯 `money_put`에 대해 멤버 함수 `put`을 호출합니다. 성공 하면 호출에서 적절 하 `amount` 게 형식이 지정 되 고 * _aa국제` to indicate international format and `str.`, as the fill element. The manipulator then returns `fill () str '를 사용 하 여 삽입 합니다.
 
 `Money`는 `long double` 형식이거나 `str`과 동일한 요소 및 특성 매개 변수를 사용하는 `basic_string`의 인스턴스화여야 합니다.
 
@@ -124,15 +124,15 @@ T10 put_time(struct tm* _Tptr, const Elem* _Fmt);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Tptr*<br/>
+*_Tptr*\
 스트림에 쓸 시간 값으로, 시간 구조에 제공됩니다.
 
-*_Fmt*<br/>
+*_Fmt*\
 시간 값을 쓸 원하는 형식입니다.
 
 ### <a name="remarks"></a>설명
 
-조작자는 `str` 스트림에 삽입될 경우 `formatted output function`처럼 동작하는 개체를 반환합니다. 출력 함수는 `str`과 연결된 로캘 패킷 `time_put`에 대해 멤버 함수 `put`을 호출합니다. 출력 함수를 사용 하 여 *_Tptr* 시간 구조를 나타내는 및 *_Fmt* null로 끝나는 형식 문자열의 시작을 나타냅니다. 성공하면 형식 문자열에서 리터럴 텍스트를 삽입하고 시간 구조에서 변환된 값을 삽입합니다. 그런 다음 조작자는 `str`을 반환합니다.
+조작자는 `str` 스트림에 삽입될 경우 `formatted output function`처럼 동작하는 개체를 반환합니다. 출력 함수는 `str`과 연결된 로캘 패킷 `time_put`에 대해 멤버 함수 `put`을 호출합니다. Output 함수는 *_Tptr* 을 사용 하 여 시간 구조를 나타내고 *_fmt* 를 사용 하 여 null로 끝나는 형식 문자열의 시작을 표시 합니다. 성공하면 형식 문자열에서 리터럴 텍스트를 삽입하고 시간 구조에서 변환된 값을 삽입합니다. 그런 다음 조작자는 `str`을 반환합니다.
 
 ## <a name="quoted"></a>  quoted
 
@@ -147,13 +147,13 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
-Std:: string, char\*, 리터럴, 원시 문자열 리터럴 또는 이러한의 다양 한 버전 문자열 (예: std:: wstring, wchar_t\*).
+*문자열*\
+Std:: string, char\*, string 리터럴 또는 원시 문자열 리터럴 또는이에 해당 하는 와이드 버전 (예: std:: wstring, wchar_t)\*
 
-*delimiter*<br/>
+*문자가*\
 문자열의 시작과 끝에 대한 구분 기호로 사용할 사용자 지정 문자 또는 와이드 문자입니다.
 
-*escape*<br/>
+*이스케이프*\
 문자열 내의 이스케이프 시퀀스에 대한 이스케이프 문자로 사용할 사용자 지정 문자 또는 와이드 문자입니다.
 
 ### <a name="remarks"></a>설명
@@ -311,12 +311,12 @@ T1 resetiosflags(ios_base::fmtflags Mask);
 
 ### <a name="parameters"></a>매개 변수
 
-*Mask*<br/>
+*마스크할*\
 선택을 취소할 플래그입니다.
 
 ### <a name="return-value"></a>반환 값
 
-조작자는 개체를 반환 하는, 스트림에서 추출 되거나이 스트림에 삽입 하는 경우 `str`, 호출 **str**합니다. [setf](../standard-library/ios-base-class.md#setf)( `ios_base::` [fmtflags](../standard-library/ios-base-class.md#fmtflags), _ *마스크*)를 반환 합니다 `str`합니다.
+조작자는 스트림에서 추출 하거나 스트림에 `str`삽입 하는 경우 **str**을 호출 하는 개체를 반환 합니다. [setf](../standard-library/ios-base-class.md#setf) ( `ios_base::` [fmtflags](../standard-library/ios-base-class.md#fmtflags), _ *Mask*)를 반환 하 고 `str`를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -332,18 +332,18 @@ T3 setbase(int _Base);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Base*<br/>
+*_Base*\
 숫자 밑입니다.
 
 ### <a name="return-value"></a>반환 값
 
-조작자는 개체를 반환 하는, 스트림에서 추출 되거나이 스트림에 삽입 하는 경우 `str`, 호출 **str**합니다. `setf`( **마스크**를 [ios_base:: basefield](../standard-library/ios-base-class.md#fmtflags))를 반환 합니다 `str`합니다. 이때 `mask` 다음과 같이 결정 됩니다.
+조작자는 스트림에서 추출 하거나 스트림에 `str`삽입 하는 경우 **str**을 호출 하는 개체를 반환 합니다. `setf`( **mask**, [ios_base:: basefield](../standard-library/ios-base-class.md#fmtflags))를 반환 하 고 `str`를 반환 합니다. `mask` 여기서는 다음과 같이 결정 됩니다.
 
-- 경우 _ *자료* 가 8 이면 `mask` 됩니다 `ios_base::` [oct](../standard-library/ios-functions.md#oct)합니다.
+- _ *Base* 가 8 `mask` `ios_base::`이면 [10 월](../standard-library/ios-functions.md#oct)입니다.
 
 - _ *Base*가 10이면 mask는 `ios_base::`[dec](../standard-library/ios-functions.md#dec)입니다.
 
-- 경우 _ *자료* 가 16 이면 `mask` 됩니다 `ios_base::` [16 진수](../standard-library/ios-functions.md#hex)합니다.
+- _ *Base* 가 16 `mask` 인 경우는 `ios_base::`16 [진수](../standard-library/ios-functions.md#hex)입니다.
 
 - _ *Base*가 다른 모든 값이면 mask는 `ios_base::`[fmtflags](../standard-library/ios-base-class.md#fmtflags)(0)입니다.
 
@@ -362,12 +362,12 @@ T4 setfill(Elem Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 오른쪽 맞춤된 디스플레이에서 공백을 채우는데 사용할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
-템플릿 조작자는 개체를 반환 하는, 스트림에서 추출 되거나이 스트림에 삽입 하는 경우 `str`, 호출 **str**합니다. [채우기](../standard-library/basic-ios-class.md#fill)(`Ch`)를 반환 합니다 `str`합니다. 형식 `Elem` 스트림에 대 한 요소 형식과 동일 해야 `str`합니다.
+템플릿 조작자는 스트림에 추출 하거나 스트림에 `str`삽입 하는 경우 **str**을 호출 하는 개체를 반환 합니다. [채우기](../standard-library/basic-ios-class.md#fill) (`Ch`)을 반환 `str`합니다. 형식은 `Elem` 스트림의`str`요소 형식과 동일 해야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -383,12 +383,12 @@ T2 setiosflags(ios_base::fmtflags Mask);
 
 ### <a name="parameters"></a>매개 변수
 
-*Mask*<br/>
+*마스크할*\
 설정할 플래그입니다.
 
 ### <a name="return-value"></a>반환 값
 
-조작자는 개체를 반환 하는, 스트림에서 추출 되거나이 스트림에 삽입 하는 경우 `str`, 호출 **str**합니다. [setf](../standard-library/ios-base-class.md#setf)(_ *마스크*)를 반환 합니다 `str`합니다.
+조작자는 스트림에서 추출 하거나 스트림에 `str`삽입 하는 경우 **str**을 호출 하는 개체를 반환 합니다. [setf](../standard-library/ios-base-class.md#setf) (_ *Mask*)를 반환 하 고 `str`를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -404,12 +404,12 @@ T5 setprecision(streamsize Prec);
 
 ### <a name="parameters"></a>매개 변수
 
-*prec*<br/>
+*Prec*\
 부동 소수점 값의 전체 자릿수입니다.
 
 ### <a name="return-value"></a>반환 값
 
-조작자는 개체를 반환 하는, 스트림에서 추출 되거나이 스트림에 삽입 하는 경우 `str`, 호출 **str**합니다. [전체 자릿수](../standard-library/ios-base-class.md#precision)(`Prec`)를 반환 합니다 `str`합니다.
+조작자는 스트림에서 추출 하거나 스트림에 `str`삽입 하는 경우 **str**을 호출 하는 개체를 반환 합니다. [전체 자릿수](../standard-library/ios-base-class.md#precision) (`Prec`)을 반환 `str`합니다.
 
 ### <a name="example"></a>예제
 
@@ -425,12 +425,12 @@ T6 setw(streamsize Wide);
 
 ### <a name="parameters"></a>매개 변수
 
-*와이드*<br/>
+*전반적인*\
 표시 필드의 너비입니다.
 
 ### <a name="return-value"></a>반환 값
 
-조작자는 개체를 반환 하는, 스트림에서 추출 되거나이 스트림에 삽입 하는 경우 `str`, 호출 **str**합니다. [너비](../standard-library/ios-base-class.md#width)(_ *와이드*)를 반환 합니다 `str`합니다.
+조작자는 스트림에서 추출 하거나 스트림에 `str`삽입 하는 경우 **str**을 호출 하는 개체를 반환 합니다. [너비](../standard-library/ios-base-class.md#width) (_ *와이드*)는을 반환 `str`합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -653,4 +653,4 @@ l5 = 65536
 
 ## <a name="see-also"></a>참고자료
 
-[\<iomanip>](../standard-library/iomanip.md)<br/>
+[\<iomanip>](../standard-library/iomanip.md)

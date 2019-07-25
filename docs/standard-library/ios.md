@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ios header
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
-ms.openlocfilehash: 013888a1ae11042645ef48c4fae15cbe6c2d939f
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 96e8588e72e864d5324e406859e5a39053a46ccf
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245244"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449126"
 ---
 # <a name="ltiosgt"></a>&lt;ios&gt;
 
@@ -25,11 +25,11 @@ Iostreams 작업의 여러 기본 형식 및 함수를 정의합니다. 이 헤�
 **네임스페이스:** std
 
 > [!NOTE]
-> 합니다 \<ios > 라이브러리를 사용 하는 `#include <iosfwd>` 문.
+> Ios \<> 라이브러리는 `#include <iosfwd>` 문을 사용 합니다.
 
 ## <a name="remarks"></a>설명
 
-대부분의 함수는 조작자입니다. \<ios>에 선언된 조작자는 [ios_base](../standard-library/ios-base-class.md) 클래스의 해당 인수 개체에 저장된 값을 변경합니다. 다른 조작자는 [basic_istream](../standard-library/basic-istream-class.md) 또는 [basic_ostream](../standard-library/basic-ostream-class.md) 템플릿 클래스 중 하나의 특수화와 같이 이 클래스에서 파생된 형식의 개체에 의해 제어되는 스트림에서 작업을 수행합니다. 예를 들어 [noskipws](../standard-library/ios-functions.md#noskipws)(**str**) 형식 플래그를 지웁니다 `ios_base::skipws` 개체의 `str`, 이러한 형식 중 하나일 수 있습니다.
+대부분의 함수는 조작자입니다. \<ios>에 선언된 조작자는 [ios_base](../standard-library/ios-base-class.md) 클래스의 해당 인수 개체에 저장된 값을 변경합니다. 다른 조작자는 [basic_istream](../standard-library/basic-istream-class.md) 또는 [basic_ostream](../standard-library/basic-ostream-class.md) 템플릿 클래스 중 하나의 특수화와 같이 이 클래스에서 파생된 형식의 개체에 의해 제어되는 스트림에서 작업을 수행합니다. 예를 들어 [noskipws](../standard-library/ios-functions.md#noskipws)(**str**)는 이러한 형식 중 `ios_base::skipws` 하나일 수 있는 `str`개체의 형식 플래그를 지웁니다.
 
 `ios_base`에서 파생 클래스에 대해 제공되는 특수 삽입 및 추출 작업을 통해 출력 스트림에 삽입하거나 입력 스트림에서 추출하여 조작자를 호출할 수도 있습니다. 예를 들어:
 
@@ -101,7 +101,7 @@ istr>> noskipws;
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

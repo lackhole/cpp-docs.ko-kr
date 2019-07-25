@@ -5,12 +5,12 @@ f1_keywords:
 - iosfwd/std::streambuf
 - iosfwd/std::wstreambuf
 ms.assetid: 2678e18f-f0f0-4995-bc53-f1bc7dfc4ec6
-ms.openlocfilehash: 505739861771a05dd39741f432579a6e9b2d0c26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 178b489d92a4ed7340084490329fdf8fa16c2aa7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412386"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449584"
 ---
 # <a name="ltstreambufgt-typedefs"></a>&lt;streambuf&gt; 형식 정의
 
@@ -20,7 +20,7 @@ ms.locfileid: "62412386"
 
 ## <a name="streambuf"></a>  streambuf
 
-특수화 `basic_streambuf` 를 사용 하는 **char** 템플릿 매개 변수로 합니다.
+Char를 템플릿 `basic_streambuf` 매개 변수로  사용 하는의 특수화입니다.
 
 ```cpp
 typedef basic_streambuf<char, char_traits<char>> streambuf;
@@ -28,11 +28,11 @@ typedef basic_streambuf<char, char_traits<char>> streambuf;
 
 ### <a name="remarks"></a>설명
 
-형식은 템플릿 클래스에 대 한 동의어 [basic_streambuf](../standard-library/basic-streambuf-class.md)형식의 요소용으로 특수화 된 **char** 기본 문자 특성을 포함 합니다.
+이 형식은 기본 문자 특성을 포함 하는 **char** 형식의 요소에 대해 특수화 된 [basic_streambuf](../standard-library/basic-streambuf-class.md)템플릿 클래스의 동의어입니다.
 
 ## <a name="wstreambuf"></a>  wstreambuf
 
-특수화 `basic_streambuf` 를 사용 하는 **wchar_t** 템플릿 매개 변수로 합니다.
+Wchar_t를 템플릿 `basic_streambuf` 매개 변수로  사용 하는의 특수화입니다.
 
 ```cpp
 typedef basic_streambuf<wchar_t, char_traits<wchar_t>> wstreambuf;
@@ -40,8 +40,8 @@ typedef basic_streambuf<wchar_t, char_traits<wchar_t>> wstreambuf;
 
 ### <a name="remarks"></a>설명
 
-형식은 템플릿 클래스에 대 한 동의어 [basic_streambuf](../standard-library/basic-streambuf-class.md)형식의 요소용으로 특수화 된 **wchar_t** 기본 문자 특성을 포함 합니다.
+이 형식은 기본 문자 특성을 포함 하는 **wchar_t** 형식의 요소에 대해 특수화 된 [basic_streambuf](../standard-library/basic-streambuf-class.md)템플릿 클래스의 동의어입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[\<streambuf>](../standard-library/streambuf.md)<br/>
+[\<streambuf>](../standard-library/streambuf.md)

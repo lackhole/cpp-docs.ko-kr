@@ -5,12 +5,12 @@ f1_keywords:
 - iosfwd/std::ostream
 - iosfwd/std::wostream
 ms.assetid: 2ec4dc52-a01f-4654-bd65-dd5288777c48
-ms.openlocfilehash: 02936fdfc990ea65a99b2875cf7f482eb2ce4ebe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18f30a12a6f4d2b97cb5dca3ace98e6241d856a7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370881"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447173"
 ---
 # <a name="ltostreamgt-typedefs"></a>&lt;ostream&gt; 형식 정의
 
@@ -20,7 +20,7 @@ ms.locfileid: "62370881"
 
 ## <a name="ostream"></a>  ostream
 
-특수화 된 basic_ostream에서 유형을 만듭니다 **char** 하 고 `char_traits` 에서 특수화 된 **char**합니다.
+Char에서 특수 **하 고** `char_traits` **char**에서 특수화 된 basic_ostream에서 형식을 만듭니다.
 
 ```cpp
 typedef basic_ostream<char, char_traits<char>> ostream;
@@ -28,11 +28,11 @@ typedef basic_ostream<char, char_traits<char>> ostream;
 
 ### <a name="remarks"></a>설명
 
-형식은 템플릿 클래스에 대 한 동의어 [basic_ostream](../standard-library/basic-ostream-class.md)형식의 요소용으로 특수화 된 **char** 기본 문자 특성을 포함 합니다.
+이 형식은 기본 문자 특성을 포함 하는 **char** 형식의 요소에 대해 특수화 된 [basic_ostream](../standard-library/basic-ostream-class.md)템플릿 클래스의 동의어입니다.
 
 ## <a name="wostream"></a>  wostream
 
-특수화 된 basic_ostream에서 유형을 만듭니다 **wchar_t** 하 고 `char_traits` 에서 특수화 된 **wchar_t**합니다.
+Wchar_t에서 특수화 **되 고** `char_traits` **wchar_t**에서 특수화 된 basic_ostream에서 형식을 만듭니다.
 
 ```cpp
 typedef basic_ostream<wchar_t, char_traits<wchar_t>> wostream;
@@ -40,8 +40,8 @@ typedef basic_ostream<wchar_t, char_traits<wchar_t>> wostream;
 
 ### <a name="remarks"></a>설명
 
-형식은 템플릿 클래스에 대 한 동의어 [basic_ostream](../standard-library/basic-ostream-class.md)형식의 요소용으로 특수화 된 **wchar_t** 기본 문자 특성을 포함 합니다.
+이 형식은 기본 문자 특성을 포함 하는 **wchar_t** 형식의 요소에 대해 특수화 된 [basic_ostream](../standard-library/basic-ostream-class.md)템플릿 클래스의 동의어입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[\<ostream>](../standard-library/ostream.md)<br/>
+[\<ostream>](../standard-library/ostream.md)

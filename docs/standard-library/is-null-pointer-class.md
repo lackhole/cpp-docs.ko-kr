@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_null_pointer
 ms.assetid: f3b3601b-f162-4803-a6e9-dabf5c3876cc
-ms.openlocfilehash: 10979e790cb1f3e1ae3eace4f88a0328cb9a7f01
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b306753146a51bde842b55e4f36d3c1afa82591d
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413751"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455841"
 ---
 # <a name="isnullpointer-class"></a>is_null_pointer 클래스
 
@@ -26,12 +26,12 @@ struct is_null_pointer;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *T* 는 `std::nullptr_t`, 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 *T* `std::nullptr_t`형식이 이면 true이 고, 그렇지 않으면 false입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -41,4 +41,4 @@ struct is_null_pointer;
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

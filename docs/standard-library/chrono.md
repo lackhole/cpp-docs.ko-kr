@@ -10,18 +10,18 @@ f1_keywords:
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-ms.openlocfilehash: 72d16b068f337fe935d07e1eb2d0e2b74de6268f
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: f01b00a1469cdf82590a1bdfc742312ec96912c9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244858"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459459"
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 
 표준 헤더 \<chrono>를 포함하여 기간 및 시간 인스턴트를 나타내고 조작하는 클래스와 함수를 정의합니다.
 
-Visual Studio 2015에서 구현부터 `steady_clock` 충족 하도록 변경 되었습니다 합니다 C++ 속성 및 단 조성에 대 한 표준 요구 사항입니다. 현재 `steady_clock`은 QueryPerformanceCounter()를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. Microsoft에서 결과적으로, C++ 컴파일러 `steady_clock::time_point` 에 대 한 typedef `chrono::time_point<steady_clock>`하지만이 규칙은 그렇지 반드시 다른 구현에 대 한 합니다.
+Visual Studio 2015부터의 `steady_clock` 구현은 조성에 및 단 조성에에 대 한 C++ 표준 요구 사항을 충족 하도록 변경 되었습니다. 현재 `steady_clock`은 QueryPerformanceCounter()를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. 결과적으로 Microsoft C++ 컴파일러 `steady_clock::time_point` 의는 이제에 대 한 `chrono::time_point<steady_clock>`typedef입니다. 그러나이 규칙은 다른 구현에 반드시 필요한 것은 아닙니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -72,30 +72,30 @@ Visual Studio 2015에서 구현부터 `steady_clock` 충족 하도록 변경 되
 |[operator&gt;](../standard-library/chrono-operators.md#op_gt)|하나의 `duration` 또는 `time_point`개체가 다른 `duration` 또는 `time_point` 개체보다 큰지 여부를 확인합니다.|
 |[operator&gt;=](../standard-library/chrono-operators.md#op_gt_eq)|하나의 `duration` 또는 `time_point`개체가 다른 `duration` 또는 `time_point` 개체보다 크거나 같은지 여부를 확인합니다.|
 
-### <a name="typedefs-predefined-duration-types"></a>형식 정의 (미리 정의 된 기간 형식)
+### <a name="typedefs-predefined-duration-types"></a>Typedef (미리 정의 된 기간 형식)
 
 다음 typedef에 사용되는 비율 형식에 대한 자세한 내용은 [\<ratio>](../standard-library/ratio.md)를 참조하세요.
 
-||| ||| | `typedef duration<long long, nano> nanoseconds;`| 동의어는 `duration` 형식 틱 기간이 1 나노초입니다. | |`typedef duration<long long, micro> microseconds;`| 동의어는 `duration` 틱 기간이 1 마이크로초는 형식입니다. | |`typedef duration<long long, milli> milliseconds;`| 동의어는 `duration` 형식 틱 기간이 1 밀리초입니다. | |`typedef duration<long long> seconds;`| 동의어는 `duration` 틱 기간이 1 초의 형식입니다. | |`typedef duration<int, ratio<60> > minutes;`| 동의어는 `duration` 형식 틱 기간이 1 분입니다. | |`typedef duration<int, ratio<3600> > hours;`| 에 대 한 동의어를 `duration` 형식 틱 기간이 1 시간입니다. |
+||| ||| | `typedef duration<long long, nano> nanoseconds;`| 틱 기간이 1 나노초 인`typedef duration<long long, micro> microseconds;` 형식의동의어입니다.|||`duration` 틱 기간이 1 마이크로초 인`typedef duration<long long, milli> milliseconds;` 형식의동의어입니다.|||`duration` 틱 기간이 1 밀리초 인`typedef duration<long long> seconds;` 형식의동의어입니다.|||`duration` 틱 기간이 1 초 인`typedef duration<int, ratio<60> > minutes;` 형식의동의어입니다.|||`duration` 틱 기간이 1 분인`typedef duration<int, ratio<3600> > hours;` 형식의동의어입니다.|||`duration` 틱 기간이 1 시간인 형식의동의어입니다.|`duration`
 
 ### <a name="literals"></a>리터럴
 
-**(C + + 11)**  는 \<chrono > 헤더를 다음 정의 [사용자 정의 리터럴](../cpp/user-defined-literals-cpp.md) 큰 형식 안전, 관리 및 편의성을 코드에 사용할 수 있습니다. 이러한 리터럴은 `literals::chrono_literals` 인라인 네임스페이스에 정의되며 std::chrono가 범위 내에 있을 때 범위 안에 있습니다.
+**(C + + 11)** Chrono \<> 헤더는 코드의 편리 함, 형식 안전성 및 유지 관리를 위해 사용할 수 있는 다음과 같은 [사용자 정의 리터럴을](../cpp/user-defined-literals-cpp.md) 정의 합니다. 이러한 리터럴은 `literals::chrono_literals` 인라인 네임스페이스에 정의되며 std::chrono가 범위 내에 있을 때 범위 안에 있습니다.
 
 |||
 |-|-|
-|시간 연산자 "" h (부호 없는 long long Val)|정수 계열 값으로 시간을 지정합니다.|
-|기간\<이중선 비율\<3600 >> 연산자 "" h (long double Val)|부동 소수점 값으로 시간을 지정합니다.|
+|hours 연산자 "" h (부호 없는 long long Val)|정수 계열 값으로 시간을 지정합니다.|
+|기간\<double, 비율\<3600 > > 연산자 "" h (long double Val)|부동 소수점 값으로 시간을 지정합니다.|
 |분 (연산자 "" min) (부호 없는 long long Val)|정수 계열 값으로 분을 지정합니다.|
-|기간\<이중선 비율\<60 >> (연산자 "" min) (long double Val)|부동 소수점 값으로 분을 지정합니다.|
-|시간 (초) 연산자 "" s (부호 없는 long long Val)|정수 계열 값으로 분을 지정합니다.|
-|기간\<double > 연산자 "" s (long double Val)|부동 소수점 값으로 초를 지정합니다.|
-|시간 (밀리초) 연산자 "" ms (부호 없는 long long Val)|정수 계열 값으로 밀리초를 지정합니다.|
-|기간\<double, 밀리초 단위 > 연산자 "" ms (long double Val)|부동 소수점 값으로 밀리초를 지정합니다.|
-|시간 (마이크로초) 연산자 "" us (부호 없는 long long Val)|정수 계열 값으로 마이크로초를 지정합니다.|
-|기간\<double 마이크로 > 연산자 "" us (long double Val)|부동 소수점 값으로 마이크로초를 지정합니다.|
-|시간 (나노초) 연산자 "" ns (부호 없는 long long Val)|정수 계열 값으로 나노초를 지정합니다.|
-|기간\<double nano > 연산자 "" ns (long double Val)|부동 소수점 값으로 나노초를 지정합니다.|
+|기간\<double, 비율\<60 > > (연산자 "" min) (long double Val)|부동 소수점 값으로 분을 지정합니다.|
+|초 연산자 "" s (부호 없는 long long Val)|정수 계열 값으로 분을 지정합니다.|
+|duration\<double > 연산자 "" s (long double Val)|부동 소수점 값으로 초를 지정합니다.|
+|밀리초 연산자 "" ms (부호 없는 long long Val)|정수 계열 값으로 밀리초를 지정합니다.|
+|기간\<double, 밀리초 > 연산자 "" ms (long double Val)|부동 소수점 값으로 밀리초를 지정합니다.|
+|마이크로초 연산자 "" us (부호 없는 long long Val)|정수 계열 값으로 마이크로초를 지정합니다.|
+|duration\<double, 마이크로 > 연산자 "" us (long double Val)|부동 소수점 값으로 마이크로초를 지정합니다.|
+|나노초 연산자 "" ns (부호 없는 long long Val)|정수 계열 값으로 나노초를 지정합니다.|
+|duration\<double, nano > 연산자 "" ns (long double Val)|부동 소수점 값으로 나노초를 지정합니다.|
 
 다음 예에서는 chrono 리터럴을 사용하는 방법을 보여 줍니다.
 
@@ -107,4 +107,4 @@ constexpr auto my_duration_unit = 108ms;
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

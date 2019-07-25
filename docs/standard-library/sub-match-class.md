@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::sub_match [C++], iterator
 - std::sub_match [C++], value_type
 ms.assetid: 804e2b9e-d16a-4c4c-ac60-024e0b2dd0e8
-ms.openlocfilehash: e0edfbc69d6cba6ee352a34406860e4c999dc3a7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 07ec6f0dc9daaec19fa97a6220da4d4ea93b254b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412217"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447423"
 ---
 # <a name="submatch-class"></a>sub_match 클래스
 
@@ -41,7 +41,7 @@ class sub_match
 
 ## <a name="parameters"></a>매개 변수
 
-*BidIt*<br/>
+*BidIt*\
 부분 일치에 대한 반복기 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -66,7 +66,7 @@ class sub_match
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[compare](#compare)|시퀀스에 대해 부분 일치를 비교합니다.|
 |[length](#length)|부분 일치의 길이를 반환합니다.|
@@ -75,9 +75,9 @@ class sub_match
 
 ### <a name="operators"></a>연산자
 
-|연산자|설명|
+|연산자|Description|
 |-|-|
-|[operator basic_string<value_type>](#op_basic_string_lt_value_type_gt)|문자열에 부분 일치를 캐스팅합니다.|
+|[operator basic_string < value_type >](#op_basic_string_lt_value_type_gt)|문자열에 부분 일치를 캐스팅합니다.|
 
 ## <a name="example"></a>예제
 
@@ -149,13 +149,13 @@ int compare(const value_type *ptr) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 비교할 부분 일치입니다.
 
-*str*<br/>
+*문자열*\
 비교할 문자열입니다.
 
-*ptr*<br/>
+*ptr*\
 비교할 null 종료 시퀀스입니다.
 
 ### <a name="remarks"></a>설명
@@ -216,7 +216,7 @@ bool matched;
 
 ### <a name="remarks"></a>설명
 
-멤버는 **true** 캡처 그룹과 연결 된 경우에 `*this` 정규식 일치 항목의 일부입니다.
+멤버는와  연결 된 캡처 그룹이 정규식 일치의 일부인 `*this` 경우에만 true를 가집니다.
 
 ## <a name="op_basic_string_lt_value_type_gt"></a>  sub_match::operator basic_string&lt;value_type&gt;
 
@@ -256,5 +256,5 @@ typedef는 `iterator_traits<BidIt>::value_type`의 동의어입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[\<regex>](../standard-library/regex.md)<br/>
-[sub_match](../standard-library/sub-match-class.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[sub_match](../standard-library/sub-match-class.md)

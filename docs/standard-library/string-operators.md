@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt; (string)
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
-ms.openlocfilehash: a3ca469058ba65f83b0df60a93c63895e34f916e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb66e7c0120da9f140ce33da7ecc61299a4d2867
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412360"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459262"
 ---
 # <a name="ltstringgt-operators"></a>&lt;string&gt; 연산자
 
@@ -103,10 +103,10 @@ basic_string<CharType, Traits, Allocator>&& operator+(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*\
 연결할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 연결할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -115,7 +115,7 @@ basic_string<CharType, Traits, Allocator>&& operator+(
 
 ### <a name="remarks"></a>설명
 
-각 함수는 `operator+`를 오버로드하여 템플릿 클래스 [basic_string 클래스](../standard-library/basic-string-class.md)의 두 개체를 연결합니다. 모든 함수는 실제로 `basic_string< CharType, Traits, Allocator>(Left).append(right)`합니다. 자세한 내용은 [추가](../standard-library/basic-string-class.md#append)합니다.
+각 함수는 `operator+`를 오버로드하여 템플릿 클래스 [basic_string 클래스](../standard-library/basic-string-class.md)의 두 개체를 연결합니다. 모든를 효과적 `basic_string< CharType, Traits, Allocator>(Left).append(right)`으로 반환 합니다. 자세한 내용은 [append](../standard-library/basic-string-class.md#append)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -192,10 +192,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -283,10 +283,10 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -374,10 +374,10 @@ bool operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -470,10 +470,10 @@ bool operator<=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -563,19 +563,19 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ostr*<br/>
+*_Ostr*\
 문자열이 기록되는 출력 스트림입니다.
 
-*str*<br/>
+*문자열*\
 출력 스트림에 입력할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
-지정된 된 문자열의 값을 출력 스트림에 쓸 *_Ostr*합니다.
+지정 된 문자열의 값을 *출력 스트림에 씁니다*.
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수 오버 로드가 **연산자 <<** 개체를 삽입할 *str* 템플릿 클래스의 [basic_string](../standard-library/basic-string-class.md) 스트림으로  *\_ Ostr*합니다. 효과적으로 반환 `_Ostr.write( str.c_str, str.size )`합니다.
+템플릿 함수 오버 로드 **연산자는 < <** 템플릿 클래스 [basic_string](../standard-library/basic-string-class.md) 의 개체 *str* 을 stream  *\_ostr*에 삽입 합니다. 함수는를 효과적 `_Ostr.write( str.c_str, str.size )`으로 반환 합니다.
 
 ## <a name="op_gt"></a>  operator&gt;
 
@@ -600,10 +600,10 @@ bool operator>(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -703,10 +703,10 @@ bool operator>=(
 
 ### <a name="parameters"></a>매개 변수
 
-*left*<br/>
+*비어*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 `basic_string` 형식의 C 스타일 문자열 또는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -796,21 +796,21 @@ basic_istream<CharType, Traits>& operator>>(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Istr*<br/>
+*_Istr*\
 시퀀스를 추출하는 데 사용되는 입력 스트림입니다.
 
-*right*<br/>
+*오른쪽*\
 입력 스트림에서 추출되는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
-지정된 된 문자열의 값을 읽고 *_Istr* 로 반환 합니다 *오른쪽*합니다.
+*_Istr* 에서 지정 된 문자열의 값을 읽고 *오른쪽*으로 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
 `skipws` 플래그가 설정된 경우가 아니면 연산자는 선행 공백을 건너뜁니다. 그리고 다음 문자가 공백이거나 파일의 끝에 도달할 때까지 뒤에 오는 모든 문자를 읽습니다.
 
-템플릿 함수 오버 로드가 **연산자 >>** 제어 하는 시퀀스를 바꾸려면 *오른쪽* 스트림에서 추출 된 요소의 시퀀스를 사용 하 여 *_Istr*합니다. 다음과 같은 경우 추출이 중지됩니다.
+템플릿 함수 오버 로드 **연산자는 > >** 하 여 *right* 로 제어 되는 시퀀스를 *_istr*스트림에서 추출 된 요소 시퀀스로 바꿉니다. 다음과 같은 경우 추출이 중지됩니다.
 
 - 파일의 끝에 도달하는 경우
 
@@ -820,7 +820,7 @@ basic_istream<CharType, Traits>& operator>>(
 
 - 함수가 *ch* 요소를 추출한 후 이 요소의 [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype**\< **CharType**> >( `getloc`), **is**( **ctype**\< **CharType**>:: **space**, *ch*)가 true이면 문자가 되돌려집니다.
 
-함수가 요소를 추출 하는 경우 호출 [setstate](../standard-library/basic-ios-class.md#setstate)(`ios_base::failbit`). 어떤 경우든 **istr**. **width**(0)을 호출하고 \* **this**를 반환합니다.
+함수가 요소를 추출 하지 않으면 [setstate](../standard-library/basic-ios-class.md#setstate)(`ios_base::failbit`)를 호출 합니다. 어떤 경우든 **istr**. **width**(0)을 호출하고 \* **this**를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -843,4 +843,4 @@ int main( )
 
 ## <a name="see-also"></a>참고자료
 
-[\<string>](../standard-library/string.md)<br/>
+[\<string>](../standard-library/string.md)

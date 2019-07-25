@@ -1,19 +1,19 @@
 ---
-title: 입력-출력 대체
+title: 입력 출력 대체 항목
 ms.date: 05/07/2019
 helpviewer_keywords:
 - I/O [C++], alternatives
 ms.assetid: 9f8401c7-d90d-4285-8918-63573df74a80
-ms.openlocfilehash: 5fb98714a96dedf725ea17332d7c1627e3390896
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: b46ff242fc263be5069eb691dd0ea9e8fb00b0f9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221394"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455298"
 ---
 # <a name="inputoutput-alternatives"></a>입력/출력 대체
 
-Microsoft C++ 컴파일러는 I/O 프로그래밍을 위한 몇 가지 대안을 제공 합니다.
+Microsoft C++ 컴파일러는 i/o 프로그래밍에 대 한 여러 가지 대안을 제공 합니다.
 
 - C 런타임 라이브러리 버퍼링되지 않은 직접 I/O
 
@@ -31,4 +31,4 @@ iostream 클래스는 Microsoft Windows 운영 체제에서 사용할 수 있습
 
 ## <a name="see-also"></a>참고자료
 
-[스트림이란](../standard-library/what-a-stream-is.md)<br/>
+[스트림이란](../standard-library/what-a-stream-is.md)

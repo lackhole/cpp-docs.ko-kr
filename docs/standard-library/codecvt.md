@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt header
 ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d
-ms.openlocfilehash: 56cd4263d3dcddd23246a05466275b8b7d370b95
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fc711b14a2d30041b4585a9515a95e42280f5306
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405211"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458601"
 ---
 # <a name="ltcodecvtgt"></a>&lt;codecvt&gt;
 
-템플릿 클래스 [codecvt](../standard-library/codecvt-class.md)를 기반으로 하는 개체를 설명하는 여러 템플릿 클래스를 정의합니다. 이러한 개체 역할도 할 수 있습니다 [로캘 패싯](../standard-library/locale-class.md#facet_class) 형식의 값 시퀀스 간의 변환을 제어 하는 `Elem` 형식의 값 시퀀스 **char**합니다.
+템플릿 클래스 [codecvt](../standard-library/codecvt-class.md)를 기반으로 하는 개체를 설명하는 여러 템플릿 클래스를 정의합니다. 이러한 개체는 형식의 `Elem` 값 시퀀스와 **char**형식의 값 시퀀스 간의 변환을 제어 하는 [로캘 패싯](../standard-library/locale-class.md#facet_class) 으로 사용할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,7 +34,7 @@ ms.locfileid: "62405211"
 
 - UTF-16은 프로그램 내에서 하나 또는 두 개의 16비트 정수로 인코드된 유니코드입니다. (표준 C 또는 표준 C++에 대한 유효한 와이드 문자 인코딩의 모든 요구 사항을 충족하지는 않습니다. 그럼에도 불구하고 매우 광범위하게 사용됩니다.)
 
-바이트 스트림의 (파일에 저장, 바이트 시퀀스로 전송 되거나 배열 프로그램 내에서 저장 **char**):
+바이트 스트림의 경우 (파일에 저장 되거나 바이트 시퀀스로 전송 되거나 프로그램 내에 **char**배열로 저장 됨):
 
 - UTF-8은 바이트 스트림 내에서 결정적 바이트 순서를 가진 하나 이상의 8비트 바이트로 인코드된 유니코드입니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "62405211"
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|클래스|Description|
 |-|-|
 |[codecvt_utf8](codecvt-utf8-class.md)|UCS-2 또는 UCS-4로 인코드된 와이드 문자와 UTF-8로 인코드된 바이트 스트림 간에 변환되는 로캘 패싯을 나타냅니다.|
 |[codecvt_utf8_utf16](codecvt-utf8-utf16-class.md)|UTF-16으로 인코드된 와이드 문자와 UTF-8로 인코드된 바이트 스트림 간에 변환되는 로캘 패싯을 나타냅니다.|
@@ -64,4 +64,4 @@ ms.locfileid: "62405211"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

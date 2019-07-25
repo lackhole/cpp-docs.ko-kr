@@ -10,12 +10,12 @@ helpviewer_keywords:
 - stdext::cache_chunklist [C++], allocate
 - stdext::cache_chunklist [C++], deallocate
 ms.assetid: af19eccc-4ae7-4a34-bbb2-81e397424cb9
-ms.openlocfilehash: 94ae4dfc8f5f9073c0a39f315adfbed3e5c14daf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 73730e0a4a22e7f5e63809cc2c1603cbda1ab596
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380173"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449668"
 ---
 # <a name="cachechunklist-class"></a>cache_chunklist 클래스
 
@@ -36,9 +36,9 @@ class cache_chunklist
 
 ## <a name="remarks"></a>설명
 
-이 템플릿 클래스를 사용 하 여 **new 연산자** 원시 메모리의 청크를 할당 하려면 필요한 경우 메모리 블록에 대 한 저장소를 할당할 블록 고; 각 청크에 대 한 별도 사용 가능한 목록에서 할당 취소 된 메모리 블록을 저장 하 고 를사용하여**delete 연산자** 사용 중인 메모리 블록이 없는 경우 청크를 할당 취소 합니다.
+이 템플릿 클래스는 **new 연산자** 를 사용 하 여 원시 메모리의 청크를 할당 하 고, 필요한 경우 메모리 블록에 대 한 저장소를 할당 하는 블록을 할당 합니다. 각 청크에 대 한 별도의 사용 가능한 목록에 할당 취소 된 메모리 블록을 저장 하 고, **delete 연산자** 를 사용 하 여 메모리 블록을 사용 하 고 있지 않은 경우 청크의 할당을 취소 합니다.
 
-각 메모리 블록 보유 *Sz* 바이트의 사용 가능한 메모리 및 속해 있는 청크에 대 한 포인터입니다. 각 청크를 보유 `Nelts` 메모리 블록, 세 가지 포인터, int 및 데이터는 **new 연산자** 하 고 **delete 연산자** 필요 합니다.
+각 메모리 블록은 사용 가능한 메모리의 *Sz* 바이트와 해당 메모리가 속한 청크에 대 한 포인터를 포함 합니다. 각 청크는 `Nelts` 메모리 블록, 세 개의 포인터, int 및 **operator new** 및 **operator delete** 가 필요한 데이터를 보유 합니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -108,4 +108,4 @@ void deallocate(void* ptr, std::size_t count);
 
 ## <a name="see-also"></a>참고자료
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

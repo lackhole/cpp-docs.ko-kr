@@ -2,12 +2,12 @@
 title: '&lt;initializer_list&gt;'
 ms.date: 11/04/2016
 ms.assetid: 820b6448-fb01-49a4-aeaa-546ad7576ea4
-ms.openlocfilehash: 6f8e1a72b7de97f5dd0376dedd0d4246a46276eb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d0778fde6b7a7b6182b8e57cd4c663ec77ca85a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404977"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455329"
 ---
 # <a name="ltinitializerlistgt"></a>&lt;initializer_list&gt;
 
@@ -21,10 +21,10 @@ ms.locfileid: "62404977"
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|클래스|Description|
 |-|-|
 |[initializer_list](../standard-library/initializer-list-class.md)|각 멤버가 지정된 형식인 요소 배열에 대한 액세스를 제공합니다.|
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::extreme_value_distribution [C++], param_type
 - std::extreme_value_distribution [C++], param_type
 ms.assetid: a0cd8370-0a54-4e26-9388-8b9678fb57da
-ms.openlocfilehash: 5bc0270cb24fcff93d995e8908daaec62c956371
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 810a02e620e6b38732daf611d3b44a4a277322a5
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451196"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457768"
 ---
 # <a name="extremevaluedistribution-class"></a>extreme_value_distribution 클래스
 
@@ -71,15 +71,15 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType*<br/>
-부동 소수점 결과 형식으로 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*\
+부동 소수점 결과 형식으로, 기본적으로 **double**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*URNG*<br/>
-임의의 수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*URNG*\
+난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-부동 소수점는 사용자 지정 값을 생성 하는 분포를 설명 하는 템플릿 클래스 형식 또는 형식 **이중** 극단값 분포에 따라 제공 하지 않으면 배포 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
+이 템플릿 클래스는 극단적인 값 분포에 따라 분포 된 경우 사용자 지정 부동 소수점 형식의 값을 생성 하는 분포를 설명 하 고, 아무것도 제공 되지 않은 경우 **double** 형식을 제공 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
 
 ||||
 |-|-|-|
@@ -192,13 +192,13 @@ explicit extreme_value_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*a_value*<br/>
+*a_value*\
 `a` 분포 매개 변수입니다.
 
-*b_value*<br/>
+*b_value*\
 `b` 분포 매개 변수입니다.
 
-*parm*<br/>
+*parm*\
 분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
@@ -227,13 +227,13 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*a_value*<br/>
+*a_value*\
 `a` 분포 매개 변수입니다.
 
-*b_value*<br/>
+*b_value*\
 `b` 분포 매개 변수입니다.
 
-*right*<br/>
+*오른쪽*\
 이 매개 변수와 비교할 `param_type` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -244,4 +244,4 @@ struct param_type {
 
 ## <a name="see-also"></a>참고자료
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

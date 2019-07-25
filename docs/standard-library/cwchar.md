@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - cwchar header
 ms.assetid: 7380b1bf-a220-46e5-b832-9f9f4e543aac
-ms.openlocfilehash: 8a82a821ab8cb705b6244b2763f3f0b022c0e3e5
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: e1406bf154cb677be6400bf1cf4122627f64f2ad
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243645"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454170"
 ---
 # <a name="ltcwchargt"></a>&lt;cwchar&gt;
 
@@ -120,6 +120,6 @@ size_t wcsrtombs(char* dst, const wchar_t** src, size_t len, mbstate_t* ps);
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

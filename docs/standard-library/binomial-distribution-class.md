@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::binomial_distribution [C++], param_type
 - std::binomial_distribution [C++], param_type
 ms.assetid: b7c8a26a-da8c-45a5-a3a8-208f7a3609ce
-ms.openlocfilehash: ee61b79848a5649d44cf02384f32ad8e0226feb0
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 525e448a130f33df478627f7ae7ca682ff4a556d
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451113"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448057"
 ---
 # <a name="binomialdistribution-class"></a>binomial_distribution 클래스
 
@@ -71,22 +71,22 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*IntType*<br/>
-정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*IntType*\
+정수 결과 형식으로, 기본적으로 **int**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*URNG*<br/>
-균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*URNG*\
+단일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-사용자 지정 정수 값을 생성 하는 분포를 설명 하는 템플릿 클래스 형식 또는 형식 **int** 이항 분포 이산 확률 함수에 따라 제공 하지 않으면 배포 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
+이항 분포 불연속 확률 함수에 따라 분포 된 경우 템플릿 클래스는 사용자 지정 정수 형식의 값을 생성 하는 분포를 설명 하 고, 아무것도 제공 되지 않은 경우 **int** 형식을 제공 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
 
 ||||
 |-|-|-|
 |[binomial_distribution](#binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|
 |`binomial_distribution::operator()`|`binomial_distribution::p`|[param_type](#param_type)|
 
-속성 멤버 `t()` 하 고 `p()` 현재 저장 된 분포 매개 변수 값을 반환 *t* 하 고 *p* 각각.
+속성 멤버 `t()` 및 `p()` 는 각각 현재 저장 된 분포 매개 변수 값 *t* 및 *p* 를 반환 합니다.
 
 속성 구성원 `param()`은 `param_type`으로 저장된 분포 매개 변수 패키지를 설정하거나 반환합니다.
 
@@ -242,20 +242,20 @@ explicit binomial_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*t*<br/>
+*트*\
 `t` 분포 매개 변수입니다.
 
-*p*<br/>
+*®*\
 `p` 분포 매개 변수입니다.
 
-*parm*<br/>
+*parm*\
 분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
 **사전 조건:** `0 ≤ t` 및 `0.0 ≤ p ≤ 1.0`
 
-개체를 생성 하는 첫 번째 생성자는 해당 저장 *p* 값을 보유 하는 값 *p* 을 저장 *t* 값을 보유 하는 값 *t*합니다.
+첫 번째 생성자는 저장 된 *p* 값이 *p* 값을 보유 하 고 저장 된 *t* 값이 *t*값을 보유 하 고 있는 개체를 생성 합니다.
 
 두 번째 생성자는 저장된 매개 변수가 *parm*에서 초기화되는 개체를 생성합니다. `param()` 멤버 함수를 호출하여 기존 분포의 현재 매개 변수를 가져와 설정할 수 있습니다.
 
@@ -277,13 +277,13 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*t*<br/>
+*트*\
 `t` 분포 매개 변수입니다.
 
-*p*<br/>
+*®*\
 `p` 분포 매개 변수입니다.
 
-*right*<br/>
+*오른쪽*\
 이 매개 변수와 비교할 `param_type` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -294,4 +294,4 @@ struct param_type {
 
 ## <a name="see-also"></a>참고자료
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)
