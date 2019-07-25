@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::discrete_distribution [C++], param_type
 - std::discrete_distribution [C++], param_type
 ms.assetid: 8c8ba8f8-c06f-4f07-b354-f53950142fcf
-ms.openlocfilehash: 7ad375c14e9034a55d280a2927d6ef00f098ddbc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ce668ebfdafc4a53bfc71ecf1f2fa76abb1c7532
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413855"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454382"
 ---
 # <a name="discretedistribution-class"></a>discrete_distribution 클래스
 
@@ -72,8 +72,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*IntType*<br/>
-정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*IntType*\
+정수 결과 형식으로, 기본적으로 **int**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -200,28 +200,28 @@ explicit discrete_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*firstW*<br/>
+*firstW*\
 분포를 생성할 목록의 첫 번째 반복기입니다.
 
-*lastW*<br/>
+*lastW*\
 분포를 생성할 목록의 마지막 반복기입니다(반복기는 끝에 빈 요소를 사용하기 때문에 제외됨).
 
-*weightlist*<br/>
+*weightlist*\
 분포를 생성할 [initializer_list](../cpp/initializers.md)입니다.
 
-*count*<br/>
+*수*\
 분포 범위의 요소 수입니다. `count==0`이면 기본 생성자와 동일합니다(항상 0 생성).
 
-*low*<br/>
+*거의*\
 분포 범위의 가장 작은 값입니다.
 
-*high*<br/>
+*최고*\
 분포 범위의 가장 큰 값입니다.
 
-*weightfunc*<br/>
-분포의 확률 함수를 나타내는 개체입니다. 매개 변수 및 반환 값을 변환할 수 있어야 합니다 **이중**합니다.
+*weightfunc*\
+분포의 확률 함수를 나타내는 개체입니다. 매개 변수와 반환 값은 둘 다 **double**로 변환할 수 있어야 합니다.
 
-*parm*<br/>
+*parm*\
 분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
@@ -230,12 +230,12 @@ explicit discrete_distribution(const param_type& parm);
 
 *firstW* 및 *lastW* 매개 변수가 포함된 반복기 범위 생성자는 간격 시퀀스 [*firstW*, *lastW*)에 대해 반복기에서 가져온 가중치 값을 사용하여 분포 개체를 생성합니다.
 
-에 이니셜라이저 목록 생성자는 *weightlist* 이니셜라이저 목록에서 가중치로 분포 개체를 생성 하는 매개 변수 *weightlist*합니다.
+*Weightlist* 매개 변수가 있는 이니셜라이저 목록 생성자는 이니셜라이저 목록 *weightlist*의 가중치를 사용 하 여 분포 개체를 생성 합니다.
 
 *count*, *low*, *high* 및 *weightfunc* 매개 변수가 포함된 생성자는 다음 규칙에 따라 초기화된 분포 개체를 생성합니다.
 
 - *count* < 1, **n** = 1이라 기본 생성자와 같은 경우 항상 0을 생성합니다.
-- *count* > 0, **n** = *count*인 경우 제공 된 **d** = (*높은* - *낮은*) / **n** 보다 크면 0을 사용 하 여 **d** uniform 하위 범위를 각 가중치 같이 할당 됩니다. `weight[k] = weightfunc(x)`, 여기서 **x** = *낮은* + **k**  *  **d** + **d** / 2에 대 한 **k** = 0,..., **n** -1입니다.
+- *count* > 0, **n** = *count*인 경우 D **= (** *높은* - *낮음*)/ **n** 이 0 보다 크면 **d** uniform 하위 범위를 사용 하 여 각 가중치가 다음과 같이 할당 됩니다. `weight[k] = weightfunc(x)`여기서 **x** = *low*  + k **= 0** , ..., **n** -1의 경우 **k** * **d** + **d** /2입니다.
 
 `param_type` 매개 변수 *parm*이 포함된 생성자는 *parm*을 사용하여 분포 개체를 저장된 매개 변수 구조체로 생성합니다.
 
@@ -268,28 +268,28 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*firstW*<br/>
+*firstW*\
 분포를 생성할 목록의 첫 번째 반복기입니다.
 
-*lastW*<br/>
+*lastW*\
 분포를 생성할 목록의 마지막 반복기입니다(반복기는 끝에 빈 요소를 사용하기 때문에 제외됨).
 
-*weightlist*<br/>
+*weightlist*\
 분포를 생성할 [initializer_list](../cpp/initializers.md)입니다.
 
-*count*<br/>
+*수*\
 분포 범위의 요소 수입니다. *count*가 0이면 기본 생성자와 같습니다(항상 0 생성).
 
-*low*<br/>
+*거의*\
 분포 범위의 가장 작은 값입니다.
 
-*high*<br/>
+*최고*\
 분포 범위의 가장 큰 값입니다.
 
-*weightfunc*<br/>
-분포의 확률 함수를 나타내는 개체입니다. 매개 변수 및 반환 값을 변환할 수 있어야 합니다 **이중**합니다.
+*weightfunc*\
+분포의 확률 함수를 나타내는 개체입니다. 매개 변수와 반환 값은 둘 다 **double**로 변환할 수 있어야 합니다.
 
-*right*<br/>
+*오른쪽*\
 이 매개 변수와 비교할 `param_type` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -298,4 +298,4 @@ struct param_type {
 
 ## <a name="see-also"></a>참고자료
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

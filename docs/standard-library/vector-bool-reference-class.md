@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - vector<bool> reference class
 ms.assetid: f27854f9-0ef0-4e7e-ad2e-cd53b6cb3334
-ms.openlocfilehash: 7930c1cd93cd05a752d4997b9480c766ee26bd99
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 65bfc91cf5dc79fb1e5151a6f62c394b4579883b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407720"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453211"
 ---
 # <a name="vectorltboolgtreference-class"></a>vector&lt;bool&gt;::reference 클래스
 
@@ -19,7 +19,7 @@ ms.locfileid: "62407720"
 
 ## <a name="remarks"></a>설명
 
-C++는 기본적으로 비트에 직접 참조를 허용하지 않으므로 시뮬레이션된 참조가 필요하지 않습니다. `vector<bool>`는 요소당 1비트만 사용하며, 이 프록시 클래스만 사용하여 참조할 수 있습니다. 하지만, 특정 할당은 유효하지 않으므로 참조 시뮬레이션이 완전하지 않습니다. 예를 들어, 때문에 주소를 `vector<bool>::reference` 개체 만들 수 없습니다, 다음 코드를 사용 하려고 하는 `vector<bool>::operator&` 잘못 되었습니다:
+C++는 기본적으로 비트에 직접 참조를 허용하지 않으므로 시뮬레이션된 참조가 필요하지 않습니다. `vector<bool>`는 요소당 1비트만 사용하며, 이 프록시 클래스만 사용하여 참조할 수 있습니다. 하지만, 특정 할당은 유효하지 않으므로 참조 시뮬레이션이 완전하지 않습니다. 예를 들어 `vector<bool>::reference` 개체의 주소를 가져올 수 없기 때문에를 사용 `vector<bool>::operator&` 하려고 시도 하는 다음 코드는 올바르지 않습니다.
 
 ```cpp
 vector<bool> vb;
@@ -33,7 +33,7 @@ bool& refb = vb[1];   // conversion error - do not use
 |멤버 함수|설명|
 |-|-|
 |[flip](../standard-library/vector-bool-reference-flip.md)|벡터 요소의 부울 값을 반전합니다.|
-|[operator bool](../standard-library/vector-bool-reference-operator-bool.md)|암시적으로 변환 `vector<bool>::reference` 하 **bool**합니다.|
+|[operator bool](../standard-library/vector-bool-reference-operator-bool.md)|에서 `vector<bool>::reference` **bool**로의 암시적 변환을 제공 합니다.|
 |[operator=](../standard-library/vector-bool-reference-operator-assign.md)|비트에 부울 값을 할당하거나 참조된 요소에 저장된 값을 비트에 할당합니다.|
 
 ## <a name="requirements"></a>요구 사항
@@ -44,6 +44,6 @@ bool& refb = vb[1];   // conversion error - do not use
 
 ## <a name="see-also"></a>참고자료
 
-[\<vector>](../standard-library/vector.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<vector>](../standard-library/vector.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

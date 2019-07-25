@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::piecewise_constant_distribution [C++], param_type
 - std::piecewise_constant_distribution [C++], param_type
 ms.assetid: 2c9a21fa-623e-4d63-b827-3f1556b6dedb
-ms.openlocfilehash: 0c990953f0cda81366ff2645d3cdf1065850abbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 62cfba1fda3d9a42788e8dd47144705fb05c6787
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370400"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455241"
 ---
 # <a name="piecewiseconstantdistribution-class"></a>piecewise_constant_distribution 클래스
 
@@ -80,8 +80,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType*<br/>
-부동 소수점 결과 형식, 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*\
+부동 소수점 결과 형식으로, 기본적으로 **double**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -248,31 +248,31 @@ explicit piecewise_constant_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*firstI*<br/>
+*firstI*\
 대상 범위에 있는 첫 번째 요소의 입력 반복기입니다.
 
-*lastI*<br/>
+*lastI*\
 대상 범위에 있는 마지막 요소의 입력 반복기입니다.
 
-*firstW*<br/>
+*firstW*\
 가중치 범위에 있는 첫 번째 요소의 입력 반복기입니다.
 
-*intervals*<br/>
+*구간*\
 분포의 간격이 있는 [initializer_list](../cpp/initializers.md)입니다.
 
-*count*<br/>
+*수*\
 분포 범위의 요소 수입니다.
 
-*xmin*<br/>
+*xmin*\
 분포 범위의 가장 작은 값입니다.
 
-*xmax*<br/>
+*xmax*\
 분포 범위의 가장 큰 값입니다. *xmin*보다 커야 합니다.
 
-*weightfunc*<br/>
-분포의 확률 함수를 나타내는 개체입니다. 매개 변수 및 반환 값을 변환할 수 있어야 합니다 **이중**합니다.
+*weightfunc*\
+분포의 확률 함수를 나타내는 개체입니다. 매개 변수와 반환 값은 둘 다 **double**로 변환할 수 있어야 합니다.
 
-*parm*<br/>
+*parm*\
 분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
 ### <a name="remarks"></a>설명
@@ -296,7 +296,7 @@ intervals,
     UnaryOperation weightfunc);
 ```
 
-이니셜라이저 목록에서 간격을 사용 하 여 분포 개체를 생성 *간격* 하 고 함수에서 생성 된 가중치 *weightfunc*합니다.
+이니셜라이저 목록 *간격* 및 *weightfunc*함수에서 생성 된 가중치에서 간격을 사용 하 여 분포 개체를 생성 합니다.
 
 다음과 같이 정의된 생성자는
 ```cpp
@@ -305,14 +305,14 @@ piecewise_constant_distribution(size_t count, result_type xmin, result_type xmax
     UnaryOperation weightfunc);
 ```
 
-사용 하 여 분포 개체를 생성 *개수* 간격을 넘는 균일 하 게 분산 [ `xmin,xmax`], 각 간격 가중치를 할당 함수에 따라 *weightfunc*, 및  *weightfunc* 하나의 매개 변수를 수락 하 고 있으며 둘 모두로 변환할 값을 반환 해야 `double`합니다. **사전 조건:** `xmin < xmax`
+*weightfunc*함수에 따라 각  간격 가중치를 할당 하는 `xmin,xmax`[]에 균일 하 게 분포 된 개수 간격을 사용 하 여 분포 개체를 생성 하 고 *weightfunc* 는 하나의 매개 변수를 사용 하 고 반환을 포함 해야 합니다. 값으로 변환할 `double`수 있습니다. **사전 조건:** `xmin < xmax`
 
 다음과 같이 정의된 생성자는
 ```cpp
 explicit piecewise_constant_distribution(const param_type& parm);
 ```
 
-사용 하 여 분포 개체를 생성 *parm* 로 저장 된 매개 변수 구조입니다.
+*parm* 를 저장 된 매개 변수 구조로 사용 하 여 분포 개체를 생성 합니다.
 
 ## <a name="param_type"></a>  piecewise_constant_distribution::param_type
 
@@ -346,5 +346,5 @@ struct param_type {
 
 ## <a name="see-also"></a>참고자료
 
-[\<random>](../standard-library/random.md)<br/>
-[piecewise_linear_distribution](../standard-library/piecewise-linear-distribution-class.md)<br/>
+[\<random>](../standard-library/random.md)\
+[piecewise_linear_distribution](../standard-library/piecewise-linear-distribution-class.md)

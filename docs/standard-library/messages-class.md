@@ -22,12 +22,12 @@ helpviewer_keywords:
 - std::messages [C++], get
 - std::messages [C++], open
 ms.assetid: c4c71f40-4f24-48ab-9f7c-daccd8d5bd83
-ms.openlocfilehash: 7a024a8cad8c536b25127d033468874de5ebd8af
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f417c33d5502f8e5bd247936c8a0f93007239924
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383583"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449932"
 ---
 # <a name="messages-class"></a>messages 클래스
 
@@ -44,7 +44,7 @@ class messages : public messages_base;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*<br/>
+*CharType*\
 로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -105,7 +105,7 @@ void close(catalog _Catval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catval*<br/>
+*_Catval*\
 닫을 카탈로그입니다.
 
 ### <a name="remarks"></a>설명
@@ -122,12 +122,12 @@ virtual void do_close(catalog _Catval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catval*<br/>
+*_Catval*\
 닫을 카탈로그입니다.
 
 ### <a name="remarks"></a>설명
 
-보호 된 멤버 함수는 메시지 카탈로그를 닫습니다 *_Catval*에 열려 있어야 이전 호출에 의해 [do_open](#do_open)합니다.
+Protected 멤버 함수는 [do_open](#do_open)에 대 한 이전 호출에 의해 열려 있어야 하는 메시지 카탈로그 *_catval*을 닫습니다.
 
 *_Catval*은 닫히지 않은 이전에 연 카탈로그에서 가져와야 합니다.
 
@@ -149,25 +149,25 @@ virtual string_type do_get(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catval*<br/>
+*_Catval*\
 검색할 메시지 카탈로그를 지정하는 ID 값입니다.
 
-*_Set*<br/>
+*_* \
 메시지 카탈로그에서 메시지를 찾는 데 사용되는 첫 번째 식별자입니다.
 
-*_Message*<br/>
+*메시지 (_s)* \
 메시지 카탈로그에서 메시지를 찾는 데 사용되는 두 번째 식별자입니다.
 
-*_Dfault*<br/>
+*_Dfault*\
 오류 시 반환할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
-복사본을 반환 *_Dfault* 실패 합니다. 그렇지 않으면 지정된 메시지 시퀀스의 복사본을 반환합니다.
+오류가 발생 했을 때 *_Dfault* 의 복사본을 반환 합니다. 그렇지 않으면 지정된 메시지 시퀀스의 복사본을 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-보호 된 멤버 함수는 메시지 카탈로그에서 메시지 시퀀스를 가져오려고 시도 *_Catval*합니다. 만들 수 있습니다 사용 *설정 (_s)* 를 *(_m)*, 및 *_Dfault* 그렇게 합니다.
+Protected 멤버 함수는 메시지 카탈로그 _Aampm에서 메시지 시퀀스 를 가져오려고 시도 합니다. 이 작업을 수행 하는 동안에는 *_* , *_Message*및 *_lfault* 를 사용할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -185,10 +185,10 @@ virtual catalog do_open(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catname*<br/>
+*_Aaname*\
 검색할 카탈로그의 이름입니다.
 
-*_Loc*<br/>
+*_Loc*\
 카탈로그에서 검색되는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -197,7 +197,7 @@ virtual catalog do_open(
 
 ### <a name="remarks"></a>설명
 
-보호 된 멤버 함수는 이름이 메시지 카탈로그를 열려고 *_Catname*합니다. 만들 수 있습니다 로캘을 사용할 *_Loc* 이렇게
+Protected 멤버 함수는 이름이 *_Catname*인 메시지 카탈로그를 열려고 시도 합니다. 이렇게 하려면 로캘 *_Loc* 를 사용할 수 있습니다.
 
 반환 값은 나중에 [close](#close)를 호출할 때 인수로 사용해야 합니다.
 
@@ -219,21 +219,21 @@ string_type get(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catval*<br/>
+*_Catval*\
 검색할 메시지 카탈로그를 지정하는 ID 값입니다.
 
-*_Set*<br/>
+*_* \
 메시지 카탈로그에서 메시지를 찾는 데 사용되는 첫 번째 식별자입니다.
 
-*_Message*<br/>
+*메시지 (_s)* \
 메시지 카탈로그에서 메시지를 찾는 데 사용되는 두 번째 식별자입니다.
 
-*_Dfault*<br/>
+*_Dfault*\
 오류 시 반환할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
-복사본을 반환 *_Dfault* 실패 합니다. 그렇지 않으면 지정된 메시지 시퀀스의 복사본을 반환합니다.
+오류가 발생 했을 때 *_Dfault* 의 복사본을 반환 합니다. 그렇지 않으면 지정된 메시지 시퀀스의 복사본을 반환합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -254,25 +254,25 @@ protected: messages(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs*<br/>
+*참조 (_s)* \
 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
-*_Locname*<br/>
+*_Locname*\
 로캘 이름입니다.
 
 ### <a name="remarks"></a>설명
 
-에 대 한 가능한 값을 *_Refs* 매개 변수 및 중요성은:
+*_Refs* 매개 변수에 사용할 수 있는 값은 다음과 같습니다.
 
-- 0: 개체의 수명은 포함 하는 로캘에 의해 관리 됩니다.
+- 0: 개체의 수명은이를 포함 하는 로캘로 관리 됩니다.
 
 - 1: 개체의 수명은 수동으로 관리 해야 합니다.
 
-- \> 1: 이러한 값이 정의 되지 않습니다.
+- \> 1: 이러한 값은 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
-생성자는 **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`)를 통해 해당 기본 개체를 초기화합니다.
+생성자는 **locale::** [facet](../standard-library/locale-class.md#facet_class)( `_Refs`)를 통해 해당 기본 개체를 초기화합니다.
 
 ## <a name="open"></a>  messages::open
 
@@ -286,10 +286,10 @@ catalog open(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Catname*<br/>
+*_Aaname*\
 검색할 카탈로그의 이름입니다.
 
-*_Loc*<br/>
+*_Loc*\
 카탈로그에서 검색되는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -314,6 +314,6 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 ## <a name="see-also"></a>참고자료
 
-[\<locale>](../standard-library/locale.md)<br/>
-[messages_base 클래스](../standard-library/messages-base-class.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[messages_base 클래스](../standard-library/messages-base-class.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
