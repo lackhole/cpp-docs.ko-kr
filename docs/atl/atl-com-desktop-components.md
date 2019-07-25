@@ -45,7 +45,7 @@ ATL Worker 원형에 대한 링크를 제공합니다.
 액티브 템플릿 라이브러리(ATL)를 사용하여 프로그래밍하는 방법에 대한 항목을 제공합니다.
 
 [ATL 자습서](../atl/active-template-library-atl-tutorial.md)<br/>
-컨트롤 생성을 안내하고 프로세스에서 일부 ATL 기초를 보여줍니다.
+컨트롤 생성과 그 과정에서 일부 ATL 기초를 보여줍니다.
 
 [ATL 샘플](../overview/visual-cpp-samples.md)<br/>
 COM 객체를 이용한 ATL 사용 방법을 보여주는 샘플 코드입니다.
