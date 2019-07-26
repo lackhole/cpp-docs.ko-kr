@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::basic_istream [C++], tellg
 - std::basic_istream [C++], unget
 ms.assetid: c7c27111-de6d-42b4-95a3-a7e65259bf17
-ms.openlocfilehash: 5e7f6ae0728a7d28af1992cf4186d533f1a97330
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1a76e9c639ac56ca693527543ecff5c597456f0
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62414167"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452547"
 ---
 # <a name="basicistream-class"></a>basic_istream 클래스
 
@@ -119,13 +119,13 @@ if (ok)
 setstate(state);
 ```
 
-함수 호출의 두 그룹 [setstate](../standard-library/basic-ios-class.md#setstate)(`eofbit`) 요소를 추출 하는 동안 파일의 끝에 도달할 경우.
+두 함수 그룹은 요소 [](../standard-library/basic-ios-class.md#setstate)를 추출`eofbit`하는 동안 파일 끝에 도달 하는 경우 setstate ()를 호출 합니다.
 
 `basic_istream`< `Elem`, *Tr*> 클래스의 개체는 다음을 저장합니다.
 
 - [basic_ios](../standard-library/basic-ios-class.md)< `Elem`, *Tr*> `.` 클래스의 공용 가상 기준 개체
 
-- 형식이 지정 되지 않은 마지막 입력된 작업에 대 한 추출 횟수 (호출 `count` 이전 코드에서).
+- 서식이 지정 되지 않은 마지막 입력 작업 (이전 코드에서 `count` 호출)에 대 한 추출 수입니다.
 
 ## <a name="example"></a>예제
 
@@ -183,13 +183,13 @@ basic_istream(basic_istream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*strbuf*<br/>
+*strbuf*\
 [basic_streambuf](../standard-library/basic-streambuf-class.md) 형식의 개체입니다.
 
-*_Isstd*<br/>
-**true 이면** 표준 스트림인 경우이 고, 그렇지 **false**합니다.
+*_Isstd*\
+표준 스트림 이면 **true** 입니다. 그렇지 않으면 **false**입니다.
 
-*right*<br/>
+*오른쪽*\
 복사할 `basic_istream` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -266,19 +266,19 @@ basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
 
 ### <a name="parameters"></a>매개 변수
 
-*count*<br/>
+*수*\
 `strbuf`에서 읽을 문자 수입니다.
 
-*Delim*<br/>
-이전에 발견 될 경우 읽기를 종료 해야 하는 문자 *개수*합니다.
+*Delim*\
+*개수*이전에 발생 한 경우 읽기를 종료 해야 하는 문자입니다.
 
-*str*<br/>
+*문자열*\
 쓸 수 있는 문자열입니다.
 
-*Ch*<br/>
+*Ch*\
 가져올 문자입니다.
 
-*strbuf*<br/>
+*strbuf*\
 쓸 수 있는 버퍼입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -287,25 +287,25 @@ basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
 
 ### <a name="remarks"></a>설명
 
-형식이 지정되지 않은 이러한 입력 함수 중 첫 번째 함수는 가능한 경우 `rdbuf`-> `sbumpc`를 반환하여 요소를 추출합니다. 아닌 경우 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)를 반환합니다. 함수가 요소를 추출 하는 경우 호출 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`).
+형식이 지정되지 않은 이러한 입력 함수 중 첫 번째 함수는 가능한 경우 `rdbuf`-> `sbumpc`를 반환하여 요소를 추출합니다. 아닌 경우 **traits_type::** [eof](../standard-library/char-traits-struct.md#eof)를 반환합니다. 함수가 요소를 추출 하지 않으면 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`)를 호출 합니다.
 
-두 번째 함수도 같은 방법으로 [int_type](../standard-library/basic-ios-class.md#int_type) 요소 `meta`를 추출합니다. `meta`가 **traits_type::eof**와 비교 시 같으면 함수는 `setstate`( **failbit**)를 호출합니다. 같지 않으면 `Ch`에 **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)( `meta`)를 저장합니다. 함수는 **\*this**를 반환합니다.
+두 번째 함수도 같은 방법으로 [int_type](../standard-library/basic-ios-class.md#int_type) 요소 `meta`를 추출합니다. `meta`가 **traits_type::eof**와 비교 시 같으면 함수는 `setstate`( **failbit**)를 호출합니다. 같지 않으면 `Ch`에 **traits_type::** [to_char_type](../standard-library/char-traits-struct.md#to_char_type)( `meta`)를 저장합니다. 함수는 **\*this**를 반환합니다.
 
 세 번째 함수는 **get**(_ *Str*, `count`, `widen`('\ **n**'))을 반환합니다.
 
-네 번째 함수 추출 *개수* -1 요소 _ 시작 되는 배열에에서 저장 합니다 *Str*합니다. 함수는 항상 추출하여 저장한 요소 뒤에 `char_type`을 저장합니다. 테스트 순서에서 추출은 다음에서 중지됩니다.
+네 번째 함수는 *count* -1 개 요소를 추출 하 여 _ *Str*에서 시작 하는 배열에 저장 합니다. 함수는 항상 추출하여 저장한 요소 뒤에 `char_type`을 저장합니다. 테스트 순서에서 추출은 다음에서 중지됩니다.
 
 - 파일의 끝에 도달하는 경우
 
-- 함수 같은지를 비교 하는 요소를 추출해 *Delim*, 이때 요소 제어 되는 시퀀스에 다시 배치 됩니다.
+- 함수는 *Delim*와 비교 하는 요소를 추출 합니다 .이 경우 요소는 제어 되는 시퀀스로 다시 배치 됩니다.
 
-- 함수 추출 *개수* -1 요소입니다.
+- 함수는 *count* -1 요소를 추출 합니다.
 
 요소를 추출하지 않는 경우 함수는 `setstate`( **failbit**)를 호출합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
 다섯 번째 함수는 **get**( **strbuf**, `widen`('\ **n**'))을 반환합니다.
 
-여섯 번째 함수는 요소를 추출 하 고 삽입에 `strbuf`입니다. 추출되지 않은 _ *Delim*과 비교 시 같은 요소에서 또는 파일의 끝에서 추출이 중지됩니다. 또한 삽입이 실패하거나 예외를 throw하면(catch했지만 다시 throw되지 않음) 문제의 요소를 추출하지 않고 중단합니다. 요소를 추출하지 않는 경우 함수는 `setstate`( **failbit**)를 호출합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
+여섯 번째 함수는 요소를 추출 하 여 `strbuf`에 삽입 합니다. 추출되지 않은 _ *Delim*과 비교 시 같은 요소에서 또는 파일의 끝에서 추출이 중지됩니다. 또한 삽입이 실패하거나 예외를 throw하면(catch했지만 다시 throw되지 않음) 문제의 요소를 추출하지 않고 중단합니다. 요소를 추출하지 않는 경우 함수는 `setstate`( **failbit**)를 호출합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -349,13 +349,13 @@ basic_istream<Elem, Tr>& getline(
 
 ### <a name="parameters"></a>매개 변수
 
-*count*<br/>
+*수*\
 `strbuf`에서 읽을 문자 수입니다.
 
-*Delim*<br/>
-이전에 발견 될 경우 읽기를 종료 해야 하는 문자 *개수*합니다.
+*Delim*\
+*개수*이전에 발생 한 경우 읽기를 종료 해야 하는 문자입니다.
 
-*str*<br/>
+*문자열*\
 쓸 수 있는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -366,15 +366,15 @@ basic_istream<Elem, Tr>& getline(
 
 형식이 지정되지 않은 이러한 입력 함수의 첫 번째는 **getline**(_ *Str*, `count`, `widen`(' `\`**n**'))을 반환합니다.
 
-두 번째 함수 추출 *개수* -1 요소 _ 시작 되는 배열에에서 저장 합니다 *Str*합니다. 함수는 항상 추출하여 저장한 요소 뒤에 문자열 종결 문자를 저장합니다. 테스트 순서에서 추출은 다음에서 중지됩니다.
+두 번째 함수는 *count* -1 개 요소를 추출 하 여 _ *Str*에서 시작 하는 배열에 저장 합니다. 함수는 항상 추출하여 저장한 요소 뒤에 문자열 종결 문자를 저장합니다. 테스트 순서에서 추출은 다음에서 중지됩니다.
 
 - 파일의 끝에 도달하는 경우
 
-- 함수 같은지를 비교 하는 요소를 추출해 *Delim*,이 경우 요소는 다시 배치도 아니고 제어 되는 시퀀스에 추가 합니다.
+- 함수가 *Delim*과 비교 하는 요소를 추출 하는 경우 (이 경우 요소는 다시 배치 되거나 제어 되는 시퀀스에 추가 되지 않습니다.)
 
-- 함수 추출 *개수* -1 요소입니다.
+- 함수는 *count* -1 요소를 추출 합니다.
 
-함수 추출 요소가 없는 경우 또는 *개수* -1 요소를 호출한 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). 어떤 경우든 함수는 **\*this**를 반환합니다.
+요소가 요소를 추출 하지 않거나 *count* -1 요소를 추출 하는 [](../standard-library/basic-ios-class.md#setstate)경우 setstate`failbit`()를 호출 합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -409,11 +409,11 @@ basic_istream<Elem, Tr>& ignore(
 
 ### <a name="parameters"></a>매개 변수
 
-*count*<br/>
+*수*\
 현재 읽기 위치에서 건너뛸 요소의 수입니다.
 
-*Delim*<br/>
-이전 개수, 발생 한 경우 발생 하는 요소 `ignore` 반환할 이후의 모든 요소 및 *Delim* 를 읽을 수 있습니다.
+*Delim*\
+Count 이전에 발생 한 경우에서 `ignore` 를 반환 하 고 *Delim* 이후의 모든 요소를 읽을 수 있도록 하는 요소입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -421,7 +421,7 @@ basic_istream<Elem, Tr>& ignore(
 
 ### <a name="remarks"></a>설명
 
-형식이 지정 되지 않은 입력된 함수 추출 *개수* 요소 무시 합니다. 그러나 하는 경우 *개수* equals **numeric_limits\<int >:: max**, 임의로 큰 수로 간주 됩니다. 요소에서 또는 파일의 끝에서 추출이 조기에 중지 `Ch` 되도록 **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `Ch`) 비교 하 여 같은 *Delim* ( 또한 추출 됩니다). 함수는 **\*this**를 반환합니다.
+형식이 지정 되지 않은 입력 함수는 요소 *수를 계산* 하 고 삭제 합니다. 그러나 *count* 가 **numeric_limits\<int >:: max**인 경우에는 임의로 크기가 됩니다. `Ch` 추출은 파일의 끝 이나 요소에서 일찍 중지 되며, **traits_type::** [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `Ch`)는 *Delim* (추출 됨)와 동일 하 게 비교 됩니다. 함수는 **\*this**를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -471,13 +471,13 @@ basic_istream& operator>>(long double& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*Pfn*<br/>
+*Pfn*\
 함수 포인터입니다.
 
-*strbuf*<br/>
+*strbuf*\
 `stream_buf` 형식의 개체입니다.
 
-*val*<br/>
+*짧은*\
 스트림에서 읽은 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -486,7 +486,7 @@ basic_istream& operator>>(long double& val);
 
 ### <a name="remarks"></a>설명
 
-\<r e a m > 헤더 또한 몇몇 전역 추출 연산자를 정의 합니다. 자세한 내용은 [operator>> (\<istream>)](../standard-library/istream-operators.md#op_gt_gt)을 참조하세요.
+Istream \<> 헤더는 여러 전역 추출 연산자도 정의 합니다. 자세한 내용은 [operator>> (\<istream>)](../standard-library/istream-operators.md#op_gt_gt)을 참조하세요.
 
 첫 번째 멤버 함수는 **istr** >> `ws` 형식의 식이 [ws](../standard-library/istream-functions.md#ws)( **istr**)을 호출한 다음 **\*this**를 반환하도록 합니다. 두 번째와 세 번째 함수는 [hex](../standard-library/ios-functions.md#hex)와 같은 기타 조작자가 비슷하게 동작하도록 합니다. 나머지 함수는 형식이 지정된 입력 함수를 구성합니다.
 
@@ -497,7 +497,7 @@ basic_istream& operator>>(
     basic_streambuf<Elem, Tr>* strbuf);
 ```
 
-경우 요소를 추출 _ *Strbuf* 가 null 포인터가 아닌 및에 삽입 *strbuf*합니다. 추출은 파일의 끝에서 중지됩니다. 또한 삽입이 실패하거나 예외를 throw하면(catch했지만 다시 throw되지 않음) 문제의 요소를 추출하지 않고 중단합니다. 함수가 요소를 추출 하는 경우 호출 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). 어떤 경우든 함수는 **\*this**를 반환합니다.
+_ *Strbuf* 가 null 포인터가 아닌 경우 요소를 추출 하 고 *Strbuf*에 삽입 합니다. 추출은 파일의 끝에서 중지됩니다. 또한 삽입이 실패하거나 예외를 throw하면(catch했지만 다시 throw되지 않음) 문제의 요소를 추출하지 않고 중단합니다. 함수가 요소를 추출 하지 않으면 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`)를 호출 합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
 다음 함수는
 
@@ -521,9 +521,9 @@ basic_istream& operator>>(unsigned long long& val);
 basic_istream& operator>>(void *& val);
 ```
 
-각각 필드를 추출하고 다음을 호출하여 숫자 값으로 변환합니다. `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). [get](#get)( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). 이때 **InIt** 로 정의 됩니다 `istreambuf_iterator` \< **Elem**를 **Tr**>, 및 `val` 형식이 **긴**, **부호 없는 long**, 또는 **void** <strong>\*</strong> 필요에 따라 합니다.
+각각 필드를 추출하고 다음을 호출하여 숫자 값으로 변환합니다. `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). [get](#get)( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). 여기서 **InIt** 는 `istreambuf_iterator` **Elem**, **Tr**>로 `val` \< 정의 되며 필요에 따라 **long**, **unsigned long**또는 **void** <strong>\*</strong> 형식입니다.
 
-변환 된 값의 형식으로 나타낼 수 없는 경우 `val`, 함수 호출 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). 어떤 경우든 함수는 **\*this**를 반환합니다.
+변환 된 값을의 `val`형식으로 나타낼 수 없는 경우 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`)를 호출 합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
 다음 함수는
 
@@ -533,7 +533,7 @@ basic_istream& operator>>(double& val);
 basic_istream& operator>>(long double& val);
 ```
 
-각각 필드를 추출하고 다음을 호출하여 숫자 값으로 변환합니다. `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). **get**( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). 이때 `InIt` 으로 정의 됩니다 `istreambuf_iterator` \< **Elem**를 **Tr**>, 및 `val` 형식이 **double** 또는 **long double** 필요에 따라 합니다.
+각각 필드를 추출하고 다음을 호출하여 숫자 값으로 변환합니다. `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). **get**( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). \< `istreambuf_iterator`  `val`    여기서는 Elem, Tr >로 정의 되며 필요에 따라 double 또는 long double 형식을 갖습니다. `InIt`
 
 변환된 값을 `val`의 형식으로 나타낼 수 없는 경우 함수는 `setstate`( **failbit**)를 호출합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
@@ -584,7 +584,7 @@ basic_istream& operator=(basic_istream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 `basic_ifstream` 개체에 대한 `rvalue` 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -609,7 +609,7 @@ int_type peek();
 
 ### <a name="remarks"></a>설명
 
-형식이 지정되지 않은 입력 함수는 가능한 경우 `rdbuf` -> [sgetc](../standard-library/basic-streambuf-class.md#sgetc)를 반환하여 요소를 추출합니다. 아닌 경우 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)를 반환합니다.
+형식이 지정되지 않은 입력 함수는 가능한 경우 `rdbuf` -> [sgetc](../standard-library/basic-streambuf-class.md#sgetc)를 반환하여 요소를 추출합니다. 아닌 경우 **traits_type::** [eof](../standard-library/char-traits-struct.md#eof)를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -651,7 +651,7 @@ basic_istream<Elem, Tr>& putback(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 스트림에 다시 배치할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -660,7 +660,7 @@ basic_istream<Elem, Tr>& putback(
 
 ### <a name="remarks"></a>설명
 
-합니다 [형식이 지정 되지 않은 입력된 함수](../standard-library/basic-istream-class.md) 돌려 놓습니다 *Ch*호출 하는 것 처럼 가능한 경우 [rdbuf](../standard-library/basic-ios-class.md#rdbuf)`->`[sputbackc](../standard-library/basic-streambuf-class.md#sputbackc)합니다. Rdbuf가 null 포인터인 경우 또는 경우에 대 한 호출 `sputbackc` 반환 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), 함수 호출 [setstate](../standard-library/basic-ios-class.md#setstate)(`badbit`). 어떤 경우든 함수는 **\*this**를 반환합니다.
+형식이 지정 되지 않은 [입력 함수](../standard-library/basic-istream-class.md) 는 [rdbuf](../standard-library/basic-ios-class.md#rdbuf)`->`[sputbackc](../standard-library/basic-streambuf-class.md#sputbackc)를 호출 하는 것 처럼 가능한 경우 *Ch*를 다시 배치 합니다. Rdbuf `sputbackc` 가 null 포인터 이거나에 대 한 호출이 **traits_type::** [eof](../standard-library/char-traits-struct.md#eof)를 반환 하면 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)(`badbit`)를 호출 합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -700,10 +700,10 @@ basic_istream<Elem, Tr>& read(
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*문자열*\
 문자를 읽을 배열입니다.
 
-*count*<br/>
+*수*\
 읽을 문자 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -712,7 +712,7 @@ basic_istream<Elem, Tr>& read(
 
 ### <a name="remarks"></a>설명
 
-형식이 지정 되지 않은 입력된 함수 추출 *개수* 요소 _ 시작 되는 배열에에서 저장 합니다 `Str`합니다. 추출이 파일의 끝에 있는 경우 함수 호출에서 조기에 중지 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). 어떤 경우든 `*this`를 반환합니다.
+형식이 지정 되지 않은 입력 함수는 요소 *수를 계산* 하 여 _ `Str`에서 시작 하는 배열에 저장 합니다. 추출은 파일의 끝에서 일찍 중지 되며,이 경우 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`)를 호출 합니다. 어떤 경우든 `*this`를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -761,10 +761,10 @@ streamsize readsome(
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*문자열*\
 `readsome`이 읽은 문자를 저장하는 배열입니다.
 
-*count*<br/>
+*수*\
 읽을 문자 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -773,7 +773,7 @@ streamsize readsome(
 
 ### <a name="remarks"></a>설명
 
-이 형식이 지정 되지 않은 입력된 함수 추출 *개수* 요소 입력의 스트림 및 배열에 저장 합니다 *str*합니다.
+이 형식이 지정 되지 않은 입력 함수는 입력 스트림에서 요소 *수를 계산* 하 여 배열 *str*에 저장 합니다.
 
 이 함수는 입력을 기다리지 않고, 읽을 수 있는 데이터는 무엇이든 읽습니다.
 
@@ -818,13 +818,13 @@ basic_istream<Elem, Tr>& seekg(off_type off, ios_base::seekdir way);
 
 ### <a name="parameters"></a>매개 변수
 
-*pos*<br/>
+*pos*\
 읽기 포인터를 이동할 절대 위치입니다.
 
-*off*<br/>
-기준으로 읽기 포인터를 이동할 오프셋 *방식으로*입니다.
+*해제*\
+읽기 포인터를 기준으로 이동 하는 오프셋 *입니다.*
 
-*way*<br/>
+*방식은*\
 [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) 열거형 중 하나입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -838,7 +838,7 @@ basic_istream<Elem, Tr>& seekg(off_type off, ios_base::seekdir way);
 > [!NOTE]
 > 표준 C++는 텍스트 파일에서 상대 검색을 지원하지 않으므로 두 번째 멤버 함수를 텍스트 파일과 함께 사용하지 마세요.
 
-하는 경우 [실패할](../standard-library/basic-ios-class.md#fail) 이 false 인 경우 첫 번째 멤버 함수 호출 **newpos** = [rdbuf](../standard-library/basic-ios-class.md#rdbuf) -> [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos)( `pos`), 일부 `pos_type` 임시 개체 `newpos`합니다. 하는 경우 `fail` 이 false 인 경우 두 번째 함수 호출 **newpos** = **rdbuf** -> [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff)( `off`합니다 `way`). 두 경우 모두의 경우 ( `off_type`) **newpos** = = ( `off_type`)(-1) (배치 작업 실패)를 함수 호출 `istr`합니다. [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). 두 함수 모두 **\*this**를 반환합니다.
+[Fail](../standard-library/basic-ios-class.md#fail) 이 false 이면 첫 번째 멤버 함수는 일부 =  ->  `pos`[](../standard-library/basic-streambuf-class.md#pubseekpos) `pos_type` 임시 개체`newpos`에 대해 **newpos**[rdbuf](../standard-library/basic-ios-class.md#rdbuf)pubseekpos ()를 호출 합니다. 가 `fail` false 인 경우 두 번째 함수는 **newpos** = **rdbuf** -> [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff)( `off`, `way`)를 호출 합니다. 어떤 경우 든 `off_type`() **newpos** = = ( `off_type`) (-1) (위치 지정 작업 실패) 이면 함수는를 호출 `istr`합니다. [setstate](../standard-library/basic-ios-class.md#setstate) (`failbit`). 두 함수 모두 **\*this**를 반환합니다.
 
 [fail](../standard-library/basic-ios-class.md#fail)이 true인 경우 멤버 함수는 아무 작업도 수행하지 않습니다.
 
@@ -875,9 +875,9 @@ class sentry { public: explicit sentry( basic_istream\<Elem, Tr>& _Istr, bool _N
 
 - `_Istr`. [tie](../standard-library/basic-ios-class.md#tie) -> [flush](../standard-library/basic-ostream-class.md#flush)를 호출합니다(`_Istr`. `tie`가 null 포인터가 아닌 경우).
 
-- `_Istr`인 경우 실제로 [ws](../standard-library/istream-functions.md#ws)( `_Istr`)을 호출합니다. ([flags](../standard-library/ios-base-class.md#flags)**&**[skipws](../standard-library/ios-functions.md#skipws)가 0이 아닌 경우).
+- `_Istr`인 경우 실제로 [ws](../standard-library/istream-functions.md#ws)( `_Istr`)을 호출합니다. ([flags](../standard-library/ios-base-class.md#flags) **&** [skipws](../standard-library/ios-functions.md#skipws)가 0이 아닌 경우).
 
-이러한 준비 작업 후 `_Istr`. `good` 이 false 인 경우 생성자를 호출 하 여 `_Istr`입니다. [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). 어떤 경우든 생성자는 `_Istr`. `good` `status`합니다. 이후의 호출 `operator bool` 이 저장 된 값을 제공 합니다.
+이러한 준비 작업 후 `_Istr`. `good`가 false 이면 생성자가를 `_Istr`호출 합니다. [setstate](../standard-library/basic-ios-class.md#setstate) (`failbit`). 어떤 경우든 생성자는 `_Istr`. `good`에서 `status`. 를 `operator bool` 나중에 호출 하면이 저장 된 값이 전달 됩니다.
 
 ## <a name="swap"></a>  basic_istream::swap
 
@@ -889,12 +889,12 @@ void swap(basic_istream& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 `basic_istream` 개체에 대한 lvalue 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 [basic_ios:: swap](../standard-library/basic-ios-class.md#swap)`(right)`를 호출합니다. 또한 추출 개수에 대 한 추출 개수로 교환 *오른쪽*합니다.
+멤버 함수는 [basic_ios:: swap](../standard-library/basic-ios-class.md#swap)`(right)`를 호출합니다. 또한 추출 개수를 *오른쪽*의 추출 개수로 교환 합니다.
 
 ## <a name="sync"></a>  basic_istream::sync
 
@@ -906,7 +906,7 @@ int sync();
 
 ### <a name="return-value"></a>반환 값
 
-[rdbuf](../standard-library/basic-ios-class.md#rdbuf)가 null 포인터인 경우 함수는 -1을 반환하고, 아닌 경우 `rdbuf` -> [pubsync](../standard-library/basic-streambuf-class.md#pubsync)를 호출합니다. 이 함수를 호출 하는-1을 반환 하는 경우 [setstate](../standard-library/basic-ios-class.md#setstate)(`badbit`)-1을 반환 합니다. 아닌 경우 함수는 0을 반환합니다.
+[rdbuf](../standard-library/basic-ios-class.md#rdbuf)가 null 포인터인 경우 함수는 -1을 반환하고, 아닌 경우 `rdbuf` -> [pubsync](../standard-library/basic-streambuf-class.md#pubsync)를 호출합니다. -1을 반환 하는 경우 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)(`badbit`)를 호출 하 고-1을 반환 합니다. 아닌 경우 함수는 0을 반환합니다.
 
 ## <a name="tellg"></a>  basic_istream::tellg
 
@@ -964,7 +964,7 @@ basic_istream<Elem, Tr>& unget();
 
 ### <a name="remarks"></a>설명
 
-가능한 경우 [형식이 지정되지 않은 입력 함수](../standard-library/basic-istream-class.md)는 `rdbuf` -> [sungetc](../standard-library/basic-streambuf-class.md#sungetc)를 호출하는 것처럼 이전 요소를 스트림에 다시 배치합니다. 하는 경우 [rdbuf](../standard-library/basic-ios-class.md#rdbuf) 가 null 포인터 이거나 호출 `sungetc` 반환 **traits_type::**[eof](../standard-library/basic-ios-class.md#eof), 함수 호출 [setstate](../standard-library/basic-ios-class.md#setstate)( `badbit`). 어떤 경우든 함수는 **\*this**를 반환합니다.
+가능한 경우 [형식이 지정되지 않은 입력 함수](../standard-library/basic-istream-class.md)는 `rdbuf` -> [sungetc](../standard-library/basic-streambuf-class.md#sungetc)를 호출하는 것처럼 이전 요소를 스트림에 다시 배치합니다. [Rdbuf](../standard-library/basic-ios-class.md#rdbuf) 가 null 포인터 이거나에 대 `sungetc` 한 호출이 **traits_type::** [eof](../standard-library/basic-ios-class.md#eof)를 반환 하면 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)(`badbit`)를 호출 합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
 `unget`이 실패할 수 있는 방법에 대한 자세한 내용은 [basic_streambuf::sungetc](../standard-library/basic-streambuf-class.md#sungetc)를 참조하세요.
 
@@ -999,6 +999,6 @@ abc
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_entry::operator&lt;=
 - std::experimental::filesystem::directory_entry::operator&gt;
 - std::experimental::filesystem::directory_entry::operator&gt;=
-ms.openlocfilehash: c1b68aefd44d8f0ac60c36307dee93333d801bb9
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 35b0dc55bf5db2f799d9ade28cd5968ceab3332b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342980"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458954"
 ---
 # <a name="directoryentry-class"></a>directory_entry 클래스
 
@@ -61,17 +61,17 @@ class directory_entry;
 
 |생성자|설명|
 |-|-|
-|[directory_entry](#directory_entry)|기본 생성자는 예상대로 작동합니다. 네 번째 생성자는 초기화 `mypath` 하 *pval*, `mystat` 에 *stat_arg로*, 및 `mysymstat` 에 *symstat_arg로*합니다.|
+|[directory_entry](#directory_entry)|기본 생성자는 예상대로 작동합니다. 네 번째 생성자는 `mypath` *pval* `mystat` , *stat_arg*및 `mysymstat` *symstat_arg*로 초기화 됩니다.|
 
 ### <a name="member-functions"></a>멤버 함수
 
 |멤버 함수|설명|
 |-|-|
-|[assign](#assign)|멤버 함수는 할당 *pval* 하 `mypath`, *stat* 에 `mystat`, 및 *symstat* 를 `mysymstat`합니다.|
+|[assign](#assign)|멤버 함수는에 *pval* `mypath`  `mystat`를 할당 *하 고* `mysymstat`를에 할당 합니다.|
 |[path](#path)|멤버 함수는 `mypath`를 반환합니다.|
-|[replace_filename](#replace_filename)|멤버 함수 `mypath` 사용 하 여 `mypath.parent_path()`  /  *pval*를 `mystat` 사용 하 여 *stat_arg로*, 및 `mysymstat` 사용 하 여 *symstat_arg로*|
-|[status](#status)|두 멤버 함수는 반환 `mystat` 먼저 변경 합니다.|
-|[symlink_status](#symlink_status)|두 멤버 함수는 반환 `mysymstat` 먼저 변경 합니다.|
+|[replace_filename](#replace_filename)|멤버 함수는 `mypath` *pval*, `mypath.parent_path()` *stat_arg 및*  /  *symstat_arg로* 대체 합니다. `mysymstat` `mystat`|
+|[상태](#status)|두 멤버 함수 `mystat` 는 처음 변경 될 수 있습니다.|
+|[symlink_status](#symlink_status)|두 멤버 함수 `mysymstat` 는 처음 변경 될 수 있습니다.|
 
 ### <a name="operators"></a>연산자
 
@@ -84,17 +84,17 @@ class directory_entry;
 |[operator<=](#op_lteq)|`!(right < *this)`를 반환합니다.|
 |[operator>](#op_gt)|`right < *this`를 반환합니다.|
 |[operator>=](#op_gteq)|`!(*this < right)`를 반환합니다.|
-|[const path_type 연산자 &](#path_type)|`mypath`를 반환합니다.|
+|[연산자 const path_type &](#path_type)|`mypath`를 반환합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<실험적/파일 시스템&gt;
+**헤더:** \<실험적/filesystem&gt;
 
 **네임스페이스:** std::experimental::filesystem
 
-## <a name="assign"></a> assign
+## <a name="assign"></a>할당
 
-멤버 함수는 할당 *pval* 에 `mypath`, *stat_arg로* 에 `mystat`, 및 *symstat_arg* 에 `mysymstat`입니다.
+멤버 함수는 *pval* 에 `mypath`, *stat_arg* `mystat`및 *symstat_arg* `mysymstat`을 할당 합니다.
 
 ```cpp
 void assign(const std::experimental::filesystem::path& pval,
@@ -104,18 +104,18 @@ void assign(const std::experimental::filesystem::path& pval,
 
 ### <a name="parameters"></a>매개 변수
 
-*pval*<br/>
+*pval*\
 저장 된 파일 이름 경로입니다.
 
-*stat_arg*<br/>
-상태 저장된 된 파일 이름입니다.
+*stat_arg*\
+저장 된 파일 이름의 상태입니다.
 
-*symstat_arg*<br/>
+*symstat_arg*\
 저장 된 파일 이름의 기호화 된 링크 상태입니다.
 
-## <a name="directory_entry"></a> directory_entry
+## <a name="directory_entry"></a>directory_entry
 
-기본 생성자는 예상대로 작동합니다. 네 번째 생성자는 초기화 `mypath` 하 *pval*, `mystat` 에 *stat_arg로*, 및 `mysymstat` 에 *symstat_arg로*합니다.
+기본 생성자는 예상대로 작동합니다. 네 번째 생성자는 `mypath` *pval* `mystat` , *stat_arg*및 `mysymstat` *symstat_arg*로 초기화 됩니다.
 
 ```cpp
 directory_entry() = default;
@@ -128,13 +128,13 @@ explicit directory_entry(const std::experimental::filesystem::path& pval,
 
 ### <a name="parameters"></a>매개 변수
 
-*pval*<br/>
+*pval*\
 저장 된 파일 이름 경로입니다.
 
-*stat_arg*<br/>
-상태 저장된 된 파일 이름입니다.
+*stat_arg*\
+저장 된 파일 이름의 상태입니다.
 
-*symstat_arg*<br/>
+*symstat_arg*\
 저장 된 파일 이름의 기호화 된 링크 상태입니다.
 
 ## <a name="op_neq"></a> operator!=
@@ -147,10 +147,10 @@ bool operator!=(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
+*오른쪽*\
+와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
 
-## <a name="op_as"></a> operator=
+## <a name="op_as"></a>연산자 =
 
 기본 멤버 대입 연산자가 예상대로 작동합니다.
 
@@ -161,10 +161,10 @@ directory_entry& operator=(directory_entry&&) noexcept = default;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 에 복사 되는 `directory_entry`합니다.
+*오른쪽*\
+에 [](../standard-library/directory-entry-class.md) 복사 `directory_entry`되는 directory_entry입니다.
 
-## <a name="op_eq"></a> operator==
+## <a name="op_eq"></a>연산자 = =
 
 멤버 함수는 `mypath == right.mypath`를 반환합니다.
 
@@ -174,8 +174,8 @@ bool operator==(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
+*오른쪽*\
+와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
 
 ## <a name="op_lt"></a> 연산자&lt;
 
@@ -187,10 +187,10 @@ bool operator<(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
+*오른쪽*\
+와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
 
-## <a name="op_lteq"></a> 연산자&lt;=
+## <a name="op_lteq"></a>연산자&lt;=
 
 멤버 함수는 `!(right < *this)`를 반환합니다.
 
@@ -200,8 +200,8 @@ bool operator&lt;=(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
+*오른쪽*\
+와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
 
 ## <a name="op_gt"></a> 연산자&gt;
 
@@ -213,10 +213,10 @@ bool operator&gt;(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
+*오른쪽*\
+와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
 
-## <a name="op_gteq"></a> 연산자&gt;=
+## <a name="op_gteq"></a>연산자&gt;=
 
 멤버 함수는 `!(*this < right)`를 반환합니다.
 
@@ -226,10 +226,10 @@ bool operator&gt;=(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
-합니다 [directory_entry](../standard-library/directory-entry-class.md) 비교할는 `directory_entry`합니다.
+*오른쪽*\
+와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
 
-## <a name="path_type"></a> const path_type 연산자 &
+## <a name="path_type"></a>연산자 const path_type &
 
 멤버 연산자는 `mypath`을 반환합니다.
 
@@ -237,7 +237,7 @@ bool operator&gt;=(const directory_entry& right) const noexcept;
 operator const std::experimental::filesystem::path&() const;
 ```
 
-## <a name="path"></a> 경로
+## <a name="path"></a>path
 
 멤버 함수는 `mypath`를 반환합니다.
 
@@ -245,9 +245,9 @@ operator const std::experimental::filesystem::path&() const;
 const std::experimental::filesystem::path& path() const noexcept;
 ```
 
-## <a name="replace_filename"></a> replace_filename
+## <a name="replace_filename"></a>replace_filename
 
-멤버 함수 `mypath` 사용 하 여 `mypath.parent_path()`  /  *pval*를 `mystat` 사용 하 여 *stat_arg로*, 및 `mysymstat` 사용 하 여 *symstat_arg로*
+멤버 함수는 `mypath` *pval*, `mypath.parent_path()` *stat_arg 및*  /  *symstat_arg로* 대체 합니다. `mysymstat` `mystat`
 
 ```cpp
 void replace_filename(
@@ -258,22 +258,22 @@ void replace_filename(
 
 ### <a name="parameters"></a>매개 변수
 
-*pval*<br/>
+*pval*\
 저장 된 파일 이름 경로입니다.
 
-*stat_arg*<br/>
-상태 저장된 된 파일 이름입니다.
+*stat_arg*\
+저장 된 파일 이름의 상태입니다.
 
-*symstat_arg*<br/>
+*symstat_arg*\
 저장 된 파일 이름의 기호화 된 링크 상태입니다.
 
-## <a name="status"></a> 상태
+## <a name="status"></a>업무
 
-두 멤버 함수는 반환 `mystat` 변경 될 수 있는 먼저 다음과 같이 합니다.
+두 멤버 함수 `mystat` 는 모두 다음과 같이 처음 변경 될 수 있습니다.
 
-1. 경우 `status_known(mystat)` 이면 아무 작업도 수행 합니다.
+1. 그렇지 `status_known(mystat)` 않으면 아무 작업도 수행 하지 않습니다.
 
-1. 그렇지 않고 `!status_known(mysymstat) && !is_symlink(mysymstat)` 한 다음 `mystat = mysymstat`합니다.
+1. 그렇지 않으면이 `!status_known(mysymstat) && !is_symlink(mysymstat)` 고 `mystat = mysymstat`, 그렇지 않으면입니다.
 
 ```cpp
 file_status status() const;
@@ -282,12 +282,12 @@ file_status status(error_code& ec) const noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*ec*<br/>
+*ec*\
 상태 오류 코드입니다.
 
 ## <a name="symlink_status"></a> symlink_status
 
-두 멤버 함수는 반환 `mysymstat` 변경 될 수 있는 먼저 다음과 같이 합니다. 경우 `status_known(mysymstat)` 이면 아무 작업도 수행 합니다. 그렇지 않으면 `mysymstat = symlink_status(mypval)`입니다.
+두 멤버 함수 `mysymstat` 는 모두 다음과 같이 처음 변경 될 수 있습니다. 그렇지 `status_known(mysymstat)` 않으면 아무 작업도 수행 하지 않습니다. 그렇지 않으면 `mysymstat = symlink_status(mypval)`입니다.
 
 ```cpp
 file_status symlink_status() const;
@@ -296,10 +296,10 @@ file_status symlink_status(error_code& ec) const noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*ec*<br/>
+*ec*\
 상태 오류 코드입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<filesystem&gt;](../standard-library/filesystem.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<filesystem&gt;](../standard-library/filesystem.md)
