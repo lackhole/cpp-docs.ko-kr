@@ -12,12 +12,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::file_status::operator=
 - std::experimental::filesystem::file_status::type
 - std::experimental::filesystem::file_status::permissions
-ms.openlocfilehash: 81ce4ecc1673087db8e985f94e297798dd712a6e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 60ced1f60c811f585928f47c6cfd5e695d0c4085
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160019"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457746"
 ---
 # <a name="filestatus-class"></a>file_status 클래스
 
@@ -33,7 +33,7 @@ class file_status;
 
 |생성자|설명|
 |-|-|
-|[file_status](#file_status)|에 대 한 래퍼를 생성 [file_type](../standard-library/filesystem-enumerations.md#file_type) 파일과 [perms](../standard-library/filesystem-enumerations.md#perms)합니다.|
+|[file_status](#file_status)|[File_type](../standard-library/filesystem-enumerations.md#file_type) 및 file [perms](../standard-library/filesystem-enumerations.md#perms)에 대 한 래퍼를 생성 합니다.|
 
 ### <a name="member-functions"></a>멤버 함수
 
@@ -52,11 +52,11 @@ class file_status;
 
 **헤더:** \<파일 시스템 >
 
-**Namespace:** std::experimental::filesystem, std::experimental::filesystem
+**네임 스페이스:** std:: 실험적:: filesystem, std:: 실험적:: filesystem
 
 ## <a name="file_status"></a> file_status::file_status
 
-에 대 한 래퍼를 생성 [file_type](../standard-library/filesystem-enumerations.md#file_type) 파일과 [perms](../standard-library/filesystem-enumerations.md#perms)합니다.
+[File_type](../standard-library/filesystem-enumerations.md#file_type) 및 file [perms](../standard-library/filesystem-enumerations.md#perms)에 대 한 래퍼를 생성 합니다.
 
 ```cpp
 explicit file_status(
@@ -72,13 +72,13 @@ file_status(file_status&&) noexcept = default;
 
 ### <a name="parameters"></a>매개 변수
 
-*ftype*<br/>
-지정 된 `file_type`, 기본값은 `file_type::none`합니다.
+*ftype*\
+지정 `file_type`된 경우 `file_type::none`기본값은입니다.
 
-*mask*<br/>
-지정 된 파일 `perms`, 기본값은 `perms::unknown`합니다.
+*마스크할*\
+지정 된 `perms`파일의 `perms::unknown`기본값은입니다.
 
-*file_status*<br/>
+*file_status*\
 저장 된 개체입니다.
 
 ## <a name="op_as"></a> file_status::operator=
@@ -92,10 +92,10 @@ file_status& operator=(file_status&&) nexcept = default;
 
 ### <a name="parameters"></a>매개 변수
 
-*file_status*<br/>
-합니다 [file_status](../standard-library/file-status-class.md) 에 복사 되는 `file_status`합니다.
+*file_status*\
+에 [](../standard-library/file-status-class.md) 복사 `file_status`되는 file_status입니다.
 
-## <a name="type"></a> 형식
+## <a name="type"></a>입력할
 
 `file_type`를 가져오거나 설정합니다.
 
@@ -106,14 +106,14 @@ void type(file_type ftype) noexcept
 
 ### <a name="parameters"></a>매개 변수
 
-*ftype*<br/>
+*ftype*\
 `file_type`로 지정됩니다.
 
-## <a name="permissions"></a> 사용 권한
+## <a name="permissions"></a>권한에
 
 파일 사용 권한을 가져오거나 설정합니다.
 
-Setter를 사용 하 여 파일을 만들어 `readonly` 제거 또는 `readonly` 특성입니다.
+Setter를 사용 하 여 파일 `readonly` 을 만들거나 `readonly` 특성을 제거 합니다.
 
 ```cpp
 perms permissions() const noexcept
@@ -122,11 +122,11 @@ void permissions(perms mask) noexcept
 
 ### <a name="parameters"></a>매개 변수
 
-*mask*<br/>
+*마스크할*\
 `perms`로 지정됩니다.
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[path 클래스](../standard-library/path-class.md)<br/>
-[\<filesystem>](../standard-library/filesystem.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[path 클래스](../standard-library/path-class.md)\
+[\<filesystem>](../standard-library/filesystem.md)
