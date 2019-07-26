@@ -10,12 +10,12 @@ helpviewer_keywords:
 - stdext::cache_suballoc [C++], allocate
 - stdext::cache_suballoc [C++], deallocate
 ms.assetid: 9ea9c5e9-1dcc-45d0-b3a7-a56a93d88898
-ms.openlocfilehash: 06d0ef390e6ae1980b9ab20b8ceb67213837148b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa0ceda69fc169593719c3a4f81d308bb6cde284
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380119"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449651"
 ---
 # <a name="cachesuballoc-class"></a>cache_suballoc 클래스
 
@@ -36,9 +36,9 @@ class cache_suballoc
 
 ## <a name="remarks"></a>설명
 
-Cache_suballoc 템플릿 클래스는 제한 없는 길이의 사용 가능한 목록에서 할당 취소 된 메모리 블록을 저장를 사용 하 여 `freelist<sizeof(Type), max_unbounded>`, 및에서 사용 하 여 할당 큰 청크의 메모리 블록을 suballocates **new 연산자** 사용 가능한 목록의 경우 비어 있습니다.
+Cache_suballoc 템플릿 클래스는 사용 가능한 목록에 할당 취소 된 메모리 블록을 저장 하 고 `freelist<sizeof(Type), max_unbounded>`,를 사용 하 고, 사용 가능한 목록이 비어 있을 때 **operator new** 로 할당 된 더 큰 청크의 메모리 블록을 할당 합니다.
 
-각 청크를 보유 `Sz * Nelts` 바이트의 사용 가능한 메모리 및 데이터는 **new 연산자** 하 고 **delete 연산자** 필요 합니다. 할당된 청크는 해제되지 않습니다.
+각 청크는 `Sz * Nelts` 바이트의 사용 가능한 메모리와 **operator new** 및 **operator delete** 가 필요한 데이터를 보유 합니다. 할당된 청크는 해제되지 않습니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -108,4 +108,4 @@ void deallocate(void* ptr, std::size_t count);
 
 ## <a name="see-also"></a>참고자료
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::reverse_iterator [C++], base
 - std::reverse_iterator [C++], operator_star
 ms.assetid: c0b34d04-ae9a-4999-9aff-28b313897ffa
-ms.openlocfilehash: ae4a3da8f15f838900cb5a4324fbaeda01d918a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7164e72dfc7bef0213a38e2605dee8195747f17
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368794"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451168"
 ---
 # <a name="reverseiterator-class"></a>reverse_iterator 클래스
 
@@ -38,29 +38,29 @@ class reverse_iterator
 
 ### <a name="parameters"></a>매개 변수
 
-RandomIterator 역방향으로 작동할로 조정할 반복기를 나타내는 형식입니다.
+RandomIterator 역방향으로 작동 하도록 조정 될 반복기를 나타내는 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-기존 C++ 표준 라이브러리에는 `reverse_iterator` 및 `const_reverse_iterator` 형식이 정의되어 있으며 역방향 반복기를 반환하는 구성원 함수 `rbegin` 및 `rend`가 있습니다. 이러한 반복기는 덮어쓰기 의미 체계가 있습니다. `reverse_iterator` 의미 체계를 삽입 하 고 스트림을 사용 하 여 사용할 수도 있습니다 제공으로 어댑터는이 기능을 보완 합니다.
+기존 C++ 표준 라이브러리에는 `reverse_iterator` 및 `const_reverse_iterator` 형식이 정의되어 있으며 역방향 반복기를 반환하는 구성원 함수 `rbegin` 및 `rend`가 있습니다. 이러한 반복기는 덮어쓰기 의미 체계가 있습니다. 어댑터 `reverse_iterator` 는 삽입 의미 체계를 제공 하므로이 기능을 보완 하며 스트림과 함께 사용할 수도 있습니다.
 
-합니다 `reverse_iterator` 양방향 반복기를 호출 해서는 안 멤버의 모든 기능을 필요로 하 `operator+=`, `operator+`, `operator-=`를 `operator-`, 또는 `operator[]`, 임의 액세스 반복기를 사용 하 여만 사용할 수 있습니다는.
+양방향 `reverse_iterator` 반복기가 필요한은 임의 액세스 반복기에만 사용할 수 있는 멤버 `operator+=` `operator+`함수 `operator-=` `operator-`,,, 또는 `operator[]`를 호출 해서는 안 됩니다.
 
-반복기의 범위가 [*첫 번째*를 *마지막*)을 왼쪽 대괄호 포함 함을 *첫 번째* 오른쪽의 괄호를 나타내고 합니다 백업에 요소를 포함 *마지막* 자체입니다. 동일한 요소가 역방향된 시퀀스에 포함 된 [ **rev** - *첫 번째*하십시오 **rev** - *마지막*) 하므로 있는지 *마지막* 는 1--끝을 지난 요소를 순서 대로 다음 첫 번째 요소 **rev** - *첫 번째* 역방향된 시퀀스 요소에서 \*(*마지막* -1). 모든 역방향 반복기를 기본 역방향과 연결하는 ID는 다음과 같습니다.
+반복기의 범위는 [*first*, *last*)입니다. 여기서 왼쪽 대괄호는 *첫 번째* 를 포함 하는 것을 나타내고 오른쪽의 괄호는 *마지막* 자체를 제외 하 고는 요소를 포함 하는 것을 나타냅니다. *마지막* 이 시퀀스의 하나 이전 끝 요소인 경우에는 동일한 요소가 역방향 시퀀스  [ **rev** - *first*, **rev** - *last*)에 포함 되도록 합니다. 역방향 시퀀스의 *첫 번째* 는 ( \*last-1)를 가리킵니다.  -  모든 역방향 반복기를 기본 역방향과 연결하는 ID는 다음과 같습니다.
 
-&\*( **reverse_iterator** ( *i* ) ) == &\*( *i* - 1 ).
+&\*( **reverse_iterator** ( *i* )) = = &\*( *i* -1).
 
 실제로, 역방향 시퀀스에서 reverse_iterator는 반복기가 원래 시퀀스에서 참조한 요소에서 하나 다음의(오른쪽으로) 요소를 참조함을 의미합니다. 따라서 반복기가 시퀀스(2, 4, 6, 8)에서 요소 6을 주소 지정한 경우 `reverse_iterator`는 역방향 시퀀스(8, 6, 4, 2)에서 요소 4를 주소 지정합니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[reverse_iterator](#reverse_iterator)|기본 반복기에서 기본 `reverse_iterator` 또는 `reverse_iterator`를 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|형식 이름|Description|
 |-|-|
 |[difference_type](#difference_type)|동일한 컨테이너 안에서 요소를 참조하는 두 `reverse_iterator` 사이의 차이를 제공하는 형식입니다.|
 |[iterator_type](#iterator_type)|`reverse_iterator`의 기본 반복기를 제공하는 형식입니다.|
@@ -69,7 +69,7 @@ RandomIterator 역방향으로 작동할로 조정할 반복기를 나타내는 
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[base](#base)|`reverse_iterator`에서 기본 반복기를 복구합니다.|
 
@@ -174,7 +174,7 @@ typedef typename iterator_traits<RandomIterator>::difference_type  difference_ty
 
 `reverse_iterator` 차이 형식은 반복기 차이 형식과 같습니다.
 
-형식은 반복기 특성 형식 이름 `iterator_traits`\< **RandomIterator**> **::pointer**와 동일한 의미입니다.
+형식은 반복기 특성 형식 이름 `iterator_traits`\< **RandomIterator**>  **::pointer**와 동일한 의미입니다.
 
 ### <a name="example"></a>예제
 
@@ -210,7 +210,7 @@ reverse_iterator에 의해 주소가 지정되는 요소값입니다.
 
 ### <a name="remarks"></a>설명
 
-연산자를 반환 합니다 \*( **현재** -1).
+연산자는 ( \* **current** -1)을 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -265,7 +265,7 @@ reverse_iterator<RandomIterator> operator+(difference_type Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Off*<br/>
+*해제*\
 역방향 반복기에 추가할 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -414,7 +414,7 @@ reverse_iterator<RandomIterator>& operator+=(difference_type Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*Off*<br/>
+*해제*\
 반복기를 증가시킬 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -487,7 +487,7 @@ reverse_iterator<RandomIterator> operator-(difference_type Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Off*<br/>
+*해제*\
 reverse_iterator에서 뺄 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -637,7 +637,7 @@ reverse_iterator<RandomIterator>& operator-=(difference_type Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*Off*<br/>
+*해제*\
 `reverse_iterator`에서 뺄 오프셋입니다.
 
 ### <a name="remarks"></a>설명
@@ -791,7 +791,7 @@ reference operator[](difference_type Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Off*<br/>
+*해제*\
 `reverse_iterator` 주소의 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -869,7 +869,7 @@ typedef typename iterator_traits<RandomIterator>::pointer pointer;
 
 ### <a name="remarks"></a>설명
 
-형식은 반복기 특성 형식 이름 `iterator_traits`\< *RandomIterator*> **::pointer**와 동일한 의미입니다.
+형식은 반복기 특성 형식 이름 `iterator_traits`\< *RandomIterator*>  **::pointer**와 동일한 의미입니다.
 
 ### <a name="example"></a>예제
 
@@ -941,11 +941,11 @@ typedef typename iterator_traits<RandomIterator>::reference reference;
 
 ### <a name="remarks"></a>설명
 
-형식은 반복기 특성 형식 이름 `iterator_traits`\< *RandomIterator*> **::reference**와 동일한 의미입니다.
+형식은 반복기 특성 형식 이름 `iterator_traits`\< *RandomIterator*>  **::reference**와 동일한 의미입니다.
 
 ### <a name="example"></a>예제
 
-참조 [reverse_iterator:: operator&#91; &#93; ](#op_at) 하거나 [reverse_iterator:: operator *](#op_star) 선언 하 고 사용 하는 방법에 대 한 예제 `reference`.
+을 선언 하 고 사용 `reference`하는 방법에 대 한 예제는 [reverse_iterator:: operator&#91; ](#op_at) 또는 [reverse_iterator:: operator *](#op_star) 를 참조 하세요.
 
 ## <a name="reverse_iterator"></a>  reverse_iterator::reverse_iterator
 
@@ -961,7 +961,7 @@ reverse_iterator(const reverse_iterator<Type>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 `reverse_iterator`로 조정할 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1021,6 +1021,6 @@ int main( )
 
 ## <a name="see-also"></a>참고자료
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

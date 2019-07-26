@@ -21,12 +21,12 @@ f1_keywords:
 - regex/std::wsregex_token_iterator
 - regex/std::wssub_match
 ms.assetid: e6a69067-106c-4a24-9e08-7c867a3a2260
-ms.openlocfilehash: 33217388ff7e0826efcee413b39adaeba569399a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 82067819d144cbbdd2790e92aa6de5a1e7c0386a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369139"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451459"
 ---
 # <a name="ltregexgt-typedefs"></a>&lt;regex&gt; 형식 정의
 
@@ -97,7 +97,7 @@ typedef basic_regex<char> regex;
 
 ### <a name="remarks"></a>설명
 
-이 형식은 템플릿 클래스의 특수화를 설명 [basic_regex 클래스](../standard-library/basic-regex-class.md) 형식의 요소에 대해 **char**합니다.
+이 형식은 **char**형식의 요소에 대 한 템플릿 클래스 [basic_regex 클래스](../standard-library/basic-regex-class.md) 의 특수화를 설명 합니다.
 
 > [!NOTE]
 > 높은 비트 문자의 경우 `regex`에서 예기치 않은 결과가 반환됩니다. 0~127 범위를 벗어나는 값을 사용하는 경우 정의되지 않은 동작이 발생할 수 있습니다.
@@ -208,7 +208,7 @@ typedef basic_regex<wchar_t> wregex;
 
 ### <a name="remarks"></a>설명
 
-이 형식은 템플릿 클래스의 특수화를 설명 [basic_regex 클래스](../standard-library/basic-regex-class.md) 형식의 요소에 대해 **wchar_t**합니다.
+이 형식은 **wchar_t**형식의 요소에 대 한 템플릿 클래스 [basic_regex 클래스](../standard-library/basic-regex-class.md) 의 특수화를 설명 합니다.
 
 ## <a name="wsmatch"></a>  wsmatch 형식 정의
 
@@ -260,11 +260,11 @@ typedef sub_match<wstring::const_iterator> wssub_match;
 
 ## <a name="see-also"></a>참고자료
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_constants 클래스](../standard-library/regex-constants-class.md)<br/>
-[regex_error 클래스](../standard-library/regex-error-class.md)<br/>
-[\<regex> 함수](../standard-library/regex-functions.md)<br/>
-[regex_iterator 클래스](../standard-library/regex-iterator-class.md)<br/>
-[\<regex> 연산자](../standard-library/regex-operators.md)<br/>
-[regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md)<br/>
-[regex_traits 클래스](../standard-library/regex-traits-class.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[regex_constants 클래스](../standard-library/regex-constants-class.md)\
+[regex_error 클래스](../standard-library/regex-error-class.md)\
+[\<regex > 함수](../standard-library/regex-functions.md)\
+[regex_iterator 클래스](../standard-library/regex-iterator-class.md)\
+[\<regex > 연산자](../standard-library/regex-operators.md)\
+[regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md)\
+[regex_traits 클래스](../standard-library/regex-traits-class.md)

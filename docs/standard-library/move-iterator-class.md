@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::move_iterator [C++], reference
 - std::move_iterator [C++], base
 ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
-ms.openlocfilehash: 3e2e62946325c082e761b6997ae584419175f8fe
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 4a173ea022f21c454d8edd66f94d2d9b14faa4e1
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346191"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460216"
 ---
 # <a name="moveiterator-class"></a>move_iterator 클래스
 
@@ -45,7 +45,7 @@ class move_iterator;
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[move_iterator](#move_iterator)|`move_iterator` 형식의 개체에 대한 생성자입니다.|
 
@@ -54,9 +54,9 @@ class move_iterator;
 |형식 이름|설명|
 |-|-|
 |[iterator_type](#iterator_type)|템플릿 매개 변수 `RandomIterator`의 동의어.|
-|[iterator_category](#iterator_category)|긴 동의어 **typename** 식 같은 이름의 `iterator_category` 반복기의 일반 기능을 식별 합니다.|
-|[value_type](#value_type)|긴 동의어 **typename** 식 같은 이름의 `value_type` 은 반복기 요소의 유형을 설명 합니다.|
-|[difference_type](#difference_type)|긴 동의어 **typename** 식 같은 이름의 `difference_type` 요소 간 express 차이 값을 하는 데 필요한 정수 형식에 설명 합니다.|
+|[iterator_category](#iterator_category)|동일한 이름의 긴 **typename** 식에 대 한 동의어는 반복기의 `iterator_category` 일반 기능을 식별 합니다.|
+|[value_type](#value_type)|동일한 이름의 `value_type` 긴 **typename** 식에 대 한 동의어는 반복기 요소의 형식에 대해 설명 합니다.|
+|[difference_type](#difference_type)|동일한 이름의 `difference_type` 긴 **typename** 식에 대 한 동의어는 요소 간 차이 값을 표현 하는 데 필요한 정수 계열 형식을 설명 합니다.|
 |[pointer](#pointer)|템플릿 매개 변수 `RandomIterator`에 대한 동의어.|
 |[reference](#reference)|`rvalue` 참조 `value_type&&`에 대한 동의어.|
 
@@ -147,7 +147,7 @@ move_iterator(const move_iterator<Type>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 저장된 반복기로 사용할 반복기입니다.
 
 ### <a name="remarks"></a>설명
@@ -164,7 +164,7 @@ move_iterator& operator+=(difference_type _Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*<br/>
+*_Off*\
 새 현재 위치를 알기 위해 현재 위치에 추가하는 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -173,7 +173,7 @@ move_iterator& operator+=(difference_type _Off);
 
 ### <a name="remarks"></a>설명
 
-추가 연산자 *_Off* 저장 된 반복기입니다. 그런 다음 `*this`를 반환합니다.
+연산자는 저장 된 반복기에 *_Off* 를 추가 합니다. 그런 다음 `*this`를 반환합니다.
 
 ## <a name="operator-_eq"></a>  move_iterator::operator-=
 
@@ -291,7 +291,7 @@ pointer operator->() const;
 
 ## <a name="pointer"></a>  move_iterator::pointer
 
-형식 `pointer` 되는 **typedef** 임의 반복기 기반 `RandomIterator` 에 대 한 `move_iterator`, 서로 교환해 서 사용할 수 있습니다.
+형식은 `pointer` 에 대 한  `RandomIterator` 임의반복기를기반으로하는typedef이며교대로사용할수`move_iterator`있습니다.
 
 ```cpp
 typedef RandomIterator  pointer;
@@ -303,7 +303,7 @@ typedef RandomIterator  pointer;
 
 ## <a name="reference"></a>  move_iterator::reference
 
-형식 `reference` 은 **typedef** 기반 `value_type&&` 에 대 한 `move_iterator`를 사용 하 여 서로 교환해 서 사용할 수 있습니다 `value_type&&`합니다.
+형식은 `reference` `value_type&&` `value_type&&`for 를`move_iterator`기반으로 하는 **typedef** 이며과 함께 사용할 수 있습니다.
 
 ```cpp
 typedef value_type&& reference;
@@ -327,7 +327,7 @@ typedef typename iterator_traits<RandomIterator>::value_type   value_type;
 
 ## <a name="see-also"></a>참고자료
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)<br/>
-[이동 생성자 및 이동 할당 연산자(C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)\
+[이동 생성자 및 이동 할당 연산자(C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

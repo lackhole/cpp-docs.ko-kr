@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - allocator_unbounded class
 ms.assetid: facbaea1-b320-4d99-96da-039b2642f352
-ms.openlocfilehash: 4e5bf54b386a3c3fe4e2604a78437275707acbfd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 38ecec3848808585ac0ed7cb1b076480a79f6d41
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179187"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448296"
 ---
 # <a name="allocatorunbounded-class"></a>allocator_unbounded 클래스
 
-저장소 할당 및 개체 형식에 대 한 해제를 관리 하는 개체를 설명 *형식* 형식의 캐시를 사용 하 여 [cache_freelist](../standard-library/cache-freelist-class.md) 관리 하는 길이가 [max_unbounded](../standard-library/max-unbounded-class.md).
+[Max_unbounded](../standard-library/max-unbounded-class.md)에서 관리 하는 길이를 사용 하는 [cache_freelist](../standard-library/cache-freelist-class.md) 형식의 캐시 *를 사용 하* 여 형식 형식의 개체에 대 한 저장소 할당 및 해제를 관리 하는 개체에 대해 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +33,7 @@ class allocator_unbounded;
 
 ## <a name="remarks"></a>설명
 
-합니다 [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로로이 클래스를 전달 합니다 *이름* 다음 문에서 매개 변수: `ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_unbounded), SYNC_DEFAULT, allocator_unbounded);`
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 문에서이 클래스를 *name* 매개 변수로 전달 합니다.`ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_unbounded), SYNC_DEFAULT, allocator_unbounded);`
 
 ## <a name="requirements"></a>요구 사항
 
@@ -43,4 +43,4 @@ class allocator_unbounded;
 
 ## <a name="see-also"></a>참고자료
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

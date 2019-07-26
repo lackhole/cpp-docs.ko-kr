@@ -10,12 +10,12 @@ helpviewer_keywords:
 - std::front_insert_iterator [C++], container_type
 - std::front_insert_iterator [C++], reference
 ms.assetid: a9a9c075-136a-4419-928b-c4871afa033c
-ms.openlocfilehash: 322b513dc648bf10fe593d9541560c4d22da21fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 176fac8053d352d6a7a72ce62d5a8ee7a64b9811
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159589"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454128"
 ---
 # <a name="frontinsertiterator-class"></a>front_insert_iterator 클래스
 
@@ -30,7 +30,7 @@ class front_insert_iterator;
 
 ### <a name="parameters"></a>매개 변수
 
-*컨테이너*<br/>
+*컨테이너*\
 `front_insert_iterator`가 앞에 요소를 삽입할 컨테이너의 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -39,13 +39,13 @@ class front_insert_iterator;
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[front_insert_iterator](#front_insert_iterator)|지정된 컨테이너 개체 앞에 요소를 삽입할 수 있는 반복기를 만듭니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|형식 이름|Description|
 |-|-|
 |[container_type](#container_type)|전면 삽입 대상인 컨테이너를 나타내는 형식입니다.|
 |[reference](#reference)|연관 컨테이너에서 제어하는 시퀀스의 요소에 대한 참조를 제공하는 형식입니다.|
@@ -54,9 +54,9 @@ class front_insert_iterator;
 
 |연산자|설명|
 |-|-|
-|[operator*](#op_star)|출력 반복기 식을 구현 하는 데 사용 된 역참조 연산자 \* `i`  =  `x` 전면 삽입을 위해.|
+|[operator*](#op_star)|전면 삽입을 \* 위해 출력 반복기 식을 `i`  =  `x` 구현 하는 데 사용 되는 역참조 연산자입니다.|
 |[operator++](#op_add_add)|값을 저장할 다음 위치에 `front_insert_iterator`를 증가시킵니다.|
-|[operator=](#op_eq)|출력 반복기 식을 구현 하는 데 사용 되는 대입 연산자 \* `i`  =  `x` 전면 삽입을 위해.|
+|[operator=](#op_eq)|전면 삽입을 \* 위해 출력 반복기 식을 `i`  =  `x` 구현 하는 데 사용 되는 할당 연산자입니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -116,7 +116,7 @@ explicit front_insert_iterator(Container& _Cont);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Cont*<br/>
+*_ 계속*\
 `front_insert_iterator`에서 요소를 삽입할 대상 컨테이너 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -183,7 +183,7 @@ front_insert_iterator<Container>& operator*();
 
 ### <a name="remarks"></a>설명
 
-출력 반복기 식 **\*Iter** = **value**를 구현하는 데 사용됩니다. 하는 경우 `Iter` 가 다음 시퀀스에서 요소를 해결 하는 반복기  **\*Iter** = **값** 값을 사용 하 여 해당 요소를 대체 하 고 총 변경 되지 않습니다 시퀀스의 요소입니다.
+출력 반복기 식 **\*Iter** = **value**를 구현하는 데 사용됩니다. 가 `Iter` 시퀀스의 요소에 주소를 지정한  **\*** 반복기 인 경우 Iter = **value** 는 해당 요소를 value로 바꾸고 시퀀스의 총 요소 수를 변경 하지 않습니다.
 
 ### <a name="example"></a>예제
 
@@ -293,7 +293,7 @@ front_insert_iterator<Container>& operator=(typename Container::value_type&& val
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*짧은*\
 컨테이너에 할당할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -389,6 +389,6 @@ The first element in the list L is: 30.
 
 ## <a name="see-also"></a>참고자료
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

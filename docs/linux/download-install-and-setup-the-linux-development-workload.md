@@ -3,12 +3,12 @@ title: Visual Studio에서 C++ Linux 워크로드 설치
 description: Visual Studio에서 C++에 대한 Linux 워크로드를 다운로드하고, 설치하고, 설정하는 방법을 설명합니다.
 ms.date: 06/11/2019
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: d5c099794f781fa9e6217f3796d24d1a63fd7b53
-ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
+ms.openlocfilehash: 5df7b323d202f398059e92abaeeeedbf73439fa4
+ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67042748"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299802"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Linux 워크로드 다운로드, 설치 및 설정
 
@@ -31,8 +31,6 @@ CMake 또는 다른 빌드 시스템을 Visual Studio 프로젝트로 변환할 
 ::: moniker range="vs-2019"
 
 Visual Studio 2019에서 빌드 및 디버깅에 대한 별도 대상을 지정할 수 있습니다. WSL을 대상으로 하는 경우 원격 연결을 추가하거나 SSH를 구성할 필요가 없습니다.
-
-[AddressSanitizer(ASan)](https://github.com/google/sanitizers/wiki/AddressSanitizer)에 대한 지원은 Linux 프로젝트를 위해 Visual Studio에 통합됩니다.
 
 ::: moniker-end
 

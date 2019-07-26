@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - iomanip header
 ms.assetid: 3681c346-4763-4037-bba4-cf0dc3447974
-ms.openlocfilehash: 983fbc190fb83b81534e3888c748c0bf9c235638
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b9da0de64bbb0ef48a6a9741ff941e6abda0e705
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404938"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449214"
 ---
 # <a name="ltiomanipgt"></a>&lt;iomanip&gt;
 
-포함 된 `iostreams` 표준 헤더 \<iomanip > 여러 조작자를 정의 하는 단일 인수입니다.
+각각 단일 인수를 \<사용 하는 여러 조작자를 정의 하려면 io마나트 ip > 표준헤더를포함합니다.`iostreams`
 
 ## <a name="syntax"></a>구문
 
@@ -26,7 +26,7 @@ ms.locfileid: "62404938"
 
 ## <a name="remarks"></a>설명
 
-호출 하는 지정 되지 않은 형식, 반환 각 이러한 조작자 `T1` 를 통해 `T10`를 둘 다 오버 로드는 `basic_istream` \< **Elem**, **Tr** > `::` [연산자 >>](../standard-library/istream-operators.md#op_gt_gt) 하 고 `basic_ostream` \< **Elem**하십시오 **Tr** > `::` [연산자 <<](../standard-library/ostream-operators.md#op_lt_lt)합니다.
+이러한 각 조작자 `T1` 는 **Elem**, **Tr**[](../standard-library/istream-operators.md#op_gt_gt) `T10` \< `basic_istream`연산자>>를모두오버로드하는를통해호출되는지정되지않은형식을반환합니다.>`::` `basic_ostream` **Elem**, Tr연산자`::`<[<](../standard-library/ostream-operators.md#op_lt_lt). \<>
 
 ### <a name="manipulators"></a>조작자
 
@@ -46,7 +46,7 @@ ms.locfileid: "62404938"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

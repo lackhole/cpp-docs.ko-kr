@@ -10,12 +10,12 @@ f1_keywords:
 - regex/std::operator==
 - regex/std::operator<<
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
-ms.openlocfilehash: ee0d9ba820cff55a9cfbb130c8f90ca02fbee84a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 829b4cf50b02db0a88d61a8801c1e21ddb470344
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369555"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460130"
 ---
 # <a name="ltregexgt-operators"></a>&lt;regex&gt; 연산자
 
@@ -66,19 +66,19 @@ bool operator!=(const match_results<BidIt, Alloc>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*<br/>
+*BidIt*\
 반복기 형식입니다.
 
-*IOtraits*<br/>
+*IOtraits*\
 문자열 특성 클래스입니다.
 
-*Alloc*<br/>
+*#C4*\
 할당자 클래스입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -181,24 +181,24 @@ bool operator<(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*<br/>
+*BidIt*\
 반복기 형식입니다.
 
-*IOtraits*<br/>
+*IOtraits*\
 문자열 특성 클래스입니다.
 
-*Alloc*<br/>
+*#C4*\
 할당자 클래스입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-각 템플릿 연산자는 인수를 문자열 형식으로 변환 및 경우에 true를 반환으로 변환된 된 값 *왼쪽* 으로 변환된 된 값 보다 작음 비교 *오른쪽*합니다.
+각 템플릿 연산자는 해당 인수를 문자열 형식으로 변환 하 고, *왼쪽* 의 변환 된 값이 *오른쪽*의 변환 된 값 보다 작음을 비교 하는 경우에만 true를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -266,22 +266,22 @@ basic_ostream<Elem, IOtraits>& operator<<(basic_ostream<Elem, IOtraits>& os,
 
 ### <a name="parameters"></a>매개 변수
 
-*Elem*<br/>
+*E*\
 요소 형식입니다.
 
-*IOtraits*<br/>
+*IOtraits*\
 문자열 특성 클래스입니다.
 
-*Alloc*<br/>
+*#C4*\
 할당자 클래스입니다.
 
-*BidIt*<br/>
+*BidIt*\
 반복기 형식입니다.
 
-*os*<br/>
+*부팅*\
 출력 스트림입니다.
 
-*right*<br/>
+*오른쪽*\
 삽입할 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -351,19 +351,19 @@ bool operator<=(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*<br/>
+*BidIt*\
 반복기 형식입니다.
 
-*IOtraits*<br/>
+*IOtraits*\
 문자열 특성 클래스입니다.
 
-*Alloc*<br/>
+*#C4*\
 할당자 클래스입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -465,19 +465,19 @@ bool operator==(const match_results<BidIt, Alloc>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*<br/>
+*BidIt*\
 반복기 형식입니다.
 
-*IOtraits*<br/>
+*IOtraits*\
 문자열 특성 클래스입니다.
 
-*Alloc*<br/>
+*#C4*\
 할당자 클래스입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -588,19 +588,19 @@ bool operator>(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*<br/>
+*BidIt*\
 반복기 형식입니다.
 
-*IOtraits*<br/>
+*IOtraits*\
 문자열 특성 클래스입니다.
 
-*Alloc*<br/>
+*#C4*\
 할당자 클래스입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -698,19 +698,19 @@ bool operator>=(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*<br/>
+*BidIt*\
 반복기 형식입니다.
 
-*IOtraits*<br/>
+*IOtraits*\
 문자열 특성 클래스입니다.
 
-*Alloc*<br/>
+*#C4*\
 할당자 클래스입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -773,11 +773,11 @@ sub >= 'a' == true
 
 ## <a name="see-also"></a>참고자료
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_constants 클래스](../standard-library/regex-constants-class.md)<br/>
-[regex_error 클래스](../standard-library/regex-error-class.md)<br/>
-[\<regex> 함수](../standard-library/regex-functions.md)<br/>
-[regex_iterator 클래스](../standard-library/regex-iterator-class.md)<br/>
-[regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md)<br/>
-[regex_traits 클래스](../standard-library/regex-traits-class.md)<br/>
-[\<regex> 형식 정의](../standard-library/regex-typedefs.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[regex_constants 클래스](../standard-library/regex-constants-class.md)\
+[regex_error 클래스](../standard-library/regex-error-class.md)\
+[\<regex > 함수](../standard-library/regex-functions.md)\
+[regex_iterator 클래스](../standard-library/regex-iterator-class.md)\
+[regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md)\
+[regex_traits 클래스](../standard-library/regex-traits-class.md)\
+[\<regex> 형식 정의](../standard-library/regex-typedefs.md)

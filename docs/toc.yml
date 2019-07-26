@@ -418,12 +418,14 @@
                   href: build/reference/advanced-property-page.md
                 - name: VC++ 디렉터리 속성 페이지
                   href: build/reference/vcpp-directories-property-page.md
+                - name: C/C++ 속성 페이지
+                  href: build/reference/c-cpp-prop-page.md
+                - name: 링커 속성 페이지
+                  href: build/reference/linker-property-pages.md
                 - name: 명령줄 속성 페이지
                   href: build/reference/command-line-property-pages.md
                 - name: NMake 속성 페이지
                   href: build/reference/nmake-property-page.md
-                - name: 링커 속성 페이지
-                  href: build/reference/linker-property-pages.md
                 - name: 매니페스트 도구 속성 페이지
                   expanded: false
                   items:
@@ -442,16 +444,7 @@
                 - name: 관리되는 리소스 속성 페이지
                   href: build/reference/managed-resources-property-page.md
                 - name: MIDL 속성 페이지
-                  expanded: false
-                  items:
-                    - name: MIDL 속성 페이지
-                      href: build/reference/midl-property-pages.md
-                    - name: 'MIDL 속성 페이지: 일반'
-                      href: build/reference/midl-property-pages-general.md
-                    - name: 'MIDL 속성 페이지: Output'
-                      href: build/reference/midl-property-pages-output.md
-                    - name: 'MIDL 속성 페이지: 고급'
-                      href: build/reference/midl-property-pages-advanced.md
+                  href: build/reference/midl-property-pages.md
                 - name: 웹 참조 속성 페이지
                   href: build/reference/web-references-property-page.md
                 - name: XML 데이터 생성기 도구 속성 페이지
@@ -8538,6 +8531,8 @@
                   href: standard-library/csetjmp.md
                 - name: <csignal>
                   href: standard-library/csignal.md
+                - name: <cstdalign>
+                  href: standard-library/cstdalign.md
                 - name: <cstdarg>
                   href: standard-library/cstdarg.md
                 - name: <cstdbool>
@@ -8556,6 +8551,8 @@
                   href: standard-library/ctgmath.md
                 - name: <ctime>
                   href: standard-library/ctime.md
+                - name: <cuchar>
+                  href: standard-library/cuchar.md
                 - name: <cvt-wbuffer>
                   href: standard-library/cvt-wbuffer.md
                 - name: <cvt-wstring>

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - messages_byname class
 ms.assetid: c6c64841-3e80-43c8-b54c-fed41833ad6b
-ms.openlocfilehash: 7b341f3e1dbf76021911c70560b83932b5302191
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8fe1ab2db792819831f5c50aa99a02559f71cdd
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404795"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451815"
 ---
 # <a name="messagesbyname-class"></a>messages_byname 클래스
 
@@ -39,15 +39,15 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*_Locname*<br/>
+*_Locname*\
 명명된 로캘입니다.
 
-*_Refs*<br/>
+*참조 (_s)* \
 초기 참조 개수입니다.
 
 ## <a name="remarks"></a>설명
 
-해당 동작은 명명 된 로캘에 따라 결정 됩니다 *_Locname*합니다. 각 생성자는 [messages](../standard-library/messages-class.md#messages)\<CharType>( `_Refs`)를 통해 기본 개체를 초기화합니다.
+해당 동작은 명명 된 로캘 *_Locname*에 의해 결정 됩니다. 각 생성자는 [messages](../standard-library/messages-class.md#messages)\<CharType>( `_Refs`)를 통해 기본 개체를 초기화합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -57,4 +57,4 @@ protected:
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

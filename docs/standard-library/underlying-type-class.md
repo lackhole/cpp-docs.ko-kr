@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - underlying_type
 ms.assetid: 691ddce3-2677-4480-bd35-d933fab85d3e
-ms.openlocfilehash: 23e5e9bc5406265f49fca2ed220c597cb32e2a9a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 465383357e6c0306c24fe8325327327c3a3b64c1
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399364"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454982"
 ---
 # <a name="underlyingtype-class"></a>underlying_type 클래스
 
@@ -26,12 +26,12 @@ struct underlying_type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-`type` 템플릿 클래스의 멤버 typedef의 기본 정수 계열 형식 이름을 *T*면 *T* 가 열거형 형식이 없는 멤버 typedef 않으면 `type`합니다.
+T `type` 가 열거형 형식인 경우 템플릿 클래스의 멤버 typedef는 *t*의 기본 정수 계열  형식 이름을, 그렇지 않으면 멤버 typedef `type`가 없습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -41,4 +41,4 @@ struct underlying_type;
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

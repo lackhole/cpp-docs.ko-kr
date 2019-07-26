@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::money_put [C++], do_put
 - std::money_put [C++], put
 ms.assetid: f439fd56-c9b1-414c-95e1-66c918c6eee6
-ms.openlocfilehash: 346dd4f681432143c954ca125c3862fc6827db60
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b9dff8a871895eee6774b75ca1c83dca6fd42ff3
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383544"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460227"
 ---
 # <a name="moneyput-class"></a>money_put 클래스
 
@@ -37,10 +37,10 @@ class money_put : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*<br/>
+*CharType*\
 로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
-*OutputIterator*<br/>
+*OutputIterator*\
 통화 put 함수가 출력을 쓰는 반복기의 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -63,7 +63,7 @@ class money_put : public locale::facet;
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[do_put](#do_put)|숫자 또는 문자열을 통화 값을 나타내는 문자 시퀀스로 변환하기 위해 호출하는 가상 함수입니다.|
 |[put](#put)|숫자 또는 문자열을 통화 값을 나타내는 문자 시퀀스로 변환합니다.|
@@ -108,19 +108,19 @@ virtual iter_type do_put(
 
 ### <a name="parameters"></a>매개 변수
 
-*next*<br/>
+*그런*\
 삽입된 문자열의 첫 번째 요소 주소를 지정하는 반복기입니다.
 
-*_Intl*<br/>
+*_Intl*\
 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*_Iosbase*<br/>
+*_Iosbase*\
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*_Fill*<br/>
+*채우기 (_s)* \
 간격에 사용되는 문자입니다.
 
-*val*<br/>
+*짧은*\
 변환할 문자열 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -129,9 +129,9 @@ virtual iter_type do_put(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 보호 된 가상 구성원 함수에서 시작 하는 순차 요소를 생성 *다음* 통화 출력 필드를 생성 하는 [string_type](#string_type) 개체 *val*합니다. 제어 하는 시퀀스 *val* 크기를 나타내는 빼기 기호 (-), 필요에 따라 앞에 하나 이상의 10 진수 자릿수를 사용 하 여 시작 해야 합니다. 함수는 생성된 통화 출력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다.
+첫 번째 보호 된 가상 멤버 함수는 [string_type](#string_type) 개체 *val*에서 통화 출력 필드를 생성 하기 위해 *다음* 부터 시작 하 여 순차 요소를 생성 합니다. *Val* 에 의해 제어 되는 시퀀스는 하나 이상의 10 진수 숫자로 시작 해야 하 고, 필요에 따라 빼기 기호 (-)로 시작 하 여 크기를 나타냅니다. 함수는 생성된 통화 출력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다.
 
-두 번째 보호 된 가상 구성원 함수는 첫 번째 동일 하 게 동작 한다는 점을 제외 효과적으로 첫 번째 변환 *val* 필요에 따라 앞에 빼기 기호, 소수 자릿수 시퀀스로 위와 같이 해당 시퀀스를 변환 합니다.
+두 번째 보호 된 멤버 함수는 첫 번째 값과 동일 하 게 동작 합니다. 단, 실제로는 *val* 을 10 진수의 시퀀스로 변환 합니다.
 
 통화 출력 필드의 형식은 [locale facet](../standard-library/locale-class.md#facet_class) fac에 의해 결정됩니다. 이 항목은 유효 호출 [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc))에서 반환됩니다.
 
@@ -191,22 +191,22 @@ explicit money_put(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs*<br/>
+*참조 (_s)* \
 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 
-에 대 한 가능한 값을 *_Refs* 매개 변수 및 중요성은:
+*_Refs* 매개 변수에 사용할 수 있는 값은 다음과 같습니다.
 
 - 0: 개체가 포함된 로캘에서 개체의 수명을 관리합니다.
 
 - 1: 개체의 수명을 수동으로 관리해야 합니다.
 
-- \> 1: 이러한 값은 정의 되지 않습니다.
+- \>1: 이러한 값은 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
-생성자는 **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`)를 통해 해당 기준 개체를 초기화합니다.
+생성자는 **locale::** [facet](../standard-library/locale-class.md#facet_class)( `_Refs`)를 통해 해당 기준 개체를 초기화합니다.
 
 ## <a name="put"></a>  money_put::put
 
@@ -230,19 +230,19 @@ iter_type put(
 
 ### <a name="parameters"></a>매개 변수
 
-*next*<br/>
+*그런*\
 삽입된 문자열의 첫 번째 요소 주소를 지정하는 반복기입니다.
 
-*_Intl*<br/>
+*_Intl*\
 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*_Iosbase*<br/>
+*_Iosbase*\
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*_Fill*<br/>
+*채우기 (_s)* \
 간격에 사용되는 문자입니다.
 
-*val*<br/>
+*짧은*\
 변환할 문자열 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -295,6 +295,6 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 ## <a name="see-also"></a>참고자료
 
-[\<locale>](../standard-library/locale.md)<br/>
-[facet 클래스](../standard-library/locale-class.md#facet_class)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[facet 클래스](../standard-library/locale-class.md#facet_class)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

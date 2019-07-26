@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::thread [C++], joinable
 - std::thread [C++], native_handle
 - std::thread [C++], swap
-ms.openlocfilehash: d1405062ef553dbfea3b60b5f39e0546707343b6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f663034cdc7985dd440a1cdfdd659358c4e250f4
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412074"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458582"
 ---
 # <a name="thread-class"></a>thread 클래스
 
@@ -42,7 +42,7 @@ class thread;
 
 ## <a name="remarks"></a>설명
 
-사용할 수는 **스레드** 관찰 하 고 응용 프로그램 내의 실행 스레드를 관리 하는 개체입니다. 기본 생성자를 사용하여 만드는 스레드 개체는 실행 스레드와 연결되지 않습니다. 호출 가능 개체를 사용하여 생성되는 스레드 개체는 새 실행 스레드를 만들고 해당 스레드의 호출 가능 개체를 호출합니다. 스레드 개체는 이동할 수는 있지만 복사할 수는 없습니다. 따라서 실행 스레드는 하나만 스레드 개체에만 연결할 수 있습니다.
+**스레드** 개체를 사용 하 여 응용 프로그램 내에서 실행 스레드를 관찰 하 고 관리할 수 있습니다. 기본 생성자를 사용하여 만드는 스레드 개체는 실행 스레드와 연결되지 않습니다. 호출 가능 개체를 사용하여 생성되는 스레드 개체는 새 실행 스레드를 만들고 해당 스레드의 호출 가능 개체를 호출합니다. 스레드 개체는 이동할 수는 있지만 복사할 수는 없습니다. 따라서 실행 스레드는 하나만 스레드 개체에만 연결할 수 있습니다.
 
 모든 실행 스레드에는 `thread::id` 형식의 고유 식별자가 있습니다. `this_thread::get_id` 함수는 호출 스레드의 식별자를 반환합니다. `thread::get_id` 구성원 함수는 스레드 개체가 관리하는 스레드의 식별자를 반환합니다. 기본 생성 스레드 개체의 경우 `thread::get_id` 메서드는 모든 기본 생성 스레드 개체에 대해서는 동일하고 호출 시에 조인할 수 실행 스레드에 대해 `this_thread::get_id`에서 반환하는 값과는 다른 값이 포함된 개체를 반환합니다.
 
@@ -58,25 +58,25 @@ class thread;
 
 |이름|설명|
 |----------|-----------------|
-|[thread](#thread)|생성 된 **스레드** 개체입니다.|
+|[thread](#thread)|**스레드** 개체를 생성 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
 |이름|설명|
 |----------|-----------------|
-|[detach](#detach)|관련된 스레드를 분리 합니다 **스레드** 개체입니다.|
+|[detach](#detach)|연결 된 스레드를 **스레드** 개체에서 분리 합니다.|
 |[get_id](#get_id)|관련 스레드의 고유 식별자를 반환합니다.|
 |[hardware_concurrency](#hardware_concurrency)|정적. 하드웨어 스레드 컨텍스트 수의 추정치를 반환합니다.|
 |[join](#join)|관련 스레드가 완료될 때까지 차단합니다.|
 |[joinable](#joinable)|관련 스레드가 조인 가능한지를 지정합니다.|
 |[native_handle](#native_handle)|뮤텍스 핸들을 나타내는 구현별 형식을 반환합니다.|
-|[swap](#swap)|지정 된 개체 상태를 바꿉니다 **스레드** 개체입니다.|
+|[swap](#swap)|지정 된 **스레드** 개체를 사용 하 여 개체 상태를 바꿉니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
 |이름|설명|
 |----------|-----------------|
-|[thread::operator=](#op_eq)|현재 스레드를 연결 **스레드** 개체입니다.|
+|[thread::operator=](#op_eq)|스레드를 현재 **스레드** 개체와 연결 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -162,7 +162,7 @@ bool joinable() const noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-**true** 연결 된 스레드가 *조인*이 고, 그렇지 않으면 **false**합니다.
+연결 된 스레드가 *조인 가능*면 **true** 입니다. 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -190,8 +190,8 @@ thread& operator=(thread&& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*기타*<br/>
-A **스레드** 개체입니다.
+*다른*\
+**스레드** 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -205,7 +205,7 @@ A **스레드** 개체입니다.
 
 ## <a name="swap"></a>  thread::swap
 
-지정 된 된 개체 상태를 바꿉니다 **스레드** 개체입니다.
+개체 상태를 지정 된 **스레드** 개체의 상태와 바꿉니다.
 
 ```cpp
 void swap(thread& Other) noexcept;
@@ -213,12 +213,12 @@ void swap(thread& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*기타*<br/>
-A **스레드** 개체입니다.
+*다른*\
+**스레드** 개체입니다.
 
 ## <a name="thread"></a>  thread::thread 생성자
 
-생성 된 **스레드** 개체입니다.
+**스레드** 개체를 생성 합니다.
 
 ```cpp
 thread() noexcept;
@@ -230,24 +230,24 @@ thread(thread&& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*F*<br/>
+*350*\
 스레드에 의해 실행되는 애플리케이션 정의 함수
 
-*A*<br/>
-에 전달할 인수의 목록을 *F*합니다.
+*은*\
+*F*에 전달 될 인수 목록입니다.
 
-*기타*<br/>
+*다른*\
 기존 **스레드** 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 첫 번째 생성자는 실행 스레드와 연결되지 않는 개체를 생성합니다. 생성된 개체에 대한 `get_id` 호출에서 반환되는 값은 `thread::id()`입니다.
 
-두 번째 생성자는 새 실행 스레드와 연결되며 [\<functional>](../standard-library/functional.md)에 정의된 의사 함수 `INVOKE`를 실행하는 개체를 생성합니다. 새 스레드를 시작할 수 있는 리소스가 부족한 경우 함수는 오류 코드가 `resource_unavailable_try_again`인 [system_error](../standard-library/system-error-class.md) 개체를 throw합니다. 경우에 대 한 호출 *F* 예외로, 종료 [종료](../standard-library/exception-functions.md#terminate) 라고 합니다.
+두 번째 생성자는 새 실행 스레드와 연결되며 [\<functional>](../standard-library/functional.md)에 정의된 의사 함수 `INVOKE`를 실행하는 개체를 생성합니다. 새 스레드를 시작할 수 있는 리소스가 부족한 경우 함수는 오류 코드가 `resource_unavailable_try_again`인 [system_error](../standard-library/system-error-class.md) 개체를 throw합니다. Catch 되지 않은 예외를 제외 하 고 *F* 호출을 종료 하면 [terminate](../standard-library/exception-functions.md#terminate) 가 호출 됩니다.
 
 세 번째 생성자는 `Other`에 연결된 스레드와 연결되는 개체를 생성합니다. 그러면 `Other`는 기본 생성 상태로 설정됩니다.
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<thread>](../standard-library/thread.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<thread>](../standard-library/thread.md)

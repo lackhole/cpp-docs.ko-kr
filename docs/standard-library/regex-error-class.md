@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - regex_error class
 ms.assetid: 3333a1a3-ca6f-4612-84b2-1b4c7e3db5a4
-ms.openlocfilehash: eed961ea698591935c22fc748ff79583ae636b27
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 52b6bfd74a08200f7d924d2601b85718a941dd85
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369620"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451649"
 ---
 # <a name="regexerror-class"></a>regex_error 클래스
 
@@ -31,13 +31,13 @@ class regex_error
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[regex_error](#regex_error)|개체를 생성합니다.|
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[코드](#code)|오류 코드를 반환합니다.|
 
@@ -104,20 +104,20 @@ regex_error(regex_constants::error_code error);
 
 ### <a name="parameters"></a>매개 변수
 
-*error*<br/>
+*error*\
 오류 코드입니다.
 
 ### <a name="remarks"></a>설명
 
-값을 보유 하는 개체를 생성 하는 생성자 *오류*합니다.
+생성자는 값 *오류*를 포함 하는 개체를 생성 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_constants 클래스](../standard-library/regex-constants-class.md)<br/>
-[\<regex> 함수](../standard-library/regex-functions.md)<br/>
-[regex_iterator 클래스](../standard-library/regex-iterator-class.md)<br/>
-[\<regex> 연산자](../standard-library/regex-operators.md)<br/>
-[regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md)<br/>
-[regex_traits 클래스](../standard-library/regex-traits-class.md)<br/>
-[\<regex> 형식 정의](../standard-library/regex-typedefs.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[regex_constants 클래스](../standard-library/regex-constants-class.md)\
+[\<regex > 함수](../standard-library/regex-functions.md)\
+[regex_iterator 클래스](../standard-library/regex-iterator-class.md)\
+[\<regex > 연산자](../standard-library/regex-operators.md)\
+[regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md)\
+[regex_traits 클래스](../standard-library/regex-traits-class.md)\
+[\<regex> 형식 정의](../standard-library/regex-typedefs.md)

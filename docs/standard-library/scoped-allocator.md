@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - scoped_allocator Header
 ms.assetid: d20175b8-96be-4896-8141-3faba45e0005
-ms.openlocfilehash: 101edcf31114252911eac90d07f5f44249f98fb1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8e1a51f1f9f5693b422ec1e680784a199541bb4a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295762"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451793"
 ---
 # <a name="ltscopedallocatorgt"></a>&lt;scoped_allocator&gt;
 
@@ -32,12 +32,12 @@ ms.locfileid: "62295762"
 
 ### <a name="classes"></a>클래스
 
-|클래스|설명|
+|클래스|Description|
 |-|-|
 |[scoped_allocator_adaptor 클래스](../standard-library/scoped-allocator-adaptor-class.md)|할당자 하나 이상의 중첩을 캡슐화하는 템플릿 클래스입니다.|
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

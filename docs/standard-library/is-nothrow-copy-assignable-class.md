@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_copy_assignable
 ms.assetid: baa8abd6-4f53-489f-abba-8d5d5c53bbbc
-ms.openlocfilehash: bb3aca47b61bdcc5b28eeedc1a6b4edefc303c4e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 330c97cd945e161d2bf47deb377dd732bf53b3c9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383596"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455988"
 ---
 # <a name="isnothrowcopyassignable-class"></a>is_nothrow_copy_assignable 클래스
 
@@ -26,12 +26,12 @@ struct is_nothrow_copy_assignable;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 참조 가능한 형식에 대 한 마찬가지 *T* 여기서 `is_nothrow_assignable<T&, const T&>` 보유 true이 고 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는가 true 인 참조 가능한 형식 *T* `is_nothrow_assignable<T&, const T&>` 에 대해 true이 고, 그렇지 않으면 false입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -41,5 +41,5 @@ struct is_nothrow_copy_assignable;
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_nothrow_assignable 클래스](../standard-library/is-nothrow-assignable-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_nothrow_assignable 클래스](../standard-library/is-nothrow-assignable-class.md)

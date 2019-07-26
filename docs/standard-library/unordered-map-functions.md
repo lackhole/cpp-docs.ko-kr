@@ -8,12 +8,12 @@ f1_keywords:
 ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
 helpviewer_keywords:
 - std::swap (unordered_map/multimap)
-ms.openlocfilehash: ae00a9204e2bd5dc5220f3b2755e16b895193df3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ad81157d12de017198afeeb48f3b329ef20dbde
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158549"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454830"
 ---
 # <a name="ltunorderedmapgt-functions"></a>&lt;unordered_map&gt; 함수
 
@@ -34,25 +34,25 @@ void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*키*<br/>
+*키인지*\
 키 형식입니다.
 
-*Ty*<br/>
+*Ty*\
 매핑된 형식입니다.
 
-*해시*<br/>
+*해시로*\
 해시 함수 개체 형식입니다.
 
-*pred*<br/>
+*Pred*\
 같음 비교 함수 개체 형식입니다.
 
-*Alloc*<br/>
+*#C4*\
 할당자 클래스입니다.
 
-*left*<br/>
+*비어*\
 교환할 첫 번째 컨테이너입니다.
 
-*right*<br/>
+*오른쪽*\
 교환할 두 번째 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
@@ -127,25 +127,25 @@ void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*키*<br/>
+*키인지*\
 키 형식입니다.
 
-*Ty*<br/>
+*Ty*\
 매핑된 형식입니다.
 
-*해시*<br/>
+*해시로*\
 해시 함수 개체 형식입니다.
 
-*pred*<br/>
+*Pred*\
 같음 비교 함수 개체 형식입니다.
 
-*Alloc*<br/>
+*#C4*\
 할당자 클래스입니다.
 
-*left*<br/>
+*비어*\
 교환할 첫 번째 컨테이너입니다.
 
-*right*<br/>
+*오른쪽*\
 교환할 두 번째 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
@@ -209,4 +209,4 @@ int main()
 
 ## <a name="see-also"></a>참고자료
 
-[<unordered_map>](../standard-library/unordered-map.md)<br/>
+[<unordered_map>](../standard-library/unordered-map.md)

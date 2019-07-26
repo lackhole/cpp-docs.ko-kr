@@ -10,16 +10,16 @@ helpviewer_keywords:
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-ms.openlocfilehash: db04569d3938c673653ac36eeebdabc9cb725c1e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 44d44d48f66c9bdbf03d4e36e752ea3dee5ff9c9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244737"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453171"
 ---
 # <a name="complex-class"></a>complex 클래스
 
-형식의 두 개체를 저장 하는 개체를 설명 하는 템플릿 클래스 `Type`, 복소수 허수 부분을 나타내는 하나을 실수 부분을 나타내는 하나입니다.
+이 템플릿 클래스는 형식의 `Type`두 개체를 저장 하는 개체를 설명 합니다. 하나는 복소수의 실수부를 나타내고 다른 하나는 허수 부분을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,7 +30,7 @@ class complex
 
 ## <a name="remarks"></a>설명
 
-클래스의 개체 `Type`:
+클래스 `Type`의 개체:
 
 - 기본 동작과 함께 공용 기본 생성자, 소멸자, 복사 생성자 및 대입 연산자를 포함합니다.
 
@@ -38,9 +38,9 @@ class complex
 
 - 필요에 따라 기본 동작으로 부동 소수점 형식을 위해 정의된 산술 연산자 및 수학 함수를 정의합니다.
 
-특히 복사본 생성과 뒤에 할당이 이어지는 기본 생성 간에는 차이가 없을 수도 있습니다. 클래스의 개체에서 작업을 하나도 `Type` 예외를 throw 할 수 있습니다.
+특히 복사본 생성과 뒤에 할당이 이어지는 기본 생성 간에는 차이가 없을 수도 있습니다. 클래스 `Type` 의 개체에 대 한 작업은 예외를 throw 할 수 없습니다.
 
-세 개의 부동 소수점 형식에 대해 템플릿 클래스 complex의 명시적 특수화가 존재합니다. 이 구현에서 다른 형식의 값입니다 `Type` 형식으로 캐스팅 됩니다 **이중** 실제 계산을 위해 사용 하 여 합니다 **double** 형식의 저장 된 개체에 다시 할당 하는 결과 `Type`합니다.
+세 개의 부동 소수점 형식에 대해 템플릿 클래스 complex의 명시적 특수화가 존재합니다. 이 구현에서 다른 `Type` 형식의 값은 실제 계산에 대해 **double** 로 형식 캐스팅, **double** 결과가 형식의 `Type`저장 된 개체에 다시 할당 됩니다.
 
 ## <a name="members"></a>멤버
 
@@ -75,7 +75,7 @@ class complex
 
 
 
-## <a name="complex"></a> 복잡 한
+## <a name="complex"></a>하므로
 
 지정된 실수 및 허수 부분을 사용하거나 다른 복소수의 복사본으로 복소수를 생성합니다.
 
@@ -102,7 +102,7 @@ constexpr complex(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 저장 된 실수 부분을  *\_RealVal* 하 고 저장 된 허수 부분을  *\_Imagval*합니다. 두 번째 생성자는 저장 된 실수 부분을 `complexNum.real()` 및 저장 된 허수 부분을 `complexNum.imag()`입니다.
+첫 번째 생성자는 저장 된 실제 부분을  *\_realval로,* 로 초기화 하 고 저장 된 허수 부분을  *\_imagval*로 초기화 합니다. 두 번째 생성자는 저장 된 실수 부분을 `complexNum.real()` 로 초기화 하 고, 저장 `complexNum.imag()`된 허수 부분을로 초기화 합니다.
 
 이 구현에서 변환기가 멤버 템플릿 함수를 지원하지 않는 경우는 결과는 다음과 같습니다.
 
@@ -159,7 +159,7 @@ int main( )
 }
 ```
 
-## <a name="imag"></a> imag
+## <a name="imag"></a>imag
 
 복소수의 허수 구성 요소를 추출합니다.
 
@@ -180,7 +180,7 @@ T imag(const T& right);
 
 ### <a name="remarks"></a>설명
 
-복소수 *a + bi*, 허수 부분 또는 구성 요소는 *Im(a + bi) = b*합니다.
+복소수 *a + bi*의 경우 허수 부분 또는 구성 요소는 *Im (a + bi) = b*입니다.
 
 ### <a name="example"></a>예제
 
@@ -213,7 +213,7 @@ The real part of c1 is c1.real() = 4.
 The imaginary part of c1 is c1.imag() = 3.
 ```
 
-## <a name="op_star_eq"></a> 연산자 * =
+## <a name="op_star_eq"></a>연산자 * =
 
 대상 복소수와 요소를 곱합니다. 요소는 복소수이거나 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.
 
@@ -298,7 +298,7 @@ int main()
 }
 ```
 
-## <a name="op_add_eq"></a> operator + =
+## <a name="op_add_eq"></a>operator + =
 
 대상 복소수에 숫자를 더합니다. 여기서 더해지는 숫자는 복소수이거나 대상 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.
 
@@ -401,7 +401,7 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="operator-_eq"></a> -= 연산자
+## <a name="operator-_eq"></a>연산자-=
 
 대상 복소수에서 숫자를 뺍니다. 여기서 빼는 숫자는 복소수이거나 대상 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.
 
@@ -509,7 +509,7 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 2.2143 radians, which is 126.87 degrees.
 ```
 
-## <a name="op_div_eq"></a> operator / =
+## <a name="op_div_eq"></a>operator/=
 
 대상 복소수를 제수로 나눕니다. 제수는 복소수이거나 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.
 
@@ -613,7 +613,7 @@ The modulus of cl2 is: 0.6
 The argument of cl2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-## <a name="op_eq"></a> 연산자 =
+## <a name="op_eq"></a>연산자 =
 
 대상 복소수에 숫자를 할당합니다. 여기서 할당되는 숫자는 복소수이거나 대상 복소수의 실수부 및 허수부와 동일한 형식일 수 있습니다.
 
@@ -691,7 +691,7 @@ The complex number (3, 4) assigned to the complex number cl2 is:
 cl2 = (3,4)
 ```
 
-## <a name="real"></a> 실제
+## <a name="real"></a>실제로
 
 복소수의 실수 구성 요소를 가져오거나 설정합니다.
 
@@ -712,7 +712,7 @@ T real(const T& right);
 
 ### <a name="remarks"></a>설명
 
-복소수 *a + bi*, 실수 부분 또는 구성 요소는 *Re(a + bi) =는*합니다.
+복소수 *a + bi*의 경우 실제 부분 또는 구성 요소는 *Re (a + bi) = a*입니다.
 
 ### <a name="example"></a>예제
 
@@ -755,7 +755,7 @@ typedef Type value_type;
 
 ### <a name="remarks"></a>설명
 
-`value_type` 동의어가 클래스에 대 한 복잡 한 `Type` 템플릿 매개 변수입니다.
+`value_type`는 클래스 복합 `Type` 템플릿 매개 변수의 동의어입니다.
 
 ### <a name="example"></a>예제
 
@@ -784,4 +784,4 @@ of type value_type: c1 = (3,4).
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

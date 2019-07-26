@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - complex<long double> function
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
-ms.openlocfilehash: 19d4569523879911209bf0c05e762eba2c9852a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 280fb4c15219b11d2325ff37a296e133810bf2b5
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389179"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449488"
 ---
 # <a name="complexltlong-doublegt"></a>complex&lt;long double&gt;
 
-형식의 두 개체의 정렬된 된 쌍을 저장 하는 개체를 설명 하는이 명시적으로 특수화 된 템플릿 클래스 **long double**, 먼저 복소수와 두 번째 실수 부분을 나타내는 허수 부분입니다.
+이 명시적으로 특수화 된 템플릿 클래스는 **long double**형식의 정렬 된 개체 쌍을 저장 하는 개체를 설명 합니다. 첫 번째 개체는 복소수의 실수 부분을 나타내고 두 번째 개체는 허수 부분을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,26 +38,26 @@ complex(
 
 ### <a name="parameters"></a>매개 변수
 
-*_RealVal*<br/>
+*_RealVal*\
 생성되는 복소수의 실수부에 대한 **long double** 형식의 값입니다.
 
-*_ImagVal*<br/>
-형식의 값입니다 **long double** 생성 되 고 있는 복소수의 허수 부분에 대 한 합니다.
+*_ImagVal*\
+생성 되는 복소수의 허수 부분에 대 한 **long double** 형식의 값입니다.
 
-*complexNum*<br/>
-형식의 복소수 **이중** 또는 형식의 **float** 실수부와 허수부은 형식의 복소수를 초기화 하는 데 사용 됩니다 **long double** 생성 되 고 있는 합니다.
+*complexNum*\
+실수 및 허수 부분이 생성 되는 **long double** 형식의 복소수를 초기화 하는 데 사용 되는 **float** 형식의 **double** 또는 형식의 복소수입니다.
 
 ## <a name="return-value"></a>반환 값
 
-형식의 복소수 **long double**합니다.
+**Long double**형식의 복소수입니다.
 
 ## <a name="remarks"></a>설명
 
-템플릿 클래스의 명시적 특수화는 그것이 `complex` 형식의 complex 클래스에 **long double** 정의 하는 생성자 에서만에서 템플릿 클래스에서 다릅니다. 변환 **long double** 하 **float** 암시적 일 수 있지만 **double** 하 **long double** 필요 되도록 **명시적**합니다. **명시적**의 사용은 할당 구문을 사용하는 형식 변환의 시작을 배제합니다.
+**Long double** 형식의 복합 클래스에 대 `complex` 한 템플릿 클래스의 명시적 특수화는 정의 하는 생성자 에서만 템플릿 클래스와 다릅니다. **Long double** 에서 **float** 로의 변환은 암시적 일 수 있지만 **double** 에서 **long double** 로의 변환은 **명시적**이어야 합니다. **명시적**의 사용은 할당 구문을 사용하는 형식 변환의 시작을 배제합니다.
 
-템플릿 클래스에 대 한 자세한 내용은 `complex` 해당 멤버를 살펴보고 [complex 클래스](../standard-library/complex-class.md)합니다.
+템플릿 클래스 `complex` 및 해당 멤버에 대 한 자세한 내용은 [complex 클래스](../standard-library/complex-class.md)를 참조 하세요.
 
-**Microsoft 전용**: **long double** 하 고 **double** 형식에는 동일한 표현의 되지만 고유 형식입니다. 자세한 내용은 [기본 형식](../cpp/fundamental-types-cpp.md)합니다.
+**Microsoft 전용**: **Long double** 및 **double** 형식은 동일한 표현을 갖지만 고유 형식입니다. 자세한 내용은 [기본 형식](../cpp/fundamental-types-cpp.md)을 참조 하세요.
 
 ## <a name="example"></a>예제
 
@@ -123,5 +123,5 @@ arg( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## <a name="see-also"></a>참고자료
 
-[complex 클래스](../standard-library/complex-class.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[complex 클래스](../standard-library/complex-class.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

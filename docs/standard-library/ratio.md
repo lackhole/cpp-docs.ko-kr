@@ -31,12 +31,12 @@ f1_keywords:
 - ratio/std::deci
 - ratio/std::deca
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
-ms.openlocfilehash: 4279aa75bf4e9b8a0c7a86f102f70164bbb620e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f84bea2e3f4a01bb9428eddde3efbf53b73bc2f3
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369635"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458161"
 ---
 # <a name="ltratiogt"></a>&lt;ratio&gt;
 
@@ -48,7 +48,7 @@ ms.locfileid: "62369635"
 #include <ratio>
 ```
 
-### <a name="ratio-template"></a>템플릿 비율
+### <a name="ratio-template"></a>비율 템플릿
 
 ```cpp
 template<std::intmax_t Numerator, std::intmax_t Denominator = 1>
@@ -60,7 +60,7 @@ struct ratio // holds the ratio of Numerator to Denominator
 }
 ```
 
-템플릿을 `ratio` 정적 상수를 정의 `num` 하 고 `den` 되도록 `num`  /  `den` 분자 = = / 분모 및 `num` 및 `den` 공약수가 없도록 합니다. `num` / `den` 템플릿 클래스에 의해 표현 되는 값이입니다. 따라서 `type` 인스턴스화 지정 `ratio<num, den>`합니다.
+이 템플릿에서 `ratio` 는 = = 분자 `num` / `den` 분모 및 `num` 에공통`den` 된  /  `den` 요소가 없는 정적 상수를 정의 합니다. `num` `num` / `den`는 템플릿 클래스가 나타내는 값입니다. 따라서는 인스턴스화 `ratio<num, den>`를 지정합니다.`type`
 
 ### <a name="specializations"></a>특수화
 
@@ -85,7 +85,7 @@ struct ratio // holds the ratio of Numerator to Denominator
 
 ### <a name="typedefs"></a>형식 정의
 
-편의 위해 헤더는 표준 SI 접두사에 대 한 비율을 정의합니다.
+편의를 위해 헤더는 표준 SI 접두사의 비율을 정의 합니다.
 
 ```cpp
 typedef ratio<1, 1000000000000000000> atto;
@@ -108,4 +108,4 @@ typedef ratio<1000000000000000000, 1> exa;
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - vector header
 ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f
-ms.openlocfilehash: 96f329bfdcc13bb557ef0cc487a1f414612e96c5
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 5992e368031b59c9b892167b135fa30a870c73f9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240960"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448063"
 ---
 # <a name="ltvectorgt"></a>&lt;vector&gt;
 
@@ -20,7 +20,7 @@ ms.locfileid: "68240960"
 `vector`는 선형 시퀀스에서 지정된 유형의 요소를 구성하는 컨테이너입니다. 이 컨테이너를 사용하면 모든 요소에 빠르게 임의 액세스할 수 있으며 시퀀스에 대한 동적 추가와 제거를 수행할 수 있습니다. 임의 액세스 성능이 가장 중요할 때는 `vector`를 시퀀스에 대한 기본 컨테이너로 사용합니다.
 
 > [!NOTE]
-> 합니다 \<벡터 > 라이브러리 사용을 `#include <initializer_list>` 문입니다.
+> 또한 \<vector > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
 
 `vector` 클래스에 대한 자세한 내용은 [vector 클래스](../standard-library/vector-class.md)를 참조하세요. 특수화 `vector<bool>`에 대한 자세한 내용은 [vector\<bool> 클래스](../standard-library/vector-bool-class.md)를 참조하세요.
 
@@ -77,13 +77,13 @@ void swap (
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*\
+*입력할*\
 벡터에 저장되는 데이터 형식에 대한 템플릿 매개 변수입니다.
 
 *할당자*\
 메모리 할당 및 할당 취소를 수행하는 저장된 할당자 개체에 대한 템플릿 매개 변수입니다.
 
-*왼쪽*\
+*비어*\
 비교 작업의 첫 번째(왼쪽) 벡터입니다.
 
 *오른쪽*\
@@ -123,6 +123,6 @@ void swap (
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

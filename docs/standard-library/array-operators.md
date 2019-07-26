@@ -9,16 +9,16 @@ f1_keywords:
 - array/std::array::operator>=
 - array/std::array::operator==
 ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
-ms.openlocfilehash: c44789c958b3fc24441b95178acc85ce3ba337fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 88244879be9ab27c826c0b051b724fa1c3ed4784
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377337"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456756"
 ---
 # <a name="ltarraygt-operators"></a>&lt;array&gt; 연산자
 
-합니다 \<배열 > 헤더 포함 됩니다. 이러한 **배열** 비 멤버 비교 템플릿 함수입니다.
+배열 \<> 헤더에 이러한 **배열의** 비 멤버 비교 템플릿 함수가 포함 되어 있습니다.
 
 ||||
 |-|-|-|
@@ -38,16 +38,16 @@ bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 요소의 형식입니다.
 
-*N*<br/>
+*개의*\
 배열의 크기입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 컨테이너입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
@@ -111,16 +111,16 @@ bool operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 요소의 형식입니다.
 
-*N*<br/>
+*개의*\
 배열의 크기입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 컨테이너입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
@@ -184,16 +184,16 @@ bool operator<=(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 요소의 형식입니다.
 
-*N*<br/>
+*개의*\
 배열의 크기입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 컨테이너입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
@@ -257,16 +257,16 @@ bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 요소의 형식입니다.
 
-*N*<br/>
+*개의*\
 배열의 크기입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 컨테이너입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
@@ -330,16 +330,16 @@ bool operator>(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 요소의 형식입니다.
 
-*N*<br/>
+*개의*\
 배열의 크기입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 컨테이너입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
@@ -403,16 +403,16 @@ bool operator>=(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 요소의 형식입니다.
 
-*N*<br/>
+*개의*\
 배열의 크기입니다.
 
-*left*<br/>
+*비어*\
 비교할 왼쪽 컨테이너입니다.
 
-*right*<br/>
+*오른쪽*\
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
@@ -465,4 +465,4 @@ false
 
 ## <a name="see-also"></a>참고자료
 
-[\<array>](../standard-library/array.md)<br/>
+[\<array>](../standard-library/array.md)

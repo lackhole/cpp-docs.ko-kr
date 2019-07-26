@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_base_of class
 - is_base_of
 ms.assetid: 436f6213-1d4c-4ffc-a588-fc7c4887dd86
-ms.openlocfilehash: 345301b5eeed7b66f18a54e56b9bee6346078634
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d56222f218033d00583e5e3def9790720ef7bb94
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383674"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456617"
 ---
 # <a name="isbaseof-class"></a>is_base_of 클래스
 
@@ -27,15 +27,15 @@ struct is_base_of;
 
 ### <a name="parameters"></a>매개 변수
 
-*Base*<br/>
+*하단*\
 테스트할 기본 클래스입니다.
 
-*파생 된*<br/>
+*가져온*\
 테스트할 파생 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *기본* 형식의 기본 클래스인 *파생*, 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 형식 *기준이* *파생*형식의 기본 클래스 이면 true이 고, 그렇지 않으면 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -80,5 +80,5 @@ is_base_of<derived, base> == false
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_convertible 클래스](../standard-library/is-convertible-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_convertible 클래스](../standard-library/is-convertible-class.md)

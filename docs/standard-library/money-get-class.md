@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::money_get [C++], do_get
 - std::money_get [C++], get
 ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
-ms.openlocfilehash: 40ce364d768e682c9e85506d2af9e46a01c76e65
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eb5e1a7b83db561687f83be96c79add8b54589e8
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383531"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455550"
 ---
 # <a name="moneyget-class"></a>money_get 클래스
 
@@ -36,10 +36,10 @@ class money_get : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*<br/>
+*CharType*\
 로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
-*InputIterator*<br/>
+*InputIterator*\
 get 함수가 입력을 읽어올 반복기의 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -48,7 +48,7 @@ get 함수가 입력을 읽어올 반복기의 형식입니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[money_get](#money_get)|통화 값을 나타내는 시퀀스에서 숫자 값을 추출하는 데 사용되는 `money_get` 형식의 개체에 대한 생성자입니다.|
 
@@ -62,7 +62,7 @@ get 함수가 입력을 읽어올 반복기의 형식입니다.
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[do_get](#do_get)|통화 값을 나타내는 문자 시퀀스에서 숫자 값을 추출하기 위해 호출하는 가상 함수입니다.|
 |[get](#get)|통화 값을 나타내는 문자 시퀀스에서 숫자 값을 추출합니다.|
@@ -105,22 +105,22 @@ virtual iter_type do_get(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*<br/>
+*기본*\
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*<br/>
+*최신*\
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*Intl*<br/>
+*전화*\
 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*Iosbase*<br/>
+*Iosbase*\
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*상태*<br/>
+*상태일*\
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*val*<br/>
+*짧은*\
 변환된 시퀀스를 저장하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -129,9 +129,9 @@ virtual iter_type do_get(iter_type first,
 
 ### <a name="remarks"></a>설명
 
-첫 번째 보호된 가상 구성원 함수는 비어 있지 않은 완전한 통화 입력 필드를 인식할 때까지 시퀀스 [ `first`, `last`)에서 처음 시작되는 순차 요소 일치를 시도합니다. 경우 성공 하면이 필드를 변환할 필요에 따라 앞에 빼기 기호 하나 이상의 10 진수 숫자 시퀀스 ( `-`), 크기를 표시 하 고 결과를 저장 합니다 [string_type](#string_type) 개체 *val*. 이 함수는 통화 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 함수에서 빈 시퀀스를 저장 하는 고, 그렇지 *val* 집합과 `ios_base::failbit` 에서 *상태*합니다. 그리고 유효한 통화 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 `last`와 같으면 함수는 `State`에서 `ios_base::eofbit`를 설정합니다.
+첫 번째 보호된 가상 구성원 함수는 비어 있지 않은 완전한 통화 입력 필드를 인식할 때까지 시퀀스 [ `first`, `last`)에서 처음 시작되는 순차 요소 일치를 시도합니다. 성공 하는 경우이 필드를 하나 이상의 10 진수의 시퀀스로 변환 하 고, 필요에 따라 빼기 기호 () `-`뒤에 빼기 기호 ()를 표시 하 고 결과를 [string_type](#string_type) 개체 *val*에 저장 합니다. 이 함수는 통화 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않으면 함수는 비어 있는 시퀀스를 *val* 에 저장 하 `ios_base::failbit` 고 *상태*를 설정 합니다. 그리고 유효한 통화 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 `last`와 같으면 함수는 `State`에서 `ios_base::eofbit`를 설정합니다.
 
-두 번째 보호 된 가상 구성원 함수 동일 하면 첫 번째 형식의 값을 선택적으로 부호 있는 숫자 시퀀스 변환 성공 한다는 **long double** 에서 해당 값을 저장 하 고 *val*.
+성공 하면 선택적으로 서명 된 숫자 시퀀스를 **long double** 형식의 값으로 변환 하 고 해당 값을 *val*에 저장 한다는 점을 제외 하면 두 번째 가상 보호 된 멤버 함수는 첫 번째 함수와 동일 하 게 동작 합니다.
 
 통화 출력 필드의 형식은 [locale facet](../standard-library/locale-class.md#facet_class)**fac**에 의해 결정됩니다. 이 항목은 유효 호출 [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**>>( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)).
 
@@ -187,22 +187,22 @@ iter_type get(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*first*<br/>
+*기본*\
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*last*<br/>
+*최신*\
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*Intl*<br/>
+*전화*\
 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*Iosbase*<br/>
+*Iosbase*\
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*상태*<br/>
+*상태일*\
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*val*<br/>
+*짧은*\
 변환된 시퀀스를 저장하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -211,7 +211,7 @@ iter_type get(iter_type first,
 
 ### <a name="remarks"></a>설명
 
-두 멤버 함수는 반환 [do_get](#do_get)`(first, last, Intl, Iosbase, State, val)`합니다.
+두 멤버 함수는 모두 [do_get](#do_get)`(first, last, Intl, Iosbase, State, val)`를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -284,22 +284,22 @@ explicit money_get(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs*<br/>
+*참조 (_s)* \
 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 
-에 대 한 가능한 값을 *_Refs* 매개 변수 및 중요성은:
+*_Refs* 매개 변수에 사용할 수 있는 값은 다음과 같습니다.
 
-- 0: 개체의 수명은 포함 하는 로캘에 의해 관리 됩니다.
+- 0: 개체의 수명은이를 포함 하는 로캘로 관리 됩니다.
 
 - 1: 개체의 수명은 수동으로 관리 해야 합니다.
 
-- \> 1: 이러한 값이 정의 되지 않습니다.
+- \> 1: 이러한 값은 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
-생성자를 통해 해당 기준 개체를 초기화 **locale::**[패싯](../standard-library/locale-class.md#facet_class)(*_Refs*).
+생성자는 **locale::** [facet](../standard-library/locale-class.md#facet_class)( *_refs*)를 사용 하 여 해당 기본 개체를 초기화 합니다.
 
 ## <a name="string_type"></a>  money_get::string_type
 
@@ -315,6 +315,6 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 ## <a name="see-also"></a>참고자료
 
-[\<locale>](../standard-library/locale.md)<br/>
-[facet 클래스](../standard-library/locale-class.md#facet_class)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[facet 클래스](../standard-library/locale-class.md#facet_class)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

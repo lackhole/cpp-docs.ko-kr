@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - gslice_array class
 ms.assetid: ad1b4514-b14a-4baf-a293-d5a8e8674c75
-ms.openlocfilehash: 1485b68f29651c0c42048fea02a8320ced8748aa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 37c54d09fdfe920c832c4baa7984fee4e090d04a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159559"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448924"
 ---
 # <a name="gslicearray-class"></a>gslice_array 클래스
 
@@ -54,15 +54,15 @@ public:
 
 ## <a name="remarks"></a>설명
 
-개체에 대 한 참조를 저장 하는 개체를 설명 하는 클래스 `va` 클래스의 [valarray](../standard-library/valarray-class.md)**\<유형 >**, 개체와 함께 `gs` 클래스의 [ gslice](../standard-library/gslice-class.md) 에서 선택할 요소의 시퀀스를 설명 하는 `valarray<Type>` 개체입니다.
+이 `va` 클래스는 선택할 요소의 시퀀스를 설명 하는 [gslice](../standard-library/gslice-class.md) 클래스의 개체 `gs` 와 함께 [valarray](../standard-library/valarray-class.md) **\<형식 >** 클래스의 개체에 대 한 참조를 저장 하는 개체를 설명 합니다. `valarray<Type>` 개체입니다.
 
-생성 하는 `gslice_array<Type>` 개체 형식의 식을 작성 해야만 [va&#91;gs&#93;](../standard-library/valarray-class.md#op_at)합니다. Gslice_array 클래스의 멤버 함수에 대해 정의 된 해당 함수 시그니처 처럼 동작 `valarray<Type>`에 선택한 요소의 시퀀스에만 영향을 제외 하 고, 합니다.
+[Va&#91;gs&#93;](../standard-library/valarray-class.md#op_at)형식의 `gslice_array<Type>` 식을 작성 하 여 개체를 생성 합니다. 그러면 gslice_array 클래스의 멤버 함수는 선택한 요소의 시퀀스에만 영향을 주는 `valarray<Type>`점을 제외 하 고에 대해 정의 된 해당 함수 서명 처럼 동작 합니다.
 
 템플릿 클래스는 특정 valarray 작업에 의해 간접적으로 생성되며 프로그램에서 직접 사용할 수는 없습니다. 내부 보조 템플릿 클래스는 다음과 같은 조각 아래 첨자 연산자에서 사용됩니다.
 
-`gslice_array`\< **Type**> `valarray`\< **Type**>:: `operator[]`(**constgslice&**).
+`gslice_array`\< **Type**> `valarray`\< **Type**>:: `operator[]`(**constgslice&** ).
 
-생성을 `gslice_array<Type>` 개체 형식의 식을 작성 해야만 `va[gsl]`, 분할 영역에 대 한 `gsl` valarray의 `va`합니다. Gslice_array 클래스의 멤버 함수에 대해 정의 된 해당 함수 시그니처 처럼 동작 `valarray<Type>`에 선택한 요소의 시퀀스에만 영향을 제외 하 고, 합니다. gslice_array에 의해 제어되는 시퀀스는 조각 생성자의 3개 매개 변수(첫 번째 조각의 첫 번째 요소 인덱스, 각 조각의 요소 수 및 각 조각에 있는 요소 간 거리)로 정의됩니다.
+Valarray `gslice_array<Type>` `va[gsl]` 의조각`gsl` 에 대해 폼의 식을 작성 하 여 개체를 생성 합니다. `va` 그러면 gslice_array 클래스의 멤버 함수는 선택한 요소의 시퀀스에만 영향을 주는 `valarray<Type>`점을 제외 하 고에 대해 정의 된 해당 함수 서명 처럼 동작 합니다. gslice_array에 의해 제어되는 시퀀스는 조각 생성자의 3개 매개 변수(첫 번째 조각의 첫 번째 요소 인덱스, 각 조각의 요소 수 및 각 조각에 있는 요소 간 거리)로 정의됩니다.
 
 다음 예제에서는
 
@@ -89,4 +89,4 @@ slice_array를 선언하고 사용하는 방법의 예제는 [gslice::gslice](..
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - cmath header
 ms.assetid: 80df1dba-60ca-4918-9c2e-fbf446eaa7d6
-ms.openlocfilehash: 1b581e19d53be6faddb983f12d739f2a199b2e9c
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: d01b02d8fa169aa7fddbc3e51d75e5328b400d2b
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244741"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459271"
 ---
 # <a name="ltcmathgt"></a>&lt;cmath&gt;
 
@@ -358,7 +358,7 @@ float fmaf(float x, float y, float z);
 long double fmal(long double x, long double y, long double z);
 ```
 
-## <a name="classification--comparison-functions"></a>분류 / 비교 함수
+## <a name="classification--comparison-functions"></a>분류/비교 함수
 
 ```cpp
 int fpclassify(float x);
@@ -409,7 +409,7 @@ float assoc_laguerref(unsigned n, unsigned m, float x);
 long double assoc_laguerrel(unsigned n, unsigned m, long double x);
 ```
 
-### <a name="associated-legendre-functions"></a>관련된 Legendre 함수
+### <a name="associated-legendre-functions"></a>연결 된 Legendre 함수
 
 ```cpp
 double assoc_legendre(unsigned l, unsigned m, double x);
@@ -417,7 +417,7 @@ float assoc_legendref(unsigned l, unsigned m, float x);
 long double assoc_legendrel(unsigned l, unsigned m, long double x);
 ```
 
-### <a name="beta-function"></a>베타 함수
+### <a name="beta-function"></a>Beta 함수
 
 ```cpp
 double beta(double x, double y);
@@ -425,7 +425,7 @@ float betaf(float x, float y);
 long double betal(long double x, long double y);
 ```
 
-### <a name="complete-elliptic-integral-of-the-first-kind"></a>첫 번째 종류의 완전 한 타원 적분
+### <a name="complete-elliptic-integral-of-the-first-kind"></a>첫 번째 종류의 타원 정수 계열 완료
 
 ```cpp
 double comp_ellint_1(double k);
@@ -433,7 +433,7 @@ float comp_ellint_1f(float k);
 long double comp_ellint_1l(long double k);
 ```
 
-### <a name="complete-elliptic-integral-of-the-second-kind"></a>두 번째 종류의 완전 한 타원 적분
+### <a name="complete-elliptic-integral-of-the-second-kind"></a>두 번째 종류의 타원 정수 계열 완료
 
 ```cpp
 double comp_ellint_2(double k);
@@ -441,7 +441,7 @@ float comp_ellint_2f(float k);
 long double comp_ellint_2l(long double k);
 ```
 
-### <a name="complete-elliptic-integral-of-the-third-kind"></a>세 번째 종류의 완전 한 타원 적분
+### <a name="complete-elliptic-integral-of-the-third-kind"></a>세 번째 종류의 타원 정수 계열 완료
 
 ```cpp
 double comp_ellint_3(double k, double nu);
@@ -449,7 +449,7 @@ float comp_ellint_3f(float k, float nu);
 long double comp_ellint_3l(long double k, long double nu);
 ```
 
-### <a name="regular-modified-cylindrical-bessel-functions"></a>일반 수정 원통형 Bessel 함수
+### <a name="regular-modified-cylindrical-bessel-functions"></a>일반 수정 된 원통형 Bessel 함수
 
 ```cpp
 double cyl_bessel_i(double nu, double x);
@@ -457,7 +457,7 @@ float cyl_bessel_if(float nu, float x);
 long double cyl_bessel_il(long double nu, long double x);
 ```
 
-### <a name="cylindrical-bessel-functions-of-the-first-kind"></a>첫 번째 종류의 Bessel 함수를 원통형
+### <a name="cylindrical-bessel-functions-of-the-first-kind"></a>첫 번째 종류의 원통형 Bessel 함수
 
 ```cpp
 double cyl_bessel_j(double nu, double x);
@@ -465,7 +465,7 @@ float cyl_bessel_jf(float nu, float x);
 long double cyl_bessel_jl(long double nu, long double x);
 ```
 
-### <a name="irregular-modified-cylindrical-bessel-functions"></a>비정상 원통형 Bessel 함수 수정
+### <a name="irregular-modified-cylindrical-bessel-functions"></a>불규칙 하 게 수정 된 원통형 Bessel 함수
 
 ```cpp
 double cyl_bessel_k(double nu, double x);
@@ -481,7 +481,7 @@ float cyl_neumannf(float nu, float x);
 long double cyl_neumannl(long double nu, long double x);
 ```
 
-### <a name="incomplete-elliptic-integral-of-the-first-kind"></a>첫 번째 종류의 불완전 한 타원 적분
+### <a name="incomplete-elliptic-integral-of-the-first-kind"></a>첫 번째 종류의 완전 하지 않은 타원 정수
 
 ```cpp
 double ellint_1(double k, double phi);
@@ -489,7 +489,7 @@ float ellint_1f(float k, float phi);
 long double ellint_1l(long double k, long double phi);
 ```
 
-### <a name="incomplete-elliptic-integral-of-the-second-kind"></a>두 번째 종류의 불완전 한 타원 적분
+### <a name="incomplete-elliptic-integral-of-the-second-kind"></a>두 번째 종류의 타원 정수 계열이 불완전 합니다.
 
 ```cpp
 double ellint_2(double k, double phi);
@@ -497,7 +497,7 @@ float ellint_2f(float k, float phi);
 long double ellint_2l(long double k, long double phi);
 ```
 
-### <a name="incomplete-elliptic-integral-of-the-third-kind"></a>세 번째 종류의 불완전 한 타원 적분
+### <a name="incomplete-elliptic-integral-of-the-third-kind"></a>세 번째 종류의 완전 하지 않은 타원 정수
 
 ```cpp
 double ellint_3(double k, double nu, double phi);
@@ -505,7 +505,7 @@ float ellint_3f(float k, float nu, float phi);
 long double ellint_3l(long double k, long double nu, long double phi);
 ```
 
-### <a name="exponential-integral"></a>지 수 적분
+### <a name="exponential-integral"></a>지 수 정수
 
 ```cpp
 double expint(double x);
@@ -537,7 +537,7 @@ float legendref(unsigned l, float x);
 long double legendrel(unsigned l, long double x);
 ```
 
-### <a name="riemann-zeta-function"></a>리만 제타 함수
+### <a name="riemann-zeta-function"></a>Reimann 제타 함수
 
 ```cpp
 double riemann_zeta(double x);
@@ -545,7 +545,7 @@ float riemann_zetaf(float x);
 long double riemann_zetal(long double x);
 ```
 
-### <a name="spherical-bessel-functions-of-the-first-kind"></a>첫 번째 종류의 Bessel 함수 구면
+### <a name="spherical-bessel-functions-of-the-first-kind"></a>첫 번째 종류의 구면 Bessel 함수
 
 ```cpp
 double sph_bessel(unsigned n, double x);
@@ -553,7 +553,7 @@ float sph_besself(unsigned n, float x);
 long double sph_bessell(unsigned n, long double x);
 ```
 
-### <a name="spherical-associated-legendre-functions"></a>구면 관련된 Legendre 함수
+### <a name="spherical-associated-legendre-functions"></a>구면 연결 된 Legendre 함수
 
 ```cpp
 double sph_legendre(unsigned l, unsigned m, double theta);
@@ -575,6 +575,6 @@ long double sph_neumannl(unsigned n, long double x);
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

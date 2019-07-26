@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::auto_ptr [C++], release
 - std::auto_ptr [C++], reset
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
-ms.openlocfilehash: c64865c98f52f68fcb6d38160ac885657a7b8916
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 14841662235f075d74120673208dd54531763c09
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244001"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456707"
 ---
 # <a name="autoptr-class"></a>auto_ptr 클래스
 
@@ -63,7 +63,7 @@ class auto_ptr {
 
 ## <a name="remarks"></a>설명
 
-이라는 스마트 포인터를 설명 하는 템플릿 클래스는 `auto_ptr`, 할당 된 개체입니다. 포인터 여야 null 이거나 지정 하 여 할당 된 개체 **새**합니다. 저장된 값이 다른 개체에 할당되면 `auto_ptr`이 소유권을 전송합니다. null 포인터를 사용한 전송 후 저장된 값을 대체합니다. `auto_ptr<Type>`에 대한 소멸자는 할당된 개체를 삭제합니다. `auto_ptr<Type>`은 예외가 발생하는 경우에도 제어가 블록을 나갈 때 할당된 개체가 자동으로 삭제되도록 합니다. 동일한 개체를 소유하는 두 개의 `auto_ptr<Type>` 개체를 생성하면 안 됩니다.
+템플릿 클래스는 할당 된 개체에 대 한 이라는 `auto_ptr`스마트 포인터를 설명 합니다. 포인터는 null 이거나 **new**로 할당 된 개체를 지정 해야 합니다. 저장된 값이 다른 개체에 할당되면 `auto_ptr`이 소유권을 전송합니다. null 포인터를 사용한 전송 후 저장된 값을 대체합니다. `auto_ptr<Type>`에 대한 소멸자는 할당된 개체를 삭제합니다. `auto_ptr<Type>`은 예외가 발생하는 경우에도 제어가 블록을 나갈 때 할당된 개체가 자동으로 삭제되도록 합니다. 동일한 개체를 소유하는 두 개의 `auto_ptr<Type>` 개체를 생성하면 안 됩니다.
 
 함수 호출에 대한 인수로 `auto_ptr<Type>` 개체 값을 전달할 수 있습니다. `auto_ptr`은 표준 라이브러리 컨테이너의 요소일 수 없습니다. C++ 표준 라이브러리 컨테이너를 사용하여 `auto_ptr<Type>` 개체의 시퀀스를 안정적으로 관리할 수 없습니다.
 
@@ -99,7 +99,7 @@ class auto_ptr {
 |[operator auto_ptr\<Other>](#op_auto_ptr_lt_other_gt)|한 종류의 `auto_ptr`에서 다른 종류의 `auto_ptr`로 캐스팅합니다.|
 |[operator auto_ptr_ref\<Other>](#op_auto_ptr_ref_lt_other_gt)|`auto_ptr`에서 `auto_ptr_ref`로 캐스팅합니다.|
 
-### <a name="auto_ptr"></a> auto_ptr
+### <a name="auto_ptr"></a>auto_ptr
 
 `auto_ptr` 형식의 개체에 대한 생성자입니다.
 
@@ -124,11 +124,11 @@ auto _ptr(auto _ptr<Other>& right) throw();
 
 #### <a name="remarks"></a>설명
 
-첫 번째 생성자 저장소 *ptr* 에서 `myptr`, 할당된 된 개체에 저장 된 포인터입니다. 두 번째 생성자는 저장 된 포인터의 소유권을 전송 *오른쪽*에 저장 하 여 *오른쪽*합니다. [릴리스](#release) 에서 `myptr`합니다.
+첫 번째 생성자는  할당 된 `myptr`개체에 대 한 저장 된 포인터인 ptr를 저장 합니다. 두 번째 생성자는 right를 저장 하 여 *오른쪽*에 저장 된 포인터의 소유권을 전송 *합니다.* [](#release) 에서`myptr`릴리스.
 
-세 번째 생성자는 동일 하 게 동작의 두 번째 저장 한다는 점을 제외 하 고 `right`입니다. `ref`. `release` `myptr`, 여기서 `ref` 에 저장 된 참조 `right`합니다.
+세 번째 생성자는를 저장 `right`한다는 점을 제외 하 고 두 번째 생성자와 동일 하 게 동작 합니다. `ref`. `release`에서는 에`right`저장 된 참조입니다. `ref` `myptr`
 
-템플릿 생성자는 동일 하 게 두 번째 생성자는 제공 하는에 대 한 포인터 `Other` 에 대 한 포인터로 암시적으로 변환할 수 `Type`입니다.
+에 `Other` 대 한 포인터를에 대 `Type`한 포인터로 암시적으로 변환할 수 있는 경우 템플릿 생성자는 두 번째 생성자와 동일 하 게 동작 합니다.
 
 #### <a name="example"></a>예제
 
@@ -189,7 +189,7 @@ Constructing 00311AF8
 Destructing 00311AF8
 ```
 
-### <a name="element_type"></a> element_type
+### <a name="element_type"></a>element_type
 
 이 형식은 템플릿 매개 변수 `Type`의 동의어입니다.
 
@@ -207,7 +207,7 @@ Type *get() const throw();
 
 #### <a name="return-value"></a>반환 값
 
-저장 된 포인터 `myptr`합니다.
+저장 된 포인터 `myptr`입니다.
 
 #### <a name="example"></a>예제
 
@@ -256,7 +256,7 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-### <a name="op_eq"></a> 연산자 =
+### <a name="op_eq"></a>연산자 =
 
 한 `auto_ptr` 개체에서 다른 개체로 소유권을 전송하는 대입 연산자입니다.
 
@@ -278,13 +278,13 @@ auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 
 #### <a name="remarks"></a>설명
 
-할당 식을 `delete myptr`, 경우에 저장 된 포인터를 `myptr` 할당의 결과로 변경 합니다. 다음에 저장 된 포인터의 소유권을 전송 *오른쪽*에 저장 하 여 *오른쪽*.[ 릴리스](#release) 에서 `myptr`합니다. 함수는 __\*this__를 반환합니다.
+할당은 식을 `delete myptr`평가 하지만 저장 된 포인터가 `myptr` 할당의 결과로 변경 되는 경우에만 적용 됩니다. 그런 다음 right를 저장 하 여 *오른쪽*에 저장 된 포인터의 소유권을 *전송 합니다.* [](#release) 에서`myptr`릴리스. 함수는 __\*this__를 반환합니다.
 
 #### <a name="example"></a>예제
 
-멤버 연산자의 사용 예제를 보려면 [auto_ptr](#auto_ptr)합니다.
+멤버 연산자 사용에 대 한 예제는 [auto_ptr](#auto_ptr)를 참조 하세요.
 
-### <a name="op_star"></a> 연산자 *
+### <a name="op_star"></a>연산자
 
 `auto_ptr` 형식의 개체에 대한 역참조 연산자입니다.
 
@@ -294,7 +294,7 @@ Type& operator*() const throw();
 
 #### <a name="return-value"></a>반환 값
 
-형식의 개체에 대 한 참조 `Type` 포인터를 소유 하는 합니다.
+포인터가 소유 하는 형식의 `Type` 개체에 대 한 참조입니다.
 
 #### <a name="remarks"></a>설명
 
@@ -302,9 +302,9 @@ Type& operator*() const throw();
 
 #### <a name="example"></a>예제
 
-멤버 함수를 사용 하는 방법의 예제를 참조 하세요 [auto_ptr](#auto_ptr)합니다.
+멤버 함수를 사용 하는 방법에 대 한 예제는 [auto_ptr](#auto_ptr)를 참조 하세요.
 
-### <a name="op_arrow"></a> 연산자-&gt;
+### <a name="op_arrow"></a>연산자&gt;
 
 멤버 액세스를 허용하기 위한 연산자입니다.
 
@@ -314,17 +314,17 @@ Type * operator->() const throw();
 
 #### <a name="return-value"></a>반환 값
 
-개체의 멤버는 `auto_ptr` 소유 합니다.
+을 소유 하 `auto_ptr` 는 개체의 멤버입니다.
 
 #### <a name="remarks"></a>설명
 
-선택 연산자는 [get](#get)`( )`을 반환합니다. 따라서 *ap*-> **member** 식은 ( *ap*. **get**( ) )-> **member**와 동일하게 동작합니다. 여기서 *ap*는 `auto_ptr`\< **Type**> 클래스의 개체입니다. 따라서 저장 된 포인터를 null 이어야 합니다 하 고 `Type` 클래스, 구조체 또는 공용 구조체 형식과 해야는 `member` 멤버입니다.
+선택 연산자는 [get](#get)`( )`을 반환합니다. 따라서 *ap*-> **member** 식은 ( *ap*. **get**( ) )-> **member**와 동일하게 동작합니다. 여기서 *ap*는 `auto_ptr`\< **Type**> 클래스의 개체입니다. 따라서 저장 된 포인터는 null이 아니어야 하며 `Type` `member` 멤버를 포함 하는 클래스, 구조체 또는 공용 구조체 형식 이어야 합니다.
 
 #### <a name="example"></a>예제
 
-멤버 함수를 사용 하는 방법의 예제를 참조 하세요 [auto_ptr](#auto_ptr)합니다.
+멤버 함수를 사용 하는 방법에 대 한 예제는 [auto_ptr](#auto_ptr)를 참조 하세요.
 
-### <a name="op_auto_ptr_lt_other_gt"></a> operator auto_ptr&lt;다른&gt;
+### <a name="op_auto_ptr_lt_other_gt"></a>auto_ptr&lt;연산자&gt;
 
 한 종류의 `auto_ptr`에서 다른 종류의 `auto_ptr`로 캐스팅합니다.
 
@@ -354,7 +354,7 @@ int main()
 }
 ```
 
-### <a name="op_auto_ptr_ref_lt_other_gt"></a> operator auto_ptr_ref&lt;다른&gt;
+### <a name="op_auto_ptr_ref_lt_other_gt"></a>auto_ptr_ref&lt;연산자&gt;
 
 `auto_ptr`에서 `auto_ptr_ref`로 캐스팅합니다.
 
@@ -415,7 +415,7 @@ main exiting
 ~C:  1
 ```
 
-### <a name="release"></a> 릴리스
+### <a name="release"></a>릴리스
 
 이 멤버는 저장된 포인터 `myptr`을 null 포인터로 대체하고 이전에 저장된 포인터를 반환합니다.
 
@@ -477,9 +477,9 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-### <a name="reset"></a> 다시 설정
+### <a name="reset"></a>다시 설정
 
-멤버 함수는 식을 `delete myptr`, 경우에 저장 된 포인터 값 `myptr` 함수 호출의 결과로 변경 합니다. 그런 다음 저장된 포인터를 `ptr`로 바꿉니다.
+멤버 함수는 저장 된 포인터 `delete myptr`값 `myptr` 이 함수 호출의 결과로 변경 되는 경우에만 식을 계산 합니다. 그런 다음 저장된 포인터를 `ptr`로 바꿉니다.
 
 ```cpp
 void reset(Type* ptr = 0);
@@ -488,7 +488,7 @@ void reset(Type* ptr = 0);
 #### <a name="parameters"></a>매개 변수
 
 *ptr*\
-저장 된 포인터를 바꾸려면 지정 된 포인터 `myptr`합니다.
+저장 된 포인터 `myptr`를 바꾸도록 지정 된 포인터입니다.
 
 #### <a name="example"></a>예제
 
@@ -539,4 +539,4 @@ Destructing 00311B88 Value: 6
 
 ## <a name="see-also"></a>참고자료
 
-[unique_ptr 클래스](../standard-library/unique-ptr-class.md)<br/>
+[unique_ptr 클래스](../standard-library/unique-ptr-class.md)

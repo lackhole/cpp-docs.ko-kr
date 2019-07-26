@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - add_lvalue_reference
 ms.assetid: 9933afc2-ad0d-465d-98fe-7d547fa3efe2
-ms.openlocfilehash: 8dbb4f91da8d7a0bf0a90b3edc4fce2918d52a9b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6317b6665adb7f3a06da564fcf049d0b64eb42e8
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411203"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456571"
 ---
 # <a name="addlvaluereference-class"></a>add_lvalue_reference 클래스
 
@@ -29,12 +29,12 @@ using add_lvalue_reference_t = typename add_lvalue_reference<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 수정자의 인스턴스는 수정 된 형식인 됩니다 *T* 하는 경우 *T* lvalue 참조 인 라인인 `T&`합니다.
+형식 한정자의 인스턴스는 *t* 가 lvalue 참조 이면 `T&` *t* 인 수정 된 형식을 보유 하 고, 그렇지 않으면입니다.
 
 ## <a name="example"></a>예제
 
@@ -67,5 +67,5 @@ add_lvalue_reference_t<int> == int
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_reference 클래스](../standard-library/remove-reference-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[remove_reference 클래스](../standard-library/remove-reference-class.md)

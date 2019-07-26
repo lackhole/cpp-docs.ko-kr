@@ -7,12 +7,12 @@ helpviewer_keywords:
 - <cstring> header
 - cstring header
 ms.assetid: d665429f-5d39-4712-9c0a-68c8abcc3536
-ms.openlocfilehash: cc6821d63a42d498347745bb7a96c838fc634415
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 0aa92bc366e6f669c01932c2b44413cfc587c16d
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246614"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449334"
 ---
 # <a name="ltcstringgt"></a>&lt;cstring&gt;
 
@@ -72,6 +72,6 @@ size_t strlen(const char* s);
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

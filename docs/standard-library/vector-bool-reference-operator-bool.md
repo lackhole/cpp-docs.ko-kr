@@ -10,16 +10,16 @@ helpviewer_keywords:
 - BOOL operator
 - reference::operator bool
 ms.assetid: b0e57869-18cc-4296-9061-da502f30120d
-ms.openlocfilehash: 7fa95b3037538ccbbf27fa5b9749dc21f72670cd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca2d21a7706248cd84ca3591eb717e4081972f9c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410917"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452118"
 ---
 # <a name="vectorltboolgtreferenceoperator-bool"></a>vector&lt;bool&gt;::reference::operator bool
 
-암시적으로 변환 `vector<bool>::reference` 하 **bool**합니다.
+에서 `vector<bool>::reference` **bool**로의 암시적 변환을 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,5 +43,5 @@ operator bool() const;
 
 ## <a name="see-also"></a>참고자료
 
-[벡터\<bool >:: reference 클래스](../standard-library/vector-bool-reference-class.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[vector\<bool>::reference 클래스](../standard-library/vector-bool-reference-class.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

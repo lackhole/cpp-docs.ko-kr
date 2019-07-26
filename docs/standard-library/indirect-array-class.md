@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - indirect_array class
 ms.assetid: 10e1eaea-ba5a-405c-a25e-7bdd3eee7fc7
-ms.openlocfilehash: 43c54bf3dae02eb117b15cae0dd7de9bb4a9db51
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5db5f2ce60038267b70ae8e77d9dd929d972af6a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404994"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456335"
 ---
 # <a name="indirectarray-class"></a>indirect_array 클래스
 
@@ -21,11 +21,11 @@ ms.locfileid: "62404994"
 
 ## <a name="remarks"></a>설명
 
-개체에 대 한 참조를 저장 하는 개체를 설명 하는 클래스 `va` 클래스의 [valarray](../standard-library/valarray-class.md)**\<유형 >**, 개체와 함께 `xa` 클래스의 `valarray<size_t>`, 선택할 요소의 시퀀스를 설명 하는 `valarray<Type>` 개체입니다.
+이 클래스는 선택할 요소의 시퀀스를 설명 하 `va` 는 클래스 `valarray<size_t>`의 개체 `xa` 와 함께 [valarray](../standard-library/valarray-class.md) **\<형식 >** 클래스의 개체에 대 한 참조를 저장 하는 개체를 설명 합니다. `valarray<Type>` 개체입니다.
 
-생성 하는 `indirect_array<Type>` 개체 형식의 식을 작성 해야만 `va[xa]`합니다. Indirect_array 클래스의 멤버 함수에 대해 정의 된 해당 함수 시그니처 처럼 동작 `valarray<Type>`에 선택한 요소의 시퀀스에만 영향을 제외 하 고, 합니다.
+`indirect_array<Type>` 폼`va[xa]`의 식을 작성 하 여 개체를 생성 합니다. 그러면 indirect_array 클래스의 멤버 함수는 선택한 요소의 시퀀스에만 영향을 주는 `valarray<Type>`점을 제외 하 고에 대해 정의 된 해당 함수 서명 처럼 동작 합니다.
 
-시퀀스 이루어져 **xa.** [크기](../standard-library/valarray-class.md#size) 요소에 있는 요소 `I` 인덱스가 됩니다 **xa**[ `I`] 내에서 `va`합니다.
+이 시퀀스는 xa로 구성 됩니다 **.** [요소의 크기를 조정](../standard-library/valarray-class.md#size) `I` `va`합니다. 여기서 요소는의 `I`인덱스 **xa**[]가 됩니다.
 
 ## <a name="example"></a>예제:
 
@@ -81,4 +81,4 @@ The modified operand valarray is:  (0 -1 10 -1 10 -1 10 -1 8 -1).
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

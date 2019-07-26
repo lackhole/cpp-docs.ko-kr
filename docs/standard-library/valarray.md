@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - valarray header
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-ms.openlocfilehash: 9154f15500863d815f56438090662416b9b6fe7f
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: c18b72017e4999e377bf8575f624f8fdda5b0caf
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246651"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448346"
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 
@@ -24,11 +24,11 @@ ms.locfileid: "68246651"
 **네임스페이스:** std
 
 > [!NOTE]
-> \<valarray > 라이브러리를 사용 하 여는 ' #include < initializer_list >' 문.
+> Valarray > 라이브러리는 \<' #include < initializer_list > ' 문을 사용 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 템플릿 클래스와 함수는 향상된 성능을 위해 특이한 방식으로 허용됩니다. 특히, 반환 하는 함수 형식 `valarray<T1>` 다른 형식 T2의 개체를 반환할 수 있습니다. 형식의 하나 이상의 인수를 허용 하는 함수에 이런 경우 `valarray<T2>` 각각 T2 형식의 인수로 대체 이러한 인수의 임의 조합을 허용 하는 오버 로드가 있어야 합니다.
+이러한 템플릿 클래스와 함수는 향상된 성능을 위해 특이한 방식으로 허용됩니다. 특히 형식을 `valarray<T1>` 반환 하는 모든 함수는 다른 형식 t 2의 개체를 반환할 수 있습니다. 이 경우 형식의 `valarray<T2>` 인수를 하나 이상 허용 하는 함수에는 각각 T2 형식의 인수로 대체 된 인수의 임의 조합을 허용 하는 오버 로드가 있어야 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -89,15 +89,15 @@ ms.locfileid: "68246651"
 |[mask_array 클래스](../standard-library/mask-array-class.md)|하위 집합 배열 간의 작업을 제공하여 부울 식으로 지정된 부모 valarray의 하위 집합인 개체를 지원하는 내부 보조 템플릿 클래스입니다.|
 |[slice 클래스](../standard-library/slice-class.md)|valarray의 벡터와 유사한 1차원 하위 집합을 정의하는 데 사용되는 valarray에 대한 유틸리티 클래스입니다.|
 |[slice_array 클래스](../standard-library/slice-array-class.md)|valarray의 조각으로 정의된 하위 집합 배열 간의 작업을 제공하여 조각 개체를 지원하는 내부 보조 템플릿 클래스입니다.|
-|[valarray 클래스](../standard-library/valarray-class.md)|형식의 요소 시퀀스를 제어 하는 개체를 설명 하는 템플릿 클래스 `Type` 배열로 저장 되 고 컴퓨팅 성능에 최적화 되어 고속 수치 연산을 수행 하도록 설계 되어 있습니다.|
+|[valarray 클래스](../standard-library/valarray-class.md)|이 템플릿 클래스는 배열로 저장 되어 고속 수치 연산을 수행 하도록 설계 된 `Type` 형식의 요소 시퀀스를 제어 하는 개체를 설명 합니다 .이 개체는 계산 성능에 최적화 되어 있습니다.|
 
 ### <a name="specializations"></a>특수화
 
 |||
 |-|-|
-|[valarray\<bool> 클래스](../standard-library/valarray-bool-class.md)|템플릿 클래스 valarray의 특수 버전\<**형식을**> 형식의 요소에 **bool**합니다.|
+|[valarray\<bool> 클래스](../standard-library/valarray-bool-class.md)|템플릿 클래스 valarray\<**형식의**특수 버전은 **bool**형식의 요소에 > 합니다.|
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

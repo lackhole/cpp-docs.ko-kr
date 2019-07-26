@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - sync_per_container class
 ms.assetid: 0b4b2904-b668-4d94-a422-d4f919cbffab
-ms.openlocfilehash: 641595f663c382129a40ce503ebdb789f8042cf0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 378451ac2643d62271fd9e7fa44706a84ee8bb83
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412165"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450284"
 ---
 # <a name="syncpercontainer-class"></a>sync_per_container 클래스
 
@@ -34,7 +34,7 @@ class sync_per_container
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[equals](#equals)|두 캐시가 같은지 비교합니다.|
 
@@ -61,10 +61,10 @@ bool equals(const sync_per_container<Cache>& Other) const;
 
 ### <a name="return-value"></a>반환 값
 
-멤버 함수는 항상 반환 **false**합니다.
+멤버 함수는 항상 **false**를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
 ## <a name="see-also"></a>참고자료
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

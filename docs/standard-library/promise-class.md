@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::promise [C++], set_value
 - std::promise [C++], set_value_at_thread_exit
 - std::promise [C++], swap
-ms.openlocfilehash: 991df549168456112afe27bed6f4991a7ccfb88e
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: 560339dee5b13ddc13ff2f8af8283ea8615d804a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400866"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458355"
 ---
 # <a name="promise-class"></a>promise 클래스
 
@@ -59,7 +59,7 @@ class promise;
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[promise::operator=](#op_eq)|이 promise 개체의 공유 상태에 대한 할당입니다.|
 
@@ -69,7 +69,7 @@ class promise;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<향후 >
+**헤더:** \<이후 >
 
 **네임스페이스:** std
 
@@ -97,7 +97,7 @@ promise& operator=(promise&& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*기타*<br/>
+*다른*\
 `promise` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -106,7 +106,7 @@ promise& operator=(promise&& Other) noexcept;
 
 ### <a name="remarks"></a>설명
 
-이 연산자 전송에서 연결된 된 비동기 상태 *다른*합니다. 전송 후 *다른* 됩니다 *빈*합니다.
+이 연산자는 연결 된 비동기 상태를 *다른*에서 전송 합니다. 전송 후 *다른* 는 *비어*있습니다.
 
 ## <a name="promise"></a>  promise::promise 생성자
 
@@ -121,19 +121,19 @@ promise(promise&& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Al*<br/>
+*항상*\
 메모리 할당자입니다. 자세한 내용은 [\<allocators>](../standard-library/allocators-header.md)를 참조하세요.
 
-*기타*<br/>
+*다른*\
 `promise` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자 구문을 *빈* `promise` 개체입니다.
+첫 번째 생성자는 *빈* `promise` 개체를 생성 합니다.
 
-두 번째 생성자는 빈 생성 `promise` 사용 하 여 개체 *Al* 메모리 할당에 대 한 합니다.
+두 번째 생성자는 빈 `promise` 개체를 생성 하 고 메모리 할당에 *Al* 을 사용 합니다.
 
-세 번째 생성자 구문을 `promise` 개체와 연결된 된 비동기 상태에서 전송 *다른*, 커지고 *다른* 빈 합니다.
+세 번째 생성자는 개체 `promise` 를 생성 하 여 *다른*에서 연결 된 비동기 상태를 전송 하 고 *나머지* 는 비워 둡니다.
 
 ## <a name="set_exception"></a>  promise::set_exception
 
@@ -145,7 +145,7 @@ void set_exception(exception_ptr Exc);
 
 ### <a name="parameters"></a>매개 변수
 
-*Exc*<br/>
+*전용*\
 이 메서드가 예외 결과로 저장한 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)입니다.
 
 ### <a name="remarks"></a>설명
@@ -166,7 +166,7 @@ void set_exception_at_thread_exit(exception_ptr Exc);
 
 ### <a name="parameters"></a>매개 변수
 
-*Exc*<br/>
+*전용*\
 이 메서드가 예외 결과로 저장한 [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)입니다.
 
 ### <a name="remarks"></a>설명
@@ -190,7 +190,7 @@ void promise<void>::set_value();
 
 ### <a name="parameters"></a>매개 변수
 
-*Val*<br/>
+*짧은*\
 결과로 저장할 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -201,11 +201,11 @@ void promise<void>::set_value();
 
 이 메서드의 결과로 연결된 비동기 상태에서 차단된 모든 스레드의 차단은 해제됩니다.
 
-첫 번째 메서드는 또한 때 throw 되는 모든 예외 throw *Val* 연결된 된 비동기 상태에 복사 됩니다. 이 경우 연결된 비동기 상태는 ready로 설정되지 않습니다.
+첫 번째 메서드는 또한 *Val* 을 연결 된 비동기 상태로 복사할 때 throw 되는 모든 예외를 throw 합니다. 이 경우 연결된 비동기 상태는 ready로 설정되지 않습니다.
 
-두 번째 방법은 또한 때 throw 되는 모든 예외를 throw *Val* 연결 된 비동기 상태로 이동 됩니다. 이 경우 연결된 비동기 상태는 ready로 설정되지 않습니다.
+두 번째 메서드는 또한 *Val* 을 연결 된 비동기 상태로 이동할 때 throw 되는 모든 예외를 throw 합니다. 이 경우 연결된 비동기 상태는 ready로 설정되지 않습니다.
 
-부분 특수화에 대 한 `promise<Ty&>`에 저장된 된 값은 적용에 대 한 참조가 *Val*합니다.
+부분 특수화 `promise<Ty&>`의 경우 저장 된 값은 *Val*에 대 한 참조에 적용 됩니다.
 
 특수화 `promise<void>`에 대해 저장된 값은 없습니다.
 
@@ -222,7 +222,7 @@ void promise<void>::set_value_at_thread_exit();
 
 ### <a name="parameters"></a>매개 변수
 
-*Val*<br/>
+*짧은*\
 결과로 저장할 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -233,11 +233,11 @@ promise 개체에 *연결된 비동기 상태*가 없는 경우 이 메서드는
 
 `set_value`와 달리 이 메서드는 현재 스레드에서 모든 스레드 로컬 개체가 제거될 때까지 연결된 비동기 상태를 ready로 설정하지 않습니다. 일반적으로 연관된 비동기 상태에서 차단된 스레드는 현재 스레드가 종료될 때까지 차단 해제되지 않습니다.
 
-첫 번째 메서드는 또한 때 throw 되는 모든 예외 throw *Val* 연결된 된 비동기 상태에 복사 됩니다.
+첫 번째 메서드는 또한 *Val* 을 연결 된 비동기 상태로 복사할 때 throw 되는 모든 예외를 throw 합니다.
 
-두 번째 방법은 또한 때 throw 되는 모든 예외를 throw *Val* 연결 된 비동기 상태로 이동 됩니다.
+두 번째 메서드는 또한 *Val* 을 연결 된 비동기 상태로 이동할 때 throw 되는 모든 예외를 throw 합니다.
 
-부분 특수화 `promise<Ty&>`에 저장 된 값에 대 한 참조는 사실상 *Val*합니다.
+부분 특수화 `promise<Ty&>`의 경우 저장 된 값은 실제로 *Val*에 대 한 참조입니다.
 
 특수화 `promise<void>`에 대해 저장된 값은 없습니다.
 
@@ -251,9 +251,9 @@ void swap(promise& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*기타*<br/>
+*다른*\
 `promise` 개체입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

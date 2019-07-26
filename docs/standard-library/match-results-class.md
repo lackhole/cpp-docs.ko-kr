@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - match_results class
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
-ms.openlocfilehash: 32a5f9d20999740d4368f7901c797d87acce0be9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72a948c7f8422b36b94a16cdb2c815bca92d20c7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412971"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456383"
 ---
 # <a name="matchresults-class"></a>match_results 클래스
 
@@ -26,10 +26,10 @@ class match_results
 
 ## <a name="parameters"></a>매개 변수
 
-*BidIt*<br/>
+*BidIt*\
 부분 일치에 대한 반복기 형식입니다.
 
-*Alloc*<br/>
+*#C4*\
 스토리지 관리를 위한 할당자의 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -198,7 +198,7 @@ typedef Alloc allocator_type;
 
 ### <a name="remarks"></a>설명
 
-Typedef는 템플릿 인수에 대 한 동의어 *Alloc*합니다.
+Typedef는 템플릿 인수 *할당*의 동의어입니다.
 
 ## <a name="begin"></a>  match_results::begin
 
@@ -298,21 +298,21 @@ string_type format(const string_type& fmt, match_flag_type flags = format_defaul
 
 ### <a name="parameters"></a>매개 변수
 
-*OutIt*<br/>
+*OutIt*\
 출력 반복기 형식입니다.
 
-*out*<br/>
+*out*\
 쓸 출력 스트림입니다.
 
-*fmt*<br/>
+*bcp.fmt*\
 서식 문자열입니다.
 
-*flags*<br/>
+*flags*\
 서식 플래그입니다.
 
 ### <a name="remarks"></a>설명
 
-서식 있는 텍스트 형식으로의 제어를 생성 하는 각 멤버 함수 *fmt*합니다. 첫 번째 멤버 함수는 해당 인수에 의해 정의 된 순서에 서식 있는 텍스트를 씁니다 *아웃* 반환 *out*합니다. 두 번째 멤버 함수는 서식 지정된 텍스트의 복사본이 보관된 문자열 개체를 반환합니다.
+각 멤버 함수는 *fmt*형식의 컨트롤 아래에 서식 있는 텍스트를 생성 합니다. 첫 번째 멤버 함수는 *해당 인수에* 의해 정의 된 시퀀스에 서식 있는 텍스트를 쓰고 *를 반환 합니다*. 두 번째 멤버 함수는 서식 지정된 텍스트의 복사본이 보관된 문자열 개체를 반환합니다.
 
 서식 있는 텍스트를 생성하려면 서식 문자열의 리터럴 텍스트를 일반적으로 대상 시퀀스로 복사합니다. 서식 문자열의 각 이스케이프 시퀀스가 대표 텍스트로 대체됩니다. 복사 및 교체 정보는 함수에 전달된 서식 플래그에서 제어합니다.
 
@@ -350,7 +350,7 @@ difference_type length(size_type sub = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*sub*<br/>
+*부분*\
 부분 일치 항목의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
@@ -369,15 +369,15 @@ match_results(const match_results& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*alloc*<br/>
+*#c4*\
 저장할 할당자 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 복사할 match_results 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 부분 일치 항목을 보유하지 않는 `match_results` 개체를 구성합니다. 두 번째 생성자 구문 한 `match_results` 개체의 복사본 인 *오른쪽*합니다.
+첫 번째 생성자는 부분 일치 항목을 보유하지 않는 `match_results` 개체를 구성합니다. 두 번째 생성자는 `match_results` *오른쪽*의 복사본 인 개체를 생성 합니다.
 
 ## <a name="max_size"></a>  match_results::max_size
 
@@ -401,12 +401,12 @@ match_results& operator=(const match_results& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 복사할 match_results 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자는 제어 하는 시퀀스를 바꿉니다 `*this` 제어 하는 시퀀스의 복사본을 사용 하 여 *오른쪽*합니다.
+멤버 연산자는로 제어 되 `*this` 는 시퀀스를 *right*로 제어 되는 시퀀스의 복사본으로 바꿉니다.
 
 ## <a name="op_at"></a>  match_results::operator[]
 
@@ -418,12 +418,12 @@ const_reference operator[](size_type n) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*n*<br/>
+*n*\
 부분 일치 항목의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 요소에 대 한 참조를 반환 *n* 제어 된 시퀀스 또는 빈에 대 한 참조 `sub_match` 하는 경우 개체 `size() <= n` 경우 또는 캡처 그룹 *n* 부분 일치 항목이 없습니다.
+멤버 함수는 제어 되는 시퀀스의 요소 *n* 에 대 한 참조를 반환 하거나, 캡처 그룹 `sub_match` *n* 이 일치 항목의 일부가 아닌 경우 `size() <= n` 빈 개체에 대 한 참조를 반환 합니다.
 
 ## <a name="position"></a>  match_results::position
 
@@ -435,7 +435,7 @@ difference_type position(size_type sub = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*sub*<br/>
+*부분*\
 부분 일치 항목의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
@@ -500,7 +500,7 @@ string_type str(size_type sub = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*sub*<br/>
+*부분*\
 부분 일치 항목의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
@@ -541,12 +541,12 @@ void swap(const match_results& right) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 바꾸려는 match_results 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는의 내용을 바꿉니다 `*this` 하 고 *오른쪽* 분할 상수 시간에 예외를 throw 하지 않습니다.
+멤버 함수는 및의 `*this` 내용을 일정 한 *시간 내에* 교환 하 고 예외를 throw 하지 않습니다.
 
 ## <a name="value_type"></a>  match_results::value_type
 
@@ -562,4 +562,4 @@ typedef는 `sub_match<BidIt>`형식의 동의어입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[\<regex>](../standard-library/regex.md)<br/>
+[\<regex>](../standard-library/regex.md)

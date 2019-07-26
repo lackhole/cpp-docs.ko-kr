@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::condition_variable::wait
 - std::condition_variable::wait_for
 - std::condition_variable::wait_until
-ms.openlocfilehash: 69f356301ce5b546c8bebe9429ca64fa61eff404
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 999e236433ec4f3f2f52abb06855004a89169fa6
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244634"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449454"
 ---
 # <a name="conditionvariable-class"></a>condition_variable 클래스
 
@@ -56,7 +56,7 @@ class condition_variable;
 |[wait_for](#wait_for)|스레드를 차단하고 스레드가 차단 해제되는 시간 간격을 설정합니다.|
 |[wait_until](#wait_until)|스레드를 차단하고 스레드가 차단 해제되는 최대 시점을 설정합니다.|
 
-## <a name="condition_variable"></a> condition_variable
+## <a name="condition_variable"></a>condition_variable
 
 `condition_variable` 개체를 생성합니다.
 
@@ -80,7 +80,7 @@ native_handle_type native_handle();
 
 `native_handle_type`은 동시성 런타임 내부 데이터 구조에 대한 포인터로 정의됩니다.
 
-## <a name="notify_all"></a> notify_all
+## <a name="notify_all"></a>notify_all
 
 `condition_variable` 개체를 대기 중인 모든 스레드를 차단 해제합니다.
 
@@ -88,7 +88,7 @@ native_handle_type native_handle();
 void notify_all() noexcept;
 ```
 
-## <a name="notify_one"></a> notify_one
+## <a name="notify_one"></a>notify_one
 
 `condition_variable` 개체를 기다리는 스레드 중 하나를 차단 해제합니다.
 
@@ -96,7 +96,7 @@ void notify_all() noexcept;
 void notify_one() noexcept;
 ```
 
-## <a name="wait"></a> 대기
+## <a name="wait"></a>대기한
 
 스레드를 차단합니다.
 
@@ -112,8 +112,8 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
 *Lck*\
 [unique_lock\<mutex>](../standard-library/unique-lock-class.md) 개체입니다.
 
-*pred*\
-반환 하는 식 **true** 하거나 **false**합니다.
+*Pred*\
+**True** 또는 **false**를 반환 하는 식입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -126,7 +126,7 @@ while(!Pred())
     wait(Lck);
 ```
 
-## <a name="wait_for"></a> wait_for
+## <a name="wait_for"></a>wait_for
 
 스레드를 차단하고 스레드가 차단 해제되는 시간 간격을 설정합니다.
 
@@ -151,18 +151,18 @@ bool wait_for(
 *Rel_time*\
 스레드가 대기 모드를 해제하기 전까지의 시간을 지정하는 `chrono::duration` 개체입니다.
 
-*pred*\
-반환 하는 식 **true** 하거나 **false**합니다.
+*Pred*\
+**True** 또는 **false**를 반환 하는 식입니다.
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 메서드는 반환 `cv_status::timeout` 대기가 종료 될 때 하는 경우 *Rel_time* 경과 합니다. 그렇지 않은 경우 메서드는 `cv_status::no_timeout`를 반환합니다.
+첫 번째 메서드는 `cv_status::timeout` *Rel_time* 경과할 때 대기가 종료 되는 경우를 반환 합니다. 그렇지 않은 경우 메서드는 `cv_status::no_timeout`를 반환합니다.
 
-값을 반환 하는 두 번째 방법은 *Pred*합니다.
+두 번째 메서드는 *Pred*의 값을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 방법은 될 때까지 차단 합니다 `condition_variable` 개체를 호출 하 여 신호를 받는 [notify_one](#notify_one) 또는 [notify_all](#notify_all) 되거나 시간 간격 *Rel_time* 경과 합니다. 또한 의사적으로 대기 모드를 해제할 수도 있습니다.
+첫 번째 메서드는 [notify_one](#notify_one) 또는 `condition_variable` [notify_all](#notify_all) 를 호출 하 여 개체가 신호를 받을 때까지 또는 시간 간격이 *Rel_time* 경과할 때까지 차단 합니다. 또한 의사적으로 대기 모드를 해제할 수도 있습니다.
 
 사실 두 번째 방법은 다음 코드를 실행합니다.
 
@@ -209,14 +209,14 @@ bool wait_until(
 *Abs_time*\
 [chrono::time_point](../standard-library/time-point-class.md) 개체입니다.
 
-*pred*\
-반환 하는 식 **true** 하거나 **false**합니다.
+*Pred*\
+**True** 또는 **false**를 반환 하는 식입니다.
 
 ### <a name="return-value"></a>반환 값
 
-반환 하는 메서드를 `cv_status` 반환 형식 `cv_status::timeout` 대기가 종료 될 때 경우 *Abs_time* 경과 합니다. 그렇지 않으면 메서드는 `cv_status::no_timeout`을 반환합니다.
+`cv_status` 형식을 반환 하는 메서드는 `cv_status::timeout` *Abs_time* 경과할 때 대기가 종료 될 경우를 반환 합니다. 그렇지 않으면 메서드는 `cv_status::no_timeout`을 반환합니다.
 
-반환 하는 메서드를 **bool** 의 값을 반환 *Pred*합니다.
+**Bool** 을 반환 하는 메서드는 *Pred*의 값을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -236,5 +236,5 @@ return true;
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[<condition_variable>](../standard-library/condition-variable.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[<condition_variable>](../standard-library/condition-variable.md)

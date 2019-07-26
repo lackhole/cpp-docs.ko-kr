@@ -7,12 +7,12 @@ helpviewer_keywords:
 - iterator_traits struct
 - iterator_traits class
 ms.assetid: 8b92c2c5-f658-402f-8ca1-e7ae301b8514
-ms.openlocfilehash: 6fe9e2d576afcacc7d014d4f5c920ecab3a83fc9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d2f9d79d200579f539f7d9edc49d4a907e6cdb2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224041"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455576"
 ---
 # <a name="iteratortraits-struct"></a>iterator_traits 구조체
 
@@ -35,19 +35,19 @@ struct iterator_traits {
 
 이 템플릿 구조체는 멤버 형식을 정의합니다.
 
-- `iterator_category`: 동의어 `Iterator::iterator_category`합니다.
+- `iterator_category`:의 `Iterator::iterator_category`동의어입니다.
 
-- `value_type`: 동의어 `Iterator::value_type`합니다.
+- `value_type`:의 `Iterator::value_type`동의어입니다.
 
-- `difference_type`: 동의어 `Iterator::difference_type`합니다.
+- `difference_type`:의 `Iterator::difference_type`동의어입니다.
 
-- `distance_type`: 동의어 `Iterator::difference_type.`
+- `distance_type`:의 동의어`Iterator::difference_type.`
 
-- `pointer`: 동의어 `Iterator::pointer`합니다.
+- `pointer`:의 `Iterator::pointer`동의어입니다.
 
-- `reference`: 동의어 `Iterator::reference`합니다.
+- `reference`:의 `Iterator::reference`동의어입니다.
 
-부분 특수화 형식의 개체 포인터와 관련 된 중요 한 형식을 결정 **형식** <strong>\*</strong> 하거나 **const 형식을**  <strong>\*</strong>.
+부분 특수화는 **형식** <strong>\*</strong> 또는 **const 형식의** <strong>\*</strong>개체 포인터와 관련 된 중요 한 형식을 결정 합니다.
 
 이 구현에서는 부분 특수화를 사용하지 않는 여러 가지 템플릿 함수를 사용할 수도 있습니다.
 
@@ -124,6 +124,6 @@ struct std::bidirectional_iterator_tag
 
 ## <a name="see-also"></a>참고자료
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

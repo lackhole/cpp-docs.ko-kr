@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::poisson_distribution [C++], param_type
 - std::poisson_distribution [C++], param_type
 ms.assetid: 09614281-349a-45f7-8e95-c0196be0a937
-ms.openlocfilehash: 2653af7b0582995f8a2643486585fca6a5edc395
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 19fab66c3ffca428114e4586c4ad6d6de3fdbf83
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450165"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458461"
 ---
 # <a name="poissondistribution-class"></a>poisson_distribution 클래스
 
@@ -67,8 +67,8 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*IntType*<br/>
-정수 결과 형식으로 기본값으로 **int**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*IntType*\
+정수 결과 형식으로, 기본적으로 **int**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -207,10 +207,10 @@ explicit binomial_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*mean*<br/>
+*되었음을*\
 `mean` 분포 매개 변수입니다.
 
-*parm*<br/>
+*parm*\
 분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
 ### <a name="remarks"></a>설명
@@ -248,4 +248,4 @@ struct param_type {
 
 ## <a name="see-also"></a>참고자료
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

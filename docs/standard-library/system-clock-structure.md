@@ -9,12 +9,12 @@ f1_keywords:
 - chrono/std::chrono::system_clock::is_monotonic Constant
 - chrono/std::chrono::system_clock::is_steady Constant
 ms.assetid: a97bd46e-267a-4836-9f7d-af1f664e99ae
-ms.openlocfilehash: 66710f94d96f069d6d388d6b49c76747c618a0d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a9fd83840883de5172df8b2e1e451984a95ea47
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412152"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450183"
 ---
 # <a name="systemclock-structure"></a>system_clock 구조체
 
@@ -47,7 +47,7 @@ struct system_clock;
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[from_time_t](#from_time_t)|정적. 지정된 시간과 가장 가까운 근사치로 계산된 `time_point`를 반환합니다.|
 |[now](#now)|정적. 현재 시간을 반환합니다.|
@@ -55,7 +55,7 @@ struct system_clock;
 
 ### <a name="public-constants"></a>공용 상수
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[system_clock::is_monotonic 상수](#is_monotonic_constant)|클록 형식이 단조인지를 지정합니다.|
 |[system_clock::is_steady 상수](#is_steady_constant)|클록 형식이 지속인지를 지정합니다.|
@@ -68,7 +68,7 @@ struct system_clock;
 
 ## <a name="from_time_t"></a>  system_clock::from_time_t
 
-반환 하는 정적 메서드를 [time_point](../standard-library/time-point-class.md) 가장 밀접 하 게 대략적인 시간을 나타내는 *Tm*합니다.
+*Tm*에 표시 되는 시간과 가장 근접 한 [time_point](../standard-library/time-point-class.md) 를 반환 하는 정적 메서드입니다.
 
 ```cpp
 static time_point from_time_t(time_t Tm) noexcept;
@@ -76,7 +76,7 @@ static time_point from_time_t(time_t Tm) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Tm*<br/>
+*Tm*\
 [time_t](../c-runtime-library/standard-types.md) 개체
 
 ## <a name="is_monotonic_constant"></a>  system_clock::is_monotonic 상수
@@ -89,7 +89,7 @@ static const bool is_monotonic = false;
 
 ### <a name="return-value"></a>반환 값
 
-이 구현에서는 `system_clock::is_monotonic` 항상 반환 **false**합니다.
+이 구현에서는 `system_clock::is_monotonic` 항상 **false**를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -105,7 +105,7 @@ static const bool is_steady = false;
 
 ### <a name="return-value"></a>반환 값
 
-이 구현에서는 `system_clock::is_steady` 항상 반환 **false**합니다.
+이 구현에서는 `system_clock::is_steady` 항상 **false**를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -125,7 +125,7 @@ static time_point now() noexcept;
 
 ## <a name="to_time_t"></a>  system_clock::to_time_t
 
-반환 하는 정적 메서드를 [time_t](../c-runtime-library/standard-types.md) 가장 밀접 하 게 대략적인 시간을 나타내는 *시간*합니다.
+[Time_t](../c-runtime-library/standard-types.md) 를 반환 하는 정적 메서드로, *시간*에 표시 되는 시간과 가장 근접 하 게 근사치를 나타냅니다.
 
 ```cpp
 static time_t to_time_t(const time_point& Time) noexcept;
@@ -133,11 +133,11 @@ static time_t to_time_t(const time_point& Time) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*시간*<br/>
+*런타임*\
 [time_point](../standard-library/time-point-class.md) 개체입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
-[steady_clock 구조체](../standard-library/steady-clock-struct.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<chrono>](../standard-library/chrono.md)\
+[steady_clock 구조체](../standard-library/steady-clock-struct.md)

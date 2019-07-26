@@ -7,16 +7,16 @@ helpviewer_keywords:
 - add_cv class
 - add_cv
 ms.assetid: a5572c78-a097-45d7-b476-ed4876889dea
-ms.openlocfilehash: 37001815710b197ec77ed0d45a16ea971ad1edce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0cc63558ea392976bd6a3c5a43735c592e4606b4
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411229"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456587"
 ---
 # <a name="addcv-class"></a>add_cv 클래스
 
-사용 하면 **const volatile** 형식에서 형식입니다.
+형식에서 **const volatile** 형식을 만듭니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,12 +30,12 @@ using add_cv_t = typename add_cv<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-수정 된 형식 인스턴스의 `add_cv<T>` 에 `type` 멤버 **typedef** 같음 *T* 둘 다로 수정 [add_volatile](../standard-library/add-volatile-class.md) 및 [ add_const](../standard-library/add-const-class.md)되지 않은 경우 *T* 이미 cv 한정자가, 참조 또는 함수입니다.
+T가 이미 cv 한정자를 `add_cv<T>` 가지고 있거나 참조 이거나 인 경우를 제외 하 고, 수정 된 형식의 인스턴스는 [add_volatile](../standard-library/add-volatile-class.md) 및 [add_const](../standard-library/add-const-class.md)둘 다에 *의해 수정 된* 멤버 **typedef** 가 동일 합니다.  `type` 칩셋용으로.
 
 `add_cv_t<T>` 도우미 형식은 `add_cv<T>` 멤버 typedef `type`에 액세스하기 위한 바로 가기입니다.
 
@@ -92,6 +92,6 @@ invoked const volatile S.f()
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_const 클래스](../standard-library/remove-const-class.md)<br/>
-[remove_volatile 클래스](../standard-library/remove-volatile-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[remove_const 클래스](../standard-library/remove-const-class.md)\
+[remove_volatile 클래스](../standard-library/remove-volatile-class.md)

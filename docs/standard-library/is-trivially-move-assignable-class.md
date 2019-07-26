@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_move_assignable
 ms.assetid: 374f7322-0706-4bc1-a1a5-4191d0315e28
-ms.openlocfilehash: b25d16658def4e3cf620ab707d2dabacb2620f33
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 324e4a1f1bd3528f09f21c5e485ac814038b7517
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413395"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448377"
 ---
 # <a name="istriviallymoveassignable-class"></a>is_trivially_move_assignable 클래스
 
@@ -26,20 +26,20 @@ struct is_trivially_move_assignable;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 는 클래스에 trivial 이동 할당 연산자를, 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 trivial 이동 할당 연산자를 가진 클래스인 경우 true이 고 그렇지 않은 경우 false입니다.
 
-클래스에 대 한 이동 할당 연산자 *Ty* 간단 하는 경우:
+*클래스에* 대 한 이동 할당 연산자는 다음과 같은 경우 trivial입니다.
 
 암시적으로 제공된 경우
 
-클래스 *Ty* 에 가상 함수가 없는
+*Ty* 클래스에 가상 함수가 없습니다.
 
-클래스 *Ty* 에 없는 가상 기본
+*Ty* 클래스에 가상 기본이 없습니다.
 
 클래스 형식의 모든 비정적 데이터 멤버의 클래스에 trivial 이동 할당 연산자가 있는 경우
 
@@ -53,4 +53,4 @@ struct is_trivially_move_assignable;
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

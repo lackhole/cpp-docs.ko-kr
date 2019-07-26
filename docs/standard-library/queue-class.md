@@ -22,12 +22,12 @@ helpviewer_keywords:
 - std::queue [C++], push
 - std::queue [C++], size
 ms.assetid: 28c20ab0-3a72-4185-9e0f-5a44eea0e204
-ms.openlocfilehash: 78479a05f8957aea5ca0f78fd3a086a49b9ef009
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 512b9499e63933a71a27a87f91a3bef8a65339e1
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240395"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458350"
 ---
 # <a name="queue-class"></a>queue 클래스
 
@@ -42,7 +42,7 @@ class queue
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*\
+*입력할*\
 큐에 저장되는 요소 데이터 형식입니다.
 
 *컨테이너*\
@@ -50,11 +50,11 @@ class queue
 
 ## <a name="remarks"></a>설명
 
-클래스의 요소 `Type` 첫 번째 템플릿에서 규정 된 큐 개체의 매개 변수는 [value_type](#value_type) 기본 컨테이너 클래스에 있는 요소의 형식과 일치 해야 `Container` 에서 규정 합니다 두 번째 템플릿 매개 변수입니다. `Type` 해당 형식의 개체를 복사 하 고 해당 형식의 변수에 값을 할당할 수 있도록 할당할 수 있어야 합니다.
+Queue 개체의 첫 `Type` 번째 템플릿 매개 변수에서 규정 된 클래스의 요소는 [value_type](#value_type) 와 동의어 이며, 두 번째 템플릿에서 규정 된 기본 컨테이너 클래스 `Container` 의 요소 형식과 일치 해야 합니다. 변수에. 해당 형식의 개체를 복사 하 고 해당 형식의 변수에 값을 할당할 수 있도록를 할당할 수 있어야합니다.`Type`
 
-큐에 대 한 적합 한 기본 컨테이너 클래스를 포함 [deque](../standard-library/deque-class.md) 하 고 [목록](../standard-library/list-class.md), 또는 기타 시퀀스 컨테이너가 지 원하는 작업 `front`를 `back`, `push_back`, 및 `pop_front`합니다. 기본 컨테이너 클래스는 제한된 시퀀스 컨테이너 멤버 함수 집합만 공용 인터페이스로 표시하는 컨테이너 어댑터 내에서 캡슐화되어 있습니다.
+큐에 적합 한 기본 컨테이너 클래스에는 [deque](../standard-library/deque-class.md) 및 [list](../standard-library/list-class.md) `front`,, `back` `push_back`, 및 `pop_front`의 작업을 지 원하는 기타 시퀀스 컨테이너가 포함 됩니다. 기본 컨테이너 클래스는 제한된 시퀀스 컨테이너 멤버 함수 집합만 공용 인터페이스로 표시하는 컨테이너 어댑터 내에서 캡슐화되어 있습니다.
 
-큐는 같음 비교 가능한 경우 경우에만 클래스의 개체 `Type` 같음 비교가 되며 작은-비교 가능한 경우 및 경우에만 보다 클래스의 요소 `Type` 작은-비교가 가능 합니다.
+큐 개체는 클래스 `Type` 의 요소가 같음 비교할 수 있는 경우에만 같음 비교할 수 있으며 클래스 `Type` 의 요소가 보다 작음 비교할 수 있는 경우에만 보다 작음 비교 됩니다.
 
 C++ 표준 라이브러리를 통해 정의되는 컨테이너 어댑터에는 stack, queue, priority_queue의 세 가지 형식이 있습니다. 각 어댑터는 일부 기본 컨테이너 클래스의 기능을 제한하여 표준 데이터 구조에 대해 정확하게 제어되는 인터페이스를 제공합니다.
 
@@ -91,7 +91,7 @@ C++ 표준 라이브러리를 통해 정의되는 컨테이너 어댑터에는 s
 |[push](#push)|`queue` 뒤에 요소를 추가합니다.다.|
 |[size](#size)|`queue`에 있는 요소 수를 반환합니다.|
 
-## <a name="back"></a> 뒤로
+## <a name="back"></a>뒤로
 
 queue 뒤에 마지막으로 가장 최근에 추가된 요소에 대한 참조를 반환합니다.
 
@@ -107,7 +107,7 @@ queue의 마지막 요소입니다. queue가 비어 있으면 반환 값이 정�
 
 ### <a name="remarks"></a>설명
 
-`back`의 반환 값이 `const_reference`에 할당된 경우 queue 개체를 수정할 수 없습니다. 하는 경우의 반환 값 `back` 에 할당 되는 `reference`, 큐 개체를 수정할 수 있습니다.
+`back`의 반환 값이 `const_reference`에 할당된 경우 queue 개체를 수정할 수 없습니다. 의 `back` 반환 값이에 할당 `reference`된 경우에는 queue 개체를 수정할 수 있습니다.
 
 1 또는 2로 정의된 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 컴파일한 경우 빈 queue의 요소에 액세스하면 런타임 오류가 발생합니다.  자세한 내용은 [Checked Iterators](../standard-library/checked-iterators.md) 를 참조하세요.
 
@@ -137,7 +137,7 @@ int main( )
 }
 ```
 
-## <a name="container_type"></a> container_type
+## <a name="container_type"></a>container_type
 
 조정할 기본 컨테이너를 제공하는 형식입니다.
 
@@ -201,7 +201,7 @@ The queue q1 is not empty.
 The queue q2 is empty.
 ```
 
-## <a name="front"></a> front
+## <a name="front"></a>앞뒤
 
 queue 앞의 첫 번째 요소에 대한 참조를 반환합니다.
 
@@ -217,9 +217,9 @@ const_reference front() const;
 
 ### <a name="remarks"></a>설명
 
-`front`의 반환 값이 `const_reference`에 할당된 경우 queue 개체를 수정할 수 없습니다. 하는 경우의 반환 값 `front` 에 할당 되는 `reference`, 큐 개체를 수정할 수 있습니다.
+`front`의 반환 값이 `const_reference`에 할당된 경우 queue 개체를 수정할 수 없습니다. 의 `front` 반환 값이에 할당 `reference`된 경우에는 queue 개체를 수정할 수 있습니다.
 
-멤버 함수가 반환 하는 `reference` 제어 된 시퀀스의 첫 번째 요소에 비어 있지 않아야 합니다.
+멤버 함수는가 비어 `reference` 있지 않아야 하는 제어 되는 시퀀스의 첫 번째 요소에 대 한를 반환 합니다.
 
 1 또는 2로 정의된 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 컴파일한 경우 빈 queue의 요소에 액세스하면 런타임 오류가 발생합니다.  자세한 내용은 [Checked Iterators](../standard-library/checked-iterators.md) 를 참조하세요.
 
@@ -253,7 +253,7 @@ int main() {
 }
 ```
 
-## <a name="pop"></a> pop
+## <a name="pop"></a>창을
 
 queue 앞에서 요소를 제거합니다.
 
@@ -309,7 +309,7 @@ After a pop the queue length is 2.
 After a pop, the element at the front of the queue is 20.
 ```
 
-## <a name="push"></a> 푸시
+## <a name="push"></a>누르기
 
 queue 뒤에 요소를 추가합니다.다.
 
@@ -319,7 +319,7 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val*\
+*짧은*\
 queue 끝에 추가되는 요소입니다.
 
 ### <a name="remarks"></a>설명
@@ -358,7 +358,7 @@ The queue length is 3.
 The element at the front of the queue is 10.
 ```
 
-## <a name="queue"></a> 큐
+## <a name="queue"></a>큐
 
 비어 있거나 기본 컨테이너 개체의 복사본인 queue를 생성합니다.
 
@@ -425,7 +425,7 @@ The element at the front of queue q5 is 1.
 The element at the back of queue q5 is 2.
 ```
 
-## <a name="size"></a> 크기
+## <a name="size"></a>크기가
 
 queue에 있는 요소 수를 반환합니다.
 
@@ -466,7 +466,7 @@ The queue length is 1.
 The queue length is now 2.
 ```
 
-## <a name="size_type"></a> size_type
+## <a name="size_type"></a>size_type
 
 queue에서 요소 수를 표현할 수 있는 부호 없는 정수 형식입니다.
 
@@ -526,5 +526,5 @@ The element at the front of the queue is 69.
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

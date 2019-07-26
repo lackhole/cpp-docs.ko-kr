@@ -12,12 +12,12 @@ helpviewer_keywords:
 - std::slice [C++], start
 - std::slice [C++], stride
 ms.assetid: 00f0b03d-d657-4b81-ba53-5a9034bb2bf2
-ms.openlocfilehash: f2c054626b36083d67f9dbc4c87cf6283c12f001
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 830e345eb7522cef44dbf6e727a976fb79c1e081
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412529"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450354"
 ---
 # <a name="slice-class"></a>slice 클래스
 
@@ -25,7 +25,7 @@ ms.locfileid: "62412529"
 
 ## <a name="remarks"></a>설명
 
-이 클래스는 [slice_array](../standard-library/slice-array-class.md) 형식의 개체 특징을 결정하는 매개 변수를 저장합니다. slice 클래스의 개체가 [valarray](../standard-library/valarray-class.md#op_at)**\<Type>** 클래스의 개체에 대한 인수로 표시되는 경우 valarray의 하위 집합이 간접적으로 생성됩니다. 부모 valarray에서 선택되는 하위 집합을 지정하는 저장된 값은 다음과 같습니다.
+이 클래스는 [slice_array](../standard-library/slice-array-class.md) 형식의 개체 특징을 결정하는 매개 변수를 저장합니다. slice 클래스의 개체가 [valarray](../standard-library/valarray-class.md#op_at) **\<Type>** 클래스의 개체에 대한 인수로 표시되는 경우 valarray의 하위 집합이 간접적으로 생성됩니다. 부모 valarray에서 선택되는 하위 집합을 지정하는 저장된 값은 다음과 같습니다.
 
 - 배열의 시작 인덱스입니다.
 
@@ -39,7 +39,7 @@ slice에서 정의된 소스 및 대상 하위 집합이 고유하고 모든 인
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[slice](#slice)|동일한 거리만큼 떨어져 있고 지정된 요소에서 시작하는 많은 요소로 구성된 `valarray`의 하위 집합을 정의합니다.|
 
@@ -136,18 +136,18 @@ slice(
 
 ### <a name="parameters"></a>매개 변수
 
-*_StartIndex*<br/>
+*_StartIndex*\
 하위 집합에 있는 첫 번째 요소의 valarray 인덱스입니다.
 
-*_Len*<br/>
+*_Len*\
 하위 집합의 요소 수입니다.
 
-*stride*<br/>
+*스트라이드*\
 하위 집합의 요소 간 거리입니다.
 
 ### <a name="return-value"></a>반환 값
 
-기본 생성자는 시작 인덱스, 총 길이 및 진행 속도에 대해 0을 저장합니다. 두 번째 생성자 저장소 *_StartIndex* 시작 인덱스에 대 한 *_Len* 총 길이 대 한 및 *stride* 진행 속도 대 한 합니다.
+기본 생성자는 시작 인덱스, 총 길이 및 진행 속도에 대해 0을 저장합니다. 두 번째 생성자는 시작 인덱스에 대해 *_Startindex* 를 저장 하 고, 전체 길이에 대해 *_startindex* 을, stride에 대해 *stride* 를 저장 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -312,4 +312,4 @@ The stride of slice vaSlice is: 3.
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

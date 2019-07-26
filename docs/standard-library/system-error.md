@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - system_error header
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
-ms.openlocfilehash: 4365f0aaf8fdd4d43159b78acf6dcffa4fcbe428
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: e6eef7152e45e8177c451fc25592fab85c58ccb5
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246557"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449755"
 ---
 # <a name="ltsystemerrorgt"></a>&lt;system_error&gt;
 
-헤더를 포함 \<system_error > 예외 클래스를 정의 하려면 `system_error` 및 관련 템플릿을 하위 수준 시스템 오류를 처리 합니다.
+하위 수준 시스템 \<오류를 처리 하는 데 필요한 `system_error` 예외 클래스 및 관련 템플릿을 정의 하려면 system_error > 헤더를 포함 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -71,4 +71,4 @@ ms.locfileid: "68246557"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

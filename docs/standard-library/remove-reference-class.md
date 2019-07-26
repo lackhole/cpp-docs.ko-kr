@@ -7,12 +7,12 @@ helpviewer_keywords:
 - remove_reference class
 - remove_reference
 ms.assetid: 294e1965-3ae3-46ee-bc42-4fdf60c24717
-ms.openlocfilehash: 76f700b488d78af77e39ec91c7328604d18931fc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f185994f943b2419a67fe86ce957751dc4031cbe
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62186038"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451282"
 ---
 # <a name="removereference-class"></a>remove_reference 클래스
 
@@ -30,12 +30,12 @@ using remove_reference_t = typename remove_reference<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-인스턴스의 `remove_reference<T>` 는 형식인 수정 된 `T1` 때 *T* 형식인 `T1&`고, 그렇지 않으면 *T*합니다.
+의 `remove_reference<T>` 인스턴스는 *t* 가 형식이 `T1&`면이 고, `T1` 그렇지 않으면 인 수정 된 형식을 보유 합니다 .
 
 ## <a name="example"></a>예제
 
@@ -67,5 +67,5 @@ remove_reference_t<int&> == int
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_lvalue_reference 클래스](../standard-library/add-lvalue-reference-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[add_lvalue_reference 클래스](../standard-library/add-lvalue-reference-class.md)

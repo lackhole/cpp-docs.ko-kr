@@ -11,12 +11,12 @@ helpviewer_keywords:
 - incompatible iterators
 - debug iterator support
 ms.assetid: f3f5bd15-4be8-4d64-a4d0-8bc0761c68b6
-ms.openlocfilehash: 9042093bb073807e9bb1476ab514c82010aeab70
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3ccb618c9a3c6b21d6ffe3fbbce7b6c1140e0564
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394061"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450585"
 ---
 # <a name="debug-iterator-support"></a>Debug Iterator Support
 
@@ -54,7 +54,7 @@ int main() {
 }
 ```
 
-## <a name="using-iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL을 사용 하 여
+## <a name="using-iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL 사용
 
 전처리기 매크로 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 디버그 빌드에서 반복기 디버깅 기능을 끌 수 있습니다. 이 프로그램은 어설션되지 않지만 정의되지 않은 동작을 계속 트리거합니다.
 
@@ -128,9 +128,9 @@ int main()
 
 이 예제에서는 함수 대신 람다 식 `[] (int& elem) { elem *= 2; }`를 사용합니다. 이 선택은 비슷한 함수가 같은 실패를 일으키는 어설션 실패와 아무런 관련이 없지만 람다는 간단한 함수 개체 작업을 수행하는 매우 유용한 방법입니다. 람다 식에 대한 자세한 내용은 [람다 식](../cpp/lambda-expressions-in-cpp.md)을 참조하세요.
 
-## <a name="iterators-going-out-of-scope"></a>반복기 범위를 벗어납니다 진행
+## <a name="iterators-going-out-of-scope"></a>범위 밖으로 이동 하는 반복기
 
-디버그 반복기 확인 길어질에 선언 된 반복기 변수를 **에 대 한** 루프의 수를 범위 합니다 **에 대 한** 루프 범위가 끝날 합니다.
+또한 디버그 반복기 검사를 수행 하면 for 루프 범위가 종료 될 때 **for** 루프에서 선언 된 반복기 변수가 범위를  벗어났습니다.
 
 ```cpp
 // iterator_debugging_4.cpp
@@ -146,9 +146,9 @@ int main() {
 }
 ```
 
-## <a name="destructors-for-debug-iterators"></a>디버그 반복기에 대 한 소멸자
+## <a name="destructors-for-debug-iterators"></a>디버그 반복기 용 소멸자
 
-디버그 반복기에 non-trivial 소멸자가 있습니다. 소멸자가 실행 되지 않습니다. 개체의 메모리가 해제 하지만 경우에 액세스 위반 및 데이터 손상이 발생할 수 있습니다. 다음 예제를 고려해 보세요.
+디버그 반복기에 non-trivial 소멸자가 있습니다. 소멸자가 실행 되지 않지만 개체의 메모리가 해제 된 경우 액세스 위반 및 데이터 손상이 발생할 수 있습니다. 다음 예제를 고려해 보세요.
 
 ```cpp
 // iterator_debugging_5.cpp
@@ -175,4 +175,4 @@ struct derived : base {
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)<br/>
+[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)

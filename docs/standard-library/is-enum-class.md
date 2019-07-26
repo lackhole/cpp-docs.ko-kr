@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_enum class
 - is_enum
 ms.assetid: df3b00b7-4f98-4b3a-96ce-10ad958ee69c
-ms.openlocfilehash: 623bda13a12ac311618e1b9fffdbc3f676013df6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c8ac69bacf72cc9a281e239263a14a42f4a0efe
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62336508"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452676"
 ---
 # <a name="isenum-class"></a>is_enum 클래스
 
@@ -27,12 +27,12 @@ struct is_enum;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 열거형 형식인 또는 `cv-qualified` 형식의 열거형 형식, 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 열거형 형식 이거나 `cv-qualified` 열거형 형식의 형식인 경우 true이 고 그렇지 않은 경우 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -77,5 +77,5 @@ is_enum<int> == false
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_integral 클래스](../standard-library/is-integral-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_integral 클래스](../standard-library/is-integral-class.md)

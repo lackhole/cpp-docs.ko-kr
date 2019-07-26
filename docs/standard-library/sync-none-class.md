@@ -12,12 +12,12 @@ helpviewer_keywords:
 - stdext::sync_none [C++], deallocate
 - stdext::sync_none [C++], equals
 ms.assetid: f7473cee-14f3-4fe1-88bc-68cd085e59e1
-ms.openlocfilehash: eba2c60e621df717f29c0b25c735df3fda285fa0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4cb311289207dbcf78186e11b2c7f03c503389e5
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412178"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450311"
 ---
 # <a name="syncnone-class"></a>sync_none 클래스
 
@@ -104,10 +104,10 @@ bool equals(const sync<Cache>& Other) const;
 
 ### <a name="return-value"></a>반환 값
 
-멤버 함수는 항상 반환 **true**합니다.
+멤버 함수는 항상 **true**를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
 ## <a name="see-also"></a>참고자료
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

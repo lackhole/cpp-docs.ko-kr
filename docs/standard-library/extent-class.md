@@ -7,12 +7,12 @@ helpviewer_keywords:
 - extent class
 - extent
 ms.assetid: 6d16263d-90b2-4330-9ec7-b59ed898792d
-ms.openlocfilehash: 7463b424d15ee86f851b7d81953abf3fe1c98fee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0cd53ba8537e706a68ffdcf08df998108266ad20
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393976"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457783"
 ---
 # <a name="extent-class"></a>extent 클래스
 
@@ -27,15 +27,15 @@ struct extent;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
-*I*<br/>
+*보이지*\
 쿼리에 바인딩되는 배열입니다.
 
 ## <a name="remarks"></a>설명
 
-경우 *Ty* 이상이 있는 배열 형식입니다 *합니까* 차원 형식 쿼리는 지정 된 차원의 요소 수가 보유 *I*합니다. 경우 *Ty* 배열 형식이 아니거나 순위가 보다 작거나 *있습니까*, 이거나 *합니까* 0 및 *Ty* 형식입니다 "의 경계를 알 수 없는 배열 `U` "에 형식 쿼리는 0 값을 보유 합니다.
+*Ty* 가 적어도 하나 *이상의 차원을 가진* 배열 형식인 경우 형식 쿼리는 *i*에 지정 된 차원의 요소 수를 포함 합니다. *Ty* 가 배열 형식이 아니거나 순위가 *i*인 경우 또는 *i* 가 0이 고 *Ty* 가 "알 수 없는 바인딩된 배열 `U`" 형식인 경우 형식 쿼리는 값 0을 보유 합니다.
 
 ## <a name="example"></a>예제
 
@@ -69,6 +69,6 @@ extent 1 == 10
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_all_extents 클래스](../standard-library/remove-all-extents-class.md)<br/>
-[remove_extent 클래스](../standard-library/remove-extent-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[remove_all_extents 클래스](../standard-library/remove-all-extents-class.md)\
+[remove_extent 클래스](../standard-library/remove-extent-class.md)

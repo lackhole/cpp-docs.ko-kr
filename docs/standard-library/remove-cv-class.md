@@ -7,12 +7,12 @@ helpviewer_keywords:
 - remove_cv class
 - remove_cv
 ms.assetid: 8502602a-1c80-479c-84e0-33bd1d6496d6
-ms.openlocfilehash: dcabf9b4687d473898dea98f1001647299a40b76
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dbe21d8e9f0ed0dc7c72a19584f24ee1bce0803c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368905"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451333"
 ---
 # <a name="removecv-class"></a>remove_cv 클래스
 
@@ -30,12 +30,12 @@ using remove_cv_t = typename remove_cv<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-인스턴스의 `remove_cv<T>` 는 형식인 수정 된 `T1` 때 *T* 형식인 `const T1`를 `volatile T1`, 또는 `const volatile T1`고, 그렇지 않으면 *T*합니다.
+`remove_cv<T>` 의 인스턴스는 *t* 가 `const T1`, 또는`volatile T1` `T1` 형식인`const volatile T1`경우 인 수정 된 형식을 보유 합니다 *. 그렇지*않은 경우에는입니다.
 
 ## <a name="example"></a>예제
 
@@ -67,6 +67,6 @@ remove_cv_t<const volatile int> == int
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_const 클래스](../standard-library/remove-const-class.md)<br/>
-[remove_volatile 클래스](../standard-library/remove-volatile-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[remove_const 클래스](../standard-library/remove-const-class.md)\
+[remove_volatile 클래스](../standard-library/remove-volatile-class.md)

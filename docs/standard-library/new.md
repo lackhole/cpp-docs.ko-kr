@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - new header
 ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
-ms.openlocfilehash: bc873f278461fcdc6dbb42e7c968c691e3dc7f73
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 6155a89c9cbba67ce27253aa64ff70ca7871e748
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243543"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457684"
 ---
 # <a name="ltnewgt"></a>&lt;new&gt;
 
@@ -33,7 +33,7 @@ ms.locfileid: "68243543"
 
 |||
 |-|-|
-|[nothrow](../standard-library/new-functions.md#nothrow)|에 대 한 인수로 사용할 개체를 제공 합니다 **nothrow** 버전의 **새** 하 고 **삭제**합니다.|
+|[nothrow](../standard-library/new-functions.md#nothrow)|**New** 및 **delete**의 **nothrow** 버전에 대 한 인수로 사용할 개체를 제공 합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
@@ -76,5 +76,5 @@ ms.locfileid: "68243543"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

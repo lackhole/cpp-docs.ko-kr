@@ -27,12 +27,12 @@ helpviewer_keywords:
 - char_traits struct
 - char_traits class
 ms.assetid: 568e59f0-4521-4207-9223-9dcf6a16d620
-ms.openlocfilehash: 541f468071e315b205abb8f7b9c865f045c510fe
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: ea5f53fd77545713dfcc6a969f1c172d89f8e460
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220514"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459030"
 ---
 # <a name="chartraits-struct"></a>char_traits 구조체
 
@@ -47,12 +47,12 @@ struct char_traits;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*<br/>
+*CharType*\
 요소 데이터 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-템플릿 구조체 형식에 대 한 다양 한 문자 특성을 설명 합니다. `CharType`합니다. 템플릿 클래스 [basic_string](../standard-library/basic-string-class.md) 비롯 한 여러 iostream 템플릿 클래스 뿐만 아니라 [basic_ios](../standard-library/basic-ios-class.md)에이 정보를 사용 하 여 형식의 요소를 조작 `CharType`합니다. 이러한 요소 형식은 명시적 생성 또는 소멸을 요구하지 않아야 합니다. 기본 생성자, 복사 생성자 및 대입 연산자에 예상 의미 체계를 제공해야 합니다. 비트 복사는 할당과 동일한 효과가 있어야 합니다. char_traits 구조체의 멤버 함수는 예외를 발생시킬 수 없습니다.
+템플릿 구조체는 형식 `CharType`에 대 한 다양 한 문자 특성을 설명 합니다. [Basic_string](../standard-library/basic-string-class.md) 템플릿 클래스 및 [basic_ios](../standard-library/basic-ios-class.md)를 비롯 한 여러 iostream 템플릿 클래스는이 정보를 사용 하 여 형식의 `CharType`요소를 조작 합니다. 이러한 요소 형식은 명시적 생성 또는 소멸을 요구하지 않아야 합니다. 기본 생성자, 복사 생성자 및 대입 연산자에 예상 의미 체계를 제공해야 합니다. 비트 복사는 할당과 동일한 효과가 있어야 합니다. char_traits 구조체의 멤버 함수는 예외를 발생시킬 수 없습니다.
 
 ### <a name="typedefs"></a>형식 정의
 
@@ -105,20 +105,20 @@ static char_type *assign(char_type* strTo,
 
 ### <a name="parameters"></a>매개 변수
 
-**_** *CharFrom* 값인 할당할 문자입니다.
+**_** *Charfrom* 값을 할당할 문자입니다.
 
-*_CharTo*<br/>
+*_CharTo*\
 문자 값을 할당받을 요소입니다.
 
-*strTo*<br/>
+*strTo*\
 초기 요소가 문자 값을 할당받을 문자열 또는 문자 배열입니다.
 
-*_Num*<br/>
+*_Num*\
 값을 할당받을 예정인 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
-두 번째 멤버 함수 포인터를 반환 문자열을 첫 번째 *_Num* 요소 값의 할당 된 *_CharFrom*합니다.
+두 번째 멤버 함수는 첫 번째 *_Num* 요소에 *_chara*값이 할당 된 문자열에 대 한 포인터를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -189,13 +189,13 @@ static int compare(const char_type* str1,
 
 ### <a name="parameters"></a>매개 변수
 
-*str1*<br/>
+*str1*\
 서로 비교할 두 문자열의 첫 번째입니다.
 
-*str2*<br/>
+*str2*\
 서로 비교할 두 문자열의 두 번째입니다.
 
-*_Num*<br/>
+*_Num*\
 비교할 문자열에 있는 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -255,13 +255,13 @@ static char_type *copy(char_type* _To,
 
 ### <a name="parameters"></a>매개 변수
 
-*_To*<br/>
+*_To*\
 복사된 문자 시퀀스를 수신하도록 지정된 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*_From*<br/>
+*_From*\
 복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*_Num*<br/>
+*_Num*\
 복사할 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -317,16 +317,16 @@ static char_type *_Copy_s(
 
 ### <a name="parameters"></a>매개 변수
 
-*dest*<br/>
+*dest*\
 복사된 문자 시퀀스를 수신하도록 지정된 문자열 또는 문자 배열입니다.
 
-*dest_size*<br/>
-크기인 *dest*합니다. 하는 경우 `char_type` 됩니다 **char**,이 크기는 바이트 단위입니다. 하는 경우 `char_type` 됩니다 **wchar_t**,이 크기는 단어 단위입니다.
+*dest_size*\
+*대상*의 크기입니다. 가 `char_type` **char**이면이 크기는 바이트 단위입니다. 가 wchar_t 이면이 크기는 단어 단위입니다.  `char_type`
 
-*_From*<br/>
+*_From*\
 복사할 소스 문자열 또는 문자 배열입니다.
 
-*count*<br/>
+*수*\
 복사할 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -382,9 +382,9 @@ EOF 문자입니다.
 
 ### <a name="remarks"></a>설명
 
-(예: EOF 또는 WEOF) 파일의 끝을 나타내는 값입니다.
+EOF 또는 WEOF 파일의 끝을 나타내는 값입니다.
 
-C++ 표준에서는 이 값이 유효한 `char_type` 값에 해당하면 안 됩니다. Microsoft C++ 컴파일러는 형식에 대 한이 제약 조건은 **char**에 형식이 아니라 **wchar_t**합니다. 아래 예제에서는 이 작업을 보여 줍니다.
+C++ 표준에서는 이 값이 유효한 `char_type` 값에 해당하면 안 됩니다. Microsoft C++ 컴파일러는 **문자**형식에 대해이 제약 조건을 적용 하지만 **wchar_t**형식에는 적용 하지 않습니다. 아래 예제에서는 이 작업을 보여 줍니다.
 
 ### <a name="example"></a>예제
 
@@ -429,10 +429,10 @@ static bool eq(const char_type& _Ch1, const char_type& _Ch2);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch1*<br/>
+*_Ch1*\
 같은지 테스트할 두 문자 중 첫 번째입니다.
 
-*_Ch2*<br/>
+*_Chc2*\
 같은지 테스트할 두 문자 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -489,10 +489,10 @@ static bool eq_int_type(const int_type& _Ch1, const int_type& _Ch2);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch1*<br/>
-같은지 테스트할 두 문자 중 첫 번째 `int_type`s입니다.
+*_Ch1*\
+S로 `int_type`같은지 테스트할 두 문자 중 첫 번째 문자입니다.
 
-*_Ch2*<br/>
+*_Chc2*\
 `int_type`이 같은지 테스트할 두 문자 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -576,13 +576,13 @@ static const char_type* find(const char_type* str,
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*문자열*\
 검색할 문자열의 첫 번째 문자입니다.
 
-*_Num*<br/>
+*_Num*\
 검색할 범위에서의 위치 수입니다(첫 번째부터 계산).
 
-*_Ch*<br/>
+*_Ch*\
 범위에서 검색할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -641,7 +641,7 @@ typedef long int_type;
 
 ### <a name="remarks"></a>설명
 
-형식 캐스트할 형식의 값 이어야 합니다 `CharType` 하 `int_type` 다시 다음 `CharType` 원래 값을 변경 하지 않고 있습니다.
+형식의 `CharType` 값을`CharType` 형식으로 캐스팅 한다음원래값을변경하지않고다시로변환할수있어야합니다.`int_type`
 
 ### <a name="example"></a>예제
 
@@ -657,7 +657,7 @@ static size_t length(const char_type* str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*문자열*\
 길이를 측정할 C 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -700,10 +700,10 @@ static bool lt(const char_type& _Ch1, const char_type& _Ch2);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch1*<br/>
+*_Ch1*\
 작은지 테스트할 두 문자 중 첫 번째입니다.
 
-*_Ch2*<br/>
+*_Chc2*\
 작은지 테스트할 두 문자 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -763,18 +763,18 @@ static char_type *move(char_type* _To,
 
 ### <a name="parameters"></a>매개 변수
 
-*_To*<br/>
+*_To*\
 복사된 문자 시퀀스를 수신하도록 지정된 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*_From*<br/>
+*_From*\
 복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*_Num*<br/>
+*_Num*\
 소스 문자열에서 복사할 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 요소 *위치 (_t)* 복사 된 문자 시퀀스를 수신 하도록 지정 된 문자열 또는 문자 배열로 복사 합니다.
+첫 번째 요소는 복사 된 문자 시퀀스를 수신 하도록 지정 된 문자열 또는 문자 배열로 복사 *_To* .
 
 ### <a name="remarks"></a>설명
 
@@ -840,21 +840,21 @@ static char_type *_Move_s(
 
 ### <a name="parameters"></a>매개 변수
 
-*dest*<br/>
+*dest*\
 복사된 문자 시퀀스를 수신하도록 지정된 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*dest_size*<br/>
-크기인 *dest*합니다. 하는 경우 `char_type` 됩니다 **char**, (바이트)에서입니다. 하는 경우 `char_type` 됩니다 **wchar_t**, 단어에서입니다.
+*dest_size*\
+*대상*의 크기입니다. 가 `char_type` **char**이면 바이트 단위입니다. 가 wchar_t 이면이는 단어 단위입니다.  `char_type`
 
-*_From*<br/>
+*_From*\
 복사할 소스 문자열 또는 문자 배열의 시작 부분에 있는 요소입니다.
 
-*count*<br/>
+*수*\
 소스 문자열에서 복사할 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 요소 *dest* 복사 된 문자 시퀀스를 수신 하도록 지정 된 문자열 또는 문자 배열로 복사 합니다.
+복사 된 문자 시퀀스를 수신 하도록 지정 된 대상 문자열 또는 문자 배열로 복사 되는 첫 *번째 요소입니다* .
 
 ### <a name="remarks"></a>설명
 
@@ -916,12 +916,12 @@ static int_type not_eof(const int_type& _Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch*<br/>
+*_Ch*\
 EOF 문자인지 여부를 테스트할 `int_type`으로 표시된 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
-합니다 `int_type` 표시 된 문자를 테스트 하는 경우는 `int_type` 문자의 같지 않은 EOF 문자입니다.
+문자의가 EOF 문자의와 같지 않은 `int_type` 경우 테스트 한 문자의 표현입니다.`int_type`
 
 문자 `int_type` 값이 EOF `int_type` 값과 같으면 **false**입니다.
 
@@ -1024,14 +1024,14 @@ static char_type to_char_type(const int_type& _Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch*<br/>
+*_Ch*\
 `char_type`으로 나타낼 `int_type` 문자입니다.
 
 ### <a name="return-value"></a>반환 값
 
 `int_type` 문자에 해당하는 `char_type` 문자입니다.
 
-값이 *_Ch* 표현할 수 없는으로 지정 되지 않은 결과 생성 합니다.
+이 값으로 나타낼 수 없는 *_Ch* 값은 지정 되지 않은 결과를 생성 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1130,7 +1130,7 @@ static int_type to_int_type(const char_type& _Ch);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Ch*<br/>
+*_Ch*\
 `int_type`으로 나타낼 `char_type` 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1225,4 +1225,4 @@ The recovered char_type of ch2 is equal to the original ch2.
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

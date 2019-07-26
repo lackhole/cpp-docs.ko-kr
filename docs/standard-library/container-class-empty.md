@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - empty method
 ms.assetid: 2055418d-3c42-4d28-a7db-111586119ed9
-ms.openlocfilehash: 5f455d79c0d017660ee4505ab9b0a3b993420977
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 30b21e9826bdeca279a9baea9029fa607faa6c77
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221658"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450823"
 ---
 # <a name="container-classempty"></a>Container Class::empty
 
 > [!NOTE]
-> 이 항목은 Microsoft C++ 설명서에 사용 되는 컨테이너의 작동 하지 않는 예로 C++ 표준 라이브러리입니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
+> 이 항목은 Microsoft C++ 설명서에서 C++ 표준 라이브러리에 사용 되는 컨테이너의 작동 하지 않는 예제로 작성 되었습니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
 
 빈 제어되는 시퀀스에 대해 **true**를 반환합니다.
 
@@ -27,4 +27,4 @@ bool empty() const;
 
 ## <a name="see-also"></a>참고자료
 
-[샘플 컨테이너 클래스](../standard-library/sample-container-class.md)<br/>
+[샘플 컨테이너 클래스](../standard-library/sample-container-class.md)
