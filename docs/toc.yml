@@ -405,7 +405,7 @@
                   href: build/reference/vcxproj-file-structure.md
                 - name: 예제 프로젝트 파일
                   href: build/reference/project-files.md
-            - name: C++ 프로젝트 속성 참조
+            - name: C++ 프로젝트 속성 페이지
               expanded: false
               items:
                 - name: C++ 프로젝트 속성 참조
@@ -416,6 +416,8 @@
                   href: build/reference/general-property-page-file.md
                 - name: 고급 속성 페이지
                   href: build/reference/advanced-property-page.md
+                - name: 디버깅 속성 페이지
+                  href: build/reference/debugging-prop-pages.md
                 - name: VC++ 디렉터리 속성 페이지
                   href: build/reference/vcpp-directories-property-page.md
                 - name: C/C++ 속성 페이지
@@ -4351,6 +4353,13 @@
                   href: cpp/assertion-and-user-supplied-messages-cpp.md
                 - name: static_assert
                   href: cpp/static-assert.md
+            - name: 모듈
+              expanded: false
+              items:
+                - name: C++에서의 모듈 개요
+                  href: cpp/modules-cpp.md
+                - name: '모듈, 가져오기, 내보내기'
+                  href: cpp/import-export-module.md
             - name: 템플릿
               expanded: false
               items:
