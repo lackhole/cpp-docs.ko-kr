@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::recursive_mutex [C++], lock
 - std::recursive_mutex [C++], try_lock
 - std::recursive_mutex [C++], unlock
-ms.openlocfilehash: 8be17c8ab361272678c25326464261e153da6a49
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 448b4d03e4d38dc45621cddab7d8f5d03b805968
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369646"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451678"
 ---
 # <a name="recursivemutex-class"></a>recursive_mutex 클래스
 
@@ -35,14 +35,14 @@ class recursive_mutex;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[recursive_mutex](#recursive_mutex)|`recursive_mutex` 개체를 생성합니다.|
 |[~recursive_mutex 소멸자](#dtorrecursive_mutex_destructor)|`recursive_mutex` 개체에서 사용하는 리소스를 모두 해제합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[lock](#lock)|스레드가 뮤텍스의 소유권을 가져올 때까지 호출 스레드를 차단합니다.|
 |[try_lock](#try_lock)|차단되지 않고 뮤텍스의 소유권을 가져오려고 시도합니다.|
@@ -96,11 +96,11 @@ bool try_lock() noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-**true** 메서드는 성공적으로의 소유권을 가져올 경우 합니다 `mutex` 호출 스레드가 이미 소유 하는 경우 또는 `mutex**; otherwise, **false`입니다.
+메서드가 성공적으로의 소유권 `mutex` 을 얻거나 호출 스레드가를 `mutex**; otherwise, **false`이미 소유 하 고 있으면 true입니다.
 
 ### <a name="remarks"></a>설명
 
-호출 스레드가 이미 소유 하는 경우는 `mutex`를 즉시 반환 **true**, 이전 잠금은 적용 상태로 유지 됩니다.
+호출 스레드가를 `mutex`이미 소유 하 고 있으면이 함수는 **true**를 즉시 반환 하 고 이전 잠금은 적용 된 상태로 유지 됩니다.
 
 ## <a name="unlock"></a>  unlock
 
@@ -118,5 +118,5 @@ void unlock();
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<mutex>](../standard-library/mutex.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<mutex>](../standard-library/mutex.md)

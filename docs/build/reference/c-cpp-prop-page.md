@@ -3,14 +3,12 @@ title: C/C++ 프로젝트 속성 (Visual Studio)
 ms.date: 7/18/2019
 ms.topic: article
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
-author: mikeblome
-ms.author: mblome
-ms.openlocfilehash: bf457366f1818593e937d4c9e95651f48db64528
-ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
-ms.translationtype: HT
+ms.openlocfilehash: 91edf30ef0e5f38088727c0280d2edf07cdebfa5
+ms.sourcegitcommit: 7b039b5f32f6c59be6c6bb1cffafd69c3bfadd35
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342264"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68537568"
 ---
 # <a name="cc-property-pages"></a>C/C++ 속성 페이지
 
@@ -436,7 +434,7 @@ ASM 목록 파일의 상대 경로 및/또는 이름을 지정 합니다. 파일
 **시**
 
 - **__cdecl** -멤버 함수 및 __stdcall 또는 __fastcall로 표시 된 C++ 함수를 제외한 모든 함수에 대해 __cdecl 호출 규칙을 지정 합니다.
-- **__fastcall** -멤버 함수와 및 __cdecl 또는 __stdcall로 표시 C++ 된 함수를 제외한 모든 함수에 대해 __fastcall 호출 규칙을 지정 합니다. 모든 __fastcall 함수에는 프로토타입이 있어야 합니다.
+- **__fastcall** -멤버 함수 및 __cdecl 또는 __stdcall로 표시 된 C++ 함수를 제외한 모든 함수에 대해 __fastcall 호출 규칙을 지정 합니다. 모든 __fastcall 함수에는 프로토타입이 있어야 합니다.
 - **__stdcall** -멤버 함수 및 __cdecl 또는 __fastcall로 표시 된 C++ 함수를 제외한 모든 함수에 대해 __stdcall 호출 규칙을 지정 합니다. 모든 __stdcall 함수에는 프로토타입이 있어야 합니다.
 - **__vectorcall** -멤버 함수 및 __cdecl, __fastcall 또는 __stdcall로 C++ 표시 된 함수를 제외한 모든 함수에 대해 __vectorcall 호출 규칙을 지정 합니다. 모든 __vectorcall 함수에는 프로토타입이 있어야 합니다.
 
