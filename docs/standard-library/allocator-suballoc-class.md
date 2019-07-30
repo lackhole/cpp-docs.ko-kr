@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - allocator_suballoc class
 ms.assetid: 50c6a5c0-d00d-4276-9285-d908fd4f6483
-ms.openlocfilehash: 9136a2ce744e19754b3a660e7bc9c15f05babbbf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e5b69ef3f47a173ef768283bbae4f6e3b5f5190
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411008"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458135"
 ---
 # <a name="allocatorsuballoc-class"></a>allocator_suballoc 클래스
 
-저장소 할당 및 개체 형식에 대 한 해제를 관리 하는 개체를 설명 *형식* 형식의 캐시를 사용 하 여 [cache_suballoc](../standard-library/cache-suballoc-class.md)합니다.
+[Cache_suballoc](../standard-library/cache-suballoc-class.md)형식의 캐시 *를 사용 하* 여 형식 형식의 개체에 대 한 저장소 할당 및 해제를 관리 하는 개체에 대해 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +33,7 @@ class allocator_suballoc;
 
 ## <a name="remarks"></a>설명
 
-합니다 [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로로이 클래스를 전달 합니다 *이름* 다음 문에서 매개 변수: `ALLOCATOR_DECL(CACHE_SUBALLOC, SYNC_DEFAULT, allocator_suballoc);`
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 문에서이 클래스를 *name* 매개 변수로 전달 합니다.`ALLOCATOR_DECL(CACHE_SUBALLOC, SYNC_DEFAULT, allocator_suballoc);`
 
 ## <a name="requirements"></a>요구 사항
 
@@ -43,4 +43,4 @@ class allocator_suballoc;
 
 ## <a name="see-also"></a>참고자료
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

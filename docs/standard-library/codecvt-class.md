@@ -40,12 +40,12 @@ helpviewer_keywords:
 - std::codecvt [C++], out
 - std::codecvt [C++], unshift
 ms.assetid: 37d3efa1-2b7f-42b6-b04f-7a972c8c2c86
-ms.openlocfilehash: be1075da65284ac3f9672a839622b59c8926bfb9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 936b3ab63b454e8f7e0490c2d155356a7c3b240f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405240"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459828"
 ---
 # <a name="codecvt-class"></a>codecvt 클래스
 
@@ -60,20 +60,20 @@ class codecvt : public locale::facet, codecvt_base;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*<br/>
+*CharType*\
 문자를 인코딩하기 위해 프로그램 내 사용하는 형식
 
-*Byte*<br/>
+*바이트만*\
 프로그램 밖의 문자를 인코딩하는 데 사용되는 형식입니다.
 
-*StateType*<br/>
+*StateType*\
 내부 및 외부 문자 표현 형식 사이의 변환의 중간 상태를 나타내는 데 사용할 수 있는 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-로 사용 될 수 있는 개체를 설명 하는 템플릿 클래스는 [로캘 패싯](../standard-library/locale-class.md#facet_class)형식의 값 시퀀스 간의 변환을 제어 하기 위해 *CharType* 형식의 값 시퀀스와 *바이트*. 클래스 *StateType* 변환-및 클래스의 개체를 지정 *StateType* 변환 하는 동안 필요한 상태 정보를 저장 합니다.
+이 템플릿 클래스는 *Chartype* 형식의 값 시퀀스와 *Byte*형식의 값 시퀀스 간의 변환을 제어 하기 위해 [로캘 패싯](../standard-library/locale-class.md#facet_class)으로 사용할 수 있는 개체에 대해 설명 합니다. *StateType* 클래스는 변환에 대 한 특징을, *StateType* 클래스의 개체는 변환 중에 필요한 상태 정보를 저장 합니다.
 
-내부 인코딩은 표현을 사용 하 여는 문자당 바이트의 고정된 된 수를 사용 하 여 일반적으로 입력 하거나 **char** 종류나 **wchar_t**합니다.
+내부 인코딩은 문자 당 고정 바이트 수를 포함 하는 표현 (일반적으로 **char** 또는 type **wchar_t**)을 사용 합니다.
 
 모든 로캘 패싯과 마찬가지로, 고정 개체 `id`에는 초기값 0이 저장되어 있습니다. 저장된 값에 액세스를 처음 시도하면 `id`에 고유한 양수 값이 저장됩니다.
 
@@ -86,31 +86,31 @@ template<>
 codecvt<wchar_t, char, mbstate_t>
 ```
 
-사이 변환 **wchar_t** 하 고 **char** 시퀀스입니다.
+**wchar_t** 와 **char** 시퀀스 간을 변환 합니다.
 
 ```cpp
 template<>
 codecvt<char16_t, char, mbstate_t>
 ```
 
-사이 변환 `char16_t` 시퀀스를 u t F-16으로 인코드된 및 **char** 시퀀스를 u t F-8로 인코딩됩니다.
+u t f-16으로 인코딩된  시퀀스와utf-8로인코딩된문자시퀀스로변환`char16_t` 합니다.
 
 ```cpp
 template<>
 codecvt<char32_t, char, mbstate_t>
 ```
 
-사이 변환 `char32_t` (u c S-4) UTF-32로 인코딩된 시퀀스 및 **char** 시퀀스를 u t F-8로 인코딩됩니다.
+u t `char32_t` f-32 (UCS-4)로 인코딩된 시퀀스와 u t f-8로 인코딩된 **문자** 시퀀스 간을 변환 합니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[codecvt](#codecvt)|변환을 처리할 로캘 패싯으로 사용할 `codecvt` 클래스 개체의 생성자입니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|형식 이름|Description|
 |-|-|
 |[extern_type](#extern_type)|외부 표현에 사용되는 문자 형식입니다.|
 |[intern_type](#intern_type)|내부 표현에 사용되는 문자 형식입니다.|
@@ -202,20 +202,20 @@ explicit codecvt(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs*<br/>
+*참조 (_s)* \
 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 
-에 대 한 가능한 값을 *_Refs* 매개 변수 및 중요성은:
+*_Refs* 매개 변수에 사용할 수 있는 값은 다음과 같습니다.
 
-- 0: 개체의 수명은 포함 하는 로캘에 의해 관리 됩니다.
+- 0: 개체의 수명은이를 포함 하는 로캘로 관리 됩니다.
 
 - 1: 개체의 수명은 수동으로 관리 해야 합니다.
 
-- 2: 이러한 값이 정의 되지 않습니다.
+- 2: 이러한 값은 정의 되지 않습니다.
 
-생성자는 초기화 해당 `locale::facet` 사용 하 여 기본 개체 **로캘::**[패싯](../standard-library/locale-class.md#facet_class)(`_Refs`).
+생성자는 `locale::facet` **locale::** [facet](../standard-library/locale-class.md#facet_class)(`_Refs`)를 사용 하 여 해당 기본 개체를 초기화 합니다.
 
 ## <a name="do_always_noconv"></a>  codecvt::do_always_noconv
 
@@ -227,7 +227,7 @@ virtual bool do_always_noconv() const throw();
 
 ### <a name="return-value"></a>반환 값
 
-보호 된 가상 구성원 함수가 반환 **true** 경우에만를 호출할 때마다 [do_in](#do_in) 하거나 [do_out](#do_out) 반환 `noconv`합니다.
+보호 된 가상 멤버 함수는 [do_in](#do_in) 또는 [do_out](#do_out) 에 대 한 모든 호출이 반환 `noconv`되는 경우에만 **true** 를 반환 합니다.
 
 템플릿 버전은 항상 **true**를 반환합니다.
 
@@ -237,7 +237,7 @@ virtual bool do_always_noconv() const throw();
 
 ## <a name="do_encoding"></a>  codecvt::do_encoding
 
-여부를 테스트 하는 가상 함수 인코딩의 `Byte` 스트림 상태가 종속 여부의 비율이 `Byte`사용한 및 `CharType`만들어진 상수 이며, 그렇다면 해당 비율 값을 결정 합니다.
+`Byte` 스트림의 인코딩이 상태에 의존 하는지 여부, 사용 된 `Byte`와 `CharType`생성 된의 비율이 일정 한지 여부를 테스트 하 고, 그럴 경우 해당 비율 값을 결정 하는 가상 함수입니다.
 
 ```cpp
 virtual int do_encoding() const throw();
@@ -247,7 +247,7 @@ virtual int do_encoding() const throw();
 
 보호된 가상 멤버 함수는 다음을 반환합니다.
 
-- -1로, 경우 형식의 시퀀스의 인코딩을 `extern_type` 상태 다릅니다.
+- 형식 `extern_type` 시퀀스의 인코딩이 상태에 종속 되는 경우-1입니다.
 
 - 0: 인코딩에 다양한 길이의 시퀀스가 포함된 경우
 
@@ -259,7 +259,7 @@ virtual int do_encoding() const throw();
 
 ## <a name="do_in"></a>  codecvt::do_in
 
-가상 함수 호출 시퀀스를 외부 변환할 `Byte`내부 시퀀스 `CharType`s입니다.
+외부 `Byte`의 시퀀스를 내부 `CharType`의 시퀀스로 변환 하기 위해 호출 하는 가상 함수입니다.
 
 ```cpp
 virtual result do_in(
@@ -274,42 +274,42 @@ virtual result do_in(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State*<br/>
+*_State*\
 멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1*<br/>
+*first1*\
 변환할 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1*<br/>
+*last1*\
 변환할 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next1*<br/>
+*next1*\
 변환된 시퀀스의 끝 너머에 있는 포인터로, 변환되지 않은 첫 번째 문자에 대한 포인터입니다.
 
-*first2*<br/>
+*first2*\
 변환된 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last2*<br/>
+*last2*\
 변환된 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next2*<br/>
-에 대 한 포인터를 `CharType` 변환 된 마지막 뒤에 오는 `CharType`, 대상 시퀀스의 첫 번째 변경 되지 않은 문자입니다.
+*next2*\
+마지막으로 변환 `CharType`된 후 대상 시퀀스의 변경 되지 않은첫번째문자에대한포인터입니다.`CharType`
 
 ### <a name="return-value"></a>반환 값
 
 작업의 성공, 부분적 성공 또는 실패를 나타내는 반환입니다. 함수에서 다음을 반환합니다.
 
-- `codecvt_base::error` 소스 시퀀스의 형식이 잘못 된 경우 다음을 구성 합니다.
+- `codecvt_base::error`소스 시퀀스의 형식이 잘못 된 경우
 
 - 함수가 변환을 수행하지 않은 경우 `codecvt_base::noconv`
 
-- `codecvt_base::ok` 변환이 성공 합니다.
+- `codecvt_base::ok`변환이 성공 하면입니다.
 
-- `codecvt_base::partial` 소스가 충분 하지 않은 경우 또는 대상 변환이 성공 하기에 충분히 큰 경우.
+- `codecvt_base::partial`소스가 충분 하지 않거나 대상이 충분히 크지 않은 경우 변환이 성공 합니다.
 
 ### <a name="remarks"></a>설명
 
-*_State* 새 소스 시퀀스의 시작 부분에서 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 저장 값은 달리 지정되지 않습니다.
+*_State* 는 새 소스 시퀀스의 시작 부분에 있는 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 저장 값은 달리 지정되지 않습니다.
 
 ### <a name="example"></a>예제
 
@@ -329,37 +329,37 @@ virtual int do_length(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State*<br/>
+*_State*\
 멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1*<br/>
+*first1*\
 외부 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1*<br/>
+*last1*\
 외부 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*_Len2*<br/>
-최대 `Byte`멤버 함수에 의해 반환 될 수 있는 s입니다.
+*_Len2*\
+멤버 함수에서 반환할 `Byte`수 있는 최대 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
-변환 보다 크지 않은 최대 개수를 나타내는 정수입니다 *_Len2*에서 외부 소스 시퀀스로 정의 된 [ `first1`, `last1`).
+[`first1` ,`last1`)에서 외부 소스 시퀀스에 의해 정의 된 *_Len2*보다 크지 않은 최대 변환 수를 나타내는 정수입니다.
 
 ### <a name="remarks"></a>설명
 
-보호 된 가상 구성원 함수는 효과적으로 호출한 `do_in`( `_State`, `first1`, `last1`를 `next1`를 `_Buf`를 `_Buf`  +  `_Len2`, `next2`) 에대한 *_State* (상태의 복사본)을 몇 가지 버퍼 `_Buf`, 및 포인터 `next1`고 `next2`입니다.
+보호 된 가상 멤버 함수는 ( `do_in` `next1` `_State` `last1` ,,`next2`, `_Buf` `first1`, ,,)을(를)효과적으로호출합니다. +  `_Buf` `_Len2`  *상태* (상태 복사본), 일부 버퍼 `_Buf`및 포인터 및 `next2` `next1`
 
-그런 다음 반환 `next2`  -  `buf`합니다. 따라서 변환 보다 크지 않은 최대 개수가 계산 *_Len2*에서 소스 시퀀스로 정의 된 [ `first1`, `last1`).
+그런 다음를 `next2`반환  -  `buf`합니다. 따라서 [ `first1`, `last1`)에서 소스 시퀀스에 정의 된 *_Len2*보다 크지 않은 최대 변환 수를 계산 합니다.
 
-템플릿 버전은 항상 중 더 작은 값 반환 *last1* - *first1* 하 고 *_Len2*합니다.
+템플릿 버전은 항상 *last1* - *first1* 및 *_Len2*중 작은 값을 반환 합니다.
 
 ### <a name="example"></a>예제
 
-예를 참조 하세요 [길이](#length)를 호출 하는 `do_length`합니다.
+을 호출 `do_length`하는 [길이](#length)에 대 한 예제를 참조 하십시오.
 
 ## <a name="do_max_length"></a>  codecvt::do_max_length
 
-외부의 최대 수를 반환 하는 가상 함수 `Byte`하나의 내부를 생성 하는 데 필요한 `CharType`합니다.
+`Byte` 내부`CharType`를 생성 하는 데 필요한 외부의 최대 수를 반환 하는 가상 함수입니다.
 
 ```cpp
 virtual int do_max_length() const throw();
@@ -367,11 +367,11 @@ virtual int do_max_length() const throw();
 
 ### <a name="return-value"></a>반환 값
 
-최대 `Byte`하나를 생성 하는 데 필요한 `CharType`합니다.
+`Byte` 하나`CharType`를 생성 하는 데 필요한 최대 수입니다.
 
 ### <a name="remarks"></a>설명
 
-보호 된 가상 멤버 함수에서 반환 될 수 있는 최대 허용 값을 반환 [do_length](#do_length)( `first1`합니다 `last1`, 1)의 유효한 임의 값에 대 한 *first1* 하고*last1*합니다.
+보호 된 가상 멤버 함수는 *first1* 및 *last1*의 임의의 유효한 값에 대해 [do_length](#do_length)( `first1`, `last1`, 1)에서 반환할 수 있는 최대 허용 값을 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -394,42 +394,42 @@ virtual result do_out(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State*<br/>
+*_State*\
 멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1*<br/>
+*first1*\
 변환할 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1*<br/>
+*last1*\
 변환할 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next1*<br/>
-첫 번째에 대 한 포인터에 대 한 참조 된 `CharType`, 마지막 `CharType` 변환 합니다.
+*next1*\
+`CharType` 마지막`CharType` 으로 변환 된 후 변환 되지 않은 첫 번째의 포인터에 대 한 참조입니다.
 
-*first2*<br/>
+*first2*\
 변환된 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last2*<br/>
+*last2*\
 변환된 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next2*<br/>
-첫 번째에 대 한 포인터에 대 한 참조 된 `Byte`, 마지막 `Byte` 변환 합니다.
+*next2*\
+`Byte` 마지막`Byte` 으로 변환 된 후 변환 되지 않은 첫 번째의 포인터에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
 함수에서 다음을 반환합니다.
 
-- `codecvt_base::error` 소스 시퀀스의 형식이 잘못 된 경우 다음을 구성 합니다.
+- `codecvt_base::error`소스 시퀀스의 형식이 잘못 된 경우
 
 - 함수가 변환을 수행하지 않은 경우 `codecvt_base::noconv`
 
-- `codecvt_base::ok` 변환이 성공 합니다.
+- `codecvt_base::ok`변환이 성공 하면입니다.
 
-- `codecvt_base::partial` 소스가 충분 하지 않은 경우 또는 대상 변환이 성공 하기에 충분히 큰 경우.
+- `codecvt_base::partial`소스가 충분 하지 않거나 변환이 성공 하기에 충분 하지 않은 경우입니다.
 
 ### <a name="remarks"></a>설명
 
-*_State* 새 소스 시퀀스의 시작 부분에서 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 저장 값은 달리 지정되지 않습니다.
+*_State* 는 새 소스 시퀀스의 시작 부분에 있는 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 저장 값은 달리 지정되지 않습니다.
 
 ### <a name="example"></a>예제
 
@@ -449,35 +449,35 @@ virtual result do_unshift(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State*<br/>
+*_State*\
 멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first2*<br/>
+*first2*\
 대상 범위에서 첫 번째 위치에 대한 포인터입니다.
 
-*last2*<br/>
+*last2*\
 대상 범위에서 마지막 위치에 대한 포인터입니다.
 
-*next2*<br/>
+*next2*\
 대상 시퀀스의 변경되지 않은 첫 번째 요소에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
 함수에서 다음을 반환합니다.
 
-- `codecvt_base::error` 경우 _ *상태* 잘못 된 상태를 나타냅니다.
+- `codecvt_base::error`_ *상태가* 잘못 된 상태를 나타내는 경우
 
 - 함수가 변환을 수행하지 않은 경우 `codecvt_base::noconv`
 
-- `codecvt_base::ok` 변환이 성공 하는 경우
+- `codecvt_base::ok`변환이 성공 하는 경우
 
-- `codecvt_base::partial` 대상은 변환이 성공 하기에 충분히 큰 경우
+- `codecvt_base::partial`변환이 성공 하기에는 대상이 충분히 크지 않은 경우
 
 ### <a name="remarks"></a>설명
 
-보호 된 가상 멤버 함수에서 소스 요소를 변환 하려고 `CharType`(0) 내에 저장 하는 대상 시퀀스 [ `first2`를 `last2`)를 종료 요소를 제외 하 고 `Byte`(0). 항상 저장 *next2* 는 대상 시퀀스의 첫 번째 변경 되지 않은 요소에 대 한 포인터입니다.
+보호 된 가상 멤버 함수는 `CharType`종료 요소 `Byte`(0)를 제외 하 고 원본 요소 (0)를 [ `first2`, `last2`) 내에 저장 하는 대상 시퀀스로 변환 하려고 합니다. 항상 *next2* 에 대상 시퀀스의 변경 되지 않은 첫 번째 요소에 대 한 포인터를 저장 합니다.
 
-_*State*는 새 소스 시퀀스의 시작 부분에 있는 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 일반적으로 소스 요소를 변환 `CharType`(0) 현재 상태가 초기 변환 상태로 유지 합니다.
+_*State*는 새 소스 시퀀스의 시작 부분에 있는 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 일반적으로 원본 요소 `CharType`(0)를 변환 하면 초기 변환 상태에서 현재 상태가 유지 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -493,11 +493,11 @@ int encoding() const throw();
 
 ### <a name="return-value"></a>반환 값
 
-반환 값이 양수 이면 해당 값은 일정 한 수의 경우 `Byte` 생성 하는 데 필요한 문자는 `CharType` 문자입니다.
+반환 값이 양수 이면 해당 값은 문자를 `Byte` `CharType` 생성 하는 데 필요한 일정 문자 수입니다.
 
 보호된 가상 멤버 함수는 다음을 반환합니다.
 
-- -1로, 경우 형식의 시퀀스의 인코딩을 `extern_type` 상태 다릅니다.
+- 형식 `extern_type` 시퀀스의 인코딩이 상태에 종속 되는 경우-1입니다.
 
 - 0: 인코딩에 다양한 길이의 시퀀스가 포함된 경우
 
@@ -563,42 +563,42 @@ result in(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State*<br/>
+*_State*\
 멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1*<br/>
+*first1*\
 변환할 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1*<br/>
+*last1*\
 변환할 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next1*<br/>
+*next1*\
 변환된 시퀀스의 끝 너머에 있는 포인터로, 변환되지 않은 첫 번째 문자에 대한 포인터입니다.
 
-*first2*<br/>
+*first2*\
 변환된 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last2*<br/>
+*last2*\
 변환된 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next2*<br/>
-에 대 한 포인터를 `CharType` 변환 된 마지막 뒤에 오는 `Chartype` 는 대상 시퀀스의 첫 번째 변경 되지 않은 문자입니다.
+*next2*\
+대상 시퀀스에서 `CharType` 변경 되지 않은 첫 번째 문자로 `Chartype` 마지막으로 변환 된 후에 나오는에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
 작업의 성공, 부분적 성공 또는 실패를 나타내는 반환입니다. 함수에서 다음을 반환합니다.
 
-- `codecvt_base::error` 소스 시퀀스의 형식이 잘못 된 경우 다음을 구성 합니다.
+- `codecvt_base::error`소스 시퀀스의 형식이 잘못 된 경우
 
 - 함수가 변환을 수행하지 않은 경우 `codecvt_base::noconv`
 
-- `codecvt_base::ok` 변환이 성공 합니다.
+- `codecvt_base::ok`변환이 성공 하면입니다.
 
-- `codecvt_base::partial` 소스가 충분 하지 않은 경우 또는 대상 변환이 성공 하기에 충분히 큰 경우.
+- `codecvt_base::partial`소스가 충분 하지 않거나 변환이 성공 하기에 충분 하지 않은 경우입니다.
 
 ### <a name="remarks"></a>설명
 
-*_State* 새 소스 시퀀스의 시작 부분에서 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 일부 변환 이후 *_State* 변환이 새 문자가 도착할 때 다시 시작할 수 있도록 설정 해야 합니다.
+*_State* 는 새 소스 시퀀스의 시작 부분에 있는 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 부분 변환 후에는 *_State* 을로 설정 하 여 새 문자가 도착할 때 변환을 다시 시작할 수 있도록 해야 합니다.
 
 멤버 함수가 [do_in](#do_in)(`_State`, _ *First1,  last1,  next1, First2, _Llast2,  next2*)를 반환합니다.
 
@@ -665,25 +665,25 @@ int length(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State*<br/>
+*_State*\
 멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1*<br/>
+*first1*\
 외부 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1*<br/>
+*last1*\
 외부 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*_Len2*<br/>
+*_Len2*\
 멤버 함수에서 반환할 수 있는 최대 바이트 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
-변환 보다 크지 않은 최대 개수를 나타내는 정수입니다 *_Len2*에서 외부 소스 시퀀스로 정의 된 [ `first1`, `last1`).
+[`first1` ,`last1`)에서 외부 소스 시퀀스에 의해 정의 된 *_Len2*보다 크지 않은 최대 변환 수를 나타내는 정수입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수가 [do_length](#do_length)(*_State,  first1*, `last1`, `_Len2`)를 반환합니다.
+멤버 함수가 [do_length](#do_length)( *_State,  first1*, `last1`, `_Len2`)를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -724,7 +724,7 @@ int max_length() const throw();
 
 ### <a name="return-value"></a>반환 값
 
-최대 `Byte`하나를 생성 하는 데 필요한 `CharType`합니다.
+`Byte` 하나`CharType`를 생성 하는 데 필요한 최대 수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -770,26 +770,26 @@ result out(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State*<br/>
+*_State*\
 멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first1*<br/>
+*first1*\
 변환할 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last1*<br/>
+*last1*\
 변환할 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next1*<br/>
-첫 번째에 대 한 포인터에 대 한 참조 된 `CharType` 마지막 `CharType` 변환 합니다.
+*next1*\
+`CharType` 마지막`CharType` 으로 변환 된 후에 첫 번째 변환 되지 않은에 대 한 포인터에 대 한 참조입니다.
 
-*first2*<br/>
+*first2*\
 변환된 시퀀스의 시작 부분에 대한 포인터입니다.
 
-*last2*<br/>
+*last2*\
 변환된 시퀀스의 끝 부분에 대한 포인터입니다.
 
-*next2*<br/>
-첫 번째에 대 한 포인터에 대 한 참조 된 `Byte` 마지막으로 변환한 후 `Byte`합니다.
+*next2*\
+마지막으로 변환 된 `Byte` 후에 첫 번째 변환 `Byte`되지 않은에 대 한 포인터에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -850,7 +850,7 @@ typedef StateType state_type;
 
 ## <a name="unshift"></a>  codecvt::unshift
 
-제공 된 `Byte`시퀀스의 마지막 문자를 완료 하는 데 상태 의존 변환에 필요한 `Byte`s입니다.
+`Byte` 의`Byte`시퀀스에서 마지막 문자를 완료 하기 위해 상태 의존 변환에 필요한를 제공 합니다.
 
 ```cpp
 result unshift(
@@ -862,41 +862,41 @@ result unshift(
 
 ### <a name="parameters"></a>매개 변수
 
-*_State*<br/>
+*_State*\
 멤버 함수에 대한 호출 사이에 유지되는 변환 상태입니다.
 
-*first2*<br/>
+*first2*\
 대상 범위에서 첫 번째 위치에 대한 포인터입니다.
 
-*last2*<br/>
+*last2*\
 대상 범위에서 마지막 위치에 대한 포인터입니다.
 
-*next2*<br/>
+*next2*\
 대상 시퀀스의 변경되지 않은 첫 번째 요소에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
 함수에서 다음을 반환합니다.
 
-- `codecvt_base::error` 상태 경우 잘못 된 상태를 나타냅니다.
+- `codecvt_base::error`상태가 잘못 된 상태를 나타내는 경우입니다.
 
 - 함수가 변환을 수행하지 않은 경우 `codecvt_base::noconv`
 
-- `codecvt_base::ok` 변환이 성공 합니다.
+- `codecvt_base::ok`변환이 성공 하면입니다.
 
-- `codecvt_base::partial` 대상은 변환이 성공 하기에 충분 되지 않습니다.
+- `codecvt_base::partial`변환이 성공 하기에는 대상이 충분히 크지 않은 경우
 
 ### <a name="remarks"></a>설명
 
-보호 된 가상 멤버 함수에서 소스 요소를 변환 하려고 `CharType`(0) 내에 저장 하는 대상 시퀀스 [ `first2`를 `last2`)를 종료 요소를 제외 하 고 `Byte`(0). 항상 저장 *next2* 는 대상 시퀀스의 첫 번째 변경 되지 않은 요소에 대 한 포인터입니다.
+보호 된 가상 멤버 함수는 `CharType`종료 요소 `Byte`(0)를 제외 하 고 원본 요소 (0)를 [ `first2`, `last2`) 내에 저장 하는 대상 시퀀스로 변환 하려고 합니다. 항상 *next2* 에 대상 시퀀스의 변경 되지 않은 첫 번째 요소에 대 한 포인터를 저장 합니다.
 
-*_State* 새 소스 시퀀스의 시작 부분에서 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 일반적으로 소스 요소를 변환 `CharType`(0) 현재 상태가 초기 변환 상태로 유지 합니다.
+*_State* 는 새 소스 시퀀스의 시작 부분에 있는 초기 변환 상태를 나타내야 합니다. 함수는 성공적인 변환의 현재 상태를 반영하기 위해 필요에 따라 해당 저장 값을 변경합니다. 일반적으로 원본 요소 `CharType`(0)를 변환 하면 초기 변환 상태에서 현재 상태가 유지 됩니다.
 
 멤버 함수는 [do_unshift](#do_unshift)(`_State`, `first2`, `last2`, `next2`)를 반환합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[\<locale>](../standard-library/locale.md)<br/>
-[코드 페이지](../c-runtime-library/code-pages.md)<br/>
-[로캘 이름, 언어 및 국가/지역 문자열](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[코드 페이지](../c-runtime-library/code-pages.md)\
+[로캘 이름, 언어 및 국가/지역 문자열](../c-runtime-library/locale-names-languages-and-country-region-strings.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - map header
 ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
-ms.openlocfilehash: 96ca19b2562c3f145555c3c1b1d8db4fc700ed91
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 3c3c7fc34e75772c10ba39ecc51f6d2ac59d7ad5
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243315"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456299"
 ---
 # <a name="ltmapgt"></a>&lt;map&gt;
 
@@ -24,7 +24,7 @@ ms.locfileid: "68243315"
 **네임스페이스:** std
 
 > [!NOTE]
-> 합니다 \<지도 > 라이브러리 사용을 `#include <initializer_list>` 문.
+> 지도 \<> 라이브러리에도 `#include <initializer_list>` 문이 사용 됩니다.
 
 ## <a name="members"></a>멤버
 
@@ -55,6 +55,6 @@ ms.locfileid: "68243315"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

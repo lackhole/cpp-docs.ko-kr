@@ -17,12 +17,12 @@ helpviewer_keywords:
 - programming [C++], iostream programming
 - text input [C++]
 ms.assetid: 1aa0a0be-4dd8-4dac-ac1f-d2afdaeab769
-ms.openlocfilehash: 56b6d2a69372c9c8232823feb085780c38c00f0e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 883050c8ad838d642156dc6dac4c779d2dd3420a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385162"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449062"
 ---
 # <a name="iostream-programming"></a>iostream 프로그래밍
 
@@ -42,7 +42,7 @@ ms.locfileid: "62385162"
 
 [인수 포함 사용자 지정 조작자](../standard-library/custom-manipulators-with-arguments.md)
 
-## <a name="see-also"></a>참고
+## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

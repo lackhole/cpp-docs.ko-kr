@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - basic_iostream class
 ms.assetid: 294b680b-eb49-4066-8db2-6d52dac9d6e3
-ms.openlocfilehash: 80aad69f05b7473b508447d6f69f1d92edbeeca3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 052271e2e2cc929875489e27abde2147bc5c070a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400645"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460093"
 ---
 # <a name="basiciostream-class"></a>basic_iostream 클래스
 
@@ -39,13 +39,13 @@ public:
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[basic_iostream](#basic_iostream)|`basic_iostream` 개체를 만듭니다.|
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[swap](#swap)|제공된 `basic_iostream` 개체의 내용을 이 개체의 내용으로 교환합니다.|
 
@@ -75,17 +75,17 @@ basic_iostream();
 
 ### <a name="parameters"></a>매개 변수
 
-*strbuf*<br/>
+*strbuf*\
 기존 `basic_streambuf` 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 새 `basic_iostream`을 생성하는 데 사용된 기존 `basic_iostream` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 첫 번째 생성자는 `basic_istream(strbuf)` 및 `basic_ostream(strbuf)`의 방식으로 기본 개체를 초기화합니다.
 
-호출 하 여 기본 개체를 초기화 하는 두 번째 생성자는 `move(right)`합니다.
+두 번째 생성자는를 호출 `move(right)`하 여 기본 개체를 초기화 합니다.
 
 ## <a name="op_eq"></a>  basic_iostream::operator=
 
@@ -97,12 +97,12 @@ basic_iostream& operator=(basic_iostream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 할당할 `basic_iostream` 개체에 대한 `rvalue` 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자 호출 `swap(right)`합니다.
+멤버 연산자는를 `swap(right)`호출 합니다.
 
 ## <a name="swap"></a>  basic_iostream::swap
 
@@ -114,15 +114,15 @@ void swap(basic_iostream& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 스왑할 `basic_iostream` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수 호출 `swap(right)`합니다.
+멤버 함수는를 `swap(right)`호출 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::basic_istringstream [C++], str
 - std::basic_istringstream [C++], swap
 ms.assetid: 1d5bb4b5-793d-4833-98e5-14676c451915
-ms.openlocfilehash: fdf622bbef370e8b3625f419be29f293bc06eacc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 685195b13960c325076f1a38461394ada374d4b1
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400632"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452543"
 ---
 # <a name="basicistringstream-class"></a>basic_istringstream 클래스
 
@@ -34,22 +34,22 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*Alloc*<br/>
+*#C4*\
 할당자 클래스입니다.
 
-*Elem*<br/>
+*E*\
 문자열 기본 요소의 형식입니다.
 
-*Tr*<br/>
+*비교한*\
 문자열의 기본 요소에서 특수화된 문자 특성입니다.
 
 ## <a name="remarks"></a>설명
 
-요소의 추출을 제어 하는 개체 및 클래스의 스트림 버퍼에서 인코딩된 개체를 설명 하는 템플릿 클래스 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>, 형식의 요소를 사용 하 여 *Elem*에서 문자 특성이 클래스에 의해 결정 됩니다 *Tr*를 클래스의할당자에의해할당되는요소가 *Alloc*합니다. 이 개체는 basic_stringbuf< **Elem**, **Tr**, `Alloc`> 클래스의 개체를 저장합니다.
+템플릿 클래스는 *elem*형식의 요소가 있는 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr** `Alloc`> 클래스의 스트림 버퍼에서 요소 및 인코드된 개체의 추출을 제어 하는 개체를 설명 합니다. 문자 특성이 *Tr*클래스에 의해 결정 되 고 해당 요소가 클래스 *할당*의 할당자에 의해 할당 되는입니다. 이 개체는 basic_stringbuf< **Elem**, **Tr**, `Alloc`> 클래스의 개체를 저장합니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[basic_istringstream](#basic_istringstream)|`basic_istringstream` 형식의 개체를 생성합니다.|
 
@@ -105,22 +105,22 @@ basic_istringstream(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Mode*<br/>
+*모드 (_s)* \
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*str*<br/>
+*문자열*\
 `basic_string` 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 `basic_istringstream` 개체에 대한 rvalue 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 기본 클래스를 호출 하 여 초기화 [basic_istream](../standard-library/basic-istream-class.md)(`sb`), 여기서 `sb` 클래스의 저장 개체인 [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  `Elem`하십시오 `Tr`, `Alloc`>. 또한 `basic_stringbuf`< `Elem`, `Tr`, `Alloc`>( `_Mode` &#124; `ios_base::in`)을 호출하여 `sb`를 초기화합니다.
+첫 번째 생성자는 [basic_istream](../standard-library/basic-istream-class.md)(`sb`)를 호출 하 여 기본 클래스를 `sb` 초기화 합니다. 여기서`Elem`는 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< , `Tr` `Alloc`> 클래스의 저장 된 개체입니다. . 또한 `basic_stringbuf`< `Elem`, `Tr`, `Alloc`>( `_Mode` &#124; `ios_base::in`)을 호출하여 `sb`를 초기화합니다.
 
 두 번째 생성자는 `basic_istream(sb)`를 호출하여 기본 개체를 초기화합니다. 또한 `basic_stringbuf`< `Elem`, `Tr`, `Alloc`>( `str`, `_Mode` &#124; `ios_base::in`)을 호출하여 `sb`를 초기화합니다.
 
-세 번째 생성자는 내용으로 개체를 초기화 *오른쪽*는 rvalue 참조로 처리 합니다.
+세 번째 생성자는 rvalue 참조로 처리 되는 *오른쪽*의 내용을 사용 하 여 개체를 초기화 합니다.
 
 ## <a name="op_eq"></a>  basic_istringstream::operator=
 
@@ -132,16 +132,16 @@ basic_istringstream& operator=(basic_istringstream&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 `basic_istringstream` 개체에 대한 rvalue 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자의 내용으로 개체의 내용을 바꿉니다 *오른쪽*, rvalue 참조 이동 할당으로 처리 합니다.
+멤버 연산자는 rvalue 참조 이동 할당으로 처리 되는 개체의 내용을 *오른쪽*의 콘텐츠로 바꿉니다.
 
 ## <a name="rdbuf"></a>  basic_istringstream::rdbuf
 
-형식의 저장 된 스트림 버퍼 주소를 반환 합니다 `pointer` 를 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**하십시오 **Tr**, `Alloc`>.
+형식의 `pointer` 저장 된 스트림 버퍼 주소를 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>로 반환 합니다.
 
 ```cpp
 basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
@@ -149,7 +149,7 @@ basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
 
 ### <a name="return-value"></a>반환 값
 
-형식의 저장 된 스트림 버퍼 주소 `pointer` basic_stringbuf에 < **Elem**하십시오 **Tr**, `Alloc`>.
+Basic_stringbuf < **Elem**, **Tr**, `Alloc`>에 해당 `pointer` 하는 형식의 저장 된 스트림 버퍼 주소입니다.
 
 ### <a name="example"></a>예제
 
@@ -168,7 +168,7 @@ void str(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Newstr*<br/>
+*_Newstr*\
 새 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -181,7 +181,7 @@ void str(
 
 ### <a name="example"></a>예제
 
-참조 [basic_stringbuf:: str](../standard-library/basic-stringbuf-class.md#str) 사용 하는 예제에 대 한 `str`합니다.
+을 사용 `str`하는 예제는 [basic_stringbuf:: str](../standard-library/basic-stringbuf-class.md#str) 을 참조 하세요.
 
 ## <a name="swap"></a>  basic_istringstream::swap
 
@@ -199,10 +199,10 @@ void swap(basic_istringstream& right);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는이 개체의 값과 값 교환 *오른쪽*합니다.
+멤버 함수는이 개체의 값과 *right*값을 교환 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

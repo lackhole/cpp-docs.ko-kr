@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - complex<float> function
 ms.assetid: 1178eb1e-39bd-4017-89cd-aea95f813939
-ms.openlocfilehash: a09b6d0306f633754cad4b12a652eac557f96634
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bfe0e9dcb0bf8f8b74487404998e06d233097a39
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62279088"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453110"
 ---
 # <a name="complexltfloatgt"></a>complex&lt;float&gt;
 
-형식의 개체의 정렬된 된 쌍을 저장 하는 개체를 설명 **float**, 먼저 복소수와 두 번째 실수 부분을 나타내는 허수 부분입니다.
+개체의 순서가 지정 된 **쌍을 저장**하는 개체를 설명 합니다. 첫 번째 개체는 복소수의 실수 부분을 나타내고 두 번째 개체는 허수 부분을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,14 +41,14 @@ constexpr complex(
 
 ### <a name="parameters"></a>매개 변수
 
-*_RealVal*<br/>
+*_RealVal*\
 생성되는 복소수의 실수부에 대한 **float** 형식의 값입니다.
 
-*_ImagVal*<br/>
+*_ImagVal*\
 생성되는 복소수의 허수부에 대한 **float** 형식의 값입니다.
 
-*complexNum*<br/>
-형식의 복소수 **이중** 또는 형식의 **long double** 실수부와 허수부은 형식의 복소수를 초기화 하는 데 사용 됩니다 **float** 생성 되 고 있는 합니다.
+*complexNum*\
+생성 되는 **float** 형식의 복소수를 초기화 하는 데 사용 되는 실수 및 허수 부분을 포함 하는 **long double** 형식 **double** 또는 형식의 복소수입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -56,7 +56,7 @@ constexpr complex(
 
 ## <a name="remarks"></a>설명
 
-**float** 형식의 complex 클래스에 대한 템플릿 클래스 complex의 명시적 특수화는 해당 특수화가 정의하는 생성자에서만 템플릿 클래스와 다릅니다. 변환 **float** 하 **double** 암시적 일 수 있지만에서 덜 안전한 변환은 **float** 에 **long double** 는 필요가 **명시적**합니다. **명시적**의 사용은 할당 구문을 사용하는 형식 변환의 시작을 배제합니다.
+**float** 형식의 complex 클래스에 대한 템플릿 클래스 complex의 명시적 특수화는 해당 특수화가 정의하는 생성자에서만 템플릿 클래스와 다릅니다. **Float** 에서 **double** 로의 변환은 암시적 일 수 있지만 **float** 에서 **long double** 로의 보다 안전한 변환은 **명시적**이어야 합니다. **명시적**의 사용은 할당 구문을 사용하는 형식 변환의 시작을 배제합니다.
 
 템플릿 클래스 `complex`에 대한 자세한 내용은 [complex 클래스](../standard-library/complex-class.md)를 참조하세요. 템플릿 클래스 `complex`의 멤버 목록은 다음을 참조하세요.
 
@@ -124,5 +124,5 @@ arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## <a name="see-also"></a>참고자료
 
-[complex 클래스](../standard-library/complex-class.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[complex 클래스](../standard-library/complex-class.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

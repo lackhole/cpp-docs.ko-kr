@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::istreambuf_iterator [C++], traits_type
 - std::istreambuf_iterator [C++], equal
 ms.assetid: 39002da2-61a6-48a5-9d0c-5df8271f6038
-ms.openlocfilehash: 41298909b53de1c7acf3cb8ae4b999eb6260765d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0a2bbc69d4f2d3af0ee6e00a2672436a5f15ab67
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413270"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448128"
 ---
 # <a name="istreambufiterator-class"></a>istreambuf_iterator 클래스
 
@@ -39,10 +39,10 @@ class istreambuf_iterator
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*<br/>
+*CharType*\
 istreambuf_iterator의 문자 형식을 나타내는 형식입니다.
 
-*특성*<br/>
+*특징이*\
 istreambuf_iterator의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `char_traits`\< *CharType>* 입니다.
 
 ## <a name="remarks"></a>설명
@@ -53,7 +53,7 @@ null이 아닌 저장된 포인터를 사용하여 istreambuf_iterator 클래스
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[istreambuf_iterator](#istreambuf_iterator)|입력 스트림에서 문자를 읽을 수 있도록 초기화된 `istreambuf_iterator`를 만듭니다.|
 
@@ -142,7 +142,7 @@ bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 같은지 확인할 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -151,7 +151,7 @@ bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
 
 ### <a name="remarks"></a>설명
 
-범위를 정의한 합니다 `istreambuf_iterator` 반복기에서 동일 하지만 모든 비-스트림의 끝이 현재 위치를 스트림의 끝 반복기를 `equal` 멤버 함수를 불가능를 사용 하 여 하위 범위를 정의 하 `istreambuf_iterator`s입니다. `==` 및 `!=` 연산자는 의미 체계가 동일합니다.
+범위는에서 `istreambuf_iterator` 현재 위치 및 스트림 끝 반복기로 정의 되지만 `equal` 멤버 함수에서 끝이 아닌 모든 스트림 반복기가 동일 하기 때문에를 사용 하 여 `istreambuf_iterator`하위 범위를 정의할 수 없습니다. `==` 및 `!=` 연산자는 의미 체계가 동일합니다.
 
 ### <a name="example"></a>예제
 
@@ -239,15 +239,15 @@ istreambuf_iterator(istream_type& _Istr) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*strbuf*<br/>
+*strbuf*\
 `istreambuf_iterator`를 연결 중인 입력 스트림 버퍼입니다.
 
-*_Istr*<br/>
+*_Istr*\
 `istreambuf_iterator`를 연결 중인 입력 스트림입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 사용 하 여 입력된 스트림 버퍼 포인터를 초기화 *strbuf*합니다. 두 번째 생성자를 사용 하 여 입력된 스트림 버퍼 포인터를 초기화 *_Istr*합니다. `rdbuf`를 다음 최종적으로 추출 하 고 형식의 개체를 저장 하려고 시도 하 고 `CharType`입니다.
+첫 번째 생성자는 *strbuf*를 사용 하 여 입력 스트림 버퍼 포인터를 초기화 합니다. 두 번째 생성자는 *_Istr*을 사용 하 여 입력 스트림 버퍼 포인터를 초기화 합니다. `rdbuf`그런 다음,는 결국 형식의 `CharType`개체를 추출 하 고 저장 하려고 합니다.
 
 ### <a name="example"></a>예제
 
@@ -336,7 +336,7 @@ istreambuf_iterator<CharType, Traits> operator++(int);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 연산자는 최종적으로 추출 하 고 형식의 개체를 저장 하려고 시도 `CharType` 는 연결 된 입력 스트림에서 합니다. 두 번째 연산자는 개체의 복사본을 만들고 개체를 증가시킨 다음 복사본을 반환합니다.
+첫 번째 연산자는 궁극적으로 연결 된 입력 스트림에서 형식의 `CharType` 개체를 추출 하 고 저장 하려고 합니다. 두 번째 연산자는 개체의 복사본을 만들고 개체를 증가시킨 다음 복사본을 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -441,7 +441,7 @@ int main( )
 
 ## <a name="see-also"></a>참고자료
 
-[iterator 구조체](../standard-library/iterator-struct.md)<br/>
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[iterator 구조체](../standard-library/iterator-struct.md)\
+[\<iterator>](../standard-library/iterator.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - stdext::sync_per_thread [C++], deallocate
 - stdext::sync_per_thread [C++], equals
 ms.assetid: 47bf75f8-5b02-4760-b1d3-3099d08fe14c
-ms.openlocfilehash: 3cb1946ee68642065488cfd13c146abab818ec60
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a08aa13aa46d5181e7c874b132b2bcbd5ec26dee
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412321"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450260"
 ---
 # <a name="syncperthread-class"></a>sync_per_thread 클래스
 
@@ -108,10 +108,10 @@ bool equals(const sync<Cache>& Other) const;
 
 ### <a name="return-value"></a>반환 값
 
-**false** 또는이 개체에 대 한 캐시 개체가 할당 된 경우 *다른* 현재 스레드에서 합니다. 그렇지 않으면 두 캐시 개체에 `operator==`를 적용한 결과가 반환됩니다.
+이 개체 또는 현재 스레드의 *다른* 에 대해 캐시 개체가 할당 되지 않은 경우 **false** 입니다. 그렇지 않으면 두 캐시 개체에 `operator==`를 적용한 결과가 반환됩니다.
 
 ### <a name="remarks"></a>설명
 
 ## <a name="see-also"></a>참고자료
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

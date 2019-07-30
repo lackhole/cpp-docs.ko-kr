@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::ostreambuf_iterator [C++], traits_type
 - std::ostreambuf_iterator [C++], failed
 ms.assetid: dad1e624-2f45-4e94-8887-a885e95f9071
-ms.openlocfilehash: 5114a658cfde965556f4663d2ba92c9ba4d1eaeb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 815647deb7c11f4d7be5650e0ec2e635338551ad
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370953"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448184"
 ---
 # <a name="ostreambufiterator-class"></a>ostreambuf_iterator 클래스
 
@@ -35,10 +35,10 @@ template <class CharType = char class Traits = char_traits <CharType>>
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*<br/>
-ostreambuf_iterator의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 **char**합니다.
+*CharType*\
+ostreambuf_iterator의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 **char**입니다.
 
-*특성*<br/>
+*특징이*\
 ostreambuf_iterator의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `char_traits`\< *CharType>입니다.*
 
 ## <a name="remarks"></a>설명
@@ -62,7 +62,7 @@ ostreambuf_iterator 클래스는 출력 반복기에 대한 요구 사항을 충
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[failed](#failed)|출력 스트림 버퍼에 대한 삽입 실패를 테스트합니다.|
 
@@ -70,7 +70,7 @@ ostreambuf_iterator 클래스는 출력 반복기에 대한 요구 사항을 충
 
 |연산자|설명|
 |-|-|
-|[operator*](#op_star)|출력 반복기 식을 구현 하는 데 사용 된 역참조 연산자 \* `i`  =  `x`합니다.|
+|[operator*](#op_star)|출력 \* 반복기 식을 `i` 구현하는`x`데 사용 되는 역참조 연산자입니다.  = |
 |[operator++](#op_add_add)|연산이 호출되기 전에 주소 지정한 동일한 개체에 `ostreambuf_iterator`를 반환한 비함수 증분 연산자.|
 |[operator=](#op_eq)|연산자가 연결된 스트림 버퍼에 문자를 삽입합니다.|
 
@@ -286,7 +286,7 @@ ostreambuf_iterator<CharType, Traits>& operator=(CharType _Char);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Char*<br/>
+*_Char*\
 스트림 버퍼에 삽입할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -339,15 +339,15 @@ ostreambuf_iterator(ostream_type& Ostr) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*strbuf*<br/>
+*strbuf*\
 출력 스트림 버퍼 포인터를 초기화하는 데 사용되는 출력 streambuf 개체입니다.
 
-*Ostr*<br/>
+*Ostr*\
 출력 스트림 버퍼 포인터를 초기화하는 데 사용되는 출력 stream 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 초기화로 출력 스트림 버퍼 포인터 *strbuf*합니다.
+첫 번째 생성자는 *strbuf*를 사용 하 여 출력 스트림 버퍼 포인터를 초기화 합니다.
 
 두 번째 생성자는 `Ostr`로 출력 스트림 버퍼 포인터를 초기화합니다. `rdbuf`. 저장된 포인터는 null 포인터가 아니어야 합니다.
 
@@ -410,7 +410,7 @@ typedef basic_streambuf<CharType, Traits> streambuf_type;
 
 ### <a name="remarks"></a>설명
 
-형식에 대 한 동의어가 `basic_streambuf` \< **CharType**, **Traits**>, 되는 I/O 버퍼에 대 한 스트림 클래스인 `streambuf` 문자형식에특수화된경우**char**합니다.
+형식은 **chartype**, **특성**> `basic_streambuf` 의 \< 동의어로, 문자 형식 **char**로 특수화 `streambuf` 될 때가 되는 i/o 버퍼에 대 한 스트림 클래스입니다.
 
 ### <a name="example"></a>예제
 
@@ -468,6 +468,6 @@ by charOutBuf are: OUT.
 
 ## <a name="see-also"></a>참고자료
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

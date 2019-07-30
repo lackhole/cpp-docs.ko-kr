@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::scoped_allocator_adaptor::outer_allocator
 - std::scoped_allocator_adaptor::select_on_container_copy_construction
 ms.assetid: 0d9b06a1-9a4a-4669-9470-8805cae48e89
-ms.openlocfilehash: 5101f5c7b6ae1a032df94b912252c24f2c2853bf
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 1fb2842df50b0e803419e3cccdeb921c9b4fa591
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245585"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458006"
 ---
 # <a name="scopedallocatoradaptor-class"></a>scoped_allocator_adaptor 클래스
 
@@ -129,10 +129,10 @@ pointer allocate(size_type count);pointer allocate(size_type count, const_void_p
 
 ### <a name="parameters"></a>매개 변수
 
-*count*<br/>
+*수*\
 충분한 스토리지를 할당해야 할 요소의 수입니다.
 
-*hint*<br/>
+*힌트*\
 요청 이전에 할당된 개체의 주소를 찾아서 할당자 개체를 지원할 수 있는 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -168,24 +168,24 @@ void construct(pair<Ty1, Ty2>* ptr, pair<Uy1, Uy2>&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr*<br/>
+*ptr*\
 개체를 생성할 메모리 위치에 대한 포인터입니다.
 
-*args*<br/>
+*args*\
 인수 목록입니다.
 
-*first*<br/>
+*기본*\
 쌍에 포함된 첫 번째 형식의 개체입니다.
 
-*second*<br/>
+*초당*\
 쌍에 포함된 두 번째 형식의 개체입니다.
 
-*right*<br/>
+*오른쪽*\
 이동하거나 복사할 기존 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-개체를 생성 하는 첫 번째 메서드인 *ptr* 를 호출 하 여 `Outermost_traits::construct(OUTERMOST(*this), ptr, xargs...)`여기서 `xargs...` 다음 중 하나입니다.
+첫 번째 메서드는를 호출 `Outermost_traits::construct(OUTERMOST(*this), ptr, xargs...)`하 여 *ptr* 에서 개체를 생성 합니다. 여기서 `xargs...` 은 다음 중 하나입니다.
 
 - `uses_allocator<Ty, inner_allocator_type>`이 false이면 `xargs...`는 `args...`입니다.
 
@@ -193,7 +193,7 @@ void construct(pair<Ty1, Ty2>* ptr, pair<Uy1, Uy2>&& right);
 
 - `uses_allocator<Ty, inner_allocator_type>`이 true이고 `is_constructible<Ty, args..., inner_allocator()>`가 true이면 `xargs...`는 `args..., inner_allocator()`입니다.
 
-두 번째 메서드는에 있는 pair 개체를 생성 *ptr* 호출 하 여 `Outermost_traits::construct(OUTERMOST(*this), &ptr->first, xargs...)`여기서 `xargs...` 는 `first...` 위의 목록과 같이 수정 하 고 `Outermost_traits::construct(OUTERMOST(*this), &ptr->second, xargs...)`여기서 `xargs...` 는 `second...` 수정 위의 목록입니다.
+두 번째 메서드는를 호출 `Outermost_traits::construct(OUTERMOST(*this), &ptr->first, xargs...)`하 여 *ptr* 에서 pair 개체를 `xargs...` 생성 `first...` 합니다. 여기서은 위의 목록에서와 `Outermost_traits::construct(OUTERMOST(*this), &ptr->second, xargs...)`같이 `xargs...` 수정 되 `second...` 고,은 위의 목록에서와 같이 수정 됩니다.
 
 세 번째 메서드는 `this->construct(ptr, piecewise_construct, tuple<>, tuple<>)`와 동일하게 동작합니다.
 
@@ -213,10 +213,10 @@ void deallocate(pointer ptr, size_type count);
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr*<br/>
+*ptr*\
 할당을 취소할 개체의 시작 위치에 대한 포인터입니다.
 
-*count*<br/>
+*수*\
 할당을 취소할 개체의 수입니다.
 
 ## <a name="destroy"></a>  scoped_allocator_adaptor::destroy
@@ -230,7 +230,7 @@ void destroy(Ty* ptr)
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr*<br/>
+*ptr*\
 제거할 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -262,14 +262,14 @@ size_type max_size();
 
 `Outer_traits::max_size(outer_allocator())`
 
-## <a name="a-nameopas--scopedallocatoradaptoroperator"></a><a name="op_as">  scoped_allocator_adaptor::operator =
+## <a name="a-nameopas--scopedallocatoradaptoroperator"></a><a name="op_as">scoped_allocator_adaptor:: operator =
 
 ```cpp
 scoped_allocator_adaptor& operator=(const scoped_allocator_adaptor&) = default;
 scoped_allocator_adaptor& operator=(scoped_allocator_adaptor&&) = default;
 ```
 
-## <a name="a-nameopeqeq--scopedallocatoradaptoroperator"></a><a name="op_eq_eq">  scoped_allocator_adaptor::operator = =
+## <a name="a-nameopeqeq--scopedallocatoradaptoroperator"></a><a name="op_eq_eq">scoped_allocator_adaptor:: operator = =
 
 ```cpp
 template <class OuterA1, class OuterA2, class... InnerAllocs>
@@ -277,7 +277,7 @@ bool operator==(const scoped_allocator_adaptor<OuterA1, InnerAllocs...>& a,
 const scoped_allocator_adaptor<OuterA2, InnerAllocs...>& b) noexcept;
 ```
 
-## <a name="a-nameopnoeq--scopedallocatoradaptoroperator"></a><a name="op_noeq">  scoped_allocator_adaptor::operator! =
+## <a name="a-nameopnoeq--scopedallocatoradaptoroperator"></a><a name="op_noeq">scoped_allocator_adaptor:: operator! =
 
 ```cpp
 template <class OuterA1, class OuterA2, class... InnerAllocs>
@@ -302,11 +302,11 @@ const outer_allocator_type& outer_allocator() const noexcept;
 
 `Outer::rebind\<Other>::other` 형식을 `scoped_allocator_adaptor\<Other, Inner...>`와 동일한 의미로 정의합니다.
 
-구조체 rebind {형식 정의 other_traits:: rebind\<기타 > Other_alloc; typedef scoped_allocator_adaptor\<Other_alloc, 내부... >. };
+struct 리바인딩 {typedef Other_traits:: 리바인딩\<Other > Other_alloc; typedef scoped_allocator_adaptor\<Other_alloc, Inner ... > 기타 };
 
 ## <a name="scoped_allocator_adaptor"></a>  scoped_allocator_adaptor::scoped_allocator_adaptor 생성자
 
-`scoped_allocator_adaptor` 개체를 생성합니다. 소멸자가 포함 됩니다.
+`scoped_allocator_adaptor` 개체를 생성합니다. 소멸자도 포함 합니다.
 
 ```cpp
 scoped_allocator_adaptor();
@@ -327,18 +327,18 @@ scoped_allocator_adaptor(Outer2&& al,
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 기존 `scoped_allocator_adaptor`입니다.
 
-*al*<br/>
+*항상*\
 외부 할당자로 사용할 기존 할당자입니다.
 
-*rest*<br/>
+*단계*\
 내부 할당자로 사용할 할당자의 목록입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 기본적으로 저장된 allocator 개체를 생성합니다. 해당 개체에서 저장 된 할당자 개체를 생성 하는 다음 3 개 생성자의 각 *오른쪽*합니다. 마지막 생성자는 인수 목록의 해당 인수에서 저장된 allocator 개체를 생성합니다.
+첫 번째 생성자는 기본적으로 저장된 allocator 개체를 생성합니다. 다음 세 가지 생성자는 각각의 해당 개체에서 저장 된 할당자 개체를 생성 *합니다.* 마지막 생성자는 인수 목록의 해당 인수에서 저장된 allocator 개체를 생성합니다.
 
 ## <a name="select_on_container_copy_construction"></a>  scoped_allocator_adaptor::select_on_container_copy_construction
 
@@ -350,8 +350,8 @@ scoped_allocator_adaptor select_on_container_copy_construction();
 
 ### <a name="return-value"></a>반환 값
 
-이 메서드는 실제로는 `scoped_allocator_adaptor(Outer_traits::select_on_container_copy_construction(*this), inner_allocator().select_on_container_copy_construction())`을 반환합니다. 결과 새로운 `scoped_allocator_adaptor` 를 호출 하 여 초기화 된 각 저장 된 할당자 개체를 사용 하 여 개체 `al.select_on_container_copy_construction()` 해당 하는 할당자에 대 한 *al*합니다.
+이 메서드는 실제로는 `scoped_allocator_adaptor(Outer_traits::select_on_container_copy_construction(*this), inner_allocator().select_on_container_copy_construction())`을 반환합니다. 결과는 해당 할당자 `scoped_allocator_adaptor` *al*에 대해를 호출 `al.select_on_container_copy_construction()` 하 여 각 저장 된 할당자 개체를 초기화 하는 새 개체입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

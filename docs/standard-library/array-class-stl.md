@@ -96,12 +96,12 @@ helpviewer_keywords:
 - std::array [C++], size
 - std::array [C++], swap
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
-ms.openlocfilehash: fdc3705980ac8f763e0438f19920148437e7ed27
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aba7026fa60045720c893478c1ea637dbaa037c1
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377506"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456916"
 ---
 # <a name="array-class-c-standard-library"></a>array 클래스(C++ 표준 라이브러리)
 
@@ -116,14 +116,14 @@ class array;
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |-|-|
 |`Ty`|요소의 형식입니다.|
 |`N`|요소의 수입니다.|
 
 ## <a name="members"></a>멤버
 
-|형식 정의|설명|
+|형식 정의|Description|
 |-|-|
 |[const_iterator](#const_iterator)|제어되는 시퀀스에 대한 상수 반복기의 형식입니다.|
 |[const_pointer](#const_pointer)|요소에 대한 상수 포인터의 형식입니다.|
@@ -159,7 +159,7 @@ class array;
 |[size](#size)|요소 수를 계산합니다.|
 |[swap](#swap)|두 컨테이너의 내용을 바꿉니다.|
 
-|연산자|설명|
+|연산자|Description|
 |-|-|
 |[array::operator=](#op_eq)|제어되는 시퀀스를 바꿉니다.|
 |[array::operator\[\]](#op_at)|지정된 위치에 있는 요소에 액세스합니다.|
@@ -192,7 +192,7 @@ array(const array& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 삽입할 개체 또는 범위입니다.
 
 ### <a name="remarks"></a>설명
@@ -247,12 +247,12 @@ void assign(const Ty& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*짧은*\
 할당할 값입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 제어 하는 시퀀스를 바꿉니다 `*this` 반복을 사용 하 여 `N` 값의 요소나 *val*합니다.
+멤버 함수는로 제어 되 `*this` 는 시퀀스를 값 *val*의 `N` 요소 반복으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -303,12 +303,12 @@ constexpr const_reference at(size_type off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*off*<br/>
+*해제*\
 액세스할 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 위치에서 제어 된 시퀀스의 요소에 대 한 참조를 반환 *해제*합니다. 해당 위치가 잘못된 경우 함수는 `out_of_range` 클래스의 개체를 throw합니다.
+멤버 함수 *는 위치에서*제어 되는 시퀀스의 요소에 대 한 참조를 반환 합니다. 해당 위치가 잘못된 경우 함수는 `out_of_range` 클래스의 개체를 throw합니다.
 
 ### <a name="example"></a>예제
 
@@ -432,7 +432,7 @@ int main()
 
 ## <a name="cbegin"></a>  array::cbegin
 
-반환 된 **const** 반복기 범위에서 첫 번째 요소를 주소입니다.
+범위의 첫 번째 요소를 주소 처리 하는 **const** 반복기를 반환 합니다.
 
 ```cpp
 const_iterator cbegin() const noexcept;
@@ -440,13 +440,13 @@ const_iterator cbegin() const noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-A **상수** 범위 또는 빈 범위의 끝 바로 다음 위치 중 첫 번째 요소를 가리키는 임의 액세스 반복기 (빈 범위의 경우 `cbegin() == cend()`).
+범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 **상수** 임의 액세스 반복기입니다 (빈 범위의 `cbegin() == cend()`경우).
 
 ### <a name="remarks"></a>설명
 
 `cbegin` 반환 값을 사용하여 범위의 요소를 수정할 수 없습니다.
 
-`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 예에서 고려 `Container` 수정 되도록 (비 **const**)를 지 원하는 모든 종류의 컨테이너 `begin()` 및 `cbegin()`합니다.
+`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cbegin()`
 
 ```cpp
 auto i1 = Container.begin();
@@ -458,7 +458,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a>  array::cend
 
-반환 된 **const** 반복기 범위에서 마지막 요소 바로 다음 위치를 주소입니다.
+범위에서 마지막 요소 바로 다음 위치의 주소를 나타내는 **const** 반복기를 반환 합니다.
 
 ```cpp
 const_iterator cend() const noexcept;
@@ -472,7 +472,7 @@ const_iterator cend() const noexcept;
 
 `cend`는 반복기가 범위 끝을 통과했는지 여부를 테스트하는 데 사용됩니다.
 
-`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 예에서 고려 `Container` 수정 되도록 (비 **const**)를 지 원하는 모든 종류의 컨테이너 `end()` 및 `cend()`합니다.
+`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cend()`
 
 ```cpp
 auto i1 = Container.end();
@@ -1149,14 +1149,14 @@ constexpr const_reference operator[](size_type off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*off*<br/>
+*해제*\
 액세스할 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 위치에서 제어 된 시퀀스의 요소에 대 한 참조를 반환 *해제*합니다. 해당 위치가 유효하지 않을 경우 동작이 정의되지 않습니다.
+멤버 함수 *는 위치에서*제어 되는 시퀀스의 요소에 대 한 참조를 반환 합니다. 해당 위치가 유효하지 않을 경우 동작이 정의되지 않습니다.
 
-비 멤버 이기도 [가져옵니다](array-functions.md#get) 요소에 대 한 참조를 가져올 수 있는 함수는 **배열**합니다.
+또한 **배열의**요소에 대 한 참조를 가져오는 데 사용할 수 있는 비 멤버 [get](array-functions.md#get) 함수도 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1201,12 +1201,12 @@ array<Value> operator=(array<Value> right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 복사할 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 연산자의 각 요소를 할당 *오른쪽* 제어 된 시퀀스의 해당 요소를 반환 `*this`합니다. 제어 되는 시퀀스에서 제어 된 시퀀스의 복사본으로 대체 하는 데 사용할 있습니다 *오른쪽*합니다.
+멤버 연산자 *는의 각* 요소를 제어 되는 시퀀스의 해당 요소에 할당 하 고를 `*this`반환 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽*에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -1571,14 +1571,14 @@ void swap(array& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 내용을 교환할 배열입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수 간에 제어 된 시퀀스를 교환 `*this` 하 고 *오른쪽*합니다. `N`에 비례하여 많은 요소 할당과 생성자 호출을 수행합니다.
+멤버 함수는 제어 되는 시퀀스 `*this` 를과 *오른쪽*으로 바꿉니다. `N`에 비례하여 많은 요소 할당과 생성자 호출을 수행합니다.
 
-비 멤버 이기도 [스왑](array-functions.md#swap) 두 교환 하는 데 사용할 수 있는 함수가 **배열** 인스턴스.
+두 **배열** 인스턴스를 교환 하는 데 사용할 수 있는 비 멤버 [swap](array-functions.md#swap) 함수도 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1677,4 +1677,4 @@ int main()
 
 ## <a name="see-also"></a>참고자료
 
-[\<array>](../standard-library/array.md)<br/>
+[\<array>](../standard-library/array.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt_utf16 class
 ms.assetid: a9897f98-f84d-4db6-90ad-858b2727570c
-ms.openlocfilehash: 18b95884bb673305398739968ef2530e8c4778d1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca66a3273567a8d30a982211a6e977c129b00f5f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405224"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459718"
 ---
 # <a name="codecvtutf16"></a>codecvt_utf16
 
@@ -24,13 +24,13 @@ class codecvt_utf16 : public std::codecvt<Elem, char, StateType>
 
 ## <a name="parameters"></a>매개 변수
 
-*Elem*<br/>
+*E*\
 와이드 문자 요소 형식입니다.
 
-*Maxcode*<br/>
+*Maxcode*\
 로캘 패싯에 대한 최대 문자 수입니다.
 
-*모드*<br/>
+*모드가*\
 로캘 패싯에 대한 구성 정보입니다.
 
 ## <a name="remarks"></a>설명
@@ -43,4 +43,4 @@ class codecvt_utf16 : public std::codecvt<Elem, char, StateType>
 
 헤더: \<codecvt >
 
-Namespace: std
+네임 스페이스: std

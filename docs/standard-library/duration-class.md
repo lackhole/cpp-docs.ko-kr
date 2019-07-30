@@ -11,12 +11,12 @@ f1_keywords:
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
 helpviewer_keywords:
 - std::chrono [C++], duration
-ms.openlocfilehash: 49c68b1650ced36ebcf949ae2594508480e15136
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c537b7dfdd23ba641438e0caf6306cf5549b2d7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413803"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454299"
 ---
 # <a name="duration-class"></a>duration 클래스
 
@@ -41,7 +41,7 @@ class duration <duration<Rep, Period1>, Period2>;
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |duration::period Typedef|템플릿 매개 변수 `Period`의 동의어를 나타냅니다.|
 |duration::rep Typedef|템플릿 매개 변수 `Rep`의 동의어를 나타냅니다.|
@@ -54,7 +54,7 @@ class duration <duration<Rep, Period1>, Period2>;
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[count](#count)|시간 간격의 클록 틱 수를 반환합니다.|
 |[max](#max)|정적. 템플릿 매개 변수 `Ref`의 최대 허용 값을 반환합니다.|
@@ -63,7 +63,7 @@ class duration <duration<Rep, Period1>, Period2>;
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[duration::operator-](#operator-)|`duration` 개체의 복사본을 부정 틱 개수와 함께 반환합니다.|
 |[duration::operator--](#operator--)|저장된 틱 개수를 줄입니다.|
@@ -109,29 +109,29 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*Rep2*<br/>
+*Rep2*\
 틱 수를 나타내는 산술 형식입니다.
 
-*Period2*<br/>
+*Period2*\
 틱 기간(초)을 나타내는 `std::ratio` 템플릿 특수화입니다.
 
-*R*<br/>
+*R*\
 기본 기간의 틱 수입니다.
 
-*기간*<br/>
-지정 된 기간의 틱 수 *Period2*합니다.
+*최악*\
+*Period2*로 지정 된 기간 (틱) 수입니다.
 
 ### <a name="remarks"></a>설명
 
 기본 생성자는 초기화되지 않은 개체를 생성합니다. 빈 중괄호를 사용한 값 초기화는 0 클록 틱의 시간 간격을 나타내는 개체를 초기화합니다.
 
-시간 간격을 나타내는 두 번째, 하나의 템플릿 인수 생성자는 개체를 생성 *R* 클록 틱의 기본 기간을 사용 하 여 `std::ratio<1>`입니다. 표현 형식에서 기간 개체를 생성 하는 오류를 방지 하기 위해 반올림 틱 개수 것 *Rep2* 부동 소수점으로 처리 될 수 있는 경우 입력 `duration::rep` 부동 소수점 형식으로 처리할 수 없습니다.
+두 번째 템플릿 인수 생성자는 기본 기간 `std::ratio<1>`을 사용 하 여 *R* 클록 틱의 시간 간격을 나타내는 개체를 생성 합니다. 틱 수가 반올림 되지 않도록 하려면를 부동 소수점 형식으로 처리할 수 없는 경우 `duration::rep` 부동 소수점 형식으로 처리할 수 있는 *Rep2* 표현 형식에서 duration 개체를 생성 하는 것은 오류입니다.
 
-세 번째 두 템플릿 인수 생성자에 지정 된 시간 간격 길이가 시간 간격을 나타내는 개체를 생성 *기간*합니다. 틱 개수 잘림을 방지하려는 경우, 대상 형식과 *전혀 다른* 형식을 가진 다른 기간 개체에서 기간 개체를 생성하는 것은 오류입니다.
+세 번째, 두 개의 템플릿 인수 생성자는 길이가 *기간*으로 지정 된 시간 간격을 나타내는 시간 간격을 나타내는 개체를 생성 합니다. 틱 개수 잘림을 방지하려는 경우, 대상 형식과 *전혀 다른* 형식을 가진 다른 기간 개체에서 기간 개체를 생성하는 것은 오류입니다.
 
 `D2`를 부동 소수점 형식으로 처리할 수 없으며 [ratio_divide\<D1::period, D2::period>::type::den](../standard-library/ratio.md)이 1이 아닌 경우 기간 형식 `D1`은 또 다른 기간 형식 `D2`와 *전혀 다른* 형식입니다.
 
-경우가 아니면 *Rep2* 암시적으로 변환할 수 `rep` 고 `treat_as_floating_point<rep>` *마찬가지* 하거나 `treat_as_floating_point<Rep2>` *false*, 두 번째 생성자는 오버 로드 확인에 참여 하지 않습니다. 자세한 내용은 [<type_traits>](../standard-library/type-traits.md)를 참조하세요.
+*Rep2* 가로 암시적으로 변환할 `rep` 수 없고 `treat_as_floating_point<rep>` *true* 또는 `treat_as_floating_point<Rep2>` *false*를 포함 하는 경우를 제외 하 고 두 번째 생성자는 오버 로드 확인에 참여 하지 않습니다. 자세한 내용은 [<type_traits>](../standard-library/type-traits.md)를 참조하세요.
 
 오버플로가 변환에서 유도되고 `treat_as_floating_point<rep>`*가 true를 포함*하거나, `ratio_divide<Period2, period>::den`가 1과 같고 `treat_as_floating_point<Rep2>`*가 false를 포함*할 경우 세 번째 생성자는 오버로드 확인에 참여하지 않습니다. 자세한 내용은 [<type_traits>](../standard-library/type-traits.md)를 참조하세요.
 
@@ -195,8 +195,8 @@ duration& operator%=(const duration& Div);
 
 ### <a name="parameters"></a>매개 변수
 
-*Div*<br/>
-첫 번째 방법의 경우 *Div* 틱 수를 나타냅니다. 두 번째 방법의 경우 *Div* 되는 `duration` 틱 수를 포함 하는 개체입니다.
+*Div*\
+첫 번째 메서드의 경우 *Div* 는 틱 수를 나타냅니다. 두 번째 메서드의 경우 *Div* 는 `duration` 틱 수를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -212,7 +212,7 @@ duration& operator*=(const rep& Mult);
 
 ### <a name="parameters"></a>매개 변수
 
-*Mult*<br/>
+*Mult*\
 `duration::rep`로 지정된 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -229,7 +229,7 @@ duration& operator/=(const rep& Div);
 
 ### <a name="parameters"></a>매개 변수
 
-*Div*<br/>
+*Div*\
 `duration::rep`로 지정된 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -270,7 +270,7 @@ duration& operator+=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*기간*<br/>
+*최악*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -287,7 +287,7 @@ duration& operator-=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*기간*<br/>
+*최악*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -312,7 +312,7 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
 
 ### <a name="parameters"></a>매개 변수
 
-*Div*<br/>
+*Div*\
 기간 개체 또는 틱 수를 나타내는 값인 제수입니다.
 
 ### <a name="remarks"></a>설명
@@ -321,6 +321,6 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
-[duration_values 구조체](../standard-library/duration-values-structure.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<chrono>](../standard-library/chrono.md)\
+[duration_values 구조체](../standard-library/duration-values-structure.md)

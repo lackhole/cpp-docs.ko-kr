@@ -1,4 +1,4 @@
----
+﻿---
 title: ATL(액티브 템플릿 라이브러리) 개념
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -15,7 +15,7 @@ ms.locfileid: "65836992"
 
 ATL(액티브 템플릿 라이브러리)은 작고 신속한 COM(구성 요소 개체 모델) 개체를 만들 수 있는 템플릿 기반 C++ 클래스의 세트입니다. 스톡 구현, 이중 인터페이스, 표준 COM 열거자 인터페이스, 연결점, 분할 인터페이스, ActiveX 컨트롤 등, 주요 COM 기능을 특별히 지원합니다.
 
-ATL 프로그래밍 작업이 많은 경우 단순한 COM 프로그래밍을 위해 설계된 COM 및 .NET 특성에 대해 자세히 알아볼 필요가 있습니다. 자세한 내용은 [특성 사용 프로그래밍](../windows/attributed-programming-concepts.md)을 참조하세요. (COM 및 .NET 특성을 C++ 표준의 \[\[attribute]] 기능과 혼동하면 안 됨)
+ATL 프로그래밍 작업이 많은 경우 단순한 COM 프로그래밍을 위해 설계된 COM 및 .NET의 특성을 자세히 알아볼 필요가 있습니다. 자세한 내용은 [특성 사용 프로그래밍](../windows/attributed-programming-concepts.md)을 참조하세요. (COM 및 .NET 특성을 C++ 표준의 \[\[attribute]] 기능과 혼동하면 안 됨)
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -23,7 +23,7 @@ ATL 프로그래밍 작업이 많은 경우 단순한 COM 프로그래밍을 위
 COM(구성 요소 개체 모델)의 배경이 되는 주요 개념을 소개합니다. 이 문서에서는 ATL이란 무엇이며 언제 사용하는지에 대해서도 간략히 설명합니다.
 
 [ATL COM 개체 기본 사항](../atl/fundamentals-of-atl-com-objects.md)<br/>
-다양한 ATL 클래스 간의 관계와, 클래스가 구현되는 방식에 대해 설명합니다.
+다양한 ATL 클래스 간의 관계와 클래스가 구현되는 방식에 대해 설명합니다.
 
 [이중 인터페이스 및 ATL](../atl/dual-interfaces-and-atl.md)<br/>
 ATL의 관점에서 이중 인터페이스를 설명합니다.
@@ -35,7 +35,7 @@ ATL에서의 컬렉션 및 열거자 구현과 만들기에 대해 설명합니�
 복합 컨트롤을 만들기 위한 단계별 지침을 제공합니다. 복합 컨트롤은 다른 ActiveX 컨트롤 또는 Windows 컨트롤을 포함할 수 있는 ActiveX 컨트롤의 형식입니다.
 
 [ATL 컨트롤 포함 FAQ](../atl/atl-control-containment-faq.md)<br/>
-ATL 컨트롤을 통한 호스팅과 관련한 기본 사항을 설명합니다.
+ATL 컨트롤을 통한 호스팅과 관련된 기본사항을 설명합니다.
 
 [ATL COM 속성 페이지](../atl/atl-com-property-pages.md)<br/>
 COM 속성 페이지의 지정 및 구현 방법을 보여 줍니다.
@@ -97,7 +97,7 @@ ATL 프로젝트 마법사에 대한 정보를 포함합니다.
 클래스를 추가하는 방법을 설명합니다.
 
 [특성을 사용하는 프로그래밍](../windows/attributed-programming-concepts.md)<br/>
-특성을 사용한 COM 프로그래밍 간소화에 대한 개요와, 더 상세한 항목에 대한 링크 목록을 제공합니다.
+특성을 사용한 COM 프로그래밍 간소화에 대한 개요와 더 상세한 항목에 대한 링크 목록을 제공합니다.
 
 [ATL 클래스 개요](../atl/atl-class-overview.md)<br/>
 참조 정보와 ATL 클래스에 대한 링크를 제공합니다.

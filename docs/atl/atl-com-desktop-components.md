@@ -11,10 +11,9 @@ ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62223400"
----
-# <a name="atl-com-desktop-components"></a>ATL COM 데스크톱 구성 요소
 
-ATL 참조는 액티브 템플릿 라이브러리(ATL), 콤포넌트 개체 모델(COM) 객체의 프로그래밍을 단순화하는 템플릿 기반 C++ 클래스 집합을 설명합니다. ATL를 완전히 활용하기 위해 COM에 대한 지식이 있는 것이 가장 좋습니다. COM은 이진 규정을 만들고 Windows에서 소프트웨어 구성 요소를 사용 합니다. 완벽 하 게 활용 하기 위해 ATL, COM에 대 한 작업 지식이 것이 좋습니다. COM에 대 한 자세한 내용은 참조 하세요. [구성 요소 개체 모델 (COM)](/windows/desktop/com/component-object-model--com--portal)합니다.
+ATL 참조는 구성 요소 개체 모델(COM) 개체의 프로그래밍을 단순화하는 템플릿 기반 C++ 클래스 집합인 액티브 템플릿 라이브러리(ATL)에 대한 문서입니다. COM은 Windows에서 소프트웨어 구성 요소를 만들고 사용하는 것에 대한 이진 사양입니다. ATL을 완전히 활용하기 위해서는 COM에 대한 지식이 있는 것이 가장 좋습니다. COM에 대한 자세한 내용은 [구성 요소 개체 모델(COM)](/windows/desktop/com/component-object-model--com--portal)을 참조합니다.
+
 
 ## <a name="in-this-section"></a>섹션 내용
 

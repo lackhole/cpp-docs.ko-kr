@@ -7,12 +7,12 @@ helpviewer_keywords:
 - rank class
 - rank
 ms.assetid: bc9f1b8f-800f-46ca-b6f4-d8579ed5406a
-ms.openlocfilehash: a0658d7278ef31d01d371eff11aec09c19c8011e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cab8d4bb782c7e02df62874a40db14479558da99
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62369750"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458177"
 ---
 # <a name="rank-class"></a>rank 클래스
 
@@ -27,12 +27,12 @@ struct rank;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 쿼리는 배열 형식의 차원 수의 값을 보유 *Ty*, 또는 0 이면 *Ty* 배열 형식이 아닙니다.
+형식 쿼리는 배열 형식 *ty*의 차원 수 값을 보유 하거나, *ty* 가 배열 형식이 아닌 경우 0을 보유 합니다.
 
 ## <a name="example"></a>예제
 
@@ -69,5 +69,5 @@ rank<int[5][10]> == 2
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[extent 클래스](../standard-library/extent-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[extent 클래스](../standard-library/extent-class.md)

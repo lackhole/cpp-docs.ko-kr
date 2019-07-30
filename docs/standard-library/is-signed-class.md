@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_signed class
 - is_signed
 ms.assetid: 20ae44d9-22ad-4fbd-b26a-f18c62689451
-ms.openlocfilehash: eacc271697930bec64630c0a1be612bd89eeb91f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 153970412f324f070bb66ae4a1bb6a8c204a5886
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413533"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457500"
 ---
 # <a name="issigned-class"></a>is_signed 클래스
 
@@ -27,12 +27,12 @@ struct is_signed;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 부호 있는 정수 계열 형식이 또는 `cv-qualified` 부호 있는 정수 형식, 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 부호 있는 정수 계열 형식 또는 `cv-qualified` 부호 있는 정수 계열 형식인 경우 true이 고 그렇지 않은 경우 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -77,5 +77,5 @@ is_signed<float> == true
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_unsigned 클래스](../standard-library/is-unsigned-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_unsigned 클래스](../standard-library/is-unsigned-class.md)

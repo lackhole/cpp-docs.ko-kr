@@ -1,21 +1,21 @@
 ---
-title: '&lt;실행&gt;'
+title: '&lt;문제점&gt;'
 ms.date: 04/18/2019
 f1_keywords:
 - <execution>
 - std::<execution>
 helpviewer_keywords:
 - execution header
-ms.openlocfilehash: 3bce34019f9ed4880d72a9d16c3c8b78dde0e0e3
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 3b0ccd540c56500c2f265aa6192a12fc2d5078b0
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268425"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457975"
 ---
-# <a name="ltexecutiongt"></a>&lt;실행&gt;
+# <a name="ltexecutiongt"></a>&lt;문제점&gt;
 
-병렬 알고리즘에 대 한 실행 정책을 설명합니다.
+병렬 알고리즘에 대 한 실행 정책에 대해 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,10 +33,10 @@ namespace std::execution {
 
 |||
 |-|-|
-|[is_execution_policy 구조체](is-execution-policy-struct.md)|함수 시그니처를 제외 하 고 그렇지 않은 경우 모호한 오버 로드 확인 참가 하기 위해 실행 정책을 검색 합니다.|
-|[parallel_policy 클래스](parallel-policy-class.md)|고유 형식으로 병렬 알고리즘 오버 로드 명확 하 게 병렬 알고리즘의 실행을 병렬 처리할 수를 표시 하는 데 사용 합니다.|
-|[parallel_unsequenced_policy 클래스](parallel-unsequenced-policy-class.md)|병렬 알고리즘 오버 로드를 명확히 구분 하는 병렬 알고리즘의 실행은 병렬 처리 되 고 벡터화 있습니다 나타내려면 고유 형식으로 사용 합니다.|
-|[sequenced_policy 클래스](sequenced-policy-class.md)|고유 형식으로 병렬 알고리즘 오버 로드를 명확히 구분 해야 병렬 알고리즘을 실행을 병렬 처리할 수 있습니다 하는 데 사용 합니다.|
+|[is_execution_policy 구조체](is-execution-policy-struct.md)|모호한 오버 로드 확인 참여의 함수 시그니처를 제외 하기 위해 실행 정책을 검색 합니다.|
+|[parallel_policy 클래스](parallel-policy-class.md)|병렬 알고리즘 오버 로드를 명확 하 게 구분 하는 고유 형식으로 사용 되며 병렬 알고리즘의 실행이 병렬화 될 수 있음을 표시 합니다.|
+|[parallel_unsequenced_policy 클래스](parallel-unsequenced-policy-class.md)|병렬 알고리즘 오버 로드를 명확 하 게 구분 하는 고유한 형식으로 사용 되며 병렬 알고리즘의 실행이 병렬화 되 고 벡터화 수 있음을 표시 합니다.|
+|[sequenced_policy 클래스](sequenced-policy-class.md)|병렬 알고리즘 오버 로드를 명확 하 게 구분 하기 위해 고유한 형식으로 사용 되며 병렬 알고리즘의 실행이 병렬화 될 수 있어야 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -46,6 +46,6 @@ namespace std::execution {
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](thread-safety-in-the-cpp-standard-library.md)<br/>
+[헤더 파일 참조](cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](thread-safety-in-the-cpp-standard-library.md)\
 [C++ 표준 라이브러리 참조](cpp-standard-library-reference.md)

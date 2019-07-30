@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::priority_queue [C++], size
 - std::priority_queue [C++], top
 ms.assetid: 69fca9cc-a449-4be4-97b7-02ca5db9cbb2
-ms.openlocfilehash: d8f2b4ab788c82e531d1121f04dd0d422efb17cd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3591264efec87c2c3454d0f885c19b30b73ae51c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370017"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458420"
 ---
 # <a name="priorityqueue-class"></a>priority_queue 클래스
 
@@ -40,20 +40,20 @@ class priority_queue
 
 ### <a name="parameters"></a>매개 변수
 
-*Type*<br/>
+*입력할*\
 priority_queue에 저장되는 요소 데이터 형식입니다.
 
-*컨테이너*<br/>
+*컨테이너*\
 priority_queue를 구현하는 데 사용된 기본 컨테이너의 형식입니다.
 
-*Compare*<br/>
+*과*\
 두 요소값을 정렬 키로 비교하여 priority_queue에서 상대적인 순서를 결정할 수 있는 함수 개체를 제공하는 형식입니다. 이 인수는 선택 사항이며 기본값은 이진 조건자 `less<typename Container::value_type>`입니다.
 
 ## <a name="remarks"></a>설명
 
-클래스의 요소 `Type` 첫 번째 템플릿에서 규정 된 큐 개체의 매개 변수는 [value_type](#value_type) 기본 컨테이너 클래스에 있는 요소의 형식과 일치 해야 `Container` 에서 규정 합니다 두 번째 템플릿 매개 변수입니다. `Type` 해당 형식의 개체를 복사 하 고 해당 형식의 변수에 값을 할당할 수 있도록 할당할 수 있어야 합니다.
+Queue 개체의 첫 `Type` 번째 템플릿 매개 변수에서 규정 된 클래스의 요소는 [value_type](#value_type) 와 동의어 이며, 두 번째 템플릿에서 규정 된 기본 컨테이너 클래스 `Container` 의 요소 형식과 일치 해야 합니다. 변수에. 해당 형식의 개체를 복사 하 고 해당 형식의 변수에 값을 할당할 수 있도록를 할당할 수 있어야합니다.`Type`
 
-Priority_queue 클래스의 저장 된 함수 개체를 호출 하 여 제어 하는 시퀀스를 정렬 `Traits`합니다. 일반적으로, 이 순서를 정하려면 요소의 크기를 비교할 수 있어야 합니다. 즉, 제공된 어떤 두 요소에서 두 요소가 동일하거나(어떤 것도 다른 것보다 작지 않음) 하나가 다른 것보다 작음을 정할 수 있어야 합니다. 그러면 동일하지 않은 요소 사이에 정렬이 수행됩니다. 기술적으로 설명하면, 비교 함수는 표준 함수의 의미에서 엄밀히 약한 정렬을 수행하는 이진 조건자입니다.
+Priority_queue는 클래스 `Traits`의 저장 된 함수 개체를 호출 하 여 제어 하는 시퀀스를 정렬 합니다. 일반적으로, 이 순서를 정하려면 요소의 크기를 비교할 수 있어야 합니다. 즉, 제공된 어떤 두 요소에서 두 요소가 동일하거나(어떤 것도 다른 것보다 작지 않음) 하나가 다른 것보다 작음을 정할 수 있어야 합니다. 그러면 동일하지 않은 요소 사이에 정렬이 수행됩니다. 기술적으로 설명하면, 비교 함수는 표준 함수의 의미에서 엄밀히 약한 정렬을 수행하는 이진 조건자입니다.
 
 priority_deque에 적합한 기본 컨테이너 클래스에는 `front`, `push_back`, `pop_back` 및 임의 액세스 반복기의 작업을 지원하는 [deque 클래스](../standard-library/deque-class.md) 및 기본 [vector 클래스](../standard-library/vector-class.md) 또는 기타 시퀀스 컨테이너가 포함됩니다. 기본 컨테이너 클래스는 제한된 시퀀스 컨테이너 멤버 함수 집합만 공용 인터페이스로 표시하는 컨테이너 어댑터 내에서 캡슐화되어 있습니다.
 
@@ -69,13 +69,13 @@ C++ 표준 라이브러리를 통해 정의되는 컨테이너 어댑터에는 s
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[priority_queue](#priority_queue)|비어 있거나 기본 컨테이너 개체 또는 다른 `priority_queue` 범위의 복사본인 `priority_queue`를 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|형식 이름|Description|
 |-|-|
 |[container_type](#container_type)|`priority_queue`에서 조정할 기본 컨테이너를 제공하는 형식입니다.|
 |[size_type](#size_type)|`priority_queue`에서 요소 수를 표현할 수 있는 부호 없는 정수 형식입니다.|
@@ -242,28 +242,28 @@ priority_queue(InputIterator first, InputIterator last, const Traits& _comp, con
 
 ### <a name="parameters"></a>매개 변수
 
-*_comp*<br/>
+*_comp*\
 priority_queue의 요소 순서를 지정하는 데 사용되는 **constTraits** 형식의 비교 함수로, 기본 컨테이너의 비교 함수를 기본값으로 사용합니다.
 
-*_Cont*<br/>
+*_ 계속*\
 생성된 priority_queue가 복사본이 되는 기본 컨테이너입니다.
 
-*right*<br/>
+*오른쪽*\
 생성된 set가 복사본으로 지정될 priority_queue입니다.
 
-*first*<br/>
+*기본*\
 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*last*<br/>
+*최신*\
 복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
 
-처음 3 개 생성자 중 각각 지정 하는 두 번째 형식도 지정 비교 함수는 빈 초기 priority_queue (`comp`) 요소 및 세 번째 순서를 명시적으로 설정 하는 데 사용할 지정 된 `container_type`(`_Cont`) 사용할 수 있습니다. **explicit** 키워드를 사용하는 경우 특정 종류의 자동 형식 변환이 수행되지 않습니다.
+처음 세 생성자는 각각 빈 초기 priority_queue을 지정 하 고, 두 번째 생성자는 요소의 순서를 설정 하`comp`는 데 사용할 비교 함수 ()의 형식을 지정 하며, 세 `container_type`번째생성자는(`_Cont`)를 사용 합니다. **explicit** 키워드를 사용하는 경우 특정 종류의 자동 형식 변환이 수행되지 않습니다.
 
-네 번째 생성자는 priority_queue의 복사본을 지정 *오른쪽*합니다.
+네 번째 생성자는 priority_queue *right*의 복사본을 지정 합니다.
 
-마지막 3 개 생성자는 범위를 복사 \[ *첫 번째*를 *마지막*) 일부 컨테이너를 사용 하 여 값의 형식을 지정할 때 명 시도가 향상 priority_queue를 초기화 합니다. 클래스의 비교 함수 `Traits` 고 `container_type`입니다.
+마지막 세 생성자는 일부 컨테이너의 \[범위를 *먼저*복사 하 *고, 값*을 사용 하 여 클래스 `Traits` 의 비교 함수 형식을 지정 하는 priority_queue 내 높아집니다를 사용 하 여를 초기화 합니다. `container_type`.
 
 ### <a name="example"></a>예제
 
@@ -386,7 +386,7 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*짧은*\
 priority_queue의 맨 위에 추가되는 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -492,7 +492,7 @@ const_reference top() const;
 
 ### <a name="return-value"></a>반환 값
 
-기준으로 가장 큰 요소에 대 한 참조를 `Traits` 함수, priority_queue의 개체인 합니다.
+`Traits` 함수, priority_queue 개체에 의해 결정 되는 가장 큰 요소에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -574,5 +574,5 @@ The element at the top of the priority_queue is 69.
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

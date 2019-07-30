@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::tolower [C++]
 - std::toupper [C++]
 - std::use_facet [C++]
-ms.openlocfilehash: b1ffe9e5294e4b945f81dbecbabba64c15c188a7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3c5d81aecb5e78a8fd3c3f32da82f6048ae4fac8
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413166"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453559"
 ---
 # <a name="ltlocalegt-functions"></a>&lt;locale&gt; 함수
 
@@ -62,7 +62,7 @@ bool has_facet(const locale& Loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*Loc*<br/>
+*Loc*\
 패싯이 있는지 테스트할 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -105,10 +105,10 @@ bool isalnum(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 테스트할 영숫자 요소입니다.
 
-*Loc*<br/>
+*Loc*\
 테스트할 영숫자 요소를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -172,10 +172,10 @@ bool isalpha(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 테스트할 요소입니다.
 
-*Loc*<br/>
+*Loc*\
 테스트할 영문자 요소를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -237,10 +237,10 @@ bool iscntrl(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 테스트할 요소입니다.
 
-*Loc*<br/>
+*Loc*\
 테스트할 요소를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -302,10 +302,10 @@ bool isdigit(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 테스트할 요소입니다.
 
-*Loc*<br/>
+*Loc*\
 테스트할 요소를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -367,10 +367,10 @@ bool isgraph(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 테스트할 요소입니다.
 
-*Loc*<br/>
+*Loc*\
 테스트할 요소를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -432,10 +432,10 @@ bool islower(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 테스트할 요소입니다.
 
-*Loc*<br/>
+*Loc*\
 테스트할 요소를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -497,10 +497,10 @@ bool isprint(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 테스트할 요소입니다.
 
-*Loc*<br/>
+*Loc*\
 테스트할 요소를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -561,10 +561,10 @@ bool ispunct(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 테스트할 요소입니다.
 
-*Loc*<br/>
+*Loc*\
 테스트할 요소를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -626,10 +626,10 @@ bool isspace(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 테스트할 요소입니다.
 
-*Loc*<br/>
+*Loc*\
 테스트할 요소를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -691,10 +691,10 @@ bool isupper(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 테스트할 요소입니다.
 
-*Loc*<br/>
+*Loc*\
 테스트할 요소를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -756,10 +756,10 @@ bool isxdigit(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 테스트할 요소입니다.
 
-*Loc*<br/>
+*Loc*\
 테스트할 요소를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -823,10 +823,10 @@ CharType tolower(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 소문자로 변환할 문자입니다.
 
-*Loc*<br/>
+*Loc*\
 변환할 문자를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -872,10 +872,10 @@ CharType toupper(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*<br/>
+*Ch*\
 대문자로 변환할 문자입니다.
 
-*Loc*<br/>
+*Loc*\
 변환할 문자를 포함하는 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -921,7 +921,7 @@ const Facet& use_facet(const locale& Loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*Loc*<br/>
+*Loc*\
 참조되는 패싯의 형식을 포함하는 const 로캘입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -973,4 +973,4 @@ The character '!' in locale loc2 is not alphabetic.
 
 ## <a name="see-also"></a>참고자료
 
-[\<locale>](../standard-library/locale.md)<br/>
+[\<locale>](../standard-library/locale.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_pointer class
 - is_pointer
 ms.assetid: 44e0a403-7241-4e0a-8922-32877bcb9a4c
-ms.openlocfilehash: 7e46d692f76f80302dcd181aa1cee2efd1b189d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d8b15f9eb5ef817f5576387b0d8119b86aa86af7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413608"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455741"
 ---
 # <a name="ispointer-class"></a>is_pointer 클래스
 
@@ -27,12 +27,12 @@ struct is_pointer;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 에 대 한 포인터 **void**, 개체에 대 한 포인터 또는 함수에 대 한 포인터 또는 `cv-qualified` 형식 중 하나, 그렇지 않으면 false입니다. 유의 `is_pointer` 이면 false를 보유 *Ty* 멤버에 대 한 포인터 또는 멤버 함수에 대 한 포인터입니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 **void**에 대 한 포인터, 개체에 대 한 포인터 또는 함수에 대 한 포인터 또는 `cv-qualified` 그 중 하나의 폼 인 경우 true이 고 그렇지 않은 경우 false입니다. Ty가 `is_pointer` 멤버에 대  한 포인터 또는 멤버 함수에 대 한 포인터인 경우는 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -80,6 +80,6 @@ is_pointer<int *> == true
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_member_pointer 클래스](../standard-library/is-member-pointer-class.md)<br/>
-[is_reference 클래스](../standard-library/is-reference-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_member_pointer 클래스](../standard-library/is-member-pointer-class.md)\
+[is_reference 클래스](../standard-library/is-reference-class.md)

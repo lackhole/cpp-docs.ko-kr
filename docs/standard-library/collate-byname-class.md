@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - collate_byname class
 ms.assetid: 3dc380df-867c-4763-b60e-ba62a8e63ca7
-ms.openlocfilehash: 46eb139bafcf7368688f32cce37e38362c158c91
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8ed428da05e706796a981b8ca9d601033156c6f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405185"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458619"
 ---
 # <a name="collatebyname-class"></a>collate_byname 클래스
 
@@ -39,15 +39,15 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*_Locname*<br/>
+*_Locname*\
 명명된 로캘입니다.
 
-*_Refs*<br/>
+*참조 (_s)* \
 초기 참조 개수입니다.
 
 ## <a name="remarks"></a>설명
 
-이 템플릿 클래스는 [collate](../standard-library/collate-class.md#collate)\<CharType> 형식의 [로캘 패싯](../standard-library/locale-class.md#facet_class)으로 사용할 수 있는 개체를 설명합니다. 해당 동작은에 의해 결정 됩니다 합니다 [라는](../standard-library/locale-class.md#name) 로캘 *_Locname*합니다. 각 생성자는 [collate](../standard-library/collate-class.md#collate)\<CharType>( `_Refs`)를 통해 해당 기본 개체를 초기화합니다.
+이 템플릿 클래스는 [collate](../standard-library/collate-class.md#collate)\<CharType> 형식의 [로캘 패싯](../standard-library/locale-class.md#facet_class)으로 사용할 수 있는 개체를 설명합니다. 해당 동작은 [명명](../standard-library/locale-class.md#name) 된 로캘 *_locname*에 의해 결정 됩니다. 각 생성자는 [collate](../standard-library/collate-class.md#collate)\<CharType>( `_Refs`)를 통해 해당 기본 개체를 초기화합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -57,4 +57,4 @@ protected:
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

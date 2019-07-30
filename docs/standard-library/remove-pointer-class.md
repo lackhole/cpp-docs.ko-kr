@@ -7,12 +7,12 @@ helpviewer_keywords:
 - remove_pointer class
 - remove_pointer
 ms.assetid: 2cd4e417-32fb-4f53-bd16-4e8a98240832
-ms.openlocfilehash: 6bc735af1c1af292b32b56aae599eef019836254
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 786a1cba5fc35014e33e3e19245271adefec1372
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368866"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451248"
 ---
 # <a name="removepointer-class"></a>remove_pointer 클래스
 
@@ -30,12 +30,12 @@ using remove_pointer_t = typename remove_pointer<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-인스턴스의 `remove_pointer<T>` 는 형식인 수정 된 `T1` 때 *T* 의 형식은 `T1*`를 `T1* const`를 `T1* volatile`, 또는 `T1* const volatile`고, 그렇지 않으면 *T*합니다.
+`remove_pointer<T>` 의 인스턴스는 *t* 가, `T1*` ,`T1* const`또는형식인경우 `T1` 인 수정 된 형식을 보유 *합니다. 그렇지*않은 경우에는입니다. `T1* const volatile` `T1* volatile`
 
 ## <a name="example"></a>예제
 
@@ -67,5 +67,5 @@ remove_pointer_t<int *> == int
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_pointer 클래스](../standard-library/add-pointer-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[add_pointer 클래스](../standard-library/add-pointer-class.md)

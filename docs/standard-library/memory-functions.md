@@ -74,16 +74,16 @@ helpviewer_keywords:
 - std::uninitialized_copy_n [C++]
 - std::uninitialized_fill [C++]
 - std::uninitialized_fill_n [C++]
-ms.openlocfilehash: 6199c97e19c18075007d5c682c2199a2e5886b29
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 14818e93e79a0be9960ba67088f81d51d402b717
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243835"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448500"
 ---
 # <a name="ltmemorygt-functions"></a>&lt;memory&gt; 함수
 
-## <a name="addressof"></a> addressof
+## <a name="addressof"></a>addressof
 
 개체의 실제 주소를 가져옵니다.
 
@@ -94,16 +94,16 @@ template <class T>
 
 ### <a name="parameters"></a>매개 변수
 
-*val*\
+*짧은*\
 실제 주소를 가져올 개체 또는 함수입니다.
 
 ### <a name="return-value"></a>반환 값
 
-개체 또는 함수에서 참조의 실제 주소로 *Val*오버 로드 된 경우에, `operator&()` 존재 합니다.
+오버 로드 `operator&()` 된가 있는 경우에도 *Val*에서 참조 하는 개체 또는 함수의 실제 주소입니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="align"></a> 맞춤
+## <a name="align"></a>않아
 
 지정된 크기의 스토리지(지정된 정렬 사양을 기준으로 정렬됨)를 지정된 스토리지의 첫 번째 가능한 주소에 정렬합니다.
 
@@ -118,14 +118,14 @@ void* align(
 
 ### <a name="parameters"></a>매개 변수
 
-*맞춤*\
+*할당*\
 시도에 맞게 정렬됩니다.
 
-*크기*\
+*크기가*\
 정렬된 스토리지의 크기(바이트 단위)입니다.
 
-*ptr*\
-사용 가능한 인접 스토리지 풀 중 사용할 스토리지 풀의 시작 주소입니다. 이 매개 변수는 출력 매개 변수 이기도 하 고 맞춤에 성공한 경우 새 시작 주소를 포함 하도록 설정 됩니다. `align()`이 성공하지 않을 경우 이 매개 변수는 수정되지 않습니다.
+*Ptr*\
+사용 가능한 인접 스토리지 풀 중 사용할 스토리지 풀의 시작 주소입니다. 이 매개 변수는 출력 매개 변수 이기도 하며 정렬이 성공한 경우 새 시작 주소를 포함 하도록 설정 됩니다. `align()`이 성공하지 않을 경우 이 매개 변수는 수정되지 않습니다.
 
 *공간*\
 정렬된 스토리지를 만드는 데 사용하기 위해 `align()`에서 사용할 수 있는 총 공간입니다. 이 매개 변수는 출력 매개 변수이기도 하며, 정렬된 스토리지 및 관련된 모든 연결된 오버헤드를 차감한 후 스토리지 버퍼에 남아 있는 조정된 공간을 포함합니다.
@@ -134,11 +134,11 @@ void* align(
 
 ### <a name="return-value"></a>반환 값
 
-요청된 된 정렬된 버퍼의 사용 가능 공간에 맞지 않는 경우 null 포인터 그렇지 않은 경우 새 값 *Ptr*합니다.
+요청 된 정렬 된 버퍼가 사용 가능한 공간에 맞지 않는 경우 null 포인터입니다. 그렇지 않으면 *Ptr*의 새 값입니다.
 
 ### <a name="remarks"></a>설명
 
-수정 된 *Ptr* 하 고 *공간* 매개 변수를 통해 호출할 수 있습니다 `align()` 서로 다른 값을 사용 하 여 동일한 버퍼에서 반복적으로 *맞춤* 하고 *크기*합니다. 다음 코드 조각은 `align()`을 사용하는 방법을 보여 줍니다.
+수정 된 *Ptr* 및 *Space* 매개 변수를 사용 하 `align()` 여 동일한 버퍼에서 반복적으로 호출할 수 있으며 *맞춤* 및 *크기*값이 서로 다를 수 있습니다. 다음 코드 조각은 `align()`을 사용하는 방법을 보여 줍니다.
 
 ```cpp
 #include <type_traits> // std::alignment_of()
@@ -163,7 +163,7 @@ while (std::align(alignment, sizeof(MyObj), ptr, space)) {
 // possible to allow more aligned storage in this buffer.
 ```
 
-## <a name="allocate_shared"></a> allocate_shared
+## <a name="allocate_shared"></a>allocate_shared
 
 지정된 할당자를 사용하여 지정된 형식에 대해 할당되고 생성되는 개체에 대한 `shared_ptr`을 만듭니다. `shared_ptr`를 반환합니다.
 
@@ -174,94 +174,94 @@ template <class Type, class Allocator, class... Types>
 
 ### <a name="parameters"></a>매개 변수
 
-*할당*\
+*#C4*\
 개체를 만드는 데 사용된 할당자입니다.
 
-*인수*\
+*Args*\
 개체가 되는 0개 이상의 인수입니다.
 
 ### <a name="remarks"></a>설명
 
-함수 개체를 만듭니다 `shared_ptr<Type>`에 대 한 포인터 `Type(Args...)` 으로 할당 되 고 생성 하 여 *Alloc*합니다.
+함수는 할당 및 할당 `shared_ptr<Type>` *에 의해 생성*되 `Type(Args...)` 는에 대 한 포인터인 개체를 만듭니다.
 
-## <a name="atomic_compare_exchange_strong"></a> atomic_compare_exchange_strong
+## <a name="atomic_compare_exchange_strong"></a>atomic_compare_exchange_strong
 
 ```cpp
 template<class T>
     bool atomic_compare_exchange_strong(shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w);
 ```
 
-## <a name="atomic_compare_exchange_weak"></a> atomic_compare_exchange_weak
+## <a name="atomic_compare_exchange_weak"></a>atomic_compare_exchange_weak
 
 ```cpp
 template<class T>
     bool atomic_compare_exchange_weak(shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w);
 ```
 
-## <a name="atomic_compare_exchange_strong_explicit"></a> atomic_compare_exchange_strong_explicit
+## <a name="atomic_compare_exchange_strong_explicit"></a>atomic_compare_exchange_strong_explicit
 
 ```cpp
 template<class T>
     bool atomic_compare_exchange_strong_explicit(shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w, memory_order success, memory_order failure);
 ```
 
-## <a name="atomic_compare_exchange_weak_explicit"></a> atomic_compare_exchange_weak_explicit
+## <a name="atomic_compare_exchange_weak_explicit"></a>atomic_compare_exchange_weak_explicit
 
 ```cpp
 template<class T>
     bool atomic_compare_exchange_weak_explicit(shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w, memory_order success, memory_order failure);
 ```
 
-## <a name="atomic_exchange"></a> atomic_exchange
+## <a name="atomic_exchange"></a>atomic_exchange
 
 ```cpp
 template<class T>
     shared_ptr<T> atomic_exchange(shared_ptr<T>* p, shared_ptr<T> r);
 ```
 
-## <a name="atomic_exchange_explicit"></a> atomic_exchange_explicit
+## <a name="atomic_exchange_explicit"></a>atomic_exchange_explicit
 
 ```cpp
 template<class T>
     shared_ptr<T> atomic_exchange_explicit(shared_ptr<T>* p, shared_ptr<T> r, memory_order mo);
 ```
 
-## <a name="atomic_is_lock_free"></a> atomic_is_lock_free
+## <a name="atomic_is_lock_free"></a>atomic_is_lock_free
 
 ```cpp
 template<class T>
     bool atomic_is_lock_free(const shared_ptr<T>* p);
 ```
 
-## <a name="atomic_load"></a> atomic_load
+## <a name="atomic_load"></a>atomic_load
 
 ```cpp
 template<class T>
     shared_ptr<T> atomic_load(const shared_ptr<T>* p);
 ```
 
-## <a name="atomic_load_explicit"></a> atomic_load_explicit
+## <a name="atomic_load_explicit"></a>atomic_load_explicit
 
 ```cpp
 template<class T>
     shared_ptr<T> atomic_load_explicit(const shared_ptr<T>* p, memory_order mo);
 ```
 
-## <a name="atomic_store"></a> atomic_store
+## <a name="atomic_store"></a>atomic_store
 
 ```cpp
 template<class T>
     void atomic_store(shared_ptr<T>* p, shared_ptr<T> r);
 ```
 
-## <a name="atomic_store_explicit"></a> atomic_store_explicit
+## <a name="atomic_store_explicit"></a>atomic_store_explicit
 
 ```cpp
 template<class T>
     void atomic_store_explicit(shared_ptr<T>* p, shared_ptr<T> r, memory_order mo);
 ```
 
-## <a name="const_pointer_cast"></a> const_pointer_cast
+## <a name="const_pointer_cast"></a>const_pointer_cast
 
 shared_ptr로 const_cast를 수행합니다.
 
@@ -283,7 +283,7 @@ template <class Ty, class Other>
 
 ### <a name="remarks"></a>설명
 
-경우 템플릿 함수는 빈 shared_ptr 개체를 반환 `const_cast<Ty*>(sp.get())` null 포인터를 반환 합니다. 그렇지 않으면 반환을 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)\<Ty >가 소유한 리소스를 소유 하는 개체 `sp`. `const_cast<Ty*>(sp.get())` 식이 유효해야 합니다.
+가 null 포인터를 반환 하는 `const_cast<Ty*>(sp.get())` 경우 템플릿 함수는 빈 shared_ptr 개체를 반환 하 고, 그렇지 않으면에서 `sp`소유 하는 리소스를 소유 하는 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)\<Ty > 개체를 반환 합니다. `const_cast<Ty*>(sp.get())` 식이 유효해야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -310,7 +310,7 @@ int main()
 sp1 == 3
 ```
 
-## <a name="declare_no_pointers"></a> declare_no_pointers
+## <a name="declare_no_pointers"></a>declare_no_pointers
 
 기본 주소 포인터와 블록 크기로 정의된 메모리 블록에 있는 문자에 추적 가능한 포인터가 포함될 수 없음을 가비지 수집기에 알립니다.
 
@@ -323,14 +323,14 @@ void declare_no_pointers(char* ptr, size_t _Size);
 *ptr*\
 추적 가능한 포인터를 더 이상 포함하지 않는 첫 번째 문자의 주소입니다.
 
-*크기 _s*\
-시작 된 블록의 크기 *ptr* 없습니다 추적 가능한 포인터를 포함 하는 합니다.
+*크기 (_s)* \
+추적 가능한 포인터를 포함 하지 않는 *ptr* 에서 시작 하는 블록의 크기입니다.
 
 ### <a name="remarks"></a>설명
 
-함수는 가비지 수집기에 알립니다는 주소 범위 `[ ptr, ptr + _Size)` 더 이상 추적 가능한 포인터를 포함 합니다. (할당 된 저장소에 대 한 모든 포인터 역참조 해서는 안 하지 않은 경우 연결할 수 있습니다.)
+함수는 주소 `[ ptr, ptr + _Size)` 범위에 추적 가능한 포인터가 더 이상 포함 되지 않음을 가비지 수집기에 알립니다. 할당 된 저장소에 대 한 모든 포인터는 연결할 수 없는 경우에만 역참조 되어야 합니다.
 
-## <a name="declare_reachable"></a> declare_reachable
+## <a name="declare_reachable"></a>declare_reachable
 
 지정된 주소가 할당된 스토리지에 대한 것이며 접근할 수 있음을 가비지 컬렉션에 알립니다.
 
@@ -345,11 +345,11 @@ void declare_reachable(void* ptr);
 
 ### <a name="remarks"></a>설명
 
-하는 경우 *ptr* null이 아니면 함수는 가비지 수집기에 알립니다입니다 *ptr* 이 아님을 연결할 수 (할당 된 유효한 저장소 포인트)입니다.
+*Ptr* 이 null이 아닌 경우 함수는 *ptr* 의 연결 가능 여부 (할당 된 유효한 저장소를 가리키기)를 가비지 수집기에 알립니다.
 
-## <a name="default_delete"></a> default_delete
+## <a name="default_delete"></a>default_delete
 
-로 할당 된 개체를 삭제 **new 연산자**합니다. `unique_ptr`에 사용하는 데 적합합니다.
+**New 연산자**를 사용 하 여 할당 된 개체를 삭제 합니다. `unique_ptr`에 사용하는 데 적합합니다.
 
 ```cpp
 struct default_delete {
@@ -362,7 +362,7 @@ struct default_delete {
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr*\
+*Ptr*\
 삭제할 개체에 대한 포인터입니다.
 
 *다른*\
@@ -370,9 +370,9 @@ struct default_delete {
 
 ### <a name="remarks"></a>설명
 
-설명 하는 템플릿 클래스는 `deleter` 로 할당 된 스칼라 개체를 삭제 하는 **new 연산자**템플릿 클래스를 사용 하 여 사용 하기 적합 한, `unique_ptr`합니다. 이 템플릿 클래스에는 명시적 특수화 `default_delete<Type[]>`도 있습니다.
+이 템플릿 클래스는 템플릿 `deleter` 클래스 `unique_ptr`와 함께 사용 하기에 적합 한 **new 연산자**를 사용 하 여 할당 된 스칼라 개체를 삭제 하는를 설명 합니다. 이 템플릿 클래스에는 명시적 특수화 `default_delete<Type[]>`도 있습니다.
 
-## <a name="destroy_at"></a> destroy_at
+## <a name="destroy_at"></a>destroy_at
 
 ```cpp
 template <class T>
@@ -381,7 +381,7 @@ template <class T>
 
 `location->~T()`와 같습니다.
 
-## <a name="destroy"></a> 삭제
+## <a name="destroy"></a>삭제
 
 ```cpp
 template <class ForwardIterator>
@@ -390,7 +390,7 @@ template <class ForwardIterator>
 
 `for (; first!=last; ++first) destroy_at(addressof(*first)); `와 같습니다.
 
-## <a name="destroy_n"></a> destroy_n
+## <a name="destroy_n"></a>destroy_n
 
 ```cpp
 template <class ForwardIterator, class Size>
@@ -399,7 +399,7 @@ template <class ForwardIterator, class Size>
 
 `for (; n > 0; (void)++first, --n) destroy_at(addressof(*first)); return first;`와 같습니다.
 
-## <a name="dynamic_pointer_cast"></a> dynamic_pointer_cast
+## <a name="dynamic_pointer_cast"></a>dynamic_pointer_cast
 
 shared_ptr로 동적 캐스팅합니다.
 
@@ -416,12 +416,12 @@ template <class Ty, class Other>
 *다른*\
 인수 공유 포인터에 의해 제어되는 형식입니다.
 
-*sp*\
+*sp-2*\
 인수 공유 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-경우 템플릿 함수는 빈 shared_ptr 개체를 반환 `dynamic_cast<Ty*>(sp.get())` null 포인터를 반환 합니다. 그렇지 않으면 반환을 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)\<Ty >가 소유한 리소스를 소유 하는 개체 *sp* . `dynamic_cast<Ty*>(sp.get())` 식이 유효해야 합니다.
+가 null 포인터를 `dynamic_cast<Ty*>(sp.get())` 반환 하는 경우 템플릿 함수는 빈 shared_ptr 개체를 반환 하 고, 그렇지 않으면 *sp*에서 소유 하는 리소스를 소유 하는 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)\<Ty > 개체를 반환 합니다. `dynamic_cast<Ty*>(sp.get())` 식이 유효해야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -459,7 +459,7 @@ int main()
 sp1->val == 3
 ```
 
-## <a name="get_deleter"></a> get_deleter
+## <a name="get_deleter"></a>get_deleter
 
 shared_ptr에서 삭제자를 가져옵니다.
 
@@ -470,18 +470,18 @@ template <class D, class Ty>
 
 ### <a name="parameters"></a>매개 변수
 
-*D*\
+*2*\
 삭제자의 형식입니다.
 
 *Ty*\
 공유 포인터에 의해 제어되는 형식입니다.
 
-*sp*\
+*sp-2*\
 공유 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-형식의 삭제 자에 대 한 포인터를 반환 하는 템플릿 함수 *D* 속하는 합니다 [shared_ptr 클래스](../standard-library/shared-ptr-class.md) 개체 *sp*합니다. 하는 경우 *sp* 없는 형식의 자가 없는 경우 또는 *D* 함수가 0을 반환 합니다.
+템플릿 함수는 [Shared_ptr Class](../standard-library/shared-ptr-class.md) *Sp*에 속한 *D* 형식의 deleter에 대 한 포인터를 반환 합니다. *Sp* 에 deleter가 없거나 해당 Deleter가 *D* 형식이 아닌 경우 함수는 0을 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -527,7 +527,7 @@ get_deleter(sp0) != 0 == false
 get_deleter(sp1) != 0 == true
 ```
 
-## <a name="get_pointer_safety"></a> get_pointer_safety
+## <a name="get_pointer_safety"></a>get_pointer_safety
 
 모든 가비지 수집기에서 간주된 포인터 안전 형식을 반환합니다.
 
@@ -537,9 +537,9 @@ pointer_safety get_pointer_safety();
 
 ### <a name="remarks"></a>설명
 
-자동 가비지 수집기에서 가정한 포인터 안전의 형식을 반환 하는 함수입니다.
+함수는 자동 가비지 수집기에서 가정 하는 포인터 안전 형식을 반환 합니다.
 
-## <a name="get_temporary_buffer"></a> get_temporary_buffer
+## <a name="get_temporary_buffer"></a>get_temporary_buffer
 
 지정된 수의 요소를 초과하지 않는 요소의 시퀀스를 위한 임시 스토리지를 할당합니다.
 
@@ -550,7 +550,7 @@ template <class Type>
 
 ### <a name="parameters"></a>매개 변수
 
-*개수*\
+*수*\
 메모리를 할당하도록 요청한 최대 요소 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -596,7 +596,7 @@ The number of elements that the allocated memory
 could store is given by: resultPair.second = 9.
 ```
 
-## <a name="make_shared"></a> make_shared
+## <a name="make_shared"></a>make_shared
 
 기본 할당자를 사용하여 하나 이상의 인수에서 작성된 할당된 개체를 가리키는 `shared_ptr`를 만들고 반환합니다. 지정된 형식의 개체와 `shared_ptr`을 모두 할당 및 생성하여 개체의 공유 소유권을 관리하고 `shared_ptr`을 반환합니다.
 
@@ -689,7 +689,7 @@ Playing Yesterday by The Beatles, use count: 3
 Playing Blackbird by The Beatles, use count: 3
 ```
 
-## <a name="make_unique"></a> make_unique
+## <a name="make_unique"></a>make_unique
 
 지정된 인수를 사용하여 생성되는, 지정된 형식의 개체에 대한 [unique_ptr](../standard-library/unique-ptr-class.md)을 만들고 반환합니다.
 
@@ -715,38 +715,38 @@ template <class T, class... Types>
 
 ### <a name="parameters"></a>매개 변수
 
-*T*\
+*트*\
 `unique_ptr`이 가리키는 개체의 형식입니다.
 
 *형식*\
-지정 된 생성자 인수의 형식 *Args*합니다.
+*Args*로 지정 된 생성자 인수의 형식입니다.
 
-*인수*\
-형식의 개체의 생성자에 전달할 인수 *T*합니다.
+*Args*\
+*T*형식의 개체 생성자에 전달할 인수입니다.
 
-*Elem*\
-형식 요소의 배열 *T*합니다.
+*E*\
+*T*형식의 요소 배열입니다.
 
-*크기*\
+*크기가*\
 새 배열에 공간을 할당할 수 있는 요소의 수입니다.
 
 ### <a name="remarks"></a>설명
 
-단일 개체에 대 한 첫 번째 오버 로드를 사용 하는, 두 번째 오버 로드는 배열에 대해 호출 되 고 세 번째 오버 로드에서 형식 인수에 배열 크기를 지정 하면 메시지를 표시 합니다 (make_unique\<T [N] >);이 생성은 현재 지원 되지 않습니다 표준입니다. `make_unique`를 사용하여 배열에 대한 `unique_ptr`을 만드는 경우 배열 요소를 별도로 초기화해야 합니다. 이 오버로드를 고려하는 경우 [std::vector](../standard-library/vector-class.md)를 사용하는 것이 더 나을 수 있습니다.
+첫 번째 오버 로드는 단일 개체에 사용 되 고, 두 번째 오버 로드는 배열에 대해 호출 되 고, 세 번째 오버 로드는 형식 인수 (make_unique\<T [N] >)에서 배열 크기를 지정할 수 없도록 합니다 .이 생성은 현재에서 지원 되지 않습니다. 비표준. `make_unique`를 사용하여 배열에 대한 `unique_ptr`을 만드는 경우 배열 요소를 별도로 초기화해야 합니다. 이 오버로드를 고려하는 경우 [std::vector](../standard-library/vector-class.md)를 사용하는 것이 더 나을 수 있습니다.
 
 `make_unique`는 예외 안전성을 위해 신중하게 구현되기 때문에 `make_unique` 생성자를 직접 호출하는 대신 `unique_ptr`를 사용할 것을 추천합니다.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 `make_unique`을 사용하는 방법을 보여 줍니다. 추가 예제는 [방법: Unique_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-unique-ptr-instances.md)합니다.
+다음 예제에서는 `make_unique`을 사용하는 방법을 보여 줍니다. 추가 예제는 [방법: Unique_ptr 인스턴스](../cpp/how-to-create-and-use-unique-ptr-instances.md)를 만들고 사용 합니다.
 
 [!code-cpp[stl_smart_pointers#214](../cpp/codesnippet/CPP/memory-functions_1.cpp)]
 
 `unique_ptr`과 관련하여 오류 C2280이 표시되는 경우 대부분 삭제된 함수인 해당 복사 생성자를 호출하려고 했기 때문입니다.
 
-## <a name="owner_less"></a> owner_less
+## <a name="owner_less"></a>owner_less
 
-공유된 포인터와 약한 포인트에 대한 소유권 기반의 혼합된 비교를 허용합니다. 반환 **true** 멤버 함수에 의해 왼쪽된 매개 변수가 오른쪽 매개 변수 전에 정렬 경우 `owner_before`합니다.
+공유된 포인터와 약한 포인트에 대한 소유권 기반의 혼합된 비교를 허용합니다. 멤버  함수 `owner_before`에서 왼쪽 매개 변수가 right 매개 변수 앞에 정렬 되 면 true를 반환 합니다.
 
 ```cpp
 template <class Type>
@@ -785,7 +785,7 @@ struct owner_less<weak_ptr<Type>>
 
 ### <a name="parameters"></a>매개 변수
 
-*_ 왼쪽*\
+*왼쪽 (_e)* \
 공유 또는 약한 포인터입니다.
 
 *오른쪽*\
@@ -795,7 +795,7 @@ struct owner_less<weak_ptr<Type>>
 
 템플릿 클래스는 모든 멤버 연산자를 `left.owner_before(right)`를 반환하는 것으로 정의합니다.
 
-## <a name="return_temporary_buffer"></a> return_temporary_buffer
+## <a name="return_temporary_buffer"></a>return_temporary_buffer
 
 `get_temporary_buffer` 템플릿 함수를 사용하여 할당된 임시 메모리를 취소합니다.
 
@@ -851,7 +851,7 @@ The number of elements that the allocated memory
 could store is given by: resultPair.second = 7.
 ```
 
-## <a name="static_pointer_cast"></a> static_pointer_cast
+## <a name="static_pointer_cast"></a>static_pointer_cast
 
 shared_ptr로 정적 캐스팅합니다.
 
@@ -873,7 +873,7 @@ template <class Ty, class Other>
 
 ### <a name="remarks"></a>설명
 
-경우 템플릿 함수는 빈 shared_ptr 개체를 반환 `sp` 비어 있는 경우 `shared_ptr` 개체, 그렇지 않으면 반환 된 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)\<Ty > 소유한리소스를소유하는개체`sp`. `static_cast<Ty*>(sp.get())` 식이 유효해야 합니다.
+가 빈 `sp` `sp` [](../standard-library/shared-ptr-class.md)\<개체인 경우 템플릿 함수는 빈 shared_ptr 개체를 반환 하 고, 그렇지 않은 경우에서 소유 하는 리소스를 소유 하는 shared_ptr 클래스 Ty > 개체를 반환 합니다. `shared_ptr` `static_cast<Ty*>(sp.get())` 식이 유효해야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -910,7 +910,7 @@ int main()
 sp1->val == 3
 ```
 
-## <a name="swap"></a> 교환
+## <a name="swap"></a>스왑을
 
 두 shared_ptr 또는 weak_ptr 개체를 교환합니다.
 
@@ -930,7 +930,7 @@ template <class Ty, class Other>
 *다른*\
 오른쪽 공유/약한 포인터에 의해 제어되는 형식입니다.
 
-*왼쪽*\
+*비어*\
 왼쪽 공유/약한 포인터입니다.
 
 *오른쪽*\
@@ -993,7 +993,7 @@ int main()
 *wp1 == 5
 ```
 
-## <a name="undeclare_no_pointers"></a> undeclare_no_pointers
+## <a name="undeclare_no_pointers"></a>undeclare_no_pointers
 
 기본 주소 포인터와 블록 크기로 정의된 메모리 블록에 있는 문자는 이제 추적이 가능한 포인터를 포함할 수 있음을 가비지 수집기에 알립니다.
 
@@ -1003,11 +1003,11 @@ void undeclare_no_pointers(char* ptr, size_t _Size);
 
 ### <a name="remarks"></a>설명
 
-함수는 가비지 수집기에 알립니다는 주소 범위 `[ptr, ptr + _Size)` 추적 가능한 포인터가 포함 될 수 있습니다.
+함수는 주소 `[ptr, ptr + _Size)` 범위에 추적 가능한 포인터가 포함 될 수 있음을 가비지 수집기에 알립니다.
 
-## <a name="undeclare_reachable"></a> undeclare_reachable
+## <a name="undeclare_reachable"></a>undeclare_reachable
 
-선언의 한 지정 된 메모리 위치에 대 한 연결을 취소합니다.
+지정 된 메모리 위치에 대 한 연결 가능성 선언을 취소 합니다.
 
 ```cpp
 template <class Type>
@@ -1021,9 +1021,9 @@ template <class Type>
 
 ### <a name="remarks"></a>설명
 
-경우 *ptr* 아닙니다 **nullptr**, 함수 가비지 수집기에 알립니다입니다 *ptr* 에 연결할 수 없습니다. 안전 하 게 파생 된 포인터를 비교 하는 같음 반환 *ptr*합니다.
+*Ptr* 이 **nullptr**가 아닌 경우 함수는 *ptr* 에 더 이상 연결할 수 없다는 것을 가비지 수집기에 알립니다. *Ptr*과 동일한 것을 비교 하는 안전 하 게 파생 된 포인터를 반환 합니다.
 
-## <a name="uninitialized_copy"></a> uninitialized_copy
+## <a name="uninitialized_copy"></a>uninitialized_copy
 
 지정된 소스 범위에서 초기화되지 않은 대상 범위로 개체를 복사합니다.
 
@@ -1034,18 +1034,18 @@ template <class InputIterator, class ForwardIterator>
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*\
+*기본*\
 소스 범위에 있는 첫 번째 요소를 주소 지정하는 입력 반복기입니다.
 
-*마지막*\
+*최신*\
 소스 범위에 있는 마지막 요소를 주소 지정하는 입력 반복기입니다.
 
-*대상*\
+*dest*\
 대상 범위에 있는 첫 번째 요소를 주소 지정하는 정방향 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
-소스 범위가 비어 않으면, 대상 범위를 벗어나는 첫째 위치를 주소 지정 하는 정방향 반복기입니다.
+소스 범위가 비어 있지 않은 경우 대상 범위를 벗어난 첫 번째 위치를 주소 지정 하는 전방 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1128,7 +1128,7 @@ int main()
 }
 ```
 
-## <a name="uninitialized_copy_n"></a> uninitialized_copy_n
+## <a name="uninitialized_copy_n"></a>uninitialized_copy_n
 
 입력 반복기에서 지정된 수의 요소의 복사본을 만듭니다. 복사본은 정방향 반복기에 배치됩니다.
 
@@ -1142,18 +1142,18 @@ ForwardIterator uninitialized_copy_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*\
+*기본*\
 복사할 개체를 참조하는 입력 반복기입니다.
 
-*개수*\
+*수*\
 개체를 반복할 횟수를 지정하는 부호 있는 또는 부호 없는 정수 형식입니다.
 
-*대상*\
+*dest*\
 새 복사본의 위치를 참조하는 정방향 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
 
-대상을 벗어나는 첫 번째 위치를 주소 지정하는 정방향 반복기입니다. 소스 범위가 비어 있는 경우 반복기 주소 *첫 번째*입니다.
+대상을 벗어나는 첫 번째 위치를 주소 지정하는 정방향 반복기입니다. 소스 범위가 비어 있는 경우 반복기는 *먼저*주소를 처리 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1168,7 +1168,7 @@ ForwardIterator uninitialized_copy_n(
 
 코드에서 예외를 throw하지 않는 경우 이 경우 생성된 모든 개체가 제거되고 예외가 다시 throw됩니다.
 
-## <a name="uninitialized_default_construct"></a> uninitialized_default_construct
+## <a name="uninitialized_default_construct"></a>uninitialized_default_construct
 
 ```cpp
 template <class ForwardIterator>
@@ -1177,7 +1177,7 @@ template <class ForwardIterator>
 
 ### <a name="remarks"></a>설명
 
-와 동일 합니다.
+다음과 동일 합니다.
 
 ```cpp
 for (; first != last; ++first)
@@ -1185,7 +1185,7 @@ for (; first != last; ++first)
         typename iterator_traits<ForwardIterator>::value_type;
 ```
 
-## <a name="uninitialized_default_construct_n"></a> uninitialized_default_construct_n
+## <a name="uninitialized_default_construct_n"></a>uninitialized_default_construct_n
 
 ```cpp
 template <class ForwardIterator, class Size>
@@ -1194,7 +1194,7 @@ template <class ForwardIterator, class Size>
 
 ### <a name="remarks"></a>설명
 
-와 동일 합니다.
+다음과 동일 합니다.
 
 ```cpp
 for (; n>0; (void)++first, --n)
@@ -1202,7 +1202,7 @@ for (; n>0; (void)++first, --n)
         typename iterator_traits<ForwardIterator>::value_type; return first;
 ```
 
-## <a name="uninitialized_fill"></a> uninitialized_fill
+## <a name="uninitialized_fill"></a>uninitialized_fill
 
 지정된 값의 개체를 초기화되지 않은 대상 범위로 복사합니다.
 
@@ -1213,13 +1213,13 @@ template <class ForwardIterator, class Type>
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*\
+*기본*\
 시작할 대상 범위에 있는 첫 번째 요소의 주소를 지정하는 정방향 반복기입니다.
 
-*마지막*\
+*최신*\
 시작할 대상 범위에 있는 마지막 요소의 주소를 지정하는 정방향 반복기입니다.
 
-*val*\
+*짧은*\
 대상 범위를 초기화하는 데 사용할 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1274,7 +1274,7 @@ int main( )
 The initialized Array contains: 25 25 25 25 25 25 25 25 25 25
 ```
 
-## <a name="uninitialized_fill_n"></a> uninitialized_fill_n
+## <a name="uninitialized_fill_n"></a>uninitialized_fill_n
 
 지정된 값의 개체를 초기화되지 않은 대상 범위의 지정된 수의 요소로 복사합니다.
 
@@ -1285,13 +1285,13 @@ template <class FwdIt, class Size, class Type>
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*\
+*기본*\
 초기화할 대상 범위에 있는 첫 번째 요소를 주소 지정하는 정방향 반복기입니다.
 
-*개수*\
+*수*\
 초기화할 요소의 수입니다.
 
-*val*\
+*짧은*\
 대상 범위를 초기화하는 데 사용할 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1338,7 +1338,7 @@ int main() {
 }
 ```
 
-## <a name="uninitialized_move"></a> uninitialized_move
+## <a name="uninitialized_move"></a>uninitialized_move
 
 ```cpp
 template <class InputIterator, class ForwardIterator>
@@ -1347,7 +1347,7 @@ template <class InputIterator, class ForwardIterator>
 
 ### <a name="remarks"></a>설명
 
-와 동일 합니다.
+다음과 동일 합니다.
 
 ```cpp
 for (; first != last; (void)++result, ++first)
@@ -1356,9 +1356,9 @@ for (; first != last; (void)++result, ++first)
         return result;
 ```
 
-예외가 throw 되 면 몇 가지 개체 범위에서 유효 하지만 지정 되지 않은 상태의 손실 될 수 있습니다.
+예외가 throw 되 면 범위의 일부 개체가 유효 하지만 지정 되지 않은 상태로 남아 있을 수 있습니다.
 
-## <a name="uninitialized_move_n"></a> uninitialized_move_n
+## <a name="uninitialized_move_n"></a>uninitialized_move_n
 
 ```cpp
 template <class InputIterator, class Size, class ForwardIterator>
@@ -1367,7 +1367,7 @@ template <class InputIterator, class Size, class ForwardIterator>
 
 ### <a name="remarks"></a>설명
 
-와 동일 합니다.
+다음과 동일 합니다.
 
 ```cpp
 for (; n > 0; ++result, (void) ++first, --n)
@@ -1375,9 +1375,9 @@ for (; n > 0; ++result, (void) ++first, --n)
         typename iterator_traits<ForwardIterator>::value_type(std::move(*first)); return {first,result};
 ```
 
-예외가 throw 되 면 몇 가지 개체 범위에서 유효 하지만 지정 되지 않은 상태의 손실 될 수 있습니다.
+예외가 throw 되 면 범위의 일부 개체가 유효 하지만 지정 되지 않은 상태로 남아 있을 수 있습니다.
 
-## <a name="uninitialized_value_construct"></a> uninitialized_value_construct
+## <a name="uninitialized_value_construct"></a>uninitialized_value_construct
 
 ```cpp
 template <class ForwardIterator>
@@ -1386,7 +1386,7 @@ template <class ForwardIterator>
 
 ### <a name="remarks"></a>설명
 
-와 동일 합니다.
+다음과 동일 합니다.
 
 ```cpp
 for (; first != last; ++first)
@@ -1394,21 +1394,21 @@ for (; first != last; ++first)
         typename iterator_traits<ForwardIterator>::value_type();
 ```
 
-## <a name="uninitialized_value_construct_n"></a> uninitialized_value_construct_n
+## <a name="uninitialized_value_construct_n"></a>uninitialized_value_construct_n
 
 ```cpp
 template <class ForwardIterator, class Size>
     ForwardIterator uninitialized_value_construct_n(ForwardIterator first, Size n);
 ```
 
-와 동일 합니다.
+다음과 동일 합니다.
 ```cpp
 for (; n>0; (void)++first, --n)
     ::new (static_cast<void*>(addressof(*first)))
         typename iterator_traits<ForwardIterator>::value_type(); return first;
 ```
 
-## <a name="uses_allocator_v"></a> uses_allocator_v
+## <a name="uses_allocator_v"></a>uses_allocator_v
 
 ```cpp
 template <class T, class Alloc>
@@ -1417,4 +1417,4 @@ template <class T, class Alloc>
 
 ## <a name="see-also"></a>참고자료
 
-[\<memory>](../standard-library/memory.md)<br/>
+[\<memory>](../standard-library/memory.md)

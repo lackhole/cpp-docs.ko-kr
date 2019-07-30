@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - set header
 ms.assetid: 43cb1ab2-6383-48cf-8bdc-2b96d7203596
-ms.openlocfilehash: 1bf5663d3e6891d45e2139c612d8e16860b6cace
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: b947d9ba268c9b4028415216e4ad0813f2d71947
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246378"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450519"
 ---
 # <a name="ltsetgt"></a>&lt;set&gt;
 
@@ -24,13 +24,13 @@ ms.locfileid: "68246378"
 **네임스페이스:** std
 
 > [!NOTE]
-> 합니다 \<설정 > 라이브러리 사용을 `#include <initializer_list>` 문입니다.
+> Set \<> 라이브러리에도 `#include <initializer_list>` 문이 사용 됩니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="operators"></a>연산자
 
-|set 버전|multiset 버전|설명|
+|set 버전|multiset 버전|Description|
 |-|-|-|
 |[operator!= (set)](../standard-library/set-operators.md#op_neq)|[operator!= (multiset)](../standard-library/set-operators.md#op_neq)|연산자의 좌변에 있는 set 또는 multiset 개체가 우변에 있는 set 또는 multiset 개체와 같지 않은지 테스트합니다.|
 |[operator< (set)](../standard-library/set-operators.md#op_lt)|[operator< (multiset)](../standard-library/set-operators.md#op_lt_multiset)|연산자의 좌변에 있는 set 또는 multiset 개체가 우변에 있는 set 또는 multiset 개체보다 작은지 테스트합니다.|
@@ -54,6 +54,6 @@ ms.locfileid: "68246378"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

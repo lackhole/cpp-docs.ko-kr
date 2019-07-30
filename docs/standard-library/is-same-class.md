@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_same class
 - is_same
 ms.assetid: d9df6c1d-c270-4ec2-802a-af275648dd1d
-ms.openlocfilehash: 5bb306ec29da225293affd0207f67271f59ec599
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f4e4babeef89960762ebb2ccf0f733f60eadfa47
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413556"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450053"
 ---
 # <a name="issame-class"></a>is_same 클래스
 
@@ -27,15 +27,15 @@ struct is_same;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty1*<br/>
+*Ty1*\
 쿼리할 첫 번째 형식입니다.
 
-*Ty2*<br/>
+*Ty2*\
 쿼리할 두 번째 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty1* 하 고 *Ty2* 동일한 형식이, 그렇지 않은 경우 false입니다.
+형식 조건자의 인스턴스는 *Ty1* 및 *Ty2* 형식이 동일한 형식인 경우 true이 고, 그렇지 않으면 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -88,6 +88,6 @@ is_same<int, const int> == false
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_convertible 클래스](../standard-library/is-convertible-class.md)<br/>
-[is_base_of 클래스](../standard-library/is-base-of-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_convertible 클래스](../standard-library/is-convertible-class.md)\
+[is_base_of 클래스](../standard-library/is-base-of-class.md)

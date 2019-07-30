@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_empty class
 - is_empty
 ms.assetid: 44a6fc92-7e55-4fbe-9a24-2a0ce2dccba0
-ms.openlocfilehash: f5ab0798e0074547d62a4bcff4db412445346189
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6300107ecf9c4ea1e237a60bf18f26b6416f7fba
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62336599"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452706"
 ---
 # <a name="isempty-class"></a>is_empty 클래스
 
@@ -27,12 +27,12 @@ struct is_empty;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 는 빈 클래스, 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 빈 클래스인 경우 true이 고 그렇지 않은 경우 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -78,4 +78,4 @@ is_empty<int> == false
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

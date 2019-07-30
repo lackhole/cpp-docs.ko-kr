@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::fisher_f_distribution [C++], param_type
 - std::fisher_f_distribution [C++], param_type
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-ms.openlocfilehash: 643c564d7407a79bd9e2e776946c4b8df37a2974
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: c5e45af5d350ba9c3f1e4e240dec2c13366318c3
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449922"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457032"
 ---
 # <a name="fisherfdistribution-class"></a>fisher_f_distribution 클래스
 
@@ -69,15 +69,15 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType*<br/>
-부동 소수점 결과 형식으로 기본값으로 **이중**합니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*RealType*\
+부동 소수점 결과 형식으로, 기본적으로 **double**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*URNG*<br/>
-균일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*URNG*\
+단일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-부동 소수점는 사용자 지정 값을 생성 하는 분포를 설명 하는 템플릿 클래스 형식 또는 형식 **이중** Fisher F-분포에 따라 제공 하지 않으면 배포 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
+피셔의 F 분포에 따라 분포 된 경우 템플릿 클래스는 사용자 지정 부동 소수점 형식의 값을 생성 하는 분포를 설명 하 고, 아무것도 제공 되지 않은 경우 **double** 형식을 제공 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
 
 ||||
 |-|-|-|
@@ -248,13 +248,13 @@ explicit fisher_f_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*m*<br/>
+*매*\
 `m` 분포 매개 변수입니다.
 
-*n*<br/>
+*n*\
 `n` 분포 매개 변수입니다.
 
-*parm*<br/>
+*parm*\
 분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
 ### <a name="remarks"></a>설명
@@ -283,13 +283,13 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*m*<br/>
+*매*\
 `m` 분포 매개 변수입니다.
 
-*n*<br/>
+*n*\
 `n` 분포 매개 변수입니다.
 
-*right*<br/>
+*오른쪽*\
 이 매개 변수와 비교할 `param_type` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -300,4 +300,4 @@ struct param_type {
 
 ## <a name="see-also"></a>참고자료
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

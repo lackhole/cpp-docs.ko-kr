@@ -5,12 +5,12 @@ helpviewer_keywords:
 - I/O [C++], stream
 - stream I/O
 ms.assetid: 21a97566-91a7-42d6-b2f8-a4c16bc926f1
-ms.openlocfilehash: d426baacb52095ab2d933263fdac8e312fc29558
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3d5344ede3a62375c4c8102d1fc39445518eb0c4
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159238"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455266"
 ---
 # <a name="inputoutput-streams"></a>입력/출력 스트림
 
@@ -22,7 +22,7 @@ ms.locfileid: "62159238"
 
 `basic_iostream`에서 파생은 클래스 템플릿 `basic_fstream`이며, 파일 간에 문자 데이터를 스트림하는 데 사용됩니다.
 
-`basic_fstream`의 문자 관련 특수화를 제공하는 형식 정의도 있습니다. 이들은 `fstream`를 기반으로 하는 파일 I/O 스트림인은 **char**, 및 `wfstream`, 기반으로 하는 파일 I/O 스트림인은 **wchar_t**합니다. 자세한 내용은 [basic_fstream 클래스](../standard-library/basic-fstream-class.md), [fstream](../standard-library/basic-fstream-class.md) 및 [wfstream](../standard-library/basic-fstream-class.md)을 참조하세요. 이러한 형식 정의를 사용하려면 헤더 파일 \<fstream>을 포함해야 합니다.
+`basic_fstream`의 문자 관련 특수화를 제공하는 형식 정의도 있습니다. 이러한 파일 `fstream`은 **char를**기반으로 하는 파일 i/o 스트림 이며  ,wchar_t를기반으로하는파일i/o`wfstream`스트림입니다. 자세한 내용은 [basic_fstream 클래스](../standard-library/basic-fstream-class.md), [fstream](../standard-library/basic-fstream-class.md) 및 [wfstream](../standard-library/basic-fstream-class.md)을 참조하세요. 이러한 형식 정의를 사용하려면 헤더 파일 \<fstream>을 포함해야 합니다.
 
 > [!NOTE]
 > `basic_fstream` 개체를 사용하여 파일 I/O를 수행하는 경우 기본 버퍼에 읽기 및 쓰기를 위해 별도로 지정된 위치가 포함되어 있어도 현재 입력 및 현재 출력 위치가 함께 연결되어 있으므로 일부 데이터를 읽으면 출력 위치가 이동합니다.
@@ -31,8 +31,8 @@ ms.locfileid: "62159238"
 
 ## <a name="see-also"></a>참고자료
 
-[stringstream](../standard-library/basic-stringstream-class.md)<br/>
-[basic_stringstream 클래스](../standard-library/basic-stringstream-class.md)<br/>
-[\<sstream>](../standard-library/sstream.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
+[stringstream](../standard-library/basic-stringstream-class.md)\
+[basic_stringstream 클래스](../standard-library/basic-stringstream-class.md)\
+[\<sstream>](../standard-library/sstream.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

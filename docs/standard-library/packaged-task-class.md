@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::packaged_task [C++], reset
 - std::packaged_task [C++], swap
 - std::packaged_task [C++], valid
-ms.openlocfilehash: e759b1bc8cb47c5c943f29545e3b03ee535f3df7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5bb04b84b723f239c338c02befa8cd3468cec3f2
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370673"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450077"
 ---
 # <a name="packagedtask-class"></a>packaged_task 클래스
 
@@ -42,14 +42,14 @@ class packaged_task;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[packaged_task](#packaged_task)|`packaged_task` 개체를 생성합니다.|
 |[packaged_task::~packaged_task 소멸자](#dtorpackaged_task_destructor)|`packaged_task` 개체를 제거합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[get_future](#get_future)|동일한 연결된 비동기 상태가 있는 [future](../standard-library/future-class.md) 개체를 반환합니다.|
 |[make_ready_at_thread_exit](#make_ready_at_thread_exit)|연결된 비동기 상태에 저장되어 있는 호출 가능 개체를 호출하고 반환된 값을 원자 단위로 저장합니다.|
@@ -67,7 +67,7 @@ class packaged_task;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<향후 >
+**헤더:** \<이후 >
 
 **네임스페이스:** std
 
@@ -113,7 +113,7 @@ packaged_task& operator=(packaged_task&& Right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*<br/>
+*오른쪽*\
 `packaged_task` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -122,7 +122,7 @@ packaged_task& operator=(packaged_task&& Right);
 
 ### <a name="remarks"></a>설명
 
-작업 후 *오른쪽* 연결 된 비동기 상태를 더 이상.
+작업 후에는 더 이상 연결 된 비동기 *상태가 없습니다.*
 
 ## <a name="op_call"></a>  packaged_task::operator()
 
@@ -150,7 +150,7 @@ operator bool() const noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-**true 이면** 개체에 연결된 된 비동기 상태가;이 고, 그렇지 **false**합니다.
+개체가 연결 된 비동기 상태 이면 **true** 이 고, 그렇지 않으면입니다. 그렇지 않으면 **false**입니다.
 
 ## <a name="packaged_task"></a>  packaged_task::packaged_task 생성자
 
@@ -169,24 +169,24 @@ template <class Fn, class Alloc>
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*<br/>
+*오른쪽*\
 `packaged_task` 개체입니다.
 
-*alloc*<br/>
+*#c4*\
 메모리 할당자입니다. 자세한 내용은 [\<allocators>](../standard-library/allocators-header.md)를 참조하세요.
 
-*fn*<br/>
+*fn*\
 함수 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 첫 번째 생성자는 *연결된 비동기 상태*가 없는 `packaged_task` 개체를 생성합니다.
 
-두 번째 생성자 구문 한 `packaged_task` 개체와 연결된 된 비동기 상태에서 전송 *오른쪽*합니다. 작업 후 *오른쪽* 연결 된 비동기 상태를 더 이상.
+두 번째 생성자는 개체 `packaged_task` 를 생성 하 고 *오른쪽*에서 연결 된 비동기 상태를 전송 합니다. 작업 후에는 더 이상 연결 된 비동기 *상태가 없습니다.*
 
-세 번째 생성자 구문을 `packaged_task` 개체의 복사본이입니다 *fn* 연결 된 비동기 상태에 저장 합니다.
+세 번째 생성자는 연결 `packaged_task` 된 비동기 상태에 *fn* 의 복사본이 저장 된 개체를 생성 합니다.
 
-네 번째 생성자 구문을 `packaged_task` 개체의 복사본이입니다 *fn* 연결 된 비동기 상태를 저장 하 고 사용 하 여 `alloc` 메모리 할당에 대 한 합니다.
+네 번째 생성자는 연결 `packaged_task` 된 비동기 상태에 *fn* 복사본이 저장 된 개체를 생성 하 고 메모리 할당을 `alloc` 위해을 사용 합니다.
 
 ## <a name="dtorpackaged_task_destructor"></a>  packaged_task::~packaged_task 소멸자
 
@@ -222,7 +222,7 @@ void swap(packaged_task& Right) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*<br/>
+*오른쪽*\
 `packaged_task` 개체입니다.
 
 ## <a name="valid"></a>  packaged_task::valid
@@ -235,9 +235,9 @@ bool valid() const;
 
 ### <a name="return-value"></a>반환 값
 
-**true 이면** 개체에 연결된 된 비동기 상태가;이 고, 그렇지 **false**합니다.
+개체가 연결 된 비동기 상태 이면 **true** 이 고, 그렇지 않으면입니다. 그렇지 않으면 **false**입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<future>](../standard-library/future.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<future>](../standard-library/future.md)

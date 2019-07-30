@@ -12,12 +12,12 @@ helpviewer_keywords:
 - std::initializer_list::begin
 - std::initializer_list::end
 - std::initializer_list::size
-ms.openlocfilehash: de925f73ac206113aafb8661a8d5b347503150c5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: acd11f3b3a3bf0ba17e34a802cc8988410e17b12
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159303"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455353"
 ---
 # <a name="initializerlist-class"></a>initializer_list 클래스
 
@@ -34,7 +34,7 @@ class initializer_list
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*Type*|`initializer_list`에 저장되는 요소 데이터 형식입니다.|
+|*형식*|`initializer_list`에 저장되는 요소 데이터 형식입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -48,13 +48,13 @@ initializer_list<int> i1{ 1, 2, 3, 4 };
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[initializer_list](../standard-library/forward-list-class.md#forward_list)|`initializer_list` 형식의 개체를 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|설명|
+|형식 이름|Description|
 |-|-|
 |value_type|`initializer_list` 요소의 형식입니다.|
 |참조|`initializer_list`의 요소에 대한 참조를 제공하는 형식입니다.|
@@ -114,7 +114,7 @@ initializer_list(const InputIterator First, const InputIterator Last);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |*첫째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.|
@@ -202,4 +202,4 @@ constexpr size_t size() const noexcept;
 
 ## <a name="see-also"></a>참고자료
 
-[<forward_list>](../standard-library/forward-list.md)<br/>
+[<forward_list>](../standard-library/forward-list.md)
