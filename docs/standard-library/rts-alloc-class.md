@@ -12,12 +12,12 @@ helpviewer_keywords:
 - stdext::rts_alloc [C++], deallocate
 - stdext::rts_alloc [C++], equals
 ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f
-ms.openlocfilehash: 2c77f93a2311dbf21959b0d2a7830c20ba6dce96
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 065c0eaf936a438f48dbb8aa28704e0f53926a03
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409748"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451133"
 ---
 # <a name="rtsalloc-class"></a>rts_alloc 클래스
 
@@ -74,7 +74,7 @@ void *allocate(std::size_t count);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 반환 `caches[_IDX].allocate(count)`여기서 인덱스 `_IDX` 요청한 블록 크기에 따라 결정 됩니다 *개수*, 또는 *개수* 너무 크면 반환 `operator new(count)`합니다. `cache`를 반환합니다.
+멤버 함수는를 `caches[_IDX].allocate(count)`반환 합니다. 여기서 `_IDX` 인덱스는 요청 된 블록 크기 *수*에 의해 결정 되거나, *개수가* 너무 크면를 반환 `operator new(count)`합니다. `cache`를 반환합니다.
 
 ## <a name="deallocate"></a>  rts_alloc::deallocate
 
@@ -93,7 +93,7 @@ void deallocate(void* ptr, std::size_t count);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수 호출 `caches[_IDX].deallocate(ptr, count)`여기서 인덱스 `_IDX` 요청한 블록 크기에 따라 결정 됩니다 *개수*, 또는 *개수* 너무 크면 반환 `operator delete(ptr)`합니다.
+멤버 함수는를 `caches[_IDX].deallocate(ptr, count)`호출 합니다. 여기서 `_IDX` 인덱스는 요청 된 블록 크기 *수*에 의해 결정 되거나, *개수가* 너무 크면를 반환 `operator delete(ptr)`합니다.
 
 ## <a name="equals"></a>  rts_alloc::equals
 
@@ -112,9 +112,9 @@ bool equals(const sync<_Cache>& _Other) const;
 
 ### <a name="remarks"></a>설명
 
-**true 이면** 경우의 결과 `caches[0].equals(other.caches[0])`이 고, 그렇지 않으면 **false**합니다. `caches`는 캐시 개체의 배열을 나타냅니다.
+의`caches[0].equals(other.caches[0])`결과 이면 true이 고, 그렇지 않으면 **false**입니다. `caches`는 캐시 개체의 배열을 나타냅니다.
 
 ## <a name="see-also"></a>참고자료
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)<br/>
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)\
+[\<allocators>](../standard-library/allocators-header.md)

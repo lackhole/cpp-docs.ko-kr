@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::recursive_timed_mutex [C++], try_lock_for
 - std::recursive_timed_mutex [C++], try_lock_until
 - std::recursive_timed_mutex [C++], unlock
-ms.openlocfilehash: 2cb6fe8588f4b81ae5c67533c4b9124ae8c9b252
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ae61d17084cc744cac8819ac2c0ca48eb59add7
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62370075"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460112"
 ---
 # <a name="recursivetimedmutex-class"></a>recursive_timed_mutex 클래스
 
@@ -39,14 +39,14 @@ class recursive_timed_mutex;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[recursive_timed_mutex](#recursive_timed_mutex)|잠기지 않은 `recursive_timed_mutex` 개체를 생성합니다.|
 |[~recursive_timed_mutex 소멸자](#dtorrecursive_timed_mutex_destructor)|`recursive_timed_mutex` 개체에서 사용하는 리소스를 모두 해제합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[lock](#lock)|스레드가 `mutex`의 소유권을 가져올 때까지 호출 스레드를 차단합니다.|
 |[try_lock](#try_lock)|차단되지 않고 `mutex`의 소유권을 가져오려고 시도합니다.|
@@ -102,11 +102,11 @@ bool try_lock() noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-**true** 메서드가 소유권을 정상적으로의 경우는 `mutex` 호출 스레드가 이미 소유 하는 경우 또는 합니다 `mutex`이 고, 그렇지 않으면 **false**합니다.
+메서드가의 소유권 `mutex` 을 성공적으로 얻거나 호출 스레드가를 `mutex`이미 소유 하 고 있으면 true이 고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
-호출 스레드가 이미 소유 하는 경우는 `mutex`를 즉시 반환 **true**, 이전 잠금은 적용 상태로 유지 됩니다.
+호출 스레드가를 `mutex`이미 소유 하 고 있으면이 함수는 **true**를 즉시 반환 하 고 이전 잠금은 적용 된 상태로 유지 됩니다.
 
 ## <a name="try_lock_for"></a>  try_lock_for
 
@@ -119,16 +119,16 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 
 ### <a name="parameters"></a>매개 변수
 
-*Rel_time*<br/>
+*Rel_time*\
 메서드가 `mutex`의 소유권을 가져오려고 시도하는 최대 시간을 지정하는 [chrono::duration](../standard-library/duration-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** 메서드는 성공적으로의 소유권을 가져올 경우 합니다 `mutex` 호출 스레드가 이미 소유 하는 경우 또는 `mutex`이 고, 그렇지 않으면 **false**합니다.
+메서드가 성공적으로의 소유권 `mutex` 을 얻거나 호출 스레드가를 `mutex`이미 소유 하 고 있으면 true이 고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
-호출 스레드가 이미 소유 하는 경우는 `mutex`, 메서드가 즉시 반환 **true**, 이전 잠금은 적용 상태로 유지 됩니다.
+호출 스레드가를 `mutex`이미 소유 하 고 있는 경우 메서드는 **true**를 즉시 반환 하 고 이전 잠금은 적용 된 상태로 유지 됩니다.
 
 ## <a name="try_lock_until"></a>  try_lock_until
 
@@ -143,16 +143,16 @@ bool try_lock_until(const xtime* Abs_time);
 
 ### <a name="parameters"></a>매개 변수
 
-*Abs_time*<br/>
+*Abs_time*\
 임계값을 지정하는 특정 시점으로, 이 시간 경과 후에는 메서드가 더 이상 `mutex`의 소유권을 가져오려고 시도하지 않습니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** 메서드는 성공적으로의 소유권을 가져올 경우 합니다 `mutex` 호출 스레드가 이미 소유 하는 경우 또는 `mutex`이 고, 그렇지 않으면 **false**합니다.
+메서드가 성공적으로의 소유권 `mutex` 을 얻거나 호출 스레드가를 `mutex`이미 소유 하 고 있으면 true이 고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
-호출 스레드가 이미 소유 하는 경우는 `mutex`, 메서드가 즉시 반환 **true**, 이전 잠금은 적용 상태로 유지 됩니다.
+호출 스레드가를 `mutex`이미 소유 하 고 있는 경우 메서드는 **true**를 즉시 반환 하 고 이전 잠금은 적용 된 상태로 유지 됩니다.
 
 ## <a name="unlock"></a>  unlock
 
@@ -170,5 +170,5 @@ void unlock();
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<mutex>](../standard-library/mutex.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<mutex>](../standard-library/mutex.md)

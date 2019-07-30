@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::mutex [C++], native_handle
 - std::mutex [C++], try_lock
 - std::mutex [C++], unlock
-ms.openlocfilehash: 7766b063eb89a14a94eaa41ebfa17f3e4a1c102e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 099cf17db7b99f9cd1d953a603db70f75c33358e
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158580"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457067"
 ---
 # <a name="mutex-class-c-standard-library"></a>mutex 클래스(C++ 표준 라이브러리)
 
@@ -37,14 +37,14 @@ class mutex;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[mutex](#mutex)|`mutex` 개체를 생성합니다.|
 |[mutex::~mutex 소멸자](#dtormutex_destructor)|`mutex` 개체에서 사용하는 리소스를 모두 해제합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[lock](#lock)|스레드가 `mutex`의 소유권을 가져올 때까지 호출 스레드를 차단합니다.|
 |[native_handle](#native_handle)|뮤텍스 핸들을 나타내는 특정 구현 형식을 반환합니다.|
@@ -111,7 +111,7 @@ bool try_lock();
 
 ### <a name="return-value"></a>반환 값
 
-**true** 메서드는 성공적으로의 소유권을 가져올 경우 합니다 `mutex`이 고, 그렇지 않으면 **false**합니다.
+메서드가의 소유권 `mutex`을 성공적으로 얻으면 true이 고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -131,5 +131,5 @@ void unlock();
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<mutex>](../standard-library/mutex.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<mutex>](../standard-library/mutex.md)

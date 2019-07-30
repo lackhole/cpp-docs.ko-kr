@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::timed_mutex [C++], try_lock_for
 - std::timed_mutex [C++], try_lock_until
 - std::timed_mutex [C++], unlock
-ms.openlocfilehash: 9aae1205866a0bf982ab7c41b792aac0f63ea149
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6b9785dc41791be63d585d18802953eade370b2a
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411957"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68459919"
 ---
 # <a name="timedmutex-class"></a>timed_mutex 클래스
 
@@ -39,14 +39,14 @@ class timed_mutex;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[timed_mutex](#timed_mutex)|잠기지 않은 `timed_mutex` 개체를 생성합니다.|
 |[timed_mutex::~timed_mutex 소멸자](#dtortimed_mutex_destructor)|`timed_mutex` 개체에서 사용하는 리소스를 모두 해제합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[lock](#lock)|스레드가 `mutex`의 소유권을 가져올 때까지 호출 스레드를 차단합니다.|
 |[try_lock](#try_lock)|차단되지 않고 `mutex`의 소유권을 가져오려고 시도합니다.|
@@ -102,7 +102,7 @@ bool try_lock();
 
 ### <a name="return-value"></a>반환 값
 
-**true** 메서드는 성공적으로의 소유권을 가져올 경우 합니다 `mutex`이 고, 그렇지 않으면 **false**합니다.
+메서드가의 소유권 `mutex`을 성공적으로 얻으면 true이 고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -119,12 +119,12 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 
 ### <a name="parameters"></a>매개 변수
 
-*Rel_time*<br/>
+*Rel_time*\
 메서드가 `mutex`의 소유권을 가져오려고 시도하는 최대 시간을 지정하는 [chrono::duration](../standard-library/duration-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** 메서드는 성공적으로의 소유권을 가져올 경우 합니다 `mutex`이 고, 그렇지 않으면 **false**합니다.
+메서드가의 소유권 `mutex`을 성공적으로 얻으면 true이 고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -143,12 +143,12 @@ bool try_lock_until(const xtime* Abs_time);
 
 ### <a name="parameters"></a>매개 변수
 
-*Abs_time*<br/>
+*Abs_time*\
 임계값을 지정하는 특정 시점으로, 이 시간 경과 후에는 메서드가 더 이상 `mutex`의 소유권을 가져오려고 시도하지 않습니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** 메서드는 성공적으로의 소유권을 가져올 경우 합니다 `mutex`이 고, 그렇지 않으면 **false**합니다.
+메서드가의 소유권 `mutex`을 성공적으로 얻으면 true이 고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -168,5 +168,5 @@ void unlock();
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<mutex>](../standard-library/mutex.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<mutex>](../standard-library/mutex.md)
