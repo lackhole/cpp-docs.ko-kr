@@ -24,7 +24,7 @@ COM의 기본 개념:
 
 - [참조 횟수](../atl/reference-counting.md) — 개체(엄격한 의미로 인터페이스)가 더이상 사용되지 않아 스스로를 소멸시키고자 할 때 판단하는 기술입니다.
 
-- [QueryInterface](../atl/queryinterface.md) — 지정된 인터페이스에 대한 개체를 쿼리하는데 사용하는 메서드 입니다.
+- [QueryInterface](../atl/queryinterface.md) — 지정된 인터페이스에 대한 개체를 쿼리하는 데 사용하는 메서드입니다.
 
 - [마샬링](../atl/marshaling.md) — 스레드, 프로세스 및 네트워크 경계에서 개체를 사용할 수 있도록 하는 메커니즘으로 위치 독립성을 구현합니다.
 
