@@ -1,53 +1,51 @@
 ---
 title: static_assert
-ms.date: 11/04/2016
+ms.date: 07/29/2019
 f1_keywords:
 - static_assert_cpp
 helpviewer_keywords:
-- C++ keywords, static_assert
-- C2338
 - assertions [C++], static_assert
 - static_assert
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
-ms.openlocfilehash: d5ef1ba45001a2b1a3ee1f2da46f66224857b070
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4ac79c23379dd1bf1c85521fdf0c28947d3b7ab9
+ms.sourcegitcommit: 20a1356193fbe0ddd1002e798b952917eafc3439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330653"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661593"
 ---
 # <a name="staticassert"></a>static_assert
 
-컴파일 시 소프트웨어 어설션을 테스트합니다. 지정 된 상수 식이 FALSE 인 경우 컴파일러가 하나를 제공 하 고 컴파일은 C2338; 오류로 인해 실패 하는 경우 지정된 된 메시지가 표시 하는 이 고, 그렇지 선언에 영향을 주지 않습니다.
+컴파일 시 소프트웨어 어설션을 테스트합니다. 지정 된 상수 식이 FALSE 이면 컴파일러가 지정 된 메시지를 표시 하 고 (제공 된 경우) C2338 오류가 발생 하 고 컴파일이 실패 합니다. 그렇지 않으면 선언은 적용 되지 않습니다.
 
 ## <a name="syntax"></a>구문
 
 ```
 static_assert( constant-expression, string-literal );
 
-static_assert( constant-expression ); // Visual Studio 2017 and later
+static_assert( constant-expression ); // C++17 (Visual Studio 2017 and later)
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
-|*constant-expression*|부울로 변환할 수 있는 정수 계열 상수 식입니다.<br /><br /> 계산된 된 식이 0 이면 (false)를 *문자열 리터럴* 매개 변수가 표시 되 고 컴파일이 오류와 함께 실패 합니다. 식이 0이 아닌 값 (true)를 **static_assert** 선언에 영향을 주지 않습니다.|
-|*string-literal*|경우에 표시 되는 메시지를는 *상수-식* 매개 변수가 0입니다. 메시지는 문자열의 문자를 [기본 문자 집합](../c-language/ascii-character-set.md) 는 컴파일러의 아니라 [멀티 바이트 또는 와이드 문자](../c-language/multibyte-and-wide-characters.md)합니다.|
+|*constant-expression*|부울로 변환할 수 있는 정수 계열 상수 식입니다.<br /><br /> 평가 된 식이 0 (false) 이면 *문자열-리터럴* 매개 변수가 표시 되 고 컴파일이 오류와 함께 실패 합니다. 식이 0이 아니면 (true) **static_assert** 선언은 적용 되지 않습니다.|
+|*string-literal*|*상수 식* 매개 변수가 0 인 경우 표시 되는 메시지입니다. 메시지는 컴파일러의 [기본 문자 집합](../c-language/ascii-character-set.md) 에 있는 문자열입니다. 즉, [멀티 바이트 또는 와이드 문자가](../c-language/multibyte-and-wide-characters.md)아닙니다.|
 
 ## <a name="remarks"></a>설명
 
-합니다 *상수-식* 의 매개 변수를 **static_assert** 선언 나타냅니다는 *소프트웨어 어설션을*합니다. 소프트웨어 어설션은 프로그램의 특정 지점에서 true가 될 조건을 지정합니다. 조건이 true 인 경우는 **static_assert** 선언에 영향을 주지 않습니다. 조건이 false 이면 어설션이 실패 하는 컴파일러의 메시지를 표시 *문자열 리터럴* 매개 변수 및 오류와 함께 컴파일이 실패 합니다. Visual Studio 2017 이상 버전에서는 문자열 리터럴 매개 변수는 선택 사항입니다.
+**Static_assert** 선언의 *상수 식* 매개 변수는 *소프트웨어 어설션을*나타냅니다. 소프트웨어 어설션은 프로그램의 특정 지점에서 true가 될 조건을 지정합니다. 조건이 true 이면 **static_assert** 선언은 적용 되지 않습니다. 조건이 false 이면 어설션이 실패 하 고 컴파일러가 *문자열 리터럴* 매개 변수로 메시지를 표시 하 고 오류가 발생 하 여 컴파일이 실패 합니다. Visual Studio 2017 이상에서 문자열 리터럴 매개 변수는 선택 사항입니다.
 
-합니다 **static_assert** 선언은 컴파일 시 소프트웨어 어설션을 테스트 합니다. 반면에 [assert 매크로, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) 매크로 런타임 시 소프트웨어 어설션을 테스트 하 고 공간 또는 시간의 런타임 비용을 발생 시킵니다. 합니다 **static_assert** 선언은 디버깅 템플릿에 템플릿 인수에 포함 될 수 있으므로 특히 유용 합니다 *상수-식* 매개 변수입니다.
+**Static_assert** 선언은 컴파일 타임에 소프트웨어 어설션을 테스트 합니다. 이와 달리 [Assert 매크로 및 _assert 및 _wassert 함수](../c-runtime-library/reference/assert-macro-assert-wassert.md) 는 런타임에 소프트웨어 어설션을 테스트 하 고 공간 또는 시간에 런타임 비용을 발생 시킵니다. **Static_assert** 선언은 템플릿 인수가 *상수 식* 매개 변수에 포함 될 수 있기 때문에 템플릿 디버깅에 특히 유용 합니다.
 
-컴파일러를 검사 합니다 **static_assert** 선언이 발견 될 때 구문 오류에 대 한 선언을 합니다. 컴파일러는 계산 된 *상수-식* 템플릿 매개 변수에 종속 되지 않는 경우에 즉시 매개 변수. 컴파일러는 계산이 고, 그렇지 합니다 *상수-식* 템플릿이 인스턴스화될 때 매개 변수입니다. 그 결과, 컴파일러는 선언이 발생할 때 진단 메시지를 한 번 내보내고 템플릿이 인스턴스화될 때 다시 한 번 메시지를 내보낼 수 있습니다.
+컴파일러는 선언이 발생할 때 **static_assert** 선언에서 구문 오류를 검사 합니다. 컴파일러는 템플릿 매개 변수에 종속 되지 않는 경우 즉시 *상수 식* 매개 변수를 평가 합니다. 그렇지 않으면 템플릿이 인스턴스화될 때 컴파일러가 *상수 식* 매개 변수를 평가 합니다. 그 결과, 컴파일러는 선언이 발생할 때 진단 메시지를 한 번 내보내고 템플릿이 인스턴스화될 때 다시 한 번 메시지를 내보낼 수 있습니다.
 
-사용할 수는 **static_assert** 네임 스페이스, 클래스 또는 블록 범위가 있는 키워드입니다. (합니다 **static_assert** 키워드는 네임 스페이스 범위에서 사용할 수 있으므로 새 이름을 프로그램에 알리지 하는 경우에 기술적으로 선언 합니다.)
+네임 스페이스, 클래스 또는 블록 범위에서 **static_assert** 키워드를 사용할 수 있습니다. **Static_assert** 키워드는 네임 스페이스 범위에서 사용할 수 있으므로 프로그램에 새 이름을 도입 하지 않더라도 기술적으로 선언 됩니다.
 
-## <a name="description"></a>설명
+## <a name="description"></a>Description
 
-다음 예제에서는 **static_assert** 선언은 네임 스페이스 범위를 갖습니다. 컴파일러가 `void *` 형식의 크기를 알고 있기 때문에 식이 즉시 계산됩니다.
+다음 예제에서 **static_assert** 선언에는 네임 스페이스 범위가 있습니다. 컴파일러가 `void *` 형식의 크기를 알고 있기 때문에 식이 즉시 계산됩니다.
 
 ## <a name="example"></a>예제
 
@@ -55,9 +53,9 @@ static_assert( constant-expression ); // Visual Studio 2017 and later
 static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
 ```
 
-## <a name="description"></a>설명
+## <a name="description"></a>Description
 
-다음 예제에서는 **static_assert** 선언은 클래스 범위를 갖습니다. 합니다 **static_assert** 템플릿 매개 변수 인지 확인을 *일반 이전 데이터* (POD) 형식입니다. 컴파일러 검사를 **static_assert** 선언 되지만 평가 되지 않는 경우 선언 합니다 *상수-식* 까지 매개 변수는 `basic_string` 에서클래스템플릿이인스턴스화될`main()`.
+다음 예제에서 **static_assert** 선언에는 클래스 범위가 있습니다. **Static_assert** 는 템플릿 매개 변수가 POD ( *일반 이전 데이터* ) 형식 인지 확인 합니다. 컴파일러는 선언 될 때 **static_assert** 선언을 검사 `basic_string` 하지만 클래스 템플릿이에서 `main()`인스턴스화될 때까지 *상수 식* 매개 변수를 평가 하지 않습니다.
 
 ## <a name="example"></a>예제
 
@@ -84,9 +82,9 @@ int main()
 }
 ```
 
-## <a name="description"></a>설명
+## <a name="description"></a>Description
 
-다음 예제에서는 **static_assert** 선언은 블록 범위를 갖습니다. 합니다 **static_assert** VMPage 구조체의 크기는 시스템의 가상 메모리 pagesize 같음 인지 확인 합니다.
+다음 예제에서 **static_assert** 선언에는 블록 범위가 있습니다. **Static_assert** 는 vmpage 구조의 크기가 시스템의 가상 메모리 pagesize와 같은지 확인 합니다.
 
 ## <a name="example"></a>예제
 

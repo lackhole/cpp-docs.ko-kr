@@ -1,19 +1,17 @@
 ---
 title: 이니셜라이저
-ms.date: 11/19/2018
+ms.date: 07/29/2019
+description: 에서 C++클래스, 구조체, 배열 및 기본 형식을 초기화 하는 방법입니다.
 helpviewer_keywords:
-- array-element initializers
-- initializing arrays [C++], initializers
 - arrays [C++], array-element initializers
-- declarators, as initializers
-- initializers, array element
+- aggregate initializers [C++]
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
-ms.openlocfilehash: 1890899fb2ad63bff06d514ae8b18f9dc3ff9e21
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fd926177dd7540d8dc1e8512e9f17e20a0b8238c
+ms.sourcegitcommit: 20a1356193fbe0ddd1002e798b952917eafc3439
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183536"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661609"
 ---
 # <a name="initializers"></a>이니셜라이저
 
@@ -83,11 +81,11 @@ ms.locfileid: "62183536"
 
 - 숫자 변수는 0(또는 0.0 또는 0.0000000000 등)으로 초기화됩니다.
 
-- Char 변수는 초기화 `'\0'`합니다.
+- Char 변수는로 `'\0'`초기화 됩니다.
 
-- 에 대 한 포인터 초기화 됩니다 **nullptr**합니다.
+- 포인터는 **nullptr**로 초기화 됩니다.
 
-- 배열 [POD](../standard-library/is-pod-class.md) 클래스, 구조체 및 공용 구조체는 해당 멤버 값을 0으로 초기화 합니다.
+- 배열, [POD](../standard-library/is-pod-class.md) 클래스, 구조체 및 공용 구조체의 멤버는 0 값으로 초기화 됩니다.
 
 0 초기화는 다음과 같은 다양한 시간에 수행됩니다.
 
@@ -116,9 +114,9 @@ int main() {
 }
 ```
 
-### <a name="default_initialization"></a> 기본 초기화
+### <a name="default_initialization"></a>기본 초기화
 
-기본 생성자를 사용하는 클래스, 구조체 및 공용 구조체에 대한 기본 초기화입니다. 초기화 식 없이 또는 기본 생성자를 호출할 수는 **새** 키워드:
+기본 생성자를 사용하는 클래스, 구조체 및 공용 구조체에 대한 기본 초기화입니다. 기본 생성자는 초기화 식이나 **new** 키워드를 사용 하 여 호출할 수 있습니다.
 
 ```cpp
 MyClass mc1;
@@ -175,7 +173,7 @@ int main() {
 }
 ```
 
-전역 정적 개체의 초기화에 대 한 자세한 내용은 참조 하세요. [추가 시작 고려 사항](../cpp/additional-startup-considerations.md)합니다.
+전역 정적 개체의 초기화에 대 한 자세한 내용은 [추가 시작 고려 사항](../cpp/additional-startup-considerations.md)을 참조 하세요.
 
 ### <a name="value-initialization"></a>값 초기화
 
@@ -185,7 +183,7 @@ int main() {
 
 - 익명의 임시 개체가 빈 괄호나 중괄호를 사용하여 초기화됩니다.
 
-- 개체를 사용 하 여 초기화 되는 **새** 키워드와 빈 괄호나 중괄호
+- **새** 키워드와 빈 괄호 또는 중괄호를 사용 하 여 개체를 초기화 합니다.
 
 값 초기화가 수행하는 작업은 다음과 같습니다.
 
@@ -226,7 +224,7 @@ int main() {
 
 - 비정적 데이터 멤버가 등호를 사용하여 초기화됩니다.
 
-- 클래스, 구조체 및 공용 구조체 멤버가 집합체 초기화 중에 복사 초기화로 초기화됩니다. 참조 [집합체 초기화](#agginit) 예입니다.
+- 클래스, 구조체 및 공용 구조체 멤버가 집합체 초기화 중에 복사 초기화로 초기화됩니다. 예제는 [집합체 초기화](#agginit) 를 참조 하세요.
 
 다음 코드는 복사 초기화의 몇 가지 예를 보여 줍니다.
 
@@ -276,9 +274,9 @@ shared_ptr<int> sp = new int(1729); // the constructor is explicit; same error
 
 - 변수가 비어 있지 않은 중괄호 또는 괄호를 사용하여 초기화됩니다.
 
-- 변수로 사용 하 여 초기화 되는 **새** 키워드와 비어 있지 않은 중괄호 또는 괄호
+- 변수가 **new** 키워드와 비어 있지 않은 중괄호 또는 괄호를 사용 하 여 초기화 됩니다.
 
-- 변수를 사용 하 여 초기화 됩니다 **static_cast**
+- 변수는 **static_cast** 를 사용 하 여 초기화 됩니다.
 
 - 생성자에서 기본 클래스 및 비정적 멤버가 이니셜라이저 목록을 사용하여 초기화됩니다.
 
@@ -319,7 +317,7 @@ int main(){
 
 - 변수가 초기화됩니다.
 
-- 클래스를 사용 하 여 초기화 되는 **새** 키워드
+- 클래스가 **new** 키워드를 사용 하 여 초기화 됩니다.
 
 - 개체가 함수에서 반환됩니다.
 
@@ -364,7 +362,7 @@ int main() {
 }
 ```
 
-### <a name="agginit"></a> 집합체 초기화
+### <a name="agginit"></a>집합체 초기화
 
 집합체 초기화는 다음과 같은 일종의 배열 또는 클래스 형식(대개 구조체 또는 공용 구조체) 목록 초기화입니다.
 
@@ -377,7 +375,7 @@ int main() {
 - 가상 멤버 함수 없음
 
 > [!NOTE]
-> <!--conformance note-->Visual Studio 2015 및 이전 버전에서는 비정적 멤버의 경우 중괄호 또는 등호 이니셜라이저 할 집계 되지 않습니다. 이 제한 된 c++14 표준에 제거 되 고 Visual Studio 2017에서 구현 합니다.
+> <!--conformance note-->Visual Studio 2015 이전 버전에서 집계는 비정적 멤버에 대 한 중괄호 또는 등호 이니셜라이저를 사용할 수 없습니다. 이 제한은 c + + 14 표준에서 제거 되었으며 Visual Studio 2017에 구현 되었습니다.
 
 집합체 이니셜라이저는 다음 예제와 같이 중괄호로 묶은 초기화 목록으로 구성되며, 등호가 있을 수도 있고 없을 수도 있습니다.
 
@@ -390,9 +388,14 @@ struct MyAggregate{
     char myChar;
 };
 
+struct MyAggregate2{
+    int myInt;
+    char myChar = 'Z'; // member-initializer OK in C++14
+};
+
 int main() {
     MyAggregate agg1{ 1, 'c' };
-
+    MyAggregate2 agg2{2};
     cout << "agg1: " << agg1.myChar << ": " << agg1.myInt << endl;
     cout << "agg2: " << agg2.myChar << ": " << agg2.myInt << endl;
 
@@ -418,13 +421,13 @@ int main() {
 
 ```Output
 agg1: c: 1
-agg2: d: 2
+agg2: Z: 2
 myArr1: 1 2 3 4
 myArr3: 8 9 10 0 0
 ```
 
 > [!IMPORTANT]
-> 배열 멤버는 선언 되지만 집합체 초기화 중 명시적으로 초기화 하는 0으로 초기화 되, 에서처럼 `myArr3` 위에 있습니다.
+> `myArr3` 위에서 설명한 것 처럼, 집합체 초기화 중에 선언 되었지만 명시적으로 초기화 되지 않은 배열 멤버는 0으로 초기화 됩니다.
 
 #### <a name="initializing-unions-and-structs"></a>공용 구조체 및 구조체 초기화
 
@@ -508,19 +511,19 @@ int main()
     int func( int& );
     ```
 
-- 함수 반환 형식 선언. 예를 들어:
+- 함수 반환 형식 선언. 예:
 
     ```cpp
     int& func( int& );
     ```
 
-- 참조 형식 클래스 멤버의 선언. 예를 들어:
+- 참조 형식 클래스 멤버의 선언. 예:
 
     ```cpp
     class c {public:   int& i;};
     ```
 
-- 으로 명시적으로 지정 하는 변수 선언의 **extern**합니다. 예를 들어:
+- **Extern**으로 명시적으로 지정 된 변수 선언입니다. 예:
 
     ```cpp
     extern int& iVal;
@@ -528,13 +531,13 @@ int main()
 
 참조 형식 변수를 초기화할 때 컴파일러는 다음 그림과 같은 결정 그래프를 사용하여 개체에 대한 참조 만들기 또는 참조가 가리키는 임시 개체 만들기 중에서 선택합니다.
 
-![참조 형식 초기화에 대 한 의사 결정 그래프](../cpp/media/vc38s71.gif "판단 그래프 초기화 참조 형식") <br/>
-판단 그래프 초기화 참조 형식
+![참조 형식 초기화에 대 한 의사 결정 그래프](../cpp/media/vc38s71.gif "참조 형식 초기화에 대 한 의사 결정 그래프") <br/>
+참조 형식 초기화에 대 한 의사 결정 그래프
 
-에 대 한 참조 **volatile** 형식 (으로 선언 **volatile** *typename* <strong>&</strong> *식별자*) 초기화 될 수 있습니다 **volatile** 로 선언 되지 않은 개체 또는 동일한 유형의 개체 **volatile**합니다. 하지만 이러한 없습니다,, 초기화할 **const** 해당 형식의 개체입니다. 마찬가지로,에 대 한 참조 **상수** 형식 (으로 선언 **const** *typename* <strong>&</strong> *식별자* )로 초기화할 수 있습니다 **const** 같은 형식의 개체 (또는 변환으로 선언 되지 않은 개체 또는 해당 형식에 있는 모든 **const**). 하지만 사용 하 여 초기화를 수 없습니다, **volatile** 해당 형식의 개체입니다.
+휘발성 형식 **에 대** 한 참조 <strong>&</strong> ( **volatile** 형식 *식별자*로 선언 됨)는 동일한 형식의 **volatile** 개체 또는 **volatile** 로 선언 되지 않은 개체를 사용 하 여 초기화할 수 있습니다. . 그러나 해당 형식의 **const** 개체를 사용 하 여 초기화할 수는 없습니다. 마찬가지로 const 형식 ( **const** *typename* <strong>&</strong> *identifier*로 선언 됨 **)에 대** 한 참조는 동일한 형식의 **const** 개체를 사용 하 여 초기화 될 수 있습니다 (또는 해당 형식이 나 개체로의 변환이 있는 모든 항목). **const**로 선언 되지 않았습니다. 그러나 해당 형식의 **volatile** 개체를 사용 하 여 초기화할 수는 없습니다.
 
-사용 하 여 정규화 되지 않은 참조를 **const** 또는 **volatile** 키워드를 둘 다로 선언 된 개체에만 초기화 될 수 있습니다 **const** 도  **volatile**합니다.
+**Const** 또는 **volatile** 키워드를 사용 하 여 정규화 되지 않은 참조는 **const** 또는 **volatile**이 아닌 개체로 선언 된 개체만 초기화할 수 있습니다.
 
 ### <a name="initialization-of-external-variables"></a>외부 변수 초기화
 
-자동, 정적 및 외부 변수의 선언은 이니셜라이저를 포함할 수 있습니다. 그러나 통해 외부 변수 선언은 변수도 선언 되지 않은 경우에 이니셜라이저를 포함할 수 있습니다 **extern**합니다.
+자동, 정적 및 외부 변수의 선언에는 이니셜라이저가 포함 될 수 있습니다. 그러나 외부 변수의 선언에는 변수가 **extern**으로 선언 되지 않은 경우에만 이니셜라이저가 포함 될 수 있습니다.
