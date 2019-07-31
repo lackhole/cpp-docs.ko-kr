@@ -30,7 +30,7 @@ COM 사용 합니다 `IUnknown` 메서드를 [AddRef](/windows/desktop/api/unknw
 참조 횟수를 구현할 수도 있습니다 (필요가, 개별 인터페이스) 개체에 대 한 각 참조는 계산 되도록 합니다. 이 경우 각 `AddRef` 및 `Release` 개체에 대해 중앙 구현에 대리자를 호출 하 고 `Release` 해당 참조 횟수가 0에 도달 하면 전체 개체를 해제 합니다.
 
 > [!NOTE]
->  경우는 `CComObject`-파생된 개체가 사용 하 여 생성 되는 **새** 연산자는 참조 횟수가 0입니다. 따라서 호출 `AddRef` 성공적으로 만든 후 다시 만들어야 합니다 `CComObject`-파생 개체입니다.
+>  **new** 연산자를 사용하여 `CComObject`-파생 개체를 생성하면 참조 횟수는 0입니다. 따라서 `CComObject`-파생 개체를 성공적으로 만든 후 `AddRef`를 호출해야 합니다.
 
 ## <a name="see-also"></a>참고자료
 
