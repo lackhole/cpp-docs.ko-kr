@@ -10,12 +10,12 @@ helpviewer_keywords:
 - stdext::freelist [C++], pop
 - stdext::freelist [C++], push
 ms.assetid: 8ad7e35c-4c80-4479-8ede-1a2497b06d71
-ms.openlocfilehash: ef1f2e617e93869a1084dc030c6496c819f1ed96
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8a504f58f9f64aa8b0d26b17090387c5c2b5de21
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159394"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454136"
 ---
 # <a name="freelist-class"></a>freelist 클래스
 
@@ -37,17 +37,17 @@ class freelist : public Max
 
 ## <a name="remarks"></a>설명
 
-이 템플릿 클래스는 크기의 메모리 블록의 목록을 관리 *Sz* 전달 된 최대 클래스에 의해 결정 된 목록의 최대 길이 사용 하 여 *Max*합니다.
+이 템플릿 클래스는 *max*로 전달 된 최대 클래스에 의해 결정 되는 목록의 최대 길이를 사용 하 여 *Sz* 크기의 메모리 블록 목록을 관리 합니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[freelist](#freelist)|`freelist` 형식의 개체를 생성합니다.|
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[pop](#pop)|사용 가능 목록에서 첫 번째 메모리 블록을 제거합니다.|
 |[push](#push)|목록에 메모리 블록을 추가합니다.|
@@ -82,7 +82,7 @@ void *pop();
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 목록이 비어 있으면 NULL을 반환 합니다. 그렇지 않으면 목록에서 첫 번째 메모리 블록을 제거합니다.
+목록이 비어 있으면 멤버 함수는 NULL을 반환 합니다. 그렇지 않으면 목록에서 첫 번째 메모리 블록을 제거합니다.
 
 ## <a name="push"></a>  freelist::push
 
@@ -100,12 +100,12 @@ bool push(void* ptr);
 
 ### <a name="return-value"></a>반환 값
 
-**true** 경우는 `full` 최대 클래스의 반환 **false**이 고, 그렇지 않으면 합니다 `push` 함수에서 반환 **false**합니다.
+max 클래스의 `full` 함수가 **false를**반환 하면 true이 고, 그렇지 않으면 **false**를 반환합니다.`push`
 
 ### <a name="remarks"></a>설명
 
-경우는 `full` max 클래스의 반환 **false**를 가리키는 메모리 블록을 추가 하는이 멤버 함수 *ptr* 목록 헤드에 합니다.
+Max 클래스의 함수가false를반환하는경우이멤버함수는ptr에서가리키는메모리블록을목록의맨`full` 위에 추가 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)
