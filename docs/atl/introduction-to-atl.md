@@ -15,9 +15,9 @@ ms.locfileid: "62261919"
 ---
 # <a name="introduction-to-atl"></a>ATL 소개
 
-ATL은 작고 빠른 콤포넌트 개체 모델(COM) 개체를 쉽게 만들 수 있는 템플릿 기반 C++ 클래스 집합인 액티브 템플릿 라이브러리입니다. [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown), [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory), [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) 및 `IDispatch`의 각자 구현을 포함하여 주요 COM 기능에 대한 특별한 지원을 제공합니다. 특별한 지원에는 이중 인터페이스, 표준 COM 열거자 인터페이스, 연결 지점, 분리 인터페이스(tear-off interfaces), 액티브X 컨트롤이 포함됩니다.
+ATL은 작고 빠른 콤포넌트 개체 모델(COM) 개체를 쉽게 만들 수 있는 템플릿 기반 C++ 클래스 집합인 액티브 템플릿 라이브러리입니다. [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown), [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory), [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) 및 `IDispatch`의 실제 구현을 포함하여 주요 COM 기능에 대한 특별한 지원을 제공합니다. 특별한 지원에는 이중 인터페이스, 표준 COM 열거자 인터페이스, 연결 지점, 분리 인터페이스(tear-off interfaces) 및 액티브X 컨트롤이 포함됩니다.
 
-ATL 코드는 단일 스레드 개체로, 아파트 모델 개체, 자유 스레드 모델 개체 또는 자유 스레드 및 아파트 모델 개체를 만드는 데 사용할 수 있습니다.
+ATL 코드는 단일 스레드 개체, 어파트먼트 모델 개체(Apartment Model Object), 자유 스레드 모델 개체 또는 자유 스레드 및 어파트먼트 모델 두가지 모두의 개체를 만드는 데 사용할 수 있습니다.
 
 이 섹션에서 다루는 항목은 다음과 같습니다.
 
