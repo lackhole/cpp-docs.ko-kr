@@ -4,19 +4,19 @@ ms.date: 11/04/2016
 f1_keywords:
 - <mutex>
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
-ms.openlocfilehash: 377ec995f4e61c957e8e620749f96523b60fed3e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 515318cda2155db81406a5c23cb64e46e79c4e19
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240592"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448416"
 ---
 # <a name="ltmutexgt"></a>&lt;mutex&gt;
 
 `mutex`, `recursive_mutex`, `timed_mutex`, `recursive_timed_mutex` 클래스, `lock_guard`, `unique_lock` 템플릿, 그리고 상호 배제 코드 영역을 정의하는 지원 형식과 함수를 정의하려면 표준 헤더 \<mutex>를 포함합니다.
 
 > [!WARNING]
-> Visual Studio 2015에서 시작 하는 C++ 표준 라이브러리 동기화 형식은 Windows 동기화 기본 형식을 기반으로 하 고 더 이상 ConcRT를 사용 하 여 (대상 플랫폼이 Windows XP 인 경우) 제외 합니다. \<mutex>에 정의된 형식은 모든 ConcRT 형식 및 함수와 함께 사용하면 안 됩니다.
+> Visual Studio 2015부터 C++ 표준 라이브러리 동기화 형식은 windows 동기화 기본 형식을 기반으로 하며, 더 이상 concrt를 사용 하지 않습니다 (대상 플랫폼이 windows XP 인 경우 제외). \<mutex>에 정의된 형식은 모든 ConcRT 형식 및 함수와 함께 사용하면 안 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -27,23 +27,23 @@ ms.locfileid: "68240592"
 ## <a name="remarks"></a>설명
 
 > [!NOTE]
-> 코드를 사용 하 여 컴파일된 **/clr**,이 헤더가 차단 됩니다.
+> **/Clr**을 사용 하 여 컴파일된 코드에서이 헤더는 차단 됩니다.
 
 `mutex` 및 `recursive_mutex` 클래스는 *뮤텍스 형식*입니다. 뮤텍스 형식에는 예외를 throw하지 않는 기본 생성자와 소멸자가 있습니다. 이러한 개체에는 여러 스레드가 동일한 개체를 잠그려고 할 때 상호 배제하는 메서드가 있습니다. 특히, 뮤텍스 형식에는 `lock`, `try_lock` 및 `unlock` 메서드가 포함되어 있습니다.
 
 - 스레드가 뮤텍스의 소유권을 가져올 때까지 `lock` 메서드가 호출 스레드를 차단합니다. 반환 값은 무시됩니다.
 
-- `try_lock` 메서드는 차단하지 않고 뮤텍스에 대한 소유권을 가져오려고 시도합니다. 해당 반환 형식으로 변환할 **bool** 되며 **true** 메서드가 소유권을 가져오면 있지만 고 그렇지 않으면 **false**합니다.
+- `try_lock` 메서드는 차단하지 않고 뮤텍스에 대한 소유권을 가져오려고 시도합니다. 반환 형식은 **bool** 로 변환할 수 있으며, 메서드가 소유권을 가져오는 경우 **true** 이 고 그렇지 않으면 **false**입니다.
 
 - `unlock` 메서드는 호출 스레드에서 뮤텍스의 소유권을 해제합니다.
 
 뮤텍스 형식을 형식 인수로 사용하여 템플릿 `lock_guard` 및 `unique_lock`을 인스턴스화할 수 있습니다. 템플릿 [condition_variable_any](../standard-library/condition-variable-any-class.md)에서 이러한 형식의 개체를 구성원 대기 함수에 대한 `Lock` 인수로 사용할 수 있습니다.
 
-*시간이 지정된 뮤텍스 형식*은 뮤텍스 형식에 대한 요구 사항을 충족합니다. 또한에 `try_lock_for` 하 고 `try_lock_until` 메서드는 하나의 인수를 사용 하 여 호출할 수 있어야 하 고 변환할 수 있는 형식을 반환 해야 합니다 **bool**합니다. 시간이 지정된 뮤텍스 형식은 추가 인수 모두에 기본값이 있는 경우 이러한 인수를 사용하여 함수를 정의할 수 있습니다.
+*시간이 지정된 뮤텍스 형식*은 뮤텍스 형식에 대한 요구 사항을 충족합니다. 또한 `try_lock_for` 및 `try_lock_until` 메서드는 하나의 인수를 사용 하 여 호출할 수 있어야 하 고 **bool**로 변환할 수 있는 형식을 반환 해야 합니다. 시간이 지정된 뮤텍스 형식은 추가 인수 모두에 기본값이 있는 경우 이러한 인수를 사용하여 함수를 정의할 수 있습니다.
 
-- `try_lock_for` 메서드는 하나의 인수 즉, `Rel_time`을 사용하여 호출할 수 있어야 합니다. 이 인수의 형식은 [chrono::duration](../standard-library/duration-class.md)의 인스턴스화입니다. 이 메서드에서 뮤텍스의 소유권을 가져오려고 시도하지만 성공 여부에 관계없이 `Rel_time`으로 지정한 시간 이내에 반환합니다. 반환 값으로 변환 **true** 메서드가 소유권을 가져오면 그렇지 않은 경우 반환 값 변환 **false**합니다.
+- `try_lock_for` 메서드는 하나의 인수 즉, `Rel_time`을 사용하여 호출할 수 있어야 합니다. 이 인수의 형식은 [chrono::duration](../standard-library/duration-class.md)의 인스턴스화입니다. 이 메서드에서 뮤텍스의 소유권을 가져오려고 시도하지만 성공 여부에 관계없이 `Rel_time`으로 지정한 시간 이내에 반환합니다. 메서드가 소유권을 가져오면 반환 값이 **true** 로 변환 됩니다. 그렇지 않으면 반환 값이 **false**로 변환 됩니다.
 
-- `try_lock_until` 메서드는 하나의 인수 즉, `Abs_time`을 사용하여 호출할 수 있어야 합니다. 이 인수의 형식은 [chrono::time_point](../standard-library/time-point-class.md)의 인스턴스화입니다. 이 메서드에서 뮤텍스의 소유권을 가져오려고 시도하지만 성공 여부에 관계없이 `Abs_time`으로 지정한 시간 이내에 반환합니다. 반환 값으로 변환 **true** 메서드가 소유권을 가져오면 그렇지 않은 경우 반환 값 변환 **false**합니다.
+- `try_lock_until` 메서드는 하나의 인수 즉, `Abs_time`을 사용하여 호출할 수 있어야 합니다. 이 인수의 형식은 [chrono::time_point](../standard-library/time-point-class.md)의 인스턴스화입니다. 이 메서드에서 뮤텍스의 소유권을 가져오려고 시도하지만 성공 여부에 관계없이 `Abs_time`으로 지정한 시간 이내에 반환합니다. 메서드가 소유권을 가져오면 반환 값이 **true** 로 변환 됩니다. 그렇지 않으면 반환 값이 **false**로 변환 됩니다.
 
 뮤텍스 형식은 *잠금 가능 형식*이라고도 합니다. 구성원 함수 `try_lock`을 제공하지 않는 경우 *기본 잠금 형식*입니다. 시간이 지정된 뮤텍스 형식은 *시간이 지정된 잠금 가능 형식*이라고도 합니다.
 
@@ -76,8 +76,8 @@ ms.locfileid: "68240592"
 |-|-|
 |[adopt_lock_t 구조체](../standard-library/adopt-lock-t-structure.md)|`adopt_lock`을 정의하는 데 사용되는 형식을 나타냅니다.|
 |[defer_lock_t 구조체](../standard-library/defer-lock-t-structure.md)|`unique_lock`의 오버로드된 생성자 중 하나를 선택하는 데 사용되는 `defer_lock` 개체를 정의하는 형식을 나타냅니다.|
-|[once_flag 구조체](../standard-library/once-flag-structure.md)|나타냅니다는 **구조체** 템플릿 함수를 사용 하 여 사용 되는 `call_once` 해당 초기화 되도록 코드는 한 번만 호출, 다중 스레드 방식의 실행 하는 경우에 합니다.|
-|[try_to_lock_t 구조체](../standard-library/try-to-lock-t-structure.md)|나타냅니다를 **구조체** 정의 하는 `try_to_lock` 개체의 오버 로드 된 생성자 중 하나를 선택 하는 데 사용 되 고 `unique_lock`입니다.|
+|[once_flag 구조체](../standard-library/once-flag-structure.md)|실행 스레드가  여러 개 있는 경우에도 초기화 코드 `call_once` 를 한 번만 호출 하도록 템플릿 함수와 함께 사용 되는 구조체를 나타냅니다.|
+|[try_to_lock_t 구조체](../standard-library/try-to-lock-t-structure.md)|개체를  `try_to_lock` 정의 하 고의 `unique_lock`오버 로드 된 생성자 중 하나를 선택 하는 데 사용 되는 구조체를 나타냅니다.|
 
 ### <a name="variables"></a>변수
 
@@ -89,4 +89,4 @@ ms.locfileid: "68240592"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

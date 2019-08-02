@@ -11,12 +11,12 @@ helpviewer_keywords:
 - std::fpos [C++], seekpos
 - std::fpos [C++], state
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
-ms.openlocfilehash: 78b136d72067fa5fff58e8a7acc044fb4e1a409e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 60d7d00e6b9426df9b3086d9b82deaf1fdd1463c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159459"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454153"
 ---
 # <a name="fpos-class"></a>fpos 클래스
 
@@ -24,7 +24,7 @@ ms.locfileid: "62159459"
 
 - [streamoff](../standard-library/ios-typedefs.md#streamoff) 형식의 바이트 오프셋
 
-- 형식의 basic_filebuf 클래스의 개체 사용에 대 한 변환 상태 `St`일반적으로 `mbstate_t`입니다.
+- 형식의 `St`basic_filebuf 클래스 개체에서 사용 하는 변환 상태 (일반적으로 `mbstate_t`)입니다.
 
 [basic_filebuf](../standard-library/basic-filebuf-class.md) 클래스의 개체에서 사용하기 위한 `fpos_t` 형식의 임의 파일 위치를 저장할 수도 있습니다. 그러나 파일 크기가 제한된 환경에서는 `streamoff`와 `fpos_t`를 바꿔서 사용할 수 있는 경우도 있습니다. 상태 종속적 인코딩을 포함하는 스트림이 없는 환경에서는 `mbstate_t`가 실제로 사용되지 않을 수 있습니다. 따라서 저장되는 멤버 개체 수는 경우에 따라 다를 수 있습니다.
 
@@ -37,12 +37,12 @@ class fpos
 
 ### <a name="parameters"></a>매개 변수
 
-*Statetype*<br/>
+*Statetype*\
 상태 정보입니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[fpos](#fpos)|스트림 내의 위치(오프셋)에 대한 정보를 포함하는 개체를 만듭니다.|
 
@@ -83,20 +83,20 @@ fpos(Statetype _State, fpos_t _Filepos);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*<br/>
+*_Off*\
 스트림에 대한 오프셋입니다.
 
-*_State*<br/>
+*_State*\
 `fpos` 개체의 시작 상태입니다.
 
-*_Filepos*<br/>
+*_Filepos*\
 스트림에 대한 오프셋입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 저장 된 오프셋 *_Off*초기 변환 상태 (중요 실행 하 는) 경우에 파일의 시작 부분에 상대적입니다. 하는 경우 *_Off* 가-1 이면 결과 개체는 잘못 된 스트림 위치를 나타냅니다.
+첫 번째 생성자는 파일의 시작과 초기 변환 상태 (해당 하는 경우)를 기준으로 오프셋 *_Off*를 저장 합니다. *_Off* 가-1 인 경우 결과 개체는 잘못 된 스트림 위치를 나타냅니다.
 
-두 번째 생성자는 0 오프셋 및 개체를 저장 합니다 *_State*합니다.
+두 번째 생성자는 0 오프셋과 *_State*개체를 저장 합니다.
 
 ## <a name="op_neq"></a>  fpos::operator!=
 
@@ -108,7 +108,7 @@ bool operator!=(const fpos<Statetype>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 비교할 파일 위치 표시기입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -181,7 +181,7 @@ fpos<Statetype> operator+(streamoff _Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*<br/>
+*_Off*\
 파일 위치 표시기를 증분시킬 기준 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -206,7 +206,7 @@ fpos<Statetype>& operator+=(streamoff _Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*<br/>
+*_Off*\
 파일 위치 표시기를 증분시킬 기준 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -215,7 +215,7 @@ fpos<Statetype>& operator+=(streamoff _Off);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수 추가 *_Off* 저장 된 오프셋된 멤버 개체 및 다음 반환  **\*이**합니다. 파일 내 위치를 지정할 경우 결과는 일반적으로 상태 종속적 인코딩이 없는 이진 스트림의 경우에만 유효합니다.
+멤버 함수는 저장 된 오프셋 멤버 개체에 *_off* 를 추가 하 고  **\*이**를 반환 합니다. 파일 내 위치를 지정할 경우 결과는 일반적으로 상태 종속적 인코딩이 없는 이진 스트림의 경우에만 유효합니다.
 
 ### <a name="example"></a>예제
 
@@ -233,10 +233,10 @@ fpos<Statetype> operator-(streamoff _Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 파일 위치입니다.
 
-*_Off*<br/>
+*_Off*\
 스트림 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -257,7 +257,7 @@ fpos<Statetype>& operator-=(streamoff _Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*<br/>
+*_Off*\
 스트림 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -282,7 +282,7 @@ bool operator==(const fpos<Statetype>& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 비교할 파일 위치 표시기입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -356,7 +356,7 @@ void state(Statetype _State);
 
 ### <a name="parameters"></a>매개 변수
 
-*_State*<br/>
+*_State*\
 새로운 변환 상태입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -365,7 +365,7 @@ void state(Statetype _State);
 
 ### <a name="remarks"></a>설명
 
-에 저장 된 값을 반환 하는 첫 번째 멤버 함수는 `St` 멤버 개체입니다. 두 번째 멤버 함수는 *_State* 에 `St` 멤버 개체입니다.
+첫 번째 멤버 함수는 `St` 멤버 개체에 저장 된 값을 반환 합니다. 두 번째 멤버 함수는  `St` 멤버 개체에 _State를 저장 합니다.
 
 ### <a name="example"></a>예제
 
@@ -394,6 +394,6 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

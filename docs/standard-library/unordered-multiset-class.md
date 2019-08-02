@@ -134,12 +134,12 @@ helpviewer_keywords:
 - std::unordered_multiset::size
 - std::unordered_multiset::swap
 ms.assetid: 70c8dfc5-492a-4af2-84f5-1aa9cb04b71c
-ms.openlocfilehash: 34fb3e16dc7369526895a011c7e192d2f51edf14
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 836b7f9b0116b41dad57c150f87faf2d41f8f8b9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278555"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454733"
 ---
 # <a name="unorderedmultiset-class"></a>unordered_multiset 클래스
 
@@ -160,9 +160,9 @@ class unordered_multiset;
 |매개 변수|설명|
 |-|-|
 |*키*|키 형식입니다.|
-|*해시*|해시 함수 개체 형식입니다.|
-|*pred*|같음 비교 함수 개체 형식입니다.|
-|*Alloc*|할당자 클래스입니다.|
+|*해시로*|해시 함수 개체 형식입니다.|
+|*Pred*|같음 비교 함수 개체 형식입니다.|
+|*#C4*|할당자 클래스입니다.|
 
 ## <a name="members"></a>멤버
 
@@ -294,7 +294,7 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### <a name="remarks"></a>설명
 
-처음 두 개의 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷의 첫 번째 요소를 가리키는 정방향 반복기를 반환 *nbucket* (또는 빈 버킷의 끝 바로 다음).
+처음 두 개의 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷 *nbucket* 첫 번째 요소 (또는 빈 버킷의 끝 바로 다음)를 가리키는 전방 반복기를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -350,7 +350,7 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 매핑할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -491,12 +491,12 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nbucket*<br/>
+*nbucket*\
 버킷 번호입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 버킷 번호의 크기를 반환 *nbucket*합니다.
+멤버 함수는 버킷 번호 *nbucket*크기를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -539,7 +539,7 @@ bucket_size(7) == 1
 
 ## <a name="cbegin"></a>  unordered_multiset::cbegin
 
-반환 된 **const** 반복기 범위에서 첫 번째 요소를 주소입니다.
+범위의 첫 번째 요소를 주소 처리 하는 **const** 반복기를 반환 합니다.
 
 ```cpp
 const_iterator cbegin() const;
@@ -547,13 +547,13 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>반환 값
 
-A **상수** 범위 또는 빈 범위의 끝 바로 다음 위치 중 첫 번째 요소를 가리키는 정방향 액세스 반복기 (빈 범위의 경우 `cbegin() == cend()`).
+범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 **const** 전방 액세스 반복기입니다 (빈 범위의 `cbegin() == cend()`경우).
 
 ### <a name="remarks"></a>설명
 
 `cbegin` 반환 값을 사용하여 범위의 요소를 수정할 수 없습니다.
 
-`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 예에서 고려 `Container` 수정 되도록 (비 **const**)를 지 원하는 모든 종류의 컨테이너 `begin()` 및 `cbegin()`합니다.
+`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cbegin()`
 
 ```cpp
 auto i1 = Container.begin();
@@ -565,7 +565,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a>  unordered_multiset::cend
 
-반환 된 **const** 반복기 범위에서 마지막 요소 바로 다음 위치를 주소입니다.
+범위에서 마지막 요소 바로 다음 위치의 주소를 나타내는 **const** 반복기를 반환 합니다.
 
 ```cpp
 const_iterator cend() const;
@@ -573,13 +573,13 @@ const_iterator cend() const;
 
 ### <a name="return-value"></a>반환 값
 
-A **const** 범위의 끝 바로 다음을 가리키는 정방향 액세스 반복기입니다.
+범위 끝의 바로 다음을 가리키는 **const** 전방 액세스 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
 `cend`는 반복기가 범위 끝을 통과했는지 여부를 테스트하는 데 사용됩니다.
 
-`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 예에서 고려 `Container` 수정 되도록 (비 **const**)를 지 원하는 모든 종류의 컨테이너 `end()` 및 `cend()`합니다.
+`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cend()`
 
 ```cpp
 auto i1 = Container.end();
@@ -851,7 +851,7 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1092,12 +1092,12 @@ const_local_iterator end(size_type nbucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nbucket*<br/>
+*nbucket*\
 버킷 번호입니다.
 
 ### <a name="remarks"></a>설명
 
-처음 두 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷의 끝 바로 다음을 가리키는 정방향 반복기를 반환 *nbucket*합니다.
+처음 두 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷 *n 버킷의*끝 바로 다음을 가리키는 전방 반복기를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1159,12 +1159,12 @@ std::pair<const_iterator, const_iterator>
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
 
-반복기의 쌍을 반환 하는 멤버 함수 `X` 되도록 `[X.first, X.second)` 동일 하 게 정렬 된 제어 된 시퀀스의 해당 요소를 구분 *keyval*합니다. 이러한 요소가 없는 경우 두 반복기는 `end()`입니다.
+멤버 함수는 *keyval*와 동일한 순서로 정렬 `X` 된 제어 `[X.first, X.second)` 되는 시퀀스의 요소만 구분 하는 반복기 쌍을 반환 합니다. 이러한 요소가 없는 경우 두 반복기는 `end()`입니다.
 
 ### <a name="example"></a>예제
 
@@ -1232,16 +1232,16 @@ size_type erase(
 
 ### <a name="parameters"></a>매개 변수
 
-*Where*<br/>
+*위치*\
 제거할 요소의 위치입니다.
 
-*첫째*<br/>
+*기본*\
 제거할 첫 번째 요소의 위치입니다.
 
-*마지막*<br/>
+*최신*\
 제거할 마지막 요소 바로 다음 위치입니다.
 
-*키*<br/>
+*키인지*\
 제거할 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1264,7 +1264,7 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1472,7 +1472,7 @@ IList);
 |-|-|
 |*Val*|unordered_multiset에 삽입할 요소의 값입니다.|
 |*Where*|올바른 삽입 지점 검색을 시작할 위치입니다.|
-|*ValTy*|Unordered_multiset의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하는 템플릿 매개 변수 [value_type](../standard-library/map-class.md#value_type), 및 완벽 하 게 전달 *Val* 인수로 합니다.|
+|*ValTy*|Unordered_multiset가 [value_type](../standard-library/map-class.md#value_type)의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하 고 *Val* 을 인수로 사용 하는 템플릿 매개 변수입니다.|
 |*첫째*|복사할 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 마지막 요소 바로 다음 위치입니다.|
 |*InputIterator*|[value_type](../standard-library/map-class.md#value_type) 개체를 생성하는 데 사용할 수 있는 형식의 요소를 가리키는 [입력 반복기](../standard-library/input-iterator-tag-struct.md)의 요구 사항을 충족하는 템플릿 함수 인수입니다.|
@@ -1492,7 +1492,7 @@ IList);
 
 컨테이너의 [value_type](../standard-library/map-class.md#value_type)은 컨테이너에 속한 형식 정의이고 set의 경우 `unordered_multiset<V>::value_type`은 `const V`입니다.
 
-범위 멤버 함수 (5) 범위에서 반복기가 주소를 지정 하는 각 요소에 해당 하는 unordered_multiset에 요소 값의 시퀀스를 삽입 `[First, Last)`따라서 *마지막* 삽입 되지 않습니다. 컨테이너 멤버 함수 `end()`는 컨테이너의 마지막 요소 바로 뒤에 있는 위치를 참조합니다. 예를 들어 `m.insert(v.begin(), v.end());` 문은 `v`의 모든 요소를 `m`에 삽입합니다.
+범위 멤버 함수 (5)는 범위 `[First, Last)`에서 반복기가 주소를 지정 하는 각 요소에 해당 하는 unordered_multiset에 요소 값의 시퀀스를 삽입 합니다. 따라서 *Last* 는 삽입 되지 않습니다. 컨테이너 멤버 함수 `end()`는 컨테이너의 마지막 요소 바로 뒤에 있는 위치를 참조합니다. 예를 들어 `m.insert(v.begin(), v.end());` 문은 `v`의 모든 요소를 `m`에 삽입합니다.
 
 이니셜라이저 목록 구성원 함수 (6)은 [initializer_list](../standard-library/initializer-list.md)를 사용하여 요소를 unordered_multiset로 복사합니다.
 
@@ -1860,12 +1860,12 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>매개 변수
 
-*factor*<br/>
+*이용한*\
 새로운 최대 로드 비율입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 저장된 최대 로드 비율을 반환합니다. 두 번째 멤버 함수는 사용 하 여 저장 된 최대 로드 비율을 대체 *비율*합니다.
+첫 번째 멤버 함수는 저장된 최대 로드 비율을 반환합니다. 두 번째 멤버 함수는 저장 된 최대 로드 비율을 *인수로*바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -1994,7 +1994,7 @@ unordered_multiset& operator=(unordered_multiset&& right);
 
 ### <a name="remarks"></a>설명
 
-기존 요소를 지운 후는 `unordered_multiset`, `operator=` 복사 하거나 이동 내용의 *오른쪽* 에 `unordered_multiset`합니다.
+에서 `unordered_multiset`기존 요소를 `operator=` 지운 후에는의 `unordered_multiset` *내용을로 복사* 하거나 이동 합니다.
 
 ### <a name="example"></a>예제
 
@@ -2137,12 +2137,12 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>매개 변수
 
-*nbuckets*<br/>
+*nbuckets*\
 요청된 버킷 수입니다.
 
 ### <a name="remarks"></a>설명
 
-버킷 최소 수를 변경 하는 멤버 함수 *nbuckets* 필요에 따라 해시 테이블을 다시 빌드합니다.
+멤버 함수는 버킷 수를 최소한 *nbuckets* 변경 하 고 필요에 따라 해시 테이블을 다시 빌드합니다.
 
 ### <a name="example"></a>예제
 
@@ -2318,12 +2318,12 @@ void swap(unordered_multiset& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 교환할 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수 간에 제어 된 시퀀스를 교환 `*this` 하 고 *오른쪽*합니다. [unordered_multiset::get_allocator](#get_allocator)`() == right.get_allocator()`인 경우 일정 시간에 이 작업을 수행하고 `Tr` 형식의 저장된 특성 개체를 복사한 결과로만 예외를 throw하며 두 개의 제어되는 시퀀스에서 요소를 지정하는 참조, 포인터 또는 반복기를 무효화하지 않습니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
+멤버 함수는 제어 되는 시퀀스 `*this` 를과 *오른쪽*으로 바꿉니다. [unordered_multiset::get_allocator](#get_allocator)`() == right.get_allocator()`인 경우 일정 시간에 이 작업을 수행하고 `Tr` 형식의 저장된 특성 개체를 복사한 결과로만 예외를 throw하며 두 개의 제어되는 시퀀스에서 요소를 지정하는 참조, 포인터 또는 반복기를 무효화하지 않습니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
 
 ### <a name="example"></a>예제
 
@@ -2438,25 +2438,25 @@ unordered_multiset(
 |-|-|
 |*InputIterator*|반복기 형식입니다.|
 |*Al*|저장할 할당자 개체입니다.|
-|*구성 요소*|저장할 비교 함수 개체입니다.|
-|*해시*|저장할 해시 함수 개체입니다.|
+|*생략*|저장할 비교 함수 개체입니다.|
+|*해시로*|저장할 해시 함수 개체입니다.|
 |*Bucket_count*|최소 버킷 수입니다.|
 |*오른쪽*|복사할 컨테이너입니다.|
 |*IList*|복사할 initializer_list입니다.|
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 제어 하는 시퀀스의 복사본을 지정 *오른쪽*합니다. 두 번째 생성자는 빈 제어 시퀀스를 지정합니다. 세 번째 생성자는 `[First, Last)` 요소 값의 시퀀스를 삽입합니다. 네 번째 생성자는 시퀀스의 복사본을 이동 하 여 지정 *오른쪽*합니다.
+첫 번째 생성자는 *Right*로 제어 되는 시퀀스의 복사본을 지정 합니다. 두 번째 생성자는 빈 제어 시퀀스를 지정합니다. 세 번째 생성자는 `[First, Last)` 요소 값의 시퀀스를 삽입합니다. 네 번째 생성자는 *오른쪽*으로 이동 하 여 시퀀스의 복사본을 지정 합니다.
 
-모든 생성자는 또한 여러 개의 저장된 값을 초기화합니다. 복사 생성자에 대 한 값에서 가져온 *오른쪽*합니다. 그렇지 않은 경우는 다음과 같습니다.
+모든 생성자는 또한 여러 개의 저장된 값을 초기화합니다. 복사 생성자의 경우 값은 *오른쪽*에서 가져옵니다. 그렇지 않은 경우는 다음과 같습니다.
 
-버킷 최소 수는 인수 *Bucket_count*, 존재 하지 않으면 경우 설명 된 기본값 구현 시 정의 된 값으로 여기 `N0`합니다.
+최소 버킷 수는 *Bucket_count*인수입니다 (있는 경우). 그렇지 않으면 여기에 구현 정의 값 `N0`으로 설명 된 기본값입니다.
 
-해시 함수 개체는 인수 *해시*, 존재 하지 않으면 경우 `Hash()`합니다.
+해시 함수 개체는 인수 *해시*(있는 경우)입니다. 그렇지 않으면입니다 `Hash()`.
 
-비교 함수 개체는 인수 *Comp*, 존재 하지 않으면 경우 `Comp()`합니다.
+비교 함수 개체는 인수 *Comp*(있는 경우)입니다. 그렇지 않으면입니다 `Comp()`.
 
-할당자 개체는 인수 *Al*에 있는, 그렇지 않으면 `Alloc()`합니다.
+할당자 개체는 *Al*인수입니다 (있는 경우). 그렇지 않으면 `Alloc()`입니다.
 
 ## <a name="value_type"></a>  unordered_multiset::value_type
 
@@ -2514,7 +2514,7 @@ int main()
 
 ## <a name="see-also"></a>참고자료
 
-[<unordered_set>](../standard-library/unordered-set.md)<br/>
-[컨테이너](../cpp/containers-modern-cpp.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[<unordered_set>](../standard-library/unordered-set.md)\
+[컨테이너](../cpp/containers-modern-cpp.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

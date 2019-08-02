@@ -7,12 +7,12 @@ helpviewer_keywords:
 - add_const class
 - add_const
 ms.assetid: 1262a1eb-8c9c-4dd6-9f43-88ba280182f1
-ms.openlocfilehash: dc457fd4efba538e96200f7f42f84a73fc1b5228
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6f27a8e4bc0bea3a469d46a56e8885dabe5894df
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411242"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456578"
 ---
 # <a name="addconst-class"></a>add_const 클래스
 
@@ -27,12 +27,12 @@ struct add_const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 수정자의 인스턴스는 수정 된 형식인 됩니다 *Ty* 하는 경우 *Ty* 라인인 대 한 참조, 함수 또는 const 한정 된 형식 `const Ty`합니다.
+형식 한정자의 인스턴스는 *ty* 가 참조, 함수 또는 const 한정 형식인 경우 `const Ty` *ty* 인 수정 된 형식을 보유 합니다. 그렇지 않은 경우에는입니다.
 
 ## <a name="example"></a>예제
 
@@ -66,5 +66,5 @@ add_const<int> == int
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_const 클래스](../standard-library/remove-const-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[remove_const 클래스](../standard-library/remove-const-class.md)

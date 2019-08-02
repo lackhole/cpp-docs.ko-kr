@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - moneypunct_byname class
 ms.assetid: e8a544d2-6aee-420d-b513-deb385c9b416
-ms.openlocfilehash: 003ba2136e779c444c7edad9b1759a861a8b0803
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 47c9d2281973cb57288bfdcf865926fb6dd9ed0e
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383557"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460207"
 ---
 # <a name="moneypunctbyname-class"></a>moneypunct_byname 클래스
 
@@ -50,4 +50,4 @@ protected:
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

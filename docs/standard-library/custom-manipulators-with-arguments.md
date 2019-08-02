@@ -6,12 +6,12 @@ helpviewer_keywords:
 - streams, custom stream manipulators
 - output streams, custom stream manipulators
 ms.assetid: fa4655a7-d68f-4fea-a26e-73c3ad5c90a5
-ms.openlocfilehash: 3b66497b399c8d47c834b7c250963664dc275d75
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ddafa6adfb99c889ee525beb6d7bc88ed771d71e
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394132"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460048"
 ---
 # <a name="custom-manipulators-with-arguments"></a>인수 포함 사용자 지정 조작자
 
@@ -25,4 +25,4 @@ ms.locfileid: "62394132"
 
 ## <a name="see-also"></a>참고 항목
 
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
+[iostream 프로그래밍](../standard-library/iostream-programming.md)

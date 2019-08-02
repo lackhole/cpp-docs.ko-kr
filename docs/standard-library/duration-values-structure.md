@@ -7,12 +7,12 @@ f1_keywords:
 - chrono/std::chrono::duration_values::min
 - chrono/std::chrono::duration_values::zero
 ms.assetid: 7f66d2e3-1faf-47c3-b47e-08f2a87f20e8
-ms.openlocfilehash: bc382bbc408b11cbc18210f3ab944dda39adc8f2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ba4b202a5c8c6da742ac884bf58a5b8c55373d14
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413777"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454297"
 ---
 # <a name="durationvalues-structure"></a>duration_values 구조체
 
@@ -87,5 +87,5 @@ static constexpr Rep zero();
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<chrono>](../standard-library/chrono.md)

@@ -138,12 +138,12 @@ helpviewer_keywords:
 - std::unordered_map::size
 - std::unordered_map::swap
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
-ms.openlocfilehash: 51b84b8a48365189abf1efa111ae2186af0cab11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8a2e9958bda96ffbfce407c8e9981a0fab14cde1
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159147"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454836"
 ---
 # <a name="unorderedmap-class"></a>unordered_map 클래스
 
@@ -166,9 +166,9 @@ class unordered_map;
 |-|-|
 |*키*|키 형식입니다.|
 |*Ty*|매핑된 형식입니다.|
-|*해시*|해시 함수 개체 형식입니다.|
-|*pred*|같음 비교 함수 개체 형식입니다.|
-|*Alloc*|할당자 클래스입니다.|
+|*해시로*|해시 함수 개체 형식입니다.|
+|*Pred*|같음 비교 함수 개체 형식입니다.|
+|*#C4*|할당자 클래스입니다.|
 
 ## <a name="members"></a>멤버
 
@@ -350,7 +350,7 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### <a name="remarks"></a>설명
 
-처음 두 개의 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷의 첫 번째 요소를 가리키는 정방향 반복기를 반환 *nbucket* (또는 빈 버킷의 끝 바로 다음).
+처음 두 개의 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷 *nbucket* 첫 번째 요소 (또는 빈 버킷의 끝 바로 다음)를 가리키는 전방 반복기를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -406,12 +406,12 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 매핑할 키 값입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 현재 키 값을 해당 버킷 번호를 반환 *keyval*합니다.
+멤버 함수는 현재 키 값 *keyval*에 해당 하는 버킷 번호를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -548,12 +548,12 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nbucket*<br/>
+*nbucket*\
 버킷 번호입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 버킷 번호의 크기를 반환 *nbucket*합니다.
+멤버 함수는 버킷 번호 *nbucket*크기를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -596,7 +596,7 @@ bucket_size(7) == 1
 
 ## <a name="cbegin"></a>  unordered_map::cbegin
 
-반환 된 **const** 반복기 범위에서 첫 번째 요소를 주소입니다.
+범위의 첫 번째 요소를 주소 처리 하는 **const** 반복기를 반환 합니다.
 
 ```cpp
 const_iterator cbegin() const;
@@ -604,13 +604,13 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>반환 값
 
-A **상수** 범위 또는 빈 범위의 끝 바로 다음 위치 중 첫 번째 요소를 가리키는 정방향 액세스 반복기 (빈 범위의 경우 `cbegin() == cend()`).
+범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 **const** 전방 액세스 반복기입니다 (빈 범위의 `cbegin() == cend()`경우).
 
 ### <a name="remarks"></a>설명
 
 `cbegin` 반환 값을 사용하여 범위의 요소를 수정할 수 없습니다.
 
-`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 예에서 고려 `Container` 수정 되도록 (비 **const**)를 지 원하는 모든 종류의 컨테이너 `begin()` 및 `cbegin()`합니다.
+`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cbegin()`
 
 ```cpp
 auto i1 = Container.begin();
@@ -622,7 +622,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a>  unordered_map::cend
 
-반환 된 **const** 반복기 범위에서 마지막 요소 바로 다음 위치를 주소입니다.
+범위에서 마지막 요소 바로 다음 위치의 주소를 나타내는 **const** 반복기를 반환 합니다.
 
 ```cpp
 const_iterator cend() const;
@@ -630,13 +630,13 @@ const_iterator cend() const;
 
 ### <a name="return-value"></a>반환 값
 
-A **const** 범위의 끝 바로 다음을 가리키는 정방향 액세스 반복기입니다.
+범위 끝의 바로 다음을 가리키는 **const** 전방 액세스 반복기입니다.
 
 ### <a name="remarks"></a>설명
 
 `cend`는 반복기가 범위 끝을 통과했는지 여부를 테스트하는 데 사용됩니다.
 
-`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 예에서 고려 `Container` 수정 되도록 (비 **const**)를 지 원하는 모든 종류의 컨테이너 `end()` 및 `cend()`합니다.
+`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cend()`
 
 ```cpp
 auto i1 = Container.end();
@@ -907,7 +907,7 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1028,9 +1028,9 @@ pair<iterator, bool>  emplace( Args&&... args);
 
 ### <a name="return-value"></a>반환 값
 
-A `pair` 해당 **bool** 삽입이 수행 된 경우 true, 그렇지 않으면 false를 반환 하는 구성 요소는 `unordered_map` 해당 키가 순서를 동일한 값 및 해당 반복기 구성 요소를 반환 합니다. 요소가 이미 포함 되어 있는 새 요소가 삽입 된 위치 또는 요소 위치 이미 해결 합니다.
+**부울** 구성 요소가 삽입이 수행 된 경우 true를 반환 하 고, 해당 `unordered_map` 키가 순서 지정 시 동일한 값을가지고 해당 반복기 구성 요소에서 새 요소를 포함 하는 주소를 반환 하는 요소가 이미 포함 되어 있으면 false를 반환 하는 `pair` 입니다. 이 삽입 되었거나 요소가 이미 있는 위치에 있는 경우
 
-이 구성원 함수가 반환하는 `pr` 쌍의 반복기 구성 요소에 액세스하려면 `pr.first`를 사용하고 해당 구성 요소를 역참조하려면 `*(pr.first)`를 사용합니다. 액세스 하는 **bool** 쌍의 구성 요소 `pr` 사용 하 여이 멤버 함수가 반환 하 `pr.second`합니다.
+이 구성원 함수가 반환하는 `pr` 쌍의 반복기 구성 요소에 액세스하려면 `pr.first`를 사용하고 해당 구성 요소를 역참조하려면 `*(pr.first)`를 사용합니다. 이 멤버 함수가  반환 하는 쌍 `pr` 의 bool 구성 요소에 액세스 하려면를 `pr.second`사용 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1158,7 +1158,7 @@ const_local_iterator end(size_type nbucket) const;
 
 ### <a name="remarks"></a>설명
 
-처음 두 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷의 끝 바로 다음을 가리키는 정방향 반복기를 반환 *nbucket*합니다.
+처음 두 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷 *n 버킷의*끝 바로 다음을 가리키는 전방 반복기를 반환 합니다.
 
 ## <a name="equal_range"></a>  unordered_map::equal_range
 
@@ -1171,12 +1171,12 @@ std::pair<const_iterator, const_iterator>  equal_range(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
 
-반복기의 쌍을 반환 하는 멤버 함수 `X` 되도록 `[X.first, X.second)` 동일 하 게 정렬 된 제어 된 시퀀스의 해당 요소를 구분 *keyval*합니다. 이러한 요소가 없는 경우 두 반복기는 `end()`입니다.
+멤버 함수는 *keyval*와 동일한 순서로 정렬 `X` 된 제어 `[X.first, X.second)` 되는 시퀀스의 요소만 구분 하는 반복기 쌍을 반환 합니다. 이러한 요소가 없는 경우 두 반복기는 `end()`입니다.
 
 ### <a name="example"></a>예제
 
@@ -1240,16 +1240,16 @@ size_type erase(const key_type& Key);
 
 ### <a name="parameters"></a>매개 변수
 
-*Where*<br/>
+*위치*\
 제거할 요소의 위치입니다.
 
-*첫째*<br/>
+*기본*\
 제거할 첫 번째 요소의 위치입니다.
 
-*마지막*<br/>
+*최신*\
 제거할 마지막 요소 바로 다음 위치입니다.
 
-*키*<br/>
+*키인지*\
 제거할 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1272,7 +1272,7 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*<br/>
+*keyval*\
 검색할 키 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1474,7 +1474,7 @@ IList);
 |-|-|
 |*Val*|키가 동등하게 정렬된 요소가 이미 포함되어 있지 않으면 unordered_map에 삽입되는 요소의 값입니다.|
 |*Where*|올바른 삽입 지점 검색을 시작할 위치입니다.|
-|*ValTy*|Unordered_map의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하는 템플릿 매개 변수 [value_type](../standard-library/map-class.md#value_type), 및 완벽 하 게 전달 *Val* 인수로 합니다.|
+|*ValTy*|Unordered_map가 [value_type](../standard-library/map-class.md#value_type)의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하 고 *Val* 을 인수로 사용 하는 템플릿 매개 변수입니다.|
 |*첫째*|복사할 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 마지막 요소 바로 다음 위치입니다.|
 |*InputIterator*|[value_type](../standard-library/map-class.md#value_type) 개체를 생성하는 데 사용할 수 있는 형식의 요소를 가리키는 [입력 반복기](../standard-library/input-iterator-tag-struct.md)의 요구 사항을 충족하는 템플릿 함수 인수입니다.|
@@ -1482,7 +1482,7 @@ IList);
 
 ### <a name="return-value"></a>반환 값
 
-단일 요소 멤버 함수 (1) 및 (2), 반환을 [쌍](../standard-library/pair-structure.md) 인 **bool** 구성 요소가 삽입이 수행 하는 경우 true이 고 unordered_map에 키를 가진 요소가 이미 포함 된 경우에 false를 순서 지정에 해당 하는 값입니다. 반환 값 쌍의 반복기 구성 요소는 경우 새로 삽입된 된 요소를 가리키는 합니다 **bool** 구성 요소는 true 이거나 기존 요소 경우 합니다 **bool** 구성 요소가 false 인 합니다.
+단일 요소 멤버 함수 (1) 및 (2)는 **부울** 구성 요소가 삽입 된 경우 true이 고 unordered_map에 지정 된 키의 값이 순서 대로 포함 된 요소가 이미 포함 되어 있는 경우 false 인 [쌍](../standard-library/pair-structure.md) 을 반환 합니다. **부울** 구성 요소가 true 인 경우 반환 값 쌍의 반복기 구성 요소는 새로 삽입 된 요소를 가리키거나 **bool** 구성 요소가 false 인 경우에는 기존 요소를 가리킵니다.
 
 힌트가 있는 단일 요소 멤버 함수 (3) 및 (4)는 새 요소가 unordered_map에 삽입된 위치를 가리키는 반복기를 반환하고 동일한 키가 있는 요소가 존재하는 경우에는 기존 요소를 가리키는 반복기를 반환합니다.
 
@@ -1492,7 +1492,7 @@ IList);
 
 요소를 하나만 삽입하는 중 예외가 throw되었으나 컨테이너의 해시 함수에서 발생하지 않은 경우에는 컨테이너의 상태가 수정되지 않습니다. 예외가 해시 함수에서 throw된 경우 결과는 정의되어 있지 않습니다. 여러 요소를 삽입하는 중 예외가 throw되면 컨테이너는 지정되지 않았으나 유효한 상태로 남아 있습니다.
 
-단일 요소 멤버 함수에서 반환한 `pair` `pr`의 반복기 구성 요소에 액세스하려면 `pr.first`를 사용하고 반환된 쌍 내에서 반복기를 역참조하려면 `*pr.first`를 사용하여 요소를 제공합니다. 액세스 하는 **bool** 구성 요소를 사용 하 여 `pr.second`입니다. 예제는 이 문서 뒷부분에 있는 샘플 코드를 참조하세요.
+단일 요소 멤버 함수에서 반환한 `pair` `pr`의 반복기 구성 요소에 액세스하려면 `pr.first`를 사용하고 반환된 쌍 내에서 반복기를 역참조하려면 `*pr.first`를 사용하여 요소를 제공합니다. **Bool** 구성 요소에 액세스 하려면를 `pr.second`사용 합니다. 예제는 이 문서 뒷부분에 있는 샘플 코드를 참조하세요.
 
 컨테이너의 [value_type](../standard-library/map-class.md#value_type)은 컨테이너에 속한 형식 정의이고 map의 경우 `map<K, V>::value_type`은 `pair<const K, V>`입니다. 요소의 값은 첫 번째 구성 요소가 키 값과 동일하고 두 번째 구성 요소는 요소의 데이터 값과 동일한 정렬된 쌍입니다.
 
@@ -1969,12 +1969,12 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>매개 변수
 
-*factor*<br/>
+*이용한*\
 새로운 최대 로드 비율입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 저장된 최대 로드 비율을 반환합니다. 두 번째 멤버 함수는 사용 하 여 저장 된 최대 로드 비율을 대체 *비율*합니다.
+첫 번째 멤버 함수는 저장된 최대 로드 비율을 반환합니다. 두 번째 멤버 함수는 저장 된 최대 로드 비율을 *인수로*바꿉니다.
 
 ### <a name="example"></a>예제
 
@@ -2109,7 +2109,7 @@ Ty& operator[](Key&& keyval);
 
 인수 키 값이 없으면 데이터 형식의 기본값과 함께 삽입됩니다.
 
-`operator[]` map에 요소를 삽입할 수 있습니다 *m* 사용 하 여 *m*[*키*] = `DataValue`; where `DataValue` 의 값인는 `mapped_type` 키로 요소 값 *키*합니다.
+`operator[]`*m*[*key*] = `DataValue`를 사용 하 여 map *m* 에 요소를 삽입 하는 데 사용할 수 있습니다. 여기서 `mapped_type` `DataValue` 은 키 값이 *key*인 요소의 값입니다.
 
 `operator[]`를 사용하여 요소를 삽입하는 경우 반환된 참조는 삽입이 기존 요소를 변경하는지 또는 새 요소를 생성하는지 여부를 나타내지 않습니다. 구성원 함수 [find](../standard-library/map-class.md#find) 및 [insert](../standard-library/map-class.md#insert)는 지정된 키가 포함된 요소가 삽입 전에 이미 있는지를 확인하는 데 사용할 수 있습니다.
 
@@ -2190,9 +2190,9 @@ unordered_map& operator=(unordered_map&& right);
 
 ### <a name="remarks"></a>설명
 
-첫 번째 버전의 요소를 모두 복사 *오른쪽* 를이 unordered_map입니다.
+첫 번째 버전은 *오른쪽* 의 모든 요소를이 unordered_map에 복사 합니다.
 
-두 번째 버전에서 요소의 모든 이동 *오른쪽* 를이 unordered_map입니다.
+두 번째 버전은 모든 요소를 *오른쪽* 에서이 unordered_map로 이동 합니다.
 
 `operator`=가 실행되기 전에 이 unordered_map에 있는 모든 요소가 삭제됩니다.
 
@@ -2335,12 +2335,12 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>매개 변수
 
-*nbuckets*<br/>
+*nbuckets*\
 요청된 버킷 수입니다.
 
 ### <a name="remarks"></a>설명
 
-버킷 최소 수를 변경 하는 멤버 함수 *nbuckets* 필요에 따라 해시 테이블을 다시 빌드합니다.
+멤버 함수는 버킷 수를 최소한 *nbuckets* 변경 하 고 필요에 따라 해시 테이블을 다시 빌드합니다.
 
 ### <a name="example"></a>예제
 
@@ -2516,12 +2516,12 @@ void swap(unordered_map& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*right*<br/>
+*오른쪽*\
 교환할 컨테이너입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수 간에 제어 된 시퀀스를 교환 `*this` 하 고 *오른쪽*합니다. [unordered_map::get_allocator](#get_allocator)`() == right.get_allocator()`인 경우 일정 시간에 이 작업을 수행하고 `Tr` 형식의 저장된 특성 개체를 복사한 결과로만 예외를 throw하며 두 개의 제어되는 시퀀스에서 요소를 지정하는 참조, 포인터 또는 반복기를 무효화하지 않습니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
+멤버 함수는 제어 되는 시퀀스 `*this` 를과 *오른쪽*으로 바꿉니다. [unordered_map::get_allocator](#get_allocator)`() == right.get_allocator()`인 경우 일정 시간에 이 작업을 수행하고 `Tr` 형식의 저장된 특성 개체를 복사한 결과로만 예외를 throw하며 두 개의 제어되는 시퀀스에서 요소를 지정하는 참조, 포인터 또는 반복기를 무효화하지 않습니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
 
 ### <a name="example"></a>예제
 
@@ -2628,8 +2628,8 @@ unordered_map(
 |매개 변수|설명|
 |-|-|
 |*Al*|저장할 할당자 개체입니다.|
-|*구성 요소*|저장할 비교 함수 개체입니다.|
-|*해시*|저장할 해시 함수 개체입니다.|
+|*생략*|저장할 비교 함수 개체입니다.|
+|*해시로*|저장할 해시 함수 개체입니다.|
 |*Bucket_count*|최소 버킷 수입니다.|
 |*오른쪽*|복사할 컨테이너입니다.|
 |*첫째*||
@@ -2640,15 +2640,15 @@ unordered_map(
 
 첫 번째 생성자는 `right`에 의해 제어되는 시퀀스의 복사본을 지정합니다. 두 번째 생성자는 빈 제어 시퀀스를 지정합니다. 세 번째 생성자는 `[first, last)` 요소 값의 시퀀스를 삽입합니다. 네 번째 생성자는 `right`를 이동하여 시퀀스의 복사본을 지정합니다.
 
-모든 생성자는 또한 여러 개의 저장된 값을 초기화합니다. 복사 생성자에 대 한 값에서 가져온 *오른쪽*합니다. 그렇지 않은 경우는 다음과 같습니다.
+모든 생성자는 또한 여러 개의 저장된 값을 초기화합니다. 복사 생성자의 경우 값은 *오른쪽*에서 가져옵니다. 그렇지 않은 경우는 다음과 같습니다.
 
-버킷 최소 수는 인수 *Bucket_count*, 존재 하지 않으면 경우 설명 된 기본값 구현 시 정의 된 값으로 여기 `N0`합니다.
+최소 버킷 수는 *Bucket_count*인수입니다 (있는 경우). 그렇지 않으면 여기에 구현 정의 값 `N0`으로 설명 된 기본값입니다.
 
-해시 함수 개체는 인수 *해시*, 존재 하지 않으면 경우 `Hash()`합니다.
+해시 함수 개체는 인수 *해시*(있는 경우)입니다. 그렇지 않으면입니다 `Hash()`.
 
-비교 함수 개체는 인수 *Comp*, 존재 하지 않으면 경우 `Pred()`합니다.
+비교 함수 개체는 인수 *Comp*(있는 경우)입니다. 그렇지 않으면입니다 `Pred()`.
 
-할당자 개체는 인수 *Al*에 있는, 그렇지 않으면 `Alloc()`합니다.
+할당자 개체는 *Al*인수입니다 (있는 경우). 그렇지 않으면 `Alloc()`입니다.
 
 ### <a name="example"></a>예제
 
@@ -2841,7 +2841,7 @@ int main()
 
 ## <a name="see-also"></a>참고자료
 
-[<unordered_map>](../standard-library/unordered-map.md)<br/>
-[컨테이너](../cpp/containers-modern-cpp.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[<unordered_map>](../standard-library/unordered-map.md)\
+[컨테이너](../cpp/containers-modern-cpp.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

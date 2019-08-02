@@ -12,12 +12,12 @@ helpviewer_keywords:
 - std::istream_iterator [C++], istream_type
 - std::istream_iterator [C++], traits_type
 ms.assetid: fb52a8cd-7f71-48d1-b73e-4b064e2a8d16
-ms.openlocfilehash: f8fc1593db8ddacefb4a231be76ca6d7cbd30849
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 941d625e388edc75dfe25a2de0e609c6d955ff19
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413322"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447747"
 ---
 # <a name="istreamiterator-class"></a>istream_iterator 클래스
 
@@ -36,16 +36,16 @@ class istream_iterator
 
 ### <a name="parameters"></a>매개 변수
 
-*Type*<br/>
+*입력할*\
 입력 스트림에서 추출할 개체의 형식입니다.
 
-*CharType*<br/>
-`istream_iterator`의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 **char**합니다.
+*CharType*\
+`istream_iterator`의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 **char**입니다.
 
-*특성*<br/>
+*특징이*\
 `istream_iterator`의 문자 형식을 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `char_traits`< `CharType`>입니다.
 
-*Distance*<br/>
+*거리*\
 `istream_iterator`에 대해 차이 형식을 나타내는 부호 있는 정수 계열 형식입니다. 이 인수는 선택 사항이며 기본값은 `ptrdiff_t`입니다.
 
 null이 아닌 저장된 포인터를 사용하여 istream_iterator 클래스를 구성 또는 증가한 이후 개체는 연결된 입력 스트림에서 `Type` 형식의 개체에 대해 효과적인 추출 및 저장을 시도합니다. 추출이 실패할 경우 개체는 저장된 포인터를 null 포인터로 대체하여 시퀀스 끝 표시기를 만듭니다.
@@ -138,12 +138,12 @@ istream_iterator(istream_type& _Istr);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Istr*<br/>
+*_Istr*\
 `istream_iterator`를 초기화하기 위해 읽을 입력 스트림입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 입력 스트림 포인터를 null 포인터로 초기화하고 스트림의 끝 반복기를 만듭니다. 두 번째 생성자는 입력된 스트림 포인터를 사용 하 여 초기화 *& _Istr*를 추출 하 고 형식의 개체를 저장 하려고 시도 `Type`합니다.
+첫 번째 생성자는 입력 스트림 포인터를 null 포인터로 초기화하고 스트림의 끝 반복기를 만듭니다. 두 번째 생성자는 *& _Istr*을 사용 하 여 입력 스트림 포인터를 초기화 한 다음 형식의 `Type`개체를 추출 하 고 저장 하려고 합니다.
 
 스트림의 끝 반복기를 사용하여 `istream_iterator`가 스트림의 끝에 도달했는지 테스트할 수 있습니다.
 
@@ -207,7 +207,7 @@ const Type& operator*() const;
 
 ### <a name="return-value"></a>반환 값
 
-형식의 저장 된 개체 `Type`합니다.
+형식의 `Type`저장 된 개체입니다.
 
 ### <a name="example"></a>예제
 
@@ -303,7 +303,7 @@ istream_iterator<Type, CharType, Traits, Distance> operator++(int);
 
 ### <a name="return-value"></a>반환 값
 
-형식의 증가 된 개체에 대 한 참조를 반환 하는 첫 번째 멤버 연산자 `Type` 입력 스트림과 두 번째 멤버 함수는 개체의 복사본에서 추출 합니다.
+첫 번째 멤버 연산자는 입력 스트림에서 추출 된 형식의 `Type` 증가 된 개체에 대 한 참조를 반환 하 고 두 번째 멤버 함수는 개체의 복사본을 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -386,8 +386,8 @@ int main( )
 
 ## <a name="see-also"></a>참고자료
 
-[input_iterator_tag 구조체](../standard-library/input-iterator-tag-struct.md)<br/>
-[iterator 구조체](../standard-library/iterator-struct.md)<br/>
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[input_iterator_tag 구조체](../standard-library/input-iterator-tag-struct.md)\
+[iterator 구조체](../standard-library/iterator-struct.md)\
+[\<iterator>](../standard-library/iterator.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

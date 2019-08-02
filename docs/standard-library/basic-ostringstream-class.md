@@ -12,12 +12,12 @@ helpviewer_keywords:
 - std::basic_ostringstream [C++], rdbuf
 - std::basic_ostringstream [C++], str
 ms.assetid: aea699f7-350f-432a-acca-adbae7b483fb
-ms.openlocfilehash: 45a7eb1384c70b488e057fb9df8ad4c496272316
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa25c379e47bbe22efc78d65b3f6745e98098cbd
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62414141"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68453518"
 ---
 # <a name="basicostringstream-class"></a>basic_ostringstream 클래스
 
@@ -32,22 +32,22 @@ class basic_ostringstream : public basic_ostream<Elem, Tr>
 
 ### <a name="parameters"></a>매개 변수
 
-*Alloc*<br/>
+*#C4*\
 할당자 클래스입니다.
 
-*Elem*<br/>
+*E*\
 문자열 기본 요소의 형식입니다.
 
-*Tr*<br/>
+*비교한*\
 문자열의 기본 요소에서 특수화된 문자 특성입니다.
 
 ## <a name="remarks"></a>설명
 
-형식의 요소가 있는 스트림 버퍼에 요소 삽입을 제어 하는 개체 및 인코드된 개체를 설명 하는 클래스 `Elem`에서 문자 특성이 클래스에 의해 결정 됩니다 `Tr`을의 할당자에 의해 할당 되는 요소가 클래스 `Alloc`합니다. 이 개체는 basic_stringbuf< **Elem**, **Tr**, `Alloc`> 클래스의 개체를 저장합니다.
+이 클래스는 문자 특성이 클래스 `Elem` `Tr`에 의해 결정 되 고 해당 요소가의 할당자에 의해 할당 되는 형식의 요소를 사용 하 여 스트림 버퍼에 요소 및 인코드된 개체 삽입을 제어 하는 개체를 설명 합니다. 클래스 `Alloc`. 이 개체는 basic_stringbuf< **Elem**, **Tr**, `Alloc`> 클래스의 개체를 저장합니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[basic_ostringstream](#basic_ostringstream)|`basic_ostringstream` 형식의 개체를 생성합니다.|
 
@@ -55,11 +55,11 @@ class basic_ostringstream : public basic_ostream<Elem, Tr>
 
 |형식 이름|설명|
 |-|-|
-|[allocator_type](#allocator_type)|형식은 템플릿 매개 변수에 대 한 동의어 *Alloc*합니다.|
+|[allocator_type](#allocator_type)|형식은 템플릿 매개 변수 *할당*의 동의어입니다.|
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[rdbuf](#rdbuf)|`pointer` 형식의 저장된 스트림 버퍼 주소를 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>로 반환합니다.|
 |[str](#str)|쓰기 위치를 변경하지 않고 문자열 버퍼에서 텍스트를 설정하거나 가져옵니다.|
@@ -72,7 +72,7 @@ class basic_ostringstream : public basic_ostream<Elem, Tr>
 
 ## <a name="allocator_type"></a>  basic_ostringstream::allocator_type
 
-형식은 템플릿 매개 변수에 대 한 동의어 *Alloc*합니다.
+형식은 템플릿 매개 변수 *할당*의 동의어입니다.
 
 ```cpp
 typedef Alloc allocator_type;
@@ -90,21 +90,21 @@ explicit basic_ostringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base:
 
 ### <a name="parameters"></a>매개 변수
 
-*_Mode*<br/>
+*모드 (_s)* \
 [ios_base::openmode](../standard-library/ios-base-class.md#openmode)의 열거형 중 하나입니다.
 
-*str*<br/>
+*문자열*\
 `basic_string` 형식의 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 기본 클래스를 호출 하 여 초기화 [basic_ostream](../standard-library/basic-ostream-class.md)( **sb**), 여기서 `sb` 클래스의 저장 개체인 [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **Elem**하십시오 **Tr**, `Alloc`>. 또한 basic_stringbuf< **Elem**, **Tr**, `Alloc`>( `_Mode` &#124; `ios_base::out`)을 호출하여 **sb**를 초기화합니다.
+첫 번째 생성자는 [basic_ostream](../standard-library/basic-ostream-class.md)( **sb**)를 호출 하 여 기본 클래스를 `sb` 초기화 합니다. 여기서는 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`> 클래스의 저장 된 개체입니다. 또한 basic_stringbuf< **Elem**, **Tr**, `Alloc`>( `_Mode` &#124; `ios_base::out`)을 호출하여 **sb**를 초기화합니다.
 
-두 번째 생성자는 basic_ostream( **sb**)를 호출하여 기본 개체를 초기화합니다. 또한 초기화 `sb` basic_stringbuf 호출 하 여 < **Elem**, **Tr**를 `Alloc`> (_ *Str*를 `_Mode` &#124; `ios_base::out`).
+두 번째 생성자는 basic_ostream( **sb**)를 호출하여 기본 개체를 초기화합니다. 또한 basic_stringbuf < `sb` **Elem**, **Tr**, `Alloc`> (_ &#124; `ios_base::out` *Str*, `_Mode` )를 호출 하 여 초기화 합니다.
 
 ## <a name="rdbuf"></a>  basic_ostringstream::rdbuf
 
-형식의 저장 된 스트림 버퍼 주소를 반환 합니다 `pointer` 를 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**하십시오 **Tr**, `Alloc`>.
+형식의 `pointer` 저장 된 스트림 버퍼 주소를 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>로 반환 합니다.
 
 ```cpp
 basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
@@ -112,11 +112,11 @@ basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
 
 ### <a name="return-value"></a>반환 값
 
-형식의 저장 된 스트림 버퍼의 주소 `pointer` basic_stringbuf에 < **Elem**하십시오 **Tr**, `Alloc`>.
+Basic_stringbuf < **Elem**, **Tr**, `Alloc`>에 해당 하 `pointer` 는 형식의 저장 된 스트림 버퍼 주소입니다.
 
 ### <a name="remarks"></a>설명
 
-형식의 저장 된 스트림 버퍼 주소를 반환 하는 멤버 함수 `pointer` basic_stringbuf에 < **Elem**하십시오 **Tr**, `Alloc`>.
+`pointer` 멤버 함수는 형식의 저장 된 스트림 버퍼 주소를 basic_stringbuf < **Elem**, **Tr**, `Alloc`>로 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -135,7 +135,7 @@ void str(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Newstr*<br/>
+*_Newstr*\
 새 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -148,10 +148,10 @@ void str(
 
 ### <a name="example"></a>예제
 
-참조 [basic_stringbuf:: str](../standard-library/basic-stringbuf-class.md#str) 사용 하는 예제에 대 한 `str`합니다.
+을 사용 `str`하는 예제는 [basic_stringbuf:: str](../standard-library/basic-stringbuf-class.md#str) 을 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

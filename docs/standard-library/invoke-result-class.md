@@ -9,16 +9,16 @@ helpviewer_keywords:
 - std::invoke_result
 - std::invoke_result_t
 - std::invoke_result::type
-ms.openlocfilehash: 7c03240d3ee666fcda30562279a8dbda2ca8dc7b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b2051b0c854151cff9b439f5ec0a951c25a6387
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404853"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447636"
 ---
 # <a name="invokeresult-class"></a>invoke_result 클래스
 
-컴파일 타임에 지정된 된 인수 형식과 사용 하는 호출 가능 형식의 반환 형식을 결정 합니다. C + + 17에 추가 합니다.
+컴파일 타임에 지정 된 인수 형식을 사용 하는 호출 가능 형식의 반환 형식을 결정 합니다. C + + 17에 추가 되었습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,15 +33,15 @@ template<lass Callable, class... Args>
 
 ### <a name="parameters"></a>매개 변수
 
-*호출 가능*<br/>
+*호출*\
 쿼리할 호출 가능 형식입니다.
 
-*Args*<br/>
+*Args*\
 쿼리할 호출 가능 형식에 대한 인수 목록의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-이 템플릿을 사용 하 여 결과 형식을 결정 *Callable*(*Args*...) 컴파일 타임에 있는 *Callable* 모든 형식과 *Args* 모든 완전 한 형식, 범위를 알 수 없는, 배열 또는 가능한 경우 cv 한정 `void`합니다. 합니다 `type` 템플릿 클래스의 멤버의 반환 형식 이름을 *Callable* 인수를 사용 하 여 호출 되 면 *Args*... 합니다 `type` 경우에 멤버 란 *Callable* 인수를 사용 하 여 호출 될 때 호출할 수 있습니다 *Args*... 확인 되지 않은 컨텍스트에서 합니다. 그렇지 않은 경우 템플릿 클래스에 멤버가 없는 `type`, 컴파일 시간에 인수 형식의 특정 집합에서 테스트 SFINAE 수 있습니다.
+이 템플릿을 사용 하 여 컴파일 시간에 호출할 *수 있는 (* *args*...)의 결과 형식을 확인할 수 있습니다. 여기에서 *호출 가능* 하 고 *args* 의 모든 형식은 완전 한 형식, 알 수 없는 범위 배열 또는 cv 한정 `void`이 될 수 있습니다. 템플릿 `type` 클래스의 멤버 *는 인수 인수*...를 사용 하 여 호출할 때 호출 *가능* 의 반환 형식을 이름으로 합니다. 인수 인수를 사용 하 여 호출할 때 호출 *될 수 있는* 경우에만  멤버가정의됩니다.`type` 확인 되지 않은 컨텍스트에서 그렇지 않은 경우 템플릿 클래스는 컴파일 타임 `type`에 특정 인수 형식 집합에 대해 sfinae 테스트를 허용 하는 멤버를 포함 하지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -51,5 +51,5 @@ template<lass Callable, class... Args>
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
 [invoke](functional-functions.md#invoke)

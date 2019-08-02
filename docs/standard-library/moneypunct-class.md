@@ -46,16 +46,16 @@ helpviewer_keywords:
 - std::moneypunct [C++], positive_sign
 - std::moneypunct [C++], thousands_sep
 ms.assetid: cf2650da-3e6f-491c-95d5-23e57f582ee6
-ms.openlocfilehash: 750b61100f7e3fe15851fffbedeb5b60d4d7034f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b6cd2524f8ae010e81d06a30d9a001398a106622
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349123"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68460199"
 ---
 # <a name="moneypunct-class"></a>moneypunct 클래스
 
-형식의 시퀀스를 설명 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 템플릿 클래스 *CharType* 통화 입력된 필드 또는 통화 출력 필드를 나타내는 데 사용 합니다. 경우 템플릿 매개 변수 *Intl* 됩니다 *true*, 국제 규약을 준수 합니다.
+이 템플릿 클래스는 통화 입력 필드 또는 통화 출력 필드를 나타내는 데 사용 되는 *Chartype* 형식의 시퀀스를 설명 하기 위해 로캘 패싯으로 사용할 수 있는 개체에 대해 설명 합니다. 템플릿 매개 변수 *국제* 이 *true*이면 국제 규칙이 관찰 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -66,10 +66,10 @@ class moneypunct;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*<br/>
+*CharType*\
 문자를 인코딩하기 위해 프로그램 내 사용하는 형식
 
-*Intl*<br/>
+*전화*\
 국제 규약을 준수하는지 여부를 지정하는 플래그입니다.
 
 ## <a name="remarks"></a>설명
@@ -80,7 +80,7 @@ class moneypunct;
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[moneypunct](#moneypunct)|`moneypunct` 형식의 개체 생성자입니다.|
 
@@ -277,7 +277,7 @@ virtual string do_grouping() const;
 
 ### <a name="example"></a>예제
 
-예를 참조 하세요 [그룹화](#grouping)에 의해 가상 구성원 함수가 호출 되는, `grouping`합니다.
+에서`grouping`가상 멤버 함수를 호출 하는 [그룹화](#grouping)의 예제를 참조 하세요.
 
 ## <a name="do_neg_format"></a>  moneypunct::do_neg_format
 
@@ -289,19 +289,19 @@ virtual pattern do_neg_format() const;
 
 ### <a name="return-value"></a>반환 값
 
-보호된 가상 구성원 함수는 음수 값에 대해 통화 출력 필드를 생성하는 방법을 결정하기 위한 로캘별 규칙을 반환합니다. 네 가지 요소의 각 `pattern::field` 값일 수 있습니다.
+보호된 가상 구성원 함수는 음수 값에 대해 통화 출력 필드를 생성하는 방법을 결정하기 위한 로캘별 규칙을 반환합니다. 의 `pattern::field` 각 4 개 요소에는 다음 값을 사용할 수 있습니다.
 
-- `none` 0 개 이상의 공백과 일치 시키거나 아무 항목도 생성 됩니다.
+- `none`0 개 이상의 공백을 찾거나 아무것도 생성 하지 않습니다.
 
-- `sign` 검색 하거나 양수 또는 음수 기호를 생성 합니다.
+- `sign`양수 또는 음수 기호를 일치 또는 생성 합니다.
 
-- `space` 0 개 이상의 공백과 일치 시키거나 공백을 생성 합니다.
+- `space`0 개 이상의 공백을 찾거나 공백을 생성 하려면입니다.
 
-- `symbol` -일치 시키거나 통화 기호를 생성 합니다.
+- `symbol`통화 기호를 일치 또는 생성 하려면입니다.
 
-- `value` -일치 시키거나 통화 값을 생성 합니다.
+- `value`통화 값을 일치 하거나 생성 하려면입니다.
 
-통화 출력 필드의 구성 요소에서 생성 되 고 구성 요소는 통화 입력된 필드의 일치 하는 이러한 요소에 나타나는 순서 `pattern::field`합니다. 각 값 `sign`, `symbol`를 `value`, 및 중 하나 `none` 또는 `space` 정확히 한 번만 나타나야 합니다. 값 `none` 첫 번째로 나타나야 합니다. spce 값은 첫 번째나 마지막에 나올 수 **없습니다**. 경우 `Intl` 가 true 이면 순서가 `symbol`, `sign`, `none`에 다음 `value`합니다.
+통화 출력 필드의 구성 요소는 생성 되며 통화 입력 필드의 구성 요소는 이러한 요소가 표시 `pattern::field`되는 순서와 일치 합니다. ,, 및 중 `sign`하나 `symbol` `value` 는정확히한`space` 번만 나타나야 합니다. `none` 값 `none` 을 먼저 표시 해서는 안 됩니다. spce 값은 첫 번째나 마지막에 나올 수 **없습니다**. `symbol` `sign` `none`이 true 이면 순서는,, ,`value`입니다. `Intl`
 
 `moneypunct`\< **CharType**, **Intl**>의 템플릿 버전은 `{`**money_base::symbol**, **money_base::sign**, **money_base::value**, **money_base::none**`}`을 반환합니다.
 
@@ -523,18 +523,18 @@ explicit moneypunct(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs*<br/>
+*참조 (_s)* \
 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 
-에 대 한 가능한 값을 *_Refs* 매개 변수 및 중요성은:
+*_Refs* 매개 변수에 사용할 수 있는 값은 다음과 같습니다.
 
-- 0: 개체의 수명은 포함 하는 로캘에 의해 관리 됩니다.
+- 0: 개체의 수명은이를 포함 하는 로캘로 관리 됩니다.
 
 - 1: 개체의 수명은 수동으로 관리 해야 합니다.
 
-- \> 1: 이러한 값이 정의 되지 않습니다.
+- \> 1: 이러한 값은 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
@@ -835,5 +835,5 @@ English_Canada.1252 domestic thousands separator: ,
 
 ## <a name="see-also"></a>참고자료
 
-[\<locale>](../standard-library/locale.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

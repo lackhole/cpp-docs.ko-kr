@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_copy_constructible
 ms.assetid: d8db9d4c-21ed-4884-bead-0b0b562de007
-ms.openlocfilehash: c85d036efda2509885a079cf59a130a63c0389bc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 70de134fa0cb3e9d6b0259135372f37b9c017e92
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62336633"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68452801"
 ---
 # <a name="iscopyconstructible-class"></a>is_copy_constructible 클래스
 
@@ -26,12 +26,12 @@ struct is_copy_constructible;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 는 클래스에 복사 생성자가 있는 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 복사 생성자가 있는 클래스인 경우 true이 고 그렇지 않은 경우 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -75,4 +75,4 @@ is_copy_constructible<NotCopyable > == false
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

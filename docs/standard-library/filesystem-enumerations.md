@@ -11,12 +11,12 @@ f1_keywords:
 - filesystem/std::filesystem::perms
 - filesystem/std::experimental::filesystem::perms
 ms.assetid: 0096c046-d101-464c-8259-b878a48280b0
-ms.openlocfilehash: 9bf5f0231fbc5b694c1f4ae507feb82b0d19d600
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: dfbcf65462f0bb7bc6ca44f43507efa7b753e7bc
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240752"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68457708"
 ---
 # <a name="ltfilesystemgt-enumerations"></a>&lt;filesystem&gt; 열거형
 
@@ -51,7 +51,7 @@ enum class copy_options {
 
 ### <a name="values"></a>값
 
-|`Name`|설명|
+|`Name`|Description|
 |------------|-----------------|
 |`none`|작업의 기본 동작을 수행합니다.|
 |`skip_existing`|파일이 이미 있는 경우 복사하지 않고 오류를 보고하지 않습니다.|
@@ -79,14 +79,14 @@ enum class directory_options {
 
 ### <a name="values"></a>값
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |`none`|기본 동작: 디렉터리에 대한 기호 링크를 무시합니다. 사용 권한이 거부됨은 오류입니다.|
 |`follow_directory_symlink`|디렉터리에 대한 기호화된 링크를 실제 디렉터리로 처리합니다.|
 
 ## <a name="file_type"></a>  file_type
 
-파일 형식에 대한 열거형입니다. 지원 되는 값에는 일반, directory, not_found, 및 알 수 없는 됩니다.
+파일 형식에 대한 열거형입니다. 지원 되는 값은 regular, directory, not_found 및 unknown입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -120,9 +120,9 @@ enum class file_type {
 |`socket`|7|UNIX 기반 시스템의 소켓을 나타냅니다. (지원 안 됨)|
 |`unknown`|8|해당 상태를 확인할 수 없는 파일을 나타냅니다.|
 
-## <a name="perm_options"></a>  perm_options
+## <a name="perm_options"></a>perm_options
 
-값을 포함 `replace`, `add`를 `remove`, 및 `nofollow`합니다.
+에는 `replace`, `add`, `remove` 및`nofollow`값이 포함 됩니다.
 
 ```cpp
 enum class perm_options;
@@ -163,5 +163,5 @@ enum class perms {// names for permissions
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<filesystem>](../standard-library/filesystem.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<filesystem>](../standard-library/filesystem.md)

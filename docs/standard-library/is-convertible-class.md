@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_convertible class
 - is_convertible
 ms.assetid: 75614008-1894-42ea-bd57-974399628536
-ms.openlocfilehash: cdc3276f229fb9c1ac059a9eeb29e77655b4fc69
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c90fe5687992e4df49e8655387cfdd14b40aa529
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337377"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454620"
 ---
 # <a name="isconvertible-class"></a>is_convertible 클래스
 
@@ -27,10 +27,10 @@ struct is_convertible;
 
 ### <a name="parameters"></a>매개 변수
 
-*From*<br/>
+*보낸 사람*\
 변환할 원본 형식입니다.
 
-*Ty*<br/>
+*Ty*\
 변환할 대상 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -77,5 +77,5 @@ is_convertible<char, int> == true
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_base_of 클래스](../standard-library/is-base-of-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_base_of 클래스](../standard-library/is-base-of-class.md)

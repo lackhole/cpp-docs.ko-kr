@@ -17,7 +17,7 @@ ms.locfileid: "66503793"
 ---
 # <a name="windows-desktop-wizard"></a>Windows 데스크톱 마법사
 
-Windows 데스크톱 마법사에는 Visual Studio 2017 이상에 Win32 응용 프로그램 마법사를 대체합니다. 마법사를 사용 하면 네 가지 형식 중 하나를 만들 수 있습니다 C++ 프로젝트 (아래 표의 머리글에 나열 됨). 각각의 경우 연 프로젝트 형식에 적합한 추가 옵션을 지정할 수 있습니다. 
+Windows 데스크톱 마법사는 Visual Studio 2017 이상의 Win32 응용 프로그램 마법사를 대체합니다. 마법사를 사용하면 아래 표의 제목에 나열된 네 가지 유형 중 하나의 C++ 프로젝트를 만들 수 있습니다. 각각의 경우 연 프로젝트 유형에 적합한 추가 옵션을 지정할 수 있습니다. 
 
    ![Windows 데스크톱 마법사](media/windows-desktop-wizard.png)
 
@@ -43,7 +43,7 @@ Windows 데스크톱 마법사에는 Visual Studio 2017 이상에 Win32 응용 �
 
 - 프로젝트에서 미리 컴파일된 헤더 파일을 사용하지 않습니다. 이 옵션은 정적 라이브러리 프로젝트에만 사용할 수 있습니다.
 
-- 프로젝트에 MFC 또는 ATL에 대한 지원이 없습니다.
+- 프로젝트는 MFC 또는 ATL에 대하여 지원하지 않습니다.
 
 ## <a name="application-type"></a>애플리케이션 유형
 
@@ -58,7 +58,7 @@ Windows 데스크톱 마법사에는 Visual Studio 2017 이상에 Win32 응용 �
 
 ## <a name="additional-options"></a>추가 옵션
 
-지원 및 해당 형식에 따라 응용 프로그램에 대 한 옵션을 정의합니다.
+해당 형식에 따라 응용 프로그램에 대한 지원 및 옵션을 정의합니다.
 
 |옵션|설명|
 |------------|-----------------|
@@ -67,7 +67,7 @@ Windows 데스크톱 마법사에는 Visual Studio 2017 이상에 Win32 응용 �
 |**미리 컴파일된 헤더**|정적 라이브러리 프로젝트에서는 미리 컴파일된 헤더를 사용하도록 지정합니다.|
 |**보안 개발 수명 주기 (SDL) 검사**|SDL에 대한 자세한 내용은 [Microsoft 보안 SDL(Security Development Lifecycle) 프로세스 지침](../build/reference/sdl-enable-additional-security-checks.md)을 참조하세요.|
 
-## <a name="add-common-headers-for"></a>에 대 한 공용 헤더를 추가 합니다.
+## <a name="add-common-headers-for"></a>공용 헤더 추가
 
 Visual C++에서 제공되는 라이브러리에 대한 지원을 추가합니다.
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - coding conventions, C++ Standard Library
 - naming conventions [C++], C++ library
 ms.assetid: bf41b79a-2d53-4f46-8d05-779358335146
-ms.openlocfilehash: f1790b75baea340d0b3ab1044290317055ac81d7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8747ef490c0997b1fa3fd5186618b7189fa00970
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210777"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68450692"
 ---
 # <a name="c-library-conventions"></a>C++ 라이브러리 규칙
 
@@ -50,5 +50,5 @@ C++ 라이브러리는 표준 C 라이브러리와 동일한 규칙 외에도 �
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

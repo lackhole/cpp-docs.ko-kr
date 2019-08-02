@@ -5,16 +5,16 @@ f1_keywords:
 - <memory_resource>
 helpviewer_keywords:
 - memory_resource header
-ms.openlocfilehash: b5957412d2beff0dc709dc71a77834f13eeacb41
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: d4b25c6ee575191f1e17b0202d33298e2e9e67f0
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68269345"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451899"
 ---
 # <a name="ltmemoryresourcegt"></a>&lt;memory_resource&gt;
 
-컨테이너 템플릿 클래스 memory_resource 및 해당 지원 템플릿을 정의합니다.
+컨테이너 템플릿 클래스 memory_resource 및 해당 지원 템플릿을 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,8 +28,8 @@ ms.locfileid: "68269345"
 
 |||
 |-|-|
-|[operator!=](../standard-library/memory-resource-operators.md#op_neq)|연산자의 좌 변에 있는 memory_resource 개체 우변 memory_resource 개체와 같으면 인지 테스트 합니다.|
-|[연산자==](../standard-library/memory-resource-operators.md#op_eq_eq)|연산자의 좌 변에 있는 memory_resource 개체가 오른쪽에 있는 memory_resource 개체와 같은지 테스트 합니다.|
+|[operator!=](../standard-library/memory-resource-operators.md#op_neq)|연산자의 좌 변에 있는 memory_resource 개체가 우변에 있는 memory_resource 개체와 같지 않은 지 테스트 합니다.|
+|[연산자==](../standard-library/memory-resource-operators.md#op_eq_eq)|연산자의 좌 변에 있는 memory_resource 개체가 우변에 있는 memory_resource 개체와 같은지 테스트 합니다.|
 
 ### <a name="specialized-template-functions"></a>특별 템플릿 함수
 
@@ -58,6 +58,6 @@ ms.locfileid: "68269345"
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

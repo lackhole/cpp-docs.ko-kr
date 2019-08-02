@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::subtract_with_carry_engine [C++], max
 - std::subtract_with_carry_engine [C++], seed
 ms.assetid: 94a055f2-a620-4a22-ac34-c156924bab31
-ms.openlocfilehash: 76981df1f4a642cca1a57a9619f20aa4cebd63bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 17091e33c504df60c0b6b8e346d2a6fd3893679c
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412193"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447413"
 ---
 # <a name="subtractwithcarryengine-class"></a>subtract_with_carry_engine 클래스
 
@@ -36,16 +36,16 @@ class subtract_with_carry_engine;
 
 ### <a name="parameters"></a>매개 변수
 
-*UIntType*<br/>
+*UIntType*\
 부호가 없는 정수 결과 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*W*<br/>
+*W*\
 **단어 크기**. 상태 시퀀스의 각 단어 크기입니다(비트). **사전 조건**: `0 < W ≤ numeric_limits<UIntType>::digits`
 
-*S*<br/>
+*삭제*\
 **짧은 지연**. 정수 값의 개수입니다. **사전 조건**: `0 < S < R`
 
-*R*<br/>
+*R*\
 **긴 지연**. 되풀이가 연속으로 발생했는지 확인합니다.
 
 ## <a name="members"></a>멤버
@@ -62,7 +62,7 @@ class subtract_with_carry_engine;
 
 `substract_with_carry_engine` 템플릿 클래스는 [linear_congruential_engine](../standard-library/linear-congruential-engine-class.md)보다 향상되었습니다. 이러한 엔진 둘 다 [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md)만큼 빠르거나 품질 결과가 뛰어나지 않습니다.
 
-이 엔진은 되풀이 관계(*period*) `x(i) = (x(i - R) - x(i - S) - cy(i - 1)) mod M`을 사용하여 사용자가 지정한 부호가 없는 정수 형식의 값을 생성합니다. 여기서 `cy(i)`의 값은 `x(i - S) - x(i - R) - cy(i - 1) < 0`인 경우 `1`이고, 그렇지 않으면 `0`입니다. `M`의 값은 `2`<sup>W</sup>입니다. 엔진의 상태는 전달 표시기 + *R* 값입니다. 이러한 값을 마지막으로 이루어진 *R* 경우 반환 되는 값 `operator()` 이상 호출한 *R* 번이 고, 그렇지 합니다 `N` 반환 된 값과 마지막 `R - N` 값의 초기값입니다.
+이 엔진은 되풀이 관계(*period*) `x(i) = (x(i - R) - x(i - S) - cy(i - 1)) mod M`을 사용하여 사용자가 지정한 부호가 없는 정수 형식의 값을 생성합니다. 여기서 `cy(i)`의 값은 `x(i - S) - x(i - R) - cy(i - 1) < 0`인 경우 `1`이고, 그렇지 않으면 `0`입니다. `M`의 값은 `2`<sup>W</sup>입니다. 엔진의 상태는 운반 표시기에 *R* 값을 더한 값입니다. 이러한 값은가 최소 `N` *r* 회 호출 된 경우 `operator()` 반환 되는 마지막 *R* 값으로 구성 됩니다. 그렇지 않으면 반환 된 값과 초기값의 `R - N` 마지막 값으로 구성 됩니다.
 
 템플릿 인수 `UIntType`은 최대 `M - 1`까지 값을 보유할 수 있도록 충분히 커야 합니다.
 
@@ -84,4 +84,4 @@ subtract_with_carry_engine 알고리즘에 대한 자세한 내용은 Wikipedia 
 
 ## <a name="see-also"></a>참고자료
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

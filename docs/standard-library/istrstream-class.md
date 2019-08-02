@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - istrstream class
 ms.assetid: c2d41c75-bd2c-4437-bd77-5939ce1b97af
-ms.openlocfilehash: 70e71ac5a6fd523f0b7589625f4e88fdb41ee0e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59b69d3f862715840e1557a10d6087350488a3c9
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224276"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68448083"
 ---
 # <a name="istrstream-class"></a>istrstream 클래스
 
@@ -33,13 +33,13 @@ class istrstream : public istream
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[istrstream](#istrstream)|`istrstream` 형식의 개체를 생성합니다.|
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[rdbuf](#rdbuf)|스트림의 연결된 `strstreambuf` 개체에 대한 포인터를 반환합니다.|
 |[str](#str)|[freeze](../standard-library/strstreambuf-class.md#freeze)를 호출한 다음 제어되는 시퀀스의 시작 부분에 대한 포인터를 반환합니다.|
@@ -72,15 +72,15 @@ istrstream(
 
 ### <a name="parameters"></a>매개 변수
 
-*count*<br/>
-버퍼의 길이 (*ptr*).
+*수*\
+버퍼의 길이 (*ptr*)입니다.
 
-*ptr*<br/>
+*ptr*\
 버퍼가 초기화되는 콘텐츠입니다.
 
 ### <a name="remarks"></a>설명
 
-모든 생성자를 호출 하 여 기본 클래스를 초기화 [istream](../standard-library/istream-typedefs.md#istream)(**sb**) 여기서 `sb` 클래스의 저장 개체인 [strstreambuf](../standard-library/strstreambuf-class.md)합니다. 처음 두 생성자를 초기화할 수도 `sb` 호출한 `strstreambuf`(( **const** `char` \*) `ptr`, 0). 나머지 두 생성자는 대신 `strstreambuf`( ( **const**`char` *) `ptr`, `count` )를 호출합니다.
+모든 생성자는 [istream](../standard-library/istream-typedefs.md#istream)(**sb**)을 호출 하 여 기본 클래스를 초기화 `sb` 합니다. 여기서은 [strstreambuf](../standard-library/strstreambuf-class.md)클래스의 저장 된 개체입니다. 처음 두 생성자는 (( `sb` `strstreambuf` **const** `char` \* )`ptr`, 0)을 호출 하 여 초기화 됩니다. 나머지 두 생성자는 대신 `strstreambuf`( ( **const**`char` *) `ptr`, `count` )를 호출합니다.
 
 ## <a name="rdbuf"></a>  istrstream::rdbuf
 
@@ -120,11 +120,11 @@ char *str();
 
 ### <a name="example"></a>예제
 
-참조 [strstream:: str](../standard-library/strstreambuf-class.md#str) 사용 하는 샘플에 대 한 `str`합니다.
+를 사용 `str`하는 샘플은 [strstream:: str](../standard-library/strstreambuf-class.md#str) 을 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 
-[istream](../standard-library/istream-typedefs.md#istream)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream 프로그래밍](../standard-library/iostream-programming.md)<br/>
-[iostreams 규칙](../standard-library/iostreams-conventions.md)<br/>
+[istream](../standard-library/istream-typedefs.md#istream)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream 프로그래밍](../standard-library/iostream-programming.md)\
+[iostreams 규칙](../standard-library/iostreams-conventions.md)

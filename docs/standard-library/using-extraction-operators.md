@@ -6,12 +6,12 @@ helpviewer_keywords:
 - '&gt;&gt; operator [C++], extraction operators'
 - operators [C++], extraction
 ms.assetid: a961e1a9-4897-41de-b210-89d5b2d051ae
-ms.openlocfilehash: 1fc6ffd2f033dfe3df60260f734d93b79d6824f0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7950984973f8df236905128ce4b5336ecb874b7f
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362428"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458032"
 ---
 # <a name="using-extraction-operators"></a>추출 연산자 사용
 
@@ -21,4 +21,4 @@ ms.locfileid: "62362428"
 
 ## <a name="see-also"></a>참고자료
 
-[입력 스트림](../standard-library/input-streams.md)<br/>
+[입력 스트림](../standard-library/input-streams.md)

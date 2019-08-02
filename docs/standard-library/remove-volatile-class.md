@@ -7,12 +7,12 @@ helpviewer_keywords:
 - remove_volatile class
 - remove_volatile
 ms.assetid: 8b87e2c2-a581-4eb3-8691-c5603910d61d
-ms.openlocfilehash: b327bb8362e1f6523d22950974012747e0de99f8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19514d1839fa6e0afcecb690dcb12657a85f3c2e
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185934"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451259"
 ---
 # <a name="removevolatile-class"></a>remove_volatile 클래스
 
@@ -30,12 +30,12 @@ using remove_volatile_t = typename remove_volatile<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*T*<br/>
+*트*\
 수정할 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-인스턴스의 `remove_volatile<T>` 는 형식인 수정 된 `T1` 때 *T* 형식인 `volatile T1`고, 그렇지 않으면 *T*합니다.
+의 `remove_volatile<T>` 인스턴스는 *t* 가 형식이 `volatile T1`면이 고, `T1` 그렇지 않으면 인 수정 된 형식을 보유 합니다 .
 
 ## <a name="example"></a>예제
 
@@ -67,5 +67,5 @@ remove_volatile_t<volatile int> == int
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_volatile 클래스](../standard-library/add-volatile-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[add_volatile 클래스](../standard-library/add-volatile-class.md)

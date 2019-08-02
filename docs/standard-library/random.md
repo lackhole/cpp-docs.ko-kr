@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - random header
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
-ms.openlocfilehash: 1448ad2b703aa6dcf26fad2e4adcbeb2aec2c956
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 5738a1ea5ab950466f347090649e72471edf5608
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240411"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458301"
 ---
 # <a name="ltrandomgt"></a>&lt;random&gt;
 
@@ -24,7 +24,7 @@ ms.locfileid: "68240411"
 **네임스페이스:** std
 
 > [!NOTE]
-> \<임의 > 라이브러리를 사용 하 여는 ' #include < initializer_list >' 문.
+> 임의 \<> 라이브러리는 ' #include < initializer_list > ' 문을 사용 합니다.
 
 ## <a name="summary"></a>요약
 
@@ -42,7 +42,7 @@ ms.locfileid: "68240411"
 
 ### <a name="quick-tips"></a>유용한 팁
 
-다음은 몇 가지 팁을 사용 하는 경우 염두 \<임의 >:
+임의 >를 사용할 \<때 유의 해야 할 몇 가지 팁은 다음과 같습니다.
 
 - 대부분의 경우 URNG는 분포에 따라 셰이핑되어야 하는 원시 비트를 생성합니다. 이에 대한 눈에 띄는 예외는 URNG를 직접 사용하는 [std::shuffle()](../standard-library/algorithm-functions.md#shuffle)입니다.
 
@@ -52,7 +52,7 @@ ms.locfileid: "68240411"
 
 - 대부분의 애플리케이션의 경우 가장 유용한 연결은 이 문서 뒷부분의 [코드 예제](#code)에 나와 있는 `uniform_int_distribution`을 사용하는 `mt19937` 엔진입니다.
 
-선택 하는 방법은 여러 가지는 \<임의 > 헤더 및 그 중 하나 보다 오래 된 C 런타임 함수가 적합 `rand()`합니다. 무엇이 잘못 된에 대 한 자세한 `rand()` 방법과 \<임의 > 이러한 문제를 해결 참조 [이 비디오](https://go.microsoft.com/fwlink/p/?linkid=397615)합니다.
+\<임의 > 헤더에서 선택할 수 있는 다양 한 옵션이 있으며 오래 된 C 런타임 함수 `rand()`보다는이 중 하나를 선택 하는 것이 좋습니다. 에서 `rand()` 발생 하는 문제 및 임의 > 이러한 \<단점을 해결 하는 방법에 대 한 자세한 내용은 [이 비디오](https://go.microsoft.com/fwlink/p/?linkid=397615)를 참조 하세요.
 
 ## <a name="code"></a> 예제
 
@@ -215,13 +215,13 @@ Randomized array: Si C Sc H Na O S Cr K Li Al Ti Cl B Mn He Fe Ne Be Ar V P Ca N
 
 URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
-1. **기간의 길이**: 생성 된 숫자 시퀀스를 반복 하는 데 걸리는 반복 횟수입니다. 길수록 좋습니다.
+1. **기간 길이**: 생성 된 숫자 시퀀스를 반복 하는 데 걸리는 반복 횟수입니다. 길수록 좋습니다.
 
-2. **성능**: 숫자를 생성할 수 있는 속도 및 메모리 양을 걸립니다. 작을수록 좋습니다.
+2. **성능**: 숫자를 신속 하 게 생성 하 고 사용 하는 메모리의 양을 지정할 수 있습니다. 작을수록 좋습니다.
 
-3. **품질**: 생성 된 시퀀스가 실제 난수에 가까운 방법입니다. 이를 대개 "*임의성*"이라고 합니다.
+3. **품질**: 생성 된 시퀀스의 실제 난수에 근접 한 값입니다. 이를 대개 "*임의성*"이라고 합니다.
 
-다음 섹션에서는 목록 균일 난수 생성기 (Urng)에서 제공 되는 \<임의 > 헤더입니다.
+다음 섹션에서는 \<임의 > 헤더에 제공 된 urng (uniform 난수 생성기)를 나열 합니다.
 
 ####  <a name="rd"></a> 불명확한 생성기
 
@@ -281,7 +281,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
         43, 6364136223846793005ULL> mt19937_64;
     ```
 
-- `ranlux24` 24 비트 RANLUX 엔진 (Martin Lüscher 및 Fred James, 1994).
+- `ranlux24`24 비트 RANLUX 엔진 (Martin Lüscher 및 Fred James, 1994).
 
     ```cpp
     typedef discard_block_engine<ranlux24_base, 223, 23> ranlux24;
@@ -293,7 +293,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
     typedef subtract_with_carry_engine<unsigned int, 24, 10, 24> ranlux24_base;
     ```
 
-- `ranlux48` 48 비트 RANLUX 엔진 (Martin Lüscher 및 Fred James, 1994).
+- `ranlux48`48 비트 RANLUX 엔진 (Martin Lüscher 및 Fred James, 1994)
 
     ```cpp
     typedef discard_block_engine<ranlux48_base, 389, 11> ranlux48;
@@ -329,7 +329,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
 ###  <a name="distributions"></a> 난수 분포
 
-다음 섹션에서 제공 되는 분포에 나열 된 \<임의 > 헤더입니다. 분포는 후처리 메커니즘으로 일반적으로 URNG 출력을 입력으로 사용하여 정의된 통계적 확률 밀도 함수를 통해 출력을 분포시킵니다. 자세한 내용은 [엔진 및 분포](#engdist) 섹션을 참조하세요.
+다음 섹션에서는 \<임의 > 헤더에서 제공 되는 분포를 나열 합니다. 분포는 후처리 메커니즘으로 일반적으로 URNG 출력을 입력으로 사용하여 정의된 통계적 확률 밀도 함수를 통해 출력을 분포시킵니다. 자세한 내용은 [엔진 및 분포](#engdist) 섹션을 참조하세요.
 
 #### <a name="uniform-distributions"></a>균등 분포
 
@@ -345,7 +345,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
 |||
 |-|-|
-|[bernoulli_distribution 클래스](../standard-library/bernoulli-distribution-class.md)|베르누이 분포를 생성 **bool** 값입니다.|
+|[bernoulli_distribution 클래스](../standard-library/bernoulli-distribution-class.md)|**Bool** 값의 베르누이 분포를 생성 합니다.|
 |[binomial_distribution 클래스](../standard-library/binomial-distribution-class.md)|정수 값의 이항 분포를 생성합니다.|
 |[geometric_distribution 클래스](../standard-library/geometric-distribution-class.md)|정수 값의 기하 분포를 생성합니다.|
 |[negative_binomial_distribution 클래스](../standard-library/negative-binomial-distribution-class.md)|정수 값의 음이항 분포를 생성합니다.|
@@ -358,7 +358,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 |-|-|
 |[cauchy_distribution 클래스](../standard-library/cauchy-distribution-class.md)|실수(부동 소수점) 값의 코시 분포를 생성합니다.|
 |[chi_squared_distribution 클래스](../standard-library/chi-squared-distribution-class.md)|실수(부동 소수점) 값의 카이 제곱 분포를 생성합니다.|
-|[fisher_f_distribution 클래스](../standard-library/fisher-f-distribution-class.md)|F 분포 (라고도: 분포의 F 분포 또는 fisher-snedecor 분포 분포) 실수 (부동 소수점) 값을 생성합니다.|
+|[fisher_f_distribution 클래스](../standard-library/fisher-f-distribution-class.md)|실수 (부동 소수점) 값의 F 분포 (Fisher-snedecor 분포 라고도의 F 분포 또는 피셔-Fisher-snedecor 분포 라고도 분포 라고도 함)를 생성 합니다.|
 |[lognormal_distribution 클래스](../standard-library/lognormal-distribution-class.md)|실수(부동 소수점) 값의 대수 정규 분포를 생성합니다.|
 |[normal_distribution 클래스](../standard-library/normal-distribution-class.md)|실수(부동 소수점) 값의 정규(가우스) 분포를 생성합니다.|
 |[student_t_distribution 클래스](../standard-library/student-t-distribution-class.md)|실수값(부동 소수점)의 Student *t* 분포를 생성합니다.|
@@ -389,7 +389,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
 ### <a name="utility-functions"></a>유틸리티 함수
 
-이 섹션에서 제공 하는 일반 유틸리티 함수를 나열 합니다 \<임의 > 헤더입니다.
+이 섹션에서는 \<임의 > 헤더에서 제공 되는 일반 유틸리티 함수를 나열 합니다.
 
 |||
 |-|-|
@@ -397,7 +397,7 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
 ### <a name="operators"></a>연산자
 
-이 섹션에서 제공 되는 연산자를 나열 합니다 \<임의 > 헤더입니다.
+이 섹션에는 \<임의 > 헤더에 제공 되는 연산자가 나열 되어 있습니다.
 
 |||
 |-|-|
@@ -408,13 +408,13 @@ URNG는 일반적으로 다음과 같은 속성 측면에서 설명합니다.
 
 ## <a name="engdist"></a> 엔진 및 분포
 
-이러한 각 템플릿 클래스 범주에 정의 된에 대 한 내용은 다음 섹션을 참조 하세요 \<임의 >. 이러한 템플릿 클래스 범주 둘 다는 형식을 인수로 가져와 공유 템플릿 매개 변수 이름을 사용하여 다음과 같이 실제 인수 형식으로 허용되는 형식 속성을 설명합니다.
+임의 >에 \<정의 된 이러한 각 템플릿 클래스 범주에 대 한 자세한 내용은 다음 섹션을 참조 하십시오. 이러한 템플릿 클래스 범주 둘 다는 형식을 인수로 가져와 공유 템플릿 매개 변수 이름을 사용하여 다음과 같이 실제 인수 형식으로 허용되는 형식 속성을 설명합니다.
 
-- `IntType` 나타냅니다는 **짧은**, **int**를 **긴**를 **long long**를 **unsigned short**,  **부호 없는 int**하십시오 **부호 없는 long**, 또는 **부호 없는 long long**합니다.
+- `IntType`**short**, **int**, **long**, **long long**, **unsigned short**, **unsigned int**, **unsigned long**또는 **unsigned long long**을 나타냅니다.
 
-- `UIntType` 나타냅니다 **unsigned short**를 **부호 없는 int**합니다 **부호 없는 long**, 또는 **부호 없는 long long**합니다.
+- `UIntType`unsigned **short**, **unsigned int**, **unsigned long**또는 **unsigned long long**을 나타냅니다.
 
-- `RealType` 나타냅니다는 **부동 소수점**를 **double**, 또는 **long double**합니다.
+- `RealType`**float**, **double**또는 **long double**을 나타냅니다.
 
 ### <a name="engines"></a>엔진
 
@@ -509,4 +509,4 @@ ISO C++ 표준에서는 `random_device`를 암호로 보호하도록 요구하�
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

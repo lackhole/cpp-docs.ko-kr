@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::future [C++], wait
 - std::future [C++], wait_for
 - std::future [C++], wait_until
-ms.openlocfilehash: 9ca18e62038d93a50b592868f71223962a22857d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1519fa105f2cd73c1165bb30264828aa987fbd35
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62159329"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68458450"
 ---
 # <a name="future-class"></a>future 클래스
 
@@ -46,13 +46,13 @@ class future;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[future](#future)|`future` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[get](#get)|연결된 비동기 상태에 저장된 결과를 검색합니다.|
 |[share](#share)|개체를 `shared_future`로 변환합니다.|
@@ -63,13 +63,13 @@ class future;
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[future::operator=](#op_eq)|지정된 개체에서 연결된 비동기 상태를 전송합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<향후 >
+**헤더:** \<이후 >
 
 **네임스페이스:** std
 
@@ -84,14 +84,14 @@ future(future&& Other) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*기타*<br/>
+*다른*\
 `future` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 첫 번째 생성자는 연결된 비동기 상태가 없는 `future` 개체를 구성합니다.
 
-두 번째 생성자 구문 한 `future` 개체와 연결된 된 비동기 상태에서 전송 *다른*합니다. *다른* 연결 된 비동기 상태를 더 이상.
+두 번째 생성자는 개체 `future` 를 생성 하 고 *다른*에서 연결 된 비동기 상태를 전송 합니다. *기타* 에는 더 이상 연결 된 비동기 상태가 없습니다.
 
 ## <a name="get"></a>  future::get
 
@@ -111,7 +111,7 @@ Ty get();
 
 부분 특수화 `future<Ty&>`의 경우 저장되는 값은 실제로는 반환 값으로 비동기 공급자에 전달된 개체에 대한 참조입니다.
 
-특수화에 대 한 저장 된 값이 있으므로 `future<void>`, 메서드가 반환 **void**합니다.
+특수화 `future<void>`에 대해 저장 된 값이 없으므로 메서드는 **void**를 반환 합니다.
 
 다른 특수화에서 메서드는 저장된 값에서 반환 값을 이동합니다. 따라서 이 메서드를 한 번만 호출합니다.
 
@@ -125,7 +125,7 @@ future& operator=(future&& Right) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*<br/>
+*오른쪽*\
 `future` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -134,7 +134,7 @@ future& operator=(future&& Right) noexcept;
 
 ### <a name="remarks"></a>설명
 
-전송 후 *오른쪽* 연결 된 비동기 상태를 더 이상.
+전송 후에는 *오른쪽* 에 더 이상 연결 된 비동기 상태가 없습니다.
 
 ## <a name="share"></a>  future::share
 
@@ -158,7 +158,7 @@ bool valid() noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-**true 이면** 개체에 연결된 된 비동기 상태가;이 고, 그렇지 **false**합니다.
+개체가 연결 된 비동기 상태 이면 **true** 이 고, 그렇지 않으면입니다. 그렇지 않으면 **false**입니다.
 
 ## <a name="wait"></a>  future::wait
 
@@ -183,7 +183,7 @@ future_status wait_for(const chrono::duration<Rep, Period>& Rel_time) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Rel_time*<br/>
+*Rel_time*\
 스레드가 차단되는 최대 시간 간격을 지정하는 [chrono::duration](../standard-library/duration-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -205,7 +205,7 @@ future_status wait_until(const chrono::time_point<Clock, Duration>& Abs_time) co
 
 ### <a name="parameters"></a>매개 변수
 
-*Abs_time*<br/>
+*Abs_time*\
 스레드 차단을 해제할 수 있는 시간을 지정하는 [chrono::time_point](../standard-library/time-point-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -218,5 +218,5 @@ future_status wait_until(const chrono::time_point<Clock, Duration>& Abs_time) co
 
 ## <a name="see-also"></a>참고자료
 
-[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<future>](../standard-library/future.md)<br/>
+[헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
+[\<future>](../standard-library/future.md)

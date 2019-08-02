@@ -38,12 +38,12 @@ helpviewer_keywords:
 - stdext::allocator_base [C++], destroy
 - stdext::allocator_base [C++], max_size
 ms.assetid: f920b45f-2a88-4bb0-8ead-b6126b426ed4
-ms.openlocfilehash: 59d5834b941791a659815ff0a03f1c68c8ce68bd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 115f5ad4461b98f24e3aa6756e501b91ae3a1566
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411073"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68456443"
 ---
 # <a name="allocatorbase-class"></a>allocator_base 클래스
 
@@ -85,8 +85,8 @@ class allocator_base
 
 |멤버 함수|설명|
 |-|-|
-|[_Charalloc](#charalloc)|형식의 배열에 대 한 저장소를 할당 **char**합니다.|
-|[_Chardealloc](#chardealloc)|형식의 요소를 포함 하는 배열에 대 한 저장소를 해제 **char**합니다.|
+|[_Charalloc](#charalloc)|**Char**형식의 배열에 대 한 저장소를 할당 합니다.|
+|[_Chardealloc](#chardealloc)|**Char**형식의 요소가 포함 된 배열에 대 한 저장소를 해제 합니다.|
 |[address](#address)|값이 지정된 개체의 주소를 찾습니다.|
 |[allocate](#allocate)|적어도 지정된 개수의 요소를 저장할 수 있을 만큼 큰 메모리 블록을 할당합니다.|
 |[construct](#construct)|지정된 값으로 초기화된 특정 형식의 개체를 지정된 주소에 생성합니다.|
@@ -102,7 +102,7 @@ class allocator_base
 
 ## <a name="charalloc"></a>  allocator_base::_Charalloc
 
-형식의 배열에 대 한 저장소를 할당 **char**합니다.
+**Char**형식의 배열에 대 한 저장소를 할당 합니다.
 
 ```cpp
 char *_Charalloc(size_type count);
@@ -124,7 +124,7 @@ char *_Charalloc(size_type count);
 
 ## <a name="chardealloc"></a>  allocator_base::_Chardealloc
 
-형식의 요소를 포함 하는 배열에 대 한 저장소를 해제 **char**합니다.
+**Char**형식의 요소가 포함 된 배열에 대 한 저장소를 해제 합니다.
 
 ```cpp
 void _Chardealloc(void* ptr, size_type count);
@@ -153,7 +153,7 @@ const_pointer address(const_reference val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*짧은*\
 주소를 검색하는 개체의 const 또는 nonconst 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -341,4 +341,4 @@ typedef Type value_type;
 
 ## <a name="see-also"></a>참고자료
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - discard_block_engine class
 ms.assetid: aa84808e-38fe-4fa0-9f73-d5b9a653345b
-ms.openlocfilehash: a0df754f53b52c134b9eb1126f90882ceaaf1e2f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76a78a2f47bd160c6b2b981b1ccdda2ef3a90575
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386202"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454391"
 ---
 # <a name="discardblockengine-class"></a>discard_block_engine 클래스
 
@@ -26,14 +26,14 @@ class discard_block_engine;
 
 ### <a name="parameters"></a>매개 변수
 
-*엔진*<br/>
+*엔진*\
 기본 엔진 유형입니다.
 
-*P*<br/>
+*®*\
 **블록 크기**입니다. 각 블록에 있는 값의 수입니다.
 
-*R*<br/>
-**사용된 블록**입니다. 사용된 각 블록에 있는 값의 수입니다. 나머지는 버립니다 (`P` - `R`). **사전 조건**: `0 < R ≤ P`
+*R*\
+**사용된 블록**입니다. 사용된 각 블록에 있는 값의 수입니다. 나머지는 삭제 됩니다 (`P` - `R`). **사전 조건**: `0 < R ≤ P`
 
 ## <a name="members"></a>멤버
 
@@ -56,4 +56,4 @@ class discard_block_engine;
 
 ## <a name="see-also"></a>참고자료
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

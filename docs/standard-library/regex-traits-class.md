@@ -38,12 +38,12 @@ helpviewer_keywords:
 - std::regex_traits [C++], imbue
 - std::regex_traits [C++], getloc
 ms.assetid: bc5a5eed-32fc-4eb7-913d-71c42e729e81
-ms.openlocfilehash: 47e0a1e51809efad2924a2051d1627fe2e9ff95f
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: a34346b4fc15beb605836037ef8a05a541562f33
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400674"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68451516"
 ---
 # <a name="regextraits-class"></a>regex_traits 클래스
 
@@ -58,18 +58,18 @@ class regex_traits
 
 ## <a name="parameters"></a>매개 변수
 
-*Elem*<br/>
+*E*\
 설명할 문자 요소 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-형식에 대 한 다양 한 정규식 특성을 설명 하는 템플릿 클래스 *Elem*합니다. 템플릿 클래스 [basic_regex 클래스](../standard-library/basic-regex-class.md) 이 정보를 사용 하 여 형식의 요소를 조작 *Elem*합니다.
+템플릿 클래스는 *Elem*형식에 대 한 다양 한 정규식 특성을 설명 합니다. 템플릿 클래스 [Basic_regex 클래스](../standard-library/basic-regex-class.md) 는이 정보를 사용 하 여 *Elem*형식의 요소를 조작 합니다.
 
 각 `regex_traits` 개체는 일부 멤버 함수에서 사용되는 `regex_traits::locale` 형식의 개체를 보유합니다. 기본 로캘은 `regex_traits::locale()`의 복사본입니다. 멤버 함수 `imbue` 는 로캘 개체를 대체하고, 멤버 함수 `getloc` 는 로캘 개체의 복사본을 반환합니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[regex_traits](#regex_traits)|개체를 생성합니다.|
 
@@ -90,14 +90,14 @@ class regex_traits
 |[getloc](#getloc)|저장된 로캘 개체를 반환합니다.|
 |[imbue](#imbue)|저장된 로캘 개체를 변경합니다.|
 |[isctype](#isctype)|클래스 멤버 자격을 테스트합니다.|
-|[length](#length)|Null로 끝나는 시퀀스의 길이 반환 합니다.|
+|[length](#length)|Null로 끝나는 시퀀스의 길이를 반환 합니다.|
 |[lookup_classname](#lookup_classname)|시퀀스를 문자 클래스에 매핑합니다.|
 |[lookup_collatename](#lookup_collatename)|데이터 정렬 요소에 시퀀스를 매핑합니다.|
 |[transform](#transform)|정렬된 해당 시퀀스로 변환합니다.|
 |[transform_primary](#transform_primary)|정렬된 해당 caseless 시퀀스로 변환합니다.|
 |[translate](#translate)|일치하는 해당 요소로 변환합니다.|
 |[translate_nocase](#translate_nocase)|해당 caseless 일치하는 요소로 변환합니다.|
-|[값](#value)|요소를 숫자 값으로 변환합니다.|
+|[value](#value)|요소를 숫자 값으로 변환합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -221,12 +221,12 @@ locale_type imbue(locale_type loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*loc*<br/>
+*loc*\
 저장할 로캘 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수 복사본 *loc* 저장 된 `locale` 개체 저장된 된 이전 값의 복사본을 반환 `locale` 개체입니다.
+멤버 함수는 저장  `locale` 된 개체에 loc를 복사 하 고 저장 `locale` 된 개체의 이전 값의 복사본을 반환 합니다.
 
 ## <a name="isctype"></a>  regex_traits::isctype
 
@@ -238,19 +238,19 @@ bool isctype(char_type ch, char_class_type cls) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*ch*\
 테스트할 요소입니다.
 
-*cls*<br/>
+*ls*\
 테스트할 클래스입니다.
 
 ### <a name="remarks"></a>설명
 
-멤버 함수가 반환 하는 경우에 true 문자 *ch* 는 지정 된 문자 클래스 *cls*합니다.
+멤버 함수는 문자 *ch* 가 *cls*로 지정 된 문자 클래스에 있는 경우에만 true를 반환 합니다.
 
 ## <a name="length"></a>  regex_traits::length
 
-Null로 끝나는 시퀀스의 길이 반환 합니다.
+Null로 끝나는 시퀀스의 길이를 반환 합니다.
 
 ```cpp
 static size_type length(const char_type *str);
@@ -258,7 +258,7 @@ static size_type length(const char_type *str);
 
 ### <a name="parameters"></a>매개 변수
 
-*str*<br/>
+*문자열*\
 Null로 끝나는 시퀀스입니다.
 
 ### <a name="remarks"></a>설명
@@ -288,10 +288,10 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*first*<br/>
+*기본*\
 조회할 시퀀스의 시작입니다.
 
-*last*<br/>
+*최신*\
 조회할 시퀀스의 끝입니다.
 
 ### <a name="remarks"></a>설명
@@ -313,10 +313,10 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*first*<br/>
+*기본*\
 조회할 시퀀스의 시작입니다.
 
-*last*<br/>
+*최신*\
 조회할 시퀀스의 끝입니다.
 
 ### <a name="remarks"></a>설명
@@ -372,10 +372,10 @@ string_type transform(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*first*<br/>
+*기본*\
 변환할 시퀀스의 시작입니다.
 
-*last*<br/>
+*최신*\
 변환할 시퀀스의 끝입니다.
 
 ### <a name="remarks"></a>설명
@@ -393,10 +393,10 @@ string_type transform_primary(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*first*<br/>
+*기본*\
 변환할 시퀀스의 시작입니다.
 
-*last*<br/>
+*최신*\
 변환할 시퀀스의 끝입니다.
 
 ### <a name="remarks"></a>설명
@@ -413,7 +413,7 @@ char_type translate(char_type ch) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*ch*\
 변환할 요소입니다.
 
 ### <a name="remarks"></a>설명
@@ -430,7 +430,7 @@ char_type translate_nocase(char_type ch) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*ch*\
 변환할 요소입니다.
 
 ### <a name="remarks"></a>설명
@@ -447,25 +447,25 @@ int value(Elem ch, int radix) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*<br/>
+*ch*\
 변환할 요소입니다.
 
-*radix*<br/>
+*기 수*\
 사용할 기본 산술입니다.
 
 ### <a name="remarks"></a>설명
 
-문자를 나타내는 값을 반환 하는 멤버 함수 *ch* 자료의 *기 수*, 또는-1 이면 *ch* 밑에서 유효한 숫자가 아닙니다 *기수*. 함수는 호출할 수만 *기 수* 8, 10 또는 16의 인수입니다.
+멤버 함수는 기본 *기*수에서 *ch* 문자로 표시 되는 값을 반환 하거나, *ch* 가 기본 *기*수의 유효한 숫자가 아닌 경우-1을 반환 합니다. 함수는 8, 10 또는 16의 *기* 수 인수로만 호출 됩니다.
 
 ## <a name="see-also"></a>참고자료
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_constants 클래스](../standard-library/regex-constants-class.md)<br/>
-[regex_error 클래스](../standard-library/regex-error-class.md)<br/>
-[\<regex> 함수](../standard-library/regex-functions.md)<br/>
-[regex_iterator 클래스](../standard-library/regex-iterator-class.md)<br/>
-[\<regex> 연산자](../standard-library/regex-operators.md)<br/>
-[regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md)<br/>
-[\<regex> 형식 정의](../standard-library/regex-typedefs.md)<br/>
-[regex_traits\<char > 클래스](../standard-library/regex-traits-char-class.md)<br/>
-[regex_traits\<wchar_t> 클래스](../standard-library/regex-traits-wchar-t-class.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[regex_constants 클래스](../standard-library/regex-constants-class.md)\
+[regex_error 클래스](../standard-library/regex-error-class.md)\
+[\<regex > 함수](../standard-library/regex-functions.md)\
+[regex_iterator 클래스](../standard-library/regex-iterator-class.md)\
+[\<regex > 연산자](../standard-library/regex-operators.md)\
+[regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md)\
+[\<regex > typedef](../standard-library/regex-typedefs.md)\
+[regex_traits\<char> 클래스](../standard-library/regex-traits-char-class.md)\
+[regex_traits\<wchar_t> 클래스](../standard-library/regex-traits-wchar-t-class.md)

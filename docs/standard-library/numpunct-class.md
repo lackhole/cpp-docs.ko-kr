@@ -30,12 +30,12 @@ helpviewer_keywords:
 - std::numpunct [C++], thousands_sep
 - std::numpunct [C++], truename
 ms.assetid: 73fb93cc-ac11-4c98-987c-bfa6267df596
-ms.openlocfilehash: 6084392c5cae151f6c7111fbe9fe7a45e103b74d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c23f23172894ce0b5adcbff1d2db58c78caf7a03
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62371479"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68454189"
 ---
 # <a name="numpunct-class"></a>numpunct 클래스
 
@@ -50,7 +50,7 @@ class numpunct : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*<br/>
+*CharType*\
 로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
 ## <a name="remarks"></a>설명
@@ -59,7 +59,7 @@ class numpunct : public locale::facet;
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[numpunct](#numpunct)|`numpunct` 형식의 개체에 대한 생성자입니다.|
 
@@ -72,11 +72,11 @@ class numpunct : public locale::facet;
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[decimal_point](#decimal_point)|소수점으로 사용할 로캘별 요소를 반환합니다.|
 |[do_decimal_point](#do_decimal_point)|소수점으로 사용할 로캘별 요소를 반환하기 위해 호출하는 보호된 가상 멤버 함수입니다.|
-|[do_falsename](#do_falsename)|보호 된 가상 멤버 함수는 값의 텍스트 표현으로 사용 하는 문자열을 반환 하기 위해 호출 되 **false**합니다.|
+|[do_falsename](#do_falsename)|**False**값을 텍스트로 표현 하는 데 사용할 문자열을 반환 하기 위해 호출 하는 보호 된 가상 멤버 함수입니다.|
 |[do_grouping](#do_grouping)|소수점 자리 왼쪽의 숫자를 그룹화하는 방법을 결정하는 로캘별 규칙을 반환하기 위해 호출하는 보호된 가상 멤버 함수입니다.|
 |[do_thousands_sep](#do_thousands_sep)|1000 단위 구분 기호로 사용할 로캘별 요소를 반환하기 위해 호출하는 보호된 가상 멤버 함수입니다.|
 |[do_truename](#do_truename)|**true** 값을 텍스트로 표현하는 데 사용할 문자열을 반환하기 위해 호출하는 보호된 가상 구성원 함수입니다.|
@@ -200,7 +200,7 @@ virtual string do_grouping() const;
 
 ### <a name="example"></a>예제
 
-예를 참조 하세요 [그룹화](#grouping)에 의해 가상 구성원 함수가 호출 되는, `grouping`합니다.
+에서`grouping`가상 멤버 함수를 호출 하는 [그룹화](#grouping)의 예제를 참조 하세요.
 
 ## <a name="do_thousands_sep"></a>  numpunct::do_thousands_sep
 
@@ -216,7 +216,7 @@ virtual CharType do_thousands_sep() const;
 
 ### <a name="remarks"></a>설명
 
-보호 된 가상 구성원 함수가 반환 형식의 로캘별 요소를 `CharType` 소수점의 왼쪽에 그룹 구분 기호로 사용 하도록 합니다.
+보호 된 가상 멤버 함수는 소수점 왼쪽의 그룹 구분 기호로 사용할 `CharType` 형식의 로캘별 요소를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -250,7 +250,7 @@ string_type falsename() const;
 
 ### <a name="return-value"></a>반환 값
 
-시퀀스가 포함 된 문자열로 `CharType`값의 텍스트 표현으로 사용 하도록 **false**합니다.
+False 값의 텍스트 표현으로 `CharType`사용할의 시퀀스를 포함 하는 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -345,22 +345,22 @@ explicit numpunct(size_t _Refs = 0);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Refs*<br/>
+*참조 (_s)* \
 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
 ### <a name="remarks"></a>설명
 
-에 대 한 가능한 값을 *_Refs* 매개 변수 및 중요성은:
+*_Refs* 매개 변수에 사용할 수 있는 값은 다음과 같습니다.
 
-- 0: 개체의 수명은 포함 하는 로캘에 의해 관리 됩니다.
+- 0: 개체의 수명은이를 포함 하는 로캘로 관리 됩니다.
 
 - 1: 개체의 수명은 수동으로 관리 해야 합니다.
 
-- \> 1: 이러한 값이 정의 되지 않습니다.
+- \> 1: 이러한 값은 정의 되지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
-생성자를 통해 해당 기준 개체를 초기화 **locale::**[패싯](../standard-library/locale-class.md#facet_class)(`_Refs`).
+생성자는 **locale::** [facet](../standard-library/locale-class.md#facet_class)(`_Refs`)를 사용 하 여 해당 기본 개체를 초기화 합니다.
 
 ## <a name="string_type"></a>  numpunct::string_type
 
@@ -468,6 +468,6 @@ French_France.1252 falsename false
 
 ## <a name="see-also"></a>참고자료
 
-[\<locale>](../standard-library/locale.md)<br/>
-[facet 클래스](../standard-library/locale-class.md#facet_class)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[facet 클래스](../standard-library/locale-class.md#facet_class)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

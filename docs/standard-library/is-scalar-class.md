@@ -7,12 +7,12 @@ helpviewer_keywords:
 - is_scalar class
 - is_scalar
 ms.assetid: a0cdfc9a-f27e-4808-890f-6ed7942db60c
-ms.openlocfilehash: 2b981e009b895d55c251bc55a654739fe1eb5b95
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d562ba4beb037d547846f57e7b40eaceb409a358
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413543"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68449803"
 ---
 # <a name="isscalar-class"></a>is_scalar 클래스
 
@@ -27,12 +27,12 @@ struct is_scalar;
 
 ### <a name="parameters"></a>매개 변수
 
-*Ty*<br/>
+*Ty*\
 형식이 쿼리입니다.
 
 ## <a name="remarks"></a>설명
 
-형식 조건자의 인스턴스 형태인 경우 true 형식을 *Ty* 정수 계열 형식 부동 소수점 형식, 열거형 형식, 포인터 형식, 또는 포인터 멤버 형식으로 또는 `cv-qualified` 형태의 그 중 하나, 그렇지 않으면 false입니다.
+형식 조건자의 인스턴스는 *Ty* 형식이 정수 계열 형식, 부동 소수점 형식, 열거형 형식, 포인터 형식 또는 멤버 형식에 대 한 포인터 이거나 `cv-qualified` 이 형식 중 하나의 폼인 경우 true이 고 그렇지 않은 경우 false입니다.
 
 ## <a name="example"></a>예제
 
@@ -77,5 +77,5 @@ is_scalar<float> == true
 
 ## <a name="see-also"></a>참고자료
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_compound 클래스](../standard-library/is-compound-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_compound 클래스](../standard-library/is-compound-class.md)

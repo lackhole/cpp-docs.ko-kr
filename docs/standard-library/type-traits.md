@@ -7,16 +7,16 @@ helpviewer_keywords:
 - typetrait header
 - type_traits
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-ms.openlocfilehash: c83949a2c74447735f6863c5f1af68b4dfe2ee4e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 703038ed435de36d60fcf97aa5100197602e7130
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243519"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68455043"
 ---
 # <a name="lttypetraitsgt"></a>&lt;type_traits&gt;
 
-해당 형식 인수의 속성에 대 한 정보를 제공 하거나 변환 된 형식을 생성 하는 컴파일 시간 상수에 대 한 템플릿을 정의 합니다.
+형식 인수의 속성에 대 한 정보를 제공 하거나 변환 된 형식을 생성 하는 컴파일 시간 상수의 템플릿을 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,22 +26,22 @@ ms.locfileid: "68243519"
 
 ## <a name="remarks"></a>설명
 
-클래스 및 템플릿은 \<type_traits > 형식 유추, 분류 및 컴파일 타임에 변환을 지 원하는 데 사용 됩니다. 또한 형식 관련 오류를 검색 하 고 제네릭 코드 최적화 하는 데 사용 됩니다. 형식의 속성을 설명 하는 단항 형식 특성, 형식 간의 관계를 설명 하는 이진 형식 특성 및 변환 특성 형식의 속성을 수정 합니다.
+Type_traits >의 \<클래스 및 템플릿은 컴파일 시간에 형식 유추, 분류 및 변환을 지 원하는 데 사용 됩니다. 또한 형식 관련 오류를 감지 하 고 일반 코드를 최적화 하는 데 사용 됩니다. 단항 형식 특성은 형식의 속성을 설명 하 고, 이진 형식 특성은 형식 간의 관계를 설명 하며, 변환 특성은 형식의 속성을 수정 합니다.
 
-도우미 클래스 `integral_constant` 및 해당 템플릿 특수화 `true_type` 고 `false_type` 형식 조건자의 기본 클래스를 구성 합니다. *형식 조건자*는 형식 인수를 하나 이상 사용하는 템플릿입니다. 형식 조건자 *마찬가지*를 직접 또는 간접적으로 파생 공개적으로 됩니다에서 [true_type](../standard-library/type-traits-typedefs.md#true_type)합니다. 형식 조건자 *false*를 직접 또는 간접적으로 파생 공개적으로 됩니다에서 [false_type](../standard-library/type-traits-typedefs.md#false_type)합니다.
+도우미 클래스 `integral_constant` 와 해당 템플릿 특수화 `true_type` 및 `false_type` 형식 조건자의 기본 클래스를 구성 합니다. *형식 조건자*는 형식 인수를 하나 이상 사용하는 템플릿입니다. 형식 조건자가 *true 이면* [true_type](../standard-library/type-traits-typedefs.md#true_type)에서 직접 또는 간접적으로 공개적으로 파생 됩니다. 형식 조건자가 *false*이면 [false_type](../standard-library/type-traits-typedefs.md#false_type)에서 직접 또는 간접적으로 공개적으로 파생 됩니다.
 
 *형식 한정자* 또는 *변환 특성*은 템플릿 인수를 하나 이상 사용하며 수정된 형식과 동일한 의미인 단일 구성원(`type`)를 포함하는 템플릿입니다.
 
 ### <a name="alias-templates"></a>별칭 템플릿
 
-Type 특성 식 단순화 하기 위해 [별칭 템플릿](../cpp/aliases-and-typedefs-cpp.md) 에 대 한 `typename some_trait<T>::type` 제공 됩니다. 여기서 *some_trait* 는 템플릿 클래스 이름입니다. 예를 들어 [add_const](../standard-library/add-const-class.md)에는 다음과 같이 정의된 `add_const_t` 형식에 대한 별칭 템플릿이 있습니다.
+형식 특성 식을 단순화 하기 위해에 대 한 `typename some_trait<T>::type` [별칭 템플릿이](../cpp/aliases-and-typedefs-cpp.md) 제공 됩니다. 여기서 *some_trait* 는 템플릿 클래스 이름입니다. 예를 들어 [add_const](../standard-library/add-const-class.md)에는 다음과 같이 정의된 `add_const_t` 형식에 대한 별칭 템플릿이 있습니다.
 
 ```cpp
 template <class T>
 using add_const_t = typename add_const<T>::type;
 ```
 
-제공 된 별칭에 대 한 가지는 `type` 멤버:
+다음은 `type` 멤버에 대해 제공 되는 별칭입니다.
 
 ||||
 |-|-|-|
@@ -68,7 +68,7 @@ using add_const_t = typename add_const<T>::type;
 
 |||
 |-|-|
-|[is_void](../standard-library/is-void-class.md)|형식 인지 테스트 **void**합니다.|
+|[is_void](../standard-library/is-void-class.md)|형식이 **void**인지 테스트 합니다.|
 |[is_null_pointer](../standard-library/is-null-pointer-class.md)|형식이 `std::nullptr_t`인지 테스트합니다.|
 |[is_integral](../standard-library/is-integral-class.md)|형식이 정수인지 테스트합니다.|
 |[is_floating_point](../standard-library/is-floating-point-class.md)|형식이 부동 소수점인지 테스트합니다.|
@@ -89,7 +89,7 @@ using add_const_t = typename add_const<T>::type;
 |-|-|
 |[is_reference](../standard-library/is-reference-class.md)|형식이 참조인지 테스트합니다.|
 |[is_arithmetic](../standard-library/is-arithmetic-class.md)|형식이 산술형인지 테스트합니다.|
-|[is_fundamental](../standard-library/is-fundamental-class.md)|형식 인지 테스트 **void** 또는 산술 형입니다.|
+|[is_fundamental](../standard-library/is-fundamental-class.md)|형식이 **void** 또는 산술 형식 인지 테스트 합니다.|
 |[is_object](../standard-library/is-object-class.md)|형식이 개체 형식인지 테스트합니다.|
 |[is_scalar](../standard-library/is-scalar-class.md)|형식이 스칼라 형식인지 테스트합니다.|
 |[is_compound](../standard-library/is-compound-class.md)|형식이 스칼라가 아닌지 테스트합니다.|
@@ -99,8 +99,8 @@ using add_const_t = typename add_const<T>::type;
 
 |||
 |-|-|
-|[is_const](../standard-library/is-const-class.md)|형식 인지 테스트 **const**합니다.|
-|[is_volatile](../standard-library/is-volatile-class.md)|형식 인지 테스트 **volatile**합니다.|
+|[is_const](../standard-library/is-const-class.md)|형식이 **const**인지 테스트 합니다.|
+|[is_volatile](../standard-library/is-volatile-class.md)|형식이 **휘발성**인지 테스트 합니다.|
 |[is_trivial](../standard-library/is-trivial-class.md)|형식이 trivial인지 테스트합니다.|
 |[is_trivially_copyable](../standard-library/is-trivially-copyable-class.md)|형식을 일반적으로 복사할 수 있는지 테스트합니다.|
 |[is_standard_layout](../standard-library/is-standard-layout-class.md)|형식이 표준 레이아웃 형식인지 테스트합니다.|
@@ -143,10 +143,10 @@ using add_const_t = typename add_const<T>::type;
 |[is_nothrow_destructible](../standard-library/is-nothrow-destructible-class.md)|형식이 소멸 가능하며 소멸자가 throw되지 않는 것으로 확인되는지 테스트합니다.|
 |`has_virtual_destructor`|형식에 가상 소멸자가 있는지 테스트합니다.|
 |`has_unique_object_representations`||
-| [is_invocable](is-invocable-classes.md) | 호출 가능 형식의 지정 된 인수 형식을 사용 하 여 호출할 수 있는지 테스트 합니다.<br/> C + + 17에 추가 합니다. |
-| [is_invocable_r](is-invocable-classes.md) | 지정된 된 형식으로 변환 될 지정 된 인수 형식 및 결과 사용 하 여 호출 가능 형식의 수 호출 여부를 테스트 합니다.<br/> C + + 17에 추가 합니다. |
-| [is_nothrow_invocable](is-invocable-classes.md) | 형식 및 예외를 throw 되지 않는 것 호출 가능 형식의 지정 된 인수를 사용 하 여 호출할 수 있는지 여부를 테스트 합니다.<br/> C + + 17에 추가 합니다. |
-| [is_nothrow_invocable_r](is-invocable-classes.md) | 테스트 형식 및 예외 및 결과 throw 하지 않는 것 호출 가능 형식의 지정 된 인수를 사용 하 여 호출할 수 있는지 여부 지정된 된 형식으로 변환할 수 있는 경우<br/> C + + 17에 추가 합니다. |
+| [is_invocable](is-invocable-classes.md) | 지정 된 인수 형식을 사용 하 여 호출 가능 형식이 호출 될 수 있는지 여부를 테스트 합니다.<br/> C + + 17에 추가 되었습니다. |
+| [is_invocable_r](is-invocable-classes.md) | 지정 된 인수 형식을 사용 하 여 호출 가능 형식이 호출 될 수 있는지 여부를 테스트 하 고 결과를 지정 된 형식으로 변환할 수 있는지 여부를 테스트 합니다.<br/> C + + 17에 추가 되었습니다. |
+| [is_nothrow_invocable](is-invocable-classes.md) | 지정 된 인수 형식을 사용 하 여 호출 가능 형식이 호출 될 수 있는지 여부를 테스트 하 고 예외를 throw 하지 않도록 합니다.<br/> C + + 17에 추가 되었습니다. |
+| [is_nothrow_invocable_r](is-invocable-classes.md) | 지정 된 인수 형식을 사용 하 여 호출 가능 형식이 호출 될 수 있는지 여부를 테스트 하 고, 예외를 throw 하지 않고 결과를 지정 된 형식으로 변환할 수 있는지 여부를 테스트 합니다.<br/> C + + 17에 추가 되었습니다. |
 
 형식 속성 쿼리
 
@@ -168,9 +168,9 @@ const-volatile 수정
 
 |||
 |-|-|
-|[add_const](../standard-library/add-const-class.md)|생성 된 **const** 형식에서 형식입니다.|
-|[add_volatile](../standard-library/add-volatile-class.md)|생성 된 **volatile** 형식에서 형식입니다.|
-|[add_cv](../standard-library/add-cv-class.md)|생성 된 **const volatile** 형식에서 형식입니다.|
+|[add_const](../standard-library/add-const-class.md)|형식에서 **const** 형식을 생성 합니다.|
+|[add_volatile](../standard-library/add-volatile-class.md)|형식에서 **volatile** 형식을 생성 합니다.|
+|[add_cv](../standard-library/add-cv-class.md)|형식에서 **const volatile** 형식을 생성 합니다.|
 |[remove_const](../standard-library/remove-const-class.md)|형식에서 비const 형식을 생성합니다.|
 |[remove_volatile](../standard-library/remove-volatile-class.md)|형식에서 비volatile 형식을 생성합니다.|
 |[remove_cv](../standard-library/remove-cv-class.md)|형식에서 비const/비volatile 형식을 생성합니다.|
@@ -214,18 +214,18 @@ const-volatile 수정
 |[conditional](../standard-library/conditional-class.md)|조건이 true이면 지정된 첫 번째 형식을 생성하고 그렇지 않으면 지정된 두 번째 형식을 생성합니다.|
 |[decay](../standard-library/decay-class.md)|값으로 전달된 형식을 생성합니다. 비참조, 비상수, 비휘발성 형식 또는 형식에 대한 포인터를 만듭니다.|
 |[enable_if](../standard-library/enable-if-class.md)|조건이 true이면 지정된 형식을 생성하고 그렇지 않으면 형식을 생성하지 않습니다.|
-|[invoke_result](invoke-result-class.md)|지정된 인수 유형을 사용하는 호출 가능 형식의 반환 형식을 결정합니다. <br/>C + + 17에 추가 합니다. |
-|[result_of](../standard-library/result-of-class.md)|지정된 인수 유형을 사용하는 호출 가능 형식의 반환 형식을 결정합니다. <br/>C++14, c++17에서 사용 되지 않는 추가 합니다. |
+|[invoke_result](invoke-result-class.md)|지정된 인수 유형을 사용하는 호출 가능 형식의 반환 형식을 결정합니다. <br/>C + + 17에 추가 되었습니다. |
+|[result_of](../standard-library/result-of-class.md)|지정된 인수 유형을 사용하는 호출 가능 형식의 반환 형식을 결정합니다. <br/>C + + 14에서 추가 되었고, c + + 17에서 사용 되지 않습니다. |
 |[underlying_type](../standard-library/underlying-type-class.md)|열거형 형식에 대한 내부 정수 계열 형식을 생성합니다.|
 
 논리 연산자 특성
 
 |||
 |-|-|
-|[함께](../standard-library/conjunction-class.md)||
+|[관련](../standard-library/conjunction-class.md)||
 |[분리](../standard-library/disjunction-class.md)||
-|[부정](../standard-library/negation-class.md)||
+|[음의](../standard-library/negation-class.md)||
 
 ## <a name="see-also"></a>참고자료
 
-[\<functional>](../standard-library/functional.md)<br/>
+[\<functional>](../standard-library/functional.md)

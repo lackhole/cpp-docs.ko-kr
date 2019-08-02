@@ -10,12 +10,12 @@ helpviewer_keywords:
 - std::insert_iterator [C++], container_type
 - std::insert_iterator [C++], reference
 ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221
-ms.openlocfilehash: fb18c67b6e7949486c33e95c7daf6bc6868d0baa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 15041e21b53c29aedda831fd73b37a65e57a3680
+ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404892"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68447657"
 ---
 # <a name="insertiterator-class"></a>insert_iterator 클래스
 
@@ -30,16 +30,16 @@ class insert_iterator;
 
 ### <a name="parameters"></a>매개 변수
 
-*컨테이너*<br/>
+*컨테이너*\
 `insert_iterator`가 요소를 삽입할 컨테이너의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
-형식의 컨테이너 `Container` 가변 크기의 컨테이너에 대 한 요구 사항을 충족 하며 형식의 매개 변수가 있는 두 개의 인수 삽입 멤버 함수를 있어야 `Container::iterator` 하 고 `Container::value_type` 형식을 반환 하 고 `Container::iterator`입니다. C++ 표준 라이브러리 시퀀스 및 정렬된 연관 컨테이너는 이러한 요구 사항을 준수하며 `insert_iterator`를 사용할 수 있도록 조정되었습니다. 연관 컨테이너의 경우 위치 인수는 힌트로 처리되며, 힌트가 얼마나 양호한가에 따라 성능이 향상되거나 저하될 수 있습니다. `insert_iterator`는 항상 컨테이너를 사용하여 초기화해야 합니다.
+형식의 `Container` 컨테이너는 가변 크기의 컨테이너에 대 한 요구 사항을 충족 해야 하며, 매개 변수가 형식이 `Container::iterator` 고 `Container::value_type` 가 형식을 `Container::iterator`반환 하는 두 개의 인수 삽입 멤버 함수가 있어야 합니다. C++ 표준 라이브러리 시퀀스 및 정렬된 연관 컨테이너는 이러한 요구 사항을 준수하며 `insert_iterator`를 사용할 수 있도록 조정되었습니다. 연관 컨테이너의 경우 위치 인수는 힌트로 처리되며, 힌트가 얼마나 양호한가에 따라 성능이 향상되거나 저하될 수 있습니다. `insert_iterator`는 항상 컨테이너를 사용하여 초기화해야 합니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[insert_iterator](#insert_iterator)|컨테이너의 지정된 위치에 요소를 삽입하는 `insert_iterator`를 만듭니다.|
 
@@ -116,10 +116,10 @@ insert_iterator(Container& _Cont, typename Container::iterator _It);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Cont*<br/>
+*_ 계속*\
 `insert_iterator`에서 요소를 삽입할 대상 컨테이너입니다.
 
-*_It*<br/>
+*_It*\
 삽입할 위치입니다.
 
 ### <a name="remarks"></a>설명
@@ -186,7 +186,7 @@ insert_iterator<Container>& operator*();
 
 ### <a name="remarks"></a>설명
 
-출력 반복기 식 **\*Iter** = **value**를 구현하는 데 사용됩니다. 하는 경우 `Iter` 가 다음 시퀀스에서 요소를 해결 하는 반복기  **\*Iter** = **값** 값을 사용 하 여 해당 요소를 대체 하 고 총 변경 되지 않습니다 시퀀스의 요소입니다.
+출력 반복기 식 **\*Iter** = **value**를 구현하는 데 사용됩니다. 가 `Iter` 시퀀스의 요소에 주소를 지정한  **\*** 반복기 인 경우 Iter = **value** 는 해당 요소를 value로 바꾸고 시퀀스의 총 요소 수를 변경 하지 않습니다.
 
 ### <a name="example"></a>예제
 
@@ -310,7 +310,7 @@ insert_iterator<Container>& operator=(
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*짧은*\
 컨테이너에 할당할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -429,6 +429,6 @@ The first element in the list L is: 10.
 
 ## <a name="see-also"></a>참고자료
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)
