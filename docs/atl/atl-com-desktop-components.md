@@ -1,4 +1,4 @@
----
+﻿---
 title: ATL COM 데스크톱 구성 요소
 ms.date: 10/19/2018
 helpviewer_keywords:

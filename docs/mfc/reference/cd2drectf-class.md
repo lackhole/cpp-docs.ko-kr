@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CD2DRectF [MFC], CD2DRectF
 - CD2DRectF [MFC], IsNull
 ms.assetid: 87c12d87-9d18-4a19-ba14-0f51d6b6835a
-ms.openlocfilehash: 8e5c22fe15ce0d930f81dd16673927d5299bf630
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9b91cfaec3827a61152c4116b56e817a436606be
+ms.sourcegitcommit: 725e86dabe2901175ecc63261c3bf05802dddff4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396277"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68682398"
 ---
 # <a name="cd2drectf-class"></a>CD2DRectF 클래스
 
@@ -33,19 +33,19 @@ class CD2DRectF : public D2D1_RECT_F;
 
 |이름|설명|
 |----------|-----------------|
-|[CD2DRectF::CD2DRectF](#cd2drectf)|오버로드됨. 생성 된 `CD2DRectF` 에서 개체 `D2D1_RECT_F` 개체입니다.|
+|[CD2DRectF::CD2DRectF](#cd2drectf)|오버로드됨. 개체에서 `CD2DRectF` `D2D1_RECT_F` 개체를 생성 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CD2DRectF::IsNull](#isnull)|반환 된 **부울** 식에 유효 하지 않은 데이터 (NULL)이 포함 되어 있는지 여부를 나타내는 값입니다.|
+|[CD2DRectF::IsNull](#isnull)|식에 유효한 데이터 (NULL)가 포함 되어 있지 않은지 여부를 나타내는 **부울** 값을 반환 합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CD2DRectF::operator CRect](#operator_crect)|변환 `CD2DRectF` 에 `CRect` 개체입니다.|
+|[CD2DRectF:: operator CRect](#operator_crect)|개체로 변환 `CD2DRectF`합니다. `CRect`|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -55,16 +55,16 @@ class CD2DRectF : public D2D1_RECT_F;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxrendertarget.h
+**헤더:** afxrendertarget
 
 ##  <a name="cd2drectf"></a>  CD2DRectF::CD2DRectF
 
-CRect 개체에서 CD2DRectF 개체를 생성합니다.
+CRect 개체에서 CD2DRectF 개체를 생성 합니다.
 
 ```
 CD2DRectF(const CRect& rect);
 CD2DRectF(const D2D1_RECT_F& rect);
-  CD2DRectF(const D2D1_RECT_F* rect);
+CD2DRectF(const D2D1_RECT_F* rect);
 
 CD2DRectF(
     FLOAT fLeft = 0.,
@@ -79,7 +79,7 @@ CD2DRectF(
 소스 사각형
 
 *fLeft*<br/>
-원본 왼쪽된 좌표
+원본 왼쪽 좌표
 
 *fTop*<br/>
 원본 위쪽 좌표
@@ -88,11 +88,11 @@ CD2DRectF(
 원본 오른쪽 좌표
 
 *fBottom*<br/>
-원본 아래쪽 좌표입니다.
+원본 아래쪽 좌표
 
 ##  <a name="isnull"></a>  CD2DRectF::IsNull
 
-식에 유효 하지 않은 데이터 (Null)이 포함 되어 있는지 여부를 나타내는 부울 값을 반환 합니다.
+식에 유효한 데이터 (Null)가 포함 되어 있지 않은지 여부를 나타내는 부울 값을 반환 합니다.
 
 ```
 BOOL IsNull() const;
@@ -100,11 +100,11 @@ BOOL IsNull() const;
 
 ### <a name="return-value"></a>반환 값
 
-사각형의 위쪽, 왼쪽, 아래쪽 및 오른쪽 값을 0으로 모두 같을 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
+사각형의 위쪽, 왼쪽, 아래쪽 및 오른쪽 값이 모두 0 이면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ##  <a name="operator_crect"></a>  CD2DRectF::operator CRect
 
-CD2DRectF CRect 개체로 변환합니다.
+CD2DRectF을 CRect 개체로 변환 합니다.
 
 ```
 operator CRect();
