@@ -1,23 +1,23 @@
 ---
-title: 컴파일러 버전별 컴파일러 경고
+title: 컴파일러 버전 별 컴파일러 경고
 ms.date: 04/22/2019
 helpviewer_keywords:
 - warnings, by compiler version
 - cl.exe compiler, setting warning options
-ms.openlocfilehash: e417de57292e4b21d81e8d6643ba77d8b169af07
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 07c2e8e9ff061e20f9a3bceaa3d12d051e975e1e
+ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448182"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821082"
 ---
-# <a name="compiler-warnings-by-compiler-version"></a>컴파일러 버전별 컴파일러 경고
+# <a name="compiler-warnings-by-compiler-version"></a>컴파일러 버전 별 컴파일러 경고
 
-컴파일러를 사용 하 여 지정 된 버전 이후 도입 된 경고 표시 하지 않을 수는 [/Wv](../../build/reference/compiler-option-warning-level.md) 컴파일러 옵션입니다. 이 옵션은 새 도구 집합 버전을 소개 하 고 새 경고를 일시적으로 표시 하지 않을 때 빌드 프로세스를 관리 하는 데 유용 합니다. 이 옵션은 경고를 하지 새 오류 메시지에만 표시 하지 않습니다. 모든 새 경고를 표시 하지 영구적으로! 항상 가장 일반적인 경고 수준에서 컴파일하는 것이 좋습니다 `/W4`, 및 제거는 `/Wv` 실용적인 되 자 마자 빌드에서 옵션입니다.
+컴파일러는 [/Wv](../../build/reference/compiler-option-warning-level.md) 컴파일러 옵션을 사용 하 여 지정한 버전 이후에 도입 된 경고를 표시 하지 않을 수 있습니다. 이 옵션은 새 도구 집합 버전을 도입할 때 빌드 프로세스를 관리 하 고 일시적으로 새 경고를 표시 하지 않으려는 경우에 유용 합니다. 이 옵션은 경고를 표시 하지 않고 새 오류 메시지를 표시 하지 않습니다. 모든 새 경고를 영구적으로 표시 하지 않습니다. 항상 가장 높은 일반 경고 수준 `/W4`에서 컴파일하는 것이 좋으며, 실제로는 빌드에서 옵션을 제거 하는 `/Wv` 것이 좋습니다.
 
-이러한 버전의 컴파일러에는 새로운 경고가 추가 되었습니다.
+이러한 버전의 컴파일러는 새로운 경고를 도입 했습니다.
 
-| 제품 | 컴파일러 버전 번호 |
+| Product | 컴파일러 버전 번호 |
 |-|-|
 | Visual Studio 2002 | 13.00.9466 |
 | Visual Studio 2003 | 13.10.3077 |
@@ -39,15 +39,15 @@ ms.locfileid: "65448182"
 | Visual Studio 2017 버전 15.9 | 19.16.26926.0 |
 | Visual Studio 2019 RTM | 19.20.27004.0 |
 
-만 주 번호, 주 및 부 번호 또는 주, 부를 지정 하 고 빌드 번호를 수 여 `/Wv` 옵션입니다. 컴파일러는 지정된 된 수로 시작 하는 버전과 일치 하는 모든 경고를 보고 하 고 지정된 된 숫자 보다 큰 버전에 대 한 모든 경고를 표시 하지 않습니다. 예를 들어 `/Wv:17` 이전의 모든 버전의 Visual Studio 2012에서 도입 된 경고를 보고 하 고 이상 Visual Studio 2013 (버전 18)에서 모든 컴파일러에서 도입 된 경고를 표시 하지 않습니다. Visual Studio 2015에서 도입 된 경고를 표시 하지 않으려면 2를 업데이트 하 고 나중에 사용할 수 있습니다 `/Wv:19.00.23506`합니다. 사용 하 여 `/Wv:19.11` Visual Studio 2017 버전 15.5 이전 Visual Studio의 모든 버전에 도입 된 경고를 보고 하지만 Visual Studio 2017 버전 15.5 이상에 도입 된 경고 표시 안 함.
+주 번호, 주 번호, 부 번호, 주 번호, 부 번호, 빌드 번호를 `/Wv` 옵션으로 지정할 수 있습니다. 컴파일러는 지정 된 수로 시작 하는 버전과 일치 하는 모든 경고를 보고 하 고 지정 된 수보다 많은 버전에 대 한 모든 경고를 표시 하지 않습니다. 예를 들어 `/Wv:17` Visual Studio 2012의 모든 버전에서 발생 하는 경고를 보고 하 고 Visual Studio 2013 (버전 18) 이상의 컴파일러에서 발생 하는 경고를 표시 하지 않습니다. Visual Studio 2015 업데이트 2 이상에서 도입 된 경고를 표시 하지 않으려면를 사용할 `/Wv:19.00.23506`수 있습니다. Visual `/Wv:19.11` studio 2017 버전 15.5 이전 버전의 visual studio에서 도입 된 경고를 보고 하는 데 사용 하 고 visual studio 2017 버전 15.5 이상에서 도입 된 경고는 표시 하지 않습니다.
 
-다음 섹션에서는 시각적 개체의 각 버전에서 도입 된 경고 목록 C++ 를 사용 하 여 표시 하지 않을 수 있는 합니다 `/Wv` 컴파일러 옵션입니다. `/Wv` 옵션은 지정 된 버전의 컴파일러는 나열 되지 않은 경고 표시 하지 않을 수 있습니다.
+다음 섹션에서는 `/Wv` 컴파일러 옵션을 사용 하 여 표시 하지 않을 C++ 수 있는 각 버전의 시각적 개체에서 발생 하는 경고를 나열 합니다. 옵션 `/Wv` 은 지정 된 버전의 컴파일러를 predate 하는 나열 되지 않은 경고를 표시 하지 않습니다.
 
 ::: moniker range=">= vs-2019"
 
-## <a name="warnings-introduced-in-visual-studio-2019-rtw-compiler-version-1920270040"></a>Visual Studio 2019 RTW (컴파일러 버전 19.20.27004.0)에서 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2019-rtw-compiler-version-1920270040"></a>Visual Studio 2019 RTW에 도입 된 경고 (컴파일러 버전 19.20.27004.0)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:19.15`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:19.15`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -57,9 +57,9 @@ ms.locfileid: "65448182"
 ::: moniker range=">= vs-2017"
 
 
-## <a name="warnings-introduced-in-visual-studio-2017-version-158-compiler-version-1915267260"></a>Visual Studio 2017 버전 15.8 (컴파일러 버전 19.15.26726.0)에 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2017-version-158-compiler-version-1915267260"></a>Visual Studio 2017 버전 15.8에 도입 된 경고 (컴파일러 버전 19.15.26726.0)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:19.14`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:19.14`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -83,26 +83,26 @@ ms.locfileid: "65448182"
 | C5106 | `macro redefined with different parameter names` |
 | C5107 | `missing terminating 'char' character` |
 
-## <a name="warnings-introduced-in-visual-studio-2017-version-157-compiler-version-1914264280"></a>Visual Studio 2017 버전 15.7 (컴파일러 버전 19.14.26428.0)에서 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2017-version-157-compiler-version-1914264280"></a>Visual Studio 2017 버전 15.7에 도입 된 경고 (컴파일러 버전 19.14.26428.0)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:19.13`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:19.13`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
 | C4642 | `'issue': could not import the constraints for generic parameter 'parameter'` |
 | C5045 | `Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified` |
 
-## <a name="warnings-introduced-in-visual-studio-2017-version-156-compiler-version-1913261280"></a>Visual Studio 2017 버전 15.6 (컴파일러 버전 19.13.26128.0)에서 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2017-version-156-compiler-version-1913261280"></a>Visual Studio 2017 버전 15.6에 도입 된 경고 (컴파일러 버전 19.13.26128.0)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:19.12`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:19.12`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
 | C5044 | `An argument to command-line option option points to a path 'path' that does not exist` |
 
-## <a name="warnings-introduced-in-visual-studio-2017-version-155-compiler-version-1912258300"></a>Visual Studio 2017 버전 15.5 (컴파일러 버전 19.12.25830.0)에서 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2017-version-155-compiler-version-1912258300"></a>Visual Studio 2017 버전 15.5에 도입 된 경고 (컴파일러 버전 19.12.25830.0)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:19.11`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:19.11`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -114,9 +114,9 @@ ms.locfileid: "65448182"
 | C5042 | `'declaration': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier` |
 | C5043 | `'specification': exception specification does not match previous declaration` |
 
-## <a name="warnings-introduced-in-visual-studio-2017-version-153-compiler-version-1911255060"></a>Visual Studio 2017 버전 15.3 (컴파일러 버전 19.11.25506.0)에서 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2017-version-153-compiler-version-1911255060"></a>Visual Studio 2017 버전 15.3에 도입 된 경고 (컴파일러 버전 19.11.25506.0)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:19.10`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:19.10`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -135,9 +135,9 @@ ms.locfileid: "65448182"
 | C5037 | `'*member-function*': an out-of-line definition of a member of a class template cannot have default arguments` |
 | C5038 | `data member 'member1' will be initialized after data member 'member2'` |
 
-## <a name="warnings-introduced-in-visual-studio-2017-rtm-compiler-version-1910250170"></a>Visual Studio 2017 RTM (컴파일러 버전 19.10.25017.0)에서 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2017-rtm-compiler-version-1910250170"></a>Visual Studio 2017 RTM (컴파일러 버전 19.10.25017.0)에 도입 된 경고
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:19.00`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:19.00`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -148,9 +148,9 @@ ms.locfileid: "65448182"
 
 ::: moniker-end
 
-## <a name="warnings-introduced-in-visual-studio-2015-update-3-compiler-version-1900242151"></a>Visual Studio 2015 업데이트 3 (컴파일러 버전 19.00.24215.1)에 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2015-update-3-compiler-version-1900242151"></a>Visual Studio 2015 업데이트 3에 도입 된 경고 (컴파일러 버전 19.00.24215.1)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:19.00.23918`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:19.00.23918`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -159,9 +159,9 @@ ms.locfileid: "65448182"
 | C4598 | `'#include <header>': header number number in the source does not match source at that position` |
 | C4599 | `'argument': source argument number number does not match source` |
 
-## <a name="warnings-introduced-in-visual-studio-2015-update-2-compiler-version-1900239180"></a>Visual Studio 2015 업데이트 2 (컴파일러 버전 19.00.23918.0)에 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2015-update-2-compiler-version-1900239180"></a>Visual Studio 2015 업데이트 2에 도입 된 경고 (컴파일러 버전 19.00.23918.0)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:19.00.23506`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:19.00.23506`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -170,9 +170,9 @@ ms.locfileid: "65448182"
 | C4828 | `The file contains a character starting at offset 0xvalue that is illegal in the current source character set (codepage number).` |
 | C4868 | `compiler may not enforce left-to-right evaluation order in braced initializer list` |
 
-## <a name="warnings-introduced-in-visual-studio-2015-update-1-compiler-version-1900235060"></a>Visual Studio 2015 업데이트 1 (컴파일러 버전 19.00.23506.0)에 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2015-update-1-compiler-version-1900235060"></a>Visual Studio 2015 업데이트 1에 도입 된 경고 (컴파일러 버전 19.00.23506.0)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:19.00.23026`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:19.00.23026`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -181,9 +181,9 @@ ms.locfileid: "65448182"
 | C5031 | `#pragma warning(pop): likely mismatch, popping warning state pushed in different file` |
 | C5032 | `detected #pragma warning(push) with no corresponding #pragma warning(pop)` |
 
-## <a name="warnings-introduced-in-visual-studio-2015-rtm-compiler-version-1900230260"></a>Visual Studio 2015 RTM (컴파일러 버전 19.00.23026.0)에서 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2015-rtm-compiler-version-1900230260"></a>Visual Studio 2015 RTM (컴파일러 버전 19.00.23026.0)에 도입 된 경고
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:18`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:18`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -240,9 +240,9 @@ ms.locfileid: "65448182"
 | C5029 | `nonstandard extension used: alignment attributes in C++ apply to variables, data members and tag types only` |
 | C5030 | `attribute 'attribute' is not recognized` |
 
-## <a name="warnings-introduced-in-visual-studio-2013-compiler-version-1800210051"></a>Visual Studio 2013 (컴파일러 버전 18.00.21005.1)에서 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2013-compiler-version-1800210051"></a>Visual Studio 2013에 도입 된 경고 (컴파일러 버전 18.00.21005.1)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:17`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:17`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -269,9 +269,9 @@ ms.locfileid: "65448182"
 | C4991 | `Warbird: function 'declaration' marked as __forceinline not inlined because protection level of inlinee is greater than the parent` |
 | C4992 | `Warbird: function 'declaration' marked as __forceinline not inlined because it contains inline assembly which cannot be protected` |
 
-## <a name="warnings-introduced-in-visual-studio-2012-compiler-version-1700511061"></a>Visual Studio 2012 (컴파일러 버전 17.00.51106.1)에서 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2012-compiler-version-1700511061"></a>Visual Studio 2012에 도입 된 경고 (컴파일러 버전 번호가 17.00.51106.1)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:16`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:16`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -304,7 +304,7 @@ ms.locfileid: "65448182"
 | C4703 | `potentially uninitialized local pointer variable 'name' used` |
 | C4728 | `/Yl- option ignored because PCH reference is required` |
 | C4745 | `volatile access of 'name' cannot be honored due to its size` |
-| C4746|'name'의 volatile 액세스는 하려면 /volatile: < iso | ms > 설정 합니다. __iso_volatile_load/store 내장 함수를 사용 하는 것이 좋습니다. |
+| C4746|' name '의 volatile 액세스는/volatile: < iso의 영향을 받습니다. | ms > 설정 __iso_volatile_load/store 내장 함수 사용 고려 |
 | C4872 | `floating point division by zero detected when compiling the call graph for the concurrency::parallel_for_each at: 'description'` |
 | C4880 | `casting from 'type' to 'type': casting away constness from a pointer or reference may result in undefined behavior in an amp restricted function` |
 | C4881 | `the constructor and/or the destructor will not be invoked for tile_static variable 'type'` |
@@ -312,9 +312,9 @@ ms.locfileid: "65448182"
 | C4988 | `'type': variable declared outside class/function scope` |
 | C4989 | `'description': type has conflicting definitions.` |
 
-## <a name="warnings-introduced-in-visual-studio-2010-compiler-version-16004021901"></a>Visual Studio 2010 (컴파일러 버전 16.00.40219.01)에서 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2010-compiler-version-16004021901"></a>Visual Studio 2010에 도입 된 경고 (컴파일러 버전 16.00.40219.01)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:15`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:15`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -328,9 +328,9 @@ ms.locfileid: "65448182"
 | C4986 | `'declaration': exception specification does not match previous declaration` |
 | C4987 | `nonstandard extension used: 'throw (...)'` |
 
-## <a name="warnings-introduced-in-visual-studio-2008-compiler-version-15002102208"></a>Visual Studio 2008 (컴파일러 버전 15.00.21022.08)에 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2008-compiler-version-15002102208"></a>Visual Studio 2008에 도입 된 경고 (컴파일러 버전 15.00.21022.08)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:14`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:14`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -343,9 +343,9 @@ ms.locfileid: "65448182"
 | C4910 | `'type': '__declspec(dllexport)' and 'extern' are incompatible on an explicit instantiation` |
 | C4985 | `'declaration': attributes not present on previous declaration.` |
 
-## <a name="warnings-introduced-in-visual-studio-2005-compiler-version-140050727762"></a>Visual Studio 2005 (컴파일러 버전 14.00.50727.762)에서 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2005-compiler-version-140050727762"></a>Visual Studio 2005에 도입 된 경고 (컴파일러 버전 14.00.50727.762)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:13`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:13`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -486,9 +486,9 @@ ms.locfileid: "65448182"
 | C4971 | `Argument order: <target object>, <target function> for delegate constructor is deprecated, use <target function>, <target object>` |
 | C4972 | `Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable` |
 
-## <a name="warnings-introduced-in-visual-studio-2003-compiler-version-13103077"></a>Visual Studio 2003 (컴파일러 버전 13.10.3077)에 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2003-compiler-version-13103077"></a>Visual Studio 2003에 도입 된 경고 (컴파일러 버전 13.10.3077)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:13.00.9466`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:13.00.9466`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -522,9 +522,9 @@ ms.locfileid: "65448182"
 | C4953 | `Inlinee 'description' has been edited since profile data was collected, profile data not used` |
 | C4954 | `'description': not profiled (contains __int64 switch expression)` |
 
-## <a name="warnings-introduced-in-visual-studio-2002-compiler-version-13009466"></a>Visual Studio 2002 (컴파일러 버전 13.00.9466)에 도입 된 경고
+## <a name="warnings-introduced-in-visual-studio-2002-compiler-version-13009466"></a>Visual Studio 2002에 도입 된 경고 (컴파일러 버전 13.00.9466)
 
-이러한 경고 및 이후 버전에서 모든 경고는 컴파일러 옵션을 사용 하 여 억제 `/Wv:12`합니다.
+이러한 경고 및 이후 버전의 모든 경고는 컴파일러 옵션 `/Wv:12`을 사용 하 여 억제 됩니다.
 
 |||
 |-|-|
@@ -667,13 +667,13 @@ ms.locfileid: "65448182"
 | C4945 | `'name': cannot import symbol from 'source': as 'declaration' has already been imported from another assembly 'source'` |
 | C4946 | `reinterpret_cast used between related classes: 'declaration' and 'declaration'` |
 | C4995 | `'name': name was marked as #pragma deprecated` |
-| C4996 | `'issue': description` |
+| C4996 | `'deprecated declaration': deprecation message (or "was declared deprecated")` |
 | C4997 | `'type': coclass does not implement a COM interface or pseudo-interface` |
 | C4998 | `EXPECTATION FAILED: description(number)` |
 
 ## <a name="see-also"></a>참고자료
 
-[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
+[C/C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
 [컴파일러 경고 C4000-C5999](compiler-warnings-c4000-c5999.md) \
 [/Wv 컴파일러 옵션](../../build/reference/compiler-option-warning-level.md) \
 [기본적으로 해제 되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) \
