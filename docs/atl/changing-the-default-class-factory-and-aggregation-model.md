@@ -21,13 +21,13 @@ ms.locfileid: "62223159"
 ---
 # <a name="changing-the-default-class-factory-and-aggregation-model"></a>기본 클래스 팩터리 및 집계 모델 변경
 
-ATL 사용 [CComCoClass](../atl/reference/ccomcoclass-class.md) 개체에 대 한 기본 클래스 팩터리 및 집계 모델을 정의할 수 있습니다. `CComCoClass` 다음 두 매크로 지정합니다.
+ATL은 개체에 대한 기본 클래스 팩터리 및 집계 모델을 정의하기 위해 [CComCoClass](../atl/reference/ccomcoclass-class.md)를 사용합니다. `CComCoClass`는 다음 두 매크로를 지정합니다.
 
-- [DECLARE_CLASSFACTORY](reference/aggregation-and-class-factory-macros.md#declare_classfactory) 선언 되도록 클래스 팩터리 [CComClassFactory](../atl/reference/ccomclassfactory-class.md)합니다.
+- [DECLARE_CLASSFACTORY](reference/aggregation-and-class-factory-macros.md#declare_classfactory) 클래스 팩터리를 [CComClassFactory](../atl/reference/ccomclassfactory-class.md)가 되도록 선언합니다.
 
-- [DECLARE_AGGREGATABLE](reference/aggregation-and-class-factory-macros.md#declare_aggregatable) 개체를 집계할 수 있도록 선언 합니다.
+- [DECLARE_AGGREGATABLE](reference/aggregation-and-class-factory-macros.md#declare_aggregatable) 개체를 집계될 수 있도록 선언합니다.
 
-클래스 정의에서 다른 매크로 지정 하 여 이러한 기본값 중 하나를 재정의할 수 있습니다. 예를 사용 하려면 [CComClassFactory2](../atl/reference/ccomclassfactory2-class.md) 대신 `CComClassFactory`를 지정 합니다 [DECLARE_CLASSFACTORY2](reference/aggregation-and-class-factory-macros.md#declare_classfactory2) 매크로:
+클래스 정의에서 다른 매크로를 지정하여 이러한 기본값 중 하나를 재정의할 수 있습니다. 예를 들어 `CComClassFactory` 대신 [CComClassFactory2](../atl/reference/ccomclassfactory2-class.md)를 사용하려면 [DECLARE_CLASSFACTORY2](reference/aggregation-and-class-factory-macros.md#declare_classfactory2) 매크로를 지정합니다.
 
 [!code-cpp[NVC_ATL_COM#2](../atl/codesnippet/cpp/changing-the-default-class-factory-and-aggregation-model_1.h)]
 
