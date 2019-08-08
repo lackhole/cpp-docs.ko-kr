@@ -14,20 +14,20 @@ ms.locfileid: "62250760"
 ---
 # <a name="creating-an-aggregated-object"></a>집계 개체 만들기
 
-집계 대리자 `IUnknown` 외부 개체에 대 한 포인터를 제공 하는 호출 `IUnknown` 내부 개체입니다.
+집계는 `IUnknown` 호출을 위임하여 외부 개체의 `IUnknown`에 대한 포인터를 내부 개체에 제공합니다.
 
 ## <a name="to-create-an-aggregated-object"></a>집계 개체를 만들려면
 
-1. 추가 `IUnknown` 클래스에 대 한 포인터 개체를 생성자에 NULL로 초기화 합니다.
+1. 클래스 개체에 `IUnknown` 포인터를 추가하고 생성자에서 NULL로 초기화 합니다.
 
-1. 재정의 [FinalConstruct](../atl/reference/ccomobjectrootex-class.md#finalconstruct) 집계를 만드는 합니다.
+1. 재정의 [FinalConstruct](../atl/reference/ccomobjectrootex-class.md#finalconstruct)를 재정의하여 집계를 만듭니다.
 
-1. 사용 하 여는 `IUnknown` 포인터에 대 한 두 번째 매개 변수로 1 단계에서에서 정의 된 [COM_INTERFACE_ENTRY_AGGREGATE](reference/com-interface-entry-macros.md#com_interface_entry_aggregate) 매크로입니다.
+1. 1단계에서 정의된 `IUnknown` 포인터를 [COM_INTERFACE_ENTRY_AGGREGATE](reference/com-interface-entry-macros.md#com_interface_entry_aggregate) 매크로의 두번째 매개변수로 사용합니다.
 
-1. 재정의 [FinalRelease](../atl/reference/ccomobjectrootex-class.md#finalrelease) 해제 하는 `IUnknown` 포인터입니다.
+1. [FinalRelease](../atl/reference/ccomobjectrootex-class.md#finalrelease)를 재정의하여 `IUnknown` 포인터를 해제합니다.
 
 > [!NOTE]
-> 사용 하 고 하는 동안 집계 된 개체의 인터페이스를 릴리스 하는 경우 `FinalConstruct`를 추가 해야 합니다 [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) 클래스 개체의 정의에 매크로입니다.
+> `FinalConstruct` 수행 중 집계된 개체의 인터페이스를 사용하고 해제하는 경우 클래스 개체의 정의에 [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) 매크로를 추가합니다.
 
 ## <a name="see-also"></a>참고자료
 
