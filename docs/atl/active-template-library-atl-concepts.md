@@ -15,7 +15,7 @@ ms.locfileid: "65836992"
 
 ATL(액티브 템플릿 라이브러리)은 작고 신속한 COM(구성 요소 개체 모델) 개체를 만들 수 있는 템플릿 기반 C++ 클래스의 세트입니다. 스톡 구현, 이중 인터페이스, 표준 COM 열거자 인터페이스, 연결점, 분할 인터페이스, ActiveX 컨트롤 등, 주요 COM 기능을 특별히 지원합니다.
 
-ATL 프로그래밍 작업이 많은 경우 단순한 COM 프로그래밍을 위해 설계된 COM 및 .NET 특성에 대해 자세히 알아볼 필요가 있습니다. 자세한 내용은 [특성 사용 프로그래밍](../windows/attributed-programming-concepts.md)을 참조하세요. (COM 및 .NET 특성을 C++ 표준의 \[\[attribute]] 기능과 혼동하면 안 됨)
+ATL 프로그래밍 작업이 많은 경우 단순한 COM 프로그래밍을 위해 설계된 COM 및 .NET의 특성을 자세히 알아볼 필요가 있습니다. 자세한 내용은 [특성 사용 프로그래밍](../windows/attributed-programming-concepts.md)을 참조하세요. (COM 및 .NET 특성을 C++ 표준의 \[\[attribute]] 기능과 혼동하면 안 됨)
 
 ## <a name="in-this-section"></a>섹션 내용
 
