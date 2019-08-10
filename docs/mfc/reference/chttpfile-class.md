@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequest
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-ms.openlocfilehash: a637ef8feb28396b1427341c8174e9a7adaa69a9
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: ff050a89a10c68c639c141891dd51b1b2d58e105
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503503"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915991"
 ---
 # <a name="chttpfile-class"></a>CHttpFile 클래스
 
@@ -53,25 +53,25 @@ class CHttpFile : public CInternetFile
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CHttpFile::AddRequestHeaders](#addrequestheaders)|HTTP 서버에 전송 된 요청에 헤더를 추가 합니다.|
-|[CHttpFile::EndRequest](#endrequest)|사용 하 여 HTTP 서버에 보내는 요청을 종료 합니다 [SendRequestEx](#sendrequestex) 멤버 함수입니다.|
-|[CHttpFile::GetFileURL](#getfileurl)|지정된 된 파일에 대 한 URL을 가져옵니다.|
-|[CHttpFile::GetObject](#getobject)|HTTP 서버에 요청에서 동사의 대상 개체를 가져옵니다.|
-|[CHttpFile::GetVerb](#getverb)|HTTP 서버에 요청에 사용 된 동사를 가져옵니다.|
-|[CHttpFile::QueryInfo](#queryinfo)|HTTP 서버에서 응답 또는 요청 헤더를 반환합니다.|
-|[CHttpFile::QueryInfoStatusCode](#queryinfostatuscode)|HTTP 요청을 사용 하 여 연결 된 상태 코드를 검색 하 고 제공 된 배치 `dwStatusCode` 매개 변수입니다.|
+|[CHttpFile::AddRequestHeaders](#addrequestheaders)|HTTP 서버로 전송 된 요청에 헤더를 추가 합니다.|
+|[CHttpFile::EndRequest](#endrequest)|[Sendrequestex](#sendrequestex) 멤버 함수를 사용 하 여 HTTP 서버로 전송 된 요청을 종료 합니다.|
+|[CHttpFile::GetFileURL](#getfileurl)|지정 된 파일의 URL을 가져옵니다.|
+|[CHttpFile::GetObject](#getobject)|HTTP 서버에 대 한 요청에 있는 동사의 대상 개체를 가져옵니다.|
+|[CHttpFile::GetVerb](#getverb)|HTTP 서버에 대 한 요청에 사용 된 동사를 가져옵니다.|
+|[CHttpFile::QueryInfo](#queryinfo)|HTTP 서버에서 응답 또는 요청 헤더를 반환 합니다.|
+|[CHttpFile::QueryInfoStatusCode](#queryinfostatuscode)|HTTP 요청과 연결 된 상태 코드를 검색 하 여 제공 `dwStatusCode` 된 매개 변수에 배치 합니다.|
 |[CHttpFile::SendRequest](#sendrequest)|HTTP 서버에 요청을 보냅니다.|
-|[CHttpFile::SendRequestEx](#sendrequestex)|사용 하 여 HTTP 서버에 요청을 보냅니다 합니다 [작성](../../mfc/reference/cinternetfile-class.md#write) 또는 [WriteString](../../mfc/reference/cinternetfile-class.md#writestring) 메서드의 `CInternetFile`합니다.|
+|[CHttpFile::SendRequestEx](#sendrequestex)|의`CInternetFile` [Write](../../mfc/reference/cinternetfile-class.md#write) 또는 [WRITESTRING](../../mfc/reference/cinternetfile-class.md#writestring) 메서드를 사용 하 여 HTTP 서버에 요청을 보냅니다.|
 
 ## <a name="remarks"></a>설명
 
-인스턴스의 경우 인터넷 세션 HTTP 서버에서 데이터를 읽고, 만들어야 `CHttpFile`합니다.
+인터넷 세션이 HTTP 서버에서 데이터를 읽는 경우의 `CHttpFile`인스턴스를 만들어야 합니다.
 
-하는 방법에 자세히 알아보려면 `CHttpFile` 문서를 참조 하는 다른 인터넷 MFC 클래스와 함께 작동 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
+에서 다른 MFC 인터넷 클래스로 `CHttpFile` 작업 하는 방법에 대 한 자세한 내용은 WinInet을 [사용한 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)문서를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -89,7 +89,7 @@ class CHttpFile : public CInternetFile
 
 ##  <a name="addrequestheaders"></a>  CHttpFile::AddRequestHeaders
 
-하나를 추가 하려면이 멤버 함수를 호출 하거나 HTTP 요청에 자세한 HTTP 요청 헤더를 처리 합니다.
+Http 요청 핸들에 하나 이상의 HTTP 요청 헤더를 추가 하려면이 멤버 함수를 호출 합니다.
 
 ```
 BOOL AddRequestHeaders(
@@ -105,39 +105,39 @@ BOOL AddRequestHeaders(
 ### <a name="parameters"></a>매개 변수
 
 *pstrHeaders*<br/>
-머리글 또는 요청에 추가할 헤더를 포함 하는 문자열에 대 한 포인터입니다. 각 헤더는 CR/LF 쌍으로 종결 되어야 합니다.
+요청에 추가할 머리글이 나 헤더를 포함 하는 문자열에 대 한 포인터입니다. 각 헤더는 CR/LF 쌍으로 종료 해야 합니다.
 
 *dwFlags*<br/>
-새 헤더의 의미 체계를 수정합니다. 다음 중 하나일 수 있습니다.
+새 헤더의 의미 체계를 수정 합니다. 다음 중 하나일 수 있습니다.
 
-- 후속 헤더에는 첫 번째 헤더가 추가 플래그를 사용 하 여 동일한 이름의 HTTP_ADDREQ_FLAG_COALESCE 병합 헤더입니다. 예를 들어, "동의: 텍스트 /\*" 뒤에 "동의: 오디오 /\*" 결과 단일 헤더에에서 "Accept: 텍스트 /\*오디오, /\*". 가 호출 응용 프로그램을 병합 하거나 별도 헤더를 사용 하 여 전송 된 요청에서 받은 데이터와 관련 하 여 응집력 구성표를 확인 합니다.
+- HTTP_ADDREQ_FLAG_COALESCE는 플래그를 사용 하 여 같은 이름의 헤더를 병합 하 고 후속 헤더에 첫 번째 헤더를 추가 합니다. 예를 들어 "accept: text/\*" 다음에 "accept: audio/\*"를 입력 하면 단일 헤더 "accept: text/\*, audio/\*"가 생성 됩니다. 결합 된 또는 별도의 헤더로 전송 된 요청에 의해 수신 된 데이터와 관련 하 여 결합 된 스키마를 확인 하는 것은 호출 응용 프로그램에 따라 다릅니다.
 
-- HTTP_ADDREQ_FLAG_REPLACE는 제거를 수행 하 고 현재 헤더의 이름을 바꾸려면 추가 합니다. 현재 헤더를 제거 하는 헤더 이름이 사용 됩니다 하 고 새 머리글을 추가 하려면 전체 값이 사용 됩니다. 헤더 값이 비어 있고 경우 헤더를 제거 합니다. 그렇지 않은 경우 비어 있는 경우 헤더 값을 대체 됩니다.
+- HTTP_ADDREQ_FLAG_REPLACE는 제거를 수행 하 고를 추가 하 여 현재 헤더를 바꿉니다. 헤더 이름은 현재 헤더를 제거 하는 데 사용 되 고 전체 값은 새 헤더를 추가 하는 데 사용 됩니다. 헤더 값이 비어 있고 헤더가 있으면 제거 됩니다. 비어 있지 않으면 헤더 값이 대체 됩니다.
 
-- 아직 없는 경우에 HTTP_ADDREQ_FLAG_ADD_IF_NEW 헤더를 추가 합니다. 있을 경우 오류가 반환 됩니다.
+- HTTP_ADDREQ_FLAG_ADD_IF_NEW는 헤더가 아직 없는 경우에만 해당 헤더를 추가 합니다. 하나가 있으면 오류가 반환 됩니다.
 
-- HTTP_ADDREQ_FLAG_ADD REPLACE를 사용 합니다. 존재 하지 않는 경우에 헤더를 추가 합니다.
+- REPLACE와 함께 사용 되는 HTTP_ADDREQ_FLAG_ADD입니다. 헤더가 없으면 헤더를 추가 합니다.
 
 *dwHeadersLen*<br/>
-문자에서 길이입니다 *pstrHeaders*합니다. -1l를 다음 이것이 *pstrHeaders* 0으로 끝나는 것으로 간주 됩니다 길이 계산 됩니다.
+*Pstrheaders*의 길이 (문자)입니다. -1L 이면 *Pstrheaders* 가 0으로 종료 된 것으로 간주 되 고 길이가 계산 됩니다.
 
 *str*<br/>
-에 대 한 참조를 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 요청 헤더를 추가할 헤더를 포함 하는 개체입니다.
+추가할 요청 헤더 또는 헤더를 포함 하는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출에 실패 하면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 를 호출 하 여 오류의 원인을 확인할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
-`AddRequestHeaders` HTTP 요청 처리를 추가, 자유 형식 헤더를 추가합니다. HTTP 서버에 전송 된 정확한 요청 세부적된으로 제어 해야 하는 복잡 한 클라이언트에서 사용할 것입니다.
+`AddRequestHeaders`HTTP 요청 핸들에 추가 자유 형식 헤더를 추가 합니다. HTTP 서버에 전송 되는 정확한 요청을 세부적으로 제어 해야 하는 정교한 클라이언트에서 사용 하기 위한 것입니다.
 
 > [!NOTE]
->  응용 프로그램에서 여러 헤더를 전달할 수 있습니다 *pstrHeaders* 하거나 *str* 에 대 한는 `AddRequestHeaders` HTTP_ADDREQ_FLAG_ADD 또는 HTTP_ADDREQ_FLAG_ADD_IF_NEW를 사용 하 여 호출 합니다. 응용 프로그램 제거 또는 HTTP_ADDREQ_FLAG_REMOVE 또는 HTTP_ADDREQ_FLAG_REPLACE를 사용 하 여 헤더를 교체 하려고, 하나의 헤더만 지정할 수 있습니다 *lpszHeaders*합니다.
+>  응용 프로그램은 HTTP_ADDREQ_FLAG_ADD 또는 HTTP_ADDREQ_FLAG_ADD_IF_NEW를 사용 하 여 `AddRequestHeaders` 호출에 대해 *pstrheaders* 또는 *str* 에서 여러 헤더를 전달할 수 있습니다. 응용 프로그램에서 HTTP_ADDREQ_FLAG_REMOVE 또는 HTTP_ADDREQ_FLAG_REPLACE를 사용 하 여 헤더를 제거 하거나 바꾸려고 시도 하는 경우 *lpszHeaders*에서 하나의 헤더만 제공할 수 있습니다.
 
 ##  <a name="chttpfile"></a>  CHttpFile::CHttpFile
 
-이 멤버 함수를 생성 하 라고는 `CHttpFile` 개체입니다.
+이 멤버 함수를 호출 하 여 개체 `CHttpFile` 를 생성 합니다.
 
 ```
 CHttpFile(
@@ -158,35 +158,35 @@ CHttpFile(
 ### <a name="parameters"></a>매개 변수
 
 *hFile*<br/>
-인터넷 파일 핸들입니다.
+인터넷 파일에 대 한 핸들입니다.
 
 *hSession*<br/>
 인터넷 세션에 대 한 핸들입니다.
 
 *pstrObject*<br/>
-포함 된 문자열에 대 한 포인터를 `CHttpFile` 개체입니다.
+`CHttpFile` 개체를 포함 하는 문자열에 대 한 포인터입니다.
 
 *pstrServer*<br/>
-서버의 이름을 포함 하는 문자열에 대 한 포인터입니다.
+서버 이름이 포함 된 문자열에 대 한 포인터입니다.
 
 *pstrVerb*<br/>
-요청을 보낼 때 사용할 메서드가 포함 된 문자열에 대 한 포인터입니다. GET 또는 HEAD 게시물 수 있습니다.
+요청을 보낼 때 사용할 메서드를 포함 하는 문자열에 대 한 포인터입니다. POST, HEAD 또는 GET이 될 수 있습니다.
 
 *dwContext*<br/>
-에 대 한 컨텍스트 식별자를 `CHttpFile` 개체입니다. 참조 **주의** 이 매개 변수에 대 한 자세한 내용은 합니다.
+`CHttpFile` 개체에 대 한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 **설명 부분** 을 참조 하십시오.
 
 *pConnection*<br/>
-에 대 한 포인터를 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) 개체입니다.
+[CHttpConnection](../../mfc/reference/chttpconnection-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-되지 생성을 `CHttpFile` 개체를 직접; 대신 호출 [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) 또는 [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) 대신 합니다.
+개체를 `CHttpFile` 직접 생성 하지 않고 대신 [cinternetsession:: openurl](../../mfc/reference/cinternetsession-class.md#openurl) 또는 [CHttpConnection:: openurl](../../mfc/reference/chttpconnection-class.md#openrequest) 를 대신 호출 합니다.
 
-기본값 `dwContext` MFC에서 전송한 합니다 `CHttpFile` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CHttpFile` 개체입니다. 호출 하는 경우 `CInternetSession::OpenURL` 나 `CHttpConnection` 생성 하는 `CHttpFile` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+의 `dwContext` 기본값은 MFC `CHttpFile` 에서 `CHttpFile` 개체를 만든 [cinternetsession](../../mfc/reference/cinternetsession-class.md) 개체의 개체로 보냅니다. 또는 `CInternetSession::OpenURL` `CHttpFile` 를 호출 하 여 개체를 생성 하는 경우 기본값을 재정의 하 여 컨텍스트 식별자를 선택한 값으로 설정할 수 있습니다. `CHttpConnection` 컨텍스트 식별자가 식별 된 개체에 대 한 상태를 제공 하기 위해 [Cinternetsession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 으로 반환 됩니다. 인터넷 첫 번째 [단계 문서를 참조 하세요. 컨텍스트](../../mfc/wininet-basics.md) 식별자에 대 한 자세한 내용은 WinInet을.
 
 ##  <a name="endrequest"></a>  CHttpFile::EndRequest
 
-사용 하 여 HTTP 서버에 보내는 요청을 종료 하려면이 멤버 함수를 호출 합니다 [SendRequestEx](#sendrequestex) 멤버 함수입니다.
+[Sendrequestex](#sendrequestex) 멤버 함수를 사용 하 여 HTTP 서버로 전송 된 요청을 종료 하려면이 멤버 함수를 호출 합니다.
 
 ```
 BOOL EndRequest(
@@ -198,25 +198,25 @@ BOOL EndRequest(
 ### <a name="parameters"></a>매개 변수
 
 *dwFlags*<br/>
-작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 참조 하세요 [하며](/windows/desktop/api/wininet/nf-wininet-httpendrequesta) Windows SDK에 있습니다.
+작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 Windows SDK의 [HttpEndRequest](/windows/desktop/api/wininet/nf-wininet-httpendrequesta) 를 참조 하세요.
 
 *lpBuffIn*<br/>
-초기화에 대 한 포인터 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) 하는 작업에 사용 되는 입력된 버퍼에 설명 합니다.
+작업에 사용 되는 입력 버퍼를 설명 하는 초기화 된 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) 에 대 한 포인터입니다.
 
 *dwContext*<br/>
-`CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.
+`CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명 부분을 참조 하십시오.
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출이 실패 한 경우 검사를 발생 하 여 오류의 원인을 확인 [CInternetException](../../mfc/reference/cinternetexception-class.md) 개체입니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출이 실패 하면 throw 된 [Cinternetexception](../../mfc/reference/cinternetexception-class.md) 개체를 검사 하 여 오류의 원인을 확인 합니다.
 
 ### <a name="remarks"></a>설명
 
-기본값 *dwContext* MFC에서 전송한 합니다 `CHttpFile` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CHttpFile` 개체입니다. 호출 하는 경우 [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) 하거나 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) 생성 하는 `CHttpFile` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 하세요. [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+*Dwcontext* 의 기본값은 MFC `CHttpFile` 에서 `CHttpFile` 개체를 만든 [cinternetsession](../../mfc/reference/cinternetsession-class.md) 개체의 개체로 보냅니다. [Cinternetsession:: openurl](../../mfc/reference/cinternetsession-class.md#openurl) 또는 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) `CHttpFile` 를 호출 하 여 개체를 생성 하는 경우 기본값을 재정의 하 여 컨텍스트 식별자를 선택한 값으로 설정할 수 있습니다. 컨텍스트 식별자가 식별 된 개체에 대 한 상태를 제공 하기 위해 [Cinternetsession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 으로 반환 됩니다. [인터넷 첫 단계: 컨텍스트](../../mfc/wininet-basics.md) 식별자에 대 한 자세한 내용은 WinInet을.
 
 ##  <a name="getfileurl"></a>  CHttpFile::GetFileURL
 
-URL로 HTTP 파일의 이름을 가져오려면이 함수를 호출 합니다.
+HTTP 파일의 이름을 URL로 가져오려면이 멤버 함수를 호출 합니다.
 
 ```
 virtual CString GetFileURL() const;
@@ -224,15 +224,15 @@ virtual CString GetFileURL() const;
 
 ### <a name="return-value"></a>반환 값
 
-A [CString](../../atl-mfc-shared/reference/cstringt-class.md) 이 파일과 관련 된 리소스를 참조 하는 URL을 포함 하는 개체입니다.
+이 파일과 관련 된 리소스를 참조 하는 URL을 포함 하는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수를 사용 하 여 호출에 성공한 후에 [SendRequest](#sendrequest) 또는 `CHttpFile` 성공적으로 만든 개체 [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)합니다.
+[Sendrequest가](#sendrequest) 또는 `CHttpFile` [openurl](../../mfc/reference/cinternetsession-class.md#openurl)에 의해 성공적으로 만들어진 개체에 대 한 호출이 성공한 후에만이 멤버 함수를 사용 합니다.
 
 ##  <a name="getobject"></a>  CHttpFile::GetObject
 
-이 사용 하 여 연결 된 개체의 이름을 가져오려면이 함수를 호출 `CHttpFile`합니다.
+이 멤버 함수를 호출 하 여이 `CHttpFile`와 연결 된 개체의 이름을 가져옵니다.
 
 ```
 CString GetObject() const;
@@ -240,15 +240,15 @@ CString GetObject() const;
 
 ### <a name="return-value"></a>반환 값
 
-A [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체의 이름을 포함 하는 개체입니다.
+개체의 이름을 포함 하는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수를 사용 하 여 호출에 성공한 후에 [SendRequest](#sendrequest) 또는 `CHttpFile` 성공적으로 만든 개체 [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)합니다.
+[Sendrequest가](#sendrequest) 또는 `CHttpFile` [openurl](../../mfc/reference/cinternetsession-class.md#openurl)에 의해 성공적으로 만들어진 개체에 대 한 호출이 성공한 후에만이 멤버 함수를 사용 합니다.
 
 ##  <a name="getverb"></a>  CHttpFile::GetVerb
 
-와 연결 된 HTTP 동사 (또는 메서드)를 가져오려면이 함수를 호출 `CHttpFile`합니다.
+이 멤버 함수를 호출 하 여이 `CHttpFile`와 연결 된 HTTP 동사 (또는 메서드)를 가져옵니다.
 
 ```
 CString GetVerb() const;
@@ -256,15 +256,15 @@ CString GetVerb() const;
 
 ### <a name="return-value"></a>반환 값
 
-A [CString](../../atl-mfc-shared/reference/cstringt-class.md) HTTP 동사 (또는 메서드)의 이름을 포함 하는 개체입니다.
+HTTP 동사 (또는 메서드)의 이름을 포함 하는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수를 사용 하 여 호출에 성공한 후에 [SendRequest](#sendrequest) 또는 `CHttpFile` 성공적으로 만든 개체 [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)합니다.
+[Sendrequest가](#sendrequest) 또는 `CHttpFile` [openurl](../../mfc/reference/cinternetsession-class.md#openurl)에 의해 성공적으로 만들어진 개체에 대 한 호출이 성공한 후에만이 멤버 함수를 사용 합니다.
 
 ##  <a name="queryinfo"></a>  CHttpFile::QueryInfo
 
-응답을 반환 하거나 HTTP 요청에서 헤더를 요청 하려면이 멤버 함수를 호출 합니다.
+HTTP 요청에서 응답 또는 요청 헤더를 반환 하려면이 멤버 함수를 호출 합니다.
 
 ```
 BOOL QueryInfo(
@@ -287,55 +287,55 @@ BOOL QueryInfo(
 ### <a name="parameters"></a>매개 변수
 
 *dwInfoLevel*<br/>
-쿼리 및 요청 된 정보의 유형을 지정 하는 다음 플래그 특성의 조합 합니다.
+쿼리할 특성 및 요청 된 정보 유형을 지정 하는 다음 플래그의 조합입니다.
 
-- HTTP_QUERY_CUSTOM 헤더 이름을 찾아서에서이 값을 반환 *lpvBuffer* 출력 합니다. HTTP_QUERY_CUSTOM 헤더를 찾을 수 없는 경우 어설션을 throw 합니다.
+- HTTP_QUERY_CUSTOM 헤더 이름을 찾고 출력의 *Lpvbuffer* 에서이 값을 반환 합니다. 헤더가 없으면 HTTP_QUERY_CUSTOM가 어설션을 throw 합니다.
 
-- 응용 프로그램 응답 헤더를 쿼리 하는 대개 HTTP_QUERY_FLAG_REQUEST_HEADERS 하지만 응용 프로그램이이 플래그를 사용 하 여 요청 헤더를 쿼리할 수도 있습니다.
+- HTTP_QUERY_FLAG_REQUEST_HEADERS 일반적으로 응용 프로그램은 응답 헤더를 쿼리 하지만 응용 프로그램은이 플래그를 사용 하 여 요청 헤더를 쿼리할 수도 있습니다.
 
-- 이러한 헤더는 "마지막 수정 시간," 등의 날짜/시간 문자열 값인 HTTP_QUERY_FLAG_SYSTEMTIME이이 플래그는 표준 Win32 헤더 값을 반환 합니다. [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 응용 프로그램에 필요 하지 않은 구조체 데이터를 구문 분석 합니다. 사용 하려는 경우이 플래그를 사용 하 여 `SYSTEMTIME` 함수의 재정의 합니다.
+- 해당 값이 날짜/시간 문자열 (예: "HTTP_QUERY_FLAG_SYSTEMTIME") 인 헤더의 경우이 플래그는 응용 프로그램이 데이터를 구문 분석 하지 않아도 되는 표준 Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 구조체로 헤더 값을 반환 합니다. 이 플래그를 사용 하는 경우 함수의 재정의를 사용 하 `SYSTEMTIME` 는 것이 좋습니다.
 
-- 이러한 헤더는 상태 코드와 같은 숫자 값인 HTTP_QUERY_FLAG_NUMBER이이 플래그는 32 비트 숫자로 데이터를 반환 합니다.
+- 상태 코드와 같이 값이 HTTP_QUERY_FLAG_NUMBER 헤더의 경우이 플래그는 데이터를 32 비트 숫자로 반환 합니다.
 
-참조 된 **주의** 가능한 값의 목록에 대 한 섹션입니다.
+가능한 값 목록은 **설명** 섹션을 참조 하세요.
 
 *lpvBuffer*<br/>
 정보를 받는 버퍼에 대 한 포인터입니다.
 
 *lpdwBufferLength*<br/>
-항목에서이 문자 또는 바이트 수의 데이터 버퍼의 길이 포함 하는 값을 가리킵니다. 참조 된 **주의** 이 매개 변수에 대 한 자세한 내용은 섹션입니다.
+입력 시 데이터 버퍼의 길이를 포함 하는 값을 문자 또는 바이트 수로 가리킵니다. 이 매개 변수에 대 한 자세한 내용은 **설명** 섹션을 참조 하세요.
 
 *lpdwIndex*<br/>
-0부터 시작 헤더 인덱스에 대 한 포인터입니다. NULL 일 수 있습니다. 이 플래그를 사용 하 여 동일한 이름 가진 여러 헤더를 열거 합니다. 입력에 대해 *lpdwIndex* 반환할 지정된 된 헤더의 인덱스를 나타냅니다. 출력 시 *lpdwIndex* 다음 헤더의 인덱스를 나타냅니다. 다음 인덱스를 찾을 수 없는 경우 ERROR_HTTP_HEADER_NOT_FOUND 반환 됩니다.
+0부터 시작 하는 헤더 인덱스에 대 한 포인터입니다. NULL 일 수 있습니다. 이 플래그를 사용 하 여 이름이 같은 여러 헤더를 열거 합니다. 입력 시 *lpdwIndex* 는 반환할 지정 된 헤더의 인덱스를 나타냅니다. 출력에서 *lpdwIndex* 는 다음 헤더의 인덱스를 나타냅니다. 다음 인덱스를 찾을 수 없는 경우 ERROR_HTTP_HEADER_NOT_FOUND이 반환 됩니다.
 
 *str*<br/>
-에 대 한 참조를 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 반환 된 정보를 받는 개체입니다.
+반환 된 정보를 받는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체에 대 한 참조입니다.
 
 *dwIndex*<br/>
-인덱스 값입니다. 참조 *lpdwIndex*합니다.
+인덱스 값입니다. *LpdwIndex*를 참조 하세요.
 
 *pSysTime*<br/>
-Win32 포인터로 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 구조입니다.
+Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출에 실패 하면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 를 호출 하 여 오류의 원인을 확인할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수를 사용 하 여 호출에 성공한 후에 [SendRequest](#sendrequest) 또는 `CHttpFile` 성공적으로 만든 개체 [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)합니다.
+[Sendrequest가](#sendrequest) 또는 `CHttpFile` [openurl](../../mfc/reference/cinternetsession-class.md#openurl)에 의해 성공적으로 만들어진 개체에 대 한 호출이 성공한 후에만이 멤버 함수를 사용 합니다.
 
-다음 유형의 데이터를 검색할 수 있습니다 `QueryInfo`:
+에서 `QueryInfo`다음 형식의 데이터를 검색할 수 있습니다.
 
 - 문자열 (기본값)
 
-- `SYSTEMTIME` (에 대 한 "데이터:" "Expires:" 등을 헤더)
+- `SYSTEMTIME`("데이터:" "Expires:" 등의 경우)
 
-- DWORD (예: STATUS_CODE, CONTENT_LENGTH 등)
+- DWORD (STATUS_CODE, CONTENT_LENGTH 등의 경우)
 
-문자열 버퍼에 기록 되 고 멤버 함수가 성공 하는 경우 `lpdwBufferLength` 문자에서 종결 NULL 문자에 대 한 1 뺀 문자열의 길이 포함 합니다.
+문자열이 버퍼에 기록 되 고 멤버 함수가 성공 `lpdwBufferLength` 하면에는 NULL 종결 문자에 대해 문자에서 1을 뺀 문자열의 길이가 포함 됩니다.
 
-가능한 *dwInfoLevel* 값 포함:
+가능한 *dwInfoLevel* 값은 다음과 같습니다.
 
 - HTTP_QUERY_MIME_VERSION
 
@@ -385,7 +385,7 @@ Win32 포인터로 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-sy
 
 ##  <a name="queryinfostatuscode"></a>  CHttpFile::QueryInfoStatusCode
 
-HTTP 요청을 사용 하 여 연결 된 상태 코드를 가져오려면이 함수를 호출 하 고 제공 된 배치 *dwStatusCode* 매개 변수입니다.
+이 멤버 함수를 호출 하 여 HTTP 요청과 연결 된 상태 코드를 가져오고 제공 된 *Dwstatuscode* 매개 변수에 넣습니다.
 
 ```
 BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
@@ -394,39 +394,39 @@ BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
 ### <a name="parameters"></a>매개 변수
 
 *dwStatusCode*<br/>
-상태 코드에 대 한 참조입니다. 상태 코드는 요청 된 이벤트의 성공 여부를 나타냅니다. 참조 **주의** 의 상태 코드 설명 선택 합니다.
+상태 코드에 대 한 참조입니다. 상태 코드는 요청한 이벤트의 성공 또는 실패를 표시 합니다. 상태 코드에 대 한 설명은 **주의** 를 참조 하십시오.
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. Win32 함수 호출이 실패 한 경우 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출에 실패 하면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 를 호출 하 여 오류의 원인을 확인할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수를 사용 하 여 호출에 성공한 후에 [SendRequest](#sendrequest) 또는 `CHttpFile` 성공적으로 만든 개체 [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl)합니다.
+[Sendrequest가](#sendrequest) 또는 `CHttpFile` [openurl](../../mfc/reference/cinternetsession-class.md#openurl)에 의해 성공적으로 만들어진 개체에 대 한 호출이 성공한 후에만이 멤버 함수를 사용 합니다.
 
-HTTP 상태 코드는 요청의 성공 여부를 나타내는 그룹에 속합니다. 다음 표에서 상태 코드 그룹 및 가장 일반적인 HTTP 상태 코드를 간략하게 설명합니다.
+HTTP 상태 코드는 요청의 성공 또는 실패를 나타내는 그룹으로 분류 됩니다. 다음 표에서는 상태 코드 그룹 및 가장 일반적인 HTTP 상태 코드에 대해 간략하게 설명 합니다.
 
-|그룹화|의미|
+|그룹|의미|
 |-----------|-------------|
-|200-299|성공|
+|200-299|Success|
 |300-399|정보|
 |400-499|요청 오류|
 |500-599|서버 오류|
 
 일반적인 HTTP 상태 코드:
 
-|상태 코드|의미|
+|status code|의미|
 |-----------------|-------------|
-|200|URL에 있는 전송 수행|
-|400|인식할 수 없는 요청|
-|404|요청 URL을 찾을 수 없습니다.|
-|405|서버가 요청 된 메서드를 지원 하지 않습니다.|
+|200|URL이 있는 경우 전송은 다음과 같습니다.|
+|400|이해할 없는 요청|
+|404|요청한 URL을 찾을 수 없습니다.|
+|405|서버에서 요청 된 메서드를 지원 하지 않습니다.|
 |500|알 수 없는 서버 오류|
-|503|서버 용량에 도달 했습니다|
+|503|서버 용량 도달|
 
 ##  <a name="sendrequest"></a>  CHttpFile::SendRequest
 
-HTTP 서버에 요청을 보내도록이 멤버 함수를 호출 합니다.
+이 멤버 함수를 호출 하 여 HTTP 서버에 요청을 보냅니다.
 
 ```
 BOOL SendRequest(
@@ -447,24 +447,24 @@ BOOL SendRequest(
 보낼 헤더의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
 *dwHeadersLen*<br/>
-로 식별 되는 헤더의 길이가 *pstrHeaders*합니다.
+*Pstrheaders*로 식별 되는 헤더의 길이입니다.
 
 *lpOptional*<br/>
-요청 헤더 직후 보낼 모든 선택적 데이터입니다. 이 POST 및 PUT 작업에 대 한 일반적으로 사용 됩니다. 이 선택적 보낼 데이터가 없는 경우 NULL을 수 있습니다.
+요청 헤더 바로 다음에 보낼 선택적 데이터입니다. 이는 POST 및 PUT 작업에 일반적으로 사용 됩니다. 보낼 선택적 데이터가 없는 경우 NULL 일 수 있습니다.
 
 *dwOptionalLen*<br/>
-길이가 *lpOptional*합니다.
+*Lpoptional*의 길이입니다.
 
 *strHeaders*<br/>
-전송 되는 요청 헤더의 이름을 포함 하는 문자열입니다.
+보내는 요청에 대 한 헤더의 이름을 포함 하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출이 실패 한 경우 검사를 발생 하 여 오류의 원인을 확인 [CInternetException](../../mfc/reference/cinternetexception-class.md) 개체입니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출이 실패 하면 throw 된 [Cinternetexception](../../mfc/reference/cinternetexception-class.md) 개체를 검사 하 여 오류의 원인을 확인 합니다.
 
 ##  <a name="sendrequestex"></a>  CHttpFile::SendRequestEx
 
-HTTP 서버에 요청을 보내도록이 멤버 함수를 호출 합니다.
+이 멤버 함수를 호출 하 여 HTTP 서버에 요청을 보냅니다.
 
 ```
 BOOL SendRequestEx(
@@ -485,32 +485,32 @@ BOOL SendRequestEx(
 요청에서 보낼 바이트 수입니다.
 
 *dwFlags*<br/>
-작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 참조 하세요 [HttpSendRequestEx](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) Windows SDK에 있습니다.
+작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 Windows SDK [Httpsendrequestex](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) 를 참조 하십시오.
 
 *dwContext*<br/>
-`CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.
+`CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명 부분을 참조 하십시오.
 
 *lpBuffIn*<br/>
-초기화에 대 한 포인터 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) 하는 작업에 사용 되는 입력된 버퍼에 설명 합니다.
+작업에 사용 되는 입력 버퍼를 설명 하는 초기화 된 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) 에 대 한 포인터입니다.
 
 *lpBuffOut*<br/>
-작업에 사용 되는 출력 버퍼를 설명 하는 초기화 INTERNET_BUFFERS에 대 한 포인터입니다.
+작업에 사용 되는 출력 버퍼를 설명 하는 초기화 된 INTERNET_BUFFERS에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 0이 아닙니다. 호출이 실패 한 경우 검사를 발생 하 여 오류의 원인을 확인 [CInternetException](../../mfc/reference/cinternetexception-class.md) 개체입니다.
+성공 하면 0이 아닌 값입니다. 호출이 실패 하면 throw 된 [Cinternetexception](../../mfc/reference/cinternetexception-class.md) 개체를 검사 하 여 오류의 원인을 확인 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수를 사용 하 여 데이터를 보내도록 응용 프로그램을 사용 하면 합니다 [작성](../../mfc/reference/cinternetfile-class.md#write) 하 고 [WriteString](../../mfc/reference/cinternetfile-class.md#writestring) 의 메서드 `CInternetFile`합니다. 이 함수의 재정의 중 하나를 호출 하기 전에 전송할 데이터의 길이 알고 있어야 합니다. 첫 번째 재정의 사용 하면 전송 하려는 데이터의 길이 지정할 수 있습니다. 두 번째 재정의 버퍼를 매우 자세히 설명 하기 위해 사용할 수 있는 INTERNET_BUFFERS 구조에 대 한 포인터를 허용 합니다.
+이 함수를 사용 하면 응용 프로그램에서의 `CInternetFile` [Write](../../mfc/reference/cinternetfile-class.md#write) 및 [writestring](../../mfc/reference/cinternetfile-class.md#writestring) 메서드를 사용 하 여 데이터를 보낼 수 있습니다. 이 함수의 재정의를 호출 하기 전에 보낼 데이터의 길이를 알고 있어야 합니다. 첫 번째 재정의를 사용 하 여 보내려는 데이터의 길이를 지정할 수 있습니다. 두 번째 재정의는 INTERNET_BUFFERS 구조에 대 한 포인터를 허용 하며,이를 사용 하 여 버퍼를 매우 자세히 설명할 수 있습니다.
 
-콘텐츠 파일에 기록 된 후 호출 [EndRequest](#endrequest) 작업을 종료 합니다.
+콘텐츠를 파일에 쓴 후 [EndRequest](#endrequest) 를 호출 하 여 작업을 종료 합니다.
 
-기본값 *dwContext* MFC에서 전송한 합니다 `CHttpFile` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CHttpFile` 개체입니다. 호출 하는 경우 [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) 하거나 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) 생성 하는 `CHttpFile` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+*Dwcontext* 의 기본값은 MFC `CHttpFile` 에서 `CHttpFile` 개체를 만든 [cinternetsession](../../mfc/reference/cinternetsession-class.md) 개체의 개체로 보냅니다. [Cinternetsession:: openurl](../../mfc/reference/cinternetsession-class.md#openurl) 또는 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) `CHttpFile` 를 호출 하 여 개체를 생성 하는 경우 기본값을 재정의 하 여 컨텍스트 식별자를 선택한 값으로 설정할 수 있습니다. 컨텍스트 식별자가 식별 된 개체에 대 한 상태를 제공 하기 위해 [Cinternetsession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 으로 반환 됩니다. 인터넷 첫 번째 [단계 문서를 참조 하세요. 컨텍스트](../../mfc/wininet-basics.md) 식별자에 대 한 자세한 내용은 WinInet을.
 
 ### <a name="example"></a>예제
 
-이 코드 조각은 MFCISAPI 라는 dll에 문자열의 콘텐츠를 보냅니다. 로컬 호스트 서버에 DLL입니다. 이 예제에서는 한 번만 호출 하는 동안 `WriteString`, 허용 되는 여러 호출을 사용 하 여 블록에서 데이터를 보내도록 합니다.
+이 코드 조각은 문자열의 내용을 MFCISAPI 이라는 DLL로 보냅니다. LOCALHOST 서버의 DLL입니다. 이 예제에서는에 대 `WriteString`한 호출을 하나만 사용 하지만 여러 호출을 사용 하 여 블록에서 데이터를 보내는 것은 허용 됩니다.
 
 [!code-cpp[NVC_MFCWinInet#9](../../mfc/codesnippet/cpp/chttpfile-class_1.cpp)]
 

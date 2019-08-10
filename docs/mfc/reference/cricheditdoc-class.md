@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CRichEditDoc [MFC], GetView
 - CRichEditDoc [MFC], m_bRTF
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
-ms.openlocfilehash: 4cc3af7649d30a153b67cd8269e595c11018833f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d296185fe2ea2216f4abe17b191f71b6fa36e1f9
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372090"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916718"
 ---
 # <a name="cricheditdoc-class"></a>CRichEditDoc 클래스
 
-사용 하 여 [CRichEditView](../../mfc/reference/cricheditview-class.md) 하 고 [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md), MFC의 문서 뷰 아키텍처 컨텍스트 내에서 rich edit 컨트롤의 기능을 제공 합니다.
+[CRichEditView](../../mfc/reference/cricheditview-class.md) 및 [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md)를 사용 하면 MFC의 문서 뷰 아키텍처 컨텍스트 내에서 rich edit 컨트롤의 기능을 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,29 +35,29 @@ class CRichEditDoc : public COleServerDoc
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CRichEditDoc::CreateClientItem](#createclientitem)|문서의 정리를 수행 하기 위해 호출 됩니다.|
-|[CRichEditDoc::GetStreamFormat](#getstreamformat)|스트림 입력 및 출력 서식 지정 정보를 포함 해야 하는지 여부를 나타냅니다.|
-|[CRichEditDoc::GetView](#getview)|연결 된 검색 [CRichEditView](../../mfc/reference/cricheditview-class.md) 개체입니다.|
+|[CRichEditDoc::CreateClientItem](#createclientitem)|문서 정리를 수행 하기 위해 호출 됩니다.|
+|[CRichEditDoc::GetStreamFormat](#getstreamformat)|스트림 입력 및 출력에 형식 지정 정보가 포함 되어야 하는지 여부를 나타냅니다.|
+|[CRichEditDoc::GetView](#getview)|[CRichEditView](../../mfc/reference/cricheditview-class.md) 개체를 검색 합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CRichEditDoc::m_bRTF](#m_brtf)|스트림 I/O 서식 지정이 포함 되는지 여부를 나타냅니다.|
+|[CRichEditDoc::m_bRTF](#m_brtf)|스트림 i/o에 서식 지정이 포함 되어야 하는지 여부를 나타냅니다.|
 
 ## <a name="remarks"></a>설명
 
-"Rich edit 컨트롤"에 사용자 입력 수 및 텍스트를 편집 하는 창입니다. 텍스트 문자와 단락 형식을 할당할 수 있으며 포함 된 OLE 개체를 포함할 수 있습니다. Rich edit 컨트롤 텍스트 서식 지정에 대 한 프로그래밍 인터페이스를 제공 합니다. 그러나 응용 프로그램 사용자에 게 서식 지정 작업을 제공 하는 데 필요한 사용자 인터페이스 구성 요소를 구현 해야 합니다.
+"Rich edit 컨트롤"은 사용자가 텍스트를 입력 하 고 편집할 수 있는 창입니다. 텍스트에는 문자 및 단락 서식 지정이 할당 될 수 있으며 포함 된 OLE 개체도 포함 될 수 있습니다. Rich edit 컨트롤은 텍스트 서식 지정을 위한 프로그래밍 인터페이스를 제공 합니다. 그러나 응용 프로그램은 사용자가 서식 지정 작업을 사용 하도록 설정 하는 데 필요한 모든 사용자 인터페이스 구성 요소를 구현 해야 합니다.
 
-`CRichEditView` 텍스트 및 텍스트의 서식 특성을 유지 관리합니다. `CRichEditDoc` 뷰에 클라이언트 항목 목록을 유지 관리 합니다. `CRichEditCntrItem` 컨테이너 쪽 OLE 클라이언트 항목에 대 한 액세스를 제공합니다.
+`CRichEditView`텍스트의 텍스트와 서식 특성을 유지 합니다. `CRichEditDoc`뷰에 있는 클라이언트 항목의 목록을 유지 관리 합니다. `CRichEditCntrItem`OLE 클라이언트 항목에 대 한 컨테이너 쪽 액세스를 제공 합니다.
 
-이 Windows 공용 컨트롤 (및 따라서 합니다 [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) 및 관련 클래스) 이상 Windows 95/98 및 Windows NT 버전 3.51에서 실행 되는 프로그램에만 사용할 수 있습니다.
+이 Windows 공용 컨트롤 (및 [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) 및 관련 클래스)은 windows 95/98 및 windows NT 버전 3.51 이상에서 실행 되는 프로그램에만 사용할 수 있습니다.
 
-서식 있는 편집 문서를 사용 하 여 MFC 응용 프로그램에서 예제를 참조 합니다 [워드 패드](../../overview/visual-cpp-samples.md) 샘플 응용 프로그램입니다.
+MFC 응용 프로그램에서 서식 있는 편집 문서를 사용 하는 예제는 [워드 패드](../../overview/visual-cpp-samples.md) 샘플 응용 프로그램을 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -75,11 +75,11 @@ class CRichEditDoc : public COleServerDoc
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxrich.h
+**헤더:** afxrich
 
 ##  <a name="createclientitem"></a>  CRichEditDoc::CreateClientItem
 
-이 함수 만들기를 호출을 `CRichEditCntrItem` 개체 및이 문서에 추가 합니다.
+`CRichEditCntrItem` 개체를 만들어이 문서에 추가 하려면이 함수를 호출 합니다.
 
 ```
 virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
@@ -88,21 +88,21 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
 ### <a name="parameters"></a>매개 변수
 
 *preo*<br/>
-에 대 한 포인터를 [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) OLE 항목을 설명 하는 구조입니다. 새 `CRichEditCntrItem` 이 OLE 항목 주위에 개체 생성 합니다. 하는 경우 *preo* 가 null 인 경우 새 클라이언트 항목이 비어 있습니다.
+OLE 항목을 설명 하는 [Reobject](/windows/desktop/api/richole/ns-richole-reobject) 구조에 대 한 포인터입니다. 이 OLE `CRichEditCntrItem` 항목을 중심으로 새 개체가 생성 됩니다. *Preo* 가 NULL 이면 새 클라이언트 항목이 비어 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
-새에 대 한 포인터 [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) 개체는이 문서에 추가 되었습니다.
+이 문서에 추가 된 새 [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수는 모든 OLE 초기화를 수행 하지 않습니다.
+이 함수는 OLE 초기화를 수행 하지 않습니다.
 
-자세한 내용은 참조는 [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) Windows SDK에는 구조입니다.
+자세한 내용은 Windows SDK의 [Reobject](/windows/desktop/api/richole/ns-richole-reobject) 구조를 참조 하세요.
 
 ##  <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat
 
-서식 있는 편집의 콘텐츠를 스트리밍에 대 한 텍스트 형식을 결정 하려면이 함수를 호출 합니다.
+Rich edit의 콘텐츠를 스트리밍하는 텍스트 형식을 결정 하려면이 함수를 호출 합니다.
 
 ```
 int GetStreamFormat() const;
@@ -112,17 +112,17 @@ int GetStreamFormat() const;
 
 다음 플래그 중 하나입니다.
 
-- SF_TEXT 나타냅니다는 다양 한 컨트롤을 편집 하는 경우에 서식 지정 정보를 유지 하지 않습니다.
+- SF_TEXT는 rich edit 컨트롤이 서식 지정 정보를 유지 하지 않음을 나타냅니다.
 
-- SF_RTF 나타냅니다 다양 한 컨트롤을 편집 하는 서식 지정 정보를 유지 관리.
+- SF_RTF는 rich edit 컨트롤이 서식 지정 정보를 유지 관리 함을 나타냅니다.
 
 ### <a name="remarks"></a>설명
 
-반환 값을 기반으로 합니다 [m_bRTF](#m_brtf) 데이터 멤버입니다. 경우에이 반환 SF_RTF `m_bRTF` TRUE이 고, 그렇지 않으면 SF_TEXT 합니다.
+반환 값은 [m_bRTF](#m_brtf) 데이터 멤버를 기반으로 합니다. 이 TRUE 인 경우 `m_bRTF` 이 함수는 SF_RTF를 반환 하 고 그렇지 않으면 SF_TEXT를 반환 합니다.
 
 ##  <a name="getview"></a>  CRichEditDoc::GetView
 
-액세스 하려면이 함수를 호출 합니다 [CRichEditView](../../mfc/reference/cricheditview-class.md) 개체와 연결 된 `CRichEditDoc` 개체입니다.
+이 `CRichEditDoc` 개체와 연결 된 [CRichEditView](../../mfc/reference/cricheditview-class.md) 개체에 액세스 하려면이 함수를 호출 합니다.
 
 ```
 virtual CRichEditView* GetView() const;
@@ -130,15 +130,15 @@ virtual CRichEditView* GetView() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 `CRichEditView` 문서와 연결 된 개체입니다.
+문서와 연결 `CRichEditView` 된 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-내에 포함 된 텍스트 및 서식 지정 정보를 `CRichEditView` 개체입니다. `CRichEditDoc` 개체 serialization에 대 한 OLE 항목을 유지 합니다. 하나만 있어야 `CRichEditView` 각각에 대해 `CRichEditDoc`합니다.
+텍스트 및 서식 지정 정보는 `CRichEditView` 개체에 포함 되어 있습니다. 개체 `CRichEditDoc` 는 직렬화를 위해 OLE 항목을 유지 관리 합니다. `CRichEditView` 각각`CRichEditDoc`에 대해 하나만 있어야 합니다.
 
 ##  <a name="m_brtf"></a>  CRichEditDoc::m_bRTF
 
-TRUE 인 경우 나타냅니다 [CRichEditCtrl::StreamIn](../../mfc/reference/cricheditctrl-class.md#streamin) 하 고 [CRichEditCtrl::StreamOut](../../mfc/reference/cricheditctrl-class.md#streamout) 단락 및 문자 형식을 특성에 저장 해야 합니다.
+TRUE 이면 [CRichEditCtrl:: StreamIn](../../mfc/reference/cricheditctrl-class.md#streamin) 및 [CRichEditCtrl:: streamin](../../mfc/reference/cricheditctrl-class.md#streamout) 에서 단락과 문자 서식 특성을 저장 해야 함을 나타냅니다.
 
 ```
 BOOL m_bRTF;
