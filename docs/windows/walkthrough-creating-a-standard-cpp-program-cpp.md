@@ -1,5 +1,5 @@
 ---
-title: '연습: 표준 만들기 C++ 프로그램 (C++)'
+title: '연습: 표준 C++ 프로그램 만들기(C++)'
 ms.custom: get-started-article
 ms.date: 04/25/2019
 helpviewer_keywords:
@@ -13,7 +13,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 06/26/2019
 ms.locfileid: "67400915"
 ---
-# <a name="walkthrough-creating-a-standard-c-program-c"></a>연습: 표준 만들기 C++ 프로그램 (C++)
+# <a name="walkthrough-creating-a-standard-c-program-c"></a>연습: 표준 C++ 프로그램 만들기(C++)
 
 Visual Studio를 사용하여 표준 C++ 프로그램을 만들 수 있습니다. 프로젝트 생성, 프로젝트에 새 파일 추가, 파일을 수정하여 C++ 코드 추가, 그리고 컴파일과 실행의 일련의 과정을 Visual Studio를 사용하여 단계별로 진행합니다.
 
