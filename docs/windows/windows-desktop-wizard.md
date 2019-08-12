@@ -83,7 +83,7 @@ Windows 데스크톱 애플리케이션을 만들었으면 [제네릭](../ide/ge
 > [!NOTE]
 > ATL 클래스는 추가할 수 없으며 MFC 클래스는 MFC를 지원하는 Windows 데스크톱 애플리케이션 형식(이전 표 참조)에만 추가할 수 있습니다.
 
-마법사에서 프로젝트용으로 만든 파일은 **솔루션 탐색기**에서 볼 수 있습니다. 마법사에서 프로젝트용 파일에 대 한 자세한 내용은 프로젝트에서 생성 한 파일을 참조 하세요. `ReadMe.txt`합니다. 파일 형식에 대 한 자세한 내용은 [Visual Studio 용으로 만들어지는 파일 형식 C++ 프로젝트](../build/reference/file-types-created-for-visual-cpp-projects.md)합니다.
+마법사에서 프로젝트용으로 만든 파일은 **솔루션 탐색기**에서 볼 수 있습니다. 마법사에서 프로젝트용으로 만든 파일에 대한 자세한 내용은 프로젝트에서 생성한 파일인 `ReadMe.txt`를 참조하세요. 파일 형식에 대한 자세한 내용은 [Visual Studio C++ 프로젝트용으로 만들어지는 파일 형식](../build/reference/file-types-created-for-visual-cpp-projects.md)을 참조합니다.
 
 ## <a name="see-also"></a>참고자료
 
