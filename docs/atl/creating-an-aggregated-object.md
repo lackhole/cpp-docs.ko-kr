@@ -18,16 +18,16 @@ ms.locfileid: "62250760"
 
 ## <a name="to-create-an-aggregated-object"></a>집계 개체를 만들려면
 
-1. 클래스 개체에 `IUnknown` 포인터를 추가하고 생성자에서 NULL로 초기화 합니다.
+1. 클래스 개체에 `IUnknown` 포인터를 추가하고 생성자에서 NULL로 초기화합니다.
 
-1. 재정의 [FinalConstruct](../atl/reference/ccomobjectrootex-class.md#finalconstruct)를 재정의하여 집계를 만듭니다.
+1. [FinalConstruct](../atl/reference/ccomobjectrootex-class.md#finalconstruct)를 재정의하여 집계를 만듭니다.
 
-1. 1단계에서 정의된 `IUnknown` 포인터를 [COM_INTERFACE_ENTRY_AGGREGATE](reference/com-interface-entry-macros.md#com_interface_entry_aggregate) 매크로의 두번째 매개변수로 사용합니다.
+1. 1단계에서 정의된 `IUnknown` 포인터를 [COM_INTERFACE_ENTRY_AGGREGATE](reference/com-interface-entry-macros.md#com_interface_entry_aggregate) 매크로의 두번째 매개 변수로 사용합니다.
 
 1. [FinalRelease](../atl/reference/ccomobjectrootex-class.md#finalrelease)를 재정의하여 `IUnknown` 포인터를 해제합니다.
 
 > [!NOTE]
-> `FinalConstruct` 수행 중 집계된 개체의 인터페이스를 사용하고 해제하는 경우 클래스 개체의 정의에 [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) 매크로를 추가합니다.
+> `FinalConstruct` 수행 중 집계된 개체의 인터페이스를 사용하고 해제하는 경우 클래스 개체의 정의에 [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) 매크로를 추가해야 합니다.
 
 ## <a name="see-also"></a>참고자료
 
