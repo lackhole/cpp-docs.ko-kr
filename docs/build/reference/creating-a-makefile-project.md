@@ -1,22 +1,21 @@
 ---
 title: Visual Studio에서 C++ 메이크파일 만들기
-ms.date: 05/16/2019
+ms.date: 08/05/2019
 f1_keywords:
 - vc.appwiz.makefile.project
 helpviewer_keywords:
-- Makefile projects, creating
-- project files [C++], Makefile projects
+- Makefile projects [C++]
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
-ms.openlocfilehash: b460b16b3a64818501187b00e503ad0179d26443
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 861cd88440a697ce5a3abc83109526227ae42f8e
+ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837390"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68866127"
 ---
 # <a name="create-a-c-makefile-project"></a>C++ 메이크파일 프로젝트 만들기
 
-‘메이크파일’은 C++ 소스 코드 파일 집합을 컴파일하고 링크(또는 ‘빌드’)하는 방법에 대한 지시를 포함하는 텍스트 파일입니다. ‘메이크’ 프로그램은 메이크파일을 읽고, 컴파일러, 링커 및 가능한 다른 프로그램을 호출하여 실행 파일을 만듭니다. *make* 프로그램의 Microsoft 구현을 [NMAKE](nmake-reference.md)라고 합니다.
+‘메이크파일’은 C++ 소스 코드 파일 집합을 컴파일하고 링크(또는 ‘빌드’)하는 방법에 대한 지시를 포함하는 텍스트 파일입니다. ‘메이크’ 프로그램은 메이크파일을 읽고, 컴파일러, 링커 및 가능한 다른 프로그램을 호출하여 실행 파일을 만듭니다. ‘메이크’ 프로그램의 Microsoft 구현을 [NMAKE](nmake-reference.md)라고 합니다.
 
 기존 메이크파일 프로젝트가 있는 경우 Visual Studio IDE에서 코딩 및/또는 디버그할지 선택 사항이 있습니다.
 
@@ -25,7 +24,7 @@ ms.locfileid: "65837390"
 - **Visual Studio 2017 이상**: **폴더 열기** 기능을 사용하여 MSBuild 시스템 사용 없이도 있는 그대로 메이크파일 프로젝트를 편집 및 빌드할 수 있습니다. 자세한 내용은 [C++용 폴더 열기 프로젝트](../open-folder-projects-cpp.md)를 참조하세요.
 - **Visual Studio 2019 이상**: Linux에 대한 UNIX 메이크파일 프로젝트를 만듭니다.
 
-## <a name="a-namecreateamakefileproject-to-create-a-makefile-project-with-the-makefile-project-template"></a><a name="create_a_makefile_project"> 메이크파일 프로젝트 템플릿을 사용하여 메이크파일 프로젝트 만들기
+## <a name="a-namecreate_a_makefile_project-to-create-a-makefile-project-with-the-makefile-project-template"></a><a name="create_a_makefile_project"> 메이크파일 프로젝트 템플릿을 사용하여 메이크파일 프로젝트 만들기
 
 Visual Studio 2017 이상에서 메이크파일 프로젝트 템플릿은 C++ 데스크톱 개발 워크로드가 설치되어 있을 때 사용할 수 있습니다.
 
@@ -39,7 +38,7 @@ Visual Studio 2017 이상에서 메이크파일 프로젝트 템플릿은 C++ �
 
 ### <a name="to-create-a-makefile-project-in-visual-studio-2019"></a>Visual Studio 2019에서 메이크파일 프로젝트를 만들려면
 
-1. Visual Studio 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택하고 검색 상자에 "메이크파일"을 입력합니다. 또는 **새 프로젝트** 대화 상자에서 **Visual C++** > **일반**(Visual Studio 2015) 또는 **기타**(Visual Studio 2017)를 확장한 다음, 대상이 Windows인지 또는 Linux인지에 따라 두 옵션 중에서 선택합니다.
+1. Visual Studio 주 메뉴에서 **파일** > **새로 만들기** > **프로젝트**를 선택하고 검색 상자에 "메이크파일"을 입력합니다. 또는 **새 프로젝트** 대화 상자에서 **Visual C++**  > **일반**(Visual Studio 2015) 또는 **기타**(Visual Studio 2017)를 확장한 다음, 대상이 Windows인지 또는 Linux인지에 따라 두 옵션 중에서 선택합니다.
 
 1. **Windows만**: **디버그 구성 설정** 페이지에서 디버그 및 일반 정품 빌드에 대한 명령, 출력, 정리 및 다시 빌드 정보를 제공합니다. 릴리스 구성에 대해 다른 설정을 지정하려면 **다음**을 클릭합니다.
 
@@ -51,7 +50,7 @@ Visual Studio 2017 이상에서 메이크파일 프로젝트 템플릿은 C++ �
 
 ### <a name="to-create-a-makefile-project-in-visual-studio-2015-or-visual-studio-2017"></a>Visual Studio 2015 또는 Visual Studio 2017에서 메이크파일 프로젝트를 만들려면
 
-1. Visual Studio 시작 페이지에서 **새 프로젝트** 검색 상자에 “메이크파일”을 입력합니다. 또는 **새 프로젝트** 대화 상자에서 **Visual C++** > **일반**(Visual Studio 2015) 또는 **기타**(Visual Studio 2017)를 확장한 다음, [템플릿] 창에서 **메이크파일 프로젝트**를 선택하여 프로젝트 마법사를 엽니다.
+1. Visual Studio 시작 페이지에서 **새 프로젝트** 검색 상자에 “메이크파일”을 입력합니다. 또는 **새 프로젝트** 대화 상자에서 **Visual C++**  > **일반**(Visual Studio 2015) 또는 **기타**(Visual Studio 2017)를 확장한 다음, [템플릿] 창에서 **메이크파일 프로젝트**를 선택하여 프로젝트 마법사를 엽니다.
 
 1. **애플리케이션 설정** 페이지에서 디버그 및 일반 정품 빌드에 대한 명령, 출력, 정리 및 다시 빌드 정보를 제공합니다.
 
@@ -103,7 +102,7 @@ Visual Studio 2017 이상에서 메이크파일 프로젝트 템플릿은 C++ �
 
 다음에 Visual Studio 개발 환경에서 메이크파일 프로젝트를 열 때 메이크파일 프로젝트에서 **솔루션 정리** 명령을 실행한 다음, **솔루션 빌드** 명령을 실행합니다. IntelliSense는 IDE에서 제대로 작동해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IntelliSense 사용](/visualstudio/ide/using-intellisense)<br>
 [NMAKE 참조](nmake-reference.md)<br>

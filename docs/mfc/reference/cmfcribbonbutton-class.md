@@ -1,5 +1,5 @@
 ---
-title: CMFCRibbonButton 클래스
+title: Cmfc리본 단추 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonButton
@@ -114,14 +114,14 @@ helpviewer_keywords:
 - CMFCRibbonButton [MFC], SetText
 - CMFCRibbonButton [MFC], OnClick
 ms.assetid: 732e941c-9504-4b83-a691-d18075965d53
-ms.openlocfilehash: 9d0d16062f6808cbeb2d3e73fac9f4bbdfd7e69c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3c0af8b608afd4effab710479108f1eb07fdaba
+ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358216"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821301"
 ---
-# <a name="cmfcribbonbutton-class"></a>CMFCRibbonButton 클래스
+# <a name="cmfcribbonbutton-class"></a>Cmfc리본 단추 클래스
 
 `CMFCRibbonButton` 클래스는 패널, 빠른 실행 도구 모음 및 팝업 메뉴와 같은 리본 막대 요소에 배치할 수 있는 단추를 구현합니다.
 
@@ -146,31 +146,31 @@ class CMFCRibbonButton : public CMFCRibbonBaseElement
 |이름|설명|
 |----------|-----------------|
 |[CMFCRibbonButton::AddSubItem](#addsubitem)|단추와 연결되는 메뉴 항목을 팝업 메뉴에 추가합니다.|
-|[CMFCRibbonButton::CanBeStretched](#canbestretched)|(재정의 [cmfcribbonbaseelement:: Canbestretched](../../mfc/reference/cmfcribbonbaseelement-class.md#canbestretched).)|
-|[CMFCRibbonButton::CleanUpSizes](#cleanupsizes)|(재정의 [cmfcribbonbaseelement:: Cleanupsizes](../../mfc/reference/cmfcribbonbaseelement-class.md#cleanupsizes).)|
-|[CMFCRibbonButton::ClosePopupMenu](#closepopupmenu)|(재정의 [cmfcribbonbaseelement:: Closepopupmenu](../../mfc/reference/cmfcribbonbaseelement-class.md#closepopupmenu).)|
+|[CMFCRibbonButton::CanBeStretched](#canbestretched)|( [Cmfc리본 Baseelement:: CanBeStretched](../../mfc/reference/cmfcribbonbaseelement-class.md#canbestretched)를 재정의 합니다.)|
+|[CMFCRibbonButton::CleanUpSizes](#cleanupsizes)|[Cmfc리본 Baseelement:: CleanUpSizes](../../mfc/reference/cmfcribbonbaseelement-class.md#cleanupsizes)를 재정의 합니다.|
+|[CMFCRibbonButton::ClosePopupMenu](#closepopupmenu)|[Cmfc리본 Baseelement:: ClosePopupMenu](../../mfc/reference/cmfcribbonbaseelement-class.md#closepopupmenu)를 재정의 합니다.|
 |[CMFCRibbonButton::DrawBottomText](#drawbottomtext)||
-|[CMFCRibbonButton::DrawImage](#drawimage)|(재정의 [cmfcribbonbaseelement:: Drawimage](../../mfc/reference/cmfcribbonbaseelement-class.md#drawimage).)|
+|[CMFCRibbonButton::DrawImage](#drawimage)|( [Cmfc리본 Baseelement](../../mfc/reference/cmfcribbonbaseelement-class.md#drawimage)를 재정의 합니다. rawimage:D)|
 |[CMFCRibbonButton::DrawRibbonText](#drawribbontext)||
 |[CMFCRibbonButton::FindSubItemIndexByID](#findsubitemindexbyid)|지정된 명령 ID와 연결된 팝업 메뉴 항목의 인덱스를 반환합니다.|
 |[CMFCRibbonButton::GetCommandRect](#getcommandrect)||
-|[CMFCRibbonButton::GetCompactSize](#getcompactsize)|리본 요소의 압축 크기를 반환합니다. (재정의 [cmfcribbonbaseelement:: Getcompactsize](../../mfc/reference/cmfcribbonbaseelement-class.md#getcompactsize).)|
+|[CMFCRibbonButton::GetCompactSize](#getcompactsize)|리본 요소의 압축 크기를 반환합니다. [Cmfc리본 Baseelement:: GetCompactSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getcompactsize)를 재정의 합니다.|
 |[CMFCRibbonButton::GetIcon](#geticon)||
 |[CMFCRibbonButton::GetImageIndex](#getimageindex)|단추와 연결된 이미지의 인덱스를 반환합니다.|
-|[CMFCRibbonButton::GetImageSize](#getimagesize)|리본 요소의 이미지 크기를 반환합니다. (재정의 [cmfcribbonbaseelement:: Getimagesize](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize).)|
-|[CMFCRibbonButton::GetIntermediateSize](#getintermediatesize)|중간 상태인 리본 요소의 크기를 반환합니다. (재정의 [cmfcribbonbaseelement:: Getintermediatesize](../../mfc/reference/cmfcribbonbaseelement-class.md#getintermediatesize).)|
+|[CMFCRibbonButton::GetImageSize](#getimagesize)|리본 요소의 이미지 크기를 반환합니다. [Cmfc리본 Baseelement:: GetImageSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize)를 재정의 합니다.|
+|[CMFCRibbonButton::GetIntermediateSize](#getintermediatesize)|중간 상태인 리본 요소의 크기를 반환합니다. [Cmfc리본 Baseelement:: GetIntermediateSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getintermediatesize)를 재정의 합니다.|
 |[CMFCRibbonButton::GetMenu](#getmenu)|리본 단추에 할당된 Windows 메뉴에 대한 핸들을 반환합니다.|
 |[CMFCRibbonButton::GetMenuRect](#getmenurect)||
-|[CMFCRibbonButton::GetRegularSize](#getregularsize)|리본 요소의 보통 크기를 반환합니다. (재정의 [cmfcribbonbaseelement:: Getregularsize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|
+|[CMFCRibbonButton::GetRegularSize](#getregularsize)|리본 요소의 보통 크기를 반환합니다. [Cmfc리본 Baseelement:: GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize)를 재정의 합니다.|
 |[CMFCRibbonButton::GetSubItems](#getsubitems)||
 |[CMFCRibbonButton::GetTextRowHeight](#gettextrowheight)||
-|[CMFCRibbonButton::GetToolTipText](#gettooltiptext)|리본 요소의 도구 설명 텍스트를 반환합니다. (재정의 [cmfcribbonbaseelement:: Gettooltiptext](../../mfc/reference/cmfcribbonbaseelement-class.md#gettooltiptext).)|
-|[CMFCRibbonButton::HasCompactMode](#hascompactmode)|리본 요소에 압축 모드가 있는지 여부를 지정합니다. (재정의 [cmfcribbonbaseelement:: Hascompactmode](../../mfc/reference/cmfcribbonbaseelement-class.md#hascompactmode).)|
-|[CMFCRibbonButton::HasIntermediateMode](#hasintermediatemode)|리본 요소에 중간 모드가 있는지 여부를 지정합니다. (재정의 [cmfcribbonbaseelement:: Hasintermediatemode](../../mfc/reference/cmfcribbonbaseelement-class.md#hasintermediatemode).)|
-|[CMFCRibbonButton::HasLargeMode](#haslargemode)|리본 요소에 큰 모드가 있는지 여부를 결정합니다. (재정의 [cmfcribbonbaseelement:: Haslargemode](../../mfc/reference/cmfcribbonbaseelement-class.md#haslargemode).)|
-|[CMFCRibbonButton::HasMenu](#hasmenu)|(재정의 [cmfcribbonbaseelement:: Hasmenu](../../mfc/reference/cmfcribbonbaseelement-class.md#hasmenu).)|
+|[CMFCRibbonButton::GetToolTipText](#gettooltiptext)|리본 요소의 도구 설명 텍스트를 반환합니다. [Cmfc리본 Baseelement:: GetToolTipText](../../mfc/reference/cmfcribbonbaseelement-class.md#gettooltiptext)를 재정의 합니다.|
+|[CMFCRibbonButton::HasCompactMode](#hascompactmode)|리본 요소에 압축 모드가 있는지 여부를 지정합니다. [Cmfc리본 Baseelement:: HasCompactMode](../../mfc/reference/cmfcribbonbaseelement-class.md#hascompactmode)를 재정의 합니다.|
+|[CMFCRibbonButton::HasIntermediateMode](#hasintermediatemode)|리본 요소에 중간 모드가 있는지 여부를 지정합니다. [Cmfc리본 Baseelement:: HasIntermediateMode](../../mfc/reference/cmfcribbonbaseelement-class.md#hasintermediatemode)를 재정의 합니다.|
+|[CMFCRibbonButton::HasLargeMode](#haslargemode)|리본 요소에 큰 모드가 있는지 여부를 결정합니다. [Cmfc리본 Baseelement:: HasLargeMode](../../mfc/reference/cmfcribbonbaseelement-class.md#haslargemode)를 재정의 합니다.|
+|[CMFCRibbonButton::HasMenu](#hasmenu)|[Cmfc리본 Baseelement:: HasMenu](../../mfc/reference/cmfcribbonbaseelement-class.md#hasmenu)를 재정의 합니다.|
 |[CMFCRibbonButton::IsAlwaysDrawBorder](#isalwaysdrawborder)||
-|[CMFCRibbonButton::IsAlwaysLargeImage](#isalwayslargeimage)|(재정의 [cmfcribbonbaseelement:: Isalwayslargeimage](../../mfc/reference/cmfcribbonbaseelement-class.md#isalwayslargeimage).)|
+|[CMFCRibbonButton::IsAlwaysLargeImage](#isalwayslargeimage)|[Cmfc리본 Baseelement:: IsAlwaysLargeImage](../../mfc/reference/cmfcribbonbaseelement-class.md#isalwayslargeimage)를 재정의 합니다.|
 |[CMFCRibbonButton::IsApplicationButton](#isapplicationbutton)||
 |[CMFCRibbonButton::IsCommandAreaHighlighted](#iscommandareahighlighted)||
 |[CMFCRibbonButton::IsDefaultCommand](#isdefaultcommand)|리본 단추에 대한 기본 명령을 사용하도록 설정했는지 여부를 확인합니다.|
@@ -182,25 +182,25 @@ class CMFCRibbonButton : public CMFCRibbonBaseElement
 |[CMFCRibbonButton::IsPopupDefaultMenuLook](#ispopupdefaultmenulook)||
 |[CMFCRibbonButton::IsRightAlignMenu](#isrightalignmenu)|메뉴가 오른쪽 맞춤인지 여부를 확인합니다.|
 |[CMFCRibbonButton::IsSingleLineText](#issinglelinetext)||
-|[CMFCRibbonButton::OnCalcTextSize](#oncalctextsize)|(재정의 [cmfcribbonbaseelement:: Oncalctextsize](../../mfc/reference/cmfcribbonbaseelement-class.md#oncalctextsize).)|
+|[CMFCRibbonButton::OnCalcTextSize](#oncalctextsize)|[Cmfc리본 Baseelement:: OnCalcTextSize](../../mfc/reference/cmfcribbonbaseelement-class.md#oncalctextsize)를 재정의 합니다.|
 |[CMFCRibbonButton::OnDrawBorder](#ondrawborder)||
-|[CMFCRibbonButton::OnDraw](#ondraw)|리본 요소를 그리기 위해 프레임워크에서 호출됩니다. (재정의 [cmfcribbonbaseelement:: Ondraw](../../mfc/reference/cmfcribbonbaseelement-class.md#ondraw).)|
+|[CMFCRibbonButton::OnDraw](#ondraw)|리본 요소를 그리기 위해 프레임워크에서 호출됩니다. [Cmfc리본 Baseelement:: OnDraw](../../mfc/reference/cmfcribbonbaseelement-class.md#ondraw)를 재정의 합니다.|
 |[CMFCRibbonButton::OnFillBackground](#onfillbackground)||
 |[CMFCRibbonButton::RemoveAllSubItems](#removeallsubitems)|팝업 메뉴에서 모든 메뉴 항목을 제거합니다.|
 |[CMFCRibbonButton::RemoveSubItem](#removesubitem)|팝업 메뉴에서 메뉴 항목을 제거합니다.|
-|[CMFCRibbonButton::SetACCData](#setaccdata)|(재정의 [cmfcribbonbaseelement:: Setaccdata](../../mfc/reference/cmfcribbonbaseelement-class.md#setaccdata).)|
+|[CMFCRibbonButton::SetACCData](#setaccdata)|[Cmfc리본 Baseelement:: SetACCData](../../mfc/reference/cmfcribbonbaseelement-class.md#setaccdata)를 재정의 합니다.|
 |[CMFCRibbonButton::SetAlwaysLargeImage](#setalwayslargeimage)|사용자가 단추를 축소하면 단추가 큰 이미지나 작은 이미지 중 어느 것을 표시하는지를 지정합니다.|
 |[CMFCRibbonButton::SetDefaultCommand](#setdefaultcommand)|리본 단추에 대한 기본 명령을 사용하도록 설정합니다.|
-|[CMFCRibbonButton::SetDescription](#setdescription)|리본 요소에 대한 설명을 설정합니다. (재정의 [cmfcribbonbaseelement:: Setdescription](../../mfc/reference/cmfcribbonbaseelement-class.md#setdescription).)|
+|[CMFCRibbonButton::SetDescription](#setdescription)|리본 요소에 대한 설명을 설정합니다. [Cmfc리본 Baseelement:: SetDescription](../../mfc/reference/cmfcribbonbaseelement-class.md#setdescription)을 재정의 합니다.|
 |[CMFCRibbonButton::SetImageIndex](#setimageindex)|단추 이미지에 인덱스를 할당합니다.|
 |[CMFCRibbonButton::SetMenu](#setmenu)|리본 단추에 팝업 메뉴를 할당합니다.|
-|[CMFCRibbonButton::SetParentCategory](#setparentcategory)|(재정의 [cmfcribbonbaseelement:: Setparentcategory](../../mfc/reference/cmfcribbonbaseelement-class.md#setparentcategory).)|
+|[CMFCRibbonButton::SetParentCategory](#setparentcategory)|[Cmfc리본 Baseelement:: SetParentCategory](../../mfc/reference/cmfcribbonbaseelement-class.md#setparentcategory)를 재정의 합니다.|
 |[CMFCRibbonButton::SetRightAlignMenu](#setrightalignmenu)|팝업 메뉴를 단추 오른쪽에 맞춥니다.|
-|[CMFCRibbonButton::SetText](#settext)|리본 요소의 텍스트를 설정합니다. (재정의 [cmfcribbonbaseelement:: Settext](../../mfc/reference/cmfcribbonbaseelement-class.md#settext).)|
+|[CMFCRibbonButton::SetText](#settext)|리본 요소의 텍스트를 설정합니다. [Cmfc리본 Baseelement:: SetText](../../mfc/reference/cmfcribbonbaseelement-class.md#settext)를 재정의 합니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCRibbonButton::OnClick](#onclick)|사용자가 단추를 클릭하면 프레임워크에서 호출됩니다.|
 
@@ -212,9 +212,9 @@ class CMFCRibbonButton : public CMFCRibbonBaseElement
 
 ## <a name="remarks"></a>설명
 
-응용 프로그램에서 리본 단추를 사용 하려면 단추 개체를 생성 하 고 적절 한 리본 메뉴에 추가할 [패널](../../mfc/reference/cmfcribbonpanel-class.md)합니다.
+응용 프로그램에서 리본 단추를 사용 하려면 단추 개체를 생성 하 여 적절 한 리본 [패널](../../mfc/reference/cmfcribbonpanel-class.md)에 추가 합니다.
 
-```
+```cpp
 CMFCRibbonPanel* pPanel = pCategory->AddPanel (
     _T("Clipboard"), // Panel name
     m_PanelIcons.ExtractIcon (0)); // Panel icon
@@ -259,10 +259,10 @@ void AddSubItem(
 ### <a name="parameters"></a>매개 변수
 
 *pSubItem*<br/>
-[in] 추가할 새 요소에 대 한 포인터를 지정 합니다.
+진행 추가할 새 요소에 대 한 포인터를 지정 합니다.
 
 *nIndex*<br/>
-[in] 단추 메뉴 항목의 배열에 요소를 추가 하는 인덱스를 지정 합니다. 메뉴 항목의 배열 끝에 요소를 추가 하려면-1입니다.
+진행 단추의 메뉴 항목 배열에 요소를 추가할 인덱스를 지정 합니다. -1-메뉴 항목 배열의 끝에 요소를 추가 합니다.
 
 ##  <a name="canbestretched"></a>  CMFCRibbonButton::CanBeStretched
 
@@ -315,23 +315,23 @@ CMFCRibbonButton(
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-[in] 단추의 명령 ID를 지정합니다.
+진행 단추의 명령 ID를 지정 합니다.
 
 *lpszText*<br/>
-[in] 단추의 텍스트 레이블을 지정합니다.
+진행 단추의 텍스트 레이블을 지정 합니다.
 
 *nSmallImageIndex*<br/>
-[in] 부모 범주 이미지 목록에서 단추의 작은 이미지의 0 기반 인덱스를 지정합니다.
+진행 부모 범주의 이미지 목록에서 단추의 작은 이미지에 대 한 0부터 시작 하는 인덱스를 지정 합니다.
 
 *nLargeImageIndex*<br/>
-[in] 부모 범주 이미지 목록에서 단추의 큰 이미지의 0 기반 인덱스를 지정합니다.
+진행 부모 범주의 이미지 목록에서 단추의 초대형 이미지에 대 한 0부터 시작 하는 인덱스를 지정 합니다.
 
 *hIcon*<br/>
-[in] 단추의 이미지와 응용 프로그램이 사용 되는 아이콘에 대 한 핸들을 지정 합니다.
+진행 응용 프로그램에서 단추의 이미지로 사용 하는 아이콘에 대 한 핸들을 지정 합니다.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 생성 하는 방법에 설명 된 `CMFCRibbonButton` 개체입니다.
+다음 예제에서는 개체를 `CMFCRibbonButton` 생성 하는 방법을 보여 줍니다.
 
 [!code-cpp[NVC_MFC_RibbonApp#6](../../mfc/reference/codesnippet/cpp/cmfcribbonbutton-class_2.cpp)]
 
@@ -403,11 +403,11 @@ int FindSubItemIndexByID(UINT uiID) const;
 ### <a name="parameters"></a>매개 변수
 
 *uiID*<br/>
-[in] 팝업 메뉴 항목의 명령 ID를 지정합니다.
+진행 팝업 메뉴 항목의 명령 ID를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-연결 된 하위 항목의 0부터 시작 인덱스는 *uiID*합니다. 이러한 하위 항목이 없는 경우-1입니다.
+*Uiid*와 연결 된 하위 항목의 인덱스 (0부터 시작)입니다. 이러한 하위 항목이 없으면-1입니다.
 
 ##  <a name="getcommandrect"></a>  CMFCRibbonButton::GetCommandRect
 
@@ -458,11 +458,11 @@ int GetImageIndex(BOOL bLargeImage) const;
 ### <a name="parameters"></a>매개 변수
 
 *bLargeImage*<br/>
-[in] TRUE 인 경우 큰 이미지가; 포함 된 이미지 목록의 이미지 인덱스를 반환 합니다. 그렇지 않은 경우 작은 이미지가 포함 된 이미지 목록의 이미지 인덱스를 반환 합니다.
+진행 TRUE 이면 이미지 목록에서 이미지를 포함 하는 이미지 인덱스를 반환 합니다. 그렇지 않으면 작은 이미지를 포함 하는 이미지 목록에 이미지 인덱스를 반환 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-연결 된 이미지 목록의 단추의 이미지의 인덱스입니다.
+연결 된 이미지 목록에 있는 단추의 이미지 인덱스입니다.
 
 ##  <a name="getimagesize"></a>  CMFCRibbonButton::GetImageSize
 
@@ -502,7 +502,7 @@ HMENU GetMenu() const;
 
 ### <a name="return-value"></a>반환 값
 
-단추에 할당 된 Windows 메뉴에 대 한 핸들 할당 없음 메뉴의 경우 NULL입니다.
+단추에 할당 된 Windows 메뉴에 대 한 핸들입니다. 메뉴가 할당 되지 않은 경우 NULL입니다.
 
 ##  <a name="getmenurect"></a>  CMFCRibbonButton::GetMenuRect
 
@@ -640,7 +640,7 @@ virtual BOOL IsCommandAreaHighlighted() const;
 
 ##  <a name="isdefaultcommand"></a>  CMFCRibbonButton::IsDefaultCommand
 
-리본 단추에 대 한 기본 명령을 사용 되는지 여부를 지정 합니다.
+리본 단추에 대 한 기본 명령을 사용할지 여부를 지정 합니다.
 
 ```
 BOOL IsDefaultCommand() const;
@@ -648,7 +648,7 @@ BOOL IsDefaultCommand() const;
 
 ### <a name="return-value"></a>반환 값
 
-리본 단추;에 대 한 기본 명령을 사용 하는 경우 TRUE입니다. FALSE이 고, 그렇지 합니다.
+리본 단추에 대 한 기본 명령을 사용 하도록 설정한 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ##  <a name="isdefaultpanelbutton"></a>  CMFCRibbonButton::IsDefaultPanelButton
 
@@ -712,7 +712,7 @@ virtual BOOL IsPopupDefaultMenuLook() const;
 
 ##  <a name="isrightalignmenu"></a>  CMFCRibbonButton::IsRightAlignMenu
 
-메뉴에 오른쪽 맞춤 인지 여부를 지정 합니다.
+메뉴를 오른쪽에 맞출지 여부를 지정 합니다.
 
 ```
 BOOL IsRightAlignMenu() const;
@@ -720,7 +720,7 @@ BOOL IsRightAlignMenu() const;
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 메뉴는 오른쪽에 맞춰집니다. 그렇지 않으면 FALSE입니다.
+메뉴가 오른쪽에 맞추어져 있으면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ##  <a name="issinglelinetext"></a>  CMFCRibbonButton::IsSingleLineText
 
@@ -755,11 +755,11 @@ virtual void OnClick(CPoint point);
 ### <a name="parameters"></a>매개 변수
 
 *point*<br/>
-[in] 마우스 클릭의 위치를 지정 합니다.
+진행 마우스 클릭의 위치를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 이벤트를 처리 하려는 경우에 파생된 클래스에서이 메서드를 재정의 합니다.
+이 이벤트를 처리 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="ondraw"></a>  CMFCRibbonButton::OnDraw
 
@@ -818,11 +818,11 @@ BOOL RemoveSubItem(int nIndex);
 ### <a name="parameters"></a>매개 변수
 
 *nIndex*<br/>
-[in] 제거할 메뉴 항목의 0부터 시작 인덱스를 지정 합니다.
+진행 제거 하려는 메뉴 항목의 인덱스 (0부터 시작)를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-지정된 된 항목이 성공적으로 제거 되었으면 TRUE 그렇지 않으면 FALSE 이면 *nIndex* 가 음수 이거나 팝업 메뉴에서 메뉴 항목의 수를 초과 합니다.
+지정 된 항목이 성공적으로 제거 되었으면 TRUE이 고, 그렇지 않으면 FALSE입니다. *n 인덱스가* 음수 이거나 팝업 메뉴의 메뉴 항목 수를 초과 하는 경우 FALSE입니다.
 
 ##  <a name="setaccdata"></a>  CMFCRibbonButton::SetACCData
 
@@ -859,7 +859,7 @@ void SetAlwaysLargeImage(BOOL bSet=TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *bSet*<br/>
-[in] True 이면 단추는 큰 이미지를 표시 합니다. 이 고, 그렇지 단추에 작은 이미지가 표시 됩니다.
+진행 TRUE 이면 단추가 커다란 이미지를 표시 합니다. 그렇지 않으면 단추가 작은 이미지를 표시 합니다.
 
 ##  <a name="setdefaultcommand"></a>  CMFCRibbonButton::SetDefaultCommand
 
@@ -872,11 +872,11 @@ void SetDefaultCommand(BOOL bSet=TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *bSet*<br/>
-[in] True 이면 단추는 기본 명령을 실행할 수 있습니다. FALSE 이면 단추는 기본 명령을 실행할 수 없습니다.
+진행 TRUE 이면 단추가 기본 명령을 실행할 수 있습니다. FALSE 이면 단추가 기본 명령을 실행할 수 없습니다.
 
 ### <a name="remarks"></a>설명
 
-*bSet* 단추 메뉴를에 하는 경우에 관련 됩니다. 하는 경우 *bSet* 가 TRUE이 고 단추는 기본 명령을 실행할 수 있습니다, 사용자 단추의 오른쪽 가장자리에 있는 화살표를 클릭 하는 경우에 할당된 된 팝업 메뉴가 나타납니다. 이 고, 그렇지 단추는 기본 명령을 실행할 수 없습니다 하 고 팝업 메뉴 단추의 영역에 관계 없이 사용자가 나타납니다.
+*bSet* 는 단추에 메뉴가 있는 경우에만 해당 됩니다. *BSet* 가 TRUE 인 경우 단추는 기본 명령을 실행할 수 있고, 사용자가 단추의 오른쪽 가장자리에 있는 화살표를 클릭 한 경우에만 할당 된 팝업 메뉴가 나타납니다. 그렇지 않으면 단추가 기본 명령을 실행할 수 없으며, 사용자가 클릭 하는 단추의 영역에 관계 없이 팝업 메뉴가 나타납니다.
 
 ##  <a name="setdescription"></a>  CMFCRibbonButton::SetDescription
 
@@ -903,10 +903,10 @@ void SetImageIndex(
 ### <a name="parameters"></a>매개 변수
 
 *nIndex*<br/>
-[in] 이미지 인덱스를 지정 합니다.
+진행 이미지 인덱스를 지정 합니다.
 
 *bLargeImage*<br/>
-[in] TRUE 이면 지정한 인덱스에 큰 이미지의 목록을 가리킵니다. 그렇지 않은 경우 인덱스 작은 이미지 목록을 가리킵니다.
+진행 TRUE 이면 지정 된 인덱스가 커다란 이미지 목록을 참조 합니다. 그렇지 않으면 인덱스는 작은 이미지 목록을 참조 합니다.
 
 ##  <a name="setmenu"></a>  CMFCRibbonButton::SetMenu
 
@@ -930,17 +930,17 @@ void SetMenu(
 Windows 메뉴에 대 한 핸들입니다.
 
 *bIsDefaultCommand*<br/>
-단추를 해당 기본 명령을 실행할 수 있습니다 TRUE 인 경우 이 고, 그렇지 단추에 팝업 메뉴를 표시합니다.
+TRUE 이면 단추가 기본 명령을 실행할 수 있습니다. 그렇지 않으면 단추가 팝업 메뉴를 표시 합니다.
 
 *bRightAlign*<br/>
-True 이면 메뉴를 오른쪽에 맞춥니다. 그렇지 않은 경우 메뉴는 왼쪽 맞춤입니다.
+TRUE 이면 메뉴가 오른쪽에 맞춰집니다. 그렇지 않으면 메뉴가 왼쪽 맞춤 됩니다.
 
 *uiMenuResID*<br/>
-메뉴 리소스 id입니다.
+메뉴 리소스 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-메뉴 단추에 할당 하는 응용 프로그램, 단추는 오른쪽 화살표가 표시 됩니다. 하는 경우 *bIsDefaultCommand* 가 TRUE 이면 사용자의 화살표를 클릭 하는 경우에 표시 합니다. 사용자가 단추를 클릭 하면 해당 기본 명령이 실행 됩니다. 하는 경우 *bIsDefaultCommand* 은 FALSE 메뉴 단추에서 아무 곳 이나 클릭 하 여 표시 됩니다.
+응용 프로그램에서 단추에 메뉴를 할당 하면 단추는 오른쪽에 화살표를 표시 합니다. *BIsDefaultCommand* 가 TRUE 인 경우 사용자가 화살표를 클릭 하면 메뉴가 나타납니다. 사용자가 단추를 클릭 하면 해당 기본 명령이 실행 됩니다. *BIsDefaultCommand* 가 FALSE 이면 단추를 클릭 하 여 메뉴를 표시 합니다.
 
 ##  <a name="setparentcategory"></a>  CMFCRibbonButton::SetParentCategory
 
@@ -956,7 +956,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 
 ##  <a name="setrightalignmenu"></a>  CMFCRibbonButton::SetRightAlignMenu
 
-팝업 메뉴 단추의 가장자리에 맞춥니다.
+팝업 메뉴를 단추의 가장자리에 맞춥니다.
 
 ```
 void SetRightAlignMenu(BOOL bSet=TRUE);
@@ -965,7 +965,7 @@ void SetRightAlignMenu(BOOL bSet=TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *bSet*<br/>
-[in] True 이면 메뉴를 오른쪽에 맞춥니다. 그렇지 않으면 메뉴는 왼쪽 맞춤
+진행 TRUE 이면 메뉴가 오른쪽에 맞춰집니다. 그렇지 않으면 메뉴가 왼쪽 맞춤 됩니다.
 
 ##  <a name="settext"></a>  CMFCRibbonButton::SetText
 

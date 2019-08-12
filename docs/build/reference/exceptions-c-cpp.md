@@ -12,20 +12,20 @@ helpviewer_keywords:
 - ERROR_SEVERITY_ERROR exception
 - ERROR_MOD_NOT_FOUND exception
 ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
-ms.openlocfilehash: f80b99943b103dcf90c05d59df3169e0e05d79f4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cf38af464f08e143ed9073befe30f6aeb8b913b6
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62271634"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915472"
 ---
 # <a name="exceptions-cc"></a>예외(C/C++)
 
-두 개의 예외 코드 오류가 발생 하는 경우 발생할 수 있습니다.
+오류가 발생 하면 두 가지 예외 코드가 발생할 수 있습니다.
 
-- 에 **LoadLibrary** 실패
+- **LoadLibrary** 오류
 
-- 에 **GetProcAddress** 실패
+- **GetProcAddress** 오류의 경우
 
 예외 정보는 다음과 같습니다.
 
@@ -37,11 +37,11 @@ ms.locfileid: "62271634"
 #define VcppException(sev,err)  ((sev) | (FACILITY_VISUALCPP<<16) | err)
 ```
 
-Throw 된 예외 코드는 표준 VcppException (ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) 및 (ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) VcppException 값. 예외에 대 한 포인터를 전달를 **DelayLoadInfo** 하 여 검색할 수 있는 LPDWORD 값 구조체 **GetExceptionInformation** 에 [EXCEPTION_RECORD](/windows/desktop/api/winnt/ns-winnt-_exception_record) 구조 [0] ExceptionInformation 필드입니다.
+Throw 된 예외 코드는 표준 VcppException (ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) 및 VcppException (ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) 값입니다. 예외는 [EXCEPTION_RECORD](/windows/desktop/api/winnt/ns-winnt-exception_record) Structure, exceptioninformation [0] 필드의 **getexceptioninformation** 에서 검색할 수 있는 Lpdword 값의 **delayloadinfo** 구조에 대 한 포인터를 전달 합니다.
 
-또한 grAttrs 필드에 잘못 된 비트가 설정 된 경우는 ERROR_INVALID_PARAMETER 예외가 발생 합니다. 이 예외는에 대 한 모든 용도 치명적입니다.
+또한 grAttrs 필드에 잘못 된 비트가 설정 되어 있으면 ERROR_INVALID_PARAMETER 예외가 throw 됩니다. 이 예외는 모든 의도 및 목적을 위해 치명적입니다.
 
-참조 [구조체 및 상수 정의](structure-and-constant-definitions.md) 자세한 내용은 합니다.
+자세한 내용은 [구조체 및 상수 정의](structure-and-constant-definitions.md) 를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CMFCRibbonGalleryMenuButton [MFC], HasButton
 - CMFCRibbonGalleryMenuButton [MFC], IsEmptyMenuAllowed
 ms.assetid: 4d459d9b-8b1a-4371-92f6-dc4ce6cc42c8
-ms.openlocfilehash: b63eab7c1e4d03a9103795892603b819eb7d02f3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0ec295fa64b835064435992a398d4292ccf26f38
+ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62236944"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68866184"
 ---
 # <a name="cmfcribbongallerymenubutton-class"></a>CMFCRibbonGalleryMenuButton 클래스
 
@@ -40,19 +40,19 @@ class CMFCRibbonGalleryMenuButton : public CMFCToolBarMenuButton
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton](#cmfcribbongallerymenubutton)|`CMFCRibbonGalleryMenuButton` 개체를 생성하고 초기화합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CMFCRibbonGalleryMenuButton::CopyFrom](#copyfrom)|(재정의 [cmfctoolbarmenubutton:: Copyfrom](../../mfc/reference/cmfctoolbarmenubutton-class.md#copyfrom).)|
-|[CMFCRibbonGalleryMenuButton::CreatePopupMenu](#createpopupmenu)|(재정의 [cmfctoolbarmenubutton:: Createpopupmenu](../../mfc/reference/cmfctoolbarmenubutton-class.md#createpopupmenu).)|
+|[CMFCRibbonGalleryMenuButton::CopyFrom](#copyfrom)|( [에서 Cmfc작업을](../../mfc/reference/cmfctoolbarmenubutton-class.md#copyfrom)재정의 합니다.|
+|[CMFCRibbonGalleryMenuButton::CreatePopupMenu](#createpopupmenu)|(Cmfc를 재정의 하는 [단추:: CreatePopupMenu](../../mfc/reference/cmfctoolbarmenubutton-class.md#createpopupmenu).)|
 |[CMFCRibbonGalleryMenuButton::GetPalette](#getpalette)||
 |[CMFCRibbonGalleryMenuButton::HasButton](#hasbutton)|( `CMFCToolBarMenuButton::HasButton`을 재정의합니다.)|
-|[CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed](#isemptymenuallowed)|(재정의 [cmfctoolbarmenubutton:: Isemptymenuallowed](../../mfc/reference/cmfctoolbarmenubutton-class.md#isemptymenuallowed).)|
+|[CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed](#isemptymenuallowed)|( [CmfcIsEmptyMenuAllowed Menubutton::](../../mfc/reference/cmfctoolbarmenubutton-class.md#isemptymenuallowed)를 재정의 합니다.)|
 
 ### <a name="remarks"></a>설명
 
@@ -62,38 +62,40 @@ class CMFCRibbonGalleryMenuButton : public CMFCToolBarMenuButton
 
 다음 예제에서는 메뉴 단추에 글머리 기호 갤러리를 표시하는 방법을 보여 줍니다.
 
-```
+```cpp
 BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
 {
     int nBulletIndex = pMenuBar->CommandToIndex (ID_PARA_BULLETS);
 
     if (nBulletIndex>= 0)
-{
-    CMFCToolBarButton* pExButton =
-    pMenuBar->GetButton(nBulletIndex);
-ASSERT_VALID (pExButton);
+    {
+        CMFCToolBarButton* pExButton =
+        pMenuBar->GetButton(nBulletIndex);
+        ASSERT_VALID (pExButton);
 
-    CMFCRibbonGalleryMenuButton paletteBullet (
-    pExButton->m_nID,
-    pExButton->GetImage (),
-    pExButton->m_strText);
+        CMFCRibbonGalleryMenuButton paletteBullet (
+        pExButton->m_nID,
+        pExButton->GetImage (),
+        pExButton->m_strText);
 
-InitBulletPalette (&paletteBullet.GetPalette ());
+        InitBulletPalette (&paletteBullet.GetPalette ());
 
-    pMenuBar->ReplaceButton (ID_PARA_BULLETS,
-    paletteBullet);
-
-}
+        pMenuBar->ReplaceButton (ID_PARA_BULLETS,
+        paletteBullet);
+    }
 }
 ```
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
-[CObject](../../mfc/reference/cobject-class.md) [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) [CMFCToolBarMenuButton](../../mfc/reference/cmfctoolbarmenubutton-class.md) [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└&nbsp;[CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[Cmfc menubutton](../../mfc/reference/cmfctoolbarmenubutton-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxRibbonPaletteGallery.h
+**헤더:** afxribbonpalettegallery.h
 
 ##  <a name="copyfrom"></a>  CMFCRibbonGalleryMenuButton::CopyFrom
 
@@ -109,7 +111,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 ##  <a name="cmfcribbongallerymenubutton"></a>  CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton
 
-생성 하 고 초기화 된 [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md) 개체입니다.
+[CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md) 개체를 생성 하 고 초기화 합니다.
 
 ```
 CMFCRibbonGalleryMenuButton(
@@ -129,10 +131,10 @@ CMFCRibbonGalleryMenuButton(
 ### <a name="parameters"></a>매개 변수
 
 *uiID*<br/>
-단추의 명령 ID입니다. 이 단추를 클릭할 때 WM_COMMAND 메시지를 전송 하는 값입니다.
+단추의 명령 ID입니다. 사용자가이 단추를 클릭할 때 WM_COMMAND 메시지에서 전송 되는 값입니다.
 
 *iImage*<br/>
-갤러리 메뉴 단추를 사용 하 여 표시할 이미지의 인덱스입니다. 이미지에 저장 되는 *imagesPalette* 매개 변수입니다.
+갤러리 메뉴 단추와 함께 표시할 이미지의 인덱스입니다. 이미지는 *imagesPalette* 매개 변수에 저장 됩니다.
 
 *lpszText*<br/>
 메뉴 단추에 표시할 텍스트입니다.
@@ -141,18 +143,18 @@ CMFCRibbonGalleryMenuButton(
 갤러리에 표시할 이미지의 목록을 포함 합니다.
 
 *uiImagesPaletteResID*<br/>
-갤러리에 표시할 이미지 목록의 이미지에 대 한 리소스 ID입니다.
+갤러리에 표시할 이미지의 이미지 목록에 대 한 리소스 ID입니다.
 
 *cxPaletteImage*<br/>
-갤러리에 표시할 이미지의 픽셀에서 너비를 지정 합니다.
+갤러리에 표시할 이미지의 너비 (픽셀)를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-화살표가 있는 팝업 메뉴로 갤러리 메뉴 단추가 표시 됩니다. 사용자가 이 단추를 클릭하면 이미지 갤러리가 표시됩니다.
+갤러리 메뉴 단추는 화살표가 있는 팝업 메뉴로 표시 됩니다. 사용자가 이 단추를 클릭하면 이미지 갤러리가 표시됩니다.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는의 생성자를 사용 하는 방법에 설명 합니다 `CMFCRibbonGalleryMenuButton` 클래스입니다. 이 코드 조각은의 일부인 합니다 [MS Office 2007 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
+다음 예제에서는 `CMFCRibbonGalleryMenuButton` 클래스의 생성자를 사용 하는 방법을 보여 줍니다. 이 코드 조각은 [MS Office 2007 Demo 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#8](../../mfc/reference/codesnippet/cpp/cmfcribbongallerymenubutton-class_1.cpp)]
 
