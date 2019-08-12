@@ -9,19 +9,19 @@ f1_keywords:
 helpviewer_keywords:
 - CSecurityAttributes class
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
-ms.openlocfilehash: b26de7a2a3426ed2fe86bd7ef50f6c5410fa5364
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 2139c25cb6d941d9debe0655ba91ba458b1f8c09
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503203"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915721"
 ---
 # <a name="csecurityattributes-class"></a>CSecurityAttributes 클래스
 
 이 클래스는 보안 특성 구조에 대 한 씬 래퍼입니다.
 
 > [!IMPORTANT]
->  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
+>  이 클래스와 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +33,7 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CSecurityAttributes::CSecurityAttributes](#csecurityattributes)|생성자입니다.|
 
@@ -41,15 +41,15 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 
 |이름|설명|
 |----------|-----------------|
-|[CSecurityAttributes::Set](#set)|특성을 설정 하려면이 메서드는 `CSecurityAttributes` 개체입니다.|
+|[CSecurityAttributes::Set](#set)|`CSecurityAttributes` 개체의 특성을 설정 하려면이 메서드를 호출 합니다.|
 
 ## <a name="remarks"></a>설명
 
-합니다 `SECURITY_ATTRIBUTES` 구조에 포함 된를 [보안 설명자](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) 개체의 생성에 사용 되며이 구조를 지정 하 여 검색 핸들을 상속할 수 인지 여부를 지정 합니다.
+구조체 `SECURITY_ATTRIBUTES` 에는 개체를 만드는 데 사용 되는 [보안 설명자](/windows/desktop/api/winnt/ns-winnt-security_descriptor) 가 포함 되어 있으며이 구조를 지정 하 여 검색 된 핸들이 상속 가능한 지 여부를 지정 합니다.
 
-Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.
+Windows의 액세스 제어 모델에 대 한 소개는 Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) 를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 `SECURITY_ATTRIBUTES`
 
@@ -57,7 +57,7 @@ Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlsecurity.h
+**헤더:.**
 
 ##  <a name="csecurityattributes"></a>  CSecurityAttributes::CSecurityAttributes
 
@@ -78,7 +78,7 @@ explicit CSecurityAttributes(const CSecurityDesc& rSecurityDescriptor, bool bInh
 
 ##  <a name="set"></a>  CSecurityAttributes::Set
 
-특성을 설정 하려면이 메서드는 `CSecurityAttributes` 개체입니다.
+`CSecurityAttributes` 개체의 특성을 설정 하려면이 메서드를 호출 합니다.
 
 ```
 void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) throw(...);
@@ -94,12 +94,12 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 생성자가 초기화 된 `CSecurityAttributes` 개체입니다.
+이 메서드는 생성자에서 `CSecurityAttributes` 개체를 초기화 하는 데 사용 됩니다.
 
 ## <a name="see-also"></a>참고자료
 
 [보안 샘플](../../overview/visual-cpp-samples.md)<br/>
 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\))<br/>
-[보안 설명자](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
+[보안 설명자](/windows/desktop/api/winnt/ns-winnt-security_descriptor)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

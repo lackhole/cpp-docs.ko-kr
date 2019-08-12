@@ -94,12 +94,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-ms.openlocfilehash: a66597f7a43e0730ae8b32369235ac860f51a0f1
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: ccf7445100977e1205bbcffe230e1919ac33adea
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375848"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916136"
 ---
 # <a name="cedit-class"></a>CEdit Class
 
@@ -115,13 +115,13 @@ class CEdit : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CEdit::CEdit](#cedit)|컨트롤 개체 `CEdit` 를 생성 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CEdit::CanUndo](#canundo)|편집 제어 작업을 실행 취소할 수 있는지 여부를 결정 합니다.|
 |[CEdit::CharFromPos](#charfrompos)|지정 된 위치에 가장 가까운 문자에 대 한 줄 및 문자 인덱스를 검색 합니다.|
@@ -211,7 +211,7 @@ class CEdit : public CWnd
 
 대화 상자 편집기 `CEdit` 를 `CEdit` 사용 하 여 대화 상자 리소스에서 개체를 만드는 경우 사용자가 대화 상자를 닫으면 개체가 자동으로 소멸 됩니다.
 
-창 내에서 `CEdit` 개체를 만드는 경우 해당 개체를 삭제 해야 할 수도 있습니다. 스택에서 `CEdit` 개체를 만들면 자동으로 제거 됩니다. 새 함수를 사용 `CEdit` 하 여 힙에서 개체를 만드는 경우  에는 개체에 대해 **delete** 를 호출 하 여 사용자가 Windows 편집 컨트롤을 종료할 때 개체를 제거 해야 합니다. `CEdit` 개체에 메모리를 할당 하는 경우 `CEdit` 소멸자를 재정의 하 여 할당을 삭제 합니다.
+창 내에서 `CEdit` 개체를 만드는 경우 해당 개체를 삭제 해야 할 수도 있습니다. 스택에서 `CEdit` 개체를 만들면 자동으로 제거 됩니다. 새 함수를 사용 `CEdit` 하 여 힙에서 개체를 만드는 경우 에는 개체에 대해 **delete** 를 호출 하 여 사용자가 Windows 편집 컨트롤을 종료할 때 개체를 제거 해야 합니다. `CEdit` 개체에 메모리를 할당 하는 경우 `CEdit` 소멸자를 재정의 하 여 할당을 삭제 합니다.
 
 편집 컨트롤의 특정 스타일 (예: ES_READONLY)을 수정 하려면 [ModifyStyle](cwnd-class.md#modifystyle)를 사용 하는 대신 특정 메시지를 컨트롤에 보내야 합니다. Windows SDK에서 [컨트롤 스타일 편집](/windows/desktop/Controls/edit-control-styles) 을 참조 하세요.
 
@@ -928,7 +928,7 @@ void LineScroll(
 
 이 멤버 함수는 여러 줄 편집 컨트롤에 의해서만 처리 됩니다.
 
-편집 컨트롤은 편집 컨트롤에서 텍스트의 마지막 줄을 벗어나 세로로 스크롤되지 않습니다. 현재 줄과 Nlines에 지정 된 줄 수가 모두  편집 컨트롤의 총 줄 수를 초과 하는 경우 편집 컨트롤의 마지막 줄이 편집 컨트롤 창의 맨 위로 스크롤 되도록 값이 조정 됩니다.
+편집 컨트롤은 편집 컨트롤에서 텍스트의 마지막 줄을 벗어나 세로로 스크롤되지 않습니다. 현재 줄과 Nlines에 지정 된 줄 수가 모두 편집 컨트롤의 총 줄 수를 초과 하는 경우 편집 컨트롤의 마지막 줄이 편집 컨트롤 창의 맨 위로 스크롤 되도록 값이 조정 됩니다.
 
 `LineScroll`줄의 마지막 문자를 지나서 가로로 스크롤 하는 데 사용할 수 있습니다.
 
@@ -1098,7 +1098,7 @@ void SetHighlight(
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |*ichStart*|진행 강조 표시할 텍스트 범위에 있는 첫 번째 문자의 0부터 시작 하는 인덱스입니다.|
 |*ichEnd*|진행 강조 표시할 텍스트 범위에서 마지막 문자의 0부터 시작 하는 인덱스입니다.|
@@ -1207,7 +1207,7 @@ void SetPasswordChar(TCHAR ch);
 
 멤버 함수를 호출 하면에서 *ch*로 지정 된 문자를 사용 하 여 표시 되는 모든 문자를 `CEdit` 다시 그립니다. `SetPasswordChar`
 
-[ES_PASSWORD](styles-used-by-mfc.md#edit-styles) 스타일을 사용 하 여 편집 컨트롤을 만든 경우 기본 암호 문자는 별표 ( <strong>\*</strong>)로 설정 됩니다. Ch를 0으로 설정 `SetPasswordChar` 하 여가  호출 되는 경우이 스타일은 제거 됩니다.
+[ES_PASSWORD](styles-used-by-mfc.md#edit-styles) 스타일을 사용 하 여 편집 컨트롤을 만든 경우 기본 암호 문자는 별표 ( <strong>\*</strong>)로 설정 됩니다. Ch를 0으로 설정 `SetPasswordChar` 하 여가 호출 되는 경우이 스타일은 제거 됩니다.
 
 자세한 내용은 Windows SDK에서 [EM_SETPASSWORDCHAR](/windows/desktop/Controls/em-setpasswordchar) 을 참조 하세요.
 
@@ -1400,10 +1400,10 @@ BOOL ShowBalloonTip(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*pEditBalloonTip*|진행 풍선 팁을 설명 하는 [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) 구조체에 대 한 포인터입니다.|
+|*pEditBalloonTip*|진행 풍선 팁을 설명 하는 [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-editballoontip) 구조체에 대 한 포인터입니다.|
 |*lpszTitle*|진행 풍선 설명의 제목을 포함 하는 유니코드 문자열에 대 한 포인터입니다.|
 |*lpszText*|진행 풍선 팁 텍스트를 포함 하는 유니코드 문자열에 대 한 포인터입니다.|
-|*ttiIcon*|진행 풍선 설명에 연결할 아이콘의 유형을 지정 하는 **INT** 입니다. 기본값은 TTI_NONE입니다. 자세한 내용은 `ttiIcon` [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) 구조체의 멤버를 참조 하십시오.|
+|*ttiIcon*|진행 풍선 설명에 연결할 아이콘의 유형을 지정 하는 **INT** 입니다. 기본값은 TTI_NONE입니다. 자세한 내용은 `ttiIcon` [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-editballoontip) 구조체의 멤버를 참조 하십시오.|
 
 ### <a name="return-value"></a>반환 값
 

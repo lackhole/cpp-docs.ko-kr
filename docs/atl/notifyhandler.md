@@ -5,16 +5,16 @@ ms.topic: reference
 helpviewer_keywords:
 - NotifyHandler function
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
-ms.openlocfilehash: 292a1c6606585dc0694ee678ba8bc9b5fbc42681
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d875a039b01b7458a1df46a2539cf5c68aa67e41
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261448"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915929"
 ---
 # <a name="notifyhandler"></a>NotifyHandler
 
-메시지 맵에서 NOTIFY_HANDLER 매크로의 세 번째 매개 변수로 식별 된 함수의 이름입니다.
+메시지 맵에 있는 NOTIFY_HANDLER 매크로의 세 번째 매개 변수로 식별 되는 함수의 이름입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,21 +28,21 @@ LRESULT NotifyHandler(
 #### <a name="parameters"></a>매개 변수
 
 *idCtrl*<br/>
-메시지를 전송 하는 컨트롤의 식별자입니다.
+메시지를 보내는 컨트롤의 식별자입니다.
 
 *pnmh*<br/>
-주소는 [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) 알림 코드 및 추가 정보를 포함 하는 구조입니다. 일부 알림 메시지의 경우이 매개 변수가 가리키는 있는 더 큰 구조체는 `NMHDR` 첫 번째 멤버로 구조체입니다.
+알림 코드 및 추가 정보를 포함 하는 [NMHDR](/windows/desktop/api/richedit/ns-richedit-nmhdr) 구조체의 주소입니다. 일부 알림 메시지의 경우이 매개 변수는 `NMHDR` 구조를 첫 번째 멤버로 포함 하는 더 큰 구조를 가리킵니다.
 
 *bHandled*<br/>
-메시지 맵 집합 *bHandled* 하기 전에 true *NotifyHandler* 라고 합니다. 경우 *NotifyHandler* 메시지를 완전히 처리 하지 않는 설정 해야 *bHandled* 에 **FALSE** 를 나타내는 메시지에 추가 처리가 필요 합니다.
+*NotifyHandler* 를 호출 하기 전에 메시지 맵은 *BHANDLED* 를 TRUE로 설정 합니다. *NotifyHandler* 에서 메시지를 완전히 처리 하지 않는 경우에는 메시지에 추가 처리가 필요 함을 나타내는 *Bhandled* 를 **FALSE** 로 설정 해야 합니다.
 
 ## <a name="return-value"></a>반환 값
 
-메시지 처리의 결과입니다. 성공한 경우 0입니다.
+메시지 처리의 결과입니다. 성공 하는 경우 0입니다.
 
 ## <a name="remarks"></a>설명
 
-메시지 맵에서이 메시지 처리기를 사용 하 여 예제를 참조 하세요 [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)).
+메시지 맵에서이 메시지 처리기를 사용 하는 방법에 대 한 예제는 [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

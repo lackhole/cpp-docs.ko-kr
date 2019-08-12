@@ -42,19 +42,19 @@ helpviewer_keywords:
 - registry, writing to
 - registry, deleting keys
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
-ms.openlocfilehash: 58b7b180f5b4925f64078f8c799036252003549e
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: bce5a16dd8d6564b6a0d3fa0344fe5cb2303764f
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503235"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915784"
 ---
 # <a name="cregkey-class"></a>CRegKey 클래스
 
-이 클래스는 시스템 레지스트리에서 항목을 조작 하기 위한 메서드를 제공 합니다.
+이 클래스는 시스템 레지스트리에서 항목을 조작 하는 메서드를 제공 합니다.
 
 > [!IMPORTANT]
->  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
+>  이 클래스와 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -66,76 +66,76 @@ class CRegKey
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CRegKey::CRegKey](#cregkey)|생성자입니다.|
 |[CRegKey::~CRegKey](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CRegKey::Attach](#attach)|HKEY입니다를 연결 하려면이 메서드를 호출 합니다 `CRegKey` 설정 하 여 개체를 [m_hKey](#m_hkey) 멤버에 대 한 핸들 `hKey`합니다.|
-|[CRegKey::Close](#close)|해제 하려면이 메서드를 호출 합니다 [m_hKey](#m_hkey) 멤버 처리 하 고 NULL로 설정 합니다.|
-|[CRegKey::Create](#create)|하위 키로 존재 하지 않는 경우 지정된 된 키를 만들려면이 메서드를 호출할 `hKeyParent`합니다.|
-|[CRegKey::DeleteSubKey](#deletesubkey)|레지스트리에서 지정된 된 키를 제거 하려면이 메서드를 호출 합니다.|
-|[CRegKey::DeleteValue](#deletevalue)|값 필드를 제거 하려면이 메서드를 호출 [m_hKey](#m_hkey)합니다.|
-|[CRegKey::Detach](#detach)|분리 하려면이 메서드를 호출 합니다 [m_hKey](#m_hkey) 멤버 핸들 합니다 `CRegKey` 개체 및 설정 `m_hKey` NULL로.|
-|[CRegKey::EnumKey](#enumkey)|열린 레지스트리 키의 하위 키를 열거 하는이 메서드를 호출 합니다.|
-|[CRegKey::Flush](#flush)|레지스트리에 모든 열린 레지스트리 키의 특성을 작성 하려면이 메서드를 호출 합니다.|
-|[CRegKey::GetKeySecurity](#getkeysecurity)|열린 레지스트리 키를 보호 하는 보안 설명자의 복사본을 검색 하려면이 메서드를 호출 합니다.|
-|[CRegKey::NotifyChangeKeyValue](#notifychangekeyvalue)|이 메서드는 특성 또는 열린 레지스트리 키의 내용을 변경 하는 방법에 대 한 호출자에 게를 알립니다.|
-|[CRegKey::Open](#open)|지정된 된 키를 열고 설정 하려면이 메서드를 호출 [m_hKey](#m_hkey) 이 키의 핸들입니다.|
+|[CRegKey::Attach](#attach)|[M_hKey](#m_hkey) 멤버 핸들을로 `hKey`설정 하 여 HKEY `CRegKey` 를 개체에 연결 하려면이 메서드를 호출 합니다.|
+|[CRegKey::Close](#close)|[M_hKey](#m_hkey) 멤버 핸들을 해제 하 고이를 NULL로 설정 하려면이 메서드를 호출 합니다.|
+|[CRegKey::Create](#create)|지정 된 키가의 `hKeyParent`하위 키가 아닌 경우이 메서드를 호출 하 여 지정 된 키를 만듭니다.|
+|[CRegKey::DeleteSubKey](#deletesubkey)|레지스트리에서 지정 된 키를 제거 하려면이 메서드를 호출 합니다.|
+|[CRegKey::DeleteValue](#deletevalue)|[M_hKey](#m_hkey)에서 값 필드를 제거 하려면이 메서드를 호출 합니다.|
+|[CRegKey::Detach](#detach)|`CRegKey` 개체에서 [m_hKey](#m_hkey) 멤버 핸들을 분리 하 고를 NULL로 설정 `m_hKey` 하려면이 메서드를 호출 합니다.|
+|[CRegKey::EnumKey](#enumkey)|Open 레지스트리 키의 하위 키를 열거 하려면이 메서드를 호출 합니다.|
+|[CRegKey::Flush](#flush)|열려 있는 레지스트리 키의 모든 특성을 레지스트리에 쓰려면이 메서드를 호출 합니다.|
+|[CRegKey::GetKeySecurity](#getkeysecurity)|Open 레지스트리 키를 보호 하는 보안 설명자의 복사본을 검색 하려면이 메서드를 호출 합니다.|
+|[CRegKey::NotifyChangeKeyValue](#notifychangekeyvalue)|이 메서드는 열린 레지스트리 키의 특성 또는 내용에 대 한 변경 내용을 호출자에 게 알립니다.|
+|[CRegKey::Open](#open)|지정 된 키를 열고 [m_hKey](#m_hkey) 를이 키의 핸들로 설정 하려면이 메서드를 호출 합니다.|
 |[CRegKey::QueryBinaryValue](#querybinaryvalue)|지정 된 값 이름에 대 한 이진 데이터를 검색 하려면이 메서드를 호출 합니다.|
-|[CRegKey::QueryDWORDValue](#querydwordvalue)|지정 된 값 이름을 DWORD 데이터를 검색 하려면이 메서드를 호출 합니다.|
+|[CRegKey::QueryDWORDValue](#querydwordvalue)|지정 된 값 이름에 대 한 DWORD 데이터를 검색 하려면이 메서드를 호출 합니다.|
 |[CRegKey::QueryGUIDValue](#queryguidvalue)|지정 된 값 이름에 대 한 GUID 데이터를 검색 하려면이 메서드를 호출 합니다.|
-|[CRegKey::QueryMultiStringValue](#querymultistringvalue)|지정 된 값 이름에 대 한 다중 데이터를 검색 하려면이 메서드를 호출 합니다.|
-|[CRegKey::QueryQWORDValue](#queryqwordvalue)|지정 된 값 이름을 QWORD 데이터를 검색 하려면이 메서드를 호출 합니다.|
+|[CRegKey::QueryMultiStringValue](#querymultistringvalue)|지정 된 값 이름에 대 한 다중 문자열 데이터를 검색 하려면이 메서드를 호출 합니다.|
+|[CRegKey::QueryQWORDValue](#queryqwordvalue)|지정 된 값 이름에 대 한 QWORD(64 데이터를 검색 하려면이 메서드를 호출 합니다.|
 |[CRegKey::QueryStringValue](#querystringvalue)|지정 된 값 이름에 대 한 문자열 데이터를 검색 하려면이 메서드를 호출 합니다.|
-|[CRegKey::QueryValue](#queryvalue)|지정 된 값 필드에 대 한 데이터를 검색 하려면이 메서드를 호출 [m_hKey](#m_hkey)합니다. 이 메서드의 이전 버전이 더 이상 지원 되지 않으며 ATL_DEPRECATED로 표시 됩니다.|
-|[CRegKey::RecurseDeleteKey](#recursedeletekey)|레지스트리에서 지정된 된 키를 제거 하 고 모든 하위 키를 명시적으로 제거 하려면이 메서드를 호출 합니다.|
+|[CRegKey::QueryValue](#queryvalue)|[M_hKey](#m_hkey)의 지정 된 값 필드에 대 한 데이터를 검색 하려면이 메서드를 호출 합니다. 이 메서드의 이전 버전은 더 이상 지원 되지 않으며 ATL_DEPRECATED로 표시 됩니다.|
+|[CRegKey::RecurseDeleteKey](#recursedeletekey)|레지스트리에서 지정 된 키를 제거 하 고 모든 하위 키를 명시적으로 제거 하려면이 메서드를 호출 합니다.|
 |[CRegKey::SetBinaryValue](#setbinaryvalue)|레지스트리 키의 이진 값을 설정 하려면이 메서드를 호출 합니다.|
-|[CRegKey::SetDWORDValue](#setdwordvalue)|레지스트리 키 DWORD 값을 설정 하려면이 메서드를 호출 합니다.|
+|[CRegKey::SetDWORDValue](#setdwordvalue)|레지스트리 키의 DWORD 값을 설정 하려면이 메서드를 호출 합니다.|
 |[CRegKey::SetGUIDValue](#setguidvalue)|레지스트리 키의 GUID 값을 설정 하려면이 메서드를 호출 합니다.|
 |[CRegKey::SetKeySecurity](#setkeysecurity)|레지스트리 키의 보안을 설정 하려면이 메서드를 호출 합니다.|
-|[CRegKey::SetKeyValue](#setkeyvalue)|지정된 된 키의 지정 된 값 필드에 데이터를 저장 하려면이 메서드를 호출 합니다.|
+|[CRegKey::SetKeyValue](#setkeyvalue)|지정 된 키의 지정 된 값 필드에 데이터를 저장 하려면이 메서드를 호출 합니다.|
 |[CRegKey::SetMultiStringValue](#setmultistringvalue)|레지스트리 키의 다중 문자열 값을 설정 하려면이 메서드를 호출 합니다.|
-|[CRegKey::SetQWORDValue](#setqwordvalue)|레지스트리 키의 QWORD 값을 설정 하려면이 메서드를 호출 합니다.|
+|[CRegKey::SetQWORDValue](#setqwordvalue)|레지스트리 키의 QWORD(64 값을 설정 하려면이 메서드를 호출 합니다.|
 |[CRegKey::SetStringValue](#setstringvalue)|레지스트리 키의 문자열 값을 설정 하려면이 메서드를 호출 합니다.|
-|[CRegKey::SetValue](#setvalue)|지정 된 값 필드에 데이터를 저장 하려면이 메서드를 호출 [m_hKey](#m_hkey)합니다. 이 메서드의 이전 버전이 더 이상 지원 되지 않으며 ATL_DEPRECATED로 표시 됩니다.|
+|[CRegKey::SetValue](#setvalue)|[M_hKey](#m_hkey)의 지정 된 값 필드에 데이터를 저장 하려면이 메서드를 호출 합니다. 이 메서드의 이전 버전은 더 이상 지원 되지 않으며 ATL_DEPRECATED로 표시 됩니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CRegKey::operator HKEY](#operator_hkey)|변환 된 `CRegKey` 개체는 HKEY입니다.|
+|[CRegKey:: operator HKEY](#operator_hkey)|개체를 `CRegKey` HKEY 변환 합니다.|
 |[CRegKey::operator =](#operator_eq)|대입 연산자입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
 |이름|설명|
 |----------|-----------------|
-|[CRegKey::m_hKey](#m_hkey)|연결 된 레지스트리 키의 핸들을 포함 합니다 `CRegKey` 개체입니다.|
-|[CRegKey::m_pTM](#m_ptm)|에 대 한 포인터 `CAtlTransactionManager` 개체|
+|[CRegKey::m_hKey](#m_hkey)|`CRegKey` 개체와 연결 된 레지스트리 키의 핸들을 포함 합니다.|
+|[CRegKey::m_pTM](#m_ptm)|개체에 `CAtlTransactionManager` 대 한 포인터|
 
 ## <a name="remarks"></a>설명
 
-`CRegKey` 만들기 및 삭제에 시스템 레지스트리 키와 값에 대 한 메서드를 제공 합니다. 레지스트리는 소프트웨어 버전 번호, 설치 된 하드웨어 및 COM 개체의 논리적-물리적 매핑 등 시스템 구성 요소에 대 한 정의 설치 관련 집합을 포함합니다.
+`CRegKey`시스템 레지스트리에서 키 및 값을 만들고 삭제 하는 메서드를 제공 합니다. 레지스트리에는 소프트웨어 버전 번호, 설치 된 하드웨어의 논리적-물리적 매핑 및 COM 개체와 같은 시스템 구성 요소에 대 한 설치 별 정의 집합이 포함 되어 있습니다.
 
-`CRegKey` 지정된 된 컴퓨터에 대 한 시스템 레지스트리에 프로그래밍 인터페이스를 제공합니다. 예를 들어, 특정 레지스트리 키를 열려면 호출 `CRegKey::Open`합니다. 를 검색 하거나 데이터 값을 수정 하려면 호출 `CRegKey::QueryValue` 또는 `CRegKey::SetValue`, 각각. 키를 닫으려면 호출 `CRegKey::Close`합니다.
+`CRegKey`지정 된 컴퓨터에 대 한 시스템 레지스트리에 프로그래밍 인터페이스를 제공 합니다. 예를 들어 특정 레지스트리 키를 열려면를 호출 `CRegKey::Open`합니다. 데이터 값을 검색 하거나 수정 하려면 각각 또는 `CRegKey::QueryValue` `CRegKey::SetValue`를 호출 합니다. 키를 닫으려면를 호출 `CRegKey::Close`합니다.
 
-키를 닫으면 해당 레지스트리 데이터를 쓸 (플러시) 하드 디스크입니다. 이 프로세스는 몇 초 정도 걸릴 수 있습니다. 응용 프로그램 해야 명시적으로 레지스트리 데이터 하드 디스크에 쓸 경우 호출할 수 있습니다 합니다 [RegFlushKey](/windows/desktop/api/winreg/nf-winreg-regflushkey) Win32 함수입니다. 그러나 `RegFlushKey` 많은 시스템 리소스를 사용 하 고 반드시 필요한 경우에 호출 해야 합니다.
+키를 닫으면 해당 레지스트리 데이터가 하드 디스크에 기록 (플러시) 됩니다. 이 프로세스는 몇 초 정도 걸릴 수 있습니다. 응용 프로그램에서 하드 디스크에 레지스트리 데이터를 명시적으로 작성 해야 하는 경우 [Regflushkey](/windows/desktop/api/winreg/nf-winreg-regflushkey) Win32 함수를 호출할 수 있습니다. 그러나에서는 `RegFlushKey` 많은 시스템 리소스를 사용 하며 반드시 필요한 경우에만 호출 해야 합니다.
 
 > [!IMPORTANT]
->  레지스트리 위치를 지정 하려면 호출자를 허용 하는 메서드는 신뢰할 수 없는 데이터를 읽을 수도 있습니다. 사용 하는 방법 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 이 함수는 NULL 종료 문자열을 명시적으로 처리 하지 않는 고려해 야 합니다. 두 조건은 모두 호출 코드에서 확인 해야 합니다.
+>  호출자가 레지스트리 위치를 지정할 수 있도록 허용 하는 모든 메서드는 신뢰할 수 없는 데이터를 읽을 가능성이 있습니다. [Regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 를 사용 하는 메서드는이 함수가 NULL로 끝나는 문자열을 명시적으로 처리 하지 않는다는 점을 고려해 야 합니다. 호출 코드에서 두 조건을 확인 해야 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlbase.h
+**헤더:** 서 기. h
 
 ##  <a name="attach"></a>  CRegKey::Attach
 
-HKEY입니다를 연결 하려면이 메서드를 호출 합니다 `CRegKey` 설정 하 여 개체를 [m_hKey](#m_hkey) 멤버에 대 한 핸들 *hKey*합니다.
+[M_hKey](#m_hkey) 멤버 핸들을 *HKEY*로 설정 하 여 `CRegKey` HKEY를 개체에 연결 하려면이 메서드를 호출 합니다.
 
 ```
 void Attach(HKEY hKey) throw();
@@ -148,11 +148,11 @@ void Attach(HKEY hKey) throw();
 
 ### <a name="remarks"></a>설명
 
-`Attach` 경우에 어설션 `m_hKey` NULL이 아닌 합니다.
+`Attach`가 NULL이 `m_hKey` 아닌 경우를 어설션 합니다.
 
 ##  <a name="close"></a>  CRegKey::Close
 
-해제 하려면이 메서드를 호출 합니다 [m_hKey](#m_hkey) 멤버 처리 하 고 NULL로 설정 합니다.
+[M_hKey](#m_hkey) 멤버 핸들을 해제 하 고이를 NULL로 설정 하려면이 메서드를 호출 합니다.
 
 ```
 LONG Close() throw();
@@ -160,11 +160,11 @@ LONG Close() throw();
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 반환 ERROR_SUCCESS입니다. 그렇지 않으면 오류 값을 반환합니다.
+성공 하면 ERROR_SUCCESS를 반환 합니다. 그렇지 않으면 오류 값을 반환 합니다.
 
 ##  <a name="create"></a>  CRegKey::Create
 
-하위 키로 존재 하지 않는 경우 지정된 된 키를 만들려면이 메서드를 호출할 *hKeyParent*합니다.
+*HKeyParent*의 하위 키로 존재 하지 않는 경우이 메서드를 호출 하 여 지정 된 키를 만듭니다.
 
 ```
 LONG Create(
@@ -180,33 +180,33 @@ LONG Create(
 ### <a name="parameters"></a>매개 변수
 
 *hKeyParent*<br/>
-열린 키는의 핸들입니다.
+열린 키의 핸들입니다.
 
 *lpszKeyName*<br/>
-만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. *hKeyParent*합니다.
+만들거나 열 키의 이름을 지정 합니다. 이 이름은 *hKeyParent*의 하위 키 여야 합니다.
 
 *lpszClass*<br/>
-키를 만들거나 열 수의 클래스를 지정 합니다. 기본값은 REG_NONE 합니다.
+만들거나 열 키의 클래스를 지정 합니다. 기본값은 REG_NONE입니다.
 
 *dwOptions*<br/>
-키에 대 한 옵션입니다. 기본값은 REG_OPTION_NON_VOLATILE 합니다. 가능한 값 및 설명의 목록을 참조 하세요 [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) Windows SDK에 있습니다.
+키에 대 한 옵션입니다. 기본값은 REG_OPTION_NON_VOLATILE입니다. 사용할 수 있는 값 및 설명 목록은 Windows SDK의 [Regcreatekeyex](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) 를 참조 하십시오.
 
 *samDesired*<br/>
-키에 대 한 보안 액세스 합니다. 기본값은 KEY_READ &#124; KEY_WRITE 합니다. 가능한 값 및 설명의 목록을 참조 하세요. `RegCreateKeyEx`합니다.
+키에 대 한 보안 액세스입니다. 기본값은 KEY_READ &#124; KEY_WRITE입니다. 사용할 수 있는 값 및 설명의 목록을 보려면을 `RegCreateKeyEx`참조 하십시오.
 
 *lpSecAttr*<br/>
-에 대 한 포인터를 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) 키의 핸들을 자식 프로세스가 상속할 수 있는지 여부를 나타내는 구조입니다. 기본적으로이 매개 변수는 NULL (즉 핸들을 상속할 수 없습니다)입니다.
+자식 프로세스에서 키 핸들을 상속할 수 있는지 여부를 나타내는 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) 구조체에 대 한 포인터입니다. 기본적으로이 매개 변수는 NULL입니다. 즉, 핸들이 상속 될 수 없습니다.
 
 *lpdwDisposition*<br/>
-[out] NULL이 아닌 경우 (키 있으며 생성 된) 경우 REG_CREATED_NEW_KEY 또는 REG_OPENED_EXISTING_KEY (경우 검색 키가 있고 열린).
+제한이 NULL이 아닌 경우 REG_CREATED_NEW_KEY (키가 존재 하지 않거나 만들어진 경우) 또는 REG_OPENED_EXISTING_KEY (키가 존재 하 고 열린 경우)를 검색 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 ERROR_SUCCESS를 반환 하 고 키를 엽니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+성공 하면 ERROR_SUCCESS를 반환 하 고 키를 엽니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-`Create` 설정 된 [m_hKey](#m_hkey) 이 키의 핸들에 대 한 멤버입니다.
+`Create`[m_hKey](#m_hkey) 멤버를이 키의 핸들로 설정 합니다.
 
 ##  <a name="cregkey"></a>  CRegKey::CRegKey
 
@@ -232,7 +232,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 ### <a name="remarks"></a>설명
 
-새 `CRegKey` 개체를 만듭니다. 기존 개체를 만들 수 있습니다 `CRegKey` 개체 또는 레지스트리 키에 대 한 핸들입니다.
+새 `CRegKey` 개체를 만듭니다. 개체는 기존 `CRegKey` 개체에서 만들거나 레지스트리 키에 대 한 핸들에서 만들 수 있습니다.
 
 ##  <a name="dtor"></a>  CRegKey::~CRegKey
 
@@ -244,11 +244,11 @@ CAtlTransactionManager 개체에 대한 포인터
 
 ### <a name="remarks"></a>설명
 
-소멸자 릴리스 `m_hKey`합니다.
+소멸자가 해제 `m_hKey`됩니다.
 
 ##  <a name="deletesubkey"></a>  CRegKey::DeleteSubKey
 
-레지스트리에서 지정된 된 키를 제거 하려면이 메서드를 호출 합니다.
+레지스트리에서 지정 된 키를 제거 하려면이 메서드를 호출 합니다.
 
 ```
 LONG DeleteSubKey(LPCTSTR lpszSubKey) throw();
@@ -257,19 +257,19 @@ LONG DeleteSubKey(LPCTSTR lpszSubKey) throw();
 ### <a name="parameters"></a>매개 변수
 
 *lpszSubKey*<br/>
-삭제할 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. [m_hKey](#m_hkey)합니다.
+삭제할 키의 이름을 지정 합니다. 이 이름은 [m_hKey](#m_hkey)의 하위 키 여야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 ERROR_SUCCESS를 반환 합니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+성공 하면 ERROR_SUCCESS를 반환 합니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-`DeleteSubKey` 하위 키가 없는 하는 키만 삭제할 수 있습니다. 키에 하위 키가 있으면 호출 [RecurseDeleteKey](#recursedeletekey) 대신 합니다.
+`DeleteSubKey`하위 키가 없는 키만 삭제할 수 있습니다. 키에 하위 키가 있는 경우 대신 [RecurseDeleteKey](#recursedeletekey) 를 호출 합니다.
 
 ##  <a name="deletevalue"></a>  CRegKey::DeleteValue
 
-값 필드를 제거 하려면이 메서드를 호출 [m_hKey](#m_hkey)합니다.
+[M_hKey](#m_hkey)에서 값 필드를 제거 하려면이 메서드를 호출 합니다.
 
 ```
 LONG DeleteValue(LPCTSTR lpszValue) throw();
@@ -282,11 +282,11 @@ LONG DeleteValue(LPCTSTR lpszValue) throw();
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 ERROR_SUCCESS를 반환 합니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+성공 하면 ERROR_SUCCESS를 반환 합니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ##  <a name="detach"></a>  CRegKey::Detach
 
-분리 하려면이 메서드를 호출 합니다 [m_hKey](#m_hkey) 멤버 핸들 합니다 `CRegKey` 개체 및 설정 `m_hKey` NULL로.
+`CRegKey` 개체에서 [m_hKey](#m_hkey) 멤버 핸들을 분리 하 고를 NULL로 설정 `m_hKey` 하려면이 메서드를 호출 합니다.
 
 ```
 HKEY Detach() throw();
@@ -294,11 +294,11 @@ HKEY Detach() throw();
 
 ### <a name="return-value"></a>반환 값
 
-HKEY 연관 된 `CRegKey` 개체입니다.
+`CRegKey` 개체와 연결 된 HKEY입니다.
 
 ##  <a name="enumkey"></a>  CRegKey::EnumKey
 
-열린 레지스트리 키의 하위 키를 열거 하는이 메서드를 호출 합니다.
+Open 레지스트리 키의 하위 키를 열거 하려면이 메서드를 호출 합니다.
 
 ```
 LONG EnumKey(
@@ -311,28 +311,28 @@ LONG EnumKey(
 ### <a name="parameters"></a>매개 변수
 
 *iIndex*<br/>
-하위 키 인덱스입니다. 이 매개 변수는 첫 번째 호출에 대 한 0 이어야 합니다 하 고 후속 호출에 대 한 증가
+하위 키 인덱스입니다. 이 매개 변수는 첫 번째 호출의 경우 0 이어야 하 고 후속 호출의 경우 증가 합니다.
 
 *pszName*<br/>
-Null 종결 문자를 포함 하 여 하위 키의 이름을 받는 버퍼에 대 한 포인터입니다. 하위 키의 이름만 전체 키 계층이 아닌 버퍼에 복사 됩니다.
+종료 null 문자를 포함 하 여 하위 키의 이름을 받는 버퍼에 대 한 포인터입니다. 하위 키 이름만 버퍼에 복사 되 고 전체 키 계층 구조에는 복사 되지 않습니다.
 
 *pnNameLength*<br/>
-지정 된 버퍼의 TCHARs에서 크기를 지정 하는 변수에 대 한 포인터를 *pszName* 매개 변수입니다. 이 크기는 null 종결 문자를 포함 해야 합니다. 반환 되 면 메서드를 가리키는 변수의 *pnNameLength* 버퍼에 저장 된 문자 수를 포함 합니다. 반환 된 수는 null 종결 문자를 포함 하지 않습니다.
+*PszName* 매개 변수로 지정 된 버퍼의 크기 (tchars)를 지정 하는 변수에 대 한 포인터입니다. 이 크기는 null 종결 문자를 포함 해야 합니다. 메서드가 반환 될 때 *pnNameLength* 가 가리키는 변수는 버퍼에 저장 된 문자 수를 포함 합니다. 반환 된 개수에는 null 종결 문자가 포함 되지 않습니다.
 
 *pftLastWriteTime*<br/>
-시간을 수신 하는 변수에 대 한 포인터 열거 된 하위 키를 마지막으로 쓴 됩니다.
+열거 된 하위 키를 마지막으로 쓴 시간을 받는 변수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-하위 키를 열거 하려면 호출 `CRegKey::EnumKey` 0의 인덱스를 포함 합니다. 인덱스 값을 증분 시키고 메서드 ERROR_NO_MORE_ITEMS 반환 될 때까지 반복 합니다. 자세한 내용은 [RegEnumKeyEx](/windows/desktop/api/winreg/nf-winreg-regenumkeyexa) Windows SDK에 있습니다.
+하위 키를 열거 하려면 0 `CRegKey::EnumKey` 의 인덱스를 사용 하 여를 호출 합니다. 인덱스 값을 증가 시키고 메서드가 ERROR_NO_MORE_ITEMS을 반환할 때까지 반복 합니다. 자세한 내용은 Windows SDK의 [Regenumkeyex](/windows/desktop/api/winreg/nf-winreg-regenumkeyexa) 를 참조 하세요.
 
 ##  <a name="flush"></a>  CRegKey::Flush
 
-레지스트리에 모든 열린 레지스트리 키의 특성을 작성 하려면이 메서드를 호출 합니다.
+열려 있는 레지스트리 키의 모든 특성을 레지스트리에 쓰려면이 메서드를 호출 합니다.
 
 ```
 LONG Flush() throw();
@@ -340,15 +340,15 @@ LONG Flush() throw();
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [RegEnumFlush](/windows/desktop/api/winreg/nf-winreg-regflushkey) Windows SDK에 있습니다.
+자세한 내용은 Windows SDK의 [Regenumflush](/windows/desktop/api/winreg/nf-winreg-regflushkey) 를 참조 하세요.
 
 ##  <a name="getkeysecurity"></a>  CRegKey::GetKeySecurity
 
-열린 레지스트리 키를 보호 하는 보안 설명자의 복사본을 검색 하려면이 메서드를 호출 합니다.
+Open 레지스트리 키를 보호 하는 보안 설명자의 복사본을 검색 하려면이 메서드를 호출 합니다.
 
 ```
 LONG GetKeySecurity(
@@ -360,25 +360,25 @@ LONG GetKeySecurity(
 ### <a name="parameters"></a>매개 변수
 
 *si*<br/>
-합니다 [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) 요청한 보안 정보를 나타내는 값입니다.
+요청 된 보안 정보를 나타내는 [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) 값입니다.
 
 *psd*<br/>
 요청 된 보안 설명자의 복사본을 받는 버퍼에 대 한 포인터입니다.
 
 *pnBytes*<br/>
-가리키는 버퍼의 바이트 크기 *psd*합니다.
+*Psd*에서 가리키는 버퍼의 크기 (바이트)입니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하면 0이 아닌 오류 코드를 WINERROR에 정의 되어 반환이 됩니다. 8.
+메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 0이 아닌 오류 코드는 WINERROR.H에 정의 되어 있습니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [RegGetKeySecurity](/windows/desktop/api/winreg/nf-winreg-reggetkeysecurity)합니다.
+자세한 내용은 [Reggetkeysecurity](/windows/desktop/api/winreg/nf-winreg-reggetkeysecurity)를 참조 하세요.
 
 ##  <a name="m_hkey"></a>  CRegKey::m_hKey
 
-연결 된 레지스트리 키의 핸들을 포함 합니다 `CRegKey` 개체입니다.
+`CRegKey` 개체와 연결 된 레지스트리 키의 핸들을 포함 합니다.
 
 ```
 HKEY m_hKey;
@@ -396,7 +396,7 @@ CAtlTransactionManager* m_pTM;
 
 ##  <a name="notifychangekeyvalue"></a>  CRegKey::NotifyChangeKeyValue
 
-이 메서드는 특성 또는 열린 레지스트리 키의 내용을 변경 하는 방법에 대 한 호출자에 게를 알립니다.
+이 메서드는 열린 레지스트리 키의 특성 또는 내용에 대 한 변경 내용을 호출자에 게 알립니다.
 
 ```
 LONG NotifyChangeKeyValue(
@@ -409,38 +409,38 @@ LONG NotifyChangeKeyValue(
 ### <a name="parameters"></a>매개 변수
 
 *bWatchSubtree*<br/>
-지정된 된 키와 모든 하위 키 또는 지정된 된 키에만 변경 내용을 보고할 것인지 여부를 나타내는 플래그를 지정 합니다. 이 매개 변수가 TRUE 인 경우 메서드는 키 및 해당 하위 키의 변경 내용을 보고 합니다. 매개 변수가 FALSE 인 경우 메서드는 키만 변경을 보고 합니다.
+지정 된 키와 모든 하위 키에 대 한 변경 내용을 보고할지 아니면 지정 된 키만 표시할지를 나타내는 플래그를 지정 합니다. 이 매개 변수가 TRUE 이면 메서드는 키와 하위 키의 변경 내용을 보고 합니다. 매개 변수가 FALSE 이면 메서드는 키의 변경 내용만 보고 합니다.
 
 *dwNotifyFilter*<br/>
-보고 해야 하는 변경 내용을 제어 하는 플래그 집합을 지정 합니다. 이 매개 변수 값의 조합일 수 있습니다.
+보고 해야 하는 변경 내용을 제어 하는 플래그 집합을 지정 합니다. 이 매개 변수는 다음 값을 조합 하 여 사용할 수 있습니다.
 
 |값|의미|
 |-----------|-------------|
-|REG_NOTIFY_CHANGE_NAME|하위 키를 추가 하거나 삭제 하는 경우 호출자를 게 알립니다.|
-|REG_NOTIFY_CHANGE_ATTRIBUTES|키 보안 설명자 정보 등의 특성 변경의 호출자를 게 알립니다.|
-|REG_NOTIFY_CHANGE_LAST_SET|키의 값 변경의 호출자를 게 알립니다. 이 추가 또는 값을 삭제 하거나 기존 값을 변경 합니다.|
-|REG_NOTIFY_CHANGE_SECURITY|키의 보안 설명자에 대 한 변경 내용이 호출자를 게 알립니다.|
+|REG_NOTIFY_CHANGE_NAME|하위 키가 추가 되거나 삭제 되 면 호출자에 게 알립니다.|
+|REG_NOTIFY_CHANGE_ATTRIBUTES|보안 설명자 정보와 같은 키 특성에 대 한 변경 내용을 호출자에 게 알립니다.|
+|REG_NOTIFY_CHANGE_LAST_SET|호출자에 게 키 값에 대 한 변경 내용을 알립니다. 여기에는 값을 추가 또는 삭제 하거나 기존 값을 변경할 수 있습니다.|
+|REG_NOTIFY_CHANGE_SECURITY|호출자에 게 키의 보안 설명자에 대 한 변경 내용을 알립니다.|
 
 *hEvent*<br/>
-이벤트에 대한 핸들. 경우는 *bAsync* 매개 변수가 TRUE 인 메서드가 즉시 반환 하 고이 이벤트 신호를 보내 변경 내용을 보고 됩니다. 하는 경우 *bAsync* 은 FALSE *hEvent* 무시 됩니다.
+이벤트에 대한 핸들. *BAsync* 매개 변수가 TRUE 이면 메서드가 즉시 반환 되 고이 이벤트 신호를 통해 변경 내용이 보고 됩니다. *BAsync* 가 FALSE 인 경우 *hevent* 는 무시 됩니다.
 
 *bAsync*<br/>
-메서드가 변경 내용을 보고 하는 방법을 나타내는 플래그를 지정 합니다. 이 매개 변수가 TRUE 인 경우 메서드를 즉시 반환 하 고 지정된 된 이벤트 신호를 보내 변경 내용을 보고 합니다. 이 매개 변수가 FALSE 인 경우 변경 내용이 발생 될 때까지 메서드를 반환 하지 않습니다. 하는 경우 *hEvent* 유효한 이벤트를 지정 하지 않는 합니다 *bAsync* 매개 변수가 TRUE 인 경우.
+메서드가 변경 내용을 보고 하는 방법을 나타내는 플래그를 지정 합니다. 이 매개 변수가 TRUE 이면 메서드는 즉시 반환 하 고 지정 된 이벤트에 신호를 보내 변경 내용을 보고 합니다. 이 매개 변수가 FALSE 이면 변경 내용이 발생할 때까지 메서드가 반환 되지 않습니다. *Hevent* 가 유효한 이벤트를 지정 하지 않는 경우 *bAsync* 매개 변수는 TRUE가 될 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
 > [!NOTE]
->  이 메서드는 지정된 된 키가 삭제 되 면 호출자에 게를 알리지 않습니다.
+>  이 메서드는 지정 된 키가 삭제 된 경우 호출자에 게 알리지 않습니다.
 
-자세한 내용과 샘플 프로그램에 대 한 참조 [RegNotifyChangeKeyValue](/windows/desktop/api/winreg/nf-winreg-regnotifychangekeyvalue)합니다.
+자세한 내용 및 샘플 프로그램은 [RegNotifyChangeKeyValue](/windows/desktop/api/winreg/nf-winreg-regnotifychangekeyvalue)를 참조 하세요.
 
 ##  <a name="open"></a>  CRegKey::Open
 
-지정된 된 키를 열고 설정 하려면이 메서드를 호출 [m_hKey](#m_hkey) 이 키의 핸들입니다.
+지정 된 키를 열고 [m_hKey](#m_hkey) 를이 키의 핸들로 설정 하려면이 메서드를 호출 합니다.
 
 ```
 LONG Open(
@@ -452,27 +452,27 @@ LONG Open(
 ### <a name="parameters"></a>매개 변수
 
 *hKeyParent*<br/>
-열린 키는의 핸들입니다.
+열린 키의 핸들입니다.
 
 *lpszKeyName*<br/>
-만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. *hKeyParent*합니다.
+만들거나 열 키의 이름을 지정 합니다. 이 이름은 *hKeyParent*의 하위 키 여야 합니다.
 
 *samDesired*<br/>
-키에 대 한 보안 액세스 합니다. 기본값은 KEY_ALL_ACCESS 합니다. 가능한 값 및 설명의 목록을 참조 하세요 [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) Windows SDK에 있습니다.
+키에 대 한 보안 액세스입니다. 기본값은 KEY_ALL_ACCESS입니다. 사용할 수 있는 값 및 설명 목록은 Windows SDK의 [Regcreatekeyex](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) 를 참조 하십시오.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 반환 ERROR_SUCCESS입니다. 그렇지 않으면 0이 아닌 오류 값 WINERROR에 정의 합니다. 8.
+성공 하면 ERROR_SUCCESS를 반환 합니다. 그렇지 않으면 WINERROR.H에 0이 아닌 오류 값이 정의 됩니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-경우는 *lpszkeyname 만들기* 매개 변수가 NULL 인지 지점 빈 문자열로 `Open` 로 식별 되는 키의 새 핸들을 열 *hKeyParent*, 이전에 열린된 핸들을 닫지 않고 합니다.
+*LpszKeyName* 매개 변수가 NULL 이거나 빈 문자열 `Open` 을 가리키는 경우는 *hKeyParent*에 의해 식별 되는 키의 새 핸들을 열리지만 이전에 열린 핸들을 닫지 않습니다.
 
-와 달리 [CRegKey::Create](#create), `Open` 존재 하지 않는 경우 지정된 된 키를 만들지 것입니다.
+[Cregkey:: Create](#create)와 달리 `Open` 지정 된 키가 없는 경우에는이 키를 만들지 않습니다.
 
 ##  <a name="operator_hkey"></a>  CRegKey::operator HKEY
 
-변환 된 `CRegKey` 개체는 HKEY입니다.
+개체를 `CRegKey` HKEY 변환 합니다.
 
 ```
 operator HKEY() const throw();
@@ -493,11 +493,11 @@ CRegKey& operator= (CRegKey& key) throw();
 
 ### <a name="return-value"></a>반환 값
 
-새 키에 대 한 참조를 반환합니다.
+새 키에 대 한 참조를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 연산자를 분리 *키* 현재 개체에서에 할당 된 `CRegKey` 개체를 대신 합니다.
+이 연산자는 현재 개체에서 *키* 를 분리 하 고 대신 `CRegKey` 개체에 할당 합니다.
 
 ##  <a name="querybinaryvalue"></a>  CRegKey::QueryBinaryValue
 
@@ -513,28 +513,28 @@ LONG QueryBinaryValue(
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
+쿼리할 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
 *pValue*<br/>
 값의 데이터를 받는 버퍼에 대 한 포인터입니다.
 
 *pnBytes*<br/>
-버퍼를 바이트 단위로 크기를 지정 하는 변수에 대 한 포인터에서 가리키는 합니다 *pValue* 매개 변수입니다. 메서드가 반환 하는 경우이 변수는 버퍼에 복사 된 데이터의 크기를 포함 합니다.
+*Pvalue* 매개 변수가 가리키는 버퍼의 크기 (바이트)를 지정 하는 변수에 대 한 포인터입니다. 메서드가 반환 될 때이 변수에는 버퍼에 복사 된 데이터의 크기가 포함 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하는 경우에 ERROR_SUCCESS 반환 됩니다. 값을 읽는 메서드가 실패 하면, WINERROR에 정의 된 0이 아닌 오류 코드를 반환 합니다. 8. 참조 하는 데이터 형식 REG_BINARY 없으면 ERROR_INVALID_DATA 반환 됩니다.
+메서드가 성공 하면 ERROR_SUCCESS이 반환 됩니다. 메서드가 값을 읽지 못한 경우 WINERROR.H에 정의 된 0이 아닌 오류 코드를 반환 합니다. 넣기. 참조 된 데이터가 REG_BINARY 형식이 아닌 경우 ERROR_INVALID_DATA이 반환 됩니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 활용 `RegQueryValueEx` 확인 올바른 형식의 데이터 반환 됩니다. 참조 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 대 한 자세한 내용은 합니다.
+이 메서드는를 `RegQueryValueEx` 사용 하 여 올바른 형식의 데이터가 반환 되는지 확인 합니다. 자세한 내용은 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 를 참조 하세요.
 
 > [!IMPORTANT]
->  이 메서드는 호출자가 잠재적으로 신뢰할 수 없는 데이터를 읽는 모든 레지스트리 위치를 지정할 수 있습니다. 또한 합니다 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 이 메서드에서 사용 되는 함수는 NULL 종료 문자열을 명시적으로 처리 하지 않습니다. 두 조건은 모두 호출 코드에서 확인 해야 합니다.
+>  이 메서드를 사용 하면 호출자가 레지스트리 위치를 지정 하 여 신뢰할 수 없는 데이터를 읽을 수도 있습니다. 또한이 메서드에서 사용 하는 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 함수는 NULL로 끝나는 문자열을 명시적으로 처리 하지 않습니다. 호출 코드에서 두 조건을 확인 해야 합니다.
 
 ##  <a name="querydwordvalue"></a>  CRegKey::QueryDWORDValue
 
-지정 된 값 이름을 DWORD 데이터를 검색 하려면이 메서드를 호출 합니다.
+지정 된 값 이름에 대 한 DWORD 데이터를 검색 하려면이 메서드를 호출 합니다.
 
 ```
 LONG QueryDWORDValue(
@@ -545,21 +545,21 @@ LONG QueryDWORDValue(
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
+쿼리할 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
 *dwValue*<br/>
-DWORD를 받는 버퍼에 대 한 포인터입니다.
+DWORD를 수신 하는 버퍼에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하는 경우에 ERROR_SUCCESS 반환 됩니다. 값을 읽는 메서드가 실패 하면, WINERROR에 정의 된 0이 아닌 오류 코드를 반환 합니다. 8. 참조 하는 데이터 형식 REG_DWORD 없으면 ERROR_INVALID_DATA 반환 됩니다.
+메서드가 성공 하면 ERROR_SUCCESS이 반환 됩니다. 메서드가 값을 읽지 못한 경우 WINERROR.H에 정의 된 0이 아닌 오류 코드를 반환 합니다. 넣기. 참조 된 데이터가 REG_DWORD 형식이 아닌 경우 ERROR_INVALID_DATA이 반환 됩니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 활용 `RegQueryValueEx` 확인 올바른 형식의 데이터 반환 됩니다. 참조 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 대 한 자세한 내용은 합니다.
+이 메서드는를 `RegQueryValueEx` 사용 하 여 올바른 형식의 데이터가 반환 되는지 확인 합니다. 자세한 내용은 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 를 참조 하세요.
 
 > [!IMPORTANT]
->  이 메서드는 호출자가 잠재적으로 신뢰할 수 없는 데이터를 읽는 모든 레지스트리 위치를 지정할 수 있습니다. 또한 합니다 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 이 메서드에서 사용 되는 함수는 NULL 종료 문자열을 명시적으로 처리 하지 않습니다. 두 조건은 모두 호출 코드에서 확인 해야 합니다.
+>  이 메서드를 사용 하면 호출자가 레지스트리 위치를 지정 하 여 신뢰할 수 없는 데이터를 읽을 수도 있습니다. 또한이 메서드에서 사용 하는 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 함수는 NULL로 끝나는 문자열을 명시적으로 처리 하지 않습니다. 호출 코드에서 두 조건을 확인 해야 합니다.
 
 ##  <a name="queryguidvalue"></a>  CRegKey::QueryGUIDValue
 
@@ -574,25 +574,25 @@ LONG QueryGUIDValue(
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
+쿼리할 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
 *guidValue*<br/>
-GUID를 수신 하는 변수에 대 한 포인터입니다.
+GUID를 받는 변수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하는 경우에 ERROR_SUCCESS 반환 됩니다. 값을 읽는 메서드가 실패 하면, WINERROR에 정의 된 0이 아닌 오류 코드를 반환 합니다. 8. 참조 하는 데이터가 올바른 GUID가 없는 경우 ERROR_INVALID_DATA 반환 됩니다.
+메서드가 성공 하면 ERROR_SUCCESS이 반환 됩니다. 메서드가 값을 읽지 못한 경우 WINERROR.H에 정의 된 0이 아닌 오류 코드를 반환 합니다. 넣기. 참조 된 데이터가 올바른 GUID가 아니면 ERROR_INVALID_DATA이 반환 됩니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 활용 `CRegKey::QueryStringValue` 사용 하 여 GUID 문자열을 변환 하 고 [CLSIDFromString](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromstring)합니다.
+이 메서드는를 `CRegKey::QueryStringValue` 사용 하 고 [clsidfromstring](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromstring)을 사용 하 여 문자열을 GUID로 변환 합니다.
 
 > [!IMPORTANT]
->  이 메서드는 호출자가 잠재적으로 신뢰할 수 없는 데이터를 읽는 모든 레지스트리 위치를 지정할 수 있습니다.
+>  이 메서드를 사용 하면 호출자가 레지스트리 위치를 지정 하 여 신뢰할 수 없는 데이터를 읽을 수도 있습니다.
 
 ##  <a name="querymultistringvalue"></a>  CRegKey::QueryMultiStringValue
 
-지정 된 값 이름에 대 한 다중 데이터를 검색 하려면이 메서드를 호출 합니다.
+지정 된 값 이름에 대 한 다중 문자열 데이터를 검색 하려면이 메서드를 호출 합니다.
 
 ```
 LONG QueryMultiStringValue(
@@ -604,28 +604,28 @@ LONG QueryMultiStringValue(
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
+쿼리할 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
 *pszValue*<br/>
-다중 데이터를 받는 버퍼에 대 한 포인터입니다. multistring은 두 null 문자로 끝나는 null로 끝나는 문자열의 배열.
+다중 문자열 데이터를 받는 버퍼에 대 한 포인터입니다. 다중 문자열는 null로 끝나는 문자열의 배열로, 두 개의 null 문자로 종료 됩니다.
 
 *pnChars*<br/>
-크기를 가리키는 버퍼의 TCHARs *pszValue*합니다. 메서드는 반환 될 때 *pnChars* 의 null 종결 문자를 포함 하는 검색 multistring TCHARs의 크기를 포함 합니다.
+*PszValue*가 가리키는 버퍼의 크기 (tchars)입니다. 메서드가 반환 될 때 *Pnchars* 는 종료 null 문자를 포함 하 여 검색 된 다중 문자열의 크기 (tchars)를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하는 경우에 ERROR_SUCCESS 반환 됩니다. 값을 읽는 메서드가 실패 하면, WINERROR에 정의 된 0이 아닌 오류 코드를 반환 합니다. 8. 참조 하는 데이터 형식 REG_MULTI_SZ 없으면 ERROR_INVALID_DATA 반환 됩니다.
+메서드가 성공 하면 ERROR_SUCCESS이 반환 됩니다. 메서드가 값을 읽지 못한 경우 WINERROR.H에 정의 된 0이 아닌 오류 코드를 반환 합니다. 넣기. 참조 된 데이터가 REG_MULTI_SZ 형식이 아닌 경우 ERROR_INVALID_DATA이 반환 됩니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 활용 `RegQueryValueEx` 확인 올바른 형식의 데이터 반환 됩니다. 참조 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 대 한 자세한 내용은 합니다.
+이 메서드는를 `RegQueryValueEx` 사용 하 여 올바른 형식의 데이터가 반환 되는지 확인 합니다. 자세한 내용은 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 를 참조 하세요.
 
 > [!IMPORTANT]
->  이 메서드는 호출자가 잠재적으로 신뢰할 수 없는 데이터를 읽는 모든 레지스트리 위치를 지정할 수 있습니다. 또한 합니다 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 이 메서드에서 사용 되는 함수는 NULL 종료 문자열을 명시적으로 처리 하지 않습니다. 두 조건은 모두 호출 코드에서 확인 해야 합니다.
+>  이 메서드를 사용 하면 호출자가 레지스트리 위치를 지정 하 여 신뢰할 수 없는 데이터를 읽을 수도 있습니다. 또한이 메서드에서 사용 하는 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 함수는 NULL로 끝나는 문자열을 명시적으로 처리 하지 않습니다. 호출 코드에서 두 조건을 확인 해야 합니다.
 
 ##  <a name="queryqwordvalue"></a>  CRegKey::QueryQWORDValue
 
-지정 된 값 이름을 QWORD 데이터를 검색 하려면이 메서드를 호출 합니다.
+지정 된 값 이름에 대 한 QWORD(64 데이터를 검색 하려면이 메서드를 호출 합니다.
 
 ```
 LONG QueryQWORDValue(
@@ -636,21 +636,21 @@ LONG QueryQWORDValue(
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
+쿼리할 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
 *qwValue*<br/>
-QWORD를 받는 버퍼에 대 한 포인터입니다.
+QWORD(64를 받는 버퍼에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하는 경우에 ERROR_SUCCESS 반환 됩니다. 값을 읽는 메서드가 실패 하면, WINERROR에 정의 된 0이 아닌 오류 코드를 반환 합니다. 8. 참조 하는 데이터 형식 REG_QWORD 없으면 ERROR_INVALID_DATA 반환 됩니다.
+메서드가 성공 하면 ERROR_SUCCESS이 반환 됩니다. 메서드가 값을 읽지 못한 경우 WINERROR.H에 정의 된 0이 아닌 오류 코드를 반환 합니다. 넣기. 참조 된 데이터가 REG_QWORD 형식이 아닌 경우 ERROR_INVALID_DATA이 반환 됩니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 활용 `RegQueryValueEx` 확인 올바른 형식의 데이터 반환 됩니다. 참조 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 대 한 자세한 내용은 합니다.
+이 메서드는를 `RegQueryValueEx` 사용 하 여 올바른 형식의 데이터가 반환 되는지 확인 합니다. 자세한 내용은 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 를 참조 하세요.
 
 > [!IMPORTANT]
->  이 메서드는 호출자가 잠재적으로 신뢰할 수 없는 데이터를 읽는 모든 레지스트리 위치를 지정할 수 있습니다. 또한 합니다 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 이 메서드에서 사용 되는 함수는 NULL 종료 문자열을 명시적으로 처리 하지 않습니다. 두 조건은 모두 호출 코드에서 확인 해야 합니다.
+>  이 메서드를 사용 하면 호출자가 레지스트리 위치를 지정 하 여 신뢰할 수 없는 데이터를 읽을 수도 있습니다. 또한이 메서드에서 사용 하는 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 함수는 NULL로 끝나는 문자열을 명시적으로 처리 하지 않습니다. 호출 코드에서 두 조건을 확인 해야 합니다.
 
 ##  <a name="querystringvalue"></a>  CRegKey::QueryStringValue
 
@@ -666,28 +666,28 @@ LONG QueryStringValue(
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
+쿼리할 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
 *pszValue*<br/>
 문자열 데이터를 받는 버퍼에 대 한 포인터입니다.
 
 *pnChars*<br/>
-크기를 가리키는 버퍼의 TCHARs *pszValue*합니다. 메서드는 반환 될 때 *pnChars* TCHARs, 종결 null 문자를 포함 하 여 검색 문자열의 크기를 포함 합니다.
+*PszValue*가 가리키는 버퍼의 크기 (tchars)입니다. 메서드가 반환 될 때 *Pnchars* 는 null 종결 문자를 포함 하 여 검색 된 문자열의 크기 (tchars)를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하는 경우에 ERROR_SUCCESS 반환 됩니다. 값을 읽는 메서드가 실패 하면, WINERROR에 정의 된 0이 아닌 오류 코드를 반환 합니다. 8. 참조 하는 데이터 형식 REG_SZ 없으면 ERROR_INVALID_DATA 반환 됩니다. 메서드가 ERROR_MORE_DATA를 반환 하면 *pnChars* 가 0 이면 하지 필요한 버퍼 크기 (바이트)입니다.
+메서드가 성공 하면 ERROR_SUCCESS이 반환 됩니다. 메서드가 값을 읽지 못한 경우 WINERROR.H에 정의 된 0이 아닌 오류 코드를 반환 합니다. 넣기. 참조 되는 데이터가 REG_SZ 형식이 아닌 경우 ERROR_INVALID_DATA이 반환 됩니다. 메서드가 ERROR_MORE_DATA을 반환 하는 경우에는 필요한 버퍼 크기 (바이트)가 아니라 *Pnchars* 가 0과 같습니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 활용 `RegQueryValueEx` 확인 올바른 형식의 데이터 반환 됩니다. 참조 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 대 한 자세한 내용은 합니다.
+이 메서드는를 `RegQueryValueEx` 사용 하 여 올바른 형식의 데이터가 반환 되는지 확인 합니다. 자세한 내용은 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 를 참조 하세요.
 
 > [!IMPORTANT]
->  이 메서드는 호출자가 잠재적으로 신뢰할 수 없는 데이터를 읽는 모든 레지스트리 위치를 지정할 수 있습니다. 또한 합니다 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 이 메서드에서 사용 되는 함수는 NULL 종료 문자열을 명시적으로 처리 하지 않습니다. 두 조건은 모두 호출 코드에서 확인 해야 합니다.
+>  이 메서드를 사용 하면 호출자가 레지스트리 위치를 지정 하 여 신뢰할 수 없는 데이터를 읽을 수도 있습니다. 또한이 메서드에서 사용 하는 [regqueryvalueex가](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) 함수는 NULL로 끝나는 문자열을 명시적으로 처리 하지 않습니다. 호출 코드에서 두 조건을 확인 해야 합니다.
 
 ##  <a name="queryvalue"></a>  CRegKey::QueryValue
 
-지정 된 값 필드에 대 한 데이터를 검색 하려면이 메서드를 호출 [m_hKey](#m_hkey)합니다. 이 메서드의 이전 버전이 더 이상 지원 되지 않으며 ATL_DEPRECATED로 표시 됩니다.
+[M_hKey](#m_hkey)의 지정 된 값 필드에 대 한 데이터를 검색 하려면이 메서드를 호출 합니다. 이 메서드의 이전 버전은 더 이상 지원 되지 않으며 ATL_DEPRECATED로 표시 됩니다.
 
 ```
 LONG QueryValue(
@@ -709,45 +709,45 @@ ATL_DEPRECATED LONG QueryValue(
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-쿼리 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다. 하는 경우 *pszValueName* NULL 이거나 빈 문자열 "", 메서드 형식을 검색 및 키에 대 한 데이터의 명명 되지 않은 또는 기본값이 있는 경우.
+쿼리할 값의 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다. *PszValueName* 가 NULL 이거나 빈 문자열인 경우 메서드는 키의 명명 되지 않은 값 또는 기본값 (있는 경우)에 대 한 형식 및 데이터를 검색 합니다.
 
 *pdwType*<br/>
-지정된 된 값에 저장 된 데이터의 형식을 나타내는 코드를 수신 하는 변수에 대 한 포인터입니다. 합니다 *pdwType* 매개 변수 형식 코드를 필요 하지 않은 경우 NULL 일 수 있습니다.
+지정 된 값에 저장 된 데이터 형식을 나타내는 코드를 받는 변수에 대 한 포인터입니다. 형식 코드가 필요 하지 않은 경우에는 *Pdwtype* 매개 변수가 NULL 일 수 있습니다.
 
 *pData*<br/>
-값의 데이터를 받는 버퍼에 대 한 포인터입니다. 이 매개 변수는 데이터가 필요 하지 않은 경우 NULL 일 수 있습니다.
+값의 데이터를 받는 버퍼에 대 한 포인터입니다. 데이터가 필요 하지 않은 경우이 매개 변수는 NULL 일 수 있습니다.
 
 *pnBytes*<br/>
-버퍼를 바이트 단위로 크기를 지정 하는 변수에 대 한 포인터에서 가리키는 합니다 *pData* 매개 변수입니다. 메서드가 반환 될 때이 변수 복사할 데이터의 크기를 포함 하는 *pData 합니다.*
+*.Pdata* 매개 변수가 가리키는 버퍼의 크기 (바이트)를 지정 하는 변수에 대 한 포인터입니다. 메서드가 반환 될 때이 변수에는 .Pdata로 복사 되는 데이터의 크기가 포함 *됩니다.*
 
 *dwValue*<br/>
 값 필드의 숫자 데이터입니다.
 
 *lpszValueName*<br/>
-값 필드를 쿼리할 수를 지정 합니다.
+쿼리할 값 필드를 지정 합니다.
 
 *szValue*<br/>
 값 필드의 문자열 데이터입니다.
 
 *pdwCount*<br/>
-문자열 데이터의 크기입니다. 해당 값이 처음 크기를 설정 합니다 *szValue* 버퍼입니다.
+문자열 데이터의 크기입니다. 해당 값은 처음에 *szvalue* 버퍼의 크기로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 반환 ERROR_SUCCESS입니다. 그렇지 않으면 0이 아닌 오류 코드를 WINERROR에 정의 합니다. 8.
+성공 하면 ERROR_SUCCESS를 반환 합니다. 그렇지 않으면 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-두 개의 원래 버전의 `QueryValue` 더 이상 지원 되지 않으며 ATL_DEPRECATED로 표시 됩니다. 이 양식을 사용 하는 경우 컴파일러에서 경고가 발생 합니다.
+의 `QueryValue` 원래 두 버전은 더 이상 지원 되지 않으며 ATL_DEPRECATED로 표시 됩니다. 이러한 폼을 사용 하는 경우 컴파일러에서 경고를 실행 합니다.
 
-나머지 메서드 호출 regqueryvalueex가 있습니다.
+나머지 메서드는 Regqueryvalueex가을 호출 합니다.
 
 > [!IMPORTANT]
->  이 메서드는 호출자가 잠재적으로 신뢰할 수 없는 데이터를 읽는 모든 레지스트리 위치를 지정할 수 있습니다. 또한이 메서드에서 사용 되는 regqueryvalueex가 함수는 NULL 종료 문자열을 명시적으로 처리 하지 않습니다. 두 조건은 모두 호출 코드에서 확인 해야 합니다.
+>  이 메서드를 사용 하면 호출자가 레지스트리 위치를 지정 하 여 신뢰할 수 없는 데이터를 읽을 수도 있습니다. 또한이 메서드에서 사용 하는 Regqueryvalueex가 함수는 NULL로 끝나는 문자열을 명시적으로 처리 하지 않습니다. 호출 코드에서 두 조건을 확인 해야 합니다.
 
 ##  <a name="recursedeletekey"></a>  CRegKey::RecurseDeleteKey
 
-레지스트리에서 지정된 된 키를 제거 하 고 모든 하위 키를 명시적으로 제거 하려면이 메서드를 호출 합니다.
+레지스트리에서 지정 된 키를 제거 하 고 모든 하위 키를 명시적으로 제거 하려면이 메서드를 호출 합니다.
 
 ```
 LONG RecurseDeleteKey(LPCTSTR lpszKey) throw();
@@ -756,15 +756,15 @@ LONG RecurseDeleteKey(LPCTSTR lpszKey) throw();
 ### <a name="parameters"></a>매개 변수
 
 *lpszKey*<br/>
-삭제할 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. [m_hKey](#m_hkey)합니다.
+삭제할 키의 이름을 지정 합니다. 이 이름은 [m_hKey](#m_hkey)의 하위 키 여야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 반환 ERROR_SUCCESS입니다. 그렇지 않으면 0이 아닌 오류 값 WINERROR에 정의 합니다. 8.
+성공 하면 ERROR_SUCCESS를 반환 합니다. 그렇지 않으면 WINERROR.H에 0이 아닌 오류 값이 정의 됩니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-키에 하위 키를 삭제 하려면이 메서드를 호출 해야 합니다.
+키에 하위 키가 있는 경우이 메서드를 호출 하 여 키를 삭제 해야 합니다.
 
 ##  <a name="setbinaryvalue"></a>  CRegKey::SetBinaryValue
 
@@ -780,25 +780,25 @@ LONG SetBinaryValue(
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
+설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름을 가진 값이 아직 없는 경우 메서드는 키에 추가 합니다.
 
 *pValue*<br/>
-지정 된 값 이름으로 저장 될 데이터가 포함 된 버퍼에 대 한 포인터입니다.
+지정 된 값 이름으로 저장할 데이터를 포함 하는 버퍼에 대 한 포인터입니다.
 
 *nBytes*<br/>
-가 가리키는 정보를 바이트 단위로 크기를 지정 합니다 *pValue* 매개 변수입니다.
+*Pvalue* 매개 변수가 가리키는 정보의 크기 (바이트)를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [regsetvalueex에 오류가 발생](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) 레지스트리 값을 작성할 수 있습니다.
+이 메서드는 [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) 을 사용 하 여 값을 레지스트리에 씁니다.
 
 ##  <a name="setdwordvalue"></a>  CRegKey::SetDWORDValue
 
-레지스트리 키 DWORD 값을 설정 하려면이 메서드를 호출 합니다.
+레지스트리 키의 DWORD 값을 설정 하려면이 메서드를 호출 합니다.
 
 ```
 LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
@@ -807,18 +807,18 @@ LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
+설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름을 가진 값이 아직 없는 경우 메서드는 키에 추가 합니다.
 
 *dwValue*<br/>
-지정 된 값 이름으로 저장 될 DWORD 데이터입니다.
+지정 된 값 이름으로 저장할 DWORD 데이터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [regsetvalueex에 오류가 발생](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) 레지스트리 값을 작성할 수 있습니다.
+이 메서드는 [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) 을 사용 하 여 값을 레지스트리에 씁니다.
 
 ##  <a name="setguidvalue"></a>  CRegKey::SetGUIDValue
 
@@ -831,22 +831,22 @@ LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
+설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름을 가진 값이 아직 없는 경우 메서드는 키에 추가 합니다.
 
 *guidValue*<br/>
-지정 된 값 이름으로 저장 GUID에 대 한 참조입니다.
+지정 된 값 이름으로 저장할 GUID에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 활용 `CRegKey::SetStringValue` GUID를 사용 하 여 문자열 변환 [StringFromGUID2](/windows/desktop/api/combaseapi/nf-combaseapi-stringfromguid2)합니다.
+이 메서드는를 `CRegKey::SetStringValue` 사용 하 고 [StringFromGUID2](/windows/desktop/api/combaseapi/nf-combaseapi-stringfromguid2)를 사용 하 여 GUID를 문자열로 변환 합니다.
 
 ##  <a name="setkeyvalue"></a>  CRegKey::SetKeyValue
 
-지정된 된 키의 지정 된 값 필드에 데이터를 저장 하려면이 메서드를 호출 합니다.
+지정 된 키의 지정 된 값 필드에 데이터를 저장 하려면이 메서드를 호출 합니다.
 
 ```
 LONG SetKeyValue(
@@ -858,21 +858,21 @@ LONG SetKeyValue(
 ### <a name="parameters"></a>매개 변수
 
 *lpszKeyName*<br/>
-만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. [m_hKey](#m_hkey)합니다.
+만들거나 열 키의 이름을 지정 합니다. 이 이름은 [m_hKey](#m_hkey)의 하위 키 여야 합니다.
 
 *lpszValue*<br/>
-데이터를 저장할 수를 지정 합니다. 이 매개 변수는 NULL 이어야 합니다.
+저장할 데이터를 지정 합니다. 이 매개 변수는 NULL이 아니어야 합니다.
 
 *lpszValueName*<br/>
-설정할 값 필드를 지정 합니다. 이 이름의 값 필드 없는 키에서에 추가 됩니다.
+설정할 값 필드를 지정 합니다. 이 이름을 가진 값 필드가 키에 아직 없는 경우 추가 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 반환 ERROR_SUCCESS입니다. 그렇지 않으면 0이 아닌 오류 코드를 WINERROR에 정의 합니다. 8.
+성공 하면 ERROR_SUCCESS를 반환 합니다. 그렇지 않으면 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-만들거나 열이 메서드를 호출는 *lpszkeyname 만들기* 키를 저장 합니다 *lpszValue* 에서 데이터를 *lpszValueName* 값 필드입니다.
+이 메서드를 호출 하 여 *lpszKeyName* 키를 만들거나 열고 *lpszValueName* value 필드에 *lpszValue* 데이터를 저장 합니다.
 
 ##  <a name="setkeysecurity"></a>  CRegKey::SetKeySecurity
 
@@ -885,25 +885,25 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 ### <a name="parameters"></a>매개 변수
 
 *si*<br/>
-설정할 보안 설명자의 구성 요소를 지정 합니다. 값에는 다음 값의 조합 수 있습니다.
+설정할 보안 설명자의 구성 요소를 지정 합니다. 값은 다음 값을 조합 하 여 사용할 수 있습니다.
 
 |값|의미|
 |-----------|-------------|
-|DACL_SECURITY_INFORMATION|키의 임의 액세스 제어 목록 (DACL)을 설정합니다. 키 WRITE_DAC 액세스 해야 합니다. 또는 호출 하는 프로세스 개체의 소유자 여야 합니다.|
-|GROUP_SECURITY_INFORMATION|키의 주 그룹 SID (보안 식별자)를 설정합니다. 키 WRITE_OWNER 액세스 해야 합니다. 또는 호출 하는 프로세스 개체의 소유자 여야 합니다.|
-|OWNER_SECURITY_INFORMATION|키의 소유자 SID를 설정합니다. 키 WRITE_OWNER 액세스 해야 합니다. 또는 호출 프로세스에 개체의 소유자 이거나 SE_TAKE_OWNERSHIP_NAME 권한을 사용 하도록 설정 해야 합니다.|
-|SACL_SECURITY_INFORMATION|키의 시스템 액세스 제어 목록 (SACL)를 설정합니다. 키에 ACCESS_SYSTEM_SECURITY 권한이 있어야 합니다. 이 액세스 권한을 얻을 수 있는 적절 한 방법은 se_security_name 권한을 사용 하도록 설정 하는 것 [권한](/windows/desktop/secauthz/privileges) 호출자의 현재 액세스 토큰에서 ACCESS_SYSTEM_SECURITY 액세스에 대 한 핸들을 연 다음 권한을 사용 하지 않도록 설정 합니다.|
+|DACL_SECURITY_INFORMATION|키의 DACL (임의 액세스 제어 목록)을 설정 합니다. 키에 WRITE_DAC access가 있거나 호출 하는 프로세스가 개체의 소유자 여야 합니다.|
+|GROUP_SECURITY_INFORMATION|키의 주 SID (보안 식별자)를 설정 합니다. 키에 WRITE_OWNER access가 있거나 호출 하는 프로세스가 개체의 소유자 여야 합니다.|
+|OWNER_SECURITY_INFORMATION|키의 소유자 SID를 설정 합니다. 키에 WRITE_OWNER access가 있거나 호출 프로세스가 개체의 소유자 이거나 SE_TAKE_OWNERSHIP_NAME 권한을 사용 하도록 설정 되어 있어야 합니다.|
+|SACL_SECURITY_INFORMATION|키의 SACL (시스템 액세스 제어 목록)을 설정 합니다. 키에 ACCESS_SYSTEM_SECURITY ACCESS가 있어야 합니다. 이 액세스 권한을 부여 하는 적절 한 방법은 호출자의 현재 액세스 토큰에서 SE_SECURITY_NAME [권한을](/windows/desktop/secauthz/privileges) 사용 하도록 설정 하 고 ACCESS_SYSTEM_SECURITY access에 대 한 핸들을 연 다음 권한을 사용 하지 않도록 설정 하는 것입니다.|
 
 *psd*<br/>
-에 대 한 포인터를 [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) 설정할 지정된 된 키에 대 한 보안 특성을 지정 하는 구조입니다.
+지정 된 키에 대해 설정할 보안 특성을 지정 하는 [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-키의 보안 특성을 설정합니다. 참조 [RegSetKeySecurity](/windows/desktop/api/winreg/nf-winreg-regsetkeysecurity) 대 한 자세한 내용은 합니다.
+키의 보안 특성을 설정 합니다. 자세한 내용은 [Regsetkeysecurity](/windows/desktop/api/winreg/nf-winreg-regsetkeysecurity) 를 참조 하세요.
 
 ##  <a name="setmultistringvalue"></a>  CRegKey::SetMultiStringValue
 
@@ -916,22 +916,22 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
+설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름을 가진 값이 아직 없는 경우 메서드는 키에 추가 합니다.
 
 *pszValue*<br/>
-지정 된 값 이름으로 저장 하려면 다중 데이터에 대 한 포인터입니다. multistring은 두 null 문자로 끝나는 null로 끝나는 문자열의 배열.
+지정 된 값 이름으로 저장할 다중 문자열 데이터에 대 한 포인터입니다. 다중 문자열는 null로 끝나는 문자열의 배열로, 두 개의 null 문자로 종료 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [regsetvalueex에 오류가 발생](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) 레지스트리 값을 작성할 수 있습니다.
+이 메서드는 [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) 을 사용 하 여 값을 레지스트리에 씁니다.
 
 ##  <a name="setqwordvalue"></a>  CRegKey::SetQWORDValue
 
-레지스트리 키의 QWORD 값을 설정 하려면이 메서드를 호출 합니다.
+레지스트리 키의 QWORD(64 값을 설정 하려면이 메서드를 호출 합니다.
 
 ```
 LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
@@ -940,18 +940,18 @@ LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
+설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름을 가진 값이 아직 없는 경우 메서드는 키에 추가 합니다.
 
 *qwValue*<br/>
-지정 된 값 이름으로 저장 하려면 QWORD 데이터입니다.
+지정 된 값 이름으로 저장할 QWORD(64 데이터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [regsetvalueex에 오류가 발생](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) 레지스트리 값을 작성할 수 있습니다.
+이 메서드는 [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) 을 사용 하 여 값을 레지스트리에 씁니다.
 
 ##  <a name="setstringvalue"></a>  CRegKey::SetStringValue
 
@@ -967,25 +967,25 @@ LONG SetStringValue(
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 아직 없는 경우, 메서드가 키에 추가 됩니다.
+설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름을 가진 값이 아직 없는 경우 메서드는 키에 추가 합니다.
 
 *pszValue*<br/>
 지정 된 값 이름으로 저장할 문자열 데이터에 대 한 포인터입니다.
 
 *dwType*<br/>
-레지스트리에 쓸 문자열 형식: REG_SZ (기본값) 또는 REG_EXPAND_SZ (다중 문자열)입니다.
+레지스트리에 쓸 문자열의 형식입니다. REG_SZ (기본) 또는 REG_EXPAND_SZ (multistrings의 경우) 중 하나입니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR에 정의 된 0이 아닌 오류 코드입니다. 8.
+메서드가 성공 하면 반환 값은 ERROR_SUCCESS입니다. 메서드가 실패 하는 경우 반환 값은 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [regsetvalueex에 오류가 발생](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) 레지스트리 값을 작성할 수 있습니다.
+이 메서드는 [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) 을 사용 하 여 값을 레지스트리에 씁니다.
 
 ##  <a name="setvalue"></a>  CRegKey::SetValue
 
-지정 된 값 필드에 데이터를 저장 하려면이 메서드를 호출 [m_hKey](#m_hkey)합니다. 이 메서드의 이전 버전이 더 이상 지원 되지 않으며 ATL_DEPRECATED로 표시 됩니다.
+[M_hKey](#m_hkey)의 지정 된 값 필드에 데이터를 저장 하려면이 메서드를 호출 합니다. 이 메서드의 이전 버전은 더 이상 지원 되지 않으며 ATL_DEPRECATED로 표시 됩니다.
 
 ```
 LONG SetValue(
@@ -1014,49 +1014,49 @@ ATL_DEPRECATED LONG SetValue(
 ### <a name="parameters"></a>매개 변수
 
 *pszValueName*<br/>
-설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름의 값을 이미 키에 없는 경우 메서드가 키에 추가 됩니다. 하는 경우 *pszValueName* NULL 이거나 빈 문자열인 경우 "", 형식을 설정 하는 메서드 및 키에 대 한 데이터의 명명 되지 않은 값 이나 기본값입니다.
+설정할 값의 이름을 포함 하는 문자열에 대 한 포인터입니다. 이 이름을 가진 값이 키에 아직 없는 경우 메서드는 키에이를 추가 합니다. *PszValueName* 가 NULL 이거나 빈 문자열인 경우 메서드는 키의 이름이 지정 되지 않은 값 또는 기본값에 대 한 형식과 데이터를 설정 합니다.
 
 *dwType*<br/>
-가리키는 데이터의 형식을 나타내는 코드를 지정 합니다 *pValue* 매개 변수입니다.
+*Pvalue* 매개 변수가 가리키는 데이터의 형식을 나타내는 코드를 지정 합니다.
 
 *pValue*<br/>
-지정 된 값 이름으로 저장 될 데이터가 포함 된 버퍼에 대 한 포인터입니다.
+지정 된 값 이름으로 저장할 데이터를 포함 하는 버퍼에 대 한 포인터입니다.
 
 *nBytes*<br/>
-가 가리키는 정보를 바이트 단위로 크기를 지정 합니다 *pValue* 매개 변수입니다. 데이터 형식 REG_SZ, REG_MULTI_SZ, REG_EXPAND_SZ, 이면 *nBytes* null 종결 문자 크기를 포함 해야 합니다.
+*Pvalue* 매개 변수가 가리키는 정보의 크기 (바이트)를 지정 합니다. 데이터가 REG_SZ, REG_EXPAND_SZ 또는 REG_MULTI_SZ 유형인 경우 *Nbytes* 는 null 종결 문자의 크기를 포함 해야 합니다.
 
 *hKeyParent*<br/>
-열린 키는의 핸들입니다.
+열린 키의 핸들입니다.
 
 *lpszKeyName*<br/>
-만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. *hKeyParent*합니다.
+만들거나 열 키의 이름을 지정 합니다. 이 이름은 *hKeyParent*의 하위 키 여야 합니다.
 
 *lpszValue*<br/>
-데이터를 저장할 수를 지정 합니다. 이 매개 변수는 NULL 이어야 합니다.
+저장할 데이터를 지정 합니다. 이 매개 변수는 NULL이 아니어야 합니다.
 
 *lpszValueName*<br/>
-설정할 값 필드를 지정 합니다. 이 이름의 값 필드 없는 키에서에 추가 됩니다.
+설정할 값 필드를 지정 합니다. 이 이름을 가진 값 필드가 키에 아직 없는 경우 추가 됩니다.
 
 *dwValue*<br/>
-데이터를 저장할 수를 지정 합니다.
+저장할 데이터를 지정 합니다.
 
 *bMulti*<br/>
-False 인 경우에 문자열 형식 REG_SZ 인지를 나타냅니다. True 이면 문자열은 형식 REG_MULTI_SZ multistring 나타냅니다.
+False 이면 문자열이 REG_SZ 형식 임을 나타냅니다. True 이면 문자열이 REG_MULTI_SZ 형식의 다중 문자열을 나타냅니다.
 
 *nValueLen*<br/>
-하는 경우 *bMulti* 가 true 이면 *nValueLen* 의 길이 *lpszValue* 문자에서 문자열입니다. 하는 경우 *bMulti* 이 false 이면 값이-1 이면 메서드 길이 자동으로 계산 됩니다.
+*Bmulti* 가 True 이면 *Nvaluelen* 은 *lpszValue* 문자열의 길이 (문자)입니다. *Bmulti* 가 false 인 경우 값이-1 이면 메서드가 자동으로 길이를 계산 함을 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 반환 ERROR_SUCCESS입니다. 그렇지 않으면 0이 아닌 오류 코드를 WINERROR에 정의 합니다. 8.
+성공 하면 ERROR_SUCCESS를 반환 합니다. 그렇지 않으면 WINERROR.H에 정의 된 0이 아닌 오류 코드입니다. 넣기.
 
 ### <a name="remarks"></a>설명
 
-두 개의 원래 버전의 `SetValue` ATL_DEPRECATED로 표시 되 고 더 이상 사용 해야 합니다. 이 양식을 사용 하는 경우 컴파일러에서 경고가 발생 합니다.
+의 `SetValue` 원래 두 버전은 ATL_DEPRECATED로 표시 되며 더 이상 사용할 수 없습니다. 이러한 폼을 사용 하는 경우 컴파일러에서 경고를 실행 합니다.
 
-세 번째 메서드 호출 [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa)합니다.
+세 번째 메서드는 [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa)를 호출 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[DCOM 예제](../../overview/visual-cpp-samples.md)<br/>
+[DCOM 샘플](../../overview/visual-cpp-samples.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

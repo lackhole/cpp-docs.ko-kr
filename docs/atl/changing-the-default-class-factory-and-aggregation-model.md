@@ -33,7 +33,7 @@ ATL은 개체에 대한 기본 클래스 팩터리 및 집계 모델을 정의�
 
 클래스 팩터리를 정의 하는 다른 두 매크로 [DECLARE_CLASSFACTORY_AUTO_THREAD](reference/aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) 하 고 [DECLARE_CLASSFACTORY_SINGLETON](reference/aggregation-and-class-factory-macros.md#declare_classfactory_singleton)합니다.
 
-ATL 사용 합니다 **typedef** 기본 동작을 구현 하는 메커니즘입니다. 예를 들어 DECLARE_AGGREGATABLE 매크로 사용 하 여 **typedef** 라는 형식을 정의 하려면 `_CreatorClass`, ATL. 전체에서 참조 되는 파생된 클래스에서를 **typedef** 기본 클래스의 동일한 이름을 사용 하 여 **typedef** ATL 프로그램 정의 사용 하 고 기본 동작 재정의에서 발생 합니다.
+ATL은 또한 **typedef** 매커니즘을 사용하여 기본 동작을 구현합니다. 예를 들어 DECLARE_AGGREGATABLE 매크로는 **typedef**를 사용하여 `_CreatorClass`라는 형식을 정의한 다음 ATL 전체에서 참조합니다. 파생된 클래스에서, 기본 클래스의 **typedef**와 동일한 이름을 사용하는 **typedef**의 경우, ATL은 해당 정의를 사용하고 기본 동작을 재정의합니다.
 
 ## <a name="see-also"></a>참고자료
 

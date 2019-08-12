@@ -1,5 +1,5 @@
 ---
-title: CMFCRibbonLinkCtrl 클래스
+title: Cmfc리본 Linkctrl 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonLinkCtrl
@@ -32,14 +32,14 @@ helpviewer_keywords:
 - CMFCRibbonLinkCtrl [MFC], OpenLink
 - CMFCRibbonLinkCtrl [MFC], SetLink
 ms.assetid: 77ae1941-e0ab-4a9d-911e-1752d34c079b
-ms.openlocfilehash: bc13cf29fd9fed9f91221f00d4b605b3d9c3506f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 12a83e45176f7fc6020da1f0d0ee5923ef0f466c
+ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388386"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68866157"
 ---
-# <a name="cmfcribbonlinkctrl-class"></a>CMFCRibbonLinkCtrl 클래스
+# <a name="cmfcribbonlinkctrl-class"></a>Cmfc리본 Linkctrl 클래스
 
 리본에 배치되는 하이퍼링크를 구현합니다. 하이퍼링크를 클릭하면 웹 페이지가 열립니다.
 더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
@@ -63,13 +63,13 @@ class CMFCRibbonLinkCtrl : public CMFCRibbonButton
 |이름|설명|
 |----------|-----------------|
 |[CMFCRibbonLinkCtrl::CopyFrom](#copyfrom)|( `CMFCRibbonButton::CopyFrom`을 재정의합니다.)|
-|[CMFCRibbonLinkCtrl::GetCompactSize](#getcompactsize)|(재정의 [cmfcribbonbutton:: Getcompactsize](../../mfc/reference/cmfcribbonbutton-class.md#getcompactsize).)|
+|[CMFCRibbonLinkCtrl::GetCompactSize](#getcompactsize)|[Cmfc리본 단추:: GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#getcompactsize)를 재정의 합니다.|
 |[CMFCRibbonLinkCtrl::GetLink](#getlink)|하이퍼링크의 값을 반환합니다.|
-|[CMFCRibbonLinkCtrl::GetRegularSize](#getregularsize)|(재정의 [cmfcribbonbutton:: Getregularsize](../../mfc/reference/cmfcribbonbutton-class.md#getregularsize).)|
-|[CMFCRibbonLinkCtrl::GetToolTipText](#gettooltiptext)|(재정의 [cmfcribbonbutton:: Gettooltiptext](../../mfc/reference/cmfcribbonbutton-class.md#gettooltiptext).)|
+|[CMFCRibbonLinkCtrl::GetRegularSize](#getregularsize)|[Cmfc리본 단추:: GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#getregularsize)를 재정의 합니다.|
+|[CMFCRibbonLinkCtrl::GetToolTipText](#gettooltiptext)|[Cmfc리본 단추:: GetToolTipText](../../mfc/reference/cmfcribbonbutton-class.md#gettooltiptext)를 재정의 합니다.|
 |[CMFCRibbonLinkCtrl::IsDrawTooltipImage](#isdrawtooltipimage)|( `CMFCRibbonButton::IsDrawTooltipImage`을 재정의합니다.)|
-|[CMFCRibbonLinkCtrl::OnDraw](#ondraw)|(재정의 [cmfcribbonbutton:: Ondraw](../../mfc/reference/cmfcribbonbutton-class.md#ondraw).)|
-|[CMFCRibbonLinkCtrl::OnDrawMenuImage](#ondrawmenuimage)|(재정의 [cmfcribbonbaseelement:: Ondrawmenuimage](../../mfc/reference/cmfcribbonbaseelement-class.md#ondrawmenuimage).)|
+|[CMFCRibbonLinkCtrl::OnDraw](#ondraw)|[Cmfc리본 단추:: OnDraw](../../mfc/reference/cmfcribbonbutton-class.md#ondraw)를 재정의 합니다.|
+|[CMFCRibbonLinkCtrl::OnDrawMenuImage](#ondrawmenuimage)|[Cmfc리본 Baseelement:: OnDrawMenuImage](../../mfc/reference/cmfcribbonbaseelement-class.md#ondrawmenuimage)를 재정의 합니다.|
 |[CMFCRibbonLinkCtrl::OnMouseMove](#onmousemove)|( `CMFCRibbonButton::OnMouseMove`을 재정의합니다.)|
 |[CMFCRibbonLinkCtrl::OnSetIcon](#onseticon)||
 |[CMFCRibbonLinkCtrl::OpenLink](#openlink)|하이퍼링크에 지정된 웹 페이지를 엽니다.|
@@ -77,21 +77,22 @@ class CMFCRibbonLinkCtrl : public CMFCRibbonButton
 
 ## <a name="remarks"></a>설명
 
-하이퍼링크를 만든 후 추가 패널에 호출한 [cmfcribbonpanel:: Add](../../mfc/reference/cmfcribbonpanel-class.md#add)합니다.
+하이퍼링크를 만든 후 [Cmfc리본 패널:: add](../../mfc/reference/cmfcribbonpanel-class.md#add)를 호출 하 여 패널에 추가 합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
-[CObject](../../mfc/reference/cobject-class.md) [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)
-
-[CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md) [CMFCRibbonLinkCtrl](../../mfc/reference/cmfcribbonlinkctrl-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└&nbsp;[Cmfc리본 baseelement](../../mfc/reference/cmfcribbonbaseelement-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[Cmfc리본 단추](../../mfc/reference/cmfcribbonbutton-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[Cmfc리본 링크 ctrl](../../mfc/reference/cmfcribbonlinkctrl-class.md)
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxRibbonLinkCtrl.h
+**헤더:** afxRibbonLinkCtrl
 
 ##  <a name="cmfcribbonlinkctrl"></a>  CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl
 
-생성 하 고 초기화 된 [CMFCRibbonLinkCtrl](../../mfc/reference/cmfcribbonlinkctrl-class.md) 개체입니다.
+[Cmfc리본 Linkctrl](../../mfc/reference/cmfcribbonlinkctrl-class.md) 개체를 생성 하 고 초기화 합니다.
 
 ```
 CMFCRibbonLinkCtrl(
@@ -103,17 +104,17 @@ CMFCRibbonLinkCtrl(
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-[in] 링크 컨트롤을 클릭할 때 실행 되는 명령의 명령 ID를 지정 합니다.
+진행 링크 컨트롤을 클릭할 때 실행 되는 명령의 명령 ID를 지정 합니다.
 
 *lpszText*<br/>
-[in] 링크 컨트롤에 표시할 레이블을 지정 합니다.
+진행 링크 컨트롤에 표시할 레이블을 지정 합니다.
 
 *lpszLink*<br/>
-[in] 링크 컨트롤을 사용 하 여 관련 된 하이퍼링크를 지정 합니다.
+진행 링크 컨트롤과 연결 된 하이퍼링크를 지정 합니다.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는의 생성자를 사용 하는 방법에 설명 합니다 `CMFCRibbonLinkCtrl` 클래스입니다. 이 코드 조각은의 일부인 합니다 [리본 가젯 샘플](../../overview/visual-cpp-samples.md)합니다.
+다음 예제에서는 `CMFCRibbonLinkCtrl` 클래스의 생성자를 사용 하는 방법을 보여 줍니다. 이 코드 조각은 [리본 가젯 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_RibbonGadgets#1](../../mfc/reference/codesnippet/cpp/cmfcribbonlinkctrl-class_1.cpp)]
 
@@ -189,7 +190,7 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *CDC&#42;*<br/>
+진행 *CDC&#42;*<br/>
 [in] *CRect*<br/>
 
 ### <a name="return-value"></a>반환 값
@@ -248,11 +249,11 @@ BOOL OpenLink();
 
 ### <a name="return-value"></a>반환 값
 
-연결 된 웹 페이지를 성공적으로 열린 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
+연결 된 웹 페이지가 성공적으로 열리면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-연결 된 하이퍼링크를 사용 하 여 웹 페이지를 엽니다는 `CMFCRibbonLinkCtrl` 개체입니다.
+`CMFCRibbonLinkCtrl` 개체와 연결 된 하이퍼링크를 사용 하 여 웹 페이지를 엽니다.
 
 ##  <a name="setlink"></a>  CMFCRibbonLinkCtrl::SetLink
 
@@ -265,7 +266,7 @@ void SetLink(LPCTSTR lpszLink);
 ### <a name="parameters"></a>매개 변수
 
 *lpszLink*<br/>
-[in] 하이퍼링크 텍스트를 지정합니다.
+진행 하이퍼링크 텍스트를 지정 합니다.
 
 ## <a name="see-also"></a>참고자료
 
