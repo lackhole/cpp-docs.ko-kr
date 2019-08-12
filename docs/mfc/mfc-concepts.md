@@ -46,25 +46,25 @@ MFC 프레임워크에서 메세지와 명령을 처리하는 방법과 이들�
 MFC에서 사용할 수 있는 예외 처리 원리를 설명합니다.
 
 [MFC 인터넷 프로그래밍 기초 사항](../mfc/mfc-internet-programming-basics.md)<br/>
-MFC 인터넷 프로그래밍을 지 원하는 클래스를 설명 합니다.
+인터넷 프로그래밍에 관련된 MFC 클래스를 설명합니다.
 
 [MFC 인터넷 프로그래밍 작업](../mfc/mfc-internet-programming-tasks.md)<br/>
-응용 프로그램에 인터넷 지원을 추가 하는 방법에 설명 합니다.
+응용 프로그램에 인터넷 지원을 추가하는 방법을 설명합니다.
 
 [유니코드 및 멀티바이트 문자 집합(MBCS) 지원](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)<br/>
-유니코드 및 멀티 바이트 문자 집합에 대 한 MFC 및 ATL 지원을 사용 하는 방법에 설명 합니다.
+유니코드 및 멀티 바이트 문자 집합에 대한 MFC 및 ATL 지원을 사용하는 방법에 대해 설명합니다.
 
 [MFC COM](../mfc/mfc-com.md)<br/>
 액티브 템플릿 라이브러리 (ATL)의 대부분이 설계 된 반면 COM 지원 하도록 설계 된 MFC의 하위 집합에 설명 COM 프로그래밍에 대 한 합니다.
 
 [C++ 및 MFC에서 다중 스레딩](../parallel/multithreading-with-cpp-and-mfc.md)<br/>
-프로세스 및 스레드 이란 설명 하 고 MFC의 접근 방식에 설명의 다중 스레딩과 합니다.
+프로세스 및 스레드가 무엇인지 설명하고 다중 스레딩에 대한 MFC 접근 방식을 설명합니다.
 
 [MFC의 Windows 소켓](../mfc/windows-sockets.md)<br/>
-Windows 소켓의 MFC 구현에 설명합니다.
+Windows 소켓의 MFC 구현을 설명합니다.
 
 [MFC 참조](../mfc/mfc-desktop-applications.md)<br/>
-Windows API용으로 작성된 응용 프로그램의 프레임워크인 응용 프로그램 프레임워크를 구성하는 클래스 집합인 MFC 라이브러리에 대한 참조 자료를 제공합니다.
+Windows API용으로 작성된 응용 프로그램의 프레임워크인 응용 프로그램 프레임워크를 구성하는 클래스 집합인 MFC 라이브러리에 대한 참조자료를 제공합니다.
 
 [MFC 샘플](../overview/visual-cpp-samples.md)<br/>
-MFC 데스크톱 응용 프로그램, Dll, 데이터베이스 응용 프로그램, 컨트롤, 웹 응용 프로그램 등에서 사용 하는 방법을 보여 주는 샘플에 대 한 링크를 제공 합니다.
+데스크톱 응용 프로그램, DLL, 데이터베이스 응용 프로그램, 컨트롤, 웹 응용 프로그램 등에서 MFC를 사용하는 방법을 보여주는 샘플에 대한 링크를 제공합니다.
