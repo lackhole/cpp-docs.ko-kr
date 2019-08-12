@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCPropertyGridFileProperty [MFC], CMFCPropertyGridFileProperty
 ms.assetid: 2bb8b8b4-47fc-4798-bd5e-dc8ea0b4cd9d
-ms.openlocfilehash: 20a0a50198357602d70a2111c6884058f7578af7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4b64d18a67ea499c202b81481684227200846483
+ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326709"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821287"
 ---
 # <a name="cmfcpropertygridfileproperty-class"></a>CMFCPropertyGridFileProperty 클래스
 
-`CMFCPropertyGridFileProperty` 클래스 파일 선택 대화 상자를 여는 속성 목록 컨트롤 항목을 지원 합니다.
+클래스 `CMFCPropertyGridFileProperty` 는 파일 선택 대화 상자를 여는 속성 목록 컨트롤 항목을 지원 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,21 +29,21 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty](#cmfcpropertygridfileproperty)|`CMFCPropertyGridFileProperty` 개체를 생성합니다.|
 |`CMFCPropertyGridFileProperty::~CMFCPropertyGridFileProperty`|소멸자|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|`CMFCPropertyGridFileProperty::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|
-|`CMFCPropertyGridFileProperty::OnClickButton`|(재정의 [cmfcpropertygridproperty:: Onclickbutton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|
+|`CMFCPropertyGridFileProperty::GetThisClass`|프레임 워크에서이 클래스 형식과 연결 된 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 개체에 대 한 포인터를 가져오는 데 사용 됩니다.|
+|`CMFCPropertyGridFileProperty::OnClickButton`|[Cmfcpropertygridproperty:: On클릭 단추](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton)를 재정의 합니다.|
 
 ### <a name="remarks"></a>설명
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -53,7 +53,7 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxpropertygridctrl.h
+**헤더:** afxpropertygridctrl
 
 ##  <a name="cmfcpropertygridfileproperty"></a>  CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty
 
@@ -74,38 +74,38 @@ CMFCPropertyGridFileProperty(
 ### <a name="parameters"></a>매개 변수
 
 *strName*<br/>
-[in] 속성 이름입니다.
+진행 속성 이름입니다.
 
 *bOpenFileDialog*<br/>
-[in] True 이면 엽니다는 **파일 열기** 대화 상자 False 이면를 엽니다는 **파일 저장** 대화 상자.
+진행 **파일 열기** 대화 상자를 열려면 TRUE로 설정 합니다. FALSE 이면 **파일 저장** 대화 상자를 엽니다.
 
 *strFileName*<br/>
-[in] 초기 파일 이름입니다.
+진행 초기 파일 이름입니다.
 
 *lpszDefExt*<br/>
-[in] 하나 이상의 파일 이름 확장명의 문자열입니다. 기본값은 NULL입니다.
+진행 하나 이상의 파일 이름 확장명에 대 한 문자열입니다. 기본값은 NULL입니다.
 
 *dwFlags*<br/>
-[in] 대화 상자 플래그입니다. 기본값은 OFN_HIDEREADONLY와 OFN_OVERWRITEPROMPT의 비트 조합(OR)입니다.
+진행 대화 상자 플래그입니다. 기본값은 OFN_HIDEREADONLY와 OFN_OVERWRITEPROMPT의 비트 조합(OR)입니다.
 
 *lpszFilter*<br/>
-[in] 하나 이상의 파일 필터 문자열입니다. 기본값은 NULL입니다.
+진행 하나 이상의 파일 필터에 대 한 문자열입니다. 기본값은 NULL입니다.
 
 *lpszDescr*<br/>
-[in] 속성 항목 설명입니다. 기본값은 NULL입니다.
+진행 속성 항목 설명입니다. 기본값은 NULL입니다.
 
 *dwData*<br/>
-[in] 속성 항목과 연결 된 응용 프로그램별 데이터입니다. 예를 들어 32비트 정수 또는 다른 데이터에 대한 포인터입니다. 기본값은 0입니다.
+진행 속성 항목과 연결 된 응용 프로그램별 데이터입니다. 예를 들어 32비트 정수 또는 다른 데이터에 대한 포인터입니다. 기본값은 0입니다.
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-사용 가능한 플래그의 전체 목록을 참조 하세요 [OPENFILENAME 구조체](/windows/desktop/api/commdlg/ns-commdlg-tagofna)합니다.
+사용 가능한 플래그의 전체 목록은 [OPENFILENAME 구조체](/windows/win32/api/commdlg/ns-commdlg-openfilenamew)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 `CMFCPropertyGridFileProperty` 클래스의 생성자를 사용하여 개체를 만드는 방법을 보여 줍니다. 이 예제는의 일부를 [Visual Studio 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
+다음 예제에서는 `CMFCPropertyGridFileProperty` 클래스의 생성자를 사용하여 개체를 만드는 방법을 보여 줍니다. 이 예제는 [Visual Studio Demo 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#22](../../mfc/codesnippet/cpp/cmfcpropertygridfileproperty-class_1.cpp)]
 
