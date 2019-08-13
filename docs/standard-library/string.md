@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - string header
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-ms.openlocfilehash: fda00cd5a8f8768688c8e10f25a0d1f2370a256f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 80d5d297cc28cfb019dae99e9e9736e4b2eb654f
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459197"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957121"
 ---
 # <a name="ltstringgt"></a>&lt;string&gt;
 
@@ -32,14 +32,14 @@ C++ 언어와 C++ 표준 라이브러리는 두 가지 문자열 형식을 지�
 
 - Null로 종료되는 문자 배열은 보통 C 문자열이라고 합니다.
 
-- 모든 문자 형식 템플릿 인수를 `basic_string`처리 하는 형식의 템플릿 클래스 개체입니다.
+- 모든 문자 형식 템플릿 인수를 `basic_string`처리 하는 형식의템플릿 클래스 개체입니다.
 
 ### <a name="typedefs"></a>형식 정의
 
 |형식 이름|Description|
 |-|-|
-|[string](../standard-library/string-typedefs.md#string)|Char 형식의 요소가로 포함 된 템플릿 클래스 `basic_string` 의 특수화를 설명 하는 형식입니다.  `string`|
-|[wstring](../standard-library/string-typedefs.md#wstring)|Wchar_t 형식의 요소가로 포함 된 템플릿 클래스 `basic_string` 의 특수화를 설명 하는 형식입니다.  `wstring`|
+|[string](../standard-library/string-typedefs.md#string)|Char 형식의 요소가로 포함 된 템플릿 클래스 `basic_string` 의 특수화를 설명 하는 형식입니다. `string`|
+|[wstring](../standard-library/string-typedefs.md#wstring)|Wchar_t 형식의 요소가로 포함 된 템플릿 클래스 `basic_string` 의 특수화를 설명 하는 형식입니다. `wstring`|
 |[u16string](../standard-library/string-typedefs.md#u16string)|`basic_string` 형식 요소를 기준으로 템플릿 클래스 `char16_t`의 특수화를 설명하는 형식입니다.|
 |[u32string](../standard-library/string-typedefs.md#u32string)|`basic_string` 형식 요소를 기준으로 템플릿 클래스 `char32_t`의 특수화를 설명하는 형식입니다.|
 
@@ -61,7 +61,7 @@ C++ 언어와 C++ 표준 라이브러리는 두 가지 문자열 형식을 지�
 
 |||
 |-|-|
-|[hash]()||
+|hash|문자열의 해시를 생성 합니다.|
 |[swap](../standard-library/string-functions.md#swap)|두 문자열의 문자 배열을 교환합니다.|
 |[stod](../standard-library/string-functions.md#stod)|문자 시퀀스를 **double**로 변환 합니다.|
 |[stof](../standard-library/string-functions.md#stof)|문자 시퀀스를 **float**로 변환 합니다.|
@@ -75,7 +75,7 @@ C++ 언어와 C++ 표준 라이브러리는 두 가지 문자열 형식을 지�
 
 ### <a name="functions"></a>함수
 
-|기능|Description|
+|기능|설명|
 |-|-|
 |[getline 템플릿](../standard-library/string-functions.md#getline)|입력 스트림에서 문자열을 한 줄씩 추출합니다.|
 

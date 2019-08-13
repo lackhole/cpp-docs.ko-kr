@@ -10529,22 +10529,8 @@
                   items:
                     - name: C 및 Wind32를 사용한 다중 스레딩
                       href: parallel/multithreading-with-c-and-win32.md
-                    - name: 다중 스레드 프로그램
-                      href: parallel/multithread-programs.md
-                    - name: 다중 스레딩을 위한 라이브러리 지원
-                      href: parallel/library-support-for-multithreading.md
-                    - name: 다중 스레딩을 위한 포함 파일
-                      href: parallel/include-files-for-multithreading.md
-                    - name: 스레드 컨트롤을 위한 C 런타임 라이브러리 함수
-                      href: parallel/c-run-time-library-functions-for-thread-control.md
                     - name: 샘플 다중 스레드 C 프로그램
                       href: parallel/sample-multithread-c-program.md
-                    - name: 다중 스레드 Win32 프로그램 작성
-                      href: parallel/writing-a-multithreaded-win32-program.md
-                    - name: 다중 스레드 프로그램 컴파일 및 링크
-                      href: parallel/compiling-and-linking-multithread-programs.md
-                    - name: 다중 스레드 프로그램으로 문제 영역 방지
-                      href: parallel/avoiding-problem-areas-with-multithread-programs.md
                     - name: TLS(스레드 로컬 스토리지)
                       href: parallel/thread-local-storage-tls.md
                 - name: C++ 및 MFC에서 다중 스레딩

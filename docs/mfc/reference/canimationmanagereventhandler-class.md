@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CAnimationManagerEventHandler [MFC], OnManagerStatusChanged
 - CAnimationManagerEventHandler [MFC], SetAnimationController
 ms.assetid: 6089ec07-e661-4805-b227-823b4652aade
-ms.openlocfilehash: 6661da55d1091394cff9db4589bc05c721b5ab7c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd13ba4d0dd60f65372b2c1f51d70d338566301e
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62151230"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68916255"
 ---
 # <a name="canimationmanagereventhandler-class"></a>CAnimationManagerEventHandler 클래스
 
@@ -35,23 +35,23 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CAnimationManagerEventHandler::CAnimationManagerEventHandler](#canimationmanagereventhandler)|`CAnimationManagerEventHandler` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CAnimationManagerEventHandler::CreateInstance](#createinstance)|인스턴스를 만들고 `CAnimationManagerEventHandler` 개체입니다.|
-|[CAnimationManagerEventHandler::OnManagerStatusChanged](#onmanagerstatuschanged)|애니메이션 관리자의 상태가 변경 될 때 호출 됩니다. ( `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`을 재정의합니다.)|
-|[CAnimationManagerEventHandler::SetAnimationController](#setanimationcontroller)|이벤트를 라우팅하도록 애니메이션 컨트롤러에 대 한 포인터를 저장합니다.|
+|[CAnimationManagerEventHandler::CreateInstance](#createinstance)|개체의 `CAnimationManagerEventHandler` 인스턴스를 만듭니다.|
+|[CAnimationManagerEventHandler::OnManagerStatusChanged](#onmanagerstatuschanged)|애니메이션 관리자의 상태가 변경 되 면 호출 됩니다. ( `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`을 재정의합니다.)|
+|[CAnimationManagerEventHandler::SetAnimationController](#setanimationcontroller)|애니메이션 컨트롤러에 대 한 포인터를 저장 하 여 이벤트를 라우팅합니다.|
 
 ## <a name="remarks"></a>설명
 
-이 이벤트 처리기 생성 되어 CAnimationController::EnableAnimationManagerEvent를 호출할 때 IUIAnimationManager::SetManagerEventHandler 메서드에 전달 됩니다.
+이 이벤트 처리기는 CAnimationController:: EnableAnimationManagerEvent를 호출할 때 생성 되 고 Iui-: SetManagerEventHandler 메서드로 전달 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 `CUIAnimationCallbackBase`
 
@@ -67,7 +67,7 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
 
 Visual Studio 2010 SP1이 필요합니다.
 
-CAnimationManagerEventHandler 개체를 생성합니다.
+CAnimationManagerEventHandler 개체를 생성 합니다.
 
 ```
 CAnimationManagerEventHandler();
@@ -91,22 +91,22 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 이벤트를 수신 하는 애니메이션 컨트롤러에 대 한 포인터입니다.
 
 *ppManagerEventHandler*<br/>
-출력입니다. 메서드가 성공 하는 경우 애니메이션 관리자에 상태 업데이트를 처리 하는 COM 개체에 대 한 포인터를 포함 합니다.
+출력. 메서드가 성공 하면 애니메이션 관리자에 대 한 상태 업데이트를 처리 하는 COM 개체에 대 한 포인터가 포함 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 HRESULT 오류 코드를 반환합니다.
+메서드가 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 HRESULT 오류 코드를 반환 합니다.
 
 ##  <a name="onmanagerstatuschanged"></a>  CAnimationManagerEventHandler::OnManagerStatusChanged
 
 Visual Studio 2010 SP1이 필요합니다.
 
-애니메이션 관리자의 상태가 변경 될 때 호출 됩니다.
+애니메이션 관리자의 상태가 변경 되 면 호출 됩니다.
 
 ```
 IFACEMETHOD(OnManagerStatusChanged)(
-  UI_ANIMATION_MANAGER_STATUS newStatus,
-  UI_ANIMATION_MANAGER_STATUS previousStatus);
+    UI_ANIMATION_MANAGER_STATUS newStatus,
+    UI_ANIMATION_MANAGER_STATUS previousStatus);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -115,17 +115,17 @@ IFACEMETHOD(OnManagerStatusChanged)(
 새 상태입니다.
 
 *previousStatus*<br/>
-이전 상태입니다.
+이전 상태.
 
 ### <a name="return-value"></a>반환 값
 
-현재 구현에서는 항상 S_OK;를 반환합니다.
+현재 구현에서는 항상 S_OK를 반환 합니다.
 
 ##  <a name="setanimationcontroller"></a>  CAnimationManagerEventHandler::SetAnimationController
 
 Visual Studio 2010 SP1이 필요합니다.
 
-이벤트를 라우팅하도록 애니메이션 컨트롤러에 대 한 포인터를 저장합니다.
+애니메이션 컨트롤러에 대 한 포인터를 저장 하 여 이벤트를 라우팅합니다.
 
 ```
 void SetAnimationController(CAnimationController* pAnimationController);

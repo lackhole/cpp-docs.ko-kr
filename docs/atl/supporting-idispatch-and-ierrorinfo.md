@@ -16,9 +16,9 @@ ms.locfileid: "64342032"
 ---
 # <a name="supporting-idispatch-and-ierrorinfo"></a>IDispatch 및 IErrorInfo 지원
 
-템플릿 클래스를 사용할 수 있습니다 [IDispatchImpl](../atl/reference/idispatchimpl-class.md) 의 기본 구현을 제공 하는 `IDispatch Interface` 개체에 이중 인터페이스의 일부입니다.
+템플릿 클래스 [IDispatchImpl](../atl/reference/idispatchimpl-class.md)을 사용하여 구현하는 개체의 모든 이중 인터페이스에서 `IDispatch Interface` 부분의 기본 구현을 제공할 수 있습니다.
 
-개체를 사용 하는 경우는 `IErrorInfo` 오류를 클라이언트에 다시 개체를 지원 해야 보고서에 대 한 인터페이스를 `ISupportErrorInfo Interface` 인터페이스입니다. 템플릿 클래스 [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) 개체에서 오류를 생성 하는 단일 인터페이스 하나만 있는 경우이 구현 하는 쉬운 방법을 제공 합니다.
+개체가 클라이언트에게 오류를 보고하기 위해 `IErrorInfo` 인터페이스를 사용하는 경우 개체는 반드시 `ISupportErrorInfo Interface` 인터페이스를 지원해야 합니다. 템플릿 클래스 [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md)은 개체에서 오류를 생성하는 단일 인터페이스 하나만 있는 경우 이를 구현할 수 있는 쉬운 방법을 제공합니다.
 
 ## <a name="see-also"></a>참고자료
 

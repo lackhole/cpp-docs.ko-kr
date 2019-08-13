@@ -84,18 +84,18 @@ helpviewer_keywords:
 - CPaneDivider [MFC], m_nDefaultWidth
 - CPaneDivider [MFC], m_pSliderRTC
 ms.assetid: 8e828a5d-232f-4127-b8e3-7fa45a7a476e
-ms.openlocfilehash: 43cba977d50e161c58d3e240e1282049a415c88d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4888fbf2a95652b0a38adc8ecd059a7515636cb
+ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373104"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68866121"
 ---
 # <a name="cpanedivider-class"></a>CPaneDivider 클래스
 
 더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
-`CPaneDivider` 클래스 두 창을 분할 두 그룹 창을 분할 또는 주 프레임 창의 클라이언트 영역에서 창 그룹을 구분 합니다.
+클래스 `CPaneDivider` 는 두 개의 창을 나누고 창의 두 그룹을 분할 하거나 주 프레임 창의 클라이언트 영역에서 창 그룹을 분리 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -107,7 +107,7 @@ class CPaneDivider : public CBasePane
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CPaneDivider::CPaneDivider](#cpanedivider)||
 
@@ -119,10 +119,10 @@ class CPaneDivider : public CBasePane
 |[CPaneDivider::AddPane](#addpane)||
 |[CPaneDivider::AddRecentPane](#addrecentpane)||
 |[CPaneDivider::CalcExpectedDockedRect](#calcexpecteddockedrect)||
-|[CPaneDivider::CalcFixedLayout](#calcfixedlayout)|(재정의 [cbasepane:: Calcfixedlayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|
+|[CPaneDivider::CalcFixedLayout](#calcfixedlayout)|( [Cbasepane:: CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout)를 재정의 합니다.)|
 |[CPaneDivider::CheckVisibility](#checkvisibility)||
-|[CPaneDivider::CreateEx](#createex)|(재정의 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex).)|
-|[CPaneDivider::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)|(재정의 [cbasepane:: Doesallowdyninsertbefore](../../mfc/reference/cbasepane-class.md#doesallowdyninsertbefore).)|
+|[CPaneDivider::CreateEx](#createex)|( [Cbasepane:: CreateEx](../../mfc/reference/cbasepane-class.md#createex)를 재정의 합니다.)|
+|[CPaneDivider::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)|[Cbasepane::D oesallowdyninsertbefore](../../mfc/reference/cbasepane-class.md#doesallowdyninsertbefore)를 재정의 합니다.|
 |[CPaneDivider::DoesContainFloatingPane](#doescontainfloatingpane)||
 |[CPaneDivider::FindPaneContainer](#findpanecontainer)||
 |[CPaneDivider::FindTabbedPane](#findtabbedpane)||
@@ -133,9 +133,9 @@ class CPaneDivider : public CBasePane
 |[CPaneDivider::GetWidth](#getwidth)||
 |[CPaneDivider::Init](#init)||
 |[CPaneDivider::InsertPane](#insertpane)||
-|[CPaneDivider::IsAutoHideMode](#isautohidemode)|(재정의 [CBasePane::IsAutoHideMode](../../mfc/reference/cbasepane-class.md#isautohidemode).)|
+|[CPaneDivider::IsAutoHideMode](#isautohidemode)|( [Cbasepane:: IsAutoHideMode](../../mfc/reference/cbasepane-class.md#isautohidemode)를 재정의 합니다.)|
 |[CPaneDivider::IsDefault](#isdefault)||
-|[CPaneDivider::IsHorizontal](#ishorizontal)|(재정의 [CBasePane::IsHorizontal](../../mfc/reference/cbasepane-class.md#ishorizontal).)|
+|[CPaneDivider::IsHorizontal](#ishorizontal)|( [Cbasepane:: IsHorizontal](../../mfc/reference/cbasepane-class.md#ishorizontal)를 재정의 합니다.)|
 |[CPaneDivider::Move](#move)||
 |[CPaneDivider::NotifyAboutRelease](#notifyaboutrelease)||
 |[CPaneDivider::OnShowPane](#onshowpane)||
@@ -152,43 +152,45 @@ class CPaneDivider : public CBasePane
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CPaneDivider::GetPanes](#getpanes)|창에 있는 목록을 반환 합니다 [CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md)합니다. 기본 창 구분선에 대해서만이 메서드를 호출 해야 합니다.|
-|[CPaneDivider::GetPaneDividers](#getpanedividers)|에 있는 창 구분선의 목록을 반환 합니다 [CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md)합니다. 기본 창 구분선에 대해서만이 메서드를 호출 해야 합니다.|
+|[CPaneDivider::GetPanes](#getpanes)|[CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md)에 있는 창 목록을 반환 합니다. 이 메서드는 기본 창 구분선에 대해서만 호출 해야 합니다.|
+|[CPaneDivider::GetPaneDividers](#getpanedividers)|[CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md)에 있는 창 분할자의 목록을 반환 합니다. 이 메서드는 기본 창 구분선에 대해서만 호출 해야 합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CPaneDivider::m_nDefaultWidth](#m_ndefaultwidth)|응용 프로그램의 모든 창 구분선의 픽셀에서의 기본 너비를 지정합니다.|
-|[CPaneDivider::m_pSliderRTC](#m_psliderrtc)|에 대 한 런타임 클래스 정보에 대 한 포인터를 보유 한 `CPaneDivider`-파생 개체입니다.|
+|[CPaneDivider::m_nDefaultWidth](#m_ndefaultwidth)|응용 프로그램에서 모든 창 구분선의 기본 너비 (픽셀)를 지정 합니다.|
+|[CPaneDivider::m_pSliderRTC](#m_psliderrtc)|파생 개체에 대 한 런타임 클래스 정보에 대 `CPaneDivider`한 포인터를 보유 합니다.|
 
 ## <a name="remarks"></a>설명
 
-프레임 워크 만듭니다 `CPaneDivider` 개체를 자동으로 창을 도킹 합니다.
+프레임 워크는 `CPaneDivider` 창이 도킹 될 때 개체를 자동으로 만듭니다.
 
-창 구분선의는 다음과 같은 두 종류가 있습니다.
+창 구분선에는 다음 두 가지 유형이 있습니다.
 
-- 기본 창 구분선 창 그룹을 주 프레임 창에의 한 쪽에 도킹 될 때 생성 됩니다. 기본 창 구분선에 대 한 포인터를 보유 합니다 [CPaneContainerManager 클래스](../../mfc/reference/cpanecontainermanager-class.md) 창의 그룹에 대 한 대부분의 작업을 리디렉션합니다 (를 창 크기 조정 등 다른 도킹 창 또는 컨테이너) 컨테이너 관리자에 게 합니다. 각 도킹 창을 해당 기본 창 구분선에 대 한 포인터를 유지 관리합니다.
+- 기본 창 구분선은 창 그룹이 주 프레임 창의 측면에 도킹 될 때 생성 됩니다. 기본 창 구분선은 [CPaneContainerManager 클래스](../../mfc/reference/cpanecontainermanager-class.md) 에 대 한 포인터를 보유 하 고 창 그룹에서 대부분의 작업 (예: 창 크기 조정 또는 다른 창 또는 컨테이너 도킹)을 컨테이너 관리자에 리디렉션합니다. 각 도킹 창에서는 기본 창 구분선에 대 한 포인터를 유지 합니다.
 
-- 일반 창 구분선만 컨테이너에 두 개의 창이 나눕니다. 자세한 내용은 [CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md)합니다.
+- 일반 창 구분선은 하나의 컨테이너에 두 개의 창을 나눕니다. 자세한 내용은 [CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CWorkspaceBar` 개체에서 `CPaneDivider` 개체를 가져오는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [MDI 탭 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
+다음 예제에서는 `CWorkspaceBar` 개체에서 `CPaneDivider` 개체를 가져오는 방법을 보여 줍니다. 이 코드 조각은 [MDI 탭 데모 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_MDITabsDemo#5](../../mfc/reference/codesnippet/cpp/cpanedivider-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
-[CObject](../../mfc/reference/cobject-class.md) [CCmdTarget](../../mfc/reference/ccmdtarget-class.md) [CWnd](../../mfc/reference/cwnd-class.md)
-
-[CBasePane](../../mfc/reference/cbasepane-class.md) [CPaneDivider](../../mfc/reference/cpanedivider-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└&nbsp;[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CWnd](../../mfc/reference/cwnd-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[Cbasepane](../../mfc/reference/cbasepane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CPaneDivider](../../mfc/reference/cpanedivider-class.md)
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxPaneDivider.h
+**헤더:** afxPaneDivider
 
 ##  <a name="setautohidemode"></a>  CPaneDivider::SetAutoHideMode
 
@@ -429,7 +431,7 @@ const CBasePane* GetFirstPane() const;
 
 ##  <a name="getpanedividers"></a>  CPaneDivider::GetPaneDividers
 
-에 있는 창 구분선의 목록을 반환 합니다 [CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md)합니다. 기본 창 구분선에 대해서만이 메서드를 호출 해야 합니다.
+[CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md)에 있는 창 분할자의 목록을 반환 합니다. 이 메서드는 기본 창 구분선에 대해서만 호출 해야 합니다.
 
 ```
 void GetPaneDividers(CObList& lstSliders);
@@ -438,11 +440,11 @@ void GetPaneDividers(CObList& lstSliders);
 ### <a name="parameters"></a>매개 변수
 
 *lstSliders*<br/>
-[out] 창 컨테이너에 있는 창 구분선의 목록을 포함 합니다.
+제한이 창 컨테이너에 있는 창 분할자의 목록을 포함 합니다.
 
 ### <a name="remarks"></a>설명
 
-기본 창 구분선만에 대 한이 메서드를 호출 해야 합니다. 기본 창 구분선 구분선 전체 창 컨테이너의 크기를 조정 하는 경우
+이 메서드는 기본 창 구분선에 대해서만 호출 해야 합니다. 기본 창 구분선은 전체 창 컨테이너의 크기를 조정 하는 구분선입니다.
 
 ##  <a name="getpanedividerstyle"></a>  CPaneDivider::GetPaneDividerStyle
 
@@ -456,7 +458,7 @@ DWORD GetPaneDividerStyle() const;
 
 ##  <a name="getpanes"></a>  CPaneDivider::GetPanes
 
-창에 있는 목록을 반환 합니다 [CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md)합니다. 기본 창 구분선 검색에이 메서드를 호출 해야 합니다.
+[CPaneContainer 클래스](../../mfc/reference/cpanecontainer-class.md)에 있는 창 목록을 반환 합니다. 이 메서드는 기본 창 구분선을 검색 하는 경우에만 호출 해야 합니다.
 
 ```
 void GetPanes(CObList& lstBars);
@@ -465,11 +467,11 @@ void GetPanes(CObList& lstBars);
 ### <a name="parameters"></a>매개 변수
 
 *lstBars*<br/>
-[out] 창 컨테이너에 있는 창의 목록에 포함 되어 있습니다.
+제한이 창 컨테이너에 있는 창 목록을 포함 합니다.
 
 ### <a name="remarks"></a>설명
 
-기본 창 구분선만에 대 한이 메서드를 호출 해야 합니다. 기본 창 구분선 구분선 전체 창 컨테이너의 크기를 조정 하는 경우
+이 메서드는 기본 창 구분선에 대해서만 호출 해야 합니다. 기본 창 구분선은 전체 창 컨테이너의 크기를 조정 하는 구분선입니다.
 
 ##  <a name="getrootcontainerrect"></a>  CPaneDivider::GetRootContainerRect
 
@@ -559,7 +561,7 @@ BOOL IsHorizontal() const;
 
 ##  <a name="m_ndefaultwidth"></a>  CPaneDivider::m_nDefaultWidth
 
-응용 프로그램의 모든 창 구분선의 픽셀에서의 기본 너비를 지정합니다.
+응용 프로그램에 있는 모든 창 구분선의 기본 너비 (픽셀 단위)를 지정 합니다.
 
 ```
 AFX_IMPORT_DATA static int m_nDefaultWidth;
@@ -582,7 +584,7 @@ virtual void Move(
 
 ##  <a name="m_psliderrtc"></a>  CPaneDivider::m_pSliderRTC
 
-에 대 한 런타임 클래스 정보에 대 한 포인터를 보유 한 `CPaneDivider`-파생 개체입니다.
+파생 개체에 대 한 런타임 클래스 정보에 `CPaneDivider`대 한 포인터를 보유 합니다.
 
 ```
 AFX_IMPORT_DATA static CRuntimeClass* m_pSliderRTC;
@@ -590,11 +592,11 @@ AFX_IMPORT_DATA static CRuntimeClass* m_pSliderRTC;
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 창 구분선을 만든 경우이 멤버 변수를 설정 합니다. 이렇게 하면 창을 그릴 때 프로그램 창 구분선을 만들기 위해 프레임 워크.
+사용자 지정 창 구분선을 만드는 경우이 멤버 변수를 설정 합니다. 이를 통해 프레임 워크는 창을 그릴 때 창 구분선을 만들 수 있습니다.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 설정 하는 방법의 `m_pSliderRTC` 멤버 변수:
+다음 예제에서는 멤버 변수를 `m_pSliderRTC` 설정 하는 방법을 보여 줍니다.
 
 ```
 class CMySplitter : public CPaneDivider

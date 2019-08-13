@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CMFCTasksPane [MFC], Update
 - CMFCTasksPane [MFC], OnActivateTasksPanePage
 ms.assetid: b456328e-2525-4642-b78b-9edd1a1a7d3f
-ms.openlocfilehash: eeb24a0a02d1a084c83e280705344a9e5c505724
-ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
+ms.openlocfilehash: c9e6dbde696f8c66d7abcf222c861de1c83165c5
+ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552279"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68866235"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane 클래스
 
@@ -217,13 +217,13 @@ class CMFCTasksPane : public CDockablePane
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCTasksPane::CMFCTasksPane](#cmfctaskspane)|`CMFCTasksPane` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCTasksPane::AddGroup](#addgroup)|작업 창 컨트롤에 새 작업 그룹을 추가합니다.|
 |[CMFCTasksPane::AddLabel](#addlabel)|지정된 작업 그룹에 새 정적 레이블을 추가합니다.|
@@ -234,11 +234,11 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::AddWindow](#addwindow)|작업 창에 자식 창을 추가합니다.|
 |[CMFCTasksPane::CollapseAllGroups](#collapseallgroups)||
 |[CMFCTasksPane::CollapseGroup](#collapsegroup)|프로그래밍 방식으로 그룹을 축소합니다.|
-|[CMFCTasksPane::CreateDefaultMiniframe](#createdefaultminiframe)|(재정의 [cpane:: Createdefaultminiframe](../../mfc/reference/cpane-class.md#createdefaultminiframe).)|
-|[CMFCTasksPane::CreateMenu](#createmenu)|에 대 한 메뉴를 만드는 프레임 워크에서 호출 된 **다른 작업 창** 메뉴 단추입니다.|
+|[CMFCTasksPane::CreateDefaultMiniframe](#createdefaultminiframe)|( [Cpane:: CreateDefaultMiniframe](../../mfc/reference/cpane-class.md#createdefaultminiframe)를 재정의 합니다.)|
+|[CMFCTasksPane::CreateMenu](#createmenu)|**다른 작업 창** 메뉴 단추에 대 한 메뉴를 만들기 위해 프레임 워크에서 호출 됩니다.|
 |[CMFCTasksPane::EnableAnimation](#enableanimation)|작업 그룹을 축소 또는 확장하는 동안 애니메이션을 사용하거나 사용하지 않도록 설정합니다.|
 |[CMFCTasksPane::EnableGroupCollapse](#enablegroupcollapse)|작업 그룹을 축소할 수 있는지를 지정합니다.|
-|[CMFCTasksPane::EnableHistoryMenuButtons](#enablehistorymenubuttons)|드롭다운 메뉴에서을 사용할지 **다음** 하 고 **이전** 탐색 단추입니다.|
+|[CMFCTasksPane::EnableHistoryMenuButtons](#enablehistorymenubuttons)|**다음** 및 **이전** 탐색 단추에서 드롭다운 메뉴를 사용 하거나 사용 하지 않도록 설정 합니다.|
 |[CMFCTasksPane::EnableNavigationToolbar](#enablenavigationtoolbar)|탐색 도구 모음을 사용하거나 사용하지 않도록 설정합니다.|
 |[CMFCTasksPane::EnableOffsetCustomControls](#enableoffsetcustomcontrols)||
 |[CMFCTasksPane::EnableScrollButtons](#enablescrollbuttons)|스크롤 막대 대신 스크롤 단추를 사용하도록 설정합니다.|
@@ -256,7 +256,7 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::GetPageByGroup](#getpagebygroup)|지정된 그룹에 대한 페이지 인덱스를 검색합니다.|
 |[CMFCTasksPane::GetPagesCount](#getpagescount)|페이지 수를 반환합니다.|
 |[CMFCTasksPane::GetPreviousPages](#getpreviouspages)||
-|[CMFCTasksPane::GetScrollBarCtrl](#getscrollbarctrl)|(재정의 [cwnd:: Getscrollbarctrl](../../mfc/reference/cwnd-class.md#getscrollbarctrl).)|
+|[CMFCTasksPane::GetScrollBarCtrl](#getscrollbarctrl)|( [CWnd:: GetScrollBarCtrl](../../mfc/reference/cwnd-class.md#getscrollbarctrl)를 재정의 합니다.)|
 |[CMFCTasksPane::GetTask](#gettask)|작업을 검색합니다.|
 |[CMFCTasksPane::GetTaskCount](#gettaskcount)|지정된 그룹의 작업 항목 수를 반환합니다.|
 |[CMFCTasksPane::GetTaskGroup](#gettaskgroup)|지정된 그룹 인덱스에 대한 작업 그룹을 반환합니다.|
@@ -270,12 +270,12 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::IsBackButtonEnabled](#isbackbuttonenabled)|뒤로 단추의 사용 여부를 나타냅니다.|
 |[CMFCTasksPane::IsForwardButtonEnabled](#isforwardbuttonenabled)|앞으로 단추의 사용 여부를 나타냅니다.|
 |[CMFCTasksPane::IsGroupCollapseEnabled](#isgroupcollapseenabled)||
-|[CMFCTasksPane::IsHistoryMenuButtonsEnabled](#ishistorymenubuttonsenabled)|나타냅니다 여부는 **다음** 및 **이전** 탐색 단추에서 드롭다운 메뉴에 있습니다.|
+|[CMFCTasksPane::IsHistoryMenuButtonsEnabled](#ishistorymenubuttonsenabled)|**다음** 및 **이전** 탐색 단추에 드롭다운 메뉴가 있는지 여부를 나타냅니다.|
 |[CMFCTasksPane::IsNavigationToolbarEnabled](#isnavigationtoolbarenabled)|탐색 도구 모음이 사용되는지를 나타냅니다.|
 |[CMFCTasksPane::IsToolBox](#istoolbox)||
 |[CMFCTasksPane::IsWrapLabelsEnabled](#iswraplabelsenabled)|작업 창의 레이블이 자동 줄 바꿈되는지를 나타냅니다.|
 |[CMFCTasksPane::IsWrapTasksEnabled](#iswraptasksenabled)|작업 창의 작업이 자동 줄 바꿈되는지를 나타냅니다.|
-|[CMFCTasksPane::LoadState](#loadstate)|(재정의 [cdockablepane:: Loadstate](cdockablepane-class.md#loadstate).)|
+|[CMFCTasksPane::LoadState](#loadstate)|[CDockablePane:: LoadState](cdockablepane-class.md#loadstate)를 재정의 합니다.|
 |[CMFCTasksPane::OnCancel](#oncancel)||
 |[CMFCTasksPane::OnClickTask](#onclicktask)|사용자가 작업 창에서 항목을 클릭하면 프레임워크에서 호출됩니다.|
 |[CMFCTasksPane::OnOK](#onok)||
@@ -283,18 +283,18 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::OnPressForwardButton](#onpressforwardbutton)|사용자가 앞으로 탐색 단추를 클릭하면 프레임워크에서 호출됩니다.|
 |[CMFCTasksPane::OnPressHomeButton](#onpresshomebutton)|사용자가 홈 탐색 단추를 클릭하면 프레임워크에서 호출됩니다.|
 |[CMFCTasksPane::OnPressOtherButton](#onpressotherbutton)||
-|[CMFCTasksPane::OnSetAccData](#onsetaccdata)|(재정의 [cbasepane:: Onsetaccdata](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|
-|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|(재정의 [cdockablepane:: Onupdatecmdui](cdockablepane-class.md).)|
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(재정의 [cdockablepane:: Pretranslatemessage](cdockablepane-class.md).)|
-|[CMFCTasksPane::RecalcLayout](#recalclayout)|(재정의 [cpane:: Recalclayout](../../mfc/reference/cpane-class.md#recalclayout).)|
+|[CMFCTasksPane::OnSetAccData](#onsetaccdata)|[Cbasepane:: OnSetAccData](../../mfc/reference/cbasepane-class.md#onsetaccdata)를 재정의 합니다.|
+|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|[CDockablePane:: OnUpdateCmdUI](cdockablepane-class.md)를 재정의 합니다.|
+|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|[CDockablePane::P retranslatemessage](cdockablepane-class.md)를 재정의 합니다.|
+|[CMFCTasksPane::RecalcLayout](#recalclayout)|( [Cpane:: RecalcLayout](../../mfc/reference/cpane-class.md#recalclayout)를 재정의 합니다.)|
 |[CMFCTasksPane::RemoveAllGroups](#removeallgroups)|지정된 페이지에서 모든 그룹을 제거합니다.|
 |[CMFCTasksPane::RemoveAllPages](#removeallpages)|기본(첫 번째) 페이지를 제외한 모든 페이지를 작업 창에서 제거합니다.|
 |[CMFCTasksPane::RemoveAllTasks](#removealltasks)|그룹에서 모든 작업을 제거합니다.|
 |[CMFCTasksPane::RemoveGroup](#removegroup)|그룹을 제거합니다.|
 |[CMFCTasksPane::RemovePage](#removepage)|작업 창에서 지정된 페이지를 제거합니다.|
 |[CMFCTasksPane::RemoveTask](#removetask)|작업 그룹에서 작업을 제거합니다.|
-|[CMFCTasksPane::SaveState](#savestate)|(재정의 [cdockablepane:: Savestate](cdockablepane-class.md).)|
-|[CMFCTasksPane::Serialize](#serialize)|(재정의 [cdockablepane:: Serialize](cdockablepane-class.md).)|
+|[CMFCTasksPane::SaveState](#savestate)|[CDockablePane:: SaveState](cdockablepane-class.md)를 재정의 합니다.|
+|[CMFCTasksPane::Serialize](#serialize)|[CDockablePane:: Serialize](cdockablepane-class.md)를 재정의 합니다.|
 |[CMFCTasksPane::SetActivePage](#setactivepage)|작업 창에서 지정된 페이지를 활성화합니다.|
 |[CMFCTasksPane::SetCaption](#setcaption)|작업 창의 캡션 이름을 설정합니다.|
 |[CMFCTasksPane::SetGroupCaptionHeight](#setgroupcaptionheight)|그룹 캡션의 높이를 설정합니다.|
@@ -320,7 +320,7 @@ class CMFCTasksPane : public CDockablePane
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCTasksPane::OnActivateTasksPanePage](#onactivatetaskspanepage)|새 작업 창 페이지가 활성화될 때 프레임워크에서 호출됩니다.|
 
@@ -334,23 +334,23 @@ class CMFCTasksPane : public CDockablePane
 
 - 작업 창에서 각 항목에 아이콘을 할당할 수 있습니다.
 
-- 개별 항목은 사용자가 항목을 클릭할 때 실행되는 명령 ID와 연결될 수 있습니다. 클릭이 발생 하는 경우 WM_COMMAND 메시지 작업 창 컨트롤의 소유자에 게 보내집니다.
+- 개별 항목은 사용자가 항목을 클릭할 때 실행되는 명령 ID와 연결될 수 있습니다. 클릭이 발생 하면 WM_COMMAND 메시지가 작업 창 컨트롤의 소유자에 게 전송 됩니다.
 
 응용 프로그램에서 `CMFCTasksPane` 컨트롤을 사용하려면 다음 단계를 수행합니다.
 
 1. `CMFCTasksPane` 개체를 주 프레임 창 클래스에 포함합니다.
 
-1. WM_CREATE 메시지를 처리 하는 경우 호출 된 `Create` 메서드. 일반을 사용할 수 있습니다 [CControlBar](../../mfc/reference/ccontrolbar-class.md) 스타일입니다. 자세한 내용은 `CControlBar::Create`을 참조하세요.
+1. WM_CREATE 메시지를 처리할 때 `Create` 메서드를 호출 합니다. 일반 [Ccontrolbar](../../mfc/reference/ccontrolbar-class.md) 스타일을 사용할 수 있습니다. 자세한 내용은 `CControlBar::Create`을 참조하세요.
 
-1. 호출 된 [cmfctaskspane:: Addgroup](#addgroup) 다양 한 그룹을 추가 하는 방법입니다.
+1. [CMFCTasksPane:: AddGroup](#addgroup) 메서드를 호출 하 여 다양 한 그룹을 추가 합니다.
 
-1. 호출을 [cmfctaskspane:: Addtask](#addtask), [cmfctaskspane:: Addlabel](#addlabel) 하거나 [cmfctaskspane:: Addmrufileslist](#addmrufileslist) 각 그룹에 새 항목 (작업)을 추가 하는 멤버 함수입니다.
+1. [CMFCTasksPane:: AddTask](#addtask), [CMFCTasksPane:: Addtask](#addlabel) 또는 [CMFCTasksPane:: addmomfileslist](#addmrufileslist) 멤버 함수를 호출 하 여 각 그룹에 새 항목 (작업)을 추가 합니다.
 
-1. 호출 [cmfctaskspane:: Enablegroupcollapse](#enablegroupcollapse) 항목 그룹을 축소할 수 있는지 여부를 지정 합니다.
+1. [CMFCTasksPane:: EnableGroupCollapse](#enablegroupcollapse) 를 호출 하 여 항목 그룹을 축소할 수 있는지 여부를 지정 합니다.
 
-다음 그림에서는 일반적인 작업 창 컨트롤을 보여 줍니다. 첫 번째 그룹은는 *특수* 그룹이 고 해당 캡션은 더 진한 색입니다. 세 번째 그룹이 축소됩니다. 마지막 그룹은 작업 창의 아래쪽에 맞춰지고 캡션을 포함하지 않고, 그룹의 마지막 작업은 단순한 레이블입니다.
+다음 그림에서는 일반적인 작업 창 컨트롤을 보여 줍니다. 첫 번째 그룹은 *특수* 그룹이 고, 캡션은 짙은 색입니다. 세 번째 그룹이 축소됩니다. 마지막 그룹은 작업 창의 아래쪽에 맞춰지고 캡션을 포함하지 않고, 그룹의 마지막 작업은 단순한 레이블입니다.
 
-![작업 창 예제](../../mfc/reference/media/nexttaskpane.png "작업창의 예")
+![작업창의 예](../../mfc/reference/media/nexttaskpane.png "작업창의 예")
 
 다양한 여백 및 오프셋을 조정하여 작업 창의 모양을 사용자 지정할 수 있습니다. 다음 그림에서는 이들 변수의 의미를 분명히 설명합니다.
 
@@ -358,21 +358,23 @@ class CMFCTasksPane : public CDockablePane
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `CMFCTasksPane` 개체를 생성하고 `CMFCTasksPane` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서는 작업 그룹의 축소를 사용 하도록 설정 하려면 드롭다운 메뉴에서 사용 하도록 설정 합니다 **다음** 및 **이전** 탐색 단추, 스크롤 막대 대신 스크롤 단추를 사용 하도록 설정, 단어를 사용 하도록 설정 레이블 텍스트에 줄 바꿈, 그룹 캡션에 대 한 텍스트 색을 설정 하 고 가로 및 세로 여백을 설정 작업 창의 캡션 이름을 설정 합니다.
+다음 예제에서는 `CMFCTasksPane` 개체를 생성하고 `CMFCTasksPane` 클래스에서 다양한 메서드를 사용하는 방법을 보여 줍니다. 이 예제에서는 작업 그룹 축소를 사용 하도록 설정 하 고, **다음** 및 **이전** 탐색 단추에서 드롭다운 메뉴를 사용 하도록 설정 하 고, 스크롤 막대 대신 스크롤 단추를 사용 하도록 설정 하 고, 레이블의 텍스트에 대 한 자동 줄 바꿈을 사용 하도록 설정 하는 방법을 보여 줍니다. 작업 창의 캡션 이름, 그룹 캡션에 대 한 텍스트 색 설정 및 가로 및 세로 여백 설정
 
 [!code-cpp[NVC_MFC_RibbonApp#28](../../mfc/reference/codesnippet/cpp/cmfctaskspane-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
-[CObject](../../mfc/reference/cobject-class.md) [CCmdTarget](../../mfc/reference/ccmdtarget-class.md) [CWnd](../../mfc/reference/cwnd-class.md)
-
-[CBasePane](../../mfc/reference/cbasepane-class.md) [CPane](../../mfc/reference/cpane-class.md) [CDockablePane](../../mfc/reference/cdockablepane-class.md)
-
-`CMFCTasksPane`
+[CObject](../../mfc/reference/cobject-class.md)\
+└&nbsp;[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CWnd](../../mfc/reference/cwnd-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[Cbasepane](../../mfc/reference/cbasepane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[Cpane](../../mfc/reference/cpane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CDockablePane](../../mfc/reference/cdockablepane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;`CMFCTasksPane`
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxTasksPane.h
+**헤더:** afxtaskspane.h
 
 ##  <a name="addgroup"></a>  CMFCTasksPane::AddGroup
 
@@ -396,33 +398,33 @@ int AddGroup(
 ### <a name="parameters"></a>매개 변수
 
 *nPageIdx*<br/>
-[in] 0부터 시작 페이지 인덱스를 지정합니다.
+진행 0부터 시작 하는 페이지 인덱스를 지정 합니다.
 
 *lpszGroupName*<br/>
-[in] 그룹 이름을 지정합니다.
+진행 그룹 이름을 지정 합니다.
 
 *bBottomLocation*<br/>
-[in] 작업 창 컨트롤의 맨 아래에서 그룹을 만들려면 TRUE 그렇지 않으면 FALSE입니다.
+진행 작업 창 컨트롤의 맨 아래에 그룹을 만들려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
 *bSpecial*<br/>
-[in] 이 그룹으로 표시 하려면 TRUE를 *특수* 그룹, 그렇지 않으면 FALSE입니다. 특수 한 그룹에 대 한 자세한 내용은의 설명 섹션을 참조 하세요. `CMFCTasksPane`합니다.
+진행 이 그룹을 *특수* 그룹으로 표시 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다. 특수 그룹에 대 한 자세한 내용은의 `CMFCTasksPane`설명 섹션을 참조 하십시오.
 
 *hIcon*<br/>
-[in] 그룹 캡션의 표시할 아이콘을 지정 합니다.
+진행 그룹 캡션에 표시할 아이콘을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-클래스를 유지 관리 하는 그룹의 내부 목록에 그룹의 0부터 시작 하는 인덱스입니다.
+클래스가 유지 관리 하는 그룹의 내부 목록에서 그룹의 인덱스 (0부터 시작)입니다.
 
 ### <a name="remarks"></a>설명
 
-작업 그룹을 만들고 해당 그룹 작업 창 컨트롤을 추가 하려면이 메서드를 호출 합니다.
+작업 그룹을 만들고 해당 그룹을 작업 창 컨트롤에 추가 하려면이 메서드를 호출 합니다.
 
-프레임 워크 작업 창 컨트롤의 맨 위나 맨 아래에서 작업 그룹을 표시합니다. 프레임 워크 아래쪽; 그룹이 하나만 표시할 수 있습니다. 이 그룹은 마지막으로 추가 되어야 합니다.
+프레임 워크는 작업 창 컨트롤의 위쪽 이나 아래쪽에 작업 그룹을 표시 합니다. 프레임 워크는 아래쪽에 하나의 그룹만 표시할 수 있습니다. 이 그룹은 마지막에 추가 해야 합니다.
 
 ##  <a name="addlabel"></a>  CMFCTasksPane::AddLabel
 
-지정된 된 작업 그룹에 레이블을 추가합니다.
+지정 된 작업 그룹에 레이블을 추가 합니다.
 
 ```
 int AddLabel(
@@ -435,28 +437,28 @@ int AddLabel(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 레이블을 추가 됩니다 여기서 그룹의 인덱스를 지정 합니다.
+진행 레이블이 추가 되는 그룹의 인덱스를 지정 합니다.
 
 *lpszLabelName*<br/>
-[in] 레이블의 이름을 지정합니다.
+진행 레이블의 이름을 지정 합니다.
 
 *nTaskIcon*<br/>
-[in] 레이블 옆에 표시할 아이콘을 지정 합니다. 프레임 워크 아이콘 이미지 목록을 저장합니다. 이 매개 변수는 해당 목록에 대 한 인덱스입니다.
+진행 레이블 옆에 표시할 아이콘을 지정 합니다. 프레임 워크는 이미지 목록에 아이콘을 저장 합니다. 이 매개 변수는 해당 목록에 대 한 인덱스입니다.
 
 *bIsBold*<br/>
-[in] 굵게 표시 된 텍스트에 레이블을 표시 하려면 TRUE 그렇지 않으면 FALSE입니다.
+진행 레이블을 굵은 텍스트로 표시 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
 
-레이블을 추가 된 그룹의 인덱스 또는 그룹을 지정 하면-1 *해제* 존재 하지 않습니다.
+레이블이 추가 된 그룹의 인덱스 (0부터 시작) 이거나, *ngroup* 으로 지정 된 그룹이 없는 경우-1입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임 워크 작업 및 레이블을 다르게 처리합니다. 사용자가 태스크를 클릭 하면 프레임 워크는 명령을 실행 합니다. 사용자가 레이블을 클릭 하면 명령이 실행 됩니다. 자세한 내용은 [cmfctaskspane:: Addtask](#addtask)합니다.
+프레임 워크는 작업과 레이블을 다르게 처리 합니다. 사용자가 작업을 클릭할 때 프레임 워크는 명령을 실행 합니다. 사용자가 레이블을 클릭 하면 명령이 실행 되지 않습니다. 자세한 내용은 [CMFCTasksPane:: AddTask](#addtask)를 참조 하세요.
 
 ##  <a name="addmrufileslist"></a>  CMFCTasksPane::AddMRUFilesList
 
-Mru (가장 최근에 사용 됨) 파일 목록의 그룹에 저장 된 각 파일에 대 한 작업을 추가 합니다.
+가장 최근에 사용한 (MRU) 파일 목록에 저장 된 각 파일에 대 한 작업을 그룹에 추가 합니다.
 
 ```
 int AddMRUFilesList(
@@ -467,18 +469,18 @@ int AddMRUFilesList(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 그룹의 인덱스를 지정 합니다. 이 메서드는 최근에 사용한 파일 목록에서이 매개 변수에서 지정한 그룹에 추가 합니다.
+진행 그룹의 인덱스를 지정 합니다. 이 메서드는이 매개 변수로 지정 된 그룹에 MRU 파일 목록을 추가 합니다.
 
 *nMaxFiles*<br/>
-[in] 최근에 사용한 파일 목록에 표시할 파일의 수를 지정 합니다.
+진행 MRU 파일 목록에 표시할 파일 수를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-최근에 사용한 파일 목록에서 추가 된 그룹의 인덱스 또는 그룹을 지정 하면-1 *해제* 존재 하지 않습니다.
+MRU 파일 목록이 추가 된 그룹의 인덱스 (0부터 시작)이 고, *ngroup* 으로 지정 된 그룹이 없는 경우-1입니다.
 
 ##  <a name="addpage"></a>  CMFCTasksPane::AddPage
 
-작업 창에 페이지를 추가합니다.
+작업 창에 페이지를 추가 합니다.
 
 ```
 int AddPage(LPCTSTR lpszPageLabel);
@@ -487,11 +489,11 @@ int AddPage(LPCTSTR lpszPageLabel);
 ### <a name="parameters"></a>매개 변수
 
 *lpszPageLabel*<br/>
-[in] 페이지에 대 한 레이블을 지정합니다.
+진행 페이지의 레이블을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-새 페이지의 0부터 시작 하는 인덱스입니다.
+새 페이지의 인덱스 (0부터 시작)입니다.
 
 ##  <a name="addseparator"></a>  CMFCTasksPane::AddSeparator
 
@@ -509,7 +511,7 @@ int AddSeparator(int nGroup);
 
 ##  <a name="addtask"></a>  CMFCTasksPane::AddTask
 
-지정된 된 작업 그룹에 작업을 추가 합니다.
+지정 된 작업 그룹에 작업을 추가 합니다.
 
 ```
 int AddTask(
@@ -523,23 +525,23 @@ int AddTask(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 작업 항목이 있는 그룹 인덱스를 지정 합니다.
+진행 태스크가 추가 되는 그룹 인덱스를 지정 합니다.
 
 *lpszTaskName*<br/>
-[in] 태스크의 이름을 지정합니다.
+진행 태스크의 이름을 지정 합니다.
 
 *nTaskIcon*<br/>
-[in] 태스크 옆에 표시할 아이콘을 지정 합니다. 프레임 워크 아이콘 이미지 목록을 저장합니다. 이 매개 변수는 해당 목록에 대 한 인덱스입니다.
+진행 작업 옆에 표시할 아이콘을 지정 합니다. 프레임 워크는 이미지 목록에 아이콘을 저장 합니다. 이 매개 변수는 해당 목록에 대 한 인덱스입니다.
 
 *uiCommandID*<br/>
-[in] 작업을 마우스 오른쪽 단추로 클릭할 때 실행할 명령의 명령 ID를 지정 합니다. 작업 하는 경우 레이블을으로 처리 됩니다 *uiCommandID* 은 0입니다.
+진행 사용자가 작업을 클릭할 때 실행할 명령의 명령 ID를 지정 합니다. *UiCommandID* 가 0 인 경우 작업은 레이블로 처리 됩니다.
 
 *dwUserData*<br/>
-[in] 태스크와 연결할 사용자 정의 데이터를 지정 합니다.
+진행 태스크와 연결할 사용자 정의 데이터를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-태스크 추가 된 그룹의 인덱스 또는 그룹을 지정 하면-1 *해제* 존재 하지 않습니다.
+태스크가 추가 된 그룹의 인덱스 (0부터 시작) 이거나, *ngroup* 으로 지정 된 그룹이 없는 경우-1입니다.
 
 ##  <a name="addwindow"></a>  CMFCTasksPane::AddWindow
 
@@ -557,31 +559,31 @@ int AddWindow(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 창 추가 됩니다 여기서 그룹 인덱스를 지정 합니다.
+진행 창이 추가 된 그룹 인덱스를 지정 합니다.
 
 *hwndTask*<br/>
-[in] 추가할 창의 핸들을 지정 합니다.
+진행 추가할 창의 핸들을 지정 합니다.
 
 *nWndHeight*<br/>
-[in] 창의 높이 지정합니다.
+진행 창의 높이를 지정 합니다.
 
 *bAutoDestroyWindow*<br/>
-[in] 작업 제거 되거나 창을 제거. 그렇지 않으면 FALSE입니다.
+진행 작업이 제거 될 때 창을 소멸 시키려면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 *dwUserData*<br/>
-[in] 작업과 연결 된 사용자 정의 데이터를 지정 합니다.
+진행 태스크와 연결 된 사용자 정의 데이터를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-창 추가 된 그룹의 인덱스 또는 그룹을 지정 하면-1 *해제* 존재 하지 않습니다.
+창이 추가 된 그룹의 인덱스 (0부터 시작) 이거나, *ngroup* 으로 지정 된 그룹이 없는 경우-1입니다.
 
 ### <a name="remarks"></a>설명
 
-작업 창에 컨트롤을 추가 하려면이 메서드를 호출 합니다. 예를 들어, 검색 표시줄 처럼 작동 하는 편집 컨트롤을 추가할 수 있습니다.
+작업 창에 컨트롤을 추가 하려면이 메서드를 호출 합니다. 예를 들어 검색 표시줄과 같은 기능을 하는 편집 컨트롤을 추가할 수 있습니다.
 
 ##  <a name="cmfctaskspane"></a>  CMFCTasksPane::CMFCTasksPane
 
-생성 된 [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) 개체입니다.
+[CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) 개체를 생성 합니다.
 
 ```
 CMFCTasksPane();
@@ -606,7 +608,7 @@ void CollapseAllGroups(
 
 ##  <a name="collapsegroup"></a>  CMFCTasksPane::CollapseGroup
 
-축소 하거나 그룹을 확장 합니다.
+그룹을 축소 하거나 확장 합니다.
 
 ```
 BOOL CollapseGroup(
@@ -621,21 +623,21 @@ BOOL CollapseGroup(
 ### <a name="parameters"></a>매개 변수
 
 *pGroup*<br/>
-[in] 축소 하는 그룹을 지정 합니다.
+진행 축소할 그룹을 지정 합니다.
 
 *bCollapse*<br/>
-[in] 그룹을 축소 FALSE를 사용 하 여 그룹을 확장 합니다.
+진행 그룹을 축소 하려면 TRUE로 설정 합니다. FALSE로 설정 하면 그룹을 확장 합니다.
 
 *nGroup*<br/>
-[in] 내부 목록의 그룹을 축소 하는 그룹의 인덱스를 지정 합니다.
+진행 그룹의 내부 목록에서 축소할 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-그룹을 축소 하거나 성공적으로 확장 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
+그룹이 성공적으로 축소 또는 확장 되 면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-축소 된 그룹 그룹 캡션에;를 보여 줍니다. 작업 목록에 숨겨져 있습니다.
+축소 된 그룹에는 그룹 캡션으로 표시 됩니다. 작업 목록이 숨겨집니다.
 
 ##  <a name="createdefaultminiframe"></a>  CMFCTasksPane::CreateDefaultMiniframe
 
@@ -653,7 +655,7 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
 
 ##  <a name="createmenu"></a>  CMFCTasksPane::CreateMenu
 
-사용자가 클릭할 때 나타나는 메뉴를 만드는 데는 **다른 작업 창** 메뉴 단추입니다.
+사용자가 **다른 작업 창** 메뉴 단추를 클릭할 때 나타나는 메뉴를 만듭니다.
 
 ```
 HMENU CreateMenu() const;
@@ -665,13 +667,13 @@ HMENU CreateMenu() const;
 
 ### <a name="remarks"></a>설명
 
-작업 창에 대 한 메뉴 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.
+파생 클래스에서이 메서드를 재정의 하 여 작업 창에 대 한 메뉴를 사용자 지정 합니다.
 
-이 메서드가 만드는 팝업 메뉴에 작업 창에서 페이지의 목록을 포함 합니다. 메뉴에는 활성 페이지 옆에 확인 표시가 표시 됩니다.
+이 메서드가 만드는 팝업 메뉴에는 작업 창의 페이지 목록이 포함 됩니다. 활성 페이지 옆의 확인 표시가 메뉴에 표시 됩니다.
 
 ##  <a name="enableanimation"></a>  CMFCTasksPane::EnableAnimation
 
-사용 하거나 작업 그룹을 확장 하거나 축소 하는 경우 발생 하는 애니메이션을 사용 하지 않도록 설정 합니다.
+작업 그룹이 확장 되거나 축소 될 때 발생 하는 애니메이션을 사용 하거나 사용 하지 않도록 설정 합니다.
 
 ```
 void EnableAnimation(BOOL bEnable = TRUE);
@@ -680,15 +682,15 @@ void EnableAnimation(BOOL bEnable = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *bEnable*<br/>
-[in] 작업 그룹을 확장 하거나 축소; 때 발생 하는 애니메이션을 사용 하도록 설정. 그렇지 않으면 FALSE입니다.
+진행 작업 그룹이 확장 되거나 축소 될 때 발생 하는 애니메이션을 사용 하도록 설정 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-작업 그룹을 확장 하거나 축소 하는 경우 발생 하는 애니메이션은 기본적으로 사용 됩니다.
+기본적으로 작업 그룹을 확장 하거나 축소할 때 발생 하는 애니메이션은 사용 하도록 설정 됩니다.
 
 ##  <a name="enablegroupcollapse"></a>  CMFCTasksPane::EnableGroupCollapse
 
-사용자 작업 그룹을 축소할 수 있는지 여부를 지정 합니다.
+사용자가 작업 그룹을 축소할 수 있는지 여부를 지정 합니다.
 
 ```
 void EnableGroupCollapse(BOOL bEnable);
@@ -697,15 +699,15 @@ void EnableGroupCollapse(BOOL bEnable);
 ### <a name="parameters"></a>매개 변수
 
 *bEnable*<br/>
-[in] 사용자가 작업 그룹을 축소할 수 있으면 TRUE 그렇지 않으면 FALSE입니다.
+진행 사용자가 작업 그룹을 축소할 수 있으면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-축소 된 작업 그룹을 표시만 그룹 캡션에; 작업 목록에 숨겨져 있습니다.
+축소 된 작업 그룹에는 그룹 캡션으로만 표시 됩니다. 작업 목록이 숨겨집니다.
 
 ##  <a name="enablehistorymenubuttons"></a>  CMFCTasksPane::EnableHistoryMenuButtons
 
-드롭다운 메뉴에서 사용 하도록 설정 합니다 **다음** 하 고 **이전** 탐색 단추입니다.
+**다음** 및 **이전** 탐색 단추에서 드롭다운 메뉴를 사용 하도록 설정 합니다.
 
 ```
 void EnableHistoryMenuButtons(BOOL bEnable = TRUE);
@@ -714,13 +716,13 @@ void EnableHistoryMenuButtons(BOOL bEnable = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *bEnable*<br/>
-[in] 드롭다운 메뉴를 사용 하도록 설정 하려면 true로 설정 합니다 **다음** 및 **이전** 탐색 단추, 그렇지 않으면 FALSE입니다.
+진행 **다음** 및 **이전** 탐색 단추에서 드롭다운 메뉴를 사용 하도록 설정 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-기본적으로 드롭다운 메뉴에는 **다음** 하 고 **이전** 단추가 비활성화 됩니다.
+기본적으로 **다음** 및 **이전** 단추의 드롭다운 메뉴는 비활성화 되어 있습니다.
 
-메뉴에 사용자가 사용 하는 작업 페이지의 기록이 포함 되어 있습니다.
+메뉴에는 사용자가 사용한 작업 페이지 기록이 포함 되어 있습니다.
 
 ##  <a name="enablenavigationtoolbar"></a>  CMFCTasksPane::EnableNavigationToolbar
 
@@ -739,22 +741,22 @@ void EnableNavigationToolbar(
 ### <a name="parameters"></a>매개 변수
 
 *bEnable*<br/>
-[in] 탐색 모음을 사용 하도록 설정 그렇지 않으면 FALSE입니다.
+진행 탐색 도구 모음을 사용 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
 *uiToolbarBmpRes*<br/>
-[in] 도구 모음에서 표시할 이미지를 포함 하는 비트맵의 리소스 ID를 지정 합니다.
+진행 도구 모음에 표시할 이미지를 포함 하는 비트맵의 리소스 ID를 지정 합니다.
 
 *sizeToolbarImage*<br/>
-[in] 도구 모음 이미지의 크기를 지정합니다.
+진행 도구 모음 이미지의 크기를 지정 합니다.
 
 *sizeToolbarButton*<br/>
-[in] 도구 모음 단추의 크기를 지정합니다.
+진행 도구 모음 단추의 크기를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-탐색 모음은 작업창의 맨 위에 있는 프레임 워크를 표시 하는 도구 모음입니다. 탐색 도구 모음을 포함 합니다 **다시**, **전달**, 및 **홈** 탐색 단추 및 메뉴 단추를 사용할 수 있는 페이지의 목록을 포함 하는.
+탐색 도구 모음은 프레임 워크가 작업창의 맨 위에 표시 하는 도구 모음입니다. 탐색 도구 모음에는 **뒤로**, **앞**으로 및 **홈** 탐색 단추와 사용 가능한 페이지 목록이 포함 된 메뉴 단추가 포함 됩니다.
 
-기본적으로 프레임 워크에는 탐색 도구 모음이 표시 되지 않습니다. 탐색 도구 모음이 표시 되지 않으면 탐색 단추는 도킹 표시줄 캡션의에 있습니다.
+기본적으로 프레임 워크는 탐색 도구 모음을 표시 하지 않습니다. 탐색 도구 모음이 표시 되지 않으면 탐색 단추가 도킹 표시줄의 캡션에 배치 됩니다.
 
 ##  <a name="enableoffsetcustomcontrols"></a>  CMFCTasksPane::EnableOffsetCustomControls
 
@@ -770,7 +772,7 @@ void EnableOffsetCustomControls(BOOL bEnable);
 
 ##  <a name="enablescrollbuttons"></a>  CMFCTasksPane::EnableScrollButtons
 
-수 있도록 스크롤 막대 대신 단추를 스크롤합니다.
+스크롤 막대 대신 스크롤 단추를 사용 하도록 설정 합니다.
 
 ```
 void EnableScrollButtons(BOOL bEnable = TRUE);
@@ -779,15 +781,15 @@ void EnableScrollButtons(BOOL bEnable = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *bEnable*<br/>
-[in] 스크롤 막대를; 대신 작업 창에서 스크롤 단추를 표시. 그렇지 않으면 FALSE입니다.
+진행 스크롤 막대가 아니라 작업창에 스크롤 단추를 표시 하려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-기본적으로 프레임 워크 작업 창에서 스크롤 단추를 표시합니다.
+기본적으로 프레임 워크는 작업 창에 스크롤 단추를 표시 합니다.
 
 ##  <a name="enablewraplabels"></a>  CMFCTasksPane::EnableWrapLabels
 
-레이블 텍스트에 대 한 자동 줄 바꿈을 사용 하지 않도록 설정 하거나 합니다.
+레이블의 텍스트에 대해 자동 줄 바꿈을 사용 하거나 사용 하지 않도록 설정 합니다.
 
 ```
 void EnableWrapLabels(BOOL bEnable = TRUE);
@@ -796,15 +798,15 @@ void EnableWrapLabels(BOOL bEnable = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *bEnable*<br/>
-[in] 줄 바꿈; 작업 창에 표시 되는 레이블 텍스트 true로 설정 하면 그렇지 않으면 FALSE입니다.
+진행 작업 창에 표시 되는 레이블에 텍스트를 래핑하여 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-기본적으로 프레임 워크의 레이블 텍스트를 래핑하지 않으며 합니다. 자동 줄 바꿈을 사용 하는 경우 레이블 텍스트 여러 줄에 나타날 수 있습니다. 레이블을 표식와 같은 주요 줄을 포함할 수 있습니다 `\n` 밑줄 표식 및 `&`합니다.
+기본적으로 프레임 워크는 레이블 텍스트를 줄 바꿈하지 않습니다. 자동 줄 바꿈이 설정 되 면 레이블의 텍스트가 여러 줄로 표시 될 수 있습니다. 레이블에는 `\n` 및 밑줄 표식과 `&`같은 줄 바꿈 표식이 포함 될 수 있습니다.
 
 ##  <a name="enablewraptasks"></a>  CMFCTasksPane::EnableWrapTasks
 
-사용 하거나 작업에서 텍스트 줄 바꿈 사용 하지 않도록 설정 합니다.
+작업에서 텍스트에 대 한 자동 줄 바꿈을 사용 하거나 사용 하지 않도록 설정 합니다.
 
 ```
 void EnableWrapTasks(BOOL bEnable = TRUE);
@@ -813,11 +815,11 @@ void EnableWrapTasks(BOOL bEnable = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *bEnable*<br/>
-[in] 작업 창의 작업을 래핑할 TRUE 그렇지 않으면 FALSE입니다.
+진행 작업 창에서 작업을 래핑하려면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-기본적으로 작업에 대 한 자동 줄 바꿈을 비활성화 됩니다.
+기본적으로 작업의 자동 줄 바꿈이 사용 하지 않도록 설정 되어 있습니다.
 
 ##  <a name="getactivepage"></a>  CMFCTasksPane::GetActivePage
 
@@ -829,11 +831,11 @@ int GetActivePage() const;
 
 ### <a name="return-value"></a>반환 값
 
-현재 페이지의 0부터 시작 하는 인덱스입니다.
+활성 페이지의 인덱스 (0부터 시작)입니다.
 
 ##  <a name="getgroupcaptionheight"></a>  CMFCTasksPane::GetGroupCaptionHeight
 
-그룹 캡션의 높이 반환합니다.
+그룹 캡션의 높이를 반환 합니다.
 
 ```
 int GetGroupCaptionHeight() const;
@@ -841,11 +843,11 @@ int GetGroupCaptionHeight() const;
 
 ### <a name="return-value"></a>반환 값
 
-그룹 캡션의 픽셀에서 높이입니다.
+그룹 캡션의 높이 (픽셀)입니다.
 
 ##  <a name="getgroupcaptionhorzoffset"></a>  CMFCTasksPane::GetGroupCaptionHorzOffset
 
-그룹 캡션의 가로 오프셋을 반환합니다.
+그룹 캡션의 가로 오프셋을 반환 합니다.
 
 ```
 int GetGroupCaptionHorzOffset() const;
@@ -853,11 +855,11 @@ int GetGroupCaptionHorzOffset() const;
 
 ### <a name="return-value"></a>반환 값
 
-그룹 캡션의 가로 오프셋입니다. 가로 오프셋 작업창의 왼쪽 또는 오른쪽 가장자리에서 픽셀 단위의 거리입니다.
+그룹 캡션의 가로 오프셋입니다. 가로 오프셋은 작업창의 왼쪽 또는 오른쪽 가장자리에서의 거리 (픽셀)입니다.
 
 ##  <a name="getgroupcaptionvertoffset"></a>  CMFCTasksPane::GetGroupCaptionVertOffset
 
-그룹 캡션의 세로 오프셋을 반환합니다.
+그룹 캡션의 세로 오프셋을 반환 합니다.
 
 ```
 int GetGroupCaptionVertOffset() const;
@@ -881,11 +883,11 @@ int GetGroupCount() const;
 
 ### <a name="return-value"></a>반환 값
 
-작업 창에서 그룹의 총 수입니다.
+작업 창에 있는 그룹의 총 수입니다.
 
 ##  <a name="getgrouplocation"></a>  CMFCTasksPane::GetGroupLocation
 
-지정된 된 그룹에 대 한 내부 그룹 인덱스를 반환합니다.
+지정 된 그룹에 대 한 내부 그룹 인덱스를 반환 합니다.
 
 ```
 BOOL GetGroupLocation(
@@ -896,14 +898,14 @@ BOOL GetGroupLocation(
 ### <a name="parameters"></a>매개 변수
 
 *pGroup*<br/>
-[in] 위치가 검색 되는 작업 그룹을 지정 합니다.
+진행 위치가 검색 되는 작업 그룹을 지정 합니다.
 
 *nGroup*<br/>
-[out] 작업 그룹의 인덱스를 포함합니다.
+제한이 작업 그룹의 인덱스 (0부터 시작)를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-작업 그룹을 찾은 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
+작업 그룹을 찾았으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ##  <a name="getgroupvertoffset"></a>  CMFCTasksPane::GetGroupVertOffset
 
@@ -915,11 +917,11 @@ int GetGroupVertOffset() const;
 
 ### <a name="return-value"></a>반환 값
 
-세로 오프셋 (픽셀 단위) 그룹입니다.
+그룹의 세로 오프셋 (픽셀)입니다.
 
 ##  <a name="gethorzmargin"></a>  CMFCTasksPane::GetHorzMargin
 
-작업 창과 클라이언트 영역 가장자리 사이의 가로 간격을 반환합니다.
+작업 창과 클라이언트 영역 가장자리 사이의 가로 간격을 반환 합니다.
 
 ```
 int GetHorzMargin() const;
@@ -958,14 +960,14 @@ BOOL GetPageByGroup(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 작업 그룹의 인덱스를 지정합니다.
+진행 작업 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 *nPage*<br/>
-[out] 지정된 된 그룹에 대 한 페이지 인덱스를 포함합니다. 작업 그룹의 기본 페이지가 있으면 반환 되는 값은 0입니다.
+제한이 지정 된 그룹에 대 한 페이지 인덱스를 포함 합니다. 작업 그룹에 기본 페이지만 포함 된 경우 반환 되는 값은 0입니다.
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 그룹 *해제* 있으면, 그렇지 않으면 FALSE입니다.
+그룹 *ngroup* 이 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ##  <a name="getpagescount"></a>  CMFCTasksPane::GetPagesCount
 
@@ -977,7 +979,7 @@ int GetPagesCount() const;
 
 ### <a name="return-value"></a>반환 값
 
-작업 창에서 페이지의 수입니다.
+작업 창에 있는 페이지 수입니다.
 
 ##  <a name="getpreviouspages"></a>  CMFCTasksPane::GetPreviousPages
 
@@ -1018,18 +1020,18 @@ CMFCTasksPaneTask* GetTask(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 태스크가 포함 된 그룹의 인덱스를 지정 합니다.
+진행 태스크를 포함 하는 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 *nTask*<br/>
-[in] 지정 된 목록에서 작업의 0부터 시작 인덱스를 지정 *해제*합니다.
+진행 *Ngroup*으로 지정 된 목록에 있는 태스크의 인덱스 (0부터 시작)를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-지정된 된 인덱스에는 작업.
+지정 된 인덱스에 있는 태스크입니다.
 
 ##  <a name="gettaskcount"></a>  CMFCTasksPane::GetTaskCount
 
-지정된 된 그룹의 작업 수를 반환합니다.
+지정 된 그룹의 작업 수를 반환 합니다.
 
 ```
 int GetTaskCount(int nGroup) const;
@@ -1038,15 +1040,15 @@ int GetTaskCount(int nGroup) const;
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 작업 그룹의 인덱스를 지정 합니다.
+진행 작업 그룹의 인덱스를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-지정된 된 그룹 또는 0 이면 작업 수가 *해제* 올바르지 않습니다.
+지정 된 그룹의 작업 수 또는 *Ngroup* 이 잘못 된 경우 0입니다.
 
 ##  <a name="gettaskgroup"></a>  CMFCTasksPane::GetTaskGroup
 
-지정 된 그룹 인덱스에 대 한 작업 그룹을 반환합니다.
+지정 된 그룹 인덱스에 대 한 작업 그룹을 반환 합니다.
 
 ```
 CMFCTasksPaneTaskGroup* GetTaskGroup(int nGroup) const;
@@ -1055,15 +1057,15 @@ CMFCTasksPaneTaskGroup* GetTaskGroup(int nGroup) const;
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 검색할 그룹의 인덱스를 지정 합니다.
+진행 검색할 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-지정된 된 인덱스에서 작업 그룹입니다.
+지정 된 인덱스에 있는 작업 그룹입니다.
 
 ##  <a name="gettasklocation"></a>  CMFCTasksPane::GetTaskLocation
 
-그룹 및 지정된 된 작업에 대 한 인덱스를 반환합니다.
+지정 된 작업에 대 한 그룹 및 인덱스를 반환 합니다.
 
 ```
 BOOL GetTaskLocation(
@@ -1085,31 +1087,31 @@ BOOL GetTaskLocation(
 ### <a name="parameters"></a>매개 변수
 
 *uiCommandID*<br/>
-[in] 검색할 작업의 명령 ID를 지정 합니다.
+진행 찾을 작업의 명령 ID를 지정 합니다.
 
 *nGroup*<br/>
-[out] 작업 그룹 인덱스를 포함합니다.
+제한이 태스크의 그룹 인덱스를 포함 합니다.
 
 *nTask*<br/>
-[out] 작업 그룹에서 작업의 인덱스를 포함합니다.
+제한이 작업 그룹에 있는 태스크의 인덱스를 포함 합니다.
 
 *hwndTask*<br/>
-[in] 태스크와 관련 된 창을 지정 합니다.
+진행 태스크와 연결 된 창을 지정 합니다.
 
 *pTask*<br/>
-[in] 검색할 작업을 지정 합니다.
+진행 찾을 작업을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 태스크 위치를 찾을 수 있습니다. 지정 된 작업이 없는 경우 FALSE입니다.
+작업 위치가 있으면 TRUE이 고, 그렇지 않으면입니다. 지정 된 태스크가 존재 하지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 그룹 인덱스 및 지정된 된 작업에 대 한 작업 인덱스를 검색합니다. 메서드는 FALSE를 반환 하는 경우 *해제* 하 고 *nTask* -1로 설정 됩니다.
+이 메서드는 지정 된 작업에 대 한 그룹 인덱스 및 태스크 인덱스를 검색 합니다. 메서드가 FALSE를 반환 하는 경우 *Ngroup* 및 *ngroup* 는-1로 설정 됩니다.
 
 ##  <a name="gettaskshorzoffset"></a>  CMFCTasksPane::GetTasksHorzOffset
 
-작업의 가로 오프셋을 반환합니다.
+작업의 가로 오프셋을 반환 합니다.
 
 ```
 int GetTasksHorzOffset() const;
@@ -1117,7 +1119,7 @@ int GetTasksHorzOffset() const;
 
 ### <a name="return-value"></a>반환 값
 
-해당 부모 그룹의 왼쪽 및 오른쪽 가장자리부터 작업의 가로 오프셋입니다.
+부모 그룹의 왼쪽 및 오른쪽 가장자리에서 작업의 가로 오프셋입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1145,7 +1147,7 @@ int GetTasksIconVertOffset() const;
 
 ##  <a name="getvertmargin"></a>  CMFCTasksPane::GetVertMargin
 
-작업 창과 클라이언트 영역 가장자리 사이의 세로 여백을 반환합니다.
+작업 창과 클라이언트 영역 가장자리 사이의 세로 여백을 반환 합니다.
 
 ```
 int GetVertMargin() const;
@@ -1157,7 +1159,7 @@ int GetVertMargin() const;
 
 ### <a name="remarks"></a>설명
 
-세로 여백이 작업 창과 클라이언트 영역 가장자리 사이의 공간입니다. 세로 여백이의 기본값은 12 픽셀입니다.
+세로 여백은 작업 창과 클라이언트 영역 가장자리 사이의 간격입니다. 세로 여백의 기본값은 12 픽셀입니다.
 
 ##  <a name="isaccessibilitycompatible"></a>  CMFCTasksPane::IsAccessibilityCompatible
 
@@ -1179,11 +1181,11 @@ BOOL IsAnimationEnabled() const;
 
 ### <a name="return-value"></a>반환 값
 
-사용자 확장 또는 그룹을 축소 하는 경우 발생 하는 애니메이션을 사용 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.
+사용자가 그룹을 확장 하거나 축소할 때 발생 하는 애니메이션을 사용할 수 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [CMFCTasksPane::EnableAnimation](#enableanimation) 사용 하도록 설정 하거나 애니메이션을 사용 하지 않도록 설정 합니다.
+애니메이션을 활성화 하거나 비활성화 하려면 [CMFCTasksPane:: enableanimation](#enableanimation) 를 호출 합니다.
 
 ##  <a name="isbackbuttonenabled"></a>  CMFCTasksPane::IsBackButtonEnabled
 
@@ -1195,11 +1197,11 @@ BOOL IsBackButtonEnabled() const;
 
 ### <a name="return-value"></a>반환 값
 
-뒤로 단추를 사용 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.
+뒤로 단추를 사용할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-사용자가 뒤로 단추를 클릭 하면 프레임 워크는 이전 작업 페이지를 표시 합니다.
+사용자가 뒤로 단추를 클릭 하면 프레임 워크에서 이전 작업 페이지를 표시 합니다.
 
 ##  <a name="isforwardbuttonenabled"></a>  CMFCTasksPane::IsForwardButtonEnabled
 
@@ -1211,11 +1213,11 @@ BOOL IsForwardButtonEnabled() const;
 
 ### <a name="return-value"></a>반환 값
 
-앞으로 단추를 사용 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.
+앞으로 단추를 사용할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-앞으로 단추 작업 페이지의 기록에서 앞으로 탐색을 수 있습니다.
+전달 단추를 사용 하면 작업 페이지의 기록에서 전방 탐색을 수행할 수 있습니다.
 
 ##  <a name="isgroupcollapseenabled"></a>  CMFCTasksPane::IsGroupCollapseEnabled
 
@@ -1229,7 +1231,7 @@ BOOL IsGroupCollapseEnabled() const;
 
 ##  <a name="ishistorymenubuttonsenabled"></a>  CMFCTasksPane::IsHistoryMenuButtonsEnabled
 
-나타냅니다 여부는 **다음** 및 **이전** 탐색 단추에서 드롭다운 메뉴에 있습니다.
+**다음** 및 **이전** 탐색 단추에 드롭다운 메뉴가 있는지 여부를 나타냅니다.
 
 ```
 BOOL IsHistoryMenuButtonsEnabled() const;
@@ -1237,7 +1239,7 @@ BOOL IsHistoryMenuButtonsEnabled() const;
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 합니다 **다음** 하 고 **이전** 탐색 단추에서 드롭다운 메뉴에 있습니다, 그렇지 않으면 FALSE입니다.
+**다음** 및 **이전** 탐색 단추에 드롭다운 메뉴가 있으면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ##  <a name="isnavigationtoolbarenabled"></a>  CMFCTasksPane::IsNavigationToolbarEnabled
 
@@ -1249,7 +1251,7 @@ BOOL IsNavigationToolbarEnabled() const;
 
 ### <a name="return-value"></a>반환 값
 
-탐색 도구 모음이 활성화 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
+탐색 도구 모음을 사용할 수 있으면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ##  <a name="istoolbox"></a>  CMFCTasksPane::IsToolBox
 
@@ -1271,11 +1273,11 @@ BOOL IsWrapLabelsEnabled() const;
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 레이블에 단어 래핑됩니다. 그렇지 않으면 FALSE입니다.
+레이블에 단어가 래핑되어 있으면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ##  <a name="iswraptasksenabled"></a>  CMFCTasksPane::IsWrapTasksEnabled
 
-프레임 워크 작업 문자열 줄 바꿈할지 여부를 지정 합니다.
+프레임 워크에서 작업 문자열을 래핑할 지 여부를 지정 합니다.
 
 ```
 BOOL IsWrapTasksEnabled() const;
@@ -1283,7 +1285,7 @@ BOOL IsWrapTasksEnabled() const;
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 작업 문자열 래핑됩니다. 그렇지 않으면 FALSE입니다.
+작업 문자열이 래핑되어 있으면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ##  <a name="loadstate"></a>  CMFCTasksPane::LoadState
 
@@ -1306,7 +1308,7 @@ virtual BOOL LoadState(
 
 ##  <a name="onactivatetaskspanepage"></a>  CMFCTasksPane::OnActivateTasksPanePage
 
-작업 창 페이지가 활성화는 때 프레임 워크에서 호출 됩니다.
+작업 창 페이지가 활성화 될 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnActivateTasksPanePage();
@@ -1314,7 +1316,7 @@ virtual void OnActivateTasksPanePage();
 
 ### <a name="remarks"></a>설명
 
-작업 창 페이지의 모양을 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.
+파생 클래스에서이 메서드를 재정의 하 여 작업창 페이지의 모양을 사용자 지정 합니다.
 
 ##  <a name="oncancel"></a>  CMFCTasksPane::OnCancel
 
@@ -1339,22 +1341,22 @@ virtual void OnClickTask(
 ### <a name="parameters"></a>매개 변수
 
 *nGroupNumber*<br/>
-[in] 클릭 한 태스크가 포함 된 그룹의 인덱스를 지정 합니다.
+진행 클릭 한 태스크를 포함 하는 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 *nTaskNumber*<br/>
-[in] 클릭 한 작업의 0부터 시작 인덱스를 지정합니다.
+진행 클릭 한 태스크의 인덱스 (0부터 시작)를 지정 합니다.
 
 *uiCommandID*<br/>
-[in] 작업과 연결 된 명령 ID를 지정 합니다.
+진행 태스크와 연결 된 명령 ID를 지정 합니다.
 
 *dwUserData*<br/>
-[in] 클릭 한 작업과 연결 된 사용자 정의 데이터를 포함 합니다.
+진행 클릭 한 작업과 연결 된 사용자 정의 데이터를 포함 합니다.
 
 ### <a name="remarks"></a>설명
 
-프레임 워크는 사용자가 작업을 클릭할 때이 메서드를 호출 합니다. 기본적으로 프레임 워크 확인 클릭 한 작업과 연결 된 명령 ID 하 고, 0이 없는 경우 작업 창 컨트롤의 소유자에 게 WM_COMMAND 메시지를 보냅니다.
+사용자가 작업을 클릭 하면 프레임 워크에서이 메서드를 호출 합니다. 기본적으로 프레임 워크는 클릭 된 작업과 연결 된 명령 ID를 확인 하 고, 0이 아닌 경우 WM_COMMAND 메시지를 작업 창 컨트롤의 소유자에 게 보냅니다.
 
-이 메서드는 작업을 클릭할 때 사용자 지정 코드를 실행 하려면 파생된 클래스에서 재정의 합니다.
+작업을 클릭할 때 사용자 지정 코드를 실행 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="onok"></a>  CMFCTasksPane::OnOK
 
@@ -1374,9 +1376,9 @@ virtual void OnPressBackButton();
 
 ### <a name="remarks"></a>설명
 
-기본적으로 프레임 워크에는 이전에 본된 페이지가 표시 됩니다.
+기본적으로 프레임 워크는 이전에 표시 된 페이지를 표시 합니다.
 
-이 메서드 뒤로 단추를 클릭할 때 사용자 지정 코드를 실행 하려면 파생된 클래스에서 재정의 합니다.
+사용자가 뒤로 단추를 클릭할 때 사용자 지정 코드를 실행 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="onpressforwardbutton"></a>  CMFCTasksPane::OnPressForwardButton
 
@@ -1388,13 +1390,13 @@ virtual void OnPressForwardButton();
 
 ### <a name="remarks"></a>설명
 
-기본적으로 프레임 워크 사용자 클릭 하기 전에 표시 된 페이지를 표시 합니다 **다시** 단추입니다.
+기본적으로 프레임 워크는 **뒤로** 단추를 클릭 하기 전에 사용자가 본 페이지를 표시 합니다.
 
-앞으로 단추를 클릭할 때 사용자 지정 코드를 실행 하려면 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자가 앞으로 단추를 클릭할 때 사용자 지정 코드를 실행 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="onpresshomebutton"></a>  CMFCTasksPane::OnPressHomeButton
 
-사용자가 홈 탐색 단추를 클릭 하면 프레임 워크에서 호출 됩니다.
+사용자가 홈 탐색 단추를 클릭할 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnPressHomeButton();
@@ -1402,9 +1404,9 @@ virtual void OnPressHomeButton();
 
 ### <a name="remarks"></a>설명
 
-기본적으로 프레임 워크에는 작업 그룹에 대 한 기본 페이지가 표시 됩니다.
+기본적으로 프레임 워크는 작업 그룹에 대 한 기본 페이지를 표시 합니다.
 
-사용자가 홈 탐색 단추를 클릭 하면 사용자 지정 코드를 실행 하려면 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자가 홈 탐색 단추를 클릭할 때 사용자 지정 코드를 실행 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="onpressotherbutton"></a>  CMFCTasksPane::OnPressOtherButton
 
@@ -1487,11 +1489,11 @@ void RemoveAllGroups(int nPageIdx = 0);
 ### <a name="parameters"></a>매개 변수
 
 *nPageIdx*<br/>
-[in] 페이지의 0부터 시작 하는 인덱스를 지정합니다.
+진행 페이지의 인덱스 (0부터 시작)를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-지정 된 페이지의 모든 그룹을 제거 *nPageIdx*, 또는 기본 페이지만 있으면 모든 그룹입니다.
+*Npageidx*에 지정 된 페이지에서 모든 그룹을 제거 하거나 기본 페이지만 있는 경우 모든 그룹을 제거 합니다.
 
 ##  <a name="removeallpages"></a>  CMFCTasksPane::RemoveAllPages
 
@@ -1503,7 +1505,7 @@ void RemoveAllPages();
 
 ##  <a name="removealltasks"></a>  CMFCTasksPane::RemoveAllTasks
 
-지정된 된 그룹에서 모든 작업을 제거합니다.
+지정 된 그룹에서 모든 작업을 제거 합니다.
 
 ```
 void RemoveAllTasks(int nGroup);
@@ -1512,7 +1514,7 @@ void RemoveAllTasks(int nGroup);
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 그룹의 인덱스를 지정합니다.
+진행 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 ##  <a name="removegroup"></a>  CMFCTasksPane::RemoveGroup
 
@@ -1525,13 +1527,13 @@ void RemoveGroup(int nGroup);
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 제거할 그룹의 인덱스를 지정 합니다.
+진행 제거할 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 단일 그룹을 제거합니다. 모든 그룹을 제거 하려면 호출 [CMFCTasksPane::RemoveAllGroups](#removeallgroups) 대신 합니다.
+이 메서드는 단일 그룹을 제거 합니다. 모든 그룹을 제거 하려면 대신 [CMFCTasksPane:: RemoveAllGroups](#removeallgroups) 를 호출 합니다.
 
-프레임 워크는 그룹을 제거 하는 경우 모든 작업과 연결 된 windows 사용자 제거 됩니다.
+프레임 워크에서 그룹을 제거 하면 연결 된 모든 태스크와 사용자 창이 제거 됩니다.
 
 ##  <a name="removepage"></a>  CMFCTasksPane::RemovePage
 
@@ -1544,7 +1546,7 @@ void RemovePage(int nPageIdx);
 ### <a name="parameters"></a>매개 변수
 
 *nPageIdx*<br/>
-[in] 제거할 페이지의 0부터 시작 하는 인덱스를 지정 합니다.
+진행 제거할 페이지의 인덱스 (0부터 시작)를 지정 합니다.
 
 ##  <a name="removetask"></a>  CMFCTasksPane::RemoveTask
 
@@ -1560,17 +1562,17 @@ BOOL RemoveTask(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 제거할 작업을 포함 하는 작업 그룹의 인덱스를 지정 합니다.
+진행 제거할 태스크를 포함 하는 작업 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 *nTask*<br/>
-[in] 제거할 작업의 0부터 시작 인덱스를 지정 합니다.
+진행 제거할 태스크의 인덱스 (0부터 시작)를 지정 합니다.
 
 *bRedraw*<br/>
-[in] 작업 창;을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다.
+진행 작업 창을 다시 그리려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
 
-함수가 성공 하면 TRUE입니다. FALSE 이면 *해제* 하거나 *nTask* 올바르지 않습니다.
+함수가 성공 하면 TRUE이 고, 그렇지 않으면입니다. *Ngroup* 또는 *ngroup* 가 잘못 된 경우 FALSE입니다.
 
 ##  <a name="savestate"></a>  CMFCTasksPane::SaveState
 
@@ -1614,11 +1616,11 @@ void SetActivePage(int nPageIdx);
 ### <a name="parameters"></a>매개 변수
 
 *nPageIdx*<br/>
-[in] 표시할 페이지의 0부터 시작 하는 인덱스를 지정 합니다.
+진행 표시할 페이지의 인덱스 (0부터 시작)를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 이렇게 하면 어설션 합니다 *nPageIdx* 올바르지 않습니다.
+이 메서드는 *Npageidx* 가 유효 하지 않은 경우 어설션 합니다.
 
 ##  <a name="setcaption"></a>  CMFCTasksPane::SetCaption
 
@@ -1631,11 +1633,11 @@ void SetCaption(LPCTSTR lpszName);
 ### <a name="parameters"></a>매개 변수
 
 *lpszName*<br/>
-[in] 캡션 이름을 지정합니다.
+진행 캡션 이름을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-작업창을 여러 페이지에 있는 경우 기본 페이지에이 함수를 사용 하 여 설정 된 캡션입니다.
+작업창에 여러 페이지가 있는 경우 기본 페이지에는이 기능을 사용 하 여 설정 된 캡션이 있습니다.
 
 ##  <a name="setgroupcaptionheight"></a>  CMFCTasksPane::SetGroupCaptionHeight
 
@@ -1648,13 +1650,13 @@ void SetGroupCaptionHeight(int n = -1);
 ### <a name="parameters"></a>매개 변수
 
 *n*<br/>
-[in] 캡션 높이 지정합니다.
+진행 캡션 높이를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-작업 창 요소의 여백이 사용자 지정 하려면이 메서드를 호출 합니다.
+작업 창 요소의 여백을 사용자 지정 하려면이 메서드를 호출 합니다.
 
-하는 경우 *n* 가-1 이면 비주얼 관리자를 사용 하 여 여백 값을 결정 하는 프레임 워크 ( `CMFCVisualManager::GetTasksPaneGroupCaptionHeight`). 기본 캡션 높이 25 픽셀입니다.
+*N* 이-1 인 경우 프레임 워크는 visual manager ( `CMFCVisualManager::GetTasksPaneGroupCaptionHeight`)를 사용 하 여 여백 값을 결정 합니다. 기본 캡션 높이는 25 픽셀입니다.
 
 ##  <a name="setgroupcaptionhorzoffset"></a>  CMFCTasksPane::SetGroupCaptionHorzOffset
 
@@ -1667,7 +1669,7 @@ void SetGroupCaptionHorzOffset(int n = -1);
 ### <a name="parameters"></a>매개 변수
 
 *n*<br/>
-[in] 그룹 캡션의 가로 오프셋을 지정합니다.
+진행 그룹 캡션의 가로 오프셋을 지정 합니다.
 
 ##  <a name="setgroupcaptionvertoffset"></a>  CMFCTasksPane::SetGroupCaptionVertOffset
 
@@ -1680,7 +1682,7 @@ void SetGroupCaptionVertOffset(int n = -1);
 ### <a name="parameters"></a>매개 변수
 
 *n*<br/>
-[in] 픽셀 그룹 캡션의 세로 오프셋을 지정합니다.
+진행 그룹 캡션의 세로 오프셋 (픽셀)을 지정 합니다.
 
 ##  <a name="setgroupname"></a>  CMFCTasksPane::SetGroupName
 
@@ -1695,14 +1697,14 @@ BOOL SetGroupName(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 그룹의 인덱스를 지정합니다.
+진행 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 *lpszGroupName*<br/>
-[in] 그룹의 이름을 지정합니다.
+진행 그룹의 이름을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-그룹 이름을 성공적으로 설정 되었으면; TRUE 그렇지 않으면 FALSE입니다.
+그룹 이름이 성공적으로 설정 되었으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ##  <a name="setgrouptextcolor"></a>  CMFCTasksPane::SetGroupTextColor
 
@@ -1718,17 +1720,17 @@ BOOL SetGroupTextColor(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 그룹의 인덱스를 지정합니다.
+진행 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 *color*<br/>
-[in] 텍스트 색을 지정 합니다.
+진행 텍스트 색을 지정 합니다.
 
 *colorHot*<br/>
-[in] 강조 표시 된 그룹에 대 한 텍스트 색을 지정 합니다. -1 이면 기본 강조 색이 사용 됩니다.
+진행 강조 표시 된 그룹의 텍스트 색을 지정 합니다. -1 인 경우 기본 강조 색이 사용 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 그룹 텍스트 색 변경 되었습니다. 그렇지 않으면 FALSE입니다.
+그룹 텍스트 색이 변경 되 면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ##  <a name="setgroupvertoffset"></a>  CMFCTasksPane::SetGroupVertOffset
 
@@ -1741,17 +1743,17 @@ void SetGroupVertOffset(int n = -1);
 ### <a name="parameters"></a>매개 변수
 
 *n*<br/>
-[in] 세로 오프셋을 지정합니다.
+진행 세로 오프셋을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-세로 오프셋 작업 그룹에서 작업 창의 테두리 사이의 거리입니다.
+세로 오프셋은 작업 그룹과 작업 창의 테두리 사이의 거리입니다.
 
-작업 창 요소의 여백이 사용자 지정 하려면이 메서드를 호출 합니다. 하는 경우 *n* 가-1 이면 비주얼 관리자를 사용 하 여 여백 값을 결정 하는 프레임 워크 (`CMFCVisualManager::GetTasksPaneGroupVertOffset`). 기본 오프셋은 15 픽셀입니다.
+작업 창 요소의 여백을 사용자 지정 하려면이 메서드를 호출 합니다. *N* 이-1 인 경우 프레임 워크는 visual manager (`CMFCVisualManager::GetTasksPaneGroupVertOffset`)를 사용 하 여 여백 값을 결정 합니다. 기본 오프셋은 15 픽셀입니다.
 
 ##  <a name="sethorzmargin"></a>  CMFCTasksPane::SetHorzMargin
 
-가로 여백을 설정합니다.
+가로 여백을 설정 합니다.
 
 ```
 void SetHorzMargin(int n = -1);
@@ -1760,17 +1762,17 @@ void SetHorzMargin(int n = -1);
 ### <a name="parameters"></a>매개 변수
 
 *n*<br/>
-[in] 픽셀에서의 여백을 지정합니다.
+진행 여백 (픽셀)을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-가로 여백은 작업 창 클라이언트 영역의 위쪽 이나 아래쪽 가장자리 사이의 거리입니다.
+가로 여백은 작업 창과 클라이언트 영역의 위쪽 또는 아래쪽 가장자리 사이의 거리입니다.
 
-N은-1이 고 프레임 워크는 비주얼 관리자를 사용 하 여 여백 값을 결정 하는 경우 (`CMFCVisualManager::GetTasksPaneHorzMargin`). 기본 가로 여백은 12 픽셀입니다.
+N이-1 이면 프레임 워크에서 visual manager (`CMFCVisualManager::GetTasksPaneHorzMargin`)를 사용 하 여 여백 값을 결정 합니다. 기본 가로 여백은 12 픽셀입니다.
 
 ##  <a name="seticonslist"></a>  CMFCTasksPane::SetIconsList
 
-이미지 목록을 설정합니다.
+이미지 목록을 설정 합니다.
 
 ```
 BOOL SetIconsList(
@@ -1784,22 +1786,22 @@ void SetIconsList(HIMAGELIST hIcons);
 ### <a name="parameters"></a>매개 변수
 
 *uiImageListResID*<br/>
-[in] 이미지 목록의 리소스 ID를 지정합니다.
+진행 이미지 목록의 리소스 ID를 지정 합니다.
 
 *cx*<br/>
-[in] 이미지 목록에 있는 아이콘의 크기를 지정합니다.
+진행 이미지 목록에 있는 아이콘의 크기를 지정 합니다.
 
 *clrTransparent*<br/>
-[in] 투명 한 색을 지정합니다.
+진행 투명 색을 지정 합니다.
 
 *hIcons*<br/>
-[in] 작업 창에 대 한 아이콘이 포함 된 이미지 목록을 지정 합니다.
+진행 작업 창에 대 한 아이콘이 포함 된 이미지 목록을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-프레임 워크 이미지 목록에서 아이콘을 저장합니다. 작업 목록에 저장 된 아이콘을 사용 하 여 연결 됩니다.
+프레임 워크는 이미지 목록에 아이콘을 저장 합니다. 작업은 해당 목록에 저장 된 아이콘과 연결 됩니다.
 
-이 메서드는 작업 창 컨트롤을 사용 하 여 이미지 목록을 연결합니다. 호출 하는 경우 작업에 대 한 아이콘을 설정 하려면 [cmfctaskspane:: Addtask](#addtask)설정 `nTaskIcon` 이 이미지 목록에서 적절 한 0부터 시작 인덱스입니다.
+이 메서드는 이미지 목록을 작업 창 컨트롤과 연결 합니다. [CMFCTasksPane:: addtask](#addtask)를 호출할 때 작업 아이콘을 설정 하려면이 이미지 목록에서 `nTaskIcon` 해당 하는 인덱스 (0부터 시작)로 설정 합니다.
 
 ##  <a name="setpagecaption"></a>  CMFCTasksPane::SetPageCaption
 
@@ -1814,14 +1816,14 @@ void SetPageCaption(
 ### <a name="parameters"></a>매개 변수
 
 *nPageIdx*<br/>
-[in] 페이지의 0부터 시작 하는 인덱스를 지정합니다.
+진행 페이지의 인덱스 (0부터 시작)를 지정 합니다.
 
 *lpszName*<br/>
-[in] 페이지에 표시할 캡션 텍스트를 지정 합니다.
+진행 페이지에 표시할 캡션 텍스트를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-작업창을 여러 페이지에 있는 경우 기본 페이지에이 메서드를 사용 하 여 설정 된 캡션입니다.
+작업창에 여러 페이지가 있는 경우 기본 페이지에는이 방법을 사용 하 여 설정 된 캡션이 있습니다.
 
 ##  <a name="settaskname"></a>  CMFCTasksPane::SetTaskName
 
@@ -1837,21 +1839,21 @@ BOOL SetTaskName(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 작업 그룹의 인덱스를 지정합니다.
+진행 작업 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 *nTask*<br/>
-[in] 작업의 인덱스를 지정합니다.
+진행 태스크의 인덱스 (0부터 시작)를 지정 합니다.
 
 *lpszTaskName*<br/>
-[in] 작업 이름을 지정합니다.
+진행 작업 이름을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-태스크 이름을 성공적으로 설정 되었으면; TRUE 그렇지 않으면 FALSE입니다.
+작업 이름이 성공적으로 설정 되었으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ##  <a name="settaskshorzoffset"></a>  CMFCTasksPane::SetTasksHorzOffset
 
-작업에 대 한 가로 오프셋을 설정합니다.
+태스크의 가로 오프셋을 설정 합니다.
 
 ```
 void SetTasksHorzOffset(int n = -1);
@@ -1860,13 +1862,13 @@ void SetTasksHorzOffset(int n = -1);
 ### <a name="parameters"></a>매개 변수
 
 *n*<br/>
-[in] 가로 오프셋을 지정합니다.
+진행 가로 오프셋을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-가로 오프셋 그룹의 왼쪽 및 오른쪽 가장자리에서의 픽셀 단위의 거리입니다.
+가로 오프셋은 그룹의 왼쪽 및 오른쪽 가장자리에서의 거리 (픽셀)입니다.
 
-하는 경우 *n* 가-1 이면이 메서드는 가로 오프셋을 반환 하는 값을 설정 합니다 `CMFCVisualManager::GetTasksPaneTaskHorzOffset` 메서드.
+*N* 이-1 인 경우이 메서드는 `CMFCVisualManager::GetTasksPaneTaskHorzOffset` 메서드에서 반환 되는 값으로 가로 오프셋을 설정 합니다.
 
 기본 가로 오프셋은 12 픽셀입니다.
 
@@ -1909,24 +1911,24 @@ BOOL SetTaskTextColor(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 태스크가 포함 된 작업 그룹의 인덱스를 지정 합니다.
+진행 태스크가 포함 된 작업 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 *nTask*<br/>
-[in] 작업의 인덱스를 지정합니다.
+진행 태스크의 인덱스 (0부터 시작)를 지정 합니다.
 
 *color*<br/>
-[in] 작업에 대 한 텍스트 색을 지정 합니다.
+진행 태스크의 텍스트 색을 지정 합니다.
 
 *colorHot*<br/>
-[in] 강조 표시 된 그룹에 대 한 텍스트 색을 지정 합니다. -1 이면이 메서드는 기본 강조 색을 사용 합니다.
+진행 강조 표시 된 그룹의 텍스트 색을 지정 합니다. -1 인 경우이 메서드는 기본 강조 색을 사용 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 작업에 대 한 텍스트 색이 성공적으로 설정 됩니다. 그렇지 않으면 FALSE입니다.
+작업의 텍스트 색이 성공적으로 설정 되었으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ##  <a name="setvertmargin"></a>  CMFCTasksPane::SetVertMargin
 
-세로 여백을 설정합니다.
+세로 여백을 설정 합니다.
 
 ```
 void SetVertMargin(int n = -1);
@@ -1935,17 +1937,17 @@ void SetVertMargin(int n = -1);
 ### <a name="parameters"></a>매개 변수
 
 *n*<br/>
-[in] 세로 여백을 설정 하려면을 지정 합니다.
+진행 설정할 세로 여백을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-세로 여백은 작업 창 클라이언트 영역의 세로 가장자리 사이의 거리입니다.
+세로 여백은 작업 창과 클라이언트 영역의 세로 가장자리 사이의 거리입니다.
 
-하는 경우 *n* 가-1 이면 비주얼 관리자를 사용 하 여 여백 값을 결정 하는 프레임 워크 (`CMFCVisualManager::GetTasksPaneVertMargin`). 기본 여백은 12 픽셀입니다.
+*N* 이-1 인 경우 프레임 워크는 visual manager (`CMFCVisualManager::GetTasksPaneVertMargin`)를 사용 하 여 여백 값을 결정 합니다. 기본 여백은 12 픽셀입니다.
 
 ##  <a name="setwindowheight"></a>  CMFCTasksPane::SetWindowHeight
 
-창 컨트롤의 높이 설정합니다.
+창 컨트롤의 높이를 설정 합니다.
 
 ```
 BOOL SetWindowHeight(
@@ -1961,21 +1963,21 @@ BOOL SetWindowHeight(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 창 컨트롤을 포함 하는 그룹의 인덱스를 지정 합니다.
+진행 창 컨트롤을 포함 하는 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 *hwndTask*<br/>
-[in] 창 컨트롤에 대 한 핸들을 지정합니다.
+진행 창 컨트롤에 대 한 핸들을 지정 합니다.
 
 *nWndHeight*<br/>
-[in] 설정할 높이를 지정 합니다.
+진행 설정할 높이를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-창 컨트롤의 높이 성공적으로 설정 되었으면; TRUE FALSE 이면 *해제* 올바르지 않습니다 이거나 *hwndTask* 존재 하지 않습니다.
+창 컨트롤의 높이가 성공적으로 설정 되었으면 TRUE이 고, *Ngroup* 이 잘못 되었거나 *hwndTask* 이 없는 경우 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [CMFCTasksPane::AddWindow](#addwindow) 창 컨트롤을 사용 하 여 작업을 추가 합니다.
+[CMFCTasksPane:: addwindow](#addwindow) 를 호출 하 여 창 컨트롤을 사용 하 여 작업을 추가 합니다.
 
 ##  <a name="showcommandmessagestring"></a>  CMFCTasksPane::ShowCommandMessageString
 
@@ -2004,24 +2006,24 @@ BOOL ShowTask(
 ### <a name="parameters"></a>매개 변수
 
 *nGroup*<br/>
-[in] 그룹의 인덱스를 지정합니다.
+진행 그룹의 인덱스 (0부터 시작)를 지정 합니다.
 
 *nTask*<br/>
-[in] 표시 하거나 숨기려면 작업의 0부터 시작 인덱스를 지정 합니다.
+진행 표시 하거나 숨길 태스크의 인덱스 (0부터 시작)를 지정 합니다.
 
 *bShow*<br/>
-[in] TRUE로 표시 합니다. 작업을 숨기려면 FALSE입니다.
+진행 태스크를 표시 하려면 TRUE이 고, FALSE 이면 작업을 숨깁니다.
 
 *bRedraw*<br/>
-[in] 작업 창;을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다.
+진행 작업 창을 다시 그리려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 작업이 성공적으로 표시 되거나 숨겨집니다. FALSE 이면 지정한 그룹 또는 작업이 존재 하지 않습니다.
+태스크가 성공적으로 표시 되거나 숨겨진 경우 TRUE입니다. 지정 된 그룹 또는 태스크가 없는 경우 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-사용 하 여 [CMFCTasksPane::ShowTaskByCmdId](#showtaskbycmdid) 표시 하거나 숨기려면 명령 ID를 기준으로 작업
+[CMFCTasksPane:: ShowTaskByCmdId](#showtaskbycmdid) 를 사용 하 여 명령 ID를 기준으로 작업을 표시 하거나 숨깁니다.
 
 ##  <a name="showtaskbycmdid"></a>  CMFCTasksPane::ShowTaskByCmdId
 
@@ -2037,25 +2039,25 @@ BOOL ShowTaskByCmdId(
 ### <a name="parameters"></a>매개 변수
 
 *uiCommandID*<br/>
-[in] 표시 하거나 숨기려면 작업의 명령 ID를 지정 합니다.
+진행 표시 하거나 숨길 태스크의 명령 ID를 지정 합니다.
 
 *bShow*<br/>
-[in] TRUE로 표시 합니다. 작업을 숨기려면 FALSE입니다.
+진행 태스크를 표시 하려면 TRUE이 고, FALSE 이면 작업을 숨깁니다.
 
 *bRedraw*<br/>
-[in] 작업 창;을 다시 그리게 TRUE 그렇지 않으면 FALSE입니다.
+진행 작업 창을 다시 그리려면 TRUE로 설정 합니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 작업이 성공적으로 표시 되거나 숨겨집니다. FALSE 이면 지정 된 명령 사용 하 여 작업 ID가 없습니다.
+태스크가 성공적으로 표시 되거나 숨겨진 경우 TRUE입니다. 지정 된 명령 ID를 가진 태스크가 존재 하지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-사용 하 여 [CMFCTasksPane::ShowTask](#showtask) 표시 하거나 숨기려면 명령 ID를 기준으로 작업
+[CMFCTasksPane:: ShowTask](#showtask) 를 사용 하 여 명령 ID를 기준으로 작업을 표시 하거나 숨깁니다.
 
 ##  <a name="update"></a>  CMFCTasksPane::Update
 
-모든 작업 창에서 컨트롤을 새로 고칩니다.
+작업 창에 있는 모든 컨트롤을 새로 고칩니다.
 
 ```
 virtual void Update();
@@ -2063,9 +2065,9 @@ virtual void Update();
 
 ### <a name="remarks"></a>설명
 
-이 메서드 업데이트 작업 창의 캡션, 스크롤 막대를 조정, 모든 작업의 위치를 변경 하 고 작업 창 컨트롤의 모든 다시 그립니다.
+이 메서드는 작업 창 캡션을 업데이트 하 고, 스크롤 막대를 조정 하 고, 모든 작업의 위치를 다시 조정 하 고, 모든 작업창 컨트롤을 다시 그립니다.
 
-프레임 워크 작업 창 새로 고치는 경우 사용자 지정 코드를 실행 하려면 파생된 클래스에서이 메서드를 재정의 합니다.
+프레임 워크가 작업 창을 새로 고칠 때 파생 클래스에서이 메서드를 재정의 하 여 사용자 지정 코드를 실행 합니다.
 
 ## <a name="see-also"></a>참고자료
 
