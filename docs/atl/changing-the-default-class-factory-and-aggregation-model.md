@@ -21,19 +21,19 @@ ms.locfileid: "62223159"
 ---
 # <a name="changing-the-default-class-factory-and-aggregation-model"></a>기본 클래스 팩터리 및 집계 모델 변경
 
-ATL은 기본 클래스 팩터리 및 개체에 대한 집계 모델을 정의하기 위해 [CComCoClass](../atl/reference/ccomcoclass-class.md)를 사용합니다. `CComCoClass`는 다음 두 매크로 지정합니다.
+ATL은 개체에 대한 기본 클래스 팩터리 및 집계 모델을 정의하기 위해 [CComCoClass](../atl/reference/ccomcoclass-class.md)를 사용합니다. `CComCoClass`는 다음 두 매크로를 지정합니다.
 
 - [DECLARE_CLASSFACTORY](reference/aggregation-and-class-factory-macros.md#declare_classfactory) 클래스 팩터리를 [CComClassFactory](../atl/reference/ccomclassfactory-class.md)가 되도록 선언합니다.
 
 - [DECLARE_AGGREGATABLE](reference/aggregation-and-class-factory-macros.md#declare_aggregatable) 개체를 집계될 수 있도록 선언 합니다.
 
-클래스 정의에서 다른 매크로 지정하여 이러한 기본값 중 하나를 재정의할 수 있습니다. 예를들어 `CComClassFactory` 대신 [CComClassFactory2](../atl/reference/ccomclassfactory2-class.md)를 사용하려면 [DECLARE_CLASSFACTORY2](reference/aggregation-and-class-factory-macros.md#declare_classfactory2) 매크로를 지정합니다.
+클래스 정의에서 다른 매크로를 지정하여 이러한 기본값 중 하나를 재정의할 수 있습니다. 예를 들어 `CComClassFactory` 대신 [CComClassFactory2](../atl/reference/ccomclassfactory2-class.md)를 사용하려면 [DECLARE_CLASSFACTORY2](reference/aggregation-and-class-factory-macros.md#declare_classfactory2) 매크로를 지정합니다.
 
 [!code-cpp[NVC_ATL_COM#2](../atl/codesnippet/cpp/changing-the-default-class-factory-and-aggregation-model_1.h)]
 
 클래스 팩터리를 정의 하는 다른 두 매크로 [DECLARE_CLASSFACTORY_AUTO_THREAD](reference/aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) 하 고 [DECLARE_CLASSFACTORY_SINGLETON](reference/aggregation-and-class-factory-macros.md#declare_classfactory_singleton)합니다.
 
-ATL은 또한 **typedef** 매커니즘을 사용하여 기본 동작을 구현합니다. 예를들어 DECLARE_AGGREGATABLE 매크로는 **typedef**를 사용하여 `_CreatorClass`라는 형식을 정의한 다음 ATL 전체에서 참조합니다. 파생된 클래스에서 기본 클래스의 **typedef**와 동일한 이름을 사용하는 **typedef** 정의를 사용하고 기본 동작을 재정의하여 ATL을 생성합니다.
+ATL은 또한 **typedef** 매커니즘을 사용하여 기본 동작을 구현합니다. 예를 들어 DECLARE_AGGREGATABLE 매크로는 **typedef**를 사용하여 `_CreatorClass`라는 형식을 정의한 다음 ATL 전체에서 참조합니다. 파생된 클래스에서, 기본 클래스의 **typedef**와 동일한 이름을 사용하는 **typedef**의 경우, ATL은 해당 정의를 사용하고 기본 동작을 재정의합니다.
 
 ## <a name="see-also"></a>참고자료
 
