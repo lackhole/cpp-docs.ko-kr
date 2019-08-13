@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CRT_REPORT_HOOK type
 - _finddata_t type
 ms.assetid: 23312dd2-4a6a-4d70-9b48-2a5d0d8c9f28
-ms.openlocfilehash: 85ebe9052d9e8bd18dfc9b3b123871e2e5acda4e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: d2b209e29b0690ec2003031e160ce9fd1f749b13
+ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740464"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68915311"
 ---
 # <a name="standard-types"></a>표준 형식
 
@@ -198,11 +198,11 @@ Microsoft 런타임 라이브러리는 다음과 같은 표준 형식 및 typede
 |`_CrtMemState` 구조체|C 런타임 디버그 힙의 현재 상태에 대한 정보를 제공합니다.|CRTDBG.H|
 |`_CRT_REPORT_HOOK`,<br /><br /> `_CRT_REPORT_HOOKW`,<br /><br /> `_CRT_REPORT_HOOKW_M`|[_CrtDbgReport](../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)에서 호출되는 콜백 함수에 대한 형식이 정의됩니다.<br /><br /> 이 함수에 대한 매개 변수는 보고서 유형, 출력 메시지 및 콜백 함수의 반환 값입니다.|CRTDBG.H|
 |`dev_t`, `_dev_t` short 또는 부호 없는 정수|디바이스 핸들을 나타냅니다.|SYS\TYPES.H|
-|`_diskfree_t` 구조체|디스크 드라이브에 대한 정보가 들어 있습니다. [_getdiskfree](../c-runtime-library/reference/getdiskfree.md)**.** 에 의해 사용됩니다.|DOS.H 및 DIRECT.H|
+|`_diskfree_t` 구조체|디스크 드라이브에 대한 정보가 들어 있습니다. [_getdiskfree](../c-runtime-library/reference/getdiskfree.md) **.** 에 의해 사용됩니다.|DOS.H 및 DIRECT.H|
 |`div_t`, `ldiv_t` 및 `lldiv_t` 구조|[div](../c-runtime-library/reference/div.md), [ldiv](../c-runtime-library/reference/ldiv-lldiv.md) 및 [lldiv](../c-runtime-library/reference/ldiv-lldiv.md)에 의해 반환된 값을 각각 저장합니다.|STDLIB.H|
 |`errno_t` 정수|`errno`의 오류 코드를 처리하는 매개 변수 또는 함수 반환 형식에 사용됩니다.|STDDEF.H,<br /><br /> CRTDEFS.H|
 |`_exception` 구조체|[_matherr](../c-runtime-library/reference/matherr.md)에 대한 오류 정보를 저장합니다.|MATH.H|
-|`_EXCEPTION_POINTERS`|예외 레코드를 포함합니다. 자세한 내용은 [예외 포인터](/windows/desktop/api/winnt/ns-winnt-_exception_pointers)를 참조하세요.|FPIEEE.H|
+|`_EXCEPTION_POINTERS`|예외 레코드를 포함합니다. 자세한 내용은 [예외 포인터](/windows/desktop/api/winnt/ns-winnt-exception_pointers)를 참조하세요.|FPIEEE.H|
 |`FILE` 구조체|스트림의 현재 상태에 대한 정보를 저장합니다. 모든 스트림 I/O 작업에 사용됩니다.|STDIO.H|
 |`_finddata_t`, `_wfinddata_t`, `_finddata32_t`, `_wfinddata32_t`, `_finddatai64_t`, `_wfinddatai64_t`, `__finddata64_t`, `__wfinddata64_t`, `__finddata32i64_t`, `__wfinddata32i64_t`, `__finddata64i32_t`, `__wfinddata64i32_t` 구조|[_findfirst, _wfindfirst 및 관련 함수](../c-runtime-library/reference/findfirst-functions.md)와 [_findnext, _wfindnext 및 관련 함수](../c-runtime-library/reference/findnext-functions.md)에 의해 반환되는 file-attribute 정보를 저장합니다. 구조체 멤버에 대한 자세한 내용은 [파일 이름 검색 함수](../c-runtime-library/filename-search-functions.md)를 참조하세요.|IO.H, WCHAR.H|
 |`_FPIEEE_RECORD` 구조체|IEEE 부동 소수점 예외에 대한 정보를 포함합니다. [_fpieee_flt](../c-runtime-library/reference/fpieee-flt.md)로 사용자 정의 트랩 처리기에 전달됩니다.|FPIEEE.H|
