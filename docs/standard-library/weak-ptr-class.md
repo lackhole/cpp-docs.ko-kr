@@ -35,7 +35,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/31/2019
 ms.locfileid: "68682418"
 ---
-# <a name="weakptr-class"></a>weak_ptr 클래스
+# <a name="weak_ptr-class"></a>weak_ptr 클래스
 
 약하게 링크된 포인터를 래핑합니다.
 
