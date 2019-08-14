@@ -20,7 +20,7 @@ ms.locfileid: "68980484"
 ---
 # <a name="using-the-mfc-source-files"></a>MFC 소스 파일 사용
 
-MFC (Microsoft Foundation Class) 라이브러리는 전체 소스 코드를 제공 합니다. 헤더 파일 (.h)은 \atlmfc\include 디렉터리에 있습니다. 구현 파일 (.cpp)은 \atlmfc\src\mfc 디렉터리에 있습니다.
+MFC(Microsoft Foundation Class) 라이브러리는 전체 소스 코드를 제공합니다. \atlmfc\include 디렉터리에는 헤더파일(.h)이, 구현 파일(.cpp)은 \atlmfc\src\mfc 디렉터리에 있습니다.
 
 이 문서에서는 MFC가 각 클래스의 다양한 상황에서 주석을 첨부하기 위해 사용하는 규칙, 주석이 사용된 부분의 의미 및 각 섹션에서 예상되는 사항에 대하여 설명합니다. Visual C++ 마법사는 개발자를 위해 생성한 클래스에도 유사한 규칙을 사용하고, 아마도 이러한 규칙은 개발자가 작성하는 코드에도 유용할 것입니다.
 
