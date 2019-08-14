@@ -1,6 +1,6 @@
 ---
 title: 메이크파일 전처리 지시문
-ms.date: 06/14/2018
+ms.date: 08/11/2019
 f1_keywords:
 - '!UNDEF'
 - '!INCLUDE'
@@ -39,70 +39,70 @@ helpviewer_keywords:
 - ELSE directive
 - ELSEIFDEF directive
 ms.assetid: bcedeccb-d981-469d-b9e8-ab5d097fd8c2
-ms.openlocfilehash: 0945d0e1c149b7e1ab31b0dbbd5003f8b15a1e4d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4825ca180cb1b419a9ffa5232575ba1a24f8805d
+ms.sourcegitcommit: db1ed91fa7451ade91c3fb76bc7a2b857f8a5eef
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321568"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68980520"
 ---
 # <a name="makefile-preprocessing-directives"></a>메이크파일 전처리 지시문
 
-전처리 지시문은 대/소문자 구분 하지 않습니다. 느낌표 (!) 줄의 시작 부분에 표시 되어야 합니다. 공백이 나 탭을 0 이상 들여쓰기에 느낌표 뒤에 나타날 수 있습니다.
+전처리 지시문은 대/소문자를 구분 하지 않습니다. 초기 느낌표 (!)는 줄의 시작 부분에 표시 되어야 합니다. 0 개 이상의 공백이 나 탭은 느낌표에 대해 느낌표 뒤에 올 수 있습니다.
 
-- **! CMDSWITCHES** {0}**+** &#124; **-**}*옵션* 하는 중...
+- `!CMDSWITCHES`{`+` &#124; } 옵션 ... `-`
 
-   각 설정 *옵션* 또는 해제를 나열 합니다. 공백 또는 탭 앞에 나타나야 합니다 + 또는-연산자 연산자 사이 표시할 수 없음 및 [문자 옵션](nmake-options.md)합니다. 문자 대/소문자 구분 하지 않으며 슬래시 (/) 없이 지정 됩니다. Off에서 일부 옵션 등을 설정 하려면 별도 사양 사용 **! CMDSWITCHES**합니다.
+   각 *옵션* 을 on 또는 off로 설정 합니다. 공백 또는 탭은 or `+` `-` 연산자 앞에 나와야 합니다. 연산자와 [옵션 문자](running-nmake.md#nmake-options)사이에는 아무것도 표시 되지 않습니다. 문자는 대/소문자를 구분 하지 않으며 슬래시 (`/`) 없이 지정 됩니다. 일부 옵션을 설정 하 고 다른 옵션을 해제 하려면의 `!CMDSWITCHES`별도 사양을 사용 합니다.
 
-   만 /D, I, /N 및 /S 메이크파일의 사용할 수 있습니다. Tools.ini에에서 /F, /HELP /NOLOGO를 제외 하 고 모든 옵션은 허용/X, 및 /? 설명 블록에 지정 된 변경 내용을 다음 설명 블록까지 적용 되지 않습니다. 이 지시문을 업데이트 **MAKEFLAGS**; 경우 재귀 중 변경 내용을 상속 **MAKEFLAGS** 지정 됩니다.
+   메이크파일에는/D,/I,/N 및/S만 사용할 수 있습니다. Setup.ini에서/F,/HELP,/NOLOGO,/X 및/?를 제외한 모든 옵션을 사용할 수 있습니다. 설명 블록에 지정 된 변경 내용은 다음 설명 블록까지 적용 되지 않습니다. 이 지시문은 **Makeflags**를 업데이트 합니다. **Makeflags** 가 지정 된 경우 재귀 중에 변경 내용이 상속 됩니다.
 
-- **!ERROR**  *text*
+- `!ERROR`*텍스트*
 
-   표시 *텍스트* 오류 U1050, 다음 중단 NMAKE, 경우에도에서 /K / I, **합니다. 무시**, **! CMDSWITCHES**, 또는 대시 (-) 명령 한정자를 사용 합니다. 공백 또는 탭 앞 *텍스트* 무시 됩니다.
+   U1050에 *텍스트* 를 표시 한 다음,/k,/i, `.IGNORE`, `!CMDSWITCHES`또는 대시 (`-`) 명령 한정자를 사용 하는 경우에도 NMAKE를 중단 합니다. *텍스트* 앞의 공백이 나 탭은 무시 됩니다.
 
-- **!MESSAGE**  *text*
+- `!MESSAGE`*텍스트*
 
-   표시 *텍스트* 을 표준 출력 합니다. 공백 또는 탭 앞 *텍스트* 무시 됩니다.
+   *텍스트* 를 표준 출력으로 표시 합니다. *텍스트* 앞의 공백이 나 탭은 무시 됩니다.
 
-- **!INCLUDE** [ **\<** ] *filename* [ **>** ]
+- `!INCLUDE`[ `<` ] *filename* [ `>` ]
 
-   읽습니다 *filename* 을 메이크파일으로 현재 메이크파일을 사용 하 여 계속 합니다. Nmake *filename* 먼저 지정 된 또는 현재 디렉터리에 다음 재귀적으로 모든 부모 메이크파일에 서 찾습니다 한 경우 *filename* 꺾쇠 괄호로 묶입니다 (\<>)를 지정 된 디렉터리에는 **포함** 는 처음에 INCLUDE 환경 변수를 설정 하는 매크로 합니다. 이 지시문은 **합니다. 접미사** 설정을 **합니다. 귀중 한**, 및 재귀 메이크파일 유추 규칙입니다.
+   *파일 이름을* 메이크파일로 읽은 다음 현재 메이크파일을 계속 합니다. NMAKE는 지정 된 또는 현재 디렉터리에 있는 *파일 이름을* 먼저 검색 한 다음, 부모 메이크파일의 디렉터리를 재귀적으로 검색 한 다음, *파일 이름이* 꺾쇠 괄호 (`< >`)로 묶여 있는 **경우에 지정 된 디렉터리에서** Include 환경 변수로 처음 설정 되는 매크로를 포함 합니다. 설정, `.SUFFIXES` `.PRECIOUS`및 유추 규칙을 재귀적 메이크파일에 전달 하는 데 유용 합니다.
 
-- **!IF** *constant_expression*
+- `!IF`*constant_expression*
 
-   이전 **! IF** 및 다음 **! ELSE** 또는 **! ENDIF** 하는 경우 *constant_expression* 0이 아닌 값으로 계산 합니다.
+   `!IF` 는와 `!ELSE` next 사이에 있는 문을 처리 합니다. constant_expression가 0이 아닌 값으로 계산 됩니다 `!ENDIF` .
 
-- **!IFDEF**  *macroname*
+- `!IFDEF`*macroname*
 
-   이전 **! IFDEF** 및 다음 **! ELSE** 또는 **! ENDIF** 하는 경우 *매크로 이름* 정의 됩니다. Null 매크로 정의로 간주 됩니다.
+   `!IFDEF` 와 다음 `!ELSE` 사이 또는 `!ENDIF` *macroname* 이 정의 된 경우 문을 처리 합니다. Null 매크로가 정의 된 것으로 간주 됩니다.
 
-- **!IFNDEF**  *macroname*
+- `!IFNDEF`*macroname*
 
-   이전 **! IFNDEF** 및 다음 **! ELSE** 또는 **! ENDIF** 하는 경우 *매크로 이름* 정의 되어 있지 않습니다.
+   와 `!IFNDEF` 다음`!ELSE`사이의 문이나 *macroname* 이 정의 되지 않은 경우를 처리 합니다. `!ENDIF`
 
-- **!ELSE** [**IF** *constant_expression* &#124; **IFDEF** *macroname* &#124; **IFNDEF** *macroname*]
+- `!ELSE`[`IF` &#124; *constant_expression* &#124; *macroname* macroname] `IFDEF` `IFNDEF`
 
-   이전 **! ELSE** 및 다음 **! ENDIF** 하는 경우 이전 **! IF**, **! IFDEF**, 또는 **! IFNDEF** 문은 0으로 계산 합니다. 선택적 키워드 게 전처리 제어할 수 있습니다.
+   `!ELSE` `!ENDIF` 이전`!IFNDEF` , 또는 문이0으로계산되는경우와다음사이의문을처리합니다.`!IFDEF` `!IF` 선택적 키워드를 통해 전처리를 추가로 제어할 수도 있습니다.
 
-- **!ELSEIF**
+- `!ELSEIF`
 
-   에 대 한 동의어 **! ELSE IF**합니다.
+   `!ELSE IF`의 동의어입니다.
 
-- **!ELSEIFDEF**
+- `!ELSEIFDEF`
 
-   에 대 한 동의어 **! 다른 IFDEF**합니다.
+   `!ELSE IFDEF`의 동의어입니다.
 
-- **!ELSEIFNDEF**
+- `!ELSEIFNDEF`
 
-   에 대 한 동의어 **! 다른 IFNDEF**합니다.
+   `!ELSE IFNDEF`의 동의어입니다.
 
-- **!ENDIF**
+- `!ENDIF`
 
-   끝을 표시는 **! IF**, **! IFDEF**, 또는 **! IFNDEF** 블록입니다. 같은 줄에서 **! ENDIF** 같은 줄에는 무시 됩니다.
+   `!IF` ,`!IFDEF`또는 블록`!IFNDEF` 의 끝을 표시 합니다. 같은 줄의 `!ENDIF` 뒤에 오는 모든 텍스트는 무시 됩니다.
 
-- **!UNDEF**  *macroname*
+- `!UNDEF`*macroname*
 
-   정의 해제 *매크로 이름*합니다.
+   를해제 합니다.
 
 ## <a name="see-also"></a>참고자료
 

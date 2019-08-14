@@ -1124,16 +1124,7 @@
                 - name: Visual Studio의 NMAKE 프로젝트
                   href: build/reference/creating-a-makefile-project.md
                 - name: NMAKE 실행
-                  expanded: false
-                  items:
-                    - name: NMAKE 실행
-                      href: build/reference/running-nmake.md
-                    - name: NMAKE 옵션
-                      href: build/reference/nmake-options.md
-                    - name: Tools.ini와 NMAKE
-                      href: build/reference/tools-ini-and-nmake.md
-                    - name: NMAKE의 종료 코드
-                      href: build/reference/exit-codes-from-nmake.md
+                  href: build/reference/running-nmake.md
                 - name: 메이크파일의 내용
                   expanded: false
                   items:
