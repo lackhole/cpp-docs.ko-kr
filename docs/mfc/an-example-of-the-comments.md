@@ -16,17 +16,17 @@ ms.locfileid: "62394691"
 ---
 # <a name="an-example-of-the-comments"></a>주석 예
 
-클래스의 다음 부분 목록 `CChildFrame` 대부분 사용 되는 방식에 따라 클래스 멤버를 분할 하는 클래스에서 MFC를 사용 하는 표준 의견을 사용 합니다.
+아래의 `CChildFrame` 클래스 내용 일부는 MFC가 클래스에서 사용하는 일반적인 표준 주석을 최대로 활용하여 클래스 멤버를 사용 방식에 따라 나누는 것을 보여줍니다.
 
 [!code-cpp[NVC_MFCListView#5](../atl/reference/codesnippet/cpp/an-example-of-the-comments_1.h)]
 
-이러한 주석은 비슷한 종류의 클래스 멤버를 포함 하는 클래스 선언의 섹션을 일관 되 게 표시 합니다. 이 MFC 규칙 염두에서에 둡니다, 그리고 규칙을 설정 하지.
+이러한 주석은 비슷한 종류의 클래스 멤버를 포함하는 클래스 선언의 섹션을 일관되게 표시합니다. 별도의 규칙을 정하기보다는 이 MFC 규칙 염두에 둡니다.
 
 ## <a name="see-also"></a>참고자료
 
 [MFC 소스 파일 사용](../mfc/using-the-mfc-source-files.md)<br/>
-[구현 주석](../mfc/decrement-implementation-comment.md)<br/>
-[생성자 주석](../mfc/decrement-constructors-comment.md)<br/>
-[특성 주석](../mfc/decrement-attributes-comment.md)<br/>
-[작업 주석](../mfc/decrement-operations-comment.md)<br/>
-[재정의 가능 주석](../mfc/decrement-overridables-comment.md)
+[Implementation 주석](../mfc/decrement-implementation-comment.md)<br/>
+[Constructors 주석](../mfc/decrement-constructors-comment.md)<br/>
+[Attributes 주석](../mfc/decrement-attributes-comment.md)<br/>
+[Operations 주석](../mfc/decrement-operations-comment.md)<br/>
+[Overrides 주석](../mfc/decrement-overridables-comment.md)

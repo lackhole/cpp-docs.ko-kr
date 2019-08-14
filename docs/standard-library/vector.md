@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - vector header
 ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f
-ms.openlocfilehash: 5992e368031b59c9b892167b135fa30a870c73f9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 59424a9f6a9434b5d7d3f4298cbb0bc03926621c
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448063"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957059"
 ---
 # <a name="ltvectorgt"></a>&lt;vector&gt;
 
@@ -112,7 +112,7 @@ void swap (
 
 |||
 |-|-|
-|[hash]()||
+|hash|벡터의 해시를 반환 합니다.|
 |[vector\<bool> 클래스](../standard-library/vector-bool-class.md)|`bool` 유형 요소에 대한 템플릿 클래스 벡터의 전체 특수화로, 특수화에 사용되는 기본 유형에 대한 할당자를 포함합니다.|
 
 ## <a name="requirements"></a>요구 사항

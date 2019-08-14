@@ -9,11 +9,11 @@ helpviewer_keywords:
 - aggregates [C++], initializing
 ms.assetid: a8f8ed75-39db-4592-93b9-d3920d915810
 ms.openlocfilehash: f6816a6f63de262b927a3c5aeed8774ba29c2eaa
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151496"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "62326081"
 ---
 # <a name="initializing-aggregate-types"></a>집합체 형식 초기화
 
@@ -22,8 +22,8 @@ ms.locfileid: "56151496"
 ## <a name="syntax"></a>구문
 
 *initializer*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{**  *initializer-list*  **}** /* 집합체 초기화용 \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{**  *initializer-list*  **, }**
+&nbsp;&nbsp;&nbsp;&nbsp; **{**  *initializer-list*  **}** /* 집합체 초기화용 \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **{**  *initializer-list*  **, }**
 
 *initializer-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*initializer*<br/>
@@ -35,7 +35,7 @@ ms.locfileid: "56151496"
 
 *initializer-list*가 집합체 형식보다 적은 값을 갖는 경우 집합체 형식의 나머지 멤버 또는 요소는 0으로 초기화됩니다. 명시적으로 초기화되지 않은 자동 식별자의 초기값은 정의되지 않습니다. *initializer-list*가 집합체 형식보다 많은 값을 갖는 경우 오류가 발생합니다. 이러한 규칙은 각각 포함된 이니셜라이저 목록뿐 아니라 전체로써 집합체에도 적용됩니다.
 
-구조체의 이니셜라이저는 동일한 형식의 식이거나 중괄호(**{ }**)로 묶인 멤버에 대한 이니셜라이저의 목록입니다. 명명되지 않은 비트 필드 멤버는 초기화되지 않습니다.
+구조체의 이니셜라이저는 동일한 형식의 식이거나 중괄호( **{ }** )로 묶인 멤버에 대한 이니셜라이저의 목록입니다. 명명되지 않은 비트 필드 멤버는 초기화되지 않습니다.
 
 공용 구조체가 초기화될 때 *initializer-list*는 단일 상수 식이어야 합니다. 상수 식의 값은 공용 구조체의 첫 번째 멤버에 할당됩니다.
 

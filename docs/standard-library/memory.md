@@ -1,18 +1,18 @@
 ---
 title: '&lt;memory&gt;'
-ms.date: 04/04/2019
+ms.date: 08/04/2019
 f1_keywords:
 - memory/std::<memory>
 - <memory>
 - std::<memory>
 helpviewer_keywords:
 - memory header
-ms.openlocfilehash: 7c30a44de70675af69648fdba79325a173ab62fc
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 869a7590d880beba7ccc1d324fd1ba227eeac4e0
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451881"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957082"
 ---
 # <a name="ltmemorygt"></a>&lt;memory&gt;
 
@@ -93,7 +93,7 @@ ms.locfileid: "68451881"
 |-|-|
 |[allocator](../standard-library/allocator-class.md)|템플릿 클래스는 **Type** 형식의 개체 배열에 대한 스토리지 할당 및 해제를 관리하는 개체를 설명합니다.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|할당자를 사용할 수 있는 컨테이너에 필요한 모든 정보를 확인하는 개체에 대해 설명합니다.|
-|[auto_ptr](../standard-library/auto-ptr-class.md)|이 템플릿 클래스는 바깥쪽 auto_ptr이 삭제 될 때 요소가 가리키는 개체가 삭제 되도록 <strong>\*</strong> 하 **는 형식** 형식의 할당 된 개체에 대 한 포인터를 저장 하는 개체를 설명 합니다.|
+|[auto_ptr](../standard-library/auto-ptr-class.md)|이 템플릿 클래스는 바깥쪽 auto_ptr이 삭제 될 때 요소가 가리키는 개체가 삭제 되도록 <strong>\*</strong> 하는 형식 형식의 할당 된 개체에 대 한 포인터를 저장 하는 개체를 설명 합니다.|
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|불량 weak_ptr 예외를 보고합니다.|
 |[enabled_shared_from_this](../standard-library/enable-shared-from-this-class.md)|`shared_ptr`을 생성할 수 있습니다.|
 |[pointer_traits](../standard-library/pointer-traits-struct.md)|포인터 형식 `allocator_traits`를 사용하여 할당자를 설명하기 위해 템플릿 클래스 `Ptr`의 개체에 필요한 정보를 제공합니다.|
@@ -108,7 +108,7 @@ ms.locfileid: "68451881"
 |-|-|
 |[allocator_arg_t](../standard-library/allocator-class.md#allocator_arg_t)||
 |[default_delete](../standard-library/default-delete-struct.md)||
-|[hash]()||
+|hash|`unique_ptr` 및`shared_ptr`에 대해 특수화 된 오버 로드를 제공 합니다.|
 |[owner_less](../standard-library/memory-functions.md#owner_less)|공유된 포인터와 약한 포인트에 대한 소유권 기반의 혼합된 비교를 허용합니다.|
 |[uses_allocator](../standard-library/allocator-class.md#uses_allocator)||
 
@@ -116,7 +116,7 @@ ms.locfileid: "68451881"
 
 |||
 |-|-|
-|[allocator\<void>](../standard-library/allocator-void-class.md)|형식 void에 대한 템플릿 클래스 할당자의 특수화로, 이 특수화된 컨텍스트에서 맞는 멤버 형식만 정의합니다.|
+|[allocator\<void>](../standard-library/allocator-void-class.md)|**Void**형식에 대 한 템플릿 클래스 할당자의 특수화로,이 특수화 된 컨텍스트에서 맞는 멤버 형식만 정의 합니다.|
 
 ## <a name="see-also"></a>참고자료
 
