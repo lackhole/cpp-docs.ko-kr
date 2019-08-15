@@ -2,16 +2,16 @@
 title: /INTEGRITYCHECK(시그니처 확인 필요)
 ms.date: 11/04/2016
 ms.assetid: 9e738825-2c98-40cd-8ad2-5d0d9c14893e
-ms.openlocfilehash: a46f31140c01753fdaa6e72fd0f741f569a5ad94
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 1732c612501b66753635b272f94764975c555f75
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450449"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492841"
 ---
 # <a name="integritycheck-require-signature-check"></a>/INTEGRITYCHECK(시그니처 확인 필요)
 
-로드 시 이진 이미지의 디지털 서명을 확인 해야 합니다는 나타냅니다.
+로드 시 이진 이미지의 디지털 서명을 확인 하도록 지정 합니다.
 
 ```
 /INTEGRITYCHECK[:NO]
@@ -19,9 +19,9 @@ ms.locfileid: "66450449"
 
 ## <a name="remarks"></a>설명
 
-기본적으로 **/INTEGRITYCHECK** 꺼져 있습니다.
+기본적으로 **/Integritycheck** 는 해제 되어 있습니다.
 
-합니다 **/INTEGRITYCHECK** 옵션 집합-DLL 파일 또는 실행 파일의 PE 헤더에서-Windows에서 이미지를 로드 하려면 디지털 서명을 확인 하는 메모리 관리자에 대 한 플래그입니다. 이 옵션은 특정 Windows 기능으로 로드 되는 커널 모드 코드를 구현 하는 32 비트 및 64 비트 Dll에 대 한 설정 해야 하며 Windows Vista, Windows 7, Windows 8, Windows Server 2008 및 Windows Server 2012에서 모든 장치 드라이버에 대 한 것이 좋습니다. Windows Vista 이전의 Windows 버전은이 플래그를 무시 합니다. 자세한 내용은 [강제 무결성 서명의 PE (이식 가능) 파일](https://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)합니다.
+**/Integritycheck** 옵션은 DLL 파일 또는 실행 파일의 PE 헤더에서, Windows에서 이미지를 로드 하기 위해 디지털 서명을 확인 하는 메모리 관리자에 대 한 플래그를 설정 합니다. 이 옵션은 특정 Windows 기능에서 로드 한 커널 모드 코드를 구현 하는 32 비트 및 64 비트 Dll에 대해 설정 해야 하며, Windows Vista, Windows 7, Windows 8, Windows Server 2008 및 Windows Server 2012의 모든 장치 드라이버에 권장 됩니다. Windows Vista 이전의 Windows 버전은이 플래그를 무시 합니다. 자세한 내용은 [pe (이식 가능한 실행 파일) 파일의 강제 무결성 서명](https://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)을 참조 하세요.
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio에서 이 링커 옵션을 설정하려면
 
@@ -33,12 +33,12 @@ ms.locfileid: "66450449"
 
 1. **명령줄** 속성 페이지를 선택합니다.
 
-1. **추가 옵션**를 입력 `/INTEGRITYCHECK` 또는 `/INTEGRITYCHECK:NO`합니다.
+1. **추가 옵션**에서 또는 `/INTEGRITYCHECK:NO`를 `/INTEGRITYCHECK` 입력 합니다.
 
 ## <a name="see-also"></a>참고자료
 
 [MSVC 링커 참조](linking.md)<br/>
 [MSVC 링커 옵션](linker-options.md)<br/>
-[강제 무결성 서명의 PE (이식 가능) 파일](https://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)<br/>
-[커널 모드 코드 서명 연습](https://msdn.microsoft.com/windows/hardware/gg487328.aspx)<br/>
-[Windows 7 및 Windows Server 2008의 AppInit Dll](https://msdn.microsoft.com/windows/hardware/gg463040.aspx)
+[PE (이식 가능한 실행) 파일의 강제 무결성 서명](https://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)<br/>
+[커널 모드 코드 서명 요구 사항](/windows-hardware/drivers/install/kernel-mode-code-signing-requirements--windows-vista-and-later-)<br/>
+[AppInit Dll 및 보안 부팅](/windows/win32/dlls/secure-boot-and-appinit-dlls)

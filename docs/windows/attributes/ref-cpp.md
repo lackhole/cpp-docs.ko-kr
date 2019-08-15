@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - ref attribute
 ms.assetid: 67e82d3e-07d9-4ef8-bf2b-0a4491d12557
-ms.openlocfilehash: f051fe577087d81515ddf0b44dfb15ad0fb2c616
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7dd927f385b039f1909a4bdf1998ea5a0b39264
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407421"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514119"
 ---
 # <a name="ref-c"></a>ref(C++)
 
-참조 포인터를 식별합니다.
+참조 포인터를 식별 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407421"
 
 ## <a name="remarks"></a>설명
 
-**ref** C++ 특성에 동일한 기능을 합니다 [ref](/windows/desktop/Midl/ref) MIDL 특성입니다.
+**Ref** C++ 특성에는 [ref](/windows/win32/Midl/ref) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 사용 하 여 **ref** 특성:
+다음 코드에서는 **ref** 특성을 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_ref.cpp
@@ -49,7 +49,7 @@ __interface IFireTabCtrl
 
 |||
 |-|-|
-|**적용 대상**|**typedef**인터페이스 매개 변수, 인터페이스 메서드|
+|**적용 대상**|**typedef**, interface 매개 변수, interface 메서드|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|

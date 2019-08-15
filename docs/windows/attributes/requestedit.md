@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - requestedit attribute
 ms.assetid: b3c24790-3c4a-4646-8722-03d7b51172ee
-ms.openlocfilehash: 30b0c5ec807865280c8e538ea701c3d1a5c4ef9c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e90506619d4f13d4e5627f9c06b997d7034b5f49
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407382"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514085"
 ---
 # <a name="requestedit"></a>requestedit
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407382"
 
 ## <a name="remarks"></a>설명
 
-**requestedit** C++ 특성에 동일한 기능을 합니다 [requestedit](/windows/desktop/Midl/requestedit) MIDL 특성입니다.
+**Requestedit** C++ 특성에는 [requestedit](/windows/win32/Midl/requestedit) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [bindable](bindable.md) 의 샘플 사용에 대 한 **requestedit**합니다.
+**Requestedit**의 샘플 사용에 대 한 [바인딩](bindable.md) 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -5,16 +5,16 @@ helpviewer_keywords:
 - ATL, reference
 - ATL, about ATL
 ms.assetid: 291f38d1-d2de-4687-86a9-99b4fd35706c
-ms.openlocfilehash: e1ee9364cfcd382c8699014fd2ef4a807b63bb0f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dab865215a357a29be2ff1cd187ceb1c44af897c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223400"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491883"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM 데스크톱 구성 요소
 
-ATL 참조는 구성 요소 개체 모델(COM) 개체의 프로그래밍을 단순화하는 템플릿 기반 C++ 클래스 집합인 액티브 템플릿 라이브러리(ATL)에 대한 문서입니다. COM은 Windows에서 소프트웨어 구성 요소를 만들고 사용하는 것에 대한 이진 사양입니다. ATL을 완전히 활용하기 위해서는 COM에 대한 지식이 있는 것이 가장 좋습니다. COM에 대한 자세한 내용은 [구성 요소 개체 모델(COM)](/windows/desktop/com/component-object-model--com--portal)을 참조합니다.
+ATL 참조는 구성 요소 개체 모델(COM) 개체의 프로그래밍을 단순화하는 템플릿 기반 C++ 클래스 집합인 액티브 템플릿 라이브러리(ATL)에 대한 문서입니다. COM은 Windows에서 소프트웨어 구성 요소를 만들고 사용하는 것에 대한 이진 사양입니다. ATL을 완전히 활용하기 위해서는 COM에 대한 지식이 있는 것이 가장 좋습니다. COM에 대한 자세한 내용은 [구성 요소 개체 모델(COM)](/windows/win32/com/component-object-model--com--portal)을 참조합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -45,7 +45,7 @@ ATL Worker 원형에 대한 링크를 제공합니다.
 액티브 템플릿 라이브러리(ATL)를 사용하여 프로그래밍하는 방법에 대한 항목을 제공합니다.
 
 [ATL 자습서](../atl/active-template-library-atl-tutorial.md)<br/>
-컨트롤 생성과 그 과정에서 일부 ATL 기초를 보여줍니다.
+컨트롤 생성을 안내하고 프로세스에서 일부 ATL 기초를 보여줍니다.
 
 [ATL 샘플](../overview/visual-cpp-samples.md)<br/>
 COM 객체를 이용한 ATL 사용 방법을 보여주는 샘플 코드입니다.

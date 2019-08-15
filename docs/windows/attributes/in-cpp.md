@@ -1,21 +1,21 @@
 ---
-title: (C++ COM 특성)
+title: in (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.in
 helpviewer_keywords:
 - in attribute
 ms.assetid: 7b450cc4-4d2e-4910-a195-7487c6b7c373
-ms.openlocfilehash: 06d78552ef2ebb878ed630eb377e6249ba60cad4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e97008d0399764beeca73dbbc5914e4b891df748
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409345"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514596"
 ---
 # <a name="in-c"></a>in(C++)
 
-매개 변수가 호출된 된 프로시저를 호출 하는 프로시저에서 전달할 임을 나타냅니다.
+호출 하는 프로시저에서 호출 되는 프로시저로 매개 변수가 전달 됨을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62409345"
 
 ## <a name="remarks"></a>설명
 
-**에서** C++ 특성에 동일한 기능을 합니다 [에서](/windows/desktop/Midl/in) MIDL 특성.
+**In** C++ 특성에는 [in](/windows/win32/Midl/in) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-참조 [bindable](bindable.md) 사용 하는 방법의 예 **에서**합니다.
+**에서**를 사용 하는 방법에 대 한 예제는 [바인딩](bindable.md) 가능을 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -37,7 +37,7 @@ ms.locfileid: "62409345"
 
 |||
 |-|-|
-|**적용 대상**|인터페이스 매개 변수를 인터페이스 메서드|
+|**적용 대상**|인터페이스 매개 변수, 인터페이스 메서드|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|**retval**|

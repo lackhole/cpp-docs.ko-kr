@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DLLs [C++]
 - DLLs [C++], about DLLs
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
-ms.openlocfilehash: 9f5b34fda8a429f8e55631e1e0125ed6f79d5bae
-ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
+ms.openlocfilehash: 33f002143e306c99b4d17b7a01ddd4a9738e38e7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341076"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493281"
 ---
 # <a name="create-cc-dlls-in-visual-studio"></a>Visual Studio에서 C/C++ DLL 빌드
 
@@ -88,7 +88,7 @@ DLL이 로드 될 때 실행 되어야 하는 DLL 초기화 코드에 대해 설
 [FreeLibrary 및 AfxFreeLibrary](freelibrary-and-afxfreelibrary.md)<br/>
 **Freelibrary** 를 사용 하 `AfxFreeLibrary` 는 방법과 DLL 모듈이 더 이상 필요 하지 않은 경우에 대해 설명 합니다.
 
-[동적 연결 라이브러리 검색 순서](/windows/desktop/Dlls/dynamic-link-library-search-order)<br/>
+[동적 연결 라이브러리 검색 순서](/windows/win32/Dlls/dynamic-link-library-search-order)<br/>
 시스템에서 DLL을 찾기 위해 Windows 운영 체제가 사용하는 검색 경로에 대해 설명합니다.
 
 [동적으로 MFC에 링크된 기본 MFC DLL의 모듈 상태](module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)<br/>

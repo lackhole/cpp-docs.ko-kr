@@ -5,54 +5,54 @@ helpviewer_keywords:
 - synchronization data structures, compared to Windows API
 - event class, example
 ms.assetid: 8b0b1a3a-ef80-408c-91fa-93e6af920b4e
-ms.openlocfilehash: 4fa0d3fbf3457bfafab731275584d206206161dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 16d58431ae3f9859677302010f15a75b37ebedbf
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62414037"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510586"
 ---
 # <a name="comparing-synchronization-data-structures-to-the-windows-api"></a>동기화 데이터 구조와 Windows API의 비교
 
-이 항목에서는 동시성 런타임을 Windows API에서 제공 하는 것에서 제공 하는 동기화 데이터 구조의 동작을 비교 합니다.
+이 항목에서는 동시성 런타임에서 제공 하는 동기화 데이터 구조와 Windows API에서 제공 하는 동기화 데이터 구조의 동작을 비교 합니다.
 
-동시성 런타임에서 제공 되는 동기화 데이터 구조에 따라 합니다 *스레딩 모델 협조적*합니다. 협조적 스레딩 모델에서 동기화 기본 형식을 명시적으로 다른 스레드에 처리 리소스를 생성합니다. 이 반해 합니다 *선점형 스레딩 모델*여기서 처리 리소스 제어 스케줄러 또는 운영 체제에서 다른 스레드에 전송 됩니다.
+동시성 런타임에서 제공 하는 동기화 데이터 구조는 *협조적 스레딩 모델*을 따릅니다. 협조적 스레딩 모델에서 동기화 기본 형식은 다른 스레드에 대 한 처리 리소스를 명시적으로 생성 합니다. 이는 제어 스케줄러 또는 운영 체제에서 처리 리소스를 다른 스레드로 전송 하는 *선점형 스레딩 모델과*다릅니다.
 
-## <a name="criticalsection"></a>critical_section
+## <a name="critical_section"></a>critical_section
 
-합니다 [concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md) 클래스에는 Windows와 유사 `CRITICAL_SECTION` 하나의 프로세스의 스레드에 의해만 사용할 수 있으므로 구조체입니다. Windows API에서 중요 한 섹션에 대 한 자세한 내용은 참조 하세요. [임계 영역 개체](/windows/desktop/Sync/critical-section-objects)합니다.
+[Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md) 클래스는 한 프로세스의 `CRITICAL_SECTION` 스레드에서만 사용할 수 있기 때문에 Windows 구조체와 유사 합니다. Windows API의 중요 한 섹션에 대 한 자세한 내용은 [임계 영역 개체](/windows/win32/Sync/critical-section-objects)를 참조 하세요.
 
-## <a name="readerwriterlock"></a>reader_writer_lock
+## <a name="reader_writer_lock"></a>reader_writer_lock
 
-합니다 [concurrency:: reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) Windows 슬림 판독기/기록기 (SRW) 잠금을 유사 합니다. 다음 표에서 유사점과 차이점을 설명합니다.
+[Concurrency:: reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) 클래스는 WINDOWS의 SRW (슬림 판독기/기록기) 잠금과 유사 합니다. 다음 표에서는 유사점과 차이점에 대해 설명 합니다.
 
 |기능|`reader_writer_lock`|SRW 잠금|
 |-------------|--------------------------|--------------|
-|재진입|예|예|
-|기록기 (업그레이드 지원)에 판독기를 승격할 수 있습니다.|아니요|아니요|
-|(다운 그레이드 지원) 판독기는 작성기의 수준을 내릴 수 있습니다.|아니요|아니요|
-|쓰기 기본 설정|예|아니요|
-|작성기에는 FIFO 액세스|예|아니요|
+|비 재진입|예|예|
+|판독기를 작성기로 승격할 수 있습니다 (업그레이드 지원).|아니요|아니요|
+|작성기의 수준을 판독기로 내릴 수 있습니다 (다운 그레이드 지원).|아니요|아니요|
+|쓰기 기본 설정 잠금|예|아니요|
+|기록기에 대 한 FIFO 액세스|예|아니요|
 
-SRW 잠금에 대 한 자세한 내용은 참조 하십시오 [슬림 판독기/기록기 (SRW) 잠금](https://msdn.microsoft.com/library/windows/desktop/aa904937) Platform SDK에 있습니다.
+SRW 잠금에 대 한 자세한 내용은 Platform SDK의 [srw (슬림 판독기/Writer) 잠금](/windows/win32/sync/slim-reader-writer--srw--locks) 을 참조 하세요.
 
-## <a name="event"></a>이벤트(event)
+## <a name="event"></a>이벤트
 
-합니다 [concurrency:: event](../../parallel/concrt/reference/event-class.md) 클래스 명명 되지 않은 Windows 수동 재설정 이벤트와 유사 합니다. 그러나는 `event` Windows 이벤트를 선점 하 여 동작 하지만 개체는 협조적으로 동작 합니다. Windows 이벤트에 대 한 자세한 내용은 참조 하세요. [이벤트 개체](/windows/desktop/Sync/event-objects)합니다.
+[Concurrency:: event](../../parallel/concrt/reference/event-class.md) 클래스는 명명 되지 않은 Windows 수동 다시 설정 이벤트와 비슷합니다. 그러나 개체는 `event` 협조적으로 동작 하지만 Windows 이벤트는 미리 동작 합니다. Windows 이벤트에 대 한 자세한 내용은 [이벤트 개체](/windows/win32/Sync/event-objects)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
 
-간의 차이 파악 하는 데는 `event` 클래스 및 Windows 이벤트를 다음 예제를 살펴보세요. 이 예제에서는 스케줄러가 최대 두 개의 동시 작업을 만든 다음 호출을 사용 하는 비슷한 두 함수는 `event` 클래스와 Windows 수동 재설정 이벤트입니다. 각 함수는 먼저 공유 이벤트 신호를 대기 하는 몇 가지 작업을 만듭니다. 각 함수는 다음을 실행 중인 태스크를 생성 하 고 이벤트에 신호를 보냅니다. 그런 다음 각 함수는 신호를 받은 이벤트 기다립니다.
+클래스와 Windows 이벤트의 `event` 차이를 더 잘 이해 하려면 다음 예제를 참조 하세요. 이 예제에서는 스케줄러가 최대 두 개의 동시 작업을 만든 다음 `event` 클래스 및 Windows 수동 다시 설정 이벤트를 사용 하는 두 개의 유사한 함수를 호출할 수 있도록 합니다. 각 함수는 먼저 공유 이벤트가 신호를 받을 때까지 대기 하는 여러 작업을 만듭니다. 각 함수는 실행 중인 작업을 생성 한 다음 이벤트에 신호를 보냅니다. 각 함수는 신호를 받은 이벤트를 기다립니다.
 
 ### <a name="code"></a>코드
 
 [!code-cpp[concrt-event-comparison#1](../../parallel/concrt/codesnippet/cpp/comparing-synchronization-data-structures-to-the-windows-api_1.cpp)]
 
-### <a name="comments"></a>설명
+### <a name="comments"></a>주석
 
-이 예제는 다음 예제 출력을 생성합니다.
+이 예제에서는 다음과 같은 샘플 출력을 생성 합니다.
 
 ```Output
 Cooperative event:
@@ -81,9 +81,9 @@ Windows event:
     Context 13: received the event.
 ```
 
-때문에 `event` 클래스는 협조적으로 동작, 이벤트 신호를 받은 상태로 전환 하려고 대기 하는 경우 스케줄러 처리 리소스를 다른 컨텍스트를 다시 할당할 수 있습니다. 사용 하는 버전에서 더 많은 작업이 수행 됩니다 따라서는 `event` 클래스입니다. Windows 이벤트를 사용 하는 버전에서는 다음 태스크를 시작 하기 전에 대기 중인 각 작업 신호를 받은 상태 그대로 입력 해야 합니다.
+`event` 클래스가 협조적으로 동작 하기 때문에 이벤트에서 신호를 받은 상태로 전환 될 때 스케줄러가 처리 리소스를 다른 컨텍스트에 다시 할당할 수 있습니다. 따라서 `event` 클래스를 사용 하는 버전에서 더 많은 작업을 수행 합니다. Windows 이벤트를 사용 하는 버전에서는 대기 중인 각 태스크가 다음 작업을 시작 하기 전에 신호를 받은 상태로 전환 되어야 합니다.
 
-작업에 대 한 자세한 내용은 참조 하세요. [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)합니다.
+태스크에 대 한 자세한 내용은 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

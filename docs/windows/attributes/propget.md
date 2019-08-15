@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - propget attribute
 ms.assetid: c9d4a97f-36dd-4b61-8eb0-b1a217598f14
-ms.openlocfilehash: 8f60e8e8fc98ba3b75acefe80812069bfac78e6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 044562ba870d6e36ddfcec0c7e84253b111a9eea
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407629"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514212"
 ---
 # <a name="propget"></a>propget
 
-속성 접근자 함수를 지정합니다.
+속성 접근자 함수를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407629"
 
 ## <a name="remarks"></a>설명
 
-**propget** C++ 특성에 동일한 기능을 합니다 [propget](/windows/desktop/Midl/propget) MIDL 특성입니다.
+**Propget** C++ 특성은 [propget](/windows/win32/Midl/propget) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [bindable](bindable.md) 의 샘플 사용에 대 한 **propget**합니다.
+**Propget**의 샘플 사용에 대 한 [바인딩](bindable.md) 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

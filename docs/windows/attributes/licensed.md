@@ -1,21 +1,21 @@
 ---
-title: 사용이 허가 된 (C++ COM 특성)
+title: 사용이C++ 허가 됨 (COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.licensed
 helpviewer_keywords:
 - licensed attribute
 ms.assetid: 09cf3b4a-d3f2-43e3-9180-d420333b23bf
-ms.openlocfilehash: 90fba74fb97ce49088145888c3b1925b4ee0829c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0c637f9e3f6d99b9f197474f49a1a9843744f38b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409332"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514459"
 ---
 # <a name="licensed"></a>licensed
 
-적용 되는 COM 개체 사용이 허가 되을 사용 하 여 인스턴스화해야 나타냅니다 `IClassFactory2`합니다.
+는 해당 개체가 적용 되는 COM 개체가 사용이 허가 되 고를 사용 하 여 `IClassFactory2`인스턴스화해야 함을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,7 +25,7 @@ ms.locfileid: "62409332"
 
 ## <a name="remarks"></a>설명
 
-**사용이 허가** C++ 특성이 동일한 기능을 합니다 [사용이 허가 된](/windows/desktop/Midl/licensed) MIDL 특성.
+**사용이 허가** C++ 된 특성에는 [사용이 허가](/windows/win32/Midl/licensed) 된 MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 

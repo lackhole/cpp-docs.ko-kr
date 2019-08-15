@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - EXPORTS .def file statement
 ms.assetid: dbcd7579-b855-44c4-bd27-931e157657f7
-ms.openlocfilehash: 33b70c680bfc3db24f5326a2027fa9ec4740e3f2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8338f27d35d3779a55b83b70c7a3eef285a91f46
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62271348"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492892"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -24,44 +24,44 @@ EXPORTS
 
 ## <a name="remarks"></a>설명
 
-첫 번째 *정의* 와 동일한 줄에 있을 수 있습니다는 `EXPORTS` 키워드 또는 후속 줄. .DEF 파일에는 `EXPORTS` 문이 한 개 이상 있을 수 있습니다.
+첫 번째 *정의* 는 `EXPORTS` 키워드와 같은 줄 이나 후속 줄에 있을 수 있습니다. .DEF 파일에는 `EXPORTS` 문이 한 개 이상 있을 수 있습니다.
 
-내보내기에 대 한 구문을 *정의* 됩니다.
+내보내기 *정의* 의 구문은 다음과 같습니다.
 
-> *entryname*\[__=__*internal_name*|*other_module.exported_name*] \[**\@**_ordinal_ \[**NONAME**] ] \[ \[**PRIVATE**] | \[**DATA**] ]
+> *entryname*\[ __=__ *internal_name*|*other_module.exported_name*] \[ **\@** _ordinal_ \[**NONAME**] ] \[ \[**PRIVATE**] | \[**DATA**] ]
 
-*entryname* 내보내려는 함수 또는 변수 이름입니다. 이는 필수입니다. 내보내는 이름이 DLL의 이름과 다를 경우 내보내기의 이름을 DLL에서 사용 하 여 지정할 *internal_name*합니다. 예를 들어 DLL이 함수 `func1`을 내보내고 호출자가 이 함수를 `func2`로 사용하도록 하려는 경우 다음과 같이 지정할 수 있습니다.
+*entryname* 는 내보내고 싶은 함수 또는 변수 이름입니다. 이는 필수입니다. 내보내는 이름이 DLL의 이름과 다른 경우 *internal_name*를 사용 하 여 dll에서 내보내기의 이름을 지정 합니다. 예를 들어 DLL이 함수 `func1`을 내보내고 호출자가 이 함수를 `func2`로 사용하도록 하려는 경우 다음과 같이 지정할 수 있습니다.
 
 ```DEF
 EXPORTS
    func2=func1
 ```
 
-일부 다른 모듈에서 내보내는 이름이 인 경우 내보내기의 이름을 DLL에서 사용 하 여 지정할 *other_module.exported_name*합니다. 예를 들어 DLL이 함수 `other_module.func1`을 내보내고 호출자가 이 함수를 `func2`로 사용하도록 하려는 경우 다음과 같이 지정할 수 있습니다.
+내보내는 이름이 다른 모듈에서 *other_module. exported_name*를 사용 하 여 DLL에서 내보내기 이름을 지정 합니다. 예를 들어 DLL이 함수 `other_module.func1`을 내보내고 호출자가 이 함수를 `func2`로 사용하도록 하려는 경우 다음과 같이 지정할 수 있습니다.
 
 ```DEF
 EXPORTS
    func2=other_module.func1
 ```
 
-내보내기를 사용 하 여 DLL의 서 수의 서 수로 내보내는 다른 모듈에서 내보내는 이름이 인 경우 지정할 *other_module*.__#__ *서*입니다. 예를 들어, DLL 있는 서 수 42 이므로 그대로 사용 하 여 호출자가 원하는 다른 모듈에서 함수를 내보내는 경우 `func2`를 지정할 수 있습니다.
+내보내는 이름이 서 수로 내보내는 다른 모듈에 있는 경우 *other_module*를 사용 하 여 DLL에서 내보내기의 서 수를 지정 합니다. *서 수*. __#__ 예를 들어, DLL이 서 수 42 인 다른 모듈에서 함수를 내보내고 호출자에 게이 `func2`함수를 사용 하려면 다음을 지정 합니다.
 
 ```DEF
 EXPORTS
    func2=other_module.#42
 ```
 
-MSVC 컴파일러에 대 한 이름 데코레이션을 사용 하기 때문에 C++ 함수를 데코 레이트 된 이름을 사용 하거나 해야 *internal_name* 사용 하 여 내보낸된 함수를 정의할 `extern "C"` 소스 코드에서. 컴파일러에는 또한 C 함수를 사용 하 여 데코 레이트 합니다 [__stdcall](../../cpp/stdcall.md) 밑줄을 사용 하 여 규칙을 호출 (\_) 접두사 및 접미사 구성는 at 기호 (\@) 뒤에 바이트 수 (10 진수)가 붙은 인수 목록입니다.
+MSVC 컴파일러는 함수에 C++ 이름 데코레이션을 사용 하기 때문에 데코레이팅된 이름 *internal_name* 을 사용 하거나 소스 코드에서를 사용 하 `extern "C"` 여 내보낸 함수를 정의 해야 합니다. 또한 컴파일러는 밑줄 (\_) 접두사를 사용 하는 [__stdcall](../../cpp/stdcall.md) 호출 규칙을 사용 하 고 인수 목록에서 바이트 수 (10 진수)\@로 구성 된 접미사를 사용 하는 C 함수를 데코 레이트 합니다.
 
-컴파일러에서 생성 된 데코레이팅된 이름을 찾으려면 사용 합니다 [DUMPBIN](dumpbin-reference.md) 도구 또는 링커 [/map](map-generate-mapfile.md) 옵션입니다. 데코레이팅된 이름은 컴파일러별로 다릅니다. .DEF 파일의 데코레이팅된 이름을 내보내는 경우 DLL에 연결된 실행 파일도 동일한 버전의 컴파일러를 사용하여 빌드해야 합니다. 그래야 호출자의 데코레이팅된 이름이 .DEF 파일의 내보낸 이름과 일치하게 됩니다.
+컴파일러에서 생성 한 데코레이팅된 이름을 찾으려면 [DUMPBIN](dumpbin-reference.md) 도구 또는 링커 [/map](map-generate-mapfile.md) 옵션을 사용 합니다. 데코레이팅된 이름은 컴파일러별로 다릅니다. .DEF 파일의 데코레이팅된 이름을 내보내는 경우 DLL에 연결된 실행 파일도 동일한 버전의 컴파일러를 사용하여 빌드해야 합니다. 그래야 호출자의 데코레이팅된 이름이 .DEF 파일의 내보낸 이름과 일치하게 됩니다.
 
-사용할 수 있습니다 \@ *서* 숫자 및 함수 이름이 아니라 DLL의 내보내기 테이블로 이동 되도록 합니다. 많은 Windows DLL은 서수를 내보내 레거시 코드를 지원합니다. Windows DLL의 크기를 최소화할 수 있기 때문에 16비트 Windows 코드에서는 서수를 사용하는 것이 일반적입니다. DLL 클라이언트에서 레거시 지원에 서수를 사용할 필요가 없는 경우 서수별 함수를 내보내지 않는 것이 좋습니다. .LIB 파일에는 서수와 함수 간의 매핑이 포함되므로 DLL을 사용하는 프로젝트에서 일반적으로 하는 것처럼 함수 이름을 사용할 수 있습니다.
+*서* 수를 \@사용 하 여 함수 이름이 아닌 숫자가 DLL의 내보내기 테이블로 이동 하도록 지정할 수 있습니다. 많은 Windows DLL은 서수를 내보내 레거시 코드를 지원합니다. Windows DLL의 크기를 최소화할 수 있기 때문에 16비트 Windows 코드에서는 서수를 사용하는 것이 일반적입니다. DLL 클라이언트에서 레거시 지원에 서수를 사용할 필요가 없는 경우 서수별 함수를 내보내지 않는 것이 좋습니다. .LIB 파일에는 서수와 함수 간의 매핑이 포함되므로 DLL을 사용하는 프로젝트에서 일반적으로 하는 것처럼 함수 이름을 사용할 수 있습니다.
 
-선택적를 사용 하 여 **NONAME** 키워드를 서 수로만 결과 DLL의 내보내기 테이블의 크기를 줄일 수 있습니다. 그러나 사용 하려는 경우 [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) DLL에서 알고 있어야 합니다 서 수 있으므로 이름이 유효 하지 않게 됩니다.
+선택적 **NONAME** 키워드를 사용 하 여 서 수로만 내보내고 결과 DLL의 내보내기 테이블 크기를 줄일 수 있습니다. 그러나 DLL에서 [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) 를 사용 하려는 경우에는 이름이 유효 하지 않기 때문에 서 수를 알아야 합니다.
 
-선택적 키워드인 **사설** 방지 *entryname* 링크에 의해 생성 된 가져오기 라이브러리에 포함 되지 합니다. 이는 LINK에서도 생성한 이미지에서 내보내기에 영향을 미치지 않습니다.
+**PRIVATE 키워드 PRIVATE** 은 LINK에서 생성 된 가져오기 라이브러리에 *entryname* 를 포함 하지 않도록 합니다. 이는 LINK에서도 생성한 이미지에서 내보내기에 영향을 미치지 않습니다.
 
-선택적 키워드인 **데이터** 는 내보내기가 코드가 아니라 데이터가 임을 지정 합니다. 아래 예제는 `exported_global` 데이터 변수를 내보낼 수 있는 방법을 보여줍니다.
+선택적 키워드 **데이터** 는 내보내기가 코드가 아닌 데이터 임을 지정 합니다. 아래 예제는 `exported_global` 데이터 변수를 내보낼 수 있는 방법을 보여줍니다.
 
 ```DEF
 EXPORTS
@@ -70,20 +70,20 @@ EXPORTS
 
 다음은 정의를 내보내는 4가지 방법으로 권장 순서대로 나열되었습니다.
 
-1. 합니다 [__declspec (dllexport)](../../cpp/dllexport-dllimport.md) 소스 코드의 키워드
+1. 소스 코드의 [__declspec (dllexport)](../../cpp/dllexport-dllimport.md) 키워드
 
 1. .DEF 파일의 `EXPORTS` 문
 
-1. [/내보내기](export-exports-a-function.md) LINK 명령의 사양
+1. LINK 명령의 [/export](export-exports-a-function.md) 사양
 
-1. A [주석](../../preprocessor/comment-c-cpp.md) 폼의 소스 코드에 지시문 `#pragma comment(linker, "/export: definition ")`합니다. 다음 예제에서는 함수 선언 전에 #pragma comment 지시문 위치 `PlainFuncName` 데코 레이트 되지 않은 이름 및 `_PlainFuncName@4` 함수의 트 데코 레이 된 이름:
+1. 폼`#pragma comment(linker, "/export: definition ")`의 소스 코드에 있는 [주석](../../preprocessor/comment-c-cpp.md) 지시문입니다. 다음 예제에서는 함수 선언 앞에 #pragma 주석 지시문을 보여 줍니다. `PlainFuncName` 여기서은 데코레이팅되지 않은 이름이 고 `_PlainFuncName@4` 는 데코레이팅된 함수 이름입니다.
 
     ```cpp
     #pragma comment(linker, "/export:PlainFuncName=_PlainFuncName@4")
     BOOL CALLBACK PlainFuncName( Things * lpParams)
     ```
 
-#Pragma 지시문을 데코 레이트 되지 않은 함수 이름을 내보내고에 빌드 구성에 따라 다른 내보내기 (예를 들어 32 비트 또는 64 비트 빌드) 해야 할 경우에 유용 합니다.
+#Pragma 지시어는 데코레이팅되지 않은 함수 이름을 내보내야 하 고 빌드 구성에 따라 다른 내보내기를 포함 하는 경우에 유용 합니다 (예: 32 비트 또는 64 비트 빌드).
 
 4가지 메서드 모두 동일한 프로그램에서 사용할 수 있습니다. LINK가 내보내기를 포함하는 프로그램을 빌드하는 경우 빌드에서 .EXP 파일을 사용하지 않는다면 가져오기 라이브러리도 만들게 됩니다.
 

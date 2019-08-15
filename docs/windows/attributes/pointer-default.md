@@ -6,14 +6,14 @@ f1_keywords:
 helpviewer_keywords:
 - pointer_default attribute
 ms.assetid: 2d0c7bbc-a1e8-4337-9e54-e304523e2735
-ms.openlocfilehash: 37bd2b16fb7a7c1c186f59897898e08cc73fffae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c70c372e5f1c3a9c2f620a1fa3505fb9d0436e79
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407512"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514264"
 ---
-# <a name="pointerdefault"></a>pointer_default
+# <a name="pointer_default"></a>pointer_default
 
 매개 변수 목록에 표시 되는 최상위 포인터를 제외 하 고 모든 포인터에 대 한 기본 포인터 특성을 지정 합니다.
 
@@ -25,16 +25,16 @@ ms.locfileid: "62407512"
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
-포인터 형식을 설명 하는 값: **ptr**하십시오 **ref**, 또는 **고유**.
+*value*<br/>
+포인터 형식 ( **ptr**, **ref**또는 **unique**)을 설명 하는 값입니다.
 
 ## <a name="remarks"></a>설명
 
-**pointer_default** C++ 특성에 동일한 기능을 합니다 [pointer_default](/windows/desktop/Midl/pointer-default) MIDL 특성입니다.
+**Pointer_default** C++ 특성은 [pointer_default](/windows/win32/Midl/pointer-default) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [defaultvalue](defaultvalue.md) 의 샘플 사용에 대 한 **pointer_default**합니다.
+**Pointer_default**의 샘플 사용에 대해서는 [defaultvalue](defaultvalue.md) 의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

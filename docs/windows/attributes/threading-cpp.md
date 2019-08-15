@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - threading attribute
 ms.assetid: 9b558cd6-fbf0-4602-aed5-31c068550ce3
-ms.openlocfilehash: cdebf06a62ebbd1d8648b9777fe200bc7a373261
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: db2940ec3536ae8ea29ba40db84ea869ecb3d0ac
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407239"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513924"
 ---
 # <a name="threading-c"></a>threading(C++)
 
-COM 개체에 대 한 스레딩 모델을 지정합니다.
+COM 개체의 스레딩 모델을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,31 +26,31 @@ COM 개체에 대 한 스레딩 모델을 지정합니다.
 ### <a name="parameters"></a>매개 변수
 
 *model*<br/>
-(선택 사항) 다음과 같은 스레딩 모델 중 하나입니다.
+필드 다음 스레딩 모델 중 하나입니다.
 
-- `apartment` (아파트 스레딩)
+- `apartment`(아파트 스레딩)
 
-- `neutral` (사용자 인터페이스를 사용 하 여.NET framework의 구성 요소)
+- `neutral`(사용자 인터페이스가 없는 .NET Framework 구성 요소)
 
-- `single` (간단한 스레딩)
+- `single`(단순 스레딩)
 
-- `free` (자유 스레딩)
+- `free`(자유 스레딩)
 
-- `both` (아파트 및 자유 스레딩)
+- `both`(아파트 및 자유 스레딩)
 
 기본값은 `apartment`입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **스레딩** C++ 특성 생성된 된.idl 파일에서 표시 되지 않지만 COM 개체의 구현에서 사용 됩니다.
+**스레딩** C++ 특성은 생성 된 .idl 파일에 표시 되지 않지만 COM 개체의 구현에 사용 됩니다.
 
-ATL 프로젝트의 경우는 [coclass](coclass.md) 특성이 있는에서 지정한 스레딩 모델 *모델* 템플릿 매개 변수로 전달 되는 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) 클래스 에 의해 삽입 된는 `coclass` 특성입니다.
+ATL 프로젝트에서 [coclass](coclass.md) 특성도 있는 경우 *model* 에 지정 된 스레딩 모델은 `coclass` 특성에 의해 삽입 된 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) 클래스에 템플릿 매개 변수로 전달 됩니다.
 
-합니다 **스레딩** 특성에는 또한에 대 한 액세스 보호를 [event_source](event-source.md)합니다.
+또한 **스레딩** 특성은 [event_source](event-source.md)에 대 한 액세스를 보호 합니다.
 
 ## <a name="example"></a>예제
 
-참조 된 [사용이 허가](licensed.md) 의 샘플 사용에 대 한 예제 **스레딩**합니다.
+**스레딩을**사용 하는 샘플은 사용 [이 허가](licensed.md) 된 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -71,4 +71,4 @@ ATL 프로젝트의 경우는 [coclass](coclass.md) 특성이 있는에서 지�
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>
 [레거시 코드에서의 다중 스레드 지원(Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md)<br/>
-[중립 아파트](/windows/desktop/cossdk/neutral-apartments)
+[중립 아파트](/windows/win32/cossdk/neutral-apartments)

@@ -33,14 +33,14 @@ helpviewer_keywords:
 - wpopen function
 - _wpopen function
 ms.assetid: eb718ff2-c87d-4bd4-bd2e-ba317c3d6973
-ms.openlocfilehash: 5284685f56a73c4c7e48fce981745220651399a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03eb36573abe8e26c47e6dd38c009e5819e60f8f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156163"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499592"
 ---
-# <a name="popen-wpopen"></a>_popen, _wpopen
+# <a name="_popen-_wpopen"></a>_popen, _wpopen
 
 파이프를 만들고 명령을 실행합니다.
 
@@ -70,13 +70,13 @@ FILE *_wpopen(
 
 ## <a name="return-value"></a>반환 값
 
-생성된 파이프의 한쪽 끝와 연결된 스트림을 반환합니다. 파이프의 반대쪽은 생성된 명령의 표준 입력 또는 표준 출력에 연결됩니다. 오류가 발생하면 함수는 **NULL**을 반환합니다. 오류 경우와 같이 잘못 된 매개 변수 이면 *명령* 하거나 *모드* 가 null 포인터인 경우 또는 *모드* 올바른 모드가 아닙니다 **errno** 로 설정 되어 **EINVAL**합니다. 올바른 모드는 설명 섹션을 참조하세요.
+생성된 파이프의 한쪽 끝와 연결된 스트림을 반환합니다. 파이프의 반대쪽은 생성된 명령의 표준 입력 또는 표준 출력에 연결됩니다. 오류가 발생하면 함수는 **NULL**을 반환합니다. *Command* 또는 *mode* 가 null 포인터 이거나 *모드가* 올바른 모드가 아닌 경우와 같이 오류가 잘못 된 매개 변수인 경우 **errno** 은 **EINVAL**로 설정 됩니다. 올바른 모드는 설명 섹션을 참조하세요.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_popen** 함수는 파이프를 만들고 지정된 된 문자열을 사용 하 여 명령 프로세서의 생성된 된 복사본을 비동기적으로 실행 *명령*입니다. 문자열의 *mode*는 다음과 같이 요청된 액세스의 유형을 지정합니다.
+**_Popen** 함수는 파이프를 만들고 지정 된 문자열 *명령을*사용 하 여 명령 프로세서의 생성 된 복사본을 비동기적으로 실행 합니다. 문자열의 *mode*는 다음과 같이 요청된 액세스의 유형을 지정합니다.
 
 |액세스 모드|설명|
 |-|-|
@@ -86,9 +86,9 @@ FILE *_wpopen(
 |**"t"**|텍스트 모드에서 엽니다.|
 
 > [!NOTE]
-> Windows 프로그램에서 사용 하는 경우는 **_popen** 함수는 프로그램이 무기한 응답을 중지 하는 잘못 된 파일 포인터를 반환 합니다. **_popen** 콘솔 응용 프로그램에서 제대로 작동 합니다. 입력 및 출력을 리디렉션하는 Windows 응용 프로그램을 참조 하세요 [리디렉션된 입력 및 출력을 사용 하 여 자식 프로세스 만들기](/windows/desktop/ProcThread/creating-a-child-process-with-redirected-input-and-output) Windows SDK에 있습니다.
+> Windows 프로그램에서 사용 되는 경우 **_popen** 함수는 프로그램의 응답을 무기한 중지 하는 잘못 된 파일 포인터를 반환 합니다. **_popen** 는 콘솔 응용 프로그램에서 제대로 작동 합니다. 입력 및 출력을 리디렉션하는 Windows 응용 프로그램을 만들려면 Windows SDK [리디렉션된 입력 및 출력을 사용 하 여 자식 프로세스 만들기](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) 를 참조 하세요.
 
-**_wpopen** 의 와이드 문자 버전이 **_popen**; *경로* 인수 **_wpopen** 는 와이드 문자 문자열입니다. **_wpopen** 하 고 **_popen** 동일 하 게 작동 합니다.
+**_wpopen** 는 **_popen**의 와이드 문자 버전입니다. **_wpopen** 에 대 한 *path* 인수는 와이드 문자열입니다. **_wpopen** 및 **_popen** 는 동일 하 게 동작 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

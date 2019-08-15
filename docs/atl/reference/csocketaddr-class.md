@@ -13,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSocketAddr class
 ms.assetid: 2fb2d8a7-899e-4a36-a342-cc9f4fcdd68c
-ms.openlocfilehash: e94d92b11a7f200edb1815a0b384d0fc0428001f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2a131323e64b1bf67f76ec92e7a3e4fcba899661
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62277476"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496340"
 ---
 # <a name="csocketaddr-class"></a>CSocketAddr 클래스
 
-이 클래스는 호스트 이름을 모두 IPv4 및 IPV6 형식을 지 원하는 호스트 주소로 변환 하기 위한 메서드를 제공 합니다.
+이 클래스는 호스트 이름을 호스트 주소로 변환 하 고 IPv4 및 IPV6 형식을 둘 다 지원 하기 위한 메서드를 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,7 +34,7 @@ class CSocketAddr
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CSocketAddr::CSocketAddr](#csocketaddr)|생성자입니다.|
 
@@ -42,23 +42,23 @@ class CSocketAddr
 
 |이름|설명|
 |----------|-----------------|
-|[CSocketAddr::FindAddr](#findaddr)|제공 된 호스트 이름을 호스트 주소를 변환 하려면이 메서드를 호출 합니다.|
-|[CSocketAddr::FindINET4Addr](#findinet4addr)|호스트 주소를 IPv4 호스트 이름으로 변환 하려면이 메서드를 호출 합니다.|
-|[CSocketAddr::FindINET6Addr](#findinet6addr)|호스트 주소를 IPv6 호스트 이름으로 변환 하려면이 메서드를 호출 합니다.|
-|[CSocketAddr::GetAddrInfo](#getaddrinfo)|특정 요소에 대 한 포인터를 반환 하려면이 메서드를 호출 합니다 `addrinfo` 목록입니다.|
-|[CSocketAddr::GetAddrInfoList](#getaddrinfolist)|에 대 한 포인터를 반환 하려면이 메서드를 호출 합니다 `addrinfo` 목록입니다.|
+|[CSocketAddr::FindAddr](#findaddr)|제공 된 호스트 이름을 호스트 주소로 변환 하려면이 메서드를 호출 합니다.|
+|[CSocketAddr::FindINET4Addr](#findinet4addr)|IPv4 호스트 이름을 호스트 주소로 변환 하려면이 메서드를 호출 합니다.|
+|[CSocketAddr::FindINET6Addr](#findinet6addr)|IPv6 호스트 이름을 호스트 주소로 변환 하려면이 메서드를 호출 합니다.|
+|[CSocketAddr::GetAddrInfo](#getaddrinfo)|`addrinfo` 목록의 특정 요소에 대 한 포인터를 반환 하려면이 메서드를 호출 합니다.|
+|[CSocketAddr::GetAddrInfoList](#getaddrinfolist)|`addrinfo` 목록에 대 한 포인터를 반환 하려면이 메서드를 호출 합니다.|
 
 ## <a name="remarks"></a>설명
 
-이 클래스는 Windows 사용에 대 한 네트워크 주소를 조회 하는 것에 대 한 알 수 없는 방식을 소켓 API 함수 및 소켓 래퍼 라이브러리에는 IP 버전을 제공 합니다.
+이 클래스는 Windows 소켓 API 함수 및 라이브러리의 소켓 래퍼에 사용할 네트워크 주소를 조회 하는 IP 버전에 관계 없는 방법을 제공 합니다.
 
-Win32 API 함수를 사용 하 여 네트워크 주소를 조회 하는 데 사용 되는이 클래스의 멤버 [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo)합니다. ANSI 또는 유니코드 버전의 함수는 ANSI 또는 유니코드에 대 한 코드가 컴파일 여부에 따라 호출 됩니다.
+네트워크 주소를 조회 하는 데 사용 되는이 클래스의 멤버는 Win32 API 함수 [getaddrinfo](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo)을 사용 합니다. Ansi 또는 유니코드 버전의 함수는 코드가 ANSI 또는 유니코드에 대해 컴파일 되었는지 여부에 따라 호출 됩니다.
 
-이 클래스는 두 IPv4 andIPv6 네트워크 주소를 지원합니다.
+이 클래스는 IPv4 andIPv6 네트워크 주소를 모두 지원 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlsocket.h
+**헤더:**
 
 ##  <a name="csocketaddr"></a>  CSocketAddr::CSocketAddr
 
@@ -70,11 +70,11 @@ CSocketAddr();
 
 ### <a name="remarks"></a>설명
 
-새 `CSocketAddr` 개체를 호스트 하는 방법에 대 한 응답 정보를 포함 하는 연결 된 목록을 초기화 합니다.
+새 `CSocketAddr` 개체를 만들고 호스트에 대 한 응답 정보를 포함 하는 연결 된 목록을 초기화 합니다.
 
 ##  <a name="findaddr"></a>  CSocketAddr::FindAddr
 
-제공 된 호스트 이름을 호스트 주소를 변환 하려면이 메서드를 호출 합니다.
+제공 된 호스트 이름을 호스트 주소로 변환 하려면이 메서드를 호출 합니다.
 
 ```
 int FindAddr(
@@ -97,37 +97,37 @@ int FindAddr(
 ### <a name="parameters"></a>매개 변수
 
 *szHost*<br/>
-호스트 이름 또는 점으로 구분 된 IP 주소입니다.
+호스트 이름 또는 점으로 표시 되는 IP 주소입니다.
 
 *szPortOrServiceName*<br/>
-포트 번호나 호스트에 서비스의 이름입니다.
+호스트의 포트 번호 또는 서비스 이름입니다.
 
 *nPortNo*<br/>
 포트 번호입니다.
 
 *flags*<br/>
-0 또는 AI_PASSIVE, AI_CANONNAME AI_NUMERICHOST의 조합입니다.
+0 또는 AI_PASSIVE, AI_CANONNAME 또는 AI_NUMERICHOST의 조합입니다.
 
 *addr_family*<br/>
-주소 패밀리 (예: PF_INET)입니다.
+주소 패밀리 (예: PF_INET).
 
 *sock_type*<br/>
-형식 (예: SOCK_STREAM) 소켓입니다.
+소켓 유형 (예: SOCK_STREAM)입니다.
 
 *ai_proto*<br/>
-프로토콜 (예: IPPROTO_IP 또는 IPPROTO_IPV6)입니다.
+프로토콜 (예: IPPROTO_IP 또는 IPPROTO_IPV6).
 
 ### <a name="return-value"></a>반환 값
 
-주소는 성공적으로 계산 되는 경우 0을 반환 합니다. 실패 시 0이 아닌 Windows 소켓 오류 코드를 반환합니다. 성공 하면 사용 하 여 참조 될 수 있는 연결 된 목록의 계산 된 주소를 저장 됩니다 `CSocketAddr::GetAddrInfoList` 고 `CSocketAddr::GetAddrInfo`입니다.
+주소가 성공적으로 계산 되 면 0을 반환 합니다. 오류가 발생 하면 0이 아닌 Windows 소켓 오류 코드를 반환 합니다. 성공 하면 계산 된 주소가 및 `CSocketAddr::GetAddrInfoList` `CSocketAddr::GetAddrInfo`를 사용 하 여 참조 될 수 있는 연결 된 목록에 저장 됩니다.
 
 ### <a name="remarks"></a>설명
 
-호스트 이름 매개 변수는 IPv4 또는 IPv6 형식으로 수 있습니다. 이 메서드는 Win32 API 함수를 호출 [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) 변환을 수행 하려고 합니다.
+호스트 이름 매개 변수는 IPv4 또는 IPv6 형식일 수 있습니다. 이 메서드 Win32 API는 [getaddrinfo](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) 함수를 호출 하 여 변환을 수행 합니다.
 
 ##  <a name="findinet4addr"></a>  CSocketAddr::FindINET4Addr
 
-호스트 주소를 IPv4 호스트 이름으로 변환 하려면이 메서드를 호출 합니다.
+IPv4 호스트 이름을 호스트 주소로 변환 하려면이 메서드를 호출 합니다.
 
 ```
 int FindINET4Addr(
@@ -140,28 +140,28 @@ int FindINET4Addr(
 ### <a name="parameters"></a>매개 변수
 
 *szHost*<br/>
-호스트 이름 또는 점으로 구분 된 IP 주소입니다.
+호스트 이름 또는 점으로 표시 되는 IP 주소입니다.
 
 *nPortNo*<br/>
 포트 번호입니다.
 
 *flags*<br/>
-0 또는 AI_PASSIVE, AI_CANONNAME AI_NUMERICHOST의 조합입니다.
+0 또는 AI_PASSIVE, AI_CANONNAME 또는 AI_NUMERICHOST의 조합입니다.
 
 *sock_type*<br/>
-형식 (예: SOCK_STREAM) 소켓입니다.
+소켓 유형 (예: SOCK_STREAM)입니다.
 
 ### <a name="return-value"></a>반환 값
 
-주소는 성공적으로 계산 되는 경우 0을 반환 합니다. 실패 시 0이 아닌 Windows 소켓 오류 코드를 반환합니다. 성공 하면 사용 하 여 참조 될 수 있는 연결 된 목록의 계산 된 주소를 저장 됩니다 `CSocketAddr::GetAddrInfoList` 고 `CSocketAddr::GetAddrInfo`입니다.
+주소가 성공적으로 계산 되 면 0을 반환 합니다. 오류가 발생 하면 0이 아닌 Windows 소켓 오류 코드를 반환 합니다. 성공 하면 계산 된 주소가 및 `CSocketAddr::GetAddrInfoList` `CSocketAddr::GetAddrInfo`를 사용 하 여 참조 될 수 있는 연결 된 목록에 저장 됩니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Win32 API 함수를 호출 [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) 변환을 수행 하려고 합니다.
+이 메서드 Win32 API는 [getaddrinfo](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) 함수를 호출 하 여 변환을 수행 합니다.
 
 ##  <a name="findinet6addr"></a>  CSocketAddr::FindINET6Addr
 
-호스트 주소를 IPv6 호스트 이름으로 변환 하려면이 메서드를 호출 합니다.
+IPv6 호스트 이름을 호스트 주소로 변환 하려면이 메서드를 호출 합니다.
 
 ```
 int FindINET6Addr(
@@ -174,28 +174,28 @@ int FindINET6Addr(
 ### <a name="parameters"></a>매개 변수
 
 *szHost*<br/>
-호스트 이름 또는 점으로 구분 된 IP 주소입니다.
+호스트 이름 또는 점으로 표시 되는 IP 주소입니다.
 
 *nPortNo*<br/>
 포트 번호입니다.
 
 *flags*<br/>
-0 또는 AI_PASSIVE, AI_CANONNAME AI_NUMERICHOST의 조합입니다.
+0 또는 AI_PASSIVE, AI_CANONNAME 또는 AI_NUMERICHOST의 조합입니다.
 
 *sock_type*<br/>
-형식 (예: SOCK_STREAM) 소켓입니다.
+소켓 유형 (예: SOCK_STREAM)입니다.
 
 ### <a name="return-value"></a>반환 값
 
-주소는 성공적으로 계산 되는 경우 0을 반환 합니다. 실패 시 0이 아닌 Windows 소켓 오류 코드를 반환합니다. 성공 하면 사용 하 여 참조 될 수 있는 연결 된 목록의 계산 된 주소를 저장 됩니다 `CSocketAddr::GetAddrInfoList` 고 `CSocketAddr::GetAddrInfo`입니다.
+주소가 성공적으로 계산 되 면 0을 반환 합니다. 오류가 발생 하면 0이 아닌 Windows 소켓 오류 코드를 반환 합니다. 성공 하면 계산 된 주소가 및 `CSocketAddr::GetAddrInfoList` `CSocketAddr::GetAddrInfo`를 사용 하 여 참조 될 수 있는 연결 된 목록에 저장 됩니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Win32 API 함수를 호출 [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) 변환을 수행 하려고 합니다.
+이 메서드 Win32 API는 [getaddrinfo](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) 함수를 호출 하 여 변환을 수행 합니다.
 
 ##  <a name="getaddrinfo"></a>  CSocketAddr::GetAddrInfo
 
-특정 요소에 대 한 포인터를 반환 하려면이 메서드를 호출 합니다 `addrinfo` 목록입니다.
+`addrinfo` 목록의 특정 요소에 대 한 포인터를 반환 하려면이 메서드를 호출 합니다.
 
 ```
 addrinfo* const GetAddrInfo(int nIndex = 0) const;
@@ -204,15 +204,15 @@ addrinfo* const GetAddrInfo(int nIndex = 0) const;
 ### <a name="parameters"></a>매개 변수
 
 *nIndex*<br/>
-특정 요소에 대 한 참조를 [addrinfo](/windows/desktop/api/ws2def/ns-ws2def-addrinfoa) 목록입니다.
+[Addrinfo](/windows/win32/api/ws2def/ns-ws2def-addrinfow) 목록에 있는 특정 요소에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 반환 합니다 `addrinfo` 에서 참조 하는 구조 *nIndex* 호스트에 대 한 응답 정보를 포함 하는 연결 된 목록의 합니다.
+호스트에 대 한 응답 `addrinfo` 정보를 포함 하는 연결 된 목록의 *n 인덱스* 에서 참조 하는 구조에 대 한 포인터를 반환 합니다.
 
 ##  <a name="getaddrinfolist"></a>  CSocketAddr::GetAddrInfoList
 
-에 대 한 포인터를 반환 하려면이 메서드를 호출 합니다 `addrinfo` 목록입니다.
+`addrinfo` 목록에 대 한 포인터를 반환 하려면이 메서드를 호출 합니다.
 
 ```
 addrinfo* const GetAddrInfoList() const;
@@ -220,7 +220,7 @@ addrinfo* const GetAddrInfoList() const;
 
 ### <a name="return-value"></a>반환 값
 
-하나 이상의 연결 된 목록에 대 한 포인터 `addrinfo` 호스트에 대 한 응답 정보를 포함 하는 구조체입니다. 자세한 내용은 [addrinfo 구조](/windows/desktop/api/ws2def/ns-ws2def-addrinfoa)합니다.
+호스트에 대 한 응답 정보를 포함 하 `addrinfo` 는 하나 이상의 구조체의 연결 된 목록에 대 한 포인터입니다. 자세한 내용은 [addrinfo 구조체](/windows/win32/api/ws2def/ns-ws2def-addrinfow)를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

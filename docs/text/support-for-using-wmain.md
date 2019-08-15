@@ -8,12 +8,12 @@ helpviewer_keywords:
 - wWinMain function
 - wmain function
 ms.assetid: 41213c41-668c-40a4-8a1e-77d9eded720d
-ms.openlocfilehash: f4705e65551b57e3e52c0c8f060032a93280f67d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4af389c00f6065df631f891dadcb0b2f350f984d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410540"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491194"
 ---
 # <a name="support-for-using-wmain"></a>wmain 사용 지원
 
@@ -34,4 +34,4 @@ wmain( int argc, wchar_t *argv[ ], wchar_t *envp[ ] )
 
 [유니코드 지원](../text/support-for-unicode.md)<br/>
 [유니코드 프로그래밍 요약](../text/unicode-programming-summary.md)<br/>
-[WinMain 함수](/windows/desktop/api/winbase/nf-winbase-winmain)
+[WinMain 함수](/windows/win32/api/winbase/nf-winbase-winmain)

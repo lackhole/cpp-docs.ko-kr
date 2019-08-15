@@ -30,14 +30,14 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 91234252-9ea1-423a-af99-e9d0ce4a40e3
-ms.openlocfilehash: d102cd74061faeb0c41823e6cf5c9a8ef335294f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b5ee2a0e5636e9c1d1f3fc204b2b6cbf8b733d45
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188586"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498979"
 ---
-# <a name="wcstombs-wcstombsl"></a>wcstombs, _wcstombs_l
+# <a name="wcstombs-_wcstombs_l"></a>wcstombs, _wcstombs_l
 
 와이드 문자의 시퀀스를 멀티바이트 문자의 해당 시퀀스로 변환합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [wcstombs_s, _wcstombs_s_l](wcstombs-s-wcstombs-s-l.md)를 참조하세요.
 
@@ -86,19 +86,19 @@ size_t _wcstombs_l(
 
 ## <a name="return-value"></a>반환 값
 
-하는 경우 **wcstombs** 성공적으로 멀티 바이트 문자열을 변환 종료 null을 제외 하 고 (있는 경우), 멀티 바이트 출력 문자열에 쓴 바이트 수를 반환 합니다. 경우는 *mbstr* 인수가 **NULL**에 **wcstombs** 대상 문자열의 바이트에 필요한 크기를 반환 합니다. 하는 경우 **wcstombs** 와이드 문자가 멀티 바이트 문자를 변환할 수 없는 형식으로 캐스팅 하는-1이 반환 **size_t** 설정 하 고 **errno** 에 **EILSEQ** .
+**Wcstombs** 가 멀티 바이트 문자열을 성공적으로 변환 하는 경우에는 종료 null (있는 경우)을 제외 하 고 멀티 바이트 출력 문자열에 쓴 바이트 수를 반환 합니다. *Mbstr* 인수가 **NULL**이면 **wcstombs** 는 대상 문자열의 필요한 크기 (바이트)를 반환 합니다. **Wcstombs** 가 멀티 바이트 문자로 변환할 수 없는 와이드 문자를 발견 하는 경우에는-1을 형식 **size_t** 로 캐스트 하 고 **errno** 를 **eilseq**로 설정 합니다.
 
 ## <a name="remarks"></a>설명
 
-**wcstombs** 함수에서 가리키는 와이드 문자열을 변환 *wcstr* 를 해당 멀티 바이트 문자 및 결과를 저장 합니다 *mbstr* 배열. *개수* 매개 변수는 멀티 바이트 출력 문자열에 저장할 수 있는 바이트의 최대 수를 나타냅니다 (즉, 크기 *mbstr*). 일반적으로는 와이드 문자열을 변환할 때 필요한 바이트의 수를 알 수 없습니다. 출력 문자열에서 1바이트만 사용하면 되면 되는 와이드 문자도 있고 2바이트를 사용해야 하는 문자도 있습니다. 와이드 문자 null 등 입력된 문자열의 모든 와이드 문자에 대 한 멀티 바이트 출력 문자열에 2 바이트 없으면 결과 맞게 보장 됩니다.
+**Wcstombs** 함수는 *wcstr* 가 가리키는 와이드 문자 문자열을 해당 멀티 바이트 문자로 변환 하 고 그 결과를 *mbstr* 배열에 저장 합니다. *Count* 매개 변수는 멀티 바이트 출력 문자열 ( *mbstr*의 크기)에 저장할 수 있는 최대 바이트 수를 나타냅니다. 일반적으로는 와이드 문자열을 변환할 때 필요한 바이트의 수를 알 수 없습니다. 출력 문자열에서 1바이트만 사용하면 되면 되는 와이드 문자도 있고 2바이트를 사용해야 하는 문자도 있습니다. 와이드 문자 null을 포함 하 여 입력 문자열의 모든 와이드 문자에 대해 멀티 바이트 출력 문자열에 2 바이트가 있으면 결과가 일치 하도록 보장 됩니다.
 
-하는 경우 **wcstombs** 때나 그 전에 와이드 문자 null 문자 (L'\ \0')에 도달 하면 *개수* 로 변환 하 고는 8 비트 0을 중지 합니다. 따라서 멀티 바이트 문자 문자열에 *mbstr* 는 null로 끝나는 경우에 **wcstombs** 와이드 문자 null 문자를 변환 하는 동안 발생 합니다. 가리키는 시퀀스 하는 경우 *wcstr* 하 고 *mbstr* 겹치는 동작 **wcstombs** 정의 되지 않습니다.
+**Wcstombs** 가 발생 하기 전이나 후에 와이드 문자 null 문자 (L ' \ 0 ')를 발견 하면이를 8 비트 0으로 변환 하 고 중지 합니다. 따라서 **wcstombs** 는 변환 중에 와이드 문자 null 문자를 발견 하는 경우에만 *mbstr* 의 멀티 바이트 문자열을 null로 종료 합니다. *Wcstr* 및 *mbstr* 가 가리키는 시퀀스가 겹치면 **wcstombs** 의 동작이 정의 되지 않습니다.
 
-경우는 *mbstr* 인수가 **NULL**에 **wcstombs** 대상 문자열의 바이트에 필요한 크기를 반환 합니다.
+*Mbstr* 인수가 **NULL**이면 **wcstombs** 는 대상 문자열의 필요한 크기 (바이트)를 반환 합니다.
 
-**wcstombs** 해당 매개 변수 유효성을 검사 합니다. 경우 *wcstr* 는 **NULL**, 이거나 *개수* 보다 크면 **INT_MAX**,이 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 함수를 설정 하는 경우는 계속 실행 하도록 허용 합니다 **errno** 하 **EINVAL** -1을 반환 합니다.
+**wcstombs** 은 매개 변수의 유효성을 검사 합니다. *Wcstr* 가 **NULL**이거나 *count* 가 **INT_MAX**보다 큰 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
 
-**wcstombs** 모든 로캘 종속 동작에 현재 로캘을 사용 **_wcstombs_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**wcstombs** 는 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_wcstombs_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
@@ -113,7 +113,7 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 ## <a name="example"></a>예제
 
-이 프로그램의 동작을 보여 줍니다.는 **wcstombs** 함수입니다.
+이 프로그램은 **wcstombs** 함수의 동작을 보여 줍니다.
 
 ```C
 // crt_wcstombs.c
@@ -161,4 +161,4 @@ Convert wide-character string:
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
-[WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>
+[WideCharToMultiByte](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>

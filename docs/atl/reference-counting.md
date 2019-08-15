@@ -8,18 +8,18 @@ helpviewer_keywords:
 - reference counts
 - references, counting
 ms.assetid: b1fd4514-6de6-429f-9e60-2777c0d07a3d
-ms.openlocfilehash: fa160cb40af632321e1b14fd3ca88a4dd578b972
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 565b74956280d4e80c41376ead4249e69980a80e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62249654"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492228"
 ---
-# <a name="reference-counting"></a>참조 계산
+# <a name="reference-counting"></a>참조 횟수
 
 COM 자체는 더 이상 사용되지 않는다고 판단하는 경우 자동으로 메모리에서 개체를 제거하는 것을 시도하지 않습니다. 대신 개체 프로그래머가 사용되지 않는 개체를 제거해야 합니다. 프로그래머는 참조 횟수에 따라 개체 제거 여부를 결정합니다.
 
-COM은 개체의 인터페이스 참조 횟수 관리를 위해 `IUnknown` 메서드인 [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref)와 [Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)를 사용합니다. 이러한 메서드를 호출하는 것에 대한 일반 규칙은 다음과 같습니다.
+COM은 개체의 인터페이스 참조 횟수 관리를 위해 `IUnknown` 메서드인 [AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)와 [Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release)를 사용합니다. 이러한 메서드를 호출하는 것에 대한 일반 규칙은 다음과 같습니다.
 
 - 클라이언트가 인터페이스 포인터를 받을 때마다 인터페이스에서 `AddRef`를 호출해야 합니다.
 
@@ -35,4 +35,4 @@ COM은 개체의 인터페이스 참조 횟수 관리를 위해 `IUnknown` 메�
 ## <a name="see-also"></a>참고자료
 
 [COM 소개](../atl/introduction-to-com.md)<br/>
-[참조 횟수를 통해 개체 수명 관리](/windows/desktop/com/managing-object-lifetimes-through-reference-counting)
+[참조 횟수를 통해 개체 수명 관리](/windows/win32/com/managing-object-lifetimes-through-reference-counting)
