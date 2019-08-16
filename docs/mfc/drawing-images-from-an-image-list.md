@@ -7,12 +7,12 @@ helpviewer_keywords:
 - image lists [MFC], drawing images from
 - images [MFC], drawing
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
-ms.openlocfilehash: e4e60f0e6e4ee22712e4bbce344fd6437cf3db7e
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: fb307d5557c0e136c1c44c29f08af6062bb1c19d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916417"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508605"
 ---
 # <a name="drawing-images-from-an-image-list"></a>이미지 목록에서 이미지 그리기
 
@@ -28,7 +28,7 @@ ms.locfileid: "68916417"
 
 Nonmasked 이미지는 `SRCCOPY` 래스터 작업을 사용 하 여 대상 장치 컨텍스트에 복사 됩니다. 장치 컨텍스트의 배경색에 관계 없이 이미지의 색은 동일 하 게 표시 됩니다. 또한에 `Draw` 지정 된 그리기 스타일은 nonmasked 이미지의 모양에 영향을 주지 않습니다.
 
-Draw 멤버 함수 외에도 다른 함수인 [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect)는 이미지를 렌더링 하는 기능을 확장 합니다. `DrawIndirect`는 [Imagelistdrawparams](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) 구조체를 매개 변수로 사용 합니다. 이 구조는 ROP (래스터 작업) 코드를 사용 하 여 현재 이미지의 렌더링을 사용자 지정 하는 데 사용할 수 있습니다. ROP 코드에 대 한 자세한 내용은 Windows SDK의 브러시로 [래스터 작업 코드](/windows/desktop/gdi/raster-operation-codes) 및 [비트맵](/windows/desktop/gdi/bitmaps-as-brushes) 을 참조 하세요.
+Draw 멤버 함수 외에도 다른 함수인 [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect)는 이미지를 렌더링 하는 기능을 확장 합니다. `DrawIndirect`는 [Imagelistdrawparams](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) 구조체를 매개 변수로 사용 합니다. 이 구조는 ROP (래스터 작업) 코드를 사용 하 여 현재 이미지의 렌더링을 사용자 지정 하는 데 사용할 수 있습니다. ROP 코드에 대 한 자세한 내용은 Windows SDK의 브러시로 [래스터 작업 코드](/windows/win32/gdi/raster-operation-codes) 및 [비트맵](/windows/win32/gdi/bitmaps-as-brushes) 을 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

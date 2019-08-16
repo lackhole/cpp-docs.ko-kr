@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 f1_keywords:
 - atlwin/ATL::AtlCreateTargetDC
 ms.assetid: 08ec28f6-daff-4882-9544-e8a4639d05c4
-ms.openlocfilehash: aeebec65def9364e56156f6bb323815da012e11f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d225bd0cd996fd908479b5a93aad81ea0428900b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62276564"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496095"
 ---
 # <a name="device-context-global-functions"></a>장치 컨텍스트 전역 함수
 
-이 함수는 지정된 된 장치에 대 한 장치 컨텍스트를 만듭니다.
+이 함수는 지정 된 장치에 대 한 장치 컨텍스트를 만듭니다.
 
 |||
 |-|-|
@@ -21,7 +21,7 @@ ms.locfileid: "62276564"
 
 ##  <a name="atlcreatetargetdc"></a>  AtlCreateTargetDC
 
-에 지정 된 장치에 대 한 장치 컨텍스트를 만듭니다.는 [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) 구조입니다.
+[DVTARGETDEVICE](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) 구조체에 지정 된 장치에 대 한 장치 컨텍스트를 만듭니다.
 
 ```
 HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
@@ -30,24 +30,24 @@ HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
 ### <a name="parameters"></a>매개 변수
 
 *hdc*<br/>
-[in] 장치 컨텍스트 또는 NULL의 기존 핸들입니다.
+진행 장치 컨텍스트의 기존 핸들 또는 NULL입니다.
 
 *ptd*<br/>
-[in] 에 대 한 포인터를 `DVTARGETDEVICE` 대상 장치에 대 한 정보를 포함 하는 구조입니다.
+진행 대상 장치에 대 `DVTARGETDEVICE` 한 정보를 포함 하는 구조에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-장치 컨텍스트에 지정 된 장치에 대 한 핸들을 반환 합니다 `DVTARGETDEVICE`합니다. 장치는 지정 하는 경우 기본 디스플레이 장치에 핸들을 반환 합니다.
+에 지정 된 장치에 대 한 장치 컨텍스트에 대 한 핸들을 `DVTARGETDEVICE`반환 합니다. 장치를 지정 하지 않은 경우 기본 디스플레이 장치에 대 한 핸들을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-구조에는 NULL이 고 *hdc* NULL 이면 기본 디스플레이 장치에 대 한 장치 컨텍스트를 만듭니다.
+구조가 NULL이 고 *hdc* 가 null 이면는 기본 디스플레이 장치에 대 한 장치 컨텍스트를 만듭니다.
 
-하는 경우 *hdc* NULL이 아닌 및 *데* 가 null 인 경우 기존 반환 *hdc*합니다.
+*Hdc* 가 null이 아니고 *ptd* 가 null 인 경우 함수는 기존 *hdc*를 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlwin.h
+**헤더:.**
 
 ## <a name="see-also"></a>참고자료
 

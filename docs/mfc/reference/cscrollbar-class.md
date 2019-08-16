@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CScrollBar [MFC], SetScrollRange
 - CScrollBar [MFC], ShowScrollBar
 ms.assetid: f3735ca5-73ea-46dc-918b-4d824c9fe47f
-ms.openlocfilehash: 5bc9c0190ea200b25b8ea3b20311c98c1c131838
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
+ms.openlocfilehash: cd0c1ed85969d50548cf6b2be1d5677ed62110bc
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821274"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502567"
 ---
 # <a name="cscrollbar-class"></a>CScrollBar 클래스
 
@@ -203,7 +203,7 @@ BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
 ### <a name="parameters"></a>매개 변수
 
 *pScrollInfo*<br/>
-[SCROLLBARINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollbarinfo) 구조체에 대 한 포인터입니다.
+[SCROLLBARINFO](/windows/win32/api/winuser/ns-winuser-scrollbarinfo) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -211,7 +211,7 @@ BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK 설명 된 대로 [SBM_SCROLLBARINFO](/windows/desktop/Controls/sbm-getscrollbarinfo) 메시지의 기능을 에뮬레이트합니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 [SBM_SCROLLBARINFO](/windows/win32/Controls/sbm-getscrollbarinfo) 메시지의 기능을 에뮬레이트합니다.
 
 ##  <a name="getscrollinfo"></a>  CScrollBar::GetScrollInfo
 

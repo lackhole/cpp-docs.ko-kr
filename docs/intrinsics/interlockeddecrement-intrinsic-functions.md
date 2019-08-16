@@ -44,18 +44,18 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-ms.openlocfilehash: 525c40f4260d59f370f0580d2cb7d9e8f184ee4c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 43bf7a9b788c176490ec3fe08e370708eaf000ce
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396758"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509411"
 ---
-# <a name="interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement Intrinsic Functions
+# <a name="_interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement Intrinsic Functions
 
 **Microsoft 전용**
 
-Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement) 함수입니다.
+Win32 Windows SDK [InterlockedDecrement](/windows/win32/api/winnt/nf-winnt-interlockeddecrement) 함수에 대 한 컴파일러 내장 함수 지원을 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -101,7 +101,7 @@ __int64 _InterlockedDecrement64_nf(
 #### <a name="parameters"></a>매개 변수
 
 *lpAddend*<br/>
-[out에서] 감소 시킬 변수에 대 한 포인터입니다.
+[in, out] 감소 시킬 변수에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -124,7 +124,7 @@ __int64 _InterlockedDecrement64_nf(
 
 ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
 
-`lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 [맞춤](../cpp/align-cpp.md)합니다.
+`lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 [align](../cpp/align-cpp.md)을 참조 하십시오.
 
 이러한 루틴은 내장 함수로만 사용할 수 있습니다.
 

@@ -30,16 +30,16 @@ helpviewer_keywords:
 - CUserTool [MFC], m_strInitialDirectory
 - CUserTool [MFC], m_strLabel
 ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
-ms.openlocfilehash: 5bb0ae073b722c97e8e30158f8f7832fd88b2fbc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b73cb3d3c6e244a9aa41a91a3ee9ff1efa98d496
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323426"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502240"
 ---
 # <a name="cusertool-class"></a>CUserTool 클래스
 
-사용자 도구는 외부 애플리케이션을 실행하는 메뉴 항목입니다. 합니다 **도구** 탭의 **사용자 지정** 대화 상자 ( [CMFCToolBarsCustomizeDialog 클래스](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) 사용자가 사용자 도구를 추가 하 고 이름, 명령, 인수를 지정할 수 있도록 및 각 사용자 도구에 대 한 초기 디렉터리입니다.
+사용자 도구는 외부 애플리케이션을 실행하는 메뉴 항목입니다. 사용자 **지정** 대화 상자의 **도구** 탭 ( [CMFCToolBarsCustomizeDialog 클래스](../../mfc/reference/cmfctoolbarscustomizedialog-class.md))을 사용 하면 사용자 도구를 추가 하 고 각 사용자 도구에 대해 이름, 명령, 인수 및 초기 디렉터리를 지정할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -54,19 +54,19 @@ class CUserTool : public CObject
 |이름|설명|
 |----------|-----------------|
 |[CUserTool::CopyIconToClipboard](#copyicontoclipboard)||
-|[CUserTool::DrawToolIcon](#drawtoolicon)|지정된 된 사각형에는 사용자 도구 아이콘을 그립니다.|
-|[CUserTool::GetCommand](#getcommand)|사용자 도구를 사용 하 여 연결 된 명령 텍스트가 포함 된 문자열을 반환 합니다.|
-|[CUserTool::GetCommandId](#getcommandid)|사용자 도구 메뉴 항목의 명령 ID를 반환합니다.|
-|[CUserTool::Invoke](#invoke)|사용자 도구를 사용 하 여 연결 명령을 실행 합니다.|
+|[CUserTool::DrawToolIcon](#drawtoolicon)|지정 된 사각형에 사용자 도구 아이콘을 그립니다.|
+|[CUserTool::GetCommand](#getcommand)|사용자 도구와 연결 된 명령의 텍스트를 포함 하는 문자열을 반환 합니다.|
+|[CUserTool::GetCommandId](#getcommandid)|사용자 도구의 메뉴 항목에 대 한 명령 ID를 반환 합니다.|
+|[CUserTool::Invoke](#invoke)|사용자 도구와 연결 된 명령을 실행 합니다.|
 |[CUserTool::Serialize](#serialize)|이 개체를 보관 저장소에서 읽어오거나 보관 저장소에 씁니다. ( [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize)를 재정의합니다.)|
-|[CUserTool::SetCommand](#setcommand)|사용자 도구를 사용 하 여 연결 명령을 설정 합니다.|
-|[CUserTool::SetToolIcon](#settoolicon)|이 도구를 사용 하 여 관련 응용 프로그램에서 사용자 도구에 대 한 아이콘을 로드 합니다.|
+|[CUserTool::SetCommand](#setcommand)|사용자 도구와 연결 된 명령을 설정 합니다.|
+|[CUserTool::SetToolIcon](#settoolicon)|도구와 연결 된 응용 프로그램에서 사용자 도구에 대 한 아이콘을 로드 합니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
-|[CUserTool::LoadDefaultIcon](#loaddefaulticon)|사용자 도구에 대 한 기본 아이콘을 로드합니다.|
+|[CUserTool::LoadDefaultIcon](#loaddefaulticon)|사용자 도구에 대 한 기본 아이콘을 로드 합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
@@ -78,11 +78,11 @@ class CUserTool : public CObject
 
 ## <a name="remarks"></a>설명
 
-응용 프로그램에서 사용자 도구를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md)합니다.
+응용 프로그램에서 사용자 도구를 사용 하도록 설정 하는 방법에 대 한 자세한 내용은 [CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 예제에서 도구를 만드는 방법을 보여 줍니다는 `CUserToolsManager` 개체, 설정 된 `m_strLabel` 멤버 변수와 사용자 도구를 실행 하는 응용 프로그램 집합입니다. 이 코드 조각은의 일부인 합니다 [Visual Studio 데모 샘플](../../overview/visual-cpp-samples.md)합니다.
+다음 예제에서는 `CUserToolsManager` 개체에서 도구를 만들고, `m_strLabel` 멤버 변수를 설정 하 고, 사용자 도구에서 실행 하는 응용 프로그램을 설정 하는 방법을 보여 줍니다. 이 코드 조각은 [Visual Studio Demo 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#35](../../mfc/codesnippet/cpp/cusertool-class_1.cpp)]
 
@@ -94,7 +94,7 @@ class CUserTool : public CObject
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxusertool.h
+**헤더:** afxusertool
 
 ##  <a name="copyicontoclipboard"></a>  CUserTool::CopyIconToClipboard
 
@@ -110,7 +110,7 @@ BOOL CopyIconToClipboard();
 
 ##  <a name="drawtoolicon"></a>  CUserTool::DrawToolIcon
 
-지정 된 사각형의 가운데에 사용자 도구 아이콘을 그립니다.
+지정 된 사각형의 중앙에 사용자 도구 아이콘을 그립니다.
 
 ```
 void DrawToolIcon(
@@ -121,14 +121,14 @@ void DrawToolIcon(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-[in] 장치 컨텍스트에 대 한 포인터입니다.
+진행 장치 컨텍스트에 대 한 포인터입니다.
 
 *rectImage*<br/>
-[in] 아이콘을 표시 영역의 좌표를 지정 합니다.
+진행 아이콘을 표시할 영역의 좌표를 지정 합니다.
 
 ##  <a name="getcommand"></a>  CUserTool::GetCommand
 
-사용자 도구를 사용 하 여 연결 된 명령 텍스트가 포함 된 문자열을 반환 합니다.
+사용자 도구와 연결 된 명령의 텍스트를 포함 하는 문자열을 반환 합니다.
 
 ```
 const CString& GetCommand() const;
@@ -136,11 +136,11 @@ const CString& GetCommand() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 참조 `CString` 사용자 도구와 관련 된 명령의 텍스트를 포함 하는 개체입니다.
+사용자 도구와 `CString` 연결 된 명령의 텍스트를 포함 하는 개체에 대 한 참조입니다.
 
 ##  <a name="getcommandid"></a>  CUserTool::GetCommandId
 
-사용자 도구의 명령 ID를 반환합니다.
+사용자 도구의 명령 ID를 반환 합니다.
 
 ```
 UINT GetCommandId() const;
@@ -148,11 +148,11 @@ UINT GetCommandId() const;
 
 ### <a name="return-value"></a>반환 값
 
-사용자 도구의이 명령 ID입니다.
+이 사용자 도구의 명령 ID입니다.
 
 ##  <a name="invoke"></a>  CUserTool::Invoke
 
-사용자 도구를 사용 하 여 연결 명령을 실행 합니다.
+사용자 도구와 연결 된 명령을 실행 합니다.
 
 ```
 virtual BOOL Invoke();
@@ -160,15 +160,15 @@ virtual BOOL Invoke();
 
 ### <a name="return-value"></a>반환 값
 
-명령이 성공적으로 실행 된 경우 0이 아닌 값 그렇지 않으면 0입니다.
+명령이 성공적으로 실행 되 면 0이 아닌 값이 고, 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) 사용자 도구를 사용 하 여 연결 명령을 실행 합니다. 이 명령은 빈 되었는지 또는 함수가 실패 하면 [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) 실패 합니다.
+[ShellExecute](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) 를 호출 하 여 사용자 도구와 연결 된 명령을 실행 합니다. 명령이 비어 있거나 [ShellExecute](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) 가 실패 한 경우 함수가 실패 합니다.
 
 ##  <a name="loaddefaulticon"></a>  CUserTool::LoadDefaultIcon
 
-사용자 도구에 대 한 기본 아이콘을 로드합니다.
+사용자 도구에 대 한 기본 아이콘을 로드 합니다.
 
 ```
 virtual HICON LoadDefaultIcon();
@@ -176,11 +176,11 @@ virtual HICON LoadDefaultIcon();
 
 ### <a name="return-value"></a>반환 값
 
-로드할된 아이콘 (HICON) 또는 기본 아이콘을 로드할 수 없는 경우 NULL에 대 한 핸들입니다.
+로드 된 아이콘에 대 한 핸들 (HICON) 이거나, 기본 아이콘을 로드할 수 없는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임 워크 도구 실행 파일에서 사용자 정의 도구에 대 한 아이콘을 로드할 수 없는 경우이 메서드를 호출 합니다.
+도구의 실행 파일에서 사용자 정의 도구에 대 한 아이콘을 로드할 수 없는 경우 프레임 워크는이 메서드를 호출 합니다.
 
 사용자 고유의 기본 도구 아이콘을 제공 하려면이 메서드를 재정의 합니다.
 
@@ -194,11 +194,11 @@ CString m_strArguments;
 
 ### <a name="remarks"></a>설명
 
-호출할 때이 문자열은 도구에 전달 [CUserTool::Invoke](#invoke) 클릭 한 경우이 도구를 사용 하 여 연결 된 명령 또는 합니다.
+이 문자열은 [Cusertool:: Invoke](#invoke) 를 호출 하거나 사용자가이 도구와 연결 된 명령을 클릭할 때 도구로 전달 됩니다.
 
 ##  <a name="m_strinitialdirectory"></a>  CUserTool::m_strInitialDirectory
 
-사용자 도구에 대 한 초기 디렉터리를 지정합니다.
+사용자 도구에 대 한 초기 디렉터리를 지정 합니다.
 
 ```
 CString m_strInitialDirectory;
@@ -206,11 +206,11 @@ CString m_strInitialDirectory;
 
 ### <a name="remarks"></a>설명
 
-이 변수를 호출할 때에 실행 되는 도구는 초기 디렉터리를 지정 [CUserTool::Invoke](#invoke) 클릭 한 경우이 도구를 사용 하 여 연결 된 명령 또는 합니다.
+이 변수는 [Cusertool:: Invoke](#invoke) 를 호출 하거나 사용자가이 도구와 연결 된 명령을 클릭할 때 도구가 실행 하는 초기 디렉터리를 지정 합니다.
 
 ##  <a name="m_strlabel"></a>  CUserTool::m_strLabel
 
-도구 메뉴 항목에 표시 되는 레이블.
+도구에 대 한 메뉴 항목에 표시 되는 레이블입니다.
 
 ```
 CString m_strLabel;
@@ -232,7 +232,7 @@ virtual void Serialize(CArchive& ar);
 
 ##  <a name="setcommand"></a>  CUserTool::SetCommand
 
-사용자 도구를 실행 하는 응용 프로그램을 설정 합니다.
+사용자 도구에서 실행 하는 응용 프로그램을 설정 합니다.
 
 ```
 void SetCommand(LPCTSTR lpszCmd);
@@ -241,15 +241,15 @@ void SetCommand(LPCTSTR lpszCmd);
 ### <a name="parameters"></a>매개 변수
 
 *lpszCmd*<br/>
-[in] 사용자 도구와 연결할 새 응용 프로그램을 지정 합니다.
+진행 사용자 도구와 연결할 새 응용 프로그램을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 도구를 실행 하는 새 응용 프로그램을 설정 하려면이 메서드를 호출 합니다. 메서드는 이전 아이콘을 제거 하 고 지정된 된 응용 프로그램에서를 새 아이콘을 로드 합니다. 응용 프로그램에서 아이콘을 로드할 수 없는 것을 경우에 사용자 도구에 대 한 기본 아이콘을 호출 하 여 로드 [CUserTool::LoadDefaultIcon](#loaddefaulticon)합니다.
+사용자 도구에서 실행 하는 새 응용 프로그램을 설정 하려면이 메서드를 호출 합니다. 메서드는 이전 아이콘을 소멸 시키고 지정 된 응용 프로그램에서 새 아이콘을 로드 합니다. 응용 프로그램에서 아이콘을 로드할 수 없는 경우 [Cusertool:: LoadDefaultIcon](#loaddefaulticon)를 호출 하 여 사용자 도구에 대 한 기본 아이콘을 로드 합니다.
 
 ##  <a name="settoolicon"></a>  CUserTool::SetToolIcon
 
-이 도구를 사용 하는 응용 프로그램에서 사용자 도구에 대 한 아이콘을 로드 합니다.
+도구에서 사용 하는 응용 프로그램에서 사용자 도구에 대 한 아이콘을 로드 합니다.
 
 ```
 virtual HICON SetToolIcon();
@@ -261,7 +261,7 @@ virtual HICON SetToolIcon();
 
 ### <a name="remarks"></a>설명
 
-메뉴 항목에 표시할 아이콘을 로드 하려면이 메서드를 호출 합니다. 이 메서드는 도구를 사용 하는 실행 파일에서 아이콘을 검색 합니다. 아이콘에서 제공 하는 기본 아이콘이 없는 경우 [CUserTool::LoadDefaultIcon](#loaddefaulticon) 대신 사용 됩니다.
+메뉴 항목에 표시할 아이콘을 로드 하려면이 메서드를 호출 합니다. 이 메서드는 도구에서 사용 하는 실행 파일의 아이콘을 검색 합니다. 기본 아이콘이 없는 경우 [Cusertool:: LoadDefaultIcon](#loaddefaulticon) 에서 제공 하는 아이콘이 대신 사용 됩니다.
 
 ## <a name="see-also"></a>참고자료
 

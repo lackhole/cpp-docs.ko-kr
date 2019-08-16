@@ -8,12 +8,12 @@ helpviewer_keywords:
 - memory [MFC], managing
 - memory allocation [MFC], MFC
 ms.assetid: 934ac81b-d630-4232-88e5-ea74f7187987
-ms.openlocfilehash: 1c7f901009d5e1e7f0af20d493bb748b46b18480
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d81bd0a8bdd24059951cba5c8b69751b3d1db86
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62219133"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508266"
 ---
 # <a name="memory-management"></a>메모리 관리
 
@@ -21,7 +21,7 @@ ms.locfileid: "62219133"
 
 두 할당 기술의 큰 차이점 중 하나는 프레임 할당을 사용하면 일반적으로 실제 메모리 블록 자체에서 작업하는 반면 힙 할당에서는 항상 메모리 블록에 대한 포인터가 제공된다는 것입니다. 두 스키마의 또 다른 주요 차이점은 프레임 객체가 자동으로 삭제되는 반면 힙 객체는 프로그래머가 명시적으로 삭제해야 한다는 것입니다.
 
-MFC를 사용하지 않는 Windows용 프로그램의 메모리 관리에 대한 정보는 Windows SDK의 [메모리 관리](/windows/desktop/memory/memory-management)를 참조하십시오.
+MFC를 사용하지 않는 Windows용 프로그램의 메모리 관리에 대한 정보는 Windows SDK의 [메모리 관리](/windows/win32/memory/memory-management)를 참조하십시오.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 

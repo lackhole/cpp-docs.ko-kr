@@ -1,21 +1,21 @@
 ---
-title: 가져오기 (C++ COM 특성)
+title: import (C++ COM 특성)
 ms.date: 10/03/2018
 f1_keywords:
 - vc-attr.import
 helpviewer_keywords:
 - import attribute
 ms.assetid: ebf07cae-39fb-4047-8b57-54af0a9a83de
-ms.openlocfilehash: d458ce9d938da5f3650eb2478385165de6a140ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f9ed80bdcc04302c0dee85935f377c8e3dbfd37f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409383"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514625"
 ---
 # <a name="import"></a>import
 
-주 프로그램 IDL에서 참조 하려는 정의 포함 하는 다른.idl,.odl, 또는 헤더 파일을 지정 합니다.
+주 IDL에서 참조 하려는 정의가 포함 된 다른 .idl, odl 또는 헤더 파일을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,13 +28,13 @@ ms.locfileid: "62409383"
 ### <a name="parameters"></a>매개 변수
 
 *idl_file*<br/>
-현재 프로젝트의 형식 라이브러리에 가져와서 원하는.idl 파일의 이름입니다.
+현재 프로젝트의 형식 라이브러리로 가져올 .idl 파일의 이름입니다.
 
 ## <a name="remarks"></a>설명
 
-**가져오기** C++ 원인 특성는 `#import` 문 아래에 배치 하는 `import "docobj.idl"` 생성 된.idl 파일의 문. **가져오기** 특성에 동일한 기능을 합니다 [가져오기](/windows/desktop/Midl/import) MIDL 특성입니다.
+**가져오기** C++ `import "docobj.idl"`특성은 생성 된 .idl 파일의 문 아래에 문을배치합니다.`#import` **가져오기** 특성은 [가져오기](/windows/win32/Midl/import) MIDL 특성과 동일한 기능을 포함 합니다.
 
-**가져올** 만 특성; 프로젝트에서 생성 되는.idl 파일에 지정된 된 파일을 배치 합니다 **가져오기** 특성 수 없다는 소스 코드에서 지정된 된 파일의 생성 호출 프로젝트입니다.  프로젝트의 소스 코드에서 지정된 된 파일의 구문을 호출을 사용 하거나 [#import](../../preprocessor/hash-import-directive-cpp.md) 및 `embedded_idl` 특성 이거나.h 파일을 포함할 수 있습니다 합니다 *idl_file*.h 파일이 있는 경우, 합니다.
+**가져오기** 특성은 지정 된 파일을 프로젝트에 의해 생성 되는 .idl 파일에만 배치 합니다. **가져오기** 특성을 사용 하면 프로젝트의 소스 코드에서 지정 된 파일의 구문을 호출할 수 없습니다.  프로젝트의 소스 코드에서 지정 된 파일의 구문을 호출 하려면 [#import](../../preprocessor/hash-import-directive-cpp.md) 및 `embedded_idl` 특성을 사용 하거나 .h 파일이 있는 경우 *idl_file*에 대 한 .h 파일을 포함 하면 됩니다.
 
 ## <a name="example"></a>예제
 
@@ -47,7 +47,7 @@ ms.locfileid: "62409383"
 [import(import.idl)];
 ```
 
-생성된 된.idl 파일에 다음 코드를 생성합니다.
+는 생성 된 .idl 파일에서 다음 코드를 생성 합니다.
 
 ```
 import "docobj.idl";

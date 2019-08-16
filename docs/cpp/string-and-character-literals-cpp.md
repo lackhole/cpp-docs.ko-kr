@@ -14,12 +14,12 @@ helpviewer_keywords:
 - literal strings [C++]
 - string literals [C++]
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
-ms.openlocfilehash: df690bea81b9799b30ae91313ce7157400ef8413
-ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
+ms.openlocfilehash: e7f0d4291aeb2e3d8dc1eac4dd08ef3e961468ff
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68866088"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498525"
 ---
 # <a name="string-and-character-literals-c"></a>문자열 및 문자 리터럴 (C++)
 
@@ -169,7 +169,7 @@ char c1 = '\100';   // '@'
 char c2 = '\1000';  // C4305, C4309, truncates to '0'
 ```
 
-8 진수가 아닌 문자를 포함 하는 것 처럼 보이는 이스케이프 시퀀스는 마지막 8 진수 문자까지 8 진수 시퀀스로 평가 되 고 그 다음에 나머지 문자는 여러 문자 리터럴의 후속 문자로 계산 됩니다. 8 진수가 아닌 첫 번째 문자가 10 진수 이면 경고 C4125 생성 됩니다. 예를 들어:
+8 진수가 아닌 문자를 포함 하는 것 처럼 보이는 이스케이프 시퀀스는 마지막 8 진수 문자까지 8 진수 시퀀스로 평가 되 고 그 다음에 나머지 문자는 여러 문자 리터럴의 후속 문자로 계산 됩니다. 8 진수가 아닌 첫 번째 문자가 10 진수 이면 경고 C4125 생성 됩니다. 예:
 
 ```cpp
 char c3 = '\009';   // '9'
@@ -216,7 +216,7 @@ char u5 = '\U00000041'; // \U UCN 'A'
 
 유니버설 문자 이름은 서로게이트 코드 포인트 범위 D 800-DFFF의 값을 인코딩할 수 없습니다. 유니코드 서로게이트 쌍에 대해 `\UNNNNNNNN`을 사용하여 유니버설 문자 이름을 지정합니다. 여기서 NNNNNNNN은 문자에 대한 8자리 코드 포인트입니다. 필요한 경우 컴파일러에서 서로게이트 쌍을 생성 합니다.
 
-C++03에서는 해당 유니버설 문자 이름을 사용해서만 문자 하위 집합을 나타낼 수 있으며 실제로 유효한 유니코드 문자를 나타내지 않는 일부 유니버설 문자 이름이 허용됩니다. 이 실수는 c + + 11 표준에서 수정 되었습니다. C++11에서는 문자 및 문자열 리터럴과 식별자 모두 유니버설 문자 이름을 사용할 수 있습니다.  유니버설 문자 이름에 대한 자세한 내용은 [Character Sets](../cpp/character-sets.md)을 참조하세요. 유니코드에 대한 자세한 내용은 [유니코드](https://msdn.microsoft.com/library/dd374081)(영문)를 참조하세요. 서로게이트 쌍에 대한 자세한 내용은 [서로게이트 쌍 및 보조 문자](/windows/desktop/Intl/surrogates-and-supplementary-characters)(영문)를 참조하세요.
+C++03에서는 해당 유니버설 문자 이름을 사용해서만 문자 하위 집합을 나타낼 수 있으며 실제로 유효한 유니코드 문자를 나타내지 않는 일부 유니버설 문자 이름이 허용됩니다. 이 실수는 c + + 11 표준에서 수정 되었습니다. C++11에서는 문자 및 문자열 리터럴과 식별자 모두 유니버설 문자 이름을 사용할 수 있습니다.  유니버설 문자 이름에 대한 자세한 내용은 [Character Sets](../cpp/character-sets.md)을 참조하세요. 유니코드에 대한 자세한 내용은 [유니코드](/windows/win32/intl/unicode)(영문)를 참조하세요. 서로게이트 쌍에 대한 자세한 내용은 [서로게이트 쌍 및 보조 문자](/windows/win32/Intl/surrogates-and-supplementary-characters)(영문)를 참조하세요.
 
 ## <a name="string-literals"></a>문자열 리터럴
 

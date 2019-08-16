@@ -62,19 +62,19 @@ helpviewer_keywords:
 - tcsncpy function
 - _strncpy_l function
 ms.assetid: ac4345a1-a129-4f2f-bb8a-373ec58ab8b0
-ms.openlocfilehash: 04ca1f0b689e68008b3b5a57d01e626ee92a60b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fac7e052c5c1d5525946bdbc599404ac56d47f5a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209750"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499450"
 ---
-# <a name="strncpy-strncpyl-wcsncpy-wcsncpyl-mbsncpy-mbsncpyl"></a>strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
+# <a name="strncpy-_strncpy_l-wcsncpy-_wcsncpy_l-_mbsncpy-_mbsncpy_l"></a>strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
 
 한 문자열의 문자를 다른 문자열로 복사합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)을 참조하세요.
 
 > [!IMPORTANT]
-> **_mbsncpy** 하 고 **_mbsncpy_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsncpy** 및 **_mbsncpy_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -169,20 +169,20 @@ unsigned char *_mbsncpy_l(
 
 ## <a name="return-value"></a>반환 값
 
-반환 *strDest*합니다. 반환 값 없음은 오류를 나타내는 데 예약되어 있습니다.
+*Strdest*를 반환 합니다. 반환 값 없음은 오류를 나타내는 데 예약되어 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**strncpy** 함수에는 초기 복사 *개수* 자의 *strSource* 에 *strDest* 반환 *strDest* . 하는 경우 *개수* 의 길이 보다 작거나 같으면 *strSource*, 복사 된 문자열에 null 문자를 자동으로 추가 되지 않습니다. 경우 *개수* 의 길이 보다 크면 *strSource*를 대상 문자열 길이까지 null 문자로 채워집니다 *개수*합니다. 동작은 **strncpy** 소스 문자열과 대상 문자열이 겹치는 경우 정의 되지 않습니다.
+**Strncpy** 함수는 *strsource* 의 초기 *카운트* 문자를 *Strsource* 에 복사 하 고 *strsource*를 반환 합니다. *Count* 가 *strsource*의 길이 보다 작거나 같으면 복사 된 문자열에 null 문자가 자동으로 추가 되지 않습니다. *Count* 가 *strsource*의 길이 보다 큰 경우 대상 문자열은 최대 길이 *개수*까지 null 문자로 채워집니다. 원본 및 대상 문자열이 겹치면 **strncpy** 의 동작이 정의 되지 않습니다.
 
 > [!IMPORTANT]
-> **strncpy** 에 공간이 충분 한지 확인 하지 않습니다 *strDest*; 따라서, 버퍼 오버런의 잠재적 원인이 될 수 있습니다. 합니다 *개수* 복사 되는 문자 수를 제한 하는 인수 크기에 제한 되지 않습니다 *strDest*합니다. 다음 예제를 참조하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> **strncpy** 는 *strdest*에 충분 한 공간을 확인 하지 않습니다. 이로 인해 버퍼 오버런이 발생할 수 있습니다. *Count* 인수는 복사 되는 문자 수를 제한 합니다. *Strdest*의 크기에는 제한이 없습니다. 다음 예제를 참조하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-경우 *strDest* 또는 *strSource* 는 **NULL** 포인터 이거나 *개수* 보다 작거나 0 잘못 된 매개 변수 처리기가 호출 에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수가-1를 반환 하는 설정 **errno** 하 **EINVAL**합니다.
+*Strdest* 또는 *Strdest* 가 **NULL** 포인터 이거나 *Count* 가 0 보다 작거나 같으면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
-**wcsncpy** 하 고 **_mbsncpy** 와이드 문자 및 멀티 바이트 문자 버전입니다 **strncpy**합니다. 인수 및 반환 값 **wcsncpy** 하 고 **_mbsncpy** 그에 따라 달라 집니다. 그 외의 경우에는 이들 6개 함수가 동일하게 작동합니다.
+**wcsncpy** 및 **_mbsncpy** 는 **strncpy**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsncpy** 및 **_mbsncpy** 의 인수와 반환 값은 그에 따라 다릅니다. 그 외의 경우에는 이들 6개 함수가 동일하게 작동합니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_L** 접미사가 있는 이러한 함수 버전은 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
@@ -194,7 +194,7 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 |**_tcsncpy_l**|**_strncpy_l**|**_mbsnbcpy_l**|**_wcsncpy_l**|
 
 > [!NOTE]
-> **_strncpy_l** 하 고 **_wcsncpy_l** 은 로캘에 종속 되지 않으면에 대해서만 제공 됩니다 **_tcsncpy_l** 직접 호출할 수 없습니다.
+> **_strncpy_l** 및 **_wcsncpy_l** 에는 로캘 종속성이 없습니다. 이는 **_tcsncpy_l** 에 대해서만 제공 되며 직접 호출할 수 없습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -208,7 +208,7 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 ## <a name="example"></a>예제
 
-다음 예제에서는의 사용을 보여 줍니다 **strncpy** 및 어떻게 프로그램 버그 및 보안 문제를 악용할 수 있습니다. 각 호출에 대해 경고를 생성 하는 컴파일러 **strncpy** 비슷합니다 **crt_strncpy_x86.c(15): 경고 C4996: 'strncpy': 이 함수 또는 변수는 안전하지 않을 수 있습니다. strncpy_s를 대신 사용하세요. 사용 중단을 사용하지 않도록 설정하려면 _CRT_SECURE_NO_WARNINGS를 사용합니다. 자세한 내용은 온라인 도움말을 참조하세요.**
+다음 예제에서는 **strncpy** 를 사용 하는 방법과 프로그램 버그 및 보안 문제를 일으킬 수 있는 오용 방법을 보여 줍니다. 컴파일러가 **crt_strncpy_x86 (15): warning C4996: ' strncpy '와 유사한 **strncpy** 에 대 한 각 호출에 대 한 경고를 생성 합니다. 이 함수 또는 변수는 안전하지 않을 수 있습니다. strncpy_s를 대신 사용하세요. 사용 중단을 사용하지 않도록 설정하려면 _CRT_SECURE_NO_WARNINGS를 사용합니다. 자세한 내용은 온라인 도움말을 참조하세요.**
 
 ```C
 // crt_strncpy_x86.c

@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPrivateObjectSecurityDesc class
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-ms.openlocfilehash: c1ac15d4d8254107a66e577321edb3c40578f240
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 97ea2b8411b404caf9f833ad85f226d18aea1e73
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915800"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496576"
 ---
 # <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc 클래스
 
@@ -33,14 +33,14 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc](#cprivateobjectsecuritydesc)|생성자입니다.|
 |[CPrivateObjectSecurityDesc::~CPrivateObjectSecurityDesc](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CPrivateObjectSecurityDesc::ConvertToAutoInherit](#converttoautoinherit)|이 메서드를 호출 하 여 보안 설명자와 해당 Acl (액세스 제어 목록)을 상속 가능한 Ace (액세스 제어 항목)의 자동 전파를 지 원하는 형식으로 변환 합니다.|
 |[CPrivateObjectSecurityDesc::Create](#create)|호출 하는 리소스 관리자가 만든 전용 개체에 대해 자체 상대 보안 설명자를 할당 하 고 초기화 하려면이 메서드를 호출 합니다.|
@@ -57,9 +57,9 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 
 [Csecuritydesc](../../atl/reference/csecuritydesc-class.md)에서 파생 된이 클래스는 전용 개체의 보안 설명자를 만들고 관리 하기 위한 메서드를 제공 합니다.
 
-Windows의 액세스 제어 모델에 대 한 소개는 Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) 를 참조 하세요.
+Windows의 액세스 제어 모델에 대 한 소개는 Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) 를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CSecurityDesc](../../atl/reference/csecuritydesc-class.md)
 
@@ -93,7 +93,7 @@ bool ConvertToAutoInherit(
 새 개체가 다른 개체를 포함할 수 있는지 여부를 지정 합니다. True 값은 새 개체가 컨테이너 임을 나타냅니다. False 값은 새 개체가 컨테이너가 아님을 나타냅니다.
 
 *GenericMapping*<br/>
-각 제네릭 오른쪽에서 개체에 대 한 특정 권한으로의 매핑을 지정 하는 [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) 구조체에 대 한 포인터입니다.
+각 제네릭 오른쪽에서 개체에 대 한 특정 권한으로의 매핑을 지정 하는 [GENERIC_MAPPING](/windows/win32/api/winnt/ns-winnt-generic_mapping) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -101,7 +101,7 @@ bool ConvertToAutoInherit(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 현재 보안 설명자의 DACL (임의 액세스 제어 목록) 및 SACL (시스템 액세스 제어 목록)에 있는 Ace가 부모 보안 설명자에서 상속 되었는지 여부를 확인 하려고 합니다. [ConvertToAutoInheritPrivateObjectSecurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) 함수를 호출 합니다.
+이 메서드는 현재 보안 설명자의 DACL (임의 액세스 제어 목록) 및 SACL (시스템 액세스 제어 목록)에 있는 Ace가 부모 보안 설명자에서 상속 되었는지 여부를 확인 하려고 합니다. [ConvertToAutoInheritPrivateObjectSecurity](/windows/win32/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) 함수를 호출 합니다.
 
 ##  <a name="cprivateobjectsecuritydesc"></a>  CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc
 
@@ -164,7 +164,7 @@ bool Create(
 개체를 만들고 있는 클라이언트 프로세스에 대 한 [CAccessToken](../../atl/reference/caccesstoken-class.md) 개체에 대 한 참조입니다.
 
 *GenericMapping*<br/>
-각 제네릭 오른쪽에서 개체에 대 한 특정 권한으로의 매핑을 지정 하는 [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) 구조체에 대 한 포인터입니다.
+각 제네릭 오른쪽에서 개체에 대 한 특정 권한으로의 매핑을 지정 하는 [GENERIC_MAPPING](/windows/win32/api/winnt/ns-winnt-generic_mapping) 구조체에 대 한 포인터입니다.
 
 *ObjectType*<br/>
 현재 개체와 `GUID` 연결 된 개체의 형식을 식별 하는 구조체에 대 한 포인터입니다. 개체에 GUID가 없는 경우 *ObjectType* 을 NULL로 설정 합니다.
@@ -173,7 +173,7 @@ bool Create(
 새 개체가 다른 개체를 포함할 수 있는지 여부를 지정 합니다. True 값은 새 개체가 컨테이너 임을 나타냅니다. False 값은 새 개체가 컨테이너가 아님을 나타냅니다.
 
 *AutoInheritFlags*<br/>
-Ace (액세스 제어 항목)가 *Pparent*에서 상속 되는 방식을 제어 하는 비트 플래그 집합입니다. 자세한 내용은 [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) 를 참조 하세요.
+Ace (액세스 제어 항목)가 *Pparent*에서 상속 되는 방식을 제어 하는 비트 플래그 집합입니다. 자세한 내용은 [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -181,7 +181,7 @@ Ace (액세스 제어 항목)가 *Pparent*에서 상속 되는 방식을 제어 
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [CreatePrivateObjectSercurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) 또는 [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex)를 호출 합니다.
+이 메서드는 [CreatePrivateObjectSercurity](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) 또는 [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex)를 호출 합니다.
 
 두 번째 방법을 사용 하 여 새 개체의 개체 형식 GUID를 지정 하거나 Ace 상속 방식을 제어할 수 있습니다.
 
@@ -201,7 +201,7 @@ bool Get(
 ### <a name="parameters"></a>매개 변수
 
 *si*<br/>
-검색할 보안 설명자의 파트를 나타내는 비트 플래그 집합입니다. 이 값은 [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) 비트 플래그의 조합일 수 있습니다.
+검색할 보안 설명자의 파트를 나타내는 비트 플래그 집합입니다. 이 값은 [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) 비트 플래그의 조합일 수 있습니다.
 
 *pResult*<br/>
 지정 된 보안 설명자에서 요청 된 정보의 복사본을 받는 [Csecuritydesc](../../atl/reference/csecuritydesc-class.md) 개체에 대 한 포인터입니다.
@@ -253,19 +253,19 @@ bool Set(
 ### <a name="parameters"></a>매개 변수
 
 *si*<br/>
-설정할 보안 설명자의 부분을 나타내는 비트 플래그 집합입니다. 이 값은 [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) 비트 플래그의 조합일 수 있습니다.
+설정할 보안 설명자의 부분을 나타내는 비트 플래그 집합입니다. 이 값은 [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) 비트 플래그의 조합일 수 있습니다.
 
 *수정과*<br/>
 [Csecuritydesc](../../atl/reference/csecuritydesc-class.md) 개체에 대 한 포인터입니다. *Si* 매개 변수로 표시 되는이 보안 설명자 부분은 개체의 보안 설명자에 적용 됩니다.
 
 *GenericMapping*<br/>
-각 제네릭 오른쪽에서 개체에 대 한 특정 권한으로의 매핑을 지정 하는 [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) 구조체에 대 한 포인터입니다.
+각 제네릭 오른쪽에서 개체에 대 한 특정 권한으로의 매핑을 지정 하는 [GENERIC_MAPPING](/windows/win32/api/winnt/ns-winnt-generic_mapping) 구조체에 대 한 포인터입니다.
 
 *토큰*<br/>
 개체를 만들고 있는 클라이언트 프로세스에 대 한 [CAccessToken](../../atl/reference/caccesstoken-class.md) 개체에 대 한 참조입니다.
 
 *AutoInheritFlags*<br/>
-Ace (액세스 제어 항목)가 *Pparent*에서 상속 되는 방식을 제어 하는 비트 플래그 집합입니다. 자세한 내용은 [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) 를 참조 하세요.
+Ace (액세스 제어 항목)가 *Pparent*에서 상속 되는 방식을 제어 하는 비트 플래그 집합입니다. 자세한 내용은 [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -277,7 +277,7 @@ Ace (액세스 제어 항목)가 *Pparent*에서 상속 되는 방식을 제어 
 
 ## <a name="see-also"></a>참고자료
 
-[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor)<br/>
+[SECURITY_DESCRIPTOR](/windows/win32/api/winnt/ns-winnt-security_descriptor)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)<br/>
 [CSecurityDesc 클래스](../../atl/reference/csecuritydesc-class.md)

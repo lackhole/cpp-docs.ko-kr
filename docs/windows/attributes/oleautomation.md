@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - oleautomation attribute
 ms.assetid: c1086c91-260b-4dc3-b244-662852d09906
-ms.openlocfilehash: 74701742de904b76e7b1152c8ddb3f2f5dd953c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 56970d8b1067e1ac38230b6995074210ddc5549b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407616"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514354"
 ---
 # <a name="oleautomation"></a>oleautomation
 
-Automation 호환 인터페이스를 나타냅니다.
+인터페이스가 자동화와 호환 됨을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ Automation 호환 인터페이스를 나타냅니다.
 
 ## <a name="remarks"></a>설명
 
-**oleautomation** C++ 특성에 동일한 기능을 합니다 [oleautomation](/windows/desktop/Midl/oleautomation) MIDL 특성입니다.
+**Oleautomation** C++ 특성은 [oleautomation](/windows/win32/Midl/oleautomation) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-에 대 한 예제를 참조 하세요 [defaultvalue](defaultvalue.md) 하 고 [nonextensible](nonextensible.md) 의 샘플 사용에 대 한 **oleautomation**합니다.
+**Oleautomation**의 샘플 사용에 대해서는 [defaultvalue](defaultvalue.md) 및 [비 확장](nonextensible.md) 의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

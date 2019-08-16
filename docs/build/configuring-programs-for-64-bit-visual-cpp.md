@@ -7,12 +7,12 @@ helpviewer_keywords:
 - 64-bit programming [C++], about 64-bit programming
 - programming [C++], 64-bit
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
-ms.openlocfilehash: 0e2e4dcd1e7dabc2ffc8ac87b1670245101c16d0
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 906591544717ed107c284dfb41bbbf2dfdd3c253
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240871"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493287"
 ---
 # <a name="configure-c-projects-for-64-bit-x64-targets"></a>64비트, x64를 대상으로 하는 C++ 프로젝트 구성
 
@@ -38,7 +38,7 @@ ms.locfileid: "68240871"
 
 [/favor(아키텍처에 맞게 최적화)](reference/favor-optimize-for-architecture-specifics.md)
 
-[64비트 Windows용 프로그래밍 가이드](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)
+[64비트 Windows에 대한 프로그래밍 가이드](/windows/win32/WinProg64/programming-guide-for-64-bit-windows)
 
 [x64용 MASM(ml64.exe)](../assembler/masm/masm-for-x64-ml64-exe.md)
 

@@ -6,20 +6,20 @@ helpviewer_keywords:
 - ATL, connection points
 - connection points [C++], about connection points
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
-ms.openlocfilehash: 4d94396ef8839516d9bfee15a2611cce66baa6bd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df69496a6d245702a9598d684b25122ca55b1e6d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252317"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491807"
 ---
 # <a name="atl-connection-points"></a>ATL 연결 지점
 
 연결 가능 개체는 송신 인터페이스를 지원합니다. 송신 인터페이스에서는 개체가 클라이언트와 통신할 수 있습니다. 연결 가능 개체는 각 송신 인터페이스에 대해 연결 지점을 노출합니다. 각 송신 인터페이스는 싱크라는 개체에서 클라이언트에 의해 구현됩니다.
 
-![연결 지점](../atl/media/vc2zw31.gif "연결점")
+![연결 요소](../atl/media/vc2zw31.gif "연결 요소")
 
-각 연결 지점은 지원 합니다 [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint) 인터페이스입니다. 연결 가능 개체를 통해 클라이언트에 해당 연결 지점을 노출 합니다 [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer) 인터페이스입니다.
+각 연결 지점은 [IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint) 인터페이스를 지원 합니다. 연결 가능 개체는 [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) 인터페이스를 통해 해당 연결 요소를 클라이언트에 노출 합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

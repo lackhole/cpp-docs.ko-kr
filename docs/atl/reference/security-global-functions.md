@@ -16,12 +16,12 @@ helpviewer_keywords:
 - ACL object global functions
 - security IDs [C++]
 ms.assetid: 6a584bfe-16b7-47f4-8439-9c789c41567a
-ms.openlocfilehash: 435ab4756808a530749e110302b73d16a31c38c6
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 5f3c0464b239f4500d416b80ae4fdf06c2dc386f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915518"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495169"
 ---
 # <a name="security-global-functions"></a>보안 전역 함수
 
@@ -66,7 +66,7 @@ inline bool AtlGetDacl(
 보안 정보를 검색할 개체에 대 한 핸들입니다.
 
 *ObjectType*<br/>
-*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
+*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
 
 *pDacl*<br/>
 검색 된 보안 정보를 포함 하는 DACL 개체에 대 한 포인터입니다.
@@ -100,7 +100,7 @@ inline bool AtlSetDacl(
 보안 정보를 설정 하는 개체에 대 한 핸들입니다.
 
 *ObjectType*<br/>
-*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
+*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
 
 *rDacl*<br/>
 새 보안 정보를 포함 하는 DACL입니다.
@@ -139,7 +139,7 @@ inline bool AtlGetGroupSid(
 보안 정보를 검색할 개체에 대 한 핸들입니다.
 
 *ObjectType*<br/>
-*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
+*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
 
 *pSid*<br/>
 새 보안 정보 `CSid` 를 포함 하는 개체에 대 한 포인터입니다.
@@ -172,7 +172,7 @@ inline bool AtlSetGroupSid(
 보안 정보를 설정 하는 개체에 대 한 핸들입니다.
 
 *ObjectType*<br/>
-*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
+*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
 
 *rSid*<br/>
 새 보안 정보를 포함 하는 개체입니다.`CSid`
@@ -205,7 +205,7 @@ inline bool AtlGetOwnerSid(
 보안 정보를 검색할 개체에 대 한 핸들입니다.
 
 *ObjectType*<br/>
-*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
+*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
 
 *pSid*<br/>
 새 보안 정보 `CSid` 를 포함 하는 개체에 대 한 포인터입니다.
@@ -238,7 +238,7 @@ inline bool AtlSetOwnerSid(
 보안 정보를 설정 하는 개체에 대 한 핸들입니다.
 
 *ObjectType*<br/>
-*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
+*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
 
 *rSid*<br/>
 새 보안 정보를 포함 하는 개체입니다.`CSid`
@@ -272,7 +272,7 @@ inline bool AtlGetSacl(
 보안 정보를 검색할 개체에 대 한 핸들입니다.
 
 *ObjectType*<br/>
-*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
+*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
 
 *pSacl*<br/>
 검색 된 보안 정보를 포함 하는 SACL 개체에 대 한 포인터입니다.
@@ -314,7 +314,7 @@ inline bool AtlSetSacl(
 보안 정보를 설정 하는 개체에 대 한 핸들입니다.
 
 *ObjectType*<br/>
-*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
+*Hobject* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
 
 *rSacl*<br/>
 새 보안 정보를 포함 하는 SACL입니다.
@@ -363,13 +363,13 @@ bool bRequestNeededPrivileges = true) throw(...);
 보안 정보를 검색할 개체의 이름을 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
 *ObjectType*<br/>
-*PszObjectName* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
+*PszObjectName* 매개 변수로 식별 되는 개체 유형을 나타내는 [SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) 열거형의 값을 지정 합니다.
 
 *pSecurityDescriptor*<br/>
 요청 된 보안 설명자를 수신 하는 개체입니다.
 
 *requestedInfo*<br/>
-검색할 보안 정보 유형을 나타내는 [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) 비트 플래그 집합입니다. 이 매개 변수는 다음 값을 조합 하 여 사용할 수 있습니다.
+검색할 보안 정보 유형을 나타내는 [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) 비트 플래그 집합입니다. 이 매개 변수는 다음 값을 조합 하 여 사용할 수 있습니다.
 
 *bRequestNeededPrivileges*<br/>
 True 이면 함수가 SE_SECURITY_NAME 권한을 사용 하도록 설정 하 고 완료 될 때 복원 합니다.

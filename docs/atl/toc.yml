@@ -240,7 +240,7 @@
             - name: 등록자 스크립트 만들기
               href: creating-registrar-scripts.md
             - name: BNF(Backus-Naur 양식) 구문 이해
-              href: understanding-backus-nauer-form-bnf-syntax.md
+              href: understanding-backus-naur-form-bnf-syntax.md
             - name: 구문 분석 트리 이해
               href: understanding-parse-trees.md
             - name: 레지스트리 스크립팅 예

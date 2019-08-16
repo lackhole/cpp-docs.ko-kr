@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - iid_is attribute
 ms.assetid: 2f9b42a9-7130-4b08-9b1e-0d5d360e10ff
-ms.openlocfilehash: b91fb7937bb0e20f2500eace9695bc0ddba21b26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8bfa20f55afd85019795fdd40548158c2f49e126
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409527"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514664"
 ---
-# <a name="iidis"></a>iid_is
+# <a name="iid_is"></a>iid_is
 
-인터페이스 포인터에서 가리키는 COM 인터페이스의 IID를 지정 합니다.
+인터페이스 포인터가 가리키는 COM 인터페이스의 IID를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,15 +26,15 @@ ms.locfileid: "62409527"
 ### <a name="parameters"></a>매개 변수
 
 *expression*<br/>
-인터페이스 포인터를 가리키는 COM 인터페이스의 IID를 지정 하는 C 언어 식입니다.
+인터페이스 포인터가 가리키는 COM 인터페이스의 IID를 지정 하는 C 언어 식입니다.
 
 ## <a name="remarks"></a>설명
 
-**iid_is** C++ 특성에 동일한 기능을 합니다 [iid_is](/windows/desktop/Midl/iid-is) MIDL 특성입니다.
+**Iid_is** C++ 특성은 [iid_is](/windows/win32/Midl/iid-is) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-다음 코드의 사용을 보여 줍니다 **iid_is**:
+다음 코드에서는 **iid_is**를 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_iid_is.cpp
@@ -57,7 +57,7 @@ __interface IFireTabCtrl : IDispatch
 
 |||
 |-|-|
-|**적용 대상**|인터페이스 매개 변수를 데이터 멤버|
+|**적용 대상**|인터페이스 매개 변수, 데이터 멤버|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|

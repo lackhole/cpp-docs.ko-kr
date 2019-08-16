@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - ptr attribute
 ms.assetid: 95eaea57-a5be-45f6-a612-ba2c9bc4645a
-ms.openlocfilehash: 2c712a2d9c85e0fe8fd8c4dbad5c7f48812ab1a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e5f2d694f3525f27e4a8371f04efa28940f21bba
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407395"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514162"
 ---
 # <a name="ptr"></a>ptr
 
-전체 포인터에 대 한 포인터를 지정합니다.
+포인터를 전체 포인터로 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407395"
 
 ## <a name="remarks"></a>설명
 
-**ptr** C++ 특성에 동일한 기능을 합니다 [ptr](/windows/desktop/Midl/ptr) MIDL 특성입니다.
+**Ptr** C++ 특성에는 [ptr](/windows/win32/Midl/ptr) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [defaultvalue](defaultvalue.md) 의 샘플 사용에 대 한 **ptr**합니다.
+**Ptr**의 샘플 사용에 대해서는 [defaultvalue](defaultvalue.md) 의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -37,7 +37,7 @@ ms.locfileid: "62407395"
 
 |||
 |-|-|
-|**적용 대상**|인터페이스 매개 변수를 인터페이스 메서드를 **typedef**|
+|**적용 대상**|인터페이스 매개 변수, 인터페이스 메서드, **typedef**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|

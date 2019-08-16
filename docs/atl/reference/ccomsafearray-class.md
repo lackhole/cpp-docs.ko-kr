@@ -28,16 +28,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArray class
 ms.assetid: ee349aef-33db-4c85-bd08-5d86a3c9d53a
-ms.openlocfilehash: dec6bbad0aa4a8409b9f3d24476dcc94b8eaefe3
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: 36750990dc62d5b24cf1107ac8a2724df787a47d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221164"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496991"
 ---
 # <a name="ccomsafearray-class"></a>CComSafeArray 클래스
 
-이 클래스는에 대 한 래퍼를 `SAFEARRAY` 구조입니다.
+이 클래스는 `SAFEARRAY` 구조체에 대 한 래퍼입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -55,22 +55,22 @@ class CComSafeArray
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CComSafeArray::CComSafeArray](#ccomsafearray)|생성자입니다.|
 |[CComSafeArray::~CComSafeArray](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CComSafeArray::Add](#add)|하나 이상의 요소를 추가 또는 `SAFEARRAY` 구조체를 `CComSafeArray`입니다.|
-|[CComSafeArray::Attach](#attach)|연결 된 `SAFEARRAY` 구조체를 `CComSafeArray` 개체입니다.|
-|[CComSafeArray::CopyFrom](#copyfrom)|내용을 복사 합니다는 `SAFEARRAY` 구조체로 `CComSafeArray` 개체입니다.|
+|[CComSafeArray::Add](#add)|하나 이상의 요소 또는 `SAFEARRAY` 구조체 `CComSafeArray`를에 추가 합니다.|
+|[CComSafeArray::Attach](#attach)|구조체를 `SAFEARRAY` `CComSafeArray` 개체에 연결 합니다.|
+|[CComSafeArray::CopyFrom](#copyfrom)|`SAFEARRAY` 구조체의 내용을 `CComSafeArray` 개체에 복사 합니다.|
 |[CComSafeArray::CopyTo](#copyto)|`CComSafeArray` 개체의 복사본을 만듭니다.|
 |[개체를 만들려면](#create)|`CComSafeArray` 개체를 만듭니다.|
 |[CComSafeArray::Destroy](#destroy)|`CComSafeArray` 개체를 제거합니다.|
-|[CComSafeArray::Detach](#detach)|분리 된 `SAFEARRAY` 에서 `CComSafeArray` 개체입니다.|
+|[CComSafeArray::Detach](#detach)|개체에서를 `SAFEARRAY` 분리 합니다. `CComSafeArray`|
 |[CComSafeArray::GetAt](#getat)|1차원 배열에서 단일 요소를 검색합니다.|
 |[CComSafeArray::GetCount](#getcount)|배열의 요소 수를 반환합니다.|
 |[CComSafeArray::GetDimensions](#getdimensions)|배열의 차원 수를 반환합니다.|
@@ -86,9 +86,9 @@ class CComSafeArray
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CComSafeArray::operator LPSAFEARRAY](#operator_lpsafearray)|값으로 캐스팅 된 `SAFEARRAY` 포인터입니다.|
+|[CComSafeArray::operator LPSAFEARRAY](#operator_lpsafearray)|값 `SAFEARRAY` 을 포인터로 캐스팅 합니다.|
 |[CComSafeArray::operator\[\]](ccomsafearray-class.md#operator_at)|배열에서 요소를 검색합니다.|
 |[CComSafeArray::operator =](#operator_eq)|대입 연산자입니다.|
 
@@ -96,11 +96,11 @@ class CComSafeArray
 
 |이름|설명|
 |----------|-----------------|
-|[CComSafeArray::m_psa](#m_psa)|이 데이터 멤버의 주소를 보유 합니다 `SAFEARRAY` 구조입니다.|
+|[CComSafeArray::m_psa](#m_psa)|이 데이터 멤버는 `SAFEARRAY` 구조체의 주소를 보유 합니다.|
 
 ## <a name="remarks"></a>설명
 
-`CComSafeArray` 는 [SAFEARRAY Data Type](/windows/desktop/api/oaidl/ns-oaidl-tagsafearray) 클래스에 대한 래퍼를 제공합니다. 따라서 거의 모든 VARIANT 지원 형식의 1차원 및 다차원 배열을 쉽게 만들고 관리할 수 있습니다.
+`CComSafeArray` 는 [SAFEARRAY Data Type](/windows/win32/api/oaidl/ns-oaidl-tagsafearray) 클래스에 대한 래퍼를 제공합니다. 따라서 거의 모든 VARIANT 지원 형식의 1차원 및 다차원 배열을 쉽게 만들고 관리할 수 있습니다.
 
 `CComSafeArray` 는 프로세스 간의 배열 전달을 간소화할 뿐만 아니라 상한과 하한에 대해 배열 인덱스 값을 확인하여 추가 보안을 제공합니다.
 
@@ -122,7 +122,7 @@ class CComSafeArray
 |VT_UI4|uint|
 |VT_UI4|ulong|
 |VT_UI8|ulonglong|
-|VT_R4|float|
+|VT_R4|FLOAT|
 |VT_R8|double|
 |VT_DECIMAL|decimal pointer|
 |VT_VARIANT|variant pointer|
@@ -138,7 +138,7 @@ class CComSafeArray
 
 ##  <a name="add"></a>  CComSafeArray::Add
 
-하나 이상의 요소를 추가 또는 `SAFEARRAY` 구조체를 `CComSafeArray`입니다.
+하나 이상의 요소 또는 `SAFEARRAY` 구조체 `CComSafeArray`를에 추가 합니다.
 
 ```
 HRESULT Add(const SAFEARRAY* psaSrc);
@@ -158,24 +158,24 @@ HRESULT Add(const T& t, BOOL bCopy = TRUE);
 배열에 추가할 하나 이상의 개체에 대 한 포인터입니다.
 
 *t*<br/>
-배열에 추가할 개체 참조입니다.
+배열에 추가할 개체에 대 한 참조입니다.
 
 *bCopy*<br/>
-데이터의 복사본을 만들어야 하는지 여부를 나타냅니다. 기본값은 TRUE입니다.
+데이터 복사본을 만들어야 하는지 여부를 나타냅니다. 기본값은 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-새 개체는 기존의 끝에 추가 됩니다 `SAFEARRAY` 개체입니다. 개체를 추가 하는 다차원 `SAFEARRAY` 개체가 지원 되지 않습니다. 기존 개체의 배열에 추가할 때 두 배열이 동일한 형식의 요소를 포함 해야 합니다.
+새 개체는 기존 `SAFEARRAY` 개체의 끝에 추가 됩니다. 다차원 `SAFEARRAY` 개체에 개체를 추가 하는 것은 지원 되지 않습니다. 개체의 기존 배열을 추가할 때 두 배열 모두 동일한 형식의 요소를 포함 해야 합니다.
 
-합니다 *복사* 플래그는 때 고려할 요소 BSTR 또는 VARIANT 형식의 배열에 추가 됩니다. 기본값은 TRUE 배열 요소를 추가할 때 새 복사본을 데이터의 되는지를 확인 합니다.
+*Bcopy* 플래그는 BSTR 또는 VARIANT 형식의 요소가 배열에 추가 될 때 고려 됩니다. 기본값인 TRUE로 설정 하면 요소가 배열에 추가 될 때 데이터의 새 복사본이 생성 됩니다.
 
 ##  <a name="attach"></a>  CComSafeArray::Attach
 
-연결 된 `SAFEARRAY` 구조체를 `CComSafeArray` 개체입니다.
+구조체를 `SAFEARRAY` `CComSafeArray` 개체에 연결 합니다.
 
 ```
 HRESULT Attach(const SAFEARRAY* psaSrc);
@@ -184,15 +184,15 @@ HRESULT Attach(const SAFEARRAY* psaSrc);
 ### <a name="parameters"></a>매개 변수
 
 *psaSrc*<br/>
-에 대 한 포인터를 `SAFEARRAY` 구조입니다.
+`SAFEARRAY` 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-연결을 `SAFEARRAY` 구조체를 `CComSafeArray` 있도록 기존 개체를 `CComSafeArray` 메서드를 사용할 수 있습니다.
+구조체를 `CComSafeArray` 개체에 연결 하 여 기존 `CComSafeArray` 메서드를 사용할 수 있도록 합니다. `SAFEARRAY`
 
 ##  <a name="ccomsafearray"></a>  CComSafeArray::CComSafeArray
 
@@ -217,19 +217,19 @@ CComSafeArray(const SAFEARRAY* psaSrc);
 배열의 요소 수입니다.
 
 *lLBound*<br/>
-하한값 값 즉, 배열의 첫 번째 요소의 인덱스입니다.
+하 한 값입니다. 즉, 배열에 있는 첫 번째 요소의 인덱스입니다.
 
 *pBound*<br/>
-에 대 한 포인터를 `SAFEARRAYBOUND` 구조입니다.
+`SAFEARRAYBOUND` 구조체에 대 한 포인터입니다.
 
 *uDims*<br/>
 배열의 차원 수입니다.
 
 *saSrc*<br/>
-에 대 한 참조를 `SAFEARRAY` 구조 또는 `CComSafeArray` 개체입니다. 두 경우 모두 생성자 생성 후 배열 참조 되지 않은 있도록 배열의 복사본을이 참조를 사용 합니다.
+`SAFEARRAY` 구조체 또는`CComSafeArray` 개체에 대 한 참조입니다. 두 경우 모두 생성자는이 참조를 사용 하 여 배열의 복사본을 만들기 때문에 배열을 생성 후 참조 하지 않습니다.
 
 *psaSrc*<br/>
-에 대 한 포인터를 `SAFEARRAY` 구조입니다. 생성자 생성 후 배열 참조 되지 않은 있도록 배열의 복사본이 주소를 사용 합니다.
+`SAFEARRAY` 구조체에 대 한 포인터입니다. 생성자는이 주소를 사용 하 여 배열의 복사본을 만들기 때문에 배열이 생성 된 후 참조 되지 않습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -245,11 +245,11 @@ CComSafeArray(const SAFEARRAY* psaSrc);
 
 ### <a name="remarks"></a>설명
 
-할당 된 모든 리소스를 해제합니다.
+할당 된 리소스를 모두 해제 합니다.
 
 ##  <a name="copyfrom"></a>  CComSafeArray::CopyFrom
 
-내용을 복사 합니다는 `SAFEARRAY` 구조체로 `CComSafeArray` 개체입니다.
+`SAFEARRAY` 구조체의 내용을 `CComSafeArray` 개체에 복사 합니다.
 
 ```
 HRESULT CopyFrom(LPSAFEARRAY* ppArray);
@@ -258,15 +258,15 @@ HRESULT CopyFrom(LPSAFEARRAY* ppArray);
 ### <a name="parameters"></a>매개 변수
 
 *ppArray*<br/>
-에 대 한 포인터를 `SAFEARRAY` 복사 합니다.
+복사할에 대 `SAFEARRAY` 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-콘텐츠를 복사 하는이 메서드는 `SAFEARRAY` 현재 `CComSafeArray` 개체입니다. 배열의 기존 콘텐츠가 바뀝니다.
+이 메서드는 `SAFEARRAY` 의 내용을 현재 `CComSafeArray` 개체로 복사 합니다. 배열의 기존 내용이 바뀝니다.
 
 ##  <a name="copyto"></a>  CComSafeArray::CopyTo
 
@@ -279,15 +279,15 @@ HRESULT CopyTo(LPSAFEARRAY* ppArray);
 ### <a name="parameters"></a>매개 변수
 
 *ppArray*<br/>
-만들 새 위치에 대 한 포인터 `SAFEARRAY`합니다.
+새 `SAFEARRAY`을 만들 위치에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-콘텐츠를 복사 하는이 메서드는 `CComSafeArray` 개체는 `SAFEARRAY` 구조입니다.
+이 메서드는 `CComSafeArray` 개체 `SAFEARRAY` 의 내용을 구조체로 복사 합니다.
 
 ##  <a name="create"></a>  개체를 만들려면
 
@@ -310,15 +310,15 @@ HRESULT Create(ULONG ulCount = 0, LONG lLBound = 0);
 배열의 요소 수입니다.
 
 *lLBound*<br/>
-하한값 값 즉, 배열의 첫 번째 요소의 인덱스입니다.
+하 한 값입니다. 즉, 배열에 있는 첫 번째 요소의 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-A `CComSafeArray` 기존 개체를 만들 수 있습니다 `SAFEARRAYBOUND` 구조 및 배열의 하한값에서 요소 수를 지정 하 여 또는 차원 수입니다. 배열에서 액세스할 수 있으면 C++, 하한값 0 이어야 합니다. 다른 언어 하한값 (예를 들어,-10 ~ 10 같은 범위를 사용 하 여 요소를 사용 하 여 Visual Basic 지원 배열)에 대 한 다른 값이 허용 될 수 있습니다.
+개체 `CComSafeArray` 는 기존 `SAFEARRAYBOUND` 구조와 차원 수에서 만들 수도 있고 배열의 요소 수와 하 한을 지정 하 여 만들 수도 있습니다. 에서 C++배열에 액세스 하는 경우 하 한은 0 이어야 합니다. 다른 언어에서는 하 한에 다른 값을 허용할 수 있습니다. 예를 들어 Visual Basic는 범위가-10 ~ 10 인 요소가 포함 된 배열을 지원 합니다.
 
 ##  <a name="destroy"></a>  CComSafeArray::Destroy
 
@@ -330,15 +330,15 @@ HRESULT Destroy();
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-기존 제거 `CComSafeArray` 개체 및 모든 포함 된 데이터입니다.
+기존 `CComSafeArray` 개체와 여기에 포함 된 모든 데이터를 소멸 시킵니다.
 
 ##  <a name="detach"></a>  CComSafeArray::Detach
 
-분리 된 `SAFEARRAY` 에서 `CComSafeArray` 개체입니다.
+개체에서를 `SAFEARRAY` 분리 합니다. `CComSafeArray`
 
 ```
 LPSAFEARRAY Detach();
@@ -346,11 +346,11 @@ LPSAFEARRAY Detach();
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 반환 합니다.는 `SAFEARRAY` 개체입니다.
+`SAFEARRAY` 개체에 대 한 포인터를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 분리 합니다 `SAFEARRAY` 에서 개체를 `CComSafeArray` 개체입니다.
+이 메서드는 `SAFEARRAY` 개체 `CComSafeArray` 에서 개체를 분리 합니다.
 
 ##  <a name="getat"></a>  CComSafeArray::GetAt
 
@@ -363,11 +363,11 @@ T& GetAt(LONG lIndex) const;
 ### <a name="parameters"></a>매개 변수
 
 *lIndex*<br/>
-반환할 배열의 값의 인덱스 번호입니다.
+반환할 배열 값의 인덱스 번호입니다.
 
 ### <a name="return-value"></a>반환 값
 
-필요한 배열 요소에 대 한 참조를 반환합니다.
+필수 배열 요소에 대 한 참조를 반환 합니다.
 
 ##  <a name="getcount"></a>  CComSafeArray::GetCount
 
@@ -388,7 +388,7 @@ ULONG GetCount(UINT uDim = 0) const;
 
 ### <a name="remarks"></a>설명
 
-와 다차원 배열을 함께 사용할 경우이 메서드는 특정 차원에서 요소의 수를 반환 합니다.
+다차원 배열과 함께 사용 하는 경우이 메서드는 특정 차원에 있는 요소 수만 반환 합니다.
 
 ##  <a name="getdimensions"></a>  CComSafeArray::GetDimensions
 
@@ -413,15 +413,15 @@ LONG GetLowerBound(UINT uDim = 0) const;
 ### <a name="parameters"></a>매개 변수
 
 *uDim*<br/>
-하한값을 가져올 배열 차원입니다. 생략 하면 기본값은 0입니다.
+하 한을 가져올 배열 차원입니다. 생략 하는 경우 기본값은 0입니다.
 
 ### <a name="return-value"></a>반환 값
 
-하한값을 반환합니다.
+하 한을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-하한값 0 인 경우 첫 번째 요소가 0으로 한 요소입니다는 C와 유사한 배열로 나타냅니다. 오류가 발생 하면 예를 들어 잘못 된 차원 인수로 호출 `AtlThrow` 오류를 설명 하는 HRESULT를 사용 하 여 합니다.
+하 한이 0 이면 첫 번째 요소가 요소 번호 0 인 C와 비슷한 배열을 나타냅니다. 오류가 발생 하는 경우 (예: 잘못 된 차원 인수)이 메서드는 오류를 `AtlThrow` 설명 하는 HRESULT를 사용 하 여를 호출 합니다.
 
 ##  <a name="getsafearrayptr"></a>  CComSafeArray::GetSafeArrayPtr
 
@@ -433,7 +433,7 @@ LPSAFEARRAY* GetSafeArrayPtr() throw();
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 반환 합니다 [CComSafeArray::m_psa](#m_psa) 데이터 멤버입니다.
+[CComSafeArray:: m_psa](#m_psa) 데이터 멤버에 대 한 포인터를 반환 합니다.
 
 ##  <a name="gettype"></a>  CComSafeArray::GetType
 
@@ -445,9 +445,9 @@ VARTYPE GetType() const;
 
 ### <a name="return-value"></a>반환 값
 
-다음 형식 중 하나일 수 있습니다는 배열에 저장 된 데이터의 형식을 반환 합니다.
+배열에 저장 된 데이터의 형식을 반환 합니다. 여기에는 다음 형식 중 하나일 수 있습니다.
 
-|VARTYPE|설명|
+|VARTYPE|Description|
 |-------------|-----------------|
 |VT_I1|char|
 |VT_I2|short|
@@ -459,7 +459,7 @@ VARTYPE GetType() const;
 |VT_UI4|uint|
 |VT_UI4|ulong|
 |VT_UI8|ulonglong|
-|VT_R4|float|
+|VT_R4|FLOAT|
 |VT_R8|double|
 |VT_DECIMAL|decimal pointer|
 |VT_VARIANT|variant pointer|
@@ -476,15 +476,15 @@ LONG GetUpperBound(UINT uDim = 0) const;
 ### <a name="parameters"></a>매개 변수
 
 *uDim*<br/>
-상한 값을 가져올 배열 차원입니다. 생략 하면 기본값은 0입니다.
+상한을 가져올 배열 차원입니다. 생략 하는 경우 기본값은 0입니다.
 
 ### <a name="return-value"></a>반환 값
 
-상한 값을 반환합니다. 이 값은 포함이 차원에 대 한 유효한 최대 인덱스입니다.
+상한을 반환 합니다. 이 값은이 차원에 대 한 최대 유효 인덱스 (포함)입니다.
 
 ### <a name="remarks"></a>설명
 
-오류가 발생 하면 예를 들어 잘못 된 차원 인수로 호출 `AtlThrow` 오류를 설명 하는 HRESULT를 사용 하 여 합니다.
+오류가 발생 하는 경우 (예: 잘못 된 차원 인수)이 메서드는 오류를 `AtlThrow` 설명 하는 HRESULT를 사용 하 여를 호출 합니다.
 
 ##  <a name="issizable"></a>  CComSafeArray::IsSizable
 
@@ -496,11 +496,11 @@ bool IsSizable() const;
 
 ### <a name="return-value"></a>반환 값
 
-TRUE를 반환 합니다 `CComSafeArray` 크기를 조정할 수, FALSE 수 없는 경우.
+의 `CComSafeArray` 크기를 조정할 수 있으면 TRUE를 반환 하 고, 그렇지 않으면 FALSE를 반환 합니다.
 
 ##  <a name="m_psa"></a>  CComSafeArray::m_psa
 
-주소를 보유 합니다 `SAFEARRAY` 구조에 액세스 합니다.
+액세스 한 `SAFEARRAY` 구조체의 주소를 보유 합니다.
 
 ```
 LPSAFEARRAY m_psa;
@@ -517,14 +517,14 @@ HRESULT MultiDimGetAt(const LONG* alIndex, T& t);
 ### <a name="parameters"></a>매개 변수
 
 *alIndex*<br/>
-배열의 각 차원에 대 한 인덱스의 벡터에 대 한 포인터입니다. 왼쪽 (최상위) 차원이 `alIndex[0]`합니다.
+배열의 각 차원에 대 한 인덱스 벡터에 대 한 포인터입니다. 가장 왼쪽 (가장 중요) 차원은 `alIndex[0]`입니다.
 
 *t*<br/>
-데이터에 대 한 참조를 반환 합니다.
+반환 된 데이터에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ##  <a name="multidimsetat"></a>  CComSafeArray::MultiDimSetAt
 
@@ -537,18 +537,18 @@ HRESULT MultiDimSetAt(const LONG* alIndex, const T& t);
 ### <a name="parameters"></a>매개 변수
 
 *alIndex*<br/>
-배열의 각 차원에 대 한 인덱스의 벡터에 대 한 포인터입니다. 오른쪽 (최하위) 차원이 `alIndex`[0]입니다.
+배열의 각 차원에 대 한 인덱스 벡터에 대 한 포인터입니다. 가장 오른쪽 (최하위) 차원은 `alIndex`[0]입니다.
 
 *T*<br/>
-새 요소의 값을 지정합니다.
+새 요소의 값을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 버전이 다차원 [CComSafeArray::SetAt](#setat)합니다.
+이는 [CComSafeArray:: SetAt](#setat)의 다차원 버전입니다.
 
 ##  <a name="operator_at"></a>  CComSafeArray::operator \[\]
 
@@ -562,15 +562,15 @@ T& operator[]int nindex) const;
 ### <a name="parameters"></a>매개 변수
 
 *lIndex, nIndex*<br/>
-배열에 필요한 요소의 인덱스 번호입니다.
+배열에 있는 필수 요소의 인덱스 번호입니다.
 
 ### <a name="return-value"></a>반환 값
 
-적절 한 배열 요소를 반환합니다.
+적절 한 배열 요소를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-비슷한 기능을 수행 [CComSafeArray::GetAt](#getat)하지만이 연산자는 1 차원 배열에만 작동 합니다.
+[CComSafeArray:: GetAt](#getat)와 유사한 함수를 수행 하지만이 연산자는 1 차원 배열 에서만 작동 합니다.
 
 ##  <a name="operator_eq"></a>  CComSafeArray::operator =
 
@@ -595,7 +595,7 @@ ATL::CComSafeArray<T>& operator=(const SAFEARRAY* psaSrc);
 
 ##  <a name="operator_lpsafearray"></a>  CComSafeArray::operator LPSAFEARRAY
 
-값으로 캐스팅 된 `SAFEARRAY` 포인터입니다.
+값 `SAFEARRAY` 을 포인터로 캐스팅 합니다.
 
 ```
 operator LPSAFEARRAY() const;
@@ -603,7 +603,7 @@ operator LPSAFEARRAY() const;
 
 ### <a name="return-value"></a>반환 값
 
-값으로 캐스팅 된 `SAFEARRAY` 포인터입니다.
+값 `SAFEARRAY` 을 포인터로 캐스팅 합니다.
 
 ##  <a name="resize"></a>  CComSafeArray::Resize
 
@@ -617,21 +617,21 @@ HRESULT Resize(ULONG ulCount, LONG lLBound = 0);
 ### <a name="parameters"></a>매개 변수
 
 *pBound*<br/>
-에 대 한 포인터를 `SAFEARRAYBOUND` 요소 수 및 배열의 하한값에 대 한 정보를 포함 하는 구조입니다.
+요소의 수와 배열의 `SAFEARRAYBOUND` 하 한에 대 한 정보를 포함 하는 구조체에 대 한 포인터입니다.
 
 *ulCount*<br/>
-크기가 조정 된 배열의 개체에에서 요청 된 횟수입니다.
+크기 조정 된 배열의 요청 된 개체 수입니다.
 
 *lLBound*<br/>
-하 한.
+하 한입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는만 가장 오른쪽의 차원 크기가 조정 됩니다. 반환 하는 배열 크기가 조정 되지 것입니다 `IsResizable` FALSE로 합니다.
+이 메서드는 가장 오른쪽 차원의 크기를 조정 합니다. FALSE로 반환 `IsResizable` 하는 배열의 크기는 조정 되지 않습니다.
 
 ##  <a name="setat"></a>  CComSafeArray::SetAt
 
@@ -644,25 +644,25 @@ HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *lIndex*<br/>
-설정할 수 있는 배열 요소의 인덱스 번호입니다.
+설정할 배열 요소의 인덱스 번호입니다.
 
 *t*<br/>
 지정 된 요소의 새 값입니다.
 
 *bCopy*<br/>
-데이터의 복사본을 만들어야 하는지 여부를 나타냅니다. 기본값은 TRUE입니다.
+데이터 복사본을 만들어야 하는지 여부를 나타냅니다. 기본값은 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-합니다 *복사* 플래그는 때 고려할 요소 BSTR 또는 VARIANT 형식의 배열에 추가 됩니다. 기본값은 TRUE 배열 요소를 추가할 때 새 복사본을 데이터의 되는지를 확인 합니다.
+*Bcopy* 플래그는 BSTR 또는 VARIANT 형식의 요소가 배열에 추가 될 때 고려 됩니다. 기본값인 TRUE로 설정 하면 요소가 배열에 추가 될 때 데이터의 새 복사본이 생성 됩니다.
 
 ## <a name="see-also"></a>참고자료
 
-[SAFEARRAY 데이터 형식](/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)<br/>
+[SAFEARRAY 데이터 형식](/windows/win32/api/oaidl/ns-oaidl-tagsafearray)<br/>
 [개체를 만들려면](#create)<br/>
 [CComSafeArray::Destroy](#destroy)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - common controls [MFC]
 - controls [MFC]
 ms.assetid: b2842884-6435-4b8f-933b-21671bf8af95
-ms.openlocfilehash: c0738128d20839046e0885e7489b494d84349e4d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3155889f2fd4002286340ccec7f4a35d1a6a9c20
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62297270"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508802"
 ---
 # <a name="controls-mfc"></a>컨트롤(MFC)
 
@@ -49,7 +49,7 @@ Windows 운영 체제는 항상 많은 Windows 공용 컨트롤을 제공합니�
 
 ### <a name="_core_windows_common_controls_and_mfc_classes"></a>  Windows 공용 컨트롤 및 MFC 클래스
 
-|Control|MFC 클래스|설명|Windows 95의 새로운 기능|
+|Control|MFC 클래스|설명|Windows 95의 새로운|
 |-------------|---------------|-----------------|------------------------|
 |[애니메이션](../mfc/using-canimatectrl.md)|[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)|AVI 비디오 클립의 연속 프레임을 표시합니다.|예|
 |단추|[CButton](../mfc/reference/cbutton-class.md)|동작을 발생시키는 누름 단추입니다. 확인란, 라디오 단추 및 그룹 상자에도 사용됩니다.|아니요|
@@ -102,7 +102,7 @@ Windows 운영 체제는 항상 많은 Windows 공용 컨트롤을 제공합니�
 
 - [샘플](../mfc/common-control-sample-list.md)
 
-Windows SDK의 Windows 공용 컨트롤에 대 한 정보를 참조 하세요 [공용 컨트롤](/windows/desktop/Controls/common-controls-intro)합니다.
+Windows SDK의 Windows 공용 컨트롤에 대 한 자세한 내용은 [공용 컨트롤](/windows/win32/Controls/common-controls-intro)을 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

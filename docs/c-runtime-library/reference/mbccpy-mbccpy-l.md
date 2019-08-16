@@ -34,14 +34,14 @@ helpviewer_keywords:
 - _mbccpy function
 - mbccpy_l function
 ms.assetid: 13f4de6e-7792-41ac-b319-dd9b135433aa
-ms.openlocfilehash: 852097ebea41ef99b1a53f7bc344eb0c08911a4d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d0711a98813565e945dad1d0e998847029668c2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156839"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499900"
 ---
-# <a name="mbccpy-mbccpyl"></a>_mbccpy, _mbccpy_l
+# <a name="_mbccpy-_mbccpy_l"></a>_mbccpy, _mbccpy_l
 
 한 문자열에서 다른 문자열로 멀티바이트 문자를 복사합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_mbccpy_s, _mbccpy_s_l](mbccpy-s-mbccpy-s-l.md)을 참조하세요.
 
@@ -75,13 +75,13 @@ void _mbccpy_l(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_mbccpy** 함수에서 하나의 멀티 바이트 문자를 복사 *src* 하 *dest*합니다.
+**_Mbccpy** 함수는 *src* 에서 *dest*로 하나의 멀티 바이트 문자를 복사 합니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 **_mbccpy** 에 대 한 null 포인터가 전달 됩니다 *dest* 하거나 *src*에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md). 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. **_Mbccpy** 가 *dest* 또는 *src*에 대해 null 포인터를 전달 하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL**로 설정 됩니다.
 
-**_mbccpy** 모든 로캘 종속 동작에 현재 로캘을 사용 합니다. **_mbccpy_l** 동일 **_mbccpy** 한다는 **_mbccpy_l** 로캘 종속 동작에 대해 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_mbccpy** 는 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_mbccpy_l** 는 로캘 종속 동작에 대해 전달 된 로캘을 사용 한다는 점을 제외 하 고 **_mbccpy** 와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-**보안 정보** null로 끝나는 문자열을 사용하세요. null로 끝나는 문자열은 대상 버퍼의 크기를 초과할 수 없습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다.
+**보안 정보** null로 끝나는 문자열을 사용하세요. null로 끝나는 문자열은 대상 버퍼의 크기를 초과할 수 없습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, advanced features
 ms.assetid: 8a6681c5-6576-4b12-841a-6862beee76fa
-ms.openlocfilehash: 44d85e7614f6a82af2e58f03a6d65d5d7740ab9b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dc2b745bf97dff65a3612c29745c9d0e455a347d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338430"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69507803"
 ---
 # <a name="advanced-features-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 고급 기능
 
@@ -19,13 +19,13 @@ ms.locfileid: "62338430"
 
 - **상황에 맞는 도움말 (HTML)**
 
-   F1 및 도움말 메뉴를 사용 하 여 또는 클릭 하 여 사용할 수 있는 상황에 맞는 도움말에 대 한 도움말 파일의 집합을 생성 한 **도움말** 대화 상자에서 단추입니다. 도움말을 지원하려면 도움말 컴파일러가 필요합니다. 도움말 컴파일러가 없으면 설치를 다시 실행하여 설치할 수 있습니다.
+   F1 및 도움말 메뉴를 사용 하거나 대화 상자에서 **도움말** 단추를 클릭 하 여 사용할 수 있는 상황에 맞는 도움말에 대 한 도움말 파일 집합을 생성 합니다. 도움말을 지원하려면 도움말 컴파일러가 필요합니다. 도움말 컴파일러가 없으면 설치를 다시 실행하여 설치할 수 있습니다.
 
-   참조 [HTML 도움말: 프로그램에 대 한 상황에 맞는 도움말](../../mfc/html-help-context-sensitive-help-for-your-programs.md) 하 고 [도움말 파일 (HTML 도움말)](../../build/reference/help-files-html-help.md) 자세한 내용은 합니다.
+   HTML [도움말을 참조 하세요. 프로그램](../../mfc/html-help-context-sensitive-help-for-your-programs.md) 및 도움말 파일에 대 한 상황에 맞는 도움말 [(HTML 도움말)](../../build/reference/help-files-html-help.md) .
 
 - **인쇄 및 인쇄 미리 보기**
 
-   멤버 함수를 호출 하 여 인쇄 설정 및 인쇄 미리 보기 명령을, 인쇄를 처리 하는 코드를 생성 합니다 [CView 클래스](../../mfc/reference/cview-class.md) MFC 라이브러리에서. 마법사에서는 응용 프로그램 메뉴에 이러한 함수에 대한 명령을 추가합니다. 인쇄 지원은 지정 하는 응용 프로그램에만 사용할 수 있습니다 **문서/뷰 아키텍처 지원** 에 [MFC 응용 프로그램 마법사, 응용 프로그램 종류](../../mfc/reference/application-type-mfc-application-wizard.md) 마법사의 페이지입니다. 기본적으로 문서/뷰 응용 프로그램은 인쇄를 지원합니다.
+   MFC 라이브러리의 [CView 클래스](../../mfc/reference/cview-class.md) 에서 멤버 함수를 호출 하 여 인쇄, 인쇄 설정 및 인쇄 미리 보기 명령을 처리 하는 코드를 생성 합니다. 마법사에서는 응용 프로그램 메뉴에 이러한 함수에 대한 명령을 추가합니다. 마법사의 [응용 프로그램 종류, MFC 응용 프로그램 마법사](../../mfc/reference/application-type-mfc-application-wizard.md) 페이지에서 **문서/뷰 아키텍처 지원을** 지정 하는 응용 프로그램에 대해서만 인쇄 지원을 사용할 수 있습니다. 기본적으로 문서/뷰 응용 프로그램은 인쇄를 지원합니다.
 
 - **자동화**
 
@@ -33,7 +33,7 @@ ms.locfileid: "62338430"
 
 - **ActiveX 컨트롤**
 
-   ActiveX 컨트롤을 지원합니다(기본값). 이 옵션을 선택 하지 않으며 나중에 ActiveX 컨트롤을 프로젝트에 삽입 하려고 하는 경우에에 대 한 호출을 추가 해야 합니다 [AfxEnableControlContainer](ole-initialization.md#afxenablecontrolcontainer) 응용 프로그램의 [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) 멤버 함수입니다.
+   ActiveX 컨트롤을 지원합니다(기본값). 이 옵션을 선택 하지 않고 나중에 ActiveX 컨트롤을 프로젝트에 삽입 하려면 응용 프로그램의 [CWinApp:: InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) 멤버 함수에서 [AfxEnableControlContainer](ole-initialization.md#afxenablecontrolcontainer) 에 대 한 호출을 추가 해야 합니다.
 
 - **MAPI (메시징 API)**
 
@@ -45,7 +45,7 @@ ms.locfileid: "62338430"
 
 - **Active Accessibility**
 
-   에 대 한 지원이 추가 되었습니다 [IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) 하 [CWnd](../../mfc/reference/cwnd-class.md)-액세스 가능 클라이언트를 사용 하 여 더 나은 상호 작용에 대 한 사용자 인터페이스 사용자 지정 하는 데 사용할 수 있는 클래스를 파생 합니다.
+   [IAccessible](/windows/win32/api/oleacc/nn-oleacc-iaccessible) 에 대 한 지원을 [CWnd](../../mfc/reference/cwnd-class.md)파생 클래스에 추가 하 여 내게 필요한 옵션 지원 클라이언트와의 상호 작용을 개선 하기 위해 사용자 인터페이스를 사용자 지정 하는 데 사용할 수 있습니다.
 
 - **공용 컨트롤 매니페스트**
 
@@ -53,19 +53,19 @@ ms.locfileid: "62338430"
 
    공용 컨트롤 DLL의 버전 6에서는 기존 응용 프로그램에서 사용하는 이전 버전의 공용 컨트롤을 자동으로 업데이트하지 않습니다. 공용 컨트롤 DLL의 버전 6을 사용하려면 응용 프로그램에서 해당 DLL을 로드하도록 지시하는 응용 프로그램 매니페스트를 만들어야 합니다. 이 공용 컨트롤 DLL에서는 Windows XP 테마도 지원합니다.
 
-   응용 프로그램 매니페스트에서는 응용 프로그램에 필요한 다른 DLL 및 버전도 지정할 수 있습니다. 응용 프로그램 매니페스트에 대 한 자세한 내용은 참조 하세요. [격리 된 응용 프로그램 및 Side-by-side-어셈블리](/windows/desktop/SbsCs/isolated-applications-and-side-by-side-assemblies-portal) Windows SDK에 있습니다.
+   응용 프로그램 매니페스트에서는 응용 프로그램에 필요한 다른 DLL 및 버전도 지정할 수 있습니다. 응용 프로그램 매니페스트에 대 한 자세한 내용은 [격리 된 응용 프로그램 및 Windows SDK의 Side-by-side 어셈블리](/windows/win32/SbsCs/isolated-applications-and-side-by-side-assemblies-portal) 를 참조 하세요.
 
 - **다시 시작 관리자 지원**
 
-   에 대 한 지원을 추가 합니다 [Windows 다시 시작 관리자](/windows/desktop/RstMgr/using-restart-manager)합니다. 이 비디오에는 MFC에서 다시 시작 관리자를 사용 하는 방법을 보여 줍니다. [어떻게 할까요 새로운 다시 시작 관리자를 사용 하 여](/previous-versions/visualstudio/visual-studio-2010/dd831853(v%3dvs.100))입니다.
+   [Windows 다시 시작 관리자](/windows/win32/RstMgr/using-restart-manager)에 대 한 지원을 추가 합니다. 이 비디오에서는 MFC에서 다시 시작 관리자를 사용 하는 방법을 보여 줍니다. [작업 방법: 새 다시 시작 관리자](/previous-versions/visualstudio/visual-studio-2010/dd831853(v%3dvs.100))를 사용 합니다.
 
 - **고급 프레임 창**
 
    |옵션|설명|
    |------------|-----------------|
-   |**탐색기 도킹 창**|Visual Studio와 유사한 도킹 창을 만듭니다 **솔루션 탐색기** 주 프레임 창 왼쪽에 있습니다.|
-   |**출력 도킹 프레임**|Visual Studio와 유사한 도킹 창을 만듭니다 **출력** 주 프레임 창 아래에 있는 창입니다.|
-   |**속성 도킹 창**|Visual Studio와 유사한 도킹 창을 만듭니다 **속성** 주 프레임 창의 오른쪽에 있는 창입니다.|
+   |**탐색기 도킹 창**|주 프레임 창 왼쪽에 **솔루션 탐색기** Visual Studio와 유사한 도킹 창을 만듭니다.|
+   |**출력 도킹 프레임**|주 프레임 창 아래에 있는 Visual Studio **출력** 창과 유사한 도킹 창을 만듭니다.|
+   |**속성 도킹 창**|주 프레임 창 오른쪽에 있는 Visual Studio **속성** 창과 유사한 도킹 창을 만듭니다.|
    |**탐색 창**|Outlook 탐색 모음과 유사한 도킹 창을 주 프레임 창 왼쪽에 만듭니다.|
    |**캡션 표시줄**|Office 스타일의 캡션 표시줄을 주 프레임 창 위쪽에 만듭니다.|
 

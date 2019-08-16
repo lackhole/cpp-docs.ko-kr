@@ -24,14 +24,14 @@ helpviewer_keywords:
 - _chdrive function
 - chdrive function
 ms.assetid: 212a1a4b-4fa8-444e-9677-7fca4c8c47e3
-ms.openlocfilehash: 963b7b7b40b632981abfc1529beb9c48a5b991ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e36867bb8237c549fd250be88a99244766920ba
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335479"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500277"
 ---
-# <a name="chdrive"></a>_chdrive
+# <a name="_chdrive"></a>_chdrive
 
 현재 작업 드라이브를 변경합니다.
 
@@ -57,9 +57,9 @@ int _chdrive(
 
 ## <a name="remarks"></a>설명
 
-하는 경우 *드라이브* 는 1부터 26 까지의 범위에 없는 잘못 된 매개 변수 처리기가에 설명 된 대로 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우는 **_chdrive** 함수가-1 반환 **errno** 로 설정 되어 **EACCES**, 및 **_doserrno** 로설정되어 **ERROR_INVALID_DRIVE**합니다.
+*드라이브가* 1에서 26 사이에 있지 않은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용 된 경우 **_chdrive** 함수는-1을 반환 하 고, **errno** 을 **eacces**로 설정 하 고, **_doserrno** 는 **ERROR_INVALID_DRIVE**로 설정 합니다.
 
-**_chdrive** 함수는 그 자체가 스레드로부터 안전하지 않은 **SetCurrentDirectory** 함수에 종속되므로 스레드로부터 안전하지 않습니다. 다중 스레드 애플리케이션에서 **_chdrive**를 안전하게 사용하려면 고유한 스레드 동기화를 제공해야 합니다. 자세한 내용은 [SetCurrentDirectory](/windows/desktop/api/winbase/nf-winbase-setcurrentdirectory)합니다.
+**_chdrive** 함수는 그 자체가 스레드로부터 안전하지 않은 **SetCurrentDirectory** 함수에 종속되므로 스레드로부터 안전하지 않습니다. 다중 스레드 애플리케이션에서 **_chdrive**를 안전하게 사용하려면 고유한 스레드 동기화를 제공해야 합니다. 자세한 내용은 [SetCurrentDirectory](/windows/win32/api/winbase/nf-winbase-setcurrentdirectory)를 참조 하세요.
 
 **_chdrive** 함수는 현재 작업 드라이브만 변경합니다. **_chdir** 함수는 현재 작업 디렉터리를 변경합니다.
 

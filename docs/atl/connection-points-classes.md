@@ -1,37 +1,37 @@
 ---
-title: 연결 지점 클래스 (ATL)
+title: 연결 요소 클래스 (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - classes [C++], connection points
 - connection points classes
 ms.assetid: 076365fa-299a-4dce-84c3-a5dff0e0da1f
-ms.openlocfilehash: 8e1ee67f75af1fa38693f7ddb487580ab733cc58
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0dba06b072e1e9ca545ccbea196fcfe371b02157
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250816"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492441"
 ---
-# <a name="connection-points-classes"></a>연결 지점 클래스
+# <a name="connection-points-classes"></a>연결 요소 클래스
 
-연결 지점에 대 한 지원을 제공 하는 다음 클래스:
+다음 클래스는 연결 지점의 지원 기능을 제공 합니다.
 
 - [IConnectionPointContainerImpl](../atl/reference/iconnectionpointcontainerimpl-class.md) 연결 지점 컨테이너를 구현 합니다.
 
 - [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) 연결 지점을 구현 합니다.
 
-- [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) 연결 지점을 나타내는 구현 합니다 [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) 인터페이스입니다.
+- [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) 인터페이스를 나타내는 연결 지점을 구현 합니다.
 
-- [CComDynamicUnkArray](../atl/reference/ccomdynamicunkarray-class.md) 연결 지점 및 해당 싱크 간의 무제한 연결을 관리 합니다.
+- [CComDynamicUnkArray](../atl/reference/ccomdynamicunkarray-class.md) 연결 지점과 해당 싱크 간의 무제한 연결을 관리 합니다.
 
-- [CComUnkArray](../atl/reference/ccomunkarray-class.md) 고정된 된 수의 연결 지점 및 해당 싱크 간의 연결을 관리 합니다.
+- [CComUnkArray](../atl/reference/ccomunkarray-class.md) 연결 지점과 해당 싱크 간에 고정 된 수의 연결을 관리 합니다.
 
-- [CFirePropNotifyEvent](../atl/reference/cfirepropnotifyevent-class.md) 개체 속성 변경 되었거나 변경 되려고 하는 클라이언트의 싱크를에 알립니다.
+- [CFirePropNotifyEvent](../atl/reference/cfirepropnotifyevent-class.md) 개체의 속성이 변경 되었거나 변경 될 것으로 클라이언트 싱크에 알립니다.
 
-- [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ATL COM 개체에 대 한 연결 지점에 대 한 지원을 제공 합니다. 이러한 연결점은 COM 개체에서 제공 하는 이벤트 싱크 맵과 매핑됩니다.
+- [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ATL COM 개체에 대 한 연결 지점의 지원 기능을 제공 합니다. 이러한 연결 지점은 COM 개체에서 제공 하는 이벤트 싱크 맵과 함께 매핑됩니다.
 
-- [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) 에 적절 한 처리기 함수로 이벤트를 라우팅하도록 클래스에서 이벤트 싱크 함께 매핑합니다.
+- [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) 는 클래스의 이벤트 싱크 맵과 함께 작동 하 여 이벤트를 적절 한 처리기 함수로 라우팅합니다.
 
 ## <a name="related-articles"></a>관련 문서
 

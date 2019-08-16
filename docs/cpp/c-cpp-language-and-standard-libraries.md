@@ -1,28 +1,78 @@
 ---
-title: C/C++ 언어 및 표준 라이브러리
-ms.date: 11/04/2016
+title: C/C++ 언어 및 표준 라이브러리 참조
+ms.date: 08/13/2019
 ms.assetid: c26a6682-961a-43ef-ad33-2adc612f69ac
-ms.openlocfilehash: d425d142b52b7d7a86e84a1dbbd648673223165a
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: c8a954702f8624537b110aa7e303fcb610387f57
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708013"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498781"
 ---
-# <a name="cc-language-and-standard-libraries"></a>C/C++ 언어 및 표준 라이브러리
+# <a name="cc-language-and-standard-libraries-reference"></a>C/C++ 언어 및 표준 라이브러리 참조
 
-이 설명서의 섹션에서는 C 및 C++용 ISO 표준의 Microsoft 구현에 대한 지침 및 참조 콘텐츠가 포함되어 있습니다.
+설명서의이 섹션에는 ISO 표준 C 및 C++ 언어의 Microsoft 구현에 대 한 참조 내용이 포함 되어 있습니다. 언어 참조에는 전처리기, 컴파일러 내장 함수 및 지원 되는 어셈블리 언어에 대 한 설명서가 포함 되어 있습니다.
+
+또한 여기에서 C 런타임 라이브러리, C++ 표준 라이브러리 및 Microsoft c/C++ 컴파일러 (MSVC)와 함께 제공 되는 몇 가지 기타 라이브러리에 대 한 설명서를 찾을 수 있습니다.
+
+## <a name="language-reference"></a>언어 참조
+
+[C 언어](../c-language/c-language-reference.md)\
+C 언어의 Microsoft 구현에 대한 참조 콘텐츠입니다.
+
+[C++언어도](../cpp/cpp-language-reference.md)\
+C++ 언어의 Microsoft 구현에 대 한 참조 콘텐츠입니다.
+
+[C/C++ 전처리기](../preprocessor/c-cpp-preprocessor-reference.md)\
+C 및 C++에서 사용 하는 전처리기에 대 한 참조 콘텐츠입니다.
+
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
+Microsoft C 및 C++ X86, ARM, ARM64 및 x64 아키텍처에 사용할 수 있는 내장 함수에 대해 설명 합니다.
+
+[인라인 어셈블러](../assembler/inline/inline-assembler.md)\
+x86 프로세서에서 Visual C/C++ 인라인 어셈블러를 사용하는 방법을 설명합니다.
+
+[ARM 어셈블러 참조](../assembler/arm/arm-assembler-reference.md)\
+Microsoft ARM 어셈블러 (ARMASM) 및 관련 도구에 대 한 참조 자료를 제공 합니다.
+
+[Microsoft 매크로 어셈블러 참조](../assembler/masm/microsoft-macro-assembler-reference.md)\
+Microsoft 매크로 어셈블러 (MASM)에 대 한 참조 자료를 제공 합니다.
+
+## <a name="libraries-reference"></a>라이브러리 참조
+
+### <a name="standard-libraries"></a>표준 라이브러리
+
+[C 런타임 라이브러리](../c-runtime-library/c-run-time-library-reference.md)\
+CRT (C 런타임 라이브러리)의 Microsoft 구현에 대 한 참조로, 때로는 유니버설 CRT 라고도 합니다.
+
+[C++표준 라이브러리](../standard-library/cpp-standard-library-reference.md)\
+C++ 표준 라이브러리의 Microsoft 구현에 대 한 참조입니다.
+
+### <a name="libraries-for-windows-applications"></a>Windows 애플리케이션용 라이브러리
+
+[MFC/ATL](../mfc/mfc-and-atl.md)\
+Microsoft Foundation Classes (MFC) 및 ATL (액티브 템플릿 라이브러리) 클래스 라이브러리에 대 한 설명서입니다.
+
+### <a name="additional-libraries"></a>추가 라이브러리
+
+[C++AMP (C++ 대형 병렬 처리 가속화)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)\
+최신 그래픽 프로세서를 일반적인 목적으로 사용하기 위한 클래스입니다.
+
+[동시성 런타임](../parallel/concrt/concurrency-runtime.md)\
+데이터 병렬 처리 또는 작업 병렬 처리를 사용 하는 프로그램의 작성을 단순화 하는 클래스입니다.
+
+[OpenMP](../parallel/openmp/openmp-in-visual-cpp.md)\
+OpenMP API의 Microsoft 구현에 대 한 참조입니다.
+
+[SafeInt 라이브러리](../safeint/safeint-library.md)\
+정수 오버플로를 방지 하는 데 도움이 되는 MSVC, GCC 또는 Clang와 함께 사용할 수 있는 이식 가능한 라이브러리입니다.
+
+[데이터 액세스 라이브러리](../data/data-access-in-cpp.md) ATL 또는 MFC를 사용 하 여 데이터 액세스를 지 원하는 라이브러리와 OLE DB 및 ODBC와 같은 레거시 서비스입니다.
 
 ## <a name="related-articles"></a>관련 문서
 
-|제목|설명|
-|-----------|-----------------|
-|[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)|최신 C++ 프로그래밍 관용구 및 모범 사례를 설명합니다.|
-|[C++ 언어 참조](../cpp/cpp-language-reference.md)|C++ 언어용 참조 콘텐츠.|
-|[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)|C++ 표준 라이브러리의 Microsoft 구현에 대한 참조 콘텐츠.|
-|[C 언어 참조](../c-language/c-language-reference.md)|C 언어의 Microsoft 구현에 대한 참조 콘텐츠.|
-|[C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)|C 런타임(CRT)의 Microsoft 구현에 대한 참조 콘텐츠.|
-|[SafeInt 라이브러리](../safeint/safeint-library.md)|오버플로 위험 없이 정수를 처리하는 함수의 이식 가능한 라이브러리에 대한 참조 콘텐츠.|
-|[Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)|Visual Studio에서 C++의 주요 기능을 설명하고 Visual Studio C++ 설명서의 나머지 부분에 연결합니다.|
-|[Visual Studio에서 C++ 개발 개요](../overview/overview-of-cpp-development.md)|Visual Studio 및 관련 도구를 사용하여 C++ 앱을 만들고, 빌드하고, 배포하는 방법에 대한 정보가 포함된 다른 문서 링크입니다.|
-|[Visual C++의 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)|이 릴리스의 새로운 기능과 향상된 기능에 대해 설명합니다.|
+[Windows 런타임 (WinRT)C++](/windows/uwp/cpp-and-winrt-apis/index)\
+C++/Sd는 완전히 표준 최신 c + + 17 언어 Windows 런타임 프로젝션으로, 헤더 파일 기반 라이브러리로 구현 됩니다.
+
+[Windows 런타임 C++ 템플릿 라이브러리 (WRL)](../cppcx/wrl/windows-runtime-cpp-template-library-wrl.md)\
+Windows 런타임에 대 한 레거시 템플릿 라이브러리 이며/Winrt.로 C++대체 되었습니다.

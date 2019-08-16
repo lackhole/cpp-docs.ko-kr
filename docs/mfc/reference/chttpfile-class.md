@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequest
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-ms.openlocfilehash: ff050a89a10c68c639c141891dd51b1b2d58e105
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 0c8c401b43361a5e1472e3470f5ea452c91b957f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915991"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505958"
 ---
 # <a name="chttpfile-class"></a>CHttpFile 클래스
 
@@ -53,7 +53,7 @@ class CHttpFile : public CInternetFile
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CHttpFile::AddRequestHeaders](#addrequestheaders)|HTTP 서버로 전송 된 요청에 헤더를 추가 합니다.|
 |[CHttpFile::EndRequest](#endrequest)|[Sendrequestex](#sendrequestex) 멤버 함수를 사용 하 여 HTTP 서버로 전송 된 요청을 종료 합니다.|
@@ -71,7 +71,7 @@ class CHttpFile : public CInternetFile
 
 에서 다른 MFC 인터넷 클래스로 `CHttpFile` 작업 하는 방법에 대 한 자세한 내용은 WinInet을 [사용한 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)문서를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -126,7 +126,7 @@ BOOL AddRequestHeaders(
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출에 실패 하면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 를 호출 하 여 오류의 원인을 확인할 수 있습니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출에 실패 하면 Win32 함수 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) 를 호출 하 여 오류의 원인을 확인할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -198,10 +198,10 @@ BOOL EndRequest(
 ### <a name="parameters"></a>매개 변수
 
 *dwFlags*<br/>
-작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 Windows SDK의 [HttpEndRequest](/windows/desktop/api/wininet/nf-wininet-httpendrequesta) 를 참조 하세요.
+작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 Windows SDK의 [HttpEndRequest](/windows/win32/api/wininet/nf-wininet-httpendrequestw) 를 참조 하세요.
 
 *lpBuffIn*<br/>
-작업에 사용 되는 입력 버퍼를 설명 하는 초기화 된 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) 에 대 한 포인터입니다.
+작업에 사용 되는 입력 버퍼를 설명 하는 초기화 된 [INTERNET_BUFFERS](/windows/win32/api/wininet/ns-wininet-internet_buffersw) 에 대 한 포인터입니다.
 
 *dwContext*<br/>
 `CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명 부분을 참조 하십시오.
@@ -293,7 +293,7 @@ BOOL QueryInfo(
 
 - HTTP_QUERY_FLAG_REQUEST_HEADERS 일반적으로 응용 프로그램은 응답 헤더를 쿼리 하지만 응용 프로그램은이 플래그를 사용 하 여 요청 헤더를 쿼리할 수도 있습니다.
 
-- 해당 값이 날짜/시간 문자열 (예: "HTTP_QUERY_FLAG_SYSTEMTIME") 인 헤더의 경우이 플래그는 응용 프로그램이 데이터를 구문 분석 하지 않아도 되는 표준 Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 구조체로 헤더 값을 반환 합니다. 이 플래그를 사용 하는 경우 함수의 재정의를 사용 하 `SYSTEMTIME` 는 것이 좋습니다.
+- 해당 값이 날짜/시간 문자열 (예: "HTTP_QUERY_FLAG_SYSTEMTIME") 인 헤더의 경우이 플래그는 응용 프로그램이 데이터를 구문 분석 하지 않아도 되는 표준 Win32 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조체로 헤더 값을 반환 합니다. 이 플래그를 사용 하는 경우 함수의 재정의를 사용 하 `SYSTEMTIME` 는 것이 좋습니다.
 
 - 상태 코드와 같이 값이 HTTP_QUERY_FLAG_NUMBER 헤더의 경우이 플래그는 데이터를 32 비트 숫자로 반환 합니다.
 
@@ -315,11 +315,11 @@ BOOL QueryInfo(
 인덱스 값입니다. *LpdwIndex*를 참조 하세요.
 
 *pSysTime*<br/>
-Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 구조체에 대 한 포인터입니다.
+Win32 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출에 실패 하면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 를 호출 하 여 오류의 원인을 확인할 수 있습니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출에 실패 하면 Win32 함수 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) 를 호출 하 여 오류의 원인을 확인할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -398,7 +398,7 @@ BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출에 실패 하면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) 를 호출 하 여 오류의 원인을 확인할 수 있습니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 호출에 실패 하면 Win32 함수 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) 를 호출 하 여 오류의 원인을 확인할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -485,13 +485,13 @@ BOOL SendRequestEx(
 요청에서 보낼 바이트 수입니다.
 
 *dwFlags*<br/>
-작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 Windows SDK [Httpsendrequestex](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) 를 참조 하십시오.
+작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 Windows SDK [Httpsendrequestex](/windows/win32/api/wininet/nf-wininet-httpsendrequestexw) 를 참조 하십시오.
 
 *dwContext*<br/>
 `CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명 부분을 참조 하십시오.
 
 *lpBuffIn*<br/>
-작업에 사용 되는 입력 버퍼를 설명 하는 초기화 된 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) 에 대 한 포인터입니다.
+작업에 사용 되는 입력 버퍼를 설명 하는 초기화 된 [INTERNET_BUFFERS](/windows/win32/api/wininet/ns-wininet-internet_buffersw) 에 대 한 포인터입니다.
 
 *lpBuffOut*<br/>
 작업에 사용 되는 출력 버퍼를 설명 하는 초기화 된 INTERNET_BUFFERS에 대 한 포인터입니다.

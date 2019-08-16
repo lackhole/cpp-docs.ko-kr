@@ -8,12 +8,12 @@ helpviewer_keywords:
 - argv argument
 - argc argument
 ms.assetid: 6148cbf3-ebe8-44f2-b277-de4b723991c7
-ms.openlocfilehash: 92e213b5accbf8fd5f48ac2111a169e585d82a1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14e5ea3a051d81828c5f88ac16df60b6ebb5b559
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184447"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498809"
 ---
 # <a name="argument-definitions"></a>인수 정의
 
@@ -35,7 +35,7 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 첫 번째 명령줄 인수는 항상 `argv[1]`이고 마지막 인수는 `argv[argc-1]`입니다.
 
 > [!NOTE]
-> 규칙상 `argv[0]`은 프로그램이 호출되는 명령입니다. 그러나 [CreateProcess](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea)를 사용하여 프로세스를 생성할 때 첫번째와 두번째 인수(*lpApplicationName*과 *lpCommandLine*)를 모두 사용하는 경우 `argv[0]`은 실행 파일 이름이 아닐 수도 있습니다. [GetModuleFileName](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea)을 사용하여 실행 파일 이름과 해당 정규화된 경로를 검색합니다.
+> 규칙상 `argv[0]`은 프로그램이 호출되는 명령입니다.  그러나 [CreateProcess](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew)를 사용하여 프로세스를 생성할 때 첫번째와 두번째 인수(*lpApplicationName*과 *lpCommandLine*)를 모두 사용하는 경우 `argv[0]`은 실행 파일 이름이 아닐 수도 있습니다. [GetModuleFileName](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew)을 사용하여 실행 파일 이름과 해당 정규화된 경로를 검색합니다.
 
 ## <a name="microsoft-specific"></a>Microsoft 전용
 

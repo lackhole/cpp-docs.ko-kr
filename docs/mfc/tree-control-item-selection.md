@@ -7,18 +7,18 @@ helpviewer_keywords:
 - CTreeCtrl class [MFC], item selection
 - item selection in tree controls
 ms.assetid: 7bcb3b16-b9c8-4c06-9350-7bc3c1c5009b
-ms.openlocfilehash: a88a2c8ea5b935bbcb1f40b705337ff676d8b8a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 07c7b673e0f9029f8ece928b0ab17760b3863cc7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363558"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513346"
 ---
 # <a name="tree-control-item-selection"></a>트리 컨트롤 항목 선택
 
-선택 영역이 한 항목에서 다른 트리 컨트롤을 변경 하는 경우 ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) 보냅니다 [TVN_SELCHANGING](/windows/desktop/Controls/tvn-selchanging) 하 고 [TVN_SELCHANGED](/windows/desktop/Controls/tvn-selchanged) 알림 메시지입니다. 두 알림에 변경 마우스 클릭 이나 키 입력과의 결과 인지 여부를 지정 하는 값을 포함 합니다. 알림을 선택이 취소 하는 항목 및 선택 손실 되는 항목에 대 한 정보도 포함 합니다. 항목의 선택 상태에 종속 된 항목 특성을 설정 하려면이 정보를 사용할 수 있습니다. 반환 **TRUE** 대 한 응답으로 `TVN_SELCHANGING` 방지 선택 항목 변경; 반환 **FALSE** 변경 수 있습니다.
+한 항목에서 다른 항목으로 선택이 변경 되 면 트리 컨트롤 ([CTreeCtrl](../mfc/reference/ctreectrl-class.md))에서 [TVN_SELCHANGING](/windows/win32/Controls/tvn-selchanging) 및 [TVN_SELCHANGED](/windows/win32/Controls/tvn-selchanged) 알림 메시지를 보냅니다. 두 알림에는 변경 내용이 마우스 클릭 또는 키 입력의 결과 인지 여부를 지정 하는 값이 포함 됩니다. 또한 알림은 선택 항목을 가져오는 항목과 선택 항목을 손실 하는 항목에 대 한 정보를 포함 합니다. 이 정보를 사용 하 여 항목의 선택 상태에 종속 된 항목 특성을 설정할 수 있습니다. 에 대 한 응답으로 `TVN_SELCHANGING` TRUE를 반환 하면 선택이 변경 되지 않습니다. **false** 를 반환 하면 변경 내용이 허용 됩니다.
 
-응용 프로그램 호출 하 여 선택을 변경할 수는 [SelectItem](../mfc/reference/ctreectrl-class.md#selectitem) 멤버 함수입니다.
+응용 프로그램은 [Selectitem](../mfc/reference/ctreectrl-class.md#selectitem) 멤버 함수를 호출 하 여 선택 항목을 변경할 수 있습니다.
 
 ## <a name="see-also"></a>참고자료
 

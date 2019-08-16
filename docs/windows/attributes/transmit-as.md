@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - transmit_as attribute
 ms.assetid: 53d0b8ab-5b06-423e-83eb-3d01a10424b2
-ms.openlocfilehash: e432d1a8f39cbc5e12f192ed7b07c29421bc403e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 939013e43f08aeda788e468c995f1736cf6b6928
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407174"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513919"
 ---
-# <a name="transmitas"></a>transmit_as
+# <a name="transmit_as"></a>transmit_as
 
-전송된 형식을 사용 하 여 클라이언트 및 서버 응용 프로그램을 조작 하는 제공 된 형식을 연결 하는 컴파일러에 지시 합니다.
+클라이언트 및 서버 응용 프로그램이 조작 하는 표시 된 형식을 전송 된 형식으로 연결 하도록 컴파일러에 지시 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,11 +30,11 @@ ms.locfileid: "62407174"
 
 ## <a name="remarks"></a>설명
 
-**transmit_as** C++ 특성에 동일한 기능을 합니다 [transmit_as](/windows/desktop/Midl/transmit-as) MIDL 특성입니다.
+**Transmit_as** C++ 특성은 [transmit_as](/windows/win32/Midl/transmit-as) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 사용 하 여 **transmit_as** 특성:
+다음 코드에서는 **transmit_as** 특성을 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_transmit_as.cpp

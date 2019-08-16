@@ -26,14 +26,14 @@ helpviewer_keywords:
 - _mbtowc_l function
 - mbtowc_l function
 ms.assetid: dfd1c8a7-e73a-4307-9353-53b70b45d4d1
-ms.openlocfilehash: c02d1a636db75b4a26891a93fa20327b7430443d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 13ac8ad139cc12310663fbd23a21a461cd207236
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156618"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499725"
 ---
-# <a name="mbtowc-mbtowcl"></a>mbtowc, _mbtowc_l
+# <a name="mbtowc-_mbtowc_l"></a>mbtowc, _mbtowc_l
 
 멀티바이트 문자를 해당되는 와이드 문자로 변환합니다.
 
@@ -56,7 +56,7 @@ int _mbtowc_l(
 ### <a name="parameters"></a>매개 변수
 
 *wchar*<br/>
-와이드 문자의 주소입니다 (형식 **wchar_t**).
+와이드 문자 ( **wchar_t**형식)의 주소입니다.
 
 *mbchar*<br/>
 바이트 시퀀스(멀티바이트 문자)의 주소입니다.
@@ -69,11 +69,11 @@ int _mbtowc_l(
 
 ## <a name="return-value"></a>반환 값
 
-하는 경우 **mbchar** 아닙니다 **NULL** 경우에 개체는 *mbchar* forms 유효한 멀티 바이트 문자를 가리키는 **mbtowc** 길이 반환 합니다. 멀티 바이트 문자의 바이트입니다. 하는 경우 *mbchar* 됩니다 **NULL** 또는 가리키는 개체가 와이드 문자 null 문자 (L'\ \0'), 함수가 0을 반환 합니다. 하는 경우 개체는 *mbchar* 가리키는 첫 번째 내에서 유효한 멀티 바이트 문자를 구성 하지 않는 *개수* 문자를-1을 반환 합니다.
+**Mbchar** 가 **NULL** 이 아니고 *mbchar* 이 가리키는 개체가 유효한 멀티 바이트 문자를 형성 하는 경우 **mbtowc** 는 멀티 바이트 문자의 길이 (바이트)를 반환 합니다. *Mbchar* 가 **NULL** 이거나 가리키는 개체가 와이드 문자 NULL 문자 (L ' \ 0 ') 이면 함수는 0을 반환 합니다. *Mbchar* 가 가리키는 개체가 첫 번째 *카운트* 문자 내에서 유효한 멀티 바이트 문자를 구성 하지 않는 경우-1을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **mbtowc** 변환 함수 *개수* 가리키는 바이트 *mbchar*이면 *mbchar* 아닙니다 **NULL**를 해당 와이드 문자로 합니다. **mbtowc** 결과 와이드 문자를 저장 *wchar* 하는 경우 *wchar* 아닙니다 **NULL**합니다. **mbtowc** 검사 하지 않습니다 둘 **MB_CUR_MAX** 바이트입니다. **mbtowc** 로캘 종속 동작에 현재 로캘을 사용 **_mbtowc_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**Mbtowc** 함수는 Mbchar가 **NULL**이 아닌 경우 *mbchar*가 가리키는 바이트 *수* 를 해당 하는 와이드 문자로 변환 합니다. **mbtowc** 은 Wchar가 **NULL**이 아닌 경우 결과 와이드 문자를 *wchar* 에 저장 합니다. **mbtowc** 는 **MB_CUR_MAX** 바이트를 초과 하 여 검사 하지 않습니다. **mbtowc** 는 로캘 종속 동작에 현재 로캘을 사용 합니다. **_mbtowc_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -147,7 +147,7 @@ Attempt to convert a NULL pointer to a wide character:
 ## <a name="see-also"></a>참고자료
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
-[MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
+[MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>
 [멀티바이트 문자 시퀀스 해석](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>

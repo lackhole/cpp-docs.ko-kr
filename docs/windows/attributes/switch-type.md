@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - switch_type attribute
 ms.assetid: e24544dc-b3bc-48ae-b249-f967db49271e
-ms.openlocfilehash: b461769d3d988efae0be7380e1e0112e3f3cf801
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3a4187c629238fa464a607c0b653f857fa44b6a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407122"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513957"
 ---
-# <a name="switchtype"></a>switch_type
+# <a name="switch_type"></a>switch_type
 
-Union 판별으로 사용 된 변수의 형식을 식별 합니다.
+Union 판별으로 사용 되는 변수의 형식을 식별 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,13 +28,13 @@ type
 ### <a name="parameters"></a>매개 변수
 
 *type*<br/>
-스위치 형식이 정수, 문자, 부울, 또는 열거형 형식 수 있습니다.
+스위치 형식은 정수, 문자, 부울 또는 열거형 형식일 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**switch_type** C++ 특성에 동일한 기능을 합니다 [switch_type](/windows/desktop/Midl/switch-type) MIDL 특성입니다.
+**Switch_type** C++ 특성은 [switch_type](/windows/win32/Midl/switch-type) MIDL 특성과 동일한 기능을 포함 합니다.
 
-C++특성을 지원 하지 않습니다 [공용 구조체를 캡슐화](/windows/desktop/Midl/encapsulated-unions)합니다. [공용 구조체 nonencapsulated](/windows/desktop/Midl/nonencapsulated-unions) 다음과 같은 형식 에서만 지원 됩니다.
+C++특성은 캡슐화 된 [공용 구조체](/windows/win32/Midl/encapsulated-unions)를 지원 하지 않습니다. [캡슐화 되지 않은 공용 구조체](/windows/win32/Midl/nonencapsulated-unions) 는 다음 형식 으로만 지원 됩니다.
 
 ```cpp
 // cpp_attr_ref_switch_type.cpp
@@ -55,7 +55,7 @@ struct SizedValue2 {
 
 ## <a name="example"></a>예제
 
-참조 된 [사례](case-cpp.md) 의 샘플 사용에 대 한 예제 **switch_type**합니다.
+**Switch_type**의 샘플 사용에 대 한 [사례](case-cpp.md) 예를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

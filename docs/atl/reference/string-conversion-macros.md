@@ -11,12 +11,12 @@ f1_keywords:
 - atlconv/ATL::DEVMODEW2A
 - atlconv/ATL::TEXTMETRICW2A
 ms.assetid: 2ff7c0b6-2bde-45fe-897f-6128e18e0c27
-ms.openlocfilehash: 6a84424de81eba2e6ab1e1baf60f567ebf2739ee
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: f7d9548fc5710e8d3d5d668dff230a60e7a291a1
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915502"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495185"
 ---
 # <a name="string-conversion-macros"></a>문자열 변환 매크로
 
@@ -28,7 +28,7 @@ ms.locfileid: "68915502"
 
 ##  <a name="devmode_and_textmetric_string_conversion_macros"></a>DEVMODE 및 TEXTMETRIC 문자열 변환 매크로
 
-이러한 매크로는 [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) 또는 [textmetric](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) 구조체의 복사본을 만들고 새 구조체 내의 문자열을 새 문자열 형식으로 변환 합니다. 매크로는 새 구조체의 스택에 메모리를 할당 하 고 새 구조체에 대 한 포인터를 반환 합니다.
+이러한 매크로는 [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) 또는 [textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) 구조체의 복사본을 만들고 새 구조체 내의 문자열을 새 문자열 형식으로 변환 합니다. 매크로는 새 구조체의 스택에 메모리를 할당 하 고 새 구조체에 대 한 포인터를 반환 합니다.
 
 ```cpp
 MACRONAME( address_of_structure )

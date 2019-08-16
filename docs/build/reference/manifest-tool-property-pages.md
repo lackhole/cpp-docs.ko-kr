@@ -24,16 +24,16 @@ f1_keywords:
 - VC.Project.VCManifestTool.UpdateFileHashesSearchPath
 - vc.project.AdditionalOptionsPage
 ms.assetid: f33499c4-7733-42d9-80e3-8a5018786965
-ms.openlocfilehash: adc821370201eeb83b6c6b4b875e5e62b0fa523f
-ms.sourcegitcommit: 720b74dddb1cdf4e570d55103158304ee1df81f8
+ms.openlocfilehash: c8413a28024361db82ca74858453202393987e60
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606434"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492693"
 ---
 # <a name="manifest-tool-property-pages"></a>매니페스트 도구 속성 페이지
 
-이러한 페이지를 사용 하 여 [mt.exe](https://msdn.microsoft.com/library/aa375649)에 대 한 일반 옵션을 지정할 수 있습니다. 이러한 페이지는 **프로젝트** > **속성** > **구성 속성** > **매니페스트 도구**아래에 있습니다.
+이러한 페이지를 사용 하 여 [mt.exe](/windows/win32/sbscs/mt-exe)에 대 한 일반 옵션을 지정할 수 있습니다. 이러한 페이지는 **프로젝트** > **속성** > **구성 속성** > **매니페스트 도구**아래에 있습니다.
 
 ## <a name="general-property-page"></a>일반 속성 페이지
 
@@ -59,7 +59,7 @@ ms.locfileid: "68606434"
 
 ###  <a name="input-resource-manifests"></a>입력 리소스 매니페스트
 
-**/inputresource** 옵션을 사용하여 매니페스트 도구에 입력할 RT_MANIFEST 형식의 리소스 전체 경로를 지정합니다. 경로 다음에 지정된 리소스 ID가 올 수 있습니다. 예를 들어:
+**/inputresource** 옵션을 사용하여 매니페스트 도구에 입력할 RT_MANIFEST 형식의 리소스 전체 경로를 지정합니다. 경로 다음에 지정된 리소스 ID가 올 수 있습니다. 예:
 
 `dll_with_manifest.dll;#1`
 
@@ -105,7 +105,7 @@ ms.locfileid: "68606434"
 
 ## <a name="isolated-com-property-page"></a>격리 COM 속성 페이지
 
-격리 된 COM에 대 한 자세한 내용은 [격리 된 응용 프로그램](/windows/desktop/SbsCs/isolated-applications) 및 [방법: COM 구성 요소](../how-to-build-isolated-applications-to-consume-com-components.md)를 사용 하는 격리 된 응용 프로그램을 빌드합니다.
+격리 된 COM에 대 한 자세한 내용은 [격리 된 응용 프로그램](/windows/win32/SbsCs/isolated-applications) 및 [방법: COM 구성 요소](../how-to-build-isolated-applications-to-consume-com-components.md)를 사용 하는 격리 된 응용 프로그램을 빌드합니다.
 
 ###  <a name="type-library-file"></a>형식 라이브러리 파일
 

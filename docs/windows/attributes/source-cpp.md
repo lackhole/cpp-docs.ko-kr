@@ -1,21 +1,21 @@
 ---
-title: 원본 (C++ COM 특성)
+title: source (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.source
 helpviewer_keywords:
 - source attribute
 ms.assetid: 1878d05d-7709-4e97-b114-c62f38f5140e
-ms.openlocfilehash: 699ea64de49a4383bc8fb62b2f3b2133d7c496c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 79614a345e6c07b03df351da93a847fe12e4b110
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407187"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514027"
 ---
 # <a name="source-c"></a>source(C++)
 
-클래스에서 연결 지점에 대 한 COM 개체의 소스 인터페이스를 지정합니다. 속성 또는 메서드, 개체 또는 VARIANT는 이벤트의 소스인 멤버 반환 됨을 나타냅니다.
+클래스에서 연결 지점의 COM 개체에 대 한 소스 인터페이스를 지정 합니다. 속성이 나 메서드에서는 멤버가 이벤트 소스인 개체 또는 변형을 반환 함을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,13 +26,13 @@ ms.locfileid: "62407187"
 ### <a name="parameters"></a>매개 변수
 
 *interfaces*<br/>
-하나 이상의 인터페이스 소스를 적용 하는 경우 지정 하는 특성 클래스입니다. 원본 속성 또는 메서드에 적용 될 때이 매개 변수 사용 되지 않습니다.
+원본 특성을 클래스에 적용할 때 지정 하는 하나 이상의 인터페이스입니다. 소스가 속성 또는 메서드에 적용 되는 경우에는이 매개 변수가 사용 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-**원본** C++ 특성에 동일한 기능을 합니다 [소스](/windows/desktop/Midl/source) MIDL 특성.
+**원본** C++ 특성은 [원본](/windows/win32/Midl/source) MIDL 특성과 동일한 기능을 포함 합니다.
 
-사용할 수는 [기본](default-cpp.md) 개체에 대 한 기본 소스 인터페이스를 지정 하는 특성입니다.
+[기본](default-cpp.md) 특성을 사용 하 여 개체에 대 한 기본 소스 인터페이스를 지정할 수 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -76,7 +76,7 @@ class NN : public b
 |-|-|
 |**적용 대상**|**class**, **struct**, **interface**|
 |**반복 가능**|아니요|
-|**필수 특성**|`coclass` (클래스 또는 구조체에 적용 됨) 하는 경우|
+|**필수 특성**|`coclass`(클래스 또는 구조체에 적용 된 경우)|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.

@@ -22,14 +22,14 @@ helpviewer_keywords:
 - _memccpy function
 - memccpy function
 ms.assetid: 9a2337df-6e85-4eba-b247-dd0532f45ddb
-ms.openlocfilehash: 5cd037974d8580b6ee90b1af736e8f2c6897fe8b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 704aab84ea3e39c91def1d4ac8b6d2d9d3650759
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156605"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499685"
 ---
-# <a name="memccpy"></a>_memccpy
+# <a name="_memccpy"></a>_memccpy
 
 버퍼에서 문자를 복사합니다.
 
@@ -60,13 +60,13 @@ void *_memccpy(
 
 ## <a name="return-value"></a>반환 값
 
-경우 문자 *c* 복사 **_memccpy** char에 대 한 포인터를 반환 합니다 *dest* 문자를 바로 다음에 오는 합니다. 하는 경우 *c* 복사 되지 반환 **NULL**합니다.
+*C* 문자를 복사 하면 **_memccpy** 는 문자 바로 다음에 오는 *dest* 의 char에 대 한 포인터를 반환 합니다. *C* 를 복사 하지 않으면 **NULL**이 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 
-**_memccpy** 함수는 0 개 이상의 문자를 복사 *src* 에 *dest*를 중지 하는 경우 문자 *c* 복사 되었습니다 때나 *개수* 문자가 복사 된 경우 먼저 도달 합니다.
+**_Memccpy** 함수는 *src* 의 0 개 이상의 문자를 *dest*로 복사 하 여 *c* 문자를 복사 하거나 *count* 문자가 복사 될 때를 중지 합니다.
 
-**보안 정보** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+**보안 정보** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

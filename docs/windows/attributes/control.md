@@ -1,21 +1,21 @@
 ---
-title: 컨트롤 (C++ COM 특성)
+title: control (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.control
 helpviewer_keywords:
 - Control attribute
 ms.assetid: 3d046bb2-4afe-4cb8-a762-233b296e1975
-ms.openlocfilehash: 223acf774d1cc90d84aed2d0d0c8cb59fc778fa1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 12cf98b49b43b7a67834ea5401994ecdc749aa3b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148278"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501772"
 ---
 # <a name="control"></a>컨트롤
 
-사용자 정의 형식 컨트롤을 지정 합니다.
+사용자 정의 형식이 컨트롤 임을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,7 +25,7 @@ ms.locfileid: "62148278"
 
 ## <a name="remarks"></a>설명
 
-**제어** 특성을 의미 합니다 [coclass](coclass.md) 특성입니다. **컨트롤** C++ 특성에 동일한 기능을 합니다 [컨트롤](/windows/desktop/Midl/control) MIDL 특성입니다.
+**컨트롤** 특성은 [coclass](coclass.md) 특성을 의미 합니다. **컨트롤** C++ 특성에는 [제어](/windows/win32/Midl/control) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 

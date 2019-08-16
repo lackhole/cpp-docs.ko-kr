@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - progid attribute
 ms.assetid: afcf559c-e432-481f-aa9a-bd3bb72c02a8
-ms.openlocfilehash: 5b0c688ad4d9b607cc1f5fb6b1c6d536a1c7888e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d529d7362dc62207cfd72576159f560a3e04c221
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407434"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514242"
 ---
 # <a name="progid"></a>progid
 
-COM 개체의 ProgID를 지정합니다.
+COM 개체의 ProgID를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,23 +28,23 @@ COM 개체의 ProgID를 지정합니다.
 *name*<br/>
 개체를 나타내는 ProgID입니다.
 
-Progid는 COM/ActiveX 개체를 식별 하는 데 클래스 식별자 (CLSID)의 알기 쉬운 버전을 제공 합니다.
+Progid는 COM/ActiveX 개체를 식별 하는 데 사용 되는 CLSID (클래스 식별자)의 사람이 읽을 수 있는 버전입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **progid** C++ 특성을 사용 하면 COM 개체의 ProgID를 지정 합니다. 형식은 ProgID *name1.name2.version*합니다. 지정 하지 않으면 경우는 *버전* ProgID, 기본 버전은 1입니다. 지정 하지 않는 경우 *name1.name2*, 기본 이름인 *classname.classname*합니다. 지정 하지 않는 경우 **progid** 지정 하면 `vi_progid`, *name1.name2* 에서 가져온 `vi_progid` (다음 일련 번호) 및 버전 추가 됩니다.
+**Progid** C++ 특성을 사용 하면 COM 개체에 대해 progid를 지정할 수 있습니다. ProgID의 형식은 name1. *name2. 버전*입니다. ProgID에 대 한 *버전* 을 지정 하지 않으면 기본 버전은 1입니다. *Name1. name2*를 지정 하지 않는 경우 기본 이름은 *classname*입니다. **Progid** 를 지정 하지 않고를 지정 `vi_progid`하는 경우에는 `vi_progid` name1이 사용 되 고 (다음 일련 번호) 버전이 추가 됩니다.
 
-특성 블록을 사용 하는 경우 **progid** 도 사용 하지 않습니다 **uuid**, 컴파일러는 경우를 확인 하려면 레지스트리를 확인 하는 **uuid** 지정 된 존재 **progid** . 하는 경우 **progid** 지정 하지 않으면 버전 (및 coclass 이름에는 coclass를 만드는 경우) 데 사용할 생성을 **progid**합니다.
+**Progid** 를 사용 하는 특성 블록에서 **uuid**를 사용 하지 않는 경우 컴파일러는 레지스트리를 확인 하 여 지정 된 **progid**에 대해 **uuid** 가 있는지 확인 합니다. **Progid** 를 지정 하지 않으면 버전 (coclass를 만드는 경우 coclass 이름)이 **progid**를 생성 하는 데 사용 됩니다.
 
-**progid** 의미 합니다 `coclass` 지정 하는 경우, 특성 **progid**, 다릅니다 지정 하는 것을 `coclass` 및 **progid** 특성입니다.
+**progid** 는 `coclass` 특성을 암시 합니다. 즉, **progid**를 지정 하는 경우 `coclass` 및 **progid** 특성을 지정 하는 것과 같습니다.
 
-합니다 **progid** 특성을 사용 하면 지정 된 이름으로 자동으로 등록 하는 클래스입니다. 생성된 된.idl 파일 표시 되지 것입니다 합니다 **progid** 값입니다.
+**Progid** 특성을 지정 하면 지정 된 이름으로 클래스가 자동으로 등록 됩니다. 생성 된 .idl 파일에는 **progid** 값이 표시 되지 않습니다.
 
-ATL을 사용 하는 프로젝트 내에서이 특성을 사용 하면 특성의 동작을 변경 합니다. 위 동작 외에도이 특성을 사용 하 여 지정 된 정보는를 `GetProgID` 함수에 의해 삽입 된 `coclass` 특성입니다. 자세한 내용은 참조는 [coclass](coclass.md) 특성입니다.
+ATL을 사용 하는 프로젝트 내에서이 특성을 사용 하는 경우 특성의 동작이 변경 됩니다. 위의 동작 외에도이 특성을 사용 하 여 지정 된 정보는 `GetProgID` 함수에서 `coclass` 특성에 의해 삽입 됩니다. 자세한 내용은 [coclass](coclass.md) 특성을 참조 하세요.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [coclass](coclass.md) 의 샘플 사용에 대 한 **progid**합니다.
+**Progid**의 샘플 사용에 대해서는 [coclass](coclass.md) 의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -64,4 +64,4 @@ ATL을 사용 하는 프로젝트 내에서이 특성을 사용 하면 특성의
 [IDL 특성](idl-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
-[ProgID 키](/windows/desktop/com/-progid--key)
+[ProgID 키](/windows/win32/com/-progid--key)

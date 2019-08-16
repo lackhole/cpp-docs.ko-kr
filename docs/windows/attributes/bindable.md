@@ -1,17 +1,17 @@
 ---
-title: 바인딩 가능한 (C++ COM 특성)
+title: 바인딩 가능C++ (COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.bindable
 helpviewer_keywords:
 - bindable attribute
 ms.assetid: a2360f92-927b-4af8-98cc-6eca7f4ec954
-ms.openlocfilehash: 07f446b946d6703c4a8b9ae59ae0edd8172c6879
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a74531a40bcacdae4ef98c292884e7a43fa82fe
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148395"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501834"
 ---
 # <a name="bindable"></a>bindable
 
@@ -25,19 +25,19 @@ ms.locfileid: "62148395"
 
 ## <a name="remarks"></a>설명
 
-**바인딩할 수 있는** C++ 특성이 동일한 기능을 합니다 [바인딩 가능한](/windows/desktop/Midl/bindable) MIDL 특성. 사용 하 여 정의 된 속성에 사용할 수 있습니다 합니다 [propget](propget.md)를 [propput](propput.md), 또는 [propputref](propputref.md) 특성 또는 정의할 수도 있습니다 수동으로 바인딩할 수 있는 메서드.
+**바인딩** C++ 가능한 특성에는 [바인딩](/windows/win32/Midl/bindable) 가능한 MIDL 특성과 동일한 기능이 있습니다. [Propget](propget.md), [propput](propput.md)또는 [propputref](propputref.md) 특성으로 정의 된 속성에 사용할 수도 있고, 바인딩 가능한 메서드를 수동으로 정의할 수도 있습니다.
 
-MFC 샘플은 다음의 사용을 보여 **바인딩 가능한**:
+다음 MFC 샘플에서는 **바인딩**가능를 사용 하는 방법을 보여 줍니다.
 
 - [컨트롤 샘플: MFC 기반 ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
 - [CIRC 샘플: ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
-- [TESTHELP 샘플: 도구 설명 및 도움말을 사용 하 여 ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
+- [TESTHELP 샘플: 도구 설명 및 도움말이 있는 ActiveX 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
 ## <a name="example"></a>예제
 
-다음 코드를 사용 하는 방법을 보여 줍니다 **바인딩 가능한** 속성:
+다음 코드에서는 속성에 **바인딩** 가능한를 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_bindable.cpp

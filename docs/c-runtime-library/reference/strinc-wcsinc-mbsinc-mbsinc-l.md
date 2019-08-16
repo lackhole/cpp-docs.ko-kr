@@ -40,19 +40,19 @@ helpviewer_keywords:
 - _tcsinc function
 - tcsinc function
 ms.assetid: 54685943-8e2c-45e9-a559-2d94930dc6b4
-ms.openlocfilehash: dae14fc7b66b9be4e1016c5409a93cd172691fed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 48bc7caa5dbc2d2e7eec847bfa5135d13bcd83c0
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365212"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499465"
 ---
-# <a name="strinc-wcsinc-mbsinc-mbsincl"></a>_strinc, _wcsinc, _mbsinc, _mbsinc_l
+# <a name="_strinc-_wcsinc-_mbsinc-_mbsinc_l"></a>_strinc, _wcsinc, _mbsinc, _mbsinc_l
 
 문자열 포인터를 한 문자씩 이동합니다.
 
 > [!IMPORTANT]
-> **_mbsinc** 하 고 **_mbsinc_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsinc** 및 **_mbsinc_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -84,18 +84,18 @@ unsigned char *_mbsinc_l(
 
 ## <a name="return-value"></a>반환 값
 
-바로 뒤에 오는 문자에 대 한 포인터를 반환 이러한 각 루틴 *현재*합니다.
+이러한 각 루틴은 *현재*바로 뒤에 오는 문자에 대 한 포인터를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_mbsinc** 바로 뒤에 오는 멀티 바이트 문자의 첫 번째 바이트에 대 한 포인터를 반환 *현재*합니다. **_mbsinc** 에 따라 멀티 바이트 문자 시퀀스를 인식 합니다 [멀티 바이트 코드 페이지](../../c-runtime-library/code-pages.md) 는 현재 사용 중인; **_mbsinc_l** 대신 전달 된 로캘 매개 변수를 사용 하 여 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_Mbsinc** 함수는 *현재*바로 뒤에 오는 멀티 바이트 문자의 첫 번째 바이트에 대 한 포인터를 반환 합니다. **_mbsinc** 는 현재 사용 중인 [멀티 바이트 코드 페이지](../../c-runtime-library/code-pages.md) 에 따라 멀티 바이트 문자 시퀀스를 인식 합니다. **_mbsinc_l** 은 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-제네릭 텍스트 함수인 **_tcsinc**매핑됩니다 Tchar.h에 정의 된 **_mbsinc** 하는 경우 **_MBCS** 정의한 또는 **_wcsinc** 경우 **_UNICODE** 정의 되어 있습니다. 그렇지 않으면 **_tcsinc** 매핑됩니다 **_strinc**합니다. **_strinc** 하 고 **_wcsinc** 싱글바이트 문자 및 와이드 문자 버전입니다 **_mbsinc**합니다. **_strinc** 하 고 **_wcsinc** 이러한 매핑을 위해서만 제공 되 고 그렇지 않으면 사용할 수 없습니다. 자세한 내용은 [일반 텍스트 매핑 사용](../../c-runtime-library/using-generic-text-mappings.md) 및 [일반 텍스트 매핑](../../c-runtime-library/generic-text-mappings.md)을 참조하세요.
+Tchar.h에 정의 된 일반 텍스트 함수 **_tcsinc**는 **_mbcs** 가 정의 된 경우 **_mbsinc** 에, **_UNICODE** 가 정의 된 경우 **_wcsinc** 로 매핑됩니다. 그렇지 않으면 **_tcsinc** 는 **_strinc**에 매핑됩니다. **_strinc** 및 **_wcsinc** 는 **_mbsinc**의 싱글바이트 문자 및 와이드 문자 버전입니다. **_strinc** 및 **_wcsinc** 는이 매핑에 대해서만 제공 되며 그렇지 않으면 사용 하면 안 됩니다. 자세한 내용은 [일반 텍스트 매핑 사용](../../c-runtime-library/using-generic-text-mappings.md) 및 [일반 텍스트 매핑](../../c-runtime-library/generic-text-mappings.md)을 참조하세요.
 
-하는 경우 *현재* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우이 함수를 반환 합니다 **EINVAL** 집합과 **errno** 하 **EINVAL**합니다.
+*Current* 가 **NULL**이면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 > [!IMPORTANT]
-> 이러한 함수는 버퍼 오버런 위협에 노출될 수 있습니다. 버퍼 오버런은 불필요한 권한 상승을 발생시킬 수 있으므로 시스템 공격에 사용될 수 있습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> 이러한 함수는 버퍼 오버런 위협에 노출될 수 있습니다. 버퍼 오버런은 불필요한 권한 상승을 발생시킬 수 있으므로 시스템 공격에 사용될 수 있습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

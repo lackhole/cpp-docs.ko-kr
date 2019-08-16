@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /bigobj compiler option [C++]
 - bigobj compiler option [C++]
 ms.assetid: ba94d602-4015-4a8d-86ec-49241ab74c12
-ms.openlocfilehash: 46399dc0c1ff552b4fc963b686ac6aa6df8b6f71
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 30c02c72496e3bb91da3b39e1870f1dc5a2c040a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272977"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493109"
 ---
 # <a name="bigobj-increase-number-of-sections-in-obj-file"></a>/bigobj(.Obj 파일의 섹션 수 늘리기)
 
@@ -29,13 +29,13 @@ ms.locfileid: "62272977"
 
 대부분의 모듈은 65,279개 이상의 섹션을 포함하는 .obj 파일을 생성하지 않습니다. 그러나 시스템에서 생성된 코드나 템플릿 라이브러리를 많이 사용하는 코드는 더 많은 섹션을 포함할 수 있는.obj 파일이 필요할 수 있습니다. **/bigobj**는 시스템에서 생성된 XAML 코드에 대량의 헤더가 포함되어 있으므로 유니버설 Windows 플랫폼(UWP) 프로젝트에서 기본적으로 사용 설정됩니다. UWP 앱 프로젝트에서 이 옵션을 사용하지 않으면 코드 컴파일 시 컴파일러가 C1128 오류를 생성할 수 있습니다.
 
-PE-COFF 개체 파일 형식에 대한 자세한 내용은 Windows 설명서의 [PE 형식](/windows/desktop/debug/pe-format)을 참조하세요.
+PE-COFF 개체 파일 형식에 대한 자세한 내용은 Windows 설명서의 [PE 형식](/windows/win32/debug/pe-format)을 참조하세요.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. **구성 속성** > **C/C++** > **명령줄** 속성 페이지를 선택합니다.
+1. **구성 속성** > **C/C++**  > **명령줄** 속성 페이지를 선택합니다.
 
 1. **추가 옵션** 상자에 **/bigobj** 컴파일러 옵션을 입력하세요.
 

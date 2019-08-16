@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - retval attribute
 ms.assetid: bfa16f08-157d-4eea-afde-1232c54b8501
-ms.openlocfilehash: 9f5ad86a289f8904278a58636e66809ae0edd55b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2a2865c1eda229f1a2fcd457c22119b2908c1caa
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407408"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514053"
 ---
 # <a name="retval"></a>retval
 
@@ -25,13 +25,13 @@ ms.locfileid: "62407408"
 
 ## <a name="remarks"></a>설명
 
-**retval** C++ 특성에 동일한 기능을 합니다 [retval](/windows/desktop/Midl/retval) MIDL 특성입니다.
+**Retval** C++ 특성에는 [retval](/windows/win32/Midl/retval) MIDL 특성과 동일한 기능이 있습니다.
 
-**retval** 함수 선언에서 마지막 인수에 표시 되어야 합니다.
+**retval** 은 함수 선언의 마지막 인수에 표시 되어야 합니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [bindable](bindable.md) 의 샘플 사용에 대 한 **retval**합니다.
+**Retval**의 샘플 사용에 대 한 [바인딩](bindable.md) 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -39,7 +39,7 @@ ms.locfileid: "62407408"
 
 |||
 |-|-|
-|**적용 대상**|인터페이스 매개 변수를 인터페이스 메서드|
+|**적용 대상**|인터페이스 매개 변수, 인터페이스 메서드|
 |**반복 가능**|아니요|
 |**필수 특성**|**out**|
 |**잘못된 특성**|**in**|

@@ -43,14 +43,14 @@ helpviewer_keywords:
 - vtcprintf_s function
 - formatted text [C++]
 ms.assetid: 5a46d45a-30db-45df-9850-455cbdac5636
-ms.openlocfilehash: e27018d02c8fb77b0e2a1c02164d3b6d112448ab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ccd346141db9f4974ee5f9300792260bf2a8ec72
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365353"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499321"
 ---
-# <a name="vcprintfs-vcprintfsl-vcwprintfs-vcwprintfsl"></a>_vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
+# <a name="_vcprintf_s-_vcprintf_s_l-_vcwprintf_s-_vcwprintf_s_l"></a>_vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
 
 인수 목록에 대한 포인터를 사용하여 콘솔에 형식이 지정된 출력을 씁니다. 이러한 버전의 [_vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l](vcprintf-vcprintf-l-vcwprintf-vcwprintf-l.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 향상된 보안 기능이 포함되어 있습니다.
 
@@ -97,16 +97,16 @@ int _vcwprintf_s_l(
 
 기록된 문자 수 또는 출력 오류가 발생하는 경우 음수 값입니다.
 
-이러한 함수의 보안 수준이 낮은 버전과 같은 경우 *형식* 가 null 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 또한 이러한 함수의 보안 수준이 낮은 버전과 달리 경우 *형식* 를 올바른 형식으로 지정 하지 않습니다 잘못 된 매개 변수 예외가 생성 됩니다. 이러한 함수는 오류 코드가 반환 하 고 집합을 계속 하려면 실행이 허용 하는 경우 **errno** 해당 오류 코드입니다. 기본 오류 코드는 **EINVAL** 더 구체적인 값을 적용 하지 않는 경우.
+이러한 함수의 보안 수준이 낮은 버전과 마찬가지로 *format* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 또한 이러한 함수의 보안 수준이 낮은 버전과 달리 *format* 에서 유효한 형식을 지정 하지 않으면 잘못 된 매개 변수 예외가 생성 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 오류 코드를 반환 하 고 **errno** 를 해당 오류 코드로 설정 합니다. 보다 구체적인 값이 적용 되지 않는 경우 기본 오류 코드는 **EINVAL** 입니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 각각 인수 목록에 대한 포인터를 가져오며 지정된 데이터의 형식을 지정하고 콘솔에 지정된 데이터를 씁니다. **_vcwprintf_s** 의 와이드 문자 버전이 **_vcprintf_s**합니다. 이 함수는 인수로 와이드 문자열을 사용합니다.
+이러한 함수는 각각 인수 목록에 대한 포인터를 가져오며 지정된 데이터의 형식을 지정하고 콘솔에 지정된 데이터를 씁니다. **_vcwprintf_s** 는 **_vcprintf_s**의 와이드 문자 버전입니다. 이 함수는 인수로 와이드 문자열을 사용합니다.
 
-접미사가 있는 이러한 함수 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 > [!IMPORTANT]
-> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

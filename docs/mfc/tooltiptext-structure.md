@@ -7,12 +7,12 @@ helpviewer_keywords:
 - TOOLTIPTEXT structure [MFC]
 - tool tips [MFC], notifications
 ms.assetid: 547591bf-80f5-400e-a2a7-0708cfffbb5d
-ms.openlocfilehash: 2eb899e66acbadbe45aae2c8adbb356bf4730191
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 80b95225a277a7985c30e5ea453597b06e501753
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915243"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513315"
 ---
 # <a name="tooltiptext-structure"></a>TOOLTIPTEXT 구조체
 
@@ -31,7 +31,7 @@ typedef struct {
 ```
 
 *hdr*<br/>
-텍스트를 필요로 하는 도구를 식별 합니다. 이 구조체의 유일한 멤버는 컨트롤의 명령 ID입니다. 컨트롤의 명령 ID는 구문을 `hdr.idFrom`사용 하 여 액세스 되는 **NMHDR** 구조의 *idfrom* 멤버에 있습니다. **NMHDR** 구조체의 멤버에 대 한 자세한 내용은 [NMHDR](/windows/desktop/api/richedit/ns-richedit-nmhdr) 를 참조 하세요.
+텍스트를 필요로 하는 도구를 식별 합니다. 이 구조체의 유일한 멤버는 컨트롤의 명령 ID입니다. 컨트롤의 명령 ID는 구문을 `hdr.idFrom`사용 하 여 액세스 되는 **NMHDR** 구조의 *idfrom* 멤버에 있습니다. **NMHDR** 구조체의 멤버에 대 한 자세한 내용은 [NMHDR](/windows/win32/api/richedit/ns-richedit-nmhdr) 를 참조 하세요.
 
 *lpszText*<br/>
 도구의 텍스트를 받을 문자열의 주소입니다.

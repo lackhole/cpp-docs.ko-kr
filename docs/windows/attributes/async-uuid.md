@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - async_uuid attribute
 ms.assetid: 235cb0d7-be58-4dd9-983c-e2a21bbc42c6
-ms.openlocfilehash: 4c2bca9165d8b23f8cfa4f0f5523c882fd2f52bf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 70e73a6286a4b6adaba20b5a35dc16d8389b1948
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364976"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501873"
 ---
-# <a name="asyncuuid"></a>async_uuid
+# <a name="async_uuid"></a>async_uuid
 
-MIDL 컴파일러에 지시 합니다 COM 인터페이스의 동기 및 비동기 버전을 정의 하는 UUID를 지정 합니다.
+COM 인터페이스의 동기 버전과 비동기 버전을 모두 정의 하도록 MIDL 컴파일러에 지시 하는 UUID를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,7 +30,7 @@ MIDL 컴파일러에 지시 합니다 COM 인터페이스의 동기 및 비동�
 
 ## <a name="remarks"></a>설명
 
-**async_uuid** C++ 특성에 동일한 기능을 합니다 [async_uuid](/windows/desktop/Midl/async-uuid) MIDL 특성입니다.
+**Async_uuid** C++ 특성은 [async_uuid](/windows/win32/Midl/async-uuid) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 

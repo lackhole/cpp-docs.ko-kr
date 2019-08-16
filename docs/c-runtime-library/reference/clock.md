@@ -25,12 +25,12 @@ helpviewer_keywords:
 - processor time used
 - calculating processor time used
 ms.assetid: 3e1853dd-498f-49ba-b06a-f2315f20904e
-ms.openlocfilehash: 4b58b33b533250447cf964134de9869bddee4498
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2fabd18fb28cb5ea13dfb156ea21e8743c2afd49
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347472"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500279"
 ---
 # <a name="clock"></a>clock
 
@@ -44,13 +44,13 @@ clock_t clock( void );
 
 ## <a name="return-value"></a>반환 값
 
-프로세스의 시작 시 CRT 초기화 이후 경과 된 시간 단위의 **CLOCKS_PER_SEC** 초당 단위입니다. 경과 된 시간을 사용할 수 없거나으로 기록 될 수 있는 최대 양수 시간을 초과 하는 경우는 **clock_t** 형식 함수 값을 반환 합니다. `(clock_t)(-1)`합니다.
+프로세스 시작 시 CRT 초기화 이후 경과 된 시간으로, 초당 **CLOCKS_PER_SEC** 단위로 측정 됩니다. 경과 된 시간을 사용할 수 없거나 **clock_t** 형식으로 기록 될 수 있는 최대 양수 시간을 초과 하는 경우 함수는 값 `(clock_t)(-1)`을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **클록** 함수에서 프로세스 시작 중 CRT 초기화 이후 이후 경과 된 벽 시계 시간을 알려 줍니다. 이 함수는 ISO C를 엄격하게 준수하지는 않으며, 순 CPU 시간을 반환 값으로 지정합니다. CPU 시간을 가져오려면 Win32 [GetProcessTimes](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocesstimes) 함수를 사용합니다. 경과 된 시간 (초)을 확인 하려면 반환 하는 값을 나누는 합니다 **클록** 매크로 의해 함수 **CLOCKS_PER_SEC**합니다.
+**Clock** 함수는 프로세스를 시작 하는 동안 CRT 초기화 이후 경과 된 벽 시계 시간을 알려 줍니다. 이 함수는 ISO C를 엄격하게 준수하지는 않으며, 순 CPU 시간을 반환 값으로 지정합니다. CPU 시간을 가져오려면 Win32 [GetProcessTimes](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getprocesstimes) 함수를 사용합니다. 경과 된 시간 (초)을 확인 하려면 **clock** 함수에서 반환 된 값을 매크로 **CLOCKS_PER_SEC**으로 나눕니다.
 
-충분 한 시간을 지정 된 값을 반환한 **클록** 의 최대 양수 값을 초과할 수 있습니다 **clock_t**합니다. 경우 프로세스가 더 길게 실행에서 반환 된 값 **클록** 항상 `(clock_t)(-1)`ISO C99 표준 (7.23.2.1) 및 ISO C11 표준 (7.27.2.1)에 지정 된 대로 합니다. Microsoft 구현 **clock_t** 으로 **긴**, 부호 있는 32 비트 정수를 하며 **CLOCKS_PER_SEC** 매크로가 1000으로 정의 됩니다. 이렇게 하면 최대 **클록** 함수 이렇게 하면 2147483.647 초 또는 약 24.8 일 반환 값입니다. 반환 된 값에 의존 하지 마십시오 **클록** 이 기간 보다 오랫동안 실행 된 프로세스에 있습니다. 64 비트를 사용할 수 있습니다 [시간](time-time32-time64.md) 함수나는 Windows [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904) 함수 수년간의 레코드 프로세스 경과 시간입니다.
+시간이 충분 하면 **clock** 에서 반환 하는 값이 **clock_t**의 최대 양수 값을 초과할 수 있습니다. 프로세스가 더 이상 실행 되 면 C99 표준 (7.23.2.1) 및 iso C11 `(clock_t)(-1)`표준 (7.27.2.1)에 지정 된 대로 clock에서 반환 된 값은 항상입니다. Microsoft에서는 **clock_t** 를 **길고**부호 있는 32 비트 정수로 구현 하며 **CLOCKS_PER_SEC** 매크로는 1000로 정의 됩니다. 최대 **클록** 함수 반환 값인 2147483.647 초 또는 약 24.8 일을 제공 합니다. 이 시간 보다 오래 실행 된 프로세스에서 **clock** 이 반환 하는 값을 사용 하지 마십시오. 64 비트 [시간](time-time32-time64.md) 함수 또는 Windows [queryperformancecounter](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) 함수를 사용 하 여 많은 연도의 프로세스 경과 시간을 기록할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 

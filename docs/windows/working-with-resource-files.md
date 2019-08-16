@@ -1,51 +1,51 @@
 ---
-title: Working with Resource Files (C++)
+title: 리소스 파일 작업 (C++)
 ms.date: 02/14/2019
 helpviewer_keywords:
 - resources [C++], about resources
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-ms.openlocfilehash: 09a85231f871ef1a21b2f2adb309d94bb4a29e1a
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: d9f6c6b9798bc708bb5334eafc0585471f25c059
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504512"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513582"
 ---
 # <a name="working-with-resource-files"></a>리소스 파일 작업
 
 > [!WARNING]
 > 이 섹션의 내용은 C++로 작성된 Windows 데스크톱 애플리케이션에 적용됩니다.
 >
-> 작성 하는 유니버설 Windows 플랫폼 앱에서 리소스에 대 한 자세한 C++를 참조 하세요 [앱 리소스 정의](/windows/uwp/app-resources/), 또는 리소스를 추가 하는 방법 C++(관리) CLI 프로젝트 참조 [데스크톱앱의리소스](/dotnet/framework/resources/index) .NET Framework Developer's Guide에 있습니다.
+> 에서 C++작성 된 유니버설 Windows 플랫폼 앱의 리소스에 대 한 자세한 내용은 [앱 리소스 정의](/windows/uwp/app-resources/)또는/cli (관리) C++프로젝트에 리소스 추가를 참조 하세요. .NET Framework 개발자의 [데스크톱 앱에서 리소스](/dotnet/framework/resources/index) 를 참조 하세요. 도움이.
 
-리소스와 같은 다양 한 범위의 요소를 구성할 수 있습니다.
+리소스는 다음과 같은 다양 한 요소로 구성 될 수 있습니다.
 
-- 비트맵, 아이콘 또는 커서와 같은 사용자에 게 정보를 제공 하는 인터페이스 요소입니다.
-- 데이터 및 응용 프로그램을 포함 하는 사용자 지정 리소스 필요 합니다.
-- 설치 Api에서 사용 되는 버전 리소스입니다.
-- 메뉴 및 대화 상자 리소스입니다.
+- 비트맵, 아이콘 또는 커서와 같은 정보를 사용자에 게 제공 하는 인터페이스 요소입니다.
+- 데이터 및 응용 프로그램 요구 사항을 포함 하는 사용자 지정 리소스.
+- 설치 Api에서 사용 하는 버전 리소스입니다.
+- 메뉴 및 대화 상자 리소스
 
 프로젝트에 새 리소스를 추가하고 적절한 리소스 편집기를 사용하여 리소스를 수정할 수 있습니다. 대부분의 Visual C++ 마법사에서는 프로젝트에 대해 .rc 파일을 자동으로 생성합니다.
 
 > [!NOTE]
-> 합니다 **리소스 편집기** 하 고 **리소스 뷰** Express 버전에서는 사용할 수 없습니다.
+> Express 버전에서는 **리소스 편집기** 와 **리소스 뷰** 사용할 수 없습니다.
 
-관리 되는 프로젝트에 리소스 파일을 수동으로 추가, 참조 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)합니다. 이 문서에서는 리소스에 액세스, 정적 리소스 표시, 속성에 리소스 문자열을 할당 하는 방법을 포함 합니다.
+관리 되는 프로젝트에 리소스 파일을 수동으로 추가 하려면 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조 하세요. 이 문서에는 리소스 액세스, 정적 리소스 표시, 속성에 리소스 문자열 할당 등의 방법이 포함 되어 있습니다.
 
-전역화 및 지역화 관리 되는 앱의 리소스를 참조 하세요 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)합니다.
+관리 되는 앱에서 리소스를 세계화 및 지역화 하려면 [.NET Framework 응용 프로그램 전역화 및 지역화](/dotnet/standard/globalization-localization/index)를 참조 하세요.
 
 ## <a name="in-this-section"></a>섹션 내용
 
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
-리소스 파일 및 Windows 데스크톱 응용 프로그램에서 사용 하는 방법에 대해 설명 합니다. 또한 리소스 파일을 사용 하는 방법을 설명 하는 문서에 대 한 링크를 제공 합니다.
+리소스 파일 및 Windows 데스크톱 응용 프로그램에서 리소스 파일을 사용 하는 방법에 대해 설명 합니다. 또한 리소스 파일 사용 방법을 설명 하는 문서에 대 한 링크도 제공 합니다.
 
 [리소스 식별자(기호)](../windows/symbols-resource-identifiers.md)<br/>
 심볼을 설명하고, **리소스 심볼** 대화 상자를 사용하여 프로젝트의 심볼을 관리하는 방법에 대한 정보를 제공합니다.
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
-각 편집기를 사용 하 여 수정할 수 있습니다 하는 리소스 유형 및 Visual Studio에서 제공 하는 리소스 편집기를 설명 합니다. 또한 각 편집기를 사용 하 여 자세한 정보 링크를 제공 합니다.
+Visual Studio에서 제공 하는 리소스 편집기와 각 편집기로 수정할 수 있는 리소스 형식을 설명 합니다. 또한 각 편집기를 사용 하는 방법에 대 한 자세한 정보 링크를 제공 합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
@@ -58,4 +58,4 @@ Visual C++ 설명서에 대한 링크를 제공합니다.
 ## <a name="see-also"></a>참고자료
 
 [Windows 데스크톱 응용 프로그램](../windows/windows-desktop-applications-cpp.md)<br/>
-[메뉴 및 기타 리소스](/windows/desktop/menurc/resources)
+[메뉴 및 기타 리소스](/windows/win32/menurc/resources)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - aggregation [C++]
 - aggregate objects [C++]
 ms.assetid: 7125bb8e-b269-4b50-9bba-295b467a54cc
-ms.openlocfilehash: 2eec7a801f9fe16bc48fc888d10ce413ec7e79db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 288af427bd6a8d9baf572dfad8e4a25452694ad9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223508"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491978"
 ---
 # <a name="aggregation"></a>통합
 
@@ -23,4 +23,4 @@ ms.locfileid: "62223508"
 ## <a name="see-also"></a>참고자료
 
 [COM 소개](../atl/introduction-to-com.md)<br/>
-[개체 다시 사용](/windows/desktop/com/reusing-objects)
+[개체 재사용](/windows/win32/com/reusing-objects)

@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSacl class
 ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05
-ms.openlocfilehash: b75dc4110b785f0ab1f55ba5c31df7d3fc6fbd37
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: c4bbdfccb2d6d8b167c537b7ae4df57c89438479
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915751"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496509"
 ---
 # <a name="csacl-class"></a>CSacl 클래스
 
@@ -43,7 +43,7 @@ class CSacl : public CAcl
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CSacl::AddAuditAce](#addauditace)|`CSacl` 개체에 감사 ACE (액세스 제어 항목)를 추가 합니다.|
 |[CSacl::GetAceCount](#getacecount)|`CSacl` 개체의 ace (액세스 제어 항목) 수를 반환 합니다.|
@@ -52,7 +52,7 @@ class CSacl : public CAcl
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CSacl::operator =](#operator_eq)|대입 연산자입니다.|
 
@@ -64,7 +64,7 @@ SACL에는 도메인 컨트롤러의 보안 이벤트 로그에 감사 레코드
 
 제공 된 클래스 메서드를 사용 하 여 `SACL` 개체에서 ace를 추가, 제거, 생성 및 삭제 합니다. 참고 항목 [getsacl](security-global-functions.md#atlgetsacl) 및 [atlsetsacl](security-global-functions.md#atlsetsacl)
 
-Windows의 액세스 제어 모델에 대 한 소개는 Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) 를 참조 하세요.
+Windows의 액세스 제어 모델에 대 한 소개는 Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) 를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -129,7 +129,7 @@ ACE가 `CSacl` 개체에 추가 되 면 TRUE를 반환 하 고, 실패 하면 FA
 
 개체 `CSacl` 에는 보안 이벤트 로그에서 감사 레코드를 생성 하는 액세스 시도 유형을 지정 하는 ace (액세스 제어 항목)가 포함 되어 있습니다. 이 메서드는 이러한 ACE를 `CSacl` 개체에 추가 합니다.
 
-*AceFlags* 매개 변수에 설정할 수 있는 다양 한 플래그에 대 한 설명은 [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) 를 참조 하세요.
+*AceFlags* 매개 변수에 설정할 수 있는 다양 한 플래그에 대 한 설명은 [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) 를 참조 하세요.
 
 ##  <a name="csacl"></a>  CSacl::CSacl
 
@@ -222,7 +222,7 @@ void RemoveAllAces() throw();
 ## <a name="see-also"></a>참고자료
 
 [CAcl 클래스](../../atl/reference/cacl-class.md)<br/>
-[ACLs](/windows/desktop/SecAuthZ/access-control-lists)<br/>
-[에이스](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[ACLs](/windows/win32/SecAuthZ/access-control-lists)<br/>
+[에이스](/windows/win32/SecAuthZ/access-control-entries)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

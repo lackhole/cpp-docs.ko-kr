@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - out attribute
 ms.assetid: 5051b1bf-4949-4bf1-b82f-35e14f0f244b
-ms.openlocfilehash: 7020bd6cfcf8bcdbfb773908e693c6364a29e343
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 11c8e4473f0b849fab7846a825b90da3ed9f036f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407603"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514292"
 ---
 # <a name="out-c"></a>out(C++)
 
@@ -25,7 +25,7 @@ ms.locfileid: "62407603"
 
 ## <a name="remarks"></a>설명
 
-**out** C++ 특성에는 [out](/windows/desktop/Midl/out-idl) MIDL 특성과 동일한 기능이 있습니다.
+**out** C++ 특성에는 [out](/windows/win32/Midl/out-idl) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 

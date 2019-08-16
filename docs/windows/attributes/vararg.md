@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - vararg attribute
 ms.assetid: 20fc3244-18e9-411c-990e-d5b4fa29a570
-ms.openlocfilehash: a433522b78424c48c4afe754f7b8337e3952dc8e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1c6b1a4e049bccfcf3e16bae4b5f9b285d11192
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407213"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514890"
 ---
 # <a name="vararg"></a>vararg
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407213"
 
 ## <a name="remarks"></a>설명
 
-**vararg** C++ 특성에 동일한 기능을 합니다 [vararg](/windows/desktop/Midl/vararg) MIDL 특성입니다.
+**Vararg** C++ 특성에는 [vararg](/windows/win32/Midl/vararg) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 코드는 사용 방법을 보여 줍니다 **vararg**:
+다음 코드에서는 **vararg**를 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_vararg.cpp

@@ -1,17 +1,17 @@
 ---
-title: 읽기 전용 (C++ COM 특성)
+title: readonly (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.readonly
 helpviewer_keywords:
 - readonly attribute
 ms.assetid: 1246cadd-5304-43a9-beea-51153d12704d
-ms.openlocfilehash: 7eea071b62130c65fbb46ebc8827fc2b428c4c0c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 93f7393f76596766e841dfc25f6d12e20e3db618
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407343"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514127"
 ---
 # <a name="readonly-c"></a>readonly(C++)
 
@@ -25,7 +25,7 @@ ms.locfileid: "62407343"
 
 ## <a name="remarks"></a>설명
 
-**readonly** C++ 특성에는 [readonly](/windows/desktop/Midl/readonly) MIDL 특성과 동일한 기능이 있습니다.
+**readonly** C++ 특성에는 [readonly](/windows/win32/Midl/readonly) MIDL 특성과 동일한 기능이 있습니다.
 
 메서드 매개 변수의 수정을 금지하려면 [in](in-cpp.md) 특성을 사용합니다.
 

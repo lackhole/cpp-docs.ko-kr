@@ -104,12 +104,12 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], SynchronizeScrollBar
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
-ms.openlocfilehash: db2dcf7c60d164f9d04eb98f8eaac79ae14e3e73
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
+ms.openlocfilehash: 442860b1751591c5763a768f9bd9b6ba59f33fa5
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821258"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504880"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Class
 
@@ -132,7 +132,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCTabCtrl::ActivateMDITab](#activatemditab)|현재 탭 컨트롤의 지정 된 탭을 표시 하 고 해당 탭에 포커스를 설정 합니다.|
 |[CMFCTabCtrl::AllowDestroyEmptyTabbedPane](#allowdestroyemptytabbedpane)||
@@ -177,7 +177,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 |[CMFCTabCtrl::OnDragEnter](#ondragenter)|커서를 탭 컨트롤 창으로 처음 끌 때 프레임 워크에서 호출 됩니다.|
 |[CMFCTabCtrl::OnDragOver](#ondragover)|놓기 대상 창 위로 마우스를 이동할 때 끌기 작업을 수행 하는 동안 프레임 워크에서 호출 됩니다. [CMFCBaseTabCtrl:: system.windows.uielement.ondragover](../../mfc/reference/cmfcbasetabctrl-class.md#ondragover)를 재정의 합니다.|
 |[CMFCTabCtrl::OnShowTabDocumentsMenu](#onshowtabdocumentsmenu)|탭 창의 팝업 메뉴를 표시 하 고 사용자가 탭을 선택할 때까지 대기한 다음 선택 된 탭을 활성 탭으로 만듭니다.|
-|`CMFCTabCtrl::PreTranslateMessage`|창 메시지가 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 및 [dispatchmessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수로 디스패치 되기 전에 변환 합니다. [CMFCBaseTabCtrl::P retranslatemessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage)를 재정의 합니다.|
+|`CMFCTabCtrl::PreTranslateMessage`|창 메시지가 [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) 및 [dispatchmessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows 함수로 디스패치 되기 전에 변환 합니다. [CMFCBaseTabCtrl::P retranslatemessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage)를 재정의 합니다.|
 |`CMFCTabCtrl::RecalcLayout`|탭 컨트롤의 내부 레이아웃을 다시 계산합니다. [CMFCBaseTabCtrl:: RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout)를 재정의 합니다.|
 |[CMFCTabCtrl::SetActiveInMDITabGroup](#setactiveinmditabgroup)|탭 컨트롤의 현재 탭을 다중 문서 인터페이스 탭 그룹의 활성 탭으로 설정 합니다.|
 |[CMFCTabCtrl::SetActiveTab](#setactivetab)|탭을 활성화합니다. [CMFCBaseTabCtrl:: SetActiveTab](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab)를 재정의 합니다.|
@@ -193,7 +193,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 
 ### <a name="data-members"></a>데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCTabCtrl::m_bEnableActivate](#m_benableactivate)|새 탭을 삽입 하 고 사용 하는 경우 활성 뷰의 포커스가 손실 되지 않도록 합니다.|
 
@@ -229,7 +229,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 
 도킹 컨트롤 막대로 탭 창을 만드는 방법에 대 한 예제는 [CTabbedPane 클래스](../../mfc/reference/ctabbedpane-class.md)를 참조 하세요. 도킹 되지 `CMFCTabCtrl` 않은 컨트롤로를 사용 하려면 `CMFCTabCtrl` 개체를 만든 다음 [cmfctabctrl:: create](#create)를 호출 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -846,7 +846,7 @@ BOOL ModifyTabStyle(Style style);
 
 *Style* 매개 변수의 값은 다음 `CMFCTabCtrl::Style` 열거형 중 하나일 수 있습니다.
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |STYLE_3D|모퉁이가 둥근 3 차원 사각형 탭을 표시 합니다.|
 |STYLE_3D_ONENOTE|세로 및 세로 방향으로 모퉁이가 둥근 3 차원 탭을 표시 합니다.|
@@ -874,7 +874,7 @@ virtual DROPEFFECT OnDragEnter(
 진행 사용자가 끌어 온 데이터를 포함 하는 데이터 개체를 가리킵니다.
 
 *dwKeyState*<br/>
-진행 보조키의 상태를 포함 합니다. 이 매개 변수는 다음 값의 비트 조합 (OR)입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON 및 MK_RBUTTON가 있습니다. 자세한 내용은 [마우스 입력 정보](/windows/desktop/inputdev/about-mouse-input)의 **메시지 매개 변수** 섹션을 참조 하세요.
+진행 보조키의 상태를 포함 합니다. 이 매개 변수는 다음 값의 비트 조합 (OR)입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON 및 MK_RBUTTON가 있습니다. 자세한 내용은 [마우스 입력 정보](/windows/win32/inputdev/about-mouse-input)의 **메시지 매개 변수** 섹션을 참조 하세요.
 
 *point*<br/>
 진행 클라이언트 좌표에서 커서의 현재 위치를 포함 합니다.
@@ -906,7 +906,7 @@ virtual DROPEFFECT OnDragOver(
 진행 놓기 대상 위로 끌고 있는 [Coledataobject](../../mfc/reference/coledataobject-class.md) 개체에 대 한 포인터입니다.
 
 *dwKeyState*<br/>
-진행 MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON 및 MK_RBUTTON의 비트 조합 (OR) 인 한정자 키의 상태입니다. 자세한 내용은 [마우스 입력 정보](/windows/desktop/inputdev/about-mouse-input)의 "메시지 매개 변수"를 참조 하세요.
+진행 MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON 및 MK_RBUTTON의 비트 조합 (OR) 인 한정자 키의 상태입니다. 자세한 내용은 [마우스 입력 정보](/windows/win32/inputdev/about-mouse-input)의 "메시지 매개 변수"를 참조 하세요.
 
 *point*<br/>
 진행 현재 마우스 위치입니다.

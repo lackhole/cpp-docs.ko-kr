@@ -12,12 +12,12 @@ helpviewer_keywords:
 - COleIPFrameWnd [MFC], OnCreateControlBars
 - COleIPFrameWnd [MFC], RepositionFrame
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
-ms.openlocfilehash: 34388e635ba89d732ae3993074a2c8268e2289a3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 483998529b83d9b28c6ab1b219c4f5288dbd8ec7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224558"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69503825"
 ---
 # <a name="coleipframewnd-class"></a>COleIPFrameWnd 클래스
 
@@ -41,14 +41,14 @@ class COleIPFrameWnd : public CFrameWnd
 
 |이름|설명|
 |----------|-----------------|
-|[COleIPFrameWnd::OnCreateControlBars](#oncreatecontrolbars)|항목이 내부 편집을 위해 활성화 될 때 프레임 워크에서 호출 됩니다.|
+|[COleIPFrameWnd::OnCreateControlBars](#oncreatecontrolbars)|내부 편집을 위해 항목이 활성화 될 때 프레임 워크에서 호출 됩니다.|
 |[COleIPFrameWnd::RepositionFrame](#repositionframe)|내부 편집 창의 위치를 변경 하기 위해 프레임 워크에서 호출 됩니다.|
 
 ## <a name="remarks"></a>설명
 
-이 클래스를 만들고 컨테이너 응용 프로그램의 문서 창 내에서 막대를 제어 하는 위치입니다. 또한 포함 된 하 여 생성 되는 알림 처리 [COleResizeBar](../../mfc/reference/coleresizebar-class.md) 사용자 내부 편집 창의 크기를 조정 하는 경우 개체입니다.
+이 클래스는 컨테이너 응용 프로그램의 문서 창에 컨트롤 막대를 만들고 배치 합니다. 또한 사용자가 내부 편집 창의 크기를 조정할 때 포함 된 [COleResizeBar](../../mfc/reference/coleresizebar-class.md) 개체에 의해 생성 된 알림도 처리 합니다.
 
-사용 하 여 대 한 자세한 내용은 `COleIPFrameWnd`, 문서를 참조 하세요 [활성화](../../mfc/activation-cpp.md)합니다.
+사용 `COleIPFrameWnd`에 대 한 자세한 내용은 [활성화](../../mfc/activation-cpp.md)문서를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -64,11 +64,11 @@ class COleIPFrameWnd : public CFrameWnd
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxole.h
+**헤더:** afxole
 
 ##  <a name="coleipframewnd"></a>  COleIPFrameWnd::COleIPFrameWnd
 
-생성 된 `COleIPFrameWnd` 개체 및 OLEINPLACEFRAMEINFO 형식의 구조체에 저장 되 고 전체 상태 정보를 초기화 합니다.
+개체를 `COleIPFrameWnd` 생성 하 고 OLEINPLACEFRAMEINFO 형식의 구조에 저장 되는 내부 상태 정보를 초기화 합니다.
 
 ```
 COleIPFrameWnd();
@@ -76,11 +76,11 @@ COleIPFrameWnd();
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [OLEINPLACEFRAMEINFO](/windows/desktop/api/oleidl/ns-oleidl-tagoifi) Windows SDK에 있습니다.
+자세한 내용은 Windows SDK에서 [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oifi) 을 참조 하세요.
 
 ##  <a name="oncreatecontrolbars"></a>  COleIPFrameWnd::OnCreateControlBars
 
-프레임 워크 호출을 `OnCreateControlBars` 항목이 내부 편집을 위해 활성화 될 때 작동 합니다.
+항목이 내부 편집을 `OnCreateControlBars` 위해 활성화 된 경우 프레임 워크는 함수를 호출 합니다.
 
 ```
 virtual BOOL OnCreateControlBars(
@@ -98,19 +98,19 @@ virtual BOOL OnCreateControlBars(
 컨테이너 응용 프로그램의 프레임 창에 대 한 포인터입니다.
 
 *pWndDoc*<br/>
-컨테이너의 문서 창에 대 한 포인터입니다. 컨테이너가 SDI 응용 프로그램인 경우에 NULL 일 수 있습니다.
+컨테이너의 문서 수준 창에 대 한 포인터입니다. 컨테이너가 SDI 응용 프로그램 일 경우 NULL 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 0이 아닌 값 그렇지 않을 경우 0입니다.
+성공 시 0이 아닌 경우 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 구현은 아무 작업도 수행하지 않습니다. 컨트롤 막대를 만들 때 필요한 특수 한 처리를 수행 하려면이 함수를 재정의 합니다.
+기본 구현은 아무 작업도 수행하지 않습니다. 컨트롤 막대를 만들 때 필요한 특별 한 처리 작업을 수행 하려면이 함수를 재정의 합니다.
 
 ##  <a name="repositionframe"></a>  COleIPFrameWnd::RepositionFrame
 
-프레임 워크 호출을 `RepositionFrame` 컨트롤 막대 레이아웃으로 표시 되므로 내부 편집 창의 위치를 변경 하는 멤버 함수입니다.
+프레임 워크는 `RepositionFrame` 멤버 함수를 호출 하 여 컨트롤 막대를 배치 하 고 내부 편집 창의 위치를 변경 하 여 모든 컨트롤이 표시 되도록 합니다.
 
 ```
 virtual void RepositionFrame(
@@ -121,18 +121,18 @@ virtual void RepositionFrame(
 ### <a name="parameters"></a>매개 변수
 
 *lpPosRect*<br/>
-에 대 한 포인터를 `RECT` 구조 또는 `CRect` 개체 내부에서 포함 된 프레임 창의 현재 위치 좌표 (픽셀)를 클라이언트 영역을 기준으로 합니다.
+클라이언트 영역을 `RECT` 기준으로 하 `CRect` 는 내부 프레임 창의 현재 위치 좌표 (픽셀)를 포함 하는 구조체 또는 개체에 대 한 포인터입니다.
 
 *lpClipRect*<br/>
-에 대 한 포인터를 `RECT` 구조 또는 `CRect` 개체 내부에서 포함 된 프레임 창의 현재 클리핑 사각형 좌표 (픽셀)를 클라이언트 영역을 기준으로 합니다.
+클라이언트 영역을 `RECT` 기준으로 하 `CRect` 는 내부 프레임 창의 현재 클리핑 사각형 좌표 (픽셀)를 포함 하는 구조체 또는 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-컨테이너 창에서 컨트롤 막대의 레이아웃에서 다른 비 OLE 프레임 창에서 수행 합니다. 비 OLE 프레임 창은 컨트롤 막대 및 기타 개체에 대 한 호출에서와 같이 지정 된 프레임 창 크기를에서 위치를 계산 [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout)합니다. 클라이언트 영역에서 컨트롤 막대 및 기타 개체에 대 한 공간을 뺀 후 남은입니다. `COleIPFrameWnd` 창 반면에 지정 된 클라이언트 영역에 따라 도구 모음을 배치 합니다. 다시 말해 `CFrameWnd::RecalcLayout` 반면, 외부"에서" 작동 `COleIPFrameWnd::RepositionFrame` 작동 "안팎을 합니다."
+컨테이너 창에서 컨트롤 막대의 레이아웃은 비 OLE 프레임 창에서 수행 하는 것과 다릅니다. 비 OLE 프레임 창에서는 [CFrameWnd:: RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout)를 호출 하는 것 처럼 지정 된 프레임 창 크기에서 컨트롤 막대와 기타 개체의 위치를 계산 합니다. 클라이언트 영역은 컨트롤 막대에 대 한 공간 이후에 남아 있는 개체를 뺀 것입니다. 반면 `COleIPFrameWnd` 에 창은 지정 된 클라이언트 영역에 따라 도구 모음을 배치 합니다. 즉, `CFrameWnd::RecalcLayout` 는 "의 외부에서" 실행 되는 반면 `COleIPFrameWnd::RepositionFrame` "는 내부에서"로 작동 합니다. "
 
 ## <a name="see-also"></a>참고자료
 
-[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [CFrameWnd 클래스](../../mfc/reference/cframewnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CFrameWnd 클래스](../../mfc/reference/cframewnd-class.md)

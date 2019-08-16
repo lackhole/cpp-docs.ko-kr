@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - defaultvalue attribute
 ms.assetid: efa5d050-b2cc-4d9e-9b8e-79954f218d3a
-ms.openlocfilehash: ff6924db6f4805bb5f2dbab69076a86020b2a075
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2057658b5881efd0c3ff095d51e5ee88c9c533e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62147966"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490928"
 ---
 # <a name="defaultvalue"></a>defaultvalue
 
-형식화 된 선택적 매개 변수 기본값을 지정할 수 있습니다.
+형식화 된 선택적 매개 변수에 기본값을 지정할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,16 +25,16 @@ ms.locfileid: "62147966"
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
+*value*<br/>
 매개 변수의 기본 값입니다.
 
 ## <a name="remarks"></a>설명
 
-**defaultvalue** C++ 특성에 동일한 기능을 합니다 [defaultvalue](/windows/desktop/Midl/defaultvalue) MIDL 특성입니다.
+**Defaultvalue** C++ 특성에는 [defaultvalue](/windows/win32/Midl/defaultvalue) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 코드를 사용 하 여 인터페이스 메서드를 표시 합니다 **defaultvalue** 특성:
+다음 코드에서는 **defaultvalue** 특성을 사용 하는 인터페이스 메서드를 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_defaultvalue.cpp

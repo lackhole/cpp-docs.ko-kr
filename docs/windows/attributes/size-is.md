@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - size_is attribute
 ms.assetid: 70192d09-f6c5-4d52-b3fe-303f8cb10aa5
-ms.openlocfilehash: a7b990a708bafba78c9dc4153315f8b7b20351ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 504f1bf72b8ffa15e8df50bb00c86ef909688f1e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407330"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514034"
 ---
-# <a name="sizeis"></a>size_is
+# <a name="size_is"></a>size_is
 
-메모리 크기의 할당 크기의 포인터에 대 한 크기의 포인터 및 단일 또는 다차원 배열에 대 한 포인터 크기 지정 합니다.
+크기가 지정 된 포인터에 대해 할당 된 메모리 크기, 크기가 지정 된 포인터에 대 한 포인터 크기 및 단일 또는 다차원 배열을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,15 +26,15 @@ ms.locfileid: "62407330"
 ### <a name="parameters"></a>매개 변수
 
 *expression*<br/>
-크기가 지정 된 포인터에 할당 된 메모리의 크기입니다.
+크기 조정 포인터에 할당 된 메모리의 크기입니다.
 
 ## <a name="remarks"></a>설명
 
-**size_is** C++ 특성에 동일한 기능을 합니다 [size_is](/windows/desktop/Midl/size-is) MIDL 특성입니다.
+**Size_is** C++ 특성에는 [size_is](/windows/win32/Midl/size-is) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [first_is](first-is.md) 배열 섹션을 지정 하는 방법의 예제입니다.
+배열의 섹션을 지정 하는 방법에 대 한 샘플은 [first_is](first-is.md) 의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -42,7 +42,7 @@ ms.locfileid: "62407330"
 
 |||
 |-|-|
-|**적용 대상**|필드에 **구조체** 하거나 **union**인터페이스 매개 변수, 인터페이스 메서드|
+|**적용 대상**|**구조체** 또는 **공용 구조체**의 필드, 인터페이스 매개 변수, 인터페이스 메서드|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|`max_is`|

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - implements_category attribute
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
-ms.openlocfilehash: bbd859018210d3c972ae9d4b0e9f659d96d95aab
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 6e0036b7008b67a1e21bcbe64977f4703bbdf3be
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504193"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514638"
 ---
-# <a name="implementscategory"></a>implements_category
+# <a name="implements_category"></a>implements_category
 
-대상 클래스에서 구현 되는 구성 요소 범주를 지정 합니다.
+대상 클래스에서 구현 하는 구성 요소 범주를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,13 +30,13 @@ ms.locfileid: "66504193"
 
 ## <a name="remarks"></a>설명
 
-합니다 **implements_category** C++ 특성 대상 클래스에 의해 구현 된 구성 요소 범주를 지정 합니다. 범주 지도 만들고 지정 된 별도 항목을 추가 하 여 이렇게 합니다 **implements_category** 특성입니다. 자세한 내용은 [구성 요소 범주 and How They](/windows/desktop/com/component-categories-and-how-they-work)합니다.
+**Implements_category** C++ 특성은 대상 클래스에서 구현 하는 구성 요소 범주를 지정 합니다. 이 작업은 범주 맵을 만들고 **implements_category** 특성으로 지정 된 별도의 항목을 추가 하 여 수행 됩니다. 자세한 내용은 [구성 요소 범주 및 작동 방식](/windows/win32/com/component-categories-and-how-they-work)을 참조 하세요.
 
-이 특성을 사용하려면 [coclass](coclass.md), [progid](progid.md)또는 [vi_progid](vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다. 단일 특성을 사용하는 경우 다른 두 특성도 자동으로 적용됩니다. 예를 들어 있으면 `progid` 적용 됩니다 `vi_progid` 및 `coclass` 도 적용 됩니다.
+이 특성을 사용하려면 [coclass](coclass.md), [progid](progid.md)또는 [vi_progid](vi-progid.md) 특성(또는 이 중 하나를 암시하는 다른 특성)을 동일한 요소에 적용해야 합니다. 단일 특성을 사용하는 경우 다른 두 특성도 자동으로 적용됩니다. 예를 들어를 `progid` `vi_progid` 적용 하는 경우 `coclass` 및도 적용 됩니다.
 
 ## <a name="example"></a>예제
 
-다음 코드를 다음 구현 된 개체가 지정 된 `Control` 범주입니다.
+다음 코드에서는 다음 개체가 범주를 `Control` 구현 하도록 지정 합니다.
 
 ```cpp
 // cpp_attr_ref_implements_category.cpp
@@ -59,7 +59,7 @@ class CMyClass {};
 |-|-|
 |**적용 대상**|**class**, **struct**|
 |**반복 가능**|예|
-|**필수 특성**|다음 중 하나: `coclass`, `progid`, 또는 `vi_progid`|
+|**필수 특성**|다음 중 하나입니다. `coclass`, `progid`또는`vi_progid`|
 |**잘못된 특성**|없음|
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.

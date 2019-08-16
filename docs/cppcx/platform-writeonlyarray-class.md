@@ -12,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::WriteOnlyArray Class
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
-ms.openlocfilehash: fb582106fe2f18e939f11180048a125c683ca2f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5652123d4866262515f804dba790af51610eb426
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182940"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500517"
 ---
 # <a name="platformwriteonlyarray-class"></a>Platform::WriteOnlyArray 클래스
 
 호출자가 채울 메서드에 대해 배열을 전달할 때 입력 매개 변수로 사용되는 1차원 배열을 나타냅니다.
 
-이 ref 클래스는 vccorlib.h에서 private으로 선언되므로 메타데이터로 내보내지지 않고 C++에서만 사용할 수 있습니다. 이 클래스는 호출자가 할당한 배열을 받는 입력 매개 변수로만 사용해야 합니다. 이 클래스는 사용자 코드에서 생성할 수 없으며 C++ 메서드가 해당 배열에 직접 작성할 수 있게 합니다( *FillArray* 패턴). 자세한 내용은 [Array 및 WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)합니다.
+이 ref 클래스는 vccorlib.h에서 private으로 선언되므로 메타데이터로 내보내지지 않고 C++에서만 사용할 수 있습니다. 이 클래스는 호출자가 할당한 배열을 받는 입력 매개 변수로만 사용해야 합니다. 이 클래스는 사용자 코드에서 생성할 수 없으며 C++ 메서드가 해당 배열에 직접 작성할 수 있게 합니다( *FillArray* 패턴). 자세한 내용은 [Array 및 WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -54,7 +54,7 @@ private ref class WriteOnlyArray<T, 1>
 
 컴파일러 옵션: **/ZW**
 
-**메타 데이터:** Platform.winmd
+**메타** Platform.winmd
 
 **네임스페이스:** 플랫폼
 
@@ -126,7 +126,7 @@ property bool FastPass{
 
 배열이 FastPass인지 여부를 나타내는 부울 값입니다.
 
-## <a name="get"></a>  Writeonlyarray:: Get 메서드
+## <a name="get"></a>WriteOnlyArray:: get 메서드
 
 지정한 인덱스의 요소를 반환합니다.
 
@@ -139,7 +139,7 @@ T& get(unsigned int indexArg) const;
 ### <a name="parameters"></a>매개 변수
 
 *indexArg*<br/>
-인덱스 사용입니다.
+사용할 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -185,9 +185,9 @@ T& set(
 
 ### <a name="remarks"></a>설명
 
-HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes)합니다.
+HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 [COM 오류 코드 구조](/windows/win32/com/structure-of-com-error-codes)를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)<br/>
+[Platform 네임 스페이스](platform-namespace-c-cx.md)<br/>
 [C++로 Windows Runtime 구성 요소 만들기](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

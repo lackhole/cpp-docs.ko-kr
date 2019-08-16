@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAcl class
 ms.assetid: 20bcb9af-dc1c-4737-b923-3864776680d6
-ms.openlocfilehash: ba791ddc46fd59a470943bb30f415da01966dc61
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 5d03154597f800042846e82d0a0cf5e7c46b613f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915898"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497895"
 ---
 # <a name="cacl-class"></a>CAcl 클래스
 
@@ -54,7 +54,7 @@ class CAcl
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CAcl::CAcl](#cacl)|생성자입니다.|
 |[CAcl::~CAcl](#dtor)|소멸자입니다.|
@@ -84,7 +84,7 @@ class CAcl
 
 ## <a name="remarks"></a>설명
 
-`ACL` 구조는 ACL (액세스 제어 목록)의 헤더입니다. ACL에는 0 개 이상의 [ace](/windows/desktop/SecAuthZ/access-control-entries) (액세스 제어 항목)의 순차적 목록이 포함 됩니다. ACL의 개별 Ace 번호는 0에서 *n-1*사이입니다. 여기서 *n* 은 acl의 ace 수입니다. ACL을 편집 하는 경우 응용 프로그램은 해당 인덱스에 의해 ACL 내에서 ACE (액세스 제어 항목)를 참조 합니다.
+`ACL` 구조는 ACL (액세스 제어 목록)의 헤더입니다. ACL에는 0 개 이상의 [ace](/windows/win32/SecAuthZ/access-control-entries) (액세스 제어 항목)의 순차적 목록이 포함 됩니다. ACL의 개별 Ace 번호는 0에서 *n-1*사이입니다. 여기서 *n* 은 acl의 ace 수입니다. ACL을 편집 하는 경우 응용 프로그램은 해당 인덱스에 의해 ACL 내에서 ACE (액세스 제어 항목)를 참조 합니다.
 
 ACL에는 두 가지 유형이 있습니다.
 
@@ -96,9 +96,9 @@ ACL에는 두 가지 유형이 있습니다.
 
 또한 개체에는 시스템 관리자가 제어 하는 시스템 ACL의 형태로 시스템 수준 보안 정보를 연결할 수 있습니다. 시스템 ACL을 통해 시스템 관리자는 개체에 대 한 액세스 시도를 감사할 수 있습니다.
 
-자세한 내용은 Windows SDK [ACL](/windows/desktop/SecAuthZ/access-control-lists) 토론을 참조 하십시오.
+자세한 내용은 Windows SDK [ACL](/windows/win32/SecAuthZ/access-control-lists) 토론을 참조 하십시오.
 
-Windows의 액세스 제어 모델에 대 한 소개는 Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) 를 참조 하세요.
+Windows의 액세스 제어 모델에 대 한 소개는 Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) 를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -126,7 +126,7 @@ typedef CAtlArray<BYTE> CAceFlagArray;
 
 ### <a name="remarks"></a>설명
 
-이 typedef는 ACE (액세스 제어 항목) 유형별 컨트롤 플래그를 정의 하는 데 사용 되는 배열 형식을 지정 합니다. 가능한 플래그의 전체 목록은 [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) 정의를 참조 하세요.
+이 typedef는 ACE (액세스 제어 항목) 유형별 컨트롤 플래그를 정의 하는 데 사용 되는 배열 형식을 지정 합니다. 가능한 플래그의 전체 목록은 [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) 정의를 참조 하세요.
 
 ##  <a name="cacetypearray"></a>  CAcl::CAceTypeArray
 
@@ -138,7 +138,7 @@ typedef CAtlArray<BYTE> CAceTypeArray;
 
 ### <a name="remarks"></a>설명
 
-이 형식 정의는 ACCESS_ALLOWED_ACE_TYPE 또는 ACCESS_DENIED_ACE_TYPE와 같은 ACE (액세스 제어 항목) 개체의 특성을 정의 하는 데 사용 되는 배열 형식을 지정 합니다. 가능한 형식의 전체 목록은 [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) 정의를 참조 하세요.
+이 형식 정의는 ACCESS_ALLOWED_ACE_TYPE 또는 ACCESS_DENIED_ACE_TYPE와 같은 ACE (액세스 제어 항목) 개체의 특성을 정의 하는 데 사용 되는 배열 형식을 지정 합니다. 가능한 형식의 전체 목록은 [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) 정의를 참조 하세요.
 
 ##  <a name="cacl"></a>  CAcl::CAcl
 
@@ -214,7 +214,7 @@ ACE 플래그입니다.
 
 각 배열의 콘텐츠는 서로 일치 합니다. 즉, `CAccessMaskArray` 배열의 첫 번째 요소는 `CSidArray` 배열의 첫 번째 요소에 해당 합니다.
 
-ACE 형식 및 플래그에 대 한 자세한 내용은 [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) 를 참조 하세요.
+ACE 형식 및 플래그에 대 한 자세한 내용은 [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) 를 참조 하세요.
 
 ##  <a name="getaclentry"></a>  CAcl::GetAclEntry
 
@@ -258,7 +258,7 @@ ACE 플래그입니다.
 
 이 메서드는 개별 ACE에 대 한 모든 정보를 검색 하 고 [Cacl:: GetAclEntries](#getaclentries) 를 사용 가능 하 게 설정 하는 것 보다 많은 정보를 제공 합니다.
 
-ACE 형식 및 플래그에 대 한 자세한 내용은 [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) 를 참조 하세요.
+ACE 형식 및 플래그에 대 한 자세한 내용은 [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) 를 참조 하세요.
 
 ##  <a name="getlength"></a>  CAcl::GetLength
 

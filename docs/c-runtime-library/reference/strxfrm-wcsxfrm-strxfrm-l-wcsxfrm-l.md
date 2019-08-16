@@ -35,14 +35,14 @@ helpviewer_keywords:
 - strings [C++], comparing locale
 - _wcsxfrm_l function
 ms.assetid: 6ba8e1f6-4484-49aa-83b8-bc2373187d9e
-ms.openlocfilehash: 4e4f5bb6639cbeee0f004f94f09177c08394d43e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e4dc94d76562daf10544e9b0d09d9608bd83e454
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258717"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500781"
 ---
-# <a name="strxfrm-wcsxfrm-strxfrml-wcsxfrml"></a>strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
+# <a name="strxfrm-wcsxfrm-_strxfrm_l-_wcsxfrm_l"></a>strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
 
 로캘별 정보를 기반으로 문자열을 변형합니다.
 
@@ -82,24 +82,24 @@ size_t wcsxfrm_l(
 소스 문자열입니다.
 
 *count*<br/>
-에 배치할 문자의 최대 수 *strDest*합니다.
+*Strdest*에 저장할 최대 문자 수입니다.
 
 *locale*<br/>
 사용할 로캘입니다.
 
 ## <a name="return-value"></a>반환 값
 
-종료 null 문자를 세지 않고 변형된 문자열의 길이를 반환합니다. 반환 값 보다 크거나 같은 경우 *개수*, 내용의 *strDest* 는 예측할 수 없습니다. 오류 발생 시 각 함수는 다음과 같이 설정 됩니다. **errno** 반환 **INT_MAX**합니다. 잘못 된 문자에 대 한 **errno** 로 설정 된 **EILSEQ**합니다.
+종료 null 문자를 세지 않고 변형된 문자열의 길이를 반환합니다. 반환 값이 *count*보다 크거나 같으면 *strdest* 의 콘텐츠를 예측할 수 없습니다. 오류가 발생 하면 각 함수는 **errno** 를 설정 하 고 **INT_MAX**를 반환 합니다. 잘못 된 문자의 경우 **errno** 는 **eilseq**로 설정 됩니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **strxfrm** 함수에서 가리키는 문자열을 변환 *strSource* 새 폼에 저장 된 데이터 정렬 *strDest*합니다. 개 이하의 *개수* 문자를 null 문자를 포함 하 여 변형 되 고 결과 문자열에 배치 합니다. 로캘의 사용 하 여 변환이 일어납니다 **LC_COLLATE** 범주 설정 합니다. 에 대 한 자세한 **LC_COLLATE**를 참조 하십시오 [setlocale](setlocale-wsetlocale.md)합니다. **strxfrm** 로캘 종속 동작에 현재 로캘을 사용 **_strxfrm_l** 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**Strxfrm** 함수는 *strsource* 에 의해 가리키는 문자열을 *strsource*에 저장 된 새로운 정렬 된 형식으로 변환 합니다. Null 문자를 포함 하 여 *count* 개 이하의 문자가 변환 되어 결과 문자열에 배치 됩니다. 변환은 로캘의 **LC_COLLATE** category 설정을 사용 하 여 수행 됩니다. **LC_COLLATE**에 대 한 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조 하세요. **strxfrm** 는 로캘 종속 동작에 현재 로캘을 사용 합니다. **_strxfrm_l** 은 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-변환에 대 한 호출 후 **strcmp** 두 가지 변형 된 문자열을 사용 하 여에 대 한 호출의 동일한 결과가 발생 **strcoll** 두 원본 문자열에 적용 합니다. 와 마찬가지로 **strcoll** 하 고 **stricoll**를 **strxfrm** 적절 하 게 멀티 바이트 문자열을 자동으로 처리 합니다.
+변환 후 변환 된 두 문자열을 사용 하 여 **strcmp** 를 호출 하면 원래 두 문자열에 적용 된 **strcoll** 에 대 한 호출과 동일한 결과가 발생 합니다. **Strcoll** 및 **stricoll**와 마찬가지로 **strxfrm** 는 자동으로 멀티 바이트 문자열을 적절 하 게 처리 합니다.
 
-**wcsxfrm** 의 와이드 문자 버전이 **strxfrm**;의 문자열 인수 **wcsxfrm** 와이드 문자 포인터입니다. 에 대 한 **wcsxfrm**후 문자열 변환에 대 한 호출 **wcscmp** 두 변환 된 문자열을 사용 하 여에 대 한 호출의 동일한 결과가 발생 **wcscoll** 적용할 합니다 두 원본 문자열입니다. **wcsxfrm** 하 고 **strxfrm** 동일 하 게 작동 합니다. **wcsxfrm** 로캘 종속 동작에 현재 로캘을 사용 **_wcsxfrm_l** 현재 로캘 대신 전달 된 로캘을 사용 합니다.
+**wcsxfrm** 는 **strxfrm**의 와이드 문자 버전입니다. **wcsxfrm** 의 문자열 인수는 와이드 문자 포인터입니다. **Wcsxfrm**의 경우 문자열 변환 후 변환 된 문자열이 두 개인 **wcscmp** 에 대 한 호출은 원래 두 문자열에 적용 된 **wcscoll** 에 대 한 호출의 결과와 동일한 결과를 생성 합니다. **wcsxfrm** 및 **strxfrm** 는 동일 하 게 동작 합니다. **wcsxfrm** 는 로캘 종속 동작에 현재 로캘을 사용 합니다. **_wcsxfrm_l** 은 현재 로캘 대신 전달 된 로캘을 사용 합니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 경우 *strSource* 가 null 포인터인 경우 또는 *strDest* 은 **NULL** 포인터 (수가 0이 아닌), 이거나 *개수* 보다크면**INT_MAX**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 돌아와 **INT_MAX**합니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Strsource* 가 null 포인터 이거나 *strsource* 가 **null** 포인터 (count가 0이 아닌 경우) 이거나 *Count* 가 **INT_MAX**보다 큰 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **INT_MAX**를 반환 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -110,15 +110,15 @@ size_t wcsxfrm_l(
 
 "C" 로캘에서 문자 집합(ASCII 문자 집합)의 순서는 사전적 문자 순서와 같습니다. 그러나 다른 로캘에서 문자 집합의 문자 순서는 사전적 문자 순서와 다를 수 있습니다. 예를 들어 특정 유럽 로캘의 문자 집합에서 문자 'a'(값 0x61)는 문자 '&\#x00E4;'(값 0xE4) 앞에 오지만 사전적으로는 문자 'ä'가 'a' 앞에 옵니다.
 
-문자 집합과 사전적 문자 순서가 다른 로캘에서 사용 하 여 **strxfrm** 원본 문자열에 차례로 **strcmp** 사전적 문자열을 생성 하는 결과 문자열에서 현재 로캘에 따라 비교 **LC_COLLATE** 범주 설정 합니다. 따라서 위의 로캘에서 사전순으로 두 개의 문자열 비교를 사용 하 여 **strxfrm** 원래 문자열에 대해 **strcmp** 결과 문자열에 있습니다. 또는 사용할 수 있습니다 **strcoll** 대신 **strcmp** 원래 문자열입니다.
+문자 집합과 사전적 문자 순서가 다른 로캘에서는 원래 문자열에서 **strxfrm** 를 사용한 다음 결과 문자열에 대해 **strcmp** 를 사용 하 여 현재 로캘의 **LC_COLLATE** category 설정입니다. 따라서 위의 로캘에서 사전순으로 두 문자열을 비교 하려면 원래 문자열에서 **strxfrm** 를 사용한 다음 결과 문자열에 **strcmp** 합니다. 또는 원래 문자열에 **strcmp** 대신 **strcoll** 를 사용할 수 있습니다.
 
-**strxfrm** 은 기본적으로 래퍼입니다 [LCMapString](/windows/desktop/api/winnls/nf-winnls-lcmapstringa) 사용 하 여 **LCMAP_SORTKEY**합니다.
+**strxfrm** 는 기본적으로 **LCMAP_SORTKEY**를 사용 하는 [활성화 되었으며 lcmapstring](/windows/win32/api/winnls/nf-winnls-lcmapstringw) 에 대 한 래퍼입니다.
 
-다음 식의 값은 저장 하기 위해 필요한 배열의 크기는 **strxfrm** 소스 문자열 중 변환 합니다.
+다음 식의 값은 원본 문자열의 **strxfrm** 변환을 유지 하는 데 필요한 배열의 크기입니다.
 
 `1 + strxfrm( NULL, string, 0 )`
 
-"C" 로캘에서 **strxfrm** 다음과 같습니다.
+"C" 로캘에서만 **strxfrm** 는 다음과 같습니다.
 
 ```C
 strncpy( _string1, _string2, _count );

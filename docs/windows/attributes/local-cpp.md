@@ -1,21 +1,21 @@
 ---
-title: 로컬 (C++ COM 특성)
+title: local (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.local
 helpviewer_keywords:
 - local attribute
 ms.assetid: 35cdd668-bd8e-492a-b7b8-263e7b662437
-ms.openlocfilehash: 678968bb7b0f2e7af94124bea5b0967df27e43f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 853331ce191f8fe41d5967d2d625a3dac8543a4d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409228"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514408"
 ---
 # <a name="local-c"></a>local(C++)
 
-인터페이스 헤더를 사용할 경우 MIDL 컴파일러 헤더 생성기로 사용할 수 있습니다. 개별 함수를 사용할 경우 없는 스텁 생성 되는 로컬 프로시저를 지정 합니다.
+인터페이스 헤더에서 사용 하는 경우에서 MIDL 컴파일러를 헤더 생성기로 사용할 수 있습니다. 개별 함수에서 사용 하는 경우 스텁이 생성 되지 않는 지역 프로시저를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62409228"
 
 ## <a name="remarks"></a>설명
 
-**로컬** C++ 특성에 동일한 기능을 합니다 [로컬](/windows/desktop/Midl/local) MIDL 특성입니다.
+**Local** C++ 특성에는 [로컬](/windows/win32/Midl/local) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-참조 [call_as](call-as.md) 사용 하는 방법의 예제 **로컬**합니다.
+**Local**을 사용 하는 방법에 대 한 예제는 [call_as](call-as.md) 를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -37,7 +37,7 @@ ms.locfileid: "62409228"
 
 |||
 |-|-|
-|**적용 대상**|**인터페이스**, 인터페이스 메서드|
+|**적용 대상**|**interface**, interface 메서드|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|`dispinterface`|

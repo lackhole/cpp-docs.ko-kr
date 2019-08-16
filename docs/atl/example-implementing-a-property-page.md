@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - property pages, implementing
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
-ms.openlocfilehash: 1f2c0387cd0a78ad0179e251654d2fa82b1eef13
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
-ms.translationtype: HT
+ms.openlocfilehash: 68b4aaef06e40a8ec7b00f9ba744d83ce3388da2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707093"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492374"
 ---
 # <a name="example-implementing-a-property-page"></a>예제: 속성 페이지 구현
 
@@ -71,7 +71,7 @@ Visual Studio 2019 이상에서는 ATL 속성 페이지 마법사를 사용할 �
 이러한 컨트롤은 문서의 파일 이름과 읽기 전용 상태를 표시하는 데 사용됩니다.
 
 > [!NOTE]
->  대화 상자 리소스는 프레임 또는 명령 단추를 포함하지 않으며, 예상과 달리 탭 모양도 아닙니다. 이러한 기능은 [OleCreatePropertyFrame](/windows/desktop/api/olectl/nf-olectl-olecreatepropertyframe)을 호출하여 만든 것과 같은 속성 페이지 프레임에서 제공합니다.
+>  대화 상자 리소스는 프레임 또는 명령 단추를 포함하지 않으며, 예상과 달리 탭 모양도 아닙니다. 이러한 기능은 [OleCreatePropertyFrame](/windows/win32/api/olectl/nf-olectl-olecreatepropertyframe)을 호출하여 만든 것과 같은 속성 페이지 프레임에서 제공합니다.
 
 ##  <a name="vcconadding_message_handlers"></a> 메시지 처리기 추가
 
@@ -171,7 +171,7 @@ End Module
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[속성 페이지](../atl/atl-com-property-pages.md)<br/>
+[속성 페이지(Visual C++)](../atl/atl-com-property-pages.md)<br/>
 [ATLPages 샘플](../overview/visual-cpp-samples.md)

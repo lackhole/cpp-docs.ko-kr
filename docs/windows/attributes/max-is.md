@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - max_is attribute
 ms.assetid: 7c851f5c-6649-4d77-a792-247c37d8f560
-ms.openlocfilehash: dca2a3dc18aa3c3e75bbb682ed0b1b90adcd9236
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2e6db997891817620c1b2c1f70cb310818dd346
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409280"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514419"
 ---
-# <a name="maxis"></a>max_is
+# <a name="max_is"></a>max_is
 
-유효한 배열 인덱스에 대 한 최대값을 지정합니다.
+유효한 배열 인덱스에 대 한 최대값을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,11 +26,11 @@ ms.locfileid: "62409280"
 ### <a name="parameters"></a>매개 변수
 
 *expression*<br/>
-하나 이상의 C 언어 식입니다. 빈 인수 슬롯 허용 됩니다.
+하나 이상의 C 언어 식입니다. 빈 인수 슬롯을 사용할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**max_is** C++ 특성에 동일한 기능을 합니다 [max_is](/windows/desktop/Midl/max-is) MIDL 특성입니다.
+**Max_is** C++ 특성은 [max_is](/windows/win32/Midl/max-is) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -38,7 +38,7 @@ ms.locfileid: "62409280"
 
 |||
 |-|-|
-|**적용 대상**|필드에 **구조체** 하거나 **union**인터페이스 매개 변수, 인터페이스 메서드|
+|**적용 대상**|**구조체** 또는 **공용 구조체**의 필드, 인터페이스 매개 변수, 인터페이스 메서드|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|**size_is**|
@@ -47,7 +47,7 @@ ms.locfileid: "62409280"
 
 ## <a name="example"></a>예제
 
-참조 [first_is](first-is.md) 배열 섹션을 지정 하는 방법의 예입니다.
+배열의 섹션을 지정 하는 방법에 대 한 예제는 [first_is](first-is.md) 를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

@@ -1,21 +1,21 @@
 ---
-title: 내보내기 (C++ COM 특성)
+title: export (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.export
 helpviewer_keywords:
 - export attribute
 ms.assetid: 70b3e848-fad6-4e09-8c72-be60ca72a4df
-ms.openlocfilehash: 5ffa4283b8a2b265809d06b72be96e217cf8bf9f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 771bfdfe4eab2acf31e97a606795066e8938a8a1
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409618"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501612"
 ---
 # <a name="export"></a>내보내기
 
-.Idl 파일에 배치할 데이터 구조를 하면 됩니다.
+데이터 구조가 .idl 파일에 배치 되도록 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,17 +25,17 @@ ms.locfileid: "62409618"
 
 ## <a name="remarks"></a>설명
 
-합니다 **내보낼** C++ 특성을 사용 하면 다음에서 사용 하려면 모든 언어를 사용할 수 있도록 하는 이진 호환 형식으로 형식 라이브러리 및.idl 파일에 배치할 데이터 구조입니다.
+**Export** C++ 특성을 사용 하면 데이터 구조가 .idl 파일에 배치 된 다음 모든 언어에서 사용할 수 있도록 하는 이진 호환 형식으로 형식 라이브러리에서 사용할 수 있습니다.
 
-적용할 수 없습니다는 **내보내기** 클래스에는 공용 멤버가 포함 하는 경우에 클래스에 특성 (해당 하는 **구조체**).
+클래스에 public 멤버만 있는 경우에도 ( **구조체**에 해당) **내보내기** 특성을 클래스에 적용할 수 없습니다.
 
-명명 되지 않은 내보내면 **열거형** 또는 **구조체**를 시작 하는 이름이 지정 되 고 **__unnamed**<em>x</em>여기서 *x* 은 일련 번호입니다.
+명명 되지 않은 **열거형** 또는 **구조체**를 내보내는 경우 **__unnamed**<em>x</em>로 시작 하는 이름이 지정 됩니다. 여기서 *x* 는 일련 번호입니다.
 
-Typedef 내보내기에 대 한 유효한 기본 형식, 구조체, 공용 구조체, 열거형 또는 형식 식별자.  참조 [typedef](/windows/desktop/Midl/typedef) 자세한 내용은 합니다.
+내보내기에 유효한 typedef는 기본 형식, 구조체, 공용 구조체, 열거형 또는 형식 식별자입니다.  자세한 내용은 [typedef](/windows/win32/Midl/typedef) 를 참조 하십시오.
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 사용 하 여 **내보내기** 특성:
+다음 코드에서는 **export** 특성을 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_export.cpp
@@ -54,7 +54,7 @@ struct MyStruct {
 
 |||
 |-|-|
-|**적용 대상**|**union**, **typedef**를 **enum**를 **구조체**, 또는 **인터페이스**|
+|**적용 대상**|**union**, **typedef**, **enum**, **struct**또는 **interface**|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|

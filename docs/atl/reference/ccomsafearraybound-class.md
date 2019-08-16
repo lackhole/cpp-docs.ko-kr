@@ -12,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArrayBound class
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
-ms.openlocfilehash: 6d4650273661c0ce40558a37ef02bb2a3ff81809
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: bd77c2a788e769c74518d73b45c3c05ff27b3f58
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221145"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496905"
 ---
 # <a name="ccomsafearraybound-class"></a>CComSafeArrayBound 클래스
 
-이 클래스는에 대 한 래퍼를 [SAFEARRAYBOUND](/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) 구조입니다.
+이 클래스는 [Safearraybound](/windows/win32/api/oaidl/ns-oaidl-tagsafearraybound) 구조체에 대 한 래퍼입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,19 +38,19 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
 |[CComSafeArrayBound](#ccomsafearraybound)|생성자입니다.|
 |[GetCount](#getcount)|요소 수를 반환 하려면이 메서드를 호출 합니다.|
 |[GetLowerBound](#getlowerbound)|하한값을 반환 하려면이 메서드를 호출 합니다.|
-|[GetUpperBound](#getupperbound)|상한 값을 반환 하려면이 메서드를 호출 합니다.|
+|[GetUpperBound](#getupperbound)|상한을 반환 하려면이 메서드를 호출 합니다.|
 |[SetCount](#setcount)|요소 수를 설정 하려면이 메서드를 호출 합니다.|
-|[SetLowerBound](#setlowerbound)|하한값을 설정 하려면이 메서드를 호출 합니다.|
+|[SetLowerBound](#setlowerbound)|하 한을 설정 하려면이 메서드를 호출 합니다.|
 
 ### <a name="operators"></a>연산자
 
 |||
 |-|-|
-|[operator =](#operator_eq)|집합의 `CComSafeArrayBound` 를 새 값입니다.|
+|[operator =](#operator_eq)|를 새 값으로 설정 합니다. `CComSafeArrayBound`|
 
 ## <a name="remarks"></a>설명
 
-이 클래스에 대 한 래퍼인 합니다 `SAFEARRAYBOUND` 사용 되는 구조 [CComSafeArray](../../atl/reference/ccomsafearray-class.md)합니다. 쿼리하고 단일 차원의 상한 및 하 한 범위를 설정 하기 위한 메서드를 제공 하는 `CComSafeArray` 개체 및 포함 된 요소 수입니다. 다차원 `CComSafeArray` 개체의 배열을 사용 하 여 `CComSafeArrayBound` 개체, 각 차원에 대 한 합니다. 따라서 같은 메서드를 사용 하는 경우 [GetCount](#getcount),이 메서드 다차원 배열에서 요소의 총 수를 반환 하지는 알고 있어야 합니다.
+이 클래스는 [CComSafeArray](../../atl/reference/ccomsafearray-class.md)에서 사용 하 `SAFEARRAYBOUND` 는 구조체에 대 한 래퍼입니다. `CComSafeArray` 개체의 단일 차원에 대 한 상한 및 하 한 범위와 여기에 포함 된 요소 수를 쿼리하고 설정 하기 위한 메서드를 제공 합니다. 다차원 `CComSafeArray` 개체는 각 차원에 대해 `CComSafeArrayBound` 하나씩 개체 배열을 사용 합니다. 따라서 [Getcount](#getcount)와 같은 메서드를 사용 하는 경우이 메서드는 다차원 배열의 총 요소 수를 반환 하지 않습니다.
 
 **헤더:** atlsafe.h
 
@@ -72,11 +72,11 @@ CComSafeArrayBound(ULONG ulCount = 0, LONG lLowerBound = 0) throw();
 배열의 요소 수입니다.
 
 *lLowerBound*<br/>
-하한값에서 배열 번호가 지정 됩니다.
+배열의 번호가 매겨진 하한값입니다.
 
 ### <a name="remarks"></a>설명
 
-배열에서 액세스 하는 경우는 C++ 프로그램인 것이 좋습니다 하한값은 0으로 정의 합니다. Visual Basic과 같은 다른 언어와 함께 사용 될 경우 다른 하 한 값을 사용 하는 것이 좋습니다 수도 있습니다.
+C++ 프로그램에서 배열을 액세스 하려면 하 한을 0으로 정의 하는 것이 좋습니다. 배열이 다른 언어 (예: Visual Basic)와 함께 사용 될 경우에는 다른 하 한 값을 사용 하는 것이 더 적합할 수 있습니다.
 
 ##  <a name="getcount"></a>  CComSafeArrayBound::GetCount
 
@@ -88,11 +88,11 @@ ULONG GetCount() const throw();
 
 ### <a name="return-value"></a>반환 값
 
-요소 수를 반환합니다.
+요소 수를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-하는 경우 연결 된 `CComSafeArray` 개체가 나타내는 다차원 배열,이 메서드는 오른쪽에 있는 차원에 있는 요소의 총 수를 반환만 합니다. 사용 하 여 [CComSafeArray::GetCount](../../atl/reference/ccomsafearray-class.md#getcount) 요소의 총 수를 가져오려고 합니다.
+연결 `CComSafeArray` 된 개체가 다차원 배열을 나타내는 경우이 메서드는 가장 오른쪽 차원의 총 요소 수만 반환 합니다. [CComSafeArray:: GetCount](../../atl/reference/ccomsafearray-class.md#getcount) 를 사용 하 여 총 요소 수를 가져옵니다.
 
 ##  <a name="getlowerbound"></a>  CComSafeArrayBound::GetLowerBound
 
@@ -104,11 +104,11 @@ LONG GetLowerBound() const throw();
 
 ### <a name="return-value"></a>반환 값
 
-하한값을 반환 합니다 `CComSafeArrayBound` 개체입니다.
+`CComSafeArrayBound` 개체의 하 한을 반환 합니다.
 
 ##  <a name="getupperbound"></a>  CComSafeArrayBound::GetUpperBound
 
-상한 값을 반환 하려면이 메서드를 호출 합니다.
+상한을 반환 하려면이 메서드를 호출 합니다.
 
 ```
 LONG GetUpperBound() const throw();
@@ -116,15 +116,15 @@ LONG GetUpperBound() const throw();
 
 ### <a name="return-value"></a>반환 값
 
-상한을 반환 된 `CComSafeArrayBound` 개체입니다.
+`CComSafeArrayBound` 개체의 상한을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-상한 값은 요소 및 하한값 값의 수에 따라 달라 집니다. 예를 들어, 하 한은 0 이며 요소 수가 10에 상한 값은 9로 자동으로 설정 됩니다.
+상한을 요소 수 및 하 한 값에 따라 다릅니다. 예를 들어 하 한이 0이 고 요소 수가 10 이면 상한이 자동으로 9로 설정 됩니다.
 
 ##  <a name="operator_eq"></a>  CComSafeArrayBound::operator =
 
-집합의 `CComSafeArrayBound` 를 새 값입니다.
+를 새 값으로 설정 합니다. `CComSafeArrayBound`
 
 ```
 CComSafeArrayBound& operator= (const CComSafeArrayBound& bound) throw();
@@ -141,11 +141,11 @@ CComSafeArrayBound& operator= (ULONG ulCount) throw();
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 반환 합니다 `CComSafeArrayBound` 개체입니다.
+`CComSafeArrayBound` 개체에 대 한 포인터를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-합니다 `CComSafeArrayBound` 기존 사용 하 여 개체를 할당할 수 있습니다 `CComSafeArrayBound`, 또는 기본적으로 한 경우 0으로 설정 된 요소 수를 제공 하 여 합니다.
+개체 `CComSafeArrayBound` 는 기존 `CComSafeArrayBound`을 사용 하 여 할당 하거나 요소 수를 제공 하 여 할당할 수 있습니다 .이 경우에는 기본적으로 하 한이 0으로 설정 됩니다.
 
 ##  <a name="setcount"></a>  CComSafeArrayBound::SetCount
 
@@ -162,11 +162,11 @@ ULONG SetCount(ULONG ulCount) throw();
 
 ### <a name="return-value"></a>반환 값
 
-요소 수를 반환 합니다 `CComSafeArrayBound` 개체입니다.
+`CComSafeArrayBound` 개체의 요소 수를 반환 합니다.
 
 ##  <a name="setlowerbound"></a>  CComSafeArrayBound::SetLowerBound
 
-하한값을 설정 하려면이 메서드를 호출 합니다.
+하 한을 설정 하려면이 메서드를 호출 합니다.
 
 ```
 LONG SetLowerBound(LONG lLowerBound) throw();
@@ -175,17 +175,17 @@ LONG SetLowerBound(LONG lLowerBound) throw();
 ### <a name="parameters"></a>매개 변수
 
 *lLowerBound*<br/>
-하 한.
+하 한입니다.
 
 ### <a name="return-value"></a>반환 값
 
-새 하한값을 반환 합니다 `CComSafeArrayBound` 개체입니다.
+`CComSafeArrayBound` 개체의 새 하 한을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-배열에서 시각적 개체에 액세스할 수 있으면 C++ 프로그램인 것이 좋습니다 하한값은 0으로 정의 합니다. Visual Basic과 같은 다른 언어와 함께 사용 될 경우 다른 하 한 값을 사용 하는 것이 좋습니다 수도 있습니다.
+시각적 C++ 프로그램에서 배열에 액세스 하는 경우 하 한을 0으로 정의 하는 것이 좋습니다. 배열이 다른 언어 (예: Visual Basic)와 함께 사용 될 경우에는 다른 하 한 값을 사용 하는 것이 더 적합할 수 있습니다.
 
-상한 값은 요소 및 하한값 값의 수에 따라 달라 집니다. 예를 들어, 하 한은 0 이며 요소 수가 10에 상한 값은 9로 자동으로 설정 됩니다.
+상한을 요소 수 및 하 한 값에 따라 다릅니다. 예를 들어 하 한이 0이 고 요소 수가 10 이면 상한이 자동으로 9로 설정 됩니다.
 
 ## <a name="see-also"></a>참고자료
 

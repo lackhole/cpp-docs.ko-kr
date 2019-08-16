@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMFCReBar [MFC], OnUpdateCmdUI
 - CMFCReBar [MFC], SetPaneAlignment
 ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023
-ms.openlocfilehash: ccd500547bdcf65e922f7b5e5ca8d30e0423933d
-ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
+ms.openlocfilehash: d348cf7aac57ce213e4d3f602501d12cee8e20d8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68866179"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505438"
 ---
 # <a name="cmfcrebar-class"></a>CMFCReBar 클래스
 
@@ -49,7 +49,7 @@ class CMFCReBar : public CPane
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCReBar::AddBar](#addbar)|크기 조정 막대에 밴드를 추가 합니다.|
 |[CMFCReBar::CalcFixedLayout](#calcfixedlayout)|( [Cbasepane:: CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout)를 재정의 합니다.)|
@@ -76,7 +76,7 @@ Rebar 개체는 toolbar 개체와 비슷하게 동작 합니다. Rebar 컨트롤
 [!code-cpp[NVC_MFC_RebarTest#1](../../mfc/reference/codesnippet/cpp/cmfcrebar-class_1.h)]
 [!code-cpp[NVC_MFC_RebarTest#2](../../mfc/reference/codesnippet/cpp/cmfcrebar-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)\
 └&nbsp;[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)\
@@ -120,7 +120,7 @@ BOOL AddBar(
 [in, out] Rebar 배경에 표시할 비트맵을 지정 합니다.
 
 *dwStyle*<br/>
-진행 밴드에 적용할 스타일을 포함 합니다. 밴드 스타일의 전체 목록은 Windows SDK 설명서의 `fStyle` [re바 밴드 정보](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) 구조에서에 대 한 설명을 참조 하세요.
+진행 밴드에 적용할 스타일을 포함 합니다. 밴드 스타일의 전체 목록은 Windows SDK 설명서의 `fStyle` [re바 밴드 정보](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) 구조에서에 대 한 설명을 참조 하세요.
 
 *clrFore*<br/>
 진행 Rebar의 전경색을 나타냅니다.
@@ -150,7 +150,7 @@ BOOL Create(
 [in, out] 이 rebar 컨트롤의 부모 창에 대 한 포인터입니다.
 
 *dwCtrlStyle*<br/>
-진행 Rebar 컨트롤의 스타일을 지정 합니다. 기본 스타일 값은 **RBS_BANDBORDERS**이며,이는 좁은 선을 표시 하 여 rebar 컨트롤에서 인접 한 밴드를 분리 합니다. 유효한 스타일 목록은 Windows SDK 설명서에서 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) 을 참조 하세요.
+진행 Rebar 컨트롤의 스타일을 지정 합니다. 기본 스타일 값은 **RBS_BANDBORDERS**이며,이는 좁은 선을 표시 하 여 rebar 컨트롤에서 인접 한 밴드를 분리 합니다. 유효한 스타일 목록은 Windows SDK 설명서에서 [Rebar 컨트롤 스타일](/windows/win32/Controls/rebar-control-styles) 을 참조 하세요.
 
 *dwStyle*<br/>
 진행 Rebar 컨트롤의 창 스타일입니다. 유효한 스타일 목록은 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)을 참조 하세요.

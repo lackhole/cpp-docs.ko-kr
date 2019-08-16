@@ -1,5 +1,5 @@
 ---
-title: CMFCToolBarMenuButton 클래스
+title: Cmfc, Menubutton 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCToolBarMenuButton
@@ -92,14 +92,14 @@ helpviewer_keywords:
 - CMFCToolBarMenuButton [MFC], DrawDocumentIcon
 - CMFCToolBarMenuButton [MFC], m_bAlwaysCallOwnerDraw
 ms.assetid: cfa50176-7e4b-4527-9904-86a1b48fc1bc
-ms.openlocfilehash: 7733969a0218dacf481ac82c764911c61ecabbbf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 883d6a9242066289f15e58179a03c4f609699141
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62218027"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504710"
 ---
-# <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton 클래스
+# <a name="cmfctoolbarmenubutton-class"></a>Cmfc, Menubutton 클래스
 
 팝업 메뉴를 포함하는 도구 모음 단추입니다.
 더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
@@ -114,76 +114,76 @@ class CMFCToolBarMenuButton : public CMFCToolBarButton
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCToolBarMenuButton::CMFCToolBarMenuButton](#cmfctoolbarmenubutton)|`CMFCToolBarMenuButton` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CMFCToolBarMenuButton::CompareWith](#comparewith)|이 인스턴스와 제공된 된 비교 `CMFCToolBarButton` 개체입니다. (재정의 [CMFCToolBarButton::CompareWith](../../mfc/reference/cmfctoolbarbutton-class.md#comparewith).)|
-|[CMFCToolBarMenuButton::CopyFrom](#copyfrom)|현재 단추에 다른 도구 모음 단추의 속성을 복사합니다. (재정의 [CMFCToolBarButton::CopyFrom](../../mfc/reference/cmfctoolbarbutton-class.md#copyfrom).)|
-|[CMFCToolBarMenuButton::CreateFromMenu](#createfrommenu)|Windows 메뉴 핸들에서 도구 모음 메뉴를 초기화합니다.|
-|[CMFCToolBarMenuButton::CreateMenu](#createmenu)|도구 모음 메뉴의 명령으로 구성 된 Windows 메뉴를 만듭니다. Windows 메뉴에 대 한 핸들을 반환합니다.|
-|[CMFCToolBarMenuButton::CreatePopupMenu](#createpopupmenu)|팝업 메뉴 개체를 만듭니다 ( [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md)) 도구 모음 메뉴를 표시 합니다.|
+|[CMFCToolBarMenuButton::CompareWith](#comparewith)|이 인스턴스를 제공 `CMFCToolBarButton` 된 개체와 비교 합니다. [CMFCToolBarButton:: CompareWith로](../../mfc/reference/cmfctoolbarbutton-class.md#comparewith)재정의 합니다.|
+|[CMFCToolBarMenuButton::CopyFrom](#copyfrom)|다른 도구 모음 단추의 속성을 현재 단추로 복사 합니다. [에서 CMFCToolBarButton:: copyfrom](../../mfc/reference/cmfctoolbarbutton-class.md#copyfrom)재정의 합니다.|
+|[CMFCToolBarMenuButton::CreateFromMenu](#createfrommenu)|Windows 메뉴 핸들에서 도구 모음 메뉴를 초기화 합니다.|
+|[CMFCToolBarMenuButton::CreateMenu](#createmenu)|도구 모음 메뉴의 명령으로 구성 된 Windows 메뉴를 만듭니다. Windows 메뉴에 대 한 핸들을 반환 합니다.|
+|[CMFCToolBarMenuButton::CreatePopupMenu](#createpopupmenu)|도구 모음 메뉴를 표시 하는 팝업 메뉴 개체 ( [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md))를 만듭니다.|
 |[CMFCToolBarMenuButton::EnableQuickCustomize](#enablequickcustomize)||
-|[CMFCToolBarMenuButton::GetCommands](#getcommands)|도구 모음 메뉴의 명령 목록을 읽기 전용 액세스를 제공합니다.|
-|[CMFCToolBarMenuButton::GetImageRect](#getimagerect)|단추 이미지의 경계 사각형을 검색합니다.|
-|[CMFCToolBarMenuButton::GetPaletteRows](#getpaletterows)|메뉴 색상표 모드일 때 팝업 메뉴에서 행의 수를 반환 합니다.|
+|[CMFCToolBarMenuButton::GetCommands](#getcommands)|도구 모음 메뉴의 명령 목록에 대 한 읽기 전용 액세스를 제공 합니다.|
+|[CMFCToolBarMenuButton::GetImageRect](#getimagerect)|단추 이미지의 경계 사각형을 검색 합니다.|
+|[CMFCToolBarMenuButton::GetPaletteRows](#getpaletterows)|메뉴가 색상표 모드일 때 팝업 메뉴의 행 수를 반환 합니다.|
 |[CMFCToolBarMenuButton::GetPopupMenu](#getpopupmenu)|단추와 연결 된 팝업 메뉴 개체에 대 한 포인터를 반환 합니다.|
 |[CMFCToolBarMenuButton::HasButton](#hasbutton)||
-|[CMFCToolBarMenuButton::HaveHotBorder](#havehotborder)|사용자가 단추를 선택할 때 단추의 테두리가 표시 되는지 여부를 결정 합니다. (재정의 [CMFCToolBarButton::HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder).)|
+|[CMFCToolBarMenuButton::HaveHotBorder](#havehotborder)|사용자가 단추를 선택할 때 단추의 테두리를 표시할지 여부를 결정 합니다. [CMFCToolBarButton:: HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder)를 재정의 합니다.|
 |[CMFCToolBarMenuButton::IsBorder](#isborder)||
 |[CMFCToolBarMenuButton::IsClickedOnMenu](#isclickedonmenu)||
-|[CMFCToolBarMenuButton::IsDroppedDown](#isdroppeddown)|팝업 메뉴를 표시할지 여부를 결정 합니다.|
-|[CMFCToolBarMenuButton::IsEmptyMenuAllowed](#isemptymenuallowed)|선택한 메뉴 항목에서 사용자는 하위 메뉴를 열 수 있는지 여부를 확인 하기 위해 프레임 워크에서 호출 됩니다.|
-|[CMFCToolBarMenuButton::IsExclusive](#isexclusive)|단추 단독 모드 인지, 즉, 여부 팝업 메뉴에도 계속 열려 다른 도구 모음 또는 단추 위로 포인터를 이동 하는 경우에 결정 합니다.|
-|[CMFCToolBarMenuButton::IsMenuPaletteMode](#ismenupalettemode)|팝업 메뉴 색상표 모드 인지 여부를 결정 합니다.|
+|[CMFCToolBarMenuButton::IsDroppedDown](#isdroppeddown)|팝업 메뉴가 표시 되는지 여부를 결정 합니다.|
+|[CMFCToolBarMenuButton::IsEmptyMenuAllowed](#isemptymenuallowed)|사용자가 선택한 메뉴 항목에서 하위 메뉴를 열 수 있는지 여부를 확인 하기 위해 프레임 워크에서 호출 됩니다.|
+|[CMFCToolBarMenuButton::IsExclusive](#isexclusive)|사용자가 포인터를 다른 도구 모음이 나 단추로 이동한 경우에도 팝업 메뉴가 열려 있는지 여부를 확인 합니다.|
+|[CMFCToolBarMenuButton::IsMenuPaletteMode](#ismenupalettemode)|팝업 메뉴가 색상표 모드에 있는지 여부를 확인 합니다.|
 |[CMFCToolBarMenuButton::IsQuickMode](#isquickmode)||
-|[CMFCToolBarMenuButton::IsTearOffMenu](#istearoffmenu)|분리 막대가 팝업 메뉴에 포함 되어 있는지 여부를 결정 합니다.|
+|[CMFCToolBarMenuButton::IsTearOffMenu](#istearoffmenu)|팝업 메뉴에 분리 표시줄이 있는지 여부를 결정 합니다.|
 |[CMFCToolBarMenuButton::OnAfterCreatePopupMenu](#onaftercreatepopupmenu)||
-|[CMFCToolBarMenuButton::OnBeforeDrag](#onbeforedrag)|단추를 놓을 수 있는지 여부를 지정 합니다. (재정의 [CMFCToolBarButton::OnBeforeDrag](../../mfc/reference/cmfctoolbarbutton-class.md#onbeforedrag).)|
-|[CMFCToolBarMenuButton::OnCalculateSize](#oncalculatesize)|지정 된 디바이스 컨텍스트 및 도킹 상태에 대 한 단추의 크기를 계산 하기 위해 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|
-|[CMFCToolBarMenuButton::OnCancelMode](#oncancelmode)|처리 하기 위해 프레임 워크에서 호출 된 [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) 메시지입니다. (재정의 [CMFCToolBarButton::OnCancelMode](../../mfc/reference/cmfctoolbarbutton-class.md#oncancelmode).)|
-|[CMFCToolBarMenuButton::OnChangeParentWnd](#onchangeparentwnd)|새 도구 모음에 단추를 삽입할 때 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnChangeParentWnd](cmfctoolbarbutton-class.md#onchangeparentwnd).)|
-|[CMFCToolBarMenuButton::OnClick](#onclick)|사용자가 마우스 단추를 클릭 하면 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick).)|
+|[CMFCToolBarMenuButton::OnBeforeDrag](#onbeforedrag)|단추를 끌 수 있는지 여부를 지정 합니다. [CMFCToolBarButton:: OnBeforeDrag](../../mfc/reference/cmfctoolbarbutton-class.md#onbeforedrag)를 재정의 합니다.|
+|[CMFCToolBarMenuButton::OnCalculateSize](#oncalculatesize)|지정 된 장치 컨텍스트 및 도킹 상태에 대 한 단추의 크기를 계산 하기 위해 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize)를 재정의 합니다.|
+|[CMFCToolBarMenuButton::OnCancelMode](#oncancelmode)|[WM_CANCELMODE](/windows/win32/winmsg/wm-cancelmode) 메시지를 처리 하기 위해 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnCancelMode](../../mfc/reference/cmfctoolbarbutton-class.md#oncancelmode)를 재정의 합니다.|
+|[CMFCToolBarMenuButton::OnChangeParentWnd](#onchangeparentwnd)|단추가 새 도구 모음에 삽입 될 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnChangeParentWnd](cmfctoolbarbutton-class.md#onchangeparentwnd)를 재정의 합니다.|
+|[CMFCToolBarMenuButton::OnClick](#onclick)|사용자가 마우스 단추를 클릭할 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)을 재정의 합니다.|
 |[CMFCToolBarMenuButton::OnClickMenuItem](#onclickmenuitem)|사용자가 팝업 메뉴에서 항목을 선택할 때 프레임 워크에서 호출 됩니다.|
-|[CMFCToolBarMenuButton::OnContextHelp](#oncontexthelp)|부모 도구 모음에서 WM_HELPHITTEST 메시지를 처리 하는 경우 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp).)|
-|[CMFCToolBarMenuButton::OnDraw](#ondraw)|지정 된 스타일 및 옵션을 사용 하 여 단추를 그리기 위해 프레임 워크에서 호출 됩니다. (재정의 [CMFCToolBarButton::OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw).)|
-|[CMFCToolBarMenuButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|단추를 그리기 위해 프레임 워크에서 호출 합니다 **명령** 창 합니다 **사용자 지정** 대화 상자. (재정의 [CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).)|
+|[CMFCToolBarMenuButton::OnContextHelp](#oncontexthelp)|부모 도구 모음에서 WM_HELPHITTEST 메시지를 처리할 때 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp)를 재정의 합니다.|
+|[CMFCToolBarMenuButton::OnDraw](#ondraw)|지정 된 스타일 및 옵션을 사용 하 여 단추를 그리기 위해 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw)를 재정의 합니다.|
+|[CMFCToolBarMenuButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|**사용자 지정** 대화 상자의 **명령** 창에 단추를 그리기 위해 프레임 워크에서 호출 됩니다. [CMFCToolBarButton:: OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist)를 재정의 합니다.|
 |[CMFCToolBarMenuButton::OpenPopupMenu](#openpopupmenu)|사용자가 팝업 메뉴를 열 때 프레임 워크에서 호출 됩니다.|
-|[CMFCToolBarMenuButton::ResetImageToDefault](#resetimagetodefault)|단추와 연결 된 이미지를 기본값으로 설정 합니다. (재정의 [CMFCToolBarButton::ResetImageToDefault](../../mfc/reference/cmfctoolbarbutton-class.md#resetimagetodefault).)|
-|[CMFCToolBarMenuButton::SaveBarState](#savebarstate)|도구 모음 단추의 상태를 저장합니다. (재정의 [CMFCToolBarButton::SaveBarState](../../mfc/reference/cmfctoolbarbutton-class.md#savebarstate).)|
-|[CMFCToolBarMenuButton::Serialize](#serialize)|보관 파일에서이 개체를 읽거나 보관 파일에 씁니다. (재정의 [CMFCToolBarButton::Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize).)|
-|[CMFCToolBarMenuButton::SetACCData](#setaccdata)|제공 된 채웁니다 `CAccessibilityData` 도구 모음 단추에서 내게 필요한 옵션 데이터를 사용 하 여 개체입니다. (재정의 [CMFCToolBarButton::SetACCData](../../mfc/reference/cmfctoolbarbutton-class.md#setaccdata).)|
-|[CMFCToolBarMenuButton::SetMenuOnly](#setmenuonly)|도구 모음에 단추를 추가할 수 있는지 여부를 지정 합니다.|
-|[CMFCToolBarMenuButton::SetMenuPaletteMode](#setmenupalettemode)|팝업 메뉴 색상표 모드 인지 여부를 지정 합니다.|
+|[CMFCToolBarMenuButton::ResetImageToDefault](#resetimagetodefault)|단추와 연결 된 이미지를 기본값으로 설정 합니다. [CMFCToolBarButton:: ResetImageToDefault](../../mfc/reference/cmfctoolbarbutton-class.md#resetimagetodefault)를 재정의 합니다.|
+|[CMFCToolBarMenuButton::SaveBarState](#savebarstate)|도구 모음 단추의 상태를 저장 합니다. [CMFCToolBarButton:: Save 상태](../../mfc/reference/cmfctoolbarbutton-class.md#savebarstate)를 재정의 합니다.|
+|[CMFCToolBarMenuButton::Serialize](#serialize)|보관 저장소에서이 개체를 읽거나 보관 파일에 기록 합니다. [CMFCToolBarButton:: Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)를 재정의 합니다.|
+|[CMFCToolBarMenuButton::SetACCData](#setaccdata)|제공 `CAccessibilityData` 된 개체를 도구 모음 단추에 있는 내게 필요한 옵션 데이터로 채웁니다. [CMFCToolBarButton:: SetACCData](../../mfc/reference/cmfctoolbarbutton-class.md#setaccdata)를 재정의 합니다.|
+|[CMFCToolBarMenuButton::SetMenuOnly](#setmenuonly)|단추를 도구 모음에 추가할 수 있는지 여부를 지정 합니다.|
+|[CMFCToolBarMenuButton::SetMenuPaletteMode](#setmenupalettemode)|팝업 메뉴가 색상표 모드에 있는지 여부를 지정 합니다.|
 |[CMFCToolBarMenuButton::SetMessageWnd](#setmessagewnd)||
-|[CMFCToolBarMenuButton::SetRadio](#setradio)|선택 되어 있는지를 나타내는 아이콘을 표시 하려면 도구 모음 메뉴 단추를 강제로 수행 합니다.|
-|[CMFCToolBarMenuButton::SetTearOff](#settearoff)|분리 막대가 지정 팝업 메뉴 ID를 모음입니다.|
+|[CMFCToolBarMenuButton::SetRadio](#setradio)|도구 모음 메뉴 단추가 선택 되었음을 나타내는 아이콘을 표시 하도록 합니다.|
+|[CMFCToolBarMenuButton::SetTearOff](#settearoff)|팝업 메뉴의 분리 막대 ID를 지정 합니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CMFCToolBarMenuButton::DrawDocumentIcon](#drawdocumenticon)|메뉴 단추에서 아이콘을 그립니다.|
+|[CMFCToolBarMenuButton::DrawDocumentIcon](#drawdocumenticon)|메뉴 단추에 아이콘을 그립니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CMFCToolBarMenuButton::m_bAlwaysCallOwnerDraw](#m_balwayscallownerdraw)|프레임 워크를 항상 호출 true 이면 [CFrameWndEx::OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) 단추를 그릴 때.|
+|[CMFCToolBarMenuButton::m_bAlwaysCallOwnerDraw](#m_balwayscallownerdraw)|TRUE 이면 프레임 워크가 항상 단추를 그릴 때 [CFrameWndEx:: OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) 를 호출 합니다.|
 
 ## <a name="remarks"></a>설명
 
-`CMFCToolBarMenuButton` 메뉴, 하위 메뉴에 있는 메뉴 항목, 명령을 실행 하거나 메뉴를 표시 하는 단추 또는 메뉴만을 표시 하는 단추 나타날 수 있습니다. 이미지, 텍스트, 메뉴 핸들와 같은 매개 변수를 지정 하 여 메뉴 단추의 모양과 동작을 결정 하 고 명령 생성자에서 단추와 연결 된 ID `CMFCToolbarMenuButton::CMFCToolbarMenuButton`합니다.
+는 `CMFCToolBarMenuButton` 메뉴, 하위 메뉴가 포함 된 메뉴 항목, 명령을 실행 하거나 메뉴를 표시 하는 단추 또는 메뉴를 표시 하는 단추로 표시 될 수 있습니다. 생성자 `CMFCToolbarMenuButton::CMFCToolbarMenuButton`의 단추와 연결 된 이미지, 텍스트, 메뉴 핸들 및 명령 ID와 같은 매개 변수를 지정 하 여 메뉴 단추의 동작과 모양을 결정 합니다.
 
-사용자 지정 클래스에서 파생 된 `CMFCToolbarMenuButton` 클래스를 사용 해야 합니다는 [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) 매크로입니다. 합니다 [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate) 매크로 응용 프로그램을 닫으면 오류를 생성 합니다.
+`CMFCToolbarMenuButton` 클래스에서 파생 된 사용자 지정 클래스는 [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) 매크로를 사용 해야 합니다. [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate) 매크로는 응용 프로그램이 닫힐 때 오류를 생성 합니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 구성 하는 방법에 설명 된 `CMFCToolBarMenuButton` 개체입니다. 코드는 드롭다운 메뉴 색상표 모드 인지를 지정 하 고 메뉴 모음에서 메뉴 단추를 끌 때 생성 되는 분리 막대가 막대에 대 한 ID를 지정 하는 방법을 보여 줍니다. 이 코드 조각은 [워드 패드 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
+다음 예제에서는 `CMFCToolBarMenuButton` 개체를 구성 하는 방법을 보여 줍니다. 이 코드에서는 드롭다운 메뉴가 팔레트 모드 임을 지정 하는 방법과 사용자가 메뉴 모음에서 메뉴 단추를 끌 때 생성 되는 분리 표시줄의 ID를 지정 하는 방법을 보여 줍니다. 이 코드 조각은 [워드 패드 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_WordPad#10](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_1.cpp)]
 
@@ -218,30 +218,30 @@ CMFCToolBarMenuButton(
 ### <a name="parameters"></a>매개 변수
 
 *src*<br/>
-[in] 기존 `CMFCToolBarMenuButton` 에이 복사 될 개체 `CMFCToolBarMenuButton` 개체입니다.
+진행 `CMFCToolBarMenuButton` 이`CMFCToolBarMenuButton` 개체에 복사할 기존 개체입니다.
 
 *uiID*<br/>
-[in] 단추를 클릭할 때 실행할 명령 ID 또는 메뉴 단추의 명령 직접 실행 되지 않는 (단위)-1입니다.
+진행 사용자가 단추를 클릭할 때 실행할 명령의 ID입니다. 또는 (UINT)-1은 명령을 직접 실행 하지 않는 메뉴 단추의 경우입니다.
 
 *hMenu*<br/>
-[in] 메뉴;에 대 한 핸들 또는 메뉴 단추에 없는 경우 NULL입니다.
+진행 메뉴에 대 한 핸들입니다. 단추에 메뉴가 없으면 NULL입니다.
 
 *iImage*<br/>
-[in] 단추에 대 한 이미지의 인덱스 이 단추에 아이콘 없거나 지정 된 명령에 대 한 아이콘을 사용 하는 경우-1 *uiID*합니다. 색인 마다 동일한 `CMFCToolBarImages` 응용 프로그램의 개체입니다.
+진행 단추에 대 한 이미지의 인덱스입니다. 이 단추에 아이콘이 없거나 *Uiid*로 지정 된 명령에 대 한 아이콘을 사용 하는 경우에는-1입니다. 인덱스는 응용 프로그램의 각 `CMFCToolBarImages` 개체에 대해 동일 합니다.
 
 *lpszText*<br/>
-[in] 도구 모음 메뉴 단추의 텍스트입니다.
+진행 도구 모음 메뉴 단추의 텍스트입니다.
 
 *bUserButton*<br/>
-[in] TRUE 이면 사용자 정의 이미지를 표시 하는 단추 FALSE 이면 지정 된 명령과 사용 하 여 연결 된 미리 정의 된 이미지를 표시 하는 단추 *uiID*합니다.
+진행 단추에 사용자 정의 이미지가 표시 되 면 TRUE입니다. 단추에 *Uiid*로 지정 된 명령과 연결 된 미리 정의 된 이미지가 표시 되 면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-하는 경우 *uiID* 유효한 명령 ID, 단추를 클릭할 때 해당 명령을 수행 합니다. 하는 경우 *hMenu* 핸들이 유효한 메뉴 단추를 메뉴에 나타나는 경우 도구 모음 또는 하위 메뉴에 표시 될 경우 드롭 다운 메뉴를 제공 합니다. 둘 다 *uiID* 하 고 *hMenu* 단추를 클릭할 때 명령을 수행 하는 부분과 드롭 다운 메뉴는 아래쪽 화살표를 사용 하 여 일부를 사용 하 여 분할 단추는 사용할 때 사용자 클릭합니다. 그러나 경우 *hMenu* 유효 사용자 메뉴에 단추를 삽입할 때 명령을 수행 하려면 단추를 클릭할 수 없습니다.
+*Uiid* 가 유효한 명령 ID 인 경우 단추는 사용자가 클릭 하면 해당 명령을 수행 합니다. *HMenu* 가 유효한 메뉴 핸들 인 경우 단추는 메뉴에 표시 되 면 도구 모음이 나 하위 메뉴에 표시 되는 드롭다운 메뉴를 제공 합니다. *Uiid* 와 *hMenu* 가 모두 유효 하면 단추는 사용자가 클릭 했을 때 명령을 수행 하는 부분을 포함 하는 분할 단추이 고, 사용자가 클릭할 때 메뉴를 드롭다운 화살표가 있는 부분입니다. 그러나 *hMenu* 가 유효한 경우 단추를 클릭 하 여 단추를 메뉴에 삽입 하면 명령을 실행할 수 없게 됩니다.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는의 개체를 생성 하는 방법에 설명 합니다 `CMFCToolBarMenuButton` 클래스입니다. 이 코드 조각은 [워드 패드 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
+다음 예제에서는 `CMFCToolBarMenuButton` 클래스의 개체를 생성 하는 방법을 보여 줍니다. 이 코드 조각은 [워드 패드 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_WordPad#9](../../mfc/reference/codesnippet/cpp/cmfctoolbarmenubutton-class_2.cpp)]
 
@@ -273,7 +273,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 ##  <a name="createfrommenu"></a>  CMFCToolBarMenuButton::CreateFromMenu
 
-Windows 메뉴 핸들에서 도구 모음 메뉴를 초기화합니다.
+Windows 메뉴 핸들에서 도구 모음 메뉴를 초기화 합니다.
 
 ```
 virtual void CreateFromMenu(HMENU hMenu);
@@ -282,17 +282,17 @@ virtual void CreateFromMenu(HMENU hMenu);
 ### <a name="parameters"></a>매개 변수
 
 *hMenu*<br/>
-[in] 메뉴 핸들입니다.
+진행 메뉴에 대 한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
-도구 모음 메뉴 단추에서 드롭다운 메뉴를 표시할 수 있습니다.
+도구 모음 메뉴 단추를 클릭 하면 드롭다운 하위 메뉴가 표시 됩니다.
 
-프레임 워크의 명령 메뉴에서 하위 메뉴에서 초기화 하려면이 메서드를 호출 합니다.
+프레임 워크는이 메서드를 호출 하 여 메뉴의 하위 메뉴에 있는 명령을 초기화 합니다.
 
 ##  <a name="createmenu"></a>  CMFCToolBarMenuButton::CreateMenu
 
-도구 모음 메뉴의 명령으로 구성 된 메뉴를 만듭니다. 메뉴에 대 한 핸들을 반환합니다.
+도구 모음 메뉴의 명령으로 구성 된 메뉴를 만듭니다. 메뉴에 대 한 핸들을 반환 합니다.
 
 ```
 virtual HMENU CreateMenu() const;
@@ -300,15 +300,15 @@ virtual HMENU CreateMenu() const;
 
 ### <a name="return-value"></a>반환 값
 
-경우 메뉴에는 처리 성공 합니다. 도구 모음 메뉴 단추를 사용 하 여 연결 된 명령 목록이 비어 있으면 NULL입니다.
+성공 하면 메뉴에 대 한 핸들입니다. 도구 모음 메뉴 단추와 연결 된 명령 목록이 비어 있으면 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-메뉴에 생성 되는 방식을 사용자 지정 파생된 클래스에서이 메서드를 재정의할 수 있습니다.
+파생 클래스에서이 메서드를 재정의 하 여 메뉴가 생성 되는 방식을 사용자 지정할 수 있습니다.
 
 ##  <a name="createpopupmenu"></a>  CMFCToolBarMenuButton::CreatePopupMenu
 
-만듭니다는 `CMFCPopupMenu` 도구 모음 메뉴를 표시 하는 개체입니다.
+도구 모음 `CMFCPopupMenu` 메뉴를 표시 하는 개체를 만듭니다.
 
 ```
 virtual CMFCPopupMenu* CreatePopupMenu();
@@ -316,13 +316,13 @@ virtual CMFCPopupMenu* CreatePopupMenu();
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 `CMFCPopupMenu` 도구 모음 메뉴 단추를 사용 하 여 연결 된 드롭다운 메뉴를 표시 하는 개체입니다.
+도구 모음 메뉴 단추 `CMFCPopupMenu` 와 연결 된 드롭다운 메뉴를 표시 하는 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
 이 메서드는 단추와 연결 된 드롭다운 메뉴의 표시를 준비 하기 위해 프레임 워크에서 호출 됩니다.
 
-기본 구현에서 방금 생성 하 고 반환 된 새 `CMFCPopupMenu` 개체입니다. 파생된 형식을 사용 하려는 경우이 메서드를 재정의 [CMFCPopupMenu 클래스](cmfcpopupmenu-class.md) 또는 추가 초기화를 수행 합니다.
+기본 구현에서는 새 `CMFCPopupMenu` 개체만 생성 하 고 반환 합니다. [CMFCPopupMenu 클래스](cmfcpopupmenu-class.md) 의 파생 형식을 사용 하거나 추가 초기화를 수행 하려면이 메서드를 재정의 합니다.
 
 ##  <a name="drawdocumenticon"></a>  CMFCToolBarMenuButton::DrawDocumentIcon
 
@@ -338,17 +338,17 @@ void DrawDocumentIcon(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-[in] 장치 컨텍스트에 대 한 포인터입니다.
+진행 장치 컨텍스트에 대 한 포인터입니다.
 
 *rectImage*<br/>
-[in] 이미지 경계 사각형의 좌표입니다.
+진행 이미지 경계 사각형의 좌표입니다.
 
 *hIcon*<br/>
-[in] 아이콘에 대 한 핸들입니다.
+진행 아이콘에 대 한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 문서 아이콘을 사용 하 고 가운데에서 지정 된 영역에 있는 메뉴 단추를 그립니다 *rectImage*합니다.
+이 메서드는 문서 아이콘을 사용 하 여 *rectImage*로 지정 된 영역의 가운데에 있는 메뉴 단추에 그립니다.
 
 ##  <a name="enablequickcustomize"></a>  CMFCToolBarMenuButton::EnableQuickCustomize
 
@@ -410,7 +410,7 @@ BOOL IsQuickMode();
 
 ##  <a name="getcommands"></a>  CMFCToolBarMenuButton::GetCommands
 
-도구 모음 메뉴의 명령 목록을 읽기 전용 액세스를 제공합니다.
+도구 모음 메뉴의 명령 목록에 대 한 읽기 전용 액세스를 제공 합니다.
 
 ```
 const CObList& GetCommands() const;
@@ -418,15 +418,15 @@ const CObList& GetCommands() const;
 
 ### <a name="return-value"></a>반환 값
 
-Const에 대 한 참조를 [CObList 클래스](../../mfc/reference/coblist-class.md) 개체의 컬렉션을 포함 하는 [CMFCToolBarButton 클래스](../../mfc/reference/cmfctoolbarbutton-class.md) 개체입니다.
+[CMFCToolBarButton class](../../mfc/reference/cmfctoolbarbutton-class.md) 개체의 컬렉션을 포함 하는 [CObList 클래스](../../mfc/reference/coblist-class.md) 개체에 대 한 const 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-도구 모음 메뉴 단추는 하위 메뉴를 표시할 수 있습니다. 생성자 또는 하위 메뉴에 있는 명령의 목록을 제공할 수 있습니다 [CMFCToolBarMenuButton::CreateFromMenu](#createfrommenu) (HMENU) 메뉴에 있습니다. 메뉴에서 파생 되는 개체의 목록으로 변환할 [CMFCToolBarButton 클래스](../../mfc/reference/cmfctoolbarbutton-class.md) 내부에 저장 하 고 `CObList` 개체입니다. 이 메서드를 호출 하 여이 목록에 액세스할 수 있습니다.
+도구 모음 메뉴 단추를 클릭 하면 하위 메뉴가 표시 됩니다. 생성자의 하위 메뉴 또는 [CmfcHMENU Menubutton:: CreateFromMenu](#createfrommenu) 에서 메뉴에 대 한 핸들로 명령 목록을 제공할 수 있습니다 (). 메뉴는 [CMFCToolBarButton 클래스](../../mfc/reference/cmfctoolbarbutton-class.md) 에서 파생 되 고 내부 `CObList` 개체에 저장 된 개체의 목록으로 변환 됩니다. 이 메서드를 호출 하 여이 목록에 액세스할 수 있습니다.
 
 ##  <a name="getimagerect"></a>  CMFCToolBarMenuButton::GetImageRect
 
-단추 이미지의 경계 사각형을 검색합니다.
+단추 이미지의 경계 사각형을 검색 합니다.
 
 ```
 void GetImageRect(CRect& rectImage);
@@ -435,11 +435,11 @@ void GetImageRect(CRect& rectImage);
 ### <a name="parameters"></a>매개 변수
 
 *rectImage*<br/>
-[out] 에 대 한 참조를 `CRect` 이미지가 경계 사각형의 좌표를 받는 개체입니다.
+제한이 이미지 경계 사각형의 `CRect` 좌표를 받는 개체에 대 한 참조입니다.
 
 ##  <a name="getpaletterows"></a>  CMFCToolBarMenuButton::GetPaletteRows
 
-메뉴 색상표 모드일 때 드롭다운 메뉴에서 행의 수를 반환 합니다.
+메뉴가 색상표 모드에 있을 때 드롭다운 메뉴의 행 수를 반환 합니다.
 
 ```
 int GetPaletteRows() const;
@@ -451,11 +451,11 @@ int GetPaletteRows() const;
 
 ### <a name="remarks"></a>설명
 
-메뉴 단추 색상표 모드로 설정 되 면 제한 된 수의 행만을 사용 하 여 여러 열에 메뉴 항목이 표시 됩니다. 행의 번호를 가져오려면이 메서드를 호출 합니다. 사용 하도록 설정 또는 색상표 모드 사용 안 함 고 사용 하 여 행의 수를 지정할 수 있습니다 [CMFCToolBarMenuButton::SetMenuPaletteMode](#setmenupalettemode)합니다.
+메뉴 단추가 팔레트 모드로 설정 된 경우 메뉴 항목은 제한 된 수의 행만 있는 여러 열에 표시 됩니다. 행 수를 가져오려면이 메서드를 호출 합니다. 색상표 모드를 사용 하거나 사용 하지 않도록 설정 하 고 [CmfcSetMenuPaletteMode Menubutton::](#setmenupalettemode)를 사용 하 여 행 수를 지정할 수 있습니다.
 
 ##  <a name="getpopupmenu"></a>  CMFCToolBarMenuButton::GetPopupMenu
 
-에 대 한 포인터를 반환 합니다 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 단추의 드롭 다운 메뉴를 나타내는 개체입니다.
+단추의 드롭다운 메뉴를 나타내는 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 개체에 대 한 포인터를 반환 합니다.
 
 ```
 CMFCPopupMenu* GetPopupMenu() const;
@@ -463,15 +463,15 @@ CMFCPopupMenu* GetPopupMenu() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 프레임 워크의 하위 메뉴 도구 모음 메뉴 단추의; 그린 때 생성 된 개체 없는 하위 메뉴에 표시 되 면 NULL입니다.
+프레임 워크에서 도구 모음 메뉴 단추의 하위 메뉴를 그린 경우 만들어진 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 개체에 대 한 포인터입니다. 하위 메뉴가 표시 되지 않는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-도구 모음 메뉴 단추 드롭다운 메뉴를 표시 하는 경우에 단추를 만듭니다는 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 메뉴를 나타내는 개체입니다. 에 대 한 포인터를 가져오려면이 메서드를 호출 합니다 `CMFCPopupMenu` 개체입니다. 임시 되 고 사용자가 드롭다운 메뉴를 닫을 때 유효 하지 않게 되므로 반환된 된 포인터를 저장 하지 마십시오.
+도구 모음 메뉴 단추에 드롭다운 메뉴가 표시 되 면 단추를 클릭 하 여 메뉴를 나타내는 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 개체를 만듭니다. `CMFCPopupMenu` 개체에 대 한 포인터를 가져오려면이 메서드를 호출 합니다. 반환 된 포인터는 일시적 이므로 사용자가 드롭다운 메뉴를 닫을 때 유효 하지 않게 되므로 저장 해서는 안 됩니다.
 
 ##  <a name="isdroppeddown"></a>  CMFCToolBarMenuButton::IsDroppedDown
 
-팝업 메뉴 현재 표시 되는지 여부를 나타냅니다.
+팝업 메뉴가 현재 표시 되어 있는지 여부를 나타냅니다.
 
 ```
 virtual BOOL IsDroppedDown() const;
@@ -479,11 +479,11 @@ virtual BOOL IsDroppedDown() const;
 
 ### <a name="return-value"></a>반환 값
 
-도구 모음 메뉴 단추; 해당 하위 메뉴를 표시 하는 경우 TRUE 그렇지 않으면 FALSE입니다.
+도구 모음 메뉴 단추에 해당 하위 메뉴가 표시 되 면 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ##  <a name="isemptymenuallowed"></a>  CMFCToolBarMenuButton::IsEmptyMenuAllowed
 
-빈 하위 메뉴 항목에 표시 되는지 여부를 지정 합니다.
+메뉴 항목에 빈 하위 메뉴가 표시 되는지 여부를 지정 합니다.
 
 ```
 virtual BOOL IsEmptyMenuAllowed() const;
@@ -491,17 +491,17 @@ virtual BOOL IsEmptyMenuAllowed() const;
 
 ### <a name="return-value"></a>반환 값
 
-프레임 워크 하위 메뉴에서 비어 있는 경우에 현재 선택한 메뉴 항목의 하위 메뉴가 열리면 TRUE 그렇지 않으면 FALSE입니다.
+하위 메뉴가 비어 있는 경우에도 프레임 워크에서 현재 선택 된 메뉴 항목의 하위 메뉴를 여는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-프레임 워크는 사용자가 현재 선택한 메뉴 항목에서 하위 메뉴를 연 하려고 할 때이 메서드를 호출 합니다. 하위 메뉴에서 비어 있는 경우 및 `IsEmptyMenuAllowed` 하위 메뉴가 열리지 것입니다 FALSE를 반환 합니다.
+사용자가 현재 선택 된 메뉴 항목에서 하위 메뉴를 열려고 하면 프레임 워크에서이 메서드를 호출 합니다. 하위 메뉴가 비어 있고 `IsEmptyMenuAllowed` FALSE를 반환 하는 경우 하위 메뉴가 열리지 않습니다.
 
-기본 구현은 FALSE를 반환합니다. 이 동작을 사용자 지정 하려면이 메서드를 재정의 합니다.
+기본 구현에서는 FALSE를 반환 합니다. 이 동작을 사용자 지정 하려면이 메서드를 재정의 합니다.
 
 ##  <a name="isexclusive"></a>  CMFCToolBarMenuButton::IsExclusive
 
-단추 단독 모드 인지 여부를 나타냅니다.
+단추가 배타 모드 인지 여부를 나타냅니다.
 
 ```
 virtual BOOL IsExclusive() const;
@@ -509,17 +509,17 @@ virtual BOOL IsExclusive() const;
 
 ### <a name="return-value"></a>반환 값
 
-단추 단독 모드에서 작동 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
+단추가 배타 모드로 작동 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-사용자가 단추에 팝업 메뉴를 열고 다음 다른 메뉴 또는 도구 모음 단추 위로 마우스 포인터를 이동, 팝업 메뉴 단추를 배타 모드로 아닌 닫힙니다.
+사용자가 단추에 대 한 팝업 메뉴를 열고 마우스 포인터를 다른 도구 모음이 나 메뉴 단추로 이동 하면 단추가 단독 모드에 있지 않으면 팝업 메뉴가 닫힙니다.
 
-기본 구현에서는 항상 FALSE를 반환합니다. 단독 모드를 설정 하려는 경우에 파생된 클래스에서이 메서드를 재정의 합니다.
+기본 구현에서는 항상 FALSE를 반환 합니다. 단독 모드를 설정 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="ismenupalettemode"></a>  CMFCToolBarMenuButton::IsMenuPaletteMode
 
-드롭다운 메뉴 색상표 모드 인지 여부를 결정 합니다.
+드롭다운 메뉴가 색상표 모드에 있는지 여부를 확인 합니다.
 
 ```
 BOOL IsMenuPaletteMode() const;
@@ -527,15 +527,15 @@ BOOL IsMenuPaletteMode() const;
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 색상표 모드 사용, 그렇지 않으면 FALSE입니다.
+색상표 모드를 사용할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-메뉴 단추 색상표 모드로 설정 되 면 메뉴 항목 제한 된 수의 행만을 사용 하 여 여러 열에 나타납니다. 행의 번호를 가져오려면이 메서드를 호출 합니다. 호출 하 여 색상표 모드를 사용 하지 않도록 설정 하거나 설정할 수 있습니다 [CMFCToolBarMenuButton::SetMenuPaletteMode](#setmenupalettemode)합니다.
+메뉴 단추가 팔레트 모드로 설정 된 경우 메뉴 항목은 제한 된 수의 행만 있는 여러 열에 표시 됩니다. 행 수를 가져오려면이 메서드를 호출 합니다. [CmfcSetMenuPaletteMode Menubutton::](#setmenupalettemode)를 호출 하 여 색상표 모드를 사용 하거나 사용 하지 않도록 설정할 수 있습니다.
 
 ##  <a name="istearoffmenu"></a>  CMFCToolBarMenuButton::IsTearOffMenu
 
-분리 막대가 드롭 다운 메뉴에 포함 되어 있는지 여부를 나타냅니다.
+드롭다운 메뉴에 분리 표시줄이 있는지 여부를 나타냅니다.
 
 ```
 virtual BOOL IsTearOffMenu() const;
@@ -543,15 +543,15 @@ virtual BOOL IsTearOffMenu() const;
 
 ### <a name="return-value"></a>반환 값
 
-분리 막대가; 도구 모음 메뉴 단추에 포함 되어 있으면 TRUE 그렇지 않으면 FALSE입니다.
+도구 모음 메뉴 단추에 분리 표시줄이 있으면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-분리 기능을 사용 하 여 분리 막대가 설정 호출 ID를 막대 [CMFCToolBarMenuButton::SetTearOff](#settearoff)합니다.
+분리 기능을 사용 하도록 설정 하 고 분리 된 기능 ID를 설정 하려면 Cmfc도구 모음 메뉴 [:: SetTearOff](#settearoff)를 호출 합니다.
 
 ##  <a name="m_balwayscallownerdraw"></a>  CMFCToolBarMenuButton::m_bAlwaysCallOwnerDraw
 
-프레임 워크를 항상 호출 여부를 지정 [CFrameWndEx::OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) 단추를 그릴 때.
+단추를 그릴 때 프레임 워크가 항상 [CFrameWndEx:: OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) 를 호출 하는지 여부를 지정 합니다.
 
 ```
 static BOOL m_bAlwaysCallOwnerDraw;
@@ -559,7 +559,7 @@ static BOOL m_bAlwaysCallOwnerDraw;
 
 ### <a name="remarks"></a>설명
 
-단추를 항상 호출이 멤버 변수가 TRUE로 설정 되 면 [CFrameWndEx::OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) 단추에 이미지를 표시 하는 방법입니다. 때 `m_bAlwaysCallOwnerDraw` 은 FALSE 단추 자체 이미지를 사용 하는 미리 정의 된 경우 이미지를 그립니다. 그렇지 않으면 `OnDrawMenuImage`합니다.
+이 멤버 변수를 TRUE로 설정 하면 단추는 항상 [CFrameWndEx:: OnDrawMenuImage](../../mfc/reference/cframewndex-class.md#ondrawmenuimage) 메서드를 호출 하 여 단추에 이미지를 표시 합니다. `m_bAlwaysCallOwnerDraw` 가 FALSE 이면 이미지가 미리 정의 된 경우 단추 자체가 이미지를 그립니다. 그렇지 않으면 `OnDrawMenuImage`합니다.
 
 ##  <a name="onaftercreatepopupmenu"></a>  CMFCToolBarMenuButton::OnAfterCreatePopupMenu
 
@@ -637,7 +637,7 @@ virtual BOOL OnClick(
 
 ##  <a name="onclickmenuitem"></a>  CMFCToolBarMenuButton::OnClickMenuItem
 
-드롭다운 메뉴에서 항목을 선택할 때 프레임 워크에서 호출 됩니다.
+사용자가 드롭다운 메뉴에서 항목을 선택할 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual BOOL OnClickMenuItem();
@@ -645,13 +645,13 @@ virtual BOOL OnClickMenuItem();
 
 ### <a name="return-value"></a>반환 값
 
-프레임 워크의 기본 메뉴 항목 처리를 계속 되어야 하면 FALSE 그렇지 않으면 TRUE입니다. 기본 구현에서는 항상 FALSE를 반환합니다.
+프레임 워크에서 기본 메뉴 항목 처리를 계속 해야 하는 경우 FALSE이 고, 그렇지 않으면 TRUE입니다. 기본 구현에서는 항상 FALSE를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자가 메뉴 항목을 클릭할 때 프레임 워크는 해당 항목과 연관 된 명령을 실행 합니다.
+사용자가 메뉴 항목을 클릭 하면 프레임 워크는 해당 항목과 연결 된 명령을 실행 합니다.
 
-메뉴 항목을 처리 하는 사용자 지정 재정의 `OnClickMenuItem` 에서 파생 된 클래스에서 `CMFCToolBarMenuButton` 클래스입니다. 재정의 해야 [CFrameWndEx::OnShowPopupMenu](../../mfc/reference/cframewndex-class.md#onshowpopupmenu) 바꾸고 메뉴 단추 파생된 클래스의 인스턴스를 사용 하 여 특별 한 처리가 필요 합니다.
+메뉴 항목 처리를 사용자 지정 하려면 클래스 `OnClickMenuItem` 에서 `CMFCToolBarMenuButton` 파생 된 클래스에서를 재정의 합니다. 또한 [CFrameWndEx:: OnShowPopupMenu](../../mfc/reference/cframewndex-class.md#onshowpopupmenu) 를 재정의 하 고 특수 한 처리를 필요로 하는 메뉴 단추를 파생 클래스의 인스턴스로 바꾸어야 합니다.
 
 ##  <a name="oncontexthelp"></a>  CMFCToolBarMenuButton::OnContextHelp
 
@@ -715,7 +715,7 @@ virtual int OnDrawOnCustomizeList(
 
 ##  <a name="openpopupmenu"></a>  CMFCToolBarMenuButton::OpenPopupMenu
 
-사용자가 도구 모음 메뉴 단추의 드롭 다운 메뉴를 열 때 프레임 워크에서 호출 됩니다.
+사용자가 도구 모음 메뉴 단추의 드롭다운 메뉴를 열 때 프레임 워크에서 호출 됩니다.
 
 ```
 virtual BOOL OpenPopupMenu(CWnd* pWnd=NULL);
@@ -724,15 +724,15 @@ virtual BOOL OpenPopupMenu(CWnd* pWnd=NULL);
 ### <a name="parameters"></a>매개 변수
 
 *pWnd*<br/>
-[in] 드롭다운 메뉴 명령을 수신 하는 기간을 지정 합니다. 도구 모음 메뉴 단추가 부모 창 하는 경우에 NULL 수 있습니다.
+진행 드롭다운 메뉴 명령을 받는 창을 지정 합니다. 도구 모음 메뉴 단추에 부모 창이 있는 경우에만 NULL 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
-TRUE는 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 개체가 만들어져 있고 열이 고, 그렇지 않으면 FALSE입니다.
+[CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) 개체가 생성 되어 성공적으로 열리면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수는 사용자가 도구 모음 메뉴 단추에서 드롭다운 메뉴를 열면 프레임 워크에서 호출 됩니다.
+이 함수는 사용자가 도구 모음 메뉴 단추에서 드롭다운 메뉴를 열 때 프레임 워크에서 호출 됩니다.
 
 ##  <a name="resetimagetodefault"></a>  CMFCToolBarMenuButton::ResetImageToDefault
 
@@ -750,7 +750,7 @@ virtual void SaveBarState();
 
 ### <a name="remarks"></a>설명
 
-프레임 워크는 끌어서 놓기 작업의 결과로 도구 모음 단추를 만들 때이 메서드를 호출 합니다. 이 메서드를 호출 합니다 [CMFCPopupMenu::SaveState](../../mfc/reference/cmfcpopupmenu-class.md#savestate) 최상위 팝업 메뉴를 다시 해당 메뉴에 팝업 메뉴의 부모 단추를 사용 하면 메서드의 합니다.
+프레임 워크는 끌어서 놓기 작업의 결과로 도구 모음 단추를 만들 때이 메서드를 호출 합니다. 이 메서드는 최상위 팝업 메뉴의 [CMFCPopupMenu:: SaveState](../../mfc/reference/cmfcpopupmenu-class.md#savestate) 메서드를 호출 합니다. 그러면 팝업 메뉴의 부모 단추가 해당 메뉴를 다시 만듭니다.
 
 ##  <a name="serialize"></a>  CMFCToolBarMenuButton::Serialize
 
@@ -792,7 +792,7 @@ virtual BOOL SetACCData(
 
 ##  <a name="setmenuonly"></a>  CMFCToolBarMenuButton::SetMenuOnly
 
-유효한 명령 ID와 하위 메뉴에 있을 때 단추 메뉴 단추 또는 분할 단추를 그릴지 여부를 지정 합니다.
+단추를 메뉴 단추나 분할 단추로 그릴지 여부를 지정 합니다 (유효한 명령 ID와 하위 메뉴가 모두 있는 경우).
 
 ```
 void SetMenuOnly(BOOL bMenuOnly);
@@ -801,15 +801,15 @@ void SetMenuOnly(BOOL bMenuOnly);
 ### <a name="parameters"></a>매개 변수
 
 *bMenuOnly*<br/>
-[in] 에 있을 때 올바른 명령 ID와 하위 메뉴의 경우 FALSE 유효한 명령 ID와 하위 메뉴에 있을 때 분할 단추와이 단추를 표시 하려면 메뉴 단추를으로이 단추를 표시 하려면 TRUE입니다.
+진행 유효한 명령 ID와 하위 메뉴가 모두 있을 때이 단추를 메뉴 단추로 표시 하려면 TRUE이 고, 유효한 명령 ID와 하위 메뉴가 모두 있는 경우이 단추를 분할 단추로 표시 하려면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-일반적으로 도구 모음 메뉴 단추 명령 ID와 하위 메뉴에 있는 경우 메뉴 아래쪽 화살표 단추는 기본 단추 및 연결에 있는 분할 단추를 표시 됩니다. 이 메서드를 호출 하 고 *bMenuOnly* 가 TRUE 인 단추 대신 단추에서 아래쪽 화살표를 사용 하 여 단일 메뉴 단추를 표시 합니다. 사용자가 두 모드에 있는 화살표를 클릭 하면 하위 메뉴가 열리고 모드나 프레임 워크에서에서 단추의 아닌 화살표 부분 실행 명령을 클릭할 때.
+일반적으로 도구 모음 메뉴 단추에 하위 메뉴와 명령 ID가 모두 있는 경우 메뉴는 주 단추와 연결 된 아래쪽 화살표 단추를 포함 하는 분할 단추가 됩니다. 이 메서드를 호출 하 고 *Bmenuonly* 가 TRUE 이면 단추는 단추에 아래쪽 화살표가 있는 단일 메뉴 단추로 표시 됩니다. 사용자가 두 모드 중 하나에서 화살표를 클릭 하면 하위 메뉴가 열리고, 사용자가 두 모드 중 어느 모드에서 든 단추의 화살표가 아닌 부분을 클릭 하면 프레임 워크는 명령을 실행 합니다.
 
 ##  <a name="setmenupalettemode"></a>  CMFCToolBarMenuButton::SetMenuPaletteMode
 
-드롭다운 메뉴 색상표 모드 인지 여부를 지정 합니다.
+드롭다운 메뉴가 색상표 모드에 있는지 여부를 지정 합니다.
 
 ```
 void SetMenuPaletteMode(
@@ -820,14 +820,14 @@ void SetMenuPaletteMode(
 ### <a name="parameters"></a>매개 변수
 
 *bMenuPaletteMode*<br/>
-[in] 드롭다운 메뉴 색상표 모드 인지 여부를 지정 합니다.
+진행 드롭다운 메뉴가 색상표 모드에 있는지 여부를 지정 합니다.
 
 *nPaletteRows*<br/>
-[in] 색상표에 있는 행의 수입니다.
+진행 색상표의 행 수입니다.
 
 ### <a name="remarks"></a>설명
 
-색상표 모드에서는 모든 메뉴 항목이 여러 열로 된 색상표도 표시 됩니다. 사용 하 여 행의 수를 지정할 *nPaletteRows*합니다.
+색상표 모드에서 모든 메뉴 항목은 여러 열 색상표로 표시 됩니다. *NPaletteRows*를 사용 하 여 행 수를 지정 합니다.
 
 ##  <a name="setmessagewnd"></a>  CMFCToolBarMenuButton::SetMessageWnd
 
@@ -843,7 +843,7 @@ void SetMessageWnd(CWnd* pWndMessage);
 
 ##  <a name="setradio"></a>  CMFCToolBarMenuButton::SetRadio
 
-선택 시 라디오 단추 스타일 아이콘을 표시 하려면 도구 모음 메뉴 단추를 설정 합니다.
+선택 된 라디오 단추 스타일 아이콘을 표시 하는 도구 모음 메뉴 단추를 설정 합니다.
 
 ```
 virtual void SetRadio();
@@ -851,13 +851,13 @@ virtual void SetRadio();
 
 ### <a name="remarks"></a>설명
 
-메뉴 단추를 선택 하는 동안을 그릴 때 호출 [CMFCVisualManager::OnDrawMenuCheck](../../mfc/reference/cmfcvisualmanager-class.md#ondrawmenucheck) 확인 표시 아이콘을 그릴 합니다. 기본적으로 `OnDrawMenuCheck` 현재 비주얼 관리자 확인란을 그립니다는 요청 메뉴 단추에서 확인 표시의 스타일을 지정 합니다. 이 메서드를 호출 하면 현재 비주얼 관리자 메뉴 단추에서 라디오 단추 스타일 확인 표시를 대신 그립니다. 이 변경 작업은 실행 취소할 수 없습니다.
+선택 된 상태에서 메뉴 단추를 그리면 [Cmfcvisualmanager:: OnDrawMenuCheck](../../mfc/reference/cmfcvisualmanager-class.md#ondrawmenucheck) 를 호출 하 여 확인 표시 아이콘을 그립니다. 기본적으로는 `OnDrawMenuCheck` 현재 비주얼 관리자가 메뉴 단추에서 확인란 스타일 확인 표시를 그리는지를 요청 합니다. 이 메서드를 호출한 후에는 현재 비주얼 관리자가 메뉴 단추에서 라디오 단추 스타일 확인 표시를 대신 그립니다. 이 변경 내용은 실행 취소할 수 없습니다.
 
-이 메서드를 호출 하 고 메뉴 단추 표시 되 고, 새로 고침 됩니다.
+이 메서드를 호출 하면 메뉴 단추가 현재 표시 되는 동안 새로 고쳐집니다.
 
 ##  <a name="settearoff"></a>  CMFCToolBarMenuButton::SetTearOff
 
-드롭다운 메뉴의 분리 막대의 ID를 지정 합니다.
+드롭다운 메뉴의 분리 막대 ID를 지정 합니다.
 
 ```
 virtual void SetTearOff(UINT uiBarID);
@@ -866,13 +866,13 @@ virtual void SetTearOff(UINT uiBarID);
 ### <a name="parameters"></a>매개 변수
 
 *uiBarID*<br/>
-[in] 새 분리 지정 모음 id입니다.
+진행 새 분리 막대 ID를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
-메뉴 모음에서 메뉴 단추를 끌 때 생성 되는 분리 막대가 막대에 대 한 ID를 지정 하려면이 메서드를 호출 합니다. 경우는 *uiBarID* 매개 변수가 0 이면 사용자 메뉴 단추 떼어낼 수 없습니다.
+사용자가 메뉴 모음에서 메뉴 단추를 끌 때 생성 되는 분리 표시줄의 ID를 지정 하려면이 메서드를 호출 합니다. *Ui바 id* 매개 변수가 0 이면 사용자가 메뉴 단추를 분리할 수 없습니다.
 
-호출 [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) 응용 프로그램에서 분리 메뉴 기능을 사용 하도록 설정 합니다.
+[CWinAppEx:: EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) 를 호출 하 여 응용 프로그램에서 분리 메뉴 기능을 사용 하도록 설정 합니다.
 
 ## <a name="see-also"></a>참고자료
 
