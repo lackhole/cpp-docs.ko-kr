@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - switch_is attribute
 ms.assetid: f1fffe5d-12d2-4e0f-8803-ccb715177d2d
-ms.openlocfilehash: ccac405480e415df17b42f02dce74759f578d025
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b72052f4cbd7f94b170ea58b8f7b284b85d7ab00
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407252"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513986"
 ---
-# <a name="switchis"></a>switch_is
+# <a name="switch_is"></a>switch_is
 
-식 또는 공용 구조체 멤버를 선택 하는 공용 구조체 판별 역할을 하는 식별자를 지정 합니다.
+Union 멤버를 선택 하는 union 판별 역할을 하는 식 또는 식별자를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407252"
 
 ## <a name="remarks"></a>설명
 
-**switch_is** C++ 특성에 동일한 기능을 합니다 [switch_is](/windows/desktop/Midl/switch-is) MIDL 특성입니다.
+**Switch_is** C++ 특성은 [switch_is](/windows/win32/Midl/switch-is) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-참조 된 [사례](case-cpp.md) 의 샘플 사용에 대 한 예제 **switch_is**합니다.
+**Switch_is**의 샘플 사용에 대 한 [사례](case-cpp.md) 예를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

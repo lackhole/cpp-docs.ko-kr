@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlServiceModuleT class
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
-ms.openlocfilehash: 095d909fefe0053b742368f260cf61937c2f5426
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 2854d0902700b268383eca094bed35843ea73272
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915865"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497733"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT 클래스
 
@@ -68,13 +68,13 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAtlServiceModuleT::CAtlServiceModuleT](#catlservicemodulet)|생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAtlServiceModuleT::Handler](#handler)|서비스에 대 한 처리기 루틴입니다.|
 |[CAtlServiceModuleT::InitializeSecurity](#initializesecurity)|서비스에 대 한 기본 보안 설정을 제공 합니다.|
@@ -101,7 +101,7 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAtlServiceModuleT::m_bService](#m_bservice)|프로그램이 서비스로 실행 중임을 나타내는 플래그입니다.|
 |[CAtlServiceModuleT::m_dwThreadID](#m_dwthreadid)|스레드 식별자를 저장 하는 멤버 변수입니다.|
@@ -115,7 +115,7 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 
 이 클래스는 이전 버전의 ATL에서 사용 되는 사용 되지 않는 [CComModule 클래스](../../atl/reference/ccommodule-class.md) 를 대체 합니다. 자세한 내용은 [ATL 모듈 클래스](../../atl/atl-module-classes.md) 를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)
 
@@ -244,7 +244,7 @@ void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [ReportEvent](/windows/desktop/api/winbase/nf-winbase-reporteventa)함수를 사용 하 여 세부 정보를 이벤트 로그에 기록 합니다. 서비스가 실행 되 고 있지 않으면 해당 문자열이 콘솔로 전송 됩니다.
+이 메서드는 [ReportEvent](/windows/win32/api/winbase/nf-winbase-reporteventw)함수를 사용 하 여 세부 정보를 이벤트 로그에 기록 합니다. 서비스가 실행 되 고 있지 않으면 해당 문자열이 콘솔로 전송 됩니다.
 
 ##  <a name="m_bservice"></a>  CAtlServiceModuleT::m_bService
 
@@ -280,7 +280,7 @@ SERVICE_STATUS_HANDLE m_hServiceStatus;
 
 ### <a name="remarks"></a>설명
 
-[SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-service_status) 구조체에는 서비스에 대 한 정보가 포함 되어 있습니다.
+[SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status) 구조체에는 서비스에 대 한 정보가 포함 되어 있습니다.
 
 ##  <a name="m_status"></a>  CAtlServiceModuleT::m_status
 
@@ -292,7 +292,7 @@ SERVICE_STATUS m_status;
 
 ### <a name="remarks"></a>설명
 
-[SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-service_status) 구조체에는 서비스에 대 한 정보가 포함 되어 있습니다.
+[SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status) 구조체에는 서비스에 대 한 정보가 포함 되어 있습니다.
 
 ##  <a name="m_szservicename"></a>  CAtlServiceModuleT::m_szServiceName
 
@@ -432,7 +432,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### <a name="parameters"></a>매개 변수
 
 *nShowCmd*<br/>
-창이 표시 되는 방법을 지정 합니다. 이 매개 변수는 [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) 섹션에서 설명 하는 값 중 하나일 수 있습니다. 기본값은 SW_HIDE입니다.
+창이 표시 되는 방법을 지정 합니다. 이 매개 변수는 [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) 섹션에서 설명 하는 값 중 하나일 수 있습니다. 기본값은 SW_HIDE입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -475,7 +475,7 @@ void SetServiceStatus(DWORD dwState) throw();
 ### <a name="parameters"></a>매개 변수
 
 *dwState*<br/>
-새 상태입니다. 가능한 값에 대해서는 [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) 을 참조 하세요.
+새 상태입니다. 가능한 값에 대해서는 [SetServiceStatus](/windows/win32/api/winsvc/nf-winsvc-setservicestatus) 을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -492,7 +492,7 @@ HRESULT Start(int nShowCmd) throw();
 ### <a name="parameters"></a>매개 변수
 
 *nShowCmd*<br/>
-창이 표시 되는 방법을 지정 합니다. 이 매개 변수는 [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) 섹션에서 설명 하는 값 중 하나일 수 있습니다.
+창이 표시 되는 방법을 지정 합니다. 이 매개 변수는 [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) 섹션에서 설명 하는 값 중 하나일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -553,7 +553,7 @@ int WinMain(int nShowCmd) throw();
 ### <a name="parameters"></a>매개 변수
 
 *nShowCmd*<br/>
-창이 표시 되는 방법을 지정 합니다. 이 매개 변수는 [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) 섹션에서 설명 하는 값 중 하나일 수 있습니다.
+창이 표시 되는 방법을 지정 합니다. 이 매개 변수는 [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) 섹션에서 설명 하는 값 중 하나일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 

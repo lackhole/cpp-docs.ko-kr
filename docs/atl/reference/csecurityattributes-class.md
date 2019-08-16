@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSecurityAttributes class
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
-ms.openlocfilehash: 2139c25cb6d941d9debe0655ba91ba458b1f8c09
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: ebffbea120101a77450a5e8da3cdb6e34723e7be
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915721"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496496"
 ---
 # <a name="csecurityattributes-class"></a>CSecurityAttributes 클래스
 
@@ -33,7 +33,7 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CSecurityAttributes::CSecurityAttributes](#csecurityattributes)|생성자입니다.|
 
@@ -45,11 +45,11 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 
 ## <a name="remarks"></a>설명
 
-구조체 `SECURITY_ATTRIBUTES` 에는 개체를 만드는 데 사용 되는 [보안 설명자](/windows/desktop/api/winnt/ns-winnt-security_descriptor) 가 포함 되어 있으며이 구조를 지정 하 여 검색 된 핸들이 상속 가능한 지 여부를 지정 합니다.
+구조체 `SECURITY_ATTRIBUTES` 에는 개체를 만드는 데 사용 되는 [보안 설명자](/windows/win32/api/winnt/ns-winnt-security_descriptor) 가 포함 되어 있으며이 구조를 지정 하 여 검색 된 핸들이 상속 가능한 지 여부를 지정 합니다.
 
-Windows의 액세스 제어 모델에 대 한 소개는 Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) 를 참조 하세요.
+Windows의 액세스 제어 모델에 대 한 소개는 Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) 를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `SECURITY_ATTRIBUTES`
 
@@ -100,6 +100,6 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
 
 [보안 샘플](../../overview/visual-cpp-samples.md)<br/>
 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\))<br/>
-[보안 설명자](/windows/desktop/api/winnt/ns-winnt-security_descriptor)<br/>
+[보안 설명자](/windows/win32/api/winnt/ns-winnt-security_descriptor)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

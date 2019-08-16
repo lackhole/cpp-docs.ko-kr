@@ -6,12 +6,12 @@ helpviewer_keywords:
 - delayed loading of DLLs, constraints
 - DLLs [C++], constraints
 ms.assetid: 0097ff65-550f-4a4e-8ac3-39bf6404f926
-ms.openlocfilehash: e37890fcd757a52ddeff0ccd79289bbc0c35e042
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: be5e5eb360f80e0b2ea9682f38f6787044cd3c63
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344158"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493064"
 ---
 # <a name="constraints-of-delay-loading-dlls"></a>DLL 지연 로드의 제약 조건
 
@@ -21,9 +21,9 @@ ms.locfileid: "64344158"
 
 - Kernel32.dll 지연 로드는 지원되지 않습니다. 이 DLL은 지연 로드 수행을 위한 지연 로드 도우미 루틴에 필요합니다.
 
-- [바인딩](binding-imports.md) 항목의 전달 된 지원 되지 않습니다.
+- 전달 되는 진입점의 [바인딩은](binding-imports.md) 지원 되지 않습니다.
 
-- 지연 로드된 DLL의 진입점에서 프로세스별 초기화가 발생하는 경우 DLL 지연 로드로 인해 동일한 동작의 프로세스가 발생하지 않을 수 있습니다. 사용 하 여 선언 된 정적 TLS (스레드 로컬 저장소)를 포함 하는 경우도 [__declspec (thread)](../../cpp/thread.md)를 통해 DLL이 로드 될 때 처리 되지 않은 `LoadLibrary`합니다. `TlsAlloc`, `TlsFree`, `TlsGetValue` 및 `TlsSetValue`를 사용하는 동적 TLS는 정적 또는 지연 로드된 DLL에 계속해서 사용할 수 있습니다.
+- 지연 로드된 DLL의 진입점에서 프로세스별 초기화가 발생하는 경우 DLL 지연 로드로 인해 동일한 동작의 프로세스가 발생하지 않을 수 있습니다. 다른 경우에는를 통해 `LoadLibrary`DLL이 로드 될 때 처리 되지 않는 [__declspec (thread)](../../cpp/thread.md)를 사용 하 여 선언 된 정적 TLS (스레드 로컬 저장소)가 포함 됩니다. `TlsAlloc`, `TlsFree`, `TlsGetValue` 및 `TlsSetValue`를 사용하는 동적 TLS는 정적 또는 지연 로드된 DLL에 계속해서 사용할 수 있습니다.
 
 - 정적(전역) 함수 포인터는 첫 번째 함수 호출 후 가져온 함수로 다시 초기화해야 합니다. 이는 함수 포인터의 첫 번째 사용이 썽크를 가리키기 때문입니다.
 
@@ -34,10 +34,10 @@ ms.locfileid: "64344158"
 ## <a name="see-also"></a>참고자료
 
 [링커의 지연 로드된 DLL 지원](linker-support-for-delay-loaded-dlls.md)<br/>
-[LoadLibrary 함수](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya)<br/>
-[GetModuleHandle 함수](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea)<br/>
-[GetProcAddress 함수](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)<br/>
-[TlsAlloc 함수](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)<br/>
-[Tlsfree가 함수](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree)<br/>
-[TlsGetValue 함수](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)<br/>
-[TlsSetValue 함수](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlssetvalue)
+[LoadLibrary 함수](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw)<br/>
+[GetModuleHandle 함수](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlew)<br/>
+[GetProcAddress 함수](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)<br/>
+[TlsAlloc 함수](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc)<br/>
+[Tlsfree가 함수](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsfree)<br/>
+[TlsGetValue 함수](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)<br/>
+[TlsSetValue 함수](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlssetvalue)

@@ -30,16 +30,16 @@ helpviewer_keywords:
 - _wasctime_s function
 - asctime_s function
 ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
-ms.openlocfilehash: 350d8c7b1dcf61272a3cfee884dff8a63b455f1c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe6ada0d50865897e791fc04b99ec0bb486f5a55
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349477"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499991"
 ---
-# <a name="asctimes-wasctimes"></a>asctime_s, _wasctime_s
+# <a name="asctime_s-_wasctime_s"></a>asctime_s, _wasctime_s
 
-변환 된 **tm** 시간 문자열 구조체입니다. 이러한 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 보안 기능이 강화된 [asctime, _wasctime](asctime-wasctime.md)의 버전입니다.
+**Tm** 시간 구조를 문자열로 변환 합니다. 이러한 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 보안 기능이 강화된 [asctime, _wasctime](asctime-wasctime.md)의 버전입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -69,13 +69,13 @@ errno_t _wasctime_s(
 ### <a name="parameters"></a>매개 변수
 
 *buffer*<br/>
-문자는 문자열 결과를 저장할 버퍼에 대 한 포인터입니다. 이 함수에서 지정 된 크기는 유효한 메모리 위치에 대 한 포인터를 가정 *numberOfElements*합니다.
+문자열 결과를 저장할 버퍼에 대 한 포인터입니다. 이 함수는 *Numberofelements*에 의해 지정 된 크기의 유효한 메모리 위치에 대 한 포인터를 가정 합니다.
 
 *numberOfElements*<br/>
-결과 저장 하는 데 사용 하는 버퍼의 크기입니다.
+결과를 저장 하는 데 사용 되는 버퍼의 크기입니다.
 
 *tmSource*<br/>
-시간/날짜 구조체입니다. 이 함수에 대 한 포인터를 잘못 가정 **구조체** **tm** 개체입니다.
+시간/날짜 구조체입니다. 이 함수는 유효한 **struct** **tm** 개체에 대 한 포인터를 가정 합니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -83,38 +83,38 @@ errno_t _wasctime_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*buffer*|*numberOfElements*|*tmSource*|반환|값 *버퍼*|
+|*buffer*|*numberOfElements*|*tmSource*|반환|*버퍼* 의 값|
 |--------------|------------------------|----------|------------|-----------------------|
 |**NULL**|임의의 값|임의의 값|**EINVAL**|수정 안 됨|
-|되지 **NULL** (유효한 메모리를 가리킴)|0|임의의 값|**EINVAL**|수정 안 됨|
-|하지 **NULL**|0< 크기 < 26|임의의 값|**EINVAL**|빈 문자열|
-|하지 **NULL**|>= 26|**NULL**|**EINVAL**|빈 문자열|
-|하지 **NULL**|>= 26|시간 구성 요소에 대한 잘못된 시간 구조체 또는 범위를 벗어난 값|**EINVAL**|빈 문자열|
+|Not **NULL** (유효한 메모리를 가리킴)|0|임의의 값|**EINVAL**|수정 안 됨|
+|**NULL** 이 아님|0< 크기 < 26|임의의 값|**EINVAL**|빈 문자열|
+|**NULL** 이 아님|>= 26|**NULL**|**EINVAL**|빈 문자열|
+|**NULL** 이 아님|>= 26|시간 구성 요소에 대한 잘못된 시간 구조체 또는 범위를 벗어난 값|**EINVAL**|빈 문자열|
 
 > [!NOTE]
-> 오류에 대 한 조건은 **wasctime_s** 비슷합니다 **asctime_s** 크기 제한이 단어 단위로 예외로 합니다.
+> **Wasctime_s** 에 대 한 오류 조건은 크기 제한이 단어로 측정 된다는 예외를 제외 하 고 **asctime_s** 와 비슷합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **asctime** 함수는 문자열에는 구조체로 저장 된 시간을 변환 합니다. 합니다 *tmSource* 값에 대 한 호출에서 가져온 일반적으로 **gmtime** 하거나 **localtime**합니다. 두 함수 모두에 맞게 사용할 수는 **tm** 시간에 정의 된 구조체입니다. 8.
+**Asctime** 함수는 구조체로 저장 된 시간을 문자열로 변환 합니다. *Tmsource* 값은 일반적으로 **gmtime** 또는 **localtime**에 대 한 호출에서 가져옵니다. 두 함수는 시간에 정의 된 대로 **tm** 구조를 채우는 데 사용할 수 있습니다. 넣기.
 
 |timeptr 멤버|값|
 |--------------------|-----------|
-|**tm_hour**|(0-23) 자정 이후의 시간|
+|**tm_hour**|자정 이후의 시간 (0-23)|
 |**tm_isdst**|일광 절약 시간이 적용되면 양수, 일광 절약 시간이 적용되지 않으면 0, 일광 절약 시간의 상태를 알 수 없으면 음수입니다. C 런타임 라이브러리에서는 DST(일광 절약 시간) 계산 구현을 위한 미국의 규칙이 사용된다고 가정합니다.|
-|**tm_mday**|일자 (1-31)|
-|**tm_min**|분 후에 시간 (0-59)|
-|**tm_mon**|월 (0 ~ 11; 1 월 = 0)|
-|**tm_sec**|분 (0-59) 이후의 시간 (초)|
-|**tm_wday**|요일 (0 ~ 6; 일요일 = 0)|
-|**tm_yday**|(0 ~ 365; 연간 일자 1 월 1 일 = 0)|
+|**tm_mday**|월간 일자 (1-31)|
+|**tm_min**|시간 이후 분 (0-59)|
+|**tm_mon**|월 (0-11; 1 월 = 0)|
+|**tm_sec**|분 이후의 초 (0-59)|
+|**tm_wday**|요일 (0-6; 일요일 = 0)|
+|**tm_yday**|연간 일자 (0-365; 1 월 1 일 = 0)|
 |**tm_year**|연도(현재 연도 빼기 1900)|
 
 또한 변환된 문자열은 현지 표준 시간대 설정에 따라 조정됩니다. 현지 시간 구성에 대한 정보는 [time, _time32, _time64](time-time32-time64.md), [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md) 및 [localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md) 함수를 참조하고 표준 시간대 환경 및 전역 변수 정의에 대한 정보는 [_tzset](tzset.md) 함수를 참조하세요.
 
-생성 되는 문자열 결과 **asctime_s** 정확히 26 자를 포함 하며 그 형식은 `Wed Jan 02 02:03:55 1980\n\0`합니다. 24시간제가 사용됩니다. 모든 필드에는 상수 너비가 있습니다. 줄 바꿈 문자 및 null 문자는 문자열의 마지막 두 자리를 차지합니다. 두 번째 매개 변수로서 전달된 값은 이 크기 이상이어야 합니다. 오류 코드, 이보다 작은 경우 **EINVAL**에 반환 됩니다.
+**Asctime_s** 에 의해 생성 된 문자열 결과에는 정확히 26 자가 포함 되 `Wed Jan 02 02:03:55 1980\n\0`고 형식이 있습니다. 24시간제가 사용됩니다. 모든 필드에는 상수 너비가 있습니다. 줄 바꿈 문자 및 null 문자는 문자열의 마지막 두 자리를 차지합니다. 두 번째 매개 변수로서 전달된 값은 이 크기 이상이어야 합니다. 더 작은 경우 오류 코드 **EINVAL**이 반환 됩니다.
 
-**_wasctime_s** 의 와이드 문자 버전이 **asctime_s**합니다. **_wasctime_s** 하 고 **asctime_s** 동일 하 게 작동 합니다.
+**_wasctime_s** 는 **asctime_s**의 와이드 문자 버전입니다. **_wasctime_s** 및 **asctime_s** 는 동일 하 게 동작 합니다.
 
 ### <a name="generic-text-routine-mapping"></a>제네릭 텍스트 루틴 매핑
 
@@ -133,13 +133,13 @@ C++에서는 템플릿 오버로드를 통해 이러한 함수를 사용하는 �
 
 ## <a name="security"></a>보안
 
-버퍼 포인터가 없는 경우 **NULL** 는 포인터가 유효한 버퍼를 가리키지 않는 경우, 함수는 모든 위치에서 덮어씁니다. 이 경우 액세스 위반이 발생할 수도 있습니다.
+버퍼 포인터가 **NULL** 이 아니고 포인터가 유효한 버퍼를 가리키지 않는 경우 함수는 위치에 있는 항목을 모두 덮어씁니다. 이 경우 액세스 위반이 발생할 수도 있습니다.
 
-전달된 크기 인수가 버퍼의 실제 크기보다 크면 [버퍼 오버런](/windows/desktop/SecBP/avoiding-buffer-overruns)이 발생할 수 있습니다.
+전달된 크기 인수가 버퍼의 실제 크기보다 크면 [버퍼 오버런](/windows/win32/SecBP/avoiding-buffer-overruns)이 발생할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-이 프로그램 정수 (long)에서 시스템에 배치 **aclock**, 구조로 변환 **newtime** 출력을 사용 하 여 문자열 형식으로 변환 하는 **asctime_s**함수입니다.
+이 프로그램은 시스템 시간을 정수 (long) **aclock**에 배치 하 고,이를 **newtime** 으로 변환한 다음 **asctime_s** 함수를 사용 하 여 출력에 대 한 문자열 형식으로 변환 합니다.
 
 ```C
 // crt_asctime_s.c

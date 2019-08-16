@@ -28,14 +28,14 @@ helpviewer_keywords:
 - CrtDbgReportW function
 - _CrtDbgReportW function
 ms.assetid: 6e581fb6-f7fb-4716-9432-f0145d639ecc
-ms.openlocfilehash: f12dafc62e302d90e5cffa04ee93e662b78295be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b5579a8996950c5f3e923f67ed2a5e667bb566fa
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339483"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500010"
 ---
-# <a name="crtdbgreport-crtdbgreportw"></a>_CrtDbgReport, _CrtDbgReportW
+# <a name="_crtdbgreport-_crtdbgreportw"></a>_CrtDbgReport, _CrtDbgReportW
 
 디버깅 메시지가 포함된 보고서를 생성하고 이 보고서를 가능한 대상 3개로 보냅니다(디버그 버전에만 해당).
 
@@ -63,13 +63,13 @@ int _CrtDbgReportW(
 ### <a name="parameters"></a>매개 변수
 
 *reportType*<br/>
-보고서 형식: **_CRT_WARN**를 **_CRT_ERROR**, 및 **_CRT_ASSERT**합니다.
+보고서 유형: **_CRT_WARN**, **_CRT_ERROR**및 **_CRT_ASSERT**.
 
 *filename*<br/>
-어설션/보고서가 발생 한 소스 파일의 이름에 대 한 포인터 또는 **NULL**합니다.
+어설션/보고서가 발생 하거나 **NULL 인**소스 파일의 이름에 대 한 포인터입니다.
 
 *linenumber*<br/>
-어설션/보고서가 발생 한 소스 파일의 줄 번호 또는 **NULL**합니다.
+어설션/보고서가 발생 하거나 **NULL 인**소스 파일의 줄 번호입니다.
 
 *moduleName*<br/>
 어설션 또는 보고서가 발생한 모듈(.exe 또는 .dll)의 이름에 대한 포인터입니다.
@@ -78,35 +78,35 @@ int _CrtDbgReportW(
 사용자 메시지를 만드는 데 사용되는 형식 컨트롤 문자열에 대한 포인터입니다.
 
 *argument*<br/>
-사용 되는 선택적 대체 인수 *형식*합니다.
+*형식*에서 사용 하는 선택적 대체 인수입니다.
 
 ## <a name="return-value"></a>반환 값
 
-모든 보고서 대상에 대해 **_CrtDbgReport** 하 고 **_CrtDbgReportW** 오류가 발생 하는 경우 오류가 발생 하면-1과 0을 반환 합니다. 그러나 보고서 대상이 디버그 메시지 창이고 사용자가 **다시 시도** 단추를 클릭하면 이러한 함수는 1을 반환합니다. 사용자가 디버그 메시지 창에서 **중단** 단추를 클릭하면 이러한 함수가 즉시 중단되고 값을 반환하지 않습니다.
+모든 보고서 대상에 대해 **_CrtDbgReport** 및 **_CrtDbgReportW** 는 오류가 발생 한 경우-1을 반환 하 고 오류가 발생 하지 않으면 0을 반환 합니다. 그러나 보고서 대상이 디버그 메시지 창이고 사용자가 **다시 시도** 단추를 클릭하면 이러한 함수는 1을 반환합니다. 사용자가 디버그 메시지 창에서 **중단** 단추를 클릭하면 이러한 함수가 즉시 중단되고 값을 반환하지 않습니다.
 
-합니다 [_RPT, _RPTF](rpt-rptf-rptw-rptfw-macros.md) 매크로 호출을 디버그 **_CrtDbgReport** 디버그를 생성 하려면 보고 합니다. 이러한 매크로의 와이드 문자 버전 뿐만 [_ASSERT, _ASSERTE](assert-asserte-assert-expr-macros.md)를 [_RPTW](rpt-rptf-rptw-rptfw-macros.md) 하 고 [_RPTFW](rpt-rptf-rptw-rptfw-macros.md)를 사용 하 여 **_CrtDbgReportW** 를 디버그 보고서를 생성 합니다. 때 **_CrtDbgReport** 하거나 **_CrtDbgReportW** 1을 반환 이러한 매크로 시간 (JIT) 디버깅을 사용 하는 디버거를 시작 합니다.
+[_Rpt, _RPTF](rpt-rptf-rptw-rptfw-macros.md) debug 매크로는 **_CrtDbgReport** 를 호출 하 여 디버그 보고서를 생성 합니다. 이러한 매크로의 와이드 문자 버전 뿐만 아니라 [_ASSERT, _ASSERTE](assert-asserte-assert-expr-macros.md), [_RPTW](rpt-rptf-rptw-rptfw-macros.md) 및 [_RPTFW](rpt-rptf-rptw-rptfw-macros.md)는 **_CrtDbgReportW** 를 사용 하 여 디버그 보고서를 생성 합니다. **_CrtDbgReport** 또는 **_CrtDbgReportW** 에서 1을 반환 하면 이러한 매크로는 JIT (just-in-time) 디버깅을 사용 하도록 설정 된 경우 디버거를 시작 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_CrtDbgReport** 하 고 **_CrtDbgReportW** 를 다른 대상 3 개로 디버그 보고서를 보낼 수 있습니다: 디버그 보고서 파일, 디버그 모니터 (Visual Studio 디버거) 또는 디버그 메시지 창. 두 구성 함수인 [_CrtSetReportMode](crtsetreportmode.md)와 [_CrtSetReportFile](crtsetreportfile.md)은 각 보고서 형식의 대상을 지정하는 데 사용됩니다. 이러한 함수를 사용하면 각 보고서 형식의 보고 대상을 개별적으로 제어할 수 있습니다. 지정할 수는 예를 들어, 한 *reportType* 의 **_CRT_WARN** 만 디버그 모니터를 전송 하는 동안를 *reportType* 의 **_CRT_ASSERT** 디버그 메시지 창이 고 사용자 정의 보고서 파일로 보낼 수 있습니다.
+**_CrtDbgReport** 및 **_CrtDbgReportW** 는 디버그 보고서 파일, 디버그 모니터 (Visual Studio 디버거) 또는 디버그 메시지 창의 3 가지 다른 대상으로 디버그 보고서를 보낼 수 있습니다. 두 구성 함수인 [_CrtSetReportMode](crtsetreportmode.md)와 [_CrtSetReportFile](crtsetreportfile.md)은 각 보고서 형식의 대상을 지정하는 데 사용됩니다. 이러한 함수를 사용하면 각 보고서 형식의 보고 대상을 개별적으로 제어할 수 있습니다. 예를 들어 **_CRT_WARN** 의 *reportType* 를 디버그 모니터로만 보내도록 지정 하 고 *reportType* 의 **_CRT_ASSERT** 은 디버그 메시지 창과 사용자 정의 보고서 파일로 보낼 수 있습니다.
 
-**_CrtDbgReportW** 의 와이드 문자 버전이 **_CrtDbgReport**합니다. 이 함수의 모든 출력 및 문자열 매개 변수는 와이드 문자열에 있습니다. 이 점을 제외하면 이 함수는 싱글바이트 문자 버전과 동일합니다.
+**_CrtDbgReportW** 는 **_CrtDbgReport**의 와이드 문자 버전입니다. 이 함수의 모든 출력 및 문자열 매개 변수는 와이드 문자열에 있습니다. 이 점을 제외하면 이 함수는 싱글바이트 문자 버전과 동일합니다.
 
-**_CrtDbgReport** 하 고 **_CrtDbgReportW** 대체 하 여 디버그 보고서에 대 한 사용자 메시지를 만듭니다를 *인수*[**n**] 인수를 를*형식* 문자열를 정의한 동일한 규칙을 사용 하는 **printf** 하거나 **wprintf** 함수. 파일에 대 한 정의 및 이러한 함수에서 다음 디버그 보고서를 생성 하 고 대상을, 현재 보고서 모드에 따라 결정 *reportType*합니다. 디버그 메시지 창에 보고서를 보낼 때 합니다 *filename*를 **lineNumber**, 및 *moduleName* 창에 표시 되는 정보에 포함 됩니다.
+**_CrtDbgReport** 및 **_CrtDbgReportW** 는 **printf** 또는 **에서 정의한 동일한 규칙을 사용 하 여 인수 [n] 인수를 형식 문자열로 대체 하 여 디버그 보고서에 대 한 사용자 메시지를 만듭니다. wprintf** 함수. 그런 다음 이러한 함수는 디버그 보고서를 생성 하 고 *reportType*에 대해 정의 된 현재 보고서 모드 및 파일을 기반으로 대상을 결정 합니다. 보고서를 디버그 메시지 창으로 보내면 *파일 이름*, **lineNumber**및 *moduleName* 이 창에 표시 되는 정보에 포함 됩니다.
 
-다음 표에서 보고서 모드 및 파일 및 결과 동작에 대 한 사용 가능한 선택 항목을 나열 **_CrtDbgReport** 하 고 **_CrtDbgReportW**합니다. 이러한 옵션은 \<crtdbg.h>에서 비트 플래그로 정의되어 있습니다.
+다음 표에서는 보고서 모드 또는 모드와 파일 및 **_CrtDbgReport** 및 **_CrtDbgReportW**의 결과 동작에 사용할 수 있는 선택 항목을 보여 줍니다. 이러한 옵션은 \<crtdbg.h>에서 비트 플래그로 정의되어 있습니다.
 
-|보고서 모드|보고서 파일|**_CrtDbgReport**하십시오 **_CrtDbgReportW** 동작|
+|보고서 모드|보고서 파일|**_CrtDbgReport**, **_CrtDbgReportW** 동작|
 |-----------------|-----------------|------------------------------------------------|
-|**_CRTDBG_MODE_DEBUG**|적용할 수 없음|Windows [OutputDebugString](https://msdn.microsoft.com/library/windows/desktop/aa363362.aspx) API를 사용하여 메시지를 작성합니다.|
-|**_CRTDBG_MODE_WNDW**|적용할 수 없음|Windows [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) API를 호출하여 **중단**, **다시 시도** 및 **무시** 단추와 함께 메시지를 표시하는 메시지 상자를 만듭니다. 사용자가 **중단**를 **_CrtDbgReport** 하거나 **_CrtDbgReport** 즉시 중단 합니다. 사용자가 **다시 시도**를 클릭하면 1이 반환됩니다. 사용자가 **무시**, 실행이 계속 됩니다 및 **_CrtDbgReport** 하 고 **_CrtDbgReportW** 0을 반환 합니다. 오류 조건이 있을 때 **무시**를 클릭하면 종종 "정의되지 않은 동작"이 발생할 수 있습니다.|
-|**_CRTDBG_MODE_FILE**|**__HFILE**|사용자 제공 메시지를 작성 **처리할**에 Windows를 사용 하 여 [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile) API 및 파일 핸들의 유효성을 검사 하지 않으면 응용 프로그램은 보고서 파일 열기 및 유효한 파일을 전달 하는 일을 담당 핸들입니다.|
-|**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDERR**|메시지를 작성 **stderr**합니다.|
-|**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDOUT**|메시지를 작성 **stdout**합니다.|
+|**_CRTDBG_MODE_DEBUG**|해당 사항 없음|Windows [OutputDebugString](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) API를 사용하여 메시지를 작성합니다.|
+|**_CRTDBG_MODE_WNDW**|해당 사항 없음|Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) API를 호출하여 **중단**, **다시 시도** 및 **무시** 단추와 함께 메시지를 표시하는 메시지 상자를 만듭니다. 사용자가 **중단**을 클릭 하면 **_CrtDbgReport** 또는 **_CrtDbgReport** 즉시 중단 됩니다. 사용자가 **다시 시도**를 클릭하면 1이 반환됩니다. 사용자가 **무시**를 클릭 하면 실행이 계속 되 고 **_CrtDbgReport** 및 **_CrtDbgReportW** 는 0을 반환 합니다. 오류 조건이 있을 때 **무시**를 클릭하면 종종 "정의되지 않은 동작"이 발생할 수 있습니다.|
+|**_CRTDBG_MODE_FILE**|**__HFILE**|Windows [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile) API를 사용 하 여 사용자 제공 **핸들**에 메시지를 쓰고 파일 핸들의 유효성을 확인 하지 않습니다. 응용 프로그램은 보고서 파일을 열고 유효한 파일 핸들을 전달 하는 일을 담당 합니다.|
+|**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDERR**|**Stderr**에 메시지를 씁니다.|
+|**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDOUT**|**Stdout**에 메시지를 씁니다.|
 
 보고서는 1개, 2개 또는 3개 대상으로 보내거나 아무 대상으로도 보내지 않을 수 있습니다. 보고서 모드 및 보고서 파일을 지정하는 방법에 대한 자세한 내용은 [_CrtSetReportMode](crtsetreportmode.md) 및 [_CrtSetReportFile](crtsetreportfile.md) 함수를 참조하세요. 디버그 매크로 및 보고 함수 사용에 대한 자세한 내용은 [보고서 매크로](/visualstudio/debugger/macros-for-reporting)를 참조하세요.
 
-응용 프로그램에서 제공 된 것 보다 더 뛰어난 유연성이 필요한 경우 **_CrtDbgReport** 하 고 **_CrtDbgReportW**, 고유한 보고 함수를 작성 하 고 C 런타임 라이브러리 보고 연결 수 사용 하 여 메커니즘 합니다 [_CrtSetReportHook](crtsetreporthook.md) 함수입니다.
+응용 프로그램에 **_CrtDbgReport** 및 **_CrtDbgReportW**에서 제공 하는 것 보다 더 많은 유연성이 필요한 경우 고유한 보고 함수를 작성 하 고 [_CrtSetReportHook](crtsetreporthook.md) 를 사용 하 여 C 런타임 라이브러리 보고 메커니즘에 후크 할 수 있습니다. 칩셋용으로.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -115,7 +115,7 @@ int _CrtDbgReportW(
 |**_CrtDbgReport**|\<crtdbg.h>|
 |**_CrtDbgReportW**|\<crtdbg.h>|
 
-**_CrtDbgReport** 하 고 **_CrtDbgReportW** 는 Microsoft 확장입니다. 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+**_CrtDbgReport** 및 **_CrtDbgReportW** 는 Microsoft 확장입니다. 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 

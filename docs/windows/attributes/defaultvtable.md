@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - defaultvtable attribute
 ms.assetid: 5b3ed483-f69e-44dd-80fc-952028eb9d73
-ms.openlocfilehash: 813fb9dd4edf2f6e522e7310ba1e8bfcd55ed2b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ab37af4deab516dc01f55f986811668737cf18c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62147953"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501642"
 ---
 # <a name="defaultvtable"></a>defaultvtable
 
-COM 개체에 대 한 기본 vtable 인터페이스와 인터페이스를 정의합니다.
+인터페이스를 COM 개체에 대 한 기본 vtable 인터페이스로 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,15 +26,15 @@ COM 개체에 대 한 기본 vtable 인터페이스와 인터페이스를 정의
 ### <a name="parameters"></a>매개 변수
 
 *interface*<br/>
-지정 된 인터페이스를 COM 개체에 대 한 기본 vtable 하려는입니다.
+COM 개체에 대 한 기본 vtable을 포함 하려는 지정 된 인터페이스입니다.
 
 ## <a name="remarks"></a>설명
 
-**defaultvtable** C++ 특성에 동일한 기능을 합니다 [defaultvtable](/windows/desktop/Midl/defaultvtable) MIDL 특성입니다.
+**Defaultvtable** C++ 특성에는 [defaultvtable](/windows/win32/Midl/defaultvtable) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 코드를 사용 하는 클래스에 특성을 보여 줍니다 **defaultvtable** 기본 인터페이스를 지정 합니다.
+다음 코드에서는 **defaultvtable** 을 사용 하 여 기본 인터페이스를 지정 하는 클래스의 특성을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_defaultvtable.cpp

@@ -43,14 +43,14 @@ helpviewer_keywords:
 - vtcprintf function
 - formatted text [C++]
 ms.assetid: 4ef8d237-6200-4b66-8731-8c57e5624bb1
-ms.openlocfilehash: e78d2f0b873042bda4fc79df100374b52751aebc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e5991f903771408a22722dceec3e0c5d84b878e2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364846"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499307"
 ---
-# <a name="vcprintf-vcprintfl-vcwprintf-vcwprintfl"></a>_vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l
+# <a name="_vcprintf-_vcprintf_l-_vcwprintf-_vcwprintf_l"></a>_vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l
 
 인수 목록에 대한 포인터를 사용하여 콘솔에 형식이 지정된 출력을 씁니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l](vcprintf-s-vcprintf-s-l-vcwprintf-s-vcwprintf-s-l.md)을 참조하세요.
 
@@ -95,16 +95,16 @@ int _vcwprintf_l(
 
 ## <a name="return-value"></a>반환 값
 
-기록된 문자 수 또는 출력 오류가 발생하는 경우 음수 값입니다. 하는 경우 *형식* 가 null 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고-1이 반환 됩니다.
+기록된 문자 수 또는 출력 오류가 발생하는 경우 음수 값입니다. *Format* 이 null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용 된 경우 **errno** 가 **EINVAL** 로 설정 되 고-1이 반환 됩니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 각각 인수 목록에 대한 포인터를 가져오며 지정된 데이터의 형식을 지정하고 콘솔에 지정된 데이터를 씁니다. **_vcwprintf** 의 와이드 문자 버전이 **_vcprintf**합니다. 이 함수는 인수로 와이드 문자열을 사용합니다.
+이러한 함수는 각각 인수 목록에 대한 포인터를 가져오며 지정된 데이터의 형식을 지정하고 콘솔에 지정된 데이터를 씁니다. **_vcwprintf** 는 **_vcprintf**의 와이드 문자 버전입니다. 이 함수는 인수로 와이드 문자열을 사용합니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 > [!IMPORTANT]
-> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

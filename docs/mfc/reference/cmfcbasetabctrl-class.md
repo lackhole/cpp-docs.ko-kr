@@ -238,12 +238,12 @@ helpviewer_keywords:
 - CMFCBaseTabCtrl [MFC], m_bActivateTabOnRightClick
 - CMFCBaseTabCtrl [MFC], m_bAutoDestroyWindow
 ms.assetid: 7270c55f-6f6e-4dd2-b0d2-291afeac3882
-ms.openlocfilehash: 889bb9c48899691554a22435ffee71d6f68a6409
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8a1637c77c326ddcfcb7f4dcb834ab6f6b2c0cf1
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403890"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505451"
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl Class
 
@@ -260,7 +260,7 @@ class CMFCBaseTabCtrl : public CWnd
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCBaseTabCtrl::AddIcon](#addicon)||
 |[CMFCBaseTabCtrl::AddTab](#addtab)|탭 창에 새 탭을 추가합니다.|
@@ -348,7 +348,7 @@ class CMFCBaseTabCtrl : public CWnd
 |[CMFCBaseTabCtrl::OnDragOver](#ondragover)||
 |[CMFCBaseTabCtrl::OnDrop](#ondrop)||
 |[CMFCBaseTabCtrl::OnRenameTab](#onrenametab)||
-|[CMFCBaseTabCtrl::PreTranslateMessage](#pretranslatemessage)|창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) Windows 함수로 디스패치되기 전에 [CWinApp](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) 클래스가 이 메시지를 해석하는 데 사용됩니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|
+|[CMFCBaseTabCtrl::PreTranslateMessage](#pretranslatemessage)|창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) Windows 함수로 디스패치되기 전에 [CWinApp](/windows/win32/api/winuser/nf-winuser-dispatchmessage) 클래스가 이 메시지를 해석하는 데 사용됩니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|
 |[CMFCBaseTabCtrl::RecalcLayout](#recalclayout)|탭 창의 내부 레이아웃을 다시 계산합니다.|
 |[CMFCBaseTabCtrl::RemoveAllTabs](#removealltabs)|탭 창에서 모든 탭을 제거합니다.|
 |[CMFCBaseTabCtrl::RemoveTab](#removetab)|탭 창에서 탭을 제거합니다.|
@@ -378,13 +378,13 @@ class CMFCBaseTabCtrl : public CWnd
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCBaseTabCtrl::CreateWrapper](#createwrapper)|[에서 파생되지 않은](../../mfc/reference/cwnd-class.md) CWnd `CDockablePane`에서 파생된 개체에 대한 래퍼를 만듭니다. `CMFCBaseTabCtrl` 개체를 도킹하려면 포함된 모든 컨트롤이 `CDockablePane`에서 파생되었거나 이 컨트롤에 도킹 래퍼가 있어야 합니다.<br /><br /> `SetDockingBayWrapperRTC`를 사용하여 래퍼의 클래스를 설정합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCBaseTabCtrl::m_bActivateTabOnRightClick](#m_bactivatetabonrightclick)|마우스 왼쪽 단추 클릭이나 마우스 오른쪽 단추 클릭 중 어느 것을 사용하여 탭을 선택할지를 지정합니다.|
 |[CMFCBaseTabCtrl::m_bAutoDestroyWindow](#m_bautodestroywindow)|탭에 포함된 창이 자동으로 소멸되는지 여부를 지정합니다.|
@@ -407,7 +407,7 @@ Visual Studio 2015부터 이 클래스는 Microsoft Active Accessibility를 지�
 
 - [CWnd Class](../../mfc/reference/cwnd-class.md) 에서 파생되는 개체를 도킹 가능한 컨트롤 막대나 도킹 가능한 탭에 배치할 수 있습니다. 전체 컨트롤을 도킹하려면 `CWnd` 개체를 도킹 가능하도록 만들어야 합니다. 이를 위해 MFC는 래퍼 클래스를 사용합니다. 이 래퍼 클래스는 [CDockablePaneAdapter Class](../../mfc/reference/cdockablepaneadapter-class.md)입니다. 도킹 가능한 컨트롤 막대나 도킹 가능한 탭에 추가되는 `CWnd` 개체는 `CDockablePaneAdapter` 개체 내에 래핑됩니다. `m_bEnableWrapping` 개체의 매개 변수 `CMFCBaseTablCtrl` 을 `FALSE`로 설정하여 자동 래핑을 사용하지 않도록 설정할 수 있습니다. [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc)메서드를 사용하여 애플리케이션에서 래퍼로 사용할 클래스를 변경할 수도 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -808,7 +808,7 @@ virtual COLORREF GetActiveTabColor() const;
 
 ### <a name="return-value"></a>반환 값
 
-활성 탭의 배경색을 지정하는 [COLORREF](/windows/desktop/gdi/colorref) 값입니다.
+활성 탭의 배경색을 지정하는 [COLORREF](/windows/win32/gdi/colorref) 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -824,7 +824,7 @@ virtual COLORREF GetActiveTabTextColor() const;
 
 ### <a name="return-value"></a>반환 값
 
-활성 탭의 텍스트 색을 지정하는 [COLORREF](/windows/desktop/gdi/colorref) 값입니다.
+활성 탭의 텍스트 색을 지정하는 [COLORREF](/windows/win32/gdi/colorref) 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -852,7 +852,7 @@ const CArray<COLORREF,COLORREF>& GetAutoColors() const;
 
 ### <a name="return-value"></a>반환 값
 
-[CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) 개체가 자동 탭 색상 지정에 사용하는 [COLORREF](/windows/desktop/gdi/colorref) 값 배열에 대한 참조입니다.
+[CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) 개체가 자동 탭 색상 지정에 사용하는 [COLORREF](/windows/win32/gdi/colorref) 값 배열에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1009,7 +1009,7 @@ virtual COLORREF GetTabBkColor(int iTab) const;
 
 ### <a name="return-value"></a>반환 값
 
-지정된 탭의 배경색을 나타내는 [COLORREF](/windows/desktop/gdi/colorref) 값입니다. *iTab*이 범위를 벗어나는 경우 -1입니다.
+지정된 탭의 배경색을 나타내는 [COLORREF](/windows/win32/gdi/colorref) 값입니다. *iTab*이 범위를 벗어나는 경우 -1입니다.
 
 ##  <a name="gettabbordersize"></a>  CMFCBaseTabCtrl::GetTabBorderSize
 
@@ -1260,7 +1260,7 @@ virtual COLORREF GetTabTextColor(int iTab) const;
 
 ### <a name="return-value"></a>반환 값
 
-지정된 탭의 텍스트 색을 나타내는 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다. *iTab*이 범위를 벗어났을 경우 -1입니다.
+지정된 탭의 텍스트 색을 나타내는 [COLORREF](/windows/win32/gdi/colorref) 매개 변수입니다. *iTab*이 범위를 벗어났을 경우 -1입니다.
 
 ##  <a name="gettabwnd"></a>  CMFCBaseTabCtrl::GetTabWnd
 
@@ -1996,7 +1996,7 @@ virtual void SetActiveTabColor(COLORREF clr);
 
 ### <a name="remarks"></a>설명
 
-프레임워크는 [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) 메서드에서 활성 탭의 기본 배경색을 가져옵니다.
+프레임워크는 [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor) 메서드에서 활성 탭의 기본 배경색을 가져옵니다.
 
 ##  <a name="setactivetabtextcolor"></a>  CMFCBaseTabCtrl::SetActiveTabTextColor
 
@@ -2009,11 +2009,11 @@ virtual void SetActiveTabTextColor(COLORREF clr);
 ### <a name="parameters"></a>매개 변수
 
 *clr*<br/>
-[in] 새 텍스트 색상을 지정하는 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다.
+[in] 새 텍스트 색상을 지정하는 [COLORREF](/windows/win32/gdi/colorref) 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
-기본적으로 프레임워크는 [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor)에서 텍스트 색상을 가져옵니다. `SetActiveTabTextColor` 메서드를 사용하여 이 기본 색상을 재정의합니다.
+기본적으로 프레임워크는 [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor)에서 텍스트 색상을 가져옵니다. `SetActiveTabTextColor` 메서드를 사용하여 이 기본 색상을 재정의합니다.
 
 ##  <a name="setautocolors"></a>  CMFCBaseTabCtrl::SetAutoColors
 
@@ -2095,7 +2095,7 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 [in] 각 이미지의 너비(픽셀)입니다.
 
 *clrTransp*<br/>
-[in] 이미지의 투명 색상을 나타내는 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다.
+[in] 이미지의 투명 색상을 나타내는 [COLORREF](/windows/win32/gdi/colorref) 매개 변수입니다.
 
 *hImageList*<br/>
 [in] 사전 로드된 이미지 목록에 대한 핸들입니다.
@@ -2305,7 +2305,7 @@ virtual BOOL SetTabTextColor(
 [in] 탭의 0부터 시작하는 인덱스입니다.
 
 *color*<br/>
-[in] 새 텍스트 색상을 나타내는 [COLORREF](/windows/desktop/gdi/colorref) 매개 변수입니다.
+[in] 새 텍스트 색상을 나타내는 [COLORREF](/windows/win32/gdi/colorref) 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값
 

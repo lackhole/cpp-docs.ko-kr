@@ -20,19 +20,19 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlFile class
 ms.assetid: 93ed160b-af2a-448c-9cbe-e5fa46c199bb
-ms.openlocfilehash: 0faae50afcd26948bdcb4d4333efb25d5cca33ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 784086b1c2edef5eb0de3bba4a97d1e3cc6272e7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62260229"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497826"
 ---
 # <a name="catlfile-class"></a>CAtlFile 클래스
 
-이 클래스는 파일 처리 API는 Windows에 대 한 씬 래퍼를 제공 합니다.
+이 클래스는 Windows 파일 처리 API에 대 한 씬 래퍼를 제공 합니다.
 
 > [!IMPORTANT]
->  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
+>  이 클래스와 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -50,29 +50,29 @@ class CAtlFile : public CHandle
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CAtlFile::Create](#create)|파일을 열거나 만듭니다 하려면이 메서드를 호출 합니다.|
-|[CAtlFile::Flush](#flush)|파일에 대 한 버퍼를 지우고 하면 파일에 쓸 버퍼링 된 데이터가 모두이 메서드를 호출 합니다.|
-|[CAtlFile::GetOverlappedResult](#getoverlappedresult)|파일 중첩된 작업의 결과 얻기 위해이 메서드를 호출 합니다.|
-|[CAtlFile::GetPosition](#getposition)|파일에서 현재 파일 포인터 위치를 가져오려면이 메서드를 호출 합니다.|
-|[CAtlFile::GetSize](#getsize)|파일의 바이트에서 크기를 가져오려면이 메서드를 호출 합니다.|
-|[CAtlFile::LockRange](#lockrange)|다른 프로세스에 액세스 하지 못하도록 파일에 영역을 잠그려는이 메서드를 호출 합니다.|
-|[CAtlFile::Read](#read)|파일 포인터에 의해 표시 되는 위치에서 시작 하는 파일에서 데이터를 읽기 위해이 메서드를 호출 합니다.|
+|[CAtlFile::Create](#create)|이 메서드를 호출 하 여 파일을 만들거나 엽니다.|
+|[CAtlFile::Flush](#flush)|파일에 대 한 버퍼를 지우고 버퍼링 된 모든 데이터가 파일에 기록 되도록 하려면이 메서드를 호출 합니다.|
+|[CAtlFile::GetOverlappedResult](#getoverlappedresult)|파일에 대 한 겹쳐진 작업의 결과를 가져오려면이 메서드를 호출 합니다.|
+|[CAtlFile::GetPosition](#getposition)|이 메서드를 호출 하 여 파일에서 현재 파일 포인터 위치를 가져옵니다.|
+|[CAtlFile::GetSize](#getsize)|파일의 크기 (바이트)를 가져오려면이 메서드를 호출 합니다.|
+|[CAtlFile::LockRange](#lockrange)|다른 프로세스에서 액세스할 수 없도록 파일의 영역을 잠그려면이 메서드를 호출 합니다.|
+|[CAtlFile::Read](#read)|파일 포인터가 나타내는 위치에서 시작 하 여 파일에서 데이터를 읽으려면이 메서드를 호출 합니다.|
 |[CAtlFile::Seek](#seek)|파일의 파일 포인터를 이동 하려면이 메서드를 호출 합니다.|
 |[CAtlFile::SetSize](#setsize)|파일의 크기를 설정 하려면이 메서드를 호출 합니다.|
-|[CAtlFile::UnlockRange](#unlockrange)|영역 파일의 잠금을 해제 하려면이 메서드를 호출 합니다.|
-|[CAtlFile::Write](#write)|파일 포인터에 의해 표시 되는 위치에서 시작 하 여 파일에 데이터를 쓸이 메서드를 호출 합니다.|
+|[CAtlFile::UnlockRange](#unlockrange)|파일의 영역을 잠금 해제 하려면이 메서드를 호출 합니다.|
+|[CAtlFile::Write](#write)|파일 포인터가 나타내는 위치에서 시작 하 여 파일에 데이터를 쓰려면이 메서드를 호출 합니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CAtlFile::m_pTM](#m_ptm)|에 대 한 포인터 `CAtlTransactionManager` 개체|
+|[CAtlFile::m_pTM](#m_ptm)|개체에 `CAtlTransactionManager` 대 한 포인터|
 
 ## <a name="remarks"></a>설명
 
-파일 처리 요구는 비교적 간단 하지만 MFC 종속성을 포함 하지 않고 Windows API를 제공 하는 보다 자세한 추상화는 필요한 경우이 클래스를 사용 합니다.
+파일 처리 요구 사항이 비교적 단순 하지만 MFC 종속성을 포함 하지 않고 Windows API에서 제공 하는 것 보다 더 많은 추상화가 필요한 경우이 클래스를 사용 합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -82,7 +82,7 @@ class CAtlFile : public CHandle
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlfile.h
+**헤더:** 이 파일 .h
 
 ##  <a name="catlfile"></a>  CAtlFile::CAtlFile
 
@@ -108,11 +108,11 @@ CAtlTransactionManager 개체에 대한 포인터
 
 ### <a name="remarks"></a>설명
 
-원래에서 파일 핸들의 소유권을 전송 하는 복사 생성자 `CAtlFile` 개체를 새로 생성 된 개체입니다.
+복사 생성자는 파일 핸들의 소유권을 원래 `CAtlFile` 개체에서 새로 생성 된 개체로 전달 합니다.
 
 ##  <a name="create"></a>  CAtlFile::Create
 
-파일을 열거나 만듭니다 하려면이 메서드를 호출 합니다.
+이 메서드를 호출 하 여 파일을 만들거나 엽니다.
 
 ```
 HRESULT Create(
@@ -131,34 +131,34 @@ HRESULT Create(
 파일 이름입니다.
 
 *dwDesiredAccess*<br/>
-원하는 액세스 합니다. 참조 *dwDesiredAccess* 에 [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) Windows SDK에 있습니다.
+원하는 액세스입니다. Windows SDK의 [CreateFile](/windows/win32/api/fileapi/nf-fileapi-createfilew) 에서 *dwDesiredAccess* 을 참조 하세요.
 
 *dwShareMode*<br/>
-공유 모드입니다. 참조 *dwShareMode* 에서 `CreateFile`합니다.
+공유 모드입니다. *DwShareMode* in을 `CreateFile`참조 하세요.
 
 *dwCreationDisposition*<br/>
-만들기 처리 합니다. 참조 *dwCreationDisposition* 에서 `CreateFile`합니다.
+만들기 처리입니다. *DwCreationDisposition* in을 `CreateFile`참조 하세요.
 
 *dwFlagsAndAttributes*<br/>
-플래그 및 특성입니다. 참조 *dwFlagsAndAttributes* 에서 `CreateFile`합니다.
+플래그와 특성입니다. *DwFlagsAndAttributes* in을 `CreateFile`참조 하세요.
 
 *lpsa*<br/>
-보안 특성입니다. 참조 *lpSecurityAttributes* 에서 `CreateFile`합니다.
+보안 특성입니다. 에서 *Lpsecurityattributes* 를 `CreateFile`참조 하세요.
 
 *hTemplateFile*<br/>
-템플릿 파일입니다. 참조 *hTemplateFile* 에서 `CreateFile`합니다.
+템플릿 파일입니다. 에서 *H템플릿 파일* 을 `CreateFile`참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) 를 만들거나 파일을 엽니다.
+[CreateFile](/windows/win32/api/fileapi/nf-fileapi-createfilew) 을 호출 하 여 파일을 만들거나 엽니다.
 
 ##  <a name="flush"></a>  CAtlFile::Flush
 
-파일에 대 한 버퍼를 지우고 하면 파일에 쓸 버퍼링 된 데이터가 모두이 메서드를 호출 합니다.
+파일에 대 한 버퍼를 지우고 버퍼링 된 모든 데이터가 파일에 기록 되도록 하려면이 메서드를 호출 합니다.
 
 ```
 HRESULT Flush() throw();
@@ -166,15 +166,15 @@ HRESULT Flush() throw();
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [FlushFileBuffers](/windows/desktop/api/fileapi/nf-fileapi-flushfilebuffers) 버퍼링 된 데이터 파일을 플러시할 수 있습니다.
+는 [Flushfilebuffers](/windows/win32/api/fileapi/nf-fileapi-flushfilebuffers) 를 호출 하 여 버퍼링 된 데이터를 파일에 플러시합니다.
 
 ##  <a name="getoverlappedresult"></a>  CAtlFile::GetOverlappedResult
 
-파일 중첩된 작업의 결과 얻기 위해이 메서드를 호출 합니다.
+파일에 대 한 겹쳐진 작업의 결과를 가져오려면이 메서드를 호출 합니다.
 
 ```
 HRESULT GetOverlappedResult(
@@ -186,21 +186,21 @@ HRESULT GetOverlappedResult(
 ### <a name="parameters"></a>매개 변수
 
 *pOverlapped*<br/>
-Overlapped 구조체입니다. 참조 *lpOverlapped* 에 [GetOverlappedResult](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) Windows SDK에 있습니다.
+겹쳐진 구조체입니다. Windows SDK에서 *lpOverlapped* 의 [GetOverlappedResult](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresult) 을 참조 하세요.
 
 *dwBytesTransferred*<br/>
-바이트를 전송 합니다. 참조 *lpNumberOfBytesTransferred* 에서 `GetOverlappedResult`합니다.
+전송 된 바이트입니다. *LpNumberOfBytesTransferred* in을 `GetOverlappedResult`참조 하세요.
 
 *bWait*<br/>
-대기 옵션입니다. 참조 *bWait* 에서 `GetOverlappedResult`합니다.
+Wait 옵션입니다. *Bwait* in을 `GetOverlappedResult`참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [GetOverlappedResult](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) 파일 중첩된 작업의 결과를 가져옵니다.
+[GetOverlappedResult](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresult) 를 호출 하 여 파일에 대 한 겹쳐진 작업의 결과를 가져옵니다.
 
 ##  <a name="getposition"></a>  CAtlFile::GetPosition
 
@@ -213,19 +213,19 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *nPos*<br/>
-바이트 위치입니다.
+바이트 단위의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [SetFilePointer](/windows/desktop/api/fileapi/nf-fileapi-setfilepointer) 현재 파일 포인터 위치를 가져올 수 있습니다.
+[Setfilepointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) 를 호출 하 여 현재 파일 포인터 위치를 가져옵니다.
 
 ##  <a name="getsize"></a>  CAtlFile::GetSize
 
-파일의 바이트에서 크기를 가져오려면이 메서드를 호출 합니다.
+파일의 크기 (바이트)를 가져오려면이 메서드를 호출 합니다.
 
 ```
 HRESULT GetSize(ULONGLONG& nLen) const throw();
@@ -238,15 +238,15 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [GetFileSize](/windows/desktop/api/fileapi/nf-fileapi-getfilesize) 파일의 바이트에서 크기를 가져오려고 합니다.
+[GetFileSize](/windows/win32/api/fileapi/nf-fileapi-getfilesize) 를 호출 하 여 파일의 바이트 크기를 가져옵니다.
 
 ##  <a name="lockrange"></a>  CAtlFile::LockRange
 
-다른 프로세스에 액세스 하지 못하도록 파일에 영역을 잠그려는이 메서드를 호출 합니다.
+다른 프로세스에서 액세스할 수 없도록 파일의 영역을 잠그려면이 메서드를 호출 합니다.
 
 ```
 HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
@@ -255,18 +255,18 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ### <a name="parameters"></a>매개 변수
 
 *nPos*<br/>
-잠금을 시작 해야 하는 파일의 위치입니다.
+잠금이 시작 되어야 하는 파일의 위치입니다.
 
 *nCount*<br/>
 잠글 바이트 범위의 길이입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [LockFile](/windows/desktop/api/fileapi/nf-fileapi-lockfile) 파일의 영역을 잠글 수 있습니다. 파일의 바이트를 잠그면 다른 프로세스에서 해당 바이트에 액세스할 수 없습니다. 파일의 둘 이상의 영역을 잠글 수 있습니다 하지만 없습니다 겹치는 영역을 사용할 수는 있습니다. 사용 하 여 지역의 잠금을 해제 하면 [CAtlFile::UnlockRange](#unlockrange), 바이트 범위를 이전에 잠근 지역와 정확히 일치 해야 합니다. `LockRange` 인접 한 지역을 선택 합니다; 병합 하지 않습니다. 잠긴된 두 영역이 인접 한 경우 잠금을 해제 해야 각각 개별적으로 합니다.
+[Lockfile](/windows/win32/api/fileapi/nf-fileapi-lockfile) 을 호출 하 여 파일의 영역을 잠급니다. 파일의 바이트를 잠그면 다른 프로세스에서 해당 바이트에 액세스할 수 없습니다. 하나 이상의 파일 영역을 잠글 수 있지만 겹치는 지역은 허용 되지 않습니다. [Catlfile:: UnlockRange](#unlockrange)를 사용 하 여 영역을 잠금 해제할 때 바이트 범위는 이전에 잠긴 지역과 정확히 일치 해야 합니다. `LockRange`인접 한 영역을 병합 하지 않습니다. 잠긴 두 지역은 인접 한 경우 개별적으로 잠금을 해제 해야 합니다.
 
 ##  <a name="m_ptm"></a>  CAtlFile::m_pTM
 
@@ -280,7 +280,7 @@ CAtlTransactionManager* m_pTM;
 
 ##  <a name="read"></a>  CAtlFile::Read
 
-파일 포인터에 의해 표시 되는 위치에서 시작 하는 파일에서 데이터를 읽기 위해이 메서드를 호출 합니다.
+파일 포인터가 나타내는 위치에서 시작 하 여 파일에서 데이터를 읽으려면이 메서드를 호출 합니다.
 
 ```
 HRESULT Read(
@@ -307,7 +307,7 @@ HRESULT Read(
 ### <a name="parameters"></a>매개 변수
 
 *pBuffer*<br/>
-파일에서 읽은 데이터를 받을 버퍼에 대 한 포인터입니다.
+파일에서 읽은 데이터를 수신 하는 버퍼에 대 한 포인터입니다.
 
 *nBufSize*<br/>
 버퍼 크기(바이트)입니다.
@@ -316,18 +316,18 @@ HRESULT Read(
 읽은 바이트 수입니다.
 
 *pOverlapped*<br/>
-Overlapped 구조체입니다. 참조 *lpOverlapped* 에 [ReadFile](/windows/desktop/api/fileapi/nf-fileapi-readfile) Windows SDK에 있습니다.
+겹쳐진 구조체입니다. Windows SDK에서 [ReadFile](/windows/win32/api/fileapi/nf-fileapi-readfile) 의 *lpOverlapped* 를 참조 하세요.
 
 *pfnCompletionRoutine*<br/>
-완료 루틴입니다. 참조 *lpCompletionRoutine* 에 [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) Windows SDK에 있습니다.
+완료 루틴입니다. Windows SDK [Readfileex](/windows/win32/api/fileapi/nf-fileapi-readfileex) 의 *lp의 일반 루틴* 을 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-처음 세 개의 폼 호출 [ReadFile](/windows/desktop/api/fileapi/nf-fileapi-readfile), 마지막 [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) 파일에서 데이터를 읽을 수 있습니다. 사용 하 여 [CAtlFile::Seek](#seek) 파일 포인터를 이동 합니다.
+처음 세 폼은 [ReadFile](/windows/win32/api/fileapi/nf-fileapi-readfile)을 호출 하 고 마지막 [readfileex](/windows/win32/api/fileapi/nf-fileapi-readfileex) 는 파일에서 데이터를 읽습니다. 이러한 파일 포인터를 이동 하려면 [Catlfile:: Seek](#seek) 를 사용 합니다.
 
 ##  <a name="seek"></a>  CAtlFile::Seek
 
@@ -342,18 +342,18 @@ HRESULT Seek(
 ### <a name="parameters"></a>매개 변수
 
 *nOffset*<br/>
-제공한 시작 지 점으로부터 오프셋 *dwFrom*합니다.
+*Dwfrom에서*지정 된 시작 지점에서의 오프셋입니다.
 
 *dwFrom*<br/>
-시작 지점 (FILE_BEGIN, FILE_CURRENT, 또는 FILE_END)입니다.
+시작점 (FILE_BEGIN, FILE_CURRENT 또는 FILE_END)입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [SetFilePointer](/windows/desktop/api/fileapi/nf-fileapi-setfilepointer) 파일 포인터를 이동 합니다.
+[Setfilepointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) 를 호출 하 여 파일 포인터를 이동 합니다.
 
 ##  <a name="setsize"></a>  CAtlFile::SetSize
 
@@ -366,19 +366,19 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 ### <a name="parameters"></a>매개 변수
 
 *nNewLen*<br/>
-새 길이 (바이트)에서 파일입니다.
+파일의 새 길이 (바이트)입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [SetFilePointer](/windows/desktop/api/fileapi/nf-fileapi-setfilepointer) 하 고 [SetEndOfFile](/windows/desktop/api/fileapi/nf-fileapi-setendoffile) 파일의 크기를 설정 합니다. 반환이 파일 포인터가 파일 끝에 배치 됩니다.
+[Setfilepointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) 및 [SetEndOfFile](/windows/win32/api/fileapi/nf-fileapi-setendoffile) 를 호출 하 여 파일의 크기를 설정 합니다. 반환 시 파일 포인터는 파일의 끝에 배치 됩니다.
 
 ##  <a name="unlockrange"></a>  CAtlFile::UnlockRange
 
-영역 파일의 잠금을 해제 하려면이 메서드를 호출 합니다.
+파일의 영역을 잠금 해제 하려면이 메서드를 호출 합니다.
 
 ```
 HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
@@ -387,22 +387,22 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ### <a name="parameters"></a>매개 변수
 
 *nPos*<br/>
-잠금 해제를 시작 해야 하는 파일의 위치입니다.
+잠금 해제를 시작할 파일의 위치입니다.
 
 *nCount*<br/>
-바이트 범위 잠금이 해제 되도록의 길이입니다.
+잠금을 해제할 바이트 범위의 길이입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-호출 [UnlockFile](/windows/desktop/api/fileapi/nf-fileapi-unlockfile) 영역 파일의 잠금을 해제 합니다.
+[Unlockfile](/windows/win32/api/fileapi/nf-fileapi-unlockfile) 을 호출 하 여 파일 영역의 잠금을 해제 합니다.
 
 ##  <a name="write"></a>  CAtlFile::Write
 
-파일 포인터에 의해 표시 되는 위치에서 시작 하 여 파일에 데이터를 쓸이 메서드를 호출 합니다.
+파일 포인터가 나타내는 위치에서 시작 하 여 파일에 데이터를 쓰려면이 메서드를 호출 합니다.
 
 ```
 HRESULT Write(
@@ -425,30 +425,30 @@ HRESULT Write(
 ### <a name="parameters"></a>매개 변수
 
 *pBuffer*<br/>
-파일에 쓸 데이터가 포함 된 버퍼입니다.
+파일에 쓸 데이터를 포함 하는 버퍼입니다.
 
 *nBufSize*<br/>
-버퍼에서 전송할 바이트 수입니다.
+버퍼에서 전송 될 바이트 수입니다.
 
 *pOverlapped*<br/>
-Overlapped 구조체입니다. 참조 *lpOverlapped* 에 [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile) Windows SDK에 있습니다.
+겹쳐진 구조체입니다. Windows SDK에서 [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile) 의 *lpOverlapped* 를 참조 하세요.
 
 *pfnCompletionRoutine*<br/>
-완료 루틴입니다. 참조 *lpCompletionRoutine* 에 [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) Windows SDK에 있습니다.
+완료 루틴입니다. Windows SDK의 [Writefileex](/windows/win32/api/fileapi/nf-fileapi-writefileex) 에서 *lp# 루틴* 을 참조 하세요.
 
 *pnBytesWritten*<br/>
-쓸 바이트입니다.
+쓴 바이트입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
+는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-처음 세 개의 폼 호출 [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile), 마지막 호출 [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) 파일에 데이터를 쓰려고 합니다. 사용 하 여 [CAtlFile::Seek](#seek) 파일 포인터를 이동 합니다.
+처음 세 개의 폼 호출 [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile)을 호출 하 고, 마지막으로 [writefileex](/windows/win32/api/fileapi/nf-fileapi-writefileex) 를 호출 하 여 파일에 데이터를 씁니다. 이러한 파일 포인터를 이동 하려면 [Catlfile:: Seek](#seek) 를 사용 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[움직이는 텍스트 샘플](../../overview/visual-cpp-samples.md)<br/>
+[Marquee 샘플](../../overview/visual-cpp-samples.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [CHandle 클래스](../../atl/reference/chandle-class.md)

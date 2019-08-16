@@ -10,12 +10,12 @@ helpviewer_keywords:
 - -GA compiler option [C++]
 - Optimize for Windows compiler options
 ms.assetid: be97323e-15a0-4836-862c-95980b51926a
-ms.openlocfilehash: a5eb6a10f3c4833ecc3e9d9c8451894788ebd938
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85efa03a3f3d267580cbb0442839afb18ac6c313
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292317"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492860"
 ---
 # <a name="ga-optimize-for-windows-application"></a>/GA(Windows 응용 프로그램 최적화)
 
@@ -29,7 +29,7 @@ ms.locfileid: "62292317"
 
 ## <a name="remarks"></a>설명
 
-**/GA**는 Windows 기반 프로그램에서 [__declspec(thread)](../../cpp/declspec.md)로 선언된 데이터의 액세스 속도를 향상시킵니다. 이 옵션을 설정하면 [__tls_index](/windows/desktop/ProcThread/thread-local-storage) 매크로는 0으로 간주됩니다.
+**/GA**는 Windows 기반 프로그램에서 [__declspec(thread)](../../cpp/declspec.md)로 선언된 데이터의 액세스 속도를 향상시킵니다. 이 옵션을 설정하면 [__tls_index](/windows/win32/ProcThread/thread-local-storage) 매크로는 0으로 간주됩니다.
 
 DLL에 **/GA**를 사용할 경우 잘못된 코드가 생성될 수 있습니다.
 

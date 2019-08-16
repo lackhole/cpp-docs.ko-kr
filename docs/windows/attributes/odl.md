@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - odl attribute
 ms.assetid: 75dcb314-b50f-4a63-9180-507ac1bc78f3
-ms.openlocfilehash: 90f9f1df23542138b2fac0dcfe0e122f1993d805
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a4ae1aa7f27348e37c565b35e3dc0b2b1011c9cb
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407642"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514322"
 ---
 # <a name="odl"></a>odl
 
-개체 설명 언어 (ODL) 인터페이스는 인터페이스를 식별합니다. MIDL 컴파일러 않아도 합니다 **odl** ; 특성 이전.odl 파일을 사용 하 여 호환성을 위해서만 인식 됩니다.
+인터페이스를 ODL (개체 설명 언어) 인터페이스로 식별 합니다. MIDL 컴파일러에는 **odl** 특성이 필요 하지 않습니다. 이전 odl 파일의 호환성을 위해서만 인식 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,7 +25,7 @@ ms.locfileid: "62407642"
 
 ## <a name="remarks"></a>설명
 
-**odl** C++ 특성에 동일한 기능을 합니다 [odl](/windows/desktop/Midl/odl) MIDL 특성입니다.
+**Odl** C++ 특성에는 [odl](/windows/win32/Midl/odl) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CRichEditDoc [MFC], GetView
 - CRichEditDoc [MFC], m_bRTF
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
-ms.openlocfilehash: d296185fe2ea2216f4abe17b191f71b6fa36e1f9
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: def0c55ff1faf12729226aa445c9614119c546c4
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916718"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502670"
 ---
 # <a name="cricheditdoc-class"></a>CRichEditDoc 클래스
 
@@ -35,7 +35,7 @@ class CRichEditDoc : public COleServerDoc
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CRichEditDoc::CreateClientItem](#createclientitem)|문서 정리를 수행 하기 위해 호출 됩니다.|
 |[CRichEditDoc::GetStreamFormat](#getstreamformat)|스트림 입력 및 출력에 형식 지정 정보가 포함 되어야 하는지 여부를 나타냅니다.|
@@ -43,7 +43,7 @@ class CRichEditDoc : public COleServerDoc
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CRichEditDoc::m_bRTF](#m_brtf)|스트림 i/o에 서식 지정이 포함 되어야 하는지 여부를 나타냅니다.|
 
@@ -88,7 +88,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
 ### <a name="parameters"></a>매개 변수
 
 *preo*<br/>
-OLE 항목을 설명 하는 [Reobject](/windows/desktop/api/richole/ns-richole-reobject) 구조에 대 한 포인터입니다. 이 OLE `CRichEditCntrItem` 항목을 중심으로 새 개체가 생성 됩니다. *Preo* 가 NULL 이면 새 클라이언트 항목이 비어 있습니다.
+OLE 항목을 설명 하는 [Reobject](/windows/win32/api/richole/ns-richole-reobject) 구조에 대 한 포인터입니다. 이 OLE `CRichEditCntrItem` 항목을 중심으로 새 개체가 생성 됩니다. *Preo* 가 NULL 이면 새 클라이언트 항목이 비어 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -98,7 +98,7 @@ OLE 항목을 설명 하는 [Reobject](/windows/desktop/api/richole/ns-richole-r
 
 이 함수는 OLE 초기화를 수행 하지 않습니다.
 
-자세한 내용은 Windows SDK의 [Reobject](/windows/desktop/api/richole/ns-richole-reobject) 구조를 참조 하세요.
+자세한 내용은 Windows SDK의 [Reobject](/windows/win32/api/richole/ns-richole-reobject) 구조를 참조 하세요.
 
 ##  <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat
 

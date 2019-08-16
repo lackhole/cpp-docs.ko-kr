@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CRichEditCntrItem [MFC], CRichEditCntrItem
 - CRichEditCntrItem [MFC], SyncToRichEditObject
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
-ms.openlocfilehash: b333cbbe33b42709614376cf98be01111be967a2
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 8e242504c8ab0f59f6dec0602d4a5352a2d84867
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916816"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502720"
 ---
 # <a name="cricheditcntritem-class"></a>CRichEditCntrItem 클래스
 
@@ -37,7 +37,7 @@ class CRichEditCntrItem : public COleClientItem
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CRichEditCntrItem::SyncToRichEditObject](#synctoricheditobject)|항목을 다른 형식으로 활성화 합니다.|
 
@@ -51,7 +51,7 @@ class CRichEditCntrItem : public COleClientItem
 
 MFC 응용 프로그램에서 rich edit 컨테이너 항목을 사용 하는 예제는 [워드 패드](../../overview/visual-cpp-samples.md) 샘플 응용 프로그램을 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -80,7 +80,7 @@ CRichEditCntrItem(
 ### <a name="parameters"></a>매개 변수
 
 *preo*<br/>
-OLE 항목을 설명 하는 [Reobject](/windows/desktop/api/richole/ns-richole-reobject) 구조에 대 한 포인터입니다. 이 OLE `CRichEditCntrItem` 항목을 중심으로 새 개체가 생성 됩니다. *Preo* 가 NULL 이면 클라이언트 항목이 비어 있습니다.
+OLE 항목을 설명 하는 [Reobject](/windows/win32/api/richole/ns-richole-reobject) 구조에 대 한 포인터입니다. 이 OLE `CRichEditCntrItem` 항목을 중심으로 새 개체가 생성 됩니다. *Preo* 가 NULL 이면 클라이언트 항목이 비어 있습니다.
 
 *pContainer*<br/>
 이 항목을 포함 하는 컨테이너 문서에 대 한 포인터입니다. *Pcontainer* 가 NULL 이면 [Coledocument:: AddItem](../../mfc/reference/coledocument-class.md#additem) 을 명시적으로 호출 하 여이 클라이언트 항목을 문서에 추가 해야 합니다.
@@ -89,11 +89,11 @@ OLE 항목을 설명 하는 [Reobject](/windows/desktop/api/richole/ns-richole-r
 
 이 함수는 OLE 초기화를 수행 하지 않습니다.
 
-자세한 내용은 Windows SDK의 [Reobject](/windows/desktop/api/richole/ns-richole-reobject) 구조를 참조 하세요.
+자세한 내용은 Windows SDK의 [Reobject](/windows/win32/api/richole/ns-richole-reobject) 구조를 참조 하세요.
 
 ##  <a name="synctoricheditobject"></a>  CRichEditCntrItem::SyncToRichEditObject
 
-이 함수를 호출 하 여이 `CRichEditCntrltem` 의 장치 측면, [dvaspect](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect)를 *reo*로 지정 된와 동기화 합니다.
+이 함수를 호출 하 여이 `CRichEditCntrltem` 의 장치 측면, [dvaspect](/windows/win32/api/wtypes/ne-wtypes-dvaspect)를 *reo*로 지정 된와 동기화 합니다.
 
 ```
 void SyncToRichEditObject(REOBJECT& reo);
@@ -102,11 +102,11 @@ void SyncToRichEditObject(REOBJECT& reo);
 ### <a name="parameters"></a>매개 변수
 
 *reo*<br/>
-OLE 항목을 설명 하는 [Reobject](/windows/desktop/api/richole/ns-richole-reobject) 구조에 대 한 참조입니다.
+OLE 항목을 설명 하는 [Reobject](/windows/win32/api/richole/ns-richole-reobject) 구조에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK [Dvaspect](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) 를 참조 하세요.
+자세한 내용은 Windows SDK [Dvaspect](/windows/win32/api/wtypes/ne-wtypes-dvaspect) 를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

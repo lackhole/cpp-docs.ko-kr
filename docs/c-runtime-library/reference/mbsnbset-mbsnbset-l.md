@@ -32,16 +32,16 @@ helpviewer_keywords:
 - tcsnset_l function
 - mbsnbset function
 ms.assetid: 8e46ef75-9a56-42d2-a522-a08450c67c19
-ms.openlocfilehash: 4c0f053cde32d71e4864c442b761606bb56c8829
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7783ff6519147331ae3943f053efe1bae01aee7d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331287"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499797"
 ---
-# <a name="mbsnbset-mbsnbsetl"></a>_mbsnbset, _mbsnbset_l
+# <a name="_mbsnbset-_mbsnbset_l"></a>_mbsnbset, _mbsnbset_l
 
-첫 번째 설정 **n** 바이트의 지정된 된 문자를 멀티 바이트 문자 문자열입니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_mbsnbset_s, _mbsnbset_s_l](mbsnbset-s-mbsnbset-s-l.md)을 참조하세요.
+멀티 바이트 문자열의 처음 **n** 바이트를 지정 된 문자로 설정 합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_mbsnbset_s, _mbsnbset_s_l](mbsnbset-s-mbsnbset-s-l.md)을 참조하세요.
 
 > [!IMPORTANT]
 > 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
@@ -78,19 +78,19 @@ unsigned char *_mbsnbset_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_mbsnbset** 변경된 된 문자열에 대 한 포인터를 반환 합니다.
+**_mbsnbset** 는 변경 된 문자열에 대 한 포인터를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_mbsnbset** 하 고 **_mbsnbset_l** 함수 설정, 최대, 첫 번째 *개수* 바이트 *str* 를 *c*. 경우 *개수* 의 길이 보다 크면 *str*, 길이의 *str* 대신 사용 됩니다 *개수*. 하는 경우 *c* 는 멀티 바이트 문자가 고 지정 된 마지막 바이트에 전체가 들어 설정할 수 없습니다 *개수*, 마지막 바이트는 빈 문자로 채워집니다. **_mbsnbset** 하 고 **_mbsnbset_l** 종료를 설정 하지 않으며 끝에 null *str*합니다.
+**_Mbsnbset** 및 **_mbsnbset_l** 함수는 *str* 의 처음 *카운트* 바이트를 *c*로 설정 합니다. *Count* 가 *str*의 길이 보다 크면 *count*대신 *str* 의 길이가 사용 됩니다. *C* 가 멀티 바이트 문자이 고 *count*로 지정 된 마지막 바이트로 완전히 설정할 수 없는 경우 마지막 바이트는 빈 문자로 채워집니다. **_mbsnbset** 및 **_mbsnbset_l** 는 *str*의 끝에 종료 null을 삽입 하지 않습니다.
 
-**_mbsnbset** 하 고 **_mbsnbset_l** 비슷합니다 **_mbsnset**설정 한다는 점을 제외 하면, *개수* 바이트 대신 *개수* 자의 *c*합니다.
+**_mbsnbset** 및 **_mbsnbset_l** 는 *c*의 *카운트* 문자 대신 *count* 바이트를 설정 한다는 점을 제외 하 고 **_mbsnset**와 비슷합니다.
 
-하는 경우 *str* 됩니다 **NULL** 또는 *count* 가 0 이면이 함수에 설명 된 대로 잘못 된 매개 변수 예외를 생성 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md). 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **NULL**합니다. 또한 경우 *c* 유효한 멀티 바이트 문자가 아닙니다 **errno** 로 설정 되어 **EINVAL** 공간을 대신 사용 됩니다.
+*Str* 이 **NULL** 이거나 *개수가* 0 인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 예외를 생성 합니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **NULL**을 반환 합니다. 또한 *c* 가 유효한 멀티 바이트 문자가 아닌 경우에는 **errno** 가 **EINVAL** 로 설정 되 고 대신 공백이 사용 됩니다.
 
-출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 합니다 **_mbsnbset** 버전의이 함수가 로캘 종속 동작에 현재 로캘을 사용 합니다 **_mbsnbset_l** 버전은 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 이 함수의 **_mbsnbset** 버전은이 로캘 종속 동작에 현재 로캘을 사용 합니다. **_mbsnbset_l** 버전은 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-**보안 정보** 이 API는 버퍼 오버런 문제로 인해 발생하는 잠재적인 위협을 일으킵니다. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+**보안 정보** 이 API는 버퍼 오버런 문제로 인해 발생하는 잠재적인 위협을 일으킵니다. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

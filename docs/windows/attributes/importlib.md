@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - importlib attribute
 ms.assetid: f129e459-b8d3-4aca-a0bc-ee53e18b62ed
-ms.openlocfilehash: 29c7df8fbedbd107a9bb0b05466addc4672fc555
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92cf335e5c4754595f2c7af2e1aef30d309d2f5f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409393"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514616"
 ---
 # <a name="importlib"></a>importlib
 
@@ -30,11 +30,11 @@ ms.locfileid: "62409393"
 
 ## <a name="remarks"></a>설명
 
-합니다 **importlib** C++ 원인 특성는 `importlib` 문이 생성된 된.idl 파일의 라이브러리 블록에 배치 합니다. 합니다 **importlib** 특성이 동일한 기능을 합니다 [importlib](/windows/desktop/Midl/importlib) MIDL 특성입니다.
+**Importlib** C++ 특성은 생성 된 .idl 파일의 라이브러리 블록에 문을배치합니다.`importlib` **Importlib** 특성은 [importlib](/windows/win32/Midl/importlib) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-다음 코드를 사용 하는 방법의 예를 보여 줍니다 **importlib**:
+다음 코드에서는 **importlib**를 사용 하는 방법의 예를 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_importlib.cpp

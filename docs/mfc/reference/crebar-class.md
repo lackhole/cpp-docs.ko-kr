@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CReBar [MFC], Create
 - CReBar [MFC], GetReBarCtrl
 ms.assetid: c1ad2720-1d33-4106-8e4e-80aa84f93559
-ms.openlocfilehash: 5a87f70816e9342c7aa203a53d13699659cebb28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 434232e8f99bf914b00379db53d4b4a37d24fe36
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372369"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502791"
 ---
 # <a name="crebar-class"></a>CReBar 클래스
 
@@ -35,24 +35,24 @@ class CReBar : public CControlBar
 
 |이름|설명|
 |----------|-----------------|
-|[CReBar::AddBar](#addbar)|Rebar 밴드를 추가합니다.|
-|[CReBar::Create](#create)|Rebar 컨트롤을 만들고에 연결 된 `CReBar` 개체입니다.|
+|[CReBar::AddBar](#addbar)|크기 조정 막대에 밴드를 추가 합니다.|
+|[CReBar::Create](#create)|Rebar 컨트롤을 만들고이를 `CReBar` 개체에 연결 합니다.|
 |[CReBar::GetReBarCtrl](#getrebarctrl)|기본 공용 컨트롤에 직접 액세스할 수 있습니다.|
 
 ## <a name="remarks"></a>설명
 
-Rebar 개체는 다양 한 자식 창에 일반적으로 다른 컨트롤 편집 상자, 도구 모음, 목록 상자 등을 포함할 수 있습니다. Rebar 개체는 지정 된 비트맵을 통해 해당 자식 창을 표시할 수 있습니다. 응용 프로그램이 자동으로 크기를 조정 rebar 하거나 수동으로 조정할 수 rebar 그리퍼 막대를 끌거나 클릭 하 여 합니다.
+Rebar 개체는 편집 상자, 도구 모음 및 목록 상자를 포함 하 여 다양 한 자식 창, 일반적으로 다른 컨트롤을 포함할 수 있습니다. Rebar 개체는 지정 된 비트맵 위에 자식 창을 표시할 수 있습니다. 응용 프로그램에서 자동 크기 조정 크기를 자동으로 조정할 수 있으며, 사용자는 그리퍼 막대를 클릭 하거나 끌어서 크기 조정 막대를 수동으로 조정할 수 있습니다.
 
 ![RebarMenu의 예](../../mfc/reference/media/vc4sc61.gif "RebarMenu의 예")
 
 ## <a name="rebar-control"></a>Rebar 컨트롤
 
-크기 조정 막대를 도구 모음 개체 비슷하게 작동합니다. Rebar 밴드의 크기를 조정 하려면 클릭 및 끌어서 메커니즘을 사용 합니다. rebar 컨트롤은 그리퍼 막대, 비트맵, 텍스트 레이블 및 자식 창이 조합된 하나 이상의 밴드를 포함할 수 있습니다. 그러나 밴드는 둘 이상의 자식 창을 포함할 수 없습니다.
+Rebar 개체는 toolbar 개체와 비슷하게 동작 합니다. Rebar는 클릭 및 끌기 메커니즘을 사용 하 여 해당 밴드의 크기를 조정 합니다. rebar 컨트롤은 그리퍼 막대, 비트맵, 텍스트 레이블 및 자식 창이 조합된 하나 이상의 밴드를 포함할 수 있습니다. 그러나 밴드는 둘 이상의 자식 창을 포함할 수 없습니다.
 
-`CReBar` 사용 하는 [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) 해당 구현을 제공 하는 클래스입니다. Rebar 컨트롤을 통해 액세스할 수 있습니다 [GetReBarCtrl](#getrebarctrl) 컨트롤의 사용자 지정 옵션을 활용할 수 있습니다. Rebar 컨트롤에 대 한 자세한 내용은 참조 하세요. `CReBarCtrl`합니다. Rebar 컨트롤을 사용 하는 방법에 대 한 자세한 내용은 참조 하십시오 [를 사용 하 여 CReBarCtrl](../../mfc/using-crebarctrl.md)합니다.
+`CReBar`는 [Crebarctrl](../../mfc/reference/crebarctrl-class.md) 클래스를 사용 하 여 구현을 제공 합니다. [Getre Ctrl 키](#getrebarctrl) 를 사용 하 여 rebar 컨트롤에 액세스 하 여 컨트롤의 사용자 지정 옵션을 활용할 수 있습니다. Rebar 컨트롤에 대 한 자세한 내용은을 `CReBarCtrl`참조 하십시오. Rebar 컨트롤 사용에 대 한 자세한 내용은 [CReBarCtrl 사용](../../mfc/using-crebarctrl.md)을 참조 하세요.
 
 > [!CAUTION]
->  Rebar 및 rebar 컨트롤 개체에는 MFC 컨트롤 모음 고정을 지원 하지 않습니다. 경우 `CRebar::EnableDocking` 응용 프로그램에서 assert가 호출 됩니다.
+>  Rebar 및 rebar 컨트롤 개체는 MFC 컨트롤 막대 도킹을 지원 하지 않습니다. 가 `CRebar::EnableDocking` 호출 되 면 응용 프로그램은를 어설션 합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -72,7 +72,7 @@ Rebar 개체는 다양 한 자식 창에 일반적으로 다른 컨트롤 편집
 
 ##  <a name="addbar"></a>  CReBar::AddBar
 
-Rebar 밴드를 추가 하려면이 멤버 함수를 호출 합니다.
+이 멤버 함수를 호출 하 여 rebar에 밴드를 추가 합니다.
 
 ```
 BOOL AddBar(
@@ -92,19 +92,19 @@ BOOL AddBar(
 ### <a name="parameters"></a>매개 변수
 
 *pBar*<br/>
-에 대 한 포인터를 `CWnd` 자식 창을 rebar에 삽입할 개체입니다. 참조 된 개체는 WS_CHILD 있어야 합니다.
+Rebar에 삽입할 자식 `CWnd` 창인 개체에 대 한 포인터입니다. 참조 된 개체에는 WS_CHILD가 있어야 합니다.
 
 *lpszText*<br/>
-Rebar에 표시할 텍스트를 포함 하는 문자열에 대 한 포인터입니다. 기본적으로 NULL입니다. 에 포함 된 텍스트 *lpszText* 자식 창의의 일부가 아닌 자체 rebar에 있는 것입니다.
+Rebar에 표시할 텍스트를 포함 하는 문자열에 대 한 포인터입니다. 기본값은 NULL입니다. *LpszText* 에 포함 된 텍스트는 자식 창의 일부가 아닙니다. rebar 자체에 있습니다.
 
 *pbmp*<br/>
-에 대 한 포인터를 `CBitmap` rebar 백그라운드에 표시 되는 개체입니다. 기본적으로 NULL입니다.
+Rebar 배경에 표시 되 `CBitmap` 는 개체에 대 한 포인터입니다. 기본값은 NULL입니다.
 
 *dwStyle*<br/>
-Rebar에 적용할 스타일을 포함 하 DWORD. 참조를 `fStyle` 함수는 Win32 구조의 설명 [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) 대역 외 스타일의 목록은 합니다.
+Rebar에 적용할 스타일을 포함 하는 DWORD입니다. 밴드 스타일 `fStyle` 의 전체 목록은 Win32 구조 [re바 밴드 정보](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) 에서 함수 설명을 참조 하세요.
 
 *clrFore*<br/>
-Rebar의 전경색을 나타내는 COLORREF 값입니다.
+크기 조정 막대의 전경색을 나타내는 COLORREF 값입니다.
 
 *clrBack*<br/>
 Rebar의 배경색을 나타내는 COLORREF 값입니다.
@@ -119,7 +119,7 @@ Rebar의 배경색을 나타내는 COLORREF 값입니다.
 
 ##  <a name="create"></a>  CReBar::Create
 
-Rebar를 만들려면이 멤버 함수를 호출 합니다.
+이 멤버 함수를 호출 하 여 rebar를 만듭니다.
 
 ```
 virtual BOOL Create(
@@ -132,16 +132,16 @@ virtual BOOL Create(
 ### <a name="parameters"></a>매개 변수
 
 *pParentWnd*<br/>
-에 대 한 포인터를 `CWnd` 인 Windows 창 상태 표시줄의 부모인 개체입니다. 프레임 창 일반적으로입니다.
+Windows 창이 상태 `CWnd` 표시줄의 부모 인 개체에 대 한 포인터입니다. 일반적으로 프레임 창입니다.
 
 *dwCtrlStyle*<br/>
-Rebar 컨트롤 스타일입니다. 기본적으로 RBS_BANDBORDERS 좁은 rebar 컨트롤 내에서 인접 한 밴드를 별도 줄을 표시 합니다. 참조 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) 스타일의 목록은 Windows SDK에 있습니다.
+Rebar 컨트롤 스타일입니다. 기본적으로 RBS_BANDBORDERS는 좁은 선을 표시 하 여 rebar 컨트롤 내에 인접 한 밴드를 분리 합니다. 스타일 목록은 Windows SDK의 [Rebar 컨트롤 스타일](/windows/win32/Controls/rebar-control-styles) 을 참조 하세요.
 
 *dwStyle*<br/>
 Rebar 창 스타일입니다.
 
 *nID*<br/>
-Rebar의 자식 창 id입니다.
+Rebar의 자식 창 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -149,11 +149,11 @@ Rebar의 자식 창 id입니다.
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CReBar::AddBar](#addbar)합니다.
+  [CReBar:: AddBar](#addbar)의 예제를 참조 하세요.
 
 ##  <a name="getrebarctrl"></a>  CReBar::GetReBarCtrl
 
-이 멤버 함수에는 기본 공용 컨트롤에 직접 액세스할 수 있습니다.
+이 멤버 함수를 사용 하면 기본 공용 컨트롤에 직접 액세스할 수 있습니다.
 
 ```
 CReBarCtrl& GetReBarCtrl() const;
@@ -161,13 +161,13 @@ CReBarCtrl& GetReBarCtrl() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 참조를 [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) 개체입니다.
+[Cre바 ctrl](../../mfc/reference/crebarctrl-class.md) 개체에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-Rebar에 사용자 지정 Windows rebar 공용 컨트롤의 기능을 활용 하려면이 멤버 함수를 호출 합니다. 호출 하는 경우 `GetReBarCtrl`, 참조 개체를 반환 합니다 `CReBarCtrl` 개체 멤버 함수의 집합 중 하나를 사용할 수 있습니다.
+이 멤버 함수를 호출 하 여 rebar 사용자 지정에서 Windows rebar 공용 컨트롤의 기능을 활용 합니다. 를 호출 `GetReBarCtrl`하면 멤버 함수 집합을 사용할 수 있도록 `CReBarCtrl` 개체에 대 한 참조 개체를 반환 합니다.
 
-사용에 대 한 자세한 내용은 `CReBarCtrl` 참조에 크기 조정 막대를 사용자 지정 하려면 [CReBarCtrl 사용 하 여](../../mfc/using-crebarctrl.md)입니다.
+를 사용 `CReBarCtrl` 하 여 rebar를 사용자 지정 하는 방법에 대 한 자세한 내용은 [crebarctrl 사용](../../mfc/using-crebarctrl.md)을 참조 하세요.
 
 ### <a name="example"></a>예제
 

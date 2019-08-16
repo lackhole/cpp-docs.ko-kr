@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: bbd369d282df1cac59e6966a2d832e23b8ff6da0
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 046c8a3f99e8b505ee6a6e8b534318263090e07d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916734"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502263"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl Class
 
@@ -261,7 +261,7 @@ TRUE 이면 *lprc* 가 텍스트 표시 사각형을 지정 하는 데 사용 �
 
 이 멤버 함수는 창 사각형에서 도구 설명 컨트롤의 텍스트 표시 사각형을 계산 하거나 지정 된 텍스트 표시 사각형을 표시 하는 데 필요한 도구 설명 창 사각형을 계산 합니다.
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_ADJUSTRECT](/windows/desktop/Controls/ttm-adjustrect)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_ADJUSTRECT](/windows/win32/Controls/ttm-adjustrect)의 동작을 구현 합니다.
 
 ##  <a name="create"></a>  CToolTipCtrl::Create
 
@@ -322,7 +322,7 @@ virtual BOOL CreateEx(
 도구 설명 컨트롤의 스타일을 지정 합니다. 자세한 내용은 [Create](#create) 의 **설명** 섹션을 참조 하세요.
 
 *dwStyleEx*<br/>
-만들려는 컨트롤의 확장 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록에 대해서는 Windows SDK의 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 에 대 한 *dwexstyle* 매개 변수를 참조 하세요.
+만들려는 컨트롤의 확장 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록에 대해서는 Windows SDK의 [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) 에 대 한 *dwexstyle* 매개 변수를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -377,7 +377,7 @@ CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpToolInfo*<br/>
-도구 설명의 [Toolinfo](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) 구조에 대 한 포인터입니다.
+도구 설명의 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-toolinfow) 구조에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -385,7 +385,7 @@ CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETBUBBLESIZE](/windows/desktop/Controls/ttm-getbubblesize)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETBUBBLESIZE](/windows/win32/Controls/ttm-getbubblesize)의 동작을 구현 합니다.
 
 ##  <a name="getcurrenttool"></a>  CToolTipCtrl::GetCurrentTool
 
@@ -399,7 +399,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*lpToolInfo*|제한이 현재 도구 설명 창에 대 한 정보를 수신 하는 [Toolinfo](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) 구조체에 대 한 포인터입니다.|
+|*lpToolInfo*|제한이 현재 도구 설명 창에 대 한 정보를 수신 하는 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-toolinfow) 구조체에 대 한 포인터입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -407,7 +407,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Windows SDK에 설명 된 [TTM_GETCURRENTTOOL](/windows/desktop/Controls/ttm-getcurrenttool) 메시지를 보냅니다.
+이 메서드는 Windows SDK에 설명 된 [TTM_GETCURRENTTOOL](/windows/win32/Controls/ttm-getcurrenttool) 메시지를 보냅니다.
 
 ### <a name="example"></a>예제
 
@@ -440,7 +440,7 @@ int GetDelayTime(DWORD dwDuration) const;
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETDELAYTIME](/windows/desktop/Controls/ttm-getdelaytime)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETDELAYTIME](/windows/win32/Controls/ttm-getdelaytime)의 동작을 구현 합니다.
 
 ##  <a name="getmargin"></a>  CToolTipCtrl::GetMargin
 
@@ -464,7 +464,7 @@ void GetMargin(LPRECT lprc) const;
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETMARGIN](/windows/desktop/Controls/ttm-getmargin)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETMARGIN](/windows/win32/Controls/ttm-getmargin)의 동작을 구현 합니다.
 
 ##  <a name="getmaxtipwidth"></a>  CToolTipCtrl::GetMaxTipWidth
 
@@ -480,7 +480,7 @@ int GetMaxTipWidth() const;
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETMAXTIPWIDTH](/windows/desktop/Controls/ttm-getmaxtipwidth)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETMAXTIPWIDTH](/windows/win32/Controls/ttm-getmaxtipwidth)의 동작을 구현 합니다.
 
 ##  <a name="gettext"></a>  CToolTipCtrl::GetText
 
@@ -518,11 +518,11 @@ COLORREF GetTipBkColor() const;
 
 ### <a name="return-value"></a>반환 값
 
-배경색을 나타내는 [Colorref](/windows/desktop/gdi/colorref) 값입니다.
+배경색을 나타내는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETTIPBKCOLOR](/windows/desktop/Controls/ttm-gettipbkcolor)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETTIPBKCOLOR](/windows/win32/Controls/ttm-gettipbkcolor)의 동작을 구현 합니다.
 
 ##  <a name="gettiptextcolor"></a>  CToolTipCtrl::GetTipTextColor
 
@@ -534,11 +534,11 @@ COLORREF GetTipTextColor() const;
 
 ### <a name="return-value"></a>반환 값
 
-텍스트 색을 나타내는 [Colorref](/windows/desktop/gdi/colorref) 값입니다.
+텍스트 색을 나타내는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETTIPTEXTCOLOR](/windows/desktop/Controls/ttm-gettiptextcolor)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_GETTIPTEXTCOLOR](/windows/win32/Controls/ttm-gettiptextcolor)의 동작을 구현 합니다.
 
 ##  <a name="gettitle"></a>  CToolTipCtrl::GetTitle
 
@@ -552,11 +552,11 @@ void GetTitle(PTTGETTITLE pttgt) const;
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*pttgt*|제한이 ToolTip 컨트롤에 대 한 정보를 포함 하는 [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-ttgettitle) 구조체에 대 한 포인터입니다. 이 메서드가 반환 될 때 [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-ttgettitle) 구조체의 *pszTitle* 멤버는 제목의 텍스트를 가리킵니다.|
+|*pttgt*|제한이 ToolTip 컨트롤에 대 한 정보를 포함 하는 [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) 구조체에 대 한 포인터입니다. 이 메서드가 반환 될 때 [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) 구조체의 *pszTitle* 멤버는 제목의 텍스트를 가리킵니다.|
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Windows SDK에 설명 된 [TTM_GETTITLE](/windows/desktop/Controls/ttm-gettitle) 메시지를 보냅니다.
+이 메서드는 Windows SDK에 설명 된 [TTM_GETTITLE](/windows/win32/Controls/ttm-gettitle) 메시지를 보냅니다.
 
 ##  <a name="gettoolcount"></a>  CToolTipCtrl::GetToolCount
 
@@ -598,7 +598,7 @@ BOOL GetToolInfo(
 
 ### <a name="remarks"></a>설명
 
-`hwnd` *Ctoolinfo* 에서 참조 하는 [toolinfo](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) 구조의 및 `uId` 멤버가 도구를 식별 합니다. 이전 호출 `AddTool`을 통해 도구 설명 컨트롤에 해당 도구를 등록 한 경우이 구조는 `TOOLINFO` 도구에 대 한 정보로 채워집니다.
+`hwnd` *Ctoolinfo* 에서 참조 하는 [toolinfo](/windows/win32/api/commctrl/ns-commctrl-toolinfow) 구조의 및 `uId` 멤버가 도구를 식별 합니다. 이전 호출 `AddTool`을 통해 도구 설명 컨트롤에 해당 도구를 등록 한 경우이 구조는 `TOOLINFO` 도구에 대 한 정보로 채워집니다.
 
 ##  <a name="hittest"></a>  CToolTipCtrl::HitTest
 
@@ -620,7 +620,7 @@ BOOL HitTest(
 테스트할 점의 좌표 `CPoint` 를 포함 하는 개체에 대 한 포인터입니다.
 
 *lpToolInfo*<br/>
-도구에 대 한 정보를 포함 하는 [Toolinfo](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) 구조체에 대 한 포인터입니다.
+도구에 대 한 정보를 포함 하는 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-toolinfow) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -662,7 +662,7 @@ void Pop();
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_POP](/windows/desktop/Controls/ttm-pop)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_POP](/windows/win32/Controls/ttm-pop)의 동작을 구현 합니다.
 
 ##  <a name="popup"></a>  CToolTipCtrl::Popup
 
@@ -674,7 +674,7 @@ void Popup();
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Windows SDK에 설명 된 [TTM_POPUP](/windows/desktop/Controls/ttm-popup) 메시지를 보냅니다.
+이 메서드는 Windows SDK에 설명 된 [TTM_POPUP](/windows/win32/Controls/ttm-popup) 메시지를 보냅니다.
 
 ### <a name="example"></a>예제
 
@@ -693,7 +693,7 @@ void RelayEvent(LPMSG lpMsg);
 ### <a name="parameters"></a>매개 변수
 
 *lpMsg*<br/>
-릴레이할 메시지를 포함 하는 [MSG](/windows/desktop/api/winuser/ns-winuser-msg) 구조에 대 한 포인터입니다.
+릴레이할 메시지를 포함 하는 [MSG](/windows/win32/api/winuser/ns-winuser-msg) 구조에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -751,7 +751,7 @@ void SetMargin(LPRECT lprc);
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_SETMARGIN](/windows/desktop/Controls/ttm-setmargin)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_SETMARGIN](/windows/win32/Controls/ttm-setmargin)의 동작을 구현 합니다.
 
 ##  <a name="setmaxtipwidth"></a>  CToolTipCtrl::SetMaxTipWidth
 
@@ -772,7 +772,7 @@ int SetMaxTipWidth(int iWidth);
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_SETMAXTIPWIDTH](/windows/desktop/Controls/ttm-setmaxtipwidth)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_SETMAXTIPWIDTH](/windows/win32/Controls/ttm-setmaxtipwidth)의 동작을 구현 합니다.
 
 ##  <a name="settipbkcolor"></a>  CToolTipCtrl::SetTipBkColor
 
@@ -789,7 +789,7 @@ void SetTipBkColor(COLORREF clr);
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_SETTIPBKCOLOR](/windows/desktop/Controls/ttm-settipbkcolor)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_SETTIPBKCOLOR](/windows/win32/Controls/ttm-settipbkcolor)의 동작을 구현 합니다.
 
 ##  <a name="settiptextcolor"></a>  CToolTipCtrl::SetTipTextColor
 
@@ -806,7 +806,7 @@ void SetTipTextColor(COLORREF clr);
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_SETTIPTEXTCOLOR](/windows/desktop/Controls/ttm-settiptextcolor)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_SETTIPTEXTCOLOR](/windows/win32/Controls/ttm-settiptextcolor)의 동작을 구현 합니다.
 
 ##  <a name="settitle"></a>  CToolTipCtrl::SetTitle
 
@@ -821,7 +821,7 @@ BOOL SetTitle(
 ### <a name="parameters"></a>매개 변수
 
 *uIcon*<br/>
-Windows SDK에서 [TTM_SETTITLE](/windows/desktop/Controls/ttm-settitle) 의 *아이콘* 을 참조 하세요.
+Windows SDK에서 [TTM_SETTITLE](/windows/win32/Controls/ttm-settitle) 의 *아이콘* 을 참조 하세요.
 
 *lpstrTitle*<br/>
 제목 문자열에 대 한 포인터입니다.
@@ -832,7 +832,7 @@ Windows SDK에서 [TTM_SETTITLE](/windows/desktop/Controls/ttm-settitle) 의 *�
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_SETTITLE](/windows/desktop/Controls/ttm-settitle)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TTM_SETTITLE](/windows/win32/Controls/ttm-settitle)의 동작을 구현 합니다.
 
 ##  <a name="settoolinfo"></a>  CToolTipCtrl::SetToolInfo
 
@@ -845,7 +845,7 @@ void SetToolInfo(LPTOOLINFO lpToolInfo);
 ### <a name="parameters"></a>매개 변수
 
 *lpToolInfo*<br/>
-설정할 정보를 지정 하는 [Toolinfo](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) 구조체에 대 한 포인터입니다.
+설정할 정보를 지정 하는 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-toolinfow) 구조체에 대 한 포인터입니다.
 
 ##  <a name="settoolrect"></a>  CToolTipCtrl::SetToolRect
 
@@ -888,7 +888,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK 설명 된 대로 [TTM_SETWINDOWTHEME](/windows/desktop/Controls/ttm-setwindowtheme) 메시지의 기능을 에뮬레이트합니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 [TTM_SETWINDOWTHEME](/windows/win32/Controls/ttm-setwindowtheme) 메시지의 기능을 에뮬레이트합니다.
 
 ##  <a name="update"></a>  CToolTipCtrl::Update
 

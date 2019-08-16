@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - defaultbind attribute
 ms.assetid: b20a8437-24e6-4b6d-a2df-09fe5e1006e0
-ms.openlocfilehash: f0dd9101966f22253e6c4098c3c64d22d0a0cba6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a2f612c4869a62a84a6a2af99057ced365f875f2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148070"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490985"
 ---
 # <a name="defaultbind"></a>defaultbind
 
-개체를 가장 잘 나타내는 단일, 바인딩 가능한 속성을 나타냅니다.
+개체를 가장 잘 나타내는 바인딩 가능한 단일 속성을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62148070"
 
 ## <a name="remarks"></a>설명
 
-**defaultbind** C++ 특성에 동일한 기능을 합니다 [defaultbind](/windows/desktop/Midl/defaultbind) MIDL 특성입니다.
+**Defaultbind** C++ 특성에는 [defaultbind](/windows/win32/Midl/defaultbind) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [바인딩 가능한](bindable.md) 사용 하는 방법의 예제 **defaultbind**합니다.
+**Defaultbind**를 사용 하는 방법에 대 한 예제는 [바인딩](bindable.md) 가능의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

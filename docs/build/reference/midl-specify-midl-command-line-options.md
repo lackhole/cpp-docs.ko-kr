@@ -11,39 +11,39 @@ helpviewer_keywords:
 - MIDL linker option
 - MIDL, command line options
 ms.assetid: 22dc259e-b34c-4ed3-a380-4beb734482c1
-ms.openlocfilehash: 584958ac51bdc491ad1bdd16117ecaad6e000ec7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca172428943d2446490eeb10741966f5e8c9ea85
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321074"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492715"
 ---
 # <a name="midl-specify-midl-command-line-options"></a>/MIDL(MIDL 명령줄 옵션 지정)
 
-MIDL 명령줄 옵션에 대 한 지시 파일 지정
+MIDL 명령줄 옵션에 대 한 지시 파일을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **/MIDL:\@**<em>file</em>
+> **/MIDL:\@** <em>file</em>
 
 ## <a name="arguments"></a>인수
 
 *file*<br/>
-포함 된 파일의 이름을 [MIDL 명령줄 옵션](/windows/desktop/Midl/general-midl-command-line-syntax)합니다.
+[MIDL 명령줄 옵션](/windows/win32/Midl/general-midl-command-line-syntax)을 포함 하는 파일의 이름입니다.
 
 ## <a name="remarks"></a>설명
 
-IDL 파일을 TLB 파일로 변환에 대 한 모든 옵션 지정 해야 합니다 *파일*; MIDL 명령줄 옵션을 링커의 명령줄에서 지정할 수 없습니다. /MIDL 지정 하지 않으면, MIDL 컴파일러 IDL 파일 이름 및 다른 옵션 없이 사용 하 여 호출 됩니다.
+IDL 파일을 TLB 파일로 변환 하는 모든 옵션을 *파일*에 지정 해야 합니다. MIDL 명령줄 옵션은 링커에 대 한 명령줄에서 지정할 수 없습니다. /MIDL를 지정 하지 않으면 MIDL 컴파일러는 IDL 파일 이름 으로만 호출 되며 다른 옵션은 호출 되지 않습니다.
 
-파일 줄당 하나의 MIDL 명령줄 옵션을 포함 해야 합니다.
+파일은 한 줄에 하나의 MIDL 명령줄 옵션을 포함 해야 합니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **링커** > **포함 IDL** 속성 페이지.
+1. **구성 속성** > 링커포함 > **IDL** 속성 페이지를 선택 합니다.
 
-1. 수정 된 **MIDL 명령** 속성입니다.
+1. **MIDL Commands** 속성을 수정 합니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 

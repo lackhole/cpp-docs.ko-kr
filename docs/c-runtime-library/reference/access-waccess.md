@@ -31,14 +31,14 @@ helpviewer_keywords:
 - _waccess function
 - taccess function
 ms.assetid: ba34f745-85c3-49e5-a7d4-3590bd249dd3
-ms.openlocfilehash: 87ac912ab47483929b3afc2357331f8d97264b31
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 37c5760eb5231d17a8b17fe5d21f1459a865c067
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341706"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500013"
 ---
-# <a name="access-waccess"></a>_access, _waccess
+# <a name="_access-_waccess"></a>_access, _waccess
 
 파일이 읽기 전용인지 아닌지를 확인합니다. 더 안전한 버전을 사용할 수 있습니다. [_access_s, _waccess_s](access-s-waccess-s.md)를 참조하세요.
 
@@ -60,12 +60,12 @@ int _waccess(
 *path*<br/>
 파일 또는 디렉터리 경로입니다.
 
-*모드*<br/>
+*mode*<br/>
 읽기/쓰기 특성입니다.
 
 ## <a name="return-value"></a>반환 값
 
-파일에 지정된 모드가 있으면 각 함수는 0을 반환합니다. 명명 된 파일이 존재 하지 않거나 지정된 된 모드가 없는 경우-1을 반환 하는 함수 이 경우 `errno` 표에 표시 된 것과 같이 설정 됩니다.
+파일에 지정된 모드가 있으면 각 함수는 0을 반환합니다. 명명 된 파일이 없거나 지정 된 모드가 없는 경우 함수는-1을 반환 합니다. 이 경우 `errno` 는 다음 표와 같이 설정 됩니다.
 
 |||
 |-|-|
@@ -77,7 +77,7 @@ int _waccess(
 
 ## <a name="remarks"></a>설명
 
-파일을 사용 하는 경우는 **_access** 함수는 지정 된 파일 또는 디렉터리 존재 및 값을 기준으로 지정 된 특성이 있는지 여부를 결정 *모드*합니다. 디렉터리와 함께 사용할 때 **_access** 지정한 디렉터리가 있는지만 확인; Windows 2000에서 이상 운영 체제에서는 모든 디렉터리에 읽기 및 쓰기 액세스 합니다.
+**_Access** 함수는 파일에 사용 되는 경우 지정 된 파일 또는 디렉터리가 존재 하 고 *모드*값으로 지정 된 특성을 포함 하는지 여부를 확인 합니다. 디렉터리와 함께 사용 하 는 경우 지정 된 디렉터리가 있는지만 확인 합니다. Windows 2000 이상 운영 체제에서는 모든 디렉터리에 읽기 및 쓰기 권한이 있습니다.
 
 |*모드* 값|파일 검사|
 |------------------|---------------------|
@@ -86,11 +86,11 @@ int _waccess(
 |04|읽기 전용|
 |06|읽기 및 쓰기|
 
-이 함수는 파일과 디렉터리가 읽기 전용인지 아닌지만 확인하고, 파일 시스템 보안 설정은 확인하지 않습니다. 이를 확인하려면 액세스 토큰이 필요합니다. 파일 시스템 보안에 대한 자세한 내용은 [액세스 토큰](/windows/desktop/SecAuthZ/access-tokens)을 참조하세요. 이 기능을 제공하기 위해 ATL 클래스가 존재합니다. [CAccessToken 클래스](../../atl/reference/caccesstoken-class.md)를 참조하세요.
+이 함수는 파일과 디렉터리가 읽기 전용인지 아닌지만 확인하고, 파일 시스템 보안 설정은 확인하지 않습니다. 이를 확인하려면 액세스 토큰이 필요합니다. 파일 시스템 보안에 대한 자세한 내용은 [액세스 토큰](/windows/win32/SecAuthZ/access-tokens)을 참조하세요. 이 기능을 제공하기 위해 ATL 클래스가 존재합니다. [CAccessToken 클래스](../../atl/reference/caccesstoken-class.md)를 참조하세요.
 
-**_waccess** 의 와이드 문자 버전이 **_access**; *경로* 인수를 **_waccess** 는 와이드 문자 문자열입니다. **_waccess** 하 고 **_access** 동일 하 게 작동 합니다.
+**_waccess** 는 wide **access**의 와이드 문자 버전입니다. **_waccess** 에 대 한 *path* 인수는 와이드 문자열입니다. **_waccess** 및 **access** 는 동일 하 게 동작 합니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 *경로* 가 NULL 또는 *모드* 유효한 모드를 지정 하지 않는에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 계속해서 실행하도록 허용된 경우 함수가 `errno`를 `EINVAL`로 설정하고 -1을 반환합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *Path* 가 NULL 이거나 *mode* 가 유효한 모드를 지정 하지 않는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속해서 실행하도록 허용된 경우 함수가 `errno`를 `EINVAL`로 설정하고 -1을 반환합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -107,7 +107,7 @@ int _waccess(
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 **_access** crt_ACCESS 라는 파일을 확인 합니다. C 존재 하는지 여부 및 쓰기가 허용 되는지를 확인 합니다.
+다음 예제에서는 crt_ACCESS 이라는 파일을 확인 하는 데 액세스를 사용 합니다 **(_d)** . C가 있는지 여부와 쓰기가 허용 되는지 여부를 확인 합니다.
 
 ```C
 // crt_access.c

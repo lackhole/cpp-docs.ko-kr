@@ -35,14 +35,14 @@ helpviewer_keywords:
 - _vfprintf_l function
 - formatted text [C++]
 ms.assetid: 4443be50-cedf-40b2-b3e2-ff2b3af3b666
-ms.openlocfilehash: 889fedde263b9815597702f1e9d5b252f3998bdd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18ba244bceb2deaf5ada78ae85aa8cab7058d51b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364898"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499215"
 ---
-# <a name="vfprintf-vfprintfl-vfwprintf-vfwprintfl"></a>vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l
+# <a name="vfprintf-_vfprintf_l-vfwprintf-_vfwprintf_l"></a>vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l
 
 인수 목록에 대한 포인터를 사용하여 형식이 지정된 출력을 씁니다. 이러한 함수의 더 안전한 버전이 있습니다. [vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l](vfprintf-s-vfprintf-s-l-vfwprintf-s-vfwprintf-s-l.md)을 참조하세요.
 
@@ -91,20 +91,20 @@ int _vfwprintf_l(
 
 ## <a name="return-value"></a>반환 값
 
-**vfprintf** 하 고 **vfwprintf** 출력 오류가 발생 하면 null 종결 문자 또는 음수 값을 포함 하지 않고 작성 된 문자 수를 반환 합니다. 경우 *스트림을* 하거나 *형식* 가 null 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 설정 **errno** 하 **EINVAL**합니다.
+**vfprintf** 및 **vfwprintf** 는 종료 null 문자를 포함 하지 않고 작성 된 문자 수를 반환 하거나 출력 오류가 발생 하는 경우 음수 값을 반환 합니다. *스트림이나* *형식이* 모두 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 각각 인수 목록에 대 한 포인터 형식을 지정 하 고 지정된 된 데이터를 씁니다 *스트림을*합니다.
+이러한 각 함수는 인수 목록에 대 한 포인터를 가져온 다음 지정 된 데이터의 형식을 지정 하 고 *스트림에*씁니다.
 
-**vfwprintf** 의 와이드 문자 버전이 **vfprintf**; 두 함수는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 작동 합니다. **vfprintf** 유니코드 스트림으로 출력을 현재 지원 하지 않습니다.
+**vfwprintf** 는 **vfprintf**의 와이드 문자 버전입니다. 두 함수는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 동작 합니다. **vfprintf** 는 현재 유니코드 스트림에 대 한 출력을 지원 하지 않습니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 경우를 제외 하 고는 동일 합니다.
 
 > [!IMPORTANT]
-> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

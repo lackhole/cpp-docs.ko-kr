@@ -1,21 +1,21 @@
 ---
-title: 포함 (C++ COM 특성)
+title: include (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.include
 helpviewer_keywords:
 - include attribute
 ms.assetid: d23f8b91-fe5b-48fa-9371-8bd73af7b8e3
-ms.openlocfilehash: d9c68601bea4cecd92b371dada5fb086aeb7657f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ece88ebd7b5d9d81beb871427b58a72b2cf02022
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409449"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514559"
 ---
 # <a name="include-c"></a>include(C++)
 
-생성된 된.idl 파일에 포함할 하나 이상의 헤더 파일을 지정 합니다.
+생성 된 .idl 파일에 포함할 하나 이상의 헤더 파일을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,17 +26,17 @@ ms.locfileid: "62409449"
 ### <a name="parameters"></a>매개 변수
 
 *header_file*<br/>
-생성된 된.idl 파일에 포함 하려는 파일의 이름입니다.
+생성 된 .idl 파일에 포함할 파일의 이름입니다.
 
 ## <a name="remarks"></a>설명
 
-**포함** C++ 원인 특성는 `#include` 문 아래에 배치 하는 `import "docobj.idl"` 생성 된.idl 파일의 문.
+**Include** C++ 특성을`import "docobj.idl"` 통해 문이 생성 된 .idl 파일의 문 아래에 배치 됩니다. `#include`
 
-**포함** C++ 특성에 동일한 기능을 합니다 [포함](/windows/desktop/Midl/include) MIDL 특성입니다.
+**Include** C++ 특성에는 [include](/windows/win32/Midl/include) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 코드를 사용 하는 방법의 예를 보여 줍니다 **포함**합니다. 예를 들어 파일 include.h만 포함 된 `#include` 문입니다.
+다음 코드에서는 **include**를 사용 하는 방법의 예를 보여 줍니다. 이 예에서 파일에는 `#include` 문만 포함 되어 있습니다.
 
 ```cpp
 // cpp_attr_ref_include.cpp

@@ -44,14 +44,14 @@ helpviewer_keywords:
 - _InterlockedExchange intrinsic
 - _InterlockedExchange8_nf
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
-ms.openlocfilehash: 3945b8a7516962531050e999e96bdef31b179bbb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c96ce57854bfb3eea0e1b8bc6283984c7fce50f9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396745"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509398"
 ---
-# <a name="interlockedexchange-intrinsic-functions"></a>_InterlockedExchangePointer Intrinsic Functions
+# <a name="_interlockedexchange-intrinsic-functions"></a>_InterlockedExchangePointer Intrinsic Functions
 
 **Microsoft 전용**
 
@@ -145,10 +145,10 @@ __int64 _InterlockedExchange64_rel(
 #### <a name="parameters"></a>매개 변수
 
 *Target*<br/>
-[out에서] 교환할 값에 대 한 포인터입니다. 함수는 이 변수를 `Value`로 설정하고 이전 값을 반환합니다.
+[in, out] 교환할 값에 대 한 포인터입니다. 함수는 이 변수를 `Value`로 설정하고 이전 값을 반환합니다.
 
 *값*<br/>
-[in] 가리키는 값과 교환할 값 `Target`합니다.
+진행 가 `Target`가리키는 값과 교환할 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -164,7 +164,7 @@ __int64 _InterlockedExchange64_rel(
 
 ## <a name="remarks"></a>설명
 
-`_InterlockedExchange` Win32 Windows SDK에 대 한 컴파일러 내장 지원을 제공 [InterlockedExchange](/windows/desktop/api/winnt/nf-winnt-interlockedexchange) 함수입니다.
+`_InterlockedExchange`Win32 Windows SDK [InterlockedExchange](/windows/win32/api/winnt/nf-winnt-interlockedexchange) 함수에 대 한 컴파일러 내장 함수 지원을 제공 합니다.
 
 사용되는 데이터 형식과 프로세서별 획득 또는 해제 의미 체계에 따라 다른 `_InterlockedExchange`의 여러 변형이 있습니다.
 
@@ -178,7 +178,7 @@ HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcq
 
 ## <a name="example"></a>예제
 
-샘플을 사용 하는 방법에 대 한 `_InterlockedExchange`를 참조 하세요 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)합니다.
+를 사용 `_InterlockedExchange`하는 방법에 대 한 샘플은 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)를 참조 하세요.
 
 **Microsoft 전용 종료**
 

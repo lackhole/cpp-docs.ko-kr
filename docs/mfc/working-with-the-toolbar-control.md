@@ -7,27 +7,27 @@ helpviewer_keywords:
 - CToolBarCtrl class [MFC], accessing toolbar
 - toolbar controls [MFC], accessing
 ms.assetid: b19409d5-3831-42c7-80ae-195c49dc9085
-ms.openlocfilehash: 88c00bf60f2ce1fccecd757d13b2f814e3a18be4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 60cc527493e2a68751c201b998ab171c564d6c1f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399501"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510585"
 ---
 # <a name="working-with-the-toolbar-control"></a>ToolBar 컨트롤 사용
 
-이 문서에서는 액세스 하는 방법을 설명 합니다 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) 개체 내부를 [CToolBar](../mfc/reference/ctoolbar-class.md) 도구 모음 보다 효율적으로 제어 합니다. 고급 항목입니다.
+이 문서에서는 [CToolBar](../mfc/reference/ctoolbar-class.md) 의 기반이 되는 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) 개체에 액세스 하 여 도구 모음에 대 한 제어를 강화 하는 방법을 설명 합니다. 이는 고급 항목입니다.
 
 ## <a name="procedures"></a>절차
 
-#### <a name="to-access-the-toolbar-common-control-underlying-your-ctoolbar-object"></a>CToolBar 개체를 기본 도구 모음 공용 컨트롤에 액세스
+#### <a name="to-access-the-toolbar-common-control-underlying-your-ctoolbar-object"></a>CToolBar 개체의 기본 도구 모음 공용 컨트롤에 액세스 하려면
 
-1. 호출 [CToolBar::GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl)합니다.
+1. [CToolBar:: GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl)를 호출 합니다.
 
-`GetToolBarCtrl` 에 대 한 참조를 반환 합니다는 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) 개체입니다. 도구 모음 컨트롤 클래스의 멤버 함수 호출에 대 한 참조를 사용할 수 있습니다.
+`GetToolBarCtrl`[CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) 개체에 대 한 참조를 반환 합니다. 참조를 사용 하 여 toolbar 컨트롤 클래스의 멤버 함수를 호출할 수 있습니다.
 
 > [!CAUTION]
->  호출 하는 동안 `CToolBarCtrl` **가져올** 함수를 안전 하 게 호출 하는 경우 주의 해야 합니다 **설정** 함수입니다. 고급 항목입니다. 일반적으로 기본 도구 모음 컨트롤에 액세스할 필요가 없습니다.
+>  **Get** 함수 `CToolBarCtrl` 를 호출 하는 것은 안전 하지만 **Set** 함수를 호출 하는 경우 주의 해야 합니다. 이는 고급 항목입니다. 일반적으로 기본 도구 모음 컨트롤에 액세스할 필요가 없습니다.
 
 ### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
@@ -37,7 +37,7 @@ ms.locfileid: "62399501"
 
 - [도킹 및 부동 도구 모음](../mfc/docking-and-floating-toolbars.md)
 
-- [도구 모음을 동적으로 크기 조정](../mfc/docking-and-floating-toolbars.md)
+- [동적으로 도구 모음 크기 조정](../mfc/docking-and-floating-toolbars.md)
 
 - [도구 모음 도구 설명](../mfc/toolbar-tool-tips.md)
 
@@ -45,7 +45,7 @@ ms.locfileid: "62399501"
 
 - [도구 설명 알림 처리](../mfc/handling-tool-tip-notifications.md)
 
-- 합니다 [CToolBar](../mfc/reference/ctoolbar-class.md) 하 고 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) 클래스
+- [CToolBar](../mfc/reference/ctoolbar-class.md) 및 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) 클래스
 
 - [사용자 지정 알림 처리](../mfc/handling-customization-notifications.md)
 
@@ -55,7 +55,7 @@ ms.locfileid: "62399501"
 
 - [컨트롤 막대](../mfc/control-bars.md)
 
-Windows 공용 컨트롤을 사용 하는 방법에 대 한 일반적인 정보를 참조 하세요 [공용 컨트롤](/windows/desktop/Controls/common-controls-intro)합니다.
+Windows 공용 컨트롤 사용에 대 한 일반적인 내용은 [공용 컨트롤](/windows/win32/Controls/common-controls-intro)을 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

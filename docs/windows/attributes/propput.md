@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - propput attribute
 ms.assetid: 1f84dda9-9cce-4e16-aaf0-b2c5219827f2
-ms.openlocfilehash: c9853b38675abfa0a94a319ac752eb2ef61a48e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e10edba60832112a9023f796be56d88afd52042
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407525"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514200"
 ---
 # <a name="propput"></a>propput
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407525"
 
 ## <a name="remarks"></a>설명
 
-**propput** C++ 특성에 동일한 기능을 합니다 [propput](/windows/desktop/Midl/propput) MIDL 특성입니다.
+**Propput** C++ 특성은 [propput](/windows/win32/Midl/propput) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [bindable](bindable.md) 의 샘플 사용에 대 한 **propput**합니다.
+**Propput**의 샘플 사용에 대 한 [바인딩](bindable.md) 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

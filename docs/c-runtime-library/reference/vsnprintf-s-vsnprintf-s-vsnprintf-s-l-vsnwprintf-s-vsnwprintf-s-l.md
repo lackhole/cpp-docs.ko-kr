@@ -40,14 +40,14 @@ helpviewer_keywords:
 - _vsnwprintf_s function
 - formatted text [C++]
 ms.assetid: 147ccfce-58c7-4681-a726-ef54ac1c604e
-ms.openlocfilehash: 255c3b760dec1495a4f9a82915878a5504844f24
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50e38e3177462f17436727cf26d1e7dade9cb882
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188728"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499092"
 ---
-# <a name="vsnprintfs-vsnprintfs-vsnprintfsl-vsnwprintfs-vsnwprintfsl"></a>vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
+# <a name="vsnprintf_s-_vsnprintf_s-_vsnprintf_s_l-_vsnwprintf_s-_vsnwprintf_s_l"></a>vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
 
 인수 목록에 대한 포인터를 사용하여 형식이 지정된 출력을 씁니다. 이러한 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 있는 [vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md)의 버전입니다.
 
@@ -113,7 +113,7 @@ int _vsnwprintf_s(
 출력을 위한 스토리지 위치입니다.
 
 *sizeOfBuffer*<br/>
-크기를 *버퍼* 출력의 경우 문자 수입니다.
+출력에 대 한 *버퍼* 의 크기 (문자 수)입니다.
 
 *count*<br/>
 작성할 최대 문자 수(종결 null은 포함되지 않음) 또는 [_TRUNCATE](../../c-runtime-library/truncate.md)입니다.
@@ -131,34 +131,34 @@ int _vsnwprintf_s(
 
 ## <a name="return-value"></a>반환 값
 
-**vsnprintf_s**하십시오 **_vsnprintf_s** 하 고 **_vsnwprintf_s** 출력 오류가 발생 한 경우 이며, 종결 null 또는 음수 값을 포함 하지 않고 작성 된 문자 수를 반환 합니다. **vsnprintf_s** 동일 **_vsnprintf_s**합니다. **vsnprintf_s** ANSI 표준 준수를 위해 포함 되었습니다. **_vnsprintf** 이전 버전과 호환성을 위해 유지 됩니다.
+**vsnprintf_s**, **_vsnprintf_s** 및 **_vsnwprintf_s** 는 종료 null을 포함 하지 않고 작성 된 문자 수를 반환 하거나 출력 오류가 발생 하는 경우 음수 값을 반환 합니다. **vsnprintf_s** 는 **_vsnprintf_s**와 동일 합니다. **vsnprintf_s** 는 ANSI 표준 준수를 위해 포함 되었습니다. **_vnsprintf** 는 이전 버전과의 호환성을 위해 유지 됩니다.
 
-초과 하면 데이터와 종결 null을 저장 하는 데 필요한 저장소가 *sizeOfBuffer*에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)하지 않는 한, *개수*  됩니다 [_TRUNCATE](../../c-runtime-library/truncate.md),이 경우 문자열을 최대한으로에 맞는 *버퍼* 기록 됩니다 및-1이 반환 합니다. 잘못 된 매개 변수 처리기를 후 실행 계속 되 면 이러한 함수 설정 *버퍼* 빈 문자열로 설정 **errno** 에 **ERANGE**,-1을 반환 합니다.
+데이터를 저장 하는 데 필요한 저장소와 종료 null이 *sizeOfBuffer*를 초과 하는 경우 *Count* 가 [_Truncate](../../c-runtime-library/truncate.md)를 제외 하 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다 .이 경우에는 대부분의 *버퍼* 에 맞는 문자열이 기록 되 고-1이 반환 됩니다. 잘못 된 매개 변수 처리기 이후에 실행이 계속 되 면 이러한 함수는 *버퍼* 를 빈 문자열로 설정 하 고 **errno** 를 **ERANGE**로 설정 하 고-1을 반환 합니다.
 
-경우 *버퍼* 또는 *형식* 은 **NULL** 포인터 이거나 *개수* 보다 작거나를 0으로 잘못 된 매개 변수 처리기가 호출 됩니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 고-1을 반환 합니다.
+*버퍼* 또는 *형식이* **NULL** 포인터 이거나 *count* 가 0 보다 작거나 같으면 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
 
 ### <a name="error-conditions"></a>오류 조건
 
 |**조건**|반환|**errno**|
 |-----------------|------------|-------------|
-|*버퍼* 는 **NULL**|-1|**EINVAL**|
-|*형식* 는 **NULL**|-1|**EINVAL**|
+|*버퍼가* **NULL** 입니다.|-1|**EINVAL**|
+|*형식이* **NULL** 입니다.|-1|**EINVAL**|
 |*count* <= 0|-1|**EINVAL**|
-|*sizeOfBuffer* 너무 작아서 (및 *개수* ! = **_TRUNCATE**)|-1 (및 *버퍼* 빈 문자열로 설정)|**ERANGE**|
+|*sizeOfBuffer* 너무 작음 (및 *Count* ! = **_truncate**)|-1 (및 *버퍼* 를 빈 문자열로 설정)|**ERANGE**|
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 각각 인수 목록에 대 한 포인터 형식을 지정 하 고 작성 *개수* 가리키는 메모리에 지정된 된 데이터의 문자 *버퍼* 종결 null을 추가 합니다.
+이러한 각 함수는 인수 목록에 대 한 포인터를 사용 하 여 *버퍼* 에서 가리키는 메모리에 지정 된 데이터의 문자 *수를 계산* 하 고 종료 null을 추가 합니다.
 
-경우 *개수* 됩니다 [_TRUNCATE](../../c-runtime-library/truncate.md), 이러한 함수 들어갈 수 있을 만큼 문자열을 최대한으로 작성 한 다음 *버퍼* 종료 null에 대 한 공간을 남겨 두고. 는 전체 문자열 (null 종결) 맞는지 *버퍼*, 그런 다음 이러한 함수 (종결 null 제외)에 기록 된 문자 수를 반환 합니다. 그렇지 않으면 이러한 함수 반환 잘림이 나타낼 때-1 오류가 발생 했습니다.
+*Count* 가 [_truncate](../../c-runtime-library/truncate.md)인 경우 이러한 함수는 종료 null을 위한 공간을 유지 하면서 *버퍼* 에 맞는 만큼의 문자열을 작성 합니다. 종료 null을 포함 하는 전체 문자열이 *버퍼*에 있으면 이러한 함수는 종료 null을 포함 하지 않고 작성 된 문자 수를 반환 합니다. 그렇지 않으면 이러한 함수는 잘림이 발생 했음을 나타내는-1을 반환 합니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 경우를 제외 하 고는 동일 합니다.
 
 > [!IMPORTANT]
-> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 > [!NOTE]
-> 종료 null에 대 한 공간이 있도록 해야 *개수* 버퍼 길이 사용 하 여 보다 엄격 하 게 작으면 **_TRUNCATE**합니다.
+> 종료 null에 대 한 공간이 있는지 확인 하려면 *count* 가 버퍼 길이 보다 엄격 하 게 작거나 **_truncate**e를 사용 하십시오.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 

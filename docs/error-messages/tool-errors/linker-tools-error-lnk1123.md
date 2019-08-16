@@ -5,12 +5,12 @@ f1_keywords:
 - LNK1123
 helpviewer_keywords:
 - LNK1123
-ms.openlocfilehash: b67a2a4ddad13988967b7cc7d827862a2a6fe933
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 31fd634291bfb0af17348197ae8a6225ac490c89
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255231"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509906"
 ---
 # <a name="linker-tools-error-lnk1123"></a>링커 도구 오류 LNK1123
 
@@ -25,13 +25,13 @@ ms.locfileid: "62255231"
 
 - 사용 중인 Visual Studio 버전에 모든 서비스 팩과 업데이트를 적용합니다. 특히 Visual Studio 2010의 경우에는 이 작업을 반드시 수행해야 합니다.
 
-- 증분 링크를 사용하지 않도록 설정하고 빌드합니다. 메뉴 모음에서 **프로젝트**, **속성**을 선택합니다. 에 **속성 페이지** 대화 상자에서 **구성 속성**에 **링커**합니다. 값을 변경 **증분 링크 사용** 하 **No**합니다.
+- 증분 링크를 사용하지 않도록 설정하고 빌드합니다. 메뉴 모음에서 **프로젝트**, **속성**을 선택합니다. **속성 페이지** 대화 상자에서 **구성 속성**, **링커**를 확장 합니다. **증분 링크 사용** 의 값을 **아니요**로 변경 합니다.
 
 - PATH 환경 변수에서 처음으로 찾은 CVTRES.EXE 버전이 빌드 도구의 버전 또는 프로젝트에서 사용하는 플랫폼 도구 집합의 버전과 일치하는지 확인합니다.
 
-- 매니페스트 포함 옵션을 해제합니다. 메뉴 모음에서 **프로젝트**, **속성**을 선택합니다. 에 **속성 페이지** 대화 상자에서 **구성 속성**를 **매니페스트 도구**를 **입력 및 출력**합니다. 값을 변경 **매니페스트 포함** 하 **No**합니다.
+- 매니페스트 포함 옵션을 해제합니다. 메뉴 모음에서 **프로젝트**, **속성**을 선택합니다. **속성 페이지** 대화 상자에서 **구성 속성**, **매니페스트 도구**, **입력 및 출력**을 확장 합니다. **매니페스트 포함** 값을 **아니요**로 변경 합니다.
 
-- 파일 형식이 올바른지 확인합니다. 예를 들어 OMF 개체가 16비트가 아니라 32비트인지 확인합니다. 자세한 내용은 참조 하세요. [합니다. 링커 입력 파일로 Obj 파일](../../build/reference/dot-obj-files-as-linker-input.md) 하 고 [PE 형식](/windows/desktop/Debug/pe-format)합니다.
+- 파일 형식이 올바른지 확인합니다. 예를 들어 OMF 개체가 16비트가 아니라 32비트인지 확인합니다. 자세한 내용은을 참조 하십시오 [. 링커 입력](../../build/reference/dot-obj-files-as-linker-input.md) 및 [PE 형식의](/windows/win32/Debug/pe-format)Obj 파일.
 
 - 파일이 손상되지 않았는지 확인합니다. 필요한 경우 다시 빌드합니다.
 

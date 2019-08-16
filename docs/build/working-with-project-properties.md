@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual C++ projects, properties
 - projects [C++], properties
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-ms.openlocfilehash: 436c9c47d7e08176860144ce62cc874919351029
-ms.sourcegitcommit: 610751254a01cba6ad15fb1e1764ecb2e71f66bf
+ms.openlocfilehash: 57414bd56c72b951d3f1948e658243e9036f0179
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68313451"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498120"
 ---
 # <a name="set-compiler-and-build-properties"></a>컴파일러 및 빌드 속성 설정
 
@@ -39,7 +39,7 @@ IDE에서 프로젝트를 빌드하는 데 필요한 모든 정보는 *속성*�
 
 ## <a name="target-platforms"></a>대상 플랫폼
 
-*대상 플랫폼*은 실행 파일이 실행될 디바이스 및/또는 운영 체제의 종류를 참조합니다. 1 초과 플랫폼에 대해 프로젝트를 빌드할 수 있습니다. C++ 프로젝트에 대한 사용 가능한 대상 플랫폼은 프로젝트의 종류에 따라 다르며, Win32, x64, ARM, Android 및 iOS를 포함하지만 이에 국한되지 않습니다.     **Configuration Manager**에서 확인할 수 있는 **x86** 대상 플랫폼은 네이티브 C++ 프로젝트의 **Win32**와 동일합니다. Win32는 32비트 Windows를 의미하고 **x64**는 64비트 Windows를 의미합니다. 이 두 플랫폼에 대한 자세한 내용은 [실행 중인 32비트 애플리케이션](/windows/desktop/WinProg64/running-32-bit-applications)을 참조합니다.
+*대상 플랫폼*은 실행 파일이 실행될 디바이스 및/또는 운영 체제의 종류를 참조합니다. 1 초과 플랫폼에 대해 프로젝트를 빌드할 수 있습니다. C++ 프로젝트에 대한 사용 가능한 대상 플랫폼은 프로젝트의 종류에 따라 다르며, Win32, x64, ARM, Android 및 iOS를 포함하지만 이에 국한되지 않습니다.     **Configuration Manager**에서 확인할 수 있는 **x86** 대상 플랫폼은 네이티브 C++ 프로젝트의 **Win32**와 동일합니다. Win32는 32비트 Windows를 의미하고 **x64**는 64비트 Windows를 의미합니다. 이 두 플랫폼에 대한 자세한 내용은 [실행 중인 32비트 애플리케이션](/windows/win32/WinProg64/running-32-bit-applications)을 참조합니다.
 
 **Configuration Manager**에서 확인할 수 있는 **모든 CPU** 대상 플랫폼 값은 네이티브 C++ 프로젝트에 영향을 주지 않으며, C++/CLI 및 다른 .NET 프로젝트 형식에 대해 관련이 있습니다. 자세한 내용은 [/CLRIMAGETYPE(CLR 이미지 형식 지정)](reference/clrimagetype-specify-type-of-clr-image.md)을 참조하세요.
 

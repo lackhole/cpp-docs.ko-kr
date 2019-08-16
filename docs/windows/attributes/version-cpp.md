@@ -1,5 +1,5 @@
 ---
-title: 버전 (C++ COM 특성)
+title: version (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.version
@@ -7,16 +7,16 @@ helpviewer_keywords:
 - version attribute
 - version information, version attribute
 ms.assetid: db6ce5d8-82c2-4329-b1a8-8ca2f67342cb
-ms.openlocfilehash: fe1df9e12b9adbf9ce55978fd3479f7e740ddc96
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a432267632b1f2a716a833a485b182cd93a27e2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407161"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514882"
 ---
 # <a name="version-c"></a>version(C++)
 
-클래스의 여러 버전 중에서 특정 버전을 식별합니다.
+클래스의 여러 버전에서 특정 버전을 식별 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -27,15 +27,15 @@ ms.locfileid: "62407161"
 ### <a name="parameters"></a>매개 변수
 
 *version*<br/>
-버전 번호는 `coclass`합니다. 지정 하지 않으면 1.0.idl 파일에 배치 됩니다.
+버전 번호는 `coclass`합니다. 지정 하지 않으면 1.0가 .idl 파일에 배치 됩니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **버전** C++ 특성에 동일한 기능을 합니다 [버전](/windows/desktop/Midl/version) MIDL 특성 생성된 된.idl 파일에 전달 됩니다.
+**Version** C++ 특성은 [버전](/windows/win32/Midl/version) MIDL 특성과 동일한 기능을 포함 하며 생성 된 .idl 파일로 전달 됩니다.
 
 ## <a name="example"></a>예제
 
-참조를 [bindable](bindable.md) 의 샘플 사용에 대 한 예제 **버전**합니다.
+**버전**의 샘플 사용에 대 한 [바인딩](bindable.md) 가능한 예제를 참조 하십시오.
 
 ## <a name="requirements"></a>요구 사항
 

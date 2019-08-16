@@ -1,5 +1,5 @@
 ---
-title: 기본 (C++ COM 특성)
+title: default (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.default
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - attributes [C#], default attribute
 - defaults, default attribute
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
-ms.openlocfilehash: c6448b00fef50a7654816a2c39af2943db12d314
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 291e16ad0967acd1869874fcc9fa6eb5529e4b44
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148083"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501691"
 ---
 # <a name="default-c"></a>default(C++)
 
@@ -33,17 +33,17 @@ coclass 내에 정의된 custom 또는 dispinterface가 기본 프로그래밍 �
 지정된 기본 인터페이스가 없는 경우 처음에 발생하는 비 소스 인터페이스가 기본값으로 사용됩니다.
 
 *interface2*<br/>
-(선택 사항) 기본 소스 인터페이스입니다. 이 인터페이스는 [source](source-cpp.md) 특성을 사용하여 지정해야 합니다.
+필드 기본 소스 인터페이스입니다. 이 인터페이스는 [source](source-cpp.md) 특성을 사용하여 지정해야 합니다.
 
 지정된 기본 소스 인터페이스가 없는 경우 첫 번째 소스 인터페이스가 기본값으로 사용됩니다.
 
 ## <a name="remarks"></a>설명
 
-**default** C++ 특성에는 [default](/windows/desktop/Midl/default) MIDL 특성과 동일한 기능이 있습니다. **default** 특성을 [case](case-cpp.md) 특성과 함께 사용할 수도 있습니다.
+**default** C++ 특성에는 [default](/windows/win32/Midl/default) MIDL 특성과 동일한 기능이 있습니다. **default** 특성을 [case](case-cpp.md) 특성과 함께 사용할 수도 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 어떻게 **기본** coclass 정의에서 지정 하는 데 사용 됩니다 `ICustomDispatch` 기본 프로그래밍 인터페이스로:
+다음 코드에서는 기본 프로그래밍 인터페이스로 지정할 `ICustomDispatch` coclass의 정의에 기본값을 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_default.cpp
@@ -99,9 +99,9 @@ int main() {
 
 |||
 |-|-|
-|**적용 대상**|**클래스**하십시오 **구조체**, 데이터 멤버|
+|**적용 대상**|**클래스**, **구조체**, 데이터 멤버|
 |**반복 가능**|아니요|
-|**필수 특성**|**coclass** (적용할 때 **클래스** 하거나 **구조체**)|
+|**필수 특성**|**coclass** ( **클래스** 또는 **구조체**에 적용 된 경우)|
 |**잘못된 특성**|없음|
 
 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-ms.openlocfilehash: 337fe03ab09a6ed3da283f45dd4eb58aaaad5bc5
-ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
+ms.openlocfilehash: d33da7a9bc81f9733df840a87fbbbeca1e02cc04
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957496"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502556"
 ---
 # <a name="exception-processing"></a>예외 처리
 
@@ -380,7 +380,7 @@ void AfxThrowMemoryException();
 
 ### <a name="remarks"></a>설명
 
-기본 시스템 메모리 할당자 (예: **malloc** 및 [globalalloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows 함수)에 대 한 호출이 실패 하는 경우이 함수를 호출 합니다. 메모리 할당이 실패 하는 경우 **new** 는 메모리 예외를 자동으로 throw 하므로 **new** 에 대해이 메서드를 호출할 필요가 없습니다.
+기본 시스템 메모리 할당자 (예: **malloc** 및 [globalalloc](/windows/win32/api/winbase/nf-winbase-globalalloc) Windows 함수)에 대 한 호출이 실패 하는 경우이 함수를 호출 합니다. 메모리 할당이 실패 하는 경우 **new** 는 메모리 예외를 자동으로 throw 하므로 **new** 에 대해이 메서드를 호출할 필요가 없습니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -491,7 +491,7 @@ void AFXAPI AfxThrowOleException(HRESULT hr);
 
 ### <a name="remarks"></a>설명
 
-HRESULT를 인수로 사용 하는 버전은 해당 결과 코드를 해당 하는로 변환 합니다. HRESULT 및에 대 한 자세한 내용은 Windows SDK의 [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes) 를 참조 하십시오.
+HRESULT를 인수로 사용 하는 버전은 해당 결과 코드를 해당 하는로 변환 합니다. HRESULT 및에 대 한 자세한 내용은 Windows SDK의 [COM 오류 코드 구조](/windows/win32/com/structure-of-com-error-codes) 를 참조 하십시오.
 
 ### <a name="requirements"></a>요구 사항
 

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - wmemset function
 - memset function
 ms.assetid: e7ceb01b-df69-49c2-b294-a39358ad4699
-ms.openlocfilehash: d517c5565ef07a834d7ef864e495a4bb33351007
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7d7b57292f582491a7750b4e12a8072112eac4dd
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285153"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501007"
 ---
 # <a name="memset-wmemset"></a>memset, wmemset
 
@@ -65,13 +65,13 @@ wchar_t *wmemset(
 
 ## <a name="return-value"></a>반환 값
 
-변수의 *dest*합니다.
+*Dest*의 값입니다.
 
 ## <a name="remarks"></a>설명
 
-첫 번째 설정 *개수* 자의 *dest* 문자로 *c*합니다.
+*대상* 의 첫 번째 *카운트* 문자를 문자 *c*로 설정 합니다.
 
-**보안 참고** 가지도록 대상 버퍼에 대 한 충분 한 공간이 적어도 *개수* 문자입니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+**보안 정보** 대상 버퍼에 최소 *개수* 문자를 위한 공간이 충분 한지 확인 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

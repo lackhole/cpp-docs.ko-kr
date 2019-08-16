@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - vi_progid attribute
 ms.assetid: a52449be-b93e-4111-b883-44bb8da53261
-ms.openlocfilehash: 7050543c9acf3801a99d3e32e119325900bdb050
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fbf5ab2bc4263356a1cfcf789865a3f7e286ccd7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404769"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514864"
 ---
-# <a name="viprogid"></a>vi_progid
+# <a name="vi_progid"></a>vi_progid
 
-ProgID의 버전에 관계 없이 폼을 지정합니다.
+ProgID의 버전 독립적 형식을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,21 +28,21 @@ ProgID의 버전에 관계 없이 폼을 지정합니다.
 *name*<br/>
 개체를 나타내는 버전 독립 ProgID입니다.
 
-Progid는 COM/ActiveX 개체를 식별 하는 데 클래스 식별자 (CLSID)의 알기 쉬운 버전을 제공 합니다.
+Progid는 COM/ActiveX 개체를 식별 하는 데 사용 되는 CLSID (클래스 식별자)의 사람이 읽을 수 있는 버전입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **vi_progid** C++ 특성을 사용 하면 COM 개체에 대 한 버전 독립 ProgID를 지정 합니다. 형식은 ProgID *name1.name2.version*합니다. 버전 종속 ProgID 없는 *버전*합니다. 둘 다 지정할 수는 `progid` 하며 **vi_progid** 특성을 `coclass`. 지정 하지 않는 경우 **vi_progid**의 버전 독립 ProgID가 지정 된 값을 [progid](progid.md) 특성입니다.
+**Vi_progid** C++ 특성을 사용 하 여 COM 개체에 대 한 버전 독립 progid를 지정할 수 있습니다. ProgID의 형식은 name1. *name2. 버전*입니다. 버전 독립적인 ProgID에 *버전이*없습니다. 에서 `progid` **및 vi_progid** 특성을 모두 지정할 수 있습니다.`coclass` **Vi_progid**를 지정 하지 않으면 버전 독립적 progid는 [progid](progid.md) 특성에 지정 된 값입니다.
 
-**vi_progid** 의미 합니다 `coclass` 지정 하는 경우, 특성 **vi_progid**, 다릅니다 지정 하는 것을 `coclass` 및 **vi_progid** 특성입니다.
+**vi_progid** 은 `coclass` 특성을 의미 합니다. 즉, **vi_progid**를 지정 하는 경우 `coclass` 및 **vi_progid** 특성을 지정 하는 것과 동일한 것입니다.
 
-합니다 **vi_progid** 특성을 사용 하면 지정 된 이름으로 자동으로 등록 하는 클래스입니다. 생성된 된.idl 파일 ProgID 값이 표시 됩니다.
+**Vi_progid** 특성을 지정 하면 지정 된 이름으로 클래스가 자동으로 등록 됩니다. 생성 된 .idl 파일에는 ProgID 값이 표시 되지 않습니다.
 
-ATL 프로젝트의 경우는 [coclass](coclass.md) 특성도, 지정 된 ProgID를 사용 되는 `GetVersionIndependentProgID` 함수 (삽입을 `coclass` 특성).
+ATL 프로젝트에서 [coclass](coclass.md) 특성도 있으면 지정 된 ProgID가 `GetVersionIndependentProgID` 함수에서 사용 됩니다 `coclass` (특성으로 삽입).
 
 ## <a name="example"></a>예제
 
-참조 된 [coclass](coclass.md) 의 샘플 사용에 대 한 예제 **vi_progid**합니다.
+**Vi_progid**의 샘플 사용에 대해서는 [coclass](coclass.md) 예를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -62,4 +62,4 @@ ATL 프로젝트의 경우는 [coclass](coclass.md) 특성도, 지정 된 ProgID
 [IDL 특성](idl-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
 [클래스 특성](class-attributes.md)<br/>
-[ProgID 키](/windows/desktop/com/-progid--key)
+[ProgID 키](/windows/win32/com/-progid--key)

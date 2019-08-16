@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - idl_module attribute
 ms.assetid: 3578b337-e38a-4334-b747-15404c02dbc0
-ms.openlocfilehash: 80e4909a61b5b53ecde19471f2c838dd4c425874
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8838a833552ae7066dbcf17b4f676d6626c069f8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409462"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514681"
 ---
-# <a name="idlmodule"></a>idl_module
+# <a name="idl_module"></a>idl_module
 
-.Dll 파일에는 진입점을 지정합니다.
+.Dll 파일의 진입점을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -27,45 +27,45 @@ function declaration
 ### <a name="parameters"></a>매개 변수
 
 *name*<br/>
-.Idl 파일에 표시 되는 코드 블록에 대 한 사용자 정의 이름입니다.
+.Idl 파일에 표시 되는 코드 블록의 사용자 정의 이름입니다.
 
 *dllname*<br/>
-(선택 사항) 내보내기를 포함 하는.dll 파일입니다.
+필드 내보내기가 포함 된 .dll 파일입니다.
 
 *uuid*<br/>
-(선택 사항) 고유 ID
+필드 고유 ID입니다.
 
 *helpstring*<br/>
-(선택 사항) 형식 라이브러리를 설명 하는 데 문자열입니다.
+필드 형식 라이브러리를 설명 하는 데 사용 되는 문자열입니다.
 
 *helpstringcontext*<br/>
-(선택 사항) .hlp 또는.chm 파일에서 도움말 항목의 ID입니다.
+필드 .Hlp 또는 .chm 파일에 있는 도움말 항목의 ID입니다.
 
 *helpcontext*<br/>
-(선택 사항) 이 형식 라이브러리에 대 한 도움말 ID입니다.
+필드 이 형식 라이브러리에 대 한 도움말 ID입니다.
 
 *hidden*<br/>
-(선택 사항) 라이브러리 표시 되는 것을 방지 하는 매개 변수입니다. 자세한 내용은 [hidden](/windows/desktop/Midl/hidden) MIDL 특성을 참조하세요.
+필드 라이브러리가 표시 되지 않도록 하는 매개 변수입니다. 자세한 내용은 [hidden](/windows/win32/Midl/hidden) MIDL 특성을 참조하세요.
 
 *restricted*<br/>
-(선택 사항) 라이브러리의 멤버를 임의로 호출할 수 없습니다. 자세한 내용은 [restricted](/windows/desktop/Midl/restricted) MIDL 특성을 참조하세요.
+필드 라이브러리의 멤버를 임의로 호출할 수 없습니다. 자세한 내용은 [restricted](/windows/win32/Midl/restricted) MIDL 특성을 참조하세요.
 
 *함수 선언*<br/>
-함수 정의입니다.
+정의 하는 함수입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **idl_module** C++ 특성을 사용 하면 진입점.dll 파일 로부터 가져올 수 있게 하는.dll 파일을 지정 합니다.
+**Idl_module** C++ 특성을 사용 하면 .dll 파일에서 진입점을 지정 하 여 .dll 파일에서 가져올 수 있습니다.
 
-**idl_module** 특성에 유사한 기능을 [모듈](/windows/desktop/Midl/module) MIDL 특성입니다.
+**Idl_module** 특성은 [module](/windows/win32/Midl/module) MIDL 특성과 비슷한 기능을 포함 합니다.
 
-DLL 진입점을.idl 파일의 라이브러리 블록에 배치 하 여.dll 파일에서 내보낼 수 있는 COM 개체에서 모든 항목을 내보낼 수 있습니다.
+.Idl 파일의 라이브러리 블록에 DLL 진입점을 추가 하 여 .dll 파일에서 내보낼 수 있는 COM 개체에서 모든 항목을 내보낼 수 있습니다.
 
-에 사용 해야 합니다 **idl_module** 두 단계에서입니다. 먼저 이름/DLL 쌍을 정의 해야 합니다. 그런 다음 사용 하는 경우 **idl_module** 진입점을 지정 하려면 이름 및 추가 속성을 지정 합니다.
+**Idl_module** 는 두 단계에서 사용 해야 합니다. 먼저 이름/DLL 쌍을 정의 해야 합니다. 그런 다음 **idl_module** 를 사용 하 여 진입점을 지정 하는 경우 이름 및 추가 특성을 지정 합니다.
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 사용 하 여 **idl_module** 특성:
+다음 코드에서는 **idl_module** 특성을 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_idl_module.cpp

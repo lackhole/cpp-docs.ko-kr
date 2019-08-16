@@ -8,28 +8,28 @@ helpviewer_keywords:
 - columns [MFC], adding to CListCtrl
 - CListCtrl class [MFC], report view
 ms.assetid: 7392c0d7-f8a5-4e7b-9ae7-b53dc9dd80ae
-ms.openlocfilehash: d414c5f597628576916c5091fa63a4bf673c8c44
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9321a582f223269ee998dccd01721f47d90eb7fe
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394833"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509340"
 ---
 # <a name="adding-columns-to-the-control-report-view"></a>컨트롤에 열 추가(보고서 뷰)
 
 > [!NOTE]
->  다음 절차 중 하나에 적용 됩니다는 [CListView](../mfc/reference/clistview-class.md) 하거나 [CListCtrl](../mfc/reference/clistctrl-class.md) 개체입니다.
+>  다음 프로시저는 [CListView](../mfc/reference/clistview-class.md) 또는 [CListCtrl](../mfc/reference/clistctrl-class.md) 개체에 적용 됩니다.
 
-목록 컨트롤을 보고서 보기의 경우 각 목록 컨트롤 항목의 다양 한 하위 항목을 구성 하는 메서드를 제공 합니다. 열 표시 됩니다. 이 조직 목록 컨트롤의 열과 연결 된 목록 컨트롤 항목의 하위 항목 사이 일대일 대응을 사용 하 여 구현 됩니다. 하위 항목에 대 한 자세한 내용은 참조 하세요. [컨트롤에 항목 추가](../mfc/adding-items-to-the-control.md)합니다. 보고서 뷰의 목록 컨트롤의 예로 Windows 95 및 Windows 98 탐색기 세부 정보 보기에서 제공 됩니다. 첫 번째 열에는 폴더, 파일 아이콘 및 레이블 나열합니다. 다른 열 파일 크기, 파일 형식, 마지막으로 수정한 날짜 및 등을 나열 합니다.
+목록 컨트롤이 보고서 뷰에 있는 경우 각 목록 컨트롤 항목의 여러 하위 항목을 구성 하는 방법을 제공 하는 열이 표시 됩니다. 이 조직은 목록 컨트롤의 열과 목록 컨트롤 항목의 연결 된 하위 항목 사이에 일 대 일 대응을 사용 하 여 구현 됩니다. 하위 항목에 대 한 자세한 내용은 [컨트롤에 항목 추가](../mfc/adding-items-to-the-control.md)를 참조 하세요. 보고서 보기의 목록 컨트롤 예제는 Windows 95 및 Windows 98 탐색기의 자세히 보기에서 제공 됩니다. 첫 번째 열에는 폴더, 파일 아이콘 및 레이블이 나열 됩니다. 기타 열 목록 파일 크기, 파일 형식, 마지막으로 수정한 날짜 등
 
-컨트롤에 있는 경우에 열은 표시 열 언제 든 지 목록 컨트롤을 추가할 수 있습니다, 있지만 `LVS_REPORT` 스타일 비트를 설정 합니다.
+열은 언제 든 지 목록 컨트롤에 추가할 수 있지만 컨트롤에서 `LVS_REPORT` 스타일 비트가 설정 되어 있는 경우에만 열이 표시 됩니다.
 
-각 열에 연관 된 헤더 항목 (참조 [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) 열을 레이블 및 사용자가 열 크기를 조정할 수 있도록 하는 개체입니다.
+각 열에는 열에 레이블을 지정할 수 있고 사용자가 열의 크기를 조정할 수 있는 연결 된 헤더 항목 ( [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)참조) 개체가 있습니다.
 
-목록 컨트롤에서 보고서 보기를 지 원하는 경우에 목록 컨트롤 항목의 각 하위 항목에 대 한 열을 추가 해야 합니다. 준비 하 여 열을 추가 합니다.는 [LV_COLUMN](/windows/desktop/api/commctrl/ns-commctrl-taglvcolumna) 구조 및에 대 한 호출을 설정한 후 [열 삽입](../mfc/reference/clistctrl-class.md#insertcolumn)합니다. (헤더 항목 이라고 함) 하는 데 필요한 열을 추가한 후 다시 정렬할 수 있습니다 이러한 멤버 함수 및 포함 된 헤더 컨트롤에 속하는 스타일을 사용 하 여 합니다. 자세한 내용은 [헤더 컨트롤에서 항목 순서 지정](../mfc/ordering-items-in-the-header-control.md)합니다.
+목록 컨트롤이 보고서 뷰를 지 원하는 경우 목록 컨트롤 항목에서 가능한 각 하위 항목에 대 한 열을 추가 해야 합니다. [Lvcolumn](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) 구조를 준비한 다음 [insertcolumn](../mfc/reference/clistctrl-class.md#insertcolumn)에 대 한 호출을 수행 하 여 열을 추가 합니다. 필요한 열 (헤더 항목이 라고도 함)을 추가한 후에는 포함 헤더 컨트롤에 속하는 멤버 함수 및 스타일을 사용 하 여 순서를 변경할 수 있습니다. 자세한 내용은 [헤더 컨트롤에서 항목 순서](../mfc/ordering-items-in-the-header-control.md)지정을 참조 하세요.
 
 > [!NOTE]
->  목록 컨트롤을 사용 하 여 만들어지는 경우 합니다 **LVS_NOCOLUMNHEADER** 스타일 열을 삽입 하려는 시도 무시 됩니다.
+>  **LVS_NOCOLUMNHEADER** 스타일을 사용 하 여 목록 컨트롤을 만드는 경우에는 열 삽입 시도가 무시 됩니다.
 
 ## <a name="see-also"></a>참고자료
 

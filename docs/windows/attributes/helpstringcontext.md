@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - helpstringcontext attribute [C++]
 ms.assetid: d4cd135e-d91c-4aa3-9353-8aeb096f52cf
-ms.openlocfilehash: a6df5b63291fbc54d6c12a116fccd8372e8ced9a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ae48c6216b1f1d987b33eff50acf9d82dc551400
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409579"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501486"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 
-.hlp 또는.chm 파일에서 도움말 항목의 ID를 지정합니다.
+.Hlp 또는 .chm 파일에 있는 도움말 항목의 ID를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,11 +26,11 @@ ms.locfileid: "62409579"
 ### <a name="parameters"></a>매개 변수
 
 *contextID*<br/>
-32 비트 도움말 컨텍스트 식별자에는 **도움말** 파일입니다.
+**도움말** 파일의 32 비트 도움말 컨텍스트 식별자입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **helpstringcontext** C++ 특성에 동일한 기능을 합니다 [helpstringcontext](/windows/desktop/Midl/helpstringcontext) ODL 특성입니다.
+**Helpstringcontext** C++ 특성에는 [helpstringcontext](/windows/win32/Midl/helpstringcontext) ODL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -54,7 +54,7 @@ __interface IMyI
 
 |||
 |-|-|
-|**적용 대상**|**클래스**하십시오 **인터페이스**, 인터페이스 메서드|
+|**적용 대상**|**클래스**, **인터페이스**, 인터페이스 메서드|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|

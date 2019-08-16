@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - ms_union attribute
 ms.assetid: bb548689-6962-457e-af56-8ffdf68987eb
-ms.openlocfilehash: 3f83eeff4fd9b2177b862b101b7a2d4faeaaab87
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 26207c3c2c20fb039eb39e26f4d24e141c4dff07
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409111"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514374"
 ---
-# <a name="msunion"></a>ms_union
+# <a name="ms_union"></a>ms_union
 
-Nonencapsulated 공용 구조체의 네트워크 데이터 표현 맞춤을 제어합니다.
+캡슐화 되지 않은 공용 구조체의 네트워크 데이터 표현 맞춤을 제어 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ Nonencapsulated 공용 구조체의 네트워크 데이터 표현 맞춤을 제�
 
 ## <a name="remarks"></a>설명
 
-**ms_union** C++ 특성에 동일한 기능을 합니다 [ms_union](/windows/desktop/Midl/ms-union-attrib) MIDL 특성입니다.
+**Ms_union** C++ 특성은 [ms_union](/windows/win32/Midl/ms-union-attrib) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-다음 코드의 배치를 보여 줍니다 **ms_union**:
+다음 코드에서는 **ms_union**를 배치 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_ms_union.cpp
@@ -60,7 +60,7 @@ __interface IFireTabCtrl {
 
 |||
 |-|-|
-|**적용 대상**|Nonencapsulated 공용 구조체|
+|**적용 대상**|캡슐화 되지 않는 공용 구조체|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|`dispinterface`|

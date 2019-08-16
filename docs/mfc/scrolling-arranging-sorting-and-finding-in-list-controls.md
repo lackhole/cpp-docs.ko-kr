@@ -11,18 +11,18 @@ helpviewer_keywords:
 - CListCtrl class [MFC], sorting
 - CListCtrl class [MFC], arranging the list
 ms.assetid: dcc51e4c-0ca8-4319-bec5-6994cc8ac9e5
-ms.openlocfilehash: 7826b7d08869f8df01f8dad2c4da3c24c468d1be
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 76cff3e5b972c41d395ccec671f95c921005f1b9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504256"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511271"
 ---
 # <a name="scrolling-arranging-sorting-and-finding-in-list-controls"></a>목록 컨트롤에서 스크롤, 정렬 및 찾기
 
-목록 컨트롤 ([CListCtrl](../mfc/reference/clistctrl-class.md))을 기본적으로 스크롤할 수 있습니다. 자세한 내용은 [스크롤 위치](/windows/desktop/Controls/using-list-view-controls) Windows SDK의 하며 [스크롤](../mfc/reference/clistctrl-class.md#scroll) 멤버 함수입니다.
+목록 컨트롤 ([CListCtrl](../mfc/reference/clistctrl-class.md))은 기본적으로 스크롤할 수 있습니다. 자세한 내용은 Windows SDK 및 [scroll](../mfc/reference/clistctrl-class.md#scroll) 멤버 함수에서 [스크롤 위치](/windows/win32/Controls/using-list-view-controls) 를 참조 하세요.
 
-호출할 수 있습니다 `CListCtrl` 컨트롤에서 목록 항목을 정렬 하는 멤버 함수 항목을 정렬 및 특정 항목을 찾습니다. 자세한 내용은 참조 하세요. [ListView 컨트롤을 사용 하](/windows/desktop/Controls/using-list-view-controls) Windows SDK에는 [CListCtrl](../mfc/reference/clistctrl-class.md) 멤버 [정렬](../mfc/reference/clistctrl-class.md#arrange)를 [SortItems](../mfc/reference/clistctrl-class.md#sortitems), 및 [FindItem](../mfc/reference/clistctrl-class.md#finditem)합니다.
+멤버 함수를 `CListCtrl` 호출 하 여 컨트롤에서 목록 항목을 정렬 하 고, 항목을 정렬 하 고, 특정 항목을 찾을 수 있습니다. 자세한 내용은 Windows SDK에서 [ListView 컨트롤 사용](/windows/win32/Controls/using-list-view-controls) 및 [CListCtrl](../mfc/reference/clistctrl-class.md) 멤버 [정렬](../mfc/reference/clistctrl-class.md#arrange), [sortitems](../mfc/reference/clistctrl-class.md#sortitems)및 [FindItem](../mfc/reference/clistctrl-class.md#finditem)를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

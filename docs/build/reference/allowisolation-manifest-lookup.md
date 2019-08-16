@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -ALLOWISOLATION linker option
 - /ALLOWISOLATION linker option
 ms.assetid: 6d41851e-b3c1-4bdf-beaa-031773089d6f
-ms.openlocfilehash: fe76e0d40a2a19a002136a7e095875ad2903d434
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 7c799f3d44428643bccc2869255ffa4e9d194d70
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341075"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493132"
 ---
 # <a name="allowisolation-manifest-lookup"></a>/ALLOWISOLATION(매니페스트 조회)
 
@@ -27,23 +27,23 @@ ms.locfileid: "64341075"
 
 ## <a name="remarks"></a>설명
 
-**/ALLOWISOLATION:NO** 매니페스트가 없는 것 처럼 Dll이 로드 되도록 링커가 설정 하 고는 `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` 선택적인 헤더의 비트 `DllCharacteristics` 필드입니다.
+**/ALLOWISOLATION: no** 는 매니페스트가 없는 것 처럼 dll이 로드 되었음을 나타내며 링커가 선택적 헤더의 `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` `DllCharacteristics` 필드에 비트를 설정 하도록 합니다.
 
-**/ALLOWISOLATION** 매니페스트 조회 및 로드가 수행 하려면 운영 체제입니다.
+**/ALLOWISOLATION** 를 실행 하면 운영 체제에서 매니페스트 조회 및 로드가 발생 합니다.
 
 **/ALLOWISOLATION** 가 기본값입니다.
 
-실행 파일에 대 한 격리 비활성화 되 면 Windows 로더가 새로 생성된 되는 프로세스에 대 한 응용 프로그램 매니페스트를 찾으려고 시도 하지 않습니다. 실행 파일 또는 배치 된 이름 가진 실행 파일과 동일한 디렉터리에 내부 매니페스트가 경우에 새 프로세스에는 기본 활성화 컨텍스트가 없는 됩니다 <em>실행 파일 이름</em>**. exe.manifest**합니다.
+실행 파일에 대해 격리를 사용 하지 않도록 설정 하면 Windows 로더에서 새로 만든 프로세스에 대 한 응용 프로그램 매니페스트를 찾으려고 시도 하지 않습니다. 실행 파일에 매니페스트가 있거나 이름 <em>실행 파일 (이름)</em>이 있는 실행 파일과 동일한 디렉터리에 배치 된 경우에도 새 프로세스에는 기본 활성화 컨텍스트가 포함 되지 않습니다.
 
-자세한 내용은 [매니페스트 파일 참조](/windows/desktop/SbsCs/manifest-files-reference)합니다.
+자세한 내용은 [매니페스트 파일 참조](/windows/win32/SbsCs/manifest-files-reference)를 참조 하세요.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
-1. 선택 된 **구성 속성** > **링커** > **매니페스트 파일** 속성 페이지.
+1. **구성 속성** > 링커매니페스트 > **파일** 속성 페이지를 선택 합니다.
 
-1. 수정 된 **격리 허용** 속성입니다.
+1. **격리 허용** 속성을 수정 합니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -38,16 +38,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HString::Set method
 - Microsoft::WRL::Wrappers::HString::~HString, destructor
 ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
-ms.openlocfilehash: 884efb2a69b05589ad9458148409533880073878
-ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
+ms.openlocfilehash: 71ebc02dc56b45e8790bfac7b7d4bac80d5f7729
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894398"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500494"
 ---
 # <a name="hstring-class"></a>HString 클래스
 
-수명을 관리 하기 위한 도우미 클래스를 [HSTRING](/windows/desktop/WinRT/hstring) RAII 패턴을 사용 합니다.
+RAII 패턴을 사용 하 여 [Hstring](/windows/win32/WinRT/hstring) 의 수명을 관리 하기 위한 도우미 클래스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -57,40 +57,40 @@ class HString;
 
 ## <a name="remarks"></a>설명
 
-Windows 런타임을 통해 문자열에 대 한 액세스를 제공 [HSTRING](/windows/desktop/WinRT/hstring) 핸들입니다. `HString` 편의 함수 및 연산자 HSTRING 핸들을 사용 하 여 단순화 하기 위해 클래스를 제공 합니다. 이 클래스는 RAII 패턴을 통해 소유 HSTRING의 수명 동안을 처리할 수 있습니다.
+Windows 런타임는 [Hstring](/windows/win32/WinRT/hstring) 핸들을 통해 문자열에 대 한 액세스를 제공 합니다. 클래스 `HString` 는 hstring 핸들 사용을 간소화 하기 위해 편리한 함수와 연산자를 제공 합니다. 이 클래스는 RAII 패턴을 통해 소유한 HSTRING의 수명을 처리할 수 있습니다.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-constructors"></a>Public 생성자
 
-이름                                | 설명
+이름                                | Description
 ----------------------------------- | -----------------------------------------------------
 [HString::HString](#hstring)        | `HString` 클래스의 새 인스턴스를 초기화합니다.
-[HString::~HString](#tilde-hstring) | 현재 인스턴스를 제거 합니다 `HString` 클래스입니다.
+[HString::~HString](#tilde-hstring) | `HString` 클래스의 현재 인스턴스를 소멸 시킵니다.
 
 ### <a name="public-methods"></a>Public 메서드
 
 이름                                     | Description
 ---------------------------------------- | -------------------------------------------------------------------------------------------------------------
-[HString::Attach](#attach)               | 연결 된 `HString` 개체와 현재 `HString` 개체입니다.
-[HString::CopyTo](#copyto)               | 현재 복사 `HString` 개체를 HSTRING 개체로 합니다.
-[HString::Detach](#detach)               | 지정 된 연결을 끊습니다 `HString` 해당 내부 값 개체입니다.
+[HString::Attach](#attach)               | 지정 `HString` 된 개체를 현재 `HString` 개체와 연결 합니다.
+[HString::CopyTo](#copyto)               | 현재 `HString` 개체를 hstring 개체로 복사 합니다.
+[HString::Detach](#detach)               | 지정 된 `HString` 개체를 내부 값에서 분리 합니다.
 [HString::Get](#get)                     | 기본 HSTRING 핸들의 값을 검색 합니다.
-[HString::GetAddressOf](#getaddressof)   | 기본 HSTRING 핸들에 대 한 포인터를 검색합니다.
-[HString::GetRawBuffer](#getrawbuffer)   | 내부 문자열 데이터에 대 한 포인터를 검색합니다.
-[HString::IsValid](#isvalid)             | 나타냅니다 여부 현재 `HString` 개체는 유효 합니다.
-[HString::MakeReference](#makereference) | 만듭니다는 `HStringReference` 지정 된 문자열 매개 변수에서 개체입니다.
-[HString::Release](#release)             | 원본 문자열 값을 삭제 하 고 현재 초기화 `HString` 개체를 빈 값입니다.
-[HString::Set](#set)                     | 현재 값을 설정 `HString` 지정된 된 와이드 문자 문자열에는 개체 또는 `HString` 매개 변수입니다.
+[HString::GetAddressOf](#getaddressof)   | 기본 HSTRING 핸들에 대 한 포인터를 검색 합니다.
+[HString::GetRawBuffer](#getrawbuffer)   | 기본 문자열 데이터에 대 한 포인터를 검색 합니다.
+[HString::IsValid](#isvalid)             | 현재 `HString` 개체가 유효한 지 여부를 나타냅니다.
+[HString::MakeReference](#makereference) | 지정 된 문자열 매개 변수에서 개체를만듭니다.`HStringReference`
+[HString::Release](#release)             | 내부 문자열 값을 삭제 하 고 현재 `HString` 개체를 빈 값으로 초기화.
+[HString::Set](#set)                     | 현재 `HString` 개체의 값을 지정 된 와이드 문자 문자열 또는 `HString` 매개 변수로 설정 합니다.
 
 ### <a name="public-operators"></a>Public 연산자
 
 이름                                         | 설명
 -------------------------------------------- | ----------------------------------------------------------------------------
-[HString::operator=](#operator-assign)       | 다른 값으로 이동 `HString` 개체를 현재 `HString` 개체입니다.
+[HString::operator=](#operator-assign)       | 다른 `HString` 개체의 값을 현재 `HString` 개체로 이동 합니다.
 [HString::operator==](#operator-equality)    | 두 매개 변수가 같은지 여부를 나타냅니다.
-[HString::operator!=](#operator-inequality)  | 두 매개 변수가 같지 않은지를 나타냅니다.
-[HString::operator&lt;](#operator-less-than) | 첫 번째 매개 변수 인지 보다 작은 두 번째 매개 변수를 나타냅니다.
+[HString::operator!=](#operator-inequality)  | 두 매개 변수가 같지 않은지 여부를 나타냅니다.
+[HString::operator&lt;](#operator-less-than) | 첫 번째 매개 변수가 두 번째 매개 변수 보다 작거나 같은지 여부를 나타냅니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -104,7 +104,7 @@ Windows 런타임을 통해 문자열에 대 한 액세스를 제공 [HSTRING](/
 
 ## <a name="tilde-hstring"></a>HString::~HString
 
-현재 인스턴스를 제거 합니다 `HString` 클래스입니다.
+`HString` 클래스의 현재 인스턴스를 소멸 시킵니다.
 
 ```cpp
 ~HString() throw()
@@ -112,7 +112,7 @@ Windows 런타임을 통해 문자열에 대 한 액세스를 제공 [HSTRING](/
 
 ## <a name="attach"></a>HString::Attach
 
-연결 된 `HString` 개체와 현재 `HString` 개체입니다.
+지정 `HString` 된 개체를 현재 `HString` 개체와 연결 합니다.
 
 ```cpp
 void Attach(
@@ -127,7 +127,7 @@ void Attach(
 
 ## <a name="copyto"></a>HString::CopyTo
 
-현재 복사 `HString` 개체를 HSTRING 개체로 합니다.
+현재 `HString` 개체를 hstring 개체로 복사 합니다.
 
 ```cpp
 HRESULT CopyTo(
@@ -142,11 +142,11 @@ HRESULT CopyTo(
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출 합니다 [WindowsDuplicateString](/windows/desktop/api/winstring/nf-winstring-windowsduplicatestring) 함수입니다.
+이 메서드는 [WindowsDuplicateString](/windows/win32/api/winstring/nf-winstring-windowsduplicatestring) 함수를 호출 합니다.
 
 ## <a name="detach"></a>HString::Detach
 
-지정 된 연결을 끊습니다 `HString` 해당 내부 값 개체입니다.
+지정 된 `HString` 개체를 내부 값에서 분리 합니다.
 
 ```cpp
 HSTRING Detach() throw()
@@ -154,7 +154,7 @@ HSTRING Detach() throw()
 
 ### <a name="return-value"></a>반환 값
 
-기본 `HString` 분리 작업을 시작 하기 전에 값입니다.
+분리 작업이 `HString` 시작 되기 전의 내부 값입니다.
 
 ## <a name="get"></a>HString::Get
 
@@ -170,7 +170,7 @@ HSTRING Get() const throw()
 
 ## <a name="getaddressof"></a>HString::GetAddressOf
 
-기본 HSTRING 핸들에 대 한 포인터를 검색합니다.
+기본 HSTRING 핸들에 대 한 포인터를 검색 합니다.
 
 ```cpp
 HSTRING* GetAddressOf() throw()
@@ -186,18 +186,18 @@ HSTRING* GetAddressOf() throw()
 
 ## <a name="getrawbuffer"></a>HString::GetRawBuffer
 
-내부 문자열 데이터에 대 한 포인터를 검색합니다.
+기본 문자열 데이터에 대 한 포인터를 검색 합니다.
 
 ```cpp
 const wchar_t* GetRawBuffer(unsigned int* length) const;
 ```
 ### <a name="parameters"></a>매개 변수
 
-*길이* 에 대 한 포인터를 **int** 데이터의 길이 받는 변수입니다.
+*길이* 데이터의 길이를 받는 **int** 변수에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-A **const** 기본 문자열 데이터에 대 한 포인터입니다.
+기본 문자열 데이터에 대 한 **const** 포인터입니다.
 
 
 ## <a name="hstring"></a>HString::HString
@@ -219,13 +219,13 @@ HSTRING 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 초기화 새 `HString` 비어 있는 개체입니다.
+첫 번째 생성자는 비어 있는 `HString` 새 개체를 초기화 합니다.
 
-두 번째 생성자는 새 `HString` 개체의 기존 값 *다른* 매개 변수를 되지 않으며 합니다 *다른* 매개 변수입니다.
+두 번째 생성자는 기존 `HString` *다른* 매개 변수의 값으로 새 개체를 초기화 한 다음 *다른* 매개 변수를 소멸 시킵니다.
 
 ## <a name="isvalid"></a>HString::IsValid
 
-나타냅니다 여부를 현재 `HString` 개체가 비어 있습니다.
+현재 `HString` 개체가 비어 있는지 여부를 나타냅니다.
 
 ```cpp
 bool IsValid() const throw()
@@ -233,11 +233,11 @@ bool IsValid() const throw()
 
 ### <a name="parameters"></a>매개 변수
 
-**true 이면** 하는 경우 현재 `HString` 개체가 비어 있지 않으면 아닙니다 **false**합니다.
+현재`HString` 개체가 비어 있지 않으면 true이 고, 그렇지 않으면 **false**입니다.
 
 ## <a name="makereference"></a>HString::MakeReference
 
-만듭니다는 `HStringReference` 지정 된 문자열 매개 변수에서 개체입니다.
+지정 된 문자열 매개 변수에서 개체를만듭니다.`HStringReference`
 
 ```cpp
 template<unsigned int sizeDest>
@@ -253,21 +253,21 @@ template<unsigned int sizeDest>
 ### <a name="parameters"></a>매개 변수
 
 *sizeDest*<br/>
-대상의 크기를 지정 하는 템플릿 매개 변수 `HStringReference` 버퍼입니다.
+대상 `HStringReference` 버퍼의 크기를 지정 하는 템플릿 매개 변수입니다.
 
 *str*<br/>
 와이드 문자 문자열에 대한 참조입니다.
 
 *len*<br/>
-최대 길이 *str* 이 작업에 사용할 매개 변수 버퍼입니다. 경우는 *len* 매개 변수를 지정 하지 않으면 전체 *str* 매개 변수를 사용 합니다.
+이 작업에 사용할 *str* 매개 변수 버퍼의 최대 길이입니다. *Len* 매개 변수를 지정 하지 않으면 전체 *str* 매개 변수가 사용 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
-`HStringReference` 개체는 지정 된 대로 동일한 값인 *str* 매개 변수입니다.
+지정 된 *str* 매개 변수와 동일한 값을 갖는 개체입니다.`HStringReference`
 
-## <a name="operator-assign"></a>Hstring:: Operator = 연산자
+## <a name="operator-assign"></a>HString:: operator = 연산자
 
-다른 값으로 이동 `HString` 개체를 현재 `HString` 개체입니다.
+다른 `HString` 개체의 값을 현재 `HString` 개체로 이동 합니다.
 
 ```cpp
 HString& operator=(HString&& other) throw()
@@ -280,9 +280,9 @@ HString& operator=(HString&& other) throw()
 
 ### <a name="remarks"></a>설명
 
-기존 값 *다른* 현재 개체를 복사할 `HString` 개체를 차례로 합니다 *다른* 개체는 소멸 됩니다.
+기존의 *다른* 개체의 값이 현재 `HString` 개체에 복사 된 다음 *다른* 개체가 제거 됩니다.
 
-## <a name="operator-equality"></a>Hstring:: Operator = = 연산자
+## <a name="operator-equality"></a>HString:: operator = = 연산자
 
 두 매개 변수가 같은지 여부를 나타냅니다.
 
@@ -311,18 +311,18 @@ inline bool operator==(
 ### <a name="parameters"></a>매개 변수
 
 *lhs*<br/>
-비교할 첫 번째 매개 변수입니다. *lhs* 수는 `HString` 또는 `HStringReference` 개체 또는 HSTRING 핸들입니다.
+비교할 첫 번째 매개 변수입니다. *lhs* 는 `HString` 또는 `HStringReference` 개체 또는 hstring 핸들 일 수 있습니다.
 
 *rhs*<br/>
-비교할 두 번째 매개 변수입니다. *rhs* 수는 `HString` 또는 `HStringReference` 개체 또는 HSTRING 핸들입니다.
+비교할 두 번째 매개 변수입니다. *rhs* 는 `HString` 또는 `HStringReference` 개체 또는 hstring 핸들 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** 경우는 *lhs* 하 고 *rhs* 매개 변수는 같고, 그렇지 않으면 **false**합니다.
+*lhs* 및 *rhs* 매개 변수가 같으면 **true** 이 고, 그렇지 않으면 **false**입니다.
 
-## <a name="operator-inequality"></a>Hstring:: Operator! = 연산자
+## <a name="operator-inequality"></a>HString:: operator! = 연산자
 
-두 매개 변수가 같지 않은지를 나타냅니다.
+두 매개 변수가 같지 않은지 여부를 나타냅니다.
 
 ```cpp
 inline bool operator!=( const HString& lhs,
@@ -344,18 +344,18 @@ inline bool operator!=( const HString& lhs,
 ### <a name="parameters"></a>매개 변수
 
 *lhs*<br/>
-비교할 첫 번째 매개 변수입니다. *lhs* 수는 `HString` 또는 `HStringReference` 개체 또는 HSTRING 핸들입니다.
+비교할 첫 번째 매개 변수입니다. *lhs* 는 `HString` 또는 `HStringReference` 개체 또는 hstring 핸들 일 수 있습니다.
 
 *rhs*<br/>
-비교할 두 번째 매개 변수입니다. *rhs* 수는 `HString` 또는 `HStringReference` 개체 또는 HSTRING 핸들입니다.
+비교할 두 번째 매개 변수입니다. *rhs* 는 `HString` 또는 `HStringReference` 개체 또는 hstring 핸들 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** 경우는 *lhs* 하 고 *rhs* 매개 변수는 같고, 그렇지 않으면 **false**합니다.
+*lhs* 및 *rhs* 매개 변수가 같지 않으면 **true** 이 고, 그렇지 않으면 **false**입니다.
 
-## <a name="operator-less-than"></a>Hstring:: Operator&lt; 연산자
+## <a name="operator-less-than"></a>Hstring:: operator&lt; 연산자
 
-첫 번째 매개 변수 인지 보다 작은 두 번째 매개 변수를 나타냅니다.
+첫 번째 매개 변수가 두 번째 매개 변수 보다 작거나 같은지 여부를 나타냅니다.
 
 ```cpp
 inline bool operator<(
@@ -366,18 +366,18 @@ inline bool operator<(
 ### <a name="parameters"></a>매개 변수
 
 *lhs*<br/>
-비교할 첫 번째 매개 변수입니다. *lhs* 에 대 한 참조 수를 `HString`입니다.
+비교할 첫 번째 매개 변수입니다. *lhs* 는에 대 `HString`한 참조일 수 있습니다.
 
 *rhs*<br/>
-비교할 두 번째 매개 변수입니다. *rhs* 에 대 한 참조 수를 `HString`입니다.
+비교할 두 번째 매개 변수입니다. *rhs* 은에 대 `HString`한 참조일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
-**true** 경우는 *lhs* 매개 변수는 보다 작은 *rhs* 매개 변수가 고, 그렇지 않으면 **false**합니다.
+*lhs* 매개 변수가 *rhs* 매개 변수 보다 작은 경우 **true** 입니다. 그렇지 않으면 **false**입니다.
 
 ## <a name="release"></a>HString::Release
 
-원본 문자열 값을 삭제 하 고 현재 초기화 `HString` 개체를 빈 값입니다.
+내부 문자열 값을 삭제 하 고 현재 `HString` 개체를 빈 값으로 초기화.
 
 ```cpp
 void Release() throw()
@@ -385,7 +385,7 @@ void Release() throw()
 
 ## <a name="set"></a>HString::Set
 
-현재 값을 설정 `HString` 지정된 된 와이드 문자 문자열에는 개체 또는 `HString` 매개 변수입니다.
+현재 `HString` 개체의 값을 지정 된 와이드 문자 문자열 또는 `HString` 매개 변수로 설정 합니다.
 
 ```cpp
 HRESULT Set(
@@ -402,10 +402,10 @@ HRESULT Set(
 ### <a name="parameters"></a>매개 변수
 
 *str*<br/>
-와이드 문자 문자열입니다.
+와이드 문자열입니다.
 
 *len*<br/>
-최대 길이 *str* 매개 변수는 현재 할당 된 `HString` 개체입니다.
+현재`HString` 개체에 할당 된 *str* 매개 변수의 최대 길이입니다.
 
 *hstr*<br/>
 기존 `HString` 개체입니다.

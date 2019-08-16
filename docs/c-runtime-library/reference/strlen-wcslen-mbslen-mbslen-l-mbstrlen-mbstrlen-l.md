@@ -49,19 +49,19 @@ helpviewer_keywords:
 - strlen function
 - _mbslen function
 ms.assetid: 16462f2a-1e0f-4eb3-be55-bf1c83f374c2
-ms.openlocfilehash: 4a12c87f1cff14582e21fbb7d617100fc2853dab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7736e1e7889642c41a5e3853ac13221ab22f6d03
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362285"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500920"
 ---
-# <a name="strlen-wcslen-mbslen-mbslenl-mbstrlen-mbstrlenl"></a>strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
+# <a name="strlen-wcslen-_mbslen-_mbslen_l-_mbstrlen-_mbstrlen_l"></a>strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
 
 현재 로캘 또는 지정된 로캘을 사용하여 문자열의 길이를 가져옵니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l](strnlen-strnlen-s.md)을 참조하세요.
 
 > [!IMPORTANT]
-> **_mbslen**, **_mbslen_l**합니다 **_mbstrlen**, 및 **_mbstrlen_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> Windows 런타임에서 실행 되는 응용 프로그램에서는 **_mbslen**, **_mbslen_l**, **_mbstrlen**및 **_mbstrlen_l** 를 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -98,13 +98,13 @@ Null 종료 문자열입니다.
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수에 있는 문자의 수를 반환 합니다 *str*, 터미널 null을 제외 합니다. 반환 값이 없는 제외 하 고 오류를 나타내기 위해 예약 되어 **_mbstrlen** 하 고 **_mbstrlen_l**를 반환 하는 `((size_t)(-1))` 문자열에 잘못 된 멀티 바이트 문자가 포함 된 경우.
+이러한 각 함수는 터미널 null을 제외 하 고 *str*의 문자 수를 반환 합니다. 문자열에 잘못 된 멀티 바이트 문자가 포함 된 경우을 반환 `((size_t)(-1))` 하는 **_mbstrlen** 및 **_mbstrlen_l**를 제외 하 고 오류를 나타내기 위해 예약 된 반환 값은 없습니다.
 
 ## <a name="remarks"></a>설명
 
-**strlen** 문자열 멀티 바이트 문자를 포함 하는 경우에 해당 반환 값은 항상 바이트 수와 같은 문자열을 싱글바이트 문자열로 해석입니다. **wcslen** 의 와이드 문자 버전이 **strlen**;의 인수 **wcslen** 와이드 문자열이 고 와이드 (2 바이트) 문자에서는 문자 수입니다. **wcslen** 하 고 **strlen** 동일 하 게 작동 합니다.
+**strlen** 은 문자열을 싱글바이트 문자열로 해석 하므로 문자열에 멀티 바이트 문자가 포함 되어 있더라도 해당 반환 값은 항상 바이트 수와 동일 합니다. **wcslen** 는 **strlen**의 와이드 문자 버전입니다. **wcslen** 의 인수는 와이드 문자열이 고 문자 수는 와이드 문자 (2 바이트)입니다. **wcslen** 및 **strlen** 은 동일 하 게 작동 하지 않습니다.
 
-**보안 정보** 이러한 함수는 버퍼 오버런 문제로 인해 발생하는 잠재적인 위협을 일으킵니다. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+**보안 정보** 이러한 함수는 버퍼 오버런 문제로 인해 발생하는 잠재적인 위협을 일으킵니다. 버퍼 오버런 문제는 자주 사용되는 시스템 공격 방법으로, 불필요한 권한 상승을 초래합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -114,7 +114,7 @@ Null 종료 문자열입니다.
 |**_tcsclen**|**strlen**|**_mbslen**|**wcslen**|
 |**_tcsclen_l**|**strlen**|**_mbslen_l**|**wcslen**|
 
-**_mbslen** 하 고 **_mbslen_l** 멀티 바이트 문자 문자열의 멀티 바이트 문자의 수를 반환 하지만 멀티 바이트 문자의 유효성을 테스트 하지 마십시오. **_mbstrlen** 하 고 **_mbstrlen_l** 멀티 바이트 문자 유효성을 테스트 하 고 멀티 바이트 문자 시퀀스를 인식 합니다. 에 전달 된 문자열이 **_mbstrlen** 또는 **_mbstrlen_l** 코드 페이지와 함수 반환 값-1, 집합에 대 한 잘못 된 멀티 바이트 문자가 **errno** 에**EILSEQ**합니다.
+**_mbslen** 및 **_mbslen_l** 는 멀티 바이트 문자열의 멀티 바이트 문자 수를 반환 하지만 멀티 바이트 문자의 유효성을 테스트 하지는 않습니다. **_mbstrlen** 및 **_mbstrlen_l** 는 멀티 바이트 문자의 유효성을 테스트 하 고 멀티 바이트 문자 시퀀스를 인식 합니다. **_Mbstrlen** 또는 **_mbstrlen_l** 에 전달 된 문자열에 코드 페이지에 대 한 잘못 된 멀티 바이트 문자가 포함 된 경우 함수는-1을 반환 하 고 **errno** 를 **eilseq**로 설정 합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_nMenuResult
 - CMFCMenuButton [MFC], m_bDefaultClick
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-ms.openlocfilehash: 71d239c9d1084c69ab2e159a479e66f0cbe66d7a
-ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
+ms.openlocfilehash: d7c23cbda0a5af4dc3fa6b2d9f59497acc9bf5ff
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894430"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505204"
 ---
 # <a name="cmfcmenubutton-class"></a>CMFCMenuButton 클래스
 
@@ -45,42 +45,42 @@ class CMFCMenuButton : public CMFCButton
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCMenuButton::CMFCMenuButton](#cmfcmenubutton)|`CMFCMenuButton` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCMenuButton::PreTranslateMessage](#pretranslatemessage)|디스패치 되기 전에 창 메시지를 변환 하기 위해 프레임 워크에서 호출 됩니다. ( `CMFCButton::PreTranslateMessage`을 재정의합니다.)|
-|[CMFCMenuButton::SizeToContent](#sizetocontent)|텍스트 및 이미지 크기에 따라 단추 크기를 변경합니다.|
+|[CMFCMenuButton::SizeToContent](#sizetocontent)|텍스트 및 이미지 크기에 따라 단추의 크기를 변경 합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
-|[CMFCMenuButton::m_bOSMenu](#m_bosmenu)|기본 시스템 팝업 메뉴에 표시 되거나 사용 여부를 지정 [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu)합니다.|
-|[CMFCMenuButton::m_bRightArrow](#m_brightarrow)|팝업 메뉴 아래쪽 또는 오른쪽 단추에 나타날지 여부를 지정 합니다.|
-|[CMFCMenuButton::m_bStayPressed](#m_bstaypressed)|단추를 놓으면 후 메뉴 단추 상태가 변경 되는지 여부를 지정 합니다.|
-|[CMFCMenuButton::m_hMenu](#m_hmenu)|연결 된 Windows 메뉴에 대 한 핸들입니다.|
-|[CMFCMenuButton::m_nMenuResult](#m_nmenuresult)|어떤 항목을 나타내는 식별자 사용자가 팝업 메뉴에서 선택 합니다.|
-|[CMFCMenuButton::m_bDefaultClick](#m_bdefaultclick)| (단추 텍스트/이미지)에 대 한 기본 처리를 허용 합니다.|
+|[CMFCMenuButton::m_bOSMenu](#m_bosmenu)|기본 시스템 팝업 메뉴를 표시할지 아니면 [CContextMenuManager:: TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu)를 사용할지를 지정 합니다.|
+|[CMFCMenuButton::m_bRightArrow](#m_brightarrow)|팝업 메뉴가 단추의 오른쪽 아래에 표시될지 여부를 지정 합니다.|
+|[CMFCMenuButton::m_bStayPressed](#m_bstaypressed)|사용자가 단추를 놓으면 메뉴 단추가 해당 상태를 변경 하는지 여부를 지정 합니다.|
+|[CMFCMenuButton::m_hMenu](#m_hmenu)|연결 된 창 메뉴에 대 한 핸들입니다.|
+|[CMFCMenuButton::m_nMenuResult](#m_nmenuresult)|사용자가 팝업 메뉴에서 선택한 항목을 나타내는 식별자입니다.|
+|[CMFCMenuButton::m_bDefaultClick](#m_bdefaultclick)| 단추 텍스트/이미지에 대 한 기본 처리를 허용 합니다.|
 
 ## <a name="remarks"></a>설명
 
-`CMFCMenuButton` 에서 파생 된 클래스를 [CMFCButton 클래스](../../mfc/reference/cmfcbutton-class.md) 를 차례로에서 파생 된를 [CButton 클래스](../../mfc/reference/cbutton-class.md)합니다. 따라서 사용할 수 있습니다 `CMFCMenuButton` 사용 하 여 동일한 방식으로 코드에서 `CButton`합니다.
+클래스 `CMFCMenuButton` 는 [cbutton 클래스](../../mfc/reference/cbutton-class.md)에서 파생 된 [cmfcbutton 클래스](../../mfc/reference/cmfcbutton-class.md) 에서 파생 됩니다. 따라서 사용 `CMFCMenuButton` `CButton`하는 것과 같은 방식으로 코드에를 사용할 수 있습니다.
 
-만들 때는 `CMFCMenuButton`, 연결 된 팝업 메뉴에 대 한 핸들을 전달 해야 합니다. 그런 다음 함수를 호출 `CMFCMenuButton::SizeToContent`합니다. `CMFCMenuButton::SizeToContent` 단추 크기가 있는 팝업 창이 표시 됩니다.-즉, 아래 또는 오른쪽 단추 위치를 가리키는 화살표를 포함 하는 데 충분 한지 확인 합니다.
+를 만들 `CMFCMenuButton`때 연결 된 팝업 메뉴에 핸들을 전달 해야 합니다. 그런 다음 함수 `CMFCMenuButton::SizeToContent`를 호출 합니다. `CMFCMenuButton::SizeToContent`단추 크기가 팝업 창이 표시 되는 위치를 가리키는 화살표를 포함 하는 데 충분 한지 확인 합니다. 즉, 단추의 오른쪽 아래 또는 오른쪽에 표시 됩니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 단추에 연결 된 메뉴의 핸들을 설정 하 고 해당 텍스트와 이미지 크기에 따라 단추 크기를 조정 프레임 워크에 의해 표시 되는 팝업 메뉴를 설정 하는 방법을 보여 줍니다. 이 코드 조각은의 일부인 합니다 [새 컨트롤 샘플](../../overview/visual-cpp-samples.md)합니다.
+다음 예제에서는 단추에 연결 된 메뉴의 핸들을 설정 하 고 텍스트 및 이미지 크기에 따라 단추의 크기를 조정 하 고 프레임 워크에서 표시 되는 팝업 메뉴를 설정 하는 방법을 보여 줍니다. 이 코드 조각은 [새 Controls 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_NewControls#38](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#39](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -96,11 +96,11 @@ class CMFCMenuButton : public CMFCButton
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxmenubutton.h
+**헤더:** afxmenubutton
 
 ##  <a name="cmfcmenubutton"></a>  CMFCMenuButton::CMFCMenuButton
 
-새 [CMFCMenuButton](../../mfc/reference/cmfcmenubutton-class.md) 개체입니다.
+새 [Cmfcmenubutton](../../mfc/reference/cmfcmenubutton-class.md) 개체를 생성 합니다.
 
 ```
 CMFCMenuButton();
@@ -108,7 +108,7 @@ CMFCMenuButton();
 
 ##  <a name="m_bosmenu"></a>  CMFCMenuButton::m_bOSMenu
 
-부울 멤버 변수는 팝업 메뉴를 표시 하는 프레임 워크를 표시 합니다.
+프레임 워크에서 표시 하는 팝업 메뉴를 나타내는 부울 멤버 변수입니다.
 
 ```
 BOOL m_bOSMenu;
@@ -116,7 +116,7 @@ BOOL m_bOSMenu;
 
 ### <a name="remarks"></a>설명
 
-하는 경우 `m_bOSMenu` 가 TRUE 인 프레임 워크는 상속 된 호출 `TrackPopupMenu` 이 개체에 대 한 메서드. 프레임 워크에서 호출이 고, 그렇지 [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu)합니다.
+이 TRUE 이면 프레임 워크는이 개체에 `TrackPopupMenu` 대해 상속 된 메서드를 호출 합니다. `m_bOSMenu` 그렇지 않으면 프레임 워크는 [CContextMenuManager:: TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu)를 호출 합니다.
 
 ##  <a name="m_brightarrow"></a>  CMFCMenuButton::m_bRightArrow
 
@@ -128,11 +128,11 @@ BOOL m_bRightArrow;
 
 ### <a name="remarks"></a>설명
 
-메뉴 단추를 누를 때 응용 프로그램에 팝업 메뉴를 보여 줍니다. 프레임 워크에는 팝업 메뉴 단추를 클릭 또는 단추 오른쪽에 표시 됩니다. 단추에 팝업 메뉴 표시 되는 위치를 지정 하는 작은 화살표가 있습니다. 경우 `m_bRightArrow` 가 TRUE 인 프레임 워크 단추 오른쪽에 팝업 메뉴를 표시 합니다. 그렇지 않은 경우 단추를 클릭 하 고 팝업 메뉴를 표시합니다.
+사용자가 메뉴 단추를 누르면 응용 프로그램에 팝업 메뉴가 표시 됩니다. 프레임 워크는 단추 또는 단추 오른쪽에 팝업 메뉴를 표시 합니다. 이 단추에는 팝업 메뉴가 표시 되는 위치를 나타내는 작은 화살표도 있습니다. `m_bRightArrow` 이 TRUE 이면 프레임 워크는 단추 오른쪽에 팝업 메뉴를 표시 합니다. 그렇지 않으면 단추 아래에 팝업 메뉴가 표시 됩니다.
 
 ##  <a name="m_bstaypressed"></a>  CMFCMenuButton::m_bStayPressed
 
-사용자가 팝업 메뉴에서 항목을 선택 하는 동안 메뉴 단추를 표시할지 여부를 나타내는 부울 멤버 변수를 눌렀습니다.
+사용자가 팝업 메뉴에서 항목을 선택 하는 동안 메뉴 단추가 눌러져 있는지 여부를 나타내는 부울 멤버 변수입니다.
 
 ```
 BOOL m_bStayPressed;
@@ -140,9 +140,9 @@ BOOL m_bStayPressed;
 
 ### <a name="remarks"></a>설명
 
-경우는 `m_bStayPressed` 멤버 FALSE 이면 메뉴 단추 않습니다 될 누르지 않은 경우 사용 단추를 클릭 합니다. 이 경우 프레임 워크만 팝업 메뉴를 표시합니다.
+`m_bStayPressed` 멤버가 FALSE 이면 사용에서 단추를 클릭할 때 메뉴 단추가 눌러져 있지 않습니다. 이 경우 프레임 워크는 팝업 메뉴만 표시 합니다.
 
-경우는 `m_bStayPressed` 멤버가 TRUE 이면 사용자 단추를 클릭할 때 메뉴 단추를 누르면 됩니다. 사용자가 팝업 메뉴를 선택 하거나 취소 하 여 닫힌 후까지 누름 유지 합니다.
+`m_bStayPressed` 멤버가 TRUE 이면 사용자가 단추를 클릭할 때 메뉴 단추가 눌러져 있습니다. 사용자가 선택 하거나 취소 하 여 팝업 메뉴를 닫을 때까지 계속 눌러져 있습니다.
 
 ##  <a name="m_hmenu"></a>  CMFCMenuButton::m_hMenu
 
@@ -154,11 +154,11 @@ HMENU m_hMenu;
 
 ### <a name="remarks"></a>설명
 
-프레임 워크 메뉴 단추를 클릭할 때이 멤버 변수로 표시 된 메뉴를 표시 합니다.
+사용자가 메뉴 단추를 클릭 하면 프레임 워크에서이 멤버 변수로 표시 된 메뉴를 표시 합니다.
 
 ##  <a name="m_nmenuresult"></a>  CMFCMenuButton::m_nMenuResult
 
-어떤 항목을 나타내는 정수를 팝업 메뉴에서 선택 합니다.
+사용자가 팝업 메뉴에서 선택 하는 항목을 나타내는 정수입니다.
 
 ```
 int m_nMenuResult;
@@ -166,11 +166,11 @@ int m_nMenuResult;
 
 ### <a name="remarks"></a>설명
 
-사용자 메뉴를 선택 하지 않고 취소 하는 경우 나 오류가 발생 한 경우이 멤버 변수의 값이 0으로 지정 합니다.
+사용자가 선택 하거나 오류가 발생 하는 경우 사용자가 메뉴를 취소 하면이 멤버 변수의 값은 0입니다.
 
 ##  <a name="m_bdefaultclick"></a>  CMFCMenuButton::m_bDefaultClick
 
-단추 텍스트 또는 이미지의 기본 처리를 허용합니다.
+단추에서 텍스트 또는 이미지의 기본 처리를 허용 합니다.
 
 ```
 BOOL  m_bDefaultClick;
@@ -178,11 +178,11 @@ BOOL  m_bDefaultClick;
 
 ### <a name="remarks"></a>설명
 
-False로 설정 m_bDefaultClick 하면 메뉴 단추에서 아무 곳 이나 클릭 하면 표시할 단추가 됩니다.
+M_bDefaultClick를 false로 설정 하면 단추를 클릭할 때 단추가 메뉴에 표시 됩니다.
 
 ##  <a name="m_nmenuresult"></a>  CMFCMenuButton::m_nMenuResult
 
-어떤 항목을 나타내는 정수를 팝업 메뉴에서 선택 합니다.
+사용자가 팝업 메뉴에서 선택 하는 항목을 나타내는 정수입니다.
 
 ```
 int m_nMenuResult;
@@ -201,17 +201,17 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>매개 변수
 
 *pMsg*<br/>
-[in] 가리키는 [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) 처리할 메시지를 포함 하는 구조입니다.
+진행 처리할 메시지를 포함 하는 [MSG](/windows/win32/api/winuser/ns-winuser-msg) 구조체를 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
 
-0이 아닌 메시지를 변환 및 발송 되어야 합니다. 메시지 변환 되지 되었습니다 및 디스패치해야 하는 경우 0입니다.
+메시지를 변환 하 여 디스패치할 수 없으면 0이 아닙니다. 메시지가 변환 되지 않고 디스패치 되어야 하는 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="sizetocontent"></a>  CMFCMenuButton::SizeToContent
 
-텍스트 크기와 이미지 크기에 따라 단추 크기를 변경합니다.
+텍스트 크기 및 이미지 크기에 따라 단추의 크기를 변경 합니다.
 
 ```
 virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
@@ -220,17 +220,17 @@ virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
 ### <a name="parameters"></a>매개 변수
 
 *bCalcOnly*<br/>
-[in] 이 메서드가 단추의 크기를 조정 하는지 여부를 나타내는 부울 매개 변수입니다.
+진행 이 메서드가 단추의 크기를 조정 하는지 여부를 나타내는 부울 매개 변수입니다.
 
 ### <a name="return-value"></a>반환 값
 
-A [CSize](../../atl-mfc-shared/reference/csize-class.md) 단추에 대 한 새 크기를 지정 하는 개체입니다.
+단추의 새 크기를 지정 하는 [Csize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수를 호출 하는 경우 및 *bCalcOnly* 가 TRUE 인 `SizeToContent` 새 단추 크기를 계산 합니다.
+이 함수를 호출 하 고 *bcalconly* 가 TRUE `SizeToContent` 이면는 단추의 새 크기만 계산 합니다.
 
-버튼의 새 크기 단추 텍스트, 이미지 및 화살표에 맞게 계산 됩니다. 프레임 워크는 또한 가로 지 10 픽셀 및 세로 가장자리에 대 한 5 픽셀의 미리 정의 된 여백에 추가합니다.
+단추의 새 크기는 단추 텍스트, 이미지 및 화살표에 맞게 계산 됩니다. 또한 프레임 워크는 가로 가장자리에 대 한 10 픽셀의 미리 정의 된 여백 및 세로 가장자리의 경우 5 픽셀을 추가 합니다.
 
 ## <a name="see-also"></a>참고자료
 

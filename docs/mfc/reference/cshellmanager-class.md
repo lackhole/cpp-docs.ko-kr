@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CShellManager [MFC], GetParentItem
 - CShellManager [MFC], ItemFromPath
 ms.assetid: f15c4c1a-6fae-487d-9913-9b7369b33da0
-ms.openlocfilehash: 14e8da573621f712ae9e27647122d305be54b7b0
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 8151550dafdd1bdf8593d555008af387cf548bc8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916691"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502617"
 ---
 # <a name="cshellmanager-class"></a>CShellManager 클래스
 
@@ -49,7 +49,7 @@ class CShellManager : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CShellManager::CShellManager](#cshellmanager)|`CShellManager` 개체를 생성합니다.|
 
@@ -113,7 +113,7 @@ BOOL BrowseForFolder(
 진행 대화 상자의 제목입니다.
 
 *ulFlags*<br/>
-진행 대화 상자에 대 한 옵션을 지정 하는 플래그입니다. 자세한 설명은 [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa) 를 참조 하세요.
+진행 대화 상자에 대 한 옵션을 지정 하는 플래그입니다. 자세한 설명은 [BROWSEINFO](/windows/win32/api/shlobj_core/ns-shlobj_core-browseinfow) 를 참조 하세요.
 
 *piFolderImage*<br/>
 제한이 메서드가 선택한 폴더의 이미지 인덱스를 쓰는 정수 값에 대 한 포인터입니다.
@@ -156,7 +156,7 @@ LPITEMIDLIST ConcatenateItem(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 *pidl1* 와 *pidl2*를 둘 다 포함할 수 있는 새 [itemidlist](/windows/desktop/api/shtypes/ns-shtypes-itemidlist) 를 만듭니다. 그런 다음 *pidl1* 및 *pidl2* 를 새 목록에 복사 합니다.
+이 메서드는 *pidl1* 와 *pidl2*를 둘 다 포함할 수 있는 새 [itemidlist](/windows/win32/api/shtypes/ns-shtypes-itemidlist) 를 만듭니다. 그런 다음 *pidl1* 및 *pidl2* 를 새 목록에 복사 합니다.
 
 ##  <a name="copyitem"></a>  CShellManager::CopyItem
 

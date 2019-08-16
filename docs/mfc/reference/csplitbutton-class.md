@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CSplitButton [MFC], SetDropDownMenu
 - CSplitButton [MFC], OnDropDown
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
-ms.openlocfilehash: d493a2d4d1c531250abc1cd60d1d3d5b79dea1b7
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: a552334adb4963f45388a798eb0723e61c09ec85
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916759"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502843"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton 클래스
 
@@ -41,20 +41,20 @@ class CSplitButton : public CButton
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CSplitButton::Create](#create)|지정 된 스타일을 사용 하 여 분할 단추 컨트롤을 만들고 현재 `CSplitButton` 개체에 연결 합니다.|
 |[CSplitButton::SetDropDownMenu](#setdropdownmenu)|사용자가 현재 분할 단추 컨트롤의 드롭다운 화살표를 클릭할 때 표시 되는 드롭다운 메뉴를 설정 합니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CSplitButton::OnDropDown](#ondropdown)|사용자가 현재 분할 단추 컨트롤의 드롭다운 화살표를 클릭할 때 시스템이 보내는 BCN_DROPDOWN 알림을 처리 합니다.|
 
 ## <a name="remarks"></a>설명
 
-클래스 `CSplitButton` 는 [cbutton](../../mfc/reference/cbutton-class.md) 클래스에서 파생 됩니다. 분할 단추 컨트롤은 BS_SPLITBUTTON 스타일을 포함 하는 단추 컨트롤입니다. 사용자가 드롭다운 화살표를 클릭할 때 사용자 지정 메뉴를 표시 합니다. 자세한 내용은 BS_SPLITBUTTON and BS_DEFSPLITBUTTON styles in [Button styles](/windows/desktop/Controls/button-styles)항목을 참조 하세요.
+클래스 `CSplitButton` 는 [cbutton](../../mfc/reference/cbutton-class.md) 클래스에서 파생 됩니다. 분할 단추 컨트롤은 BS_SPLITBUTTON 스타일을 포함 하는 단추 컨트롤입니다. 사용자가 드롭다운 화살표를 클릭할 때 사용자 지정 메뉴를 표시 합니다. 자세한 내용은 BS_SPLITBUTTON and BS_DEFSPLITBUTTON styles in [Button styles](/windows/win32/Controls/button-styles)항목을 참조 하세요.
 
 다음 그림에서는 페이저 컨트롤과 (1) 분할 단추 컨트롤을 포함 하는 대화 상자를 보여 줍니다. (2) 드롭다운 화살표가 이미 클릭 되었으며 (3) 하위 메뉴가 표시 됩니다.
 
@@ -94,7 +94,7 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |*dwStyle*|진행 컨트롤에 적용할 스타일의 비트 조합 (또는)입니다. 자세한 내용은 [단추 스타일](../../mfc/reference/styles-used-by-mfc.md#button-styles)을 참조 하세요.|
 |*rect*|진행 컨트롤의 위치와 크기를 포함 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조체에 대 한 참조입니다.|
@@ -120,7 +120,7 @@ CSplitButton(CMenu* pMenu)
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |*nMenuId*|진행 메뉴 모음의 리소스 ID입니다.|
 |*nSubMenuId*|진행 하위 메뉴의 리소스 ID입니다.|
@@ -144,8 +144,8 @@ afx_msg void OnDropDown(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*pNMHDR*|진행 [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) 알림에 대 한 정보를 포함 하는 [NMHDR](/windows/desktop/api/richedit/ns-richedit-nmhdr) 구조체에 대 한 포인터입니다.|
-|*pResult*|제한이 사용 되지 않습니다. 값이 반환 되지 않습니다. [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) 알림의 반환 값입니다.|
+|*pNMHDR*|진행 [BCN_DROPDOWN](/windows/win32/Controls/bcn-dropdown) 알림에 대 한 정보를 포함 하는 [NMHDR](/windows/win32/api/richedit/ns-richedit-nmhdr) 구조체에 대 한 포인터입니다.|
+|*pResult*|제한이 사용 되지 않습니다. 값이 반환 되지 않습니다. [BCN_DROPDOWN](/windows/win32/Controls/bcn-dropdown) 알림의 반환 값입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -176,7 +176,7 @@ void SetDropDownMenu(CMenu* pMenu);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |*nMenuId*|진행 메뉴 모음의 리소스 ID입니다.|
 |*nSubMenuId*|진행 하위 메뉴의 리소스 ID입니다.|

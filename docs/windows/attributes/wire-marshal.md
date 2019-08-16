@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - wire_marshal attribute
 ms.assetid: 244f9d72-776d-4ebd-b60a-cee600a126b5
-ms.openlocfilehash: d1d18336a20644338a50ab66c7fcb06959e5760a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e1067b74191dcde98dd9c85a246db2acd26eff9c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407018"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514854"
 ---
-# <a name="wiremarshal"></a>wire_marshal
+# <a name="wire_marshal"></a>wire_marshal
 
-응용 프로그램별 데이터 형식 대신 전송을 위해 사용 될 데이터 형식을 지정 합니다.
+응용 프로그램별 데이터 형식 대신 전송에 사용 되는 데이터 형식을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407018"
 
 ## <a name="remarks"></a>설명
 
-**wire_marshal** C++ 특성에 동일한 기능을 합니다 [wire_marshal](/windows/desktop/Midl/wire-marshal) MIDL 특성입니다.
+**Wire_marshal** C++ 특성은 [wire_marshal](/windows/win32/Midl/wire-marshal) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-다음 코드는 사용 방법을 보여 줍니다 **wire_marshal**:
+다음 코드에서는 **wire_marshal**를 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_wire_marshal.cpp

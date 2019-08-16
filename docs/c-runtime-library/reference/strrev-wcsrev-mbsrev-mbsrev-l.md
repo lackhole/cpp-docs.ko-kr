@@ -47,19 +47,19 @@ helpviewer_keywords:
 - tcsrev function
 - _tcsrev function
 ms.assetid: 87863e89-4fa0-421c-af48-25d8516fe72f
-ms.openlocfilehash: a8794177f4f92a1928ffeaaa1d7e183aa67cf886
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36cbf78c4645c22209892be77f3bf77e7c93c76b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366656"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499421"
 ---
-# <a name="strrev-wcsrev-mbsrev-mbsrevl"></a>_strrev, _wcsrev, _mbsrev, _mbsrev_l
+# <a name="_strrev-_wcsrev-_mbsrev-_mbsrev_l"></a>_strrev, _wcsrev, _mbsrev, _mbsrev_l
 
 문자열의 문자 순서를 반대로 바꿉니다.
 
 > [!IMPORTANT]
-> **_mbsrev** 하 고 **_mbsrev_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsrev** 및 **_mbsrev_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -93,14 +93,14 @@ unsigned char *_mbsrev_l(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_strrev** 함수에 있는 문자의 순서를 반대로 바꿉니다 *str*합니다. 종료 null 문자는 현재 위치에 유지됩니다. **_wcsrev** 하 고 **_mbsrev** 와이드 문자 및 멀티 바이트 문자 버전입니다 **_strrev**합니다. 인수 및 반환 값 **_wcsrev** 은 와이드 문자열이 고 **_mbsrev** 는 멀티 바이트 문자 문자열입니다. 에 대 한 **_mbsrev**에서 멀티 바이트 문자의 각 바이트의 순서 *str* 변경 되지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**_Strrev** 함수는 *str*의 문자 순서를 반대로 바꿉니다. 종료 null 문자는 현재 위치에 유지됩니다. **_sawcsicand** **_mbsrev** 는 **_strrev**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcsrev** 의 인수와 반환 값은 와이드 문자 문자열입니다. **_mbsrev** 의 해당 문자는 멀티 바이트 문자열입니다. **_Mbsrev**의 경우 *str* 의 각 멀티 바이트 문자의 바이트 순서는 변경 되지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
-**_mbsrev** 해당 매개 변수 유효성을 검사 합니다. 이면 *string1* 또는 *string2* 가 null 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **_mbsrev** 반환 **NULL** 설정 하 고 **errno** 하 **EINVAL**합니다. **_strrev** 하 고 **_wcsrev** 해당 매개 변수를 확인 하지 않습니다.
+**_mbsrev** 은 매개 변수의 유효성을 검사 합니다. *String1* 또는 *문자열* 하나가 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **_mbsrev** 는 **NULL** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다. **_strrev** 및 **_wcsrev** 는 해당 매개 변수의 유효성을 검사 하지 않습니다.
 
-출력 값의 설정이 적용 됩니다는 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 내용은 합니다. 제외 하 고 이러한 함수의 버전은 동일가 **_l** 접미사가 없는 현재 로캘을 사용 합니다 **_l** 로캘 매개 변수를 대신 사용 하는 접미사는 에 전달 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 영향을 받습니다. 자세한 내용은 [setlocale, _wsetlocale을](setlocale-wsetlocale.md) 참조 하세요. **_L** 접미사가 없는 함수는 현재 로캘을 사용 하 고 **_l** 접미사가 있는 함수는 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고 이러한 함수의 버전은 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 > [!IMPORTANT]
-> 이러한 함수는 버퍼 오버런 위협에 노출될 수 있습니다. 버퍼 오버런은 불필요한 권한 상승을 발생시킬 수 있으므로 시스템 공격에 사용될 수 있습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> 이러한 함수는 버퍼 오버런 위협에 노출될 수 있습니다. 버퍼 오버런은 불필요한 권한 상승을 발생시킬 수 있으므로 시스템 공격에 사용될 수 있습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

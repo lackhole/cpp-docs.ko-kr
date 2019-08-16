@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - uidefault attribute
 ms.assetid: 200de0e0-2e34-40a2-bae4-8d485a62264d
-ms.openlocfilehash: a5bb8d3ad869d9ee60b2ab04743f5a926a10dd2a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b4090011aade4ebab2f5c07a8e56e91253cc7c49
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407096"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513908"
 ---
 # <a name="uidefault"></a>uidefault
 
-형식 정보 멤버 사용자 인터페이스에 표시 하기 위한 기본 멤버 임을 나타냅니다.
+형식 정보 멤버가 사용자 인터페이스에 표시 하기 위한 기본 멤버 임을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407096"
 
 ## <a name="remarks"></a>설명
 
-**uidefault** C++ 특성에 동일한 기능을 합니다 [uidefault](/windows/desktop/Midl/uidefault) MIDL 특성입니다.
+**Uidefault** C++ 특성에는 [uidefault](/windows/win32/Midl/uidefault) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 코드 예제를 보여 줍니다 **uidefault**:
+다음 코드에서는 **uidefault**의 샘플을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_uidefault.cpp

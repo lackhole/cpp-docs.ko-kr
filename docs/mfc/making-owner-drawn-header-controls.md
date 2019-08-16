@@ -8,16 +8,16 @@ helpviewer_keywords:
 - controls [MFC], header
 - owner-drawn header controls [MFC]
 ms.assetid: 455c113b-e8d0-400c-8690-dbb92cba0d05
-ms.openlocfilehash: 145134a4c3a0518d5248d72c098927ed4ee5042a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c9147708f672a5aec26f58a3c81ed7a5dfcf8cad
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310853"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508315"
 ---
 # <a name="making-owner-drawn-header-controls"></a>소유자가 그린 헤더 컨트롤 만들기
 
-헤더 컨트롤의 개별 항목을 정의할 수 있습니다 ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) 항목 소유자가 그린 되도록 합니다. 자세한 내용은 [소유자가 그린 헤더 컨트롤](/windows/desktop/Controls/header-controls) Windows SDK에 있습니다.
+헤더 컨트롤 ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md))의 개별 항목을 소유자가 그린 항목으로 정의할 수 있습니다. 자세한 내용은 Windows SDK의 [소유자가 그린 헤더 컨트롤](/windows/win32/Controls/header-controls) 을 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - CThreadPool class
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f
-ms.openlocfilehash: 07fd470a6aeab0575f2733d72650bd695b8e2752
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: f0b732efdce5cf04349f468363b8d86621d90204
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915682"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496302"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool 클래스
 
@@ -50,7 +50,7 @@ class CThreadPool : public IThreadPoolConfig
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CThreadPool::CThreadPool](#cthreadpool)|스레드 풀에 대 한 생성자입니다.|
 |[CThreadPool::~CThreadPool](#dtor)|스레드 풀에 대 한 소멸자입니다.|
@@ -78,13 +78,13 @@ class CThreadPool : public IThreadPoolConfig
 
 스레드를 만든 직후에 *Worker*::`Initialize` 가 해당 스레드와 연결 된 개체에서 호출 됩니다. 스레드의 소멸 직전에 *Worker*::`Terminate` 가 호출 됩니다. 두 방법 모두 **void** <strong>\*</strong> 인수를 허용 해야 합니다. 이 인수의 값은 [Cthreadpool:: Initialize](#initialize)의 *pvWorkerParam* 매개 변수를 통해 스레드 풀로 전달 됩니다.
 
-큐의 작업 항목 및 작업에 사용할 수 있는 작업자 스레드가 있는 경우 작업자 스레드는 항목을 큐에서 끌어오고 해당 스레드에 대 한 *작업자* 개체 `Execute` 의 메서드를 호출 합니다. 그런 다음 세 개의 항목이 메서드에 전달 됩니다. 큐의 항목, `pvWorkerParam` *작업자*:: `Initialize` 및 *worker*:: `Terminate`로 전달 된 항목, IO 완료 포트 큐에 사용 되는 [겹쳐진](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) 구조에 대 한 포인터 .
+큐의 작업 항목 및 작업에 사용할 수 있는 작업자 스레드가 있는 경우 작업자 스레드는 항목을 큐에서 끌어오고 해당 스레드에 대 한 *작업자* 개체 `Execute` 의 메서드를 호출 합니다. 그런 다음 세 개의 항목이 메서드에 전달 됩니다. 큐의 항목, `pvWorkerParam` *작업자*:: `Initialize` 및 *worker*:: `Terminate`로 전달 된 항목, IO 완료 포트 큐에 사용 되는 [겹쳐진](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) 구조에 대 한 포인터 .
 
 *Worker* 클래스는 Typedef, *Worker*:: `RequestType`를 제공 하 여 스레드 풀에서 큐에 대기할 항목의 형식을 선언 합니다. 이 형식은 ULONG_PTR로 캐스팅 될 수 있어야 합니다.
 
 *작업자* 클래스의 예로는 [Cnonstatelessworker 클래스가](../../atl/reference/cnonstatelessworker-class.md)있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IUnknown`
 
@@ -344,7 +344,7 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 풀의 모든 스레드에 종료 요청을 게시 합니다. 제한 시간이 만료 되 면이 메서드는 종료 되지 않은 모든 스레드에서 [TerminateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread) 를 호출 합니다. 이 메서드는 클래스의 소멸자에서 자동으로 호출 됩니다.
+이 메서드는 풀의 모든 스레드에 종료 요청을 게시 합니다. 제한 시간이 만료 되 면이 메서드는 종료 되지 않은 모든 스레드에서 [TerminateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread) 를 호출 합니다. 이 메서드는 클래스의 소멸자에서 자동으로 호출 됩니다.
 
 ## <a name="see-also"></a>참고자료
 

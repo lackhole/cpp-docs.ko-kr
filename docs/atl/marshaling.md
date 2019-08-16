@@ -6,12 +6,12 @@ helpviewer_keywords:
 - marshaling
 - COM interfaces, marshaling
 ms.assetid: 40644b0a-1106-4fc8-9dfb-9bee9915d825
-ms.openlocfilehash: 0661a4cdde0a3a875cf27221e884f6c65b9fea55
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9963e261f26daa57cb58e30ffc404b431d781bfa
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262400"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492039"
 ---
 # <a name="marshaling"></a>마샬링
 
@@ -25,4 +25,4 @@ COM 기술인 마샬링은 개체가 어떤 프로세스에서 다른 프로세�
 ## <a name="see-also"></a>참고자료
 
 [COM 소개](../atl/introduction-to-com.md)<br/>
-[마샬링 정보](/windows/desktop/com/marshaling-details)
+[마샬링 정보](/windows/win32/com/marshaling-details)

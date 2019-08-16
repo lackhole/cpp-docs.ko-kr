@@ -14,12 +14,12 @@ helpviewer_keywords:
 - COleTemplateServer [MFC], Unregister
 - COleTemplateServer [MFC], UpdateRegistry
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c
-ms.openlocfilehash: 3abdf1dc2da5ef9a111371b501d5cd8ce208825d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a1997497f3bddb405b712b5534f76e577dabfa8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373555"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69503088"
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer 클래스
 
@@ -43,17 +43,17 @@ class COleTemplateServer : public COleObjectFactory
 
 |이름|설명|
 |----------|-----------------|
-|[COleTemplateServer::ConnectTemplate](#connecttemplate)|기본 문서 템플릿을 연결 `COleObjectFactory` 개체입니다.|
-|[COleTemplateServer::Unregister](#unregister)|연결 된 문서 템플릿 등록을 취소 합니다.|
-|[COleTemplateServer::UpdateRegistry](#updateregistry)|OLE 시스템 레지스트리를 사용 하 여 문서 유형을 등록합니다.|
+|[COleTemplateServer::ConnectTemplate](#connecttemplate)|문서 템플릿을 기본 `COleObjectFactory` 개체에 연결 합니다.|
+|[COleTemplateServer::Unregister](#unregister)|연결 된 문서 템플릿의 등록을 취소 합니다.|
+|[COleTemplateServer::UpdateRegistry](#updateregistry)|문서 유형을 OLE 시스템 레지스트리에 등록 합니다.|
 
 ## <a name="remarks"></a>설명
 
-이 클래스는 클래스에서 파생 [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md); 일반적으로 사용할 수 있습니다 `COleTemplateServer` 고유한 클래스를 파생 하는 대신 직접. `COleTemplateServer` 사용 하는 [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) 서버 문서를 관리 하는 개체입니다. 사용 하 여 `COleTemplateServer` 전체 서버, 즉, 독립 실행형 응용 프로그램으로 실행할 수 있는 서버를 구현 하는 경우. 단일 문서 인터페이스 (SDI) 응용 프로그램 지원 되지만 전체 서버는 일반적으로 여러 문서 MDI (인터페이스) 응용 프로그램입니다. 하나의 `COleTemplateServer` 개체는 응용 프로그램이 지 원하는 서버 문서의 각 형식에 대 한 필요 하며, 서버 응용 프로그램에서 워크시트 및 차트를 지 원하는 경우 해야 두 `COleTemplateServer` 개체입니다.
+이 클래스는 [Coleobjectfactory](../../mfc/reference/coleobjectfactory-class.md)클래스에서 파생 됩니다. 일반적으로 고유한 클래스를 `COleTemplateServer` 파생 하지 않고 직접를 사용할 수 있습니다. `COleTemplateServer`[Cdoctemplate](../../mfc/reference/cdoctemplate-class.md) 개체를 사용 하 여 서버 문서를 관리 합니다. 전체 `COleTemplateServer` 서버, 즉 독립 실행형 응용 프로그램으로 실행할 수 있는 서버를 구현할 때 사용 합니다. 전체 서버는 일반적으로 SDI (단일 문서 인터페이스) 응용 프로그램이 지원 되기는 하지만 MDI (다중 문서 인터페이스) 응용 프로그램입니다. 응용 `COleTemplateServer` 프로그램에서 지 원하는 각 서버 문서 유형에 하나의 개체가 필요 합니다. 즉, 서버 응용 프로그램이 워크시트와 차트를 모두 지 원하는 경우에는 두 개의 `COleTemplateServer` 개체가 있어야 합니다.
 
-`COleTemplateServer` 재정의 된 `OnCreateInstance` 멤버 함수를 정의한 `COleObjectFactory`합니다. 이 멤버 함수를 만드는 프레임 워크에서 호출 됩니다는 C++ 적절 한 형식의 개체입니다.
+`COleTemplateServer``OnCreateInstance` 로`COleObjectFactory`정의 된 멤버 함수를 재정의 합니다. 이 멤버 함수는 적절 한 형식의 개체를 C++ 만들기 위해 프레임 워크에서 호출 됩니다.
 
-서버에 대 한 자세한 내용은 문서를 참조 하세요. [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)합니다.
+서버에 대 한 자세한 내용은 [서버: 서버](../../mfc/servers-implementing-a-server.md)구현.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -79,11 +79,11 @@ COleTemplateServer();
 
 ### <a name="remarks"></a>설명
 
-에 대 한 간략 한 설명은 사용 합니다 `COleTemplateServer` 클래스를 참조 하십시오 합니다 [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md) 클래스 개요입니다.
+`COleTemplateServer` 클래스 사용에 대 한 간략 한 설명은 [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md) 클래스 개요를 참조 하세요.
 
 ##  <a name="connecttemplate"></a>  COleTemplateServer::ConnectTemplate
 
-가 가리키는 문서 템플릿을 연결 *pDocTemplate* 기본 [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md) 개체입니다.
+*Pdoctemplate* 이 가리키는 문서 템플릿을 기본 [Coleobjectfactory](../../mfc/reference/coleobjectfactory-class.md) 개체에 연결 합니다.
 
 ```
 void ConnectTemplate(
@@ -95,21 +95,21 @@ void ConnectTemplate(
 ### <a name="parameters"></a>매개 변수
 
 *clsid*<br/>
-서식 파일을 요청 하는 OLE 클래스 ID에 대 한 참조입니다.
+템플릿이 요청 하는 OLE 클래스 ID에 대 한 참조입니다.
 
 *pDocTemplate*<br/>
-서식 파일에 대 한 포인터입니다.
+문서 템플릿에 대 한 포인터입니다.
 
 *bMultiInstance*<br/>
-단일 인스턴스 응용 프로그램의 여러 인스턴스화를 지원할 수 있는지 여부를 나타냅니다. TRUE 이면 개체를 만드는 각 요청에 대 한 응용 프로그램의 여러 인스턴스가 시작 됩니다.
+응용 프로그램의 단일 인스턴스에서 여러 인스턴스화를 지원할 수 있는지 여부를 나타냅니다. TRUE 이면 각 요청에 대해 개체를 만들기 위해 응용 프로그램의 여러 인스턴스가 시작 됩니다.
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [CLSID 키](/windows/desktop/com/clsid-key-hklm) Windows SDK에 있습니다.
+자세한 내용은 Windows SDK의 [CLSID 키](/windows/win32/com/clsid-key-hklm) 를 참조 하세요.
 
 ##  <a name="unregister"></a>  COleTemplateServer::Unregister
 
-연결 된 문서 템플릿 등록을 취소 합니다.
+연결 된 문서 템플릿의 등록을 취소 합니다.
 
 ```
 BOOL Unregister();
@@ -121,11 +121,11 @@ BOOL Unregister();
 
 ### <a name="remarks"></a>설명
 
-EnterRemarks
+설명
 
 ##  <a name="updateregistry"></a>  COleTemplateServer::UpdateRegistry
 
-문서 템플릿 문자열에서 파일 형식 정보를 로드 하 고 OLE 시스템 레지스트리에서 해당 정보를 배치 합니다.
+문서 템플릿 문자열에서 파일 형식 정보를 로드 하 고 해당 정보를 OLE 시스템 레지스트리에 저장 합니다.
 
 ```
 void UpdateRegistry(
@@ -138,40 +138,40 @@ void UpdateRegistry(
 ### <a name="parameters"></a>매개 변수
 
 *nAppType*<br/>
-AFXDISP에 정의 되어 있는 OLE_APPTYPE 열거형의 값입니다. 8. 다음 값 중 하나를 가질 수 있습니다.
+AFXDISP.H에 정의 된 OLE_APPTYPE 열거형의 값입니다. 넣기. 다음 값 중 하나를 사용할 수 있습니다.
 
-- OAT_INPLACE_SERVER 서버 전체 서버 사용자 인터페이스에 있습니다.
+- OAT_INPLACE_SERVER 서버에는 전체 서버 사용자 인터페이스가 있습니다.
 
-- OAT_SERVER 서버 지원만 포함 합니다.
+- OAT_SERVER 서버는 포함만 지원 합니다.
 
-- OAT_CONTAINER 컨테이너 포함 된 개체에 대 한 링크를 지원합니다.
+- OAT_CONTAINER 컨테이너는 포함 된 개체에 대 한 링크를 지원 합니다.
 
-- OAT_DISPATCH_OBJECT 개체가 `IDispatch`-가능 합니다.
+- OAT_DISPATCH_OBJECT 개체를 `IDispatch`사용할 수 있습니다.
 
-- 모두 OAT_DOC_OBJECT_SERVER 서버 지원 포함 및 구성 요소 문서 개체 모델입니다.
+- OAT_DOC_OBJECT_SERVER 서버는 포함 및 문서 개체 구성 요소 모델을 모두 지원 합니다.
 
 *rglpszRegister*<br/>
-항목이 없는 경우에 레지스트리에 기록 되는 목록 항목입니다.
+항목이 없는 경우에만 레지스트리에 기록 되는 항목 목록입니다.
 
 *rglpszOverwrite*<br/>
-위의 모든 항목의 존재 여부에 관계 없이 레지스트리에 기록 되는 목록 항목입니다.
+이전 항목이 존재 하는지 여부에 관계 없이 레지스트리에 기록 되는 항목의 목록입니다.
 
 *bRegister*<br/>
-등록할 클래스 인지 확인 합니다. 하는 경우 *b 등록 하십시오* 가 TRUE 인 클래스는 시스템 레지스트리를 사용 하 여 등록 됩니다. 그렇지 않으면 클래스 등록 취소합니다.
+클래스가 등록 되는지 여부를 결정 합니다. *BRegister* 가 TRUE 이면 클래스가 시스템 레지스트리에 등록 됩니다. 그렇지 않으면 클래스의 등록을 취소 합니다.
 
 ### <a name="remarks"></a>설명
 
-호출 하 여 등록 정보를 로드 되 [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring)합니다. 검색할 부분 문자열에서 인덱스로 식별 되 `regFileTypeId`, `regFileTypeName`, 및 `fileNewName`에 설명 된 대로 `GetDocString` 페이지를 참조 합니다.
+등록 정보는 [Cdoctemplate:: GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring)에 대 한 호출을 통해 로드 됩니다. 검색 된 부분 `regFileTypeId`문자열은 `GetDocString` 참조 페이지에 설명 된 `regFileTypeName`대로 인덱스 `fileNewName`, 및로 식별 되는 부분 문자열입니다.
 
-경우는 `regFileTypeId` 부분 문자열이 비어 있습니다. 경우에 대 한 호출 `GetDocString` 다른 이유로,이 함수가 실패 하면 실패 하 고 레지스트리에 파일 정보를 입력 하지 않으면.
+부분 문자열이 비어 있거나에 `GetDocString` 대 한 호출이 다른 이유로 인해 실패 하는 경우이 함수는 실패 하 고 파일 정보가 레지스트리에 입력 되지 않습니다. `regFileTypeId`
 
-인수에 대 한 정보 *rglpszRegister* 하 고 *rglpszOverwrite* 호출을 통해 레지스트리에 기록 됩니다 [AfxOleRegisterServerClass](application-control.md#afxoleregisterserverclass)합니다. 두 인수는 NULL 때 등록 되는 기본 정보를 대부분의 응용 프로그램에 적합 합니다. 이러한 인수에 있는 정보의 구조에 대 한 자세한 내용은 `AfxOleRegisterServerClass`합니다.
+*RglpszRegister* 및 *rglpszOverwrite* 인수의 정보는 [AfxOleRegisterServerClass](application-control.md#afxoleregisterserverclass)에 대 한 호출을 통해 레지스트리에 기록 됩니다. 두 인수가 NULL 일 때 등록 되는 기본 정보는 대부분의 응용 프로그램에 적합 합니다. 이러한 인수의 정보 구조에 대 한 자세한 내용은을 참조 `AfxOleRegisterServerClass`하십시오.
 
 자세한 내용은 [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)을 참조하십시오.
 
 ## <a name="see-also"></a>참고자료
 
-[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC 샘플 HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [COleObjectFactory 클래스](../../mfc/reference/coleobjectfactory-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleServerDoc 클래스](../../mfc/reference/coleserverdoc-class.md)<br/>

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CDocObjectServerItem [MFC], OnHide
 - CDocObjectServerItem [MFC], OnShow
 ms.assetid: 530f7156-50c8-4806-9328-602c9133f622
-ms.openlocfilehash: 66ff2326cd3d08b3f6c8399d7e948d6aab5074c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d44791415626f1a94500b9c3885581d67e8fe42
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391155"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506813"
 ---
 # <a name="cdocobjectserveritem-class"></a>CDocObjectServerItem 클래스
 
@@ -43,27 +43,27 @@ class CDocObjectServerItem : public COleServerItem
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CDocObjectServerItem::GetDocument](#getdocument)|항목을 포함 하는 문서에 대 한 포인터를 검색 합니다.|
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CDocObjectServerItem::OnDoVerb](#ondoverb)|동사를 실행 하기 위해 호출 됩니다.|
-|[CDocObjectServerItem::OnHide](#onhide)|DocObject 항목을 숨기려면 프레임 워크를 시도 하는 경우 예외가 throw 됩니다.|
-|[CDocObjectServerItem::OnShow](#onshow)|DocObject 항목 위치를 확인 하기 위해 프레임 워크에서 호출 활성화 합니다. 항목 DocObject 없으면 호출 [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onshow)합니다.|
+|[CDocObjectServerItem::OnHide](#onhide)|프레임 워크에서 DocObject 항목을 숨기려는 경우 예외를 throw 합니다.|
+|[CDocObjectServerItem::OnShow](#onshow)|DocObject 항목을 활성 상태로 만들기 위해 프레임 워크에서 호출 됩니다. 항목이 DocObject가 아니면 [COleServerItem:: OnShow](../../mfc/reference/coleserveritem-class.md#onshow)를 호출 합니다.|
 
 ## <a name="remarks"></a>설명
 
-`CDocObjectServerItem` 재정의 가능한 멤버 함수를 정의합니다. [OnHide](#onhide)하십시오 [OnDoVerb](#ondoverb), 및 [은 OnShow](#onshow)합니다.
+`CDocObjectServerItem`재정의 가능한 멤버 함수를 정의 합니다. [Onhide](#onhide), [Ondoverb](#ondoverb)및 [onhide를 표시](#onshow)합니다.
 
-사용 하도록 `CDocObjectServerItem`, 속하는 합니다 [OnGetEmbeddedItem](../../mfc/reference/coleserverdoc-class.md#ongetembeddeditem) 에서 재정의 `COleServerDoc`-파생된 클래스는 새 반환 `CDocObjectServerItem` 개체. 항목의 모든 기능을 변경 해야 하는 경우 자신만의 새 인스턴스를 만들 수 있습니다 `CDocObjectServerItem`-클래스를 파생 합니다.
+를 사용 `CDocObjectServerItem`하려면 파생 클래스 `COleServerDoc`의 [OnGetEmbeddedItem](../../mfc/reference/coleserverdoc-class.md#ongetembeddeditem) 재정의가 새 `CDocObjectServerItem` 개체를 반환 하도록 합니다. 항목의 모든 기능을 변경 해야 하는 경우 고유한 `CDocObjectServerItem`파생 클래스의 새 인스턴스를 만들 수 있습니다.
 
-참조에 대 한 자세한 내용은 DocObjects [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) 및 [COleCmdUI](../../mfc/reference/colecmdui-class.md) 에 *MFC 참조*합니다.
+DocObjects에 대 한 자세한 내용은 *MFC 참조*의 [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) 및 [COleCmdUI](../../mfc/reference/colecmdui-class.md) 를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -77,7 +77,7 @@ class CDocObjectServerItem : public COleServerItem
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdocob.h
+**헤더:** afxdocob
 
 ##  <a name="cdocobjectserveritem"></a>  CDocObjectServerItem::CDocObjectServerItem
 
@@ -93,7 +93,7 @@ CDocObjectServerItem(COleServerDoc* pServerDoc, BOOL bAutoDelete);
 새 DocObject 항목을 포함 하는 문서에 대 한 포인터입니다.
 
 *bAutoDelete*<br/>
-에 대 한 링크가 해제 될 때 개체를 삭제할 수 있는지 여부를 나타냅니다. 인수를 false로 설정 합니다 `CDocObjectServerItem` 개체는 문서의 데이터의 필수적인 부분입니다. 개체는 보조 구조는 프레임 워크에서 삭제할 수 있는 문서의 데이터에서 범위를 식별 하는 데 사용 하는 경우 TRUE로 설정 합니다.
+개체에 대 한 링크를 해제할 때 개체를 삭제할 수 있는지 여부를 나타냅니다. `CDocObjectServerItem` 개체가 문서 데이터의 정수 부분인 경우 인수를 FALSE로 설정 합니다. 개체가 프레임 워크에서 삭제할 수 있는 문서 데이터의 범위를 식별 하는 데 사용 되는 보조 구조 이면 TRUE로 설정 합니다.
 
 ##  <a name="getdocument"></a>  CDocObjectServerItem::GetDocument
 
@@ -105,15 +105,15 @@ COleServerDoc* GetDocument() const;
 
 ### <a name="return-value"></a>반환 값
 
-항목을 포함 하는 문서에 대 한 포인터 항목이 문서의 일부가 아닌 경우 NULL입니다.
+항목을 포함 하는 문서에 대 한 포인터입니다. 항목이 문서의 일부가 아니면 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-이 인수로 전달 하는 서버 문서에 대 한 액세스를 허용 합니다 [CDocObjectServerItem](#cdocobjectserveritem) 생성자입니다.
+이렇게 하면 [CDocObjectServerItem](#cdocobjectserveritem) 생성자에 인수로 전달한 서버 문서에 액세스할 수 있습니다.
 
 ##  <a name="ondoverb"></a>  CDocObjectServerItem::OnDoVerb
 
-지정된 된 동사를 실행 하기 위해 프레임 워크에서 호출 됩니다.
+지정 된 동사를 실행 하기 위해 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnDoVerb(LONG iVerb);
@@ -122,11 +122,11 @@ virtual void OnDoVerb(LONG iVerb);
 ### <a name="parameters"></a>매개 변수
 
 *iVerb*<br/>
-실행 하는 동사를 지정 합니다. 가능한 값을 참조 하세요 [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK에 있습니다.
+실행할 동사를 지정 합니다. 가능한 값은 Windows SDK에서 [IOleObject::D 초과 b](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-기본 구현 호출 합니다 [은 OnShow](#onshow) 항목 DocObject OLEIVERB_INPLACEACTIVATE 또는 OLEIVERB_SHOW이 지정 된 경우 멤버 함수입니다. 항목 DocObject 아니거나 다른 동사를 지정 하는 경우 기본 구현 호출 [COleServerItem::OnDoVerb](../../mfc/reference/coleserveritem-class.md#ondoverb)합니다.
+항목이 DocObject이 고 OLEIVERB_INPLACEACTIVATE 또는 OLEIVERB_SHOW가 지정 된 경우 기본 구현은 [Onshow](#onshow) 멤버 함수를 호출 합니다. 항목이 DocObject가 아니거나 다른 동사가 지정 된 경우 기본 구현에서는 [COleServerItem:: OnDoVerb](../../mfc/reference/coleserveritem-class.md#ondoverb)를 호출 합니다.
 
 ##  <a name="onhide"></a>  CDocObjectServerItem::OnHide
 
@@ -138,11 +138,11 @@ virtual void OnHide();
 
 ### <a name="remarks"></a>설명
 
-기본 구현 항목 DocObject 이면 예외가 throw 됩니다. 전체 뷰를 걸리기 때문에 액티브 DocObject 항목을 숨길 수 없습니다. DocObject 항목 상태가 아닙니다. 사라지게을 비활성화 해야 합니다. 기본 구현을 호출 하는 항목 DocObject 없으면 [COleServerItem::OnHide](../../mfc/reference/coleserveritem-class.md#onhide)합니다.
+항목이 DocObject 이면 기본 구현에서 예외를 throw 합니다. 활성 DocObject 항목은 전체 뷰를 사용 하기 때문에 숨길 수 없습니다. DocObject 항목을 비활성화 하 여 사라지게 해야 합니다. 항목이 DocObject가 아닌 경우 기본 구현에서는 [COleServerItem:: OnHide](../../mfc/reference/coleserveritem-class.md#onhide)를 호출 합니다.
 
 ##  <a name="onshow"></a>  CDocObjectServerItem::OnShow
 
-항목의 전체 DocObject 수 있도록 서버 응용 프로그램 프레임 워크에서 호출 활성화 합니다.
+DocObject 항목을 활성 상태로 만들도록 서버 응용 프로그램에 지시 하기 위해 프레임 워크에서 호출 됩니다.
 
 ```
 virtual void OnShow();
@@ -150,7 +150,7 @@ virtual void OnShow();
 
 ### <a name="remarks"></a>설명
 
-기본 구현을 호출 하는 항목 DocObject 없으면 [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onopen)합니다. 수행 하려는 특수 DocObject 항목을 열 때 처리 하는 경우이 함수를 재정의 합니다.
+항목이 DocObject가 아닌 경우 기본 구현에서는 [COleServerItem:: OnShow](../../mfc/reference/coleserveritem-class.md#onopen)를 호출 합니다. DocObject 항목을 열 때 특별 한 처리를 수행 하려면이 함수를 재정의 합니다.
 
 ## <a name="see-also"></a>참고자료
 

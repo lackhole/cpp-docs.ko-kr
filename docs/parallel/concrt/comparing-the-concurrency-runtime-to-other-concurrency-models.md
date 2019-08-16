@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Concurrency Runtime, compared to other models
 ms.assetid: d8b9a1f4-f15f-43c3-a5b4-c0991edf9c86
-ms.openlocfilehash: 885cce09707e1c067efdeb0bdc8b7d8a40841c02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9cc48687eb083ea4fab53380f62856b747c9d86a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337715"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69512818"
 ---
 # <a name="comparing-the-concurrency-runtime-to-other-concurrency-models"></a>동시성 런타임과 기타 동시성 모델 비교
 
@@ -33,7 +33,7 @@ ms.locfileid: "62337715"
 
 ### <a name="preemptive-and-cooperative-scheduling"></a>선점형 일정 및 협조적 일정
 
-*선점형 일정* 은 지정된 시간 동안 모든 작업에 번갈아가며 컴퓨팅 리소스에 대한 독점적 액세스를 제공하는 우선 순위 기반의 라운드 로빈 메커니즘입니다. 선점형 일정은 Windows와 같은 멀티태스킹 운영 체제에서 일반적입니다. *협조적 일정* 작업 리소스에 대 한 액세스를 생성 하거나 작업이 완료 될 때까지 컴퓨팅 리소스에 대 한 배타적 액세스 권한을 모든 작업을 제공 하는 메커니즘입니다. 동시성 런타임은 처리 리소스를 최대한 사용하기 위해 협조적 일정을 운영 체제의 선점형 스케줄러와 함께 사용합니다.
+*선점형 일정* 은 지정된 시간 동안 모든 작업에 번갈아가며 컴퓨팅 리소스에 대한 독점적 액세스를 제공하는 우선 순위 기반의 라운드 로빈 메커니즘입니다. 선점형 일정은 Windows와 같은 멀티태스킹 운영 체제에서 일반적입니다. *협조적 일정* 은 작업이 완료 될 때까지 또는 태스크에서 리소스에 대 한 액세스를 양보할 때까지 모든 작업에 컴퓨팅 리소스에 대 한 단독 액세스를 제공 하는 메커니즘입니다. 동시성 런타임은 처리 리소스를 최대한 사용하기 위해 협조적 일정을 운영 체제의 선점형 스케줄러와 함께 사용합니다.
 
 ### <a name="differences-between-preemptive-and-cooperative-schedulers"></a>선점형 스케줄러와 협조적 스케줄러의 차이점
 
@@ -63,7 +63,7 @@ Windows API는 프로그래밍 모델을 노출하기 위해 C 프로그래밍 �
 
 ### <a name="threads-and-thread-pools"></a>스레드 및 스레드 풀
 
-Windows API의 중심적인 동시성 메커니즘은 스레드입니다. 일반적으로 [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) 함수를 사용하여 스레드를 만듭니다. 스레드는 비교적 쉽게 만들고 사용할 수 있지만 운영 체제는 스레드 관리에 상당한 양의 시간과 기타 리소스를 할당합니다. 또한 각 스레드는 우선 순위 수준이 같은 다른 스레드와 동일한 실행 시간을 이용하도록 보장되지만, 관련된 오버헤드는 충분히 큰 작업을 만들도록 요구합니다. 더 작거나 더 세분화된 작업의 경우, 동시성과 관련된 오버헤드가 병렬 작업 실행의 이점보다 클 수 있습니다.
+Windows API의 중심적인 동시성 메커니즘은 스레드입니다. 일반적으로 [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) 함수를 사용하여 스레드를 만듭니다. 스레드는 비교적 쉽게 만들고 사용할 수 있지만 운영 체제는 스레드 관리에 상당한 양의 시간과 기타 리소스를 할당합니다. 또한 각 스레드는 우선 순위 수준이 같은 다른 스레드와 동일한 실행 시간을 이용하도록 보장되지만, 관련된 오버헤드는 충분히 큰 작업을 만들도록 요구합니다. 더 작거나 더 세분화된 작업의 경우, 동시성과 관련된 오버헤드가 병렬 작업 실행의 이점보다 클 수 있습니다.
 
 스레드 풀은 스레드 관리의 비용을 줄이기 위한 한 가지 방법입니다. 사용자 지정 스레드 풀 및 Windows API에서 제공하는 스레드 풀 구현, 이 두 가지를 통해 작은 작업 항목들이 효율적으로 동시에 실행됩니다. Windows 스레드 풀은 FIFO(선입선출) 큐에서 작업 항목을 유지 관리합니다. 각 작업 항목은 풀에 추가된 순서로 시작됩니다.
 
@@ -77,7 +77,7 @@ Windows XP 및 Windows Vista에서 동시성 런타임을 사용하는 애플리
 
 Windows 7 및 Windows Server 2008 R2에서는 운영 체제가 동시성 및 확장성을 더 잘 지원합니다. 예를 들어, 이러한 운영 체제는 64개가 넘는 하드웨어 스레드가 있는 컴퓨터를 지원합니다. 이러한 새 기능을 활용하려면 Windows API를 사용하는 기존 애플리케이션을 수정해야 합니다. 그러나 동시성 런타임을 사용하는 애플리케이션은 자동으로 이러한 기능을 사용하므로 수정할 필요가 없습니다.
 
-[base.user-mode_scheduling](https://msdn.microsoft.com/library/windows/desktop/dd627187)
+[base.user-mode_scheduling](/windows/win32/procthread/user-mode-scheduling)
 
 [[맨 위로 이동](#top)]
 

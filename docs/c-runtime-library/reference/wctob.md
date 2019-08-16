@@ -23,12 +23,12 @@ helpviewer_keywords:
 - wctob function
 - characters, converting
 ms.assetid: 46aec98b-c2f2-4e9d-9d89-7db99ba8a9a6
-ms.openlocfilehash: 1d9dca16ca905afbc94d912a8083017ba9cc84e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c977bc204f4c9428a4aae09300269b1ed82d53e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188534"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498962"
 ---
 # <a name="wctob"></a>wctob
 
@@ -49,13 +49,13 @@ int wctob(
 
 ## <a name="return-value"></a>반환 값
 
-하는 경우 **wctob** 성공적으로 변환 와이드 문자를 멀티 바이트 문자의 길이가 정확히 1 바이트 경우에 해당 멀티 바이트 문자 표현을 반환 합니다. 하는 경우 **wctob** 발견 하면 멀티 바이트 문자 또는 멀티 바이트 문자로 변환할 수 없는 와이드 문자는 1 바이트 길이가-1 반환 정확 하 게 합니다.
+**Wctob** 가 와이드 문자를 성공적으로 변환 하는 경우 멀티 바이트 문자의 길이가 정확히 1 바이트 인 경우에만 멀티 바이트 문자 표현을 반환 합니다. **Wctob** 가 멀티 바이트 문자로 변환할 수 없는 와이드 문자를 발견 하거나 멀티 바이트 문자의 길이가 정확히 1 바이트는 아닌 경우-1을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**wctob** 함수에 포함 된 와이드 문자 변환 *wchar* 를 반환 하 여 전달 된 해당 멀티 바이트 문자로 **int** 값, 멀티 바이트 문자는 길이가 정확히 1 바이트입니다.
+**Wctob** 함수는 멀티 바이트 문자의 길이가 정확히 1 바이트 이면 *wchar* 에 포함 된 와이드 문자를 return **int** 값으로 전달 된 해당 멀티 바이트 문자로 변환 합니다.
 
-하는 경우 **wctob** 성공 하지 하 고 해당 멀티 바이트 문자가 없는 찾을 함수 설정 **errno** 하 **EILSEQ** -1을 반환 합니다.
+**Wctob** 이 실패 하 고 해당 하는 멀티 바이트 문자를 찾을 수 없는 경우 함수는 **Errno** 를 **eilseq** 로 설정 하 고-1을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -67,7 +67,7 @@ int wctob(
 
 ## <a name="example"></a>예제
 
-이 프로그램의 동작을 보여 줍니다.는 **wcstombs** 함수입니다.
+이 프로그램은 **wcstombs** 함수의 동작을 보여 줍니다.
 
 ```C
 // crt_wctob.c
@@ -107,4 +107,4 @@ Determined the corresponding multibyte character to be "A".
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
-[WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>
+[WideCharToMultiByte](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>

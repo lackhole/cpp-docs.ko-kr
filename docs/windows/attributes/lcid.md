@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - LCID attribute
 ms.assetid: 7f248c69-ee1c-42c3-9411-39cf27c9f43d
-ms.openlocfilehash: d97ad86e143102c96e87ae0a32245b0c01042501
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c737661bb8429e416b515e4e7fcaf54956385d0
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409267"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514545"
 ---
 # <a name="lcid"></a>lcid
 
-함수는 로캘 식별자를 전달할 수 있습니다.
+로캘 식별자를 함수에 전달할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,7 +25,7 @@ ms.locfileid: "62409267"
 
 ## <a name="remarks"></a>설명
 
-**lcid** C++ 특성의 기능을 구현 합니다 [lcid](/windows/desktop/Midl/lcid) MIDL 특성입니다. 라이브러리 블록에 대 한 로캘을 구현 하려는 경우 사용 합니다 **lcid =** `lcid` 매개 변수를 [모듈](module-cpp.md) 특성.
+**Lcid** C++ 특성은 [lcid](/windows/win32/Midl/lcid) MIDL 특성의 기능을 구현 합니다. 라이브러리 블록에 대 한 로캘을 구현 하려면 [module](module-cpp.md) 특성에 대해 **lcid =** `lcid` 매개 변수를 사용 합니다.
 
 ## <a name="example"></a>예제
 

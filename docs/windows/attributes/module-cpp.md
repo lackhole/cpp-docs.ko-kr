@@ -1,17 +1,17 @@
 ---
-title: 모듈 (C++ COM 특성)
+title: module (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.module
 helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-ms.openlocfilehash: 8348a56171836642db5c44cd5d075ba9d2c33769
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: daa0ae4aea5ff2a1a3312efcf3c39f43b541abf6
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503848"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514918"
 ---
 # <a name="module-c"></a>module(C++)
 
@@ -26,54 +26,54 @@ ms.locfileid: "66503848"
 ### <a name="parameters"></a>매개 변수
 
 *type*<br/>
-(선택 사항) 다음 중 하나일 수 있습니다.
+필드 다음 중 하나일 수 있습니다.
 
-- `dll` 결과 DLL에서 in-process COM 서버로 작동 하도록 허용 하는 함수 및 클래스를 추가 합니다. 기본값입니다.
+- `dll`결과 DLL이 in-process COM 서버로 작동 하도록 허용 하는 함수 및 클래스를 추가 합니다. 이것은 기본값입니다.
 
-- `exe` 결과 허용 하는 함수 및 클래스를 추가 합니다. 실행 파일이 out-of-process COM 서버로 작동 하도록 합니다.
+- `exe`결과 실행 파일이 out-of-process COM 서버로 작동 하도록 허용 하는 함수 및 클래스를 추가 합니다.
 
-- `service` 결과 허용 하는 함수 및 클래스를 추가 합니다. 실행 파일이 NT 서비스로 작동 하도록 합니다.
+- `service`결과 실행 파일이 NT 서비스로 작동 하도록 허용 하는 함수 및 클래스를 추가 합니다.
 
-- `unspecified` 모듈 특성과 관련 된 ATL 코드의 삽입을 사용 하지 않도록 설정: ATL 모듈 클래스, 전역 인스턴스 _AtlModule 및 진입점의 삽입 함수를 가리킵니다. 프로젝트의 기타 특성으로 인한 ATL 코드의 삽입은 허용합니다.
+- `unspecified`모듈 특성과 관련 된 ATL 코드의 삽입을 사용 하지 않도록 설정 합니다. ATL 모듈 클래스, 전역 인스턴스 _Cgmodule 및 진입점 함수를 삽입 합니다. 프로젝트의 기타 특성으로 인한 ATL 코드의 삽입은 허용합니다.
 
 *name*<br/>
-(선택 사항) 라이브러리 블록의 이름입니다.
+필드 라이브러리 블록의 이름입니다.
 
 *version*<br/>
-(선택 사항) 라이브러리 블록에 할당 하려는 버전 번호입니다. 기본값은 1.0입니다.
+필드 라이브러리 블록에 할당 하려는 버전 번호입니다. 기본값은 1.0입니다.
 
 *uuid*<br/>
-라이브러리에 대한 고유 ID입니다. 이 매개 변수를 생략하면 라이브러리에 대한 ID가 자동으로 생성됩니다. 검색 해야 합니다 *uuid* 의 라이브러리 블록의 식별자를 사용 하 여 수행할 수 있습니다 **__uuidof (** *libraryname* **)** 합니다.
+라이브러리에 대한 고유 ID입니다. 이 매개 변수를 생략하면 라이브러리에 대한 ID가 자동으로 생성됩니다. **__Uuidof (** *libraryname* **)** 식별자를 사용 하 여 수행할 수 있는 라이브러리 블록의 *uuid* 를 검색 해야 할 수 있습니다.
 
 *lcid*<br/>
-지역화 매개 변수입니다. 자세한 내용은 [lcid](/windows/desktop/Midl/lcid) 를 참조하세요.
+지역화 매개 변수입니다. 자세한 내용은 [lcid](/windows/win32/Midl/lcid) 를 참조하세요.
 
 *control*<br/>
-(선택 사항) 라이브러리의 모든 coclass 컨트롤 되도록 지정 합니다.
+필드 라이브러리의 모든 coclass가 컨트롤 임을 지정 합니다.
 
 *helpstring*<br/>
 형식 라이브러리를 지정합니다.
 
 *helpstringdll*<br/>
-(선택 사항) 문서 문자열 조회를 수행 하는 데.dll 파일의 이름을 설정 합니다. 자세한 내용은 [helpstringdll](/windows/desktop/Midl/helpstringdll) 을 참조하세요.
+필드 문서 문자열 조회를 수행 하는 데 사용할 .dll 파일의 이름을 설정 합니다. 자세한 내용은 [helpstringdll](/windows/win32/Midl/helpstringdll) 을 참조하세요.
 
 *helpfile*<br/>
-(선택 사항) 이름을 합니다 **도움말** 형식 라이브러리 파일입니다.
+필드 형식 라이브러리에 대 한 **도움말** 파일의 이름입니다.
 
 *helpcontext*<br/>
-(선택 사항) 합니다 **도움말 ID** 이 형식 라이브러리에 대 한 합니다.
+필드 이 형식 라이브러리에 대 한 **도움말 ID** 입니다.
 
 *helpstringcontext*<br/>
-(선택 사항) 참조 [helpstringcontext](helpstringcontext.md) 자세한 내용은 합니다.
+필드 자세한 내용은 [helpstringcontext](helpstringcontext.md) 를 참조 하세요.
 
 *hidden*<br/>
-(선택 사항) 전체 라이브러리가 표시 되지 않도록 방지 합니다. 이 사용법은 컨트롤과 함께 사용하기 위한 것입니다. 호스트는 확장된 속성을 사용하여 컨트롤을 래핑하는 새로운 형식 라이브러리를 만들어야 합니다. 자세한 내용은 [hidden](/windows/desktop/Midl/hidden) MIDL 특성을 참조하세요.
+필드 전체 라이브러리가 표시 되지 않도록 합니다. 이 사용법은 컨트롤과 함께 사용하기 위한 것입니다. 호스트는 확장된 속성을 사용하여 컨트롤을 래핑하는 새로운 형식 라이브러리를 만들어야 합니다. 자세한 내용은 [hidden](/windows/win32/Midl/hidden) MIDL 특성을 참조하세요.
 
 *restricted*<br/>
-(선택 사항) 라이브러리의 멤버를 임의로 호출할 수 없습니다. 자세한 내용은 [restricted](/windows/desktop/Midl/restricted) MIDL 특성을 참조하세요.
+필드 라이브러리의 멤버를 임의로 호출할 수 없습니다. 자세한 내용은 [restricted](/windows/win32/Midl/restricted) MIDL 특성을 참조하세요.
 
 *custom*<br/>
-(선택 사항) 하나 이상의 특성 이 비슷합니다는 [사용자 지정](custom-cpp.md) 특성입니다. 첫 번째 매개 변수를 *사용자 지정* 특성의 GUID입니다. 예를 들어:
+필드 하나 이상의 특성 이는 [사용자 지정](custom-cpp.md) 특성과 유사 합니다. *사용자 지정* 의 첫 번째 매개 변수는 특성의 GUID입니다. 예:
 
 ```
 [module(custom={guid,1}, custom={guid1,2})]
@@ -93,19 +93,19 @@ DLL, 실행 파일 또는 서비스의 APP ID를 등록하는 데 사용되는 .
 
 .idl 파일 하나에 라이브러리 블록 하나가 허용됩니다. 소스 코드에 여러 모듈 항목이 병합되며, 가장 최근의 매개 변수 값이 구현됩니다.
 
-ATL을 사용하는 프로젝트 내에서 이 특성을 사용하는 경우 특성의 동작이 변경됩니다. 위 동작 외에도 특성 또한 삽입 전역 개체 (호출 `_AtlModule`) 올바른 형식 및 추가 지원 코드. 독립 실행형 특성의 경우 올바른 모듈 형식에서 파생된 클래스를 삽입합니다. 클래스에 적용되는 특성의 경우 올바른 모듈 형식의 기본 클래스를 추가합니다. 올바른 형식 값을 기준으로 결정 됩니다 합니다 *형식* 매개 변수:
+ATL을 사용하는 프로젝트 내에서 이 특성을 사용하는 경우 특성의 동작이 변경됩니다. 특성은 위의 동작 외에도 올바른 형식 및 추가 지원 코드의 전역 개체 `_AtlModule`(이라고 함)를 삽입 합니다. 독립 실행형 특성의 경우 올바른 모듈 형식에서 파생된 클래스를 삽입합니다. 클래스에 적용되는 특성의 경우 올바른 모듈 형식의 기본 클래스를 추가합니다. 올바른 형식은 *형식* 매개 변수 값에 의해 결정 됩니다.
 
 - `type` = **dll**
 
-   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) 는 COM 서버에 필요한 기본 클래스 및 표준 DLL 진입점으로 사용됩니다. 이러한 진입점은 [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow)및 [DllGetClassObject](/previous-versions//dd797891\(v=vs.85\))입니다.
+   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) 는 COM 서버에 필요한 기본 클래스 및 표준 DLL 진입점으로 사용됩니다. 이러한 진입점은 [DllMain](/windows/win32/Dlls/dllmain), [DllRegisterServer](/windows/win32/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/win32/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow)및 [DllGetClassObject](/previous-versions//dd797891\(v=vs.85\))입니다.
 
 - `type` = **exe**
 
-   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) 는 기본 클래스 및 표준 실행 파일 진입점 [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain)으로 사용됩니다.
+   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) 는 기본 클래스 및 표준 실행 파일 진입점 [WinMain](/windows/win32/api/winbase/nf-winbase-winmain)으로 사용됩니다.
 
 - `type` = **service**
 
-   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) 는 기본 클래스 및 표준 실행 파일 진입점 [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain)으로 사용됩니다.
+   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) 는 기본 클래스 및 표준 실행 파일 진입점 [WinMain](/windows/win32/api/winbase/nf-winbase-winmain)으로 사용됩니다.
 
 - `type` = **unspecified**
 
@@ -166,7 +166,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 [독립 실행형 특성](stand-alone-attributes.md)<br/>
 [Typedef, Enum, Union 및 Struct 특성](typedef-enum-union-and-struct-attributes.md)<br/>
 [usesgetlasterror](usesgetlasterror.md)<br/>
-[library](/windows/desktop/Midl/library)<br/>
+[library](/windows/win32/Midl/library)<br/>
 [helpcontext](helpcontext.md)<br/>
 [helpstring](helpstring.md)<br/>
 [helpfile](helpfile.md)<br/>

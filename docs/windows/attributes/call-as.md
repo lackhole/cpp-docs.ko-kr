@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - call_as attribute
 ms.assetid: a09d7f1f-353b-4870-9b45-f0284161695d
-ms.openlocfilehash: a0051cdca6673800b37d5733c0b849da24010fcb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f36cf8d1be589cc614a6def583b00af00aabdb61
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148356"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501803"
 ---
-# <a name="callas"></a>call_as
+# <a name="call_as"></a>call_as
 
-사용 하도록 설정 된 [로컬](local-cpp.md) 원격 함수 호출 되 면 로컬 함수가 호출 되도록 원격 함수에 매핑할 함수.
+원격 함수가 호출 될 때 로컬 함수가 호출 되도록 [로컬](local-cpp.md) 함수를 원격 함수에 매핑할 수 있도록 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,15 +26,15 @@ ms.locfileid: "62148356"
 ### <a name="parameters"></a>매개 변수
 
 *function*<br/>
-원격 함수가 호출 되 면 호출할 하려는 로컬 함수입니다.
+원격 함수가 호출 될 때 호출 하려는 로컬 함수입니다.
 
 ## <a name="remarks"></a>설명
 
-**call_as** C++ 특성에 동일한 기능을 합니다 [call_as](/windows/desktop/Midl/call-as) MIDL 특성입니다.
+**Call_as** C++ 특성은 [call_as](/windows/win32/Midl/call-as) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-다음 코드를 사용 하는 방법을 보여 줍니다 **call_as** 사용 불가능 한 함수에 매핑할 (`f1`) 원격으로 사용 가능한 함수 (`Remf1`):
+다음 코드에서는 **call_as** 를 사용 하 여 원격이 아닌 함수 (`f1`)를 원격 가능 함수 (`Remf1`)에 매핑하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_call_as.cpp

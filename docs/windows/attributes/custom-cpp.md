@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
-ms.openlocfilehash: 227e67696e679452a9c6c0e18c04e3d918f7a93f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19f28963a18abf42c6f629ac0f6491628387aa6d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148180"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491006"
 ---
 # <a name="custom-c"></a>custom(C++)
 
-형식 라이브러리의 개체에 대 한 메타 데이터를 정의합니다.
+형식 라이브러리의 개체에 대 한 메타 데이터를 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -31,14 +31,14 @@ ms.locfileid: "62148180"
 *uuid*<br/>
 고유한 ID입니다.
 
-*값*<br/>
-Variant로 입력할 수 있는 값입니다.
+*value*<br/>
+변형에 포함할 수 있는 값입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **사용자 지정** C++ 특성 정보를 형식 라이브러리에 배치 하면 됩니다. 형식 라이브러리에서 사용자 지정 값을 읽는 도구를 해야 합니다.
+**사용자 지정** C++ 특성을 통해 정보가 형식 라이브러리에 배치 됩니다. 형식 라이브러리의 사용자 지정 값을 읽는 도구가 필요 합니다.
 
-합니다 **사용자 지정** 특성이 동일한 기능을 합니다 [사용자 지정](/windows/desktop/Midl/custom) MIDL 특성입니다.
+**사용자 지정** 특성에는 [사용자 지정](/windows/win32/Midl/custom) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -46,9 +46,9 @@ Variant로 입력할 수 있는 값입니다.
 
 |||
 |-|-|
-|**적용 대상**|비-COM **인터페이스**, **클래스**, **열거형**s `idl_module` 인터페이스 매개 변수, 메서드, 인터페이스 멤버 **typedef**s, **union**개이면 **구조체**s|
+|**적용 대상**|비 COM **인터페이스**, **클래스**, **열거형** `idl_module` s, 메서드, 인터페이스 멤버, 인터페이스 매개 변수, **typedef**s, **union**s, **struct**s|
 |**반복 가능**|예|
-|**필수 특성**|**coclass** (클래스에 사용) 하는 경우|
+|**필수 특성**|**coclass** (클래스에서 사용 되는 경우)|
 |**잘못된 특성**|없음|
 
 특성 컨텍스트에 대한 자세한 내용은 [특성 컨텍스트](cpp-attributes-com-net.md#contexts)를 참조하세요.

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CLinearTransition [MFC], m_dblFinalValue
 - CLinearTransition [MFC], m_duration
 ms.assetid: 7fcb2dba-beb8-4933-9f5d-3b7fb1585ef0
-ms.openlocfilehash: 4aa2d9955d2bbf98d2d7829806c4bcbd76340847
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1a6348d1afd0117683bd31af61324b14e16f710c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392533"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505738"
 ---
 # <a name="clineartransition-class"></a>CLinearTransition 클래스
 
@@ -35,28 +35,28 @@ class CLinearTransition : public CBaseTransition;
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CLinearTransition::CLinearTransition](#clineartransition)|선형 전환을 개체를 생성 하 고 기간 및 최종 값을 사용 하 여 초기화 합니다.|
+|[CLinearTransition::CLinearTransition](#clineartransition)|선형 전환 개체를 생성 하 고 duration 및 final 값을 사용 하 여 초기화 합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CLinearTransition::Create](#create)|캡슐화 된 전환 COM 개체를 만들려면 전환 라이브러리를 호출 합니다. (재정의 [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|
+|[CLinearTransition::Create](#create)|는 전환 라이브러리를 호출 하 여 캡슐화 된 전환 COM 개체를 만듭니다. [Cbasetransition:: Create](../../mfc/reference/cbasetransition-class.md#create)를 재정의 합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CLinearTransition::m_dblFinalValue](#m_dblfinalvalue)|전환의 끝에 있는 애니메이션 변수의 값입니다.|
 |[CLinearTransition::m_duration](#m_duration)|전환 기간입니다.|
 
 ## <a name="remarks"></a>설명
 
-선형 전환 하는 동안 애니메이션 변수의 값 선형적으로 전환 초기 값에서 지정 된 마지막 값입니다. 모든 전환을 자동으로 취소 하므로 것이 좋습니다에 할당 된 새 연산자를 사용 합니다. 캡슐화 된 IUIAnimationTransition COM 개체는 NULL까지 CAnimationController::AnimateGroup에서 생성 됩니다. 이 COM 개체의 생성에 영향을 주지 않습니다 후 멤버 변수를 변경 합니다.
+선형 전환 중 애니메이션 변수의 값은 초기 값에서 지정 된 최종 값으로 선형으로 전환 됩니다. 모든 전환은 자동으로 지워지므로 operator new를 사용 하 여 할당 하는 것이 좋습니다. 캡슐화 된 IuiAnimateGroup 전환 COM 개체는 NULL 일 때까지 CAnimationController::에 의해 생성 됩니다. 이 COM 개체를 만든 후 멤버 변수를 변경 해도 아무런 영향을 주지 않습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -70,7 +70,7 @@ class CLinearTransition : public CBaseTransition;
 
 ##  <a name="clineartransition"></a>  CLinearTransition::CLinearTransition
 
-선형 전환을 개체를 생성 하 고 기간 및 최종 값을 사용 하 여 초기화 합니다.
+선형 전환 개체를 생성 하 고 duration 및 final 값을 사용 하 여 초기화 합니다.
 
 ```
 CLinearTransition(
@@ -88,7 +88,7 @@ CLinearTransition(
 
 ##  <a name="create"></a>  CLinearTransition::Create
 
-캡슐화 된 전환 COM 개체를 만들려면 전환 라이브러리를 호출 합니다.
+는 전환 라이브러리를 호출 하 여 캡슐화 된 전환 COM 개체를 만듭니다.
 
 ```
 virtual BOOL Create(
@@ -99,11 +99,11 @@ virtual BOOL Create(
 ### <a name="parameters"></a>매개 변수
 
 *pLibrary*<br/>
-에 대 한 포인터를 [IUIAnimationTransitionLibrary 인터페이스](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), 표준 전환의 라이브러리를 정의 하는 합니다.
+표준 전환 라이브러리를 정의 하는 [IUIAnimationTransitionLibrary 인터페이스](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-전환; 성공적으로 만들어졌을 경우 TRUE 그렇지 않으면 FALSE입니다.
+전환이 성공적으로 생성 되 면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ##  <a name="m_dblfinalvalue"></a>  CLinearTransition::m_dblFinalValue
 

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - v1_enum attribute
 ms.assetid: 2fe92d92-81b9-4a1c-b6ce-437d0eb770ca
-ms.openlocfilehash: 08654eed7ad467dc22d2cbbf811c9169e5292f16
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c67f6303e73da42db5efd006bd6cdf3ded5bb8cf
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407148"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513863"
 ---
-# <a name="v1enum"></a>v1_enum
+# <a name="v1_enum"></a>v1_enum
 
-지정된 된 열거형된 형식 16 비트 기본이 아닌 32 비트 엔터티를 전송할 수 있는지를 전달 합니다.
+지정 된 열거형 형식이 16 비트 기본값이 아닌 32 비트 엔터티로 전송 되도록 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407148"
 
 ## <a name="remarks"></a>설명
 
-**v1_enum** C++ 특성에 동일한 기능을 합니다 [v1_enum](/windows/desktop/Midl/v1-enum) MIDL 특성입니다.
+**V1_enum** C++ 특성은 [v1_enum](/windows/win32/Midl/v1-enum) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-다음 코드는 사용 방법을 보여 줍니다 **v1_enum**:
+다음 코드에서는 **v1_enum**를 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_v1_enum.cpp
@@ -48,7 +48,7 @@ enum eList {
 
 |||
 |-|-|
-|**적용 대상**|열거 형식|
+|**적용 대상**|열거 유형|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|

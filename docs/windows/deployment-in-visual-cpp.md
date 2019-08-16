@@ -5,12 +5,12 @@ helpviewer_keywords:
 - deploying applications [C++]
 - application deployment [C++]
 ms.assetid: d4b4ffc0-d2bd-4e4a-84a6-62f1c26f6a09
-ms.openlocfilehash: 8dccf581cff88dc2e8c4a889bed8b47fc140eb7c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67d5c7b0772eda55d1b653bd73f95ac93e31e644
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345372"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514813"
 ---
 # <a name="deployment-in-visual-c"></a>Visual C++의 개발
 
@@ -44,11 +44,11 @@ Microsoft는 로컬 배포된 Visual C++ 라이브러리를 자동으로 업데�
 
 ## <a name="static-linking"></a>정적 링크
 
-동적으로 연결된 라이브러리 외에도 Visual Studio는 대부분의 라이브러리를 정적 라이브러리로 제공합니다. 애플리케이션에 정적 라이브러리를 정적으로 연결할 수 있습니다. 즉, 라이브러리 개체 코드를 애플리케이션에 직접 연결할 수 있습니다. 이렇게 하면 DLL 종속성 없는 단일 이진을 만들게 되므로 Visual C++ 라이브러리 파일을 별도로 배포할 필요가 없습니다. 그러나 정적으로 연결된 라이브러리는 적절하게 업데이트할 수 없기 때문에 이 방식은 좋지 않습니다. 정적 연결을 사용하고 연결된 라이브러리를 업데이트하려면 응용 프로그램을 다시 컴파일하고 다시 배포해야 합니다.
+동적으로 연결된 라이브러리 외에도 Visual Studio는 대부분의 라이브러리를 정적 라이브러리로 제공합니다. 애플리케이션에 정적 라이브러리를 정적으로 연결할 수 있습니다. 즉, 라이브러리 개체 코드를 애플리케이션에 직접 연결할 수 있습니다. 이렇게 하면 DLL 종속성 없는 단일 이진을 만들게 되므로 Visual C++ 라이브러리 파일을 별도로 배포할 필요가 없습니다. 그러나 정적으로 연결된 라이브러리는 적절하게 업데이트할 수 없기 때문에 이 방식은 좋지 않습니다. 정적 연결을 사용하고 연결된 라이브러리를 업데이트하려면 애플리케이션을 다시 컴파일하고 다시 배포해야 합니다.
 
 ## <a name="troubleshooting-deployment-issues"></a>배포 문제 해결
 
-Visual C++ 라이브러리의 로드 순서는 시스템에 따라 다릅니다. 로더 문제를 진단하려면 depends.exe 또는 where.exe를 사용합니다. 자세한 내용은 [동적 연결 라이브러리 순서(Windows)](/windows/desktop/Dlls/dynamic-link-library-search-order)를 참조하십시오.
+Visual C++ 라이브러리의 로드 순서는 시스템에 따라 다릅니다. 로더 문제를 진단하려면 depends.exe 또는 where.exe를 사용합니다. 자세한 내용은 [동적 연결 라이브러리 순서(Windows)](/windows/win32/Dlls/dynamic-link-library-search-order)를 참조하십시오.
 
 ## <a name="see-also"></a>참고자료
 
