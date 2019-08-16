@@ -51,12 +51,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ComPtr::Swap method
 - Microsoft::WRL::ComPtr::~ComPtr, destructor
 ms.assetid: a6551902-6819-478a-8df7-b6f312ab1fb0
-ms.openlocfilehash: 889b722c91fd56613c5902eb4ce6439763a49bd9
-ms.sourcegitcommit: 720b74dddb1cdf4e570d55103158304ee1df81f8
+ms.openlocfilehash: 1e20a991c8f32027aeea6a17df0534aa6e1c2c43
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606494"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498409"
 ---
 # <a name="comptr-class"></a>ComPtr 클래스
 
@@ -84,19 +84,19 @@ friend class ComPtr;
 
 `ComPtr<>`기본 인터페이스 포인터를 나타내는 형식을 선언 합니다. 를 `ComPtr<>` 사용 하 여 변수를 선언한 다음 화살표 멤버 액세스 연산자 (`->`)를 사용 하 여 인터페이스 멤버 함수에 액세스 합니다.
 
-스마트 포인터에 대 한 자세한 내용은 MSDN Library에서 [Com 코딩 방법](/windows/desktop/LearnWin32/com-coding-practices) 항목의 "Com 스마트 포인터" 하위 섹션을 참조 하십시오.
+스마트 포인터에 대 한 자세한 내용은 MSDN Library에서 [Com 코딩 방법](/windows/win32/LearnWin32/com-coding-practices) 항목의 "Com 스마트 포인터" 하위 섹션을 참조 하십시오.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-이름            | 설명
+이름            | Description
 --------------- | ---------------------------------------------------------------
 `InterfaceType` | *T* 템플릿 매개 변수로 지정 된 형식의 동의어입니다.
 
 ### <a name="public-constructors"></a>Public 생성자
 
-이름                             | Description
+이름                             | 설명
 -------------------------------- | --------------------------------------------------------------------------------------------------------------------
 [ComPtr::ComPtr](#comptr)        | `ComPtr` 클래스의 새 인스턴스를 초기화합니다. 오버로드는 기본, 복사, 이동 및 변환 생성자를 제공합니다.
 [ComPtr::~ComPtr](#tilde-comptr) | 의 `ComPtr`인스턴스를 초기화 하지 않습니다.
@@ -141,7 +141,7 @@ friend class ComPtr;
 -------------------- | ------------------------------------------------------------------------------------------
 [ComPtr::ptr_](#ptr) | 이에 연결 되어 있고이 `ComPtr`에서 관리 하는 인터페이스에 대 한 포인터를 포함 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 `ComPtr`
 

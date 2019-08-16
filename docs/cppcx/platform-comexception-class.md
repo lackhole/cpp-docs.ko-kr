@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::COMException Class
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
-ms.openlocfilehash: 5a74184a8cbc4126988da2ba0be61d9f5b2bb71c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eb6f3e0e4860687d0d47294e11b7741294abac20
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383349"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500542"
 ---
 # <a name="platformcomexception-class"></a>Platform::COMException 클래스
 
@@ -81,7 +81,7 @@ COMException 클래스에는 다음과 같은 속성이 있습니다.
 
 **메타데이터:** platform.winmd
 
-## <a name="ctor"></a> Comexception:: Comexception 생성자
+## <a name="ctor"></a>COMException:: COMException 생성자
 
 COMException 클래스의 새 인스턴스를 초기화합니다.
 
@@ -96,7 +96,7 @@ COMException( int hresult )
 *hresult*<br/>
 예외로 표시되는 오류 HRESULT입니다.
 
-## <a name="hresult"></a> Comexception:: Hresult 속성
+## <a name="hresult"></a>COMException:: HResult 속성
 
 예외에 해당하는 HRESULT입니다.
 
@@ -113,9 +113,9 @@ public:
 
 ### <a name="remarks"></a>설명
 
-HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes)합니다.
+HRESULT 값을 해석 하는 방법에 대 한 자세한 내용은 [COM 오류 코드 구조](/windows/win32/com/structure-of-com-error-codes)를 참조 하세요.
 
-## <a name="message"></a> Comexception:: Message 속성
+## <a name="message"></a>COMException:: Message 속성
 
 예외를 설명하는 메시지입니다.
 

@@ -40,14 +40,14 @@ helpviewer_keywords:
 - _wtmpnam function
 - _wtempnam function
 ms.assetid: 3ce75f0f-5e30-42a6-9791-8d7cbfe70fca
-ms.openlocfilehash: 29fa8fc836b1b52bcf66247b3f6aaba47b8c2eaa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0e8e11182948e9bccf1c55685cc7c3d55ff697c8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62284872"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500761"
 ---
-# <a name="tempnam-wtempnam-tmpnam-wtmpnam"></a>_tempnam, _wtempnam, tmpnam, _wtmpnam
+# <a name="_tempnam-_wtempnam-tmpnam-_wtmpnam"></a>_tempnam, _wtempnam, tmpnam, _wtmpnam
 
 임시 파일을 만드는 데 사용할 수 있는 이름을 생성합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [tmpnam_s, _wtmpnam_s](tmpnam-s-wtmpnam-s.md)를 참조하세요.
 
@@ -73,7 +73,7 @@ wchar_t *_wtmpnam(
 ### <a name="parameters"></a>매개 변수
 
 *prefix*<br/>
-반환 하는 이름에 붙일 수 있는 문자열 **_tempnam**합니다.
+**_Tempnam**에서 반환 하는 이름에 미리 보류할 문자열입니다.
 
 *dir*<br/>
 TMP 환경 함수가 없는 경우 또는 TMP가 올바른 디렉터리가 아닌 경우 파일 이름에 사용되는 경로입니다.
@@ -83,30 +83,30 @@ TMP 환경 함수가 없는 경우 또는 TMP가 올바른 디렉터리가 아�
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수 생성 된 이름에 대 한 포인터를 반환 하거나 **NULL** 오류가 발생 하는 경우. 시도 하면 오류가 발생할 수 있습니다 둘 **TMP_MAX** (STDIO 참조 합니다. H) 사용 하 여 호출 **tmpnam** 사용 하는 경우 또는 **_tempnam** TMP 환경 변수에서 지정 된 잘못 된 디렉터리 이름이 고는 *dir* 매개 변수입니다.
+이러한 각 함수는 생성 된 이름에 대 한 포인터를 반환 하거나 오류가 발생 한 경우 **NULL** 을 반환 합니다. **TMP_MAX** 이상을 시도 하면 오류가 발생할 수 있습니다 (stdio.h 참조). H)를 사용 하 여 **tmpnam** 을 호출 하거나, **_tempnam** 를 사용 하는 경우 TMP 환경 변수 및 *dir* 매개 변수에 잘못 된 디렉터리 이름이 지정 되어 있습니다.
 
 > [!NOTE]
-> 반환 된 포인터 **tmpnam** 하 고 **_wtmpnam** 내부 정적 버퍼를 가리킵니다. 이러한 포인터를 할당 해제하기 위해 [free](free.md)를 호출해서는 안 됩니다. **사용 가능한** 가 할당 한 포인터에 대 한 호출 해야 **_tempnam** 하 고 **_wtempnam**합니다.
+> **Tmpnam** 및 **_wtmpnam** 에서 반환 되는 포인터는 내부 정적 버퍼를 가리킵니다. 이러한 포인터를 할당 해제하기 위해 [free](free.md)를 호출해서는 안 됩니다. **_tempnam** 및 **_wtempnam**에 의해 할당 된 포인터에 대해 **free** 를 호출 해야 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수는 현재 없는 파일의 이름을 반환합니다. **tmpnam** 에서 반환 된 지정 된 Windows 임시 디렉터리에 고유한 이름을 반환 [GetTempPathW](/windows/desktop/api/fileapi/nf-fileapi-gettemppathw)합니다. **\_tempnam** 지정 된 것과 다른 디렉터리에 고유 이름을 생성 합니다. \fname21과 같이 파일 이름 앞에 백슬래시가 붙고 경로 정보는 없는 경우 현재 작업 디렉터리에 대해 해당 이름이 유효함을 나타냅니다.
+이러한 각 함수는 현재 없는 파일의 이름을 반환합니다. **tmpnam** 는 [Gettemppathw](/windows/win32/api/fileapi/nf-fileapi-gettemppathw)에서 반환 하는 지정 된 Windows 임시 디렉터리에서 고유한 이름을 반환 합니다. tempnam는 지정 된 디렉터리가 아닌 다른 디렉터리에 고유한 이름을 생성 합니다.  **\_** \fname21과 같이 파일 이름 앞에 백슬래시가 붙고 경로 정보는 없는 경우 현재 작업 디렉터리에 대해 해당 이름이 유효함을 나타냅니다.
 
-에 대 한 **tmpnam**,이 생성 된 파일 이름에 저장할 수 있습니다 *str*합니다. 경우 *str* 됩니다 **NULL**, 한 다음 **tmpnam** 결과 내부 정적 버퍼에 유지 합니다. 따라서 모든 후속 호출에서는 이 값을 제거합니다. 생성 된 이름을 **tmpnam** 으로 구성 됩니다 프로그램에서 생성 된 파일 이름의 첫 번째 호출 후 **tmpnam**, 순차적 숫자의 파일 확장명 (.1-.vvu 경우 **TMP_MAX**  STDIO에서. H는 32,767 자).
+**Tmpnam**의 경우이 생성 된 파일 이름을 *str*에 저장할 수 있습니다. *Str* 이 **NULL**이면 **tmpnam** 는 결과를 내부 정적 버퍼에 그대로 둡니다. 따라서 모든 후속 호출에서는 이 값을 제거합니다. **Tmpnam** 에서 생성 된 이름은 프로그램에서 생성 된 파일 이름으로 구성 되 고, **tmpnam**에 대 한 첫 번째 호출 후에는 stdio.h의 **TMP_MAX** 에서 base 32 (. 1-)에 있는 일련 번호의 파일 확장명입니다. H는 32767입니다.
 
-**_tempnam** 다음 규칙에 따라 선택한 디렉터리에 대 한 고유한 파일 이름이 생성 됩니다.
+**_tempnam** 는 다음 규칙에 따라 선택한 디렉터리에 대해 고유한 파일 이름을 생성 합니다.
 
 - TMP 환경 변수가 정의되어 있으며 올바른 디렉터리 이름으로 설정되어 있으면 TMP가 지정한 디렉터리에 대해 고유한 파일 이름이 생성됩니다.
 
-- 존재 하지 않는 디렉터리의 이름으로 설정 된 경우 또는 TMP 환경 변수가 정의 되지 않은 경우 **_tempnam** 사용할지는 *dir* 는 고유한 이름을 생성 하는 경로로 매개 변수입니다.
+- TMP 환경 변수가 정의 되어 있지 않거나 존재 하지 않는 디렉터리 이름으로 설정 된 경우 **_tempnam** 는 고유한 이름을 생성 하는 경로로 *dir* 매개 변수를 사용 합니다.
 
-- TMP 환경 변수가 정의 되지 않은 경우 또는 존재 하지 않는 디렉터리의 이름으로 설정 된 경우 및 경우 *dir* 은 **NULL** 존재 하지 않는 디렉터리의 이름으로 설정 또는 **_ tempnam** 현재 작업 디렉터리를 사용 하 여 고유한 이름을 생성 됩니다. 현재 경우 모두 TMP 및 *dir* 존재 하지 않는 디렉터리의 이름을 지정 합니다 **_tempnam** 함수 호출은 실패 합니다.
+- TMP 환경 변수가 정의 되어 있지 않거나 존재 하지 않는 디렉터리 이름으로 설정 된 경우 및 *dir* 이 **NULL** 이거나 존재 하지 않는 디렉터리 이름으로 설정 된 경우 **_tempnam** 는 현재 작업 디렉터리를 gene에 사용 합니다. 고유 이름을 평가 합니다. 현재 TMP와 *dir* 모두 존재 하지 않는 디렉터리의 이름을 지정 하는 경우 **_tempnam** 함수 호출이 실패 합니다.
 
-반환한 이름을 **_tempnam** 의 연결 *접두사* 및 일련 번호를 지정된 된 디렉터리에 대 한 고유한 파일 이름을 만들기 위해 결합 됩니다. **_tempnam** 확장명이 없는 파일 이름을 생성 합니다. **_tempnam** 사용 하 여 [malloc](malloc.md) filename;에 대 한 공간을 할당 하는 프로그램은 더 이상 필요 없는 경우이 공간을 확보 하는 일을 담당 합니다.
+**_Tempnam** 에서 반환 되는 이름은 *접두사* 와 일련 번호의 연결로,이를 결합 하 여 지정 된 디렉터리에 대 한 고유한 파일 이름을 만듭니다. **_tempnam** 는 확장명이 없는 파일 이름을 생성 합니다. **_tempnam** 는 [malloc](malloc.md) 를 사용 하 여 파일 이름에 공간을 할당 합니다. 프로그램은 더 이상 필요 하지 않을 때이 공간을 확보 해야 합니다.
 
-**_tempnam** 하 고 **tmpnam** 멀티 바이트 문자열 인수를 적절 하 게 핸들의 OEM 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 운영 체제에서 자동으로 부여 합니다. **_wtempnam** 의 와이드 문자 버전이 **_tempnam**; 인수 및 반환 값 **_wtempnam** 는 와이드 문자 문자열입니다. **_wtempnam** 하 고 **_tempnam** 점을 제외 하면 동일 하 게 작동 **_wtempnam** 멀티 바이트 문자열을 처리 하지 않습니다. **_wtmpnam** 의 와이드 문자 버전이 **tmpnam**;의 인수와 반환 값 **_wtmpnam** 는 와이드 문자 문자열입니다. **_wtmpnam** 하 고 **tmpnam** 점을 제외 하면 동일 하 게 작동 **_wtmpnam** 멀티 바이트 문자열을 처리 하지 않습니다.
+**_tempnam** 및 **tmpnam** 는 멀티 바이트 문자열 인수를 자동으로 적절 하 게 처리 하 여 운영 체제에서 가져온 OEM 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 합니다. **_wtempnam** 는 **_tempnam**의 와이드 문자 버전입니다. **_wtempnam** 의 인수와 반환 값은 와이드 문자 문자열입니다. **_wtempnam** 및 **_tempnam** 는 **_wtempnam** 가 멀티 바이트 문자열을 처리 하지 않는다는 점만 제외 하 고 동일 하 게 동작 합니다. **_wtmpnam** 는 **tmpnam**의 와이드 문자 버전입니다. **_wtmpnam** 의 인수 및 반환 값은 와이드 문자 문자열입니다. **_wtmpnam** 및 **tmpnam** 는 **_wtmpnam** 가 멀티 바이트 문자열을 처리 하지 않는다는 점만 제외 하 고 동일 하 게 동작 합니다.
 
-하는 경우 **_DEBUG** 하 고 **_CRTDBG_MAP_ALLOC** 정의 된 **_tempnam** 하 고 **_wtempnam** 호출으로 대체 됩니다 [_tempnam _dbg 및 _wtempnam_dbg](tempnam-dbg-wtempnam-dbg.md)합니다.
+**_Debug** 및 **_CRTDBG_MAP_ALLOC** 가 정의 되 면 **_tempnam** 및 **_wtempnam** 가 [_tempnam_dbg 및 _wtempnam_dbg](tempnam-dbg-wtempnam-dbg.md)에 대 한 호출로 바뀝니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

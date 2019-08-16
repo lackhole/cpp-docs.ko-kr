@@ -25,12 +25,12 @@ helpviewer_keywords:
 - wmemmove function
 - memmove function
 ms.assetid: 3a906114-9cf3-40d7-bd99-ee452004f218
-ms.openlocfilehash: 988af1c2678e20ea40ce4dfe331a3b6c49db0547
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 27811f56f1956bcaaea4ec589f7e6c71afaca380
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156566"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499625"
 ---
 # <a name="memmove-wmemmove"></a>memmove, wmemmove
 
@@ -60,26 +60,26 @@ wchar_t *wmemmove(
 소스 개체입니다.
 
 *count*<br/>
-바이트 수 (**memmove**) 또는 문자 (**wmemmove**) 복사 합니다.
+복사할 바이트 수 (**memmove**) 또는 문자 수 (**wmemmove**)입니다.
 
 ## <a name="return-value"></a>반환 값
 
-변수의 *dest*합니다.
+*Dest*의 값입니다.
 
 ## <a name="remarks"></a>설명
 
-복사본 *개수* 바이트 (**memmove**) 또는 문자 (**wmemmove**)에서 *src* 하 *dest*합니다. 소스 영역과 대상의 일부 영역이 겹치는 경우 두 함수는 모두 겹치는 영역에서 원래 소스 바이트가 덮어쓰기 전에 복사되도록 합니다.
+*Src* 에서 *dest*로 바이트 *수* (**memmove**) 또는 문자 (**wmemmove**)를 복사 합니다. 소스 영역과 대상의 일부 영역이 겹치는 경우 두 함수는 모두 겹치는 영역에서 원래 소스 바이트가 덮어쓰기 전에 복사되도록 합니다.
 
-**보안 정보** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+**보안 정보** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-합니다 **memmove** 하 고 **wmemmove** 함수는 경우에 중단 될 상수 **_CRT_SECURE_DEPRECATE_MEMORY** 위해에서 포함 문 이전에 정의 된 사용 되지 않는 경우, 아래 예제와 같이 함수:
+다음 예제와 같이 함수가 더 이상 사용 되지 않도록 하기 위해 포함 문 이전에 상수 **_CRT_SECURE_DEPRECATE_MEMORY** 가 정의 된 경우에는 **memmove** 및 **wmemmove** 함수도 사용 되지 않습니다.
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
 #include <string.h>
 ```
 
-또는
+로 구분하거나 여러
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY

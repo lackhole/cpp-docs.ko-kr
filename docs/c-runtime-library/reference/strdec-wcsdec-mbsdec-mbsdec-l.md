@@ -40,19 +40,19 @@ helpviewer_keywords:
 - wcsdec function
 - _mbsdec function
 ms.assetid: ae37c223-800f-48a9-ae8e-38c8d20af2dd
-ms.openlocfilehash: 7e88bcf5bf7ffc5eba6feecd545cda8f7950829c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a937f8fcd18dd62bb7c63cf60c250cf7986b69b7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353891"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500914"
 ---
-# <a name="strdec-wcsdec-mbsdec-mbsdecl"></a>_strdec, _wcsdec, _mbsdec, _mbsdec_l
+# <a name="_strdec-_wcsdec-_mbsdec-_mbsdec_l"></a>_strdec, _wcsdec, _mbsdec, _mbsdec_l
 
 문자열 포인터를 한 문자 뒤로 이동합니다.
 
 > [!IMPORTANT]
-> **mbsdec** 하 고 **mbsdec_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> Windows 런타임에서 실행 되는 응용 프로그램에서는 **mbsdec** 및 **mbsdec_l** 를 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -79,28 +79,28 @@ unsigned char *_mbsdec_l(
 ### <a name="parameters"></a>매개 변수
 
 *start*<br/>
-모든 문자에 대 한 포인터 (또는 **_mbsdec** 하 고 **_mbsdec_l**, 모든 멀티 바이트 문자의 첫 번째 바이트) 소스 문자열에서는 *시작* 앞에 야 *현재* 소스 문자열에서입니다.
+소스 문자열에 있는 모든 문자에 대 한 포인터 (또는 **_mbsdec** 및 **_mbsdec_l**의 경우 모든 멀티 바이트 문자의 첫 번째 바이트)입니다. *start* 는 소스 문자열에서 *current* 앞에와 야 합니다.
 
 *current*<br/>
-모든 문자에 대 한 포인터 (또는 **_mbsdec** 하 고 **_mbsdec_l**, 모든 멀티 바이트 문자의 첫 번째 바이트) 소스 문자열에서는 *현재* 따라야 *시작* 소스 문자열에서입니다.
+소스 문자열에 있는 모든 문자에 대 한 포인터 (또는 **_mbsdec** 및 **_mbsdec_l**의 경우 모든 멀티 바이트 문자의 첫 번째 바이트)입니다. *현재* 는 소스 문자열에서 *start* 다음에와 야 합니다.
 
 *locale*<br/>
 사용할 로캘입니다.
 
 ## <a name="return-value"></a>반환 값
 
-**_mbsdec**, **_mbsdec_l**합니다 **_strdec**, 및 **_wcsdec** 바로 앞에 오는 문자에 대 한 포인터를 반환할 각 *현재*; **_mbsdec** 반환 **NULL** 하는 경우의 값 *시작* 보다 크거나과 동일한 지 *현재*합니다. **_tcsdec** 이러한 함수 및 해당 반환 값 중 하나에 매핑되며 매핑에 따라 달라 집니다.
+**_mbsdec**, **_mbsdec_l**, **_strdec**및 **_wcsdec** 는 각각 *현재*바로 앞에 있는 문자에 대 한 포인터를 반환 합니다. *start* 의 값이 *current*의 값 보다 크거나 같으면 **_mbsdec** 가 **NULL** 을 반환 합니다. **_tcsdec** 는 이러한 함수 중 하나에 매핑되고 해당 반환 값은 매핑에 따라 다릅니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_mbsdec** 하 고 **_mbsdec_l** 함수는 바로 앞에 오는 멀티 바이트 문자의 첫 번째 바이트에 대 한 포인터를 반환 합니다. *현재* 포함 된 문자열에서 *시작*합니다.
+**_Mbsdec** 및 **_mbsdec_l** 함수는 *start*를 포함 하는 문자열에서 *current* 바로 앞에 오는 멀티 바이트 문자의 첫 번째 바이트에 대 한 포인터를 반환 합니다.
 
-출력 값의 설정이 적용 됩니다는 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 내용은 합니다.  **_mbsdec** 현재 사용 중인 로캘에 따라 멀티 바이트 문자 시퀀스를 인식 하는 동안 **_mbsdec_l** 대신 전달 된 로캘 매개 변수를 사용 하 여 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 영향을 받습니다. 자세한 내용은 [setlocale, _wsetlocale을](setlocale-wsetlocale.md) 참조 하세요.  **_mbsdec** 는 현재 사용 중인 로캘에 따라 멀티 바이트 문자 시퀀스를 인식 하는 반면 **_mbsdec_l** 은 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-하는 경우 *시작* 또는 *현재* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우이 함수를 반환 합니다 **EINVAL** 집합과 **errno** 하 **EINVAL**합니다.
+*Start* 또는 *current* 가 **NULL**이면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 > [!IMPORTANT]
-> 이러한 함수는 버퍼 오버런 위협에 노출될 수 있습니다. 버퍼 오버런은 불필요한 권한 상승을 발생시킬 수 있으므로 시스템 공격에 사용될 수 있습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> 이러한 함수는 버퍼 오버런 위협에 노출될 수 있습니다. 버퍼 오버런은 불필요한 권한 상승을 발생시킬 수 있으므로 시스템 공격에 사용될 수 있습니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -108,7 +108,7 @@ unsigned char *_mbsdec_l(
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsdec**|**_strdec**|**_mbsdec**|**_wcsdec**|
 
-**_strdec** 하 고 **_wcsdec** 싱글바이트 문자 및 와이드 문자 버전입니다 **_mbsdec** 하 고 **_mbsdec_l**합니다. **_strdec** 하 고 **_wcsdec** 이러한 매핑을 위해서만 제공 되 고 그렇지 않으면 사용할 수 없습니다.
+**_strdec** 및 **_wcsdec** 는 **_mbsdec** 및 **_mbsdec_l**의 싱글바이트 문자 및 와이드 문자 버전입니다. **_strdec** 및 **_wcsdec** 는이 매핑에만 제공 되며 그렇지 않으면 사용 하면 안 됩니다.
 
 자세한 내용은 [일반 텍스트 매핑 사용](../../c-runtime-library/using-generic-text-mappings.md) 및 [일반 텍스트 매핑](../../c-runtime-library/generic-text-mappings.md)을 참조하세요.
 
@@ -125,7 +125,7 @@ unsigned char *_mbsdec_l(
 
 ## <a name="example"></a>예제
 
-다음 예제는 사용 방법을 보여 줍니다 **_tcsdec**합니다.
+다음 예에서는 **_tcsdec**를 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // crt_tcsdec.cpp
@@ -151,7 +151,7 @@ int main()
 }
 ```
 
-다음 예제는 사용 방법을 보여 줍니다 **_mbsdec**합니다.
+다음 예에서는 **_mbsdec**를 사용 하는 방법을 보여 줍니다.
 
 ```cpp
 // crt_mbsdec.cpp

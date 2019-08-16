@@ -26,14 +26,14 @@ helpviewer_keywords:
 - mbstowcs_l function
 - mbstowcs function
 ms.assetid: 96696b27-e068-4eeb-8006-3f7a0546ae6d
-ms.openlocfilehash: b9178f64dd698ff517ea5b376ed19e97981c511d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cae1034d0bcb9789f5cb709399d4992de44cae9d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156657"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499776"
 ---
-# <a name="mbstowcs-mbstowcsl"></a>mbstowcs, _mbstowcs_l
+# <a name="mbstowcs-_mbstowcs_l"></a>mbstowcs, _mbstowcs_l
 
 멀티바이트 문자 시퀀스를 해당 와이드 문자 시퀀스로 변환합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md)을 참조하세요.
 
@@ -82,20 +82,20 @@ null로 끝나는 멀티바이트 문자 시퀀스의 주소입니다.
 
 ## <a name="return-value"></a>반환 값
 
-하는 경우 **mbstowcs** 소스 문자열을 성공적으로 변환 변환 된 멀티 바이트 문자의 수를 반환 합니다. 경우는 *wcstr* 인수가 **NULL**, 필요한 크기 (와이드 문자)는 대상 문자열을 반환 합니다. 하는 경우 **mbstowcs** 잘못 된 멀티 바이트 문자를 발견 하면-1을 반환 합니다. 반환 값이 *개수*, 와이드 문자 문자열의 null로 종료 되었습니다.
+**Mbstowcs** 가 원본 문자열을 성공적으로 변환 하는 경우 변환 된 멀티 바이트 문자 수를 반환 합니다. *Wcstr* 인수가 **NULL**이면 함수는 대상 문자열의 필요한 크기 (와이드 문자)를 반환 합니다. **Mbstowcs** 가 잘못 된 멀티 바이트 문자를 발견 하면-1을 반환 합니다. 반환 값이 *count*이면 와이드 문자열이 null로 종료 되지 않습니다.
 
 > [!IMPORTANT]
-> 되도록 *wcstr* 및 *mbstr* 겹치지 않는 올바르고 *개수* 올바르게 변환할 멀티 바이트 문자의 수를 반영 합니다.
+> *Wcstr* 및 *mbstr* 이 겹치지 않도록 하 고, 변환할 멀티 바이트 문자 수를 정확 하 게 반영 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **mbstowcs** 함수는 최대 개수까지 변환 *개수* 가리키는 멀티 바이트 문자 *mbstr* 된 해당 와이드 문자의 문자열로 현재 로캘에 따라 결정 됩니다. 결과 와이드 문자 문자열에 표시 된 주소에 저장 *wcstr*합니다. 일련의 호출 결과 비슷합니다 [mbtowc](mbtowc-mbtowc-l.md)합니다. 하는 경우 **mbstowcs** 때나 그 전에 싱글 바이트 null 문자 ('\0')를 발견 *개수* 로 변환 하 고 null 문자를 와이드 문자 null 문자 (L'\ \0')를 중지 합니다. 따라서 와이드 문자 문자열에 *wcstr* 는 null 종료 null 문자를 변환 하는 동안 발생 하는 경우에 합니다. 시퀀스에서 가리키는 경우 *wcstr* 하 고 *mbstr* 겹치는 경우 동작이 정의 되지 않습니다. 합니다.
+**Mbstowcs** 함수는 *mbstr* 가 가리키는 최대 개수의 멀티 바이트 문자를 현재 로캘에서 결정 되는 해당 와이드 문자의 문자열로 변환 합니다. *Wcstr*가 나타내는 주소에 결과 와이드 문자열을 저장 합니다. 결과는 [mbtowc](mbtowc-mbtowc-l.md)에 대 한 일련의 호출과 유사 합니다. **Mbstowcs** 가 전후에 단일 바이트 null 문자 (' \ 0 ')를 발견 하면 null 문자 를 와이드 문자 null 문자 (L ' \ 0 ')로 변환 하 고 중지 합니다. 따라서 *wcstr* 의 와이드 문자열은 변환 하는 동안 null 문자를 발견 하는 경우에만 null로 종결 됩니다. *Wcstr* 및 *mbstr* 가 가리키는 시퀀스가 겹치는 경우에는 동작이 정의 되지 않습니다.
 
-경우는 *wcstr* 인수가 **NULL**에 **mbstowcs** null 종결자를 포함 하지 않습니다 변환에서 초래 하는 와이드 문자 수를 반환 합니다. 올바른 값을 반환하려면 소스 문자열이 null로 끝나야 합니다. 결과 와이드 문자열이 null로 끝나야 하는 경우 반환된 값에 추가하세요.
+*Wcstr* 인수가 **null**이면 **mbstowcs** 는 null 종결자를 포함 하지 않고 변환 결과로 발생 하는 와이드 문자 수를 반환 합니다. 올바른 값을 반환하려면 소스 문자열이 null로 끝나야 합니다. 결과 와이드 문자열이 null로 끝나야 하는 경우 반환된 값에 추가하세요.
 
-경우는 *mbstr* 인수가 **NULL**, 이거나 *count* 는 > **INT_MAX**, 에설명된대로잘못된매개변수처리기가호출[ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. Errno로 설정 된 실행은 계속 하도록 허용 하는 경우 **EINVAL** 함수-1을 반환 합니다.
+*Mbstr* 인수가 **NULL**이거나 *count* >가 **INT_MAX**일 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 errno은 **EINVAL** 로 설정 되 고 함수는-1을 반환 합니다.
 
-**mbstowcs** 모든 로캘 종속 동작에 현재 로캘을 사용 **_mbstowcs_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**mbstowcs** 는 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_mbstowcs_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
@@ -212,4 +212,4 @@ Convert back to wide-character string:
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
 [wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
-[MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
+[MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>

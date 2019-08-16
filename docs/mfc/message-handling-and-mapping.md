@@ -6,30 +6,30 @@ helpviewer_keywords:
 - message handling [MFC]
 - message maps [MFC]
 ms.assetid: 62fe2a1b-944c-449d-a0f0-63c11ee0a3cb
-ms.openlocfilehash: 41f3432b3741019a787ee24b0f508fe8e65e0470
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0321d98d8b92af0b80259bc49e84e69b987577a4
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383973"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508237"
 ---
 # <a name="message-handling-and-mapping"></a>메시지 처리 및 매핑
 
-이 문서에서는 MFC 프레임 워크에서 명령과 메시지 처리 방법 및 연결 하는 방법에 해당 처리기 함수에 설명 합니다.
+이 문서에서는 MFC 프레임 워크에서 메시지 및 명령을 처리 하는 방법과이를 처리기 함수에 연결 하는 방법을 설명 합니다.
 
-Windows에 대 한 기존 프로그램을 Windows 메시지 창 프로시저에서 큰 switch 문에서 처리 됩니다. MFC 대신 사용 하 여 [메시지 맵이](../mfc/message-categories.md) 고유 클래스 멤버 함수에 직접 메시지를 매핑합니다. 메시지 맵은이 목적을 위해 가상 함수 보다 효율적이 고 메시지를 가장 적합 한 하 여 처리할 수 있도록 C++ 개체, 응용 프로그램, 문서, 뷰 및 등입니다. 단일 메시지 또는 메시지를 명령 Id의 범위를 매핑할 수도 있고 컨트롤 Id 수 있습니다.
+Windows 용 기존 프로그램에서 Windows 메시지는 창 프로시저의 긴 스위치 문에서 처리 됩니다. 대신 MFC에서는 [메시지 맵을](../mfc/message-categories.md) 사용 하 여 직접 메시지를 고유한 클래스 멤버 함수에 매핑합니다. 메시지 맵은이 목적을 위해 가상 함수 보다 더 효율적 이며 응용 프로그램, 문서, 보기 등의 가장 적합 C++ 한 개체에서 메시지를 처리할 수 있도록 합니다. 단일 메시지 또는 메시지, 명령 Id 또는 컨트롤 Id의 범위를 매핑할 수 있습니다.
 
-WM_COMMAND 메시지-메뉴나 도구 모음 단추 액셀러레이터 키에서 일반적으로 생성 된-메시지 맵 메커니즘을 사용할 수도 있습니다. MFC는 표준 정의 하며 [라우팅](../mfc/command-routing.md) 응용 프로그램 간에 명령 메시지의 프레임 창, 뷰 및 프로그램에서 액티브 문서. 해야 할 경우이 라우팅은 재정의할 수 있습니다.
+일반적으로 메뉴, 도구 모음 단추 또는 액셀러레이터에 의해 생성 되는 WM_COMMAND 메시지는 메시지 맵 메커니즘도 사용 합니다. MFC는 프로그램의 응용 프로그램, 프레임 창, 뷰 및 활성 문서 간에 명령 메시지의 표준 [라우팅을](../mfc/command-routing.md) 정의 합니다. 필요한 경우이 라우팅을 재정의할 수 있습니다.
 
-메시지 맵 (예: 메뉴 및 도구 모음 단추), 사용자 인터페이스 개체를 업데이트 하는 방법을 제공 하거나 현재 컨텍스트에 맞게 해제 합니다.
+메시지 맵은 사용자 인터페이스 개체 (예: 메뉴 및 도구 모음 단추)를 업데이트 하 고 현재 컨텍스트에 맞게 사용 하거나 사용 하지 않도록 설정 하는 방법도 제공 합니다.
 
-메시지 및 Windows 메시지 큐에 대 한 일반적인 정보를 참조 하세요 [메시지와 메시지 큐](/windows/desktop/winmsg/messages-and-message-queues) Windows SDK에 있습니다.
+Windows의 메시지 및 메시지 큐에 대 한 일반적인 내용은 Windows SDK [메시지 및](/windows/win32/winmsg/messages-and-message-queues) 메시지 큐를 참조 하십시오.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [프레임워크의 메시지 및 명령](../mfc/messages-and-commands-in-the-framework.md)
 
-- [프레임 워크가 메시지 처리기를 호출 하는 방법](../mfc/how-the-framework-calls-a-handler.md)
+- [프레임 워크에서 메시지 처리기를 호출 하는 방법](../mfc/how-the-framework-calls-a-handler.md)
 
 - [프레임워크가 메시지 맵을 검색하는 방법](../mfc/how-the-framework-searches-message-maps.md)
 

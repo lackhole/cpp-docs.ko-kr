@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CPropertyPage [MFC], SetModified
 - CPropertyPage [MFC], m_psp
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
-ms.openlocfilehash: f9116306fd2bd6145096b055025bd4dd2075b0c1
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 6a6223708c83f7a5b3e6532a2016660d558f8270
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916884"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502802"
 ---
 # <a name="cpropertypage-class"></a>CPropertyPage 클래스
 
@@ -67,11 +67,11 @@ class CPropertyPage : public CDialog
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CPropertyPage::CancelToClose](#canceltoclose)|모달 속성 시트의 페이지에서 복구할 수 없는 변경 후 취소 단추를 사용 하지 않도록 설정 하 여 확인 단추를 변경 합니다.|
 |[CPropertyPage::Construct](#construct)|`CPropertyPage` 개체를 생성합니다. 런타임에 `Construct` 매개 변수를 지정 하려면를 사용 하 고, 배열을 사용 하는 경우를 사용 합니다.|
-|[CPropertyPage::GetPSP](#getpsp)|`CPropertyPage` 개체와 연결 된 Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) 구조체를 검색 합니다.|
+|[CPropertyPage::GetPSP](#getpsp)|`CPropertyPage` 개체와 연결 된 Windows [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) 구조체를 검색 합니다.|
 |[CPropertyPage::OnApply](#onapply)|지금 적용 단추를 클릭할 때 프레임 워크에서 호출 됩니다.|
 |[CPropertyPage::OnCancel](#oncancel)|취소 단추를 클릭할 때 프레임 워크에서 호출 됩니다.|
 |[CPropertyPage::OnKillActive](#onkillactive)|현재 페이지가 더 이상 활성 페이지가 아닌 경우 프레임 워크에서 호출 됩니다. 여기에서 데이터 유효성 검사를 수행 합니다.|
@@ -89,7 +89,7 @@ class CPropertyPage : public CDialog
 
 |이름|Description|
 |----------|-----------------|
-|[CPropertyPage::m_psp](#m_psp)|Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) 구조체입니다. 기본 속성 페이지 매개 변수에 대 한 액세스를 제공 합니다.|
+|[CPropertyPage::m_psp](#m_psp)|Windows [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) 구조체입니다. 기본 속성 페이지 매개 변수에 대 한 액세스를 제공 합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -261,7 +261,7 @@ CPropertyPage(
 
 ##  <a name="getpsp"></a>  CPropertyPage::GetPSP
 
-`CPropertyPage` 개체와 연결 된 Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) 구조체를 검색 합니다.
+`CPropertyPage` 개체와 연결 된 Windows [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) 구조체를 검색 합니다.
 
 ```
 const PROPSHEETPAGE& GetPSP() const;
@@ -275,7 +275,7 @@ PROPSHEETPAGE& GetPSP();
 
 ##  <a name="m_psp"></a>  CPropertyPage::m_psp
 
-`m_psp`는 해당 멤버가 [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2)의 특성을 저장 하는 구조체입니다.
+`m_psp`는 해당 멤버가 [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2)의 특성을 저장 하는 구조체입니다.
 
 ```
 PROPSHEETPAGE m_psp;
@@ -311,7 +311,7 @@ virtual BOOL OnApply();
 
 `OnApply` 호출`OnOK`의 기본 구현입니다.
 
-사용자가 속성 시트에서 지금 적용 또는 확인 단추를 누를 때 전송 되는 알림 메시지에 대 한 자세한 내용은 Windows SDK의 [PSN_APPLY](/windows/desktop/Controls/psn-apply) 를 참조 하세요.
+사용자가 속성 시트에서 지금 적용 또는 확인 단추를 누를 때 전송 되는 알림 메시지에 대 한 자세한 내용은 Windows SDK의 [PSN_APPLY](/windows/win32/Controls/psn-apply) 를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -367,7 +367,7 @@ virtual void OnOK();
 
 ### <a name="remarks"></a>설명
 
-사용자가 확인 또는 지금 적용 단추를 선택 하면 프레임 워크는 속성 페이지에서 [PSN_APPLY](/windows/desktop/Controls/psn-apply) 알림을 받습니다. `OnOK` [CPropertySheet::P ressbutton](../../mfc/reference/cpropertysheet-class.md#pressbutton) 을 호출 하는 경우에 대 한 호출을 수행 하지 않습니다 .이 경우 속성 페이지에서 알림을 보내지 않기 때문입니다.
+사용자가 확인 또는 지금 적용 단추를 선택 하면 프레임 워크는 속성 페이지에서 [PSN_APPLY](/windows/win32/Controls/psn-apply) 알림을 받습니다. `OnOK` [CPropertySheet::P ressbutton](../../mfc/reference/cpropertysheet-class.md#pressbutton) 을 호출 하는 경우에 대 한 호출을 수행 하지 않습니다 .이 경우 속성 페이지에서 알림을 보내지 않기 때문입니다.
 
 사용자가 전체 속성 시트를 닫을 때 현재 활성화 된 페이지와 관련 된 추가 동작을 구현 하려면이 멤버 함수를 재정의 합니다.
 
@@ -481,7 +481,7 @@ virtual BOOL OnWizardFinish();
 
 이 멤버 함수를 재정의 하 여 마침 단추를 누를 때 사용자가 수행 해야 하는 동작을 지정할 수 있습니다. 이 함수를 재정의 하는 경우 FALSE를 반환 하 여 속성 시트가 제거 되지 않도록 합니다.
 
-사용자가 마법사 속성 시트에서 마침 단추를 누를 때 전송 되는 알림 메시지에 대 한 자세한 내용은 Windows SDK의 [PSN_WIZFINISH](/windows/desktop/Controls/psn-wizfinish) 를 참조 하십시오.
+사용자가 마법사 속성 시트에서 마침 단추를 누를 때 전송 되는 알림 메시지에 대 한 자세한 내용은 Windows SDK의 [PSN_WIZFINISH](/windows/win32/Controls/psn-wizfinish) 를 참조 하십시오.
 
 마법사 유형 속성 시트를 만드는 방법에 대 한 자세한 내용은 [CPropertySheet:: SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode)를 참조 하세요.
 

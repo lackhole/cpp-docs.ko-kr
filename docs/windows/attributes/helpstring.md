@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - helpstring attribute [C++]
 ms.assetid: 0401e905-a63e-4fad-98d0-d1efea111966
-ms.openlocfilehash: 623b2c7fb4ce7c3e5de87d21f012d008720fdee2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 47a07ee94ad774bde46dce00ea46612fae3a4eca
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409592"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490871"
 ---
 # <a name="helpstring"></a>helpstring
 
@@ -26,15 +26,15 @@ ms.locfileid: "62409592"
 ### <a name="parameters"></a>매개 변수
 
 *string*<br/>
-텍스트 도움말 문자열입니다.
+도움말 문자열의 텍스트입니다.
 
 ## <a name="remarks"></a>설명
 
-**helpstring** C++ 특성에 동일한 기능을 합니다 [helpstring](/windows/desktop/Midl/helpstring) MIDL 특성입니다.
+**Helpstring** C++ 특성은 [helpstring](/windows/win32/Midl/helpstring) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [defaultvalue](defaultvalue.md) 사용 하는 방법의 예제 **helpstring**합니다.
+**Helpstring**를 사용 하는 방법에 대 한 예제는 [defaultvalue](defaultvalue.md) 의 예제를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -42,7 +42,7 @@ ms.locfileid: "62409592"
 
 |||
 |-|-|
-|**적용 대상**|**인터페이스**하십시오 **typedef**를 **클래스**, 메서드, 속성|
+|**적용 대상**|**인터페이스**, **typedef**, **클래스**, 메서드, 속성|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|

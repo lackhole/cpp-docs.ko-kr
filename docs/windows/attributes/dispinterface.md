@@ -1,17 +1,17 @@
 ---
-title: dispinterface (C++ COM 특성)
+title: 특성 (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.dispinterface
 helpviewer_keywords:
 - dispinterface attribute
 ms.assetid: 61c5a4a1-ae92-47e9-8ee4-f847be90172b
-ms.openlocfilehash: 6fd5010dc20d03c518206d81919e3beafbcaa9a9
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 6360c5e97eae19d7b2d74b3b43d4feae07d4b091
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346297"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501620"
 ---
 # <a name="dispinterface"></a>dispinterface
 
@@ -29,7 +29,7 @@ ms.locfileid: "64346297"
 
 기본 클래스를 지정하지 않으면 디스패치 인터페이스가 `IDispatch`에서 파생됩니다. 디스패치 인터페이스의 멤버에 대한 [id](id.md) 를 지정해야 합니다.
 
-MIDL 문서에 있는 [dispinterface](/windows/desktop/Midl/dispinterface) 의 사용 예:
+MIDL 문서에 있는 [dispinterface](/windows/win32/Midl/dispinterface) 의 사용 예:
 
 ```cpp
 dispinterface helloPro

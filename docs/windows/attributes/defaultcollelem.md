@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - defaultcollelem attribute
 ms.assetid: 3dbbd293-8b83-4f70-a36b-64cc1d0b6713
-ms.openlocfilehash: be4ea7097bd811444fca050525338931867998d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c8848562c1470198d3f2a1b6f285510bcbb43d7c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148057"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501661"
 ---
 # <a name="defaultcollelem"></a>defaultcollelem
 
-Visual Basic 코드 최적화를 위해 사용 합니다.
+Visual Basic 코드 최적화에 사용 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ Visual Basic 코드 최적화를 위해 사용 합니다.
 
 ## <a name="remarks"></a>설명
 
-**defaultcollelem** C++ 특성에 동일한 기능을 합니다 [defaultcollelem](/windows/desktop/Midl/defaultcollelem) MIDL 특성입니다.
+**Defaultcollelem** C++ 특성은 [defaultcollelem](/windows/win32/Midl/defaultcollelem) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-다음 코드를 사용 하 여 인터페이스 메서드를 표시 합니다 **defaultcollelem** 특성:
+다음 코드에서는 **defaultcollelem** 특성을 사용 하는 인터페이스 메서드를 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_defaultcollelem.cpp

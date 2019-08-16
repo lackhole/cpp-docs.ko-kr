@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4312
 ms.assetid: 541906ed-4f62-4bcb-947f-cf9ae7411bcb
-ms.openlocfilehash: 666df7904a7aac88983af40d31a67271beaa0b1f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1983d7b89688568b8152372328216c2a814f7bc0
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408318"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510086"
 ---
 # <a name="compiler-warning-level-1-c4312"></a>컴파일러 경고(수준 1) C4312
 
@@ -21,7 +21,7 @@ ms.locfileid: "62408318"
 
 이 변환은 부호 확장이 발생할 경우 32비트에 맞는 포인터 값에서도 안전하지 않을 수 있습니다. 음의 32비트 정수가 64비트 포인터 형식에 할당될 경우 부호 확장으로 인해 포인터 값이 정수의 값과 다른 메모리 주소를 참조할 수 있습니다.
 
-이 경고는 64비트 컴파일 대상에 대해서만 표시됩니다. 자세한 내용은 [포인터를 사용 하 여 규칙](/windows/desktop/WinProg64/rules-for-using-pointers)합니다.
+이 경고는 64비트 컴파일 대상에 대해서만 표시됩니다. 자세한 내용은 [포인터 사용에 대 한 규칙](/windows/win32/WinProg64/rules-for-using-pointers)을 참조 하세요.
 
 다음 코드 예제에서는 64비트 대상에 대해 컴파일되는 경우의 C4312를 생성합니다.
 

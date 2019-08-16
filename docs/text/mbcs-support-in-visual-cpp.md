@@ -20,12 +20,12 @@ helpviewer_keywords:
 - Input Method Editor [C++]
 - MBCS [C++], enabling
 ms.assetid: 6179f6b7-bc61-4a48-9267-fb7951223e38
-ms.openlocfilehash: 3f57e9feac7f129b3fb8653c7b1a2eacb021bf29
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b5f2b6dd56d3a755ee73058c024152e12157a6bd
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410605"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501939"
 ---
 # <a name="mbcs-support-in-visual-c"></a>Visual C++에서 MBCS 지원
 
@@ -43,11 +43,11 @@ Visual C++의 각 기능에서 더블 바이트 문자를 사용할 수 있습�
 
 ALT + \` 키 조합으로 IME를 활성화하면 버튼들과 변환 창(Conversion window)이 표시됩니다. 응용 프로그램 창을 텍스트 삽입 지점에 놓습니다. 응용 프로그램은 창의 새 위치나 크기에 맞게 변환 창의 위치를 변경하여 `WM_MOVE`와 `WM_SIZE` 메세지를 처리해야 합니다.
 
-응용 프로그램에서 사용자가 일본어 한자(간지)를 입력할 수 있도록 하려면 응용 프로그램에서 Windows IME 메세지를 처리해야 합니다. IME 프로그래밍에 대한 자세한 내용은 [입력 관리자](/windows/desktop/intl/input-method-manager)를 참조합니다.
+응용 프로그램에서 사용자가 일본어 한자(간지)를 입력할 수 있도록 하려면 응용 프로그램에서 Windows IME 메세지를 처리해야 합니다. IME 프로그래밍에 대한 자세한 내용은 [입력 관리자](/windows/win32/intl/input-method-manager)를 참조합니다.
 
 ## <a name="visual-c-debugger"></a>Visual C++ 디버거
 
-Visual C++ 디버거를 이용해 IME 메시지에 중단점을 설정할 수 있으며,  메모리 창에 더블 바이트 문자를 표시할 수 있습니다.
+Visual C++ 디버거를 이용해 IME 메시지에 중단점을 설정할 수 있으며, 메모리 창에 더블 바이트 문자를 표시할 수 있습니다.
 
 ## <a name="command-line-tools"></a>명령줄 도구
 

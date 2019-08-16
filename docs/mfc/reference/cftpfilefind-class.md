@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CFtpFileFind [MFC], FindNextFile
 - CFtpFileFind [MFC], GetFileURL
 ms.assetid: 9667cf01-657f-4b11-b9db-f11e5a7b4e4c
-ms.openlocfilehash: 9afe2bf563ffa80a3238548d75efa69178fa1f64
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 2f4a394e29be135cac95edf6f504d8b066f53414
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916063"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506240"
 ---
 # <a name="cftpfilefind-class"></a>CFtpFileFind 클래스
 
@@ -61,7 +61,7 @@ class CFtpFileFind : public CFileFind
 
 [!code-cpp[NVC_MFCWinInet#8](../../mfc/codesnippet/cpp/cftpfilefind-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -121,7 +121,7 @@ virtual BOOL FindFile(
 
 - INTERNET_FLAG_DONT_CACHE는 로컬로 또는 게이트웨이에서 데이터를 캐시 하지 않습니다.
 
-- INTERNET_FLAG_RAW_DATA는 기본값을 재정의 하 여 원시 데이터 (FTP의 [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조체)를 반환 합니다.
+- INTERNET_FLAG_RAW_DATA는 기본값을 재정의 하 여 원시 데이터 (FTP의 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조체)를 반환 합니다.
 
 - INTERNET_FLAG_SECURE는 SSL(Secure Sockets Layer) 또는 PCT를 사용 하 여 통신 하는 트랜잭션을 보호 합니다. 이 플래그는 HTTP 요청에만 적용 됩니다.
 
@@ -129,7 +129,7 @@ virtual BOOL FindFile(
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -149,13 +149,13 @@ virtual BOOL FindNextFile();
 
 ### <a name="return-value"></a>반환 값
 
-파일이 더 있는 경우 0이 아닙니다. 찾은 파일이 디렉터리의 마지막 파일 이거나 오류가 발생 한 경우 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다. 찾은 파일이 디렉터리의 마지막 파일이 고 일치 하는 파일을 찾을 수 없는 경우이 함수는 `GetLastError` ERROR_NO_MORE_FILES를 반환 합니다.
+파일이 더 있는 경우 0이 아닙니다. 찾은 파일이 디렉터리의 마지막 파일 이거나 오류가 발생 한 경우 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다. 찾은 파일이 디렉터리의 마지막 파일이 고 일치 하는 파일을 찾을 수 없는 경우이 함수는 `GetLastError` ERROR_NO_MORE_FILES를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
 특성 함수를 호출 하기 전에이 함수를 한 번 이상 호출 해야 합니다 ( [Cfilefind:: FindNextFile](../../mfc/reference/cfilefind-class.md#findnextfile)참조).
 
-`FindNextFile`Win32 함수 [Findnextfile](/windows/desktop/api/fileapi/nf-fileapi-findnextfilea)을 래핑합니다.
+`FindNextFile`Win32 함수 [Findnextfile](/windows/win32/api/fileapi/nf-fileapi-findnextfilew)을 래핑합니다.
 
 ### <a name="example"></a>예제
 

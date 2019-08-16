@@ -56,12 +56,12 @@ helpviewer_keywords:
 - CFileFind [MFC], CloseContext
 - CFileFind [MFC], m_pTM
 ms.assetid: 9990068c-b023-4114-9580-a50182d15240
-ms.openlocfilehash: f2dfd3421d2154b4894b62b71d7993c483a77c53
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 2ec8c50a317a09e97a212e8cd7b9be1b58272af9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916131"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506566"
 ---
 # <a name="cfilefind-class"></a>CFileFind 클래스
 
@@ -77,7 +77,7 @@ class CFileFind : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CFileFind::CFileFind](#cfilefind)|`CFileFind` 개체를 생성합니다.|
 
@@ -110,13 +110,13 @@ class CFileFind : public CObject
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CFileFind::CloseContext](#closecontext)|현재 검색 핸들에서 지정 된 파일을 닫습니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CFileFind::m_pTM](#m_ptm)|`CAtlTransactionManager` 개체에 대한 포인터입니다.|
 
@@ -134,7 +134,7 @@ class CFileFind : public CObject
 
 및 기타 wininet 클래스를 사용 `CFileFind` 하는 방법에 대 한 자세한 내용은 wininet을 [사용한 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)문서를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -212,7 +212,7 @@ virtual BOOL FindFile(
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -270,7 +270,7 @@ virtual BOOL FindNextFile();
 
 ### <a name="return-value"></a>반환 값
 
-파일이 더 있는 경우 0이 아닙니다. 찾은 파일이 디렉터리의 마지막 파일 이거나 오류가 발생 한 경우 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다. 찾은 파일이 디렉터리의 마지막 파일이 고 일치 하는 파일을 찾을 수 없는 경우이 함수는 `GetLastError` ERROR_NO_MORE_FILES를 반환 합니다.
+파일이 더 있는 경우 0이 아닙니다. 찾은 파일이 디렉터리의 마지막 파일 이거나 오류가 발생 한 경우 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다. 찾은 파일이 디렉터리의 마지막 파일이 고 일치 하는 파일을 찾을 수 없는 경우이 함수는 `GetLastError` ERROR_NO_MORE_FILES를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -314,7 +314,7 @@ virtual BOOL FindNextFile();
 
 - [MatchesMask](#matchesmask)
 
-`FindNextFile`Win32 함수 [Findnextfile](/windows/desktop/api/fileapi/nf-fileapi-findnextfilea)을 래핑합니다.
+`FindNextFile`Win32 함수 [Findnextfile](/windows/win32/api/fileapi/nf-fileapi-findnextfilew)을 래핑합니다.
 
 ### <a name="example"></a>예제
 
@@ -332,7 +332,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ### <a name="parameters"></a>매개 변수
 
 *pTimeStamp*<br/>
-파일이 만들어진 시간을 포함 하는 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
+파일이 만들어진 시간을 포함 하는 [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
 
 *refTime*<br/>
 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체에 대 한 참조입니다.
@@ -346,7 +346,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 를 호출 `GetCreationTime`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
 > [!NOTE]
->  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
+>  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -473,7 +473,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체에 대 한 참조입니다.
 
 *pTimeStamp*<br/>
-파일에 마지막으로 액세스 한 시간을 포함 하는 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
+파일에 마지막으로 액세스 한 시간을 포함 하는 [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -484,7 +484,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 를 호출 `GetLastAccessTime`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
 > [!NOTE]
->  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
+>  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -502,7 +502,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ### <a name="parameters"></a>매개 변수
 
 *pTimeStamp*<br/>
-파일에 마지막으로 쓴 시간을 포함 하는 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
+파일에 마지막으로 쓴 시간을 포함 하는 [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
 
 *refTime*<br/>
 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체에 대 한 참조입니다.
@@ -516,7 +516,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 를 호출 `GetLastWriteTime`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
 > [!NOTE]
->  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [Win32_Find_Data](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
+>  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -538,7 +538,7 @@ ULONGLONG GetLength() const;
 
 를 호출 `GetLength`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
-`GetLength`는 Win32 구조 [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 를 사용 하 여 파일 크기 (바이트)의 값을 가져오고 반환 합니다.
+`GetLength`는 Win32 구조 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 를 사용 하 여 파일 크기 (바이트)의 값을 가져오고 반환 합니다.
 
 > [!NOTE]
 >  MFC 7.0에서 `GetLength` 는 64 비트 정수 형식을 지원 합니다. 이전에 라이브러리의 최신 버전을 사용 하 여 빌드한 기존 코드는 잘림 경고를 발생 시킬 수 있습니다.
@@ -583,7 +583,7 @@ BOOL IsArchived() const;
 
 ### <a name="remarks"></a>설명
 
-응용 프로그램은 FILE_ATTRIBUTE_ARCHIVE를 사용 하 여 백업 또는 제거 되는 보관 파일을 [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조에서 식별 된 파일 특성으로 표시 합니다.
+응용 프로그램은 FILE_ATTRIBUTE_ARCHIVE를 사용 하 여 백업 또는 제거 되는 보관 파일을 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조에서 식별 된 파일 특성으로 표시 합니다.
 
 를 호출 `IsArchived`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
@@ -607,7 +607,7 @@ BOOL IsCompressed() const;
 
 ### <a name="remarks"></a>설명
 
-압축 된 파일은 FILE_ATTRIBUTE_COMPRESSED로 표시 되며 파일 특성은 [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조에서 식별 됩니다. 파일의 경우이 특성은 파일의 모든 데이터가 압축 됨을 나타냅니다. 디렉터리의 경우이 특성은 압축이 새로 만든 파일 및 하위 디렉터리에 대 한 기본값 임을 나타냅니다.
+압축 된 파일은 FILE_ATTRIBUTE_COMPRESSED로 표시 되며 파일 특성은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조에서 식별 됩니다. 파일의 경우이 특성은 파일의 모든 데이터가 압축 됨을 나타냅니다. 디렉터리의 경우이 특성은 압축이 새로 만든 파일 및 하위 디렉터리에 대 한 기본값 임을 나타냅니다.
 
 를 호출 `IsCompressed`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
@@ -631,7 +631,7 @@ BOOL IsDirectory() const;
 
 ### <a name="remarks"></a>설명
 
-디렉터리인 파일은 [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조에서 식별 된 FILE_ATTRIBUTE_DIRECTORY 파일 특성으로 표시 됩니다.
+디렉터리인 파일은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조에서 식별 된 FILE_ATTRIBUTE_DIRECTORY 파일 특성으로 표시 됩니다.
 
 를 호출 `IsDirectory`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
@@ -677,7 +677,7 @@ BOOL IsHidden() const;
 
 ### <a name="remarks"></a>설명
 
-FILE_ATTRIBUTE_HIDDEN로 표시 되는 숨겨진 파일은 [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조에서 식별 된 파일 특성입니다. 숨겨진 파일은 일반 디렉터리 목록에 포함 되지 않습니다.
+FILE_ATTRIBUTE_HIDDEN로 표시 되는 숨겨진 파일은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조에서 식별 된 파일 특성입니다. 숨겨진 파일은 일반 디렉터리 목록에 포함 되지 않습니다.
 
 를 호출 `IsHidden`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
@@ -701,7 +701,7 @@ BOOL IsNormal() const;
 
 ### <a name="remarks"></a>설명
 
-FILE_ATTRIBUTE_NORMAL로 표시 된 파일은 [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조체로 식별 되는 파일 특성입니다. 일반 파일에는 다른 특성이 설정 되지 않습니다. 다른 모든 파일 특성은이 특성을 재정의 합니다.
+FILE_ATTRIBUTE_NORMAL로 표시 된 파일은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조체로 식별 되는 파일 특성입니다. 일반 파일에는 다른 특성이 설정 되지 않습니다. 다른 모든 파일 특성은이 특성을 재정의 합니다.
 
 를 호출 `IsNormal`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
@@ -725,7 +725,7 @@ BOOL IsReadOnly() const;
 
 ### <a name="remarks"></a>설명
 
-읽기 전용 파일은 FILE_ATTRIBUTE_READONLY로 표시 되며 파일 특성은 [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조에서 식별 됩니다. 응용 프로그램은 이러한 파일을 읽을 수 있지만 파일에 쓰거나 삭제할 수 없습니다.
+읽기 전용 파일은 FILE_ATTRIBUTE_READONLY로 표시 되며 파일 특성은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조에서 식별 됩니다. 응용 프로그램은 이러한 파일을 읽을 수 있지만 파일에 쓰거나 삭제할 수 없습니다.
 
 를 호출 `IsReadOnly`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
@@ -749,7 +749,7 @@ BOOL IsSystem() const;
 
 ### <a name="remarks"></a>설명
 
-시스템 파일은 FILE_ATTRIBUTE_SYSTEM,, [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조에서 식별 된 파일 특성으로 표시 됩니다. 시스템 파일이의 일부 이거나 운영 체제에서 독점적으로 사용 되는 경우
+시스템 파일은 FILE_ATTRIBUTE_SYSTEM,, [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조에서 식별 된 파일 특성으로 표시 됩니다. 시스템 파일이의 일부 이거나 운영 체제에서 독점적으로 사용 되는 경우
 
 를 호출 `IsSystem`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
@@ -773,7 +773,7 @@ BOOL IsTemporary() const;
 
 ### <a name="remarks"></a>설명
 
-임시 파일은 FILE_ATTRIBUTE_TEMPORARY로 표시 되며 파일 특성은 [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조에서 식별 됩니다. 임시 파일은 임시 저장소에 사용 됩니다. 응용 프로그램은 반드시 필요한 경우에만 파일에 써야 합니다. 파일을 곧 삭제 하기 때문에 대부분의 파일 데이터는 미디어에 플러시되지 않고 메모리에 유지 됩니다.
+임시 파일은 FILE_ATTRIBUTE_TEMPORARY로 표시 되며 파일 특성은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조에서 식별 됩니다. 임시 파일은 임시 저장소에 사용 됩니다. 응용 프로그램은 반드시 필요한 경우에만 파일에 써야 합니다. 파일을 곧 삭제 하기 때문에 대부분의 파일 데이터는 미디어에 플러시되지 않고 메모리에 유지 됩니다.
 
 를 호출 `IsTemporary`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
@@ -804,7 +804,7 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
 ### <a name="parameters"></a>매개 변수
 
 *dwMask*<br/>
-찾은 파일에 대해 [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조에서 식별 된 하나 이상의 파일 특성을 지정 합니다. 여러 특성을 검색 하려면 비트 or (&#124;) 연산자를 사용 합니다. 다음 특성을 임의로 조합 하 여 사용할 수 있습니다.
+찾은 파일에 대해 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조에서 식별 된 하나 이상의 파일 특성을 지정 합니다. 여러 특성을 검색 하려면 비트 or (&#124;) 연산자를 사용 합니다. 다음 특성을 임의로 조합 하 여 사용할 수 있습니다.
 
 - FILE_ATTRIBUTE_ARCHIVE 파일은 보관 파일입니다. 응용 프로그램은이 특성을 사용 하 여 파일을 백업 또는 제거로 표시 합니다.
 
@@ -824,7 +824,7 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
 
 ### <a name="remarks"></a>설명
 

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CGopherFileFind [MFC], GetScreenName
 - CGopherFileFind [MFC], IsDots
 ms.assetid: 8465a979-6323-496d-ab4b-e81383fb999d
-ms.openlocfilehash: 31b013a14f24dcd59b9e7f23bc5284d882039990
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 55c40fc04934f00ccb541a01cce611d9532bee1a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916184"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506180"
 ---
 # <a name="cgopherfilefind-class"></a>CGopherFileFind 클래스
 
@@ -56,7 +56,7 @@ class CGopherFileFind : public CFileFind
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CGopherFileFind::FindFile](#findfile)|Gopher 서버에서 파일을 찾습니다.|
 |[CGopherFileFind::FindNextFile](#findnextfile)|[Findfile](#findfile)에 대 한 이전 호출에서 파일 검색을 계속 합니다.|
@@ -161,7 +161,7 @@ virtual BOOL FindFile(
 
 ### <a name="return-value"></a>반환 값
 
-성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
+성공하면 0이 아니고, 그렇지 않으면 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -177,7 +177,7 @@ virtual BOOL FindNextFile();
 
 ### <a name="return-value"></a>반환 값
 
-파일이 더 있는 경우 0이 아닙니다. 찾은 파일이 디렉터리의 마지막 파일 이거나 오류가 발생 한 경우 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다. 찾은 파일이 디렉터리의 마지막 파일이 고 일치 하는 파일을 찾을 수 없는 경우이 함수는 `GetLastError` ERROR_NO_MORE_FILES를 반환 합니다.
+파일이 더 있는 경우 0이 아닙니다. 찾은 파일이 디렉터리의 마지막 파일 이거나 오류가 발생 한 경우 0입니다. 확장 오류 정보를 가져오려면 Win32 함수 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다. 찾은 파일이 디렉터리의 마지막 파일이 고 일치 하는 파일을 찾을 수 없는 경우이 함수는 `GetLastError` ERROR_NO_MORE_FILES를 반환 합니다.
 
 ##  <a name="getcreationtime"></a>  CGopherFileFind::GetCreationTime
 
@@ -191,7 +191,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ### <a name="parameters"></a>매개 변수
 
 *pTimeStamp*<br/>
-파일이 만들어진 시간을 포함 하는 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
+파일이 만들어진 시간을 포함 하는 [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
 
 *refTime*<br/>
 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체에 대 한 참조입니다.
@@ -205,7 +205,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 를 호출 `GetCreationTime`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
 > [!NOTE]
->  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
+>  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
 
 ##  <a name="getlastaccesstime"></a>  CGopherFileFind::GetLastAccessTime
 
@@ -222,7 +222,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체에 대 한 참조입니다.
 
 *pTimeStamp*<br/>
-파일에 마지막으로 액세스 한 시간을 포함 하는 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
+파일에 마지막으로 액세스 한 시간을 포함 하는 [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -233,7 +233,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 를 호출 `GetLastAccessTime`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
 > [!NOTE]
->  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
+>  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
 
 ##  <a name="getlastwritetime"></a>  CGopherFileFind::GetLastWriteTime
 
@@ -247,7 +247,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ### <a name="parameters"></a>매개 변수
 
 *pTimeStamp*<br/>
-파일에 마지막으로 쓴 시간을 포함 하는 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
+파일에 마지막으로 쓴 시간을 포함 하는 [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) 구조체에 대 한 포인터입니다.
 
 *refTime*<br/>
 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체에 대 한 참조입니다.
@@ -261,7 +261,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 를 호출 `GetLastWriteTime`하기 전에 [findnextfile](#findnextfile) 을 한 번 이상 호출 해야 합니다.
 
 > [!NOTE]
->  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
+>  모든 파일 시스템에서 동일한 의미 체계를 사용 하 여이 함수에서 반환 되는 타임 스탬프를 구현 하는 것은 아닙니다. 이 함수는 기본 파일 시스템이 나 서버가 시간 특성을 유지 하는 것을 지원 하지 않는 경우 다른 타임 스탬프 함수에서 반환 된 것과 동일한 값을 반환할 수 있습니다. 시간 형식에 대 한 자세한 내용은 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 구조체를 참조 하세요. 일부 운영 체제에서 반환 된 시간은 파일이 있는 컴퓨터의 로컬 표준 시간대에 있습니다. 자세한 내용은 Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API를 참조 하세요.
 
 ##  <a name="getlength"></a>  CGopherFileFind::GetLength
 
@@ -277,7 +277,7 @@ virtual ULONGLONG GetLength() const;
 
 ### <a name="remarks"></a>설명
 
-`GetLength`Win32 구조 [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) 를 사용 하 여 파일 크기 값 (바이트)을 가져옵니다.
+`GetLength`Win32 구조 [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) 를 사용 하 여 파일 크기 값 (바이트)을 가져옵니다.
 
 > [!NOTE]
 >  MFC 7.0에서 `GetLength` 는 64 비트 정수 형식을 지원 합니다. 이전에이 라이브러리의 최신 버전을 사용 하 여 빌드한 기존 코드를 사용 하면 잘림 경고가 발생할 수 있습니다.

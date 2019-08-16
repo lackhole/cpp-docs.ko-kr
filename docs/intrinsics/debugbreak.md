@@ -8,14 +8,14 @@ helpviewer_keywords:
 - breakpoints, __debugbreak intrinsic
 - __debugbreak intrinsic
 ms.assetid: 1d1e1c0c-891a-4613-ae4b-d790094ba830
-ms.openlocfilehash: 97932dfe0e187a13b72ae5fe70d761224721c3ff
-ms.sourcegitcommit: 1acb6755e11379026a96f63facac4d33f4dc47ae
+ms.openlocfilehash: ed75b94e8bf0aca9369c56f23e8ff00ea6953642
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67314249"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509506"
 ---
-# <a name="debugbreak"></a>__debugbreak
+# <a name="__debugbreak"></a>__debugbreak
 
 **Microsoft 전용**
 
@@ -35,12 +35,12 @@ void __debugbreak();
 
 ## <a name="remarks"></a>설명
 
-`__debugbreak` 컴파일러 내장 마찬가지로 [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297.aspx), 중단점을 발생 시키는 이식 가능한 Win32 방법이 있습니다.
+[Debugbreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak)와 유사한 컴파일러내장함수는중단점을발생시키는이식가능한Win32방법입니다.`__debugbreak`
 
 > [!NOTE]
->  사용 하 여 컴파일하면 **/clr**를 포함 하는 함수 `__debugbreak` MSIL로 컴파일됩니다. `asm int 3`은 함수를 네이티브로 컴파일하도록 합니다. 자세한 내용은 [__asm](../assembler/inline/asm.md)합니다.
+>  **/Clr**을 사용 하 여 컴파일하는 경우 `__debugbreak` 를 포함 하는 함수가 MSIL로 컴파일됩니다. `asm int 3`은 함수를 네이티브로 컴파일하도록 합니다. 자세한 내용은 [__asm](../assembler/inline/asm.md)를 참조 하세요.
 
-예를 들어:
+예:
 
 ```
 main() {
@@ -60,7 +60,7 @@ main() {
 
 x86 컴퓨터의 경우
 
-ARM64에 `__debugbreak` 명령으로 내장 함수는 컴파일된 `brk #0xF000`합니다.
+ARM64 `__debugbreak` 에서 내장 함수는 명령 `brk #0xF000`으로 컴파일됩니다.
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 

@@ -12,16 +12,16 @@ helpviewer_keywords:
 - CPaneDialog [MFC], HandleInitDialog
 - CPaneDialog [MFC], SetOccDialogInfo
 ms.assetid: 48a6bb91-4b92-40f5-8907-b3270b146cf6
-ms.openlocfilehash: c78b8f2cd19e87fa559c3f9bbd24d07543d887c5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7ff55e37194d0fa405925e4b3895428cfcaf9eb
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373091"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502988"
 ---
 # <a name="cpanedialog-class"></a>CPaneDialog 클래스
 
-`CPaneDialog` 클래스는 도킹 가능한 모덜리스 대화 상자를 지원 합니다.
+클래스 `CPaneDialog` 는 도킹 가능한 모덜리스 대화 상자를 지원 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,22 +40,22 @@ class CPaneDialog : public CDockablePane
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CPaneDialog::Create](#create)|도킹 가능한 대화 상자를 만들고 연결 하는 `CPaneDialog` 개체입니다.|
+|[CPaneDialog::Create](#create)|도킹 가능한 대화 상자를 만들고 `CPaneDialog` 개체에 연결 합니다.|
 |`CPaneDialog::CreateObject`|프레임워크에서 이 클래스 형식의 동적 인스턴스를 만드는 데 사용합니다.|
-|`CPaneDialog::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|
-|[CPaneDialog::HandleInitDialog](#handleinitdialog)|처리를 [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) 메시지입니다. (재정의 `CBasePane::HandleInitDialog`.)|
-|`CPaneDialog::OnEraseBkgnd`|처리를 [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) 메시지입니다. (재정의 [CWnd::OnEraseBkgnd](../../mfc/reference/cwnd-class.md#onerasebkgnd).)|
-|`CPaneDialog::OnLButtonDblClk`|처리를 [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) 메시지입니다. (재정의 [CWnd::OnLButtonDblClk](../../mfc/reference/cwnd-class.md#onlbuttondblclk).)|
-|`CPaneDialog::OnLButtonDown`|처리를 [WM_LBUTTONDOWN](/windows/desktop/inputdev/wm-lbuttondown) 메시지입니다. (재정의 [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown).)|
-|`CPaneDialog::OnUpdateCmdUI`|대화 상자 창에 업데이트 하기 위해 프레임 워크에서 호출 됩니다. (재정의 [cdockablepane:: Onupdatecmdui](cdockablepane-class.md).)|
-|`CPaneDialog::OnWindowPosChanging`|처리를 [WM_WINDOWPOSCHANGING](/windows/desktop/winmsg/wm-windowposchanging) 메시지입니다. (재정의 [CWnd::OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging).)|
+|`CPaneDialog::GetThisClass`|프레임 워크에서이 클래스 형식과 연결 된 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 개체에 대 한 포인터를 가져오는 데 사용 됩니다.|
+|[CPaneDialog::HandleInitDialog](#handleinitdialog)|[WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) 메시지를 처리 합니다. (를 `CBasePane::HandleInitDialog`다시 정의 합니다.)|
+|`CPaneDialog::OnEraseBkgnd`|[WM_ERASEBKGND](/windows/win32/winmsg/wm-erasebkgnd) 메시지를 처리 합니다. ( [CWnd:: OnEraseBkgnd](../../mfc/reference/cwnd-class.md#onerasebkgnd)를 재정의 합니다.)|
+|`CPaneDialog::OnLButtonDblClk`|[WM_LBUTTONDBLCLK](/windows/win32/inputdev/wm-lbuttondblclk) 메시지를 처리 합니다. ( [CWnd:: OnLButtonDblClk](../../mfc/reference/cwnd-class.md#onlbuttondblclk)를 재정의 합니다.)|
+|`CPaneDialog::OnLButtonDown`|[WM_LBUTTONDOWN](/windows/win32/inputdev/wm-lbuttondown) 메시지를 처리 합니다. ( [CWnd:: OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown)을 다시 정의 합니다.)|
+|`CPaneDialog::OnUpdateCmdUI`|대화 상자 창을 업데이트 하기 위해 프레임 워크에서 호출 됩니다. [CDockablePane:: OnUpdateCmdUI](cdockablepane-class.md)를 재정의 합니다.|
+|`CPaneDialog::OnWindowPosChanging`|[WM_WINDOWPOSCHANGING](/windows/win32/winmsg/wm-windowposchanging) 메시지를 처리 합니다. ( [CWnd:: OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging)를 재정의 합니다.)|
 |[CPaneDialog::SetOccDialogInfo](#setoccdialoginfo)|OLE 컨트롤 컨테이너의 대화 상자에 대 한 템플릿을 지정 합니다.|
 
 ## <a name="remarks"></a>설명
 
-생성 된 `CPaneDialog` 두 단계로 개체입니다. 먼저 코드에서 개체를 생성 합니다. 둘째, 호출 [CPaneDialog::Create](#create)합니다. 올바른 리소스 템플릿 이름 또는 템플릿 ID를 지정 하 고 부모 창에 대 한 포인터를 전달 해야 합니다. 그렇지 않은 경우 만들기 프로세스가 실패합니다. 대화 상자 WS_CHILD과 WS_VISIBLE 스타일을 지정 해야 합니다. WS_CLIPCHILDREN 및 WS_CLIPSIBLINGS 스타일을 지정 하는 것이 좋습니다. 자세한 내용은 [창 스타일](styles-used-by-mfc.md#window-styles)합니다.
+두 단계로 `CPaneDialog` 개체를 생성 합니다. 먼저 코드에서 개체를 생성 합니다. 둘째, [CPaneDialog:: Create](#create)를 호출 합니다. 올바른 리소스 템플릿 이름 또는 템플릿 ID를 지정 하 고 부모 창에 포인터를 전달 해야 합니다. 그렇지 않으면 만들기 프로세스가 실패 합니다. 대화 상자에서 WS_CHILD 및 WS_VISIBLE 스타일을 지정 해야 합니다. WS_CLIPCHILDREN 및 WS_CLIPSIBLINGS 스타일도 지정 하는 것이 좋습니다. 자세한 내용은 [창 스타일](styles-used-by-mfc.md#window-styles)을 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -75,11 +75,11 @@ class CPaneDialog : public CDockablePane
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxpanedialog.h
+**헤더:** afxpanedialog
 
 ##  <a name="create"></a>  CPaneDialog::Create
 
-도킹 대화 상자를 만들고 연결 하는 `CPaneDialog` 개체입니다.
+도킹 대화 상자를 만들고 `CPaneDialog` 개체에 연결 합니다.
 
 ```
 BOOL Create(
@@ -116,48 +116,48 @@ BOOL Create(
 ### <a name="parameters"></a>매개 변수
 
 *lpszWindowName*<br/>
-[in] 대화 상자를 도킹의 이름입니다.
+진행 도킹 대화 상자의 이름입니다.
 
 *pParentWnd*<br/>
-[in] 부모 창을 가리킵니다.
+진행 부모 창을 가리킵니다.
 
 *bHasGripper*<br/>
-[in] TRUE (그리퍼); 캡션을 사용 하 여 도킹 대화 상자를 만들려면 그렇지 않으면 FALSE입니다.
+진행 캡션을 사용 하 여 도킹 대화 상자를 만들려면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 *lpszTemplateName*<br/>
-[in] 리소스 대화 상자 템플릿의 이름입니다.
+진행 리소스 대화 상자 템플릿 이름입니다.
 
 *nStyle*<br/>
-[in] Windows 스타일입니다.
+진행 Windows 스타일입니다.
 
 *nID*<br/>
-[in] 컨트롤 id입니다.
+진행 컨트롤 ID입니다.
 
 *nIDTemplate*<br/>
-[in] 대화 상자 템플릿의 리소스 ID입니다.
+진행 대화 상자 템플릿의 리소스 ID입니다.
 
 *dwTabbedStyle*<br/>
-[in] 스타일 사용자가 컨트롤로 끌어 다른 컨트롤 창이 컨트롤 창의 캡션을 때 발생 하는 탭된 창입니다. 기본값은 AFX_CBRS_REGULAR_TABS 합니다. 자세한 내용은의 설명 섹션을 참조 하십시오.는 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex) 메서드.
+진행 사용자가 다른 컨트롤 창을이 컨트롤 창의 캡션으로 끌 때 발생 하는 탭 창의 스타일입니다. 기본값은 AFX_CBRS_REGULAR_TABS입니다. 자세한 내용은 [Cbasepane:: CreateEx](../../mfc/reference/cbasepane-class.md#createex) 메서드의 설명 섹션을 참조 하세요.
 
 *dwControlBarStyle*<br/>
-[in] 추가 스타일 특성입니다. 기본값은 AFX_DEFAULT_DOCKING_PANE_STYLE 합니다. 자세한 내용은의 설명 섹션을 참조 하십시오.는 [cbasepane:: Createex](../../mfc/reference/cbasepane-class.md#createex) 메서드.
+진행 추가 스타일 특성입니다. 기본값은 AFX_DEFAULT_DOCKING_PANE_STYLE입니다. 자세한 내용은 [Cbasepane:: CreateEx](../../mfc/reference/cbasepane-class.md#createex) 메서드의 설명 섹션을 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
-이 메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.
+이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법에 설명 합니다 `Create` 의 메서드는 `CPaneDialog` 클래스입니다. 이 예제는의 일부를 [창 크기 설정 샘플](../../overview/visual-cpp-samples.md)합니다.
+다음 예제에서는 `Create` `CPaneDialog` 클래스에서 메서드를 사용 하는 방법을 보여 줍니다. 이 예제는 [집합 창 크기 샘플](../../overview/visual-cpp-samples.md)의 일부입니다.
 
 [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanedialog-class_1.h)]
 [!code-cpp[NVC_MFC_SetPaneSize#3](../../mfc/reference/codesnippet/cpp/cpanedialog-class_2.cpp)]
 
 ##  <a name="handleinitdialog"></a>  CPaneDialog::HandleInitDialog
 
-처리를 [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) 메시지입니다.
+[WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) 메시지를 처리 합니다.
 
 ```
 afx_msg LRESULT HandleInitDialog(
@@ -168,18 +168,18 @@ afx_msg LRESULT HandleInitDialog(
 ### <a name="parameters"></a>매개 변수
 
 *wParam*<br/>
-[in] 기본 키보드 포커스를 받을 수는 컨트롤에 대 한 핸들입니다.
+진행 기본 키보드 포커스를 받을 컨트롤에 대 한 핸들입니다.
 
 *lParam*<br/>
-[in] 추가 초기화 데이터를 지정합니다.
+진행 추가 초기화 데이터를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다. TRUE로 지정 된 컨트롤에 키보드 포커스를 설정 하는 또한 합니다 *wParam* 매개 변수입니다. FALSE 기본 키보드 포커스를 설정 하지 않습니다.
+이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다. 또한 TRUE는 *wParam* 매개 변수로 지정 된 컨트롤에 키보드 포커스를 설정 합니다. FALSE로 설정 하면 기본 키보드 포커스를 설정할 수 없습니다.
 
 ### <a name="remarks"></a>설명
 
-프레임 워크는이 메서드를 사용 하 여 컨트롤과 대화 상자의 모양을 초기화 합니다. 프레임 워크는 대화 상자를 표시 하기 전에이 메서드를 호출 합니다.
+프레임 워크는이 메서드를 사용 하 여 컨트롤 및 대화 상자의 모양을 초기화 합니다. 프레임 워크는 대화 상자를 표시 하기 전에이 메서드를 호출 합니다.
 
 ##  <a name="setoccdialoginfo"></a>  CPaneDialog::SetOccDialogInfo
 
@@ -192,7 +192,7 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 ### <a name="parameters"></a>매개 변수
 
 *pOccDialogInfo*<br/>
-[in] 대화 상자 개체를 만드는 데 사용 되는 대화 상자 템플릿에 대 한 포인터입니다. 에 전달 된이 매개 변수 값 이후에 합니다 [COccManager::CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) 메서드.
+진행 대화 상자 개체를 만드는 데 사용 되는 대화 상자 템플릿에 대 한 포인터입니다. 이 매개 변수 값은 이후 [Coccmanager:: CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) 메서드에 전달 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -200,7 +200,7 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 지원 합니다 [COccManager](../../mfc/reference/coccmanager-class.md) OLE 컨트롤 사이트 및 ActiveX 컨트롤을 관리 하는 클래스입니다. _AFX_OCC_DIALOG_INFO 구조 afxocc.h 헤더 파일에 정의 됩니다.
+이 메서드는 OLE 컨트롤 사이트 및 ActiveX 컨트롤을 관리 하는 [Coccmanager](../../mfc/reference/coccmanager-class.md) 클래스를 지원 합니다. _AFX_OCC_DIALOG_INFO 구조체는 afxocc 헤더 파일에 정의 되어 있습니다.
 
 ## <a name="see-also"></a>참고자료
 

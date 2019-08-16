@@ -24,12 +24,12 @@ helpviewer_keywords:
 - COleDocObjectItem [MFC], QueryCommand
 - COleDocObjectItem [MFC], Release
 ms.assetid: d150d306-8fd3-4831-b06d-afbe71d8fc9b
-ms.openlocfilehash: 454be491fe5875b1b1ac9b2b85fdebe2f1663ebc
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: c6e00bf42cf20b46c949c218efe1820cc7ce0f9b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916972"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504018"
 ---
 # <a name="coledocobjectitem-class"></a>COleDocObjectItem 클래스
 
@@ -78,7 +78,7 @@ MFC에서 활성 문서는 다음과 같은 차이를 포함 하는 일반적인
 
 메뉴 병합 및 활성 문서 활성화에 대 한 자세한 내용은 [액티브 문서 포함](../../mfc/active-document-containment.md)개요를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -142,7 +142,7 @@ HRESULT ExecCommand(
 실행할 명령의 식별자입니다. *PguidCmdGroup*로 식별 되는 그룹에 있어야 합니다.
 
 *nCmdExecOpt*<br/>
-명령 실행 옵션을 지정 합니다. 기본적으로는 사용자에 게 메시지를 표시 하지 않고 명령을 실행 하도록 설정 합니다. 값 목록은 [OLECMDEXECOPT](/windows/desktop/api/docobj/ne-docobj-olecmdexecopt) 을 참조 하십시오.
+명령 실행 옵션을 지정 합니다. 기본적으로는 사용자에 게 메시지를 표시 하지 않고 명령을 실행 하도록 설정 합니다. 값 목록은 [OLECMDEXECOPT](/windows/win32/api/docobj/ne-docobj-olecmdexecopt) 을 참조 하십시오.
 
 *pguidCmdGroup*<br/>
 명령 그룹의 고유 식별자입니다. 기본적으로 표준 그룹을 지정 하는 NULL입니다. *Ncmdid* 에 전달 된 명령은 그룹에 속해야 합니다.
@@ -151,7 +151,7 @@ HRESULT ExecCommand(
 
 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 다음 오류 코드 중 하나를 반환 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |E_UNEXPECTED|예기치 않은 오류가 발생 했습니다.|
 |E_FAIL|오류가 발생 했습니다.|
@@ -176,7 +176,7 @@ LPOLEDOCUMENTVIEW GetActiveView() const;
 
 ### <a name="return-value"></a>반환 값
 
-현재 활성 뷰의 [IOleDocumentView](/windows/desktop/api/docobj/nn-docobj-ioledocumentview) 인터페이스에 대 한 포인터입니다. 현재 보기가 없으면 NULL을 반환 합니다.
+현재 활성 뷰의 [IOleDocumentView](/windows/win32/api/docobj/nn-docobj-ioledocumentview) 인터페이스에 대 한 포인터입니다. 현재 보기가 없으면 NULL을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -270,21 +270,21 @@ HRESULT QueryCommand(
 쿼리 중인 명령의 식별자입니다.
 
 *pdwStatus*<br/>
-쿼리 결과로 반환 되는 플래그에 대 한 포인터입니다. 가능한 값 목록은 [Olecmdf](/windows/desktop/api/docobj/ne-docobj-olecmdf)를 참조 하세요.
+쿼리 결과로 반환 되는 플래그에 대 한 포인터입니다. 가능한 값 목록은 [Olecmdf](/windows/win32/api/docobj/ne-docobj-olecmdf)를 참조 하세요.
 
 *pCmdText*<br/>
-단일 명령에 대 한 이름 및 상태 정보를 반환할 [Olecmdtext](/windows/desktop/api/docobj/ns-docobj-olecmdtext) 구조체에 대 한 포인터입니다. 호출자에 게이 정보가 필요 하지 않음을 나타내는 NULL 일 수 있습니다.
+단일 명령에 대 한 이름 및 상태 정보를 반환할 [Olecmdtext](/windows/win32/api/docobj/ns-docobj-olecmdtext) 구조체에 대 한 포인터입니다. 호출자에 게이 정보가 필요 하지 않음을 나타내는 NULL 일 수 있습니다.
 
 *pguidCmdGroup*<br/>
 명령 그룹의 고유 식별자입니다. 표준 그룹을 지정 하는 경우 NULL 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
-반환 값의 전체 목록은 Windows SDK의 [IOleCommandTarget:: QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) 를 참조 하세요.
+반환 값의 전체 목록은 Windows SDK의 [IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK 설명 된 대로 [IOleCommandTarget:: QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) 메서드의 기능을 에뮬레이트합니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 [IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) 메서드의 기능을 에뮬레이트합니다.
 
 ##  <a name="release"></a>  COleDocObjectItem::Release
 
