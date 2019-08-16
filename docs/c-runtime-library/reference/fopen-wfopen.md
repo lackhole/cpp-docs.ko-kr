@@ -32,14 +32,14 @@ helpviewer_keywords:
 - files [C++], opening
 - fopen function
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
-ms.openlocfilehash: 0b1dbc72124188d06da48f47e47c11ae6d06e771
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: b57ed2b26428c48efbe544c2b4802e347b915c29
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376187"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499950"
 ---
-# <a name="fopen-wfopen"></a>fopen, _wfopen
+# <a name="fopen-_wfopen"></a>fopen, _wfopen
 
 파일을 엽니다. 추가 매개 변수 유효성 검사를 수행하고 오류 코드를 반환하는 이 함수의 더 안전한 버전을 사용할 수 있습니다. [fopen_s, _wfopen_s](fopen-s-wfopen-s.md)를 참조하세요.
 
@@ -72,7 +72,7 @@ FILE *_wfopen(
 
 ## <a name="remarks"></a>설명
 
-**Fopen** 함수는 *filename*으로 지정 된 파일을 엽니다. 기본적으로 좁은 *파일 이름* 문자열은 ANSI 코드 페이지 (CP_ACP)를 사용 하 여 해석 됩니다. Windows 데스크톱 애플리케이션에서 이 페이지를 [SetFileApisToOEM](/windows/desktop/api/fileapi/nf-fileapi-setfileapistooem) 함수를 사용하여 OEM 코드 페이지(CP_OEMCP)로 변경할 수 있습니다. [Arefileapisansi](/windows/desktop/api/fileapi/nf-fileapi-arefileapisansi) 함수를 사용 하 여 ANSI 또는 시스템 기본 OEM 코드 페이지를 사용 하 여 *파일 이름을* 해석할지 여부를 결정할 수 있습니다. **_wfopen** 는 **fopen**의 와이드 문자 버전입니다. **_wfopen** 에 대 한 인수는 와이드 문자 문자열입니다. 그렇지 않으면 **_wfopen** 와 **fopen** 은 동일 하 게 작동 합니다. **_Wfopen** 를 사용 하면 파일 스트림에 사용 되는 코딩 된 문자 집합에 영향을 주지 않습니다.
+**Fopen** 함수는 *filename*으로 지정 된 파일을 엽니다. 기본적으로 좁은 *파일 이름* 문자열은 ANSI 코드 페이지 (CP_ACP)를 사용 하 여 해석 됩니다. Windows 데스크톱 애플리케이션에서 이 페이지를 [SetFileApisToOEM](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem) 함수를 사용하여 OEM 코드 페이지(CP_OEMCP)로 변경할 수 있습니다. [Arefileapisansi](/windows/win32/api/fileapi/nf-fileapi-arefileapisansi) 함수를 사용 하 여 ANSI 또는 시스템 기본 OEM 코드 페이지를 사용 하 여 *파일 이름을* 해석할지 여부를 결정할 수 있습니다. **_wfopen** 는 **fopen**의 와이드 문자 버전입니다. **_wfopen** 에 대 한 인수는 와이드 문자 문자열입니다. 그렇지 않으면 **_wfopen** 와 **fopen** 은 동일 하 게 작동 합니다. **_Wfopen** 를 사용 하면 파일 스트림에 사용 되는 코딩 된 문자 집합에 영향을 주지 않습니다.
 
 **fopen** 은 실행 시점에 파일 시스템에 유효한 경로를 허용 합니다. **fopen** 은 코드를 실행 하는 시스템에서 실행 시점에 공유 또는 매핑된 드라이브에 액세스할 수 있는 한, 매핑된 네트워크 드라이브를 포함 하는 UNC 경로 및 경로를 허용 합니다. **Fopen**에 대 한 경로를 생성할 때 드라이브, 경로 또는 네트워크 공유를 실행 환경에서 사용할 수 있는지 확인 합니다. 슬래시(/) 또는 백슬래시(\\)를 경로의 디렉터리 구분 기호로 사용할 수 있습니다.
 
@@ -86,7 +86,7 @@ FILE *_wfopen(
 
 *Encoding* 의 허용 되는 값은 **UNICODE**, **utf-8**및 **u t f-utf-16le**입니다.
 
-유니코드 모드에서 파일을 열 때 입력 함수는 파일에서 읽은 데이터를 **wchar_t**형식으로 저장 된 utf-16 데이터로 변환 합니다. 유니코드 모드에서 연 파일에 쓰는 함수는 **utf-16 형식으로**저장 된 utf-16 데이터를 포함 하는 버퍼를 필요로 합니다. 이 파일이 UTF-8로 인코딩되면 UTF-16 데이터는 쓸 때 UTF-8로 변환되고 이 파일의 UTF-8로 인코딩된 내용은 읽을 때 UTF-16으로 변환됩니다. 유니코드 모드에서 홀수 바이트를 읽거나 쓰려고 하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 오류가 발생합니다. 프로그램에 UTF-8로 저장된 데이터를 읽거나 쓰려는 경우 유니코드 모드 대신 텍스트 또는 이진 파일 모드를 사용합니다. 필수 인코딩은 사용자가 변환해야 합니다.
+유니코드 모드에서 파일을 열 때 입력 함수는 파일에서 읽은 데이터를 **wchar_t**형식으로 저장 된 utf-16 데이터로 변환 합니다. 유니코드 모드에서 연 파일에 쓰는 함수는 utf-16 형식으로 저장 된 utf-16 데이터를 포함 하는 버퍼를 필요로 합니다. 이 파일이 UTF-8로 인코딩되면 UTF-16 데이터는 쓸 때 UTF-8로 변환되고 이 파일의 UTF-8로 인코딩된 내용은 읽을 때 UTF-16으로 변환됩니다. 유니코드 모드에서 홀수 바이트를 읽거나 쓰려고 하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 오류가 발생합니다. 프로그램에 UTF-8로 저장된 데이터를 읽거나 쓰려는 경우 유니코드 모드 대신 텍스트 또는 이진 파일 모드를 사용합니다. 필수 인코딩은 사용자가 변환해야 합니다.
 
 파일이 이미 있고 읽기 또는 추가용으로 열려 있는 경우 BOM(바이트 순서 표시)(파일에 있는 경우)에 따라 인코딩이 결정됩니다. BOM 인코딩은 **ccs** 플래그에 의해 지정 되는 인코딩과 우선적으로 적용 됩니다. **Ccs** 인코딩은 BOM이 없거나 파일이 새 파일인 경우에만 사용 됩니다.
 
@@ -137,7 +137,7 @@ FILE *_wfopen(
 | **t** | 텍스트(변환됨) 모드에서 엽니다. |
 | **b** | 이진 (변환 되지 않음) 모드에서 열기 캐리지 리턴 및 줄 바꿈 문자를 포함 하는 변환은 표시 되지 않습니다. |
 
-텍스트 모드에서 CTRL + Z는 입력에서 EOF 문자로 해석 됩니다. **"A +"** 를 사용 하 여 읽기/쓰기용으로 열려 있는 파일에서 **fopen** 은 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능한 경우이를 제거 합니다. 이 작업은 [fseek](fseek-fseeki64.md) 및 fseek  를 사용 하 여 CTRL + Z로 끝나는 파일 내에서 이동 하면 파일의 끝 부분에서 [fseek](fseek-fseeki64.md) 가 제대로 동작 하지 않을 수 있기 때문입니다.
+텍스트 모드에서 CTRL + Z는 입력에서 EOF 문자로 해석 됩니다. **"A +"** 를 사용 하 여 읽기/쓰기용으로 열려 있는 파일에서 **fopen** 은 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능한 경우이를 제거 합니다. 이 작업은 [fseek](fseek-fseeki64.md) 및 fseek 를 사용 하 여 CTRL + Z로 끝나는 파일 내에서 이동 하면 파일의 끝 부분에서 [fseek](fseek-fseeki64.md) 가 제대로 동작 하지 않을 수 있기 때문입니다.
 
 텍스트 모드에서 캐리지 리턴-줄 바꿈 조합은 입력 시 단일 줄 바꿈으로 변환 되 고, 줄 바꿈 문자는 출력에서 캐리지 리턴-줄 바꿈 조합으로 변환 됩니다. 유니코드 스트림 I/O 함수가 텍스트 모드에서 작동할 경우(기본값) 소스 또는 대상 스트림은 멀티바이트 문자 시퀀스로 간주됩니다. 따라서 유니코드 스트림 입력 함수는 **mbtowc** 함수 호출과 마찬가지로 멀티바이트 문자를 와이드 문자로 변환합니다. 동일한 이유로 유니코드 스트림 출력 함수는 **wctomb** 함수 호출과 마찬가지로 와이드 문자를 멀티바이트 문자로 변환합니다.
 

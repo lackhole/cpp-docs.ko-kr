@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - _com_ptr_t method [C++]
 ms.assetid: 0c00620a-28d2-4f60-ae4a-1696be36137e
-ms.openlocfilehash: 779fd1008f6763f4b5ca95938018a5129e89aa1f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5a3923ee488771e807600069855299fc240b3212
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154879"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498706"
 ---
-# <a name="comptrtcomptrt"></a>_com_ptr_t::_com_ptr_t
+# <a name="_com_ptr_t_com_ptr_t"></a>_com_ptr_t::_com_ptr_t
 
 **Microsoft 전용**
 
-생성 된 **_com_ptr_t** 개체입니다.
+**_Com_ptr_t** 개체를 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -139,28 +139,28 @@ explicit _com_ptr_t(
 원시 인터페이스 포인터입니다.
 
 *fAddRef*<br/>
-TRUE 이면 `AddRef` 캡슐화 된 인터페이스 포인터의 참조 횟수를 증가 하기 위해 호출 됩니다.
+TRUE 이면 캡슐화 `AddRef` 된 인터페이스 포인터의 참조 횟수를 증가 시키기 위해가 호출 됩니다.
 
 *cp*<br/>
-A **_com_ptr_t** 개체입니다.
+**_Com_ptr_t** 개체입니다.
 
 *p*<br/>
-원시 인터페이스 포인터를이 스마트 포인터 형식에서 다른 형식의 **_com_ptr_t** 개체입니다.
+이 **_com_ptr_t** 개체의 스마트 포인터 형식과 다른 형식의 원시 인터페이스 포인터입니다.
 
 *varSrc*<br/>
 `_variant_t` 개체입니다.
 
 *clsid*<br/>
-`CLSID` coclass의 합니다.
+Coclass `CLSID` 의입니다.
 
 *dwClsContext*<br/>
 실행 코드를 실행하는 컨텍스트입니다.
 
 *lpcStr*<br/>
-중 하나를 포함 하는 멀티 바이트 문자열을 `CLSID` (시작 "**{**") 또는 `ProgID`합니다.
+(" **{** "로 시작) 또는을 `ProgID`포함 하는 멀티 바이트 문자열입니다. `CLSID`
 
 *pOuter*<br/>
-에 대 한 알 수 없는 외부 [집계](/windows/desktop/com/aggregation)합니다.
+[집계](/windows/win32/com/aggregation)에 대해 알 수 없는 외부입니다.
 
 ## <a name="see-also"></a>참고자료
 

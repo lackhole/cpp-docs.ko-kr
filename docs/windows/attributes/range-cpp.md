@@ -1,21 +1,21 @@
 ---
-title: 범위 (C++ COM 특성)
+title: range (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.range
 helpviewer_keywords:
 - range attribute
 ms.assetid: f352f79e-ecb3-4cdd-9cdd-8406ef473594
-ms.openlocfilehash: 9ce941fe95f2bbef3895c039984db1e1d2985ae1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1221192eb1813d759f293fe5555d7aaa5b367ab
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407486"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514146"
 ---
 # <a name="range-c"></a>range(C++)
 
-인수 값은 런타임에 설정 된 필드에 허용 되는 값의 범위를 지정 합니다.
+런타임에 값이 설정 되는 인수 또는 필드에 허용 되는 값 범위를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,14 +26,14 @@ ms.locfileid: "62407486"
 ### <a name="parameters"></a>매개 변수
 
 *low*<br/>
-하위 범위의 값입니다.
+낮은 범위 값입니다.
 
 *high*<br/>
-범위 상한 값입니다.
+상위 범위 값입니다.
 
 ## <a name="remarks"></a>설명
 
-**범위** C++ 특성에 동일한 기능을 합니다 [범위](/windows/desktop/Midl/range) MIDL 특성입니다.
+**Range** C++ 특성에는 [range](/windows/win32/Midl/range) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -57,7 +57,7 @@ __interface ICustom {
 
 |||
 |-|-|
-|**적용 대상**|인터페이스 메서드를 인터페이스 매개 변수|
+|**적용 대상**|인터페이스 메서드, 인터페이스 매개 변수|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|

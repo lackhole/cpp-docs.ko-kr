@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - appobject attribute
 ms.assetid: 8ce30b73-e945-403e-a755-6bc78078a695
-ms.openlocfilehash: 8219c8fdd1b1df93f92fc6c1d0324a2475d3384b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e02cedff70ac32f7edfdb92b240269c34befee7e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409709"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490942"
 ---
 # <a name="appobject"></a>appobject
 
-전체.exe 응용 프로그램을 사용 하 여 연결 되며 함수 및 coclass의 속성에서이 전역적으로 사용할 수 있는지 나타냅니다는 응용 프로그램 개체는 coclass를 식별 [형식 라이브러리](../../mfc/automation-clients-using-type-libraries.md)합니다.
+Coclass를 전체 .exe 응용 프로그램과 연결 된 응용 프로그램 개체로 식별 하 고 coclass의 함수 및 속성을이 [형식 라이브러리](../../mfc/automation-clients-using-type-libraries.md)에서 전역적으로 사용할 수 있음을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62409709"
 
 ## <a name="remarks"></a>설명
 
-**appobject** C++ 특성에 동일한 기능을 합니다 [appobject](/windows/desktop/Midl/appobject) MIDL 특성입니다.
+**Appobject** C++ 특성은 [appobject](/windows/win32/Midl/appobject) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-다음 코드를 포함 하는 특성 블록 뒤에 간단한 클래스 정의 보여 줍니다 **appobject**:
+다음 코드에서는 **appobject**을 포함 하는 특성 블록이 앞에 오는 간단한 클래스 정의를 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_appobject.cpp

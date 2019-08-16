@@ -60,12 +60,12 @@ helpviewer_keywords:
 - CFile [MFC], m_hFile
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-ms.openlocfilehash: a258773633f503dc0638d76509953b3410dafbd8
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: a9161764f6c8646766a73add01c25cce5619ad19
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375768"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506576"
 ---
 # <a name="cfile-class"></a>CFile 클래스
 
@@ -121,7 +121,7 @@ class CFile : public CObject
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CFile::hFileNull](#hfilenull)|개체에 `CFile` 유효한 핸들이 있는지 여부를 확인 합니다.|
 |[CFile::m_hFile](#m_hfile)|일반적으로 운영 체제 파일 핸들을 포함 합니다.|
@@ -144,7 +144,7 @@ class CFile : public CObject
 
 사용 `CFile`에 대 한 자세한 내용은 *런타임 라이브러리 참조*에서 [MFC의 파일](../../mfc/files-in-mfc.md) 및 [파일 처리](../../c-runtime-library/file-handling.md) 문서를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -221,11 +221,11 @@ CAtlTransactionManager 개체에 대한 포인터
 
 다음 문자 모드 옵션 중 하나를 선택합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`CFile::typeBinary`|이진 모드를 설정합니다(파생 클래스에만 사용됨).|
 |`CFile::typeText`|캐리지 리턴-줄 바꿈 쌍에 대 한 특수 처리를 사용 하 여 텍스트 모드를 설정 합니다 (파생 클래스에만 사용 됨).|
-|`CFile::typeUnicode`|유니코드 모드를 설정합니다(파생 클래스에만 사용됨). 응용 프로그램을 유니코드 구성에서 빌드할 때는 텍스트가 유니코드 형식으로 파일에 기록됩니다. BOM이 파일에 기록되지 않습니다.|
+|`CFile::typeUnicode`|유니코드 모드를 설정합니다(파생 클래스에만 사용됨). 애플리케이션을 유니코드 구성에서 빌드할 때는 텍스트가 유니코드 형식으로 파일에 기록됩니다. BOM이 파일에 기록되지 않습니다.|
 
 다음 파일 공유 모드 옵션 중 하나만 선택해야 합니다. 기본 파일 공유 모드는 `CFile::shareExclusive`(단독)입니다.
 
@@ -254,7 +254,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 파일 핸들이 상속되지 않도록 하려면 다음 보안 옵션을 선택합니다. 기본적으로 새 자식 프로세스는 파일 핸들을 사용할 수 있습니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`CFile::modeNoInherit`|자식 프로세스가 파일 핸들을 사용하지 못하도록 차단합니다.|
 
@@ -382,7 +382,7 @@ virtual CString GetFileTitle() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) 를 호출 하 여 파일의 제목을 검색 합니다. 성공 하는 경우 메서드는 시스템에서 사용자에 게 파일 이름을 표시 하는 데 사용 하는 문자열을 반환 합니다. 그렇지 않으면 메서드는 [Pathfindfilename](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) 을 호출 하 여 기본 파일의 파일 이름 (파일 확장명 포함)을 검색 합니다. 즉, 파일 확장명이 항상 반환 된 파일 제목 문자열에 포함 되지 않습니다. 자세한 내용은 Windows SDK에서 [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) 및 [pathfindfilename](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) 을 참조 하세요.
+이 메서드는 [GetFileTitle](/windows/win32/api/commdlg/nf-commdlg-getfiletitlew) 를 호출 하 여 파일의 제목을 검색 합니다. 성공 하는 경우 메서드는 시스템에서 사용자에 게 파일 이름을 표시 하는 데 사용 하는 문자열을 반환 합니다. 그렇지 않으면 메서드는 [Pathfindfilename](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew) 을 호출 하 여 기본 파일의 파일 이름 (파일 확장명 포함)을 검색 합니다. 즉, 파일 확장명이 항상 반환 된 파일 제목 문자열에 포함 되지 않습니다. 자세한 내용은 Windows SDK에서 [GetFileTitle](/windows/win32/api/commdlg/nf-commdlg-getfiletitlew) 및 [pathfindfilename](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew) 을 참조 하세요.
 
 이름을 포함 하 여 파일의 전체 경로를 반환 하려면 [Getfilepath](#getfilepath)를 호출 합니다. 파일 이름만 반환 하려면 [Getfilename](#getfilename)을 호출 합니다.
 
@@ -613,7 +613,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 ##  <a name="operator_handle"></a>  CFile::operator HANDLE
 
-이 연산자를 사용 `CFile` 하 여를 `HANDLE`필요로 하는 [readfileex](/windows/desktop/api/fileapi/nf-fileapi-readfileex) 및 [getfiletime](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) 과 같은 함수에 개체 핸들을 전달 합니다.
+이 연산자를 사용 `CFile` 하 여를 `HANDLE`필요로 하는 [readfileex](/windows/win32/api/fileapi/nf-fileapi-readfileex) 및 [getfiletime](/windows/win32/api/fileapi/nf-fileapi-getfiletime) 과 같은 함수에 개체 핸들을 전달 합니다.
 
 ```
 operator HANDLE() const;

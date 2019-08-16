@@ -1,21 +1,21 @@
 ---
-title: 선택 사항 (C++ COM 특성)
+title: optional (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.optional
 helpviewer_keywords:
 - optional attribute
 ms.assetid: 86656a66-8e11-4589-8e30-9b0f34eeed03
-ms.openlocfilehash: bc6422ff652cfaba5fa71285294b93c1f0e8990e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7891d75adbfeba0d91d4a3aed60423975838951f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407590"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514350"
 ---
 # <a name="optional-c"></a>optional(C++)
 
-멤버 함수에 대 한 선택적 매개 변수를 지정합니다.
+멤버 함수에 대 한 선택적 매개 변수를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407590"
 
 ## <a name="remarks"></a>설명
 
-**선택적** C++ 특성에 동일한 기능을 합니다 [선택적](/windows/desktop/Midl/optional) MIDL 특성입니다.
+**선택적** C++ 특성에는 [선택적](/windows/win32/Midl/optional) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 어떻게 **선택적** 사용 될 수 있습니다.
+다음 코드에서는 **옵션** 을 사용할 수 있는 방법을 보여 줍니다.
 
 ```cpp
 // cpp_attr_ref_optional.cpp

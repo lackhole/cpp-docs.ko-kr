@@ -8,44 +8,44 @@ helpviewer_keywords:
 - notifications [MFC], tool tips
 - tool tips [MFC], notifications
 ms.assetid: d0370a65-21ba-4676-bcc5-8cf851bbb15c
-ms.openlocfilehash: 97db98322cd7c0d14e46f54a055bbc646c90d785
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a63154f3da539676f31709899568b6486dc6017e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62240391"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508526"
 ---
-# <a name="handling-ttnneedtext-notification-for-tool-tips"></a>도구 설명에 대한 TTN_NEEDTEXT 알림 처리
+# <a name="handling-ttn_needtext-notification-for-tool-tips"></a>도구 설명에 대한 TTN_NEEDTEXT 알림 처리
 
-일부로 [도구 설명을 사용 하도록 설정](../mfc/enabling-tool-tips.md)을 처리 하는 **TTN_NEEDTEXT** 소유자 창의 메시지 맵에 다음 항목을 추가 하 여 메시지:
+[도구 설명을 사용 하도록 설정](../mfc/enabling-tool-tips.md)하는 과정에서 소유자 창의 메시지 맵에 다음 항목을 추가 하 여 **TTN_NEEDTEXT** 메시지를 처리 합니다.
 
 [!code-cpp[NVC_MFCControlLadenDialog#40](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_1.cpp)]
 
 *memberFxn*<br/>
-이 단추에 대 한 텍스트가 필요할 때 호출 되는 멤버 함수입니다.
+이 단추에 텍스트가 필요할 때 호출 되는 멤버 함수입니다.
 
 도구 설명의 ID는 항상 0입니다.
 
-클래스 정의에서 처리기 함수를 다음과 같이 선언 합니다.
+다음과 같이 클래스 정의에서 처리기 함수를 선언 합니다.
 
 [!code-cpp[NVC_MFCControlLadenDialog#53](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_2.h)]
 
-기울임꼴로 표시 된 매개 변수는:
+기울임꼴로 된 매개 변수는 다음과 같습니다.
 
 *ID*<br/>
-알림을 전송 하는 컨트롤의 식별자입니다. 사용되지 않습니다. 컨트롤 id에서 가져온 것은 **NMHDR** 구조입니다.
+알림을 보낸 컨트롤의 식별자입니다. 사용되지 않습니다. **NMHDR** 구조체에서 컨트롤 id를 가져옵니다.
 
 *pNMHDR*<br/>
-에 대 한 포인터를 [NMTTDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagnmttdispinfoa) 구조입니다. 이 구조에 대해서도 설명에 대 한 자세한 [The TOOLTIPTEXT 구조체](../mfc/tooltiptext-structure.md)합니다.
+[NMTTDISPINFO](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfow) 구조체에 대 한 포인터입니다. 이 구조는 [TOOLTIPTEXT 구조](../mfc/tooltiptext-structure.md)에서도 추가로 설명 합니다.
 
 *pResult*<br/>
-결과 코드에 대 한 포인터를 반환 하기 전에 설정할 수 있습니다. **TTN_NEEDTEXT** 처리기를 무시할 수는 *pResult* 매개 변수입니다.
+반환 하기 전에 설정할 수 있는 결과 코드에 대 한 포인터입니다. **TTN_NEEDTEXT** 처리기는 *pResult* 매개 변수를 무시할 수 있습니다.
 
-폼 보기 알림 처리기의 예:
+다음은 폼 보기 알림 처리기의 예입니다.
 
 [!code-cpp[NVC_MFCControlLadenDialog#54](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_3.cpp)]
 
-호출 `EnableToolTips` (이 조각에서 가져온 `OnInitDialog`):
+호출 `EnableToolTips` (이 조각에서 `OnInitDialog`가져온):
 
 [!code-cpp[NVC_MFCControlLadenDialog#55](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_4.cpp)]
 

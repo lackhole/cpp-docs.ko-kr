@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - pragma attribute
 ms.assetid: 3f90d023-b8b5-4007-8311-008bb72cbea1
-ms.openlocfilehash: 159e1570c2bde07bb4df8fa904a519e8e0018a6a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5c3ee0d3f99bd27ca41d68b11c11522e92c8d40a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407460"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514269"
 ---
 # <a name="pragma"></a>pragma
 
-따옴표를 사용 하지 않고 생성 된.idl 파일에 지정된 된 문자열을 내보냅니다.
+따옴표를 사용 하지 않고 지정 된 문자열을 생성 된 .idl 파일로 내보냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,11 +26,11 @@ ms.locfileid: "62407460"
 ### <a name="parameters"></a>매개 변수
 
 *pragma_statement*<br/>
-생성 된.idl 파일로 이동 하려는 pragma입니다.
+생성 된 .idl 파일로 이동 하려는 pragma입니다.
 
 ## <a name="remarks"></a>설명
 
-**pragma** C++ 특성에 동일한 기능을 합니다 [pragma](/windows/desktop/Midl/pragma) MIDL 특성입니다.
+**Pragma** C++ 특성은 [pragma](/windows/win32/Midl/pragma) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 

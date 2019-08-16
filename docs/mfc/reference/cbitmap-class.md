@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-ms.openlocfilehash: 3cd194d0b6303c6d337d7157a521c825f77fc312
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 7161a4cf4484b6cc9e76e6955de558ca6e9121ca
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916230"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69507450"
 ---
 # <a name="cbitmap-class"></a>CBitmap 클래스
 
@@ -155,7 +155,7 @@ BOOL CreateBitmap(
 
 `CBitmap` 함수에서 만들어진 `CreateBitmap` 개체 사용을 완료하면 먼저 장치 컨텍스트에서 비트맵을 선택하고 나서 `CBitmap` 개체를 삭제합니다.
 
-자세한 내용은 `bmBits` `BITMAP` 구조체의 필드에 대 한 설명을 참조 하세요. [BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) 구조체는 [CBitmap::CreateBitmapIndirect](#createbitmapindirect) 멤버 함수에서 설명합니다.
+자세한 내용은 `bmBits` `BITMAP` 구조체의 필드에 대 한 설명을 참조 하세요. [BITMAP](/windows/win32/api/wingdi/ns-wingdi-bitmap) 구조체는 [CBitmap::CreateBitmapIndirect](#createbitmapindirect) 멤버 함수에서 설명합니다.
 
 ##  <a name="createbitmapindirect"></a>  CBitmap::CreateBitmapIndirect
 
@@ -168,7 +168,7 @@ BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
 ### <a name="parameters"></a>매개 변수
 
 *lpBitmap*<br/>
-비트맵에 대 한 정보를 포함 하는 [비트맵](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) 구조를 가리킵니다.
+비트맵에 대 한 정보를 포함 하는 [비트맵](/windows/win32/api/wingdi/ns-wingdi-bitmap) 구조를 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -178,7 +178,7 @@ BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
 
 디스플레이 장치에 대해 비트맵을 직접 선택할 수는 없지만 cdc: [: SelectObject](../../mfc/reference/cdc-class.md#selectobject) 를 사용 하 고 cdc:: [BitBlt](../../mfc/reference/cdc-class.md#bitblt) 또는 [cdc::를 사용 하 여 호환 되는 장치 컨텍스트에 복사 하 여 메모리 장치 컨텍스트의 현재 비트맵으로 선택할 수 있습니다. StretchBlt](../../mfc/reference/cdc-class.md#stretchblt) 함수입니다. [CDC::P atblt](../../mfc/reference/cdc-class.md#patblt) 함수는 현재 브러시의 비트맵을 디스플레이 장치 컨텍스트에 직접 복사할 수 있습니다.
 
-*Lpbitmap* 매개 변수에서 가리키는 `GetObject` 구조가함수를사용하여채워진경우비트맵의비트가지정되지않고비트맵이초기화되지않습니다.`BITMAP` 비트맵을 초기화 하기 위해 응용 프로그램은 [CDC:: BitBlt](../../mfc/reference/cdc-class.md#bitblt) 또는 [setdibits](/windows/desktop/api/wingdi/nf-wingdi-setdibits) 와 같은 함수를 사용 하 여의 `CGdiObject::GetObject` 첫 번째 매개 변수로 식별 되는 비트맵에서로 `CreateBitmapIndirect`만든 비트맵으로 비트를 복사할 수 있습니다.
+*Lpbitmap* 매개 변수에서 가리키는 `GetObject` 구조가함수를사용하여채워진경우비트맵의비트가지정되지않고비트맵이초기화되지않습니다.`BITMAP` 비트맵을 초기화 하기 위해 응용 프로그램은 [CDC:: BitBlt](../../mfc/reference/cdc-class.md#bitblt) 또는 [setdibits](/windows/win32/api/wingdi/nf-wingdi-setdibits) 와 같은 함수를 사용 하 여의 `CGdiObject::GetObject` 첫 번째 매개 변수로 식별 되는 비트맵에서로 `CreateBitmapIndirect`만든 비트맵으로 비트를 복사할 수 있습니다.
 
 함수를 사용 `CreateBitmapIndirect` 하 여 `CBitmap` 만든 개체를 마치면 먼저 장치 `CBitmap` 컨텍스트에서 비트맵을 선택 하 고 개체를 삭제 합니다.
 
@@ -286,7 +286,7 @@ int GetBitmap(BITMAP* pBitMap);
 ### <a name="parameters"></a>매개 변수
 
 *pBitMap*<br/>
-이미지 속성을 받는 [비트맵](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) 구조체에 대 한 포인터입니다. 이 매개 변수는 NULL이 아니어야 합니다.
+이미지 속성을 받는 [비트맵](/windows/win32/api/wingdi/ns-wingdi-bitmap) 구조체에 대 한 포인터입니다. 이 매개 변수는 NULL이 아니어야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -408,7 +408,7 @@ BOOL LoadMappedBitmap(
 
 기본적으로에서는 `LoadMappedBitmap` 단추 문자 모양에 일반적으로 사용 되는 색을 매핑합니다.
 
-매핑된 비트맵을 만드는 방법에 대 한 자세한 내용은 Windows SDK Windows 함수 [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) 및 [colormap](/windows/desktop/api/commctrl/ns-commctrl-colormap) 구조를 참조 하세요.
+매핑된 비트맵을 만드는 방법에 대 한 자세한 내용은 Windows SDK Windows 함수 [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) 및 [colormap](/windows/win32/api/commctrl/ns-commctrl-colormap) 구조를 참조 하세요.
 
 ##  <a name="loadoembitmap"></a>  CBitmap::LoadOEMBitmap
 
@@ -469,7 +469,7 @@ operator HBITMAP() const;
 
 이 연산자는 `HBITMAP` 개체의 직접 사용을 지 원하는 캐스팅 연산자입니다.
 
-그래픽 개체를 사용 하는 방법에 대 한 자세한 내용은 Windows SDK의 [그래픽 개체](/windows/desktop/gdi/graphic-objects) 를 참조 하세요.
+그래픽 개체를 사용 하는 방법에 대 한 자세한 내용은 Windows SDK의 [그래픽 개체](/windows/win32/gdi/graphic-objects) 를 참조 하세요.
 
 ##  <a name="setbitmapbits"></a>  CBitmap::SetBitmapBits
 

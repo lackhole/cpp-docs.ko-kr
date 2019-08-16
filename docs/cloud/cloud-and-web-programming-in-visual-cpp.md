@@ -2,12 +2,12 @@
 title: Visual C++의 클라우드 및 웹 프로그래밍
 ms.date: 05/14/2019
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
-ms.openlocfilehash: 677e9da18e8d171f523994d21bfbd0411270e3c8
-ms.sourcegitcommit: bc1b14f29a02685f97c7ef5c098d16db6eaf369f
+ms.openlocfilehash: 3f4786d8b17aed2d7faeddf1e2c32a825fd8d0e5
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65790354"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498865"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++의 클라우드 및 웹 프로그래밍
 
@@ -48,15 +48,15 @@ C++에는 웹 및 클라우드에 연결하기 위한 다양한 옵션이 있습
 
   System.Web 네임스페이스에 있는 같은 이름의 .NET Framework 클래스에서 모델링된 Windows 런타임 HTTP 클라이언트 클래스입니다. `HttpClient` 는 HTTP를 통한 비동기 업로드 및 다운로드와 사용자 지정 HTTP 처리기를 파이프라인에 삽입할 수 있게 하는 파이프라인 필터를 완벽하게 지원합니다. Windows SDK에는 데이터 통신 연결 네트워크, OAuth 인증 등에 대한 샘플 필터가 포함됩니다. 유니버설 Windows 플랫폼만 대상으로 하는 앱의 경우 `Windows::Web:HttpClient` 클래스를 사용하는 것이 좋습니다.
 
-- [IXMLHTTPRequest2 인터페이스](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2)
+- [IXMLHTTPRequest2 인터페이스](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2)
 
   HTTP를 통해 인터넷에 연결할 Windows Runtime 앱이나 Windows 데스크톱 앱에서 사용하고 GET, PUT 및 기타 HTTP 명령을 실행할 수 있는 네이티브 COM 인터페이스를 제공합니다. 자세한 내용은 [연습: 작업 및 XML HTTP 요청을 사용하여 연결](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)을 참조하세요.
 
-- [Windows 인터넷(WinInet)](/windows/desktop/WinInet/portal)
+- [Windows 인터넷(WinInet)](/windows/win32/WinInet/portal)
 
   인터넷에 연결할 Windows 데스크톱 앱에서 사용할 수 있는 Windows API입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md) <br/>
 [Microsoft Azure C 및 C++ 개발자 센터](https://azure.microsoft.com/develop/cpp/) <br/>

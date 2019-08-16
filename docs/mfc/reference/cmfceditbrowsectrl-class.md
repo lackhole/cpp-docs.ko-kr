@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CMFCEditBrowseCtrl [MFC], OnIllegalFileName
 - CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage
 ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
-ms.openlocfilehash: 31fadc0a960ddfcf216951e1af481983b122ea0f
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
+ms.openlocfilehash: db99c5e72e84bb359184f4c62594fcddff7d8ff6
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821307"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505346"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl 클래스
 
@@ -54,7 +54,7 @@ class CMFCEditBrowseCtrl : public CEdit
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCEditBrowseCtrl::EnableBrowseButton](#enablebrowsebutton)|찾아보기 단추를 사용 하거나 사용 하지 않도록 설정 합니다 (숨기기).|
 |[CMFCEditBrowseCtrl::EnableFileBrowseButton](#enablefilebrowsebutton)|찾아보기 단추를 사용 하도록 설정 하 고 편집 찾아보기 컨트롤을 *파일 찾아보기* 모드로 전환 합니다.|
@@ -65,7 +65,7 @@ class CMFCEditBrowseCtrl : public CEdit
 |[CMFCEditBrowseCtrl::OnChangeLayout](#onchangelayout)|현재 편집 찾아보기 컨트롤을 다시 그립니다.|
 |[CMFCEditBrowseCtrl::OnDrawBrowseButton](#ondrawbrowsebutton)|찾아보기 단추를 그리기 위해 프레임 워크에서 호출 됩니다.|
 |[CMFCEditBrowseCtrl::OnIllegalFileName](#onillegalfilename)|편집 컨트롤에 잘못 된 파일 이름을 입력 한 경우 프레임 워크에서 호출 됩니다.|
-|`CMFCEditBrowseCtrl::PreTranslateMessage`|창 메시지가 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 및 [dispatchmessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수로 디스패치 되기 전에 변환 합니다. 구문 및 자세한 내용은 [CWnd::P retranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 참조 하세요.|
+|`CMFCEditBrowseCtrl::PreTranslateMessage`|창 메시지가 [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) 및 [dispatchmessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows 함수로 디스패치 되기 전에 변환 합니다. 구문 및 자세한 내용은 [CWnd::P retranslatemessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 참조 하세요.|
 |[CMFCEditBrowseCtrl::SetBrowseButtonImage](#setbrowsebuttonimage)|찾아보기 단추에 대 한 사용자 지정 이미지를 설정 합니다.|
 
 ## <a name="remarks"></a>설명
@@ -106,7 +106,7 @@ class CMFCEditBrowseCtrl : public CEdit
 
 1. 편집 찾아보기 컨트롤에서 찾아보기 단추를 제거 하려면 *Benable* 매개 변수를 FALSE로 설정 하 여 [EnableBrowseButton](#enablebrowsebutton) 메서드를 호출 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -207,7 +207,7 @@ CMFCEditBrowseCtrl::BrowseMode GetMode() const;
 
 다음 표에서는 가능한 반환 값을 보여 줍니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |`BrowseMode_Default`|**사용자 지정 모드**입니다. 프로그래머가 정의한 동작을 수행 합니다.|
 |`BrowseMode_File`|**파일 모드**입니다. 표준 파일 브라우저 대화 상자가 표시 됩니다.|

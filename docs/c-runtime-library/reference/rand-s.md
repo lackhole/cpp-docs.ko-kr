@@ -27,16 +27,16 @@ helpviewer_keywords:
 - cryptographically secure random numbers
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: d196a6f5d7483deb9a7e1b8d7fa929532b6197db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a2c57713d4b455971f24b64dc124862749e927a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358127"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499556"
 ---
-# <a name="rands"></a>rand_s
+# <a name="rand_s"></a>rand_s
 
-의사 난수를 생성합니다. 함수의 더 안전한 버전을 이것이 [rand](rand.md)에 설명 된 대로 보안 기능이 향상 된 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)합니다.
+의사 난수를 생성합니다. 이는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명 된 대로 향상 된 보안 기능을 제공 하는 함수 [rand](rand.md)의 더 안전한 버전입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,24 +47,24 @@ errno_t rand_s(unsigned int* randomValue);
 ### <a name="parameters"></a>매개 변수
 
 *randomValue*<br/>
-생성 된 값을 저장 하는 정수에 대 한 포인터입니다.
+생성 된 값을 보유할 정수에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-정상적으로 실행되는 경우 0이고 그렇지 않으면 오류 코드입니다. 하는 경우 입력된 포인터 _했습니다_ 가 null 포인터인 경우 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **EINVAL** 설정 **errno** 하 **EINVAL**합니다. 함수가 다른 이유로 실패 하면 *_했습니다_ 0으로 설정 됩니다.
+정상적으로 실행되는 경우 0이고 그렇지 않으면 오류 코드입니다. 입력 포인터 _randomValue_ 가 null 포인터인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다. 다른 이유로 인해 함수가 실패 하면 *_randomValue_ 는 0으로 설정 됩니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **rand_s** 함수는 범위는 0에 의사 난수 정수를 씁니다 **UINT_MAX** 입력된 포인터에 대 한 합니다. 합니다 **rand_s** 함수 운영 체제를 사용 하 여 암호화 보안 난수를 생성 합니다. 생성 한 시드를 사용 하지 않는 합니다 [srand](srand.md) 함수에서 사용 하는 난수 시퀀스 어떤 영향이 나 [rand](rand.md)합니다.
+**Rand_s** 함수는 입력 포인터에 0 ~ **UINT_MAX** 범위의 의사 난수 정수를 씁니다. **Rand_s** 함수는 운영 체제를 사용 하 여 암호 보안 난수를 생성 합니다. [Srand](srand.md) 함수에 의해 생성 된 초기값은 사용 하지 않으며 [rand](rand.md)에서 사용 하는 난수 시퀀스에도 영향을 주지 않습니다.
 
-합니다 **rand_s** 함수에는 상수 **_CRT_RAND_S** 다음 예제와 같이 선언 하려는 함수의 포함 문 이전에 정의 합니다.
+**Rand_s** 함수를 사용 하려면 다음 예제와 같이 선언 되는 함수에 대 한 포함 문 이전에 상수 **_CRT_RAND_S** 를 정의 해야 합니다.
 
 ```C
 #define _CRT_RAND_S
 #include <stdlib.h>
 ```
 
-**rand_s** 에 따라 달라 집니다 합니다 [RtlGenRandom](/windows/desktop/api/ntsecapi/nf-ntsecapi-rtlgenrandom) API만 이상 Windows XP에서 사용할 수 있습니다.
+**rand_s** 는 Windows XP 이상 에서만 사용할 수 있는 [Rtlgenrandom](/windows/win32/api/ntsecapi/nf-ntsecapi-rtlgenrandom) API에 따라 달라 집니다.
 
 ## <a name="requirements"></a>요구 사항
 

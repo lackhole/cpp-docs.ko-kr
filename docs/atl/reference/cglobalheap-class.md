@@ -11,19 +11,19 @@ f1_keywords:
 helpviewer_keywords:
 - CGlobalHeap class
 ms.assetid: e348d838-3aa7-4bee-a1b3-cd000c99f834
-ms.openlocfilehash: cba15421fd0329df7a66a35979ed54b863b7cca0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b5aa09357ddcc77b6b10de58545bea86eff2488
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258821"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496758"
 ---
 # <a name="cglobalheap-class"></a>CGlobalHeap 클래스
 
-이 클래스는 구현 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) Win32 전역 힙 함수를 사용 합니다.
+이 클래스는 Win32 전역 힙 함수를 사용 하 여 [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md) 을 구현 합니다.
 
 > [!IMPORTANT]
->  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
+>  이 클래스와 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,22 +38,22 @@ class CGlobalHeap : public IAtlMemMgr
 |이름|설명|
 |----------|-----------------|
 |[CGlobalHeap::Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
-|[CGlobalHeap::Free](#free)|이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.|
-|[CGlobalHeap::GetSize](#getsize)|이 메모리 관리자에 의해 할당 된 메모리 블록의 할당 된 크기를 가져오려면이 메서드를 호출 합니다.|
+|[CGlobalHeap::Free](#free)|이 메서드를 호출 하 여이 메모리 관리자에서 할당 한 메모리 블록을 해제 합니다.|
+|[CGlobalHeap::GetSize](#getsize)|이 메서드를 호출 하 여이 메모리 관리자에서 할당 한 메모리 블록의 할당 된 크기를 가져옵니다.|
 |[CGlobalHeap::Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
 
 ## <a name="remarks"></a>설명
 
-`CGlobalHeap` Win32 전역 힙 함수를 사용 하 여 메모리 할당 함수를 구현 합니다.
+`CGlobalHeap`는 Win32 전역 힙 함수를 사용 하 여 메모리 할당 함수를 구현 합니다.
 
 > [!NOTE]
->  전역 힙 함수를 다른 메모리 관리 함수와 보다 느린 및 많은 기능을 제공 하지 않습니다. 따라서 새 응용 프로그램을 사용 해야 합니다 [힙 함수](/windows/desktop/Memory/heap-functions)합니다. 사용할 수 있는 이러한 합니다 [CWin32Heap](../../atl/reference/cwin32heap-class.md) 클래스입니다. 전역 함수는 클립보드 함수와 DDE에서 여전히 사용 됩니다.
+>  전역 힙 함수는 다른 메모리 관리 함수 보다 속도가 느리고 많은 기능을 제공 하지 않습니다. 따라서 새 응용 프로그램은 [힙 함수](/windows/win32/Memory/heap-functions)를 사용 해야 합니다. 이러한 클래스는 [CWin32Heap](../../atl/reference/cwin32heap-class.md) 클래스에서 사용할 수 있습니다. 전역 함수는 DDE와 클립보드 함수에서 계속 사용 됩니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)합니다.
+[Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md)의 예제를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 `IAtlMemMgr`
 
@@ -61,7 +61,7 @@ class CGlobalHeap : public IAtlMemMgr
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlmem.h
+**헤더:**
 
 ##  <a name="allocate"></a>  CGlobalHeap::Allocate
 
@@ -82,13 +82,13 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="remarks"></a>설명
 
-호출 [cglobalheap::](#free) 하거나 [cglobalheap:: Reallocate](#reallocate) 이 메서드에 의해 할당 된 메모리를 해제 합니다.
+이 메서드에 의해 할당 된 메모리를 해제 하려면 [Cglobalheap:: Free](#free) 또는 [Cglobalheap:: 재할당](#reallocate) 을 호출 합니다.
 
-사용 하 여 구현 [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) GMEM_FIXED 플래그 매개 변수를 사용 하 여 합니다.
+GMEM_FIXED의 플래그 매개 변수를 사용 하 여 [Globalalloc](/windows/win32/api/winbase/nf-winbase-globalalloc) 을 사용 하 여 구현 됩니다.
 
 ##  <a name="free"></a>  CGlobalHeap::Free
 
-이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.
+이 메서드를 호출 하 여이 메모리 관리자에서 할당 한 메모리 블록을 해제 합니다.
 
 ```
 virtual void Free(void* p) throw();
@@ -97,15 +97,15 @@ virtual void Free(void* p) throw();
 ### <a name="parameters"></a>매개 변수
 
 *p*<br/>
-이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다. NULL 유효한 값 이며 아무 작업도 수행 합니다.
+이 메모리 관리자에 의해 이전에 할당된 메모리에 대한 포인터입니다. NULL은 유효한 값 이며 아무 작업도 수행 하지 않습니다.
 
 ### <a name="remarks"></a>설명
 
-사용 하 여 구현 [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree)합니다.
+[Globalfree](/windows/win32/api/winbase/nf-winbase-globalfree)를 사용 하 여 구현 됩니다.
 
 ##  <a name="getsize"></a>  CGlobalHeap::GetSize
 
-이 메모리 관리자에 의해 할당 된 메모리 블록의 할당 된 크기를 가져오려면이 메서드를 호출 합니다.
+이 메서드를 호출 하 여이 메모리 관리자에서 할당 한 메모리 블록의 할당 된 크기를 가져옵니다.
 
 ```
 virtual size_t GetSize(void* p) throw();
@@ -118,11 +118,11 @@ virtual size_t GetSize(void* p) throw();
 
 ### <a name="return-value"></a>반환 값
 
-할당된 된 메모리 블록의 크기 (바이트)를 반환합니다.
+할당 된 메모리 블록의 크기 (바이트)를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용 하 여 구현 [GlobalSize](/windows/desktop/api/winbase/nf-winbase-globalsize)합니다.
+[Globalsize](/windows/win32/api/winbase/nf-winbase-globalsize)를 사용 하 여 구현 됩니다.
 
 ##  <a name="reallocate"></a>  CGlobalHeap::Reallocate
 
@@ -146,9 +146,9 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="remarks"></a>설명
 
-호출 [cglobalheap::](#free) 이 메서드에 의해 할당 된 메모리를 해제 합니다.
+이 메서드에 의해 할당 된 메모리를 해제 하려면 [Cglobalheap:: Free](#free) 를 호출 합니다.
 
-사용 하 여 구현 [GlobalReAlloc](/windows/desktop/api/winbase/nf-winbase-globalrealloc)합니다.
+[GlobalReAlloc](/windows/win32/api/winbase/nf-winbase-globalrealloc)를 사용 하 여 구현 됩니다.
 
 ## <a name="see-also"></a>참고자료
 

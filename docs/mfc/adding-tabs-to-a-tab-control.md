@@ -7,26 +7,26 @@ helpviewer_keywords:
 - CTabCtrl class [MFC], adding tabs
 - tabs [MFC], adding to CTabCtrl class [MFC]
 ms.assetid: 7f3d9340-e3c7-4c71-9912-be57534ecc78
-ms.openlocfilehash: f769de7bcf3e410cca717c17237d1e49ef8562c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8915b3af083ebe318e8527b2f83099bf61e7e3ce
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394769"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509303"
 ---
 # <a name="adding-tabs-to-a-tab-control"></a>탭 컨트롤에 탭 추가
 
-탭 컨트롤을 만든 후 ([CTabCtrl](../mfc/reference/ctabctrl-class.md))를 필요한 만큼 많은 탭을 추가 합니다.
+탭 컨트롤 ([Ctabctrl](../mfc/reference/ctabctrl-class.md))을 만든 후 필요한 만큼 탭을 추가 합니다.
 
 ### <a name="to-add-a-tab-item"></a>탭 항목을 추가 하려면
 
-1. 준비 된 [TCITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtcitema) 구조입니다.
+1. [Tcitem](/windows/win32/api/commctrl/ns-commctrl-tcitemw) 구조를 준비 합니다.
 
-1. 호출 [CTabCtrl::InsertItem](../mfc/reference/ctabctrl-class.md#insertitem), 구조를 전달 합니다.
+1. [Ctabctrl:: InsertItem](../mfc/reference/ctabctrl-class.md#insertitem)를 호출 하 여 구조체를 전달 합니다.
 
-1. 추가 탭 항목에 대 한 1 및 2 단계를 반복 합니다.
+1. 추가 탭 항목에 대해 1 단계와 2 단계를 반복 합니다.
 
-자세한 내용은 [하는 Tab 컨트롤을 만드는](/windows/desktop/Controls/tab-controls) Windows SDK의 합니다.
+자세한 내용은 Windows SDK에서 [탭 컨트롤 만들기](/windows/win32/Controls/tab-controls) 를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

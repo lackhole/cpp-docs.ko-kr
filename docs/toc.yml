@@ -1587,7 +1587,7 @@
     - name: '연습: Windows 데스크톱 애플리케이션 만들기'
       href: windows/walkthrough-creating-windows-desktop-applications-cpp.md
     - name: Windows 데스크톱 마법사
-      href: windows/win32-application-wizard.md
+      href: windows/windows-desktop-wizard.md
     - name: ATL(액티브 템플릿 라이브러리)
       href: atl/
     - name: MFC(Microsoft Foundation Class)
@@ -1607,10 +1607,6 @@
               items:
                 - name: 날짜 및 시간 개요
                   href: atl-mfc-shared/date-and-time.md
-                - name: '날짜 및 시간: 자동화 지원'
-                  href: atl-mfc-shared/date-and-time-automation-support.md
-                - name: '날짜 및 시간: 데이터베이스 지원'
-                  href: atl-mfc-shared/date-and-time-database-support.md
                 - name: DATE 형식
                   href: atl-mfc-shared/date-type.md
             - name: 문자열(ATL-MFC)
@@ -2888,6 +2884,8 @@
 - name: 참조
   expanded: false
   items:
+    - name: C/C++ 언어 및 표준 라이브러리
+      href: cpp/c-cpp-language-and-standard-libraries.md
     - name: 언어 참조
       expanded: false
       items:
@@ -3753,7 +3751,7 @@
                       href: cpp/using-declaration.md
                     - name: 모호한 선언 해결
                       href: cpp/resolving-ambiguous-declarations-cpp.md
-                    - name: 저장소 클래스
+                    - name: 스토리지 클래스
                       href: cpp/storage-classes-cpp.md
                     - name: const
                       href: cpp/const-cpp.md
@@ -10470,10 +10468,10 @@
                   href: parallel/openmp/openmp-in-visual-cpp.md
                 - name: SIMD 확장
                   href: parallel/openmp/openmp-simd.md
-                - name: OpenMP C 및 C++ 응용 프로그램 프로그램 인터페이스
+                - name: OpenMP C 및 C++ 애플리케이션 프로그램 인터페이스
                   expanded: false
                   items:
-                    - name: OpenMP C 및 C++ 응용 프로그램 프로그램 인터페이스
+                    - name: OpenMP C 및 C++ 애플리케이션 프로그램 인터페이스
                       href: parallel/openmp/openmp-c-and-cpp-application-program-interface.md
                     - name: 소개
                       href: parallel/openmp/1-introduction.md
@@ -11053,7 +11051,7 @@
                       href: data/odbc/data-source-programmatically-creating-a-table-in-an-odbc-data-source.md
                 - name: 다이너셋
                   href: data/odbc/dynaset.md
-                - name: 스냅숏
+                - name: 스냅샷
                   href: data/odbc/snapshot.md
                 - name: RFX(레코드 필드 교환)
                   expanded: false

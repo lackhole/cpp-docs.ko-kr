@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Worker archetype
 ms.assetid: 834145cd-09d3-4149-bc99-620e1871cbfb
-ms.openlocfilehash: 3efd77c38508df8302fa4e1dd5c9b51f66cd5e43
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 7f28b9e64c88a5be440417dd9d22f129ee7d6edf
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915456"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495262"
 ---
 # <a name="worker-archetype"></a>작업자 원형
 
@@ -19,13 +19,13 @@ ms.locfileid: "68915456"
 
 이 원형을 준수 하는 클래스를 구현 하려면 클래스에서 다음 기능을 제공 해야 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[Initialize](#initialize)|요청을 [실행](#execute)하기 위해 요청을 전달 하기 전에 worker 개체를 초기화 하기 위해 호출 됩니다.|
 |[실행](#execute)|작업 항목을 처리 하기 위해 호출 됩니다.|
 |[Terminate](#terminate)|모든 요청이 [실행](#execute)되도록 전달 된 후 작업자 개체의 초기화를 취소 하기 위해 호출 됩니다.|
 
-|Typedef|설명|
+|Typedef|Description|
 |-------------|-----------------|
 |[RequestType](#requesttype)|Worker 클래스에서 처리할 수 있는 작업 항목의 형식에 대 한 typedef입니다.|
 
@@ -37,7 +37,7 @@ ms.locfileid: "68915456"
 
 이러한 클래스는 다음 원형을 따릅니다.
 
-|클래스|설명|
+|클래스|Description|
 |-----------|-----------------|
 |[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|는 스레드 풀에서 요청을 수신 하 고 각 요청에 대해 만들어지고 소멸 된 작업자 개체에 전달 합니다.|
 
@@ -74,7 +74,7 @@ void Execute(
 Worker 클래스가 이해 하는 사용자 지정 매개 변수입니다. `WorkerArchetype::Initialize` 및`Terminate`에도 전달 됩니다.
 
 *pOverlapped*<br/>
-작업 항목이 큐에 대기 된 큐를 만드는 데 사용 되는 [겹쳐진](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) 구조체에 대 한 포인터입니다.
+작업 항목이 큐에 대기 된 큐를 만드는 데 사용 되는 [겹쳐진](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) 구조체에 대 한 포인터입니다.
 
 ## <a name="initialize"></a> WorkerArchetype::Initialize
 
