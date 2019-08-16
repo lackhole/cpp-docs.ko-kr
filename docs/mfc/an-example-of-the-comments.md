@@ -16,11 +16,11 @@ ms.locfileid: "62394691"
 ---
 # <a name="an-example-of-the-comments"></a>주석 예
 
-아래 `CChildFrame` 클래스 내용 일부는 MFC가 클래스에서 사용하는 가장 일반적인 표준 주석을 사용하여 클래스 멤버를 나누는 사용방식을 보여줍니다.
+아래의 `CChildFrame` 클래스 내용 일부는 MFC가 클래스에서 사용하는 일반적인 표준 주석을 최대로 활용하여 클래스 멤버를 사용 방식에 따라 나누는 것을 보여줍니다.
 
 [!code-cpp[NVC_MFCListView#5](../atl/reference/codesnippet/cpp/an-example-of-the-comments_1.h)]
 
-이러한 주석은 비슷한 종류의 클래스 멤버를 포함하는 클래스 선언의 섹션을 일관되게 표시 합니다. 별도의 규칙을 정하기 보다는 이 MFC 규칙 염두해 둡니다.
+이러한 주석은 비슷한 종류의 클래스 멤버를 포함하는 클래스 선언의 섹션을 일관되게 표시합니다. 별도의 규칙을 정하기보다는 이 MFC 규칙 염두에 둡니다.
 
 ## <a name="see-also"></a>참고자료
 
