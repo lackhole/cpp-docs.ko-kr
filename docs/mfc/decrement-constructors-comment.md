@@ -20,7 +20,7 @@ ms.locfileid: "62240863"
 ---
 # <a name="-constructors-comment"></a>// Constructors 주석
 
-`// Constructors` 생성자를 선언 하는 MFC 클래스 선언의 섹션 (에 C++ 의미) 실제로 개체를 사용 하는 데 필요한 초기화 함수 뿐만 합니다. 예를 들어 `CWnd::Create` 이므로 생성자 섹션을 사용 하기 전에 `CWnd` 이 생성 해야 합니다"완전히" 첫 번째 호출 하 여 개체를 C++ 생성자를 호출한 다음는 `Create` 함수. 일반적으로 이러한 멤버는 public입니다.
+C++에서의 MFC 클래스 선언에서 `// Constructors` 섹션은 생성자를 선언하고 객체를 실제로 사용하는 데 필요한 초기화 함수가 위치합니다. 예를 들어 `CWnd` 객체를 사용하기 전에 먼저 C++ 생성자를 호출한 다음 `Create` 함수를 호출하여 "완전히 생성"해야 하므로 `CWnd::Create`는 생성자 섹션에 있습니다. 일반적으로 이러한 멤버는 public입니다.
 
 예를 들어, `CStdioFile` 클래스에는 세 개의 생성자가 있으며 그 중 하나는 [주석 예제](../mfc/an-example-of-the-comments.md) 아래의 목록에 표시됩니다.
 
