@@ -2,12 +2,12 @@
 title: '포팅 가이드: Spy++'
 ms.date: 11/19/2018
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: bca5e912d28124e8d5d6e56cc234ef7bf9bceb89
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 206698d35239f416d2f13891044aa54fe502500a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451128"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511665"
 ---
 # <a name="porting-guide-spy"></a>포팅 가이드: Spy++
 
@@ -65,7 +65,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxv_w32.h
 
 Windows XP는 Microsoft에서 더 이상 지원되지 않으므로 Visual Studio에서 대상으로 지정할 수는 있지만 애플리케이션에서 지원을 단계적으로 중단하고 사용자가 새 버전의 Windows를 채택하도록 장려해야 합니다.
 
-오류를 제거하려면 **프로젝트 속성** 설정을 현재 대상으로 지정하려는 가장 낮은 Windows 버전으로 업데이트하여 WINVER을 정의합니다. 다양한 Windows 릴리스에 대한 값 테이블은 [여기](/windows/desktop/WinProg/using-the-windows-headers)서 확인할 수 있습니다.
+오류를 제거하려면 **프로젝트 속성** 설정을 현재 대상으로 지정하려는 가장 낮은 Windows 버전으로 업데이트하여 WINVER을 정의합니다. 다양한 Windows 릴리스에 대한 값 테이블은 [여기](/windows/win32/WinProg/using-the-windows-headers)서 확인할 수 있습니다.
 
 stdafx.h 파일에 이러한 매크로 정의 중 일부가 포함되어 있었습니다.
 
@@ -404,7 +404,7 @@ DWORD dwWindowsVersion = GetVersion();
 
 이 코드 뒤에는 dwWindowsVersion 값을 검사하여 Windows 95에서 실행 중인지 여부 및 Windows NT 버전을 확인하는 많은 코드가 있습니다. 모두 오래된 코드이므로 코드를 제거하고 해당 변수에 대한 참조를 모두 처리합니다.
 
-[Operating system version changes in Windows 8.1 and Windows Server 2012 R2](https://msdn.microsoft.com/library/windows/desktop/dn302074.aspx)(Windows 8.1 및 Windows Server 2012 R2의 운영 체제 버전 변경 내용) 문서에서 이 상황을 설명합니다.
+[Operating system version changes in Windows 8.1 and Windows Server 2012 R2](/windows/win32/w8cookbook/operating-system-version-changes-in-windows-8-1)(Windows 8.1 및 Windows Server 2012 R2의 운영 체제 버전 변경 내용) 문서에서 이 상황을 설명합니다.
 
 `IsWindows9x`, `IsWindows4x` 및 `IsWindows5x` 운영 체제 버전을 쿼리하는 `CSpyApp` 클래스에 메서드가 있습니다. 이 오래된 애플리케이션에서 사용하는 기술과 관련해서 지원하려는 Windows 버전(Windows 7 이상)이 모두 Windows NT 5에 가깝다는 가정에서 시작하는 것이 좋습니다. 이러한 메서드는 이전 운영 체제의 제한 사항을 처리하는 데 사용됩니다. 따라서 `IsWindows5x`에 대해 TRUE를 반환하고 다른 값에 대해 FALSE를 반환하도록 해당 메서드를 변경했습니다.
 
@@ -520,7 +520,7 @@ msvcrtd.lib;msvcirtd.lib;kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;Debug\Sp
 
 UTF-16 유니코드로 포팅하는 경우 MBCS로 컴파일하는 옵션을 원하는지 여부를 결정해야 합니다.  MBCS를 지원하는 옵션을 포함하려는 경우 컴파일하는 동안 \_MBCS 또는 \_UNICODE가 정의되었는지에 따라 **char** 또는 **wchar_t**로 확인되는 TCHAR 매크로를 문자 형식으로 사용해야 합니다. **wchar_t** 및 관련된 API 대신 TCHAR 및 TCHAR 버전의 다양한 API로 전환하면 간단히 \_UNICODE 대신 \_MBCS 매크로를 정의하여 코드의 MBCS 버전으로 돌아갈 수 있습니다. TCHAR 외에도 널리 사용되는 typedef, 매크로 및 함수의 다양한 TCHAR 버전이 있습니다. 예를 들어 LPCSTR 대신 LPCTSTR을 사용합니다. 프로젝트 속성 대화 상자의 **구성 속성** 아래, **일반** 섹션에서 **문자 집합** 속성을 **MBCS 문자 집합 사용**에서 **유니코드 문자 집합 사용**으로 변경합니다. 이 설정은 컴파일하는 동안 미리 정의되는 매크로에 영향을 줍니다. UNICODE 매크로와 \_UNICODE 매크로가 둘 다 있습니다. 프로젝트 속성은 두 매크로에 일관되게 적용됩니다. Windows 헤더는 unicode를 사용하고 MFC와 같은 Visual C++ 헤더는 \_UNICODE를 사용하지만 하나가 정의될 때 다른 하나도 항상 정의됩니다.
 
-TCHAR를 사용하여 MBCS에서 UTF-16 유니코드로 포팅하는 방법에 대한 유용한 [가이드](https://msdn.microsoft.com/library/cc194801.aspx)가 있습니다. 이 경로를 선택합니다. 먼저, **문자 집합** 속성을 **유니코드 문자 집합 사용**으로 변경하고 프로젝트를 다시 빌드합니다.
+TCHAR를 사용하여 MBCS에서 UTF-16 유니코드로 포팅하는 방법에 대한 유용한 [가이드](/previous-versions/cc194801(v=msdn.10))가 있습니다. 이 경로를 선택합니다. 먼저, **문자 집합** 속성을 **유니코드 문자 집합 사용**으로 변경하고 프로젝트를 다시 빌드합니다.
 
 코드에는 궁극적으로 유니코드를 지원하기 위해 이미 TCHAR를 사용 중인 부분도 있고 그렇지 않은 부분도 있습니다. **char**의 **typedef**인 CHAR 인스턴스를 검색하고 대부분을 TCHAR로 바꾸었습니다. 또한 `sizeof(CHAR)`를 찾았습니다. CHAR에서 TCHAR로 변경할 때마다 일반적으로 문자열의 문자 수를 확인하는 데 주로 사용되는 `sizeof(TCHAR)`로 변경해야 했습니다. 여기서 잘못된 형식을 사용해도 컴파일러 오류가 생성되지 않으므로 이 경우에 약간 주의할 가치가 있습니다.
 
@@ -544,7 +544,7 @@ wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
 
 \_T 매크로는 문자열 리터럴이 MBCS 또는 UNICODE 설정에 따라 **char** 문자열이나 **wchar_t** 문자열로 컴파일되게 하는 효과가 있습니다. Visual Studio에서 \_T로 모든 문자열을 바꾸려면 먼저 **빠른 바꾸기**(키보드: **Ctrl**+**F**) 상자 또는 **파일에서 바꾸기**(키보드: **Ctrl**+**Shift**+**H**)를 연 다음, **정규식 사용** 확인란을 선택합니다. `((\".*?\")|('.+?'))`를 검색 텍스트로 입력하고 `_T($1)`를 바꿀 텍스트로 입력합니다. \_T 매크로가 일부 문자열 앞뒤에 이미 있는 경우 이 절차에서 다시 추가하며, `#include`를 사용하는 경우와 같이 \_T를 원하지 않는 경우도 있으므로 **모두 바꾸기** 대신 **다음 바꾸기**를 사용하는 것이 가장 좋습니다.
 
-이 특정 함수 [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa)는 실제로 Windows 헤더에서 정의되며, 해당 설명서에서 가능한 버퍼 오버런으로 인해 사용하지 않도록 권장합니다. `szTmp` 버퍼에 대한 크기가 지정되지 않으므로 함수에서 버퍼가 기록되는 모든 데이터를 포함할 수 있는지 확인할 방법이 없습니다. 보안 CRT로 포팅하는 방법에 대한 다음 섹션을 참조하세요. 여기서는 다른 유사한 문제를 해결합니다. 결국 [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)로 바꾸었습니다.
+이 특정 함수 [wsprintf](/windows/win32/api/winuser/nf-winuser-wsprintfw)는 실제로 Windows 헤더에서 정의되며, 해당 설명서에서 가능한 버퍼 오버런으로 인해 사용하지 않도록 권장합니다. `szTmp` 버퍼에 대한 크기가 지정되지 않으므로 함수에서 버퍼가 기록되는 모든 데이터를 포함할 수 있는지 확인할 방법이 없습니다. 보안 CRT로 포팅하는 방법에 대한 다음 섹션을 참조하세요. 여기서는 다른 유사한 문제를 해결합니다. 결국 [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)로 바꾸었습니다.
 
 유니코드로 변환할 때 표시되는 다른 일반적인 오류는 다음과 같습니다.
 

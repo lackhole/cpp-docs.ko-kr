@@ -7,16 +7,16 @@ helpviewer_keywords:
 - interfaces, implementing
 - implement interface wizard [C++]
 ms.assetid: 72f8731b-7e36-45db-8b10-7ef211a773cd
-ms.openlocfilehash: 8e166f806d247cd93ff0f471360d749fa95e430b
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: bb1db35e269ef884f3ebdf4564d8f0a3e579db50
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692903"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509518"
 ---
 # <a name="implement-an-interface"></a>인터페이스 구현
 
-인터페이스를 구현하려면 ATL COM 응용 프로그램 또는 ATL 지원이 포함된 MFC 응용 프로그램으로 프로젝트를 만들어야 합니다. [ATL 프로젝트 마법사](../atl/reference/atl-project-wizard.md)를 사용하여 ATL 애플리케이션을 만들거나 [MFC 애플리케이션에 ATL 개체를 추가](../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 애플리케이션에 ATL 지원을 구현할 수 있습니다.
+인터페이스를 구현하려면 ATL COM 애플리케이션 또는 ATL 지원이 포함된 MFC 애플리케이션으로 프로젝트를 만들어야 합니다. [ATL 프로젝트 마법사](../atl/reference/atl-project-wizard.md)를 사용하여 ATL 애플리케이션을 만들거나 [MFC 애플리케이션에 ATL 개체를 추가](../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 애플리케이션에 ATL 지원을 구현할 수 있습니다.
 
 프로젝트를 생성한 후 인터페이스를 구현하려면 먼저 ATL 개체를 추가해야 합니다. ATL 프로젝트에 개체를 추가하는 마법사 목록은 [ATL 프로젝트에 개체 및 컨트롤 추가](../atl/reference/adding-objects-and-controls-to-an-atl-project.md)를 참조하세요.
 
@@ -50,7 +50,7 @@ ms.locfileid: "51692903"
 
 COM 개체의 인터페이스를 구현합니다. 많은 인터페이스의 구현은 Visual Studio 및 Windows와 함께 사용할 수 있는 COM 라이브러리에 포함되어 있습니다. 인터페이스 구현은 해당 개체의 인스턴스를 만드는 경우 개체와 연결됩니다. 또한 개체에서 제공하는 서비스를 제공합니다.
 
-인터페이스 및 구현 설명은 Windows SDK에서 [인터페이스 및 인터페이스 구현](/windows/desktop/com/interfaces-and-interface-implementations)을 참조하세요.
+인터페이스 및 구현 설명은 Windows SDK에서 [인터페이스 및 인터페이스 구현](/windows/win32/com/interfaces-and-interface-implementations)을 참조하세요.
 
 - **구현할 인터페이스 위치**
 

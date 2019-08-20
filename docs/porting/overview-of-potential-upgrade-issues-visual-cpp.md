@@ -2,12 +2,12 @@
 title: 잠재적인 업그레이드 문제 개요(Visual C++)
 ms.date: 05/03/2019
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-ms.openlocfilehash: 27cfe90f33f71d82af90cf4fa62186c1c0a189ce
-ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
+ms.openlocfilehash: 10c2de547611cf7b1b47de2b1ec05dcf419c6225
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66182943"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511544"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>잠재적인 업그레이드 문제 개요(Visual C++)
 
@@ -86,7 +86,7 @@ CRT의 경우 혼합 및 일치가 지원된 적이 없지만, API 화면이 많
 dumpbin.exe /LINKERMEMBER somelibrary.lib
 ```
 
-### <a name="zcwchart-wchart-is-native-type"></a>/Zc:wchar_t(wchar_t를 네이티브 형식으로 인식)
+### <a name="zcwchar_t-wchar_t-is-native-type"></a>/Zc:wchar_t(wchar_t를 네이티브 형식으로 인식)
 
 Microsoft Visual C++ 6.0 및 이전 버전에서는 **wchar_t**가 기본 제공 형식으로 구현되지 않고 wchar.h에서 unsigned short에 대한 typedef로 선언되었습니다. C++ 표준에서는 **wchar_t**가 기본 제공 형식이어야 합니다. typedef 버전을 사용하면 이식성 문제가 발생할 수 있습니다. 이전 버전의 Visual Studio에서 업그레이드하고 코드가 **wchar_t**를 **unsigned short**로 암시적으로 변환하려 하기 때문에 컴파일러 오류 C2664가 발생하는 경우 `/Zc:wchar_t-`를 설정하는 대신 오류를 수정하기 위해 코드를 변경하는 것이 좋습니다. 자세한 내용은 [/Zc:wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조하세요.
 
@@ -168,7 +168,7 @@ Windows API를 직접 또는 간접적으로 사용하는 프로그램을 업그
 
 ATL 및 MFC는 비교적 안정된 API이지만 때때로 변경됩니다. 자세한 내용은 [Visual C++ 변경 기록 2003~2015](visual-cpp-change-history-2003-2015.md), [Visual Studio의 Visual C++에 대한 새로운 기능](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) 및 [Visual Studio의 C++ 규칙 향상](../overview/cpp-conformance-improvements.md)을 참조하세요.
 
-### <a name="lnk-2005-dllmain12-already-defined-in-msvcrtdlib"></a>LNK 2005 _DllMain@12가 MSVCRTD.lib에 이미 정의되어 있습니다.
+### <a name="lnk-2005-_dllmain12-already-defined-in-msvcrtdlib"></a>LNK 2005 _DllMain@12가 MSVCRTD.lib에 이미 정의되어 있습니다.
 
 이 오류는 MFC 애플리케이션에서 발생할 수 있습니다. CRT 라이브러리와 MFC 라이브러리 간의 순서 지정 문제를 나타냅니다. MFC가 new 및 delete 연산자를 제공하도록 먼저 연결되어야 합니다. 오류를 해결하려면 `/NODEFAULTLIB` 스위치를 사용하여 기본 라이브러리 MSVCRTD.lib 및 mfcs140d.lib를 무시합니다. 그런 다음 동일한 라이브러리를 추가 종속성으로 추가합니다.
 
@@ -176,7 +176,7 @@ ATL 및 MFC는 비교적 안정된 API이지만 때때로 변경됩니다. 자�
 
 원래 코드가 32비트 시스템용으로 컴파일된 경우 새로운 32비트 앱 대신(또는 추가로) 64비트 버전을 만들 수 있습니다. 일반적으로 먼저 32비트 모드로 프로그램을 컴파일한 다음 64비트를 시도해야 합니다. 64비트용 컴파일 작업은 간단하지만, 경우에 따라 32비트 빌드에서 숨겨진 버그가 나타날 수 있습니다.
 
-또한 printf 및 scanf 함수의 포인터 크기, 시간 및 크기 값, 형식 지정자와 관련된 가능한 컴파일 시간 및 런타임 문제에 주의해야 합니다. 자세한 내용은 [64비트용 Visual C++ 구성(x64 대상)](../build/configuring-programs-for-64-bit-visual-cpp.md) 및 [일반적인 Visual C++ 64비트 마이그레이션 문제](../build/common-visual-cpp-64-bit-migration-issues.md)를 참조하세요. 추가 마이그레이션 팁은 [64비트 Windows에 대한 프로그래밍 가이드](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)를 참조하세요.
+또한 printf 및 scanf 함수의 포인터 크기, 시간 및 크기 값, 형식 지정자와 관련된 가능한 컴파일 시간 및 런타임 문제에 주의해야 합니다. 자세한 내용은 [64비트용 Visual C++ 구성(x64 대상)](../build/configuring-programs-for-64-bit-visual-cpp.md) 및 [일반적인 Visual C++ 64비트 마이그레이션 문제](../build/common-visual-cpp-64-bit-migration-issues.md)를 참조하세요. 추가 마이그레이션 팁은 [64비트 Windows에 대한 프로그래밍 가이드](/windows/win32/WinProg64/programming-guide-for-64-bit-windows)를 참조하세요.
 
 ## <a name="unicode-vs-mbcsascii"></a>유니코드 및 멀티바이트 문자 집합(MBCS)/ASCII
 

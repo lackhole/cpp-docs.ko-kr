@@ -2,12 +2,12 @@
 title: '방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용'
 ms.date: 04/08/2019
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-ms.openlocfilehash: b46cbdc088908f59d6cbdc0ecd7cd6475da370d8
-ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
+ms.openlocfilehash: e587ae88fe8d38a22b351d87ae585efe82acf091
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67861127"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510379"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용
 
@@ -19,13 +19,13 @@ UWP 앱은 보호된 환경에서 실행되며 이에 따라 플랫폼의 보안
 
 라이브러리의 소스 코드를 사용할 수 있는 경우 금지된 API 호출을 제거할 수 있습니다. 허용되거나 금지되는 API 목록을 비롯한 자세한 내용은 [UWP 앱용 Win32 및 COM API](/uwp/win32-and-com/win32-and-com-for-uwp-apps) 및 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요. 일부 대안은 [UWP 앱에서 Windows API의 대안](/uwp/win32-and-com/alternatives-to-windows-apis-uwp)에서 찾을 수 있습니다.
 
-유니버설 Windows 프로젝트의 참조를 클래식 데스크톱 라이브러리에 추가하려고 하면 라이브러리가 호환되지 않는다는 오류 메시지가 표시됩니다. 정적 라이브러리의 경우 클래식 Win32 애플리케이션에서와 마찬가지로 라이브러리(.lib 파일)를 링커 입력에 추가하기만 하여 라이브러리에 링크할 수 있습니다. 바이너리만 사용할 수 있는 라이브러리의 경우 이것이 유일한 옵션입니다. 정적 라이브러리는 앱의 실행 파일에 링크되지만 UWP 앱에서 사용하는 Win32 DLL은 프로젝트에 포함하고 콘텐츠로 표시하여 앱에 패키지해야 합니다. UWP 앱에서 Win32 DLL을 로드하려면 `LoadLibrary` 또는 `LoadLibraryEx` 대신 [LoadPackagedLibrary](/windows/desktop/api/winbase/nf-winbase-loadpackagedlibrary)도 호출해야 합니다.
+유니버설 Windows 프로젝트의 참조를 클래식 데스크톱 라이브러리에 추가하려고 하면 라이브러리가 호환되지 않는다는 오류 메시지가 표시됩니다. 정적 라이브러리의 경우 클래식 Win32 애플리케이션에서와 마찬가지로 라이브러리(.lib 파일)를 링커 입력에 추가하기만 하여 라이브러리에 링크할 수 있습니다. 바이너리만 사용할 수 있는 라이브러리의 경우 이것이 유일한 옵션입니다. 정적 라이브러리는 앱의 실행 파일에 링크되지만 UWP 앱에서 사용하는 Win32 DLL은 프로젝트에 포함하고 콘텐츠로 표시하여 앱에 패키지해야 합니다. UWP 앱에서 Win32 DLL을 로드하려면 `LoadLibrary` 또는 `LoadLibraryEx` 대신 [LoadPackagedLibrary](/windows/win32/api/winbase/nf-winbase-loadpackagedlibrary)도 호출해야 합니다.
 
 DLL 또는 정적 라이브러리의 소스 코드가 있는 경우 `/ZW`를 사용하여 UWP 프로젝트로 다시 컴파일할 수 있습니다. 이렇게 하면 **솔루션 탐색기**를 사용하여 참조를 추가하고 C++ UWP 앱에서 사용할 수 있습니다. DLL의 경우 내보내기 라이브러리에 링크합니다.
 
 다른 언어로 호출자에게 기능을 노출하기 위해 라이브러리를 Windows 런타임 구성 요소로 변환할 수 있습니다. Windows 런타임 구성 요소는 .NET 및 JavaScript 소비자가 요구하는 방식으로 콘텐츠를 설명하는 .winmd 파일의 형태로 메타데이터를 포함한다는 점에서 일반적인 DLL과 다릅니다. API 요소를 다른 언어에 노출하기 위해 ref 클래스와 같은 C++/CX 구문을 추가하고 클래스를 공용으로 만들거나 [WRL(Windows 런타임 C++ 템플릿 라이브러리)](../windows/windows-runtime-cpp-template-library-wrl.md)을 사용할 수 있습니다.  Windows 10 이상 버전에서는 C++/CX 대신 [C++/WinRT 라이브러리](https://github.com/microsoft/cppwinrt)를 사용할 수 있습니다.
 
-앞의 설명은 다르게 처리되어야 하는 COM 구성 요소의 경우에는 적용되지 않습니다. EXE 또는 DLL에 COM 서버가 있는 경우 [등록이 필요하지 않은 COM 구성 요소](/windows/desktop/sbscs/creating-registration-free-com-objects)로 패키지하는 한 유니버설 Windows 프로젝트에서 사용할 수 있으며 콘텐츠 파일로 프로젝트에 추가하고 [CoCreateInstanceFromApp](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstancefromapp)을 사용하여 인스턴스화할 수 있습니다. 자세한 내용은 [Windows 스토어 C++ 프로젝트에서 Free-COM DLL 사용](https://blogs.msdn.microsoft.com/win8devsupport/2013/05/19/using-free-com-dll-in-windows-store-c-project/)을 참조하세요.
+앞의 설명은 다르게 처리되어야 하는 COM 구성 요소의 경우에는 적용되지 않습니다. EXE 또는 DLL에 COM 서버가 있는 경우 [등록이 필요하지 않은 COM 구성 요소](/windows/win32/sbscs/creating-registration-free-com-objects)로 패키지하는 한 유니버설 Windows 프로젝트에서 사용할 수 있으며 콘텐츠 파일로 프로젝트에 추가하고 [CoCreateInstanceFromApp](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstancefromapp)을 사용하여 인스턴스화할 수 있습니다. 자세한 내용은 [Windows 스토어 C++ 프로젝트에서 Free-COM DLL 사용](https://blogs.msdn.microsoft.com/win8devsupport/2013/05/19/using-free-com-dll-in-windows-store-c-project/)을 참조하세요.
 
 UWP로 포팅하려는 기존 COM 라이브러리가 있는 경우 [WRL(Windows 런타임 C++ 템플릿 라이브러리)](../windows/windows-runtime-cpp-template-library-wrl.md)을 사용하여 Windows 런타임 구성 요소로 변환할 수 있습니다. WRL은 ATL 및 OLE의 모든 기능을 지원하지 않으므로 이러한 포트가 적합한지 여부는 COM 코드가 구성 요소에 필요한 COM, ATL 및 OLE의 어떤 기능에 얼마나 많이 의존하는지에 따라 달라집니다.
 

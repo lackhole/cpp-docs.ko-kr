@@ -2,12 +2,12 @@
 title: Visual C++ 포팅 및 업그레이드 가이드
 ms.date: 09/18/2018
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-ms.openlocfilehash: 5659ca362204c62ab8fb21a74dccf8e29f33912c
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: cd74168419006388b8469086560452a8a99e05e2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450383"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511493"
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ 포팅 및 업그레이드 가이드
 
@@ -67,7 +67,7 @@ Visual Studio의 빌드 시스템을 사용하지 않는 경우 MSBuild를 사�
 
 사용자 인터페이스는 어떤가요? MFC를 사용하는 경우 UI를 업데이트하는 것이 좋습니다. 2008에서 기능 팩으로 도입된 최신 MFC 기능을 사용 중인가요? 전체 앱을 다시 작성하지 않고 앱에 최신 모양과 느낌을 제공하려는 경우 MFC의 리본 API를 사용하거나 MFC의 새로운 기능 중 일부를 사용할 수 있습니다.
 
-프로그램에 XAML 사용자 인터페이스를 제공하려 하지만 UWP 앱을 만들지 않으려는 경우, WPF와 함께 C#을 사용하여 UI 레이어를 만들고 표준 C++ 논리를 DLL로 리팩터링할 수 있습니다. C++/CLI에서 상호 운용성 레이어를 만들어 C#을 네이티브 코드에 연결합니다. 또 다른 옵션은 [C++/CX](https://msdn.microsoft.com/library/windows/apps/xaml/hh699871.aspx) 또는 [C++/WinRT](https://github.com/microsoft/cppwinrt)를 사용하여 UWP 앱을 만드는 것입니다. Windows 10에서는 [Desktop App Converter](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)를 사용하여 코드를 수정하지 않고도 기존 데스크톱 애플리케이션을 UWP 앱으로 패키징할 수 있습니다.
+프로그램에 XAML 사용자 인터페이스를 제공하려 하지만 UWP 앱을 만들지 않으려는 경우, WPF와 함께 C#을 사용하여 UI 레이어를 만들고 표준 C++ 논리를 DLL로 리팩터링할 수 있습니다. C++/CLI에서 상호 운용성 레이어를 만들어 C#을 네이티브 코드에 연결합니다. 또 다른 옵션은 [C++/CX](../cppcx/visual-c-language-reference-c-cx.md) 또는 [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/)를 사용하여 UWP 앱을 만드는 것입니다. Windows 10에서는 [Desktop App Converter](/windows/msix/desktop/desktop-to-uwp-run-desktop-app-converter)를 사용하여 코드를 수정하지 않고도 기존 데스크톱 애플리케이션을 UWP 앱으로 패키징할 수 있습니다.
 
 또는 이제 새로운 요구 사항이 있거나, Windows Phone 또는 Android 디바이스와 같은 Windows 데스크톱 이외의 플랫폼을 대상으로 지정해야 할 필요성을 예상할 수 있습니다. 사용자 인터페이스 코드를 플랫폼 간 UI 라이브러리로 포팅할 수 있습니다. 이러한 UI 프레임워크를 사용하면 여러 디바이스를 대상으로 지정하고 여전히 Visual Studio 및 Visual Studio 디버거를 개발 환경으로 사용할 수 있습니다.
 
