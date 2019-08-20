@@ -8,18 +8,18 @@ helpviewer_keywords:
 - thread-local storage
 - storage, thread local storage
 ms.assetid: a0f1b109-c953-4079-aa10-e47f5483173d
-ms.openlocfilehash: 4b1aa32b384f3a5db5203883c1cc03bd61de7b19
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.openlocfilehash: a1099228e072a772ee7d8e7e93253b674d0cd24b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152133"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500284"
 ---
 # <a name="thread-local-storage"></a>스레드 로컬 스토리지
 
 **Microsoft 전용**
 
-TLS(스레드 로컬 스토리지)는 지정된 다중 스레드 프로세스의 각 스레드에서 스레드별 데이터의 스토리지를 할당하는 메커니즘입니다. 표준 다중 스레드 프로그램에서 데이터는 지정된 프로세스의 모든 스레드에서 공유되지만 스레드 로컬 스토리지는 스레드별 데이터를 할당하기 위한 메커니즘입니다. 스레드에 대한 자세한 내용은 Windows SDK에서 [프로세스 및 스레드](/windows/desktop/ProcThread/processes-and-threads)를 참조하세요.
+TLS(스레드 로컬 스토리지)는 지정된 다중 스레드 프로세스의 각 스레드에서 스레드별 데이터의 스토리지를 할당하는 메커니즘입니다. 표준 다중 스레드 프로그램에서 데이터는 지정된 프로세스의 모든 스레드에서 공유되지만 스레드 로컬 스토리지는 스레드별 데이터를 할당하기 위한 메커니즘입니다. 스레드에 대한 자세한 내용은 Windows SDK에서 [프로세스 및 스레드](/windows/win32/ProcThread/processes-and-threads)를 참조하세요.
 
 Microsoft C 언어에는 스레드 로컬 변수를 선언하기 위해 __declspec 키워드와 함께 사용되는 확장 스토리지 클래스 특성, 스레드가 포함되어 있습니다. 예를 들어, 다음 코드는 정수 스레드 로컬 변수를 선언한 다음 값으로 초기화합니다.
 

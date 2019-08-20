@@ -17,14 +17,14 @@ f1_keywords:
 helpviewer_keywords:
 - __crtLCMapStringW
 ms.assetid: 45b4ac0e-438c-4fa3-b4d1-34195f4467d9
-ms.openlocfilehash: 0c3752baba05e18903c32919505d702081d09dca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e79ac5d4072595ef1034a0483b9edc8eada916d8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468421"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500223"
 ---
-# <a name="crtlcmapstringw"></a>__crtLCMapStringW
+# <a name="__crtlcmapstringw"></a>__crtLCMapStringW
 
 지정된 로캘 종속 변환을 수행하여 하나의 문자열을 다른 문자열에 매핑합니다. 이 함수는 입력 문자열에 대한 정렬 키를 생성하는 데에도 사용될 수 있습니다.
 
@@ -43,7 +43,7 @@ int __crtLCMapStringW(
 #### <a name="parameters"></a>매개 변수
 
 *로캘*<br/>
-로캘 식별자입니다. 로캘은 문자열 매핑 또는 정렬 키 생성을 위한 컨텍스트를 제공합니다. 응용 프로그램은 `MAKELCID` 매크로를 사용하여 로캘 식별자를 만들 수 있습니다.
+로캘 식별자입니다. 로캘은 문자열 매핑 또는 정렬 키 생성을 위한 컨텍스트를 제공합니다. 애플리케이션은 `MAKELCID` 매크로를 사용하여 로캘 식별자를 만들 수 있습니다.
 
 *dwMapFlags*<br/>
 문자열 매핑 또는 정렬 키 생성 시 사용할 변환 형식입니다.
@@ -62,7 +62,7 @@ int __crtLCMapStringW(
 *cchDest*<br/>
 `lpDestStr`이 가리키는 버퍼의 크기(문자)입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 `cchDest` 의 값이 0이 아닌 경우 문자 수 또는 바이트이며, `LCMAP_SORTKEY` 가 지정된 경우 버퍼에 쓰여진 값은 성공을 나타냅니다. 이 수는 null 종결자에 대한 공간을 포함합니다.
 
@@ -72,7 +72,7 @@ int __crtLCMapStringW(
 
 ## <a name="remarks"></a>설명
 
-`cchSrc` 가 0보다 크고 `lpSrcStr` 이 null 종결 문자열인 경우 `__crtLCMapStringW` 는 `cchSrc` 를 문자열 길이로 설정합니다. 그러면 `__crtLCMapStringW` 가 지정된 매개 변수를 사용하여 `LCMapString` 함수의 와이드 문자(유니코드) 버전을 호출합니다. 이 함수의 반환 값 및 매개 변수에 대한 자세한 내용은 [LCMapString](/windows/desktop/api/winnls/nf-winnls-lcmapstringa)을 참조하세요.
+`cchSrc` 가 0보다 크고 `lpSrcStr` 이 null 종결 문자열인 경우 `__crtLCMapStringW` 는 `cchSrc` 를 문자열 길이로 설정합니다. 그러면 `__crtLCMapStringW` 가 지정된 매개 변수를 사용하여 `LCMapString` 함수의 와이드 문자(유니코드) 버전을 호출합니다. 이 함수의 반환 값 및 매개 변수에 대한 자세한 내용은 [LCMapString](/windows/win32/api/winnls/nf-winnls-lcmapstringw)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

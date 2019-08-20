@@ -4,12 +4,12 @@ ms.date: 08/30/2017
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: f05656612e464395117e77c82fb9dc9eb2290e0e
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 9597f04781c9009cf6f8f284348f0831c347201d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451278"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510350"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ 변경 기록 2003 - 2015
 
@@ -277,7 +277,7 @@ ms.locfileid: "66451278"
 
 - **clock**
 
-   이전 버전에서 [clock](../c-runtime-library/reference/clock.md) 함수는 Windows API [GetSystemTimeAsFileTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime)(영문)을 사용하여 구현되었습니다. 이 구현을 통해 clock 함수는 시스템 시간에 따라 달라지므로 단조일 필요가 없었습니다. clock 함수는 [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) (영문)를 기준으로 다시 구현되었으며 현재는 단조입니다.
+   이전 버전에서 [clock](../c-runtime-library/reference/clock.md) 함수는 Windows API [GetSystemTimeAsFileTime](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime)(영문)을 사용하여 구현되었습니다. 이 구현을 통해 clock 함수는 시스템 시간에 따라 달라지므로 단조일 필요가 없었습니다. clock 함수는 [QueryPerformanceCounter](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) (영문)를 기준으로 다시 구현되었으며 현재는 단조입니다.
 
 - **fstat 및 _utime**
 
@@ -313,7 +313,7 @@ ms.locfileid: "66451278"
 
 - **steady_clock**
 
-   [steady_clock](../standard-library/steady-clock-struct.md)의 \<chrono> 구현은 지속성 및 단조성에 대한 C++ 표준 요구 사항을 충족하도록 변경되었습니다. 이제 `steady_clock`은 [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx)를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. 따라서 이제 Visual Studio에서 `steady_clock::time_point`는 `chrono::time_point<steady_clock>`에 대한 typedef이지만, 다른 구현에 이를 반드시 적용할 필요는 없습니다.
+   [steady_clock](../standard-library/steady-clock-struct.md)의 \<chrono> 구현은 지속성 및 단조성에 대한 C++ 표준 요구 사항을 충족하도록 변경되었습니다. 이제 `steady_clock`은 [QueryPerformanceCounter](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter)를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. 따라서 이제 Visual Studio에서 `steady_clock::time_point`는 `chrono::time_point<steady_clock>`에 대한 typedef이지만, 다른 구현에 이를 반드시 적용할 필요는 없습니다.
 
 - **allocators 및 const**
 
@@ -2471,7 +2471,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
    이 변경과 관련된 컴파일러 진단은 없습니다.
 
-   예제
+   예
 
     ```cpp
     #include <type_traits>
@@ -2541,7 +2541,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 - **특성 사용 ATL 코드 지원 중단**(수준 1(`/W1`)이 기본적으로 설정되어 있음)
 
-   이전 버전의 컴파일러에서는 특성 사용 ATL 코드를 지원했습니다. [Visual Studio 2008부터 시작](https://msdn.microsoft.com/library/bb384632)된 특성 사용 ATL 코드 지원 제거의 다음 단계로 특성 사용 ATL 코드가 더 이상 사용되지 않습니다. 이제 컴파일러에서 사용되지 않는 이러한 종류의 코드를 식별하기 위해 컴파일러 경고 C4467을 실행합니다.
+   이전 버전의 컴파일러에서는 특성 사용 ATL 코드를 지원했습니다. [Visual Studio 2008부터 시작](../porting/visual-cpp-what-s-new-2003-through-2015.md#whats-new-for-c-in-visual-studio-2008)된 특성 사용 ATL 코드 지원 제거의 다음 단계로 특성 사용 ATL 코드가 더 이상 사용되지 않습니다. 이제 컴파일러에서 사용되지 않는 이러한 종류의 코드를 식별하기 위해 컴파일러 경고 C4467을 실행합니다.
 
     ```Output
     warning C4467: Usage of ATL attributes is deprecated
@@ -3238,7 +3238,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - 새 람다 표기법 지원에서 IDL uuid 특성에 따옴표가 없는 GUID를 코딩하기 위한 지원은 제외됩니다.
 
-- .NET Framework 4에서는 프로세스를 복구할 수 없는 손상된 상태가 되게 하는 예외인 손상된 상태 예외 개념이 도입되었습니다. 기본적으로 다른 모든 예외를 catch하는 /EHa 컴파일러 옵션을 사용해도 손상된 상태 예외는 catch할 수 없습니다.                 손상된 상태 예외를 명시적으로 catch하려면 __try-\__except 문을 사용합니다. 또는 [HandledProcessCorruptedStateExceptions] 특성을 적용하여 함수가 손상된 상태 예외를 catch할 수 있게 합니다.  이 변경 내용은 주로 손상된 상태 예외를 catch해야 할 수 있는 시스템 프로그래머에게 영향을 줍니다. 8가지 예외는 STATUS_ACCESS_VIOLATION, STATUS_STACK_OVERFLOW, EXCEPTION_ILLEGAL_INSTRUCTION, EXCEPTION_IN_PAGE_ERROR, EXCEPTION_INVALID_DISPOSITION, EXCEPTION_NONCONTINUABLE_EXCEPTION, EXCEPTION_PRIV_INSTRUCTION, STATUS_UNWIND_CONSOLIDATE입니다.                 이러한 예외에 대한 자세한 내용은 [GetExceptionCode](/windows/desktop/Debug/getexceptioncode) 매크로를 참조하세요.
+- .NET Framework 4에서는 프로세스를 복구할 수 없는 손상된 상태가 되게 하는 예외인 손상된 상태 예외 개념이 도입되었습니다. 기본적으로 다른 모든 예외를 catch하는 /EHa 컴파일러 옵션을 사용해도 손상된 상태 예외는 catch할 수 없습니다.                 손상된 상태 예외를 명시적으로 catch하려면 __try-\__except 문을 사용합니다. 또는 [HandledProcessCorruptedStateExceptions] 특성을 적용하여 함수가 손상된 상태 예외를 catch할 수 있게 합니다.  이 변경 내용은 주로 손상된 상태 예외를 catch해야 할 수 있는 시스템 프로그래머에게 영향을 줍니다. 8가지 예외는 STATUS_ACCESS_VIOLATION, STATUS_STACK_OVERFLOW, EXCEPTION_ILLEGAL_INSTRUCTION, EXCEPTION_IN_PAGE_ERROR, EXCEPTION_INVALID_DISPOSITION, EXCEPTION_NONCONTINUABLE_EXCEPTION, EXCEPTION_PRIV_INSTRUCTION, STATUS_UNWIND_CONSOLIDATE입니다.                 이러한 예외에 대한 자세한 내용은 [GetExceptionCode](/windows/win32/Debug/getexceptioncode) 매크로를 참조하세요.
 
 - 수정된 `/GS` 컴파일러 옵션은 이전 버전에 비해 더 포괄적으로 버퍼 오버런으로부터 보호합니다. 이 버전에서는 스택에 추가 보안 검사가 삽입되어 성능이 느려질 수도 있습니다. 새로운 `__declspec(safebuffers)` 키워드를 사용하여 특정 함수에 대한 보안 검사를 삽입하지 않도록 컴파일러에 지시합니다.
 

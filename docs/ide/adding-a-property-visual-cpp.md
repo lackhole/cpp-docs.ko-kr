@@ -12,12 +12,12 @@ helpviewer_keywords:
 - stock properties, about stock properties
 - stock properties
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
-ms.openlocfilehash: 79938cb5c762292c5e1802832477c3a568ae2fdb
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 5c472b74fee690c0cf33f78eca9e2e8462930eb8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504466"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509523"
 ---
 # <a name="add-a-property"></a>속성 추가
 
@@ -149,15 +149,15 @@ ms.locfileid: "66504466"
 
 - `id`
 
-  속성을 식별하는 숫자 ID를 설정합니다. 이 옵션은 사용자 지정 인터페이스의 속성에 사용할 수 없습니다. *MIDL 참조*에서 [id](/windows/desktop/Midl/id)를 확인합니다.
+  속성을 식별하는 숫자 ID를 설정합니다. 이 옵션은 사용자 지정 인터페이스의 속성에 사용할 수 없습니다. *MIDL 참조*에서 [id](/windows/win32/Midl/id)를 확인합니다.
 
 - `helpcontext`
 
-  도움말 파일에서 이 속성에 대한 정보를 볼 수 있는 컨텍스트 ID를 지정합니다. *MIDL 참조*에서 [helpcontext](/windows/desktop/Midl/helpcontext)를 확인합니다.
+  도움말 파일에서 이 속성에 대한 정보를 볼 수 있는 컨텍스트 ID를 지정합니다. *MIDL 참조*에서 [helpcontext](/windows/win32/Midl/helpcontext)를 확인합니다.
 
 - `helpstring`
 
-  적용되는 요소를 설명하는 데 사용되는 문자열을 지정합니다. 기본적으로 `property`&nbsp;*속성&nbsp;이름*으로 설정합니다. *MIDL 참조*에서 [helpstring](/windows/desktop/Midl/helpstring)을 확인합니다.
+  적용되는 요소를 설명하는 데 사용되는 문자열을 지정합니다. 기본적으로 `property`&nbsp;*속성&nbsp;이름*으로 설정합니다. *MIDL 참조*에서 [helpstring](/windows/win32/Midl/helpstring)을 확인합니다.
 
 ### <a name="other-options"></a>기타 옵션
 
@@ -165,17 +165,17 @@ ms.locfileid: "66504466"
 
 |옵션|설명|
 |------------|-----------------|
-|`bindable`|속성이 데이터 바인딩을 지원합니다. *MIDL 참조*에서 [bindable](/windows/desktop/Midl/bindable)을 확인합니다. 속성의 스톡 구현의 경우 기본적으로 이 옵션이 설정되며 변경할 수 없습니다.|
-|`defaultbind`|개체를 가장 잘 보여주는 바인딩할 수 있는 단일 속성임을 나타탭니다. *MIDL 참조*에서 [defaultbind](/windows/desktop/Midl/defaultbind)를 확인합니다.|
-|`displaybind`|사용자에게 바인딩할 수 있는 속성으로 표시합니다. *MIDL 참조*에서 [displaybind](/windows/desktop/Midl/displaybind)를 확인합니다.|
-|`immediatebind`|데이터 바인딩된 개체의 이 속성에 대한 모든 변경 내용을 데이터베이스에 즉시 알립니다. *MIDL 참조*에서 [immediatebind](/windows/desktop/Midl/immediatebind)를 확인합니다.|
-|`defaultcollelem`|속성은 기본 컬렉션의 요소에 대한 접근자 함수입니다. *MIDL 참조*에서 [defaultcollelem](/windows/desktop/Midl/defaultcollelem)을 확인합니다.|
-|`nonbrowsable`|속성 브라우저에 표시하지 않아야 할 인터페이스 또는 dispinterface 멤버의 태그를 지정합니다. *MIDL 참조*에서 [nonbrowsable](/windows/desktop/Midl/nonbrowsable)을 확인합니다.|
-|`requestedit`|속성이 `OnRequestEdit` 알림을 지원함을 나타냅니다. *MIDL 참조*에서 [requestedit](/windows/desktop/Midl/requestedit)를 참조하세요. 속성의 스톡 구현의 경우 기본적으로 이 옵션이 설정되며 변경할 수 없습니다.|
-|`source`|속성의 멤버가 이벤트의 소스입니다. *MIDL 참조*에서 [source](/windows/desktop/Midl/source)를 확인합니다.|
-|`hidden`|속성이 존재하지만 사용자 기반 브라우저에는 표시되지 않아야 함을 나타냅니다. *MIDL 참조*에서 [hidden](/windows/desktop/Midl/hidden)을 확인합니다.|
-|`restricted`|임의로 속성을 호출할 수 없도록 지정합니다. *MIDL 참조*에서 [restricted](/windows/desktop/Midl/restricted)를 확인합니다.|
-|`local`|속성이 원격이 아니라고 MIDL 컴파일러에 지정합니다. *MIDL 참조*에서 [local](/windows/desktop/Midl/local)을 확인합니다.|
+|`bindable`|속성이 데이터 바인딩을 지원합니다. *MIDL 참조*에서 [bindable](/windows/win32/Midl/bindable)을 확인합니다. 속성의 스톡 구현의 경우 기본적으로 이 옵션이 설정되며 변경할 수 없습니다.|
+|`defaultbind`|개체를 가장 잘 보여주는 바인딩할 수 있는 단일 속성임을 나타탭니다. *MIDL 참조*에서 [defaultbind](/windows/win32/Midl/defaultbind)를 확인합니다.|
+|`displaybind`|사용자에게 바인딩할 수 있는 속성으로 표시합니다. *MIDL 참조*에서 [displaybind](/windows/win32/Midl/displaybind)를 확인합니다.|
+|`immediatebind`|데이터 바인딩된 개체의 이 속성에 대한 모든 변경 내용을 데이터베이스에 즉시 알립니다. *MIDL 참조*에서 [immediatebind](/windows/win32/Midl/immediatebind)를 확인합니다.|
+|`defaultcollelem`|속성은 기본 컬렉션의 요소에 대한 접근자 함수입니다. *MIDL 참조*에서 [defaultcollelem](/windows/win32/Midl/defaultcollelem)을 확인합니다.|
+|`nonbrowsable`|속성 브라우저에 표시하지 않아야 할 인터페이스 또는 dispinterface 멤버의 태그를 지정합니다. *MIDL 참조*에서 [nonbrowsable](/windows/win32/Midl/nonbrowsable)을 확인합니다.|
+|`requestedit`|속성이 `OnRequestEdit` 알림을 지원함을 나타냅니다. *MIDL 참조*에서 [requestedit](/windows/win32/Midl/requestedit)를 참조하세요. 속성의 스톡 구현의 경우 기본적으로 이 옵션이 설정되며 변경할 수 없습니다.|
+|`source`|속성의 멤버가 이벤트의 소스입니다. *MIDL 참조*에서 [source](/windows/win32/Midl/source)를 확인합니다.|
+|`hidden`|속성이 존재하지만 사용자 기반 브라우저에는 표시되지 않아야 함을 나타냅니다. *MIDL 참조*에서 [hidden](/windows/win32/Midl/hidden)을 확인합니다.|
+|`restricted`|임의로 속성을 호출할 수 없도록 지정합니다. *MIDL 참조*에서 [restricted](/windows/win32/Midl/restricted)를 확인합니다.|
+|`local`|속성이 원격이 아니라고 MIDL 컴파일러에 지정합니다. *MIDL 참조*에서 [local](/windows/win32/Midl/local)을 확인합니다.|
 
 ## <a name="stock-properties"></a>스톡 속성
 

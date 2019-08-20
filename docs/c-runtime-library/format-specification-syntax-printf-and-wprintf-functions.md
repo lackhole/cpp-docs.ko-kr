@@ -9,12 +9,12 @@ helpviewer_keywords:
 - width fields, printf function
 - precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
-ms.openlocfilehash: 3ba4f91c86727986762b3431c093ee7304a3a83f
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: db144703a89fe1a6a76ed15f1cf77395c4565fab
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915488"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500085"
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>형식 사양 구문: printf 및 wprintf 함수
 
@@ -74,7 +74,7 @@ ms.locfileid: "68915488"
 |**p**|포인터 유형|인수를 16진수로 된 주소로 표시합니다.|
 |**s**|문자열|`printf` 함수와 함께 사용될 때 단일 바이트 또는 멀티바이트 문자열을 지정하고, `wprintf` 함수와 함께 사용될 때는 와이드 문자열을 지정합니다. 첫 번째 null 문자 직전까지 또는 *precision* 값에 도달할 때까지 문자가 표시됩니다.|
 |**S**|문자열|`printf` 함수와 함께 사용될 때 와이드 문자열을 지정하고, `wprintf` 함수와 함께 사용될 때는 단일 바이트 또는 멀티바이트 문자열을 지정합니다. 첫 번째 null 문자 직전까지 또는 *precision* 값에 도달할 때까지 문자가 표시됩니다.|
-|**Z**|`ANSI_STRING` 또는 `UNICODE_STRING` 구조체|[ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-string) 또는 [UNICODE_STRING](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) 구조체의 주소가 인수로 전달될 때 구조체의 `Buffer` 필드에서 가리키는 버퍼에 포함되는 문자열을 표시합니다. **w**의 *size* 한정자 접두사를 사용하여 `UNICODE_STRING` 인수를 지정합니다(예: `%wZ`). 구조체의 `Length` 필드를 문자열의 길이(바이트 단위)로 설정해야 합니다. 구조체의 `MaximumLength` 필드를 버퍼의 길이(바이트 단위)로 설정해야 합니다.<br /><br /> 일반적으로 **Z** 형식 문자는 `dbgPrint` 및 `kdPrint` 등의 변환 사양을 사용하는 드라이버 디버깅 함수에서만 사용됩니다.|
+|**Z**|`ANSI_STRING` 또는 `UNICODE_STRING` 구조체|[ANSI_STRING](/windows/win32/api/ntdef/ns-ntdef-string) 또는 [UNICODE_STRING](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) 구조체의 주소가 인수로 전달될 때 구조체의 `Buffer` 필드에서 가리키는 버퍼에 포함되는 문자열을 표시합니다. **w**의 *size* 한정자 접두사를 사용하여 `UNICODE_STRING` 인수를 지정합니다(예: `%wZ`). 구조체의 `Length` 필드를 문자열의 길이(바이트 단위)로 설정해야 합니다. 구조체의 `MaximumLength` 필드를 버퍼의 길이(바이트 단위)로 설정해야 합니다.<br /><br /> 일반적으로 **Z** 형식 문자는 `dbgPrint` 및 `kdPrint` 등의 변환 사양을 사용하는 드라이버 디버깅 함수에서만 사용됩니다.|
 
 Visual Studio 2015부터 부동 소수점 변환 지정자(**a**, **A**, **e**, **E**, **f**, **F**, **g**, **G**)에 해당하는 인수가 제한 없음, 무한 또는 NAN인 경우 형식이 지정된 출력은 C99 표준을 따릅니다. 이 표에는 형식이 지정된 출력이 나와 있습니다.
 

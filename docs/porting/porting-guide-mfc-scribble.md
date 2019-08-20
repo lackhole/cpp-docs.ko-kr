@@ -2,12 +2,12 @@
 title: '포팅 가이드: MFC Scribble'
 ms.date: 11/19/2018
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-ms.openlocfilehash: 0424b5e8c87c0103b4ebee65765244b40e8fa553
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: e808f67b1479653add27a54ddf91f6578c046734
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448974"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511539"
 ---
 # <a name="porting-guide-mfc-scribble"></a>포팅 가이드: MFC Scribble
 
@@ -65,7 +65,7 @@ Scribble 프로젝트는 유니코드 문자를 사용하여 컴파일되도록 
 _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
 ```
 
-이는 오류가 아니라 경고이며, Visual Studio C++ 프로젝트를 업그레이드할 때 흔히 발생합니다. 애플리케이션이 실행되는 가장 낮은 버전의 Windows를 정의하는 매크로입니다. 경고를 무시하는 경우 현재 버전의 Windows를 의미하는 기본값 _WIN32_WINNT_MAXVER을 수락하는 것입니다. 가능한 값의 테이블은 [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers)(Windows 헤더 사용)을 참조하세요. 예를 들어 Vista부터 모든 버전에서 실행되도록 설정할 수 있습니다.
+이는 오류가 아니라 경고이며, Visual Studio C++ 프로젝트를 업그레이드할 때 흔히 발생합니다. 애플리케이션이 실행되는 가장 낮은 버전의 Windows를 정의하는 매크로입니다. 경고를 무시하는 경우 현재 버전의 Windows를 의미하는 기본값 _WIN32_WINNT_MAXVER을 수락하는 것입니다. 가능한 값의 테이블은 [Using the Windows Headers](/windows/win32/WinProg/using-the-windows-headers)(Windows 헤더 사용)을 참조하세요. 예를 들어 Vista부터 모든 버전에서 실행되도록 설정할 수 있습니다.
 
 ```cpp
 #define _WIN32_WINNT _WIN32_WINNT_VISTA
