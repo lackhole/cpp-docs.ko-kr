@@ -53,14 +53,14 @@ helpviewer_keywords:
 - _exec function
 - _texecvpe function
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
-ms.openlocfilehash: 72300f754015e54daf14863ca2ae677bde8f7d1a
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: d31192a25cce86dad6f8e1e8b0258a457d0a5436
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746203"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500132"
 ---
-# <a name="exec-wexec-functions"></a>_exec, _wexec 함수
+# <a name="_exec-_wexec-functions"></a>_exec, _wexec 함수
 
 이 패밀리의 다음 각 함수는 새 프로세스를 로드하고 실행합니다.
 
@@ -80,9 +80,9 @@ ms.locfileid: "57746203"
 |`p`|`PATH` 환경 변수는 실행할 파일을 찾는 데 사용됩니다.|
 |`v`|명령줄 인수에 대한 포인터의 배열인 `argv`가 `_exec`로 전달됩니다. 새 프로세스의 매개 변수 개수가 가변적인 경우 일반적으로 사용됩니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
-`_exec` 함수는 새 프로세스를 로드하고 실행합니다. 모든 `_exec` 함수는 동일한 운영 체제 함수([CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa))를 사용합니다. `_exec` 함수는 멀티바이트 문자열 인수를 적절하게 자동으로 처리하여 현재 사용 중인 멀티바이트 코드 페이지에 따라 멀티바이트 문자 시퀀스를 인식합니다. `_wexec` 함수는 `_exec` 함수의 와이드 문자 버전입니다. `_wexec` 함수는 멀티바이트 문자열을 처리하지 않는다는 점만 제외하면 자신의 `_exec` 패밀리 대응 함수와 동일하게 작동합니다.
+`_exec` 함수는 새 프로세스를 로드하고 실행합니다. 모든 `_exec` 함수는 동일한 운영 체제 함수([CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw))를 사용합니다. `_exec` 함수는 멀티바이트 문자열 인수를 적절하게 자동으로 처리하여 현재 사용 중인 멀티바이트 코드 페이지에 따라 멀티바이트 문자 시퀀스를 인식합니다. `_wexec` 함수는 `_exec` 함수의 와이드 문자 버전입니다. `_wexec` 함수는 멀티바이트 문자열을 처리하지 않는다는 점만 제외하면 자신의 `_exec` 패밀리 대응 함수와 동일하게 작동합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -105,7 +105,7 @@ ms.locfileid: "57746203"
 >  문자열에 포함된 공백으로 인해 예기치 않은 동작이 발생할 수 있습니다. 예를 들어 `_exec`를 전달하면 문자열 `"hi there"`는 두 개의 인수 `"hi"` 및 `"there"`를 가져오는 새 프로세스가 됩니다. 새 프로세스에서 "hi there"라는 파일을 열도록 의도한 것이라면 이 프로세스는 실패한 것입니다. `"\"hi there\""`처럼 문자열을 따옴표로 묶으면 이러한 문제를 피할 수 있습니다.
 
 > [!IMPORTANT]
->  내용을 명시적으로 확인하지 않고 사용자 입력을 `_exec`에 전달하지 마세요. `_exec`은 [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)를 호출합니다. 따라서 정규화되지 않은 경로 이름을 사용하는 경우 보안 취약성이 발생할 수 있음을 기억해야 합니다.
+>  내용을 명시적으로 확인하지 않고 사용자 입력을 `_exec`에 전달하지 마세요. `_exec`은 [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw)를 호출합니다. 따라서 정규화되지 않은 경로 이름을 사용하는 경우 보안 취약성이 발생할 수 있음을 기억해야 합니다.
 
 `_exec` 함수는 자신의 매개 변수에 대한 유효성을 검사합니다. 예상 매개 변수가 null 포인터이거나 빈 문자열이거나 생략된 경우 `_exec` 함수는 [매개 변수 유효성 검사](../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 계속해서 실행하도록 허용한 경우 이러한 함수는 `errno` 를 `EINVAL` 로 설정하고 -1을 반환합니다. 새로운 프로세스가 실행되지 않습니다.
 
@@ -121,7 +121,7 @@ ms.locfileid: "57746203"
 
 `_exec` 호출은 열린 파일의 변환 모드를 유지하지 않습니다. 새 프로세스가 호출 프로세스에서 상속된 파일을 사용해야 하는 경우 [_setmode](../c-runtime-library/reference/setmode.md) 루틴을 사용하여 이러한 파일의 변환 모드를 원하는 모드로 설정합니다. `fflush` 함수 호출 전에 모든 스트림을 명시적으로 플러시하거나(`_flushall` 또는 `_exec` 사용) 닫아야 합니다. `_exec` 루틴에 대한 호출로 생성된 새 프로세스에서 신호 설정은 유지되지 않습니다. 신호 설정은 새 프로세스에서 기본값으로 다시 설정됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```
 // crt_args.c

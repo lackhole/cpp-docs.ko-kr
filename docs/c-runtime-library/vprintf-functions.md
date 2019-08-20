@@ -15,12 +15,12 @@ helpviewer_keywords:
 - vprintf function
 - formatted text [C++]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
-ms.openlocfilehash: c45197c9008c2d0b6a0519d947ca75f55a7960fd
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: eb8a2829540876936f6c57745fb56e7d19f16394
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747848"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498880"
 ---
 # <a name="vprintf-functions"></a>vprintf 함수
 
@@ -35,7 +35,7 @@ ms.locfileid: "57747848"
 |[_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l](../c-runtime-library/reference/vsprintf-p-vsprintf-p-l-vswprintf-p-vswprintf-p-l.md)|[vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](../c-runtime-library/reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md)|
 |[_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|[_vsnprintf, _vsnwprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md)|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `vprintf` 함수는 다음 표에 나열된 상대 함수와 비슷합니다. 그러나 각 `vprintf` 함수는 인수 목록에 대한 포인터를 수락하지만 각 상대 함수는 인수 목록을 수락합니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "57747848"
 **vsprintf**, `vswprintf`, `_vsnprintf` 및 `_vsnwprintf`의 경우 중복되는 문자열 간에 복사가 진행되면 이 동작은 정의되지 않습니다.
 
 > [!IMPORTANT]
->  *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요. 이러한 함수의 보안 버전을 사용하는 경우(**_s** 또는 **_p** 접미사) 사용자 제공 형식 문자열은 사용자 제공 문자열에 잘못된 형식 지정 문자가 포함되어 있으면 잘못된 매개 변수 예외를 트리거할 수 있습니다.
+>  *format*이 사용자 정의 문자열이 아닌지 확인하세요. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요. 이러한 함수의 보안 버전을 사용하는 경우( **_s** 또는 **_p** 접미사) 사용자 제공 형식 문자열은 사용자 제공 문자열에 잘못된 형식 지정 문자가 포함되어 있으면 잘못된 매개 변수 예외를 트리거할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
