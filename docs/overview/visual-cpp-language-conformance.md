@@ -1,16 +1,16 @@
 ---
 title: Microsoft C++ 언어 규칙 테이블
-ms.date: 07/02/2019
+ms.date: 08/12/2019
 ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 2b5d7774734eae992935af9bd4abd408dd387d7d
-ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
+ms.openlocfilehash: 15226d41991d5a09d104d2edbfb3dbf2f7432b65
+ms.sourcegitcommit: db1ed91fa7451ade91c3fb76bc7a2b857f8a5eef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552356"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68980525"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ 언어 규칙 테이블
 
@@ -23,7 +23,7 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 
 ## <a name="compiler-features"></a>컴파일러 기능
 
-|기능 영역| |
+| | |
 |----|---|
 |__C++03/11 핵심 언어 기능__|__지원됨__|
 |&nbsp;&nbsp;그 밖의 모든 항목|VS 2015 <sup>[A](#note_A)</sup>|
@@ -83,10 +83,6 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0145R3 식 계산 순서 구체화](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0145r3.pdf)<br/>&nbsp;&nbsp;[P0400R0 함수 인수 평가 순서(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0400r0.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0195R2 using 선언의 팩 확장](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0195r2.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0283R2 인식할 수 없는 특성 무시](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0283r2.html)|VS 2015 <sup>[14](#note_14)</sup>|
-
-
-|기능 영역| |
-|----|---|
 |__C++17 핵심 언어 기능(결함 보고서)__|__지원됨__|
 |&nbsp;&nbsp;[P0702R1 이니셜라이저 목록 작업자(initializer-list actors)에 대한 클래스 템플릿 인수 추론 문제 해결(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0702r1.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0961R1 Relaxing the structured bindings customization point finding rules](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0961r1.html)(P0961R1 구조적 바인딩 사용자 지정 지점 찾기 규칙 완화)|VS 2019 16.0 <sup>[17](#note_17)</sup>|
@@ -96,15 +92,11 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0929R2 Checking for abstract class types](https://wg21.link/P0929R2)(P0929R2 추상 클래스 형식 확인)|아니요|
 |&nbsp;&nbsp;[P1009R2 Array size deduction in new-expressions](https://wg21.link/P1009R2)(P1009R2 새 식의 배열 크기 감소)|아니요|
 |&nbsp;&nbsp;[P1286R2 Contra CWG DR1778](https://wg21.link/P1286R2)|아니요|
-|기능 영역| |
-|----|---|
 |__C++20 핵심 언어 기능__|__지원됨__|
 |&nbsp;&nbsp;[P0704R1 멤버에 대한 const lvalue ref-qualified 포인터 수정(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0704r1.html)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P1041R4 Make char16_t/char32_t string literals be UTF-16/32](https://wg21.link/P1041R4)(P1041R4 char16_t/char32_t 문자열 리터럴을 UTF-16/32로 설정)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P1330R0 Changing the active member of a union inside constexpr](https://wg21.link/P1330R0)(P1330R0 constexpr 내부 공용 구조체의 활성 멤버 변경)|VS 2017 15.0 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0972R0 noexcept For \<chrono> zero(), min(), max()](https://wg21.link/P0972R0)(P0972R0 <chrono> zero(), min(), max()에 대한 noexcept)|VS 2017 15.7 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0515R3 3방향(우주선) 비교 연산자 <=>](https://wg21.link/P0515R3)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
-|&nbsp;&nbsp;[P1008R1 Prohibiting aggregates with user-declared constructors](https://wg21.link/P1008R1)(P1008R1 사용자 선언 생성자를 사용하여 집계 금지)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0329R4 지정된 초기화(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0409R2 Allowing lambda-capture \[=, this\]](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0409r2.html)(P0409R2 람다 캡처 [=, this] 허용)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0515R3 3방향(우주선) 비교 연산자 <=>](https://wg21.link/P0515R3)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
@@ -114,7 +106,6 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0641R2 const mismatch with defaulted copy constructor](https://wg21.link/P0641R2)(P0641R2 기본 복사 생성자와 const 불일치)|Partial|
 |&nbsp;&nbsp;[P0306R4 쉼표 생략 및 쉼표 삭제에 \_\_VA_OPT\_\_ 추가(영문)](https://wg21.link/P0306R4)|아니요|
 |&nbsp;&nbsp;[P0315R4 Allowing lambdas in unevaluated contexts](https://wg21.link/P0315R4)(P0315R4 평가되지 않은 컨텍스트에서 람다 허용)|아니요|
-|&nbsp;&nbsp;[P0409R2 Allowing lambda-capture \[=, this\]](https://wg21.link/P0409R2)(P0409R2 람다 캡처 [=, this] 허용)|아니요|
 |&nbsp;&nbsp;[P0428R2 일반 람다에 대한 친숙한 템플릿 구문(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0428r2.pdf)|아니요|
 |&nbsp;&nbsp;[P0479R5 \[\[likely\]\] and \[\[unlikely\]\] attributes](https://wg21.link/P0479R5)(P0479R5 [[likely]] 및 [[unlikely]] 특성)|아니요|
 |&nbsp;&nbsp;[P0542R5 Contracts](https://wg21.link/P0542R5)(P0542R5 계약)|아니요|
@@ -153,7 +144,7 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 
 ## <a name="standard-library-features"></a>표준 라이브러리 기능
 
-|기능 영역| |
+| | |
 |---|---|
 |__C++20 표준 라이브러리 기능__|__지원됨__|
 |&nbsp;&nbsp;[P0809R0 정렬되지 않은 컨테이너 비교](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0809r0.pdf)| VS 2010 <sup>[14](#note_14)</sup>|

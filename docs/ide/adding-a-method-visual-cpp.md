@@ -10,12 +10,12 @@ helpviewer_keywords:
 - methods [C++], adding using wizards
 - IDL attributes, add method wizard
 ms.assetid: 4ba4e45f-fa38-4d5e-af44-cbec0a7ab558
-ms.openlocfilehash: 23fb05e633713016b1f6289f73a916502736af10
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: b0c8ddabc4ed08fd217545bad269f0b2e48dd49e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692718"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509541"
 ---
 # <a name="add-a-method"></a>메서드 추가
 
@@ -133,25 +133,25 @@ ms.locfileid: "51692718"
 
 - `id`
 
-  메서드를 식별하는 숫자 ID를 설정합니다. 자세한 내용은 *MIDL 참조*에서 [ID](/windows/desktop/Midl/id)를 참조하세요.
+  메서드를 식별하는 숫자 ID를 설정합니다. 자세한 내용은 *MIDL 참조*에서 [ID](/windows/win32/Midl/id)를 참조하세요.
 
   이 상자는 사용자 지정 인터페이스에는 사용할 수 없으며 MFC dispinterface에 사용할 수 없습니다.
 
 - `call_as`
 
-  이 로컬 메서드를 매핑할 수 있는 원격 메서드의 이름을 지정합니다. 자세한 내용은 *MIDL 참조*에서 [call_as](/windows/desktop/Midl/call-as)를 참조하세요.
+  이 로컬 메서드를 매핑할 수 있는 원격 메서드의 이름을 지정합니다. 자세한 내용은 *MIDL 참조*에서 [call_as](/windows/win32/Midl/call-as)를 참조하세요.
 
   MFC dispinterface에는 사용할 수 없습니다.
 
 - `helpcontext`
 
-  도움말 파일에서 사용자가 이 메서드에 대한 정보를 볼 수 있는 컨텍스트 ID를 지정합니다. 자세한 내용은 *MIDL 참조*에서 [helpcontext](/windows/desktop/Midl/helpcontext)를 참조하세요.
+  도움말 파일에서 사용자가 이 메서드에 대한 정보를 볼 수 있는 컨텍스트 ID를 지정합니다. 자세한 내용은 *MIDL 참조*에서 [helpcontext](/windows/win32/Midl/helpcontext)를 참조하세요.
 
   MFC dispinterface에는 사용할 수 없습니다.
 
 - `helpstring`
 
-  적용되는 요소를 설명하는 데 사용되는 문자열을 지정합니다. 기본적으로 "메서드 *메서드 이름*"으로 설정됩니다. 자세한 내용은 *MIDL 참조*에서 [helpstring](/windows/desktop/Midl/helpstring)을 참조하세요.
+  적용되는 요소를 설명하는 데 사용되는 문자열을 지정합니다. 기본적으로 "메서드 *메서드 이름*"으로 설정됩니다. 자세한 내용은 *MIDL 참조*에서 [helpstring](/windows/win32/Midl/helpstring)을 참조하세요.
 
   MFC dispinterface에는 사용할 수 없습니다.
 
@@ -161,8 +161,8 @@ ms.locfileid: "51692718"
 
   |특성|설명|
   |---------------|-----------------|
-  |`hidden`|메서드가 존재하지만 사용자 기반 브라우저에는 표시되지 않습니다. 자세한 내용은 *MIDL 참조*에서 [hidden](/windows/desktop/Midl/hidden)을 참조하세요.|
-  |`source`|메서드의 멤버가 이벤트의 소스입니다. 자세한 내용은 *MIDL 참조*에서 [원본](/windows/desktop/Midl/source)을 참조하세요.|
-  |`local`|메서드가 원격이 아니라고 MIDL 컴파일러에 지정합니다. 자세한 내용은 *MIDL 참조*에서 [로컬](/windows/desktop/Midl/local)을 참조하세요.|
-  |`restricted`|메서드를 임의로 호출할 수 없도록 지정합니다. 자세한 내용은 *MIDL 참조*에서 [restricted](/windows/desktop/Midl/restricted)를 참조하세요.|
-  |`vararg`|메서드가 가변 개수의 인수를 사용하도록 지정합니다. 이 작업을 수행하려면 마지막 인수는 나머지 인수를 포함하는 안전한 `VARIANT` 형식의 배열이어야 합니다. 자세한 내용은 *MIDL 참조*에서 [vararg](/windows/desktop/Midl/vararg)를 참조하세요.|
+  |`hidden`|메서드가 존재하지만 사용자 기반 브라우저에는 표시되지 않습니다. 자세한 내용은 *MIDL 참조*에서 [hidden](/windows/win32/Midl/hidden)을 참조하세요.|
+  |`source`|메서드의 멤버가 이벤트의 소스입니다. 자세한 내용은 *MIDL 참조*에서 [원본](/windows/win32/Midl/source)을 참조하세요.|
+  |`local`|메서드가 원격이 아니라고 MIDL 컴파일러에 지정합니다. 자세한 내용은 *MIDL 참조*에서 [로컬](/windows/win32/Midl/local)을 참조하세요.|
+  |`restricted`|메서드를 임의로 호출할 수 없도록 지정합니다. 자세한 내용은 *MIDL 참조*에서 [restricted](/windows/win32/Midl/restricted)를 참조하세요.|
+  |`vararg`|메서드가 가변 개수의 인수를 사용하도록 지정합니다. 이 작업을 수행하려면 마지막 인수는 나머지 인수를 포함하는 안전한 `VARIANT` 형식의 배열이어야 합니다. 자세한 내용은 *MIDL 참조*에서 [vararg](/windows/win32/Midl/vararg)를 참조하세요.|

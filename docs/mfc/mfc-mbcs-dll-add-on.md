@@ -13,7 +13,7 @@ ms.locfileid: "65524812"
 ---
 # <a name="mfc-mbcs-dll-add-on"></a>MFC MBCS DLL 추가 기능
 
-MFC에 대 한 지원 및 멀티 바이트 문자 집합 (MBCS) 라이브러리의 Visual Studio 2013 이상 Visual Studio를 설치 하는 동안는 추가 단계가 필요 합니다.
+MFC와 멀티 바이트 문자 집합(MBCS) 라이브러리의 지원을 위해 Visual Studio 2013 이상에서 Visual Studio를 설치하는 동안 추가 단계가 필요합니다.
 
 **Visual Studio 2013**: 기본적으로 Visual Studio 2013에 설치 하는 MFC 라이브러리에는 유니코드 개발만 지원 합니다. 에 Visual Studio 2013의 MFC 프로젝트를 빌드하려면 MBCS Dll이 필요 합니다 **문자 집합** 속성이로 설정 **멀티 바이트 문자 집합 사용** 또는 **설정 되지 않은**합니다. DLL을 다운로드 [Visual Studio 2013 용 멀티 바이트 MFC 라이브러리](https://www.microsoft.com/download/details.aspx?id=40770)합니다.
 
