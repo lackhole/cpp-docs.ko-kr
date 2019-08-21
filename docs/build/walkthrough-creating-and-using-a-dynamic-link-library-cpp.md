@@ -2,17 +2,17 @@
 title: '연습: 자체 동적 연결 라이브러리 만들기 및 사용(C++)'
 description: C++를 사용하여 Visual Studio에서 Windows DLL(동적 연결 라이브러리)을 만듭니다.
 ms.custom: conceptual
-ms.date: 07/17/2019
+ms.date: 08/19/2019
 helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: 8ca89471177ba2d1fa98bfaf51b86ed15dcd6d2f
-ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
+ms.openlocfilehash: 9dffec9d7d974ceb3bf1ca4546a303fab47ee0be
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299822"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630675"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 자체 동적 연결 라이브러리 만들기 및 사용(C++)
 
@@ -32,7 +32,7 @@ ms.locfileid: "68299822"
 
 정적으로 연결된 라이브러리와 마찬가지로, DLL은 이름으로 변수, 함수 및 리소스를 _내보내고_, 앱은 해당 이름을 _가져와서_ 해당 변수, 함수 및 리소스를 사용합니다. 정적으로 연결된 라이브러리와 달리, Windows는 링크 타임에 앱의 가져오기를 DLL의 내보내기와 연결하는 것이 아니라 로드 시간 또는 런타임에 앱의 가져오기를 DLL의 내보내기에 연결합니다. Windows에서는 이렇게 연결하려면 표준 C++ 컴파일 모델에 속하지 않는 추가 정보가 필요합니다. MSVC 컴파일러는 C++에 대한 몇 가지 Microsoft 전용 확장을 구현하여 이 추가 정보를 제공합니다. 이 연습에서는 내용을 전개해가면서 해당 확장을 설명합니다.
 
-이 연습에서는 두 개의 Visual Studio 솔루션을 만듭니다. 하나는 DLL을 빌드하는 솔루션이고, 다른 하나는 클라이언트 앱을 빌드하는 솔루션입니다. DLL은 플랫폼, 호출 및 연결 규칙이 일치하는 한, 다른 언어를 사용하여 빌드된 앱에서 호출할 수 있도록 C 호출 규칙을 사용합니다. 클라이언트 앱은 Windows가 로드 시간에 앱을 DLL에 연결하는 ‘암시적 연결’을  사용합니다. 이 연결을 통해 앱은 DLL에서 제공한 함수를 정적으로 연결된 라이브러리의 함수처럼 호출할 수 있습니다.
+이 연습에서는 두 개의 Visual Studio 솔루션을 만듭니다. 하나는 DLL을 빌드하는 솔루션이고, 다른 하나는 클라이언트 앱을 빌드하는 솔루션입니다. DLL은 플랫폼, 호출 및 연결 규칙이 일치하는 한, 다른 언어를 사용하여 빌드된 앱에서 호출할 수 있도록 C 호출 규칙을 사용합니다. 클라이언트 앱은 Windows가 로드 시간에 앱을 DLL에 연결하는 ‘암시적 연결’을 사용합니다. 이 연결을 통해 앱은 DLL에서 제공한 함수를 정적으로 연결된 라이브러리의 함수처럼 호출할 수 있습니다.
 
 이 연습에서는 일부 일반적인 상황은 다루지 않습니다. 다른 프로그래밍 언어로 C++ DLL 사용을 표시하지 않으며, 리소스 전용 DLL을 만드는 방법도 보여 주지 않습니다. 또한 로드 시간이 아니라 런타임에 DLL을 로드하는 명시적 연결 사용도 보여 주지 않습니다. Visual Studio를 사용 하 여 이러한 모든 작업을 수행할 수 있습니다. DLL에 대한 자세한 내용의 링크는 [Visual Studio에서 C/C++ DLL 만들기](dlls-in-visual-cpp.md)를 참조하세요. 암시적 연결 및 명시적 연결에 대한 자세한 내용은 [사용할 연결 방법 결정](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)을 참조하세요. C 언어 연결 규칙을 사용하는 프로그래밍 언어로 사용할 C++ DLL을 만드는 방법에 대한 자세한 내용은 [C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기](exporting-cpp-functions-for-use-in-c-language-executables.md)를 참조하세요. .NET 언어로 사용할 DLL을 만드는 방법에 대한 자세한 내용은 [Visual Basic 애플리케이션에서 DLL 함수 호출](calling-dll-functions-from-visual-basic-applications.md)을 참조하세요.
 
@@ -210,7 +210,7 @@ ms.locfileid: "68299822"
 
    ```cpp
    // MathLibrary.cpp : Defines the exported functions for the DLL.
-   #include "stdafx.h" // use pch.h in Visual Studio 2019
+   #include "pch.h" // use stdafx.h in Visual Studio 2017 and earlier
    #include <utility>
    #include <limits.h>
    #include "MathLibrary.h"
@@ -284,7 +284,7 @@ ms.locfileid: "68299822"
 
 ## <a name="create-a-client-app-that-uses-the-dll"></a>DLL을 사용하는 클라이언트 앱 만들기
 
-DLL을 만들 때는 DLL을 사용하는 방법에 대해 생각해야 합니다. DLL에서 내보낸 함수를 호출하는 코드를 컴파일하려면 클라이언트 소스 코드에 선언을 포함해야 합니다. 링크 타임에 DLL 함수에 대한 해당 호출이 확인되면 링커는 실제 코드 대신 함수를 찾는 방법에 대한 Windows의 정보를 포함하는 특수 라이브러리 파일인 ‘가져오기 라이브러리’가  있어야 합니다. 또한 런타임에 운영 체제가 찾을 수 있는 위치에서 클라이언트가 DLL을 사용할 수 있어야 합니다.
+DLL을 만들 때는 DLL을 사용하는 방법에 대해 생각해야 합니다. DLL에서 내보낸 함수를 호출하는 코드를 컴파일하려면 클라이언트 소스 코드에 선언을 포함해야 합니다. 링크 타임에 DLL 함수에 대한 해당 호출이 확인되면 링커는 실제 코드 대신 함수를 찾는 방법에 대한 Windows의 정보를 포함하는 특수 라이브러리 파일인 ‘가져오기 라이브러리’가 있어야 합니다. 또한 런타임에 운영 체제가 찾을 수 있는 위치에서 클라이언트가 DLL을 사용할 수 있어야 합니다.
 
 자체 DLL이든 또는 타사 DLL이든 관계없이 DLL을 사용하려면 클라이언트 앱 프로젝트에서 DLL 내보내기, 링커의 가져오기 라이브러리 및 DLL 자체를 선언하는 헤더를 찾아야 합니다. 한 가지 방법은 해당 파일을 모두 클라이언트 프로젝트에 복사하는 것입니다. 클라이언트가 개발 중일 때 변경될 가능성이 없는 타사 DLL의 경우 이 매서드가 DLL을 사용하는 최상의 방법이 될 수 있습니다. 그러나 DLL을 빌드하기도 할 경우에는 중복을 피하는 것이 좋습니다. 개발 중인 DLL 파일의 복사본을 만드는 경우 실수로 한 복사본의 헤더 파일은 변경하고 다른 복사본의 헤더 파일은 변경하지 않거나 오래된 라이브러리를 사용할 수 있습니다. 이 문제를 방지하려면 클라이언트 프로젝트에 포함 경로를 설정하여 DLL 프로젝트의 DLL 헤더 파일을 포함하는 것이 좋습니다. 또한 클라이언트 프로젝트에 라이브러리 경로를 설정하여 DLL 프로젝트의 DLL 가져오기 라이브러리를 포함합니다. 마지막으로 DLL 프로젝트의 빌드된 DLL을 빌드 출력 디렉터리에 복사합니다. 이 단계에서는 클라이언트 앱이 사용자가 빌드한 것과 같은 DLL 코드를 사용할 수 있습니다.
 
@@ -470,7 +470,7 @@ int main()
 
 이제 DLL과 클라이언트 애플리케이션을 만들었으므로 실험할 수 있습니다. 클라이언트 앱의 코드에 중단점을 설정하고 디버거에서 앱을 실행합니다. 라이브러리 호출을 한 단계씩 코드 실행할 때 어떤 일이 발생하는지 확인합니다. 라이브러리에 DLL을 사용하는 다른 함수를 추가하거나, DLL을 사용하는 다른 클라이언트 앱을 작성합니다.
 
-앱을 배포할 때 앱에 사용되는 DLL도 배포해야 합니다. 직접 빌드하거나 타사에서 포함하는 DLL을 앱에서 사용할 수 있도록 하는 가장 간단한 방법은 DLL을 앱과 같은 디렉터리에 배치하는 것입니다. 이를 ‘app-local 배포’라고도 합니다.  배포에 대한 자세한 내용은 [Deployment in Visual C++](../windows/deployment-in-visual-cpp.md)를 참조하세요.
+앱을 배포할 때 앱에 사용되는 DLL도 배포해야 합니다. 직접 빌드하거나 타사에서 포함하는 DLL을 앱에서 사용할 수 있도록 하는 가장 간단한 방법은 DLL을 앱과 같은 디렉터리에 배치하는 것입니다. 이를 ‘app-local 배포’라고도 합니다. 배포에 대한 자세한 내용은 [Deployment in Visual C++](../windows/deployment-in-visual-cpp.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

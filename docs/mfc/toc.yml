@@ -11,22 +11,7 @@
         - name: 일반 MFC 항목
           href: general-mfc-topics.md
         - name: MFC 소스 파일 사용
-          expanded: false
-          items:
-            - name: MFC 소스 파일 사용
-              href: using-the-mfc-source-files.md
-            - name: 주석 예
-              href: an-example-of-the-comments.md
-            - name: '-- 구현 주석'
-              href: decrement-implementation-comment.md
-            - name: '-- 생성자 주석'
-              href: decrement-constructors-comment.md
-            - name: '-- 특성 주석'
-              href: decrement-attributes-comment.md
-            - name: '-- 작업 주석'
-              href: decrement-operations-comment.md
-            - name: '-- 재정의 가능 주석'
-              href: decrement-overridables-comment.md
+          href: using-the-mfc-source-files.md
         - name: MFC 라이브러리 버전
           expanded: false
           items:

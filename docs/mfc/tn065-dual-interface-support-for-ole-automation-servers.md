@@ -9,12 +9,12 @@ helpviewer_keywords:
 - ACDUAL sample [MFC]
 - Automation servers [MFC], dual-interface support
 ms.assetid: b5c8ed09-2f7f-483c-80fc-2a47ad896063
-ms.openlocfilehash: afcbfd643d8b931e61b0f011b66482be5b2bcc82
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1508b5219f7bb7fd2e9c9a56c42c30bb99686804
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511005"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630388"
 ---
 # <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE 자동화 서버에 대 한 이중 인터페이스 지원
 
@@ -55,7 +55,7 @@ interface IDualAClick : IDispatch
     };
 ```
 
-인터페이스 문을 배치한 후에는 메서드 및 속성에 대 한 항목을 추가 하기 시작 합니다. 이중 인터페이스의 경우 이중 인터페이스의 메서드 및 속성 접근자 함수가 **HRESULT** 를 반환 하 고 특성 `[retval,out]`을 사용 하 여 반환 값을 매개 변수로 전달 하도록 매개 변수 목록을 다시 정렬 해야 합니다. 속성의 경우 동일한 id를 사용 하 여 읽기 (`propget`) 및 쓰기 (`propput`) 액세스 함수를 모두 추가 해야 합니다. 예:
+인터페이스 문을 배치한 후에는 메서드 및 속성에 대 한 항목을 추가 하기 시작 합니다. 이중 인터페이스의 경우 이중 인터페이스의 메서드 및 속성 접근자 함수가 **HRESULT** 를 반환 하 고 특성 `[retval,out]`을 사용 하 여 반환 값을 매개 변수로 전달 하도록 매개 변수 목록을 다시 정렬 해야 합니다. 속성의 경우 동일한 id를 사용 하 여 읽기 (`propget`) 및 쓰기 (`propput`) 액세스 함수를 모두 추가 해야 합니다. 예를 들어:
 
 ```IDL
 [propput, id(1)] HRESULT text([in] BSTR newText);
@@ -75,7 +75,7 @@ coclass Document
 
 ODL 파일이 업데이트 되 면 mfc의 인터페이스 맵 메커니즘을 사용 하 여 개체 클래스의 이중 인터페이스에 대 한 구현 클래스를 정의 하 고 mfc의 `QueryInterface` 메커니즘에서 해당 항목을 만듭니다. ODL의 interface 문에 있는 각 `INTERFACE_PART` 항목에 대 한 블록에는 하나의 항목이 필요 하 고 디스패치 인터페이스에 대 한 항목을 포함 해야 합니다. *Propput* 특성을 사용 하는 각 ODL 항목에는 `put_propertyname`라는 함수가 필요 합니다. *Propget* 특성을 포함 하는 각 항목에는 `get_propertyname`라는 함수가 필요 합니다.
 
-이중 인터페이스에 대 한 구현 클래스를 정의 하려면 개체 클래스 `DUAL_INTERFACE_PART` 정의에 블록을 추가 합니다. 예를 들어:
+이중 인터페이스에 대 한 구현 클래스를 정의 하려면 개체 클래스 `DUAL_INTERFACE_PART` 정의에 블록을 추가 합니다. 예:
 
 ```cpp
 BEGIN_DUAL_INTERFACE_PART(DualAClick, IDualAClick)
@@ -179,7 +179,7 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::Invoke(
 }
 ```
 
-개체의 메서드 및 속성 접근자 함수에는 구현을 채워야 합니다. 메서드 및 속성 함수는 일반적으로 클래스 마법사를 사용 하 여 생성 된 메서드로 다시 위임할 수 있습니다. 그러나 변수에 직접 액세스 하기 위한 속성을 설정 하는 경우 변수에 값을 가져오거나 설정 하는 코드를 작성 해야 합니다. 예를 들어:
+개체의 메서드 및 속성 접근자 함수에는 구현을 채워야 합니다. 메서드 및 속성 함수는 일반적으로 클래스 마법사를 사용 하 여 생성 된 메서드로 다시 위임할 수 있습니다. 그러나 변수에 직접 액세스 하기 위한 속성을 설정 하는 경우 변수에 값을 가져오거나 설정 하는 코드를 작성 해야 합니다. 예:
 
 ```cpp
 STDMETHODIMP CAutoClickDoc::XDualAClick::put_text(BSTR newText)
@@ -203,7 +203,7 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::get_text(BSTR* retval)
 
 ## <a name="passing-dual-interface-pointers"></a>이중 인터페이스 포인터 전달
 
-특히를 호출 `CCmdTarget::FromIDispatch`해야 하는 경우 이중 인터페이스 포인터를 전달 하는 것은 간단 하지 않습니다. `FromIDispatch`는 MFC의 `IDispatch` 포인터 에서만 작동 합니다. 이 문제를 해결 하는 한 가지 방법은 MFC에 의해 `IDispatch` 설정 된 원래 포인터를 쿼리하고이를 필요로 하는 함수에 해당 포인터를 전달 하는 것입니다. 예를 들어:
+특히를 호출 `CCmdTarget::FromIDispatch`해야 하는 경우 이중 인터페이스 포인터를 전달 하는 것은 간단 하지 않습니다. `FromIDispatch`는 MFC의 `IDispatch` 포인터 에서만 작동 합니다. 이 문제를 해결 하는 한 가지 방법은 MFC에 의해 `IDispatch` 설정 된 원래 포인터를 쿼리하고이를 필요로 하는 함수에 해당 포인터를 전달 하는 것입니다. 예:
 
 ```
 STDMETHODIMP CAutoClickDoc::XDualAClick::put_Position(
@@ -267,7 +267,7 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::get_Position(
 
 MkTypLib에서 생성 된 헤더 파일의 **UUID** 정의를 프로젝트에 추가 하려면 다음을 수행 합니다.
 
-1. 표준에 포함 된 MkTypLib 헤더 파일을 포함 합니다. 넣기.
+1. 표준에 포함 된 MkTypLib 헤더 파일을 포함 합니다.
 
 2. 새 파일인 INITIIDS를 만듭니다. CPP를 추가 하 고 프로젝트에 추가 합니다. 이 파일에는 OLE2를 포함 한 후 MkTypLib에서 생성 된 헤더 파일을 포함 합니다. H 및 INITGUID입니다. 넣기
 
