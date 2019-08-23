@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COlePropertiesDialog [MFC], m_psh
 - COlePropertiesDialog [MFC], m_vp
 ms.assetid: a54dbc89-1447-4329-bd01-00e98ec9e935
-ms.openlocfilehash: bdae64ff4a7bcfef761eaf3dd70a85a54efc28b7
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
-ms.translationtype: HT
+ms.openlocfilehash: b819bc430868717a2df01a086b482dfe6d56cc0f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916954"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504174"
 ---
 # <a name="colepropertiesdialog-class"></a>Cole인 대화 상자 클래스
 
@@ -152,11 +152,11 @@ virtual INT_PTR DoModal();
 
 성공 하는 경우 IDOK 또는 IDCANCEL 그렇지 않으면 0입니다. IDOK 및 IDCANCEL는 사용자가 확인 또는 취소 단추를 선택 했는지 여부를 나타내는 상수입니다.
 
-IDCANCEL이 반환 되는 경우 Windows [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) 함수를 호출 하 여 오류가 발생 했는지 여부를 확인할 수 있습니다.
+IDCANCEL이 반환 되는 경우 Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) 함수를 호출 하 여 오류가 발생 했는지 여부를 확인할 수 있습니다.
 
 ##  <a name="m_gp"></a>  COlePropertiesDialog::m_gp
 
-OLE 개체 속성 대화 상자의 일반 페이지를 초기화 하는 데 사용 되는 [OLEUIGNRLPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuignrlpropsa)형식의 구조입니다.
+OLE 개체 속성 대화 상자의 일반 페이지를 초기화 하는 데 사용 되는 [OLEUIGNRLPROPS](/windows/win32/api/oledlg/ns-oledlg-oleuignrlpropsw)형식의 구조입니다.
 
 ```
 OLEUIGNRLPROPS m_gp;
@@ -170,7 +170,7 @@ OLEUIGNRLPROPS m_gp;
 
 ##  <a name="m_lp"></a>  COlePropertiesDialog::m_lp
 
-OLE 개체 속성 대화 상자의 링크 페이지를 초기화 하는 데 사용 되는 [OLEUILINKPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuilinkpropsa)형식의 구조입니다.
+OLE 개체 속성 대화 상자의 링크 페이지를 초기화 하는 데 사용 되는 [OLEUILINKPROPS](/windows/win32/api/oledlg/ns-oledlg-oleuilinkpropsw)형식의 구조입니다.
 
 ```
 OLEUILINKPROPS m_lp;
@@ -184,7 +184,7 @@ OLEUILINKPROPS m_lp;
 
 ##  <a name="m_op"></a>  COlePropertiesDialog::m_op
 
-공용 OLE 개체 속성 대화 상자를 초기화 하는 데 사용 되는 [OLEUIOBJECTPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiobjectpropsa)형식의 구조입니다.
+공용 OLE 개체 속성 대화 상자를 초기화 하는 데 사용 되는 [OLEUIOBJECTPROPS](/windows/win32/api/oledlg/ns-oledlg-oleuiobjectpropsw)형식의 구조입니다.
 
 ```
 OLEUIOBJECTPROPS m_op;
@@ -194,11 +194,11 @@ OLEUIOBJECTPROPS m_op;
 
 이 구조는 일반, 링크 및 보기 페이지를 초기화 하는 데 사용 되는 멤버를 포함 합니다.
 
-자세한 내용은 Windows SDK OLEUIOBJECTPROPS and [OLEUILINKPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuilinkpropsa) 구조체를 참조 하십시오.
+자세한 내용은 Windows SDK OLEUIOBJECTPROPS and [OLEUILINKPROPS](/windows/win32/api/oledlg/ns-oledlg-oleuilinkpropsw) 구조체를 참조 하십시오.
 
 ##  <a name="m_psh"></a>  COlePropertiesDialog::m_psh
 
-해당 멤버가 dialog 개체의 특성을 저장 하는 [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2)형식의 구조체입니다.
+해당 멤버가 dialog 개체의 특성을 저장 하는 [PROPSHEETHEADER](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2)형식의 구조체입니다.
 
 ```
 PROPSHEETHEADER m_psh;
@@ -214,7 +214,7 @@ PROPSHEETHEADER m_psh;
 
 ##  <a name="m_vp"></a>Colem_vp 대화 상자::
 
-OLE 개체 속성 대화 상자의 뷰 페이지를 초기화 하는 데 사용 되는 [OLEUIVIEWPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiviewpropsa)형식의 구조입니다.
+OLE 개체 속성 대화 상자의 뷰 페이지를 초기화 하는 데 사용 되는 [OLEUIVIEWPROPS](/windows/win32/api/oledlg/ns-oledlg-oleuiviewpropsw)형식의 구조입니다.
 
 ```
 OLEUIVIEWPROPS m_vp;

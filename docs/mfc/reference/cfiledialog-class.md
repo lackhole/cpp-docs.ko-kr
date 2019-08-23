@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-ms.openlocfilehash: a7287b2e3011159573f44e9247e016d81d893491
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
-ms.translationtype: HT
+ms.openlocfilehash: c301766b64af7fc1523b39adad91d9b52a5e88f7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821074"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506591"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog 클래스
 
@@ -258,11 +258,11 @@ Windows Vista 이상 버전에서의 `CFileDialog` 모양과 기능은 이전 �
 대화 상자 컨트롤을 초기화 한 후 [CFileDialog::D oModal](#domodal) 메서드를 호출 하 여 사용자가 경로와 파일 이름을 입력할 수 있도록 대화 상자를 표시 합니다. `DoModal`사용자가 확인 (IDOK) 또는 취소 (IDCANCEL) 단추를 클릭 했는지 여부를 반환 합니다. 에서 `DoModal` IDOK를 반환 하는 경우 `CFileDialog` public 멤버 함수 중 하나를 사용 하 여 사용자가 입력 한 정보를 검색할 수 있습니다.
 
 > [!NOTE]
-> Windows Vista 이상에서는 [Ifiledialog:: SetFileTypes](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) 를 여러 번 호출 하면 오류가 발생 합니다. 의 모든 인스턴스에 `SetFileTypes`대한 두번째호출은WindowsVista이상에서E_UNEXPECTED을반환합니다.`CFileDialog` 일부 `CFileDialog` 메서드 함수는 `SetFileTypes`를 호출 합니다. 예를 들어 `CFileDialog` 의 동일한 인스턴스에 `CFileDialog::DoModal` 대 한 두 번의 호출은 [ASSERT](diagnostic-services.md#assert)를 생성 합니다.
+> Windows Vista 이상에서는 [Ifiledialog:: SetFileTypes](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) 를 여러 번 호출 하면 오류가 발생 합니다. 의 모든 인스턴스에 `SetFileTypes`대한 두번째호출은WindowsVista이상에서E_UNEXPECTED을반환합니다.`CFileDialog` 일부 `CFileDialog` 메서드 함수는 `SetFileTypes`를 호출 합니다. 예를 들어 `CFileDialog` 의 동일한 인스턴스에 `CFileDialog::DoModal` 대 한 두 번의 호출은 [ASSERT](diagnostic-services.md#assert)를 생성 합니다.
 
 `CFileDialog`에는 공유 위반, 파일 이름 유효성 검사 및 목록 상자 변경 알림에 대 한 사용자 지정 처리를 수행할 수 있는 몇 가지 보호 된 멤버가 포함 되어 있습니다. 이러한 보호 된 멤버는 기본 처리가 자동으로 수행 되기 때문에 대부분의 응용 프로그램에서 사용 하지 않아도 되는 콜백 함수입니다. 이러한 함수에 대 한 메시지 맵 항목은 표준 가상 함수 이기 때문에 필요 하지 않습니다.
 
-Windows [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) 함수를 사용 하 여 대화 상자를 초기화 하는 동안 오류가 발생 했는지 확인 하 고 오류에 대해 자세히 알아볼 수 있습니다.
+Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) 함수를 사용 하 여 대화 상자를 초기화 하는 동안 오류가 발생 했는지 확인 하 고 오류에 대해 자세히 알아볼 수 있습니다.
 
 개체의 `CFileDialog` 소멸은 자동으로 처리 됩니다. [CDialog:: EndDialog](../../mfc/reference/cdialog-class.md#enddialog)를 호출할 필요가 없습니다.
 
@@ -604,7 +604,7 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>반환 값
 
-IDOK 또는 IDCANCEL. IDCANCEL이 반환 되는 경우 Windows [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) 함수를 호출 하 여 오류가 발생 했는지 여부를 확인 합니다.
+IDOK 또는 IDCANCEL. IDCANCEL이 반환 되는 경우 Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) 함수를 호출 하 여 오류가 발생 했는지 여부를 확인 합니다.
 
 IDOK 및 IDCANCEL는 사용자가 확인 또는 취소 단추를 선택 했는지 여부를 나타내는 상수입니다.
 
@@ -827,7 +827,7 @@ IFileDialogCustomize* GetIFileDialogCustomize();
 
 *BVistaStyle* 가 TRUE로 설정 된 개체를 사용 하 여 Windows Vista 이상 에서만이 함수를 사용 합니다. *BVistaStyle* 가 FALSE 인 경우이 함수를 사용 하면 릴리스 모드에서 NULL이 반환 되 고 디버그 모드에서 어설션이 throw 됩니다.
 
-`IFileDialogCustomize` 인터페이스에 대 한 자세한 내용은 [IFileDialogCustomize](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize)를 참조 하세요.
+`IFileDialogCustomize` 인터페이스에 대 한 자세한 내용은 [IFileDialogCustomize](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -851,7 +851,7 @@ IFileOpenDialog* GetIFileOpenDialog();
 
 *BVistaStyle* 가 TRUE로 설정 된 개체를 사용 하 여 Windows Vista 이상 에서만이 함수를 사용 합니다. 이 함수는 `CFileDialog` 가 **열기** 대화 상자가 아니거나 *bVistaStyle* 이 FALSE로 설정 된 경우 NULL을 반환 합니다. 이 마지막 사례에서 함수는 릴리스 모드의 경우에만 NULL을 반환 합니다. 디버그 모드에서는 어설션이 throw 됩니다.
 
-`IFileOpenDialog` 인터페이스에 대 한 자세한 내용은 [IFileOpenDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog)를 참조 하세요.
+`IFileOpenDialog` 인터페이스에 대 한 자세한 내용은 [IFileOpenDialog](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifileopendialog)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -875,7 +875,7 @@ IFileSaveDialog* GetIFileSaveDialog();
 
 *BVistaStyle* 가 TRUE로 설정 된 개체를 사용 하 여 Windows Vista 이상 에서만이 함수를 사용 합니다. **저장** 대화 상자가 아니거나 *bVistaStyle* 이 FALSE `CFileDialog` 로 설정 된 경우이 함수는 NULL을 반환 합니다. 이 마지막 사례에서 함수는 릴리스 모드의 경우에만 NULL을 반환 합니다. 디버그 모드에서는 어설션이 throw 됩니다.
 
-`IFileSaveDialog` 인터페이스에 대 한 자세한 내용은 [IFileSaveDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifilesavedialog)를 참조 하세요.
+`IFileSaveDialog` 인터페이스에 대 한 자세한 내용은 [IFileSaveDialog](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifilesavedialog)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1185,7 +1185,7 @@ virtual void OnFileNameChange();
 
 사용자가 **열기** 또는 다른 **이름으로 저장** 대화 상자의 파일 목록에서 새 파일이 나 폴더를 선택 하면 시스템에서 CDN_SELCHANGE 메시지를 보냅니다. 이 메시지에 대 한 응답으로 작업을 수행 하려면이 메서드를 재정의 합니다.
 
-OFN_EXPLORER 플래그가 설정 된 상태에서 대화 상자를 만든 경우에만 시스템에서이 메시지를 보냅니다. 알림에 대 한 자세한 내용은 [CDN_SELCHANGE](/windows/desktop/dlgbox/cdn-selchange)를 참조 하세요. OFN_EXPLORER 플래그에 대 한 자세한 내용은 [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) 구조 및 [열기 및 다른 이름으로 저장 대화 상자](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)를 참조 하세요.
+OFN_EXPLORER 플래그가 설정 된 상태에서 대화 상자를 만든 경우에만 시스템에서이 메시지를 보냅니다. 알림에 대 한 자세한 내용은 [CDN_SELCHANGE](/windows/win32/dlgbox/cdn-selchange)를 참조 하세요. OFN_EXPLORER 플래그에 대 한 자세한 내용은 [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) 구조 및 [열기 및 다른 이름으로 저장 대화 상자](/windows/win32/dlgbox/open-and-save-as-dialog-boxes)를 참조 하세요.
 
 ##  <a name="onfilenameok"></a>  CFileDialog::OnFileNameOK
 
@@ -1217,7 +1217,7 @@ virtual void OnFolderChange();
 
 알림 메시지는 열기 또는 다른 이름으로 저장 대화 상자에서 새 폴더를 열 때 전송 됩니다.
 
-OFN_EXPLORER 스타일을 사용 하 여 대화 상자를 만든 경우에만 알림이 전송 됩니다. 알림에 대 한 자세한 내용은 [CDN_FOLDERCHANGE](/windows/desktop/dlgbox/cdn-folderchange)를 참조 하세요. OFN_EXPLORER 스타일에 대 한 자세한 내용은 [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) 구조 및 [열기 및 다른 이름으로 저장 대화 상자](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)를 참조 하세요.
+OFN_EXPLORER 스타일을 사용 하 여 대화 상자를 만든 경우에만 알림이 전송 됩니다. 알림에 대 한 자세한 내용은 [CDN_FOLDERCHANGE](/windows/win32/dlgbox/cdn-folderchange)를 참조 하세요. OFN_EXPLORER 스타일에 대 한 자세한 내용은 [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) 구조 및 [열기 및 다른 이름으로 저장 대화 상자](/windows/win32/dlgbox/open-and-save-as-dialog-boxes)를 참조 하세요.
 
 ##  <a name="oninitdone"></a>  CFileDialog::OnInitDone
 
@@ -1231,7 +1231,7 @@ virtual void OnInitDone();
 
 시스템은 시스템에서 **열기** 또는 다른 **이름으로 저장** 대화 상자에서 컨트롤을 정렬 하 여 자식 대화 상자의 컨트롤을 위한 공간을 만들 때이 알림 메시지를 보냅니다.
 
-OFN_EXPLORER 스타일을 사용 하 여 대화 상자를 만든 경우에만 시스템에서이를 보냅니다. 알림에 대 한 자세한 내용은 [CDN_INITDONE](/windows/desktop/dlgbox/cdn-initdone)를 참조 하세요. OFN_EXPLORER 스타일에 대 한 자세한 내용은 [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) 구조 및 [열기 및 다른 이름으로 저장 대화 상자](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)를 참조 하세요.
+OFN_EXPLORER 스타일을 사용 하 여 대화 상자를 만든 경우에만 시스템에서이를 보냅니다. 알림에 대 한 자세한 내용은 [CDN_INITDONE](/windows/win32/dlgbox/cdn-initdone)를 참조 하세요. OFN_EXPLORER 스타일에 대 한 자세한 내용은 [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) 구조 및 [열기 및 다른 이름으로 저장 대화 상자](/windows/win32/dlgbox/open-and-save-as-dialog-boxes)를 참조 하세요.
 
 > [!NOTE]
 > Windows Vista 이상 스타일 파일 대화 상자는이 기능을 지원 하지 않습니다. Windows Vista 또는 이후 스타일 파일 대화 상자에서이 함수를 사용 하려고 하면 [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)이 throw 됩니다.
@@ -1331,7 +1331,7 @@ virtual void OnTypeChange();
 
 사용자가 열기 또는 다른 이름으로 저장 대화 상자의 파일 형식 목록에서 새 파일 형식을 선택 하면 알림 메시지가 전송 됩니다.
 
-OFN_EXPLORER 스타일을 사용 하 여 대화 상자를 만든 경우에만 알림이 전송 됩니다. 알림에 대 한 자세한 내용은 [CDN_TYPECHANGE](/windows/desktop/dlgbox/cdn-typechange)를 참조 하세요. OFN_EXPLORER 스타일에 대 한 자세한 내용은 [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) 구조 및 [열기 및 다른 이름으로 저장 대화 상자](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)를 참조 하세요.
+OFN_EXPLORER 스타일을 사용 하 여 대화 상자를 만든 경우에만 알림이 전송 됩니다. 알림에 대 한 자세한 내용은 [CDN_TYPECHANGE](/windows/win32/dlgbox/cdn-typechange)를 참조 하세요. OFN_EXPLORER 스타일에 대 한 자세한 내용은 [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) 구조 및 [열기 및 다른 이름으로 저장 대화 상자](/windows/win32/dlgbox/open-and-save-as-dialog-boxes)를 참조 하세요.
 
 ##  <a name="removecontrolitem"></a>  CFileDialog::RemoveControlItem
 
@@ -1594,7 +1594,7 @@ void SetTemplate(
 시스템은 지정 된 템플릿 중 하나만 사용 합니다. 시스템은 응용 프로그램이 실행 되 고 있는 운영 체제 및 OFN_EXPLORER 스타일의 유무에 따라 사용할 템플릿을 결정 합니다. 비 탐색기 및 탐색기 스타일 템플릿을 지정 하 여 Windows NT 3.51, Windows NT 4.0 이상 버전 및 Windows 95 이상 버전을 쉽게 지원할 수 있습니다.
 
 > [!NOTE]
-> Windows Vista 이상 스타일 파일 대화 상자는이 기능을 지원 하지 않습니다. Windows Vista 또는 이후 스타일 파일 대화 상자에서이 함수를 사용 하려고 하면 [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)이 throw 됩니다. 다른 방법은 사용자 지정 된 대화 상자를 사용 하는 것입니다. 사용자 지정 `CFileDialog`을 사용 하는 방법에 대 한 자세한 내용은 [IFileDialogCustomize](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize)를 참조 하세요.
+> Windows Vista 이상 스타일 파일 대화 상자는이 기능을 지원 하지 않습니다. Windows Vista 또는 이후 스타일 파일 대화 상자에서이 함수를 사용 하려고 하면 [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)이 throw 됩니다. 다른 방법은 사용자 지정 된 대화 상자를 사용 하는 것입니다. 사용자 지정 `CFileDialog`을 사용 하는 방법에 대 한 자세한 내용은 [IFileDialogCustomize](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize)를 참조 하세요.
 
 ##  <a name="startvisualgroup"></a>  CFileDialog::StartVisualGroup
 
@@ -1628,7 +1628,7 @@ void UpdateOFNFromShellDialog();
 
 Windows Vista 이전 버전에서는 멤버 [OPENFILENAME](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) 데이터 구조가의 상태 `CFileDialog`와 지속적으로 동기화 되었습니다. [M_ofn](#m_ofn) 멤버 변수에 대 한 모든 변경 내용은 대화 상자의 상태에 직접적인 영향을 줍니다. 또한 대화의 상태를 변경 하면 m_ofn 멤버 변수가 즉시 업데이트 됩니다.
 
-Windows Vista 이상 `m_ofn` 에서는 데이터 구조가 자동으로 업데이트 되지 않습니다. `m_ofn` 멤버 변수에 있는 데이터의 정확도를 보장 하려면 데이터에 액세스 하기 전에 함수를 `UpdateOFNFromShellDialog` 호출 해야 합니다. Windows에서는 [Ifiledialog:: OnFileOK](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok)를 처리 하는 동안이 함수를 자동으로 호출 합니다.
+Windows Vista 이상 `m_ofn` 에서는 데이터 구조가 자동으로 업데이트 되지 않습니다. `m_ofn` 멤버 변수에 있는 데이터의 정확도를 보장 하려면 데이터에 액세스 하기 전에 함수를 `UpdateOFNFromShellDialog` 호출 해야 합니다. Windows에서는 [Ifiledialog:: OnFileOK](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok)를 처리 하는 동안이 함수를 자동으로 호출 합니다.
 
 Windows Vista 이상에서 `CFileDialog` 클래스를 사용 하는 방법에 대 한 자세한 내용은 [CFileDialog 클래스](../../mfc/reference/cfiledialog-class.md)를 참조 하세요.
 

@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: 5c7204f5207b85e4b9ada4b68e9feedaf83deccd
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
-ms.translationtype: HT
+ms.openlocfilehash: 2d00a7216778f4a9a40b9d503bce7d26982669e0
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916215"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506061"
 ---
 # <a name="chtmlview-class"></a>CHtmlView 클래스
 
@@ -259,14 +259,14 @@ class CHtmlView : public CFormView
 |[CHtmlView::OnBeforeNavigate2](#onbeforenavigate2)|창 또는 프레임셋 요소에 지정된 WebBrowser에서 이동하기 전에 호출됩니다.|
 |[CHtmlView::OnCommandStateChange](#oncommandstatechange)|웹 브라우저 명령의 사용 상태가 변경되었음을 애플리케이션에 알리기 위해 호출됩니다.|
 |[CHtmlView::OnDocumentComplete](#ondocumentcomplete)|문서가 READYSTATE_COMPLETE 상태에 도달 했음을 응용 프로그램에 알리기 위해 호출 됩니다.|
-|[CHtmlView::OnDocWindowActivate](#ondocwindowactivate)|[IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate)의 Internet Explorer 또는 MSHTML 구현에서 호출되며, 컨테이너의 문서 창이 활성화 또는 비활성화될 경우 활성 현재 위치 개체에 알립니다.|
+|[CHtmlView::OnDocWindowActivate](#ondocwindowactivate)|[IOleInPlaceActiveObject::OnDocWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate)의 Internet Explorer 또는 MSHTML 구현에서 호출되며, 컨테이너의 문서 창이 활성화 또는 비활성화될 경우 활성 현재 위치 개체에 알립니다.|
 |[CHtmlView::OnDownloadBegin](#ondownloadbegin)|이동 작업이 시작되었음을 애플리케이션에 알리기 위해 호출됩니다.|
 |[CHtmlView::OnDownloadComplete](#ondownloadcomplete)|이동 작업이 중단 또는 실패한 상태로 마치면 호출됩니다.|
 |[CHtmlView::OnEnableModeless](#onenablemodeless)|컨테이너가 모달 대화 상자를 만들거나 삭제할 때 모덜리스 대화 상자를 사용하거나 사용하지 않도록 설정하기 위해 호출됩니다.|
 |[CHtmlView::OnFilterDataObject](#onfilterdataobject)|호스트가 Internet Explorer 또는 MSHTML의 데이터 개체를 바꿀 수 있도록 하기 위해 Internet Explorer 또는 MSHTML에 의해 호스트에서 호출됩니다.|
-|[CHtmlView::OnFrameWindowActivate](#onframewindowactivate)|컨테이너의 최상위 프레임 창이 활성화 또는 비활성화될 경우 개체에 알리기 위해 [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) 에서 호출됩니다.|
+|[CHtmlView::OnFrameWindowActivate](#onframewindowactivate)|컨테이너의 최상위 프레임 창이 활성화 또는 비활성화될 경우 개체에 알리기 위해 [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) 에서 호출됩니다.|
 |[CHtmlView::OnFullScreen](#onfullscreen)|FullScreen 속성이 변경되면 호출됩니다.|
-|[CHtmlView::OnGetDropTarget](#ongetdroptarget)|호스트가 대체 [IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget)을 제공할 수 있도록 놓기 대상으로 사용되는 경우 Internet Explorer 또는 MSHTML에 의해 호출됩니다.|
+|[CHtmlView::OnGetDropTarget](#ongetdroptarget)|호스트가 대체 [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget)을 제공할 수 있도록 놓기 대상으로 사용되는 경우 Internet Explorer 또는 MSHTML에 의해 호출됩니다.|
 |[CHtmlView::OnGetExternal](#ongetexternal)|호스트의 `IDispatch` 인터페이스를 가져오기 위해 Internet Explorer 또는 MSHTML에 의해 호출됩니다.|
 |[CHtmlView::OnGetHostInfo](#ongethostinfo)|Internet Explorer 또는 MSHTML 호스트의 UI 기능을 검색합니다.|
 |[CHtmlView::OnGetOptionKeyPath](#ongetoptionkeypath)|Internet Explorer 또는 MSHTML이 사용자 기본 설정을 저장하는 레지스트리 키를 반환합니다.|
@@ -278,7 +278,7 @@ class CHtmlView : public CFormView
 |[CHtmlView::OnProgressChange](#onprogresschange)|다운로드 작업 진행률이 업데이트되었음을 애플리케이션에 알리기 위해 호출됩니다.|
 |[CHtmlView::OnPropertyChange](#onpropertychange)|[PutProperty](#putproperty) 메서드가 속성 값을 변경했음을 응용 프로그램에 알리기 위해 호출됩니다.|
 |[CHtmlView::OnQuit](#onquit)|Internet Explorer 애플리케이션을 끝낼 준비가 되었음을 애플리케이션에 알리기 위해 호출됩니다. (Internet Explorer에만 적용됨)|
-|[CHtmlView::OnResizeBorder](#onresizeborder)|[IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder)의 Internet Explorer 또는 MSHTML 구현에서 호출되며, 해당 테두리 공간 크기를 조정해야 함을 개체에 경고합니다.|
+|[CHtmlView::OnResizeBorder](#onresizeborder)|[IOleInPlaceActiveObject::ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder)의 Internet Explorer 또는 MSHTML 구현에서 호출되며, 해당 테두리 공간 크기를 조정해야 함을 개체에 경고합니다.|
 |[CHtmlView::OnShowContextMenu](#onshowcontextmenu)|상황에 맞는 메뉴를 표시하려는 경우 Internet Explorer 또는 MSHTML에 의해 호출됩니다.|
 |[CHtmlView::OnShowUI](#onshowui)|Internet Explorer 또는 MSHTML이 해당 메뉴 및 도구 모음을 표시하기 전에 호출됩니다.|
 |[CHtmlView::OnStatusBar](#onstatusbar)|StatusBar 속성이 변경되면 호출됩니다.|
@@ -286,7 +286,7 @@ class CHtmlView : public CFormView
 |[CHtmlView::OnTheaterMode](#ontheatermode)|TheaterMode 속성이 변경되면 호출됩니다.|
 |[CHtmlView::OnTitleChange](#ontitlechange)|WebBrowser 컨트롤의 문서 제목을 사용할 수 있게 되거나 변경할 경우 애플리케이션에 알리기 위해 호출됩니다.|
 |[CHtmlView::OnToolBar](#ontoolbar)|ToolBar 속성이 변경되면 호출됩니다.|
-|[CHtmlView::OnTranslateAccelerator](#ontranslateaccelerator)|컨테이너의 메시지 큐에서 메뉴 바로 가기 키 메시지를 처리하기 위해 [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) 또는 [IOleControlSite::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) 가 호출될 경우 Internet Explorer 또는 MSHTML에 의해 호출됩니다.|
+|[CHtmlView::OnTranslateAccelerator](#ontranslateaccelerator)|컨테이너의 메시지 큐에서 메뉴 바로 가기 키 메시지를 처리하기 위해 [IOleInPlaceActiveObject::TranslateAccelerator](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) 또는 [IOleControlSite::TranslateAccelerator](/windows/win32/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) 가 호출될 경우 Internet Explorer 또는 MSHTML에 의해 호출됩니다.|
 |[CHtmlView::OnTranslateUrl](#ontranslateurl)|호스트가 로드할 URL을 수정할 수 있도록 하기 위해 Internet Explorer 또는 MSHTML에 의해 호출됩니다.|
 |[CHtmlView::OnUpdateUI](#onupdateui)|명령 상태가 변경되었음을 호스트에 알립니다.|
 |[CHtmlView::OnVisible](#onvisible)|WebBrowser 컨트롤의 창을 표시하거나 숨기면 호출됩니다.|
@@ -459,11 +459,11 @@ HRESULT ExecFormsCommand(
 
 ### <a name="return-value"></a>반환 값
 
-표준 HRESULT 값입니다. 가능한 값의 전체 목록은 Windows SDK의 [IOleCommandTarget:: Exec](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-exec) 를 참조 하세요.
+표준 HRESULT 값입니다. 가능한 값의 전체 목록은 Windows SDK의 [IOleCommandTarget:: Exec](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-`ExecFormsCommand`[IOleCommandTarget:: Exec](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-exec) 메서드의 동작을 구현 합니다.
+`ExecFormsCommand`[IOleCommandTarget:: Exec](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec) 메서드의 동작을 구현 합니다.
 
 ##  <a name="execwb"></a>  CHtmlView::ExecWB
 
@@ -1092,7 +1092,7 @@ void Navigate2(
 ### <a name="parameters"></a>매개 변수
 
 *pIDL*<br/>
-[Itemidlist](/windows/desktop/api/shtypes/ns-shtypes-itemidlist) 구조체에 대 한 포인터입니다.
+[Itemidlist](/windows/win32/api/shtypes/ns-shtypes-itemidlist) 구조체에 대 한 포인터입니다.
 
 *dwFlags*<br/>
 기록 목록에 리소스를 추가할지 여부, 캐시에 대 한 읽기 또는 쓰기 여부, 새 창에 리소스를 표시할지 여부를 지정 하는 변수의 플래그입니다. 변수는 [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) 열거형에 정의 된 값의 조합일 수 있습니다.
@@ -1271,7 +1271,7 @@ virtual HRESULT OnFilterDataObject(
 ### <a name="parameters"></a>매개 변수
 
 *pDataObject*<br/>
-Internet Explorer 또는 MSHTML에서 제공 하는 [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) 인터페이스의 주소입니다.
+Internet Explorer 또는 MSHTML에서 제공 하는 [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) 인터페이스의 주소입니다.
 
 *ppDataObject*<br/>
 호스트에서 제공 하 `IDataObject` 는 인터페이스 포인터를 수신 하는 주소입니다. 메서드가 실패 하는 경우에도이 매개 변수의 내용은 항상 NULL로 초기화 되어야 합니다.
@@ -1286,7 +1286,7 @@ Microsoft `OnFilterDataObject` 웹 브라우저 컨트롤의 `FilterDataObject` 
 
 ##  <a name="onframewindowactivate"></a>  CHtmlView::OnFrameWindowActivate
 
-컨테이너의 최상위 프레임 창이 활성화 또는 비활성화될 경우 개체에 알리기 위해 [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) 에서 호출됩니다.
+컨테이너의 최상위 프레임 창이 활성화 또는 비활성화될 경우 개체에 알리기 위해 [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) 에서 호출됩니다.
 
 ```
 virtual HRESULT OnFrameWindowActivate(BOOL fActivate);
@@ -1331,7 +1331,7 @@ virtual HRESULT OnGetDropTarget(
 ### <a name="parameters"></a>매개 변수
 
 *pDropTarget*<br/>
-[IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) Internet Explorer 또는 MSHTML은를 사용 하도록 제안 합니다.
+[IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) Internet Explorer 또는 MSHTML은를 사용 하도록 제안 합니다.
 
 *ppDropTarget*<br/>
 호스트에서 제공 `IDropTarget` 하고자 하는 `IDropTarget` 인터페이스 포인터를 수신 하는의 주소입니다.
@@ -1399,7 +1399,7 @@ virtual HRESULT OnGetOptionKeyPath(
 ### <a name="parameters"></a>매개 변수
 
 *pchKey*<br/>
-호스트에서 기본 `LPOLESTR` 옵션을 저장 하는 레지스트리 하위 키 문자열을 받는의 주소입니다. 이 하위 키는 HKEY_CURRENT_USER 키 아래에 있습니다. [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc)를 사용 하 여이 메모리를 할당 합니다. 호출 응용 프로그램은 [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)를 사용 하 여이 메모리를 해제 해야 합니다. 이 매개 변수는 메서드가 실패 하는 경우에도 항상 NULL로 초기화 되어야 합니다.
+호스트에서 기본 `LPOLESTR` 옵션을 저장 하는 레지스트리 하위 키 문자열을 받는의 주소입니다. 이 하위 키는 HKEY_CURRENT_USER 키 아래에 있습니다. [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc)를 사용 하 여이 메모리를 할당 합니다. 호출 응용 프로그램은 [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree)를 사용 하 여이 메모리를 해제 해야 합니다. 이 매개 변수는 메서드가 실패 하는 경우에도 항상 NULL로 초기화 되어야 합니다.
 
 *dwReserved*<br/>
 나중에 사용하기 위해 예약되어 있습니다. 현재 사용 되지 않습니다.
@@ -1559,7 +1559,7 @@ virtual void OnQuit();
 
 ##  <a name="onresizeborder"></a>  CHtmlView::OnResizeBorder
 
-[IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder)의 Internet Explorer 또는 MSHTML 구현에서 호출되며, 해당 테두리 공간 크기를 조정해야 함을 개체에 경고합니다.
+[IOleInPlaceActiveObject::ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder)의 Internet Explorer 또는 MSHTML 구현에서 호출되며, 해당 테두리 공간 크기를 조정해야 함을 개체에 경고합니다.
 
 ```
 virtual HRESULT OnResizeBorder(
@@ -1577,7 +1577,7 @@ virtual HRESULT OnResizeBorder(
 테두리를 변경한 프레임 또는 문서 창 개체의 인터페이스에 대 한 포인터입니다.
 
 *fFrameWindow*<br/>
-프레임 창에서 [IOleInPlaceActiveObject:: ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder)를 호출 하면 TRUE이 고, 그렇지 않으면 FALSE입니다.
+프레임 창에서 [IOleInPlaceActiveObject:: ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder)를 호출 하면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1608,7 +1608,7 @@ virtual HRESULT OnShowContextMenu(
 메뉴의 화면 좌표입니다.
 
 *pcmdtReserved*<br/>
-명령 상태를 쿼리하고이 개체에 대 한 명령을 실행 하는 데 사용 되는 [IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget) 인터페이스입니다.
+명령 상태를 쿼리하고이 개체에 대 한 명령을 실행 하는 데 사용 되는 [IOleCommandTarget](/windows/win32/api/docobj/nn-docobj-iolecommandtarget) 인터페이스입니다.
 
 *pdispReserved*<br/>
 화면 좌표에서 개체의 IDispatch 인터페이스입니다. 이를 통해 호스트는 특정 개체를 구분 하 여 보다 구체적인 컨텍스트를 제공할 수 있습니다.
@@ -1640,16 +1640,16 @@ virtual HRESULT OnShowUI(
 나중에 사용하기 위해 예약되어 있습니다.
 
 *pActiveObject*<br/>
-현재 활성 개체의 [IOleInPlaceActiveObject](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceactiveobject) 인터페이스입니다.
+현재 활성 개체의 [IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceactiveobject) 인터페이스입니다.
 
 *pCommandTarget*<br/>
-개체의 [IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget) 인터페이스입니다.
+개체의 [IOleCommandTarget](/windows/win32/api/docobj/nn-docobj-iolecommandtarget) 인터페이스입니다.
 
 *pFrame*<br/>
-개체의 [IOleInPlaceFrame](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceframe) 인터페이스입니다. 메뉴 및 도구 모음에 필요 합니다.
+개체의 [IOleInPlaceFrame](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceframe) 인터페이스입니다. 메뉴 및 도구 모음에 필요 합니다.
 
 *pDoc*<br/>
-개체에 대 한 [IOleInPlaceUIWindow](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceuiwindow) 인터페이스입니다. 도구 모음에 필요 합니다.
+개체에 대 한 [IOleInPlaceUIWindow](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceuiwindow) 인터페이스입니다. 도구 모음에 필요 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1730,7 +1730,7 @@ Internet Explorer의 도구 모음이 표시 되 면 0이 아닌 값이 고, 그
 
 ##  <a name="ontranslateaccelerator"></a>  CHtmlView::OnTranslateAccelerator
 
-컨테이너의 메시지 큐에서 메뉴 바로 가기 키 메시지를 처리하기 위해 [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) 또는 [IOleControlSite::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) 가 호출될 경우 Internet Explorer 또는 MSHTML에 의해 호출됩니다.
+컨테이너의 메시지 큐에서 메뉴 바로 가기 키 메시지를 처리하기 위해 [IOleInPlaceActiveObject::TranslateAccelerator](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) 또는 [IOleControlSite::TranslateAccelerator](/windows/win32/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) 가 호출될 경우 Internet Explorer 또는 MSHTML에 의해 호출됩니다.
 
 ```
 virtual HRESULT OnTranslateAccelerator(
@@ -1902,11 +1902,11 @@ HRESULT QueryFormsCommand(
 
 ### <a name="return-value"></a>반환 값
 
-표준 HRESULT 값입니다. 가능한 값의 전체 목록은 Windows SDK의 [IOleCommandTarget:: QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) 를 참조 하세요.
+표준 HRESULT 값입니다. 가능한 값의 전체 목록은 Windows SDK의 [IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) 를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-`QueryFormsCommand`[IOleCommandTarget:: QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) 메서드의 동작을 구현 합니다.
+`QueryFormsCommand`[IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) 메서드의 동작을 구현 합니다.
 
 ##  <a name="querystatuswb"></a>  CHtmlView::QueryStatusWB
 
@@ -1919,15 +1919,15 @@ OLECMDF QueryStatusWB(OLECMDID cmdID) const;
 ### <a name="parameters"></a>매개 변수
 
 *cmdID*<br/>
-호출자가 상태 정보를 필요로 하는 명령의 [OLECMDID](/windows/desktop/api/docobj/ne-docobj-olecmdid) 값입니다.
+호출자가 상태 정보를 필요로 하는 명령의 [OLECMDID](/windows/win32/api/docobj/ne-docobj-olecmdid) 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
-명령의 상태를 받는 [Olecmdf](/windows/desktop/api/docobj/ne-docobj-olecmdf) 값의 주소입니다.
+명령의 상태를 받는 [Olecmdf](/windows/win32/api/docobj/ne-docobj-olecmdf) 값의 주소입니다.
 
 ### <a name="remarks"></a>설명
 
-`QueryStatusWB`[IOleCommandTarget:: QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) 메서드의 동작을 구현 합니다.
+`QueryStatusWB`[IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) 메서드의 동작을 구현 합니다.
 
 Internet Explorer 및 WebBrowser에 적용됩니다.
 
@@ -2236,4 +2236,4 @@ Internet Explorer 및 WebBrowser에 적용됩니다.
 [MFC 샘플 MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CFormView 클래스](../../mfc/reference/cformview-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[IWebBrowser2](/windows/desktop/api/exdisp/nn-exdisp-iwebbrowser2)
+[IWebBrowser2](/windows/win32/api/exdisp/nn-exdisp-iwebbrowser2)

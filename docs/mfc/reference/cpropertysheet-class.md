@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CPropertySheet [MFC], SetWizardMode
 - CPropertySheet [MFC], m_psh
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
-ms.openlocfilehash: edae0e3d4751461bc8a5eb6644f5fdc62b0a5e8a
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
-ms.translationtype: HT
+ms.openlocfilehash: 23d17aee2aacbc1484c0f3e181bc824546ab49a2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916853"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502820"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet 클래스
 
@@ -107,13 +107,13 @@ class CPropertySheet : public CWnd
 
 |이름|설명|
 |----------|-----------------|
-|[CPropertySheet::m_psh](#m_psh)|Windows [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2) 구조체입니다. 기본 속성 시트 매개 변수에 대 한 액세스를 제공 합니다.|
+|[CPropertySheet::m_psh](#m_psh)|Windows [PROPSHEETHEADER](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2) 구조체입니다. 기본 속성 시트 매개 변수에 대 한 액세스를 제공 합니다.|
 
 ## <a name="remarks"></a>설명
 
 속성 시트는 `CPropertySheet` 개체와 하나 이상의 [CPropertyPage](../../mfc/reference/cpropertypage-class.md) 개체로 구성 됩니다. 프레임 워크는 속성 시트를 탭 인덱스 집합과 현재 선택 된 페이지를 포함 하는 영역으로 표시 합니다. 사용자는 적절 한 탭을 사용 하 여 특정 페이지로 이동 합니다.
 
-`CPropertySheet`Windows 98 및 Windows NT 2000에서 도입 된 확장 된 [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2) 구조에 대 한 지원을 제공 합니다. 구조에는 "워터 마크" 배경 비트맵 사용을 지 원하는 추가 플래그와 멤버가 포함 되어 있습니다.
+`CPropertySheet`Windows 98 및 Windows NT 2000에서 도입 된 확장 된 [PROPSHEETHEADER](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2) 구조에 대 한 지원을 제공 합니다. 구조에는 "워터 마크" 배경 비트맵 사용을 지 원하는 추가 플래그와 멤버가 포함 되어 있습니다.
 
 이러한 새 이미지를 속성 시트 개체에 자동으로 표시 하려면 [CPropertySheet:: 생성자](#construct) 또는 [CPropertySheet:: CPropertySheet](#cpropertysheet)에 대 한 호출에서 비트맵과 색상표 이미지에 대 한 유효한 값을 전달 합니다.
 
@@ -584,7 +584,7 @@ CTabCtrl* GetTabControl() const;
 
 ##  <a name="m_psh"></a>  CPropertySheet::m_psh
 
-해당 멤버가 [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2)의 특성을 저장 하는 구조체입니다.
+해당 멤버가 [PROPSHEETHEADER](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2)의 특성을 저장 하는 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -613,7 +613,7 @@ void MapDialogRect(LPRECT lpRect) const;
 
 대화 상자 단위는 대화 상자 텍스트에 사용 되는 글꼴의 평균 너비와 문자 높이에서 파생 된 현재 대화 상자 기본 단위를 기준으로 하 여 설명 됩니다. 하나의 가로 단위는 대화 상자 기본 너비 단위의 1/4이 고, 세로 단위 하나는 대화 상자 기본 높이 단위의 8-8입니다.
 
-[Getdialogbaseunits](/windows/desktop/api/winuser/nf-winuser-getdialogbaseunits) Windows 함수는 시스템 글꼴에 대 한 크기 정보를 반환 하지만, 리소스 정의 파일에서 DS_SETFONT 스타일을 사용 하는 경우 각 속성 시트에 대해 다른 글꼴을 지정할 수 있습니다. Windows SDK에 설명 된 [Mapdialogrect](/windows/desktop/api/winuser/nf-winuser-mapdialogrect) Windows 함수는이 대화 상자에 해당 하는 글꼴을 사용 합니다.
+[Getdialogbaseunits](/windows/win32/api/winuser/nf-winuser-getdialogbaseunits) Windows 함수는 시스템 글꼴에 대 한 크기 정보를 반환 하지만, 리소스 정의 파일에서 DS_SETFONT 스타일을 사용 하는 경우 각 속성 시트에 대해 다른 글꼴을 지정할 수 있습니다. Windows SDK에 설명 된 [Mapdialogrect](/windows/win32/api/winuser/nf-winuser-mapdialogrect) Windows 함수는이 대화 상자에 해당 하는 글꼴을 사용 합니다.
 
 멤버 `MapDialogRect` 함수는 사각형을 사용 하 여 대화 상자를 만들거나 상자 내에 컨트롤을 배치할 수 있도록 *lpRect* 의 대화 상자 단위를 화면 단위 (픽셀)로 바꿉니다.
 
@@ -666,9 +666,9 @@ n 단추: 누를 단추를 식별 합니다. 이 매개 변수는 다음 값 중
 
 ### <a name="remarks"></a>설명
 
-Windows SDK 보도 항목 메시지에 대 한 자세한 내용은 [PSM_PRESSBUTTON](/windows/desktop/Controls/psm-pressbutton) 를 참조 하세요.
+Windows SDK 보도 항목 메시지에 대 한 자세한 내용은 [PSM_PRESSBUTTON](/windows/win32/Controls/psm-pressbutton) 를 참조 하세요.
 
-를 `PressButton` 호출 하면 속성 페이지에서 프레임 워크로 [PSN_APPLY](/windows/desktop/Controls/psn-apply) 알림이 전송 되지 않습니다. 이 알림을 보내려면 [CPropertyPage:: OnOK](../../mfc/reference/cpropertypage-class.md#onok)를 호출 합니다.
+를 `PressButton` 호출 하면 속성 페이지에서 프레임 워크로 [PSN_APPLY](/windows/win32/Controls/psn-apply) 알림이 전송 되지 않습니다. 이 알림을 보내려면 [CPropertyPage:: OnOK](../../mfc/reference/cpropertypage-class.md#onok)를 호출 합니다.
 
 ### <a name="example"></a>예제
 

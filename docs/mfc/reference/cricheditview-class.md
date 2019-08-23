@@ -100,12 +100,12 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nBulletIndent
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-ms.openlocfilehash: eacb41a7ae4c42a34a67f57dc0af0d966d134c14
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
-ms.translationtype: HT
+ms.openlocfilehash: c8eba16779b837b33912006a2ff3b7cdfa73f1e6
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916745"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502640"
 ---
 # <a name="cricheditview-class"></a>CRichEditView 클래스
 
@@ -357,11 +357,11 @@ CHARFORMAT2& GetCharFormatSelection();
 
 ### <a name="return-value"></a>반환 값
 
-현재 선택 영역의 문자 서식 특성을 포함 하는 [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) 구조체입니다.
+현재 선택 영역의 문자 서식 특성을 포함 하는 [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK [EM_GETCHARFORMAT](/windows/desktop/Controls/em-getcharformat) 메시지 및 [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) 구조를 참조 하세요.
+자세한 내용은 Windows SDK [EM_GETCHARFORMAT](/windows/win32/Controls/em-getcharformat) 메시지 및 [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) 구조를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -369,7 +369,7 @@ CHARFORMAT2& GetCharFormatSelection();
 
 ##  <a name="getclipboarddata"></a>  CRichEditView::GetClipboardData
 
-프레임 워크는 [IRichEditOleCallback:: GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getclipboarddata)를 처리 하는 과정의 일부로이 함수를 호출 합니다.
+프레임 워크는 [IRichEditOleCallback:: GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditolecallback-getclipboarddata)를 처리 하는 과정의 일부로이 함수를 호출 합니다.
 
 ```
 virtual HRESULT GetClipboardData(
@@ -382,7 +382,7 @@ virtual HRESULT GetClipboardData(
 ### <a name="parameters"></a>매개 변수
 
 *lpchrg*<br/>
-*Lplpdataobj*로 지정 된 데이터 개체에 복사할 문자 범위 (및 OLE 항목)를 지정 하는 [charrange](/windows/desktop/api/richedit/ns-richedit-charrange) 구조에 대 한 포인터입니다.
+*Lplpdataobj*로 지정 된 데이터 개체에 복사할 문자 범위 (및 OLE 항목)를 지정 하는 [charrange](/windows/win32/api/richedit/ns-richedit-charrange) 구조에 대 한 포인터입니다.
 
 *dwReco*<br/>
 클립보드 작업 플래그입니다. 는 다음 값 중 하나일 수 있습니다.
@@ -398,14 +398,14 @@ virtual HRESULT GetClipboardData(
 - 클립보드에서 붙여넣기를 RECO_PASTE 합니다.
 
 *lpRichDataObj*<br/>
-Rich edit 컨트롤의 클립보드 데이터를 포함 하는 [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) 개체에 대 한 포인터입니다 ( [IRichEditOle:: GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditole-getclipboarddata)).
+Rich edit 컨트롤의 클립보드 데이터를 포함 하는 [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) 개체에 대 한 포인터입니다 ( [IRichEditOle:: GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditole-getclipboarddata)).
 
 *lplpdataobj*<br/>
 `IDataObject` *Lpchrg* 매개 변수에 지정 된 범위를 나타내는 개체의 주소를 받는 포인터 변수에 대 한 포인터입니다. 오류가 반환 되 면 *lplpdataobj* 의 값이 무시 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
-작업의 성공 여부를 보고 하는 HRESULT 값입니다. HRESULT에 대 한 자세한 내용은 Windows SDK의 [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes) 를 참조 하십시오.
+작업의 성공 여부를 보고 하는 HRESULT 값입니다. HRESULT에 대 한 자세한 내용은 Windows SDK의 [COM 오류 코드 구조](/windows/win32/com/structure-of-com-error-codes) 를 참조 하십시오.
 
 ### <a name="remarks"></a>설명
 
@@ -413,11 +413,11 @@ Rich edit 컨트롤의 클립보드 데이터를 포함 하는 [IDataObject](/wi
 
 이는 고급 재정의 가능입니다.
 
-자세한 내용은 Windows SDK에서 [IRichEditOle:: GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditole-getclipboarddata), [IRichEditOleCallback:: GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getclipboarddata)및 [charrange](/windows/desktop/api/richedit/ns-richedit-charrange) 를 참조 하 고 Windows SDK의 [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) 를 참조 하십시오.
+자세한 내용은 Windows SDK에서 [IRichEditOle:: GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditole-getclipboarddata), [IRichEditOleCallback:: GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditolecallback-getclipboarddata)및 [charrange](/windows/win32/api/richedit/ns-richedit-charrange) 를 참조 하 고 Windows SDK의 [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) 를 참조 하십시오.
 
 ##  <a name="getcontextmenu"></a>  CRichEditView::GetContextMenu
 
-프레임 워크는 [IRichEditOleCallback:: GetContextMenu](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getcontextmenu)를 처리 하는 과정의 일부로이 함수를 호출 합니다.
+프레임 워크는 [IRichEditOleCallback:: GetContextMenu](/windows/win32/api/richole/nf-richole-iricheditolecallback-getcontextmenu)를 처리 하는 과정의 일부로이 함수를 호출 합니다.
 
 ```
 virtual HMENU GetContextMenu(
@@ -435,7 +435,7 @@ virtual HMENU GetContextMenu(
 선택에 ole `OLEOBJECT` 항목이 하나 이상 포함 된 경우 선택한 첫 번째 ole 개체를 지정 하는 구조체에 대 한 포인터입니다. 선택 항목에 항목이 없으면 *lpoleobj* 가 NULL입니다. 구조체 `OLEOBJECT` 는 OLE 개체 v-table에 대 한 포인터를 보유 합니다.
 
 *lpchrg*<br/>
-현재 선택 영역을 포함 하는 [Charrange](/windows/desktop/api/richedit/ns-richedit-charrange) 구조체에 대 한 포인터입니다.
+현재 선택 영역을 포함 하는 [Charrange](/windows/win32/api/richedit/ns-richedit-charrange) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -459,7 +459,7 @@ virtual HMENU GetContextMenu(
 
 기본 구현에서는 NULL을 반환 합니다. 이는 고급 재정의 가능입니다.
 
-자세한 내용은 Windows SDK에서 [IRichEditOleCallback:: GetContextMenu](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getcontextmenu) And [charrange](/windows/desktop/api/richedit/ns-richedit-charrange) 를 참조 하십시오.
+자세한 내용은 Windows SDK에서 [IRichEditOleCallback:: GetContextMenu](/windows/win32/api/richole/nf-richole-iricheditolecallback-getcontextmenu) And [charrange](/windows/win32/api/richedit/ns-richedit-charrange) 를 참조 하십시오.
 
 ##  <a name="getdocument"></a>  CRichEditView::GetDocument
 
@@ -539,11 +539,11 @@ PARAFORMAT2& GetParaFormatSelection();
 
 ### <a name="return-value"></a>반환 값
 
-현재 선택 영역에 대 한 단락 서식 특성을 포함 하는 [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) 구조체입니다.
+현재 선택 영역에 대 한 단락 서식 특성을 포함 하는 [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK [EM_GETPARAFORMAT](/windows/desktop/Controls/em-getparaformat) Message and [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) structure 항목을 참조 하세요.
+자세한 내용은 Windows SDK [EM_GETPARAFORMAT](/windows/win32/Controls/em-getparaformat) Message and [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) structure 항목을 참조 하세요.
 
 ##  <a name="getprintrect"></a>  CRichEditView::GetPrintRect
 
@@ -626,7 +626,7 @@ long GetTextLengthEx(
 ### <a name="parameters"></a>매개 변수
 
 *dwFlags*<br/>
-텍스트 길이를 결정 하는 데 사용할 메서드를 지정 하는 값입니다. 이 멤버는 Windows SDK에 설명 된 [GETTEXTLENGTHEX](/windows/desktop/api/richedit/ns-richedit-gettextlengthex) 의 flags 멤버에 나열 된 값 중 하나 이상이 될 수 있습니다.
+텍스트 길이를 결정 하는 데 사용할 메서드를 지정 하는 값입니다. 이 멤버는 Windows SDK에 설명 된 [GETTEXTLENGTHEX](/windows/win32/api/richedit/ns-richedit-gettextlengthex) 의 flags 멤버에 나열 된 값 중 하나 이상이 될 수 있습니다.
 
 *uCodePage*<br/>
 변환에 대 한 코드 페이지 (ANSI 코드 페이지의 경우 CP_ACP, 유니코드의 경우 1200)
@@ -637,7 +637,7 @@ long GetTextLengthEx(
 
 ### <a name="remarks"></a>설명
 
-`GetTextLengthEx`텍스트의 길이를 결정 하는 추가 방법을 제공 합니다. Rich Edit 2.0 기능을 지원 합니다. 자세한 내용은 Windows SDK의 [Rich Edit Controls 정보](/windows/desktop/Controls/about-rich-edit-controls) 를 참조 하세요.
+`GetTextLengthEx`텍스트의 길이를 결정 하는 추가 방법을 제공 합니다. Rich Edit 2.0 기능을 지원 합니다. 자세한 내용은 Windows SDK의 [Rich Edit Controls 정보](/windows/win32/Controls/about-rich-edit-controls) 를 참조 하세요.
 
 ##  <a name="insertfileasobject"></a>  CRichEditView::InsertFileAsObject
 
@@ -671,7 +671,7 @@ HRESULT InsertItem(CRichEditCntrItem* pItem);
 
 ### <a name="remarks"></a>설명
 
-HRESULT에 대 한 자세한 내용은 Windows SDK의 [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes) 를 참조 하십시오.
+HRESULT에 대 한 자세한 내용은 Windows SDK의 [COM 오류 코드 구조](/windows/win32/com/structure-of-com-error-codes) 를 참조 하십시오.
 
 ##  <a name="isricheditformat"></a>  CRichEditView::IsRichEditFormat
 
@@ -763,7 +763,7 @@ void OnCharEffect(
 
 이 함수를 호출할 때마다 현재 선택 항목에 대해 지정 된 서식 지정 효과가 설정/해제 됩니다.
 
-*Dwmask* 및 *dwEffect* 매개 변수 및 해당 값에 대 한 자세한 내용은 Windows SDK [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) 의 해당 데이터 멤버를 참조 하세요.
+*Dwmask* 및 *dwEffect* 매개 변수 및 해당 값에 대 한 자세한 내용은 Windows SDK [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 의 해당 데이터 멤버를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -826,7 +826,7 @@ virtual BOOL OnPasteNativeObject(LPSTORAGE lpStg);
 ### <a name="parameters"></a>매개 변수
 
 *lpStg*<br/>
-[IStorage](/windows/desktop/api/objidl/nn-objidl-istorage) 개체에 대 한 포인터입니다.
+[IStorage](/windows/win32/api/objidl/nn-objidl-istorage) 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -838,7 +838,7 @@ virtual BOOL OnPasteNativeObject(LPSTORAGE lpStg);
 
 이는 고급 재정의 가능입니다.
 
-자세한 내용은 Windows SDK의 [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage) 를 참조 하세요.
+자세한 내용은 Windows SDK의 [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) 를 참조 하세요.
 
 ##  <a name="onparaalign"></a>  CRichEditView::OnParaAlign
 
@@ -963,9 +963,9 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
 
 ### <a name="remarks"></a>설명
 
-[Messagebeep](/windows/desktop/api/winuser/nf-winuser-messagebeep)의 출력 알림을 변경 하려면이 함수를 재정의 합니다.
+[Messagebeep](/windows/win32/api/winuser/nf-winuser-messagebeep)의 출력 알림을 변경 하려면이 함수를 재정의 합니다.
 
-자세한 내용은 Windows SDK의 [Messagebeep](/windows/desktop/api/winuser/nf-winuser-messagebeep) 를 참조 하십시오.
+자세한 내용은 Windows SDK의 [Messagebeep](/windows/win32/api/winuser/nf-winuser-messagebeep) 를 참조 하십시오.
 
 ### <a name="example"></a>예제
 
@@ -997,7 +997,7 @@ void OnUpdateCharEffect(
 
 Mask *dwmask* 는 확인할 문자 서식 특성을 지정 합니다. *DwEffect* 플래그는 설정/해제할 문자 서식 특성을 나열 합니다.
 
-*Dwmask* 및 *dwEffect* 매개 변수 및 해당 값에 대 한 자세한 내용은 Windows SDK [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) 의 해당 데이터 멤버를 참조 하세요.
+*Dwmask* 및 *dwEffect* 매개 변수 및 해당 값에 대 한 자세한 내용은 Windows SDK [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 의 해당 데이터 멤버를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1050,7 +1050,7 @@ long PrintInsideRect(
 출력 영역에 대 한 장치 컨텍스트에 대 한 포인터입니다.
 
 *rectLayout*<br/>
-출력 영역을 정의 하는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) .
+출력 영역을 정의 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) .
 
 *nIndexStart*<br/>
 서식을 지정할 첫 번째 문자의 0부터 시작 하는 인덱스입니다.
@@ -1121,7 +1121,7 @@ virtual HRESULT QueryAcceptData(
 ### <a name="parameters"></a>매개 변수
 
 *lpdataobj*<br/>
-쿼리할 [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) 에 대 한 포인터입니다.
+쿼리할 [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) 에 대 한 포인터입니다.
 
 *lpcfFormat*<br/>
 허용 되는 데이터 형식에 대 한 포인터입니다.
@@ -1143,7 +1143,7 @@ virtual HRESULT QueryAcceptData(
 
 파생 된 문서 클래스에서 여러 COM 항목 조직을 처리 하려면이 함수를 재정의 합니다. 이는 고급 재정의 가능입니다.
 
-HRESULT 및 `IDataObject`에 대한 자세한 내용은 Windows SDK의 [COM 오류 코드 ](/windows/desktop/com/structure-of-com-error-codes) 및 [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject)의 구조를 참조하십시오.
+HRESULT 및 `IDataObject`에 대한 자세한 내용은 Windows SDK의 [COM 오류 코드 ](/windows/win32/com/structure-of-com-error-codes) 및 [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject)의 구조를 참조하십시오.
 
 ### <a name="example"></a>예제
 
@@ -1160,13 +1160,13 @@ void SetCharFormat(CHARFORMAT2 cf);
 ### <a name="parameters"></a>매개 변수
 
 *cf*<br/>
-새 기본 문자 서식 특성을 포함 하는 [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) 구조체입니다.
+새 기본 문자 서식 특성을 포함 하는 [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
 이 함수는 `dwMask` *cf* 의 멤버로 지정 된 특성만 변경 합니다.
 
-자세한 내용은 Windows SDK [EM_SETCHARFORMAT](/windows/desktop/Controls/em-setcharformat) Message and [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) structure 항목을 참조 하세요.
+자세한 내용은 Windows SDK [EM_SETCHARFORMAT](/windows/win32/Controls/em-setcharformat) Message and [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) structure 항목을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1227,7 +1227,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 ### <a name="parameters"></a>매개 변수
 
 *pf*<br/>
-새 기본 단락 서식 특성을 포함 하는 [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) 구조체입니다.
+새 기본 단락 서식 특성을 포함 하는 [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) 구조체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1237,7 +1237,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 
 이 함수는 `dwMask` *pf* 의 멤버로 지정 된 특성만 변경 합니다.
 
-자세한 내용은 Windows SDK [EM_SETPARAFORMAT](/windows/desktop/Controls/em-setparaformat) Message and [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) structure 항목을 참조 하세요.
+자세한 내용은 Windows SDK [EM_SETPARAFORMAT](/windows/win32/Controls/em-setparaformat) Message and [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) structure 항목을 참조 하세요.
 
 ### <a name="example"></a>예제
 

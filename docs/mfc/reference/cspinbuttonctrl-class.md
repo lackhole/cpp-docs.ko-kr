@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CSpinButtonCtrl [MFC], SetPos
 - CSpinButtonCtrl [MFC], SetRange
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
-ms.openlocfilehash: da247524dae77627bbf041b83bc1534a75c3b073
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
-ms.translationtype: HT
+ms.openlocfilehash: c167745eed45b7081e62a2c3be225a33e7ee0520
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916699"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502437"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl 클래스
 
@@ -117,7 +117,7 @@ virtual BOOL Create(
 ### <a name="parameters"></a>매개 변수
 
 *dwStyle*<br/>
-스핀 단추 컨트롤의 스타일을 지정 합니다. Spin button 컨트롤 스타일의 조합을 컨트롤에 적용 합니다. 이러한 스타일은 Windows SDK의 [Up-down 컨트롤 스타일](/windows/desktop/Controls/up-down-control-styles) 에 설명 되어 있습니다.
+스핀 단추 컨트롤의 스타일을 지정 합니다. Spin button 컨트롤 스타일의 조합을 컨트롤에 적용 합니다. 이러한 스타일은 Windows SDK의 [Up-down 컨트롤 스타일](/windows/win32/Controls/up-down-control-styles) 에 설명 되어 있습니다.
 
 *rect*<br/>
 스핀 단추 컨트롤의 크기와 위치를 지정 합니다. [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 일 수 있습니다.
@@ -154,10 +154,10 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>매개 변수
 
 *dwExStyle*<br/>
-만들려는 컨트롤의 확장 스타일을 지정 합니다. 확장 된 windows 스타일의 목록에 대해서는 Windows SDK의 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 에 대 한 *dwexstyle* 매개 변수를 참조 하세요.
+만들려는 컨트롤의 확장 스타일을 지정 합니다. 확장 된 windows 스타일의 목록에 대해서는 Windows SDK의 [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) 에 대 한 *dwexstyle* 매개 변수를 참조 하세요.
 
 *dwStyle*<br/>
-스핀 단추 컨트롤의 스타일을 지정 합니다. Spin button 컨트롤 스타일의 조합을 컨트롤에 적용 합니다. 이러한 스타일은 Windows SDK의 [Up-down 컨트롤 스타일](/windows/desktop/Controls/up-down-control-styles) 에 설명 되어 있습니다.
+스핀 단추 컨트롤의 스타일을 지정 합니다. Spin button 컨트롤 스타일의 조합을 컨트롤에 적용 합니다. 이러한 스타일은 Windows SDK의 [Up-down 컨트롤 스타일](/windows/win32/Controls/up-down-control-styles) 에 설명 되어 있습니다.
 
 *rect*<br/>
 *PParentWnd*의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조체에 대 한 참조입니다.
@@ -200,7 +200,7 @@ UINT GetAccel(
 *PAccel*로 지정 된 배열의 요소 수입니다.
 
 *pAccel*<br/>
-가속 정보를 수신 하는 [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-udaccel) 구조체의 배열에 대 한 포인터입니다.
+가속 정보를 수신 하는 [UDACCEL](/windows/win32/api/commctrl/ns-commctrl-udaccel) 구조체의 배열에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -298,7 +298,7 @@ BOOL SetAccel(
 ### <a name="parameters"></a>매개 변수
 
 *nAccel*<br/>
-*PAccel*에 의해 지정 된 [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-udaccel) 구조체 수입니다.
+*PAccel*에 의해 지정 된 [UDACCEL](/windows/win32/api/commctrl/ns-commctrl-udaccel) 구조체 수입니다.
 
 *pAccel*<br/>
 가속 정보를 포함 하는 UDACCEL 구조체의 배열에 대 한 포인터입니다. 요소는 `nSec` 멤버를 기준으로 오름차순으로 정렬 되어야 합니다.

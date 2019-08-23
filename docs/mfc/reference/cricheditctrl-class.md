@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: 253b1958a93fea28fa2d1408bc8238a5eb0ca519
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
-ms.translationtype: HT
+ms.openlocfilehash: fc2b4c08b5a999f0369199e0dd65a09a7cdf8dff
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916803"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69503158"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl 클래스
 
@@ -296,7 +296,7 @@ BOOL CanPaste(UINT nFormat = 0) const;
 ### <a name="parameters"></a>매개 변수
 
 *nFormat*<br/>
-쿼리할 클립보드 데이터 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata)에서 반환 되는 값 중 하나일 수 있습니다.
+쿼리할 클립보드 데이터 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw)에서 반환 되는 값 중 하나일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -306,7 +306,7 @@ BOOL CanPaste(UINT nFormat = 0) const;
 
 *Nformat* 이 0 `CanPaste` 인 경우는 현재 클립보드에 있는 모든 형식을 시도 합니다.
 
-자세한 내용은 Windows SDK [EM_CANPASTE](/windows/desktop/Controls/em-canpaste) Message and [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function을 참조 하십시오.
+자세한 내용은 Windows SDK [EM_CANPASTE](/windows/win32/Controls/em-canpaste) Message and [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) function을 참조 하십시오.
 
 ### <a name="example"></a>예제
 
@@ -328,7 +328,7 @@ Redo queue에 작업이 포함 되어 있으면 0이 아니고, 그렇지 않으
 
 Redo queue에서 작업 이름을 검색 하려면 [CRichEditCtrl:: GetRedoName](#getredoname)를 호출 합니다. 가장 최근의 실행 취소 작업을 다시 실행 하려면 [redo](#redo)를 호출 합니다.
 
-자세한 내용은 Windows SDK에서 [EM_CANREDO](/windows/desktop/Controls/em-canredo) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_CANREDO](/windows/win32/Controls/em-canredo) 을 참조 하세요.
 
 ##  <a name="canundo"></a>  CRichEditCtrl::CanUndo
 
@@ -344,7 +344,7 @@ BOOL CanUndo() const;
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK에서 [EM_CANUNDO](/windows/desktop/Controls/em-canundo) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_CANUNDO](/windows/win32/Controls/em-canundo) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -371,7 +371,7 @@ int CharFromPos(CPoint pt) const;
 
 이 멤버 함수는 rich edit 컨트롤에서 작동 합니다. 편집 컨트롤에 대 한 정보를 가져오려면 [CEdit:: CharFromPos](../../mfc/reference/cedit-class.md#charfrompos)를 호출 합니다.
 
-자세한 내용은 Windows SDK에서 [EM_CHARFROMPOS](/windows/desktop/Controls/em-charfrompos) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_CHARFROMPOS](/windows/win32/Controls/em-charfrompos) 을 참조 하세요.
 
 ##  <a name="clear"></a>  CRichEditCtrl::Clear
 
@@ -387,7 +387,7 @@ void Clear();
 
 현재 선택 영역을 삭제 하 고 삭제 된 내용을 클립보드에 배치 하려면 [Cut](#cut) 멤버 함수를 호출 합니다.
 
-자세한 내용은 Windows SDK에서 [WM_CLEAR](/windows/desktop/dataxchg/wm-clear) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [WM_CLEAR](/windows/win32/dataxchg/wm-clear) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -403,7 +403,7 @@ void Copy();
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK에서 [WM_COPY](/windows/desktop/dataxchg/wm-copy) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [WM_COPY](/windows/win32/dataxchg/wm-copy) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -424,10 +424,10 @@ virtual BOOL Create(
 ### <a name="parameters"></a>매개 변수
 
 *dwStyle*<br/>
-편집 컨트롤의 스타일을 지정 합니다. 아래의 **설명** 섹션에 나열 된 창 스타일의 조합을 적용 하 고 Windows SDK에 설명 된 [컨트롤 스타일을 편집](/windows/desktop/Controls/edit-control-styles)합니다.
+편집 컨트롤의 스타일을 지정 합니다. 아래의 **설명** 섹션에 나열 된 창 스타일의 조합을 적용 하 고 Windows SDK에 설명 된 [컨트롤 스타일을 편집](/windows/win32/Controls/edit-control-styles)합니다.
 
 *rect*<br/>
-편집 컨트롤의 크기와 위치를 지정 합니다. 는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 일 수 있습니다.
+편집 컨트롤의 크기와 위치를 지정 합니다. 는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 일 수 있습니다.
 
 *pParentWnd*<br/>
 편집 컨트롤의 부모 창 (종종 [CDialog](../../mfc/reference/cdialog-class.md))을 지정 합니다. NULL이 아니어야 합니다.
@@ -461,7 +461,7 @@ virtual BOOL Create(
 
 - WS_TABSTOP는 탭 이동 순서에 편집 컨트롤을 포함 합니다.
 
-창 스타일에 대 한 자세한 내용은 Windows SDK의 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 를 참조 하십시오.
+창 스타일에 대 한 자세한 내용은 Windows SDK의 [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) 를 참조 하십시오.
 
 ### <a name="example"></a>예제
 
@@ -483,10 +483,10 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>매개 변수
 
 *dwExStyle*<br/>
-만들려는 컨트롤의 확장 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록에 대해서는 Windows SDK의 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 에 대 한 *dwexstyle* 매개 변수를 참조 하세요.
+만들려는 컨트롤의 확장 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록에 대해서는 Windows SDK의 [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) 에 대 한 *dwexstyle* 매개 변수를 참조 하세요.
 
 *dwStyle*<br/>
-편집 컨트롤의 스타일을 지정 합니다. Windows SDK에서 설명 하는 [컨트롤 스타일](/windows/desktop/Controls/edit-control-styles) [만들기](#create) 및 편집의 **설명** 섹션에 나열 된 창 스타일의 조합을 적용 합니다.
+편집 컨트롤의 스타일을 지정 합니다. Windows SDK에서 설명 하는 [컨트롤 스타일](/windows/win32/Controls/edit-control-styles) [만들기](#create) 및 편집의 **설명** 섹션에 나열 된 창 스타일의 조합을 적용 합니다.
 
 *rect*<br/>
 *PParentWnd*의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조체에 대 한 참조입니다.
@@ -535,7 +535,7 @@ void Cut();
 
 삭제 된 텍스트를 클립보드에 넣지 않고 현재 선택 영역을 삭제 하려면 [Clear](#clear) 멤버 함수를 호출 합니다.
 
-자세한 내용은 Windows SDK에서 [WM_CUT](/windows/desktop/dataxchg/wm-cut) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [WM_CUT](/windows/win32/dataxchg/wm-cut) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -552,7 +552,7 @@ BOOL DisplayBand(LPRECT pDisplayRect);
 ### <a name="parameters"></a>매개 변수
 
 *pDisplayRect*<br/>
-텍스트를 표시할 장치의 영역을 지정 하는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체에 대 한 포인터입니다.
+텍스트를 표시할 장치의 영역을 지정 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -562,7 +562,7 @@ BOOL DisplayBand(LPRECT pDisplayRect);
 
 텍스트 및 OLE 항목이 *Pdisplayrect*포인터로 지정 된 영역으로 잘립니다.
 
-자세한 내용은 Windows SDK에서 [EM_DISPLAYBAND](/windows/desktop/Controls/em-displayband) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_DISPLAYBAND](/windows/win32/Controls/em-displayband) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -582,7 +582,7 @@ void EmptyUndoBuffer();
 
 실행 취소 플래그는 [CWnd](../../mfc/reference/cwnd-class.md) 멤버 함수 [setwindowtext](../../mfc/reference/cwnd-class.md#setwindowtext)를 호출할 때마다 자동으로 지워집니다.
 
-자세한 내용은 Windows SDK에서 [EM_EMPTYUNDOBUFFER](/windows/desktop/Controls/em-emptyundobuffer) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_EMPTYUNDOBUFFER](/windows/win32/Controls/em-emptyundobuffer) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -601,10 +601,10 @@ long FindText(
 ### <a name="parameters"></a>매개 변수
 
 *dwFlags*<br/>
-가능한 값 목록은 Windows SDK의 *wParam* in [EM_FINDTEXTEXT](/windows/desktop/Controls/em-findtextex) 을 참조 하십시오.
+가능한 값 목록은 Windows SDK의 *wParam* in [EM_FINDTEXTEXT](/windows/win32/Controls/em-findtextex) 을 참조 하십시오.
 
 *pFindText*<br/>
-검색에 대 한 매개 변수를 제공 하 고 일치 항목이 발견 된 범위를 반환 하는 [Findtextex](/windows/desktop/api/richedit/ns-richedit-findtextexa) 구조에 대 한 포인터입니다.
+검색에 대 한 매개 변수를 제공 하 고 일치 항목이 발견 된 범위를 반환 하는 [Findtextex](/windows/win32/api/richedit/ns-richedit-findtextexw) 구조에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -612,9 +612,9 @@ long FindText(
 
 ### <a name="remarks"></a>설명
 
-`FINDTEXTEX` 구조 내의 [charrange](/windows/desktop/api/richedit/ns-richedit-charrange) 구조에서 적절 한 범위 매개 변수를 설정 하 여 위나 아래로 검색할 수 있습니다.
+`FINDTEXTEX` 구조 내의 [charrange](/windows/win32/api/richedit/ns-richedit-charrange) 구조에서 적절 한 범위 매개 변수를 설정 하 여 위나 아래로 검색할 수 있습니다.
 
-자세한 내용은 Windows SDK에서 [EM_FINDTEXTEX](/windows/desktop/Controls/em-findtextex) Message 및 [Findtextex](/windows/desktop/api/richedit/ns-richedit-findtextexa) 구조체를 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_FINDTEXTEX](/windows/win32/Controls/em-findtextex) Message 및 [Findtextex](/windows/win32/api/richedit/ns-richedit-findtextexw) 구조체를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -640,7 +640,7 @@ DWORD FindWordBreak(
 
 ### <a name="return-value"></a>반환 값
 
-매개 변수 *Ncode*를 기준으로 합니다. 자세한 내용은 Windows SDK에서 [EM_FINDWORDBREAK](/windows/desktop/Controls/em-findwordbreak) 을 참조 하세요.
+매개 변수 *Ncode*를 기준으로 합니다. 자세한 내용은 Windows SDK에서 [EM_FINDWORDBREAK](/windows/win32/Controls/em-findwordbreak) 을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -659,7 +659,7 @@ long FormatRange(
 ### <a name="parameters"></a>매개 변수
 
 *pfr*<br/>
-출력 장치에 대 한 정보를 포함 하는 [Formatrange](/windows/desktop/api/richedit/ns-richedit-formatrange) 구조에 대 한 포인터입니다. NULL은 rich edit 컨트롤 내에서 캐시 된 정보를 해제할 수 있음을 나타냅니다.
+출력 장치에 대 한 정보를 포함 하는 [Formatrange](/windows/win32/api/richedit/ns-richedit-formatrange) 구조에 대 한 포인터입니다. NULL은 rich edit 컨트롤 내에서 캐시 된 정보를 해제할 수 있음을 나타냅니다.
 
 *bDisplay*<br/>
 텍스트를 렌더링 해야 하는지 여부를 나타냅니다. FALSE 이면 텍스트를 측정 합니다.
@@ -672,7 +672,7 @@ long FormatRange(
 
 일반적으로이 호출은 [Displayband](#displayband)에 대 한 호출 뒤에 나옵니다.
 
-자세한 내용은 Windows SDK [EM_FORMATRANGE](/windows/desktop/Controls/em-formatrange) Message And [formatrange](/windows/desktop/api/richedit/ns-richedit-formatrange) structure 항목을 참조 하세요.
+자세한 내용은 Windows SDK [EM_FORMATRANGE](/windows/win32/Controls/em-formatrange) Message And [formatrange](/windows/win32/api/richedit/ns-richedit-formatrange) structure 항목을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -699,7 +699,7 @@ CPoint GetCharPos(long lChar) const;
 
 문자는 0부터 시작 하는 인덱스 값을 제공 하 여 지정 됩니다. *Lchar* 가이 `CRichEditCtrl` 개체의 마지막 문자 인덱스 보다 큰 경우 반환 값은이 개체의 마지막 문자 바로 다음 `CRichEditCtrl` 에 오는 문자 위치의 좌표를 지정 합니다.
 
-자세한 내용은 Windows SDK에서 [EM_POSFROMCHAR](/windows/desktop/Controls/em-posfromchar) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_POSFROMCHAR](/windows/win32/Controls/em-posfromchar) 을 참조 하세요.
 
 ##  <a name="getdefaultcharformat"></a>  CRichEditCtrl::GetDefaultCharFormat
 
@@ -744,7 +744,7 @@ long GetEventMask() const;
 
 이벤트 마스크는 `CRichEditCtrl` 개체가 부모 창에 보내는 알림 메시지를 지정 합니다.
 
-자세한 내용은 Windows SDK에서 [EM_GETEVENTMASK](/windows/desktop/Controls/em-geteventmask) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_GETEVENTMASK](/windows/win32/Controls/em-geteventmask) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -764,7 +764,7 @@ int GetFirstVisibleLine() const;
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK에서 [EM_GETFIRSTVISIBLELINE](/windows/desktop/Controls/em-getfirstvisibleline) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_GETFIRSTVISIBLELINE](/windows/win32/Controls/em-getfirstvisibleline) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -780,13 +780,13 @@ IRichEditOle* GetIRichEditOle() const;
 
 ### <a name="return-value"></a>반환 값
 
-이`CRichEditCtrl` 개체의 OLE 기능에 액세스 하는 데 사용할 수 있는 [IRichEditOle](/windows/desktop/api/richole/nn-richole-iricheditole) 인터페이스에 대 한 포인터입니다. 인터페이스에 액세스할 수 없는 경우 NULL입니다.
+이`CRichEditCtrl` 개체의 OLE 기능에 액세스 하는 데 사용할 수 있는 [IRichEditOle](/windows/win32/api/richole/nn-richole-iricheditole) 인터페이스에 대 한 포인터입니다. 인터페이스에 액세스할 수 없는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
 이 인터페이스를 사용 하 여 `CRichEditCtrl` 이 개체의 OLE 기능에 액세스 합니다.
 
-자세한 내용은 Windows SDK [EM_GETOLEINTERFACE](/windows/desktop/Controls/em-getoleinterface) Message and [IRichEditOle](/windows/desktop/api/richole/nn-richole-iricheditole) interface 항목을 참조 하세요.
+자세한 내용은 Windows SDK [EM_GETOLEINTERFACE](/windows/win32/Controls/em-getoleinterface) Message and [IRichEditOle](/windows/win32/api/richole/nn-richole-iricheditole) interface 항목을 참조 하세요.
 
 ##  <a name="getlimittext"></a>  CRichEditCtrl::GetLimitText
 
@@ -804,7 +804,7 @@ long GetLimitText() const;
 
 텍스트 제한은 rich edit 컨트롤에서 허용할 수 있는 최대 텍스트 크기 (바이트)입니다.
 
-자세한 내용은 Windows SDK에서 [EM_GETLIMITTEXT](/windows/desktop/Controls/em-getlimittext) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_GETLIMITTEXT](/windows/win32/Controls/em-getlimittext) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -847,7 +847,7 @@ int GetLine(
 > [!NOTE]
 >  버퍼의 첫 번째 단어는 복사 될 문자 수를 저장 하므로 버퍼의 길이는 4 바이트 이상 인지 확인 합니다.
 
-자세한 내용은 Windows SDK에서 [EM_GETLINE](/windows/desktop/Controls/em-getline) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_GETLINE](/windows/win32/Controls/em-getline) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -867,7 +867,7 @@ int GetLineCount() const;
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK에서 [EM_GETLINECOUNT](/windows/desktop/Controls/em-getlinecount) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_GETLINECOUNT](/windows/win32/Controls/em-getlinecount) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -889,7 +889,7 @@ BOOL GetModify() const;
 
 Windows는 rich edit 컨트롤의 내용이 변경 되었는지 여부를 나타내는 내부 플래그를 유지 관리 합니다. 이 플래그는 편집 컨트롤을 처음 만들 때 지워지고 [Setmodify](#setmodify) 멤버 함수를 호출 하 여 지울 수도 있습니다.
 
-자세한 내용은 Windows SDK에서 [EM_GETMODIFY](/windows/desktop/Controls/em-getmodify) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_GETMODIFY](/windows/win32/Controls/em-getmodify) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -905,7 +905,7 @@ UINT GetOptions() const;
 
 ### <a name="return-value"></a>반환 값
 
-현재 옵션 플래그 값의 조합입니다. 이러한 값의 목록은 Windows SDK 설명 된 대로 [EM_SETOPTIONS](/windows/desktop/Controls/em-setoptions) 메시지의 *foptions* 매개 변수를 참조 하세요.
+현재 옵션 플래그 값의 조합입니다. 이러한 값의 목록은 Windows SDK 설명 된 대로 [EM_SETOPTIONS](/windows/win32/Controls/em-setoptions) 메시지의 *foptions* 매개 변수를 참조 하세요.
 
 ##  <a name="getparaformat"></a>  CRichEditCtrl::GetParaFormat
 
@@ -918,9 +918,9 @@ DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf)
 ### <a name="parameters"></a>매개 변수
 
 *pf*<br/>
-첫 번째 버전에서 현재 선택 영역에 대 한 단락 서식 특성을 유지 하는 [PARAFORMAT](/windows/desktop/api/richedit/ns-richedit-paraformat) 구조체에 대 한 포인터입니다.
+첫 번째 버전에서 현재 선택 영역에 대 한 단락 서식 특성을 유지 하는 [PARAFORMAT](/windows/win32/api/richedit/ns-richedit-paraformat) 구조체에 대 한 포인터입니다.
 
-두 번째 버전에서 기본 문자 서식 특성을 보유 한 `PARAFORMAT` 구조에 대 한 Rich Edit 2.0 extension 인 [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) 구조체에 대 한 포인터입니다.
+두 번째 버전에서 기본 문자 서식 특성을 보유 한 `PARAFORMAT` 구조에 대 한 Rich Edit 2.0 extension 인 [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -930,7 +930,7 @@ DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf)
 
 두 개 이상의 단락을 선택한 경우에는 *pf* 가 첫 번째 선택한 단락의 특성을 받습니다. 반환 값은 선택 영역 전체에서 일치 하는 특성을 지정 합니다.
 
-자세한 내용은 Windows SDK [EM_GETPARAFORMAT](/windows/desktop/Controls/em-getparaformat) 메시지 및 `PARAFORMAT` 및 `PARAFORMAT2` 구조체를 참조 하십시오.
+자세한 내용은 Windows SDK [EM_GETPARAFORMAT](/windows/win32/Controls/em-getparaformat) 메시지 및 `PARAFORMAT` 및 `PARAFORMAT2` 구조체를 참조 하십시오.
 
 ### <a name="example"></a>예제
 
@@ -949,10 +949,10 @@ BOOL GetPunctuation(
 ### <a name="parameters"></a>매개 변수
 
 *fType*<br/>
-Windows SDK에서 [EM_GETPUNCTUATION](/windows/desktop/Controls/em-getpunctuation) 의 *fType* 매개 변수에 설명 된 대로 구두점 형식 플래그입니다.
+Windows SDK에서 [EM_GETPUNCTUATION](/windows/win32/Controls/em-getpunctuation) 의 *fType* 매개 변수에 설명 된 대로 구두점 형식 플래그입니다.
 
 *lpPunc*<br/>
-Windows SDK에 설명 된 [문장 부호](/windows/desktop/api/richedit/ns-richedit-punctuation) 구조에 대 한 포인터입니다.
+Windows SDK에 설명 된 [문장 부호](/windows/win32/api/richedit/ns-richedit-punctuation) 구조에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -973,13 +973,13 @@ void GetRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-이 `CRichEditCtrl` 개체 의 서식 지정 사각형을 받는 [사각형](/windows/desktop/api/windef/ns-windef-tagrect)에 대한 [crect](../../atl-mfc-shared/reference/crect-class.md) 또는 포인터입니다.
+이 `CRichEditCtrl` 개체 의 서식 지정 사각형을 받는 [사각형](/windows/win32/api/windef/ns-windef-rect)에 대한 [crect](../../atl-mfc-shared/reference/crect-class.md) 또는 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
 서식 지정 사각형은 텍스트의 경계 사각형입니다. 이 값은 `CRichEditCtrl` 개체의 크기와는 독립적입니다.
 
-자세한 내용은 Windows SDK에서 [EM_GETRECT](/windows/desktop/Controls/em-getrect) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_GETRECT](/windows/win32/Controls/em-getrect) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -995,7 +995,7 @@ UNDONAMEID GetRedoName() const;
 
 ### <a name="return-value"></a>반환 값
 
-성공 하 `GetRedoName` 는 경우 컨트롤의 redo queue에서 다음 작업의 형식을 나타내는 [UNDONAMEID](/windows/desktop/api/richedit/ne-richedit-undonameid) 열거형 형식을 반환 합니다. Redo queue가 비어 있거나 큐의 다시 실행 작업이 알 수 없는 형식인 경우는 0을 `GetRedoName` 반환 합니다.
+성공 하 `GetRedoName` 는 경우 컨트롤의 redo queue에서 다음 작업의 형식을 나타내는 [UNDONAMEID](/windows/win32/api/richedit/ne-richedit-undonameid) 열거형 형식을 반환 합니다. Redo queue가 비어 있거나 큐의 다시 실행 작업이 알 수 없는 형식인 경우는 0을 `GetRedoName` 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1016,7 +1016,7 @@ void GetSel(
 ### <a name="parameters"></a>매개 변수
 
 *cr*<br/>
-현재 선택 영역의 범위를 받는 [Charrange](/windows/desktop/api/richedit/ns-richedit-charrange) 구조체에 대 한 참조입니다.
+현재 선택 영역의 범위를 받는 [Charrange](/windows/win32/api/richedit/ns-richedit-charrange) 구조체에 대 한 참조입니다.
 
 *nStartChar*<br/>
 현재 선택 영역에 있는 첫 번째 문자의 0부터 시작 하는 인덱스입니다.
@@ -1034,7 +1034,7 @@ void GetSel(
 
 시작 (`cpMin` 또는 *nstartchar*)이 0이 고 end (`cpMax` 또는 *nendchar*)가-1 이면 선택 항목에 모든 항목이 포함 됩니다.
 
-자세한 내용은 [EM_EXGETSEL](/windows/desktop/Controls/em-exgetsel) Message And [charrange](/windows/desktop/api/richedit/ns-richedit-charrange) structure in the Windows SDK를 참조 하세요.
+자세한 내용은 [EM_EXGETSEL](/windows/win32/Controls/em-exgetsel) Message And [charrange](/windows/win32/api/richedit/ns-richedit-charrange) structure in the Windows SDK를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1051,9 +1051,9 @@ DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharForma
 ### <a name="parameters"></a>매개 변수
 
 *cf*<br/>
-첫 번째 버전에서 현재 선택의 문자 서식 특성을 받는 [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
+첫 번째 버전에서 현재 선택의 문자 서식 특성을 받는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
 
-두 번째 버전에서 [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) 구조체에 대 한 포인터로, 현재 선택의 문자 서식 특성을 수신 하는 `CHARFORMAT` 구조에 대 한 Rich Edit 2.0 extension입니다.
+두 번째 버전에서 [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) 구조체에 대 한 포인터로, 현재 선택의 문자 서식 특성을 수신 하는 `CHARFORMAT` 구조에 대 한 Rich Edit 2.0 extension입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1063,7 +1063,7 @@ DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharForma
 
 *Cf* 매개 변수는 현재 선택 영역에 있는 첫 번째 문자의 특성을 받습니다. 반환 값은 선택 영역 전체에서 일치 하는 특성을 지정 합니다.
 
-자세한 내용은 Windows SDK [EM_GETCHARFORMAT](/windows/desktop/Controls/em-getcharformat) 메시지 및 `CHARFORMAT` 및 `CHARFORMAT2` 구조체를 참조 하십시오.
+자세한 내용은 Windows SDK [EM_GETCHARFORMAT](/windows/win32/Controls/em-getcharformat) 메시지 및 `CHARFORMAT` 및 `CHARFORMAT2` 구조체를 참조 하십시오.
 
 ### <a name="example"></a>예제
 
@@ -1093,7 +1093,7 @@ WORD GetSelectionType() const;
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK에서 [EM_SELECTIONTYPE](/windows/desktop/Controls/em-selectiontype) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_SELECTIONTYPE](/windows/win32/Controls/em-selectiontype) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1124,7 +1124,7 @@ long GetSelText(LPSTR lpBuf) const;  CString GetSelText() const;
 
 첫 번째 폼인 **getseltext (** `lpBuf` **)** 를 사용 하는 경우 버퍼가 수신 하는 텍스트에 대해 버퍼가 충분히 큰지 확인 해야 합니다. [Getsel](#getsel) 을 호출 하 여 현재 선택 영역에 있는 문자 수를 확인 합니다.
 
-자세한 내용은 Windows SDK에서 [EM_GETSELTEXT](/windows/desktop/Controls/em-getseltext) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_GETSELTEXT](/windows/win32/Controls/em-getseltext) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1144,7 +1144,7 @@ long GetTextLength() const;
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK에서 [WM_GETTEXTLENGTH](/windows/desktop/winmsg/wm-gettextlength) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [WM_GETTEXTLENGTH](/windows/win32/winmsg/wm-gettextlength) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1163,7 +1163,7 @@ long GetTextLengthEx(
 ### <a name="parameters"></a>매개 변수
 
 *dwFlags*<br/>
-텍스트 길이를 결정 하는 데 사용할 메서드를 지정 하는 값입니다. 이 멤버는 Windows SDK에 설명 된 [GETTEXTLENGTHEX](/windows/desktop/api/richedit/ns-richedit-gettextlengthex) 의 flags 멤버에 나열 된 값 중 하나 이상이 될 수 있습니다.
+텍스트 길이를 결정 하는 데 사용할 메서드를 지정 하는 값입니다. 이 멤버는 Windows SDK에 설명 된 [GETTEXTLENGTHEX](/windows/win32/api/richedit/ns-richedit-gettextlengthex) 의 flags 멤버에 나열 된 값 중 하나 이상이 될 수 있습니다.
 
 *uCodePage*<br/>
 변환에 대 한 코드 페이지 (ANSI 코드 페이지의 경우 CP_ACP, 유니코드의 경우 1200)
@@ -1174,7 +1174,7 @@ long GetTextLengthEx(
 
 ### <a name="remarks"></a>설명
 
-`GetTextLengthEx`텍스트의 길이를 결정 하는 추가 방법을 제공 합니다. Rich Edit 2.0 기능을 지원 합니다. 자세한 내용은 Windows SDKfor의 [Rich Edit 컨트롤](/windows/desktop/Controls/about-rich-edit-controls) 정보를 참조 하세요.
+`GetTextLengthEx`텍스트의 길이를 결정 하는 추가 방법을 제공 합니다. Rich Edit 2.0 기능을 지원 합니다. 자세한 내용은 Windows SDKfor의 [Rich Edit 컨트롤](/windows/win32/Controls/about-rich-edit-controls) 정보를 참조 하세요.
 
 ##  <a name="gettextmode"></a>  CRichEditCtrl::GetTextMode
 
@@ -1186,7 +1186,7 @@ UINT GetTextMode() const;
 
 ### <a name="return-value"></a>반환 값
 
-Windows SDK 설명 된 대로 [TEXTMODE](/windows/desktop/api/richedit/ne-richedit-tagtextmode) 열거형 형식의 비트 플래그 집합입니다. 플래그는 컨트롤의 현재 텍스트 모드와 실행 취소 수준을 표시 합니다.
+Windows SDK 설명 된 대로 [TEXTMODE](/windows/win32/api/richedit/ne-richedit-textmode) 열거형 형식의 비트 플래그 집합입니다. 플래그는 컨트롤의 현재 텍스트 모드와 실행 취소 수준을 표시 합니다.
 
 ##  <a name="gettextrange"></a>  CRichEditCtrl::GetTextRange
 
@@ -1216,9 +1216,9 @@ int GetTextRange(
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK에서 [EM_GETTEXTRANGE](/windows/desktop/Controls/em-gettextrange) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_GETTEXTRANGE](/windows/win32/Controls/em-gettextrange) 을 참조 하세요.
 
-`GetTextRange`는 Rich Edit 2.0 기능을 지원 합니다. 자세한 내용은 Windows SDKfor의 [Rich Edit 컨트롤](/windows/desktop/Controls/about-rich-edit-controls) 정보를 참조 하세요.
+`GetTextRange`는 Rich Edit 2.0 기능을 지원 합니다. 자세한 내용은 Windows SDKfor의 [Rich Edit 컨트롤](/windows/win32/Controls/about-rich-edit-controls) 정보를 참조 하세요.
 
 ##  <a name="getundoname"></a>  CRichEditCtrl::GetUndoName
 
@@ -1230,7 +1230,7 @@ UNDONAMEID GetUndoName() const;
 
 ### <a name="return-value"></a>반환 값
 
-실행 취소 작업이 컨트롤의 실행 취소 큐 `GetUndoName` 에 있는 경우는 큐에서 다음 작업의 유형을 나타내는 [UNDONAMEID](/windows/desktop/api/richedit/ne-richedit-undonameid) 열거 형식을 반환 합니다. 실행 취소 큐가 비어 있거나 큐의 실행 취소 작업이 알 수 없는 형식인 경우는 0을 `GetUndoName` 반환 합니다.
+실행 취소 작업이 컨트롤의 실행 취소 큐 `GetUndoName` 에 있는 경우는 큐에서 다음 작업의 유형을 나타내는 [UNDONAMEID](/windows/win32/api/richedit/ne-richedit-undonameid) 열거 형식을 반환 합니다. 실행 취소 큐가 비어 있거나 큐의 실행 취소 작업이 알 수 없는 형식인 경우는 0을 `GetUndoName` 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1246,7 +1246,7 @@ UINT GetWordWrapMode() const;
 
 ### <a name="return-value"></a>반환 값
 
-현재 단어 줄 바꿈 및 단어 분리 옵션입니다. 이러한 옵션은 Windows SDK의 [EM_SETWORDWRAPMODE](/windows/desktop/Controls/em-setwordwrapmode) 에 설명 되어 있습니다.
+현재 단어 줄 바꿈 및 단어 분리 옵션입니다. 이러한 옵션은 Windows SDK의 [EM_SETWORDWRAPMODE](/windows/win32/Controls/em-setwordwrapmode) 에 설명 되어 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1274,7 +1274,7 @@ void HideSelection(
 
 *Bperm* 이 TRUE 이면이 `CRichEditCtrl` 개체에 대 한 ECO_NOHIDESEL 옵션을 변경 합니다. 이 옵션에 대 한 간략 한 설명은 [SetOptions](#setoptions)를 참조 하세요. 이 함수를 사용 하 여이 `CRichEditCtrl` 개체에 대 한 모든 옵션을 설정할 수 있습니다.
 
-자세한 내용은 Windows SDK에서 [EM_HIDESELECTION](/windows/desktop/Controls/em-hideselection) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_HIDESELECTION](/windows/win32/Controls/em-hideselection) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1300,7 +1300,7 @@ void LimitText(long nChars = 0);
 > [!NOTE]
 >  텍스트 제한의 경우 각 OLE 항목은 단일 문자로 계산 됩니다.
 
-자세한 내용은 Windows SDK에서 [EM_EXLIMITTEXT](/windows/desktop/Controls/em-exlimittext) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_EXLIMITTEXT](/windows/win32/Controls/em-exlimittext) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1327,7 +1327,7 @@ long LineFromChar(long nIndex) const;
 
 문자 인덱스는 rich edit 컨트롤의 시작 부분에 있는 문자 수입니다. 문자 수를 계산 하는 경우 OLE 항목은 단일 문자로 계산 됩니다.
 
-자세한 내용은 Windows SDK에서 [EM_EXLINEFROMCHAR](/windows/desktop/Controls/em-exlinefromchar) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_EXLINEFROMCHAR](/windows/win32/Controls/em-exlinefromchar) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1354,7 +1354,7 @@ int LineIndex(int nLine = -1) const;
 
 문자 인덱스는 서식 있는 편집 컨트롤의 시작 부분부터 지정 된 줄 까지의 문자 수입니다.
 
-자세한 내용은 Windows SDK에서 [EM_LINEINDEX](/windows/desktop/controls/em-lineindex) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_LINEINDEX](/windows/win32/controls/em-lineindex) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1381,7 +1381,7 @@ int LineLength(int nLine = -1) const;
 
 [Lineindex](#lineindex) 멤버 함수를 사용 하 여이 `CRichEditCtrl` 개체 내의 지정 된 줄 번호에 대 한 문자 인덱스를 검색 합니다.
 
-자세한 내용은 Windows SDK에서 [EM_LINELENGTH](/windows/desktop/Controls/em-linelength) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_LINELENGTH](/windows/win32/Controls/em-linelength) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1411,7 +1411,7 @@ void LineScroll(
 
 `LineScroll`줄의 마지막 문자를 지나서 가로로 스크롤 하는 데 사용할 수 있습니다.
 
-자세한 내용은 Windows SDK에서 [EM_LINESCROLL](/windows/desktop/Controls/em-linescroll) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_LINESCROLL](/windows/win32/Controls/em-linescroll) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1429,7 +1429,7 @@ void Paste();
 
 데이터가 인식할 수 있는 형식의 데이터를 포함 하는 경우에만 데이터가 삽입 됩니다.
 
-자세한 내용은 Windows SDK에서 [WM_PASTE](/windows/desktop/dataxchg/wm-paste) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [WM_PASTE](/windows/win32/dataxchg/wm-paste) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1461,7 +1461,7 @@ void PasteSpecial(
 
 새 자료는 삽입 지점에서 캐럿의 위치에 삽입 됩니다.
 
-자세한 내용은 Windows SDK에서 [EM_PASTESPECIAL](/windows/desktop/Controls/em-pastespecial) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_PASTESPECIAL](/windows/win32/Controls/em-pastespecial) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1486,7 +1486,7 @@ CPoint PosFromChar(UINT nChar) const;
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK에서 [EM_POSFROMCHAR](/windows/desktop/Controls/em-posfromchar) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_POSFROMCHAR](/windows/win32/Controls/em-posfromchar) 을 참조 하세요.
 
 ##  <a name="redo"></a>  CRichEditCtrl::Redo
 
@@ -1502,7 +1502,7 @@ BOOL Redo();
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK에서 [EM_REDO](/windows/desktop/Controls/em-redo) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_REDO](/windows/win32/Controls/em-redo) 을 참조 하세요.
 
 ##  <a name="replacesel"></a>  CRichEditCtrl::ReplaceSel
 
@@ -1530,7 +1530,7 @@ void ReplaceSel(
 
 이 함수는 기존 문자 서식으로 삽입 된 텍스트의 서식을 지정 합니다. 를 호출 `SetSel` `ReplaceSel`하기 전에 (0,-1)을 호출 하 여 전체 텍스트 범위를 바꿀 때 새로 삽입 된 텍스트에 의해 상속 되는 이전 단락의 서식을 유지 하는 단락 끝 문자는 있습니다.
 
-자세한 내용은 Windows SDK에서 [EM_REPLACESEL](/windows/desktop/Controls/em-replacesel) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_REPLACESEL](/windows/win32/Controls/em-replacesel) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1548,7 +1548,7 @@ void RequestResize();
 
 이 함수는 무제한 `CRichEditCtrl` 개체에 대 한 [CWnd:: onsize](../../mfc/reference/cwnd-class.md#onsize) 처리 중에 유용 합니다.
 
-자세한 내용은 Windows SDK의 [Rich Edit 컨트롤에 대 한](/windows/desktop/Controls/about-rich-edit-controls) [EM_REQUESTRESIZE](/windows/desktop/Controls/em-requestresize) 메시지 및 **무제한 rich edit controls** 섹션을 참조 하세요.
+자세한 내용은 Windows SDK의 [Rich Edit 컨트롤에 대 한](/windows/win32/Controls/about-rich-edit-controls) [EM_REQUESTRESIZE](/windows/win32/Controls/em-requestresize) 메시지 및 **무제한 rich edit controls** 섹션을 참조 하세요.
 
 ##  <a name="setautourldetect"></a>  CRichEditCtrl::SetAutoURLDetect
 
@@ -1569,10 +1569,10 @@ BOOL SetAutoURLDetect(BOOL bEnable = TRUE);
 
 ### <a name="remarks"></a>설명
 
-사용 하도록 설정 되 면 rich edit 컨트롤에서 텍스트를 검색 하 여 표준 URL 형식과 일치 하는지 확인 합니다. 이러한 URL 형식 목록은 Windows SDK의 [EM_AUTOURLDETECT](/windows/desktop/Controls/em-autourldetect) 를 참조 하세요.
+사용 하도록 설정 되 면 rich edit 컨트롤에서 텍스트를 검색 하 여 표준 URL 형식과 일치 하는지 확인 합니다. 이러한 URL 형식 목록은 Windows SDK의 [EM_AUTOURLDETECT](/windows/win32/Controls/em-autourldetect) 를 참조 하세요.
 
 > [!NOTE]
->  편집 컨트롤이 url `SetAutoURLDetect` 이외의 텍스트에 대해 CFE_LINK 효과를 사용 하는 경우 TRUE로 설정 하지 마십시오. `SetAutoURLDetect`Url에 대해이 효과를 사용 하도록 설정 하 고 다른 모든 텍스트에 대해 사용 하지 않도록 설정 합니다. CFE_LINK 효과에 대 한 자세한 내용은 [EN_LINK](/windows/desktop/Controls/en-link) 를 참조 하세요.
+>  편집 컨트롤이 url `SetAutoURLDetect` 이외의 텍스트에 대해 CFE_LINK 효과를 사용 하는 경우 TRUE로 설정 하지 마십시오. `SetAutoURLDetect`Url에 대해이 효과를 사용 하도록 설정 하 고 다른 모든 텍스트에 대해 사용 하지 않도록 설정 합니다. CFE_LINK 효과에 대 한 자세한 내용은 [EN_LINK](/windows/win32/Controls/en-link) 를 참조 하세요.
 
 ##  <a name="setbackgroundcolor"></a>  CRichEditCtrl::SetBackgroundColor
 
@@ -1598,9 +1598,9 @@ COLORREF SetBackgroundColor(
 
 ### <a name="remarks"></a>설명
 
-배경색은 시스템 값 또는 지정 된 [Colorref](/windows/desktop/gdi/colorref) 값으로 설정할 수 있습니다.
+배경색은 시스템 값 또는 지정 된 [Colorref](/windows/win32/gdi/colorref) 값으로 설정할 수 있습니다.
 
-자세한 내용은 Windows SDK [EM_SETBKGNDCOLOR](/windows/desktop/Controls/em-setbkgndcolor) Message And [colorref](/windows/desktop/gdi/colorref) structure를 참조 하십시오.
+자세한 내용은 Windows SDK [EM_SETBKGNDCOLOR](/windows/win32/Controls/em-setbkgndcolor) Message And [colorref](/windows/win32/gdi/colorref) structure를 참조 하십시오.
 
 ### <a name="example"></a>예제
 
@@ -1618,9 +1618,9 @@ BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>매개 변수
 
 *cf*<br/>
-첫 번째 버전에서 새 기본 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
+첫 번째 버전에서 새 기본 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
 
-두 번째 버전에서 기본 문자 서식 특성을 포함 하는 `CHARFORMAT` 구조에 대 한 Rich Edit 2.0 extension 인 [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) 구조체에 대 한 포인터입니다.
+두 번째 버전에서 기본 문자 서식 특성을 포함 하는 `CHARFORMAT` 구조에 대 한 Rich Edit 2.0 extension 인 [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1630,7 +1630,7 @@ BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
 
 이 함수는 `dwMask` *cf* 의 멤버로 지정 된 특성만 변경 합니다.
 
-자세한 내용은 Windows SDK [EM_SETCHARFORMAT](/windows/desktop/Controls/em-setcharformat) 메시지 및 `CHARFORMAT` 및 `CHARFORMAT2` 구조체를 참조 하십시오.
+자세한 내용은 Windows SDK [EM_SETCHARFORMAT](/windows/win32/Controls/em-setcharformat) 메시지 및 `CHARFORMAT` 및 `CHARFORMAT2` 구조체를 참조 하십시오.
 
 ### <a name="example"></a>예제
 
@@ -1657,7 +1657,7 @@ DWORD SetEventMask(DWORD dwEventMask);
 
 이벤트 마스크는 `CRichEditCtrl` 개체가 부모 창에 보내는 알림 메시지를 지정 합니다.
 
-자세한 내용은 Windows SDK에서 [EM_SETEVENTMASK](/windows/desktop/Controls/em-seteventmask) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_SETEVENTMASK](/windows/win32/Controls/em-seteventmask) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1680,7 +1680,7 @@ TRUE 값은 텍스트가 수정 되었음을 나타내고, FALSE 값은 수정 �
 
 수정 된 플래그는 편집 컨트롤 내의 텍스트가 수정 되었는지 여부를 나타냅니다. 사용자가 텍스트를 변경할 때마다 자동으로 설정 됩니다. [Getmodify](#getmodify) 멤버 함수를 사용 하 여 해당 값을 검색할 수 있습니다.
 
-자세한 내용은 Windows SDK에서 [EM_SETMODIFY](/windows/desktop/Controls/em-setmodify) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_SETMODIFY](/windows/win32/Controls/em-setmodify) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1697,7 +1697,7 @@ BOOL SetOLECallback(IRichEditOleCallback* pCallback);
 ### <a name="parameters"></a>매개 변수
 
 *pCallback*<br/>
-이`CRichEditCtrl` 개체가 OLE 관련 리소스 및 정보를 가져오는 데 사용 하는 [IRichEditOleCallback](/windows/desktop/api/richole/nn-richole-iricheditolecallback) 개체에 대 한 포인터입니다.
+이`CRichEditCtrl` 개체가 OLE 관련 리소스 및 정보를 가져오는 데 사용 하는 [IRichEditOleCallback](/windows/win32/api/richole/nn-richole-iricheditolecallback) 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1705,9 +1705,9 @@ BOOL SetOLECallback(IRichEditOleCallback* pCallback);
 
 ### <a name="remarks"></a>설명
 
-이 `CRichEditCtrl` 개체는 [IUnknown:: AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) 를 호출 하 여 *pcallback*에 지정 된 COM 개체의 사용 횟수를 늘립니다.
+이 `CRichEditCtrl` 개체는 [IUnknown:: AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) 를 호출 하 여 *pcallback*에 지정 된 COM 개체의 사용 횟수를 늘립니다.
 
-자세한 내용은 Windows SDK [EM_SETOLECALLBACK](/windows/desktop/Controls/em-setolecallback) Message and [IRichEditOleCallback](/windows/desktop/api/richole/nn-richole-iricheditolecallback) interface 항목을 참조 하세요.
+자세한 내용은 Windows SDK [EM_SETOLECALLBACK](/windows/win32/Controls/em-setolecallback) Message and [IRichEditOleCallback](/windows/win32/api/richole/nn-richole-iricheditolecallback) interface 항목을 참조 하세요.
 
 ##  <a name="setoptions"></a>  CRichEditCtrl::SetOptions
 
@@ -1755,7 +1755,7 @@ Rich edit 옵션입니다. 플래그 값은 설명 섹션에 나열 되어 있�
 
 - ECO_VERTICAL는 텍스트와 개체를 세로 방향으로 그립니다. 아시아 언어에만 사용할 수 있습니다.
 
-자세한 내용은 Windows SDK에서 [EM_SETOPTIONS](/windows/desktop/Controls/em-setoptions) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_SETOPTIONS](/windows/win32/Controls/em-setoptions) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1773,9 +1773,9 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 ### <a name="parameters"></a>매개 변수
 
 *pf*<br/>
-첫 번째 버전에서 새 기본 단락 서식 특성을 포함 하는 [PARAFORMAT](/windows/desktop/api/richedit/ns-richedit-paraformat) 구조체에 대 한 포인터입니다.
+첫 번째 버전에서 새 기본 단락 서식 특성을 포함 하는 [PARAFORMAT](/windows/win32/api/richedit/ns-richedit-paraformat) 구조체에 대 한 포인터입니다.
 
-두 번째 버전에서 기본 문자 서식 특성을 보유 한 `PARAFORMAT` 구조에 대 한 Rich Edit 2.0 extension 인 [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) 구조체에 대 한 포인터입니다.
+두 번째 버전에서 기본 문자 서식 특성을 보유 한 `PARAFORMAT` 구조에 대 한 Rich Edit 2.0 extension 인 [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1785,7 +1785,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 
 이 함수는 `dwMask` *pf* 의 멤버로 지정 된 특성만 변경 합니다.
 
-자세한 내용은 Windows SDK [EM_SETPARAFORMAT](/windows/desktop/Controls/em-setparaformat) 메시지 및 `PARAFORMAT` 및 `PARAFORMAT2` 구조체를 참조 하십시오.
+자세한 내용은 Windows SDK [EM_SETPARAFORMAT](/windows/win32/Controls/em-setparaformat) 메시지 및 `PARAFORMAT` 및 `PARAFORMAT2` 구조체를 참조 하십시오.
 
 ### <a name="example"></a>예제
 
@@ -1804,10 +1804,10 @@ BOOL SetPunctuation(
 ### <a name="parameters"></a>매개 변수
 
 *fType*<br/>
-문장 부호 플래그입니다. 가능한 값 목록은 Windows SDK의 [EM_SETPUNCTUATION](/windows/desktop/Controls/em-setpunctuation) 에 대 한 *fType* 매개 변수를 참조 하세요.
+문장 부호 플래그입니다. 가능한 값 목록은 Windows SDK의 [EM_SETPUNCTUATION](/windows/win32/Controls/em-setpunctuation) 에 대 한 *fType* 매개 변수를 참조 하세요.
 
 *lpPunc*<br/>
-Windows SDK에 설명 된 [문장 부호](/windows/desktop/api/richedit/ns-richedit-punctuation) 구조에 대 한 포인터입니다.
+Windows SDK에 설명 된 [문장 부호](/windows/win32/api/richedit/ns-richedit-punctuation) 구조에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1838,7 +1838,7 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
 
 이 옵션에 대 한 간략 한 설명은 [SetOptions](#setoptions)를 참조 하세요. 이 함수를 사용 하 여이 `CRichEditCtrl` 개체에 대 한 모든 옵션을 설정할 수 있습니다.
 
-자세한 내용은 Windows SDK에서 [EM_SETREADONLY](/windows/desktop/Controls/em-setreadonly) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_SETREADONLY](/windows/win32/Controls/em-setreadonly) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1855,13 +1855,13 @@ void SetRect(LPCRECT lpRect);
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-서식 지정 사각형의 새 경계 를 나타내는 [사각형](/windows/desktop/api/windef/ns-windef-tagrect)에 대한 [crect](../../atl-mfc-shared/reference/crect-class.md) 또는 포인터입니다.
+서식 지정 사각형의 새 경계 를 나타내는 [사각형](/windows/win32/api/windef/ns-windef-rect)에 대한 [crect](../../atl-mfc-shared/reference/crect-class.md) 또는 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
 서식 지정 사각형은 텍스트에 대 한 제한 사각형입니다. 제한 사각형은 rich edit 컨트롤 창의 크기와는 독립적입니다. 이 `CRichEditCtrl` 개체를 처음 만들 때 서식 지정 사각형의 크기는 창의 클라이언트 영역과 같습니다. 서식 `SetRect` 지정 사각형을 서식 있는 편집 창 보다 크거나 작게 만들려면를 사용 합니다.
 
-자세한 내용은 Windows SDK에서 [EM_SETRECT](/windows/desktop/Controls/em-setrect) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_SETRECT](/windows/win32/Controls/em-setrect) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1888,7 +1888,7 @@ void SetSel(CHARRANGE& cr);
 선택 영역에 대 한 마지막 문자의 0부터 시작 하는 인덱스입니다.
 
 *cr*<br/>
-현재 선택 영역의 범위를 포함 하는 [Charrange](/windows/desktop/api/richedit/ns-richedit-charrange) 구조체입니다.
+현재 선택 영역의 범위를 포함 하는 [Charrange](/windows/win32/api/richedit/ns-richedit-charrange) 구조체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1902,7 +1902,7 @@ void SetSel(CHARRANGE& cr);
 
 이 `CRichEditCtrl` 개체의 모든 텍스트를 선택 하려면 시작 인덱스 `SetSel` 0과-1의 끝 인덱스를 사용 하 여를 호출 합니다.
 
-자세한 내용은 [EM_EXSETSEL](/windows/desktop/Controls/em-exsetsel) Message And [charrange](/windows/desktop/api/richedit/ns-richedit-charrange) structure in the Windows SDK를 참조 하세요.
+자세한 내용은 [EM_EXSETSEL](/windows/win32/Controls/em-exsetsel) Message And [charrange](/windows/win32/api/richedit/ns-richedit-charrange) structure in the Windows SDK를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1920,9 +1920,9 @@ BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>매개 변수
 
 *cf*<br/>
-첫 번째 버전에서 현재 선택 영역에 대 한 새 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
+첫 번째 버전에서 현재 선택 영역에 대 한 새 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
 
-두 번째 버전에서 [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) 구조체에 대 한 포인터로, 현재 선택 항목에 대 한 새 문자 서식 지정 `CHARFORMAT` 특성을 포함 하는 구조에 대 한 Rich Edit 2.0 확장입니다.
+두 번째 버전에서 [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) 구조체에 대 한 포인터로, 현재 선택 항목에 대 한 새 문자 서식 지정 `CHARFORMAT` 특성을 포함 하는 구조에 대 한 Rich Edit 2.0 확장입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1932,7 +1932,7 @@ BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
 
 이 함수는 `dwMask` *cf* 의 멤버로 지정 된 특성만 변경 합니다.
 
-자세한 내용은 [EM_SETCHARFORMAT](/windows/desktop/Controls/em-setcharformat) 및 `CHARFORMAT` Windows SDK의 및 `CHARFORMAT2` 구조를 참조 하세요.
+자세한 내용은 [EM_SETCHARFORMAT](/windows/win32/Controls/em-setcharformat) 및 `CHARFORMAT` Windows SDK의 및 `CHARFORMAT2` 구조를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1971,7 +1971,7 @@ BOOL SetTargetDevice(
 
 이 함수가 성공적으로 실행 되 면 rich edit 컨트롤은 매개 변수로 전달 된 장치 컨텍스트를 소유 합니다. 이 경우 호출 함수는 장치 컨텍스트를 소멸 시 키 지 않아야 합니다.
 
-자세한 내용은 Windows SDK에서 [EM_SETTARGETDEVICE](/windows/desktop/Controls/em-settargetdevice) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_SETTARGETDEVICE](/windows/win32/Controls/em-settargetdevice) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1988,7 +1988,7 @@ BOOL SetTextMode(UINT fMode);
 ### <a name="parameters"></a>매개 변수
 
 *fMode*<br/>
-컨트롤의 텍스트 모드와 실행 취소 수준 매개 변수의 새 설정을 지정 합니다. 가능한 값 목록은 Windows SDK의 [EM_SETTEXTMODE](/windows/desktop/Controls/em-settextmode) 에 대 한 mode 매개 변수를 참조 하세요.
+컨트롤의 텍스트 모드와 실행 취소 수준 매개 변수의 새 설정을 지정 합니다. 가능한 값 목록은 Windows SDK의 [EM_SETTEXTMODE](/windows/win32/Controls/em-settextmode) 에 대 한 mode 매개 변수를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1998,7 +1998,7 @@ BOOL SetTextMode(UINT fMode);
 
 텍스트 모드에 대 한 설명은 Windows SDK의 EM_SETTEXTMODE를 참조 하세요.
 
-컨트롤에 텍스트가 포함 되어 있으면이 멤버 함수는 실패 합니다. 컨트롤이 비어 있는지 확인 하려면 빈 문자열을 포함 하는 [WM_SETTEXT](/windows/desktop/winmsg/wm-settext) 메시지를 보냅니다.
+컨트롤에 텍스트가 포함 되어 있으면이 멤버 함수는 실패 합니다. 컨트롤이 비어 있는지 확인 하려면 빈 문자열을 포함 하는 [WM_SETTEXT](/windows/win32/winmsg/wm-settext) 메시지를 보냅니다.
 
 ##  <a name="setundolimit"></a>  CRichEditCtrl::SetUndoLimit
 
@@ -2033,9 +2033,9 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>매개 변수
 
 *cf*<br/>
-첫 번째 버전에서 현재 선택 된 단어에 대 한 새 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
+첫 번째 버전에서 현재 선택 된 단어에 대 한 새 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
 
-두 번째 버전에서 [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) 구조체에 대 한 포인터로, 현재 선택 된 단어에 대 한 새 문자 서식 `CHARFORMAT` 지정 특성을 포함 하는 구조에 대 한 Rich Edit 2.0 extension입니다.
+두 번째 버전에서 [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) 구조체에 대 한 포인터로, 현재 선택 된 단어에 대 한 새 문자 서식 `CHARFORMAT` 지정 특성을 포함 하는 구조에 대 한 Rich Edit 2.0 extension입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2045,7 +2045,7 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
 
 이 함수는 `dwMask` *cf* 의 멤버로 지정 된 특성만 변경 합니다.
 
-자세한 내용은 Windows SDK [EM_SETCHARFORMAT](/windows/desktop/Controls/em-setcharformat) 메시지 및 `CHARFORMAT` 및 `CHARFORMAT2` 구조체를 참조 하십시오.
+자세한 내용은 Windows SDK [EM_SETCHARFORMAT](/windows/win32/Controls/em-setcharformat) 메시지 및 `CHARFORMAT` 및 `CHARFORMAT2` 구조체를 참조 하십시오.
 
 ### <a name="example"></a>예제
 
@@ -2062,7 +2062,7 @@ UINT SetWordWrapMode(UINT uFlags) const;
 ### <a name="parameters"></a>매개 변수
 
 *uFlags*<br/>
-자동 줄 바꿈 및 단어 분리를 위해 설정할 옵션입니다. 사용할 수 있는 옵션 목록은 Windows SDK의 [EM_SETWORDWRAPMODE](/windows/desktop/Controls/em-setwordwrapmode) 를 참조 하세요.
+자동 줄 바꿈 및 단어 분리를 위해 설정할 옵션입니다. 사용할 수 있는 옵션 목록은 Windows SDK의 [EM_SETWORDWRAPMODE](/windows/win32/Controls/em-setwordwrapmode) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2084,7 +2084,7 @@ void StopGroupTyping();
 
 컨트롤은 다음 입력 작업 (있는 경우)을 실행 취소 큐의 새 작업에 저장 합니다.
 
-자세한 내용은 Windows SDK에서 [EM_STOPGROUPTYPING](/windows/desktop/Controls/em-stopgrouptyping) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_STOPGROUPTYPING](/windows/win32/Controls/em-stopgrouptyping) 을 참조 하세요.
 
 ##  <a name="streamin"></a>  CRichEditCtrl::StreamIn
 
@@ -2102,7 +2102,7 @@ long StreamIn(
 입력 데이터 형식을 지정 하는 플래그입니다. 자세한 내용은 설명 부분을 참조하세요.
 
 *es*<br/>
-입력 스트림을 지정 하는 [editstream](/windows/desktop/api/richedit/ns-richedit-editstream) 구조체입니다. 자세한 내용은 설명 부분을 참조하세요.
+입력 스트림을 지정 하는 [editstream](/windows/win32/api/richedit/ns-richedit-editstream) 구조체입니다. 자세한 내용은 설명 부분을 참조하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2120,7 +2120,7 @@ long StreamIn(
 
 매개 변수에서 버퍼를 텍스트로 채우는 콜백 함수를 지정 합니다. `EDITSTREAM` 이 콜백 함수는 입력 스트림이 모두 사용 될 때까지 반복적으로 호출 됩니다.
 
-자세한 내용은 Windows SDK [EM_STREAMIN](/windows/desktop/Controls/em-streamin) 메시지 및 [editstream](/windows/desktop/api/richedit/ns-richedit-editstream) structure를 참조 하십시오.
+자세한 내용은 Windows SDK [EM_STREAMIN](/windows/win32/Controls/em-streamin) 메시지 및 [editstream](/windows/win32/api/richedit/ns-richedit-editstream) structure를 참조 하십시오.
 
 ### <a name="example"></a>예제
 
@@ -2144,7 +2144,7 @@ long StreamOut(
 출력 데이터 형식을 지정 하는 플래그입니다. 자세한 내용은 설명 부분을 참조하세요.
 
 *es*<br/>
-출력 스트림을 지정 하는 [Editstream](/windows/desktop/api/richedit/ns-richedit-editstream) 구조체입니다. 자세한 내용은 설명 부분을 참조하세요.
+출력 스트림을 지정 하는 [Editstream](/windows/win32/api/richedit/ns-richedit-editstream) 구조체입니다. 자세한 내용은 설명 부분을 참조하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2166,7 +2166,7 @@ long StreamOut(
 
 매개 변수에서 버퍼를 텍스트로 채우는 콜백 함수를 지정 합니다. `EDITSTREAM` 이 콜백 함수는 출력 스트림이 모두 사용 될 때까지 반복적으로 호출 됩니다.
 
-자세한 내용은 Windows SDK [EM_STREAMOUT](/windows/desktop/Controls/em-streamout) 메시지 및 [editstream](/windows/desktop/api/richedit/ns-richedit-editstream) structure를 참조 하십시오.
+자세한 내용은 Windows SDK [EM_STREAMOUT](/windows/win32/Controls/em-streamout) 메시지 및 [editstream](/windows/win32/api/richedit/ns-richedit-editstream) structure를 참조 하십시오.
 
 ### <a name="example"></a>예제
 
@@ -2190,7 +2190,7 @@ BOOL Undo();
 
 실행 취소 작업을 실행 취소할 수도 있습니다. 예를 들어,에 대 `Undo`한 첫 번째 호출로 삭제 된 텍스트를 복원할 수 있습니다. 중간 편집 작업이 없는 경우에 대 `Undo`한 두 번째 호출로 텍스트를 다시 제거할 수 있습니다.
 
-자세한 내용은 Windows SDK에서 [EM_UNDO](/windows/desktop/Controls/em-undo) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [EM_UNDO](/windows/win32/Controls/em-undo) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 

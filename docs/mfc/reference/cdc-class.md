@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 4f9f08ae751ba2482967c1eee4268c6d5f6d4a76
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
-ms.translationtype: HT
+ms.openlocfilehash: bae2f9a5a4f39c4eeffe68cc33e744e44c6800c8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916239"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69507010"
 ---
 # <a name="cdc-class"></a>CDC 클래스
 
@@ -810,7 +810,7 @@ BOOL AlphaBlend(
 소스 사각형의 높이 (논리 단위)를 지정 합니다.
 
 *blend*<br/>
-[Blendfunction](/windows/desktop/api/wingdi/ns-wingdi-blendfunction) 구조체를 지정 합니다.
+[Blendfunction](/windows/win32/api/wingdi/ns-wingdi-blendfunction) 구조체를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -818,7 +818,7 @@ BOOL AlphaBlend(
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 Windows SDK에서 [AlphaBlend](/windows/desktop/api/wingdi/nf-wingdi-alphablend) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [AlphaBlend](/windows/win32/api/wingdi/nf-wingdi-alphablend) 을 참조 하세요.
 
 ##  <a name="anglearc"></a>  CDC::AngleArc
 
@@ -913,7 +913,7 @@ BOOL Arc(
 경계 사각형 (논리 단위)을 지정 합니다. 이 매개 변수에 대 한 LPRECT 또는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체 중 하나를 전달할 수 있습니다.
 
 *ptStart*<br/>
-원호의 시작점 (논리 단위)을 정의 하는 점의 x 및 y 좌표를 지정 합니다. 이 점이 정확히 호 위에 있을 필요는 없습니다. 이 매개 변수에 대 한 [점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
+원호의 시작점 (논리 단위)을 정의 하는 점의 x 및 y 좌표를 지정 합니다. 이 점이 정확히 호 위에 있을 필요는 없습니다. 이 매개 변수에 대 한 [점](/windows/win32/api/windef/ns-windef-point) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
 
 *ptEnd*<br/>
 원호의 끝 점을 정의 하는 점의 x 좌표 및 y 좌표 (논리 단위)를 지정 합니다. 이 점이 정확히 호 위에 있을 필요는 없습니다. 이 매개 변수에 대 한 `POINT` 구조 `CPoint` 나 개체를 전달할 수 있습니다.
@@ -980,10 +980,10 @@ BOOL ArcTo(
 원호의 끝점 (논리 단위)을 정의 하는 점의 y 좌표를 지정 합니다. 이 점이 정확히 호 위에 있을 필요는 없습니다.
 
 *lpRect*<br/>
-경계 사각형 (논리 단위)을 지정 합니다. 이 매개 변수에 대해 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 데이터 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체에 대 한 포인터를 전달할 수 있습니다.
+경계 사각형 (논리 단위)을 지정 합니다. 이 매개 변수에 대해 [RECT](/windows/win32/api/windef/ns-windef-rect) 데이터 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체에 대 한 포인터를 전달할 수 있습니다.
 
 *ptStart*<br/>
-원호의 시작점 (논리 단위)을 정의 하는 점의 x 및 y 좌표를 지정 합니다. 이 점이 정확히 호 위에 있을 필요는 없습니다. 이 매개 변수에 대 한 [요소](/windows/desktop/api/windef/ns-windef-tagpoint) 데이터 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
+원호의 시작점 (논리 단위)을 정의 하는 점의 x 및 y 좌표를 지정 합니다. 이 점이 정확히 호 위에 있을 필요는 없습니다. 이 매개 변수에 대 한 [요소](/windows/win32/api/windef/ns-windef-point) 데이터 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
 
 *ptEnd*<br/>
 원호의 끝 점을 정의 하는 점의 x 좌표 및 y 좌표 (논리 단위)를 지정 합니다. 이 점이 정확히 호 위에 있을 필요는 없습니다. 이 매개 변수에 대 한 `POINT` 데이터 구조 `CPoint` 나 개체를 전달할 수 있습니다.
@@ -1035,7 +1035,7 @@ BOOL BeginPath();
 
 경로 대괄호가 열리면 응용 프로그램은 GDI 그리기 함수 호출을 시작 하 여 경로에 있는 요소를 정의할 수 있습니다. 응용 프로그램은 멤버 함수를 `EndPath` 호출 하 여 열린 경로 대괄호를 닫을 수 있습니다. 응용 프로그램에서를 `BeginPath`호출 하면 이전 경로가 모두 삭제 됩니다.
 
-경로에서 요소를 정의 하는 그리기 함수 목록은 Windows SDK의 [Beginpath](/windows/desktop/api/wingdi/nf-wingdi-beginpath) 를 참조 하세요.
+경로에서 요소를 정의 하는 그리기 함수 목록은 Windows SDK의 [Beginpath](/windows/win32/api/wingdi/nf-wingdi-beginpath) 를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -1081,9 +1081,9 @@ BOOL BitBlt(
 원본 비트맵의 왼쪽 위 모퉁이에 대 한 논리 y 좌표를 지정 합니다.
 
 *dwRop*<br/>
-수행할 래스터 연산을 지정합니다. 래스터 작업 코드는 GDI가 현재 브러시, 가능한 원본 비트맵 및 대상 비트맵과 관련 된 출력 작업에서 색을 결합 하는 방법을 정의 합니다. *DwRop* 의 래스터 작업 코드 목록 및 해당 설명에 대 한 Windows SDK의 [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) 를 참조 하세요.
+수행할 래스터 연산을 지정합니다. 래스터 작업 코드는 GDI가 현재 브러시, 가능한 원본 비트맵 및 대상 비트맵과 관련 된 출력 작업에서 색을 결합 하는 방법을 정의 합니다. *DwRop* 의 래스터 작업 코드 목록 및 해당 설명에 대 한 Windows SDK의 [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) 를 참조 하세요.
 
-래스터 작업 코드의 전체 목록은 Windows SDK의 [래스터 작업 코드 정보](/windows/desktop/gdi/raster-operation-codes) 를 참조 하세요.
+래스터 작업 코드의 전체 목록은 Windows SDK의 [래스터 작업 코드 정보](/windows/win32/gdi/raster-operation-codes) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1169,7 +1169,7 @@ BOOL Chord(
 현의 시작점 (논리 단위)을 정의 하는 점의 x 및 y 좌표를 지정 합니다. 이 시점에서 정확히 동시에 배치 해야 하는 것은 아닙니다. 이 매개 변수에 대 한 `POINT` 구조 `CPoint` 나 개체를 전달할 수 있습니다.
 
 *ptEnd*<br/>
-현의 끝 지점을 정의 하는 점의 x 좌표 및 y 좌표 (논리 단위)를 지정 합니다. 이 시점에서 정확히 동시에 배치 해야 하는 것은 아닙니다. 이 매개 변수에 대 한 [점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
+현의 끝 지점을 정의 하는 점의 x 좌표 및 y 좌표 (논리 단위)를 지정 합니다. 이 시점에서 정확히 동시에 배치 해야 하는 것은 아닙니다. 이 매개 변수에 대 한 [점](/windows/win32/api/windef/ns-windef-point) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1361,7 +1361,7 @@ void DPtoHIMETRIC(LPSIZE lpSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpSize*<br/>
-[크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체 또는 [csize](../../atl-mfc-shared/reference/csize-class.md) 개체를 가리킵니다.
+[크기](/windows/win32/api/windef/ns-windef-size) 구조체 또는 [csize](../../atl-mfc-shared/reference/csize-class.md) 개체를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1383,16 +1383,16 @@ void DPtoLP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-[POINT](/windows/desktop/api/windef/ns-windef-tagpoint) 구조체 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체의 배열을 가리킵니다.
+[POINT](/windows/win32/api/windef/ns-windef-point) 구조체 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체의 배열을 가리킵니다.
 
 *nCount*<br/>
 배열의 요소 수입니다.
 
 *lpRect*<br/>
-는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다. 이 매개 변수는 한 사각형을 장치 점에서 논리적 점으로 변환 하는 간단한 경우에 사용 됩니다.
+는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다. 이 매개 변수는 한 사각형을 장치 점에서 논리적 점으로 변환 하는 간단한 경우에 사용 됩니다.
 
 *lpSize*<br/>
-[크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체 또는 [csize](../../atl-mfc-shared/reference/csize-class.md) 개체를 가리킵니다.
+[크기](/windows/win32/api/windef/ns-windef-size) 구조체 또는 [csize](../../atl-mfc-shared/reference/csize-class.md) 개체를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1420,7 +1420,7 @@ void Draw3dRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-경계 사각형 (논리 단위)을 지정 합니다. 이 매개 변수에 대해 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체에 대 한 포인터를 전달할 수 있습니다.
+경계 사각형 (논리 단위)을 지정 합니다. 이 매개 변수에 대해 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체에 대 한 포인터를 전달할 수 있습니다.
 
 *clrTopLeft*<br/>
 3 차원 사각형의 위쪽 및 왼쪽 색을 지정 합니다.
@@ -1465,13 +1465,13 @@ void DrawDragRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-사각형의 논리적 좌표 (이 경우 다시 그리는 사각형의 끝 위치)를 지정 하는, [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
+사각형의 논리적 좌표 (이 경우 다시 그리는 사각형의 끝 위치)를 지정 하는, [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
 
 *size*<br/>
 바깥쪽 테두리의 왼쪽 위 모퉁이에서 안쪽 테두리의 왼쪽 위 모퉁이 (테두리 두께)로의 변위를 지정 합니다.
 
 *lpRectLast*<br/>
-사각형의 위치에 대 한 논리적 좌표 (이 경우 다시 그릴 사각형의 원래 위치)를 지정 하는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
+사각형의 위치에 대 한 논리적 좌표 (이 경우 다시 그릴 사각형의 원래 위치)를 지정 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
 
 *sizeLast*<br/>
 외부 테두리의 왼쪽 위 모퉁이에서 안쪽 테두리의 왼쪽 위 모퉁이 (테두리 두께)를 다시 그릴 원본 사각형의 위치를 지정 합니다.
@@ -1505,7 +1505,7 @@ BOOL DrawEdge(
 사각형의 논리적 좌표 `RECT` 를 포함 하는 구조체에 대 한 포인터입니다.
 
 *nEdge*<br/>
-그릴 내부 및 외부 가장자리의 유형을 지정 합니다. 이 매개 변수는 하나의 내부 테두리 플래그와 하나의 외부 테두리 플래그의 조합 이어야 합니다. 매개 변수의 형식에 대 한 자세한 내용은 Windows SDK의 [DrawEdge](/windows/desktop/api/winuser/nf-winuser-drawedge) 를 참조 하십시오.
+그릴 내부 및 외부 가장자리의 유형을 지정 합니다. 이 매개 변수는 하나의 내부 테두리 플래그와 하나의 외부 테두리 플래그의 조합 이어야 합니다. 매개 변수의 형식에 대 한 자세한 내용은 Windows SDK의 [DrawEdge](/windows/win32/api/winuser/nf-winuser-drawedge) 를 참조 하십시오.
 
 *nFlags*<br/>
 그릴 테두리의 형식을 지정 하는 플래그입니다. 매개 `DrawEdge` 변수의 값에 대 한 자세한 내용은 Windows SDK를 참조 하십시오. 대각선의 경우 BF_RECT 플래그는 사각형 매개 변수로 제한 되는 벡터의 끝점을 지정 합니다.
@@ -1555,7 +1555,7 @@ void DrawFocusRect(LPCRECT lpRect);
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-그릴 사각형의 논리적 좌표를 지정 하는, [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
+그릴 사각형의 논리적 좌표를 지정 하는, [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1581,7 +1581,7 @@ BOOL DrawFrameControl(
 사각형의 논리적 좌표 `RECT` 를 포함 하는 구조체에 대 한 포인터입니다.
 
 *nType*<br/>
-그릴 프레임 컨트롤의 형식을 지정 합니다. 이 매개 변수의 가능한 값 목록은 Windows SDK의 [DrawFrameControl](/windows/desktop/api/winuser/nf-winuser-drawframecontrol) 에서 *utype* 매개 변수를 참조 하세요.
+그릴 프레임 컨트롤의 형식을 지정 합니다. 이 매개 변수의 가능한 값 목록은 Windows SDK의 [DrawFrameControl](/windows/win32/api/winuser/nf-winuser-drawframecontrol) 에서 *utype* 매개 변수를 참조 하세요.
 
 *nState*<br/>
 프레임 컨트롤의 초기 상태를 지정 합니다. Windows SDK의에서 `DrawFrameControl` *uState* 매개 변수에 대해 설명 된 값 중 하나 이상이 될 수 있습니다. *N 상태* 값 DFCS_ADJUSTRECT를 사용 하 여 누름 단추의 주변 가장자리를 제외 하도록 경계 사각형을 조정 합니다.
@@ -1675,7 +1675,7 @@ BOOL DrawIcon(
 그릴 아이콘의 핸들을 식별 합니다.
 
 *point*<br/>
-아이콘의 왼쪽 위 모퉁이에 대 한 논리 x 및 y 좌표를 지정 합니다. 이 매개 변수에 대 한 [점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
+아이콘의 왼쪽 위 모퉁이에 대 한 논리 x 및 y 좌표를 지정 합니다. 이 매개 변수에 대 한 [점](/windows/win32/api/windef/ns-windef-point) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1774,7 +1774,7 @@ BOOL DrawState(
 비트맵에 대 한 핸들입니다.
 
 *nFlags*<br/>
-이미지 형식 및 상태를 지정 하는 플래그입니다. 가능한 *Nflags* 형식 및 상태에 대 한 Windows SDK의 [drawstate](/windows/desktop/api/winuser/nf-winuser-drawstatea) 를 참조 하세요.
+이미지 형식 및 상태를 지정 하는 플래그입니다. 가능한 *Nflags* 형식 및 상태에 대 한 Windows SDK의 [drawstate](/windows/win32/api/winuser/nf-winuser-drawstatew) 를 참조 하세요.
 
 *hBrush*<br/>
 브러시에 대 한 핸들입니다.
@@ -1798,7 +1798,7 @@ CBrush 개체에 대 한 포인터입니다.
 *LpszText*가 가리키는 텍스트 문자열의 길이입니다. *Ntextlen* 이 0 이면 문자열이 null로 종료 된 것으로 간주 됩니다.
 
 *lpDrawProc*<br/>
-이미지를 렌더링 하는 데 사용 되는 콜백 함수에 대 한 포인터입니다. *Nflags* 의 이미지 형식이 DST_COMPLEX 인 경우이 매개 변수는 필수입니다. 이 옵션은 선택 사항이 며 이미지 형식이 DST_TEXT 경우 NULL 일 수 있습니다. 다른 모든 이미지 형식의 경우이 매개 변수는 무시 됩니다. 콜백 함수에 대 한 자세한 내용은 Windows SDK의 [Drawstateproc](/windows/desktop/api/winuser/nc-winuser-drawstateproc) 함수를 참조 하세요.
+이미지를 렌더링 하는 데 사용 되는 콜백 함수에 대 한 포인터입니다. *Nflags* 의 이미지 형식이 DST_COMPLEX 인 경우이 매개 변수는 필수입니다. 이 옵션은 선택 사항이 며 이미지 형식이 DST_TEXT 경우 NULL 일 수 있습니다. 다른 모든 이미지 형식의 경우이 매개 변수는 무시 됩니다. 콜백 함수에 대 한 자세한 내용은 Windows SDK의 [Drawstateproc](/windows/win32/api/winuser/nc-winuser-drawstateproc) 함수를 참조 하세요.
 
 *lData*<br/>
 이미지에 대 한 정보를 지정 합니다. 이 매개 변수의 의미는 이미지 유형에 따라 달라 집니다.
@@ -1833,13 +1833,13 @@ int DrawText(
 문자열의 문자 수를 지정 합니다. *Ncount* 가-1 이면 *lpszString* 는 null로 끝나는 문자열에 대 한 긴 포인터로 간주 되 고 `DrawText` 문자 수를 자동으로 계산 합니다.
 
 *lpRect*<br/>
-텍스트의 서식을 지정할 사각형 (논리적 좌표)을 포함 하는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
+텍스트의 서식을 지정할 사각형 (논리적 좌표)을 포함 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
 
 *str*<br/>
 그릴 지정 된 문자를 포함 하는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체입니다.
 
 *nFormat*<br/>
-텍스트의 서식을 지정 하는 방법을 지정 합니다. Windows SDK에서 [DrawText](/windows/desktop/api/winuser/nf-winuser-drawtext) 의 *uformat* 매개 변수에 대해 설명 된 값의 조합일 수 있습니다. (비트 OR 연산자를 사용 하 여 결합):
+텍스트의 서식을 지정 하는 방법을 지정 합니다. Windows SDK에서 [DrawText](/windows/win32/api/winuser/nf-winuser-drawtext) 의 *uformat* 매개 변수에 대해 설명 된 값의 조합일 수 있습니다. (비트 OR 연산자를 사용 하 여 결합):
 
 > [!NOTE]
 >  일부 *Uformat* 플래그 조합으로 인해 전달 된 문자열이 수정 될 수 있습니다. DT_END_ELLIPSIS 또는 DT_PATH_ELLIPSIS와 함께 DT_MODIFYSTRING를 사용 하면 문자열이 수정 되어 `CString` 재정의에서 어설션이 발생할 수 있습니다. DT_CALCRECT, DT_EXTERNALLEADING, DT_INTERNAL, DT_NOCLIP 및 DT_NOPREFIX 값은 DT_TABSTOP 값과 함께 사용할 수 없습니다.
@@ -1890,23 +1890,23 @@ int DrawTextEx(
 문자열의 문자 수를 지정 합니다. *Ncount* 가-1 이면 *lpszString* 는 null로 끝나는 문자열에 대 한 긴 포인터로 간주 되 고 `DrawText` 문자 수를 자동으로 계산 합니다.
 
 *lpRect*<br/>
-텍스트의 서식을 지정할 사각형 (논리적 좌표)을 포함 하는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
+텍스트의 서식을 지정할 사각형 (논리적 좌표)을 포함 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
 
 *str*<br/>
 그릴 지정 된 문자를 포함 하는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체입니다.
 
 *nFormat*<br/>
-텍스트의 서식을 지정 하는 방법을 지정 합니다. Windows SDK에서 [DrawText](/windows/desktop/api/winuser/nf-winuser-drawtext) 의 *uformat* 매개 변수에 대해 설명 된 값의 조합일 수 있습니다. (비트 **or** 연산자를 사용 하 여 결합):
+텍스트의 서식을 지정 하는 방법을 지정 합니다. Windows SDK에서 [DrawText](/windows/win32/api/winuser/nf-winuser-drawtext) 의 *uformat* 매개 변수에 대해 설명 된 값의 조합일 수 있습니다. (비트 **or** 연산자를 사용 하 여 결합):
 
 > [!NOTE]
 >  일부 *Uformat* 플래그 조합으로 인해 전달 된 문자열이 수정 될 수 있습니다. DT_END_ELLIPSIS 또는 DT_PATH_ELLIPSIS와 함께 DT_MODIFYSTRING를 사용 하면 문자열이 수정 되어 `CString` 재정의에서 어설션이 발생할 수 있습니다. DT_CALCRECT, DT_EXTERNALLEADING, DT_INTERNAL, DT_NOCLIP 및 DT_NOPREFIX 값은 DT_TABSTOP 값과 함께 사용할 수 없습니다.
 
 *lpDTParams*<br/>
-추가 서식 옵션을 지정 하는 [Drawtextparams](/windows/desktop/api/winuser/ns-winuser-tagdrawtextparams) 구조체에 대 한 포인터입니다. 이 매개 변수는 NULL 일 수 있습니다.
+추가 서식 옵션을 지정 하는 [Drawtextparams](/windows/win32/api/winuser/ns-winuser-drawtextparams) 구조체에 대 한 포인터입니다. 이 매개 변수는 NULL 일 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
-탭을 적절 한 공간으로 확장 하 고, 텍스트를 지정 된 사각형의 왼쪽, 오른쪽 또는 가운데에 맞추고, 텍스트를 지정 된 사각형 안에 맞는 선으로 분할 하 여 텍스트의 서식을 지정 합니다. 서식 지정 형식은 *Nformat* 및 *Lpdtparams*로 지정 됩니다. 자세한 내용은 Windows SDK의 [CDC::D rawtext](#drawtext) 및 [drawtextex](/windows/desktop/api/winuser/nf-winuser-drawtextexa) 를 참조 하세요.
+탭을 적절 한 공간으로 확장 하 고, 텍스트를 지정 된 사각형의 왼쪽, 오른쪽 또는 가운데에 맞추고, 텍스트를 지정 된 사각형 안에 맞는 선으로 분할 하 여 텍스트의 서식을 지정 합니다. 서식 지정 형식은 *Nformat* 및 *Lpdtparams*로 지정 됩니다. 자세한 내용은 Windows SDK의 [CDC::D rawtext](#drawtext) 및 [drawtextex](/windows/win32/api/winuser/nf-winuser-drawtextexw) 를 참조 하세요.
 
 텍스트 색은 [CDC:: SetTextColor](#settextcolor)로 설정할 수 있습니다.
 
@@ -2087,7 +2087,7 @@ int Escape(
 *nEscape*<br/>
 수행할 이스케이프 함수를 지정 합니다.
 
-이스케이프 함수의 전체 목록은 Windows SDK의 [이스케이프](/windows/desktop/api/wingdi/nf-wingdi-escape) 를 참조 하세요.
+이스케이프 함수의 전체 목록은 Windows SDK의 [이스케이프](/windows/win32/api/wingdi/nf-wingdi-escape) 를 참조 하세요.
 
 *nCount*<br/>
 *LpszInData*가 가리키는 데이터의 바이트 수를 지정 합니다.
@@ -2140,11 +2140,11 @@ Win32 프로그래밍의 경우 `CDC` 이제는 해당 프린터 이스케이프
 
 - [CDC::StartPage](#startpage)
 
-또한 [CDC:: GetDeviceCaps](#getdevicecaps) 는 다른 프린터 이스케이프를 대체 하는 Win32 인덱스를 지원 합니다. 자세한 내용은 Windows SDK에서 [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) 을 참조 하세요.
+또한 [CDC:: GetDeviceCaps](#getdevicecaps) 는 다른 프린터 이스케이프를 대체 하는 Win32 인덱스를 지원 합니다. 자세한 내용은 Windows SDK에서 [GetDeviceCaps](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) 을 참조 하세요.
 
 이 구성원 함수를 사용 하면 응용 프로그램에서 GDI를 통해 직접 사용할 수 없는 특정 장치의 기능에 액세스할 수 있습니다.
 
-응용 프로그램에서 미리 정의 된 이스케이프 값을 사용 하는 경우 첫 번째 버전을 사용 합니다. 응용 프로그램에서 전용 이스케이프 값을 정의 하는 경우 두 번째 버전을 사용 합니다. 두 번째 버전에 대 한 자세한 내용은 Windows SDK의 [Extescape](/windows/desktop/api/wingdi/nf-wingdi-extescape) 를 참조 하세요.
+응용 프로그램에서 미리 정의 된 이스케이프 값을 사용 하는 경우 첫 번째 버전을 사용 합니다. 응용 프로그램에서 전용 이스케이프 값을 정의 하는 경우 두 번째 버전을 사용 합니다. 두 번째 버전에 대 한 자세한 내용은 Windows SDK의 [Extescape](/windows/win32/api/wingdi/nf-wingdi-extescape) 를 참조 하세요.
 
 ##  <a name="excludecliprect"></a>  CDC::ExcludeClipRect
 
@@ -2301,7 +2301,7 @@ BOOL ExtTextOut(
 - ETO_OPAQUE 현재 배경색이 사각형을 채우도록 지정 합니다. [SetBkColor](#setbkcolor) 및 [GetBkColor](#getbkcolor) 멤버 함수를 사용 하 여 현재 배경색을 설정 하 고 쿼리할 수 있습니다.
 
 *lpRect*<br/>
-사각형의 크기를 결정 하는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조체를 가리킵니다. 이 매개 변수는 NULL 일 수 있습니다. 이 매개 변수에 대 한 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 전달할 수도 있습니다.
+사각형의 크기를 결정 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체를 가리킵니다. 이 매개 변수는 NULL 일 수 있습니다. 이 매개 변수에 대 한 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 전달할 수도 있습니다.
 
 *lpszString*<br/>
 그릴 지정 된 문자열을 가리킵니다. 이 매개 변수에 대 한 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체를 전달할 수도 있습니다.
@@ -2354,7 +2354,7 @@ void FillRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-채울 사각형의 논리적 좌표를 포함 하는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조체를 가리킵니다. 이 매개 변수에 대 한 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 전달할 수도 있습니다.
+채울 사각형의 논리적 좌표를 포함 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조체를 가리킵니다. 이 매개 변수에 대 한 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 전달할 수도 있습니다.
 
 *pBrush*<br/>
 사각형을 채우는 데 사용 되는 브러시를 식별 합니다.
@@ -2419,7 +2419,7 @@ void FillSolidRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-경계 사각형 (논리 단위)을 지정 합니다. 이 매개 변수에 대 한 `CRect` 개체 또는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 데이터 구조에 대 한 포인터를 전달할 수 있습니다.
+경계 사각형 (논리 단위)을 지정 합니다. 이 매개 변수에 대 한 `CRect` 개체 또는 [RECT](/windows/win32/api/windef/ns-windef-rect) 데이터 구조에 대 한 포인터를 전달할 수 있습니다.
 
 *clr* 사각형을 채우는 데 사용할 색을 지정 합니다.
 
@@ -2501,7 +2501,7 @@ void FrameRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-사각형의 왼쪽 위 모퉁이와 오른쪽 아래 모퉁이의 논리적 좌표를 포함 하는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다. 이 매개 변수에 대 한 `CRect` 개체를 전달할 수도 있습니다.
+사각형의 왼쪽 위 모퉁이와 오른쪽 아래 모퉁이의 논리적 좌표를 포함 하는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다. 이 매개 변수에 대 한 `CRect` 개체를 전달할 수도 있습니다.
 
 *pBrush*<br/>
 사각형의 프레이밍에 사용할 브러시를 식별 합니다.
@@ -2718,16 +2718,16 @@ DWORD GetCharacterPlacement(
 처리할 문자열에 대 한 포인터입니다.
 
 *nCount*<br/>
-문자열의 길이를 지정 합니다. ANSI 버전의 경우 바이트 수이 고 유니코드 함수의 경우 단어 수입니다. 자세한 내용은 [GetCharacterPlacement](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa)를 참조 하세요.
+문자열의 길이를 지정 합니다. ANSI 버전의 경우 바이트 수이 고 유니코드 함수의 경우 단어 수입니다. 자세한 내용은 [GetCharacterPlacement](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw)를 참조 하세요.
 
 *nMaxExtent*<br/>
 문자열이 처리 되는 최대 범위 (논리 단위)를 지정 합니다. 처리 되는 경우이 익스텐트를 초과 하는 문자는 무시 됩니다. 필요한 순서 또는 문자 모양 배열의 계산은 포함 된 문자에만 적용 됩니다. 이 매개 변수는 *dwFlags* 매개 변수에 GCP_MAXEXTENT 값이 지정 된 경우에만 사용 됩니다. 함수는 입력 문자열을 처리할 때 전체 익스텐트가 아직 최대값을 초과 하지 않은 경우에만 각 문자 및 해당 익스텐트가 출력, 범위 및 기타 배열에 추가 됩니다. 제한에 도달 하면 처리가 중지 됩니다.
 
 *lpResults*<br/>
-함수의 결과를 수신 하는 [GCP_Results](/windows/desktop/api/wingdi/ns-wingdi-taggcp_resultsa) 구조체에 대 한 포인터입니다.
+함수의 결과를 수신 하는 [GCP_Results](/windows/win32/api/wingdi/ns-wingdi-gcp_resultsw) 구조체에 대 한 포인터입니다.
 
 *dwFlags*<br/>
-필요한 배열에 문자열을 처리 하는 방법을 지정 합니다. 이 매개 변수는 [GetCharacterPlacement](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa) 항목의 *dwFlags* 섹션에 나열 된 값 중 하나 이상이 될 수 있습니다.
+필요한 배열에 문자열을 처리 하는 방법을 지정 합니다. 이 매개 변수는 [GetCharacterPlacement](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw) 항목의 *dwFlags* 섹션에 나열 된 값 중 하나 이상이 될 수 있습니다.
 
 *str*<br/>
 처리할 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체에 대 한 포인터입니다.
@@ -2740,7 +2740,7 @@ DWORD GetCharacterPlacement(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetCharacterPlacement](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa)의 기능을 에뮬레이트합니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetCharacterPlacement](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw)의 기능을 에뮬레이트합니다.
 
 ##  <a name="getcharabcwidths"></a>  CDC::GetCharABCWidths
 
@@ -2767,10 +2767,10 @@ BOOL GetCharABCWidths(
 문자 너비가 반환 되는 현재 글꼴에서 문자 범위의 마지막 문자를 지정 합니다.
 
 *lpabc*<br/>
-함수가 반환 될 때 문자 너비를 받는 [ABC](/windows/desktop/api/wingdi/ns-wingdi-abc) 구조체의 배열을 가리킵니다. 이 배열에는 *nfirstchar* 및 `ABC` *nfirstchar* 매개 변수로 지정 된 범위의 문자 수 만큼의 구조도 포함 되어야 합니다.
+함수가 반환 될 때 문자 너비를 받는 [ABC](/windows/win32/api/wingdi/ns-wingdi-abc) 구조체의 배열을 가리킵니다. 이 배열에는 *nfirstchar* 및 `ABC` *nfirstchar* 매개 변수로 지정 된 범위의 문자 수 만큼의 구조도 포함 되어야 합니다.
 
 *lpABCF*<br/>
-함수가 반환 될 때 문자 너비를 수신 하는 [ABCFLOAT](/windows/desktop/api/wingdi/ns-wingdi-abcfloat) 구조체의 배열을 사용 하 여 응용 프로그램에서 제공 하는 버퍼를 가리킵니다. 이 함수에서 반환 되는 너비는 IEEE 부동 소수점 형식입니다.
+함수가 반환 될 때 문자 너비를 수신 하는 [ABCFLOAT](/windows/win32/api/wingdi/ns-wingdi-abcfloat) 구조체의 배열을 사용 하 여 응용 프로그램에서 제공 하는 버퍼를 가리킵니다. 이 함수에서 반환 되는 너비는 IEEE 부동 소수점 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2784,11 +2784,11 @@ TrueType 래스터 라이저는 특정 포인트 크기를 선택한 후 "ABC" �
 
 `GetCharABCWidths` 멤버 함수가 문자에 대해 음수 "A" 또는 "C" 너비를 검색 하는 경우 해당 문자는 중단 또는 overhangs을 포함 합니다.
 
-ABC 너비를 글꼴 디자인 단위로 변환 하려면 응용 프로그램에서 높이 `lfHeight` ( [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조체의 멤버에 지정)가 `ntmSizeEM` [newtextmetric](/windows/desktop/api/wingdi/ns-wingdi-tagnewtextmetrica) 의 멤버에 저장 된 값과 같은 글꼴을 만들어야 합니다. 구조체나. `ntmSizeEM` 멤버의 값은 [EnumFontFamilies](/windows/desktop/api/wingdi/nf-wingdi-enumfontfamiliesa) Windows 함수를 호출 하여 검색할 수 있습니다.
+ABC 너비를 글꼴 디자인 단위로 변환 하려면 응용 프로그램에서 높이 `lfHeight` ( [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) 구조체의 멤버에 지정)가 `ntmSizeEM` [newtextmetric](/windows/win32/api/wingdi/ns-wingdi-newtextmetricw) 의 멤버에 저장 된 값과 같은 글꼴을 만들어야 합니다. 구조체나. `ntmSizeEM` 멤버의 값은 [EnumFontFamilies](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesw) Windows 함수를 호출 하여 검색할 수 있습니다.
 
 기본 문자의 ABC 너비는 현재 선택 된 글꼴의 범위를 벗어나는 문자에 사용 됩니다.
 
-비 트루타입 글꼴의 문자 너비를 검색 하려면 응용 프로그램에서 [Getcharwidth](/windows/desktop/api/wingdi/nf-wingdi-getcharwidtha) Windows 함수를 사용 해야 합니다.
+비 트루타입 글꼴의 문자 너비를 검색 하려면 응용 프로그램에서 [Getcharwidth](/windows/win32/api/wingdi/nf-wingdi-getcharwidthw) Windows 함수를 사용 해야 합니다.
 
 ##  <a name="getcharabcwidthsi"></a>  CDC::GetCharABCWidthsI
 
@@ -2814,7 +2814,7 @@ BOOL GetCharABCWidthsI(
 문자 모양 인덱스를 포함 하는 배열에 대 한 포인터입니다. 값이 NULL 이면 *Gid first* 매개 변수가 대신 사용 됩니다. *Cgi* 매개 변수는이 배열의 문자 모양 인덱스 수를 지정 합니다.
 
 *lpabc*<br/>
-문자 너비를 받는 [ABC](/windows/desktop/api/wingdi/ns-wingdi-abc) 구조체의 배열에 대 한 포인터입니다. 이 배열에는 *cgi* 매개 변수로 지정 `ABC` 된 문자 모양 인덱스 만큼 이상의 구조가 포함 되어야 합니다.
+문자 너비를 받는 [ABC](/windows/win32/api/wingdi/ns-wingdi-abc) 구조체의 배열에 대 한 포인터입니다. 이 배열에는 *cgi* 매개 변수로 지정 `ABC` 된 문자 모양 인덱스 만큼 이상의 구조가 포함 되어야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2822,7 +2822,7 @@ BOOL GetCharABCWidthsI(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetCharABCWidthsI](/windows/desktop/api/wingdi/nf-wingdi-getcharabcwidthsi)의 기능을 에뮬레이트합니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetCharABCWidthsI](/windows/win32/api/wingdi/nf-wingdi-getcharabcwidthsi)의 기능을 에뮬레이트합니다.
 
 ##  <a name="getcharwidth"></a>  CDC::GetCharWidth
 
@@ -2898,7 +2898,7 @@ BOOL GetCharWidthI(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 [Getcharwidthi](/windows/desktop/api/wingdi/nf-wingdi-getcharwidthi)함수의 기능을 에뮬레이트합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 [Getcharwidthi](/windows/win32/api/wingdi/nf-wingdi-getcharwidthi)함수의 기능을 에뮬레이트합니다.
 
 ##  <a name="getclipbox"></a>  CDC::GetClipBox
 
@@ -2911,7 +2911,7 @@ virtual int GetClipBox(LPRECT lpRect) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-사각형 차원을 받을 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
+사각형 차원을 받을 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2940,7 +2940,7 @@ BOOL GetColorAdjustment(LPCOLORADJUSTMENT lpColorAdjust) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpColorAdjust*<br/>
-색 조정 값을 수신 하는 [coloradjustment](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment) 데이터 구조를 가리킵니다.
+색 조정 값을 수신 하는 [coloradjustment](/windows/win32/api/wingdi/ns-wingdi-coloradjustment) 데이터 구조를 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3052,13 +3052,13 @@ COLORREF GetDCBrushColor() const;
 
 ### <a name="return-value"></a>반환 값
 
-함수가 성공 하는 경우 반환 값은 현재 브러시 색의 [Colorref](/windows/desktop/gdi/colorref) 값입니다.
+함수가 성공 하는 경우 반환 값은 현재 브러시 색의 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
 함수가 실패 하면 반환 값은 CLR_INVALID입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetDCBrushColor](/windows/desktop/api/wingdi/nf-wingdi-getdcbrushcolor)의 기능을 에뮬레이트합니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetDCBrushColor](/windows/win32/api/wingdi/nf-wingdi-getdcbrushcolor)의 기능을 에뮬레이트합니다.
 
 ##  <a name="getdcpencolor"></a>  CDC::GetDCPenColor
 
@@ -3070,13 +3070,13 @@ COLORREF GetDCPenColor() const;
 
 ### <a name="return-value"></a>반환 값
 
-함수가 성공 하는 경우 반환 값은 현재 펜 색의 [Colorref](/windows/desktop/gdi/colorref) 값입니다.
+함수가 성공 하는 경우 반환 값은 현재 펜 색의 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
 함수가 실패 하면 반환 값은 CLR_INVALID입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK 설명 된 대로 Win32 함수 [Getdcpencolor](/windows/desktop/api/wingdi/nf-wingdi-getdcpencolor)를 활용 합니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 Win32 함수 [Getdcpencolor](/windows/win32/api/wingdi/nf-wingdi-getdcpencolor)를 활용 합니다.
 
 ##  <a name="getdevicecaps"></a>  CDC::GetDeviceCaps
 
@@ -3089,7 +3089,7 @@ int GetDeviceCaps(int nIndex) const;
 ### <a name="parameters"></a>매개 변수
 
 *nIndex*<br/>
-반환할 정보의 유형을 지정 합니다. 값 목록은 Windows SDK의 [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) 를 참조 하세요.
+반환할 정보의 유형을 지정 합니다. 값 목록은 Windows SDK의 [GetDeviceCaps](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3135,7 +3135,7 @@ DWORD GetFontData(
 
 응용 프로그램은 종종 멤버 함수 `GetFontData` 를 사용 하 여 문서와 함께 트루타입 글꼴을 저장할 수 있습니다. 이렇게 하기 위해 응용 프로그램은 글꼴을 포함할 수 있는지 여부를 확인 한 다음 *Dwtable*, *Dwtable*및 *cbdata* 매개 변수에 0을 지정 하 여 전체 글꼴 파일을 검색 합니다.
 
-응용 프로그램은 `otmfsType` [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) 구조체의 멤버를 확인 하 여 글꼴을 포함할 수 있는지 여부를 결정할 수 있습니다. 의 `otmfsType` 비트 1이 설정 된 경우 글꼴에 포함이 허용 되지 않습니다. 비트 1을 지우면 글꼴이 포함 될 수 있습니다. 비트 2가 설정 된 경우 포함은 읽기 전용입니다.
+응용 프로그램은 `otmfsType` [OUTLINETEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) 구조체의 멤버를 확인 하 여 글꼴을 포함할 수 있는지 여부를 결정할 수 있습니다. 의 `otmfsType` 비트 1이 설정 된 경우 글꼴에 포함이 허용 되지 않습니다. 비트 1을 지우면 글꼴이 포함 될 수 있습니다. 비트 2가 설정 된 경우 포함은 읽기 전용입니다.
 
 응용 프로그램에서이 함수를 사용 하 여 비-트루타입 글꼴에 대 한 정보를 검색 `GetFontData` 하려고 하면 멤버 함수는-1을 반환 합니다.
 
@@ -3149,11 +3149,11 @@ DWORD GetFontLanguageInfo() const;
 
 ### <a name="return-value"></a>반환 값
 
-반환 값은 현재 선택 된 글꼴의 특성을 식별 합니다. 가능한 값의 전체 목록은 [GetFontLanguageInfo](/windows/desktop/api/wingdi/nf-wingdi-getfontlanguageinfo)를 참조 하세요.
+반환 값은 현재 선택 된 글꼴의 특성을 식별 합니다. 가능한 값의 전체 목록은 [GetFontLanguageInfo](/windows/win32/api/wingdi/nf-wingdi-getfontlanguageinfo)를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetFontLanguageInfo](/windows/desktop/api/wingdi/nf-wingdi-getfontlanguageinfo)의 기능을 에뮬레이트합니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetFontLanguageInfo](/windows/win32/api/wingdi/nf-wingdi-getfontlanguageinfo)의 기능을 에뮬레이트합니다.
 
 ##  <a name="getglyphoutline"></a>  CDC::GetGlyphOutline
 
@@ -3182,7 +3182,7 @@ DWORD GetGlyphOutline(
 |GGO_BITMAP|문자 모양 비트맵을 반환 합니다. 함수가를 반환 하는 경우 *lpbuffer* 가 가리키는 버퍼에는 해당 행이 더블 워드 경계에서 시작 하는 픽셀당 1 비트 비트맵이 포함 됩니다.|
 |GGO_NATIVE|장치 단위를 사용 하 여 래스터 라이저 네이티브 형식의 곡선 데이터 요소를 반환 합니다. 이 값을 지정 하면 *lpmat2* 에 지정 된 모든 변환이 무시 됩니다.|
 
-*Nformat* 의 값이 0 이면 함수는 [GLYPHMETRICS](/windows/desktop/api/wingdi/ns-wingdi-glyphmetrics) 구조체를 채우고 glyph 윤곽선 데이터를 반환 하지 않습니다.
+*Nformat* 의 값이 0 이면 함수는 [GLYPHMETRICS](/windows/win32/api/wingdi/ns-wingdi-glyphmetrics) 구조체를 채우고 glyph 윤곽선 데이터를 반환 하지 않습니다.
 
 *lpgm*<br/>
 문자 셀에서 문자 모양의 배치를 설명 하는 GLYPHMETRICS 구조체를 가리킵니다.
@@ -3194,7 +3194,7 @@ DWORD GetGlyphOutline(
 함수에서 윤곽선 문자에 대 한 정보를 복사 하는 버퍼를 가리킵니다. *Nformat* 이 GGO_NATIVE 값을 지정 하는 경우 정보는 TTPOLYGONHEADER 및 TTPOLYCURVE 구조의 형태로 복사 됩니다. 이 값이 NULL이 고 *Nformat* 이 GGO_BITMAP 또는 GGO_NATIVE 값인 경우 함수는 버퍼의 필수 크기를 반환 합니다.
 
 *lpmat2*<br/>
-문자에 대 한 변환 매트릭스를 포함 하는 [MAT2](/windows/desktop/api/wingdi/ns-wingdi-mat2) 구조체를 가리킵니다. *Nformat*에 대해 GGO_NATIVE 값이 지정 된 경우에도이 매개 변수는 NULL 일 수 없습니다.
+문자에 대 한 변환 매트릭스를 포함 하는 [MAT2](/windows/win32/api/wingdi/ns-wingdi-mat2) 구조체를 가리킵니다. *Nformat*에 대해 GGO_NATIVE 값이 지정 된 경우에도이 매개 변수는 NULL 일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3204,7 +3204,7 @@ DWORD GetGlyphOutline(
 
 응용 프로그램은 *lpmat2*에서 가리키는 구조에 2 x 2 변환 매트릭스를 지정 하 여 비트맵 형식으로 검색 된 문자를 회전할 수 있습니다.
 
-문자 모양 윤곽선이 일련의 윤곽선으로 반환 됩니다. 각 컨투어는 [TTPOLYGONHEADER](/windows/desktop/api/wingdi/ns-wingdi-tagttpolygonheader) 구조에 따라 정의 되 고 그 다음 `TTPOLYCURVE` 에는이를 설명 하는 데 필요한 만큼의 구조가 정의 됩니다. 모든 요소는 [Pointfx](/windows/desktop/api/wingdi/ns-wingdi-tagpointfx) 구조체로 반환 되 고 상대 이동이 아닌 절대 위치를 나타냅니다. `pfxStart` [TTPOLYGONHEADER](/windows/desktop/api/wingdi/ns-wingdi-tagttpolygonheader) 구조체의 멤버가 지정 하는 시작점은 컨투어 윤곽선의 시작 지점입니다. 팔 로우 하는 [TTPOLYCURVE](/windows/desktop/api/wingdi/ns-wingdi-tagttpolycurve) 구조는 폴리라인 레코드 또는 스플라인 레코드가 될 수 있습니다. 다중선 레코드는 일련의 요소입니다. 요소 사이에 그려진 선은 문자의 윤곽선을 설명 합니다. 스플라인 레코드는 TrueType에서 사용 되는 정방형 곡선 (즉, 정방형 b-스플라인)을 나타냅니다.
+문자 모양 윤곽선이 일련의 윤곽선으로 반환 됩니다. 각 컨투어는 [TTPOLYGONHEADER](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) 구조에 따라 정의 되 고 그 다음 `TTPOLYCURVE` 에는이를 설명 하는 데 필요한 만큼의 구조가 정의 됩니다. 모든 요소는 [Pointfx](/windows/win32/api/wingdi/ns-wingdi-pointfx) 구조체로 반환 되 고 상대 이동이 아닌 절대 위치를 나타냅니다. `pfxStart` [TTPOLYGONHEADER](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) 구조체의 멤버가 지정 하는 시작점은 컨투어 윤곽선의 시작 지점입니다. 팔 로우 하는 [TTPOLYCURVE](/windows/win32/api/wingdi/ns-wingdi-ttpolycurve) 구조는 폴리라인 레코드 또는 스플라인 레코드가 될 수 있습니다. 다중선 레코드는 일련의 요소입니다. 요소 사이에 그려진 선은 문자의 윤곽선을 설명 합니다. 스플라인 레코드는 TrueType에서 사용 되는 정방형 곡선 (즉, 정방형 b-스플라인)을 나타냅니다.
 
 ##  <a name="getgraphicsmode"></a>  CDC::GetGraphicsMode
 
@@ -3216,15 +3216,15 @@ int GetGraphicsMode() const;
 
 ### <a name="return-value"></a>반환 값
 
-성공 시 현재 그래픽 모드를 반환 합니다. 이 메서드가 반환할 수 있는 값 목록은 [GetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-getgraphicsmode)를 참조 하세요.
+성공 시 현재 그래픽 모드를 반환 합니다. 이 메서드가 반환할 수 있는 값 목록은 [GetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-getgraphicsmode)를 참조 하세요.
 
 실패 한 경우 0을 반환 합니다.
 
-확장 오류 정보를 가져오려면 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
+확장 오류 정보를 가져오려면 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Windows GDI 함수 [GetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-getgraphicsmode)을 래핑합니다.
+이 메서드는 Windows GDI 함수 [GetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-getgraphicsmode)을 래핑합니다.
 
 ##  <a name="gethalftonebrush"></a>  CDC::GetHalftoneBrush
 
@@ -3257,7 +3257,7 @@ int GetKerningPairs(
 ### <a name="parameters"></a>매개 변수
 
 *nPairs*<br/>
-*Lpkrnpair*가 가리키는 [KERNINGPAIR](/windows/desktop/api/wingdi/ns-wingdi-tagkerningpair) 구조체의 수를 지정 합니다. 함수는 *n 쌍*으로 지정 된 것 보다 더 많은 커닝 쌍을 복사 하지 않습니다.
+*Lpkrnpair*가 가리키는 [KERNINGPAIR](/windows/win32/api/wingdi/ns-wingdi-kerningpair) 구조체의 수를 지정 합니다. 함수는 *n 쌍*으로 지정 된 것 보다 더 많은 커닝 쌍을 복사 하지 않습니다.
 
 *lpkrnpair*<br/>
 함수가 반환 될 때 커닝 `KERNINGPAIR` 쌍을 받는 구조체의 배열을 가리킵니다. 이 배열에는 *n 쌍*으로 지정 된 수 만큼의 구조도 포함 되어야 합니다. 이 매개 변수가 NULL 이면 함수는 글꼴에 대 한 총 커닝 쌍 수를 반환 합니다.
@@ -3276,7 +3276,7 @@ DWORD GetLayout() const;
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 현재 장치 컨텍스트에 대 한 레이아웃 플래그입니다. 그렇지 않으면 GDI_ERROR입니다. 확장 오류 정보를 보려면 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 하십시오. 레이아웃 플래그 목록은 [CDC:: SetLayout](#setlayout)을 참조 하세요.
+성공 하면 현재 장치 컨텍스트에 대 한 레이아웃 플래그입니다. 그렇지 않으면 GDI_ERROR입니다. 확장 오류 정보를 보려면 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 하십시오. 레이아웃 플래그 목록은 [CDC:: SetLayout](#setlayout)을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
@@ -3351,7 +3351,7 @@ UINT GetOutlineTextMetrics(
 ### <a name="parameters"></a>매개 변수
 
 *lpotm*<br/>
-[OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) 구조체의 배열을 가리킵니다. 이 매개 변수가 NULL 인 경우 함수는 검색 된 메트릭 데이터에 필요한 버퍼의 크기를 반환 합니다.
+[OUTLINETEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) 구조체의 배열을 가리킵니다. 이 매개 변수가 NULL 인 경우 함수는 검색 된 메트릭 데이터에 필요한 버퍼의 크기를 반환 합니다.
 
 *cbData*<br/>
 정보가 반환 되는 버퍼의 크기 (바이트)를 지정 합니다.
@@ -3365,7 +3365,7 @@ UINT GetOutlineTextMetrics(
 
 ### <a name="remarks"></a>설명
 
-[OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) 구조체는 [textmetric](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) 구조를 포함 하 여 TrueType 형식과 함께 제공 되는 대부분의 글꼴 메트릭 정보를 포함 합니다. `OUTLINETEXTMETRIC` 구조체의 마지막 4 개 멤버는 문자열에 대 한 포인터입니다. 응용 프로그램은 다른 멤버에 필요한 공간 외에도 이러한 문자열에 대 한 공간을 할당 해야 합니다. 문자열 크기에 대 한 시스템 제한 사항이 없기 때문에 메모리를 할당 하는 가장 간단한 방법은 `GetOutlineTextMetrics` 함수를 처음 호출할 때 *lpotm* 에 대해 NULL을 지정 하 여 필요한 크기를 검색 하는 것입니다.
+[OUTLINETEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) 구조체는 [textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) 구조를 포함 하 여 TrueType 형식과 함께 제공 되는 대부분의 글꼴 메트릭 정보를 포함 합니다. `OUTLINETEXTMETRIC` 구조체의 마지막 4 개 멤버는 문자열에 대 한 포인터입니다. 응용 프로그램은 다른 멤버에 필요한 공간 외에도 이러한 문자열에 대 한 공간을 할당 해야 합니다. 문자열 크기에 대 한 시스템 제한 사항이 없기 때문에 메모리를 할당 하는 가장 간단한 방법은 `GetOutlineTextMetrics` 함수를 처음 호출할 때 *lpotm* 에 대해 NULL을 지정 하 여 필요한 크기를 검색 하는 것입니다.
 
 ##  <a name="getoutputcharwidth"></a>  CDC::GetOutputCharWidth
 
@@ -3424,7 +3424,7 @@ CSize GetOutputTabbedTextExtent(
 측정할 문자열을 가리킵니다. 이 매개 변수에 대 한 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체를 전달할 수도 있습니다.
 
 *nCount*<br/>
-*LpszString*가 가리키는 [문자열의 길이](/windows/desktop/gdi/specifying-length-of-text-output-string) 를 지정 합니다.
+*LpszString*가 가리키는 [문자열의 길이](/windows/win32/gdi/specifying-length-of-text-output-string) 를 지정 합니다.
 
 *nTabPositions*<br/>
 *Lpntabstoppositions*가리키는 배열의 탭 정지 위치 수를 지정 합니다.
@@ -3467,7 +3467,7 @@ CSize GetOutputTextExtent(const CString& str) const;
 는 문자 문자열을 가리킵니다. 이 매개 변수에 대 한 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체를 전달할 수도 있습니다.
 
 *nCount*<br/>
-*LpszString*가 가리키는 [문자열의 길이](/windows/desktop/gdi/specifying-length-of-text-output-string) 를 지정 합니다.
+*LpszString*가 가리키는 [문자열의 길이](/windows/win32/gdi/specifying-length-of-text-output-string) 를 지정 합니다.
 
 *str*<br/>
 측정할 지정 된 문자를 포함 하는 개체입니다.`CString`
@@ -3493,7 +3493,7 @@ BOOL GetOutputTextMetrics(LPTEXTMETRIC lpMetrics) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpMetrics*<br/>
-는 메트릭을 받는 [Textmetric](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) 구조체를 가리킵니다.
+는 메트릭을 받는 [Textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) 구조체를 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3513,7 +3513,7 @@ int GetPath(
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-줄 끝점과 곡선 제어 지점이 배치 되는 요소 [POINT](/windows/desktop/api/windef/ns-windef-tagpoint) 데이터 구조 또는 `CPoint` 개체의 배열을 가리킵니다.
+줄 끝점과 곡선 제어 지점이 배치 되는 요소 [POINT](/windows/win32/api/windef/ns-windef-point) 데이터 구조 또는 `CPoint` 개체의 배열을 가리킵니다.
 
 *lpTypes*<br/>
 는 꼭 짓 점 형식이 배치 되는 바이트 배열을 가리킵니다. 값은 다음 중 하나입니다.
@@ -3531,7 +3531,7 @@ PT_BEZIERTO 형식은 항상 3 집합에서 발생 합니다. 바로 앞의 경�
 - PT_CLOSEFIGURE는 해당 하는 선 또는 곡선이 그려진 후에도 그림을 자동으로 닫도록 지정 합니다. 이 그림은 선 또는 곡선 끝점에서 마지막 PT_MOVETO 해당 하는 지점까지 선을 그리는 방법으로 닫힙니다.
 
 *nCount*<br/>
-*Lppoints* 배열에 배치할 수 있는 [POINT](/windows/desktop/api/windef/ns-windef-tagpoint) 데이터 구조의 총 개수를 지정 합니다. 이 값은 *Lptypes* 배열에 배치할 수 있는 바이트 수와 같아야 합니다.
+*Lppoints* 배열에 배치할 수 있는 [POINT](/windows/win32/api/windef/ns-windef-point) 데이터 구조의 총 개수를 지정 합니다. 이 값은 *Lptypes* 배열에 배치할 수 있는 바이트 수와 같아야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3578,7 +3578,7 @@ COLORREF GetPixel(POINT point) const;
 
 모든 장치가 `GetPixel` 기능을 지원하지는 않습니다. 자세한 내용은 [GetDeviceCaps](#getdevicecaps) 멤버 함수에서 RC_BITBLT 래스터 기능을 참조 하세요.
 
-`GetPixel` 멤버 함수에는 두 가지 형식이 있습니다. 첫 번째는 두 개의 좌표 값을 사용 합니다. 두 번째는 [점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 사용 합니다.
+`GetPixel` 멤버 함수에는 두 가지 형식이 있습니다. 첫 번째는 두 개의 좌표 값을 사용 합니다. 두 번째는 [점](/windows/win32/api/windef/ns-windef-point) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 사용 합니다.
 
 ##  <a name="getpolyfillmode"></a>  CDC::GetPolyFillMode
 
@@ -3669,7 +3669,7 @@ CSize GetTabbedTextExtent(
 는 문자열을 가리킵니다. 이 매개 변수에 대 한 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체를 전달할 수도 있습니다.
 
 *nCount*<br/>
-*LpszString*가 가리키는 [문자열의 길이](/windows/desktop/gdi/specifying-length-of-text-output-string) 를 지정 합니다.
+*LpszString*가 가리키는 [문자열의 길이](/windows/win32/gdi/specifying-length-of-text-output-string) 를 지정 합니다.
 
 *nTabPositions*<br/>
 *Lpntabstoppositions*가리키는 배열의 탭 정지 위치 수를 지정 합니다.
@@ -3841,7 +3841,7 @@ BOOL GetTextExtentExPointI(
 부분 문자 모양 범위를 받는 정수 배열에 대 한 포인터입니다. 배열의 각 요소는 문자 모양 인덱스 배열의 시작과 *Nmaxextent*지정 된 공간에 맞는 문자 모양 중 하나 사이의 거리 (논리 단위)를 제공 합니다. 이 배열에는 적어도 *cgi*에서 지정 된 문자 모양 인덱스 만큼의 요소가 있어야 하지만 함수는 *lpnfit*에 지정 된 것과 같은 수의 문자 모양 인덱스에 대 한 익스텐트로 배열을 채웁니다. *Lpndx* 가 NULL 인 경우 함수는 부분 문자열 너비를 계산 하지 않습니다.
 
 *lpSize*<br/>
-문자 모양 인덱스 배열의 크기 (논리 단위)를 받는 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체에 대 한 포인터입니다. 이 값은 NULL 일 수 없습니다.
+문자 모양 인덱스 배열의 크기 (논리 단위)를 받는 [크기](/windows/win32/api/windef/ns-windef-size) 구조체에 대 한 포인터입니다. 이 값은 NULL 일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3849,7 +3849,7 @@ BOOL GetTextExtentExPointI(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetTextExtentExPointI](/windows/desktop/api/wingdi/nf-wingdi-gettextextentexpointi)의 기능을 에뮬레이트합니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetTextExtentExPointI](/windows/win32/api/wingdi/nf-wingdi-gettextextentexpointi)의 기능을 에뮬레이트합니다.
 
 ##  <a name="gettextextentpointi"></a>  CDC::GetTextExtentPointI
 
@@ -3871,7 +3871,7 @@ BOOL GetTextExtentPointI(
 *PgiIn*가 가리키는 배열의 문자 모양 수를 지정 합니다.
 
 *lpSize*<br/>
-문자 모양 인덱스 배열의 크기 (논리 단위)를 받는 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체에 대 한 포인터입니다. 이 값은 NULL 일 수 없습니다.
+문자 모양 인덱스 배열의 크기 (논리 단위)를 받는 [크기](/windows/win32/api/windef/ns-windef-size) 구조체에 대 한 포인터입니다. 이 값은 NULL 일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3879,7 +3879,7 @@ BOOL GetTextExtentPointI(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetTextExtentPointI](/windows/desktop/api/wingdi/nf-wingdi-gettextextentpointi)의 기능을 에뮬레이트합니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 함수 [GetTextExtentPointI](/windows/win32/api/wingdi/nf-wingdi-gettextextentpointi)의 기능을 에뮬레이트합니다.
 
 ##  <a name="gettextface"></a>  CDC::GetTextFace
 
@@ -3923,7 +3923,7 @@ BOOL GetTextMetrics(LPTEXTMETRIC lpMetrics) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpMetrics*<br/>
-는 메트릭을 받는 [Textmetric](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) 구조체를 가리킵니다.
+는 메트릭을 받는 [Textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) 구조체를 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4004,7 +4004,7 @@ BOOL GetWorldTransform(XFORM& rXform) const;
 ### <a name="parameters"></a>매개 변수
 
 *rXform*<br/>
-현재 전 세계 공간에서 페이지 공간으로의 변환을 받는 [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) 구조에 대 한 참조입니다.
+현재 전 세계 공간에서 페이지 공간으로의 변환을 받는 [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform) 구조에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4012,11 +4012,11 @@ BOOL GetWorldTransform(XFORM& rXform) const;
 
 실패 한 경우 0을 반환 합니다.
 
-확장 오류 정보를 가져오려면 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
+확장 오류 정보를 가져오려면 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Windows GDI 함수 [GetWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-getworldtransform)을 래핑합니다.
+이 메서드는 Windows GDI 함수 [GetWorldTransform](/windows/win32/api/wingdi/nf-wingdi-getworldtransform)을 래핑합니다.
 
 ##  <a name="gradientfill"></a>  CDC::GradientFill
 
@@ -4034,19 +4034,19 @@ BOOL GradientFill(
 ### <a name="parameters"></a>매개 변수
 
 *pVertices*<br/>
-각각 삼각형 꼭지점을 정의 하는 [trivertex](/windows/desktop/api/wingdi/ns-wingdi-trivertex) 구조체의 배열에 대 한 포인터입니다.
+각각 삼각형 꼭지점을 정의 하는 [trivertex](/windows/win32/api/wingdi/ns-wingdi-trivertex) 구조체의 배열에 대 한 포인터입니다.
 
 *nVertices*<br/>
 꼭 짓 점 수입니다.
 
 *pMesh*<br/>
-삼각형 모드에서 [GRADIENT_TRIANGLE](/windows/desktop/api/wingdi/ns-wingdi-gradient_triangle) 구조체의 배열 또는 사각형 모드의 [GRADIENT_RECT](/windows/desktop/api/wingdi/ns-wingdi-gradient_rect) 구조 배열입니다.
+삼각형 모드에서 [GRADIENT_TRIANGLE](/windows/win32/api/wingdi/ns-wingdi-gradient_triangle) 구조체의 배열 또는 사각형 모드의 [GRADIENT_RECT](/windows/win32/api/wingdi/ns-wingdi-gradient_rect) 구조 배열입니다.
 
 *nMeshElements*<br/>
 *Pmesh*의 요소 (삼각형 또는 사각형) 수입니다.
 
 *dwMode*<br/>
-그라데이션 채우기 모드를 지정 합니다. 가능한 값 목록은 Windows SDK의 [GradientFill](/windows/desktop/api/wingdi/nf-wingdi-gradientfill) 를 참조 하세요.
+그라데이션 채우기 모드를 지정 합니다. 가능한 값 목록은 Windows SDK의 [GradientFill](/windows/win32/api/wingdi/nf-wingdi-gradientfill) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4111,7 +4111,7 @@ virtual BOOL GrayString(
 
 응용 프로그램은 멤버 함수를 `GrayString` 호출 하지 않고 회색으로 표시 되는 회색으로 표시 된 문자열을 단색으로 그릴 수 있습니다. 시스템 색 COLOR_GRAYTEXT은 비활성 텍스트를 그리는 데 사용 되는 단색 회색 시스템 색입니다. 응용 프로그램은 `GetSysColor` Windows 함수를 호출 하 여 COLOR_GRAYTEXT의 색 값을 검색할 수 있습니다. 색이 0 (검정)이 아니면 응용 프로그램에서 `SetTextColor` 멤버 함수를 호출 하 여 텍스트 색을 색 값으로 설정 하 고 문자열을 직접 그릴 수 있습니다. 검색 된 색이 검정색이 면 응용 프로그램은를 호출 `GrayString` 하 여 텍스트를 흐리게 (회색) 해야 합니다.
 
-*LpfnOutput* 가 NULL 인 경우 GDI는 Windows [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) 함수를 사용 하 고 *lpdata* 는 출력할 문자에 대 한 먼 포인터로 간주 됩니다. 출력 될 문자를 `TextOut` 멤버 함수에서 처리할 수 없는 경우 (예: 문자열이 비트맵으로 저장 됨) 응용 프로그램은 자체 출력 함수를 제공 해야 합니다.
+*LpfnOutput* 가 NULL 인 경우 GDI는 Windows [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) 함수를 사용 하 고 *lpdata* 는 출력할 문자에 대 한 먼 포인터로 간주 됩니다. 출력 될 문자를 `TextOut` 멤버 함수에서 처리할 수 없는 경우 (예: 문자열이 비트맵으로 저장 됨) 응용 프로그램은 자체 출력 함수를 제공 해야 합니다.
 
 또한 모든 콜백 함수는 콜백 경계에서 예외가 throw 될 수 없으므로 Windows로 반환 하기 전에 Microsoft Foundation 예외를 트래핑 해야 합니다. 예외에 대 한 자세한 내용은 [예외](../../mfc/exception-handling-in-mfc.md)문서를 참조 하세요.
 
@@ -4130,7 +4130,7 @@ void HIMETRICtoDP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpSize*<br/>
-[크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체 또는 [csize](../../atl-mfc-shared/reference/csize-class.md) 개체를 가리킵니다.
+[크기](/windows/win32/api/windef/ns-windef-size) 구조체 또는 [csize](../../atl-mfc-shared/reference/csize-class.md) 개체를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4147,7 +4147,7 @@ void HIMETRICtoLP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpSize*<br/>
-[크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체 또는 [csize](../../atl-mfc-shared/reference/csize-class.md) 개체를 가리킵니다.
+[크기](/windows/win32/api/windef/ns-windef-size) 구조체 또는 [csize](../../atl-mfc-shared/reference/csize-class.md) 개체를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4309,16 +4309,16 @@ void LPtoDP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-는 점의 배열을 가리킵니다. 배열의 각 요소는 [점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
+는 점의 배열을 가리킵니다. 배열의 각 요소는 [점](/windows/win32/api/windef/ns-windef-point) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
 *nCount*<br/>
 배열의 요소 수입니다.
 
 *lpRect*<br/>
-는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다. 이 매개 변수는 논리적에서 장치 단위로 사각형을 매핑하는 일반적인 경우에 사용 됩니다.
+는 [RECT](/windows/win32/api/windef/ns-windef-rect) 구조 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체를 가리킵니다. 이 매개 변수는 논리적에서 장치 단위로 사각형을 매핑하는 일반적인 경우에 사용 됩니다.
 
 *lpSize*<br/>
-[크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체 또는 [csize](../../atl-mfc-shared/reference/csize-class.md) 개체를 가리킵니다.
+[크기](/windows/win32/api/windef/ns-windef-size) 구조체 또는 [csize](../../atl-mfc-shared/reference/csize-class.md) 개체를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4448,10 +4448,10 @@ BOOL ModifyWorldTransform(
 ### <a name="parameters"></a>매개 변수
 
 *rXform*<br/>
-지정 된 장치 컨텍스트에 대 한 세계 변환을 수정 하는 데 사용 되는 [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) 구조에 대 한 참조입니다.
+지정 된 장치 컨텍스트에 대 한 세계 변환을 수정 하는 데 사용 되는 [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform) 구조에 대 한 참조입니다.
 
 *iMode*<br/>
-변환 데이터가 현재 세계 변환을 수정 하는 방법을 지정 합니다. 이 매개 변수에 사용할 수 있는 값 목록은 [ModifyWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-modifyworldtransform)를 참조 하세요.
+변환 데이터가 현재 세계 변환을 수정 하는 방법을 지정 합니다. 이 매개 변수에 사용할 수 있는 값 목록은 [ModifyWorldTransform](/windows/win32/api/wingdi/nf-wingdi-modifyworldtransform)를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4459,11 +4459,11 @@ BOOL ModifyWorldTransform(
 
 실패 한 경우 0을 반환 합니다.
 
-확장 오류 정보를 가져오려면 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
+확장 오류 정보를 가져오려면 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Windows GDI 함수 [ModifyWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-modifyworldtransform)을 래핑합니다.
+이 메서드는 Windows GDI 함수 [ModifyWorldTransform](/windows/win32/api/wingdi/nf-wingdi-modifyworldtransform)을 래핑합니다.
 
 ##  <a name="moveto"></a>  CDC::MoveTo
 
@@ -4713,7 +4713,7 @@ BOOL Pie(
 경계 사각형을 지정 합니다. 이 매개 변수에 대 한 `CRect` `RECT` 구조에 개체 또는 포인터를 전달할 수 있습니다.
 
 *ptStart*<br/>
-원호의 시작 지점을 지정 합니다. 이 점이 정확히 호 위에 있을 필요는 없습니다. 이 매개 변수에 대 한 [점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
+원호의 시작 지점을 지정 합니다. 이 점이 정확히 호 위에 있을 필요는 없습니다. 이 매개 변수에 대 한 [점](/windows/win32/api/windef/ns-windef-point) 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
 
 *ptEnd*<br/>
 원호의 끝점을 지정 합니다. 이 점이 정확히 호 위에 있을 필요는 없습니다. 이 매개 변수에 대 한 `POINT` 구조 `CPoint` 나 개체를 전달할 수 있습니다.
@@ -4850,7 +4850,7 @@ BOOL PolyBezier(
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-스플라인의 끝점과 제어점을 포함 하는 [점](/windows/desktop/api/windef/ns-windef-tagpoint) 데이터 구조의 배열을 가리킵니다.
+스플라인의 끝점과 제어점을 포함 하는 [점](/windows/win32/api/windef/ns-windef-point) 데이터 구조의 배열을 가리킵니다.
 
 *nCount*<br/>
 *Lppoints* 배열의 요소 수를 지정 합니다. 각 Bzier 스플라인에는 두 개의 제어점과 끝점이 필요 하 고 초기 스플라인에는 추가 시작점이 필요 하기 때문에이 값은 그리려는 스플라인 수의 세 배 이상 이어야 합니다.
@@ -4878,7 +4878,7 @@ BOOL PolyBezierTo(
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-끝점과 제어 지점을 포함 하는 [점](/windows/desktop/api/windef/ns-windef-tagpoint) 데이터 구조의 배열을 가리킵니다.
+끝점과 제어 지점을 포함 하는 [점](/windows/win32/api/windef/ns-windef-point) 데이터 구조의 배열을 가리킵니다.
 
 *nCount*<br/>
 *Lppoints* 배열의 요소 수를 지정 합니다. 각 Bzier 스플라인은 두 개의 제어점과 끝점이 필요 하기 때문에이 값은 그리려는 스플라인 수의 3 배 여야 합니다.
@@ -4909,7 +4909,7 @@ BOOL PolyDraw(
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-각 선 세그먼트의 끝점과 각 Bzier 스플라인의 끝점과 제어점을 포함 하는 [점](/windows/desktop/api/windef/ns-windef-tagpoint) 데이터 구조의 배열을 가리킵니다.
+각 선 세그먼트의 끝점과 각 Bzier 스플라인의 끝점과 제어점을 포함 하는 [점](/windows/win32/api/windef/ns-windef-point) 데이터 구조의 배열을 가리킵니다.
 
 *lpTypes*<br/>
 는 *Lppoints* 배열의 각 지점을 사용 하는 방법을 지정 하는 배열을 가리킵니다. 값은 다음 중 하나일 수 있습니다.
@@ -5001,7 +5001,7 @@ BOOL Polyline(
 
 현재 펜을 사용 하 여 첫 번째 점에서 이후 점으로 선이 그려집니다. 멤버 함수와 달리 함수는 `Polyline` 현재 위치를 사용 하거나 업데이트 하지 않습니다. `LineTo`
 
-자세한 내용은 Windows SDK의 [폴리라인](/windows/desktop/api/wingdi/nf-wingdi-polyline) 를 참조 하세요.
+자세한 내용은 Windows SDK의 [폴리라인](/windows/win32/api/wingdi/nf-wingdi-polyline) 를 참조 하세요.
 
 ##  <a name="polylineto"></a>  CDC::PolylineTo
 
@@ -5016,7 +5016,7 @@ BOOL PolylineTo(
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-선의 꼭 짓 점을 포함 하는 [점](/windows/desktop/api/windef/ns-windef-tagpoint) 데이터 구조의 배열을 가리킵니다.
+선의 꼭 짓 점을 포함 하는 [점](/windows/win32/api/windef/ns-windef-point) 데이터 구조의 배열을 가리킵니다.
 
 *nCount*<br/>
 배열의 요소 수를 지정 합니다.
@@ -5932,7 +5932,7 @@ BOOL SetColorAdjustment(const COLORADJUSTMENT* lpColorAdjust);
 ### <a name="parameters"></a>매개 변수
 
 *lpColorAdjust*<br/>
-색 조정 값을 포함 하는 [Coloradjustment](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment) 데이터 구조를 가리킵니다.
+색 조정 값을 포함 하는 [Coloradjustment](/windows/win32/api/wingdi/ns-wingdi-coloradjustment) 데이터 구조를 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -5963,7 +5963,7 @@ COLORREF SetDCBrushColor(COLORREF crColor);
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Windows SDK 설명 된 대로 함수 [SetDCBrushColor](/windows/desktop/api/wingdi/nf-wingdi-setdcbrushcolor)의 기능을 에뮬레이트합니다.
+이 메서드는 Windows SDK 설명 된 대로 함수 [SetDCBrushColor](/windows/win32/api/wingdi/nf-wingdi-setdcbrushcolor)의 기능을 에뮬레이트합니다.
 
 ##  <a name="setdcpencolor"></a>  CDC::SetDCPenColor
 
@@ -5984,7 +5984,7 @@ COLORREF SetDCPenColor(COLORREF crColor);
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Windows SDK 설명 된 대로 Win32 함수 [Setdcpencolor](/windows/desktop/api/wingdi/nf-wingdi-setdcpencolor)를 활용 합니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 Win32 함수 [Setdcpencolor](/windows/win32/api/wingdi/nf-wingdi-setdcpencolor)를 활용 합니다.
 
 ##  <a name="setgraphicsmode"></a>  CDC::SetGraphicsMode
 
@@ -5997,17 +5997,17 @@ int SetGraphicsMode(int iMode);
 ### <a name="parameters"></a>매개 변수
 
 *iMode*<br/>
-그래픽 모드를 지정 합니다. 이 매개 변수에 사용할 수 있는 값 목록은 [SetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-setgraphicsmode)를 참조 하세요.
+그래픽 모드를 지정 합니다. 이 매개 변수에 사용할 수 있는 값 목록은 [SetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-setgraphicsmode)를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
 성공 시 이전 그래픽 모드를 반환 합니다.
 
-실패 한 경우 0을 반환 합니다. 확장 오류 정보를 가져오려면 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
+실패 한 경우 0을 반환 합니다. 확장 오류 정보를 가져오려면 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Windows GDI 함수 [SetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-setgraphicsmode)을 래핑합니다.
+이 메서드는 Windows GDI 함수 [SetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-setgraphicsmode)을 래핑합니다.
 
 ##  <a name="setlayout"></a>  CDC::SetLayout
 
@@ -6032,7 +6032,7 @@ DWORD SetLayout(DWORD dwLayout);
 
 성공 하면 장치 컨텍스트의 이전 레이아웃입니다.
 
-실패 한 경우 GDI_ERROR. 확장 오류 정보를 가져오려면 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
+실패 한 경우 GDI_ERROR. 확장 오류 정보를 가져오려면 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -6042,7 +6042,7 @@ DWORD SetLayout(DWORD dwLayout);
 
 많은 비트맵과 같은 일부 경우에는 왼쪽에서 오른쪽으로 레이아웃을 유지 하려고 할 수 있습니다. 이러한 경우 또는 `BitBlt` `StretchBlt`를 호출 하 여 이미지를 렌더링 한 다음 *dwlayout* 의 비트맵 컨트롤 플래그를 LAYOUT_BITMAPORIENTATIONPRESERVED로 설정 합니다.
 
-LAYOUT_RTL 플래그를 사용 하 여 레이아웃을 변경 하면 일반적으로 오른쪽 또는 왼쪽을 지정 하는 플래그가 반전 됩니다. 혼동을 피하려면 표준 플래그의 대체 이름을 정의 하는 것이 좋습니다. 제안 된 대체 플래그 이름 목록은 Windows SDK의 [Setlayout](/windows/desktop/api/wingdi/nf-wingdi-setlayout) 을 참조 하세요.
+LAYOUT_RTL 플래그를 사용 하 여 레이아웃을 변경 하면 일반적으로 오른쪽 또는 왼쪽을 지정 하는 플래그가 반전 됩니다. 혼동을 피하려면 표준 플래그의 대체 이름을 정의 하는 것이 좋습니다. 제안 된 대체 플래그 이름 목록은 Windows SDK의 [Setlayout](/windows/win32/api/wingdi/nf-wingdi-setlayout) 을 참조 하세요.
 
 ##  <a name="setmapmode"></a>  CDC::SetMapMode
 
@@ -6177,7 +6177,7 @@ COLORREF SetPixel(
 설정할 점의 논리 y 좌표를 지정 합니다.
 
 *crColor*<br/>
-요소를 그리는 데 사용 되는 색을 지정 하는 COLORREF RGB 값입니다. 이 값에 대 한 설명은 Windows SDK의 [Colorref](/windows/desktop/gdi/colorref) 를 참조 하세요.
+요소를 그리는 데 사용 되는 색을 지정 하는 COLORREF RGB 값입니다. 이 값에 대 한 설명은 Windows SDK의 [Colorref](/windows/win32/gdi/colorref) 를 참조 하세요.
 
 *point*<br/>
 설정할 점의 논리 x 및 y 좌표를 지정 합니다. 이 매개 변수에 대 한 `POINT` 구조 `CPoint` 나 개체를 전달할 수 있습니다.
@@ -6219,7 +6219,7 @@ BOOL SetPixelV(
 점을 그리는 데 사용할 색을 지정 합니다.
 
 *point*<br/>
-설정할 점의 논리 x 및 y 좌표를 지정 합니다. 이 매개 변수에 대 한 [요소](/windows/desktop/api/windef/ns-windef-tagpoint) 데이터 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
+설정할 점의 논리 x 및 y 좌표를 지정 합니다. 이 매개 변수에 대 한 [요소](/windows/win32/api/windef/ns-windef-point) 데이터 구조 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체를 전달할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6327,7 +6327,7 @@ int SetStretchBltMode(int nStretchMode);
 |블랙 아웃|제거 된 픽셀과 기존 픽셀에 대 한 색 값을 사용 하 여 부울 AND 연산을 수행 합니다. 비트맵이 단색 비트맵 인 경우이 모드는 흰색 픽셀의 비용으로 검정색 픽셀을 유지 합니다.|
 |COLORONCOLOR|픽셀을 삭제 합니다. 이 모드는 정보를 유지 하지 않고 제거 된 픽셀의 모든 줄을 삭제 합니다.|
 |명암|소스 사각형의 픽셀을 대상 사각형의 픽셀 블록으로 매핑합니다. 대상 픽셀의 평균 색은 소스 픽셀의 색을 대략적으로 계산 합니다.|
-||하프톤 늘이기 모드를 설정한 후에는 응용 프로그램에서 Win32 함수 [SetBrushOrgEx](/windows/desktop/api/wingdi/nf-wingdi-setbrushorgex) 를 호출 하 여 브러시 원본을 설정 해야 합니다. 그렇게 하지 않으면 브러시 맞춤 문제가 발생 합니다.|
+||하프톤 늘이기 모드를 설정한 후에는 응용 프로그램에서 Win32 함수 [SetBrushOrgEx](/windows/win32/api/wingdi/nf-wingdi-setbrushorgex) 를 호출 하 여 브러시 원본을 설정 해야 합니다. 그렇게 하지 않으면 브러시 맞춤 문제가 발생 합니다.|
 |STRETCH_ANDSCANS|**Windows 95/98**: 블랙 아웃과 동일|
 |STRETCH_DELETESCANS|**Windows 95/98**: COLORONCOLOR와 동일|
 |STRETCH_HALFTONE|**Windows 95/98**: 하프톤과 동일 합니다.|
@@ -6649,7 +6649,7 @@ BOOL SetWorldTransform(const XFORM& rXform);
 ### <a name="parameters"></a>매개 변수
 
 *rXform*<br/>
-변환 데이터를 포함 하는 [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) 구조에 대 한 참조입니다.
+변환 데이터를 포함 하는 [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform) 구조에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6657,11 +6657,11 @@ BOOL SetWorldTransform(const XFORM& rXform);
 
 실패 한 경우 0을 반환 합니다.
 
-확장 오류 정보를 가져오려면 [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
+확장 오류 정보를 가져오려면 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)를 호출 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Windows GDI 함수 [SetWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-setworldtransform)을 래핑합니다.
+이 메서드는 Windows GDI 함수 [SetWorldTransform](/windows/win32/api/wingdi/nf-wingdi-setworldtransform)을 래핑합니다.
 
 ##  <a name="startdoc"></a>  CDC::StartDoc
 
@@ -6675,7 +6675,7 @@ int StartDoc(LPCTSTR lpszDocName);
 ### <a name="parameters"></a>매개 변수
 
 *lpDocInfo*<br/>
-문서 파일의 이름과 출력 파일의 이름을 포함 하는 [Docinfo](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) 구조를 가리킵니다.
+문서 파일의 이름과 출력 파일의 이름을 포함 하는 [Docinfo](/windows/win32/api/wingdi/ns-wingdi-docinfow) 구조를 가리킵니다.
 
 *lpszDocName*<br/>
 문서 파일의 이름을 포함 하는 문자열에 대 한 포인터입니다.
@@ -6891,7 +6891,7 @@ CSize TabbedTextOut(
 그릴 문자열을 가리킵니다. 문자 배열에 대 한 포인터 또는이 매개 변수에 대 한 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 개체를 전달할 수 있습니다.
 
 *nCount*<br/>
-*LpszString*가 가리키는 [문자열의 길이](/windows/desktop/gdi/specifying-length-of-text-output-string) 를 지정 합니다.
+*LpszString*가 가리키는 [문자열의 길이](/windows/win32/gdi/specifying-length-of-text-output-string) 를 지정 합니다.
 
 *nTabPositions*<br/>
 탭 정지 위치 배열의 값 수를 지정 합니다.
@@ -7023,7 +7023,7 @@ BOOL TransparentBlt(
 
 `TransparentBlt`투명도를 허용 합니다. 즉, *Clrtransparent* 로 표시 되는 RGB 색은 전송에 대해 투명 하 게 렌더링 됩니다.
 
-자세한 내용은 Windows SDK에서 [TransparentBlt](/windows/desktop/api/wingdi/nf-wingdi-transparentblt) 을 참조 하세요.
+자세한 내용은 Windows SDK에서 [TransparentBlt](/windows/win32/api/wingdi/nf-wingdi-transparentblt) 을 참조 하세요.
 
 ##  <a name="updatecolors"></a>  CDC::UpdateColors
 
@@ -7037,7 +7037,7 @@ void UpdateColors();
 
 인식 된 논리 색상표가 있는 비활성 창은 시스템 팔레트가 변경 `UpdateColors` 될 때 클라이언트 영역을 다시 그리는 대신를 호출할 수 있습니다.
 
-색상표를 사용 하는 방법에 대 한 자세한 내용은 Windows SDK의 [UpdateColors](/windows/desktop/api/wingdi/nf-wingdi-updatecolors) 를 참조 하세요.
+색상표를 사용 하는 방법에 대 한 자세한 내용은 Windows SDK의 [UpdateColors](/windows/win32/api/wingdi/nf-wingdi-updatecolors) 를 참조 하세요.
 
 멤버 `UpdateColors` 함수는 일반적으로 영역을 다시 그리는 것 보다 신속 하 게 클라이언트 영역을 업데이트 합니다. 그러나이 함수는 시스템 색상표가 변경 되기 전에 각 픽셀의 색을 기준으로 색 변환을 수행 하기 때문에이 함수를 호출할 때마다 일부 색 정확성이 손실 됩니다.
 

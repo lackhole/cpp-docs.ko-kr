@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: 066494f4ba0119f4576e0c8e3c06d87ff736aea3
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
-ms.translationtype: HT
+ms.openlocfilehash: 732bdf980240b1f496c1aca56c8a89b6a7f52d27
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916725"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502176"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -260,7 +260,7 @@ class CWinApp : public CWinThread
 |[CWinApp::OnIdle](#onidle)|응용 프로그램별 유휴 시간 처리를 수행 하려면를 재정의 합니다.|
 |[CWinApp::OpenDocumentFile](#opendocumentfile)|파일에서 문서를 열기 위해 프레임 워크에서 호출 됩니다.|
 |[CWinApp::ParseCommandLine](#parsecommandline)|명령줄에서 개별 매개 변수 및 플래그를 구문 분석 합니다.|
-|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Windows 함수 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 및 [dispatchmessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)에 디스패치 되기 전에 메시지를 필터링 합니다.|
+|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Windows 함수 [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) 및 [dispatchmessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage)에 디스패치 되기 전에 메시지를 필터링 합니다.|
 |[CWinApp::ProcessMessageFilter](#processmessagefilter)|응용 프로그램에 도달 하기 전에 특정 메시지를 가로챕니다.|
 |[CWinApp::ProcessShellCommand](#processshellcommand)|명령줄 인수 및 플래그를 처리 합니다.|
 |[CWinApp::ProcessWndProcException](#processwndprocexception)|응용 프로그램의 메시지 및 명령 처리기가 throw 한 처리 되지 않은 모든 예외를 가로챕니다.|
@@ -850,7 +850,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 ### <a name="parameters"></a>매개 변수
 
 *pPrintDlg*<br/>
-[Printdlg](/windows/desktop/api/commdlg/ns-commdlg-tagpda) 구조체에 대 한 포인터입니다.
+[Printdlg](/windows/win32/api/commdlg/ns-commdlg-pdw) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -902,7 +902,7 @@ BOOL GetProfileBinary(
 > `GetProfileBinary`버퍼를 할당 하 고 해당 주소를 \* *ppdata*로 반환 합니다. 호출자는 **delete []** 를 사용 하 여 버퍼를 해제 해야 합니다.
 
 > [!IMPORTANT]
-> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ### <a name="example"></a>예제
 
@@ -943,7 +943,7 @@ UINT GetProfileInt(
 이 멤버 함수는 대/소문자를 구분 하지 않으므로 *lpszSection* 및 *lpszEntry* 매개 변수의 문자열은 대/소문자가 다를 수 있습니다.
 
 > [!IMPORTANT]
-> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ### <a name="example"></a>예제
 
@@ -980,7 +980,7 @@ CString GetProfileString(
 ### <a name="remarks"></a>설명
 
 > [!IMPORTANT]
-> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/desktop/SecBP/avoiding-buffer-overruns)를 참조하세요.
+> 이 함수에서 반환된 데이터는 NULL로 끝나지 않아도 되며 호출자는 유효성 검사를 수행해야 합니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
 ### <a name="example"></a>예제
 
@@ -1036,7 +1036,7 @@ virtual void HtmlHelp(
 추가 데이터를 지정 합니다. 사용 되는 값은 *Ncmd* 매개 변수의 값에 따라 달라 집니다. `0x000F`기본값은 [HH_HELP_CONTEXT](/previous-versions/windows/desktop/htmlhelp/hh-help-context-command)입니다.
 
 *nCmd*<br/>
-요청한 도움말의 형식을 지정합니다. 사용할 수 있는 값 목록과 이러한 값이 *Dwdata* 매개 변수에 영향을 주는 방법에 대 한 자세한 내용은Windows SDK의 [HtmlHelpW](/windows/desktop/api/htmlhelp/nf-htmlhelp-htmlhelpw) 및 [HtmlHelpA](/windows/desktop/api/htmlhelp/nf-htmlhelp-htmlhelpa) API 함수 항목에서 설명 하는 *ucommand* 매개 변수를 참조하십시오.  
+요청한 도움말의 형식을 지정합니다. 사용할 수 있는 값 목록과 이러한 값이 *Dwdata* 매개 변수에 영향을 주는 방법에 대 한 자세한 내용은Windows SDK의 [HtmlHelpW](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpw) 및 [HtmlHelpA](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpa) API 함수 항목에서 설명 하는 *ucommand* 매개 변수를 참조하십시오.  
 
 ### <a name="remarks"></a>설명
 
@@ -1063,7 +1063,7 @@ virtual BOOL InitInstance();
 를 `InitInstance` 재정의 하 여 Windows에서 실행 되는 응용 프로그램의 새 인스턴스를 초기화 합니다. 일반적으로를 재정의 `InitInstance` 하 여 주 창 개체를 생성 하 고 `CWinThread::m_pMainWnd` 해당 창을 가리키도록 데이터 멤버를 설정 합니다. 이 멤버 함수를 재정의 하는 [방법에 대 한 자세한 내용은 CWinApp: 응용 프로그램 클래스](../../mfc/cwinapp-the-application-class.md)입니다.
 
 > [!NOTE]
-> MFC 응용 프로그램을 STA (단일 스레드 아파트)로 초기화 해야 합니다. `InitInstance` 재정의에서 [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) 를 호출 하는 경우 COINIT_MULTITHREADED 대신 COINIT_APARTMENTTHREADED를 지정 합니다.
+> MFC 응용 프로그램을 STA (단일 스레드 아파트)로 초기화 해야 합니다. `InitInstance` 재정의에서 [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) 를 호출 하는 경우 COINIT_MULTITHREADED 대신 COINIT_APARTMENTTHREADED를 지정 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1099,7 +1099,7 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
 커서 리소스의 이름을 포함 하는 null로 끝나는 문자열을 가리킵니다. 이 인수에는 `CString` 를 사용할 수 있습니다.
 
 *nIDResource*<br/>
-커서 리소스의 ID입니다. 리소스 목록은 Windows SDK의 [Loadcursor](/windows/desktop/api/winuser/nf-winuser-loadcursora) 를 참조 하십시오.
+커서 리소스의 ID입니다. 리소스 목록은 Windows SDK의 [Loadcursor](/windows/win32/api/winuser/nf-winuser-loadcursorw) 를 참조 하십시오.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1142,7 +1142,7 @@ HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource
 [LoadStandardIcon](#loadstandardicon) 또는 [loadoemicon](#loadoemicon) 멤버 함수를 사용 하 여 미리 정의 된 Windows 아이콘에 액세스할 수 있습니다.
 
 > [!NOTE]
-> 이 멤버 함수는 크기가 SM_CXICON 및 SM_CYICON 시스템 메트릭 값을 준수 하는 아이콘만 로드할 수 있는 Win32 API 함수 [Loadicon](/windows/desktop/api/winuser/nf-winuser-loadicona)을 호출 합니다.
+> 이 멤버 함수는 크기가 SM_CXICON 및 SM_CYICON 시스템 메트릭 값을 준수 하는 아이콘만 로드할 수 있는 Win32 API 함수 [Loadicon](/windows/win32/api/winuser/nf-winuser-loadiconw)을 호출 합니다.
 
 ##  <a name="loadoemcursor"></a>  CWinApp::LoadOEMCursor
 
@@ -1252,7 +1252,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpszIconName*<br/>
-미리 정의 된 창 아이콘을 지정 하는 매니페스트 상수 식별자입니다. 이러한 식별자는 WINDOWS에서 정의 됩니다. 넣기. 사용할 수 있는 미리 정의 된 값 및 해당 설명의 목록은 Windows SDK의 [Loadicon](/windows/desktop/api/winuser/nf-winuser-loadicona) 에서 *Lpiconname* 매개 변수를 참조 하세요.
+미리 정의 된 창 아이콘을 지정 하는 매니페스트 상수 식별자입니다. 이러한 식별자는 WINDOWS에서 정의 됩니다. 넣기. 사용할 수 있는 미리 정의 된 값 및 해당 설명의 목록은 Windows SDK의 [Loadicon](/windows/win32/api/winuser/nf-winuser-loadiconw) 에서 *Lpiconname* 매개 변수를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1784,7 +1784,7 @@ void ParseCommandLine(CCommandLineInfo& rCmdInfo);
 
 ##  <a name="pretranslatemessage"></a>  CWinApp::PreTranslateMessage
 
-Windows 함수 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 및 [dispatchmessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) 에 디스패치 되기 전에이 함수를 재정의 하 여 창 메시지를 필터링 합니다. 기본 구현에서는 액셀러레이터 키 변환을 수행 하므로를 `CWinApp::PreTranslateMessage`호출해야합니다.재정의 된 버전의 멤버 함수입니다.
+Windows 함수 [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) 및 [dispatchmessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) 에 디스패치 되기 전에이 함수를 재정의 하 여 창 메시지를 필터링 합니다. 기본 구현에서는 액셀러레이터 키 변환을 수행 하므로를 `CWinApp::PreTranslateMessage`호출해야합니다.재정의 된 버전의 멤버 함수입니다.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -1793,7 +1793,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>매개 변수
 
 *pMsg*<br/>
-처리할 메시지를 포함 하는 [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) 구조체에 대 한 포인터입니다.
+처리할 메시지를 포함 하는 [MSG](/windows/win32/api/winuser/ns-winuser-tagmsg) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1815,7 +1815,7 @@ virtual BOOL ProcessMessageFilter(
 후크 코드를 지정 합니다. 이 멤버 함수는 코드를 사용 하 여 Lpmsg를 처리 하는 방법을 결정 *합니다.*
 
 *lpMsg*<br/>
-Windows [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) 구조체에 대 한 포인터입니다.
+Windows [MSG](/windows/win32/api/winuser/ns-winuser-msg)t)에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1886,7 +1886,7 @@ virtual LRESULT ProcessWndProcException(
 Catch 되지 않은 예외에 대 한 포인터입니다.
 
 *pMsg*<br/>
-프레임 워크에서 예외를 throw 한 windows 메시지에 대 한 정보를 포함 하는 [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) 구조체입니다.
+프레임 워크에서 예외를 throw 한 windows 메시지에 대 한 정보를 포함 하는 [MSG](/windows/win32/api/winuser/ns-winuser-msg)t)입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2118,7 +2118,7 @@ void SelectPrinter(
 ### <a name="parameters"></a>매개 변수
 
 *hDevNames*<br/>
-특정 프린터의 드라이버, 장치 및 출력 포트 이름을 식별 하는 [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) 구조체에 대 한 핸들입니다.
+특정 프린터의 드라이버, 장치 및 출력 포트 이름을 식별 하는 [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames)t)에 대 한 핸들입니다.
 
 *hDevMode*<br/>
 프린터의 장치 초기화 및 환경에 대 한 정보를 지정 하는 [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) 구조체에 대 한 핸들입니다.
@@ -2260,7 +2260,7 @@ virtual void WinHelp(
 추가 데이터를 지정 합니다. 사용 되는 값은 *Ncmd* 매개 변수의 값에 따라 달라 집니다.
 
 *nCmd*<br/>
-요청한 도움말의 형식을 지정합니다. 가능한 값 목록과이 값이 *Dwdata* 매개 변수에 영향을 주는 방법은 [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows 함수를 참조 하세요.
+요청한 도움말의 형식을 지정합니다. 가능한 값 목록과이 값이 *Dwdata* 매개 변수에 영향을 주는 방법은 [WinHelp](/windows/win32/api/winuser/nf-winuser-winhelpw) Windows 함수를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 

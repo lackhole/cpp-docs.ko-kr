@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CImageList [MFC], Write
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-ms.openlocfilehash: 6c419081a649fddd65120270decb0cb57ee743fa
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
-ms.translationtype: HT
+ms.openlocfilehash: 1555209ce0f1c2caacbfb4b01107775db948d230
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916194"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505950"
 ---
 # <a name="cimagelist-class"></a>CImageList 클래스
 
@@ -269,7 +269,7 @@ CImageList();
 
 ##  <a name="copy"></a>  CImageList::Copy
 
-이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 함수 [ImageList_Copy](/windows/desktop/api/commctrl/nf-commctrl-imagelist_copy)의 동작을 구현 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 함수 [ImageList_Copy](/windows/win32/api/commctrl/nf-commctrl-imagelist_copy)의 동작을 구현 합니다.
 
 ```
 BOOL Copy(
@@ -634,16 +634,16 @@ BOOL DrawEx(
 지정 된 장치 컨텍스트 내에서 그릴 위치입니다.
 
 *sz*<br/>
-이미지의 왼쪽 위 모퉁이를 기준으로 그릴 이미지 부분의 크기입니다. Windows SDK의 *dx* 및 *dy* in [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) 을 참조 하십시오.
+이미지의 왼쪽 위 모퉁이를 기준으로 그릴 이미지 부분의 크기입니다. Windows SDK의 *dx* 및 *dy* in [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) 을 참조 하십시오.
 
 *clrBk*<br/>
-이미지의 배경색입니다. Windows SDK에서 *rgbBk* 의 [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) 을 참조 하세요.
+이미지의 배경색입니다. Windows SDK에서 *rgbBk* 의 [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) 을 참조 하세요.
 
 *clrFg*<br/>
-이미지의 전경색입니다. Windows SDK에서 *rgbFg* 의 [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) 을 참조 하세요.
+이미지의 전경색입니다. Windows SDK에서 *rgbFg* 의 [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) 을 참조 하세요.
 
 *nStyle*<br/>
-그리기 스타일을 지정 하는 플래그입니다. Windows SDK에서 [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) 의 *fstyle* 을 참조 하십시오.
+그리기 스타일을 지정 하는 플래그입니다. Windows SDK에서 [ImageList_DrawEx](/windows/win32/api/commctrl/nf-commctrl-imagelist_drawex) 의 *fstyle* 을 참조 하십시오.
 
 ### <a name="return-value"></a>반환 값
 
@@ -682,7 +682,7 @@ BOOL DrawIndirect(
 ### <a name="parameters"></a>매개 변수
 
 *pimldp*<br/>
-그리기 작업에 대 한 정보가 포함 된 [Imagelistdrawparams](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) 구조체에 대 한 포인터입니다.
+그리기 작업에 대 한 정보가 포함 된 [Imagelistdrawparams](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) 구조체에 대 한 포인터입니다.
 
 *pDC*<br/>
 대상 장치 컨텍스트에 대 한 포인터입니다. 작업을 완료 한 후에는이 [CDC](../../mfc/reference/cdc-class.md) 개체를 삭제 해야 합니다.
@@ -694,7 +694,7 @@ BOOL DrawIndirect(
 이미지를 그릴 x 및 y 좌표를 포함 하는 [점](/previous-versions/dd162805\(v=vs.85\)) 구조입니다.
 
 *sz*<br/>
-그릴 이미지의 크기를 나타내는 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체입니다.
+그릴 이미지의 크기를 나타내는 [크기](/windows/win32/api/windef/ns-windef-size) 구조체입니다.
 
 *ptOrigin*<br/>
 이미지 자체를 기준으로 그리기 작업의 왼쪽 위 모퉁이를 지정 하는 x 및 y 좌표를 포함 하는 [점](/previous-versions/dd162805\(v=vs.85\)) 구조입니다. X 좌표와 y 좌표 위에 있는 이미지의 픽셀은 그려지지 않습니다.
@@ -702,12 +702,12 @@ BOOL DrawIndirect(
 *fStyle*<br/>
 그리기 스타일 및 필요한 경우 오버레이 이미지를 지정 하는 플래그입니다. 오버레이 이미지에 대 한 자세한 내용은 설명 섹션을 참조 하세요. MFC 기본 구현인 ILD_NORMAL는 이미지 목록의 배경색을 사용 하 여 이미지를 그립니다. 배경색이 CLR_NONE 값 이면 마스크를 사용 하 여 이미지가 투명 하 게 그려집니다.
 
-다른 가능한 스타일은 [Imagelistdrawparams](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) 구조체의 *fstyle* 멤버 아래에 설명 되어 있습니다.
+다른 가능한 스타일은 [Imagelistdrawparams](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) 구조체의 *fstyle* 멤버 아래에 설명 되어 있습니다.
 
 *dwRop*<br/>
 래스터 작업 코드를 지정 하는 값입니다. 이러한 코드는 최종 색을 얻기 위해 소스 사각형의 색 데이터를 대상 사각형의 색 데이터와 결합 하는 방법을 정의 합니다. MFC의 기본 구현인 SRCCOPY는 소스 사각형을 대상 사각형에 직접 복사 합니다. *Fstyle* 매개 변수에 ILD_ROP 플래그가 포함 되어 있지 않으면이 매개 변수는 무시 됩니다.
 
-다른 가능한 값은 [Imagelistdrawparams](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) 구조체의 *dwRop* 멤버 아래에 설명 되어 있습니다.
+다른 가능한 값은 [Imagelistdrawparams](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) 구조체의 *dwRop* 멤버 아래에 설명 되어 있습니다.
 
 *rgbBack*<br/>
 기본적으로 CLR_DEFAULT 이미지 배경색입니다. 이 매개 변수는 응용 프로그램 정의 RGB 값 이거나 다음 값 중 하나일 수 있습니다.
@@ -738,7 +738,7 @@ ILS_SATURATE와 함께 사용 하는 경우이 멤버는 아이콘의 각 픽셀
 ILS_APLHA와 함께 사용 하는 경우이 멤버는 알파 채널에 대 한 값을 보유 합니다. 이 값은 0부터 255 까지입니다. 0은 완전히 투명 하 고 255은 완전히 불투명 합니다.
 
 *crEffect*<br/>
-네온 및 그림자 효과에 사용 되는 [Colorref](/windows/desktop/gdi/colorref) 값입니다.
+네온 및 그림자 효과에 사용 되는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -748,7 +748,7 @@ ILS_APLHA와 함께 사용 하는 경우이 멤버는 알파 채널에 대 한 �
 
 Win32 구조를 직접 입력 하려면 첫 번째 버전을 사용 합니다. 하나 이상의 MFC 기본 인수를 활용 하거나 구조를 관리 하지 않으려는 경우 두 번째 버전을 사용 합니다.
 
-오버레이 이미지는이 멤버 함수에서 *Nimage* 매개 변수로 지정 하는 기본 이미지의 맨 위에 그려지는 이미지입니다. [INDEXTOOVERLAYMASK](/windows/desktop/api/commctrl/nf-commctrl-indextooverlaymask) 매크로를 사용 하 여 지정한 오버레이 마스크의 1부터 시작 하는 인덱스와 함께 [draw](#draw) 멤버 함수를 사용 하 여 오버레이 마스크를 그립니다.
+오버레이 이미지는이 멤버 함수에서 *Nimage* 매개 변수로 지정 하는 기본 이미지의 맨 위에 그려지는 이미지입니다. [INDEXTOOVERLAYMASK](/windows/win32/api/commctrl/nf-commctrl-indextooverlaymask) 매크로를 사용 하 여 지정한 오버레이 마스크의 1부터 시작 하는 인덱스와 함께 [draw](#draw) 멤버 함수를 사용 하 여 오버레이 마스크를 그립니다.
 
 ### <a name="example"></a>예제
 
@@ -789,7 +789,7 @@ HICON ExtractIcon(int nImage);
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 [ImageList_ExtractIcon](/windows/desktop/api/commctrl/nf-commctrl-imagelist_extracticon) 매크로의 동작에 의존 하 여 아이콘을 만듭니다. 아이콘 만들기 및 정리에 대 한 자세한 내용은 [ImageList_ExtractIcon](/windows/desktop/api/commctrl/nf-commctrl-imagelist_extracticon) 매크로를 참조 하세요.
+이 메서드는 [ImageList_ExtractIcon](/windows/win32/api/commctrl/nf-commctrl-imagelist_extracticon) 매크로의 동작에 의존 하 여 아이콘을 만듭니다. 아이콘 만들기 및 정리에 대 한 자세한 내용은 [ImageList_ExtractIcon](/windows/win32/api/commctrl/nf-commctrl-imagelist_extracticon) 매크로를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -915,7 +915,7 @@ BOOL GetImageInfo(
 이미지의 0부터 시작 하는 인덱스입니다.
 
 *pImageInfo*<br/>
-이미지에 대 한 정보를 받는 [Imageinfo](/windows/desktop/api/commctrl/ns-commctrl-imageinfo) 구조체에 대 한 포인터입니다. 이 구조체의 정보는 이미지에 대 한 비트맵을 직접 조작 하는 데 사용할 수 있습니다.
+이미지에 대 한 정보를 받는 [Imageinfo](/windows/win32/api/commctrl/ns-commctrl-imageinfo) 구조체에 대 한 포인터입니다. 이 구조체의 정보는 이미지에 대 한 비트맵을 직접 조작 하는 데 사용할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1109,7 +1109,7 @@ BOOL SetDragCursorImage(
 
 ### <a name="remarks"></a>설명
 
-끌기 작업을 수행 하는 동안 끌기 함수는 새 이미지를 사용 하기 때문에 `CImageList::SetDragCursorImage`를 호출한 후에는 Windows [ShowCursor](/windows/desktop/api/winuser/nf-winuser-showcursor) 함수를 사용 하 여 실제 마우스 커서를 숨겨야 합니다. 그렇지 않으면 끌기 작업 기간 동안 두 개의 마우스 커서가 있는 시스템에 표시 될 수 있습니다.
+끌기 작업을 수행 하는 동안 끌기 함수는 새 이미지를 사용 하기 때문에 `CImageList::SetDragCursorImage`를 호출한 후에는 Windows [ShowCursor](/windows/win32/api/winuser/nf-winuser-showcursor) 함수를 사용 하 여 실제 마우스 커서를 숨겨야 합니다. 그렇지 않으면 끌기 작업 기간 동안 두 개의 마우스 커서가 있는 시스템에 표시 될 수 있습니다.
 
 ##  <a name="setimagecount"></a>  CImageList::SetImageCount
 
