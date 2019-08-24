@@ -171,7 +171,7 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 
 - 벡터에 매트릭스 시퀀스를 곱하여 벡터를 구합니다.
 
-- 문자열 시퀀스의 길이를 계산합니다.
+- 문자열 시퀀스의 길이를 컴퓨팅합니다.
 
 - 한 요소에 문자열과 같은 요소의 목록을 결합합니다.
 
@@ -218,12 +218,12 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 
 [!code-cpp[concrt-static-partitioner#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_8.cpp)]
 
-하지만 알고리즘에서 이후 루프에 다시 사용할 상태를 저장할 수 있게 l-value 참조인 비`affinity_partitioner`로 `const` 개체를 전달해야 합니다. 다음 예제에서는 데이터 집합에 대해 동일한 작업을 여러 번 병렬로 수행하는 기본 응용 프로그램을 보여줍니다. `affinity_partitioner`를 사용하면 배열이 캐시에 맞을 가능성이 높기 때문에 성능이 향상될 수 있습니다.
+하지만 알고리즘에서 이후 루프에 다시 사용할 상태를 저장할 수 있게 l-value 참조인 비`affinity_partitioner`로 `const` 개체를 전달해야 합니다. 다음 예제에서는 데이터 세트에 대해 동일한 작업을 여러 번 병렬로 수행하는 기본 애플리케이션을 보여줍니다. `affinity_partitioner`를 사용하면 배열이 캐시에 맞을 가능성이 높기 때문에 성능이 향상될 수 있습니다.
 
 [!code-cpp[concrt-affinity-partitioner#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_9.cpp)]
 
 > [!CAUTION]
->  협조적 차단 기능으로 `static_partitioner` 또는 `affinity_partitioner`를 사용하는 기존 코드를 수정할 때 주의하십시오. 이러한 파티셔너 형식은 부하 분산이나 범위 도용을 사용하지 않으므로 응용 프로그램 동작을 변경할 수 있습니다.
+>  협조적 차단 기능으로 `static_partitioner` 또는 `affinity_partitioner`를 사용하는 기존 코드를 수정할 때 주의하십시오. 이러한 파티셔너 형식은 부하 분산이나 범위 도용을 사용하지 않으므로 애플리케이션 동작을 변경할 수 있습니다.
 
 해당 시나리오에서 파티셔너를 사용할지 여부를 결정하려면 대표적인 부하 및 컴퓨터 구성에서 작업 완료에 걸리는 시간을 실제로 측정하는 것이 가장 좋습니다. 예를 들어 정적 분할은 몇 개의 코어만 있는 멀티 코어 컴퓨터에서 상당한 속도 향상을 제공할 수 있지만, 비교적 많은 코어가 있는 컴퓨터에서는 속도 저하가 발생할 수 있습니다.
 
@@ -231,7 +231,7 @@ PPL (병렬 패턴 라이브러리)은 데이터 컬렉션에 대해 동시에 �
 
 ##  <a name="parallel_sorting"></a>병렬 정렬
 
-PPL은 [동시성::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [동시성::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)및 [동시성::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort)의 세 가지 정렬 알고리즘을 제공 합니다. 이러한 정렬 알고리즘은 병렬로 정렬의 효과를 볼 수 있는 데이터 집합이 있는 경우 유용합니다. 특히 병렬로 정렬은 큰 데이터 집합이 있거나 많은 계산이 필요한 비교 작업을 사용하여 데이터를 정렬할 때 유용합니다. 각 알고리즘은 요소를 정렬합니다.
+PPL은 [동시성::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [동시성::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)및 [동시성::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort)의 세 가지 정렬 알고리즘을 제공 합니다. 이러한 정렬 알고리즘은 병렬로 정렬의 효과를 볼 수 있는 데이터 집합이 있는 경우 유용합니다. 특히 병렬로 정렬은 큰 데이터 세트이 있거나 많은 계산이 필요한 비교 작업을 사용하여 데이터를 정렬할 때 유용합니다. 각 알고리즘은 요소를 정렬합니다.
 
 `parallel_sort` 및 `parallel_buffered_sort` 알고리즘은 모두 비교 기반 알고리즘입니다. 즉, 값으로 요소를 비교합니다. `parallel_sort` 알고리즘은 추가 메모리 요구 사항이 없으며 범용 정렬에 적합합니다. 알고리즘 `parallel_buffered_sort` 은 보다 `parallel_sort`더 나은 성능을 수행할 수 있지만 O (N) 공간이 필요 합니다.
 
@@ -290,16 +290,16 @@ PPL은 [동시성::p arallel_sort](reference/concurrency-namespace-functions.md#
 
 - 청크 크기 선택적 `_Chunk_size` 인수는 전체 정렬을 보다 작은 작업 단위로 나눌 때 병렬에서 연속 정렬로 알고리즘이 전환되는 시기를 지정합니다. 예를 들어, 512를 제공하는 경우 작업 단위가 512개 이하의 요소를 포함하는 경우 알고리즘이 연속 구현으로 전환됩니다. 연속 구현은 데이터를 병렬로 처리하는 데 필요한 오버헤드를 제거하기 때문에 전체 성능을 향상시킬 수 있습니다.
 
-사용 가능한 컴퓨팅 리소스가 많거나 비교 함수나 해시 함수가 비교적 많은 양의 작업을 수행할 때도 작은 데이터 집합을 병렬로 정렬하는 것은 가치가 없습니다. [Std:: sort](../../standard-library/algorithm-functions.md#sort) 함수를 사용 하 여 작은 데이터 집합을 정렬할 수 있습니다. (`parallel_sort` `sort` `parallel_buffered_sort` 및 `parallel_buffered_sort` 는 데이터 집합 보다 큰 청크 크기를 지정할 때를 호출 하지만는 O (N) 공간을 할당 해야 하므로 잠금 경합 또는 메모리 할당으로 인해 추가 시간이 소요 될 수 있습니다.)
+사용 가능한 컴퓨팅 리소스가 많거나 비교 함수나 해시 함수가 비교적 많은 양의 작업을 수행할 때도 작은 데이터 세트을 병렬로 정렬하는 것은 가치가 없습니다. [Std:: sort](../../standard-library/algorithm-functions.md#sort) 함수를 사용 하 여 작은 데이터 집합을 정렬할 수 있습니다. (`parallel_sort` `sort` `parallel_buffered_sort` 및 `parallel_buffered_sort` 는 데이터 집합 보다 큰 청크 크기를 지정할 때를 호출 하지만는 O (N) 공간을 할당 해야 하므로 잠금 경합 또는 메모리 할당으로 인해 추가 시간이 소요 될 수 있습니다.)
 
-메모리를 보존해야 하거나 메모리 할당자가 잠금 경합을 따르는 경우 `parallel_sort`를 사용하여 중간 크기의 데이터 집합을 정렬하십시오. `parallel_sort`추가 공간이 필요 하지 않습니다. 다른 알고리즘에는 O (N) 공간이 필요 합니다.
+메모리를 보존해야 하거나 메모리 할당자가 잠금 경합을 따르는 경우 `parallel_sort`를 사용하여 중간 크기의 데이터 세트을 정렬하십시오. `parallel_sort`추가 공간이 필요 하지 않습니다. 다른 알고리즘에는 O (N) 공간이 필요 합니다.
 
 를 `parallel_buffered_sort` 사용 하 여 중간 크기의 데이터 집합을 정렬 하 고 응용 프로그램이 추가 O (N) 공간 요구 사항을 충족 하는 경우를 사용 합니다. `parallel_buffered_sort`는 많은 계산이 필요한 비교 함수 또는 해시 함수나 많은 컴퓨팅 리소스가 있을 경우 특히 유용합니다.
 
 응용 `parallel_radixsort` 프로그램이 추가 O (N) 공간 요구 사항을 충족 하는 경우를 사용 하 여 많은 데이터 집합을 정렬 합니다. `parallel_radixsort`는 해당하는 비교 작업에 더 많은 계산이 필요하거나 두 작업 모두에 많은 계산이 필요할 경우 특히 유용합니다.
 
 > [!CAUTION]
->  좋은 해시 함수를 구현하려면 데이터 집합 범위와 데이터 집합의 각 요소가 해당하는 부호 없는 값으로 변형되는 방법을 알아야 합니다. 해시 연산은 부호 없는 값에 대해 작동하기 때문에 부호 없는 해시 값을 생성할 수 없는 경우 다른 정렬 전략을 고려해야 합니다.
+>  좋은 해시 함수를 구현하려면 데이터 세트 범위와 데이터 세트의 각 요소가 해당하는 부호 없는 값으로 변형되는 방법을 알아야 합니다. 해시 연산은 부호 없는 값에 대해 작동하기 때문에 부호 없는 해시 값을 생성할 수 없는 경우 다른 정렬 전략을 고려해야 합니다.
 
 다음 예제에서는 같은 큰 임의의 데이터 집합에 대한 `sort`, `parallel_sort`, `parallel_buffered_sort` 및 `parallel_radixsort`의 성능을 비교합니다.
 

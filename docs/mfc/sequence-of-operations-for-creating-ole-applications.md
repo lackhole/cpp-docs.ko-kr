@@ -1,5 +1,5 @@
 ---
-title: OLE 응용 프로그램을 만드는 작업 시퀀스
+title: OLE 애플리케이션을 만드는 작업 시퀀스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE applications [MFC], creating
@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62308188"
 ---
-# <a name="sequence-of-operations-for-creating-ole-applications"></a>OLE 응용 프로그램을 만드는 작업 시퀀스
+# <a name="sequence-of-operations-for-creating-ole-applications"></a>OLE 애플리케이션을 만드는 작업 시퀀스
 
 다음 표에서 OLE 연결과 응용 프로그램을 만드는 사용자의 역할 및 프레임 워크의 역할을 보여 줍니다. 이러한 하는 데 단계의 순서를 대신 사용할 수 있는 옵션을 나타냅니다.
 

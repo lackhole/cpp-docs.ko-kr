@@ -93,7 +93,7 @@ Outlook 표시줄의 예 참조는 [OutlookDemo 샘플: MFC OutlookDemo 응용 �
 
 ## <a name="implementing-the-outlook-bar"></a>Outlook 표시줄 구현
 
-응용 프로그램에서 `CMFCOutlookBar` 컨트롤을 사용하려면 다음 단계를 수행합니다.
+애플리케이션에서 `CMFCOutlookBar` 컨트롤을 사용하려면 다음 단계를 수행합니다.
 
 1. `CMFCOutlookBar` 개체를 주 프레임 창 클래스에 포함합니다.
 

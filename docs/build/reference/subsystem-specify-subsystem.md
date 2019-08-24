@@ -30,10 +30,10 @@ ms.locfileid: "62318247"
 ## <a name="arguments"></a>인수
 
 **BOOT_APPLICATION**<br/>
-Windows 부팅 환경에서 실행되는 응용 프로그램입니다. 부팅 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [에 대 한 BCD](/previous-versions/windows/desktop/bcd/about-bcd)합니다.
+Windows 부팅 환경에서 실행되는 애플리케이션입니다. 부팅 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [에 대 한 BCD](/previous-versions/windows/desktop/bcd/about-bcd)합니다.
 
 **CONSOLE**<br/>
-Win32 문자 모드 응용 프로그램입니다. 운영 체제는 콘솔 응용 프로그램에 콘솔을 제공합니다. 하는 경우 `main` 또는 `wmain` 네이티브 코드에 대해 정의 된 `int main(array<String ^> ^)` 관리 코드에 대해 정의 된 사용 하 여 완전히 응용 프로그램을 빌드 또는 `/clr:safe`, CONSOLE이 기본값입니다.
+Win32 문자 모드 응용 프로그램입니다. 운영 체제는 콘솔 애플리케이션에 콘솔을 제공합니다. 하는 경우 `main` 또는 `wmain` 네이티브 코드에 대해 정의 된 `int main(array<String ^> ^)` 관리 코드에 대해 정의 된 사용 하 여 완전히 응용 프로그램을 빌드 또는 `/clr:safe`, CONSOLE이 기본값입니다.
 
 **EFI_APPLICATION**<br/>
 **EFI_BOOT_SERVICE_DRIVER**<br/>

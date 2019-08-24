@@ -35,13 +35,13 @@ PPL(병렬 패턴 라이브러리)을 사용할 때 따라야 할 모범 사례�
 C++용 동시성 프레임워크인 동시성 런타임에 대해 소개합니다.
 
 [PPL(병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
-응용 프로그램에서 병렬 알고리즘과 같은 다양한 병렬 패턴을 사용하는 방법을 설명합니다.
+애플리케이션에서 병렬 알고리즘과 같은 다양한 병렬 패턴을 사용하는 방법을 설명합니다.
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-응용 프로그램에서 비동기 에이전트를 사용하는 방법을 설명합니다.
+애플리케이션에서 비동기 에이전트를 사용하는 방법을 설명합니다.
 
 [동기화 데이터 구조](../../parallel/concrt/synchronization-data-structures.md)<br/>
 동시성 런타임이 제공하는 다양한 동기화 기본 형식에 대해 설명합니다.
 
 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
-작업 스케줄러를 사용하여 응용 프로그램의 성능을 조정하는 방법을 설명합니다.
+작업 Scheduler를 사용하여 애플리케이션의 성능을 조정하는 방법을 설명합니다.

@@ -26,7 +26,7 @@ ms.locfileid: "62276837"
 
 ##  <a name="atlhimetrictopixel"></a>  AtlHiMetricToPixel
 
-개체의 HIMETRIC 단위 크기(각 단위는 0.01mm)를 화면 장치의 픽셀 크기로 변환합니다.
+개체의 HIMETRIC 단위 크기(각 단위는 0.01mm)를 화면 디바이스의 픽셀 크기로 변환합니다.
 
 ```
 extern void AtlHiMetricToPixel(
@@ -52,7 +52,7 @@ extern void AtlHiMetricToPixel(
 
 ##  <a name="atlpixeltohimetric"></a>  AtlPixelToHiMetric
 
-화면 장치에서 개체의 픽셀 크기를 HIMETRIC 단위의 크기(각 단위는 0.01mm)로 변환합니다.
+화면 디바이스에서 개체의 픽셀 크기를 HIMETRIC 단위의 크기(각 단위는 0.01mm)로 변환합니다.
 
 ```
 extern void AtlPixelToHiMetric(

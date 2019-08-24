@@ -27,7 +27,7 @@ ms.locfileid: "62305998"
 
 이 개체는 프레임워크의 내부 `WinMain` 구현에 의해 정적으로 생성되고 초기화됩니다. 파생 되어야 합니다 `CWinApp` 유용한 작업을 수행 하려면 (예외: MFC 확장명 Dll 사용 해야 합니다는 `CWinApp` 인스턴스-초기화 이루어집니다 `DllMain` 대신).
 
-하나의 `CWinApp` 개체는 문서 템플릿 목록을 소유합니다(`CPtrList`). 응용 프로그램당 하나 이상의 문서 템플릿이 있습니다. DocTemplates는 일반적으로 `CWinApp::InitInstance`에 있는 리소스 파일(즉, 문자열 배열)에서 로드됩니다.
+하나의 `CWinApp` 개체는 문서 템플릿 목록을 소유합니다(`CPtrList`). 애플리케이션당 하나 이상의 문서 템플릿이 있습니다. DocTemplates는 일반적으로 `CWinApp::InitInstance`에 있는 리소스 파일(즉, 문자열 배열)에서 로드됩니다.
 
 ```
 pTemplate = new CDocTemplate(IDR_MYDOCUMENT, ...);
@@ -35,13 +35,13 @@ pTemplate = new CDocTemplate(IDR_MYDOCUMENT, ...);
 AddDocTemplate(pTemplate);
 ```
 
-하나의 `CWinApp` 개체는 응용 프로그램에서 모든 프레임 창을 소유합니다. 응용 프로그램에 대 한 주 프레임 창에 저장 되어야 합니다 `CWinApp::m_pMainWnd`; 설정 하는 일반적으로 *m_pMainWnd* 에 `InitInstance` AppWizard를 사용 하지 않을 경우 구현 합니다. SDI(단일 문서 인터페이스)의 경우 기본 응용 프로그램 프레임 창뿐만 아니라 유일한 문서 프레임 창으로 작동하는 하나의 `CFrameWnd`입니다. MDI(다중 문서 인터페이스)의 경우에는 모든 자식 `CMDIFrameWnd`를 포함하는 기본 응용 프로그램 프레임 창으로 작동하는 MDI 프레임(`CFrameWnd` 클래스)입니다. 각 자식 창은 `CMDIChildWnd`(`CFrameWnd`에서 파생) 클래스에 속하며 잠재적으로 여러 문서 프레임 창 중 하나로 작동합니다.
+하나의 `CWinApp` 개체는 애플리케이션에서 모든 프레임 창을 소유합니다. 응용 프로그램에 대 한 주 프레임 창에 저장 되어야 합니다 `CWinApp::m_pMainWnd`; 설정 하는 일반적으로 *m_pMainWnd* 에 `InitInstance` AppWizard를 사용 하지 않을 경우 구현 합니다. SDI(단일 문서 인터페이스)의 경우 기본 애플리케이션 프레임 창뿐만 아니라 유일한 문서 프레임 창으로 작동하는 하나의 `CFrameWnd`입니다. MDI(다중 문서 인터페이스)의 경우에는 모든 자식 `CMDIFrameWnd`를 포함하는 기본 애플리케이션 프레임 창으로 작동하는 MDI 프레임(`CFrameWnd` 클래스)입니다. 각 자식 창은 `CMDIChildWnd`(`CFrameWnd`에서 파생) 클래스에 속하며 잠재적으로 여러 문서 프레임 창 중 하나로 작동합니다.
 
 ## <a name="doctemplates"></a>DocTemplates
 
-`CDocTemplate`는 문서의 생성자 및 관리자입니다. 이 템플릿은 생성되는 문서를 소유합니다. 응용 프로그램에 아래에 설명된 리소스 기반 접근 방법이 사용될 경우 `CDocTemplate`에서 파생될 필요가 없습니다.
+`CDocTemplate`는 문서의 생성자 및 관리자입니다. 이 템플릿은 생성되는 문서를 소유합니다. 애플리케이션에 아래에 설명된 리소스 기반 접근 방법이 사용될 경우 `CDocTemplate`에서 파생될 필요가 없습니다.
 
-SDI 응용 프로그램의 경우 `CSingleDocTemplate` 클래스는 하나의 열린 문서를 추적합니다. MDI 응용 프로그램의 경우 `CMultiDocTemplate` 클래스는 해당 템플릿으로부터 생성된 모든 현재 열린 문서의 목록(`CPtrList`)을 유지합니다. `CDocTemplate::AddDocument` 및 `CDocTemplate::RemoveDocument`는 템플릿에서 문서를 추가 또는 제거하기 위한 가상 멤버 함수를 제공합니다. `CDocTemplate` 이의 friend `CDocument` 보호를 설정할 수 있습니다 `CDocument::m_pDocTemplate` 문서를 생성 한 doc 템플릿을 다시 가리키도록 후방 포인터입니다.
+SDI 애플리케이션의 경우 `CSingleDocTemplate` 클래스는 하나의 열린 문서를 추적합니다. MDI 애플리케이션의 경우 `CMultiDocTemplate` 클래스는 해당 템플릿으로부터 생성된 모든 현재 열린 문서의 목록(`CPtrList`)을 유지합니다. `CDocTemplate::AddDocument` 및 `CDocTemplate::RemoveDocument`는 템플릿에서 문서를 추가 또는 제거하기 위한 가상 멤버 함수를 제공합니다. `CDocTemplate` 이의 friend `CDocument` 보호를 설정할 수 있습니다 `CDocument::m_pDocTemplate` 문서를 생성 한 doc 템플릿을 다시 가리키도록 후방 포인터입니다.
 
 `CWinApp`은 기본 `OnFileOpen` 구현을 처리하며, 이 구현은 다시 모든 doc 템플릿을 쿼리합니다. 이러한 구현에는 이미 열린 문서 조사 및 새 문서를 여는 데 사용할 형식 결정이 포함됩니다.
 

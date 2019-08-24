@@ -45,7 +45,7 @@ helpviewer_keywords:
 ms.assetid: 511427e1-73ca-4fd8-9ba1-ae9463557cb6
 ms.openlocfilehash: b257c4e95a99bfbc8042c5935638a70deac0ea7a
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62176163"
@@ -79,7 +79,7 @@ class CArrayRowset :
 |||
 |-|-|
 |[CArrayRowset](#carrayrowset)|생성자입니다.|
-|[스냅숏](#snapshot)|전체 행 집합을 메모리로 읽습니다.|
+|[스냅샷](#snapshot)|전체 행 집합을 메모리로 읽습니다.|
 
 ### <a name="operators"></a>연산자
 
@@ -110,7 +110,7 @@ CArrayRowset(int nMax = 100000);
 
 ## <a name="snapshot"></a> CArrayRowset::Snapshot
 
-전체 행 집합을 메모리로 읽어서 이에 대한 이미지 또는 스냅숏을 만듭니다.
+전체 행 집합을 메모리로 읽어서 이에 대한 이미지 또는 스냅샷을 만듭니다.
 
 ### <a name="syntax"></a>구문
 

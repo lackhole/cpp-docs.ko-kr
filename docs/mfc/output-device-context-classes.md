@@ -1,5 +1,5 @@
 ---
-title: 출력(장치 컨텍스트) 클래스
+title: 출력(디바이스 컨텍스트) 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - vc.classes.output
@@ -18,7 +18,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62410202"
 ---
-# <a name="output-device-context-classes"></a>출력(장치 컨텍스트) 클래스
+# <a name="output-device-context-classes"></a>출력(디바이스 컨텍스트) 클래스
 
 이러한 클래스는 다양 한 유형의 Windows에서 사용할 수 있는 장치 컨텍스트를 캡슐화합니다.
 

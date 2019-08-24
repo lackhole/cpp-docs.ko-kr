@@ -34,7 +34,7 @@ helpviewer_keywords:
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
 ms.openlocfilehash: 8b2a92fdefd965d4b87e0a9ed411cc1b5c89b8f9
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62390765"
@@ -60,7 +60,7 @@ class ATL_NO_VTABLE IRowsetChangeImpl : public BaseInterface
 *T*<br/>
 파생 된 클래스 `IRowsetChangeImpl`합니다.
 
-*저장소*<br/>
+*스토리지*<br/>
 사용자 레코드입니다.
 
 *BaseInterface*<br/>

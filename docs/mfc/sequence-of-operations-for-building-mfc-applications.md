@@ -1,5 +1,5 @@
 ---
-title: MFC 응용 프로그램을 빌드하는 작업 시퀀스
+title: MFC 애플리케이션을 빌드하는 작업 시퀀스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [MFC], developing
@@ -11,7 +11,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62308448"
 ---
-# <a name="sequence-of-operations-for-building-mfc-applications"></a>MFC 응용 프로그램을 빌드하는 작업 시퀀스
+# <a name="sequence-of-operations-for-building-mfc-applications"></a>MFC 애플리케이션을 빌드하는 작업 시퀀스
 
 다음 표에서 MFC 응용 프로그램을 개발 하는 경우 일반적으로 따르는 일반적인 순서를 보여 줍니다.
 

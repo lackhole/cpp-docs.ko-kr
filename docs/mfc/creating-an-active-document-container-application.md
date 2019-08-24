@@ -1,5 +1,5 @@
 ---
-title: 액티브 문서 컨테이너 응용 프로그램 만들기
+title: 액티브 문서 컨테이너 애플리케이션 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
 - active documents [MFC], containers
@@ -15,11 +15,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62152945"
 ---
-# <a name="creating-an-active-document-container-application"></a>액티브 문서 컨테이너 응용 프로그램 만들기
+# <a name="creating-an-active-document-container-application"></a>액티브 문서 컨테이너 애플리케이션 만들기
 
-액티브 문서 컨테이너 응용 프로그램을 만드는 가장 간단하고 가장 권장되는 방법은 MFC 응용 프로그램 마법사를 사용해서 MFC EXE 컨테이너 응용 프로그램을 만들고 액티브 문서 포함을 지원하도록 응용 프로그램을 수정하는 방법입니다.
+액티브 문서 컨테이너 애플리케이션을 만드는 가장 간단하고 가장 권장되는 방법은 MFC 애플리케이션 마법사를 사용해서 MFC EXE 컨테이너 애플리케이션을 만들고 액티브 문서 포함을 지원하도록 애플리케이션을 수정하는 방법입니다.
 
-#### <a name="to-create-an-active-document-container-application"></a>액티브 문서 컨테이너 응용 프로그램을 만들려면
+#### <a name="to-create-an-active-document-container-application"></a>액티브 문서 컨테이너 애플리케이션을 만들려면
 
 1. **파일** 메뉴에서 클릭 **프로젝트**에서 **새** 하위 메뉴.
 
@@ -37,7 +37,7 @@ ms.locfileid: "62152945"
 
 1. **마침**을 클릭합니다.
 
-1. MFC 응용 프로그램 마법사에서 응용 프로그램 생성이 완료되면 솔루션 탐색기를 사용해서 다음 파일을 엽니다.
+1. MFC 애플리케이션 마법사에서 애플리케이션 생성이 완료되면 솔루션 탐색기를 사용해서 다음 파일을 엽니다.
 
    - *MyProjview.cpp*
 
@@ -59,7 +59,7 @@ ms.locfileid: "62152945"
 
    정적 멤버 함수 `COleDocObjectItem::OnPrint` 및 `COleDocObjectItem::OnPreparePrinting`은 이전 코드에 구현된 대로 향상된 이 인쇄 체계를 처리합니다.
 
-1. 사용자의 고유 구현을 추가하고 응용 프로그램을 빌드합니다.
+1. 사용자의 고유 구현을 추가하고 애플리케이션을 빌드합니다.
 
 ## <a name="see-also"></a>참고자료
 

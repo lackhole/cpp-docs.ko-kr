@@ -1,5 +1,5 @@
 ---
-title: 인터넷 클라이언트 응용 프로그램을 만들기 위한 MFC 클래스
+title: 인터넷 클라이언트 애플리케이션을 만들기 위한 MFC 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC, WinInet classes
@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62239225"
 ---
-# <a name="mfc-classes-for-creating-internet-client-applications"></a>인터넷 클라이언트 응용 프로그램을 만들기 위한 MFC 클래스
+# <a name="mfc-classes-for-creating-internet-client-applications"></a>인터넷 클라이언트 애플리케이션을 만들기 위한 MFC 클래스
 
 MFC는 인터넷 클라이언트 응용 프로그램을 작성 하기 위한 다음 클래스 및 전역 함수를 제공 합니다. 들여쓰기 된 들여쓰지 않은 상위 클래스에서 파생 되는 것을 나타냅니다. `CGopherFile` 및 `CHttpFile` 에서 파생 `CInternetFile`예를 들어 있습니다. 이러한 클래스 및 전역 함수 afx에서 선언 됩니다. 시간, 제외 하 고 `CFileFind`, AFX에 선언 된 합니다. 8.
 

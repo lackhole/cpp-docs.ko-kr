@@ -16,7 +16,7 @@ ms.locfileid: "62411671"
 ---
 # <a name="using-ctoolbarctrl"></a>CToolBarCtrl 사용
 
-도구 모음 컨트롤을 사용할 수 있습니다 ([CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)) 단추 및 선택적인 공간이 포함 된 컨트롤 창을 만들 수 있습니다. 도구 모음 컨트롤 창에 있는 각 단추는 사용자가 이를 선택할 때 명령 메시지를 부모 창에 보냅니다. 일반적으로 도구 모음에 있는 단추는 응용 프로그램의 메뉴 항목과 일치하며, 사용자가 응용 프로그램의 명령을 보다 직접적으로 사용할 수 있게 해줍니다.
+도구 모음 컨트롤을 사용할 수 있습니다 ([CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)) 단추 및 선택적인 공간이 포함 된 컨트롤 창을 만들 수 있습니다. 도구 모음 컨트롤 창에 있는 각 단추는 사용자가 이를 선택할 때 명령 메시지를 부모 창에 보냅니다. 일반적으로 도구 모음에 있는 단추는 애플리케이션의 메뉴 항목과 일치하며, 사용자가 애플리케이션의 명령을 보다 직접적으로 사용할 수 있게 해줍니다.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 

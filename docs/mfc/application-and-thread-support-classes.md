@@ -1,5 +1,5 @@
 ---
-title: 응용 프로그램 및 스레드 지원 클래스
+title: 애플리케이션 및 스레드 지원 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - vc.classes.support
@@ -18,7 +18,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62394678"
 ---
-# <a name="application-and-thread-support-classes"></a>응용 프로그램 및 스레드 지원 클래스
+# <a name="application-and-thread-support-classes"></a>애플리케이션 및 스레드 지원 클래스
 
 각 응용 프로그램에 하나의 응용 프로그램 개체 이 개체는 실행 중인 프로그램의 다른 개체를 조정 하 고에서 파생 된 `CWinApp`합니다.
 

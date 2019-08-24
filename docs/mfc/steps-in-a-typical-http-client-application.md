@@ -1,5 +1,5 @@
 ---
-title: 일반적인 HTTP 클라이언트 응용 프로그램의 단계
+title: 일반적인 HTTP 클라이언트 애플리케이션의 단계
 ms.date: 11/04/2016
 helpviewer_keywords:
 - HTTP client applications [MFC]
@@ -16,7 +16,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62306966"
 ---
-# <a name="steps-in-a-typical-http-client-application"></a>일반적인 HTTP 클라이언트 응용 프로그램의 단계
+# <a name="steps-in-a-typical-http-client-application"></a>일반적인 HTTP 클라이언트 애플리케이션의 단계
 
 다음 표에서 일반적인 HTTP 클라이언트 응용 프로그램에서 수행할 수 있는 단계를 보여줍니다.
 

@@ -1,5 +1,5 @@
 ---
-title: MFC 응용 프로그램 작성
+title: MFC 애플리케이션 작성
 ms.date: 09/12/2018
 helpviewer_keywords:
 - Internet applications [MFC], MFC
@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62399462"
 ---
-# <a name="writing-mfc-applications"></a>MFC 응용 프로그램 작성
+# <a name="writing-mfc-applications"></a>MFC 애플리케이션 작성
 
 이 문서에서는 응용 프로그램을 개발 하는 초기 단계를 설명 합니다. 첫째, 어떤 종류의 응용 프로그램을 작성 하는 결정 해야 합니다. 다양 한 선택 항목에서 설명한 [응용 프로그램 디자인 선택](../mfc/application-design-choices.md)합니다. 응용 프로그램이 됩니다.
 

@@ -1,5 +1,5 @@
 ---
-title: ATL 응용 프로그램 재배포
+title: ATL 애플리케이션 재배포
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL, redistributing
@@ -14,11 +14,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62362415"
 ---
-# <a name="redistributing-an-atl-application"></a>ATL 응용 프로그램 재배포
+# <a name="redistributing-an-atl-application"></a>ATL 애플리케이션 재배포
 
 Visual Studio 2012부터 ATL(액티브 템플릿 라이브러리)은 헤더 전용 라이브러리입니다. ATL 프로젝트에는 ATL에 동적 링크 옵션이 없습니다. 재배포 가능한 ATL 라이브러리가 필요하지 않습니다.
 
-실행 가능한 ATL 응용 프로그램을 재배포하는 경우 다음 명령을 실행하여 .exe 파일(및 그 안의 모든 컨트롤)을 등록해야 합니다.
+실행 가능한 ATL 애플리케이션을 재배포하는 경우 다음 명령을 실행하여 .exe 파일(및 그 안의 모든 컨트롤)을 등록해야 합니다.
 
 ```
 filename /regserver
@@ -34,7 +34,7 @@ MinSize를 사용하면 출력 파일의 크기가 최소화되지만 **다중 �
 
 MinDependency 대상에 대한 ATL 또는 OLE DB 템플릿 프로젝트를 빌드하는 경우에는 프로그램 이미지가 커지는 단점은 있지만 대상 컴퓨터에 ATL100.dll을 설치하고 등록하지 않아도 됩니다.
 
-실행 가능한 ATL 응용 프로그램을 재배포하는 경우 다음 명령을 실행하여 .exe 파일(및 그 안의 모든 컨트롤)을 등록해야 합니다.
+실행 가능한 ATL 애플리케이션을 재배포하는 경우 다음 명령을 실행하여 .exe 파일(및 그 안의 모든 컨트롤)을 등록해야 합니다.
 
 ```
 filename /regserver

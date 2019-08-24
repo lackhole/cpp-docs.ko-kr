@@ -1,5 +1,5 @@
 ---
-title: 저장소 클래스(C++)
+title: 스토리지 클래스(C++)
 ms.date: 11/04/2016
 f1_keywords:
 - thread_local_cpp
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
 ms.openlocfilehash: 92435b2bab670dd366f26c981443e98e4a4e3c29
 ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65221991"
 ---
-# <a name="storage-classes-c"></a>저장소 클래스(C++)
+# <a name="storage-classes-c"></a>스토리지 클래스(C++)
 
-A *저장소 클래스가* 컨텍스트에서 C++ 변수를 선언 하는 개체의 수명, 링크 및 메모리 위치를 제어 하는 형식 지정자입니다. 주어진 개체에는 저장소 클래스가 하나만 있을 수 있습니다. 블록 내에서 정의 된 변수를 사용 하 여 달리 지정 하지 않으면 자동 저장소에는 **extern**를 **정적**, 또는 `thread_local` 지정자입니다. 자동 개체 및 변수는 링크가 없으며 블록 외부의 코드에 표시되지 않습니다.
+A *저장소 클래스가* 컨텍스트에서 C++ 변수를 선언 하는 개체의 수명, 링크 및 메모리 위치를 제어 하는 형식 지정자입니다. 주어진 개체에는 스토리지 클래스가 하나만 있을 수 있습니다. 블록 내에서 정의 된 변수를 사용 하 여 달리 지정 하지 않으면 자동 저장소에는 **extern**를 **정적**, 또는 `thread_local` 지정자입니다. 자동 개체 및 변수는 링크가 없으며 블록 외부의 코드에 표시되지 않습니다.
 
 **참고**
 
@@ -159,7 +159,7 @@ var != value
 var == value
 ```
 
-C++11부터 정적 지역 변수 초기화는 스레드로부터 안전이 보장됩니다. 이 기능 이라고 *매직 정적 이름*합니다. 그러나 다중 스레드 응용 프로그램에서는 모든 후속 할당을 동기화해야 합니다. 스레드로부터 안전한 정적 초기화 기능을 사용 하 여 사용할 수는 [/zc: threadsafeinit-](../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md) CRT에 의존 하지 않도록 하는 플래그입니다.
+C++11부터 정적 지역 변수 초기화는 스레드로부터 안전이 보장됩니다. 이 기능 이라고 *매직 정적 이름*합니다. 그러나 다중 스레드 애플리케이션에서는 모든 후속 할당을 동기화해야 합니다. 스레드로부터 안전한 정적 초기화 기능을 사용 하 여 사용할 수는 [/zc: threadsafeinit-](../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md) CRT에 의존 하지 않도록 하는 플래그입니다.
 
 ## <a name="extern"></a> extern
 
@@ -213,7 +213,7 @@ void DoSomething()
 
 - 적용할 수 있습니다 `thread_local` 데이터 선언 및 정의에 `thread_local` 함수 선언 또는 정의에 사용할 수 없습니다.
 
-- 정적 저장 기간이 있는 데이터 항목에만 `thread_local`을 지정할 수 있습니다. 여기에 전역 데이터 개체 (둘 다 **정적** 하 고 **extern**), 지역 정적 개체 및 클래스의 정적 데이터 멤버입니다. 모든 로컬 변수 선언 `thread_local` 없는 다른 저장소 클래스를 제공 하는 경우 암시적으로 정적 블록 범위에서 다시 말해 `thread_local` 동일 `thread_local static`합니다.
+- 정적 스토리지 기간이 있는 데이터 항목에만 `thread_local`을 지정할 수 있습니다. 여기에 전역 데이터 개체 (둘 다 **정적** 하 고 **extern**), 지역 정적 개체 및 클래스의 정적 데이터 멤버입니다. 모든 로컬 변수 선언 `thread_local` 없는 다른 저장소 클래스를 제공 하는 경우 암시적으로 정적 블록 범위에서 다시 말해 `thread_local` 동일 `thread_local static`합니다.
 
 - 스레드 로컬 개체의 선언과 정의가 같은 파일에서 발생하는지, 아니면 별도의 파일에서 발생하는지와 관계없이 해당 선언과 정의 둘 다에 대해 `thread_local`을 지정해야 합니다.
 

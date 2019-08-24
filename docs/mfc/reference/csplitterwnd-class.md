@@ -1030,7 +1030,7 @@ virtual void OnDraw(CDC* pDC);
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-장치 컨텍스트에 대한 포인터입니다.
+디바이스 컨텍스트에 대한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 

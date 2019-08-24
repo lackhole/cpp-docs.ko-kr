@@ -1,5 +1,5 @@
 ---
-title: /GT(파이버 안전 스레드 로컬 저장소 지원)
+title: /GT(파이버 안전 스레드 로컬 스토리지 지원)
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCCLCompilerTool.EnableFiberSafeOptimizations
@@ -19,7 +19,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62291810"
 ---
-# <a name="gt-support-fiber-safe-thread-local-storage"></a>/GT(파이버 안전 스레드 로컬 저장소 지원)
+# <a name="gt-support-fiber-safe-thread-local-storage"></a>/GT(파이버 안전 스레드 로컬 스토리지 지원)
 
 정적 스레드 로컬 저장소에 할당된 데이터 즉, `__declspec(thread)`로 할당된 데이터에 대하여 파이버 안전성을 지원합니다.
 

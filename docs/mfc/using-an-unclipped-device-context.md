@@ -1,5 +1,5 @@
 ---
-title: 잘리지 않는 장치 컨텍스트 사용
+title: 잘리지 않는 디바이스 컨텍스트 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], unclipped device context
@@ -11,7 +11,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62411814"
 ---
-# <a name="using-an-unclipped-device-context"></a>잘리지 않는 장치 컨텍스트 사용
+# <a name="using-an-unclipped-device-context"></a>잘리지 않는 디바이스 컨텍스트 사용
 
 인 경우 반드시 특정 컨트롤의 클라이언트 사각형 외부 그리지 않는 호출을 사용 하지 않도록 설정 하 여 작지만 감지 속도 향상을 실현할 수 있습니다 `IntersectClipRect` 하 여 만들어진 `COleControl`합니다. 이 작업을 수행 하려면 제거 합니다 *clipPaintDC* 반환한 플래그 집합과에서 플래그 [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags)합니다. 예를 들어:
 

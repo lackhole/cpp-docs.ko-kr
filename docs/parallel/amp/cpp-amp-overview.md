@@ -186,7 +186,7 @@ std::cout << "The number of rows is " << a.extent[1] << "\n";
 std::cout << "The depth is " << a.extent[0] << "\n";
 ```
 
-## <a name="moving-data-to-the-accelerator-array-and-arrayview"></a>액셀러레이터로 데이터 이동: array 및 array_view
+## <a name="moving-data-to-the-accelerator-array-and-array_view"></a>액셀러레이터로 데이터 이동: array 및 array_view
 
 액셀러레이터로 데이터를 이동 하는 데 사용 되는 두 개의 데이터 컨테이너가 런타임 라이브러리에 정의 됩니다. 이들은 합니다 [array 클래스](../../parallel/amp/reference/array-class.md) 하며 [array_view 클래스](../../parallel/amp/reference/array-view-class.md)합니다. `array` 클래스는 개체가 생성 될 때 데이터의 전체 복사본을 만드는 컨테이너 클래스입니다. `array_view` 클래스는 커널 함수가 데이터에 액세스 하는 경우 데이터를 복사 하는 래퍼 클래스입니다. 원본 장치에서 데이터에 필요한 데이터 다시 복사 됩니다.
 
@@ -217,11 +217,11 @@ for (int i = 0; i < 5; i++)
 }
 ```
 
-### <a name="arrayview-class"></a>array_view 클래스
+### <a name="array_view-class"></a>array_view 클래스
 
 합니다 `array_view` 와 거의 동일한 멤버에는 `array` 클래스를 갖지만 내부 동작은 같지 않습니다. 데이터를 전달 합니다 `array_view` 생성자와 마찬가지로 GPU에 복제 되지 않습니다는 `array` 생성자입니다. 대신 커널 함수를 실행할 때 데이터가 액셀러레이터에 복사 됩니다. 따라서 두 개 만들면 `array_view` 동일한 데이터를 사용 하는 개체 모두 `array_view` 동일한 메모리 공간에 개체가 참조 합니다. 이렇게 하면 다중 스레드 액세스를 동기화 해야 합니다. 사용 하는 주요 이점은 `array_view` 클래스는 필요한 경우에 데이터를 이동 합니다.
 
-### <a name="comparison-of-array-and-arrayview"></a>array와 array_view 비교
+### <a name="comparison-of-array-and-array_view"></a>array와 array_view 비교
 
 다음 표에서 유사성을 요약 하 고 간의 차이점은 `array` 및 `array_view` 클래스입니다.
 
@@ -230,11 +230,11 @@ for (int i = 0; i < 5; i++)
 |순위가 확인 된 경우|컴파일 타임|컴파일 타임|
 |범위가 확인 된 경우|런타임 시.|런타임 시.|
 |모양|사각형입니다.|사각형입니다.|
-|데이터 저장소|데이터 컨테이너입니다.|데이터 래퍼입니다.|
+|데이터 스토리지|데이터 컨테이너입니다.|데이터 래퍼입니다.|
 |복사|정의에 명시적이 고 깊은 복사본입니다.|커널 함수로 액세스 하는 경우 암시적 복사본입니다.|
 |데이터 검색|배열 데이터를 복사 하 여 CPU 스레드의 개체로 다시 합니다.|에 대 한 직접 액세스 합니다 `array_view` 개체를 [array_view:: synchronize 메서드](reference/array-view-class.md#synchronize) 원래 컨테이너의 데이터에 액세스 하려면.|
 
-### <a name="shared-memory-with-array-and-arrayview"></a>공유 메모리 배열 및 array_view
+### <a name="shared-memory-with-array-and-array_view"></a>공유 메모리 배열 및 array_view
 
 공유 메모리는 메모리를 CPU와 가속기에서 액세스할 수입니다. 공유 메모리를 사용 하 여 제거 하거나 CPU와 액셀러레이터 간 데이터 복사 오버 헤드를 크게 줄여 줍니다. 메모리를 공유 되지만 CPU와 액셀러레이터를 모두에서 동시에 액세스할 수 없습니다 및 하면 정의 되지 않은 동작입니다.
 
@@ -282,7 +282,7 @@ int main()
 }
 ```
 
-## <a name="executing-code-over-data-parallelforeach"></a>데이터에 대해 코드 실행: parallel_for_each
+## <a name="executing-code-over-data-parallel_for_each"></a>데이터에 대해 코드 실행: parallel_for_each
 
 합니다 [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) 데이터에 대해 액셀러레이터에서 실행 하려는 코드를 정의 하는 함수는 `array` 또는 `array_view` 개체입니다. 이 항목의 소개에서 다음 코드를 살펴보세요.
 

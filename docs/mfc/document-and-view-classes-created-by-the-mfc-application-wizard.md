@@ -1,5 +1,5 @@
 ---
-title: MFC 응용 프로그램 마법사에서 만든 문서 및 뷰 클래스
+title: MFC 애플리케이션 마법사에서 만든 문서 및 뷰 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - document classes [MFC]
@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62408029"
 ---
-# <a name="document-and-view-classes-created-by-the-mfc-application-wizard"></a>MFC 응용 프로그램 마법사에서 만든 문서 및 뷰 클래스
+# <a name="document-and-view-classes-created-by-the-mfc-application-wizard"></a>MFC 애플리케이션 마법사에서 만든 문서 및 뷰 클래스
 
 MFC 응용 프로그램 마법사를 사용 하면 시작할 프로그램 개발의 기본 문서 및 뷰 클래스를 만들어 합니다. 할 수 있습니다 [명령 및 메시지를 이러한 클래스에 매핑하고](../mfc/reference/mapping-messages-to-functions.md) 시각적 개체를 사용 하 고 C++ 해당 멤버 함수를 작성 하는 소스 코드 편집기입니다.
 

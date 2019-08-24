@@ -11,7 +11,7 @@ ms.locfileid: "62295243"
 ---
 # <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABI 규칙 개요
 
-Windows on ARM 프로세서용으로 컴파일된 코드의 ABI(응용 프로그램 이진 인터페이스)는 표준 ARM EABI를 기반으로 합니다. 이 문서에서는 Windows on ARM과 표준 간의 주요 차이점에 대해 주로 설명합니다. 이 문서에서는 ARM32 ABI를 설명합니다. ARM64 ABI에 대 한 자세한 내용은 [ARM64 ABI 개요 규칙](arm64-windows-abi-conventions.md)합니다. 표준 ARM EABI에 대 한 자세한 내용은 참조 하세요. [이진 인터페이스 ABI (응용 프로그램) ARM 아키텍처용](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html) (외부 링크).
+Windows on ARM 프로세서용으로 컴파일된 코드의 ABI(애플리케이션 이진 인터페이스)는 표준 ARM EABI를 기반으로 합니다. 이 문서에서는 Windows on ARM과 표준 간의 주요 차이점에 대해 주로 설명합니다. 이 문서에서는 ARM32 ABI를 설명합니다. ARM64 ABI에 대 한 자세한 내용은 [ARM64 ABI 개요 규칙](arm64-windows-abi-conventions.md)합니다. 표준 ARM EABI에 대 한 자세한 내용은 참조 하세요. [이진 인터페이스 ABI (응용 프로그램) ARM 아키텍처용](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html) (외부 링크).
 
 ## <a name="base-requirements"></a>기본 요구 사항
 
@@ -23,7 +23,7 @@ Windows on ARM은 항상 ARMv7 아키텍처에서 실행된다고 가정합니�
 
 ## <a name="endianness"></a>endian
 
-Windows on ARM은 little endian 모드에서 실행됩니다. MSVC 컴파일러와 Windows 런타임 항상 little endian 데이터를 기대합니다. ARM ISA(명령 집합 아키텍처)의 SETEND 명령은 사용자 모드 코드도 현재 endian을 변경하도록 허용하지만 이 작업은 응용 프로그램에 위험하므로 수행하지 않는 것이 좋습니다. big endian 모드에서 예외가 생성되면 동작을 예측할 수 없으며 사용자 모드에서 응용 프로그램 오류가 발생하거나 커널 모드에서 버그 검사가 수행될 수 있습니다.
+Windows on ARM은 little endian 모드에서 실행됩니다. MSVC 컴파일러와 Windows 런타임 항상 little endian 데이터를 기대합니다. ARM ISA(명령 집합 아키텍처)의 SETEND 명령은 사용자 모드 코드도 현재 endian을 변경하도록 허용하지만 이 작업은 애플리케이션에 위험하므로 수행하지 않는 것이 좋습니다. big endian 모드에서 예외가 생성되면 동작을 예측할 수 없으며 사용자 모드에서 애플리케이션 오류가 발생하거나 커널 모드에서 버그 검사가 수행될 수 있습니다.
 
 ## <a name="alignment"></a>맞춤
 
@@ -39,7 +39,7 @@ Windows에서는 ARM 하드웨어가 불일치하는 정수 액세스를 투명�
 
 ## <a name="instruction-set"></a>명령 집합
 
-Windows on ARM의 명령 집합은 Thumb-2로 엄격하게 제한됩니다. 이 플랫폼에서 실행되는 모든 코드는 항상 Thumb 모드에서 시작되고 유지되어야 합니다. 레거시 ARM 명령 집합으로의 전환 시도는 성공할 수도 있지만, 예외나 인터럽트가 발생하면 사용자 모드에서 응용 프로그램 오류가 생성되거나 커널 모드에서 버그 검사가 수행될 수 있습니다.
+Windows on ARM의 명령 집합은 Thumb-2로 엄격하게 제한됩니다. 이 플랫폼에서 실행되는 모든 코드는 항상 Thumb 모드에서 시작되고 유지되어야 합니다. 레거시 ARM 명령 집합으로의 전환 시도는 성공할 수도 있지만, 예외나 인터럽트가 발생하면 사용자 모드에서 애플리케이션 오류가 생성되거나 커널 모드에서 버그 검사가 수행될 수 있습니다.
 
 이 요구 사항을 적용하는 경우 모든 코드 포인터에 낮은 비트를 설정해야 한다는 단점이 있습니다. 낮은 비트를 설정해야 하는 이유는 BLX 또는 BX를 통해 코드 포인터를 및 분기할 때 프로세서가 Thumb 모드에 유지되고 대상 코드를 32비트 ARM 명령으로 실행하지 않도록 하기 위해서입니다.
 
@@ -199,7 +199,7 @@ Windows의 기본 커널 모드 스택은 3개 페이지(12KB)입니다. 커널 
 
 ## <a name="cc-specifics"></a>C /C++ 세부 정보
 
-열거형은 포함된 값 하나 이상에 64비트 2배 워드 저장소가 필요하지 않으면 32비트 정수 형식입니다. 이러한 저장소가 필요한 경우 열거형 수준이 64비트 정수 형식으로 올라갑니다.
+열거형은 포함된 값 하나 이상에 64비트 2배 워드 스토리지가 필요하지 않으면 32비트 정수 형식입니다. 이러한 저장소가 필요한 경우 열거형 수준이 64비트 정수 형식으로 올라갑니다.
 
 다른 플랫폼과의 호환성을 유지하기 위해 `wchar_t`는 `unsigned short`와 동일하게 정의됩니다.
 

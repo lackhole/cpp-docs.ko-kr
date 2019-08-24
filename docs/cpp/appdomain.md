@@ -16,19 +16,19 @@ ms.locfileid: "62184497"
 ---
 # <a name="appdomain"></a>appdomain
 
-관리되는 응용 프로그램의 각 응용 프로그램 도메인에 특정 전역 변수 또는 정적 멤버 변수의 자체 복사본이 포함되어야 하도록 지정합니다. 참조 [응용 프로그램 도메인 및 시각적 개체 C++ ](../dotnet/application-domains-and-visual-cpp.md) 에 대 한 자세한 내용은 합니다.
+관리되는 애플리케이션의 각 애플리케이션 도메인에 특정 전역 변수 또는 정적 멤버 변수의 자체 복사본이 포함되어야 하도록 지정합니다. 참조 [응용 프로그램 도메인 및 시각적 개체 C++ ](../dotnet/application-domains-and-visual-cpp.md) 에 대 한 자세한 내용은 합니다.
 
-모든 응용 프로그램 도메인에는 appdomain별 변수의 자체 복사본이 있습니다. 어셈블리를 응용 프로그램 도메인으로 로드하면 appdomain 변수의 생성자가 실행되고 응용 프로그램 도메인을 언로드하면 소멸자가 실행됩니다.
+모든 애플리케이션 도메인에는 appdomain별 변수의 자체 복사본이 있습니다. 어셈블리를 애플리케이션 도메인으로 로드하면 appdomain 변수의 생성자가 실행되고 애플리케이션 도메인을 언로드하면 소멸자가 실행됩니다.
 
-공용 언어 런타임에서 프로세스 내의 모든 응용 프로그램 도메인이 전역 변수를 공유하도록 하려면 `__declspec(process)` 한정자를 사용합니다. `__declspec(process)` 기본적으로 적용 되 [/clr](../build/reference/clr-common-language-runtime-compilation.md)합니다. **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다.
+공용 언어 런타임에서 프로세스 내의 모든 애플리케이션 도메인이 전역 변수를 공유하도록 하려면 `__declspec(process)` 한정자를 사용합니다. `__declspec(process)` 기본적으로 적용 되 [/clr](../build/reference/clr-common-language-runtime-compilation.md)합니다. **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다.
 
 `__declspec(appdomain)` 유효만 경우 중 하나는 **/clr** 컴파일러 옵션이 사용 됩니다. 전역 변수, 정적 멤버 변수 또는 정적 로컬 변수만 `__declspec(appdomain)`로 표시할 수 있습니다. 관리되는 형식의 정적 멤버는 항상 이 동작을 수행하므로 `__declspec(appdomain)`를 적용하면 오류가 발생합니다.
 
-사용 하 여 `__declspec(appdomain)` 를 사용 하 여 비슷합니다 [스레드 로컬 저장소 (TLS)](../parallel/thread-local-storage-tls.md)합니다. 스레드에는 응용 프로그램 도메인과 마찬가지로 자체 저장소가 있습니다. `__declspec(appdomain)`를 사용하면 전역 변수가 이 응용 프로그램용으로 작성된 각 응용 프로그램 도메인에 자체 저장소를 포함할 수 있습니다.
+사용 하 여 `__declspec(appdomain)` 를 사용 하 여 비슷합니다 [스레드 로컬 저장소 (TLS)](../parallel/thread-local-storage-tls.md)합니다. 스레드에는 애플리케이션 도메인과 마찬가지로 자체 스토리지가 있습니다. `__declspec(appdomain)`를 사용하면 전역 변수가 이 애플리케이션용으로 작성된 각 애플리케이션 도메인에 자체 스토리지를 포함할 수 있습니다.
 
 프로세스별 및 appdomain 별 변수;의 사용에 제한이 있습니다. 참조 [프로세스](../cpp/process.md) 자세한 내용은 합니다.
 
-예를 들어 프로그램 시작 시에는 모든 프로세스별 변수가 초기화된 후에 모든 appdomain 변수가 초기화됩니다. 따라서 프로세스별 변수는 초기화 중에 응용 프로그램 도메인별 변수의 값을 사용할 수 없습니다. 따라서 appdomain별 변수와 프로세스별 변수를 조합하여 사용(할당)하는 것은 적절하지 않습니다.
+예를 들어 프로그램 시작 시에는 모든 프로세스별 변수가 초기화된 후에 모든 appdomain 변수가 초기화됩니다. 따라서 프로세스별 변수는 초기화 중에 애플리케이션 도메인별 변수의 값을 사용할 수 없습니다. 따라서 appdomain별 변수와 프로세스별 변수를 조합하여 사용(할당)하는 것은 적절하지 않습니다.
 
 특정 응용 프로그램 도메인에서 함수를 호출 하는 방법에 대 한 자세한 내용은 [call_in_appdomain 함수](../dotnet/call-in-appdomain-function.md)합니다.
 

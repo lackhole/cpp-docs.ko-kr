@@ -22,11 +22,11 @@ ms.locfileid: "62223068"
 
 여기서 모든 유효한 포인터 선언 자를 사용할 수 있습니다 *declarator*합니다. 단순한 포인터 선언자 구문은 다음과 같습니다.
 
-> __\*__ \[*cv-qualifiers*] *identifier* \[**=** *expression*]
+> __\*__ \[*cv-qualifiers*] *identifier* \[ **=** *expression*]
 
 1. 선언 지정자:
 
-   - 선택적 저장소 클래스 지정자. 자세한 내용은 [지정자](../cpp/specifiers.md)합니다.
+   - 선택적 스토리지 클래스 지정자. 자세한 내용은 [지정자](../cpp/specifiers.md)합니다.
 
    - 선택적인 **상수** 또는 **volatile** 키워드가 가리키는 개체의 형식에 적용 합니다.
 

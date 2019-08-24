@@ -322,7 +322,7 @@ std::wstring get_description() const;
 
 ### <a name="return-value"></a>반환 값
 
-`accelerator` 장치에 대한 간단한 설명입니다.
+`accelerator` 디바이스에 대한 간단한 설명입니다.
 
 ##  <a name="get_device_path"></a> get_device_path
 

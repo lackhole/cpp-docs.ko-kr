@@ -105,12 +105,12 @@ class Module<OutOfProc> : public Module<InProc>;
 [Module::GetModule](#getmodule)                         | 모듈의 인스턴스를 만듭니다.
 [Module::GetObjectCount](#getobjectcount)               | 이 모듈에서 관리되는 개체 수를 가져옵니다.
 [Module::IncrementObjectCount](#incrementobjectcount)   | 모듈에서 추적하는 개체 수를 늘립니다.
-[Module::RegisterCOMObject](#registercomobject)         | 다른 응용 프로그램이 COM 개체에 연결할 수 있도록 이 개체를 하나 이상 등록합니다.
+[Module::RegisterCOMObject](#registercomobject)         | 다른 애플리케이션이 COM 개체에 연결할 수 있도록 이 개체를 하나 이상 등록합니다.
 [Module::RegisterObjects](#registerobjects)             | 다른 응용 프로그램에 연결할 수 있도록 COM 또는 Windows 런타임 개체를 등록 합니다.
 [Module::RegisterWinRTObject](#registerwinrtobject)     | 다른 응용 프로그램에 연결할 수 있도록 하나 이상의 Windows 런타임 개체를 등록 합니다.
 [Module::Terminate](#terminate)                         | 모듈에 의해 인스턴스화되는 모든 팩터리가 종료됩니다.
-[Module::UnregisterCOMObject](#unregistercomobject)     | 다른 응용 프로그램에서 COM 개체에 연결할 수 없도록 하나 이상의 COM 개체의 등록을 취소합니다.
-[Module::UnregisterObjects](#unregisterobjects)         | 다른 응용 프로그램에서 지정된 모듈의 개체에 연결할 수 없도록 이 개체의 등록을 취소합니다.
+[Module::UnregisterCOMObject](#unregistercomobject)     | 다른 애플리케이션에서 COM 개체에 연결할 수 없도록 하나 이상의 COM 개체의 등록을 취소합니다.
+[Module::UnregisterObjects](#unregisterobjects)         | 다른 애플리케이션에서 지정된 모듈의 개체에 연결할 수 없도록 이 개체의 등록을 취소합니다.
 [Module::UnregisterWinRTObject](#unregisterwinrtobject) | 다른 응용 프로그램과 연결할 수 있도록 하나 이상의 Windows 런타임 개체를 등록 취소 합니다.
 
 ### <a name="protected-methods"></a>Protected 메서드
@@ -320,7 +320,7 @@ volatile long objectCount_;
 
 ## <a name="registercomobject"></a>Module::RegisterCOMObject
 
-다른 응용 프로그램이 COM 개체에 연결할 수 있도록 이 개체를 하나 이상 등록합니다.
+다른 애플리케이션이 COM 개체에 연결할 수 있도록 이 개체를 하나 이상 등록합니다.
 
 ```cpp
 WRL_NOTHROW virtual HRESULT RegisterCOMObject(
@@ -431,7 +431,7 @@ void Terminate();
 
 ## <a name="unregistercomobject"></a>Module::UnregisterCOMObject
 
-다른 응용 프로그램에서 COM 개체에 연결할 수 없도록 하나 이상의 COM 개체의 등록을 취소합니다.
+다른 애플리케이션에서 COM 개체에 연결할 수 없도록 하나 이상의 COM 개체의 등록을 취소합니다.
 
 ```cpp
 virtual HRESULT UnregisterCOMObject(
@@ -457,7 +457,7 @@ virtual HRESULT UnregisterCOMObject(
 
 ## <a name="unregisterobjects"></a>Module::UnregisterObjects
 
-다른 응용 프로그램에서 지정된 모듈의 개체에 연결할 수 없도록 이 개체의 등록을 취소합니다.
+다른 애플리케이션에서 지정된 모듈의 개체에 연결할 수 없도록 이 개체의 등록을 취소합니다.
 
 ```cpp
 HRESULT UnregisterObjects(

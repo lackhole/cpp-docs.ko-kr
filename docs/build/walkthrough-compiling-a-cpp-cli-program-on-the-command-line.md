@@ -4,7 +4,7 @@ ms.date: 04/23/2019
 ms.assetid: cef41c88-faf9-439d-8423-25aa3f5674dd
 ms.openlocfilehash: 8a5c5659367350a80725b365ef9c431bbec209d1
 ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/29/2019
 ms.locfileid: "64877449"
@@ -21,11 +21,11 @@ C++ 언어의 기본적인 사항을 알고 있습니다.
 
 ## <a name="compiling-a-ccli-program"></a>C++/CLI 프로그램 컴파일
 
-다음 단계는 .NET Framework 클래스를 사용하는 C++/CLI 콘솔 응용 프로그램을 컴파일하는 방법을 보여줍니다.
+다음 단계는 .NET Framework 클래스를 사용하는 C++/CLI 콘솔 애플리케이션을 컴파일하는 방법을 보여줍니다.
 
 컴파일하려면 C++ /cli를 사용 해야 CLI를 [/clr](reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션입니다. MSVC 컴파일러는 MSIL 코드를 포함 하는.exe 파일을 생성-MSIL과 네이티브 코드를 혼합 하거나-필요한.NET Framework 라이브러리에 연결 합니다.
 
-### <a name="to-compile-a-ccli-application-on-the-command-line"></a>명령줄에서 C++/CLI 응용 프로그램을 컴파일하려면
+### <a name="to-compile-a-ccli-application-on-the-command-line"></a>명령줄에서 C++/CLI 애플리케이션을 컴파일하려면
 
 1. 엽니다는 **개발자 명령 프롬프트** 창입니다. 특정 지침은 [개발자 명령 프롬프트 창을 열려면](building-on-the-command-line.md#developer_command_prompt)합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: OpenMP C 및 C++ 응용 프로그램 프로그램 인터페이스
+title: OpenMP C 및 C++ 애플리케이션 프로그램 인터페이스
 ms.date: 03/20/2019
 ms.assetid: efec8865-a755-452f-838f-ddbfecab44d4
 ms.openlocfilehash: dc3ab50059f16abc2cc6148395ef6982e5f85449
@@ -9,7 +9,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62362701"
 ---
-# <a name="openmp-c-and-c-application-program-interface"></a>OpenMP C 및 C++ 응용 프로그램 프로그램 인터페이스
+# <a name="openmp-c-and-c-application-program-interface"></a>OpenMP C 및 C++ 애플리케이션 프로그램 인터페이스
 
 OpenMP C에 설명 하 고 C++ OpenMP 아키텍처 심사 위원회에서 버전 2.0 사양에 설명 된 대로 API.
 

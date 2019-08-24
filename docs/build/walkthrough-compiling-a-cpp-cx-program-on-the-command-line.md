@@ -4,7 +4,7 @@ ms.date: 04/23/2019
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
 ms.openlocfilehash: cbf5a48de3c029e36fc6daabe2b3f0db55dc173c
 ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/29/2019
 ms.locfileid: "64877173"
@@ -29,7 +29,7 @@ C++ 언어의 기본적인 사항을 알고 있습니다.
 
 컴파일하려면 C++ /cli를 사용 해야 CX, 합니다 [/ZW](reference/zw-windows-runtime-compilation.md) 컴파일러 옵션. MSVC 컴파일러를 Windows 런타임을 대상으로 하 여 필요한 라이브러리를 링크는.exe 파일을 생성 합니다.
 
-#### <a name="to-compile-a-ccx-application-on-the-command-line"></a>명령줄에서 C++/CX 응용 프로그램을 컴파일하려면
+#### <a name="to-compile-a-ccx-application-on-the-command-line"></a>명령줄에서 C++/CX 애플리케이션을 컴파일하려면
 
 1. 엽니다는 **개발자 명령 프롬프트** 창입니다. (에 **시작** 창을 열려면 **앱**합니다. 열기는 **Visual Studio Tools** Visual Studio 버전 아래의 폴더를 선택 합니다 **개발자 명령 프롬프트** 바로 가기.) 개발자 명령 프롬프트 창을 여는 방법에 대 한 자세한 내용은 참조 하세요. [명령줄에서 MSVC 도구 집합을 사용 하 여](building-on-the-command-line.md)입니다.
 

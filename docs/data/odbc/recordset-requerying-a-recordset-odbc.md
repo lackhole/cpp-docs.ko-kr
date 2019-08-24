@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 4ebc3b5b-5b91-4f51-a967-245223c6b8e1
 ms.openlocfilehash: 7edc1c04da617f96165b25a47ce169b266ae0003
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62397707"
@@ -38,7 +38,7 @@ ms.locfileid: "62397707"
 > [!TIP]
 >  쿼리 속도가 호출 하는 경우 더 빠른 경우가 훨씬 `Requery` 호출 하는 매개 변수 값을 변경 하 여 `Open` 다시 합니다.
 
-##  <a name="_core_requerying_dynasets_vs.._snapshots"></a> 다이너셋 vs를 다시 쿼리 합니다. 스냅숏
+##  <a name="_core_requerying_dynasets_vs.._snapshots"></a> 다이너셋 vs를 다시 쿼리 합니다. 스냅샷
 
 다이너셋 동적 최신 데이터를 사용 하 여 레코드 집합을 제공 되며, 때문에 다른 사용자의 추가 반영 하도록 하려는 경우에 종종 다이너셋 requery 하려고 합니다. 스냅숏, 반면에 있으므로 아주 유용 보고서를 준비 하 고 합계를 계산 하는 등의 작업을 수행할 때 안전 하 게 정적 해당 내용에 사용할 수 있습니다. 여전히도 스냅숏을 다시 쿼리 하려는 경우가 있습니다. 다중 사용자 환경에서 다른 사용자 데이터베이스를 변경 하는 대로 스냅숏 데이터 데이터 원본과 동기화를 손실 될 수 있습니다.
 

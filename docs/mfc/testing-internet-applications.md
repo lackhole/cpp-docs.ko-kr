@@ -1,5 +1,5 @@
 ---
-title: 인터넷 응용 프로그램 테스트
+title: 인터넷 애플리케이션 테스트
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Web applications [MFC], testing
@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62306472"
 ---
-# <a name="testing-internet-applications"></a>인터넷 응용 프로그램 테스트
+# <a name="testing-internet-applications"></a>인터넷 애플리케이션 테스트
 
 특히 웹 서버에서 실행 중인 응용 프로그램에 대 한 인터넷에서 고유한 몇 가지 테스트 방법이 있습니다. 초기 테스트 아마도 할 것 테스트 서버에 연결 하는 단일 사용자 클라이언트를 사용 하 여 합니다. 이 코드를 디버깅에 유용 합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: CWinApp 및 MFC 응용 프로그램 마법사
+title: CWinApp 및 MFC 애플리케이션 마법사
 ms.date: 11/04/2016
 f1_keywords:
 - CWinApp
@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62241585"
 ---
-# <a name="cwinapp-and-the-mfc-application-wizard"></a>CWinApp 및 MFC 응용 프로그램 마법사
+# <a name="cwinapp-and-the-mfc-application-wizard"></a>CWinApp 및 MFC 애플리케이션 마법사
 
 MFC 응용 프로그램 마법사에 응용 프로그램 클래스에서 파생 된 선언 기초 응용 프로그램을 만들 때 [CWinApp](../mfc/reference/cwinapp-class.md)합니다. MFC 응용 프로그램 마법사에는 다음 항목을 포함 하는 구현 파일을 생성 합니다.
 

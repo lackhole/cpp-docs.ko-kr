@@ -1,5 +1,5 @@
 ---
-title: 웹 브라우저 스타일 MFC 응용 프로그램 만들기
+title: 웹 브라우저 스타일 MFC 애플리케이션 만들기
 ms.date: 06/25/2018
 f1_keywords:
 - vc.appwiz.mfcweb.project
@@ -16,7 +16,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 06/04/2019
 ms.locfileid: "66504775"
 ---
-# <a name="creating-a-web-browser-style-mfc-application"></a>웹 브라우저 스타일 MFC 응용 프로그램 만들기
+# <a name="creating-a-web-browser-style-mfc-application"></a>웹 브라우저 스타일 MFC 애플리케이션 만들기
 
 네트워크 및 로컬 파일 시스템에서 웹 브라우저 스타일 응용 프로그램 폴더 뿐 아니라 (예: HTML 또는 액티브 문서)는 인터넷 또는 인트라넷에서 정보에 액세스할 수 있습니다. 응용 프로그램의 뷰 클래스를 파생 시켜 [CHtmlView](../../mfc/reference/chtmlview-class.md), 효과적으로 WebBrowser 컨트롤을 사용 하 여 뷰를 제공 하 여 응용 프로그램 웹 브라우저를 확인 합니다.
 

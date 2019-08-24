@@ -336,7 +336,7 @@ class CMFCTasksPane : public CDockablePane
 
 - 개별 항목은 사용자가 항목을 클릭할 때 실행되는 명령 ID와 연결될 수 있습니다. 클릭이 발생 하면 WM_COMMAND 메시지가 작업 창 컨트롤의 소유자에 게 전송 됩니다.
 
-응용 프로그램에서 `CMFCTasksPane` 컨트롤을 사용하려면 다음 단계를 수행합니다.
+애플리케이션에서 `CMFCTasksPane` 컨트롤을 사용하려면 다음 단계를 수행합니다.
 
 1. `CMFCTasksPane` 개체를 주 프레임 창 클래스에 포함합니다.
 

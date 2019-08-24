@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 667f2a77-6d1f-4b41-bee8-05e67324fab8
 ms.openlocfilehash: 59a1af8a7eb73207f84ddf2194d5fe9e77d7d46a
 ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65221969"
@@ -28,7 +28,7 @@ ms.locfileid: "65221969"
 
 ## <a name="remarks"></a>설명
 
-TLS(스레드 로컬 저장소)는 다중 스레드 프로세스의 각 스레드가 스레드 데이터를 위한 저장소를 할당하는 메커니즘입니다. 표준 다중 스레드 프로그램에서 데이터는 지정된 프로세스의 모든 스레드에서 공유되지만 스레드 로컬 스토리지는 스레드별 데이터를 할당하기 위한 메커니즘입니다. 에 대 한 전체 설명은 스레드를 참조 하세요 [다중 스레딩](../parallel/multithreading-support-for-older-code-visual-cpp.md)합니다.
+TLS(스레드 로컬 스토리지)는 다중 스레드 프로세스의 각 스레드가 스레드 데이터를 위한 스토리지를 할당하는 메커니즘입니다. 표준 다중 스레드 프로그램에서 데이터는 지정된 프로세스의 모든 스레드에서 공유되지만 스레드 로컬 스토리지는 스레드별 데이터를 할당하기 위한 메커니즘입니다. 에 대 한 전체 설명은 스레드를 참조 하세요 [다중 스레딩](../parallel/multithreading-support-for-older-code-visual-cpp.md)합니다.
 
 스레드 로컬 변수의 선언을 사용 해야 합니다 [확장 된 특성 구문은](../cpp/declspec.md) 하며 **__declspec** 키워드를 사용 합니다 **스레드** 키워드. 예를 들어, 다음 코드는 정수 스레드 로컬 변수를 선언한 다음 값으로 초기화합니다.
 

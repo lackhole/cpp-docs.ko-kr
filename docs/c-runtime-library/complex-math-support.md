@@ -42,51 +42,51 @@ math.h 헤더는 [_cabs](../c-runtime-library/reference/cabs.md) 함수에 사�
 
 |함수|설명|
 |-|-|
-|[cacos, cacosf, cacosl](../c-runtime-library/reference/cacos-cacosf-cacosl.md)|복소수의 복합 아크코사인 계산|
-|[casin, casinf, casinl](../c-runtime-library/reference/casin-casinf-casinl.md)|복소수의 복합 아크사인 계산|
-|[catan, catanf, catanl](../c-runtime-library/reference/catan-catanf-catanl.md)|복소수의 복합 아크탄젠트 계산|
-|[ccos, ccosf, ccosl](../c-runtime-library/reference/ccos-ccosf-ccosl.md)|복소수의 복합 코사인 계산|
-|[csin, csinf, csinl](../c-runtime-library/reference/csin-csinf-csinl.md)|복소수의 복합 사인 계산|
-|[ctan, ctanf, ctanl](../c-runtime-library/reference/ctan-ctanf-ctanl.md)|복소수의 복합 탄젠트 계산|
+|[cacos, cacosf, cacosl](../c-runtime-library/reference/cacos-cacosf-cacosl.md)|복소수의 복합 아크코사인 컴퓨팅|
+|[casin, casinf, casinl](../c-runtime-library/reference/casin-casinf-casinl.md)|복소수의 복합 아크사인 컴퓨팅|
+|[catan, catanf, catanl](../c-runtime-library/reference/catan-catanf-catanl.md)|복소수의 복합 아크탄젠트 컴퓨팅|
+|[ccos, ccosf, ccosl](../c-runtime-library/reference/ccos-ccosf-ccosl.md)|복소수의 복합 코사인 컴퓨팅|
+|[csin, csinf, csinl](../c-runtime-library/reference/csin-csinf-csinl.md)|복소수의 복합 사인 컴퓨팅|
+|[ctan, ctanf, ctanl](../c-runtime-library/reference/ctan-ctanf-ctanl.md)|복소수의 복합 탄젠트 컴퓨팅|
 
 ## <a name="hyperbolic-functions"></a>쌍곡선 함수
 
 |함수|설명|
 |-|-|
-|[cacosh, cacoshf, cacoshl](../c-runtime-library/reference/cacosh-cacoshf-cacoshl.md)|복소수의 복합 쌍곡선 아크코사인 계산|
-|[casinh, casinhf, casinhl](../c-runtime-library/reference/casinh-casinhf-casinhl.md)|복소수의 복합 쌍곡선 아크사인 계산|
-|[catanh, catanhf, catanhl](../c-runtime-library/reference/catanh-catanhf-catanhl.md)|복소수의 복합 쌍곡선 아크탄젠트 계산|
-|[ccosh, ccoshf, ccoshl](../c-runtime-library/reference/ccosh-ccoshf-ccoshl.md)|복소수의 복합 쌍곡선 코사인 계산|
-|[csinh, csinhf, csinhl](../c-runtime-library/reference/csinh-csinhf-csinhl.md)|복소수의 복합 쌍곡선 사인 계산|
-|[ctanh, ctanhf, ctanhl](../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md)|복소수의 복합 쌍곡선 탄젠트 계산|
+|[cacosh, cacoshf, cacoshl](../c-runtime-library/reference/cacosh-cacoshf-cacoshl.md)|복소수의 복합 쌍곡선 아크코사인 컴퓨팅|
+|[casinh, casinhf, casinhl](../c-runtime-library/reference/casinh-casinhf-casinhl.md)|복소수의 복합 쌍곡선 아크사인 컴퓨팅|
+|[catanh, catanhf, catanhl](../c-runtime-library/reference/catanh-catanhf-catanhl.md)|복소수의 복합 쌍곡선 아크탄젠트 컴퓨팅|
+|[ccosh, ccoshf, ccoshl](../c-runtime-library/reference/ccosh-ccoshf-ccoshl.md)|복소수의 복합 쌍곡선 코사인 컴퓨팅|
+|[csinh, csinhf, csinhl](../c-runtime-library/reference/csinh-csinhf-csinhl.md)|복소수의 복합 쌍곡선 사인 컴퓨팅|
+|[ctanh, ctanhf, ctanhl](../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md)|복소수의 복합 쌍곡선 탄젠트 컴퓨팅|
 
 ## <a name="exponential-and-logarithmic-functions"></a>지수 및 로그 함수
 
 |함수|설명|
 |-|-|
-|[cexp, cexpf, cexpl](../c-runtime-library/reference/cexp-cexpf-cexpl.md)|복소수의 밑이 *e*인 복합 지수 계산|
-|[clog, clogf, clogl](../c-runtime-library/reference/clog-clogf-clogl.md)|복소수의 복합 자연 로그 계산(밑이 *e*)|
-|[clog10, clog10f, clog10l](../c-runtime-library/reference/clog10-clog10f-clog10l.md)|복소수의 밑이 10인 복합 로그 계산|
+|[cexp, cexpf, cexpl](../c-runtime-library/reference/cexp-cexpf-cexpl.md)|복소수의 밑이 *e*인 복합 지수 컴퓨팅|
+|[clog, clogf, clogl](../c-runtime-library/reference/clog-clogf-clogl.md)|복소수의 복합 자연 로그 컴퓨팅(밑이 *e*)|
+|[clog10, clog10f, clog10l](../c-runtime-library/reference/clog10-clog10f-clog10l.md)|복소수의 밑이 10인 복합 로그 컴퓨팅|
 
 ## <a name="power-and-absolute-value-functions"></a>거듭제곱 및 절대값 함수
 
 |함수|설명|
 |-|-|
-|[cabs, cabsf, cabsl](../c-runtime-library/reference/cabs-cabsf-cabsl.md)|복소수의 복합 절대값(기준, 계수 또는 자릿수라고도 함) 계산|
-|[cpow, cpowf, cpowl](../c-runtime-library/reference/cpow-cpowf-cpowl.md)|복합 거듭제곱 함수 x<sup>y</sup> 계산|
-|[csqrt, csqrtf, csqrtl](../c-runtime-library/reference/csqrt-csqrtf-csqrtl.md)|복소수의 복합 제곱근 계산|
+|[cabs, cabsf, cabsl](../c-runtime-library/reference/cabs-cabsf-cabsl.md)|복소수의 복합 절대값(기준, 계수 또는 자릿수라고도 함) 컴퓨팅|
+|[cpow, cpowf, cpowl](../c-runtime-library/reference/cpow-cpowf-cpowl.md)|복합 거듭제곱 함수 x<sup>y</sup> 컴퓨팅|
+|[csqrt, csqrtf, csqrtl](../c-runtime-library/reference/csqrt-csqrtf-csqrtl.md)|복소수의 복합 제곱근 컴퓨팅|
 
 ## <a name="manipulation-functions"></a>조작 함수
 
 |함수|설명|
 |-|-|
 |[_Cbuild, _FCbuild, _LCbuild](../c-runtime-library/reference/cbuild-fcbuild-lcbuild.md)|실수 및 허수부에서 복소수 생성|
-|[carg, cargf, cargl](../c-runtime-library/reference/carg-cargf-cargl.md)|복소수의 인수(위상각이라고도 함) 계산|
-|[cimag, cimagf, cimagl](../c-runtime-library/reference/cimag-cimagf-cimagl.md)|복소수의 허수부 계산|
-|[conj, conjf, conjl](../c-runtime-library/reference/conj-conjf-conjl.md)|복소수의 켤레 복소수 계산|
-|[cproj, cprojf, cprojl](../c-runtime-library/reference/cproj-cprojf-cprojl.md)|리만 구(Reimann sphere)에서 복소수의 사영 계산|
-|[creal, crealf, creall](../c-runtime-library/reference/creal-crealf-creall.md)|복소수의 실수부 계산|
-|[norm, normf, norml](../c-runtime-library/reference/norm-normf-norml1.md)|복소수의 제곱 자릿수 계산|
+|[carg, cargf, cargl](../c-runtime-library/reference/carg-cargf-cargl.md)|복소수의 인수(위상각이라고도 함) 컴퓨팅|
+|[cimag, cimagf, cimagl](../c-runtime-library/reference/cimag-cimagf-cimagl.md)|복소수의 허수부 컴퓨팅|
+|[conj, conjf, conjl](../c-runtime-library/reference/conj-conjf-conjl.md)|복소수의 켤레 복소수 컴퓨팅|
+|[cproj, cprojf, cprojl](../c-runtime-library/reference/cproj-cprojf-cprojl.md)|리만 구(Reimann sphere)에서 복소수의 사영 컴퓨팅|
+|[creal, crealf, creall](../c-runtime-library/reference/creal-crealf-creall.md)|복소수의 실수부 컴퓨팅|
+|[norm, normf, norml](../c-runtime-library/reference/norm-normf-norml1.md)|복소수의 제곱 자릿수 컴퓨팅|
 
 ## <a name="operation-functions"></a>연산 함수
 

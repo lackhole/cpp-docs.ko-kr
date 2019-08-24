@@ -29,7 +29,7 @@ Microsoft 전용 키워드 중 대다수는 선언자를 변경하여 파생 형
 |-------------|-------------|---------------------------------|
 |[__based](based-grammar.md)|뒤에 오는 이름은 선언에 포함된 32비트 기준으로의 32비트 옵셋을 선언합니다.|예|
 |[__cdecl](cdecl.md)|뒤에 오는 이름은 C의 명명 규칙과 호출 규칙을 사용합니다.|예|
-|[__declspec](declspec.md)|뒤에 오는 이름은 Microsoft 전용 저장소 클래스 속성을 지정합니다.|아니요|
+|[__declspec](declspec.md)|뒤에 오는 이름이 Microsoft 전용 스토리지 클래스 특성을 지정합니다.|아니요|
 |[__fastcall](fastcall.md)|뒤에 오는 이름은 인수 전달을 위해 스택 대신에 레지스트(사용할 수 있다면)를 사용할 수 있는 함수를 선언합니다.|예|
 |[__restrict](extension-restrict.md)|__declspec([restrict](restrict.md))과 비슷하지만 변수를 사용합니다.|아니요|
 |[__stdcall](stdcall.md)|뒤에 오는 이름은 표준 호출 규칙을 준수하는 함수를 지정합니다.|예|

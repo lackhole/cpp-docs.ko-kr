@@ -95,7 +95,7 @@ ms.locfileid: "68448451"
 ---
 # <a name="multimap-class"></a>multimap 클래스
 
-C++ 표준 라이브러리 multimap 클래스는 각 요소가 데이터 값과 정렬 키를 갖고 있는 쌍인 컬렉션에서 데이터의 저장 및 검색에 사용됩니다. 키 값은 고유할 필요가 없으며 데이터를 자동으로 정렬하는 데 사용됩니다. multimap 요소의 값은 연관된 키 값을 제외하고 직접적으로 변경할 수 있습니다. 대신, 이전 요소와 관련된 키 값을 삭제하고 새 요소와 연결된 새 키 값을 삽입해야 합니다.
+C++ 표준 라이브러리 multimap 클래스는 각 요소가 데이터 값과 정렬 키를 갖고 있는 쌍인 컬렉션에서 데이터의 스토리지 및 검색에 사용됩니다. 키 값은 고유할 필요가 없으며 데이터를 자동으로 정렬하는 데 사용됩니다. multimap 요소의 값은 연관된 키 값을 제외하고 직접적으로 변경할 수 있습니다. 대신, 이전 요소와 관련된 키 값을 삭제하고 새 요소와 연결된 새 키 값을 삽입해야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -304,7 +304,7 @@ const_iterator cbegin() const;
 
 `cbegin` 반환 값을 사용하여 범위의 요소를 수정할 수 없습니다.
 
-`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cbegin()`
+`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다. `cbegin()`
 
 ```cpp
 auto i1 = Container.begin();
@@ -330,7 +330,7 @@ const_iterator cend() const;
 
 `cend`는 반복기가 범위 끝을 통과했는지 여부를 테스트하는 데 사용됩니다.
 
-`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cend()`
+`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다. `cend()`
 
 ```cpp
 auto i1 = Container.end();
@@ -676,7 +676,7 @@ typedef typename allocator_type::difference_type difference_type;
 
 ### <a name="remarks"></a>설명
 
-`difference_type`은 컨테이너의 반복기를 빼거나 더할 때 반환되는 형식입니다. 는 `difference_type` 일반적으로 `first` 및 `first`  반복기사이의[first,last)범위내요소수를나타내는데사용됩니다.에는가가리키는요소와까지의요소범위가포함`last`됩니다.  포함 하지 않습니다 .가 `last`가리키는 요소입니다.
+`difference_type`은 컨테이너의 반복기를 빼거나 더할 때 반환되는 형식입니다. 는 `difference_type` 일반적으로 `first` 및 `first` 반복기사이의[first,last)범위내요소수를나타내는데사용됩니다.에는가가리키는요소와까지의요소범위가포함`last`됩니다. 포함 하지 않습니다 .가 `last`가리키는 요소입니다.
 
 입력 반복기 요구 사항을 충족하는 모든 반복기(set 등의 가역 컨테이너에서 지원하는 양방향 반복기 클래스 포함)에 대해 `difference_type`을 사용할 수는 있지만, 반복기 간의 빼기는 vector와 같은 임의 액세스 컨테이너가 제공하는 임의 액세스 반복기를 통해서만 지원됩니다.
 

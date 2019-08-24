@@ -18,7 +18,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62388373"
 ---
-# <a name="running-a-c-clr-application-on-a-previous-runtime-version"></a>이전 버전의 런타임에서 C++ /clr 응용 프로그램 실행
+# <a name="running-a-c-clr-application-on-a-previous-runtime-version"></a>이전 버전의 런타임에서 C++ /clr 애플리케이션 실행
 
 별도로 지정하지 않는 한, C++ .NET Framework 애플리케이션은 컴파일러가 애플리케이션을 빌드하는 데 사용하는 CLR(공용 언어 런타임) 버전에서 실행되도록 빌드됩니다. 그러나 특정 버전의 런타임용으로 빌드된 .exe 애플리케이션은 필요한 기능을 제공하는 다른 버전에서 실행될 수 있습니다.
 
