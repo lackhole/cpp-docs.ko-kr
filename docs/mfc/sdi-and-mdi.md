@@ -24,7 +24,7 @@ SDI 응용 프로그램은 한 번에 하나의 열려 있는 문서 프레임 �
 > [!NOTE]
 >  Windows 95 이상에서는 응용 프로그램은 일반적으로 SDI 있으므로 운영 체제는 "문서 중심" 보기를 채택 했습니다.
 
-자세한 내용은 [문서, 뷰 및 프레임 워크](../mfc/documents-views-and-the-framework.md)합니다.
+자세한 내용은 [문서, 뷰 및 프레임워크](../mfc/documents-views-and-the-framework.md)를 참조합니다.
 
 ## <a name="see-also"></a>참고자료
 
