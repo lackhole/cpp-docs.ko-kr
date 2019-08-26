@@ -17,7 +17,7 @@ ms.locfileid: "62297088"
 ---
 # <a name="overridable-cwinapp-member-functions"></a>재정의 가능한 CWinApp 멤버 함수
 
-[CWinApp](../mfc/reference/cwinapp-class.md)은 몇가지 주요 재정의 가능한 멤버함수를 제공합니다. (`CWinApp`은 `CWinApp`이 파생되는 [CWinThread](../mfc/reference/cwinthread-class.md) 클래스에서 이러한 맴버를 재정의 합니다.):
+[CWinApp](../mfc/reference/cwinapp-class.md)은 몇 가지 주요 재정의 가능한 멤버 함수를 제공합니다(`CWinApp`은 `CWinApp`이 파생되는 [CWinThread](../mfc/reference/cwinthread-class.md) 클래스의 이러한 맴버를 재정의합니다).
 
 - [InitInstance](../mfc/initinstance-member-function.md)
 
@@ -27,7 +27,7 @@ ms.locfileid: "62297088"
 
 - [OnIdle](../mfc/onidle-member-function.md)
 
-재정의해야하는 유일한 `CWinApp` 멤버함수는 `InitInstance`입니다.
+재정의해야 하는 유일한 `CWinApp` 멤버 함수는 `InitInstance`입니다.
 
 ## <a name="see-also"></a>참고자료
 
