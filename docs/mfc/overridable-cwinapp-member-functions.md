@@ -1,5 +1,5 @@
 ---
-title: 재정의 가능 CWinApp 멤버 함수
+title: 재정의 가능한 CWinApp 멤버 함수
 ms.date: 11/04/2016
 f1_keywords:
 - CWinApp
@@ -15,9 +15,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62297088"
 ---
-# <a name="overridable-cwinapp-member-functions"></a>재정의 가능 CWinApp 멤버 함수
+# <a name="overridable-cwinapp-member-functions"></a>재정의 가능한 CWinApp 멤버 함수
 
-[CWinApp](../mfc/reference/cwinapp-class.md) 몇 가지 키 재정의 가능한 멤버 함수를 제공 (`CWinApp` 클래스에서 이러한 멤버를 재정의 [CWinThread](../mfc/reference/cwinthread-class.md), 올 `CWinApp` 파생):
+[CWinApp](../mfc/reference/cwinapp-class.md)은 몇 가지 주요 재정의 가능한 멤버 함수를 제공합니다(`CWinApp`은 `CWinApp`이 파생되는 [CWinThread](../mfc/reference/cwinthread-class.md) 클래스의 이러한 맴버를 재정의합니다).
 
 - [InitInstance](../mfc/initinstance-member-function.md)
 
