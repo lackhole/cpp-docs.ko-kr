@@ -17,7 +17,7 @@ ms.locfileid: "62241585"
 ---
 # <a name="cwinapp-and-the-mfc-application-wizard"></a>CWinApp 및 MFC 응용 프로그램 마법사
 
-응용 프로그램의 기초를 만들 때 MFC 응용 프로그램 마법사는 [CWinApp](../mfc/reference/cwinapp-class.md)에서 파생된 응용 프로그램 클래스를 선언합니다. MFC 응용 프로그램 마법사는 다음 항목을 포함 하는 구현 파일도 생성 합니다.
+응용 프로그램의 기초를 만들 때 MFC 응용 프로그램 마법사는 [CWinApp](../mfc/reference/cwinapp-class.md)에서 파생된 응용 프로그램 클래스를 선언합니다. MFC 응용 프로그램 마법사는 다음 항목을 포함하는 구현 파일도 생성합니다.
 
 - 응용 프로그램 클래스에 대한 메시지 맵입니다.
 
@@ -27,9 +27,9 @@ ms.locfileid: "62241585"
 
 - `InitInstance` 멤버 함수의 표준 구현입니다.
 
-응용 프로그램 클래스는 주로 소스 파일과 프로젝트 헤더에 배치 됩니다. 생성된 클래스 및 파일의 이름은 MFC 응용 프로그램 마법사에서 제공한 프로젝트 이름을 기반으로 합니다. 이러한 클래스에 대한 코드를 보는 가장 쉬운 방법은 방법은 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)를 사용하는 것 입니다.
+응용 프로그램 클래스는 프로젝트 헤더와 main 소스 파일에 배치됩니다. 생성된 클래스 및 파일의 이름은 MFC 응용 프로그램 마법사에서 제공한 프로젝트 이름을 기반으로 합니다. 이러한 클래스에 대한 코드를 보는 가장 쉬운 방법은 방법은 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)를 사용하는 것입니다.
 
-제공된 표준 구현과 메시지 맵은 많은 목적에 적하바지만 필요에 따라 수정할 수 있습니다. 이러한 구현 중 가장 흥미로운 것은 `InitInstance` 멤버 함수입니다. 일반적으로 `InitInstance`의 기본 구현사항에 코드를 추가합니다.
+제공된 표준 구현과 메시지 맵은 많은 목적에 적합하지만 필요에 따라 수정할 수 있습니다. 이러한 구현 중 가장 흥미로운 것은 `InitInstance` 멤버 함수입니다. 일반적으로 `InitInstance`의 기본 구현 사항에 코드를 추가합니다.
 
 ## <a name="see-also"></a>참고자료
 
