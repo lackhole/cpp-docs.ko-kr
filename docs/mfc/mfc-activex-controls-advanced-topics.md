@@ -119,7 +119,7 @@ MFC 데이터베이스 클래스의 일반적인 개요를 참조 하세요 [MFC
 |CTL_E_FILENOTFOUND|파일이 없습니다.|
 |CTL_E_BADFILEMODE|파일 모드가 잘못되었습니다.|
 |CTL_E_FILEALREADYOPEN|파일이 이미 열려 있습니다.|
-|CTL_E_DEVICEIOERROR|장치 입/출력(I/O) 오류입니다.|
+|CTL_E_DEVICEIOERROR|디바이스 입/출력(I/O) 오류입니다.|
 |CTL_E_FILEALREADYEXISTS|파일이 이미 있습니다.|
 |CTL_E_BADRECORDLENGTH|레코드 길이가 잘못되었습니다.|
 |CTL_E_DISKFULL|디스크가 꽉 찼습니다.|

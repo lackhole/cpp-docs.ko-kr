@@ -16,7 +16,7 @@ ms.locfileid: "62180169"
 이 문서에서는 동시성 런타임을 사용 하는 방법에 대 한 스케줄러 인스턴스의 역할을 설명 합니다 [concurrency:: scheduler](../../parallel/concrt/reference/scheduler-class.md) 하 고 [concurrency:: currentscheduler](../../parallel/concrt/reference/currentscheduler-class.md) 클래스를 만들고 관리 스케줄러 인스턴스입니다. 스케줄러 인스턴스는 특정 유형의 워크 로드를 사용 하 여 명시적 일정 예약 정책을 연결 하려는 경우에 유용 합니다. 예를 들어 높은 스레드 우선 순위로 일부 작업을 실행하기 위한 스케줄러 인스턴스를 하나 만들고, 기본 스케줄러를 사용하여 보통 스레드 우선 순위로 다른 작업을 실행할 수 있습니다.
 
 > [!TIP]
->  동시성 런타임은 기본 스케줄러를 제공하므로 응용 프로그램에서 스케줄러를 만들 필요가 없습니다. 작업 Scheduler를 사용 하면 응용 프로그램의 성능을 미세 조정할 수 있습니다, 있기 때문에 시작 하는 것이 좋습니다 합니다 [PPL 병렬 패턴 라이브러리 ()](../../parallel/concrt/parallel-patterns-library-ppl.md) 또는 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 있다면 동시성 런타임으로 새입니다.
+>  동시성 런타임은 기본 스케줄러를 제공하므로 애플리케이션에서 스케줄러를 만들 필요가 없습니다. 작업 Scheduler를 사용 하면 응용 프로그램의 성능을 미세 조정할 수 있습니다, 있기 때문에 시작 하는 것이 좋습니다 합니다 [PPL 병렬 패턴 라이브러리 ()](../../parallel/concrt/parallel-patterns-library-ppl.md) 또는 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 있다면 동시성 런타임으로 새입니다.
 
 ##  <a name="top"></a> 섹션
 

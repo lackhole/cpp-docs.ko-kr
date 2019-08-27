@@ -1,7 +1,7 @@
 ---
 layout: HubPage
 title: Visual C++ 설명서
-description: C++를 사용하여 플랫폼과 디바이스용 응용 프로그램, 서비스 및 도구를 개발하는 방법을 알아봅니다.
+description: C++를 사용하여 플랫폼과 디바이스용 애플리케이션, 서비스 및 도구를 개발하는 방법을 알아봅니다.
 author: mikeblome
 ms.author: mblome
 ms.openlocfilehash: 5db891bd1ed7a51a623dadfd5cc4e40a081cf0e7

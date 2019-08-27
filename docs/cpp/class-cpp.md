@@ -38,7 +38,7 @@ class [ms-decl-spec] [tag [: base-list ]]
 **class** 키워드 입니다.
 
 *ms-decl-spec*<br/>
-선택적으로 사용할 수 있으며 저장소 클래스를 지정합니다. 자세한 내용은 [__declspec](../cpp/declspec.md) 키워드를 참조합니다.
+선택적 스토리지 클래스 지정입니다. 자세한 내용은 [__declspec](../cpp/declspec.md) 키워드를 참조합니다.
 
 *tag*<br/>
 클래스에 주어진 형식 이름입니다. 태그에는 클래스의 범위 내에서 예약어가 됩니다. 태그는 선택 사항입니다. 생략 하면 익명 클래스가 정의됩니다. 자세한 내용은 [익명 클래스 형식](../cpp/anonymous-class-types.md)을 참조합니다.

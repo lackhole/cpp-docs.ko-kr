@@ -1,5 +1,5 @@
 ---
-title: 응용 프로그램에서 속성 시트 사용
+title: 애플리케이션에서 속성 시트 사용
 ms.date: 11/04/2016
 helpviewer_keywords:
 - dialog templates [MFC], property sheets
@@ -18,7 +18,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62411528"
 ---
-# <a name="using-property-sheets-in-your-application"></a>응용 프로그램에서 속성 시트 사용
+# <a name="using-property-sheets-in-your-application"></a>애플리케이션에서 속성 시트 사용
 
 응용 프로그램에서 속성 시트를 사용 하려면 다음 단계를 수행 합니다.
 

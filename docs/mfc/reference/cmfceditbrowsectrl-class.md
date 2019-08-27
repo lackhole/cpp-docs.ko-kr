@@ -269,7 +269,7 @@ virtual void OnDrawBrowseButton(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-장치 컨텍스트에 대한 포인터입니다.
+디바이스 컨텍스트에 대한 포인터입니다.
 
 *사각형*<br/>
 찾아보기 단추의 경계 사각형입니다.

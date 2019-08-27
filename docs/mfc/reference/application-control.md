@@ -1,5 +1,5 @@
 ---
-title: 응용 프로그램 컨트롤
+title: 애플리케이션 컨트롤
 ms.date: 11/04/2016
 helpviewer_keywords:
 - application control [MFC]
@@ -11,15 +11,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/14/2019
 ms.locfileid: "65612295"
 ---
-# <a name="application-control"></a>응용 프로그램 컨트롤
+# <a name="application-control"></a>애플리케이션 컨트롤
 
 OLE 응용 프로그램 및 해당 개체를 통해 상당한 컨트롤에 필요합니다. OLE 시스템 Dll을 시작 하 고 응용 프로그램을 자동으로 릴리스, 프로덕션 및 개체의 수정 조정 및 등에 있어야 합니다. 이 항목에서는에 포함 된 함수에는 해당 요구 사항을 충족 합니다. OLE 시스템 Dll에 의해 호출 되는 것 외에도 이러한 함수 에서도 응용 프로그램에서 라고도 합니다.
 
-### <a name="application-control"></a>응용 프로그램 컨트롤
+### <a name="application-control"></a>애플리케이션 컨트롤
 
 |||
 |-|-|
-|[AfxOleCanExitApp](#afxolecanexitapp)|응용 프로그램이 종료될 수 있는지 여부를 나타냅니다.|
+|[AfxOleCanExitApp](#afxolecanexitapp)|애플리케이션이 종료될 수 있는지 여부를 나타냅니다.|
 |[AfxOleGetMessageFilter](#afxolegetmessagefilter)|응용 프로그램의 현재 메시지 필터를 검색합니다.|
 |[AfxOleGetUserCtrl](#afxolegetuserctrl)|현재 사용자 정의 컨트롤 플래그를 검색합니다.|
 |[AfxOleSetUserCtrl](#afxolesetuserctrl)|설정 하거나 사용자 정의 컨트롤 플래그를 지웁니다.|
@@ -32,7 +32,7 @@ OLE 응용 프로그램 및 해당 개체를 통해 상당한 컨트롤에 필�
 
 ##  <a name="afxolecanexitapp"></a>  AfxOleCanExitApp
 
-응용 프로그램이 종료될 수 있는지 여부를 나타냅니다.
+애플리케이션이 종료될 수 있는지 여부를 나타냅니다.
 
 ```
 BOOL AFXAPI AfxOleCanExitApp();
@@ -40,11 +40,11 @@ BOOL AFXAPI AfxOleCanExitApp();
 
 ### <a name="return-value"></a>반환 값
 
-응용 프로그램이 종료될 수 있으면 0이 아닌 값이고, 그렇지 않으면 0입니다.
+애플리케이션이 종료될 수 있으면 0이 아닌 값이고, 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-개체에 대해 해결되지 않은 참조가 있으면 응용 프로그램이 종료될 수 없습니다. 전역 함수 `AfxOleLockApp` 및 `AfxOleUnlockApp`은 각각 응용 프로그램의 개체에 대한 참조 수를 늘리거나 줄입니다. 이 카운터가 0이 아니면 응용 프로그램이 종료될 수 없습니다. 카운터가 0이 아니면 사용자가 시스템 메뉴에서 닫기를 선택하거나 파일 메뉴에서 종료를 선택할 때 응용 프로그램의 기본 창이 숨겨집니다(삭제되지 않음). 이 함수를 호출 하는 프레임 워크 `CFrameWnd::OnClose`합니다.
+개체에 대해 해결되지 않은 참조가 있으면 애플리케이션이 종료될 수 없습니다. 전역 함수 `AfxOleLockApp` 및 `AfxOleUnlockApp`은 각각 애플리케이션의 개체에 대한 참조 수를 늘리거나 줄입니다. 이 카운터가 0이 아니면 애플리케이션이 종료될 수 없습니다. 카운터가 0이 아니면 사용자가 시스템 메뉴에서 닫기를 선택하거나 파일 메뉴에서 종료를 선택할 때 애플리케이션의 기본 창이 숨겨집니다(삭제되지 않음). 이 함수를 호출 하는 프레임 워크 `CFrameWnd::OnClose`합니다.
 
 ### <a name="example"></a>예제
 

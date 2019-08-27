@@ -27,15 +27,15 @@ Visual Studio에서 제공하는 라이브러리 DLL을 사용하는 애플리�
 
 재배포 가능한 개별 DLL도 Visual Studio 설치에 포함됩니다. 기본적으로, Visual Studio 설치 디렉터리의 \\VC\\Redist\\MSVC\\*version* 폴더에 설치됩니다. *version* 번호는 재배포 가능 파일의 단일 공통 집합의 다른 부 빌드 번호를 나타낼 수 있습니다. 이러한 디렉터리에 있는 라이브러리 DLL 파일, 재배포 가능 패키지 또는 병합 모듈의 최신 버전을 사용합니다. 이러한 라이브러리를 애플리케이션과 동일한 디렉터리에 설치하여 로컬 배포에 사용할 수 있습니다. 로컬 배포는 배포된 애플리케이션에 업데이트를 제공하는 역할을 해야 하므로 권장하지 않습니다. 재배포 가능 패키지를 사용하여 중앙 배포하는 것이 좋습니다.
 
-응용 프로그램과 함께 다시 배포해야 하는 DLL을 결정하려면 응용 프로그램에서 사용되는 DLL 목록을 수집합니다. 이러한 입력은 일반적으로 링커에 대한 가져오기 라이브러리 입력으로 나열됩니다. vcruntime 및 UCRT(유니버설 C 런타임 라이브러리)와 같은 특정 라이브러리가 기본적으로 포함됩니다. 앱 또는 해당 종속성 중 하나가 LoadLibrary를 사용하여 DLL을 동적으로 로드하는 경우, 해당 DLL이 링커에 대한 입력에 나열되지 않을 수 있습니다. 동적으로 로드된 DLL 목록을 수집하는 한 가지 방법은 [Visual C++ 애플리케이션의 종속성 이해](understanding-the-dependencies-of-a-visual-cpp-application.md)에 설명된 대로 앱에서 Dependency Walker(depends.exe)를 실행하는 것입니다. 그러나 이 도구는 오래되어 특정 DLL을 찾을 수 없다고 보고할 수 있습니다.
+애플리케이션과 함께 다시 배포해야 하는 DLL을 결정하려면 애플리케이션에서 사용되는 DLL 목록을 수집합니다. 이러한 입력은 일반적으로 링커에 대한 가져오기 라이브러리 입력으로 나열됩니다. vcruntime 및 UCRT(유니버설 C 런타임 라이브러리)와 같은 특정 라이브러리가 기본적으로 포함됩니다. 앱 또는 해당 종속성 중 하나가 LoadLibrary를 사용하여 DLL을 동적으로 로드하는 경우, 해당 DLL이 링커에 대한 입력에 나열되지 않을 수 있습니다. 동적으로 로드된 DLL 목록을 수집하는 한 가지 방법은 [Visual C++ 애플리케이션의 종속성 이해](understanding-the-dependencies-of-a-visual-cpp-application.md)에 설명된 대로 앱에서 Dependency Walker(depends.exe)를 실행하는 것입니다. 그러나 이 도구는 오래되어 특정 DLL을 찾을 수 없다고 보고할 수 있습니다.
 
 종속성 목록이 있는 경우 Microsoft Visual Studio 설치 디렉터리에 있는 Redist.txt 파일에 연결된 목록 또는 Visual Studio 복사본에 대한 Microsoft 소프트웨어 사용 조건의 "배포 가능 코드 파일" 섹션에서 참조된 재배포 가능 DLL의 "REDIST 목록"과 비교합니다. Visual Studio 2017의 경우 [Microsoft Visual Studio 2017용 배포 가능 코드(유틸리티, 확장성 및 BuildServer 파일 포함)](https://go.microsoft.com/fwlink/p/?linkid=823098)를 참조하세요. Visual Studio 2015의 경우 [Microsoft Visual Studio 2015 및 Microsoft Visual Studio 2015 SDK용 배포 가능 코드(유틸리티 및 BuildServer 파일 포함)](https://go.microsoft.com/fwlink/p/?linkid=799794)를 참조하세요. Visual Studio 2013의 경우 [Microsoft Visual Studio 2013 및 Microsoft Visual Studio 2013 SDK용 배포 가능 코드](https://go.microsoft.com/fwlink/p/?LinkId=313603)에서 온라인으로 목록을 확인할 수 있습니다.
 
 Visual Studio 2015 이전 버전의 Visual Studio에서는 CRT(C 런타임 라이브러리)가 msvc *version*.dll에 재배포 가능 DLL로 포함되어 있습니다. Visual Studio 2015부터 CRT의 함수가 vcruntime 및 UCRT로 리팩터링되었습니다. UCRT는 이제 Windows 10에서 Windows 업데이트로 관리되는 시스템 구성 요소입니다. 모든 Windows 10 운영 체제에서 사용할 수 있습니다. 이전 운영 체제에 애플리케이션을 배포하려면, UCRT도 재배포해야 할 수 있습니다. UCRT의 초기 버전은 Windows 10 이전의 운영 체제에만 설치되는 Visual Studio 재배포 가능 파일에 포함되어 있으며, UCRT의 버전이 이미 설치되어 있지 않은 경우에만 해당됩니다. Microsoft 시스템 업데이트 패키지 형태의 하위 시스템용 UCRT의 설치 가능한 버전은 Microsoft 다운로드 센터에서 [Windows 10 유니버설 C 런타임](https://www.microsoft.com/download/details.aspx?id=48234)을 참조하세요.
 
-Visual Studio에 포함된 모든 파일을 다시 배포할 수는 없습니다. Redist.txt 또는 온라인 "REDIST 목록"에 지정된 파일만 다시 배포할 수 있습니다. 디버그 버전의 응용 프로그램 및 다양한 Visual C++ 디버그 DLL은 다시 배포할 수 없습니다. 자세한 내용은 [배포 방법 선택](choosing-a-deployment-method.md)을 참조하세요.
+Visual Studio에 포함된 모든 파일을 다시 배포할 수는 없습니다. Redist.txt 또는 온라인 "REDIST 목록"에 지정된 파일만 다시 배포할 수 있습니다. 디버그 버전의 애플리케이션 및 다양한 Visual C++ 디버그 DLL은 다시 배포할 수 없습니다. 자세한 내용은 [배포 방법 선택](choosing-a-deployment-method.md)을 참조하세요.
 
-다음 표에서는 응용 프로그램에서 사용될 수 있는 일부 Visual C++ DLL에 대해 설명합니다.
+다음 표에서는 애플리케이션에서 사용될 수 있는 일부 Visual C++ DLL에 대해 설명합니다.
 
 |Visual C++ 라이브러리|설명|적용 대상|
 |--------------------------|-----------------|----------------|
@@ -57,7 +57,7 @@ Visual Studio에 포함된 모든 파일을 다시 배포할 수는 없습니다
 
 애플리케이션과 함께 이러한 DLL을 다시 배포하는 방법에 대한 자세한 내용은 [Visual C++ 파일 재배포](redistributing-visual-cpp-files.md)를 참조하세요. 예제는 [배포 예제](deployment-examples.md)를 참조하세요.
 
-일반적으로 시스템 DLL은 운영 체제의 일부이므로 재배포할 필요가 없습니다. 하지만 응용 프로그램이 여러 버전의 Microsoft 운영 체제에서 실행되는 경우와 같은 예외도 있을 수 있습니다. 이 경우 해당 사용 약관을 참조해야 합니다. 또한 Windows 업데이트, 서비스 팩 또는 Microsoft에서 제공하는 재배포 가능 패키지를 통해 업그레이드된 시스템 DLL을 가져오세요.
+일반적으로 시스템 DLL은 운영 체제의 일부이므로 재배포할 필요가 없습니다. 하지만 애플리케이션이 여러 버전의 Microsoft 운영 체제에서 실행되는 경우와 같은 예외도 있을 수 있습니다. 이 경우 해당 사용 약관을 참조해야 합니다. 또한 Windows 업데이트, 서비스 팩 또는 Microsoft에서 제공하는 재배포 가능 패키지를 통해 업그레이드된 시스템 DLL을 가져오세요.
 
 ## <a name="see-also"></a>참고자료
 

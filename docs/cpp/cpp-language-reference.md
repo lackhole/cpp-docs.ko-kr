@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
 ms.openlocfilehash: 1790f5d7ecf834c97a9242e8f42d1fb402604ac6
 ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65222484"
@@ -30,7 +30,7 @@ ms.locfileid: "65222484"
 C++ 프로그램의 기본적인 어휘 요소에는 토큰, 주석, 연산자, 키워드, 문장 부호, 리터럴이 있습니다. 또한 파일 변환, 연산자 우선 순위/결합성이 있습니다.
 
 [기본 개념](../cpp/basic-concepts-cpp.md)<br/>
-범위, 링크, 프로그램 시작 및 종료, 기억 영역 클래스 및 형식입니다.
+범위, 링크, 프로그램 시작 및 종료, 스토리지 클래스 및 형식입니다.
 
 [표준 변환](../cpp/standard-conversions.md)<br/>
 기본 제공(Built-in)되거나 '기본형'인 형식 사이의 형변환입니다. 또한 산술 변환 및 포인터, 참조 및 멤버 포인터 형식 간의 변환입니다.
@@ -75,7 +75,7 @@ C++ 예외 처리, SEH(구조적 예외 처리), 예외처리 문을 작성하�
 이벤트 및 이벤트 처리기에 대한 내용입니다.
 
 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)<br/>
-Microsoft C++ 전용 한정자를 설명합니다. 메모리 주소 지정, 호출 규칙, **naked** 함수, 확장된 기억 영역 클래스 특성(**__declspec**), **__w64**와 관련된 내용입니다.
+Microsoft C++ 전용 한정자를 설명합니다. 메모리 주소 지정, 호출 규칙, **naked** 함수, 확장된 기억 영역 클래스 특성( **__declspec**), **__w64**와 관련된 내용입니다.
 
 [인라인 어셈블러](../assembler/inline/inline-assembler.md)<br/>
 **__asm** 블록을 사용하여 C++에서 어셈블리 언어를 사용하는 방법에 대한 내용입니다.

@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 2225c307-d3ae-42c1-8345-a5a959d132dc
 ms.openlocfilehash: 46619e77861b6a3a78d74ce6c6d9173a3a5f270f
 ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "64857320"
@@ -31,9 +31,9 @@ ms.locfileid: "64857320"
 
 - 사용 하 여 연결 [/LTCG](reference/ltcg-link-time-code-generation.md) 하 고 [/GENPROFILE 또는 /FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md)합니다.
 
-   모두 사용 하 여 **/LTCG** 하 고 **/GENPROFILE** 또는 **/FASTGENPROFILE** 만듭니다는 `.pgd` 계측 된 앱이 실행 되는 경우 파일입니다. 테스트 실행 데이터에 추가 된 후의 `.pgd` 파일 (최적화 된 이미지 만들기) 하는 다음 링크 단계에 대 한 입력으로 사용할 수 있습니다. 지정 하는 경우 **/GENPROFILE**를 추가할 수도 있습니다는 **PGD =**_filename_ 기본값이 아닌 이름이 나 위치를 지정 하는 인수는 `.pgd` 파일. 조합 **/LTCG** 하 고 **/GENPROFILE** 하거나 **/FASTGENPROFILE** 링커 옵션을 사용 되지 않는 대체 **/ltcg: pginstrument** 링커 옵션입니다.
+   모두 사용 하 여 **/LTCG** 하 고 **/GENPROFILE** 또는 **/FASTGENPROFILE** 만듭니다는 `.pgd` 계측 된 앱이 실행 되는 경우 파일입니다. 테스트 실행 데이터에 추가 된 후의 `.pgd` 파일 (최적화 된 이미지 만들기) 하는 다음 링크 단계에 대 한 입력으로 사용할 수 있습니다. 지정 하는 경우 **/GENPROFILE**를 추가할 수도 있습니다는 **PGD =** _filename_ 기본값이 아닌 이름이 나 위치를 지정 하는 인수는 `.pgd` 파일. 조합 **/LTCG** 하 고 **/GENPROFILE** 하거나 **/FASTGENPROFILE** 링커 옵션을 사용 되지 않는 대체 **/ltcg: pginstrument** 링커 옵션입니다.
 
-- 응용 프로그램을 프로파일링합니다.
+- 애플리케이션을 프로파일링합니다.
 
    프로 파일링 된 EXE 세션이 종료 될 때마다, 또는 프로 파일링 된 DLL을 로드 한 `appname!N.pgc` 파일이 만들어집니다. `.pgc` 파일 특정 응용 프로그램 테스트 실행에 대 한 정보를 포함 합니다. *appname* 앱의 이름 및 *N* 는 숫자 1부터 증가 하는 수를 기반으로 다른 `appname!N.pgc` 디렉터리의 파일입니다. 삭제할 수는 `.pgc` 경우 테스트 실행을 최적화 하려는 시나리오를 나타내지 않습니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "64857320"
 
 - 사용 하 여 연결 **/LTCG** 하 고 **/USEPROFILE**합니다.
 
-   둘 다 사용 합니다 **/LTCG** 하 고 [/USEPROFILE](reference/useprofile.md) 최적화 된 이미지를 만드는 링커 옵션. 이 단계에서는 입력 된 `.pgd` 파일입니다. 지정 하는 경우 **/USEPROFILE**를 추가할 수도 있습니다는 **PGD =**_filename_ 기본값이 아닌 이름이 나 위치를 지정 하는 인수는 `.pgd` 파일. 사용 되지 않는 사용 하 여이 이름을 지정할 수도 있습니다 **/PGD** 링커 옵션입니다. 조합 **/LTCG** 하 고 **/USEPROFILE** 사용 되지 않는 대체 **/ltcg: pgoptimize** 하 고 **/ltcg: pgupdate** 링커 옵션입니다.
+   둘 다 사용 합니다 **/LTCG** 하 고 [/USEPROFILE](reference/useprofile.md) 최적화 된 이미지를 만드는 링커 옵션. 이 단계에서는 입력 된 `.pgd` 파일입니다. 지정 하는 경우 **/USEPROFILE**를 추가할 수도 있습니다는 **PGD =** _filename_ 기본값이 아닌 이름이 나 위치를 지정 하는 인수는 `.pgd` 파일. 사용 되지 않는 사용 하 여이 이름을 지정할 수도 있습니다 **/PGD** 링커 옵션입니다. 조합 **/LTCG** 하 고 **/USEPROFILE** 사용 되지 않는 대체 **/ltcg: pgoptimize** 하 고 **/ltcg: pgupdate** 링커 옵션입니다.
 
 최적화 된 실행 파일을 만들고 나중에 추가 프로 파일링 보다 최적화 된 이미지를 만드는 것이 유용할 것을 확인도 가능 합니다. 경우 계측된 된 이미지 및 해당 `.pgd` 파일을 사용할 수 있는 추가 테스트 실행을 최신를 사용 하 여 최적화 된 이미지를 다시 작성할 수 있습니다 `.pgd` 파일을 사용 하 여 **/LTCG** 고 **/USEPROFILE** 링커 옵션입니다.
 

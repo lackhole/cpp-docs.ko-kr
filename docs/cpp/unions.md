@@ -634,7 +634,7 @@ int main()
 `NumericType` 공용 구조체는 다음 그림과 같이 개념적으로 메모리에 배열됩니다.
 
 ![숫자 형식 공용 구조체의 데이터 저장소](../cpp/media/vc38ul1.png "NumericType 공용 구조체에 데이터 저장") <br/>
-NumericType 공용 구조체에 데이터 저장
+NumericType 공용 구조체에 데이터 스토리지
 
 ## <a name="anonymous_unions"></a> 익명 공용 구조체
 

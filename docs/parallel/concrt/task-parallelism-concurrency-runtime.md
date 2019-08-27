@@ -303,7 +303,7 @@ Message from task: 42
 
 ##  <a name="robust"></a> 강력한 프로그래밍
 
-작업, 작업 그룹 및 병렬 알고리즘을 사용하는 경우 취소 및 예외 처리의 역할을 이해하고 있어야 합니다. 예를 들어 병렬 작업 트리에서 취소되는 작업은 자식 작업이 실행되지 않도록 방지합니다. 따라서 자식 작업 중 하나가 리소스 해제와 같이 응용 프로그램에 중요한 작업을 수행하는 경우 문제가 발생할 수 있습니다. 또한 자식 작업에서 예외를 throw하는 경우 해당 예외가 개체 소멸자를 통해 전파되어 응용 프로그램에서 정의되지 않은 동작이 발생할 수 있습니다. 이러한 지점을 보여 주는 예제를 참조 하세요. 합니다 [이해 하는 방법을 취소 및 예외 처리에 영향을 줄 개체 소멸](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) 병렬 패턴 라이브러리 문서에서 모범 사례에 대 한 섹션입니다. 취소 및 PPL에서의 예외 처리 모델에 대 한 자세한 내용은 참조 하세요. [취소가](../../parallel/concrt/cancellation-in-the-ppl.md) 하 고 [예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)합니다.
+작업, 작업 그룹 및 병렬 알고리즘을 사용하는 경우 취소 및 예외 처리의 역할을 이해하고 있어야 합니다. 예를 들어 병렬 작업 트리에서 취소되는 작업은 자식 작업이 실행되지 않도록 방지합니다. 따라서 자식 작업 중 하나가 리소스 해제와 같이 애플리케이션에 중요한 작업을 수행하는 경우 문제가 발생할 수 있습니다. 또한 자식 작업에서 예외를 throw하는 경우 해당 예외가 개체 소멸자를 통해 전파되어 애플리케이션에서 정의되지 않은 동작이 발생할 수 있습니다. 이러한 지점을 보여 주는 예제를 참조 하세요. 합니다 [이해 하는 방법을 취소 및 예외 처리에 영향을 줄 개체 소멸](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) 병렬 패턴 라이브러리 문서에서 모범 사례에 대 한 섹션입니다. 취소 및 PPL에서의 예외 처리 모델에 대 한 자세한 내용은 참조 하세요. [취소가](../../parallel/concrt/cancellation-in-the-ppl.md) 하 고 [예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)합니다.
 
 ## <a name="related-topics"></a>관련 항목
 
@@ -313,7 +313,7 @@ Message from task: 42
 |[방법: parallel_invoke를 사용하여 병렬 작업 실행](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)|`parallel_invoke` 알고리즘을 사용하여 공유 데이터 소스에서 여러 작업을 수행하는 프로그램의 성능을 향상시키는 방법을 보여 줍니다.|
 |[방법: 지연 후 완료되는 작업 만들기](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md)|사용 하는 방법을 보여 줍니다는 `task`, `cancellation_token_source`, `cancellation_token`, 및 `task_completion_event` 지연 후 완료 되는 작업을 만들기 위한 클래스입니다.|
 |[연습: 미래 구현](../../parallel/concrt/walkthrough-implementing-futures.md)|동시성 런타임의 기존 기능을 더 많은 역할을 하는 기능과 결합하는 방법을 보여 줍니다.|
-|[PPL(병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md)|동시 응용 프로그램 개발을 위해 명령적 프로그래밍 모델을 제공하는 PPL에 대해 설명합니다.|
+|[PPL(병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md)|동시 애플리케이션 개발을 위해 명령적 프로그래밍 모델을 제공하는 PPL에 대해 설명합니다.|
 
 ## <a name="reference"></a>참조
 

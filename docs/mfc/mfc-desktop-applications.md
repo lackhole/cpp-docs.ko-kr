@@ -1,5 +1,5 @@
 ---
-title: MFC 데스크톱 응용 프로그램
+title: MFC 데스크톱 애플리케이션
 ms.date: 07/28/2019
 f1_keywords:
 - MFC
@@ -16,9 +16,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/29/2019
 ms.locfileid: "68607529"
 ---
-# <a name="mfc-desktop-applications"></a>MFC 데스크톱 응용 프로그램
+# <a name="mfc-desktop-applications"></a>MFC 데스크톱 애플리케이션
 
-MFC(Microsoft Foundation Class) 라이브러리는 많은 Win32 및 COM API에 대한 개체 지향 래퍼를 제공합니다. 간단한 데스크톱 응용 프로그램을 만드는 데도 사용되지만, 여러 컨트롤 간의 매우 복잡한 사용자 인터페이스를 개발해야 하는 경우에도 매우 유용합니다. MFC를 사용하여 Office 스타일의 사용자 인터페이스를 제공하는 응용 프로그램을 만들 수 있습니다. Windows 플랫폼 자체에 대한 설명서는 [Windows 설명서](/windows/index)를 참조하세요. MFC 없이 C++로 Windows 응용 프로그램을 빌드하는 방법에 대한 자세한 내용은 [Win32 API를 사용하여 데스크톱 Windows 앱 빌드](/windows/win32/index)를 참조하세요.
+MFC(Microsoft Foundation Class) 라이브러리는 많은 Win32 및 COM API에 대한 개체 지향 래퍼를 제공합니다. 간단한 데스크톱 애플리케이션을 만드는 데도 사용되지만, 여러 컨트롤 간의 매우 복잡한 사용자 인터페이스를 개발해야 하는 경우에도 매우 유용합니다. MFC를 사용하여 Office 스타일의 사용자 인터페이스를 제공하는 애플리케이션을 만들 수 있습니다. Windows 플랫폼 자체에 대한 설명서는 [Windows 설명서](/windows/index)를 참조하세요. MFC 없이 C++로 Windows 응용 프로그램을 빌드하는 방법에 대한 자세한 내용은 [Win32 API를 사용하여 데스크톱 Windows 앱 빌드](/windows/win32/index)를 참조하세요.
 
 MFC 참조는 MFC 라이브러리를 구성하는 매크로, 전역 변수, 전역 함수 및 클래스를 포함합니다.
 
@@ -26,7 +26,7 @@ MFC 참조는 MFC 라이브러리를 구성하는 매크로, 전역 변수, 전�
 
 각 클래스에 대한 설명서는 클래스 개요, 범주별 멤버 요약과 멤버 함수, 오버로드된 연산자 및 데이터 멤버에 대한 항목을 포함합니다.
 
-공용 및 보호된 클래스 멤버는 일반적으로 응용 프로그램 또는 파생된 클래스에서 사용될 경우에만 기술됩니다. 전체 클래스 멤버 목록을 보려면 클래스 헤더 파일을 참조하십시오.
+공용 및 보호된 클래스 멤버는 일반적으로 애플리케이션 또는 파생된 클래스에서 사용될 경우에만 기술됩니다. 전체 클래스 멤버 목록을 보려면 클래스 헤더 파일을 참조하십시오.
 
 > [!IMPORTANT]
 >  MFC 클래스 및 해당 멤버는 Windows 런타임 환경에서 실행되는 응용 프로그램에서 사용할 수 없습니다.
@@ -51,7 +51,7 @@ MFC 라이브러리 기능과 관련된 다양한 작업을 안내하는 문서�
 MFC 개발팀에서 클래스 라이브러리에 대해 작성한 전문 항목에 대한 링크를 제공합니다.
 
 [MFC에 대한 사용자 지정](customization-for-mfc.md)<br/>
-MFC 응용 프로그램을 사용자 지정하기 위한 몇 가지 팁을 제공합니다.
+MFC 애플리케이션을 사용자 지정하기 위한 몇 가지 팁을 제공합니다.
 
 [클래스](reference/mfc-classes.md)<br/>
 MFC 클래스에 대한 링크 및 헤더 파일 정보를 제공합니다.
@@ -66,7 +66,7 @@ MFC 라이브러리의 매크로 및 전역 함수에 대한 링크를 제공합
 MFC 라이브러리에서 사용하는 구조, 스타일, 콜백 및 메시지 맵에 대한 링크를 제공합니다.
 
 [MFC 마법사 및 대화 상자](reference/mfc-wizards-and-dialog-boxes.md)<br/>
-Visual Studio에서 MFC 응용 프로그램을 만드는 기능을 안내하는 가이드입니다.
+Visual Studio에서 MFC 애플리케이션을 만드는 기능을 안내하는 가이드입니다.
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
 리소스 파일을 사용하여 UI 문자열 및 대화 상자 레이아웃과 같은 정적 사용자 인터페이스 데이터를 관리하는 방법입니다.

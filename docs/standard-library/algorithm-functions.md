@@ -200,12 +200,12 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: cf6c1267b1dea86c2cad62708192a4c0a1970ed8
-ms.sourcegitcommit: 610751254a01cba6ad15fb1e1764ecb2e71f66bf
+ms.openlocfilehash: b08d45ac065fe63f6f51e3b63a49e8714a486988
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68313391"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956980"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algorithm&gt; 함수
 
@@ -366,7 +366,7 @@ bool all_of(
 
 ### <a name="remarks"></a>설명
 
-이 템플릿 함수는  범위의 `N` `[0, last - first)`각에 대해 조건자 `pred(*(first + N))` 가 **true**인 경우에만 true를 반환 합니다.
+이 템플릿 함수는 범위의 `N` `[0, last - first)`각에 대해 조건자 `pred(*(first + N))` 가 **true**인 경우에만 true를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -442,7 +442,7 @@ bool any_of(
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 범위  에 있는 일부 `N` 에 대해 true를 반환 합니다.
+템플릿 함수는 범위 에 있는 일부 `N` 에 대해 true를 반환 합니다.
 
 `[0, last - first)`인 경우에 `pred(*(first + N))` 는 조건자가 true입니다.
 
@@ -611,6 +611,14 @@ int main()
 }
 ```
 
+```Output
+List1 = ( 5 10 20 25 30 50 )
+There is an element in list List1 with a value equal to 10.
+There is an element in list List1 with a value greater than 10 under greater than.
+Ordered using mod_lesser, vector v1 = ( 0 -1 1 -2 2 3 4 )
+There is an element with a value equivalent to -3 under mod_lesser.
+```
+
 ## <a name="clamp"></a>클램프
 
 값을 상한 및 하 한과 비교 하 고, 범위 사이에 있는 경우 값에 대 한 참조를 반환 하 고, 값이 각각 위나 아래에 있는 경우에는 상한 또는 하 한에 대 한 참조를 반환 합니다.
@@ -646,7 +654,7 @@ constexpr const Type& clamp(
 
 ### <a name="return-value"></a>반환 값
 
-인 경우에는에 대 `value < lower`한 참조를 *반환 하 고* , `upper < value`경우에는 *상한을* 반환 합니다. 그렇지 않으면 *값*에 대 한 참조를 반환 합니다.
+인 경우에는 에 대 `value < lower`한 참조를 반환 하 고, `upper < value`경우에는 *상한을* 반환 합니다. 그렇지 않으면 *값*에 대 한 참조를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -845,6 +853,13 @@ int main() {
 }
 ```
 
+```Output
+v1 = ( 0 10 20 30 40 50 )
+v2 = ( 0 3 6 9 12 15 18 21 24 27 30 )
+v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
+v2 with shifted insert = ( 0 3 6 9 0 10 0 10 20 27 30 )
+```
+
 ## <a name="copy_if"></a>copy_if
 
 요소의 범위에서 지정 된 조건에 대해 **true** 인 요소를 복사 합니다.
@@ -894,6 +909,61 @@ ForwardIterator2 copy_if(
 `if (pred(*first + N)) * dest++ = *(first + N))`
 
 `[0, last - first)` 범위의 각 `N`에 대해 위의 식을 한 번 평가하고, 가장 낮은 값부터 시작하여 `N`의 값을 최소값부터 엄격하게 증가시킵니다. *Dest* 및 *first* 가 저장소 영역을 지정 하는 경우, *dest* 는 범위 `[ first, last )`내에 있지 않아야 합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// alg_copy_if.cpp
+// compile with: /EHsc
+#include <list>
+#include <algorithm>
+#include <iostream>
+
+void listlist(std::list<int> l)
+{
+    std::cout << "( ";
+    for (auto const& el : l)
+        std::cout << el << " ";
+    std::cout << ")" << std::endl;
+}
+
+int main()
+{
+    using namespace std;
+    list<int> li{ 46, 59, 88, 72, 79, 71, 60, 5, 40, 84 };
+    list<int> le(li.size()); // le = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+    list<int> lo(li.size()); // lo = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+    cout << "li = ";
+    listlist(li);
+
+    // is_even checks if the element is even.
+    auto is_even = [](int const elem) { return !(elem % 2); };
+    // use copy_if to select only even elements from li 
+    // and copy them to le, starting from le's begin position
+    auto ec = copy_if(li.begin(),li.end(), le.begin(), is_even);
+    le.resize(std::distance(le.begin(), ec));  // shrink le to new size
+
+    cout << "Even numbers are le = ";
+    listlist(le);
+
+    // is_odd checks if the element is odd.
+    auto is_odd = [](int const elem) { return (elem % 2); };
+    // use copy_if to select only odd elements from li
+    // and copy them to lo, starting from lo's begin position
+    auto oc = copy_if(li.begin(), li.end(), lo.begin(), is_odd);
+    lo.resize(std::distance(lo.begin(), oc));  // shrink lo to new size
+
+    cout << "Odd numbers are lo = ";
+    listlist(lo);
+}
+```
+
+```Output
+li = ( 46 59 88 72 79 71 60 5 40 84 )
+Even numbers are le = ( 46 88 72 60 40 84 )
+Odd numbers are lo = ( 59 79 71 5 )
+```
 
 ## <a name="copy_n"></a>copy_n
 
@@ -1001,7 +1071,7 @@ count(
 
 ### <a name="return-value"></a>반환 값
 
-값이 [*first*, `InputIterator` *last*) 범위 내 요소 수를 계산 하는의 차이 형식 *입니다.*
+값이 [*first*, `InputIterator` *last*) 범위 내 요소 수를 계산 하는의 차이 형식입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2965,7 +3035,7 @@ RandomAccessIterator is_heap_until(
 힙에 대해 확인할 범위의 끝을 지정하는 임의 액세스 반복기입니다.
 
 *pred*\
-힙을 정의하는 엄격한/약한 정렬 조건을 지정하는 이진 조건자입니다. Pred가 지정 되지 `std::less<>` 않은  경우 기본 조건자는입니다.
+힙을 정의하는 엄격한/약한 정렬 조건을 지정하는 이진 조건자입니다. Pred가 지정 되지 `std::less<>` 않은 경우 기본 조건자는입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3016,7 +3086,7 @@ bool is_partitioned(
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는의  `[first, last)` 모든 요소가 *pred*에 의해 분할 된 경우에만 true를 반환 합니다 `X` . 즉 `pred (X)` , `[first, last)` 에 대 한 모든 요소가의 모든 요소 `Y` 보다 먼저 발생 합니다. 가 **false 인 경우** `pred (Y)`
+템플릿 함수는의 `[first, last)` 모든 요소가 *pred*에 의해 분할 된 경우에만 true를 반환 합니다 `X` . 즉 `pred (X)` , `[first, last)` 에 대 한 모든 요소가의 모든 요소 `Y` 보다 먼저 발생 합니다. 가 **false 인 경우** `pred (Y)`
 
 ## <a name="is_permutation"></a>is_permutation
 
@@ -3078,7 +3148,7 @@ bool is_permutation(
 
 최악의 경우 `is_permutation`은 정방형 복잡성을 갖습니다.
 
-첫 번째 템플릿 함수는 *first2* 에서 시작 하는 범위에로 지정 `[first1, last1)`된 범위 만큼 많은 요소가 있다고 가정 합니다. 두 번째 범위에 더 많은 요소가 있는 경우 무시되고, 더 적은 요소가 있는 경우 정의되지 않은 동작이 발생합니다. 세 째 템플릿 함수(C++14 이상)에서는 이러한 가정을 하지 않습니다. 둘 다  에서 지정 `[first1, last1)` 된 범위의 각 요소 x에 대해 *first2* 또는 `[first2, last2)`에서 시작 하는 범위에 있는 것과 같이 x = = Y와 동일한 범위에 있는 요소 수가 y 인 경우에만 true를 반환 합니다. 여기서는 피연산자 간의 쌍 비교를 수행 해야합니다.`operator==`
+첫 번째 템플릿 함수는 *first2* 에서 시작 하는 범위에로 지정 `[first1, last1)`된 범위 만큼 많은 요소가 있다고 가정 합니다. 두 번째 범위에 더 많은 요소가 있는 경우 무시되고, 더 적은 요소가 있는 경우 정의되지 않은 동작이 발생합니다. 세 째 템플릿 함수(C++14 이상)에서는 이러한 가정을 하지 않습니다. 둘 다 에서 지정 `[first1, last1)` 된 범위의 각 요소 x에 대해 *first2* 또는 `[first2, last2)`에서 시작 하는 범위에 있는 것과 같이 x = = Y와 동일한 범위에 있는 요소 수가 y 인 경우에만 true를 반환 합니다. 여기서는 피연산자 간의 쌍 비교를 수행 해야합니다.`operator==`
 
 두 번째 및 네 번째 템플릿 함수는 `operator==(X, Y)`를 `Pred(X, Y)`로 대체한다는 점을 제외하고 동일하게 동작합니다. 올바르게 동작하려면 조건자가 대칭, 재귀 및 전이여야 합니다.
 
@@ -3263,7 +3333,7 @@ void iter_swap( ForwardIterator1 left, ForwardIterator2 right );
 
 ### <a name="remarks"></a>설명
 
-`swap`이전 버전과의 호환성을 위해  C++ 표준에 포함 된 iter_swap에 대 한 기본 설정에 사용 해야 합니다. 및 `Fit1` `swap( *Fit1, *Fit2 )`가 전방 반복기`iter_swap( Fit1, Fit2 )`이면는와 동일 합니다. `Fit2`
+`swap`이전 버전과의 호환성을 위해 C++ 표준에 포함 된 iter_swap에 대 한 기본 설정에 사용 해야 합니다. 및 `Fit1` `swap( *Fit1, *Fit2 )`가 전방 반복기`iter_swap( Fit1, Fit2 )`이면는와 동일 합니다. `Fit2`
 
 입력 정방향 반복기의 값 형식은 동일한 값을 가져야 합니다.
 
@@ -4396,7 +4466,7 @@ constexpr Type min(
 
 ### <a name="remarks"></a>설명
 
-`min` 알고리즘은 대체로 매개 변수로 전달된 개체를 사용하지 않습니다. 대부분의 C++ 표준 라이브러리 알고리즘은 매개 변수로 전달된 반복기가 위치를 지정하는 요소 범위에서 작동합니다. 요소 범위를 사용하는 함수가 필요한 경우 [min_element](../standard-library/algorithm-functions.md#min_element)를 사용합니다. [](../cpp/constexpr-cpp.md) Visual Studio 2017의 `initializer_list` 오버 로드에서 constexpr을 사용 하도록 설정 했습니다.
+`min` 알고리즘은 대체로 매개 변수로 전달된 개체를 사용하지 않습니다. 대부분의 C++ 표준 라이브러리 알고리즘은 매개 변수로 전달된 반복기가 위치를 지정하는 요소 범위에서 작동합니다. 요소 범위를 사용하는 함수가 필요한 경우 [min_element](../standard-library/algorithm-functions.md#min_element)를 사용합니다. Visual Studio 2017의 `initializer_list` 오버 로드에서 [constexpr](../cpp/constexpr-cpp.md)을 사용 하도록 설정 했습니다.
 
 ### <a name="example"></a>예제
 
@@ -5890,7 +5960,7 @@ ForwardIterator partition_point(
 
 ### <a name="return-value"></a>반환 값
 
-Pred에서 `ForwardIterator` 테스트 한 조건을 충족 하지 않는 첫 번째 요소를 참조 하거나, 하나를 찾을 수 없는 경우 *마지막으로* 반환 하는을 반환 합니다.
+Pred에서 `ForwardIterator` 테스트 한 조건을 충족 하지 않는 첫 번째 요소를 참조 하거나, 하나를찾을 수 없는 경우 *마지막으로* 반환 하는을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -7576,7 +7646,7 @@ ForwardIterator search(
 두 요소가 같은 것으로 간주되려면 충족해야 하는 조건을 정의하는 사용자 정의 조건자 함수 개체입니다. 이진 조건자는 두 개의 인수를 사용하며 조건이 충족되면 **true** 를 반환하고, 충족되지 않으면 **false** 를 반환합니다.
 
 *자가*\
-찾을 패턴과 사용할 검색 알고리즘을 캡슐화 하는 검색자입니다.
+찾을 패턴과 사용할 검색 알고리즘을 캡슐화 하는 검색자입니다. Searchers에 대 한 자세한 내용은 [default_searcher 클래스](default-searcher-class.md), [boyer_moore_horspool_searcher 클래스](boyer-moore-horspool-searcher-class.md)및 [boyer_moore_searcher 클래스](boyer-moore-searcher-class.md)를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 

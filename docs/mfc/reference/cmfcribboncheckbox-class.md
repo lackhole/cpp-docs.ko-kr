@@ -64,7 +64,7 @@ class CMFCRibbonCheckBox : public CMFCRibbonButton
 
 ## <a name="remarks"></a>설명
 
-응용 프로그램에서 `CMFCRibbonCheckBox`를 사용하려면 코드에 다음 생성자를 추가합니다.
+애플리케이션에서 `CMFCRibbonCheckBox`를 사용하려면 코드에 다음 생성자를 추가합니다.
 
 ```
 CMFCRibbonCheckBox (UINT nID, LPCTSTR lpszText)

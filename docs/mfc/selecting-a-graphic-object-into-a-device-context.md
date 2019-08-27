@@ -1,5 +1,5 @@
 ---
-title: 그래픽 개체를 선택하여 장치 컨텍스트로 넣기
+title: 그래픽 개체를 선택하여 디바이스 컨텍스트로 넣기
 ms.date: 11/04/2016
 helpviewer_keywords:
 - graphic objects [MFC], selecting into device context
@@ -16,7 +16,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62308533"
 ---
-# <a name="selecting-a-graphic-object-into-a-device-context"></a>그래픽 개체를 선택하여 장치 컨텍스트로 넣기
+# <a name="selecting-a-graphic-object-into-a-device-context"></a>그래픽 개체를 선택하여 디바이스 컨텍스트로 넣기
 
 이 항목에서는 창 디바이스 컨텍스트에서 그래픽 개체를 사용 하 여에 적용 됩니다. 한 후 [그리기 개체를 만들](../mfc/one-stage-and-two-stage-construction-of-objects.md), 여기에 저장 된 기본 개체 대신 장치 컨텍스트로 선택 해야 합니다.
 

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: d6a36da79f24d98d162c4ffffff17b4471b2b063
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: e3a5b634eb22a6860fe8af5b3b737a8e649e03c2
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69512256"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69631732"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>UWP 앱에 대 C++ 한에서 비동기 작업 만들기
 
@@ -70,10 +70,10 @@ Windows 런타임를 사용 하 여 다양 한 프로그래밍 언어의 가장 
 
 `create_async` 의 반환 형식은 해당 인수의 형식에 따라 결정됩니다. 예를 들어 작업 함수에서 값을 반환하지 않고 진행률을 보고하지 않는 경우 `create_async` 는 `IAsyncAction`을 반환합니다. 작업 함수에서 값을 반환하지 않고 진행률을 보고하는 경우 `create_async` 는 `IAsyncActionWithProgress`를 반환합니다. 진행률을 보고하려면 [concurrency::progress_reporter](../../parallel/concrt/reference/progress-reporter-class.md) 개체를 작업 함수에 매개 변수로 제공합니다. 진행률을 보고하는 기능을 사용하면 수행된 작업량과 남아 있는 작업량을 백분율 등으로 보고할 수 있습니다. 또한 결과가 사용 가능해지면 결과도 보고할 수 있습니다.
 
-`IAsyncAction`, `IAsyncActionWithProgress<TProgress>`, `IAsyncOperation<TResult>`및 `IAsyncActionOperationWithProgress<TProgress, TProgress>` 인터페이스는 비동기 작업을 취소하는 데 사용할 수 있는 `Cancel` 메서드를 각기 제공합니다. `task` 클래스는 취소 토큰과 함께 작동합니다. 취소 토큰을 사용하여 작업을 취소하면 런타임에서 해당 토큰을 구독하는 새 작업을 시작하지 않습니다. 이미 활성화된 작업은 취소 토큰을 모니터링하고 가능한 경우 중지할 수 있습니다. 이 메커니즘에 대해서는 [Cancellation in the PPL](cancellation-in-the-ppl.md)문서에 자세히 설명되어 있습니다. Windows 런타임`Cancel` 메서드와 작업 취소를 두 가지 방법으로 연결할 수 있습니다. 첫째, `create_async` concurrency::cancellation_token [개체를 사용하도록](../../parallel/concrt/reference/cancellation-token-class.md) 에 전달하는 작업 함수를 정의할 수 있습니다. `Cancel` 메서드가 호출되면 이 취소 토큰이 취소되고 일반적인 취소 규칙이 `task` 호출을 지원하는 내부 `create_async` 개체에 적용됩니다. `cancellation_token` 개체를 제공하지 않는 경우 내부 `task` 개체는 암시적으로 이 개체를 정의합니다. 작업 함수에서 취소에 협조적으로 응답해야 하는 경우에는 `cancellation_token` 개체를 정의해야 합니다. 섹션 [예: 및 xaml C++ ](#example-app) 을 사용 하 여 Windows 런타임 앱에서 실행을 제어 하는 Windows 런타임 C# C++ 것은 및 xaml을 사용 하 여 유니버설 Windows 플랫폼 (UWP) 앱에서 취소를 수행 하는 방법에 대 한 예제를 보여 줍니다.
+`IAsyncAction`, `IAsyncActionWithProgress<TProgress>`, `IAsyncOperation<TResult>`및 `IAsyncActionOperationWithProgress<TProgress, TProgress>` 인터페이스는 비동기 작업을 취소하는 데 사용할 수 있는 `Cancel` 메서드를 각기 제공합니다. `task` 클래스는 취소 토큰과 함께 작동합니다. 취소 토큰을 사용하여 작업을 취소하면 런타임에서 해당 토큰을 구독하는 새 작업을 시작하지 않습니다. 이미 활성화된 작업은 취소 토큰을 모니터링하고 가능한 경우 중지할 수 있습니다. 이 메커니즘에 대해서는 [Cancellation in the PPL](cancellation-in-the-ppl.md)문서에 자세히 설명되어 있습니다. Windows 런타임`Cancel` 메서드와 작업 취소를 두 가지 방법으로 연결할 수 있습니다. 첫째, `create_async` concurrency::cancellation_token [개체를 사용하도록](../../parallel/concrt/reference/cancellation-token-class.md) 에 전달하는 작업 함수를 정의할 수 있습니다. 메서드가 호출 되 면이 취소 토큰이 취소 되 고 일반적인 취소 규칙이 `create_async` 호출을 지 원하는 기본 `task` 개체에 적용 됩니다. `Cancel` `cancellation_token` 개체를 제공하지 않는 경우 내부 `task` 개체는 암시적으로 이 개체를 정의합니다. 작업 함수에서 취소에 협조적으로 응답해야 하는 경우에는 `cancellation_token` 개체를 정의해야 합니다. 섹션 [예: 및 xaml C++ ](#example-app) 을 사용 하 여 Windows 런타임 앱에서 실행을 제어 하는 Windows 런타임 C# C++ 것은 및 xaml을 사용 하 여 유니버설 Windows 플랫폼 (UWP) 앱에서 취소를 수행 하는 방법에 대 한 예제를 보여 줍니다.
 
 > [!WARNING]
->  작업 연속의 체인에서는 취소 토큰이 취소될 때 항상 상태를 정리한 다음 [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) 를 호출해야 합니다. `cancel_current_task`를 호출하지 않고 조기에 반환하는 경우 작업이 취소된 상태가 아니라 완료된 상태로 전환됩니다.
+>  작업 연속의 체인에서는 취소 토큰이 취소 될 때 항상 상태를 정리 하 고 [concurrency:: cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) 를 호출 합니다. `cancel_current_task`를 호출하지 않고 조기에 반환하는 경우 작업이 취소된 상태가 아니라 완료된 상태로 전환됩니다.
 
 다음 표에는 앱에서 비동기 작업을 정의하는 데 사용할 수 있는 조합이 요약되어 있습니다.
 
@@ -161,7 +161,7 @@ MainPage.xaml에서 `Grid` 요소를 업데이트하여 `ProgressRing` 요소와
 
 [!code-xml[concrt-windowsstore-commonwords#1](../../parallel/concrt/codesnippet/xaml/creating-asynchronous-operations-in-cpp-for-windows-store-apps_6.xaml)]
 
-pch.h에 다음 `#include` 문을 추가합니다.
+Pch에 다음 `#include` 문을 추가합니다.
 
 [!code-cpp[concrt-windowsstore-commonwords#2](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_7.h)]
 

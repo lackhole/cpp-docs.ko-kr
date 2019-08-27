@@ -1,5 +1,5 @@
 ---
-title: /GA(Windows 응용 프로그램 최적화)
+title: /GA(Windows 애플리케이션 최적화)
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCCLCompilerTool.OptimizeForWindowsApplication
@@ -17,7 +17,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/15/2019
 ms.locfileid: "69492860"
 ---
-# <a name="ga-optimize-for-windows-application"></a>/GA(Windows 응용 프로그램 최적화)
+# <a name="ga-optimize-for-windows-application"></a>/GA(Windows 애플리케이션 최적화)
 
 스레드 로컬 저장소(TLS) 변수에 액세스하는 효율적인 코드의 .exe 파일이 생성됩니다.
 

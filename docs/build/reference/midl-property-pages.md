@@ -47,12 +47,12 @@ f1_keywords:
 - VC.Project.VCMidlTool.RedirectOutputAndErrors
 - VC.Project.VCMidlTool.MinimumTargetSystem
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 8174f6382ea2dab4ef2a49f5d30a6e27e8af3f5b
-ms.sourcegitcommit: ce3393846c86e7905ff0c86e4cd6610476809585
+ms.openlocfilehash: 0113fbd68d7687236b91b098ead2ac6b8338fee9
+ms.sourcegitcommit: af4ab63866ed09b5988ed53f1bb6996a54f02484
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68492159"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787068"
 ---
 # <a name="midl-property-pages"></a>MIDL 속성 페이지
 
@@ -70,7 +70,7 @@ MIDL 매크로 ([/d](/windows/win32/midl/-d))\[매크로\]를 포함 한 하나 
 
 ### <a name="additional-metadata-directories"></a>추가 메타 데이터 디렉터리
 
-\][](/windows/win32/midl/-metadata-dir) /Metadata_dir\[경로 (파일 경로)를 포함 하는 디렉터리를 지정 합니다.
+파일 경로([/Metadata_dir](/windows/win32/midl/-metadata-dir) \[경로\])를 포함 하는 디렉터리를 지정합니다.
 
 ### <a name="enable-windows-runtime"></a>Windows 런타임 사용
 
@@ -129,15 +129,15 @@ MIDL에서 모든 경고를 오류 ([/wx](/windows/win32/midl/-wx))로 처리할
 
 ### <a name="generate-stubless-proxies"></a>스텁 없는 프록시 생성
 
-개체 인터페이스 ([/Oicf](/windows/win32/midl/-Oicf), [/oicf](/windows/win32/midl/-Oif) )에 대해 확장 및 스텁 없는 프록시로 완전히 해석 된 스텁을 생성 합니다.
+개체 인터페이스 ([/Oicf](/windows/win32/midl/-oi), [/oicf](/windows/win32/midl/-oi) )에 대해 확장 및 스텁 없는 프록시로 완전히 해석 된 스텁을 생성 합니다.
 
 ### <a name="suppress-compiler-warnings"></a>컴파일러 경고 표시 안 함
 
-컴파일러 경고 메시지 ([/no_l](/windows/win32/midl/-no_warn))를 표시 하지 않습니다.
+컴파일러 경고 메시지 ([/no_l](/windows/win32/midl/-no-warn))를 표시 하지 않습니다.
 
 ### <a name="application-configuration-mode"></a>응용 프로그램 구성 모드
 
-IDL 파일 ([/app_config](/windows/win32/midl/-app_config))에서 선택한 ACF 특성을 허용 합니다.
+IDL 파일 ([/app_config](/windows/win32/midl/-app-config))에서 선택한 ACF 특성을 허용 합니다.
 
 ### <a name="locale-id"></a>로캘 ID
 
@@ -220,7 +220,7 @@ DLLDATA.C 파일 ([/dlldata](/windows/win32/midl/-dlldata) filename)의 이름�
 
 ### <a name="c-preprocess-options"></a>C 전처리 옵션
 
-C 컴파일러 전처리기 ([/cpp_opt](/windows/win32/midl/-cpp_opt) 스위치)에 전달할 스위치를 지정 합니다.
+C 컴파일러 전처리기 ([/cpp_opt](/windows/win32/midl/-cpp-opt) 스위치)에 전달할 스위치를 지정 합니다.
 
 ### <a name="undefine-preprocessor-definitions"></a>전처리기 정의 해제
 
@@ -258,15 +258,15 @@ MIDL 매크로 ([/u](/windows/win32/midl/-U) [macros])를 포함 하 여 하나 
 
 ### <a name="prepend-with-abi-namespace"></a>' ABI ' 네임 스페이스 앞에 추가
 
-' ABI ' 네임 스페이스를 모든 형식에 추가 합니다.  ([/ns_prefix](/windows/win32/midl/-ns_prefix)).
+' ABI ' 네임 스페이스를 모든 형식에 추가 합니다.  ([/ns_prefix](/windows/win32/midl/-ns-prefix)).
 
 ### <a name="validate-parameters"></a>매개 변수 유효성 검사
 
-매개 변수의 유효성을 검사 하는 추가 정보를 생성 합니다 ([/robust](/windows/win32/midl/-robust) | [/robust](/windows/win32/midl/-no_robust)).
+매개 변수의 유효성을 검사 하는 추가 정보를 생성 합니다([/robust](/windows/win32/midl/-robust) | [/no_robust](/windows/win32/midl/-no-robust)).
 
 ### <a name="struct-member-alignment"></a>구조체 멤버 맞춤
 
-대상 시스템 ([/Zpn](/windows/win32/midl/-zpn))에서 구조의 압축 수준을 지정 합니다.
+대상 시스템 (/ZpN)에서 구조의 압축 수준을 지정 합니다.
 
 **시**
 

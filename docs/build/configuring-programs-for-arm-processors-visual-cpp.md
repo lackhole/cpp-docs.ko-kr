@@ -16,7 +16,7 @@ ms.locfileid: "62273830"
 ## <a name="in-this-section"></a>섹션 내용
 
 [ARM ABI 규칙 개요](overview-of-arm-abi-conventions.md)<br/>
-Windows on ARM에서 사용 등록, 호출 규칙 및 예외 처리에 사용하는 응용 프로그램 이진 인터페이스에 대해 설명합니다.
+Windows on ARM에서 사용 등록, 호출 규칙 및 예외 처리에 사용하는 애플리케이션 이진 인터페이스에 대해 설명합니다.
 
 [ARM64 ABI 규칙 개요](arm64-windows-abi-conventions.md)<br/>
 ARM64에서 Windows 등록 사용, 호출 규칙 및 예외 처리에 대 한 사용 하는 응용 프로그램 이진 인터페이스를 설명 합니다.

@@ -1,16 +1,16 @@
 ---
 title: '연습: 사용자 인터페이스 스레드에서 작업 제거'
-ms.date: 04/25/2019
+ms.date: 08/19/2019
 helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-ms.openlocfilehash: 214796777968c8aec7116a848e791aeef0d3af7b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 2ee15d4660984c9afb77cb20f8ef0dab25a8b933
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69512259"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69631704"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>연습: 사용자 인터페이스 스레드에서 작업 제거
 
@@ -18,7 +18,7 @@ ms.locfileid: "69512259"
 
 차단 작업 (예: drawing)을 작업자 스레드에 오프 로드 하 여 UI 스레드에서 작업을 제거 하면 응용 프로그램의 응답성이 향상 됩니다. 이 연습에서는 만델브로트 프랙탈을 생성 하는 그리기 루틴을 사용 하 여 긴 차단 작업을 보여 줍니다. 각 픽셀의 계산은 다른 모든 계산과 독립적 이기 때문에 만델브로트 프랙탈을 생성 하는 것도 병렬 처리에 적합 한 후보입니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 이 연습을 시작 하기 전에 다음 항목을 참조 하세요.
 
@@ -70,7 +70,7 @@ ms.locfileid: "69512259"
 
 #### <a name="to-implement-the-serial-version-of-the-mandelbrot-application"></a>만델브로트 응용 프로그램의 일련 버전을 구현 하려면
 
-1. Stdafx.h에서 다음 `#include` 지시문을 추가 합니다.
+1. *Pch .h* (Visual Studio 2017 및 이전 버전의*stdafx.h* )에서 다음 `#include` 지시문을 추가 합니다.
 
    [!code-cpp[concrt-mandelbrot#1](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_1.h)]
 
@@ -124,7 +124,7 @@ ms.locfileid: "69512259"
 
 #### <a name="to-remove-the-drawing-work-from-the-ui-thread"></a>UI 스레드에서 그리기 작업을 제거 하려면
 
-1. Stdafx.h에서 다음 `#include` 지시문을 추가 합니다.
+1. *Pch .h* (Visual Studio 2017 및 이전 버전의*stdafx.h* )에서 다음 `#include` 지시문을 추가 합니다.
 
    [!code-cpp[concrt-mandelbrot#101](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_9.h)]
 

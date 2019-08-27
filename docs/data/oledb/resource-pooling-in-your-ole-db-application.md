@@ -1,5 +1,5 @@
 ---
-title: OLE DB 응용 프로그램의 리소스 풀링
+title: OLE DB 애플리케이션의 리소스 풀링
 ms.date: 10/29/2018
 helpviewer_keywords:
 - OLE DB services [OLE DB], resource pooling
@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 2ead1bcf-bbd4-43ea-a307-bb694b992fc1
 ms.openlocfilehash: 786c2b31bb93b0691d80885c86377e2afba8c1dc
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62243967"
 ---
-# <a name="resource-pooling-in-your-ole-db-application"></a>OLE DB 응용 프로그램의 리소스 풀링
+# <a name="resource-pooling-in-your-ole-db-application"></a>OLE DB 애플리케이션의 리소스 풀링
 
 응용 프로그램의 풀링을 활용 하려면 데이터 소스를 통과 하 여 OLE DB 서비스를 호출 하는지 확인 해야 `IDataInitialize` 또는 `IDBPromptInitialize`합니다. 직접 사용 하는 경우 `CoCreateInstance` 공급자의 CLSID를 기반으로 하는 공급자를 호출 하려면 OLE DB 서비스가 호출 됩니다.
 

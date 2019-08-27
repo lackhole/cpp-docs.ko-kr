@@ -1,17 +1,17 @@
 ---
-title: ODBC 데이터베이스 응용 프로그램 디자인과 작성
+title: ODBC 데이터베이스 애플리케이션 디자인과 작성
 ms.date: 11/04/2016
 helpviewer_keywords:
 - application design [C++], database applications
 ms.assetid: 0eb106b3-91b7-4c42-8c93-a8224aa9fe12
 ms.openlocfilehash: 8dcf2e4c90bd0a9a32a2cf2403ef4b4b0bf11a7b
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62395965"
 ---
-# <a name="design-and-create-an-odbc-database-application"></a>ODBC 데이터베이스 응용 프로그램 디자인과 작성
+# <a name="design-and-create-an-odbc-database-application"></a>ODBC 데이터베이스 애플리케이션 디자인과 작성
 
 다음 항목은 ODBC 데이터베이스 응용 프로그램을 디자인하고 설정하는 데 도움이 됩니다.
 

@@ -29,7 +29,7 @@ int print( double dvalue, int prec );  // Print a double with a
 //  given precision.
 ```
 
-많은 응용 프로그램에서 `prec`에 대한 적절한 기본값을 제공하여 두 함수의 필요성을 없앨 수 있습니다.
+많은 애플리케이션에서 `prec`에 대한 적절한 기본값을 제공하여 두 함수의 필요성을 없앨 수 있습니다.
 
 ```cpp
 // Prototype two print functions.

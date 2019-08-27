@@ -315,7 +315,7 @@ enum task_group_status;
 
 ##  <a name="winrtinitializationtype"></a>  WinRTInitializationType 열거형
 
-`WinRTInitialization` 정책에서 Windows 8 또는 그 이상 버전의 운영 체제에서 실행되는 응용 프로그램에 대한 스케줄러 스레드에서 Windows 런타임이 초기화될지 여부와 초기화되는 방법을 설명하는데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
+`WinRTInitialization` 정책에서 Windows 8 또는 그 이상 버전의 운영 체제에서 실행되는 애플리케이션에 대한 스케줄러 스레드에서 Windows 런타임이 초기화될지 여부와 초기화되는 방법을 설명하는데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
 
 ```
 enum WinRTInitializationType;
@@ -325,8 +325,8 @@ enum WinRTInitializationType;
 
 |이름|설명|
 |----------|-----------------|
-|`DoNotInitializeWinRT`|응용 프로그램이 Windows 8 또는 그 이상 버전의 운영 체제에서 실행될 경우 스케줄러 내의 스레드는 Windows 런타임을 초기화하지 않습니다.|
-|`InitializeWinRTAsMTA`|응용 프로그램이 Windows 8 또는 그 이상 버전의 운영 체제에서 실행할 경우 스케줄러 내의 각 스레드는 Windows 런타임을 초기화하고 이것을 멀티스레드의 일부로 선언합니다.|
+|`DoNotInitializeWinRT`|애플리케이션이 Windows 8 또는 그 이상 버전의 운영 체제에서 실행될 경우 스케줄러 내의 스레드는 Windows 런타임을 초기화하지 않습니다.|
+|`InitializeWinRTAsMTA`|애플리케이션이 Windows 8 또는 그 이상 버전의 운영 체제에서 실행할 경우 스케줄러 내의 각 스레드는 Windows 런타임을 초기화하고 이것을 멀티스레드의 일부로 선언합니다.|
 
 ## <a name="requirements"></a>요구 사항
 

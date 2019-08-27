@@ -13,7 +13,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68448660"
 ---
-# <a name="lthashmapgt"></a>&lt;hash_map&gt;
+# <a name="lthash_mapgt"></a>&lt;hash_map&gt;
 
 > [!NOTE]
 > 이 헤더는 사용되지 않습니다. 대안은 unordered_map >입니다. [ \<](unordered-map.md)
@@ -45,8 +45,8 @@ ms.locfileid: "68448660"
 |-|-|
 |[hash_compare 클래스](hash-compare-class.md)|해시 연관 컨테이너 (hash_map, hash_multimap, hash_set 또는 hash_multiset) 중 하나에서 사용할 수 있는 개체를 설명 합니다 .이 개체에는 `Traits` 포함 된 요소를 정렬 하 고 해시 하는 기본 매개 변수 개체로 사용할 수 있습니다.|
 |[value_compare 클래스](value-compare-class.md)|키 값 비교를 통해 hash_map의 요소를 비교하여 hash_map 내의 상대 순서를 확인할 수 있는 함수 개체를 제공합니다.|
-|[hash_map 클래스](hash-map-class.md)|각 요소가 값이 고유하고 연결된 데이터 값인 정렬 키가 있는 쌍인 컬렉션에서 데이터를 신속하게 저장하고 검색하는 데 사용됩니다.|
-|[hash_multimap 클래스](hash-multimap-class.md)|각 요소가 값이 고유하고 연결된 데이터 값이 아니어도 되는 정렬 키가 있는 쌍인 컬렉션에서 데이터를 신속하게 저장하고 검색합니다.|
+|[hash_map 클래스](hash-map-class.md)|각 요소가 값이 고유하고 연결된 데이터 값인 정렬 키가 있는 쌍인 컬렉션에서 데이터를 신속하게 스토리지하고 검색하는 데 사용됩니다.|
+|[hash_multimap 클래스](hash-multimap-class.md)|각 요소가 값이 고유하고 연결된 데이터 값이 아니어도 되는 정렬 키가 있는 쌍인 컬렉션에서 데이터를 신속하게 스토리지하고 검색합니다.|
 
 ## <a name="requirements"></a>요구 사항
 

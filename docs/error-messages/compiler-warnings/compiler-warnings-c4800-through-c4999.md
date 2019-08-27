@@ -153,12 +153,12 @@ helpviewer_keywords:
 - C5105
 - C5106
 - C5107
-ms.openlocfilehash: 518efdd74a90198818538c1548adb2b7ff37290c
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
+ms.openlocfilehash: ae73d4ba503dfbbc27f91040c31beb91da3b7e54
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821132"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69631546"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>컴파일러 경고 C4800 ~ C5999
 
@@ -266,7 +266,8 @@ ms.locfileid: "68821132"
 |컴파일러 경고 (수준 1) C4973|'*symbol*': 사용 되지 않는 것으로 표시 됨|
 |컴파일러 경고 (수준 1) C4974|'*symbol*': 사용 되지 않는 것으로 표시 됨|
 |컴파일러 경고 (수준 3) C4981|Warbird: '*function*' 함수는 예외 의미를 포함 하 고 있으므로 __forceinline로 표시 되지 않았습니다.|
-|컴파일러 경고 (수준 3) C4985|기호 이름 ': 이전 선언에 특성이 없습니다.|
+|[컴파일러 경고 C4984](compiler-warning-c4984.md)|' i n t e r '는 c + + 17 언어 확장입니다.|
+|컴파일러 경고 (수준 3) C4985|'*symbol_name*': 이전 선언에 특성이 없습니다.|
 |[컴파일러 경고 C4986](compiler-warning-c4986.md)|'*선언*': 예외 사양이 이전 선언과 일치 하지 않습니다.|
 |컴파일러 경고 (수준 4) C4987|비표준 확장 사용: 'throw (...)'|
 |컴파일러 경고 (수준 4) C4988|'*variable*': 클래스/함수 범위 밖에 변수가 선언 되었습니다.|

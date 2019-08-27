@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
 ms.openlocfilehash: 82c5faae68f9da747017119d76578cc88163d8bb
 ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65222032"
@@ -71,9 +71,9 @@ void f() throw(int); // parsed but not used
 void g() throw();    // parsed and used
 ```
 
-예외 사양에 대한 자세한 내용은 [예외 사양](../cpp/exception-specifications-throw-cpp.md)을 참조하세요. 
+예외 사양에 대한 자세한 내용은 [예외 사양](../cpp/exception-specifications-throw-cpp.md)을 참조하세요.
 
-## <a name="chartraitseof"></a>char_traits::eof()
+## <a name="char_traitseof"></a>char_traits::eof()
 
 C++ 표준에는 [char_traits:: eof](../standard-library/char-traits-struct.md#eof)가 유효한 `char_type` 값에 해당하면 안된다고 기술되어 있습니다. Microsoft C++ 컴파일러는 형식에 대 한이 제약 조건은 **char**에 형식이 아니라 **wchar_t**합니다. 이것은 C++ ISO 사양의 섹션 12.1.1, 표 62의 요구 사항에 맞지 않습니다. 아래 예제에서는 이 작업을 보여 줍니다.
 
@@ -92,6 +92,6 @@ int main()
 }
 ```
 
-## <a name="storage-location-of-objects"></a>개체 저장소 위치
+## <a name="storage-location-of-objects"></a>개체 스토리지 위치
 
-C++ 표준(단원 1.8, 6항)에서는 전체 C++ 개체에 고유한 저장소 위치가 있어야 합니다. 그러나 microsoft C++, 여기서 데이터 멤버가 없는 형식이와 공유 하는 저장소 위치를 다른 형식 개체의 수명에 대 한 경우가 있습니다.
+C++ 표준(단원 1.8, 6항)에서는 전체 C++ 개체에 고유한 스토리지 위치가 있어야 합니다. 그러나 microsoft C++, 여기서 데이터 멤버가 없는 형식이와 공유 하는 저장소 위치를 다른 형식 개체의 수명에 대 한 경우가 있습니다.

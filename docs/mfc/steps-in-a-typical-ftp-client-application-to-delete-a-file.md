@@ -1,5 +1,5 @@
 ---
-title: 일반적인 FTP 클라이언트 응용 프로그램에서 파일을 삭제하는 단계
+title: 일반적인 FTP 클라이언트 애플리케이션에서 파일을 삭제하는 단계
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Internet client applications [MFC], FTP delete
@@ -14,9 +14,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62307057"
 ---
-# <a name="steps-in-a-typical-ftp-client-application-to-delete-a-file"></a>일반적인 FTP 클라이언트 응용 프로그램에서 파일을 삭제하는 단계
+# <a name="steps-in-a-typical-ftp-client-application-to-delete-a-file"></a>일반적인 FTP 클라이언트 애플리케이션에서 파일을 삭제하는 단계
 
-다음 표에서는 파일을 삭제하는 일반적인 FTP 클라이언트 응용 프로그램에서 수행할 수 있는 단계를 보여 줍니다.
+다음 표에서는 파일을 삭제하는 일반적인 FTP 클라이언트 애플리케이션에서 수행할 수 있는 단계를 보여 줍니다.
 
 |목표|수행할 작업|효과|
 |---------------|----------------------|-------------|

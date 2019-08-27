@@ -6,28 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - C4687
 ms.assetid: 2f28e0b1-7358-4c88-bd70-aad8f0aa004c
-ms.openlocfilehash: 1978e1a35ba5b5d59b5961a21378d8af6921d145
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 83f5c535f9cf252783110838c181c88c8b0096ee
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62311333"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69631603"
 ---
 # <a name="compiler-warning-c4687"></a>컴파일러 경고 C4687
 
-'class': 봉인된 추상 클래스는 'interface' 인터페이스를 구현할 수 없습니다
+> '*class*': 봉인 된 추상 클래스는 '*interface*' 인터페이스를 구현할 수 없습니다.
 
-봉인 된 추상 형식은 일반적으로 정적 멤버 함수를 유지 하는 데만 합니다.
+## <a name="remarks"></a>설명
 
-자세한 내용은 [추상](../../extensions/abstract-cpp-component-extensions.md)하 고 [봉인](../../extensions/sealed-cpp-component-extensions.md)합니다.
+봉인 된 추상 형식은 일반적으로 정적 멤버 함수를 보유 하는 데만 유용 합니다.
 
-기본적으로 C4687 오류로 발생 합니다. C4687 표시 하지 않을 수 있습니다 합니다 [경고](../../preprocessor/warning.md) pragma입니다. 인 경우 추상, 봉인 된 형식에서 인터페이스를 구현 하려는 특정 C4687 억제할 수 있습니다.
+자세한 내용은 [abstract](../../extensions/abstract-cpp-component-extensions.md) 및 [sealed](../../extensions/sealed-cpp-component-extensions.md)를 참조 하세요.
+
+C4687은 기본적으로 오류로 발급 됩니다. [Warning](../../preprocessor/warning.md) pragma를 사용 하 여 C4687를 억제할 수 있습니다. 봉인 된 추상 형식에서 인터페이스를 구현 하려는 경우 C4687를 표시 하지 않을 수 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C4687를 생성합니다.
+다음 샘플에서는 C4687를 생성 합니다.
 
-```
+```cpp
 // C4687.cpp
 // compile with: /clr /c
 interface class A {};

@@ -1,5 +1,5 @@
 ---
-title: 응용 프로그램 마법사로 만든 프레임 창 클래스
+title: 애플리케이션 마법사로 만든 프레임 창 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - CMainFrame
@@ -21,7 +21,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62392819"
 ---
-# <a name="frame-window-classes-created-by-the-application-wizard"></a>응용 프로그램 마법사로 만든 프레임 창 클래스
+# <a name="frame-window-classes-created-by-the-application-wizard"></a>애플리케이션 마법사로 만든 프레임 창 클래스
 
 프로젝트를 새 MFC를 만들 수는 경우는 **새 프로젝트** 대화 상자에서 응용 프로그램, 문서 및 뷰 클래스를 실행 하는 것 외에도 응용 프로그램 마법사는 응용 프로그램의 주 프레임 창에 대 한 파생된 프레임 창 클래스를 만듭니다. 클래스 라고 `CMainFrame` 포함 된 파일과 기본적으로는 해당 이름이 지정 됩니다. H와 해당 합니다. CPP 합니다.
 

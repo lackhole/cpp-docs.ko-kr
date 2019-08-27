@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 1d6f5439-754f-4b8b-a19d-841a4657827b
 ms.openlocfilehash: 15a8afde8c86d3dae8198e8f42b2b7c3b49f0dfa
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62397967"
 ---
 # <a name="designing-and-creating-a-record-view--mfc-data-access"></a>레코드 뷰 디자인 및 만들기  (MFC Data Access)
 
-사용 하 여 레코드 뷰 클래스를 만들 수 있습니다 합니다 [MFC 응용 프로그램 마법사](../mfc/reference/database-support-mfc-application-wizard.md)합니다. 응용 프로그램 마법사를 사용하는 경우 마법사에서 레코드 뷰 클래스와 해당 클래스에 대한 대화 상자 템플릿 리소스(컨트롤은 없음)를 만듭니다. Visual C++ 대화 상자 편집기를 사용하여 대화 상자 템플릿 리소스에 컨트롤을 추가해야 합니다. 반면, 사용 하는 경우 **클래스 추가**, 먼저 대화 상자 템플릿 리소스 대화 상자에서 편집기 만들고 해야 다음 레코드 뷰 클래스를 만듭니다.
+사용 하 여 레코드 뷰 클래스를 만들 수 있습니다 합니다 [MFC 응용 프로그램 마법사](../mfc/reference/database-support-mfc-application-wizard.md)합니다. 애플리케이션 마법사를 사용하는 경우 마법사에서 레코드 뷰 클래스와 해당 클래스에 대한 대화 상자 템플릿 리소스(컨트롤은 없음)를 만듭니다. Visual C++ 대화 상자 편집기를 사용하여 대화 상자 템플릿 리소스에 컨트롤을 추가해야 합니다. 반면, 사용 하는 경우 **클래스 추가**, 먼저 대화 상자 템플릿 리소스 대화 상자에서 편집기 만들고 해야 다음 레코드 뷰 클래스를 만듭니다.
 
-#### <a name="to-create-your-record-view-with-the-mfc-application-wizard"></a>MFC 응용 프로그램 마법사를 사용하여 레코드 뷰를 만들려면
+#### <a name="to-create-your-record-view-with-the-mfc-application-wizard"></a>MFC 애플리케이션 마법사를 사용하여 레코드 뷰를 만들려면
 
 1. 참조 [데이터베이스 지원, MFC 응용 프로그램 마법사](../mfc/reference/database-support-mfc-application-wizard.md)합니다.
 

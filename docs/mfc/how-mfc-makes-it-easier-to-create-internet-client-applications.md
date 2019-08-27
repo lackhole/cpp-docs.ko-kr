@@ -1,5 +1,5 @@
 ---
-title: MFC를 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법
+title: MFC를 사용하여 인터넷 클라이언트 애플리케이션을 손쉽게 만드는 방법
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Internet client applications [MFC], MFC
@@ -13,7 +13,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62405757"
 ---
-# <a name="how-mfc-makes-it-easier-to-create-internet-client-applications"></a>MFC를 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법
+# <a name="how-mfc-makes-it-easier-to-create-internet-client-applications"></a>MFC를 사용하여 인터넷 클라이언트 애플리케이션을 손쉽게 만드는 방법
 
 Microsoft Foundation Classes MFC 프로그래머에 게 친숙 한 컨텍스트를 제공 하는 방식으로 Win32 인터넷 확장명 (WinInet) 함수를 캡슐화 합니다. MFC는 세 가지 인터넷 파일 클래스를 제공 ([CInternetFile](../mfc/reference/cinternetfile-class.md)를 [CHttpFile](../mfc/reference/chttpfile-class.md), 및 [CGopherFile](../mfc/reference/cgopherfile-class.md))에서 파생 된 [CStdioFile](../mfc/reference/cstdiofile-class.md) 클래스 . 뿐만 아니라 쉽게 검색 및 인터넷 데이터 조작을 사용 하는 프로그래머에 게 친숙 한 `CStdioFile` 일관 되 고 투명 한 방식으로 로컬 파일 및 인터넷 파일 로컬 파일에 대 한 있지만 이러한 클래스를 사용 하 여 처리할 수 있습니다.
 

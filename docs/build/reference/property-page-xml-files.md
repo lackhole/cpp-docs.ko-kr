@@ -4,12 +4,12 @@ ms.date: 05/06/2019
 helpviewer_keywords:
 - property page XML files
 ms.assetid: dd9d9734-4387-4098-8ba6-85b93507731d
-ms.openlocfilehash: f23c252604c5b69423b808b3b9f072889e38c816
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 76378dc5ef9d7443045c329579cfa3c410dc262f
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837443"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630750"
 ---
 # <a name="property-page-xml-rule-files"></a>속성 페이지 XML 규칙 파일
 
@@ -25,7 +25,7 @@ IDE의 프로젝트 속성 페이지는 VCTargets 폴더의 XML 파일로 구성
 
 위에 표시된 것처럼, 각 규칙에는 범주로 구성된 속성 집합이 있습니다. 규칙 아래의 각 하위 노드는 범주를 나타냅니다. 예를 들어 C/C++ 아래의 최적화 노드에는 컴파일러 도구의 모든 최적화 관련 속성이 포함되어 있습니다. 속성 및 해당 값 자체는 오른쪽 창에 그리드 형식으로 렌더링됩니다.
 
-메모장이나 XML 편집기에서 cl.xml을 열 수 있습니다(아래 스냅숏 참조). 추가 메타 데이터와 함께 UI에 표시되는 것과 동일한 속성 목록이 아래에 정의된 규칙이라는 루트 노드가 표시됩니다.
+메모장이나 XML 편집기에서 cl.xml을 열 수 있습니다(아래 스냅샷 참조). 추가 메타 데이터와 함께 UI에 표시되는 것과 동일한 속성 목록이 아래에 정의된 규칙이라는 루트 노드가 표시됩니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -119,7 +119,7 @@ Cl.xml의 모든 데이터를 제거하면 다음과 같은 구조로 끝납니�
       </ItemDefinitionGroup>
       ```
 
-      이 값이 stdafx.cpp와 같은 특정 파일의 속성 페이지에 설정된 경우, 속성 값은 아래와 같이 프로젝트 파일의 stdafx.cpp 항목 아래에 기록됩니다. 구성 조건이 메타데이터에 직접 연결되는 방법을 확인합니다.
+      이 값이 stdafx.h와 같은 특정 파일의 속성 페이지에서 설정 된 경우 속성 값은 아래와 같이 프로젝트 파일의 *stdafx.h* 항목 아래에 기록 됩니다. 구성 조건이 메타데이터에 직접 연결되는 방법을 확인합니다.
 
       ```xml
       <ItemGroup>
