@@ -1,6 +1,6 @@
 ---
 title: 레지스트리 매크로
-ms.date: 11/04/2016
+ms.date: 08/19/2019
 f1_keywords:
 - atlcom/ATL::_ATL_STATIC_REGISTRY
 - atlcom/ATL::DECLARE_LIBID
@@ -12,34 +12,34 @@ f1_keywords:
 helpviewer_keywords:
 - registry, ATL macros
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
-ms.openlocfilehash: 8e05d6a47ea67138e8d1d456077526dd3178cc44
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c2a70c15473798ba6eb2ef35e0b7ded395708586
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274644"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630627"
 ---
 # <a name="registry-macros"></a>레지스트리 매크로
 
-이러한 매크로 유용한 형식 라이브러리 및 레지스트리 기능을 정의합니다.
+이러한 매크로는 유용한 형식 라이브러리 및 레지스트리 기능을 정의 합니다.
 
 |||
 |-|-|
-|[_ATL_STATIC_REGISTRY](#_atl_static_registry)|ATL.에 대 한 종속성을 방지 하려면 개체에 개체에 대 한 등록 코드를 원하는 지 나타냅니다. DLL입니다.|
-|[DECLARE_LIBID](#declare_libid)|ATL 가져오는 방법을 제공 합니다 *libid* 형식 라이브러리의 합니다.|
-|[DECLARE_NO_REGISTRY](#declare_no_registry)|기본 ATL 등록을 방지합니다.|
-|[DECLARE_REGISTRY](#declare_registry)|입력 또는 시스템 레지스트리에 기본 개체의 항목을 제거 합니다.|
-|[DECLARE_REGISTRY_APPID_RESOURCEID](#declare_registry_appid_resourceid)|자동으로 등록 하는 데 필요한 정보를 지정 합니다 *appid*합니다.|
-|[DECLARE_REGISTRY_RESOURCE](#declare_registry_resource)|명명 된 리소스를 찾아 그 레지스트리 스크립트를 실행 합니다.|
-|[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|ID 번호로 식별 되는 리소스를 찾아 그 레지스트리 스크립트를 실행 합니다.|
+|[_ATL_STATIC_REGISTRY](#_atl_static_registry)|ATL에 대 한 종속성을 방지 하기 위해 개체에 대 한 등록 코드를 개체에 표시 하도록 지정 합니다. GDIPLUS.DLL.|
+|[DECLARE_LIBID](#declare_libid)|ATL이 형식 라이브러리의 *libid* 를 가져오는 방법을 제공 합니다.|
+|[DECLARE_NO_REGISTRY](#declare_no_registry)|기본 ATL 등록을 방지 합니다.|
+|[DECLARE_REGISTRY](#declare_registry)|시스템 레지스트리에서 주 개체의 항목을 입력 하거나 제거 합니다.|
+|[DECLARE_REGISTRY_APPID_RESOURCEID](#declare_registry_appid_resourceid)|*Appid*를 자동으로 등록 하는 데 필요한 정보를 지정 합니다.|
+|[DECLARE_REGISTRY_RESOURCE](#declare_registry_resource)|명명 된 리소스를 찾고 그 안에 있는 레지스트리 스크립트를 실행 합니다.|
+|[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|ID 번호로 식별 되는 리소스를 찾아서 그 안에 있는 레지스트리 스크립트를 실행 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlcom.h
+**헤더:**
 
 ##  <a name="_atl_static_registry"></a>  _ATL_STATIC_REGISTRY
 
-원하는 ATL.에 대 한 종속성을 방지 하려면 개체에 개체에 대 한 등록 코드를 나타내는 기호 DLL입니다.
+ATL에 대 한 종속성을 방지 하기 위해 개체의 등록 코드를 개체에 표시 하도록 지정 하는 기호입니다. GDIPLUS.DLL.
 
 ```
 #define _ATL_STATIC_REGISTRY
@@ -47,13 +47,13 @@ ms.locfileid: "62274644"
 
 ### <a name="remarks"></a>설명
 
-ATL_STATIC_REGISTRY를 정의할 때 다음 코드를 사용 해야 합니다.
+ATL_STATIC_REGISTRY를 정의 하는 경우 다음 코드를 사용 해야 합니다.
 
 [!code-cpp[NVC_ATL_EventHandlingSample#5](../../atl/codesnippet/cpp/registry-macros_1.cpp)]
 
 ##  <a name="declare_libid"></a>  DECLARE_LIBID
 
-ATL 가져오는 방법을 제공 합니다 *libid* 형식 라이브러리의 합니다.
+ATL이 형식 라이브러리의 *libid* 를 가져오는 방법을 제공 합니다.
 
 ```
 DECLARE_LIBID( libid )
@@ -66,15 +66,15 @@ DECLARE_LIBID( libid )
 
 ### <a name="remarks"></a>설명
 
-DECLARE_LIBID 사용을 `CAtlModuleT`-클래스를 파생 합니다.
+파생 클래스에서 `CAtlModuleT`DECLARE_LIBID를 사용 합니다.
 
 ### <a name="example"></a>예제
 
-ATL 프로젝트 마법사에서 생성 되지 않은 특성을 사용이 매크로 사용 하 여 예제를 사용 합니다.
+특성을 사용 하지 않는 마법사에서 생성 된 ATL 프로젝트에는이 매크로를 사용 하는 샘플이 있습니다.
 
 ##  <a name="declare_no_registry"></a>  DECLARE_NO_REGISTRY
 
-이 매크로 표시 되는 클래스에 대 한 모든 기본 ATL 등록 하지 않으려는 경우 DECLARE_NO_REGISTRY를 사용 합니다.
+이 매크로가 표시 되는 클래스에 대 한 기본 ATL 등록을 방지 하려면 DECLARE_NO_REGISTRY를 사용 합니다.
 
 ```
 DECLARE_NO_REGISTRY()
@@ -82,7 +82,7 @@ DECLARE_NO_REGISTRY()
 
 ##  <a name="declare_registry"></a>  DECLARE_REGISTRY
 
-표준 클래스 등록 시스템 레지스트리에 입력 하거나 시스템 레지스트리에서 제거 합니다.
+시스템 레지스트리에 표준 클래스 등록을 입력 하거나 시스템 레지스트리에서 제거 합니다.
 
 ```
 DECLARE_REGISTRY(
@@ -96,29 +96,29 @@ DECLARE_REGISTRY(
 ### <a name="parameters"></a>매개 변수
 
 *class*<br/>
-[in] 이전 버전과 호환성을 위해 포함 되어 있습니다.
+진행 이전 버전과의 호환성을 위해 포함 되었습니다.
 
 *pid*<br/>
-[in] 버전별 프로그램 식별자가는 LPCTSTR 합니다.
+진행 버전별 프로그램 식별자 인 LPCTSTR.
 
 *vpid*<br/>
-[in] 버전에 관계 없이 프로그램 식별자가는 LPCTSTR 합니다.
+진행 버전 독립적 프로그램 식별자 인 LPCTSTR.
 
 *nid*<br/>
-[in] UINT 프로그램 설명으로 사용 하도록 레지스트리를의 리소스 문자열의 인덱스입니다.
+진행 프로그램에 대 한 설명으로 사용할 레지스트리의 리소스 문자열 인덱스에 해당 하는 UINT입니다.
 
 *flags*<br/>
-[in] 레지스트리에서 프로그램의 스레딩 모델을 포함 하는 DWORD. 다음 값 중 하나 여야 합니다. THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, 또는 AUTPRXFLAG 합니다.
+진행 레지스트리의 프로그램 스레딩 모델을 포함 하는 DWORD입니다. 다음 값 중 하나 여야 합니다. THREADFLAGS_APARTMENT, THREADFLAGS_BOTH 또는 AUTPRXFLAG입니다.
 
 ### <a name="remarks"></a>설명
 
-표준 등록 CLSID, 프로그램 ID, 버전 독립 프로그램 ID, 설명 문자열 및 스레드 모델 구성 됩니다.
+표준 등록은 CLSID, 프로그램 ID, 버전 독립 프로그램 ID, 설명 문자열 및 스레드 모델로 구성 됩니다.
 
-개체를 만들거나 ATL 클래스 추가 마법사를 사용 하 여 제어 하는 경우 마법사를 자동으로 레지스트리 스크립트 기반 지원을 구현 하 고 추가 합니다 [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) 파일에는 매크로입니다. 스크립트 기반 레지스트리 지원 하지 않으려면 DECLARE_REGISTRY를 사용 하 여이 매크로 대체 해야 합니다. DECLARE_REGISTRY만 레지스트리에 위에서 설명한 5 개의 기본 키를 삽입 합니다. 수동으로 레지스트리로 다른 키를 삽입 하는 코드를 작성 해야 합니다.
+ATL 클래스 추가 마법사를 사용 하 여 개체 또는 컨트롤을 만들면 마법사에서 자동으로 스크립트 기반 레지스트리 지원을 구현 하 고 [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) 매크로를 파일에 추가 합니다. 스크립트 기반 레지스트리 지원을 원하지 않는 경우이 매크로를 DECLARE_REGISTRY으로 바꾸어야 합니다. DECLARE_REGISTRY는 위에 설명 된 5 개의 기본 키만 레지스트리에 삽입 합니다. 레지스트리에 다른 키를 삽입 하는 코드를 수동으로 작성 해야 합니다.
 
 ##  <a name="declare_registry_appid_resourceid"></a>  DECLARE_REGISTRY_APPID_RESOURCEID
 
-자동으로 등록 하는 데 필요한 정보를 지정 합니다 *appid*합니다.
+*Appid*를 자동으로 등록 하는 데 필요한 정보를 지정 합니다.
 
 ```
 DECLARE_REGISTRY_APPID_RESOURCEID(
@@ -129,22 +129,22 @@ DECLARE_REGISTRY_APPID_RESOURCEID(
 ### <a name="parameters"></a>매개 변수
 
 *resid*<br/>
-에 대 한 정보를 포함 하는.rgs 파일의 리소스 id를 *appid*합니다.
+*Appid*에 대 한 정보가 포함 된 .rgs 파일의 리소스 id입니다.
 
 *appid*<br/>
 GUID
 
 ### <a name="remarks"></a>설명
 
-DECLARE_REGISTRY_APPID_RESOURCEID 사용을 `CAtlModuleT`-클래스를 파생 합니다.
+파생 클래스에서 `CAtlModuleT`DECLARE_REGISTRY_APPID_RESOURCEID를 사용 합니다.
 
 ### <a name="example"></a>예제
 
-클래스 추가 코드 마법사를 사용 하 여 ATL 프로젝트에 추가 하는 클래스는이 매크로 사용 하는 예제를 갖게 됩니다.
+클래스 코드 추가 마법사를 사용 하 여 ATL 프로젝트에 추가 된 클래스에는이 매크로를 사용 하는 샘플이 포함 됩니다.
 
 ##  <a name="declare_registry_resource"></a>  DECLARE_REGISTRY_RESOURCE
 
-레지스트리 파일을 포함 하는 명명 된 리소스를 가져오고 개체를 시스템 레지스트리에 입력 하거나 시스템 레지스트리에서 제거 스크립트를 실행 합니다.
+레지스트리 파일을 포함 하는 명명 된 리소스를 가져오고 스크립트를 실행 하 여 시스템 레지스트리에 개체를 입력 하거나 시스템 레지스트리에서 제거 합니다.
 
 ```
 DECLARE_REGISTRY_RESOURCE( x )
@@ -153,23 +153,23 @@ DECLARE_REGISTRY_RESOURCE( x )
 ### <a name="parameters"></a>매개 변수
 
 *x*<br/>
-[in] 리소스의 식별자는 문자열입니다.
+진행 리소스의 문자열 식별자입니다.
 
 ### <a name="remarks"></a>설명
 
-개체를 만들거나 ATL 프로젝트 마법사를 사용 하 여 제어 하는 경우 마법사는 자동으로 레지스트리 스크립트 기반 지원을 구현 하 고 추가 합니다 [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) DECLARE_REGISTRY_ 비슷한 매크로 리소스 파일입니다.
+ATL 프로젝트 마법사를 사용 하 여 개체 또는 컨트롤을 만들면 마법사에서 자동으로 스크립트 기반 레지스트리 지원을 구현 하 고 DECLARE_REGISTRY_RESOURCE와 유사한 [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) 매크로를 파일에 추가 합니다.
 
-ATL 레지스트리 구성 요소 (등록자)에 최적화 된 레지스트리 액세스를 사용 하 여 정적으로 연결할 수 있습니다. 등록자 코드를 정적으로 연결할 stdafx.h 파일에 다음 줄을 추가 합니다.
+최적화 된 레지스트리 액세스를 위해 ATL 레지스트리 구성 요소 (등록자)에 정적으로 연결할 수 있습니다. 등록자 코드에 정적으로 연결 하려면 *.pch* 파일 (Visual Studio 2017 및 이전 버전의*stdafx.h* )에 다음 줄을 추가 합니다.
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
-런타임 시 대체 값으로 대체 하는 ATL 원한다 면 DECLARE_REGISTRY_RESOURCE 또는 DECLARE_REGISTRY_RESOURCEID 매크로 지정 하지 마십시오. 대신, 배열을 만든 `_ATL_REGMAP_ENTRIES` 런타임에 자리 표시자 값을 사용 하 여 쌍을 이루는 구조, 각 항목 변수 자리 표시자를 포함 하는 위치입니다. 그런 다음 호출 [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) 하거나 [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), 배열을 전달 합니다. 모든에서 대체 값이 추가 `_ATL_REGMAP_ENTRIES` 기관의 대체 맵 구조입니다.
+런타임에 대체 값을 대체 값으로 대체 하려면 DECLARE_REGISTRY_RESOURCE 또는 DECLARE_REGISTRY_RESOURCEID 매크로를 지정 하지 마십시오. 대신, 구조체의 `_ATL_REGMAP_ENTRIES` 배열을 만듭니다. 여기에서 각 항목에는 런타임에 자리 표시자를 대체 하기 위한 값과 쌍을 이루는 변수 자리 표시 자가 포함 됩니다. 그런 다음, 배열을 전달 하 여 [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) 또는 [UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources)를 호출 합니다. 이렇게 하면 `_ATL_REGMAP_ENTRIES` 구조체의 모든 교체 값이 등록자의 대체 맵에 추가 됩니다.
 
-대체 가능 매개 변수 및 스크립팅 하는 방법에 대 한 자세한 내용은 문서 참조 [ATL 레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)합니다.
+대체 가능한 매개 변수 및 스크립팅에 대 한 자세한 내용은 [ATL 레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)문서를 참조 하세요.
 
 ##  <a name="declare_registry_resourceid"></a>  DECLARE_REGISTRY_RESOURCEID
 
-동일 [DECLARE_REGISTRY_RESOURCE](#declare_registry_resource) 제외를 사용 하 여 마법사에서 생성 된 UINT 문자열 이름 대신 리소스를 식별 합니다.
+[DECLARE_REGISTRY_RESOURCE](#declare_registry_resource) 와 동일 합니다. 단, 마법사가 생성 한 UINT를 사용 하 여 문자열 이름이 아니라 리소스를 식별 한다는 점이 다릅니다.
 
 ```
 DECLARE_REGISTRY_RESOURCEID( x )
@@ -178,19 +178,19 @@ DECLARE_REGISTRY_RESOURCEID( x )
 ### <a name="parameters"></a>매개 변수
 
 *x*<br/>
-[in] 마법사에서 생성 한 리소스의 식별자입니다.
+진행 마법사가 생성 한 리소스의 식별자입니다.
 
 ### <a name="remarks"></a>설명
 
-ATL 프로젝트 마법사, 마법사를 사용 하 여 컨트롤에서 자동으로 개체를 만들 때 레지스트리 스크립트 기반 지원을 구현 하 고 파일에 DECLARE_REGISTRY_RESOURCEID 매크로 추가 합니다.
+ATL 프로젝트 마법사를 사용 하 여 개체 또는 컨트롤을 만들면 마법사에서 자동으로 스크립트 기반 레지스트리 지원을 구현 하 고 DECLARE_REGISTRY_RESOURCEID 매크로를 파일에 추가 합니다.
 
-ATL 레지스트리 구성 요소 (등록자)에 최적화 된 레지스트리 액세스를 사용 하 여 정적으로 연결할 수 있습니다. 등록자 코드를 정적으로 연결할 stdafx.h 파일에 다음 줄을 추가 합니다.
+최적화 된 레지스트리 액세스를 위해 ATL 레지스트리 구성 요소 (등록자)에 정적으로 연결할 수 있습니다. 등록자 코드에 정적으로 연결 하려면 *stdafx.h* 파일에 다음 줄을 추가 합니다 (Visual Studio 2019 이상에서 *.pch. h* ).
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
-런타임 시 대체 값으로 대체 하는 ATL 원한다 면 DECLARE_REGISTRY_RESOURCE 또는 DECLARE_REGISTRY_RESOURCEID 매크로 지정 하지 마십시오. 대신, 배열을 만든 `_ATL_REGMAP_ENTRIES` 런타임에 자리 표시자 값을 사용 하 여 쌍을 이루는 구조, 각 항목 변수 자리 표시자를 포함 하는 위치입니다. 그런 다음 호출 [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) 하거나 [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), 배열을 전달 합니다. 모든에서 대체 값이 추가 `_ATL_REGMAP_ENTRIES` 기관의 대체 맵 구조입니다.
+런타임에 대체 값을 대체 값으로 대체 하려면 DECLARE_REGISTRY_RESOURCE 또는 DECLARE_REGISTRY_RESOURCEID 매크로를 지정 하지 마십시오. 대신, 구조체의 `_ATL_REGMAP_ENTRIES` 배열을 만듭니다. 여기에서 각 항목에는 런타임에 자리 표시자를 대체 하기 위한 값과 쌍을 이루는 변수 자리 표시 자가 포함 됩니다. 그런 다음, 배열을 전달 하 여 [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) 또는 [UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources)를 호출 합니다. 이렇게 하면 `_ATL_REGMAP_ENTRIES` 구조체의 모든 교체 값이 등록자의 대체 맵에 추가 됩니다.
 
-대체 가능 매개 변수 및 스크립팅 하는 방법에 대 한 자세한 내용은 문서 참조 [ATL 레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)합니다.
+대체 가능한 매개 변수 및 스크립팅에 대 한 자세한 내용은 [ATL 레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)문서를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

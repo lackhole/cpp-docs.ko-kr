@@ -71,7 +71,7 @@ The length of Hello, world! is: 14
 The size of the pointer is 4
 ```
 
-경우는 **sizeof** 연산자에 적용 됩니다는 **클래스**를 **구조체**, 또는 **union** 결과 형식이 있는 개체에 바이트 수 또한 추가 단어 경계에서 멤버를 맞추기 위해 안쪽 여백을 입력 합니다. 결과는 개별 멤버의 저장소 요구 사항을 추가하여 계산된 크기와 일치하지 않을 수도 있습니다. 합니다 [/Zp](../build/reference/zp-struct-member-alignment.md) 컴파일러 옵션 및 [팩](../preprocessor/pack.md) pragma 멤버에 대 한 맞춤 경계에 영향을 줍니다.
+경우는 **sizeof** 연산자에 적용 됩니다는 **클래스**를 **구조체**, 또는 **union** 결과 형식이 있는 개체에 바이트 수 또한 추가 단어 경계에서 멤버를 맞추기 위해 안쪽 여백을 입력 합니다. 결과는 개별 멤버의 스토리지 요구 사항을 추가하여 계산된 크기와 일치하지 않을 수도 있습니다. 합니다 [/Zp](../build/reference/zp-struct-member-alignment.md) 컴파일러 옵션 및 [팩](../preprocessor/pack.md) pragma 멤버에 대 한 맞춤 경계에 영향을 줍니다.
 
 합니다 **sizeof** 연산자는 빈 클래스에 대해서도 0, 결과로 생성 하지 않습니다.
 

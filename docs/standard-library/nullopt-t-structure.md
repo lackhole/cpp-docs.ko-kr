@@ -1,23 +1,30 @@
 ---
 title: nullopt_t 구조체
-ms.date: 11/04/2016
+ms.date: 08/04/2019
 f1_keywords:
 - optional/std::nullopt_t
-ms.assetid: 89a3b805-ab60-4858-b772-5855130c11b1
-ms.openlocfilehash: 813a25fc7fa50460f251671c39c41c3d2a26a2e7
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+- optional/std::nullopt
+ms.openlocfilehash: 1f453a5d75de3f6dedb133d55c094a4f4274e08f
+ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268505"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957052"
 ---
-# <a name="nulloptt-struct"></a>nullopt_t 구조체
+# <a name="nullopt_t-struct"></a>nullopt_t 구조체
 
-에 대 한 값을 포함 하지 않는의 상태를 나타내는 고유 형식으로 사용 되는 빈 구조 형식을 `optional` 개체입니다.
+`nullopt_t` 형식은 [선택적](optional-class.md) 개체에 값이 포함 되지 않음을 나타내는 데 사용 되는 고유하고 빈 형식입니다.
+
+`optional` 형식의 `nullopt` 상수는형식에초기화되지않은`nullopt_t` 상태가 있음을 나타냅니다. `optional` 개체를 초기화 하거나 개체와 비교 하는 데 사용할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
 ```cpp
-struct nullopt_t{see below};
-inline constexpr nullopt_t nullopt(unspecified);
+struct nullopt_t;
+inline constexpr nullopt_t nullopt{ /*implementation-defined*/ };
 ```
+
+## <a name="see-also"></a>참고자료
+
+[\<선택적 >](optional.md)\
+[선택적 클래스](optional-class.md)

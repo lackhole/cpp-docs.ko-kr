@@ -1,5 +1,5 @@
 ---
-title: MFC 응용 프로그램 마법사
+title: MFC 애플리케이션 마법사
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.mfc.exe.overview
@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 05/15/2019
 ms.locfileid: "65708183"
 ---
-# <a name="mfc-application-wizard"></a>MFC 응용 프로그램 마법사
+# <a name="mfc-application-wizard"></a>MFC 애플리케이션 마법사
 
 응용 프로그램을 생성 하는 MFC 응용 프로그램 마법사를 컴파일하면 Windows 실행 파일 (.exe) 응용 프로그램의 기본 기능을 구현 합니다. MFC 시작 응용 프로그램에 C++ (.cpp) 파일, 리소스 (.rc) 파일, 헤더 (.h) 파일 및 프로젝트 (.vcxproj) 파일 원본입니다. 이러한 시작 파일에서 생성 된 코드는 MFC를 기반으로 합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: 파일 탐색기 스타일 MFC 응용 프로그램 만들기
+title: 파일 탐색기 스타일 MFC 애플리케이션 만들기
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.mfcexplorer.project
@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62372246"
 ---
-# <a name="creating-a-file-explorer-style-mfc-application"></a>파일 탐색기 스타일 MFC 응용 프로그램 만들기
+# <a name="creating-a-file-explorer-style-mfc-application"></a>파일 탐색기 스타일 MFC 애플리케이션 만들기
 
 파일 탐색기에 대 한 사용자 인터페이스 (UI)를 사용 하는 많은 Windows 시스템 응용 프로그램. 파일 탐색기를 시작 하면 클라이언트 영역 분할 막대 세로 분할자를 사용 하 여 응용 프로그램을 참조 예를 들어 있습니다. 클라이언트 영역의 오른쪽 세부 정보를 표시 선택한 항목과 관련 된 왼쪽된 창에서 및 클라이언트 영역의 왼쪽 탐색 및 검색 기능을 제공 합니다. 사용자가 왼쪽된 창에서 항목을 응용 프로그램에 오른쪽 창을 다시 채웁니다. MDI 응용 프로그램에서 명령을 사용할 수는 **보기** 오른쪽 창에 표시 되는 정보의 양을 변경 하려면 메뉴. (SDI 또는 여러 최상위 문서 응용 프로그램에서 변경할 수 있습니다만 도구 모음 단추를 사용 하 여 세부 정보입니다.)
 

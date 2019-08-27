@@ -16,7 +16,7 @@ ms.locfileid: "62403388"
 ---
 # <a name="restrict-c-amp"></a>restrict (C++ AMP)
 
-제한 지정자는 함수 및 람다 선언에 적용할 수 있습니다. 제한 지정자는 C++ AMP(C++ Accelerated Massive Parallelism) 런타임을 사용하는 응용 프로그램의 함수 동작 및 함수의 코드에 제한을 적용합니다.
+제한 지정자는 함수 및 람다 선언에 적용할 수 있습니다. 제한 지정자는 C++ AMP(C++ Accelerated Massive Parallelism) 런타임을 사용하는 애플리케이션의 함수 동작 및 함수의 코드에 제한을 적용합니다.
 
 > [!NOTE]
 >  에 대 한 자세한 합니다 **제한** 포함 된 키워드는 **__declspec** 저장소 클래스 특성을 참조 하세요 [제한](../cpp/restrict.md)합니다.

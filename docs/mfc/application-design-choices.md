@@ -1,5 +1,5 @@
 ---
-title: 응용 프로그램 디자인 선택
+title: 애플리케이션 디자인 선택
 ms.date: 11/04/2016
 helpviewer_keywords:
 - design
@@ -18,7 +18,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62394665"
 ---
-# <a name="application-design-choices"></a>응용 프로그램 디자인 선택
+# <a name="application-design-choices"></a>애플리케이션 디자인 선택
 
 이 문서에서는 인터넷에 대 한 프로그래밍 하는 경우를 고려해 야 할 디자인 문제 중 일부를 설명 합니다.
 

@@ -93,12 +93,12 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68448682"
 ---
-# <a name="hashmultimap-class"></a>hash_multimap 클래스
+# <a name="hash_multimap-class"></a>hash_multimap 클래스
 
 > [!NOTE]
 > 이 API는 더 이상 사용되지 않습니다. [unordered_multimap 클래스](../standard-library/unordered-multimap-class.md)를 대신 사용하는 것이 좋습니다.
 
-컨테이너 클래스 hash_multimap은 C++ 표준 라이브러리의 확장이며, 각 요소가 값이 고유할 필요가 없는 정렬 키와 관련 데이터 값으로 구성된 쌍인 컬렉션에서 데이터를 저장하고 빠르게 검색하는 데 사용됩니다.
+컨테이너 클래스 hash_multimap은 C++ 표준 라이브러리의 확장이며, 각 요소가 값이 고유할 필요가 없는 정렬 키와 관련 데이터 값으로 구성된 쌍인 컬렉션에서 데이터를 스토리지하고 빠르게 검색하는 데 사용됩니다.
 
 ## <a name="syntax"></a>구문
 

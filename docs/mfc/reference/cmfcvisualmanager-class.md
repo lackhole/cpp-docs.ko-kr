@@ -2872,7 +2872,7 @@ virtual void OnDrawRibbonCaptionButton(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-장치 컨텍스트에 대한 포인터입니다.
+디바이스 컨텍스트에 대한 포인터입니다.
 
 *pButton*<br/>
 `CMFCRibbonCaptionButton` 클래스에 대 한 포인터입니다. 프레임 워크는이 캡션 단추를 그립니다.
@@ -3530,7 +3530,7 @@ virtual COLORREF OnDrawRibbonTabsFrame(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-장치 컨텍스트에 대한 포인터입니다.
+디바이스 컨텍스트에 대한 포인터입니다.
 
 *pWndRibbonBar*<br/>
 [Cmfc리본 표시줄](../../mfc/reference/cmfcribbonbar-class.md) 개체에 대 한 포인터입니다. 프레임 워크는이 리본 표시줄의 프레임을 그립니다.

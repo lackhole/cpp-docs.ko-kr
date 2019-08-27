@@ -276,8 +276,8 @@ class CMFCRibbonBar : public CPane
 |[CMFCRibbonBar::IsToolTipDescrEnabled](#istooltipdescrenabled)|도구 설명에 대한 설명을 사용하도록 설정할지 결정합니다.|
 |[CMFCRibbonBar::IsToolTipEnabled](#istooltipenabled)|리본 표시줄에 대한 도구 설명을 사용하도록 설정할지 결정합니다.|
 |[CMFCRibbonBar::IsTransparentCaption](#istransparentcaption)||
-|[CMFCRibbonBar::IsWindows7Look](#iswindows7look)|리본 메뉴에 Windows 7 스타일 모양(작은 사각형 응용 프로그램 단추)이 있는지 여부를 나타냅니다.|
-|[CMFCRibbonBar::LoadFromResource](#loadfromresource)|오버로드됨. 응용 프로그램 리소스에서 리본 표시줄을 로드합니다.|
+|[CMFCRibbonBar::IsWindows7Look](#iswindows7look)|리본 메뉴에 Windows 7 스타일 모양(작은 사각형 애플리케이션 단추)이 있는지 여부를 나타냅니다.|
+|[CMFCRibbonBar::LoadFromResource](#loadfromresource)|오버로드됨. 애플리케이션 리소스에서 리본 표시줄을 로드합니다.|
 |[CMFCRibbonBar::OnClickButton](#onclickbutton)||
 |[CMFCRibbonBar::OnEditContextMenu](#oneditcontextmenu)||
 |[CMFCRibbonBar::OnRTLChanged](#onrtlchanged)|( `CPane::OnRTLChanged`을 재정의합니다.)|
@@ -297,14 +297,14 @@ class CMFCRibbonBar : public CPane
 |[CMFCRibbonBar::SetActiveCategory](#setactivecategory)|지정된 리본 범주를 활성으로 설정합니다.|
 |[CMFCRibbonBar::SetActiveMDIChild](#setactivemdichild)||
 |[CMFCRibbonBar::SetElementKeys](#setelementkeys)|지정된 명령 ID를 가진 모든 리본 요소에 대해 지정된 키 팁을 설정합니다.|
-|[CMFCRibbonBar::SetApplicationButton](#setapplicationbutton)|리본 표시줄에 응용 프로그램 리본 단추를 할당합니다.|
+|[CMFCRibbonBar::SetApplicationButton](#setapplicationbutton)|리본 표시줄에 애플리케이션 리본 단추를 할당합니다.|
 |[CMFCRibbonBar::SetKeyboardNavigationLevel](#setkeyboardnavigationlevel)||
 |[CMFCRibbonBar::SetMaximizeMode](#setmaximizemode)||
 |[CMFCRibbonBar::SetQuickAccessCommands](#setquickaccesscommands)|빠른 실행 도구 모음에 하나 이상의 리본 요소를 추가합니다.|
 |[CMFCRibbonBar::SetQuickAccessDefaultState](#setquickaccessdefaultstate)|빠른 실행 도구 모음에 대한 기본 상태를 지정합니다.|
 |[CMFCRibbonBar::SetQuickAccessToolbarOnTop](#setquickaccesstoolbarontop)|QAT(빠른 실행 도구 모음)를 리본 표시줄 위 또는 아래에 배치합니다.|
 |[CMFCRibbonBar::SetTooltipFixedWidth](#settooltipfixedwidth)||
-|[CMFCRibbonBar::SetWindows7Look](#setwindows7look)|리본 Windows 7 스타일 모양(작은 사각형 응용 프로그램 단추)을 사용하거나 사용하지 않도록 설정합니다.|
+|[CMFCRibbonBar::SetWindows7Look](#setwindows7look)|리본 Windows 7 스타일 모양(작은 사각형 애플리케이션 단추)을 사용하거나 사용하지 않도록 설정합니다.|
 |[CMFCRibbonBar::ShowCategory](#showcategory)|지정된 리본 범주를 표시하거나 숨깁니다.|
 |[CMFCRibbonBar::ShowContextCategories](#showcontextcategories)|지정된 ID를 가진 컨텍스트 범주를 표시하거나 숨깁니다.|
 |[CMFCRibbonBar::ShowKeyTips](#showkeytips)||
@@ -1762,7 +1762,7 @@ void SetActiveMDIChild(CWnd* pWnd);
 
 ##  <a name="setapplicationbutton"></a>  CMFCRibbonBar::SetApplicationButton
 
-리본 표시줄에 응용 프로그램 리본 단추를 할당합니다.
+리본 표시줄에 애플리케이션 리본 단추를 할당합니다.
 
 ```
 void SetApplicationButton(
@@ -2055,7 +2055,7 @@ TRUE 이면 리본 메뉴에 표시 합니다; Windows 7 그렇지 않으면 FAL
 
 ##  <a name="loadfromresource"></a>  CMFCRibbonBar::LoadFromResource
 
-오버로드됨. 응용 프로그램 리소스에서 리본 표시줄을 로드합니다.
+오버로드됨. 애플리케이션 리소스에서 리본 표시줄을 로드합니다.
 
 ```
 virtual BOOL LoadFromResource(

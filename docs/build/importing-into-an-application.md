@@ -1,5 +1,5 @@
 ---
-title: 응용 프로그램으로 가져오기
+title: 애플리케이션으로 가져오기
 ms.date: 11/04/2016
 helpviewer_keywords:
 - DLLs [C++], importing
@@ -13,7 +13,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62188888"
 ---
-# <a name="importing-into-an-application"></a>응용 프로그램으로 가져오기
+# <a name="importing-into-an-application"></a>애플리케이션으로 가져오기
 
 다음과 같은 두 가지 방법을 사용하여 함수를 응용 프로그램으로 가져올 수 있습니다.
 

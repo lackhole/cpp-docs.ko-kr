@@ -14,7 +14,7 @@ ms.locfileid: "62394860"
 ---
 # <a name="activex-control-containers"></a>ActiveX 컨트롤 컨테이너
 
-ActiveX 컨트롤 컨테이너는 ActiveX 컨트롤을 완전히 지원하는 컨테이너이며, 이를 고유한 창 또는 대화 상자에 포함할 수 있습니다. ActiveX 컨트롤은 여러 개발 프로젝트에서 사용할 수 있는 재사용 가능한 소프트웨어 요소입니다. 컨트롤은 응용 프로그램의 사용자가 데이터베이스에 액세스하고, 데이터를 모니터링하고, 응용 프로그램 내에서 여러 항목을 선택할 수 있게 해줍니다. ActiveX 컨트롤에 대 한 자세한 내용은 문서 참조 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)합니다.
+ActiveX 컨트롤 컨테이너는 ActiveX 컨트롤을 완전히 지원하는 컨테이너이며, 이를 고유한 창 또는 대화 상자에 포함할 수 있습니다. ActiveX 컨트롤은 여러 개발 프로젝트에서 사용할 수 있는 재사용 가능한 소프트웨어 요소입니다. 컨트롤은 애플리케이션의 사용자가 데이터베이스에 액세스하고, 데이터를 모니터링하고, 애플리케이션 내에서 여러 항목을 선택할 수 있게 해줍니다. ActiveX 컨트롤에 대 한 자세한 내용은 문서 참조 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)합니다.
 
 >[!IMPORTANT]
 > ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. 자세한 내용은 [ActiveX 컨트롤](activex-controls.md)합니다.
@@ -23,7 +23,7 @@ ActiveX 컨트롤 컨테이너는 ActiveX 컨트롤을 완전히 지원하는 �
 
 - 대화 상자의 특정 위치에서 ActiveX 컨트롤이 사용되는 대화 상자 및 대화 상자와 비슷한 창(예: 폼 뷰).
 
-- ActiveX 컨트롤이 도구 모음 또는 사용자 창의 다른 위치에서 사용되는 응용 프로그램의 창.
+- ActiveX 컨트롤이 도구 모음 또는 사용자 창의 다른 위치에서 사용되는 애플리케이션의 창.
 
 ActiveX 컨트롤 컨테이너를 통해 컨트롤과 상호 작용 노출 [메서드](../mfc/mfc-activex-controls-methods.md) 하 고 [속성](../mfc/mfc-activex-controls-properties.md)합니다. 컨트롤 컨테이너가 액세스하고 수정할 수 있는 이러한 메서드 및 속성은 ActiveX 컨트롤 컨테이너 프로젝트에서 래퍼 클래스를 통해 액세스됩니다. ActiveX 컨트롤을 포함된 시켜 서 (전송) 컨테이너 상호 작용할 수도 [이벤트](../mfc/mfc-activex-controls-events.md) 동작이 발생 하는 컨테이너를 알립니다. 컨트롤 컨테이너는 이러한 알림에 따라 작업을 수행할지 여부를 선택할 수 있습니다.
 

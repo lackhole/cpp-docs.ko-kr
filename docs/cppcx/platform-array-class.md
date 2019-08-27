@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
 ms.openlocfilehash: 94166dfcb222d5cfece146e7ad67bb04d6ad06e9
 ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65221833"
 ---
 # <a name="platformarray-class"></a>Platform::Array 클래스
 
-ABI(응용 프로그램 이진 인터페이스)를 통해 받고 전달할 수 있는 수정 가능한 1차원 배열을 나타냅니다.
+ABI(애플리케이션 이진 인터페이스)를 통해 받고 전달할 수 있는 수정 가능한 1차원 배열을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 

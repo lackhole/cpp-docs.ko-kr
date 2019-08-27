@@ -1,5 +1,5 @@
 ---
-title: 웹 클라이언트 응용 프로그램 재배포
+title: 웹 클라이언트 애플리케이션 재배포
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Web applications [C++], redistributing
@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62388128"
 ---
-# <a name="redistributing-web-client-applications"></a>웹 클라이언트 응용 프로그램 재배포
+# <a name="redistributing-web-client-applications"></a>웹 클라이언트 애플리케이션 재배포
 
 애플리케이션에서 WebBrowser 컨트롤(예: `CHtmlView` 또는 `CHtmlEditView`)을 구현하는 MFC 클래스를 사용하는 경우, 대상 컴퓨터에 최소한 Microsoft Internet Explorer 4.0 이상이 설치되어 있어야 합니다.
 

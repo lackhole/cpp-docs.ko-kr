@@ -1,5 +1,5 @@
 ---
-title: 응용 프로그램 프레임워크
+title: 애플리케이션 프레임워크
 ms.date: 11/04/2016
 f1_keywords:
 - vc.classes.mfc
@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62394652"
 ---
-# <a name="application-framework"></a>응용 프로그램 프레임워크
+# <a name="application-framework"></a>애플리케이션 프레임워크
 
 Microsoft Foundation 클래스 (MFC) 라이브러리의 핵심은 Windows API의 큰 부분을 캡슐화 하는 C++ 형식입니다. 라이브러리 클래스 브러시, 펜, 컨트롤을 다른 표준 Windows 항목 등 일반적인 GDI 개체는 windows 대화 상자, 장치 컨텍스트를 나타냅니다. 이러한 클래스를 편리 하 게 제공 C++ 캡슐화 하는 Windows의 구조에 멤버 함수 인터페이스입니다. 이러한 클래스를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요 [창의 개체 항목](../mfc/window-objects.md)합니다.
 

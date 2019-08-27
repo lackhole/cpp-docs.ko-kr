@@ -1,5 +1,5 @@
 ---
-title: CReBarCtrl 클래스
+title: Cre바 Ctrl 클래스
 ms.date: 11/19/2018
 f1_keywords:
 - CReBarCtrl
@@ -98,14 +98,14 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: a6996f978305472ec7a3af171ecf0987724751d5
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 9a8c989988801bc7af993fbc69717ac7cff07dcf
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504741"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502732"
 ---
-# <a name="crebarctrl-class"></a>CReBarCtrl 클래스
+# <a name="crebarctrl-class"></a>Cre바 Ctrl 클래스
 
 자식 창의 컨테이너인 rebar 컨트롤의 기능을 캡슐화합니다.
 
@@ -119,93 +119,93 @@ class CReBarCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CReBarCtrl::CReBarCtrl](#crebarctrl)|`CReBarCtrl` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CReBarCtrl::BeginDrag](#begindrag)|끌어서 놓기 모드로 rebar 컨트롤을 배치합니다.|
-|[CReBarCtrl::Create](#create)|Rebar 컨트롤을 만들고에 연결 된 `CReBarCtrl` 개체입니다.|
-|[CReBarCtrl::CreateEx](#createex)|지정 된 Windows 확장된 스타일을 사용 하 여 rebar 컨트롤을 만들고 연결 하는 `CReBarCtrl` 개체입니다.|
-|[CReBarCtrl::DeleteBand](#deleteband)|Rebar 컨트롤에서 밴드를 삭제합니다.|
-|[CReBarCtrl::DragMove](#dragmove)|Rebar 컨트롤에서 끌어서 위치에 대 한 호출 후 업데이트 `BeginDrag`합니다.|
-|[CReBarCtrl::EndDrag](#enddrag)|Rebar 컨트롤의 끌어서 놓기 작업을 종료합니다.|
-|[CReBarCtrl::GetBandBorders](#getbandborders)|밴드의 테두리를 검색합니다.|
-|[CReBarCtrl::GetBandCount](#getbandcount)|Rebar 컨트롤에서 현재 밴드의 수를 검색합니다.|
-|[CReBarCtrl::GetBandInfo](#getbandinfo)|Rebar 컨트롤에서 밴드를 지정된 하는 방법에 대 한 정보를 검색 합니다.|
-|[CReBarCtrl::GetBandMargins](#getbandmargins)|밴드의 여백을 검색합니다.|
-|[CReBarCtrl::GetBarHeight](#getbarheight)|Rebar 컨트롤의 높이 검색합니다.|
-|[CReBarCtrl::GetBarInfo](#getbarinfo)|사용 하 여 이미지 목록과 rebar 컨트롤에 대 한 정보를 검색 합니다.|
-|[CReBarCtrl::GetBkColor](#getbkcolor)|Rebar 컨트롤의 기본 배경색을 검색합니다.|
-|[CReBarCtrl::GetColorScheme](#getcolorscheme)|검색 된 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) rebar 컨트롤을 사용 하 여 연결 된 구조입니다.|
-|[CReBarCtrl::GetDropTarget](#getdroptarget)|Rebar 컨트롤의 검색 `IDropTarget` 인터페이스 포인터입니다.|
-|[CReBarCtrl::GetExtendedStyle](#getextendedstyle)|현재 rebar 컨트롤의 확장된 스타일을 가져옵니다.|
-|[CReBarCtrl::GetImageList](#getimagelist)|Rebar 컨트롤에 연결 된 이미지 목록을 검색 합니다.|
-|[CReBarCtrl::GetPalette](#getpalette)|Rebar 컨트롤의 현재 색상표를 검색합니다.|
-|[CReBarCtrl::GetRect](#getrect)|Rebar 컨트롤에서 밴드를 지정된에 대 한 경계 사각형을 검색합니다.|
-|[CReBarCtrl::GetRowCount](#getrowcount)|Rebar 컨트롤에서 밴드 행의 수를 검색 합니다.|
-|[CReBarCtrl::GetRowHeight](#getrowheight)|Rebar 컨트롤에서 지정된 된 행의 높이 검색합니다.|
-|[CReBarCtrl::GetTextColor](#gettextcolor)|Rebar 컨트롤의 기본 텍스트 색을 검색합니다.|
-|[CReBarCtrl::GetToolTips](#gettooltips)|Rebar 컨트롤에 연결 된 모든 도구 설명 컨트롤에 대 한 핸들을 검색 합니다.|
-|[CReBarCtrl::HitTest](#hittest)|Rebar 밴드 이때 있으면 화면의 지정 된 시점 rebar 밴드의 부분 인지 확인 합니다.|
-|[CReBarCtrl::IDToIndex](#idtoindex)|Rebar 컨트롤에서 밴드 인덱스를 대역 외 식별자 (ID)를 변환합니다.|
-|[CReBarCtrl::InsertBand](#insertband)|Rebar 컨트롤에서 새 밴드를 삽입합니다.|
-|[CReBarCtrl::MaximizeBand](#maximizeband)|가장 큰 크기로 rebar 컨트롤에서 밴드의 크기를 조정 합니다.|
-|[CReBarCtrl::MinimizeBand](#minimizeband)|가장 작은 크기로 rebar 컨트롤에서 밴드의 크기를 조정 합니다.|
-|[CReBarCtrl::MoveBand](#moveband)|다른 한 인덱스에서 밴드를 이동합니다.|
-|[CReBarCtrl::PushChevron](#pushchevron)|갈매기형 펼침 단추를 프로그래밍 방식으로 푸시합니다.|
-|[CReBarCtrl::RestoreBand](#restoreband)|이상적인 크기를 rebar 컨트롤에서 밴드의 크기를 조정 합니다.|
-|[CReBarCtrl::SetBandInfo](#setbandinfo)|Rebar 컨트롤에서 기존는 대역 외의 특성을 설정합니다.|
-|[CReBarCtrl::SetBandWidth](#setbandwidth)|현재는 rebar 컨트롤에서 지정 된 도킹된 대역의 너비를 설정합니다.|
-|[CReBarCtrl::SetBarInfo](#setbarinfo)|Rebar 컨트롤의 특성을 설정합니다.|
-|[CReBarCtrl::SetBkColor](#setbkcolor)|Rebar 컨트롤의 기본 배경색을 설정합니다.|
-|[CReBarCtrl::SetColorScheme](#setcolorscheme)|Rebar 컨트롤에서 단추에 대 한 색 구성표를 설정합니다.|
-|[CReBarCtrl::SetExtendedStyle](#setextendedstyle)|현재 rebar 컨트롤에 대 한 확장된 스타일을 설정합니다.|
+|[CReBarCtrl::BeginDrag](#begindrag)|Rebar 컨트롤을 끌어서 놓기 모드로 전환 합니다.|
+|[CReBarCtrl::Create](#create)|Rebar 컨트롤을 만들고이를 `CReBarCtrl` 개체에 연결 합니다.|
+|[CReBarCtrl::CreateEx](#createex)|지정 된 Windows 확장 스타일을 사용 하 여 rebar 컨트롤을 만들고이를 `CReBarCtrl` 개체에 연결 합니다.|
+|[CReBarCtrl::DeleteBand](#deleteband)|Rebar 컨트롤에서 밴드를 삭제 합니다.|
+|[CReBarCtrl::DragMove](#dragmove)|를 `BeginDrag`호출한 후 rebar 컨트롤의 끌기 위치를 업데이트 합니다.|
+|[CReBarCtrl::EndDrag](#enddrag)|Rebar 컨트롤의 끌어서 놓기 작업을 종료 합니다.|
+|[CReBarCtrl::GetBandBorders](#getbandborders)|밴드의 테두리를 검색 합니다.|
+|[CReBarCtrl::GetBandCount](#getbandcount)|현재 rebar 컨트롤의 밴드 수를 검색 합니다.|
+|[CReBarCtrl::GetBandInfo](#getbandinfo)|Rebar 컨트롤에서 지정 된 밴드에 대 한 정보를 검색 합니다.|
+|[CReBarCtrl::GetBandMargins](#getbandmargins)|밴드의 여백을 검색 합니다.|
+|[CReBarCtrl::GetBarHeight](#getbarheight)|Rebar 컨트롤의 높이를 검색 합니다.|
+|[CReBarCtrl::GetBarInfo](#getbarinfo)|Rebar 컨트롤과이 컨트롤에서 사용 하는 이미지 목록에 대 한 정보를 검색 합니다.|
+|[CReBarCtrl::GetBkColor](#getbkcolor)|Rebar 컨트롤의 기본 배경색을 검색 합니다.|
+|[CReBarCtrl::GetColorScheme](#getcolorscheme)|Rebar 컨트롤과 연결 된 [COLORSCHEME](/windows/win32/api/commctrl/ns-commctrl-colorscheme) 구조체를 검색 합니다.|
+|[CReBarCtrl::GetDropTarget](#getdroptarget)|Rebar 컨트롤의 `IDropTarget` 인터페이스 포인터를 검색 합니다.|
+|[CReBarCtrl::GetExtendedStyle](#getextendedstyle)|현재 rebar 컨트롤의 확장 스타일을 가져옵니다.|
+|[CReBarCtrl::GetImageList](#getimagelist)|Rebar 컨트롤과 연결 된 이미지 목록을 검색 합니다.|
+|[CReBarCtrl::GetPalette](#getpalette)|Rebar 컨트롤의 현재 색상표를 검색 합니다.|
+|[CReBarCtrl::GetRect](#getrect)|Rebar 컨트롤에서 지정 된 밴드에 대 한 경계 사각형을 검색 합니다.|
+|[CReBarCtrl::GetRowCount](#getrowcount)|Rebar 컨트롤의 밴드 행 수를 검색 합니다.|
+|[CReBarCtrl::GetRowHeight](#getrowheight)|Rebar 컨트롤에서 지정 된 행의 높이를 검색 합니다.|
+|[CReBarCtrl::GetTextColor](#gettextcolor)|Rebar 컨트롤의 기본 텍스트 색을 검색 합니다.|
+|[CReBarCtrl::GetToolTips](#gettooltips)|Rebar 컨트롤과 연결 된 모든 도구 설명 컨트롤에 대 한 핸들을 검색 합니다.|
+|[CReBarCtrl::HitTest](#hittest)|해당 지점에 rebar 밴드가 있는 경우 화면에서 지정 된 지점에 있는 rebar 밴드의 부분을 결정 합니다.|
+|[CReBarCtrl::IDToIndex](#idtoindex)|밴드 식별자 (ID)를 rebar 컨트롤의 밴드 인덱스로 변환 합니다.|
+|[CReBarCtrl::InsertBand](#insertband)|Rebar 컨트롤에 새 밴드를 삽입 합니다.|
+|[CReBarCtrl::MaximizeBand](#maximizeband)|Rebar 컨트롤의 밴드 크기를 가장 큰 크기로 조정 합니다.|
+|[CReBarCtrl::MinimizeBand](#minimizeband)|Rebar 컨트롤의 밴드 크기를 가장 작은 크기로 조정 합니다.|
+|[CReBarCtrl::MoveBand](#moveband)|한 인덱스에서 다른 인덱스로 밴드를 이동 합니다.|
+|[CReBarCtrl::PushChevron](#pushchevron)|프로그래밍 방식으로 펼침 단추를 푸시합니다.|
+|[CReBarCtrl::RestoreBand](#restoreband)|Rebar 컨트롤의 밴드 크기를 이상적인 크기로 조정 합니다.|
+|[CReBarCtrl::SetBandInfo](#setbandinfo)|Rebar 컨트롤에서 기존 밴드의 특징을 설정 합니다.|
+|[CReBarCtrl::SetBandWidth](#setbandwidth)|현재 rebar 컨트롤에서 지정 된 도킹 된 밴드의 너비를 설정 합니다.|
+|[CReBarCtrl::SetBarInfo](#setbarinfo)|Rebar 컨트롤의 특징을 설정 합니다.|
+|[CReBarCtrl::SetBkColor](#setbkcolor)|Rebar 컨트롤의 기본 배경색을 설정 합니다.|
+|[CReBarCtrl::SetColorScheme](#setcolorscheme)|Rebar 컨트롤의 단추 색 구성표를 설정 합니다.|
+|[CReBarCtrl::SetExtendedStyle](#setextendedstyle)|현재 rebar 컨트롤에 대 한 확장 스타일을 설정 합니다.|
 |[CReBarCtrl::SetImageList](#setimagelist)|Rebar 컨트롤의 이미지 목록을 설정 합니다.|
-|[CReBarCtrl::SetOwner](#setowner)|Rebar 컨트롤의 소유자 창을 설정입니다.|
-|[CReBarCtrl::SetPalette](#setpalette)|Rebar 컨트롤의 현재 색상표를 설정합니다.|
-|[CReBarCtrl::SetTextColor](#settextcolor)|Rebar 컨트롤의 기본 텍스트 색을 설정합니다.|
-|[CReBarCtrl::SetToolTips](#settooltips)|Rebar 컨트롤 도구 설명 컨트롤에 연결합니다.|
-|[CReBarCtrl::SetWindowTheme](#setwindowtheme)|Rebar 컨트롤의 비주얼 스타일을 설정합니다.|
-|[CReBarCtrl::ShowBand](#showband)|표시 하거나 숨깁니다 rebar 컨트롤에서 밴드를 지정된 합니다.|
-|[CReBarCtrl::SizeToRect](#sizetorect)|지정 된 사각형에 rebar 컨트롤에 맞춥니다.|
+|[CReBarCtrl::SetOwner](#setowner)|Rebar 컨트롤의 소유자 창을 설정 합니다.|
+|[CReBarCtrl::SetPalette](#setpalette)|Rebar 컨트롤의 현재 색상표를 설정 합니다.|
+|[CReBarCtrl::SetTextColor](#settextcolor)|Rebar 컨트롤의 기본 텍스트 색을 설정 합니다.|
+|[CReBarCtrl::SetToolTips](#settooltips)|도구 설명 컨트롤을 rebar 컨트롤과 연결 합니다.|
+|[CReBarCtrl::SetWindowTheme](#setwindowtheme)|Rebar 컨트롤의 비주얼 스타일을 설정 합니다.|
+|[CReBarCtrl::ShowBand](#showband)|Rebar 컨트롤에서 지정 된 밴드를 표시 하거나 숨깁니다.|
+|[CReBarCtrl::SizeToRect](#sizetorect)|지정 된 사각형에 rebar 컨트롤을 맞춥니다.|
 
 ## <a name="remarks"></a>설명
 
-Rebar 컨트롤 상주 하는 응용 프로그램 크기 조정 막대 밴드를 rebar 컨트롤에 포함 된 자식 창을 할당 합니다. 자식 창에는 일반적으로 다른 일반적인 컨트롤입니다.
+Rebar 컨트롤이 있는 응용 프로그램은 rebar 컨트롤에 포함 된 자식 창을 rebar 밴드에 할당 합니다. 자식 창은 일반적으로 다른 공용 컨트롤입니다.
 
-Rebar 컨트롤 하나 이상의 밴드를 포함 합니다. 각 밴드에는 그리퍼 막대, 비트맵, 텍스트 레이블 및 자식 창이 조합을 포함할 수 있습니다. 밴드에는 이러한 각 항목 중 하나만 포함할 수 있습니다.
+Rebar 컨트롤은 하나 이상의 밴드를 포함 합니다. 각 밴드에는 그리퍼 막대, 비트맵, 텍스트 레이블 및 자식 창의 조합을 포함할 수 있습니다. 밴드는 이러한 항목 중 하나만 포함할 수 있습니다.
 
-Rebar 컨트롤에는 지정 된 배경 비트맵을 통해 자식 창을 표시할 수 있습니다. RBBS_FIXEDSIZE 스타일을 사용 하는 작업을 제외한 모든 rebar 컨트롤 밴드를 조정할 수 있습니다. Rebar 컨트롤 밴드의 크기를 조정 하거나 위치를 변경 하면 rebar 컨트롤 크기와 해당 대역 외에 할당 된 자식 창의 위치를 관리 합니다. 크기를 조정 하거나 컨트롤 내에서 밴드의 순서를 변경, 클릭 하 고 밴드의 그리퍼 막대를 끌어 옵니다.
+Rebar 컨트롤은 지정 된 배경 비트맵 위에 자식 창을 표시할 수 있습니다. RBBS_FIXEDSIZE 스타일을 사용 하는 경우를 제외 하 고 모든 rebar 컨트롤 밴드의 크기를 조정할 수 있습니다. Rebar 컨트롤 밴드의 위치를 변경 하거나 크기를 조정할 때 rebar 컨트롤은 해당 밴드에 할당 된 자식 창의 크기와 위치를 관리 합니다. 컨트롤 내에서 밴드의 크기를 조정 하거나 순서를 변경 하려면 밴드의 그리퍼 막대를 클릭 하 고 끕니다.
 
-다음 그림에서는 3 개의 밴드가 있는 rebar 컨트롤을 보여 줍니다.
+다음 그림에서는 세 개의 밴드가 있는 rebar 컨트롤을 보여 줍니다.
 
-- 0 대역 외 플랫, 투명 한 도구 모음 컨트롤을 포함합니다.
+- 대역 0에는 플랫 투명 도구 모음 컨트롤이 포함 되어 있습니다.
 
-- 대역 외 1에는 모두 투명 한 표준 및 투명 한 드롭다운 단추가 포함 됩니다.
+- 밴드 1에는 투명 표준 및 투명 드롭다운 단추가 모두 포함 됩니다.
 
-- 대역 외 2 콤보 상자 및 표준 단추 4 개를 포함합니다.
+- 밴드 2는 콤보 상자와 4 개의 표준 단추를 포함 합니다.
 
-   ![Rebar 메뉴 예가](../../mfc/reference/media/vc4scc1.gif "Rebar 메뉴의 예")
+   ![Rebar 메뉴 예](../../mfc/reference/media/vc4scc1.gif "Rebar 메뉴 예")
 
 ## <a name="rebar-control"></a>Rebar 컨트롤
 
 Rebar 컨트롤 지원:
 
-- 이미지를 나열합니다.
+- 이미지 목록.
 
-- 메시지 처리 합니다.
+- 메시지 처리.
 
-- 사용자 지정 기능을 그립니다.
+- 사용자 지정 그리기 기능.
 
-- 다양 한 표준 창 스타일 외에도 컨트롤 스타일입니다. 이러한 스타일의 목록은 참조 하세요 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) Windows SDK에 있습니다.
+- 표준 창 스타일 외에도 다양 한 컨트롤 스타일입니다. 이러한 스타일의 목록은 Windows SDK의 [Rebar 컨트롤 스타일](/windows/win32/Controls/rebar-control-styles) 을 참조 하세요.
 
-자세한 내용은 [를 사용 하 여 CReBarCtrl](../../mfc/using-crebarctrl.md)합니다.
+자세한 내용은 [CReBarCtrl 사용](../../mfc/using-crebarctrl.md)을 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -221,7 +221,7 @@ Rebar 컨트롤 지원:
 
 ##  <a name="begindrag"></a>  CReBarCtrl::BeginDrag
 
-Win32 메시지의 동작을 구현 [RB_BEGINDRAG](/windows/desktop/Controls/rb-begindrag)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_BEGINDRAG](/windows/win32/Controls/rb-begindrag)의 동작을 구현 합니다.
 
 ```
 void BeginDrag(
@@ -232,14 +232,14 @@ void BeginDrag(
 ### <a name="parameters"></a>매개 변수
 
 *uBand*<br/>
-끌어서 놓기 작업이 영향을 주는 밴드의 0부터 시작 인덱스입니다.
+끌어서 놓기 작업에 영향을 줄 수 있는 대역의 인덱스 (0부터 시작)입니다.
 
 *dwPos*<br/>
-시작을 포함 하는 DWORD 값 마우스 좌표입니다. 가로 좌표는 LOWORD 안에 및 세로 좌표는 HIWORD에 포함 됩니다. Rebar 컨트롤에 마지막으로 호출 하는 컨트롤의 스레드는 마우스의 위치가 사용 됩니다 (DWORD)-1을 전달 하면 `GetMessage` 또는 `PeekMessage`합니다.
+시작 마우스 좌표를 포함 하는 DWORD 값입니다. 가로 좌표는 LOWORD에 포함 되 고 세로 좌표는 고가 단어에 포함 됩니다. (DWORD)-1을 전달 하는 경우 rebar 컨트롤은 컨트롤의 스레드가 마지막으로 또는 `GetMessage` `PeekMessage`를 호출한 시간에 마우스 위치를 사용 합니다.
 
 ##  <a name="create"></a>  CReBarCtrl::Create
 
-Rebar 컨트롤을 만들고에 연결 된 `CReBarCtrl` 개체입니다.
+Rebar 컨트롤을 만들고이를 `CReBarCtrl` 개체에 연결 합니다.
 
 ```
 virtual BOOL Create(
@@ -252,30 +252,30 @@ virtual BOOL Create(
 ### <a name="parameters"></a>매개 변수
 
 *dwStyle*<br/>
-컨트롤에 적용 되는 rebar 컨트롤 스타일의 조합을 지정 합니다. 참조 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) 지원 되는 스타일의 목록은 Windows SDK에 있습니다.
+컨트롤에 적용 되는 rebar 컨트롤 스타일의 조합을 지정 합니다. 지원 되는 스타일 목록은 Windows SDK의 [Rebar 컨트롤 스타일](/windows/win32/Controls/rebar-control-styles) 을 참조 하세요.
 
 *rect*<br/>
-에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) rebar 컨트롤의 크기와 위치는 구조입니다.
+Rebar 컨트롤의 위치와 크기에 해당 하는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조체에 대 한 참조입니다.
 
 *pParentWnd*<br/>
-에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 rebar 컨트롤의 부모 창입니다. NULL이 아니어야 합니다.
+Rebar 컨트롤의 부모 창인 [CWnd](../../mfc/reference/cwnd-class.md) 개체에 대 한 포인터입니다. NULL이 아니어야 합니다.
 
 *nID*<br/>
 Rebar 컨트롤의 컨트롤 ID를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-개체가 성공적으로 만들어진 경우 0이 아닌 값 그렇지 않으면 0입니다.
+개체가 성공적으로 만들어진 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-2 단계를 거쳐에서 rebar 컨트롤을 만듭니다.
+다음 두 단계로 rebar 컨트롤을 만듭니다.
 
-1. 호출 [CReBarCtrl](#crebarctrl) 생성 하는 `CReBarCtrl` 개체입니다.
+1. [Cre바 ctrl](#crebarctrl) 을 호출 하 여 `CReBarCtrl` 개체를 생성 합니다.
 
-1. Windows rebar 컨트롤을 만들고에 연결 하는이 멤버 함수를 호출 합니다 `CReBarCtrl` 개체입니다.
+1. 이 멤버 함수를 호출 합니다 .이 함수는 Windows rebar 컨트롤을 만들고이 `CReBarCtrl` 를 개체에 연결 합니다.
 
-호출 하는 경우 `Create`, 공용 컨트롤 초기화 됩니다.
+를 호출 `Create`하면 공용 컨트롤이 초기화 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -283,7 +283,7 @@ Rebar 컨트롤의 컨트롤 ID를 지정 합니다.
 
 ##  <a name="createex"></a>  CReBarCtrl::CreateEx
 
-컨트롤 (자식 창)을 만들고 사용 하 여 연결 된 `CReBarCtrl` 개체입니다.
+컨트롤 (자식 창)을 만들고이 `CReBarCtrl` 를 개체에 연결 합니다.
 
 ```
 virtual BOOL CreateEx(
@@ -297,19 +297,19 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>매개 변수
 
 *dwExStyle*<br/>
-만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK의 합니다.
+만들려는 컨트롤의 확장 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록에 대해서는 Windows SDK의 [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) 에 대 한 *dwexstyle* 매개 변수를 참조 하세요.
 
 *dwStyle*<br/>
-컨트롤에 적용 되는 rebar 컨트롤 스타일의 조합을 지정 합니다. 지원 되는 스타일의 목록은 참조 하세요 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) Windows SDK에 있습니다.
+컨트롤에 적용 되는 rebar 컨트롤 스타일의 조합을 지정 합니다. 지원 되는 스타일 목록은 Windows SDK의 [Rebar 컨트롤 스타일](/windows/win32/Controls/rebar-control-styles) 을 참조 하세요.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+*PParentWnd*의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조체에 대 한 참조입니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
 
 *nID*<br/>
-컨트롤의 자식 창 id입니다.
+컨트롤의 자식 창 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -317,7 +317,7 @@ virtual BOOL CreateEx(
 
 ### <a name="remarks"></a>설명
 
-사용 하 여 `CreateEx` of [Create](#create) Windows 확장된 스타일 앞으로 지정 된 Windows 확장된 스타일을 적용할 **WS_EX_** 합니다.
+`CreateEx` [Create](#create) 대신 **WS_EX_** 를 사용 하 여 windows 확장 스타일 앞에 지정 된 확장 된 windows 스타일을 적용 합니다.
 
 ##  <a name="crebarctrl"></a>  CReBarCtrl::CReBarCtrl
 
@@ -329,11 +329,11 @@ CReBarCtrl();
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CReBarCtrl::Create](#create)합니다.
+  [Crebarctrl:: Create](#create)의 예제를 참조 하세요.
 
 ##  <a name="deleteband"></a>  CReBarCtrl::DeleteBand
 
-Win32 메시지의 동작을 구현 [RB_DELETEBAND](/windows/desktop/Controls/rb-deleteband)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_DELETEBAND](/windows/win32/Controls/rb-deleteband)의 동작을 구현 합니다.
 
 ```
 BOOL DeleteBand(UINT uBand);
@@ -342,11 +342,11 @@ BOOL DeleteBand(UINT uBand);
 ### <a name="parameters"></a>매개 변수
 
 *uBand*<br/>
-삭제할 밴드의 0부터 시작 인덱스입니다.
+삭제할 밴드의 인덱스 (0부터 시작)입니다.
 
 ### <a name="return-value"></a>반환 값
 
-밴드 성공적으로 삭제 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.
+밴드가 삭제 되 면 0이 아닌 값으로 설정 됩니다. 그렇지 않으면 0입니다.
 
 ### <a name="example"></a>예제
 
@@ -354,7 +354,7 @@ BOOL DeleteBand(UINT uBand);
 
 ##  <a name="dragmove"></a>  CReBarCtrl::DragMove
 
-Win32 메시지의 동작을 구현 [RB_DRAGMOVE](/windows/desktop/Controls/rb-dragmove)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_DRAGMOVE](/windows/win32/Controls/rb-dragmove)의 동작을 구현 합니다.
 
 ```
 void DragMove(DWORD dwPos = (DWORD)-1);
@@ -363,11 +363,11 @@ void DragMove(DWORD dwPos = (DWORD)-1);
 ### <a name="parameters"></a>매개 변수
 
 *dwPos*<br/>
-새 마우스 좌표를 포함 하는 DWORD 값입니다. 가로 좌표는 LOWORD 안에 및 세로 좌표는 HIWORD에 포함 됩니다. Rebar 컨트롤에 마지막으로 호출 하는 컨트롤의 스레드는 마우스의 위치가 사용 됩니다 (DWORD)-1을 전달 하면 `GetMessage` 또는 `PeekMessage`합니다.
+새 마우스 좌표를 포함 하는 DWORD 값입니다. 가로 좌표는 LOWORD에 포함 되 고 세로 좌표는 고가 단어에 포함 됩니다. (DWORD)-1을 전달 하는 경우 rebar 컨트롤은 컨트롤의 스레드가 마지막으로 또는 `GetMessage` `PeekMessage`를 호출한 시간에 마우스 위치를 사용 합니다.
 
 ##  <a name="enddrag"></a>  CReBarCtrl::EndDrag
 
-Win32 메시지의 동작을 구현 [RB_ENDDRAG](/windows/desktop/Controls/rb-enddrag)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_ENDDRAG](/windows/win32/Controls/rb-enddrag)의 동작을 구현 합니다.
 
 ```
 void EndDrag();
@@ -375,7 +375,7 @@ void EndDrag();
 
 ##  <a name="getbandborders"></a>  CReBarCtrl::GetBandBorders
 
-Win32 메시지의 동작을 구현 [RB_GETBANDBORDERS](/windows/desktop/Controls/rb-getbandborders)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_GETBANDBORDERS](/windows/win32/Controls/rb-getbandborders)의 동작을 구현 합니다.
 
 ```
 void GetBandBorders(
@@ -386,14 +386,14 @@ void GetBandBorders(
 ### <a name="parameters"></a>매개 변수
 
 *uBand*<br/>
-테두리를 검색 하는 대역 외의 0부터 시작 인덱스입니다.
+테두리를 검색할 대역의 인덱스 (0부터 시작)입니다.
 
 *prc*<br/>
-에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 대역 외 테두리 받을 구조입니다. Rebar 컨트롤 RBS_BANDBORDERS 스타일에이 구조의 각 멤버의 픽셀 대역 외에서의 해당 쪽에 테두리를 구성 하는 수를 받게 됩니다. Rebar 컨트롤 RBS_BANDBORDERS 스타일에 없는 경우이 구조체의 왼쪽된 멤버에만 유효한 정보를 받습니다. Rebar 컨트롤 스타일에 대 한 참조 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) Windows SDK에 있습니다.
+밴드 테두리를 수신 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조체에 대 한 포인터입니다. Rebar 컨트롤에 RBS_BANDBORDERS 스타일이 있는 경우이 구조체의 각 멤버는 경계를 구성 하는 밴드의 해당 쪽에서 픽셀 수를 받습니다. Rebar 컨트롤에 RBS_BANDBORDERS 스타일이 없으면이 구조체의 왼쪽 멤버만 유효한 정보를 받습니다. Rebar 컨트롤 스타일에 대 한 설명은 Windows SDK의 [Rebar 컨트롤 스타일](/windows/win32/Controls/rebar-control-styles) 을 참조 하세요.
 
 ##  <a name="getbandcount"></a>  CReBarCtrl::GetBandCount
 
-Win32 메시지의 동작을 구현 [RB_GETBANDCOUNT](/windows/desktop/Controls/rb-getbandcount)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_GETBANDCOUNT](/windows/win32/Controls/rb-getbandcount)의 동작을 구현 합니다.
 
 ```
 UINT GetBandCount() const;
@@ -401,11 +401,11 @@ UINT GetBandCount() const;
 
 ### <a name="return-value"></a>반환 값
 
-컨트롤에 할당 되는 밴드의 수입니다.
+컨트롤에 할당 된 밴드 수입니다.
 
 ##  <a name="getbandinfo"></a>  CReBarCtrl::GetBandInfo
 
-Win32 메시지의 동작을 구현 [RB_GETBANDINFO](/windows/desktop/Controls/rb-getbandinfo) Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_GETBANDINFO](/windows/win32/Controls/rb-getbandinfo) 의 동작을 구현 합니다.
 
 ```
 BOOL GetBandInfo(
@@ -416,10 +416,10 @@ BOOL GetBandInfo(
 ### <a name="parameters"></a>매개 변수
 
 *uBand*<br/>
-정보를 검색할 수 밴드의 0부터 시작 인덱스입니다.
+정보를 검색할 대역의 인덱스 (0부터 시작)입니다.
 
 *prbbi*<br/>
-에 대 한 포인터를 [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) 구조 대역 외 정보를 얻습니다. 설정 해야 합니다는 `cbSize` 이 구조체의 멤버 `sizeof(REBARBANDINFO)` 설정의 `fMask` 이 메시지를 보내기 전에 검색 하려는 항목에는 멤버입니다.
+대역 정보를 수신 하는 [Re바 밴드 정보](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) 구조에 대 한 포인터입니다. 이 구조체의 `cbSize` 멤버를로 `sizeof(REBARBANDINFO)` 설정 하 고이 메시지를 `fMask` 보내기 전에 검색 하려는 항목으로 멤버를 설정 해야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -427,7 +427,7 @@ BOOL GetBandInfo(
 
 ##  <a name="getbandmargins"></a>  CReBarCtrl::GetBandMargins
 
-밴드의 여백을 검색합니다.
+밴드의 여백을 검색 합니다.
 
 ```
 void GetBandMargins(PMARGINS pMargins);
@@ -436,15 +436,15 @@ void GetBandMargins(PMARGINS pMargins);
 ### <a name="parameters"></a>매개 변수
 
 *pMargins*<br/>
-에 대 한 포인터를 [여백](/windows/desktop/api/uxtheme/ns-uxtheme-_margins)구조는 정보를 받게 됩니다.
+정보를 수신 하는 [여백](/windows/win32/api/uxtheme/ns-uxtheme-margins)구조에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는의 기능을 에뮬레이션 합니다 [RB_GETBANDMARGINS](/windows/desktop/Controls/rb-getbandmargins) Windows SDK에 설명 된 대로 메시지입니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 [RB_GETBANDMARGINS](/windows/win32/Controls/rb-getbandmargins) 메시지의 기능을 에뮬레이트합니다.
 
 ##  <a name="getbarheight"></a>  CReBarCtrl::GetBarHeight
 
-Rebar 막대의 높이 검색합니다.
+Rebar 막대의 높이를 검색 합니다.
 
 ```
 UINT GetBarHeight() const;
@@ -452,11 +452,11 @@ UINT GetBarHeight() const;
 
 ### <a name="return-value"></a>반환 값
 
-컨트롤의 픽셀에서 높이 나타내는 값입니다.
+컨트롤의 높이를 픽셀 단위로 나타내는 값입니다.
 
 ##  <a name="getbarinfo"></a>  CReBarCtrl::GetBarInfo
 
-Win32 메시지의 동작을 구현 [RB_GETBARINFO](/windows/desktop/Controls/rb-getbarinfo)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_GETBARINFO](/windows/win32/Controls/rb-getbarinfo)의 동작을 구현 합니다.
 
 ```
 BOOL GetBarInfo(REBARINFO* prbi) const;
@@ -465,7 +465,7 @@ BOOL GetBarInfo(REBARINFO* prbi) const;
 ### <a name="parameters"></a>매개 변수
 
 *prbi*<br/>
-에 대 한 포인터를 [REBARINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarinfo) rebar 컨트롤 정보를 받는 구조체입니다. 설정 해야 합니다 *cbSize* 이 구조의 멤버 `sizeof(REBARINFO)` 이 메시지를 보내기 전에 합니다.
+Rebar 컨트롤 정보를 받는 [Rebarinfo](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) 구조에 대 한 포인터입니다. 이 메시지를 보내기 전에이 구조체의 *cbsize* 멤버 `sizeof(REBARINFO)` 를로 설정 해야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -473,7 +473,7 @@ BOOL GetBarInfo(REBARINFO* prbi) const;
 
 ##  <a name="getbkcolor"></a>  CReBarCtrl::GetBkColor
 
-Win32 메시지의 동작을 구현 [RB_GETBKCOLOR](/windows/desktop/Controls/rb-getbkcolor)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_GETBKCOLOR](/windows/win32/Controls/rb-getbkcolor)의 동작을 구현 합니다.
 
 ```
 COLORREF GetBkColor() const;
@@ -485,7 +485,7 @@ COLORREF GetBkColor() const;
 
 ##  <a name="getcolorscheme"></a>  CReBarCtrl::GetColorScheme
 
-검색 된 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) rebar 컨트롤에 대 한 구조입니다.
+Rebar 컨트롤에 대 한 [COLORSCHEME](/windows/win32/api/commctrl/ns-commctrl-colorscheme) 구조체를 검색 합니다.
 
 ```
 BOOL GetColorScheme(COLORSCHEME* lpcs);
@@ -494,7 +494,7 @@ BOOL GetColorScheme(COLORSCHEME* lpcs);
 ### <a name="parameters"></a>매개 변수
 
 *lpcs*<br/>
-에 대 한 포인터를 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) Windows SDK에 설명 된 대로 구조체입니다.
+Windows SDK 설명 된 대로 [COLORSCHEME](/windows/win32/api/commctrl/ns-commctrl-colorscheme) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -502,11 +502,11 @@ BOOL GetColorScheme(COLORSCHEME* lpcs);
 
 ### <a name="remarks"></a>설명
 
-`COLORSCHEME` 단추 강조 표시 색 및 단추 그림자 색 구조에 포함 되어 있습니다.
+구조체 `COLORSCHEME` 에는 단추 강조 색과 단추 그림자 색이 포함 됩니다.
 
 ##  <a name="getdroptarget"></a>  CReBarCtrl::GetDropTarget
 
-Win32 메시지의 동작을 구현 [RB_GETDROPTARGET](/windows/desktop/Controls/rb-getdroptarget)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_GETDROPTARGET](/windows/win32/Controls/rb-getdroptarget)의 동작을 구현 합니다.
 
 ```
 IDropTarget* GetDropTarget() const;
@@ -514,11 +514,11 @@ IDropTarget* GetDropTarget() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) 인터페이스입니다.
+[IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) 인터페이스에 대 한 포인터입니다.
 
 ##  <a name="getextendedstyle"></a>  CReBarCtrl::GetExtendedStyle
 
-현재 rebar 컨트롤의 확장된 스타일을 가져옵니다.
+현재 rebar 컨트롤의 확장 스타일을 가져옵니다.
 
 ```
 DWORD GetExtendedStyle() const;
@@ -526,15 +526,15 @@ DWORD GetExtendedStyle() const;
 
 ### <a name="return-value"></a>반환 값
 
-확장된 스타일 플래그의 비트 조합 (OR)입니다. 가능한 플래그는 RBS_EX_SPLITTER 및 RBS_EX_TRANSPARENT입니다. 자세한 내용은 참조는 *dwMask* 의 매개 변수를 [CReBarCtrl::SetExtendedStyle](#setextendedstyle) 메서드.
+확장 스타일을 나타내는 플래그의 비트 조합 (OR)입니다. 가능한 플래그는 RBS_EX_SPLITTER 및 RBS_EX_TRANSPARENT입니다. 자세한 내용은 [Cre바 ctrl:: SetExtendedStyle](#setextendedstyle) 메서드의 *dwmask* 매개 변수를 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [RB_GETEXTENDEDSTYLE](/windows/desktop/Controls/rb-dragmove) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [RB_GETEXTENDEDSTYLE](/windows/win32/Controls/rb-dragmove) 메시지를 보냅니다.
 
 ##  <a name="getimagelist"></a>  CReBarCtrl::GetImageList
 
-가져옵니다는 `CImageList` rebar 컨트롤에 연결 된 개체입니다.
+Rebar 컨트롤과 `CImageList` 연결 된 개체를 가져옵니다.
 
 ```
 CImageList* GetImageList() const;
@@ -542,15 +542,15 @@ CImageList* GetImageList() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 개체입니다. 이미지 목록이 없는 컨트롤에 대해 설정 된 경우 NULL을 반환 합니다.
+[CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터입니다. 컨트롤에 대해 설정 된 이미지 목록이 없으면 NULL을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수에 저장 된 크기와 마스크 정보를 사용 합니다 [REBARINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarinfo) Windows SDK에 설명 된 대로 구조체입니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 [Re바 정보](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) 구조에 저장 된 크기 및 마스크 정보를 사용 합니다.
 
 ##  <a name="getpalette"></a>  CReBarCtrl::GetPalette
 
-Rebar 컨트롤의 현재 색상표를 검색합니다.
+Rebar 컨트롤의 현재 색상표를 검색 합니다.
 
 ```
 CPalette* GetPalette() const;
@@ -558,11 +558,11 @@ CPalette* GetPalette() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CPalette](../../mfc/reference/cpalette-class.md) rebar 컨트롤의 현재 색상표를 지정 하는 개체입니다.
+Rebar 컨트롤의 현재 색상표를 지정 하는 [Cpalette](../../mfc/reference/cpalette-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수를 사용 하는 참고를 `CPalette` 는 HPALETTE 보다는 해당 반환 값으로는 개체입니다.
+이 멤버 함수는 hpalette 대신 `CPalette` 개체를 반환 값으로 사용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -570,7 +570,7 @@ CPalette* GetPalette() const;
 
 ##  <a name="getrect"></a>  CReBarCtrl::GetRect
 
-Win32 메시지의 동작을 구현 [RB_GETRECT](/windows/desktop/Controls/rb-getrect)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_GETRECT](/windows/win32/Controls/rb-getrect)의 동작을 구현 합니다.
 
 ```
 BOOL GetRect(
@@ -581,10 +581,10 @@ BOOL GetRect(
 ### <a name="parameters"></a>매개 변수
 
 *uBand*<br/>
-Rebar 컨트롤에서 밴드의 0부터 시작 인덱스입니다.
+Rebar 컨트롤에서 밴드의 인덱스 (0부터 시작)입니다.
 
 *prc*<br/>
-에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조는 rebar 밴드의 경계를 받게 됩니다.
+Rebar 밴드의 경계를 수신 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -596,7 +596,7 @@ Rebar 컨트롤에서 밴드의 0부터 시작 인덱스입니다.
 
 ##  <a name="getrowcount"></a>  CReBarCtrl::GetRowCount
 
-Win32 메시지의 동작을 구현 [RB_GETROWCOUNT](/windows/desktop/Controls/rb-getrowcount)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_GETROWCOUNT](/windows/win32/Controls/rb-getrowcount)의 동작을 구현 합니다.
 
 ```
 UINT GetRowCount() const;
@@ -604,7 +604,7 @@ UINT GetRowCount() const;
 
 ### <a name="return-value"></a>반환 값
 
-컨트롤에서 밴드 행의 수를 나타내는 UINT 값입니다.
+컨트롤의 밴드 행 수를 나타내는 UINT 값입니다.
 
 ### <a name="example"></a>예제
 
@@ -612,7 +612,7 @@ UINT GetRowCount() const;
 
 ##  <a name="getrowheight"></a>  CReBarCtrl::GetRowHeight
 
-Win32 메시지의 동작을 구현 [RB_GETROWHEIGHT](/windows/desktop/Controls/rb-getrowheight)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_GETROWHEIGHT](/windows/win32/Controls/rb-getrowheight)의 동작을 구현 합니다.
 
 ```
 UINT GetRowHeight(UINT uRow) const;
@@ -621,11 +621,11 @@ UINT GetRowHeight(UINT uRow) const;
 ### <a name="parameters"></a>매개 변수
 
 *uRow*<br/>
-검색할 높이가 갖게 되는 대역 외의 0부터 시작 인덱스입니다.
+높이가 검색 되는 대역의 인덱스 (0부터 시작)입니다.
 
 ### <a name="return-value"></a>반환 값
 
-행 높이 픽셀 단위로 나타내는 UINT 값입니다.
+행 높이 (픽셀)를 나타내는 UINT 값입니다.
 
 ### <a name="example"></a>예제
 
@@ -633,7 +633,7 @@ UINT GetRowHeight(UINT uRow) const;
 
 ##  <a name="gettextcolor"></a>  CReBarCtrl::GetTextColor
 
-Win32 메시지의 동작을 구현 [RB_GETTEXTCOLOR](/windows/desktop/Controls/rb-gettextcolor)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_GETTEXTCOLOR](/windows/win32/Controls/rb-gettextcolor)의 동작을 구현 합니다.
 
 ```
 COLORREF GetTextColor() const;
@@ -645,7 +645,7 @@ COLORREF GetTextColor() const;
 
 ##  <a name="gettooltips"></a>  CReBarCtrl::GetToolTips
 
-Win32 메시지의 동작을 구현 [RB_GETTOOLTIPS](/windows/desktop/Controls/rb-gettooltips)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_GETTOOLTIPS](/windows/win32/Controls/rb-gettooltips)의 동작을 구현 합니다.
 
 ```
 CToolTipCtrl* GetToolTips() const;
@@ -653,15 +653,15 @@ CToolTipCtrl* GetToolTips() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 개체입니다.
+[CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-MFC 구현 `GetToolTips` 에 대 한 포인터를 반환 합니다.는 `CToolTipCtrl`, HWND 대신 합니다.
+의 `GetToolTips` MFC 구현은 HWND가 아니라에 `CToolTipCtrl`대 한 포인터를 반환 합니다.
 
 ##  <a name="hittest"></a>  CReBarCtrl::HitTest
 
-Win32 메시지의 동작을 구현 [RB_HITTEST](/windows/desktop/Controls/rb-hittest)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_HITTEST](/windows/win32/Controls/rb-hittest)의 동작을 구현 합니다.
 
 ```
 int HitTest(RBHITTESTINFO* prbht);
@@ -670,15 +670,15 @@ int HitTest(RBHITTESTINFO* prbht);
 ### <a name="parameters"></a>매개 변수
 
 *prbht*<br/>
-에 대 한 포인터를 [RBHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-_rb_hittestinfo) 구조입니다. 메시지를 보내기 전에 `pt` 클라이언트 좌표에서 테스트할 수는 지점으로이 구조체의 멤버를 초기화 합니다.
+[RBHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-_rb_hittestinfo) 구조체에 대 한 포인터입니다. 메시지를 보내기 전에이 구조체 `pt` 의 멤버를 테스트 하는 지점 (클라이언트 좌표)으로 초기화 해야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-지정된 된 지점 또는 지점에 없는 rebar 밴드 되었으면-1에서 밴드의 0부터 시작 하는 인덱스입니다.
+지정 된 지점에 있는 대역의 인덱스 (0부터 시작)이 고, 지점에 있는 크기 조정 밴드가 없으면-1입니다.
 
 ##  <a name="idtoindex"></a>  CReBarCtrl::IDToIndex
 
-Win32 메시지의 동작을 구현 [RB_IDTOINDEX](/windows/desktop/controls/rb-idtoindex)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_IDTOINDEX](/windows/win32/controls/rb-idtoindex)의 동작을 구현 합니다.
 
 ```
 int IDToIndex(UINT uBandID) const;
@@ -687,15 +687,15 @@ int IDToIndex(UINT uBandID) const;
 ### <a name="parameters"></a>매개 변수
 
 *uBandID*<br/>
-전달 된 지정된 된 밴드의 응용 프로그램 정의 식별자를 `wID` 의 멤버는 [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) 밴드를 삽입할 때 구조체입니다.
+밴드가 삽입 될 때 `wID` [re바 밴드 정보](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) 구조의 구성원에 전달 되는, 지정 된 대역의 응용 프로그램 정의 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 0부터 시작 밴드 인덱스 또는 그렇지 않으면-1입니다. 중복 밴드 인덱스 존재 하는 경우 첫 번째 반환 됩니다.
+성공 하면 0부터 시작 하는 밴드 인덱스이 고, 그렇지 않으면-1입니다. 중복 된 밴드 인덱스가 있으면 첫 번째 인덱스가 반환 됩니다.
 
 ##  <a name="insertband"></a>  CReBarCtrl::InsertBand
 
-Win32 메시지의 동작을 구현 [RB_INSERTBAND](/windows/desktop/Controls/rb-insertband)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_INSERTBAND](/windows/win32/Controls/rb-insertband)의 동작을 구현 합니다.
 
 ```
 BOOL InsertBand(
@@ -706,10 +706,10 @@ BOOL InsertBand(
 ### <a name="parameters"></a>매개 변수
 
 *uIndex*<br/>
-밴드를 삽입할 위치의 인덱스 0부터 시작 합니다. 이 매개 변수를-1로 설정한 경우 컨트롤 마지막 위치에 새 밴드를 추가 합니다.
+밴드가 삽입 되는 위치의 인덱스 (0부터 시작)입니다. 이 매개 변수를-1로 설정 하면 컨트롤이 마지막 위치에 새 밴드를 추가 합니다.
 
 *prbbi*<br/>
-에 대 한 포인터를 [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) 삽입할 밴드를 정의 하는 구조입니다. 설정 해야 합니다 *cbSize* 이 구조의 멤버 `sizeof(REBARBANDINFO)` 이 함수를 호출 하기 전에 합니다.
+삽입할 대역을 정의 하는 [Re바 밴드 정보](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) 구조에 대 한 포인터입니다. 이 함수를 호출 하기 전에이 구조체의 *cbsize* 멤버를로 `sizeof(REBARBANDINFO)` 설정 해야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -721,7 +721,7 @@ BOOL InsertBand(
 
 ##  <a name="maximizeband"></a>  CReBarCtrl::MaximizeBand
 
-가장 큰 크기로 rebar 컨트롤에서 밴드의 크기를 조정 합니다.
+Rebar 컨트롤의 밴드 크기를 가장 큰 크기로 조정 합니다.
 
 ```
 void MaximizeBand(UINT uBand);
@@ -730,11 +730,11 @@ void MaximizeBand(UINT uBand);
 ### <a name="parameters"></a>매개 변수
 
 *uBand*<br/>
-최대화 밴드의 0부터 시작 인덱스입니다.
+최대화할 밴드의 인덱스 (0부터 시작)입니다.
 
 ### <a name="remarks"></a>설명
 
-Win32 메시지의 동작을 구현 [RB_MAXIMIZEBAND](/windows/desktop/Controls/rb-maximizeband) 사용 하 여 `fIdeal` Windows SDK에 설명 된 대로 0으로 설정 합니다.
+Windows SDK에 설명 된 대로 `fIdeal`가 0으로 설정된 Win32 메시지 [RB_MAXIMIZEBAND](/windows/win32/Controls/rb-maximizeband)의 동작을 구현 합니다.
 
 ### <a name="example"></a>예제
 
@@ -742,7 +742,7 @@ Win32 메시지의 동작을 구현 [RB_MAXIMIZEBAND](/windows/desktop/Controls/
 
 ##  <a name="minimizeband"></a>  CReBarCtrl::MinimizeBand
 
-가장 작은 크기로 rebar 컨트롤에서 밴드의 크기를 조정 합니다.
+Rebar 컨트롤의 밴드 크기를 가장 작은 크기로 조정 합니다.
 
 ```
 void MinimizeBand(UINT uBand);
@@ -751,11 +751,11 @@ void MinimizeBand(UINT uBand);
 ### <a name="parameters"></a>매개 변수
 
 *uBand*<br/>
-밴드를 최소화할 수의 0부터 시작 인덱스입니다.
+최소화할 대역의 인덱스 (0부터 시작)입니다.
 
 ### <a name="remarks"></a>설명
 
-Win32 메시지의 동작을 구현 [RB_MINIMIZEBAND](/windows/desktop/Controls/rb-minimizeband)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_MINIMIZEBAND](/windows/win32/Controls/rb-minimizeband)의 동작을 구현 합니다.
 
 ### <a name="example"></a>예제
 
@@ -763,7 +763,7 @@ Win32 메시지의 동작을 구현 [RB_MINIMIZEBAND](/windows/desktop/Controls/
 
 ##  <a name="moveband"></a>  CReBarCtrl::MoveBand
 
-Win32 메시지의 동작을 구현 [RB_MOVEBAND](/windows/desktop/Controls/rb-moveband)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_MOVEBAND](/windows/win32/Controls/rb-moveband)의 동작을 구현 합니다.
 
 ```
 BOOL MoveBand(
@@ -774,10 +774,10 @@ BOOL MoveBand(
 ### <a name="parameters"></a>매개 변수
 
 *uFrom*<br/>
-이동할 밴드의 0부터 시작 인덱스입니다.
+이동할 밴드의 인덱스 (0부터 시작)입니다.
 
 *uTo*<br/>
-새 밴드 위치의 0부터 시작 인덱스입니다. 이 매개 변수 값은 하지 밴드에서 1을 뺀 수보다 커야 합니다. 밴드의 번호를 가져오려면, 호출 [GetBandCount](#getbandcount)합니다.
+새 대역 위치의 인덱스 (0부터 시작)입니다. 이 매개 변수 값은 대역에서 1을 뺀 값 보다 클 수 없습니다. 밴드 수를 가져오려면 [get밴드로 count](#getbandcount)를 호출 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -785,7 +785,7 @@ BOOL MoveBand(
 
 ##  <a name="pushchevron"></a>  CReBarCtrl::PushChevron
 
-Win32 메시지의 동작을 구현 [RB_PUSHCHEVRON](/windows/desktop/Controls/rb-pushchevron)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_PUSHCHEVRON](/windows/win32/Controls/rb-pushchevron)의 동작을 구현 합니다.
 
 ```
 void PushChevron(
@@ -796,14 +796,14 @@ void PushChevron(
 ### <a name="parameters"></a>매개 변수
 
 *uBand*<br/>
-푸시할 수 있는 펼침 단추는 대역 외의 0부터 시작 인덱스입니다.
+갈매기형 펼침 단추를 푸시할 대역의 인덱스 (0부터 시작)입니다.
 
 *lAppValue*<br/>
-응용 프로그램에 32 비트 값으로 정의 합니다. 참조 *lAppValue* 에 [RB_PUSHCHEVRON](/windows/desktop/Controls/rb-pushchevron) Windows SDK에 있습니다.
+32 비트 값이 정의 된 응용 프로그램입니다. Windows SDK에서 *Lappvalue* in [RB_PUSHCHEVRON](/windows/win32/Controls/rb-pushchevron) 를 참조 하세요.
 
 ##  <a name="restoreband"></a>  CReBarCtrl::RestoreBand
 
-이상적인 크기를 rebar 컨트롤에서 밴드의 크기를 조정 합니다.
+Rebar 컨트롤의 밴드 크기를 이상적인 크기로 조정 합니다.
 
 ```
 void RestoreBand(UINT uBand);
@@ -812,11 +812,11 @@ void RestoreBand(UINT uBand);
 ### <a name="parameters"></a>매개 변수
 
 *uBand*<br/>
-최대화 밴드의 0부터 시작 인덱스입니다.
+최대화할 밴드의 인덱스 (0부터 시작)입니다.
 
 ### <a name="remarks"></a>설명
 
-Win32 메시지의 동작을 구현 [RB_MAXIMIZEBAND](/windows/desktop/Controls/rb-maximizeband) 사용 하 여 `fIdeal` Windows SDK에 설명 된 대로 1로 설정 합니다.
+Windows SDK에 설명 된 대로 `fIdeal`를 1로 설정 하여 Win32 메시지 [RB_MAXIMIZEBAND](/windows/win32/Controls/rb-maximizeband)의 동작을 구현 합니다.
 
 ### <a name="example"></a>예제
 
@@ -824,7 +824,7 @@ Win32 메시지의 동작을 구현 [RB_MAXIMIZEBAND](/windows/desktop/Controls/
 
 ##  <a name="setbandinfo"></a>  CReBarCtrl::SetBandInfo
 
-Win32 메시지의 동작을 구현 [RB_SETBANDINFO](/windows/desktop/Controls/rb-setbandinfo)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_SETBANDINFO](/windows/win32/Controls/rb-setbandinfo)의 동작을 구현 합니다.
 
 ```
 BOOL SetBandInfo(
@@ -835,10 +835,10 @@ BOOL SetBandInfo(
 ### <a name="parameters"></a>매개 변수
 
 *uBand*<br/>
-새 설정을 수신 하려면 대역 외의 0부터 시작 인덱스입니다.
+새 설정을 받을 대역의 인덱스 (0부터 시작)입니다.
 
 *prbbi*<br/>
-에 대 한 포인터를 [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) 삽입할 밴드를 정의 하는 구조입니다. 설정 해야 합니다 `cbSize` 이 구조의 멤버 `sizeof(REBARBANDINFO)` 이 메시지를 보내기 전에 합니다.
+삽입할 대역을 정의 하는 [Re바 밴드 정보](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) 구조에 대 한 포인터입니다. 이 메시지를 보내기 `cbSize` 전에이 구조체의 멤버 `sizeof(REBARBANDINFO)` 를로 설정 해야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -850,7 +850,7 @@ BOOL SetBandInfo(
 
 ##  <a name="setbandwidth"></a>  CReBarCtrl::SetBandWidth
 
-현재는 rebar 컨트롤에서 지정 된 도킹된 대역의 너비를 설정합니다.
+현재 rebar 컨트롤에서 지정 된 도킹 된 밴드의 너비를 설정 합니다.
 
 ```
 BOOL SetBandWidth(
@@ -860,34 +860,34 @@ BOOL SetBandWidth(
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
-|*uBand*|[in] Rebar 밴드의 0부터 시작 인덱스입니다.|
-|*cxWidth*|[in] 새 너비 (픽셀 단위)는 rebar 밴드입니다.|
+|*uBand*|진행 Rebar 밴드의 인덱스 (0부터 시작)입니다.|
+|*cxWidth*|진행 Rebar 밴드의 새 너비 (픽셀)입니다.|
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.
+메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [RB_SETBANDWIDTH](/windows/desktop/Controls/rb-setbandwidth) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [RB_SETBANDWIDTH](/windows/win32/Controls/rb-setbandwidth) 메시지를 보냅니다.
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 변수를 정의 `m_rebar`, 즉 현재 rebar 컨트롤에 액세스 하는 데 사용 합니다. 이 변수는 다음 예제에서 사용됩니다.
+다음 코드 예제에서는 현재 rebar 컨트롤에 `m_rebar`액세스 하는 데 사용 되는 변수를 정의 합니다. 이 변수는 다음 예제에서 사용됩니다.
 
 [!code-cpp[NVC_MFC_CReBarCtrl_s1#1](../../mfc/reference/codesnippet/cpp/crebarctrl-class_12.h)]
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 각 rebar 밴드 동일한 너비를 설정 합니다.
+다음 코드 예제에서는 각 rebar 밴드를 같은 너비로 설정 합니다.
 
 [!code-cpp[NVC_MFC_CReBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/crebarctrl-class_13.cpp)]
 
 ##  <a name="setbarinfo"></a>  CReBarCtrl::SetBarInfo
 
-Win32 메시지의 동작을 구현 [RB_SETBARINFO](/windows/desktop/Controls/rb-setbarinfo)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_SETBARINFO](/windows/win32/Controls/rb-setbarinfo)의 동작을 구현 합니다.
 
 ```
 BOOL SetBarInfo(REBARINFO* prbi);
@@ -896,7 +896,7 @@ BOOL SetBarInfo(REBARINFO* prbi);
 ### <a name="parameters"></a>매개 변수
 
 *prbi*<br/>
-에 대 한 포인터를 [REBARINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarinfo) 설정 정보가 포함 된 구조체입니다. 설정 해야 합니다 `cbSize` 멤버를이 구조의 `sizeof(REBARINFO)` 이 메시지를 보내기 전에
+설정할 정보를 포함 하는 [Rebarinfo](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) 구조에 대 한 포인터입니다. 이 메시지를 보내기 `cbSize` 전에이 구조체의 멤버 `sizeof(REBARINFO)` 를로 설정 해야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -908,7 +908,7 @@ BOOL SetBarInfo(REBARINFO* prbi);
 
 ##  <a name="setbkcolor"></a>  CReBarCtrl::SetBkColor
 
-Win32 메시지의 동작을 구현 [RB_SETBKCOLOR](/windows/desktop/Controls/rb-setbkcolor)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_SETBKCOLOR](/windows/win32/Controls/rb-setbkcolor)의 동작을 구현 합니다.
 
 ```
 COLORREF SetBkColor(COLORREF clr);
@@ -921,15 +921,15 @@ COLORREF SetBkColor(COLORREF clr);
 
 ### <a name="return-value"></a>반환 값
 
-A [COLORREF](/windows/desktop/gdi/colorref) 이전 기본 배경색을 나타내는 값입니다.
+이전 기본 배경색을 나타내는 [Colorref](/windows/win32/gdi/colorref) 값입니다.
 
 ### <a name="remarks"></a>설명
 
-배경색을 설정 하는 경우 및 기본값을 설정 하는 방법에 대 한 자세한 내용은이 항목을 참조 하세요.
+배경색을 설정 하는 시기와 기본값을 설정 하는 방법에 대 한 자세한 내용은이 항목을 참조 하세요.
 
 ##  <a name="setcolorscheme"></a>  CReBarCtrl::SetColorScheme
 
-Rebar 컨트롤에서 단추에 대 한 색 구성표를 설정합니다.
+Rebar 컨트롤의 단추 색 구성표를 설정 합니다.
 
 ```
 void SetColorScheme(const COLORSCHEME* lpcs);
@@ -938,15 +938,15 @@ void SetColorScheme(const COLORSCHEME* lpcs);
 ### <a name="parameters"></a>매개 변수
 
 *lpcs*<br/>
-에 대 한 포인터를 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) Windows SDK에 설명 된 대로 구조체입니다.
+Windows SDK 설명 된 대로 [COLORSCHEME](/windows/win32/api/commctrl/ns-commctrl-colorscheme) 구조체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-`COLORSCHEME` 단추 강조 표시 색과 단추 그림자 색 구조에 포함 되어 있습니다.
+구조체 `COLORSCHEME` 에는 단추 강조 표시 색과 단추 그림자 색이 모두 포함 되어 있습니다.
 
 ##  <a name="setextendedstyle"></a>  CReBarCtrl::SetExtendedStyle
 
-현재 rebar 컨트롤에 대 한 확장된 스타일을 설정합니다.
+현재 rebar 컨트롤에 대 한 확장 스타일을 설정 합니다.
 
 ```
 DWORD SetExtendedStyle(
@@ -956,22 +956,22 @@ DWORD SetExtendedStyle(
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
-|*dwMask*|[in] 에 플래그를 지정 하는 플래그의 비트 조합 (OR)는 *dwStyleEx* 매개 변수가 적용 됩니다. 다음 값 중 하나 이상을 사용 합니다.<br /><br /> RBS_EX_SPLITTER: 기본적으로 표시 분할자 아래에 가로 모드에서 및 오른쪽에 세로 모드에서.<br /><br /> RBS_EX_TRANSPARENT: 앞으로 [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) 부모 창에는 메시지입니다.|
-|*dwStyleEx*|[in] 적용할 스타일을 지정 하는 플래그의 비트 조합 (OR)입니다. 스타일을 설정 하려면에서 사용 되는 동일한 플래그를 지정 합니다 *dwMask* 매개 변수입니다. 스타일을 재설정 하려면 이진 0을 지정 합니다.|
+|*dwMask*|진행 *DwStyleEx* 매개 변수에서 적용 되는 플래그를 지정 하는 플래그의 비트 조합 (or)입니다. 다음 값 중 하나 이상을 사용 합니다.<br /><br /> RBS_EX_SPLITTER: 기본적으로 가로 모드에서 아래쪽에 분할자를 표시 하 고 세로 모드에서는 오른쪽으로 표시 합니다.<br /><br /> RBS_EX_TRANSPARENT: [WM_ERASEBKGND](/windows/win32/winmsg/wm-erasebkgnd) 메시지를 부모 창으로 전달 합니다.|
+|*dwStyleEx*|진행 적용할 스타일을 지정 하는 플래그의 비트 조합 (OR)입니다. 스타일을 설정 하려면 *Dwmask* 매개 변수에 사용 되는 것과 동일한 플래그를 지정 합니다. 스타일을 다시 설정 하려면 이진 0을 지정 합니다.|
 
 ### <a name="return-value"></a>반환 값
 
-이전 확장된 스타일입니다.
+이전 확장 스타일입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [RB_SETEXTENDEDSTYLE](/windows/desktop/Controls/rb-setextendedstyle) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [RB_SETEXTENDEDSTYLE](/windows/win32/Controls/rb-setextendedstyle) 메시지를 보냅니다.
 
 ##  <a name="setimagelist"></a>  CReBarCtrl::SetImageList
 
-이미지 목록과 rebar 컨트롤에 할당합니다.
+Rebar 컨트롤에 이미지 목록을 할당 합니다.
 
 ```
 BOOL SetImageList(CImageList* pImageList);
@@ -980,7 +980,7 @@ BOOL SetImageList(CImageList* pImageList);
 ### <a name="parameters"></a>매개 변수
 
 *pImageList*<br/>
-에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) rebar 컨트롤에 할당할 이미지 목록을 포함 하는 개체입니다.
+Rebar 컨트롤에 할당할 이미지 목록을 포함 하는 [CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -988,7 +988,7 @@ BOOL SetImageList(CImageList* pImageList);
 
 ##  <a name="setowner"></a>  CReBarCtrl::SetOwner
 
-Win32 메시지의 동작을 구현 [RB_SETPARENT](/windows/desktop/Controls/rb-setparent)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_SETPARENT](/windows/win32/Controls/rb-setparent)의 동작을 구현 합니다.
 
 ```
 CWnd* SetOwner(CWnd* pWnd);
@@ -997,22 +997,22 @@ CWnd* SetOwner(CWnd* pWnd);
 ### <a name="parameters"></a>매개 변수
 
 *pWnd*<br/>
-에 대 한 포인터를 `CWnd` rebar 컨트롤의 소유자로 설정할 개체입니다.
+Rebar 컨트롤의 소유자로 `CWnd` 설정할 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) rebar 컨트롤의 현재 소유자 인 개체입니다.
+Rebar 컨트롤의 현재 소유자 인 [CWnd](../../mfc/reference/cwnd-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수에 대 한 포인터는 `CWnd` windows를 처리 하는 것이 아니라 rebar 컨트롤의 선택 하 고 현재 소유자에 대 한 개체입니다.
+이 멤버 함수는 창에 대 한 `CWnd` 핸들이 아니라 rebar 컨트롤의 현재 소유자와 선택 된 소유자 모두에 대해 개체에 대 한 포인터를 사용 합니다.
 
 > [!NOTE]
->  이 멤버 함수는 컨트롤이 만들어진 때 설정 된 실제 부모를 변경 하지 않습니다. 대신 지정한 창에 알림 메시지를 보냅니다.
+>  이 멤버 함수는 컨트롤을 만들 때 설정 된 실제 부모를 변경 하지 않습니다. 대신 지정 하는 창에 알림 메시지를 보냅니다.
 
 ##  <a name="setpalette"></a>  CReBarCtrl::SetPalette
 
-Win32 메시지의 동작을 구현 [RB_SETPALETTE](/windows/desktop/Controls/rb-setpalette)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_SETPALETTE](/windows/win32/Controls/rb-setpalette)의 동작을 구현 합니다.
 
 ```
 CPalette* SetPalette(HPALETTE hPal);
@@ -1021,19 +1021,19 @@ CPalette* SetPalette(HPALETTE hPal);
 ### <a name="parameters"></a>매개 변수
 
 *hPal*<br/>
-Rebar 컨트롤에서 사용할 새 색상표를 지정 하는 HPALETTE 합니다.
+Rebar 컨트롤이 사용할 새 색상표를 지정 하는 HPALETTE입니다.
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CPalette](../../mfc/reference/cpalette-class.md) rebar 컨트롤의 이전 색상표를 지정 하는 개체입니다.
+Rebar 컨트롤의 이전 색상표를 지정 하는 [cpalette](../../mfc/reference/cpalette-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수를 사용 하는 참고를 `CPalette` 는 HPALETTE 보다는 해당 반환 값으로는 개체입니다.
+이 멤버 함수는 hpalette 대신 `CPalette` 개체를 반환 값으로 사용 합니다.
 
 ##  <a name="settextcolor"></a>  CReBarCtrl::SetTextColor
 
-Win32 메시지의 동작을 구현 [RB_SETTEXTCOLOR](/windows/desktop/Controls/rb-settextcolor)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_SETTEXTCOLOR](/windows/win32/Controls/rb-settextcolor)의 동작을 구현 합니다.
 
 ```
 COLORREF SetTextColor(COLORREF clr);
@@ -1042,19 +1042,19 @@ COLORREF SetTextColor(COLORREF clr);
 ### <a name="parameters"></a>매개 변수
 
 *clr*<br/>
-새 텍스트를 나타내는 COLORREF 값 색은 `CReBarCtrl` 개체입니다.
+`CReBarCtrl` 개체의 새 텍스트 색을 나타내는 colorref 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
-합니다 [COLORREF](/windows/desktop/gdi/colorref) 관련 된 이전 텍스트 색을 나타내는 값을 `CReBarCtrl` 개체입니다.
+`CReBarCtrl` 개체와 연결 된 이전 텍스트 색을 나타내는 [colorref](/windows/win32/gdi/colorref) 값입니다.
 
 ### <a name="remarks"></a>설명
 
-Rebar 컨트롤에서 텍스트 색을 유연 하 게 제공 됩니다.
+Rebar 컨트롤에서 텍스트 색 유연성을 지원 하기 위해 제공 됩니다.
 
 ##  <a name="settooltips"></a>  CReBarCtrl::SetToolTips
 
-Rebar 컨트롤 도구 설명 컨트롤에 연결합니다.
+도구 설명 컨트롤을 rebar 컨트롤과 연결 합니다.
 
 ```
 void SetToolTips(CToolTipCtrl* pToolTip);
@@ -1063,15 +1063,15 @@ void SetToolTips(CToolTipCtrl* pToolTip);
 ### <a name="parameters"></a>매개 변수
 
 *pToolTip*<br/>
-에 대 한 포인터를 [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 개체
+[CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-파기 해야 합니다는 `CToolTipCtrl` 되어 완료 되 면 개체입니다.
+작업이 완료 되 면 `CToolTipCtrl` 개체를 삭제 해야 합니다.
 
 ##  <a name="setwindowtheme"></a>  CReBarCtrl::SetWindowTheme
 
-Rebar 컨트롤의 비주얼 스타일을 설정합니다.
+Rebar 컨트롤의 비주얼 스타일을 설정 합니다.
 
 ```
 HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
@@ -1080,7 +1080,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 ### <a name="parameters"></a>매개 변수
 
 *pszSubAppName*<br/>
-Rebar 비주얼 스타일 집합을 포함 하는 유니코드 문자열 포인터입니다.
+설정할 rebar 비주얼 스타일을 포함 하는 유니코드 문자열에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1088,11 +1088,11 @@ Rebar 비주얼 스타일 집합을 포함 하는 유니코드 문자열 포인�
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는의 기능을 에뮬레이션 합니다 [RB_SETWINDOWTHEME](/windows/desktop/Controls/rb-setwindowtheme) Windows SDK에 설명 된 대로 메시지입니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 [RB_SETWINDOWTHEME](/windows/win32/Controls/rb-setwindowtheme) 메시지의 기능을 에뮬레이트합니다.
 
 ##  <a name="showband"></a>  CReBarCtrl::ShowBand
 
-Win32 메시지의 동작을 구현 [RB_SHOWBAND](/windows/desktop/Controls/rb-showband)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_SHOWBAND](/windows/win32/Controls/rb-showband)의 동작을 구현 합니다.
 
 ```
 BOOL ShowBand(
@@ -1103,10 +1103,10 @@ BOOL ShowBand(
 ### <a name="parameters"></a>매개 변수
 
 *uBand*<br/>
-Rebar 컨트롤에서 밴드의 0부터 시작 인덱스입니다.
+Rebar 컨트롤에서 밴드의 인덱스 (0부터 시작)입니다.
 
 *fShow*<br/>
-밴드를 표시 하거나 숨길 해야 하는 경우를 나타냅니다. 이 값이 TRUE 이면 밴드 표시 됩니다. 그렇지 않으면 밴드가 숨겨집니다.
+밴드를 표시 하거나 숨길지 여부를 나타냅니다. 이 값이 TRUE 이면 밴드가 표시 됩니다. 그렇지 않으면 대역이 숨겨집니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1114,7 +1114,7 @@ Rebar 컨트롤에서 밴드의 0부터 시작 인덱스입니다.
 
 ##  <a name="sizetorect"></a>  CReBarCtrl::SizeToRect
 
-Win32 메시지의 동작을 구현 [RB_SIZETORECT](/windows/desktop/Controls/rb-sizetorect)Windows SDK에 설명 된 대로 합니다.
+Windows SDK 설명 된 대로 Win32 메시지 [RB_SIZETORECT](/windows/win32/Controls/rb-sizetorect)의 동작을 구현 합니다.
 
 ```
 BOOL SizeToRect(CRect& rect);
@@ -1123,7 +1123,7 @@ BOOL SizeToRect(CRect& rect);
 ### <a name="parameters"></a>매개 변수
 
 *rect*<br/>
-에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) rebar 컨트롤 크기를 조정 하는 사각형을 지정 하는 개체입니다.
+Rebar 컨트롤의 크기를 조정 해야 하는 사각형을 지정 하는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1131,7 +1131,7 @@ BOOL SizeToRect(CRect& rect);
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수를 사용 하는 참고를 `CRect` 개체를 매개 변수로 대신 `RECT` 구조입니다.
+이 멤버 함수는 `CRect` `RECT` 구조체 대신 개체를 매개 변수로 사용 합니다.
 
 ## <a name="see-also"></a>참고자료
 

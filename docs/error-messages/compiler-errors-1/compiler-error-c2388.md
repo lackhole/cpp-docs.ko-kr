@@ -17,7 +17,7 @@ ms.locfileid: "62393664"
 
 'symbol': 기호를 모두 __declspec (appdomain)를 사용 하 여 선언할 수 없습니다 및 \__declspec(process)
 
- `appdomain` 및 `process` `__declspec` 한정자는 동일한 기호에 사용할 수 없습니다. 변수에 대한 저장소는 프로세스별 또는 애플리케이션 도메인별로 존재합니다.
+`appdomain` 및 `process` `__declspec` 한정자는 동일한 기호에 사용할 수 없습니다. 변수에 대한 스토리지는 프로세스별 또는 애플리케이션 도메인별로 존재합니다.
 
 자세한 내용은 [appdomain](../../cpp/appdomain.md) 및 [process](../../cpp/process.md)를 참조하세요.
 

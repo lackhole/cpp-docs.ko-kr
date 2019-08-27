@@ -43,13 +43,13 @@ class CFormView : public CScrollView
 
 ## <a name="remarks"></a>설명
 
-폼 뷰는 기본적으로 컨트롤을 포함하는 뷰입니다. 이러한 컨트롤은 대화 상자 템플릿 리소스에 따라 배치됩니다. 응용 프로그램에서 폼을 사용하려면 `CFormView`를 사용합니다. 이러한 뷰 스크롤을 사용 하 여 필요에 따라 지원 합니다 [CScrollView](../../mfc/reference/cscrollview-class.md) 기능입니다.
+폼 뷰는 기본적으로 컨트롤을 포함하는 뷰입니다. 이러한 컨트롤은 대화 상자 템플릿 리소스에 따라 배치됩니다. 애플리케이션에서 폼을 사용하려면 `CFormView`를 사용합니다. 이러한 뷰 스크롤을 사용 하 여 필요에 따라 지원 합니다 [CScrollView](../../mfc/reference/cscrollview-class.md) 기능입니다.
 
 되 면 [폼 기반 응용 프로그램을 만드는](../../mfc/reference/creating-a-forms-based-mfc-application.md), 기반 해당 뷰 클래스를 만들 수 있습니다 `CFormView`, 폼 기반 응용 프로그램을 만드는 것입니다.
 
-새 삽입할 수도 [양식 항목](../../mfc/form-views-mfc.md) 문서 뷰 기반 응용 프로그램에 있습니다. 응용 프로그램이 초기에 폼을 지원하지 않은 경우에도 새 폼을 삽입하면 Visual C++에서 이 지원 기능을 추가합니다.
+새 삽입할 수도 [양식 항목](../../mfc/form-views-mfc.md) 문서 뷰 기반 응용 프로그램에 있습니다. 애플리케이션이 초기에 폼을 지원하지 않은 경우에도 새 폼을 삽입하면 Visual C++에서 이 지원 기능을 추가합니다.
 
-폼 기반 응용 프로그램을 만들 때는 MFC 응용 프로그램 마법사 및 클래스 추가 명령을 사용하는 것이 좋습니다. 이러한 메서드를 사용 하지 않고 폼 기반 응용 프로그램 만들기, 참조 하는 경우 [폼 기반 응용 프로그램을 만드는](../../mfc/reference/creating-a-forms-based-mfc-application.md)합니다.
+폼 기반 애플리케이션을 만들 때는 MFC 애플리케이션 마법사 및 클래스 추가 명령을 사용하는 것이 좋습니다. 이러한 메서드를 사용 하지 않고 폼 기반 응용 프로그램 만들기, 참조 하는 경우 [폼 기반 응용 프로그램을 만드는](../../mfc/reference/creating-a-forms-based-mfc-application.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 

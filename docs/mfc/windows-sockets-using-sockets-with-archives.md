@@ -24,14 +24,14 @@ ms.locfileid: "62358289"
 아카이브가 포함 된 소켓 구현의 작동 하는 방법에 대 한 자세한 내용은 참조 하세요. [Windows 소켓: 아카이브가 포함 된 소켓 방식](../mfc/windows-sockets-how-sockets-with-archives-work.md)합니다. 예를 들어 코드를 참조 하십시오 [Windows 소켓: 작업 시퀀스](../mfc/windows-sockets-sequence-of-operations.md) 고 [Windows 소켓: 아카이브를 사용 하는 소켓의 예](../mfc/windows-sockets-example-of-sockets-using-archives.md)합니다. 소켓 클래스에서 고유한 클래스를 파생 하 여 얻을 수 있는 일부의 기능에 대 한 정보를 참조 하세요. [Windows 소켓: 소켓 클래스에서 파생](../mfc/windows-sockets-deriving-from-socket-classes.md)합니다.
 
 > [!NOTE]
->  설정된(MFC 이외) 서버와 통신하도록 MFC 클라이언트 프로그램을 작성하는 경우 아카이브를 통해 C++ 개체를 전송하지 마십시오. 사용자가 전송하려는 개체 종류를 인식하는 MFC 응용 프로그램이 아니면 개체를 수신하고 이를 deserialize할 수 없습니다. 비 MFC 응용 프로그램을 사용 하 여 통신에 관련된 자료에 대 한 문서를 참조도 [Windows 소켓: 바이트 순서](../mfc/windows-sockets-byte-ordering.md)합니다.
+>  설정된(MFC 이외) 서버와 통신하도록 MFC 클라이언트 프로그램을 작성하는 경우 아카이브를 통해 C++ 개체를 전송하지 마십시오. 사용자가 전송하려는 개체 종류를 인식하는 MFC 애플리케이션이 아니면 개체를 수신하고 이를 deserialize할 수 없습니다. 비 MFC 응용 프로그램을 사용 하 여 통신에 관련된 자료에 대 한 문서를 참조도 [Windows 소켓: 바이트 순서](../mfc/windows-sockets-byte-ordering.md)합니다.
 
 ##  <a name="_core_the_csocket_programming_model"></a> CSocket 프로그래밍 모델
 
 `CSocket` 개체 사용 시에는 여러 MFC 클래스 개체를 함께 만들고 연결하는 작업이 포함됩니다. 아래의 일반 절차에서 각 단계는 각 소켓 유형에 서로 다른 작업이 필요한 3단계를 제외하고 서버 소켓과 클라이언트 소켓 모두에서 수행됩니다.
 
 > [!TIP]
->  런타임에 서버 응용 프로그램은 일반적으로 먼저 시작되어 준비되며, 클라이언트 응용 프로그램이 연결을 검색할 때 이를 수신 대기합니다. 클라이언트가 연결을 시도할 때 서버가 준비되어 있지 않으면 일반적으로 사용자 응용 프로그램이 나중에 연결을 다시 시도해야 합니다.
+>  런타임에 서버 응용 프로그램은 일반적으로 먼저 시작되어 준비되며, 클라이언트 응용 프로그램이 연결을 검색할 때 이를 수신 대기합니다. 클라이언트가 연결을 시도할 때 서버가 준비되어 있지 않으면 일반적으로 사용자 애플리케이션이 나중에 연결을 다시 시도해야 합니다.
 
 #### <a name="to-set-up-communication-between-a-server-socket-and-a-client-socket"></a>서버 소켓과 클라이언트 소켓 사이의 통신을 설정하려면
 

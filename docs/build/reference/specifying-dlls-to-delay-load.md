@@ -16,7 +16,7 @@ ms.locfileid: "62318149"
 ---
 # <a name="specifying-dlls-to-delay-load"></a>지연 로드할 DLL 지정
 
-사용 하 여 지연 Dll 로드 지정할 수 있습니다 합니다 [/delayload](delayload-delay-load-import.md):`dllname` 링커 옵션입니다. 자체 버전의 도우미 함수를 사용하려는 경우가 아니면 delayimp.lib(데스크톱 응용 프로그램) 또는 dloadhelper.lib(스토어 앱)를 사용하여 프로그램을 연결해야 합니다.
+사용 하 여 지연 Dll 로드 지정할 수 있습니다 합니다 [/delayload](delayload-delay-load-import.md):`dllname` 링커 옵션입니다. 자체 버전의 도우미 함수를 사용하려는 경우가 아니면 delayimp.lib(데스크톱 애플리케이션) 또는 dloadhelper.lib(스토어 앱)를 사용하여 프로그램을 연결해야 합니다.
 
 다음은 DLL 지연 로드의 간단한 예입니다.
 

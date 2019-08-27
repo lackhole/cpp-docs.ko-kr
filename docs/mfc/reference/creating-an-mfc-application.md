@@ -15,7 +15,7 @@ ms.locfileid: "68606475"
 ---
 # <a name="creating-an-mfc-application"></a>MFC 애플리케이션 만들기
 
-MFC 응용 프로그램은 MFC(Microsoft Foundation Class) 라이브러리를 기반으로 하는 실행 가능한 Windows용 응용 프로그램입니다. Mfc 응용 프로그램을 만드는 가장 쉬운 방법은 MFC 응용 프로그램 마법사 (Visual Studio 2019의 Mfc 응용 프로그램**프로젝트** )를 사용 하는 것입니다. MFC 콘솔 응용 프로그램을 만들려면 Windows 바탕 화면 마법사를 사용 하 여 **콘솔 응용 프로그램** 및 **MFC 헤더** 옵션을 선택 합니다.
+MFC 애플리케이션은 MFC(Microsoft Foundation Class) 라이브러리를 기반으로 하는 실행 가능한 Windows용 애플리케이션입니다. Mfc 응용 프로그램을 만드는 가장 쉬운 방법은 MFC 응용 프로그램 마법사 (Visual Studio 2019의 Mfc 응용 프로그램**프로젝트** )를 사용 하는 것입니다. MFC 콘솔 응용 프로그램을 만들려면 Windows 바탕 화면 마법사를 사용 하 여 **콘솔 응용 프로그램** 및 **MFC 헤더** 옵션을 선택 합니다.
 
 > [!IMPORTANT]
 >  Visual Studio Express 버전에서는 MFC 프로젝트가 지원되지 않습니다.
@@ -32,9 +32,9 @@ MFC 실행 파일은 일반적으로 표준 Windows 응용 프로그램, 대화 
 
 - [웹 브라우저 스타일 MFC 응용 프로그램 만들기](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)
 
-MFC 응용 프로그램 마법사에서는 선택하는 옵션에 따라 위의 다섯 가지 응용 프로그램 형식 모두에 적합한 클래스와 파일을 생성합니다.
+MFC 애플리케이션 마법사에서는 선택하는 옵션에 따라 위의 다섯 가지 애플리케이션 형식 모두에 적합한 클래스와 파일을 생성합니다.
 
-### <a name="to-create-an-mfc-application-using-the-mfc-application-wizard"></a>MFC 응용 프로그램 마법사를 사용하여 MFC 응용 프로그램을 만들려면
+### <a name="to-create-an-mfc-application-using-the-mfc-application-wizard"></a>MFC 애플리케이션 마법사를 사용하여 MFC 애플리케이션을 만들려면
 
 1. 도움말 항목 [ C++ 콘솔 앱 프로젝트 만들기](../../get-started/tutorial-console-cpp.md)의 지침을 따릅니다.
 

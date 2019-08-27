@@ -73,7 +73,7 @@ class CTabbedPane : public CBaseTabbedPane
 
 |이름|설명|
 |----------|-----------------|
-|[CTabbedPane::m_bTabsAlwaysTop](#m_btabsalwaystop)|응용 프로그램에서 탭의 기본 위치입니다.|
+|[CTabbedPane::m_bTabsAlwaysTop](#m_btabsalwaystop)|애플리케이션에서 탭의 기본 위치입니다.|
 |[CTabbedPane::m_pTabWndRTC](#m_ptabwndrtc)|사용자 지정 `CMFCTabCtrl` 파생 개체에 대한 런타임 클래스 정보입니다.|
 
 ## <a name="remarks"></a>설명
@@ -283,7 +283,7 @@ virtual BOOL IsTabLocationBottom() const;
 
 ##  <a name="m_btabsalwaystop"></a>  CTabbedPane::m_bTabsAlwaysTop
 
-응용 프로그램에서 탭의 기본 위치입니다.
+애플리케이션에서 탭의 기본 위치입니다.
 
 ```
 AFX_IMPORT_DATA static BOOL m_bTabsAlwaysTop;

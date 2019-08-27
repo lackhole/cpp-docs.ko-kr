@@ -16,7 +16,7 @@ ms.locfileid: "62148343"
 이 문서 컨텍스트는 동시성 런타임에서 역할을 설명 합니다. 스케줄러에 연결 된 스레드 라고는 *실행 컨텍스트*, 또는 그냥 *상황에 맞는*합니다. 합니다 [concurrency:: wait](reference/concurrency-namespace-functions.md#wait) 함수와 동시성::[상황에 맞는 클래스](../../parallel/concrt/reference/context-class.md) 컨텍스트의 동작을 제어할 수 있도록 합니다. 사용 된 `wait` 함수를 지정된 된 시간에 대 한 현재 컨텍스트를 일시 중단 합니다. 사용 하 여는 `Context` 클래스 또는 현재 컨텍스트에서 초과 구독 하려는 경우 컨텍스트를 차단, 차단 해제 및 양보 때 보다 자세히 제어 해야 합니다.
 
 > [!TIP]
->  동시성 런타임은 기본 스케줄러를 제공하므로 응용 프로그램에서 스케줄러를 만들 필요가 없습니다. 작업 Scheduler를 사용 하면 응용 프로그램의 성능을 미세 조정할 수 있습니다, 있기 때문에 시작 하는 것이 좋습니다 합니다 [PPL 병렬 패턴 라이브러리 ()](../../parallel/concrt/parallel-patterns-library-ppl.md) 또는 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 있다면 동시성 런타임으로 새입니다.
+>  동시성 런타임은 기본 스케줄러를 제공하므로 애플리케이션에서 스케줄러를 만들 필요가 없습니다. 작업 Scheduler를 사용 하면 응용 프로그램의 성능을 미세 조정할 수 있습니다, 있기 때문에 시작 하는 것이 좋습니다 합니다 [PPL 병렬 패턴 라이브러리 ()](../../parallel/concrt/parallel-patterns-library-ppl.md) 또는 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 있다면 동시성 런타임으로 새입니다.
 
 ## <a name="the-wait-function"></a>Wait 함수
 

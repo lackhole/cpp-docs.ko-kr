@@ -1,24 +1,38 @@
 ---
 title: 예제 프로젝트 파일
-ms.date: 10/09/2018
+ms.date: 08/19/2019
 helpviewer_keywords:
 - .vcxproj files
 - C++ projects, project file format
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
-ms.openlocfilehash: 306b6a7b39db758c3712b1d57460268fc6414726
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: 0eb87c3f3ba8bd60f0944ad673d22f9b84e070a5
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217737"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630763"
 ---
 # <a name="project-files"></a>프로젝트 파일
 
-C++ Visual Studio에서 프로젝트 파일은 파일 이름 확장명이.vcxproj 및 작성 하는 데 필요한 정보를 포함 하는 XML 기반 파일을 C++ 프로젝트. 프로젝트 파일은 확장명이 *.props* 또는 *.targets*인 다양한 프로젝트 파일을 가져옵니다. 이러한 파일에는 추가 빌드 정보가 포함되어 있으며 다른 *.props* 또는 *.targets* 파일을 참조할 수도 있습니다. 파일 경로(예를 들면 `$(VCTargetsPath)`)의 매크로는 Visual Studio 설치에 따라 다릅니다. 이러한 매크로 대 한 자세한 내용은 및 *.props* 하 고 *.targets* 파일을 참조 하십시오 [VC + + Directories Property Page](vcpp-directories-property-page.md)를 [설정 C++ 컴파일러 및 빌드 Visual Studio에서 속성](../working-with-project-properties.md) 하 고 [에 대 한 일반 매크로 빌드 명령 및 속성](common-macros-for-build-commands-and-properties.md)합니다.
+Visual C++ Studio의 프로젝트 파일은 파일 이름 확장명이 .VCXPROJ 인 XML 기반 파일이 며, C++ 프로젝트를 빌드하는 데 필요한 정보를 포함 합니다. 프로젝트 파일은 "props" 또는 ".targets" 확장명을 포함 하는 다양 한 프로젝트 파일을 가져옵니다. 이러한 파일은 추가 빌드 정보를 포함 하며 다른 "props" 또는 ".targets" 파일을 참조할 수 있습니다. 파일 경로(예를 들면 `$(VCTargetsPath)`)의 매크로는 Visual Studio 설치에 따라 다릅니다. 이러한 매크로와 "props" 및 ".targets" 파일에 대 한 자세한 내용은 [VC + + 디렉터리 속성 페이지](vcpp-directories-property-page.md)를 참조 하 고 [, C++ Visual Studio에서 컴파일러 및 빌드 속성을 설정](../working-with-project-properties.md) 하 고, [빌드 명령 및 속성에 대 한 일반 매크로](common-macros-for-build-commands-and-properties.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
+::: moniker range=">=vs-2019"
+
+다음 샘플 .vcxproj 파일은 **새 프로젝트** 대화 상자에서 **Windows 데스크톱 마법사** 를 선택 하 여 생성 되었습니다. 프로젝트 파일을 처리하려면 명령줄에서 Msbuild.exe 도구를 사용하거나 IDE에서 **빌드** 명령을 사용합니다. (필요한 원본 및 헤더 파일이 제공되지 않았기 때문에 이 샘플을 처리할 수 없습니다.) 프로젝트 파일의 XML 요소에 대한 자세한 내용은 [프로젝트 파일 스키마 참조](/visualstudio/msbuild/msbuild-project-file-schema-reference)를 참조하세요.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
 다음 샘플.vcxproj 파일은 **새 프로젝트** 대화 상자에서 **Win32 콘솔 애플리케이션**을 지정하여 생성되었습니다. 프로젝트 파일을 처리하려면 명령줄에서 Msbuild.exe 도구를 사용하거나 IDE에서 **빌드** 명령을 사용합니다. (필요한 원본 및 헤더 파일이 제공되지 않았기 때문에 이 샘플을 처리할 수 없습니다.) 프로젝트 파일의 XML 요소에 대한 자세한 내용은 [프로젝트 파일 스키마 참조](/visualstudio/msbuild/msbuild-project-file-schema-reference)를 참조하세요.
+
+::: moniker-end
+
+
+>[!NOTE]
+> Visual Studio 2017이 하 버전의 프로젝트의 경우 `pch.h` 를 `stdafx.h` 로 `pch.cpp` 변경 `stdafx.cpp`합니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -102,12 +116,12 @@ C++ Visual Studio에서 프로젝트 파일은 파일 이름 확장명이.vcxpro
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SomeProjName.cpp" />
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>

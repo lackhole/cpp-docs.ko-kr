@@ -43,7 +43,7 @@ MSIL .dll, .exe, .netmodule 또는. obj 예를 들면 다음과 같습니다.
 
 *파일* Microsoft MSIL (intermediate language) 파일을 가져오면 해당 관리 되는 데이터 및 관리 되는 구문에 대 한 일 수 있습니다. .Dll 파일에는 어셈블리 매니페스트를 포함 하 고 매니페스트에서 참조 하는 모든.dll 가져온 빌드 중인 어셈블리 표시 하는 경우 *파일* 어셈블리 참조로 메타 데이터에서입니다.
 
-하는 경우 *파일* 어셈블리를 포함 하지 않습니다 (하는 경우 *파일* 은 모듈)만 나타내는의 옵션이 현재 (어셈블리) 응용 프로그램의 모듈에서 형식 정보를 사용 하지 않을 경우 및 이 모듈은 파트 어셈블리 사용 하 여 [/ASSEMBLYMODULE](../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md)합니다. 그러면 어셈블리를 참조하는 모든 응용 프로그램에서 모듈의 형식을 사용할 수 있습니다.
+하는 경우 *파일* 어셈블리를 포함 하지 않습니다 (하는 경우 *파일* 은 모듈)만 나타내는의 옵션이 현재 (어셈블리) 응용 프로그램의 모듈에서 형식 정보를 사용 하지 않을 경우 및 이 모듈은 파트 어셈블리 사용 하 여 [/ASSEMBLYMODULE](../build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md)합니다. 그러면 어셈블리를 참조하는 모든 애플리케이션에서 모듈의 형식을 사용할 수 있습니다.
 
 사용 하는 대신 **#using** 되는 [/FU](../build/reference/fu-name-forced-hash-using-file.md) 컴파일러 옵션입니다.
 

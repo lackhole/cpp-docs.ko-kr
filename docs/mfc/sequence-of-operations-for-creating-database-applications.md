@@ -1,5 +1,5 @@
 ---
-title: 데이터베이스 응용 프로그램을 만드는 작업 시퀀스
+title: 데이터베이스 애플리케이션을 만드는 작업 시퀀스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [MFC], database
@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62308500"
 ---
-# <a name="sequence-of-operations-for-creating-database-applications"></a>데이터베이스 응용 프로그램을 만드는 작업 시퀀스
+# <a name="sequence-of-operations-for-creating-database-applications"></a>데이터베이스 애플리케이션을 만드는 작업 시퀀스
 
 다음 표에서 데이터베이스 응용 프로그램에서 역할 및 프레임 워크의 역할을 보여 줍니다.
 

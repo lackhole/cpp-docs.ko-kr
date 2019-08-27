@@ -36,7 +36,7 @@ helpviewer_keywords:
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
 ms.openlocfilehash: 1fac3a74ca259fe3b680355fadc7f9bbd6e3cc13
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62368710"
@@ -67,7 +67,7 @@ class CRowsetImpl :
 *T*<br/>
 사용자의 클래스에서 파생 되는 `CRowsetImpl`합니다.
 
-*저장소*<br/>
+*스토리지*<br/>
 사용자 레코드 클래스입니다.
 
 *CreatorClass*<br/>

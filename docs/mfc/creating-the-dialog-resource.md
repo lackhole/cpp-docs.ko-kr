@@ -28,7 +28,7 @@ ms.locfileid: "62242330"
 
 - 프로그램에서 대화 상자에 지정할 모양 및 동작을 시뮬레이션하여 대화 상자를 테스트합니다. 테스트 모드에서는 텍스트 상자에 텍스트를 입력하고, 입력 단추를 클릭하는 등 대화 상자의 컨트롤을 조작할 수 있습니다.
 
-작업을 마치면 대화 상자 템플릿 리소스가 응용 프로그램의 리소스 스크립트 파일에 저장됩니다. 필요한 경우 나중에 편집할 수 있습니다. 설명은 만들고 대화 상자 리소스 편집 하는 방법에 대 한 참조를 [대화 상자 편집기](../windows/dialog-editor.md) 항목입니다. 이 기술에 대 한 대화 상자 템플릿 리소스를 만드는 데 수도 [CFormView](../mfc/reference/cformview-class.md) 하 고 [CRecordView](../mfc/reference/crecordview-class.md) 클래스입니다.
+작업을 마치면 대화 상자 템플릿 리소스가 애플리케이션의 리소스 스크립트 파일에 저장됩니다. 필요한 경우 나중에 편집할 수 있습니다. 설명은 만들고 대화 상자 리소스 편집 하는 방법에 대 한 참조를 [대화 상자 편집기](../windows/dialog-editor.md) 항목입니다. 이 기술에 대 한 대화 상자 템플릿 리소스를 만드는 데 수도 [CFormView](../mfc/reference/cformview-class.md) 하 고 [CRecordView](../mfc/reference/crecordview-class.md) 클래스입니다.
 
 대화 상자 클래스 만들기 대화 상자의 모양이 적합 한 때 및에 설명 된 대로 메시지를 매핑합니다 [코드 마법사를 사용 하 여 대화 상자 클래스 만들기](../mfc/creating-a-dialog-class-with-code-wizards.md)합니다.
 

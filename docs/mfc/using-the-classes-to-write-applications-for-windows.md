@@ -1,5 +1,5 @@
 ---
-title: 클래스를 사용하여 Windows 응용 프로그램 작성
+title: 클래스를 사용하여 Windows 애플리케이션 작성
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Windows applications [MFC], MFC application framework
@@ -16,7 +16,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62411476"
 ---
-# <a name="using-the-classes-to-write-applications-for-windows"></a>클래스를 사용하여 Windows 응용 프로그램 작성
+# <a name="using-the-classes-to-write-applications-for-windows"></a>클래스를 사용하여 Windows 애플리케이션 작성
 
 Microsoft Foundation 클래스 (MFC) 라이브러리의 클래스를 전체적으로 볼 때, "응용 프로그램 프레임 워크," Windows 운영 체제에 대 한 응용 프로그램을 빌드하면 구성 합니다. 매우 일반적인 수준에서 프레임 워크는 응용 프로그램의 기본 구조를 정의 하 고 구조를 지정할 수 있는 표준 사용자 인터페이스를 구현을 제공 합니다. 프로그래머로 서 작업은 나머지 구조를 작성 하는 응용 프로그램에 관련 된 것입니다. 먼저 매우 자세 시작 응용 프로그램 파일을 만들려면 MFC 응용 프로그램 마법사를 사용 하 여 가져올 수 있습니다. Microsoft Visual을 사용 하 여 C++ 코드 및 응용 프로그램별 논리를 구현 하는 클래스 라이브러리에 해당 요소를 연결할 명령 클래스 뷰 사용자 인터페이스 요소를 시각적으로 디자인 하려면 리소스 편집기입니다.
 

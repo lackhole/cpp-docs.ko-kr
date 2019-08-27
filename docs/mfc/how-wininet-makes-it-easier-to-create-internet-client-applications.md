@@ -1,5 +1,5 @@
 ---
-title: WinInet을 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법
+title: WinInet을 사용하여 인터넷 클라이언트 애플리케이션을 손쉽게 만드는 방법
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Windows Sockets [MFC], vs. WinInet
@@ -13,7 +13,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62262712"
 ---
-# <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>WinInet을 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법
+# <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>WinInet을 사용하여 인터넷 클라이언트 애플리케이션을 손쉽게 만드는 방법
 
 Win32 인터넷 확장명 또는 WinInet gopher, FTP, HTTP 등 공통 인터넷 프로토콜에 대 한 액세스를 제공 합니다. WinInet을 사용 하 여, WinSock, TCP/IP 또는 특정 인터넷 프로토콜의 세부 정보를 사용 하 여 처리할 필요 없이 더 높은 수준의 프로그래밍 인터넷 클라이언트 응용 프로그램을 작성할 수 있습니다. WinInet 친숙 한 Win32 API 인터페이스를 사용 하 여 세 가지 프로토콜 모두에 대 한 일관 된 함수 집합을 제공합니다. 이 일관성 최소화 코드 변경 내용을 기본 프로토콜 (예를 들어 FTP에서 HTTP로) 변경 하는 경우를 확인 해야 합니다.
 

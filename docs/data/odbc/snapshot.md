@@ -1,5 +1,5 @@
 ---
-title: 스냅숏
+title: 스냅샷
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC cursor library [ODBC], snapshots
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: b5293a52-0657-43e9-bd71-fe3785b21c7e
 ms.openlocfilehash: 5999f89156d895ff0c87c892be892c6a614a0132
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62330039"
 ---
-# <a name="snapshot"></a>스냅숏
+# <a name="snapshot"></a>스냅샷
 
 스냅숏은은 스냅숏이 만들어진 시점에 존재 했던 상태로 데이터의 정적 뷰를 반영 하는 레코드 집합입니다. 스냅숏을 열고 모든 레코드를 이동 하는 경우 포함 된 여러 레코드 집합 및 스냅숏을 호출 하 여 다시 작성할 때까지 해당 값이 바뀌지 않는 `Requery`합니다.
 

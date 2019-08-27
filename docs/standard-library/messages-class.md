@@ -167,7 +167,7 @@ virtual string_type do_get(
 
 ### <a name="remarks"></a>설명
 
-Protected 멤버 함수는 메시지 카탈로그 _Aampm에서 메시지 시퀀스 를 가져오려고 시도 합니다. 이 작업을 수행 하는 동안에는 *_* , *_Message*및 *_lfault* 를 사용할 수 있습니다.
+Protected 멤버 함수는 메시지 카탈로그 _Aampm에서 메시지 시퀀스를 가져오려고 시도 합니다. 이 작업을 수행 하는 동안에는 *_Set*, *_Message*및 *_lfault* 를 사용할 수 있습니다.
 
 ### <a name="example"></a>예제
 

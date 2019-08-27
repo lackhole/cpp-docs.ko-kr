@@ -1,5 +1,5 @@
 ---
-title: /TSAWARE(터미널 서버 인식 응용 프로그램 만들기)
+title: /TSAWARE(터미널 서버 인식 애플리케이션 만들기)
 ms.date: 11/04/2016
 f1_keywords:
 - /tsaware
@@ -18,7 +18,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/15/2019
 ms.locfileid: "69498194"
 ---
-# <a name="tsaware-create-terminal-server-aware-application"></a>/TSAWARE(터미널 서버 인식 응용 프로그램 만들기)
+# <a name="tsaware-create-terminal-server-aware-application"></a>/TSAWARE(터미널 서버 인식 애플리케이션 만들기)
 
 ```
 /TSAWARE[:NO]

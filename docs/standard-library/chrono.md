@@ -10,12 +10,12 @@ f1_keywords:
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-ms.openlocfilehash: f01b00a1469cdf82590a1bdfc742312ec96912c9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b3352110c2074b325ac345c05dbf899c0bdbd0ab
+ms.sourcegitcommit: ace42fa67e704d56d03c03745b0b17d2a5afeba4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459459"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69975902"
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 
@@ -76,7 +76,14 @@ Visual Studio 2015부터의 `steady_clock` 구현은 조성에 및 단 조성에
 
 다음 typedef에 사용되는 비율 형식에 대한 자세한 내용은 [\<ratio>](../standard-library/ratio.md)를 참조하세요.
 
-||| ||| | `typedef duration<long long, nano> nanoseconds;`| 틱 기간이 1 나노초 인`typedef duration<long long, micro> microseconds;` 형식의동의어입니다.|||`duration` 틱 기간이 1 마이크로초 인`typedef duration<long long, milli> milliseconds;` 형식의동의어입니다.|||`duration` 틱 기간이 1 밀리초 인`typedef duration<long long> seconds;` 형식의동의어입니다.|||`duration` 틱 기간이 1 초 인`typedef duration<int, ratio<60> > minutes;` 형식의동의어입니다.|||`duration` 틱 기간이 1 분인`typedef duration<int, ratio<3600> > hours;` 형식의동의어입니다.|||`duration` 틱 기간이 1 시간인 형식의동의어입니다.|`duration`
+|||
+|-|-|
+|`typedef duration<long long, nano> nanoseconds;`|틱 기간이 1 나노초 인 형식의동의어입니다.`duration`|
+|`typedef duration<long long, micro> microseconds;`|틱 기간이 1 마이크로초 인 형식의동의어입니다.`duration`|
+|`typedef duration<long long, milli> milliseconds;`|틱 기간이 1 밀리초 인 형식의동의어입니다.`duration`|
+|`typedef duration<long long> seconds;`|틱 기간이 1 초 인 형식의동의어입니다.`duration`|
+|`typedef duration<int, ratio<60> > minutes;`|틱 기간이 1 분인 형식의동의어입니다.`duration`|
+|`typedef duration<int, ratio<3600> > hours;`|틱 기간이 1 시간인 형식의동의어입니다.`duration`|
 
 ### <a name="literals"></a>리터럴
 

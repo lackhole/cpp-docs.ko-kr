@@ -16,7 +16,7 @@ ms.locfileid: "62413868"
 이 문서에서는 동시성 런타임에서 메모리 할당과 해제를 동시에 수행할 수 있도록 제공 하는 메모리 관리 함수를 설명 합니다.
 
 > [!TIP]
->  동시성 런타임은 기본 스케줄러를 제공하므로 응용 프로그램에서 스케줄러를 만들 필요가 없습니다. 작업 Scheduler를 사용 하면 응용 프로그램의 성능을 미세 조정할 수 있습니다, 있기 때문에 시작 하는 것이 좋습니다 합니다 [PPL 병렬 패턴 라이브러리 ()](../../parallel/concrt/parallel-patterns-library-ppl.md) 또는 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 있다면 동시성 런타임으로 새입니다.
+>  동시성 런타임은 기본 스케줄러를 제공하므로 애플리케이션에서 스케줄러를 만들 필요가 없습니다. 작업 Scheduler를 사용 하면 응용 프로그램의 성능을 미세 조정할 수 있습니다, 있기 때문에 시작 하는 것이 좋습니다 합니다 [PPL 병렬 패턴 라이브러리 ()](../../parallel/concrt/parallel-patterns-library-ppl.md) 또는 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 있다면 동시성 런타임으로 새입니다.
 
 동시성 런타임에서 할당 및 메모리 블록을 동시에 해제에 대 한 최적화 된 두 메모리 관리 함수를 제공 합니다. 합니다 [concurrency:: alloc](reference/concurrency-namespace-functions.md#alloc) 함수는 지정된 된 크기를 사용 하 여 메모리 블록을 할당 합니다. 합니다 [concurrency:: free](reference/concurrency-namespace-functions.md#free) 함수에 의해 할당 된 메모리를 해제 `Alloc`합니다.
 

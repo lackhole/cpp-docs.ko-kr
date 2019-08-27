@@ -1,5 +1,5 @@
 ---
-title: 특정 응용 프로그램 도메인에서 함수 호출
+title: 특정 애플리케이션 도메인에서 함수 호출
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 ms.assetid: e1f59b39-8ffe-4a03-8e40-99593ce18d57
 ms.openlocfilehash: 329b3ad217a93028b506059dfa6eda1c9a579e38
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62209258"
 ---
-# <a name="calling-functions-in-a-specific-application-domain"></a>특정 응용 프로그램 도메인에서 함수 호출
+# <a name="calling-functions-in-a-specific-application-domain"></a>특정 애플리케이션 도메인에서 함수 호출
 
 특정 응용 프로그램 도메인에서 함수 호출을 지원 합니다.
 

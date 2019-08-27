@@ -26,7 +26,7 @@ ms.locfileid: "62179856"
 
 **Microsoft 전용**
 
-[/E](../build/reference/e-preprocess-to-stdout.md)나 [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 컴파일러 옵션을 사용하여 전처리된 이후의 결과물을 확인할 수 있습니다. 두 옵션 모두 전처리기를 호출한 결과 내용을 표준 출력 장치(대부분의 경우 콘솔)에 출력합니다. 두 옵션의 차이점은 /E는 `#line` 지시문을 포함하고 /EP는 제거한다는 점입니다.
+[/E](../build/reference/e-preprocess-to-stdout.md)나 [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 컴파일러 옵션을 사용하여 전처리된 이후의 결과물을 확인할 수 있습니다. 두 옵션 모두 전처리기를 호출하고 결과 텍스트를 표준 출력 디바이스(대부분의 경우 콘솔)에 출력합니다. 두 옵션의 차이점은 /E는 `#line` 지시문을 포함하고 /EP는 제거한다는 점입니다.
 
 **Microsoft 전용 종료**
 

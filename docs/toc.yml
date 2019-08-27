@@ -86,6 +86,8 @@
           href: build/cppproperties-schema-reference.md
         - name: Tasks.vs.json 스키마 참조(C++)
           href: build/tasks-vs-json-schema-reference-cpp.md
+        - name: Launch.vs.json 스키마 참조(C++)
+          href: build/launch-vs-schema-reference-cpp.md
     - name: CMake 프로젝트
       expanded: false
       items:

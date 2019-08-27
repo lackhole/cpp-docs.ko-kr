@@ -23,7 +23,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68459597"
 ---
-# <a name="basicfstream-class"></a>basic_fstream 클래스
+# <a name="basic_fstream-class"></a>basic_fstream 클래스
 
 문자 특성이 `Tr` 클래스에 의해 결정되는 `Elem` 형식의 요소가 있는 [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`> 클래스의 스트림 버퍼를 사용하여 요소 및 인코드된 개체의 삽입 및 추출을 제어하는 개체를 설명합니다.
 

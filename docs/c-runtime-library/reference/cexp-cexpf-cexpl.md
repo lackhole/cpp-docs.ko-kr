@@ -39,7 +39,7 @@ ms.locfileid: "62335466"
 ---
 # <a name="cexp-cexpf-cexpl"></a>cexp, cexpf, cexpl
 
-복소수의 밑이 e인 지수 값을 계산합니다.
+복소수의 밑이 e인 지수 값을 컴퓨팅합니다.
 
 ## <a name="syntax"></a>구문
 

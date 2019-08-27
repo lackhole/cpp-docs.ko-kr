@@ -16,19 +16,19 @@ ms.locfileid: "62385338"
 ---
 # <a name="building-on-the-framework"></a>프레임워크를 기반으로 구축
 
-MFC 프레임 워크를 사용 하 여 응용 프로그램을 구성 역할을 맡고 응용 프로그램별 소스 코드를 제공 하 고 메시지와 응답 하는 명령을 정의 하 여 구성 요소를 연결 합니다. 사용 된 C++ 언어 및 표준 C++ 에서 클래스 라이브러리에서 제공 된 사용자 고유의 응용 프로그램 관련 클래스를 파생 하 고 재정의 하 고 기본 클래스의 동작을 보강 하는 기술입니다.
+MFC 프레임워크를 사용하여 응용 프로그램을 구성할 때, 응용 프로그램 별 소스 코드를 제공하고 응답 메시지와 명령을 정의하여 구성 요소를 연결합니다. C++ 언어 및 표준 C++ 기술을 사용하여 클래스 라이브러리에서 제공된 사용자 고유의 응용 프로그램 관련 클래스를 파생시키고 기본 클래스의 동작을 대체하고 기능을 보강하는 기술입니다.
 
-관련된 항목을 다음 표에서 일반적으로 수행 하는 작업과 프레임 워크의 역할 및 책임의 일반적인 순서를 설명 합니다.
+관련된 항목에서 다음 표는 일반적으로 수행하는 작업 순서와 사용자의 책임 및 프레임워크의 책임을 설명합니다.
 
-- [프레임 워크를 사용 하 여 응용 프로그램을 빌드하기 위한 시퀀스](../mfc/sequence-of-operations-for-building-mfc-applications.md)
+- [프레임워크를 사용하여 응용 프로그램을 빌드하기 위한 순서](../mfc/sequence-of-operations-for-building-mfc-applications.md)
 
-- [OLE 애플리케이션을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-ole-applications.md)
+- [OLE 애플리케이션을 만드는 작업 순서](../mfc/sequence-of-operations-for-creating-ole-applications.md)
 
-- [ActiveX 컨트롤을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-activex-controls.md)
+- [ActiveX 컨트롤을 만드는 작업 순서](../mfc/sequence-of-operations-for-creating-activex-controls.md)
 
-- [데이터베이스 애플리케이션을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-database-applications.md)
+- [데이터베이스 애플리케이션을 만드는 작업 순서](../mfc/sequence-of-operations-for-creating-database-applications.md)
 
-대부분의 경우 일부 단계는 다른 옵션 MFC 응용 프로그램을 만드는 단계 시퀀스로 이러한 테이블을 따를 수 있습니다. 예를 들어, 대부분의 응용 프로그램은 여러 가지 형식의에서 뷰 클래스의 형식을 사용합니다.
+대부분의 경우 이러한 테이블에 따라 MFC 응용 프로그램을 만들기 위한 일련의 단계를 수행할 수 있지만, 일부 단계는 대체 옵션입니다. 예를 들어 대부분의 응용 프로그램은 사용 가능한 여러 유형 중 하나의 유형 뷰 클래스를 사용합니다.
 
 ## <a name="see-also"></a>참고자료
 

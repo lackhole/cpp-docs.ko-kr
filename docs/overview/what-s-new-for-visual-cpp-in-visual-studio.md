@@ -50,7 +50,7 @@ Visual Studio 2019에는 Microsoft C++ 환경에 대한 많은 업데이트와 �
 
 - `-Ob2`의 적극적인 버전인 새로운 인라인 명령줄 스위치 `-Ob3`을 추가했습니다. `-O2`(속도를 위해 이진 파일 최적화)는 기본적으로 `-Ob2`를 의미합니다. 컴파일러가 충분히 적극적으로 인라인하지 않는다면 `-O2 -Ob3`을 전달하는 것이 좋습니다.
 
-- 수학 라이브러리 함수 및 정수 나누기와 같은 특정 다른 작업에 대한 호출을 포함하는 루프의 수동 벡터화를 지원하기 위해 SVML(Short Vector Math Library) 내장 함수에 대한 지원을 추가했습니다. 이러한 함수는 해당하는 128비트, 256비트 또는 512비트 벡터를 계산합니다. 지원되는 기능에 대한 정의는 [Intel Intrinsic 가이드](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#!=undefined&techs=SVML)를 참조하세요.
+- 수학 라이브러리 함수 및 정수 나누기와 같은 특정 다른 작업에 대한 호출을 포함하는 루프의 수동 벡터화를 지원하기 위해 SVML(Short Vector Math Library) 내장 함수에 대한 지원을 추가했습니다. 이러한 함수는 해당하는 128비트, 256비트 또는 512비트 벡터를 컴퓨팅합니다. 지원되는 기능에 대한 정의는 [Intel Intrinsic 가이드](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#!=undefined&techs=SVML)를 참조하세요.
 
 - 새로운 기능과 향상된 최적화:
 
@@ -94,7 +94,7 @@ Visual Studio 2019에는 Microsoft C++ 환경에 대한 많은 업데이트와 �
 
 ### <a name="live-share-c-support"></a>Live Share C++ 지원
 
-[Live Share](/visualstudio/liveshare/)는 이제 C++를 지원하므로 개발자가 Visual Studio 또는 Visual Studio Code를 사용하여 실시간으로 공동 작업을 수행할 수 있습니다. 자세한 내용은 [ C++용 Live Share 알림: 실시간 공유 및 공동 작업](https://devblogs.microsoft.com/cppblog/cppliveshare/)을 참조하세요.
+[Live Share](/visualstudio/liveshare/)는 이제 C++를 지원하므로 개발자가 Visual Studio 또는 Visual Studio Code를 사용하여 실시간으로 공동 작업을 수행할 수 있습니다. 자세한 내용은 [ C++용 Live Share 알림: 실시간 공유 및 협업](https://devblogs.microsoft.com/cppblog/cppliveshare/)을 참조하세요.
 
 ### <a name="intellicode-for-c"></a>C++용 IntelliCode
 

@@ -30,7 +30,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62339873"
 ---
-# <a name="crtmemcheckpoint"></a>_CrtMemCheckpoint
+# <a name="_crtmemcheckpoint"></a>_CrtMemCheckpoint
 
 응용 프로그램에서 제공한에서 가져와 디버그 힙의 현재 상태를 가져옵니다 **_CrtMemState** 구조 (디버그 버전에만 해당).
 
@@ -49,7 +49,7 @@ void _CrtMemCheckpoint(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_CrtMemCheckpoint** 함수 언제 든 디버그 힙의 현재 상태의 스냅숏을 만듭니다. 이 스냅숏은 메모리 누수를 비롯한 여러 문제를 손쉽게 감지하도록 [_CrtMemDifference](crtmemdifference.md) 같은 그 밖의 힙 상태 함수에 사용할 수 있습니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtMemState** 전처리 중 제거 됩니다.
+합니다 **_CrtMemCheckpoint** 함수 언제 든 디버그 힙의 현재 상태의 스냅숏을 만듭니다. 이 스냅샷은 메모리 누수를 비롯한 여러 문제를 손쉽게 감지하도록 [_CrtMemDifference](crtmemdifference.md) 같은 기타 힙 상태 함수에 사용할 수 있습니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtMemState** 전처리 중 제거 됩니다.
 
 응용 프로그램의 이전에 할당 된 인스턴스에 대 한 포인터를 전달 해야 합니다 **_CrtMemState** 에 Crtdbg.h에 정의 된 합니다 *상태* 매개 변수. 하는 경우 **_CrtMemCheckpoint** 에서 검사점을 만드는 동안 오류가 발생 하는 함수 생성을 **_CRT_WARN** 문제를 설명 하는 보고서를 디버그 합니다.
 

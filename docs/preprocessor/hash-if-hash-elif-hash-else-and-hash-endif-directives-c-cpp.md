@@ -41,25 +41,25 @@ ms.locfileid: "62409891"
 &nbsp;&nbsp;&nbsp;&nbsp;*경우에 줄 텍스트*
 
 *if-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#if**  *constant-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifdef**  *identifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifndef**  *identifier*
+&nbsp;&nbsp;&nbsp;&nbsp; **#if**  *constant-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#ifdef**  *identifier*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **#ifndef**  *identifier*
 
 *elif-parts* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*elif 줄 텍스트*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*elif 부분 elif 줄 텍스트*
 
 *elif-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#elif**  *constant-expression*
+&nbsp;&nbsp;&nbsp;&nbsp; **#elif**  *constant-expression*
 
 *else-part* :<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*다른 줄 텍스트*
 
 *else-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#else**
+&nbsp;&nbsp;&nbsp;&nbsp; **#else**
 
 *endif-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#endif**
+&nbsp;&nbsp;&nbsp;&nbsp; **#endif**
 
 각 **#if** 소스 파일의 지시문은 닫는 일치 되어야 **#endif** 지시문입니다. 임의 개수의 **#elif** 지시문 사이 나타날 수는 **#if** 및 **#endif** 지시문을 사용할 수 있지만 최대 **#else** 지시문 허용 됩니다. 합니다 **#else** 지시문을 있으면 해야 하기 전에 마지막 지시문 **#endif**합니다.
 
@@ -73,7 +73,7 @@ ms.locfileid: "62409891"
 
 전처리기는 선택한 처리 *텍스트* 컴파일러에 전달 합니다. 하는 경우 *텍스트* 이러한 지시문은 전처리기가 수행 하는 전처리기 지시문을 포함 합니다. 전처리기에서 선택한 텍스트 블록만 컴파일됩니다.
 
-전처리기가 단일 *텍스트* 각각 다음 상수 식을 평가 하 여 항목 **#if** 하거나 **#elif** true (0이 아닌) 상수를 발견할 때까지 지시문 식입니다. 모든 텍스트를 선택 (부터 다른 전처리기 지시문 포함 **#**) 관련까지 **#elif**를 **#else**, 또는 **#endif** .
+전처리기가 단일 *텍스트* 각각 다음 상수 식을 평가 하 여 항목 **#if** 하거나 **#elif** true (0이 아닌) 상수를 발견할 때까지 지시문 식입니다. 모든 텍스트를 선택 (부터 다른 전처리기 지시문 포함 **#** ) 관련까지 **#elif**를 **#else**, 또는 **#endif** .
 
 경우 모든 *상수-식* 이 false 없으면 또는 **#elif** 표시 하는 지시문, 전처리기 후 텍스트 블록을 선택 합니다 **#else** 절. 경우는 **#else** 절을 생략 하면 및의 모든 인스턴스 *상수-식* 에 **#if** 블록 false 인 경우 텍스트 블록이 없습니다. 선택 합니다.
 
@@ -87,7 +87,7 @@ ms.locfileid: "62409891"
 
 - 변환 유형을 나타냅니다 **int** 형식과 동일 **긴**, 및 **부호 없는 int** 동일 **부호 없는 long**합니다.
 
-- 변환기는 문자 상수를 대상 개발 환경에 대한 집합과 다른 코드 값의 집합으로 변환할 수 있습니다. 대상 개발 환경의 속성을 확인하려면 대상 개발 환경용으로 작성된 응용 프로그램의 LIMITS.H에서 매크로 값을 확인합니다.
+- 변환기는 문자 상수를 대상 개발 환경에 대한 집합과 다른 코드 값의 집합으로 변환할 수 있습니다. 대상 개발 환경의 속성을 확인하려면 대상 개발 환경용으로 작성된 애플리케이션의 LIMITS.H에서 매크로 값을 확인합니다.
 
 - 식은 환경 조회를 수행해서는 안 되며 대상 컴퓨터의 구현 정보에서 영향을 받지 않아야 합니다.
 
@@ -172,7 +172,7 @@ class Example
 
 앞의 코드에서는 기호화된 상수 `EXAMPLE_H`가 정의되어 있는지 여부를 확인합니다. 정의되어 있는 경우 해당 파일이 이미 포함되었으며 다시 처리될 필요가 없습니다. 정의되어 있지 않은 경우에는 `EXAMPLE_H` 상수가 이미 처리된 대로 EXAMPLE.H를 표시하도록 정의됩니다.
 
-## <a name="hasinclude"></a>__has_include
+## <a name="__has_include"></a>__has_include
 
 **Visual Studio 2017 버전 15.3 이상:**  라이브러리 헤더를 포함 하기 위해 사용할 수 있는지 결정 합니다.
 

@@ -28,7 +28,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 03/11/2019
 ms.locfileid: "57750782"
 ---
-# <a name="errno-doserrno-syserrlist-and-sysnerr"></a>errno, _doserrno, _sys_errlist 및 _sys_nerr
+# <a name="errno-_doserrno-_sys_errlist-and-_sys_nerr"></a>errno, _doserrno, _sys_errlist 및 _sys_nerr
 
 프로그램을 실행하는 동안 설정된 오류 코드를 보유한 전역 매크로와 표시용 오류 코드의 문자열에 해당하는 값입니다.
 
@@ -77,7 +77,7 @@ ms.locfileid: "57750782"
 |`EFAULT`|잘못된 주소|14|
 |`EBUSY`|디바이스 또는 리소스 사용 중|16|
 |`EEXIST`|파일이 있음|17|
-|`EXDEV`|장치 간 연결|18|
+|`EXDEV`|디바이스 간 연결|18|
 |`ENODEV`|해당 디바이스 없음|19|
 |`ENOTDIR`|디렉터리가 아님|20|
 |`EISDIR`|디렉터리임|21|

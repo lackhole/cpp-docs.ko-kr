@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: 155c092b-3577-4cb8-b00e-f1adf4cb2adc
 ms.openlocfilehash: 96286fc7a60a6ab43190dae6262948ac99ca30d6
 ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62395900"
@@ -41,7 +41,7 @@ ms.locfileid: "62395900"
 
 - [Serialization: Serialization 및 입/출력 데이터베이스](../../mfc/serialization-serialization-vs-database-input-output.md)
 
-- [스냅숏](../../data/odbc/snapshot.md)
+- [스냅샷](../../data/odbc/snapshot.md)
 
 - [SQL](../../data/odbc/sql.md)
 

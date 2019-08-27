@@ -13,7 +13,7 @@ ms.locfileid: "62160330"
 ---
 # <a name="how-to-load-a-ribbon-resource-from-an-mfc-application"></a>방법: MFC 응용 프로그램에서 리본 리소스 로드
 
-응용 프로그램에서 리본 리소스를 사용하려면 응용 프로그램을 수정하여 리본 리소스를 로드합니다.
+애플리케이션에서 리본 리소스를 사용하려면 애플리케이션을 수정하여 리본 리소스를 로드합니다.
 
 ### <a name="to-load-a-ribbon-resource"></a>리본 리소스를 로드하려면
 
