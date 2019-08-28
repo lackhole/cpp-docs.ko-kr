@@ -4,12 +4,12 @@ ms.date: 09/01/2017
 helpviewer_keywords:
 - UNIX [C++]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
-ms.openlocfilehash: 17f8082ac0442f65b9195b37da18b04f795d3d66
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 7f73e51e02eafe46c279a8f828803912d8cd190a
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448965"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69631692"
 ---
 # <a name="introduction-to-visual-c-for-unix-users"></a>UNIX 사용자를 위한 Visual C++ 소개
 
@@ -57,7 +57,7 @@ Microsoft C++ 컴파일러는 Windows 운영 체제에 대한 프로그래밍을
 
 Microsoft C 및 C++ 컴파일러는 인라인 코드를 포함하여 모든 C 또는 C++ 코드를 미리 컴파일하는 옵션을 제공합니다. 이 성능 기능을 사용하여 안정적인 코드 본문을 컴파일하고, 코드의 컴파일된 상태를 파일에 저장하고, 후속 컴파일 중 미리 컴파일된 코드와 아직 개발 중인 코드를 결합할 수 있습니다. 안정적인 코드는 다시 컴파일할 필요가 없기 때문에 각 후속 컴파일 속도가 향상됩니다.
 
-기본적으로 미리 컴파일된 코드는 stdafx.h 및 stdafx.cpp 파일에서 모두 지정됩니다. **미리 컴파일된 헤더** 옵션을 선택 취소하지 않으면 **새 프로젝트** 마법사가 자동으로 이러한 파일을 만듭니다. 미리 컴파일된 헤더에 대한 자세한 내용은 [미리 컴파일된 헤더 파일 만들기](../build/creating-precompiled-header-files.md)를 참조하세요.
+기본적으로 미리 컴파일된 코드는 *pch.h* 및 *pch.cpp*(Visual Studio 2017 및 이전 버전에서 *stdafx.h* 및 *stdafx.cpp*) 파일에서 모두 지정됩니다. **미리 컴파일된 헤더** 옵션을 선택 취소하지 않으면 **새 프로젝트** 마법사가 자동으로 이러한 파일을 만듭니다. 미리 컴파일된 헤더에 대한 자세한 내용은 [미리 컴파일된 헤더 파일 만들기](../build/creating-precompiled-header-files.md)를 참조하세요.
 
 ## <a name="related-sections"></a>관련 단원
 
