@@ -1,6 +1,6 @@
 ---
 title: CMFCTabCtrl Class
-ms.date: 11/04/2016
+ms.date: 08/28/2019
 f1_keywords:
 - CMFCTabCtrl
 - AFXTABCTRL/CMFCTabCtrl
@@ -104,12 +104,12 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], SynchronizeScrollBar
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
-ms.openlocfilehash: 442860b1751591c5763a768f9bd9b6ba59f33fa5
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 74f5c6e0471682a6b96e82cb2f80cc53155866ca
+ms.sourcegitcommit: bf1940a39029dbbd861f95480f55e5e8bd25cda0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504880"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108496"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Class
 
@@ -132,7 +132,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCTabCtrl::ActivateMDITab](#activatemditab)|현재 탭 컨트롤의 지정 된 탭을 표시 하 고 해당 탭에 포커스를 설정 합니다.|
 |[CMFCTabCtrl::AllowDestroyEmptyTabbedPane](#allowdestroyemptytabbedpane)||
@@ -193,7 +193,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 
 ### <a name="data-members"></a>데이터 멤버
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCTabCtrl::m_bEnableActivate](#m_benableactivate)|새 탭을 삽입 하 고 사용 하는 경우 활성 뷰의 포커스가 손실 되지 않도록 합니다.|
 
@@ -348,7 +348,7 @@ BOOL Create(
 
 다음 표에서는 *location* 매개 변수에 지정할 수 있는 값을 보여 줍니다.
 
-|위치|설명|
+|위치|Description|
 |--------------|-----------------|
 |LOCATION_BOTTOM|탭은 탭 컨트롤의 맨 아래에 있습니다.|
 |LOCATION_TOP|탭은 탭 컨트롤의 맨 위에 있습니다.|
@@ -846,7 +846,7 @@ BOOL ModifyTabStyle(Style style);
 
 *Style* 매개 변수의 값은 다음 `CMFCTabCtrl::Style` 열거형 중 하나일 수 있습니다.
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |STYLE_3D|모퉁이가 둥근 3 차원 사각형 탭을 표시 합니다.|
 |STYLE_3D_ONENOTE|세로 및 세로 방향으로 모퉁이가 둥근 3 차원 탭을 표시 합니다.|
@@ -970,7 +970,7 @@ virtual BOOL SetActiveTab(int iTab);
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 탭 컨트롤의 부모 창에 AFX_WM_CHANGE_ACTIVE_TAB 알림을 보내지 않습니다.
+그러면 해당 `AFX_WM_CHANGE_ACTIVE_TAB` 알림이 부모 창과 탭 컨트롤의 부모 프레임으로 전송 됩니다.
 
 메서드 `SetActiveTab` 는 [cmfctabctrl:: HideActiveWindowHorzScrollBar](#hideactivewindowhorzscrollbar) 메서드를 자동으로 호출 하 여 화면이 깜박이지 않도록 합니다.
 
