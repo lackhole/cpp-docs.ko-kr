@@ -3,19 +3,16 @@ title: 프로젝트 만들기(ATL 자습서, 1부)
 ms.custom: get-started-article
 ms.date: 08/19/2019
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-ms.openlocfilehash: 9f7f62ec94d5ac6d6076763853aa19297cf310e6
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 5bb4c6edffd13e13a451b203feea9a03461a9318
+ms.sourcegitcommit: bf1940a39029dbbd861f95480f55e5e8bd25cda0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630698"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108377"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>프로젝트 만들기(ATL 자습서, 1부)
 
-이 자습서에서는 다각형을 표시하는 ActiveX 개체를 생성하는 비-어트리뷰트 ATL 프로젝트를 단계별로 안내합니다. 생성된 개체는 사용자가 다각형을 구성하는 변의 수를 바꾸고 화면을 새로 고치는 코드가 가능한 옵션을 포함합니다.
-
-> [!NOTE]
-> 일반적으로 ATL 및 MFC는 Visual Studio의 Express 버전에서는 지원 되지 않습니다.
+이 자습서에서는 다각형을 표시 하는 ActiveX 개체를 만드는 특성을 사용 하지 않는 ATL 프로젝트를 단계별로 안내 합니다. 생성된 개체는 사용자가 다각형을 구성하는 변의 수를 바꾸고 화면을 새로 고치는 코드가 가능한 옵션을 포함합니다.
 
 > [!NOTE]
 > 이 자습서에서는 다각형 샘플과 동일한 소스 코드를 만듭니다. 소스 코드를 수동으로 입력하지 않을 경우 [다각형 샘플 요약](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/Polygon)에서 다운로드 할 수 있습니다. 자습서를 통해 작업 하거나 자신의 프로젝트에 오류가 있는지 확인하는데 다각형 소스 코드를 참조할 수 있습니다.
