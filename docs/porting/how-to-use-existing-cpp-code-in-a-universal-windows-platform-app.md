@@ -2,12 +2,12 @@
 title: '방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용'
 ms.date: 04/08/2019
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-ms.openlocfilehash: e587ae88fe8d38a22b351d87ae585efe82acf091
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 5050a9773eea55549958195efa624743f44ed031
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69510379"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630437"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용
 
@@ -151,7 +151,7 @@ UWP로 포팅하려는 기존 COM 라이브러리가 있는 경우 [WRL(Windows 
 
    이제 **솔루션 탐색기**는 프로젝트를 유니버설 Windows 프로젝트로 식별합니다.
 
-5. 미리 컴파일된 헤더 파일 이름이 올바른지 확인합니다. **미리 컴파일된 헤더** 섹션에서 **미리 컴파일된 헤더 파일**을 pch.h에서 stdafx.h로 변경합니다. 이렇게 하지 않으면 다음과 같은 오류가 표시됩니다.
+5. 미리 컴파일된 헤더 파일 이름이 올바른지 확인합니다. **미리 컴파일된 헤더** 섹션에서 **미리 컴파일된 헤더 파일**을 *pch.h*에서 *stdafx.h*로 변경합니다. 이렇게 하지 않으면 다음과 같은 오류가 표시됩니다.
 
    > error C2857: '#include' statement specified with the /Ycpch.h command-line option was not found in the source file(오류 C2857: /Ycpch.h 명령줄 옵션과 함께 지정된 '#include' 문을 소스 파일에서 찾을 수 없습니다.)
 
@@ -165,7 +165,7 @@ UWP로 포팅하려는 기존 COM 라이브러리가 있는 경우 [WRL(Windows 
 
    **프로젝트** > **솔루션** 아래에서 DLL 프로젝트 옆의 확인란을 선택하고 **확인** 단추를 선택합니다.
 
-8. UWP 앱의 pch.h 파일에 라이브러리 헤더 파일을 포함합니다.
+8. UWP 앱의 *pch.h* 파일에 라이브러리 헤더 파일을 포함합니다.
 
     ```cpp
     #include "..\MyNativeDLL\giraffe.h"
@@ -195,7 +195,7 @@ UWP 프로젝트에서 네이티브 C++ 정적 라이브러리를 사용할 수 
 
 1. UWP 프로젝트의 프로젝트 속성에 있는 왼쪽 창에서 **구성 속성** > **링커** > **입력**을 선택합니다. 오른쪽 창에서 **추가 종속성** 속성의 라이브러리에 경로를 추가합니다. 예를 들어 출력을 *SolutionFolder*\Debug\MyNativeLibrary\MyNativeLibrary.lib에 배치하는 프로젝트 라이브러리의 경우 상대 경로 `Debug\MyNativeLibrary\MyNativeLibrary.lib`를 추가합니다.
 
-2. pch.h 파일(있는 경우) 또는 필요에 따라 .cpp 파일 내에 헤더 파일을 참조하는 include 문을 추가하고 라이브러리를 사용하는 코드를 추가하기 시작합니다.
+2. *pch.h* 파일(있는 경우) 또는 필요에 따라 .cpp 파일 내에 헤더 파일을 참조하는 include 문을 추가하고 라이브러리를 사용하는 코드를 추가하기 시작합니다.
 
    ```cpp
    #include "..\MyNativeLibrary\giraffe.h"
@@ -219,7 +219,7 @@ UWP 앱의 정적 라이브러리에서 네이티브 API를 사용하려는 경�
 
 5. 원래 프로젝트에서 추가할 모든 파일을 선택하고 **확인**을 선택합니다. 필요한 경우 하위 폴더를 대상으로 반복합니다.
 
-6. 이제 중복된 일부 코드가 있을 수도 있습니다. 미리 컴파일된 헤더(예: stdafx.h 및 pch.h)가 두 개 이상 있으면 유지할 헤더를 하나만 선택합니다. 유지할 헤더에 include 문과 같은 필요한 코드를 복사합니다. 그런 다음 다른 헤더를 삭제하고 프로젝트 속성의 **미리 컴파일된 헤더**에서 헤더 파일의 이름이 올바른지 확인합니다.
+6. 이제 중복된 일부 코드가 있을 수도 있습니다. 미리 컴파일된 헤더(예: *stdafx.h* 및 *pch.h*)가 두 개 이상 있으면 유지할 헤더를 하나만 선택합니다. 유지할 헤더에 include 문과 같은 필요한 코드를 복사합니다. 그런 다음 다른 헤더를 삭제하고 프로젝트 속성의 **미리 컴파일된 헤더**에서 헤더 파일의 이름이 올바른지 확인합니다.
 
    미리 컴파일된 헤더로 사용할 파일을 변경한 경우 각 파일에 대한 미리 컴파일된 헤더 옵션이 올바른지 확인합니다. 각 .cpp 파일을 차례로 선택하고 속성 창을 연 다음 **만들기(/Yc)** 로 설정되어야 하는 원하는 미리 컴파일된 헤더를 제외하고 모두 **사용(/Yu)** 으로 설정되어 있는지 확인합니다.
 

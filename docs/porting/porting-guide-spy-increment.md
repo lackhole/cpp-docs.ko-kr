@@ -2,12 +2,12 @@
 title: '포팅 가이드: Spy++'
 ms.date: 11/19/2018
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: 206698d35239f416d2f13891044aa54fe502500a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 175f3fbba7e18f625dc3425c236162737689f068
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511665"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630456"
 ---
 # <a name="porting-guide-spy"></a>포팅 가이드: Spy++
 
@@ -67,7 +67,7 @@ Windows XP는 Microsoft에서 더 이상 지원되지 않으므로 Visual Studio
 
 오류를 제거하려면 **프로젝트 속성** 설정을 현재 대상으로 지정하려는 가장 낮은 Windows 버전으로 업데이트하여 WINVER을 정의합니다. 다양한 Windows 릴리스에 대한 값 테이블은 [여기](/windows/win32/WinProg/using-the-windows-headers)서 확인할 수 있습니다.
 
-stdafx.h 파일에 이러한 매크로 정의 중 일부가 포함되어 있었습니다.
+*stdafx.h* 파일에 이러한 매크로 정의 중 일부가 포함되어 있었습니다.
 
 ```cpp
 #define WINVER       0x0500  // these defines are set so that we get the
@@ -373,7 +373,7 @@ DECODEPARM(CB_GETLBTEXT)
 #define PARM(var, type, src)type var = (type)src
 ```
 
-따라서 `lpszBuffer` 변수가 동일한 함수에서 두 번 선언됩니다. 이 문제는 코드에서 매크로를 사용하지 않는 경우와 같이(두 번째 형식 선언 제거) 간단하게 수정할 수 없습니다. 매크로 코드를 일반 코드로 다시 작성할지(시간이 걸리고 오류가 발생할 가능성이 있는 작업), 또는 경고를 사용하지 않도록 설정할지 결정해야 합니다.
+따라서 `lpszBuffer` 변수가 동일한 함수에서 두 번 선언됩니다. 이 문제는 코드에서 매크로를 사용하지 않는 경우와 같이(간단하게 두 번째 형식 선언 제거) 간단하게 수정할 수 없습니다. 매크로 코드를 일반 코드로 다시 작성할지(시간이 걸리고 오류가 발생할 가능성이 있는 작업), 또는 경고를 사용하지 않도록 설정할지 결정해야 합니다.
 
 이 경우 경고를 사용하지 않도록 설정합니다. 다음과 같이 pragma를 추가하면 됩니다.
 
@@ -502,7 +502,7 @@ warning C4211: nonstandard extension used: redefined extern to static
 
 ##  <a name="porting_to_unicode"></a> 11단계. MBCS에서 유니코드로 포팅
 
-Windows 환경에서 유니코드를 말할 때는 일반적으로 UTF-16을 의미합니다. Linux와 같은 다른 운영 체제는 UTF-8을 사용하지만 Windows는 일반적으로 사용하지 않습니다. MBCS 버전의 MFC는 Visual Studio 2013 및 2015에서 사용되지 않았지만, Visual Studio 2017에서는 더 이상 사용되지 않습니다. Visual Studio 2013 또는 2015를 사용하는 경우, 실제로 MBCS 코드를 UTF-16 유니코드로 포팅하는 단계를 수행하기 전에, 다른 작업을 수행하거나 편리한 시간까지 포팅을 연기하기 위해 MBCS가 사용되지 않는다는 경고를 일시적으로 제거하는 것이 좋습니다. 현재 코드는 MBCS를 사용하며, 계속 MBCS를 사용하려면 ANSI/MBCS 버전의 MFC를 설치해야 합니다. 비교적 큰 MFC 라이브러리는 **C++ 설치를 사용하는 기본 Visual Studio 데스크톱 개발**에 포함되지 않으므로 설치 관리자의 선택적 구성 요소에서 선택해야 합니다. [MFC MBCS DLL 추가 기능](../mfc/mfc-mbcs-dll-add-on.md)을 참조하세요. 이러한 라이브러리를 다운로드하고 Visual Studio를 다시 시작한 후에 MBCS 버전의 MFC를 사용하여 컴파일 및 연결할 수 있습니다. 그러나 Visual Studio 2013 또는 2015를 사용하는 경우 MBCS에 대한 경고를 제거해야 합니다. 또한 프로젝트 속성의 **전처리기** 섹션 또는 stdafx.h 헤더 파일이나 기타 공용 헤더 파일의 시작 부분에서 미리 정의되는 매크로 목록에 NO_WARN_MBCS_MFC_DEPRECATION도 추가해야 합니다.
+Windows 환경에서 유니코드를 말할 때는 일반적으로 UTF-16을 의미합니다. Linux와 같은 다른 운영 체제는 UTF-8을 사용하지만 Windows는 일반적으로 사용하지 않습니다. MBCS 버전의 MFC는 Visual Studio 2013 및 2015에서 사용되지 않았지만, Visual Studio 2017에서는 더 이상 사용되지 않습니다. Visual Studio 2013 또는 2015를 사용하는 경우, 실제로 MBCS 코드를 UTF-16 유니코드로 포팅하는 단계를 수행하기 전에, 다른 작업을 수행하거나 편리한 시간까지 포팅을 연기하기 위해 MBCS가 사용되지 않는다는 경고를 일시적으로 제거하는 것이 좋습니다. 현재 코드는 MBCS를 사용하며, 계속 MBCS를 사용하려면 ANSI/MBCS 버전의 MFC를 설치해야 합니다. 비교적 큰 MFC 라이브러리는 **C++ 설치를 사용하는 기본 Visual Studio 데스크톱 개발**에 포함되지 않으므로 설치 관리자의 선택적 구성 요소에서 선택해야 합니다. [MFC MBCS DLL 추가 기능](../mfc/mfc-mbcs-dll-add-on.md)을 참조하세요. 이러한 라이브러리를 다운로드하고 Visual Studio를 다시 시작한 후에 MBCS 버전의 MFC를 사용하여 컴파일 및 연결할 수 있습니다. 그러나 Visual Studio 2013 또는 2015를 사용하는 경우 MBCS에 대한 경고를 제거해야 합니다. 또한 프로젝트 속성의 **전처리기** 섹션 또는 *stdafx.h* 헤더 파일이나 기타 공용 헤더 파일의 시작 부분에서 미리 정의되는 매크로 목록에 NO_WARN_MBCS_MFC_DEPRECATION도 추가해야 합니다.
 
 이제 일부 링커 오류가 있습니다.
 
