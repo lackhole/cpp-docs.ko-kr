@@ -1,6 +1,6 @@
 ---
-title: C++프로젝트 속성 페이지 참조-Visual Studio
-ms.date: 07/24/2019
+title: Windows C++ 프로젝트 속성 페이지 참조-Visual Studio
+ms.date: 08/28/2019
 helpviewer_keywords:
 - project-file macro
 - project properties [C++], default values
@@ -12,16 +12,20 @@ helpviewer_keywords:
 - build macro
 - user-defined macros
 ms.assetid: 13ffe3ea-1bc3-4bee-be5e-053a8a99cce4
-ms.openlocfilehash: d425cc6c5c6a2a8934c026174f396cb01bc3a9b7
-ms.sourcegitcommit: 720b74dddb1cdf4e570d55103158304ee1df81f8
+ms.openlocfilehash: c9fd4fc00e86e0660972fc0bd37b66b2fea02ee0
+ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606396"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70177479"
 ---
-# <a name="c-project-property-page-reference"></a>C++프로젝트 속성 페이지 참조
+# <a name="windows-c-project-property-page-reference"></a>Windows C++ 프로젝트 속성 페이지 참조
 
-Visual Studio에서는 프로젝트에 대 한 속성 페이지를 통해 컴파일러 및 링커 옵션, 파일 경로 및 기타 빌드 설정을 지정 합니다. **속성 페이지**를 열려면 주 메뉴에서 **프로젝트** > **속성** 을 선택 하거나 **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. 프로젝트 속성에 대 한 자세한 내용은 [Visual Studio C++ 에서 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조 하세요.
+Visual Studio에서는 프로젝트에 대 한 속성 페이지를 통해 컴파일러 및 링커 옵션, 파일 경로 및 기타 빌드 설정을 지정 합니다. 사용할 수 있는 속성 및 속성 페이지는 프로젝트 형식에 따라 달라 집니다. 예를 들어 메이크파일 프로젝트에는 NMake 속성 페이지가 있으며이 페이지는 MFC 또는 Win32 콘솔 프로젝트에 표시 되지 않습니다. **속성 페이지**를 열려면 주 메뉴에서 **프로젝트** > **속성** 을 선택 하거나 **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. 개별 파일에는 해당 파일에 대 한 컴파일 및 빌드 옵션을 설정 하는 데 사용할 수 있는 속성 페이지도 있습니다. 다음 이미지는 MFC 프로젝트에 대 한 속성 페이지를 보여 줍니다.
+
+![프로젝트의 C++ 속성 페이지](media/example-prop-page.png)
+
+이 섹션에서는 속성 페이지 자체에 대 한 빠른 참조를 제공 합니다. 속성 페이지에 표시 되는 옵션 및 설정은 자체 항목에 자세히 설명 되어 있으며 속성 페이지 항목에서 연결 됩니다. 프로젝트 속성에 대 한 자세한 내용은 [Visual Studio C++ 에서 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조 하세요.
 
 Linux 프로젝트의 속성 페이지는 [linux C++ 속성 페이지 참조](../../linux/prop-pages-linux.md)를 참조 하세요.
 
@@ -48,4 +52,5 @@ Linux 프로젝트의 속성 페이지는 [linux C++ 속성 페이지 참조](..
 ## <a name="see-also"></a>참고자료
 
 [방법: 프로젝트 종속성 만들기 및 제거](/visualstudio/ide/how-to-create-and-remove-project-dependencies)<br/>
-[방법: 구성 만들기 및 편집](/visualstudio/ide/how-to-create-and-edit-configurations)
+[방법: 구성 만들기 및 편집](/visualstudio/ide/how-to-create-and-edit-configurations)<br/>
+[Linux C++ 속성 페이지 참조](../../linux/prop-pages-linux.md)

@@ -19,7 +19,7 @@ ms.locfileid: "62394564"
 ---
 # <a name="onidle-member-function"></a>OnIdle 멤버 함수
 
-Windows 메시지가 처리 되는 경우 프레임 워크에서 호출 된 [CWinApp](../mfc/reference/cwinapp-class.md) 멤버 함수 [OnIdle](../mfc/reference/cwinapp-class.md#onidle) (MFC 라이브러리 참조에서 설명).
+Windows 메시지가 처리되지 않고 있는 경우 프레임워크는 [CWinApp](../mfc/reference/cwinapp-class.md)의 멤버 함수 [OnIdle](../mfc/reference/cwinapp-class.md#onidle)을 호출합니다(MFC 라이브러리 참조에서 설명).
 
 재정의 `OnIdle` 백그라운드 작업을 수행할 수 있습니다. 기본 버전을 도구 모음 단추와 같은 사용자 인터페이스 개체의 상태를 업데이트 하 고 해당 작업 하는 과정에서 프레임 워크에 의해 생성 된 임시 개체의 정리를 수행 합니다. 다음 그림은 메시지 루프를 호출 하는 방법을 보여 줍니다. `OnIdle` 큐에 메시지가 없는 경우.
 

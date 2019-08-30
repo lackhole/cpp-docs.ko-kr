@@ -1,6 +1,6 @@
 ---
 title: 사용자 지정 빌드 단계 및 빌드 이벤트 이해
-ms.date: 11/04/2016
+ms.date: 08/29/2019
 helpviewer_keywords:
 - builds [C++], events
 - custom build steps [C++], customizing builds
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - build steps [C++], build events
 - builds [C++], custom build steps
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
-ms.openlocfilehash: 93a1c787a863c2c52986a00fdeabbc4d44b0fcce
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: 386a12213814e3825ece8a81d61ac251c6793f43
+ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400444"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70177318"
 ---
 # <a name="understanding-custom-build-steps-and-build-events"></a>사용자 지정 빌드 단계 및 빌드 이벤트 이해
 
@@ -38,7 +38,7 @@ Visual C++ 개발 환경 내에서 빌드 프로세스를 사용자 지정하는
 
 사용자 지정 빌드 단계 또는 빌드 이벤트의 출력 형식도 도구의 유용성을 향상시킬 수 있습니다. 자세한 내용은 [사용자 지정 빌드 단계 또는 빌드 이벤트의 출력 형식 지정](formatting-the-output-of-a-custom-build-step-or-build-event.md)을 참조하세요.
 
-빌드 이벤트 및 사용자 지정 빌드 단계는 다른 빌드 단계와 함께 다음 순서로 실행됩니다.
+솔루션의 각 프로젝트에 대해 빌드 이벤트 및 사용자 지정 빌드 단계는 다른 빌드 단계와 함께 다음 순서 대로 실행 됩니다.
 
 1. 빌드 전 이벤트
 

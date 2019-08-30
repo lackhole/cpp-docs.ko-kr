@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CAnimateCtrl [MFC], Seek
 - CAnimateCtrl [MFC], Stop
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
-ms.openlocfilehash: adf8302508b81f1ac4f6cce3e3811ea6e3743bd4
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 18adead999f26768ae669d3a829b557bf9632a29
+ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507683"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70177452"
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl 클래스
 
@@ -88,7 +88,7 @@ AVI 클립을 표시 하는 동안 스레드가 계속 실행 되기 때문에 �
 
 사용 `CAnimateCtrl`에 대 한 자세한 내용은 [컨트롤](../../mfc/controls-mfc.md) 및 [CAnimateCtrl 사용](../../mfc/using-canimatectrl.md)을 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -332,7 +332,7 @@ BOOL Seek(UINT nTo);
 
 ### <a name="example"></a>예제
 
-  [CAnimateCtrl:: CAnimateCtrl](#canimatectrl)의 예제를 참조 하세요.
+[CAnimateCtrl:: CAnimateCtrl](#canimatectrl)의 예제를 참조 하세요.
 
 ##  <a name="stop"></a>  CAnimateCtrl::Stop
 

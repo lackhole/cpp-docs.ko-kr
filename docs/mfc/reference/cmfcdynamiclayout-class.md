@@ -1,6 +1,6 @@
 ---
 title: CMFCDynamicLayout 클래스
-ms.date: 11/04/2016
+ms.date: 08/29/2019
 f1_keywords:
 - CMFCDynamicLayout
 - AFXLAYOUT/CMFCDynamicLayout
@@ -15,12 +15,12 @@ f1_keywords:
 - AFXLAYOUT/CMFCDynamicLayout::LoadResource
 - AFXLAYOUT/CMFCDynamicLayout::SetMinSize
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
-ms.openlocfilehash: 40dedbe2737a79b7531b8acd47870ce7cb788604
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f1ddf35b514d9b89f53d5f1307a6ecb7132d2854
+ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62237593"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70177517"
 ---
 # <a name="cmfcdynamiclayout-class"></a>CMFCDynamicLayout 클래스
 
@@ -36,7 +36,7 @@ class CMFCDynamicLayout : public CObject
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |`CMFCDynamicLayout::CMFCDynamicLayout`|`CMFCDynamicLayout` 개체를 생성합니다.|
 |`CMFCDynamicLayout::~CMFCDynamicLayout`|소멸자|
@@ -54,26 +54,26 @@ class CMFCDynamicLayout : public CObject
 |[CMFCDynamicLayout::HasItem](#hasitem)|자식 컨트롤이 동적 레이아웃에 추가되었는지 확인합니다.|
 |[CMFCDynamicLayout::IsEmpty](#isempty)|동적 레이아웃에 추가된 자식 창이 없는지 확인합니다.|
 |[CMFCDynamicLayout::LoadResource](#loadresource)|AFX_DIALOG_LAYOUT 리소스에서 동적 레이아웃을 읽고 레이아웃을 호스트 창에 적용합니다.|
-|정적 [cmfcdynamiclayout:: Movehorizontal](#movehorizontal)|가져옵니다를 [MoveSettings](#movesettings_structure) 얼마나 많은 자식 컨트롤이 가로로 얼마나 이동 사용자가 호스팅 창의 크기 조정 정의 하는 값입니다.|
-|정적 [cmfcdynamiclayout:: Movehorizontalandvertical](#movehorizontalandvertical)|가져옵니다를 [MoveSettings](#movesettings_structure) 얼마나 많은 자식 컨트롤이 가로로 얼마나 이동 사용자가 호스팅 창의 크기 조정 정의 하는 값입니다.|
-|static [CMFCDynamicLayout::MoveNone](#movenone)|가져옵니다를 [MoveSettings](#movesettings_structure) 세로 또는 자식 컨트롤의 가로 동작이 없음을 나타내는 값입니다.|
-|static [CMFCDynamicLayout::MoveVertical](#movevertical)|가져옵니다를 [MoveSettings](#movesettings_structure) 얼마나를 자식 컨트롤이 세로로 얼마나 이동 사용자가 호스팅 창의 크기 조정 정의 하는 값입니다.|
+|정적 [Cmfcdynamiclayout:: MoveHorizontal](#movehorizontal)|사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤이 가로로 이동 하는 정도를 정의 하는 [Movesettings](#movesettings_structure) 값을 가져옵니다.|
+|정적 [Cmfcdynamiclayout:: MoveHorizontalAndVertical](#movehorizontalandvertical)|사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤이 가로로 이동 하는 정도를 정의 하는 [Movesettings](#movesettings_structure) 값을 가져옵니다.|
+|정적 [Cmfcdynamiclayout:: MoveNone](#movenone)|자식 컨트롤의 동작 (세로 또는 가로)을 나타내는 [Movesettings](#movesettings_structure) 값을 가져옵니다.|
+|정적 [Cmfcdynamiclayout:: MoveVertical](#movevertical)|사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤이 세로로 이동 하는 정도를 정의 하는 [Movesettings](#movesettings_structure) 값을 가져옵니다.|
 |[CMFCDynamicLayout::SetMinSize](#setminsize)|레이아웃이 그 이하로 조정되지 않는 창 크기를 설정합니다.|
-|static [CMFCDynamicLayout::SizeHorizontal](#sizehorizontal)|가져옵니다를 [SizeSettings](#sizesettings_structure) 사용자가 호스팅 창의 크기 조정 얼마나 많은 자식 컨트롤이 가로로 크기가 정의 하는 값입니다.|
-|정적 [CMFCDynamicLayout::SizeHorizontalAndVertical](#sizehorizontalandvertical)|가져옵니다를 [SizeSettings](#sizesettings_structure) 사용자가 호스팅 창의 크기 조정 얼마나 많은 자식 컨트롤이 가로로 크기가 정의 하는 값입니다.|
-|static [CMFCDynamicLayout::SizeNone](#sizenone)|가져옵니다를 [SizeSettings](#sizesettings_structure) 자식 컨트롤의 크기에 변경이 없음을 나타내는 값입니다.|
-|static [CMFCDynamicLayout::SizeVertical](#sizevertical)|가져옵니다를 [SizeSettings](#sizesettings_structure) 얼마나 많은 자식 컨트롤이 세로로 조정 하 사용자가 호스팅 창의 크기 조정 정의입니다.|
+|정적 [Cmfcdynamiclayout:: SizeHorizontal](#sizehorizontal)|사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤의 크기가 가로로 조정 되는 정도를 정의 하는 [Sizesettings](#sizesettings_structure) 값을 가져옵니다.|
+|정적 [Cmfcdynamiclayout:: SizeHorizontalAndVertical](#sizehorizontalandvertical)|사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤의 크기가 가로로 조정 되는 정도를 정의 하는 [Sizesettings](#sizesettings_structure) 값을 가져옵니다.|
+|정적 [Cmfcdynamiclayout:: SizeNone](#sizenone)|자식 컨트롤의 크기를 변경 하지 않음을 나타내는 [Sizesettings](#sizesettings_structure) 값을 가져옵니다.|
+|정적 [Cmfcdynamiclayout:: SizeVertical](#sizevertical)|사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤의 크기가 세로로 조정 되는 정도를 정의 하는 [Sizesettings](#sizesettings_structure) 값을 가져옵니다.|
 
 ## <a name="nested-types"></a>중첩 형식
 
 |이름|설명|
 |----------|-----------------|
-|[Cmfcdynamiclayout:: Movesettings 구조체](#movesettings_structure)|동적 레이아웃의 컨트롤에 대한 이동 데이터를 캡슐화합니다.|
-|[Cmfcdynamiclayout:: Sizesettings 구조체](#sizesettings_structure)|동적 레이아웃의 컨트롤에 대한 크기 변경 데이터를 캡슐화합니다.|
+|[CMFCDynamicLayout:: MoveSettings 구조체](#movesettings_structure)|동적 레이아웃의 컨트롤에 대한 이동 데이터를 캡슐화합니다.|
+|[CMFCDynamicLayout:: SizeSettings 구조체](#sizesettings_structure)|동적 레이아웃의 컨트롤에 대한 크기 변경 데이터를 캡슐화합니다.|
 
 ## <a name="remarks"></a>설명
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -259,7 +259,7 @@ AFX_DIALOG_LAYOUT 리소스를 포함하는 버퍼에 대한 포인터입니다.
 
 ##  <a name="movehorizontal"></a>  CMFCDynamicLayout::MoveHorizontal
 
-가져옵니다를 [MoveSettings](#movesettings_structure) 얼마나 많은 자식 컨트롤이 가로로 얼마나 이동 사용자가 호스팅 창의 크기 조정 정의 하는 값입니다.
+사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤이 가로로 이동 하는 정도를 정의 하는 [Movesettings](#movesettings_structure) 값을 가져옵니다.
 
 ```
 static MoveSettings MoveHorizontal(int nRatio);
@@ -272,13 +272,13 @@ static MoveSettings MoveHorizontal(int nRatio);
 
 ### <a name="return-value"></a>반환 값
 
-A [MoveSettings](#movesettings_structure) 요청한 캡슐화 하는 값 비율을 이동 합니다.
+요청 된 이동 비율을 캡슐화 하는 [Movesettings](#movesettings_structure) 값입니다.
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="movehorizontalandvertical"></a>  CMFCDynamicLayout::MoveHorizontalAndVertical
 
-가져옵니다를 [MoveSettings](#movesettings_structure) 얼마나 많은 자식 컨트롤이 가로로 얼마나 이동 사용자가 호스팅 창의 크기 조정 정의 하는 값입니다.
+사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤이 가로로 이동 하는 정도를 정의 하는 [Movesettings](#movesettings_structure) 값을 가져옵니다.
 
 ```
 static MoveSettings MoveHorizontalAndVertical(int nXRatio int nYRatio);
@@ -294,13 +294,13 @@ static MoveSettings MoveHorizontalAndVertical(int nXRatio int nYRatio);
 
 ### <a name="return-value"></a>반환 값
 
-A [MoveSettings](#movesettings_structure) 요청한 캡슐화 하는 값 비율을 이동 합니다.
+요청 된 이동 비율을 캡슐화 하는 [Movesettings](#movesettings_structure) 값입니다.
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="movenone"></a>  CMFCDynamicLayout::MoveNone
 
-가져옵니다를 [MoveSettings](#movesettings_structure) 세로 또는 자식 컨트롤의 가로 동작이 없음을 나타내는 값입니다.
+자식 컨트롤의 동작 (세로 또는 가로)을 나타내는 [Movesettings](#movesettings_structure) 값을 가져옵니다.
 
 ```
 static MoveSettings MoveNone();
@@ -308,11 +308,11 @@ static MoveSettings MoveNone();
 
 ### <a name="return-value"></a>반환 값
 
-A [MoveSettings](#movesettings_structure) 는 사용자가 호스트 창으로 이동 하지 않습니다 있도록 위치에 컨트롤을 수정 하는 값입니다.
+사용자가 호스트 창의 크기를 조정할 때 이동 하지 않도록 컨트롤을 현재 위치에서 수정 하는 [Movesettings](#movesettings_structure) 값입니다.
 
 ### <a name="remarks"></a>설명
 
-##  <a name="movesettings_structure"></a>  Cmfcdynamiclayout:: Movesettings 구조체
+##  <a name="movesettings_structure"></a>CMFCDynamicLayout:: MoveSettings 구조체
 
 동적 레이아웃의 컨트롤에 대한 이동 데이터를 캡슐화합니다.
 
@@ -350,7 +350,7 @@ BOOL IsNone() const
 
 ## <a name="cmfcdynamiclayoutmovesettingsisvertical"></a>CMFCDynamicLayout::MoveSettings::IsVertical
 
-  이동 데이터가 0이 아닌 세로 이동을 지정하는지 확인합니다.
+이동 데이터가 0이 아닌 세로 이동을 지정하는지 확인합니다.
 
 ```
 BOOL IsVertical() const
@@ -362,7 +362,7 @@ BOOL IsVertical() const
 
 ##  <a name="movevertical"></a>  CMFCDynamicLayout::MoveVertical
 
-가져옵니다를 [MoveSettings](#movesettings_structure) 얼마나를 자식 컨트롤이 세로로 얼마나 이동 사용자가 호스팅 창의 크기 조정 정의 하는 값입니다.
+사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤이 세로로 이동 하는 정도를 정의 하는 [Movesettings](#movesettings_structure) 값을 가져옵니다.
 
 ```
 static MoveSettings MoveVertical(int nRatio);
@@ -375,7 +375,7 @@ static MoveSettings MoveVertical(int nRatio);
 
 ### <a name="return-value"></a>반환 값
 
-A [MoveSettings](#movesettings_structure) 요청한 캡슐화 하는 값 비율을 이동 합니다.
+요청 된 이동 비율을 캡슐화 하는 [Movesettings](#movesettings_structure) 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -398,7 +398,7 @@ void SetMinSize(const CSize& size);
 
 ##  <a name="sizehorizontal"></a>  CMFCDynamicLayout::SizeHorizontal
 
-가져옵니다를 [SizeSettings](#sizesettings_structure) 사용자가 호스팅 창의 크기 조정 얼마나 많은 자식 컨트롤이 가로로 크기가 정의 하는 값입니다.
+사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤의 크기가 가로로 조정 되는 정도를 정의 하는 [Sizesettings](#sizesettings_structure) 값을 가져옵니다.
 
 ```
 static SizeSettings SizeHorizontal(int nRatio);
@@ -411,13 +411,13 @@ static SizeSettings SizeHorizontal(int nRatio);
 
 ### <a name="return-value"></a>반환 값
 
-A [SizeSettings](#sizesettings_structure) 요청 된 크기 비율을 캡슐화 하는 값입니다.
+요청 된 크기 비율을 캡슐화 하는 [Sizesettings](#sizesettings_structure) 값입니다.
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="sizehorizontalandvertical"></a>  CMFCDynamicLayout::SizeHorizontalAndVertical
 
-가져옵니다를 [SizeSettings](#sizesettings_structure) 사용자가 호스팅 창의 크기 조정 얼마나 많은 자식 컨트롤이 가로로 크기가 정의 하는 값입니다.
+사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤의 크기가 가로로 조정 되는 정도를 정의 하는 [Sizesettings](#sizesettings_structure) 값을 가져옵니다.
 
 ```
 static SizeSettings SizeHorizontalAndVertical(int nXRatio int nYRatio);
@@ -433,13 +433,13 @@ static SizeSettings SizeHorizontalAndVertical(int nXRatio int nYRatio);
 
 ### <a name="return-value"></a>반환 값
 
-A [SizeSettings](#sizesettings_structure) 요청 된 크기 비율을 캡슐화 하는 값입니다.
+요청 된 크기 비율을 캡슐화 하는 [Sizesettings](#sizesettings_structure) 값입니다.
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="sizenone"></a>  CMFCDynamicLayout::SizeNone
 
-가져옵니다를 [SizeSettings](#sizesettings_structure) 자식 컨트롤의 크기에 변경이 없음을 나타내는 값입니다.
+자식 컨트롤의 크기를 변경 하지 않음을 나타내는 [Sizesettings](#sizesettings_structure) 값을 가져옵니다.
 
 ```
 static SizeSettings SizeNone();
@@ -447,11 +447,11 @@ static SizeSettings SizeNone();
 
 ### <a name="return-value"></a>반환 값
 
-A [SizeSettings](#sizesettings_structure) 사용자가 호스트 창 크기 조정으로 크기를 변경 되지 않습니다 있도록 크기에서 컨트롤을 수정 하는 값입니다.
+사용자가 호스트 창의 크기를 조정할 때 크기가 변경 되지 않도록 컨트롤을 특정 크기로 수정 하는 [Sizesettings](#sizesettings_structure) 값입니다.
 
 ### <a name="remarks"></a>설명
 
-##  <a name="sizesettings_structure"></a>  Cmfcdynamiclayout:: Sizesettings 구조체
+##  <a name="sizesettings_structure"></a>CMFCDynamicLayout:: SizeSettings 구조체
 
 동적 레이아웃의 컨트롤에 대한 크기 변경 데이터를 캡슐화합니다.
 
@@ -501,7 +501,7 @@ BOOL IsVertical() const
 
 ##  <a name="sizevertical"></a>  CMFCDynamicLayout::SizeVertical
 
-가져옵니다를 [SizeSettings](#sizesettings_structure) 얼마나 많은 자식 컨트롤이 세로로 조정 하 사용자가 호스팅 창의 크기 조정 정의입니다.
+사용자가 호스팅 창의 크기를 조정할 때 자식 컨트롤의 크기가 세로로 조정 되는 정도를 정의 하는 [Sizesettings](#sizesettings_structure) 값을 가져옵니다.
 
 ```
 static SizeSettings SizeVertical(int nRatio);
@@ -514,7 +514,7 @@ static SizeSettings SizeVertical(int nRatio);
 
 ### <a name="return-value"></a>반환 값
 
-A [SizeSettings](#sizesettings_structure) 요청 된 크기 비율을 캡슐화 하는 값입니다.
+요청 된 크기 비율을 캡슐화 하는 [Sizesettings](#sizesettings_structure) 값입니다.
 
 ### <a name="remarks"></a>설명
 
