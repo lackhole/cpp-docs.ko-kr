@@ -16,9 +16,10 @@ ms.locfileid: "62405822"
 ---
 # <a name="exitinstance-member-function"></a>ExitInstance 멤버 함수
 
-합니다 [ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) 클래스의 멤버 함수 [CWinApp](../mfc/reference/cwinapp-class.md) 응용 프로그램의 복사본으로 종료 되 면 일반적으로 응용 프로그램을 종료 하는 사용자의 결과로 때마다 호출 됩니다.
+[CWinApp](../mfc/reference/cwinapp-class.md) 클래스의
+[ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) 멤버 함수는 사용자가 응용 프로그램을 종료하는 경우와 같이 응용 프로그램 복사본의 종료 시마다 호출됩니다.
 
-재정의 `ExitInstance` 그래픽 장치 GDI (인터페이스) 리소스를 해제 또는 프로그램 실행 중에 사용 되는 메모리 할당 해제와 같은 특별 한 정리 처리 해야 합니다. 그러나 문서 및 뷰과 같은 표준 항목의 정리는 해당 개체에 특정 특별 한 정리를 수행 하기 위한 다른 재정의 가능 함수를 사용 하 여 framework에서 제공 됩니다.
+그래픽 장치 인터페이스(GDI) 메모리 해제나 프로그램 실행 중 사용된 메모리 할당 해제와 같은 별도의 정리 작업이 필요한 경우 `ExitInstance`를 재정의합니다. 문서나 뷰와 같은 표준 항목의 정리는 프레임워크에서 제공되기도 하지만, 해당 개체에 대한 별도의 정리 작업 수행을 위한 다른 재정의 가능 함수를 사용합니다.
 
 ## <a name="see-also"></a>참고자료
 
