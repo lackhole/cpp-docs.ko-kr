@@ -1,6 +1,6 @@
 ---
 title: 관리되는 리소스 속성 페이지
-ms.date: 11/04/2016
+ms.date: 08/28/2019
 f1_keywords:
 - VC.Project.VCManagedResourceCompilerTool.ResourceFileName
 - VC.Project.VCManagedResourceCompilerTool.OutputFileName
@@ -8,18 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - Managed Resources property page
 ms.assetid: 80b80384-ee55-494d-9f0e-907bb98cfc19
-ms.openlocfilehash: 97cf05f881949444879b0d48e3b3c2703a614985
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 14802996e63392bfb5fcc22096ef5f3d9db197c2
+ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498227"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70177532"
 ---
 # <a name="managed-resources-property-page"></a>관리되는 리소스 속성 페이지
 
-리소스 컴파일러에 대한 설정을 사용하도록 설정합니다.
-
-**관리되는 리소스** 속성 페이지에는 다음과 같은 속성이 포함되어 있습니다.
+**관리 되는 리소스** 속성 페이지는/cli 프로그램에서 C++.net 리소스를 사용 하는 경우 관리 되는 리소스 컴파일러 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) 에 대 한 다음 속성을 노출 합니다.
 
 - **리소스 논리적 이름**
 

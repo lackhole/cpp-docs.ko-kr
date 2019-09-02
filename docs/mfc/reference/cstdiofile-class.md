@@ -1,6 +1,6 @@
 ---
 title: CStdioFile 클래스
-ms.date: 11/04/2016
+ms.date: 08/29/2019
 f1_keywords:
 - CStdioFile
 - AFX/CStdioFile
@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CStdioFile [MFC], WriteString
 - CStdioFile [MFC], m_pStream
 ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15
-ms.openlocfilehash: 068e59fdc19821487bc78141d10743363221518e
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: 4b667f4121d92863335befda3a7beef74f29ad1a
+ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375840"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70177487"
 ---
 # <a name="cstdiofile-class"></a>CStdioFile 클래스
 
@@ -45,7 +45,7 @@ class CStdioFile : public CFile
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CStdioFile::Open](#open)|오버로드됨. Open은 기본 `CStdioFile` 생성자와 함께 사용 하도록 설계 되었습니다 ( [CFile:: Open](../../mfc/reference/cfile-class.md#open)재정의).|
 |[CStdioFile::ReadString](#readstring)|텍스트 한 줄을 읽습니다.|
@@ -89,7 +89,7 @@ class CStdioFile : public CFile
 ```
 CStdioFile();
 CStdioFile(CAtlTransactionManager* pTM);
-  CStdioFile(FILE* pOpenStream);
+CStdioFile(FILE* pOpenStream);
 
 CStdioFile(
     LPCTSTR lpszFileName,
@@ -107,7 +107,7 @@ CStdioFile(
 C 런타임 함수 [fopen](../../c-runtime-library/reference/fopen-wfopen.md)에 대 한 호출에서 반환 되는 파일 포인터를 지정 합니다.
 
 *lpszFileName*<br/>
-원하는 파일의 경로인 문자열을 지정 합니다. 경로는 상대 경로 이거나 절대 경로일 수 있습니다.
+원하는 파일의 경로인 문자열을 지정 합니다. 경로는 상대적이거나 절대적일 수 있습니다.
 
 *nOpenFlags*<br/>
 파일 만들기, 파일 공유 및 파일 액세스 모드에 대 한 옵션을 지정 합니다. 비트 or ( **|** ) 연산자를 사용 하 여 여러 옵션을 지정할 수 있습니다.
@@ -165,7 +165,7 @@ virtual BOOL Open(
 ### <a name="parameters"></a>매개 변수
 
 *lpszFileName*<br/>
-원하는 파일의 경로인 문자열입니다. 경로는 상대 경로 이거나 절대 경로일 수 있습니다.
+원하는 파일의 경로인 문자열입니다. 경로는 상대적이거나 절대적일 수 있습니다.
 
 *nOpenFlags*<br/>
 공유 및 액세스 모드 파일을 열 때 수행할 동작을 지정 합니다. 비트 or (&#124;) 연산자를 사용 하 여 옵션을 조합할 수 있습니다. 하나의 액세스 권한 및 하나의 공유 옵션이 필요 합니다. modeCreate 및 modeNoInherit 모드는 선택 사항입니다.
