@@ -1,6 +1,6 @@
 ---
 title: COleSafeArray 클래스
-ms.date: 08/27/2018
+ms.date: 08/29/2019
 f1_keywords:
 - COleSafeArray
 - AFXDISP/COleSafeArray
@@ -60,12 +60,12 @@ helpviewer_keywords:
 - COleSafeArray [MFC], UnaccessData
 - COleSafeArray [MFC], Unlock
 ms.assetid: f45a5224-5f48-40ec-9ddd-287ef9740150
-ms.openlocfilehash: b947678acc89bad96ce01b93e79cbaa141411ec4
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a0ce0fc03923806c9e044a7edae3178fd3429b76
+ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69503775"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70177399"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray 클래스
 
@@ -87,7 +87,7 @@ class COleSafeArray : public tagVARIANT
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[COleSafeArray::AccessData](#accessdata)|배열 데이터에 대 한 포인터를 검색 합니다.|
 |[COleSafeArray::AllocData](#allocdata)|배열에 메모리를 할당 합니다.|
@@ -118,7 +118,7 @@ class COleSafeArray : public tagVARIANT
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[COleSafeArray:: operator LPCVARIANT](#operator_lpcvariant)|개체의 기본 `VARIANT` 구조에 액세스 합니다. `COleSafeArray`|
 |[COleSafeArray:: operator LPVARIANT](#operator_lpvariant)|개체의 기본 `VARIANT` 구조에 액세스 합니다. `COleSafeArray`|
@@ -130,7 +130,7 @@ class COleSafeArray : public tagVARIANT
 
 `COleSafeArray`OLE `VARIANT` 구조에서 파생 됩니다. OLE `SAFEARRAY` 멤버 함수는를 통해 `COleSafeArray`사용할 수 있으며, 1 차원 바이트 배열에 대해 특별히 디자인 된 멤버 함수 집합을 사용할 수 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `tagVARIANT`
 
@@ -240,7 +240,7 @@ COleSafeArray(
 
 COleSafeArray(const COleSafeArray& saSrc);
 COleSafeArray(const VARIANT& varSrc);
-  COleSafeArray(LPCVARIANT pSrc);
+COleSafeArray(LPCVARIANT pSrc);
 COleSafeArray(const COleVariant& varSrc);
 ```
 
@@ -596,7 +596,7 @@ operator LPVARIANT();
 ```
 COleSafeArray& operator=(const COleSafeArray& saSrc);
 COleSafeArray& operator=(const VARIANT& varSrc);
-  COleSafeArray& operator=(LPCVARIANT pSrc);
+COleSafeArray& operator=(LPCVARIANT pSrc);
 COleSafeArray& operator=(const COleVariant& varSrc);
 ```
 
