@@ -1,6 +1,6 @@
 ---
-title: region, endregion
-ms.date: 10/18/2018
+title: region, endregion pragma
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.endregion
 - endregion_CPP
@@ -12,37 +12,35 @@ helpviewer_keywords:
 - endregion pragma
 - region pragma
 ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
-ms.openlocfilehash: c73a90aa2be83d643b74dde4645081e89da3ff73
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a01e04582ac81d678aa0702945c62ee974a4428
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179752"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222382"
 ---
-# <a name="region-endregion"></a>region, endregion
+# <a name="region-endregion-pragmas"></a>region, endregion pragma
 
-`#pragma region` 확장 하거나 사용 하는 경우 축소할 수 있는 코드 블록을 지정할 수 있습니다 합니다 [개요 기능](/visualstudio/ide/outlining) Visual Studio 코드 편집기입니다.
+`#pragma region`Visual Studio Code 편집기의 [개요 기능](/visualstudio/ide/outlining) 을 사용할 때 확장 하거나 축소할 수 있는 코드 블록을 지정할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
-```
-#pragma region name
-#pragma endregion comment
-```
+> **#pragma 지역** *이름*\
+> **#pragma endregion** *설명*
 
 ### <a name="parameters"></a>매개 변수
 
-*comment*<br/>
-(선택 사항) 코드 편집기에 표시 되는 주석입니다.
+*주석의*\
+필드 코드 편집기에 표시 되는 주석입니다.
 
-*name*<br/>
-(선택 사항) 영역의 이름입니다.  이 이름은 코드 편집기에 표시됩니다.
+*이름의*\
+필드 영역 이름입니다. 이 이름은 코드 편집기에 표시 됩니다.
 
 ## <a name="remarks"></a>설명
 
-`#pragma endregion` 끝을 표시 한 `#pragma region` 블록입니다.
+`#pragma endregion``#pragma region` 블록의 끝을 표시 합니다.
 
-A `#region` 블록으로 종결 되어야 합니다 `#pragma endregion`합니다.
+블록 `#region` 은 `#pragma endregion` 지시문으로 종료 해야 합니다.
 
 ## <a name="example"></a>예제
 
@@ -59,4 +57,4 @@ int main() {}
 
 ## <a name="see-also"></a>참고자료
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -1,6 +1,6 @@
 ---
 title: _disable
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _disable_cpp
 - _disable
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - rsm instruction
 - disable intrinsic
 ms.assetid: 52da3df9-815c-4524-9839-6d1742cff5c6
-ms.openlocfilehash: 93db063c6b53f0bec739ba134728b83379a21f53
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 94be850e1d494ff62df84922b46f28481be68314
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264168"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216825"
 ---
-# <a name="disable"></a>_disable
+# <a name="_disable"></a>_disable
 
 **Microsoft 전용**
 
@@ -24,7 +24,7 @@ ms.locfileid: "62264168"
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void _disable(void);
 ```
 
@@ -32,7 +32,7 @@ void _disable(void);
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`_disable`|x86, ARM, x64|
+|`_disable`|x86, ARM, x64, ARM64|
 
 **헤더 파일** \<intrin.h >
 
@@ -42,7 +42,7 @@ void _disable(void);
 
 이 함수는 커널 모드에서만 사용할 수 있습니다. 사용자 모드에서 이 함수를 사용하면 런타임에 권한 있는 명령 예외가 throw됩니다.
 
-ARM 플랫폼에서 이 루틴은 내장 함수로만 사용할 수 있습니다.
+ARM 및 ARM64 플랫폼에서이 루틴은 내장 함수로만 사용할 수 있습니다.
 
 **Microsoft 전용 종료**
 

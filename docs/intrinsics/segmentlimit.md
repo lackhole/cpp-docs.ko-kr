@@ -1,41 +1,41 @@
 ---
 title: __segmentlimit
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __segmentlimit
 helpviewer_keywords:
 - __segmentlimit intrinsic
 - lsl instruction
 ms.assetid: d0bc3630-90cb-4185-8667-686fd41e23d4
-ms.openlocfilehash: 650a847be3270782dc441d0e68c2c80d910e9d1e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9239d8de8ce2065d09ee7975301a2cb41832ba89
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390388"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217985"
 ---
-# <a name="segmentlimit"></a>__segmentlimit
+# <a name="__segmentlimit"></a>__segmentlimit
 
 **Microsoft 전용**
 
-생성 된 `lsl` (부하 세그먼트 제한) 명령입니다.
+`lsl` (로드 세그먼트 제한) 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned long __segmentlimit(
    unsigned long a
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*a*<br/>
-[in] 세그먼트 선택기를 지정 하는 상수입니다.
+*은*\
+진행 세그먼트 선택기를 지정 하는 상수입니다.
 
 ## <a name="return-value"></a>반환 값
 
-지정 된 세그먼트 선택기의 세그먼트 제한을 `a`있는 선택기를 현재 사용 권한 수준에서 유효 하 고 표시 되는 경우.
+선택 기가 유효 하 고 현재 사용 권한 수준에서 표시 되는 경우 *에*의해 지정 된 세그먼트 선택기의 세그먼트 한도입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -47,13 +47,13 @@ unsigned long __segmentlimit(
 
 ## <a name="remarks"></a>설명
 
-세그먼트 제한을 검색할 수 없는 경우이 명령이 실패 합니다. 오류가 발생 하면이 명령은 ZF 플래그를 지우고 반환 값은 정의 되지 않습니다.
+세그먼트 제한을 검색할 수 없는 경우에는이 명령이 실패 합니다. 오류가 발생 하면이 명령은 ZF 플래그를 지우고 반환 값이 정의 되지 않습니다.
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 #include <stdio.h>
 
 #ifdef _M_IX86

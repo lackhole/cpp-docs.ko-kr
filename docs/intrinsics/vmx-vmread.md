@@ -1,40 +1,41 @@
 ---
 title: __vmx_vmread
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __vmx_vmread
 helpviewer_keywords:
 - VMREAD instruction
 - __vmx_vmread intrinsic
 ms.assetid: 08bdd7a0-6435-4ea6-b9a0-f592d870e5aa
-ms.openlocfilehash: 5c7b72ba3bf1bd60324704b774bcedaf5612240f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 409835ac29d6f2e839de62291cc5b142166a465c
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390050"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219439"
 ---
-# <a name="vmxvmread"></a>__vmx_vmread
+# <a name="__vmx_vmread"></a>__vmx_vmread
 
 **Microsoft 전용**
 
-현재 가상 머신 제어 구조 (VMCS)에 지정된 된 필드를 읽고 지정된 된 위치에 배치 합니다.
+현재 VMCS (가상 컴퓨터 제어 구조)에서 지정 된 필드를 읽고 지정 된 위치에 배치 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned char __vmx_vmread(
    size_t Field,
    size_t *FieldValue
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|---------------|-----------------|
-|*필드*|[in] VMCS의 필드는 읽기입니다.|
-|*FieldValue*|[in] 지정 하 여 VMCS 필드에서 읽은 값을 저장할 위치에 대 한 포인터를 `Field` 매개 변수입니다.|
+*필드가*\
+진행 읽을 VMCS 필드입니다.
+
+*FieldValue*\
+진행 `Field` 매개 변수로 지정 된 vmcs 필드에서 읽은 값을 저장할 위치에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -46,7 +47,7 @@ unsigned char __vmx_vmread(
 
 ## <a name="remarks"></a>설명
 
-`__vmx_vmread` 함수는 `VMREAD` 컴퓨터 명령에 해당합니다. 값을 `Field` 매개 변수는 Intel 설명서에 설명 된 인코딩된 필드 인덱스입니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002, 문서를 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트를 다음 문서의 부록 C를 참조 하세요. .
+`__vmx_vmread` 함수는 `VMREAD` 컴퓨터 명령에 해당합니다. `Field` 매개 변수 값은 Intel 설명서에 설명 된 인코딩된 필드 인덱스입니다. 자세한 내용을 보려면 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트에서 "IA-32 intel Architecture에 대 한 Intel 가상화 기술 사양"의 부록 C를 검색 하십시오.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -60,5 +61,5 @@ unsigned char __vmx_vmread(
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmwrite](../intrinsics/vmx-vmwrite.md)

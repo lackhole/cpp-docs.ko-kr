@@ -1,6 +1,6 @@
 ---
-title: vtordisp
-ms.date: 10/18/2018
+title: vtordisp pragma
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.vtordisp
 - vtordisp_CPP
@@ -8,56 +8,54 @@ helpviewer_keywords:
 - pragmas, vtordisp
 - vtordisp pragma
 ms.assetid: 05b7d73c-43fa-4b62-8c8a-170a9e427391
-ms.openlocfilehash: 67c6c329bcee75012f6075334760925eca945501
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3c676ab2bfee1b6cf3caff3ab456a4f23f2744c3
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179454"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216485"
 ---
-# <a name="vtordisp"></a>vtordisp
+# <a name="vtordisp-pragma"></a>vtordisp pragma
 
-**C++특정**
+**C++컴퓨터별**
 
-숨겨진 vtordisp 생성/소멸 치환 멤버의 추가를 제어합니다.
+숨겨진 `vtordisp` 생성/소멸 치환 멤버의 추가를 제어 합니다.
 
 ## <a name="syntax"></a>구문
 
-```cpp
-#pragma vtordisp([push,] n)
-#pragma vtordisp(pop)
-#pragma vtordisp()
-#pragma vtordisp([push,] {on | off})
-```
+> **#pragma vtordisp (** [ **push,** ] *n* **)** \
+> **pop (#pragma vtordisp)** \
+> **#pragma vtordisp ()** \
+> **#pragma vtordisp (** [ **push,** ] { **on** | **off** } **)**
 
 ### <a name="parameters"></a>매개 변수
 
-*push*<br/>
-내부 컴파일러 스택에 현재 vtordisp 설정을 푸시하고 새 vtordisp 설정이 설정 되어 *n*합니다.  하는 경우 *n* 지정 하지 않으면 현재 vtordisp 설정이 변경 되지 않습니다.
+**누르기**\
+내부 컴파일러 스택에 `vtordisp` 현재 설정을 푸시하고 새 `vtordisp` 설정을 *n*으로 설정 합니다.  *N* 을 지정 하지 않으면 현재 `vtordisp` 설정이 변경 되지 않습니다.
 
-*pop*<br/>
-내부 컴파일러 스택에서 상위 레코드를 제거하고 vtordisp 설정을 제거된 값으로 복원합니다.
+**창을**\
+내부 컴파일러 스택에서 상위 레코드를 제거 하 고 `vtordisp` 설정을 제거 된 값으로 복원 합니다.
 
-*n*<br/>
-Vtordisp 설정에 대해 새 값을 지정합니다. 가능한 값은 0, 1 또는 2에 해당 하는 `/vd0`, `/vd1`, 및 `/vd2` 컴파일러 옵션입니다. 자세한 내용은 [/vd (생성 치환 사용 안 함)](../build/reference/vd-disable-construction-displacements.md)합니다.
+*n*\
+`vtordisp` 설정의 새 값을 지정 합니다. 가능한 값은 0, 1 또는 2 이며,, 및 `/vd0` `/vd2` 컴파일러 `/vd1`옵션에 해당 합니다. 자세한 내용은 [/vd (생성 치환 사용 안 함)](../build/reference/vd-disable-construction-displacements.md)를 참조 하세요.
 
-*on*<br/>
+**sign-on**\
 `#pragma vtordisp(1)`와 같습니다.
 
-*off*<br/>
+**해제**\
 `#pragma vtordisp(0)`와 같습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **vtordisp** pragma 가상 기본을 사용 하는 코드에만 적용 됩니다. 파생된 클래스가 가상 기본 클래스에서 상속 하는 가상 함수를 재정의 하 고 컴파일러가 추가 숨겨진된 발생할수있습니다생성자나파생된클래스의소멸자를가상기본클래스에대한포인터를사용하여해당함수를호출하는경우**vtordisp** 필드를 가상 기본 클래스입니다.
+**Vtordisp** pragma는 가상 베이스를 사용 하는 코드에만 적용 됩니다. 파생 클래스가 가상 기본 클래스에서 상속된 가상 함수를 재정의하고 파생 클래스의 생성자 또는 소멸자가 가상 기본 클래스에 대한 포인터를 사용하여 해당 함수를 호출하는 경우, 컴파일러는 추가로 숨겨진 `vtordisp` 필드를 가상 기본 클래스에 사용할 수 있습니다.
 
-합니다 **vtordisp** pragma 그 뒤에 나오는 클래스의 레이아웃에 영향을 줍니다. 합니다 `/vd0`, `/vd1`, 및 `/vd2` 옵션 전체 모듈에 대 한 동일한 동작을 지정 합니다. 0을 지정 하거나 *해제* 숨겨진를 표시 하지 않습니다 **vtordisp** 멤버입니다. 해제할 **vtordisp** 클래스의 생성자 및 소멸자 호출 가상 가능성이 없는 함수에서 가리키는 개체에 없는 경우에 합니다 **이** 포인터입니다.
+**Vtordisp** pragma는 뒤에 오는 클래스의 레이아웃에 영향을 줍니다. , `/vd0` 및옵션`/vd2` 은 전체 모듈에 대해 동일한 동작을 지정 합니다. `/vd1` 0 또는 **off** 를 지정 하면 숨겨진 `vtordisp` 멤버가 표시 되지 않습니다. 클래스의 생성자 및 소멸자가 `this` 포인터가 가리키는 개체에 대해 가상 함수를 호출할 가능성이 없는 경우에만 vtordisp를 해제 합니다.
 
-1을 지정 또는 *에*, 숨겨진 기본값을 사용 하도록 설정 **vtordisp** 멤버는 필요 합니다.
+기본값인 1 또는 **on**을 지정 하면 필요한 경우 숨겨진 `vtordisp` 멤버를 사용할 수 있습니다.
 
-2는 숨겨진 설정 지정 **vtordisp** 가상 함수를 사용 하 여 모든 가상 기본의 멤버입니다.  `vtordisp(2)` 올바른 성능을 보장 하기 위해 해야 할 수도 있습니다 **dynamic_cast** 부분적으로 생성 된 개체입니다. 자세한 내용은 [컴파일러 경고 (수준 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md)합니다.
+2를 지정 하면 가상 `vtordisp` 함수를 사용 하는 모든 가상 기본에 대해 숨겨진 멤버를 사용할 수 있습니다.  `#pragma vtordisp(2)`부분적으로 생성 된 개체에 대해 **dynamic_cast** 의 올바른 성능을 보장 하기 위해 필요할 수 있습니다. 자세한 내용은 [컴파일러 경고 (수준 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md)를 참조 하세요.
 
-인수를 포함하지 않고 `#pragma vtordisp()`를 사용하는 경우 vtordisp 설정이 초기 설정으로 복원됩니다.
+`#pragma vtordisp()`인수 없이는 `vtordisp` 설정을 초기 설정으로 복원 합니다.
 
 ```cpp
 #pragma vtordisp(push, 2)
@@ -65,8 +63,8 @@ class GetReal : virtual public VBase { ... };
 #pragma vtordisp(pop)
 ```
 
-**최종 C++ 특정**
+**끝 C++ 특정**
 
 ## <a name="see-also"></a>참고자료
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

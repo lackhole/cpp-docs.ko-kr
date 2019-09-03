@@ -1,6 +1,6 @@
 ---
 title: __readpmc
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __readpmc
 helpviewer_keywords:
@@ -8,35 +8,35 @@ helpviewer_keywords:
 - __readpmc intrinsic
 - rdpmc instruction
 ms.assetid: 14ed45a6-28b6-4635-8437-a597c04b43d4
-ms.openlocfilehash: 848c880e76d6d431ee56a0bb30a33b276837ce76
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: af0f1874d991771423ddebfedd4624cd0b71760f
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396446"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221027"
 ---
-# <a name="readpmc"></a>__readpmc
+# <a name="__readpmc"></a>__readpmc
 
 **Microsoft 전용**
 
-생성 된 `rdpmc` 성능 모니터 카운터로 지정 된 된 명령 `counter`입니다.
+*카운터에*지정 된 성능 모니터링 카운터를 읽는 명령을생성`rdpmc` 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned __int64 __readpmc(
    unsigned long counter
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*counter*<br/>
-[in] 읽기 성능 카운터입니다.
+*counter*\
+진행 읽을 성능 카운터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-지정한 성능 카운터의 값입니다.
+지정 된 성능 카운터의 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -48,7 +48,7 @@ unsigned __int64 __readpmc(
 
 ## <a name="remarks"></a>설명
 
-이 내장 함수는 커널 모드 에서만 사용할 수 있습니다 및 루틴은 내장 함수로 사용할 수만 있습니다.
+내장 함수는 커널 모드 에서만 사용할 수 있으며 루틴은 내장 함수로만 사용할 수 있습니다.
 
 **Microsoft 전용 종료**
 

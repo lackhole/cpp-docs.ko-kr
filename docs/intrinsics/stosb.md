@@ -1,6 +1,6 @@
 ---
 title: __stosb
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __stosb
 helpviewer_keywords:
@@ -8,39 +8,39 @@ helpviewer_keywords:
 - __stosb intrinsic
 - stosb instruction
 ms.assetid: 634589ed-2da3-439b-a381-a214d89bf10c
-ms.openlocfilehash: 679f1a892a6ee5b458a05d1577ecf766bed385dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: edf74da4c8b5aa97e542d89f55b3ed8411db9bac
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390284"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221219"
 ---
-# <a name="stosb"></a>__stosb
+# <a name="__stosb"></a>__stosb
 
 **Microsoft 전용**
 
-저장소 문자열 명령 생성 (`rep stosb`).
+저장소 문자열 명령 (`rep stosb`)을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __stosb(
-   unsigned char* Dest,
+   unsigned char* Destination,
    unsigned char Data,
    size_t Count
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
-[out] 작업의 대상입니다.
+*대상이*\
+제한이 작업의 대상입니다.
 
-*Data*<br/>
-[in] 데이터 저장소입니다.
+*데이터로*\
+진행 저장할 데이터입니다.
 
-*개수*<br/>
-[in] 쓸 바이트 블록의 길이입니다.
+*수*\
+진행 쓸 바이트 블록의 길이입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -52,7 +52,7 @@ void __stosb(
 
 ## <a name="remarks"></a>설명
 
-결과 문자 `Data` 블록으로 기록 됩니다 `Count` 바이트를 `Dest` 문자열입니다.
+결과적으로 문자 *데이터* 는 *대상* 문자열의 *카운트* 바이트 블록에 기록 됩니다.
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 

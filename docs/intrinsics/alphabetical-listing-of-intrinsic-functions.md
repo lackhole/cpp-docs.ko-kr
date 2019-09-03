@@ -6,16 +6,16 @@ helpviewer_keywords:
 - intrinsics, alphabetical list
 - intrinsics
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
-ms.openlocfilehash: 67206e63d163b489c5087e6bc6759cde30a3d6c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ff6957436ecfb86ae44388e55488981f528f2c73
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264317"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220088"
 ---
 # <a name="alphabetical-listing-of-intrinsic-functions"></a>내장 함수의 사전순 목록
 
-다음 섹션에서는 일부 또는 모든 아키텍처에서 사용할 수 있는 Microsoft 관련 내장 함수에 대해 설명합니다. 지원되는 기타 내장 함수에 대한 설명은 프로세서 제조업체에서 제공하는 헤더 파일이나 제조업체 웹 사이트에 나와 있습니다. 참조를 [ARM 내장 함수](../intrinsics/arm-intrinsics.md)를 [x86 내장 함수](../intrinsics/x86-intrinsics-list.md), 및 [x64 내장 함수](../intrinsics/x64-amd64-intrinsics-list.md) 제조업체 설명서에 대 한 링크에 대 한 섹션입니다. 내장에 구현 하는 C 런타임 라이브러리 (CRT) 함수 여기서는 설명 하지 않습니다. 에 설명 된 이러한 함수는 [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)합니다.
+다음 섹션에서는 일부 또는 모든 아키텍처에서 사용할 수 있는 Microsoft 관련 내장 함수에 대해 설명합니다. 지원되는 기타 내장 함수에 대한 설명은 프로세서 제조업체에서 제공하는 헤더 파일이나 제조업체 웹 사이트에 나와 있습니다. 제조업체 설명서에 대 한 링크는 [ARM 내장 함수](../intrinsics/arm-intrinsics.md), [x86 내장 함수](../intrinsics/x86-intrinsics-list.md)및 [x64 내장 함수](../intrinsics/x64-amd64-intrinsics-list.md) 섹션을 참조 하세요. 내장 함수가 구현 된 CRT (C 런타임 라이브러리) 함수는 여기에 설명 되어 있지 않습니다. 이러한 함수는 [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)에 설명 되어 있습니다.
 
 [__addfsbyte, \__addfsword, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)
 
@@ -89,7 +89,7 @@ ms.locfileid: "62264317"
 
 [_InterlockedExchange 내장 함수](../intrinsics/interlockedexchange-intrinsic-functions.md)
 
-[_InterlockedExchangeAdd 내장 함수](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)
+[_InterlockedExchangeAdd 함수 추가](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)
 
 [_InterlockedExchangePointer 내장 함수](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)
 

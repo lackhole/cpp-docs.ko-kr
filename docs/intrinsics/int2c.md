@@ -1,6 +1,6 @@
 ---
 title: __int2c
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __int2c
 - __int2c_cpp
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - int 2c instruction
 - __int2c intrinsic
 ms.assetid: aa20ff30-adef-42bb-8577-8010f3122f8e
-ms.openlocfilehash: 36ef8acd3d71c08a356d4210f16205828f691fa5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d8c94ae78a121157a6347548356631b04e8733d5
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348894"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222103"
 ---
-# <a name="int2c"></a>__int2c
+# <a name="__int2c"></a>__int2c
 
 **Microsoft 전용**
 
-생성 된 `int 2c` 트리거하는 명령은 `2c` 인터럽트 합니다.
+는 인터럽트`2c` 를 트리거하는 명령을생성합니다.`int 2c`
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __int2c(void);
 ```
 

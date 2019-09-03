@@ -1,6 +1,6 @@
 ---
 title: __outdwordstring
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __outdwordstring
 helpviewer_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - __outdwordstring intrinsic
 - rep outsd instruction
 ms.assetid: 55b31a65-aab7-4b5c-b61d-d9e2fb0c497a
-ms.openlocfilehash: 51cb4a97d271d6d41d39d1025e3a5d34b273cdc4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50908a65795af617f18a497c073cfefe009dfd80
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396589"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217155"
 ---
-# <a name="outdwordstring"></a>__outdwordstring
+# <a name="__outdwordstring"></a>__outdwordstring
 
 **Microsoft 전용**
 
-생성 된 `rep outsd` 명령을 보냅니다 `Count` 에서 시작 하는 2 배 워드 `Buffer` 로 지정 된 I/O 포트를 찾기 `Port`.
+`Count` `Buffer` `rep outsd` 에서 지정된i/o포트에서시작하는더블워드를전송하는명령을생성합니다.`Port`
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __outdwordstring(
    unsigned short Port,
    unsigned long* Buffer,
@@ -31,16 +31,16 @@ void __outdwordstring(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*포트*<br/>
-[in] 데이터를 보낼 포트입니다.
+*포트인*\
+진행 데이터를 보낼 포트입니다.
 
-*Buffer*<br/>
-[in] 지정된 된 포트에 보내도록 데이터에 대 한 포인터입니다.
+*버퍼*\
+진행 지정 된 포트를 통해 전송 되는 데이터에 대 한 포인터입니다.
 
-*개수*<br/>
-[in] 보낼 2 배 워드 횟수입니다.
+*수*\
+진행 보낼 더블 워드의 수입니다.
 
 ## <a name="requirements"></a>요구 사항
 

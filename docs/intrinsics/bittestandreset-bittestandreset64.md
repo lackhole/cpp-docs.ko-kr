@@ -1,6 +1,6 @@
 ---
 title: _bittestandreset, _bittestandreset64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _bittestandreset64_cpp
 - _bittestandreset
@@ -11,22 +11,22 @@ helpviewer_keywords:
 - _bittestandreset intrinsic
 - _bittestandreset64 intrinsic
 ms.assetid: 8dad63bb-a051-4cd7-a793-3357537dfeaf
-ms.openlocfilehash: 53a9921b856a3bc489d1d8e1cd78a4cfa7493320
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e0c869b926b2f9f3c04fd648f84ef33b8d16fcd
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349149"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216928"
 ---
-# <a name="bittestandreset-bittestandreset64"></a>_bittestandreset, _bittestandreset64
+# <a name="_bittestandreset-_bittestandreset64"></a>_bittestandreset, _bittestandreset64
 
 **Microsoft 전용**
 
-주소 `b`의 비트 `a`를 검사하고 현재 값을 반환한 다음 비트를 0으로 다시 설정하는 명령을 생성합니다.
+`b` 주소`a`의 비트를 검사 하 고 현재 값을 반환 하 고 비트를 0으로 다시 설정 하는 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned char _bittestandreset(
    long *a,
    long b
@@ -37,13 +37,13 @@ unsigned char _bittestandreset64(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*a*<br/>
-[out에서] 검사할 메모리에 대 한 포인터입니다.
+*은*\
+[in, out] 검사할 메모리에 대 한 포인터입니다.
 
-*b*<br/>
-[in] 테스트할 비트 위치입니다.
+*b*\
+진행 테스트할 비트 위치입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -53,8 +53,8 @@ unsigned char _bittestandreset64(
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`_bittestandreset`|x86, ARM, x64|
-|`_bittestandreset64`|X64|
+|`_bittestandreset`|x86, ARM, x64, ARM64|
+|`_bittestandreset64`|x64, ARM64|
 
 **헤더 파일** \<intrin.h >
 
@@ -64,7 +64,7 @@ unsigned char _bittestandreset64(
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // bittestandreset.cpp
 // processor: x86, IPF, x64
 #include <stdio.h>

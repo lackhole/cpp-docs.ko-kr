@@ -1,41 +1,41 @@
 ---
 title: _mm_stream_si64x
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _mm_stream_si64x
 helpviewer_keywords:
 - movnti instruction
 - _mm_stream_si64x intrinsic
 ms.assetid: 114c2cd0-085f-41aa-846e-87bdd56c9ee7
-ms.openlocfilehash: d7f7a75be1602fbb70a230b0dd3a791be99d092a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f6ed0f2482ecbcdaa4d50034e0d08381768847a2
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396641"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221754"
 ---
-# <a name="mmstreamsi64x"></a>_mm_stream_si64x
+# <a name="_mm_stream_si64x"></a>_mm_stream_si64x
 
 **Microsoft 전용**
 
-MOVNTI 명령을 생성합니다. 데이터를 씁니다 `Source` 으로 지정 된 메모리 위치를 `Dest`, 캐시를 오염 시 키 지 않고 합니다.
+MOVNTI 명령을 생성 합니다. 캐시를 polluting 않고 *원본* 에 있는 데이터를 *대상*으로 지정 된 메모리 위치에 씁니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void _mm_stream_si64x(
-   __int64 * Dest,
+   __int64 * Destination,
    __int64 Source
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
-[out] 원본 데이터를 쓸 위치에 대 한 포인터입니다.
+*대상이*\
+제한이 원본 데이터를 쓸 위치에 대 한 포인터입니다.
 
-*소스*<br/>
-[in] 쓸 데이터입니다.
+*Source*\
+진행 쓸 데이터입니다.
 
 ## <a name="requirements"></a>요구 사항
 

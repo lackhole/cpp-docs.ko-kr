@@ -1,6 +1,6 @@
 ---
 title: __movsw
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __movsw
 helpviewer_keywords:
@@ -8,39 +8,39 @@ helpviewer_keywords:
 - rep movsw instruction
 - __movsw intrinsic
 ms.assetid: db402ad5-7f0e-449a-b0b0-eea9928d6435
-ms.openlocfilehash: 3d584300b514ec3e79c44a2943b3fb8a79495df4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67eef7fe0a5b9803650f345740a8c40262cd2014
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263206"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221726"
 ---
-# <a name="movsw"></a>__movsw
+# <a name="__movsw"></a>__movsw
 
 **Microsoft 전용**
 
-이동 하는 문자열을 생성 합니다 (`rep movsw`) 명령입니다.
+이동 문자열 (`rep movsw`) 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __movsw(
-   unsigned short* Dest,
+   unsigned short* Destination,
    unsigned short* Source,
    size_t Count
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
-[out] 작업의 대상입니다.
+*대상이*\
+제한이 작업의 대상입니다.
 
-*소스*<br/>
-[in] 작업의 원본입니다.
+*Source*\
+진행 작업의 소스입니다.
 
-*개수*<br/>
-[in] 복사 하는 단어의 수입니다.
+*수*\
+진행 복사할 단어 수입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -52,13 +52,13 @@ void __movsw(
 
 ## <a name="remarks"></a>설명
 
-결과 첫 번째 `Count` 가리키는 단어 `Source` 에 복사 됩니다는 `Dest` 문자열입니다.
+그 결과 *원본* 에서 가리키는 첫 번째 *Count* 단어가 *대상* 문자열에 복사 됩니다.
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // movsw.cpp
 // processor: x86, x64
 #include <stdio.h>

@@ -1,34 +1,34 @@
 ---
 title: __getcallerseflags
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _getcallerseflags
 - _getcallerseflags_cpp
 helpviewer_keywords:
 - _getcallerseflags intrinsic
 ms.assetid: 2386596f-33aa-4cc7-b026-5a834637270a
-ms.openlocfilehash: a2df7087c605882340da16f56dae2e991c5d7dd1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d6279db10ec38da7482b26e19e31f2d34dd48a07
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264103"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222172"
 ---
-# <a name="getcallerseflags"></a>__getcallerseflags
+# <a name="__getcallerseflags"></a>__getcallerseflags
 
 **Microsoft 전용**
 
-호출자의 컨텍스트에서 EFLAGS 값을 반환합니다.
+호출자의 컨텍스트에서 EFLAGS 값을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned int __getcallerseflags(void);
 ```
 
 ## <a name="return-value"></a>반환 값
 
-호출자의 컨텍스트에서 EFLAGS 값입니다.
+호출자 컨텍스트의 EFLAGS 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -44,7 +44,7 @@ unsigned int __getcallerseflags(void);
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // getcallerseflags.cpp
 // processor: x86, x64
 

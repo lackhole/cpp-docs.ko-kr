@@ -1,6 +1,6 @@
 ---
-title: _InterlockedDecrement Intrinsic Functions
-ms.date: 12/17/2018
+title: _InterlockedDecrement 내장 함수
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedDecrement16_rel_cpp
 - _InterlockedDecrement16_acq_cpp
@@ -44,14 +44,14 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-ms.openlocfilehash: 43bf7a9b788c176490ec3fe08e370708eaf000ce
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f7d46cc90c9925a49948da488c2ed7ede7bdee8f
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509411"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217682"
 ---
-# <a name="_interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement Intrinsic Functions
+# <a name="_interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement 내장 함수
 
 **Microsoft 전용**
 
@@ -59,7 +59,7 @@ Win32 Windows SDK [InterlockedDecrement](/windows/win32/api/winnt/nf-winnt-inter
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 long _InterlockedDecrement(
    long * lpAddend
 );
@@ -98,9 +98,9 @@ __int64 _InterlockedDecrement64_nf(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*lpAddend*<br/>
+*lpAddend*\
 [in, out] 감소 시킬 변수에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -111,8 +111,9 @@ __int64 _InterlockedDecrement64_nf(
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`_InterlockedDecrement`, `_InterlockedDecrement16`, `_InterlockedDecrement64`|x86, ARM, x64|
-|`_InterlockedDecrement_acq`, `_InterlockedDecrement_rel`, `_InterlockedDecrement_nf`, `_InterlockedDecrement16_acq`, `_InterlockedDecrement16_rel`, `_InterlockedDecrement16_nf`, `_InterlockedDecrement64_acq`, `_InterlockedDecrement64_rel`, `_InterlockedDecrement64_nf`,|ARM|
+|`_InterlockedDecrement`, `_InterlockedDecrement16`|x86, ARM, x64, ARM64|
+|`_InterlockedDecrement64`|ARM, x64, ARM64|
+|`_InterlockedDecrement_acq`, `_InterlockedDecrement_rel`, `_InterlockedDecrement_nf`, `_InterlockedDecrement16_acq`, `_InterlockedDecrement16_rel`, `_InterlockedDecrement16_nf`, `_InterlockedDecrement64_acq`, `_InterlockedDecrement64_rel`, `_InterlockedDecrement64_nf`,|ARM, ARM64|
 
 **헤더 파일** \<intrin.h >
 
@@ -122,7 +123,7 @@ __int64 _InterlockedDecrement64_nf(
 
 `_InterlockedDecrement` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedDecrement16`은 16비트 정수 값에 대해, `_InterlockedDecrement64`는 64비트 정수 값에 대해 작동합니다.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf` ("No fence") 접미사가 포함 된 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
 
 `lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 [align](../cpp/align-cpp.md)을 참조 하십시오.
 
@@ -198,6 +199,6 @@ void __cdecl SimpleThread(void* pParam) {
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
+[키워드](../cpp/keywords-cpp.md)\
 [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

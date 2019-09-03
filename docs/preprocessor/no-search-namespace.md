@@ -1,34 +1,31 @@
 ---
-title: no_search_namespace
-ms.date: 11/04/2016
+title: no_search_namespace import 특성
+ms.date: 08/29/2019
 f1_keywords:
 - no_search_namespace
 helpviewer_keywords:
 - no_search_namespace attribute
 ms.assetid: 482dc4a7-5acf-456a-a995-ef4ddd5f6018
-ms.openlocfilehash: 8e19600e35c87990c455c6793a4e0ea521213bb7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d5710e790ca94b49b9577b3107a4fb6e5070fcac
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411307"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220711"
 ---
-# <a name="nosearchnamespace"></a>no_search_namespace
-**C++특정**
+# <a name="no_search_namespace-import-attribute"></a>no_search_namespace import 특성
 
-와 동일한 기능을 [no_namespace](../preprocessor/no-namespace.md) 하지만 사용 하는 형식 라이브러리에 사용 되는 `#import` 지시문에 [auto_search](../preprocessor/auto-search.md) 특성.
+**C++컴퓨터별**
+
+[No_namespace](../preprocessor/no-namespace.md) 특성과 동일한 기능을 갖지만, `#import` [auto_search](../preprocessor/auto-search.md) 특성과 함께 지시어를 사용 하는 형식 라이브러리에 사용 됩니다.
 
 ## <a name="syntax"></a>구문
 
-```
-no_search_namespace
-```
+> **#import** *형식 라이브러리* **no_search_namespace**
 
-## <a name="remarks"></a>설명
-
-**최종 C++ 특정**
+**끝 C++ 특정**
 
 ## <a name="see-also"></a>참고자료
 
-[#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)\
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

@@ -1,6 +1,6 @@
 ---
 title: _BitScanForward, _BitScanForward64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _BitScanForward
 - _BitScanForward_cpp
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - bsf instruction
 - BitScanForward intrinsic
 ms.assetid: 405e60fb-0815-42a7-9b02-6fc035122203
-ms.openlocfilehash: 8b09aeee485611ddd20d51b4c1e36ec98c03c26e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 91f43d19259419b78d1910a00a154d2d4f0adfc7
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264220"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222223"
 ---
-# <a name="bitscanforward-bitscanforward64"></a>_BitScanForward, _BitScanForward64
+# <a name="_bitscanforward-_bitscanforward64"></a>_BitScanForward, _BitScanForward64
 
 **Microsoft 전용**
 
@@ -26,7 +26,7 @@ LSB(최하위 비트)에서 MSB(최상위 비트)로의 마스크 데이터에�
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned char _BitScanForward(
    unsigned long * Index,
    unsigned long Mask
@@ -37,13 +37,13 @@ unsigned char _BitScanForward64(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*Index*<br/>
-[out] 찾은 첫 번째 설정 비트 (1)의 비트 위치를 사용 하 여 로드 합니다.
+*인덱싱할*\
+제한이 첫 번째 설정 비트 (1)의 비트 위치를 사용 하 여 로드 되었습니다.
 
-*Mask*<br/>
-[in] 검색할 32 비트 또는 64 비트 값입니다.
+*마스크할*\
+진행 검색할 32 비트 또는 64 비트 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -57,14 +57,14 @@ unsigned char _BitScanForward64(
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`_BitScanForward`|x86, ARM, x64|
-|`_BitScanForward64`|ARM, x64|
+|`_BitScanForward`|x86, ARM, x64, ARM64|
+|`_BitScanForward64`|ARM64, x64|
 
 **헤더 파일** \<intrin.h >
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // BitScanForward.cpp
 // compile with: /EHsc
 #include <iostream>
@@ -93,15 +93,11 @@ int main()
 }
 ```
 
-## <a name="input"></a>입력
-
-```
+```Input
 12
 ```
 
-## <a name="sample-output"></a>샘플 출력
-
-```
+```Output
 Enter a positive integer as the mask:
 Mask: 12 Index: 2
 ```

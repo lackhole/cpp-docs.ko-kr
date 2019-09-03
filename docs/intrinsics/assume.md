@@ -1,6 +1,6 @@
 ---
 title: __assume
-ms.date: 10/09/2018
+ms.date: 09/02/2019
 f1_keywords:
 - __assume
 - _assume
@@ -8,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - __assume keyword [C++]
 ms.assetid: d8565123-b132-44b1-8235-5a8c8bff85a7
-ms.openlocfilehash: 1d84e9306dcd468153f38cc0c3085b43388e1dbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f3f847b5268605bdc5df90a8bbc6a88c78431864
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264324"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216965"
 ---
-# <a name="assume"></a>__assume
+# <a name="__assume"></a>__assume
 
 **Microsoft 전용**
 
@@ -23,15 +23,15 @@ ms.locfileid: "62264324"
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 __assume(
    expression
 )
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*expression*<br/>
+*식*\
 true로 평가된다고 간주되는 식입니다.
 
 ## <a name="remarks"></a>설명
@@ -45,21 +45,21 @@ true로 평가된다고 간주되는 식입니다.
 
 `__assume`은 올바른 내장 함수가 아니며, 함수로 선언할 필요도 없고 `#pragma intrinsic` 지시문에서 사용할 수도 없습니다. 코드는 생성되지 않지만 최적화 프로그램에서 생성하는 코드가 영향을 받습니다.
 
-사용 하 여 `__assume` 에 [ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) 만 경우 assert는 복구할 수 없습니다. 후속 오류 복구 코드가 있는 어설션에서는 `__assume`을 사용하지 마세요. 이렇게 하면 컴파일러가 오류 처리 코드를 최적화하지 않을 수도 있습니다.
+Assert `__assume` 를 복구할 수 없는 경우에만 [assert](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) 에서을 사용 합니다. 후속 오류 복구 코드가 있는 어설션에서는 `__assume`을 사용하지 마세요. 이렇게 하면 컴파일러가 오류 처리 코드를 최적화하지 않을 수도 있습니다.
 
 `__assume(0)` 문은 특수한 경우입니다. 연결할 수 없는 코드 경로를 나타내려는 경우 `__assume(0)`을 사용합니다. 다음 예제에서는 `__assume(0)`을 사용하여 스위치 문의 기본 사례에 연결할 수 없음을 나타내는 방법을 보여 줍니다. 여기에는 가장 일반적인 `__assume(0)` 사용 방식이 나와 있습니다.
 
-이전 버전과 호환성에 대 한 **_assume** 에 대 한 동의어가 **__assume** 하지 않으면 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 는 지정 합니다.
+이전 버전과의 호환성을 위해 컴파일러 옵션 [ \(/za 사용 안 함 언어 확장](../build/reference/za-ze-disable-language-extensions.md) 을 지정 하지 않는 한 **__assume** 의 동의어가 **가정** 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`__assume`|x86, ARM, x64|
+|`__assume`|x86, ARM, x64, ARM64|
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // compiler_intrinsics__assume.cpp
 #ifdef DEBUG
 # define ASSERT(e)    ( ((e) || assert(__FILE__, __LINE__) )
@@ -97,13 +97,13 @@ int main(int p)
 
 컴파일러는 `__assume`을 기반으로 코드를 생성하므로 `__assume` 문 내의 식이 런타임에 false이면 해당 코드가 올바르게 실행되지 않을 수 있습니다. 식이 런타임에 항상 true로 평가될지 확실치 않으면 `assert` 함수를 사용하여 코드를 보호할 수 있습니다.
 
-```
+```C
 #define ASSERT(e)    ( ((e) || assert(__FILE__, __LINE__)), __assume(e) )
 ```
 
 그러나 이처럼 `assert`를 사용하면 컴파일러가 이 문서 앞부분에서 설명한 기본 사례 최적화를 수행할 수 없습니다. 따라서 다음과 같이 별도의 매크로를 대신 사용할 수 있습니다.
 
-```
+```C
 #ifdef DEBUG
 # define NODEFAULT   ASSERT(0)
 #else
@@ -118,5 +118,5 @@ int main(int p)
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [C++ 키워드](../cpp/keywords-cpp.md)
