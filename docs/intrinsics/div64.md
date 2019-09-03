@@ -1,20 +1,20 @@
 ---
 title: _div64
-ms.date: 04/17/2019
+ms.date: 09/02/2019
 f1_keywords:
 - _div64
 helpviewer_keywords:
 - _div64 intrinsic
-ms.openlocfilehash: a221cc7cf0655a41873c6777aecd8a9b27131b74
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1d05c5d6e25540a5de1b2f8231697c9a738759ce
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264116"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216767"
 ---
-# <a name="div64"></a>_div64
+# <a name="_div64"></a>_div64
 
-`_div64` 내장 함수는 32 비트 정수가 64 비트 정수를 나눕니다. 반환 값의 몫을 보유 하 고 내장 함수 포인터 매개 변수를 통해 나머지를 반환 합니다. `_div64` 됩니다 **Microsoft 전용**합니다.
+`_div64` 내장 함수는 64 비트 정수를 32 비트 정수로 나눕니다. 반환 값은 몫을 보유 하 고 내장 함수는 포인터 매개 변수를 통해 나머지를 반환 합니다. `_div64`는 **Microsoft 전용**입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,13 +29,13 @@ int _div64(
 ### <a name="parameters"></a>매개 변수
 
 *dividend* \
-[in] 64 비트 정수 나누기입니다.
+진행 나눌 64 비트 정수입니다.
 
 *divisor* \
-[in] 나눌 32 비트 정수입니다.
+진행 로 나눌 32 비트 정수입니다.
 
 *remainder* \
-[out] 나머지의 32 비트 정수 비트입니다.
+제한이 나머지의 32 비트 정수 비트입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -43,9 +43,9 @@ int _div64(
 
 ## <a name="remarks"></a>설명
 
-합니다 `_div64` 내장 나눕니다 *피제수* 하 여 *divisor*합니다. 나머지 가리키는 32 비트 정수에 저장 *나머지*, 몫의 32 비트를 반환 합니다.
+내장 `_div64` 함수는 *피제수* 로피제수를 나눕니다. *나머지*를 가리키는 32 비트 정수에 나머지를 저장 하 고 몫의 32 비트를 반환 합니다.
 
-`_div64` 내장 함수는 Visual Studio 2019 RTM에서 사용할 수 있는 시작 합니다.
+`_div64` 내장 함수는 Visual Studio 2019 RTM부터 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,6 +1,6 @@
 ---
-title: warning
-ms.date: 11/04/2016
+title: 경고 pragma
+ms.date: 08/29/2019
 f1_keywords:
 - warning_CPP
 - vc-pragma.warning
@@ -10,24 +10,24 @@ helpviewer_keywords:
 - pop warning pragma
 - warning pragma
 ms.assetid: 8e9a0dec-e223-4657-b21d-5417ebe29cc8
-ms.openlocfilehash: 1341472af22582635207a2bdff93b4367fd59330
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a79f0c4a9eed6b62e42f056f9d1994b44b57297
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179934"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216466"
 ---
-# <a name="warning-pragma"></a>경고 Pragma
+# <a name="warning-pragma"></a>경고 pragma
+
 컴파일러 경고 메시지의 동작을 선택적으로 수정할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
-```
-#pragma warning(
-    warning-specifier : warning-number-list [; warning-specifier : warning-number-list...] )
-#pragma warning( push[ ,n ] )
-#pragma warning( pop )
-```
+> **#pragma 경고 (** \
+> &nbsp;&nbsp;&nbsp;&nbsp;*경고-지정자* **:** *경고-번호 목록*\
+> &nbsp;&nbsp;&nbsp;&nbsp;[ **;** *경고-지정자* **:** *warning-number-list* ...] **)** \
+> **#pragma warning (push** [ **,** *n* ] **)** \
+> **#pragma 경고 (pop)**
 
 ## <a name="remarks"></a>설명
 
@@ -35,9 +35,9 @@ ms.locfileid: "62179934"
 
 |경고 지정자|의미|
 |------------------------|-------------|
-|*1, 2, 3, 4*|주어진 수준을 지정된 경고에 적용합니다. 기본적으로 해제되어 있는 지정된 경고를 설정하기도 합니다.|
-|*default*|경고 동작을 기본값으로 다시 설정합니다. 기본적으로 해제되어 있는 지정된 경고를 설정하기도 합니다. 문서화된 기본 수준에서 경고가 생성됩니다.<br /><br /> 자세한 내용은 [Compiler Warnings That Are Off by Default](../preprocessor/compiler-warnings-that-are-off-by-default.md)을 참조하세요.|
-|*disable*|지정된 경고 메시지를 생성하지 마십시오.|
+|*1, 2, 3, 4*|주어진 수준을 지정된 경고에 적용합니다. 또한 기본적으로 해제 된 지정 된 경고를 설정 합니다.|
+|*default*|경고 동작을 기본값으로 다시 설정합니다. 또한 기본적으로 해제 된 지정 된 경고를 설정 합니다. 문서화된 기본 수준에서 경고가 생성됩니다.<br /><br /> 자세한 내용은 [기본적으로 해제 되어 있는 컴파일러 경고](../preprocessor/compiler-warnings-that-are-off-by-default.md)를 참조 하세요.|
+|*disable*|지정 된 경고 메시지를 실행 하지 않습니다.|
 |*error*|지정된 경고를 오류로 보고합니다.|
 |*once*|지정된 메시지를 한 번만 표시합니다.|
 |*suppress*|pragma의 현재 상태를 스택에 푸시하고 다음 줄에 지정된 경고를 비활성화한 후 pragma 상태가 다시 설정되도록 경고 스택을 표시합니다.|
@@ -48,7 +48,7 @@ ms.locfileid: "62179934"
 #pragma warning( disable : 4507 34; once : 4385; error : 164 )
 ```
 
-이 코드 문은 다음 코드와 기능적으로 동일합니다.
+이 지시문은 다음 코드와 기능적으로 동일 합니다.
 
 ```cpp
 // Disable warning messages 4507 and 4034.
@@ -63,7 +63,7 @@ ms.locfileid: "62179934"
 
 컴파일러가 0에서 999 사이의 경고 번호에 4000을 추가합니다.
 
-4700-4999 범위에 속하고 코드 생성과 관련된 경고 번호의 경우 컴파일러가 함수의 왼쪽 중괄호를 발견할 때 적용되는 경고의 상태가 나머지 함수에 적용됩니다. 사용 하는 **경고** pragma 번호가 4699 보다 큰 경고의 상태를 변경 하는 함수에만 적용 됩니다 함수 종료 된 후입니다. 다음 예제에서는 올바른 배치 **경고** 코드 생성 경고 메시지를 사용 하지 않으려면 pragma 차례로 복원 합니다.
+4700-4999 범위에 속하고 코드 생성과 관련된 경고 번호의 경우 컴파일러가 함수의 왼쪽 중괄호를 발견할 때 적용되는 경고의 상태가 나머지 함수에 적용됩니다. 함수에서 **warning** pragma를 사용 하 여 4699 보다 큰 경고의 상태를 변경 하는 것은 함수 끝에만 적용 됩니다. 다음 예제에서는 코드 생성 경고 메시지를 사용 하지 않도록 설정 하 고 복원 하는 데 사용할 수 있는 **경고** pragma의 올바른 배치를 보여 줍니다.
 
 ```cpp
 // pragma_warning.cpp
@@ -81,19 +81,19 @@ int main() {
 }
 ```
 
-본문의 마지막 설정이 전체 함수는 합니다 **경고** pragma 전체 함수에 적용 됩니다.
+함수 본문 전체에서 **경고** pragma의 마지막 설정이 전체 함수에 적용 됩니다.
 
 ## <a name="push-and-pop"></a>푸시 및 팝
 
-합니다 **경고** pragma는 또한 다음 구문을 지원 위치 *n* 경고 수준 (1 ~ 4)를 나타냅니다.
+또한 **경고** pragma는 다음 구문을 지원 합니다. 여기서 *n* 은 경고 수준 (1-4)을 나타냅니다.
 
 `#pragma warning( push [ , n ] )`
 
 `#pragma warning( pop )`
 
-Pragma `warning( push )` 모든 경고에 대 한 현재 경고 상태를 저장 합니다. Pragma `warning( push, n )` 모든 경고의 현재 상태를 저장 하 고 글로벌 경고 수준을 설정 *n*합니다.
+Pragma `warning( push )` 는 모든 경고에 대 한 현재 경고 상태를 저장 합니다. Pragma `warning( push, n )` 는 모든 경고에 대 한 현재 상태를 저장 하 고 전역 경고 수준을 *n*으로 설정 합니다.
 
-Pragma `warning( pop )` 스택에 푸시된 마지막 경고 상태를 팝 합니다. 간의 경고 상태에 대 한 변경 내용을 *푸시* 하 고 *pop* 취소 됩니다. 다음 예제를 고려해 보세요.
+Pragma `warning( pop )` 는 스택에 푸시되는 마지막 경고 상태를 팝 합니다. *밀어넣기* 와 *pop* 사이에 경고 상태에 대 한 모든 변경 내용이 취소 됩니다. 다음 예제를 고려해 보세요.
 
 ```cpp
 #pragma warning( push )
@@ -104,9 +104,9 @@ Pragma `warning( pop )` 스택에 푸시된 마지막 경고 상태를 팝 합�
 #pragma warning( pop )
 ```
 
-이 코드의 끝 *pop* 모든 경고의 상태를 복원 (4705, 4706, 4707 포함)를 코드의 시작 부분에 있습니다.
+이 코드의 끝 부분에서 *pop* 는 코드의 시작 부분에 있는 모든 경고 (4705, 4706 및 4707 포함)의 상태를 복원 합니다.
 
-헤더 파일을 작성할 때 사용할 수 있습니다 *푸시* 하 고 *pop* 는 사용자가 경고 상태를 변경 해도 헤더를 올바르게 컴파일할 되도록 합니다. 사용 하 여 *푸시* 헤더의 시작 및 *pop* 끝입니다. 예를 들어, 경고 수준 4에서 완전히 컴파일되지 않는 헤더가 있을 경우 다음 코드를 사용하면 경고 수준이 3으로 변경되고 헤더 끝에서 원래의 경고 수준이 복원됩니다.
+헤더 파일을 작성 하는 경우 *푸시* 및 *pop* 를 사용 하 여 사용자가 수행한 경고 상태 변경으로 인해 헤더를 올바르게 컴파일할 수 없음을 보장할 수 있습니다. 헤더의 시작 부분에서 *push* 를 사용 하 고 끝에 *pop* 를 사용 합니다. 예를 들어 경고 수준 4에서 명확 하 게 컴파일하지 않는 헤더가 있는 경우 다음 코드는 경고 수준을 3으로 변경 하 고 헤더 끝에서 원래 경고 수준을 복원 합니다.
 
 ```cpp
 #pragma warning( push, 3 )
@@ -114,8 +114,8 @@ Pragma `warning( pop )` 스택에 푸시된 마지막 경고 상태를 팝 합�
 #pragma warning( pop )
 ```
 
-경고 표시 안 함 옵션 도움이 되는 컴파일러에 대 한 자세한 참조 [/FI](../build/reference/fi-name-forced-include-file.md) 하 고 [/w](../build/reference/compiler-option-warning-level.md)합니다.
+경고를 표시 하지 않는 컴파일러 옵션에 대 한 자세한 내용은 [/fi](../build/reference/fi-name-forced-include-file.md) 및 [/w](../build/reference/compiler-option-warning-level.md)를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

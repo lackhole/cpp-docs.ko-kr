@@ -1,6 +1,6 @@
 ---
 title: __stosq
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __stosq
 helpviewer_keywords:
@@ -8,39 +8,39 @@ helpviewer_keywords:
 - stosq instruction
 - __stosq intrinsic
 ms.assetid: 3ea28297-4369-4c2d-bf0c-91fa539ce209
-ms.openlocfilehash: eacb12f7c02b82607d980281f8d4a0bc1e1d7c14
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b347d595da4cdbf1fefb6244940e262981671e9
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390349"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219958"
 ---
-# <a name="stosq"></a>__stosq
+# <a name="__stosq"></a>__stosq
 
 **Microsoft 전용**
 
-저장소 문자열 명령 생성 (`rep stosq`).
+저장소 문자열 명령 (`rep stosq`)을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __stosb(
-   unsigned __int64* Dest,
+   unsigned __int64* Destination,
    unsigned __int64 Data,
    size_t Count
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
-[out] 작업의 대상입니다.
+*대상이*\
+제한이 작업의 대상입니다.
 
-*Data*<br/>
-[in] 데이터 저장소입니다.
+*데이터로*\
+진행 저장할 데이터입니다.
 
-*개수*<br/>
-[in] 쓸 (쿼드 워드) 블록의 길이입니다.
+*수*\
+진행 쓸 quadwords 블록의 길이입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -52,13 +52,13 @@ void __stosb(
 
 ## <a name="remarks"></a>설명
 
-결과는 쿼드 워드 `Data` 블록으로 기록 됩니다 `Count` 쿼드 워드를 두는 `Dest` 문자열입니다.
+그 결과, 쿼드 워드 *데이터* 는 *대상* 문자열의 *Count* quadwords 블록에 기록 됩니다.
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-```
+```C
 // stosq.c
 // processor: x64
 #include <stdio.h>
@@ -76,9 +76,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>출력
-
-```
+```Output
 0 ffffffffffff ffffffffffff 0
 ```
 

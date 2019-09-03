@@ -1,38 +1,37 @@
 ---
-title: raw_interfaces_only
-ms.date: 11/04/2016
+title: raw_interfaces_only import 특성
+ms.date: 08/29/2019
 f1_keywords:
 - raw_interfaces_only
 helpviewer_keywords:
 - raw_interfaces_only attribute
 ms.assetid: 87056c6d-3f34-4248-af58-f5775a35bfb7
-ms.openlocfilehash: 48133b85ccb5ddb8de8e6cb614d41cde22dac66b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4b79aa4dbafa204d84f4d6ed7ec78fdec1b81fa7
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179791"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216216"
 ---
-# <a name="rawinterfacesonly"></a>raw_interfaces_only
-**C++특정**
+# <a name="raw_interfaces_only-import-attribute"></a>raw_interfaces_only import 특성
 
-오류 처리 래퍼 함수를 생성 하지 않습니다 하 고 [속성](../cpp/property-cpp.md) 해당 래퍼 함수를 사용 하는 선언 합니다.
+**C++컴퓨터별**
+
+오류 처리 래퍼 함수와 이러한 래퍼 함수를 사용 하는 [속성](../cpp/property-cpp.md) 선언을 생성 하지 않습니다.
 
 ## <a name="syntax"></a>구문
 
-```
-raw_interfaces_only
-```
+> **#import** *형식 라이브러리* **raw_interfaces_only**
 
 ## <a name="remarks"></a>설명
 
-합니다 **raw_interfaces_only** 문제도 발생 하 게 제거할 수 있는 비 속성 함수 명명에 사용 된 기본 접두사가 특성입니다. 접두사는 일반적으로 **raw_** 합니다. 이 특성이 지정되면 형식 라이브러리에서 직접 함수 이름을 가져옵니다.
+**Raw_interfaces_only** 특성을 사용 하면 비 속성 함수의 이름을 지정할 때 사용 되는 기본 접두사를 제거할 수도 있습니다. 일반적으로 접두사 `raw_`는입니다. 이 특성을 지정 하는 경우 함수 이름은 형식 라이브러리에서 직접 가져옵니다.
 
 이 특성을 사용하면 형식 라이브러리의 하위 내용만 노출할 수 있습니다.
 
-**최종 C++ 특정**
+**끝 C++ 특정**
 
 ## <a name="see-also"></a>참고자료
 
-[#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)\
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

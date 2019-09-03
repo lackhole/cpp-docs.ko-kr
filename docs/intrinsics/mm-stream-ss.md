@@ -1,41 +1,41 @@
 ---
 title: _mm_stream_ss
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _mm_stream_ss
 helpviewer_keywords:
 - movntss instruction
 - _mm_stream_ss intrinsic
 ms.assetid: c53dffe9-0dfe-4063-85d3-e8987b870fce
-ms.openlocfilehash: 76c6c848351df773b9857b2f83726b64db982d9f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 005f4f697d64f6ea68b35dc32daf1217be463a2a
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263232"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217359"
 ---
-# <a name="mmstreamss"></a>_mm_stream_ss
+# <a name="_mm_stream_ss"></a>_mm_stream_ss
 
 **Microsoft 전용**
 
-캐시를 오염 시 키 지 않고 메모리 위치에 32 비트 데이터를 씁니다.
+캐시를 polluting 않고 메모리 위치에 32 비트 데이터를 씁니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void _mm_stream_ss(
-   float * Dest,
+   float * Destination,
    __m128 Source
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
-[out] 원본 데이터가 기록 되는 위치에 대 한 포인터입니다.
+*대상이*\
+제한이 원본 데이터가 기록 되는 위치에 대 한 포인터입니다.
 
-*소스*<br/>
-[in] 포함 하는 128 비트 숫자를 `float` 32 비트 아래쪽에 쓸 값...
+*Source*\
+진행 아래쪽 32 비트에 쓸 `float` 값을 포함 하는 128 비트 숫자입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -51,9 +51,9 @@ void _mm_stream_ss(
 
 ## <a name="remarks"></a>설명
 
-이 내장 함수 생성을 `movntss` 명령입니다. 확인 하려면이 명령에 대 한 하드웨어 지원을 호출 합니다 `__cpuid` 포함 된 내장 함수 `InfoType=0x80000001` 의 6 비트를 확인 하 고 `CPUInfo[2] (ECX)`입니다. 이 비트는 그렇지 않은 경우 명령에 지원 되는 경우 1과 0입니다.
+내장 함수는 `movntss` 명령을 생성 합니다. 이 명령에 대 한 하드웨어 지원을 확인 하려면를 `__cpuid` 사용 `InfoType=0x80000001` 하 여 내장 함수를 호출 `CPUInfo[2] (ECX)`하 고의 6 비트를 확인 합니다. 이 비트는 명령이 지원 되 면 1이 고, 그렇지 않으면 0입니다.
 
-사용 하는 코드를 실행 하는 경우는 `_mm_stream_ss` 하드웨어를 지원 하지 않는 내장 함수는 `movntss` 명령 결과 예측할 수 없습니다.
+명령을 지원 하지 않는 하드웨어에서 `_mm_stream_ss` 내장 함수를 사용 하는 코드를 실행 하는 경우 결과를 예측할 수 없습니다. `movntss`
 
 ## <a name="example"></a>예제
 
@@ -89,12 +89,12 @@ f[2] = -3, f[3] = 3
 
 **Microsoft 전용 종료**
 
-고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현
+Advanced 마이크로 장치, i n c .의 저작권 2007 부분 All rights reserved. 고급 마이크로 장치, i n c .의 권한으로 재현 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[_mm_stream_sd](../intrinsics/mm-stream-sd.md)<br/>
-[_mm_stream_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_stream_ps)<br/>
-[_mm_store_ss](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_ss)<br/>
-[_mm_sfence](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)<br/>
+[_mm_stream_sd](../intrinsics/mm-stream-sd.md)\
+[_mm_stream_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_stream_ps)\
+[_mm_store_ss](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_ss)\
+[_mm_sfence](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

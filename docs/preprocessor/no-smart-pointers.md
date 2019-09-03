@@ -1,36 +1,35 @@
 ---
-title: no_smart_pointers
-ms.date: 11/04/2016
+title: no_smart_pointers import 특성
+ms.date: 08/29/2019
 f1_keywords:
-- no_search_pointers
+- no_smart_pointers
 helpviewer_keywords:
 - no_smart_pointers attribute
 ms.assetid: d69dd71e-08a8-4446-a3d0-a062dc29cb17
-ms.openlocfilehash: ed4950b9e90ef968fcf0c42e4f0a9775c58ea7ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1fca3eb486ff3cfc7403c38e91855b799a698782
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326510"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220695"
 ---
-# <a name="nosmartpointers"></a>no_smart_pointers
-**C++특정**
+# <a name="no_smart_pointers-import-attribute"></a>no_smart_pointers import 특성
+
+**C++컴퓨터별**
 
 형식 라이브러리의 모든 인터페이스에 대한 스마트 포인터를 만들지 않습니다.
 
 ## <a name="syntax"></a>구문
 
-```
-no_smart_pointers
-```
+> **#import** *형식 라이브러리* **no_smart_pointers**
 
 ## <a name="remarks"></a>설명
 
-`#import`를 사용하는 경우 기본적으로 형식 라이브러리에 있는 모든 인터페이스에 대한 스마트 포인터 선언을 가져옵니다. 이러한 스마트 포인터는 형식이 [_com_ptr_t 클래스](../cpp/com-ptr-t-class.md)합니다.
+`#import`를 사용하는 경우 기본적으로 형식 라이브러리에 있는 모든 인터페이스에 대한 스마트 포인터 선언을 가져옵니다. 이러한 스마트 포인터는 [_com_ptr_t](../cpp/com-ptr-t-class.md)형식입니다.
 
-**최종 C++ 특정**
+**끝 C++ 특정**
 
 ## <a name="see-also"></a>참고자료
 
-[#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)\
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)
