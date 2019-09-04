@@ -17,13 +17,13 @@ ms.locfileid: "62219810"
 ---
 # <a name="document-template-creation"></a>문서 템플릿 만들기
 
-대 한 응답으로 새 문서를 만들 때를 **새로 만들기** 또는 **열기** 에서 명령을 합니다 **파일** 메뉴 문서 서식 파일 보기를 통해 새 프레임 창도 만듭니다는 문서입니다.
+**파일** 메뉴에서 **새로 만들기** 또는 **열기** 명령에 대한 응답으로 새 문서를 만들 때 문서 템플릿은 문서를 볼 수 있는 새 프레임 창도 만듭니다.
 
-문서 템플릿 생성자는 문서, 창 및 템플릿을 만들 수는 보기의 유형을 지정 합니다. 문서 템플릿 생성자에 전달할 인수에 의해 결정 됩니다. 다음 코드에서는 생성 된 [CMultiDocTemplate](../mfc/reference/cmultidoctemplate-class.md) 샘플 응용 프로그램:
+문서 템플릿 생성자는 템플릿에서 만들 수 있는 문서, 창 및 보기의 유형을 지정합니다. 이것은 문서 템플릿 생성자에 전달되는 인수에 의해 결정됩니다. 다음 코드에서는 샘플 응용 프로그램을 위해 [CMultiDocTemplate](../mfc/reference/cmultidoctemplate-class.md)을 생성하는 것을 보여줍니다.
 
 [!code-cpp[NVC_MFCDocView#7](../mfc/codesnippet/cpp/document-template-creation_1.cpp)]
 
-새 포인터 `CMultiDocTemplate` 개체를 인수로 사용 됩니다 [AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate)합니다. 인수를 `CMultiDocTemplate` 생성자 문서 형식의 메뉴 및 액셀러레이터를 사용 하 여 연결 된 리소스 ID를 포함 하 고 세 가지 사용 합니다 [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) 매크로 합니다. `RUNTIME_CLASS` 반환 된 [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) 개체에 대 한는 C++ 인수로 라는 클래스. 세 가지 `CRuntimeClass` 문서 템플릿 생성자에 전달 된 개체는 문서 만들기 프로세스 중 지정된 된 클래스의 새 개체를 만드는 데 필요한 정보를 제공 합니다. 이 예제에서는 만든 문서 템플릿 만드는 방법을 보여 줍니다 `CScribDoc` 개체와 함께 `CScribView` 연결 개체입니다. 보기는 표준 MDI 자식 프레임 창으로 묶여 있습니다.
+새 `CMultiDocTemplate` 개체에 대한 포인터는 [AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate)의 인수로 사용됩니다. `CMultiDocTemplate` 생성자에 대한 인수에는 문서 형식의 메뉴 및 액셀러레이터와 연관된 리소스 ID 및 [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) 매크로의 세 가지 용도가 포함됩니다. `RUNTIME_CLASS`는 자신의 인수로 명명된 C++ 클래스의 [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) 개체를 반환합니다. 문서 템플릿 생성자에 전달된 세 가지 `CRuntimeClass` 개체는 문서 만들기 프로세스 중 지정된 클래스의 새 개체를 만드는 데 필요한 정보를 제공합니다. 이 예제에서는 `CScribView` 개체가 첨부된 `CScribDoc` 개체를 생성하는 문서 템플릿을 만드는 방법을 보여줍니다. 뷰는 표준 MDI 자식 프레임 창으로 구성됩니다.
 
 ## <a name="see-also"></a>참고자료
 
