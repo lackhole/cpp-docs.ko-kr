@@ -12,7 +12,7 @@ ms.locfileid: "62239027"
 ---
 # <a name="mfc-concepts"></a>MFC 개념
 
-이 섹션에서는 MFC(Microsoft Foundation Class) 라이브러리를 사용하여 프로그래밍 하는데 도움이 되는 개념 및 작업 기반 항목을 제공합니다.
+이 섹션에서는 MFC(Microsoft Foundation Class) 라이브러리를 사용하여 프로그래밍하는 데 도움이 되는 개념 및 작업 기반 항목을 제공합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
