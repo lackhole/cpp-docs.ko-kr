@@ -1,6 +1,6 @@
 ---
 title: __debugbreak
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __debugbreak_cpp
 - __debugbreak
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - breakpoints, __debugbreak intrinsic
 - __debugbreak intrinsic
 ms.assetid: 1d1e1c0c-891a-4613-ae4b-d790094ba830
-ms.openlocfilehash: ed75b94e8bf0aca9369c56f23e8ff00ea6953642
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: e4cf2c85818a878417c560ddb5a80f8690e60a93
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509506"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217929"
 ---
 # <a name="__debugbreak"></a>__debugbreak
 
@@ -23,7 +23,7 @@ ms.locfileid: "69509506"
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __debugbreak();
 ```
 
@@ -38,11 +38,11 @@ void __debugbreak();
 [Debugbreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak)와 유사한 컴파일러내장함수는중단점을발생시키는이식가능한Win32방법입니다.`__debugbreak`
 
 > [!NOTE]
->  **/Clr**을 사용 하 여 컴파일하는 경우 `__debugbreak` 를 포함 하는 함수가 MSIL로 컴파일됩니다. `asm int 3`은 함수를 네이티브로 컴파일하도록 합니다. 자세한 내용은 [__asm](../assembler/inline/asm.md)를 참조 하세요.
+> **/Clr**을 사용 하 여 컴파일하는 경우 `__debugbreak` 를 포함 하는 함수가 MSIL로 컴파일됩니다. `asm int 3`은 함수를 네이티브로 컴파일하도록 합니다. 자세한 내용은 [__asm](../assembler/inline/asm.md)를 참조 하세요.
 
 예:
 
-```
+```C
 main() {
    __debugbreak();
 }
@@ -50,7 +50,7 @@ main() {
 
 위의 예는 아래 예와 유사합니다.
 
-```
+```C
 main() {
    __asm {
       int 3
@@ -68,5 +68,5 @@ ARM64 `__debugbreak` 에서 내장 함수는 명령 `brk #0xF000`으로 컴파�
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [C++ 키워드](../cpp/keywords-cpp.md)

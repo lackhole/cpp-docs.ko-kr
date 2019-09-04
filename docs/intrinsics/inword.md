@@ -1,6 +1,6 @@
 ---
 title: __inword
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __indword_cpp
 - __indword
@@ -8,31 +8,31 @@ helpviewer_keywords:
 - in instruction
 - __inword intrinsic
 ms.assetid: 5c617edd-6709-40a1-aad2-40d5e39283c6
-ms.openlocfilehash: f7355f64eeb2ace550d272ac6a9b1414e90eb172
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cfb6e5a11bed5feec3435ab604d22b8f532d3400
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264493"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217522"
 ---
-# <a name="inword"></a>__inword
+# <a name="__inword"></a>__inword
 
 **Microsoft 전용**
 
-사용 하 여 지정 된 포트에서 데이터를 읽고는 `in` 명령입니다.
+`in` 명령을 사용 하 여 지정 된 포트에서 데이터를 읽습니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned short __inword(
    unsigned short Port
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*포트*<br/>
-[in] 포트에서 읽기입니다.
+*포트인*\
+진행 읽을 포트입니다.
 
 ## <a name="return-value"></a>반환 값
 

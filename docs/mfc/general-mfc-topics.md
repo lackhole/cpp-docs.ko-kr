@@ -1,4 +1,4 @@
----
+﻿---
 title: 일반 MFC 항목
 ms.date: 11/04/2016
 helpviewer_keywords:

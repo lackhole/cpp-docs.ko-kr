@@ -1,6 +1,6 @@
 ---
 title: __movsb
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __movsb
 helpviewer_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - rep movsb instruction
 - __movsb intrinsic
 ms.assetid: ba5469f6-f797-4cd2-bee8-74c7666c26d4
-ms.openlocfilehash: 42124743c27b297c723780c1bc19038fb54e638d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca06fc9114f6e824a690cc4e612c21d705a485cd
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263817"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217273"
 ---
-# <a name="movsb"></a>__movsb
+# <a name="__movsb"></a>__movsb
 
 **Microsoft 전용**
 
-이동 하는 문자열을 생성 합니다 (`rep movsb`) 명령입니다.
+이동 문자열 (`rep movsb`) 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __movsb(
    unsigned char* Destination,
    unsigned const char* Source,
@@ -31,16 +31,16 @@ void __movsb(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
-[out] 복사 대상에 대 한 포인터입니다.
+*대상이*\
+제한이 복사본의 대상에 대 한 포인터입니다.
 
-*소스*<br/>
-[in] 복사의 원본에 대 한 포인터입니다.
+*Source*\
+진행 복사본의 원본에 대 한 포인터입니다.
 
-*개수*<br/>
-[in] 복사할 바이트 수입니다.
+*수*\
+진행 복사할 바이트 수입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -52,13 +52,13 @@ void __movsb(
 
 ## <a name="remarks"></a>설명
 
-결과 첫 번째 `Count` 가리키는 바이트 `Source` 에 복사 됩니다는 `Destination` 문자열입니다.
+그 결과에서 `Source` 가리키는 첫 번째 `Count` 바이트가 `Destination` 문자열에 복사 됩니다.
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // movsb.cpp
 // processor: x86, x64
 #include <stdio.h>

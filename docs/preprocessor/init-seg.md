@@ -1,6 +1,6 @@
 ---
-title: init_seg
-ms.date: 11/04/2016
+title: init_seg pragma
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.init_seg
 - init_seg_CPP
@@ -9,69 +9,69 @@ helpviewer_keywords:
 - init_seg pragma
 - data segment initializing [C++]
 ms.assetid: 40a5898a-5c85-4aa9-8d73-3d967eb13610
-ms.openlocfilehash: 801496739fd9bd2b8a14e699ca4da9fe79f3a28d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e57ea0eedfc1df6e196391c5edd3acfbad0a7c7
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383713"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221010"
 ---
-# <a name="initseg"></a>init_seg
+# <a name="init_seg-pragma"></a>init_seg pragma
 
-**C++특정**
+**C++컴퓨터별**
 
 시작 코드가 실행되는 순서에 영향을 주는 키워드 또는 코드 섹션을 지정합니다.
 
 ## <a name="syntax"></a>구문
 
-```
-#pragma init_seg({ compiler | lib | user | "section-name" [, func-name]} )
-```
+> **#pragma init_seg (** { **컴파일러** | **lib** | **사용자** | "*섹션 이름*" [ **,** *func-name* ]} **)**
 
 ## <a name="remarks"></a>설명
 
-의미 *세그먼트* 하 고 *섹션* 이 항목에서 서로 바꿀 수 있습니다.
+이 문서에서 *세그먼트* 와 *섹션* 은 동일한 의미를 갖습니다.
 
-전역 정적 개체의 초기화는 실행 코드를 포함할 수 있기 때문에 개체를 생성할 때 정의하는 키워드를 지정해야 합니다. 이 특히 사용 하는 **init_seg** pragma 동적 연결 라이브러리 (Dll)의 초기화가 필요한 라이브러리나.
+코드는 때때로 전역 정적 개체를 초기화 해야 하므로 개체를 생성할 시기를 지정 해야 합니다. 특히 Dll (동적 연결 라이브러리) 또는 초기화가 필요한 라이브러리에서 **init_seg** pragma를 사용 하는 것이 중요 합니다.
 
-옵션을 **init_seg** pragma는:
+**Init_seg** pragma에 대 한 옵션은 다음과 같습니다.
 
-*compiler*<br/>
+**컴파일러나**\
 Microsoft C 런타임 라이브러리 초기화용으로 예약되어 있습니다. 이 그룹의 개체는 처음 생성됩니다.
 
-*lib*<br/>
-타사 클래스 라이브러리 공급업체의 초기화에 사용할 수 있습니다. 로 표시 된 후이 그룹의 개체 생성 됩니다 *컴파일러* , 다른 대체 이전 합니다.
+**lib**\
+타사 클래스 라이브러리 공급업체의 초기화에 사용할 수 있습니다. 이 그룹의 개체는 **컴파일러**로 표시 된 후 다른 모든 개체 보다 먼저 생성 됩니다.
 
-*user*<br/>
+**정의**\
 모든 사용자가 사용할 수 있습니다. 이 그룹의 개체는 마지막에 생성됩니다.
 
-*섹션 이름* 초기화 섹션의 명시적 지정을 허용 합니다. 그러나 개체에는 사용자 지정 *섹션 이름* 는 암시적으로 생성 되지 않으면 해당 주소에서 명명 된 섹션에 배치 됩니다 *섹션 이름*합니다.
+*섹션-이름*\
+초기화 섹션의 명시적 지정을 허용합니다. 사용자 지정 *섹션 이름* 에 있는 개체는 암시적으로 생성 되지 않습니다. 그러나 해당 주소는 *섹션 이름*으로 명명 된 섹션에 배치 됩니다.
 
-제공된 섹션 이름은 pragma 뒤 해당 모듈에서 선언된 전역 개체를 생성할 도우미 함수에 대한 포인터를 포함합니다.
+사용자가 지정 하는 *섹션 이름* 에는 해당 모듈에서 pragma 뒤에 선언 된 전역 개체를 구성 하는 도우미 함수에 대 한 포인터가 포함 됩니다.
 
-섹션을 만들 때 사용 하지 않아야 하는 이름의 목록을 보려면 참조 [/section](../build/reference/section-specify-section-attributes.md)합니다.
+섹션을 만들 때 사용할 수 없는 이름 목록은 [/SECTION](../build/reference/section-specify-section-attributes.md)를 참조 하세요.
 
-*함수 이름을* 대신 호출 될 함수를 지정 합니다 `atexit` 경우 프로그램이 종료 됩니다. 이 도우미 함수 호출 [atexit](../c-runtime-library/reference/atexit.md) 전역 개체 소멸자에 대 한 포인터를 사용 하 여 합니다. 다음 형식의 pragma에서 함수 식별자를 지정하면
+*func-name*\
+프로그램이 종료되면 `atexit` 대신 호출될 함수를 지정합니다. 이 도우미 함수는 전역 개체의 소멸자에 대 한 포인터를 사용 하 여 [atexit](../c-runtime-library/reference/atexit.md) 도 호출 합니다. 다음 형식의 pragma에서 함수 식별자를 지정하면
 
 ```cpp
 int __cdecl myexit (void (__cdecl *pf)(void))
 ```
 
-C 런타임 라이브러리의 `atexit` 대신 해당 함수가 호출됩니다. 따라서 개체를 제거할 준비가 되면 호출되어야 할 소멸자 목록을 작성할 수 있습니다.
+C 런타임 라이브러리의 `atexit` 대신 해당 함수가 호출됩니다. 이를 통해 개체를 제거할 준비가 되 면 호출할 소멸자 목록을 작성할 수 있습니다.
 
-초기화를 지연해야 하는 경우(예: DLL에서) 섹션 이름을 명시적으로 지정할 수 있습니다. 그런 다음 각 정적 개체에 대한 생성자를 호출해야 합니다.
+초기화를 지연해야 하는 경우(예: DLL에서) 섹션 이름을 명시적으로 지정할 수 있습니다. 그런 다음 코드에서 각 정적 개체에 대 한 생성자를 호출 해야 합니다.
 
 `atexit` 대체 식별자에는 따옴표가 없습니다.
 
-개체는 여전히 다른 XXX_seg pragma가 정의하는 섹션에 배치됩니다.
+개체는 다른 `XXX_seg` pragma에 정의 된 섹션에 계속 배치 됩니다.
 
-모듈에 선언된 개체는 C 런타임으로 자동으로 초기화되지 않습니다. 해당 작업을 직접 수행해야 합니다.
+모듈에 선언 된 개체는 C 런타임에 의해 자동으로 초기화 되지 않습니다. 코드에서 초기화를 수행 해야 합니다.
 
-기본적으로 `init_seg` 섹션은 읽기 전용입니다. 섹션 이름이 .CRT인 경우 컴파일러는 특성이 읽기/쓰기로 표시되어 있어도 해당 특성을 자동으로 읽기 전용으로 변경합니다.
+기본적으로 `init_seg` 섹션은 읽기 전용입니다. 섹션 이름이 `.CRT`이면 컴파일러가 읽기, 쓰기로 표시 된 경우에도 특성을 읽기 전용으로 자동 변경 합니다.
 
-지정할 수 없습니다 **init_seg** 변환 단위에서 두 번 이상.
+변환 단위에서 **init_seg** 를 두 번 이상 지정할 수 없습니다.
 
-코드에서 명시적으로 정의하지 않은 사용자 정의 생성자가 개체에 없어도 컴파일러에서 생성자를 만들 수 있습니다. 예를 들어 v-table 포인터를 바인딩하는 경우입니다. 따라서 코드가 컴파일러에서 생성된 생성자를 호출해야 합니다.
+개체에 코드에서 명시적으로 정의 된 사용자 정의 생성자가 없는 경우에도 컴파일러에서 사용자 정의 생성자를 생성할 수 있습니다. 예를 들어 v-table 포인터를 바인딩하기 위해 하나를 만들 수 있습니다. 필요한 경우 코드에서 컴파일러에서 생성 된 생성자를 호출 합니다.
 
 ## <a name="example"></a>예제
 
@@ -156,4 +156,4 @@ A()
 
 ## <a name="see-also"></a>참고자료
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -1,45 +1,45 @@
 ---
 title: __ull_rshift
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __ull_rshift
 helpviewer_keywords:
 - ull_rshift intrinsic
 - __ull_rshift intrinsic
 ms.assetid: b7ff5254-3540-4e6e-b57c-a6c4beb7dca2
-ms.openlocfilehash: 5d62ec1526aff595c14a53e9eca43a7a3118c8fa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e914a019877482058c6b2842d3138cda02f1e228
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390128"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219712"
 ---
-# <a name="ullrshift"></a>__ull_rshift
+# <a name="__ull_rshift"></a>__ull_rshift
 
 **Microsoft 전용**
 
-x64에서 오른쪽으로 첫 번째 매개 변수로 지정 된 64 비트 값을 두 번째 매개 변수로 지정 된 비트 수 만큼 이동 합니다.
+x 64에서는 첫 번째 매개 변수로 지정 된 64 비트 값을 두 번째 매개 변수로 지정 된 비트 수 만큼 오른쪽으로 이동 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned __int64 __ull_rshift(
    unsigned __int64 mask, 
    int nBit
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*mask*<br/>
-[in] 오른쪽 시프트 64 비트 정수 값입니다.
+*마스크할*\
+진행 오른쪽으로 이동할 64 비트 정수 값입니다.
 
-*nBit*<br/>
-[in] X86, 32 모듈로 및 x64 64 모듈로 이동할 비트 수입니다.
+*nBit*\
+진행 X 64에서 이동할 비트 수, x86의 모듈로 32, x 64의 경우 모듈로 64
 
 ## <a name="return-value"></a>반환 값
 
-으로 이동 하 여 마스크 `nBit` 비트입니다.
+비트로 이동 하 `nBit` 는 마스크입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -51,11 +51,11 @@ unsigned __int64 __ull_rshift(
 
 ## <a name="remarks"></a>설명
 
-두 번째 매개 변수 31 이동할 비트 수를 결정할 수 32 (x64 64) 모듈로 수행 되는 x86 (x64 63) 보다 큰 경우. 합니다 `ull` 이름을 나타냅니다 `unsigned long long (unsigned __int64)`합니다.
+두 번째 매개 변수가 x 86의 31 (x64에서 63) 보다 큰 경우 해당 숫자는 이동할 비트 수를 결정 하는 모듈로 32 (x 64의 경우 64)로 간주 됩니다. 이름의 `ull` 는를 나타냅니다 `unsigned long long (unsigned __int64)`.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // ull_rshift.cpp
 // compile with: /EHsc
 // processor: x86, x64
@@ -74,9 +74,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>출력
-
-```
+```Output
 1
 ```
 
@@ -84,6 +82,6 @@ int main()
 
 ## <a name="see-also"></a>참고자료
 
-[__ll_lshift](../intrinsics/ll-lshift.md)<br/>
-[__ll_rshift](../intrinsics/ll-rshift.md)<br/>
+[__ll_lshift](../intrinsics/ll-lshift.md)\
+[__ll_rshift](../intrinsics/ll-rshift.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

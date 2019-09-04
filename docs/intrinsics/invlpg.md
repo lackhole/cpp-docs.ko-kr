@@ -1,6 +1,6 @@
 ---
 title: __invlpg
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __invlpg
 - __invlpg_cpp
@@ -8,31 +8,31 @@ helpviewer_keywords:
 - invlpg instruction
 - __invlpg intrinsic
 ms.assetid: 3fb3633f-d9b7-4ec0-9e7f-a7f2fa8ed794
-ms.openlocfilehash: b4f941baae9f03ed288a99d59e2b06262962e339
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ba8bd81498f805992336b0dc4163fe18fa157a2c
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348746"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221890"
 ---
-# <a name="invlpg"></a>__invlpg
+# <a name="__invlpg"></a>__invlpg
 
 **Microsoft 전용**
 
-X86을 생성 `invlpg` 가 가리키는 메모리와 관련 된 페이지에 대 한 번역 할당 준비 버퍼 (TLB)을 무효화 하는 명령 `Address`입니다.
+주소에 의해 `invlpg` 가리키는 메모리와 연결 된 페이지의 TLB (translation 할당 준비 buffer)를 무효화 하는 x86 명령을 생성합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __invlpg(
    void* Address
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*Address*<br/>
-[in] 64 비트 주소입니다.
+*위치*\
+진행 64 비트 주소입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -44,7 +44,7 @@ void __invlpg(
 
 ## <a name="remarks"></a>설명
 
-내장 `__invlpg` 권한 있는 명령을 내보냅니다 이며 0의 권한 수준 (CPL)를 사용 하 여 커널 모드에서 사용할 수만 있습니다.
+내장 함수 `__invlpg` 는 권한 있는 명령을 내보내고, 권한 수준 (CPL)이 0 인 커널 모드 에서만 사용할 수 있습니다.
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 

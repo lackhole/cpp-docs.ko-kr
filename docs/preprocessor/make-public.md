@@ -1,6 +1,6 @@
 ---
-title: make_public
-ms.date: 11/04/2016
+title: make_public pragma
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.make_public
 - make_public_CPP
@@ -8,37 +8,37 @@ helpviewer_keywords:
 - pragmas, make_public
 - make_public pragma
 ms.assetid: c3665f4d-268a-4932-9661-c37c8ae6a341
-ms.openlocfilehash: d569758f90b9e55f65ad13517f86dea41d151ca8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d12fab685e0088993cb43073c3603bda12edd2f3
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62371765"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218824"
 ---
-# <a name="makepublic"></a>make_public
+# <a name="make_public-pragma"></a>make_public pragma
+
 네이티브 형식이 공용 어셈블리 액세스 가능성을 갖도록 지정합니다.
 
 ## <a name="syntax"></a>구문
 
-```
-#pragma make_public(type)
-```
+> **#pragma make_public (** *유형* **)**
 
 ### <a name="parameters"></a>매개 변수
 
-*형식* 공용 어셈블리 액세스 가능성을 갖도록 하려는 형식의 이름입니다.
+*type*\
+공용 어셈블리 액세스 가능성을 부여할 형식의 이름입니다.
 
 ## <a name="remarks"></a>설명
 
-**make_public** 변경할 수 없는.h 파일에서 참조 하려는 네이티브 형식이 표시 되는 경우에 유용 합니다. 공용 어셈블리 표시 유형이 있는 형식의 공용 함수 시그니처에서 네이티브 형식을 사용하려는 경우 해당 네이티브 형식에도 공용 어셈블리 액세스 가능성이 있어야 하며, 그렇지 않으면 컴파일러에서 경고를 생성합니다.
+**make_public** 는 참조 하려는 네이티브 형식이 변경할 수 없는 헤더 파일의 경우에 유용 합니다. Public 어셈블리 표시 유형이 있는 형식의 public 함수 시그니처에 네이티브 형식을 사용 하려면 네이티브 형식에도 공용 어셈블리 액세스 가능성이 있어야 합니다. 그렇지 않으면 컴파일러에서 경고를 표시 합니다.
 
-**make_public** 전역 범위에서 지정 해야 하며 하며 선언 된 소스 코드 파일의 끝에만 지점에서 적용 됩니다.
+**make_public** 는 전역 범위에서 지정 해야 합니다. 소스 코드 파일의 끝까지를 통해 선언 된 지점 에서만 적용 됩니다.
 
-네이티브 형식으로 암시적 또는 명시적으로 private 수 있습니다. 참조 [형식 표시 유형](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) 자세한 내용은 합니다.
+네이티브 형식은 암시적 또는 명시적 전용일 수 있습니다. 자세한 내용은 [형식 표시 유형](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility)을 참조 하세요.
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 
-다음 샘플은 두 네이티브 구조체에 대한 정의가 포함된 .h 파일의 내용입니다.
+다음 샘플은 두 개의 네이티브 구조체에 대 한 정의를 포함 하는 헤더 파일의 내용입니다.
 
 ```cpp
 // make_public_pragma.h
@@ -46,7 +46,7 @@ struct Native_Struct_1 { int i; };
 struct Native_Struct_2 { int i; };
 ```
 
-다음 코드 예제는 헤더 파일을 사용 하 고 표시 하지 않으면 명시적으로 공용으로 네이티브 구조체를 사용 하 여 보여 줍니다 **make_public**에서 네이티브 구조체를 사용 하려고 하면 컴파일러에서 경고를 생성 합니다 관리 되는 공용 형식의 공용 함수 시그니처에서.
+다음 코드 샘플에서는 헤더 파일을 사용 합니다. **Make_public**를 사용 하 여 네이티브 구조체를 public으로 명시적으로 표시 하지 않으면 공용 관리 되는 형식에서 public 함수 시그니처의 네이티브 구조체를 사용 하려고 할 때 컴파일러에서 경고를 생성 합니다.
 
 ```cpp
 // make_public_pragma.cpp
@@ -63,4 +63,4 @@ public ref struct A {
 
 ## <a name="see-also"></a>참고자료
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

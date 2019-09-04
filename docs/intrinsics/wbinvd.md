@@ -1,28 +1,28 @@
 ---
 title: __wbinvd
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __wbinvd
 helpviewer_keywords:
 - __wbinvd intrinsic
 - wbinvd instruction
 ms.assetid: 628d0981-39e5-49e1-bd43-706d123af121
-ms.openlocfilehash: 99c7a452e063dea328e4aa1362aae8783929deb0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe888ef578f0c2e077911537d401890b63372a0b
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390024"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219377"
 ---
-# <a name="wbinvd"></a>__wbinvd
+# <a name="__wbinvd"></a>__wbinvd
 
 **Microsoft 전용**
 
-다시 작성 및 캐시 무효화를 생성 (`wbinvd`) 명령입니다.
+Write Back 및 무효화할 Cache (`wbinvd`) 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __wbinvd(void);
 ```
 
@@ -36,7 +36,7 @@ void __wbinvd(void);
 
 ## <a name="remarks"></a>설명
 
-이 함수는 0의 권한 수준 (CPL)를 사용 하 여 커널 모드에서 사용할 수만 및 루틴은 내장 함수로 사용할 수만 있습니다.
+이 함수는 CPL (권한 수준)이 0 인 커널 모드 에서만 사용할 수 있으며 루틴은 내장 함수로만 사용할 수 있습니다.
 
 **Microsoft 전용 종료**
 

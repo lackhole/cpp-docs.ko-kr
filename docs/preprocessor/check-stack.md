@@ -1,6 +1,6 @@
 ---
-title: check_stack
-ms.date: 11/04/2016
+title: check_stack pragma
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.check_stack
 - check_stack_CPP
@@ -9,38 +9,37 @@ helpviewer_keywords:
 - pragmas, check_stack
 - pragmas, check_stack usage table
 ms.assetid: f18e20cc-9abb-48b7-ad62-8d384875b996
-ms.openlocfilehash: 49477a3b39db17047f349e341bd05c04954c964c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c976692ec36cedcb73825ee0cc7093736a3a3dc
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212401"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216130"
 ---
-# <a name="checkstack"></a>check_stack
-경우 스택 프로브를 해제 하려면 컴파일러에 지시 `off` (또는 `-`) 지정 된 경우 스택 프로브 하 `on` (또는 `+`) 지정 합니다.
+# <a name="check_stack-pragma"></a>check_stack pragma
+
+**해제** (또는 **-** )가 지정 된 경우 스택 프로브를 해제 하거나 **on** (또는 **+** )이 지정 된 경우 스택 프로브를 설정 하도록 컴파일러에 지시 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
-#pragma check_stack([ {on | off}] )
-#pragma check_stack{+ | -}
-```
+> **#pragma check_stack (** [{ **on** | **off** }] **)** \
+> **#pragma check_stack** { **+**  |  **-** }
 
 ## <a name="remarks"></a>설명
 
-인수를 지정하지 않으면 스택 프로브가 기본값에 따라 처리됩니다. 이 pragma는 pragma가 표시된 후 정의된 첫 번째 함수에서 적용됩니다. 스택 프로브는 인라인으로 생성된 함수의 일부나 매크로의 일부가 아닙니다.
+이 pragma는 pragma가 표시된 후 정의된 첫 번째 함수에서 적용됩니다. 스택 프로브는 인라인으로 생성된 함수의 일부나 매크로의 일부가 아닙니다.
 
-에 대 한 인수로 지정 하지 않으면 합니다 **check_stack** pragma를 명령줄에 지정 된 동작으로 돌아갑니다 스택 검사를 수행 합니다. 자세한 내용은 [컴파일러 참조](../build/reference/compiler-options.md)합니다. 상호 작용 합니다 `#pragma check_stack` 하며 [/Gs](../build/reference/gs-control-stack-checking-calls.md) 옵션 표에 요약 되어 있습니다.
+**Check_stack** pragma에 대 한 인수를 지정 하지 않으면 스택 검사가 명령줄에 지정 된 동작으로 되돌아갑니다. 자세한 내용은 [컴파일러 옵션](../build/reference/compiler-options.md)을 참조하세요. `#pragma check_stack` 및 [/gs](../build/reference/gs-control-stack-checking-calls.md) 옵션의 상호 작용은 다음 표에 요약 되어 있습니다.
 
-### <a name="using-the-checkstack-pragma"></a>check_stack Pragma 사용
+### <a name="using-the-check_stack-pragma"></a>check_stack Pragma 사용
 
-|구문|/Gs 옵션을 사용한<br /><br /> 컴파일 여부|작업|
+|구문|/Gs 옵션을 사용한<br /><br /> 컴파일 여부|동작|
 |------------|------------------------------------|------------|
 |`#pragma check_stack( )` 또는<br /><br /> `#pragma check_stack`|예|뒤에 오는 함수에 대한 스택 검사 해제|
 |`#pragma check_stack( )` 또는<br /><br /> `#pragma check_stack`|아니요|뒤에 오는 함수에 대한 스택 검사 설정|
-|`#pragma check_stack(on)`<br /><br /> 또는 `#pragma check_stack +`|예 또는 아니요|뒤에 오는 함수에 대한 스택 검사 설정|
-|`#pragma check_stack(off)`<br /><br /> 또는 `#pragma check_stack -`|예 또는 아니요|뒤에 오는 함수에 대한 스택 검사 해제|
+|`#pragma check_stack(on)`<br /><br /> 디스크나`#pragma check_stack +`|Yes 또는 No|뒤에 오는 함수에 대한 스택 검사 설정|
+|`#pragma check_stack(off)`<br /><br /> 디스크나`#pragma check_stack -`|Yes 또는 No|뒤에 오는 함수에 대한 스택 검사 해제|
 
 ## <a name="see-also"></a>참고자료
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

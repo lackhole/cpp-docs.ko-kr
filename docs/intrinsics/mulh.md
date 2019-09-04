@@ -1,39 +1,39 @@
 ---
 title: __mulh
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __mulh
 helpviewer_keywords:
 - __mulh intrinsic
 ms.assetid: cd2ab093-9ef6-404d-ac34-0bee033882f3
-ms.openlocfilehash: 122d7ff28a01c0b95c16c6a0f4cd20e883744d2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3a421cdda1c62620d4c933436fd0b5bab589c0e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263076"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221688"
 ---
-# <a name="mulh"></a>__mulh
+# <a name="__mulh"></a>__mulh
 
 **Microsoft 전용**
 
-두 64 비트 부호 있는 정수 곱의 상위 64 비트를 반환합니다.
+2 64 비트 부호 있는 정수 제품의 상위 64 비트를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 __int64 __mulh(
    __int64 a,
    __int64 b
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*a*<br/>
+*은*\
 [in] 곱할 첫 번째 숫자입니다.
 
-*b*<br/>
+*b*\
 [in] 곱할 두 번째 숫자입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -54,7 +54,7 @@ __int64 __mulh(
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // mulh.cpp
 // processor: x64
 #include <stdio.h>

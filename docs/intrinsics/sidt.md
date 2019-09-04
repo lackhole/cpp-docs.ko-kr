@@ -1,36 +1,35 @@
 ---
 title: __sidt
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __sidt
 helpviewer_keywords:
 - sidt instruction
 - __sidt intrinsic
 ms.assetid: 01e83d14-6e63-4dea-8f64-5a0339d69641
-ms.openlocfilehash: 88dbb4713577fcf224e1c5646bf4c38b2a1dfafe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d6b685da0e02373307a3149c5b7b28213f37ad40
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390323"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222332"
 ---
-# <a name="sidt"></a>__sidt
+# <a name="__sidt"></a>__sidt
 
 **Microsoft 전용**
 
-지정된 된 메모리 위치에 인터럽트 설명자 테이블 레지스터 (IDTR)의 값을 저장합니다.
+지정 된 메모리 위치에 인터럽트 설명자 테이블 레지스터 (IDTR)의 값을 저장 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __sidt(void * Destination);
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|---------------|-----------------|
-|*대상*|[in] IDTR 저장 되어 있는 메모리 위치에 대 한 포인터입니다.|
+*대상이*\
+진행 IDTR이 저장 된 메모리 위치에 대 한 포인터입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -42,11 +41,11 @@ void __sidt(void * Destination);
 
 ## <a name="remarks"></a>설명
 
-`__sidt` 함수는 `SIDT` 컴퓨터 명령에 해당합니다. 자세한 내용은 문서에 대해 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조를 "에 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
+`__sidt` 함수는 `SIDT` 컴퓨터 명령에 해당합니다. 자세한 내용을 보려면 다음 문서를 검색 하십시오. "Intel 아키텍처 소프트웨어 개발자 설명서, 볼륨 2: " [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트에서" 명령 집합 참조
 
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [__lidt](../intrinsics/lidt.md)

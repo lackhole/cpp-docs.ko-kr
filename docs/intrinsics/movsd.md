@@ -1,6 +1,6 @@
 ---
 title: __movsd
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __movsd
 helpviewer_keywords:
@@ -8,39 +8,39 @@ helpviewer_keywords:
 - __movsd intrinsic
 - movsd instruction
 ms.assetid: eb5cccf3-aa76-47f0-b9fc-eeca38fd943f
-ms.openlocfilehash: 950e83f2cd03e92bb5a9f953affe8e7ff479a408
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c43f6bdb731abc281d60fe4bc6ecaec1331b9945
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263182"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221761"
 ---
-# <a name="movsd"></a>__movsd
+# <a name="__movsd"></a>__movsd
 
 **Microsoft 전용**
 
-이동 하는 문자열을 생성 합니다 (`rep movsd`) 명령입니다.
+이동 문자열 (`rep movsd`) 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __movsd(
-   unsigned long* Dest,
+   unsigned long* Destination,
    unsigned long* Source,
    size_t Count
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
-[out] 작업의 대상입니다.
+*대상이*\
+제한이 작업의 대상입니다.
 
-*소스*<br/>
-[in] 작업의 원본입니다.
+*Source*\
+진행 작업의 소스입니다.
 
-*개수*<br/>
-[in] 복사할 2 배 워드 횟수입니다.
+*수*\
+진행 복사할 더블의 수입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -52,13 +52,13 @@ void __movsd(
 
 ## <a name="remarks"></a>설명
 
-결과 첫 번째 `Count` 가리키는 2 배 워드 `Source` 에 복사 됩니다는 `Dest` 문자열입니다.
+결과적으로 *Source* 가 가리키는 첫 번째 *수* 를 *대상* 문자열에 복사 합니다.
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // movsd.cpp
 // processor: x86, x64
 #include <stdio.h>

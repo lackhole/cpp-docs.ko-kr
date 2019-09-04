@@ -1,6 +1,6 @@
 ---
 title: __outdword
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __outdword
 helpviewer_keywords:
@@ -8,35 +8,35 @@ helpviewer_keywords:
 - outdword instruction
 - __outdword intrinsic
 ms.assetid: ed1e4994-a84b-4759-8bf9-cd48fb073f4d
-ms.openlocfilehash: 236c4812f62cb092876b400051248425ee1b13e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ce1358e7cef0136ccf7d314038d06d271916e0bc
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263011"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221661"
 ---
-# <a name="outdword"></a>__outdword
+# <a name="__outdword"></a>__outdword
 
 **Microsoft 전용**
 
-생성 된 `out` 는 워드 보내기 지침을 `Data` 포트를 찾기 `Port`합니다.
+포트 *포트*에서 더블 워드 *데이터* 를 전송 하는 명령을생성합니다.`out`
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __outdword(
    unsigned short Port,
    unsigned long Data
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*포트*<br/>
-[in] 데이터를 보낼 포트입니다.
+*포트인*\
+진행 데이터를 보낼 포트입니다.
 
-*Data*<br/>
-[in] 전송할 워드입니다.
+*데이터로*\
+진행 전송할 더블 워드입니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,6 +1,6 @@
 ---
 title: __stosd
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __stosd
 helpviewer_keywords:
@@ -8,39 +8,39 @@ helpviewer_keywords:
 - rep stosd instruction
 - __stosd intrinsic
 ms.assetid: 03104247-1cea-49f6-b6f8-287917bf5680
-ms.openlocfilehash: 43a0efcfb94b7e53dacec16caccdacf86a96f5bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c46bb124390ff23d79361c66530493c48faf3f0a
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390258"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219985"
 ---
-# <a name="stosd"></a>__stosd
+# <a name="__stosd"></a>__stosd
 
 **Microsoft 전용**
 
-저장소 문자열 명령 생성 (`rep stosd`).
+저장소 문자열 명령 (`rep stosd`)을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __stosd(
-   unsigned long* Dest,
+   unsigned long* Destination,
    unsigned long Data,
    size_t Count
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
-[out] 작업의 대상입니다.
+*대상이*\
+제한이 작업의 대상입니다.
 
-*Data*<br/>
-[in] 데이터 저장소입니다.
+*데이터로*\
+진행 저장할 데이터입니다.
 
-*개수*<br/>
-[in] 쓸 2 배 워드 블록의 길이입니다.
+*수*\
+진행 쓸 더블 워드 블록의 길이입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -52,13 +52,13 @@ void __stosd(
 
 ## <a name="remarks"></a>설명
 
-결과 더블 워드 `Data` 블록으로 기록 됩니다 `Count` 가리키는 메모리 위치에서 2 배 워드 `Dest`합니다.
+그 결과, 더블 워드 *데이터* 는 *대상이*가리키는 메모리 위치에서 더블 *수* 의 블록에 기록 됩니다.
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-```
+```C
 // stosd.c
 // processor: x86, x64
 

@@ -1,30 +1,58 @@
 ---
-title: _InterlockedCompareExchange128
-ms.date: 11/04/2016
+title: _InterlockedCompareExchange128 내장 함수
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedCompareExchange128_cpp
 - _InterlockedCompareExchange128
+- _InterlockedCompareExchange128_acq
+- _InterlockedCompareExchange128_nf
+- _InterlockedCompareExchange128_np
+- _InterlockedCompareExchange128_rel
 helpviewer_keywords:
 - cmpxchg16b instruction
 - _InterlockedCompareExchange128 intrinsic
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56
-ms.openlocfilehash: 9330b1405ca247364cd04d3ab399f66e4f332273
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 525b0fd77323789eed05c47c944794ff389bfac5
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348772"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217692"
 ---
-# <a name="interlockedcompareexchange128"></a>_InterlockedCompareExchange128
+# <a name="_interlockedcompareexchange128-intrinsic-functions"></a>_InterlockedCompareExchange128 내장 함수
 
 **Microsoft 전용**
 
-128 비트 연관된 비교 및 교환을 수행합니다.
+128 비트 연동 비교 및 교환을 수행 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned char _InterlockedCompareExchange128(
+   __int64 volatile * Destination,
+   __int64 ExchangeHigh,
+   __int64 ExchangeLow,
+   __int64 * ComparandResult
+);
+unsigned char _InterlockedCompareExchange128_acq(
+   __int64 volatile * Destination,
+   __int64 ExchangeHigh,
+   __int64 ExchangeLow,
+   __int64 * ComparandResult
+);
+unsigned char _InterlockedCompareExchange128_nf(
+   __int64 volatile * Destination,
+   __int64 ExchangeHigh,
+   __int64 ExchangeLow,
+   __int64 * ComparandResult
+);
+unsigned char _InterlockedCompareExchange128_np(
+   __int64 volatile * Destination,
+   __int64 ExchangeHigh,
+   __int64 ExchangeLow,
+   __int64 * ComparandResult
+);
+unsigned char _InterlockedCompareExchange128_rel(
    __int64 volatile * Destination,
    __int64 ExchangeHigh,
    __int64 ExchangeLow,
@@ -32,52 +60,58 @@ unsigned char _InterlockedCompareExchange128(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
-[out에서] 두 64 비트 정수의 배열 대상에 대 한 포인터 128 비트 필드로 간주 합니다. 대상 데이터에 일반 보호 오류를 방지 하려면 정렬 16 바이트 여야 합니다.
+*대상이*\
+[in, out] 128 비트 필드로 간주 되는 2 64 비트 정수의 배열인 대상에 대 한 포인터입니다. 일반 보호 오류를 방지 하려면 대상 데이터가 16 바이트 맞춤 이어야 합니다.
 
-*ExchangeHigh*<br/>
-[in] 대상의 상위 부분을 사용 하 여 교환할 수 있는 64 비트 정수입니다.
+*ExchangeHigh*\
+진행 대상의 상위 부분과 교환할 수 있는 64 비트 정수입니다.
 
-*ExchangeLow*<br/>
-[in] 대상의 하위 부분으로 교환할 수 있는 64 비트 정수입니다.
+*ExchangeLow*\
+진행 대상의 하위 부분과 교환할 수 있는 64 비트 정수입니다.
 
-*ComparandResult*<br/>
-[out에서] (128 비트 필드로 간주 됨) 하는 두 개의 64 비트 정수 배열에 대 한 포인터를 대상으로 비교 합니다.  출력 시이 대상의 원래 값으로 덮어씁니다 되어 있습니다.
+*ComparandResult*\
+[in, out] 대상과 비교할 2 64 비트 정수 (128 비트 필드로 간주 됨)의 배열에 대 한 포인터입니다.  출력에서이 배열을 대상의 원래 값으로 덮어씁니다.
 
 ## <a name="return-value"></a>반환 값
 
-128 비트 피비교수와 대상의 원래 값이 일치 하는 경우 1입니다. `ExchangeHigh` 및 `ExchangeLow` 128 비트 대상을 덮어씁니다.
+128 비트 비교 피연산자이 대상의 원래 값과 같으면 1입니다. `ExchangeHigh`128 비트 대상을 덮어씁니다. `ExchangeLow`
 
-비교 피연산자는 대상의 원래 값과 같지 않으면 0입니다. 대상의 값이 변경 되지 않습니다 및 대상의 값과 비교 피연산자의 값을 덮어씁니다.
+비교 피연산자가 대상의 원래 값과 같지 않은 경우 0입니다. 대상의 값은 변경 되지 않으며 비교 피연산자의 값은 대상의 값으로 덮어쓰여집니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`_InterlockedCompareExchange128`|X64|
+|`_InterlockedCompareExchange128`|x64, ARM64|
+|`_InterlockedCompareExchange128_acq`, `_InterlockedCompareExchange128_nf`, `_InterlockedCompareExchange128_rel`|ARM64|
+|`_InterlockedCompareExchange128_np`|X64|
 
 **헤더 파일** \<intrin.h >
 
 ## <a name="remarks"></a>설명
 
-이 내장 함수 생성 합니다 `cmpxchg16b` 명령 (사용 하 여는 `lock` 접두사) 128 비트 잠긴된 비교 및 교환 하는 데 있습니다. AMD 64 비트 하드웨어의 초기 버전에는이 명령을 지원 하지 않습니다. 에 대 한 하드웨어 지원을 확인 하는 `cmpxchg16b` 명령을 호출 합니다 `__cpuid` 포함 된 내장 함수 `InfoType=0x00000001 (standard function 1)`합니다. 13 많은 `CPUInfo[2]` 명령 지원 되는 경우 (ECX)는 1입니다.
+내장 `_InterlockedCompareExchange128` 함수는 `cmpxchg16b` `lock` 접두사를 사용 하 여 128 비트의 잠금 비교 및 교환을 수행 하는 명령을 생성 합니다. 이전 버전의 AMD 64 비트 하드웨어는이 명령을 지원 하지 않습니다. `cmpxchg16b` 명령에 대 한 하드웨어 지원을 확인 하려면를 사용 `InfoType=0x00000001 (standard function 1)`하 `__cpuid` 여 내장 함수를 호출 합니다. 명령이 지원 되 `CPUInfo[2]` 는 경우의 비트 13 (ECX)은 1입니다.
 
 > [!NOTE]
->  변수의 `ComparandResult` 을 항상 덮어씁니다. 후 합니다 `lock` 의 초기 값을 즉시 복사 하는 명령에이 내장 `Destination` 에 `ComparandResult`입니다. 이러한 이유로 `ComparandResult` 고 `Destination` 예기치 않은 문제를 방지 하려면 별도 메모리 위치를 가리켜야 합니다.
+> 의 `ComparandResult` 값은 항상 덮어쓰여집니다. 명령 후이 내장 함수는의 `Destination` 초기 값을에 `ComparandResult`즉시 복사 합니다. `lock` `ComparandResult` 따라서 및 `Destination` 는 예기치 않은 동작을 방지 하기 위해 별도의 메모리 위치를 가리켜야 합니다.
 
-사용할 수 있지만 `_InterlockedCompareExchange128` 하위 수준 스레드 동기화에 대 한 필요가 없습니다 작은 동기화 함수를 사용할 수 있는 경우 128 비트 개를 동기화 하려면 (다른 같은 `_InterlockedCompareExchange` 내장 함수) 대신 합니다. 사용 하 여 `_InterlockedCompareExchange128` 메모리에는 128 비트 값에 대 한 원자성 액세스 하려는 경우.
+낮은 수준의 스레드 동기화 `_InterlockedCompareExchange128` 에를 사용할 수 있지만, 더 작은 동기화 기능 (예: 다른 `_InterlockedCompareExchange` 내장 함수)을 사용할 수 있는 경우 128 비트를 동기화 할 필요가 없습니다. 메모리 `_InterlockedCompareExchange128` 에서 128 비트 값에 대 한 원자성 액세스를 원하는 경우를 사용 합니다.
 
-경우 코드를 실행 하면 사용 하 여이 내장 함수를 지원 하지 않는 하드웨어를 `cmpxchg16b` 명령 결과 예측할 수 없습니다.
+`cmpxchg16b` 명령을 지원 하지 않는 하드웨어에서 내장 함수를 사용 하는 코드를 실행 하는 경우 결과를 예측할 수 없습니다.
 
-이 루틴은 내장 함수로 사용할 수 있습니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf` ("No fence") 접미사가 포함 된 ARM 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
+
+`_np`("no prefetch"의 약어) 접미사가 포함된 내장 함수는 컴파일러가 가능한 프리페치 연산을 삽입하지 못하도록 차단합니다.
+
+이 루틴은 내장 함수로만 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-이 예제에서는 `_InterlockedCompareExchange128` 해당 높음 및 낮음 단어의 합계를 사용 하 여 두 개의 64 비트 정수 배열로 높은 단어를 대체 하는 데 하위 워드를 하나씩 늘립니다. BigInt.Int 배열에 대 한 액세스는 원자성 하지만이 예제에서는 단일 스레드를 사용 하 고 간단히 하기 위해 잠금을 무시 합니다.
+이 예제에서는 `_InterlockedCompareExchange128` 를 사용 하 여 2 64 비트 정수의 배열에 대 한 상위 단어를 높은 단어와 낮은 단어의 합계로 바꾸고 하위 단어를 늘립니다. `BigInt.Int` 배열에 대 한 액세스는 원자성 이지만,이 예제에서는 단일 스레드를 사용 하 고 편의상 잠금을 무시 합니다.
 
-```
+```cpp
 // cmpxchg16b.c
 // processor: x64
 // compile with: /EHsc /O2
@@ -125,10 +159,9 @@ BigInt.Int[1] = 34, BigInt.Int[0] = 12
 
 **Microsoft 전용 종료**
 
-고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
-[_InterlockedCompareExchange 내장 함수](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
+[_InterlockedCompareExchange 내장 함수](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)\
 [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

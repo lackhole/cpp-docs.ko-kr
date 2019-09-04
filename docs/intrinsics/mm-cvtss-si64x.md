@@ -1,41 +1,41 @@
 ---
 title: _mm_cvtss_si64x
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _mm_cvtss_si64x
 helpviewer_keywords:
 - cvtss2si intrinsic
 - _mm_cvtss_si64x intrinsic
 ms.assetid: c279aff2-ee29-4271-8829-3ec691bf7718
-ms.openlocfilehash: a3b7ece325d975045046e865e6b090f3f6729558
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6079ed7846a35ff16355f0341d63430f9846057f
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263336"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217426"
 ---
-# <a name="mmcvtsssi64x"></a>_mm_cvtss_si64x
+# <a name="_mm_cvtss_si64x"></a>_mm_cvtss_si64x
 
 **Microsoft 전용**
 
-확장 x64 생성 된 변환 스칼라 단일 정밀도 부동 소수점 숫자의 64 비트 정수를 버전 (`cvtss2si`) 명령입니다.
+스칼라 단일 정밀도 부동 소수점 숫자를 64 비트 정수 (`cvtss2si`) 명령으로 변환 하는 x64 확장 버전을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 __int64 _mm_cvtss_si64x(
    __m128 value
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*값*<br/>
-[in] `__m128` 부동 소수점 값을 포함 하는 구조체.
+*value*\
+진행 부동 `__m128` 소수점 값을 포함 하는 구조체입니다.
 
 ## <a name="return-value"></a>반환 값
 
-64 비트 정수를 첫 번째 부동 소수점 값을 정수로 변환의 결과입니다.
+첫 번째 부동 소수점 값을 정수로 변환한 결과인 64 비트 정수입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -47,13 +47,13 @@ __int64 _mm_cvtss_si64x(
 
 ## <a name="remarks"></a>설명
 
-구조 값의 첫 번째 요소를 정수로 변환 되 고 반환 합니다. MXCSR에서 반올림 제어 비트를 반올림 동작을 결정 하는 데 사용 됩니다. 기본 반올림 모드는 가까운 소수 부분은 0.5 경우 숫자를 반올림를 반올림 합니다. 때문에 `__m128` 구조 XMM 레지스터에서 XMM 레지스터는이 내장 함수는 값을 나타내는 한 시스템 메모리에 씁니다.
+구조체 값의 첫 번째 요소는 정수로 변환 되 고 반환 됩니다. MXCSR의 반올림 제어 비트는 반올림 동작을 결정 하는 데 사용 됩니다. 기본 반올림 모드는 가장 가까운 값으로 반올림 됩니다. 소수 부분이 0.5 이면 짝수로 반올림 됩니다. 구조체는 `__m128` xmm 레지스터를 나타내므로 내장 함수는 xmm 레지스터의 값을 사용 하 여 시스템 메모리에 씁니다.
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // _mm_cvtss_si64x.cpp
 // processor: x64
 #include <intrin.h>
@@ -89,5 +89,5 @@ int main()
 
 ## <a name="see-also"></a>참고자료
 
-[__m128d](../cpp/m128d.md)<br/>
+[__m128d](../cpp/m128d.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

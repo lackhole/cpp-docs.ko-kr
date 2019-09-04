@@ -1,26 +1,26 @@
 ---
-title: 가변 매크로
-ms.date: 11/04/2016
+title: Variadic 매크로
+ms.date: 08/29/2019
 helpviewer_keywords:
 - variadic macros [C++]
 - __VA_ARGS__ variadic macro specifier
 ms.assetid: 51e757dc-0134-4bb2-bb74-64ea5ad75134
-ms.openlocfilehash: da159ef979ccc38845064debebae55356bc9e9bd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 171ea797adc1e407a8b7ef0592508653f758df64
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179571"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216527"
 ---
-# <a name="variadic-macros"></a>가변 매크로
+# <a name="variadic-macros"></a>Variadic 매크로
 
 가변 매크로 인수의 변수 번호를 포함 하는 함수 형식 매크로입니다.
 
 ## <a name="remarks"></a>설명
 
-가변 매크로 사용 하려면 줄임표 매크로 정의에서 대체 식별자 최종 형식 인수로 지정할 있습니다 `__VA_ARGS__` 불필요 한 인수를 삽입할 정의에 사용할 수 있습니다.  `__VA_ARGS__` 쉼표로 구분 하를 포함 하 고 줄임표를 일치 하는 인수의 모든으로 바뀝니다.
+가변 매크로 사용 하려면 줄임표 매크로 정의에서 대체 식별자 최종 형식 인수로 지정할 있습니다 `__VA_ARGS__` 불필요 한 인수를 삽입할 정의에 사용할 수 있습니다.  `__VA_ARGS__`는 줄임표와 일치 하는 모든 인수로 대체 됩니다 (쉼표 포함).
 
-C 표준 매크로 후행 쉼표를 사용 하 여 식을 확인 되지 않으면 되도록 줄임표에 하나 이상의 인수를 전달 되어야 합니다를 지정 합니다.  줄임표에 인수 전달 되는 경우 Visual C++ 구현 후행 쉼표를 표시 되지 것입니다.
+C 표준은 인수가 후행 쉼표를 사용 하는 식으로 확인 되지 않도록 하나 이상의 인수를 줄임표에 전달 하도록 지정 합니다. 기존 Microsoft C++ 구현은 줄임표에 전달 된 인수가 없는 경우 후행 쉼표를 표시 하지 않습니다.
 
 ## <a name="example"></a>예제
 

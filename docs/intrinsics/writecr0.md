@@ -1,36 +1,36 @@
 ---
 title: __writecr0
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _writecr0
 helpviewer_keywords:
 - _writecr0 intrinsic
 ms.assetid: a143d08d-0333-4e1b-91b4-4acb2ae91b5a
-ms.openlocfilehash: 24d9ffe0e07269fedf19f90a7c66a07e3c5e7d3e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1f00796242ae352d32935c2551d50f2d93d734ec
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389946"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219298"
 ---
-# <a name="writecr0"></a>__writecr0
+# <a name="__writecr0"></a>__writecr0
 
 **Microsoft 전용**
 
-값을 씁니다 `Data` CR0 레지스터를 합니다.
+Cr0 레지스터 레지스터에 `Data` 값을 씁니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void writecr0(
    unsigned __int64 Data
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*Data*<br/>
-[in] CR0 레지스터에 쓸 값입니다.
+*데이터로*\
+진행 CR0 레지스터 레지스터에 쓸 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 

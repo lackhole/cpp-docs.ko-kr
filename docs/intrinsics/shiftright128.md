@@ -1,19 +1,19 @@
 ---
 title: __shiftright128
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __shiftright128
 helpviewer_keywords:
 - __shiftright128 intrinsic
 ms.assetid: 5419a6c4-0de1-43fb-b314-4faa5b2d051f
-ms.openlocfilehash: b721abc9be22709fdc221951e2012300d6b96762
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a18a9958a51f291e4997c23e87ee48f739562416
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390336"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220024"
 ---
-# <a name="shiftright128"></a>__shiftright128
+# <a name="__shiftright128"></a>__shiftright128
 
 **Microsoft 전용**
 
@@ -21,7 +21,7 @@ ms.locfileid: "62390336"
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned __int64 __shiftright128(
    unsigned __int64 LowPart,
    unsigned __int64 HighPart,
@@ -29,16 +29,16 @@ unsigned __int64 __shiftright128(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*LowPart*<br/>
-[in] 이동할 128 비트 수량 중 하위 64 비트입니다.
+*LowPart*\
+진행 이동할 128 비트 수량의 하위 64 비트입니다.
 
-*HighPart*<br/>
-[in] 이동할 128 비트 수량 중 상위 64 비트입니다.
+*Largeint.highpart*\
+진행 이동할 128 비트 수량의 상위 64 비트입니다.
 
-*Shift*<br/>
-[in] 이동할 비트 수입니다.
+*교대조*\
+진행 이동할 비트 수입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -58,11 +58,11 @@ unsigned __int64 __shiftright128(
 
 ## <a name="example"></a>예제
 
-예를 들어 참조 [__shiftleft128](../intrinsics/shiftleft128.md)합니다.
+예제를 보려면 [__shiftleft128](../intrinsics/shiftleft128.md)를 참조 하세요.
 
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고자료
 
-[__shiftleft128](../intrinsics/shiftleft128.md)<br/>
+[__shiftleft128](../intrinsics/shiftleft128.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

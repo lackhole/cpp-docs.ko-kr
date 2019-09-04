@@ -1,6 +1,6 @@
 ---
 title: __lzcnt16, __lzcnt, __lzcnt64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __lzcnt64
 - __lzcnt16
@@ -14,22 +14,22 @@ helpviewer_keywords:
 - lzcnt64 intrinsic
 - __lzcnt64 intrinsic
 ms.assetid: 412113e7-052e-46e5-8bfa-d5ad72abc10e
-ms.openlocfilehash: 333d9f2b23fb90388af8395945256956c9222ab9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fcd801717974a230fbd19cc7802d8f6a011774f7
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263375"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221809"
 ---
-# <a name="lzcnt16-lzcnt-lzcnt64"></a>__lzcnt16, __lzcnt, __lzcnt64
+# <a name="__lzcnt16-__lzcnt-__lzcnt64"></a>__lzcnt16, __lzcnt, __lzcnt64
 
 **Microsoft 전용**
 
-개수는 16, 32 비트 또는 64 비트 정수에서 최고의 수가 0이 됩니다.
+16, 32 또는 64 비트 정수에서 앞에 오는 0의 수를 계산 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned short __lzcnt16(
    unsigned short value
 );
@@ -41,36 +41,36 @@ unsigned __int64 __lzcnt64(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*값*<br/>
-[in] 16, 32 비트 또는 64 비트 부호 없는 정수 앞에 오는 0에 대 한 검사를 합니다.
+*value*\
+진행 앞에 오는 0을 검색할 16, 32 또는 64 비트 부호 없는 정수입니다.
 
 ## <a name="return-value"></a>반환 값
 
-선행 0 비트의 수를 `value` 매개 변수입니다. 경우 `value` 가 0 이면 반환 값 (16, 32 또는 64) 입력된 피연산자의 크기입니다. 가장 하는 경우의 중요 한 비트 `value` 하나인, 반환 값은 0입니다.
+`value` 매개 변수에서 앞에 오는 0 비트의 수입니다. 가 `value` 0 이면 반환 값은 입력 피연산자의 크기 (16, 32 또는 64)입니다. 의 `value` 가장 중요 한 비트가 1 인 경우 반환 값은 0입니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`__lzcnt16`|AMD: 고급 비트 조작 (ABM)<br /><br /> Intel: Haswell|
-|`__lzcnt`|AMD: 고급 비트 조작 (ABM)<br /><br /> Intel: Haswell|
-|`__lzcnt64`|AMD: 고급 비트 조작 (ABM) 64 비트 모드에서.<br /><br /> Intel: Haswell|
+|`__lzcnt16`|AMD: 고급 비트 조작 (ABM)<br /><br /> Intel Haswell|
+|`__lzcnt`|AMD: 고급 비트 조작 (ABM)<br /><br /> Intel Haswell|
+|`__lzcnt64`|AMD: 64 비트 모드의 ABM (고급 비트 조작)입니다.<br /><br /> Intel Haswell|
 
 **헤더 파일** \<intrin.h >
 
 ## <a name="remarks"></a>설명
 
-각 이러한 내장 함수 생성을 `lzcnt` 명령입니다.  값의 크기는는 `lzcnt` 인수의 크기와 동일 하 게 반환 하는 명령입니다.  32 비트 모드로 레지스터가 없습니다 64-bit 범용, 따라서 64 비트 이상 `lzcnt`합니다.
+각 내장 함수는 `lzcnt` 명령을 생성 합니다.  `lzcnt` 명령이 반환 하는 값의 크기는 인수의 크기와 동일 합니다.  32 비트 모드에서는 64 비트 범용 레지스터가 없으므로 64 비트가 `lzcnt` 지원 되지 않습니다.
 
-에 대 한 하드웨어 지원을 확인 하는 `lzcnt` 명령 호출을 `__cpuid` 포함 된 내장 함수 `InfoType=0x80000001` 의 5 비트를 확인 하 고 `CPUInfo[2] (ECX)`입니다. 그렇지 않으면이 비트는 명령 지원 되 면 1과 0 수 있습니다. 경우 코드를 실행 하면 사용 하 여이 내장 함수를 지원 하지 않는 하드웨어를 `lzcnt` 명령 결과 예측할 수 없습니다.
+`lzcnt` 명령에 대 한 하드웨어 지원을 확인 하려면를 사용 `__cpuid` `InfoType=0x80000001` 하 여 내장 함수를 호출 하 `CPUInfo[2] (ECX)`고의 비트 5를 확인 합니다. 명령이 지원 되는 경우이 비트는 1이 고, 그렇지 않으면 0입니다. `lzcnt` 명령을 지원 하지 않는 하드웨어에서 내장 함수를 사용 하는 코드를 실행 하는 경우 결과를 예측할 수 없습니다.
 
-Intel 프로세서를 지원 하지 않는 합니다 `lzcnt` 명령으로 실행 됩니다 명령 바이트 인코딩이 `bsr` (검색 역방향 비트). 중요 한 코드 이식성을 사용 하는 경우의 사용을 고려 합니다 `_BitScanReverse` 내장 함수 대신 합니다. 자세한 내용은 [_BitScanReverse, _BitScanReverse64](../intrinsics/bitscanreverse-bitscanreverse64.md)합니다.
+`lzcnt` 명령을 지원 하지 않는 Intel 프로세서에서는 명령 바이트 인코딩이 (비트 검사 역방향)로 `bsr` 실행 됩니다. 코드 이식성이 중요 한 경우에는 `_BitScanReverse` 내장 함수를 대신 사용 하는 것이 좋습니다. 자세한 내용은 [_Bitscanreverse, _BitScanReverse64을](../intrinsics/bitscanreverse-bitscanreverse64.md)참조 하세요.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // Compile this test with: /EHsc
 #include <iostream>
 #include <intrin.h>
@@ -107,7 +107,7 @@ __lzcnt(0xffffffff) = 0
 
 **Microsoft 전용 종료**
 
-이 콘텐츠 부분은 고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현
+이 콘텐츠의 일부는 Advanced 마이크로 장치, i n c .의 저작권 2007입니다. All rights reserved. 고급 마이크로 장치, i n c .의 권한으로 재현 합니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -1,41 +1,41 @@
 ---
 title: __outbyte
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __outbyte
 helpviewer_keywords:
 - out instruction
 - __outbyte intrinsic
 ms.assetid: c4cd1a34-8a02-4e37-993d-3201bc17901a
-ms.openlocfilehash: 234892369572a2ee315687f5d70533a0c8cf4b59
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18792010c45ffb648e9555ccb73f8614c3e3e6ea
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262972"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217200"
 ---
-# <a name="outbyte"></a>__outbyte
+# <a name="__outbyte"></a>__outbyte
 
 **Microsoft 전용**
 
-생성 된 `out` 명령으로 지정 된 1 바이트를 전송 하는 `Data` 로 지정 된 I/O 포트를 찾기 `Port`합니다.
+`out` 로 지정`Port`된 i/o 포트에서 `Data` 지정 된 1 바이트를 전송 하는 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __outbyte(
    unsigned short Port,
    unsigned char Data
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*포트*<br/>
-[in] 데이터를 보낼 포트입니다.
+*포트인*\
+진행 데이터를 보낼 포트입니다.
 
-*Data*<br/>
-[in] 지정된 된 포트에 보내도록 바이트입니다.
+*데이터로*\
+진행 지정 된 포트에서 전송 될 바이트입니다.
 
 ## <a name="requirements"></a>요구 사항
 

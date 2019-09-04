@@ -1,38 +1,35 @@
 ---
-title: embedded_idl
-ms.date: 10/18/2018
+title: embedded_idl import 특성
+ms.date: 08/29/2019
 f1_keywords:
 - embedded_idl
 helpviewer_keywords:
 - embedded_idl attribute
 ms.assetid: f1c1c2e8-3872-4172-8795-8d1288a20452
-ms.openlocfilehash: c46924d2757d01a934c21a70f23e6556f6a10fd3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 01948b171b20ad0a3bf3e7a41047f1fe3df185b0
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389348"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216333"
 ---
-# <a name="embeddedidl"></a>embedded_idl
+# <a name="embedded_idl-import-attribute"></a>embedded_idl import 특성
 
-**C++특정**
+**C++컴퓨터별**
 
-특성에서 생성된 코드를 유지한 상태에서 형식 라이브러리가 .tlh 파일에 작성되도록 지정합니다.
+특성 생성 코드를 유지 하 여 형식 라이브러리 `.tlh` 를 파일에 쓸지 여부를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
-embedded_idl[("param")]
-```
+> **#import** *형식 라이브러리* **embedded_idl** [ **(** { **"emitidl"**  |  **"no_emitidl"** } **)** ]
 
 ### <a name="parameters"></a>매개 변수
 
-*param*<br/>
-다음 두 값 중 하나일 수 있습니다.
+**emitidl**\
+*형식 라이브러리* 에서 가져온 형식 정보가 특성 사용 프로젝트에 대해 생성 된 IDL에 존재 합니다. 이 동작은 기본값이 며에 `embedded_idl`매개 변수를 지정 하지 않는 경우에 적용 됩니다.
 
-- **emitidl**: Typelib에서 가져온 형식 정보가 특성 사용된 프로젝트에 대해 생성 된 IDL에 표시 됩니다.  `embedded_idl`에 대한 매개 변수를 지정하지 않는 경우 이 값이 기본값으로 적용됩니다.
-
-- **no_emitidl**: Typelib에서 가져온 형식 정보가 특성 사용된 프로젝트에 대해 생성 된 IDL에 표시 되지 않습니다.
+**"no_emitidl"** \
+*형식 라이브러리* 에서 가져온 형식 정보가 특성 사용 프로젝트에 대해 생성 된 IDL에 없습니다.
 
 ## <a name="example"></a>예제
 
@@ -44,11 +41,9 @@ embedded_idl[("param")]
 #import "\school\bin\importlib.tlb" embedded_idl("no_emitidl")
 ```
 
-## <a name="remarks"></a>설명
-
-**최종 C++ 특정**
+**끝 C++ 특정**
 
 ## <a name="see-also"></a>참고자료
 
-[#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)\
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

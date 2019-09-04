@@ -1,48 +1,46 @@
 ---
-title: raw_property_prefixes
-ms.date: 10/18/2018
+title: raw_property_prefixes import 특성
+ms.date: 08/29/2019
 f1_keywords:
 - raw_property_prefixes
 helpviewer_keywords:
 - raw_property_prefixes attribute
 ms.assetid: 03a0f48c-c460-4175-a762-9f7f8d84b12f
-ms.openlocfilehash: 23250b524fdaa2181c8e28229ccec680ffdae715
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4d91470781e7c5f673fd228c24904322d1db8b3
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179804"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216045"
 ---
-# <a name="rawpropertyprefixes"></a>raw_property_prefixes
+# <a name="raw_property_prefixes-import-attribute"></a>raw_property_prefixes import 특성
 
-**C++특정**
+**C++컴퓨터별**
 
 세 가지 속성 메서드의 대체 접두사를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
-```
-raw_property_prefixes("GetPrefix","PutPrefix","PutRefPrefix")
-```
+> **#import** *형식 라이브러리* **raw_property_prefixes (** "*getprefix*" **,** "*putprefix*" **,** "*putrefprefix*" **)**
 
 ### <a name="parameters"></a>매개 변수
 
-*GetPrefix*<br/>
-에 사용할 접두사를 `propget` 메서드.
+*GetPrefix*\
+`propget` 메서드에 사용할 접두사입니다.
 
-*PutPrefix*<br/>
-에 사용할 접두사를 `propput` 메서드.
+*PutPrefix*\
+`propput` 메서드에 사용할 접두사입니다.
 
-*PutRefPrefix*<br/>
-에 사용할 접두사를 `propputref` 메서드.
+*PutRefPrefix*\
+`propputref` 메서드에 사용할 접두사입니다.
 
 ## <a name="remarks"></a>설명
 
-기본적으로 낮은 수준의 `propget`, `propput`, 및 `propputref` 메서드는 접두사를 사용 하 여 명명 된 멤버 함수에 의해 노출 됩니다 **get_** 를 **put_**, 및 **putref_** 각각. 이 접두사는 MIDL로 생성한 헤더 파일에 사용되는 이름과 호환됩니다.
+기본적으로 하위 수준 `propget`, `propput` `propputref` 및 메서드는 각각 `get_`, 및 `putref_`접두사를 `put_`사용 하 여 이라는 멤버 함수에 의해 노출 됩니다. 이 접두사는 MIDL로 생성한 헤더 파일에 사용되는 이름과 호환됩니다.
 
-**최종 C++ 특정**
+**끝 C++ 특정**
 
 ## <a name="see-also"></a>참고자료
 
-[#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)\
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

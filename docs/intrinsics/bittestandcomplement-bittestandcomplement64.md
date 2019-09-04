@@ -1,6 +1,6 @@
 ---
 title: _bittestandcomplement, _bittestandcomplement64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _bittestandcomplement64
 - _bittestandcomplement64_cpp
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - _bittestandcomplement intrinsic
 - _bittestandcomplement64 intrinsic
 ms.assetid: 53fa12dd-835e-4e5d-baec-a431c8678806
-ms.openlocfilehash: 4c0fc11ca890c64da3ff41c8679a17a733c81d4c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1dcfe86aad18c8261029c9111681e1882bc96f5
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264240"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222211"
 ---
-# <a name="bittestandcomplement-bittestandcomplement64"></a>_bittestandcomplement, _bittestandcomplement64
+# <a name="_bittestandcomplement-_bittestandcomplement64"></a>_bittestandcomplement, _bittestandcomplement64
 
 **Microsoft 전용**
 
@@ -26,7 +26,7 @@ ms.locfileid: "62264240"
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned char _bittestandcomplement(
    long *a,
    long b
@@ -37,13 +37,13 @@ unsigned char _bittestandcomplement64(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*a*<br/>
-[out에서] 검사할 메모리에 대 한 포인터입니다.
+*은*\
+[in, out] 검사할 메모리에 대 한 포인터입니다.
 
-*b*<br/>
-[in] 테스트할 비트 위치입니다.
+*b*\
+진행 테스트할 비트 위치입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -53,8 +53,8 @@ unsigned char _bittestandcomplement64(
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`_bittestandcomplement`|x86, ARM, x64|
-|`_bittestandcomplement64`|X64|
+|`_bittestandcomplement`|x86, ARM, x64, ARM64|
+|`_bittestandcomplement64`|x64, ARM64|
 
 **헤더 파일** \<intrin.h >
 
@@ -64,7 +64,7 @@ unsigned char _bittestandcomplement64(
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // bittestandcomplement.cpp
 // processor: x86, IPF, x64
 #include <stdio.h>
@@ -92,9 +92,7 @@ int main()
 }
 ```
 
-## <a name="sample-output"></a>샘플 출력
-
-```
+```Output
 Initial value: 1
 Testing bit 1
 Value changed to 3, Result: 0

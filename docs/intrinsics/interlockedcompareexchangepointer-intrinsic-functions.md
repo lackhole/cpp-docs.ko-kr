@@ -1,6 +1,6 @@
 ---
-title: _InterlockedCompareExchangePointer Intrinsic Functions
-ms.date: 11/04/2016
+title: _InterlockedCompareExchangePointer 내장 함수
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedCompareExchangePointer_HLERelease
 - _InterlockedCompareExchangePointer_rel
@@ -24,14 +24,14 @@ helpviewer_keywords:
 - _InterlockedCompareExchangePointer_nf intrinsic
 - _InterlockedCompareExchangePointer_np intrinsic
 ms.assetid: 97fde59d-2bf9-42aa-a0fe-a5b6befdd44b
-ms.openlocfilehash: 7b8ba4fe6224292d0160f859aeb630fc17c2d992
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c0a0083c19df51d2d2eccb7a7bbf6521303c1f85
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509434"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222040"
 ---
-# <a name="_interlockedcompareexchangepointer-intrinsic-functions"></a>_InterlockedCompareExchangePointer Intrinsic Functions
+# <a name="_interlockedcompareexchangepointer-intrinsic-functions"></a>_InterlockedCompareExchangePointer 내장 함수
 
 **Microsoft 전용**
 
@@ -39,7 +39,7 @@ ms.locfileid: "69509434"
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void * _InterlockedCompareExchangePointer (
    void * volatile * Destination,
    void * Exchange,
@@ -77,15 +77,15 @@ long _InterlockedCompareExchangePointer_rel (
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
+*대상이*\
 [in, out] 대상 값에 대 한 포인터에 대 한 포인터입니다. 부호는 무시됩니다.
 
-*Exchange*<br/>
+*교환의*\
 진행 교환 포인터입니다. 부호는 무시됩니다.
 
-*비교 피연산자*<br/>
+*비교 피연산자*\
 진행 대상과 비교할 포인터입니다. 부호는 무시됩니다.
 
 ## <a name="return-value"></a>반환 값
@@ -96,8 +96,8 @@ long _InterlockedCompareExchangePointer_rel (
 
 |내장 함수|아키텍처|헤더|
 |---------------|------------------|------------|
-|`_InterlockedCompareExchangePointer`|x86, ARM, x64|\<intrin.h>|
-|`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM|\<iiintrin.h>|
+|`_InterlockedCompareExchangePointer`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM, ARM64|\<iiintrin.h>|
 |`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, x64|\<immintrin.h>|
 
 ## <a name="remarks"></a>설명
@@ -108,11 +108,11 @@ long _InterlockedCompareExchangePointer_rel (
 
 를 사용 `_InterlockedCompareExchangePointer`하는 방법에 대 한 예제는 [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md)를 참조 하세요.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 ARM 내장 함수는 메모리 장벽으로 작동하지 않습니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf` ("No fence") 접미사가 포함 된 ARM 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
 
 `_np`("no prefetch"의 약어) 접미사가 포함된 내장 함수는 컴파일러가 가능한 프리페치 연산을 삽입하지 못하도록 차단합니다.
 
-HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcquire` 및 `_HLERelease` 접미사가 포함된 내장 함수는 하드웨어에서 잠금 쓰기 단계를 제거하여 성능을 향상시킬 수 있는 힌트를 프로세서에 포함합니다. HLE를 지원하지 않는 플랫폼에서 이러한 내장 함수를 호출하면 힌트는 무시됩니다.
+HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcquire` 및 `_HLERelease` 접미사가 포함된 내장 함수는 하드웨어에서 잠금 쓰기 단계를 제거하여 성능을 향상시킬 수 있는 힌트를 프로세서에 포함합니다. HLE을 지원 하지 않는 플랫폼에서 이러한 내장 함수를 호출 하면 힌트가 무시 됩니다.
 
 이러한 루틴은 내장 함수로만 사용할 수 있습니다.
 
@@ -120,5 +120,5 @@ HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcq
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [C++ 키워드](../cpp/keywords-cpp.md)

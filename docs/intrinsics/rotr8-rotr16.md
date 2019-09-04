@@ -1,6 +1,6 @@
 ---
 title: _rotr8, _rotr16
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _rotr16
 - _rotr8
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - _rotr8 intrinsic
 - _rotr16 intrinsic
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff
-ms.openlocfilehash: 27c3a9d914d04ecdffb7fa74dc3c8f79a442445c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 66598a4e6cdc26fa60a87cd32abaa34319ebe6cc
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390401"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218049"
 ---
-# <a name="rotr8-rotr16"></a>_rotr8, _rotr16
+# <a name="_rotr8-_rotr16"></a>_rotr8, _rotr16
 
 **Microsoft 전용**
 
@@ -23,7 +23,7 @@ ms.locfileid: "62390401"
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned char _rotr8(
    unsigned char value,
    unsigned char shift
@@ -34,13 +34,13 @@ unsigned short _rotr16(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*값*<br/>
-[in] 회전 값입니다.
+*value*\
+진행 회전할 값입니다.
 
-*shift*<br/>
-[in] 회전할 비트의 수입니다.
+*교대조*\
+진행 회전할 비트 수입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -50,18 +50,18 @@ unsigned short _rotr16(
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`_rotr8`|x86, ARM, x64|
-|`_rotr16`|x86, ARM, x64|
+|`_rotr8`|x86, ARM, x64, ARM64|
+|`_rotr16`|x86, ARM, x64, ARM64|
 
 **헤더 파일** \<intrin.h >
 
 ## <a name="remarks"></a>설명
 
-오른쪽 시프트 작업과는 달리 오른쪽 회전을 실행할 때는 최소값에 속하는 하위 비트가 상위 비트 위치로 이동됩니다.
+오른쪽 시프트 작업과 달리, 오른쪽 회전을 실행 하는 경우 낮은 끝을 벗어나는 하위 비트가 상위 비트 위치로 이동 됩니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // rotr.cpp
 #include <stdio.h>
 #include <intrin.h>
@@ -103,5 +103,5 @@ Rotating unsigned short 0x12 right by 10 bits gives 0x480
 
 ## <a name="see-also"></a>참고자료
 
-[_rotl8, _rotl16](../intrinsics/rotl8-rotl16.md)<br/>
+[_rotl8, _rotl16](../intrinsics/rotl8-rotl16.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

@@ -1,38 +1,37 @@
 ---
 title: __vmx_vmclear
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __vmx_vmclear
 helpviewer_keywords:
 - VMCLEAR instruction
 - __vmx_vmclear intrinsic
 ms.assetid: e3eb98e4-50fc-4c93-9bac-340fd1f0a466
-ms.openlocfilehash: 17e3e5c91a58894b25fc6b2a72f7d0056fa88119
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b5807402cf0a9d8a9ef1ded1d112d22a801633e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390063"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219532"
 ---
-# <a name="vmxvmclear"></a>__vmx_vmclear
+# <a name="__vmx_vmclear"></a>__vmx_vmclear
 
 **Microsoft 전용**
 
-지정 된 가상 머신 제어 구조 (VMCS)를 초기화 하 고 시작 상태로 설정 `Clear`합니다.
+지정 된 VMCS (가상 컴퓨터 제어 구조)를 초기화 하 고 해당 시작 상태 `Clear`를로 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned char __vmx_vmclear(
    unsigned __int64 *VmcsPhysicalAddress
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
-|---------------|-----------------|
-|*VmcsPhysicalAddress*|[in] 제거할 VMCS의 실제 주소를 포함 하는 64 비트 메모리 위치에 대 한 포인터입니다.|
+*VmcsPhysicalAddress*\
+진행 지울 VMCS의 실제 주소를 포함 하는 64 비트 메모리 위치에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -44,9 +43,9 @@ unsigned char __vmx_vmclear(
 
 ## <a name="remarks"></a>설명
 
-응용 프로그램이 사용 하 여 VM 시작 작업을 수행할 수는 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 하거나 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 함수입니다. 합니다 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 함수는 시작 상태가 인 vmcs 에서만 사용할 수 있습니다 `Clear`, 및 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 함수는 시작 상태가 인 vmcs 에서만 사용할 수 있습니다 `Launched`합니다. 결과적으로 사용 합니다 [__vmx_vmclear](../intrinsics/vmx-vmclear.md) 에 VMCS의 시작 상태를 설정 하는 함수 `Clear`합니다. 사용 된 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 첫 번째 VM 시작 작업에 대 한 함수 및 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 이후 VM 시작 작업에 대 한 함수입니다.
+응용 프로그램은 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 또는 [__vmx_vmlaunch](../intrinsics/vmx-vmresume.md) 함수를 사용 하 여 VM 입력 작업을 수행할 수 있습니다. [__Vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 함수는 시작 상태가 `Clear`인 vmcs 에서만 사용할 수 있으며, [__vmx_vmlaunch](../intrinsics/vmx-vmresume.md) 함수는 시작 상태가 인 `Launched`vmcs 에서만 사용할 수 있습니다. 따라서 [__vmx_vmclear](../intrinsics/vmx-vmclear.md) 함수를 사용 하 여 vmcs의 시작 상태를로 `Clear`설정 합니다. 첫 번째 VM에 대 한 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 함수를 사용 하 고, 후속 vm 입력 작업에 [__vmx_vmlaunch](../intrinsics/vmx-vmresume.md) 함수를 사용 합니다.
 
-`__vmx_vmclear` 함수는 `VMCLEAR` 컴퓨터 명령에 해당합니다. 이 함수는 게스트 운영 체제 및 해당 애플리케이션과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002를 문서화 합니다 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
+`__vmx_vmclear` 함수는 `VMCLEAR` 컴퓨터 명령에 해당합니다. 이 함수는 게스트 운영 체제 및 해당 애플리케이션과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용을 보려면 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트에서 "IA-32 Intel 아키텍처용 Intel 가상화 기술 사양" 문서 번호 C97063-002 문서를 검색 하십시오.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -60,6 +59,6 @@ unsigned char __vmx_vmclear(
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
-[__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
+[__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)\
 [__vmx_vmresume](../intrinsics/vmx-vmresume.md)

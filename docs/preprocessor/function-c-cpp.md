@@ -1,6 +1,6 @@
 ---
-title: 함수 (C/C++)
-ms.date: 11/04/2016
+title: 함수 pragma
+ms.date: 08/29/2019
 f1_keywords:
 - function_CPP
 - vc-pragma.function
@@ -8,27 +8,26 @@ helpviewer_keywords:
 - function pragma
 - pragmas, function
 ms.assetid: cbd1bd60-fabf-4b5a-9c3d-2d9f4b871365
-ms.openlocfilehash: c57ff2053b3c1fd52474c7eb0dd598641632f789
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f99f3c878789a6c47fdb0d48e0a8690d65fa8062
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409930"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220131"
 ---
-# <a name="function-cc"></a>함수 (C/C++)
-pragma의 인수 목록에서 지정된 함수에 대한 호출이 생성되도록 지정합니다.
+# <a name="function-pragma"></a>함수 pragma
+
+컴파일러가이를 인라인 하는 대신 pragma의 인수 목록에 지정 된 함수에 대 한 호출을 생성 하도록 컴파일러에 지시 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
-#pragma function( function1 [, function2, ...] )
-```
+> **#pragma 함수 (** *function1* [ **,** *function2* ...] **)**
 
 ## <a name="remarks"></a>설명
 
-사용 하는 경우는 `intrinsic` pragma (또는 /Oi) 내장 함수 (내장 함수는 함수 호출이 아니라 인라인 코드로 생성 됨)를 생성 하도록 컴파일러에 게 사용할 수 있습니다 합니다 **함수** pragma를 명시적으로 강제 적용을 함수 호출입니다. function pragma가 표시되면 지정된 내장 함수를 포함하는 첫 번째 함수 정의에서 적용되며, 효과의 모양에 또는 소스 파일의 끝에 계속는 `intrinsic` pragma 동일한 내장 함수를 지정 합니다. 합니다 **함수** pragma는 함수의 외부 에서만 사용할 수 있습니다-전역 수준입니다.
+내장 함수는 일반적으로 함수 호출이 아닌 인라인 코드로 생성 됩니다. 내장 [pragma](intrinsic.md) 또는 [/oi](../build/reference/oi-generate-intrinsic-functions.md) 컴파일러 옵션을 사용 하 여 컴파일러에 내장 함수를 생성 하도록 지시 하는 경우 **함수** pragma를 사용 하 여 함수 호출을 명시적으로 적용할 수 있습니다. **함수** pragma가 표시 되 면 지정 된 내장 함수를 포함 하는 첫 번째 함수 정의에서 적용 됩니다. 소스 파일의 끝 이나 동일한 내장 함수를 지정 하는 `intrinsic` pragma의 모양에 대 한 효과를 계속 합니다. 전역 수준의 함수 외부 에서만 **함수** pragma를 사용할 수 있습니다.
 
-내장 형식을 있는 함수 목록에 대해서 [#pragma 내장](../preprocessor/intrinsic.md)합니다.
+내장 형식이 있는 함수 목록은 [내장 pragma](intrinsic.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
@@ -84,4 +83,4 @@ str is '!!!!!!!!!!!!!!!'
 
 ## <a name="see-also"></a>참고자료
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

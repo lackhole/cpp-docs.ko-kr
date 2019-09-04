@@ -1,6 +1,6 @@
 ---
-title: _InterlockedIncrement Intrinsic Functions
-ms.date: 12/17/2018
+title: _InterlockedIncrement 내장 함수
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedIncrement_acq
 - _InterlockedIncrement16_rel_cpp
@@ -44,14 +44,14 @@ helpviewer_keywords:
 - _InterlockedIncrement_acq intrinsic
 - InterlockedIncrement intrinsic
 ms.assetid: 37700615-f372-438b-bcef-d76e11839482
-ms.openlocfilehash: 58c71c577e3d87ca72836134a4f895f32170fe7f
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 4dd9ae9ba5454b0afefa332689d94fa3619a07a6
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509348"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221991"
 ---
-# <a name="_interlockedincrement-intrinsic-functions"></a>_InterlockedIncrement Intrinsic Functions
+# <a name="_interlockedincrement-intrinsic-functions"></a>_InterlockedIncrement 내장 함수
 
 **Microsoft 전용**
 
@@ -59,7 +59,7 @@ Win32 Windows SDK [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-inter
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 long _InterlockedIncrement(
    long * lpAddend
 );
@@ -98,9 +98,9 @@ __int64 _InterlockedIncrement64_nf(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*lpAddend*<br/>
+*lpAddend*\
 [in, out] 증가 시킬 변수에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -111,8 +111,9 @@ __int64 _InterlockedIncrement64_nf(
 
 |내장 함수|아키텍처|헤더|
 |---------------|------------------|------------|
-|`_InterlockedIncrement`, `_InterlockedIncrement16`, `_InterlockedIncrement64`|x86, ARM, x64|\<intrin.h>|
-|`_InterlockedIncrement_acq`, `_InterlockedIncrement_rel`, `_InterlockedIncrement_nf`, `_InterlockedIncrement16_acq`, `_InterlockedIncrement16_rel`, `_InterlockedIncrement16_nf`, `_InterlockedIncrement64_acq`, `_InterlockedIncrement64_rel`, `_InterlockedIncrement64_nf`|ARM|\<intrin.h>|
+|`_InterlockedIncrement`, `_InterlockedIncrement16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedIncrement64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedIncrement_acq`, `_InterlockedIncrement_rel`, `_InterlockedIncrement_nf`, `_InterlockedIncrement16_acq`, `_InterlockedIncrement16_rel`, `_InterlockedIncrement16_nf`, `_InterlockedIncrement64_acq`, `_InterlockedIncrement64_rel`, `_InterlockedIncrement64_nf`|ARM, ARM64|\<intrin.h>|
 
 ## <a name="remarks"></a>설명
 
@@ -120,7 +121,7 @@ __int64 _InterlockedIncrement64_nf(
 
 `_InterlockedIncrement` 함수는 32비트 정수 값에 대해 작동하는 반면 `_InterlockedIncrement16`은 16비트 정수 값에 대해, `_InterlockedIncrement64`는 64비트 정수 값에 대해 작동합니다.
 
-ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
+ARM 플랫폼에서는 임계 영역의 시작 및 끝과 같은 위치에서 의미 체계를 획득하고 해제하려면 `_acq` 및 `_rel` 접미사가 포함된 내장 함수를 사용합니다. `_nf` ("No fence") 접미사가 포함 된 내장 함수는 메모리 장벽으로 작동 하지 않습니다.
 
 `lpAddend` 매개 변수가 가리키는 변수는 32비트 경계에 정렬되어야 합니다. 그렇지 않으면 다중 프로세서 x86 시스템과 x86이 아닌 시스템에서 이 함수가 실패합니다. 자세한 내용은 [align](../cpp/align-cpp.md)을 참조 하십시오.
 
@@ -136,6 +137,6 @@ Win32 함수는 `Wdm.h` 또는 `Ntddk.h`에서 선언됩니다.
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
+[키워드](../cpp/keywords-cpp.md)\
 [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
