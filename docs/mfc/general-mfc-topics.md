@@ -53,7 +53,7 @@ MFC 프레임워크는 Windows 프로그램 전문가 작업 기반 위에서 �
 
 MFC 참조 문서의 개요를 보려면 [Microsoft Foundation Class 라이브러리](../mfc/mfc-desktop-applications.md)를 참조합니다.
 
-ATL에 대한 정보를 참조 하세요 [액티브 템플릿 라이브러리 참조](../atl/atl-class-overview.md)합니다.
+ATL에 대한 정보는 [액티브 템플릿 라이브러리 참조](../atl/atl-class-overview.md)를 참조합니다.
 
 ## <a name="see-also"></a>참고자료
 
