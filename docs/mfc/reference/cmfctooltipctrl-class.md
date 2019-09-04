@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CMFCToolTipCtrl [MFC], SetLocation
 - CMFCToolTipCtrl [MFC], SetParams
 ms.assetid: 9fbfcfb1-a8ab-417f-ae29-9a9ca85ee58f
-ms.openlocfilehash: aaf9d9570906b7886d8ec78575c39db5d62099f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5376fd21f84411c86ade564d7c76d073ccb909a6
+ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388308"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70273686"
 ---
 # <a name="cmfctooltipctrl-class"></a>CMFCToolTipCtrl 클래스
 
@@ -61,7 +61,7 @@ class CMFCToolTipCtrl : public CToolTipCtrl
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCToolTipCtrl::GetIconSize](#geticonsize)|도구 설명에 아이콘 크기를 반환합니다.|
 |[CMFCToolTipCtrl::GetParams](#getparams)|도구 설명의 표시 설정을 반환합니다.|
@@ -79,42 +79,31 @@ class CMFCToolTipCtrl : public CToolTipCtrl
 
 ## <a name="remarks"></a>설명
 
-사용 하 여 `CMFCToolTipCtrl`, `CMFCToolTipInfo`, 및 [CTooltipManager 클래스](../../mfc/reference/ctooltipmanager-class.md) 응용 프로그램에서 사용자 지정된 도구 설명을 구현 하는 개체입니다.
+, `CMFCToolTipCtrl`및 `CMFCToolTipInfo` [CTooltipManager 클래스](../../mfc/reference/ctooltipmanager-class.md) 개체를 함께 사용 하 여 응용 프로그램에 사용자 지정 도구 설명을 구현 합니다.
 
 예를 들어 풍선 스타일의 도구 설명을 사용하려면 다음 단계를 수행합니다.
 
-1. 사용 된 [CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md) 응용 프로그램에서 도구 설명 관리자를 초기화 하는 방법입니다.
+1. [CWinAppEx Class](../../mfc/reference/cwinappex-class.md) 메서드를 사용 하 여 응용 프로그램에서 도구 설명 관리자를 초기화 합니다.
 
 2. `CMFCToolTipInfo` 구조체를 만들어 원하는 시각적 스타일을 지정합니다.
 
 ```
 CMFCToolTipInfo params;
-    params.m_bBoldLabel = FALSE;
-    params.m_bDrawDescription = FALSE;
-    params.m_bDrawIcon = FALSE;
-    params.m_bRoundedCorners = TRUE;
-    params.m_bDrawSeparator = FALSE;
-    if (m_bCustomColors)
+params.m_bBoldLabel = FALSE;
+params.m_bDrawDescription = FALSE;
+params.m_bDrawIcon = FALSE;
+params.m_bRoundedCorners = TRUE;
+params.m_bDrawSeparator = FALSE;
+if (m_bCustomColors)
 {
-    params.m_clrFill = RGB (255,
-    255,
-    255);
-
-    params.m_clrFillGradient = RGB (228,
-    228,
-    240);
-
-    params.m_clrText = RGB (61,
-    83,
-    80);
-
-    params.m_clrBorder = RGB (144,
-    149,
-    168);
+    params.m_clrFill = RGB (255, 255, 255);
+    params.m_clrFillGradient = RGB (228, 228, 240);
+    params.m_clrText = RGB (61, 83, 80);
+    params.m_clrBorder = RGB (144, 149, 168);
 
 }
 ```
-3. 사용 된 [ctooltipmanager:: Settooltipparams](../../mfc/reference/ctooltipmanager-class.md#settooltipparams) 에 정의 된 스타일을 사용 하 여 응용 프로그램에서 모든 도구 설명에 대 한 시각적 스타일을 설정 하는 방법의 `CMFCToolTipInfo` 개체:
+3. [CTooltipManager:: SetTooltipParams](../../mfc/reference/ctooltipmanager-class.md#settooltipparams) 메서드를 사용 하 여 `CMFCToolTipInfo` 개체에 정의 된 스타일을 사용 하 여 응용 프로그램의 모든 도구 설명에 대 한 비주얼 스타일을 설정 합니다.
 
 ```
 theApp.GetTooltipManager ()->SetTooltipParams (AFX_TOOLTIP_TYPE_ALL,
@@ -154,7 +143,7 @@ theApp.GetTooltipManager ()->SetTooltipParams (AFX_TOOLTIP_TYPE_ALL,
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxtooltipctrl.h
+**헤더:** afxtooltipctrl
 
 ##  <a name="cmfctooltipctrl"></a>  CMFCToolTipCtrl::CMFCToolTipCtrl
 
@@ -178,7 +167,7 @@ virtual CSize GetIconSize();
 
 ### <a name="return-value"></a>반환 값
 
-픽셀에서 아이콘의 크기입니다.
+아이콘의 크기 (픽셀)입니다.
 
 ##  <a name="getparams"></a>  CMFCToolTipCtrl::GetParams
 
@@ -190,7 +179,7 @@ const CMFCToolTipInfo& GetParams() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 저장 되는 현재 도구 설명 표시 설정 된 [CMFCToolTipInfo 클래스](../../mfc/reference/cmfctooltipinfo-class.md) 개체입니다.
+[CMFCToolTipInfo 클래스](../../mfc/reference/cmfctooltipinfo-class.md) 개체에 저장 된 현재 도구 설명 표시 설정입니다.
 
 ##  <a name="ondrawborder"></a>  CMFCToolTipCtrl::OnDrawBorder
 
@@ -206,17 +195,17 @@ virtual void OnDrawBorder(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-[in] 장치 컨텍스트에 대 한 포인터입니다.
+진행 장치 컨텍스트에 대 한 포인터입니다.
 
 *rect*<br/>
-[in] 도구 설명의 경계 사각형입니다.
+진행 도구 설명의 경계 사각형입니다.
 
 *clrLine*<br/>
-[in] 테두리 색입니다.
+진행 테두리 색입니다.
 
 ### <a name="remarks"></a>설명
 
-도구 설명 테두리의 모양을 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.
+파생 클래스에서이 메서드를 재정의 하 여 도구 설명 테두리의 모양을 사용자 지정 합니다.
 
 ##  <a name="ondrawdescription"></a>  CMFCToolTipCtrl::OnDrawDescription
 
@@ -250,10 +239,10 @@ virtual BOOL OnDrawIcon(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-[in] 장치 컨텍스트에 대 한 포인터입니다.
+진행 장치 컨텍스트에 대 한 포인터입니다.
 
 *rectImage*<br/>
-[in] 아이콘의 좌표입니다.
+진행 아이콘의 좌표입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -261,7 +250,7 @@ virtual BOOL OnDrawIcon(
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 아이콘을 표시 하려면 파생된 클래스에서이 메서드를 재정의 합니다. 재정의 해야 [CMFCToolTipCtrl::GetIconSize](#geticonsize) 도구 설명 텍스트 및 설명의 레이아웃을 올바르게 계산에 사용할 수 있도록 합니다.
+사용자 지정 아이콘을 표시 하려면 파생 클래스에서이 메서드를 재정의 합니다. 또한 [CMFCToolTipCtrl:: GetIconSize](#geticonsize) 를 재정의 하 여 도구 설명에서 텍스트 및 설명의 레이아웃을 올바르게 계산 하도록 해야 합니다.
 
 ##  <a name="ondrawlabel"></a>  CMFCToolTipCtrl::OnDrawLabel
 
@@ -277,21 +266,21 @@ virtual CSize OnDrawLabel(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-[in] 장치 컨텍스트에 대 한 포인터입니다.
+진행 장치 컨텍스트에 대 한 포인터입니다.
 
 *rect*<br/>
-[in] 레이블 영역의 경계 사각형입니다.
+진행 레이블 영역의 경계 사각형입니다.
 
 *bCalcOnly*<br/>
-[in] True 이면 레이블을 그려지지 않습니다.
+진행 TRUE 이면 레이블이 그려지지 않습니다.
 
 ### <a name="return-value"></a>반환 값
 
-픽셀에서 레이블의 크기입니다.
+레이블의 크기 (픽셀)입니다.
 
 ### <a name="remarks"></a>설명
 
-도구 설명 레이블의 모양을 사용자 지정 하려는 경우에 파생된 클래스에서이 메서드를 재정의 합니다.
+도구 설명 레이블의 모양을 사용자 지정 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="ondrawseparator"></a>  CMFCToolTipCtrl::OnDrawSeparator
 
@@ -308,22 +297,22 @@ virtual void OnDrawSeparator(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-[in] 장치 컨텍스트에 대 한 포인터입니다.
+진행 장치 컨텍스트에 대 한 포인터입니다.
 
 *x1*<br/>
-[in] 가로 좌표 구분선의 왼쪽된 끝입니다.
+진행 구분 기호의 왼쪽 끝에 대 한 가로 좌표입니다.
 
 *x2*<br/>
-[in] 가로 좌표는 오른쪽 끝 구분 기호입니다.
+진행 구분 기호 오른쪽 끝의 가로 좌표입니다.
 
 *Y*<br/>
-[in] 세로 좌표는 구분 기호입니다.
+진행 구분 기호의 세로 좌표입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 구현은 지점에서 하는 선을 그려 (x1, y) 지점 (x2, y).
+기본 구현에서는 점 (x1, y)에서 지점 (x2, y)으로 줄을 그립니다.
 
-구분 기호의 표시를 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.
+구분 기호 모양을 사용자 지정 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="onfillbackground"></a>  CMFCToolTipCtrl::OnFillBackground
 
@@ -340,22 +329,22 @@ virtual void OnFillBackground(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-[in] 장치 컨텍스트에 대 한 포인터입니다.
+진행 장치 컨텍스트에 대 한 포인터입니다.
 
 *rect*<br/>
-[in] 채울 영역을의 경계 사각형을 지정 합니다.
+진행 채울 영역의 경계 사각형을 지정 합니다.
 
 *clrText*<br/>
-[in] 도구 설명 전경색입니다.
+진행 도구 설명 전경색입니다.
 
 *clrLine*<br/>
-[in] 레이블 및 설명 간의 구분 기호 선과 테두리의 색입니다.
+진행 레이블과 설명 사이에 있는 테두리와 구분 기호 선의 색입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 구현으로 지정 된 사각형이 채워집니다 *rect* 색 또는 가장 최근 호출에 의해 지정 된 패턴을 사용 하 여 [CMFCToolTipCtrl::SetParams](#setparams)합니다.
+기본 구현은 *rect* 로 지정 된 사각형을 [CMFCToolTipCtrl:: setparams](#setparams)에 대 한 가장 최근의 호출로 지정 된 색 또는 패턴으로 채웁니다.
 
-도구 설명의 모양을 사용자 지정 하려는 경우에 파생된 클래스에서이 메서드를 재정의 합니다.
+도구 설명의 모양을 사용자 지정 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="setdescription"></a>  CMFCToolTipCtrl::SetDescription
 
@@ -368,11 +357,11 @@ virtual void SetDescription(const CString strDesrciption);
 ### <a name="parameters"></a>매개 변수
 
 *strDesrciption*<br/>
-[in] 설명 텍스트입니다.
+진행 설명 텍스트입니다.
 
 ### <a name="remarks"></a>설명
 
-설명 텍스트는 구분 기호에서 도구 설명에 표시 됩니다.
+설명 텍스트가 도구 설명의 구분 기호 아래에 표시 됩니다.
 
 ##  <a name="setfixedwidth"></a>  CMFCToolTipCtrl::SetFixedWidth
 
@@ -415,7 +404,7 @@ void SetLocation(CPoint pt);
 
 ##  <a name="setparams"></a>  CMFCToolTipCtrl::SetParams
 
-도구 설명의 시각적 모양을 사용 하 여 지정 된 [CMFCToolTipInfo 클래스](../../mfc/reference/cmfctooltipinfo-class.md) 개체입니다.
+[CMFCToolTipInfo 클래스](../../mfc/reference/cmfctooltipinfo-class.md) 개체를 사용 하 여 도구 설명의 시각적 모양을 지정 합니다.
 
 ```
 void SetParams(CMFCToolTipInfo* pParams);
@@ -424,11 +413,11 @@ void SetParams(CMFCToolTipInfo* pParams);
 ### <a name="parameters"></a>매개 변수
 
 *pParams*<br/>
-[in] 에 대 한 포인터를 [CMFCToolTipInfo 클래스](../../mfc/reference/cmfctooltipinfo-class.md) 표시 매개 변수를 포함 하는 개체입니다.
+진행 표시 매개 변수를 포함 하는 [CMFCToolTipInfo 클래스](../../mfc/reference/cmfctooltipinfo-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-도구 설명이 표시 됩니다, 색을 사용 하 여 그리기는 비주얼 스타일을 때마다 *pParams* 지정 합니다. 변수의 *pParams* 보호 된 멤버에 저장 됩니다 `m_Params`를 재정의 하는 파생된 클래스에서 액세스할 수 있는 [CMFCToolTipCtrl::OnDrawBorder](#ondrawborder), [CMFCToolTipCtrl: : OnDrawIcon](#ondrawicon)하십시오 [CMFCToolTipCtrl::OnDrawLabel](#ondrawlabel)를 [CMFCToolTipCtrl::OnDrawSeparator](#ondrawseparator), 또는 [CMFCToolTipCtrl::OnFillBackground](#onfillbackground)지정 된 모양을 유지할 수 있습니다.
+도구 설명이 표시 될 때마다 *Pparams* 가 지정 하는 색 및 비주얼 스타일을 사용 하 여 그려집니다. *Pparams* 의 값은 `m_Params` [CMFCToolTipCtrl:: ondrawborder](#ondrawborder), [CMFCToolTipCtrl:: ondrawborder](#ondrawicon), [CMFCToolTipCtrl:: ondrawborder을 재정의 하는 파생 클래스에서 액세스할 수 있는 protected 멤버에 저장 됩니다. ](#ondrawlabel), [CMFCToolTipCtrl:: OnDrawSeparator](#ondrawseparator)또는 [CMFCToolTipCtrl:: ondrawseparator](#onfillbackground) 를 지정 하 여 지정 된 모양을 유지 합니다.
 
 ## <a name="see-also"></a>참고자료
 

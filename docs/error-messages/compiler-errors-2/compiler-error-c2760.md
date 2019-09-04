@@ -6,22 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C2760
 ms.assetid: 585757fd-d519-43f3-94e5-50316ac8b90b
-ms.openlocfilehash: 24c33d90c0f91aa3c4b01142902afc4333c1c732
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5680de2fe0364d7cdc5e7ef017bd298423ea4c21
+ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257792"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70273662"
 ---
 # <a name="compiler-error-c2760"></a>컴파일러 오류 C2760
 
-구문 오류: 'name1'가 필요 하지 'name2'
+> 구문 오류 *: ' n*u l l '이 (가) '*name2*'가 아닙니다.
 
-캐스팅 연산자에 잘못 된 연산자를 사용 하 여 사용 됩니다.
+## <a name="remarks"></a>설명
 
-다음 샘플에서는 C2760 오류가 생성 됩니다.
+여러 가지 방법으로이 오류를 발생 시킬 수 있습니다. 일반적으로는 컴파일러에서 의미가 없는 토큰 시퀀스로 인해 발생 합니다.
 
-```
+## <a name="example"></a>예제
+
+이 샘플에서는 잘못 된 연산자와 함께 캐스팅 연산자를 사용 합니다.
+
+```cpp
 // C2760.cpp
 class B {};
 class D : public B {};

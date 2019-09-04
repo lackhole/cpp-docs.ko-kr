@@ -10,16 +10,16 @@ helpviewer_keywords:
 - modules [C++], import
 - modules [C++], export
 description: Import 문을 사용 하 여 지정 된 모듈에 정의 된 형식 및 함수에 액세스할 수 있습니다.
-ms.openlocfilehash: fbb9c45ec816c859edb4df38ad67dc7778247e87
-ms.sourcegitcommit: 7b039b5f32f6c59be6c6bb1cffafd69c3bfadd35
+ms.openlocfilehash: ee1d50a76a3304359c0771aa0174968439f5faa4
+ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537789"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70273621"
 ---
 # <a name="module-import-export"></a>모듈, 가져오기, 내보내기
 
-**모듈**, **가져오기**및 **내보내기** 키워드는 `/experimental:modules` c + + 20에서 사용할 수 있으며와 `/std:c++latest`함께 컴파일러 스위치가 필요 합니다. 자세한 내용은 [ C++의 모듈 개요 ](modules-cpp.md)를 참조 하세요.
+**모듈**, **가져오기**및 **내보내기** 키워드는 c + + 20에서 사용할 수 있으며/std: [module](../build/reference/experimental-module.md) 컴파일러 스위치와 함께 [/std: C + + 최신](../build/reference/std-specify-language-standard-version.md)이 필요 합니다. 자세한 내용은 [ C++의 모듈 개요 ](modules-cpp.md)를 참조 하세요.
 
 ## <a name="module"></a>모듈(module)
 
@@ -86,5 +86,6 @@ class Baz
 {...};
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
+
 [모듈 개요C++](modules-cpp.md)
