@@ -1,6 +1,6 @@
 ---
-title: optimize
-ms.date: 11/04/2016
+title: 최적화 pragma
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.optimize
 - optimize_CPP
@@ -8,57 +8,53 @@ helpviewer_keywords:
 - pragmas, optimize
 - optimize pragma
 ms.assetid: cb13c1cc-186a-45bc-bee7-95a8de7381cc
-ms.openlocfilehash: 9f5240fc59f59a71ddb3d18b67fadf3463a0d1ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6d7b99b7a72c133d56a209cf42fa9ef670a4a7f9
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328174"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220508"
 ---
-# <a name="optimize"></a>optimize
+# <a name="optimize-pragma"></a>최적화 pragma
 
-함수별로 수행할 최적화를 지정합니다.
+함수 별로 최적화를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
-#pragma optimize( "[optimization-list]", {on | off} )
-```
+> **#pragma optimize ("** [ *최적화-목록* ] **",** { **on** | **off** } **)**
 
 ## <a name="remarks"></a>설명
 
-합니다 **최적화** pragma는 함수 외부에 나타나야 하며, pragma가 표시 한 후 정의 된 첫 번째 함수에 적용 됩니다. *에* 및 *해제* 인수에 지정 된 옵션을 설정 합니다 *최적화 목록* 또는 해제 합니다.
+**Optimize** pragma는 함수 외부에 표시 되어야 합니다. Pragma가 표시 된 후에 정의 된 첫 번째 함수에 적용 됩니다. **On** 및 **off** 인수는 *최적화 목록* 에 지정 된 옵션을 on 또는 off로 설정 합니다.
 
-합니다 *최적화 목록* 다음 표에 나와 있는 매개 변수를 0 개 이상의 될 수 있습니다.
+*최적화 목록은* 다음 표에 표시 된 0 개 이상의 매개 변수를 사용할 수 있습니다.
 
 ### <a name="parameters-of-the-optimize-pragma"></a>optimize Pragma의 매개 변수
 
-|매개 변수|최적화 형식|
+| 매개 변수 | 최적화 형식 |
 |--------------------|--------------------------|
-|*g*|전역 최적화를 활성화합니다.|
-|*s* 또는 *t*|짧거나 빠른 기계어 코드 시퀀스를 지정합니다.|
-|*y*|프로그램 스택에서 프레임 포인터를 생성합니다.|
+| **g** | 전역 최적화를 활성화합니다. |
+| **s** 또는 **t** | 짧거나 빠른 기계어 코드 시퀀스를 지정합니다. |
+| **y** | 프로그램 스택에서 프레임 포인터를 생성합니다. |
 
-이 동일한 문자 사용 합니다 [/O](../build/reference/o-options-optimize-code.md) 컴파일러 옵션입니다. 예를 들어 다음 pragma는 `/Os` 컴파일러 옵션과 동일합니다.
+이러한 매개 변수는 [/o](../build/reference/o-options-optimize-code.md) 컴파일러 옵션과 함께 사용 되는 동일한 문자입니다. 예를 들어 다음 pragma는 `/Os` 컴파일러 옵션과 동일합니다.
 
+```cpp
+#pragma optimize( "s", on )
 ```
-#pragma optimize( "ts", on )
-```
 
-사용 하는 **최적화** pragma를 빈 문자열 (**""**)는 특별 한 형태의 지시문:
+**Optimize** pragma를 빈 문자열 ( **""** )과 함께 사용 하는 것은 특별 한 형태의 지시문입니다.
 
-사용 하는 경우는 *해제* 매개 변수를 모든 최적화 *g*를 *s*를 *t*, 및 *y*, 해제 합니다.
+**Off** 매개 변수를 사용 하는 경우 모든 최적화, **g**, **s**, **t**및 **y**가 해제 됩니다.
 
-사용 하는 경우는 *에* 매개 변수를 다시 설정 최적화를 사용 하 여 지정한 것을 [/O](../build/reference/o-options-optimize-code.md) 컴파일러 옵션입니다.
+On 매개 변수를 사용 하는 경우 **에** 는 [/o](../build/reference/o-options-optimize-code.md) 컴파일러 옵션을 사용 하 여 지정한 대로 최적화를 다시 설정 합니다.
 
-```
+```cpp
 #pragma optimize( "", off )
-.
-.
-.
+/* unoptimized code section */
 #pragma optimize( "", on )
 ```
 
 ## <a name="see-also"></a>참고자료
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

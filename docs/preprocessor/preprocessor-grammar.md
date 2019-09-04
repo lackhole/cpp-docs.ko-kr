@@ -1,91 +1,91 @@
 ---
 title: 전처리기 문법
-ms.date: 09/04/2018
+ms.date: 08/29/2019
 helpviewer_keywords:
 - preprocessor
 - grammar, preprocessor
 - preprocessor, grammar
 ms.assetid: 6cd33fad-0b08-4592-9be8-7359c43e24e9
-ms.openlocfilehash: 6177cf5fddba549e410842ef3f270edcc13d4782
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0916e3cc9bbdb398db693286dacc4517df03557
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179882"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222267"
 ---
 # <a name="preprocessor-grammar"></a>전처리기 문법
 
-*control-line*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#define** *identifier* *token-string*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#define** <em>identifier</em>**(** *identifier*<sub>opt</sub> **,** ... **,** *identifier*<sub>opt</sub> **)** *token-string*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#include** **"** *path-spec* **"**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#include** **\<** *path-spec* **>**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#line** *digit-sequence*  **"** *filename* **"**<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#undef** *identifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#error** *token-string*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#pragma** *token-string*
+*제어 줄*: \
+&nbsp;&nbsp;&nbsp;&nbsp; **#define** *식별자* *토큰 문자열* <sub>opt</sub>\
+&nbsp;&nbsp;&nbsp;&nbsp; **#define** *식별자* **(** &#x2800;식별자&#x200B;<sub>옵트인</sub> **,** ... **,** *식별자* &#x200B; <sub></sub>opt&#x2800; **)** *토큰 문자열*<sub>옵트인</sub>\
+&nbsp;&nbsp;&nbsp;&nbsp; **#include** **"** _경로-사양_ **"** \
+&nbsp;&nbsp;&nbsp;&nbsp; **#include** _경로-사양_ **\<** **>** \
+&nbsp;&nbsp;&nbsp;&nbsp; **#line** *숫자 시퀀스* **"** _파일 이름_ **"** &#x200B; <sub>opt</sub>  \
+&nbsp;&nbsp;&nbsp;&nbsp; **#undef** *식별자*\
+&nbsp;&nbsp;&nbsp;&nbsp; **#error** *토큰 문자열*\
+&nbsp;&nbsp;&nbsp;&nbsp; **#pragma** *token-string*
 
-*constant-expression*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**defined(** *identifier* **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**defined** *identifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;다른 상수 식
+*상수-식*: \
+&nbsp;&nbsp;&nbsp;&nbsp;**정의 됨 (** &#x2800;*식별자*&#x2800; **)** \
+&nbsp;&nbsp;&nbsp;&nbsp;**정의 됨** *식별자*\
+&nbsp;&nbsp;&nbsp;&nbsp;기타 상수 식
 
-*conditional* :<br/>
+*조건*: \
 &nbsp;&nbsp;&nbsp;&nbsp;*if-part* *elif-parts*<sub>opt</sub> *else-part*<sub>opt</sub> *endif-line*
 
-*if-part* :<br/>
+*-part*: \
 &nbsp;&nbsp;&nbsp;&nbsp;*if-line* *text*
 
-*if-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#if** *constant-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifdef** *identifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#ifndef** *identifier*
+*if-line*: \
+&nbsp;&nbsp;&nbsp;&nbsp; **#if** *상수 식*\
+&nbsp;&nbsp;&nbsp;&nbsp; **#ifdef** *식별자*\
+&nbsp;&nbsp;&nbsp;&nbsp; **#ifndef** *identifier*
 
-*elif-parts* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*elif-line* *text*<br/>
+*elif-파트*: \
+&nbsp;&nbsp;&nbsp;&nbsp;*elif-줄* *텍스트*\
 &nbsp;&nbsp;&nbsp;&nbsp;*elif-parts* *elif-line* *text*
 
-*elif-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#elif** *constant-expression*
+*elif 줄*: \
+&nbsp;&nbsp;&nbsp;&nbsp; **#elif** *constant-expression*
 
-*else-part* :<br/>
+*else-파트*: \
 &nbsp;&nbsp;&nbsp;&nbsp;*else-line* *text*
 
-*else-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#else**
+*else 줄*: \
+&nbsp;&nbsp;&nbsp;&nbsp; **#else**
 
-*endif-line* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**#endif**
+*endif-줄*: \
+&nbsp;&nbsp;&nbsp;&nbsp; **#endif**
 
-*digit-sequence* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*digit*<br/>
+*숫자 시퀀스*: \
+&nbsp;&nbsp;&nbsp;&nbsp;*분모*\
 &nbsp;&nbsp;&nbsp;&nbsp;*digit-sequence* *digit*
 
-*digit* : one of<br/>
+*digit*: \ 중 하나
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
 
-*token-string* :<br/>
+*토큰 문자열*: \
 &nbsp;&nbsp;&nbsp;&nbsp;토큰 문자열
 
-*token* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*keyword*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*constant*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*operator*<br/>
+*토큰*: \
+&nbsp;&nbsp;&nbsp;&nbsp;*키워드로*\
+&nbsp;&nbsp;&nbsp;&nbsp;*한정자*\
+&nbsp;&nbsp;&nbsp;&nbsp;*상시*\
+&nbsp;&nbsp;&nbsp;&nbsp;*연산자*\
 &nbsp;&nbsp;&nbsp;&nbsp;*punctuator*
 
-*filename* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;올바른 운영 체제 파일 이름
+*파일 이름*: \
+&nbsp;&nbsp;&nbsp;&nbsp;법적 운영 체제 파일 이름
 
-*path-spec* :<br/>
+*경로-사양*: \
 &nbsp;&nbsp;&nbsp;&nbsp;Legal file path
 
-*text* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;임의의 텍스트 시퀀스
+*텍스트*: \
+&nbsp;&nbsp;&nbsp;&nbsp;모든 텍스트 시퀀스
 
 > [!NOTE]
-> 다음 비 단말에는 확장 되어는 [어휘 규칙](../cpp/lexical-conventions.md) 섹션을  *C++ 언어 참조*: *상수*를  *상수 식*, *식별자*를 *키워드*를 *연산자*, 및 *문장 부호*합니다.
+> 다음 비 터미널은  *C++ 언어 참조*의 [어휘 규칙](../cpp/lexical-conventions.md) 섹션에서 확장 됩니다. *상수*, *상수 식*, *식별자*, *키워드*, *연산자*및  *punctuator*.
 
 ## <a name="see-also"></a>참고자료
 
-[문법 요약(C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+[문법 요약 (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

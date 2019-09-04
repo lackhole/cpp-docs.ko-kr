@@ -1,33 +1,33 @@
 ---
 title: __readdr
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __readdr
 helpviewer_keywords:
 - __readdr intrinsic
 ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1
-ms.openlocfilehash: 9d265fe75abaa7ad3cfd508613766cc3b600ee14
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 646330ca92af08903485fd4583eb2c217fe3e023
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263285"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216680"
 ---
-# <a name="readdr"></a>__readdr
+# <a name="__readdr"></a>__readdr
 
 지정 된 디버그 레지스터의 값을 읽습니다.
 
 ## <a name="syntax"></a>구문
 
-```
-unsigned         __readdr(unsigned int DebugRegister);
-unsigned __int64 __readdr(unsigned int DebugRegister);
+```C
+unsigned         __readdr(unsigned int DebugRegister); /* x86 */
+unsigned __int64 __readdr(unsigned int DebugRegister); /* x64 */
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*DebugRegister*<br/>
-[in] 디버그를 식별 하는 0 ~ 7에서에서 상수를 등록 합니다.
+*DebugRegister*\
+진행 디버그 레지스터를 식별 하는 0부터 7 까지의 상수입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -35,7 +35,7 @@ unsigned __int64 __readdr(unsigned int DebugRegister);
 
 ## <a name="remarks"></a>설명
 
-이러한 내장 함수는 커널 모드 에서만 사용할 수 있습니다 및 루틴은 내장 함수로 사용할 수 있습니다.
+이러한 내장 함수는 커널 모드 에서만 사용할 수 있으며 루틴은 내장 함수 에서만 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -49,5 +49,5 @@ unsigned __int64 __readdr(unsigned int DebugRegister);
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [__readeflags](../intrinsics/readeflags.md)

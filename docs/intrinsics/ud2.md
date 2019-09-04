@@ -1,36 +1,36 @@
 ---
 title: __ud2
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __ud2
 helpviewer_keywords:
 - UD2 instruction
 - __ud2 intrinsic
 ms.assetid: 0831cd5a-8b65-402e-bb57-11e1d5d7ffd2
-ms.openlocfilehash: a36ab5c25ac9138b2a4d6810cc2a339e534f1695
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b5aa20804099af4d75dcc62a5e62ccc0d4a09566
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390180"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219761"
 ---
-# <a name="ud2"></a>__ud2
+# <a name="__ud2"></a>__ud2
 
 **Microsoft 전용**
 
-정의 되지 않은 명령을 생성합니다.
+정의 되지 않은 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __ud2();
 ```
 
 ## <a name="remarks"></a>설명
 
-프로세서 정의 되지 않은 명령을 실행 하는 경우 잘못 된 opcode가 예외를 발생 시킵니다.
+정의 되지 않은 명령을 실행 하는 경우 프로세서가 잘못 된 opcode 예외를 발생 시킵니다.
 
-합니다 `__ud2` 함수는 동일 합니다 `UD2` 컴퓨터 명령 및 커널 모드 에서만 사용할 수 있습니다. 자세한 내용은 문서에 대해 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조를 "에 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
+함수 `__ud2` 는 `UD2` 컴퓨터 명령과 같으며 커널 모드 에서만 사용할 수 있습니다. 자세한 내용을 보려면 다음 문서를 검색 하십시오. "Intel 아키텍처 소프트웨어 개발자 설명서, 볼륨 2: " [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트에서" 명령 집합 참조
 
 ## <a name="requirements"></a>요구 사항
 
@@ -44,9 +44,9 @@ void __ud2();
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 예외가 발생 하는 정의 되지 않은 명령을 실행 합니다. 그런 다음 예외 처리기 하나는 0 개에서 반환 코드를 변경합니다.
+다음 예제에서는 예외를 발생 시키는 정의 되지 않은 명령을 실행 합니다. 그런 다음 예외 처리기는 반환 코드를 0에서 1로 변경 합니다.
 
-```
+```cpp
 // __ud2_intrinsic.cpp
 #include <stdio.h>
 #include <intrin.h>

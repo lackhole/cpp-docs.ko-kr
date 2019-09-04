@@ -1,4 +1,4 @@
----
+﻿---
 title: CComObjectRootEx 구현
 ms.date: 11/04/2016
 helpviewer_keywords:

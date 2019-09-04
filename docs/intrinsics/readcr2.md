@@ -1,33 +1,33 @@
 ---
 title: __readcr2
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __readcr2
 helpviewer_keywords:
 - __readcr2 intrinsic
 ms.assetid: d02c97d8-1953-46e7-a79e-a781e2c5bf27
-ms.openlocfilehash: e26ccbb3db1dfc113f84210314379b06dae93542
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 482f4548a692d6aa3b65fbc42caabda29bb393c1
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396556"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217112"
 ---
-# <a name="readcr2"></a>__readcr2
+# <a name="__readcr2"></a>__readcr2
 
 **Microsoft 전용**
 
-인 CR2 레지스터를 읽고 해당 값을 반환 합니다.
+CR2 레지스터를 읽고 해당 값을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned __int64 __readcr2(void);
 ```
 
 ## <a name="return-value"></a>반환 값
 
-인 CR2 레지스터 값입니다.
+CR2 레지스터의 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -39,7 +39,7 @@ unsigned __int64 __readcr2(void);
 
 ## <a name="remarks"></a>설명
 
-이 내장 함수는 커널 모드에서만 사용할 수 있으며 루틴은 내장 함수로만 사용할 수 있습니다.
+내장 함수는 커널 모드 에서만 사용할 수 있으며 루틴은 내장 함수로만 사용할 수 있습니다.
 
 **Microsoft 전용 종료**
 

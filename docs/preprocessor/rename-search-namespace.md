@@ -1,40 +1,38 @@
 ---
-title: rename_search_namespace
-ms.date: 10/18/2018
+title: rename_search_namespace import 특성
+ms.date: 08/29/2019
 f1_keywords:
 - rename_search_namespace
 helpviewer_keywords:
 - rename_search_namespace attribute
 ms.assetid: 47c9d7fd-59dc-4c62-87a1-9011a0040167
-ms.openlocfilehash: ca5d24ca9cc12e9defaa395cf150bc3c04ee4439
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 42c6edb6aa34b441db8041dd2974728c138b2c82
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179778"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216628"
 ---
-# <a name="renamesearchnamespace"></a>rename_search_namespace
+# <a name="rename_search_namespace-import-attribute"></a>rename_search_namespace import 특성
 
-**C++특정**
+**C++컴퓨터별**
 
-와 동일한 기능을 [rename_namespace](../preprocessor/rename-namespace.md) 하지만 사용 하는 형식 라이브러리에 사용 되는 `#import` 지시문에 [auto_search](../preprocessor/auto-search.md) 특성.
+[Rename_namespace](../preprocessor/rename-namespace.md) 특성과 동일한 기능을 갖지만 `#import` [auto_search](../preprocessor/auto-search.md) 특성과 함께 지시문을 사용 하는 형식 라이브러리에 사용 됩니다.
 
 ## <a name="syntax"></a>구문
 
-```
-rename_search_namespace("NewName")
-```
+> **#import** *형식 라이브러리* **rename_search_namespace (** "*NewName*" **)**
 
 ### <a name="parameters"></a>매개 변수
 
-*NewName*<br/>
+*이름*\
 네임스페이스의 새 이름입니다.
 
 ## <a name="remarks"></a>설명
 
-**최종 C++ 특정**
+**끝 C++ 특정**
 
 ## <a name="see-also"></a>참고자료
 
-[#import 특성](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+[#import 특성](../preprocessor/hash-import-attributes-cpp.md)\
+[#import 지시문](../preprocessor/hash-import-directive-cpp.md)

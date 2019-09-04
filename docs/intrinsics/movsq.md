@@ -1,6 +1,6 @@
 ---
 title: __movsq
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __movsq
 helpviewer_keywords:
@@ -8,39 +8,39 @@ helpviewer_keywords:
 - rep movsq instruction
 - movsq instruction
 ms.assetid: be116a6e-2176-4ca4-93b1-9ccf3e7e7835
-ms.openlocfilehash: 4e4908cd5ffc28840b5a48b735048cccb557e97c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 66de1971c48f6697fd06579fac635cce31545e92
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263169"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217269"
 ---
-# <a name="movsq"></a>__movsq
+# <a name="__movsq"></a>__movsq
 
 **Microsoft 전용**
 
-반복 되는 이동 문자열 생성 (`rep movsq`) 명령입니다.
+반복 되는 문자열 (`rep movsq`) 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __movsq(
-   unsigned char* Dest,
+   unsigned char* Destination,
    unsigned char* Source,
    size_t Count
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*대상*<br/>
-[out] 작업의 대상입니다.
+*대상이*\
+제한이 작업의 대상입니다.
 
-*소스*<br/>
-[in] 작업의 원본입니다.
+*Source*\
+진행 작업의 소스입니다.
 
-*개수*<br/>
-[in] 복사할 (쿼드 워드)의 수입니다.
+*수*\
+진행 복사할 quadwords의 수입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -52,13 +52,13 @@ void __movsq(
 
 ## <a name="remarks"></a>설명
 
-결과 첫 번째 `Count` (쿼드 워드)로 가리키는 `Source` 에 복사 됩니다는 `Dest` 문자열입니다.
+그 결과 *원본* 에서 가리키는 첫 번째 *카운트* quadwords *대상* 문자열에 복사 됩니다.
 
 이 루틴은 내장 루틴으로만 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // movsq.cpp
 // processor: x64
 #include <stdio.h>

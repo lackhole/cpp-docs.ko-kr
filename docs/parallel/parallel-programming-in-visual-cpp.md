@@ -2,12 +2,13 @@
 title: Visual C++의 병렬 프로그래밍
 ms.date: 11/04/2016
 ms.assetid: f5c28ab6-a1d9-492f-b207-05e8aee73e96
-ms.openlocfilehash: 9a14768f9ff19fddd811166e4c8fffe90fc46cb8
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.topic: landing-page
+ms.openlocfilehash: 435036994a4ad67a911622b9b8ccab6ca972be4f
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708075"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220026"
 ---
 # <a name="parallel-programming-in-visual-c"></a>Visual C++의 병렬 프로그래밍
 

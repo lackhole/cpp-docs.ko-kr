@@ -1,19 +1,19 @@
 ---
 title: __shiftleft128
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __shiftleft128
 helpviewer_keywords:
 - __shiftleft128 intrinsic
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
-ms.openlocfilehash: 5fcb797694c7a45dc4f2113f3d2ed4a2f578c894
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5da9ac81cedbdd24e10eb438892f88510c32ca24
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390414"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218008"
 ---
-# <a name="shiftleft128"></a>__shiftleft128
+# <a name="__shiftleft128"></a>__shiftleft128
 
 **Microsoft 전용**
 
@@ -21,7 +21,7 @@ ms.locfileid: "62390414"
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned __int64 __shiftleft128(
    unsigned __int64 LowPart,
    unsigned __int64 HighPart,
@@ -29,16 +29,16 @@ unsigned __int64 __shiftleft128(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*LowPart*<br/>
-[in] 이동할 128 비트 수량 중 하위 64 비트입니다.
+*LowPart*\
+진행 이동할 128 비트 수량의 하위 64 비트입니다.
 
-*HighPart*<br/>
-[in] 이동할 128 비트 수량 중 상위 64 비트입니다.
+*Largeint.highpart*\
+진행 이동할 128 비트 수량의 상위 64 비트입니다.
 
-*Shift*<br/>
-[in] 이동할 비트 수입니다.
+*교대조*\
+진행 이동할 비트 수입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -54,11 +54,11 @@ unsigned __int64 __shiftleft128(
 
 ## <a name="remarks"></a>설명
 
-`Shift` 값은 항상 64로 나눈 나머지이므로 예를 들어 `__shiftleft128(1, 0, 64)`를 호출하면 함수는 하위 부분의 `0`비트를 왼쪽으로 이동하고 일반적인 경우에 반환되는 `0`이 아닌 상위 부분 `1`을 반환합니다.
+*시프트* 값 `__shiftleft128(1, 0, 64)`은 항상 모듈로 64 이므로 예를 들어를 호출 하면 함수는 하위 부분 `0` 비트를 왼쪽으로 이동 하 고, 그렇지 않을 경우에는의 `0` `1` 상위 부분을 반환 합니다.
 
 ## <a name="example"></a>예제
 
-```
+```C
 // shiftleft128.c
 // processor: IPF, x64
 #include <stdio.h>
@@ -98,5 +98,5 @@ int main()
 
 ## <a name="see-also"></a>참고자료
 
-[__shiftright128](../intrinsics/shiftright128.md)<br/>
+[__shiftright128](../intrinsics/shiftright128.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

@@ -1,30 +1,29 @@
 ---
 title: __vmx_vmlaunch
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __vmx_vmlaunch
 helpviewer_keywords:
 - VMLAUNCH instruction
 - __vmx_vmlaunch intrinsic
 ms.assetid: 708f7c38-b7c1-4ee7-bfc4-0daeb9cc9360
-ms.openlocfilehash: 37f3a39ee7b0d4d24f26fab2347ac9fca020ec47
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d78e5181fdd43e10431e12d0cf540c8c9c2e719
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390089"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219555"
 ---
-# <a name="vmxvmlaunch"></a>__vmx_vmlaunch
+# <a name="__vmx_vmlaunch"></a>__vmx_vmlaunch
 
 **Microsoft 전용**
 
-현재 가상 머신 제어 구조 (VMCS)를 사용 하 여 VMX 루트가 아닌 작업 상태 (VM 입력)에서 호출 응용 프로그램을 배치 합니다.
+현재 가상 컴퓨터 제어 구조 (VMCS)를 사용 하 여 .VMX이 아닌 작업 상태 (VM enter)에 호출 응용 프로그램을 배치 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
-unsigned char __vmx_vmlaunch(
-   void);
+```C
+unsigned char __vmx_vmlaunch(void);
 ```
 
 ## <a name="return-value"></a>반환 값
@@ -37,9 +36,9 @@ unsigned char __vmx_vmlaunch(
 
 ## <a name="remarks"></a>설명
 
-응용 프로그램이 사용 하 여 VM 시작 작업을 수행할 수는 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 하거나 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 함수입니다. 합니다 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 함수는 시작 상태가 인 vmcs 에서만 사용할 수 있습니다 `Clear`, 및 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 함수는 시작 상태가 인 vmcs 에서만 사용할 수 있습니다 `Launched`합니다. 따라서 사용 하 여는 [__vmx_vmclear](../intrinsics/vmx-vmclear.md) 에 VMCS의 시작 상태를 설정 하는 함수 `Clear`를 사용 하 여를 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 함수에 첫 번째 VM 시작 작업에는 [__vmx_vmresume](../intrinsics/vmx-vmresume.md) 이후 VM 시작 작업에 대 한 함수입니다.
+응용 프로그램은 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 또는 [__vmx_vmlaunch](../intrinsics/vmx-vmresume.md) 함수를 사용 하 여 VM 입력 작업을 수행할 수 있습니다. [__Vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 함수는 시작 상태가 `Clear`인 vmcs 에서만 사용할 수 있으며, [__vmx_vmlaunch](../intrinsics/vmx-vmresume.md) 함수는 시작 상태가 인 `Launched`vmcs 에서만 사용할 수 있습니다. 따라서 [__vmx_vmclear](../intrinsics/vmx-vmclear.md) 함수를 사용 하 여 vmcs의 시작 상태를로 `Clear`설정한 다음 첫 번째 vm에 대 한 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) 함수를 사용 하 고 후속 vm에 대 한 [__vmx_vmlaunch](../intrinsics/vmx-vmresume.md) 함수를 사용 합니다. 작업도.
 
-`__vmx_vmlaunch` 함수는 `VMLAUNCH` 컴퓨터 명령에 해당합니다. 이 함수는 게스트 운영 체제 및 해당 애플리케이션과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002를 문서화 합니다 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
+`__vmx_vmlaunch` 함수는 `VMLAUNCH` 컴퓨터 명령에 해당합니다. 이 함수는 게스트 운영 체제 및 해당 애플리케이션과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용을 보려면 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트에서 "IA-32 Intel 아키텍처용 Intel 가상화 기술 사양" 문서 번호 C97063-002 문서를 검색 하십시오.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -53,6 +52,6 @@ unsigned char __vmx_vmlaunch(
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
-[__vmx_vmresume](../intrinsics/vmx-vmresume.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
+[__vmx_vmresume](../intrinsics/vmx-vmresume.md)\
 [__vmx_vmclear](../intrinsics/vmx-vmclear.md)

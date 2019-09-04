@@ -1,6 +1,6 @@
 ---
-title: deprecated (C/C++)
-ms.date: 11/04/2016
+title: deprecated pragma
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.deprecated
 - deprecated_CPP
@@ -8,25 +8,23 @@ helpviewer_keywords:
 - deprecated pragma
 - pragmas, deprecated
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
-ms.openlocfilehash: 262b23e6e4813a5e22bc3f4e7c9a18efb9988a7c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e76d1c53cb900c108e2839a9aad17b330143a5d
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389296"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222409"
 ---
-# <a name="deprecated-cc"></a>deprecated (C/C++)
+# <a name="deprecated-pragma"></a>deprecated pragma
 
 **deprecated** pragma는 함수, 형식이나 식별자가 앞으로 혹은 미래의 출시버전에서는 더이상 지원 되지 않을 수 있다는 것을 나타냅니다.
 
 > [!NOTE]
-> C++14 `[[deprecated]]` 특성(attribute)에 대한 자세한 내용, Microsoft의 declspec 또는 pragma와 특성을 어느 상황에서 사용하는지에 대한 내용은 [C++ 표준 특성](../cpp/attributes.md)의 특성을 참조합니다.
+> C + + `[[deprecated]]` 14 특성에 대 한 자세한 내용과 Microsoft `__declspec(deprecated)` 한정자 또는 사용 **되지 않는** pragma 대신 해당 특성을 사용 하는 경우에 대 한 지침은 [의 C++특성 ](../cpp/attributes.md)을 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
-```
-#pragma deprecated( identifier1 [,identifier2, ...] )
-```
+> **#pragma 사용 되지 않음 (** *identifier1* [ **,** *identifier2* ] **)**
 
 ## <a name="remarks"></a>설명
 
@@ -77,4 +75,4 @@ int main() {
 
 ## <a name="see-also"></a>참고자료
 
-[Pragma 지시문 및 __Pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

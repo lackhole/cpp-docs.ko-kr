@@ -1,6 +1,6 @@
 ---
 title: _mm_insert_si64, _mm_inserti_si64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _mm_inserti_si64
 - _mm_insert_si64
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - _mm_insert_si64 intrinsic
 - _mm_inserti_si64 intrinsic
 ms.assetid: 897a4b36-8b08-4b00-a18f-7850f5732d7d
-ms.openlocfilehash: f8c8f2f9b33588513e25b2290772aac464f46808
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 08469ad8049df2a07f0e66d650c1ca3118f8b980
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396680"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221783"
 ---
-# <a name="mminsertsi64-mminsertisi64"></a>_mm_insert_si64, _mm_inserti_si64
+# <a name="_mm_insert_si64-_mm_inserti_si64"></a>_mm_insert_si64, _mm_inserti_si64
 
 **Microsoft 전용**
 
-생성 된 `insertq` 명령 두 번째 피연산자의 첫 번째 피연산자에 비트를 삽입 합니다.
+두 번째 `insertq` 피연산자의 비트를 첫 번째 피연산자로 삽입 하는 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 __m128i _mm_insert_si64(
    __m128i Source1,
    __m128i Source2
@@ -37,23 +37,23 @@ __m128i _mm_inserti_si64(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*Source1*<br/>
-[in] 필드를 삽입 하는 하위 64 비트에서 입력된 데이터를 사용 하 여 128 비트 필드입니다.
+*Source1*\
+진행 하위 64 비트의 입력 데이터가 있는 128 비트 필드로, 필드가 삽입 됩니다.
 
-*Source2*<br/>
-[in] 해당 하위 비트에 삽입 하는 데이터로 128 비트 필드입니다.  에 대 한 `_mm_insert_si64`, 해당 상위 비트에서 필드 설명자를 포함 합니다.
+*소스 2*\
+진행 하위 비트에 삽입할 데이터가 있는 128 비트 필드입니다.  의 `_mm_insert_si64`경우에는 상위 비트의 필드 설명자도 포함 됩니다.
 
-*길이*<br/>
-[in] 삽입할 필드의 길이 지정 하는 정수 상수입니다.
+*길이*\
+진행 삽입할 필드의 길이를 지정 하는 정수 상수입니다.
 
-*Index*<br/>
-[in] 데이터를 삽입 하는 필드의 최하위 비트 인덱스를 지정 하는 정수 상수입니다.
+*인덱싱할*\
+진행 데이터가 삽입 될 필드의 최하위 비트 인덱스를 지정 하는 정수 상수입니다.
 
 ## <a name="return-value"></a>반환 값
 
-해당 하위 64 비트의 원래 하위 64 비트를 포함 하는 128 비트 필드가 `Source1` 교체의 낮은 비트를 지정 된 비트 필드를 사용 하 여 `Source2`입니다. 반환 값의 상위 64 비트 정의 되지 않습니다.
+128 비트 필드로, 하위 64 비트에는 *Source1*의 원래 low 64 비트가 포함 되 고, 지정 된 비트 필드는 *소스 2*의 하위 비트로 교체 됩니다. 반환 값의 상위 64 비트는 정의 되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -66,17 +66,17 @@ __m128i _mm_inserti_si64(
 
 ## <a name="remarks"></a>설명
 
-이 내장 함수를 생성 합니다 `insertq` 명령에서 비트를 삽입할 `Source2` 에 `Source1`합니다. 두 가지 버전의 내장: `_mm_inserti_si64`를 즉시 버전이 및 `_mm_insert_si64` 즉시 아닌 것입니다.  각 버전 소스 2에서 지정 된 길이의 비트 필드를 추출 하 고 Source1에 삽입 합니다.  추출 된 비트가 Source2의 최하위 비트를 보여 줍니다.  이러한 비트를 삽입할 필드 Source1 길이 해당 비트의 인덱스에서 정의 됩니다.  길이 인덱스의 값은 64 mod, 모두-1에서 127 63으로 해석 됩니다 따라서 합니다. (감소) 비트 인덱스와 (감소) 필드 길이 합한 64 보다 큰 경우 결과가 정의 되지 않습니다. 필드 길이 0 값은 64로 해석 됩니다.  필드 길이 및 비트 인덱스를 둘 다 0 비트 63:0의 경우 `Source2` 삽입할 `Source1`합니다.  필드 길이가 0 인 비트 인덱스는 0이 아닌 경우 결과가 정의 되지 않습니다.
+이러한 내장 함수는 `insertq` *소스 2* 에서 *Source1*로 비트를 삽입 하는 명령을 생성 합니다. 에는 두 가지 버전이 `_mm_inserti_si64`있습니다 .는이 고 `_mm_insert_si64` ,는 바로 버전이 며,는 버전이 더 이상 버전이 아닙니다. 각 버전은 소스 2에서 지정 된 길이의 비트 필드를 추출 하 여 Source1에 삽입 합니다.  추출 된 비트는 소스 2의 최하위 비트입니다.  이러한 비트가 삽입 되는 필드 Source1는 최하위 비트의 길이 및 인덱스에 따라 정의 됩니다.  길이 및 인덱스 값은 mod 64로 간주 되므로-1과 127은 모두 63로 해석 됩니다. (감소) 비트 인덱스 및 (축소) 필드 길이의 합계가 64 보다 큰 경우 결과가 정의 되지 않습니다. 필드 길이 값이 0 이면 64로 해석 됩니다. 필드 길이와 비트 인덱스가 모두 0 이면 *소스 2* 의 비트 63:0이 *Source1*에 삽입 됩니다. 필드 길이가 0 이지만 비트 인덱스가 0이 아닌 경우 결과가 정의 되지 않습니다.
 
-_Mm_insert_si64 호출, 필드 길이 소스 2와 bits 69:64에서 인덱스의 비트 77:72에 포함 됩니다.
+_Mm_insert_si64에 대 한 호출에서 필드 길이는 소스 2의 비트 77:72 및 비트 69:64의 인덱스에 포함 됩니다.
 
-호출 하는 경우 `_mm_inserti_si64` 정수 상수를 컴파일러가 확인할 수 없습니다는 인수를 사용 하 여 컴파일러는 XMM 레지스터에 해당 값을 압축 하 고 호출 하는 코드를 생성 `_mm_insert_si64`합니다.
+컴파일러가 정수 상수로 `_mm_inserti_si64` 확인할 수 없는 인수를 사용 하 여를 호출 하는 경우 컴파일러는 이러한 값을 XMM 레지스터에 압축 하 고를 호출 `_mm_insert_si64`하는 코드를 생성 합니다.
 
-에 대 한 하드웨어 지원을 확인 하는 `insertq` 명령 호출을 `__cpuid` 포함 된 내장 함수 `InfoType=0x80000001` 의 6 비트를 확인 하 고 `CPUInfo[2] (ECX)`입니다. 그렇지 않으면이 비트는 명령 지원 되 면 1과 0 수 있습니다. 경우 코드를 실행 하면 사용 하 여이 내장 함수를 지원 하지 않는 하드웨어를 `insertq` 명령 결과 예측할 수 없습니다.
+`insertq` 명령에 대 한 하드웨어 지원을 확인 하려면를 사용 `__cpuid` `InfoType=0x80000001` 하 여 내장 함수를 호출 하 `CPUInfo[2] (ECX)`고의 6 비트를 확인 합니다. 명령이 지원 되는 경우이 비트는 1이 고, 그렇지 않으면 0입니다. `insertq` 명령을 지원 하지 않는 하드웨어에서 내장 함수를 사용 하는 코드를 실행 하는 경우 결과를 예측할 수 없습니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // Compile this sample with: /EHsc
 #include <iostream>
 #include <intrin.h>
@@ -120,9 +120,9 @@ result3 = 0xfffffffff3210fff
 
 **Microsoft 전용 종료**
 
-고급 마이크로 장치, inc 저작권 2007 All rights reserved. 고급 마이크로 장치, Inc. 사용 권한을 사용 하 여 재현
+Advanced 마이크로 장치, i n c .의 저작권 2007 부분 All rights reserved. 고급 마이크로 장치, i n c .의 권한으로 재현 합니다.
 
 ## <a name="see-also"></a>참고자료
 
-[_mm_extract_si64, _mm_extracti_si64](../intrinsics/mm-extract-si64-mm-extracti-si64.md)<br/>
+[_mm_extract_si64, _mm_extracti_si64](../intrinsics/mm-extract-si64-mm-extracti-si64.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

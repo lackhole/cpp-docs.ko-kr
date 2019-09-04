@@ -1,19 +1,19 @@
 ---
 title: __umulh
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __umulh
 helpviewer_keywords:
 - __umulh intrinsic
 ms.assetid: d241b53a-e6f7-4af1-9f6e-84e149158f03
-ms.openlocfilehash: 3a42de276b483f98e2eaf9d0c8505d7f1d5b5bca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf098657d1bd5b7ef8a4ffc21f487d2ce619a04e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390115"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219670"
 ---
-# <a name="umulh"></a>__umulh
+# <a name="__umulh"></a>__umulh
 
 **Microsoft 전용**
 
@@ -21,19 +21,19 @@ ms.locfileid: "62390115"
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned __int64 __umulh(
    unsigned __int64 a,
    unsigned __int64 b
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*a*<br/>
+*은*\
 [in] 곱할 첫 번째 숫자입니다.
 
-*b*<br/>
+*b*\
 [in] 곱할 두 번째 숫자입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -54,7 +54,7 @@ unsigned __int64 __umulh(
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // umulh.cpp
 // processor: X64
 #include <cstdio>

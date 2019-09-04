@@ -1,6 +1,6 @@
 ---
 title: __outbytestring
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __outbytestring
 helpviewer_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - __outbytestring intrinsic
 - outsb instruction
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
-ms.openlocfilehash: 41064dda6a1a0b9ad4c15f98c3f3081f08ef8db6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 31caf17db5d56efccd6b30200994b1080356b4c1
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396615"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217176"
 ---
-# <a name="outbytestring"></a>__outbytestring
+# <a name="__outbytestring"></a>__outbytestring
 
 **Microsoft 전용**
 
-생성 된 `rep outsb` 보내는 첫 번째 명령 `Count` 가리키는 데이터의 바이트 `Buffer` 하 여 지정 된 포트를 `Port`.
+`Count` `Port` `rep outsb` 에서 가리키는데이터의처음바이트를로지정된포트로보내는명령을생성합니다.`Buffer`
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __outbytestring(
    unsigned short Port,
    unsigned char* Buffer,
@@ -31,16 +31,16 @@ void __outbytestring(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*포트*<br/>
-[in] 데이터를 보낼 포트입니다.
+*포트인*\
+진행 데이터를 보낼 포트입니다.
 
-*Buffer*<br/>
-[in] 데이터 전송 지정된 된 포트입니다.
+*버퍼*\
+진행 지정 된 포트를 통해 보낼 데이터입니다.
 
-*개수*<br/>
-[in] 전송할 데이터의 바이트 수입니다.
+*수*\
+진행 보낼 데이터의 바이트 수입니다.
 
 ## <a name="requirements"></a>요구 사항
 

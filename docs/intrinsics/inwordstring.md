@@ -1,6 +1,6 @@
 ---
 title: __inwordstring
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __inwordstring
 - __inwordstring_cpp
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - __inwordstring intrinsic
 - rep insw instruction
 ms.assetid: 6de37939-017a-4740-9e3d-7de78a30daba
-ms.openlocfilehash: 52c36754e1eea56b84eeb494e82e37a5b043246e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a6f67e15bc5eef9fbe9cc8d12e95afcdf869e3b1
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263453"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221883"
 ---
-# <a name="inwordstring"></a>__inwordstring
+# <a name="__inwordstring"></a>__inwordstring
 
 **Microsoft 전용**
 
-사용 하 여 지정 된 포트에서 데이터를 읽고는 `rep insw` 명령입니다.
+`rep insw` 명령을 사용 하 여 지정 된 포트에서 데이터를 읽습니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __inwordstring(
    unsigned short Port,
    unsigned short* Buffer,
@@ -31,16 +31,16 @@ void __inwordstring(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*포트*<br/>
-[in] 포트에서 읽기입니다.
+*포트인*\
+진행 읽을 포트입니다.
 
-*Buffer*<br/>
-[out] 여기에 포트에서 읽은 데이터가 기록 됩니다.
+*버퍼*\
+제한이 포트에서 읽은 데이터는 여기에 기록 됩니다.
 
-*개수*<br/>
-[in] 읽을 데이터의 단어 수입니다.
+*수*\
+진행 읽을 데이터의 단어 수입니다.
 
 ## <a name="requirements"></a>요구 사항
 

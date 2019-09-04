@@ -1,6 +1,6 @@
 ---
 title: __inbyte
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __inbyte
 - __inbyte_cpp
@@ -8,35 +8,35 @@ helpviewer_keywords:
 - in instruction
 - __inbyte intrinsic
 ms.assetid: 03b61799-2a08-474d-adc4-2cbf7c81a4d5
-ms.openlocfilehash: 20c583b874c2bdb56affc6a90c8464b82c4824f0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0036763ed7315a54fbfe6dcc873b46b52f0730c
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348980"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222143"
 ---
-# <a name="inbyte"></a>__inbyte
+# <a name="__inbyte"></a>__inbyte
 
 **Microsoft 전용**
 
-생성 된 `in` 명령 1 바이트를 반환 하 여 지정 된 포트에서 읽은 `Port`합니다.
+`in` 로`Port`지정 된 포트에서 읽은 단일 바이트를 반환 하는 명령을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned char __inbyte(
    unsigned short Port
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*포트*<br/>
-[in] 포트에서 읽기입니다.
+*포트인*\
+진행 읽을 포트입니다.
 
 ## <a name="return-value"></a>반환 값
 
-지정된 된 포트에서 읽은 바이트입니다.
+지정 된 포트에서 읽은 바이트입니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,6 +1,6 @@
 ---
 title: __emul, __emulu
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __emulu_cpp
 - __emul
@@ -10,22 +10,22 @@ helpviewer_keywords:
 - __emul intrinsic
 - __emulu intrinsic
 ms.assetid: 79545236-cca2-40b8-a4e1-8abce9b26311
-ms.openlocfilehash: 8657c0fb034ac6bbcfbebb946e059ad08d9e7046
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 16b2b38f6f44b99c9f5b9370ba586342a860684e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264051"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216749"
 ---
-# <a name="emul-emulu"></a>__emul, __emulu
+# <a name="__emul-__emulu"></a>__emul, __emulu
 
 **Microsoft 전용**
 
-32 비트 정수를 보유할 수 있는 항목을 오버플로 하는 곱하기를 수행 합니다.
+32 비트 정수에 포함 될 수 있는 multiplications를 수행 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 __int64 __emul(
    int a,
    int b
@@ -36,17 +36,17 @@ unsigned __int64 __emulu(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*a*<br/>
-[in] 곱하기의 첫 번째 정수 피연산자입니다.
+*은*\
+진행 곱셈의 첫 번째 정수 피연산자입니다.
 
-*b*<br/>
-[in] 곱하기의 두 번째 정수 피연산자입니다.
+*b*\
+진행 곱셈의 두 번째 정수 피연산자입니다.
 
 ## <a name="return-value"></a>반환 값
 
-곱하기의 결과입니다.
+곱셈의 결과입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -59,13 +59,13 @@ unsigned __int64 __emulu(
 
 ## <a name="remarks"></a>설명
 
-`__emul` 두 개의 32 비트 부호 있는 값을 사용 하 고 64 비트 부호 있는 정수 값으로 곱하기의 결과 반환 합니다.
+`__emul`2 32 비트의 부호 있는 값을 사용 하 고 곱셈 결과를 64 비트 부호 있는 정수 값으로 반환 합니다.
 
-`__emulu` 두 개의 32 비트 부호 없는 정수 값을 사용 하 고 64 비트 부호 없는 정수 값으로 곱하기의 결과 반환 합니다.
+`__emulu`2 32 비트 부호 없는 정수 값을 사용 하 고 곱셈 결과를 64 비트 부호 없는 정수 값으로 반환 합니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // emul.cpp
 // compile with: /EHsc
 // processor: x86, x64
@@ -97,7 +97,7 @@ int main()
 
 ## <a name="output"></a>출력
 
-```
+```Output
 -268435456 * 2 = -536870912
 4294967295 * 251658240 = 1080863910317260800
 ```

@@ -1,37 +1,37 @@
 ---
 title: __vmx_on
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __vmx_on
 helpviewer_keywords:
 - VMXON instruction
 - __vmx_on intrinsic
 ms.assetid: 16804991-6a75-4adf-8ec2-bc95acfa4801
-ms.openlocfilehash: de903eeeb29e3c194a36ccb4cb038ba89b8ea82f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b6041711d9b6806362b856475151f2c4f63750cb
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390141"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219583"
 ---
-# <a name="vmxon"></a>__vmx_on
+# <a name="__vmx_on"></a>__vmx_on
 
 **Microsoft 전용**
 
-프로세서의 가상 머신 확장 (VMX) 작업을 활성화합니다.
+프로세서에서 .VMX (가상 컴퓨터 확장) 작업을 활성화 합니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned char __vmx_on(
    unsigned __int64 *VmsSupportPhysicalAddress
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*VmsSupportPhysicalAddress*<br/>
-[in] 가상 머신 제어 구조 (VMCS)를 가리키는 64 비트 물리적 주소에 대 한 포인터입니다.
+*VmsSupportPhysicalAddress*\
+진행 VMCS (가상 컴퓨터 제어 구조)를 가리키는 64 비트 실제 주소에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -43,7 +43,7 @@ unsigned char __vmx_on(
 
 ## <a name="remarks"></a>설명
 
-합니다 `__vmx_on` 에 해당 하는 함수는 `VMXON` 컴퓨터 명령입니다. 이 함수는 게스트 운영 체제 및 해당 애플리케이션과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 "Intel 가상화 기술 사양에 대 한는 IA-32 Intel 아키텍처" 문서를 검색에서 숫자 C97063-002를 문서화 합니다 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
+함수 `__vmx_on` 는 `VMXON` 컴퓨터 명령에 해당 합니다. 이 함수는 게스트 운영 체제 및 해당 애플리케이션과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용을 보려면 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트에서 "IA-32 Intel 아키텍처용 Intel 가상화 기술 사양" 문서 번호 C97063-002 문서를 검색 하십시오.
 
 ## <a name="requirements"></a>요구 사항
 

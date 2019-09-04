@@ -1,6 +1,6 @@
 ---
 title: __writefsbyte, __writefsdword, __writefsqword, __writefsword
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __writefsword
 - __writefsbyte
@@ -16,22 +16,22 @@ helpviewer_keywords:
 - __writefsbyte intrinsic
 - writefsword intrinsic
 ms.assetid: 23ac6e8e-bc91-4e90-a4c6-da02993637ad
-ms.openlocfilehash: 6461ef730760298e3159e4ac70dbbdf7bd827092
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c0cb70986fc75d14f23fb70efe89f48e10fb047e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389790"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219123"
 ---
-# <a name="writefsbyte-writefsdword-writefsqword-writefsword"></a>__writefsbyte, __writefsdword, __writefsqword, __writefsword
+# <a name="__writefsbyte-__writefsdword-__writefsqword-__writefsword"></a>__writefsbyte, __writefsdword, __writefsqword, __writefsword
 
 **Microsoft 전용**
 
-FS 세그먼트의 시작을 기준으로 오프셋으로 지정 된 위치에 메모리를 작성 합니다.
+FS 세그먼트의 시작을 기준으로 하는 오프셋으로 지정 된 위치에 메모리를 씁니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __writefsbyte(
    unsigned long Offset,
    unsigned char Data
@@ -50,13 +50,13 @@ void __writefsqword(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*Offset*<br/>
-[in] 쓸 FS 시작 부분 으로부터의 오프셋입니다.
+*이동*\
+진행 쓸 FS의 시작 부분에서의 오프셋입니다.
 
-*Data*<br/>
-[in] 쓸 값입니다.
+*데이터로*\
+진행 쓸 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -71,11 +71,11 @@ void __writefsqword(
 
 ## <a name="remarks"></a>설명
 
-이러한 루틴은 내장 함수로 사용할 수 있습니다.
+이러한 루틴은 내장 함수 에서만 사용할 수 있습니다.
 
 **Microsoft 전용 종료**
 
 ## <a name="see-also"></a>참고자료
 
-[__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)<br/>
+[__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)\
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

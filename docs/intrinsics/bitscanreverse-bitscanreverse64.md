@@ -1,6 +1,6 @@
 ---
 title: _BitScanReverse, _BitScanReverse64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _BitScanReverse64
 - _BitScanReverse_cpp
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - _BitScanReverse intrinsic
 - BitScanReverse intrinsic
 ms.assetid: 2520a207-af8b-4aad-9ae7-831abeadf376
-ms.openlocfilehash: 3639aac38f4c7df82cbbdb23ed9038ac86ba2cc0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 848c153967e5581f08f1d499a28ab282ee2602df
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264285"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216952"
 ---
-# <a name="bitscanreverse-bitscanreverse64"></a>_BitScanReverse, _BitScanReverse64
+# <a name="_bitscanreverse-_bitscanreverse64"></a>_BitScanReverse, _BitScanReverse64
 
 **Microsoft 전용**
 
@@ -26,7 +26,7 @@ MSB(최상위 비트)에서 LSB(최하위 비트)로의 마스크 데이터에�
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 unsigned char _BitScanReverse(
    unsigned long * Index,
    unsigned long Mask
@@ -37,13 +37,13 @@ unsigned char _BitScanReverse64(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*Index*<br/>
-[out] 찾은 첫 번째 설정 비트 (1)의 비트 위치를 사용 하 여 로드 합니다.
+*인덱싱할*\
+제한이 첫 번째 설정 비트 (1)의 비트 위치를 사용 하 여 로드 되었습니다.
 
-*Mask*<br/>
-[in] 검색할 32 비트 또는 64 비트 값입니다.
+*마스크할*\
+진행 검색할 32 비트 또는 64 비트 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -53,12 +53,12 @@ unsigned char _BitScanReverse64(
 
 |내장 함수|아키텍처|헤더|
 |---------------|------------------|------------|
-|`_BitScanReverse`|x86, ARM, x64|\<intrin.h>|
-|`_BitScanReverse64`|ARM, x64||
+|`_BitScanReverse`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_BitScanReverse64`|ARM64, x64|\<intrin.h>|
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // BitScanReverse.cpp
 // compile with: /EHsc
 #include <iostream>
@@ -87,15 +87,11 @@ int main()
 }
 ```
 
-## <a name="input"></a>입력
-
-```
+```Input
 12
 ```
 
-## <a name="sample-output"></a>샘플 출력
-
-```
+```Output
 Enter a positive integer as the mask:
 Mask: 12 Index: 3
 ```

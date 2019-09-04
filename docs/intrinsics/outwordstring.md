@@ -1,6 +1,6 @@
 ---
 title: __outwordstring
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __outwordstring
 helpviewer_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - __outwordstring intrinsic
 - outsw instruction
 ms.assetid: b470c7a0-1de9-4370-886a-b2c3a1f842f4
-ms.openlocfilehash: d7141dd7f9f1f81e905952959e392a23d141f4e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3cc5b0ae2101c86e3dc899b7924ec2524f0ea6e7
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396602"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217126"
 ---
-# <a name="outwordstring"></a>__outwordstring
+# <a name="__outwordstring"></a>__outwordstring
 
 **Microsoft 전용**
 
-생성 된 `rep outsw` 명령을 보냅니다 `Count` 에서 시작 하는 단어 `Buffer` 로 지정 된 I/O 포트를 찾기 `Port`.
+*포트에서*지정 된 i/o 포트에서 시작 하는 *카운트* 단어를 전송 하는 명령을생성합니다.`rep outsw`
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void __outwordstring(
    unsigned short Port,
    unsigned short* Buffer,
@@ -31,16 +31,16 @@ void __outwordstring(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*포트*<br/>
-[in] 데이터를 보낼 포트입니다.
+*포트인*\
+진행 데이터를 보낼 포트입니다.
 
-*Buffer*<br/>
-[in] 지정된 된 포트에 보내도록 데이터에 대 한 포인터입니다.
+*버퍼*\
+진행 지정 된 포트를 통해 전송 되는 데이터에 대 한 포인터입니다.
 
-*개수*<br/>
-[in] 보낼 단어의 수입니다.
+*수*\
+진행 보낼 단어 수입니다.
 
 ## <a name="requirements"></a>요구 사항
 

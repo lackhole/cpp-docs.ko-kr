@@ -1,36 +1,36 @@
 ---
 title: __readeflags
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __readeflags
 helpviewer_keywords:
 - __readeflags intrinsic
 ms.assetid: f9d2f4d8-c428-491f-b8de-04d0566b2b6b
-ms.openlocfilehash: 9913fb4287e673faf79b2c352bb42eda7f590fdd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe2365c2837b6c583810bb9fc908fe98486a2d38
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396485"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221231"
 ---
-# <a name="readeflags"></a>__readeflags
+# <a name="__readeflags"></a>__readeflags
 
-등록 프로그램 상태 및 컨트롤 (EFLAGS)을 읽습니다.
+프로그램 상태 및 컨트롤 (EFLAGS) 레지스터를 읽습니다.
 
 ## <a name="syntax"></a>구문
 
-```
-unsigned     int __readeflags(void);
-unsigned __int64 __readeflags(void);
+```C
+unsigned     int __readeflags(void); /* x86 */
+unsigned __int64 __readeflags(void); /* x64 */
 ```
 
 ## <a name="return-value"></a>반환 값
 
-EFLAGS 레지스터의 값입니다. 반환 값은 32 비트 및 64 비트 long 32 비트 플랫폼에서 64 비트 플랫폼에서 긴 합니다.
+EFLAGS 레지스터의 값입니다. 반환 값은 32 비트 플랫폼의 32 비트 길이 이며 64 비트 플랫폼에서는 64 비트가 깁니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 루틴은 내장 함수로 사용할 수 있습니다.
+이러한 루틴은 내장 함수 에서만 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -44,5 +44,5 @@ EFLAGS 레지스터의 값입니다. 반환 값은 32 비트 및 64 비트 long 
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [__writeeflags](../intrinsics/writeeflags.md)

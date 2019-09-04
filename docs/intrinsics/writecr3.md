@@ -1,36 +1,36 @@
 ---
 title: __writecr3
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _writecr3
 helpviewer_keywords:
 - _writecr3 intrinsic
 ms.assetid: 959d49fa-69d5-47cf-88d2-7688367fe38f
-ms.openlocfilehash: 88467e4fb39abc9526e47a73f998d630470111a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2472a21fe42f10dbf0918480ef02f7e48109747
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389933"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219284"
 ---
-# <a name="writecr3"></a>__writecr3
+# <a name="__writecr3"></a>__writecr3
 
 **Microsoft 전용**
 
-값을 씁니다 `Data` CR3 등록 합니다.
+CR3 레지스터에 `Data` 값을 씁니다.
 
 ## <a name="syntax"></a>구문
 
-```
+```C
 void writecr3(
    unsigned __int64 Data
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
-*Data*<br/>
-[in] CR3 레지스터에 쓸 값입니다.
+*데이터로*\
+진행 CR3 레지스터에 쓸 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
