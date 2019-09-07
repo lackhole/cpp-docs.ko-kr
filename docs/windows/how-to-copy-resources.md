@@ -30,12 +30,12 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: 56cff04d64f2f0a64fc216fbd418954b4c11b0f2
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 718de310bc4fb0cb0072065bc4e7b7adadb182aa
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514747"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740661"
 ---
 # <a name="how-to-manage-resources-c"></a>방법: 리소스 관리 (C++)
 
@@ -76,7 +76,7 @@ ms.locfileid: "69514747"
 
 리소스에서 복사하는 동안 언어 속성이나 조건 속성 또는 두 가지 모두를 변경할 수 있습니다.
 
-- 리소스의 언어는 검색 중인 리소스를 식별 하는 데 도움이 되는 [findresource](/windows/win32/api/winbase/nf-winbase-findresourcew) 에서 사용 되는 언어를 지정 합니다. 리소스에는 텍스트와 관련이 없는 각 언어에 대 한 차이가 있을 수 있습니다. 예를 들어 일본어 키보드 에서만 작동 하는 액셀러레이터 나 중국어로 지역화 된 빌드에서만 적절 한 비트맵입니다.
+- 리소스의 언어는 검색 중인 리소스를 식별 하는 데 도움이 되는 [findresource](/windows/win32/api/winbase/nf-winbase-findresourcea) 에서 사용 되는 언어를 지정 합니다. 리소스에는 텍스트와 관련이 없는 각 언어에 대 한 차이가 있을 수 있습니다. 예를 들어 일본어 키보드 에서만 작동 하는 액셀러레이터 나 중국어로 지역화 된 빌드에서만 적절 한 비트맵입니다.
 
 - 리소스의 조건은 리소스의 해당 특정 복사본이 사용되는 조건을 식별하는 정의된 기호입니다.
 

@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], PreDrawPage
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-ms.openlocfilehash: 18b17d0f40aaab6ba2a018a568950549eda23016
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b81e2a65d09bf5dadbc0860d692caee7a4bd386f
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69503006"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739757"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog 클래스
 
@@ -305,7 +305,7 @@ PAGESETUPDLG m_psd;
 
 `m_psd` 데이터 멤버를 직접 수정 하는 경우 모든 기본 동작을 재정의 합니다.
 
-[Pagesetupdlg](/windows/win32/api/commdlg/ns-commdlg-psdw) 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
+[Pagesetupdlg](/windows/win32/api/commdlg/ns-commdlg-pagesetupdlgw) 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
 
 [CPageSetupDialog:: CPageSetupDialog](#cpagesetupdialog)의 예제를 참조 하세요.
 
@@ -393,7 +393,7 @@ virtual UINT PreDrawPage(
 - 세로 모드의 0x01f 봉투 (점 행렬)
 
 *pPSD*<br/>
-`PAGESETUPDLG` 구조체에 대한 포인터입니다. [Pagesetupdlg](/windows/win32/api/commdlg/ns-commdlg-psdw)에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
+`PAGESETUPDLG` 구조체에 대한 포인터입니다. [Pagesetupdlg](/windows/win32/api/commdlg/ns-commdlg-pagesetupdlgw)에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 

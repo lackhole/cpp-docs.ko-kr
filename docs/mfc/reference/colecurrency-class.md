@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COleCurrency [MFC], m_cur
 - COleCurrency [MFC], m_status
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
-ms.openlocfilehash: a23bc489fce00d9ba0be6a3aa71468b469bf54c8
-ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
+ms.openlocfilehash: fc7c64ada1100b0fc0a51670de3e8ec04b141b04
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70177409"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741644"
 ---
 # <a name="colecurrency-class"></a>COleCurrency 클래스
 
@@ -128,7 +128,7 @@ COleCurrency(
 
 - COleCurrency ()는 0 `COleCurrency` 으로 초기화 되는 개체를 생성 합니다.
 
-- COleCurrency (`cySrc`)는 [통화](/windows/win32/api/wtypes/ns-wtypes-cy) 값에서 `COleCurrency`개체를 생성 합니다.
+- COleCurrency (`cySrc`)는 [통화](/windows/win32/api/wtypes/ns-wtypes-cy~r1) 값에서 `COleCurrency`개체를 생성 합니다.
 
 - COleCurrency (`curSrc`)는 기존 `COleCurrency` `COleCurrency` 개체에서 개체를 생성 합니다. 새 개체의 상태는 원본 개체와 동일 합니다.
 
@@ -136,7 +136,7 @@ COleCurrency(
 
 - `COleCurrency(`지정 된`, `숫자`) Constructs a `구성 요소의 nunits nFractionalUnits COleCurrency ' 개체입니다. 소수 부분의 절대값이 1만 보다 큰 경우 해당 단위에 적절 한 조정이 적용 됩니다. 단위 및 소수 부분은 부호 있는 long 값으로 지정 됩니다.
 
-자세한 내용은 Windows SDK의 [통화](/windows/win32/api/wtypes/ns-wtypes-cy) 및 [변형](/windows/win32/api/oaidl/ns-oaidl-variant) 항목을 참조 하세요.
+자세한 내용은 Windows SDK의 [통화](/windows/win32/api/wtypes/ns-wtypes-cy~r1) 및 [변형](/windows/win32/api/oaidl/ns-oaidl-variant) 항목을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -236,14 +236,14 @@ enum CurrencyStatus {
 
 ##  <a name="m_cur"></a>  COleCurrency::m_cur
 
-이`COleCurrency` 개체의 기본 [통화](/windows/win32/api/wtypes/ns-wtypes-cy) 구조입니다.
+이`COleCurrency` 개체의 기본 [통화](/windows/win32/api/wtypes/ns-wtypes-cy~r1) 구조입니다.
 
 ### <a name="remarks"></a>설명
 
 > [!CAUTION]
 >  이 함수에서 반환 하 `CURRENCY` 는 포인터에 의해 액세스 되는 구조체의 값을 변경 하면이 개체 `COleCurrency` 의 값이 변경 됩니다. 이 `COleCurrency` 개체의 상태는 변경 되지 않습니다.
 
-자세한 내용은 Windows SDK의 [통화](/windows/win32/api/wtypes/ns-wtypes-cy) 항목을 참조 하세요.
+자세한 내용은 Windows SDK의 [통화](/windows/win32/api/wtypes/ns-wtypes-cy~r1) 항목을 참조 하세요.
 
 ##  <a name="m_status"></a>  COleCurrency::m_status
 
@@ -314,7 +314,7 @@ const COleCurrency& operator=(const VARIANT& varSrc);
 
 - **operator = (** *varsrc* **)** 값 (또는 [COleVariant](../../mfc/reference/colevariant-class.md) 개체)을 통화 ( `VT_CY`)로 변환 `COleCurrency` 하면 변환 된 값이이 개체에 복사 되 고 상태는 valid로 설정 됩니다. `VARIANT` 변환이 실패 하면 `COleCurrency` 개체의 값이 0으로 설정 되 고 상태가 잘못 된 것으로 설정 됩니다.
 
-자세한 내용은 Windows SDK의 [통화](/windows/win32/api/wtypes/ns-wtypes-cy) 및 [변형](/windows/win32/api/oaidl/ns-oaidl-variant) 항목을 참조 하세요.
+자세한 내용은 Windows SDK의 [통화](/windows/win32/api/wtypes/ns-wtypes-cy~r1) 및 [변형](/windows/win32/api/oaidl/ns-oaidl-variant) 항목을 참조 하세요.
 
 ### <a name="example"></a>예제
 
