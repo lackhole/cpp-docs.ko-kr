@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: 732bdf980240b1f496c1aca56c8a89b6a7f52d27
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c35cc01b352285402885587f6d0b91e2c2bdd4ae
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502176"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741244"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -850,7 +850,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 ### <a name="parameters"></a>매개 변수
 
 *pPrintDlg*<br/>
-[Printdlg](/windows/win32/api/commdlg/ns-commdlg-pdw) 구조체에 대 한 포인터입니다.
+[Printdlg](/windows/win32/api/commdlg/ns-commdlg-printdlga) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1063,7 +1063,7 @@ virtual BOOL InitInstance();
 를 `InitInstance` 재정의 하 여 Windows에서 실행 되는 응용 프로그램의 새 인스턴스를 초기화 합니다. 일반적으로를 재정의 `InitInstance` 하 여 주 창 개체를 생성 하 고 `CWinThread::m_pMainWnd` 해당 창을 가리키도록 데이터 멤버를 설정 합니다. 이 멤버 함수를 재정의 하는 [방법에 대 한 자세한 내용은 CWinApp: 응용 프로그램 클래스](../../mfc/cwinapp-the-application-class.md)입니다.
 
 > [!NOTE]
-> MFC 응용 프로그램을 STA (단일 스레드 아파트)로 초기화 해야 합니다. `InitInstance` 재정의에서 [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) 를 호출 하는 경우 COINIT_MULTITHREADED 대신 COINIT_APARTMENTTHREADED를 지정 합니다.
+> MFC 응용 프로그램은 STA(단일 스레드 아파트)로 초기화해야 합니다. `InitInstance` 재정의에서 [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex)를 호출하는 경우 COINIT_MULTITHREADED 대신 COINIT_APARTMENTTHREADED를 지정합니다.
 
 ### <a name="example"></a>예제
 
@@ -1793,7 +1793,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>매개 변수
 
 *pMsg*<br/>
-처리할 메시지를 포함 하는 [MSG](/windows/win32/api/winuser/ns-winuser-tagmsg) 구조체에 대 한 포인터입니다.
+처리할 메시지를 포함 하는 [MSG](/windows/win32/api/winuser/ns-winuser-msg) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _U_STRINGorID class
 - U_STRINGorID class
 ms.assetid: 443cdc00-d265-4b27-8ef3-2feb95f3e5e3
-ms.openlocfilehash: 57363dbe2a1e7166b8da401900c3a7f913e63a9d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c57d983e9680ce6d2cab375e427b80f4d3b6c2d6
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495109"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739574"
 ---
 # <a name="_u_stringorid-class"></a>_U_STRINGorID 클래스
 
@@ -33,7 +33,7 @@ class _U_STRINGorID
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[_U_STRINGorID::_U_STRINGorID](#_u_stringorid___u_stringorid)|생성자입니다.|
 
@@ -45,7 +45,7 @@ class _U_STRINGorID
 
 ## <a name="remarks"></a>설명
 
-이 클래스는 리소스의 이름 또는 해당 ID 일 수 있는 LPCTSTR 인수를 허용 하는 [findresource](/windows/win32/api/winbase/nf-winbase-findresourcew), [Loadicon](/windows/win32/api/winuser/nf-winuser-loadiconw)및 [loadicon](/windows/win32/api/winuser/nf-winuser-loadmenuw) 함수와 같은 Windows 리소스 관리 API에 래퍼를 구현 하기 위해 디자인 되었습니다.
+이 클래스는 리소스의 이름 또는 해당 ID 일 수 있는 LPCTSTR 인수를 허용 하는 [findresource](/windows/win32/api/winbase/nf-winbase-findresourcea), [Loadicon](/windows/win32/api/winuser/nf-winuser-loadiconw)및 [loadicon](/windows/win32/api/winuser/nf-winuser-loadmenuw) 함수와 같은 Windows 리소스 관리 API에 래퍼를 구현 하기 위해 디자인 되었습니다.
 
 클래스는 LPCTSTR 인수를 수락 하 고 다른 하나는 UINT 인수를 허용 하는 두 개의 생성자 오버 로드를 정의 합니다. UINT 인수는 MAKEINTRESOURCE 매크로 및 클래스의 단일 데이터 멤버 [m_lpstr](#_u_stringorid__m_lpstr)에 저장 된 결과를 사용 하 여 Windows 리소스 관리 함수와 호환 되는 리소스 형식으로 변환 됩니다. LPCTSTR 생성자에 대 한 인수는 변환 하지 않고 직접 저장 됩니다.
 

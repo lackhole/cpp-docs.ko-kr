@@ -44,18 +44,18 @@ helpviewer_keywords:
 - cwprintf_s_l function
 ms.assetid: c28504fe-0d20-4f06-8f97-ee33225922ad
 ms.openlocfilehash: 3652587c9622c2eb9fe316782d1b1c7c9644dc8f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606521"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739836"
 ---
-# <a name="cprintfs-cprintfsl-cwprintfs-cwprintfsl"></a>_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
+# <a name="_cprintf_s-_cprintf_s_l-_cwprintf_s-_cwprintf_s_l"></a>_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
 
 형식을 지정하고 콘솔에 출력합니다. 이러한 버전의 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 향상된 보안 기능이 포함되어 있습니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -97,16 +97,16 @@ int _cwprintf_s_l(
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 형식 및 일련의 문자 및 값을 콘솔에 직접 인쇄를 사용 하는 **_putch** 함수 (**_putwch** 에 대 한 **_cwprintf_s**) 출력 문자입니다. 각 *인수* (있는 경우) 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. 동일한 양식과 함수를 형식에는 *형식* 에 대 한 매개 변수를 [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) 함수입니다. 와 달리 합니다 **fprintf_s**를 **printf_s**, 및 **sprintf_s** 함수를 모두 **_cprintf_s** 나 **_cwprintf_s** 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 줄 바꿈 문자를 변환 하면 출력 합니다.
+이 함수는 **_putch** 함수 ( **_putwch** for **_cwprintf_s**)를 사용 하 여 문자를 출력 하는 일련의 문자 및 값을 콘솔에 직접 포맷 하 고 인쇄 합니다. 각 *인수* (있는 경우)는 *형식*의 해당 형식 사양에 따라 변환 되 고 출력 됩니다. 형식은 [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) 함수의 *format* 매개 변수와 동일한 양식 및 함수를 포함 합니다. **Fprintf_s**, **printf_s**및 **sprintf_s** 함수와 달리 **_cprintf_s** 및 **_cwprintf_s** 는 출력 시 줄 바꿈 문자를 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 변환 하지 않습니다.
 
-중요 한 차이점이 **_cwprintf_s** Windows NT에서 사용 될 때 유니코드 문자를 표시 합니다. 와 달리 **_cprintf_s**하십시오 **_cwprintf_s** 현재 콘솔 로캘을 사용
+중요 한 차이점은 **_cwprintf_s** 는 Windows NT에서 사용 될 때 유니코드 문자를 표시 한다는 것입니다. **_Cprintf_s**와 달리 **_cwprintf_s** 는 현재 콘솔 로캘을 사용 합니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 > [!IMPORTANT]
 > *format*이 사용자 정의 문자열이 아닌지 확인하세요.
 
-안전 하지 않은 버전과 같이 (참조 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)), 이러한 함수는 매개 변수 유효성 검사 및에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개변수유효성검사](../../c-runtime-library/parameter-validation.md)이면 *형식* 가 null 포인터입니다. 이러한 함수는 형식 문자열 자체도 유효성이 검사된다는 점에서 안전하지 않은 버전과 다릅니다. 알 수 없거나 잘못된 형식의 형식 지정자가 있는 경우 이러한 함수는 잘못된 매개 변수 처리기를 호출합니다. 모든 경우에 실행을 계속 하도록 허용 된 경우 함수는-1을 반환 하 고 설정 **errno** 하 **EINVAL**합니다.
+안전 하지 않은 버전 ( [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)참조)과 마찬가지로 이러한 함수는 매개 변수의 유효성을 검사 하 고 *형식이* null 인 경우 매개 변수 [유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 놓고. 이러한 함수는 형식 문자열 자체도 유효성이 검사된다는 점에서 안전하지 않은 버전과 다릅니다. 알 수 없거나 잘못된 형식의 형식 지정자가 있는 경우 이러한 함수는 잘못된 매개 변수 처리기를 호출합니다. 모든 경우에서 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

@@ -100,12 +100,12 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nBulletIndent
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-ms.openlocfilehash: c8eba16779b837b33912006a2ff3b7cdfa73f1e6
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b32578cc3c9ad4f7a89b8ee76449259c0fa0b43b
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502640"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741520"
 ---
 # <a name="cricheditview-class"></a>CRichEditView 클래스
 
@@ -763,7 +763,7 @@ void OnCharEffect(
 
 이 함수를 호출할 때마다 현재 선택 항목에 대해 지정 된 서식 지정 효과가 설정/해제 됩니다.
 
-*Dwmask* 및 *dwEffect* 매개 변수 및 해당 값에 대 한 자세한 내용은 Windows SDK [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 의 해당 데이터 멤버를 참조 하세요.
+*Dwmask* 및 *dwEffect* 매개 변수 및 해당 값에 대 한 자세한 내용은 Windows SDK [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) 의 해당 데이터 멤버를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -997,7 +997,7 @@ void OnUpdateCharEffect(
 
 Mask *dwmask* 는 확인할 문자 서식 특성을 지정 합니다. *DwEffect* 플래그는 설정/해제할 문자 서식 특성을 나열 합니다.
 
-*Dwmask* 및 *dwEffect* 매개 변수 및 해당 값에 대 한 자세한 내용은 Windows SDK [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 의 해당 데이터 멤버를 참조 하세요.
+*Dwmask* 및 *dwEffect* 매개 변수 및 해당 값에 대 한 자세한 내용은 Windows SDK [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) 의 해당 데이터 멤버를 참조 하세요.
 
 ### <a name="example"></a>예제
 
