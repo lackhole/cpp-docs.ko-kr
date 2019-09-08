@@ -33,9 +33,9 @@ ms.locfileid: "62242632"
 ---
 # <a name="creating-new-documents-windows-and-views"></a>새 문서, 창 및 뷰 만들기
 
-다음 그림에서는 문서, 뷰 및 프레임 창 만들기 프로세스의 개요를 제공합니다. 참여 하는 개체에 중점을 둔 다른 문서는 추가 세부 정보를 제공 합니다.
+다음 그림에서는 문서, 뷰 및 프레임 창 만들기 프로세스의 개요를 제공합니다. 관련 개체에 대한 추가 세부 정보는 다른 기사를 참조합니다.
 
-이 프로세스를 완료 하면 협동 개체가 존재 하 고 서로에 대 한 포인터를 저장 합니다. 다음 그림에서는 개체 생성 하는 시퀀스를 보여 줍니다. 그림에는 순서를 따를 수 있습니다.
+이 프로세스를 완료하면 협력 개체가 존재하게 되고 서로에 대한 포인터를 저장합니다. 다음 그림에서는 개체가 생성되는 순서를 보여 줍니다. 그림의 순서를 따를 수 있습니다.
 
 ![문서 만들기 시퀀스](../mfc/media/vc387l1.gif "문서 만들기 시퀀스") <br/>
 문서를 만드는 순서
@@ -46,7 +46,7 @@ ms.locfileid: "62242632"
 ![뷰를 만드는 순서](../mfc/media/vc387l3.gif "뷰 만들기 시퀀스") <br/>
 뷰를 만드는 순서
 
-프레임 워크를 새 문서, 뷰 및 프레임 창 개체를 초기화 하는 방법에 대 한 내용은 클래스를 참조 하십시오 [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md)를 [CFrameWnd](../mfc/reference/cframewnd-class.md)합니다 [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), 및 [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) MFC 라이브러리 참조에서 합니다. 도 참조 하세요 [Technical Note 22](../mfc/tn022-standard-commands-implementation.md), 해당 프레임 워크의 표준 명령에 대 한 설명은 아래 추가로 생성 및 초기화 프로세스를 설명 하는 합니다 **새로 만들기** 및 **엽니다** 항목에 **파일** 메뉴.
+프레임워크가 새 문서, 뷰 및 프레임 창 개체를 초기화하는 방법에 대한 내용은 MFC 라이브러리 참조에서 [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) 및 [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) 클래스를 참조합니다. 또한 **파일** 메뉴의 **새로 만들기**와 **열기** 항목에 대한 프레임워크의 표준 명령 설명에서 생성 및 초기화 절차에 대한 설명은 [Technical Note 22](../mfc/tn022-standard-commands-implementation.md)를 참조합니다.
 
 ##  <a name="_core_initializing_your_own_additions_to_these_classes"></a> 이러한 클래스에 대 한 고유한 추가 초기화
 
