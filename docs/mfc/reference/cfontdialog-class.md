@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CFontDialog [MFC], IsUnderline
 - CFontDialog [MFC], m_cf
 ms.assetid: 6228d500-ed0f-4156-81e5-ab0d57d1dcf4
-ms.openlocfilehash: b538acd564402459a05cc96303b63a35a99ba243
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c0d0c37d055d9b337f7b709b4ee3d299daae7658
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69506466"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741550"
 ---
 # <a name="cfontdialog-class"></a>CFontDialog 클래스
 
@@ -78,7 +78,7 @@ class CFontDialog : public CCommonDialog
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CFontDialog::m_cf](#m_cf)|`CFontDialog` 개체를 사용자 지정 하는 데 사용 되는 구조체입니다.|
 
@@ -146,7 +146,7 @@ CFontDialog(
 글꼴의 일부 특성을 설정할 수 있도록 하는 [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) 데이터 구조에 대 한 포인터입니다.
 
 *charFormat*<br/>
-Rich edit 컨트롤에서 글꼴의 일부 특성을 설정할 수 있도록 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 데이터 구조에 대 한 포인터입니다.
+Rich edit 컨트롤에서 글꼴의 일부 특성을 설정할 수 있도록 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) 데이터 구조에 대 한 포인터입니다.
 
 *dwFlags*<br/>
 하나 이상의 글꼴 선택 플래그를 지정합니다. 비트 OR 연산자를 사용하여 하나 이상의 미리 설정된 값을 결합할 수 있습니다. `m_cf.Flag` 구조체 멤버를 수정하는 경우 기본 동작을 그대로 유지하려면 변경에서 비트 OR 연산자를 사용해야 합니다. 이러한 각 플래그에 대 한 자세한 내용은 Windows SDK [CHOOSEFONT](/windows/win32/api/commdlg/ns-commdlg-choosefontw) 구조체에 대 한 설명을 참조 하십시오.
@@ -203,7 +203,7 @@ void GetCharFormat(CHARFORMAT& cf) const;
 ### <a name="parameters"></a>매개 변수
 
 *cf*<br/>
-선택한 글꼴의 문자 서식에 대 한 정보를 포함 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 구조체입니다.
+선택한 글꼴의 문자 서식에 대 한 정보를 포함 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) 구조체입니다.
 
 ##  <a name="getcolor"></a>  CFontDialog::GetColor
 

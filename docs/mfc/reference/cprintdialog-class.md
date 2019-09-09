@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CPrintDialog [MFC], PrintSelection
 - CPrintDialog [MFC], m_pd
 ms.assetid: 5bdb2424-adf8-433d-a97c-df11a83bc4e4
-ms.openlocfilehash: 1f4a4dbec9a1c79ac1e0cec925156ae7db4c293e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ccc673d665d6d5beb92f398b21e6ffd313a58fc9
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502895"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741357"
 ---
 # <a name="cprintdialog-class"></a>CPrintDialog 클래스
 
@@ -104,7 +104,7 @@ class CPrintDialog : public CCommonDialog
 
 응용 프로그램에서 프레임 워크의 개입 없이 인쇄를 처리 하려는 경우 제공 된 생성자를 사용 `CPrintDialog` 하 여 "있는 그대로" 클래스를 사용 하거나,에서 `CPrintDialog` 사용자의 대화 상자 클래스를 파생 시키고 필요에 맞게 생성자를 작성할 수 있습니다. 두 경우 모두 이러한 대화 상자는 클래스 `CCommonDialog`에서 파생 되므로 표준 MFC 대화 상자 처럼 동작 합니다.
 
-`CPrintDialog` 개체를 사용 하려면 먼저 `CPrintDialog` 생성자를 사용 하 여 개체를 만듭니다. 대화 상자를 생성 한 후에는 [m_pd](#m_pd) 구조체의 값을 설정 하거나 수정 하 여 대화 상자의 컨트롤 값을 초기화할 수 있습니다. 구조체 `m_pd` 는 [printdlg](/windows/win32/api/commdlg/ns-commdlg-pdw)유형입니다. 이 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
+`CPrintDialog` 개체를 사용 하려면 먼저 `CPrintDialog` 생성자를 사용 하 여 개체를 만듭니다. 대화 상자를 생성 한 후에는 [m_pd](#m_pd) 구조체의 값을 설정 하거나 수정 하 여 대화 상자의 컨트롤 값을 초기화할 수 있습니다. 구조체 `m_pd` 는 [printdlg](/windows/win32/api/commdlg/ns-commdlg-printdlga)유형입니다. 이 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
 
 `m_pd` `GlobalFree` 및 멤버`hDevNames` 에 대해 고유한 핸들을 제공 하지 않는 경우 대화 상자를 사용 하 여 작업을 완료 하면 이러한 핸들에 대해 Windows 함수를 `hDevMode` 호출 해야 합니다. 에서 `CWinApp::OnFilePrintSetup`제공 하는 프레임 워크의 인쇄 설정 구현을 사용할 때 이러한 핸들을 해제할 필요가 없습니다. 핸들은에서 `CWinApp` 유지 관리 되며의 소멸자에서 `CWinApp`해제 됩니다. 독립 실행형을 사용 하 `CPrintDialog` 는 경우에만 이러한 핸들을 해제 해야 합니다.
 
@@ -159,7 +159,7 @@ CPrintDialog(
 표준 Windows 인쇄 대화 상자 또는 인쇄 설정 대화 상자를 표시할지 여부를 지정 합니다. 표준 Windows 인쇄 설정 대화 상자를 표시 하려면이 매개 변수를 TRUE로 설정 합니다. FALSE로 설정 하 여 Windows 인쇄 대화 상자를 표시 합니다. *Bprintsetuponly* 가 FALSE 인 경우 인쇄 설정 옵션 단추는 인쇄 대화 상자에도 표시 됩니다.
 
 *dwFlags*<br/>
-비트 OR 연산자를 사용 하 여 대화 상자의 설정을 사용자 지정 하는 데 사용할 수 있는 하나 이상의 플래그입니다. 예를 들어 PD_ALLPAGES 플래그는 문서의 모든 페이지에 기본 인쇄 범위를 설정 합니다. 이러한 플래그에 대 한 자세한 내용은 Windows SDK에서 [Printdlg](/windows/win32/api/commdlg/ns-commdlg-pdw) 구조체를 참조 하세요.
+비트 OR 연산자를 사용 하 여 대화 상자의 설정을 사용자 지정 하는 데 사용할 수 있는 하나 이상의 플래그입니다. 예를 들어 PD_ALLPAGES 플래그는 문서의 모든 페이지에 기본 인쇄 범위를 설정 합니다. 이러한 플래그에 대 한 자세한 내용은 Windows SDK에서 [Printdlg](/windows/win32/api/commdlg/ns-commdlg-printdlga) 구조체를 참조 하세요.
 
 *pParentWnd*<br/>
 대화 상자의 부모 또는 소유자 창에 대 한 포인터입니다.
@@ -418,7 +418,7 @@ PRINTDLG& m_pd;
 
 ### <a name="remarks"></a>설명
 
-`CPrintDialog` 개체를 생성 한 후에는 [DoModal](#domodal) 멤버 함수를 호출 하기 전에를 사용 `m_pd` 하 여 대화 상자의 다양 한 측면을 설정할 수 있습니다. `m_pd` 구조체에 대 한 자세한 내용은 Windows SDK [printdlg](/windows/win32/api/commdlg/ns-commdlg-pdw) 를 참조 하세요.
+`CPrintDialog` 개체를 생성 한 후에는 [DoModal](#domodal) 멤버 함수를 호출 하기 전에를 사용 `m_pd` 하 여 대화 상자의 다양 한 측면을 설정할 수 있습니다. `m_pd` 구조체에 대 한 자세한 내용은 Windows SDK [printdlg](/windows/win32/api/commdlg/ns-commdlg-printdlga) 를 참조 하세요.
 
 `m_pd` 데이터 멤버를 직접 수정 하는 경우 모든 기본 동작을 재정의 합니다.
 

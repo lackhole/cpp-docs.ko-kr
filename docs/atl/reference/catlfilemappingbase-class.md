@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlFileMappingBase class
 ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
-ms.openlocfilehash: 3d9627c7a19cccc0cd3aec46d71b23c8a84711bf
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a20a8f6c00f9404aa819b87a6a69ad2c08fb4561
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497779"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739557"
 ---
 # <a name="catlfilemappingbase-class"></a>CAtlFileMappingBase 클래스
 
@@ -40,14 +40,14 @@ class CAtlFileMappingBase
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase)|생성자입니다.|
 |[CAtlFileMappingBase::~CAtlFileMappingBase](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAtlFileMappingBase::CopyFrom](#copyfrom)|파일 매핑 개체에서 복사 하려면이 메서드를 호출 합니다.|
 |[CAtlFileMappingBase::GetData](#getdata)|파일 매핑 개체에서 데이터를 가져오려면이 메서드를 호출 합니다.|
@@ -60,7 +60,7 @@ class CAtlFileMappingBase
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CAtlFileMappingBase::operator =](#operator_eq)|현재 파일 매핑 개체를 다른 파일 매핑 개체로 설정 합니다.|
 
@@ -190,7 +190,7 @@ HRESULT MapFile(
 매핑을 시작할 파일 오프셋입니다. 오프셋 값은 시스템의 메모리 할당 세분성의 배수 여야 합니다.
 
 *dwMappingProtection*<br/>
-파일이 매핑될 때 파일 보기에 필요한 보호입니다. Windows SDK에서 *Flprotect* in [createfilemapping에서](/windows/win32/api/winbase/nf-winbase-createfilemappingw) 를 참조 하세요.
+파일이 매핑될 때 파일 보기에 필요한 보호입니다. Windows SDK에서 *Flprotect* in [createfilemapping에서](/windows/win32/api/winbase/nf-winbase-createfilemappinga) 를 참조 하세요.
 
 *dwViewDesiredAccess*<br/>
 파일 보기에 대 한 액세스 형식을 지정 합니다. 따라서 파일에 의해 매핑되는 페이지의 보호를 지정 합니다. Windows SDK에서 *dwDesiredAccess* 의 [mapviewoffileex가](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) 을 참조 하세요.
@@ -201,7 +201,7 @@ HRESULT MapFile(
 
 ### <a name="remarks"></a>설명
 
-파일 매핑 개체를 만든 후 파일 크기는 파일 매핑 개체의 크기를 초과 하지 않아야 합니다. 이 경우 모든 파일의 콘텐츠를 공유할 수 있는 것은 아닙니다. 자세한 내용은 Windows SDK [createfilemapping에서](/windows/win32/api/winbase/nf-winbase-createfilemappingw) and [mapviewoffileex가](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) 을 참조 하세요.
+파일 매핑 개체를 만든 후 파일 크기는 파일 매핑 개체의 크기를 초과 하지 않아야 합니다. 이 경우 모든 파일의 콘텐츠를 공유할 수 있는 것은 아닙니다. 자세한 내용은 Windows SDK [createfilemapping에서](/windows/win32/api/winbase/nf-winbase-createfilemappinga) and [mapviewoffileex가](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) 을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -233,7 +233,7 @@ HRESULT MapSharedMem(
 매핑 개체가 이미 존재 하는 경우 TRUE로 설정 된 부울 값을 가리킵니다.
 
 *lpsa*<br/>
-반환 된 핸들이 자식 `SECURITY_ATTRIBUTES` 프로세스에서 상속 될 수 있는지 여부를 결정 하는 구조체에 대 한 포인터입니다. Windows SDK에서 *Lpattributes* in [createfilemapping에서](/windows/win32/api/winbase/nf-winbase-createfilemappingw) 를 참조 하세요.
+반환 된 핸들이 자식 `SECURITY_ATTRIBUTES` 프로세스에서 상속 될 수 있는지 여부를 결정 하는 구조체에 대 한 포인터입니다. Windows SDK에서 *Lpattributes* in [createfilemapping에서](/windows/win32/api/winbase/nf-winbase-createfilemappinga) 를 참조 하세요.
 
 *dwMappingProtection*<br/>
 파일이 매핑될 때 파일 보기에 필요한 보호입니다. Windows SDK에서 *flprotect* 를 `CreateFileMapping` 참조 하세요.
@@ -247,7 +247,7 @@ HRESULT MapSharedMem(
 
 ### <a name="remarks"></a>설명
 
-`MapShareMem`[createfilemapping에서](/windows/win32/api/winbase/nf-winbase-createfilemappingw)에서 만든 기존 파일 매핑 개체를 프로세스 간에 공유할 수 있도록 합니다.
+`MapShareMem`[createfilemapping에서](/windows/win32/api/winbase/nf-winbase-createfilemappinga)에서 만든 기존 파일 매핑 개체를 프로세스 간에 공유할 수 있도록 합니다.
 
 ##  <a name="openmapping"></a>  CAtlFileMappingBase::OpenMapping
 

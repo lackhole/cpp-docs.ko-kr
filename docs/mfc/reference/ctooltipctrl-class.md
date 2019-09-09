@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: 046c8a3f99e8b505ee6a6e8b534318263090e07d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: bf32671eb3535de1bf072e24bc642145e87c84ee
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502263"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741413"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl Class
 
@@ -377,7 +377,7 @@ CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpToolInfo*<br/>
-도구 설명의 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-toolinfow) 구조에 대 한 포인터입니다.
+도구 설명의 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) 구조에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -399,7 +399,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*lpToolInfo*|제한이 현재 도구 설명 창에 대 한 정보를 수신 하는 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-toolinfow) 구조체에 대 한 포인터입니다.|
+|*lpToolInfo*|제한이 현재 도구 설명 창에 대 한 정보를 수신 하는 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) 구조체에 대 한 포인터입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -598,7 +598,7 @@ BOOL GetToolInfo(
 
 ### <a name="remarks"></a>설명
 
-`hwnd` *Ctoolinfo* 에서 참조 하는 [toolinfo](/windows/win32/api/commctrl/ns-commctrl-toolinfow) 구조의 및 `uId` 멤버가 도구를 식별 합니다. 이전 호출 `AddTool`을 통해 도구 설명 컨트롤에 해당 도구를 등록 한 경우이 구조는 `TOOLINFO` 도구에 대 한 정보로 채워집니다.
+`hwnd` *Ctoolinfo* 에서 참조 하는 [toolinfo](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) 구조의 및 `uId` 멤버가 도구를 식별 합니다. 이전 호출 `AddTool`을 통해 도구 설명 컨트롤에 해당 도구를 등록 한 경우이 구조는 `TOOLINFO` 도구에 대 한 정보로 채워집니다.
 
 ##  <a name="hittest"></a>  CToolTipCtrl::HitTest
 
@@ -620,7 +620,7 @@ BOOL HitTest(
 테스트할 점의 좌표 `CPoint` 를 포함 하는 개체에 대 한 포인터입니다.
 
 *lpToolInfo*<br/>
-도구에 대 한 정보를 포함 하는 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-toolinfow) 구조체에 대 한 포인터입니다.
+도구에 대 한 정보를 포함 하는 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -845,7 +845,7 @@ void SetToolInfo(LPTOOLINFO lpToolInfo);
 ### <a name="parameters"></a>매개 변수
 
 *lpToolInfo*<br/>
-설정할 정보를 지정 하는 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-toolinfow) 구조체에 대 한 포인터입니다.
+설정할 정보를 지정 하는 [Toolinfo](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) 구조체에 대 한 포인터입니다.
 
 ##  <a name="settoolrect"></a>  CToolTipCtrl::SetToolRect
 

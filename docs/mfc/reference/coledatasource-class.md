@@ -36,12 +36,12 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-ms.openlocfilehash: 5e6b49edfedc8e7311e9ecc21ca065ad99c15c62
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 062234b9bc3c538e8cd5fcade002a2892eea259f
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504134"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741614"
 ---
 # <a name="coledatasource-class"></a>COleDataSource 클래스
 
@@ -117,7 +117,7 @@ void CacheData(
 데이터를 제공할 클립보드 형식입니다. 이 매개 변수는 미리 정의 된 클립보드 형식 또는 네이티브 Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) 함수에서 반환 되는 값 중 하나일 수 있습니다.
 
 *lpStgMedium*<br/>
-지정 된 형식의 데이터를 포함 하는 [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) 구조체를 가리킵니다.
+지정 된 형식의 데이터를 포함 하는 [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) 구조체를 가리킵니다.
 
 *lpFormatEtc*<br/>
 데이터를 제공 하는 형식을 설명 하는 [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) 구조를 가리킵니다. *Cfformat*으로 지정 된 클립보드 형식을 벗어나는 추가 형식 정보를 지정 하려면이 매개 변수에 대 한 값을 제공 합니다. 이 값이 NULL 이면 `FORMATETC` 구조체의 다른 필드에 기본값이 사용 됩니다.
@@ -126,13 +126,13 @@ void CacheData(
 
 이 함수는 즉시 렌더링을 사용 하 여 데이터를 제공 하므로 데이터를 제공 해야 합니다. 데이터는 필요할 때까지 캐시 됩니다.
 
-[STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) 구조체를 사용 하 여 데이터를 제공 합니다. 제공 하는 데이터 양이 `CacheGlobalData` HGLOBAL를 사용 하 여 효율적으로 전송할 수 있을 만큼 작은 경우에도 멤버 함수를 사용할 수 있습니다.
+[STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) 구조체를 사용 하 여 데이터를 제공 합니다. 제공 하는 데이터 양이 `CacheGlobalData` HGLOBAL를 사용 하 여 효율적으로 전송할 수 있을 만큼 작은 경우에도 멤버 함수를 사용할 수 있습니다.
 
 의 `CacheData` 멤버에`ptd` 대 한 호출 및 lpStgMedium의 내용은 호출자가 아닌 데이터 개체에서 소유 합니다. `lpFormatEtc`
 
 지연 렌더링을 사용 하려면 [delayrenderdata](#delayrenderdata) 또는 [delayrenderfiledata](#delayrenderfiledata) 멤버 함수를 호출 합니다. MFC에서 처리 되는 지연 된 렌더링에 대 한 자세한 내용은 데이터 [개체 및 데이터 원본 문서를 참조 하세요. 조작](../../mfc/data-objects-and-data-sources-manipulation.md).
 
-자세한 내용은 Windows SDK [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) 구조체를 참조 하십시오.
+자세한 내용은 Windows SDK [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) 구조체를 참조 하십시오.
 
 자세한 내용은 Windows SDK에서 [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) 을 참조 하세요.
 
@@ -366,7 +366,7 @@ virtual BOOL OnRenderData(
 정보를 요청 하는 형식을 지정 하는 [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) 구조체를 가리킵니다.
 
 *lpStgMedium*<br/>
-데이터가 반환 되는 [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) 구조체를 가리킵니다.
+데이터가 반환 되는 [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) 구조체를 가리킵니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -380,7 +380,7 @@ virtual BOOL OnRenderData(
 
 이는 고급 재정의 가능입니다. 요청 된 형식 및 중간에 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라이 함수의 다른 버전 중 하나를 대신 재정의할 수 있습니다. 데이터가 작고 크기가 고정 되어 있으면를 재정의 `OnRenderGlobalData`합니다. 데이터가 파일에 있거나 가변 크기인 경우를 재정의 `OnRenderFileData`합니다.
 
-자세한 내용은 Windows SDK에서 [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) 및 [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) 구조체, [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) 열거형 형식 및 [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) 를 참조 하세요.
+자세한 내용은 Windows SDK에서 [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) 및 [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) 구조체, [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) 열거형 형식 및 [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) 를 참조 하세요.
 
 ##  <a name="onrenderfiledata"></a>  COleDataSource::OnRenderFileData
 
@@ -461,7 +461,7 @@ virtual BOOL OnSetData(
 데이터를 대체 하는 형식을 지정 하는 [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) 구조체를 가리킵니다.
 
 *lpStgMedium*<br/>
-`COleDataSource` 개체의 현재 콘텐츠를 대체할 데이터를 포함 하는 [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) 구조체를 가리킵니다.
+`COleDataSource` 개체의 현재 콘텐츠를 대체할 데이터를 포함 하는 [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) 구조체를 가리킵니다.
 
 *bRelease*<br/>
 함수 호출을 완료 한 후 저장소 미디어의 소유권이 있는 사용자를 나타냅니다. 호출자는 저장소 미디어를 대신해 할당 된 리소스를 해제할 책임이 있는 사용자를 결정 합니다. 호출자가 *bRelease*를 설정 하 여이를 수행 합니다. *BRelease* 가 0이 아닌 경우 데이터 원본은 소유권을 가지 며 사용이 끝나면 미디어를 해제 합니다. *BRelease* 가 0 이면 호출자가 소유권을 유지 하 고 데이터 소스는 호출 기간 동안만 저장소 미디어를 사용할 수 있습니다.
@@ -476,7 +476,7 @@ virtual BOOL OnSetData(
 
 기본 구현은 아무 작업도 수행하지 않습니다. 지정 된 형식의 데이터를 바꾸려면이 함수를 재정의 합니다. 이는 고급 재정의 가능입니다.
 
-자세한 내용은 Windows SDK에서 [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) 및 [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) 구조체와 [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) 및 [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) 함수를 참조 하세요.
+자세한 내용은 Windows SDK에서 [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) 및 [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) 구조체와 [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) 및 [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) 함수를 참조 하세요.
 
 ##  <a name="setclipboard"></a>  COleDataSource::SetClipboard
 

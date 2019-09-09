@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComCurrency class
 ms.assetid: a1c3d10a-bba6-40cc-8bcf-aed9023c8a9e
-ms.openlocfilehash: 11463b7113876abdf0743b9f8c7df373fadd99ef
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d6eb67e04ebb2b9084874a586eafc744df2d3f40
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497291"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739777"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency 클래스
 
@@ -42,7 +42,7 @@ class CComCurrency
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CComCurrency::GetCurrencyPtr](#getcurrencyptr)|`m_currency` 데이터 멤버의 주소를 반환합니다.|
 |[CComCurrency::GetFraction](#getfraction)|`CComCurrency` 개체의 소수 부분을 반환하려면 이 메서드를 호출합니다.|
@@ -74,7 +74,7 @@ class CComCurrency
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CComCurrency::m_currency](#m_currency)|클래스 인스턴스에서 만든 통화 변수입니다.|
 
@@ -642,5 +642,5 @@ HRESULT SetInteger(LONGLONG nInteger);
 ## <a name="see-also"></a>참고자료
 
 [COleCurrency 클래스](../../mfc/reference/colecurrency-class.md)<br/>
-[최신](/windows/win32/api/wtypes/ns-wtypes-cy)<br/>
+[최신](/windows/win32/api/wtypes/ns-wtypes-cy~r1)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)
