@@ -1,21 +1,21 @@
 ---
-title: nonbrowsable (C++ COM 특성)
+title: 비 검색 가능C++ (COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.nonbrowsable
 helpviewer_keywords:
 - nonbrowsable attribute
 ms.assetid: e71a98e7-4b65-454a-9829-342b9f2a84be
-ms.openlocfilehash: 0a5e01c0fde49c7debb7749f5a1d148acb9cca6f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b1849aa75e61ea5e369a277cab0b1327f48a28a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409124"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514390"
 ---
 # <a name="nonbrowsable"></a>nonbrowsable
 
-인터페이스 멤버를 속성 브라우저에 표시 되지 해야 나타냅니다.
+인터페이스 멤버를 속성 브라우저에 표시 하지 않아야 함을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,7 +25,7 @@ ms.locfileid: "62409124"
 
 ## <a name="remarks"></a>설명
 
-**nonbrowsable** C++ 특성에 동일한 기능을 합니다 [nonbrowsable](/windows/desktop/Midl/nonbrowsable) MIDL 특성입니다.
+**비** C++ 검색 가능 특성에는 검색 가능 하지 않은 [MIDL 특성과](/windows/win32/Midl/nonbrowsable) 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 

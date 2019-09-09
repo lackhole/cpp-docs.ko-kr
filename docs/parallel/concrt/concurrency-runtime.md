@@ -6,28 +6,28 @@ helpviewer_keywords:
 - ConcRT (see Concurrency Runtime)
 - Concurrency Runtime
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
-ms.openlocfilehash: fa64e2536fd1697e839f1b4921a290e1b7a30a35
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: a96c54a01788f03158b9fcdcd0bf72eb2b1ce84d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449686"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510558"
 ---
 # <a name="concurrency-runtime"></a>동시성 런타임
 
 C++용 동시성 런타임은 강력하고 확장 가능하며 응답성이 높은 병렬 애플리케이션을 작성하는 데 도움이 됩니다. 이는 동시성과 관련된 인프라 세부 정보를 관리할 필요가 없도록 추상화 수준을 높입니다. 또한 이러한 동시성 런타임을 사용하여 애플리케이션의 서비스 품질 요구 사항을 충족하는 일정 예약 정책을 지정할 수도 있습니다. 다음 리소스는 동시성 런타임 작업을 시작하는 데 도움이 됩니다.
 
-참조 설명서를 참조 하세요 [참조](../../parallel/concrt/reference/reference-concurrency-runtime.md)합니다.
+참조 설명서 [는 참조를 참조 하세요.](../../parallel/concrt/reference/reference-concurrency-runtime.md)
 
 > [!TIP]
->  동시성 런타임은 C++11 기능에 크게 의존하며 보다 최신 C++ 스타일을 채택합니다. 자세한 내용은 [진화 C++ ](../../cpp/welcome-back-to-cpp-modern-cpp.md)합니다.
+>  동시성 런타임은 C++11 기능에 크게 의존하며 보다 최신 C++ 스타일을 채택합니다. 자세히 알아보려면 [을 ( C++를) 다시 시작 ](../../cpp/welcome-back-to-cpp-modern-cpp.md)하세요.
 
 ## <a name="choosing-concurrency-runtime-features"></a>동시성 런타임 기능 선택
 
 |||
 |-|-|
 |[개요](../../parallel/concrt/overview-of-the-concurrency-runtime.md)|동시성 런타임이 중요한 이유와 해당 핵심 기능을 설명합니다.|
-|[기타 동시성 모델 비교](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md)|애플리케이션 요구 사항에 가장 잘 맞는 동시성 모델을 사용할 수 있도록 동시성 런타임과 Windows 스레드 풀, OpenMP 등의 기타 동시성 모델을 비교하는 방법을 보여 줍니다.|
+|[다른 동시성 모델과 비교](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md)|애플리케이션 요구 사항에 가장 잘 맞는 동시성 모델을 사용할 수 있도록 동시성 런타임과 Windows 스레드 풀, OpenMP 등의 기타 동시성 모델을 비교하는 방법을 보여 줍니다.|
 |[OpenMP에서 동시성 런타임으로 마이그레이션](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)|OpenMP와 동시성 런타임을 비교하고 기존 OpenMP 코드를 동시성 런타임을 사용하도록 마이그레이션하는 방법에 대한 예제를 제공합니다.|
 |[PPL(병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md)|병렬 루프, 작업 및 병렬 컨테이너를 제공하는 PPL을 소개합니다.|
 |[비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)|비동기 에이전트 및 메시지 전달을 사용하여 데이터 흐름 및 파이프라이닝 작업을 애플리케이션에 쉽게 통합하는 방법을 소개합니다.|
@@ -61,9 +61,9 @@ C++용 동시성 런타임은 강력하고 확장 가능하며 응답성이 높�
 
 |||
 |-|-|
-|[UWP 앱용 C++ 비동기 작업 만들기](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)|동시성 런타임을 사용 하 여 UWP 앱에서 비동기 작업을 생성 하는 경우 기억해 야 할 주요 사항을 설명 합니다.|
-|[연습: 작업 및 XML HTTP 요청을 사용하여 연결](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)|PPL 작업을 결합 하는 방법을 보여 줍니다 합니다 `IXMLHTTPRequest2` 및 `IXMLHTTPRequest2Callback` UWP 앱에서 웹 서비스에 HTTP GET 및 POST 요청을 보내는 인터페이스입니다.|
-|[Windows 런타임 앱 샘플](https://code.msdn.microsoft.com/windowsapps)|다운로드 가능한 코드 샘플 및 데모를 포함 합니다. Windows 용 앱 8.x 합니다. C++ 샘플에서는 백그라운드에서 데이터를 처리하여 UX 응답성을 유지하기 위한 PPL 작업 같은 동시성 런타임 기능을 사용합니다.|
+|[UWP 앱용 C++ 비동기 작업 만들기](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)|동시성 런타임를 사용 하 여 UWP 앱에서 비동기 작업을 생성할 때 염두에 두어야 하는 몇 가지 주요 사항에 대해 설명 합니다.|
+|[연습: 작업 및 XML HTTP 요청을 사용하여 연결](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)|PPL 작업을 `IXMLHTTPRequest2` 및 `IXMLHTTPRequest2Callback` 인터페이스와 결합 하 여 UWP 앱의 웹 서비스에 HTTP GET 및 POST 요청을 보내는 방법을 보여 줍니다.|
+|[Windows 런타임 앱 샘플](https://code.msdn.microsoft.com/windowsapps)|Windows 8.x 용 다운로드 가능한 코드 샘플 및 데모 앱이 포함 되어 있습니다. C++ 샘플에서는 백그라운드에서 데이터를 처리하여 UX 응답성을 유지하기 위한 PPL 작업 같은 동시성 런타임 기능을 사용합니다.|
 
 ## <a name="dataflow-programming-in-the-asynchronous-agents-library"></a>비동기 에이전트 라이브러리의 데이터 흐름 프로그래밍
 
@@ -98,10 +98,10 @@ C++용 동시성 런타임은 강력하고 확장 가능하며 응답성이 높�
 
 |||
 |-|-|
-|[Hilo의 비동기 프로그래밍 패턴 및 팁(C++ 및 XAML을 사용하는 Windows 스토어 앱)](https://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|인 hilo에서 비동기 작업을 구현 하기 동시성 런타임을 사용 하는 방법을 사용 하 여 Windows 런타임 앱 C++ 및 XAML입니다.|
+|[Hilo의 비동기 프로그래밍 패턴 및 팁(C++ 및 XAML을 사용하는 Windows 스토어 앱)](/previous-versions/windows/apps/jj160321(v=win.10))|동시성 런타임를 사용 하 여 및 XAML을 사용 하 C++ 는 Windows 런타임 앱 인 Hilo에서 비동기 작업을 구현 하는 방법을 알아봅니다.|
 |[네이티브 코드 블로그의 병렬 프로그래밍](https://go.microsoft.com/fwlink/p/?linkid=183873)|동시성 런타임의 병렬 프로그래밍에 대한 자세한 추가 블로그 기사를 제공합니다.|
 |[C++ 및 네이티브 코드 포럼에서 병렬 컴퓨팅](https://go.microsoft.com/fwlink/p/?linkid=183874)|동시성 런타임에 대한 커뮤니티 토론에 참여할 수 있습니다.|
-|[병렬 프로그래밍](/dotnet/standard/parallel-programming/index)|.NET Framework에서 사용할 수 있는 병렬 프로그래밍 모델에 설명 합니다.|
+|[병렬 프로그래밍](/dotnet/standard/parallel-programming/index)|.NET Framework에서 사용할 수 있는 병렬 프로그래밍 모델에 대해 알려줍니다.|
 
 ## <a name="see-also"></a>참고자료
 
