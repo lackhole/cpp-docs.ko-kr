@@ -2,16 +2,16 @@
 title: 속성(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 64c7bc56-3191-4cd5-bdf4-476d07d285d5
-ms.openlocfilehash: 8303952beefbbac13db14e148c6441c29a46b3d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fdff2bf5abd3177eda962b7cc55ace1078522f32
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375225"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741104"
 ---
 # <a name="properties-ccx"></a>속성(C++/CX)
 
-공용 데이터를 속성으로 노출 하는 Windows 런타임 형식입니다. 클라이언트 코드는 공용 데이터 멤버처럼 속성에 액세스합니다. 내부적으로 속성은 get 접근자 메서드, set 접근자 메서드 또는 둘 다 포함된 블록으로 구현됩니다. 접근자 메서드를 사용하면 값을 검색하기 전이나 후에 추가 작업을 수행할 수 있습니다. 예를 들어 이벤트를 발생시키거나 유효성 검사를 수행할 수 있습니다.
+Windows 런타임 형식은 공용 데이터를 속성으로 노출 합니다. 클라이언트 코드는 공용 데이터 멤버처럼 속성에 액세스합니다. 내부적으로 속성은 get 접근자 메서드, set 접근자 메서드 또는 둘 다 포함된 블록으로 구현됩니다. 접근자 메서드를 사용하면 값을 검색하기 전이나 후에 추가 작업을 수행할 수 있습니다. 예를 들어 이벤트를 발생시키거나 유효성 검사를 수행할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -21,7 +21,7 @@ ms.locfileid: "62375225"
 
 C++/CX ref 클래스가 인스턴스화되면 생성자가 호출되기 전에 메모리가 0으로 초기화되므로 선언 시점에서 모든 속성에 기본값 0 또는 nullptr이 할당됩니다.
 
-### <a name="examples"></a>예제
+### <a name="examples"></a>예
 
 다음 코드 예제에서는 속성을 선언하고 액세스하는 방법을 보여 줍니다. 첫 번째 속성 `Name`은 *trivial* 속성이라고도 합니다. 컴파일러가 자동으로 `set` accessor, `get` 접근자와 백업 저장소를 생성하기 때문입니다.
 
@@ -38,5 +38,5 @@ C++/CX ref 클래스가 인스턴스화되면 생성자가 호출되기 전에 �
 ## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

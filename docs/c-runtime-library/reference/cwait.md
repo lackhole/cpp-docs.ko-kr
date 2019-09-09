@@ -22,14 +22,14 @@ helpviewer_keywords:
 - cwait function
 - _cwait function
 ms.assetid: d9b596b5-45f4-4e03-9896-3f383cb922b8
-ms.openlocfilehash: f7a49497ac71ec15261e1215bd2bbed2e49f42ab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f356afc91f794753f12b5b673c609ef03fbaa5ec
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288786"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499971"
 ---
-# <a name="cwait"></a>_cwait
+# <a name="_cwait"></a>_cwait
 
 다른 프로세스가 종료될 때까지 기다립니다.
 
@@ -49,34 +49,34 @@ intptr_t _cwait(
 ### <a name="parameters"></a>매개 변수
 
 *termstat*<br/>
-지정된 된 프로세스의 결과 코드가 저장 될 버퍼에 대 한 포인터 또는 **NULL**합니다.
+지정 된 프로세스의 결과 코드가 저장 되는 버퍼에 대 한 포인터 이거나 **NULL**입니다.
 
 *procHandle*<br/>
-대기 하는 프로세스에 대 한 핸들 (즉, 프로세스에서 종료 된 후에 **_cwait** 반환할 수 있습니다).
+대기 중인 프로세스에 대 한 핸들입니다 (즉, **_cwait** 를 반환 하기 전에 종료 되어야 하는 프로세스).
 
 *action*<br/>
-NULL: Windows 운영 체제 응용 프로그램에서 무시 다른 응용 프로그램: 작업 코드에서 수행할 *procHandle*합니다.
+NULL: Windows 운영 체제 응용 프로그램에서 무시 됩니다. 다른 응용 프로그램: *procHandle*에서 수행할 작업 코드입니다.
 
 ## <a name="return-value"></a>반환 값
 
-지정된 된 프로세스를 완료 하는 경우 지정된 된 프로세스의 핸들을 반환 하 고 설정 *termstat* 지정한 프로세스에서 반환 되는 결과 코드입니다. 그렇지 않으면-1을 반환 하 고 설정 **errno** 다음과 같습니다.
+지정 된 프로세스가 성공적으로 완료 되 면는 지정 된 프로세스의 핸들을 반환 하 고 *termstat* 를 지정 된 프로세스에서 반환 되는 결과 코드로 설정 합니다. 그렇지 않으면-1을 반환 하 고 **errno** 를 다음과 같이 설정 합니다.
 
 |값|설명|
 |-----------|-----------------|
-|**ECHILD**|지정 된 프로세스가 없습니다 *procHandle* 이 잘못 되었거나에 대 한 호출을 [GetExitCodeProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) 또는 [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) API가 실패 했습니다.|
-|**EINVAL**|*작업* 올바르지 않습니다.|
+|**ECHILD**|지정 된 프로세스가 없거나 *procHandle* 이 잘못 되었거나 [Getexitcodeprocess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) 또는 [WaitForSingleObject](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) API에 대 한 호출이 실패 했습니다.|
+|**EINVAL**|*동작이* 잘못 되었습니다.|
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_cwait** 함수에서 제공 하는 지정된 된 프로세스의 프로세스 ID의 종료를 기다리는 *procHandle*합니다. 값 *procHandle* 에 전달 되는 **_cwait** 에 대 한 호출에서 반환 되는 값 이어야 합니다는 [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) 함수는 지정된 된 프로세스를 생성 합니다. 프로세스 ID 전에 종료 되 면 **_cwait** 가 호출 **_cwait** 즉시 반환 합니다. **_cwait** 는 다른 모든 알려진된 프로세스를 대기할 모든 프로세스에서 사용할 수는 유효한 핸들이 (*procHandle*) 존재 합니다.
+**_Cwait** 함수는 *procHandle*에서 제공 하는 지정 된 프로세스의 프로세스 ID가 종료 될 때까지 대기 합니다. **_Cwait** 에 전달 되는 *procHandle* 의 값은 지정 된 프로세스를 만든 [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) 함수 호출에서 반환 되는 값 이어야 합니다. **_Cwait** 가 호출 되기 전에 프로세스 ID가 종료 되 면 **_cwait** 가 즉시 반환 됩니다. **_cwait** 는 모든 프로세스에서 유효한 핸들 (*procHandle*)이 존재 하는 기타 알려진 프로세스를 기다리는 데 사용할 수 있습니다.
 
-*termstat* 지정된 된 프로세스의 반환 코드가 저장 될 버퍼를 가리킵니다. 변수의 *termstat* 지정된 된 프로세스는 Windows를 호출 하 여 정상적으로 종료 여부를 나타냅니다 [ExitProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitprocess) API. **ExitProcess** 지정된 된 프로세스를 호출 하는 경우 내부적으로 호출 됩니다 **종료** 하거나 **_exit**에서 반환 **주**, 끝에 도달 하거나 **주** . 통해 다시 전달 되는 값에 대 한 자세한 내용은 *termstat*를 참조 하십시오 [GetExitCodeProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess)합니다. 경우 **_cwait** 사용 하 여 호출 되는 **NULL** 값 *termstat*, 지정된 된 프로세스의 반환 코드가 저장 되지 않습니다.
+*termstat* 는 지정 된 프로세스의 반환 코드가 저장 될 버퍼를 가리킵니다. *Termstat* 값은 지정 된 프로세스가 Windows [exitprocess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) API를 호출 하 여 정상적으로 종료 되었는지 여부를 나타냅니다. 지정 된 프로세스가 **exit** 또는 **_exit**를 호출 하거나, **main**에서 반환 되거나, **Main**의 끝에 도달 하면 **exitprocess** 가 내부적으로 호출 됩니다. *Termstat*를 통해 다시 전달 되는 값에 대 한 자세한 내용은 [Getexitcodeprocess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess)를 참조 하세요. *Termstat*에 **NULL** 값을 사용 하 여 **_cwait** 를 호출 하면 지정 된 프로세스의 반환 코드가 저장 되지 않습니다.
 
-합니다 *동작* 이러한 환경에서 부모-자식 관계를 구현 하지 않기 때문에 Windows 운영 체제에서 매개 변수가 무시 됩니다.
+*작업* 매개 변수는 이러한 환경에서 부모-자식 관계가 구현 되지 않으므로 Windows 운영 체제에서 무시 됩니다.
 
-경우가 아니면 *procHandle* -1 또는-2 (현재 프로세스 또는 스레드에 처리) 핸들을 닫습니다. 따라서 이 경우 반환된 핸들을 사용하지 마세요.
+*ProcHandle* 가-1 또는-2 (현재 프로세스 또는 스레드에 대 한 핸들)가 아닌 경우 핸들이 닫힙니다. 따라서 이 경우 반환된 핸들을 사용하지 마세요.
 
 ## <a name="requirements"></a>요구 사항
 

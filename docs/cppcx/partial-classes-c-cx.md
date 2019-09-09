@@ -2,12 +2,12 @@
 title: Partial 클래스(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: 69d93575-636c-4564-8cca-6dfba0c7e328
-ms.openlocfilehash: 71df19e98192a7704d4528fe730ce79977383a9b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 703f12498e0f2c68448e2b3896d3d5f906aba779
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385000"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740486"
 ---
 # <a name="partial-classes-ccx"></a>Partial 클래스(C++/CX)
 
@@ -87,7 +87,7 @@ partial 클래스는 번역 단위를 벗어날 수 없습니다.
 
 `partial` 키워드는 `ref class` 키워드 또는 `value class` 키워드와 함께만 사용할 수 있습니다.
 
-### <a name="examples"></a>예제
+### <a name="examples"></a>예
 
 다음 예제는 두 코드 파일에 걸쳐 `Address` 클래스를 정의합니다. 디자이너가 `Address.details.h` 를 수정하고 사용자가 `Address.h`를 수정합니다. 첫 번째 파일의 클래스 정의만 `partial` 키워드를 사용합니다.
 
@@ -98,5 +98,5 @@ partial 클래스는 번역 단위를 벗어날 수 없습니다.
 ## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

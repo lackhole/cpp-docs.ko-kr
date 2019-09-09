@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CPropExchange [MFC], IsAsynchronous
 - CPropExchange [MFC], IsLoading
 ms.assetid: ed872180-e770-4942-892a-92139d501fab
-ms.openlocfilehash: 4210399e32c2bb39008afa75b787c19e3338a7d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e9ad7c363f2580200af20baeb0acd7a93c1f603b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372428"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502770"
 ---
 # <a name="cpropexchange-class"></a>CPropExchange 클래스
 
@@ -43,32 +43,32 @@ class AFX_NOVTABLE CPropExchange
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CPropExchange::ExchangeBlobProp](#exchangeblobprop)|이진 대형 개체 (BLOB) 속성을 교환합니다.|
-|[CPropExchange::ExchangeFontProp](#exchangefontprop)|글꼴 속성을 교환합니다.|
-|[CPropExchange::ExchangePersistentProp](#exchangepersistentprop)|컨트롤 사이의 파일 속성을 교환합니다.|
-|[CPropExchange::ExchangeProp](#exchangeprop)|모든 기본 제공 형식의 속성을 교환합니다.|
-|[CPropExchange::ExchangeVersion](#exchangeversion)|OLE 컨트롤의 버전 번호를 교환합니다.|
-|[CPropExchange::GetVersion](#getversion)|OLE 컨트롤의 버전 번호를 검색합니다.|
-|[CPropExchange::IsAsynchronous](#isasynchronous)|속성 교환 비동기적으로 완료 되는 경우를 결정 합니다.|
-|[CPropExchange::IsLoading](#isloading)|속성 되 고 있는지 여부를 나타내는 컨트롤에 로드 하거나이를 저장 합니다.|
+|[CPropExchange::ExchangeBlobProp](#exchangeblobprop)|BLOB (binary large object) 속성을 교환 합니다.|
+|[CPropExchange::ExchangeFontProp](#exchangefontprop)|Font 속성을 교환 합니다.|
+|[CPropExchange::ExchangePersistentProp](#exchangepersistentprop)|컨트롤과 파일 간에 속성을 교환 합니다.|
+|[CPropExchange::ExchangeProp](#exchangeprop)|기본 제공 형식의 속성을 교환 합니다.|
+|[CPropExchange::ExchangeVersion](#exchangeversion)|OLE 컨트롤의 버전 번호를 교환 합니다.|
+|[CPropExchange::GetVersion](#getversion)|OLE 컨트롤의 버전 번호를 검색 합니다.|
+|[CPropExchange::IsAsynchronous](#isasynchronous)|속성 교환이 비동기적으로 수행 되는지 여부를 결정 합니다.|
+|[CPropExchange::IsLoading](#isloading)|속성이 컨트롤에 로드 되는지 또는 해당 컨트롤에서 저장 되는지 여부를 나타냅니다.|
 
 ## <a name="remarks"></a>설명
 
-`CPropExchange` 기본 클래스는 없습니다.
+`CPropExchange`에 기본 클래스가 없습니다.
 
-컨텍스트 및 속성 exchange의 방향을 설정합니다.
+속성 교환의 컨텍스트 및 방향을 설정 합니다.
 
-지 속성은 일반적으로 컨트롤 자체와 미디어 간에 해당 속성을 나타내는 컨트롤의 상태 정보를 교환 합니다.
+지 속성은 컨트롤의 상태 정보 (일반적으로 컨트롤 자체와 미디어 사이에 속성으로 표시 됨)의 교환입니다.
 
-파생 된 개체를 생성 하는 프레임 워크 `CPropExchange` OLE 컨트롤의 속성에서 로드 되는 알림을 받았을 때 또는 저장소에 영구 저장된 합니다.
+프레임 워크는 OLE 컨트롤의 속성 `CPropExchange` 을 영구 저장소에서 로드 하거나 영구 저장소에 저장 해야 한다는 알림이 표시 될 때에서 파생 된 개체를 생성 합니다.
 
-이 대 한 포인터를 전달 하는 프레임 워크 `CPropExchange` 컨트롤의 개체 `DoPropExchange` 함수입니다. 컨트롤, 컨트롤의 시작 파일을 만들려면 마법사를 사용 하는 경우 `DoPropExchange` 함수 호출 `COleControl::DoPropExchange`합니다. 기본 클래스 버전 교환 컨트롤의 스톡 속성 컨트롤에 추가한 파생된 클래스의 버전 exchange 속성을 수정할 수 있습니다.
+프레임 워크는이 `CPropExchange` 개체에 대 한 포인터를 컨트롤의 `DoPropExchange` 함수에 전달 합니다. 마법사를 사용 하 여 컨트롤에 대 한 시작 파일을 만든 경우 컨트롤의 `DoPropExchange` 함수는를 호출 `COleControl::DoPropExchange`합니다. 기본 클래스 버전은 컨트롤의 스톡 속성을 교환 합니다. 파생 클래스의 버전을 컨트롤에 추가한 속성을 교환 합니다.
 
-`CPropExchange` 컨트롤의 속성을 serialize 하거나 부하 또는 컨트롤 생성 시 컨트롤의 속성을 초기화 데 사용할 수 있습니다. 합니다 `ExchangeProp` 하 고 `ExchangeFontProp` 의 멤버 함수 `CPropExchange` 속성을 저장 하 고 다양 한 미디어에서 로드 합니다.
+`CPropExchange`컨트롤을 로드 하거나 만들 때 컨트롤의 속성을 serialize 하거나 컨트롤의 속성을 초기화 하는 데 사용할 수 있습니다. 의 `ExchangeProp` 및`CPropExchange` 멤버 함수는 다른 미디어에서 속성을 저장 하 고 로드할 수 있습니다. `ExchangeFontProp`
 
-사용 하 여 대 한 자세한 내용은 `CPropExchange`, 문서를 참고 [MFC ActiveX 컨트롤: 속성 페이지](../../mfc/mfc-activex-controls-property-pages.md)합니다.
+를 사용 하 `CPropExchange` [는 방법에 대 한 자세한 내용은 MFC ActiveX 컨트롤: 속성 페이지](../../mfc/mfc-activex-controls-property-pages.md).
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -76,11 +76,11 @@ class AFX_NOVTABLE CPropExchange
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxctl.h
+**헤더:** afxctl
 
 ##  <a name="exchangeblobprop"></a>  CPropExchange::ExchangeBlobProp
 
-Binary large object (BLOB) 데이터를 저장 하는 속성을 serialize 합니다.
+BLOB (binary large object) 데이터를 저장 하는 속성을 직렬화 합니다.
 
 ```
 virtual BOOL ExchangeBlobProp(
@@ -95,24 +95,24 @@ virtual BOOL ExchangeBlobProp(
 교환 되는 속성의 이름입니다.
 
 *phBlob*<br/>
-변수의 속성을 저장할 위치를 가리키는 포인터입니다 (변수가 일반적으로 클래스의 멤버).
+속성이 저장 된 위치를 가리키는 변수에 대 한 포인터입니다. 일반적으로 변수는 클래스의 멤버입니다.
 
 *hBlobDefault*<br/>
-속성에 대 한 기본 값입니다.
+속성의 기본값입니다.
 
 ### <a name="return-value"></a>반환 값
 
-Exchange에 성공 하면 0이 아닌 값 실패 한 경우 0입니다.
+교환이 성공 하면 0이 아닌 값입니다. 실패 한 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
-속성의 값에서 읽거나 쓸 적절 한 참조 변수 처럼 *phBlob*합니다. 하는 경우 *hBlobDefault* 지정, 속성의 기본값으로 사용 됩니다. 이 값은 컨트롤의 serialization 어떤 이유로 실패 하는 경우 사용 됩니다.
+속성의 값은 *Phblob*에서 참조 하는 변수를 적절 하 게 읽거나 쓸 수 있습니다. *Hblobdefault* 를 지정 하면 속성의 기본값으로 사용 됩니다. 어떤 이유로 든 컨트롤의 serialization이 실패 하는 경우이 값이 사용 됩니다.
 
-함수 `CArchivePropExchange::ExchangeBlobProp`, `CResetPropExchange::ExchangeBlobProp`, 및 `CPropsetPropExchange::ExchangeBlobProp` 이 순수 가상 함수를 재정의 합니다.
+, `CArchivePropExchange::ExchangeBlobProp` `CResetPropExchange::ExchangeBlobProp`및 함수는이순수가상함수를재정의합니다.`CPropsetPropExchange::ExchangeBlobProp`
 
 ##  <a name="exchangefontprop"></a>  CPropExchange::ExchangeFontProp
 
-저장 매체와 컨트롤 간의 글꼴 속성을 교환합니다.
+저장소 미디어와 컨트롤 간에 font 속성을 교환 합니다.
 
 ```
 virtual BOOL ExchangeFontProp(
@@ -128,27 +128,27 @@ virtual BOOL ExchangeFontProp(
 교환 되는 속성의 이름입니다.
 
 *font*<br/>
-에 대 한 참조를 [CFontHolder](../../mfc/reference/cfontholder-class.md) 글꼴 속성을 포함 하는 개체입니다.
+Font 속성을 포함 하는 [Cfontholder](../../mfc/reference/cfontholder-class.md) 개체에 대 한 참조입니다.
 
 *pFontDesc*<br/>
-에 대 한 포인터를 [FONTDESC](/windows/desktop/api/olectl/ns-olectl-tagfontdesc) font 속성의 기본 상태로 초기화에 대 한 값이 포함 된 구조 때 *pFontDispAmbient* NULL입니다.
+*PFontDispAmbient* 가 NULL 일 때 font 속성의 기본 상태를 초기화 하는 값을 포함 하는 글꼴에 [대 한 포인터](/windows/win32/api/olectl/ns-olectl-fontdesc) 입니다.
 
 *pFontDispAmbient*<br/>
-에 대 한 포인터를 `IFontDisp` font 속성의 기본 상태로 초기화에 사용 되는 글꼴의 인터페이스입니다.
+글꼴 속성의 기본 `IFontDisp` 상태를 초기화 하는 데 사용 되는 글꼴의 인터페이스에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-Exchange에 성공 하면 0이 아닌 값 실패 한 경우 0입니다.
+교환이 성공 하면 0이 아닌 값입니다. 실패 한 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
-Font 속성 매체에서 컨트롤을 로드 하 고, 글꼴 특성에서 미디어 검색 됩니다와 `CFontHolder` 개체에서 참조 *글꼴* 으로 초기화 됩니다. Font 속성에 저장 되는 경우 글꼴 개체의 특징을 미디어에 기록 됩니다.
+글꼴 속성이 중간에서 컨트롤로 로드 되는 경우 글꼴의 특징이 미디어에서 검색 되 고 `CFontHolder` *글꼴* 에서 참조 하는 개체는이를 사용 하 여 초기화 됩니다. Font 속성을 저장 하는 경우 글꼴 개체의 특성이 미디어에 기록 됩니다.
 
-함수 `CArchivePropExchange::ExchangeFontProp`, `CResetPropExchange::ExchangeFontProp`, 및 `CPropsetPropExchange::ExchangeFontProp` 이 순수 가상 함수를 재정의 합니다.
+, `CArchivePropExchange::ExchangeFontProp` `CResetPropExchange::ExchangeFontProp`및 함수는이순수가상함수를재정의합니다.`CPropsetPropExchange::ExchangeFontProp`
 
 ##  <a name="exchangepersistentprop"></a>  CPropExchange::ExchangePersistentProp
 
-컨트롤 사이의 파일 속성을 교환합니다.
+컨트롤과 파일 간에 속성을 교환 합니다.
 
 ```
 virtual BOOL ExchangePersistentProp(
@@ -164,27 +164,27 @@ virtual BOOL ExchangePersistentProp(
 교환 되는 속성의 이름입니다.
 
 *ppUnk*<br/>
-속성에 대 한 포인터를 포함 하는 변수에 대 한 포인터 `IUnknown` 인터페이스 (이 변수는 클래스의 멤버가 일반적으로).
+속성의 `IUnknown` 인터페이스에 대 한 포인터를 포함 하는 변수에 대 한 포인터입니다 .이 변수는 일반적으로 클래스의 멤버입니다.
 
 *iid*<br/>
-컨트롤을 사용 하는 속성에 대 한 인터페이스의 인터페이스 ID입니다.
+컨트롤에서 사용할 속성의 인터페이스 ID입니다.
 
 *pUnkDefault*<br/>
-속성에 대 한 기본 값입니다.
+속성의 기본값입니다.
 
 ### <a name="return-value"></a>반환 값
 
-Exchange에 성공 하면 0이 아닌 값 실패 한 경우 0입니다.
+교환이 성공 하면 0이 아닌 값입니다. 실패 한 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
-속성 파일에서 컨트롤을 로드 하 고, 속성 생성 되어 파일에서 초기화 됩니다. 속성에 저장 되는 경우 해당 값은 파일에 기록 됩니다.
+속성이 파일에서 컨트롤로 로드 되는 경우 속성은 파일에서 만들어지고 초기화 됩니다. 속성을 저장 하는 경우 해당 값이 파일에 기록 됩니다.
 
-함수 `CArchivePropExchange::ExchangePersistentProp`, `CResetPropExchange::ExchangePersistentProp`, 및 `CPropsetPropExchange::ExchangePersistentProp` 이 순수 가상 함수를 재정의 합니다.
+, `CArchivePropExchange::ExchangePersistentProp` `CResetPropExchange::ExchangePersistentProp`및 함수는이순수가상함수를재정의합니다.`CPropsetPropExchange::ExchangePersistentProp`
 
 ##  <a name="exchangeprop"></a>  CPropExchange::ExchangeProp
 
-저장 매체 사이의 컨트롤 속성을 교환합니다.
+저장소 미디어와 컨트롤 간에 속성을 교환 합니다.
 
 ```
 virtual BOOL ExchangeProp(
@@ -200,9 +200,9 @@ virtual BOOL ExchangeProp(
 교환 되는 속성의 이름입니다.
 
 *vtProp*<br/>
-교환 되는 속성의 유형을 지정 하는 기호입니다. 가능한 값은 다음과 같습니다.
+교환할 속성의 형식을 지정 하는 기호입니다. 가능한 값은
 
-|기호|속성 형식|
+|Symbol|속성 형식|
 |------------|-------------------|
 |VT_I2|**short**|
 |VT_I4|**long**|
@@ -220,13 +220,13 @@ virtual BOOL ExchangeProp(
 
 ### <a name="return-value"></a>반환 값
 
-Exchange에 성공 하면 0이 아닌 값 실패 한 경우 0입니다.
+교환이 성공 하면 0이 아닌 값입니다. 실패 한 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
-속성 매체에서 컨트롤을 로드 하 고, 속성 값을 미디어에서 검색 되며 가리키는 개체에 저장 *pvProp*합니다. 속성 매체에 저장 하려는 경우는 개체의 값을 가리키는 *pvProp* 미디어에 기록 됩니다.
+속성이 중간에서 컨트롤로 로드 되는 경우 속성의 값은 중간에서 검색 되 고 *pvProp*가 가리키는 개체에 저장 됩니다. 속성이 중간에 저장 되는 경우 *pvProp* 가 가리키는 개체의 값이 미디어에 기록 됩니다.
 
-함수 `CArchivePropExchange::ExchangeProp`, `CResetPropExchange::ExchangeProp`, 및 `CPropsetPropExchange::ExchangeProp` 이 순수 가상 함수를 재정의 합니다.
+, `CArchivePropExchange::ExchangeProp` `CResetPropExchange::ExchangeProp`및 함수는이순수가상함수를재정의합니다.`CPropsetPropExchange::ExchangeProp`
 
 ##  <a name="exchangeversion"></a>  CPropExchange::ExchangeVersion
 
@@ -242,17 +242,17 @@ virtual BOOL ExchangeVersion(
 ### <a name="parameters"></a>매개 변수
 
 *dwVersionLoaded*<br/>
-로드 되는 영구 데이터의 버전 번호를 저장 하는 변수에 대 한 참조입니다.
+로드 되는 영구 데이터의 버전 번호가 저장 되는 변수에 대 한 참조입니다.
 
 *dwVersionDefault*<br/>
 컨트롤의 현재 버전 번호입니다.
 
 *bConvert*<br/>
-현재 버전에 영구 데이터를 변환 또는 로드 된 버전 유지 여부를 나타냅니다.
+영구 데이터를 현재 버전으로 변환할지 아니면 로드 된 버전과 동일한 버전으로 유지할지를 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
 
-함수가 성공 하면 0이 아닌 값 그렇지 않으면 0입니다.
+함수가 성공 하면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
 ##  <a name="getversion"></a>  CPropExchange::GetVersion
 
@@ -268,7 +268,7 @@ DWORD GetVersion();
 
 ##  <a name="isasynchronous"></a>  CPropExchange::IsAsynchronous
 
-속성 교환 비동기적으로 완료 되는 경우를 결정 합니다.
+속성 교환이 비동기적으로 수행 되는지 여부를 결정 합니다.
 
 ```
 BOOL IsAsynchronous();
@@ -276,11 +276,11 @@ BOOL IsAsynchronous();
 
 ### <a name="return-value"></a>반환 값
 
-속성이 있으면 TRUE를 반환 교환 비동기적으로 그렇지 않으면 FALSE입니다.
+속성이 비동기적으로 교환 되 면 TRUE를 반환 하 고, 그렇지 않으면 FALSE를 반환 합니다.
 
 ##  <a name="isloading"></a>  CPropExchange::IsLoading
 
-속성 되 고 있는지 여부를 결정 하는이 함수를 호출 컨트롤에 로드 하거나이를 저장 합니다.
+이 함수를 호출 하 여 속성을 컨트롤에 로드 하 고 있는지 여부를 확인 합니다.
 
 ```
 BOOL IsLoading();
@@ -288,7 +288,7 @@ BOOL IsLoading();
 
 ### <a name="return-value"></a>반환 값
 
-속성; 로드 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.
+속성이 로드 되 고 있으면 0이 아닙니다. 그렇지 않으면 0입니다.
 
 ## <a name="see-also"></a>참고자료
 

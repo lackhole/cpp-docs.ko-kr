@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CMFCMenuBar [MFC], SetRecentlyUsedMenus
 - CMFCMenuBar [MFC], SetShowAllCommands
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
-ms.openlocfilehash: 61a5f83e31b4793ca6467287c99f3b9708659402
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 278feca6b64915d0cf789e8f68af3c3fdf9b3129
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505240"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739468"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar 클래스
 
@@ -128,7 +128,7 @@ class CMFCMenuBar : public CMFCToolbar
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CMFCMenuBar::AdjustLocations](#adjustlocations)|( `CMFCToolBar::AdjustLocations`을 재정의합니다.)|
 |[CMFCMenuBar::AllowChangeTextLabels](#allowchangetextlabels)|도구 모음 단추의 이미지 아래에 텍스트 레이블을 표시할 수 있는지 여부를 지정 합니다. [Cmfctoolbar:: AllowChangeTextLabels](../../mfc/reference/cmfctoolbar-class.md#allowchangetextlabels)를 재정의 합니다.|
@@ -196,7 +196,7 @@ class CMFCMenuBar : public CMFCToolbar
 [!code-cpp[NVC_MFC_IEDemo#1](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#3](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -1037,7 +1037,7 @@ static BOOL SetMenuFont(
 ### <a name="parameters"></a>매개 변수
 
 *lpLogFont*<br/>
-진행 설정할 글꼴을 정의 하는 [LOGFONT](/windows/win32/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) 구조체에 대 한 포인터입니다.
+진행 설정할 글꼴을 정의 하는 [LOGFONT](/windows/win32/api/dimm/ns-dimm-logfonta) 구조체에 대 한 포인터입니다.
 
 *bHorz*<br/>
 진행 세로 방향 글꼴에 *lpLogFont* 매개 변수를 사용 하려면 TRUE이 고, 가로 글꼴에 사용 하려면 FALSE입니다.

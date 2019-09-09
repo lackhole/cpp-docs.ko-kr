@@ -6,18 +6,18 @@ helpviewer_keywords:
 - rich edit controls [MFC], character formatting in
 - CRichEditCtrl class [MFC], character formatting in
 ms.assetid: c80f4305-75ad-45f9-8d17-d83d0fe79be5
-ms.openlocfilehash: 4ac996c1cb018a29137e37d9603016dc1c151c58
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 3ff9be0909a36179802e5f210e728c2bf57b1f02
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69508982"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739511"
 ---
 # <a name="character-formatting-in-rich-edit-controls"></a>Rich Edit 컨트롤의 문자 서식 지정
 
 서식 있는 편집 컨트롤 ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md))의 멤버 함수를 사용 하 여 문자 형식을 지정 하 고 형식 지정 정보를 검색할 수 있습니다. 문자에 대해 서체, 크기, 색 및 효과 (예: 굵게, 기울임꼴 및 보호)를 지정할 수 있습니다.
 
-[SetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#setselectioncharformat) 및 [SetWordCharFormat](../mfc/reference/cricheditctrl-class.md#setwordcharformat) 멤버 함수를 사용 하 여 문자 형식을 적용할 수 있습니다. 선택한 텍스트의 현재 문자 서식을 확인 하려면 [GetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#getselectioncharformat) 멤버 함수를 사용 합니다. [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 구조체는 이러한 멤버 함수에서 문자 특성을 지정 하는 데 사용 됩니다. **CHARFORMAT** 의 중요 한 멤버 중 하나는 **dwmask**입니다. 및 `SetSelectionCharFormat` 에서`SetWordCharFormat` **dwmask** 는이 함수 호출로 설정할 문자 특성을 지정 합니다. `GetSelectionCharFormat`선택 영역에 있는 첫 번째 문자의 특성을 보고 합니다. **Dwmask** 는 선택 영역 전체에서 일치 하는 특성을 지정 합니다.
+[SetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#setselectioncharformat) 및 [SetWordCharFormat](../mfc/reference/cricheditctrl-class.md#setwordcharformat) 멤버 함수를 사용 하 여 문자 형식을 적용할 수 있습니다. 선택한 텍스트의 현재 문자 서식을 확인 하려면 [GetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#getselectioncharformat) 멤버 함수를 사용 합니다. [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) 구조체는 이러한 멤버 함수에서 문자 특성을 지정 하는 데 사용 됩니다. **CHARFORMAT** 의 중요 한 멤버 중 하나는 **dwmask**입니다. 및 `SetSelectionCharFormat` 에서`SetWordCharFormat` **dwmask** 는이 함수 호출로 설정할 문자 특성을 지정 합니다. `GetSelectionCharFormat`선택 영역에 있는 첫 번째 문자의 특성을 보고 합니다. **Dwmask** 는 선택 영역 전체에서 일치 하는 특성을 지정 합니다.
 
 또한 이후 삽입 된 문자에 적용 되는 서식 인 "기본 문자 서식"을 가져오고 설정할 수 있습니다. 예를 들어 응용 프로그램에서 기본 문자 형식을 굵게 설정 하 고 사용자가 문자를 입력 하는 경우 해당 문자는 굵게 표시 됩니다. 기본 문자 형식을 가져오고 설정 하려면 [GetDefaultCharFormat](../mfc/reference/cricheditctrl-class.md#getdefaultcharformat) 및 [SetDefaultCharFormat](../mfc/reference/cricheditctrl-class.md#setdefaultcharformat) 멤버 함수를 사용 합니다.
 

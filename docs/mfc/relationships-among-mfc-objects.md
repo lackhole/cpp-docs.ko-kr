@@ -36,9 +36,11 @@ ms.locfileid: "62309046"
 
 |개체에서|다른 개체에 액세스 하는 방법|
 |-----------------|---------------------------------|
+
 |문서|문서의 뷰 목록에 액세스하기 위해 [GetFirstViewPosition](../mfc/reference/cdocument-class.md#getfirstviewposition)과 [GetNextView](../mfc/reference/cdocument-class.md#getnextview)를 사용합니다.<br /><br />문서 템플릿을 가져오기 위해 [GetDocTemplate](../mfc/reference/cdocument-class.md#getdoctemplate)을 호출합니다.|
 |뷰|문서를 가져오기 위해 [GetDocument](../mfc/reference/cview-class.md#getdocument)를 호출합니다.<br /><br />프레임 창을 가져오기 위해 [GetParentFrame](../mfc/reference/cwnd-class.md#getparentframe)을 호출합니다.|
 |문서 프레임 창|현재 뷰를 가져오기 위해 [GetActiveView](../mfc/reference/cframewnd-class.md#getactiveview)를 호출합니다.<br /><br />현재 뷰에 연결된 문서를 가져오기 위해 [GetActiveDocument](../mfc/reference/cframewnd-class.md#getactivedocument)를 호출합니다.|
+
 |MDI 프레임 창|현재 활성화된 [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md)를 가져오기 위해 [MDIGetActive](../mfc/reference/cmdiframewnd-class.md#mdigetactive)를 호출합니다.|
 
 일반적으로 프레임 창에는 하나의 뷰가 있지만 경우에 따라 분할자 창과 같이 동일한 프레임 창에 여러 뷰가 있을 수 있습니다. 프레임 창은 현재 활성화된 뷰에 대한 포인터를 유지합니다. 포인터는 다른 뷰가 활성화 될 때마다 업데이트 됩니다.
