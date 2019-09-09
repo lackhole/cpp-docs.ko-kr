@@ -52,7 +52,7 @@ ms.locfileid: "62242632"
 
 앞의 그림에 제안할 요소는 응용 프로그램의 개체를 초기화 하는 멤버 함수를 재정의할 수 있습니다. 재정의 `OnInitialUpdate` 뷰 클래스의 뷰를 초기화 하는 것이 좋습니다. `OnInitialUpdate` 호출 프레임 창을 만들고 보기 프레임 창 내에서 해당 문서에 첨부 된 직후에 발생 합니다. 예를 들어 보기는 스크롤 보기 (에서 파생 된 `CScrollView` 대신 `CView`), 문서 크기에 따라 뷰 크기를 설정 해야 사용자 `OnInitialUpdate` 재정의 합니다. (이 프로세스는 클래스의 설명에 설명 되어 [CScrollView](../mfc/reference/cscrollview-class.md).) 재정의할 수 있습니다 합니다 `CDocument` 멤버 함수 `OnNewDocument` 및 `OnOpenDocument` 문서의 응용 프로그램 관련 초기화를 제공 합니다. 일반적으로 모두 재정의 해야 하므로 두 가지 방법으로 문서를 만들 수 있습니다.
 
-대부분의 경우에서 재정의 기본 클래스 버전을 호출 해야 합니다. 자세한 내용은 클래스의 명명 된 멤버 함수를 참조 하세요 [CDocument](../mfc/reference/cdocument-class.md)를 [CView](../mfc/reference/cview-class.md)를 [CFrameWnd](../mfc/reference/cframewnd-class.md), 및 [CWinApp](../mfc/reference/cwinapp-class.md) MFC에서 라이브러리 참조입니다.
+대부분의 경우 재정의에서 기본 클래스 버전을 호출합니다. 자세한 내용은 MFC 라이브러리 참조에서 클래스 [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md) 및 [CWinApp](../mfc/reference/cwinapp-class.md)의 명명된 멤버 함수를 참조합니다.
 
 ## <a name="see-also"></a>참고자료
 

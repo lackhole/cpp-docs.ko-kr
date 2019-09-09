@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CTaskDialog [MFC], ShowDialog
 - CTaskDialog [MFC], TaskDialogCallback
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
-ms.openlocfilehash: 04c8a60f546700be8eeb2ec8a948e0ea321d12f8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e2f77a2eda4397ed368e477165e876f9b8fbf936
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62324316"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502353"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog Class
 
@@ -145,115 +145,115 @@ class CTaskDialog : public CObject
 
 |||
 |-|-|
-|[CTaskDialog::AddCommandControl](#addcommandcontrol)|명령 단추 컨트롤을 추가 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::AddRadioButton](#addradiobutton)|라디오 단추를 추가 하 여 `CTaskDialog`입니다.|
-|[CTaskDialog::ClickCommandControl](#clickcommandcontrol)|프로그래밍 방식으로 명령 단추 컨트롤 또는 일반 단추를 클릭합니다.|
-|[CTaskDialog::ClickRadioButton](#clickradiobutton)|프로그래밍 방식으로 라디오 단추를 클릭합니다.|
+|[CTaskDialog::AddCommandControl](#addcommandcontrol)|에 명령 단추 컨트롤을 추가 `CTaskDialog`합니다.|
+|[CTaskDialog::AddRadioButton](#addradiobutton)|에 라디오 단추 `CTaskDialog`를 추가 합니다.|
+|[CTaskDialog::ClickCommandControl](#clickcommandcontrol)|명령 단추 컨트롤이 나 일반 단추를 프로그래밍 방식으로 클릭 합니다.|
+|[CTaskDialog::ClickRadioButton](#clickradiobutton)|라디오 단추를 프로그래밍 방식으로 클릭 합니다.|
 |[CTaskDialog::DoModal](#domodal)|`CTaskDialog`를 표시합니다.|
-|[CTaskDialog::GetCommonButtonCount](#getcommonbuttoncount)|사용할 수 있는 일반적인 단추의 수를 검색합니다.|
-|[CTaskDialog::GetCommonButtonFlag](#getcommonbuttonflag)|Windows 단추를 일반 단추 형식에 연결 된 표준 변환 된 `CTaskDialog` 클래스입니다.|
-|[CTaskDialog::GetCommonButtonId](#getcommonbuttonid)|와 관련 된 일반적인 단추 형식 중 하나를 변환 합니다 `CTaskDialog` 클래스는 표준 Windows 단추를 합니다.|
-|[CTaskDialog::GetOptions](#getoptions)|이 옵션 플래그를 반환 합니다. `CTaskDialog`합니다.|
-|[CTaskDialog::GetSelectedCommandControlID](#getselectedcommandcontrolid)|선택한 명령 단추 컨트롤을 반환합니다.|
-|[CTaskDialog::GetSelectedRadioButtonID](#getselectedradiobuttonid)|선택한 라디오 단추를 반환합니다.|
+|[CTaskDialog::GetCommonButtonCount](#getcommonbuttoncount)|사용할 수 있는 일반 단추 수를 검색 합니다.|
+|[CTaskDialog::GetCommonButtonFlag](#getcommonbuttonflag)|표준 Windows 단추를 `CTaskDialog` 클래스와 연결 된 일반 단추 형식으로 변환 합니다.|
+|[CTaskDialog::GetCommonButtonId](#getcommonbuttonid)|`CTaskDialog` 클래스와 연결 된 공통 단추 형식 중 하나를 표준 Windows 단추로 변환 합니다.|
+|[CTaskDialog::GetOptions](#getoptions)|이 `CTaskDialog`에 대 한 옵션 플래그를 반환 합니다.|
+|[CTaskDialog::GetSelectedCommandControlID](#getselectedcommandcontrolid)|선택한 명령 단추 컨트롤을 반환 합니다.|
+|[CTaskDialog::GetSelectedRadioButtonID](#getselectedradiobuttonid)|선택 된 라디오 단추를 반환 합니다.|
 |[CTaskDialog::GetVerificationCheckboxState](#getverificationcheckboxstate)|확인 확인란의 상태를 검색 합니다.|
-|[CTaskDialog::IsCommandControlEnabled](#iscommandcontrolenabled)|명령 단추 컨트롤 또는 일반 단추 사용 되는지 여부를 결정 합니다.|
-|[CTaskDialog::IsRadioButtonEnabled](#isradiobuttonenabled)|라디오 단추를 사용할 수 있는지 여부를 결정 합니다.|
-|[CTaskDialog::IsSupported](#issupported)|응용 프로그램을 실행 하는 컴퓨터를 지원 하는지 여부를 결정 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::LoadCommandControls](#loadcommandcontrols)|문자열 테이블에서 데이터를 사용 하 여 명령 단추 컨트롤을 추가 합니다.|
-|[CTaskDialog::LoadRadioButtons](#loadradiobuttons)|문자열 테이블에서 데이터를 사용 하 여 라디오 단추를 추가 합니다.|
-|[CTaskDialog::NavigateTo](#navigateto)|포커스를 다른 전송 `CTaskDialog`합니다.|
-|[CTaskDialog::OnCommandControlClick](#oncommandcontrolclick)|프레임 워크는 명령 단추 컨트롤을 클릭할 때이 메서드를 호출 합니다.|
-|[CTaskDialog::OnCreate](#oncreate)|프레임 워크를 만든 후이 메서드를 호출 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::OnDestroy](#ondestroy)|프레임 워크를 즉시 제거 하기 전에이 메서드를 호출 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::OnExpandButtonClick](#onexpandbuttonclick)|프레임 워크 확장 단추를 클릭할 때이 메서드를 호출 합니다.|
-|[CTaskDialog::OnHelp](#onhelp)|프레임 워크는 사용자가 도움말을 요청 하는 경우이 메서드를 호출 합니다.|
-|[CTaskDialog::OnHyperlinkClick](#onhyperlinkclick)|프레임 워크는 사용자가 하이퍼링크를 클릭할 때이 메서드를 호출 합니다.|
-|[CTaskDialog::OnInit](#oninit)|이 메서드를 호출 하는 프레임 워크 때는 `CTaskDialog` 초기화 됩니다.|
-|[CTaskDialog::OnNavigatePage](#onnavigatepage)|프레임 워크의 제어와 관련 하 여 포커스를 이동할 때이 메서드를 호출 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::OnRadioButtonClick](#onradiobuttonclick)|프레임 워크는 사용자가 라디오 단추 컨트롤을 선택 하면이 메서드를 호출 합니다.|
-|[CTaskDialog::OnTimer](#ontimer)|타이머가 만료 되 면이 메서드를 호출 하는 프레임 워크입니다.|
-|[CTaskDialog::OnVerificationCheckboxClick](#onverificationcheckboxclick)|프레임 워크는 사용자가 확인 확인란을 클릭할 때이 메서드를 호출 합니다.|
-|[CTaskDialog::RemoveAllCommandControls](#removeallcommandcontrols)|명령 컨트롤을 모두 제거 된 `CTaskDialog`합니다.|
-|[CTaskDialog::RemoveAllRadioButtons](#removeallradiobuttons)|모든 라디오 단추를 제거 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::SetCommandControlOptions](#setcommandcontroloptions)|명령 단추 컨트롤에서 업데이트를 `CTaskDialog`입니다.|
-|[CTaskDialog::SetCommonButtonOptions](#setcommonbuttonoptions)|사용 하도록 설정 하 고 UAC 권한 상승이 필요한 일반적인 단추의 하위 집합을 업데이트 합니다.|
-|[CTaskDialog::SetCommonButtons](#setcommonbuttons)|일반 단추를 추가 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::SetContent](#setcontent)|콘텐츠를 업데이트 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::SetDefaultCommandControl](#setdefaultcommandcontrol)|기본 명령 단추 컨트롤을 지정합니다.|
-|[CTaskDialog::SetDefaultRadioButton](#setdefaultradiobutton)|기본 라디오 단추를 지정합니다.|
-|[CTaskDialog::SetDialogWidth](#setdialogwidth)|너비를 조정 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::SetExpansionArea](#setexpansionarea)|확장 영역의 업데이트는 `CTaskDialog`합니다.|
-|[CTaskDialog::SetFooterIcon](#setfootericon)|바닥글 아이콘에 대 한 업데이트는 `CTaskDialog`합니다.|
-|[CTaskDialog::SetFooterText](#setfootertext)|바닥글에 텍스트를 업데이트 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::SetMainIcon](#setmainicon)|주 아이콘 업데이트는 `CTaskDialog`합니다.|
-|[CTaskDialog::SetMainInstruction](#setmaininstruction)|기본 명령 업데이트는 `CTaskDialog`합니다.|
-|[CTaskDialog::SetOptions](#setoptions)|에 대 한 옵션을 구성 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::SetProgressBarMarquee](#setprogressbarmarquee)|움직이는 텍스트 모음을 구성 합니다 `CTaskDialog` 대화 상자에 추가 합니다.|
+|[CTaskDialog::IsCommandControlEnabled](#iscommandcontrolenabled)|명령 단추 컨트롤 또는 일반 단추를 사용할 수 있는지 여부를 결정 합니다.|
+|[CTaskDialog::IsRadioButtonEnabled](#isradiobuttonenabled)|라디오 단추를 사용할 수 있는지 여부를 확인 합니다.|
+|[CTaskDialog::IsSupported](#issupported)|응용 프로그램을 실행 하는 컴퓨터에서을 `CTaskDialog`지원 하는지 여부를 확인 합니다.|
+|[CTaskDialog::LoadCommandControls](#loadcommandcontrols)|문자열 테이블의 데이터를 사용 하 여 명령 단추 컨트롤을 추가 합니다.|
+|[CTaskDialog::LoadRadioButtons](#loadradiobuttons)|문자열 테이블의 데이터를 사용 하 여 라디오 단추를 추가 합니다.|
+|[CTaskDialog::NavigateTo](#navigateto)|포커스를 다른 `CTaskDialog`로 이동 합니다.|
+|[CTaskDialog::OnCommandControlClick](#oncommandcontrolclick)|사용자가 명령 단추 컨트롤을 클릭 하면 프레임 워크에서이 메서드를 호출 합니다.|
+|[CTaskDialog::OnCreate](#oncreate)|프레임 워크는를 `CTaskDialog`만든 후이 메서드를 호출 합니다.|
+|[CTaskDialog::OnDestroy](#ondestroy)|프레임 워크는를 `CTaskDialog`소멸 하기 바로 전에이 메서드를 호출 합니다.|
+|[CTaskDialog::OnExpandButtonClick](#onexpandbuttonclick)|사용자가 확장 단추를 클릭 하면 프레임 워크에서이 메서드를 호출 합니다.|
+|[CTaskDialog::OnHelp](#onhelp)|사용자가 도움말을 요청 하면 프레임 워크에서이 메서드를 호출 합니다.|
+|[CTaskDialog::OnHyperlinkClick](#onhyperlinkclick)|사용자가 하이퍼링크를 클릭 하면 프레임 워크에서이 메서드를 호출 합니다.|
+|[CTaskDialog::OnInit](#oninit)|프레임 워크는 `CTaskDialog` 가 초기화 될 때이 메서드를 호출 합니다.|
+|[CTaskDialog::OnNavigatePage](#onnavigatepage)|프레임 워크는 사용자가의 컨트롤과 `CTaskDialog`관련 하 여 포커스를 이동할 때이 메서드를 호출 합니다.|
+|[CTaskDialog::OnRadioButtonClick](#onradiobuttonclick)|사용자가 라디오 단추 컨트롤을 선택 하면 프레임 워크에서이 메서드를 호출 합니다.|
+|[CTaskDialog::OnTimer](#ontimer)|프레임 워크는 타이머가 만료 될 때이 메서드를 호출 합니다.|
+|[CTaskDialog::OnVerificationCheckboxClick](#onverificationcheckboxclick)|사용자가 확인 확인란을 클릭 하면 프레임 워크에서이 메서드를 호출 합니다.|
+|[CTaskDialog::RemoveAllCommandControls](#removeallcommandcontrols)|에서 모든 명령 컨트롤을 제거 합니다 `CTaskDialog`.|
+|[CTaskDialog::RemoveAllRadioButtons](#removeallradiobuttons)|에서 라디오 단추를 모두 제거 합니다 `CTaskDialog`.|
+|[CTaskDialog::SetCommandControlOptions](#setcommandcontroloptions)|에서 명령 단추 컨트롤을 업데이트 `CTaskDialog`합니다.|
+|[CTaskDialog::SetCommonButtonOptions](#setcommonbuttonoptions)|사용할 수 있는 공용 단추의 하위 집합을 업데이트 하 고 UAC 권한 상승이 필요 합니다.|
+|[CTaskDialog::SetCommonButtons](#setcommonbuttons)|에 일반 단추를 `CTaskDialog`추가 합니다.|
+|[CTaskDialog::SetContent](#setcontent)|의 콘텐츠를 업데이트 합니다 `CTaskDialog`.|
+|[CTaskDialog::SetDefaultCommandControl](#setdefaultcommandcontrol)|기본 명령 단추 컨트롤을 지정 합니다.|
+|[CTaskDialog::SetDefaultRadioButton](#setdefaultradiobutton)|기본 라디오 단추를 지정 합니다.|
+|[CTaskDialog::SetDialogWidth](#setdialogwidth)|의 너비를 조정 합니다 `CTaskDialog`.|
+|[CTaskDialog::SetExpansionArea](#setexpansionarea)|의 확장 영역을 업데이트 합니다 `CTaskDialog`.|
+|[CTaskDialog::SetFooterIcon](#setfootericon)|의 바닥글 아이콘 `CTaskDialog`을 업데이트 합니다.|
+|[CTaskDialog::SetFooterText](#setfootertext)|의 바닥글에 있는 텍스트를 업데이트 `CTaskDialog`합니다.|
+|[CTaskDialog::SetMainIcon](#setmainicon)|의 주 아이콘을 업데이트 합니다 `CTaskDialog`.|
+|[CTaskDialog::SetMainInstruction](#setmaininstruction)|의 주 명령을 업데이트 합니다 `CTaskDialog`.|
+|[CTaskDialog::SetOptions](#setoptions)|에 대 한 `CTaskDialog`옵션을 구성 합니다.|
+|[CTaskDialog::SetProgressBarMarquee](#setprogressbarmarquee)|의 `CTaskDialog` 움직이는 텍스트 막대를 구성 하 고 대화 상자에 추가 합니다.|
 |[CTaskDialog::SetProgressBarPosition](#setprogressbarposition)|진행률 표시줄의 위치를 조정 합니다.|
-|[CTaskDialog::SetProgressBarRange](#setprogressbarrange)|진행률 표시줄의 범위를 조정합니다.|
-|[CTaskDialog::SetProgressBarState](#setprogressbarstate)|진행률 표시줄의 상태를 설정 하 고에 표시 된 `CTaskDialog`합니다.|
-|[CTaskDialog::SetRadioButtonOptions](#setradiobuttonoptions)|사용 하거나 라디오 단추를 사용 하지 않도록 설정 합니다.|
-|[CTaskDialog::SetVerificationCheckbox](#setverificationcheckbox)|확인 확인란의 선택된 상태를 설정합니다.|
-|[CTaskDialog::SetVerificationCheckboxText](#setverificationcheckboxtext)|확인 확인란 오른쪽에 텍스트를 설정합니다.|
-|[CTaskDialog::SetWindowTitle](#setwindowtitle)|제목을 설정 합니다 `CTaskDialog`합니다.|
-|[CTaskDialog::ShowDialog](#showdialog)|만들고 표시를 `CTaskDialog`입니다.|
-|[CTaskDialog::TaskDialogCallback](#taskdialogcallback)|프레임 워크는 다양 한 Windows 메시지에 대 한 응답에서이 호출합니다.|
+|[CTaskDialog::SetProgressBarRange](#setprogressbarrange)|진행률 표시줄의 범위를 조정 합니다.|
+|[CTaskDialog::SetProgressBarState](#setprogressbarstate)|진행률 표시줄의 상태를 설정 하 고에 `CTaskDialog`표시 합니다.|
+|[CTaskDialog::SetRadioButtonOptions](#setradiobuttonoptions)|라디오 단추를 사용 하거나 사용 하지 않도록 설정 합니다.|
+|[CTaskDialog::SetVerificationCheckbox](#setverificationcheckbox)|확인 확인란의 선택 상태를 설정 합니다.|
+|[CTaskDialog::SetVerificationCheckboxText](#setverificationcheckboxtext)|확인 확인란의 오른쪽에 있는 텍스트를 설정 합니다.|
+|[CTaskDialog::SetWindowTitle](#setwindowtitle)|의 제목을 설정 합니다 `CTaskDialog`.|
+|[CTaskDialog::ShowDialog](#showdialog)|을 `CTaskDialog`만들어 표시 합니다.|
+|[CTaskDialog::TaskDialogCallback](#taskdialogcallback)|프레임 워크는 다양 한 Windows 메시지에 대 한 응답으로이를 호출 합니다.|
 
 ### <a name="data-members"></a>데이터 멤버
 
 |||
 |-|-|
-|`m_aButtons`|명령 단추 컨트롤에 대 한 배열을 `CTaskDialog`합니다.|
-|`m_aRadioButtons`|배열에 대 한 라디오 단추 컨트롤을 `CTaskDialog`입니다.|
-|`m_bVerified`|`TRUE` 확인 확인란 선택은 나타냅니다. `FALSE` 은 의미 합니다.|
-|`m_footerIcon`|바닥글에 아이콘을 `CTaskDialog`입니다.|
-|`m_hWnd`|에 대 한 창 핸들을 `CTaskDialog`입니다.|
-|`m_mainIcon`|기본 아이콘의 `CTaskDialog`합니다.|
-|`m_nButtonDisabled`|일반 단추를 나타내는 마스크를 사용할 수 없습니다.|
-|`m_nButtonElevation`|일반 단추를 나타내는 마스크 UAC 권한 상승이 필요 합니다.|
+|`m_aButtons`|에 대 한 `CTaskDialog`명령 단추 컨트롤의 배열입니다.|
+|`m_aRadioButtons`|에 대 한 `CTaskDialog`라디오 단추 컨트롤의 배열입니다.|
+|`m_bVerified`|`TRUE`확인 확인란을 선택 했음을 나타냅니다. `FALSE` 는 그렇지 않음을 나타냅니다.|
+|`m_footerIcon`|의 바닥글에 있는 아이콘 `CTaskDialog`입니다.|
+|`m_hWnd`|의 창에 대 한 `CTaskDialog`핸들입니다.|
+|`m_mainIcon`|의 주 아이콘입니다 `CTaskDialog`.|
+|`m_nButtonDisabled`|사용할 수 없는 일반 단추를 나타내는 마스크입니다.|
+|`m_nButtonElevation`|UAC 권한 상승이 필요한 일반 단추를 나타내는 마스크입니다.|
 |`m_nButtonId`|선택한 명령 단추 컨트롤의 ID입니다.|
-|`m_nCommonButton`|일반 단추를 나타내는 마스크에 표시 되는 `CTaskDialog`합니다.|
-|`m_nDefaultCommandControl`|명령 단추의 ID를 제어 하는 경우 선택 된 `CTaskDialog` 표시 됩니다.|
-|`m_nDefaultRadioButton`|라디오 단추의 ID를 제어 하는 경우 선택 된 `CTaskDialog` 표시 됩니다.|
-|`m_nFlags`|에 대 한 옵션을 지정 하는 마스크를 `CTaskDialog`입니다.|
+|`m_nCommonButton`|에 표시 되는 일반적인 단추를 나타내는 마스크입니다 `CTaskDialog`.|
+|`m_nDefaultCommandControl`|`CTaskDialog` 이 표시 될 때 선택 되는 명령 단추 컨트롤의 ID입니다.|
+|`m_nDefaultRadioButton`|`CTaskDialog` 이 표시 될 때 선택 되는 라디오 단추 컨트롤의 ID입니다.|
+|`m_nFlags`|에 대 한 `CTaskDialog`옵션을 나타내는 마스크입니다.|
 |`m_nProgressPos`|진행률 표시줄의 현재 위치입니다.  이 값은 `m_nProgressRangeMin`와 `m_nProgressRangeMax` 사이의 값이어야 합니다.|
-|`m_nProgressRangeMax`|진행률 표시줄에 대 한 최대값입니다.|
-|`m_nProgressRangeMin`|진행률 표시줄에 대 한 최소값입니다.|
-|`m_nProgressState`|진행률 표시줄의 상태입니다. 자세한 내용은 [CTaskDialog::SetProgressBarState](#setprogressbarstate)합니다.|
-|`m_nRadioId`|선택한 라디오 단추 컨트롤의 ID입니다.|
+|`m_nProgressRangeMax`|진행률 표시줄의 최대값입니다.|
+|`m_nProgressRangeMin`|진행률 표시줄의 최소값입니다.|
+|`m_nProgressState`|진행률 표시줄의 상태입니다. 자세한 내용은 [Ctaskdialog:: SetProgressBarState](#setprogressbarstate)를 참조 하세요.|
+|`m_nRadioId`|선택 된 라디오 단추 컨트롤의 ID입니다.|
 |`m_nWidth`|`CTaskDialog`의 너비(픽셀)입니다.|
-|`m_strCollapse`|문자열을 `CTaskDialog` 확장 된 정보는 숨겨져 확장 상자 오른쪽에 표시 됩니다.|
-|`m_strContent`|문자열 콘텐츠는 `CTaskDialog`합니다.|
-|`m_strExpand`|문자열을 `CTaskDialog` 확장 된 정보를 표시할 때 확장 상자 오른쪽에 표시 됩니다.|
-|`m_strFooter`|바닥글을 `CTaskDialog`입니다.|
-|`m_strInformation`|에 대 한 확장 된 정보는 `CTaskDialog`합니다.|
-|`m_strMainInstruction`|기본 명령은 `CTaskDialog`합니다.|
+|`m_strCollapse`|확장 된 정보 `CTaskDialog` 를 숨길 때 확장 상자 오른쪽에 표시 되는 문자열입니다.|
+|`m_strContent`|의 콘텐츠 문자열입니다 `CTaskDialog`.|
+|`m_strExpand`|확장 된 정보가 `CTaskDialog` 표시 될 때 확장 상자 오른쪽에 표시 되는 문자열입니다.|
+|`m_strFooter`|의 `CTaskDialog`바닥글입니다.|
+|`m_strInformation`|에 대 한 `CTaskDialog`확장 된 정보입니다.|
+|`m_strMainInstruction`|의 기본 명령 `CTaskDialog`입니다.|
 |`m_strTitle`|제목의 `CTaskDialog`합니다.|
-|`m_strVerification`|문자열을는 `CTaskDialog` 확인 확인란 오른쪽에 표시 됩니다.|
+|`m_strVerification`|가 `CTaskDialog` 확인 확인란의 오른쪽에 표시 하는 문자열입니다.|
 
 ## <a name="remarks"></a>설명
 
-`CTaskDialog` 클래스 표준 Windows 메시지 상자를 대체 하 고 사용자 로부터 정보를 수집할 새 컨트롤과 같은 추가 기능이 있습니다. 이 클래스는 Visual Studio 2010 이상 MFC 라이브러리입니다. `CTaskDialog` Windows Vista부터 사용할 수 있습니다. 이전 버전의 Windows 표시할 수 없습니다는 `CTaskDialog` 개체입니다. 사용 하 여 `CTaskDialog::IsSupported` 에 현재 사용자는 작업 대화 상자를 표시할 수 있는지 여부를 런타임에 결정 합니다. 표준 Windows 메시지 상자는 계속 지원 됩니다.
+클래스 `CTaskDialog` 는 표준 Windows 메시지 상자를 대체 하며 사용자 로부터 정보를 수집 하는 새 컨트롤과 같은 추가 기능을 포함 합니다. 이 클래스는 Visual Studio 2010 이상 버전의 MFC 라이브러리에 있습니다. 는 `CTaskDialog` Windows Vista부터 사용할 수 있습니다. 이전 버전의 Windows에서는 개체를 `CTaskDialog` 표시할 수 없습니다. 현재 `CTaskDialog::IsSupported` 사용자가 작업 대화 상자를 표시할 수 있는지 여부를 런타임에 확인 하는 데 사용 합니다. 표준 Windows 메시지 상자는 계속 지원 됩니다.
 
-`CTaskDialog` 는 빌드할 때 응용 프로그램이 유니코드 라이브러리를 사용 하 여 사용할 수 있습니다.
+는 `CTaskDialog` 유니코드 라이브러리를 사용 하 여 응용 프로그램을 빌드하는 경우에만 사용할 수 있습니다.
 
-`CTaskDialog` 서로 다른 두 명의 생성자가 있습니다. 생성자가 하나를 사용 하면 명령 단추 두 개 및 최대 6 개의 일반 단추 컨트롤을 지정할 수 있습니다. 만든 후에 추가 명령 단추를 추가할 수는 `CTaskDialog`합니다. 두 번째 생성자는 모든 명령 단추를 지원 하지 않습니다 하지만 일반 단추 컨트롤의 무제한 추가할 수 있습니다. 생성자에 대 한 자세한 내용은 참조 하세요. [CTaskDialog::CTaskDialog](#ctaskdialog)합니다.
+에 `CTaskDialog` 는 두 개의 다른 생성자가 있습니다. 한 생성자를 사용 하 여 두 개의 명령 단추와 최대 6 개의 일반 단추 컨트롤을 지정할 수 있습니다. 을 만든 후 명령 단추를 `CTaskDialog`더 추가할 수 있습니다. 두 번째 생성자는 명령 단추를 지원 하지 않지만, 일반 단추 컨트롤을 무제한으로 추가할 수 있습니다. 생성자에 대 한 자세한 내용은 [ctaskdialog:: CTaskDialog](#ctaskdialog)를 참조 하십시오.
 
-다음 이미지는 예제를 보여 줍니다. `CTaskDialog` 일부 컨트롤의 위치를 보여 줍니다.
+다음 그림에서는 일부 컨트롤의 `CTaskDialog` 위치를 보여 주는 샘플을 보여 줍니다.
 
 ![CTaskDialog의 예](../../mfc/reference/media/ctaskdialogsample.png "CTaskDialog의 예") <br/>
-샘플 CTaskDialog
+CTaskDialog 샘플
 
 ## <a name="requirements"></a>요구 사항
 
 **필요한 최소 운영 체제:** Windows Vista
 
-**헤더:** afxtaskdialog.h
+**헤더:** afxtaskdialog
 
 ##  <a name="addcommandcontrol"></a>  CTaskDialog::AddCommandControl
 
-새 명령 단추 컨트롤을 추가 합니다 `CTaskDialog`합니다.
+에 새 명령 단추 컨트롤을 추가 `CTaskDialog`합니다.
 
 ```
 void AddCommandControl(
@@ -266,22 +266,22 @@ void AddCommandControl(
 ### <a name="parameters"></a>매개 변수
 
 *nCommandControlID*<br/>
-[in] 명령 컨트롤 id.
+진행 명령 컨트롤 id 번호입니다.
 
 *strCaption*<br/>
-[in] 문자열을는 `CTaskDialog` 사용자에 게 표시 합니다. 명령의 용도 설명 하기에이 문자열을 사용 합니다.
+진행 가 사용자에 게 `CTaskDialog` 표시 하는 문자열입니다. 이 문자열을 사용 하 여 명령의 용도를 설명 합니다.
 
 *bEnabled*<br/>
-[in] 새 단추를 사용 하도록 설정 되었거나 사용 하지 않도록 설정 하는 경우를 나타내는 부울 매개 변수입니다.
+진행 새 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
 
 *bRequiresElevation*<br/>
-[in] 명령에 권한 상승이 필요한 지 여부를 나타내는 부울 매개 변수입니다.
+진행 명령에 권한 상승이 필요한 지 여부를 나타내는 부울 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
-`CTaskDialog Class` 개수에 제한 없이 명령 단추 컨트롤을 표시할 수 있습니다. 그러나 경우에 `CTaskDialog` 명령 단추 컨트롤에 표시할, 최대 6 개의 단추를 표시할 수 있습니다. 경우는 `CTaskDialog` 없습니다 명령 단추 컨트롤에 단추 개수에 제한 없이 표시할 수 있습니다.
+에 `CTaskDialog Class` 는 무제한 개수의 명령 단추 컨트롤이 표시 될 수 있습니다. 그러나가 명령 단추 `CTaskDialog` 컨트롤을 표시 하는 경우 최대 6 개의 단추를 표시할 수 있습니다. 에 `CTaskDialog` 명령 단추 컨트롤이 없으면 개수에 제한 없이 단추를 표시할 수 있습니다.
 
-사용자가 명령 단추 컨트롤을 선택 합니다 `CTaskDialog` 닫습니다. 응용 프로그램에서 사용 하 여 대화 상자를 표시 하는 경우 [CTaskDialog::DoModal](#domodal), `DoModal` 반환 된 *nCommandControlID* 선택한 명령 단추 컨트롤의 합니다.
+사용자가 명령 단추 컨트롤을 선택 하면이 `CTaskDialog` 닫힙니다. 응용 프로그램에서 [ctaskdialog::D omodal](#domodal)을 사용 하 여 대화 상자를 `DoModal` 표시 하는 경우 선택한 명령 단추 컨트롤의 *ncommandcontrolid* 를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -289,7 +289,7 @@ void AddCommandControl(
 
 ##  <a name="addradiobutton"></a>  CTaskDialog::AddRadioButton
 
-라디오 단추를 추가 하 여 `CTaskDialog`입니다.
+에 라디오 단추 `CTaskDialog`를 추가 합니다.
 
 ```
 void CTaskDialog::AddRadioButton(
@@ -301,19 +301,19 @@ void CTaskDialog::AddRadioButton(
 ### <a name="parameters"></a>매개 변수
 
 *nRadioButtonID*<br/>
-[in] 라디오 단추의 id 번호입니다.
+진행 라디오 단추의 id 번호입니다.
 
 *strCaption*<br/>
-[in] 문자열을는 `CTaskDialog` 라디오 단추 옆에 표시 됩니다.
+진행 가 `CTaskDialog` 라디오 단추 옆에 표시 하는 문자열입니다.
 
 *bEnabled*<br/>
-[in] 라디오 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
+진행 라디오 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
-에 대 한 라디오 단추를 [CTaskDialog 클래스](../../mfc/reference/ctaskdialog-class.md) 사용자 로부터 정보를 수집할 수 있도록 합니다. 함수를 사용 하 여 [CTaskDialog::GetSelectedRadioButtonID](#getselectedradiobuttonid) 라디오 단추 선택 되었는지 확인 하려면.
+[Ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md) 의 라디오 단추를 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. [Ctaskdialog:: GetSelectedRadioButtonID](#getselectedradiobuttonid) 함수를 사용 하 여 선택한 라디오 단추를 확인 합니다.
 
-합니다 `CTaskDialog` 것을 요구 하지 않는 합니다 *nRadioButtonID* 매개 변수는 각 라디오 단추에 대 한 고유 합니다. 그러나 각 라디오 단추에 대 한 고유 식별자를 사용 하지 않는 경우 예기치 않은 동작이 발생할 수 있습니다.
+에서는 `CTaskDialog` *nRadioButtonID* 매개 변수가 각 라디오 단추에 대해 고유할 필요가 없습니다. 그러나 각 라디오 단추에 대해 고유한 식별자를 사용 하지 않으면 예기치 않은 동작이 발생할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -321,7 +321,7 @@ void CTaskDialog::AddRadioButton(
 
 ##  <a name="clickcommandcontrol"></a>  CTaskDialog::ClickCommandControl
 
-프로그래밍 방식으로 명령 단추 컨트롤 또는 일반 단추를 클릭합니다.
+명령 단추 컨트롤이 나 일반 단추를 프로그래밍 방식으로 클릭 합니다.
 
 ```
 protected:
@@ -331,15 +331,15 @@ void ClickCommandControl(int nCommandControlID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nCommandControlID*<br/>
-[in] 클릭 컨트롤의 명령 ID입니다.
+진행 클릭할 컨트롤의 명령 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 TDM_CLICK_BUTTON windows 메시지를 생성합니다.
+이 메서드는 windows 메시지 TDM_CLICK_BUTTON를 생성 합니다.
 
 ##  <a name="clickradiobutton"></a>  CTaskDialog::ClickRadioButton
 
-프로그래밍 방식으로 라디오 단추를 클릭합니다.
+라디오 단추를 프로그래밍 방식으로 클릭 합니다.
 
 ```
 protected:
@@ -349,15 +349,15 @@ void ClickRadioButton(int nRadioButtonID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nRadioButtonID*<br/>
-[in] 라디오 단추를 클릭의 ID입니다.
+진행 클릭할 라디오 단추의 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 TDM_CLICK_RADIO_BUTTON windows 메시지를 생성합니다.
+이 메서드는 windows 메시지 TDM_CLICK_RADIO_BUTTON를 생성 합니다.
 
 ##  <a name="ctaskdialog"></a>  CTaskDialog::CTaskDialog
 
-인스턴스를 만듭니다는 [CTaskDialog 클래스](../../mfc/reference/ctaskdialog-class.md)합니다.
+[Ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md)의 인스턴스를 만듭니다.
 
 ```
 CTaskDialog(
@@ -382,36 +382,36 @@ CTaskDialog(
 ### <a name="parameters"></a>매개 변수
 
 *strContent*<br/>
-[in] 내용에 사용 하는 문자열을 `CTaskDialog`입니다.
+진행 의 내용에 사용할 문자열 `CTaskDialog`입니다.
 
 *strMainInstruction*<br/>
-[in] 기본 명령은 `CTaskDialog`합니다.
+진행 의 기본 명령 `CTaskDialog`입니다.
 
 *strTitle*<br/>
-[in] 제목의 `CTaskDialog`합니다.
+진행 의 `CTaskDialog`제목입니다.
 
 *nCommonButtons*<br/>
-[in] 추가할 일반적인 단추의 마스크는 `CTaskDialog`합니다.
+진행 에 추가할 `CTaskDialog`공용 단추의 마스크입니다.
 
 *nTaskDialogOptions*<br/>
-[in] 사용 하는 옵션의 집합을 `CTaskDialog`입니다.
+진행 에 사용할 옵션 집합입니다 `CTaskDialog`.
 
 *strFooter*<br/>
-[in] 바닥글을 사용 하는 문자열입니다.
+진행 바닥글로 사용할 문자열입니다.
 
 *nIDCommandControlsFirst*<br/>
-[in] 첫 번째 명령의 문자열 ID입니다.
+진행 첫 번째 명령의 문자열 ID입니다.
 
 *nIDCommandControlsLast*<br/>
-[in] 마지막 명령은의 문자열 ID입니다.
+진행 마지막 명령의 문자열 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-추가할 수 있는 두 가지는 `CTaskDialog` 응용 프로그램입니다. 첫 번째 방법은 생성자 중 하나를 만드는 데는 `CTaskDialog` 를 사용 하 여이 표시할 [CTaskDialog::DoModal](#domodal)합니다. 두 번째 방법은 정적 함수를 사용 하는 것 [CTaskDialog::ShowDialog](#showdialog)를 표시할 수 있습니다를 `CTaskDialog` 명시적으로 만들지 않고는 `CTaskDialog` 개체입니다.
+를 `CTaskDialog` 응용 프로그램에 추가 하는 방법에는 두 가지가 있습니다. 첫 번째 방법은 생성자 중 하나를 사용 하 여를 `CTaskDialog` 만들고 [ctaskdialog::D omodal](#domodal)을 사용 하 여 표시 하는 것입니다. 두 번째 방법은 정적 함수 [ctaskdialog:: ShowDialog](#showdialog)를 사용 하는 것입니다 .이 함수를 사용 `CTaskDialog` 하면 `CTaskDialog` 개체를 명시적으로 만들지 않고도를 표시할 수 있습니다.
 
-두 번째 생성자는 응용 프로그램의 리소스 파일에서 데이터를 사용 하 여 명령 단추 컨트롤을 만듭니다. 리소스 파일에 문자열 테이블에 연결 된 문자열 Id 사용 하 여 여러 문자열입니다. 이 메서드 간에 문자열 테이블의 유효한 각 항목에 대 한 명령 단추 컨트롤을 추가 *nIDCommandControlsFirst* 하 고 *nCommandControlsLast*(포함). 이러한 명령 단추 컨트롤에 대 한 문자열 테이블의 문자열은 컨트롤의 캡션 및 문자열 ID는 컨트롤의 id입니다.
+두 번째 생성자는 응용 프로그램의 리소스 파일에 있는 데이터를 사용 하 여 명령 단추 컨트롤을 만듭니다. 리소스 파일의 문자열 테이블에는 문자열 Id가 연결 된 여러 문자열이 있습니다. 이 메서드는 *nIDCommandControlsFirst* 과 *nCommandControlsLast*사이에 있는 문자열 테이블의 유효한 각 항목에 대 한 명령 단추 컨트롤을 추가 합니다. 이러한 명령 단추 컨트롤의 경우 문자열 테이블의 문자열은 컨트롤의 캡션입니다. 문자열 ID는 컨트롤의 ID입니다.
 
-참조 [CTaskDialog::SetOptions](#setoptions) 목록을 사용할 수 있는 옵션에 대 한 합니다.
+유효한 옵션 목록은 [Ctaskdialog:: SetOptions](#setoptions) 를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -419,7 +419,7 @@ CTaskDialog(
 
 ##  <a name="domodal"></a>  CTaskDialog::DoModal
 
-표시 된 `CTaskDialog` 고 모달 합니다.
+를 `CTaskDialog` 표시 하 고 모달로 만듭니다.
 
 ```
 INT_PTR DoModal (HWND hParent = ::GetActiveWindow());
@@ -428,17 +428,17 @@ INT_PTR DoModal (HWND hParent = ::GetActiveWindow());
 ### <a name="parameters"></a>매개 변수
 
 *hParent*<br/>
-[in] 부모 창입니다는 `CTaskDialog`합니다.
+진행 의 부모 창 `CTaskDialog`입니다.
 
 ### <a name="return-value"></a>반환 값
 
-사용자가 선택한 옵션에 해당 하는 정수입니다.
+사용자가 선택한 항목에 해당 하는 정수입니다.
 
 ### <a name="remarks"></a>설명
 
-이 인스턴스를 표시 합니다 [CTaskDialog](../../mfc/reference/ctaskdialog-class.md)합니다. 그런 다음 응용 프로그램 대화 상자를 닫으려면 사용자를 기다립니다.
+[Ctaskdialog](../../mfc/reference/ctaskdialog-class.md)의이 인스턴스를 표시 합니다. 그런 다음 응용 프로그램은 사용자가 대화 상자를 닫을 때까지 기다립니다.
 
-합니다 `CTaskDialog` 명령 링크 컨트롤, 일반적인 단추를 선택 하거나 닫을 때 닫습니다는 `CTaskDialog`합니다. 반환 값에는 사용자 대화 상자를 닫은 방법을 나타내는 식별자입니다.
+는 `CTaskDialog` 사용자가 일반 단추 또는 명령 링크 컨트롤을 선택 하거나를 `CTaskDialog`닫을 때 닫힙니다. 반환 값은 사용자가 대화 상자를 닫은 방법을 나타내는 식별자입니다.
 
 ### <a name="example"></a>예제
 
@@ -446,7 +446,7 @@ INT_PTR DoModal (HWND hParent = ::GetActiveWindow());
 
 ##  <a name="getcommonbuttoncount"></a>  CTaskDialog::GetCommonButtonCount
 
-일반 단추 수를 검색합니다.
+공용 단추 수를 검색 합니다.
 
 ```
 int GetCommonButtonCount() const;
@@ -454,17 +454,17 @@ int GetCommonButtonCount() const;
 
 ### <a name="return-value"></a>반환 값
 
-사용할 수 있는 일반적인 단추의 수입니다.
+사용할 수 있는 일반 단추 수입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 단추를 제공 하는 일반적인 단추가 [CTaskDialog::CTaskDialog](#ctaskdialog)합니다. 합니다 [CTaskDialog 클래스](../../mfc/reference/ctaskdialog-class.md) 대화 상자의 아래쪽 단추를 표시 합니다.
+공용 단추는 [ctaskdialog:: ctaskdialog](#ctaskdialog)에 제공 하는 기본 단추입니다. [Ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md) 는 대화 상자 아래쪽의 단추를 표시 합니다.
 
-열거 목록은 단추 CommCtrl.h에 제공 됩니다.
+열거 되는 단추의 목록에는 Ctrl. h가 제공 됩니다.
 
 ##  <a name="getcommonbuttonflag"></a>  CTaskDialog::GetCommonButtonFlag
 
-Windows 단추를 일반 단추 형식에 연결 된 표준 변환 합니다 [CTaskDialog 클래스](../../mfc/reference/ctaskdialog-class.md)합니다.
+표준 Windows 단추를 [Ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md)와 연결 된 일반 단추 형식으로 변환 합니다.
 
 ```
 int GetCommonButtonFlag(int nButtonId) const;
@@ -473,15 +473,15 @@ int GetCommonButtonFlag(int nButtonId) const;
 ### <a name="parameters"></a>매개 변수
 
 *nButtonId*<br/>
-[in] 표준 Windows 단추 값입니다.
+진행 표준 Windows 단추 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
-해당 변수의 `CTaskDialog` 공용 단추입니다. 해당 공용 단추가 제공 되지 않음 인 경우 0을 반환 합니다.
+해당 `CTaskDialog` 하는 공용 단추의 값입니다. 해당 하는 공통 단추가 없으면이 메서드는 0을 반환 합니다.
 
 ##  <a name="getcommonbuttonid"></a>  CTaskDialog::GetCommonButtonId
 
-와 관련 된 일반적인 단추 형식 중 하나를 변환 합니다 [CTaskDialog 클래스](../../mfc/reference/ctaskdialog-class.md) 표준 Windows 단추를 합니다.
+[Ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md) 와 연결 된 공통 단추 형식 중 하나를 표준 Windows 단추로 변환 합니다.
 
 ```
 int GetCommonButtonId(int nFlag);
@@ -490,15 +490,15 @@ int GetCommonButtonId(int nFlag);
 ### <a name="parameters"></a>매개 변수
 
 *nFlag*<br/>
-[in] 와 관련 된 일반적인 단추 종류를 `CTaskDialog` 클래스입니다.
+진행 `CTaskDialog` 클래스와 연결 된 공용 단추 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
-해당 표준 Windows 단추의 값입니다. 해당 Windows 단추가 제공 되지 않음 인 경우 메서드는 0을 반환 합니다.
+해당 표준 Windows 단추의 값입니다. 해당 하는 Windows 단추가 없으면 메서드는 0을 반환 합니다.
 
 ##  <a name="getoptions"></a>  CTaskDialog::GetOptions
 
-이 옵션 플래그를 반환 합니다. `CTaskDialog`합니다.
+이 `CTaskDialog`에 대 한 옵션 플래그를 반환 합니다.
 
 ```
 int GetOptions() const;
@@ -506,11 +506,11 @@ int GetOptions() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 플래그를 `CTaskDialog`입니다.
+에 대 한 `CTaskDialog`플래그입니다.
 
 ### <a name="remarks"></a>설명
 
-사용할 수 있는 옵션에 대 한 자세한 합니다 [CTaskDialog 클래스](../../mfc/reference/ctaskdialog-class.md)를 참조 하세요 [CTaskDialog::SetOptions](#setoptions).
+[Ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md)에 사용할 수 있는 옵션에 대 한 자세한 내용은 [Ctaskdialog:: SetOptions](#setoptions)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -518,7 +518,7 @@ int GetOptions() const;
 
 ##  <a name="getselectedcommandcontrolid"></a>  CTaskDialog::GetSelectedCommandControlID
 
-선택한 명령 단추 컨트롤을 반환합니다.
+선택한 명령 단추 컨트롤을 반환 합니다.
 
 ```
 int GetSelectedCommandControlID() const;
@@ -526,11 +526,11 @@ int GetSelectedCommandControlID() const;
 
 ### <a name="return-value"></a>반환 값
 
-현재 선택한 명령 단추 컨트롤의 ID입니다.
+현재 선택 된 명령 단추 컨트롤의 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 사용 하 여 사용자가 선택한 명령 단추의 ID를 검색할 필요가 없습니다. 해당 ID가 반환 [CTaskDialog::DoModal](#domodal) 하거나 [CTaskDialog::ShowDialog](#showdialog)합니다.
+사용자가 선택한 명령 단추의 ID를 검색 하기 위해이 메서드를 사용할 필요는 없습니다. 이 ID는 [Ctaskdialog::D oModal](#domodal) 또는 [Ctaskdialog:: ShowDialog](#showdialog)에서 반환 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -538,7 +538,7 @@ int GetSelectedCommandControlID() const;
 
 ##  <a name="getselectedradiobuttonid"></a>  CTaskDialog::GetSelectedRadioButtonID
 
-선택한 라디오 단추를 반환합니다.
+선택 된 라디오 단추를 반환 합니다.
 
 ```
 int GetSelectedRadioButtonID() const;
@@ -546,11 +546,11 @@ int GetSelectedRadioButtonID() const;
 
 ### <a name="return-value"></a>반환 값
 
-선택된 된 라디오 단추의 ID입니다.
+선택 된 라디오 단추의 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 선택된 된 라디오 단추를 검색 하는 대화 상자를 닫은 후이 메서드를 사용할 수 있습니다.
+사용자가 대화 상자를 닫은 후이 메서드를 사용 하 여 선택한 라디오 단추를 검색할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -566,7 +566,7 @@ BOOL GetVerificationCheckboxState() const;
 
 ### <a name="return-value"></a>반환 값
 
-확인란을 선택한 경우 FALSE 있지 않으면 TRUE입니다.
+확인란이 선택 되어 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="example"></a>예제
 
@@ -574,7 +574,7 @@ BOOL GetVerificationCheckboxState() const;
 
 ##  <a name="iscommandcontrolenabled"></a>  CTaskDialog::IsCommandControlEnabled
 
-명령 단추 컨트롤 또는 단추 사용 되는지 여부를 결정 합니다.
+명령 단추 컨트롤이 나 단추를 사용할 수 있는지 여부를 확인 합니다.
 
 ```
 BOOL IsCommandControlEnabled(int nCommandControlID) const;
@@ -583,17 +583,17 @@ BOOL IsCommandControlEnabled(int nCommandControlID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nCommandControlID*<br/>
-[in] 테스트 단추 명령 단추 컨트롤의 ID입니다.
+진행 테스트할 명령 단추 컨트롤 또는 단추의 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
-컨트롤을 사용 하는 경우 FALSE 있지 않으면 TRUE입니다.
+컨트롤을 사용할 수 있으면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 사용 하 여의 공통 단추 및 명령 단추 컨트롤을 모두의 가용성을 확인 하는 `CTaskDialog` 클래스 * 합니다.
+이 메서드를 사용 하 여 두 명령 단추 컨트롤과 * `CTaskDialog` 클래스의 공통 단추를 모두 사용할 수 있는지 확인할 수 있습니다.
 
-하는 경우 *nCommandControlID* 은 유효한 식별자가 아닙니다에 대 한 일반적 `CTaskDialog` 단추 또는 명령 단추 컨트롤을이 메서드가 예외를 throw 합니다.
+*Ncommandcontrolid* 가 일반 `CTaskDialog` 단추나 명령 단추 컨트롤에 대 한 유효한 식별자가 아닌 경우이 메서드는 예외를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -601,7 +601,7 @@ BOOL IsCommandControlEnabled(int nCommandControlID) const;
 
 ##  <a name="isradiobuttonenabled"></a>  CTaskDialog::IsRadioButtonEnabled
 
-라디오 단추를 사용할 수 있는지 여부를 결정 합니다.
+라디오 단추를 사용할 수 있는지 여부를 확인 합니다.
 
 ```
 BOOL IsRadioButtonEnabled(int nRadioButtonID) const;
@@ -610,15 +610,15 @@ BOOL IsRadioButtonEnabled(int nRadioButtonID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nRadioButtonID*<br/>
-[in] 테스트 라디오 단추의 ID입니다.
+진행 테스트할 라디오 단추의 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
-라디오 단추를 사용 하는 경우 FALSE 있지 않으면 TRUE입니다.
+라디오 단추가 사용 되 면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-하는 경우 *nRadioButtonID* 유효한 식별자가 아닙니다 라디오 단추의 경우,이 메서드는 예외를 throw 합니다.
+*NRadioButtonID* 가 라디오 단추에 대 한 유효한 식별자가 아닌 경우이 메서드는 예외를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -626,7 +626,7 @@ BOOL IsRadioButtonEnabled(int nRadioButtonID) const;
 
 ##  <a name="issupported"></a>  CTaskDialog::IsSupported
 
-응용 프로그램을 실행 하는 컴퓨터를 지원 하는지 여부를 결정 합니다 `CTaskDialog`합니다.
+응용 프로그램을 실행 하는 컴퓨터에서을 `CTaskDialog`지원 하는지 여부를 확인 합니다.
 
 ```
 static BOOL IsSupported();
@@ -634,11 +634,11 @@ static BOOL IsSupported();
 
 ### <a name="return-value"></a>반환 값
 
-컴퓨터에서 지 원하는 경우 TRUE를 `CTaskDialog`; FALSE이 고, 그렇지 합니다.
+컴퓨터에서를 `CTaskDialog`지원 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수를 사용 하 여 응용 프로그램을 실행 하는 컴퓨터에서 지 원하는 경우 런타임 시 결정 하는 `CTaskDialog` 클래스입니다. 컴퓨터를 지원 하지 않는 경우는 `CTaskDialog`, 사용자에 게 정보를 전달 하는 또 다른 방법을 제공 해야 합니다. 사용 하려는 경우 응용 프로그램 충돌을 `CTaskDialog` 지원 하지 않는 컴퓨터를 `CTaskDialog` 클래스입니다.
+응용 프로그램을 실행 하는 컴퓨터에서 클래스를 `CTaskDialog` 지 원하는 경우이 함수를 사용 하 여 런타임에 확인 합니다. 컴퓨터에서를 `CTaskDialog`지원 하지 않는 경우 사용자에 게 정보를 전달 하는 다른 방법을 제공 해야 합니다. 클래스`CTaskDialog` 를 지원 하지 않는 컴퓨터에서를 `CTaskDialog` 사용 하려고 하면 응용 프로그램의 작동이 중단 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -646,7 +646,7 @@ static BOOL IsSupported();
 
 ##  <a name="loadcommandcontrols"></a>  CTaskDialog::LoadCommandControls
 
-문자열 테이블에서 데이터를 사용 하 여 명령 단추 컨트롤을 추가 합니다.
+문자열 테이블의 데이터를 사용 하 여 명령 단추 컨트롤을 추가 합니다.
 
 ```
 void LoadCommandControls(
@@ -657,16 +657,16 @@ void LoadCommandControls(
 ### <a name="parameters"></a>매개 변수
 
 *nIDCommandControlsFirst*<br/>
-[in] 첫 번째 명령의 문자열 ID입니다.
+진행 첫 번째 명령의 문자열 ID입니다.
 
 *nIDCommandControlsLast*<br/>
-[in] 마지막 명령은의 문자열 ID입니다.
+진행 마지막 명령의 문자열 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 응용 프로그램의 리소스 파일에서 데이터를 사용 하 여 명령 단추 컨트롤을 만듭니다. 리소스 파일에 문자열 테이블에 연결 된 문자열 Id 사용 하 여 여러 문자열입니다. 이 메서드를 사용 하 여 추가 된 새 명령 단추 컨트롤 컨트롤의 캡션 및 문자열 ID에 대 한 컨트롤의 id 문자열을 사용 선택 하는 문자열의 범위에서 제공 하는 *nIDCommandControlsFirst* 하 고 *nCommandControlsLast*(포함). 범위에 빈 항목이 있으면 메서드는 해당 항목에 대 한 명령 단추 컨트롤을 추가 하지 않습니다.
+이 메서드는 응용 프로그램의 리소스 파일에 있는 데이터를 사용 하 여 명령 단추 컨트롤을 만듭니다. 리소스 파일의 문자열 테이블에는 문자열 Id가 연결 된 여러 문자열이 있습니다. 이 메서드를 사용 하 여 추가 된 새 명령 단추 컨트롤은 컨트롤의 캡션에 대 한 문자열 및 컨트롤 ID의 문자열 ID를 사용 합니다. 선택한 문자열 범위는 *nIDCommandControlsFirst* 및 *nCommandControlsLast*(포함)에 의해 제공 됩니다. 범위에 빈 항목이 있는 경우 메서드는 해당 항목에 대 한 명령 단추 컨트롤을 추가 하지 않습니다.
 
-기본적으로 새 명령 단추 컨트롤을 사용 및 권한 상승 필요 하지 않습니다.
+기본적으로 새 명령 단추 컨트롤이 활성화 되며 권한 상승이 필요 하지 않습니다.
 
 ### <a name="example"></a>예제
 
@@ -674,7 +674,7 @@ void LoadCommandControls(
 
 ##  <a name="loadradiobuttons"></a>  CTaskDialog::LoadRadioButtons
 
-문자열 테이블에서 데이터를 사용 하 여 라디오 단추 컨트롤을 추가 합니다.
+문자열 테이블의 데이터를 사용 하 여 라디오 단추 컨트롤을 추가 합니다.
 
 ```
 void LoadRadioButtons(
@@ -685,16 +685,16 @@ void LoadRadioButtons(
 ### <a name="parameters"></a>매개 변수
 
 *nIDRadioButtonsFirst*<br/>
-[in] 문자열의 ID는 첫 번째 라디오 단추입니다.
+진행 첫 번째 라디오 단추의 문자열 ID입니다.
 
 *nIDRadioButtonsLast*<br/>
-[in] 마지막 라디오 단추의 문자열 ID입니다.
+진행 마지막 라디오 단추의 문자열 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 응용 프로그램의 리소스 파일에서 데이터를 사용 하 여 라디오 단추를 만듭니다. 리소스 파일에 문자열 테이블에 연결 된 문자열 Id 사용 하 여 여러 문자열입니다. 이 메서드를 사용 하 여 추가 된 새 라디오 단추 라디오 단추의 캡션과 문자열 ID에 대 한 라디오 단추의 id 문자열을 사용 선택 하는 문자열의 범위에서 제공 하는 *nIDRadioButtonsFirst* 하 고 *nRadioButtonsLast*(포함). 범위에 빈 항목이 있으면 메서드는 해당 항목에 대 한 라디오 단추를 추가 하지 않습니다.
+이 메서드는 응용 프로그램의 리소스 파일에 있는 데이터를 사용 하 여 라디오 단추를 만듭니다. 리소스 파일의 문자열 테이블에는 문자열 Id가 연결 된 여러 문자열이 있습니다. 이 메서드를 사용 하 여 추가 된 새 라디오 단추는 라디오 단추 캡션에 문자열을 사용 하 고 라디오 단추의 ID에 문자열 ID를 사용 합니다. 선택한 문자열 범위는 *nIDRadioButtonsFirst* 및 *nRadioButtonsLast*(포함)에 의해 제공 됩니다. 범위에 빈 항목이 있는 경우 메서드는 해당 항목에 대 한 라디오 단추를 추가 하지 않습니다.
 
-기본적으로 새 라디오 단추가 활성화 됩니다.
+기본적으로 새 라디오 단추를 사용할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -702,7 +702,7 @@ void LoadRadioButtons(
 
 ##  <a name="navigateto"></a>  CTaskDialog::NavigateTo
 
-포커스를 다른 전송 `CTaskDialog`합니다.
+포커스를 다른 `CTaskDialog`로 이동 합니다.
 
 ```
 protected:
@@ -712,15 +712,15 @@ void NavigateTo(CTaskDialog& oTaskDialog) const;
 ### <a name="parameters"></a>매개 변수
 
 *oTaskDialog*<br/>
-[in] `CTaskDialog` 포커스를 받는 합니다.
+진행 `CTaskDialog` 포커스를 받는입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 현재 숨깁니다 `CTaskDialog` 표시 되는 경우는 *oTaskDialog*합니다. 합니다 *oTaskDialog* 현재와 동일한 위치에 표시 됩니다 `CTaskDialog`합니다.
+이 메서드는 `CTaskDialog` *otaskdialog*가 표시 될 때 현재를 숨깁니다. *Otaskdialog* 는 현재 `CTaskDialog`와 동일한 위치에 표시 됩니다.
 
 ##  <a name="oncommandcontrolclick"></a>  CTaskDialog::OnCommandControlClick
 
-프레임 워크는 명령 단추 컨트롤을 클릭할 때이 메서드를 호출 합니다.
+사용자가 명령 단추 컨트롤을 클릭 하면 프레임 워크에서이 메서드를 호출 합니다.
 
 ```
 virtual HRESULT OnCommandControlClick(int nCommandControlID);
@@ -729,19 +729,19 @@ virtual HRESULT OnCommandControlClick(int nCommandControlID);
 ### <a name="parameters"></a>매개 변수
 
 *nCommandControlID*<br/>
-[in] 사용자가 선택한 명령 단추 컨트롤의 ID입니다.
+진행 사용자가 선택한 명령 단추 컨트롤의 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
-기본 구현은 S_OK를 반환합니다.
+기본 구현에서는 S_OK를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 동작을 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자 지정 동작을 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="oncreate"></a>  CTaskDialog::OnCreate
 
-프레임 워크를 만든 후이 메서드를 호출 합니다 `CTaskDialog`합니다.
+프레임 워크는를 `CTaskDialog`만든 후이 메서드를 호출 합니다.
 
 ```
 virtual HRESULT OnCreate();
@@ -749,15 +749,15 @@ virtual HRESULT OnCreate();
 
 ### <a name="return-value"></a>반환 값
 
-기본 구현은 S_OK를 반환합니다.
+기본 구현에서는 S_OK를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 동작을 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자 지정 동작을 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="ondestroy"></a>  CTaskDialog::OnDestroy
 
-프레임 워크를 즉시 제거 하기 전에이 메서드를 호출 합니다 `CTaskDialog`합니다.
+프레임 워크는를 `CTaskDialog`소멸 하기 바로 전에이 메서드를 호출 합니다.
 
 ```
 virtual HRESULT OnDestroy();
@@ -765,15 +765,15 @@ virtual HRESULT OnDestroy();
 
 ### <a name="return-value"></a>반환 값
 
-기본 구현은 S_OK를 반환합니다.
+기본 구현에서는 S_OK를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 동작을 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자 지정 동작을 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="onexpandbuttonclick"></a>  CTaskDialog::OnExpandButtonClick
 
-프레임 워크 확장 단추를 클릭할 때이 메서드를 호출 합니다.
+사용자가 확장 단추를 클릭 하면 프레임 워크에서이 메서드를 호출 합니다.
 
 ```
 virtual HRESULT OnExpandButtonClicked(BOOL bExpanded);
@@ -782,19 +782,19 @@ virtual HRESULT OnExpandButtonClicked(BOOL bExpanded);
 ### <a name="parameters"></a>매개 변수
 
 *bExpanded*<br/>
-[in] 0이 아닌 값에 추가 정보가 표시 됩니다. 0 추가 정보 숨겨져 있음을 나타냅니다.
+진행 0이 아닌 값은 추가 정보가 표시 됨을 나타냅니다. 0은 추가 정보가 숨겨져 있음을 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
 
-기본 구현은 S_OK를 반환합니다.
+기본 구현에서는 S_OK를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 동작을 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자 지정 동작을 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="onhelp"></a>  CTaskDialog::OnHelp
 
-프레임 워크는 사용자가 도움말을 요청 하는 경우이 메서드를 호출 합니다.
+사용자가 도움말을 요청 하면 프레임 워크에서이 메서드를 호출 합니다.
 
 ```
 virtual HRESULT OnHelp();
@@ -802,15 +802,15 @@ virtual HRESULT OnHelp();
 
 ### <a name="return-value"></a>반환 값
 
-기본 구현은 S_OK를 반환합니다.
+기본 구현에서는 S_OK를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 동작을 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자 지정 동작을 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="onhyperlinkclick"></a>  CTaskDialog::OnHyperlinkClick
 
-프레임 워크는 사용자가 하이퍼링크를 클릭할 때이 메서드를 호출 합니다.
+사용자가 하이퍼링크를 클릭 하면 프레임 워크에서이 메서드를 호출 합니다.
 
 ```
 virtual HRESULT OnHyperlinkClick(const CString& strHref);
@@ -819,21 +819,21 @@ virtual HRESULT OnHyperlinkClick(const CString& strHref);
 ### <a name="parameters"></a>매개 변수
 
 *strHref*<br/>
-[in] 하이퍼링크를 나타내는 문자열입니다.
+진행 하이퍼링크를 나타내는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
-기본 구현은 S_OK를 반환합니다.
+기본 구현에서는 S_OK를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출 [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) S_OK를 반환 하기 전에 합니다.
+이 메서드는 S_OK를 반환 하기 전에 [ShellExecute](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) 를 호출 합니다.
 
-사용자 지정 동작을 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자 지정 동작을 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="oninit"></a>  CTaskDialog::OnInit
 
-이 메서드를 호출 하는 프레임 워크 때는 `CTaskDialog` 초기화 됩니다.
+프레임 워크는 `CTaskDialog` 가 초기화 될 때이 메서드를 호출 합니다.
 
 ```
 virtual HRESULT OnInit();
@@ -841,15 +841,15 @@ virtual HRESULT OnInit();
 
 ### <a name="return-value"></a>반환 값
 
-기본 구현은 S_OK를 반환합니다.
+기본 구현에서는 S_OK를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 동작을 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자 지정 동작을 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="onnavigatepage"></a>  CTaskDialog::OnNavigatePage
 
-프레임 워크에 대 한 응답에서이 메서드를 호출 합니다 [CTaskDialog::NavigateTo](#navigateto) 메서드.
+프레임 워크는 [Ctaskdialog:: NavigateTo](#navigateto) 메서드에 대 한 응답으로이 메서드를 호출 합니다.
 
 ```
 virtual HRESULT OnNavigatePage();
@@ -857,15 +857,15 @@ virtual HRESULT OnNavigatePage();
 
 ### <a name="return-value"></a>반환 값
 
-기본 구현은 S_OK를 반환합니다.
+기본 구현에서는 S_OK를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 동작을 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자 지정 동작을 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="onradiobuttonclick"></a>  CTaskDialog::OnRadioButtonClick
 
-프레임 워크는 사용자가 라디오 단추 컨트롤을 선택 하면이 메서드를 호출 합니다.
+사용자가 라디오 단추 컨트롤을 선택 하면 프레임 워크에서이 메서드를 호출 합니다.
 
 ```
 virtual HRESULT OnRadioButtonClick(int nRadioButtonID);
@@ -874,19 +874,19 @@ virtual HRESULT OnRadioButtonClick(int nRadioButtonID);
 ### <a name="parameters"></a>매개 변수
 
 *nRadioButtonID*<br/>
-[in] 사용자가 클릭 한 라디오 단추 컨트롤의 ID입니다.
+진행 사용자가 클릭 한 라디오 단추 컨트롤의 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
-기본 구현은 S_OK를 반환합니다.
+기본 구현에서는 S_OK를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 동작을 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자 지정 동작을 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="ontimer"></a>  CTaskDialog::OnTimer
 
-타이머가 만료 되 면이 메서드를 호출 하는 프레임 워크입니다.
+프레임 워크는 타이머가 만료 될 때이 메서드를 호출 합니다.
 
 ```
 virtual HRESULT OnTimer(long lTime);
@@ -895,19 +895,19 @@ virtual HRESULT OnTimer(long lTime);
 ### <a name="parameters"></a>매개 변수
 
 *lTime*<br/>
-[in] 시간 이후의 밀리초를 `CTaskDialog` 만든 또는 타이머 다시 설정 되었습니다.
+진행 가 만들어지거나 타이머가 다시 설정 `CTaskDialog` 된 이후의 시간 (밀리초)입니다.
 
 ### <a name="return-value"></a>반환 값
 
-기본 구현은 S_OK를 반환합니다.
+기본 구현에서는 S_OK를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 동작을 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자 지정 동작을 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="onverificationcheckboxclick"></a>  CTaskDialog::OnVerificationCheckboxClick
 
-프레임 워크는 사용자가 확인 확인란을 클릭할 때이 메서드를 호출 합니다.
+사용자가 확인 확인란을 클릭 하면 프레임 워크에서이 메서드를 호출 합니다.
 
 ```
 virtual HRESULT OnVerificationCheckboxClick(BOOL bChecked);
@@ -916,19 +916,19 @@ virtual HRESULT OnVerificationCheckboxClick(BOOL bChecked);
 ### <a name="parameters"></a>매개 변수
 
 *bChecked*<br/>
-[in] TRUE 이면 확인 확인란을 선택 하 고 있습니다. FALSE 이면 아닙니다.
+진행 TRUE는 확인 확인란을 선택 했음을 나타냅니다. FALSE는 그렇지 않음을 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
 
-기본 구현은 S_OK를 반환합니다.
+기본 구현에서는 S_OK를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-사용자 지정 동작을 구현 하는 파생된 클래스에서이 메서드를 재정의 합니다.
+사용자 지정 동작을 구현 하려면 파생 클래스에서이 메서드를 재정의 합니다.
 
 ##  <a name="removeallcommandcontrols"></a>  CTaskDialog::RemoveAllCommandControls
 
-명령 단추 컨트롤을 모두 제거 된 `CTaskDialog`합니다.
+에서 모든 명령 단추 컨트롤을 제거 합니다 `CTaskDialog`.
 
 ```
 void RemoveAllCommandControls();
@@ -940,7 +940,7 @@ void RemoveAllCommandControls();
 
 ##  <a name="removeallradiobuttons"></a>  CTaskDialog::RemoveAllRadioButtons
 
-모든 라디오 단추를 제거 합니다 `CTaskDialog`합니다.
+에서 라디오 단추를 모두 제거 합니다 `CTaskDialog`.
 
 ```
 void RemoveAllRadioButtons();
@@ -952,7 +952,7 @@ void RemoveAllRadioButtons();
 
 ##  <a name="setcommandcontroloptions"></a>  CTaskDialog::SetCommandControlOptions
 
-명령 단추 컨트롤에서 업데이트를 `CTaskDialog`입니다.
+에서 명령 단추 컨트롤을 업데이트 `CTaskDialog`합니다.
 
 ```
 void SetCommandControlOptions(
@@ -964,17 +964,17 @@ void SetCommandControlOptions(
 ### <a name="parameters"></a>매개 변수
 
 *nCommandControlID*<br/>
-[in] 업데이트 명령 컨트롤의 ID입니다.
+진행 업데이트할 명령 컨트롤의 ID입니다.
 
 *bEnabled*<br/>
-[in] 지정한 명령 단추 컨트롤이 사용 하도록 설정 되었거나 사용 하지 않도록 설정 하는 경우를 나타내는 부울 매개 변수입니다.
+진행 지정 된 명령 단추 컨트롤을 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
 
 *bRequiresElevation*<br/>
-[in] 지정 된 명령 단추 컨트롤에 권한 상승이 필요한 경우를 나타내는 부울 매개 변수입니다.
+진행 지정 된 명령 단추 컨트롤에 권한 상승이 필요한 지 여부를 나타내는 부울 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 사용 하 여 명령 단추 컨트롤을 사용 하도록 설정할지 또는에 추가한 후에 권한 상승이 필요한 지 여부를 변경 합니다 `CTaskDialog` 클래스입니다.
+이 메서드를 사용 하 여 명령 단추 컨트롤이 활성화 되는지 여부를 변경 하거나 `CTaskDialog` 클래스에 추가 된 후에 권한 상승이 필요한 지 여부를 변경할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -982,7 +982,7 @@ void SetCommandControlOptions(
 
 ##  <a name="setcommonbuttonoptions"></a>  CTaskDialog::SetCommonButtonOptions
 
-사용 하도록 설정 하 고 UAC 권한 상승을 요구 하는 일반적인 단추의 하위 집합을 업데이트 합니다.
+사용할 수 있는 공용 단추의 하위 집합을 업데이트 하 고 UAC 권한 상승을 요구 합니다.
 
 ```
 void SetCommonButtonOptions(
@@ -993,18 +993,18 @@ void SetCommonButtonOptions(
 ### <a name="parameters"></a>매개 변수
 
 *nDisabledButtonMask*<br/>
-[in] 일반 단추를 사용 하지 않도록 설정에 대 한 마스크입니다.
+진행 비활성화 하는 일반 단추에 대 한 마스크입니다.
 
 *nElevationButtonMask*<br/>
-[in] 권한 상승 해야 하는 일반 단추에 대 한 마스크입니다.
+진행 권한 상승이 필요한 일반 단추에 대 한 마스크입니다.
 
 ### <a name="remarks"></a>설명
 
-인스턴스를 사용할 수 있는 일반적인 단추가 설정할 수 있습니다 합니다 [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md) 생성자를 사용 하 여 [CTaskDialog::CTaskDialog](#ctaskdialog) 방법과 [CTaskDialog::SetCommonButtons ](#setcommonbuttons). `CTaskDialog::SetCommonButtonOptions` 새 일반 단추 추가 지원 하지 않습니다.
+Ctaskdialog [:: ctaskdialog](#ctaskdialog) 생성자와 [Ctaskdialog:: SetCommonButtons](#setcommonbuttons)메서드를 사용 하 여 [ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md) 의 인스턴스에 사용할 수 있는 공용 단추를 설정할 수 있습니다. `CTaskDialog::SetCommonButtonOptions`는 새로운 일반 단추를 추가 하는 기능을 지원 하지 않습니다.
 
-이 메서드를 사용 하지 않도록 설정 하거나이 제공 되지 않는 일반적인 단추 상승 사용 하는 경우 `CTaskDialog`,이 메서드를 사용 하 여 예외를 throw 합니다 [확인](diagnostic-services.md#ensure) 매크로입니다.
+이 메서드를 사용 하 여이 `CTaskDialog`에 사용할 수 없는 일반 단추를 사용 하거나 사용 하지 않도록 설정 하는 경우이 메서드는 [확인](diagnostic-services.md#ensure) 매크로를 사용 하 여 예외를 throw 합니다.
 
-이 메서드를 사용할 수 있는 모든 단추를 활성화 합니다 `CTaskDialog` 아닌에 *nDisabledButtonMask*이전에 비활성화 된 경우에 합니다. 이 메서드는 비슷한 방식으로 권한 상승 처리: 사용할 수 있지만에 포함 되지 않고 공용 단추가 있는 경우 권한 상승이 필요 하지 않은 일반적인 단추 기록 *nElevationButtonMask*합니다.
+이 메서드는에 사용할 수 `CTaskDialog` 있지만 이전에는 사용 하지 않도록 설정 했더라도 *nDisabledButtonMask*에 없는 모든 단추를 사용 하도록 설정 합니다. 이 메서드는 비슷한 방식으로 권한 상승을 처리 합니다. 공용 단추를 사용할 수 있지만 *nElevationButtonMask*에 포함 되지 않은 경우에는 권한 상승이 필요 하지 않은 일반 단추를 기록 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1012,7 +1012,7 @@ void SetCommonButtonOptions(
 
 ##  <a name="setcommonbuttons"></a>  CTaskDialog::SetCommonButtons
 
-일반 단추를 추가 합니다 `CTaskDialog`합니다.
+에 일반 단추를 `CTaskDialog`추가 합니다.
 
 ```
 void SetCommonButtons(
@@ -1024,23 +1024,23 @@ void SetCommonButtons(
 ### <a name="parameters"></a>매개 변수
 
 *nButtonMask*<br/>
-[in] 추가할 단추의 마스크는 `CTaskDialog`합니다.
+진행 에 추가할 `CTaskDialog`단추의 마스크입니다.
 
 *nDisabledButtonMask*<br/>
-[in] 단추를 사용 하지 않도록 설정 하는 마스크입니다.
+진행 사용 하지 않을 단추의 마스크입니다.
 
 *nElevationButtonMask*<br/>
-[in] 권한 상승 해야 하는 단추는 마스크입니다.
+진행 권한 상승이 필요한 단추의 마스크입니다.
 
 ### <a name="remarks"></a>설명
 
-이 인스턴스에 대 한 표시 창을 후이 메서드를 호출할 수 없습니다는 `CTaskDialog` 클래스가 만들어집니다. 이렇게 하면이 메서드는 예외가 throw 됩니다.
+`CTaskDialog` 클래스의이 인스턴스에 대 한 표시 창이 생성 된 후에는이 메서드를 호출할 수 없습니다. 이렇게 하면이 메서드는 예외를 throw 합니다.
 
-단추에 나타난 *nButtonMask* 재정의를 이전에 추가한 일반적인 단추는 `CTaskDialog`합니다. 에 표시 된 단추만 *nButtonMask* 사용할 수 있습니다.
+*Nbuttonmask* 로 표시 되는 단추는 이전에에 추가 된 `CTaskDialog`모든 공통 단추를 재정의 합니다. *Nbuttonmask* 에 표시 된 단추만 사용할 수 있습니다.
 
-경우 *nDisabledButtonMask* 또는 *nElevationButtonMask* 이 아닌 단추를 포함 *nButtonMask*,이 메서드는 사용하여예외를throw[확인](diagnostic-services.md#ensure) 매크로입니다.
+*NDisabledButtonMask* 또는 *NElevationButtonMask* 에 *nbuttonmask*에 없는 단추가 포함 된 경우이 메서드는 [확인](diagnostic-services.md#ensure) 매크로를 사용 하 여 예외를 throw 합니다.
 
-기본적으로 모든 공용 단추 설정 되어 있고 권한 상승이 필요 하지 않습니다.
+기본적으로 모든 일반 단추가 활성화 되며 권한 상승이 필요 하지 않습니다.
 
 ### <a name="example"></a>예제
 
@@ -1048,7 +1048,7 @@ void SetCommonButtons(
 
 ##  <a name="setcontent"></a>  CTaskDialog::SetContent
 
-콘텐츠를 업데이트 합니다 `CTaskDialog`합니다.
+의 콘텐츠를 업데이트 합니다 `CTaskDialog`.
 
 ```
 void SetContent(const CString& strContent);
@@ -1057,11 +1057,11 @@ void SetContent(const CString& strContent);
 ### <a name="parameters"></a>매개 변수
 
 *strContent*<br/>
-[in] 사용자에 게 표시할 문자열입니다.
+진행 사용자에 게 표시할 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
-콘텐츠는 `CTaskDialog` 클래스 대화 상자의 주 섹션에서 사용자에 게 표시 되는 텍스트입니다.
+`CTaskDialog` 클래스의 내용은 대화 상자의 주 섹션에서 사용자에 게 표시 되는 텍스트입니다.
 
 ### <a name="example"></a>예제
 
@@ -1069,7 +1069,7 @@ void SetContent(const CString& strContent);
 
 ##  <a name="setdefaultcommandcontrol"></a>  CTaskDialog::SetDefaultCommandControl
 
-기본 명령 단추 컨트롤을 지정합니다.
+기본 명령 단추 컨트롤을 지정 합니다.
 
 ```
 void SetDefaultCommandControl(int nCommandControlID);
@@ -1078,13 +1078,13 @@ void SetDefaultCommandControl(int nCommandControlID);
 ### <a name="parameters"></a>매개 변수
 
 *nCommandControlID*<br/>
-[in] 기본 명령 단추 컨트롤의 ID입니다.
+진행 기본값으로 사용할 명령 단추 컨트롤의 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 명령 단추 컨트롤은 컨트롤에 선택 하는 경우는 `CTaskDialog` 사용자에 게 먼저 표시 됩니다.
+기본 명령 단추 컨트롤은가 사용자에 게 처음 표시 될 때 `CTaskDialog` 선택 되는 컨트롤입니다.
 
-이 메서드는 지정 된 명령 단추 컨트롤을 찾을 수 없는 경우 예외를 throw *nCommandControlID*합니다.
+이 메서드는 *Ncommandcontrolid*로 지정 된 명령 단추 컨트롤을 찾을 수 없는 경우 예외를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1092,7 +1092,7 @@ void SetDefaultCommandControl(int nCommandControlID);
 
 ##  <a name="setdefaultradiobutton"></a>  CTaskDialog::SetDefaultRadioButton
 
-기본 라디오 단추를 지정합니다.
+기본 라디오 단추를 지정 합니다.
 
 ```
 void SetDefaultRadioButton(int nRadioButtonID);
@@ -1101,13 +1101,13 @@ void SetDefaultRadioButton(int nRadioButtonID);
 ### <a name="parameters"></a>매개 변수
 
 *nRadioButtonID*<br/>
-[in] 기본 라디오 단추의 ID입니다.
+진행 기본값으로 사용할 라디오 단추의 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 라디오 단추는 단추입니다 경우 선택 된 `CTaskDialog` 사용자에 게 먼저 표시 됩니다.
+기본 라디오 단추는가 사용자에 게 처음 표시 될 때 `CTaskDialog` 선택 되는 단추입니다.
 
-이 메서드는 지정 된 라디오 단추를 찾을 수 없으면 예외를 throw *nRadioButtonID*합니다.
+*NRadioButtonID*로 지정 된 라디오 단추를 찾을 수 없는 경우이 메서드는 예외를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1115,7 +1115,7 @@ void SetDefaultRadioButton(int nRadioButtonID);
 
 ##  <a name="setdialogwidth"></a>  CTaskDialog::SetDialogWidth
 
-너비를 조정 합니다 `CTaskDialog`합니다.
+의 너비를 조정 합니다 `CTaskDialog`.
 
 ```
 void SetDialogWidth(int nWidth = 0);
@@ -1124,13 +1124,13 @@ void SetDialogWidth(int nWidth = 0);
 ### <a name="parameters"></a>매개 변수
 
 *nWidth*<br/>
-[in] 대화 상자의 픽셀에서 너비입니다.
+진행 대화 상자의 너비 (픽셀)입니다.
 
 ### <a name="remarks"></a>설명
 
-매개 변수 *nWidth* 0 보다 크거나 이어야 합니다. 그렇지 않은 경우이 메서드는 예외가 throw 됩니다.
+매개 변수 *Nwidth* 는 0 보다 크거나 같아야 합니다. 그렇지 않으면이 메서드는 예외를 throw 합니다.
 
-하는 경우 *nWidth* 이 메서드 설정 대화 상자 기본 크기를 0으로 설정 됩니다.
+*Nwidth* 가 0으로 설정 된 경우이 메서드는 대화 상자를 기본 크기로 설정 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1138,7 +1138,7 @@ void SetDialogWidth(int nWidth = 0);
 
 ##  <a name="setexpansionarea"></a>  CTaskDialog::SetExpansionArea
 
-확장 영역의 업데이트는 `CTaskDialog`합니다.
+의 확장 영역을 업데이트 합니다 `CTaskDialog`.
 
 ```
 void SetExpansionArea(
@@ -1150,19 +1150,19 @@ void SetExpansionArea(
 ### <a name="parameters"></a>매개 변수
 
 *strExpandedInformation*<br/>
-[in] 문자열을는 `CTaskDialog` 확장 단추를 클릭할 때 대화 상자의 본문에 표시 됩니다.
+진행 사용자가 확장 단추 `CTaskDialog` 를 클릭할 때가 대화 상자의 본문에 표시 하는 문자열입니다.
 
 *strCollapsedLabel*<br/>
-[in] 문자열을는 `CTaskDialog` 확장 된 영역을 축소 되는 경우 확장 단추 옆에 표시 됩니다.
+진행 확장 된 영역이 축소 `CTaskDialog` 될 때 확장 단추 옆에가 표시 하는 문자열입니다.
 
 *strExpandedLabel*<br/>
-[in] 문자열을는 `CTaskDialog` 확장 된 영역에 표시 되 면 확장 단추 옆에 표시 됩니다.
+진행 확장 된 영역이 표시 `CTaskDialog` 될 때가 확장 단추 옆에 표시 하는 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
-확장 영역의 `CTaskDialog` 클래스를 사용 하면 사용자에 게 추가 정보를 제공할 수 있습니다. 확장 영역은의 주요 부분에는 `CTaskDialog`제목 및 콘텐츠 문자열의 바로 아래 있는 합니다.
+`CTaskDialog` 클래스의 확장 영역을 사용 하면 사용자에 게 추가 정보를 제공할 수 있습니다. 확장 영역은의 주 부분 `CTaskDialog`에 있으며 제목 및 콘텐츠 문자열 바로 아래에 있습니다.
 
-경우는 `CTaskDialog` 첫 번째는 확장 된 정보는 표시 되지 않습니다 및 배치 표시 `strCollapsedLabel` 확장 단추 옆에 있는 합니다. 확장 단추를 클릭할 때 합니다 `CTaskDialog` 표시 *strExpandedInformation* 레이블을 변경 하 고 *strExpandedLabel*합니다.
+가 처음 표시 될 때 확장 된 정보를 표시 하지 않고 확장 단추 옆 `strCollapsedLabel` 에 배치 합니다. `CTaskDialog` 사용자가 확장 단추를 클릭 하면에서 `CTaskDialog` *strex놓을* 수 있는 정보를 표시 하 고 레이블을 *strexancached 레이블로*변경 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1170,7 +1170,7 @@ void SetExpansionArea(
 
 ##  <a name="setfootericon"></a>  CTaskDialog::SetFooterIcon
 
-바닥글 아이콘 업데이트는 `CTaskDialog`합니다.
+의 바닥글 아이콘을 업데이트 합니다 `CTaskDialog`.
 
 ```
 void SetFooterIcon(HICON hFooterIcon);
@@ -1180,18 +1180,18 @@ void SetFooterIcon(LPCWSTR lpszFooterIcon);
 ### <a name="parameters"></a>매개 변수
 
 *hFooterIcon*<br/>
-[in] 새 아이콘의 `CTaskDialog`합니다.
+진행 의 새 아이콘 `CTaskDialog`입니다.
 
 *lpszFooterIcon*<br/>
-[in] 새 아이콘의 `CTaskDialog`합니다.
+진행 의 새 아이콘 `CTaskDialog`입니다.
 
 ### <a name="remarks"></a>설명
 
-바닥글 아이콘의 맨 아래에 표시 되는 [CTaskDialog 클래스](../../mfc/reference/ctaskdialog-class.md)합니다. 이 바닥글 텍스트에 연결할 수 있습니다. 바닥글 텍스트를 변경할 수 있습니다 [CTaskDialog::SetFooterText](#setfootertext)합니다.
+[Ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md)의 아래쪽에 바닥글 아이콘이 표시 됩니다. 연결 된 바닥글 텍스트가 있을 수 있습니다. [Ctaskdialog:: SetFooterText](#setfootertext)를 사용 하 여 바닥글 텍스트를 변경할 수 있습니다.
 
-이 메서드에서 사용 하 여 예외를 throw 합니다 [확인](diagnostic-services.md#ensure) 매크로 경우는 `CTaskDialog` 표시 됩니다 입력된 매개 변수는 NULL 또는 합니다.
+이 메서드는 `CTaskDialog` 가 표시 되거나 입력 매개 변수가 NULL 일 경우 [확인](diagnostic-services.md#ensure) 매크로를 사용 하 여 예외를 throw 합니다.
 
-A `CTaskDialog` 받아들일 수 있습니다는 `HICON` 또는 `LPCWSTR` 바닥글 아이콘으로 합니다. 생성자에서 TDF_USE_HICON_FOOTER 옵션을 설정 하 여 구성 됨 또는 [CTaskDialog::SetOptions](#setoptions)합니다. 기본적으로 `CTaskDialog` 사용 하도록 구성 된 `LPCWSTR` 바닥글 아이콘에 대 한 입력된 형식으로 합니다. 이 메서드는 부적절 한 형식을 사용 하 여 아이콘을 설정 하려고 하면 예외가 발생 합니다.
+는 `CTaskDialog` `HICON` 또는 바닥글`LPCWSTR` 아이콘 으로만 사용할 수 있습니다. 생성자 또는 [Ctaskdialog:: SetOptions](#setoptions)에 TDF_USE_HICON_FOOTER 옵션을 설정 하 여 구성 합니다. 기본적으로는 `CTaskDialog` 바닥글 아이콘의 입력 형식 `LPCWSTR` 으로 사용 하도록 구성 됩니다. 이 메서드는 부적절 한 유형을 사용 하 여 아이콘을 설정 하려고 하면 예외를 발생 시킵니다.
 
 ### <a name="example"></a>예제
 
@@ -1199,7 +1199,7 @@ A `CTaskDialog` 받아들일 수 있습니다는 `HICON` 또는 `LPCWSTR` 바닥
 
 ##  <a name="setfootertext"></a>  CTaskDialog::SetFooterText
 
-바닥글에 텍스트를 업데이트 합니다 `CTaskDialog`합니다.
+의 바닥글에 있는 텍스트를 업데이트 `CTaskDialog`합니다.
 
 ```
 void SetFooterText(const CString& strFooterText);
@@ -1208,11 +1208,11 @@ void SetFooterText(const CString& strFooterText);
 ### <a name="parameters"></a>매개 변수
 
 *strFooterText*<br/>
-[in] 바닥글에 대 한 새 텍스트입니다.
+진행 바닥글의 새 텍스트입니다.
 
 ### <a name="remarks"></a>설명
 
-바닥글 아이콘 아래에 바닥글 텍스트 옆에 표시 됩니다는 `CTaskDialog`합니다. 바닥글 아이콘을 사용 하 여 변경할 수 있습니다 [CTaskDialog::SetFooterIcon](#setfootericon)합니다.
+바닥글 아이콘이 아래쪽 `CTaskDialog`에 있는 바닥글 텍스트 옆에 표시 됩니다. [Ctaskdialog:: SetFooterIcon](#setfootericon)를 사용 하 여 바닥글 아이콘을 변경할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1220,7 +1220,7 @@ void SetFooterText(const CString& strFooterText);
 
 ##  <a name="setmainicon"></a>  CTaskDialog::SetMainIcon
 
-주 아이콘 업데이트는 `CTaskDialog`합니다.
+의 주 아이콘을 업데이트 합니다 `CTaskDialog`.
 
 ```
 void SetMainIcon(HICON hMainIcon);
@@ -1230,16 +1230,16 @@ void SetMainIcon(LPCWSTR lpszMainIcon);
 ### <a name="parameters"></a>매개 변수
 
 *hMainIcon*<br/>
-[in] 새 아이콘입니다.
+진행 새 아이콘입니다.
 
 *lpszMainIcon*<br/>
-[in] 새 아이콘입니다.
+진행 새 아이콘입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드에서 사용 하 여 예외를 throw 합니다 [확인](diagnostic-services.md#ensure) 매크로 경우는 `CTaskDialog` 표시 됩니다 입력된 매개 변수는 NULL 또는 합니다.
+이 메서드는 `CTaskDialog` 가 표시 되거나 입력 매개 변수가 NULL 일 경우 [확인](diagnostic-services.md#ensure) 매크로를 사용 하 여 예외를 throw 합니다.
 
-A `CTaskDialog` 받아들일 수 있습니다는 `HICON` 또는 `LPCWSTR` 주 아이콘으로 합니다. 생성자에서 TDF_USE_HICON_MAIN 옵션을 설정 하거나에서 구성할 수 있습니다 합니다 [CTaskDialog::SetOptions](#setoptions) 메서드. 기본적으로 `CTaskDialog` 사용 하도록 구성 된 `LPCWSTR` 주 아이콘에 대 한 입력된 형식으로 합니다. 이 메서드는 부적절 한 형식을 사용 하 여 아이콘을 설정 하려고 하면 예외가 발생 합니다.
+는 `CTaskDialog` `HICON` 또는 를`LPCWSTR` 주 아이콘 으로만 수락할 수 있습니다. 생성자 또는 [Ctaskdialog:: SetOptions](#setoptions) 메서드에서 TDF_USE_HICON_MAIN 옵션을 설정 하 여이를 구성할 수 있습니다. 기본적으로는 `CTaskDialog` 주 아이콘의 입력 형식 `LPCWSTR` 으로 사용 하도록 구성 됩니다. 이 메서드는 부적절 한 유형을 사용 하 여 아이콘을 설정 하려고 하면 예외를 발생 시킵니다.
 
 ### <a name="example"></a>예제
 
@@ -1247,7 +1247,7 @@ A `CTaskDialog` 받아들일 수 있습니다는 `HICON` 또는 `LPCWSTR` 주 �
 
 ##  <a name="setmaininstruction"></a>  CTaskDialog::SetMainInstruction
 
-기본 명령 업데이트는 `CTaskDialog`합니다.
+의 주 명령을 업데이트 합니다 `CTaskDialog`.
 
 ```
 void SetMainInstruction(const CString& strInstructions);
@@ -1256,11 +1256,11 @@ void SetMainInstruction(const CString& strInstructions);
 ### <a name="parameters"></a>매개 변수
 
 *strInstructions*<br/>
-[in] 새 기본 명령입니다.
+진행 새 주 명령입니다.
 
 ### <a name="remarks"></a>설명
 
-기본 명령을 `CTaskDialog` 클래스는 큰 굵은 글꼴에서 사용자에 게 표시 되는 텍스트입니다. 대화 상자의 제목 표시줄 아래에 있습니다.
+`CTaskDialog` 클래스의 기본 명령은 사용자에 게 굵은 굵은 글꼴로 표시 되는 텍스트입니다. 이 대화 상자는 제목 표시줄 아래의 대화 상자에 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1268,7 +1268,7 @@ void SetMainInstruction(const CString& strInstructions);
 
 ##  <a name="setoptions"></a>  CTaskDialog::SetOptions
 
-에 대 한 옵션을 구성 합니다 `CTaskDialog`합니다.
+에 대 한 `CTaskDialog`옵션을 구성 합니다.
 
 ```
 void SetOptions(int nOptionFlag);
@@ -1277,32 +1277,32 @@ void SetOptions(int nOptionFlag);
 ### <a name="parameters"></a>매개 변수
 
 *nOptionFlag*<br/>
-[in] 사용 하는 플래그 집합을 `CTaskDialog`입니다.
+진행 에 사용할 `CTaskDialog`플래그 집합입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는에 대 한 현재 옵션을 모두를 해제 합니다 `CTaskDialog`합니다. 현재 옵션을 유지 하려면 먼저 검색 해야을 사용 하 여 [CTaskDialog::GetOptions](#getoptions) 설정 하려는 옵션을 사용 하 여 결합 합니다.
+이 메서드는 `CTaskDialog`에 대 한 현재 옵션을 모두 지웁니다. 현재 옵션을 유지 하려면 먼저 [Ctaskdialog:: GetOptions](#getoptions) 를 사용 하 여 해당 옵션을 검색 하 고 설정 하려는 옵션과 결합 해야 합니다.
 
-다음 표에서 유효한 모든 옵션을 나열합니다.
+다음 표에서는 모든 유효한 옵션을 보여 줍니다.
 
 |||
 |-|-|
-|TDF_ENABLE_HYPERLINKS|하이퍼링크를 사용 하도록 설정 된 `CTaskDialog`합니다.|
-|TDF_USE_HICON_MAIN|구성 된 `CTaskDialog` 사용 하는 `HICON` 주 아이콘에 대 한 합니다. 대신 사용 하는 것을 `LPCWSTR`입니다.|
-|TDF_USE_HICON_FOOTER|구성 된 `CTaskDialog` 사용 하는 `HICON` 바닥글 아이콘에 대 한 합니다. 대신 사용 하는 것을 `LPCWSTR`입니다.|
-|TDF_ALLOW_DIALOG_CANCELLATION|사용자가 닫을 수 있습니다는 `CTaskDialog` 키보드를 사용 하 여 또는 대화 상자의 오른쪽 위 모퉁이에서 아이콘을 사용 하 여 경우에 합니다 **취소** 단추가 활성화 되지 않습니다. 이 플래그가 설정 되지 않은 경우 및 **취소** 단추가 활성화 되지 않으면, 사용자 alt+f4, Esc 키를 사용 하 여 대화 상자를 닫을 수 없습니다 또는 제목 표시줄의 닫기 단추.|
-|TDF_USE_COMMAND_LINKS|구성 된 `CTaskDialog` 명령 단추 컨트롤을 사용 하 합니다.|
-|TDF_USE_COMMAND_LINKS_NO_ICON|구성 된 `CTaskDialog` 컨트롤 옆의 아이콘을 표시 하지 않고 명령 단추 컨트롤을 사용 하 합니다. TDF_USE_COMMAND_LINKS TDF_USE_COMMAND_LINKS_NO_ICON를 재정의합니다.|
-|TDF_EXPAND_FOOTER_AREA|현재 확장 되어 확장 영역을 나타냅니다.|
-|TDF_EXPANDED_BY_DEFAULT|확장 영역 기본적으로 확장 되는지 여부를 결정 합니다.|
-|TDF_VERIFICATION_FLAG_CHECKED|확인 확인란 현재 선택 된 것을 나타냅니다.|
-|TDF_SHOW_PROGRESS_BAR|구성 된 `CTaskDialog` 진행률 표시줄을 표시 합니다.|
-|TDF_SHOW_MARQUEE_PROGRESS_BAR|움직이는 진행률 표시줄이 되도록 진행률 표시줄을 구성 합니다. 이 옵션을 사용 하도록 설정 하면 TDF_SHOW_PROGRESS_BAR 예상 동작을 설정 해야 합니다.|
-|TDF_CALLBACK_TIMER|나타내는 `CTaskDialog` 콜백 간격은 약 200 밀리초로 설정 됩니다.|
-|TDF_POSITION_RELATIVE_TO_WINDOW|구성 된 `CTaskDialog` 부모 창을 기준으로 가운데 맞춤 될 합니다. 이 플래그를 사용 하지 않는 경우는 `CTaskDialog` 모니터를 기준으로 가운데 맞춤 됩니다.|
-|TDF_RTL_LAYOUT|구성 된 `CTaskDialog` 오른쪽에서 왼쪽 읽기 모드에 대 한 합니다.|
-|TDF_NO_DEFAULT_RADIO_BUTTON|없음 라디오 단추가 선택 되어 있는지를 나타내는 경우는 `CTaskDialog` 나타납니다.|
-|TDF_CAN_BE_MINIMIZED|최소화 하기 위해 사용자를 사용 하도록 설정 된 `CTaskDialog`합니다. 이 옵션을 지원 하 여 `CTaskDialog` 모달 일 수 없습니다. MFC MFC는 모덜리스를 지원 하지 않으므로이 옵션을 지원 하지 않습니다 `CTaskDialog`합니다.|
+|TDF_ENABLE_HYPERLINKS|에서 하이퍼링크를 사용 `CTaskDialog`하도록 설정 합니다.|
+|TDF_USE_HICON_MAIN|주 아이콘에를 `HICON` 사용 하도록를구성합니다.`CTaskDialog` 대안은를 `LPCWSTR`사용 하는 것입니다.|
+|TDF_USE_HICON_FOOTER|바닥글 아이콘에를 `HICON` 사용 하도록를구성합니다.`CTaskDialog` 대안은를 `LPCWSTR`사용 하는 것입니다.|
+|TDF_ALLOW_DIALOG_CANCELLATION|취소 단추를 사용할 수 없는 `CTaskDialog` 경우에도 사용자가 키보드를 사용 하거나 대화 상자의 오른쪽 위 모퉁이에 있는 아이콘을 사용 하 여를 닫을 수 있습니다. 이 플래그를 설정 하지 않고 **취소** 단추를 사용할 수 없는 경우 사용자는 Alt + F4, esc 키 또는 제목 표시줄의 닫기 단추를 사용 하 여 대화 상자를 닫을 수 없습니다.|
+|TDF_USE_COMMAND_LINKS|명령 단추 컨트롤을 사용 하도록를 구성 합니다. `CTaskDialog`|
+|TDF_USE_COMMAND_LINKS_NO_ICON|컨트롤 옆에 아이콘을 표시 하지 않고 명령 단추 컨트롤을 사용 하도록를구성합니다.`CTaskDialog` TDF_USE_COMMAND_LINKS는 TDF_USE_COMMAND_LINKS_NO_ICON을 재정의 합니다.|
+|TDF_EXPAND_FOOTER_AREA|확장 영역이 현재 확장 되었음을 나타냅니다.|
+|TDF_EXPANDED_BY_DEFAULT|확장 영역이 기본적으로 확장 되는지 여부를 결정 합니다.|
+|TDF_VERIFICATION_FLAG_CHECKED|확인 확인란이 현재 선택 되어 있음을 나타냅니다.|
+|TDF_SHOW_PROGRESS_BAR|진행률 표시줄을 표시 하도록를구성합니다.`CTaskDialog`|
+|TDF_SHOW_MARQUEE_PROGRESS_BAR|진행률 표시줄을 움직이는 진행률 막대로 구성 합니다. 이 옵션을 사용 하도록 설정 하는 경우 예상 되는 동작을 포함 하도록 TDF_SHOW_PROGRESS_BAR를 설정 해야 합니다.|
+|TDF_CALLBACK_TIMER|`CTaskDialog` 콜백 간격이 약 200 밀리초로 설정 되어 있음을 나타냅니다.|
+|TDF_POSITION_RELATIVE_TO_WINDOW|`CTaskDialog` 부모 창에 상대적으로 가운데 맞춤 되도록를 구성 합니다. 이 플래그를 사용 하지 않는 경우는 `CTaskDialog` 모니터를 기준으로 가운데에 배치 됩니다.|
+|TDF_RTL_LAYOUT|오른쪽에서 `CTaskDialog` 왼쪽 읽기 레이아웃에 대 한를 구성 합니다.|
+|TDF_NO_DEFAULT_RADIO_BUTTON|이 `CTaskDialog` 표시 될 때 라디오 단추가 선택 되지 않았음을 나타냅니다.|
+|TDF_CAN_BE_MINIMIZED|사용자가를 `CTaskDialog`최소화할 수 있습니다. 이 옵션을 지원 하기 위해 `CTaskDialog` 는 모달이 될 수 없습니다. Mfc는 모덜리스 `CTaskDialog`를 지원 하지 않으므로 mfc는이 옵션을 지원 하지 않습니다.|
 
 ### <a name="example"></a>예제
 
@@ -1310,7 +1310,7 @@ void SetOptions(int nOptionFlag);
 
 ##  <a name="setprogressbarmarquee"></a>  CTaskDialog::SetProgressBarMarquee
 
-움직이는 텍스트 모음을 구성 합니다 `CTaskDialog` 대화 상자에 추가 합니다.
+의 `CTaskDialog` 움직이는 텍스트 막대를 구성 하 고 대화 상자에 추가 합니다.
 
 ```
 void SetProgressBarMarquee(
@@ -1321,18 +1321,18 @@ void SetProgressBarMarquee(
 ### <a name="parameters"></a>매개 변수
 
 *bEnabled*<br/>
-[in] 움직이는 텍스트 모음;를 사용 하도록 설정 움직이는 텍스트 모음을 사용 하지 않도록 설정 하 고에서 제거 하려는 경우 FALSE를 `CTaskDialog`입니다.
+진행 움직이는 막대를 사용 하려면 TRUE이 고, 그렇지 않으면입니다. 선택 윤곽 표시줄을 사용 하지 않도록 설정 하 고에서 `CTaskDialog`제거 하려면 FALSE로 설정 합니다.
 
 *nMarqueeSpeed*<br/>
-[in] 움직이는 텍스트 막대의 속도 나타내는 정수입니다.
+진행 움직이는 막대의 속도를 나타내는 정수입니다.
 
 ### <a name="remarks"></a>설명
 
-움직이는 텍스트 막대의 기본 텍스트 아래에 나타납니다는 `CTaskDialog` 클래스입니다.
+Marquee 막대가 `CTaskDialog` 클래스의 기본 텍스트 아래에 나타납니다.
 
-사용 하 여 *nMarqueeSpeed* 움직이는 표시줄의 속도를 설정 값이 클수록 더 느린 속도 나타냅니다. 값이 0에 대 한 *nMarqueeSpeed* 움직이는 텍스트 모음에 대 한 Windows의 기본 속도로 이동 합니다.
+*NMarqueeSpeed* 를 사용 하 여 움직이는 막대의 속도를 설정 합니다. 값이 클수록 속도가 느립니다. *NMarqueeSpeed* 의 값이 0 이면 움직이는 텍스트 막대가 Windows의 기본 속도로 이동 합니다.
 
-이 방법을 사용 하 여 예외를 throw 합니다 [확인 하세요](diagnostic-services.md#ensure) 매크로 경우 *nMarqueeSpeed* 0 보다 작습니다.
+이 메서드는 *nMarqueeSpeed* 가 0 보다 작은 [경우 매크로를](diagnostic-services.md#ensure) 사용 하 여 예외를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1349,11 +1349,11 @@ void SetProgressBarPosition(int nProgressPos);
 ### <a name="parameters"></a>매개 변수
 
 *nProgressPos*<br/>
-[in] 진행률 표시줄의 위치입니다.
+진행 진행률 표시줄의 위치입니다.
 
 ### <a name="remarks"></a>설명
 
-이 방법을 사용 하 여 예외를 throw 합니다 [확인 하세요](diagnostic-services.md#ensure) 매크로 경우 *nProgressPos* 진행률 표시줄 범위에 있지 않습니다. 진행률 표시줄의 범위를 변경할 수 있습니다 [CTaskDialog::SetProgressBarRange](#setprogressbarrange)합니다.
+이 메서드는 *nProgressPos* 가 진행률 표시줄 범위에 없는 경우 [확인](diagnostic-services.md#ensure) 매크로와 함께 예외를 throw 합니다. [Ctaskdialog:: SetProgressBarRange](#setprogressbarrange)를 사용 하 여 진행률 표시줄 범위를 변경할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1361,7 +1361,7 @@ void SetProgressBarPosition(int nProgressPos);
 
 ##  <a name="setprogressbarrange"></a>  CTaskDialog::SetProgressBarRange
 
-진행률 표시줄의 범위를 조정합니다.
+진행률 표시줄의 범위를 조정 합니다.
 
 ```
 void SetProgressBarRange(
@@ -1372,18 +1372,18 @@ void SetProgressBarRange(
 ### <a name="parameters"></a>매개 변수
 
 *nRangeMin*<br/>
-[in] 진행률 표시줄의 하한값입니다.
+진행 진행률 표시줄의 하 한입니다.
 
 *nRangeMax*<br/>
-[in] 진행률 표시줄의 상한입니다.
+진행 진행률 표시줄의 상한입니다.
 
 ### <a name="remarks"></a>설명
 
-기준으로 진행률 표시줄의 위치가 *nRangeMin* 하 고 *nRangeMax*합니다. 예를 들어 경우 *nRangeMin* 은 50 및 *nRangeMax* 은 100, 75 위치는 진행률 표시줄 짝수가 있습니다. 사용 하 여 [CTaskDialog::SetProgressBarPosition](#setprogressbarposition) 진행률 표시줄의 위치를 설정 합니다.
+진행률 표시줄의 위치는 *nRangeMin* 및 *nRangeMax*을 기준으로 합니다. 예를 들어 *nRangeMin* 가 50이 고 *nRangeMax* 가 100 이면 75의 위치는 진행률 표시줄의 중간입니다. [Ctaskdialog:: SetProgressBarPosition](#setprogressbarposition) 를 사용 하 여 진행률 표시줄의 위치를 설정 합니다.
 
-진행률 표시줄을 표시 하려면 TDF_SHOW_PROGRESS_BAR를 사용 하도록 설정 하는 옵션 및 TDF_SHOW_MARQUEE_PROGRESS_BAR 사용 되지 않아야 합니다. 이 메서드는 자동으로 TDF_SHOW_PROGRESS_BAR를 설정 하 고 TDF_SHOW_MARQUEE_PROGRESS_BAR 지웁니다. 사용 하 여 [CTaskDialog::SetOptions](#setoptions) 수동으로이 인스턴스에 대 한 옵션을 변경 하는 [CTaskDialog 클래스](../../mfc/reference/ctaskdialog-class.md)합니다.
+진행률 표시줄을 표시 하려면 TDF_SHOW_PROGRESS_BAR 옵션을 사용 하도록 설정 해야 하며 TDF_SHOW_MARQUEE_PROGRESS_BAR를 사용 하도록 설정 하면 안 됩니다. 이 메서드는 자동으로 TDF_SHOW_PROGRESS_BAR를 설정 하 고 TDF_SHOW_MARQUEE_PROGRESS_BAR를 지웁니다. [Ctaskdialog:: SetOptions](#setoptions) 를 사용 하 여 [Ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md)의이 인스턴스에 대 한 옵션을 수동으로 변경 합니다.
 
-이 메서드에서 사용 하 여 예외를 throw 합니다 [확인](diagnostic-services.md#ensure) 매크로 경우 *nRangeMin* 은 보다 작지 않음 *nRangeMax*합니다. 이 메서드는 또한 예외를 throw 하는 경우는 `CTaskDialog` 이미 표시 되어 움직이는 진행률 표시줄이 있습니다.
+이 메서드는 *nRangeMin* 가 *nRangeMax*보다 작지 않은 경우 [확인](diagnostic-services.md#ensure) 매크로와 함께 예외를 throw 합니다. 이 메서드는 `CTaskDialog` 가 이미 표시 되어 있고 움직이는 텍스트 진행률 표시줄을 포함 하는 경우에도 예외를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1391,7 +1391,7 @@ void SetProgressBarRange(
 
 ##  <a name="setprogressbarstate"></a>  CTaskDialog::SetProgressBarState
 
-진행률 표시줄의 상태를 설정 하 고에 표시 된 `CTaskDialog`합니다.
+진행률 표시줄의 상태를 설정 하 고에 `CTaskDialog`표시 합니다.
 
 ```
 void SetProgressBarState(int nState = PBST_NORMAL);
@@ -1400,21 +1400,21 @@ void SetProgressBarState(int nState = PBST_NORMAL);
 ### <a name="parameters"></a>매개 변수
 
 *nState*<br/>
-[in] 진행률 표시줄의 상태입니다. 가능한 값에 대 한 설명 섹션을 참조 합니다.
+진행 진행률 표시줄의 상태입니다. 가능한 값은 설명 섹션을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-이 방법을 사용 하 여 예외를 throw 합니다 [확인](diagnostic-services.md#ensure) 매크로 경우는 `CTaskDialog` 이미 표시 되어 움직이는 진행률 표시줄이 합니다.
+이 메서드는 `CTaskDialog` 가 이미 표시 되어 있고 움직이는 텍스트 진행률 표시줄이 있는 [경우 매크로를 사용 하 여 예외](diagnostic-services.md#ensure) 를 throw 합니다.
 
-다음 표에서 대 한 가능한 값 *nState*합니다. 이러한 모든 경우 지정 된 중지 위치에 도달할 때까지 진행률 표시줄 일반 색으로 채워집니다. 이때 상태를 기반으로 하는 색을 변경 됩니다.
+다음 표에서는 *Nstate*에 사용할 수 있는 값을 보여 줍니다. 이러한 모든 경우에는 지정 된 중지 위치에 도달할 때까지 진행률 표시줄이 일반 색으로 채워집니다. 그러면 상태에 따라 색이 변경 됩니다.
 
 |||
 |-|-|
-|PBST_NORMAL|진행률 표시줄 채우는, `CTaskDialog` 막대의 색을 변경 되지 않습니다. 기본적으로 일반 색은 녹색입니다.|
-|PBST_ERROR|진행률 표시줄 채우는, `CTaskDialog` 오류 색 막대의 색을 변경 합니다. 기본적으로 빨간색입니다.|
-|PBST_PAUSED|진행률 표시줄 채우는, `CTaskDialog` 일시 중지 된 색 막대의 색을 변경 합니다. 기본적으로 노란색입니다.|
+|PBST_NORMAL|진행률 표시줄이 채워지면에서 `CTaskDialog` 막대의 색을 변경 하지 않습니다. 기본적으로 일반 색은 녹색입니다.|
+|PBST_ERROR|진행률 표시줄이 채워지면에서 `CTaskDialog` 막대의 색을 오류 색으로 변경 합니다. 기본적으로이는 빨강입니다.|
+|PBST_PAUSED|진행률 표시줄이 채워지면에서 `CTaskDialog` 막대의 색을 일시 중지 된 색으로 변경 합니다. 기본적으로 노란색입니다.|
 
-진행률 표시줄을 사용 하 여 중지할 위치를 설정할 수 있습니다 [CTaskDialog::SetProgressBarPosition](#setprogressbarposition)합니다.
+[Ctaskdialog:: SetProgressBarPosition](#setprogressbarposition)를 사용 하 여 진행률 표시줄이 중지 되는 위치를 설정할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1422,7 +1422,7 @@ void SetProgressBarState(int nState = PBST_NORMAL);
 
 ##  <a name="setradiobuttonoptions"></a>  CTaskDialog::SetRadioButtonOptions
 
-사용 하거나 라디오 단추를 사용 하지 않도록 설정 합니다.
+라디오 단추를 사용 하거나 사용 하지 않도록 설정 합니다.
 
 ```
 void SetRadioButtonOptions(
@@ -1433,14 +1433,14 @@ void SetRadioButtonOptions(
 ### <a name="parameters"></a>매개 변수
 
 *nRadioButtonID*<br/>
-[in] 라디오 단추 컨트롤의 ID입니다.
+진행 라디오 단추 컨트롤의 ID입니다.
 
 *bEnabled*<br/>
-[in] 라디오 단추를 사용 하도록 설정 라디오 단추를 사용 하지 않도록 설정 하려면 FALSE입니다.
+진행 라디오 단추를 사용 하려면 TRUE이 고, 그렇지 않으면입니다. 라디오 단추를 사용 하지 않으려면 FALSE로 설정 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 방법을 사용 하 여 예외를 throw 합니다 [확인 하세요](diagnostic-services.md#ensure) 매크로 경우 *nRadioButtonID* 라디오 단추에 대 한 올바른 ID가 아닙니다.
+이 메서드는 *nRadioButtonID* 가 라디오 단추에 대 한 유효한 ID가 아닌 경우 [확인](diagnostic-services.md#ensure) 매크로를 사용 하 여 예외를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1448,7 +1448,7 @@ void SetRadioButtonOptions(
 
 ##  <a name="setverificationcheckbox"></a>  CTaskDialog::SetVerificationCheckbox
 
-확인 확인란의 선택된 상태를 설정합니다.
+확인 확인란의 선택 상태를 설정 합니다.
 
 ```
 void SetVerificationCheckbox(BOOL bChecked);
@@ -1457,7 +1457,7 @@ void SetVerificationCheckbox(BOOL bChecked);
 ### <a name="parameters"></a>매개 변수
 
 *bChecked*<br/>
-[in] True 이면 확인 확인란 선택한 경우는 `CTaskDialog` 후보가 표시 됩니다. 확인란을 확인 하려면 FALSE를 선택 하는 경우 취소는 `CTaskDialog` 표시 됩니다.
+진행 `CTaskDialog` 이 표시 될 때 확인 확인란을 선택 하려면 TRUE로 설정 하 고, FALSE 이면 `CTaskDialog` 가 표시 될 때 확인 확인란을 선택 취소 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1465,7 +1465,7 @@ void SetVerificationCheckbox(BOOL bChecked);
 
 ##  <a name="setverificationcheckboxtext"></a>  CTaskDialog::SetVerificationCheckboxText
 
-확인 확인란 오른쪽에 표시 되는 텍스트를 설정 합니다.
+확인 확인란의 오른쪽에 표시 되는 텍스트를 설정 합니다.
 
 ```
 void SetVerificationCheckboxText(CString& strVerificationText);
@@ -1474,11 +1474,11 @@ void SetVerificationCheckboxText(CString& strVerificationText);
 ### <a name="parameters"></a>매개 변수
 
 *strVerificationText*<br/>
-[in] 확인 확인란 옆에 표시 되는이 메서드는 텍스트입니다.
+진행 이 메서드가 확인 확인란 옆에 표시 하는 텍스트입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드에서 사용 하 여 예외가 throw 됩니다는 [확인](diagnostic-services.md#ensure) 이 매크로의 인스턴스를 `CTaskDialog` 클래스가 이미 표시 됩니다.
+`CTaskDialog` 클래스의이 인스턴스가 이미 표시 되어 있는 경우이 메서드는 [확인](diagnostic-services.md#ensure) 매크로를 사용 하 여 예외를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1486,7 +1486,7 @@ void SetVerificationCheckboxText(CString& strVerificationText);
 
 ##  <a name="setwindowtitle"></a>  CTaskDialog::SetWindowTitle
 
-제목을 설정 합니다 `CTaskDialog`합니다.
+의 제목을 설정 합니다 `CTaskDialog`.
 
 ```
 void SetWindowTitle(CString& strWindowTitle);
@@ -1495,7 +1495,7 @@ void SetWindowTitle(CString& strWindowTitle);
 ### <a name="parameters"></a>매개 변수
 
 *strWindowTitle*<br/>
-[in] 새 제목을 `CTaskDialog`합니다.
+진행 의 새 제목 `CTaskDialog`입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1505,7 +1505,7 @@ void SetWindowTitle(CString& strWindowTitle);
 
 ##  <a name="showdialog"></a>  CTaskDialog::ShowDialog
 
-만들고 표시를 `CTaskDialog`입니다.
+을 `CTaskDialog`만들어 표시 합니다.
 
 ```
 static INT_PTR ShowDialog(
@@ -1522,42 +1522,42 @@ static INT_PTR ShowDialog(
 ### <a name="parameters"></a>매개 변수
 
 *strContent*<br/>
-[in] 내용에 사용 하는 문자열을 `CTaskDialog`입니다.
+진행 의 내용에 사용할 문자열 `CTaskDialog`입니다.
 
 *strMainInstruction*<br/>
-[in] 기본 명령은 `CTaskDialog`합니다.
+진행 의 기본 명령 `CTaskDialog`입니다.
 
 *strTitle*<br/>
-[in] 제목의 `CTaskDialog`합니다.
+진행 의 `CTaskDialog`제목입니다.
 
 *nIDCommandControlsFirst*<br/>
-[in] 첫 번째 명령의 문자열 ID입니다.
+진행 첫 번째 명령의 문자열 ID입니다.
 
 *nIDCommandControlsLast*<br/>
-[in] 마지막 명령은의 문자열 ID입니다.
+진행 마지막 명령의 문자열 ID입니다.
 
 *nCommonButtons*<br/>
-[in] 추가할 단추의 마스크는 `CTaskDialog`합니다.
+진행 에 추가할 `CTaskDialog`단추의 마스크입니다.
 
 *nTaskDialogOptions*<br/>
-[in] 사용 하는 옵션의 집합을 `CTaskDialog`입니다.
+진행 에 사용할 옵션 집합입니다 `CTaskDialog`.
 
 *strFooter*<br/>
-[in] 바닥글을 사용 하는 문자열입니다.
+진행 바닥글로 사용할 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
-사용자가 선택한 옵션에 해당 하는 정수입니다.
+사용자가 선택한 항목에 해당 하는 정수입니다.
 
 ### <a name="remarks"></a>설명
 
-이 정적 메서드를 사용 하면 인스턴스를 만들 수 있습니다 합니다 `CTaskDialog` 명시적으로 만들지 않고 클래스를 `CTaskDialog` 코드의 개체입니다. 있기 때문에 없습니다 `CTaskDialog` 개체의 다른 메서드를 호출할 수 없습니다 합니다 `CTaskDialog` 표시 하려면이 메서드를 사용 하는 경우는 `CTaskDialog` 사용자에 게 합니다.
+이 정적 메서드를 사용 하면 코드에서 개체를 `CTaskDialog` `CTaskDialog` 명시적으로 만들지 않고도 클래스의 인스턴스를 만들 수 있습니다. 개체가 없기 때문에 `CTaskDialog` `CTaskDialog` 이 메서드를 사용 하 여 사용자에 게를 표시 하는 경우의 다른 메서드를 호출할 수 없습니다. `CTaskDialog`
 
-이 메서드는 응용 프로그램의 리소스 파일에서 데이터를 사용 하 여 명령 단추 컨트롤을 만듭니다. 리소스 파일에 문자열 테이블에 연결 된 문자열 Id 사용 하 여 여러 문자열입니다. 이 메서드 간에 문자열 테이블의 유효한 각 항목에 대 한 명령 단추 컨트롤을 추가 *nIDCommandControlsFirst* 하 고 *nCommandControlsLast*(포함). 이러한 명령 단추 컨트롤에 대 한 문자열 테이블의 문자열은 컨트롤의 캡션 및 문자열 ID는 컨트롤의 id입니다.
+이 메서드는 응용 프로그램의 리소스 파일에 있는 데이터를 사용 하 여 명령 단추 컨트롤을 만듭니다. 리소스 파일의 문자열 테이블에는 문자열 Id가 연결 된 여러 문자열이 있습니다. 이 메서드는 *nIDCommandControlsFirst* 과 *nCommandControlsLast*사이에 있는 문자열 테이블의 유효한 각 항목에 대 한 명령 단추 컨트롤을 추가 합니다. 이러한 명령 단추 컨트롤의 경우 문자열 테이블의 문자열은 컨트롤의 캡션입니다. 문자열 ID는 컨트롤의 ID입니다.
 
-참조 [CTaskDialog::SetOptions](#setoptions) 목록을 사용할 수 있는 옵션에 대 한 합니다.
+유효한 옵션 목록은 [Ctaskdialog:: SetOptions](#setoptions) 를 참조 하세요.
 
-합니다 `CTaskDialog` 명령 링크 컨트롤, 일반적인 단추를 선택 하거나 닫을 때 닫습니다는 `CTaskDialog`합니다. 반환 값에는 사용자 대화 상자를 닫은 방법을 나타내는 식별자입니다.
+는 `CTaskDialog` 사용자가 일반 단추 또는 명령 링크 컨트롤을 선택 하거나를 `CTaskDialog`닫을 때 닫힙니다. 반환 값은 사용자가 대화 상자를 닫은 방법을 나타내는 식별자입니다.
 
 ### <a name="example"></a>예제
 
@@ -1565,7 +1565,7 @@ static INT_PTR ShowDialog(
 
 ##  <a name="taskdialogcallback"></a>  CTaskDialog::TaskDialogCallback
 
-프레임 워크는 다양 한 Windows 메시지에 대 한 응답에서이 메서드를 호출합니다.
+프레임 워크는 다양 한 Windows 메시지에 대 한 응답으로이 메서드를 호출 합니다.
 
 ```
 friend:
@@ -1580,43 +1580,43 @@ HRESULT TaskDialogCallback(
 ### <a name="parameters"></a>매개 변수
 
 *hwnd*<br/>
-[in] 에 대 한 핸들을 `m_hWnd` 의 구조는 `CTaskDialog`합니다.
+진행 의 `m_hWnd` 구조체에 `CTaskDialog`대 한 핸들입니다.
 
 *uNotification*<br/>
-[in] 생성된 된 메시지를 지정 하는 알림 코드입니다.
+진행 생성 된 메시지를 지정 하는 알림 코드입니다.
 
 *wParam*<br/>
-[in] 메시지에 대 한 자세한 정보입니다.
+진행 메시지에 대 한 자세한 정보입니다.
 
 *lParam*<br/>
-[in] 메시지에 대 한 자세한 정보입니다.
+진행 메시지에 대 한 자세한 정보입니다.
 
 *dwRefData*<br/>
-[in] 에 대 한 포인터를 `CTaskDialog` 콜백 메시지에 적용 되는 개체입니다.
+진행 콜백 메시지가 적용 되 `CTaskDialog` 는 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-특정 알림 코드에 따라 달라 집니다. 자세한 내용은 설명 부분을 참조하세요.
+는 특정 알림 코드에 따라 달라 집니다. 자세한 내용은 설명 부분을 참조하세요.
 
 ### <a name="remarks"></a>설명
 
-기본 구현의 `TaskDialogCallback` 특정 메시지를 처리 한 다음 적절 한 방법을 합니다 [CTaskDialog 클래스](../../mfc/reference/ctaskdialog-class.md)합니다. TDN_BUTTON_CLICKED 메시지에 대 한 응답의 예를 들어 `TaskDialogCallback` 호출 [CTaskDialog::OnCommandControlClick](#oncommandcontrolclick)합니다.
+의 `TaskDialogCallback` 기본 구현은 특정 메시지를 처리 한 다음 [ctaskdialog 클래스](../../mfc/reference/ctaskdialog-class.md)의 적절 한 메서드를 호출 합니다. 예를 들어 TDN_BUTTON_CLICKED 메시지 `TaskDialogCallback` 에 대 한 응답으로 [ctaskdialog:: oncommandcontrolclick](#oncommandcontrolclick)을 호출 합니다.
 
-에 대 한 값 *wParam* 하 고 *lParam* 생성된 된 특정 메시지에 따라 달라 집니다. 이러한 값을 비워 둘 중 하나 또는 모두에 대 한 것 같습니다. 다음 표에서 지원 되는 기본 알림 및 값 *wParam* 하 고 *lParam* 나타냅니다. 파생된 클래스에서이 메서드를 재정의 하는 경우에 다음 표에 각 메시지에 대 한 콜백 코드를 구현 해야 합니다.
+*WParam* 및 *lParam* 의 값은 생성 된 특정 메시지에 따라 다릅니다. 이러한 값 중 하나 또는 둘 모두를 비워 둘 수 있습니다. 다음 표에는 지원 되는 기본 알림과 *wParam* 및 *lParam* 의 값이 표시 됩니다. 파생 클래스에서이 메서드를 재정의 하는 경우 다음 표의 각 메시지에 대 한 콜백 코드를 구현 해야 합니다.
 
-|알림 메시지|*wParam* Value|*lParam* Value|
+|알림 메시지|*wParam* 기본값|*lParam* 기본값|
 |--------------------------|--------------------|--------------------|
 |TDN_CREATED|사용되지 않습니다.|사용되지 않습니다.|
 |TDN_NAVIGATED|사용되지 않습니다.|사용되지 않습니다.|
-|TDN_BUTTON_CLICKED|명령 단추 컨트롤 id입니다.|사용되지 않습니다.|
-|TDN_HYPERLINK_CLICKED|사용되지 않습니다.|A [LPCWSTR](/windows/desktop/WinProg/windows-data-types) 링크가 포함 된 구조입니다.|
-|TDN_TIMER|시간 이후의 밀리초를 `CTaskDialog` 만든 또는 타이머 다시 설정 되었습니다.|사용되지 않습니다.|
+|TDN_BUTTON_CLICKED|명령 단추 컨트롤 ID입니다.|사용되지 않습니다.|
+|TDN_HYPERLINK_CLICKED|사용되지 않습니다.|링크를 포함 하는 [Lpcwstr](/windows/win32/WinProg/windows-data-types) 구조체입니다.|
+|TDN_TIMER|가 만들어지거나 타이머가 다시 설정 `CTaskDialog` 된 이후의 시간 (밀리초)입니다.|사용되지 않습니다.|
 |TDN_DESTROYED|사용되지 않습니다.|사용되지 않습니다.|
-|TDN_RADIO_BUTTON_CLICKED|라디오 단추 id입니다.|사용되지 않습니다.|
+|TDN_RADIO_BUTTON_CLICKED|라디오 단추 ID입니다.|사용되지 않습니다.|
 |TDN_DIALOG_CONSTRUCTED|사용되지 않습니다.|사용되지 않습니다.|
-|TDN_VERIFICATION_CLICKED|확인란을 선택 하는 경우 1, 있지 않으면 0입니다.|사용되지 않습니다.|
+|TDN_VERIFICATION_CLICKED|확인란이 선택 되어 있으면 1이 고, 그렇지 않으면 0입니다.|사용되지 않습니다.|
 |TDN_HELP|사용되지 않습니다.|사용되지 않습니다.|
-|TDN_EXPANDO_BUTTON_CLICKED|확장 영역 축소 되는 경우에 0 확장 텍스트가 표시 하는 경우에 0이 아닙니다.|사용되지 않습니다.|
+|TDN_EXPANDO_BUTTON_CLICKED|확장 영역이 축소 된 경우 0입니다. 확장 텍스트가 표시 되는 경우 0이 아닙니다.|사용되지 않습니다.|
 
 ## <a name="see-also"></a>참고자료
 

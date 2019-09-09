@@ -36,7 +36,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/22/2019
 ms.locfileid: "68376119"
 ---
-# <a name="freopens-wfreopens"></a>freopen_s, _wfreopen_s
+# <a name="freopen_s-_wfreopen_s"></a>freopen_s, _wfreopen_s
 
 파일 포인터를 다시 할당합니다. 이러한 버전의 [freopen, _wfreopen](freopen-wfreopen.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 포함되어 있습니다.
 
@@ -65,7 +65,7 @@ errno_t _wfreopen(
 *path*<br/>
 새 파일의 경로입니다.
 
-*모드*<br/>
+*mode*<br/>
 허용되는 액세스 형식입니다.
 
 *stream*<br/>
@@ -89,7 +89,7 @@ errno_t _wfreopen(
 
 **freopen_s** 는 일반적으로 미리 열린 파일 **stdin**, **stdout**및 **stderr** 을 사용자가 지정한 파일로 리디렉션하는 데 사용 됩니다. *스트림과* 연결 된 새 파일은 다음과 같이 파일에 대해 요청 된 액세스 형식을 지정 하는 문자열인 *모드*를 사용 하 여 열립니다.
 
-|*모드*|액세스|
+|*mode*|액세스|
 |-|-|
 | **"r"** | 읽기 위해 엽니다. 파일이 없거나 찾을 수 없는 경우 **freopen_s** 호출이 실패 합니다. |
 | **"w"** | 쓰기 위해 빈 파일을 엽니다. 지정한 파일이 있으면 이 파일의 내용은 삭제됩니다. |
@@ -111,7 +111,7 @@ errno_t _wfreopen(
 | **t** | 텍스트(변환됨) 모드에서 엽니다. |
 | **b** | 이진 (변환 되지 않음) 모드에서 열기 캐리지 리턴 및 줄 바꿈 문자를 포함 하는 변환은 표시 되지 않습니다. |
 
-텍스트 (변환 됨) 모드에서 캐리지 리턴-줄 바꿈 (CR-LF) 조합은 입력 시 LF (단일 줄 바꿈) 문자로 변환 됩니다. LF 문자는 출력에서 CR-LF 조합으로 변환 됩니다. 또한 CTRL+Z는 입력 시 파일 끝 문자로 변환됩니다. **"A +"** 를 사용 하 여 읽거나 쓰고 쓰기 위해 열린 파일에서 런타임 라이브러리는 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능한 경우이를 제거 합니다. 이는 [fseek](fseek-fseeki64.md) 및 fseek를 [](ftell-ftelli64.md) 사용 하 여 파일 내에서 이동 하면 파일의 끝 부분에서 [fseek](fseek-fseeki64.md) 가 제대로 동작 하지 않을 수 있기 때문입니다. **T** 옵션은 ANSI 이식성이 필요한 곳에 사용 하면 안 되는 Microsoft 확장입니다.
+텍스트 (변환 됨) 모드에서 캐리지 리턴-줄 바꿈 (CR-LF) 조합은 입력 시 LF (단일 줄 바꿈) 문자로 변환 됩니다. LF 문자는 출력에서 CR-LF 조합으로 변환 됩니다. 또한 CTRL+Z는 입력 시 파일 끝 문자로 변환됩니다. **"A +"** 를 사용 하 여 읽거나 쓰고 쓰기 위해 열린 파일에서 런타임 라이브러리는 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능한 경우이를 제거 합니다. 이는 [fseek](fseek-fseeki64.md) 및 [fseek](ftell-ftelli64.md) 를 사용 하 여 파일 내에서 이동 하면 파일의 끝 부분에서 [fseek](fseek-fseeki64.md) 가 제대로 동작 하지 않을 수 있기 때문입니다. **T** 옵션은 ANSI 이식성이 필요한 곳에 사용 하면 안 되는 Microsoft 확장입니다.
 
 *모드*에서 **t** 또는 **b** 를 지정 하지 않은 경우 기본 변환 모드는 전역 변수 [_fmode](../../c-runtime-library/fmode.md)에 의해 정의 됩니다. **T** 또는 **b** 가 인수 앞에 있으면 함수가 실패 하 고 **NULL**을 반환 합니다.
 

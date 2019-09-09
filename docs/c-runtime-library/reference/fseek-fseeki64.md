@@ -35,7 +35,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/22/2019
 ms.locfileid: "68376092"
 ---
-# <a name="fseek-fseeki64"></a>fseek, _fseeki64
+# <a name="fseek-_fseeki64"></a>fseek, _fseeki64
 
 파일 포인터를 지정된 위치로 이동합니다.
 
@@ -89,9 +89,9 @@ int _fseeki64(
 
 - **_Fseeki64**를 사용 하는 경우 **ftell** 또는 [_ftelli64](ftell-ftelli64.md) 를 사용 하는 경우 [ftell](ftell-ftelli64.md) 에 대 한 호출에서 반환 된 오프셋 값을 사용 하 여 파일의 시작 부분에서 검색 합니다.
 
-또한 텍스트 모드에서 Ctrl+Z는 입력 시 파일 끝 문자로 해석됩니다. 읽기/쓰기용으로 열려 있는 파일에서 [fopen](fopen-wfopen.md) 및 모든 관련 루틴은 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능 하면 제거 합니다. 이 작업은 **fseek** 와 [fseek](ftell-ftelli64.md) 및 [_ftelli64](ftell-ftelli64.md)의 조합을 사용 하 여 CTRL + Z로 끝나는 파일 내에서 이동 하면  **fseek** 또는 **_fseeki64** 가의 끝 부분에서 제대로 동작 하지 않을 수 있기 때문입니다. 파일과.
+또한 텍스트 모드에서 Ctrl+Z는 입력 시 파일 끝 문자로 해석됩니다. 읽기/쓰기용으로 열려 있는 파일에서 [fopen](fopen-wfopen.md) 및 모든 관련 루틴은 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능 하면 제거 합니다. 이 작업은 **fseek** 와 [fseek](ftell-ftelli64.md) 및 [_ftelli64](ftell-ftelli64.md)의 조합을 사용 하 여 CTRL + Z로 끝나는 파일 내에서 이동 하면 **fseek** 또는 **_fseeki64** 가의 끝 부분에서 제대로 동작 하지 않을 수 있기 때문입니다. 파일과.
 
-CRT가 BOM(바이트 순서 표시)으로 시작되는 파일을 열면 파일 포인터는 BOM 뒤(파일 실제 콘텐츠의 시작)에 배치됩니다. 파일의 시작 부분을 **검색** 해야 하는 경우 fseek을 사용 [](ftell-ftelli64.md) 하 여 위치 0이 아닌 초기 위치와 **fseek** 를 가져옵니다.
+CRT가 BOM(바이트 순서 표시)으로 시작되는 파일을 열면 파일 포인터는 BOM 뒤(파일 실제 콘텐츠의 시작)에 배치됩니다. 파일의 시작 부분을 **검색** 해야 하는 경우 [fseek](ftell-ftelli64.md) 을 사용 하 여 위치 0이 아닌 초기 위치와 **fseek** 를 가져옵니다.
 
 이 함수는 실행 중에 다른 스레드를 잠그므로 스레드로부터 안전합니다. 잠기지 않는 버전의 경우 [_fseek_nolock, _fseeki64_nolock](fseek-nolock-fseeki64-nolock.md)을 참조하세요.
 
