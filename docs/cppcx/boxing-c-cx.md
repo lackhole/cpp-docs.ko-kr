@@ -2,12 +2,12 @@
 title: Boxing(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-ms.openlocfilehash: 3c281229b509ef72d37400b2088a6663be1afe42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90c5af31efc6523683227dbf54c85390bc98510a
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257967"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740675"
 ---
 # <a name="boxing-ccx"></a>Boxing(C++/CX)
 
@@ -19,9 +19,9 @@ ms.locfileid: "62257967"
 
 [!code-cpp[cx_boxing#01](../cppcx/codesnippet/CPP/cx_boxing/class1.cpp#01)]
 
-### <a name="using-platformiboxt-to-support-nullable-value-types"></a>Platform:: ibox를 사용 하 여\<T > nullable 값 형식을 지원 하기 위해
+### <a name="using-platformiboxt-to-support-nullable-value-types"></a>Platform:: ibox\<T >를 사용 하 여 nullable 값 형식 지원
 
-C# 및 Visual Basic에서는 null 허용 값 형식의 개념을 지원합니다. C++/CX를 사용할 수는 `Platform::IBox<T>` nullable 값 형식 매개 변수를 지 원하는 공용 메서드를 노출 하는 형식입니다. 다음 예제와 C++/CX 경우 null 반환 하는 공용 메서드는 C# 호출자가 인수 중 하나에 대해 null을 전달 합니다.
+C# 및 Visual Basic에서는 null 허용 값 형식의 개념을 지원합니다. C++/Cx에서는 `Platform::IBox<T>` 형식을 사용 하 여 nullable 값 형식 매개 변수를 지 원하는 공용 메서드를 노출할 수 있습니다. 다음 예제에서는 호출자가 C++인수 중 하나에 대해 null을 C# 전달 하는 경우 null을 반환 하는/cx 공용 메서드를 보여 줍니다.
 
 [!code-cpp[cx_boxing#02](../cppcx/codesnippet/CPP/cx_boxing/class1.h#02)]
 
@@ -40,5 +40,5 @@ C# XAML 클라이언트에서 이러한 메서드를 다음과 같이 사용할 
 
 [형식 시스템(C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [캐스팅(C++/CX)](../cppcx/casting-c-cx.md)<br/>
-[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

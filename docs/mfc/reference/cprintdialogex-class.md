@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CPrintDialogEx [MFC], PrintSelection
 - CPrintDialogEx [MFC], m_pdex
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
-ms.openlocfilehash: 2334fb0a420e14aa4fa8b8b570671fb9a611de32
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 76c3968b20a66e9653fd769339e23ede2a756bbd
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502879"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741337"
 ---
 # <a name="cprintdialogex-class"></a>CPrintDialogEx 클래스
 
@@ -94,7 +94,7 @@ class CPrintDialogEx : public CCommonDialog
 
 응용 프로그램에서 프레임 워크의 개입 없이 인쇄를 처리 하려는 경우 제공 된 생성자를 사용 `CPrintDialogEx` 하 여 "있는 그대로" 클래스를 사용 하거나,에서 `CPrintDialogEx` 사용자의 대화 상자 클래스를 파생 시키고 필요에 맞게 생성자를 작성할 수 있습니다. 두 경우 모두 이러한 대화 상자는 클래스 `CCommonDialog`에서 파생 되므로 표준 MFC 대화 상자 처럼 동작 합니다.
 
-`CPrintDialogEx` 개체를 사용 하려면 먼저 `CPrintDialogEx` 생성자를 사용 하 여 개체를 만듭니다. 대화 상자를 생성 한 후에는 [m_pdex](#m_pdex) 구조체의 값을 설정 하거나 수정 하 여 대화 상자의 컨트롤 값을 초기화할 수 있습니다. 구조 `m_pdex` 는 [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-pdexw)형식입니다. 이 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
+`CPrintDialogEx` 개체를 사용 하려면 먼저 `CPrintDialogEx` 생성자를 사용 하 여 개체를 만듭니다. 대화 상자를 생성 한 후에는 [m_pdex](#m_pdex) 구조체의 값을 설정 하거나 수정 하 여 대화 상자의 컨트롤 값을 초기화할 수 있습니다. 구조 `m_pdex` 는 [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw)형식입니다. 이 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
 
 `m_pdex` `GlobalFree` 및 멤버`hDevNames` 에 대해 고유한 핸들을 제공 하지 않는 경우 대화 상자를 사용 하 여 작업을 완료 하면 이러한 핸들에 대해 Windows 함수를 `hDevMode` 호출 해야 합니다.
 
@@ -143,7 +143,7 @@ CPrintDialogEx(
 ### <a name="parameters"></a>매개 변수
 
 *dwFlags*<br/>
-비트 OR 연산자를 사용 하 여 대화 상자의 설정을 사용자 지정 하는 데 사용할 수 있는 하나 이상의 플래그입니다. 예를 들어 PD_ALLPAGES 플래그는 문서의 모든 페이지에 기본 인쇄 범위를 설정 합니다. 이러한 플래그에 대 한 자세한 내용은 Windows SDK의 [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-pdexw) 구조를 참조 하세요.
+비트 OR 연산자를 사용 하 여 대화 상자의 설정을 사용자 지정 하는 데 사용할 수 있는 하나 이상의 플래그입니다. 예를 들어 PD_ALLPAGES 플래그는 문서의 모든 페이지에 기본 인쇄 범위를 설정 합니다. 이러한 플래그에 대 한 자세한 내용은 Windows SDK의 [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) 구조를 참조 하세요.
 
 *pParentWnd*<br/>
 대화 상자의 부모 또는 소유자 창에 대 한 포인터입니다.
@@ -304,7 +304,7 @@ PRINTDLGEX m_pdex;
 
 ### <a name="remarks"></a>설명
 
-`CPrintDialogEx` 개체를 생성 한 후에는 [DoModal](#domodal) 멤버 함수를 호출 하기 전에를 사용 `m_pdex` 하 여 대화 상자의 다양 한 측면을 설정할 수 있습니다. `m_pdex` 구조에 대 한 자세한 내용은 Windows SDK에서 [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-pdexw) 을 참조 하세요.
+`CPrintDialogEx` 개체를 생성 한 후에는 [DoModal](#domodal) 멤버 함수를 호출 하기 전에를 사용 `m_pdex` 하 여 대화 상자의 다양 한 측면을 설정할 수 있습니다. `m_pdex` 구조에 대 한 자세한 내용은 Windows SDK에서 [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) 을 참조 하세요.
 
 `m_pdex` 데이터 멤버를 직접 수정 하는 경우 모든 기본 동작을 재정의 합니다.
 
@@ -358,7 +358,7 @@ BOOL PrintRange() const;
 
 ### <a name="remarks"></a>설명
 
-지정 된 페이지 범위는 [m_pdex](#m_pdex) 에서 확인할 수 있습니다 ( `nPageRanges`Windows SDK `nMaxPageRanges`의 [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-pdexw) 구조에서, 및 `lpPageRanges` 참조).
+지정 된 페이지 범위는 [m_pdex](#m_pdex) 에서 확인할 수 있습니다 ( `nPageRanges`Windows SDK `nMaxPageRanges`의 [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) 구조에서, 및 `lpPageRanges` 참조).
 
 ##  <a name="printselection"></a>  CPrintDialogEx::PrintSelection
 

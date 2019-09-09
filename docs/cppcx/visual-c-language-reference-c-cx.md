@@ -1,15 +1,15 @@
 ---
-title: Visual C++ 언어 참조(C++/CX)
+title: C++/CX 언어 참조
 ms.date: 09/15/2017
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a
-ms.openlocfilehash: 0b2d344f9889d5669164cd917ba569b5f35d83a5
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ed8e2374daf862e99517fb113e869504b7c7aabc
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498419"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740860"
 ---
-# <a name="visual-c-language-reference-ccx"></a>Visual C++ 언어 참조(C++/CX)
+# <a name="ccx-language-reference"></a>C++/CX 언어 참조
 
 C++/CX는 Windows 앱을 만들 수 있도록 C++ 하는 언어에 대 한 확장 집합으로, 최신 C++상태로 최대한 가까운 방법으로 구성 요소를 Windows 런타임 합니다. /Cx C++를 사용 하 여 Visual C#, Visual Basic, JavaScript 및 Windows 런타임를 지 원하는 다른 언어와 쉽게 상호 작용 하는 네이티브 코드로 Windows 앱 및 구성 요소를 작성할 수 있습니다. 드물지만 원시 COM 인터페이스 또는 비 예외 코드에 직접 액세스 해야 하는 경우에는 [WRL (Windows 런타임 C++ 템플릿 라이브러리)](../windows/windows-runtime-cpp-template-library-wrl.md)를 사용할 수 있습니다.
 
@@ -38,4 +38,4 @@ C++/CX는 Windows 앱을 만들 수 있도록 C++ 하는 언어에 대 한 확�
 |[네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)|기본 네임스페이스, Platform 네임스페이스, Platform::Collections 및 관련 네임스페이스에 대한 참조 설명서입니다.|
 |[유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)|Windows 런타임 앱에서 사용할 수 없는 CRT 함수를 나열합니다.|
 |[Windows 10 앱 시작](/windows/uwp/get-started/)|Windows 10 앱에 대한 개략적인 지침 및 자세한 정보에 대한 링크를 제공합니다.|
-|[C++/Cx의 \[0 개\]부분: 소개](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction/)<br /><br />[C++\[N\]의/cx 파트 1: 간단한 클래스](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class/)<br /><br />[C++/Cx n \[\]의 2 부: 모자를 착용 하는 형식](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats/)<br /><br />[C++/Cx: n\]의 \[3 부: 생성 중](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)<br /><br />[C++/Cx 4 \[\]부: 정적 멤버 함수](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions/)|Visual C++ 블로그에서 연재하는 기본 C++/cli CX에 대한 시리즈입니다.|
+|[C++/Cx의 \[0 개\]부분: 소개](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction/)<br /><br />[C++\[N\]의/cx 파트 1: 간단한 클래스](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class/)<br /><br />[C++/Cx n \[\]의 2 부: 모자를 착용 하는 형식](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats/)<br /><br />[C++/Cx: n\]의 \[3 부: 생성 중](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)<br /><br />[C++/Cx 4 \[\]부: 정적 멤버 함수](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions/)|/Cx의 C++소개 블로그 시리즈|

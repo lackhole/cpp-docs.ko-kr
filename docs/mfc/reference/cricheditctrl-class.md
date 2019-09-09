@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: fc2b4c08b5a999f0369199e0dd65a09a7cdf8dff
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b3c02c8c2754ce7edb40cff5e44efb74a16353fc
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69503158"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741538"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl 클래스
 
@@ -1051,7 +1051,7 @@ DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharForma
 ### <a name="parameters"></a>매개 변수
 
 *cf*<br/>
-첫 번째 버전에서 현재 선택의 문자 서식 특성을 받는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
+첫 번째 버전에서 현재 선택의 문자 서식 특성을 받는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) 구조체에 대 한 포인터입니다.
 
 두 번째 버전에서 [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) 구조체에 대 한 포인터로, 현재 선택의 문자 서식 특성을 수신 하는 `CHARFORMAT` 구조에 대 한 Rich Edit 2.0 extension입니다.
 
@@ -1407,7 +1407,7 @@ void LineScroll(
 
 ### <a name="remarks"></a>설명
 
-편집 컨트롤은 편집 컨트롤에서 텍스트의 마지막 줄을 벗어나 세로로 스크롤되지 않습니다. 현재 줄과 Nlines에 지정 된 줄 수가 모두 편집 컨트롤의 총 줄 수를 초과 하는 경우 편집 컨트롤의 마지막 줄이 편집 컨트롤 창의 맨 위로 스크롤 되도록 값이 조정 됩니다.
+편집 컨트롤은 편집 컨트롤에서 텍스트의 마지막 줄을 벗어나 세로로 스크롤되지 않습니다. 현재 줄과 *nlines* 에 지정 된 줄 수가 모두 편집 컨트롤의 총 줄 수를 초과 하는 경우 편집 컨트롤의 마지막 줄이 편집 컨트롤 창의 맨 위로 스크롤 되도록 값이 조정 됩니다.
 
 `LineScroll`줄의 마지막 문자를 지나서 가로로 스크롤 하는 데 사용할 수 있습니다.
 
@@ -1618,7 +1618,7 @@ BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>매개 변수
 
 *cf*<br/>
-첫 번째 버전에서 새 기본 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
+첫 번째 버전에서 새 기본 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) 구조체에 대 한 포인터입니다.
 
 두 번째 버전에서 기본 문자 서식 특성을 포함 하는 `CHARFORMAT` 구조에 대 한 Rich Edit 2.0 extension 인 [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) 구조체에 대 한 포인터입니다.
 
@@ -1920,7 +1920,7 @@ BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>매개 변수
 
 *cf*<br/>
-첫 번째 버전에서 현재 선택 영역에 대 한 새 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
+첫 번째 버전에서 현재 선택 영역에 대 한 새 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) 구조체에 대 한 포인터입니다.
 
 두 번째 버전에서 [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) 구조체에 대 한 포인터로, 현재 선택 항목에 대 한 새 문자 서식 지정 `CHARFORMAT` 특성을 포함 하는 구조에 대 한 Rich Edit 2.0 확장입니다.
 
@@ -2033,7 +2033,7 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>매개 변수
 
 *cf*<br/>
-첫 번째 버전에서 현재 선택 된 단어에 대 한 새 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) 구조체에 대 한 포인터입니다.
+첫 번째 버전에서 현재 선택 된 단어에 대 한 새 문자 서식 특성을 포함 하는 [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) 구조체에 대 한 포인터입니다.
 
 두 번째 버전에서 [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) 구조체에 대 한 포인터로, 현재 선택 된 단어에 대 한 새 문자 서식 `CHARFORMAT` 지정 특성을 포함 하는 구조에 대 한 Rich Edit 2.0 extension입니다.
 
