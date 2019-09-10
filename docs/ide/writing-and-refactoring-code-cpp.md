@@ -3,12 +3,13 @@ title: Visual Studio에서 C++ 코드 편집 및 리팩터링
 description: Visual Studio의 C++ 코드 편집기를 사용하여 코드를 서식 지정, 탐색, 이해 및 리팩터링합니다.
 ms.date: 05/31/2019
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
-ms.openlocfilehash: d4a74608a95df0fdd461f55d26fee97332a66aa8
-ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
+ms.topic: landing-page
+ms.openlocfilehash: 255576bfc4a7eb78a660e5bfb05b0a97a7eb4c34
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66741625"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221604"
 ---
 # <a name="edit-and-refactor-c-code-in-visual-studio"></a>Visual Studio에서 C++ 코드 편집 및 리팩터링
 

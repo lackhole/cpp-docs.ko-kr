@@ -1,14 +1,14 @@
 ---
 title: Visual Studio에서 대상 Linux 시스템에 연결
 description: Visual Studio C++ 프로젝트 내에서 원격 Linux 머신 또는 WSL에 연결하는 방법입니다.
-ms.date: 06/19/2019
+ms.date: 09/04/2019
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: cd107f096e4395f93775ee80b889cc0efd627166
-ms.sourcegitcommit: 610751254a01cba6ad15fb1e1764ecb2e71f66bf
+ms.openlocfilehash: 75d8b3db64d9b1f3562d6730685b7c29fe4982f4
+ms.sourcegitcommit: a42d3b0408f02138dcd6fabcb98d50b0cb159191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68313422"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383399"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio에서 대상 Linux 시스템에 연결
 
@@ -109,7 +109,4 @@ WSL에 대해 프로젝트를 구성하려면 프로젝트 종류에 따라 [Lin
 [Linux 프로젝트 구성](configure-a-linux-project.md)<br />
 [Linux CMake 프로젝트 구성](cmake-linux-project.md)<br />
 [Linux 프로젝트 배포, 실행 및 디버그](deploy-run-and-debug-your-linux-project.md)<br />
-
-
-
-
+[CMake 디버깅 세션 구성](../build/configure-cmake-debugging-sessions.md)

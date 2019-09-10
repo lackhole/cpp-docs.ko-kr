@@ -3,11 +3,11 @@ title: 문자 테스트
 ms.date: 11/04/2016
 ms.assetid: 376ba061-bae3-427e-9569-33fa5949a199
 ms.openlocfilehash: b02d07ca2796e5088c3021f1ae8795ea92761943
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147193"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740094"
 ---
 # <a name="character-testing"></a>문자 테스트
 
