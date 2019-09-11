@@ -125,7 +125,7 @@ class CDaoDatabase : public CObject
 > [!NOTE]
 >  MFC DAO 데이터베이스 클래스로 변경 ODBC를 기반으로 MFC 데이터베이스 클래스와에서 다릅니다. 모든 DAO 데이터베이스 클래스 이름 "CDao" 접두사가 있습니다. 클래스 `CDaoDatabase` ODBC 클래스와 비슷한 인터페이스를 제공 [CDatabase](../../mfc/reference/cdatabase-class.md)합니다. 주요 차이점은 `CDatabase` DBMS에 대 한 DBMS 개방형 데이터베이스 연결 (ODBC) 및 ODBC 드라이버를 통해 액세스 합니다. `CDaoDatabase` Microsoft Jet 데이터베이스 엔진을 기반으로 하는 데이터 액세스 개체 (DAO)를 통해 데이터에 액세스 합니다. 일반적으로 기반으로 DAO MFC 클래스는 ODBC를 기반으로 MFC 클래스 보다 더욱 강력한 DAO 기반 클래스를 통해 자신의 데이터베이스 엔진을 통해 ODBC 드라이버를 비롯 하 여 데이터를 액세스할 수 있습니다. DAO 기반 클래스는 또한 직접 DAO 호출 하지 않고도 클래스를 통해 테이블을 추가 하는 등의 데이터 정의 언어 (DDL) 작업을 지원 합니다.
 
-## <a name="usage"></a>사용법
+## <a name="usage"></a>사용
 
 레코드 집합 개체를 만들 때 암시적으로 데이터베이스 개체를 만들 수 있습니다. 하지만 데이터베이스 개체를 명시적으로 만들 수도 있습니다. 명시적으로 사용 하 여 기존 데이터베이스를 사용 하려면 `CDaoDatabase`, 다음 중 하나를 수행 합니다.
 
@@ -342,7 +342,7 @@ void CreateRelation(CDaoRelationInfo& relinfo);
 관계의 외래 테이블의 이름입니다. 테이블 없으면 MFC 형식의 예외를 throw 하는 `CDaoException`합니다.
 
 *lAttributes*<br/>
-관계 형식에 대 한 정보를 포함 하는 long 값입니다. 무엇 보다도 참조 무결성을 적용 하려면이 값을 사용할 수 있습니다. 비트 OR 연산자를 사용할 수 있습니다 ( **&#124;**) (으로 조합 적합)는 다음 값 중 하나를 결합 합니다.
+관계 형식에 대 한 정보를 포함 하는 long 값입니다. 무엇 보다도 참조 무결성을 적용 하려면이 값을 사용할 수 있습니다. 비트 OR 연산자를 사용할 수 있습니다 ( **&#124;** ) (으로 조합 적합)는 다음 값 중 하나를 결합 합니다.
 
 - `dbRelationUnique` 관계가 한 일입니다.
 
@@ -455,7 +455,7 @@ void Execute(
 유효한 SQL 명령이 실행을 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.
 
 *nOptions*<br/>
-쿼리의 무결성에 관련 된 옵션을 지정 하는 정수입니다. 비트 OR 연산자를 사용할 수 있습니다 ( **&#124;**) 다음 상수 중 하나를 결합할 수 (적합 한 조합을 제공-예를 들어 하는 결합 하지 `dbInconsistent` 사용 하 여 `dbConsistent`).
+쿼리의 무결성에 관련 된 옵션을 지정 하는 정수입니다. 비트 OR 연산자를 사용할 수 있습니다 ( **&#124;** ) 다음 상수 중 하나를 결합할 수 (적합 한 조합을 제공-예를 들어 하는 결합 하지 `dbInconsistent` 사용 하 여 `dbConsistent`).
 
 - `dbDenyWrite` 다른 사용자에 게 쓰기 권한을 거부 합니다.
 
