@@ -551,7 +551,7 @@ BOOL Expand(
 
 ### <a name="example"></a>예제
 
-  [CTreeCtrl:: ensurevisible\](#ensurevisible)의 예제를 참조 하세요.
+  [CTreeCtrl:: ensurevisible](#ensurevisible)의 예제를 참조 하세요.
 
 ##  <a name="getbkcolor"></a>  CTreeCtrl::GetBkColor
 
@@ -1173,7 +1173,7 @@ HTREEITEM GetParentItem(HTREEITEM hItem) const;
 
 ### <a name="example"></a>예제
 
-  [CTreeCtrl:: ensurevisible\](#ensurevisible)의 예제를 참조 하세요.
+  [CTreeCtrl:: ensurevisible](#ensurevisible)의 예제를 참조 하세요.
 
 ##  <a name="getprevsiblingitem"></a>  CTreeCtrl::GetPrevSiblingItem
 
