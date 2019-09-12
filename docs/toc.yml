@@ -2889,7 +2889,7 @@
       href: security/how-user-account-control-uac-affects-your-application.md
     - name: 예측 실행 부채널에 대한 C++ 개발자 지침
       href: security/developer-guidance-speculative-execution.md
-- name: 참조
+- name: 참고
   expanded: false
   items:
     - name: C/C++ 언어 및 표준 라이브러리
