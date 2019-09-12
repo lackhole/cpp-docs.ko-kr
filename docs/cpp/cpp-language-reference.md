@@ -14,9 +14,9 @@ ms.locfileid: "65222484"
 ---
 # <a name="c-language-reference"></a>C++ 언어 참조
 
-이 참조에 설명 합니다 C++ 프로그래밍 언어는 Microsoft에서 구현 될 때 C++ 컴파일러. 기반으로 [ *은 주석이 추가 된 C++ Reference Manual* ](http://www.stroustrup.com/arm.html) 구성은 Margaret Ellis와 Bjarne Stroustrup과 ANSI/ISO C++ 국제 표준 (ISO/IEC FDIS 14882). 또한 C++ 언어 기능의 Microsoft 전용 구현 사항이 포함되어 있습니다.
+이 참조는 C++ 프로그래밍 언어를 Microsoft에서 구현한 C++ 컴파일러에서 구현된대로 설명합니다. 이 조직은 Margaret Ellis 및 Bjarne Stroustrup의 [ *The Annotated C Reference Manual* ](http://www.stroustrup.com/arm.html) 및 ANSI/ISO C++ 국제 표준 (ISO / IEC FDIS 14882)을 기반으로 합니다. C++ 언어 기능의 Microsoft 특정 구현이 포함됩니다.
 
-모던 C++ 프로그래밍 방법은 [C++의 진화(최신 C++)](welcome-back-to-cpp-modern-cpp.md)를 참조합니다.
+모던 C++ 프로그래밍 개요는 [C++의 진화(최신 C++)](welcome-back-to-cpp-modern-cpp.md)를 참조하세요.
 
 키워드나 연산자를 빠르게 찾으려면 다음 표를 참조하십시오.
 
