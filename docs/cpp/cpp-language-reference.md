@@ -14,9 +14,9 @@ ms.locfileid: "65222484"
 ---
 # <a name="c-language-reference"></a>C++ 언어 참조
 
-이 참조에 대해서 설명합니다. C++ 프로그래밍 언어를 Microsoft에서 구현한 C++ 컴파일러. 조직을 기반으로 [The Annotated C Reference Manual](http://www.stroustrup.com/arm.html) Margaret Ellis 와 Bjarne Stroustrup 와 ANSI/ISO C 국제 규격 (ISO/IEC FDIS 14882). Microsoft 고유의 C++ 언어 기능의 구현도 포함되어 있습니다. 
+이 참조는 C++ 프로그래밍 언어를 Microsoft에서 구현한 C++ 컴파일러에서 구현된대로 설명합니다. 이 조직은 Margaret Ellis 및 Bjarne Stroustrup의 [The Annotated C Reference Manual](http://www.stroustrup.com/arm.html) 및 ANSI/ISO C++ 국제 표준(ISO / IEC FDIS 14882)을 기반으로 합니다. C++ 언어 기능의 Microsoft 특정 구현이 포함됩니다. 
 
-모던 C++ 프로그래밍 방법은 [C++의 진화(최신 C++)](welcome-back-to-cpp-modern-cpp.md)를 참조해 주세요.
+모던 C++ 프로그래밍 개요는 [C++의 진화(최신 C++)](welcome-back-to-cpp-modern-cpp.md)를 참조하세요.
 
 키워드나 연산자를 빠르게 찾으려면 다음 표를 참조하십시오.
 
@@ -87,7 +87,7 @@ COM 형식을 지원하는 데 사용되는 Microsoft 전용 클래스 및 전�
 C++에 대한 Microsoft 확장입니다.
 
 [비표준 동작](../cpp/nonstandard-behavior.md)<br/>
-Microsoft의 비표준 동작에 대한 내C++ 컴파일러.
+Microsoft C++ 컴파일러의 비표준 동작에 대한 정보.
 
 [C++의 진화(모던 C++)](welcome-back-to-cpp-modern-cpp.md)<br/>
 최신 C++ 프로그래밍을 도입해 안전하고, 올바른 효율적인 프로그램을 작성하는 것에 대한 사례를 간략하게 설명합니다.
@@ -95,7 +95,7 @@ Microsoft의 비표준 동작에 대한 내C++ 컴파일러.
 ## <a name="related-sections"></a>관련 단원
 
 [런타임 플랫폼용 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)<br/>
-.NET을 대상으로 하는 Microsoft C++ 컴파일러 사용에 대한 자료 참조.
+.NET을 대상으로 하는 Microsoft C++ 컴파일러 사용에 대한 참조 자료.
 
 [C/C++ 빌드 참조](../build/reference/c-cpp-building-reference.md)<br/>
 컴파일러 옵션, 링커 옵션 및 기타 빌드 도구.
@@ -104,7 +104,7 @@ Microsoft의 비표준 동작에 대한 내C++ 컴파일러.
 pragma, 전처리기 지시문, 미리 정의된 매크로 및 전처리기에 대한 참조 자료.
 
 [Visual C++ 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
-시작 페이지로의 다양한 Microsoft의 C++ 라이브러리 참조 링크 목록.
+다양한 Microsoft의 C++ 라이브러리에 대한 시작 페이지로의 참조 링크 목록.
 
 ## <a name="see-also"></a>참고자료
 
