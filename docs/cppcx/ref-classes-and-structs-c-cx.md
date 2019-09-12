@@ -39,7 +39,7 @@ ref 클래스 또는 ref 구조체에는 다음과 같은 중요한 기능이 �
 
 [!code-cpp[cx_classes#04](../cppcx/codesnippet/CPP/classesstructs/class1.cpp#04)]
 
-## <a name="usage"></a>사용법
+## <a name="usage"></a>사용
 
 다음 코드 예제에서는 클라이언트 코드가 `Person` ref 클래스를 사용하는 방법을 보여 줍니다.
 
