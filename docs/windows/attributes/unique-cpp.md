@@ -1,21 +1,21 @@
 ---
-title: 고유한 (C++ COM 특성)
+title: unique (C++ COM 특성)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.unique
 helpviewer_keywords:
 - unique attribute
 ms.assetid: abd7ed14-5ae7-44a8-8333-0058e9c92b2f
-ms.openlocfilehash: c5d7a2d60dc295a4390f777a9ff3718f41321ddd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 91e563ed121ba09e0c2ca2660f30c75956232ea0
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407109"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514905"
 ---
 # <a name="unique-c"></a>unique(C++)
 
-고유 포인터를 지정합니다.
+고유 포인터를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407109"
 
 ## <a name="remarks"></a>설명
 
-**고유** C++ 특성에 동일한 기능을 합니다 [고유](/windows/desktop/Midl/unique) MIDL 특성입니다.
+**Unique** C++ 특성에는 [고유한](/windows/win32/Midl/unique) MIDL 특성과 동일한 기능이 있습니다.
 
 ## <a name="example"></a>예제
 
-참조 된 [ref](ref-cpp.md) 의 샘플 사용에 대 한 예제 **고유**합니다.
+**고유한**의 샘플 [사용에 대 한 참조 예제를](ref-cpp.md) 참조 하십시오.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -37,7 +37,7 @@ ms.locfileid: "62407109"
 
 |||
 |-|-|
-|**적용 대상**|**typedef**하십시오 **구조체**, **union**인터페이스 매개 변수, 인터페이스 메서드|
+|**적용 대상**|**typedef**, **struct**, **union**, interface parameter, interface 메서드|
 |**반복 가능**|아니요|
 |**필수 특성**|없음|
 |**잘못된 특성**|없음|

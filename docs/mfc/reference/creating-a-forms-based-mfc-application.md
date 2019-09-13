@@ -1,18 +1,18 @@
 ---
 title: 폼 기반 MFC 애플리케이션 만들기
-ms.date: 08/19/2019
+ms.date: 09/09/2019
 f1_keywords:
 - vc.appwiz.mfcforms.project
 helpviewer_keywords:
 - applications [MFC], forms-based
 - forms-based applications [MFC]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
-ms.openlocfilehash: 95c7f6061933245b2eb2b796e7a678e1e6b010a6
-ms.sourcegitcommit: bf1940a39029dbbd861f95480f55e5e8bd25cda0
+ms.openlocfilehash: 1dbbc5c29f85ced846cb3e07a02a5d6a55c94b20
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108471"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70908050"
 ---
 # <a name="creating-a-forms-based-mfc-application"></a>폼 기반 MFC 애플리케이션 만들기
 
@@ -30,7 +30,7 @@ SDI, MDI 및 다중 최상위 문서 응용 프로그램은 모두 폼 기반 �
 
 폼 기반 응용 프로그램의 기본 클래스는 [CFormView](cformview-class.md)입니다. 응용 프로그램에 데이터베이스 지원이 있는 경우에서 `CFormView`파생 되는 클래스를 선택할 수도 있습니다. 폼은에서 `CFormView`상속 되는 모든 `CFormView` 클래스에서 파생 되는 창입니다.
 
-[CView](cview-class.md)와 같은 기본 클래스를 사용 하는 경우에도,에서 `CFormView` 파생 된 [mfc 클래스를 추가](adding-an-mfc-class.md) 하 고 [mfc 클래스 마법사](document-template-strings-mfc-add-class-wizard.md)의 **doctemplate 리소스 생성** 확인란을 선택 하 여 나중에 응용 프로그램을 폼 기반으로 만들 수 있습니다.
+[CView](cview-class.md)와 같은 기본 클래스를 사용 하는 경우에도 나중에에서 `CFormView`파생 된 [MFC 클래스를 추가](adding-an-mfc-class.md) 하 여 응용 프로그램을 폼 기반으로 만들 수 있습니다.
 
 마법사를 완료 한 후 프로젝트가 열리고 또는에서 `CFormView` `CFormView`상속 되는 클래스를 기본 클래스로 선택 하거나 대화 상자 기반 응용 프로그램을 만든 경우 시각적 개체 C++ 는 대화 상자 편집기를 엽니다. 이때 첫 번째 폼을 디자인할 준비가 되었습니다.
 

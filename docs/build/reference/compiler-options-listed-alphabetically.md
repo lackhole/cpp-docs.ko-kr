@@ -1,14 +1,14 @@
 ---
 title: 컴파일러 옵션 사전순 목록
-ms.date: 05/06/2019
+ms.date: 08/08/2019
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 7e69aa501dd0a7dbf2af51b6fa2c5bf4339eb416
-ms.sourcegitcommit: 07b34ca1c1fecced9fadc95de15dc5fee4f31e5a
+ms.openlocfilehash: 90c7ee5637a5d1e0f9d48c0f128364ee0df73dab
+ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693426"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70273643"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
@@ -27,17 +27,19 @@ ms.locfileid: "67693426"
 |[/c](c-compile-without-linking.md)|링크하지 않고 컴파일합니다.|
 |[/cgthreads](cgthreads-code-generation-threads.md)|최적화 및 코드 생성에 사용할 cl.exe 스레드 수를 지정합니다.|
 |[/clr](clr-common-language-runtime-compilation.md)|공용 언어 런타임에 실행할 출력 파일을 생성합니다.|
-|[/constexpr](constexpr-control-constexpr-evaluation.md)|컴파일 타임에 컨트롤 constexpr 평가 합니다.|
+|[/constexpr](constexpr-control-constexpr-evaluation.md)|컴파일 시간에 constexpr 평가를 제어 합니다.|
 |[/D](d-preprocessor-definitions.md)|상수와 매크로를 정의합니다.|
-|[/diagnostics](diagnostics-compiler-diagnostic-options.md)|진단 메시지의 형식을 제어합니다.|
+|[/diagnostics](diagnostics-compiler-diagnostic-options.md)|진단 메시지의 형식을 제어 합니다.|
 |[/doc](doc-process-documentation-comments-c-cpp.md)|XML 파일에 대해 문서 주석을 처리합니다.|
 |[/E](e-preprocess-to-stdout.md)|전처리기 출력을 표준 출력에 복사합니다.|
 |[/EH](eh-exception-handling-model.md)|예외 처리 모델을 지정합니다.|
 |[/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|전처리기 출력을 표준 출력에 복사합니다.|
-|[/errorReport](errorreport-report-internal-compiler-errors.md)|내부 컴파일러 오류 (ICE) 정보를 Microsoft에 직접 제공할 수 있습니다 C++ 팀입니다.|
-|[/execution-charset](execution-charset-set-execution-character-set.md)|실행 문자 집합입니다.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)|ICE (내부 컴파일러 오류) 정보를 Microsoft C++ 팀에 직접 제공할 수 있습니다.|
+|[/execution-charset](execution-charset-set-execution-character-set.md)|실행 문자 집합을 설정 합니다.|
+|[/s실험적: 모듈](experimental-module.md)|실험적 모듈 지원을 사용 하도록 설정 합니다.|
+|[/s실험적: 전처리기](experimental-preprocessor.md)|실험적 규격 전처리기 지원을 사용 하도록 설정 합니다.|
 |[/F](f-set-stack-size.md)|스택 크기를 설정합니다.|
-|[/favor](favor-optimize-for-architecture-specifics.md)|특정 x64에 최적화 된 코드 생성 아키텍처 또는 AMD64 및 확장 메모리 64 Em64t 아키텍처에서 마이크로 아키텍처 사양입니다.|
+|[/favor](favor-optimize-for-architecture-specifics.md)|는 특정 x64 아키텍처 또는 AMD64 (확장 메모리 64 기술) 아키텍처의 마이크로 아키텍처에 맞게 최적화 된 코드를 생성 합니다.|
 |[/FA](fa-fa-listing-file.md)|목록 파일을 만듭니다.|
 |[/Fa](fa-fa-listing-file.md)|목록 파일 이름을 설정합니다.|
 |[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|진단 텍스트에서 cl.exe에 전달된 소스 코드 파일의 전체 경로를 표시합니다.|
@@ -75,7 +77,7 @@ ms.locfileid: "67693426"
 |[/Gz](gd-gr-gv-gz-calling-convention.md)|`__stdcall` 호출 규칙을 사용합니다. x86 전용입니다.|
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|
 |[/HELP](help-compiler-command-line-help.md)|컴파일러 옵션을 나열합니다.|
-|[/homeparams](homeparams-copy-register-parameters-to-stack.md)|레지스터에 전달된 매개 변수를 함수 시작 시 스택의 해당 위치에 기록합니다. X64에만이 컴파일러 옵션은 컴파일러 (네이티브 및 크로스 컴파일).|
+|[/homeparams](homeparams-copy-register-parameters-to-stack.md)|레지스터에 전달된 매개 변수를 함수 시작 시 스택의 해당 위치에 기록합니다. 이 컴파일러 옵션은 x64 컴파일러 (네이티브 및 크로스 컴파일)에만 사용할 수 있습니다.|
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|핫 패치 가능한 이미지를 만듭니다.|
 |[/I](i-additional-include-directories.md)|포함 파일의 디렉터리를 검색합니다.|
 |[/J](j-default-char-type-is-unsigned.md)|기본 `char` 형식을 변경합니다.|
@@ -97,33 +99,34 @@ ms.locfileid: "67693426"
 |[/Od](od-disable-debug.md)|최적화를 사용하지 않습니다.|
 |[/Og](og-global-optimizations.md)|더 이상 사용되지 않습니다. 전역 최적화를 사용합니다.|
 |[/Oi](oi-generate-intrinsic-functions.md)|내장 함수를 생성합니다.|
-|[/openmp](openmp-enable-openmp-2-0-support.md)|사용 하도록 설정 합니다 [ `#pragma omp` ](../../preprocessor/omp.md) 소스 코드에 지시문입니다.|
+|[/openmp](openmp-enable-openmp-2-0-support.md)|소스 코드 [`#pragma omp`](../../preprocessor/omp.md) 에서 지시문을 사용 하도록 설정 합니다.|
 |[/Os](os-ot-favor-small-code-favor-fast-code.md)|코드 크기를 우선으로 합니다.|
 |[/Ot](os-ot-favor-small-code-favor-fast-code.md)|코드 속도를 우선으로 합니다.|
-|[/Ox](ox-full-optimization.md)|최대 최적화(/Ob1gity /Gs)를 사용합니다.|
+|[/Ox](ox-full-optimization.md)|/GF 또는/Gy. 포함 하지 않는/O2의 하위 집합입니다.|
 |[/Oy](oy-frame-pointer-omission.md)|프레임 포인터를 생략합니다. x86 전용입니다.|
 |[/P](p-preprocess-to-a-file.md)|전처리기 출력을 파일에 씁니다.|
-|[/permissive-](permissive-standards-conformance.md)|표준 준수 모드를 설정 합니다.|
+|[/permissive-](permissive-standards-conformance.md)|표준 규칙 모드를 설정 합니다.|
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|빠른 초월수를 생성합니다.|
 |[/QIfist](qifist-suppress-ftol.md)|더 이상 사용되지 않습니다. 부동 소수점 형식에서 정수 계열 형식으로 변환해야 할 때 `_ftol` 이 사용되지 않도록 합니다. x86 전용입니다.|
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|`fwait` 블록 내에 있는 `try` 명령을 제거합니다.|
 |[/Qpar(자동 평행화 도우미)](qpar-auto-parallelizer.md)|[#pragma loop()](../../preprocessor/loop.md) 지시문으로 표시되는 루프의 자동 병렬화를 사용하도록 설정합니다.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|부동 소수점 값에 대한 정수 이동 명령을 사용하고 특정 부동 소수점 부하 최적화를 사용하지 않도록 설정합니다.|
+|[/Qspectre](qspectre.md)|특정 스펙터 변형 1 보안 취약성을 완화하기 위한 컴파일러 생성 지침을 지정합니다.|
 |[/Qvec-report(자동 벡터화 도우미 보고 수준)](qvec-report-auto-vectorizer-reporting-level.md)|자동 벡터화에 대한 보고 수준을 사용하도록 설정합니다.|
 |[/RTC](rtc-run-time-error-checks.md)|런타임 오류 검사를 사용합니다.|
 |[/sdl](sdl-enable-additional-security-checks.md)|추가 보안 기능 및 경고를 사용하도록 설정합니다.|
 |[/showIncludes](showincludes-list-include-files.md)|컴파일을 하는 동안 포함 파일 목록을 표시합니다.|
-|[/source-charset](source-charset-set-source-character-set.md)|소스 문자 집합입니다.|
+|[/source-charset](source-charset-set-source-character-set.md)|원본 문자 집합을 설정 합니다.|
 |[/std](std-specify-language-standard-version.md)|C++ 표준 버전 호환성 선택기입니다.|
 |[/Tc](tc-tp-tc-tp-specify-source-file-type.md)|C 소스 파일을 지정합니다.|
-|[/TC](tc-tp-tc-tp-specify-source-file-type.md)|3\. 모든 원본 파일 지정|
+|[/TC](tc-tp-tc-tp-specify-source-file-type.md)|모든 소스 파일을 C로 지정 합니다.|
 |[/Tp](tc-tp-tc-tp-specify-source-file-type.md)|C++ 소스 파일을 지정합니다.|
 |[/TP](tc-tp-tc-tp-specify-source-file-type.md)|모든 원본 파일은 C++를 지정 합니다.|
 |[/U](u-u-undefine-symbols.md)|미리 정의된 매크로를 제거합니다.|
 |[/u](u-u-undefine-symbols.md)|미리 정의된 모든 매크로를 제거합니다.|
-|[/utf-8](utf-8-set-source-and-executable-character-sets-to-utf-8.md)|소스 및 실행 문자 집합을 u t F-8로 설정합니다.|
+|[/utf-8](utf-8-set-source-and-executable-character-sets-to-utf-8.md)|원본 및 실행 문자 집합을 u t f-8로 설정 합니다.|
 |[/V](v-version-number.md)|더 이상 사용되지 않습니다. .obj 파일 버전 문자열을 설정합니다.|
-|[/validate-charset](validate-charset-validate-for-compatible-characters.md)|만 호환 문자에 대 한 utf-8 파일의 유효성을 검사 합니다.|
+|[/validate-charset](validate-charset-validate-for-compatible-characters.md)|호환 되는 문자만을 위한 UTF-8 파일의 유효성을 검사 합니다.|
 |[/vd](vd-disable-construction-displacements.md)|숨겨진 vtordisp 클래스 멤버를 사용하거나 사용하지 않습니다.|
 |[/vmb](vmb-vmg-representation-method.md)|멤버의 포인터에 best case를 사용합니다.|
 |[/vmg](vmb-vmg-representation-method.md)|멤버의 포인터에 full generality를 사용합니다.|
@@ -150,18 +153,18 @@ ms.locfileid: "67693426"
 |[/Yu](yu-use-precompiled-header-file.md)|빌드하는 동안 미리 컴파일된 헤더 파일을 사용합니다.|
 |[/Z7](z7-zi-zi-debug-information-format.md)|C 7.0 호환 디버깅 정보를 생성 합니다.|
 |[/Za](za-ze-disable-language-extensions.md)|언어 확장을 사용하지 않습니다.|
-|[/Zc](zc-conformance.md)|표준 동작을 지정 [/Ze](za-ze-disable-language-extensions.md).[ /Za, /Ze (언어 확장명 사용 안 함)](za-ze-disable-language-extensions.md)|
+|[/Zc](zc-conformance.md)|[/Ze](za-ze-disable-language-extensions.md)에서 표준 동작을 지정 합니다. [/Za,/ze (언어 확장 사용 안 함)](za-ze-disable-language-extensions.md)|
 |[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. 언어 확장을 사용합니다.|
-|[/Zf](zf.md)|PDB 병렬 빌드에서 생성 시간을 개선합니다.|
-|[/Zg](zg-generate-function-prototypes.md)|Visual Studio 2015에서 제거 합니다. 함수 프로토타입을 생성합니다.|
+|[/Zf](zf.md)|병렬 빌드에서 PDB 생성 시간을 향상 시킵니다.|
+|[/Zg](zg-generate-function-prototypes.md)|Visual Studio 2015에서 제거 되었습니다. 함수 프로토타입을 생성합니다.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|편집하며 계속하기와 호환되는 프로그램 데이터베이스에 디버깅 정보를 포함합니다.|
 |[/Zi](z7-zi-zi-debug-information-format.md)|완전한 디버깅 정보를 생성합니다.|
 |[/Zl](zl-omit-default-library-name.md)|.obj 파일에서 기본 라이브러리 이름을 제거합니다. x86 전용입니다.|
 |[/Zm](zm-specify-precompiled-header-memory-allocation-limit.md)|미리 컴파일된 헤더 메모리의 할당 제한을 지정합니다.|
-|[/Zo](zo-enhance-optimized-debugging.md)|최적화 된 코드에 대 한 향상 된 디버깅 정보를 생성합니다.|
+|[/Zo](zo-enhance-optimized-debugging.md)|최적화 된 코드에 대 한 향상 된 디버깅 정보를 생성 합니다.|
 |[/Zp](zp-struct-member-alignment.md)|구조체 멤버를 압축합니다.|
 |[/Zs](zs-syntax-check-only.md)|구문만 확인합니다.|
-|[/ZW](zw-windows-runtime-compilation.md)|Windows 런타임에서 실행 하는 출력 파일을 생성 합니다.|
+|[/ZW](zw-windows-runtime-compilation.md)|Windows 런타임에서 실행할 출력 파일을 생성 합니다.|
 
 ## <a name="see-also"></a>참고자료
 

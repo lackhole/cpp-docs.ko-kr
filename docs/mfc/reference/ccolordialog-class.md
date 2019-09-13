@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CColorDialog [MFC], OnColorOK
 - CColorDialog [MFC], m_cc
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
-ms.openlocfilehash: 3031b1e5870dd7f59af7adf48a6a77aaccdf53fc
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f5c235008b72996424e01ee912ca78ecffab450a
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507206"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741585"
 ---
 # <a name="ccolordialog-class"></a>CColorDialog 클래스
 
@@ -41,13 +41,13 @@ class CColorDialog : public CCommonDialog
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CColorDialog::CColorDialog](#ccolordialog)|`CColorDialog` 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CColorDialog::DoModal](#domodal)|색 대화 상자를 표시 하 고 사용자가 선택할 수 있게 합니다.|
 |[CColorDialog::GetColor](#getcolor)|선택한 색 `COLORREF` 의 값을 포함 하는 구조체를 반환 합니다.|
@@ -56,7 +56,7 @@ class CColorDialog : public CCommonDialog
 
 ### <a name="protected-methods"></a>Protected 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CColorDialog::OnColorOK](#oncolorok)|대화 상자에 입력 된 색의 유효성을 검사 하려면를 재정의 합니다.|
 
@@ -72,7 +72,7 @@ class CColorDialog : public CCommonDialog
 
 `CColorDialog` 개체를 생성 하려면 제공 된 생성자를 사용 하거나 새 클래스를 파생 시키고 사용자 지정 생성자를 사용 합니다.
 
-대화 상자를 생성 한 후에는 [m_cc](#m_cc) 구조체의 값을 설정 하거나 수정 하 여 대화 상자의 컨트롤 값을 초기화할 수 있습니다. *M_cc* 구조체는 [사용자가 choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolorw)형식입니다.
+대화 상자를 생성 한 후에는 [m_cc](#m_cc) 구조체의 값을 설정 하거나 수정 하 여 대화 상자의 컨트롤 값을 초기화할 수 있습니다. *M_cc* 구조체는 [사용자가 choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolora~r1)형식입니다.
 
 대화 상자의 컨트롤을 초기화 한 후 `DoModal` 멤버 함수를 호출 하 여 대화 상자를 표시 하 고 사용자가 색을 선택할 수 있습니다. `DoModal`대화 상자의 OK (IDOK) 또는 Cancel (IDCANCEL) 단추 중에서 사용자가 선택한 항목을 반환 합니다.
 
@@ -91,7 +91,7 @@ Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgexte
 
 사용 `CColorDialog`에 대 한 자세한 내용은 [일반 대화 상자 클래스](../../mfc/common-dialog-classes.md) 를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -126,7 +126,7 @@ CColorDialog(
 기본 색 선택입니다. 값을 지정 하지 않으면 기본값은 RGB (0, 0, 0) (검정)입니다.
 
 *dwFlags*<br/>
-대화 상자의 함수와 모양을 사용자 지정 하는 플래그 집합입니다. 자세한 내용은 Windows SDK [사용자가 choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolorw) 구조체를 참조 하세요.
+대화 상자의 함수와 모양을 사용자 지정 하는 플래그 집합입니다. 자세한 내용은 Windows SDK [사용자가 choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolora~r1) 구조체를 참조 하세요.
 
 *pParentWnd*<br/>
 대화 상자의 부모 또는 소유자 창에 대 한 포인터입니다.
@@ -199,7 +199,7 @@ static COLORREF* PASCAL GetSavedCustomColors();
 
 ##  <a name="m_cc"></a>  CColorDialog::m_cc
 
-해당 멤버가 대화 상자의 특성 및 값을 저장 하는 [사용자가 choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolorw)형식의 구조체입니다.
+해당 멤버가 대화 상자의 특성 및 값을 저장 하는 [사용자가 choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolora~r1)형식의 구조체입니다.
 
 ```
 CHOOSECOLOR m_cc;

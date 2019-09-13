@@ -64,12 +64,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-ms.openlocfilehash: 407ba2747ed4d6e56e56fe4ccb2ccb828240a732
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 62915da703e1c938e65643ab389999b83c72d459
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69506717"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741524"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl 클래스
 
@@ -502,7 +502,7 @@ BOOL GetItem(
 검색할 항목의 인덱스 (0부터 시작)를 지정 합니다.
 
 *pHeaderItem*<br/>
-새 항목을 받는 [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) 구조체에 대 한 포인터입니다. 이 구조체는 `InsertItem` 및 `SetItem` 멤버 함수와 함께 사용 됩니다. `mask` 요소에 설정 된 플래그는 반환 될 때 해당 요소의 값을 올바르게 채워야 합니다. `mask` 요소가 0으로 설정 된 경우 다른 구조체 요소의 값은 의미가 없습니다.
+새 항목을 받는 [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) 구조체에 대 한 포인터입니다. 이 구조체는 `InsertItem` 및 `SetItem` 멤버 함수와 함께 사용 됩니다. `mask` 요소에 설정 된 플래그는 반환 될 때 해당 요소의 값을 올바르게 채워야 합니다. `mask` 요소가 0으로 설정 된 경우 다른 구조체 요소의 값은 의미가 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -540,9 +540,9 @@ BOOL GetItemDropDownRect(
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
-|*iItem*|진행 스타일이 HDF_SPLITBUTTON 인 헤더 항목의 인덱스 (0부터 시작)입니다. 자세한 내용은 `fmt` [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) 구조체의 멤버를 참조 하십시오.|
+|*iItem*|진행 스타일이 HDF_SPLITBUTTON 인 헤더 항목의 인덱스 (0부터 시작)입니다. 자세한 내용은 `fmt` [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) 구조체의 멤버를 참조 하십시오.|
 |*lpRect*|제한이 경계 사각형 정보를 수신 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조체에 대 한 포인터입니다.|
 
 ### <a name="return-value"></a>반환 값
@@ -667,9 +667,9 @@ int HitTest(LPHDHITTESTINFO* phdhti);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
-|*phdhti*|[in, out] 테스트의 결과를 확인 하 고 받을 지점을 지정 하는 [Hdhittestinfo](/windows/win32/api/commctrl/ns-commctrl-_hd_hittestinfo) 구조체에 대 한 포인터입니다.|
+|*phdhti*|[in, out] 테스트의 결과를 확인 하 고 받을 지점을 지정 하는 [Hdhittestinfo](/windows/win32/api/commctrl/ns-commctrl-hdhittestinfo) 구조체에 대 한 포인터입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -707,7 +707,7 @@ int InsertItem(
 삽입할 항목의 인덱스(0부터 시작)입니다. 값이 0 이면 항목이 헤더 컨트롤의 시작 부분에 삽입 됩니다. 값이 최 댓 값 보다 크면 헤더 컨트롤의 끝에 항목이 삽입 됩니다.
 
 *phdi*<br/>
-삽입할 항목에 대 한 정보를 포함 하는 [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) 구조체에 대 한 포인터입니다.
+삽입할 항목에 대 한 정보를 포함 하는 [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -728,7 +728,7 @@ BOOL Layout(HDLAYOUT* pHeaderLayout);
 ### <a name="parameters"></a>매개 변수
 
 *pHeaderLayout*<br/>
-헤더 컨트롤의 크기와 위치를 설정 하는 데 사용 되는 정보를 포함 하는 [HDLAYOUT](/windows/win32/api/commctrl/ns-commctrl-_hd_layout) 구조체에 대 한 포인터입니다.
+헤더 컨트롤의 크기와 위치를 설정 하는 데 사용 되는 정보를 포함 하는 [HDLAYOUT](/windows/win32/api/commctrl/ns-commctrl-hdlayout) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -823,7 +823,7 @@ BOOL SetFocusedItem(int iItem);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
 |*iItem*|진행 헤더 항목의 인덱스 (0부터 시작)입니다.|
 
@@ -917,7 +917,7 @@ BOOL SetItem(
 조작할 항목의 인덱스 (0부터 시작)입니다.
 
 *pHeaderItem*<br/>
-새 항목에 대 한 정보를 포함 하는 [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) 구조체에 대 한 포인터입니다.
+새 항목에 대 한 정보를 포함 하는 [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 

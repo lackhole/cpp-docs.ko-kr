@@ -10,30 +10,30 @@ helpviewer_keywords:
 - notifications [MFC], handlers for control
 - handlers [MFC], command
 ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
-ms.openlocfilehash: 6c92660c67fa91c27bb094111cebfef57904cdc7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 43b6a517b680a5f6ff092337fbf3d90dd0115dd7
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358996"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907977"
 ---
 # <a name="handlers-for-commands-and-control-notifications"></a>명령 및 컨트롤 알림에 대한 처리기
 
-명령 또는 컨트롤 알림 메시지에 대 한 기본 처리기가 없는 경우 따라서 메시지의 이러한 범주에 대 한 처리기를 명명 규칙만 적용 됩니다. 명령 또는 컨트롤 알림 처리기에 매핑할 때는 속성 창에서는 명령 ID 또는 알림 컨트롤 코드를 기반으로 이름을 제안 합니다. 제안 된 이름을 지정, 변경 하거나 바꿉니다.
+명령 또는 컨트롤 알림 메시지에 대 한 기본 처리기가 없습니다. 따라서 이러한 종류의 메시지에 대 한 처리기의 이름을 지정 하는 규칙에 의해서만 바인딩됩니다. 명령 또는 컨트롤 알림을 처리기에 매핑하면 [클래스 마법사](reference/mfc-class-wizard.md) 에서 명령 ID 또는 컨트롤 알림 코드를 기반으로 이름을 제안 합니다. 제안 된 이름을 그대로 적용 하거나 변경 하거나 바꿀 수 있습니다.
 
-규칙 나타내는 사용자 인터페이스 개체에 대 한 두 범주에는 처리기 이름을 제안 합니다. 편집 메뉴에서 Cut 명령에 대 한 처리기 이름이 될 수 있으므로
+규칙은 표시 하는 사용자 인터페이스 개체에 대해 두 범주 모두에서 처리기의 이름을 표시 하는 것을 제안 합니다. 따라서 편집 메뉴의 잘라내기 명령에 대 한 처리기의 이름을 지정할 수 있습니다.
 
 [!code-cpp[NVC_MFCMessageHandling#4](../mfc/codesnippet/cpp/handlers-for-commands-and-control-notifications_1.h)]
 
-프레임 워크와 Cut 명령에 대 한 명령 ID는 미리 정의 Cut 명령은 응용 프로그램에서 구현 되므로 일반적으로, 되므로 **ID_EDIT_CUT**합니다. 모든 미리 정의 된 명령 Id의 목록을 AFXRES 파일을 참조 하세요. 8. 자세한 내용은 [표준 명령](../mfc/standard-commands.md)입니다.
+잘라내기 명령은 응용 프로그램에서 일반적으로 구현 되기 때문에 프레임 워크는 Cut 명령의 명령 ID를 **ID_EDIT_CUT**로 이미 합니다. 미리 정의 된 모든 명령 Id 목록은 AFXRES.H 파일을 참조 하세요. 넣기. 자세한 내용은 [표준 명령](../mfc/standard-commands.md)을 참조 하세요.
 
-또한 규칙에 대 한 처리기를 제안 합니다 **BN_CLICKED** "My Button" 레이블이 붙은 단추에서 알림 메시지를 이름일 수 있습니다
+또한 규칙은 "내 단추" 라는 레이블이 지정 된 단추의 **BN_CLICKED** 알림 메시지에 대 한 처리기를 제안 합니다.
 
 [!code-cpp[NVC_MFCMessageHandling#5](../mfc/codesnippet/cpp/handlers-for-commands-and-control-notifications_2.h)]
 
-이 명령은 ID가 할당할 수 있습니다 **IDC_MY_BUTTON** 이므로 응용 프로그램 관련 사용자 인터페이스 개체와 동일 합니다.
+응용 프로그램 관련 사용자 인터페이스 개체와 동일 하기 때문에이 명령을 ID **IDC_MY_BUTTON** 에 할당할 수 있습니다.
 
-메시지의 두 범주 인수를 가져오지 않고 및 아무 값도 반환 합니다.
+두 메시지 범주 모두 인수를 사용 하지 않으며 값을 반환 하지 않습니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -147,7 +147,7 @@ class CDaoWorkspace : public CObject
 
 MFC dao에서 보안 제어에 사용 되는 사용자 및 그룹 컬렉션을 구현 하지 않습니다. DAO의 이러한 측면을 해야 하는 경우 프로그램 해야 해당 직접 DAO 인터페이스를 직접 호출을 통해. 정보를 참조 하세요 [기술 참고 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md)합니다.
 
-## <a name="usage"></a>사용법
+## <a name="usage"></a>사용
 
 클래스를 사용할 수 있습니다 `CDaoWorkspace` 에:
 

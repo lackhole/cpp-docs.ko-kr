@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - cpp_quote attribute
 ms.assetid: f75327ff-42bd-498b-9177-7ffa25427e1f
-ms.openlocfilehash: 378435ced5a541785b7b32bc9d2f408034d5a2d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 905c9fc41b1b42dffe9c7b39fae0b096cdc24950
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148239"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501759"
 ---
-# <a name="cppquote"></a>cpp_quote
+# <a name="cpp_quote"></a>cpp_quote
 
-생성된 된.idl 파일의 따옴표 없이 지정된 된 문자열을 내보냅니다.
+지정 된 문자열을 인용 문자 없이 생성 된 .idl 파일로 내보냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,15 +30,15 @@ C 명령입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **cpp_quote** C++ 특성은.idl 파일에서 전처리기 지시문을 배치 하려는 경우에 유용 합니다.
+**Cpp_quote** C++ 특성은 .idl 파일에 전처리기 지시문을 추가 하려는 경우에 유용 합니다.
 
-사용할 수도 있습니다 **cpp_quote** MIDL 컴파일의 일부로.h 파일을 생성 합니다. 예를 들어 있는 경우는 C++ 를 사용 하는 헤더 파일 C++ 을 사용할 수 있어야 하는.h 있으므로 MIDL 생성 파일을 만드는 것을 컴파일할 수 있습니다 IDL 특성 하지만 일부 작업에 대 한이 파일을 사용할 수 없습니다.
+**Cpp_quote** 를 사용 하 고 MIDL 컴파일의 일부로 .h 파일을 생성할 수도 있습니다. 예를 들어 IDL 특성을 사용 C++ C++ 하지만 일부 작업에이 파일을 사용할 수 없는 헤더 파일이 있는 경우이 파일을 컴파일하여 MIDL에서 생성 된 .h 파일을 만들 수 있습니다 .이 파일은 사용할 수 있습니다.
 
-합니다 **cpp_quote** 특성이 동일한 기능을 합니다 [cpp_quote](/windows/desktop/Midl/cpp-quote) MIDL 특성입니다.
+**Cpp_quote** 특성은 [cpp_quote](/windows/win32/Midl/cpp-quote) MIDL 특성과 동일한 기능을 포함 합니다.
 
 ## <a name="example"></a>예제
 
-예를 참조 하세요 [이중](dual.md) 예로 사용 하는 방법을 사용 하 여 **cpp_quote**합니다.
+예제 [에 대 한](dual.md) 예제는 **cpp_quote**를 사용 하는 방법을 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

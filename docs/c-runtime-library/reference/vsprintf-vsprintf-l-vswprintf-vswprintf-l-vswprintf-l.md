@@ -1,6 +1,6 @@
 ---
 title: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
-ms.date: 11/04/2016
+ms.date: 09/03/2019
 apiname:
 - _vswprintf_l
 - _vsprintf_l
@@ -46,12 +46,12 @@ helpviewer_keywords:
 - vsprintf function
 - _vstprintf function
 ms.assetid: b8ef1c0d-58f9-4a18-841a-f1a989e1c29b
-ms.openlocfilehash: 8eb73a5149c1127332b9b8e464da02c6d528610e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 57fa0428e8aecf7b728029a0c4cc21f8abc353bf
+ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499020"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70273646"
 ---
 # <a name="vsprintf-_vsprintf_l-vswprintf-_vswprintf_l-__vswprintf_l"></a>vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 
@@ -120,19 +120,19 @@ int _vswprintf_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*buffer*<br/>
+*버퍼*\
 출력을 위한 스토리지 위치입니다.
 
-*count*<br/>
+*수*\
 이 함수의 와이드 문자열 버전에 저장할 최대 문자 수입니다.
 
-*format*<br/>
+*형식과*\
 형식 사양입니다.
 
-*argptr*<br/>
+*argptr*\
 인수 목록에 대한 포인터입니다.
 
-*locale*<br/>
+*로캘을*\
 사용할 로캘입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -176,15 +176,16 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 ```C
 // crt_vsprintf.c
-// compile with: /W3
+// compile with: cl /W4 crt_vsprintf.c
 // This program uses vsprintf to write to a buffer.
 // The size of the buffer is determined by _vscprintf.
 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
 
-void test( char * format, ... )
+void test( char const * const format, ... )
 {
     va_list args;
     int     len;
@@ -197,12 +198,14 @@ void test( char * format, ... )
                                 + 1; // terminating '\0'
 
     buffer = (char*)malloc( len * sizeof(char) );
+    if ( 0 != buffer )
+    {
+        vsprintf( buffer, format, args ); // C4996
+        // Note: vsprintf is deprecated; consider using vsprintf_s instead
+        puts( buffer );
 
-    vsprintf( buffer, format, args ); // C4996
-    // Note: vsprintf is deprecated; consider using vsprintf_s instead
-    puts( buffer );
-
-    free( buffer );
+        free( buffer );
+    }
     va_end( args );
 }
 
@@ -220,10 +223,10 @@ This is a string
 
 ## <a name="see-also"></a>참고자료
 
-[스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[vprintf 함수](../../c-runtime-library/vprintf-functions.md)<br/>
-[형식 사양 구문: printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>
+[스트림 I/O](../../c-runtime-library/stream-i-o.md)\
+[vprintf 함수](../../c-runtime-library/vprintf-functions.md)\
+[형식 사양 구문: printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)\
+[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)\
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)

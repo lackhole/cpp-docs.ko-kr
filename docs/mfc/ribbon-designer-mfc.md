@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Ribbon Designer (MFC)
 - MFC Ribbon Designer
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
-ms.openlocfilehash: 1634eee30063a48041d60fc1b7116ca9543c9de2
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a39a3a69b43eb06d67fc806e2d4fa9aec323b650
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511466"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907818"
 ---
 # <a name="ribbon-designer-mfc"></a>리본 디자이너(MFC)
 
@@ -77,7 +77,7 @@ MFC 응용 프로그램에서 리본 리소스를 사용 하려면 [Cmfcribbon b
 
 - **디자이너 화면:** 리본 리소스의 시각적 표시를 포함 합니다.
 
-- **속성 창:** 디자이너 화면에서 선택한 항목의 특성을 나열 합니다.
+- **[클래스 마법사](reference/mfc-class-wizard.md):** 디자이너 화면에서 선택한 항목의 특성을 나열 합니다.
 
 - **리소스 뷰 창:** 프로젝트에서 리본 리소스를 포함 하는 리소스를 표시 합니다.
 

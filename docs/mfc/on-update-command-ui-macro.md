@@ -1,6 +1,6 @@
 ---
 title: ON_UPDATE_COMMAND_UI 매크로
-ms.date: 11/04/2016
+ms.date: 09/06/2019
 f1_keywords:
 - ON_UPDATE_COMMAND_UI
 helpviewer_keywords:
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - command-handler macros
 - updating user-interface objects [MFC]
 ms.assetid: 3e72b50f-4119-4c82-81cf-6e09b132de05
-ms.openlocfilehash: 986bc4f12223048a20f88da5d164b24dc1c08ace
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 467e130f3e6518cc4ec554f6574fb9fcbabaf1f3
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385354"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907948"
 ---
-# <a name="onupdatecommandui-macro"></a>ON_UPDATE_COMMAND_UI 매크로
+# <a name="on_update_command_ui-macro"></a>ON_UPDATE_COMMAND_UI 매크로
 
-사용 합니다 **속성** 창 사용자 인터페이스 개체를 명령 대상 개체에 명령 업데이트 처리기에 연결 합니다. 자동으로 ON_UPDATE_COMMAND_UI 매크로에 사용자 인터페이스 개체의 ID를 연결 하 고 업데이트를 처리 하는 개체에서 처리기를 만듭니다 합니다. 참조 [함수에 메시지 매핑](../mfc/reference/mapping-messages-to-functions.md) 자세한 내용은 합니다.
+사용자 인터페이스 개체를 명령 대상 개체의 명령 업데이트 처리기에 연결 하려면 **클래스 뷰**을 열고 처리기가 추가 될 클래스를 마우스 오른쪽 단추로 클릭 한 다음 **클래스 마법사**를 선택 합니다. 왼쪽의 목록에서 사용자 인터페이스 개체 ID를 찾은 다음 오른쪽 창에서 **UPDATE_COMMAND_UI** 를 선택 하 고 **처리기 추가**를 클릭 합니다. 그러면 클래스에 처리기 함수가 만들어지고 메시지 맵에 적절 한 항목이 추가 됩니다. 자세한 내용은 [함수에 메시지 매핑](../mfc/reference/mapping-messages-to-functions.md) 을 참조 하세요. **메시지** 창에서 처리할 추가 메시지를 지정할 수 있습니다. 
 
-예를 들어, 프로그램의 편집 메뉴에서 모두 지우기 명령을 업데이트 하려면 사용 합니다 **속성** 명령 업데이트 처리기에 대 한 함수 선언 선택한 클래스의 메시지 맵 항목을 추가 하기 위한 창을 호출 `OnUpdateEditClearAll` 클래스에서 선언 및 클래스의 구현 파일에 있는 빈 함수 템플릿. 함수 프로토타입에 다음과 같습니다.
+예를 들어 프로그램의 편집 메뉴에서 모두 지우기 명령을 업데이트 하려면 **클래스 마법사** 를 사용 하 여 선택한 클래스에 메시지 맵 항목을 추가 하 고, 클래스 선언에서 호출 `OnUpdateEditClearAll` 된 명령 업데이트 처리기에 대 한 함수 선언을 추가 하 고, 빈를 추가 합니다. 클래스의 구현 파일에 있는 함수 템플릿입니다. 함수 프로토타입은 다음과 같습니다.
 
 [!code-cpp[NVC_MFCDocView#2](../mfc/codesnippet/cpp/on-update-command-ui-macro_1.h)]
 
-모든 처리기 함수에 나와 있는 같은 합니다 **afx_msg** 키워드입니다. 모든 업데이트 처리기와 같은 해당 인수 하나에 대 한 포인터를 `CCmdUI` 개체입니다.
+모든 처리기와 마찬가지로 함수 선언에는 **afx_msg** 키워드가 표시 됩니다. 모든 업데이트 처리기와 마찬가지로 하나의 인수를 사용 하 여 `CCmdUI` 개체에 대 한 포인터를 가져옵니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -2,20 +2,20 @@
 title: 이벤트(C++/CX)
 ms.date: 07/15/2019
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-ms.openlocfilehash: d0a3ab01628487dcca081eb300470cbd1bf3bb83
-ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
+ms.openlocfilehash: aab37353b1ea8d9f81a8e9a9ae489a4dd3542cc0
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894461"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740522"
 ---
 # <a name="events-ccx"></a>이벤트(C++/CX)
 
-Windows 런타임 형식을 선언할 수 있습니다 (즉, 게시) 이벤트 및 동일한 구성 요소 또는 다른 구성 요소의 클라이언트 코드는 호출 된 메서드를 연결 하 여 이러한 이벤트를 구독할 수 있습니다 *이벤트 처리기* 이벤트를 사용 하 여 합니다. 여러 이벤트 처리기를 단일 이벤트에 연결할 수 있습니다. 게시 개체에서 이벤트가 발생하면 호출되는 모든 이벤트 처리기가 발생됩니다. 이 방법으로 구독 클래스에서는 게시자가 이벤트를 발생시킬 때 적절한 사용자 지정 작업은 무엇이든 수행할 수 있습니다. 이벤트에는 모든 이벤트 처리기에서 이벤트를 구독하기 위해 필요한 서명을 지정하는 대리자 형식이 있습니다.
+Windows 런타임 형식은 이벤트를 선언 (즉, 게시) 할 수 있고, 동일한 구성 요소 또는 다른 구성 요소의 클라이언트 코드는 이벤트 *처리기* 라는 메서드를 이벤트와 연결 하 여 이러한 이벤트를 구독할 수 있습니다. 여러 이벤트 처리기를 단일 이벤트에 연결할 수 있습니다. 게시 개체에서 이벤트가 발생하면 호출되는 모든 이벤트 처리기가 발생됩니다. 이 방법으로 구독 클래스에서는 게시자가 이벤트를 발생시킬 때 적절한 사용자 지정 작업은 무엇이든 수행할 수 있습니다. 이벤트에는 모든 이벤트 처리기에서 이벤트를 구독하기 위해 필요한 서명을 지정하는 대리자 형식이 있습니다.
 
 ## <a name="consuming-events-in-windows-components"></a>Windows 구성 요소의 이벤트 사용
 
-Windows 런타임에서 많은 구성 요소가 이벤트를 노출 합니다. 예를 들어 LightSensor 개체는 센서가 새 luminescence 값을 보고하면 ReadingChanged 이벤트를 발생시킵니다. 프로그램에서 LightSensor 개체를 사용하는 경우 ReadingChanged 이벤트가 발생할 때 호출되는 메서드를 정의할 수 있습니다. 메서드를 원하는 것으로 작업을 수행할 수 있습니다. 유일한 요구 사항은 해당 서명이 호출 되는 대리자의 서명과 일치 해야 한다는 됩니다. 대리자 이벤트 처리기를 작성 하 고 이벤트에 가입 하는 방법에 대 한 자세한 내용은 참조 하세요. [대리자](../cppcx/delegates-c-cx.md)합니다.
+Windows 런타임의 많은 구성 요소가 이벤트를 노출 합니다. 예를 들어 LightSensor 개체는 센서가 새 luminescence 값을 보고하면 ReadingChanged 이벤트를 발생시킵니다. 프로그램에서 LightSensor 개체를 사용하는 경우 ReadingChanged 이벤트가 발생할 때 호출되는 메서드를 정의할 수 있습니다. 메서드는 원하는 모든 작업을 수행할 수 있습니다. 유일한 요구 사항은 해당 서명이 호출 된 대리자의 시그니처와 일치 해야 한다는 것입니다. 대리자 이벤트 처리기를 만들고 이벤트를 구독 하는 방법에 대 한 자세한 내용은 [대리자](../cppcx/delegates-c-cx.md)를 참조 하세요.
 
 ## <a name="creating-custom-events"></a>사용자 지정 이벤트 만들기
 
@@ -27,7 +27,7 @@ ref 클래스 또는 인터페이스에서 이벤트를 선언할 수 있으며,
 
 [!code-cpp[cx_events#01](../cppcx/codesnippet/CPP/cx_events/class1.h#01)]
 
-### <a name="usage"></a>사용법
+### <a name="usage"></a>사용
 
 다음 예제에서는 구독 클래스가 `+=` 연산자를 사용하여 이벤트를 구독하고 이벤트가 발생할 때 호출할 이벤트 처리기를 제공하는 방법을 보여 줍니다. 제공된 함수가 `EventTest` 네임스페이스에서 게시자 쪽에 정의된 대리자의 서명과 일치합니다.
 
@@ -62,5 +62,5 @@ ref 클래스 또는 인터페이스에서 이벤트를 선언할 수 있으며,
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
 [대리자](../cppcx/delegates-c-cx.md)<br/>
-[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

@@ -1,26 +1,26 @@
 ---
 title: MFC 메시지 처리기 추가
-ms.date: 11/04/2016
+ms.date: 09/06/2019
 f1_keywords:
 - vc.codewiz.adding.mfc.msghandler
 helpviewer_keywords:
 - message handling [MFC], adding handlers
 ms.assetid: 4251cfce-76ca-443d-bd2f-6303afa6d942
-ms.openlocfilehash: 90d7f843c91956b679fe794c68adab12d85122b7
-ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
+ms.openlocfilehash: cf46c4f388c4607dbb8fb0e7f439603e5964ea03
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66741743"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907669"
 ---
 # <a name="adding-an-mfc-message-handler"></a>MFC 메시지 처리기 추가
 
-할 수 있습니다 [속성 창 메시지 처리기를 추가 하는 데](../../mfc/reference/mapping-messages-to-functions.md) (Windows 메시지를 처리 하는 멤버 함수) 클래스 및 맵 Windows 메시지 메시지 처리기입니다. 추가할 수도 있습니다 [대화 상자 컨트롤에 대 한 이벤트 처리기](../../windows/adding-event-handlers-for-dialog-box-controls.md)합니다.
+클래스 [마법사](mfc-class-wizard.md) 또는 **클래스 뷰의** **속성** 창을 사용 하 여 메시지 처리기 (windows 메시지를 처리 하는 멤버 함수)를 클래스에 추가 하 고 windows 메시지를 메시지 처리기에 매핑할 수 있습니다. [모든 대화 상자 컨트롤에 대 한 이벤트 처리기](../../windows/adding-event-handlers-for-dialog-box-controls.md)를 추가할 수도 있습니다. 
 
-메시지 및 이벤트 처리 함수를 정의 하는 속성 창을 사용 하 여 업데이트할 수 있습니다 자동으로 메시지를 발송 테이블 (또는 메시지 맵을) 및 클래스 헤더 파일입니다.
+**클래스 마법사나** **속성** 창 ( **클래스 뷰**)을 사용 하 여 메시지 및 이벤트 처리 함수를 정의 하면 메시지 디스패치 테이블 (또는 메시지 맵) 및 클래스 헤더 파일을 자동으로 업데이트할 수 있습니다.
 
 > [!NOTE]
->  속성 창;를 사용 하 여 ATL 클래스에 메시지 처리기를 추가할 수 있습니다. 그러나 일부 결과가 달라질 수 있습니다. 자세한 내용은 ATL 항목을 참조 하세요 [ATL 메시지 처리기 추가](../../atl/adding-an-atl-message-handler.md)합니다.
+>  클래스 마법사를 사용 하 여 ATL 클래스에 메시지 처리기를 추가할 수 있습니다. 그러나 일부 결과는 달라질 수 있습니다. 자세한 내용은 atl 항목 [Atl 메시지 처리기 추가](../../atl/adding-an-atl-message-handler.md)를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

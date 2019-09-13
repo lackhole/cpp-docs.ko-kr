@@ -58,6 +58,8 @@
               href: build/project-property-inheritance.md
             - name: 프로젝트 파일을 변경하지 않고 속성 및 대상 수정
               href: build/modify-project-properties-without-changing-project-file.md
+        - name: Visual Studio 프로젝트의 Clang/LLVM(MSBuild)
+          href: build/clang-support-msbuild.md
         - name: 빌드 시 참조 라이브러리 및 구성 요소
           href: build/adding-references-in-visual-cpp-projects.md
         - name: 프로젝트 출력 파일 구성
@@ -534,6 +536,10 @@
                       href: build/reference/errorreport-report-internal-compiler-errors.md
                     - name: /execution/charset(실행 문자 집합 설정)
                       href: build/reference/execution-charset-set-execution-character-set.md
+                    - name: '/experimental:module'
+                      href: build/reference/experimental-module.md
+                    - name: '/experimental:preprocessor'
+                      href: build/reference/experimental-preprocessor.md
                     - name: /F(스택 크기 설정)
                       href: build/reference/f-set-stack-size.md
                     - name: 출력 파일(/F) 옵션
@@ -1938,7 +1944,7 @@
               href: cppcx/value-classes-and-structs-c-cx.md
             - name: partial 클래스
               href: cppcx/partial-classes-c-cx.md
-            - name: 속성
+            - name: properties
               href: cppcx/properties-c-cx.md
             - name: 컬렉션
               href: cppcx/collections-c-cx.md
@@ -2651,7 +2657,7 @@
           href: dotnet/using-verifiable-assemblies-with-sql-server-cpp-cli.md
         - name: 프로젝트를 혼합 모드에서 순수 IL로 변환
           href: dotnet/converting-projects-from-mixed-mode-to-pure-intermediate-language.md
-    - name: Serialization
+    - name: 직렬화
       href: dotnet/serialization-cpp-cli.md
     - name: Friend 어셈블리(C++)
       href: dotnet/friend-assemblies-cpp.md
@@ -2883,7 +2889,7 @@
       href: security/how-user-account-control-uac-affects-your-application.md
     - name: 예측 실행 부채널에 대한 C++ 개발자 지침
       href: security/developer-guidance-speculative-execution.md
-- name: 참조
+- name: 참고
   expanded: false
   items:
     - name: C/C++ 언어 및 표준 라이브러리
@@ -3455,10 +3461,10 @@
                   href: c-language/implementation-defined-behavior.md
                 - name: '변환: 진단'
                   href: c-language/translation-diagnostics.md
-                - name: 환경
+                - name: Environment
                   expanded: false
                   items:
-                    - name: 환경
+                    - name: Environment
                       href: c-language/environment.md
                     - name: main에 대한 인수
                       href: c-language/arguments-to-main.md
@@ -3710,10 +3716,10 @@
                   href: cpp/comments-cpp.md
                 - name: 식별자
                   href: cpp/identifiers-cpp.md
-                - name: 키워드가
+                - name: 키워드
                   expanded: false
                   items:
-                    - name: 키워드가
+                    - name: 키워드
                       href: cpp/keywords-cpp.md
                     - name: auto 키워드
                       href: cpp/auto-keyword.md
@@ -4065,10 +4071,10 @@
               href: cpp/enumerations-cpp.md
             - name: Unions
               href: cpp/unions.md
-            - name: 함수
+            - name: Functions
               expanded: false
               items:
-                - name: 함수
+                - name: Functions
                   href: cpp/functions-cpp.md
                 - name: 가변 인수 목록을 사용하는 함수
                   href: cpp/functions-with-variable-argument-lists-cpp.md
@@ -4111,7 +4117,7 @@
               items:
                 - name: 클래스 및 구조체
                   href: cpp/classes-and-structs-cpp.md
-                - name: 클래스
+                - name: class
                   href: cpp/class-cpp.md
                 - name: struct
                   href: cpp/struct-cpp.md
@@ -4124,11 +4130,11 @@
                       href: cpp/member-access-control-cpp.md
                     - name: friend
                       href: cpp/friend-cpp.md
-                    - name: private
+                    - name: 프라이빗
                       href: cpp/private-cpp.md
                     - name: protected
                       href: cpp/protected-cpp.md
-                    - name: public
+                    - name: 공공
                       href: cpp/public-cpp.md
                 - name: 생성자 없이 클래스 및 구조체 초기화
                   href: cpp/initializing-classes-and-structs-without-constructors-cpp.md
@@ -4493,7 +4499,7 @@
                       href: cpp/novtable.md
                     - name: 프로세스
                       href: cpp/process.md
-                    - name: 속성(property)
+                    - name: 속성
                       href: cpp/property-cpp.md
                     - name: restrict
                       href: cpp/restrict.md
@@ -4794,7 +4800,7 @@
                       href: preprocessor/null-directive.md
                     - name: '#undef 지시문(C/C++)'
                       href: preprocessor/hash-undef-directive-c-cpp.md
-                    - name: '#using 지시문(C++)'
+                    - name: '#using 지시문(C++/CLI)'
                       href: preprocessor/hash-using-directive-cpp.md
                 - name: 전처리 연산자
                   expanded: false
@@ -4829,10 +4835,10 @@
                   href: preprocessor/conventions.md
                 - name: 전처리기 문법
                   href: preprocessor/preprocessor-grammar.md
-            - name: Pragma 지시문 및 __Pragma 키워드
+            - name: Pragma 지시문 및 __pragma 키워드
               expanded: false
               items:
-                - name: Pragma 지시문 및 __Pragma 키워드
+                - name: Pragma 지시문 및 __pragma 키워드
                   href: preprocessor/pragma-directives-and-the-pragma-keyword.md
                 - name: alloc_text pragma
                   href: preprocessor/alloc-text.md
@@ -5990,7 +5996,7 @@
               href: extensions/delegate-cpp-component-extensions.md
             - name: 열거형 클래스
               href: extensions/enum-class-cpp-component-extensions.md
-            - name: 이벤트(event)
+            - name: event
               href: extensions/event-cpp-component-extensions.md
             - name: 예외 처리
               href: extensions/exception-handling-cpp-component-extensions.md
@@ -6037,7 +6043,7 @@
               href: extensions/override-cpp-component-extensions.md
             - name: 부분
               href: extensions/partial-cpp-component-extensions.md
-            - name: 속성(property)
+            - name: 속성
               href: extensions/property-cpp-component-extensions.md
             - name: safe_cast
               href: extensions/safe-cast-cpp-component-extensions.md
@@ -6161,7 +6167,7 @@
                   href: windows/attributes/coclass.md
                 - name: com_interface_entry
                   href: windows/attributes/com-interface-entry-cpp.md
-                - name: 컨트롤
+                - name: control
                   href: windows/attributes/control.md
                 - name: cpp_quote
                   href: windows/attributes/cpp-quote.md
@@ -6179,7 +6185,7 @@
                   href: windows/attributes/db-source.md
                 - name: db_table
                   href: windows/attributes/db-table.md
-                - name: default
+                - name: 기본값
                   href: windows/attributes/default-cpp.md
                 - name: defaultbind
                   href: windows/attributes/defaultbind.md
@@ -6219,7 +6225,7 @@
                   href: windows/attributes/helpstringdll.md
                 - name: hidden
                   href: windows/attributes/hidden.md
-                - name: ID
+                - name: id
                   href: windows/attributes/id.md
                 - name: idl_module
                   href: windows/attributes/idl-module.md
@@ -6233,13 +6239,13 @@
                   href: windows/attributes/implements-cpp.md
                 - name: implements_category
                   href: windows/attributes/implements-category.md
-                - name: import
+                - name: 수입
                   href: windows/attributes/import.md
                 - name: importidl
                   href: windows/attributes/importidl.md
                 - name: importlib
                   href: windows/attributes/importlib.md
-                - name: 의
+                - name: in
                   href: windows/attributes/in-cpp.md
                 - name: include
                   href: windows/attributes/include-cpp.md
@@ -6255,7 +6261,7 @@
                   href: windows/attributes/library-block.md
                 - name: licensed
                   href: windows/attributes/licensed.md
-                - name: 로컬
+                - name: local
                   href: windows/attributes/local-cpp.md
                 - name: max_is
                   href: windows/attributes/max-is.md
@@ -6277,7 +6283,7 @@
                   href: windows/attributes/odl.md
                 - name: oleautomation
                   href: windows/attributes/oleautomation.md
-                - name: 선택적
+                - name: 선택 사항
                   href: windows/attributes/optional-cpp.md
                 - name: out
                   href: windows/attributes/out-cpp.md
@@ -6319,7 +6325,7 @@
                   href: windows/attributes/satype.md
                 - name: size_is
                   href: windows/attributes/size-is.md
-                - name: 원본
+                - name: source
                   href: windows/attributes/source-cpp.md
                 - name: string
                   href: windows/attributes/string-cpp.md
@@ -6389,8 +6395,6 @@
                   expanded: false
                   items:
                     - name: 파일 및 스트림
-                      href: c-runtime-library/files-and-streams.md
-                    - name: 텍스트 및 이진 스트림
                       href: c-runtime-library/text-and-binary-streams.md
                     - name: 바이트 및 와이드 스트림
                       href: c-runtime-library/byte-and-wide-streams.md
@@ -6478,7 +6482,7 @@
                   items:
                     - name: 국제화
                       href: c-runtime-library/internationalization.md
-                    - name: 로캘
+                    - name: Locale
                       href: c-runtime-library/locale.md
                     - name: 코드 페이지
                       href: c-runtime-library/code-pages.md
@@ -6870,7 +6874,7 @@
                   href: c-runtime-library/reference/alloca.md
                 - name: _amsg_exit
                   href: c-runtime-library/reference/amsg-exit.md
-                - name: 를 갖는
+                - name: and
                   href: c-runtime-library/reference/and.md
                 - name: and_eq
                   href: c-runtime-library/reference/and-eq.md
@@ -7320,7 +7324,7 @@
                   href: c-runtime-library/reference/fread-nolock.md
                 - name: _fread_nolock_s2
                   href: c-runtime-library/reference/fread-nolock-s2.md
-                - name: free
+                - name: 제한 없음
                   href: c-runtime-library/reference/free.md
                 - name: _free_dbg
                   href: c-runtime-library/reference/free-dbg.md
@@ -7762,7 +7766,7 @@
                   href: c-runtime-library/reference/offsetof-macro.md
                 - name: '_onexit, _onexit_m'
                   href: c-runtime-library/reference/onexit-onexit-m.md
-                - name: 열기
+                - name: open
                   href: c-runtime-library/reference/open.md
                 - name: '_open, _wopen'
                   href: c-runtime-library/reference/open-wopen.md
@@ -7832,7 +7836,7 @@
                   href: c-runtime-library/reference/rand.md
                 - name: rand_s
                   href: c-runtime-library/reference/rand-s.md
-                - name: 읽기
+                - name: read
                   href: c-runtime-library/reference/posix-read.md
                 - name: _read
                   href: c-runtime-library/reference/read.md
@@ -8308,7 +8312,7 @@
                   href: c-runtime-library/reference/wctrans.md
                 - name: wctype
                   href: c-runtime-library/reference/wctype.md
-                - name: 쓰기
+                - name: write
                   href: c-runtime-library/reference/posix-write.md
                 - name: _write
                   href: c-runtime-library/reference/write.md
@@ -10485,7 +10489,7 @@
                       href: parallel/openmp/4-environment-variables.md
                     - name: 부록
                       items:
-                        - name: 예제
+                        - name: 예
                           href: parallel/openmp/a-examples.md
                         - name: 런타임 라이브러리 함수의 스텁
                           href: parallel/openmp/b-stubs-for-run-time-library-functions.md
@@ -10506,7 +10510,7 @@
                       href: parallel/openmp/reference/openmp-directives.md
                     - name: 절
                       href: parallel/openmp/reference/openmp-clauses.md
-                    - name: 함수
+                    - name: Functions
                       href: parallel/openmp/reference/openmp-functions.md
                     - name: 환경 변수
                       href: parallel/openmp/reference/openmp-environment-variables.md
