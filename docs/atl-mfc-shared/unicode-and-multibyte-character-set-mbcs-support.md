@@ -1,6 +1,6 @@
 ---
 title: 유니코드 및 멀티바이트 문자 집합(MBCS) 지원
-ms.date: 1/09/2017
+ms.date: 01/09/2017
 helpviewer_keywords:
 - MFC [C++], character set support
 - MBCS [C++], strings and MFC support
@@ -10,88 +10,88 @@ helpviewer_keywords:
 - Unicode [C++], string objects
 - strings [C++], Unicode
 - strings [C++], character set support
-ms.openlocfilehash: 59e8759ffbe61b80c74d8b5aba5bc50886d6b23d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 983b3d9bc72d99ab3c665f86cffd205dccf873e8
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252677"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927894"
 ---
 # <a name="unicode-and-multibyte-character-set-mbcs-support"></a>유니코드 및 멀티바이트 문자 집합(MBCS) 지원
 
-예를 들어, 일본어 및 중국어와 일부 언어에서는 큰 문자 집합이. Microsoft Foundation 클래스 라이브러리 (MFC) 수를이 시장에 대 한 프로그래밍을 지원 큰 문자 집합을 처리 하는 두 가지 방법이 있습니다.
+일본어 및 중국어와 같은 일부 언어에는 많은 문자 집합이 있습니다. 이러한 시장에 대 한 프로그래밍을 지원 하기 위해 MFC 라이브러리 (MFC)에서는 두 가지 방법으로 대량 문자 집합을 처리할 수 있습니다.
 
-- [유니코드](#mfc-support-for-unicode-strings), `wchar_t` 와이드 문자와 u t F-16으로 인코드된 문자열을 기반으로 합니다.
+- [유니코드](#mfc-support-for-unicode-strings), `wchar_t` 와이드 문자 및 u t f-16으로 인코딩된 문자열
 
-- [멀티 바이트 문자 집합 (MBCS)](#mfc-support-for-mbcs-strings), **char** 단일 또는 더블 바이트 문자 및 로캘별 문자 집합에서 인코딩된 문자열을 기반으로 합니다.
+- [MBCS (멀티 바이트 문자 집합](#mfc-support-for-mbcs-strings)), **char** 기반 단일 또는 더블 바이트 문자 및 로캘별 문자 집합으로 인코딩된 문자열
 
-Microsoft가 새로운 개발에 대 한 유니코드 MFC 라이브러리를 권장 하 고 Visual Studio 2013 및 Visual Studio 2015에서 MBCS 라이브러리는 사용 되지 않는 합니다. 이제는 그렇지 않습니다. Visual Studio 2017에서 MBCS 사용 되지 않음 경고가 제거 되었습니다.
+Microsoft는 모든 새 개발을 위해 MFC 유니코드 라이브러리를 권장 하며 MBCS 라이브러리는 Visual Studio 2013 및 Visual Studio 2015에서 더 이상 사용 되지 않습니다. 이제는 그렇지 않습니다. Visual Studio 2017에서 MBCS 사용 중단 경고가 제거 되었습니다.
 
 ## <a name="mfc-support-for-unicode-strings"></a>유니코드 문자열에 대 한 MFC 지원
 
-전체 MFC 클래스 라이브러리는 유니코드 문자 및 와이드 문자에 u t F-16으로 저장 하는 문자열에 대 한 조건에 따라 사용 됩니다. 특히 클래스 [CString](../atl-mfc-shared/reference/cstringt-class.md) 유니코드를 사용 합니다.
+전체 MFC 클래스 라이브러리는 유니코드 문자 및 와이드 문자 (u t f-16)로 저장 된 문자열에 대해 조건부로 사용 됩니다. 특히 [CString](../atl-mfc-shared/reference/cstringt-class.md) 클래스는 유니코드를 사용 하도록 설정 되어 있습니다.
 
-이러한 라이브러리, 디버거 및 DLL 파일은 MFC의 유니코드를 지원 하기 위해 사용 됩니다.
+이러한 라이브러리, 디버거 및 DLL 파일은 MFC에서 유니코드를 지 원하는 데 사용 됩니다.
 
 |||||
 |-|-|-|-|
 |UAFXCW.LIB|UAFXCW.PDB|UAFXCWD.LIB|UAFXCWD.PDB|
-|MFC*버전*U.LIB|MFC*version*U.PDB|MFC*버전*U.DLL|MFC*버전*UD 합니다. LIB|
-|MFC*version*UD.PDB|MFC*version*UD.DLL|MFCS*버전*U.LIB|MFCS*version*U.PDB|
-|MFCS*version*UD.LIB|MFCS*version*UD.PDB|MFCM*버전*U.LIB|MFCM*version*U.PDB|
-|MFCM*version*U.DLL|MFCM*버전*UD 합니다. LIB|MFCM*version*UD.PDB|MFCM*버전*UD 합니다. DLL|
+|MFC*버전*U .lib|MFC*버전*U .pdb|MFC*버전*.dll|MFC*버전*UD. LIB|
+|MFC*version*UD.PDB|MFC*버전*UD. GDIPLUS.DLL|MFCS*버전*U .lib|MFCS*버전*U .pdb|
+|MFCS*버전*UD. LIB|MFCS*version*UD.PDB|MFCM*버전*U .lib|MFCM*버전*U .pdb|
+|MFCM*version*U.DLL|MFCM*버전*UD. LIB|MFCM*version*UD.PDB|MFCM*버전*UD. GDIPLUS.DLL|
 
-(*버전* 파일의 버전 번호를 나타내는 예를 들어, '140' 의미 버전 14.0입니다.)
+*버전* 은 파일의 버전 번호를 나타냅니다. 예를 들어 ' 140 '은 버전 14.0을 의미 합니다.
 
-`CString` TCHAR 데이터 형식에 기반 합니다. TCHAR 유형으로 정의 된 기호 _UNICODE 프로그램의 빌드에 대해 정의 된 경우 `wchar_t`, 16 비트 문자 인코딩 형식입니다. TCHAR로 정의 되는 고, 그렇지 **char**, 일반 8 비트 문자 인코딩입니다. 따라서 유니코드에서는 `CString` 16 비트 문자 구성 됩니다. 유니코드 없이 형식 문자의 구성 되어 있을 **char**합니다.
+`CString`는 TCHAR.H 데이터 형식을 기반으로 합니다. _UNICODE 기호를 프로그램 빌드에 대해 정의 하는 경우 tchar.h는 16 비트 문자 인코딩 형식인 `wchar_t`형식으로 정의 됩니다. 그렇지 **않으면, tchar.h**는 일반적인 8 비트 문자 인코딩입니다. 따라서 유니코드에서는 `CString` 16 비트 문자로 구성 됩니다. 유니코드를 사용 하지 않으면 **char**형식의 문자로 구성 됩니다.
 
-응용 프로그램의 전체 유니코드 프로그래밍에 다음을 수행 해야합니다.
+응용 프로그램의 유니코드 프로그래밍을 완료 하려면 다음을 수행 해야 합니다.
 
-- 코드 조건에 따라 리터럴 문자열을 _T 매크로 사용 하 여 유니코드로 이식 가능 합니다.
+- _T 매크로를 사용 하 여 유니코드로 이식할 리터럴 문자열을 조건부로 코딩 합니다.
 
-- 문자열을 전달 하는 경우 함수 인수 문자에서 길이 또는 길이 (바이트)를 요구 하는지 여부에 주의 합니다. 차이점은 유니코드 문자열을 사용 하는 경우에 중요 합니다.
+- 문자열을 전달 하는 경우 함수 인수에 문자 길이 또는 길이 (바이트)가 필요한 지에 주의 해야 합니다. 유니코드 문자열을 사용 하는 경우 차이점은 중요 합니다.
 
 - 이식 가능한 버전의 C 런타임 문자열 처리 함수를 사용 합니다.
 
-- 문자 및 문자 포인터에 대 한 다음 데이터 형식을 사용 합니다.
+- 문자 및 문자 포인터에는 다음 데이터 형식을 사용 합니다.
 
-   - TCHAR를 사용 하는 위치를 사용 하 여 **char**합니다.
+   - **문자**를 사용 하는 경우 tchar.h를 사용 합니다.
 
-   - LPTSTR 사용 하는 위치를 사용 하 여 **char**<strong>\*</strong>합니다.
+   - <strong>Char\*</strong>를 사용 하는 경우 LPTSTR를 사용 합니다.
 
-   - LPCTSTR을 사용 하는 위치를 사용 하 여 **const char**<strong>\*</strong>합니다. `CString` 연산자 간에 변환할 LPCTSTR `CString` 및 LPCTSTR 합니다.
+   - **Const char**<strong>\*</strong>를 사용할 LPCTSTR를 사용 합니다. `CString`와 LPCTSTR 간에 `CString` 변환할 LPCTSTR 연산자를 제공 합니다.
 
-`CString` 또한 유니코드 인식 생성자, 대입 연산자 및 비교 연산자를 제공합니다.
+`CString`는 유니코드 인식 생성자, 할당 연산자 및 비교 연산자도 제공 합니다.
 
-합니다 [런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md) 이식 가능한 버전의 모든 문자열 처리 함수를 정의 합니다. 자세한 내용은 참조는 범주 [국제화](../c-runtime-library/internationalization.md)합니다.
+[런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md) 는 모든 문자열 처리 함수의 이식 가능한 버전을 정의 합니다. 자세한 내용은 [국제화](../c-runtime-library/internationalization.md)범주를 참조 하세요.
 
 ## <a name="mfc-support-for-mbcs-strings"></a>MBCS 문자열에 대 한 MFC 지원
 
-클래스 라이브러리는 멀티 바이트 문자 집합에도 사용할 수 있지만 더블 바이트 문자 집합 (DBCS).
+클래스 라이브러리는 멀티 바이트 문자 집합에 대해서도 사용할 수 있지만 DBCS (더블 바이트 문자 집합)에 대해서만 사용할 수 있습니다.
 
-멀티 바이트 문자 집합에서 문자 하나 또는 두 개의 바이트를 수 있습니다. 첫째 바이트는 특별 한 "선행 바이트" 2 바이트인 경우 코드에 따라 페이지 사용 되는 특정 범위에서 선택한입니다. 전체적으로 볼 때, 잠재 고객 및 "후행 바이트가" 고유 문자 인코딩을 지정 합니다.
+멀티 바이트 문자 집합에서 문자는 1 ~ 2 바이트가 될 수 있습니다. 너비가 2 바이트 이면 사용 중인 코드 페이지에 따라 첫 번째 바이트는 특정 범위에서 선택 되는 특별 한 "선행 바이트"입니다. 선행 및 "후행 바이트"는 고유한 문자 인코딩을 지정 합니다.
 
-프로그램의 빌드에 대 한 기호 _MBCS 정의 된 경우에 TCHAR로 입력 `CString` 기반, 매핑됩니다 **char**합니다. 바이트를 결정 하는 것을 `CString` 는 선행 바이트와 후행 바이트입니다. C 런타임 라이브러리는이 확인할 수 있도록 함수를 제공 합니다.
+프로그램의 빌드에 대 한 기호 _mbcs가 정의 된 경우 `CString` 가 기반으로 하는 tchar.h를 입력 하 여가 **char**에 매핑됩니다. 에서 선행 바이트와 후행 바이트의 `CString` 바이트를 확인할 수 있습니다. C 런타임 라이브러리는이를 결정 하는 데 도움이 되는 함수를 제공 합니다.
 
-Dbcs에서 지정 된 문자열은 싱글바이트 ANSI 문자만, 모든 더블 바이트 문자 또는 두의 조합을 포함할 수 있습니다. 이러한 가능성에 문자열을 구문 분석할 때는 특별히 주의 해야 합니다. 여기에 `CString` 개체입니다.
+DBCS에서 지정 된 문자열은 모든 싱글바이트 ANSI 문자, 모든 더블 바이트 문자 또는 둘의 조합을 포함할 수 있습니다. 이러한 가능성을 위해서는 문자열을 구문 분석할 때 특히 주의 해야 합니다. 여기에 `CString` 는 개체가 포함 됩니다.
 
 > [!NOTE]
-> MFC의 유니코드 문자열 serialization 실행 중인 응용 프로그램의 버전에 관계 없이 유니코드와 MBCS 문자열을 읽을 수 있습니다. 데이터 파일은 프로그램의 유니코드 및 MBCS 버전 간에 이식 가능 합니다.
+> MFC의 유니코드 문자열 serialization은 실행 중인 응용 프로그램의 버전에 관계 없이 유니코드 및 MBCS 문자열을 모두 읽을 수 있습니다. 데이터 파일은 프로그램의 유니코드 및 MBCS 버전 간에 이식 가능 합니다.
 
-`CString` 특별 한 "일반 텍스트" 버전의 C 런타임 함수, 호출을 사용 하 여 멤버 함수 또는 유니코드 인식 함수를 사용 합니다. 따라서 예를 들어 경우는 `CString` 함수를 호출 하는 `strcmp`, 해당 일반 텍스트 함수를 호출 `_tcscmp` 대신 합니다. _UNICODE 및 _MBCS 기호를 정의 하는 방법에 따라 `_tcscmp` 다음과 같이 매핑합니다.
+`CString`멤버 함수는 호출 하는 C 런타임 함수의 특수 "일반 텍스트" 버전을 사용 하거나 유니코드 인식 함수를 사용 합니다. 따라서 예를 들어 `CString` 함수가 일반적으로를 호출 `strcmp`하는 경우 해당 제네릭 텍스트 함수 `_tcscmp` 를 대신 호출 합니다. _UNICODE 기호를 정의 `_tcscmp` 하는 방법에 따라 다음과 같이 매핑됩니다.
 
 |||
 |-|-|
 |_MBCS 정의됨|`_mbscmp`|
 |_UNICODE 정의됨|`wcscmp`|
-|어떤 기호도 정의|`strcmp`|
+|기호가 정의 되지 않았습니다.|`strcmp`|
 
 > [!NOTE]
-> _UNICODE 및 _MBCS 기호를은 상호 배타적입니다.
+> _MBCS 및 _UNICODE 기호는 함께 사용할 수 없습니다.
 
-에 설명 되어 모든 런타임 문자열 처리 루틴에 대 한 일반 텍스트 함수 매핑을 [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)합니다. 목록에 대해서 [국제화](../c-runtime-library/internationalization.md)합니다.
+모든 런타임 문자열 처리 루틴에 대 한 일반 텍스트 함수 매핑은 [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)에 설명 되어 있습니다. 목록은 [국제화](../c-runtime-library/internationalization.md)를 참조 하세요.
 
-마찬가지로, `CString` 메서드는 제네릭 데이터 형식 매핑을 사용 하 여 구현 됩니다. 모두 MBCS 및 유니코드를 사용 하려면 MFC 사용에 대 한 TCHAR **char** 또는 `wchar_t`에 대 한 LPTSTR **char** <strong>\*</strong> 또는 `wchar_t*`, 및 LPCTSTR 에대한**const char** <strong>\*</strong> 또는 `const wchar_t*`합니다. 이러한 MBCS 또는 유니코드 중 하나에 대 한 올바른 매핑을 확인 하십시오.
+`CString` 마찬가지로 메서드는 제네릭 데이터 형식 매핑을 사용 하 여 구현 됩니다. MBCS와 유니코드를 모두 사용 하기 위해 MFC는 **char** 또는 `wchar_t`에 대해 tchar.h를 사용 하 `wchar_t*`고 **char** <strong>\*</strong> 또는에 대해 LPTSTR를 `const wchar_t*`사용 하 고 **const char** <strong>\*</strong> 또는에 LPCTSTR를 사용 합니다. MBCS 또는 유니코드에 대 한 올바른 매핑을 보장 합니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -1,14 +1,14 @@
 ---
 title: 링커 속성 페이지
-ms.date: 7/24/2019
+ms.date: 07/24/2019
 ms.topic: article
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
-ms.openlocfilehash: 17880d50ae012b640cb83f3766883ab2b1bcbe73
-ms.sourcegitcommit: 7b039b5f32f6c59be6c6bb1cffafd69c3bfadd35
+ms.openlocfilehash: 55fcefd826ec6ecb153adad495e21ce97aa432f1
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537587"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927710"
 ---
 # <a name="linker-property-pages"></a>링커 속성 페이지
 
@@ -48,7 +48,7 @@ ms.locfileid: "68537587"
 
 ### <a name="ignore-import-library"></a>가져오기 라이브러리 무시
 
-이 속성은 이 빌드에서 생성된 .lib 출력을 종속 프로젝트에 연결하지 않도록 링커에 지시합니다. 이렇게 하면 프로젝트 시스템이 빌드될 때 .lib 파일을 생성하지 않는.dll 파일을 처리할 수 있습니다. 프로젝트가 DLL을 생성하는 다른 프로젝트에 종속되는 경우 프로젝트 시스템은 해당 하위 프로젝트에서 생성한 .lib 파일을 자동으로 연결합니다. COM DLL 또는 리소스 전용 DLL을 생성하는 프로젝트에서는 이 기능이 필요하지 않을 수 있습니다. 이러한 DLL에는 의미 있는 내보내기가 없습니다. DLL에 내보내기가 없는 경우 링커는 .lib 파일을 생성하지 않습니다. 디스크에 내보내기 .lib 파일이 없는 경우 프로젝트 시스템에서 링커에게 이 (누락된) DLL로 연결하도록 지시하면 연결이 실패합니다. 이 문제를 해결하려면 **가져오기 라이브러리 무시** 속성을 사용하세요. **예**로 설정하면 프로젝트 시스템이 해당 .lib 파일의 유무를 무시하고, 이 프로젝트에 종속된 모든 프로젝트가 존재하지 않는 .lib 파일과 연결되지 않도록 합니다.
+이 속성은 이 빌드에서 생성된 .lib 출력을 종속 프로젝트에 연결하지 않도록 링커에 지시합니다. 프로젝트 시스템에서 빌드할 때 .lib 파일을 생성 하지 않는 .dll 파일을 처리할 수 있습니다. 프로젝트가 DLL을 생성하는 다른 프로젝트에 종속되는 경우 프로젝트 시스템은 해당 하위 프로젝트에서 생성한 .lib 파일을 자동으로 연결합니다. COM Dll 또는 리소스 전용 Dll을 생성 하는 프로젝트에서는 이러한 Dll이 의미 있는 내보내기를 포함 하지 않으므로이 속성은 필요 하지 않을 수 있습니다. DLL에 내보내기가 없는 경우 링커는 .lib 파일을 생성 하지 않습니다. 내보내기 .lib 파일이 없고 프로젝트 시스템에서 링커가 누락 된 DLL과 연결 하도록 지시 하면 링크가 실패 합니다. 이 문제를 해결하려면 **가져오기 라이브러리 무시** 속성을 사용하세요. **예**로 설정 되 면 프로젝트 시스템은 .lib 파일이 있는지 여부를 무시 하 고이 프로젝트에 종속 된 모든 프로젝트가 존재 하지 않는 .lib 파일에 연결 되지 않도록 합니다.
 
 프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary%2A>을 참조하세요.
 
@@ -60,7 +60,7 @@ ms.locfileid: "68537587"
 
 ### <a name="per-user-redirection"></a>사용자별 리디렉션
 
-Visual Studio의 등록은 일반적으로 HKEY_CLASSES_ROOT(HKCR)에서 수행되었습니다. Windows Vista 이상의 운영 체제에서 HKCR에 액세스하려면 Visual Studio를 승격된 모드로 실행해야 합니다. 개발자가 승격된 모드로 실행하는 것이 항상 좋은 것은 아니지만 계속 등록 작업을 수행해야 합니다. 사용자별 리디렉션을 사용하면 이 모드에서 실행하지 않고도 등록할 수 있습니다.
+Visual Studio의 등록은 일반적으로 HKEY_CLASSES_ROOT(HKCR)에서 수행되었습니다. Windows Vista 이상의 운영 체제에서 HKCR에 액세스하려면 Visual Studio를 승격된 모드로 실행해야 합니다. 개발자는 항상 관리자 모드에서 실행 하는 것은 아니지만 등록을 계속 사용 해야 합니다. 사용자 단위 리디렉션은 관리자 모드로 실행 하지 않고도 등록할 수 있습니다.
 
 사용자별 리디렉션은 HKCR에 대한 모든 쓰기가 HKEY\_CURRENT\_USER(HKCU)로 리디렉션되도록 합니다. 사용자별 리디렉션이 해제되어 있는 경우 프로그램이 HKCR에 쓰려고 할 때 [프로젝트 빌드 오류 PRJ0050](../../error-messages/tool-errors/project-build-error-prj0050.md)이 발생할 수 있습니다.
 
@@ -70,13 +70,13 @@ Visual Studio의 등록은 일반적으로 HKEY_CLASSES_ROOT(HKCR)에서 수행�
 
 ### <a name="link-library-dependencies"></a>라이브러리 종속성 링크
 
-종속 프로젝트에서 생성한 .lib 파일을 연결할지 여부를 지정합니다. 일반적으로, .lib 파일에 연결하는 것이 좋지만 특정 DLL의 경우는 그렇지 않을 수 있습니다.
+종속 프로젝트에서 생성한 .lib 파일을 연결할지 여부를 지정합니다. 일반적으로 .lib 파일에 연결 하려고 하지만 특정 Dll의 경우가 아닐 수 있습니다.
 
-파일 이름과 상대 경로를 제공하여 .obj 파일을 지정할 수도 있습니다(예: "..\\..\MyLibProject\MyObjFile.obj"). 미리 컴파일된 헤더(예: pch.h)가 .obj 파일의 소스 코드에 포함되어 있는 경우 pch.obj 파일은 MyObjFile.obj와 같은 폴더에 위치하게 되고 pch.obj를 추가 종속성으로 추가해야 합니다.
+파일 이름과 상대 경로를 제공하여 .obj 파일을 지정할 수도 있습니다(예: "..\\..\MyLibProject\MyObjFile.obj"). .Obj 파일의 소스 코드에서 미리 컴파일된 헤더 (예: .pch. h)를 #includes 하는 경우 pch .obj 파일은 MyObjFile .obj와 동일한 폴더에 있습니다. 또한 추가 종속성으로 .pch .obj를 추가 해야 합니다.
 
 ### <a name="use-library-dependency-inputs"></a>라이브러리 종속성 입력 사용
 
-프로젝트 종속성의 라이브러리 출력에 링크할 때 라이브러리 파일 자체가 아닌 라이브러리 관리자 도구에 대 한 입력을 사용할지 여부를 지정 합니다. 대규모 프로젝트에서 종속 프로젝트가 .lib 파일을 생성하면 증분 연결은 사용할 수 없습니다. .lib 파일을 생성하는 많은 종속 프로젝트가 있는 경우 애플리케이션을 빌드하는 데 오랜 시간이 걸릴 수 있습니다. 이 속성을 **예**로 설정하면 프로젝트 시스템은 종속 프로젝트에서 생성한 .lib 파일에 .obj 파일을 연결하여 증분 연결을 사용할 수 있습니다.
+프로젝트 종속성의 라이브러리 출력에 링크할 때 라이브러리 파일 자체가 아닌 라이브러리 관리자 도구에 대 한 입력을 사용할지 여부를 지정 합니다. 대규모 프로젝트에서 종속 프로젝트가 .lib 파일을 생성하면 증분 연결은 사용할 수 없습니다. .lib 파일을 생성하는 많은 종속 프로젝트가 있는 경우 애플리케이션을 빌드하는 데 오랜 시간이 걸릴 수 있습니다. 이 속성이 **예**로 설정 되 면 프로젝트 시스템이 종속 프로젝트에서 생성 한 .lib 파일의 .obj 파일에 연결 되므로 증분 링크를 사용할 수 있습니다.
 
 **일반** 링커 속성 페이지에 액세스 하는 방법에 대 한 자세한 [내용은 C++ Visual Studio에서 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조 하세요.
 
@@ -84,7 +84,7 @@ Visual Studio의 등록은 일반적으로 HKEY_CLASSES_ROOT(HKCR)에서 수행�
 
 링커가 완료 된 링크 비율을 표시 하는 진행률 표시기를 표시 해야 하는지 여부를 지정 합니다. 기본적으로이 상태 정보는 표시 되지 않습니다. ([/LTCG](ltcg-link-time-code-generation.md): STATUS | LTCG: NOSTATUS)
 
-### <a name="prevent-dll-binding"></a>Dll 바인딩 방지
+### <a name="prevent-dll-binding"></a>DLL 바인딩 방지
 
 [/Allowbind](allowbind-prevent-dll-binding.md): NO는 DLL의 헤더에 비트를 설정 합니다 .이 비트는 이미지를 바인딩할 수 없음을 나타냅니다. 바인딩이 서명을 무효화하므로 디지털 서명된 경우 DLL을 바인딩하지 않으려고 할 수 있습니다.
 
@@ -99,7 +99,7 @@ Visual Studio의 등록은 일반적으로 HKEY_CLASSES_ROOT(HKCR)에서 수행�
 **시**
 
 - **사용** -/force 인수 없이 multiple 및 확인 되지 않음을 모두 의미 합니다.
-- **곱하기 정의 된 기호만** -출력 파일을 만들기 위해/FORCE: MULTIPLE을 사용 합니다.
+- **정의 된 기호만 곱하기** -LINK에서 기호에 대 한 정의를 둘 이상 발견 하는 경우에도/FORCE: MULTIPLE을 사용 하 여 출력 파일을 만듭니다.
 - **정의 되지 않은 기호만** 해당-/FORCE: 확인할 수 없음을 사용 하 여 출력 파일을 만듭니다. LINK에서 정의 되지 않은 기호를 찾는 지 여부입니다. /FORCE: 진입점 기호를 확인할 수 없는 경우 확인 되지 않은가 무시 됩니다.
 
 ### <a name="create-hot-patchable-image"></a>핫 패치 가능한 이미지 만들기
@@ -129,7 +129,7 @@ Visual Studio의 등록은 일반적으로 HKEY_CLASSES_ROOT(HKCR)에서 수행�
 
 ### <a name="ignore-specific-default-libraries"></a>특정 기본 라이브러리 무시
 
-무시할 기본 라이브러리의 이름을 하나 이상 지정 합니다. 여러 라이브러리를 세미콜론으로 구분 합니다. (/NODEFAULTLIB: [name, name, ...])
+무시할 하나 이상의 기본 라이브러리 이름을 지정합니다. 여러 라이브러리를 세미콜론으로 구분 합니다. (/NODEFAULTLIB: [name, name, ...])
 
 ### <a name="module-definition-file"></a>모듈 정의 파일
 
@@ -276,11 +276,11 @@ Visual Studio의 등록은 일반적으로 HKEY_CLASSES_ROOT(HKCR)에서 수행�
 
 ### <a name="swap-run-from-cd"></a>CD에서 스왑 실행
 
-[/Swrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrap](swaprun-load-linker-output-to-swap-file.md) 이는 Windows NT 4.0 이상의 기능입니다. **CD** 를 지정 하면 운영 체제에서 이동식 디스크의 이미지를 페이지 파일로 복사한 다음 로드 합니다.
+[/Swrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrap](swaprun-load-linker-output-to-swap-file.md) 이 옵션은 Windows NT 4.0 이상 버전의 기능입니다. **CD** 를 지정 하면 운영 체제에서 이동식 디스크의 이미지를 페이지 파일로 복사한 다음 로드 합니다.
 
 ### <a name="swap-run-from-network"></a>네트워크에서 스왑 실행
 
-[/Swrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrap](swaprun-load-linker-output-to-swap-file.md) 이는 Windows NT 4.0 이상의 기능입니다. **NET** 이 지정 된 경우 운영 체제는 먼저 네트워크에서 스왑 파일로 이진 이미지를 복사 하 고 여기에서 로드 합니다. 이 옵션은 네트워크를 통해 응용 프로그램을 실행 하는 데 유용 합니다.
+[/Swrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrap](swaprun-load-linker-output-to-swap-file.md) 이 옵션은 Windows NT 4.0 이상 버전의 기능입니다. **NET** 이 지정 된 경우 운영 체제는 먼저 네트워크에서 스왑 파일로 이진 이미지를 복사 하 고 여기에서 로드 합니다. 이 옵션은 네트워크를 통해 응용 프로그램을 실행 하는 데 유용 합니다.
 
 ### <a name="driver"></a>드라이버
 
@@ -297,11 +297,11 @@ Visual Studio의 등록은 일반적으로 HKEY_CLASSES_ROOT(HKCR)에서 수행�
 
 ### <a name="references"></a>참조 항목
 
-[/Opt](opt-optimizations.md): REF는 참조 되지 않는 함수 및/또는 데이터를 제거 합니다./opt: 없음 ef는 참조 되지 않는 함수 및/또는 데이터를 유지 합니다. 
+[/Opt](opt-optimizations.md): REF는 참조 되지 않는 함수 및/또는 데이터를 참조 하지 않는 반면/opt: 없음 ef는 참조 되지 않는 함수 및/또는 데이터를 유지 합니다.
 
 ### <a name="enable-comdat-folding"></a>COMDAT 정리 사용
 
-[/Opt](opt-optimizations.md): ICF\[= 반복]을 사용 하 여 동일한 COMDAT 정리를 수행 합니다. 
+[/Opt](opt-optimizations.md): ICF\[= 반복]을 사용 하 여 동일한 COMDAT 정리를 수행 합니다.
 
 ### <a name="function-order"></a>함수 순서
 
