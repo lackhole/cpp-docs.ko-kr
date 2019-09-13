@@ -1,15 +1,15 @@
 ---
 title: 이벤트 맵
-ms.date: 06/20/2018
+ms.date: 09/07/2019
 helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
-ms.openlocfilehash: ef730574b26a4c3619df886b72770ce7e035a40e
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 34741dc05efe77c0932343739540370f54db6008
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916461"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907902"
 ---
 # <a name="event-maps"></a>이벤트 맵
 
@@ -21,7 +21,7 @@ MFC 라이브러리는 이벤트를 발생 시키는 데 최적화 된 프로그
 
 매크로 `EVENT_STOCK_CLICK` 는 컨트롤에서 마우스 클릭을 검색할 때마다 스톡 click 이벤트를 발생 시 고 함을 나타냅니다. 다른 스톡 이벤트의 자세한 목록은 ActiveX 컨트롤 문서 [를 참조 하세요. 이벤트](../../mfc/mfc-activex-controls-events.md). 매크로를 사용 하 여 사용자 지정 이벤트를 나타낼 수도 있습니다.
 
-이벤트 맵 매크로는 중요 하지만 일반적으로 직접 삽입 하지는 않습니다. 이는 이벤트 발생 함수를 이벤트에 연결 하는 데 사용 하는 경우 속성 창가 소스 파일에 이벤트 맵 항목을 자동으로 만들기 때문입니다. 언제 든 지 이벤트 맵 항목을 편집 하거나 추가 하려면 속성 창를 사용할 수 있습니다.
+이벤트 맵 매크로는 중요 하지만 일반적으로 직접 삽입 하지는 않습니다. 이는 이벤트 발생 함수를 이벤트에 연결 하는 데 사용 하는 경우 **속성** 창 ( **클래스 뷰**)이 자동으로 소스 파일에 이벤트 맵 항목을 만들기 때문입니다. 언제 든 지 이벤트 맵 항목을 편집 하거나 추가 하려면 **속성** 창을 사용할 수 있습니다.
 
 이벤트 맵을 지원 하기 위해 MFC는 다음 매크로를 제공 합니다.
 
@@ -126,7 +126,7 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 
 ### <a name="remarks"></a>설명
 
-*VtsParams* 매개 변수는 `VTS_` 상수에서 공백으로 구분 된 값 목록입니다. 공백으로 구분 된 이러한 값 중 하나 이상 (쉼표 아님)은 함수의 매개 변수 목록을 지정 합니다. 예를 들어:
+*VtsParams* 매개 변수는 `VTS_` 상수에서 공백으로 구분 된 값 목록입니다. 공백으로 구분 된 이러한 값 중 하나 이상 (쉼표 아님)은 함수의 매개 변수 목록을 지정 합니다. 예:
 
 [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/cpp/event-maps_2.cpp)]
 

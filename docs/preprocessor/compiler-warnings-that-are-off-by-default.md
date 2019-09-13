@@ -6,10 +6,10 @@ helpviewer_keywords:
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ms.openlocfilehash: a8b203c94d4a5af28837627fda1b8e1631dfb0c0
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.sourcegitcommit: 7babce70714242cf498ca811eec3695fad3abd03
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
+ms.lasthandoff: 09/11/2019
 ms.locfileid: "70220493"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>기본적으로 해제되어 있는 컴파일러 경고
@@ -70,7 +70,7 @@ ms.locfileid: "70220493"
 |[C4437](../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md) (수준 4)|가상 기본 '*class1*'에서 '*class2*' 까지의 dynamic_cast가 일부 컨텍스트에서 실패할 수 있습니다.|
 |C4444 (수준 3)|이 컨텍스트에서는 최상위 '__unaligned'가 구현되지 않았습니다.|
 |[C4464](../error-messages/compiler-warnings/c4464.md) (수준 4)|상대 포함 경로에 '.. '가 포함 되어 있습니다.|
-|[C4471](../error-messages/compiler-warnings/compiler-warning-level-4-c4471.md) (수준 4)|범위가 없는 열거형의 전방 선언에는 기본 형식 (int로 가정)이 <sup></sup> 있어야 합니다.|
+|[C4471](../error-messages/compiler-warnings/compiler-warning-level-4-c4471.md) (수준 4)|범위가 없는 열거형의 전방 선언에는 기본 형식 (int로 <sup>가정)이</sup> 있어야 합니다.|
 |4472 (수준 1)|'*identifier*'는 네이티브 열거형입니다. 관리 되는 열거형을 선언 하려면 액세스 지정자 (전용/공용)를 추가 하세요.|
 |[C4514](../error-messages/compiler-warnings/compiler-warning-level-4-c4514.md) (수준 4)|'*function*': 참조 되지 않은 인라인 함수를 제거 했습니다.|
 |[C4536](../error-messages/compiler-warnings/compiler-warning-level-4-c4536.md) (수준 4)|' type name ': 형식-이름이 메타 데이터 한계인 '*limit*' 자를 초과 합니다.|
@@ -90,7 +90,7 @@ ms.locfileid: "70220493"
 |않습니다 (수준 1)|'*anonymous_structure*': 동작 변경: 소멸자가 더 이상 암시적으로 호출 되지 않습니다.|
 |[C4596](../error-messages/compiler-warnings/c4596.md) (수준 4)|'*identifier*': 멤버 선언 <sup>14.3</sup> <sup>Perm</sup> 의 정규화 된 이름이 잘못 되었습니다.|
 |C4598 (수준 1 및 수준 3)|' #include "*헤더*" ': 미리 컴파일된 헤더의 헤더 번호 *번호가* <sup>14.3</sup> 위치에서 현재 컴파일과 일치 하지 않습니다.|
-|C4599 (수준 3)|'*option* *path*': 명령줄 인수 번호는 미리 컴파일된 헤더 <sup>14.3</sup> 과 일치 하지 않습니다.|
+|C4599 (수준 3)|'*option* *path*': 명령줄 인수 번호는 미리 컴파일된 헤더 <sup>14.3</sup> 과 일치 *하지 않습니다.*|
 |C4605 (수준 1)|'/D*macro*'은 (는) 현재 명령줄에서 지정 되었지만 미리 컴파일된 헤더를 빌드할 때 지정 되지 않았습니다.|
 |[C4608](../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md) (수준 3)|'*union_member*'는 이미 이니셜라이저 목록의 다른 공용 구조체 멤버 '*union_member*' <sup>Perm</sup> 에서 초기화 되었습니다.|
 |[C4619](../error-messages/compiler-warnings/compiler-warning-level-3-c4619.md) (수준 3)|#pragma 경고: 경고 번호 '*number*'가 없습니다.|
@@ -119,7 +119,7 @@ ms.locfileid: "70220493"
 |[C4820](../error-messages/compiler-warnings/compiler-warning-level-4-c4820.md) (수준 4)|'*member_name*' 생성 후 '*바이트*' 바이트 패딩 추가|
 | [C4822](../error-messages/compiler-warnings/compiler-warning-level-1-c4822.md) (수준 1) | '*member*': 지역 클래스 멤버 함수에 본문이 없습니다. |
 |C4826 (수준 2)|'*Type1*'에서 '*type2*' (으)로의 변환이 부호 확장 되었습니다. 이로 인해 예기치 않은 런타임 동작이 발생할 수 있습니다.|
-|C4837 (수준 4)|검색 된 삼중 자: '?? ' character '로 바뀐 *문자*|
+|C4837 (수준 4)|검색 된 삼중 자: '?? '*character '로*바뀐 *문자*|
 |C4841 (수준 4)|비표준 확장이 사용 됨: offsetof에 사용 되는 복합 멤버 지정자|
 |C4842 (수준 4)|여러 상속을 사용 하는 형식에 적용 된 ' offsetof '의 결과가 컴파일러 릴리스 간에 일치 하지 않을 수 있습니다.|
 |[C4868](../error-messages/compiler-warnings/compiler-warning-c4868.md) (수준 4)|'_file_(*line_number*) ' 컴파일러는 중괄호로 묶인 초기화 목록에서 왼쪽에서 오른쪽으로 계산 순서를 적용할 수 없습니다.|

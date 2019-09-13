@@ -1,6 +1,6 @@
 ---
 title: rand
-ms.date: 1/02/2018
+ms.date: 01/02/2018
 apiname:
 - rand
 apilocation:
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - rand function
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: 868c6239ac1b86dfc9ac72cc8cc83d1ba3002b4a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 407640c5f00ae54c43450abcbbe8c2e3ba0fcf95
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357774"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927524"
 ---
 # <a name="rand"></a>rand
 
-잘 알려진을 완벽 하 게 재현할 수 있는 알고리즘을 사용 하 여 난수를 생성 합니다. 이 함수를 프로그래밍 방식으로 더 안전한 버전을 사용할 수 있습니다. 참조 [rand_s](rand-s.md)합니다. 생성 된 번호 **rand** 암호로 보호 되지 않습니다. 추가 난수 생성 암호화 된 보안을 사용 하 여 [rand_s](rand-s.md) 선언 된 함수 또는 C++ 의 표준 라이브러리 [ \<임의 >](../../standard-library/random.md).
+잘 알려져 있고 완전히 재현 가능한 알고리즘을 사용 하 여 의사 난수를 생성 합니다. 이 함수의 프로그래밍 방식으로 안전한 버전을 사용할 수 있습니다. [rand_s](rand-s.md)를 참조 하세요. **Rand** 로 생성 된 숫자는 암호화 보안이 유지 되지 않습니다. 보다 강력한 암호화 보안 난수 생성을 위해 [rand_s](rand-s.md) 또는 C++ [ \<임의 >](../../standard-library/random.md)표준 라이브러리에 선언 된 함수를 사용 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,13 +45,13 @@ int rand( void );
 
 ## <a name="return-value"></a>반환 값
 
-**rand** 위에서 설명한 대로 의사 난수를 반환 합니다. 반환되는 오류가 없습니다.
+**rand** 는 위에서 설명한 대로 의사 난수를 반환 합니다. 반환되는 오류가 없습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **rand** 0 범위의 의사 난수 정수를 반환 하는 함수 **RAND_MAX** (32767). 사용 된 [srand](srand.md) 함수를 호출 하기 전에 의사 난수 생성기의 초기값 **rand**합니다.
+**Rand** 함수는 0 ~ **RAND_MAX** (32767) 범위의 의사 난수 정수를 반환 합니다. **Rand**를 호출 하기 전에 [srand](srand.md) 함수를 사용 하 여 의사 (pseudo) 번호 생성기를 초기값으로 사용 합니다.
 
-합니다 **rand** 함수는 잘 알려진 시퀀스를 생성 하 고 암호화 함수로 사용에 적합 하지 않습니다. 추가 난수 생성 암호화 된 보안을 사용 하 여 [rand_s](rand-s.md) 선언 된 함수 또는 C++ 의 표준 라이브러리 [ \<임의 >](../../standard-library/random.md). 무엇이 잘못 된에 대 한 자세한 **rand** 방법과 \<임의 >이 비디오를 받을 참조 이러한 문제를 해결 [rand 간주 해로운](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful)합니다.
+**Rand** 함수는 잘 알려진 시퀀스를 생성 하며 암호화 함수로 사용 하기에 적합 하지 않습니다. 보다 강력한 암호화 보안 난수 생성을 위해 [rand_s](rand-s.md) 또는 C++ [ \<임의 >](../../standard-library/random.md)표준 라이브러리에 선언 된 함수를 사용 합니다. **Rand** 에서 발생 하는 문제 및 임의 > 이러한 \<단점을 해결 하는 방법에 대 한 자세한 내용은이 비디오에서 [위험한 것으로 간주](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful)되는 항목을 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

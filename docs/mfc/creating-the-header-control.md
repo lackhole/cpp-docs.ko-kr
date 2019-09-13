@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], creating
 - header controls [MFC], creating
 ms.assetid: 7864d9d2-4a2c-4622-b58b-7b110a1e28d2
-ms.openlocfilehash: 99269214666c324214422ad989dbbd8bff6fc345
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 22739e5671fb0300011de84d976eff0ce26eaedb
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69508816"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907582"
 ---
 # <a name="creating-the-header-control"></a>헤더 컨트롤 만들기
 
@@ -24,7 +24,7 @@ ms.locfileid: "69508816"
 
 1. 헤더 컨트롤에 항목을 추가 합니다.
 
-1. 처리 해야 하는 헤더 제어 알림 메시지에 대 한 대화 상자 클래스에서 처리기 함수를 매핑하려면 속성 창를 사용 합니다 ( [메시지를 함수에 매핑](../mfc/reference/mapping-messages-to-functions.md)참조).
+1. [클래스 마법사](reference/mfc-class-wizard.md) 를 사용 하 여 처리 해야 하는 헤더 제어 알림 메시지에 대 한 대화 상자 클래스의 처리기 함수를 매핑할 수 있습니다 ( [메시지를 함수에 매핑](../mfc/reference/mapping-messages-to-functions.md)참조).
 
 ### <a name="to-put-a-header-control-in-a-view-not-a-clistview"></a>뷰에 헤더 컨트롤을 배치 하려면 (CListView 아님)
 
@@ -34,7 +34,7 @@ ms.locfileid: "69508816"
 
 1. 헤더 컨트롤에 항목을 추가 합니다.
 
-1. 속성 창를 사용 하 여 처리 해야 하는 헤더 제어 알림 메시지에 대 한 뷰 클래스의 처리기 함수를 매핑할 수 있습니다 ( [메시지를 함수에 매핑](../mfc/reference/mapping-messages-to-functions.md)참조).
+1. [클래스 마법사](reference/mfc-class-wizard.md) 를 사용 하 여 처리 해야 하는 헤더 제어 알림 메시지에 대 한 뷰 클래스의 처리기 함수를 매핑할 수 있습니다 ( [메시지를 함수에 매핑](../mfc/reference/mapping-messages-to-functions.md)참조).
 
 두 경우 모두 뷰 또는 대화 상자 개체를 만들 때 포함 된 컨트롤 개체가 만들어집니다. 그런 다음 [CHeaderCtrl:: create](../mfc/reference/cheaderctrl-class.md#create) 를 호출 하 여 컨트롤 창을 만들어야 합니다. 컨트롤을 배치 하려면 [CHeaderCtrl:: Layout](../mfc/reference/cheaderctrl-class.md#layout) 을 호출 하 여 컨트롤의 초기 크기와 위치를 결정 하 고 [setwindowpos](../mfc/reference/cwnd-class.md#setwindowpos) 를 설정 하 여 원하는 위치를 설정 합니다. 그런 다음 [헤더 컨트롤에 항목 추가](../mfc/adding-items-to-the-header-control.md)에 설명 된 대로 항목을 추가 합니다.
 

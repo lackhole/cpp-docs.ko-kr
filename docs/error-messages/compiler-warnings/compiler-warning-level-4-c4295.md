@@ -1,27 +1,27 @@
 ---
 title: 컴파일러 경고(수준 4) C4295
-ms.date: 1/09/2018
+ms.date: 01/09/2018
 f1_keywords:
 - C4295
 helpviewer_keywords:
 - C4295
 ms.assetid: 20dbff85-9f62-4ca3-8fe9-079d4512006d
-ms.openlocfilehash: ed31ea19f9c36a9c6fab7452a4bfc3843a151059
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e8b546e4eb4b60197db504382b3230e779b1dec
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400879"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70924846"
 ---
 # <a name="compiler-warning-level-4-c4295"></a>컴파일러 경고(수준 4) C4295
 
-> '*배열*': 배열이 너무 작아서 null 종결 문자를 포함 합니다.
+> '*array*': 배열이 너무 작아서 null 종결 문자를 포함할 수 없습니다.
 
-배열 초기화 되었지만 배열에서 마지막 문자를 null 아닙니다. 문자열 배열에 액세스 하면 예기치 않은 결과가 발생할 수 있습니다.
+배열이 초기화 되었지만 배열의 마지막 문자는 null이 아닙니다. 배열에 문자열로 액세스 하면 예기치 않은 결과가 발생할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C4295를 생성합니다. 이 문제를 해결 하려면 선언할 수 있습니다 배열 크기를 저장할 더 큰 이니셜라이저 문자열에서 종결 null 배열을이 의도 암호화 되도록 배열 이니셜라이저 목록을 사용할 수 `char`, null 종료 문자열이 아닙니다.
+다음 샘플에서는 C4295를 생성 합니다. 이 문제를 해결 하려면 배열 크기를 더 크게 선언 하거나, 이니셜라이저 문자열에서 종료 null을 보유 하거나, 배열 이니셜라이저 목록을 사용 하 여 null로 끝나는 문자열이 아닌의 `char`배열인 의도를 명확 하 게 만들 수 있습니다.
 
 ```C
 // C4295.c

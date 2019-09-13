@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: 58c7fed2d6e95967101e98589a13c114fe2e9a8a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 525fc01247053a1e2bc993398978cb332262a1a5
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496646"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927777"
 ---
 # <a name="composite-control-global-functions"></a>복합 컨트롤 전역 함수
 
@@ -156,18 +156,18 @@ ATLAPI AtlAxCreateControl(
 *lpszName*<br/>
 컨트롤에 전달 되는 문자열에 대 한 포인터입니다. 다음 방법 중 하나로 형식을 지정 해야 합니다.
 
-- ProgID (예: "MSCAL") Calendar. 7 "
+- 와 같은 ProgID`"MSCAL.Calendar.7"`
 
-- "{8E27C92B-1264-101C-8A2F-040224009C02}"와 같은 CLSID
+- 와 같은 CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- 와 같은 URL "<http://www.microsoft.com>"
+- URL (예:)`"<https://www.microsoft.com>"`
 
-- 활성 문서에 대 한 참조 (예: "\\file://\documents\mydoc.doc")
+- 과 같은 활성 문서에 대 한 참조입니다.`"file://\\\Documents\MyDoc.doc"`
 
-- "\<MSHTML: html >\<본문 > 같은 html 조각입니다 .이 코드는 텍스트\</본문 >\</body >"입니다.
+- 와 같은 HTML의 조각`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:"은 MSHTML 스트림으로 지정 되도록 HTML 조각 앞에와 야 합니다.
+   > `"MSHTML:"`는 MSHTML 스트림으로 지정 되도록 HTML 조각 앞에와 야 합니다.
 
 *hWnd*<br/>
 진행 컨트롤이 연결 되는 창에 대 한 핸들입니다.
@@ -208,18 +208,18 @@ ATLAPI AtlAxCreateControlEx(
 *lpszName*<br/>
 컨트롤에 전달 되는 문자열에 대 한 포인터입니다. 다음 방법 중 하나로 형식을 지정 해야 합니다.
 
-- ProgID (예: "MSCAL") Calendar. 7 "
+- 와 같은 ProgID`"MSCAL.Calendar.7"`
 
-- "{8E27C92B-1264-101C-8A2F-040224009C02}"와 같은 CLSID
+- 와 같은 CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- 와 같은 URL "<http://www.microsoft.com>"
+- URL (예:)`"<https://www.microsoft.com>"`
 
-- 활성 문서에 대 한 참조 (예: "\\file://\documents\mydoc.doc")
+- 과 같은 활성 문서에 대 한 참조입니다.`"file://\\\Documents\MyDoc.doc"`
 
-- "\<MSHTML: html >\<본문 > 같은 html 조각입니다 .이 코드는 텍스트\</본문 >\</body >"입니다.
+- 와 같은 HTML의 조각`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:"은 MSHTML 스트림으로 지정 되도록 HTML 조각 앞에와 야 합니다.
+   > `"MSHTML:"`는 MSHTML 스트림으로 지정 되도록 HTML 조각 앞에와 야 합니다.
 
 *hWnd*<br/>
 진행 컨트롤이 연결 되는 창에 대 한 핸들입니다.
@@ -267,18 +267,18 @@ ATLAPI AtlAxCreateControlLic(
 *lpszName*<br/>
 컨트롤에 전달 되는 문자열에 대 한 포인터입니다. 다음 방법 중 하나로 형식을 지정 해야 합니다.
 
-- ProgID (예: "MSCAL") Calendar. 7 "
+- 와 같은 ProgID`"MSCAL.Calendar.7"`
 
-- "{8E27C92B-1264-101C-8A2F-040224009C02}"와 같은 CLSID
+- 와 같은 CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- 와 같은 URL "<http://www.microsoft.com>"
+- URL (예:)`"<https://www.microsoft.com>"`
 
-- 활성 문서에 대 한 참조 (예: "\\file://\documents\mydoc.doc")
+- 과 같은 활성 문서에 대 한 참조입니다.`"file://\\\Documents\MyDoc.doc"`
 
-- "\<MSHTML: html >\<본문 > 같은 html 조각입니다 .이 코드는 텍스트\</본문 >\</body >"입니다.
+- 와 같은 HTML의 조각`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:"은 MSHTML 스트림으로 지정 되도록 HTML 조각 앞에와 야 합니다.
+   > `"MSHTML:"`는 MSHTML 스트림으로 지정 되도록 HTML 조각 앞에와 야 합니다.
 
 *hWnd*<br/>
 컨트롤이 연결 되는 창에 대 한 핸들입니다.
@@ -321,18 +321,18 @@ ATLAPI AtlAxCreateControlLicEx(
 *lpszName*<br/>
 컨트롤에 전달 되는 문자열에 대 한 포인터입니다. 다음 방법 중 하나로 형식을 지정 해야 합니다.
 
-- ProgID (예: "MSCAL") Calendar. 7 "
+- 와 같은 ProgID`"MSCAL.Calendar.7"`
 
-- "{8E27C92B-1264-101C-8A2F-040224009C02}"와 같은 CLSID
+- 와 같은 CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- 와 같은 URL "<http://www.microsoft.com>"
+- URL (예:)`"<https://www.microsoft.com>"`
 
-- 활성 문서에 대 한 참조 (예: "\\file://\documents\mydoc.doc")
+- 과 같은 활성 문서에 대 한 참조입니다.`"file://\\\Documents\MyDoc.doc"`
 
-- "\<MSHTML: html >\<본문 > 같은 html 조각입니다 .이 코드는 텍스트\</본문 >\</body >"입니다.
+- 와 같은 HTML의 조각`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:"은 MSHTML 스트림으로 지정 되도록 HTML 조각 앞에와 야 합니다.
+   > `"MSHTML:"`는 MSHTML 스트림으로 지정 되도록 HTML 조각 앞에와 야 합니다.
 
 *hWnd*<br/>
 컨트롤이 연결 되는 창에 대 한 핸들입니다.
@@ -533,7 +533,7 @@ ATLAPI AtlGetObjectSourceInterface(
 `AtlGetObjectSourceInterface`는 해당 인터페이스를 설명 하는 형식 라이브러리의 LIBID 및 주 버전 번호와 함께 기본 소스 인터페이스의 인터페이스 ID를 제공할 수 있습니다.
 
 > [!NOTE]
->  이 함수에서 요청 된 정보를 성공적으로 검색 하려면 *punkObj* 로 표시 되는 개체 `IDispatch` 는를 구현 하 고을 `IDispatch::GetTypeInfo`통해 형식 정보를 반환 해야 합니다 `IProvideClassInfo2` . 또한 또는 를구현해야합니다`IPersist`. 원본 인터페이스에 대 한 형식 정보는의 `IDispatch`형식 정보와 동일한 형식 라이브러리에 있어야 합니다.
+>  이 함수에서 요청 된 정보를 성공적으로 검색 하려면 *punkObj* 로 표시 되는 개체 `IDispatch` 는를 구현 하 고을 `IDispatch::GetTypeInfo`통해 형식 정보를 반환 해야 합니다 `IProvideClassInfo2` . 또한 또는 를구현해야합니다.`IPersist`. 원본 인터페이스에 대 한 형식 정보는의 `IDispatch`형식 정보와 동일한 형식 라이브러리에 있어야 합니다.
 
 ### <a name="example"></a>예제
 

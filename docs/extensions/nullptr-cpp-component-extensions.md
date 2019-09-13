@@ -23,7 +23,7 @@ ms.locfileid: "65515638"
 
 **nullptr** 키워드는 Visual Basic의 **Nothing** 및 C#의 **null**에 해당합니다.
 
-## <a name="usage"></a>사용법
+## <a name="usage"></a>사용
 
 **nullptr** 키워드는 핸들, 네이티브 포인터 또는 함수 인수로 사용할 수 있는 곳이면 어디서나 사용할 수 있습니다.
 

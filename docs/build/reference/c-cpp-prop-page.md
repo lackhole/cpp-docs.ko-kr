@@ -1,14 +1,14 @@
 ---
 title: C/C++ 프로젝트 속성 (Visual Studio)
-ms.date: 7/18/2019
+ms.date: 07/18/2019
 ms.topic: article
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
-ms.openlocfilehash: 91edf30ef0e5f38088727c0280d2edf07cdebfa5
-ms.sourcegitcommit: 7b039b5f32f6c59be6c6bb1cffafd69c3bfadd35
+ms.openlocfilehash: 2f7fe025eb69fc1977713c638eef0742074bd9fb
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537568"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927744"
 ---
 # <a name="cc-property-pages"></a>C/C++ 속성 페이지
 
@@ -314,7 +314,7 @@ CVE 2017-5753에 대 한 스펙터 완화 [/Qspectre](qspectre.md)를 설정 합
 
 규칙 모드를 사용 하거나 사용 하지 않습니다. [/Permissive-](permissive-standards-conformance.md)를 설정 합니다.
 
-### <a name="treat-wchart-as-built-in-type"></a>WChar_t를 기본 제공 형식으로 처리
+### <a name="treat-wchar_t-as-built-in-type"></a>WChar_t를 기본 제공 형식으로 처리
 
 지정 된 경우에는 short가 __int16에 매핑되는 것과 같은 방식으로 __ 형식이 __wchar_t에 매핑되는 네이티브 형식이 됩니다. [/Zc: wchar_t](zc-wchar-t-wchar-t-is-native-type.md) 는 기본적으로 설정 되어 있습니다.
 

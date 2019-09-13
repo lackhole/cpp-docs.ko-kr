@@ -1,23 +1,23 @@
 ﻿---
 title: MFC 개념
-ms.date: 1/09/2018
+ms.date: 01/09/2018
 f1_keywords:
 - Concepts
-ms.openlocfilehash: 8d021350125acda52bb4ecf3919282cb7bbe52b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5617051dc700bb1dd594a13627c9e3d01ef9caa9
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62239027"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927912"
 ---
 # <a name="mfc-concepts"></a>MFC 개념
 
-이 섹션에서는 MFC(Microsoft Foundation Class) 라이브러리를 사용하여 프로그래밍하는 데 도움이 되는 개념 및 작업 기반 항목을 제공합니다.
+이 섹션에서는 MFC(Microsoft Foundation Class) 라이브러리를 사용하여 프로그래밍하는데 도움이 되는 개념 및 작업 기반 항목을 제공합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
 [일반적인 MFC 주제](../mfc/general-mfc-topics.md)<br/>
-MFC 라이브러리의 기술 세부 정보를 설명합니다.
+MFC 라이브러리의 기술 세부 정보에 대해 설명 합니다.
 
 [CObject 사용](../mfc/using-cobject.md)<br/>
 대부분의 MFC 클래스의 기반이 되는 `CObject`의 사용에 대한 링크를 제공합니다.
@@ -64,7 +64,7 @@ COM을 지원하도록 설계된 MFC의 하위 집합에 대하여 설명합니�
 Windows 소켓의 MFC 구현을 설명합니다.
 
 [MFC 참조](../mfc/mfc-desktop-applications.md)<br/>
-Windows API용으로 작성된 애플리케이션의 프레임워크인 애플리케이션 프레임워크를 구성하는 클래스 집합인 MFC 라이브러리에 대한 참조 자료를 제공합니다.
+Windows API용으로 작성된 응용 프로그램의 프레임워크인 응용 프로그램 프레임워크를 구성하는 클래스 집합인 MFC 라이브러리에 대한 참조자료를 제공합니다.
 
 [MFC 샘플](../overview/visual-cpp-samples.md)<br/>
 데스크톱 응용 프로그램, DLL, 데이터베이스 응용 프로그램, 컨트롤, 웹 응용 프로그램 등에서 MFC를 사용하는 방법을 보여주는 샘플에 대한 링크를 제공합니다.
