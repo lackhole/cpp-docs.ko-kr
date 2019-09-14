@@ -80,7 +80,7 @@ int maxValue;                // Not recommended! maxValue contains
 
 ## <a name="const-type-qualifier"></a>const 형식 한정자
 
-기본 제공 또는 사용자 정의 형식은 const 키워드로 정규화할 수 있습니다. 또한 멤버 함수는 **const**한정 될 수도 있고 **const**오버 로드도 될 수도 있습니다. **Const** 형식의 값은 초기화 한 후 수정할 수 없습니다.
+기본 제공 또는 사용자 정의 형식은 const 키워드로 정규화할 수 있습니다. 또한 멤버 함수는 **const**로 정규화될 수도 있고, **const**로 오버로드될 수도 있습니다. **const** 형식의 값은 초기화한 후 수정할 수 없습니다.
 
 ```cpp
 
