@@ -1,9 +1,9 @@
 ---
 title: _CrtGetAllocHook
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtGetAllocHook
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtGetAllocHook
 - _CrtGetAllocHook
@@ -22,14 +25,14 @@ helpviewer_keywords:
 - _CrtGetAllocHook function
 - CrtGetAllocHook function
 ms.assetid: 036acf7c-547a-4b3f-a636-80451070d7ed
-ms.openlocfilehash: b49c4cfc820a925187d0ea4d1562965295bea817
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 769621e92bf5f99f76f71b368a3b9a5cd0f79fd0
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339912"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942414"
 ---
-# <a name="crtgetallochook"></a>_CrtGetAllocHook
+# <a name="_crtgetallochook"></a>_CrtGetAllocHook
 
 C 런타임 디버그 메모리 할당 프로세스에 연결하기 위해 현재 클라이언트 정의 할당 함수를 검색합니다(디버그 버전에만 해당).
 
@@ -45,7 +48,7 @@ _CRT_ALLOC_HOOK _CrtGetAllocHook( void );
 
 ## <a name="remarks"></a>설명
 
-**_CrtGetAllocHook** C 런타임 디버그 라이브러리 메모리 할당 프로세스에 대 한 현재 응용 프로그램 클라이언트 정의 후크 함수를 검색 합니다.
+**_CrtGetAllocHook** 는 C 런타임 디버그 라이브러리 메모리 할당 프로세스에 대 한 현재 클라이언트 정의 응용 프로그램 후크 함수를 검색 합니다.
 
 다른 후크 가능 런타임 함수를 사용하고 고유한 클라이언트 정의 후크 함수를 작성하는 방법에 대한 자세한 내용은 [디버그 후크 함수 작성](/visualstudio/debugger/debug-hook-function-writing)을 참조하세요.
 

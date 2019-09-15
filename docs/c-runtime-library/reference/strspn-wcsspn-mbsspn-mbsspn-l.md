@@ -1,12 +1,12 @@
 ---
 title: strspn, wcsspn, _mbsspn, _mbsspn_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbsspn_l
 - wcsspn
 - strspn
 - _mbsspn
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ftcsspn
 - wcsspn
@@ -41,19 +44,19 @@ helpviewer_keywords:
 - mbsspn_l function
 - _tcsspn function
 ms.assetid: d077284a-809f-4068-959e-c6d6262677eb
-ms.openlocfilehash: dd3f27387fa180c7de9260e7cf8b7f6102915049
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8e65e466e95464dbd928ff0d80d975ce23fc180c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223120"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946751"
 ---
-# <a name="strspn-wcsspn-mbsspn-mbsspnl"></a>strspn, wcsspn, _mbsspn, _mbsspn_l
+# <a name="strspn-wcsspn-_mbsspn-_mbsspn_l"></a>strspn, wcsspn, _mbsspn, _mbsspn_l
 
 문자 집합에 속하지 않는 문자열의 첫 번째 문자 인덱스를 반환합니다.
 
 > [!IMPORTANT]
-> **_mbsspn** 하 고 **_mbsspn_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsspn** 및 **_mbsspn_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -90,13 +93,13 @@ Null 종료 문자 집합입니다.
 
 ## <a name="return-value"></a>반환 값
 
-부분 문자열의 길이 지정 하는 정수 값 반환 *str* 의 문자로 구성 된 *strCharSet*합니다. 하는 경우 *str* 에 없는 문자로 시작 *strCharSet*, 함수가 0을 반환 합니다.
+*Strcharset*의 문자로 완전히 구성 된 *str* 의 부분 문자열 길이를 지정 하는 정수 값을 반환 합니다. *Str* 이 *strcharset*에 없는 문자로 시작 하는 경우 함수는 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **strspn** 함수에서 첫 번째 문자의 인덱스를 반환 합니다. *str* 의 문자 집합에 속하지 않는 *strCharSet*합니다. 종료 null 문자는 검색에 포함되지 않습니다.
+**Strspn** 함수는 *strspn*의 문자 집합에 속하지 않는 *str* 의 첫 번째 문자 인덱스를 반환 합니다. 종료 null 문자는 검색에 포함되지 않습니다.
 
-**wcsspn** 하 고 **_mbsspn** 와이드 문자 및 멀티 바이트 문자 버전입니다 **strspn**합니다. 인수 **wcsspn** 은 와이드 문자열이 고 **_mbsspn** 는 멀티 바이트 문자 문자열입니다. **_mbsspn** 해당 매개 변수 유효성을 검사 합니다. 하는 경우 *str* 또는 *strCharSet* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 실행을 계속 하도록 허용 된 경우 **_mbspn** 설정 **errno** 하 **EINVAL** 0을 반환 합니다. **strspn** 하 고 **wcsspn** 해당 매개 변수를 확인 하지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**wcsspn** 및 **_mbsspn** 는 **strspn**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsspn** 의 인수는 와이드 문자 문자열입니다. **_mbsspn** 의 해당 문자는 멀티 바이트 문자열입니다. **_mbsspn** 은 매개 변수의 유효성을 검사 합니다. *Str* 또는 *Strcharset* 이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **_mbspn** 는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다. **strspn** 및 **wcsspn** 은 매개 변수의 유효성을 검사 하지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 

@@ -1,12 +1,12 @@
 ---
 title: isalpha, iswalpha, _isalpha_l, _iswalpha_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - iswalpha
 - _iswalpha_l
 - isalpha
 - _isalpha_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _istalpha
 - _ismbcalpha_l
@@ -38,14 +41,14 @@ helpviewer_keywords:
 - istalpha function
 - _istalpha function
 ms.assetid: ed6cc2be-c4b0-4475-87ac-bc06d8c23064
-ms.openlocfilehash: 47b7e43172884524e50e332dcb421e84a99b9806
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a7de0ba1316a6c0155a46eed0564792ee6256f2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157996"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954579"
 ---
-# <a name="isalpha-iswalpha-isalphal-iswalphal"></a>isalpha, iswalpha, _isalpha_l, _iswalpha_l
+# <a name="isalpha-iswalpha-_isalpha_l-_iswalpha_l"></a>isalpha, iswalpha, _isalpha_l, _iswalpha_l
 
 정수가 영문자를 나타내는지 여부를 확인합니다.
 
@@ -78,11 +81,11 @@ int _iswalpha_l(
 
 ## <a name="return-value"></a>반환 값
 
-각 이러한 루틴 0이 아닌 경우 반환 *c* 영문자의 특정 표현인 합니다. **isalpha** 이면 0이 아닌 값을 반환 *c* 된 A-z 또는 a-z 범위 안에 있습니다. **iswalpha** 는 와이드 문자에 대해서만 0이 아닌 값을 반환 [iswupper](isupper-isupper-l-iswupper-iswupper-l.md) 하거나 **iswlower** 0이 아닌 값은 즉, 모든 와이드 문자에 대 한 구현 정의 된 집합 중 하나 어떤 **iswcntrl**를 **iswdigit**에 **iswpunct**, 또는 **iswspace** 0이 아닌 합니다. 이러한 루틴은 각각 0을 반환 *c* 테스트 조건을 충족 하지 않습니다.
+*C* 가 영문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. *c* 가 a-z 또는 a-z 범위 내에 있는 경우 **isalpha** 는 0이 아닌 값을 반환 합니다. **iswalpha** 는 [iswupper](isupper-isupper-l-iswupper-iswupper-l.md) 또는 **iswupper** 가 0이 아닌 와이드 문자에 대해서만 0이 아닌 값을 반환 합니다. 즉, **iswcntrl**, **iswdigit**, **iswpunct**또는 **iswdigit** 가 0이 아닌 구현에 정의 된 집합 중 하나인 와이드 문자에 대해입니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
-접미사가 있는 이러한 함수 버전은 **_l** 접미사는 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-동작 **isalpha** 하 고 **_isalpha_l** 경우 정의 되지 않습니다 *c* EOF가 범위인 0부터 0xff까지 포괄 합니다. 디버그 CRT 라이브러리가 사용 되는 경우 및 *c* 함수 raise 이러한 값 중 하나가 아닌 한 어설션입니다.
+*C* 가 EOF가 아니거나 0에서 0xff 사이 (포함) 범위 내에 있는 경우 **isalpha** 및 **_isalpha_l** 의 동작이 정의 되지 않습니다. 디버그 CRT 라이브러리가 사용 되 고 *c* 가 이러한 값 중 하나가 아니면 함수는 어설션을 발생 시킵니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

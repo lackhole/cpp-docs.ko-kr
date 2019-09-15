@@ -1,13 +1,13 @@
 ---
 title: logb, logbf, logbl, _logb, _logbf
 ms.date: 04/05/2018
-apiname:
+api_name:
 - logb
 - _logb
 - _logbl
 - logbf
 - logbl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -19,7 +19,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - logb
 - logbl
@@ -38,14 +41,14 @@ helpviewer_keywords:
 - floating-point functions, mantissa and exponent
 - exponents and mantissas
 ms.assetid: 780c4daa-6fe6-4fbc-9412-4c1ba1a1766f
-ms.openlocfilehash: 9f598eedaf30b1f2a1858129e648a117355d112e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c5fc59f786b00dcf4ab1056424d8442a03f3adbf
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285715"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953147"
 ---
-# <a name="logb-logbf-logbl-logb-logbf"></a>logb, logbf, logbl, _logb, _logbf
+# <a name="logb-logbf-logbl-_logb-_logbf"></a>logb, logbf, logbl, _logb, _logbf
 
 부동 소수점 인수의 지수 값을 추출합니다.
 
@@ -82,13 +85,13 @@ float _logbf(
 
 ## <a name="return-value"></a>반환 값
 
-**logb** 비편향된 지 수 값을 반환 *x* 부동 소수점 값으로 표현 하는 부호 있는 정수입니다.
+**logb** 는 *x* 의 비편향 지 수 값을 부동 소수점 값으로 표현 되는 부호 있는 정수로 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **logb** 함수에 부동 소수점 인수의 지 수 값을 추출 *x*처럼 *x* 무한 범위로 표현 된 합니다. 경우는 인수 *x* 는 비 정규화 것 처럼 처리 됩니다 정규화 된 합니다.
+**Logb** 함수는 *x* 가 무한 범위로 표현 된 것 처럼 부동 소수점 인수 *x*의 지 수 값을 추출 합니다. 인수 *x* 가 정규화 되지 않은 경우 정규화 된 것 처럼 처리 됩니다.
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **logb** 및 반환 하는 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **logb** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하므로 **float** 또는 **long** **double** 값을 사용 하 고 반환 하는 **logb** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **logb** 는 항상 **double**을 사용 하 고 반환 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|

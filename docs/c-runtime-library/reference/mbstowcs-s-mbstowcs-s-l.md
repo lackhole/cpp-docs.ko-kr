@@ -1,10 +1,10 @@
 ---
 title: mbstowcs_s, _mbstowcs_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbstowcs_s_l
 - mbstowcs_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _mbstowcs_s_l
 - mbstowcs_s
@@ -26,12 +29,12 @@ helpviewer_keywords:
 - mbstowcs_s function
 - mbstowcs_s_l function
 ms.assetid: 2fbda953-6918-498f-b440-3e7b21ed65a4
-ms.openlocfilehash: 7a1c29118c48bbbb5358e7d7ea57296f7ec908a8
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 0812c3f667f28c5c43d7932d4746052dbaff3a60
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499764"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952016"
 ---
 # <a name="mbstowcs_s-_mbstowcs_s_l"></a>mbstowcs_s, _mbstowcs_s_l
 
@@ -126,7 +129,7 @@ null로 끝나는 멀티바이트 문자 시퀀스의 주소입니다.
 *Mbstr* 및 *wcstr* 가 가리키는 시퀀스가 겹치면 **mbstowcs_s** 의 동작이 정의 되지 않습니다.
 
 > [!IMPORTANT]
-> *Wcstr* 및 *mbstr* 이 겹치지 않도록 하 고, 변환할 멀티 바이트 문자 수를 정확 하 게 반영 합니다.
+> *Wcstr* 및 *mbstr* 이 겹치지 않도록 하 고, 변환할 멀티 바이트 문자 수 *를 정확 하* 게 반영 합니다.
 
 **mbstowcs_s** 는 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_mbstowcs_s_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 

@@ -1,10 +1,10 @@
 ---
 title: _strdate, _wstrdate
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _strdate
 - _wstrdate
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tstrdate
 - wstrdate
@@ -33,14 +36,14 @@ helpviewer_keywords:
 - _tstrdate function
 - copying dates
 ms.assetid: de8e4097-58f8-42ba-9dcd-cb4d9a9f1696
-ms.openlocfilehash: 4dc2ea7f25e644c9bf7a4ddca4a625991f37d912
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e1164db5857643bac649e96493a3d66cdee3b6e2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353965"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70958220"
 ---
-# <a name="strdate-wstrdate"></a>_strdate, _wstrdate
+# <a name="_strdate-_wstrdate"></a>_strdate, _wstrdate
 
 현재 시스템 날짜를 버퍼에 복사합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md)를 참조하세요.
 
@@ -70,17 +73,17 @@ wchar_t *_wstrdate(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 결과 문자열에 대 한 포인터를 반환 *datestr*합니다.
+이러한 각 함수는 결과 문자열 *datestr*에 대 한 포인터를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md)를 참조하세요. 가능한 경우에는 항상 더 안전한 함수를 사용하는 것이 좋습니다.
 
-합니다 **_strdate** 함수는 현재 시스템 날짜를 가리키는 버퍼에 복사 *datestr*서식을 **mm**/**dd** / **yy**여기서 **mm** 는 월을 나타내는 두 자리 숫자로 **dd** 는 일을 나타내는 두 자리 숫자로 및 **yy**  연도의 마지막 두 자리 됩니다. 예를 들어, 문자열 **9905/12/** 1999 년 12 월 5 일을 나타냅니다. 버퍼는 9바이트 이상이어야 합니다.
+**_Strdate** 함수는 **mm**/**dd**/**yy**로 지정 된 *datestr*에 의해 가리키는 버퍼에 현재 시스템 날짜를 복사 합니다. 여기서 **mm** 은 월, **dd** 를 나타내는 두 자리 숫자입니다. 는 일을 나타내는 두 자리 숫자이 고, **yy** 는 연도의 마지막 두 자리 숫자입니다. 예를 들어, **12/05/99** 문자열은 1999 년 12 월 5 일을 나타냅니다. 버퍼는 9바이트 이상이어야 합니다.
 
-하는 경우 *datestr* 되는 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수가-1를 반환 하는 설정 **errno** 하 **EINVAL**합니다.
+*Datestr* 가 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
-**_wstrdate** 의 와이드 문자 버전이 **_strdate**;의 인수와 반환 값 **_wstrdate** 는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**_wstrdate** 는 **_strdate**의 와이드 문자 버전입니다. **_wstrdate** 의 인수 및 반환 값은 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 

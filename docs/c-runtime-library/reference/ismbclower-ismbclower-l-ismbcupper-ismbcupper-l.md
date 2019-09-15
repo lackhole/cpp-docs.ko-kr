@@ -1,12 +1,12 @@
 ---
 title: _ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbclower
 - _ismbclower_l
 - _ismbcupper_l
 - _ismbcupper
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ismbcupper
 - _ismbclower
@@ -32,14 +35,14 @@ helpviewer_keywords:
 - ismbclower_l function
 - _ismbcupper_l function
 ms.assetid: 17d89587-65bc-477c-ba8f-a84e63cf59e7
-ms.openlocfilehash: 29a1e97f4583808931e5228a6905aed7c0a62702
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a64a0d9be83733fa5482eee84ce6576dd32c221
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157289"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953788"
 ---
-# <a name="ismbclower-ismbclowerl-ismbcupper-ismbcupperl"></a>_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
+# <a name="_ismbclower-_ismbclower_l-_ismbcupper-_ismbcupper_l"></a>_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
 
 멀티바이트 문자가 소문자인지 대문자인지를 확인합니다.
 
@@ -75,20 +78,20 @@ int _ismbcupper_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. 하는 경우 *c*< = 255 및 해당 **_ismbb** 루틴 (예를 들어 **_ismbcalnum** 에 해당 **_ismbbalnum**), 결과 해당 반환 값 **_ismbb** 루틴입니다.
+이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. *C*< = 255이 고 해당 **_ismbb** 루틴이 있는 경우 (예: **_ismbcalnum** 가 **_ismbbalnum**에 해당 하는 경우) 결과는 해당 **_ismbb** 루틴의 반환 값입니다.
 
 ## <a name="remarks"></a>설명
 
 이러한 각 함수는 지정한 조건에 대해 주어진 멀티바이트 문자를 테스트합니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_L** 접미사가 있는 이러한 함수 버전은 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 |루틴에서 반환된 값|테스트 조건|932 코드 페이지 예제|
 |-------------|--------------------|---------------------------|
-|**_ismbclower**|소문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 소문자 영어 문자의 싱글바이트 표현인: 0x61<=*c*<=0x7A.|
-|**_ismbclower_l**|소문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 소문자 영어 문자의 싱글바이트 표현인: 0x61<=*c*<=0x7A.|
-|**_ismbcupper**|대문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 대문자 영어 문자의 싱글바이트 표현인: 0x41<=*c*<=0x5A.|
-|**_ismbcupper_l**|대문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 대문자 영어 문자의 싱글바이트 표현인: 0x41<=*c*<=0x5A.|
+|**_ismbclower**|소문자 영문자|*C* 가 ASCII 소문자 영어 문자의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환 합니다. 0x61<=*c*<=0x7A.|
+|**_ismbclower_l**|소문자 영문자|*C* 가 ASCII 소문자 영어 문자의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환 합니다. 0x61<=*c*<=0x7A.|
+|**_ismbcupper**|대문자 영문자|*C* 가 ASCII 대문자 영어로 된 싱글바이트 표현인 경우에만 0이 아닌 값을 반환 합니다. 0x41<=*c*<=0x5A.|
+|**_ismbcupper_l**|대문자 영문자|*C* 가 ASCII 대문자 영어로 된 싱글바이트 표현인 경우에만 0이 아닌 값을 반환 합니다. 0x41<=*c*<=0x5A.|
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,12 +1,12 @@
 ---
 title: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _snprintf_s
 - _snprintf_s_l
 - _snwprintf_s
 - _snwprintf_s_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _snwprintf_s_l
 - _sntprintf_s_l
@@ -47,14 +50,14 @@ helpviewer_keywords:
 - _snwprintf_s function
 - formatted text [C++]
 ms.assetid: 9336ab86-13e5-4a29-a3cd-074adfee6891
-ms.openlocfilehash: ae298e9143a9ce79efe49c2055299f8d74070999
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b95145a468d382ea63ef4d409c095ec217e42f1c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356201"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948013"
 ---
-# <a name="snprintfs-snprintfsl-snwprintfs-snwprintfsl"></a>_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
+# <a name="_snprintf_s-_snprintf_s_l-_snwprintf_s-_snwprintf_s_l"></a>_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
 
 문자열에 서식이 지정된 데이터를 씁니다. 이러한 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 있는 [snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)의 버전입니다.
 
@@ -113,7 +116,7 @@ int _snwprintf_s(
 출력을 위한 스토리지 위치입니다.
 
 *sizeOfBuffer*<br/>
-출력을 위한 스토리지 위치의 크기입니다. 크기 **바이트** 에 대 한 **_snprintf_s** 크기 **단어** 에 대 한 **_snwprintf_s**합니다.
+출력을 위한 스토리지 위치의 크기입니다. **_Snwprintf_s**에 대 한 **_snprintf_s** 크기 ( **바이트)** 또는 **단어** 크기입니다.
 
 *count*<br/>
 저장할 최대 문자 수 또는 [_TRUNCATE](../../c-runtime-library/truncate.md)입니다.
@@ -129,26 +132,26 @@ int _snwprintf_s(
 
 ## <a name="return-value"></a>반환 값
 
-**_snprintf_s** 에 저장 된 문자 수를 반환 *버퍼*, 종결 null 문자를 제외 합니다. **_snwprintf_s** 에 저장 된 와이드 문자 수를 반환 *버퍼*, 종료 null 와이드 문자를 제외 합니다.
+**_snprintf_s** 는 null 종결 문자를 제외 하 고 *버퍼*에 저장 된 문자 수를 반환 합니다. **_snwprintf_s** 는 종료 null 와이드 문자를 제외 하 고 *버퍼*에 저장 된 와이드 문자 수를 반환 합니다.
 
-초과 하면 데이터와 종결 null을 저장 하는 데 필요한 저장소가 *sizeOfBuffer*에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 잘못 된 매개 변수 처리기를 후 실행 계속 되 면 이러한 함수 설정 *버퍼* 빈 문자열로 설정 **errno** 에 **ERANGE**,-1을 반환 합니다.
+데이터를 저장 하는 데 필요한 저장소와 종료 null이 *sizeOfBuffer*를 초과 하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 잘못 된 매개 변수 처리기 이후에 실행이 계속 되 면 이러한 함수는 *버퍼* 를 빈 문자열로 설정 하 고 **errno** 를 **ERANGE**로 설정 하 고-1을 반환 합니다.
 
-경우 *버퍼* 또는 *형식* 은 **NULL** 포인터 이거나 *개수* 보다 작거나를 0으로 잘못 된 매개 변수 처리기가 호출 됩니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 고-1을 반환 합니다.
+*버퍼* 또는 *형식이* **NULL** 포인터 이거나 *count* 가 0 보다 작거나 같으면 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_snprintf_s** 함수 형식 및 저장소 *개수* 자 미만의 *버퍼* 종결 null을 추가 하 고 있습니다. 각 인수 (있는 경우) 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. 와 일치 합니다 **printf** 함수 패밀리를 참조 하십시오 [형식 사양 구문: printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+**_Snprintf_s** 함수는 *버퍼* 에서 *개수* 이하의 문자를 포맷 하 고 저장 하며 종료 null을 추가 합니다. 각 인수 (있는 경우)는 *형식*의 해당 형식 사양에 따라 변환 되 고 출력 됩니다. 형식은 **printf** 함수 패밀리와 일치 합니다. [형식 사양 구문: printf 및 Wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)를 참조 하세요. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
-경우 *개수* 는 [_TRUNCATE](../../c-runtime-library/truncate.md), 한 다음 **_snprintf_s** 쓰기 만큼 문자열의 최대 크기에 맞게 *버퍼* 에 대 한 공간을 남겨 두고를 null 종료합니다. (사용 하 여 종결 null) 전체 문자열에 포함할 *버퍼*, 한 다음 **_snprintf_s** (종결 null 제외)에 기록 된; 문자 수를 반환이 고, 그렇지 **_snprintf_s**  잘림이 나타낼 때-1을 반환 합니다.
+*Count* 가 [_truncate](../../c-runtime-library/truncate.md)인 경우 **_snprintf_s** 는 종료 null을 위한 공간을 유지 하면서 *버퍼* 에 맞는 만큼의 문자열을 작성 합니다. 종료 null을 포함 하는 전체 문자열이 *버퍼*에 있으면 **_snprintf_s** 는 종료 null을 포함 하지 않고 작성 된 문자 수를 반환 합니다. 그렇지 않으면 **_snprintf_s** 는 잘림이 발생 했음을 나타내는-1을 반환 합니다.
 
 > [!IMPORTANT]
 > *format*이 사용자 정의 문자열이 아닌지 확인하세요.
 
-**_snwprintf_s** 의 와이드 문자 버전이 **_snprintf_s**;에 대 한 포인터 인수 **_snwprintf_s** 는 와이드 문자 문자열입니다. 인코딩 오류의 탐지 **_snwprintf_s** 에 다를 수 있습니다 **_snprintf_s**합니다. **_snwprintf_s**과 같이 **swprintf_s**, 형식의 대상이 아니라 문자열에 출력을 기록 **파일**합니다.
+**_snwprintf_s** 는 **_snprintf_s**의 와이드 문자 버전입니다. **_snwprintf_s** 에 대 한 포인터 인수는 와이드 문자 문자열입니다. **_Snwprintf_s** 의 인코딩 오류 검색은 **_snprintf_s**에서와 다를 수 있습니다. **swprintf_s**와 마찬가지로 **_snwprintf_s**는 **파일**형식의 대상이 아니라 문자열에 출력을 씁니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 경우를 제외 하 고는 동일 합니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 

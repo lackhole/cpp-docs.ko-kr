@@ -1,9 +1,9 @@
 ---
 title: setjmp
 ms.date: 08/14/2018
-apiname:
+api_name:
 - setjmp
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - setjmp
 helpviewer_keywords:
@@ -23,12 +26,12 @@ helpviewer_keywords:
 - current state
 - setjmp function
 ms.assetid: 684a8b27-e8eb-455b-b4a8-733ca1cbd7d2
-ms.openlocfilehash: 9f1a2b71a7b8fc7603c36938879348dca16288e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a88467f5b94ceae4281a35f1486380a877be2e5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356422"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948234"
 ---
 # <a name="setjmp"></a>setjmp
 
@@ -49,24 +52,24 @@ int setjmp(
 
 ## <a name="return-value"></a>반환 값
 
-스택 환경에 저장한 후 0을 반환합니다. 경우 **setjmp** 의 결과로 반환을 `longjmp` 호출에서 반환를 *값* 인수의 `longjmp`, 또는 경우에는 *값* 인수의 `longjmp` 0 **setjmp** 1을 반환 합니다. 반환되는 오류가 없습니다.
+스택 환경에 저장한 후 0을 반환합니다. **Setjmp** 가 `longjmp` 호출의 결과로 반환 `longjmp`되는 경우의 *value* 인수를 반환 하거나 `longjmp` 의 *값* 인수가 0 이면 **setjmp** 는 1을 반환 합니다. 반환되는 오류가 없습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **setjmp** 함수는 나중에 복원할 수를 사용 하 여 스택 환경을 저장 `longjmp`합니다. 함께 사용 하면 **setjmp** 하 고 `longjmp` 비로컬을 실행 하는 방법을 제공 **goto**합니다. setjmp와 longjmp는 일반 호출이나 반환 규칙을 사용하지 않고 전에 호출된 루틴에서 오류 처리 또는 복구 코드에 실행 제어를 전달하는 데 주로 사용됩니다.
+**Setjmp** 함수는를 사용 하 여 `longjmp`나중에 복원할 수 있는 스택 환경을 저장 합니다. 함께 사용 하는 경우 setjmp `longjmp` 를 사용 하 여 로컬이 아닌 **goto**를 실행 하는 방법을 제공 합니다. setjmp와 longjmp는 일반 호출이나 반환 규칙을 사용하지 않고 전에 호출된 루틴에서 오류 처리 또는 복구 코드에 실행 제어를 전달하는 데 주로 사용됩니다.
 
-에 대 한 호출 **setjmp** 에서 현재 스택 환경을 저장 *env*합니다. 에 대 한 후속 호출 `longjmp` 저장된 된 환경을 복원 하 고 해당 바로 뒤 지점으로 컨트롤을 반환 합니다 **setjmp** 호출 합니다. 컨트롤을 받는 루틴에 액세스할 수 있는 모든 변수(레지스터 변수 제외)는 `longjmp`가 호출될 때 가지고 있던 값을 포함합니다.
+**Setjmp** 에 대 한 호출은 현재 스택 환경을 *env*에 저장 합니다. 에 대 `longjmp` 한 후속 호출은 저장 된 환경을 복원 하 고 컨트롤을 해당 **setjmp** 호출 바로 다음의 지점으로 반환 합니다. 컨트롤을 받는 루틴에 액세스할 수 있는 모든 변수(레지스터 변수 제외)는 `longjmp`가 호출될 때 가지고 있던 값을 포함합니다.
 
-사용 하는 것이 불가능 **setjmp** 관리 코드와 네이티브 코드에서 이동 합니다.
+**Setjmp** 를 사용 하 여 네이티브 코드에서 관리 코드로 이동할 수는 없습니다.
 
 **Microsoft 전용**
 
-Microsoft에서 C++ Windows에서의 코드 **longjmp** 예외 처리 코드와 동일한 스택 해제 의미 체계를 사용 합니다. 안전 하 게 사용 하 여 동일한 배치 하는 C++ 예외를 발생 시킬 수 있습니다. 그러나이 사용량 이식 가능 하며 되지 않으며 중요 한 몇 가지 주의 사항이 있습니다. 자세한 내용은 참조 하세요 [longjmp](longjmp.md)합니다.
+Windows의 C++ Microsoft 코드에서, 명령줄은 예외 처리 코드와 동일한 스택 해제 의미 **체계를 사용** 합니다. 예외를 발생 시킬 수 있는 C++ 것과 동일한 위치에서를 사용 하는 것이 안전 합니다. 그러나이 사용은 이식할 수 없으며 몇 가지 중요 한 주의 사항이 있습니다. 자세한 내용은 다음을 [참조 하세요](longjmp.md).
 
 **Microsoft 전용 종료**
 
 > [!NOTE]
-> 노트북에서 C++ 코드를 가정할 수 없습니다 `setjmp` 하 고 `longjmp` 지원 C++ 의미 체계 개체입니다. 특히를 `setjmp` / `longjmp` 쌍에 정의 되지 않은 동작이 대체 하는 경우 호출 합니다 `setjmp` 및 `longjmp` 여 **catch** 및 **throw** 호출 자동 개체에 대 한 모든 non-trivial 소멸자가 있습니다. C++ 프로그램을 사용할 권장 합니다 C++ 예외 처리 메커니즘입니다.
+> 이식 가능한 C++ 코드에서는 개체 의미 체계 `setjmp` 를 `longjmp` 가정 C++ 하 고 지원할 수 없습니다. `setjmp` 특히 및 / `longjmp` **를 catch** 하 여 throw 하면 자동 개체에 대 한 특수 한 소멸자를 호출 하는 경우 호출 쌍은 정의 되지 않은 동작을 발생 시킵니다. `setjmp` `longjmp` 프로그램 C++ 에서 예외 처리 메커니즘을 사용 하 C++ 는 것이 좋습니다.
 
 자세한 내용은 [setjmp 및 longjmp 사용](../../cpp/using-setjmp-longjmp.md)을 참조하세요.
 

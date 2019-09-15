@@ -1,9 +1,9 @@
 ---
 title: _findclose
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _findclose
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _findclose
 - findclose
@@ -23,14 +26,14 @@ helpviewer_keywords:
 - _findclose function
 - findclose function
 ms.assetid: 9216c573-0878-444c-b5d7-cdaf16fb9163
-ms.openlocfilehash: 29010f8a502d463eeb6ca98837a1b7dae9f5ae6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c67336cc12bcdee754edd40b91078faa83a17984
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333757"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957330"
 ---
-# <a name="findclose"></a>_findclose
+# <a name="_findclose"></a>_findclose
 
 지정된 검색 핸들을 닫고 연결된 리소스를 해제합니다.
 
@@ -45,11 +48,11 @@ int _findclose(
 ### <a name="parameters"></a>매개 변수
 
 *handle*<br/>
-에 대 한 이전 호출에서 반환 된 검색 핸들 **_findfirst**합니다.
+**_Findfirst**에 대 한 이전 호출에서 반환 된 검색 핸들입니다.
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 **_findclose** 0을 반환 합니다. 그렇지 않으면-1을 반환 합니다 설정 **errno** 하 **ENOENT**를 나타내는 더 이상 일치 하는 파일을 찾을 수 없습니다.
+성공 하면 **_findclose** 가 0을 반환 합니다. 그렇지 않으면-1을 반환 하 고 **errno** 를 **enoent (** 로 설정 하 여 더 이상 일치 하는 파일을 찾을 수 없음을 나타냅니다.
 
 ## <a name="requirements"></a>요구 사항
 

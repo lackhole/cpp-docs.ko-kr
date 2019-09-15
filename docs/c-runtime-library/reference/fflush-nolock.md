@@ -1,9 +1,9 @@
 ---
 title: _fflush_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fflush_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fflush_nolock
 - _fflush_nolock
@@ -25,14 +28,14 @@ helpviewer_keywords:
 - streams, flushing
 - flushing
 ms.assetid: 5e33c4a1-b10c-4001-ad01-210757919291
-ms.openlocfilehash: 721098899525df02dc3b3d121cf894f8056fcb98
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f31ef5018abd9adbe9b9db00aaa91e3f0f0c01d5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334299"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940972"
 ---
-# <a name="fflushnolock"></a>_fflush_nolock
+# <a name="_fflush_nolock"></a>_fflush_nolock
 
 스레드를 잠그지 않고 스트림을 플러시합니다.
 
@@ -55,7 +58,7 @@ int _fflush_nolock(
 
 ## <a name="remarks"></a>설명
 
-이 함수는 잠기지 않은 버전의 **fflush**합니다. 동일 **fflush** 다른 스레드의 간섭 으로부터 보호 되지 않으므로 한다는 점이 다릅니다. 이는 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 호출 범위에서 이미 스레드 격리를 처리하는 경우에만 이 함수를 사용합니다.
+이 함수는 **fflush**의 잠기지 않은 버전입니다. 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하 고 **fflush** 와 동일 합니다. 이는 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 호출 범위에서 이미 스레드 격리를 처리하는 경우에만 이 함수를 사용합니다.
 
 ## <a name="requirements"></a>요구 사항
 

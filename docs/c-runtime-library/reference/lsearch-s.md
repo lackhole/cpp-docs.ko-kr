@@ -1,9 +1,9 @@
 ---
 title: _lsearch_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _lsearch_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _lsearch_s
 - lsearch_s
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - _lsearch_s function
 - lsearch_s function
 ms.assetid: d2db0635-be7a-4799-8660-255f14450882
-ms.openlocfilehash: f57a96622419e3f72fc2df5b260cbbbdd59666ae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c3c0ac41a4805acb558c75fb5ff4cbc0e3aa838
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156958"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953006"
 ---
-# <a name="lsearchs"></a>_lsearch_s
+# <a name="_lsearch_s"></a>_lsearch_s
 
 값에 대한 선형 검색을 수행합니다. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 있는 [_lsearch](lsearch.md) 버전입니다.
 
@@ -74,9 +77,9 @@ void *_lsearch_s(
 
 ## <a name="return-value"></a>반환 값
 
-하는 경우 *키* 발견 되 면 **_lsearch_s** 배열의 요소에 대 한 포인터를 반환 합니다 *기본* 일치 하는 *키*합니다. 하는 경우 *키* 찾지 못하면 **_lsearch_s** 배열의 끝에서 새로 추가 된 항목에 대 한 포인터를 반환 합니다.
+*키* 가 발견 되 면 **_lsearch_s** 는 *키*와 일치 하는 *기준* 에 있는 배열의 요소에 대 한 포인터를 반환 합니다. *키* 를 찾을 수 없는 경우 **_lsearch_s** 는 배열의 끝에 새로 추가 된 항목에 대 한 포인터를 반환 합니다.
 
-함수에 잘못된 매개 변수를 전달하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행이 계속 해 서를 허용 하는 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **NULL**합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
+함수에 잘못된 매개 변수를 전달하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 함수는 **NULL**을 반환 합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ### <a name="error-conditions"></a>오류 조건
 
@@ -89,11 +92,11 @@ void *_lsearch_s(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_lsearch_s** 함수 값에 대 한 선형 검색을 수행 *키* 배열을 *번호* 의 각 요소 *너비* 바이트입니다. 와 달리 **bsearch_s**하십시오 **_lsearch_s** 배열을 정렬할 필요가 없습니다. 하는 경우 *키* 발견 되지 않으면 다음 **_lsearch_s** 배열 및 증가의 끝에 추가 하 고 *번호*합니다.
+**_Lsearch_s** 함수는 각각 *width* 바이트의 *number* 요소 배열에서 값 *키* 에 대 한 선형 검색을 수행 합니다. **Bsearch_s**와 달리 **_lsearch_s** 에서는 배열을 정렬할 필요가 없습니다. *키* 를 찾을 수 없는 경우 **_lsearch_s** 는이를 배열의 끝에 추가 하 고 *숫자*를 증가 시킵니다.
 
-합니다 *비교* 함수는 두 배열 요소를 비교 하 고 서로의 관계를 지정 하는 값을 반환 하는 사용자가 제공한 루틴에 대 한 포인터입니다. 합니다 *비교* 함수는 첫 번째 인수로 컨텍스트에 대 한 포인터도 사용 합니다. **_lsearch_s** 호출 *비교* 검색, 각 호출에서 두 배열 요소에 대 한 포인터를 전달 하는 동안 한 번 이상. *비교* 요소를 비교 하 고 다음 중 하나를 반환 해야 합니다 (요소가 다르다는 의미) 0이 아닌 값 또는 0 (요소가 동일 하다는 의미).
+*Compare* 함수는 두 배열 요소를 비교 하 고 해당 관계를 지정 하는 값을 반환 하는 사용자 제공 루틴에 대 한 포인터입니다. 또한 *compare* 함수는 컨텍스트에 대 한 포인터를 첫 번째 인수로 사용 합니다. **_lsearch_s** 호출은 검색 중에 한 번 이상 *비교* 하 여 각 호출에서 두 배열 요소에 포인터를 전달 합니다. *compare* 는 요소를 비교한 다음 0이 아닌 값 (요소가 다르다는 의미) 또는 0 (요소가 동일 하다는 의미)을 반환 해야 합니다.
 
-합니다 *상황에 맞는* 포인터는 검색된 데이터 구조가 개체의 일부 경우에 유용할 수 있습니다 및 *비교* 함수 개체의 멤버에 액세스 해야 합니다. 예를 들어, 코드를 *비교* 함수 해당 개체의 적절 한 개체 유형 및 액세스 멤버에는 void 포인터를 캐스팅할 수 있습니다. 추가 합니다 *상황에 맞는* 포인터는 **_lsearch_s** 추가 데이터를 사용할 수 있도록 정적 변수를 사용 하 여 연결 하는 재진입 버그를 방지 하려면 추가 컨텍스트를 사용할 수 있으므로 보안 합니다 *비교* 함수입니다.
+*컨텍스트* 포인터는 검색 된 데이터 구조가 개체의 일부 이며 *비교* 함수가 개체의 멤버에 액세스 해야 하는 경우에 유용할 수 있습니다. 예를 들어 *compare* 함수의 코드는 void 포인터를 적절 한 개체 형식으로 캐스팅 하 고 해당 개체의 멤버에 액세스할 수 있습니다. *컨텍스트* 포인터를 추가 하면 정적 변수를 사용 하 여 *비교* 함수에서 데이터를 사용할 수 있도록 하는 것과 관련 된 재진입 버그를 방지 하기 위해 추가 컨텍스트를 사용할 수 있으므로 **_lsearch_s** 더 안전 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

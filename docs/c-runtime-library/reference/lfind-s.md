@@ -1,9 +1,9 @@
 ---
 title: _lfind_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _lfind_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - lfind_s
 - _lfind_s
@@ -27,14 +30,14 @@ helpviewer_keywords:
 - searching, linear
 - _lfind_s function
 ms.assetid: f1d9581d-5c9d-4222-a31c-a6dfafefa40d
-ms.openlocfilehash: 08c04d9d1ca69998d54304c96468298013907179
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69db97dc24b567714bda3e02f5f53ff381ae4911
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286429"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953448"
 ---
-# <a name="lfinds"></a>_lfind_s
+# <a name="_lfind_s"></a>_lfind_s
 
 지정된 키에 대해 선형 검색을 수행합니다. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 보안 기능이 향상된 [_lfind](lfind.md) 버전입니다.
 
@@ -66,16 +69,16 @@ void *_lfind_s(
 배열 요소의 크기(바이트)입니다.
 
 *compare*<br/>
-비교 루틴에 대한 포인터입니다. 첫 번째 매개 변수를 *상황에 맞는* 포인터입니다. 두 번째 매개 변수는 검색할 키에 대한 포인터입니다. 세 번째 매개 변수는 키와 비교할 배열 요소에 대한 포인터입니다.
+비교 루틴에 대한 포인터입니다. 첫 번째 매개 변수는 *컨텍스트* 포인터입니다. 두 번째 매개 변수는 검색할 키에 대한 포인터입니다. 세 번째 매개 변수는 키와 비교할 배열 요소에 대한 포인터입니다.
 
 *context*<br/>
 비교 함수에서 액세스할 수 있는 개체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-키가 있으면 **_lfind_s** 배열의 요소에 대 한 포인터를 반환 합니다. *기본* 일치 하는 *키*합니다. 키가 없으면 **_lfind_s** 반환 **NULL**합니다.
+키가 발견 되 면 **_lfind_s** 는 *키*와 일치 하는 *기준* 에 있는 배열의 요소에 대 한 포인터를 반환 합니다. 키를 찾을 수 없는 경우 **_lfind_s** 는 **NULL**을 반환 합니다.
 
-함수에 잘못된 매개 변수를 전달하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **NULL**합니다.
+함수에 잘못된 매개 변수를 전달하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **NULL**을 반환 합니다.
 
 ### <a name="error-conditions"></a>오류 조건
 
@@ -88,9 +91,9 @@ void *_lfind_s(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_lfind_s** 함수 값에 대 한 선형 검색을 수행 *키* 배열을 *번호* 의 각 요소 *너비* 바이트입니다. 와 달리 **bsearch_s**하십시오 **_lfind_s** 배열을 정렬할 필요가 없습니다. 합니다 *기본* 인수는 검색할 배열의 밑에 대 한 포인터입니다. 합니다 *비교* 인수는 두 배열 요소를 비교 하 고 해당 관계를 지정 하는 값을 반환 하는 사용자가 제공한 루틴에 대 한 포인터입니다. **_lfind_s** 호출을 *비교* 일상적인 한 번 이상 전달 검색 중를 *상황에 맞는* 포인터 및 각 호출에서 두 배열 요소에 대 한 포인터입니다. 합니다 *비교* 루틴 요소를 비교 다음 0이 아닌 값 (즉 요소를 서로 다르게 되어 있는지)를 반환 해야 합니다 또는 0 (요소가 동일 하다는 의미).
+**_Lfind_s** 함수는 각각 *width* 바이트의 *number* 요소 배열에서 값 *키* 에 대 한 선형 검색을 수행 합니다. **Bsearch_s**와 달리 **_lfind_s** 에서는 배열을 정렬할 필요가 없습니다. *기본* 인수는 검색할 배열의 기준에 대 한 포인터입니다. *Compare* 인수는 두 배열 요소를 비교 하 여 해당 관계를 지정 하는 값을 반환 하는 사용자 제공 루틴에 대 한 포인터입니다. **_lfind_s** 는 검색 중에 *비교* 루틴을 한 번 이상 호출 하 여 각 호출에서 두 배열 요소에 대 한 *컨텍스트* 포인터와 포인터를 전달 합니다. *비교* 루틴은 요소를 비교한 다음 0이 아닌 값 (요소가 다르다는 의미) 또는 0 (요소가 동일 하다는 의미)을 반환 해야 합니다.
 
-**_lfind_s** 비슷합니다 **_lfind** 추가 제외 하 고는 *상황에 맞는* 비교 함수의 인수 및 함수의 매개 변수 목록에 대 한 포인터입니다. 합니다 *상황에 맞는* 포인터는 검색된 데이터 구조가 개체의 일부 경우에 유용할 수 있습니다 및 *비교* 함수 개체의 멤버에 액세스 해야 합니다. 합니다 *비교* 함수 해당 개체의 적절 한 개체 유형 및 액세스 멤버에는 void 포인터를 캐스팅할 수 있습니다. 추가 합니다 *상황에 맞는* 매개 변수 **_lfind_s** 추가 데이터를 사용할 수 있도록 정적 변수를 사용 하 여 연결 하는 재진입 버그를 방지 하려면 추가 컨텍스트를 사용할 수 있으므로 보안 합니다 *비교* 함수입니다.
+**_lfind_s** 는 비교 함수의 인수 및 함수의 매개 변수 목록에 대 한 *컨텍스트* 포인터를 추가 하는 것을 제외 하 고 **_lfind** 와 비슷합니다. *컨텍스트* 포인터는 검색 된 데이터 구조가 개체의 일부 이며 *비교* 함수가 개체의 멤버에 액세스 해야 하는 경우에 유용할 수 있습니다. *Compare* 함수는 void 포인터를 적절 한 개체 형식으로 캐스팅 하 고 해당 개체의 멤버에 액세스할 수 있습니다. *컨텍스트* 매개 변수를 추가 하면 정적 변수를 사용 하 여 *비교* 함수에서 데이터를 사용할 수 있도록 하는 것과 관련 된 재진입 버그를 방지 하기 위해 추가 컨텍스트를 사용할 수 있기 때문에 **_lfind_s** 더 안전 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

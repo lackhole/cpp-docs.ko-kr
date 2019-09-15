@@ -1,9 +1,9 @@
 ---
 title: _set_errno
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _set_errno
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - set_errno
 - _set_errno
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - set_errno function
 - _set_errno function
 ms.assetid: d338914a-1894-4cf3-ae45-f2c4eb26590b
-ms.openlocfilehash: f8dace04a5328c423af21327eb540abc8b062e86
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09800276886ecf1c2fdd2ffee63ddcb8cc57f61e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356591"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948601"
 ---
-# <a name="seterrno"></a>_set_errno
+# <a name="_set_errno"></a>_set_errno
 
-값을 설정 합니다 **errno** 전역 변수입니다.
+**Errno** 전역 변수의 값을 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,7 +47,7 @@ errno_t _set_errno( int error_value );
 ### <a name="parameters"></a>매개 변수
 
 *error_value*<br/>
-새 값 **errno**합니다.
+**Errno**의 새 값입니다.
 
 ## <a name="return-value"></a>반환 값
 

@@ -1,11 +1,11 @@
 ---
 title: round, roundf, roundl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - round
 - roundl
 - roundf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - roundf
 - roundl
@@ -27,12 +30,12 @@ helpviewer_keywords:
 - round function
 - roundf function
 ms.assetid: 6be90877-193c-4b80-a32b-c3eca33f9c6f
-ms.openlocfilehash: 126c6bace2b79123094a7f8bcc8f3d3378391d96
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b92f4a94fff06fe6948701240b61040a610981f3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357449"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949114"
 ---
 # <a name="round-roundf-roundl"></a>round, roundf, roundl
 
@@ -65,7 +68,7 @@ long double roundl(
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **반올림** 함수에 가장 가까운 정수를 나타내는 부동 소수점 값을 반환 *x*합니다. 중간값은 부동 소수점 반올림 모드의 설정과 관계없이 0에서 멀어지는 쪽으로 반올림됩니다. 반환되는 오류가 없습니다.
+**Round** 함수는 *x*에 가장 가까운 정수를 나타내는 부동 소수점 값을 반환 합니다. 중간값은 부동 소수점 반올림 모드의 설정과 관계없이 0에서 멀어지는 쪽으로 반올림됩니다. 반환되는 오류가 없습니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -73,7 +76,7 @@ long double roundl(
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **반올림** 및 반환 하는 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **반올림** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 값을 사용 하 고 반환 하는 **round** 오버 로드를 호출할 수 있습니다. C 프로그램에서 **round** 는 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

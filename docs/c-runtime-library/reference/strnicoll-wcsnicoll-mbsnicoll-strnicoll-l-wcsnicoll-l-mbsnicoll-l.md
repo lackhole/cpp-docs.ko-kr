@@ -1,14 +1,14 @@
 ---
 title: _strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbsnicoll_l
 - _mbsnicoll
 - _wcsnicoll_l
 - _strnicoll
 - _strnicoll_l
 - _wcsnicoll
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -21,7 +21,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wcshicoll_l
 - _ftcsncicoll
@@ -60,19 +63,19 @@ helpviewer_keywords:
 - tcsnicoll function
 - _strnicoll function
 ms.assetid: abf0c569-725b-428d-9ff2-924f430104b4
-ms.openlocfilehash: 6b3562dd077b9aa80b9d188e9b2c43282e797af3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1a26690f4913cb35486886f6548927fc09efc89
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209693"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947076"
 ---
-# <a name="strnicoll-wcsnicoll-mbsnicoll-strnicolll-wcsnicolll-mbsnicolll"></a>_strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l
+# <a name="_strnicoll-_wcsnicoll-_mbsnicoll-_strnicoll_l-_wcsnicoll_l-_mbsnicoll_l"></a>_strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l
 
 로캘별 정보를 사용하여 문자열을 비교합니다.
 
 > [!IMPORTANT]
-> **_mbsnicoll** 하 고 **_mbsnicoll_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsnicoll** 및 **_mbsnicoll_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -125,21 +128,21 @@ int _mbsnicoll_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수의 부분 문자열 간 관계를 나타내는 값을 반환 *string1* 하 고 *string2*다음과 같이 합니다.
+이러한 각 함수는 다음과 *같이 문자열 1과 문자열* *2*의 부분 문자열의 관계를 나타내는 값을 반환 합니다.
 
 |반환 값|문자열 1과 문자열 2의 관계|
 |------------------|----------------------------------------|
-|< 0|*string1* 보다 작거나 *string2*|
-|0|*string1* 동일 *string2*|
-|> 0|*string1* 보다 큰 *string2*|
+|< 0|*문자열* *2* 보다 작음|
+|0|*문자열* *2* 와 같음|
+|> 0|*문자열* *2* 보다 큼|
 
-이러한 각 함수 반환 **_NLSCMPERROR**합니다. 사용 하도록 **_NLSCMPERROR**, 두 문자열 중 하나를 포함 합니다. H 또는 MBSTRING 합니다. 8. **_wcsnicoll** 경우 실패할 수 있습니다 *string1* 하거나 *string2* 도메인 외부의 데이터 정렬 시퀀스의 와이드 문자 코드가 포함 되어 있습니다. 오류가 발생 하는 경우 **_wcsnicoll** 설정할 수 있습니다 **errno** 하 **EINVAL**합니다. 에 대 한 호출에서 오류를 확인 하려면 **_wcsnicoll**설정 **errno** 0으로 확인 한 다음 **errno** 호출한 후 **_wcsnicoll**합니다.
+이러한 각 함수는 **_NLSCMPERROR**을 반환 합니다. **_NLSCMPERROR**를 사용 하려면 문자열을 포함 합니다. H 또는 MBSTRING. 넣기. *string1 또는 string1* 에 정렬 시퀀스의 도메인 외부 *에 있는 와이드* 문자 코드가 포함 된 경우 **_wcsnicoll** 가 실패할 수 있습니다. 오류가 발생 하면 **_wcsnicoll** 가 **errno** 를 **EINVAL**로 설정할 수 있습니다. **_Wcsnicoll**에 대 한 호출에서 오류를 확인 하려면 **errno** 를 0으로 설정 하 고 **_wcsnicoll**를 호출한 후 **errno** 를 확인 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수의 첫 번째 대/소문자 구분 비교를 수행 *개수* 의 문자 *string1* 하 고 *string2* 코드 페이지에 따라 합니다. 코드 페이지에서 문자 집합 순서와 사전적 문자 순서가 다르며 이러한 차이가 문자열 비교 시 중요한 경우에만 이러한 함수를 사용해야 합니다. 없는 이러한 함수의 버전은 **_l** 접미사는 현재 로캘 및 코드 페이지를 사용 합니다. 사용 하 여 버전을 **_l** 접미사는 전달 된 로캘을 사용 한다는 점을 제외 하면 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+이러한 각 함수는 코드 페이지에 따라 *문자열* 1과 *문자열 2* 의 첫 번째 *count* 문자를 대/소문자를 구분 하지 않고 비교 합니다. 코드 페이지에서 문자 집합 순서와 사전적 문자 순서가 다르며 이러한 차이가 문자열 비교 시 중요한 경우에만 이러한 함수를 사용해야 합니다. **_L** 접미사가 없는 이러한 함수 버전은 현재 로캘 및 코드 페이지를 사용 합니다. **_L** 접미사가 있는 버전은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이러한 모든 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 경우 *string1* 또는 *string2* 가 null 포인터인 경우 또는 개수 보다 크면 **INT_MAX**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **_NLSCMPERROR** 설정 **errno** 하 **EINVAL**합니다.
+이러한 모든 함수는 해당 함수 매개 변수의 유효성을 검사합니다. String1 또는 *string1* 이 *null 포인터 이거나 count* 가 **INT_MAX**보다 큰 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **_NLSCMPERROR** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

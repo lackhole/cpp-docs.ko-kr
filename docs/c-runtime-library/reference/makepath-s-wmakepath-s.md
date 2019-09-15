@@ -1,10 +1,10 @@
 ---
 title: _makepath_s, _wmakepath_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wmakepath_s
 - _makepath_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _wmakepath_s
 - makepath_s
@@ -30,14 +33,14 @@ helpviewer_keywords:
 - _wmakepath_s function
 - makepath_s function
 ms.assetid: 4405e43c-3d63-4697-bb80-9b8dcd21d027
-ms.openlocfilehash: 3536569fd3e77a353003e1372d5dc4ee6e4ee3fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7efd7c8e5ce7314e6fe719073685377f4b325fbd
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156930"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952940"
 ---
-# <a name="makepaths-wmakepaths"></a>_makepath_s, _wmakepath_s
+# <a name="_makepath_s-_wmakepath_s"></a>_makepath_s, _wmakepath_s
 
 구성 요소에서 경로 이름을 만듭니다. 이러한 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 있는 [_makepath, _wmakepath](makepath-wmakepath.md)의 버전입니다.
 
@@ -90,16 +93,16 @@ errno_t _wmakepath_s(
 버퍼의 크기(바이트)입니다.
 
 *drive*<br/>
-원하는 드라이브에 따른 문자(A, B 등) 및 후행 콜론(선택 사항)을 포함합니다. **_makepath_s** 없을 경우 복합 경로에 콜론을 자동으로 삽입 합니다. 하는 경우 *드라이브* 됩니다 **NULL** 복합 빈 문자열을 가리킵니다, 드라이브 문자 없이 표시 *경로* 문자열입니다.
+원하는 드라이브에 따른 문자(A, B 등) 및 후행 콜론(선택 사항)을 포함합니다. **_makepath_s** 가 없는 경우 복합 경로에 콜론을 자동으로 삽입 합니다. *드라이브가* **NULL** 이거나 빈 문자열을 가리키는 경우 복합 *경로* 문자열에 드라이브 문자가 나타나지 않습니다.
 
 *dir*<br/>
-드라이브 지정자 또는 실제 파일 이름을 제외한 디렉터리의 경로를 포함합니다. 후행 슬래시는 선택 사항, 슬래시 (/) 또는 백슬래시 (\\) 또는 둘 다에서 사용 하는 단일 *dir* 인수입니다. 후행 슬래시(/ 또는 \\)가 지정되지 않은 경우 자동으로 삽입됩니다. 하는 경우 *dir* 됩니다 **NULL** 또는 복합에서 빈 문자열로, 디렉터리 경로가 없는 지점에 삽입 됩니다 *경로* 문자열입니다.
+드라이브 지정자 또는 실제 파일 이름을 제외한 디렉터리의 경로를 포함합니다. 후행 슬래시는 선택 사항이 며 슬래시 (/) 또는 백슬래시 (\\) 중 하나 또는 둘 다를 단일 *dir* 인수에 사용할 수 있습니다. 후행 슬래시(/ 또는 \\)가 지정되지 않은 경우 자동으로 삽입됩니다. *Dir* 이 **NULL** 이거나 빈 문자열을 가리키는 경우에는 복합 *경로* 문자열에 디렉터리 경로가 삽입 되지 않습니다.
 
 *fname*<br/>
-파일 확장명 없이 기본 파일 이름을 포함합니다. 하는 경우 *fname* 됩니다 **NULL** 또는 빈 문자열인 경우 없는 파일 이름 가리킵니다 복합에 삽입 됩니다 *경로* 문자열입니다.
+파일 확장명 없이 기본 파일 이름을 포함합니다. *Fname* 이 **NULL** 이거나 빈 문자열을 가리키는 경우 복합 *경로* 문자열에 파일 이름이 삽입 되지 않습니다.
 
 *ext*<br/>
-앞에 마침표(.)가 있거나 없는 실제 파일 확장명을 포함합니다. **_makepath_s** 에 나타나지 않으면 기간에 자동으로 삽입 *ext*합니다. 하는 경우 *ext* 됩니다 **NULL** 또는 빈 문자열인 경우 확장명이 없는 가리키는 복합에 삽입 됩니다 *경로* 문자열입니다.
+앞에 마침표(.)가 있거나 없는 실제 파일 확장명을 포함합니다. **_makepath_s** 는 *내선*에 표시 되지 않는 경우 자동으로 마침표를 삽입 합니다. *Ext* 가 **NULL** 이거나 빈 문자열을 가리키는 경우 복합 *경로* 문자열에 확장명이 삽입 되지 않습니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -107,16 +110,16 @@ errno_t _wmakepath_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*path*|*sizeInWords* / *sizeInBytes*|반환|내용을 *경로*|
+|*path*|*sizeInWords* / *sizeInBytes*|반환|*경로의* 내용|
 |------------|------------------------------------|------------|------------------------|
 |**NULL**|any|**EINVAL**|수정 안 됨|
 |any|<= 0|**EINVAL**|수정 안 됨|
 
-위의 오류 조건이 발생하는 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수를 반환 하 고 **EINVAL**합니다. **NULL** 매개 변수에 대해 허용 됩니다 *드라이브*합니다 *fname*, 및 *ext*합니다. 이러한 매개 변수가 null 포인터 또는 빈 문자열일 때 동작에 대한 자세한 내용은 설명 부분을 참조하십시오.
+위의 오류 조건이 발생하는 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 함수는 **EINVAL**를 반환 합니다. *Drive*, *fname*및 *ext*매개 변수에는 **NULL** 을 사용할 수 있습니다. 이러한 매개 변수가 null 포인터 또는 빈 문자열일 때 동작에 대한 자세한 내용은 설명 부분을 참조하십시오.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_makepath_s** 함수에서 결과 저장 하는 개별 구성 요소에서 복합 경로 문자열을 만듭니다 *경로*합니다. 합니다 *경로* 드라이브 문자, 디렉터리 경로, 파일 이름 및 파일 이름 확장명 포함 될 수 있습니다. **_wmakepath_s** 의 와이드 문자 버전이 **_makepath_s**;에 대 한 인수 **_wmakepath_s** 는 와이드 문자 문자열입니다. **_wmakepath_s** 하 고 **_makepath_s** 동일 하 게 작동 합니다.
+**_Makepath_s** 함수는 개별 구성 요소에서 복합 경로 문자열을 만들고 결과를 *경로*에 저장 합니다. *경로* 에는 드라이브 문자, 디렉터리 경로, 파일 이름 및 파일 이름 확장명이 포함 될 수 있습니다. **_wmakepath_s** 는 **_makepath_s**의 와이드 문자 버전입니다. **_wmakepath_s** 에 대 한 인수는 와이드 문자 문자열입니다. **_wmakepath_s** 및 **_makepath_s** 는 동일 하 게 동작 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -124,9 +127,9 @@ errno_t _wmakepath_s(
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tmakepath_s**|**_makepath_s**|**_makepath_s**|**_wmakepath_s**|
 
-합니다 *경로* 인수를 전체 경로 저장할 만큼 큰 빈 버퍼를 가리켜야 합니다. 복합 *경로* 보다 크지 않아야 합니다 **_max_path(256** Stdlib.h에 정의 된 상수입니다.
+*경로* 인수는 전체 경로를 포함할 수 있을 만큼 크고 빈 버퍼를 가리켜야 합니다. 복합 *경로* 는 stdlib.h에 정의 된 **_MAX_PATH** 상수 보다 크지 않아야 합니다.
 
-경로가 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 또한 **errno** 로 설정 된 **EINVAL**합니다. **NULL** 다른 모든 매개 변수에 대해 값이 허용 됩니다.
+Path가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 또한 **errno** 는 **EINVAL**로 설정 됩니다. 다른 모든 매개 변수에 **NULL** 값을 사용할 수 있습니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 

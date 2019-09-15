@@ -1,7 +1,7 @@
 ---
 title: strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - wcsnlen
 - strnlen_s
 - _mbstrnlen
@@ -10,7 +10,7 @@ apiname:
 - strnlen
 - wcsnlen_s
 - _mbsnlen
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -24,7 +24,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wcsnlen
 - strnlen_s
@@ -58,19 +61,19 @@ helpviewer_keywords:
 - string length
 - strnlen_l function
 ms.assetid: cc05ce1c-72ea-4ae4-a7e7-4464e56e5f80
-ms.openlocfilehash: 960d57ed8c2b1d1dbc6843932b8c76fef35c34a0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6613c79bd9637b857dbf825eca2b37c71c154bec
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209672"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947006"
 ---
-# <a name="strnlen-strnlens-wcsnlen-wcsnlens-mbsnlen-mbsnlenl-mbstrnlen-mbstrnlenl"></a>strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
+# <a name="strnlen-strnlen_s-wcsnlen-wcsnlen_s-_mbsnlen-_mbsnlen_l-_mbstrnlen-_mbstrnlen_l"></a>strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
 
 현재 로캘이나 전달된 로캘을 사용하여 문자열 길이를 가져옵니다. 이러한 함수는 [strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)의 더 안전한 버전입니다.
 
 > [!IMPORTANT]
-> **_mbsnlen**, **_mbsnlen_l**합니다 **_mbstrnlen**, 및 **_mbstrnlen_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> Windows 런타임에서 실행 되는 응용 프로그램에서는 **_mbsnlen**, **_mbsnlen_l**, **_mbstrnlen**및 **_mbstrnlen_l** 를 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -124,22 +127,22 @@ Null 종료 문자열입니다.
 
 ## <a name="return-value"></a>반환 값
 
-이러한 함수는 null 종결 문자를 제외하고 문자열에 있는 문자의 수를 반환합니다. Null 종결자를 내 첫 번째 경우 *numberOfElements* 문자열의 바이트 (또는 와이드 문자 **wcsnlen**), 한 다음 *numberOfElements* 반환 됩니다 는 오류 조건을 나타냅니다. null로 끝나는 문자열이 엄격 하 게 된 길이 보다 작거나 *numberOfElements*합니다.
+이러한 함수는 null 종결 문자를 제외하고 문자열에 있는 문자의 수를 반환합니다. 문자열의 첫 번째 *numberofelements* 바이트 (또는 **wcsnlen**의 와이드 문자) 내에 null 종결자가 없는 경우에는 오류 조건을 나타내기 위해 *numberofelements* 가 반환 됩니다. null로 끝나는 문자열의 길이는 *Numberofelements*보다 작아야 합니다.
 
-**_mbstrnlen** 하 고 **_mbstrnlen_l** 문자열에 잘못 된 멀티 바이트 문자가 포함 된 경우-1을 반환 합니다.
+**_mbstrnlen** 및 **_mbstrnlen_l** 는 문자열에 잘못 된 멀티 바이트 문자가 포함 된 경우-1을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
 > [!NOTE]
-> **strnlen** 에 대 한 대체 기능이 아닙니다 **strlen**; **strnlen** 는 알려진된 버퍼 크기로 들어오는 신뢰할 수 없는 데이터의 크기를 계산 하는 데에 사용 하려는-예를 들어 네트워크 패킷을 합니다. **strnlen** 길이 계산 하지만 문자열이 종료 된 경우 버퍼의 끝까지 진행 하지 않습니다. 다른 상황에서 사용 하 여 **strlen**합니다. (도 마찬가지 **wcsnlen**하십시오 **_mbsnlen**, 및 **_mbstrnlen**.)
+> **strnlen** 은 **strlen**을 대체 하지 않습니다. **strnlen** 은 알려진 크기의 버퍼에서 들어오는 신뢰할 수 없는 데이터의 크기 (예: 네트워크 패킷)를 계산 하는 용도로만 사용 됩니다. **strnlen** 은 길이를 계산 하지만 문자열이 종결 되지 않은 경우 버퍼의 끝을 지나서 이동 하지 않습니다. 다른 경우에는 **strlen**을 사용 합니다. **Wcsnlen**, **_mbsnlen**및 **_mbstrnlen**에도 동일 하 게 적용 됩니다.
 
-이러한 각 함수에 있는 문자의 수를 반환 합니다 *str*null 종결 문자 포함 되지 않습니다. 그러나 **strnlen** 하 고 **strnlen_s** 싱글바이트 문자열로 문자열을 해석 하 고 따라서는 반환 값은 항상 바이트 수와 같은 문자열을 멀티 바이트를 포함 하는 경우에 문자입니다. **wcsnlen** 하 고 **wcsnlen_s** 와이드 문자 버전입니다 **strnlen** 하 고 **strnlen_s** 각각에 대 한 인수 **wcsnlen**  하 고 **wcsnlen_s** 는 와이드 문자 문자열 및 문자 수는 와이드 문자 단위로 합니다. 이 고, 그렇지 **wcsnlen** 하 고 **strnlen** 동일 하 게 동작을 수행 하는 대로 **strnlen_s** 하 고 **wcsnlen_s**합니다.
+이러한 각 함수는 null 종결 문자를 포함 하지 않고 *str*의 문자 수를 반환 합니다. 그러나 **strnlen** 및 **strnlen_s** 는 문자열을 싱글바이트 문자열로 해석 하므로 문자열에 멀티 바이트 문자가 포함 되어 있더라도 반환 값은 항상 바이트 수와 동일 합니다. **wcsnlen** 및 **wcsnlen_s** 는 각각 **strnlen** 및 **strnlen_s** 의 와이드 문자 버전입니다. **wcsnlen** 및 **wcsnlen_s** 에 대 한 인수는 와이드 문자열이 고 문자 수는 와이드 문자 단위입니다. 그렇지 않으면 **strnlen_s** 및 **wcsnlen_s**처럼 **wcsnlen** 및 **strnlen** 이 동일 하 게 작동 합니다.
 
-**strnlen**, **wcsnlen**, 및 **_mbsnlen** 해당 매개 변수를 확인 하지 않습니다. 하는 경우 *str* 됩니다 **NULL**, 액세스 위반이 발생 합니다.
+**strnlen**, **wcsnlen**및 **_mbsnlen** 는 해당 매개 변수의 유효성을 검사 하지 않습니다. *Str* 이 **NULL**이면 액세스 위반이 발생 합니다.
 
-**strnlen_s** 하 고 **wcsnlen_s** 해당 매개 변수 유효성 검사 합니다. 하는 경우 *str* 됩니다 **NULL**, 함수가 0을 반환 합니다.
+**strnlen_s** 및 **wcsnlen_s** 는 해당 매개 변수의 유효성을 검사 합니다. *Str* 이 **NULL**인 경우 함수는 0을 반환 합니다.
 
-**_mbstrnlen** 도 해당 매개 변수 유효성을 검사 합니다. 경우 *str* 됩니다 **NULL**, 이거나 *numberOfElements* 보다 크면 **INT_MAX**를 **_mbstrnlen** 에 설명 된 대로 잘못 된 매개 변수 예외를 생성 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **_mbstrnlen** 설정 **errno** 하 **EINVAL** -1을 반환 합니다.
+또한 **_mbstrnlen** 는 매개 변수의 유효성을 검사 합니다. *Str* 이 **NULL**이거나 *numberofelements* 가 **INT_MAX**보다 큰 경우 **_mbstrnlen** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 예외를 생성 합니다. 계속 해 서 실행 하도록 허용한 경우 **_mbstrnlen** 는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -149,9 +152,9 @@ Null 종료 문자열입니다.
 |**_tcscnlen**|**strnlen**|**_mbsnlen**|**wcsnlen**|
 |**_tcscnlen_l**|**strnlen**|**_mbsnlen_l**|**wcsnlen**|
 
-**_mbsnlen** 하 고 **_mbstrnlen** 멀티 바이트 문자 문자열의 멀티 바이트 문자의 수를 반환 합니다. **_mbsnlen** 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 하는 현재 사용 중이거나 전달 되는 로캘에 따라은 멀티 바이트 문자의 유효성에 대 한 테스트 하지 않습니다. **_mbstrnlen** 멀티 바이트 문자의 유효성에 대 한 테스트 및 멀티 바이트 문자 시퀀스를 인식 합니다. 경우에 전달 되는 문자열 **_mbstrnlen** 잘못 된 멀티 바이트 문자가 포함 **errno** 로 설정 되어 **EILSEQ**합니다.
+**_mbsnlen** 및 **_mbstrnlen** 는 멀티 바이트 문자열의 멀티 바이트 문자 수를 반환 합니다. **_mbsnlen** 는 현재 사용 중인 멀티 바이트 코드 페이지 또는 전달 된 로캘에 따라 멀티 바이트 문자 시퀀스를 인식 합니다. 멀티 바이트 문자의 유효성을 테스트 하지는 않습니다. **_mbstrnlen** 는 멀티 바이트 문자의 유효성을 테스트 하 고 멀티 바이트 문자 시퀀스를 인식 합니다. **_Mbstrnlen** 에 전달 된 문자열에 잘못 된 멀티 바이트 문자가 포함 된 경우 **Errno** 는 **eilseq**로 설정 됩니다.
 
-출력 값의 설정이 적용 됩니다는 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 내용은 합니다. 이러한 함수의 버전은 제외 하 고는 동일가 합니다 **_l** 접미사가 있는 버전이 로캘 종속 동작에 현재 로캘을 사용 합니다 **_l** 접미사 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 영향을 받습니다. 자세한 내용은 [setlocale, _wsetlocale을](setlocale-wsetlocale.md) 참조 하세요. **_L** 접미사가 없는 함수는이 로캘 종속 동작에 현재 로캘을 사용 하 고 **_l** 접미사가 있는 버전은 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고 이러한 함수의 버전은 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

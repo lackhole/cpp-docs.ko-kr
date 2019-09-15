@@ -1,12 +1,12 @@
 ---
 title: isgraph, iswgraph, _isgraph_l, _iswgraph_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - isgraph
 - iswgraph
 - _iswgraph_l
 - _isgraph_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _isgraph_l
 - _iswgraph_l
@@ -37,14 +40,14 @@ helpviewer_keywords:
 - _istgraph function
 - _ismbcgraph_l function
 ms.assetid: 531a5f34-4302-4d0a-8a4f-b7ea150ad941
-ms.openlocfilehash: af3fae11536a869c0c3e3ebae285ebbaca5ea907
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 88219ca6dc4218fc13f7d7c0b5f2ba399c07d501
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287045"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954871"
 ---
-# <a name="isgraph-iswgraph-isgraphl-iswgraphl"></a>isgraph, iswgraph, _isgraph_l, _iswgraph_l
+# <a name="isgraph-iswgraph-_isgraph_l-_iswgraph_l"></a>isgraph, iswgraph, _isgraph_l, _iswgraph_l
 
 정수가 그래픽 문자를 나타내는지 여부를 확인합니다.
 
@@ -74,11 +77,11 @@ int _iswgraph_l(
 
 ## <a name="return-value"></a>반환 값
 
-각 이러한 루틴 0이 아닌 경우 반환 *c* 공백이 아닌 인쇄 가능한 문자의 특정 표현입니다. **isgraph** 이면 0이 아닌 값을 반환 *c* 공백이 아닌 인쇄 가능한 문자입니다. **iswgraph** 이면 0이 아닌 값을 반환 *c* 는 와이드 문자 공백이 아닌 인쇄 가능한 와이드 문자. 이러한 루틴은 각각 0을 반환 *c* 테스트 조건을 충족 하지 않습니다.
+*C* 가 공백이 아닌 인쇄 가능한 문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. *c* 가 공백이 아닌 인쇄 가능한 문자인 경우 **isgraph** 는 0이 아닌 값을 반환 합니다. *c* 가 와이드 문자 공간 이외의 인쇄 가능한 와이드 문자인 경우 **iswgraph** 는 0이 아닌 값을 반환 합니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
-접미사가 있는 이러한 함수 버전은 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_L** 접미사가 있는 이러한 함수 버전은 로캘 종속 동작에 대해 현재 로캘 대신 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-동작 **isgraph** 하 고 **_isgraph_l** 경우 정의 되지 않습니다 *c* EOF가 범위인 0부터 0xff까지 포괄 합니다. 디버그 CRT 라이브러리가 사용 되는 경우 및 *c* 함수 raise 이러한 값 중 하나가 아닌 한 어설션입니다.
+*C* 가 EOF가 아니거나 0에서 0xff 사이 (포함) 범위 내에 있는 경우 **isgraph** 및 **_isgraph_l** 의 동작이 정의 되지 않습니다. 디버그 CRT 라이브러리가 사용 되 고 *c* 가 이러한 값 중 하나가 아니면 함수는 어설션을 발생 시킵니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

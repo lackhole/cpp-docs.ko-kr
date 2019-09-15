@@ -1,9 +1,9 @@
 ---
 title: wcrtomb
 ms.date: 11/04/2016
-apiname:
+api_name:
 - wcrtomb
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wcrtomb
 helpviewer_keywords:
@@ -24,12 +27,12 @@ helpviewer_keywords:
 - multibyte characters
 - characters, converting
 ms.assetid: 717f1b21-2705-4b7f-b6d0-82adc5224340
-ms.openlocfilehash: a5fad3f41c7ed459a1af3fae7c6a5a85c867d5ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d2108b90f6884113f0bd974bf7aa634544adf5f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188655"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945217"
 ---
 # <a name="wcrtomb"></a>wcrtomb
 
@@ -60,7 +63,7 @@ size_t wcrtomb(
 변환할 와이드 문자입니다.
 
 *mbstate*<br/>
-에 대 한 포인터를 **mbstate_t** 개체입니다.
+**Mbstate_t** 개체에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -68,17 +71,17 @@ size_t wcrtomb(
 
 ## <a name="remarks"></a>설명
 
-합니다 **wcrtomb** 함수에 포함 된 지정한 변환 상태부터 시작 하 여 와이드 문자를 변환 *mbstate*, 포함 된 값에서 *wchar*에 주소를 나타내는 *mbchar*합니다. 반환 값은 해당 멀티 바이트 문자를 표시 하는 데 필요한 바이트 수를 반환 하지 것입니다 하지만 둘 **MB_CUR_MAX** 바이트입니다.
+**Wcrtomb** 함수는 *mbstate*에 포함 된 지정 된 변환 상태에서 시작 하 여 *wchar*에 포함 된 값에서 *mbstate*로 표시 되는 주소로 와이드 문자를 변환 합니다. 반환 값은 해당 멀티 바이트 문자를 나타내는 데 필요한 바이트 수 이지만 **MB_CUR_MAX** 바이트를 초과 하는 값은 반환 되지 않습니다.
 
-하는 경우 *mbstate* 이 null 이면 내부 **mbstate_t** 변환 상태가 포함 된 개체 *mbchar* 사용 됩니다. 경우 문자 시퀀스 *wchar* 해당 멀티 바이트 없는 문자 표시를-1이 반환 하며 **errno** 로 설정 되어 **EILSEQ**합니다.
+*Mbstate* 가 null 이면 *mbstate* 의 변환 상태를 포함 하는 내부 **mbstate_t** 개체가 사용 됩니다. 문자 시퀀스의 *wchar* 에 해당 하는 멀티 바이트 문자 표현이 없으면-1이 반환 되 고 **Errno** 가 **eilseq**로 설정 됩니다.
 
-합니다 **wcrtomb** 함수에서 다른 [wctomb, _wctomb_l](wctomb-wctomb-l.md) 해당 다시 시작할 수 있다는입니다. 변환 상태에 저장 됩니다 *mbstate* 같거나 다른 다시 시작 가능 함수에 대 한 후속 호출에 대 한 합니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다. 예를 들어, 응용 프로그램 사용 **wcsrlen** 대신 **wcsnlen**경우에 대 한 후속 호출 **wcsrtombs** 대신 사용한 **wcstombs**.
+**Wcrtomb** 함수는 [wctomb, _wctomb_l](wctomb-wctomb-l.md) 와 다시 시작할 다릅니다. 동일 하거나 다른 다시 시작 가능 함수에 대 한 후속 호출의 경우 변환 상태가 *mbstate* 에 저장 됩니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다. 예를 들어 **wcstombs**대신 **wcsrtombs** 에 대 한 후속 호출을 사용 하는 경우 응용 프로그램은 **wcsnlen**대신 **wcsrlen** 을 사용 합니다.
 
 C++에서 이 함수는 해당 최신 보안 버전을 호출하는 템플릿 오버로드를 포함합니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
 ## <a name="exceptions"></a>예외
 
-**wcrtomb** 현재 스레드의 함수가 호출 함수는 다중 스레드 안전 **setlocale** 이 함수가 실행 중인 동안 그리고 합니다 *mbstate* null입니다.
+**Wcrtomb** 함수는이 함수가 실행 되는 동안, 그리고 *mbstate* 가 null 인 동안 현재 스레드의 함수가 **setlocale** 을 호출 하지 않는 한 다중 스레드 안전을 보장 합니다.
 
 ## <a name="example"></a>예제
 

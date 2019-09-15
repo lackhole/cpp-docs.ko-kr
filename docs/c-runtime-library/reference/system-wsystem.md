@@ -1,10 +1,10 @@
 ---
 title: system, _wsystem
 ms.date: 11/04/2016
-apiname:
+api_name:
 - system
 - _wsystem
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tsystem
 - _wsystem
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - commands, executing
 - command interpreter
 ms.assetid: 7d3df2b6-f742-49ce-bf52-012b0aee3df5
-ms.openlocfilehash: 46c4949fcc8cfbe4a3477e66b57d8fc6fc97ed73
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 82b39f012bebb41772cdc7350eb08dba48678fdd
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62259094"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957673"
 ---
-# <a name="system-wsystem"></a>system, _wsystem
+# <a name="system-_wsystem"></a>system, _wsystem
 
 명령을 실행합니다.
 
@@ -61,7 +64,7 @@ int _wsystem(
 
 ## <a name="return-value"></a>반환 값
 
-하는 경우 *명령* 됩니다 **NULL** 명령 인터프리터가 발견 되 면 0이 아닌 값을 반환 합니다. 명령 인터프리터가 없으면 0을 반환 하 고 설정 **errno** 하 **ENOENT**합니다. 하는 경우 *명령* 아닙니다 **NULL**를 **system** 명령 인터프리터에 의해 반환 되는 값을 반환 합니다. 명령 인터프리터가 값 0을 반환할 때만 값 0을 반환합니다. 반환 값은-1 오류를 나타내는 및 **errno** 다음 값 중 하나로 설정 됩니다.
+*Command* 가 **NULL** 이 고 명령 인터프리터가 발견 되 면 0이 아닌 값을 반환 합니다. 명령 인터프리터를 찾을 수 없는 경우는 0을 반환 하 고 **errno** 를 **enoent (** 로 설정 합니다. *Command* 가 **NULL**이 아니면 **system** 은 명령 인터프리터에서 반환 된 값을 반환 합니다. 명령 인터프리터가 값 0을 반환할 때만 값 0을 반환합니다. 반환 값-1은 오류를 나타내고 **errno** 은 다음 값 중 하나로 설정 됩니다.
 
 |||
 |-|-|
@@ -74,11 +77,11 @@ int _wsystem(
 
 ## <a name="remarks"></a>설명
 
-합니다 **시스템** 전달 함수 *명령* 명령 인터프리터를 실행 하는 운영 체제 명령으로 문자열입니다. **시스템** 사용 하는 **COMSPEC** 하 고 **경로** 환경 변수를 찾을 명령 인터프리터 파일 CMD.exe 합니다. 하는 경우 *명령* 됩니다 **NULL**, 함수는 명령 인터프리터가 존재 하는지 여부를 확인 합니다.
+**시스템** 함수 *는 명령을 명령 인터프리터에 전달 하며* ,이 명령은 문자열을 운영 체제 명령으로 실행 합니다. **시스템** 은 **COMSPEC** 및 **PATH** 환경 변수를 사용 하 여 명령 인터프리터 파일 cmd.exe를 찾습니다. *Command* 가 **NULL**인 경우 함수는 명령 인터프리터가 있는지만 확인 합니다.
 
-사용 하 여 명시적으로 플러시 해야 [fflush](fflush.md) 또는 [_flushall](flushall.md)를 호출 하기 전에 모든 스트림을 닫아야 **system**합니다.
+[Fflush](fflush.md) 또는 [_flushall](flushall.md)을 사용 하 여 명시적으로 플러시 하거나 **시스템**을 호출 하기 전에 스트림을 닫아야 합니다.
 
-**_wsystem** 의 와이드 문자 버전이 **시스템**; *명령* 인수를 **_wsystem** 는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**_wsystem** 은 **시스템**의 와이드 문자 버전입니다. **_wsystem** 에 대 한 *명령* 인수는 와이드 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -97,7 +100,7 @@ int _wsystem(
 
 ## <a name="example"></a>예제
 
-이 예제에서는 **시스템** 텍스트 파일을 입력 합니다.
+이 예제에서는 **시스템** 을 사용 하 여 텍스트 파일을 입력 합니다.
 
 ```C
 // crt_system.c
@@ -110,7 +113,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crtsystemtxt"></a>입력: crt_system.txt
+### <a name="input-crt_systemtxt"></a>입력: crt_system.txt
 
 ```Input
 Line one.

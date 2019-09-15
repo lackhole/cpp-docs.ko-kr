@@ -1,9 +1,9 @@
 ---
 title: _CrtSetBreakAlloc
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtSetBreakAlloc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtSetBreakAlloc
 - _CrtSetBreakAlloc
@@ -22,14 +25,14 @@ helpviewer_keywords:
 - CrtSetBreakAlloc function
 - _CrtSetBreakAlloc function
 ms.assetid: 33bfc6af-a9ea-405b-a29f-1c2d4d9880a1
-ms.openlocfilehash: bbc4b0de553533dde95f37675b3c9234569e3505
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: e13c908c1efd1af9196885dee6e3b0f45845946b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342958"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942311"
 ---
-# <a name="crtsetbreakalloc"></a>_CrtSetBreakAlloc
+# <a name="_crtsetbreakalloc"></a>_CrtSetBreakAlloc
 
 지정된 개체 할당 순서 번호에 대한 중단점을 설정합니다(디버그 버전에만 해당).
 
@@ -52,11 +55,11 @@ long _CrtSetBreakAlloc(
 
 ## <a name="remarks"></a>설명
 
-**_CrtSetBreakAlloc** 메모리 할당의 특정 지점에서 주요 요청의 원점으로 다시 추적 하 여 메모리 누수 탐지를 수행 하는 응용 프로그램을 허용 합니다. 메모리 블록에 할당된 순차적 개체 할당 순서 번호가 힙에서 할당된 경우 이 함수는 이 번호를 사용합니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtSetBreakAlloc** 전처리 중 제거 됩니다.
+**_CrtSetBreakAlloc** 를 사용 하면 응용 프로그램에서 메모리 할당의 특정 지점에서 중단 하 고 요청 원본으로 다시 추적 하 여 메모리 누수 검색을 수행할 수 있습니다. 메모리 블록에 할당된 순차적 개체 할당 순서 번호가 힙에서 할당된 경우 이 함수는 이 번호를 사용합니다. [_Debug](../../c-runtime-library/debug.md) 가 정의 되지 않은 경우 전처리 중에 **_CrtSetBreakAlloc** 에 대 한 호출이 제거 됩니다.
 
-Crtdbg.h에 정의된 대로 개체 할당 순서 번호는 **_CrtMemBlockHeader** 구조체의 *lRequest* 필드에 저장됩니다. 디버그 덤프 함수 중 하나가 메모리 블록에 대 한 정보를 보고 하는 경우이 번호는 중괄호로 묶어 표시, 같은 {36}합니다.
+Crtdbg.h에 정의된 대로 개체 할당 순서 번호는 **_CrtMemBlockHeader** 구조체의 *lRequest* 필드에 저장됩니다. 디버그 덤프 함수 중 하나가 메모리 블록에 대 한 정보를 보고 하는 경우이 숫자는와 {36}같이 중괄호로 묶입니다.
 
-방법에 대 한 자세한 내용은 **_CrtSetBreakAlloc** 내용은 다른 메모리 관리 함수와 함께 사용할 수 있습니다 [힙 할당 요청 추적](/visualstudio/debugger/crt-debug-heap-details)합니다. 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
+다른 메모리 관리 함수와 함께 **_CrtSetBreakAlloc** 를 사용 하는 방법에 대 한 자세한 내용은 [힙 할당 요청 추적](/visualstudio/debugger/crt-debug-heap-details)을 참조 하세요. 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

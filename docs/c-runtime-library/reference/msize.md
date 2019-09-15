@@ -1,9 +1,9 @@
 ---
 title: _msize
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _msize
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - msize
 - _msize
@@ -24,14 +27,14 @@ helpviewer_keywords:
 - msize function
 - _msize function
 ms.assetid: 02b1f89e-d0d7-4f12-938a-9eeba48a0f88
-ms.openlocfilehash: 0321e42face817a0a9f12d780f72c86c67ba308d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1760cfa6a416e2eb4cd7b549cb5ae9bed00a609
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156293"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951429"
 ---
-# <a name="msize"></a>_msize
+# <a name="_msize"></a>_msize
 
 힙에 할당된 메모리 블록의 크기를 반환합니다.
 
@@ -50,15 +53,15 @@ size_t _msize(
 
 ## <a name="return-value"></a>반환 값
 
-**_msize** 크기 (바이트)를 부호 없는 정수로 반환 합니다.
+**_msize** 는 부호 없는 정수로 크기 (바이트)를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_msize** 함수를 호출 하 여 할당 된 메모리 블록의 바이트에서 크기를 반환 **calloc**를 **malloc**, 또는 **realloc**합니다.
+**_Msize** 함수는 **calloc**, **malloc**또는 **realloc**에 대 한 호출에 의해 할당 된 메모리 블록의 크기 (바이트)를 반환 합니다.
 
-응용 프로그램이 C 런타임 라이브러리의 디버그 버전과 연결 됩니다 **_msize** 로 확인 되 [_msize_dbg](msize-dbg.md)합니다. 디버깅 프로세스 동안 힙을 관리하는 방법에 대한 자세한 내용은 [CRT 디버그 힙](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
+응용 프로그램이 C 런타임 라이브러리의 디버그 버전에 연결 된 경우 **_msize** 는 [_msize_dbg](msize-dbg.md)로 확인 됩니다. 디버깅 프로세스 동안 힙을 관리하는 방법에 대한 자세한 내용은 [CRT 디버그 힙](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 *memblock* 가 null 포인터 **_msize** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수를 설정 하는 오류 처리 되 면 **errno** 하 **EINVAL** -1을 반환 합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *Memblock* 이 null 포인터인 경우 **_Msize** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 오류가 처리 되 면 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

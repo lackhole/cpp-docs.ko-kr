@@ -1,9 +1,9 @@
 ---
 title: qsort
 ms.date: 11/04/2016
-apiname:
+api_name:
 - qsort
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - qsort
 helpviewer_keywords:
@@ -26,12 +29,12 @@ helpviewer_keywords:
 - sorting arrays
 - arrays [CRT], sorting
 ms.assetid: d6cb33eb-d209-485f-8d41-229eb743c027
-ms.openlocfilehash: 8a770965a03e43227b99f122924c723691f79c61
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: HT
+ms.openlocfilehash: f445158bb72c50507af913986aff2d225ee50928
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358101"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949706"
 ---
 # <a name="qsort"></a>qsort
 
@@ -64,9 +67,9 @@ void qsort(
 
 ## <a name="remarks"></a>설명
 
-합니다 **qsort** 배열을 정렬 하려면 빠른 정렬 알고리즘을 구현 하는 함수 *번호* 의 각 요소 *너비* 바이트입니다. 인수 *기본* 정렬할 배열의 밑에 대 한 포인터입니다. **qsort** 정렬 된 요소를 사용 하 여이 배열을 덮어씁니다.
+**Qsort** 함수는 빠른 정렬 알고리즘을 구현 하 여 각각 *width* 바이트의 *숫자* 요소 배열을 정렬 합니다. 인수 *밑* 은 정렬할 배열의 기준에 대 한 포인터입니다. **qsort** 는 정렬 된 요소를 사용 하 여이 배열을 덮어씁니다.
 
-**qsort** 호출을 *비교* 일상적인 하나 이상의 정렬 하는 동안 시간 및 각 호출에서 두 배열 요소에 대 한 포인터를 전달 합니다.
+**qsort** 는 정렬 하는 동안 *비교* 루틴을 한 번 이상 호출 하 고 각 호출에서 두 배열 요소에 포인터를 전달 합니다.
 
 ```C
 compare( (void *) & elem1, (void *) & elem2 );
@@ -74,15 +77,15 @@ compare( (void *) & elem1, (void *) & elem2 );
 
 루틴은 요소를 비교한 후에 다음 값 중 하나를 반환합니다.
 
-|비교 함수 반환 값|설명|
+|비교 함수 반환 값|Description|
 |-----------------------------------|-----------------|
-|< 0|**elem1** 보다 작거나 **elem2**|
-|0|**elem1** 같음 **elem2**|
-|> 0|**elem1** 보다 큰 **elem2**|
+|< 0|**elem1** 보다 작음 **elem2**|
+|0|**elem2** 에 해당 하는 **elem1**|
+|> 0|**elem1** **elem2** 보다 큼|
 
 비교 함수에 정의된 대로 배열은 오름차순으로 정렬됩니다. 배열을 내림차순으로 정렬하려면 비교 함수에서 "보다 큼"과 "보다 작음"의 의미를 반전하면 됩니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *비교* 또는 *번호* 는 **NULL**, 이거나 *기본* 은 **NULL** 및 *수* 이 값은 0 이거나 *너비* 작으면 0 보다는 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 하 고 **errno** 로 설정 된 **EINVAL**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *Compare* 또는 *number* 가 **null**이거나 *base* 가 **null** 이 고 *숫자가* 0이 아닌 경우 또는 *width* 가 0 보다 작은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는를 반환 하 고 **errno** 는 **EINVAL**로 설정 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

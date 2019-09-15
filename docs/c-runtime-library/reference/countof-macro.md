@@ -1,7 +1,7 @@
 ---
 title: _countof 매크로
 ms.date: 03/22/2018
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _countof
 - countof
@@ -20,16 +23,16 @@ helpviewer_keywords:
 - countof macro
 - _countof macro
 ms.assetid: 86198767-f7e5-4beb-898d-3cbbf60350a3
-ms.openlocfilehash: 60b4350d6cf14a545de67de0bdaee70ee2099006
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3debd63da7d218e29f31847034c69d89b4691643
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335349"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942681"
 ---
-# <a name="countof-macro"></a>_countof 매크로
+# <a name="_countof-macro"></a>_countof 매크로
 
-정적으로 할당 된 배열의 요소 수를 계산합니다.
+정적으로 할당 된 배열의 요소 수를 계산 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,13 +47,13 @@ ms.locfileid: "62335349"
 
 ## <a name="return-value"></a>반환 값
 
-로 표현 된 배열의 요소 수를 **size_t**합니다.
+**Size_t**로 표현 된 배열의 요소 수입니다.
 
 ## <a name="remarks"></a>설명
 
-**_countof** 함수와 비슷한 전처리기 매크로로 구현 됩니다. C++ 버전에 대 한 포인터를 정적으로 선언 된 배열 대신 전달 되는 경우 컴파일 시 검색할 추가 템플릿 메커니즘입니다.
+**_countof** 는 함수 형태의 전처리기 매크로로 구현 됩니다. 버전 C++ 에는 정적으로 선언 된 배열 대신 포인터가 전달 되는 경우 컴파일 타임에 검색할 추가 템플릿 기계가 있습니다.
 
-했는지 *배열* 가 실제로 배열에 대 한 포인터가 아닌 합니다. C에서는 **_countof** 경우에 잘못 된 결과 생성 *배열* 대 한 포인터입니다. C++를 **_countof** 면 컴파일되지 않습니다 *배열* 대 한 포인터입니다.  배열 함수에 매개 변수로 전달 *포인터로 decays*, 함수 내에서 사용할 수 없다는 의미 **_countof** 배열의 범위를 확인 합니다.
+*배열이* 실제로 포인터가 아니라 배열 인지 확인 합니다. C에서 **_countof** 는 *배열이* 포인터인 경우 잘못 된 결과를 생성 합니다. 에서 C++ *배열이* 포인터인 경우 **의 _countof는** 컴파일되지 않습니다.  함수에 매개 변수로 전달 되는 배열 *decays는 포인터에 대*한 매개 변수로 전달 됩니다. 즉, 함수 내에서 **_countof** 를 사용 하 여 배열의 범위를 확인할 수 없습니다.
 
 ## <a name="requirements"></a>요구 사항
 

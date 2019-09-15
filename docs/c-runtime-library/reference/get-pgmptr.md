@@ -1,9 +1,9 @@
 ---
 title: _get_pgmptr
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_pgmptr
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - get_pgmptr
 - _get_pgmptr
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - pgmptr global variable
 - _pgmptr global variable
 ms.assetid: 29f16a9f-a685-4721-add3-7fad4f67eece
-ms.openlocfilehash: 2d3959a69d85fca38e4d099d3365553f88fd015f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4f9a3b19cc7eb1870b87ec46b7923987ec646e32
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287504"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955760"
 ---
-# <a name="getpgmptr"></a>_get_pgmptr
+# <a name="_get_pgmptr"></a>_get_pgmptr
 
-현재 값을 가져옵니다 합니다 **_pgmptr** 전역 변수입니다.
+**_Pgmptr** 전역 변수의 현재 값을 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,15 +50,15 @@ errno_t _get_pgmptr(
 ### <a name="parameters"></a>매개 변수
 
 *pValue*<br/>
-현재 값을 채울 문자열에 대 한 포인터를 **_pgmptr** 변수입니다.
+**_Pgmptr** 변수의 현재 값으로 채울 문자열에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-성공하는 경우 0을 반환하고, 실패하는 경우 오류 코드를 반환합니다. 하는 경우 *pValue* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **EINVAL**합니다.
+성공하는 경우 0을 반환하고, 실패하는 경우 오류 코드를 반환합니다. *Pvalue* 가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-호출 **_get_pgmptr** 프로그램 좁은 진입점이 있으면 같은 **main ()** 하거나 **WinMain()** 합니다. 합니다 **_pgmptr** 전역 변수는 프로세스와 관련 된 실행 파일의 전체 경로 포함 합니다. 자세한 내용은 [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md)를 참조하세요.
+프로그램에 **main ()** 또는 **WinMain ()** 과 같은 좁은 진입점이 있는 경우에만 **_get_pgmptr** 를 호출 합니다. **_Pgmptr** 전역 변수는 프로세스와 연결 된 실행 파일의 전체 경로를 포함 합니다. 자세한 내용은 [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

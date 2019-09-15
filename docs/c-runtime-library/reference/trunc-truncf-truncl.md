@@ -1,11 +1,11 @@
 ---
 title: trunc, truncf, truncl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - trunc
 - truncf
 - truncl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - trunc
 - truncf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - truncf function
 - truncl function
 ms.assetid: de2038ac-ac0b-483e-870c-e8992dcd4fd0
-ms.openlocfilehash: 6e023b9d894ea1b40a0e056e73b7c32f1e3cbed7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b0c615c91e562fa45f791d8cc20f39a830013aeb
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62268938"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946000"
 ---
 # <a name="trunc-truncf-truncl"></a>trunc, truncf, truncl
 
@@ -61,11 +64,11 @@ float trunc( float x ); //C++ only
 
 ## <a name="return-value"></a>반환 값
 
-성공한 경우의 정수 값을 반환 합니다. *x*0에 가깝도록 반올림 합니다.
+성공 하면 0으로 반올림 되 고 *x*의 정수 값을 반환 합니다.
 
 그렇지 않으면 다음 중 하나를 반환할 수 있습니다.
 
-|문제|반환|
+|문제점|반환|
 |-----------|------------|
 |*x* = ±INFINITY|x|
 |*x* =  ±0|x|
@@ -75,7 +78,7 @@ float trunc( float x ); //C++ only
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **trunc** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **trunc** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 형식을 사용 하 고 반환 하는 **trunc** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **trunc** 은 항상 **double**을 사용 하 고 반환 합니다.
 
 가장 큰 부동 소수점 값은 정확한 정수이므로 이 함수는 자체적으로는 오버플로되지 않습니다. 그러나 값을 정수값으로 반환하여 함수가 오버플로되도록 할 수 있습니다.
 

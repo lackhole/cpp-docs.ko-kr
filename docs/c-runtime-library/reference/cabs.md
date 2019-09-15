@@ -1,9 +1,9 @@
 ---
 title: _cabs
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _cabs
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cabsl
 - _cabs
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - _cabs function
 - calculating absolute values
 ms.assetid: fea292ee-1a39-4a0a-b416-4a189346ff26
-ms.openlocfilehash: 3e95b6f568ce66b8e9e5483bd1dcbcfaa7af3d28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e2536fbeed2f466d3795e2ed26e643279e8bc67
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341069"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943420"
 ---
-# <a name="cabs"></a>_cabs
+# <a name="_cabs"></a>_cabs
 
 복소수의 절대값을 계산합니다.
 
@@ -54,11 +57,11 @@ double _cabs(
 
 ## <a name="return-value"></a>반환 값
 
-**_cabs** 성공 하는 경우 해당 인수의 절대값을 반환 합니다. 오버플로에서 **_cabs** 반환 **HUGE_VAL** 설정 하 고 **errno** 에 **ERANGE**합니다. [_matherr](matherr.md)을 사용하여 오류 처리를 변경할 수 있습니다.
+**_wfa** 는 성공 하는 경우 인수의 절대값을 반환 합니다. 오버플로가 발생 하면 **errno** 는 **HUGE_VAL** **를 반환** 하 고 **ERANGE**로 설정 합니다. [_matherr](matherr.md)을 사용하여 오류 처리를 변경할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_cabs** 형식의 구조 여야 하는 복합 숫자의 절대값을 계산 하는 함수 [_complex](../../c-runtime-library/standard-types.md)합니다. 구조 *z* 실수부 이루어집니다 *x* 허수 구성 요소가 *y*합니다. 에 대 한 호출 **_cabs** 해당 하는 식의 값을 생성 `sqrt( z.x * z.x + z.y * z.y )`합니다.
+**_Cinta** 함수는 복합 형식의 절대값을 계산 합니다 .이 값은 [_cabs](../../c-runtime-library/standard-types.md)형식의 구조체 여야 합니다. 구조체 *z* 는 실제 구성 요소 *x* 및 허수 구성 요소 *y*로 구성 됩니다. **_Ba** 를 호출 하면 식 `sqrt( z.x * z.x + z.y * z.y )`의 값과 동일한 값이 생성 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,9 +1,9 @@
 ---
 title: fetestexcept
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fetestexcept
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,19 +15,22 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fetestexcept
 - fenv/fetestexcept
 helpviewer_keywords:
 - fetestexept function
 ms.assetid: ca4dc43f-5573-440d-bc19-ead7571b13dc
-ms.openlocfilehash: ed75ab0ff13029f6ec10c1aafbcb7f7b23b46fd6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61a68b4569d52b550da3fad12c077b82bb067fa9
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334167"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941003"
 ---
 # <a name="fetestexcept"></a>fetestexcept
 
@@ -52,9 +55,9 @@ int fetestexcept(
 
 ## <a name="remarks"></a>설명
 
-fetestexcept 함수를 사용하여 부동 소수점 작업을 통해 어떤 예외가 발생했는지 확인합니다. 사용 된 *를 제외한* 매개 변수를 테스트 하는 예외 상태 플래그를 지정 합니다. 합니다 **fetestexcept** 함수에 정의 된 다음 예외 매크로 사용 하 여 \<n v. h >에 *제외한* 및 반환 값:
+fetestexcept 함수를 사용하여 부동 소수점 작업을 통해 어떤 예외가 발생했는지 확인합니다. *제외한* 매개 변수를 사용 하 여 테스트할 예외 상태 플래그를 지정 합니다. **Fetestexcept** 함수는 제외한의 fenv. h \<>에 정의 된 다음 예외 매크로를 사용 하 고 반환 값을 사용 합니다.
 
-|예외 매크로|설명|
+|예외 매크로|Description|
 |---------------------|-----------------|
 |FE_DIVBYZERO|초기 부동 소수점 작업에서 특이성 또는 극 오류가 발생했습니다. 무한대 값이 생성되었습니다.|
 |FE_INEXACT|함수가 초기 부동 소수점 작업의 저장된 결과를 강제로 반올림했습니다.|
@@ -63,7 +66,7 @@ fetestexcept 함수를 사용하여 부동 소수점 작업을 통해 어떤 예
 |FE_UNDERFLOW|초기 부동 소수점 작업 결과가 완전히 정확하게 표시하기에 너무 작습니다. 비정상적인 값이 생성되었습니다.|
 |FE_ALLEXCEPT|모든 지원되는 부동 소수점 예외의 비트 OR입니다.|
 
-지정 된 *를 제외한* 인수 또는 매크로 중 두 개 이상의 지원 되는 부동 소수점 예외 매크로 또는 비트는 0 일 수 있습니다. 다른 미치는 *를 제외한* 인수 값이 정의 되지 않습니다.
+지정 된 *제외한* 인수는 0, 지원 되는 부동 소수점 예외 매크로 중 하나 또는 매크로 중 두 개 이상의 비트 or 일 수 있습니다. 다른 *제외한* 인수 값의 효과는 정의 되지 않습니다.
 
 이 함수를 사용하려면 호출 전에 `#pragma fenv_access(on)` 지시문을 사용하여 액세스를 방지할 수 있는 부동 소수점 최적화를 꺼야 합니다. 자세한 내용은 [fenv_access](../../preprocessor/fenv-access.md)을 참조하세요.
 

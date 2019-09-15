@@ -1,9 +1,9 @@
 ---
 title: _get_osfhandle
 ms.date: 05/29/2018
-apiname:
+api_name:
 - _get_osfhandle
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - get_osfhandle
 - _get_osfhandle
@@ -25,14 +28,14 @@ helpviewer_keywords:
 - _get_osfhandle function
 - file handles [C++], operating system
 ms.assetid: 0bdd728a-4fd8-410b-8c9f-01a121135196
-ms.openlocfilehash: cc3b50e3d3f65bee83b8df83aa0adb5c8694e35a
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: 65060689e0a7fc72b67da8fc3bf7ce0af75fd645
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821660"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955779"
 ---
-# <a name="getosfhandle"></a>_get_osfhandle
+# <a name="_get_osfhandle"></a>_get_osfhandle
 
 지정된 파일 설명자와 연결된 운영 체제 파일 핸들을 검색합니다.
 
@@ -51,16 +54,16 @@ intptr_t _get_osfhandle(
 
 ## <a name="return-value"></a>반환 값
 
-경우에 운영 체제 파일 핸들을 반환 합니다 *fd* 유효 합니다. 그렇지 않으면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 반환 **INVALID_HANDLE_VALUE** (-1). 또한 설정 **errno** 하 **EBADF**, 잘못 된 파일 핸들을 나타내는입니다. 경고 Win32 파일 핸들을으로 결과 사용 하는 경우를 방지 하려면 캐스팅 하는 **처리** 형식입니다.
+*Fd* 가 유효한 경우 운영 체제 파일 핸들을 반환 합니다. 그렇지 않으면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용 된 경우 **INVALID_HANDLE_VALUE** (-1)을 반환 합니다. 또한 **errno** 를 **ebadf**로 설정 하 여 잘못 된 파일 핸들을 나타냅니다. 결과를 Win32 파일 핸들로 사용할 때 경고를 방지 하려면 **핸들** 형식으로 캐스팅 합니다.
 
 > [!NOTE]
-> 때 **stdin**를 **stdout**, 및 **stderr** 되지 스트림 (예를 들어 Windows 응용 프로그램을 콘솔 창이 없는)를 사용 하 여 연결 된 파일 설명자 값 반환 되는 이러한 스트림을 [_fileno](fileno.md) 특수도-2 값입니다. 마찬가지로, 파일 설명자에 대 한 호출의 결과가 아닌 매개 변수로 0, 1 또는 2를 사용 하는 경우 **_fileno**하십시오 **_get_osfhandle** 파일 설명자를 연결한 경우에 특수 값-2를 반환 합니다 스트림, 설정 하지 않습니다 **errno**합니다. 그러나이 유효한 파일 핸들 값을 되며 사용 하려고 하는 후속 호출은 실패할 수 있습니다.
+> **Stdin**, **stdout**및 **stderr** 이 스트림과 연결 되지 않은 경우 (예: 콘솔 창이 없는 Windows 응용 프로그램에서) 이러한 스트림의 파일 설명자 값은 [_fileno](fileno.md) 에서 특수 값-2로 반환 됩니다. 마찬가지로, **_fileno**에 대 한 호출의 결과 대신 0, 1 또는 2를 파일 설명자 매개 변수로 사용 하는 경우 **_get_osfhandle** 는 파일 설명자가 스트림과 연결 되어 있지 않고 **errno**를 설정 하지 않은 경우에도 특수 값-2를 반환 합니다. 그러나이 값은 유효한 파일 핸들 값이 아닙니다 .이 값을 사용 하려고 시도 하는 후속 호출은 실패할 수 있습니다.
 
-에 대 한 자세한 내용은 **EBADF** 다른 오류 코드를 살펴보고 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)합니다.
+**Ebadf** 및 기타 오류 코드에 대 한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조 하세요.
 
 ## <a name="remarks"></a>설명
 
-운영 체제 (OS) 파일 핸들이 여 가져온 파일을 닫으려면 **_get_osfhandle**를 호출 [_close](close.md) 파일 설명자에 *fd*합니다. 호출 하지 않습니다 **CloseHandle** 이 함수의 반환 값입니다. 기본 OS 파일 핸들이 소유 합니다 *fd* 설명자 파일과 면 연결이 닫힙니다 [_close](close.md) 라고 하 *fd*. 파일 설명자가 소유 하는 경우는 `FILE *` 호출한 스트림에 [fclose](fclose-fcloseall.md) 에 `FILE *` 스트림의 파일 설명자와 기본 OS 파일 핸들을 닫습니다. 이 경우 호출 하지 마세요 [_close](close.md) 파일 설명자에 있습니다.
+**_Get_osfhandle**에서 운영 체제 (OS) 파일 핸들을 가져오는 파일을 닫으려면 파일 설명자 *fd*에서 [_close](close.md) 를 호출 합니다. 이 함수의 반환 값에 대해 **CloseHandle** 을 호출 하지 마세요. 기본 OS 파일 핸들은 *fd* 파일 설명자에서 소유 하며, *fd*에서 [_close](close.md) 가 호출 되 면 닫힙니다. `FILE *` 스트림이 파일 설명자를 소유 하는 경우 해당 `FILE *` 스트림에서 [fclose](fclose-fcloseall.md) 를 호출 하면 파일 설명자와 기본 OS 파일 핸들이 모두 닫힙니다. 이 경우 파일 설명자에 대해 [_close](close.md) 를 호출 하지 마세요.
 
 ## <a name="requirements"></a>요구 사항
 

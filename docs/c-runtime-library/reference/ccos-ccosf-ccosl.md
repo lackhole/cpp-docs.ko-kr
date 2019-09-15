@@ -1,11 +1,11 @@
 ---
 title: ccos, ccosf, ccosl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - ccos
 - ccosf
 - ccosl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ccos
 - ccosf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - ccosf function
 - ccosl function
 ms.assetid: 4ab936ac-ff85-49ac-9418-2b69cf5d4696
-ms.openlocfilehash: d1a94f7ad0bbd525480d344fa8ac5b3ee591a1b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1d6acddf979b7488be722bd850fe9e16816d1030
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340445"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943177"
 ---
 # <a name="ccos-ccosf-ccosl"></a>ccos, ccosf, ccosl
 
@@ -68,11 +71,11 @@ _Lcomplex ccosl(
 
 ## <a name="return-value"></a>반환 값
 
-코사인 *z*, 라디안에서입니다.
+*Z*의 코사인 값 (라디안)입니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **ccos** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **ccos** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **ccos** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **ccos** 는 항상 **_dcomplex** 값을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

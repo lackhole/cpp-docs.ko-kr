@@ -1,10 +1,10 @@
 ---
 title: _cgets_s, _cgetws_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _cgetws_s
 - _cgets_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _cgets_s
 - cgets_s
@@ -30,14 +33,14 @@ helpviewer_keywords:
 - _cgetws_s function
 - cgetws_s function
 ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
-ms.openlocfilehash: 8341b775df3b9cbaececdfaa1f17e075d7c7416c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2039fc32cecb768c3c3fbc239446abedeb48f188
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340587"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939272"
 ---
-# <a name="cgetss-cgetwss"></a>_cgets_s, _cgetws_s
+# <a name="_cgets_s-_cgetws_s"></a>_cgets_s, _cgetws_s
 
 콘솔에서 문자열을 가져옵니다. 이러한 버전의 [_cgets 및 _cgetws](../../c-runtime-library/cgets-cgetws.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 향상된 보안 기능이 포함되어 있습니다.
 
@@ -86,17 +89,17 @@ errno_t _cgetws_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*buffer*|*numberOfElements*|*pSizeRead*|반환|내용을 *버퍼*|
+|*buffer*|*numberOfElements*|*pSizeRead*|반환|*버퍼* 의 내용|
 |--------------|------------------------|-----------------|------------|--------------------------|
 |**NULL**|any|any|**EINVAL**|N/A|
-|하지 **NULL**|0|any|**EINVAL**|수정 안 됨|
-|하지 **NULL**|any|**NULL**|**EINVAL**|빈 문자열|
+|**NULL** 이 아님|0|any|**EINVAL**|수정 안 됨|
+|**NULL** 이 아님|any|**NULL**|**EINVAL**|빈 문자열|
 
 ## <a name="remarks"></a>설명
 
-**_cgets_s** 하 고 **_cgetws_s** 콘솔에서 문자열을 읽고 null 종결자) (사용 하 여 문자열을 복사 *버퍼*합니다. **_cgetws_s** 보다; 함수의 와이드 문자 버전 다른 문자 크기, 이러한 두 함수의 동작이 동일 합니다. 읽을 문자열의 최대 크기로 전달 되는 *numberOfElements* 매개 변수입니다. 이 크기는 종료 null에 대한 추가 문자를 포함해야 합니다. 실제 읽은 문자 수에 위치한 *pSizeRead*합니다.
+**_cgets_s** 및 **_cgetws_s** 는 콘솔에서 문자열을 읽고 null 종결자를 사용 하 여 문자열을 *버퍼*에 복사 합니다. **_cgetws_s** 는 함수의 와이드 문자 버전입니다. 문자 크기를 제외 하 고 이러한 두 함수의 동작은 동일 합니다. 읽을 문자열의 최대 크기는 *Numberofelements* 매개 변수로 전달 됩니다. 이 크기는 종료 null에 대한 추가 문자를 포함해야 합니다. 읽은 실제 문자 수는 *pSizeRead*에 배치 됩니다.
 
-작업 중이나 매개 변수의 유효성을 검사할 때 오류가 발생하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 하 고 **EINVAL** 반환 됩니다.
+작업 중이나 매개 변수의 유효성을 검사할 때 오류가 발생하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용 된 경우 **errno** 가 **EINVAL** 로 설정 되 고 **EINVAL** 이 반환 됩니다.
 
 C++에서는 템플릿 오버로드를 통해 이러한 함수를 사용하는 것이 보다 간단해집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없어지고 보안 수준이 낮은 기존 함수를 보안 수준이 높은 최신 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 

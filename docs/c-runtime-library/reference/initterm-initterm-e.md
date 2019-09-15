@@ -1,10 +1,10 @@
 ---
 title: _initterm, _initterm_e
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _initterm_e
 - _initterm
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _initterm_e
 - initterm
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - _initterm function
 - _initterm_e function
 ms.assetid: 85131efe-c747-429a-8897-bcdedb000172
-ms.openlocfilehash: 65963e95507d4d6444ebcc9038b5b8cf797f9feb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e85494bf6c8215d03602ee112e1ff2c0f1cf6f2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331664"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954625"
 ---
-# <a name="initterm-initterme"></a>_initterm, _initterm_e
+# <a name="_initterm-_initterm_e"></a>_initterm, _initterm_e
 
 함수 포인터의 테이블을 실행하고 초기화하는 내부 메서드입니다.
 
@@ -63,7 +66,7 @@ int __cdecl _initterm_e(
 
 이러한 메서드는 C++ 프로그램 초기화 중 내부적으로만 호출됩니다. 프로그램에서 이러한 메서드를 호출하지 마십시오.
 
-건너뛸 때 함수 항목의 테이블을 실행 하는 이러한 메서드를 **NULL** 항목 하 고 계속 합니다.
+이러한 메서드가 함수 항목의 테이블을 탐색 하는 경우 **NULL** 항목을 건너뛰고 계속 합니다.
 
 ## <a name="see-also"></a>참고자료
 

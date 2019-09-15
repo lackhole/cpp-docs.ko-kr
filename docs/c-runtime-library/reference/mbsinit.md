@@ -1,9 +1,9 @@
 ---
 title: mbsinit
 ms.date: 11/04/2016
-apiname:
+api_name:
 - mbsinit
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,18 +14,21 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - mbsinit
 helpviewer_keywords:
 - mbsinit function
 ms.assetid: 4618555b-baaa-4d04-93fa-36abae411034
-ms.openlocfilehash: 8b467ae7f705fc2f4b2b38d3f76f3936f30ec15e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3b1eecc252a2bee83997aa6f2f6f47a96d3321a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331547"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952377"
 ---
 # <a name="mbsinit"></a>mbsinit
 
@@ -46,11 +49,11 @@ int mbsinit(
 
 ## <a name="return-value"></a>반환 값
 
-0이 아닌 경우 *ps* 됩니다 **NULL** 변환 과정이 아닌 경우.
+*Ps* 가 **NULL** 이거나 변환 도중에 있지 않으면 0이 아닌 값입니다.
 
 ## <a name="remarks"></a>설명
 
-ANSI 함수 중 하나를 사용 하는 경우는 **mbstate_t** 포인터의 주소를 전달 하 **mbstate_t** 버퍼의 마지막 바이트가 변환 되었는지 여부에 대 한 정보를 반환 합니다.
+**Mbstate_t** 포인터를 사용 하는 ANSI 함수 중 하나를 사용 하는 경우 **mbstate_t** 의 주소를 전달 하면 버퍼의 마지막 바이트가 변환 되었는지 여부에 대 한 정보가 반환 됩니다.
 
 멀티바이트 문자를 지원하려면 적절한 코드 페이지를 설치해야 합니다.
 

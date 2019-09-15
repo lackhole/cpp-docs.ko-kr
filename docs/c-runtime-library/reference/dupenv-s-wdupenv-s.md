@@ -1,10 +1,10 @@
 ---
 title: _dupenv_s, _wdupenv_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _dupenv_s
 - _wdupenv_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-environment-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - tdupenv_s
 - _dupenv_s
@@ -33,14 +36,14 @@ helpviewer_keywords:
 - dupenv_s function
 - tdupenv_s function
 ms.assetid: b729ecc2-a31d-4ccf-92a7-5accedb8f8c8
-ms.openlocfilehash: bc8af3282b57c9fa411aac97f5fa4d414bc3305b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f66828e0941c2324d75797cbb1fa77bdfa184205
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288864"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942019"
 ---
-# <a name="dupenvs-wdupenvs"></a>_dupenv_s, _wdupenv_s
+# <a name="_dupenv_s-_wdupenv_s"></a>_dupenv_s, _wdupenv_s
 
 현재 환경에서 값을 가져옵니다.
 
@@ -68,7 +71,7 @@ errno_t _wdupenv_s(
 변수 값을 저장하는 버퍼입니다.
 
 *numberOfElements*<br/>
-크기인 *버퍼*합니다.
+*버퍼*의 크기입니다.
 
 *varname*<br/>
 환경 변수 이름입니다.
@@ -77,26 +80,26 @@ errno_t _wdupenv_s(
 
 성공 시 0, 실패 시 오류 코드가 나타납니다.
 
-이러한 함수는 매개 변수 유효성 검사 하는 경우 *버퍼* 또는 *varname* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 함수를 설정 **errno** 하 **EINVAL** 돌아와 **EINVAL**합니다.
+이러한 함수는 해당 매개 변수의 유효성을 검사 합니다. *buffer* 또는 *varname* 이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
 
-이러한 함수는 충분 한 메모리를 할당할 수 없습니다, 하는 경우 *버퍼* 하 **NULL** 및 *numberOfElements* 0을 반환 **ENOMEM**합니다.
+이러한 함수는 충분 한 메모리를 할당할 수 없는 경우 *버퍼* 를 **NULL** 로 설정 하 고 *numberofelements* 를 0으로 설정 하 고 **enomem**을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_dupenv_s** 함수에 대 한 환경 변수 목록을 검색 *varname*합니다. 변수가 없으면 **_dupenv_s** 버퍼를 할당 하 고 변수 값을 버퍼로 복사 합니다. 에 반환 되는 버퍼의 주소 및 길이 *버퍼* 하 고 *numberOfElements*합니다. 버퍼 자체를 할당 하 여 **_dupenv_s** 는 보다 편리한 대안을 제공 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)합니다.
+**_Dupenv_s** 함수는 *varname*에 대 한 환경 변수 목록을 검색 합니다. 변수가 발견 되 면 **_dupenv_s** 는 버퍼를 할당 하 고 변수 값을 버퍼에 복사 합니다. 버퍼의 주소 및 길이가 *buffer* 및 *numberofelements*에서 반환 됩니다. **_Dupenv_s** 는 버퍼 자체를 할당 하 여 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)에 대 한 보다 편리한 대안을 제공 합니다.
 
 > [!NOTE]
 > [free](free.md)를 호출하여 메모리를 확보하는 것은 호출하는 프로그램이 해야 할 일입니다.
 
-변수가 없는 경우, 한 다음 *버퍼* 로 설정 되어 **NULL**, *numberOfElements* 0으로 설정 되어이 이런이 오류로 간주 되지 않으므로 반환 값이 0 및 조건입니다.
+변수를 찾을 수 없는 경우 *버퍼가* **NULL**로 설정 되 고 *numberofelements* 가 0으로 설정 되 고 반환 값은 0이 됩니다 .이 상황은 오류 조건으로 간주 되지 않기 때문입니다.
 
-버퍼의 크기에 관심이 없는 경우 전달할 수 있습니다 **NULL** 에 대 한 *numberOfElements*합니다.
+버퍼 크기에 관심이 없는 경우에는 *Numberofelements*에 대해 **NULL** 을 전달할 수 있습니다.
 
-**_dupenv_s** 대/소문자가 Windows 운영 체제에서. **_dupenv_s** 전역 변수에서 가리키는 환경의 복사본을 사용 하 여 **_environ** 환경에 액세스 합니다. 설명을 참조 하세요 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) 대 한 설명은 **_environ**합니다.
+**_dupenv_s** 는 Windows 운영 체제에서 대/소문자를 구분 하지 않습니다. **_dupenv_s** 는 전역 변수 **_environ** 이 가리키는 환경의 복사본을 사용 하 여 환경에 액세스 합니다. **_Environ**의 토론은 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) 의 설명을 참조 하세요.
 
-값 *버퍼* 환경 변수 값의 복사본 인 환경에 영향을 주지 수정할 수 있습니다. [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md) 함수를 사용하여 환경 변수 값을 수정합니다.
+*버퍼* 의 값은 환경 변수 값의 복사본입니다. 이를 수정 하면 환경에 영향을 주지 않습니다. [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md) 함수를 사용하여 환경 변수 값을 수정합니다.
 
-**_wdupenv_s** 의 와이드 문자 버전이 **_dupenv_s**;의 인수 **_wdupenv_s** 는 와이드 문자 문자열입니다. 합니다 **_wenviron** 전역 변수는 와이드 문자 버전입니다 **_environ**합니다. 설명을 참조 하세요 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) 대 한 자세한 내용은 **_wenviron**합니다.
+**_wdupenv_s** 는 **_dupenv_s**의 와이드 문자 버전입니다. **_wdupenv_s** 의 인수는 와이드 문자 문자열입니다. **_Wenviron** 전역 변수는 **_environ**의 와이드 문자 버전입니다. **_Wenviron**에서 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) 에 대 한 설명을 참조 하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

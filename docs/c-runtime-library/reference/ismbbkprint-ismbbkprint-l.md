@@ -1,10 +1,10 @@
 ---
 title: _ismbbkprint, _ismbbkprint_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbkprint
 - _ismbbkprint_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ismbbkprint_l
 - ismbbkprint
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - ismbbkprint function
 - _ismbbkprint_l function
 ms.assetid: 8d1d3258-1e34-4365-81ed-97c95de25475
-ms.openlocfilehash: 9d30abb0bcb587aeb15087ceb80d60d54ac1bebe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e2417718d7cb90e8032cfe9dad903d6610dc6ae7
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157528"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954107"
 ---
-# <a name="ismbbkprint-ismbbkprintl"></a>_ismbbkprint, _ismbbkprint_l
+# <a name="_ismbbkprint-_ismbbkprint_l"></a>_ismbbkprint, _ismbbkprint_l
 
 특정 멀티바이트 문자가 문장 부호 기호인지 여부를 결정합니다.
 
@@ -61,7 +64,7 @@ int _ismbbkprint_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbkprint** 이면 0이 아닌 값을 반환 정수 *c* 되지 경우 ASCII가 아닌 텍스트 또는 ASCII가 아닌 문장 부호인 0입니다. 코드 페이지 932에에서 예를 들어 **_ismbbkprint** 가타카나 영숫자 또는 가타카나 문장 부호에 대 한 테스트 (범위: 0xA1-0xDF). **_ismbbkprint** 로캘 종속 문자 설정에 대해 현재 로캘을 사용 합니다. **_ismbbkprint_l** 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_ismbbkprint** 는 정수 *c* 가 ascii가 아닌 텍스트 또는 ascii가 아닌 문장 부호 기호 이면 0이 아닌 값을 반환 하 고 그렇지 않으면 0을 반환 합니다. 예를 들어 코드 페이지 932에 한 해 **_ismbbkprint** 는 가타카나 영숫자 또는 가타카나 문장 부호를 테스트 합니다 (범위: 0xA1-0xDF). **_ismbbkprint** 는 로캘 종속 문자 설정에 대 한 현재 로캘을 사용 합니다. **_ismbbkprint_l** 은 전달 된 로캘을 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

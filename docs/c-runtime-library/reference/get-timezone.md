@@ -1,9 +1,9 @@
 ---
 title: _get_timezone
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_timezone
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _get_timezone
 - get_timezone
@@ -24,14 +27,14 @@ helpviewer_keywords:
 - get_timezone function
 - _get_timezone function
 ms.assetid: 30ab0838-0ae9-4a2f-bfe6-a49ee443b21e
-ms.openlocfilehash: 26cf8114ab766bdb394d2db9ad5842622a447bd1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cf77ca21383bcae6919b6c1d00b99c082ef99919
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287445"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955630"
 ---
-# <a name="gettimezone"></a>_get_timezone
+# <a name="_get_timezone"></a>_get_timezone
 
 현지 시간과 UTC 사이의 차이(초)를 검색합니다.
 
@@ -50,13 +53,13 @@ UTC와 현지 시간 사이의 차이(초)입니다.
 
 ## <a name="return-value"></a>반환 값
 
-성공 하는 경우 또는 0 **errno** 값에 오류가 발생 합니다.
+성공 하면 0이 고, 오류가 발생 하면 **errno** 값입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_get_timezone** 함수 정수로 UTC와 현지 시간 사이의 시간 (초)의 차이 검색 합니다. 기본값은 태평양 표준시(UTC보다 8시간 뒤)에 대해 28,800초입니다.
+**_Get_timezone** 함수는 UTC와 현지 시간 사이의 차이 (초)를 정수로 검색 합니다. 기본값은 태평양 표준시(UTC보다 8시간 뒤)에 대해 28,800초입니다.
 
-하는 경우 *초* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **EINVAL**합니다.
+*초가* **NULL**이면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

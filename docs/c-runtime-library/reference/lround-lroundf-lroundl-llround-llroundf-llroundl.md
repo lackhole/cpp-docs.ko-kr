@@ -1,14 +1,14 @@
 ---
 title: lround, lroundf, lroundl, llround, llroundf, llroundl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - llround
 - llroundf
 - llroundl
 - lroundf
 - lround
 - lroundl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - lround
 - lroundl
@@ -36,12 +39,12 @@ helpviewer_keywords:
 - llroundf function
 - lroundl function
 ms.assetid: cfb88a35-54c6-469f-85af-f7d695dcfdd8
-ms.openlocfilehash: a1406f84179df555125b908caa13a0cde6516597
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d849e838811abbed83499d6da283148650bab875
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285847"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953000"
 ---
 # <a name="lround-lroundf-lroundl-llround-llroundf-llroundl"></a>lround, lroundf, lroundl, llround, llroundf, llroundl
 
@@ -89,7 +92,7 @@ long long llroundl(
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **lround** 및 **llround** 함수는 가장 가까운 반환 **긴** 또는 **긴** **긴** 정수 *x*합니다. 중간값은 부동 소수점 반올림 모드의 설정과 관계없이 0에서 멀어지는 쪽으로 반올림됩니다. 반환되는 오류가 없습니다.
+**Lround** 및 **llround** 함수는 가장 가까운 **long** 또는 **long** **long** 정수를 *x*로 반환 합니다. 중간값은 부동 소수점 반올림 모드의 설정과 관계없이 0에서 멀어지는 쪽으로 반올림됩니다. 반환되는 오류가 없습니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -97,7 +100,7 @@ long long llroundl(
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **lround** 또는 **llround** 및 반환 하는 **float** 하 고 **긴** **이중** 값입니다. C 프로그램에서 **lround** 하 고 **llround** 항상 하 고 반환을 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 값을 사용 하 고 반환 하는 **lround** 또는 **llround** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **lround** 및 **llround** 는 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

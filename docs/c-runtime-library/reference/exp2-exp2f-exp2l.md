@@ -1,11 +1,11 @@
 ---
 title: exp2, exp2f, exp2l
 ms.date: 04/05/2018
-apiname:
+api_name:
 - exp2
 - exp2f
 - exp2l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - exp2
 - math/exp2
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - exp2f function
 - exp2l function
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
-ms.openlocfilehash: 70a3b7eb610556d4a26de7cf0aad55affcdbdc94
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 89e0448501cbd423278607bb22959c6cd1ed9464
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338833"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941563"
 ---
 # <a name="exp2-exp2f-exp2l"></a>exp2, exp2f, exp2l
 
-지정 된 값 2를 계산 합니다.
+지정 된 값에 대해 2를 계산 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -72,9 +75,9 @@ long double exp2l(
 
 ## <a name="return-value"></a>반환 값
 
-성공한 경우의 밑이 2 인 지 수를 반환 *x*, 즉, 2<sup>x</sup>합니다. 그렇지 않으면 다음 값 중 하나가 반환 됩니다.
+성공 하면 *x*의 밑이 2 인 지 수를 반환 합니다. 즉, 2<sup>x</sup>입니다. 그렇지 않으면 다음 값 중 하나를 반환 합니다.
 
-|문제|반환|
+|문제점|반환|
 |-----------|------------|
 |*x* = ±0|1|
 |*x* = -INFINITY|+0|
@@ -87,7 +90,7 @@ long double exp2l(
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **exp2** 및 반환 하는 **float** 및 **long double** 형식입니다. C 프로그램에서 **exp2** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long double** 형식을 사용 하 고 반환 하는 **exp2** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **exp2** 은 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

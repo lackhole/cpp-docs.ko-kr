@@ -1,10 +1,10 @@
 ---
 title: _chmod, _wchmod
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _chmod
 - _wchmod
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _chmod
 - _wchmod
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - files [C++], changing permissions
 - _wchmod function
 ms.assetid: 92f7cb86-b3b0-4232-a599-b8c04a2f2c19
-ms.openlocfilehash: 278ee1e6dda9e153b55676ce5c0ca389f383efd1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b224133212f19627a8f975dbbe8c80176e29f112
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348473"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939198"
 ---
-# <a name="chmod-wchmod"></a>_chmod, _wchmod
+# <a name="_chmod-_wchmod"></a>_chmod, _wchmod
 
 파일 권한 설정을 변경합니다.
 
@@ -57,23 +60,23 @@ int _wchmod( const wchar_t *filename, int pmode );
 
 ## <a name="return-value"></a>반환 값
 
-권한 설정을 성공적으로 변경한 경우 이러한 함수는 0을 반환합니다. 반환 값이-1은 실패를 나타냅니다. 지정 된 파일을 찾을 수 없습니다, 하는 경우 **errno** 로 설정 된 **ENOENT**매개 변수가 유효 하지 않은 경우 **errno** 로 설정 되어 **EINVAL**합니다.
+권한 설정을 성공적으로 변경한 경우 이러한 함수는 0을 반환합니다. 반환 값-1은 실패를 나타냅니다. 지정 된 파일을 찾을 수 없는 경우 **errno** 는 **enoent (** 로 설정 됩니다. 매개 변수가 잘못 된 경우 **errno** 는 **EINVAL**로 설정 됩니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_chmod** 함수에서 지정한 파일의 권한 설정을 변경 *filename*합니다. 권한 설정은 파일에 대한 읽기 및 쓰기 액세스를 제어합니다. 정수 식 *pmode* SYS\Stat.h에 정의 된 다음 매니페스트 상수 중 하나 또는 모두를 포함 합니다.
+**_Chmod** 함수는 *filename*에 지정 된 파일의 사용 권한 설정을 변경 합니다. 권한 설정은 파일에 대한 읽기 및 쓰기 액세스를 제어합니다. 정수 식 *pmode* 에는 다음 매니페스트 상수 중 하나 또는 둘 다가 포함 됩니다.
 
 | *pmode* | 의미 |
 |-|-|
 | **\_S\_IREAD** | 읽기만 허용합니다. |
 | **\_S\_IWRITE** | 쓰기를 허용합니다. 실제로는 읽기 및 쓰기를 모두 허용합니다. |
-| **\_S\_IREAD** &#124; **\_S\_IWRITE** | 읽기 및 쓰기를 허용합니다. |
+| **\_S\_** &#124; **IREADS\_읽기 \_** | 읽기 및 쓰기를 허용합니다. |
 
-두 상수가 지정 된 비트를 사용 하 여 결합 됩니다 or 연산자 (**\|**). 쓰기 권한이 부여되지 않은 경우 파일은 읽기 전용입니다. 모든 파일을 항상 읽을 수 있으므로 쓰기 전용 권한을 부여할 수 없습니다. 따라서 모드 **_S_IWRITE** 하 고 **_S_IREAD** \| **_S_IWRITE** 동일 합니다.
+두 상수가 모두 지정 된 경우 비트 or 연산자 ( **\|** )와 조인 됩니다. 쓰기 권한이 부여되지 않은 경우 파일은 읽기 전용입니다. 모든 파일을 항상 읽을 수 있으므로 쓰기 전용 권한을 부여할 수 없습니다. 따라서 **_S_IWRITE** 및 **_S_IREAD** \| **_S_IWRITE** 모드는 동일 합니다.
 
-**_wchmod** 의 와이드 문자 버전이 **_chmod**; *filename* 인수를 **_wchmod** 는 와이드 문자 문자열입니다. **_wchmod** 하 고 **_chmod** 동일 하 게 작동 합니다.
+**_wchmod** 는 **_chmod**의 와이드 문자 버전입니다. **_wchmod** 의 *filename* 인수는 와이드 문자 문자열입니다. **_wchmod** 및 **_chmod** 는 동일 하 게 작동 하지 않습니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 *pmode* 매니페스트 상수 중 하나의 조합이 아니거나 다른 집합을 통합 상수의 함수가 무시 것입니다. 하는 경우 *filename* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수-1을 반환 합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *Pmode* 가 매니페스트 상수 중 하나의 조합이 아니거나 대체 상수 집합을 통합 하는 경우 함수는 단순히 무시 합니다. *Filename* 이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는-1을 반환 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
