@@ -1,9 +1,9 @@
 ---
 title: wcrtomb_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - wcrtomb_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wcrtomb_s
 helpviewer_keywords:
@@ -24,14 +27,14 @@ helpviewer_keywords:
 - multibyte characters
 - characters, converting
 ms.assetid: 9a8a1bd0-1d60-463d-a3a2-d83525eaf656
-ms.openlocfilehash: 7fe7fba861eecec562928cf381973f62a4db60fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1612e7fc4e40e05c46f06d8a29b69534c359421
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155474"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945840"
 ---
-# <a name="wcrtombs"></a>wcrtomb_s
+# <a name="wcrtomb_s"></a>wcrtomb_s
 
 와이드 문자를 멀티바이트 문자 표현으로 변환합니다. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 보안 기능이 향상된 [wcrtomb](wcrtomb.md) 버전입니다.
 
@@ -63,31 +66,31 @@ errno_t wcrtomb_s(
 멀티바이트로 변환된 결과 문자입니다.
 
 *sizeOfmbchar*<br/>
-크기를 *mbchar* 변수 (바이트)에서입니다.
+*Mbchar* 변수의 크기 (바이트)입니다.
 
 *wchar*<br/>
 변환할 와이드 문자입니다.
 
 *mbstate*<br/>
-에 대 한 포인터를 **mbstate_t** 개체입니다.
+**Mbstate_t** 개체에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-0 반환 합니다 요소나 **errno** 값에 오류가 발생 합니다.
+오류가 발생 하는 경우 0 또는 **errno** 값을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **wcrtomb_s** 함수에 포함 된 지정한 변환 상태부터 시작 하 여 와이드 문자를 변환 *mbstate*, 포함 된 값에서 *wchar*에 주소를 나타내는 *mbchar*합니다. 합니다 *pReturnValue* 값 이지만 변환 된 바이트의 수 둘 **MB_CUR_MAX** 바이트 또는 오류가 발생 한 경우에-1입니다.
+**Wcrtomb_s** 함수는 *mbstate*에 포함 된 지정 된 변환 상태에서 시작 하 여 *wchar*에 포함 된 값에서 *mbstate*로 표시 되는 주소로 와이드 문자를 변환 합니다. *PReturnValue* 값은 변환 된 바이트 수 이지만 **MB_CUR_MAX** 바이트를 초과 하지 않습니다. 오류가 발생 한 경우에는-1입니다.
 
-하는 경우 *mbstate* 이 null 이면 내부 **mbstate_t** 변환 상태가 사용 됩니다. 문자에 포함 된 경우 *wchar* 를 해당 멀티 바이트 문자 값이 없는 *pReturnValue* -1이 됩니다 및 함수는 반환 된 **errno** 값 **EILSEQ**합니다.
+*Mbstate* 가 null 이면 내부 **mbstate_t** 변환 상태가 사용 됩니다. *Wchar* 에 포함 된 문자에 해당 하는 멀티 바이트 문자가 없으면 *pReturnValue* 값은-1이 고 함수는 **eilseq**의 **errno** 값을 반환 합니다.
 
-합니다 **wcrtomb_s** 함수에서 다른 [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md) 해당 다시 시작할 수 있다는입니다. 변환 상태에 저장 됩니다 *mbstate* 같거나 다른 다시 시작 가능 함수에 대 한 후속 호출에 대 한 합니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다. 예를 들어, 응용 프로그램 사용 **wcsrlen** 대신 **wcslen**경우에 대 한 후속 호출 **wcsrtombs_s** 대신 사용한 **wcstombs_s**.
+**Wcrtomb_s** 함수는 [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md) by 다시 시작할와 다릅니다. 동일 하거나 다른 다시 시작 가능 함수에 대 한 후속 호출의 경우 변환 상태가 *mbstate* 에 저장 됩니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다. 예를 들어 **wcstombs_s**대신 **wcsrtombs_s** 에 대 한 후속 호출을 사용 하는 경우 응용 프로그램은 **wcslen**대신 **wcsrlen** 을 사용 합니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 간편하게 사용할 수 있습니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
 ## <a name="exceptions"></a>예외
 
-**wcrtomb_s** 현재 스레드의 함수가 호출 함수는 다중 스레드 안전 **setlocale** 이 함수가 실행 중인 동안 하며 *mbstate* null입니다.
+**Wcrtomb_s** 함수는 현재 스레드의 함수가 **setlocale** 을 호출 하 고이 함수가 실행 되 고 *mbstate* 가 null 인 경우에는 다중 스레드 안전을 보장 합니다.
 
 ## <a name="example"></a>예제
 

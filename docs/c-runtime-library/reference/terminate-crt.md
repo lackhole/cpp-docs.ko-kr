@@ -1,9 +1,9 @@
 ---
 title: terminate(CRT)
 ms.date: 11/04/2016
-apiname:
+api_name:
 - terminate
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,23 +15,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - terminate
 helpviewer_keywords:
 - terminate function
 - exception handling, termination
 ms.assetid: 90e67402-08e9-4b2a-962c-66a8afd3ccb4
-ms.openlocfilehash: 1f655d328b4d97a2989ad49005ed8a9f44fd9d79
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b76ce42817fa1a6b79ef32965fcfa550a508e88d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155630"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946191"
 ---
 # <a name="terminate-crt"></a>terminate(CRT)
 
-호출 [중단](abort.md) 사용 하 여을 지정 하는 함수 또는 **set_terminate**합니다.
+[Abort](abort.md) 또는 **set_terminate**를 사용 하 여 지정한 함수를 호출 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,7 +44,7 @@ void terminate( void );
 
 ## <a name="remarks"></a>설명
 
-**종료** 함수 사용 하 여 C++ 예외 처리 같은 경우에 호출 됩니다.
+**Terminate** 함수는 예외 처리와 C++ 함께 사용 되며 다음과 같은 경우에 호출 됩니다.
 
 - throw된 C++ 예외에 대해 일치하는 catch 처리기를 찾을 수 없는 경우
 
@@ -49,7 +52,7 @@ void terminate( void );
 
 - 스택이 예외를 throw한 후에 손상된 경우
 
-**종료** 호출 [중단](abort.md) 기본적으로 합니다. 하는 자체 종료 함수를 작성 하 고 호출 하 여이 기본값을 변경할 수 있습니다 **set_terminate** 인수로 함수의 이름입니다. **종료** 인수로 주어진 마지막 함수 호출 **set_terminate**합니다. 자세한 내용은 [처리되지 않은 C++ 예외](../../cpp/unhandled-cpp-exceptions.md)를 참조하세요.
+**종료** 호출은 기본적으로 [중단](abort.md) 됩니다. 사용자 고유의 종료 함수를 작성 하 고 함수 이름을 인수로 사용 하 여 **set_terminate** 를 호출 하 여이 기본값을 변경할 수 있습니다. **terminate** 는 **set_terminate**에 대 한 인수로 지정 된 마지막 함수를 호출 합니다. 자세한 내용은 [처리되지 않은 C++ 예외](../../cpp/unhandled-cpp-exceptions.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

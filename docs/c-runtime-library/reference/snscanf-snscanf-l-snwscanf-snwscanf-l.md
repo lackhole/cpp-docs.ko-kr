@@ -1,12 +1,12 @@
 ---
 title: _snscanf, _snscanf_l, _snwscanf, _snwscanf_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _snwscanf
 - _snscanf_l
 - _snscanf
 - _snwscanf_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _snscanf
 - _snscanf_l
@@ -48,14 +51,14 @@ helpviewer_keywords:
 - strings [C++], reading
 - _snscanf function
 ms.assetid: da1ac890-f905-4cd7-954b-3c90957b5551
-ms.openlocfilehash: ba80bec70bbb96c383d0bbe73ed52f30fb90b7ef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f259eede1b2927b4676467c3450504f7ff7c19de
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62355408"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947935"
 ---
-# <a name="snscanf-snscanfl-snwscanf-snwscanfl"></a>_snscanf, _snscanf_l, _snwscanf, _snwscanf_l
+# <a name="_snscanf-_snscanf_l-_snwscanf-_snwscanf_l"></a>_snscanf, _snscanf_l, _snwscanf, _snwscanf_l
 
 문자열에서 지정된 길이의 형식이 지정된 데이터를 읽습니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l](snscanf-s-snscanf-s-l-snwscanf-s-snwscanf-s-l.md)을 참조하세요.
 
@@ -96,30 +99,30 @@ int __cdecl _snwscanf_l(
 검사할 입력 문자열입니다.
 
 *length*<br/>
-검사할 문자 수가 *입력*합니다.
+*입력*에서 검사할 문자 수입니다.
 
 *format*<br/>
 하나 이상의 형식 지정자입니다.
 
 *...*<br/>
-형식 지정자에서 입력된 문자열에서 추출 된 값을 저장 하는 데 사용할 선택적 변수 *형식*합니다.
+형식 지정자를 사용 하 여 입력 문자열에서 추출 된 값을 저장 하는 데 사용 되는 선택적 변수 *입니다.*
 
 *locale*<br/>
 사용할 로캘입니다.
 
 ## <a name="return-value"></a>반환 값
 
-이러한 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 반환 값은 **EOF** 오류에 대 한 첫 번째 변환 전에 문자열의 끝에 도달 하면 또는 합니다. 자세한 내용은 [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md)를 참조하세요.
+이러한 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 반환 값은 오류에 대 한 **EOF** 이거나, 첫 번째 변환 전에 문자열의 끝에 도달한 경우입니다. 자세한 내용은 [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md)를 참조하세요.
 
-경우 *입력* 또는 *형식* 는 **NULL** 포인터 이거나 *길이* 보다 작거나 0 잘못 된 매개 변수 처리기가 호출로 설명한 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **EOF** 설정 **errno** 하 **EINVAL**합니다.
+*입력* 또는 *형식이* **NULL** 포인터인 경우 또는 *Length* 가 0 보다 작거나 같으면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EOF** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-이 함수는 같은 **sscanf** 제외 하 고 고정된 개수의 입력된 문자열에서 검사할 문자를 지정 하는 기능을 제공 합니다. 자세한 내용은 [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md)를 참조하세요.
+이 함수는 입력 문자열에서 검사할 고정 문자 수를 지정 하는 기능을 제공 한다는 점을 제외 하 고 **sscanf** 와 비슷합니다. 자세한 내용은 [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md)를 참조하세요.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 경우를 제외 하 고는 동일 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

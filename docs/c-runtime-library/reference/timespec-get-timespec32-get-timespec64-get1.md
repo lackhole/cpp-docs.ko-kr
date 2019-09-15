@@ -1,11 +1,11 @@
 ---
 title: timespec_get, _timespec32_get, _timespec64_get1
 ms.date: 11/04/2016
-apiname:
+api_name:
 - timespec_get
 - _timespec32_get
 - _timespec64_get
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - timespec_get
 - _timespec32_get
@@ -33,14 +36,14 @@ helpviewer_keywords:
 - _timespec32_get function
 - _timespec64_get function
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
-ms.openlocfilehash: 1591189ff2db78605c334e72ac3be13876afc81d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c0517c974bf58d502133ccd9868149bd178790d6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155552"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957625"
 ---
-# <a name="timespecget-timespec32get-timespec64get"></a>timespec_get, _timespec32_get, _timespec64_get
+# <a name="timespec_get-_timespec32_get-_timespec64_get"></a>timespec_get, _timespec32_get, _timespec64_get
 
 첫 번째 인수를 통해 지정된 간격을 지정된 기본 시간을 기준으로 현재 일정 시간으로 설정합니다.
 
@@ -71,15 +74,15 @@ epoch 시작 이후 지난 시간(초 및 나노초)으로 설정된 구조체 �
 
 ## <a name="return-value"></a>반환 값
 
-변수의 *기본* 경우 성공, 그렇지 않으면 0을 반환 합니다.
+성공 하면 *base* 의 값이 고, 그렇지 않으면 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **timespec_get** 가리키는 구조체에 현재 시간을 설정 하는 함수는 *time_spec* 인수입니다. 이 구조체의 모든 버전에는 두 명의 멤버 **tv_sec** 하 고 **tv_nsec**합니다. 합니다 **tv_sec** 값이 시간 (초)을 정수로 설정 하 고 **tv_nsec** 나노초의 계열 수로 반올림 시스템 클록의 해상도 하여지정된epoch시작이후*기본*입니다.
+**Timespec_get** 함수는 *time_spec* 인수가 가리키는 구조체의 현재 시간을 설정 합니다. 이 구조체의 모든 버전에는 **tv_sec** 및 **tv_nsec**라는 두 개의 멤버가 있습니다. **Tv_sec** 값은 *기준*으로 지정 된 epoch의 시작 이후 시스템 클록의 해상도로 반올림 된 시간 (초) 및 **tv_nsec** 정수 나노초 수로 설정 됩니다.
 
 **Microsoft 전용**
 
-이러한 함수는만 지원 **TIME_UTC** 으로 *기본* 값입니다. 이 설정 된 *time_spec* 초 및 나노초 epoch 시작, 1970 년 1 월 1 일 자정 Utc (협정 세계시) 이후 번호로 값을 합니다. 에 **구조체** **_timespec32**를 **tv_sec** 은 **__time32_t** 값입니다. 에 **구조체** **_timespec64**를 **tv_sec** 은 **__time64_t** 값입니다. 에 **구조체** **timespec**를 **tv_sec** 은 **time_t** 종류입니다. 32 비트 또는 64 비트 길이 인지에 따라 전처리기 매크로 _USE_32BIT_TIME_T이 정의 합니다. 합니다 **timespec_get** 함수를 호출 하는 인라인 함수 이며 **_timespec32_get** _USE_32BIT_TIME_T이 정의 하 고; 그렇지 않으면 호출 **_timespec64_get**합니다.
+이러한 함수는 *base* 값으로 **TIME_UTC** 만 지원 합니다. 이렇게 하면 *time_spec* 값이 epoch 시작, 자정, 1 월 1 일, 1970 Utc (협정 세계시) 이후의 시간 (초) 및 나노초 수로 설정 됩니다. **구조체** **_timespec32**에서 **tv_sec** 은 **__time32_t** 값입니다. **구조체** **_timespec64**에서 **tv_sec** 은 **__time64_t** 값입니다. **구조체** **timespec**에서 **tv_sec** 은 전처리기 매크로 _USE_32BIT_TIME_T가 정의 되었는지 여부에 따라 32 비트 또는 64 비트 길이의 **time_t** 형식입니다. **Timespec_get** 함수는 _USE_32BIT_TIME_T가 정의 된 경우 **_timespec32_get** 를 호출 하는 인라인 함수입니다. 그렇지 않으면 **_timespec64_get**를 호출 합니다.
 
 **Microsoft 전용 종료**
 

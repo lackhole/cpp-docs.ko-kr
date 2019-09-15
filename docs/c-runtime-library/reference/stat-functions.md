@@ -1,7 +1,7 @@
 ---
 title: _stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wstat64
 - _stati64
 - _stat32
@@ -14,7 +14,7 @@ apiname:
 - _stat64
 - _stat64i32
 - _wstat32i64
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -26,7 +26,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - tstat32
 - tstat
@@ -106,14 +109,14 @@ helpviewer_keywords:
 - _tstat64 function
 - files [C++], getting status information
 ms.assetid: 99a75ae6-ff26-47ad-af70-5ea7e17226a5
-ms.openlocfilehash: d9272cd4596a54a38e1ba21ac92b038c2da0d207
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5a6e78c0d98871e4becbb5e7411d9c819e9d0596
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354718"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957944"
 ---
-# <a name="stat-stat32-stat64-stati64-stat32i64-stat64i32-wstat-wstat32-wstat64-wstati64-wstat32i64-wstat64i32"></a>_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
+# <a name="_stat-_stat32-_stat64-_stati64-_stat32i64-_stat64i32-_wstat-_wstat32-_wstat64-_wstati64-_wstat32i64-_wstat64i32"></a>_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
 
 파일의 상태 정보를 가져옵니다.
 
@@ -180,28 +183,28 @@ int _wstat64i32(
 
 ## <a name="return-value"></a>반환 값
 
-파일 상태 정보를 가져오는 경우 이러한 함수는 각각 0을 반환합니다. 반환 값이-1 경우 오류를 나타냅니다 **errno** 로 설정 된 **ENOENT**를 나타내는 파일 이름 또는 경로 찾을 수 없습니다. 반환 값 **EINVAL** ; 잘못 된 매개 변수를 나타냅니다 **errno** 로 설정 됩니다 **EINVAL** 이 경우.
+파일 상태 정보를 가져오는 경우 이러한 함수는 각각 0을 반환합니다. 반환 값-1은 오류를 나타냅니다 .이 경우 **errno** 가 **enoent (** 로 설정 되어 파일 이름 또는 경로를 찾을 수 없음을 나타냅니다. **EINVAL** 의 반환 값은 잘못 된 매개 변수를 나타냅니다. 이 경우 **errno** 도 **EINVAL** 로 설정 됩니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 을 참조하세요.
 
-사용 하지 않는 경우 전과 23시 59분: 59, 3000 년 12 월 31 일을 UTC로 1970 년 1 월 1 일 자정 보다 이후인 경우 파일의 날짜 스탬프가 나타낼 수 **_stat32** 하거나 **_wstat32**, 또는 정의 해 놓은 **_ USE_32BIT_TIME_T**, 이때 23시 59분: 59 2038 년 1 월 18 일 UTC 까지만 날짜를 나타낼 수 있습니다.
+**_Stc32** 또는 **_wst32**를 사용 하거나 **_USE_32BIT_TIME_T**을 정의 하지 않는 한, 파일의 날짜 스탬프가 1970 년 1 월 1 일 자정 (년 12 월 3000 31 일 23:59:59 이전) 이면 표시 될 수 있으며,이 경우 날짜는 23:59:59 년 1 월 18 일 2038 (UTC) 까지만 표시 됩니다.
 
 ## <a name="remarks"></a>설명
 
-**_stat** 함수에서 지정한 디렉터리나 파일에 대 한 정보를 가져오는 *경로* 가리키는 구조체에 저장 합니다 *버퍼*합니다. **_stat** 에서 현재 사용 중인 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 합니다. 필요에 따라 멀티 바이트 문자열 인수를 자동으로 처리 합니다.
+**_Stat** 함수는 *path* 로 지정 된 파일이 나 디렉터리에 대 한 정보를 가져와 *버퍼*에서 가리키는 구조에 저장 합니다. **_stat** 는 멀티 바이트 문자열 인수를 자동으로 적절 하 게 처리 하 여 현재 사용 중인 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 합니다.
 
-**_wstat** 의 와이드 문자 버전이 **_stat**; *경로* 인수 **_wstat** 는 와이드 문자 문자열입니다. **_wstat** 하 고 **_stat** 점을 제외 하면 동일 하 게 작동 **_wstat** 멀티 바이트 문자열을 처리 하지 않습니다.
+**_wstat** 는 **_stat**의 와이드 문자 버전입니다. **_wstat** 에 대 한 *path* 인수는 와이드 문자열입니다. **_sawstat 및** **_wstat** 는 멀티 바이트 문자열을 처리 하지 않는다는 점을 제외 하 고 동일 하 게 동작 합니다.
 
-이러한 함수의 변형은 32비트 또는 64비트 시간 형식 및 32비트 또는 64비트 파일 길이를 지원합니다. 첫 번째 숫자 접미사 (**32** 또는 **64**)의 크기를 나타내는 형식에 사용 되는, 두 번째 접미사 **i32** 또는 **i64**, 32 비트 또는 64 비트 정수로 파일 크기를 나타낼지 여부를 나타내는입니다.
+이러한 함수의 변형은 32비트 또는 64비트 시간 형식 및 32비트 또는 64비트 파일 길이를 지원합니다. 첫 번째 숫자 접미사 (**32** 또는 **64**)는 사용 된 시간 형식의 크기를 나타냅니다. 두 번째 접미사는 **i32** 또는 **i64**중 하나 이며, 파일 크기가 32 비트 또는 64 비트 정수로 표시 되는지를 나타냅니다.
 
-**_stat** 같습니다 **_stat64i32**, 및 **구조체** **_stat** 는 64 비트 시간을 포함 합니다. 이 경우가 아니면 **_USE_32BIT_TIME_T** 정의이 경우 이전 동작이 적용 됩니다 **_stat** 32 비트 시간을 사용 하 고 **구조체** **_stat** 는 32 비트 시간을 포함 합니다. 같은 기준이 **_stati64**합니다.
+**_ststni32**와 동일 하 고 struct **_ga** 는 64 비트 시간을 포함 합니다. **_USE_32BIT_TIME_T** 가 정의 되지 않은 경우에도 마찬가지입니다 .이 경우 이전 동작이 적용 됩니다. **_stat** 는 32 비트 시간을 사용 하 고 **struct** **_ga** 는 32 비트 시간을 포함 합니다. **_Stati64**의 경우에도 마찬가지입니다.
 
 > [!NOTE]
-> **_wstat** 기호화 된 링크 Windows Vista에서는 작동 하지 않습니다. 이러한 경우 **_wstat** 는 항상 보고서 파일 크기가 0입니다. **_stat** 기호화 된 링크를 사용 하 여 올바르게 작동 합니다.
+> **_wstat** 는 Windows Vista 기호화 된 링크에서 작동 하지 않습니다. 이러한 경우 **_wstat** 는 항상 파일 크기를 0으로 보고 합니다. **_stat** 는 기호화 된 링크에서 제대로 작동 합니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 이면 *경로* 또는 *버퍼* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *경로* 또는 *버퍼가* **NULL**이면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
 
-### <a name="time-type-and-file-length-type-variations-of-stat"></a>_stat의 시간 형식 및 파일 길이 형식 변형
+### <a name="time-type-and-file-length-type-variations-of-_stat"></a>_stat의 시간 형식 및 파일 길이 형식 변형
 
 |함수|_USE_32BIT_TIME_T 정의 여부|시간 형식|파일 길이 형식|
 |---------------|------------------------------------|---------------|----------------------|
@@ -224,23 +227,23 @@ int _wstat64i32(
 |**_tstat32i64**|**_stat32i64**|**_stat32i64**|**_wstat32i64**|
 |**_tstat64i32**|**_stat64i32**|**_stat64i32**|**_wstat64i32**|
 
-합니다 **_stat** SYS\STAT에 정의 된 구조입니다. H, 다음 필드를 포함 합니다.
+Sys\stst\sts에 정의 된 **_ststs** 구조체입니다. H에는 다음 필드가 포함 됩니다.
 
 |필드||
 |-|-|
 | **st_gid** | 파일(UNIX 관련)을 소유하는 그룹의 숫자 식별자입니다. 이 필드는 Windows 시스템에서 항상 0입니다. 리디렉션된 파일은 Windows 파일로 분류됩니다. |
 | **st_atime** | 파일의 마지막 액세스 시간입니다. NTFS에서는 유효하지만, FAT로 포맷한 디스크 드라이브에서는 유효하지 않습니다. |
 | **st_ctime** | 파일 생성 시간입니다. NTFS에서는 유효하지만, FAT로 포맷한 디스크 드라이브에서는 유효하지 않습니다. |
-| **st_dev** | 파일이 포함 된 디스크 드라이브 (동일 **st_rdev**). |
-| **st_ino** | 정보 노드 수 (합니다 **inode**) 파일 (UNIX 관련)입니다. UNIX 파일 시스템에는 **inode** 파일 날짜 및 타임 스탬프, 권한 및 콘텐츠를 설명 합니다. 동일한 공유 파일이 서로 하드 링크 된 경우 **inode**합니다. 합니다 **inode**, 있어 **st_ino**, FAT, HPFS 또는 NTFS 파일 시스템에서 의미가 없습니다. |
-| **st_mode** | 파일 모드 정보의 비트 마스크입니다. 합니다 **_S_IFDIR** 비트가 설정 됩니다 *경로* 디렉터리를 지정; **_S_IFREG** 비트가 설정 됩니다 *경로* 일반 파일 또는 장치를 지정 합니다. 파일의 사용 권한 모드에 따라 사용자 읽기/쓰기 비트가 설정됩니다. 파일 이름 확장명에 따라 사용자 실행 비트가 설정됩니다. |
+| **st_dev** | 파일이 포함 된 디스크의 드라이브 번호 ( **st_rdev**와 동일)입니다. |
+| **st_ino** | 파일 (UNIX 관련)의 정보 노드 ( **inode**) 수입니다. UNIX 파일 시스템에서 **inode** 는 파일 날짜 및 시간 스탬프, 사용 권한 및 콘텐츠를 설명 합니다. 파일이 서로 하드 링크 된 경우 동일한 **inode**를 공유 합니다. 따라서 **st_ino** **는 FAT, HPFS**또는 NTFS 파일 시스템에서 의미가 없습니다. |
+| **st_mode** | 파일 모드 정보의 비트 마스크입니다. *Path* 가 디렉터리를 지정 하는 경우 **_S_IFDIR** 비트가 설정 됩니다. *path* 에서 일반 파일 또는 장치를 지정 하는 경우 **_S_IFREG** 비트가 설정 됩니다. 파일의 사용 권한 모드에 따라 사용자 읽기/쓰기 비트가 설정됩니다. 파일 이름 확장명에 따라 사용자 실행 비트가 설정됩니다. |
 | **st_mtime** | 파일의 마지막 수정 시간입니다. |
 | **st_nlink** | NTFS가 아닌 파일 시스템에서 항상 1입니다. |
-| **st_rdev** | 파일이 포함 된 디스크 드라이브 (동일 **st_dev**). |
-| **st_size** | 크기 (바이트)의 파일 인 변형의 64 비트 정수를 합니다 **i64** 접미사. |
+| **st_rdev** | 파일이 포함 된 디스크의 드라이브 번호 ( **st_dev**와 동일)입니다. |
+| **st_size** | 파일의 크기 (바이트)입니다. **i64** 접미사가 있는 변형의 64 비트 정수입니다. |
 | **st_uid** | 파일(UNIX 관련)을 소유하는 사용자의 숫자 식별자입니다. 이 필드는 Windows 시스템에서 항상 0입니다. 리디렉션된 파일은 Windows 파일로 분류됩니다. |
 
-하는 경우 *경로* 장치를 참조 합니다 **st_size**, 다양 한 시간 필드 **st_dev**, 및 **st_rdev** 필드를 **_stat**  구조는 의미가 없습니다. STAT.H가 TYPES.H에 정의된 [_dev_t](../../c-runtime-library/standard-types.md) 형식을 사용하기 때문입니다. 코드에서 STAT.H 앞에 TYPES.H를 포함해야 합니다.
+*Path* 가 장치를 참조 하는 경우 **_stat** 구조체의 **st_size**, 다양 한 시간 필드, **st_dev**및 **st_rdev** 필드는 의미가 없습니다. STAT.H가 TYPES.H에 정의된 [_dev_t](../../c-runtime-library/standard-types.md) 형식을 사용하기 때문입니다. 코드에서 STAT.H 앞에 TYPES.H를 포함해야 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

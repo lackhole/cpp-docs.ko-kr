@@ -1,10 +1,10 @@
 ---
 title: _set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _set_invalid_parameter_handler
 - _set_thread_local_invalid_parameter_handler
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - set_invalid_parameter_handler
 - _set_invalid_parameter_handler
@@ -27,14 +30,14 @@ helpviewer_keywords:
 - _set_invalid_parameter_handler function
 - _set_thread_local_invalid_parameter_handler function
 ms.assetid: c0e67934-1a41-4016-ad8e-972828f3ac11
-ms.openlocfilehash: 1df876d6df9327e817d5d2c401e0abe97ad7a548
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 090eb43289313f12b900e671df61f74e7b464872
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356513"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948495"
 ---
-# <a name="setinvalidparameterhandler-setthreadlocalinvalidparameterhandler"></a>_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
+# <a name="_set_invalid_parameter_handler-_set_thread_local_invalid_parameter_handler"></a>_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
 
 CRT가 잘못된 인수를 발견할 때 호출할 함수를 설정합니다.
 
@@ -60,7 +63,7 @@ _invalid_parameter_handler _set_thread_local_invalid_parameter_handler(
 
 ## <a name="remarks"></a>설명
 
-많은 C 런타임 함수가 자신에게 전달되는 인수의 유효성을 확인합니다. 함수는 잘못 된 인수를 전달 하는 경우 설정할 수는 **errno** 오류 번호 또는 오류 코드를 반환 합니다. 이 경우 잘못된 매개 변수 처리기도 호출됩니다. C 런타임은 프로그램을 종료하고 런타임 오류 메시지를 표시하는 기본 전역 잘못된 매개 변수 처리기를 제공합니다. 사용할 수는 **_set_invalid_parameter_handler** 전역 잘못 된 매개 변수 처리기로 함수를 직접 설정할 수 있습니다. 또한 C 런타임은 스레드 로컬 잘못된 매개 변수 처리기도 지원합니다. 스레드 로컬 매개 변수 처리기를 사용 하 여 스레드에서 설정 됩니다 **_set_thread_local_invalid_parameter_handler**, 스레드에서 호출 된 C 런타임 함수는 전역 처리기 대신 해당 처리기를 사용 합니다. 한 번에 하나의 함수만 전역 잘못된 인수 처리기로 지정할 수 있습니다. 스레드당 하나의 함수만 스레드 로컬 잘못된 인수 처리기로 지정할 수 있지만, 각 스레드의 스레드 로컬 처리기는 서로 다를 수 있습니다. 따라서 다른 스레드의 동작에 영향을 주지 않고 코드의 특정 부분에서 사용되는 처리기를 변경할 수 있습니다.
+많은 C 런타임 함수가 자신에게 전달되는 인수의 유효성을 확인합니다. 잘못 된 인수가 전달 되는 경우 함수는 **errno** 오류 번호를 설정 하거나 오류 코드를 반환할 수 있습니다. 이 경우 잘못된 매개 변수 처리기도 호출됩니다. C 런타임은 프로그램을 종료하고 런타임 오류 메시지를 표시하는 기본 전역 잘못된 매개 변수 처리기를 제공합니다. **_Set_invalid_parameter_handler** 를 사용 하 여 고유한 함수를 전역 잘못 된 매개 변수 처리기로 설정할 수 있습니다. 또한 C 런타임은 스레드 로컬 잘못된 매개 변수 처리기도 지원합니다. **_Set_thread_local_invalid_parameter_handler**를 사용 하 여 스레드에 스레드 로컬 매개 변수 처리기를 설정 하는 경우 스레드에서 호출 된 C 런타임 함수는 전역 처리기 대신 해당 처리기를 사용 합니다. 한 번에 하나의 함수만 전역 잘못된 인수 처리기로 지정할 수 있습니다. 스레드당 하나의 함수만 스레드 로컬 잘못된 인수 처리기로 지정할 수 있지만, 각 스레드의 스레드 로컬 처리기는 서로 다를 수 있습니다. 따라서 다른 스레드의 동작에 영향을 주지 않고 코드의 특정 부분에서 사용되는 처리기를 변경할 수 있습니다.
 
 런타임이 잘못된 매개 변수 함수를 호출할 때 이는 일반적으로 복구할 수 없는 오류가 발생했음을 의미합니다. 직접 제공하는 잘못된 매개 변수 처리기 함수는 저장할 수 있는 모든 데이터를 저장한 다음 중단되어야 하며, 오류를 확실히 복구할 수 있지 않는 한 컨트롤을 main 함수로 반환하면 안 됩니다.
 
@@ -76,7 +79,7 @@ void _invalid_parameter(
 );
 ```
 
-합니다 *식* 인수가 오류를 발생 시킨 인수 식의 와이드 문자열 표현입니다. 합니다 *함수* 인수가 잘못 된 인수를 받은 CRT 함수의 이름입니다. 합니다 *파일* 인수는 함수를 포함 하는 CRT 소스 파일의 이름입니다. 합니다 *줄* 인수는 해당 파일의 줄 번호입니다. 마지막 인수는 예약되어 있습니다. 모든 매개 변수 값을 가질 **NULL** CRT 라이브러리의 디버그 버전을 사용 합니다.
+*식* 인수는 오류를 발생 시킨 인수 식의 와이드 문자열 표현입니다. *함수* 인수는 잘못 된 인수를 받은 CRT 함수의 이름입니다. *File* 인수는 함수를 포함 하는 CRT 소스 파일의 이름입니다. *줄* 인수는 해당 파일의 줄 번호입니다. 마지막 인수는 예약되어 있습니다. CRT 라이브러리의 디버그 버전을 사용 하는 경우를 제외 하 고 모든 매개 변수에는 **NULL** 값이 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -84,7 +87,7 @@ void _invalid_parameter(
 |-------------|---------------------|
 |**_set_invalid_parameter_handler**, **_set_thread_local_invalid_parameter_handler**|C: \<stdlib.h><br /><br /> C++: \<cstdlib> 또는 \<stdlib.h>|
 
-합니다 **_set_invalid_parameter_handler** 하 고 **_set_thread_local_invalid_parameter_handler** 함수는 Microsoft 전용입니다. 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+**_Set_invalid_parameter_handler** 및 **_Set_thread_local_invalid_parameter_handler** 함수는 Microsoft 전용입니다. 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

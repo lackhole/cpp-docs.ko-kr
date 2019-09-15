@@ -1,11 +1,11 @@
 ---
 title: asin, asinf, asinl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - asinf
 - asinl
 - asin
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - asin
 - asinl
@@ -29,12 +32,12 @@ helpviewer_keywords:
 - trigonometric functions
 - arcsine function
 ms.assetid: ca05f9ea-b711-49f6-9f32-2f4019abfd69
-ms.openlocfilehash: 20a2ffc37ea666207b9558cb5c282c414cfd4838
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e70c9b2187b97d3dea589c1757081da8bf2bd10
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347966"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943644"
 ---
 # <a name="asin-asinf-asinl"></a>asin, asinf, asinl
 
@@ -60,9 +63,9 @@ long double asin( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **asin** 의 아크사인 (역 사인 함수)를 반환 *x* 는 범위-π/2 ~ π/2 라디안에서에서.
+**Asin** 함수는-π/2 ~ π/2 라디안 범위에서 *x* 의 아크사인 (역 사인 함수)을 반환 합니다.
 
-기본적으로 하는 경우 *x* -1 보다 작거나 1 보다 크면 **asin** 는 무한 한 값을 반환 합니다.
+기본적으로 *x* 가-1 보다 작거나 1 보다 큰 경우 **asin** 는 무한을 반환 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -72,7 +75,7 @@ long double asin( long double x );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **asin** 사용 하 여 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **asin** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 값을 사용 하 여 **asin** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **asin** 은 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

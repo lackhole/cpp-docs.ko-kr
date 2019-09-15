@@ -1,9 +1,9 @@
 ---
 title: set_unexpected(CRT)
 ms.date: 11/04/2016
-apiname:
+api_name:
 - set_unexpected
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - set_unexpected
 helpviewer_keywords:
@@ -22,14 +25,14 @@ helpviewer_keywords:
 - unexpected function
 - exception handling, termination
 ms.assetid: ebcef032-4771-48e5-88aa-2a1ab8750aa6
-ms.openlocfilehash: 6c38421e447ca7b3f263148f51f0ade5c59e2804
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 77c8f0ae8c64423a656a2ebbe1fe3ef6dbe1b794
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356403"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948299"
 ---
-# <a name="setunexpected-crt"></a>set_unexpected(CRT)
+# <a name="set_unexpected-crt"></a>set_unexpected(CRT)
 
 **unexpected**로 호출하는 자체 종료 함수를 설치합니다.
 
@@ -42,29 +45,29 @@ unexpected_function set_unexpected( unexpected_function unexpFunction );
 ### <a name="parameters"></a>매개 변수
 
 *unexpFunction*<br/>
-대체를 작성 하는 함수에 대 한 포인터를 **예기치 않은** 함수입니다.
+**예기치 않은** 함수를 대체 하기 위해 작성 하는 함수에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-등록 한 이전 종료 함수에 대 한 포인터를 반환 **_set_unexpected** 이전 함수는 나중에 복원할 수 있도록 합니다. 기본 동작을 복원 하려면 반환 값을 사용할 수 없는 이전 함수가 설정 된 경우 이 값이 있을 **NULL**합니다.
+이전 함수를 나중에 복원할 수 있도록 **_set_unexpected** 에 의해 등록 된 이전 종료 함수에 대 한 포인터를 반환 합니다. 이전 함수를 설정 하지 않은 경우 반환 값을 사용 하 여 기본 동작을 복원할 수 있습니다. 이 값은 **NULL**일 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **set_unexpected** 설치 함수 *unexpFunction* 호출한 함수로 **예기치 않은**합니다. **예기치 않은** 현재에서 사용 되지 않습니다 C++ 예외 처리 구현 합니다. 합니다 **unexpected_function** EH에 형식이 정의 되어 있습니다. 사용자 정의 unexpected 함수 포인터로 H *unexpFunction* 반환 **void**합니다. 사용자 지정 *unexpFunction* 함수 호출자에 게 반환 되어서는 안 됩니다.
+**Set_unexpected** 함수는 **예기치 않은**함수를 호출 하 *여 함수를 설치 합니다* . **예기치 않은** 은 현재 C++ 예외 처리 구현에서 사용 되지 않습니다. **Unexpected_function** 형식은 EH에 정의 되어 있습니다. H는 사용자 정의 예기치 않은 함수에 대 한 포인터로 서 **void**를 반환 하는 *unexpfunction 함수* 입니다. 사용자 지정 *함수* 함수는 해당 호출자에 게 반환 되어서는 안 됩니다.
 
 ```cpp
 typedef void ( *unexpected_function )( );
 ```
 
-기본적으로 **예기치 않은** 호출 **종료**합니다. 하는 자체 종료 함수를 작성 하 고 호출 하 여이 기본 동작을 변경할 수 있습니다 **set_unexpected** 인수로 함수의 이름입니다. **예기치 않은** 인수로 주어진 마지막 함수 호출 **set_unexpected**합니다.
+기본적으로 **예기치 않은** 호출은 **종료**됩니다. 사용자 고유의 종료 함수를 작성 하 고 함수 이름을 인수로 사용 하 여 **set_unexpected** 를 호출 하 여이 기본 동작을 변경할 수 있습니다. **set_unexpected**에 대 한 인수로 지정 된 마지막 함수를 **예기치 않게** 호출 합니다.
 
-호출 하 여 설치 하는 사용자 지정 종료 함수와 달리 **set_terminate**, 내에서 예외가 throw 될 수 있습니다 *unexpFunction*합니다.
+**Set_terminate**에 대 한 호출로 설치 된 사용자 지정 종료 함수와 달리, *unexpfunction*내에서 예외가 throw 될 수 있습니다.
 
 다중 스레드 환경에서 unexpected 함수는 각 스레드에 대해 개별적으로 유지 관리됩니다. 각 새 스레드는 자체 unexpected 함수를 설치해야 합니다. 따라서 각 스레드는 자체 unexpected 처리를 담당합니다.
 
-현재 Microsoft 구현에서 C++ 예외 처리 **예기치 않은** 호출 **종료** 기본적으로 예외 처리 런타임 라이브러리에서 호출 되지 됩니다. 호출에 특별 한 이점은 없으며 방법이 **예기치 않은** 대신 **종료**합니다.
+현재 예외 처리의 C++ Microsoft 구현에서 **예기치 않은** 호출은 기본적으로 **종료** 되 고 예외 처리 런타임 라이브러리에 의해 호출 되지 않습니다. **종료**하는 것이 아니라 **예기치 않은** 호출에 대 한 특별 한 이점은 없습니다.
 
-단일 **set_unexpected** 처리기에 대 한 모든 동적으로 연결 된 Dll 또는 Exe; 호출 하는 경우에 **set_unexpected** 처리기 바꿀 수 있습니다 하거나 설정 하는 처리기로 바뀌거나 사용자 다른 DLL 또는 EXE
+동적으로 연결 된 모든 Dll 또는 Exe에 대 한 단일 **set_unexpected** 처리기가 있습니다. **set_unexpected** 를 호출 하는 경우에도 처리기를 다른 것으로 바꾸거나 다른 DLL 또는 EXE로 설정한 처리기를 바꿀 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 

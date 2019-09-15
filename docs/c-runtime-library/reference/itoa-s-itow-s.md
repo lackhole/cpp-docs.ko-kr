@@ -1,7 +1,7 @@
 ---
 title: _itoa_s, _itow_s 함수
 ms.date: 03/21/2018
-apiname:
+api_name:
 - _itoa_s
 - _ltoa_s
 - _ultoa_s
@@ -12,7 +12,7 @@ apiname:
 - _ultow_s
 - _i64tow_s
 - _ui64tow_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -25,7 +25,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _itoa_s
 - _ltoa_s
@@ -76,16 +79,16 @@ helpviewer_keywords:
 - _ui64tot_s function
 - _i64toa_s function
 ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
-ms.openlocfilehash: e534a9010f3f39c517b7b0f2bf50041190caf7d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 204abd65981371a970623879ec94ff77db6728b2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157554"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953551"
 ---
-# <a name="itoas-ltoas-ultoas-i64toas-ui64toas-itows--ltows--ultows-i64tows-ui64tows"></a>_itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s,  _ltow_s,  _ultow_s, _i64tow_s, _ui64tow_s
+# <a name="_itoa_s-_ltoa_s-_ultoa_s-_i64toa_s-_ui64toa_s-_itow_s--_ltow_s--_ultow_s-_i64tow_s-_ui64tow_s"></a>_itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s,  _ltow_s,  _ultow_s, _i64tow_s, _ui64tow_s
 
-정수를 문자열로 변환합니다. 버전을 [_itoa, _itow 함수](itoa-itow.md) 에 설명 된 대로 보안 기능이 향상 된 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)합니다.
+정수를 문자열로 변환합니다. 이러한 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명 된 대로 보안 기능이 향상 된 [_itata 함수](itoa-itow.md) 버전입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -132,17 +135,17 @@ errno_t _ultow_s( unsigned long value, wchar_t (&buffer)[size], int radix );
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
+*value*<br/>
 변환할 숫자입니다.
 
 *buffer*<br/>
-변환의 결과 포함 하는 출력 버퍼입니다.
+변환 결과를 포함 하는 출력 버퍼입니다.
 
 *size*<br/>
-크기인 *버퍼* 문자 또는 와이드 문자.
+문자 또는 와이드 문자 단위의 *버퍼* 크기입니다.
 
 *radix*<br/>
-기 수를 변환 하는 데 숫자 기준을 *값*, 2 개에서 36 개의 범위의 이어야 합니다.
+*값*을 변환 하는 데 사용할 기 수 또는 숫자 기준으로, 2-36 범위 내에 있어야 합니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -150,26 +153,26 @@ errno_t _ultow_s( unsigned long value, wchar_t (&buffer)[size], int radix );
 
 ### <a name="error-conditions"></a>오류 조건
 
-|값|buffer|size|radix|반환|
+|value|buffer|크기|radix|반환|
 |-----------|------------|----------------------|-----------|------------|
 |any|**NULL**|any|any|**EINVAL**|
 |any|any|<=0|any|**EINVAL**|
 |any|any|<= length of the result string required|any|**EINVAL**|
-|any|any|any|*기 수* < 2 또는 *기 수* > 36|**EINVAL**|
+|any|any|any|*기* < 2 개 또는 *기* > 36|**EINVAL**|
 
 ### <a name="security-issues"></a>보안 문제
 
-경우 이러한 함수는 액세스 위반을 생성할 수 있습니다 *버퍼* 유효한 메모리를 가리키지 아니며 **NULL**, 아니면 버퍼의 길이가 결과 문자열을 저장할 충분 합니다.
+이러한 함수는 *버퍼가* 유효한 메모리를 가리키지 않거나 **NULL**이 아닌 경우 또는 버퍼의 길이가 결과 문자열을 저장할 만큼 길지 않은 경우 액세스 위반을 생성할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-매개 변수 및 반환 값을 제외 하 고는 **_itoa_s** 하 고 **_itow_s** 함수 패밀리 동일 하 게 동작 해당 보안 수준 낮음 **_itoa** 및 **_itow** 버전입니다.
+매개 변수 및 반환 값을 제외 하 고 **_itoa_s** 및 **_itow_s** 함수 패밀리는 해당 하는 낮은 보안 **_itat및** **_itoa** 버전과 동일한 동작을 포함 합니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
-이러한 함수의 디버그 라이브러리 버전은 우선 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
+이러한 함수의 디버그 라이브러리 버전은 먼저 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
-CRT는 null 종결자를 포함 하 여 각 정수 형식에 가능한 가장 긴 값을 변환 하는 데 필요한 버퍼의 크기를 정의 하 고 몇 가지 일반적인 자료에 대해 문자를 서명 하는 편리한 매크로 포함 합니다. 정보를 참조 하세요 [최대 변환 수 매크로](itoa-itow.md#maximum-conversion-count-macros)합니다.
+CRT에는 몇 가지 일반적인 기본에 대해 null 종결자와 부호 문자를 포함 하 여 각 정수 형식의 가능한 가장 긴 값을 변환 하는 데 필요한 버퍼 크기를 정의 하는 편리한 매크로가 포함 되어 있습니다. 자세한 내용은 [최대 변환 수 매크로](itoa-itow.md#maximum-conversion-count-macros)를 참조 하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -192,7 +195,7 @@ CRT는 null 종결자를 포함 하 여 각 정수 형식에 가능한 가장 �
 
 ## <a name="example"></a>예제
 
-이 샘플에 정수 변환 함수 중 몇 가지 사용 방법을 보여 줍니다. 유의 합니다 [_countof](countof-macro.md) 배열 선언 쇠퇴가 한 포인터는 매개 변수 및 없습니다 컴파일러에 표시 되는 경우 버퍼 크기를 확인 하려면 매크로 에서만 작동 합니다.
+이 샘플에서는 몇 가지 정수 변환 함수를 사용 하는 방법을 보여 줍니다. [_Countof](countof-macro.md) 매크로는 배열 선언이 컴파일러에 표시 될 때 버퍼 크기를 결정 하는 데에만 사용할 수 있으며 포인터에 대 한 decayed 있는 매개 변수가 아닙니다.
 
 ```C
 // crt_itoa_s.c
@@ -263,4 +266,4 @@ base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 cha
 ## <a name="see-also"></a>참고자료
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
-[_itoa, _itow 함수](itoa-itow.md)<br/>
+[_itata, _itoa 함수](itoa-itow.md)<br/>

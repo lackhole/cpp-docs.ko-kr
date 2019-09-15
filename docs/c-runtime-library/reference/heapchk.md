@@ -1,9 +1,9 @@
 ---
 title: _heapchk
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _heapchk
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _heapchk
 - heapchk
@@ -26,14 +29,14 @@ helpviewer_keywords:
 - heaps, checking consistency
 - _heapchk function
 ms.assetid: 859619a5-1e35-4f02-9e09-11d9fa266ec0
-ms.openlocfilehash: bdc0137761664a668d6ef95d739f09501e8290e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 857feb66d89d5dc406042478156483ecb86a2474
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331716"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954816"
 ---
-# <a name="heapchk"></a>_heapchk
+# <a name="_heapchk"></a>_heapchk
 
 힙에서 일관성 확인을 실행합니다.
 
@@ -45,7 +48,7 @@ int _heapchk( void );
 
 ## <a name="return-value"></a>반환 값
 
-**_heapchk** Malloc.h에 정의 된 다음 정수 매니페스트 상수 중 하나를 반환 합니다.
+**_heapchk** 는 Malloc에 정의 된 다음 정수 매니페스트 상수 중 하나를 반환 합니다.
 
 |반환 값|조건|
 |-|-|
@@ -55,11 +58,11 @@ int _heapchk( void );
 | **_HEAPEMPTY** | 힙이 초기화되지 않았습니다. |
 | **_HEAPOK** | 힙이 일치하는 것 같습니다. |
 
-또한 오류가 발생 하는 경우 **_heapchk** 설정 **errno** 하 **ENOSYS**합니다.
+또한 오류가 발생 하는 경우 **_heapchk** 는 **errno** 를 **ENOSYS**로 설정 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_heapchk** 함수를 사용 하면 힙의 최소 일관성 검사 하 여 힙 관련 문제를 디버그 합니다. 운영 체제를 지원 하지 않는 경우 **_heapchk**함수를 반환 합니다 (예: Windows 98) **_HEAPOK** 집합과 **errno** 에 **ENOSYS**.
+**_Heapchk** 함수는 힙의 최소 일관성을 검사 하 여 힙 관련 문제를 디버그 하는 데 도움이 됩니다. 운영 체제에서 **_heapchk**(예: Windows 98)를 지원 하지 않는 경우 함수는 **_HEAPOK** 를 반환 하 고 **errno** 를 **ENOSYS**로 설정 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

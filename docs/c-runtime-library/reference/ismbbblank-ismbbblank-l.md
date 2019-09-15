@@ -1,10 +1,10 @@
 ---
 title: _ismbbblank, _ismbbblank_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbblank_l
 - _ismbbblank
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,16 +16,19 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 ms.assetid: d21b2e41-7206-41f5-85bb-9c9ab4f3e21b
-ms.openlocfilehash: c6709d5a5870c44d200b704e4a34043ff9c37226
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 21f4c88b00774159f8e6945973641e67718494e6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286951"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954241"
 ---
-# <a name="ismbbblank-ismbbblankl"></a>_ismbbblank, _ismbbblank_l
+# <a name="_ismbbblank-_ismbbblank_l"></a>_ismbbblank, _ismbbblank_l
 
 지정된 멀티바이트 문자가 공백 문자인지 여부를 확인합니다.
 
@@ -54,7 +57,7 @@ int _ismbbblank_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbblank** 이면 0이 아닌 값을 반환 *c* (0x20) 공백 문자, 가로 탭 (0x09) 문자인 또는 어떤 에대한텍스트줄내에서단어를구분하는데사용되는로캘별문자를나타내는**isspace** true, 그렇지 않으면 0을 반환 합니다. **_ismbbblank** 모든 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbbblank_l** 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+*c* 가 공백 (0x20) 문자, 가로 탭 (0x09) 문자 또는 **isspace** 가 true 인 텍스트 줄 내에서 단어를 구분 하는 데 사용 되는 로캘별 문자를 나타내는 경우 **_ismbbblank** 는 0이 아닌 값을 반환 합니다. 그렇지 않으면 0을 반환 합니다. **_ismbbblank** 는 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_ismbbblank_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

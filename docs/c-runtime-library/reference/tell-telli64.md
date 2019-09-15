@@ -1,10 +1,10 @@
 ---
 title: _tell, _telli64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _telli64
 - _tell
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - tell
 - telli64
@@ -30,14 +33,14 @@ helpviewer_keywords:
 - telli64 function
 - _telli64 function
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
-ms.openlocfilehash: 628f37d3b8a39a75fb2329a1b2805426f15e821f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 54f672a1b230103d6f9ae1c45d2c9e487764939e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258574"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946266"
 ---
-# <a name="tell-telli64"></a>_tell, _telli64
+# <a name="_tell-_telli64"></a>_tell, _telli64
 
 파일 포인터의 위치를 가져옵니다.
 
@@ -61,13 +64,13 @@ __int64 _telli64(
 
 파일 포인터의 현재 위치입니다. 검색을 수행할 수 없는 디바이스에서는 반환 값이 정의되지 않습니다.
 
-반환 값-1l 오류를 나타냅니다. 하는 경우 *처리할* 잘못 된 파일 설명자 인에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EBADF** 고-1l을 반환 합니다.
+반환 값-1L은 오류를 나타냅니다. *핸들이* 잘못 된 파일 설명자 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **ebadf** 로 설정 하 고-1l을 반환 합니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_tell** 함수에 연결 된 파일 포인터 (있는 경우)의 현재 위치를 가져옵니다 합니다 *처리* 인수입니다. 위치는 파일의 시작 부분에서 바이트 수로 표현됩니다. 에 대 한 합니다 **_telli64** 함수의 경우이 값은 64 비트 정수로 표현 됩니다.
+**_Atata** 함수는 *핸들* 인수와 연결 된 파일 포인터 (있는 경우)의 현재 위치를 가져옵니다. 위치는 파일의 시작 부분에서 바이트 수로 표현됩니다. **_Telli64** 함수의 경우이 값은 64 비트 정수로 표현 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -110,7 +113,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crttelltxt"></a>입력: crt_tell.txt
+### <a name="input-crt_telltxt"></a>입력: crt_tell.txt
 
 ```Input
 Line one.

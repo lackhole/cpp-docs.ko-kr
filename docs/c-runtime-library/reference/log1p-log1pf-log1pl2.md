@@ -1,11 +1,11 @@
 ---
 title: log1p, log1pf, log1pl2
 ms.date: 04/05/2018
-apiname:
+api_name:
 - log1p
 - log1pf
 - log1pl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - log1p
 - log1pf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - log1pf function
 - log1pl function
 ms.assetid: a40d965d-b4f6-42f4-ba27-2395546f7c12
-ms.openlocfilehash: 2ac864d7e28823c95b0202c0a8f2454d03c64aff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aad6675a832e1715c505026fe11ffe77f1f6d275
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285988"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953212"
 ---
 # <a name="log1p-log1pf-log1pl"></a>log1p, log1pf, log1pl
 
@@ -72,7 +75,7 @@ long double log1pl(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 반환의 자연 (밑*e*)의 로그 (*x* + 1).
+성공 하면 (*x* + 1)의 자연 (밑수-*e*) 로그를 반환 합니다.
 
 그렇지 않으면 다음 값 중 하나를 반환할 수 있습니다.
 
@@ -85,17 +88,17 @@ long double log1pl(
 |< -1|nan|INVALID|EDOM|
 |-inf|nan|INVALID|EDOM|
 |±SNaN|입력과 동일함|INVALID||
-|±QNaN, 무한|입력과 동일함|||
+|± QNaN, 무한|입력과 동일함|||
 
-합니다 **errno** 값은 ERANGE로 설정 하는 경우 *x* =-1입니다. 합니다 **errno** 값으로 설정 됩니다 **EDOM** 하는 경우 *x* <-1입니다.
+*X* =-1 인 경우 **ERRNO** 값은 ERANGE로 설정 됩니다. *X* <-1 인 경우 **Errno** 값은 **edom** 으로 설정 됩니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **log1p** 함수를 사용 하 여 보다 더 정확할 수 있습니다 `log(x + 1)` 때 *x* 0에 가까우면 됩니다.
+*X* 가 0에 가까워지면 **log1p** 함수는를 `log(x + 1)` 사용 하는 것 보다 더 정확 하 게 사용할 수 있습니다.
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **log1p** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **log1p** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 형식을 사용 하 고 반환 하는 **log1p** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **log1p** 은 항상 **double**을 사용 하 고 반환 합니다.
 
-하는 경우 *x* 가 자연 수 인의 계승의 로그를 반환 하는이 함수 (*x* -1).
+*X* 가 자연 수 인 경우이 함수는 (*x* -1)의 계승값에 대 한 로그를 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
