@@ -1,10 +1,10 @@
 ---
 title: _filelength, _filelengthi64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _filelengthi64
 - _filelength
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _filelength
 - _filelengthi64
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - files [C++], length
 - _filelengthi64 function
 ms.assetid: 3ab83d5a-543c-4079-b9d9-0abfc7da0275
-ms.openlocfilehash: 00d755138b9293145865b832994a25062edd883e
-ms.sourcegitcommit: fc6bdffcf7d5521609da629621cc8459b200b004
+ms.openlocfilehash: d7cf7f5bea5ed8964ec1a714a2a70d289daf085f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67351768"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957217"
 ---
-# <a name="filelength-filelengthi64"></a>_filelength, _filelengthi64
+# <a name="_filelength-_filelengthi64"></a>_filelength, _filelengthi64
 
 파일의 길이를 가져옵니다.
 
@@ -58,7 +61,7 @@ __int64 _filelengthi64(
 
 ## <a name="return-value"></a>반환 값
 
-둘 다 **_filelength** 하 고 **_filelengthi64** 파일 길이 (바이트)와 연결 된 대상 파일의 반환 *fd*합니다. 하는 경우 *fd* 잘못 된 파일 설명자 인이 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 두 함수 모두 오류가 발생 하 여 설정-1l을 반환 실행은 계속 하도록 허용 하는 경우 **errno** 하 **EBADF**합니다.
+**_Filelength** 및 **_filelengthi64** 는 모두 *fd*와 연결 된 대상 파일의 파일 길이 (바이트)를 반환 합니다. *Fd* 가 잘못 된 파일 설명자 인 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 두 함수 모두-1L을 반환 하 여 오류를 나타내고 **errno** 를 **ebadf**로 설정 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

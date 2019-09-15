@@ -1,14 +1,14 @@
 ---
 title: scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - scalblnl
 - scalbnl
 - scalbnf
 - scalblnf
 - scalbn
 - scalbln
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - scalblnf
 - scalbnl
@@ -36,12 +39,12 @@ helpviewer_keywords:
 - scalbnf function
 - scalblnf function
 ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d
-ms.openlocfilehash: 7109340afaa634fc21177380d015c9eace506081
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 794d0bdceb13aafb83de85fb29e47a4fa3125cd6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357163"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948912"
 ---
 # <a name="scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl"></a>scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 
@@ -102,15 +105,15 @@ long double scalblnl(
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **scalbn** 의 값을 반환 하는 함수 *x* \* **FLT_RADIX**<sup>exp</sup> 로그인이 성공 합니다. 오버플로에서 (의 부호에 따라 *x*), **scalbn** + /-반환 **HUGE_VAL**; **errno** 값으로 설정 되어 **ERANGE** .
+**Scalbn** 함수는 성공할 경우 *x* \* **FLT_RADIX**<sup>exp</sup> 의 값을 반환 합니다. 오버플로 시 ( *x*의 부호에 따라) **scalbn** 는 +/- **HUGE_VAL**;를 반환 합니다. **errno** 값은 **ERANGE**로 설정 됩니다.
 
-에 대 한 자세한 내용은 **errno** 및 가능한 오류 반환 값을 참조 하십시오 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)합니다.
+**Errno** 및 가능한 오류 반환 값에 대 한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조 하세요.
 
 ## <a name="remarks"></a>설명
 
-**FLT_RADIX** 에 정의 된 \<float.h >에 네이티브 부동 소수점 radix로 이진 시스템에서는 값이 2, 및 **scalbn** 동일 [ldexp](ldexp.md)합니다.
+**FLT_RADIX** 는 네이티브 부동 \<소수점 기수로 서 >에 정의 되 고, 이진 시스템에서는 값이 2이 고, **scalbn** 는 [ldexp](ldexp.md)와 동일 합니다.
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **scalbn** 하 고 **scalbln** 및 반환 하는 **float** 또는 **긴** **이중** 형식입니다. C 프로그램에서 **scalbn** 는 항상 사용을 **double** 및 **int** 반환을 **double**, 및 **scalbln**항상 사용을 **double** 및 **긴** 반환 하 고는 **double**.
+는 C++ 오버 로드를 허용 하므로 **float** 또는 **long** **double** 형식을 사용 하 고 반환 하는 **scalbn** 및 **scalbln** 오버 로드를 호출할 수 있습니다. C 프로그램에서 **scalbn** 는 항상 **double** 과 **int** 를 사용 하 고 **double**을 반환 하며 **scalbln** 는 항상 **double** 과 **long** 을 사용 하며 **double**을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

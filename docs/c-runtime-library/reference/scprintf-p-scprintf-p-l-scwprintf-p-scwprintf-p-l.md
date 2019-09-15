@@ -1,12 +1,12 @@
 ---
 title: _scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _scwprintf_p
 - _scprintf_p_l
 - _scwprintf_p_l
 - _scprintf_p
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _scwprintf_p_l
 - _sctprintf_p
@@ -43,14 +46,14 @@ helpviewer_keywords:
 - scwprintf_p_l function
 - _sctprintf_p_l function
 ms.assetid: 8390d1e1-2826-47a4-851f-6635a88087cc
-ms.openlocfilehash: 818dc5c24cca178fa03d08d1f609c23abbc7a013
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 79744ee814583b5b5c15fbf51d2822c6e4bfe1fa
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357059"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949482"
 ---
-# <a name="scprintfp-scprintfpl-scwprintfp-scwprintfpl"></a>_scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
+# <a name="_scprintf_p-_scprintf_p_l-_scwprintf_p-_scwprintf_p_l"></a>_scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
 
 형식 문자열에서 매개 변수가 사용되는 순서를 지정하는 기능과 함께 형식이 지정된 문자열의 문자 수를 반환합니다.
 
@@ -90,19 +93,19 @@ int _scwprintf_p _l(
 
 ## <a name="return-value"></a>반환 값
 
-문자열이 지정된 형식 지정 코드를 사용하여 인쇄되거나 파일 또는 버퍼로 보내진 경우 생성될 문자 수를 반환합니다. 반환된 값은 종료 null 문자를 포함하지 않습니다. **_scwprintf_p** 와이드 문자에 대 한 동일한 기능을 수행 합니다.
+문자열이 지정된 형식 지정 코드를 사용하여 인쇄되거나 파일 또는 버퍼로 보내진 경우 생성될 문자 수를 반환합니다. 반환된 값은 종료 null 문자를 포함하지 않습니다. **_scwprintf_l** 는 와이드 문자에 대해 동일한 함수를 수행 합니다.
 
-차이점 **_scprintf_p** 하 고 **_scprintf** 는 **_scprintf_p** 지원 위치 매개 변수는 순서를 지정할 수 있는 인수 형식 문자열에 사용 됩니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
+**_Scprintf_p** 와 **_scu** 의 차이는 **_scintf_l** 에서 위치 매개 변수를 지원 한다는 것입니다 .이 매개 변수를 사용 하면 형식 문자열에서 인수가 사용 되는 순서를 지정할 수 있습니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
-하는 경우 *형식* 되는 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수가-1를 반환 하는 설정 **errno** 하 **EINVAL**합니다.
+*Format* 이 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-각 *인수* (있는 경우)의 해당 형식 사양에 따라 변환 됩니다 *형식*합니다. 형식은 일반 문자로 구성 되어 있으며 동일한 폼 및 함수는 *형식* 에 대 한 인수가 [printf](printf-printf-l-wprintf-wprintf-l.md)합니다.
+각 *인수* (있는 경우)는 *형식의*해당 형식 지정에 따라 변환 됩니다. 형식은 일반 문자로 구성 되며 [printf](printf-printf-l-wprintf-wprintf-l.md)의 *format* 인수와 동일한 폼 및 함수를 가집니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 경우를 제외 하 고는 동일 합니다.
 
 > [!IMPORTANT]
 > *format*이 사용자 정의 문자열이 아닌지 확인하세요.

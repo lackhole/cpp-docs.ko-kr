@@ -1,9 +1,9 @@
 ---
 title: _getdrives
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _getdrives
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - getdrives
 - _getdrives
@@ -24,14 +27,14 @@ helpviewer_keywords:
 - getdrives function
 - disk drives
 ms.assetid: 869bb51f-4209-4328-846e-3aadebaceb9c
-ms.openlocfilehash: 444a54a316b1b1e4cfd26df95d172c7e9748fb88
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0733cc00523bb3a7bb019453cc94183a5c2b87e1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157684"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955069"
 ---
-# <a name="getdrives"></a>_getdrives
+# <a name="_getdrives"></a>_getdrives
 
 현재 사용 가능한 디스크 드라이브를 나타내는 비트 마스크를 반환합니다.
 
@@ -46,7 +49,7 @@ unsigned long _getdrives( void );
 
 ## <a name="return-value"></a>반환 값
 
-함수가 성공하는 경우 반환 값은 현재 사용 가능한 디스크 드라이브를 나타내는 비트 마스크입니다. 비트 위치 0(최하위 비트)은 드라이브 A, 비트 위치 1은 드라이브 B, 비트 위치 2는 드라이브 C 등입니다. 함수가 실패하면 반환 값은 0입니다. 확장 오류 정보를 가져오기, 호출 **GetLastError**합니다.
+함수가 성공하는 경우 반환 값은 현재 사용 가능한 디스크 드라이브를 나타내는 비트 마스크입니다. 비트 위치 0(최하위 비트)은 드라이브 A, 비트 위치 1은 드라이브 B, 비트 위치 2는 드라이브 C 등입니다. 함수가 실패하면 반환 값은 0입니다. 확장 오류 정보를 가져오려면 **GetLastError**를 호출 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

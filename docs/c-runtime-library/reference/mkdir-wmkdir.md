@@ -1,10 +1,10 @@
 ---
 title: _mkdir, _wmkdir
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wmkdir
 - _mkdir
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _mkdir
 - tmkdir
@@ -33,14 +36,14 @@ helpviewer_keywords:
 - _mkdir function
 - _tmkdir function
 ms.assetid: 7f22d01d-63a5-4712-a6e7-d34878b2d840
-ms.openlocfilehash: 0d89e1f0930cf9131156a4691069f1f17c15c124
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d2fd45b566909a61a04a5cabb34c74b9b253430
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285199"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951725"
 ---
-# <a name="mkdir-wmkdir"></a>_mkdir, _wmkdir
+# <a name="_mkdir-_wmkdir"></a>_mkdir, _wmkdir
 
 새 디렉터리를 만듭니다.
 
@@ -63,19 +66,19 @@ int _wmkdir(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 새 디렉터리가 만들어진 경우 0을 반환합니다. 오류, 함수 반환 값-1 및 세트 **errno** 다음과 같습니다.
+이러한 각 함수는 새 디렉터리가 만들어진 경우 0을 반환합니다. 오류가 발생 하면 함수는-1을 반환 하 고 **errno** 를 다음과 같이 설정 합니다.
 
-**EEXIST** 않았으므로 디렉터리를 만들지 못했습니다 *dirname* 기존 파일, 디렉터리 또는 장치 이름입니다.
+**Eexist** 파일 *이름* 이 (가) 기존 파일, 디렉터리 또는 장치의 이름이 기 때문에 디렉터리가 만들어지지 않았습니다.
 
-**ENOENT** 경로 찾을 수 없습니다.
+**Enoent (** 경로를 찾을 수 없습니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하십시오.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_mkdir** 함수는 지정 된 새 디렉터리를 만듭니다 *dirname 합니다.* **_mkdir** 의 마지막 구성 되므로 호출당 하나의 새 디렉터리를 만들 수 있습니다 *dirname* 새 디렉터리를 이름을 지정할 수 있습니다. **_mkdir** 경로 구분 기호를 변환 하지 않습니다. Windows NT에서 백슬래시(\\)와 슬래시(/)는 런타임 루틴의 문자열에 사용할 수 있는 경로 구분 기호입니다.
+**_Mkdir** 함수는 지정 된 이름을 사용 하 여 새 디렉터리를 만듭니다 *.* **_mkdir** 은 호출 당 새 디렉터리를 하나만 만들 수 있으므로 새 디렉터리 *이름을 지정할 수* 있습니다. **_mkdir** 은 경로 구분 기호를 변환 하지 않습니다. Windows NT에서 백슬래시(\\)와 슬래시(/)는 런타임 루틴의 문자열에 사용할 수 있는 경로 구분 기호입니다.
 
-**_wmkdir** 의 와이드 문자 버전이 **_mkdir**; *dirname* 인수 **_wmkdir** 는 와이드 문자 문자열입니다. **_wmkdir** 하 고 **_mkdir** 동일 하 게 작동 합니다.
+**_wmkdir** 는 **_mkdir**의 와이드 문자 버전입니다. **_wmkdir** 에 대 한 *tname* 인수는 와이드 문자열입니다. **_wmkdir** 및 **_mkdir** 은 동일 하 게 작동 하지 않습니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

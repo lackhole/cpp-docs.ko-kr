@@ -1,9 +1,9 @@
 ---
 title: imaxdiv
 ms.date: 04/05/2018
-apiname:
+api_name:
 - imaxdiv
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,18 +15,21 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - imaxdiv
 helpviewer_keywords:
 - imaxdiv function
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
-ms.openlocfilehash: 23067b2028fc11193fae707e25165fb0ce754515
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72bbb1198b79d79bb81acc35ce6c2a836fdd5f1d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157333"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954629"
 ---
 # <a name="imaxdiv"></a>imaxdiv
 
@@ -51,11 +54,11 @@ imaxdiv_t imaxdiv(
 
 ## <a name="return-value"></a>반환 값
 
-**imaxdiv** 형식의 인수를 사용 하 여 호출 [intmax_t](../../c-runtime-library/standard-types.md) 형식의 구조체를 반환 [imaxdiv_t](../../c-runtime-library/standard-types.md) 몫과 나머지를 구성 하는 합니다.
+[intmax_t](../../c-runtime-library/standard-types.md) 형식의 인수를 사용 하 여 호출 된 **imaxdiv** 는 몫과 나머지를 구성 하는 [imaxdiv_t](../../c-runtime-library/standard-types.md) 형식의 구조체를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**imaxdiv** 함수 *필드가* 하 여 *denom* 있으므로 몫과 나머지를 계산 하 고 있습니다. 합니다 **imaxdiv_t** 구조에는 몫인 **intmax_t** **q u o t**, 및 나머지 인 **intmax_t** **rem**. 몫의 부호는 수학적 몫의 부호와 같습니다. 몫의 절대 값은 수학적 몫의 절대 값보다 작은 가장 큰 정수입니다. 분모가 0이면 프로그램이 종료되고 오류 메시지가 표시됩니다.
+**Imaxdiv** 함수는 *숫자로* 을 *denom* 로 나눈 다음 몫과 나머지를 계산 합니다. **Imaxdiv_t** 구조체에는 몫, **intmax_t** **q**및 나머지, **intmax_t** **rem**이 포함 됩니다. 몫의 부호는 수학적 몫의 부호와 같습니다. 몫의 절대 값은 수학적 몫의 절대 값보다 작은 가장 큰 정수입니다. 분모가 0이면 프로그램이 종료되고 오류 메시지가 표시됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
