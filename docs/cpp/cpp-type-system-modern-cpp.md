@@ -147,15 +147,15 @@ void someFunction() {
   // for the unique_ptr, freeing the resource.
 ```
 
-스마트 포인터에 대 한 자세한 내용은 [스마트 포인터](../cpp/smart-pointers-modern-cpp.md)를 참조 하세요.
+스마트 포인터에 대한 자세한 내용은 [스마트 포인터](../cpp/smart-pointers-modern-cpp.md)를 참조하세요.
 
-포인터 변환에 대 한 자세한 내용은 [형식 변환 및 형식 안전성](../cpp/type-conversions-and-type-safety-modern-cpp.md)을 참조 하세요.
+포인터 변환에 대한 자세한 내용은 [형식 변환 및 형식 안전성](../cpp/type-conversions-and-type-safety-modern-cpp.md)을 참조하세요.
 
-일반적인 포인터에 대 한 자세한 내용은 [포인터](../cpp/pointers-cpp.md)를 참조 하십시오.
+일반적인 포인터에 대한 자세한 내용은 [포인터](../cpp/pointers-cpp.md)를 참조하세요.
 
 ## <a name="windows-data-types"></a>Windows 데이터 형식
 
-C 및 C++의 클래식 Win32 프로그래밍에서 대부분의 함수에는 매개 변수 및 반환 값 형식을 지정하는 Windows 관련 typedefs 및 #define 매크로(`windef.h`에 정의됨)가 사용됩니다. 이러한 Windows 데이터 유형은 주로 C/C++ 기본 제공 형식에 지정 된 특수 이름 (별칭)입니다. 이러한 형식 정의 및 전처리기 정의의 전체 목록은 [Windows 데이터 형식](/windows/win32/WinProg/windows-data-types)을 참조 하세요. HRESULT, LCID와 같은 이러한 typedefs 중 일부는 유용하며 설명을 포함합니다. INT와 같은 다른 형식은 특별한 의미가 없으며 기본적 C++ 형식의 별칭입니다. 그 외 Windows 데이터 유형은 C 프로그래밍 및 16비트 프로세서 시기부터 내려온 이름을 그대로 가지고 있으며 최신 하드웨어 또는 운영 체제에 다른 목적과 의미를 가지고 있지 않습니다. Windows 런타임 라이브러리와 연결 된 특수 데이터 형식도 [Windows 런타임 기본 데이터 형식](/windows/win32/WinRT/base-data-types)으로 나열 됩니다. 현대적인 C++에서 일반적인 지침은 Windows 형식이 값 해석 방식에 대해 추가적인 의미를 전달하지 않는 한 C++ 기본 형식을 사용하는 것입니다.
+C 및 C++의 클래식 Win32 프로그래밍에서 대부분의 함수에는 매개 변수 및 반환 값 형식을 지정하는 Windows 특정 typedefs 및 #define 매크로(`windef.h`에 정의됨)가 사용됩니다. 이러한 Windows 데이터 유형은 주로 C/C++ 기본 제공 형식에 지정된 특수 이름(별칭)입니다. 이러한 typedefs 및 전처리기 정의의 전체 목록은 [Windows 데이터 형식](/windows/win32/WinProg/windows-data-types)을 참조하세요. HRESULT, LCID와 같은 이러한 typedefs 중 일부는 유용하며 설명을 포함합니다. INT와 같은 다른 형식은 특별한 의미가 없으며 단지 기본 C++ 형식의 별칭입니다. 그 외 Windows 데이터 유형은 C 프로그래밍 및 16비트 프로세서 시기부터 내려온 이름을 그대로 가지고 있으며 최신 하드웨어 또는 운영 체제에 다른 목적과 의미를 가지고 있지 않습니다. Windows 런타임 라이브러리와 연결된 특수 데이터 형식도 [Windows 런타임 기본 데이터 형식](/windows/win32/WinRT/base-data-types)으로 나열됩니다. 최신 C++에서 일반적인 지침은 Windows 형식이 값 해석 방식에 대해 추가적인 의미를 전달하지 않는 한 C++ 기본 형식을 사용하는 것입니다.
 
 ## <a name="more-information"></a>추가 정보
 
