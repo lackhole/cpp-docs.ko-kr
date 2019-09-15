@@ -1,9 +1,9 @@
 ---
 title: fegetenv
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fetegenv
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,19 +15,22 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fegetenv
 - fenv/fegetenv
 helpviewer_keywords:
 - fetegenv function
 ms.assetid: 68962421-6978-4b27-8e4c-ad1577830cf6
-ms.openlocfilehash: d3985e4dd2b3944bcdddb79605887def7ba15473
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2e3566eb96174d0f0ccd6beb401824cc052c995
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334413"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941239"
 ---
 # <a name="fegetenv"></a>fegetenv
 
@@ -44,15 +47,15 @@ int fegetenv(
 ### <a name="parameters"></a>매개 변수
 
 *penv*<br/>
-에 대 한 포인터를 **fenv_t** 현재 부동 소수점 환경 값을 포함 하는 개체입니다.
+현재 부동 소수점 환경 값을 포함 하는 **fenv_t** 개체에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-부동 소수점 환경에 성공적으로 저장 된 경우 0 반환 합니다 *penv*합니다. 그렇지 않으면 0이 아닌 값을 반환합니다.
+부동 소수점 환경이 *penv*에 성공적으로 저장 된 경우 0을 반환 합니다. 그렇지 않으면 0이 아닌 값을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **fegetenv** 함수에서 가리키는 개체에 따라 현재 부동 소수점 환경을 저장 *penv*합니다. 부동 소수점 환경은 부동 소수점 계산에 영향을 미치는 상태 플래그 및 제어 모드의 집합입니다. 여기에는 부동 소수점 예외에 대한 상태 플래그와 반올림 방향 모드가 포함됩니다.  하는 경우 *penv* 유효한 가리키지 **fenv_t** 개체를 후속 동작이 정의 되지 않습니다.
+**Fegetenv** 함수는 *penv*가 가리키는 개체에 현재 부동 소수점 환경을 저장 합니다. 부동 소수점 환경은 부동 소수점 계산에 영향을 미치는 상태 플래그 및 제어 모드의 집합입니다. 여기에는 부동 소수점 예외에 대한 상태 플래그와 반올림 방향 모드가 포함됩니다.  *Penv* 가 유효한 **fenv_t** 개체를 가리키지 않으면 후속 동작이 정의 되지 않습니다.
 
 이 함수를 사용하려면 호출 전에 `#pragma fenv_access(on)` 지시문을 사용하여 액세스를 방지할 수 있는 부동 소수점 최적화를 꺼야 합니다. 자세한 내용은 [fenv_access](../../preprocessor/fenv-access.md)을 참조하세요.
 

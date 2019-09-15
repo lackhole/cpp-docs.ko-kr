@@ -1,10 +1,10 @@
 ---
 title: _fgetc_nolock, _fgetwc_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fgetc_nolock
 - _fgetwc_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _fgetwc_nolock
 - fgettc_nolock
@@ -35,14 +38,14 @@ helpviewer_keywords:
 - reading characters from streams
 - _fgettc_nolock function
 ms.assetid: fb8e7c5b-4503-493a-879e-6a1db75aa114
-ms.openlocfilehash: 568a96caf481fbaf3e80cf60958dc826db49dd86
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5bc2ff8e8ca36a9c6acee821d1507767f4b1a0d5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333971"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940878"
 ---
-# <a name="fgetcnolock-fgetwcnolock"></a>_fgetc_nolock, _fgetwc_nolock
+# <a name="_fgetc_nolock-_fgetwc_nolock"></a>_fgetc_nolock, _fgetwc_nolock
 
 스레드를 잠그지 않고 스트림에서 문자를 읽습니다.
 
@@ -68,7 +71,7 @@ wint_t _fgetwc_nolock(
 
 ## <a name="remarks"></a>설명
 
-**_fgetc_nolock** 하 고 **_fgetwc_nolock** 동일 **fgetc** 하 고 **fgetwc**각각 여 간섭에서 보호 되지 않는 점을 제외 하 고 다른 스레드입니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**_fgetc_noand** **_fgetwc_nolock** 는 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하 고 각각 **fgetc** 및 **fgetwc**와 동일 합니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
@@ -121,7 +124,7 @@ int main( void )
 }
 ```
 
-## <a name="input-crtfgetcnolocktxt"></a>입력: crt_fgetc_nolock.txt
+## <a name="input-crt_fgetc_nolocktxt"></a>입력: crt_fgetc_nolock.txt
 
 ```Input
 Line one.

@@ -1,10 +1,10 @@
 ---
 title: _ismbbalpha, _ismbbalpha_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbalpha
 - _ismbbalpha_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ismbbalpha
 - ismbbalpha_l
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - _ismbbalpha function
 - _ismbbalpha_l function
 ms.assetid: 8e54cb92-fc2b-41f5-8ab4-b22ac8aa9ad0
-ms.openlocfilehash: c08a92ae0630c977f12deb1d0bd7587f575efd86
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe60eec2eb7f93d866340aabe382bf32d6b04b21
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331560"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954254"
 ---
-# <a name="ismbbalpha-ismbbalphal"></a>_ismbbalpha, _ismbbalpha_l
+# <a name="_ismbbalpha-_ismbbalpha_l"></a>_ismbbalpha, _ismbbalpha_l
 
 지정된 멀티바이트 문자가 영문자인지 여부를 확인합니다.
 
@@ -60,11 +63,11 @@ int _ismbbalpha_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbalpha** 경우 0이 아닌 값을 반환 식:
+**_ismbbalpha** 는 식이 다음과 같이 0이 아닌 값을 반환 합니다.
 
 `isalpha(c) || _ismbbkalnum(c)`
 
-이 대 한 아닌 *c*, 있지 않으면 0입니다. **_ismbbalpha** 모든 로캘 종속 문자 설정에 대 한 현재 로캘을 사용 합니다. **_ismbbalpha_l** 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다.
+*c*의 경우 0이 아니고, 그렇지 않으면 0입니다. **_ismbbalpha** 는 로캘 종속 문자 설정에 대해 현재 로캘을 사용 합니다. **_ismbbalpha_l** 은 전달 된 로캘을 사용 한다는 점을 제외 하 고 동일 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

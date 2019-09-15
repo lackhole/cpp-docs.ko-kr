@@ -1,11 +1,11 @@
 ---
 title: _status87, _statusfp, _statusfp2
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _statusfp2
 - _statusfp
 - _status87
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _statusfp2
 - _statusfp
@@ -38,14 +41,14 @@ helpviewer_keywords:
 - floating-point functions
 - status word
 ms.assetid: 7ef963fa-b1fb-429d-94d6-fbf282ab7432
-ms.openlocfilehash: 271c28dd4e267e5b3b702858cc398689e3e35d6f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 54faf70296ef41f2682f88a8edaa82ee0d2071d4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354433"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70958087"
 ---
-# <a name="status87-statusfp-statusfp2"></a>_status87, _statusfp, _statusfp2
+# <a name="_status87-_statusfp-_statusfp2"></a>_status87, _statusfp, _statusfp2
 
 부동 소수점 상태 단어를 가져옵니다.
 
@@ -67,17 +70,17 @@ void _statusfp2(unsigned int *px86, unsigned int *pSSE2)
 
 ## <a name="return-value"></a>반환 값
 
-에 대 한 **_status87** 하 고 **_statusfp**, 반환 되는 값의 비트는 부동 소수점 상태를 나타냅니다. 부동 소수점을 참조 하세요. 반환 되는 비트의 정의 대 한 파일을 포함 하는 H **_statusfp**합니다. 대부분의 수학 라이브러리 함수는 부동 소수점 상태 단어를 수정하는데, 이 경우 예기치 않은 결과가 발생합니다. 최적화 수 다시 정렬, 결합 및 부동 소수점 연산에 대 한 호출을 제거 **_status87**를 **_statusfp**, 및 관련 함수입니다. 부동 소수점 연산을 다시 정렬하는 최적화가 수행되지 않도록 하려면 [/Od (Disable (Debug))](../../build/reference/od-disable-debug.md) 컴파일러 옵션 또는 [fenv_access](../../preprocessor/fenv-access.md) pragma 지시문을 사용합니다. 값이 반환 **_clearfp** 및 **_statusfp**, 및의 반환 매개 변수 또한 **_statusfp2**, 더 적은 부동 소수점 작업을 수행 하는 경우 신뢰할 수 사이의 부동 소수점 상태 단어의 알려진된 상태입니다.
+**_Status87** 및 **_status87**의 경우 반환 되는 값의 비트는 부동 소수점 상태를 표시 합니다. FLOAT를 참조 하십시오. H include 파일은 **_statusfp**에서 반환 된 비트의 정의에 대 한 파일입니다. 대부분의 수학 라이브러리 함수는 부동 소수점 상태 단어를 수정하는데, 이 경우 예기치 않은 결과가 발생합니다. 최적화는 **_status87**, **_status87**및 관련 함수에 대 한 호출에 대 한 부동 소수점 작업의 순서를 변경 하 고 결합 하 고 제거할 수 있습니다. 부동 소수점 연산을 다시 정렬하는 최적화가 수행되지 않도록 하려면 [/Od (Disable (Debug))](../../build/reference/od-disable-debug.md) 컴파일러 옵션 또는 [fenv_access](../../preprocessor/fenv-access.md) pragma 지시문을 사용합니다. **_Clearfp** 및 **_clearfp**의 반환 값 및 **_statusfp2**의 반환 매개 변수는 부동 소수점 상태 단어의 알려진 상태 사이에서 수행 되는 부동 소수점 작업 수가 적을수록 더 안정적입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_statusfp** 함수는 부동 소수점 상태 단어를 가져옵니다. 상태 단어는 부동 소수점 프로세서 상태와 부동 소수점 예외 처리기에서 검색한 기타 조건(예: 부동 소수점 스택 오버플로 및 언더플로)의 조합입니다. 상태 단어의 내용을 반환하기 전에 마스킹되지 않은 예외를 확인합니다. 즉, 호출자에게 보류 중인 예외를 알립니다. X86 플랫폼 **_statusfp** 는 x87 및 SSE2 부동 소수점 상태의 조합을 반환 합니다. x64 플랫폼에서 반환되는 상태는 SSE의 MXCSR 상태를 기준으로 합니다. ARM 플랫폼에서는 **_statusfp** 는 FPSCR 레지스터에서 상태를 반환 합니다.
+**_Statusfp** 함수는 부동 소수점 상태 단어를 가져옵니다. 상태 단어는 부동 소수점 프로세서 상태와 부동 소수점 예외 처리기에서 검색한 기타 조건(예: 부동 소수점 스택 오버플로 및 언더플로)의 조합입니다. 상태 단어의 내용을 반환하기 전에 마스킹되지 않은 예외를 확인합니다. 즉, 호출자에게 보류 중인 예외를 알립니다. X86 플랫폼에서 **_statusfp** 는 X87 및 SSE2 부동 소수점 상태의 조합을 반환 합니다. x64 플랫폼에서 반환되는 상태는 SSE의 MXCSR 상태를 기준으로 합니다. ARM 플랫폼에서 **_statusfp** 는 fpscr 레지스터의 상태를 반환 합니다.
 
-**_statusfp** 버전이 플랫폼 독립적 이며 휴대용 **_status87**합니다. 동일 **_status87** (x86) Intel 플랫폼에서 x64 및 ARM 플랫폼에서 지원 됩니다. 사용 하 여 부동 소수점 코드를 모든 아키텍처로 이식할 수 있도록 **_statusfp**합니다. X86만 대상으로 하는 경우 플랫폼에서 사용할 수 있습니다 **_status87** 하거나 **_statusfp**합니다.
+**_statusfp** 는 플랫폼 독립적인 휴대용 버전의 **_statusfp**입니다. 이는 Intel (x86) 플랫폼의 **_status87** 과 같으며 X64 및 ARM 플랫폼 에서도 지원 됩니다. 부동 소수점 코드를 모든 아키텍처로 이식할 수 있도록 하려면 **_statusfp**를 사용 합니다. X86 플랫폼만 대상으로 하는 경우 **_status87** 또는 **_status87**를 사용할 수 있습니다.
 
-것이 좋습니다 **_statusfp2** 는 x87 및 SSE2 부동 소수점 프로세서를 모두 있는 (예: Pentium IV) 칩에 대 한 합니다. 에 대 한 **_statusfp2**, 주소는 x87 또는 SSE2 부동 소수점 프로세서 둘 다에 대 한 부동 소수점 상태 단어를 사용 하 여 채워집니다. X87 및 SSE2 부동 소수점 프로세서를 지 원하는 칩을 EM_AMBIGUOUS 경우 1로 설정 됩니다 **_statusfp** 하거나 **_controlfp** 는 x87 또는 SSE2를 참조할 수 있으므로 작업이 모호 하 고 부동 소수점 상태 단어입니다. 합니다 **_statusfp2** 함수는 x86만 지원 플랫폼입니다.
+X87 및 SSE2 부동 소수점 프로세서를 모두 포함 하는 칩 (예: Pentium IV)에 대해 **_statusfp2** 를 권장 합니다. **_Statusfp2**의 경우 X87 또는 SSE2 부동 소수점 프로세서 모두에 대해 부동 소수점 상태 단어를 사용 하 여 주소를 채웁니다. X87 및 SSE2 부동 소수점 프로세서를 지 원하는 칩의 경우 **_statusfp** 또는 **_statusfp** 를 사용 하는 경우 EM_AMBIGUOUS가 1로 설정 되 고 x87 또는 sse2 부동 소수점 상태 단어를 참조할 수 있기 때문에 작업이 모호 합니다. **_Statusfp2** 함수는 x86 플랫폼 에서만 지원 됩니다.
 
-이러한 함수에 대 한 유용 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 는 CLR (공용 언어 런타임)은 기본 부동 소수점 정밀도만 지원 하기 때문입니다.
+CLR (공용 언어 런타임)은 기본 부동 소수점 전체 자릿수를 지원 하기 때문에 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 에는 이러한 함수가 유용 하지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 

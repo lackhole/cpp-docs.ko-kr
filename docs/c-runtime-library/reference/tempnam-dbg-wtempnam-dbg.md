@@ -1,10 +1,10 @@
 ---
 title: _tempnam_dbg, _wtempnam_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wtempnam_dbg
 - _tempnam_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wtempnam_dbg
 - tempnam_dbg
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - _tempnam_dbg function
 - _wtempnam_dbg function
 ms.assetid: e3760bb4-bb01-4808-b689-2c45af56a170
-ms.openlocfilehash: 804c8ad1f17c6ee1df563cafc69ee7aef494d1cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 73642730995ac5c0b47519fac64b30400d47767c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258138"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946244"
 ---
-# <a name="tempnamdbg-wtempnamdbg"></a>_tempnam_dbg, _wtempnam_dbg
+# <a name="_tempnam_dbg-_wtempnam_dbg"></a>_tempnam_dbg, _wtempnam_dbg
 
-함수 버전 [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) 의 디버그 버전을 사용 하는 **malloc**하십시오 **_malloc_dbg**합니다.
+**Malloc**, **_malloc_dbg**의 디버그 버전을 사용 하는 [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) 의 함수 버전입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -66,29 +69,29 @@ wchar_t *_wtempnam_dbg(
 TMP 환경 함수가 없는 경우 또는 TMP가 올바른 디렉터리가 아닌 경우 파일 이름에 사용되는 경로입니다.
 
 *prefix*<br/>
-반환 하는 이름에 붙일 수 있는 문자열 **_tempnam**합니다.
+**_Tempnam**에서 반환 하는 이름에 미리 보류할 문자열입니다.
 
 *blockType*<br/>
-요청 된 메모리 블록의 형식: **_CLIENT_BLOCK** 하거나 **_NORMAL_BLOCK**합니다.
+요청 된 메모리 블록 형식: **_CLIENT_BLOCK** 또는 **_NORMAL_BLOCK**.
 
 *filename*<br/>
-할당 작업을 요청한 소스 파일의 이름에 대 한 포인터 또는 **NULL**합니다.
+할당 작업 또는 **NULL**을 요청한 소스 파일의 이름에 대 한 포인터입니다.
 
 *linenumber*<br/>
-할당 작업이 요청 되는 소스 파일의 줄 번호 또는 **NULL**합니다.
+할당 작업이 요청 되었거나 **NULL 인**소스 파일의 줄 번호입니다.
 
 ## <a name="return-value"></a>반환 값
 
-각 함수는 생성 된 이름에 대 한 포인터를 반환 하거나 **NULL** 오류가 발생 하는 경우. TMP 환경 변수에서 지정 된 잘못 된 디렉터리 이름이 오류가 발생할 수 있습니다 합니다 *dir* 매개 변수입니다.
+각 함수는 생성 된 이름에 대 한 포인터를 반환 하거나 오류가 발생 한 경우 **NULL** 을 반환 합니다. TMP 환경 변수 및 *dir* 매개 변수에 잘못 된 디렉터리 이름이 지정 되어 있으면 오류가 발생할 수 있습니다.
 
 > [!NOTE]
-> **사용 가능한** (또는 **free_dbg**)에서 할당 한 포인터를 호출할 필요가 **_tempnam_dbg** 하 고 **_wtempnam_dbg**합니다.
+> **무료** **_tempnam_dbg** 및 **_wtempnam_dbg**에서 할당 한 포인터에 대해 (또는 **free_dbg**)를 호출 해야 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_tempnam_dbg** 하 고 **_wtempnam_dbg** 함수는 동일 **_tempnam** 및 **_wtempnam** 점을 제외 하 고, **_DEBUG** 는 정의 된 이러한 함수 사용의 디버그 버전 **malloc** 하 고 **_malloc_dbg**메모리를 할당 하는 경우 **NULL** 는 첫 번째 매개 변수로 전달 합니다. 자세한 내용은 [_malloc_dbg](malloc-dbg.md)를 참조하세요.
+**_Tempnam_dbg** 및 **_Wtempnam_dbg** 함수는 **_debug** 가 정의 되 면 이러한 함수가 **malloc** 및 **_malloc_dbg**의 디버그 버전을 사용 한다는 점을 제외 하 고 **_tempnam** 및 **_wtempnam** 와 동일 합니다. **NULL** 이 첫 번째 매개 변수로 전달 되는 경우 메모리를 할당 합니다. 자세한 내용은 [_malloc_dbg](malloc-dbg.md)를 참조하세요.
 
-대부분의 경우 이러한 함수를 명시적으로 호출할 필요가 없습니다. 대신 플래그를 정의할 수 있습니다 **_CRTDBG_MAP_ALLOC**합니다. 때 **_CRTDBG_MAP_ALLOC** 에 대 한 호출을 정의 하면 **_tempnam** 하 고 **_wtempnam** 로 다시 매핑되고 **_tempnam_dbg** 및 **_ wtempnam_dbg**각각 사용 하 여 합니다 *blockType* 로 설정 **_NORMAL_BLOCK**합니다. 따라서 힙 블록으로 표시 하려는 경우가 아니면 이러한 함수를 명시적으로 호출할 필요가 없습니다 **_CLIENT_BLOCK**합니다. 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
+대부분의 경우 이러한 함수를 명시적으로 호출할 필요가 없습니다. 대신 **_CRTDBG_MAP_ALLOC**플래그를 정의할 수 있습니다. **_CRTDBG_MAP_ALLOC** 가 정의 되 면 **_tempnam** 및 **_wtempnam** 에 대 한 호출은 각각 **_wtempnam_dbg**로 설정 된 *blocktype* 을 사용 하 여 **_tempnam_dbg** 및 **_NORMAL_BLOCK**에 다시 매핑됩니다. 따라서 힙 블록을 **_CLIENT_BLOCK**로 표시 하려는 경우가 아니면 이러한 함수를 명시적으로 호출할 필요가 없습니다. 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

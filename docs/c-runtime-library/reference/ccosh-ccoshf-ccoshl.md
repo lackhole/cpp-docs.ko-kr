@@ -1,11 +1,11 @@
 ---
 title: ccosh, ccoshf, ccoshl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - ccosh
 - ccoshf
 - ccoshl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ccosh
 - ccoshf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - ccoshf function
 - ccoshl function
 ms.assetid: 79667449-4edf-4948-bf6b-720adf2b3f3b
-ms.openlocfilehash: c25441d4f25f9e77a0cb71d942e132f34c4c1f5a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 978db0141ecd6799c3a8d19a3b4621ae1a2e8b43
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335557"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943283"
 ---
 # <a name="ccosh-ccoshf-ccoshl"></a>ccosh, ccoshf, ccoshl
 
@@ -68,11 +71,11 @@ _Lcomplex ccoshl(
 
 ## <a name="return-value"></a>반환 값
 
-하이퍼볼릭 코사인 *z*, 라디안에서입니다.
+*Z*의 하이퍼볼릭 코사인 (라디안)입니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **ccosh** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **ccosh** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **ccosh** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **ccosh** 는 항상 **_dcomplex** 값을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

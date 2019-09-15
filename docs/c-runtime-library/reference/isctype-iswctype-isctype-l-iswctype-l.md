@@ -1,12 +1,12 @@
 ---
 title: _isctype, iswctype, _isctype_l, _iswctype_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _isctype_l
 - iswctype
 - _iswctype_l
 - _isctype
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - iswctype
 - _isctype
@@ -38,16 +41,16 @@ helpviewer_keywords:
 - isctype function
 - _iswctype function
 ms.assetid: cf7509b7-12fc-4d95-8140-ad2eb98173d3
-ms.openlocfilehash: c5eb0b51cf0371100ed884221ee04885dfbe9ad9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9fefb852f8ebd34b932842ee4c12b53f79b29641
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157320"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954395"
 ---
-# <a name="isctype-iswctype-isctypel-iswctypel"></a>_isctype, iswctype, _isctype_l, _iswctype_l
+# <a name="_isctype-iswctype-_isctype_l-_iswctype_l"></a>_isctype, iswctype, _isctype_l, _iswctype_l
 
-테스트 *c* 하 여 지정 된 ctype 속성을 *desc* 인수입니다. 유효한 각 값에 대 한 *desc*, 하는 해당 와이드 문자 분류 루틴이 있습니다.
+*Desc* 인수로 지정 된 ctype 속성에 대해 *c* 를 테스트 합니다. *Desc*의 유효한 각 값에 대해 해당 하는 와이드 문자 분류 루틴이 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -85,16 +88,16 @@ int _iswctype_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_isctype** 하 고 **iswctype** 경우 0이 아닌 값을 반환 *c* 로 지정 된 속성이 *desc* 현재 로캘 또는 그렇지 않은 경우에 0에서. 포함 된 이러한 함수의 버전을 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_isctype** 및 **iswctype** 는 *c* 에 현재 로캘의 *desc* 로 지정 된 속성이 있는 경우 0이 아닌 값을 반환 하 고 그렇지 않으면 0을 반환 합니다. **_L** 접미사가 있는 이러한 함수 버전은 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-동작 **_isctype** 하 고 **_isctype_l** 경우 정의 되지 않습니다 *c* EOF가 범위인 0부터 0xff까지 포괄 합니다. 디버그 CRT 라이브러리가 사용 되는 경우 및 *c* 함수 raise 이러한 값 중 하나가 아닌 한 어설션입니다.
+*C* 가 EOF가 아니거나 0에서 0xff 사이 (포함) 범위 내에 있는 경우 **_isctype** 및 **_isctype_l** 의 동작이 정의 되지 않습니다. 디버그 CRT 라이브러리가 사용 되 고 *c* 가 이러한 값 중 하나가 아니면 함수는 어설션을 발생 시킵니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|N/A|**_isctype**|N/A|**_iswctype**|
-|N/A|**_isctype_l**|N/A|**_iswctype_l**|
+|n/a|**_isctype**|n/a|**_iswctype**|
+|n/a|**_isctype_l**|n/a|**_iswctype_l**|
 
 ## <a name="requirements"></a>요구 사항
 

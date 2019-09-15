@@ -1,9 +1,9 @@
 ---
 title: setbuf
 ms.date: 04/08/2019
-apiname:
+api_name:
 - setbuf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,19 +15,22 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - setbuf
 helpviewer_keywords:
 - setbuf function
 - stream buffering
 ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
-ms.openlocfilehash: 89f8a4d8eb853c774f4f7299ceaa9b9eb6177b42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c6c78297b1818131dcfcb10f4f2eaadd752d8ef4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356397"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948274"
 ---
 # <a name="setbuf"></a>setbuf
 
@@ -52,9 +55,9 @@ void setbuf(
 
 ## <a name="remarks"></a>설명
 
-합니다 **setbuf** 함수에 대 한 버퍼링을 제어 *스트림*합니다. 합니다 *스트림을* 인수는 읽거나 쓰지 않은 않은 열린 파일을 참조 해야 합니다. 경우는 *버퍼* 인수가 **NULL**, 스트림이 버퍼링 되지 않습니다. 버퍼 길이 문자 배열 가리켜야 그렇지 않은 경우 **BUFSIZ**, 여기서 **BUFSIZ** STDIO에 정의 된 버퍼 크기입니다. 8. 지정된 스트림에 대한 기본 시스템 할당 버퍼 대신 사용자 지정 버퍼가 I/O 버퍼링에 사용됩니다. 합니다 **stderr** stream은 기본적으로 버퍼링 하지만 사용할 수 있습니다 **setbuf** 버퍼를 할당할 **stderr**합니다.
+**Setbuf** 함수는 *스트림에*대 한 버퍼링을 제어 합니다. *Stream* 인수는 읽거나 쓰지 않은 열려 있는 파일을 참조 해야 합니다. *Buffer* 인수가 **NULL**이면 스트림은 버퍼링 되지 않습니다. 그렇지 않은 경우 버퍼는 길이가 **BUFSIZ**인 문자 배열을 가리켜야 합니다. 여기서 **BUFSIZ** 은 stdio.h에 정의 된 버퍼 크기입니다. 넣기. 지정된 스트림에 대한 기본 시스템 할당 버퍼 대신 사용자 지정 버퍼가 I/O 버퍼링에 사용됩니다. **Stderr** 스트림은 기본적으로 버퍼링 되지 않지만 **setbuf** 를 사용 하 여 버퍼를 **stderr**에 할당할 수 있습니다.
 
-**setbuf** 바뀌었습니다 [setvbuf](setvbuf.md), 새 코드에 대 한 기본 설정된 루틴인 인 합니다. 와 달리 **setvbuf**를 **setbuf** 오류 보고의 방법이 없습니다. **setvbuf** 버퍼링 모드 및 버퍼 크기를 제어할 수 있습니다. **setbuf** 기존 코드와 호환성을 위해 존재 합니다.
+**setbuf** 는 새 코드에 기본 설정 된 루틴 인 [setvbuf](setvbuf.md)로 대체 되었습니다. **Setvbuf**와 달리 **setbuf** 에는 오류를 보고 하는 방법이 없습니다. 또한 **setvbuf** 를 사용 하면 버퍼링 모드와 버퍼 크기를 모두 제어할 수 있습니다. **setbuf** 는 기존 코드와의 호환성을 위해 존재 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

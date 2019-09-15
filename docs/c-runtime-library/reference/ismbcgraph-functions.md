@@ -1,7 +1,7 @@
 ---
 title: _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbcpunct_l
 - _ismbcblank
 - _ismbcprint
@@ -12,7 +12,7 @@ apiname:
 - _ismbcspace_l
 - _ismbcspace
 - _ismbcgraph
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -24,7 +24,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ismbcspace
 - _ismbcgraph
@@ -56,14 +59,14 @@ helpviewer_keywords:
 - _ismbcgraph_l function
 - _ismbcspace function
 ms.assetid: 8e0a5f47-ba64-4411-92a3-3c525d16e3be
-ms.openlocfilehash: 05946def8c4d832751554a1653afa98c9965fee9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 25136896555128339aaa4c79cec2ca9bf3ded43c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286877"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953900"
 ---
-# <a name="ismbcgraph-ismbcgraphl-ismbcprint-ismbcprintl-ismbcpunct-ismbcpunctl-ismbcblank-ismbcblankl-ismbcspace-ismbcspacel"></a>_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
+# <a name="_ismbcgraph-_ismbcgraph_l-_ismbcprint-_ismbcprint_l-_ismbcpunct-_ismbcpunct_l-_ismbcblank-_ismbcblank_l-_ismbcspace-_ismbcspace_l"></a>_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
 
 문자가 그래픽 문자, 표시 문자, 문장 부호 문자 또는 공백 문자인지 여부를 확인합니다.
 
@@ -120,9 +123,9 @@ int _ismbcspace_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. 하는 경우 *c* < = 255 및 해당 **_ismbb** 루틴 (예를 들어 **_ismbcalnum** 에 해당 **_ismbbalnum**), 결과 해당 반환 값 **_ismbb** 루틴입니다.
+이러한 각 루틴은 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. *C* < = 255이 고 해당 **_ismbb** 루틴이 있는 경우 (예: **_ismbcalnum** 가 **_ismbbalnum**에 해당 하는 경우) 결과는 해당 **_ismbb** 루틴의 반환 값입니다.
 
-이러한 함수의 버전은 동일 요소를 포함 한다는 점을 제외 합니다 **_l** 접미사는 현재 로캘 대신 해당 로캘 종속 동작에 대해 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_L** 접미사가 있는 함수는 현재 로캘 대신 로캘 종속 동작에 대해 전달 된 로캘을 사용 한다는 점을 제외 하 고 이러한 함수의 버전은 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
@@ -130,11 +133,11 @@ int _ismbcspace_l(
 
 |루틴에서 반환된 값|테스트 조건|932 코드 페이지 예제|
 |-------------|--------------------|---------------------------|
-|**_ismbcgraph**|그래픽|경우에만 0이 아닌 값 반환 *c* 공백 ()를 제외한 모든 ASCII 또는 가타카나 인쇄 가능한 문자를 싱글바이트 표현입니다.|
-|**_ismbcprint**|인쇄 가능|경우에만 0이 아닌 값 반환 *c* 공백 ()를 포함 하 여 모든 ASCII 또는 가타카나 인쇄 가능한 문자를 싱글바이트 표현입니다.|
-|**_ismbcpunct**|문장 부호|경우에만 0이 아닌 값 반환 *c* 모든 ASCII 또는 가타카나 문장 부호 문자의 싱글바이트 표현인 합니다.|
-|**_ismbcblank**|공백 또는 가로 탭|경우에만 0이 아닌 값 반환 *c* 가 공백 또는 가로 탭 문자: *c*= 0x20 또는 *c*= 0x09) 인 합니다.|
-|**_ismbcspace**|공백|경우에만 0이 아닌 값 반환 *c* 공백 문자: *c*0x20 또는 0x09< = < =*c*< 0x0D =.|
+|**_ismbcgraph**|그래픽|*C* 가 공백 ()을 제외한 모든 ASCII 또는 가타카나 인쇄 가능한 문자의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환 합니다.|
+|**_ismbcprint**|인쇄 가능|*C* 가 공백 ()을 포함 하 여 모든 ASCII 또는 가타카나 인쇄 가능 문자의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환 합니다.|
+|**_ismbcpunct**|문장 부호|*C* 가 ASCII 또는 가타카나 문장 부호 문자의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환 합니다.|
+|**_ismbcblank**|공백 또는 가로 탭|*C* 가 공백 또는 가로 탭 문자인 경우에만 0이 아닌 값을 반환 합니다. *c*= 0x20 또는 *c*= 0x09입니다.|
+|**_ismbcspace**|공백|*C* 가 공백 문자인 경우에만 0이 아닌 값을 반환 합니다. *c*= 0x20 또는 0x09 < =*c*< = 0x0D.|
 
 ## <a name="requirements"></a>요구 사항
 

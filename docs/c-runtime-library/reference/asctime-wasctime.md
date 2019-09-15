@@ -1,10 +1,10 @@
 ---
 title: asctime, _wasctime
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wasctime
 - asctime
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tasctime
 - asctime
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - time structure conversion
 - time, converting
 ms.assetid: 974f1727-10ff-4ed4-8cac-2eb2d681f576
-ms.openlocfilehash: bc2d7a50442d9000eaaebf7a06bf336b3317e4df
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9ca9bbcbfff3d2bef41443ff1744a1b612727c20
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341810"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939668"
 ---
-# <a name="asctime-wasctime"></a>asctime, _wasctime
+# <a name="asctime-_wasctime"></a>asctime, _wasctime
 
-변환 된 **tm** 시간 문자열 구조체입니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [asctime_s, _wasctime_s](asctime-s-wasctime-s.md)를 참조하세요.
+**Tm** 시간 구조를 문자열로 변환 합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [asctime_s, _wasctime_s](asctime-s-wasctime-s.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -59,33 +62,33 @@ wchar_t *_wasctime(
 
 ## <a name="return-value"></a>반환 값
 
-**asctime** 문자 문자열 결과 대 한 포인터를 반환 합니다. **_wasctime** 와이드 문자 문자열 결과에 대 한 포인터를 반환 합니다. 오류 반환 값이 없습니다.
+**asctime** 는 문자열 결과에 대 한 포인터를 반환 합니다. **_wasctime** 는 와이드 문자 문자열 결과에 대 한 포인터를 반환 합니다. 오류 반환 값이 없습니다.
 
 ## <a name="remarks"></a>설명
 
 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [asctime_s, _wasctime_s](asctime-s-wasctime-s.md)를 참조하세요.
 
-합니다 **asctime** 함수는 문자열에는 구조체로 저장 된 시간을 변환 합니다. *timeptr* 값에 대 한 호출에서 가져온 일반적으로 **gmtime** 또는 **localtime**에 둘 다에 대 한 포인터를 반환을 **tm** 구조 에 정의 된 시간입니다. 8.
+**Asctime** 함수는 구조체로 저장 된 시간을 문자열로 변환 합니다. *Timeptr* 값은 일반적으로 **gmtime** 또는 **localtime**에 대 한 호출에서 가져옵니다 .이는 시간에 정의 된 **tm** 구조체에 대 한 포인터를 반환 합니다. 넣기.
 
 |timeptr 멤버|값|
 |--------------------|-----------|
-|**tm_hour**|(0-23) 자정 이후의 시간|
+|**tm_hour**|자정 이후의 시간 (0-23)|
 |**tm_isdst**|일광 절약 시간이 적용되면 양수, 일광 절약 시간이 적용되지 않으면 0, 일광 절약 시간의 상태를 알 수 없으면 음수입니다. C 런타임 라이브러리에서는 DST(일광 절약 시간) 계산 구현을 위한 미국의 규칙이 사용된다고 가정합니다.|
-|**tm_mday**|일자 (1-31)|
-|**tm_min**|분 후에 시간 (0-59)|
-|**tm_mon**|월 (0 ~ 11; 1 월 = 0)|
-|**tm_sec**|분 (0-59) 이후의 시간 (초)|
-|**tm_wday**|요일 (0 ~ 6; 일요일 = 0)|
-|**tm_yday**|(0 ~ 365; 연간 일자 1 월 1 일 = 0)|
+|**tm_mday**|월간 일자 (1-31)|
+|**tm_min**|시간 이후 분 (0-59)|
+|**tm_mon**|월 (0-11; 1 월 = 0)|
+|**tm_sec**|분 이후의 초 (0-59)|
+|**tm_wday**|요일 (0-6; 일요일 = 0)|
+|**tm_yday**|연간 일자 (0-365; 1 월 1 일 = 0)|
 |**tm_year**|연도(현재 연도 빼기 1900)|
 
 또한 변환된 문자열은 현지 표준 시간대 설정에 따라 조정됩니다. 현지 시간 구성에 대한 정보는 [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md) 및 [localtime](localtime-localtime32-localtime64.md) 함수를 참조하고 표준 시간대 환경 및 전역 변수 정의에 대한 정보는 [_tzset](tzset.md) 함수를 참조하세요.
 
-생성 되는 문자열 결과 **asctime** 정확히 26 자를 포함 하며 그 형식은 `Wed Jan 02 02:03:55 1980\n\0`합니다. 24시간제가 사용됩니다. 모든 필드에는 상수 너비가 있습니다. 줄 바꿈 문자 및 null 문자는 문자열의 마지막 두 자리를 차지합니다. **asctime** 반환 문자열을 저장 하는 단일 정적으로 할당 된 버퍼를 사용 합니다. 이 함수를 호출할 때마다 이전 호출의 결과가 삭제됩니다.
+**Asctime** 에 의해 생성 된 문자열 결과에는 정확히 26 자가 포함 되 `Wed Jan 02 02:03:55 1980\n\0`고 형식이 있습니다. 24시간제가 사용됩니다. 모든 필드에는 상수 너비가 있습니다. 줄 바꿈 문자 및 null 문자는 문자열의 마지막 두 자리를 차지합니다. **asctime** 는 정적으로 할당 된 단일 버퍼를 사용 하 여 반환 문자열을 포함 합니다. 이 함수를 호출할 때마다 이전 호출의 결과가 삭제됩니다.
 
-**_wasctime** 의 와이드 문자 버전이 **asctime**합니다. **_wasctime** 하 고 **asctime** 동일 하 게 작동 합니다.
+**_wasctime** 는 **asctime**의 와이드 문자 버전입니다. **_wasctime** 및 **asctime** 는 동일 하 게 동작 합니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 하는 경우 *timeptr* 가 null 포인터인 경우 또는에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 범위를 벗어난 값을 포함 하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **NULL** 설정 **errno** 하 **EINVAL**합니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Timeptr* 이 null 포인터 이거나 범위를 벗어난 값을 포함 하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는 **NULL** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 ### <a name="generic-text-routine-mapping"></a>제네릭 텍스트 루틴 매핑
 
@@ -102,7 +105,7 @@ wchar_t *_wasctime(
 
 ## <a name="example"></a>예제
 
-이 프로그램 정수 (long)에서 시스템에 배치 **aclock**, 구조로 변환 **newtime** 출력을 사용 하 여 문자열 형식으로 변환 하는 **asctime**함수입니다.
+이 프로그램은 시스템 시간을 정수 (long) **aclock**에 배치 하 고,이를 **newtime** 으로 변환한 다음 **asctime** 함수를 사용 하 여 출력에 대 한 문자열 형식으로 변환 합니다.
 
 ```C
 // crt_asctime.c

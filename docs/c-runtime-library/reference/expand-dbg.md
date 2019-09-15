@@ -1,9 +1,9 @@
 ---
 title: _expand_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _expand_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - expand_dbg
 - _expand_dbg
@@ -23,14 +26,14 @@ helpviewer_keywords:
 - expand_dbg function
 - _expand_dbg function
 ms.assetid: dc58c91f-72a8-48c6-b643-fe130fb6c1fd
-ms.openlocfilehash: cc3aa2b7e39b52eb71ac10a9b5c4a221ba6fb70c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 836b9cffcf0367f248a14469b30c1a355e2bdec2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288047"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941586"
 ---
-# <a name="expanddbg"></a>_expand_dbg
+# <a name="_expand_dbg"></a>_expand_dbg
 
 블록을 확장하거나 축소하여 힙에서 지정된 메모리 블록의 크기를 조정합니다(디버그 버전에만 해당).
 
@@ -55,31 +58,31 @@ void *_expand_dbg(
 요청된 블록의 새 크기(바이트)입니다.
 
 *blockType*<br/>
-요청 된 크기가 조정 된 블록에 대 한 형식: **_CLIENT_BLOCK** 하거나 **_NORMAL_BLOCK**합니다.
+크기 조정 된 블록의 요청 된 유형: **_CLIENT_BLOCK** 또는 **_NORMAL_BLOCK**.
 
 *filename*<br/>
-확장 작업을 요청한 소스 파일의 이름에 대 한 포인터 또는 **NULL**합니다.
+확장 작업 또는 **NULL**을 요청한 소스 파일의 이름에 대 한 포인터입니다.
 
 *linenumber*<br/>
-확장 작업이 요청 있는 소스 파일의 줄 번호 또는 **NULL**합니다.
+확장 작업이 요청 되었거나 **NULL 인**소스 파일의 줄 번호입니다.
 
-*filename* 하 고 *linenumber* 매개 변수에 하면 볼 수 있습니다 **_expand_dbg** 명시적으로 호출 된 또는 [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md)전처리기 상수가 정의 되었습니다.
+*Filename* 및 *linenumber* 매개 변수는 **_expand_dbg** 가 명시적으로 호출 되었거나 [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) 전처리기 상수가 정의 된 경우에만 사용할 수 있습니다.
 
 ## <a name="return-value"></a>반환 값
 
-성공적으로 완료 되 면 **_expand_dbg** 크기가 조정 된 메모리 블록에 대 한 포인터를 반환 합니다. 메모리가 이동되지 않으므로 주소는 userData와 같습니다. 반환 하는 경우 오류가 발생 했습니다. 또는 요청 된 크기는 블록을 확장할 수 없습니다 **NULL**합니다. 오류가 발생 하는 경우 **errno** 오류의 특성에 대 한 정보는 운영 체제에서 사용 하는 것입니다. 에 대 한 자세한 내용은 **errno**를 참조 하십시오 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)합니다.
+성공적으로 완료 되 면 **_expand_dbg** 은 크기 조정 된 메모리 블록에 대 한 포인터를 반환 합니다. 메모리가 이동되지 않으므로 주소는 userData와 같습니다. 오류가 발생 했거나 블록을 요청 된 크기로 확장할 수 없는 경우 **NULL**을 반환 합니다. 오류가 발생 하는 경우 **errno** 은 운영 체제에서 오류 특성에 대 한 정보를 포함 합니다. **Errno**에 대 한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조 하세요.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_expand_dbg** 함수는 디버그 버전 _[확장](expand.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_expand_dbg** 대 한 호출으로 줄어듭니다 **_expand**합니다. 둘 다 **_expand** 하 고 **_expand_dbg** 기본 힙에서 메모리 블록의 크기를 조정 하지만 **_expand_dbg** 몇 가지 디버깅 기능을 수용: 사용자의 양쪽에서 버퍼 부분 블록 누수 테스트, 블록 형식 매개 변수로 특정 할당 형식 추적 및 *filename*/*linenumber* 의 출처를 확인 하는 정보 할당 요청 수입니다.
+**_Expand_dbg** 함수는 _[expand](expand.md) 함수의 디버그 버전입니다. [_Debug](../../c-runtime-library/debug.md) 가 정의 되지 않은 경우 **_expand_dbg** 에 대 한 각 호출은 **_expand**호출로 줄어듭니다. **_Expand** 및 **_expand_dbg** 는 모두 기본 힙의 메모리 블록 크기를 조정 하지만 **_expand_dbg** 에는 몇 가지 디버깅 기능을 사용할 수 있습니다. 블록의 사용자 부분 양쪽에 있는 버퍼는 누수를 테스트할 블록 형식 매개 변수입니다. 특정 할당 유형 및 *파일 이름*/*linenumber* 정보를 통해 할당 요청의 출처를 확인할 수 있습니다.
 
-**_expand_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 지정 된 메모리 블록 크기를 조정 *newSize*합니다. *newSize* 원래 할당 된 메모리 블록의 크기 보다 작거나 클 수 있습니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 애플리케이션에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 크기를 조정하려면 원래 메모리 블록을 확장하거나 축소합니다. **_expand_dbg** 처럼 메모리 블록을 이동 하지는 않습니다 합니다 [_realloc_dbg](realloc-dbg.md) 함수입니다.
+**_expand_dbg** 는 요청 된 *newSize*보다 약간 더 많은 공간을 사용 하 여 지정 된 메모리 블록의 크기를 조정 합니다. *newSize* 는 원래 할당 된 메모리 블록의 크기 보다 크거나 적을 수 있습니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 애플리케이션에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 크기를 조정하려면 원래 메모리 블록을 확장하거나 축소합니다. **_expand_dbg** 는 [_realloc_dbg](realloc-dbg.md) 함수와 마찬가지로 메모리 블록을 이동 하지 않습니다.
 
-때 *newSize* 원래 블록 크기, 메모리 블록을 확장 하는 보다 큽니다. 확장 중에 메모리 블록이 요청 된 크기에 맞게 확장할 수 없는 경우 **NULL** 반환 됩니다. 때 *newSize* 원래 블록 크기, 메모리 블록은 새 크기를 가져올 때까지 계약은 보다 작습니다.
+*NewSize* 가 원래 블록 크기 보다 크면 메모리 블록이 확장 됩니다. 확장 하는 동안 메모리 블록을 요청 된 크기에 맞게 확장할 수 없는 경우 **NULL** 이 반환 됩니다. *NewSize* 가 원래 블록 크기 보다 작은 경우 새 크기를 얻을 때까지 메모리 블록이 축소 됩니다.
 
 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요. 할당 블록 형식과 이러한 형식의 사용 방법에 대한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요. 애플리케이션의 디버그 빌드에서 표준 힙 함수를 호출하는 것과 해당 함수의 디버그 버전을 호출하는 것의 차이에 대한 자세한 내용은 [힙 할당 함수의 디버그 버전](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)을 참조하세요.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *memblock* 가 null 포인터인 경우 또는 크기 보다 크면 **_HEAP_MAXREQ**에 설명 된 대로이 함수는 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md). 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **NULL**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *Memblock* 이 null 포인터인 경우 또는 Size가 **_HEAP_MAXREQ**보다 큰 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **NULL**을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

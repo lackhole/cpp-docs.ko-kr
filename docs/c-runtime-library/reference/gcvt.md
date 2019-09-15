@@ -1,9 +1,9 @@
 ---
 title: _gcvt
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _gcvt
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _gcvt
 helpviewer_keywords:
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
-ms.openlocfilehash: 9cf966b455af601d09b4444a5c590e305a6681c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3618f5571275783131c74c89f29218f89023f70e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332255"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956098"
 ---
-# <a name="gcvt"></a>_gcvt
+# <a name="_gcvt"></a>_gcvt
 
 부동 소수점 값을 버퍼에 저장되는 문자열로 변환합니다. 이 함수의 더 안전한 버전을 사용할 수 있습니다. [_gcvt_s](gcvt-s.md)를 참조하세요.
 
@@ -62,15 +65,15 @@ char *_gcvt(
 
 ## <a name="return-value"></a>반환 값
 
-**_gcvt** 숫자의 문자열에 대 한 포인터를 반환 합니다.
+**_gcvt** 는 숫자 문자열에 대 한 포인터를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_gcvt** 함수는 부동 소수점 변환 *값* 를 포함 하는 소수점 및 가능한 부호 바이트 문자열로 문자열을 가져와 *버퍼*합니다. 합니다 *버퍼* 변환 된 값과 자동으로 추가 되는 종료 null 문자를 수용 하기에 충분 해야 합니다. 경우는 버퍼 크기인 *자릿수* + 1은 사용, 함수는 버퍼의 끝을 덮어씁니다. 이는 변환된 문자열에 소수점이 포함되어 있고 부호 및 지수 정보가 포함될 수 있기 때문입니다. 오버플로에 대한 프로비전이 없습니다. **_gcvt** 생성 하려고 *자릿수* 10 진수 형식의 숫자입니다. 수 없는 경우 생성 *자릿수* 지 수 서식의 자릿수입니다. 변환 시 뒤에 오는 0을 표시하지 않을 수 있습니다.
+**_Gcvt** 함수는 부동 소수점 *값* 을 문자열 (소수점 및 가능한 부호 바이트 포함)로 변환 하 고 문자열을 *버퍼*에 저장 합니다. *버퍼* 는 변환 된 값과 종료 null 문자 (자동으로 추가 됨)를 수용할 수 있을 만큼 커야 합니다. 버퍼 *크기 + 1* 을 사용 하는 경우 함수는 버퍼의 끝을 덮어씁니다. 이는 변환된 문자열에 소수점이 포함되어 있고 부호 및 지수 정보가 포함될 수 있기 때문입니다. 오버플로에 대한 프로비전이 없습니다. **_gcvt** 는 10 진수 형식으로 *숫자* 자릿수를 생성 하려고 시도 합니다. 사용할 수 없는 경우에는 지 수 형식으로 *숫자* 를 생성 합니다. 변환 시 뒤에 오는 0을 표시하지 않을 수 있습니다.
 
-*버퍼* 길이의 **_CVTBUFSIZE** 충분 모두 부동 소수점 값입니다.
+길이가 **_CVTBUFSIZE** 인 *버퍼* 는 모든 부동 소수점 값에 대해 충분 합니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 *버퍼* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **NULL**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *Buffer* 가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **NULL**을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,9 +1,9 @@
 ---
 title: _lock_file
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _lock_file
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _lock_file
 - lock_file
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - _lock_file function
 - lock_file function
 ms.assetid: 75c7e0e6-efff-4747-b6ed-9bcf2b0894c3
-ms.openlocfilehash: 4c6d9ef3ae9e2f63e702dd3fc6b01f7edea40626
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 43030030d1674cfba24c1300487f576b7a2085ea
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157439"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953309"
 ---
-# <a name="lockfile"></a>_lock_file
+# <a name="_lock_file"></a>_lock_file
 
-잠금를 **파일** 개체에 액세스 하는 스레드에 대 한 일관성을 유지 하는 **파일** 개체에 동시에 합니다.
+파일 개체에 동시에 액세스 **하는 스레드에** 대 한 일관성을 유지 하기 위해 **파일** 개체를 잠급니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,7 +51,7 @@ void _lock_file( FILE* file );
 
 ## <a name="remarks"></a>설명
 
-합니다 **_lock_file** 잠금을 함수는 **파일** 로 지정 된 개체 *파일*합니다. 기본 파일에 의해 잠기지 **_lock_file**합니다. 파일에 대한 잠금을 해제하려면 [_unlock_file](unlock-file.md)을 사용합니다. 에 대 한 호출 **_lock_file** 하 고 **_unlock_file** 스레드에서 일치 해야 합니다.
+**_Lockrxa** 함수는 *file*로 지정 된 **파일** 개체를 잠급니다. 기본 파일은 **_lockrla**에 의해 잠겨 있지 않습니다. 파일에 대한 잠금을 해제하려면 [_unlock_file](unlock-file.md)을 사용합니다. **_Lock\\unununununununununununununununununununununun\**
 
 ## <a name="requirements"></a>요구 사항
 

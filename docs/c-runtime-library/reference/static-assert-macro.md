@@ -1,7 +1,7 @@
 ---
 title: _STATIC_ASSERT 매크로
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,22 +12,25 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _STATIC_ASSERT
 helpviewer_keywords:
 - _STATIC_ASSERT macro
 ms.assetid: 89b0350c-2c2f-4be6-9786-8b1f0780a5da
-ms.openlocfilehash: 5d3aa1d9665b48a0690d8eb62353fc98c5a550f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ac609fc7af937b6f56cd5b310341409187df7de4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354700"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957938"
 ---
-# <a name="staticassert-macro"></a>_STATIC_ASSERT 매크로
+# <a name="_static_assert-macro"></a>_STATIC_ASSERT 매크로
 
-컴파일 시 식을 계산 하 고 결과가 인 경우 오류를 생성 **FALSE**합니다.
+컴파일 시간에 식을 계산 하 고 결과가 **FALSE**인 경우 오류를 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,15 +43,15 @@ _STATIC_ASSERT(
 ### <a name="parameters"></a>매개 변수
 
 *booleanExpression*<br/>
-0이 아닌 값으로 계산 되는 식 (포인터 포함) (**TRUE**) 또는 0 (**FALSE**).
+0이 아닌 값 (**TRUE**) 또는 0 (**FALSE**)으로 계산 되는 식 (포인터 포함)입니다.
 
 ## <a name="remarks"></a>설명
 
-이 매크로 유사 합니다 [_ASSERT 및 _ASSERTE 매크로](assert-asserte-assert-expr-macros.md)점을 제외 하 고 *booleanExpression* 런타임 대신 컴파일 시간에 평가 됩니다. 하는 경우 *booleanExpression* 로 평가 **FALSE** (0), [컴파일러 오류 C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) 생성 됩니다.
+이 매크로는 [_ASSERT 및 _ASSERTE 매크로](assert-asserte-assert-expr-macros.md)와 유사 합니다. 단, *booleanExpression* 는 런타임이 아닌 컴파일 시간에 평가 됩니다. *BooleanExpression* 가 **FALSE** (0)로 평가 되는 경우 [컴파일러 오류 C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) 이 생성 됩니다.
 
 ## <a name="example"></a>예제
 
-확인이 예제에서는 여부를 [sizeof](../../c-language/sizeof-operator-c.md) 는 **int** 2 바이트 보다 크거나 같은 경우는 여부에 관계 없이 [sizeof](../../c-language/sizeof-operator-c.md) 를 **긴** 1 바이트입니다. 프로그램을 컴파일되지 것입니다 및 생성 됩니다 [컴파일러 오류 C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) 때문에 **긴** 1 바이트 보다 큽니다.
+이 예제에서는 [sizeof](../../c-language/sizeof-operator-c.md) 가 **int** 가 2 바이트 보다 크거나 같은지와 [sizeof](../../c-language/sizeof-operator-c.md) **가 1** 바이트 인지 여부를 확인 합니다. 프로그램이 컴파일되지 않고 **long** 이 1 바이트 보다 크기 때문에 [컴파일러 오류 C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) 생성 됩니다.
 
 ```C
 // crt__static_assert.c

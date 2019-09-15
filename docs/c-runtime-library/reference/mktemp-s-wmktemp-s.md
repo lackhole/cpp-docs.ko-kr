@@ -1,10 +1,10 @@
 ---
 title: _mktemp_s, _wmktemp_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mktemp_s
 - _wmktemp_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wmktemp_s
 - mktemp_s
@@ -32,14 +35,14 @@ helpviewer_keywords:
 - wmktemp_s function
 - temporary files [C++]
 ms.assetid: 92a7e269-7f3d-4c71-bad6-14bc827a451d
-ms.openlocfilehash: fef10f2cfbcc0332741d560a41a782b70ed14798
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b0db1a50f638c6130e4beb6798431179edec153b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156540"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951589"
 ---
-# <a name="mktemps-wmktemps"></a>_mktemp_s, _wmktemp_s
+# <a name="_mktemp_s-_wmktemp_s"></a>_mktemp_s, _wmktemp_s
 
 고유한 파일 이름을 만듭니다. 이러한 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 있는 [_mktemp, _wmktemp](mktemp-wmktemp.md)의 버전입니다.
 
@@ -70,7 +73,7 @@ errno_t _wmktemp_s(
 파일 이름 패턴입니다.
 
 *sizeInChars*<br/>
-단일 바이트 문자를 버퍼의 크기 **_mktemp_s**와이드의 문자 **_wmktemp_s**, null 종결자를 포함 합니다.
+**_Mktemp_s**의 싱글바이트 문자에 있는 버퍼의 크기입니다. null 종결자를 포함 하는 **_wmktemp_s**의 와이드 문자
 
 ## <a name="return-value"></a>반환 값
 
@@ -78,17 +81,17 @@ errno_t _wmktemp_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*nameTemplate*|*sizeInChars*|반환 값|새 값 *nameTemplate*|
+|*nameTemplate*|*sizeInChars*|반환 값|*NameTemplate* 의 새 값|
 |----------------|-------------------|----------------------|-------------------------------|
 |**NULL**|any|**EINVAL**|**NULL**|
-|형식이 잘못 되었습니다 (설명 부분 참조 올바른 형식에 대 한 섹션)|any|**EINVAL**|빈 문자열|
+|형식이 잘못 되었습니다 (올바른 형식에 대 한 설명 섹션 참조).|any|**EINVAL**|빈 문자열|
 |any|<= X의 수|**EINVAL**|빈 문자열|
 
-위의 오류 조건 중 하나라도 발생하는 경우, [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수를 반환 하 고 **EINVAL**합니다.
+위의 오류 조건 중 하나라도 발생하는 경우, [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 함수는 **EINVAL**를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_mktemp_s** 함수를 수정 하 여 고유한 파일 이름을 만듭니다 합니다 *nameTemplate* 인수를 있도록 호출 후는 *nameTemplate* 문자열을 가리키는 포인터 새 파일 이름을 포함 합니다. **_mktemp_s** 런타임 시스템에서 현재 사용 중인 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 하며 필요에 따라 멀티 바이트 문자열 인수를 자동으로 처리 합니다. **_wmktemp_s** 의 와이드 문자 버전이 **_mktemp_s**;의 인수 **_wmktemp_s** 는 와이드 문자 문자열입니다. **_wmktemp_s** 하 고 **_mktemp_s** 동일 하 게 한다는 점을 제외 하 고, 그렇지 동작 **_wmktemp_s** 멀티 바이트 문자열을 처리 하지 않습니다.
+**_Mktemp_s** 함수는 *nameTemplate* 인수를 수정 하 여 고유한 파일 이름을 만듭니다. 그러면 호출 후 *nameTemplate* 포인터가 새 파일 이름을 포함 하는 문자열을 가리킵니다. **_mktemp_s** 는 자동으로 멀티 바이트 문자열 인수를 적절 하 게 처리 하 여 런타임 시스템에서 현재 사용 중인 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 합니다. **_wmktemp_s** 는 **_mktemp_s**의 와이드 문자 버전입니다. **_wmktemp_s** 의 인수는 와이드 문자 문자열입니다. **_wmktemp_s** 및 **_mktemp_s** 는 **_wmktemp_s** 가 멀티 바이트 문자열을 처리 하지 않는 경우를 제외 하 고 동일 하 게 동작 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -96,17 +99,17 @@ errno_t _wmktemp_s(
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tmktemp_s**|**_mktemp_s**|**_mktemp_s**|**_wmktemp_s**|
 
-합니다 *nameTemplate* 인수의 형식은 **baseXXXXXX**여기서 *기본* 제공 하는 새 파일 이름 부분은 속하며 각 X는에서 제공 하는 문자열에 대 한 자리 표시자 **_mktemp_s**합니다. 각 자리 표시자 문자 *nameTemplate* 는 대문자 X 여야 **_mktemp_s** 유지 *기본* 첫 번째 후행 X를 영문자로 바꿉니다. **_mktemp_s** 대체 다음 후행 X 5 자리 숫자 값을 사용 하 여이 값은 프로세스 또는 다중 스레드 프로그램을 호출 하는 스레드에서 호출을 식별 하는 고유 번호입니다.
+*NameTemplate* 인수에는 **baseXXXXXX**형식이 있습니다. 여기서 *base* 는 사용자가 제공 하는 새 파일 이름의 일부이 고 각 X는 **_mktemp_s**에서 제공 하는 문자에 대 한 자리 표시자입니다. *NameTemplate* 의 각 자리 표시자 문자는 대문자 x 여야 합니다. **_mktemp_s** 는 *밑수* 를 유지 하 고 첫 번째 후행 X를 영문자로 바꿉니다. **_mktemp_s** 은 다음 후행 X를 5 자리 값으로 바꿉니다. 이 값은 호출 프로세스 또는 다중 스레드 프로그램의 호출 스레드를 식별 하는 고유 번호입니다.
 
-성공한 각 호출에 **_mktemp_s** 수정 *nameTemplate*합니다. 각 후속 호출에서 동일한 프로세스 또는 스레드의 동일한 *nameTemplate* 인수 **_mktemp_s** 반환한 이름과 일치 하는 파일 이름에 대 한 검사 **_mktemp_s** 이전 호출 합니다. 지정 된 이름에 대 한 파일이 없는 경우 **_mktemp_s** 해당 이름을 반환 합니다. 이전에 반환 된 모든 이름에 대 한 파일이 존재 하는 경우 **_mktemp_s** 다음 사용 가능한 소문자를 'a' ~ 'z'까지에서 순서 대로 사용 하 여 이전에 반환 된 이름에서 사용한 영문자를 대체 하 여 새 이름을 만듭니다. 예를 들어 있으면 *기본* 됩니다.
+**_Mktemp_s** 를 성공적으로 호출할 때마다 *nameTemplate*가 수정 됩니다. 동일한 *nameTemplate* 인수를 사용 하는 동일한 프로세스 또는 스레드의 각 후속 호출에서 **_mktemp_s** 는 이전 호출에서 **_mktemp_s** 가 반환한 이름과 일치 하는 파일 이름을 확인 합니다. 지정 된 이름에 대 한 파일이 없는 경우 **_mktemp_s** 는 해당 이름을 반환 합니다. 이전에 반환 된 이름에 대 한 파일이 존재 하는 경우 **_mktemp_s** 는 이전에 반환 된 이름에 사용 된 알파벳 문자를 ' a '부터 ' z '까지 순서 대로 사용 가능한 다음 소문자로 바꿔 새 이름을 만듭니다. 예를 들어 *base* 가 다음과 같은 경우:
 
 > **fn**
 
-및에서 제공 하는 5 자리 숫자 값 **_mktemp_s** 이 12345 인 경우 첫 번째 반환 되는:
+**_mktemp_s** 에서 제공 하는 5 자리 값은 12345이 고, 반환 되는 첫 번째 이름은입니다.
 
 > **fna12345**
 
-이 이름이 FNA12345 파일을 만드는 데 사용 됩니다 하 고이 파일이 있는지, 동일한 프로세스 또는 스레드가 동일한 호출에서 반환 된 다음 이름이 *기본* 에 대 한 *nameTemplate* 됩니다.
+이 이름을 사용 하 여 FNA12345 파일을 만들 때이 파일이 여전히 존재 하는 경우 *nameTemplate* 에 대해 동일한 *기본* 을 사용 하는 동일한 프로세스 또는 스레드의 호출에서 반환 된 다음 이름은 다음과 같습니다.
 
 > **fnb12345**
 
@@ -114,7 +117,7 @@ FNA12345가 존재하지 않는 경우 반환된 다음 이름은 다시 아래�
 
 > **fna12345**
 
-**_mktemp_s** 의 지정된 된 조합에 대 한 고유한 파일 이름 26 개까지 만들 수 있습니다 *기본* 하 고 *nameTemplate* 값입니다. 따라서 FNZ12345는 마지막 고유한 파일 이름을 **_mktemp_s** 에 대해 만들 수는 *기본* 및 *nameTemplate* 이 예제에서 사용 되는 값입니다.
+**_mktemp_s** 는 *기본* 및 *nameTemplate* 값의 지정 된 조합에 대해 최대 26 개의 고유한 파일 이름을 만들 수 있습니다. 따라서 FNZ12345는이 예제에 사용 된 *base* 및 *nameTemplate* 값에 대해 **_mktemp_s** 수 있는 마지막 고유 파일 이름입니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 

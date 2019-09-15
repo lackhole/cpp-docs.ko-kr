@@ -1,9 +1,9 @@
 ---
 title: wctype
 ms.date: 11/04/2016
-apiname:
+api_name:
 - wctype
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,19 +14,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wctype
 helpviewer_keywords:
 - wctype function
 - wide characters
 ms.assetid: 14aded12-4087-4123-bc48-db4e10999223
-ms.openlocfilehash: 81caf8e1ab04635d205d7b01af2d4c2896eec01c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f77082bbcc5f3cd9d82fb40993c3ac678e7e7ba2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155318"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957787"
 ---
 # <a name="wctype"></a>wctype
 
@@ -47,7 +50,7 @@ wctype_t wctype(
 
 ## <a name="return-value"></a>반환 값
 
-경우는 **LC_CTYPE** 현재 로캘의 범주 이름이 속성 문자열을 일치 하는 분류 규칙을 정의 하지 않습니다 *속성*, 함수가 0을 반환 합니다. 그렇지 않으면 이 함수는 [towctrans](towctrans.md)에 대한 후속 호출에 두 번째 인수로 사용할 수 있는 0이 아닌 값을 반환합니다.
+현재 로캘의 **LC_CTYPE** 범주가 이름이 속성 문자열 *속성과*일치 하는 분류 규칙을 정의 하지 않는 경우이 함수는 0을 반환 합니다. 그렇지 않으면 이 함수는 [towctrans](towctrans.md)에 대한 후속 호출에 두 번째 인수로 사용할 수 있는 0이 아닌 값을 반환합니다.
 
 ## <a name="remarks"></a>설명
 

@@ -1,11 +1,11 @@
 ---
 title: conj, conjf, conjl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - conj
 - conjf
 - conjl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - conj
 - conjf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - conjf function
 - conjl function
 ms.assetid: 792fccfa-19c6-4890-99f9-a3b89effccd6
-ms.openlocfilehash: 57ed5e8570a3a2467bf7080524db9d1bef618091
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb87e502d3fa927f10675796bae0b1d37115b2a2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335401"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939038"
 ---
 # <a name="conj-conjf-conjl"></a>conj, conjf, conjl
 
@@ -68,11 +71,11 @@ _Lcomplex conjl(
 
 ## <a name="return-value"></a>반환 값
 
-켤레 복소수입니다 *z*입니다.  결과으로 동일한 실수 및 허수 부분 *z*, 하지만 부호가 반대입니다.
+*Z*의 켤레 복소수입니다.  결과는 *z*와 동일한 실수 및 허수 부분을 갖지만 기호가 반대입니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **conj** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **conj** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **conj** 오버 로드를 호출할 수 있습니다. C 프로그램에서 **conj** 는 항상 **_dcomplex** 를 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

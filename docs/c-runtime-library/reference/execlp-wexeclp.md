@@ -1,10 +1,10 @@
 ---
 title: _execlp, _wexeclp
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wexeclp
 - _execlp
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-process-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _wexeclp
 - wexeclp
@@ -27,14 +30,14 @@ helpviewer_keywords:
 - _wexeclp function
 - wexeclp function
 ms.assetid: 7b179163-4bcd-4d6a-8baf-68f886791928
-ms.openlocfilehash: db13263ca4574d59821d5783b9ae83f278fef14d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ae1805dd00428aee0acca4bcb3ee221bce1d271
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339691"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937192"
 ---
-# <a name="execlp-wexeclp"></a>_execlp, _wexeclp
+# <a name="_execlp-_wexeclp"></a>_execlp, _wexeclp
 
 새 자식 프로세스를 로드하고 실행합니다.
 
@@ -68,7 +71,7 @@ intptr_t _wexeclp(
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1 나타냅니다 오류가 있는 경우에 **errno** 전역 변수가 설정 됩니다.
+성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값-1은 오류를 나타내며,이 경우 **errno** 전역 변수가 설정 됩니다.
 
 |**errno** 값|설명|
 |-------------------|-----------------|
@@ -84,9 +87,9 @@ intptr_t _wexeclp(
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수를 로드 하 고 각 명령줄 인수를 별도 매개 변수로 전달 하 고 사용 하 여 새 프로세스를 실행 합니다 **경로** 환경 변수를 실행 하려면 파일을 찾습니다.
+이러한 각 함수는 새 프로세스를 로드 하 고 실행 하 여 각 명령줄 인수를 별도의 매개 변수로 전달 하 고 **PATH** 환경 변수를 사용 하 여 실행할 파일을 찾습니다.
 
-합니다 **_execlp** 함수 매개 변수 유효성을 검사 합니다. 하는 경우 *cmdname* 또는 *arg0* 가 null 포인터 이거나 빈 문자열인 경우 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 고-1을 반환 합니다. 새 프로세스가 시작되지 않습니다.
+**_Execlp** 함수는 해당 매개 변수의 유효성을 검사 합니다. *Cmdname* 또는 *arg0* 가 null 포인터 이거나 빈 문자열인 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다. 새 프로세스가 시작되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 

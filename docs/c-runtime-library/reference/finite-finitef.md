@@ -1,10 +1,10 @@
 ---
 title: isfinite, _finite, _finitef
 ms.date: 01/31/2019
-apiname:
+api_name:
 - _finite
 - _finitef
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - isfinite
 - finite
@@ -32,14 +35,14 @@ helpviewer_keywords:
 - _finite function
 - _finitef function
 ms.assetid: 5a7d7ca7-befb-4e1f-831d-28713c6eb805
-ms.openlocfilehash: d727839521978be66c3dc9ee173ee2ba0a567445
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a2cde4d3a57884413f0c48aa299b171334c5f988
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333718"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957176"
 ---
-# <a name="isfinite-finite-finitef"></a>isfinite, _finite, _finitef
+# <a name="isfinite-_finite-_finitef"></a>isfinite, _finite, _finitef
 
 부동 소수점 값이 유한인지 확인합니다.
 
@@ -71,11 +74,11 @@ int _finitef(
 
 ## <a name="return-value"></a>반환 값
 
-`isfinite` 매크로 및 `_finite` 하 고 `_finitef` 경우 함수는 0이 아닌 값을 반환 *x* 은 일반 또는 subnormal 유한 값입니다. 인수가 유한 하는 경우에 0 또는 NaN을 반환 합니다. C++ 인라인 템플릿 함수 `isfinite` 동일 하 게 동작 하지만 반환 **true** 하거나 **false**.
+X가 법선 또는 `_finite` subnormal 유한 값인 경우 `_finitef` 매크로와 및 함수는 0이 아닌 값을 반환 합니다. `isfinite` 인수가 무한 또는 NaN 인 경우 0을 반환 합니다. 인라인 C++ 템플릿 함수 `isfinite` 는 동일한 방식으로 동작 하지만 **true** 또는 **false**를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-`isfinite` 로 컴파일할 때 인라인 템플릿 함수 C로 컴파일된 경우 매크로 C++입니다. 합니다 `_finite` 및 `_finitef` 함수는 Microsoft 전용입니다. `_finitef` 함수는 x86, ARM 또는 ARM64 플랫폼용으로 컴파일된 경우에만 사용할 수 있습니다.
+`isfinite`는 C로 컴파일된 매크로 이며로 C++컴파일될 때 인라인 템플릿 함수를 말합니다. `_finite` 및`_finitef` 함수는 Microsoft 전용입니다. `_finitef` 함수는 x86, ARM 또는 ARM64 플랫폼용으로 컴파일된 경우에만 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 

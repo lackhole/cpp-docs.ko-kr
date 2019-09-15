@@ -1,9 +1,9 @@
 ---
 title: _setmaxstdio
 ms.date: 05/21/2019
-apiname:
+api_name:
 - _setmaxstdio
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - setmaxstdio
 - _setmaxstdio
@@ -25,14 +28,14 @@ helpviewer_keywords:
 - setmaxstdio function
 - open files, maximum
 ms.assetid: 9e966875-9ff5-47c4-9b5f-e79e83b70249
-ms.openlocfilehash: 94b768d920ffd86a5bd762f8994244dda67fb15f
-ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
+ms.openlocfilehash: 620213b4df9ea555189a1403b3c9e83b55cad6c6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174830"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948228"
 ---
-# <a name="setmaxstdio"></a>_setmaxstdio
+# <a name="_setmaxstdio"></a>_setmaxstdio
 
 스트림 I/O 수준에서 동시에 열려 있는 파일 수의 최댓값을 설정합니다.
 
@@ -57,7 +60,7 @@ int _setmaxstdio(
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 **_setmaxstdio** 함수는 스트림 I/O 수준에서 동시에 열 수 있는 파일 수의 최댓값을 변경합니다.
 
@@ -80,6 +83,6 @@ C 런타임 I/O는 이제 [낮은 I/O 수준](../../c-runtime-library/low-level-
 
 **_setmaxstdio**를 사용하는 예제는 [_getmaxstdio](getmaxstdio.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>

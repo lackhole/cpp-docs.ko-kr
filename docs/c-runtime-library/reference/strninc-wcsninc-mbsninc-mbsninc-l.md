@@ -1,12 +1,12 @@
 ---
 title: _strninc, _wcsninc, _mbsninc, _mbsninc_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbsninc
 - _mbsninc_l
 - _wcsninc
 - _strninc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - strninc
 - wcsninc
@@ -42,19 +45,19 @@ helpviewer_keywords:
 - mbsninc_l function
 - _tcsninc function
 ms.assetid: 6caace64-f9e4-48c0-afa8-ea51824ad723
-ms.openlocfilehash: ef30a9f57f0b8c84199befb00f3edc13342a1eaf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b03ca4c9515bd2c70a1ce2574850e23b3add44c5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209724"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947067"
 ---
-# <a name="strninc-wcsninc-mbsninc-mbsnincl"></a>_strninc, _wcsninc, _mbsninc, _mbsninc_l
+# <a name="_strninc-_wcsninc-_mbsninc-_mbsninc_l"></a>_strninc, _wcsninc, _mbsninc, _mbsninc_l
 
-문자열 포인터를 이동 **n** 문자입니다.
+문자열 포인터를 **n** 자로 이동 합니다.
 
 > [!IMPORTANT]
-> **_mbsninc** 하 고 **_mbsninc_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsninc** 및 **_mbsninc_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -91,11 +94,11 @@ unsigned char *_mbsninc(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 루틴에 대 한 포인터를 반환 합니다 *str* 한 후 *str* 증가 *count* 문자 또는 **NULL** 경우 제공 된 포인터가 **NULL**합니다. 하는 경우 *개수* 보다 크거나의 문자 수와 같습니다 *str*, 결과가 정의 되지 않습니다.
+이러한 각 루틴은 *str* 이 *count* 문자로 증가 한 후 *str* 에 대 한 포인터를 반환 하거나 제공 된 포인터가 **null**인 경우 **null** 을 반환 합니다. *Count* 가 *str*의 문자 수보다 크거나 같은 경우 결과가 정의 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_mbsninc** 증분 함수 *str* 하 여 *개수* 멀티 바이트 문자입니다. **_mbsninc** 에 따라 멀티 바이트 문자 시퀀스를 인식 합니다 [멀티 바이트 코드 페이지](../../c-runtime-library/code-pages.md) 에서 현재 사용 합니다.
+**_Mbsninc** 함수는 멀티 바이트 문자 *수를 계산* 하 여 *str* 을 증가 시킵니다. **_mbsninc** 는 현재 사용 중인 [멀티 바이트 코드 페이지](../../c-runtime-library/code-pages.md) 에 따라 멀티 바이트 문자 시퀀스를 인식 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -103,9 +106,9 @@ unsigned char *_mbsninc(
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsninc**|**_strninc**|**_mbsninc**|**_wcsninc**|
 
-**_strninc** 하 고 **_wcsninc** 싱글바이트 문자 문자열과 와이드 문자열 버전은 **_mbsninc**합니다. **_wcsninc** 하 고 **_strninc** 이러한 매핑을 위해서만 제공 되 고 그렇지 않으면 사용할 수 없습니다. 자세한 내용은 [일반 텍스트 매핑 사용](../../c-runtime-library/using-generic-text-mappings.md) 및 [일반 텍스트 매핑](../../c-runtime-library/generic-text-mappings.md)을 참조하세요.
+**_strninc** 및 **_wcsninc** 는 단일 바이트 문자열 및 **_mbsninc**의 와이드 문자열 버전입니다. **_wcsninc** 및 **_strninc** 는이 매핑에 대해서만 제공 되며 그렇지 않으면 사용 하면 안 됩니다. 자세한 내용은 [일반 텍스트 매핑 사용](../../c-runtime-library/using-generic-text-mappings.md) 및 [일반 텍스트 매핑](../../c-runtime-library/generic-text-mappings.md)을 참조하세요.
 
-**_mbsninc_l** 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_mbsninc_l** 은 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
