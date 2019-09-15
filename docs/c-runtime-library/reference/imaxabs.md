@@ -1,9 +1,9 @@
 ---
 title: imaxabs
 ms.date: 04/05/2018
-apiname:
+api_name:
 - imaxabs
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,18 +15,21 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - imaxabs
 helpviewer_keywords:
 - imaxabs function
 ms.assetid: de2566a3-1415-4e9a-91b5-7ac3a49ebf5e
-ms.openlocfilehash: a7492e08c3a078698292923ce395524ab5327ecf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1f20c4de2ff9070bae3bfaeb8ba2d97d87d2d4d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157502"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954687"
 ---
 # <a name="imaxabs"></a>imaxabs
 
@@ -47,10 +50,10 @@ intmax_t imaxabs(
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **imaxabs** 함수 인수의 절대값을 반환 합니다. 반환되는 오류가 없습니다.
+**Imaxabs** 함수는 인수의 절대값을 반환 합니다. 반환되는 오류가 없습니다.
 
 > [!NOTE]
-> 때문에 사용 하 여 나타낼 수 있는 음의 정수 범위의 **intmax_t** 범위 보다 큰 나타낼 수 있는 양의 정수 인수를 제공할 수 있기 **imaxabs** 변환할 수 없습니다. 인수의 절대값을 반환 하 여 표현할 수 없는 경우 입력, 동작 **imaxabs** 정의 되지 않습니다.
+> **Intmax_t** 를 사용 하 여 나타낼 수 있는 음의 정수 범위가 표현할 수 있는 양의 정수 범위 보다 크기 때문에 변환 될 수 없는 **imaxabs** 에 인수를 제공할 수 있습니다. 인수의 절대 값을 반환 형식으로 나타낼 수 없는 경우 **imaxabs** 의 동작이 정의 되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 

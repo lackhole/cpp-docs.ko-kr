@@ -1,14 +1,14 @@
 ---
 title: atan, atanf, atanl, atan2, atan2f, atan2l
 ms.date: 04/05/2018
-apiname:
+api_name:
 - atan2f
 - atan2l
 - atan2
 - atanf
 - atan
 - atanl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - atan
 - atan2l
@@ -38,16 +41,16 @@ helpviewer_keywords:
 - trigonometric functions
 - atan2f function
 ms.assetid: 7a87a18e-c94d-4727-9cb1-1bb5c2725ae4
-ms.openlocfilehash: 59a67b0d213a11630f551fd7582b44aab60e314f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8c485dea281d2b754628c9663e38ea10a9b6ab57
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341719"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939605"
 ---
 # <a name="atan-atanf-atanl-atan2-atan2f-atan2l"></a>atan, atanf, atanl, atan2, atan2f, atan2l
 
-아크탄젠트를 계산 **x** (**atan**하십시오 **atanf**, 및 **atanl**) 또는의 아크탄젠트 **y** / **x** (**atan2**하십시오 **atan2f**, 및 **atan2l**).
+**X** (**atan**, **atanf**및 **atanf**)의 아크탄젠트 또는 **y**/**x** (**atan2**, **atan2f**및 **atan2l**)의 아크탄젠트를 계산 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -76,9 +79,9 @@ long double atan2( long double y, long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-**atan** 의 아크탄젠트를 반환 *x* 는 범위-π/2 ~ π/2 라디안에서에서. **atan2** 의 아크탄젠트를 반환 *y*/*x* 범위-π ~ π 라디안에서에서. 하는 경우 *x* 가 0 이면 **atan** 0을 반환 합니다. 하는 경우의 매개 변수가 모두 **atan2** 0, 함수가 0을 반환 합니다. 모든 결과는 라디안 단위입니다.
+**atan** 는-π/2 ~ π/2 라디안 범위에서 *x* 의 아크탄젠트를 반환 합니다. **atan2** 는-π에서 π 라디안 까지의 *y*/*x* 의 아크탄젠트를 반환 합니다. *X* 가 0 이면 **atan** 는 0을 반환 합니다. **Atan2** 의 두 매개 변수가 모두 0 인 경우 함수는 0을 반환 합니다. 모든 결과는 라디안 단위입니다.
 
-**atan2** 두 매개 변수의 기호를 사용 하 여 반환 값의 사분면을 결정 합니다.
+**atan2** 는 두 매개 변수의 부호를 사용 하 여 반환 값의 사분면을 결정 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -86,11 +89,11 @@ long double atan2( long double y, long double x );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-합니다 **atan** 의 아크탄젠트 (역 탄젠트 함수)를 계산 하는 함수 *x*합니다. **atan2** 의 아크탄젠트를 계산 *y*/*x* (있으면 *x* 0 이면 **atan2** 경우 π/2를 반환 합니다 *y* 가 양수 이면-π/2 이면 *y* 음수 또는 0 이면 *y* 은 0입니다.)
+**Atan** 함수는 *x*의 아크탄젠트 (역 탄젠트 함수)를 계산 합니다. **atan2** 는 *y*/*x* 의 아크탄젠트를 계산 합니다. *x* 가 0 이면 **atan2** 는 *y가 양수인 경우 π* /2를 반환 하 고 y *가 음수인* 경우에는 π/2를 반환 하 고 *y* 가 0 이면 0을 반환 합니다.
 
-**atan** sse2(스트리밍 SIMD 확장 2 ()를 사용 하는 구현 합니다. SSE2 구현의 사용 제한 사항 및 그 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
+**atan** 에는 SSE2 (스트리밍 SIMD 확장 2)를 사용 하는 구현이 있습니다. SSE2 구현의 사용 제한 사항 및 그 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **atan** 하 고 **atan2** 사용 하는 **float** 또는 **긴**  **double** 인수입니다. C 프로그램에서 **atan** 하 고 **atan2** 항상 **double** 인수 및 반환을 **double**합니다.
+는 C++ 오버 로드를 허용 하므로 **float** 또는 **long** **double** 인수를 사용 하는 **atan** 및 **atan2** 오버 로드를 호출할 수 있습니다. C 프로그램에서 **atan** 및 **atan2** 는 항상 **이중** 인수를 사용 하 고 **double**을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

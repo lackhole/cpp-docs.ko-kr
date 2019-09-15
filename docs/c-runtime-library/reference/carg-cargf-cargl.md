@@ -1,11 +1,11 @@
 ---
 title: carg, cargf, cargl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - carg
 - cargf
 - cargl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - carg
 - cargf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - cargf function
 - cargl function
 ms.assetid: 610d6a93-b929-46ab-a966-b77db0b804be
-ms.openlocfilehash: 584732594cd9ca9579907986e3dc3b5f3dbf52c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e66b0b3545b3f28a8f7b4ca14c29ffe1e0fc260c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340718"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939308"
 ---
 # <a name="carg-cargf-cargl"></a>carg, cargf, cargl
 
@@ -68,11 +71,11 @@ long double cargl(
 
 ## <a name="return-value"></a>반환 값
 
-인수 (단계 라고도 함) *z*입니다. 간격의 결과 [-π, + π].
+*Z*의 인수 (단계 라고도 함)입니다. 결과는 [-π, + π] 간격 내에 있습니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **carg** 사용 하는 **_Fcomplex** 하거나 **_Lcomplex** 값 및 반환 **float**나 **긴** **double** 값입니다. C 프로그램에서 **carg** 는 항상 사용을 **_Dcomplex** 값과 반환을 **double** 값입니다.
+는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 또는 **_fcomplex** 값을 사용 하는 **carg** 오버 로드를 호출 하 고 **float** 또는 **long** **double** 값을 반환할 수 있습니다. C 프로그램에서 **carg** 는 항상 **_dcomplex** 를 사용 하 여 **double** 값을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

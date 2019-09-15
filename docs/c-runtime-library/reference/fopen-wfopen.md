@@ -1,10 +1,10 @@
 ---
 title: fopen, _wfopen
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wfopen
 - fopen
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fopen
 - _wfopen
@@ -32,12 +35,12 @@ helpviewer_keywords:
 - files [C++], opening
 - fopen function
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
-ms.openlocfilehash: b57ed2b26428c48efbe544c2b4802e347b915c29
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 0e50854cf35dd58f7f59f67ed861247b51fd4541
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499950"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957048"
 ---
 # <a name="fopen-_wfopen"></a>fopen, _wfopen
 
@@ -86,7 +89,7 @@ FILE *_wfopen(
 
 *Encoding* 의 허용 되는 값은 **UNICODE**, **utf-8**및 **u t f-utf-16le**입니다.
 
-유니코드 모드에서 파일을 열 때 입력 함수는 파일에서 읽은 데이터를 **wchar_t**형식으로 저장 된 utf-16 데이터로 변환 합니다. 유니코드 모드에서 연 파일에 쓰는 함수는 utf-16 형식으로 저장 된 utf-16 데이터를 포함 하는 버퍼를 필요로 합니다. 이 파일이 UTF-8로 인코딩되면 UTF-16 데이터는 쓸 때 UTF-8로 변환되고 이 파일의 UTF-8로 인코딩된 내용은 읽을 때 UTF-16으로 변환됩니다. 유니코드 모드에서 홀수 바이트를 읽거나 쓰려고 하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 오류가 발생합니다. 프로그램에 UTF-8로 저장된 데이터를 읽거나 쓰려는 경우 유니코드 모드 대신 텍스트 또는 이진 파일 모드를 사용합니다. 필수 인코딩은 사용자가 변환해야 합니다.
+유니코드 모드에서 파일을 열 때 입력 함수는 파일에서 읽은 데이터를 **wchar_t**형식으로 저장 된 utf-16 데이터로 변환 합니다. 유니코드 모드에서 연 파일에 쓰는 함수는 **utf-16 형식으로**저장 된 utf-16 데이터를 포함 하는 버퍼를 필요로 합니다. 이 파일이 UTF-8로 인코딩되면 UTF-16 데이터는 쓸 때 UTF-8로 변환되고 이 파일의 UTF-8로 인코딩된 내용은 읽을 때 UTF-16으로 변환됩니다. 유니코드 모드에서 홀수 바이트를 읽거나 쓰려고 하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 오류가 발생합니다. 프로그램에 UTF-8로 저장된 데이터를 읽거나 쓰려는 경우 유니코드 모드 대신 텍스트 또는 이진 파일 모드를 사용합니다. 필수 인코딩은 사용자가 변환해야 합니다.
 
 파일이 이미 있고 읽기 또는 추가용으로 열려 있는 경우 BOM(바이트 순서 표시)(파일에 있는 경우)에 따라 인코딩이 결정됩니다. BOM 인코딩은 **ccs** 플래그에 의해 지정 되는 인코딩과 우선적으로 적용 됩니다. **Ccs** 인코딩은 BOM이 없거나 파일이 새 파일인 경우에만 사용 됩니다.
 

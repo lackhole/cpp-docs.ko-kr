@@ -1,11 +1,11 @@
 ---
 title: fma, fmaf, fmal
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fma
 - fmaf
 - fmal
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fma
 - fmaf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - fmaf function
 - fmal function
 ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
-ms.openlocfilehash: f96592e245e443bae2f3334da51cae5572753708
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4ddc4061e5a24ee3b5176aedc569d134d85e0002
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333497"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957101"
 ---
 # <a name="fma-fmaf-fmal"></a>fma, fmaf, fmal
 
@@ -92,20 +95,20 @@ long double fmal(
 
 그렇지 않으면 다음 값 중 하나를 반환할 수 있습니다.
 
-|문제|반환|
+|문제점|반환|
 |-----------|------------|
-|*x* 무한대 = *y* = 0 또는<br /><br /> *x* = 0, *y* = INFINITY|NaN|
-|*x* 나 *y* 정확한에서 무한대 = *z* 부호가 반대 무한대 =|NaN|
-|*x* 나 *y* = NaN|NaN|
-|없습니다 (*x* = 0 이면 *y*= indefinite) 및 *z* = NaN<br /><br /> 없습니다 (*x*= indefinite, *y*= 0) 및 *z* = NaN|NaN|
-|오버플로 범위 오류|±HUGE_VAL, ±HUGE_VALF, 또는 ±HUGE_VALL|
+|*x* = 무한대, *y* = 0 또는<br /><br /> *x* = 0, *y* = 무한대|NaN|
+|*x* 또는 *y* = 정확한 ± infinity, *z* = 반대 기호가 있는 무한대|NaN|
+|*x* 또는 *y* = NaN|NaN|
+|not (*x* = 0, *y*= 무한) 및 *z* = NaN<br /><br /> not (*x*= 무한, *y*= 0) 및 *z* = NaN|NaN|
+|오버플로 범위 오류|± HUGE_VAL, ± HUGE_VALF 또는 ± HUGE_VALL|
 |언더플로 범위 오류|올바른 값, 반올림 후.|
 
 오류는 [_matherr](matherr.md)에 지정된 대로 보고됩니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **fma** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **fma** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 형식을 사용 하 고 반환 하는 **fma** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **fma** 는 항상 **double**을 사용 하 고 반환 합니다.
 
 이 함수는 무한 정밀도에 도달한 것처럼 값을 계산하고 최종 결과를 반올림합니다.
 

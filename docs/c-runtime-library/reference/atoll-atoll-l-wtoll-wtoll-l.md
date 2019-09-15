@@ -1,12 +1,12 @@
 ---
 title: atoll, _atoll_l, _wtoll, _wtoll_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wtoll
 - _atoll_l
 - _wtoll_l
 - atoll
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tstoll_l
 - _wtoll
@@ -33,16 +36,16 @@ helpviewer_keywords:
 - _wtoll function
 - _atoll_l function
 ms.assetid: 5e85fcac-b351-4882-bff2-6e7c469b7fa8
-ms.openlocfilehash: 7933b3e25185b5abdbd10c1b3fd616742bb28f92
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f1b5fca9c3428bce26a8a40cf8271760fa97b10b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341186"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939470"
 ---
-# <a name="atoll-atolll-wtoll-wtolll"></a>atoll, _atoll_l, _wtoll, _wtoll_l
+# <a name="atoll-_atoll_l-_wtoll-_wtoll_l"></a>atoll, _atoll_l, _wtoll, _wtoll_l
 
-문자열을 변환 합니다는 **긴** **긴** 정수입니다.
+문자열을 **long** **정수 (long)** 로 변환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -73,27 +76,27 @@ long long _wtoll_l(
 
 ## <a name="return-value"></a>반환 값
 
-각 함수가 반환 하는 **긴** **긴** 입력된 문자를 숫자로 해석 하 여 생성 되는 값입니다. 반환 값 **산호 섬** 0 경우 입력 값이 해당 형식으로 변환할 수 없습니다.
+각 함수는 입력 문자를 숫자로 해석 하 여 생성 되는 **long** **long** 값을 반환 합니다. **Atoll** 의 반환 값은 입력을 해당 형식의 값으로 변환할 수 없는 경우 0입니다.
 
-큰 양의 정수 값을 사용 하 여 오버플로 **산호 섬** 반환 **LLONG_MAX**, 큰 음의 정수 값을 사용 하 여 오버플로 대 한 반환 **LLONG_MIN**합니다.
+큰 양의 정수 값을 사용 하는 오버플로의 경우 **atoll** 는 **LLONG_MAX**를 반환 하 고, 큰 음의 정수 값을 사용 하는 오버플로의 경우 **LLONG_MIN**를 반환 합니다.
 
-모든 범위를 벗어난 경우에 **errno** 로 설정 된 **ERANGE**합니다. 전달 된 매개 변수가 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 0을 반환 합니다.
+범위를 벗어난 모든 경우에는 **errno** 가 **ERANGE**로 설정 됩니다. 전달 된 매개 변수가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 문자열을 변환 된 **긴** **긴** 정수 값입니다.
+이러한 함수는 문자열을 **long** **long** 정수 값으로 변환 합니다.
 
 입력 문자열은 지정된 형식의 숫자 값으로 해석될 수 있는 문자 시퀀스입니다. 함수는 숫자의 일부로 인식할 수 없는 첫 번째 문자에서 입력 문자열 읽기를 중지합니다. 이 문자는 문자열을 종결하는 null 문자('\0' 또는 L'\0')일 수 있습니다.
 
-합니다 *str* 인수를 **산호 섬** 다음과 같은 형식을 갖습니다.
+**Atoll** 에 대 한 *str* 인수 형식은 다음과 같습니다.
 
 > [*whitespace*] [*sign*] [*digits*]
 
-A *공백* 무시 되는 공백 또는 탭 문자로 구성 됩니다 *로그인* 는 더하기 (+) 또는 빼기 (-) 이며 및 *숫자* 하나 이상의 숫자가 됩니다.
+공백은 무시 되는 공백 또는 탭 *문자로 구성 됩니다* . *sign* 은 더하기 (+) 또는 빼기 (-) 중 하나입니다. *숫자* 는 하나 이상의 숫자입니다.
 
-**_wtoll** 동일 **산호 섬** 와이드 문자 문자열을 매개 변수로 소요 되는 점을 제외 하 고 있습니다.
+**_woka** 는 **atoll** 와 동일 하며,이는 와이드 문자열을 매개 변수로 사용 한다는 점이 다릅니다.
 
-접미사가 있는 이러한 함수 버전은 **_l** 접미사는 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고, 없는 버전과 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 경우를 제외 하 고는 없는 버전과 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -112,7 +115,7 @@ A *공백* 무시 되는 공백 또는 탭 문자로 구성 됩니다 *로그인
 
 ## <a name="example"></a>예제
 
-이 프로그램에서는 사용 하는 **산호 섬** 저장 된 숫자 문자열을 숫자 값으로 변환 하는 함수입니다.
+이 프로그램은 **atoll** 함수를 사용 하 여 문자열로 저장 된 숫자를 숫자 값으로 변환 하는 방법을 보여 줍니다.
 
 ```C
 // crt_atoll.c
