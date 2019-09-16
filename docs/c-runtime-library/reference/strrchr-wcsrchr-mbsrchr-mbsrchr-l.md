@@ -1,12 +1,12 @@
 ---
 title: strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - strrchr
 - wcsrchr
 - _mbsrchr
 - _mbsrchr_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tcsrchr
 - _ftcsrchr
@@ -42,14 +45,14 @@ helpviewer_keywords:
 - _ftcsrchr function
 - _mbsrchr_l function
 ms.assetid: 75cf2664-758e-49bb-bf6b-8a139cd474d2
-ms.openlocfilehash: 016be9a1d753787b6e0c3800df5a96baea1a19f5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0b5ce46f43f8bf6801882e1a86b57c22fd4f2ab5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347300"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946852"
 ---
-# <a name="strrchr-wcsrchr-mbsrchr-mbsrchrl"></a>strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
+# <a name="strrchr-wcsrchr-_mbsrchr-_mbsrchr_l"></a>strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 
 문자열에서 마지막으로 나오는 문자를 검색합니다.
 
@@ -125,19 +128,19 @@ const unsigned char *_mbsrchr_l(
 
 ## <a name="return-value"></a>반환 값
 
-마지막으로 나오는 경우에 대 한 포인터를 반환 *c* 에서 *str*, 경우에 null *c* 찾을 수 없습니다.
+*Str*에서 *c* 의 마지막 항목에 대 한 포인터를 반환 하거나 *c* 를 찾을 수 없는 경우 NULL을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 `strrchr` 함수의 마지막 항목을 찾습니다 *c* (변환할 **char**)에서 *str*합니다. 검색에는 종료형 null 문자를 포함합니다.
+함수 `strrchr` 는 *str*에서 *c* ( **char**로 변환)의 마지막 항목을 찾습니다. 검색에는 종료형 null 문자를 포함합니다.
 
 `wcsrchr` 및 `_mbsrchr` 는 `strrchr`의 와이드 문자 및 멀티바이트 문자 버전입니다. `wcsrchr`의 인수 및 반환 값은 와이드 문자열이며 `_mbsrchr`의 인수와 반환 값은 멀티바이트 문자열입니다.
 
-C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 번째 인수에 대 한 포인터입니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 에 대 한 포인터를 갖는 오버 로드 **상수** 에 대 한 포인터를 반환 **const**;는 버전에 대 한 포인터를은 비**const** 에 대 한 포인터를 반환 하는 비-**const** . 매크로 _CRT_CONST_CORRECT_OVERLOADS 모두 정의 되는 **const** 및 비-**const** 이러한 함수의 버전은 사용할 수 있습니다. 비-필요한 경우**const** 둘 다에 대 한 동작 C++ 오버 로드를 기호 _CONST_RETURN을 정의 합니다.
+C에서 이러한 함수는 첫 번째 인수에 대 한 **const** 포인터를 사용 합니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. **Const** 에 대 한 포인터를 취하는 오버 로드는 **const**에 대 한 포인터를 반환 합니다. 비**const** 에 대 한 포인터를 사용 하는 버전은 비**const**에 대 한 포인터를 반환 합니다. _CRT_CONST_CORRECT_OVERLOADS 매크로는 이러한 함수의 **const** 및 비**const** 버전을 모두 사용할 수 있는 경우 정의 됩니다. 두 C++ 오버 로드에 대 한 비**const** 동작이 필요한 경우 _CONST_RETURN 기호를 정의 합니다.
 
-`_mbsrchr`는 매개 변수의 유효성을 검사합니다. 하는 경우 *str* 가 null 인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 `errno` EINVAL로 설정 되 고 `_mbsrchr` 0을 반환 합니다. `strrchr` 및 `wcsrchr`는 매개 변수의 유효성을 검사하지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+`_mbsrchr`는 매개 변수의 유효성을 검사합니다. *Str* 이 NULL 인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 `errno` 실행 하도록 허용한 경우는 EINVAL로 설정 되 `_mbsrchr` 고는 0을 반환 합니다. `strrchr` 및 `wcsrchr`는 매개 변수의 유효성을 검사하지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
-출력 값은 로캘의; LC_CTYPE 범주 설정을 영향 자세한 내용은 [setlocale](setlocale-wsetlocale.md)합니다. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 LC_CTYPE 범주 설정에 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조 하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

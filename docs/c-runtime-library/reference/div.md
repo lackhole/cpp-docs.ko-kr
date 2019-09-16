@@ -1,9 +1,9 @@
 ---
 title: div, ldiv, lldiv
 ms.date: 04/05/2018
-apiname:
+api_name:
 - div
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - div
 helpviewer_keywords:
@@ -25,12 +28,12 @@ helpviewer_keywords:
 - dividing integers
 - remainder computing
 ms.assetid: 8ae80d97-54fd-499e-b14c-e30993b58119
-ms.openlocfilehash: 0ee1b3b6a5d7b15470ffe1e667b4077d1f9581e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5b40fa0c4cc9cdf0c0de0f6af21da04b0c70369f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339262"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937689"
 ---
 # <a name="div-ldiv-lldiv"></a>div, ldiv, lldiv
 
@@ -74,13 +77,13 @@ lldiv_t div(
 
 ## <a name="return-value"></a>반환 값
 
-**div** 형식의 인수를 사용 하 여 호출한 **int** 형식의 구조체를 반환 **div_t**, 몫과 나머지를 구성 하는 합니다. 형식의 인수를 사용 하 여 반환 값 **긴** 됩니다 **ldiv_t**, 형식의 인수를 사용 하 여 반환 값과 **긴** **긴** 는**lldiv_t**합니다. **div_t**, **ldiv_t**, 및 **lldiv_t** 에 정의 된 \<b. h >입니다.
+**int** 형식의 인수를 사용 하 여 호출 된 **div** 는 몫과 나머지를 구성 하는 **div_t**형식의 구조체를 반환 합니다. **Long** 형식의 인수를 포함 하는 반환 값은 **ldiv_t**이 고 **long** **long** 형식의 인수를 포함 하는 반환 값은 **lldiv_t**입니다. **div_t**, **ldiv_t**및 **lldiv_t** 는 stdlib.h >에 \<정의 되어 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**div** 함수 *필드가* 하 여 *denom* 있으므로 몫과 나머지를 계산 하 고 있습니다. 합니다 [div_t](../../c-runtime-library/standard-types.md) 구조에는 몫인 **q u o t**, 및 나머지 인 **rem**합니다. 몫의 부호는 수학적 몫의 부호와 같습니다. 몫의 절대 값은 수학적 몫의 절대 값보다 작은 가장 큰 정수입니다. 분모가 0이면 프로그램이 종료되고 오류 메시지가 표시됩니다.
+**Div** 함수는 *숫자로* 을 *denom* 로 나눈 다음 몫과 나머지를 계산 합니다. [Div_t](../../c-runtime-library/standard-types.md) 구조체에는 몫, **q**및 나머지가 포함 **됩니다.** 몫의 부호는 수학적 몫의 부호와 같습니다. 몫의 절대 값은 수학적 몫의 절대 값보다 작은 가장 큰 정수입니다. 분모가 0이면 프로그램이 종료되고 오류 메시지가 표시됩니다.
 
-오버 로드 **div** 형식의 인수를 사용 하는 **긴** 또는 **긴** **긴** 이용할 C++ 코드입니다. 반환 형식은 [ldiv_t](../../c-runtime-library/standard-types.md) 하 고 [lldiv_t](../../c-runtime-library/standard-types.md) 멤버가 포함 되어 **q u o t** 및 **rem**, 의멤버와동일한의미를포함하는**div_t**합니다.
+**Long** 또는 **long** **long** 형식의 인수를 사용 하는 C++ **div** 의 오버 로드는 코드 에서만 사용할 수 있습니다. 반환 형식 [ldiv_t](../../c-runtime-library/standard-types.md) 및 [lldiv_t](../../c-runtime-library/standard-types.md) 에는 **div_t**멤버와 동일한 의미를 갖는 **q** 및 **rem**멤버가 포함 되어 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
