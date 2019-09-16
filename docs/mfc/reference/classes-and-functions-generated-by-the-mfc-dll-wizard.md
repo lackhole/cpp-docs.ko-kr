@@ -18,15 +18,15 @@ ms.locfileid: "62392585"
 ---
 # <a name="classes-and-functions-generated-by-the-mfc-dll-wizard"></a>MFC DLL 마법사가 생성하는 클래스 및 함수
 
-MFC DLL 마법사에서 생성 하는 코드를 만드는 DLL 및 선택한 옵션의 종류에 따라 달라 집니다. MFC DLL 마법사 모두 형태의 기본 MFC Dll에 대 한 동일한 코드를 생성합니다.
+MFC DLL 마법사에서 생성하는 코드는 만드는 DLL의 종류와 선택한 옵션에 따라 달라집니다. MFC DLL 마법사는 두 형태의 기본 MFC DLL에 대하여 동일한 코드를 생성합니다.
 
 |DLL의 종류|옵션|클래스|함수|
 |-----------------|------------|-------------|---------------|
 |[확장](../../build/extension-dlls-overview.md)|없음|없음|`DllMain`|
-|[Regular](../../build/regular-dlls-dynamically-linked-to-mfc.md)|없음|응용 프로그램 클래스에서 파생 `CWinApp`|없음|
-|[Regular](../../build/regular-dlls-dynamically-linked-to-mfc.md)|자동화|응용 프로그램 클래스에서 파생 `CWinApp`|`DllGetClassObjectDllCanUnloadNowDllRegisterServer`|
+|[기본](../../build/regular-dlls-dynamically-linked-to-mfc.md)|없음|`CWinApp`에서 파생된 응용 프로그램 클래스 |없음|
+|[기본](../../build/regular-dlls-dynamically-linked-to-mfc.md)|자동화|`CWinApp`에서 파생된 응용 프로그램 클래스|`DllGetClassObjectDllCanUnloadNowDllRegisterServer`|
 |[확장](../../build/extension-dlls-overview.md)|Windows 소켓|없음|`DllMain`|
-|[Regular](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Windows 소켓|응용 프로그램 클래스에서 파생 `CWinApp`|`InitInstance` 호출을 포함합니다. `AfxSocketInit`|
+|[기본](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Windows 소켓|`CWinApp`에서 파생된 응용 프로그램 클래스|`AfxSocketInit` 호출을 포함하는 `InitInstance`|
 
 ## <a name="see-also"></a>참고자료
 
