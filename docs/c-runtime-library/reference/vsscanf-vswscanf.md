@@ -1,10 +1,10 @@
 ---
 title: vsscanf, vswscanf
 ms.date: 11/04/2016
-apiname:
+api_name:
 - vsscanf
 - vswscanf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _vstscanf
 - vsscanf
@@ -24,12 +27,12 @@ helpviewer_keywords:
 - vswscanf function
 - vsscanf function
 ms.assetid: e96180f2-df46-423d-b4eb-0a49ab819bde
-ms.openlocfilehash: 5bbe80cd2463c5c5b9b4ea55b8d6574675e42054
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5dabe603c1cd0c95411fec87b9c0344f28c5c698
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188862"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945108"
 ---
 # <a name="vsscanf-vswscanf"></a>vsscanf, vswscanf
 
@@ -63,20 +66,20 @@ int vswscanf(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 반환 값은 **EOF** 오류에 대 한 첫 번째 변환 전에 문자열의 끝에 도달 하면 또는 합니다.
+이러한 각 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 반환 값은 오류에 대 한 **EOF** 이거나, 첫 번째 변환 전에 문자열의 끝에 도달한 경우입니다.
 
-하는 경우 *버퍼* 또는 *형식* 되는 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수가-1를 반환 하는 설정 **errno** 하 **EINVAL**합니다.
+*버퍼* 또는 *형식이* **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-합니다 **vsscanf** 함수에서 데이터를 읽는 *버퍼* 각 인수에 의해 지정 된 위치에는 *arglist* 인수 목록입니다. 목록의 모든 인수에 대 한 포인터의 형식 지정자에 해당 하는 형식이 있는 변수 여야 합니다 *형식*합니다. *형식* 인수 해석을 제어 하는 입력 필드 동일한 폼 및 함수는 *형식* 에 대 한 인수를 **scanf** 함수. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+**Vsscanf** 함수는 *버퍼* 에서 *arglist* 인수 목록의 각 인수에 지정 된 위치로 데이터를 읽습니다. 목록의 모든 인수 *는 형식의 형식*지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. *Format* 인수는 입력 필드의 해석을 제어 하 고 **scanf** 함수에 대 한 *format* 인수와 동일한 폼 및 함수를 포함 합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
 > [!IMPORTANT]
-> 사용 하는 경우 **vsscanf** 문자열을 읽고, 항상 너비를 지정 합니다 **%s** 형식 (예를 들어 **"32 초 %"** 대신 **"%s"**); 그렇지 않으면 서식이 잘못 된 입력 버퍼 오버런이 발생할 수 있습니다.
+> **Vsscanf** 를 사용 하 여 문자열을 읽는 경우 항상 **% s** 형식에 대 한 너비를 지정 합니다 (예: **"% s"** 대신 **"% 32s"** ). 그렇지 않으면 잘못 된 형식의 입력으로 인해 버퍼 오버런이 발생할 수 있습니다.
 
-**vswscanf** 의 와이드 문자 버전이 **vsscanf**;에 대 한 인수 **vswscanf** 는 와이드 문자 문자열입니다. **vsscanf** 멀티 바이트 16 진수 문자를 처리 하지 않습니다. **vswscanf** 유니코드 전자 16 진수 또는 "호환 영역" 문자를 처리 하지 않습니다. 그렇지 않으면 **vswscanf** 하 고 **vsscanf** 동일 하 게 작동 합니다.
+**vswscanf** 는 **vsscanf**의 와이드 문자 버전입니다. **vswscanf** 에 대 한 인수는 와이드 문자 문자열입니다. **vsscanf** 는 멀티 바이트 16 진수 문자를 처리 하지 않습니다. **vswscanf** 는 유니코드 전자 16 진수 또는 "호환성 영역" 문자를 처리 하지 않습니다. 그렇지 않으면 **vswscanf** 와 **vsscanf** 가 동일 하 게 동작 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

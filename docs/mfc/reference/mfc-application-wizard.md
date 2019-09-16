@@ -19,7 +19,9 @@ ms.locfileid: "65708183"
 MFC 응용 프로그램 마법사는 컴파일 시 Windows 실행 파일(.exe) 응용 프로그램의 기본 기능을 구현하는 코드를 생성합니다. 해당 방법으로 MFC를 시작하는 응용 프로그램은 C++(.cpp) 파일, 리소스(.rc) 파일, 헤더(.h) 파일 및 프로젝트(.vcxproj) 파일을 포함합니다. 이러한 시작 파일에서 생성되는 코드는 MFC를 기반으로 합니다.
 
 > [!NOTE]
+
 > 선택한 옵션에 따라 마법사는 프로젝트에 추가 파일을 만듭니다. 예를 들어 [고급 기능](../../mfc/reference/advanced-features-mfc-application-wizard.md) 페이지에서 **상황에 맞는 도움말**을 선택하면 마법사는 프로젝트의 도움말 파일을 컴파일하는 데 필요한 파일을 만듭니다. 마법사에서 생성하는 파일에 대한 자세한 내용은 [Visual Studio C++ 프로젝트용으로 생성되는 파일 형식](../../build/reference/file-types-created-for-visual-cpp-projects.md)과 프로젝트의 Readme.txt 파일을 참조합니다.
+
 
 ## <a name="overview"></a>개요
 
@@ -59,11 +61,14 @@ MFC 응용 프로그램 마법사는 컴파일 시 Windows 실행 파일(.exe) �
 
    - 프로젝트는 ActiveX 컨트롤을 지원합니다. 자세한 내용은 [ActiveX 컨트롤 만들기 작업 순서](../../mfc/sequence-of-operations-for-creating-activex-controls.md)를 참조합니다.
 
+
    - 프로젝트에서 [Automation](../../mfc/automation.md), [MAPI](../../mfc/mapi-support-in-mfc.md), [Windows 소켓](../../mfc/windows-sockets-in-mfc.md) 또는 Active Accessibility에 대한 지원은 없습니다.
+
 
    - 프로젝트는 **탐색기** 도킹 창, **출력** 도킹 창 및 **속성** 도킹 창을 지원합니다.
 
 - [생성된 클래스, MFC 애플리케이션 마법사](../../mfc/reference/generated-classes-mfc-application-wizard.md)
+
 
    - 프로젝트 뷰 클래스는 [CView 클래스](../../mfc/reference/cview-class.md)에서 파생됩니다.
 
@@ -78,6 +83,7 @@ MFC 응용 프로그램 마법사는 컴파일 시 Windows 실행 파일(.exe) �
 이러한 기본 설정을 변경하려면 마법사의 왼쪽 열에서 해당 탭 제목을 클릭하고 표시되는 페이지에서 변경합니다.
 
 MFC 응용 프로그램 프로젝트를 만든 후 C++ [코드 마법사](../../ide/adding-functionality-with-code-wizards-cpp.md)를 사용하여 프로젝트에 개체나 컨트롤을 추가합니다.
+
 
 ## <a name="see-also"></a>참고자료
 

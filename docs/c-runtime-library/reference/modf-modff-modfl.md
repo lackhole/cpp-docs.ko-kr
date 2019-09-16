@@ -1,11 +1,11 @@
 ---
 title: modf, modff, modfl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - modff
 - modf
 - modfl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - modff
 - _modfl
@@ -31,12 +34,12 @@ helpviewer_keywords:
 - modff function
 - modfl function
 ms.assetid: b1c7abf5-d476-43ca-a03c-02072a86e32d
-ms.openlocfilehash: 59d6e2b9b02ad182c5630d6dc9a989c035e8fa92
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 32caadb787031dca0b0726c546a11c5cd6722b82
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156332"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951536"
 ---
 # <a name="modf-modff-modfl"></a>modf, modff, modfl
 
@@ -69,11 +72,11 @@ long double modf( long double x, long double * intptr );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-합니다 **modf** 함수는 부동 소수점 값을 세분화 *x* 를 소수 부분과 정수 부분으로와 부호가 같도록 *x*합니다. 부호 있는 소수 부분이 *x* 반환 됩니다. 정수 부분은 부동 소수점 값에 저장 됩니다 *intptr*합니다.
+**Modf** 함수는 부동 소수점 값 *x* 를 소수 부분과 정수 부분으로 분할 하 고 각각은 *x*와 동일한 부호를 가집니다. *X* 의 부호 있는 소수 부분이 반환 됩니다. 정수 부분은 *intptr*에 부동 소수점 값으로 저장 됩니다.
 
-**modf** sse2(스트리밍 SIMD 확장 2 ()를 사용 하는 구현 합니다. SSE2 구현의 사용 제한 사항 및 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
+**modf** 에는 SSE2 (스트리밍 SIMD 확장 2)를 사용 하는 구현이 있습니다. SSE2 구현의 사용 제한 사항 및 사용 방법에 대한 자세한 내용은 [_set_SSE2_enable](set-sse2-enable.md)을 참조하세요.
 
-C++오버 로드를 호출할 수 있도록 오버 로드를 허용 **modf** 및 반환 하는 **float** 하거나 **긴** **double** 매개 변수입니다. C 프로그램에서 **modf** 항상 double 값 두 개를 사용 하며 double 값을 반환 합니다.
+C++는 오버 로드를 허용 하므로 **float** 또는 **long** **double** 매개 변수를 사용 하 고 반환 하는 **modf** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **modf** 는 항상 두 개의 double 값을 사용 하 고 double 값을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

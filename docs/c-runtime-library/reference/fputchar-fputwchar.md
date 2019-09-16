@@ -1,10 +1,10 @@
 ---
 title: _fputchar, _fputwchar
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fputchar
 - _fputwchar
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fputtchar
 - _fputwchar
@@ -33,14 +36,14 @@ helpviewer_keywords:
 - fputtchar function
 - _fputchar function
 ms.assetid: b92ff600-a924-4f2b-b0e7-3097ee31bdff
-ms.openlocfilehash: 57ec2350fa1d0b681c6eed0c4cfc4ec4660977e8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 39642be871c1c5b5c2deaf35b7c26d19c188b440
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287932"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956928"
 ---
-# <a name="fputchar-fputwchar"></a>_fputchar, _fputwchar
+# <a name="_fputchar-_fputwchar"></a>_fputchar, _fputwchar
 
 **stdout**에 문자를 씁니다.
 
@@ -62,13 +65,13 @@ wint_t _fputwchar(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 기록된 문자를 반환합니다. 에 대 한 **_fputchar**, 반환 값이 **EOF** 은 오류를 나타냅니다. 에 대 한 **_fputwchar**, 반환 값이 **WEOF** 은 오류를 나타냅니다. C가 **NULL**, 이러한 함수에 설명 된 대로 잘못 된 매개 변수 예외를 생성할 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 반환 **EOF** (또는 **WEOF**)을 설정 하 고 **errno** 에 **EINVAL**합니다.
+이러한 각 함수는 기록된 문자를 반환합니다. **_Fputchar**의 경우 **EOF** 의 반환 값은 오류를 나타냅니다. **_Fputwchar**의 경우 **weof** 반환 값은 오류를 나타냅니다. C가 **NULL**인 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 예외를 생성 합니다. 계속 해 서 실행 하도록 허용한 경우 **EOF** (또는 **weof**)를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 모두 단일 문자를 씁니다 *c* 하 **stdout** 적절 하 게 표시기를 앞으로 이동 합니다. **_fputchar** 같습니다 `fputc( stdout )`합니다. 에 해당 하는 것도 **putchar**, 함수 및 매크로가 아닌 함수로 구현 합니다. 와 달리 **fputc** 하 고 **putchar**, 이러한 함수는 ANSI 표준과 호환 되지 않습니다.
+이 두 함수는 단일 문자 *c* 를 **stdout** 에 쓰고 표시기를 적절히 앞으로 이동 합니다. **_fputchar** 는와 동일 `fputc( stdout )`합니다. **Putchar**와 동일 하지만 함수 및 매크로가 아닌 함수로만 구현 됩니다. **Fputc** 및 **putchar**와 달리 이러한 함수는 ANSI 표준과 호환 되지 않습니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -83,7 +86,7 @@ wint_t _fputwchar(
 |**_fputchar**|\<stdio.h>|
 |**_fputwchar**|\<stdio.h> 또는 \<wchar.h>|
 
-콘솔 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 콘솔을 사용 하 여 연결 된 표준 스트림 핸들 —**stdin**를 **stdout**, 및 **stderr**-C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔에 연결 된 표준 스트림 핸들 (**stdin**, **stdout**및 **stderr**)은 C 런타임 함수가 UWP 앱에서 사용할 수 있도록 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

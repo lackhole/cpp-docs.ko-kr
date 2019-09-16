@@ -1,14 +1,14 @@
 ---
 title: ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ctime64_s
 - _wctime32_s
 - ctime_s
 - _wctime64_s
 - _ctime32_s
 - _wctime_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ctime64_s
 - _ctime32_s
@@ -51,14 +54,14 @@ helpviewer_keywords:
 - _ctime32_s function
 - _tctime32_s function
 ms.assetid: 36ac419a-8000-4389-9fd8-d78b747a009b
-ms.openlocfilehash: 0410aeda4bbec33738d01a9514181c19f351e2c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d983ee4219985c7b213812a69f6f83f49dbf389b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288363"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942018"
 ---
-# <a name="ctimes-ctime32s-ctime64s-wctimes-wctime32s-wctime64s"></a>ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
+# <a name="ctime_s-_ctime32_s-_ctime64_s-_wctime_s-_wctime32_s-_wctime64_s"></a>ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 
 시간 값을 문자열로 변환하고 현지 표준 시간대 설정에 맞게 조정합니다. 이러한 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 있는 [ctime, _ctime64, _wctime, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)의 버전입니다.
 
@@ -123,15 +126,15 @@ errno_t _wctime64_s(
 ### <a name="parameters"></a>매개 변수
 
 *buffer*<br/>
-26자를 포함할 만큼 충분히 커야 합니다. 문자열 결과에 대 한 포인터 또는 **NULL** 경우:
+26자를 포함할 만큼 충분히 커야 합니다. 문자열 결과에 대 한 포인터 이거나, 다음과 같은 경우 **NULL** 입니다.
 
-- *sourceTime* UTC 1970 년 1 월 1 일 자정 이전의 날짜를 나타냅니다.
+- *Sourcetime* 은 1970 년 1 월 1 일 자정 (UTC) 이전의 날짜를 나타냅니다.
 
-- 사용 하는 경우 **_ctime32_s** 하거나 **_wctime32_s** 하 고 *sourceTime* 23시 59분: 59 2038 년 1 월 18 일 UTC 이후 날짜를 나타냅니다.
+- **_Ctime32_s** 또는 **_wctime32_s** 를 사용 하는 경우 *Sourcetime* 은 2038 년 1 월 18 일 23:59:59 이후의 날짜를 나타냅니다.
 
-- 사용 하는 경우 **_ctime64_s** 하거나 **_wctime64_s** 하 고 *sourceTime* 23시 59분: 59, 3000 년 12 월 31 일, UTC 이후 날짜를 나타냅니다.
+- **_Ctime64_s** 또는 **_wctime64_s** 를 사용 하는 경우 *Sourcetime* 은 3000 년 12 월 31 일 23:59:59 이후의 날짜를 나타냅니다.
 
-- 사용 하는 경우 **_ctime_s** 또는 **_wctime_s**, 이러한 함수는 이전 함수에 대 한 래퍼입니다. 설명 부분을 참조하세요.
+- **_Ctime_s** 또는 **_wctime_s**를 사용 하는 경우 이러한 함수는 이전 함수에 대 한 래퍼입니다. 설명 부분을 참조하세요.
 
 *numberOfElements*<br/>
 버퍼의 크기입니다.
@@ -145,27 +148,27 @@ errno_t _wctime64_s(
 
 ## <a name="error-conditions"></a>오류 조건
 
-|*buffer*|*numberOfElements*|*sourceTime*|반환|값 *버퍼*|
+|*buffer*|*numberOfElements*|*sourceTime*|반환|*버퍼* 의 값|
 |--------------|------------------------|------------|------------|-----------------------|
 |**NULL**|any|any|**EINVAL**|수정 안 됨|
-|되지 **NULL** (유효한 메모리를 가리킴)|0|any|**EINVAL**|수정 안 됨|
-|하지 **NULL**|0< 크기 < 26|any|**EINVAL**|빈 문자열|
-|하지 **NULL**|>= 26|NULL|**EINVAL**|빈 문자열|
-|하지 **NULL**|>= 26|< 0|**EINVAL**|빈 문자열|
+|Not **NULL** (유효한 메모리를 가리킴)|0|any|**EINVAL**|수정 안 됨|
+|**NULL** 이 아님|0< 크기 < 26|any|**EINVAL**|빈 문자열|
+|**NULL** 이 아님|>= 26|NULL|**EINVAL**|빈 문자열|
+|**NULL** 이 아님|>= 26|< 0|**EINVAL**|빈 문자열|
 
 ## <a name="remarks"></a>설명
 
-합니다 **ctime_s** 함수 변환으로 저장 된 시간 값을 [time_t](../../c-runtime-library/standard-types.md) 문자열로 구조입니다. 합니다 *sourceTime* 값에 대 한 호출에서 가져온 일반적으로 [시간](time-time32-time64.md)를 반환 하는 자정 이후 경과 된 시간 (초) (00: 00:00) 1970 년 1 월 1, UTC (coordinated universal time). 반환 값 문자열은 정확히 26자를 포함하며 그 형식은 다음과 같습니다.
+**Ctime_s** 함수는 [time_t](../../c-runtime-library/standard-types.md) 구조체로 저장 된 시간 값을 문자열로 변환 합니다. 일반적으로 *sourcetime* 값은 자정 (00:00:00), 1 월 1 일, 1970, utc (협정 세계시) 이후 경과 된 시간 (초)을 반환 하는 [시간](time-time32-time64.md)에 대 한 호출에서 가져옵니다. 반환 값 문자열은 정확히 26자를 포함하며 그 형식은 다음과 같습니다.
 
 `Wed Jan 02 02:03:55 1980\n\0`
 
 24시간제가 사용됩니다. 모든 필드에는 상수 너비가 있습니다. 줄 바꿈 문자('\n') 및 null 문자('\0')는 문자열의 마지막 두 자리를 차지합니다.
 
-또한 변환된 문자열은 현지 표준 시간대 설정에 따라 조정됩니다. 참조 된 [시간](time-time32-time64.md)를 [_ftime](ftime-ftime32-ftime64.md), 및 [localtime32_s](localtime-s-localtime32-s-localtime64-s.md) 현지 시간을 구성 하는 방법에 대 한 정보에 대 한 함수 및 [_tzset](tzset.md) 표준 시간대 환경 및 전역 변수를 정의 하는 방법에 대 한 정보에 대 한 함수입니다.
+또한 변환된 문자열은 현지 표준 시간대 설정에 따라 조정됩니다. 표준 시간대 환경 및 전역 변수를 정의 하는 방법에 대 한 정보는 [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md)및 [localtime32_s](localtime-s-localtime32-s-localtime64-s.md) 함수에서 현지 시간 및 [_tzset](tzset.md) 함수를 구성 하는 방법에 대 한 정보를 참조 하세요.
 
-**_wctime32_s** 하 고 **_wctime64_s** 의 와이드 문자 버전 **_ctime32_s** 하 고 **_ctime64_s**; 와이드 문자 문자열에 대 한 포인터를 반환 합니다. 이 고, 그렇지 **_ctime64_s**하십시오 **_wctime32_s**, 및 **_wctime64_s** 동일 하 게 작동 **_ctime32_s**합니다.
+**_wctime32_s** 및 **_wctime64_s** 는 **_ctime32_s** 및 **_ctime64_s**의 와이드 문자 버전입니다. 와이드 문자 문자열에 대 한 포인터 반환 그렇지 않으면 **_ctime64_s**, **_wctime32_s**및 **_wctime64_s** 는 **_ctime32_s**와 동일 하 게 작동 합니다.
 
-**ctime_s** 으로 계산 되는 인라인 함수 이며 **_ctime64_s** 하 고 **time_t** 동일 **__time64_t**합니다. 해석 하도록 컴파일러에 게 해야 하는 경우 **time_t** 이전 32 비트로 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**합니다. 이렇게 하면 **ctime_s** 로 평가 **_ctime32_s**합니다. 2038년 1월 18일 이후에는 애플리케이션에서 오류가 발생할 수 있으므로 이 방식은 사용하지 않는 것이 좋으며, 64비트 플랫폼에서는 이러한 방식이 허용되지 않습니다.
+**ctime_s** 는 **_ctime64_s** 로 계산 되는 인라인 함수 이며 **time_t** 는 **__time64_t**와 동일 합니다. 컴파일러가 **time_t** 를 이전 32 비트 **time_t**해석 하도록 강제 해야 하는 경우 **_USE_32BIT_TIME_T**를 정의할 수 있습니다. 이렇게 하면 **ctime_s** 가 **_ctime32_s**로 평가 됩니다. 2038년 1월 18일 이후에는 애플리케이션에서 오류가 발생할 수 있으므로 이 방식은 사용하지 않는 것이 좋으며, 64비트 플랫폼에서는 이러한 방식이 허용되지 않습니다.
 
 C++에서는 템플릿 오버로드를 통해 이러한 함수를 사용하는 것이 더욱 간단해집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 

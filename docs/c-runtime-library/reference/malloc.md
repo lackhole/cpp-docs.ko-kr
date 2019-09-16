@@ -1,9 +1,9 @@
 ---
 title: malloc
 ms.date: 11/04/2016
-apiname:
+api_name:
 - malloc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,19 +15,22 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - malloc
 helpviewer_keywords:
 - malloc function
 - memory allocation
 ms.assetid: 144fcee2-be34-4a03-bb7e-ed6d4b99eea0
-ms.openlocfilehash: e6a007fb6f089ebf1c9f5fc9ce59cbcbf0b13888
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8001726bcc2f1b384d527c6f4edcbf8eb92b0d2a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157180"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952827"
 ---
 # <a name="malloc"></a>malloc
 
@@ -48,15 +51,15 @@ void *malloc(
 
 ## <a name="return-value"></a>반환 값
 
-**malloc** 할당된 된 공간에 대 한 void 포인터를 반환 하거나 **NULL** 사용할 수 있는 메모리가 부족 한 경우. 이외의 다른 형식에 대 한 포인터를 반환 하려면 **void**, 반환 값에 형식 캐스팅을 사용 합니다. 반환 값이 가리키는 스토리지 공간은 맞춤 요구 사항이 기본 맞춤보다 작거나 같은 모든 형식의 개체 스토리지에 적절하게 맞춰지도록 보장됩니다. (시각적 개체의 C++를 기본 맞춤은 맞춤에 대 한 필수입니다는 **이중**, 또는 8 바이트입니다. 64비트 플랫폼을 대상으로 하는 코드에서는 16바이트입니다. 사용 하 여 [_aligned_malloc](aligned-malloc.md) 보다 큰 맞춤 요구 사항이 있는 개체에 대 한 저장소를 할당 하려면-예를 들어 SSE 형식 [__m128](../../cpp/m128.md) 및 **__m256**, 된 형식과 사용 하 여 선언 `__declspec(align( n ))` 여기서 **n** 8 보다 큽니다. 하는 경우 *크기* 가 0 이면 **malloc** 힙에서 길이가 0 인 항목을 할당 하 고 해당 항목에 대 한 유효한 포인터를 반환 합니다. 반환 된 값을 검사할 **malloc**요청 된 메모리 양이 작은 경우에 합니다.
+**malloc** 은 할당 된 공간에 대 한 void 포인터를 반환 하거나 사용 가능한 메모리가 부족 한 경우 **NULL** 을 반환 합니다. **Void**이외의 형식에 대 한 포인터를 반환 하려면 반환 값에 형식 캐스팅을 사용 합니다. 반환 값이 가리키는 스토리지 공간은 맞춤 요구 사항이 기본 맞춤보다 작거나 같은 모든 형식의 개체 스토리지에 적절하게 맞춰지도록 보장됩니다. 시각적 개체 C++의 기본 맞춤은 **double**또는 8 바이트에 필요한 맞춤입니다. 64비트 플랫폼을 대상으로 하는 코드에서는 16바이트입니다. [_Aligned_malloc](aligned-malloc.md) 를 사용 하 여 맞춤 요구 사항이 더 큰 개체에 대 한 저장소를 할당 합니다. 예를 들어 SSE 형식 [__m128](../../cpp/m128.md) 및 **__m256**와을 사용 `__declspec(align( n ))` 하 여 선언 된 형식 (예: **n** 은 8 보다 큼)이 있습니다. *Size* 가 0 인 경우 **malloc** 는 힙에서 길이가 0 인 항목을 할당 하 고 해당 항목에 대 한 유효한 포인터를 반환 합니다. 요청 된 메모리 양이 적은 경우에도 항상 **malloc**에서 반환을 확인 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **malloc** 함수 메모리 블록을 하나 이상 할당 *크기* 바이트입니다. 블록 보다 클 수 있습니다 *크기* 맞춤 및 유지 관리 정보에 필요한 공간이 기 때문입니다.
+**Malloc** 함수는 최소 *크기* 바이트의 메모리 블록을 할당 합니다. 맞춤 및 유지 관리 정보에 필요한 공간 때문에 블록은 *크기* 바이트 보다 클 수 있습니다.
 
-**malloc** 설정 **errno** 에 **ENOMEM** 메모리의 양을 초과 요청 하는 경우 또는 메모리를 할당 하지 못하면 **_HEAP_MAXREQ**합니다. 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
+메모리 할당이 실패 하거나 요청 된 메모리 양이 **_HEAP_MAXREQ**를 초과 하는 경우 **malloc** 은 **errno** 를 **enomem** 으로 설정 합니다. 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
-시작 코드를 사용 하 여 **malloc** 저장소를 할당 하는 **_environ**에 *envp*, 및 *argv* 변수입니다. 다음 함수 및 와이드 문자 대응 호출할 수도 **malloc**합니다.
+시작 코드는 **malloc** 를 사용 하 여 **_environ**, *envp*및 *argv* 변수에 대 한 저장소를 할당 합니다. 다음 함수와 해당 와이드 문자는 **malloc**도 호출 합니다.
 
 |||||
 |-|-|-|-|
@@ -71,11 +74,11 @@ void *malloc(
 |[fputs](fputs-fputws.md)|[_getdcwd](getcwd-wgetcwd.md)|[scanf](scanf-scanf-l-wscanf-wscanf-l.md)||
 |[fread](fread.md)|[gets](../../c-runtime-library/gets-getws.md)|[_searchenv](searchenv-wsearchenv.md)||
 
-C++ [_set_new_mode](set-new-mode.md) 함수는 **malloc**에 대한 새 처리기 모드를 설정합니다. 새 처리기 모드를 나타내는 실패 하는지를 **malloc** 에서 설정한 대로 새 처리기 루틴을 호출 하는 것 [_set_new_handler](set-new-handler.md)합니다. 기본적으로 **malloc** 메모리 할당 실패 시 새 처리기 루틴을 호출 하지 않습니다. 이 기본 동작을 재정의할 수 있도록 때 **malloc** 메모리를 할당 하지 못했습니다 **malloc** 동일한 새 처리기 루틴을 호출 방식으로 **새** 연산자는 경우 이와 같은 이유로 실패 합니다. 기본값을 재정의 하려면 호출 `_set_new_mode(1)` 초기 프로그램 또는 NEWMODE 사용 하 여 링크 합니다. OBJ (참조 [연결 옵션](../../c-runtime-library/link-options.md)).
+C++ [_set_new_mode](set-new-mode.md) 함수는 **malloc**에 대한 새 처리기 모드를 설정합니다. 새 처리기 모드는 실패 시 **malloc** 가 [_set_new_handler](set-new-handler.md)에서 설정한 대로 새 처리기 루틴을 호출 하는지 여부를 나타냅니다. 기본적으로 **malloc** 은 메모리 할당 실패 시 새 처리기 루틴을 호출 하지 않습니다. 이 기본 동작을 재정의 하 여 **malloc** 에서 메모리 할당에 실패 한 경우 **malloc** 는 **새** 연산자가 같은 이유로 실패 했을 때와 동일한 방식으로 새 처리기 루틴을 호출 합니다. 기본값을 재정의 하려면 프로그램에서 `_set_new_mode(1)` 조기에 호출 하거나 newmode를 사용 하 여 연결 합니다. OBJ ( [링크 옵션](../../c-runtime-library/link-options.md)참조).
 
-응용 프로그램이 C 런타임 라이브러리의 디버그 버전과 연결 됩니다 **malloc** 로 확인 되 [_malloc_dbg](malloc-dbg.md)합니다. 디버깅 프로세스 동안 힙을 관리하는 방법에 대한 자세한 내용은 [CRT 디버그 힙 정보](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
+응용 프로그램이 C 런타임 라이브러리의 디버그 버전에 연결 된 경우 **malloc** 는 [_malloc_dbg](malloc-dbg.md)로 확인 됩니다. 디버깅 프로세스 동안 힙을 관리하는 방법에 대한 자세한 내용은 [CRT 디버그 힙 정보](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
 
-**malloc** 표시 됩니다 `__declspec(noalias)` 및 `__declspec(restrict)`; 즉는 함수가 전역 변수를 수정할 수 없도록 보장 되 고 반환 된 포인터는 별칭이 지정 되지 않습니다. 자세한 내용은 [noalias](../../cpp/noalias.md) 및 [restrict](../../cpp/restrict.md)를 참조하세요.
+**malloc** 는 및 `__declspec(noalias)` `__declspec(restrict)`로 표시 됩니다 .이는 함수가 전역 변수를 수정 하지 않도록 보장 하 고 반환 된 포인터에 별칭이 지정 되지 않음을 의미 합니다. 자세한 내용은 [noalias](../../cpp/noalias.md) 및 [restrict](../../cpp/restrict.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

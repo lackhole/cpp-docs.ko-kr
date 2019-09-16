@@ -1,12 +1,12 @@
 ---
 title: _ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbclegal_l
 - _ismbclegal
 - _ismbcsymbol
 - _ismbcsymbol_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ismbcsymbol_l
 - _ismbcsymbol_l
@@ -42,14 +45,14 @@ helpviewer_keywords:
 - _ismbcsymbol_l function
 - istlegal_l function
 ms.assetid: 31bf1ea5-b56f-4e28-b21e-b49a2cf93ffc
-ms.openlocfilehash: 07855ec970b2bf307238982987912f1e91505e96
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4e040db584725322e98d0a82b28912eea100aff7
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286834"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953799"
 ---
-# <a name="ismbclegal-ismbclegall-ismbcsymbol-ismbcsymboll"></a>_ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l
+# <a name="_ismbclegal-_ismbclegal_l-_ismbcsymbol-_ismbcsymbol_l"></a>_ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l
 
 멀티바이트 문자가 올바른 문자인지 기호 문자인지를 확인합니다.
 
@@ -85,18 +88,18 @@ int _ismbcsymbol_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. 하는 경우 *c*< = 255 및 해당 **_ismbb** 루틴 (예를 들어 **_ismbcalnum** 에 해당 **_ismbbalnum**), 결과 해당 반환 값 **_ismbb** 루틴입니다.
+이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. *C*< = 255이 고 해당 **_ismbb** 루틴이 있는 경우 (예: **_ismbcalnum** 가 **_ismbbalnum**에 해당 하는 경우) 결과는 해당 **_ismbb** 루틴의 반환 값입니다.
 
 ## <a name="remarks"></a>설명
 
 이러한 각 함수는 지정한 조건에 대해 주어진 멀티바이트 문자를 테스트합니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_L** 접미사가 있는 이러한 함수 버전은 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 |루틴에서 반환된 값|테스트 조건|932 코드 페이지 예제|
 |-------------|--------------------|---------------------------|
-|**_ismbclegal**|유효한 멀티바이트|첫째 바이트가 0이 아닌 경우 및 경우에만 반환 *c* 이 범위를 벗어나지 0x81 – 0x9F 또는 0xE0 – 0xFC 두 번째 바이트는 0x40-0x7E 또는 0x80-범위 FC 합니다.|
-|**_ismbcsymbol**|멀티바이트 기호|경우에만 0이 아닌 경우 반환 0x8141 < =*c*< 0x81AC =.|
+|**_ismbclegal**|유효한 멀티바이트|*C* 의 첫 번째 바이트가 0X81-0X9F 또는 0XE0-0xfc 범위 내에 있고 두 번째 바이트는 0X40-0x7e 또는 0X80-fc 범위 내에 있는 경우에만 0이 아닌 값을 반환 합니다.|
+|**_ismbcsymbol**|멀티바이트 기호|는 0x8141 < =*c*< = 0X8141 인 경우에만 0이 아닌 값을 반환 합니다.|
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

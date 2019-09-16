@@ -1,10 +1,10 @@
 ---
 title: _fpclass, _fpclassf
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _fpclass
 - _fpclassf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fpclass
 - _fpclass
@@ -30,14 +33,14 @@ helpviewer_keywords:
 - _fpclass function
 - _fpclassf function
 ms.assetid: 2774872d-3543-446f-bc72-db85f8b95a6b
-ms.openlocfilehash: 987c87cc7a03f4a24e47654ae52e8a2416a15184
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e561cff956ca51707834bf869a1c114f0c99a3e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333224"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957037"
 ---
-# <a name="fpclass-fpclassf"></a>_fpclass, _fpclassf
+# <a name="_fpclass-_fpclassf"></a>_fpclass, _fpclassf
 
 인수의 부동 소수점 분류를 나타내는 값을 반환합니다.
 
@@ -60,16 +63,16 @@ int _fpclassf(
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **_fpclass** 하 고 **_fpclassf** 함수 인수의 부동 소수점 분류를 나타내는 정수 값을 반환할 *x*합니다. 분류는 \<float.h>에 정의된 다음 값 중 하나를 가질 수 있습니다.
+**_Fpclass** 및 **_fpclassf** 함수는 인수 *x*의 부동 소수점 분류를 나타내는 정수 값을 반환 합니다. 분류는 \<float.h>에 정의된 다음 값 중 하나를 가질 수 있습니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |**_FPCLASS_SNAN**|신호 NaN|
 |**_FPCLASS_QNAN**|자동 NaN|
 |**_FPCLASS_NINF**|음의 무한대 (-INF)|
 |**_FPCLASS_NN**|정규화된 0이 아닌 음수 값|
 |**_FPCLASS_ND**|비정규화된 음수|
-|**_FPCLASS_NZ**|음의 0 (-0)|
+|**_FPCLASS_NZ**|음수 0 (-0)|
 |**_FPCLASS_PZ**|양수 0(+0)|
 |**_FPCLASS_PD**|비정규화된 양수|
 |**_FPCLASS_PN**|정규화된 0이 아닌 양수 값|
@@ -77,7 +80,7 @@ int _fpclassf(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_fpclass** 하 고 **_fpclassf** 함수는 Microsoft 전용입니다. [fpclassify](fpclassify.md)와 비슷하지만 인수에 대한 더 자세한 정보를 반환합니다. 합니다 **_fpclassf** 함수는 x64 용으로 컴파일된 경우에 사용할 수만 플랫폼입니다.
+**_Fpclass** 및 **_Fpclassf** 함수는 Microsoft 전용입니다. [fpclassify](fpclassify.md)와 비슷하지만 인수에 대한 더 자세한 정보를 반환합니다. **_Fpclassf** 함수는 x64 플랫폼용으로 컴파일된 경우에만 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 

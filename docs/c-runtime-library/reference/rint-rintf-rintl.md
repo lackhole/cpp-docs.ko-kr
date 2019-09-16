@@ -1,11 +1,11 @@
 ---
 title: rint, rintf, rintl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - rintf
 - rintl
 - rint
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - rintf
 - rintl
@@ -27,12 +30,12 @@ helpviewer_keywords:
 - rint function
 - rintl function
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
-ms.openlocfilehash: 9e0e3875b7484735b5439c6c0e0a7252940d4552
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 57c4dc60d6b4d29e5c46fa6f1d03d0710ed44309
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357592"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949262"
 ---
 # <a name="rint-rintf-rintl"></a>rint, rintf, rintl
 
@@ -58,16 +61,16 @@ long double rint( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **인쇄** 함수에 가장 가까운 정수를 나타내는 부동 소수점 값을 반환 *x*합니다. 중간 값은 동일 부동 소수점 반올림 모드의 현재 설정에 따라 반올림 된 **nearbyint** 함수입니다. 달리 합니다 **nearbyint** 함수는 **인쇄** 일으킬 수 있습니다 합니다 **FE_INEXACT** 결과 인수 값과 다른 경우 부동 소수점 예외. 반환되는 오류가 없습니다.
+**Rint** 함수는 *x*에 가장 가까운 정수를 나타내는 부동 소수점 값을 반환 합니다. 중간 값은 **nearbyint** 함수와 동일한 부동 소수점 반올림 모드의 현재 설정에 따라 반올림 됩니다. **Nearbyint** 함수와 달리 **rint** 함수는 결과가 인수의 값과 다를 경우 **FE_INEXACT** 부동 소수점 예외를 발생 시킬 수 있습니다. 반환되는 오류가 없습니다.
 
-|입력|SEH 예외|**_matherr** 예외|
+|입력|SEH 예외|**_matherr** 발생할|
 |-----------|-------------------|--------------------------|
 |± ∞, QNAN, IND|없음|없음|
 |Denormals|EXCEPTION_FLT_UNDERFLOW|없음|
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **인쇄** 및 반환 하는 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **인쇄** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 값을 사용 하 고 반환 하는 **rint** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **rint** 은 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

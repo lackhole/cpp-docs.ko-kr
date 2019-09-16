@@ -1,14 +1,14 @@
 ---
 title: lrint, lrintf, lrintl, llrint, llrintf, llrintl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - lrint
 - lrintl
 - lrintf
 - llrint
 - llrintf
 - llrintl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - lrint
 - lrintf
@@ -42,12 +45,12 @@ helpviewer_keywords:
 - llrintf function
 - llrintl function
 ms.assetid: 28ccd5b3-5e6f-434f-997d-a21d51b8ce7f
-ms.openlocfilehash: 01680a62e654112475a55bd8eac0cc14d254e2a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72870c3548f0fd6972183b0c090708c6eddc591e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285774"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953119"
 ---
 # <a name="lrint-lrintf-lrintl-llrint-llrintf-llrintl"></a>lrint, lrintf, lrintl, llrint, llrintf, llrintl
 
@@ -104,19 +107,19 @@ long long int llrintl(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면의 반올림 된 정수 값을 반환 *x*합니다.
+성공 하면 *x*의 반올림 된 정수 값을 반환 합니다.
 
-|문제|반환|
+|문제점|반환|
 |-----------|------------|
-|*x* 반환 형식의 범위를 벗어났습니다<br /><br /> *x* = ±∞<br /><br /> *x* = NaN|발생 시킵니다 **FE_INVALID** 영 (0)를 반환 합니다.|
+|*x* 가 반환 형식 범위를 벗어났습니다.<br /><br /> *x* = ±∞<br /><br /> *x* = NaN|**FE_INVALID** 를 발생 시키고 영 (0)을 반환 합니다.|
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 허용 오버 로드를 호출할 수 있습니다 **lrint** 하 고 **llrint** 사용 하는 **float** 하 고 **긴** **이중** 형식입니다. C 프로그램에서 **lrint** 하 고 **llrint** 항상를 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 형식을 사용 하는 **lrint** 및 **llrint** 오버 로드를 호출할 수 있습니다. C 프로그램에서 **lrint** 및 **llrint** 는 항상 **double**을 사용 합니다.
 
-하는 경우 *x* 정수 값, 이러한 함수 생성에 해당 하는 부동 소수점을 나타내지 않습니다 **FE_INEXACT**합니다.
+*X* 가 정수 계열 값에 해당 하는 부동 소수점 값을 나타내지 않는 경우 이러한 함수는 **FE_INEXACT**을 발생 시킵니다.
 
-**Microsoft 전용**: 결과 반환 형식의 범위를 벗어날 때 또는 매개 변수가 NaN 또는 무한 인 경우 반환 값은 정의 된 구현입니다. Microsoft 컴파일러는 0 값을 반환합니다.
+**Microsoft 전용**: 결과가 반환 형식의 범위를 벗어났거나 매개 변수가 NaN 또는 무한대 인 경우 반환 값은 정의 된 구현입니다. Microsoft 컴파일러는 0 값을 반환합니다.
 
 ## <a name="requirements"></a>요구 사항
 

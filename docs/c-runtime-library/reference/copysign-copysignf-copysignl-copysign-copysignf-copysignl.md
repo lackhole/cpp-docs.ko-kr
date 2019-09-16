@@ -1,14 +1,14 @@
 ---
 title: copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - copysignf
 - copysignl
 - _copysignl
 - _copysign
 - _copysignf
 - copysign
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _copysignl
 - copysign
@@ -36,14 +39,14 @@ helpviewer_keywords:
 - _copysign function
 - copysignf function
 ms.assetid: 009216d6-72a2-402d-aa6c-91d924b2c9e4
-ms.openlocfilehash: 6f450da4a4391f94d1905beefdeca8e3f01fec51
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1575f0863b56256513cf6a93cf7b63f3d921af57
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349058"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942851"
 ---
-# <a name="copysign-copysignf-copysignl-copysign-copysignf-copysignl"></a>copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
+# <a name="copysign-copysignf-copysignl-_copysign-_copysignf-_copysignl"></a>copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
 
 한 인수의 크기 및 다른 인수의 부호를 가지고 있는 값을 반환합니다.
 
@@ -92,11 +95,11 @@ long double _copysignl(
 
 ## <a name="return-value"></a>반환 값
 
-**copysign** 의 크기를 결합 하는 부동 소수점 값을 반환 하는 함수 *x* 의 로그인 *y*합니다. 반환되는 오류가 없습니다.
+**Copysign** 함수는 *x* 의 크기와 *y*의 부호를 결합 하는 부동 소수점 값을 반환 합니다. 반환되는 오류가 없습니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **copysign** 및 반환 하는 **float** 하거나 **긴** **double** 값 . C 프로그램에서 **copysign** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하므로 **float** 또는 **long** **double** 값을 사용 하 고 반환 하는 **copysign** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **copysign** 은 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

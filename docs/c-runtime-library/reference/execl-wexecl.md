@@ -1,10 +1,10 @@
 ---
 title: _execl, _wexecl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _execl
 - _wexecl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-process-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _execl
 - _wexecl
@@ -27,14 +30,14 @@ helpviewer_keywords:
 - _wexecl function
 - execl function
 ms.assetid: 81fefb8a-0a06-4221-b2bc-be18e38e89f4
-ms.openlocfilehash: 3d736849f90782425e6e1c1cff04536972318c91
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 714ef80c4909e92100c4fa869b7544239f8edeb7
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339275"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941946"
 ---
-# <a name="execl-wexecl"></a>_execl, _wexecl
+# <a name="_execl-_wexecl"></a>_execl, _wexecl
 
 새 자식 프로세스를 로드하고 실행합니다.
 
@@ -68,7 +71,7 @@ intptr_t _wexecl(
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1 나타냅니다 오류가 있는 경우에 **errno** 전역 변수가 설정 됩니다.
+성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값-1은 오류를 나타내며,이 경우 **errno** 전역 변수가 설정 됩니다.
 
 |errno 값|설명|
 |-----------------|-----------------|
@@ -84,7 +87,7 @@ intptr_t _wexecl(
 
 이러한 각 함수는 새 프로세스를 로드하고 실행하여 각 명령줄 인수를 별도의 매개 변수로 전달합니다. 첫 번째 인수는 명령 또는 실행 파일 이름이고 두 번째 인수는 첫 번째와 같아야 합니다. 실행된 프로세스에서 첫 번째 인수는 `argv[0]`이 됩니다. 세 번째 인수는 실행 중인 프로세스의 첫 번째 인수 `argv[1]`입니다.
 
-합니다 **_execl** 함수 매개 변수 유효성을 검사 합니다. 이면 *cmdname* 또는 *arg0* 가 null 포인터 이거나 빈 문자열인 경우 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 경우 실행 계속, 이러한 함수를 설정 하도록 허용 된 **errno** 하 **EINVAL** 고-1을 반환 합니다. 새로운 프로세스가 실행되지 않습니다.
+**_Execl** 함수는 해당 매개 변수의 유효성을 검사 합니다. *Cmdname* 또는 *arg0* 가 null 포인터 이거나 빈 문자열인 경우 이러한 함수는 실행을 계속 하도록 허용 된 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 이러한 함수는 **errno** 를로 **설정 합니다. EINVAL** 및는-1을 반환 합니다. 새로운 프로세스가 실행되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 

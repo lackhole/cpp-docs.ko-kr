@@ -1,9 +1,9 @@
 ---
 title: _RTC_GetErrDesc
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _RTC_GetErrDesc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - RTC_GetErrDesc
 - _RTC_GetErrDesc
@@ -23,14 +26,14 @@ helpviewer_keywords:
 - _RTC_GetErrDesc function
 - RTC_GetErrDesc function
 ms.assetid: 7994ec2b-5488-4fd4-806d-a166c9a9f927
-ms.openlocfilehash: d164626ea89bbe10f5b2ffe4224bf6381e40bab0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7174e9242b77a904df817886df4f8c763e3e0b2c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357384"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949052"
 ---
-# <a name="rtcgeterrdesc"></a>_RTC_GetErrDesc
+# <a name="_rtc_geterrdesc"></a>_RTC_GetErrDesc
 
 RTC(런타임 오류 검사) 형식에 대한 간단한 설명을 반환합니다.
 
@@ -49,7 +52,7 @@ const char * _RTC_GetErrDesc(
 
 ## <a name="return-value"></a>반환 값
 
-런타임 오류 검사 시스템에서 검색된 오류 형식 중 하나에 대한 간단한 설명을 포함하는 문자열입니다. 오류는 작거나 0 보다 또는 보다 큰 값을 반환 하는 경우 [_RTC_NumErrors](rtc-numerrors.md)하십시오 **_RTC_GetErrDesc** 반환 **NULL**.
+런타임 오류 검사 시스템에서 검색된 오류 형식 중 하나에 대한 간단한 설명을 포함하는 문자열입니다. Error가 0 보다 작거나 [_RTC_NumErrors](rtc-numerrors.md)에서 반환 된 값 보다 크거나 같으면 **_RTC_GetErrDesc** 는 **NULL**을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

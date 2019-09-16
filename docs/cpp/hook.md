@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62153712"
 ---
-# <a name="hook"></a>__hook
+# <a name="__hook"></a>__hook
 
 처리기 메서드를 이벤트와 연결합니다.
 
@@ -68,7 +68,7 @@ long __hook(
 *receiver*<br/>
 (선택 사항) 이벤트 수신기 클래스의 인스턴스에 대 한 포인터입니다. 수신기를 지정 하지 않으면 경우 기본값은 수신기 클래스 또는 구조체 **__hook** 라고 합니다.
 
-## <a name="usage"></a>사용법
+## <a name="usage"></a>사용
 
 이벤트 수신기 클래스 외부의 main을 포함하여 모든 함수 범위에서 사용할 수 있습니다.
 

@@ -1,11 +1,11 @@
 ---
 title: casinh, casinhf, casinhl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - casinh
 - casinhl
 - casinhf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - casinh
 - casinhf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - casinhf function
 - casinhl function
 ms.assetid: bd18340b-21dd-4c86-a14e-e8e15dd97e3b
-ms.openlocfilehash: c274f4dcdfb16317820ce5c39918fa6135210eea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6deec85dc980a7bd421de87349f512564912d98c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340679"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943378"
 ---
 # <a name="casinh-casinhf-casinhl"></a>casinh, casinhf, casinhl
 
-간격에서 벗어난 분기를 사용 하 여 복합 숫자의 역 쌍 곡 사인을 검색 합니다. [-i, + i] 허수 축을 따라 합니다.
+허수 축을 따라 [-i, + i] 간격 밖의 분기를 사용 하 여 복소수의 역 쌍 곡 사인을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -68,11 +71,11 @@ _Lcomplex casinhl(
 
 ## <a name="return-value"></a>반환 값
 
-역 쌍 곡 사인 *z*, 라디안에서입니다. 결과 바인딩된 간격에 실수 축을 따라 [-i π/2, + i π/2] 허수 축을 따라 합니다.
+*Z*의 역 하이퍼볼릭 사인 (라디안)입니다. 결과는 실수 축을 따라 바인딩되지 않으며, 허수 축을 따라 [-iπ/2, + iπ/2] 간격 내에 있습니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **casinh** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **casinh** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **casinh** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **casinh** 는 항상 **_dcomplex** value를 사용 하 여 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

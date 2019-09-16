@@ -1,9 +1,9 @@
 ---
 title: _getw
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _getw
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _getw
 helpviewer_keywords:
@@ -23,14 +26,14 @@ helpviewer_keywords:
 - integers, getting from streams
 - getw function
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
-ms.openlocfilehash: 615d3ac9bdc73ad200368eaeabf7c84951bc91ae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ad03c92ce90542ecae13609ee228ad094f64fc07
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157632"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954886"
 ---
-# <a name="getw"></a>_getw
+# <a name="_getw"></a>_getw
 
 스트림에서 정수를 가져옵니다.
 
@@ -49,11 +52,11 @@ int _getw(
 
 ## <a name="return-value"></a>반환 값
 
-**_getw** 읽은 정수 값을 반환 합니다. 반환 값 **EOF** 오류 또는 파일의 끝을 나타냅니다. 그러나 때문에 **EOF** 값은 올바른 정수 값도 사용 합니다 **feof** 또는 **ferror** 는 파일의 끝 또는 오류 조건을 확인 합니다. 하는 경우 *스트림을* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **EOF**합니다.
+**_getw** 는 읽은 정수 값을 반환 합니다. **EOF** 의 반환 값은 오류 또는 파일 끝을 나타냅니다. 그러나 **EOF** 값도 올바른 정수 값 이므로 **feof** **ferror** 를 사용 하 여 파일 끝 또는 오류 조건을 확인 합니다. *Stream* 이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 함수는 **EOF**를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_getw** 함수 형식의 다음 이진 값을 읽고 **int** 연관 된 파일에서 *stream* 가리키도록 (있는 경우) 연결된 된 파일 포인터를 증가 시킵니다 읽지 않은 다음 문자입니다. **_getw** 어떠한 특별 한 스트림의 항목 맞춤을 가정 하지는 않습니다. 이식 관련 문제가 발생할 수 있습니다 **_getw** 때문에 크기를 **int** 형식과 내의 바이트 순서를 **int** 형식이 시스템에서 다를 합니다.
+**_Getw** 함수는 *스트림과* 연결 된 파일에서 **int** 형식의 다음 이진 값을 읽고 읽지 않은 다음 문자를 가리키도록 연결 된 파일 포인터 (있는 경우)를 증가 시킵니다. **_getw** 는 스트림의 항목에 대 한 특별 한 맞춤을 가정 하지 않습니다. **정수** 형식의 크기와 **int** 형식 내 바이트의 순서가 시스템 마다 다르기 때문에 **_getw** 를 사용 하는 데 문제가 발생할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -98,7 +101,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crtgetwtxt"></a>입력: crt_getw.txt
+### <a name="input-crt_getwtxt"></a>입력: crt_getw.txt
 
 ```Input
 Line one.

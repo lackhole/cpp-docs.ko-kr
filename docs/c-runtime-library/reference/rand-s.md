@@ -1,9 +1,9 @@
 ---
 title: rand_s
-ms.date: 1/02/2018
-apiname:
+ms.date: 01/02/2018
+api_name:
 - rand_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - rand_s
 helpviewer_keywords:
@@ -27,12 +30,12 @@ helpviewer_keywords:
 - cryptographically secure random numbers
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: 7a2c57713d4b455971f24b64dc124862749e927a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 652521ab472736783ba1b4498ca7d7c3f297e7ee
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499556"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949652"
 ---
 # <a name="rand_s"></a>rand_s
 

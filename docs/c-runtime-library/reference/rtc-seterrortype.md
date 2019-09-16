@@ -1,9 +1,9 @@
 ---
 title: _RTC_SetErrorType
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _RTC_SetErrorType
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - RTC_SetErrorType
 - _RTC_SetErrorType
@@ -23,14 +26,14 @@ helpviewer_keywords:
 - RTC_SetErrorType function
 - _RTC_SetErrorType function
 ms.assetid: f5f99be7-d357-4b11-b8f5-ddd3428f2b06
-ms.openlocfilehash: 022079bd199477c8bca92e853ed66879c96428db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6c1eff5920931aa3b72bf3dbc6232c371828b16a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357137"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948931"
 ---
-# <a name="rtcseterrortype"></a>_RTC_SetErrorType
+# <a name="_rtc_seterrortype"></a>_RTC_SetErrorType
 
 RTC(런타임 오류 검사)에서 발견된 오류를 형식에 연결합니다. 오류 처리기는 지정된 형식의 오류를 출력하는 방법을 처리합니다.
 
@@ -49,13 +52,13 @@ int _RTC_SetErrorType(
 0과 [_RTC_NumErrors](rtc-numerrors.md)에서 반환한 값에서 1을 뺀 수 사이의 숫자입니다.
 
 *ErrType*<br/>
-이 *errnum*에 할당할 값입니다. 예를 들어 **_CRT_ERROR**를 사용할 수 있습니다. 사용 중인 경우 **_CrtDbgReport** 오류 처리기로 *ErrType* 에 정의 된 기호 중 하나일 수만 있습니다 [_CrtSetReportMode](crtsetreportmode.md)합니다. 사용자 고유의 오류 처리기([_RTC_SetErrorFunc](rtc-seterrorfunc.md))가 있는 경우 *errnum*개수만큼 *ErrType*을 사용할 수 있습니다.
+이 *errnum*에 할당할 값입니다. 예를 들어 **_CRT_ERROR**를 사용할 수 있습니다. **_CrtDbgReport** 를 오류 처리기로 사용 하는 경우 *Errtype* 은 [_CrtSetReportMode](crtsetreportmode.md)에 정의 된 기호 중 하나일 수만 있습니다. 사용자 고유의 오류 처리기([_RTC_SetErrorFunc](rtc-seterrorfunc.md))가 있는 경우 *errnum*개수만큼 *ErrType*을 사용할 수 있습니다.
 
-*ErrType* _rtc_errtype_ignore 특별 한 의미를 갖는 **_CrtSetReportMode**; 오류 무시 됩니다.
+*Errtype* _RTC_ERRTYPE_IGNORE는 **_CrtSetReportMode**에 특별 한 의미가 있습니다. 오류는 무시 됩니다.
 
 ## <a name="return-value"></a>반환 값
 
-오류 유형에 대해 이전 값 *형식*합니다.
+오류 유형 *형식*에 대 한 이전 값입니다.
 
 ## <a name="remarks"></a>설명
 

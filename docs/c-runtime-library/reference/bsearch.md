@@ -1,9 +1,9 @@
 ---
 title: bsearch
 ms.date: 11/04/2016
-apiname:
+api_name:
 - bsearch
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,19 +16,22 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - bsearch
 helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch function
 ms.assetid: e0ad2f47-e7dd-49ed-8288-870457a14a2c
-ms.openlocfilehash: e170ce67d22c0d97825a7eb754546a29daac6d89
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e44e85d1c6d73a68da2edd099cdeb6156f9759d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347758"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939431"
 ---
 # <a name="bsearch"></a>bsearch
 
@@ -65,19 +68,19 @@ void *bsearch(
 
 ## <a name="return-value"></a>반환 값
 
-**bsearch** 발생에 대 한 포인터를 반환 *키* 가 가리키는 배열의 *기본*입니다. 하는 경우 *키* 발견 되지 않으면 반환 **NULL**합니다. 배열이 오름차순 정렬이 아니거나 동일한 키를 가진 중복 레코드를 포함하는 경우에는 결과를 예측할 수 없습니다.
+**b** i s e >는 *base*에서 가리키는 배열의 *키* 발생에 대 한 포인터를 반환 합니다. *키* 를 찾을 수 없는 경우이 함수는 **NULL**을 반환 합니다. 배열이 오름차순 정렬이 아니거나 동일한 키를 가진 중복 레코드를 포함하는 경우에는 결과를 예측할 수 없습니다.
 
 ## <a name="remarks"></a>설명
 
-**bsearch** 의 정렬 된 배열의 이진 검색을 수행 하는 함수 *번호* 의 각 요소 *너비* 크기에서 (바이트). 합니다 *기본* 값은 검색할 배열의 밑에 대 한 포인터 및 *키* 가 검색 되는 값입니다. 합니다 *비교* 매개 변수는 배열 요소에 요청된 된 키를 비교 하 고 해당 관계를 지정 하는 다음 값 중 하나를 반환 하는 사용자가 제공한 루틴에 대 한 포인터:
+검색 **함수는** 각 *너비가* 바이트 인 *number* 요소의 정렬 된 배열에 대해 이진 검색을 수행 합니다. *기준* 값은 검색할 배열 기준에 대 한 포인터이 고 *key* 는 검색 중인 값입니다. *Compare* 매개 변수는 요청 된 키를 배열 요소와 비교 하 고 해당 관계를 지정 하는 다음 값 중 하나를 반환 하는 사용자 제공 루틴에 대 한 포인터입니다.
 
-|반환 된 값 *비교* 루틴|설명|
+|*비교* 루틴에서 반환 된 값|Description|
 |-----------------------------------------|-----------------|
 |\< 0|키가 배열 요소보다 작습니다.|
 |0|키가 배열 요소와 같습니다.|
 |> 0|키가 배열 요소보다 큽니다.|
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *비교*, *키* 또는 *번호* 은 **NULL**, 또는 *기본* 은 **NULL**하 고 *수* 값은 0 이거나 *너비* 가 0 이면에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 `EINVAL` 고 함수가 반환 **NULL**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *Compare*, *key* 또는 *number* 가 **null**이거나 *base* 가 **null** 이 고 *숫자가* 0이 아닌 경우 또는 *width* 가 0 인 경우 [매개 변수 유효성 검사에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. ](../../c-runtime-library/parameter-validation.md). 계속 해 서 실행 하도록 허용한 경우 **errno** 은로 `EINVAL` 설정 되 고 함수는 **NULL**을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

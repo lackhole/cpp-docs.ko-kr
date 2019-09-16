@@ -1,14 +1,14 @@
 ---
 title: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbsncpy_s_l
 - wcsncpy_s
 - _strncpy_s_l
 - strncpy_s
 - _mbsncpy_s
 - _wcsncpy_s_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -22,7 +22,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tcsncpy_s
 - _wcsncpy_s_l
@@ -46,19 +49,19 @@ helpviewer_keywords:
 - _tcsncpy_s function
 - wcsncpy_s_l function
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
-ms.openlocfilehash: 2372cab4cfb689aa52de81d9e15602f2478ddde7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 196a3aac09db790da6b8137029383cca77c3d2ad
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209763"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947273"
 ---
-# <a name="strncpys-strncpysl-wcsncpys-wcsncpysl-mbsncpys-mbsncpysl"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
+# <a name="strncpy_s-_strncpy_s_l-wcsncpy_s-_wcsncpy_s_l-_mbsncpy_s-_mbsncpy_s_l"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 
 한 문자열의 문자를 다른 문자열에 복사합니다.  이러한 버전의 [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 향상된 보안 기능이 포함되어 있습니다.
 
 > [!IMPORTANT]
-> **_mbsncpy_s** 하 고 **_mbsncpy_s_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsncpy_s** 및 **_mbsncpy_s_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -162,22 +165,22 @@ errno_t _mbsncpy_s_l(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 0 **STRUNCATE** 잘림이 발생 한 경우, 그렇지 않으면 오류 코드입니다.
+성공 하면 0이 고, 잘림이 발생 하면 **STRUNCATE** , 그렇지 않으면 오류 코드입니다.
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*strDest*|*numberOfElements*|*strSource*|반환 값|내용을 *strDest*|
+|*strDest*|*numberOfElements*|*strSource*|반환 값|*Strdest* 의 내용|
 |---------------|------------------------|-----------------|------------------|---------------------------|
 |**NULL**|any|any|**EINVAL**|수정 안 됨|
-|any|any|**NULL**|**EINVAL**|*strDest*0 [0] 집합|
+|any|any|**NULL**|**EINVAL**|*Strdest* [0]을 0으로 설정 합니다.|
 |any|0|any|**EINVAL**|수정 안 됨|
-|하지 **NULL**|너무 작음|any|**ERANGE**|*strDest*0 [0] 집합|
+|**NULL** 이 아님|너무 작음|any|**ERANGE**|*Strdest* [0]을 0으로 설정 합니다.|
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 첫 번째 복사 하려고 *D* 자의 *strSource* 에 *strDest*여기서 *D* 의 작은 *개수*  의 길이 *strSource*합니다. 이러한 경우 *D* 문자 내에 맞는 *strDest* (크기가으로 제공 됩니다 *numberOfElements*) 여전히 해당 문자가 복사 되며 다음 null 종결자를 위한 공간을 유지 하 고 종결 null 추가 됩니다. 그렇지 않으면 *strDest*[0] 설정 된 null 문자를 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다.
+이러한 함수는 *strsource* 의 첫 *D* 문자를 *strsource*로 복사 하려고 합니다. *여기서 D* 는 count와 *strsource*의 길이 중 더 작은 *수* 입니다. 이러한 *D* 문자를 *strdest* 에 맞추고 (크기가 *numberofelements*로 지정 된 경우) null 종결자를 위한 공간을 남겨 두려면 해당 문자가 복사 되 고 종료 null이 추가 됩니다. 그렇지 않으면 *Strdest*[0]이 null 문자로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
 
-위 단락의 설명에는 예외가 적용됩니다. 경우 *개수* 됩니다 **_TRUNCATE**, 만큼의 *strSource* 포함할 *strDest* 에 대 한 공간은 남겨 두고 복사 되는 항상 추가 되는 null을 종료 합니다.
+위 단락의 설명에는 예외가 적용됩니다. *Count* 가 **_truncate**인 경우 *strsource* 에 맞는 만큼의 *strsource* 는 항상 추가 되는 종료 null에 대 한 공간을 유지 하면서 복사 됩니다.
 
 예를 들면 다음과 같습니다.
 
@@ -186,22 +189,22 @@ char dst[5];
 strncpy_s(dst, 5, "a long string", 5);
 ```
 
-요청 하는 것을 의미 **strncpy_s** 5 자를 복사 하도록 버퍼로 5 바이트 길이의 이렇게 하면 null 종결자에 공백이 없습니다. 따라서 **strncpy_s** 문자열 남지와 잘못 된 호출 매개 변수 처리기입니다.
+5 바이트를 버퍼에 5 바이트 **strncpy_s** 를 요청 하는 것을 의미 합니다. 이렇게 하면 null 종결자를 위한 공간이 확보 되지 않으므로 문자열을 0 **strncpy_s** 하 고 잘못 된 매개 변수 처리기를 호출 합니다.
 
-잘라내기 동작이 필요한 경우 사용할 **_TRUNCATE** 하거나 (*크기* -1):
+잘림 동작이 필요한 경우 **_Truncate** 또는 (*size* -1)을 사용 합니다.
 
 ```C
 strncpy_s(dst, 5, "a long string", _TRUNCATE);
 strncpy_s(dst, 5, "a long string", 4);
 ```
 
-와 달리 **strncpy**이면 *개수* 의 길이 보다 크면 *strSource*, 대상 문자열은 길이까지null문자로채워지지*개수*합니다.
+**Strncpy**와 달리 *Count* 가 *strsource*의 길이 보다 큰 경우 대상 문자열은 null 문자를 포함 하 *여 최대 길이*까지 채워지지 않습니다.
 
-동작은 **strncpy_s** 소스 문자열과 대상 문자열이 겹치는 경우 정의 되지 않습니다.
+원본 및 대상 문자열이 겹치면 **strncpy_s** 의 동작이 정의 되지 않습니다.
 
-하는 경우 *strDest* 또는 *strSource* 됩니다 **NULL**, 또는 *numberOfElements* 0 인 잘못 된 매개 변수 처리기가 호출 됩니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **EINVAL** 설정 **errno** 하 **EINVAL**합니다.
+*Strdest* 또는 *Strdest* 가 **NULL**이거나 *numberofelements* 가 0 이면 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
-**wcsncpy_s** 하 고 **_mbsncpy_s** 와이드 문자 및 멀티 바이트 문자 버전입니다 **strncpy_s**합니다. 인수 및 반환 값 **wcsncpy_s** 하 고 **mbsncpy_s** 그에 따라 달라 집니다. 그 외의 경우에는 이들 6개 함수가 동일하게 작동합니다.
+**wcsncpy_s** 및 **_mbsncpy_s** 는 **strncpy_s**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsncpy_s** 및 **mbsncpy_s** 의 인수와 반환 값은 그에 따라 다릅니다. 그 외의 경우에는 이들 6개 함수가 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -217,7 +220,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 |**_tcsncpy_s_l**|**_strncpy_s_l**|**_mbsnbcpy_s_l**|**_wcsncpy_s_l**|
 
 > [!NOTE]
-> **_strncpy_s_l**, **_wcsncpy_s_l** 하 고 **_mbsncpy_s_l** 로캘에 종속 되지 않습니다 있고 용 으로만 제공 되며 **_tcsncpy_s_l** 되도록 하지 않습니다 직접 호출 됩니다.
+> **_strncpy_s_l**, **_wcsncpy_s_l** 및 **_mbsncpy_s_l** 은 로캘에 종속 되지 않으며 **_tcsncpy_s_l** 에 대해서만 제공 되며 직접 호출할 수 없습니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,12 +1,12 @@
 ---
 title: _mbclen, mblen, _mblen_l, _mbclen_l
 ms.date: 01/22/2019
-apiname:
+api_name:
 - _mbclen
 - mblen
 - _mblen_l
 - _mbclen_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -19,7 +19,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - mblen
 - ftclen
@@ -39,14 +42,14 @@ helpviewer_keywords:
 - mbclen function
 - mblen function
 ms.assetid: d5eb92a0-b7a3-464a-aaf7-9890a8e3ed70
-ms.openlocfilehash: b7888b0b8c87a632dcbb63f54ade11080c7a309a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 96775f513b33eb407981480c17cb609dd85383f6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156787"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952571"
 ---
-# <a name="mbclen-mblen-mblenl-mbclenl"></a>_mbclen, mblen, _mblen_l, _mbclen_l
+# <a name="_mbclen-mblen-_mblen_l-_mbclen_l"></a>_mbclen, mblen, _mblen_l, _mbclen_l
 
 멀티바이트 문자의 길이를 가져오고 유효성을 확인합니다.
 
@@ -90,15 +93,15 @@ int _mblen_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_mbclen** 여부에 따라 1 또는 2를 반환 멀티 바이트 문자 *c* 1 또는 2 바이트입니다. 에 대 한 반환 오류가 없는지 **_mbclen**합니다. 하는 경우 *mbstr* 되지 **NULL**에 **mblen** 멀티 바이트 문자의 바이트의 길이 반환 합니다. 하는 경우 *mbstr* 됩니다 **NULL** 하거나 해당 와이드 문자 null 문자를 가리키는 **mblen** 0을 반환 합니다. 때 개체는 *mbstr* 가리키는 첫 번째 내에서 유효한 멀티 바이트 문자를 형성 하지 않습니다 *개수* 문자인 **mblen** -1을 반환 합니다.
+**_mbclen** 는 멀티 바이트 문자 *c* 가 1 또는 2 바이트 길이에 따라 1 또는 2를 반환 합니다. **_Mbclen**에 대 한 오류 반환은 없습니다. *Mbstr* 이 **NULL**이 아닌 경우 **mblen** 는 멀티 바이트 문자의 길이 (바이트)를 반환 합니다. *Mbstr* 가 **null** 이거나 와이드 문자 null 문자를 가리키는 경우 **mblen** 는 0을 반환 합니다. *Mbstr* 가 가리키는 개체가 첫 번째 *카운트* 문자 내에서 유효한 멀티 바이트 문자를 구성 하지 않는 경우 **mblen** 는-1을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_mbclen** 함수는 멀티 바이트 문자의 바이트, 길이 반환 합니다 *c*합니다. 경우 *c* 암시적 호출에 의해 결정 된 멀티 바이트 문자의 선행 바이트를 가리키지 않습니다 **_ismbblead**, 결과인 **_mbclen** 는 예측할 수 없습니다.
+**_Mbclen** 함수는 멀티 바이트 문자 *c*의 길이 (바이트)를 반환 합니다. *C* 가 **_ismbblead**에 대 한 암시적 호출에 의해 결정 된 멀티 바이트 문자의 선행 바이트를 가리키지 않는 경우 **_mbclen** 의 결과를 예측할 수 없습니다.
 
-**mblen** 바이트의 길이 반환 합니다 *mbstr* 유효한 멀티 바이트 문자 이며 코드 페이지와 연결 된 멀티 바이트 문자 유효성을 확인 합니다. **mblen** 검사 *개수* 에 포함 된 바이트 *mbstr*, 최대 **MB_CUR_MAX** 바이트입니다.
+**mblen** 은 유효한 멀티 바이트 문자인 경우 *mbstr* 의 길이 (바이트)를 반환 하 고 코드 페이지와 관련 된 멀티 바이트 문자 유효성을 확인 합니다. **mblen** 은 *mbstr*에 포함 되었지만 **MB_CUR_MAX** 바이트를 초과 하지 않는 바이트 *수* 를 검사 합니다.
 
-출력 값에 영향을 받는 합니다 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale](setlocale-wsetlocale.md) 자세한 내용은 합니다. 없는 이러한 함수의 버전은 **_l** 접미사가 로캘 종속 동작에 대 한 현재 로캘을 사용 합니다. 합니다 **_l** 접미사가 있는 버전은 동일 하 게 동작 하지만 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md) 을 참조 하세요. **_L** 접미사가 없는 이러한 함수 버전은이 로캘 종속 동작에 현재 로캘을 사용 합니다. **_L** 접미사로 이루어진 버전은 동일 하 게 동작 하지만 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

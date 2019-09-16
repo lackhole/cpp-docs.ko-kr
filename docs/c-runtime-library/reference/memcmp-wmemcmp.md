@@ -1,10 +1,10 @@
 ---
 title: memcmp, wmemcmp
 ms.date: 11/04/2016
-apiname:
+api_name:
 - memcmp
 - wmemcmp
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,8 +17,10 @@ apilocation:
 - ntdll.dll
 - ucrtbase.dll
 - ntoskrnl.exe
-apitype: DLLExport
-topictype: APIRef
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - memcmp
 - wmemcmp
@@ -26,12 +28,12 @@ helpviewer_keywords:
 - wmemcmp function
 - memcmp function
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d
-ms.openlocfilehash: 228a74ac8cc83bca169779f1afd6936f5be59bee
-ms.sourcegitcommit: 010ecc2bb9a15deea192a34975176ec0426aa3d8
+ms.openlocfilehash: 2fa902c0fa5a4a78f6fd3e46edeb3799aaf92569
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66265621"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951928"
 ---
 # <a name="memcmp-wmemcmp"></a>memcmp, wmemcmp
 
@@ -61,21 +63,21 @@ int wmemcmp(
 두 번째 버퍼입니다.
 
 *count*<br/>
-비교할 문자 수입니다. (에 대 한 바이트를 비교 **memcmp**, 와이드 문자입니다 **wmemcmp**).
+비교할 문자 수입니다. ( **Wmemcmp**의 경우 바이트, **memcmp**의 경우 와이드 문자)를 비교 합니다.
 
 ## <a name="return-value"></a>반환 값
 
 반환 값은 부분 문자열 간의 관계를 나타냅니다.
 
-|반환 값|첫 번째 관계 *개수* buf1 및 buf2에서의 문자|
+|반환 값|Buf1 및 b u f의 첫 번째 *카운트* 문자 관계|
 |------------------|---------------------------------------------------------------|
-|< 0|*buffer1* 보다 작거나 *buffer2*|
-|0|*buffer1* 동일 *buffer2*|
-|> 0|*buffer1* 보다 큰 *buffer2*|
+|< 0|*buffer1* 보다 작음 *buffer2*|
+|0|*buffer1* 와 *buffer2*|
+|> 0|*buffer1* *buffer2* 보다 큼|
 
 ## <a name="remarks"></a>설명
 
-첫 번째 비교 *개수* 자의 *buffer1* 하 고 *buffer2* 관계를 나타내는 값을 반환 합니다. 0이 아닌 반환 값의 부호는 버퍼에서 첫 번째 서로 다른 값 쌍의 차이에 대한 부호입니다. 값으로 해석 됩니다 **부호 없는** **char** 에 대 한 **memcmp**에서 **wchar_t** 에 대 한 **wmemcmp**합니다.
+*Buffer1* 및 *buffer2* 의 첫 번째 *카운트* 문자를 비교 하 고 해당 관계를 나타내는 값을 반환 합니다. 0이 아닌 반환 값의 부호는 버퍼에서 첫 번째 서로 다른 값 쌍의 차이에 대한 부호입니다. 값은 **memcmp**의 경우 **unsigned** **char** 로 해석 되 고 **wmemcmp**의 경우 **wchar_t** 로 해석 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,9 +1,9 @@
 ---
 title: srand
-ms.date: 1/02/2018
-apiname:
+ms.date: 01/02/2018
+api_name:
 - srand
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - srand
 helpviewer_keywords:
@@ -29,16 +32,16 @@ helpviewer_keywords:
 - pseudorandom numbers
 - starting points, setting random
 - starting points
-ms.openlocfilehash: 6545d4eba6c17fd55bb2b8cf23fb0319d1c96bee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03e2b87a37d1b520b6e2b32c2f756fea625eb9a2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354888"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70958006"
 ---
 # <a name="srand"></a>srand
 
-사용 하는 난수 생성기에 대 한 시작 시드 값을 설정 합니다 **rand** 함수입니다.
+**Rand** 함수에서 사용 하는 의사 난수 생성기의 시작 초기값을 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -55,7 +58,7 @@ void srand(
 
 ## <a name="remarks"></a>설명
 
-합니다 **srand** 함수는 현재 스레드에서 일련의 의사 난수 정수 생성을 위한 시작 지점을 설정 합니다. 호출 결과의 순서를 만들도록 생성기를 다시 초기화 해야 합니다 **srand** 함수를 사용한 것과 동일한 *초기값* 인수를 다시 합니다. 에 대 한 다른 모든 값 *시드* 생성기 의사 난수 시퀀스에서 다른 시작 지점으로 설정 합니다. **rand** 생성 된 난수를 검색 합니다. 호출 **rand** 호출 하기 전에 **srand** 호출 하는 것 같은 시퀀스를 생성 **srand** 사용 하 여 *초기값* 1로 전달 합니다.
+**Srand** 함수는 현재 스레드에서 일련의 의사 난수 정수를 생성 하기 위한 시작점을 설정 합니다. 동일한 결과 시퀀스를 만들도록 생성기를 다시 초기화 하려면 **srand** 함수를 호출 하 고 동일한 *초기값* 인수를 다시 사용 합니다. *초기값* 의 다른 모든 값은 생성기를 의사 (pseudo) 시퀀스에서 다른 시작 점으로 설정 합니다. **rand** 는 생성 된 의사 난수를 검색 합니다. **Srand** 호출 하기 전에 **rand** 를 호출 하면 **srand** 를 호출 하는 것과 동일한 시퀀스가 생성 되며 *초기값* 이 1로 전달 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

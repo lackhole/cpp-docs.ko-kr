@@ -1,9 +1,9 @@
 ---
 title: _isatty
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _isatty
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _isatty
 helpviewer_keywords:
@@ -24,14 +27,14 @@ helpviewer_keywords:
 - _isatty function
 - checking character devices
 ms.assetid: 9f1b2e87-0cd7-4079-b187-f2b7ca15fcbe
-ms.openlocfilehash: ef0df5f859779c081df47ef4bfe938ec2601d524
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d2ba2fdfeb1c8bffe47b0953f0629746d2eb599
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157476"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954550"
 ---
-# <a name="isatty"></a>_isatty
+# <a name="_isatty"></a>_isatty
 
 파일 설명자가 문자 디바이스와 연결되어 있는지 여부를 확인합니다.
 
@@ -48,13 +51,13 @@ int _isatty( int fd );
 
 ## <a name="return-value"></a>반환 값
 
-**_isatty** 설명자가 문자 장치와 연결 된 경우 0이 아닌 값을 반환 합니다. 그렇지 않으면 **_isatty** 0을 반환 합니다.
+설명자가 문자 장치와 연결 된 경우 **_isatty** 는 0이 아닌 값을 반환 합니다. 그렇지 않으면 **_isatty** 는 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_isatty** 함수를 결정 하는지 여부를 *fd* (터미널, 콘솔, 프린터 또는 직렬 포트) 문자 장치와 연결 됩니다.
+**_Isatty** 함수는 *fd* 가 문자 장치 (터미널, 콘솔, 프린터 또는 직렬 포트)와 연결 되어 있는지 여부를 확인 합니다.
 
-이 함수는 유효성을 검사 합니다 *fd* 매개 변수입니다. 하는 경우 *fd* 잘못 된 파일 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행 함수는 0 반환 하 고 집합을 계속 하도록 허용 된 경우 **errno** 하 **EBADF**합니다.
+이 함수는 *fd* 매개 변수의 유효성을 검사 합니다. *Fd* 가 잘못 된 파일 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는 0을 반환 하 고 **errno** 를 **ebadf**로 설정 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

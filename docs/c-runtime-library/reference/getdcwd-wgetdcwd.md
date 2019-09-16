@@ -1,10 +1,10 @@
 ---
 title: _getdcwd, _wgetdcwd
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _getdcwd
 - _wgetdcwd
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
 - api-ms-win-crt-environment-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wgetdcwd
 - getdcwd
@@ -34,12 +37,12 @@ helpviewer_keywords:
 - current working directory
 - directories [C++], current working
 ms.assetid: 184152f5-c7b0-495b-918d-f9a6adc178bd
-ms.openlocfilehash: 9f6ae99ae74bb21c9462abcb37e466d63b86f8af
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 3b67e04e914baf85545fcde63cf27c86bc15fac1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501025"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956020"
 ---
 # <a name="_getdcwd-_wgetdcwd"></a>_getdcwd, _wgetdcwd
 
@@ -91,7 +94,7 @@ wchar_t *_wgetdcwd(
 
 이 함수는 자체적으로 스레드로부터 안전하지 않는 **GetFullPathName**에 의존하지만 스레드로부터 안전합니다. 그러나 다중 스레드 애플리케이션에서 이 함수와 [GetFullPathName](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamew)을 모두 호출하는 경우 스레드 안전성을 위반할 수 있습니다.
 
-_Nolock 접미사가 있는이 함수의 버전 은 스레드로부터 안전 하지 않으며 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하 고이 함수와 동일 하 게 작동 합니다. 자세한 내용은 [_getdcwd_nolock, _wgetdcwd_nolock](getdcwd-nolock-wgetdcwd-nolock.md)을 참조하세요.
+**_Nolock** 접미사가 있는이 함수의 버전은 스레드로부터 안전 하지 않으며 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하 고이 함수와 동일 하 게 작동 합니다. 자세한 내용은 [_getdcwd_nolock, _wgetdcwd_nolock](getdcwd-nolock-wgetdcwd-nolock.md)을 참조하세요.
 
 **_Debug** 및 **_CRTDBG_MAP_ALLOC** 가 정의 된 경우 **_getdcwd** 및 **_wgetdcwd** 호출은 **_getdcwd_dbg** 및 **_wgetdcwd_dbg** 에 대 한 호출로 대체 되므로 메모리 할당을 디버그할 수 있습니다. 자세한 내용은[_getdcwd_dbg, _wgetdcwd_dbg](getdcwd-dbg-wgetdcwd-dbg.md)를 참조하세요.
 

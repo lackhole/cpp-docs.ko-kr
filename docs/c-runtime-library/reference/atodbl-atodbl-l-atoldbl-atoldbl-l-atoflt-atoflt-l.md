@@ -1,14 +1,14 @@
 ---
 title: _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _atoldbl
 - _atoldbl_l
 - _atodbl
 - _atoflt
 - _atoflt_l
 - _atodbl_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _atoflt
 - _atoflt_l
@@ -49,16 +52,16 @@ helpviewer_keywords:
 - _atoflt function
 - _atodbl_l function
 ms.assetid: 2d2530f4-4bd4-42e3-8083-f2d2fbc8432a
-ms.openlocfilehash: bb8d711dc8dfa912333f34603ad607f0a74143bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f3b164042006cab22d0dfd9a7968e2d2e494f5c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349279"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943620"
 ---
-# <a name="atodbl-atodbll-atoldbl-atoldbll-atoflt-atofltl"></a>_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
+# <a name="_atodbl-_atodbl_l-_atoldbl-_atoldbl_l-_atoflt-_atoflt_l"></a>_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 
-문자열을 double로 변환 합니다 (**_atodbl**), long double (**_atoldbl**), 또는 float (**_atoflt**).
+문자열을 double ( **_atodbl**), long double ( **_atoldbl**) 또는 float ( **_atoldbl**)로 변환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -73,7 +76,7 @@ int _atoflt_l( _CRT_FLOAT * value, const char * str, locale_t locale );
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
+*value*<br/>
 문자열을 부동 소수점 값으로 변환하여 생성되는 double, long double 또는 float 값입니다. 이러한 값은 구조체에서 래핑됩니다.
 
 *str*<br/>
@@ -84,15 +87,15 @@ int _atoflt_l( _CRT_FLOAT * value, const char * str, locale_t locale );
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 0을 반환합니다. 가능한 오류 코드는 **_UNDERFLOW** 하거나 **_OVERFLOW**, 헤더 파일에 정의 된 \<math.h >.
+성공하면 0을 반환합니다. 가능한 오류 코드는 **_underflow** 또는 **_underflow**이며 헤더 파일 \<>에 정의 되어 있습니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 문자열을 부동 소수점 값으로 변환합니다. 이러한 함수 간의 차이점 및 **atof** 계열의 함수는 이러한 함수는 부동 소수점 코드를 생성 하지 않습니다 하 고 하드웨어 예외를 발생 하지 않습니다. 대신 오류 조건은 오류 코드로 보고됩니다.
+이러한 함수는 문자열을 부동 소수점 값으로 변환합니다. 이러한 함수와 **atof** 함수 패밀리의 차이점은 이러한 함수는 부동 소수점 코드를 생성 하지 않으며 하드웨어 예외를 발생 시 키 지 않습니다. 대신 오류 조건은 오류 코드로 보고됩니다.
 
-문자열에 부동 소수점 값으로의 유효한 해석이 없으면 *값* 로 설정 되어 0이 있고 반환 값은 0입니다.
+문자열에 부동 소수점 값으로 유효한 해석이 없으면 *값* 이 0으로 설정 되 고 반환 값은 0이 됩니다.
 
-접미사가 있는 이러한 함수 버전을 **_l** 접미사는 동일 없는 접미사를 사용 하는 점을 제외 하 고 버전을 *로캘* 현재 스레드 대신 전달 된 매개 변수 로캘입니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 *로캘* 매개 변수를 사용 한다는 점을 제외 하 고 접미사가 없는 버전과 동일 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

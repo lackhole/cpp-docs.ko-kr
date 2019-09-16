@@ -1,10 +1,10 @@
 ---
 title: getchar, getwchar
 ms.date: 11/04/2016
-apiname:
+api_name:
 - getchar
 - getwchar
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - getwchar
 - GetChar
@@ -27,12 +30,12 @@ helpviewer_keywords:
 - _gettchar function
 - standard input, reading from
 ms.assetid: 19fda588-3e33-415c-bb60-dd73c028086a
-ms.openlocfilehash: 5f8d7dbeb35c8818706eb6070df613df8654feb6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b969dc48e949efa02b807ec0ea442da7cb793e15
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287243"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955411"
 ---
 # <a name="getchar-getwchar"></a>getchar, getwchar
 
@@ -47,11 +50,11 @@ wint_t getwchar();
 
 ## <a name="return-value"></a>반환 값
 
-읽은 문자를 반환합니다. 읽기 오류 또는 파일 끝 조건을 나타내기 위해 **getchar** 반환 **EOF**, 및 **getwchar** 반환 **WEOF**합니다. 에 대 한 **getchar**를 사용 하 여 **ferror** 또는 **feof** 오류 또는 파일의 끝을 확인 합니다.
+읽은 문자를 반환합니다. 읽기 오류 또는 파일 끝 조건을 나타내려면 **getchar** 은 **EOF**를 반환 하 고 **getwchar** 는 **weof**를 반환 합니다. **Getchar**의 경우 **ferror** 또는 **feof** 를 사용 하 여 오류 또는 파일 끝을 확인 합니다.
 
 ## <a name="remarks"></a>설명
 
-각 루틴에서 단일 문자를 읽습니다 **stdin** 다음 문자를 가리키도록 연결 된 파일 포인터를 증가 시킵니다. **getchar** 같습니다 [_fgetchar](fgetc-fgetwc.md), 함수 및 매크로로 구현 됩니다.
+각 루틴은 **stdin** 에서 단일 문자를 읽고 다음 문자를 가리키도록 연결 된 파일 포인터를 증가 시킵니다. **getchar** 는 [_fgetchar](fgetc-fgetwc.md)와 동일 하지만 함수 및 매크로로 구현 됩니다.
 
 이러한 함수는 호출 스레드를 잠그므로 스레드로부터 안전합니다. 잠기지 않는 버전의 경우 [_getchar_nolock, _getwchar_nolock](getchar-nolock-getwchar-nolock.md)을 참조하세요.
 
@@ -68,7 +71,7 @@ wint_t getwchar();
 |**getchar**|\<stdio.h>|
 |**getwchar**|\<stdio.h> 또는 \<wchar.h>|
 
-콘솔 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 콘솔을 사용 하 여 연결 된 표준 스트림 핸들 **stdin**하십시오 **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout**및 **stderr**에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

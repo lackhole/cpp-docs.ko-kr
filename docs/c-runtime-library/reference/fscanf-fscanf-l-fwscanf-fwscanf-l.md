@@ -1,12 +1,12 @@
 ---
 title: fscanf, _fscanf_l, fwscanf, _fwscanf_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - fscanf
 - _fwscanf_l
 - _fscanf_l
 - fwscanf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fscanf
 - fwscanf
@@ -40,14 +43,14 @@ helpviewer_keywords:
 - _ftscanf function
 - fwscanf_l function
 ms.assetid: 9004e978-6c5f-4bb2-98fd-51e5948933f2
-ms.openlocfilehash: 5be3f4107d2f05c1863c9c8303ac89e184590baa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c143cbc1bf642e7efc6f10b9615fdaca8a236d1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287839"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956628"
 ---
-# <a name="fscanf-fscanfl-fwscanf-fwscanfl"></a>fscanf, _fscanf_l, fwscanf, _fwscanf_l
+# <a name="fscanf-_fscanf_l-fwscanf-_fwscanf_l"></a>fscanf, _fscanf_l, fwscanf, _fwscanf_l
 
 스트림에서 형식 지정된 데이터를 읽습니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md)을 참조하세요.
 
@@ -94,17 +97,17 @@ int _fwscanf_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 오류가 발생 하는 경우 반환 값은 첫 번째 변환 전에 파일 스트림의 끝에 도달 하는 경우 **EOF** 에 대 한 **fscanf** 하 고 **fwscanf**합니다.
+이러한 각 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 오류가 발생 하거나 첫 번째 변환 전에 파일 스트림의 끝에 도달 하는 경우 반환 값은 **fscanf** 및 **fwscanf**에 대 한 **EOF** 입니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 하는 경우 *스트림을* 또는 *형식* 가 null 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **EOF** 설정 **errno** 하 **EINVAL**합니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Stream* 또는 *format* 이 Null 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EOF** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **fscanf** 함수의 현재 위치에서 데이터를 읽고 *스트림* 하 여 지정 된 위치로 *인수* (있는 경우). 각 *인수* 의 형식 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다 *형식*합니다. *형식* 필드 입력의 해석을 제어 한 다음 동일한 폼 및 함수를 *형식* 에 대 한 인수 **scanf**; 참조 [scanf](scanf-scanf-l-wscanf-wscanf-l.md) 에 대 한는 에 대 한 설명을 *형식*합니다.
+**Fscanf** 함수는 *스트림의* 현재 위치에서 *인수* (있는 경우)로 지정 된 위치로 데이터를 읽습니다. 각 *인수* 는 *형식의 형식*지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. *format* 은 입력 필드의 해석을 제어 하 고 **scanf**에 대 한 *format* 인수와 동일한 양식 및 기능을 포함 합니다. *형식*에 대 한 설명은 [scanf](scanf-scanf-l-wscanf-wscanf-l.md) 를 참조 하세요.
 
-**fwscanf** 의 와이드 문자 버전이 **fscanf**; 형식 인수 **fwscanf** 는 와이드 문자 문자열입니다. 스트림이 ANSI 모드에서 열리는 경우 이러한 함수는 동일하게 작동합니다. **fscanf** 현재 UNICODE 스트림에서의 입력을 지원 하지 않습니다.
+**fwscanf** 는 **fscanf**의 와이드 문자 버전입니다. **fwscanf** 에 대 한 format 인수는 와이드 문자열입니다. 스트림이 ANSI 모드에서 열리는 경우 이러한 함수는 동일하게 작동합니다. **fscanf** 는 현재 유니코드 스트림의 입력을 지원 하지 않습니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 경우를 제외 하 고는 동일 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -113,7 +116,7 @@ int _fwscanf_l(
 |**_ftscanf**|**fscanf**|**fscanf**|**fwscanf**|
 |**_ftscanf_l**|**_fscanf_l**|**_fscanf_l**|**_fwscanf_l**|
 
-자세한 내용은 [형식 사양 필드-scanf 함수 및 wscanf 함수](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md)합니다.
+자세한 내용은 [형식 사양 필드-scanf 함수 및 Wscanf 함수](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md)를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 

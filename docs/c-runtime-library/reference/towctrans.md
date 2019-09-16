@@ -1,9 +1,9 @@
 ---
 title: towctrans
 ms.date: 11/04/2016
-apiname:
+api_name:
 - towctrans
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,18 +15,21 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - towctrans
 helpviewer_keywords:
 - towctrans function
 ms.assetid: 1ed1e70d-7b31-490f-a7d9-42564b5924ca
-ms.openlocfilehash: b814c65d2f5d0bb18b19d97a539d79dd6df8a1c6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d63fc343647cd0f949f282e2a64d4a0636e62bd7
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62269165"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957434"
 ---
 # <a name="towctrans"></a>towctrans
 
@@ -51,11 +54,11 @@ wint_t towctrans(
 
 ## <a name="return-value"></a>반환 값
 
-문자 *c*뒤 **towctrans** 변환 규칙에서 사용 되는 *범주*합니다.
+**Towctrans** 뒤의 문자 *c*는 *범주*에서 변환 규칙을 사용 했습니다.
 
 ## <a name="remarks"></a>설명
 
-변수의 *범주* 호출에 의해 이전 성공적으로 반환 합니다 [wctrans](wctrans.md)합니다.
+[Wctrans](wctrans.md)에 대 한 이전 성공적인 호출에서 *category* 값을 반환 해야 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -67,7 +70,7 @@ wint_t towctrans(
 
 ## <a name="example"></a>예제
 
-참조 **wctrans** 사용 하는 샘플에 대 한 **towctrans**합니다.
+**Towctrans**를 사용 하는 샘플은 **wctrans** 를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

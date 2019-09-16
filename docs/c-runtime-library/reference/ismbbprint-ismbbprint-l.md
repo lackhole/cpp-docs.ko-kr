@@ -1,10 +1,10 @@
 ---
 title: _ismbbprint, _ismbbprint_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbprint_l
 - _ismbbprint
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ismbbprint_l
 - _ismbbprint
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - _ismbbprint function
 - _ismbbprint_l function
 ms.assetid: d08a061c-18a8-48f2-a75d-bff4870aec9d
-ms.openlocfilehash: 2fc697dd3ee4fee487beedf5e6e3deb706cc5f75
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c40ddc931faa5f1dcff914d7c615207ed57d11cf
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286671"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954052"
 ---
-# <a name="ismbbprint-ismbbprintl"></a>_ismbbprint, _ismbbprint_l
+# <a name="_ismbbprint-_ismbbprint_l"></a>_ismbbprint, _ismbbprint_l
 
 지정된 멀티바이트 문자가 인쇄 문자인지 여부를 확인합니다.
 
@@ -61,11 +64,11 @@ int _ismbbprint_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbprint** 경우 0이 아닌 값을 반환 식:
+**_ismbbprint** 는 식이 다음과 같이 0이 아닌 값을 반환 합니다.
 
 `isprint(c) || _ismbbkprint(c)`
 
-이 대 한 아닌 *c*, 있지 않으면 0입니다. **_ismbbprint** 모든 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbbprint_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+*c*의 경우 0이 아니고, 그렇지 않으면 0입니다. **_ismbbprint** 는 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_ismbbprint_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

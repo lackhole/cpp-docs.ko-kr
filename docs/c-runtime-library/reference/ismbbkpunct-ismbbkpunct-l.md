@@ -1,10 +1,10 @@
 ---
 title: _ismbbkpunct, _ismbbkpunct_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbkpunct_l
 - _ismbbkpunct
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ismbbkpunct_l
 - _ismbbkpunct_l
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - ismbbkpunct function
 - _ismbbkpunct function
 ms.assetid: a04c59cd-5ca7-4296-bec0-2b0d7f04edd0
-ms.openlocfilehash: 24a82bdf0dde2beb0978226208c151689e06ed72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35f09013fbbe522a1eb747f2d2131a5fbb23f765
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287032"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954083"
 ---
-# <a name="ismbbkpunct-ismbbkpunctl"></a>_ismbbkpunct, _ismbbkpunct_l
+# <a name="_ismbbkpunct-_ismbbkpunct_l"></a>_ismbbkpunct, _ismbbkpunct_l
 
 멀티바이트 문자가 문장 부호인지를 확인합니다.
 
@@ -61,7 +64,7 @@ int _ismbbkpunct_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbkpunct** 이면 0이 아닌 값을 반환 정수 *c* 되지 경우 ASCII가 아닌 문장 부호인 0입니다. 예를 들어 **_ismbbkpunct**는 932 코드 페이지에서만 가타카나 문장 부호를 테스트합니다. **_ismbbkpunct** 모든 로캘 종속 문자 설정에 대 한 현재 로캘을 사용 합니다. **_ismbbkpunct_l** 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_ismbbkpunct** 는 정수 *c* 가 ASCII가 아닌 문장 부호 기호 이면 0이 아닌 값을 반환 하 고 그렇지 않으면 0을 반환 합니다. 예를 들어 **_ismbbkpunct**는 932 코드 페이지에서만 가타카나 문장 부호를 테스트합니다. **_ismbbkpunct** 는 로캘 종속 문자 설정에 대해 현재 로캘을 사용 합니다. **_ismbbkpunct_l** 은 전달 된 로캘을 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

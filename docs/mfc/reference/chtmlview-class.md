@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: 2d00a7216778f4a9a40b9d503bce7d26982669e0
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 9643379136398de7ce4d98aaa9ab5f22fa488c0e
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69506061"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927931"
 ---
 # <a name="chtmlview-class"></a>CHtmlView 클래스
 
@@ -1194,7 +1194,7 @@ URL, UNC 파일 이름 또는로 탐색 된 PIDL (항목 식별자 목록에 대
 
 모든 프레임에서이 이벤트를 발생 시키는 것은 아니지만 [ondownloadbegin](#ondownloadbegin) 이벤트를 발생 시키는 각 프레임은 `OnDocumentComplete` 해당 이벤트를 발생 시킵니다.
 
-이 URL은 정규화 되 고 정규화 된 URL 이기 때문에 *lpszURL* 로 표시 되는 url은 브라우저가 탐색 하도록 지시한 url과 다를 수 있습니다. 예를 들어 응용 프로그램에서 [Navigate](#navigate) 또는 [Navigate2](#navigate2)호출에 "www.microsoft.com" 라는 url을 지정 하는 경우에서 전달 하 `OnNavigateComplete2` 는 url은 "<http://www.microsoft.com/>"가 됩니다. 또한 서버에서 브라우저를 다른 URL로 리디렉션한 경우 리디렉션된 URL이 여기에 반영 됩니다.
+이 URL은 정규화 되 고 정규화 된 URL 이기 때문에 *lpszURL* 로 표시 되는 url은 브라우저가 탐색 하도록 지시한 url과 다를 수 있습니다. 예를 들어 응용 프로그램에서 [Navigate](#navigate) 또는 [Navigate2](#navigate2)호출 `"www.microsoft.com"` 에 url을 지정 하는 경우에서 전달 하는 url `OnNavigateComplete2` `"<https://www.microsoft.com/>"`은가 됩니다. 또한 서버에서 브라우저를 다른 URL로 리디렉션한 경우 리디렉션된 URL이 여기에 반영 됩니다.
 
 ##  <a name="ondocwindowactivate"></a>  CHtmlView::OnDocWindowActivate
 
@@ -1458,7 +1458,7 @@ URL, UNC 파일 이름 또는 PIDL (항목 식별자 목록에 대 한 포인터
 
 Url 매개 변수는 URL 표시가 없는 셸 이름 공간 엔터티의 경우 PIDL 일 수 있습니다.
 
-*StrURL* 에 포함 된 url은 브라우저가 탐색 하도록 지시한 url과 다를 수 있습니다 .이 url은 정규화 된 url 이며 정규화 된 url입니다. 예를 들어 응용 프로그램에서 [Navigate](#navigate) 또는 [Navigate2](#navigate2)호출에 "www.microsoft.com" 라는 url을 지정 하는 경우에서 전달 하 `OnNavigateComplete2` 는 url은 "<http://www.microsoft.com/>"가 됩니다. 또한 서버에서 브라우저를 다른 URL로 리디렉션한 경우 리디렉션된 URL이 여기에 반영 됩니다.
+*StrURL* 에 포함 된 url은 브라우저가 탐색 하도록 지시한 url과 다를 수 있습니다 .이 url은 정규화 된 url 이며 정규화 된 url입니다. 예를 들어 응용 프로그램에서 [Navigate](#navigate) 또는 [Navigate2](#navigate2)호출 `"www.microsoft.com"` 에 url을 지정 하는 경우에서 전달 하는 url `OnNavigateComplete2` `"<https://www.microsoft.com/>"`은가 됩니다. 또한 서버에서 브라우저를 다른 URL로 리디렉션한 경우 리디렉션된 URL이 여기에 반영 됩니다.
 
 ##  <a name="onnavigateerror"></a>  CHtmlView::OnNavigateError
 

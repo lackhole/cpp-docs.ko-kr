@@ -1,7 +1,7 @@
 ---
 title: offsetof 매크로
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,19 +12,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - offsetof
 helpviewer_keywords:
 - structure members, offset
 - offsetof macro
 ms.assetid: f3b4eb16-a882-4d38-afc9-eebd976a7352
-ms.openlocfilehash: a0f367dbe6fa2681a7d413304f32b5699b8f7cee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 278fca89046fcfc98e8c3ff726918cb4319e4ab0
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156072"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951258"
 ---
 # <a name="offsetof-macro"></a>offsetof 매크로
 
@@ -49,14 +52,14 @@ size_t offsetof(
 
 ## <a name="return-value"></a>반환 값
 
-**offsetof** 부모 데이터 구조의 시작 부분에서 지정된 된 멤버의 바이트에서 오프셋을 반환 합니다. 이는 비트 필드의 경우 정의되지 않습니다.
+**offsetof** 는 부모 데이터 구조의 시작 부분에서 지정 된 멤버의 오프셋 (바이트)을 반환 합니다. 이는 비트 필드의 경우 정의되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **offsetof** 매크로의 바이트 오프셋을 반환 합니다 *memberName* 하 여 지정 된 구조의 시작 부분 으로부터의 *structName* 형식의 값으로 **size_ t**합니다. 사용 하 여 형식을 지정할 수 있습니다 합니다 **구조체** 키워드입니다.
+**Offsetof** 매크로는 *structName* 에 지정 된 구조체의 시작 부분에서 **size_t**형식의 값으로 *memberName* 의 오프셋 (바이트)을 반환 합니다. **Struct** 키워드를 사용 하 여 형식을 지정할 수 있습니다.
 
 > [!NOTE]
-> **offsetof** 함수가 아니며 C 프로토타입을 사용 하 여 설명할 수 없습니다.
+> **offsetof** 는 함수가 아니므로 C 프로토타입을 사용 하 여 설명할 수 없습니다.
 
 ## <a name="requirements"></a>요구 사항
 

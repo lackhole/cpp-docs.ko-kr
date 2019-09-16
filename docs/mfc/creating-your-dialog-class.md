@@ -1,6 +1,6 @@
 ---
 title: 대화 상자 클래스 만들기
-ms.date: 11/04/2016
+ms.date: 09/06/2019
 helpviewer_keywords:
 - dialog boxes [MFC], creating
 - MFC dialog boxes [MFC], creating
@@ -8,30 +8,30 @@ helpviewer_keywords:
 - dialog classes [MFC], Add Class Wizard
 - dialog classes [MFC], creating
 ms.assetid: d5321741-da41-47a8-bb1c-6a0e8b28c4c1
-ms.openlocfilehash: bacedc49fcdabdd5dc7fb0f392a66afd3baadd06
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 424d18196063456245e2a4841b42e6e447bded17
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62241766"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907321"
 ---
 # <a name="creating-your-dialog-class"></a>대화 상자 클래스 만들기
 
-프로그램에서 각 대화 상자, 대화 상자 리소스를 사용 하는 새 대화 상자 클래스를 만듭니다.
+프로그램의 각 대화 상자에 대해 대화 상자 리소스를 사용 하는 새 대화 상자 클래스를 만듭니다.
 
-[클래스 추가](../ide/adding-a-class-visual-cpp.md) 새 대화 상자 클래스를 만드는 방법에 설명 합니다. 클래스 추가 마법사를 사용 하 여 대화 상자 클래스를 만들 때 다음 항목 기록 합니다. H 및 합니다. 가 지정 하는 CPP 파일:
+[클래스를 추가](../ide/adding-a-class-visual-cpp.md) 하면 새 대화 상자 클래스를 만드는 방법을 설명 합니다. [클래스 마법사](reference/mfc-class-wizard.md)를 사용 하 여 대화 상자 클래스를 만들면 사용자가 지정 하는 .h 및 .cpp 파일에 다음 항목이 작성 됩니다.
 
-안에. H 파일:
+.H 파일에서 다음을 수행 합니다.
 
-- 대화 상자 클래스에 대 한 클래스 선언입니다. 클래스에서 파생 됩니다 [CDialog](../mfc/reference/cdialog-class.md)합니다.
+- 대화 상자 클래스에 대 한 클래스 선언입니다. 클래스는 [CDialog](../mfc/reference/cdialog-class.md)에서 파생 됩니다.
 
-안에. CPP 파일:
+.Cpp 파일에서 다음을 수행 합니다.
 
 - 클래스에 대 한 메시지 맵입니다.
 
 - 대화 상자에 대 한 표준 생성자입니다.
 
-- 재정의 된 [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) 멤버 함수입니다. 이 함수를 편집 합니다. 나중에 설명 된 대로 대화 상자 데이터 교환 및 유효성 검사 기능에 사용 됩니다 [대화 상자 데이터 교환 및 유효성 검사](../mfc/dialog-data-exchange-and-validation.md)합니다.
+- [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) 멤버 함수의 재정의입니다. 이 함수를 편집 합니다. 대화 [상자 데이터 교환 및 유효성 검사](../mfc/dialog-data-exchange-and-validation.md)의 뒷부분에 설명 된 대로 대화 상자 데이터 교환 및 유효성 검사 기능에 사용 됩니다.
 
 ## <a name="see-also"></a>참고자료
 

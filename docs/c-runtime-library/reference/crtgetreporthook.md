@@ -1,9 +1,9 @@
 ---
 title: _CrtGetReportHook
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtGetReportHook
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtGetReportHook
 - _CrtGetReportHook
@@ -22,14 +25,14 @@ helpviewer_keywords:
 - CrtGetReportHook function
 - _CrtGetReportHook function
 ms.assetid: 922758ed-7edd-4359-9c92-0535192dc11a
-ms.openlocfilehash: 0b8b666093807c95312d4328ca9b3043ad1e09df
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bc005dda435b5e11d6c3c886de180ed85b9c2a04
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339418"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942398"
 ---
-# <a name="crtgetreporthook"></a>_CrtGetReportHook
+# <a name="_crtgetreporthook"></a>_CrtGetReportHook
 
 디버그 보고 프로세스에서 C 런타임에 클라이언트 정의 보고 함수를 연결하기 위해 해당 함수를 검색합니다(디버그 버전에만 해당).
 
@@ -45,7 +48,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
 
 ## <a name="remarks"></a>설명
 
-**_CrtGetReportHook** 응용 프로그램이 C 런타임 디버그 라이브러리 보고 프로세스에 대 한 현재 보고 함수를 검색할 수 있습니다.
+**_CrtGetReportHook** 를 사용 하면 응용 프로그램이 C 런타임 디버그 라이브러리 보고 프로세스에 대 한 현재 보고 함수를 검색할 수 있습니다.
 
 다른 후크 가능 런타임 함수를 사용하고 고유한 클라이언트 정의 후크 함수를 작성하는 방법에 대한 자세한 내용은 [디버그 후크 함수 작성](/visualstudio/debugger/debug-hook-function-writing)을 참조하세요.
 
@@ -63,7 +66,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
 
 ## <a name="example"></a>예제
 
-샘플을 사용 하는 방법에 대 한 **_CrtSetReportHook**를 참조 하십시오 [보고서](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report)합니다.
+**_CrtSetReportHook**를 사용 하는 방법에 대 한 예제는 [보고서](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report)를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

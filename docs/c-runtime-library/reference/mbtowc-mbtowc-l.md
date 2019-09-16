@@ -1,10 +1,10 @@
 ---
 title: mbtowc, _mbtowc_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - mbtowc
 - _mbtowc_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - api-ms-win-crt-convert-l1-1-0.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - mbtowc
 helpviewer_keywords:
@@ -26,12 +29,12 @@ helpviewer_keywords:
 - _mbtowc_l function
 - mbtowc_l function
 ms.assetid: dfd1c8a7-e73a-4307-9353-53b70b45d4d1
-ms.openlocfilehash: 13ac8ad139cc12310663fbd23a21a461cd207236
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 655f5288738d2f2329b50a27381c00cb06e35e6d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499725"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952003"
 ---
 # <a name="mbtowc-_mbtowc_l"></a>mbtowc, _mbtowc_l
 
@@ -73,7 +76,7 @@ int _mbtowc_l(
 
 ## <a name="remarks"></a>설명
 
-**Mbtowc** 함수는 Mbchar가 **NULL**이 아닌 경우 *mbchar*가 가리키는 바이트 *수* 를 해당 하는 와이드 문자로 변환 합니다. **mbtowc** 은 Wchar가 **NULL**이 아닌 경우 결과 와이드 문자를 *wchar* 에 저장 합니다. **mbtowc** 는 **MB_CUR_MAX** 바이트를 초과 하 여 검사 하지 않습니다. **mbtowc** 는 로캘 종속 동작에 현재 로캘을 사용 합니다. **_mbtowc_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**Mbtowc** 함수는 Mbchar가 **NULL**이 *아닌 경우* *mbchar*가 가리키는 바이트 *수* 를 해당 하는 와이드 문자로 변환 합니다. **mbtowc** 은 Wchar가 **NULL**이 *아닌 경우 결과* 와이드 문자를 *wchar* 에 저장 합니다. **mbtowc** 는 **MB_CUR_MAX** 바이트를 초과 하 여 검사 하지 않습니다. **mbtowc** 는 로캘 종속 동작에 현재 로캘을 사용 합니다. **_mbtowc_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,10 +1,10 @@
 ---
 title: _chdir, _wchdir
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wchdir
 - _chdir
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - tchdir
 - _chdir
@@ -32,14 +35,14 @@ helpviewer_keywords:
 - chdir function
 - directories [C++], changing
 ms.assetid: 85e9393b-62ac-45d5-ab2a-fa2217f6152e
-ms.openlocfilehash: e4cf7a44864df0b5ecca531aab3db4546c25bb2c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b54e0978626779be21900e543a546bfae05efe2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347667"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939368"
 ---
-# <a name="chdir-wchdir"></a>_chdir, _wchdir
+# <a name="_chdir-_wchdir"></a>_chdir, _wchdir
 
 현재 작업 디렉터리를 변경합니다.
 
@@ -61,19 +64,19 @@ int _wchdir(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 함수는 성공할 경우 0 값을 반환합니다. 반환 값이-1은 실패를 나타냅니다. 지정 된 경로 찾을 수 없습니다, 하는 경우 **errno** 로 설정 된 **ENOENT**합니다. 하는 경우 *dirname* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수-1을 반환 합니다.
+이러한 함수는 성공할 경우 0 값을 반환합니다. 반환 값-1은 실패를 나타냅니다. 지정 된 경로를 찾을 수 없는 경우 **errno** 가 **enoent (** 로 설정 됩니다. *이름 이름이* **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는-1을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_chdir** 함수는 현재 작업 디렉터리에서 지정 된 디렉터리 변경 *dirname*합니다. 합니다 *dirname* 매개 변수가 기존 디렉터리를 참조 해야 합니다. 이 함수는 모든 드라이브에서 현재 작업 디렉터리를 변경할 수 있습니다. 새 드라이브 문자에 지정 된 경우 *dirname*, 기본 드라이브 문자 변경 됩니다. 예를 들어 A가 기본 드라이브 문자이고 \BIN이 현재 작업 디렉터리이면 다음 호출에서 C 드라이브에 대한 현재 작업 디렉터리를 변경하고 C를 새 기본 드라이브로 설정합니다.
+**_Chdir** 함수는 현재 작업 디렉터리를 변경 되지 않은 *이름*으로 지정 된 디렉터리로 변경 합니다. *Diname* 매개 변수는 기존 디렉터리를 참조 해야 합니다. 이 함수는 모든 드라이브에서 현재 작업 디렉터리를 변경할 수 있습니다. 새 드라이브 문자를 *이름*에 지정 된 경우에는 기본 드라이브 문자도 변경 됩니다. 예를 들어 A가 기본 드라이브 문자이고 \BIN이 현재 작업 디렉터리이면 다음 호출에서 C 드라이브에 대한 현재 작업 디렉터리를 변경하고 C를 새 기본 드라이브로 설정합니다.
 
 ```C
 _chdir("c:\temp");
 ```
 
-선택적 백슬래시 문자를 사용 하는 경우 (**&#92;**) 경로 두 개의 백슬래시를 배치 해야 합니다 (**&#92;&#92;**)를 나타내는 단일 백슬래시는 리터럴 C 문자열에서 ( **&#92;**).
+경로에 선택적 백슬래시 문자 ( **&#92;** )를 사용 하는 경우 단일 백슬래시 ( **&#92;** **&#92;** )를 나타내려면 C 문자열 리터럴에 백슬래시 두 개 ()를 넣어야 합니다.
 
-**_wchdir** 의 와이드 문자 버전이 **_chdir**; *dirname* 인수 **_wchdir** 는 와이드 문자 문자열입니다. **_wchdir** 하 고 **_chdir** 동일 하 게 작동 합니다.
+**_wchdir** 은 **_chdir**의 와이드 문자 버전입니다. **_wchdir** 에 대 한 *diname* 인수는 와이드 문자열입니다. **_wchdir** 및 **_chdir** 은 동일 하 게 작동 하지 않습니다.
 
 ### <a name="generic-text-routine-mapping"></a>제네릭 텍스트 루틴 매핑:
 

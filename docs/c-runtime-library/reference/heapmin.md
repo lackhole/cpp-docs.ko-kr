@@ -1,9 +1,9 @@
 ---
 title: _heapmin
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _heapmin
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _heapmin
 - heapmin
@@ -27,14 +30,14 @@ helpviewer_keywords:
 - _heapmin function
 - heapmin function
 ms.assetid: c0bccdf6-2d14-4d7b-a7ff-d6a17bdb410f
-ms.openlocfilehash: 130986894d1e2a68415e6ab9218641eff484ffd1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c36a1028e42d59217586cc50adcb612e78072b03
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157226"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954799"
 ---
-# <a name="heapmin"></a>_heapmin
+# <a name="_heapmin"></a>_heapmin
 
 사용되지 않은 힙 메모리를 운영 체제로 해제합니다.
 
@@ -46,13 +49,13 @@ int _heapmin( void );
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 **_heapmin** 0을 반환 함수가-1을 반환 하는 고, 그렇지 설정 **errno** 에 **ENOSYS**합니다.
+성공 하면 **_heapmin** 는 0을 반환 합니다. 그렇지 않은 경우 함수는-1을 반환 하 고 **errno** 를 **ENOSYS**로 설정 합니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하십시오.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_heapmin** 함수는 운영 체제에 사용 되지 않는 힙 메모리를 해제 하 여 힙을 최소화 합니다. 운영 체제를 지원 하지 않는 경우 **_heapmin**함수 (예: Windows 98)-1을 반환 하 고 설정 **errno** 에 **ENOSYS**합니다.
+**_Heapmin** 함수는 사용 되지 않는 힙 메모리를 운영 체제로 해제 하 여 힙을 최소화 합니다. 운영 체제에서 **_heapmin**(예: Windows 98)를 지원 하지 않는 경우 함수는-1을 반환 하 고 **errno** 를 **ENOSYS**로 설정 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

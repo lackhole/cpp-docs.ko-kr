@@ -1,9 +1,9 @@
 ---
 title: _set_SSE2_enable
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _set_SSE2_enable
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _set_SSE2_enable
 - set_SSE2_enable
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - Streaming SIMD Extensions 2 instructions
 - set_SSE2_enable function
 ms.assetid: 55db895d-fc1e-475a-9110-b781a9bb51c5
-ms.openlocfilehash: c340423e93b6487a4a951e4b96055cba6e474269
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8838282db851c6811a3f24c75a03b31c5870e6d3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356539"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948373"
 ---
-# <a name="setsse2enable"></a>_set_SSE2_enable
+# <a name="_set_sse2_enable"></a>_set_SSE2_enable
 
-CRT 수학 루틴에서 sse2(스트리밍 SIMD 확장 2 () 명령 사용을 사용할지 설정 합니다. SSE2가 기본적으로 사용하도록 설정되어 있으므로 x64 아키텍처에서 이 함수를 사용할 수 없습니다.
+CRT 수학 루틴에서 SSE2 (스트리밍 SIMD 확장 2) 명령을 사용 하거나 사용 하지 않도록 설정 합니다. SSE2가 기본적으로 사용하도록 설정되어 있으므로 x64 아키텍처에서 이 함수를 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -54,7 +57,7 @@ SSE2 구현을 사용할 수 있는 경우 0이 아닌 값이고, SSE2 구현을
 
 ## <a name="remarks"></a>설명
 
-다음 함수는 사용 하 여 사용할 수 있는 SSE2 구현을 **_set_SSE2_enable**:
+다음 함수는 **_set_SSE2_enable**를 사용 하 여 사용 하도록 설정할 수 있는 SSE2 구현을 포함 합니다.
 
 - [atan](atan-atanf-atanl-atan2-atan2f-atan2l.md)
 
@@ -75,7 +78,7 @@ SSE2 구현을 사용할 수 있는 경우 0이 아닌 값이고, SSE2 구현을
 SSE2 중간 값은 64비트 부동 소수점 수량이지만 기본 구현 중간 값은 80비트 부동 소수점 수량이기 때문에 이러한 함수의 SSE2 구현은 기본 구현과는 약간 다른 결과를 낼 수 있습니다.
 
 > [!NOTE]
-> 사용 하는 경우는 [/Oi (내장 함수 생성)](../../build/reference/oi-generate-intrinsic-functions.md) 컴파일러 옵션을 사용 하는 프로젝트를 컴파일하는 것이 나타날 **_set_SSE2_enable** 영향을 주지 않습니다. 합니다 **/Oi** 컴파일러 옵션을 컴파일러 내장 함수를 사용 하 여 CRT 호출을 대체 하는 권한을 사용 하면,이 동작의 효과 재정의 **_set_SSE2_enable**합니다. 보장 하려는 경우 **/Oi** 재정의 하지 않습니다 **_set_SSE2_enable**를 사용 하 여 **/Oi-** 프로젝트를 컴파일하십시오. 내재 된 다른 컴파일러 스위치를 사용 하는 경우 좋습니다 수도 이렇게 **/Oi**합니다.
+> [/Oi (내장 함수 생성)](../../build/reference/oi-generate-intrinsic-functions.md) 컴파일러 옵션을 사용 하 여 프로젝트를 컴파일하면 **_set_SSE2_enable** 가 영향을 주지 않는 것 처럼 보일 수 있습니다. **/Oi** 컴파일러 옵션은 CRT 호출을 대체 하기 위해 내장 함수를 사용 하는 권한을 컴파일러에 제공 합니다. 이 동작은 **_set_SSE2_enable**의 효과를 재정의 합니다. **/Oi** 가 **_set_SSE2_enable**를 재정의 하지 않도록 하려면 **/Oi-** 를 사용 하 여 프로젝트를 컴파일합니다. 이는 **/oi**를 암시 하는 다른 컴파일러 스위치를 사용 하는 경우에도 좋은 방법입니다.
 
 SSE2 구현은 모든 예외가 마스크된 경우에만 사용됩니다. 예외를 마스크하려면 [_control87, _controlfp](control87-controlfp-control87-2.md)를 사용하세요.
 

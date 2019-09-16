@@ -1,7 +1,7 @@
 ---
 title: _itata, _itoa 함수
 ms.date: 08/19/2019
-apiname:
+api_name:
 - itoa
 - _itoa
 - ltoa
@@ -15,7 +15,7 @@ apiname:
 - _ultow
 - _i64tow
 - _ui64tow
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -28,7 +28,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _itoa
 - _ltoa
@@ -99,12 +102,12 @@ helpviewer_keywords:
 - converting numbers, to strings
 - _itoa function
 ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
-ms.openlocfilehash: afe7a190fe6630e3fbcb42d0d782e050952f56fc
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 97085ab8a8c720d278374868f9b1c90a91a6da3b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630403"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953564"
 ---
 # <a name="itoa-_itoa-ltoa-_ltoa-ultoa-_ultoa-_i64toa-_ui64toa-_itow-_ltow-_ultow-_i64tow-_ui64tow"></a>itoa, _itoa, ltoa, _ltoa, ultoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
 
@@ -183,14 +186,14 @@ wchar_t * _ui64tow( unsigned long long value, wchar_t (&buffer)[size],
 
 ## <a name="remarks"></a>설명
 
-**_Itata**, **_itoa**, **_itoa**, **_i64toa**및 **_ui64toa** 함수는 지정 된 *값* 인수의 숫자를 null로 끝나는 문자열로 변환 하 고 결과를 저장 합니다 (_itoa의 경우 최대 33 자 **).** (_i64toa 및_ltoa toa의 경우) 및 *버퍼*에 있는 **_i64toa** 및 **_ltoa toa**의 65. *기* 수가 10이 고 *값* 이 음수인 경우 저장 된 문자열의 첫 번째 문자는 빼기 기호 ( **-** )입니다. **_Itow**, **_ltow**, **_ultow**, **_i64tow**및 **_ui64tow** 함수는 각각 **_itat,** **_itow**, **_itow**, **_i64toa**및 **_ui64toa**의 와이드 문자 버전입니다.
+**_Itata**, **_itoa**, **_itoa**, **_i64toa**및 **_ui64toa** 함수는 지정 된 *값* 인수의 숫자를 null로 끝나는 문자열로 변환 하 고 결과를 저장 합니다 (_itoa의 경우 최대 33 자 **).** (_i64toa 및_ltoa toa **의 경우)** 및 *버퍼*에 있는 **_i64toa** 및 **_ltoa toa**의 65. *기* 수가 10이 고 *값* 이 음수인 경우 저장 된 문자열의 첫 번째 문자는 빼기 기호 ( **-** )입니다. **_Itow**, **_ltow**, **_ultow**, **_i64tow**및 **_ui64tow** 함수는 각각 **_itat,** **_itow**, **_itow**, **_i64toa**및 **_ui64toa**의 와이드 문자 버전입니다.
 
 > [!IMPORTANT]
 > 이러한 함수는 너무 작은 버퍼의 끝을 지나서 쓸 수 있습니다. 버퍼 오버런을 방지 하려면 *버퍼가* 변환 된 숫자와 후행 null 문자 및 부호 문자를 포함할 만큼 충분히 큰지 확인 합니다. 이러한 함수를 잘못 사용할 경우 코드에서 심각한 보안 문제가 발생할 수 있습니다.
 
 보안 문제가 발생할 수 있기 때문에 기본적으로 이러한 함수는 사용 중단 경고를 [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)합니다. **이 함수 또는 변수는 안전 하지 않을 수 있습니다. 대신** safe_function**를 사용 하십시오. 사용 중단을 해제 하려면 _CRT_SECURE_NO_WARNINGS를 사용 합니다.** 경고 메시지에 제안 된 *safe_function* 를 사용 하도록 소스 코드를 변경 하는 것이 좋습니다. 더 안전한 함수는 지정 된 버퍼 크기 보다 더 많은 문자를 쓰지 않습니다. 자세한 내용은 [_itoa_s, _itow_s 함수](itoa-s-itow-s.md)를 참조 하세요.
 
-사용 중단 경고 없이 이러한 함수를 사용 하려면 CRT 헤더를 포함 하기 전에 **_CRT_SECURE_NO_WARNINGS** 전처리기 매크로를 정의 합니다. **/D_CRT_SECURE_NO_WARNINGS** 컴파일러 옵션을 **cl** 명령에 추가 하 여 개발자 명령 프롬프트의 명령줄에서이 작업을 수행할 수 있습니다. 그렇지 않으면 소스 파일에서 매크로를 정의 합니다. 미리 컴파일된 헤더를 사용 하는 경우 미리 컴파일된 헤더의 맨 위에 매크로를 정의 합니다 ( Visual Studio 2017 및 이전 버전의*stdafx.h* ). 소스 코드에서 매크로를 정의 하려면 다음 예제와 같이 CRT 헤더를 포함 하기 전에 **#define** 지시문을 사용 합니다.
+사용 중단 경고 없이 이러한 함수를 사용 하려면 CRT 헤더를 포함 하기 전에 **_CRT_SECURE_NO_WARNINGS** 전처리기 매크로를 정의 합니다. **/D_CRT_SECURE_NO_WARNINGS** 컴파일러 옵션을 **cl** 명령에 추가 하 여 개발자 명령 프롬프트의 명령줄에서이 작업을 수행할 수 있습니다. 그렇지 않으면 소스 파일에서 매크로를 정의 합니다. 미리 컴파일된 헤더를 사용 하는 경우 미리 컴파일된 헤더의 맨 위에 매크로를 정의 *합니다 (Visual* Studio 2017 및 이전 버전의*stdafx.h* ). 소스 코드에서 매크로를 정의 하려면 다음 예제와 같이 CRT 헤더를 포함 하기 전에 **#define** 지시문을 사용 합니다.
 
 ```C
 #define _CRT_SECURE_NO_WARNINGS 1

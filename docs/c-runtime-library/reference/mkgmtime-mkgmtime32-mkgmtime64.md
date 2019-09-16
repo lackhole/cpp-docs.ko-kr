@@ -1,11 +1,11 @@
 ---
 title: _mkgmtime, _mkgmtime32, _mkgmtime64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mkgmtime32
 - _mkgmtime64
 - _mkgmtime
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _mkgmtime64
 - mkgmtime32
@@ -36,16 +39,16 @@ helpviewer_keywords:
 - _mkgmtime32 function
 - time, converting
 ms.assetid: b4ca2b67-e198-4f43-b3e2-e8ad6bd01867
-ms.openlocfilehash: 65d96d79a45e05e4b371315c0612ed086f6ea2a0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fcd1e3fdcca37d7e5bb381c234a6d8555ce2766c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156501"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951663"
 ---
-# <a name="mkgmtime-mkgmtime32-mkgmtime64"></a>_mkgmtime, _mkgmtime32, _mkgmtime64
+# <a name="_mkgmtime-_mkgmtime32-_mkgmtime64"></a>_mkgmtime, _mkgmtime32, _mkgmtime64
 
-나타내는 UTC 시간으로 변환 합니다는 **구조체** **tm** 나타내는 UTC 시간을 **time_t** 형식입니다.
+**Struct** **TM** 이 나타내는 utc 시간을 **time_t** 형식이 나타내는 utc 시간으로 변환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -64,19 +67,19 @@ __time64_t _mkgmtime64(
 ### <a name="parameters"></a>매개 변수
 
 *timeptr*<br/>
-UTC 시간에 대 한 포인터를 **구조체** **tm** 변환 합니다.
+변환할 **struct** **tm** 의 UTC 시간에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-형식의 수량 **__time32_t** 하거나 **__time64_t** 1970 년 1 월 1, utc (협정 세계시)의 자정 이후 경과 된 시간 (초) 수를 나타내는입니다. 날짜 범위를 벗어난 경우 (설명 부분 참조) 또는 입력을 유효한 시간으로 해석할 수 없습니다, 반환 값은-1입니다.
+1970 년 1 월 1 일 자정 이후 경과 된 시간 (초)을 나타내는 **__time32_t** 또는 **__time32_t** 형식의 수량 (utc (협정 세계시))입니다. 날짜가 범위를 벗어난 경우 (설명 섹션 참조) 또는 입력을 유효한 시간으로 해석할 수 없는 경우 반환 값은-1입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_mkgmtime32** 하 고 **_mkgmtime64** 함수는 UTC 시간을 변환를 **__time32_t** 또는 **__time64_t** 시간을 나타내는 형식 UTC입니다. 사용 하 여 UTC 시간을 현지 시간으로 변환 하려면 **mktime**를 **_mktime32**, 및 **_mktime64** 대신 합니다.
+**_Mkgmtime32** 및 **_mkgmtime64** 함수는 utc 시간을 __ 시간을 나타내는 **__time32_t** 또는 **__time32_t** 형식으로 변환 합니다. 현지 시간을 UTC 시간으로 변환 하려면 **mktime**, **_mktime32**및 **_mktime64** 를 대신 사용 합니다.
 
-**_mkgmtime** 으로 계산 되는 인라인 함수 이며 **_mkgmtime64**, 및 **time_t** 동일 **__time64_t**합니다. 해석 하도록 컴파일러에 게 해야 하는 경우 **time_t** 이전 32 비트로 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**합니다. 응용 프로그램은 2038 년 1 월 18 일 후 실패할 수 있으므로 권장 되지 않습니다 (최대 32 비트 범위의 **time_t**), 64 비트 플랫폼에서 전혀 되어서는 안 됩니다.
+**_mkgmtime** 는 **_mkgmtime64**로 계산 되는 인라인 함수 이며 **time_t** 는 **__time64_t**와 동일 합니다. 컴파일러가 **time_t** 를 이전 32 비트 **time_t**해석 하도록 강제 해야 하는 경우 **_USE_32BIT_TIME_T**를 정의할 수 있습니다. 2038 년 1 월 18 일 (32 비트 **time_t**의 최대 범위) 후에 응용 프로그램이 실패할 수 있으므로이 방법은 권장 되지 않으며 64 비트 플랫폼에서 모두 허용 되지 않습니다.
 
-에 전달 하는 구조에 다음과 같이 변경, 동일한 방식으로 사용 하 여 변경 되는 **_mktime** 함수: 합니다 **tm_wday** 및 **tm_yday** 필드 새 설정 값을 기반으로 하는 값 **tm_mday** 하 고 **tm_year**합니다. 지정 하는 경우는 **tm** 구조 시간을 설정 합니다 **tm_isdst** 필드:
+전달 된 시간 구조는 **_mktime** 함수를 사용 하 여 변경 되는 것과 동일한 방식으로 다음과 같이 변경 됩니다. **tm_wday** 및 **tm_yday** 필드는 **tm_mday** 및 **tm_year**의 값을 기반으로 하는 새 값으로 설정 됩니다. **Tm** 구조 시간을 지정 하는 경우 **tm_isdst** 필드를 다음과 같이 설정 합니다.
 
 - 0은 표준 시간이 적용 중임을 나타냅니다.
 
@@ -84,11 +87,11 @@ UTC 시간에 대 한 포인터를 **구조체** **tm** 변환 합니다.
 
 - 0보다 작은 값은 C 런타임 라이브러리 코드가 표준 시간 또는 일광 절약 시간이 적용 중인지 여부를 컴퓨팅하도록 합니다.
 
-C 런타임 라이브러리는 TZ 환경 변수를 사용하여 올바른 일광 절약 시간을 결정합니다. TZ가 설정되어 있지 않으면 운영 체제를 쿼리하여 올바른 국가별 일광 절약 시간 동작을 가져옵니다. **tm_isdst** 필수 필드입니다. 설정 되지 않은 값 정의 되지 않습니다 및 반환 값 **mktime** 는 예측할 수 없습니다.
+C 런타임 라이브러리는 TZ 환경 변수를 사용하여 올바른 일광 절약 시간을 결정합니다. TZ가 설정되어 있지 않으면 운영 체제를 쿼리하여 올바른 국가별 일광 절약 시간 동작을 가져옵니다. **tm_isdst** 은 필수 필드입니다. 설정 하지 않으면 해당 값이 정의 되지 않고 **mktime** 의 반환 값을 예측할 수 없습니다.
 
-범위는 **_mkgmtime32** 함수는 1970 년 1 월 1 일 자정에서 23시 59분: 59 2038 년 1 월 18 일 UTC에 UTC입니다. 범위의 **_mkgmtime64** UTC부터 23시 59분: 59, 3000 년 12 월 31 1970 년 1 월 1 일 자정 UTC에서 됩니다. 범위 밖 날짜를 반환 값이-1에서 발생합니다. 범위의 **_mkgmtime** 여부에 따라 달라 집니다 **_USE_32BIT_TIME_T** 정의 됩니다. 범위는의 (기본값)을 정의 되지 않은 경우 **_mkgmtime64**이 고, 그렇지 않으면 범위는 32 비트 범위의 제한 **_mkgmtime32**합니다.
+**_Mkgmtime32** 함수의 범위는 utc에서 1 월 1970 1 일 자정부터 23:59:59 년 1 월 18 일 2038, utc 까지의 시간입니다. **_Mkgmtime64** 의 범위는 1970 년 1 월 1 일 자정부터 23:59:59 년 12 월 3000 31 일 (utc) 까지의 utc입니다. 범위를 벗어난 날짜의 반환 값은-1입니다. **_Mkgmtime** 의 범위는 **_USE_32BIT_TIME_T** 가 정의 되었는지 여부에 따라 달라 집니다. 정의 되지 않은 경우 (기본값) 범위는 **_mkgmtime64**입니다. 그렇지 않으면 범위가 **_mkgmtime32**의 32 비트 범위로 제한 됩니다.
 
-사실은 **gmtime** 및 **localtime** 변환에 대 한 정적으로 할당 된 단일 버퍼를 사용 합니다. 이 버퍼를 제공 하는 경우 **mkgmtime**, 이전 내용이 소멸 됩니다.
+**Gmtime** 및 **localtime** 는 변환에 대해 정적으로 할당 된 단일 버퍼를 사용 합니다. 이 버퍼를 **mkgmtime**에 제공 하면 이전 내용이 제거 됩니다.
 
 ## <a name="example"></a>예제
 

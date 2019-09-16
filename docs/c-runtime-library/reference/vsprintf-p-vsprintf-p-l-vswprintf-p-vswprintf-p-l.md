@@ -1,12 +1,12 @@
 ---
 title: _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _vsprintf_p
 - _vswprintf_p
 - _vsprintf_p_l
 - _vswprintf_p_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - vsprintf_p
 - _vswprintf_p
@@ -40,14 +43,14 @@ helpviewer_keywords:
 - _vsprintf_p function
 - _vstprintf_p_l function
 ms.assetid: 00821c0d-9fee-4d8a-836c-0669cfb11317
-ms.openlocfilehash: 15f368da84eb9cbf8c394a0e9b5eeec2611c3f7f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e684bebc0a997e25963366b64fbab6d4f958e8eb
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383440"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945229"
 ---
-# <a name="vsprintfp-vsprintfpl-vswprintfp-vswprintfpl"></a>_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
+# <a name="_vsprintf_p-_vsprintf_p_l-_vswprintf_p-_vswprintf_p_l"></a>_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
 
 인수가 사용되는 순서를 지정하는 기능과 함께 인수 목록에 대한 포인터를 사용하여 형식이 지정된 출력을 작성합니다.
 
@@ -88,7 +91,7 @@ int _vswprintf_p_l(
 출력을 위한 스토리지 위치입니다.
 
 *sizeInBytes*<br/>
-크기인 *버퍼* 문자에서입니다.
+*버퍼* 의 크기 (문자)입니다.
 
 *count*<br/>
 이 함수의 유니코드 버전에 저장할 최대 문자 수입니다.
@@ -104,17 +107,17 @@ int _vswprintf_p_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_vsprintf_p** 하 고 **_vswprintf_p** 출력 오류가 발생 하면 null 종결 문자 또는 음수 값을 포함 하지 않고 작성 된 문자 수를 반환 합니다.
+**_vsprintf_p** 및 **_vswintf_l** 는 null 종결 문자를 포함 하지 않고 작성 된 문자 수를 반환 하거나, 출력 오류가 발생 하는 경우 음수 값을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 각각 인수 목록에 대 한 포인터 형식을 하 고 가리키는 메모리에 지정된 된 데이터를 씁니다 *버퍼*합니다.
+이러한 각 함수는 인수 목록에 대 한 포인터를 가져온 다음 지정 된 데이터의 형식을 지정 하 고 *버퍼*에서 가리키는 메모리에 해당 데이터를 씁니다.
 
-이러한 함수에서 다른 합니다 **vsprintf_s** 하 고 **vswprintf_s** 위치 매개 변수 지원에 합니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
+이러한 함수는 위치 매개 변수를 지 원하는 경우에만 **vsprintf_s** 및 **vswprintf_s** 와 다릅니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 경우를 제외 하 고는 동일 합니다.
 
-경우는 *버퍼* 또는 *형식* 매개 변수는 **NULL** count가 0 인 포인터 이거나 형식 문자열 형식이 잘못을 포함 하는 경우 문자를 잘못 된 매개 변수 에 설명 된 대로 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 설정 **errno** 하 **EINVAL**합니다.
+*Buffer* 또는 *Format* 매개 변수가 **NULL** 포인터인 경우 count가 0 이거나 형식 문자열에 잘못 된 형식 지정 문자가 포함 된 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

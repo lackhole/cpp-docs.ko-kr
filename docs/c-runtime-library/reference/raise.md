@@ -1,9 +1,9 @@
 ---
 title: raise
-ms.date: 1/02/2018
-apiname:
+ms.date: 01/02/2018
+api_name:
 - raise
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - Raise
 helpviewer_keywords:
@@ -23,19 +26,19 @@ helpviewer_keywords:
 - raise function
 - signals
 - programs [C++], sending signals to executing programs
-ms.openlocfilehash: 68d1cc653b955e607648e4d30562d2b77e3520e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bed377bb46abac252381344f0b1cf4339815a16e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358062"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949666"
 ---
 # <a name="raise"></a>raise
 
 실행 중인 프로그램에 신호를 보냅니다.
 
 > [!NOTE]
-> 테스트 또는 디버깅 시나리오에서 Microsoft Store 앱을 제외 하 고 종료 하려면이 메서드를 사용 하지 마십시오. 스토어 앱을 닫으려면 프로그래밍 또는 UI 방식으로에 따라 허용 되지 않습니다 합니다 [Microsoft Store 정책](/legal/windows/agreements/store-policies)합니다. 자세한 내용은 [UWP 앱 수명 주기](/windows/uwp/launch-resume/app-lifecycle)합니다.
+> 테스트 또는 디버깅 시나리오를 제외 하 고는이 메서드를 사용 하 여 Microsoft Store 앱을 종료 하지 마세요. 프로그래밍 또는 UI 방식으로 스토어 앱을 닫는 것은 [Microsoft Store 정책](/legal/windows/agreements/store-policies)에 따라 허용 되지 않습니다. 자세한 내용은 [UWP 앱 수명 주기](/windows/uwp/launch-resume/app-lifecycle)를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -67,7 +70,7 @@ int raise(
 |**SIGSEGV**|잘못된 스토리지 액세스|호출 프로그램을 종료합니다.|
 |**SIGTERM**|프로그램에 종료 요청이 전송됨|신호를 무시합니다.|
 
-인수가 위에 지정되어 있는 유효한 신호가 아니면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 함수를 설정 하는 처리 되지 **errno** 하 **EINVAL** 0이 아닌 값을 반환 합니다.
+인수가 위에 지정되어 있는 유효한 신호가 아니면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 처리 되지 않은 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0이 아닌 값을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,10 +1,10 @@
 ---
 title: _ismbbkana, _ismbbkana_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbkana_l
 - _ismbbkana
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ismbbkana_l
 - ismbbkana_l
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - ismbbkana function
 - ismbbkana_l function
 ms.assetid: 64d4eb4a-205a-40ef-be35-ff9d77fabbaf
-ms.openlocfilehash: 723b914f5df92f20e4982bf6f7f04d1b251606f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0ac05940f6ae9d0c0bd3cb2f6ea73fe301557be4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287019"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954157"
 ---
-# <a name="ismbbkana-ismbbkanal"></a>_ismbbkana, _ismbbkana_l
+# <a name="_ismbbkana-_ismbbkana_l"></a>_ismbbkana, _ismbbkana_l
 
 가타카나 기호에 대한 테스트이며 코드 페이지 932만 해당됩니다.
 
@@ -61,7 +64,7 @@ int _ismbbkana_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbkana** 이면 0이 아닌 값을 반환 하는 정수 *c* 가 가타카나 기호인 0 없는 경우. **_ismbbkana** 로캘 종속 문자 정보에 대 한 현재 로캘을 사용 합니다. **_ismbbkana_l** 전달 된 로캘 개체를 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_ismbbkana** 는 정수 *c* 가 가타카나 기호인 경우 0이 아닌 값을 반환 하 고 그렇지 않으면 0을 반환 합니다. **_ismbbkana** 는 로캘 종속 문자 정보에 대 한 현재 로캘을 사용 합니다. **_ismbbkana_l** 은 전달 된 로캘 개체를 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

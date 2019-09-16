@@ -1,10 +1,10 @@
 ---
 title: _ismbblead, _ismbblead_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbblead_l
 - _ismbblead
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ismbblead_l
 - istlead
@@ -32,14 +35,14 @@ helpviewer_keywords:
 - ismbblead_l function
 - _istlead function
 ms.assetid: 2abc6f75-ed5c-472e-bfd0-e905a1835ccf
-ms.openlocfilehash: 7bf8e8c88153e2f22cfa08bb35ff8d4ba01a8804
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c0f9ec748a86d5d1413cf4f881234d786c2a2d78
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157213"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954059"
 ---
-# <a name="ismbblead-ismbbleadl"></a>_ismbblead, _ismbblead_l
+# <a name="_ismbblead-_ismbblead_l"></a>_ismbblead, _ismbblead_l
 
 문자를 테스트하여 멀티바이트 문자의 선행 바이트인지 여부를 확인합니다.
 
@@ -65,13 +68,13 @@ int _ismbblead_l(
 
 ## <a name="return-value"></a>반환 값
 
-0이 아닌 값을 반환 하는 정수 *c* 멀티 바이트 문자의 첫 번째 바이트.
+정수 *c* 가 멀티 바이트 문자의 첫 번째 바이트인 경우 0이 아닌 값을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-멀티바이트 문자는 선행 바이트와 그 뒤에 오는 후행 바이트로 구성됩니다. 선행 바이트는 지정된 문자 집합에 대한 특정 범위에 있는 것으로 구분됩니다. 예를 들어 코드 페이지 932 에서만 선행 바이트의 범위에서 0x81 – 0x9F 및 0xE0 – 0xFC입니다.
+멀티바이트 문자는 선행 바이트와 그 뒤에 오는 후행 바이트로 구성됩니다. 선행 바이트는 지정된 문자 집합에 대한 특정 범위에 있는 것으로 구분됩니다. 예를 들어 코드 페이지 932에만 0x81-0x9F 및 0xE0-0xFC의 선행 바이트 범위를 사용할 수 있습니다.
 
-**_ismbblead** 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbblead_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_ismbblead** 는 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbblead_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

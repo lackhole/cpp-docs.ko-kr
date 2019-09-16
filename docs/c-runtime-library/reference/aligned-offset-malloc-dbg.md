@@ -1,9 +1,9 @@
 ---
 title: _aligned_offset_malloc_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _aligned_offset_malloc_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _aligned_offset_malloc_dbg
 - aligned_offset_malloc_dbg
@@ -22,14 +25,14 @@ helpviewer_keywords:
 - _aligned_offset_malloc_dbg function
 - aligned_offset_malloc_dbg function
 ms.assetid: 6c242307-c59e-4d63-aae5-d8cbec8e021c
-ms.openlocfilehash: 96fe9e7fda0d0cdfdbfa5462e4f601e3649e2233
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4fbacb170fd1ae1ce92de4a11ea85ff42b3942a0
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348876"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939779"
 ---
-# <a name="alignedoffsetmallocdbg"></a>_aligned_offset_malloc_dbg
+# <a name="_aligned_offset_malloc_dbg"></a>_aligned_offset_malloc_dbg
 
 지정된 맞춤 경계에 메모리를 할당합니다(디버그 버전에만 해당).
 
@@ -57,26 +60,26 @@ void * _aligned_offset_malloc_dbg(
 맞춤을 강제하는 메모리 할당으로의 오프셋입니다.
 
 *filename*<br/>
-할당 작업을 요청한 소스 파일의 이름에 대 한 포인터 또는 **NULL**합니다.
+할당 작업 또는 **NULL**을 요청한 소스 파일의 이름에 대 한 포인터입니다.
 
 *linenumber*<br/>
-할당 작업이 요청 있는 소스 파일의 줄 번호 또는 **NULL**합니다.
+할당 작업이 요청 되었거나 **NULL 인**소스 파일의 줄 번호입니다.
 
 ## <a name="return-value"></a>반환 값
 
-할당 된 메모리 블록에 대 한 포인터 또는 **NULL** 작업이 실패 합니다.
+할당 된 메모리 블록에 대 한 포인터 이거나, 작업에 실패 한 경우 **NULL** 입니다.
 
 ## <a name="remarks"></a>설명
 
-**_aligned_offset_malloc_dbg** 의 디버그 버전이 합니다 [_aligned_offset_malloc](aligned-offset-malloc.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_aligned_offset_malloc_dbg** 대 한 호출으로 줄어듭니다 **_aligned_offset_malloc**합니다. 둘 다 **_aligned_offset_malloc** 하 고 **_aligned_offset_malloc_dbg** 기본 힙에서 메모리 블록을 할당 하지만 **_aligned_offset_malloc_dbg** 여러 제공 디버깅 기능: 누수 테스트, 블록의 사용자 부분 양쪽에서 버퍼와 *filename*/*linenumber* 의 출처를 확인 하는 정보 할당 요청 수입니다. 블록 형식 매개 변수를 사용 하 여 특정 할당 형식 추적는 정렬 된 할당에 대 한 지원 되는 디버그 기능이 아닙니다. 정렬 된 할당 _NORMAL_BLOCK 블록 형식으로 표시 됩니다.
+**_aligned_offset_malloc_dbg** 는 [_aligned_offset_malloc](aligned-offset-malloc.md) 함수의 디버그 버전입니다. [_Debug](../../c-runtime-library/debug.md) 가 정의 되지 않은 경우 **_aligned_offset_malloc_dbg** 에 대 한 각 호출은 **_aligned_offset_malloc**에 대 한 호출로 줄어듭니다. **_Aligned_offset_malloc** 와 **_aligned_offset_malloc_dbg** 는 둘 다 기본 힙에서 메모리 블록을 할당 하지만 **_aligned_offset_malloc_dbg** 는 블록의 사용자 부분 양쪽에 있는 버퍼의 여러 디버깅 기능을 제공 합니다. 누수를 테스트 하 고 *파일 이름*/*linenumber* 정보를 확인 하 여 할당 요청의 출처를 확인 합니다. 블록 형식 매개 변수를 사용 하 여 특정 할당 형식을 추적 하는 것은 정렬 된 할당에 대해 지원 되는 디버그 기능이 아닙니다. 정렬 된 할당은 _NORMAL_BLOCK 블록 형식으로 표시 됩니다.
 
-**_aligned_offset_malloc_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 메모리 블록 할당 *크기*합니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 애플리케이션에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 블록이 할당되면 블록의 사용자 부분은 값 0xCD로 채워지고 각 덮어쓰기 버퍼는 0xFD로 채워집니다.
+**_aligned_offset_malloc_dbg** 는 요청 된 *크기*보다 약간 더 많은 공간을 사용 하 여 메모리 블록을 할당 합니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 애플리케이션에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 블록이 할당되면 블록의 사용자 부분은 값 0xCD로 채워지고 각 덮어쓰기 버퍼는 0xFD로 채워집니다.
 
-**_aligned_offset_malloc_dbg** 는 중첩된 된 요소에 맞춤이 필요한 상황에서 유용 예를 들어 중첩된 된 클래스에 맞춤이 필요한 경우.
+**_aligned_offset_malloc_dbg** 는 중첩 된 요소에 맞춤이 필요한 경우에 유용 합니다. 예를 들어 중첩 된 클래스에 맞춤이 필요한 경우입니다.
 
-**_aligned_offset_malloc_dbg** 더해서 **malloc**; 자세한 내용은 참조 하십시오 [malloc](malloc.md)합니다.
+**_aligned_offset_malloc_dbg** 는 **malloc**를 기반으로 합니다. 자세한 내용은 [malloc](malloc.md)를 참조 하세요.
 
-이 함수를 설정 합니다 **errno** 하 **ENOMEM** 메모리 할당에 실패 하는 경우 또는 요청된 된 크기 보다 큰 되었으면 **_HEAP_MAXREQ**합니다. 에 대 한 자세한 내용은 **errno**를 참조 하십시오 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)합니다. 또한 **_aligned_offset_malloc** 해당 매개 변수 유효성을 검사 합니다. 하는 경우 *맞춤* 2의 거듭제곱이 아닌 경우 *오프셋* 보다 크거나 같음 *크기* 0이 아닌 경우이 함수는 잘못 된 매개 변수 처리기를 호출 에설명된대로[ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우이 함수를 반환 합니다 **NULL** 집합과 **errno** 하 **EINVAL**합니다.
+이 함수는 메모리 할당에 실패 한 경우 또는 요청 된 크기가 **_HEAP_MAXREQ**보다 큰 경우 **Errno** 을 **enomem** 으로 설정 합니다. **Errno**에 대 한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조 하세요. 또한 **_aligned_offset_malloc** 는 매개 변수의 유효성을 검사 합니다. *Alignment* 가 2의 거듭제곱이 아니거나 *오프셋이* *size* 보다 크거나 같고 0이 아닌 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **NULL** 을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
 

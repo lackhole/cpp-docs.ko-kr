@@ -1,9 +1,9 @@
 ---
 title: _pclose
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _pclose
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _pclose
 - pclose
@@ -24,14 +27,14 @@ helpviewer_keywords:
 - pclose function
 - pipes, closing
 ms.assetid: e2e31a9e-ba3a-4124-bcbb-c4040110b3d3
-ms.openlocfilehash: eb0f54ec27992cd0e62b11d8fec5bd54c3daea4b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 383dd96553463a2619537cf06fc6534770ed88d5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156013"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951079"
 ---
-# <a name="pclose"></a>_pclose
+# <a name="_pclose"></a>_pclose
 
 새 명령 프로세서가 실행될 때까지 기다렸다가 연결된 파이프에서 스트림을 닫습니다.
 
@@ -49,17 +52,17 @@ FILE *stream
 ### <a name="parameters"></a>매개 변수
 
 *stream*<br/>
-에 대 한 이전 호출에서 값 반환 **_popen**합니다.
+**_Popen**에 대 한 이전 호출에서 반환 된 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
-오류가 발생 하는 경우에 종료 명령 프로세서 또는-1의 종료 상태를 반환 합니다. 에 대 한 반환 값의 형식은 동일 **_cwait**하위 및 상위 바이트 바뀐다는 점을 제외 하 고, 합니다. 스트림이 **NULL**를 **_pclose** 설정 **errno** 하 **EINVAL** -1을 반환 합니다.
+종료 명령 프로세서의 종료 상태를 반환 하거나, 오류가 발생 하면-1을 반환 합니다. 반환 값의 형식은 **_cwait**의 경우와 동일 합니다. 단, 하위 바이트와 상위 바이트는 교환 됩니다. Stream이 **NULL**인 경우 **_pclose** 는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_pclose** 함수는 연결 된 시작 명령 프로세서 (Cmd.exe)의 프로세스 ID를 조회 **_popen** 호출, 실행을 [_cwait](cwait.md) 새 명령을 호출 합니다. 프로세서 및 연결된 된 파이프에서 스트림을 닫습니다.
+**_Pclose** 함수는 연결 된 **_popen** 호출에 의해 시작 된 명령 프로세서 (CMD.EXE)의 프로세스 ID를 조회 하 고, 새 명령 프로세서에서 [_cwait](cwait.md) 호출을 실행 하 고, 연결 된 파이프에서 스트림을 닫습니다.
 
 ## <a name="requirements"></a>요구 사항
 

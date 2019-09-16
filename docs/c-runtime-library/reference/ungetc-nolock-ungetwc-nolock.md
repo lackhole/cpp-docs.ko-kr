@@ -1,10 +1,10 @@
 ---
 title: _ungetc_nolock, _ungetwc_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ungetwc_nolock
 - _ungetc_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ungettc_nolock
 - ungetwc_nolock
@@ -32,14 +35,14 @@ helpviewer_keywords:
 - ungettc_nolock function
 - ungetc_nolock function
 ms.assetid: aa02d5c2-1be1-46d2-a8c4-b61269e9d465
-ms.openlocfilehash: 55888f122af0848c92204168a23cca93e2517904
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4228a573a0277c9bacc8beea81cbff6a70e3fe83
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62268886"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945922"
 ---
-# <a name="ungetcnolock-ungetwcnolock"></a>_ungetc_nolock, _ungetwc_nolock
+# <a name="_ungetc_nolock-_ungetwc_nolock"></a>_ungetc_nolock, _ungetwc_nolock
 
 스트림에 문자를 다시 푸시합니다.
 
@@ -66,13 +69,13 @@ wint_t _ungetwc_nolock(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 이러한 함수의 각 반환에서 문자 인수 *c*합니다. 하는 경우 *c* 다시 푸시할 수 없거나 읽은 문자가 없는 경우 입력된 스트림이 변경 하 고 **_ungetc_nolock** 반환 **EOF**; **_ungetwc_nolock** 반환 **WEOF**합니다. 하는 경우 *스트림을* 됩니다 **NULL**, **EOF** 또는 **WEOF** 반환 됩니다 및 **errno** 로 설정 되어  **EINVAL**합니다.
+성공 하는 경우 이러한 각 함수는 문자 인수 *c*를 반환 합니다. *C* 를 다시 푸시할 수 없거나 문자를 읽지 않은 경우 입력 스트림은 변경 되지 않으며 **_ungetc_nor** 은 **EOF**를 반환 합니다. **_Ungetwc_nolock** **는 weof를**반환 합니다. *Stream* 이 **NULL**이면 **EOF** 또는 **Weof** 가 반환 되 고 **errno** 가 **EINVAL**로 설정 됩니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 잠기지 않은 버전의 **ungetc** 하 고 **ungetwc**합니다. **_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 이러한 버전에서는 다른 스레드를 잠그는 오버헤드가 발생하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+이러한 함수는 **ungetc** 및 **ungetwc**의 잠기지 않은 버전입니다. **_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 이러한 버전에서는 다른 스레드를 잠그는 오버헤드가 발생하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

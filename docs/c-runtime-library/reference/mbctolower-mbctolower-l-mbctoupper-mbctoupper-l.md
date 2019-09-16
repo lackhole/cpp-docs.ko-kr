@@ -1,12 +1,12 @@
 ---
 title: _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbctolower_l
 - _mbctoupper_l
 - _mbctoupper
 - _mbctolower
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - mbctoupper_l
 - mbctolower_l
@@ -42,14 +45,14 @@ helpviewer_keywords:
 - _totlower function
 - mbctoupper function
 ms.assetid: 787fab71-3224-4ed7-bc93-4dcd8023fc54
-ms.openlocfilehash: e620af526e5f0af02868bba4ba635e9ed6e34ff6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 75b3926ea294fd6fe66b4e6865ac0c7df6d1b596
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156800"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952535"
 ---
-# <a name="mbctolower-mbctolowerl-mbctoupper-mbctoupperl"></a>_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
+# <a name="_mbctolower-_mbctolower_l-_mbctoupper-_mbctoupper_l"></a>_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
 
 멀티바이트 문자의 대/소문자를 테스트하고 변환합니다.
 
@@ -85,20 +88,20 @@ unsigned int _mbctoupper_l(
 
 ## <a name="return-value"></a>반환 값
 
-변환 된 문자를 반환 하는 이러한 각 함수 *c*가능한 경우. 문자 그렇지 *c* 변경 되지 않습니다.
+이러한 각 함수는 변환 된 문자 *c*를 반환 합니다 (가능한 경우). 그렇지 않으면 *c* 문자를 변경 하지 않고 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-함수는 문자를 테스트 *c* 고 가능한 경우 다음 변환 중 하나를 적용 합니다.
+함수는 *c* 문자를 테스트 하 고 가능한 경우 다음 변환 중 하나를 적용 합니다.
 
 |루틴|변환|
 |--------------|--------------|
 |**_mbctolower**, **_mbctolower_l**|대문자를 소문자로|
 |**_mbctoupper**, **_mbctoupper_l**|소문자를 대문자로|
 
-출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 없이이 함수의 버전은는 **_l** 접미사가 로캘 종속 동작에 현재 로캘을 사용 버전을 합니다 **_l** 로캘 매개 변수를 사용 하 여 접미사 동일 합니다. 대신 전달 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_L** 접미사가 없는이 함수 버전은이 로캘 종속 동작에 현재 로캘을 사용 합니다. **_l** 접미사가 있는 버전은 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이전 버전에서는 **_mbctolower** 호출한 **jtolower**, 및 **_mbctoupper** 호출한 **jtoupper**합니다. 새 코드의 경우에는 새 이름을 대신 사용하십시오.
+이전 버전에서는 **_mbctolower** 를 **jtolower**이라고 했으며 **_mbctoupper** 를 **jtoupper**이라고 했습니다. 새 코드의 경우에는 새 이름을 대신 사용하십시오.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

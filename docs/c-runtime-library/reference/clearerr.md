@@ -1,9 +1,9 @@
 ---
 title: clearerr
 ms.date: 11/04/2016
-apiname:
+api_name:
 - clearerr
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - clearerr
 helpviewer_keywords:
@@ -23,12 +26,12 @@ helpviewer_keywords:
 - resetting stream error indicator
 - clearerr function
 ms.assetid: a9711cd4-3335-43d4-a018-87bbac5b3bac
-ms.openlocfilehash: c282a577bb7496f899f18abeac857c08388d12f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9fd2f7e7dfcf272e806a887b356418b7555913f5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340563"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942941"
 ---
 # <a name="clearerr"></a>clearerr
 
@@ -49,9 +52,9 @@ void clearerr(
 
 ## <a name="remarks"></a>설명
 
-합니다 **clearerr** 함수에 대 한 파일 끝 표시기 및 오류 표시기 다시 설정 *스트림*합니다. 오류 표시기가 자동으로 취소 되지 않습니다. 지정 된 스트림에 대 한 오류 표시기 설정 되 면 해당 스트림의 작업을 계속 반환 될 때까지 오류 값 **clearerr**, [fseek](fseek-fseeki64.md)하십시오 **fsetpos**, 또는 [rewind](rewind.md) 라고 합니다.
+**Clearerr** 함수는 *스트림에*대 한 오류 표시기와 파일 끝 표시기를 다시 설정 합니다. 오류 표시기는 자동으로 지워지지 않습니다. 지정 된 스트림에 대 한 오류 표시기가 설정 되 면 **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**또는 [되감기](rewind.md) 가 호출 될 때까지 해당 스트림의 작업은 오류 값을 계속 반환 합니다.
 
-하는 경우 *스트림을* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우는 계속 실행 하도록 허용 합니다 **errno** 하 **EINVAL** 반환 합니다. 에 대 한 자세한 **errno** 오류 코드를 살펴보고 [errno 상수](../../c-runtime-library/errno-constants.md)합니다.
+*Stream* 이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고를 반환 합니다. **Errno** 및 오류 코드에 대 한 자세한 내용은 [errno 상수](../../c-runtime-library/errno-constants.md)를 참조 하십시오.
 
 이 함수의 더 안전한 버전을 사용할 수 있습니다. [clearerr_s](clearerr-s.md)를 참조하세요.
 

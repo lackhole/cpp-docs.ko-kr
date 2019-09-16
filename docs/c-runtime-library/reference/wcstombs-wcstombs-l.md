@@ -1,10 +1,10 @@
 ---
 title: wcstombs, _wcstombs_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - wcstombs
 - _wcstombs_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wcstombs
 - _wcstombs_l
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 91234252-9ea1-423a-af99-e9d0ce4a40e3
-ms.openlocfilehash: b5ee2a0e5636e9c1d1f3fc204b2b6cbf8b733d45
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: e4aa09ec8e6d97762d39e63aa05b0eb0cc159d17
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498979"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945117"
 ---
 # <a name="wcstombs-_wcstombs_l"></a>wcstombs, _wcstombs_l
 
@@ -92,7 +95,7 @@ size_t _wcstombs_l(
 
 **Wcstombs** 함수는 *wcstr* 가 가리키는 와이드 문자 문자열을 해당 멀티 바이트 문자로 변환 하 고 그 결과를 *mbstr* 배열에 저장 합니다. *Count* 매개 변수는 멀티 바이트 출력 문자열 ( *mbstr*의 크기)에 저장할 수 있는 최대 바이트 수를 나타냅니다. 일반적으로는 와이드 문자열을 변환할 때 필요한 바이트의 수를 알 수 없습니다. 출력 문자열에서 1바이트만 사용하면 되면 되는 와이드 문자도 있고 2바이트를 사용해야 하는 문자도 있습니다. 와이드 문자 null을 포함 하 여 입력 문자열의 모든 와이드 문자에 대해 멀티 바이트 출력 문자열에 2 바이트가 있으면 결과가 일치 하도록 보장 됩니다.
 
-**Wcstombs** 가 발생 하기 전이나 후에 와이드 문자 null 문자 (L ' \ 0 ')를 발견 하면이를 8 비트 0으로 변환 하 고 중지 합니다. 따라서 **wcstombs** 는 변환 중에 와이드 문자 null 문자를 발견 하는 경우에만 *mbstr* 의 멀티 바이트 문자열을 null로 종료 합니다. *Wcstr* 및 *mbstr* 가 가리키는 시퀀스가 겹치면 **wcstombs** 의 동작이 정의 되지 않습니다.
+**Wcstombs** 가 발생 하기 전이나 후에 와이드 문자 null 문자 (L ' \ 0 ')를 발견 *하면이* 를 8 비트 0으로 변환 하 고 중지 합니다. 따라서 **wcstombs** 는 변환 중에 와이드 문자 null 문자를 발견 하는 경우에만 *mbstr* 의 멀티 바이트 문자열을 null로 종료 합니다. *Wcstr* 및 *mbstr* 가 가리키는 시퀀스가 겹치면 **wcstombs** 의 동작이 정의 되지 않습니다.
 
 *Mbstr* 인수가 **NULL**이면 **wcstombs** 는 대상 문자열의 필요한 크기 (바이트)를 반환 합니다.
 
