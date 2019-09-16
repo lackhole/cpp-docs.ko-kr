@@ -20,13 +20,13 @@ ms.locfileid: "65217584"
 ---
 # <a name="mfc-dll-wizard"></a>MFC DLL 마법사
 
-MFC DLL 마법사를 사용하여 MFC DLL 프로젝트를 만들면 컴파일시 [DLL](../../build/dlls-in-visual-cpp.md)의 기본 기능을 구현하는 기본 제공 기능이 포함된 작업용 스타터 응용 프로그램이 제공됩니다. MFC 스타터 프로그램에는 C++ 소스 파일 (.cpp), 리소스 (.rc) 파일 및 프로젝트 (.vcxproj) 파일이 포함됩니다. 이 스타터 파일에서 생성된 코드는 MFC를 기반으로 합니다. 자세한 내용은 Visual Studio에서 프로젝트에 생성된 Readme.txt 파일 세부 정보 및 [MFC DLL 마법사에서 생성된 클래스와 함수](../../mfc/reference/classes-and-functions-generated-by-the-mfc-dll-wizard.md)를 참조합니다.
+MFC DLL 마법사를 사용하여 MFC DLL 프로젝트를 만들면 컴파일 시 [DLL](../../build/dlls-in-visual-cpp.md)의 기본 기능을 구현하는 기본 제공 기능이 포함된 작업용 스타터 응용 프로그램이 제공됩니다. MFC 스타터 프로그램에는 C++ 소스 (.cpp) 파일, 리소스(.rc) 파일 및 프로젝트(.vcxproj) 파일이 포함됩니다. 이 스타터 파일에서 생성된 코드는 MFC를 기반으로 합니다. 자세한 내용은 Visual Studio에서 프로젝트를 위해 생성된 Readme.txt 파일 세부 정보 및 [MFC DLL 마법사에서 생성된 클래스와 함수](../../mfc/reference/classes-and-functions-generated-by-the-mfc-dll-wizard.md)를 참조합니다.
 
 ## <a name="overview"></a>개요
 
-이 마법사 페이지에서는 개발자가 생성한 현재 [MFC DLL 프로젝트에 대한 응용 프로그램 설정](../../mfc/reference/application-settings-mfc-dll-wizard.md)에 대해 설명합니다. 기본적으로 추가설정이 없다면 MFC DLL(MFC 공유 DLL)로 프로젝트가 만들어집니다.
+이 마법사 페이지에서는 개발자가 생성한 현재 [MFC DLL 프로젝트에 대한 응용 프로그램 설정](../../mfc/reference/application-settings-mfc-dll-wizard.md)에 대해 설명합니다. 기본적으로 추가 설정이 없다면 일반 MFC DLL(MFC 공유 DLL)로 프로젝트가 만들어집니다.
 
-이러한 기본값을 변경 하려면 마법사의 왼쪽 열에서 **응용 프로그램 설정**을 클릭하고 MFC DLL 마법사의 해당 페이지에서 변경하세요.
+이러한 기본값을 변경하려면 마법사의 왼쪽 열에서 **응용 프로그램 설정**을 클릭하고 MFC DLL 마법사의 해당 페이지에서 변경하세요.
 
 MFC DLL 프로젝트를 만든 후 Visual C++ [코드 마법사](../../ide/adding-functionality-with-code-wizards-cpp.md)를 사용하여 프로젝트에 개체 또는 컨트롤을 추가할 수 있습니다.
 
