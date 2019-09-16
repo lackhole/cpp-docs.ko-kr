@@ -1,14 +1,14 @@
 ---
 title: 'Bessel 함수: _j0, _j1, _jn, _y0, _y1, _yn'
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _j0
 - _j1
 - _jn
 - _y0
 - _y1
 - _yn
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - c.bessel
 - _j0
@@ -38,14 +41,14 @@ helpviewer_keywords:
 - _y1 function
 - _yn function
 ms.assetid: a21a8bf1-df9d-4ba0-a8c2-e7ef71921d96
-ms.openlocfilehash: 682eaa99d0be1b959152ff94cc10a86aa68d988d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5420b34846998cdbcb4814d8319274f1a3516d91
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341123"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939468"
 ---
-# <a name="bessel-functions-j0-j1-jn-y0-y1-yn"></a>Bessel 함수: _j0, _j1, _jn, _y0, _y1, _yn
+# <a name="bessel-functions-_j0-_j1-_jn-_y0-_y1-_yn"></a>Bessel 함수: _j0, _j1, _jn, _y0, _y1, _yn
 
 첫 번째 또는 두 번째 종류의 Bessel 함수를 0, 1 또는 n 순서로 계산합니다. Bessel 함수는 일반적으로 전자기파 이론의 수학에 사용됩니다.
 
@@ -84,17 +87,17 @@ Bessel 함수의 정수 순서입니다.
 
 ## <a name="return-value"></a>반환 값
 
-Bessel 함수를 반환 하는 이러한 각 루틴 *x*합니다. 경우 *x* 에서 음수인 합니다 **_y0**를 **_y1**, 또는 **_yn** 함수, 루틴 집합 **errno** 를 **EDOM**, 출력을 **(_d)** 오류 메시지를 **stderr**를 반환 합니다 **_HUGE_VAL**합니다. 사용 하 여 오류 처리를 수정할 수 있습니다 **_matherr**합니다.
+이러한 각 루틴은 *x*의 Bessel 함수를 반환 합니다. **_Y0**, **_y0**또는 **_yn** 함수에서 *x* 가 음수 이면 루틴은 **errno** 를 **edom**으로 설정 하 고, **stderr**에 **_domain** 오류 메시지를 출력 하 고 **_HUGE_VAL**를 반환 합니다. **_Matherr**를 사용 하 여 오류 처리를 수정할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-**_j0**, **_j1**, 및 **_jn** 루틴 반환 Bessel 함수의 첫 번째 종류: 각각 0, 1 및 n을 정렬 합니다.
+**_J0**, **_j0**및 **_j0** 루틴은 첫 번째 종류의 Bessel 함수를 각각 0, 1, n 순서로 반환 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|**INVALID**|**_DOMAIN**|
 
-합니다 **_y0**, **_y1**, 및 **_yn** 루틴 반환 Bessel 함수의 두 번째 종류: 각각 0, 1 및 n을 정렬 합니다.
+**_Y0**, **_y0**및 **_yn** 루틴은 두 번째 종류의 Bessel 함수를 각각 0, 1, n 순서로 반환 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|

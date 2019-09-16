@@ -1,10 +1,10 @@
 ---
 title: _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wfindnext
 - _findnext
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - findnext
 - _wfindnext32i64
@@ -92,16 +95,16 @@ helpviewer_keywords:
 - tfindnext32i64 function
 - _tfindnexti64 function
 ms.assetid: 75d97188-5add-4698-a46c-4c492378f0f8
-ms.openlocfilehash: c7df8649625488a83239a19e4afcecea129f9072
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 083f0f1d383472c104a1e4fcb6f3139c7a9d9c88
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333731"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957241"
 ---
-# <a name="findnext-findnext32-findnext32i64-findnext64-findnext64i32-findnexti64-wfindnext-wfindnext32-wfindnext32i64-wfindnext64-wfindnext64i32-wfindnexti64"></a>_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
+# <a name="_findnext-_findnext32-_findnext32i64-_findnext64-_findnext64i32-_findnexti64-_wfindnext-_wfindnext32-_wfindnext32i64-_wfindnext64-_wfindnext64i32-_wfindnexti64"></a>_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 
-일치 하는 경우 다음 이름을 찾으려면를 *filespec* 이전 호출에서 인수 [_findfirst](findfirst-functions.md)를 만든 다음 변경를 *fileinfo* 구조체 콘텐츠를 적절 하 게 합니다.
+[_Findfirst](findfirst-functions.md)에 대 한 이전 호출의 *filespec* 인수와 일치 하는 다음 이름 (있는 경우)을 찾은 다음 *fileinfo* 구조체 내용을 그에 따라 변경 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -159,34 +162,34 @@ int _wfindnext64i32(
 ### <a name="parameters"></a>매개 변수
 
 *handle*<br/>
-에 대 한 이전 호출에서 반환 된 검색 핸들 **_findfirst**합니다.
+**_Findfirst**에 대 한 이전 호출에서 반환 된 검색 핸들입니다.
 
 *fileinfo*<br/>
 파일 정보 버퍼입니다.
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 0을 반환합니다. 그렇지 않으면-1을 반환 하 고 설정 **errno** 오류의 특성을 나타내는 값입니다. 다음 표에 가능한 오류 코드가 나와 있습니다.
+성공하면 0을 반환합니다. 그렇지 않으면-1을 반환 하 고 **errno** 를 오류 특성을 나타내는 값으로 설정 합니다. 다음 표에 가능한 오류 코드가 나와 있습니다.
 
 |errno 값|조건|
 |-|-|
-| **EINVAL** | 잘못 된 매개 변수: *fileinfo* 되었습니다 **NULL**합니다. 또는 운영 체제에서 예기치 않은 오류를 반환했습니다. |
+| **EINVAL** | 잘못 된 매개 변수: *fileinfo* 가 **NULL**입니다. 또는 운영 체제에서 예기치 않은 오류를 반환했습니다. |
 | **ENOENT** | 일치하는 추가 파일을 찾을 수 없습니다. |
-| **ENOMEM** | 메모리가 부족 하거나 파일 이름의 길이 초과 했습니다 **MAX_PATH**합니다. |
+| **ENOMEM** | 메모리가 부족 하거나 파일 이름의 길이가 **MAX_PATH**를 초과 했습니다. |
 
 잘못된 매개 변수가 전달되면 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)의 설명대로 잘못된 매개 변수 처리기를 호출합니다.
 
 ## <a name="remarks"></a>설명
 
-호출 해야 합니다 [_findclose](findclose.md) 중 하나를 사용 하 여 작업을 마친 후 합니다 **_findfirst** 하거나 **_findnext** 함수 (또는 모든 변형). 그러면 애플리케이션에서 이러한 함수에 사용된 리소스가 해제됩니다.
+**_Findfirst** 또는 **_findnext** 함수 (또는 모든 변형) 사용을 마친 후에는 [_ndnoclose](findclose.md) 를 호출 해야 합니다. 그러면 애플리케이션에서 이러한 함수에 사용된 리소스가 해제됩니다.
 
-사용 하 여 이러한 함수의 변형은 합니다 **w** 접두사는 와이드 문자 버전 이며 해당 단일 바이트 함수와 동일이 고, 그렇지 합니다.
+**W** 접두사가 있는 이러한 함수의 변형은 와이드 문자 버전입니다. 그렇지 않으면 해당 하는 싱글바이트 함수와 동일 합니다.
 
-이러한 함수의 변형은 32비트 또는 64비트 시간 형식과 32비트 또는 64비트 파일 크기를 지원합니다. 첫 번째 숫자 접미사 (**32** 또는 **64**)의 크기를 나타내는 형식에 사용 되는, 두 번째 접미사 **i32** 또는 **i64**, 32 비트 또는 64 비트 정수로 파일 크기를 나타낼지 여부를 나타내는입니다. 어떤 버전이 32비트 및 64비트 시간 형식과 파일 크기를 지원하는지에 대한 자세한 내용은 다음 표를 참조하세요. 64비트 시간 형식을 사용하는 변형을 통해 3000년 12월 31일 23:59:59(UTC)까지 파일 생성 날짜를 표현할 수 있습니다. 반면, 32비트 시간 형식을 사용하는 변형은 2038년 1월 18일 23:59:59(UTC)까지의 날짜만 나타냅니다. 1970년 1월 1일 자정은 이러한 모든 함수에 대한 날짜 범위의 하한입니다.
+이러한 함수의 변형은 32비트 또는 64비트 시간 형식과 32비트 또는 64비트 파일 크기를 지원합니다. 첫 번째 숫자 접미사 (**32** 또는 **64**)는 사용 된 시간 형식의 크기를 나타냅니다. 두 번째 접미사는 **i32** 또는 **i64**중 하나 이며, 파일 크기가 32 비트 또는 64 비트 정수로 표시 되는지를 나타냅니다. 어떤 버전이 32비트 및 64비트 시간 형식과 파일 크기를 지원하는지에 대한 자세한 내용은 다음 표를 참조하세요. 64비트 시간 형식을 사용하는 변형을 통해 3000년 12월 31일 23:59:59(UTC)까지 파일 생성 날짜를 표현할 수 있습니다. 반면, 32비트 시간 형식을 사용하는 변형은 2038년 1월 18일 23:59:59(UTC)까지의 날짜만 나타냅니다. 1970년 1월 1일 자정은 이러한 모든 함수에 대한 날짜 범위의 하한입니다.
 
-시간 크기를 명시적으로 지정을 사용 하 여 버전을 사용 하는 특별 한 이유가 없다면 **_findnext** 하거나 **_wfindnext** 3GB 보다 큰 파일 크기를 지원 해야 하는 경우 사용 하 여, **_ findnexti64** 나 **_wfindnexti64**합니다. 이러한 함수는 모두 64비트 시간 형식을 사용합니다. 이전 버전에서는 이러한 함수에서 32비트 시간 형식을 사용했습니다. 응용 프로그램에 대 한 주요 변경 인 경우를 정의할 수 있습니다 **_USE_32BIT_TIME_T** 이전 동작을 가져오도록 합니다. 하는 경우 **_USE_32BIT_TIME_T** 정의 된 **_findnext**를 **_finnexti64** 및 해당 유니코드 버전에서는 32 비트 시간을 사용 합니다.
+시간 크기를 명시적으로 지정 하는 버전을 사용 해야 하는 특별 한 이유가 없는 경우 _stnostnoat\_wateor를 사용 하거나, 3gb 보다 큰 파일 크기를 지원 해야 하는 경우 **_findnexti64** 또는 **_wfindnexti64**를 사용 합니다. 이러한 함수는 모두 64비트 시간 형식을 사용합니다. 이전 버전에서는 이러한 함수에서 32비트 시간 형식을 사용했습니다. 응용 프로그램에 대 한 주요 변경 내용이 있는 경우 **_USE_32BIT_TIME_T** 를 정의 하 여 이전 동작을 가져올 수 있습니다. **_USE_32BIT_TIME_T** 를 정의 하는 경우 **_ststneata**, **_finnexti64** 및 해당 유니코드 버전은 32 비트 시간을 사용 합니다.
 
-### <a name="time-type-and-file-length-type-variations-of-findnext"></a>_findnext의 시간 형식 및 파일 길이 형식 변형
+### <a name="time-type-and-file-length-type-variations-of-_findnext"></a>_findnext의 시간 형식 및 파일 길이 형식 변형
 
 |함수|**_USE_32BIT_TIME_T** defined?|시간 형식|파일 길이 형식|
 |---------------|----------------------------------|---------------|----------------------|

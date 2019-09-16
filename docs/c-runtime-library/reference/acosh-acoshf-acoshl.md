@@ -1,11 +1,11 @@
 ---
 title: acosh, acoshf, acoshl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - acoshf
 - acosh
 - acoshl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - acosh
 - acoshf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - acosh function
 - acoshl function
 ms.assetid: 6985c4d7-9e2a-44ce-9a9b-5a43015f15f7
-ms.openlocfilehash: e61b9ed4222898e3f2340a5e54f6983fb0411c72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b547bc0db23f446672c8838419aeb9b0f32c16c3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341693"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944073"
 ---
 # <a name="acosh-acoshf-acoshl"></a>acosh, acoshf, acoshl
 
@@ -61,7 +64,7 @@ long double acosh( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **acosh** 의 역 쌍 곡 코사인 (쌍곡선 아크코사인)를 반환 하는 함수 *x*합니다. 도메인을 통해 이러한 함수는 유효한 *x* ≥ 1입니다. 경우 *x* 1 보다 작으면 `errno` 로 설정 된 `EDOM` 결과 quiet NaN입니다. 하는 경우 *x* 는 quiet NaN, 무한 또는 무한대 이면 동일한 값이 반환 됩니다.
+**Acosh** 함수는 *x*의 역 하이퍼볼릭 코사인 (원호 하이퍼볼릭 코사인)을 반환 합니다. 이러한 함수는 도메인 *x* ≥ 1에서 유효 합니다. *X* 가 1 `errno` 보다 작은 경우는로 `EDOM` 설정 되 고 결과는 quiet NaN입니다. *X* 가 quiet NaN, 무한 또는 무한대 이면 동일한 값이 반환 됩니다.
 
 |입력|SEH 예외|`_matherr` 예외|
 |-----------|-------------------|--------------------------|
@@ -70,7 +73,7 @@ long double acosh( long double x );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-사용 하는 경우 C++를 오버 로드를 호출할 수 있습니다 **acosh** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **acosh** 항상 받아서 반환 **double**합니다.
+를 사용 하 C++는 경우 **float** 또는 **long** **double** 값을 사용 하 고 반환 하는 **acosh** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **acosh** 는 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,11 +1,11 @@
 ---
 title: gmtime_s, _gmtime32_s, _gmtime64_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _gmtime32_s
 - gmtime_s
 - _gmtime64_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _gmtime_s
 - gmtime64_s
@@ -35,16 +38,16 @@ helpviewer_keywords:
 - _gmtime_s function
 - _gmtime32_s function
 ms.assetid: 261c7df0-2b0c-44ba-ba61-cb83efaec60f
-ms.openlocfilehash: 8225fed21ca9dc67440a4af5dcf43b2ad5cfdffb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bcfc512022393c6a3e8a9cd97efe96d03b4877ab
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157450"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954837"
 ---
-# <a name="gmtimes-gmtime32s-gmtime64s"></a>gmtime_s, _gmtime32_s, _gmtime64_s
+# <a name="gmtime_s-_gmtime32_s-_gmtime64_s"></a>gmtime_s, _gmtime32_s, _gmtime64_s
 
-시간 값을 변환 된 **tm** 구조입니다. 이러한 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 있는 [_gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)의 버전입니다.
+시간 값을 **tm** 구조체로 변환 합니다. 이러한 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 있는 [_gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)의 버전입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -66,7 +69,7 @@ errno_t _gmtime64_s(
 ### <a name="parameters"></a>매개 변수
 
 *tmDest*<br/>
-에 대 한 포인터를 [tm](../../c-runtime-library/standard-types.md) 구조입니다. 반환 된 구조체의 필드의 계산된 값을 유지 합니다 *타이머* UTC 대신 현지 시간 인수입니다.
+[Tm](../../c-runtime-library/standard-types.md) 구조에 대 한 포인터입니다. 반환 된 구조체의 필드에는 현지 시간이 아닌 UTC로 *타이머* 인수의 계산 된 값이 포함 됩니다.
 
 *sourceTime*<br/>
 저장된 시간에 대한 포인터입니다. 시간은 1970년 1월 1일 자정(00:00:00)(UTC(협정 세계시)) 이후 경과한 시간(초)으로 표현됩니다.
@@ -77,44 +80,44 @@ errno_t _gmtime64_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*tmDest*|*sourceTime*|반환|값 *tmDest*|
+|*tmDest*|*sourceTime*|반환|*Tmdest* 의 값|
 |-----------|------------|------------|--------------------|
 |**NULL**|any|**EINVAL**|수정되지 않습니다.|
-|되지 **NULL** (유효한 메모리를 가리킴)|**NULL**|**EINVAL**|모든 필드가 -1로 설정됩니다.|
-|하지 **NULL**|< 0|**EINVAL**|모든 필드가 -1로 설정됩니다.|
+|Not **NULL** (유효한 메모리를 가리킴)|**NULL**|**EINVAL**|모든 필드가 -1로 설정됩니다.|
+|**NULL** 이 아님|< 0|**EINVAL**|모든 필드가 -1로 설정됩니다.|
 
-처음 두 오류 조건의 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수가 호출됩니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 돌아와 **EINVAL**합니다.
+처음 두 오류 조건의 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_gmtime32_s** 함수는 *sourceTime* 값 형식의 구조체에 저장 합니다 **tm**Time.h에 정의 된 합니다. 구조체의 주소에 전달 됩니다 *tmDest*합니다. 변수의 *sourceTime* 에 대 한 호출에서 가져온 일반적으로 [시간](time-time32-time64.md) 함수입니다.
+**_Gmtime32_s** 함수는 *sourcetime* 값을 분할 하 여 타임에 정의 된 **tm**형식의 구조에 저장 합니다. 구조체의 주소는 *Tmdest*에 전달 됩니다. *Sourcetime* 값은 일반적으로 [time](time-time32-time64.md) 함수에 대 한 호출에서 가져옵니다.
 
 > [!NOTE]
 > 대상 환경에서는 일광 절약 시간이 적용되는지 확인해야 합니다. C 런타임 라이브러리에서는 일광 절약 시간 계산 구현을 위한 미국의 규칙이 사용된다고 가정합니다.
 
-각 구조체 필드는 형식의 **int**다음 표에 나와 있는 것 처럼 합니다.
+다음 표와 같이 각 구조 필드는 **int**형식입니다.
 
 |필드|설명|
 |-|-|
-|**tm_sec**|분 이후의 초 (0-59).|
-|**tm_min**|시간 이후의 분 (0-59).|
-|**tm_hour**|자정 이후의 시간 (0-23).|
-|**tm_mday**|일 (1-31)입니다.|
-|**tm_mon**|월 (0 ~ 11; 1 월 = 0).|
+|**tm_sec**|분 이후의 초 (0-59)입니다.|
+|**tm_min**|시간 이후 분 (0-59)|
+|**tm_hour**|자정 이후의 시간 (0-23)입니다.|
+|**tm_mday**|월의 일자 (1-31)|
+|**tm_mon**|월 (0-11; 1 월 = 0).|
 |**tm_year**|연도(현재 연도 - 1900).|
 |**tm_wday**|요일 (0-6; 일요일 = 0).|
 |**tm_yday**|연간 일자 (0-365; 1 월 1 일 = 0).|
-|**tm_isdst**|항상 0에 대 한 **gmtime_s**합니다.|
+|**tm_isdst**|**Gmtime_s**의 경우 항상 0입니다.|
 
-**_gmtime64_s**를 사용 합니다 **__time64_t** 구조에 날짜를 23시 59분: 59 까지의 3000 년 12 월 31 일, UTC; 표현할 수 있습니다. 반면 **gmtime32_s** 통해 날짜만 나타냅니다 23시 59분: 59 2038 년 1 월 18 일 UTC입니다. 1970년 1월 1일 자정은 이러한 두 함수 모두에 대한 날짜 범위의 하한입니다.
+**__time64_t** 구조체를 사용 하는 **_Gmtime64_s**는 23:59:59 년 12 월 31 일 12 월 3000 31 일을 기준으로 날짜를 표현할 수 있습니다. 반면 **gmtime32_s** 는 2038 년 1 월 18 일 23:59:59 까지만 날짜를 나타냅니다. 1970년 1월 1일 자정은 이러한 두 함수 모두에 대한 날짜 범위의 하한입니다.
 
-**gmtime_s** 계산 되는 인라인 함수 이며 **_gmtime64_s** 하 고 **time_t** 동일 **__time64_t**합니다. 해석 하도록 컴파일러에 게 해야 하는 경우 **time_t** 이전 32 비트로 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**합니다. 이렇게 하면 **gmtime_s** 에 인라인 할 **_gmtime32_s**합니다. 2038년 1월 18일 이후에는 애플리케이션에서 오류가 발생할 수 있으므로 이 방식은 사용하지 않는 것이 좋으며, 64비트 플랫폼에서는 이러한 방식이 허용되지 않습니다.
+**gmtime_s** 는 **_gmtime64_s** 로 계산 되는 인라인 함수 이며 **time_t** 는 **__time64_t**와 동일 합니다. 컴파일러가 **time_t** 를 이전 32 비트 **time_t**해석 하도록 강제 해야 하는 경우 **_USE_32BIT_TIME_T**를 정의할 수 있습니다. 이렇게 하면 **gmtime_s** 이 **_gmtime32_s**에 게 정렬 됩니다. 2038년 1월 18일 이후에는 애플리케이션에서 오류가 발생할 수 있으므로 이 방식은 사용하지 않는 것이 좋으며, 64비트 플랫폼에서는 이러한 방식이 허용되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 C 헤더|필수 C++ 헤더|
 |-------------|---------------------|-|
-|**gmtime_s**, **_gmtime32_s**, **_gmtime64_s**|\<time.h>|\<ctime > 또는 \<time.h >|
+|**gmtime_s**, **_gmtime32_s**, **_gmtime64_s**|\<time.h>|\<ctime > 또는 \<시간 >|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

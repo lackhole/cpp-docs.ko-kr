@@ -1,10 +1,10 @@
 ---
 title: _ismbbalnum, _ismbbalnum_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbalnum
 - _ismbbalnum_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ismbbalnum
 - ismbbalnum
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - ismbbalnum_l function
 - _ismbbalnum function
 ms.assetid: 8025de50-a871-49fd-9ae6-f437b47aa987
-ms.openlocfilehash: 5b5f54754907c09a34b0f4c3bae3e5c27336ca36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d817ea6875149f9342854b0c22b27b0c93d29636
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286563"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954292"
 ---
-# <a name="ismbbalnum-ismbbalnuml"></a>_ismbbalnum, _ismbbalnum_l
+# <a name="_ismbbalnum-_ismbbalnum_l"></a>_ismbbalnum, _ismbbalnum_l
 
 지정된 멀티바이트 문자가 영문자인지 숫자인지를 확인합니다.
 
@@ -60,13 +63,13 @@ int _ismbbalnum_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbalnum** 경우 0이 아닌 값을 반환 식:
+**_ismbbalnum** 는 식이 다음과 같이 0이 아닌 값을 반환 합니다.
 
 `isalnum(c) || _ismbbkalnum(c)`
 
-이 대 한 아닌 *c*, 있지 않으면 0입니다.
+*c*의 경우 0이 아니고, 그렇지 않으면 0입니다.
 
-버전을 사용 하 여이 함수는 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다.
+**_L** 접미사가 있는이 함수의 버전은 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

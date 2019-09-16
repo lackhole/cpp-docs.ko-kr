@@ -1,10 +1,10 @@
 ---
 title: memcpy_s, wmemcpy_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - memcpy_s
 - wmemcpy_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wmemcpy_s
 - memcpy_s
@@ -25,14 +28,14 @@ helpviewer_keywords:
 - memcpy_s function
 - wmemcpy_s function
 ms.assetid: 5504e20a-83d9-4063-91fc-3f55f7dabe99
-ms.openlocfilehash: 802d75307096e649df15b1864b99699fba92a3a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8078590df6950201ef81356ba6c28173e80572ee
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285336"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952796"
 ---
-# <a name="memcpys-wmemcpys"></a>memcpy_s, wmemcpy_s
+# <a name="memcpy_s-wmemcpy_s"></a>memcpy_s, wmemcpy_s
 
 버퍼 간에 바이트를 복사합니다. 이러한 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 있는 [memcpy, wmemcpy](memcpy-wmemcpy.md)의 버전입니다.
 
@@ -73,18 +76,18 @@ errno_t wmemcpy_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*dest*|*destSize*|*src*|*count*|반환 값|내용을 *dest*|
+|*dest*|*destSize*|*src*|*count*|반환 값|*대상* 의 내용|
 |------------|----------------|-----------|---|------------------|------------------------|
 |any|any|any|0|0|수정 안 됨|
 |**NULL**|any|any|0이 아닌 값|**EINVAL**|수정 안 됨|
-|any|any|**NULL**|0이 아닌 값|**EINVAL**|*dest* 가 0이 됨|
-|any|< *count*|any|0이 아닌 값|**ERANGE**|*dest* 가 0이 됨|
+|any|any|**NULL**|0이 아닌 값|**EINVAL**|*대상* 의 0을 초과 합니다.|
+|any|< *count*|any|0이 아닌 값|**ERANGE**|*대상* 의 0을 초과 합니다.|
 
 ## <a name="remarks"></a>설명
 
-**memcpy_s** 복사본 *개수* 바이트 *src* 하 *dest*; **wmemcpy_s** 복사본 *개수* 와이드 문자 (2 바이트)입니다. 소스와 대상이 겹치는 경우의 동작은 **memcpy_s** 정의 되지 않습니다. 사용 하 여 **memmove_s** 겹치는 영역을 처리 하도록 합니다.
+**memcpy_s** 복사본은 *src* 에서 *dest*로 바이트 *수를 계산* 합니다. **wmemcpy_s** 복사본은 와이드 문자 (2 바이트)를 *계산* 합니다. 원본과 대상이 겹치면 **memcpy_s** 의 동작이 정의 되지 않습니다. **Memmove_s** 를 사용 하 여 겹치는 영역을 처리할 수 있습니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 하는 경우 *개수* 0이 아닌 및 *dest* 또는 *src* 가 null 포인터인 경우 또는 *destSize* 보다 작은 *개수*, 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **EINVAL** 또는 **ERANGE** 설정 하 고 **errno** 반환 값입니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Count* 가 0이 아니고 *dest* 또는 *Src* 가 null 포인터 이거나 *destsize* 가 *Count*보다 작은 경우 이러한 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EINVAL** 또는 **ERANGE** 을 반환 하 고 **errno** 를 반환 값으로 설정 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

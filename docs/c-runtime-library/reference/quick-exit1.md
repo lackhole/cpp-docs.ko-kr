@@ -1,9 +1,9 @@
 ---
 title: quick_exit1
 ms.date: 11/04/2016
-apiname:
+api_name:
 - quick_exit
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - quick_exit
 - process/quick_exit
@@ -23,14 +26,14 @@ f1_keywords:
 helpviewer_keywords:
 - quick_exit function
 ms.assetid: ecfbdae6-01c4-45fa-aaeb-b368e1de2a9c
-ms.openlocfilehash: 50f1ee72cce04c2bebc8f7396a2b6fad98301dd7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86246ed7a32dcd2f12b38aa4148570fc5fb3b7a6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358037"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949685"
 ---
-# <a name="quickexit"></a>quick_exit
+# <a name="quick_exit"></a>quick_exit
 
 프로그램이 정상 종료되게 합니다.
 
@@ -44,20 +47,20 @@ __declspec(noreturn) void quick_exit(
 
 ### <a name="parameters"></a>매개 변수
 
-*status*<br/>
+*상태*<br/>
 호스트 환경에 반환될 상태 코드입니다.
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **quick_exit** 함수는 호출자로 반환할 수 없습니다.
+**Quick_exit** 함수는 해당 호출자에 게 반환할 수 없습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **quick_exit** 함수로 인해 프로그램이 정상 종료 합니다. 등록자 없는 함수를 호출한 **atexit**, **_onexit** 신호 처리기가 등록 또는 합니다 **신호** 함수입니다. 경우 동작이 정의 되지 않습니다 **quick_exit** 보다 한 번 또는 라고 하는 경우를 **종료** 함수 라고 합니다.
+**Quick_exit** 함수는 정상적인 프로그램 종료를 발생 시킵니다. **신호** 함수에서 등록 한 **atexit**, **_onexit** 또는 신호 처리기에 의해 등록 된 함수를 호출 하지 않습니다. **Quick_exit** 를 두 번 이상 호출 하거나 **종료** 함수를 호출 하는 경우 동작이 정의 되지 않습니다.
 
-합니다 **quick_exit** 함수 마지막-, lifo (후입선출) 순서에 의해 등록 된 함수에서 호출 **at_quick_exit**함수가 등록 될 때 이미 호출 된 함수를 제외 하 고 있습니다.  함수 호출을 종료하는 등록된 함수를 호출하는 동안 [longjmp](longjmp.md) 가 호출되면 동작이 정의되지 않습니다.
+**Quick_exit** 함수는 함수가 등록 될 때 이미 호출 된 함수를 제외 하 고 **at_quick_exit**에 의해 등록 된 함수를 LIFO (last in, 선입 out) 순서로 호출 합니다.  함수 호출을 종료하는 등록된 함수를 호출하는 동안 [longjmp](longjmp.md) 가 호출되면 동작이 정의되지 않습니다.
 
-등록 된 함수를 호출한 후 **quick_exit** 호출 **_Exit** 사용 하 여 합니다 *상태* 호스트 환경에 제어를 반환 하는 값입니다.
+등록 된 함수가 호출 된 후 **quick_exit** 는 *상태* 값을 사용 하 여 호스트 환경으로 제어를 반환 하 여 **_exit** 를 호출 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

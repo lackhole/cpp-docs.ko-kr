@@ -1,12 +1,12 @@
 ---
 title: sscanf, _sscanf_l, swscanf, _swscanf_l
 ms.date: 08/29/2019
-apiname:
+api_name:
 - swscanf
 - sscanf
 - _sscanf_l
 - _swscanf_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _sscanf_l
 - _stscanf
@@ -40,12 +43,12 @@ helpviewer_keywords:
 - sscanf_l function
 - stscanf_l function
 ms.assetid: c2dcf0d2-9798-499f-a4a8-06f7e2b9a80c
-ms.openlocfilehash: ac8bc14fed554c2ea5cede7f37c1dc49f4740bf3
-ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
+ms.openlocfilehash: e3b453166278fff4c3230cb51895c487319e33d9
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70177424"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70958239"
 ---
 # <a name="sscanf-_sscanf_l-swscanf-_swscanf_l"></a>sscanf, _sscanf_l, swscanf, _swscanf_l
 
@@ -102,7 +105,7 @@ int _swscanf_l(
 
 ## <a name="remarks"></a>설명
 
-**Sscanf** 함수는 *버퍼* 에서 각 *인수*에 지정 된 위치로 데이터를 읽습니다. 모든 *인수* 는 형식의 형식 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. *Format* 인수는 입력 필드의 해석을 제어 하 고 **scanf** 함수에 대 한 *format* 인수와 동일한 폼 및 함수를 포함 합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+**Sscanf** 함수는 *버퍼* 에서 각 *인수*에 지정 된 위치로 데이터를 읽습니다. 모든 *인수* *는 형식의 형식*지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. *Format* 인수는 입력 필드의 해석을 제어 하 고 **scanf** 함수에 대 한 *format* 인수와 동일한 폼 및 함수를 포함 합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
 Scanf 형식 필드 문자에 대 한 자세한 내용은 [Scanf 형식 필드 문자](../scanf-type-field-characters.md)를 참조 하세요. Scanf 서식 지정 필드에 대 한 자세한 내용은 [서식 지정 필드](../format-specification-fields-scanf-and-wscanf-functions.md)를 참조 하세요.
 

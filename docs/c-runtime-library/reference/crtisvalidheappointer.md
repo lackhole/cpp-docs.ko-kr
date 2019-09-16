@@ -1,9 +1,9 @@
 ---
 title: _CrtIsValidHeapPointer
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtIsValidHeapPointer
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtlsValidHeapPointer
 - _CrtIsValidHeapPointer
@@ -22,14 +25,14 @@ helpviewer_keywords:
 - _CrtIsValidHeapPointer function
 - CrtIsValidHeapPointer function
 ms.assetid: caf597ce-1b05-4764-9f37-0197a982bec5
-ms.openlocfilehash: cdfb02c622cddc4c86a99f614e469abc527d8845
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a8746eb2da90ac5515d92113b977011a4647fe6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339392"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942392"
 ---
-# <a name="crtisvalidheappointer"></a>_CrtIsValidHeapPointer
+# <a name="_crtisvalidheappointer"></a>_CrtIsValidHeapPointer
 
 지정된 포인터가 일부 C 런타임 라이브러리에서 할당된 힙에 있는지 확인하지만 호출자의 CRT 라이브러리에서 할당된 힙에 있는지는 확인하지 않을 수 있습니다. Visual Studio 2010 이전 CRT 버전에서 이 멤버는 지정된 포인터가 로컬 힙에 있는지 확인합니다(디버그 버전에만 해당).
 
@@ -48,11 +51,11 @@ int _CrtIsValidHeapPointer(
 
 ## <a name="return-value"></a>반환 값
 
-**_CrtIsValidHeapPointer** 지정 된 포인터가 모든 CRT 라이브러리 인스턴스에서 공유 되는 힙에 있으면 TRUE를 반환 합니다. Visual Studio 2010 이전 CRT 버전에서 이 멤버는 지정된 포인터가 로컬 힙에 있으면 true를 반환합니다. 그렇지 않은 경우 이 함수는 FALSE를 반환합니다.
+**_CrtIsValidHeapPointer** 는 지정 된 포인터가 모든 CRT 라이브러리 인스턴스에서 공유 되는 힙에 있는 경우 TRUE를 반환 합니다. Visual Studio 2010 이전 CRT 버전에서 이 멤버는 지정된 포인터가 로컬 힙에 있으면 true를 반환합니다. 그렇지 않은 경우 이 함수는 FALSE를 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-이 함수는 사용하지 않는 것이 좋습니다. Visual Studio 2010 CRT 라이브러리부터 모든 CRT 라이브러리에서는 하나의 OS 힙인 *프로세스 힙*을 공유합니다. 합니다 **_CrtIsValidHeapPointer** 있는지 여부를 포인터에에서 할당 된 CRT 힙에서 아닌 호출자의 CRT 라이브러리에서 할당 된 보고 합니다. 예를 들어 CRT 라이브러리의 Visual Studio 2010 버전을 사용하여 할당된 블록을 살펴보겠습니다. 경우는 **_CrtIsValidHeapPointer** CRT 라이브러리의 Visual Studio 2012 버전에서 내보낸 함수 포인터를 테스트, TRUE를 반환 합니다. 이 테스트는 더 이상 유용한 테스트가 아닙니다. Visual Studio 2010 이전 CRT 라이브러리 버전에서 이 함수는 특정 메모리 주소가 로컬 힙 내에 있는지 확인하는 데 사용됩니다. 로컬 힙은 C 런타임 라이브러리의 특정 인스턴스에서 만들어지고 관리되는 힙을 나타냅니다. DLL(동적 연결 라이브러리)에는 런타임 라이브러리에 대한 정적 링크가 들어 있으면 애플리케이션의 로컬 힙과 관계없이 런타임 힙의 고유한 인스턴스가 포함되고 이에 따라 고유한 힙이 포함됩니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtIsValidHeapPointer** 전처리 중 제거 됩니다.
+이 함수는 사용하지 않는 것이 좋습니다. Visual Studio 2010 CRT 라이브러리부터 모든 CRT 라이브러리에서는 하나의 OS 힙인 *프로세스 힙*을 공유합니다. **_CrtIsValidHeapPointer** 함수는 포인터가 crt 힙에서 할당 되었는지 여부를 보고 하지만 호출자의 crt 라이브러리에서 할당 되었는지 여부를 보고 합니다. 예를 들어 CRT 라이브러리의 Visual Studio 2010 버전을 사용하여 할당된 블록을 살펴보겠습니다. CRT 라이브러리의 Visual Studio 2012 버전에서 내보낸 **_CrtIsValidHeapPointer** 함수가 포인터를 테스트 하는 경우 TRUE를 반환 합니다. 이 테스트는 더 이상 유용한 테스트가 아닙니다. Visual Studio 2010 이전 CRT 라이브러리 버전에서 이 함수는 특정 메모리 주소가 로컬 힙 내에 있는지 확인하는 데 사용됩니다. 로컬 힙은 C 런타임 라이브러리의 특정 인스턴스에서 만들어지고 관리되는 힙을 나타냅니다. DLL(동적 연결 라이브러리)에는 런타임 라이브러리에 대한 정적 링크가 들어 있으면 애플리케이션의 로컬 힙과 관계없이 런타임 힙의 고유한 인스턴스가 포함되고 이에 따라 고유한 힙이 포함됩니다. [_Debug](../../c-runtime-library/debug.md) 가 정의 되지 않은 경우 전처리 중에 **_CrtIsValidHeapPointer** 에 대 한 호출이 제거 됩니다.
 
 이 함수는 TRUE 또는 FALSE를 반환하므로 이를 [_ASSERT](assert-asserte-assert-expr-macros.md) 매크로 중 하나로 전달하여 간단한 디버깅 오류 처리 메커니즘을 만들 수 있습니다. 다음 예제에서는 지정된 주소가 로컬 힙 내에 없을 경우 어설션 오류가 발생하는 경우를 보여 줍니다.
 
@@ -60,7 +63,7 @@ int _CrtIsValidHeapPointer(
 _ASSERTE( _CrtIsValidHeapPointer( userData ) );
 ```
 
-방법에 대 한 자세한 내용은 **_CrtIsValidHeapPointer** 내용은 다른 디버그 함수 및 매크로 함께 사용할 수 있습니다 [보고서 매크로](/visualstudio/debugger/macros-for-reporting)합니다. 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
+다른 디버그 함수 및 매크로와 함께 **_CrtIsValidHeapPointer** 를 사용 하는 방법에 대 한 자세한 내용은 [보고 매크로](/visualstudio/debugger/macros-for-reporting)를 참조 하세요. 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

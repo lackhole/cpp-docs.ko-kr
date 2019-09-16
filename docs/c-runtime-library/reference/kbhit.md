@@ -1,9 +1,9 @@
 ---
 title: _kbhit
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _kbhit
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _kbhit
 - kbhit
@@ -30,14 +33,14 @@ helpviewer_keywords:
 - _kbhit function
 - keyboards, checking input
 ms.assetid: e82a1cc9-bbec-4150-b678-a7e433220fe4
-ms.openlocfilehash: 9133d73e92438327bb2381e3293fd37076dd27ee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 49c8df1a2c600ad3976babea0b560108ea69efd8
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286481"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953511"
 ---
-# <a name="kbhit"></a>_kbhit
+# <a name="_kbhit"></a>_kbhit
 
 콘솔에서 키보드 입력을 확인합니다.
 
@@ -53,11 +56,11 @@ int _kbhit( void );
 
 ## <a name="return-value"></a>반환 값
 
-**_kbhit** 는 키를 누를 경우 0이 아닌 값을 반환 합니다. 그렇지 않으면 0을 반환합니다.
+**_kbhit** 는 키를 누른 경우 0이 아닌 값을 반환 합니다. 그렇지 않으면 0을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_kbhit** 함수는 콘솔에서 최근의 키 입력을 확인 합니다. 이 함수가 0이 아닌 값을 반환하면 키 입력이 버퍼에서 대기 중인 것입니다. 프로그램을 호출할 수 있습니다 **_getch** 하거나 **_getche** 키 입력을 가져오려고 합니다.
+**_Kbhit** 함수는 콘솔에서 최근의 키 입력을 확인 합니다. 이 함수가 0이 아닌 값을 반환하면 키 입력이 버퍼에서 대기 중인 것입니다. 그러면 프로그램에서 **_getch** 또는 **_getche** 를 호출 하 여 키 입력을 가져올 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 

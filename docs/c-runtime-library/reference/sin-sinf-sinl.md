@@ -1,11 +1,11 @@
 ---
 title: sin, sinf, sinl
 ms.date: 04/10/2018
-apiname:
+api_name:
 - sinl
 - sinf
 - sin
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _sinl
 - sinf
@@ -31,12 +34,12 @@ helpviewer_keywords:
 - trigonometric functions
 - sinf function
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
-ms.openlocfilehash: 7006d7246837e5dc69733a007b3f7dab1c55280e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e4ef8ac08ada6162932bbf9b872f30e6aa88b79b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356254"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948069"
 ---
 # <a name="sin-sinf-sinl"></a>sin, sinf, sinl
 
@@ -62,18 +65,18 @@ long double sin(long double x);  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **sin** 의 사인을 반환 하는 함수 *x*합니다. 하는 경우 *x* 가 보다 큰 263 같거나 작거나 같거나-263, 결과에 중요 한 손실이 발생 합니다.
+**Sin** 함수는 *x*의 사인을 반환 합니다. *X* 가 263 보다 크거나 같은 경우 또는-263 보다 작거나 같은 경우 결과에 중요 한 손실이 발생 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
 |± QNAN,IND|없음|_DOMAIN|
-|∞ (sin, sinf, sinl)|INVALID|_DOMAIN|
+|± ∞ (sin, sinf, sinf)|INVALID|_DOMAIN|
 
 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **sin** 및 반환 하는 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **sin** 항상 받아서 반환 **double**합니다.
+는 C++ 오버 로드를 허용 하므로 **float** 또는 **long** **double** 값을 사용 하 고 반환 하는 **sin** 오버 로드를 호출할 수 있습니다. C 프로그램에서 **sin** 은 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,11 +1,11 @@
 ---
 title: acos, acosf, acosl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - acosf
 - acos
 - acosl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - acos
 - acosl
@@ -31,12 +34,12 @@ helpviewer_keywords:
 - trigonometric functions
 - arccosine function
 ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
-ms.openlocfilehash: 22149e9ff552015238d34a15166d04115438534b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e8aba1104af5855db9cb4f3cbb989d182b2c78e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335674"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939999"
 ---
 # <a name="acos-acosf-acosl"></a>acos, acosf, acosl
 
@@ -58,13 +61,13 @@ long double acos( long double x );   // C++ only
 ### <a name="parameters"></a>매개 변수
 
 *x*<br/>
-아크코사인 (역 코사인)을 계산 하는 1에서 1 사이의 값입니다.
+아크코사인 (역 코사인)을 계산 하는-1과 1 사이의 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **acos** 의 아크코사인을 반환 하는 함수 *x* π 범위의 0입니다.
+**Acos** 함수는 0 ~ π 라디안 범위의 *x* 아크코사인을 반환 합니다.
 
-기본적으로 하는 경우 *x* -1 보다 작거나 1 보다 크면 **acos** 는 무한 한 값을 반환 합니다.
+기본적으로 *x* 가-1 보다 작거나 1 보다 큰 경우 **acos** 는 무한을 반환 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -74,7 +77,7 @@ long double acos( long double x );   // C++ only
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **acos** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **acos** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 형식을 사용 하 고 반환 하는 **acos** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **acos** 은 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

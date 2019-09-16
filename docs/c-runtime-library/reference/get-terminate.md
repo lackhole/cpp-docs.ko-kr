@@ -1,9 +1,9 @@
 ---
 title: _get_terminate
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_terminate
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - get_terminate
 - _get_terminate
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - get_terminate function
 - _get_terminate function
 ms.assetid: c8f168c4-0ad5-4832-a522-dd1ef383c208
-ms.openlocfilehash: 438bd287738f121efb436857c54c5a68427d9fb4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a9bfb6f8be1c990b349f14055eb2fe5c409e0d5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331911"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955688"
 ---
-# <a name="getterminate"></a>_get_terminate
+# <a name="_get_terminate"></a>_get_terminate
 
-호출할 종료 루틴을 반환 합니다 **종료**합니다.
+**Terminate**에서 호출할 종료 루틴을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,7 +47,7 @@ terminate_function _get_terminate( void );
 
 ## <a name="return-value"></a>반환 값
 
-[set_terminate](set-terminate-crt.md)로 등록된 함수에 대한 포인터를 반환합니다. 기본 동작을 복원 하려면 반환 값을 사용할 수 없는 함수를 설정한 경우 이 값이 있을 **NULL**합니다.
+[set_terminate](set-terminate-crt.md)로 등록된 함수에 대한 포인터를 반환합니다. 함수가 설정 되지 않은 경우 반환 값을 사용 하 여 기본 동작을 복원할 수 있습니다. 이 값은 **NULL**일 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 

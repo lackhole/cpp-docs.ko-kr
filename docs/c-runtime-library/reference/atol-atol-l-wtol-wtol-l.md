@@ -1,12 +1,12 @@
 ---
 title: atol, _atol_l, _wtol, _wtol_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - atol
 - _wtol_l
 - _wtol
 - _atol_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _atol_l
 - _ttol_l
@@ -43,14 +46,14 @@ helpviewer_keywords:
 - wtol function
 - _wtol function
 ms.assetid: cedfc21c-2d64-4e9c-bd04-bdf60b12db46
-ms.openlocfilehash: 486b6dc3bdfbbaf4b7becadde76768a0bb1c7c00
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 04a2951a48e6dd2c3820551e0fc603ad4ed81086
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347810"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943588"
 ---
-# <a name="atol-atoll-wtol-wtoll"></a>atol, _atol_l, _wtol, _wtol_l
+# <a name="atol-_atol_l-_wtol-_wtol_l"></a>atol, _atol_l, _wtol, _wtol_l
 
 문자열을 long 정수로 변환합니다.
 
@@ -83,25 +86,25 @@ long _wtol_l(
 
 ## <a name="return-value"></a>반환 값
 
-각 함수가 반환 하는 **긴** 입력된 문자를 숫자로 해석 하 여 생성 된 값입니다. 반환 값이에 대해 0l **atol** 해당 형식의 값으로 입력을 변환할 수 없는 경우.
+각 함수는 입력 문자를 숫자로 해석 하 여 생성 된 **long** 값을 반환 합니다. 입력을 해당 형식의 값으로 변환할 수 없는 경우 **atol** 에 대 한 반환 값은 0l입니다.
 
-큰 양의 정수 값을 사용 하는 오버플로의 경우 **atol** 반환 **LONG_MAX**큰 음의 정수 값을 사용 하는 오버플로의 경우 **LONG_MIN** 됩니다 반환 됩니다. 모든 범위를 벗어난 경우에 **errno** 로 설정 된 **ERANGE**합니다. 전달 된 매개 변수 인지 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 0을 반환 합니다.
+큰 양의 정수 값을 사용 하는 오버플로의 경우 **atol** 는 **LONG_MAX**를 반환 합니다. 긴 음의 정수 값을 사용 하는 오버플로의 경우 **LONG_MIN** 이 반환 됩니다. 범위를 벗어난 모든 경우에는 **errno** 가 **ERANGE**로 설정 됩니다. 전달 된 매개 변수가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 문자열을 정수 (long) 값으로 변환 (**atol**).
+이러한 함수는 문자열을 정수 (long) 값 (**atol**)으로 변환 합니다.
 
 입력 문자열은 지정된 형식의 숫자 값으로 해석될 수 있는 문자 시퀀스입니다. 함수는 숫자의 일부로 인식할 수 없는 첫 번째 문자에서 입력 문자열 읽기를 중지합니다. 이 문자는 문자열을 종결하는 null 문자('\0' 또는 L'\0')일 수 있습니다.
 
-합니다 *str* 인수를 **atol** 다음과 같은 형식을 갖습니다.
+**Atol** 에 대 한 *str* 인수 형식은 다음과 같습니다.
 
 > [*whitespace*] [*sign*] [*digits*]]
 
-A *공백* 무시 되는 공백 또는 탭 문자로 구성 됩니다 *로그인* 는 더하기 (+) 또는 빼기 (-) 이며 및 *숫자* 하나 이상의 숫자가 됩니다.
+공백은 무시 되는 공백 또는 탭 *문자로 구성 됩니다* . *sign* 은 더하기 (+) 또는 빼기 (-) 중 하나입니다. *숫자* 는 하나 이상의 숫자입니다.
 
-**_wtol** 동일 **atol** 제외 하 고 와이드 문자 문자열을 사용 합니다.
+**_wtol** 는 와이드 문자열을 사용 한다는 점을 제외 하 고 **atol** 와 동일 합니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -119,7 +122,7 @@ A *공백* 무시 되는 공백 또는 탭 문자로 구성 됩니다 *로그인
 
 ## <a name="example"></a>예제
 
-이 프로그램을 사용 하 여 숫자 값을 문자열로 저장 된 숫자를 변환할 수 하는 방법을 보여 줍니다 합니다 **atol** 함수입니다.
+이 프로그램은 **atol** 함수를 사용 하 여 문자열로 저장 된 숫자를 숫자 값으로 변환할 수 있는 방법을 보여 줍니다.
 
 ```C
 // crt_atol.c

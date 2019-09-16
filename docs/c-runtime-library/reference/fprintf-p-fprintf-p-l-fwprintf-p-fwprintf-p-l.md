@@ -1,12 +1,12 @@
 ---
 title: _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fwprintf_p
 - _fprintf_p_l
 - _fwprintf_p_l
 - _fprintf_p
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _fprintf_p
 - _ftprintf_p
@@ -41,14 +44,14 @@ helpviewer_keywords:
 - ftprintf_p_l function
 - fwprintf_p_l function
 ms.assetid: 46b082e1-45ba-4383-9ee4-97015aa50bc6
-ms.openlocfilehash: db9e9a746193c7bf35913d6792d87aa9ba85fa79
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6509aba4097b3b37443443b533ebd9fb92c923a1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333146"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956995"
 ---
-# <a name="fprintfp-fprintfpl-fwprintfp-fwprintfpl"></a>_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
+# <a name="_fprintf_p-_fprintf_p_l-_fwprintf_p-_fwprintf_p_l"></a>_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
 
 서식이 지정된 데이터를 스트림으로 출력합니다.
 
@@ -95,20 +98,20 @@ int _fwprintf_p_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_fprintf_p** 하 고 **_fwprintf_p** 작성 된 문자 수를 반환 하거나 출력 오류가 발생 하는 경우 음수 값을 반환 합니다.
+**_fprintf_p** 및 **_fwprintf_p** 는 출력 오류가 발생 하는 경우 작성 된 문자 수를 반환 하거나 음수 값을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_fprintf_p** 형식을 지정 하 고 일련의 문자 및 출력 값을 인쇄 *스트림*합니다. 각 함수 *인수* (있는 경우) 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. 에 대 한 **_fprintf_p**서 *형식* 인수가 동일한 구문 및 사용에 있는 **_printf_p**합니다. 이러한 함수는 위치 매개 변수를 지원하므로 서식 문자열에서 사용된 매개 변수의 순서를 변경할 수 있습니다. 위치 매개 변수에 대한 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
+**_sanintf_p** 형식을 지정 하 여 일련의 문자 및 값을 출력 *스트림에*출력 합니다. 각 함수 *인수* (있는 경우)는 *형식의*해당 형식 지정에 따라 변환 되 고 출력 됩니다. **_Fprintf_p**의 경우 *format* 인수는 **_intf_p**에서 사용 하는 것과 동일한 구문과 사용을 갖습니다. 이러한 함수는 위치 매개 변수를 지원하므로 서식 문자열에서 사용된 매개 변수의 순서를 변경할 수 있습니다. 위치 매개 변수에 대한 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
-**_fwprintf_p** 의 와이드 문자 버전이 **_fprintf_p**; **_fwprintf_p**를 *형식* 는 와이드 문자 문자열입니다. 스트림이 ANSI 모드에서 열리는 경우 이러한 함수는 동일하게 작동합니다. **_fprintf_p** 유니코드 스트림으로 출력을 현재 지원 하지 않습니다.
+**_fwprintf_p** 는 **efprintf_l**의 와이드 문자 버전입니다. **_fwprintf_p**에서 *format* 은 와이드 문자 문자열입니다. 스트림이 ANSI 모드에서 열리는 경우 이러한 함수는 동일하게 작동합니다. **_fprintf_p** 는 현재 유니코드 스트림에 대 한 출력을 지원 하지 않습니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 > [!IMPORTANT]
 > *format*이 사용자 정의 문자열이 아닌지 확인하세요.
 
-안전 하지 않은 버전과 같이 (참조 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), 이러한 함수는 매개 변수 유효성 검사 및에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개변수유효성검사](../../c-runtime-library/parameter-validation.md)경우, *스트림* 또는 *형식* 가 null 포인터 이거나 알 수 없거나 잘못 된 형식의 서식 지정 자가 있는 경우. 함수는 계속 실행 하도록 허용,-1을 반환 하 고 설정 **errno** 하 **EINVAL**합니다.
+안전 하지 않은 버전 ( [fprintf, _fintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)참조)과 마찬가지로 이러한 함수는 매개 [변수 유효성을](../../c-runtime-library/parameter-validation.md)검사 하 고 *스트림* 또는  *format* 이 null 포인터 이거나 알 수 없거나 잘못 된 형식의 형식 지정 자가 있는 경우입니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

@@ -1,10 +1,10 @@
 ---
 title: _putc_nolock, _putwc_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _putc_nolock
 - _putwc_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _puttc_nolock
 - puttc_nolock
@@ -34,14 +37,14 @@ helpviewer_keywords:
 - _puttc_nolock function
 - _putwc_nolock function
 ms.assetid: 3cfc7f21-c9e8-4b7f-b0fb-af0d4d85e7e1
-ms.openlocfilehash: b2a30b83f0746b1b4f5ab03b4c3dfa0229656bb9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fdec6373f79fd711b371014fc58e17c190a26e95
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285130"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950127"
 ---
-# <a name="putcnolock-putwcnolock"></a>_putc_nolock, _putwc_nolock
+# <a name="_putc_nolock-_putwc_nolock"></a>_putc_nolock, _putwc_nolock
 
 스레드를 잠그지 않고 스트림에 문자를 씁니다.
 
@@ -72,9 +75,9 @@ wint_t _putwc_nolock(
 
 ## <a name="remarks"></a>설명
 
-**_putc_nolock** 하 고 **_putwc_nolock** 없는 버전과 동일 합니다 **_nolock** 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하면 접미사가 있습니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**_putc_noand** **_putwc_nolock** 는 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하면 **_nolock** 접미사가 없는 버전과 동일 합니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
-**_putwc_nolock** 의 와이드 문자 버전이 **_putc_nolock**; 두 함수는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 작동 합니다. **_putc_nolock** 유니코드 스트림으로 출력을 현재 지원 하지 않습니다.
+**_putwc_nolock** 는 **_putc_nolock**의 와이드 문자 버전입니다. 두 함수는 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 동작 합니다. **_putc_nolock** 은 현재 UNICODE 스트림에 대 한 출력을 지원 하지 않습니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -89,7 +92,7 @@ wint_t _putwc_nolock(
 |**_putc_nolock**|\<stdio.h>|
 |**_putwc_nolock**|\<stdio.h> 또는 \<wchar.h>|
 
-콘솔 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 콘솔을 사용 하 여 연결 된 표준 스트림 핸들 **stdin**하십시오 **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout**및 **stderr**에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="libraries"></a>라이브러리
 

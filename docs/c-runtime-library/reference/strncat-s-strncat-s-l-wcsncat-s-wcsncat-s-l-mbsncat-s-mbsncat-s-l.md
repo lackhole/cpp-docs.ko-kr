@@ -1,14 +1,14 @@
 ---
 title: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wcsncat_s_l
 - wcsncat_s
 - _mbsncat_s_l
 - _mbsncat_s
 - strncat_s
 - _strncat_s_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -22,7 +22,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - strncat_s_l
 - _mbsncat_s_l
@@ -48,19 +51,19 @@ helpviewer_keywords:
 - wcsncat_s_l function
 - mbsncat_s function
 ms.assetid: de77eca2-4d9c-4e66-abf2-a95fefc21e5a
-ms.openlocfilehash: 6651bb6ac405ed51945f021e8d1e19f1db05d5e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2a3c8d7019c271b2673e85e124d50139d34866c6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209898"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947401"
 ---
-# <a name="strncats-strncatsl-wcsncats-wcsncatsl-mbsncats-mbsncatsl"></a>strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
+# <a name="strncat_s-_strncat_s_l-wcsncat_s-_wcsncat_s_l-_mbsncat_s-_mbsncat_s_l"></a>strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 
 문자열에 문자를 추가합니다. 이러한 버전의 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 향상된 보안 기능이 포함되어 있습니다.
 
 > [!IMPORTANT]
-> **_mbsncat_s** 하 고 **_mbsncat_s_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsncat_s** 및 **_mbsncat_s_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -168,17 +171,17 @@ Null 종료 소스 문자열입니다.
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*strDestination*|*numberOfElements*|*strSource*|반환 값|내용을 *strDestination*|
+|*strDestination*|*numberOfElements*|*strSource*|반환 값|*Strdestination* 의 내용|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|**NULL** 또는 종료 되지 않음|any|any|**EINVAL**|수정 안 됨|
+|**NULL** 또는 종결 되지 않음|any|any|**EINVAL**|수정 안 됨|
 |any|any|**NULL**|**EINVAL**|수정 안 됨|
 |any|0 또는 너무 작음|any|**ERANGE**|수정 안 됨|
 
 ## <a name="remarks"></a>설명
 
-이러한 함수를 첫 번째를 추가 하려고 시도할 *D* 자의 *strSource* 끝 *strDest*여기서 *D* 중더작은값은*개수* 의 길이 *strSource*합니다. 추가 된 경우 *D* 문자 내에 맞는 *strDest* (크기가으로 제공 됩니다 *numberOfElements*) null 종결자를 이러한 문자에 여전히 확보 하 고 null 종료 원래부터 추가 되기 *strDest*, 새 종료 null이 고, 그렇지 않으면 추가 하 고 *strDest*[0]로 설정 되는 null 문자 고 잘못 된 매개 변수 에 설명 된 대로 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다.
+이러한 함수는 *Strsource* 의 첫 *D* 문자를 *strsource*의 끝에 추가 합니다. 여기서 *D* 는 개수와 *strsource*의 길이 중 더 작은 *수* 입니다. 이러한 *D* 문자를 추가 하는 것이 *strdest* (크기가 *numberofelements*로 제공 됨) 내에 포함 되 고 여전히 null 종결자를 위한 공간을 유지 하는 경우 해당 문자는의 *원래 종료 null에서 시작 하 여 추가 됩니다. strDest*와 새 종료 null이 추가 됩니다. 그렇지 않으면 *Strdest*[0]이 null 문자로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
 
-위 단락의 설명에는 예외가 적용됩니다. 경우 *개수* 됩니다 [_TRUNCATE](../../c-runtime-library/truncate.md) 만큼의 *strSource* 만큼가 추가 되며 *strDest* 추가할 포함할 공간은 남겨를 null 종료합니다.
+위 단락의 설명에는 예외가 적용됩니다. *Count* 가 [_truncate](../../c-runtime-library/truncate.md) 인 경우 종료 null을 추가할 수 있는 공간을 유지 하면서 *strsource* 에 *자동으로 추가* 됩니다.
 
 예를 들면 다음과 같습니다.
 
@@ -188,15 +191,15 @@ strncpy_s(dst, _countof(dst), "12", 2);
 strncat_s(dst, _countof(dst), "34567", 3);
 ```
 
-요청 하는 것을 의미 **strncat_s** 버퍼 5의에서 2 자에 3 자를 추가 하도록 바이트 길이의 이렇게 하면 null 종결자에 공백이 없습니다. 따라서 **strncat_s** 문자열을 0으로 잘못 된 매개 변수 처리기를 호출 합니다.
+는 세 문자를 버퍼의 5 자 길이에 추가 하도록 **strncat_s** 에 요청 하는 것을 의미 합니다. 이렇게 하면 null 종결자를 위한 공간이 확보 되지 않으므로 문자열을 0 **strncat_s** 하 고 잘못 된 매개 변수 처리기를 호출 합니다.
 
-잘라내기 동작이 필요한 경우 사용 **_TRUNCATE** 조정 또는 합니다 *크기* 매개 변수 적절 하 게 합니다.
+잘림 동작이 필요한 경우에는 TRUNCATE 또는 *size* 매개 변수를 적절 하 게 조정 합니다 **(_d)** .
 
 ```C
 strncat_s(dst, _countof(dst), "34567", _TRUNCATE);
 ```
 
-또는
+로 구분하거나 여러
 
 ```C
 strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
@@ -204,9 +207,9 @@ strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
 
 모든 경우 결과 문자열은 null 문자로 종료됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
-경우 *strSource* 또는 *strDest* 됩니다 **NULL**에 없거나 *numberOfElements* 가 0 이면에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **EINVAL** 해당 매개 변수를 수정 하지 않고 있습니다.
+*Strsource* 또는 *Strsource* 가 **NULL**이거나 *Numberofelements* 가 0 이면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 함수는 매개 변수를 수정 하지 않고 **EINVAL** 를 반환 합니다.
 
-**wcsncat_s** 하 고 **_mbsncat_s** 와이드 문자 및 멀티 바이트 문자 버전입니다 **strncat_s**합니다. 반환 값과 문자열 인수 **wcsncat_s** 은 와이드 문자열이 고 **_mbsncat_s** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**wcsncat_s** 및 **_mbsncat_s** 는 **strncat_s**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **Wcsncat_s** 의 문자열 인수와 반환 값은 와이드 문자 문자열입니다. **_mbsncat_s** 의 해당 문자는 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -221,7 +224,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 |**_tcsncat_s**|**strncat_s**|**_mbsnbcat_s**|**wcsncat_s**|
 |**_tcsncat_s_l**|**_strncat_s_l**|**_mbsnbcat_s_l**|**_wcsncat_s_l**|
 
-**_strncat_s_l** 하 고 **_wcsncat_s_l** 은 로캘에 종속 되지 않으면 용 으로만 제공 됩니다 **_tcsncat_s_l**합니다.
+**_strncat_s_l** 및 **_wcsncat_s_l** 에는 로캘 종속성이 없습니다. **_tcsncat_s_l**에 대해서만 제공 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

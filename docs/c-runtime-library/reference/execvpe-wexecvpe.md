@@ -1,10 +1,10 @@
 ---
 title: _execvpe, _wexecvpe
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _execvpe
 - _wexecvpe
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-process-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wexecvpe
 - execvpe
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - _wexecvpe function
 - _execvpe function
 ms.assetid: c0c3c986-d9c0-4814-a96c-10f0b3092766
-ms.openlocfilehash: 064f8b94a9a97795015c09c11cd56e0370dcc60c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eab63cd54d410daf1dd4d09fb3d904feca0a230d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339405"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941735"
 ---
-# <a name="execvpe-wexecvpe"></a>_execvpe, _wexecvpe
+# <a name="_execvpe-_wexecvpe"></a>_execvpe, _wexecvpe
 
 새 자식 프로세스를 로드하고 실행합니다.
 
@@ -70,7 +73,7 @@ intptr_t _wexecvpe(
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1 나타냅니다 오류가 있는 경우에 **errno** 전역 변수가 설정 됩니다.
+성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값-1은 오류를 나타내며,이 경우 **errno** 전역 변수가 설정 됩니다.
 
 |**errno** 값|설명|
 |-------------------|-----------------|
@@ -85,9 +88,9 @@ intptr_t _wexecvpe(
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수는 새 프로세스를 로드 및 실행하고, 명령줄 인수에 대한 포인터 배열 및 환경 설정에 대한 포인터 배열을 전달합니다. 이러한 함수를 사용 합니다 **경로** 환경 변수를 실행 하려면 파일을 찾습니다.
+이러한 각 함수는 새 프로세스를 로드 및 실행하고, 명령줄 인수에 대한 포인터 배열 및 환경 설정에 대한 포인터 배열을 전달합니다. 이러한 함수는 **PATH** 환경 변수를 사용 하 여 실행할 파일을 찾습니다.
 
-합니다 **_execvpe** 함수 매개 변수 유효성을 검사 합니다. 경우는 *cmdname* 가 null 포인터 이거나 *argv* null 포인터, 빈 배열에 대 한 포인터 또는 첫 번째 인수로 빈 문자열이 포함 된 배열에 대 한 포인터 이면 이러한 함수는 잘못 된 호출 에 설명 된 대로 매개 변수 처리기 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 고-1을 반환 합니다. 프로세스가 시작되지 않습니다.
+_Exatwaatststnoststnostststnost *Cmdname* 이 null 포인터 이거나 *argv* 가 null 포인터 이거나, 빈 배열에 대 한 포인터 이거나, 첫 번째 인수로 빈 문자열이 포함 된 배열에 대 한 포인터인 경우 이러한 함수는에 [설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md). 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고-1을 반환 합니다. 프로세스가 시작되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 

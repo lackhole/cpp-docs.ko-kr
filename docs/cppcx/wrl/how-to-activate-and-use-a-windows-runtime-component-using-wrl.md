@@ -3,12 +3,12 @@ title: '방법: WRL를 사용 하 여 Windows 런타임 구성 요소 활성화 
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 54828f02-6af3-45d1-b965-d0104442f8d5
-ms.openlocfilehash: 9e15886e9045f15adb929678ba45023ce80fb084
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 59a031968933ab151dc97a8089aff629026f5ea5
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498397"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70926070"
 ---
 # <a name="how-to-activate-and-use-a-windows-runtime-component-using-wrl"></a>방법: WRL를 사용 하 여 Windows 런타임 구성 요소 활성화 및 사용
 
@@ -48,7 +48,7 @@ Windows 런타임 사용을 간소화 하기 위해 Windows 런타임 C++ 템플
 
    Windows 런타임는 정규화 된 이름을 사용 하 여 형식을 식별 합니다. `RuntimeClass_Windows_Foundation_Uri` 매개 변수는 Windows 런타임에서 제공 하 고 필요한 런타임 클래스 이름을 포함 하는 문자열입니다.
 
-4. URI`"http://www.microsoft.com"`를 나타내는 [Microsoft:: WRL:: 래퍼:: hstring](hstring-class.md) 변수를 초기화 합니다.
+4. URI`"https://www.microsoft.com"`를 나타내는 [Microsoft:: WRL:: 래퍼:: hstring](hstring-class.md) 변수를 초기화 합니다.
 
    [!code-cpp[wrl-consume-component#6](../codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_4.cpp)]
 

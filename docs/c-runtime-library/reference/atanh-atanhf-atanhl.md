@@ -1,11 +1,11 @@
 ---
 title: atanh, atanhf, atanhl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - atanhl
 - atanhf
 - atanh
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - atanhl
 - atanhf
@@ -27,12 +30,12 @@ helpviewer_keywords:
 - atanhl function
 - atanh funciton
 ms.assetid: 83a43b5b-2580-4461-854f-dc84236d9f32
-ms.openlocfilehash: 6044c40427e407ee9746867e4b04104c1ca29c7c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 539d015d5691f62f990faf650ab738f60066a2a6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341290"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939592"
 ---
 # <a name="atanh-atanhf-atanhl"></a>atanh, atanhf, atanhl
 
@@ -58,16 +61,16 @@ long double atanh( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **atanh** 의 역 쌍 곡 탄젠트 (원호의 하이퍼볼릭 탄젠트)를 반환 하는 함수 *x*합니다. 하는 경우 *x* -1 보다 작거나 1 보다 크거나 **errno** 로 설정 되어 **EDOM** 결과 quiet NaN입니다. 하는 경우 *x* 은 1 또는-1과 같으면 양 또는 음의 무한대가 각각 반환 되, 및 **errno** 로 설정 되어 **ERANGE**합니다.
+**Atanh** 함수는 *x*의 역 하이퍼볼릭 탄젠트 (원호 하이퍼볼릭 탄젠트)를 반환 합니다. *X* 가 1 보다 크거나-1 보다 작은 경우 **Errno** 는 **edom** 으로 설정 되 고 결과는 quiet NaN입니다. *X* 가 1 또는-1과 같으면 긍정 또는 음의 무한대가 각각 반환 되 고 **errno** 가 **ERANGE**로 설정 됩니다.
 
-|입력|SEH 예외|**Matherr** 예외|
+|입력|SEH 예외|**Matherr** 발생할|
 |-----------|-------------------|-------------------------|
 |± QNAN,IND|없음|없음|
-|*X* ≥ 1; *x* ≤ -1|없음|없음|
+|*X* ≥ 1; *x* ≤-1|없음|없음|
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **atanh** 및 반환 하는 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **atanh** 항상 받아서 반환 **double**합니다.
+는 C++ 오버 로드를 허용 하므로 **float** 또는 **long** **double** 값을 사용 하 고 반환 하는 **atanh** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **atanh** 는 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

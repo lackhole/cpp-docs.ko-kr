@@ -1,12 +1,12 @@
 ---
 title: isblank, iswblank, _isblank_l, _iswblank_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - isblank
 - _isblank_l
 - iswblank
 - _iswblank_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _iswblank_l
 - isblank
@@ -27,14 +30,14 @@ f1_keywords:
 - _isblank_l
 - iswblank
 ms.assetid: 33ce96c0-f387-411a-8283-c3d2a69e56bd
-ms.openlocfilehash: eb088c4056e2277e188d7f98a57dd36216d013ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 022eba0335facc597f0608d63cfb58e0146e0f23
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287081"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954513"
 ---
-# <a name="isblank-iswblank-isblankl-iswblankl"></a>isblank, iswblank, _isblank_l, _iswblank_l
+# <a name="isblank-iswblank-_isblank_l-_iswblank_l"></a>isblank, iswblank, _isblank_l, _iswblank_l
 
 정수가 공백 문자를 나타내는지 여부를 확인합니다.
 
@@ -67,11 +70,11 @@ int _iswblank_l(
 
 ## <a name="return-value"></a>반환 값
 
-각 이러한 루틴 0이 아닌 경우 반환 *c* 공백 또는 가로 탭 문자의 특정 표현인 또는 로캘별 텍스트 줄 내에서 단어를 구분 하는 데 사용 되는 문자 집합 중 하나입니다. **isblank** 이면 0이 아닌 값을 반환 *c* 는 공백 문자 (0x20) 또는 가로 탭 문자 (0x09). 에 대 한 테스트 조건의 결과 **isblank** 함수에 따라 달라 집니다 합니다 **LC_CTYPE** 범주 참조는 로캘의 자세한 설정, [setlocale, _wsetlocale](setlocale-wsetlocale.md). 없는 이러한 함수의 버전은는 **_l** 로캘 종속 동작에 대해 현재 로캘 사용 접미사; 않은 버전을 **_l** 접미사를 사용 하는 점을 제외 하면 동일 합니다 대신에 전달 되는 로캘. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+*C* 가 공백 또는 가로 탭 문자의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 하 고, 텍스트 줄 내에서 단어를 구분 하는 데 사용 되는 로캘별 문자 집합 중 하나입니다. **isblank** 는 *c* 가 공백 문자 (0x20) 또는 가로 탭 문자 (0x09) 인 경우 0이 아닌 값을 반환 합니다. **Isblank** 함수의 테스트 조건 결과는 로캘의 **LC_CTYPE** 범주 설정에 따라 달라 집니다. 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)을 참조 하세요. **_L** 접미사가 없는 이러한 함수 버전은 로캘 종속 동작에 현재 로캘을 사용 합니다. **_l** 접미사가 있는 버전은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-**iswblank** 이면 0이 아닌 값을 반환 *c* 표준 공간에 해당 하는 와이드 문자 또는 가로 탭 문자입니다.
+*c* 가 표준 공백 또는 가로 탭 문자에 해당 하는 와이드 문자인 경우 **iswblank** 는 0이 아닌 값을 반환 합니다.
 
-동작 **isblank** 하 고 **_isblank_l** 경우 정의 되지 않습니다 *c* EOF가 범위인 0부터 0xff까지 포괄 합니다. 디버그 CRT 라이브러리가 사용 되는 경우 및 *c* 함수 raise 이러한 값 중 하나가 아닌 한 어설션입니다.
+*C* 가 EOF가 아니거나 0에서 0xff 사이 (포함) 범위 내에 있는 경우 **isblank** 및 **_isblank_l** 의 동작이 정의 되지 않습니다. 디버그 CRT 라이브러리가 사용 되 고 *c* 가 이러한 값 중 하나가 아니면 함수는 어설션을 발생 시킵니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

@@ -1,10 +1,10 @@
 ---
 title: _mbctombb, _mbctombb_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbctombb_l
 - _mbctombb
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _mbctombb_l
 - _mbctombb
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - mbctombb function
 - _mbctombb_l function
 ms.assetid: d90970b8-71ff-4586-b6a2-f9ceb811f776
-ms.openlocfilehash: 7395d94a6ec18f989d4a7153425b7af406a0bf45
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b449dfae04f875c819f34422b9a0ae92e2b8a7c2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331599"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952524"
 ---
-# <a name="mbctombb-mbctombbl"></a>_mbctombb, _mbctombb_l
+# <a name="_mbctombb-_mbctombb_l"></a>_mbctombb, _mbctombb_l
 
 더블바이트 멀티바이트 문자를 해당 싱글바이트 멀티바이트 문자로 변환합니다.
 
@@ -64,15 +67,15 @@ unsigned int _mbctombb_l(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 **_mbctombb** 하 고 **_mbctombb_l** 에 해당 하는 단일 바이트 문자를 반환 합니다 *c*; 그렇지 않으면 반환 *c* .
+성공 하면 **_mbctombb** 및 **_mbctombb_l** 는 *c*에 해당 하는 싱글바이트 문자를 반환 합니다. 그렇지 않으면 *c*를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_mbctombb** 하 고 **_mbctombb_l** 함수는 지정 된 멀티 바이트 문자를를 해당 싱글바이트 멀티 바이트 문자로 변환 합니다. 문자 변환 될 0xDF 범위 0x20-0x7E 또는 0xA1-내 단일 바이트 문자를 일치 해야 합니다.
+**_Mbctombb** 및 **_mbctombb_l** 함수는 지정 된 멀티 바이트 문자를 해당 싱글바이트 멀티 바이트 문자로 변환 합니다. 문자는 변환 될 0x20-0x7E 또는 0xA1-0Xa1 범위 내 싱글바이트 문자에 해당 해야 합니다.
 
-출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 없이이 함수의 버전은는 **_l** 접미사가 로캘 종속 동작에 현재 로캘을 사용 버전을 합니다 **_l** 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 접미사가 동일 합니다. 대신 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_L** 접미사가 없는이 함수 버전은이 로캘 종속 동작에 현재 로캘을 사용 합니다. **_l** 접미사가 있는 버전은 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이전 버전에서는 **_mbctombb** 호출한 **zentohan**합니다. 사용 하 여 **_mbctombb** 대신 합니다.
+이전 버전에서 **_mbctombb** 는 **zentohan**라고 했습니다. 대신 **_mbctombb** 를 사용 해야 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,6 +1,6 @@
 ---
 title: 명령 라우팅
-ms.date: 11/04/2016
+ms.date: 09/06/2019
 helpviewer_keywords:
 - MFC, command routing
 - command handling [MFC], routing commands
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - handlers, command [MFC]
 - command routing
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-ms.openlocfilehash: ae9741a66e944b60dc38c1366353e43977e1ee7a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d1e1e59c56439c01655a1416df645ccc6922411
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165153"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907630"
 ---
 # <a name="command-routing"></a>명령 라우팅
 
-명령 작업을 수행하는 경우 사용자의 역할은 메시지 맵을 사용하여 명령과 해당 처리기 함수를 연결하는 것으로 제한됩니다. 이 작업에는 속성 창을 사용합니다. 또한 사용자는 대부분의 명령 처리기를 작성해야 합니다.
+명령을 사용 하 여 작업 하는 사용자의 책임은 [MFC 클래스 마법사](reference/mfc-class-wizard.md)를 사용 하는 작업 인 명령과 처리기 함수 간에 메시지 맵 연결을 설정 하는 것으로 제한 됩니다. 또한 명령 처리기에 대 한 코드를 작성 해야 합니다.
 
 일반적으로 Windows 메시지는 주 프레임 창에 전달되지만 명령 메시지는 나중에 다른 개체에 라우팅됩니다. 프레임워크는 명령 대상 개체의 표준 시퀀스를 통해 명령을 라우팅하고, 이 개체 중 하나에는 해당 명령에 대한 처리기가 포함됩니다. 각 명령 대상 개체는 자신의 메시지 맵을 확인하여 들어오는 메시지를 처리할 수 있는지 여부를 알아봅니다.
 
@@ -29,11 +29,11 @@ ms.locfileid: "62165153"
 
 1. 다른 명령 대상
 
-비용이 많이 드는 하는 방법은 처리기가 명령에 대 한 응답으로 수행 하는이 라우팅 메커니즘 비교 이며 라우팅의 비용이 낮습니다. 사용자가 사용자 인터페이스 개체와 상호 작용할 경우에만 프레임워크가 명령을 생성한다는 점을 명심하세요.
+이 라우팅 메커니즘은 명령에 대 한 응답으로 처리기가 수행 하는 작업에 비해 비용이 저렴 합니다. 사용자가 사용자 인터페이스 개체와 상호 작용할 경우에만 프레임워크가 명령을 생성한다는 점을 명심하세요.
 
 ### <a name="_core_standard_command_route"></a> 표준 명령 경로
 
-|명령을 수신하는 개체 형식 . .|자신 및 다른 명령 대상 개체가 명령을 처리하는 순서|
+|명령을 수신하는 개체 형식 을 선택합니다. 을 선택합니다.|자신 및 다른 명령 대상 개체가 명령을 처리하는 순서|
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 |MDI 프레임 창(`CMDIFrameWnd`)|1.  활성 `CMDIChildWnd`<br />2.  이 프레임 창<br />3.  응용 프로그램(`CWinApp` 개체)|
 |문서 프레임 창(`CFrameWnd`, `CMDIChildWnd`)|1.  활성 뷰<br />2.  이 프레임 창<br />3.  응용 프로그램(`CWinApp` 개체)|

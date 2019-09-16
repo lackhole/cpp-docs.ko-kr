@@ -1,6 +1,6 @@
 ---
 title: IRegistrar 인터페이스
-ms.date: 2/1/2017
+ms.date: 02/01/2017
 f1_keywords:
 - IRegistrar
 - ATLIFASE/ATL::IRegistrar
@@ -15,16 +15,16 @@ f1_keywords:
 helpviewer_keywords:
 - Iregistrar Interface
 ms.assetid: e88c04b7-0c93-4ae8-aeb9-ecd78f87421e
-ms.openlocfilehash: 984d95a1e0adb6835db7ca4bcabcff21f0be7beb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e347bdba1656a53cd705123a26650dad50d3892f
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62276018"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927762"
 ---
 # <a name="iregistrar-interface"></a>IRegistrar 인터페이스
 
-이 인터페이스 atliface.h에 정의 되어 있으며 내부적으로 사용 됩니다 CAtlModule 멤버 함수에 의해와 같은 [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced)합니다.
+이 인터페이스는 atliface. h에서 정의 되며 [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced)와 같은 CAtlModule 멤버 함수에서 내부적으로 사용 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,30 +34,30 @@ typedef interface IRegistrar IRegistrar;
 
 ## <a name="remarks"></a>설명
 
-항목을 참조 하세요 [를 사용 하 여 대체 가능 매개 변수 (The 등록자 전처리기)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) 대 한 자세한 내용은 합니다.
+자세한 내용은 [대체 가능한 매개 변수 (등록자의 전처리기) 사용](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) 항목을 참조 하세요.
 
 ## <a name="members"></a>멤버
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[IRegistrar::ResourceRegisterSz](#resourceregistersz)|리소스를 등록합니다. |
+|[IRegistrar::ResourceRegisterSz](#resourceregistersz)|리소스를 등록 합니다. |
 |[IRegistrar::ResourceUnregisterSz](#resourceunregistersz)| 리소스 등록을 취소 합니다.|
-|[IRegistrar::FileRegister](#fileregister)|파일을 등록합니다.|
-|[IRegistrar::FileUnregister](#fileunregister)|파일을 등록 취소합니다.|
-|[IRegistrar::StringRegister](#stringregister)|문자열을 등록합니다.|
-|[IRegistrar::StringUnregister](#stringunregister)|문자열을 등록 취소|
-|[IRegistrar::ResourceRegister](#resourceregister)|리소스를 등록합니다.|
+|[IRegistrar::FileRegister](#fileregister)|파일을 등록 합니다.|
+|[IRegistrar::FileUnregister](#fileunregister)|파일의 등록을 취소 합니다.|
+|[IRegistrar::StringRegister](#stringregister)|문자열을 등록 합니다.|
+|[IRegistrar::StringUnregister](#stringunregister)|문자열 등록 취소|
+|[IRegistrar::ResourceRegister](#resourceregister)|리소스를 등록 합니다.|
 |[IRegistrar::ResourceUnregister](#resourceunregister)|리소스 등록을 취소 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlifase.h
+**헤더:** atlifase
 
 ##  <a name="resourceregistersz"></a>  IRegistrar::ResourceRegisterSz
 
-리소스를 등록합니다.
+리소스를 등록 합니다.
 
 ```
 virtual HRESULT STDMETHODCALLTYPE ResourceRegisterSz(
@@ -79,7 +79,7 @@ virtual HRESULT STDMETHODCALLTYPE ResourceUnregisterSz(
 
 ##  <a name="fileregister"></a>  IRegistrar::FileRegister
 
-파일을 등록합니다.
+파일을 등록 합니다.
 
 ```
 virtual HRESULT STDMETHODCALLTYPE FileRegister(
@@ -88,7 +88,7 @@ virtual HRESULT STDMETHODCALLTYPE FileRegister(
 
 ##  <a name="fileunregister"></a>  IRegistrar::FileUnregister
 
-파일을 등록 취소합니다.
+파일의 등록을 취소 합니다.
 
 ```
 virtual HRESULT STDMETHODCALLTYPE FileUnregister(
@@ -97,7 +97,7 @@ virtual HRESULT STDMETHODCALLTYPE FileUnregister(
 
 ##  <a name="stringregister"></a>  IRegistrar::StringRegister
 
-지정 된 문자열 데이터를 등록합니다.
+지정 된 문자열 데이터를 등록 합니다.
 
 ```
 virtual HRESULT STDMETHODCALLTYPE StringRegister(
@@ -106,7 +106,7 @@ virtual HRESULT STDMETHODCALLTYPE StringRegister(
 
 ##  <a name="stringunregister"></a>  IRegistrar::StringUnregister
 
-지정 된 문자열 데이터를 등록 취소합니다.
+지정 된 문자열 데이터의 등록을 취소 합니다.
 
 ```
 virtualHRESULT STDMETHODCALLTYPE StringUnregister(
@@ -115,7 +115,7 @@ virtualHRESULT STDMETHODCALLTYPE StringUnregister(
 
 ##  <a name="resourceregister"></a>  IRegistrar::ResourceRegister
 
-리소스를 등록합니다.
+리소스를 등록 합니다.
 
 ```
 virtual HRESULT STDMETHODCALLTYPE ResourceRegister(
@@ -140,4 +140,4 @@ virtualHRESULT STDMETHODCALLTYPE ResourceUnregister(
 [대체 가능 매개 변수 사용(등록자 전처리기)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [모듈 클래스](../../atl/atl-module-classes.md)<br/>
-[레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)
+[레지스트리 구성 요소(등록자)](../../atl/atl-registry-component-registrar.md)

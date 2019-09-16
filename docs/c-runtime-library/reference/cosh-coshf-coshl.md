@@ -1,11 +1,11 @@
 ---
 title: cosh, coshf, coshl
 ms.date: 04/11/2018
-apiname:
+api_name:
 - cosh
 - coshf
 - coshl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cosh
 - coshf
@@ -28,16 +31,16 @@ helpviewer_keywords:
 - coshl function
 - trigonometric functions
 - hyperbolic functions
-ms.openlocfilehash: 0f55e084e760cb6d04dbe7ec4fefb5e2ac1d79fd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 446988e67ca6e3b4a3839a9336f1ea4e2755c124
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347446"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70938991"
 ---
 # <a name="cosh-coshf-coshl"></a>cosh, coshf, coshl
 
-쌍 곡 코사인을 계산합니다.
+쌍곡선 코사인을 계산 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -59,9 +62,9 @@ long double cosh( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-하이퍼볼릭 코사인 *x*합니다.
+*X*의 하이퍼볼릭 코사인입니다.
 
-기본적으로 결과에 너무 큰 경우는 **cosh**를 **coshf**, 또는 **coshl** 호출에서 반환 **HUGE_VAL** 설정**errno** 하 **ERANGE**합니다.
+기본적으로 **cosh**, **coshf**또는 **coshl** 호출에서 결과가 너무 크면 함수는 **HUGE_VAL** 를 반환 하 고 **errno** 를 **ERANGE**로 설정 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -70,7 +73,7 @@ long double cosh( long double x );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **cosh** 및 반환 하는 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **cosh** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하므로 **float** 또는 **long** **double** 값을 사용 하 고 반환 하는 **cosh** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **cosh** 는 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -82,7 +85,7 @@ long double cosh( long double x );  // C++ only
 
 ## <a name="example"></a>예제
 
-예제를 참조 하세요 [sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)합니다.
+[Sinh, sinhf, sinhf](sinh-sinhf-sinhl.md)의 예제를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

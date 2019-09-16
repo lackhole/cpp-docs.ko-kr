@@ -1,11 +1,11 @@
 ---
 title: nan, nanf, nanl
 ms.date: 01/31/2019
-apiname:
+api_name:
 - nanf
 - nan
 - nanl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - nan
 - nanl
@@ -27,12 +30,12 @@ helpviewer_keywords:
 - nanf function
 - nanl function
 ms.assetid: 790e9158-80ab-43e0-8f5a-096198553fd9
-ms.openlocfilehash: df3985a28bc351bdf196c0a1561bd3e25b661c87
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9574eb0382f3bb7fc3c51d504aba9e29d0692c09
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156268"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951428"
 ---
 # <a name="nan-nanf-nanl"></a>nan, nanf, nanl
 
@@ -53,11 +56,11 @@ long double nanl( const char* input );
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **nan** 함수는 quiet NaN 값을 반환 합니다.
+**Nan** 함수는 quiet nan 값을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **nan** 함수는 quiet (비 신호) NaN에 해당 하는 부동 소수점 값을 반환 합니다. 합니다 *입력* 값은 무시 됩니다. 출력에 NaN이 나타나는 방법에 대한 자세한 내용은 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)를 참조하세요.
+**Nan** 함수는 quiet (비 신호) nan에 해당 하는 부동 소수점 값을 반환 합니다. *입력* 값은 무시 됩니다. 출력에 NaN이 나타나는 방법에 대한 자세한 내용은 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

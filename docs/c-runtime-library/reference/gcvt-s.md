@@ -1,9 +1,9 @@
 ---
 title: _gcvt_s
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _gcvt_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _gcvt_s
 - gcvt_s
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 0a8d8a26-5940-4ae3-835e-0aa6ec1b0744
-ms.openlocfilehash: 168e0657150d072bbe41cd0ad6e914ca1f53e512
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7ecb6fe105d8a976979f91d38c9e536b10989310
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332304"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956115"
 ---
-# <a name="gcvts"></a>_gcvt_s
+# <a name="_gcvt_s"></a>_gcvt_s
 
 부동 소수점 값을 문자열로 변환합니다. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 보안 기능이 향상된 [_gcvt](gcvt.md) 버전입니다.
 
@@ -65,7 +68,7 @@ errno_t _gcvt_s(
 *sizeInBytes*<br/>
 버퍼의 크기입니다.
 
-*값*<br/>
+*value*<br/>
 변환할 값입니다.
 
 *digits*<br/>
@@ -77,19 +80,19 @@ errno_t _gcvt_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*buffer*|*sizeInBytes*|*값*|*digits*|반환|값 *버퍼*|
+|*buffer*|*sizeInBytes*|*value*|*digits*|반환|*버퍼* 의 값|
 |--------------|-------------------|-------------|--------------|------------|-----------------------|
 |**NULL**|any|any|any|**EINVAL**|수정되지 않습니다.|
-|되지 **NULL** (유효한 메모리를 가리킴)|0|any|any|**EINVAL**|수정되지 않습니다.|
-|되지 **NULL** (유효한 메모리를 가리킴)|any|any|>= *sizeInBytes*|**EINVAL**|수정되지 않습니다.|
+|Not **NULL** (유효한 메모리를 가리킴)|0|any|any|**EINVAL**|수정되지 않습니다.|
+|Not **NULL** (유효한 메모리를 가리킴)|any|any|>= *sizeInBytes*|**EINVAL**|수정되지 않습니다.|
 
 **보안 문제**
 
-**_gcvt_s** 하는 경우 액세스 위반을 생성할 수 있습니다 *버퍼* 유효한 메모리를 가리키지 아니며 **NULL**합니다.
+**_gcvt_s** 는 *버퍼가* 유효한 메모리를 가리키지 않고 **NULL**이 아닌 경우 액세스 위반을 생성할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_gcvt_s** 함수는 부동 소수점 변환 *값* 를 포함 하는 소수점 및 가능한 부호 바이트 문자열로 문자열을 가져와 *버퍼* . *버퍼* 변환 된 값과 자동으로 추가 되는 종료 null 문자를 수용 하기에 충분 해야 합니다. 길이의 버퍼로 **_CVTBUFSIZE** 충분 모두 부동 소수점 값. 경우 버퍼 크기인 *숫자* + 1은 사용, 함수 끝을 덮어쓰지 것입니다 버퍼의 수 없으므로이 작업에 대 한 충분 한 버퍼를 제공 해야 합니다. **_gcvt_s** 생성 하려고 *자릿수* 10 진수 형식의 숫자입니다. 수 없는 경우 생성 *자릿수* 지 수 서식의 자릿수입니다. 변환 시 뒤에 오는 0을 표시하지 않을 수 있습니다.
+**_Gcvt_s** 함수는 부동 소수점 *값* 을 문자열 (소수점 및 가능한 부호 바이트 포함)로 변환 하 고 문자열을 *버퍼*에 저장 합니다. *버퍼* 는 변환 된 값과 종료 null 문자 (자동으로 추가 됨)를 수용할 수 있을 만큼 커야 합니다. 길이가 **_CVTBUFSIZE** 인 버퍼는 모든 부동 소수점 값에 대해 충분 합니다. 버퍼 *크기 + 1* 을 사용 하는 경우이 함수는 버퍼의 끝을 덮어쓰지 않으므로이 작업에 충분 한 버퍼를 제공 해야 합니다. **_gcvt_s** 는 10 진수 형식으로 *숫자* 자릿수를 생성 하려고 시도 합니다. 사용할 수 없는 경우에는 지 수 형식으로 *숫자* 를 생성 합니다. 변환 시 뒤에 오는 0을 표시하지 않을 수 있습니다.
 
 C++에서는 템플릿 오버로드로 인해 이 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 

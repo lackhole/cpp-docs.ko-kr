@@ -1,13 +1,13 @@
 ---
 title: toupper, _toupper, towupper, _toupper_l, _towupper_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _toupper_l
 - towupper
 - toupper
 - _towupper_l
 - _toupper
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - towupper
 - _toupper
@@ -42,14 +45,14 @@ helpviewer_keywords:
 - characters, converting
 - toupper function
 ms.assetid: cdef1b0f-b19c-4d11-b7d2-cf6334c9b6cc
-ms.openlocfilehash: 6dd564a27ee7f3c2bb095564e5c9423249d6babc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e17f139789b2c37292764f2e4508b59cddd2c03e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155500"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957913"
 ---
-# <a name="toupper-toupper-towupper-toupperl-towupperl"></a>toupper, _toupper, towupper, _toupper_l, _towupper_l
+# <a name="toupper-_toupper-towupper-_toupper_l-_towupper_l"></a>toupper, _toupper, towupper, _toupper_l, _towupper_l
 
 문자를 대문자로 변환합니다.
 
@@ -85,19 +88,19 @@ int _towupper_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 루틴의 복사본을 변환 *c*, 가능한 경우 결과 반환 합니다.
+이러한 각 루틴은 가능한 경우 *c*의 복사본을 변환 하 고 결과를 반환 합니다.
 
-하는 경우 *c* 와이드 문자는입니다 **iswlower** 0이 아닌를 해당 와이드 문자 이며 [iswupper](isupper-isupper-l-iswupper-iswupper-l.md) 값은 0 **towupper** 해당 와이드 문자를 반환 합니다. 그렇지 않으면 **towupper** 반환 *c* 변경 되지 않습니다.
+*C* 가 **iswlower** 가 0이 아닌 와이드 문자이 고 [iswlower](isupper-isupper-l-iswupper-iswupper-l.md) 가 0이 아닌 해당 하는 와이드 문자가 있는 경우 **towupper** 는 해당 와이드 문자를 반환 합니다. 그렇지 않으면 **towupper** 는 *c* 를 변경 되지 않은 상태로 반환 합니다.
 
 오류를 나타내기 위해 예약된 반환 값은 없습니다.
 
-되려면에서 **toupper** 예상된 결과 있도록 [__isascii](isascii-isascii-iswascii.md) 하 고 [islower](islower-iswlower-islower-l-iswlower-l.md) 가 둘 다 반환 0이 아닌 합니다.
+**Toupper** 에서 예상 결과를 제공 하기 위해 [__isascii](isascii-isascii-iswascii.md) 및 [islower](islower-iswlower-islower-l-iswlower-l.md) 는 둘 다 0이 아닌 값을 반환 해야 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 루틴은 가능하며 적절한 경우 지정된 소문자를 대문자로 변환합니다. 대/소문자 변환은 **towupper** 로캘에 따라 다릅니다. 현재 로캘에서 유효한 문자의 대/소문자만 변경됩니다. 없는 함수는 **_l** 접미사를 사용 하 여 현재 설정 로캘. 포함 된 이러한 함수의 버전은 **_l** 접미사는 로캘을 매개 변수로 및 현재 설정 대신 사용 하는 로캘. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+이러한 각 루틴은 가능하며 적절한 경우 지정된 소문자를 대문자로 변환합니다. **Towupper** 의 대/소문자 변환은 로캘별입니다. 현재 로캘에서 유효한 문자의 대/소문자만 변경됩니다. **_L** 접미사가 없는 함수는 현재 설정 된 로캘을 사용 합니다. **_L** 접미사가 있는 이러한 함수 버전은 로캘을 매개 변수로 사용 하 고 현재 설정 된 로캘 대신 해당 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-되려면에서 **toupper** 예상된 결과 있도록 [__isascii](isascii-isascii-iswascii.md) 하 고 [isupper](isupper-isupper-l-iswupper-iswupper-l.md) 가 둘 다 반환 0이 아닌 합니다.
+**Toupper** 가 예상 결과를 제공 하도록 하려면 [__isascii](isascii-isascii-iswascii.md) 및 [isupper](isupper-isupper-l-iswupper-iswupper-l.md) 모두 0이 아닌 값을 반환 해야 합니다.
 
 [데이터 변환 루틴](../../c-runtime-library/data-conversion.md)
 
@@ -109,7 +112,7 @@ int _towupper_l(
 |**_totupper_l**|**_toupper_l**|**_mbctoupper_l**|**_towupper_l**|
 
 > [!NOTE]
-> **_toupper_l** 하 고 **_towupper_l** 은 로캘에 종속 되지 되지 않으며 직접 호출할 수 있습니다. 내부 용도로 제공 됩니다 **_totupper_l**합니다.
+> **_toupper_l** 및 **_towupper_l** 에는 로캘 종속성이 없으며 직접 호출할 수 없습니다. **_Totupper_l**에서 내부용으로 사용 하기 위해 제공 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -14,18 +14,18 @@ helpviewer_keywords:
 - DTN_FORMAT notification [MFC]
 - DateTimePicker control [MFC]
 ms.assetid: ffbe29ab-ff80-4609-89f7-260b404439c4
-ms.openlocfilehash: fead5643299aee4beace55abde0b6a6c801a324f
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 500c31d494c53f34febb0f22c82f13b08a1d33cd
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507885"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70908114"
 ---
 # <a name="processing-notification-messages-in-date-and-time-picker-controls"></a>날짜 및 시간 선택 컨트롤의 알림 메시지 처리
 
 사용자가 날짜 및 시간 선택 컨트롤과 상호 작용할 때 컨트롤 (`CDateTimeCtrl`)은 일반적으로 뷰 또는 대화 개체의 부모 창에 알림 메시지를 보냅니다. 이에 대한 응답으로 작업을 수행하려는 경우 이러한 메시지를 처리합니다. 예를 들어 사용자가 날짜 및 시간 선택을 열어 포함 된 month calendar 컨트롤을 표시 하면 DTN_DROPDOWN 알림이 전송 됩니다.
 
-속성 창을 사용하면 구현하려는 해당 메시지의 부모 클래스에 알림 처리기를 추가할 수 있습니다.
+[클래스 마법사](reference/mfc-class-wizard.md) 를 사용 하 여 구현 하려는 메시지의 부모 클래스에 알림 처리기를 추가 합니다.
 
 다음 목록에서는 날짜 및 시간 선택 컨트롤에 의해 전송 되는 다양 한 알림에 대해 설명 합니다.
 

@@ -1,9 +1,9 @@
 ---
 title: _CrtSetDebugFillThreshold
 ms.date: 03/21/2018
-apiname:
+api_name:
 - _CrtSetDebugFillThreshold
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _CrtSetDebugFillThreshold
 - CrtSetDebugFillThreshold
@@ -25,14 +28,14 @@ helpviewer_keywords:
 - buffer-filling behavior
 - 0xFD
 ms.assetid: 6cb360e8-56ae-4248-b17f-e28aee3e0ed7
-ms.openlocfilehash: ebe958ddc1c9a5c372f4ae68336e0dea3144e8b4
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: fe7d998a44502709edde33d22c1b1e88cf5ecbee
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342964"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942290"
 ---
-# <a name="crtsetdebugfillthreshold"></a>_CrtSetDebugFillThreshold
+# <a name="_crtsetdebugfillthreshold"></a>_CrtSetDebugFillThreshold
 
 디버그 함수에서 버퍼 채우기 동작을 제어하는 임계값을 검색하고 수정합니다.
 
@@ -45,7 +48,7 @@ size_t _CrtSetDebugFillThreshold( size_t newThreshold );
 ### <a name="parameters"></a>매개 변수
 
 *newThreshold*<br/>
-새 임계값 크기 (바이트)에서입니다.
+새 임계값 크기 (바이트)입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -53,9 +56,9 @@ size_t _CrtSetDebugFillThreshold( size_t newThreshold );
 
 ## <a name="remarks"></a>설명
 
-일부 보안이 강화 된 CRT 함수의 디버그 버전에 특수 문자를 사용 하 여 전달 된 버퍼를 채웁니다 (0xFE). 이를 통해 잘못된 크기가 함수에 전달된 경우를 찾을 수 있습니다. 그러나 성능 또한 줄어듭니다. 성능 향상을 위해 사용 하 여 **_CrtSetDebugFillThreshold** 보다 큰 버퍼에 대 한 버퍼 채우기를 비활성화 하는 *newThreshold* 임계값입니다. A *newThreshold* 값이 0 모든 버퍼를 해제 합니다.
+보안이 강화 된 CRT 함수의 디버그 버전은 특수 문자 (0xFE)를 사용 하 여 전달 된 버퍼를 채웁니다. 이를 통해 잘못된 크기가 함수에 전달된 경우를 찾을 수 있습니다. 그러나 성능 또한 줄어듭니다. 성능을 향상 시키려면 **_CrtSetDebugFillThreshold** 를 사용 하 여 *newthreshold* 임계값 보다 큰 버퍼에 대 한 버퍼 채우기를 사용 하지 않도록 설정 합니다. *Newthreshold* 값이 0 이면 모든 버퍼에 대해이 값을 사용할 수 없습니다.
 
-기본 임계값은 **SIZE_T_MAX**합니다.
+기본 임계값은 **SIZE_T_MAX**입니다.
 
 영향을 미치는 함수의 목록은 다음과 같습니다.
 
@@ -105,7 +108,7 @@ size_t _CrtSetDebugFillThreshold( size_t newThreshold );
 
 ## <a name="libraries"></a>라이브러리
 
-디버그 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md) 만 합니다.
+디버그 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md) 만 해당 합니다.
 
 ## <a name="example"></a>예제
 

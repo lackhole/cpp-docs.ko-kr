@@ -1,9 +1,9 @@
 ---
 title: bsearch_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - bsearch_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,21 +16,24 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - bsearch_s
 helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch_s function
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
-ms.openlocfilehash: 56c5fa45a9d8f9ac9b22474601934d3994da55e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9bcd18add216bb0fc2f203183d82e37ede65dba5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349253"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943480"
 ---
-# <a name="bsearchs"></a>bsearch_s
+# <a name="bsearch_s"></a>bsearch_s
 
 정렬된 배열의 이진 검색을 수행합니다. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 보안 기능이 향상된 [bsearch](bsearch.md) 버전입니다.
 
@@ -62,16 +65,16 @@ void *bsearch_s(
 요소의 너비입니다.
 
 *compare*<br/>
-두 요소를 비교하는 콜백 함수입니다. 첫 번째 인수는 *상황에 맞는* 포인터입니다. 두 번째 인수는에 대 한 포인터를 *키* 검색 합니다. 세 번째 인수는와 비교할 배열 요소에 대 한 포인터 *키*합니다.
+두 요소를 비교하는 콜백 함수입니다. 첫 번째 인수는 *컨텍스트* 포인터입니다. 두 번째 인수는 검색 *키* 에 대 한 포인터입니다. 세 번째 인수는 *키*와 비교할 배열 요소에 대 한 포인터입니다.
 
 *context*<br/>
 비교 함수에서 액세스할 수 있는 개체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-**bsearch_s** 발생에 대 한 포인터를 반환 *키* 가 가리키는 배열의 *기본*입니다. 하는 경우 *키* 발견 되지 않으면 반환 **NULL**합니다. 배열이 오름차순 정렬이 아니거나 동일한 키를 가진 중복 레코드를 포함하는 경우에는 결과를 예측할 수 없습니다.
+**bsearch_s** 는 *base*에서 가리키는 배열의 *키* 발생에 대 한 포인터를 반환 합니다. *키* 를 찾을 수 없는 경우이 함수는 **NULL**을 반환 합니다. 배열이 오름차순 정렬이 아니거나 동일한 키를 가진 중복 레코드를 포함하는 경우에는 결과를 예측할 수 없습니다.
 
-함수에 잘못된 매개 변수를 전달하면 [Parameter Validation](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **NULL**합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
+함수에 잘못된 매개 변수를 전달하면 [Parameter Validation](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **NULL**을 반환 합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ### <a name="error-conditions"></a>오류 조건
 
@@ -85,15 +88,15 @@ void *bsearch_s(
 
 ## <a name="remarks"></a>설명
 
-**bsearch_s** 의 정렬 된 배열의 이진 검색을 수행 하는 함수 *번호* 의 각 요소 *너비* 크기에서 (바이트). 합니다 *기본* 값은 검색할 배열의 밑에 대 한 포인터 및 *키* 가 검색 되는 값입니다. 합니다 *비교* 매개 변수는 배열 요소에 요청된 된 키를 비교 하 고 해당 관계를 지정 하는 다음 값 중 하나를 반환 하는 사용자가 제공한 루틴에 대 한 포인터:
+**Bsearch_s** 함수는 각 *너비가* 바이트 인 *number* 요소의 정렬 된 배열에 대해 이진 검색을 수행 합니다. *기준* 값은 검색할 배열 기준에 대 한 포인터이 고 *key* 는 검색 중인 값입니다. *Compare* 매개 변수는 요청 된 키를 배열 요소와 비교 하 고 해당 관계를 지정 하는 다음 값 중 하나를 반환 하는 사용자 제공 루틴에 대 한 포인터입니다.
 
-|반환 된 값 *비교* 루틴|설명|
+|*비교* 루틴에서 반환 된 값|설명|
 |-----------------------------------------|-----------------|
 |\< 0|키가 배열 요소보다 작습니다.|
 |0|키가 배열 요소와 같습니다.|
 |> 0|키가 배열 요소보다 큽니다.|
 
-합니다 *상황에 맞는* 포인터 검색된 데이터 구조는 개체의 일부 이며 비교 함수가 개체의 멤버에 액세스 해야 하는 경우 유용할 수 있습니다. 합니다 *비교* 함수는 해당 개체의 적절 한 개체 유형 및 액세스 멤버에는 void 포인터 캐스팅 될 수 있습니다. 추가 합니다 *상황에 맞는* 매개 변수 **bsearch_s** 데이터를 사용할 수 있도록 정적 변수를 사용 하 여 연결 하는 재진입 버그를 방지 하려면 추가 컨텍스트를 사용할 수 있으므로 더 안전 합니다 *비교* 함수입니다.
+*컨텍스트* 포인터는 검색 된 데이터 구조가 개체의 일부 이며 비교 함수가 개체의 멤버에 액세스 해야 하는 경우에 유용할 수 있습니다. *Compare* 함수는 void 포인터를 적절 한 개체 형식으로 캐스팅 하 고 해당 개체의 멤버에 액세스할 수 있습니다. *컨텍스트* 매개 변수를 추가 하면 정적 변수를 사용 하 여 *비교* 함수에서 데이터를 사용할 수 있도록 하는 것과 관련 된 재진입 버그를 방지 하기 위해 추가 컨텍스트를 사용할 수 있으므로 **bsearch_s** 더 안전 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

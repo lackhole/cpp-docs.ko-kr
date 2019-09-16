@@ -1,10 +1,10 @@
 ---
 title: _get_daylight
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __daylight
 - _get_daylight
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - get_daylight
 - _get_daylight
@@ -25,14 +28,14 @@ helpviewer_keywords:
 - daylight saving time offset
 - _get_daylight function
 ms.assetid: f85a6ba3-e187-4ca7-aed7-ffc694c8ac4c
-ms.openlocfilehash: 03c3386e59379f460d3c07dc310153d990c02b05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f63d3baa1e9411039d1482b4cbfbf4bce4e9872
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332316"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956055"
 ---
-# <a name="getdaylight"></a>_get_daylight
+# <a name="_get_daylight"></a>_get_daylight
 
 일광 절약 시간 오프셋(시간)을 검색합니다.
 
@@ -49,15 +52,15 @@ error_t _get_daylight( int* hours );
 
 ## <a name="return-value"></a>반환 값
 
-성공 하는 경우 또는 0 **errno** 값에 오류가 발생 합니다.
+성공 하면 0이 고, 오류가 발생 하면 **errno** 값입니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_get_daylight** 함수 정수로 일광 절약 시간의 시간 수를 검색 합니다. 일광 절약 시간이 적용 중인 경우 몇몇 지역에서 2시간 오프셋을 따르고 있더라도 기본 오프셋은 1시간입니다.
+**_Get_daylight** 함수는 일광 절약 시간의 시간 수를 정수로 검색 합니다. 일광 절약 시간이 적용 중인 경우 몇몇 지역에서 2시간 오프셋을 따르고 있더라도 기본 오프셋은 1시간입니다.
 
-하는 경우 *시간* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **EINVAL**합니다.
+*Hours* 가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
 
-이 함수를 사용 하 여 매크로 대신 하는 것이 좋습니다 **_daylight** 또는 사용 되지 않는 함수 **__daylight**합니다.
+매크로 **_ro** 또는 사용 되지 않는 함수 **__daylight**에서 대신이 함수를 사용 하는 것이 좋습니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,10 +1,10 @@
 ---
 title: _ismbbpunct, _ismbbpunct_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbpunct
 - _ismbbpunct_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ismbbpunct
 - ismbbpunct_l
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - ismbbpunct_l function
 - _ismbbpunct_l function
 ms.assetid: 1976c9d3-7d1a-415f-ac52-2715c7bb56eb
-ms.openlocfilehash: acf23cf9da34ba50693aea7772cdbcfaeb146f2f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8a56df7ffda64a2a2cecaac6bc15d2cbaa1d0a71
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157167"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953977"
 ---
-# <a name="ismbbpunct-ismbbpunctl"></a>_ismbbpunct, _ismbbpunct_l
+# <a name="_ismbbpunct-_ismbbpunct_l"></a>_ismbbpunct, _ismbbpunct_l
 
 특정 문자가 문장 부호인지 여부를 결정합니다.
 
@@ -61,7 +64,7 @@ int _ismbbpunct_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbpunct** 이면 0이 아닌 값을 반환 하는 정수 *c* 는 ASCII가 아닌 문장 부호 기호. **_ismbbpunct** 모든 로캘 종속 문자 설정에 대 한 현재 로캘을 사용 합니다. **_ismbbpunct_l** 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_ismbbpunct** 는 정수 *c* 가 ASCII가 아닌 문장 부호 기호 이면 0이 아닌 값을 반환 합니다. **_ismbbpunct** 는 로캘 종속 문자 설정에 대해 현재 로캘을 사용 합니다. **_ismbbpunct_l** 은 전달 된 로캘을 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

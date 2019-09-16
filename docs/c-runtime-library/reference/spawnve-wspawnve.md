@@ -1,10 +1,10 @@
 ---
 title: _spawnve, _wspawnve
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _spawnve
 - _wspawnve
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-process-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wspawnve
 - _spawnve
@@ -31,14 +34,14 @@ helpviewer_keywords:
 - processes, executing new
 - process creation
 ms.assetid: 26d1713d-b551-4f21-a07b-e9891a2ae6cf
-ms.openlocfilehash: 3e3a8d3cf476dfff7c74007ec371c39f5128bbe7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 37ff1358e8639d49992b8cfafb76b2ddac079889
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62355122"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947532"
 ---
-# <a name="spawnve-wspawnve"></a>_spawnve, _wspawnve
+# <a name="_spawnve-_wspawnve"></a>_spawnve, _wspawnve
 
 새 프로세스를 만들고 실행합니다.
 
@@ -71,14 +74,14 @@ intptr_t _wspawnve(
 실행할 파일의 경로입니다.
 
 *argv*<br/>
-인수에 대한 포인터 배열입니다. 인수 *argv*[0]은 일반적으로 경로에 대 한 포인터 리얼 모드에서 또는 프로그램 이름을 가리키는 보호 모드에서 및 *argv*[1]를 통해 *argv*[**n**]은 새로운 인수 목록을 구성 하는 문자열을 가리키는 포인터입니다. 인수 *argv*[**n** + 1] 이어야 합니다는 **NULL** 인수 목록의 끝을 표시에 대 한 포인터입니다.
+인수에 대한 포인터 배열입니다. 인수 *argv*[0]은 일반적으로 리얼 모드의 경로 또는 보호 모드의 프로그램 이름에 대 한 포인터 *이 고, argv [* 1] ~ *argv*[**n**]은 새 인수 목록을 형성 하는 문자열에 대 한 포인터입니다. 인수 *argv*[**n** + 1]은 인수 목록의 끝을 표시 하는 **NULL** 포인터 여야 합니다.
 
 *envp*<br/>
 환경 설정에 대한 포인터 배열입니다.
 
 ## <a name="return-value"></a>반환 값
 
-반환 값은 동기 **_spawnve** 하거나 **_wspawnve** (**_P_WAIT** 에 대해 지정 된 *모드*) 새 프로세스의 종료 상태 . 비동기 작업의 반환 값 **_spawnve** 하거나 **_wspawnve** (**_P_NOWAIT** 하거나 **_P_NOWAITO** 에 대해 지정 된  *모드*)은 프로세스 핸들입니다. 프로세스가 정상적으로 종료되는 경우 종료 상태는 0입니다. 생성된 된 프로세스를 명확 하 게 호출 하는 경우 종료 상태 0이 아닌 값으로 설정할 수 있습니다 합니다 **종료** 0이 아닌 인수를 사용 하 여 일상적인 합니다. 새 프로세스가 양수 값의 종료 상태를 명시적으로 설정하지 않은 경우, 양수 값의 종료 상태는 중단되거나 인터럽트된 비정상적인 종료를 나타냅니다. 반환 값이-1 (새 프로세스가 시작 되지 않습니다.) 오류를 나타냅니다. 이 예에서 **errno** 다음 값 중 하나로 설정 됩니다.
+**_Spawnve** 또는 **_wspawnve** 에 지정 된 **_P_WAIT** *의 반환*값은 새 프로세스의 종료 상태입니다. 비동기 **_spawnve** 또는 **_wspawnve** ( *mode*에 지정 된 **_P_NOWAIT** 또는 **_P_NOWAITO** )의 반환 값은 프로세스 핸들입니다. 프로세스가 정상적으로 종료되는 경우 종료 상태는 0입니다. 생성 된 프로세스가 0이 아닌 인수를 사용 하 여 **종료** 루틴을 특별히 호출 하는 경우 종료 상태를 0이 아닌 값으로 설정할 수 있습니다. 새 프로세스가 양수 값의 종료 상태를 명시적으로 설정하지 않은 경우, 양수 값의 종료 상태는 중단되거나 인터럽트된 비정상적인 종료를 나타냅니다. 반환 값-1은 오류를 나타냅니다 (새 프로세스가 시작 되지 않음). 이 경우 **errno** 는 다음 값 중 하나로 설정 됩니다.
 
 |||
 |-|-|
@@ -94,7 +97,7 @@ intptr_t _wspawnve(
 
 이러한 각 함수는 새 프로세스를 작성 및 실행하고, 명령줄 인수에 대한 포인터 배열 및 환경 설정에 대한 포인터 배열을 전달합니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 경우 *cmdname* 또는 *argv* 가 null 포인터 이거나 *argv* null 포인터를 가리키는 또는 *argv*[0]은 빈 문자열에 잘못 된 에 설명 된 대로 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL**,-1을 반환 합니다. 새로운 프로세스가 생성되지 않습니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. *Cmdname* 또는 *argv* 가 null 포인터 이거나 *argv* 에서 null 포인터를 가리키거나 *argv*[0]이 빈 문자열인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL**로 설정 하 고-1을 반환 합니다. 새로운 프로세스가 생성되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 

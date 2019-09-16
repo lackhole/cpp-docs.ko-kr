@@ -1,11 +1,11 @@
 ---
 title: asinh, asinhf, asinhl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - asinh
 - asinhf
 - asinhl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - asinhf
 - asinhl
@@ -27,12 +30,12 @@ helpviewer_keywords:
 - asinhl function
 - asinhf function
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
-ms.openlocfilehash: f6100268b77178487b7a7aa1cc3f10ac3ea7e9dc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f4d93f121c0124293a5bdff9041d0adfaab5d83c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341784"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939648"
 ---
 # <a name="asinh-asinhf-asinhl"></a>asinh, asinhf, asinhl
 
@@ -58,21 +61,21 @@ long double asinh( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **asinh** 의 역 쌍 곡 사인 값 (쌍곡선 아크사인)를 반환 하는 함수 *x*합니다. 이 함수는 부동 소수점 도메인에 대해 유효합니다. 하는 경우 *x* 는 quiet NaN, 무한 또는 무한대 이면 동일한 값이 반환 됩니다.
+**Asinh** 함수는 *x*의 역 하이퍼볼릭 사인 (원호 하이퍼볼릭 사인)을 반환 합니다. 이 함수는 부동 소수점 도메인에 대해 유효합니다. *X* 가 quiet NaN, 무한 또는 무한대 이면 동일한 값이 반환 됩니다.
 
-|입력|SEH 예외|**_matherr** 예외|
+|입력|SEH 예외|**_matherr** 발생할|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND, INF|없음|없음|
 
 ## <a name="remarks"></a>설명
 
-사용 하는 경우 C++를 오버 로드를 호출할 수 있습니다 **asinh** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **asinh** 항상 받아서 반환 **double**합니다.
+를 사용 하 C++는 경우 **float** 또는 **long** **double** 값을 사용 하 고 반환 하는 **asinh** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **asinh** 는 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |함수|필수 C 헤더|필수 C++ 헤더|
 |--------------|--------------|------------------|
-|**asinh**, **asinhf**, **asinhl**|\<math.h>|\<cmath > 또는 \<math.h <|
+|**asinh**, **asinhf**, **asinhl**|\<math.h>|\<cmath > 또는 \<math <|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

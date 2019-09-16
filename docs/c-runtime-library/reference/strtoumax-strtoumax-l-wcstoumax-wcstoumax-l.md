@@ -1,12 +1,12 @@
 ---
 title: strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wcstoumax_l
 - _strtoumax_l
 - wcstoumax
 - strtoumax
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wcstoumax
 - _tcstoumax
@@ -33,14 +36,14 @@ helpviewer_keywords:
 - _wcstoumax_l function
 - strtoumax function
 ms.assetid: 566769f9-495b-4508-b9c6-02217a578897
-ms.openlocfilehash: c9c8ca79ed68b23586d9fef979bc8d47b72ca846
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a4ed09ad51e538f3964fea87fa55e410c79d3a5d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379170"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957683"
 ---
-# <a name="strtoumax-strtoumaxl-wcstoumax-wcstoumaxl"></a>strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l
+# <a name="strtoumax-_strtoumax_l-wcstoumax-_wcstoumax_l"></a>strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l
 
 문자열을 지원되는 가장 큰 부호 없는 정수 형식의 정수값으로 변환합니다.
 
@@ -87,19 +90,19 @@ uintmax_t _wcstoumax_l(
 
 ## <a name="return-value"></a>반환 값
 
-**strtoumax** 있으면 변환 된 값을 반환 하거나 **UINTMAX_MAX** 오버플로에서 합니다. **strtoumax** 변환 작업 없이 수행할 수 있으면 0을 반환 합니다. **wcstoumax** 와 동일한 값을 반환 **strtoumax**합니다. 두 함수 모두에 대 한 **errno** 로 설정 된 **ERANGE** 오버플로 또는 언더플로가 발생 하는 경우.
+**strtoumax** 는 변환 된 값 (있는 경우)을 반환 하거나 오버플로가 발생 하면 **UINTMAX_MAX** 을 반환 합니다. 변환을 수행할 수 없는 경우 **strtoumax** 는 0을 반환 합니다. **wcstoumax** 는와 유사 값을 **strtoumax**로 반환 합니다. 두 함수 모두 오버플로 또는 언더플로가 발생 하는 경우 **errno** 는 **ERANGE** 로 설정 됩니다.
 
 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수의 각 입력된 문자열을 변환 *strSource* 에 **uintmax_t** 정수 값입니다.
+이러한 각 함수는 입력 문자열 *Strsource* 를 **uintmax_t** 정수 값으로 변환 합니다.
 
-**strtoumax** 문자열 읽기를 중지 *strSource* 숫자의 일부분으로 인식할 수 없는 첫 문자에서 합니다. 종결 null 문자를 수 있습니다 또는 보다 크거나 같은 경우에 첫 번째 숫자 문자일 수도 *기본*입니다. 합니다 **LC_NUMERIC** 로캘 범주 설정의 기 수 문자 인식이 결정 *strSource*합니다. 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)을 참조하세요. **strtoumax** 하 고 **wcstoumax** 현재 로캘을 사용 **_strtoumax_l** 하 고 **_wcstoumax_l** 에서 전달 된 로캘을 대신 사용 한다는 점을 제외 하면 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**strtoumax** 는 숫자의 일부분으로 인식할 수 없는 첫 번째 문자에서 문자열 *strsource* 읽기를 중지 합니다. 이 문자는 종료 null 문자일 수도 있고 *base*보다 크거나 같은 첫 번째 숫자 문자일 수도 있습니다. 로캘의 **LC_NUMERIC** 범주 설정에 따라 *strsource*의 기 개수 문자 인식이 결정 됩니다. 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)을 참조하세요. **strtoumax** 및 **wcstoumax** 는 현재 로캘을 사용 합니다. **_strtoumax_l** 및 **_wcstoumax_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-하는 경우 *endptr* 아닙니다 **NULL**, 검색을 중지 한 문자에 대 한 포인터에서 가리키는 위치에 저장 됩니다 *endptr*합니다. 변환 작업 없이 수행할 수 있으면 (올바른 숫자를 찾을 수 없거나 잘못 된 자료를 지정 된), 값 *strSource* 이 가리키는 위치에 저장 됩니다 *endptr*합니다.
+*Endptr* 이 **NULL**이 아닌 경우 검색을 중지 한 문자에 대 한 포인터는 *endptr*에서 가리키는 위치에 저장 됩니다. 올바른 숫자를 찾을 수 없거나 잘못 된 밑수를 지정 하 여 변환을 수행할 수 없는 경우 *Strsource* 의 값은 *endptr*에서 가리키는 위치에 저장 됩니다.
 
-와이드 문자 버전의 **strtoumax** 됩니다 **wcstoumax**; 해당 *strSource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 동작합니다.
+**Strtoumax** 의 와이드 문자 버전은 **wcstoumax**입니다. *Strsource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 동작합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -108,11 +111,11 @@ uintmax_t _wcstoumax_l(
 |**_tcstoumax**|**strtoumax**|**strtoumax**|**wcstoumax**|
 |**_tcstoumax_l**|**strtoumax_l**|**_strtoumax_l**|**_wcstoumax_l**|
 
-**strtoumax** 예상 *strSource* 다음 형식의 문자열을 가리키도록 합니다.
+**strtoumax** 는 다음과 같은 형식의 문자열을 가리키는 *strsource* 가 필요 합니다.
 
-> [*공백을*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [*자릿수* &#124; *문자*]  
+> [*공백*] [{ **+** &#124; &#124; &#124; }] [0 [{x x}]] [숫자 문자] **-**
 
-A *공백* 공백 및 탭 문자가 무시 되는 구성 될 수 있습니다. *숫자* 는 하나 이상의 10 진수입니다. *문자* 가 문자의 하나 이상의 'a'-'z' (또는 'A' ~ 'Z'). 이 형식에 맞지 않는 첫 번째 문자가 발견되면 검색이 중지됩니다. 하는 경우 *기본* 2와 36 사이의 인 숫자의 밑으로 사용 됩니다. 하는 경우 *기본* 가 0 이면이 가리키는 문자열의 초기 문자 *strSource* 밑을 결정 하는 데 사용 됩니다. 첫 번째 문자가 '0'이고 두 번째 문자가 'x' 또는 'X'가 아니면 문자열은 8진수 정수로 해석됩니다. 첫 번째 문자가 '0'이고 두 번째 문자가 'x' 또는 'X'이면 문자열은 16진수 정수로 해석됩니다. 첫 번째 문자가 '1'~'9' 이면 문자열은 10진수 정수로 해석됩니다. 문자 'a'~'z' 또는 'A'~'Z'에는 값 10~35가 할당됩니다. 할당된 값이 *밑*보다 작은 문자만 사용할 수 있습니다. 밑의 범위를 벗어난 첫 번째 문자가 발견되면 검색이 중지됩니다. 예를 들어 있으면 *기본* 0 및 처음 검색 된 문자가 '0'은는 8 진수 정수로 간주 되며 '8' 또는 '9' 문자가 중지 됩니다. **strtoumax** 더하기 기호를 사용 하면 (**+**) 또는 빼기 기호 (**-**) 접두사를 앞에 오는 빼기 기호는 반환 값 2의 보수 임을 나타냅니다는 변환된 된 문자열의 절대 값입니다.
+공백은 무시 되는 공백과 탭 문자로 구성 *될 수 있습니다* . *숫자* 는 하나 이상의 10 진수입니다. *문자* 는 하나 이상의 문자 ' a ' ~ ' z ' (또는 ' a ' ~ ' z ')입니다. 이 형식에 맞지 않는 첫 번째 문자가 발견되면 검색이 중지됩니다. *Base* 가 2에서 36 사이인 경우 숫자의 밑으로 사용 됩니다. *Base* 가 0 인 경우 *strsource* 가 가리키는 문자열의 초기 문자를 사용 하 여 밑을 결정 합니다. 첫 번째 문자가 '0'이고 두 번째 문자가 'x' 또는 'X'가 아니면 문자열은 8진수 정수로 해석됩니다. 첫 번째 문자가 '0'이고 두 번째 문자가 'x' 또는 'X'이면 문자열은 16진수 정수로 해석됩니다. 첫 번째 문자가 '1'~'9' 이면 문자열은 10진수 정수로 해석됩니다. 문자 'a'~'z' 또는 'A'~'Z'에는 값 10~35가 할당됩니다. 할당된 값이 *밑*보다 작은 문자만 사용할 수 있습니다. 밑의 범위를 벗어난 첫 번째 문자가 발견되면 검색이 중지됩니다. 예를 들어 *base* 가 0이 고 검색 된 첫 번째 문자가 ' 0 ' 이면 8 진수 정수로 간주 되며 ' 8 ' 또는 ' 9 ' 문자는 검색을 중지 합니다. **strtoumax** 에서는 더하기 기호 ( **+** ) 또는 빼기 기호 ( **-** ) 접두사를 사용할 수 있습니다. 선행 빼기 기호는 반환 값이 변환 된 문자열의 절대값에 대 한 2의 보수 임을 나타냅니다.
 
 ## <a name="requirements"></a>요구 사항
 

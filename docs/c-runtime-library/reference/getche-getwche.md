@@ -1,10 +1,10 @@
 ---
 title: _getche, _getwche
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _getwche
 - _getche
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - getwche
 - _getche
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - getwche function
 - _getche function
 ms.assetid: eac978a8-c43a-4130-938f-54f12e2a0fda
-ms.openlocfilehash: 87e9173e21ea51281276601b6fc5e3b73e244fca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cf7aa10702dca5118d03d7ce2e2d4341941fc51c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287329"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955322"
 ---
-# <a name="getche-getwche"></a>_getche, _getwche
+# <a name="_getche-_getwche"></a>_getche, _getwche
 
 에코를 사용하여 콘솔에서 문자를 가져옵니다.
 
@@ -56,7 +59,7 @@ wint_t _getwche( void );
 
 ## <a name="remarks"></a>설명
 
-합니다 **_getche** 하 고 **_getwche** 함수 echo, 문자가 콘솔에 표시 되는 의미를 사용 하 여 콘솔에서 단일 문자를 읽습니다. 이 중 어느 것도, CTRL + C를 읽을 수 없습니다. 화살표 키 또는 기능 키를 읽을 때, 각 함수는 두 번 호출되어야 합니다. 0 또는 0xE0를 첫 번째 호출에서 반환하고 실제 키 코드를 두 번째 호출에서 반환합니다.
+**_Getche** 및 **_getwche** 함수는 콘솔에서 echo를 사용 하 여 단일 문자를 읽습니다. 즉, 문자가 콘솔에 표시 됩니다. 이 중 어느 것도, CTRL + C를 읽을 수 없습니다. 화살표 키 또는 기능 키를 읽을 때, 각 함수는 두 번 호출되어야 합니다. 0 또는 0xE0를 첫 번째 호출에서 반환하고 실제 키 코드를 두 번째 호출에서 반환합니다.
 
 이러한 함수는 호출 스레드를 잠그므로 스레드로부터 안전합니다. 잠기지 않는 버전의 경우 [_getche_nolock, _getwche_nolock](getche-nolock-getwche-nolock.md)을 참조하세요.
 

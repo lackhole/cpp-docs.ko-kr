@@ -1,11 +1,11 @@
 ---
 title: _Cmulcc, _FCmulcc, _LCmulcc
 ms.date: 03/30/2018
-apiname:
+api_name:
 - _Cmulcc
 - _FCmulcc
 - _LCmulcc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _Cmulcc
 - _FCmulcc
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - _Cmulcc function
 - _FCmulcc function
 - _LCmulcc function
-ms.openlocfilehash: f81ccb641a80ab264e8bc54ba1987e2c2c8469f1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fc21f8cbd2103993bc2b3e36020c57c8520f04a1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335389"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939066"
 ---
-# <a name="cmulcc-fcmulcc-lcmulcc"></a>_Cmulcc, _FCmulcc, _LCmulcc
+# <a name="_cmulcc-_fcmulcc-_lcmulcc"></a>_Cmulcc, _FCmulcc, _LCmulcc
 
 두 복소수를 곱합니다.
 
@@ -51,18 +54,18 @@ _Lcomplex _LCmulcc( _Lcomplex x, _Lcomplex y );
 ### <a name="parameters"></a>매개 변수
 
 *x*<br/>
-곱할 복잡 한 피연산자 중 하나입니다.
+곱할 복합 피연산자 중 하나입니다.
 
 *y*<br/>
-다른 복잡 한 피연산자 곱할입니다.
+곱할 다른 복합 피연산자입니다.
 
 ## <a name="return-value"></a>반환 값
 
-A **_Dcomplex**를 **_Fcomplex**, 또는 **_Lcomplex** 복소수의 복잡 한 제품을 나타내는 구조 *x* 및 *y*합니다.
+복소수 *x* 및 *y*의 복소수 곱을 나타내는 **_dcomplex**, **_dcomplex**또는 **_dcomplex** 구조체입니다.
 
 ## <a name="remarks"></a>설명
 
-복합 형식에서의 Microsoft 구현에 기본 제공 산술 연산자를 적용할 수 없습니다 때문에 합니다 **_Cmulcc**를 **_FCmulcc**, 및 **_LCmulcc** 함수 복합 형식의 곱하기를 간소화 합니다.
+기본 제공 산술 연산자는 복합 형식의 Microsoft 구현에서 작동 하지 않기 때문에 **_Cmulcc**, **_FCmulcc**및 **_LCmulcc** 함수는 복합 형식의 곱하기를 간소화 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -70,7 +73,7 @@ A **_Dcomplex**를 **_Fcomplex**, 또는 **_Lcomplex** 복소수의 복잡 한 �
 |-------------|--------------|------------------|
 |**_Cmulcc**, **_FCmulcc**, **_LCmulcc**|\<complex.h>|\<complex.h>|
 
-이러한 함수는 Microsoft 전용입니다. 형식을 **_Dcomplex**를 **_Fcomplex**, 및 **_Lcomplex** 구현 되지 않은 C99 네이티브 형식에 해당 하는 Microsoft 전용은 **double _Complex** 하십시오 **float _Complex**, 및 **long double _Complex**각각. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+이러한 함수는 Microsoft 전용입니다. **_Dcomplex**, **_Dcomplex**및 **_dcomplex** 형식은 각각 구현 되지 않은 C99 네이티브 형식 **double _complex**, **float __l**및 **long double _dcomplex**에 해당 합니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

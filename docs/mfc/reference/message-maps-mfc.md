@@ -1,39 +1,39 @@
 ---
 title: 메시지 맵(MFC)
-ms.date: 11/04/2016
+ms.date: 09/07/2019
 helpviewer_keywords:
 - message maps [MFC], MFC
 - Windows messages [MFC], message maps
 - messages [MFC], Windows
 - MFC, messages
 ms.assetid: 3f9855e4-9d7d-4b64-8f3f-a19ea3cf79ba
-ms.openlocfilehash: 14c08a008456160fe817f066e5b22b06b9f9fa14
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 4305d9b1db297eebcb189d2fad98b8c634ed1133
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611825"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70908036"
 ---
 # <a name="message-maps-mfc"></a>메시지 맵(MFC)
 
-모든 참조의이 섹션에서는 나열 [메시지 매핑 매크로](../../mfc/reference/message-map-macros-mfc.md) all [CWnd](../../mfc/reference/cwnd-class.md) 해당 멤버와 함께 메시지 맵 항목 함수 프로토타입:
+이 참조 섹션에서는 모든 [메시지 매핑 매크로](../../mfc/reference/message-map-macros-mfc.md) 및 모든 [CWnd](../../mfc/reference/cwnd-class.md) 메시지 맵 항목과 해당 멤버 함수 프로토타입을 나열 합니다.
 
-|범주|설명|
+|범주|Description|
 |--------------|-----------------|
-|ON\_명령 메시지 처리기|처리 `WM_COMMAND` 사용자 메뉴를 선택 하거나 메뉴 선택 키에서 생성 된 메시지입니다.|
-|[자식 창 알림 메시지 처리기](../../mfc/reference/child-window-notification-message-handlers.md)|자식 창 알림 메시지를 처리 합니다.|
-|[WM_ 메시지 처리기](../../mfc/reference/handlers-for-wm-messages.md)|처리할 `WM_` 메시지와 같은 `WM_PAINT`합니다.|
+|명령\_메시지 처리기에서|사용자 `WM_COMMAND` 메뉴 선택 또는 메뉴 선택 키로 생성 된 메시지를 처리 합니다.|
+|[자식 창 알림 메시지 처리기](../../mfc/reference/child-window-notification-message-handlers.md)|자식 창에서 알림 메시지를 처리 합니다.|
+|[WM_ 메시지 처리기](../../mfc/reference/handlers-for-wm-messages.md)|`WM_` 와`WM_PAINT`같은 메시지를 처리 합니다.|
 |[사용자 정의 메시지 처리기](../../mfc/reference/user-defined-handlers.md)|사용자 정의 메시지를 처리 합니다.|
 
-(이 참조에 사용 된 규칙 및 용어는 설명은 참조 하세요. [메시지 맵 상호 참조를 사용 하는 방법을](../../mfc/reference/how-to-use-the-message-map-cross-reference.md).)
+이 참조에서 사용 되는 용어 및 규칙에 대 한 설명은 [메시지 맵 상호 참조를 사용 하는 방법](../../mfc/reference/how-to-use-the-message-map-cross-reference.md)을 참조 하세요.
 
-Windows 메시지 지향 운영 체제를 이므로 Windows 환경에 대 한 프로그래밍의 많은 부분을 메시지 처리를 포함 합니다. 다음 이벤트를 처리 해야 하는 응용 프로그램에 메시지를 보내는 예: 키 입력 또는 마우스 이벤트 클릭 될 때마다 발생 합니다.
+Windows는 메시지 기반 운영 체제 이므로 Windows 환경에 대 한 프로그래밍의 많은 부분에는 메시지 처리가 포함 됩니다. 키 입력 이나 마우스 클릭 등의 이벤트가 발생할 때마다 응용 프로그램으로 메시지가 전송 된 후 이벤트를 처리 해야 합니다.
 
-Microsoft Foundation Class 라이브러리는 메시지 기반 프로그래밍에 대 한 액세스에 최적화 된 프로그래밍 모델을 제공 합니다. 이 모델에서 "메시지 맵" 함수는 특정 클래스에 대 한 다양 한 메시지를 처리 하는 지정 하는 데 사용 됩니다. 메시지 맵은 메시지는 함수에 의해 처리 되는 지정 하는 하나 이상의 매크로 포함 합니다. 예를 들어, 맵을 포함 하는 메시지는 `ON_COMMAND` 매크로 다음과 같이 표시 될 수 있습니다.
+MFC 라이브러리는 메시지 기반 프로그래밍에 최적화 된 프로그래밍 모델을 제공 합니다. 이 모델에서 "메시지 맵"은 특정 클래스에 대해 다양 한 메시지를 처리할 함수를 지정 하는 데 사용 됩니다. 메시지 맵은 함수에서 처리할 메시지를 지정 하는 하나 이상의 매크로를 포함 합니다. 예를 들어 `ON_COMMAND` 매크로를 포함 하는 메시지 맵은 다음과 같이 표시 될 수 있습니다.
 
 [!code-cpp[NVC_MFCMessageMaps#16](../../mfc/reference/codesnippet/cpp/message-maps-mfc_1.cpp)]
 
-`ON_COMMAND` 매크로 메뉴, 단추 및 액셀러레이터 키에서 생성 된 명령 메시지를 처리 하는 데 사용 됩니다. [매크로](../../mfc/reference/message-map-macros-mfc.md) 다음 매핑할 수 있습니다.
+매크로 `ON_COMMAND` 는 메뉴, 단추 및 액셀러레이터 키에 의해 생성 된 명령 메시지를 처리 하는 데 사용 됩니다. [매크로](../../mfc/reference/message-map-macros-mfc.md) 를 사용 하 여 다음을 매핑할 수 있습니다.
 
 ## <a name="windows-messages"></a>Windows 메시지
 
@@ -43,24 +43,24 @@ Microsoft Foundation Class 라이브러리는 메시지 기반 프로그래밍�
 
 ## <a name="command-messages"></a>명령 메시지
 
-- 사용자 정의 메시지를 등록합니다.
+- 등록 된 사용자 정의 메시지
 
 - 사용자 인터페이스 업데이트 메시지
 
-## <a name="ranges-of-messages"></a>메시지의 범위
+## <a name="ranges-of-messages"></a>메시지 범위
 
 - 명령
 
-- 업데이트 메시지 처리기
+- 처리기 메시지 업데이트
 
 - 컨트롤 알림
 
-메시지 맵 매크로 중요 하지만, 일반적으로 않아도 직접 사용 합니다. 즉, 속성 창 메시지를 사용 하 여 메시지 처리 함수를 연결 하려면 사용 하는 경우 소스 파일에서 메시지 맵 항목 자동으로 만듭니다. 메시지 맵 항목을 추가 하거나 편집 하려면 언제 든 지 속성 창을 사용할 수 있습니다.
+메시지 맵 매크로는 중요 하지만 일반적으로 직접 사용할 필요는 없습니다. 이는 [클래스 마법사](mfc-class-wizard.md) 가 메시지 처리 함수를 메시지에 연결 하는 데 사용할 때 소스 파일에 메시지 맵 항목을 자동으로 만들기 때문입니다. 메시지 맵 항목을 편집 하거나 추가 하려고 할 때마다 클래스 마법사를 사용할 수 있습니다.
 
 > [!NOTE]
->  속성 창에서 메시지 맵 범위를 지원 하지 않습니다. 이러한 메시지 맵 항목을 직접 작성 해야 합니다.
+>  클래스 마법사는 메시지 맵 범위를 지원 하지 않습니다. 이러한 메시지 맵 항목을 직접 작성 해야 합니다.
 
-그러나 메시지 맵 Microsoft Foundation Class 라이브러리의 중요 한 부분이 됩니다. 용도 이해 해야 하 고 설명서에 제공 됩니다.
+그러나 메시지 맵은 MFC 라이브러리의 중요 한 부분입니다. 사용자가 수행 하는 작업을 이해 하 고 설명서가 제공 됩니다.
 
 ## <a name="see-also"></a>참고자료
 

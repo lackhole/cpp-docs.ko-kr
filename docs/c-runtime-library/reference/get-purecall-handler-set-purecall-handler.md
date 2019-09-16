@@ -1,11 +1,11 @@
 ---
 title: _get_purecall_handler, _set_purecall_handler
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _set_purecall_handler
 - _set_purecall_handler_m
 - _get_purecall_handler
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _set_purecall_handler
 - _set_purecall_handler_m
@@ -34,14 +37,14 @@ helpviewer_keywords:
 - _set_purecall_handler_m function
 - _get_purecall_handler function
 ms.assetid: 2759b878-8afa-4129-86e7-72afc2153d9c
-ms.openlocfilehash: 0009b4bc1c7bf70bd84b9a82ecdc8643789e8164
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 73fc2ffe5cd4ed65c8695432b53816090bbc5f8e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287402"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955671"
 ---
-# <a name="getpurecallhandler-setpurecallhandler"></a>_get_purecall_handler, _set_purecall_handler
+# <a name="_get_purecall_handler-_set_purecall_handler"></a>_get_purecall_handler, _set_purecall_handler
 
 순수 가상 함수 호출에 대한 오류 처리기를 가져오거나 설정합니다.
 
@@ -58,21 +61,21 @@ _purecall_handler __cdecl _set_purecall_handler(
 ### <a name="parameters"></a>매개 변수
 
 *function*<br/>
-순수 가상 함수 호출 시 호출되는 함수입니다. A **_purecall_handler** 함수에 void 반환 형식이 있어야 합니다.
+순수 가상 함수 호출 시 호출되는 함수입니다. **_Purecall_handler** 함수에는 void 반환 형식이 있어야 합니다.
 
 ## <a name="return-value"></a>반환 값
 
-이전 **_purecall_handler**합니다. 반환 **nullptr** 되었으면 이전 처리기입니다.
+이전 **_purecall_handler**입니다. 이전 처리기가 없는 경우 **nullptr** 를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_get_purecall_handler** 하 고 **_set_purecall_handler** 함수는 Microsoft 고유의 및에 적용 됩니다 C++ 코드입니다.
+**_Get_purecall_handler** 및 **_Set_purecall_handler** 함수는 Microsoft 전용 이며 코드에 C++ 만 적용 됩니다.
 
-순수 가상 함수에 대한 호출은 구현이 없으므로 오류입니다. 기본적으로 순수 가상 함수를 호출하면 컴파일러는 오류 처리기 함수를 호출하는 코드를 생성하므로 프로그램이 종료됩니다. 순수 가상 함수 호출을 위해 고유한 오류 처리기 함수를 설치하여 디버깅 또는 보고용으로 이러한 호출을 catch할 수 있습니다. 사용자 고유의 오류 처리기를 사용 하려면 포함 된 함수를 만듭니다는 **_purecall_handler** 서명을 사용 하 여 **_set_purecall_handler** 현재 처리기를 확인 합니다.
+순수 가상 함수에 대한 호출은 구현이 없으므로 오류입니다. 기본적으로 순수 가상 함수를 호출하면 컴파일러는 오류 처리기 함수를 호출하는 코드를 생성하므로 프로그램이 종료됩니다. 순수 가상 함수 호출을 위해 고유한 오류 처리기 함수를 설치하여 디버깅 또는 보고용으로 이러한 호출을 catch할 수 있습니다. 사용자 고유의 오류 처리기를 사용 하려면 **_purecall_handler** 시그니처가 있는 함수를 만든 다음 **_set_purecall_handler** 를 사용 하 여 해당 함수를 현재 처리기로 설정 합니다.
 
-하나만 있기 때문에 **_purecall_handler** 호출 하는 경우 각 프로세스에 대 한 **_set_purecall_handler** 모든 스레드가 즉시 영향입니다. 스레드의 마지막 호출자가 처리기를 설정합니다.
+각 프로세스에는 **_purecall_handler** 가 하나만 있으므로 **_set_purecall_handler** 를 호출 하면 모든 스레드에 즉시 영향을 줍니다. 스레드의 마지막 호출자가 처리기를 설정합니다.
 
-기본 동작을 복원 하려면 호출 **_set_purecall_handler** 사용 하 여를 **nullptr** 인수입니다.
+기본 동작을 복원 하려면 **nullptr** 인수를 사용 하 여 **_set_purecall_handler** 를 호출 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

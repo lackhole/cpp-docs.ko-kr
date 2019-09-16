@@ -1,9 +1,9 @@
 ---
 title: fwide
 ms.date: 11/04/2016
-apiname:
+api_name:
 - fwide
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,18 +14,21 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fwide
 helpviewer_keywords:
 - fwide function
 ms.assetid: a4641f5b-d74f-4946-95d5-53a64610d28d
-ms.openlocfilehash: d992ebc527744beeb4ef14175e3f10646a77a064
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e986ba5ab28072f4933e555eea32a5893c8df56
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287618"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956214"
 ---
 # <a name="fwide"></a>fwide
 
@@ -43,14 +46,14 @@ int fwide(
 ### <a name="parameters"></a>매개 변수
 
 *stream*<br/>
-에 대 한 포인터 **파일** 구조 (무시 됨).
+**파일** 구조에 대 한 포인터입니다 (무시 됨).
 
-*모드*<br/>
+*mode*<br/>
 스트림의 새 너비: 와이드 문자의 경우 양수, 바이트의 경우 음수이며 0은 변경되지 않습니다. 이 값은 무시됩니다.
 
 ## <a name="return-value"></a>반환 값
 
-이 함수는 현재는 그냥 반환 *모드*합니다.
+이 함수는 현재 *모드*를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 

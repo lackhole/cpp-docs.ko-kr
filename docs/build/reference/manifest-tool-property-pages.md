@@ -1,6 +1,6 @@
 ---
 title: 매니페스트 도구 속성 페이지
-ms.date: 7/24/2019
+ms.date: 07/24/2019
 ms.topic: article
 f1_keywords:
 - VC.Project.VCManifestTool.SuppressStartupBanner
@@ -24,12 +24,12 @@ f1_keywords:
 - VC.Project.VCManifestTool.UpdateFileHashesSearchPath
 - vc.project.AdditionalOptionsPage
 ms.assetid: f33499c4-7733-42d9-80e3-8a5018786965
-ms.openlocfilehash: c8413a28024361db82ca74858453202393987e60
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d9b074667614da8d83fae7b00b49bf63c9390b69
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492693"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927686"
 ---
 # <a name="manifest-tool-property-pages"></a>매니페스트 도구 속성 페이지
 
@@ -59,7 +59,7 @@ ms.locfileid: "69492693"
 
 ###  <a name="input-resource-manifests"></a>입력 리소스 매니페스트
 
-**/inputresource** 옵션을 사용하여 매니페스트 도구에 입력할 RT_MANIFEST 형식의 리소스 전체 경로를 지정합니다. 경로 다음에 지정된 리소스 ID가 올 수 있습니다. 예:
+**/inputresource** 옵션을 사용하여 매니페스트 도구에 입력할 RT_MANIFEST 형식의 리소스 전체 경로를 지정합니다. 경로 다음에 지정된 리소스 ID가 올 수 있습니다. 예를 들어:
 
 `dll_with_manifest.dll;#1`
 

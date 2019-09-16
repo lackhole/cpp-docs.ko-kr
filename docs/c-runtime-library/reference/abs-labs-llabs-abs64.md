@@ -1,12 +1,12 @@
 ---
 title: abs, labs, llabs, _abs64
 ms.date: 04/05/2018
-apiname:
+api_name:
 - abs
 - _abs64
 - labs
 - llabs
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - stdlib/_abs64
 - math/abs
@@ -36,14 +39,14 @@ helpviewer_keywords:
 - _abs64 function
 - calculating absolute values
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
-ms.openlocfilehash: 61aa0a48757a35708ffb85d2c0525bb4eac82d56
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf5b4be654a3bd48b3e0d43ac97ce02b348942bc
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341992"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939926"
 ---
-# <a name="abs-labs-llabs-abs64"></a>abs, labs, llabs, _abs64
+# <a name="abs-labs-llabs-_abs64"></a>abs, labs, llabs, _abs64
 
 인수의 절대값을 계산합니다.
 
@@ -71,13 +74,13 @@ float abs( float n );   // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-**abs**, **labs**를 **llabs** 고 **_abs64** 함수 매개 변수의 절대 값을 반환 *n*. 반환되는 오류가 없습니다.
+**Abs**, **labs**, **llabs** 및 **_abs64** 함수는 매개 변수 *n*의 절대값을 반환 합니다. 반환되는 오류가 없습니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **abs** 및 반환 하는 **긴**, **긴** **긴**를 **부동 소수점**, **double**, 및 **긴** **double** 값입니다. 이러한 오버로드는 \<cmath> 헤더에 정의됩니다. C 프로그램에서 **abs** 항상 받아서 반환 된 **int**합니다.
+는 C++ 오버 로드를 허용 하므로 **long**, **long** **long**, **float**, **double**및 **long** **double** 값을 사용 하 고 반환 하는 **abs** 오버 로드를 호출할 수 있습니다. 이러한 오버로드는 \<cmath> 헤더에 정의됩니다. C 프로그램에서 **abs** 는 항상 **int**를 사용 하 고 반환 합니다.
 
-**Microsoft 전용**: 임의의 정수 형식을 사용하여 나타낼 수 있는 음의 정수 범위는 해당 형식을 사용하여 나타낼 수 있는 양의 정수 범위보다 크기 때문에 이러한 함수에 변환할 수 없는 인수를 제공할 수 있습니다. 인수의 절대값을 반환 형식으로 표현할 수 없는 경우는 **abs** 함수 변경 되지 않은 인수 값을 반환 합니다. 특히 `abs(INT_MIN)`는 `INT_MIN`, `labs(LONG_MIN)`는 `LONG_MIN`, `llabs(LLONG_MIN)`는 `LLONG_MIN`, `_abs64(_I64_MIN)`는 `_I64_MIN`을 반환합니다. 즉 합니다 **abs** 양수 값을 보장 하기 위해 함수를 사용할 수 없습니다.
+**Microsoft 전용**: 임의의 정수 형식을 사용하여 나타낼 수 있는 음의 정수 범위는 해당 형식을 사용하여 나타낼 수 있는 양의 정수 범위보다 크기 때문에 이러한 함수에 변환할 수 없는 인수를 제공할 수 있습니다. 인수의 절대값을 반환 형식으로 나타낼 수 없는 경우 **abs** 함수는 변경 되지 않은 인수 값을 반환 합니다. 특히 `abs(INT_MIN)`는 `INT_MIN`, `labs(LONG_MIN)`는 `LONG_MIN`, `llabs(LLONG_MIN)`는 `LLONG_MIN`, `_abs64(_I64_MIN)`는 `_I64_MIN`을 반환합니다. 이는 **abs** 함수를 사용 하 여 양수 값을 보장할 수 없음을 의미 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -86,7 +89,7 @@ float abs( float n );   // C++ only
 |**abs**, **labs**, **llabs**|\<math.h> 또는 \<stdlib.h>|\<cmath>, \<cstdlib>, \<stdlib.h> 또는 \<math.h>|
 |**_abs64**|\<stdlib.h>|\<cstdlib> 또는 \<stdlib.h>|
 
-오버 로드 된 버전을 사용 하도록 **abs** 에서 C++를 포함 해야 합니다는 \<cmath > 헤더입니다.
+에서 C++오버 로드 된 \< **abs** 버전을 사용 하려면 cmath > 헤더를 포함 해야 합니다.
 
 ## <a name="example"></a>예제
 

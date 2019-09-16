@@ -1,11 +1,11 @@
 ---
 title: csinh, csinhf, csinhl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - csinh
 - csinhf
 - csinhl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - csinh
 - csinhf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - csinhf function
 - csinhl function
 ms.assetid: cc616e55-d14d-4cd3-91f0-fbee03ce5edf
-ms.openlocfilehash: 2ea6eaedc7eae7256310bf55b06fde0ecb2c64de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b377b34ee1a9f60f502c59b8c4ea1eed19c7500
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289405"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70938543"
 ---
 # <a name="csinh-csinhf-csinhl"></a>csinh, csinhf, csinhl
 
@@ -68,11 +71,11 @@ _Lcomplex csinhl(
 
 ## <a name="return-value"></a>반환 값
 
-하이퍼볼릭 사인 *z*, 라디안에서입니다.
+*Z*의 하이퍼볼릭 사인 (라디안)입니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **csinh** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **csinh** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **csinh** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **csinh** 는 항상 **_dcomplex** 를 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

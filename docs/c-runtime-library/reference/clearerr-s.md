@@ -1,9 +1,9 @@
 ---
 title: clearerr_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - clearerr_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - clearerr_s
 helpviewer_keywords:
@@ -23,14 +26,14 @@ helpviewer_keywords:
 - resetting stream error indicator
 - clearerr_s function
 ms.assetid: b74d014d-b7a8-494a-a330-e5ffd5614772
-ms.openlocfilehash: 03bdc533d3afa265be22ae3567fabe8e78f752a4
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 12e76ba5133d99ed2d45d7cf15bada2ad1c5c38b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342939"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939145"
 ---
-# <a name="clearerrs"></a>clearerr_s
+# <a name="clearerr_s"></a>clearerr_s
 
 스트림에 대한 오류 표시기를 다시 설정합니다. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 보안 기능이 향상된 [clearerr](clearerr.md) 버전입니다.
 
@@ -45,17 +48,17 @@ errno_t clearerr_s(
 ### <a name="parameters"></a>매개 변수
 
 *stream*<br/>
-에 대 한 포인터 **파일** 구조
+**파일** 구조에 대 한 포인터
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 0 **EINVAL** 하는 경우 *스트림을* 됩니다 **NULL**합니다.
+성공 하면 0입니다. **EINVAL** 가 **NULL** *인 경우* .
 
 ## <a name="remarks"></a>설명
 
-합니다 **clearerr_s** 함수에 대 한 파일 끝 표시기 및 오류 표시기 다시 설정 *스트림*합니다. 오류 표시기가 자동으로 취소 되지 않습니다. 지정 된 스트림에 대 한 오류 표시기 설정 되 면 해당 스트림의 작업을 계속 반환 될 때까지 오류 값 **clearerr_s**, **clearerr**하십시오 [fseek](fseek-fseeki64.md)를 **fsetpos**, 또는 [rewind](rewind.md) 라고 합니다.
+**Clearerr_s** 함수는 *스트림에*대 한 오류 표시기와 파일 끝 표시기를 다시 설정 합니다. 오류 표시기는 자동으로 지워지지 않습니다. 지정 된 스트림에 대 한 오류 표시기가 설정 되 면 **clearerr_s**, **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**또는 [되감기](rewind.md) 가 호출 될 때까지 해당 스트림의 작업은 오류 값을 계속 반환 합니다.
 
-하는 경우 *스트림을* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **EINVAL**합니다.
+*Stream* 이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

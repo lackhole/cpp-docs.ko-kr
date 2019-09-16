@@ -1,10 +1,10 @@
 ---
 title: _lrotl, _lrotr
 ms.date: 04/04/2018
-apiname:
+api_name:
 - _lrotl
 - _lrotr
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - lrotr
 - lrotl
@@ -31,16 +34,16 @@ helpviewer_keywords:
 - _lrotl function
 - bits, rotating
 ms.assetid: d42f295b-35f9-49d2-9ee4-c66896ffe68e
-ms.openlocfilehash: 71ca61676e4551155f9f14e792c5c1cee65ddb7e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ea78aeb8829a80abae345b4e9e6ac3a7bbaddf8b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156969"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953040"
 ---
-# <a name="lrotl-lrotr"></a>_lrotl, _lrotr
+# <a name="_lrotl-_lrotr"></a>_lrotl, _lrotr
 
-비트를 왼쪽 회전 (**_lrotl**) 또는 오른쪽 (**_lrotr**).
+비트를 왼쪽 ( **_lrotl**) 또는 오른쪽 ( **_lrotr**)으로 회전 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -51,7 +54,7 @@ unsigned long _lrotr( unsigned long value, int shift );
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
+*value*<br/>
 순환할 값입니다.
 
 *shift*<br/>
@@ -63,7 +66,7 @@ unsigned long _lrotr( unsigned long value, int shift );
 
 ## <a name="remarks"></a>설명
 
-**_lrotl** 하 고 **_lrotr** 함수 회전 *값* 하 여 *shift* 비트입니다. **_lrotl** 상위 비트가 방향으로 왼쪽 값을 기준으로 회전 합니다. **_lrotr** 값 오른쪽 덜 중요 한 비트 방향으로 회전 합니다. 두 함수 모두 순환되어 *value*의 한쪽 끝에서 잘린 비트 부분을 다른 쪽 끝에 추가합니다.
+**_Lrotl** 및 **_lrotr** 함수는 *값* 을 *shift* 비트로 회전 합니다. **_lrotl** 는 더 중요 한 비트 쪽으로 값을 왼쪽으로 회전 합니다. **_lrotr** 는 값을 중요 한 비트에 대해 오른쪽으로 회전 합니다. 두 함수 모두 순환되어 *value*의 한쪽 끝에서 잘린 비트 부분을 다른 쪽 끝에 추가합니다.
 
 ## <a name="requirements"></a>요구 사항
 

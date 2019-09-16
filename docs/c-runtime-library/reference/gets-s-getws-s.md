@@ -1,10 +1,10 @@
 ---
 title: gets_s, _getws_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _getws_s
 - gets_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _getws_s
 - gets_s
@@ -31,16 +34,16 @@ helpviewer_keywords:
 - gets_s function
 - standard input, reading from
 ms.assetid: 5880c36f-122c-4061-a1a5-aeeced6fe58c
-ms.openlocfilehash: f71fafceaf1974bc5ff736ff175a67cf6c924ee6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f282b4e8de12185a19e07374cf565788dc549136
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157658"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954968"
 ---
-# <a name="getss-getwss"></a>gets_s, _getws_s
+# <a name="gets_s-_getws_s"></a>gets_s, _getws_s
 
-줄을 가져옵니다 합니다 **stdin** 스트림 합니다. 이러한 버전의 [gets, _getws](../../c-runtime-library/gets-getws.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 포함되어 있습니다.
+**Stdin** 스트림에서 줄을 가져옵니다. 이러한 버전의 [gets, _getws](../../c-runtime-library/gets-getws.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 포함되어 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -73,17 +76,17 @@ wchar_t *_getws_s( wchar_t (&buffer)[size] ); // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-반환 *버퍼* 성공 합니다. **NULL** 포인터는 오류 또는 파일 끝 조건을 나타냅니다. 어떤 것이 발생했는지 확인하려면 [ferror](ferror.md) 또는 [feof](feof.md) 를 사용하십시오.
+성공 하면 *버퍼* 를 반환 합니다. **NULL** 포인터는 오류 또는 파일 끝 조건을 나타냅니다. 어떤 것이 발생했는지 확인하려면 [ferror](ferror.md) 또는 [feof](feof.md) 를 사용하십시오.
 
 ## <a name="remarks"></a>설명
 
-합니다 **gets_s** 함수는 표준 입력 스트림에서 줄을 읽고 **stdin** 에 저장 *버퍼*합니다. 줄은 첫 번째 줄 바꿈 문자('\n')까지 모든 문자로 구성됩니다. **gets_s** 줄을 반환 하기 전에 줄 바꿈 문자를 null 문자 ('\0')로 대체 합니다. 반면에 **fgets_s** 함수는 줄 바꿈 문자를 유지 합니다.
+**Gets_s** 함수는 표준 입력 스트림 **stdin** 에서 줄을 읽고 *버퍼*에 저장 합니다. 줄은 첫 번째 줄 바꿈 문자('\n')까지 모든 문자로 구성됩니다. 그런 다음 **gets_s** 는 줄을 반환 하기 전에 줄 바꿈 문자를 null 문자 (' \ 0 ')로 바꿉니다. 반대로 **fgets_s** 함수는 줄 바꿈 문자를 유지 합니다.
 
-읽은 첫 번째 문자는 파일의 끝 문자를 null 문자를 맨 앞에 저장 됩니다 *버퍼* 하 고 **NULL** 반환 됩니다.
+첫 번째 문자 읽기가 파일 끝 문자인 경우 null 문자는 *버퍼* 의 시작 부분에 저장 되 고 **null** 이 반환 됩니다.
 
-**_getws_s** 의 와이드 문자 버전이 **gets_s**; 해당 인수 및 반환 값은 와이드 문자 문자열입니다.
+**_getws_s** 는 **gets_s**의 와이드 문자 버전입니다. 해당 인수 및 반환 값은 와이드 문자열입니다.
 
-하는 경우 *버퍼* 됩니다 **NULL** 하거나 *sizeInCharacters* 0 보다 작거나 같으면 또는 버퍼가 너무 작아 입력된 줄과 null 종결자를 포함 하는 경우 이러한 함수를 호출 합니다 에 설명 된 대로 잘못 된 매개 변수 처리기를 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **NULL** errno 설정 하 고 **ERANGE**합니다.
+*Buffer* 가 **NULL** 이거나 *sizeincharacters* 가 0 보다 작거나 같은 경우 또는 버퍼가 너무 작아서 입력 줄과 NULL 종결자를 포함할 수 없는 경우 이러한 함수는 매개 변수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. [ 유효성 검사](../../c-runtime-library/parameter-validation.md). 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **NULL** 을 반환 하 고 Errno를 **ERANGE**로 설정 합니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
@@ -100,7 +103,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 |**gets_s**|\<stdio.h>|
 |**_getws_s**|\<stdio.h> 또는 \<wchar.h>|
 
-콘솔 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 콘솔을 사용 하 여 연결 된 표준 스트림 핸들 **stdin**하십시오 **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout**및 **stderr**에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

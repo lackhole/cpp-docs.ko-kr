@@ -1,4 +1,4 @@
----
+﻿---
 title: MFC 개체 간 관계
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -46,7 +46,7 @@ ms.locfileid: "62309046"
 일반적으로 프레임 창에는 하나의 뷰가 있지만 경우에 따라 분할자 창과 같이 동일한 프레임 창에 여러 뷰가 있을 수 있습니다. 프레임 창은 현재 활성화된 뷰에 대한 포인터를 유지합니다. 포인터는 다른 뷰가 활성화 될 때마다 업데이트 됩니다.
 
 > [!NOTE]
-> 주 프레임 창에 대한 포인터는 [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) 멤버 변수에 저장됩니다. `CWinApp`의 `InitInstance` 멤버 함수를 재정의할 때 `OnFileNew`를 호출하면 *m_pMainWnd*가 설정됩니다. `OnFileNew`를 호출하지 않으면 `InitInstance`에서 변수값을 직접 설정해야 합니다. (명령줄에 /Embedding이 있으면 SDI COM 구성 요소 (서버) 응용 프로그램에서는 설정할 수 없습니다.) *m_pMainWnd*는 이제 `CWinApp`이 아닌 `CWinThread` 클래스의 멤버입니다.
+>  주 프레임 창에 대한 포인터는 [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) 멤버 변수에 저장됩니다. `CWinApp`의 `InitInstance` 멤버 함수를 재정의할 때 `OnFileNew`를 호출하면 *m_pMainWnd*가 설정됩니다. `OnFileNew`를 호출하지 않으면 `InitInstance`에서 변수값을 직접 설정해야 합니다. (명령줄에 /Embedding이 있으면 SDI COM 구성 요소 (서버) 응용 프로그램에서는 설정할 수 없습니다.) *m_pMainWnd*는 이제 `CWinThread`이 아닌 `CWinApp` 클래스의 멤버입니다.
 
 ## <a name="see-also"></a>참고자료
 

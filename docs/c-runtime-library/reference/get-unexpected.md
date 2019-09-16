@@ -1,9 +1,9 @@
 ---
 title: _get_unexpected
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_unexpected
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __get_unexpected
 - _get_unexpected
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - get_unexpected function
 - _get_unexpected function
 ms.assetid: a5f7a7a0-18e0-485e-953d-db291068a1e8
-ms.openlocfilehash: 225158ecab60a5997ebedbad107eb43d82189234
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 896313aba62a42b54e8920eafa46d85714404b1c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331899"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956434"
 ---
-# <a name="getunexpected"></a>_get_unexpected
+# <a name="_get_unexpected"></a>_get_unexpected
 
-호출할 종료 루틴을 반환 합니다 **예기치 않은**합니다.
+**예기치 않게**호출할 종료 루틴을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,7 +46,7 @@ unexpected_function _get_unexpected( void );
 
 ## <a name="return-value"></a>반환 값
 
-[set_unexpected](set-unexpected-crt.md)로 등록된 함수에 대한 포인터를 반환합니다. 기본 동작을 복원 하려면 반환 값을 사용할 수 없는 함수를 설정한 경우 이 값이 있을 **NULL**합니다.
+[set_unexpected](set-unexpected-crt.md)로 등록된 함수에 대한 포인터를 반환합니다. 함수가 설정 되지 않은 경우 반환 값을 사용 하 여 기본 동작을 복원할 수 있습니다. 이 값은 **NULL**일 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
