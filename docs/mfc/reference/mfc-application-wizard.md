@@ -16,14 +16,14 @@ ms.locfileid: "65708183"
 ---
 # <a name="mfc-application-wizard"></a>MFC 애플리케이션 마법사
 
-MFC 응용 프로그램 마법사는 컴파일시 Windows 실행파일(.exe)의 응용 프로그램 기본 기능을 구현하는 코드를 생성합니다. 해당 망법으로 MFC를 시작하는 응용프로그램은 C++ (.cpp) 파일, 리소스 (.rc) 파일, 헤더 (.h) 파일 및 프로젝트 (.vcxproj) 파일을 생성합니다. 이러한 시작의 코드는 MFC를 기반으로 생성됩니다.
+MFC 응용 프로그램 마법사는 컴파일 시 Windows 실행 파일(.exe) 응용 프로그램의 기본 기능을 구현하는 코드를 생성합니다. 해당 방법으로 MFC를 시작하는 응용 프로그램은 C++(.cpp) 파일, 리소스(.rc) 파일, 헤더(.h) 파일 및 프로젝트(.vcxproj) 파일을 포함합니다. 이러한 시작 파일에서 생성되는 코드는 MFC를 기반으로 합니다.
 
 > [!NOTE]
->  선택한 옵션에 따라 마법사는 프로젝트에 추가 파일을 만듭니다. 예를들어 [고급 기능](../../mfc/reference/advanced-features-mfc-application-wizard.md) 페이지에서 **상황에 맞는 도움말**을 선택하면 마법사는 프로젝트의 도움말 파일을 컴파일 하는데 필요한 파일을 만듭니다. 마법사에서 생성하는 파일에 대한 자세한 내용은 [Visual Studio C++ 프로젝트용으로 생성되는 파일형식](../../build/reference/file-types-created-for-visual-cpp-projects.md)과 프로젝트의 Readme.txt 파일을 참조합니다.
+> 선택한 옵션에 따라 마법사는 프로젝트에 추가 파일을 만듭니다. 예를 들어 [고급 기능](../../mfc/reference/advanced-features-mfc-application-wizard.md) 페이지에서 **상황에 맞는 도움말**을 선택하면 마법사는 프로젝트의 도움말 파일을 컴파일하는 데 필요한 파일을 만듭니다. 마법사에서 생성하는 파일에 대한 자세한 내용은 [Visual Studio C++ 프로젝트용으로 생성되는 파일 형식](../../build/reference/file-types-created-for-visual-cpp-projects.md)과 프로젝트의 Readme.txt 파일을 참조합니다.
 
 ## <a name="overview"></a>개요
 
-이 마법사 페이지에는 개발중인 MFC 응용 프로그램에 대한 현재 응용 프로그램 설정을 설명합니다. 기본적으로 마법사는 다음과 같이 프로젝트를 만듭니다.
+이 마법사 페이지에서는 개발 중인 MFC 응용 프로그램에 대한 현재 응용 프로그램 설정을 설명합니다. 기본적으로 마법사는 다음과 같이 프로젝트를 만듭니다.
 
 - [MFC 애플리케이션 마법사, 애플리케이션 종류](../../mfc/reference/application-type-mfc-application-wizard.md)
 
@@ -35,7 +35,7 @@ MFC 응용 프로그램 마법사는 컴파일시 Windows 실행파일(.exe)의 
 
    - 프로젝트는 Visual Studio 프로젝트 스타일을 사용하여 만들어지며 비주얼 스타일 전환이 가능합니다.
 
-   - 프로젝트 공유 DLL에서 MFC를 사용합니다. 자세한 내용은 [Visual Studio에서 C/C++ Dll 만들기](../../build/dlls-in-visual-cpp.md)를 참조합니다.
+   - 프로젝트는 공유 DLL에서 MFC를 사용합니다. 자세한 내용은 [Visual Studio에서 C/C++ DLL 만들기](../../build/dlls-in-visual-cpp.md)를 참조합니다.
 
 - [복합 문서 지원, MFC 애플리케이션 마법사](../../mfc/reference/compound-document-support-mfc-application-wizard.md)
 
@@ -51,7 +51,7 @@ MFC 응용 프로그램 마법사는 컴파일시 Windows 실행파일(.exe)의 
 
 - [사용자 인터페이스 기능, MFC 애플리케이션 마법사](../../mfc/reference/user-interface-features-mfc-application-wizard.md)
 
-   - 이 프로젝트는 시스템 메뉴, 상태표시줄, 박스 최대화 및 최소화, **About*** 박스, 표준 메뉴 표시줄 및 도킹 도구모음, 자식 프레임과 같은 표준 Windows 사용자 인터페이스 기능을 구현합니다.
+   - 이 프로젝트는 시스템 메뉴, 상태 표시줄, 박스 최대화 및 최소화, **About** 박스, 표준 메뉴 표시줄 및 도킹 도구 모음, 자식 프레임과 같은 표준 Windows 사용자 인터페이스 기능을 구현합니다.
 
 - [고급 기능, MFC 응용 프로그램 마법사](../../mfc/reference/advanced-features-mfc-application-wizard.md)
 
