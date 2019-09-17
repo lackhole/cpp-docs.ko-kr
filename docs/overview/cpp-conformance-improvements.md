@@ -5,12 +5,12 @@ description: Visual Studio의 Microsoft C++는 C++20 언어 표준을 완전하�
 ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: aeaaab704706bee575e3ae44726522cd04c17433
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 8eae104d21de271f11c727262939121c20050092
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222309"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927942"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio의 C++ 규칙 향상
 
@@ -268,7 +268,7 @@ int main() {
 
 ### <a name="binary-expressions-with-different-enum-types"></a>열거형 형식이 다른 이진 식
 
-하나는 열거형 형식이고 다른 하나는 다른 열거형 형식이거나 부동 소수점 형식인 피연산자에 일반적인 산술 변환을 적용하는 기능은 C++20에서 더 이상 사용되지 않습니다([P1120R0](http://wg21.link/p1120r0)). Visual Studio 2019 버전 16.2 이상에서 [/std:c++latest](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 사용하는 경우 다음 코드는 수준 4 경고를 생성합니다.
+하나는 열거형 형식이고 다른 하나는 다른 열거형 형식이거나 부동 소수점 형식인 피연산자에 일반적인 산술 변환을 적용하는 기능은 C++20에서 더 이상 사용되지 않습니다([P1120R0](https://wg21.link/p1120r0)). Visual Studio 2019 버전 16.2 이상에서 [/std:c++latest](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 사용하는 경우 다음 코드는 수준 4 경고를 생성합니다.
 
 ```cpp
 enum E1 { a };
@@ -290,7 +290,7 @@ int main() {
 
 ### <a name="binary-expressions-with-enumeration-and-floating-point-types"></a>열거형 및 부동 소수점 형식을 사용하는 이진 식
 
-하나는 열거형 형식이고 다른 하나는 다른 열거형 형식이거나 부동 소수점 형식인 피연산자에 일반적인 산술 변환을 적용하는 기능은 C++20에서 더 이상 사용되지 않습니다([P1120R0](http://wg21.link/p1120r0)). 즉, 열거형과 부동 소수점 형식 간에 이진 연산을 사용하면 [/std:c++latest](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션이 사용 설정된 경우 경고가 발생합니다.
+하나는 열거형 형식이고 다른 하나는 다른 열거형 형식이거나 부동 소수점 형식인 피연산자에 일반적인 산술 변환을 적용하는 기능은 C++20에서 더 이상 사용되지 않습니다([P1120R0](https://wg21.link/p1120r0)). 즉, 열거형과 부동 소수점 형식 간에 이진 연산을 사용하면 [/std:c++latest](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션이 사용 설정된 경우 경고가 발생합니다.
 
 ```cpp
 enum E1 { a };
@@ -310,7 +310,7 @@ int main() {
 
 ### <a name="equality-and-relational-comparisons-of-arrays"></a>배열의 같음 및 관계 비교
 
-배열 형식의 두 피연산자 간 같음 및 관계 비교는 C++20에서 사용되지 않습니다([P1120R0](http://wg21.link/p1120r0)). 즉, 두 배열 간의 비교 연산(순위 및 범위 유사성과 관계없이)을 사용하면 경고가 발생합니다. Visual Studio 2019 버전 16.2부터 [/std:c++latest](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션이 사용 설정된 경우 다음 코드는 *C5056: operator '==': deprecated for array types*를 생성합니다.
+배열 형식의 두 피연산자 간 같음 및 관계 비교는 C++20에서 사용되지 않습니다([P1120R0](https://wg21.link/p1120r0)). 즉, 두 배열 간의 비교 연산(순위 및 범위 유사성과 관계없이)을 사용하면 경고가 발생합니다. Visual Studio 2019 버전 16.2부터 [/std:c++latest](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션이 사용 설정된 경우 다음 코드는 *C5056: operator '==': deprecated for array types*를 생성합니다.
 
 ```cpp
 int main() {

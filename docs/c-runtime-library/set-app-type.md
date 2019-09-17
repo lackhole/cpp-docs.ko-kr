@@ -1,23 +1,26 @@
 ---
 title: _set_app_type
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _set_app_type
-apilocation:
+api_location:
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _set_app_type
 - corecrt_startup/_set_app_type
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
-ms.openlocfilehash: 5a29fd94cca7fdbf6bbb24699b7f510bf1465f15
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 7e04d88d9e9981e35b7d4c80c11d27c868219f65
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749193"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957916"
 ---
-# <a name="setapptype"></a>_set_app_type
+# <a name="_set_app_type"></a>_set_app_type
 
 시작 시에 앱이 콘솔 앱인지 아니면 GUI 앱인지를 CRT에 알려 주는 데 사용되는 내부 함수입니다.
 
@@ -47,7 +50,7 @@ void __cdecl _set_app_type(
 |_crt_console_app|콘솔(명령줄) 애플리케이션입니다.|
 |_crt_gui_app|GUI(Windows) 애플리케이션입니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 일반적으로는 이 함수를 호출할 필요가 없습니다. 이 함수는 앱에서 `main`이 호출되기 전에 실행되는 C 런타임 시작 코드의 일부분입니다.
 

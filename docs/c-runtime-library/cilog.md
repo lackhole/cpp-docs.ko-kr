@@ -1,9 +1,9 @@
 ---
 title: _CIlog
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CIlog
-apilocation:
+api_location:
 - msvcr90.dll
 - msvcr120.dll
 - msvcr80.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr100.dll
 - msvcrt.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _CIlog
 - CIlog
@@ -20,14 +23,14 @@ helpviewer_keywords:
 - _CIlog intrinsic
 - CIlog intrinsic
 ms.assetid: 23503854-ddaa-4fe0-a4a3-7fbb3a43bdec
-ms.openlocfilehash: 29b35e5807ca3bd1fbb994118314952a9a1760c4
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: edc096680522da50910eb42a95a481b83be8791d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737712"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944806"
 ---
-# <a name="cilog"></a>_CIlog
+# <a name="_cilog"></a>_CIlog
 
 스택 상위 값의 자연 로그를 계산합니다.
 
@@ -37,7 +40,7 @@ ms.locfileid: "57737712"
 void __cdecl _CIlog();
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 버전의 `log` 함수는 컴파일러가 이해할 수 있는 특별한 호출 규칙을 가집니다. 복사본이 생성되지 않도록 하며 레지스터 할당을 돕기 때문에 실행 속도를 높입니다.
 

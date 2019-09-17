@@ -1,11 +1,14 @@
 ---
 title: errno, _doserrno, _sys_errlist 및 _sys_nerr
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _errno
-apilocation:
+api_location:
 - msvcrt.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _sys_errlist
 - errno
@@ -21,12 +24,12 @@ helpviewer_keywords:
 - _sys_nerr global variable
 - sys_nerr global variable
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369
-ms.openlocfilehash: 57d04fe5867c6a969b6aeca40f26b18b5dcd7a61
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 5b10d98dab41151290d4e44e031f659108b0c73c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750782"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944562"
 ---
 # <a name="errno-_doserrno-_sys_errlist-and-_sys_nerr"></a>errno, _doserrno, _sys_errlist 및 _sys_nerr
 
@@ -41,7 +44,7 @@ ms.locfileid: "57750782"
 #define _sys_nerr (*__sys_nerr())
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `errno`와 `_doserrno`는 모두 프로그램을 시작하는 동안 런타임에 0으로 설정됩니다. `errno`는 오류가 발생한 시스템 수준 호출에서 설정됩니다. `errno`에 설정된 마지막 호출에 대한 값이 있으므로 이후 호출에 의해 이 값이 변경될 수도 있습니다. 오류에 대해 `errno`를 설정하는 런타임 라이브러리 호출은 성공 시 `errno`를 지우지 않습니다. 설정할 수 있는 호출 바로 전에 `errno`를 호출하여 항상 `_set_errno(0)`를 지우고 호출 후 바로 확인하세요.
 

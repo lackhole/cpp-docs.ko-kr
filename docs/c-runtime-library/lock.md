@@ -1,9 +1,9 @@
 ---
 title: _lock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _lock
-apilocation:
+api_location:
 - msvcr110_clr0400.dll
 - msvcr120.dll
 - msvcr100.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr110.dll
 - msvcrt.dll
 - msvcr120_clr0400.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - lock
 - _lock
@@ -20,14 +23,14 @@ helpviewer_keywords:
 - lock function
 - _lock function
 ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
-ms.openlocfilehash: d29488c6dec15fb58eef24f50c1bfafefb8e85c6
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 666fdb8febebe133ae09ef3632cb38b6527d1210
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741152"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944494"
 ---
-# <a name="lock"></a>_lock
+# <a name="_lock"></a>_lock
 
 다중 스레드 잠금을 가져옵니다.
 
@@ -47,7 +50,7 @@ void __cdecl _lock
 *locknum*<br/>
 [in] 가져올 잠금의 식별자입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 잠금을 이미 가져온 경우 이 메서드는 잠금을 가져오고 내부 CRT(C 런타임) 오류를 발생시킵니다. 이 메서드가 잠금을 가져올 수 없는 경우 오류가 발생한 상태로 종료되고 오류 코드가 `_RT_LOCK`으로 설정됩니다.
 

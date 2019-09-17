@@ -1,9 +1,9 @@
 ---
 title: ___lc_locale_name_func
 ms.date: 11/04/2016
-apiname:
+api_name:
 - ___lc_locale_name_func
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr110.dll
 - msvcr100.dll
@@ -11,20 +11,23 @@ apilocation:
 - msvcr120.dll
 - msvcr80.dll
 - msvcr110_clr0400.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ___lc_locale_name_func
 helpviewer_keywords:
 - ___lc_locale_name_func
 ms.assetid: ef858308-872e-43de-95e0-9b1b4084343e
-ms.openlocfilehash: 88ce07ca3fece558c23f4fcd9a12949f184b7532
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: abc1ade393538586ad07f57e6838591833c9948b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741060"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944239"
 ---
-# <a name="lclocalenamefunc"></a>___lc_locale_name_func
+# <a name="___lc_locale_name_func"></a>___lc_locale_name_func
 
 내부 CRT 함수입니다. 스레드의 현재 로캘 이름을 검색합니다.
 
@@ -34,11 +37,11 @@ ms.locfileid: "57741060"
 wchar_t** ___lc_locale_name_func(void);
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 스레드의 현재 로캘 이름이 포함된 문자열에 대한 포인터입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `___lc_locale_name_func`는 다른 CRT 함수가 CRT 데이터의 스레드 로컬 스토리지에서 현재 로캘 이름을 가져오기 위해 사용하는 내부 CRT 함수입니다. [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) 함수 또는 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 함수를 사용하면 이 정보를 사용할 수 있습니다.
 

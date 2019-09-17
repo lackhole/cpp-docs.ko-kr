@@ -1,14 +1,17 @@
 ---
 title: to 함수
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcr120.dll
 - msvcr90.dll
 - msvcr110.dll
 - msvcr110_clr0400.dll
 - msvcr80.dll
 - msvcr100.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - To
 helpviewer_keywords:
@@ -20,12 +23,12 @@ helpviewer_keywords:
 - case, converting
 - characters, converting
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
-ms.openlocfilehash: 17d80507462b3eb0fdfb5d9e41da6162947bd3de
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: f7a898d70e506ed4707ea718faa0ed618682c2c7
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742538"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944816"
 ---
 # <a name="to-functions"></a>to 함수
 
@@ -36,7 +39,7 @@ ms.locfileid: "57742538"
 |[__toascii](../c-runtime-library/reference/toascii-toascii.md)|[toupper, _toupper, towupper](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)|
 |[tolower, _tolower, towlower](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)||
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 **to** 함수 및 매크로 변환은 다음과 같이 수행됩니다.
 
@@ -64,7 +67,7 @@ ms.locfileid: "57742538"
 
 - 로캘과 관련이 없으며 속도가 훨씬 더 빠른 `tolower` 및 **toupper** 버전입니다.
 
-- **isascii(**`c`**)** 및 **isupper(**`c`**)** 또는 **islower(**`c`**)** 중 하나가 각각 0이 아닌 경우에만 사용할 수 있습니다.
+- **isascii(** `c` **)** 및 **isupper(** `c` **)** 또는 **islower(** `c` **)** 중 하나가 각각 0이 아닌 경우에만 사용할 수 있습니다.
 
 - `c`가 변환하려는 적절한 대/소문자의 ASCII 문자가 아닌 경우 정의되지 않은 결과를 포함합니다.
 
@@ -74,7 +77,7 @@ ms.locfileid: "57742538"
 
 - 대상 대/소문자에 해당하는 와이드 문자가 있는 경우(즉, `iswlower` 또는 **iswupper**이 각각 0이 아닌 경우)
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```
 // crt_toupper.c

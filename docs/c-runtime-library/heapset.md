@@ -1,9 +1,9 @@
 ---
 title: _heapset
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _heapset
-apilocation:
+api_location:
 - msvcr90.dll
 - msvcr80.dll
 - msvcr110.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcrt.dll
 - msvcr120.dll
 - msvcr100.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _heapset
 - heapset
@@ -22,14 +25,14 @@ helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - _heapset function
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
-ms.openlocfilehash: 41c39914964de74401dcdef847b2c44f623af249
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 65b74798c4b3b513acea0b51ecc0cb7df98391c1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742118"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944317"
 ---
-# <a name="heapset"></a>_heapset
+# <a name="_heapset"></a>_heapset
 
 힙에서 최소한의 일관성을 검사하고 사용 가능한 항목을 지정된 값으로 설정합니다.
 
@@ -49,7 +52,7 @@ int _heapset(
 *fill*<br/>
 채우기 문자.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 `_heapset`는 Malloc.h에 정의된 다음 정수 매니페스트 상수 중 하나를 반환합니다.
 
@@ -62,7 +65,7 @@ int _heapset(
 
 또한 오류가 발생하는 경우 `_heapset` 는 `errno` 를 `ENOSYS`로 설정합니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `_heapset` 함수는 실수로 덮어쓴 사용 가능한 메모리 위치 또는 노드를 표시합니다.
 
@@ -76,7 +79,7 @@ int _heapset(
 
 호환성에 대한 자세한 내용은 소개 단원의 [호환성](../c-runtime-library/compatibility.md) 부분을 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```
 // crt_heapset.c

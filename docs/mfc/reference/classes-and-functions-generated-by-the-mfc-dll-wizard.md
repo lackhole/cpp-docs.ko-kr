@@ -26,7 +26,7 @@ MFC DLL 마법사에서 생성하는 코드는 만드는 DLL의 종류와 선택
 |[기본](../../build/regular-dlls-dynamically-linked-to-mfc.md)|없음|`CWinApp`에서 파생된 응용 프로그램 클래스|없음|
 |[기본](../../build/regular-dlls-dynamically-linked-to-mfc.md)|자동화|`CWinApp`에서 파생된 응용 프로그램 클래스|`DllGetClassObjectDllCanUnloadNowDllRegisterServer`|
 |[확장](../../build/extension-dlls-overview.md)|Windows 소켓|없음|`DllMain`|
-|[기본](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Windows 소켓|`CWinApp`에서 파생된 응용 프로그램 클래스|`InitInstance` 호출을 포함합니다. `AfxSocketInit`|
+|[기본](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Windows 소켓|`CWinApp`에서 파생된 응용 프로그램 클래스|`AfxSocketInit` 호출을 포함하는 `InitInstance`|
 
 ## <a name="see-also"></a>참고자료
 
