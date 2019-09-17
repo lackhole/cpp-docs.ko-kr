@@ -23,7 +23,7 @@ ms.locfileid: "56151236"
 
 - [C 언어 참조의 구조](../c-language/organization-of-the-c-language-reference.md)
 
-C++ 및 전처리기에 대한 추가 참고 자료는 다음을 참조하십시오.
+C++ 및 전처리기에 대한 추가 참고 자료는 다음을 참조하세요.
 
 - [C++ 언어 참조](../cpp/cpp-language-reference.md)
 
