@@ -13,9 +13,9 @@ ms.locfileid: "69514800"
 
 C++를 사용하면 다양한 종류의 Windows 응용 프로그램을 만들 수 있습니다. 각각 고유한 프로그래밍 모델과 Windows 관련 라이브러리 집합이 있지만 C++ 표준 라이브러리나 타사 C++ 라이브러리도 사용할 수 있습니다. 
 
-이 섹션에서는 Visual Studio 및 MFC/ATL 래퍼 라이브러리를 사용 하 여 Windows 프로그램을 만드는 방법을 설명 합니다. Windows 플랫폼 자체에 대한 설명서는 [Windows 설명서](/windows/index)를 참조하세요.
+이 섹션에서는 Visual Studio 및 MFC/ATL 래퍼 라이브러리를 사용하여 Windows 프로그램을 만드는 방법을 설명합니다. Windows 플랫폼 자체에 대한 설명서는 [Windows 설명서](/windows/index)를 참조하세요.
 
-## <a name="command-line-console-applications"></a>명령줄 (콘솔) 응용 프로그램
+## <a name="command-line-console-applications"></a>명령줄(콘솔) 응용 프로그램
 
 C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍스트 출력만 표시할 수 있습니다. 자세한 내용은 [콘솔 응용 프로그램](console-applications-in-visual-cpp.md)을 참조하세요.
 
@@ -27,7 +27,7 @@ C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍
 
 ### <a name="c-or-net"></a>C++? .NET?
 
-일반적으로의 C# .net 프로그래밍은 더 복잡 하 고 오류가 발생 하기 쉬우며 WIN32 또는 MFC 보다 최신 개체 지향 API를 포함 합니다. 대부분의 상황에서 적합한 성능을 얻을 수 있기 때문입니다. .NET은 다양 한 그래픽을 위한 Windows Presentation Foundation (WPF) 기능을 제공 하며, Win32 및 최신 Windows 런타임 API를 모두 사용할 수 있습니다. 아래의 경우 일반적으로 데스크탑 응용 프로그램에 C++를 사용할 것을 권장합니다.
+일반적으로의 C# .NET 프로그래밍은 덜 복잡하고 오류가 덜 발생하며 WIN32 또는 MFC 보다 최신 객체 지향 API를 포함합니다. 대부분의 상황에서 적합 이상의 성능을 얻을 수 있기 때문입니다. .NET은 다양한 그래픽을 위한 Windows Presentation Foundation(WPF) 기능을 제공하며, Win32 및 최신 Windows 런타임 API를 모두 사용할 수 있습니다. 아래의 경우 일반적으로 데스크탑 응용 프로그램에 C++를 사용할 것을 권장합니다.
 
 - 메모리 사용량에 대한 정밀한 제어
 - 전력 소비 효율의 극대화
@@ -35,11 +35,11 @@ C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍
 - DirectX에 대한 액세스
 - 표준 C++ 라이브러리의 대량 사용
 
-또한의 C++ 기능과 효율성을 .net 프로그래밍과 결합할 수 있습니다. 에서 C# 사용자 인터페이스를 만들고/cli를 사용 C++하 여 응용 프로그램에서 네이티브 C++ 라이브러리를 사용할 수 있습니다. 자세한 내용은 [C++/CLI를 이용한 .NET 프로그래밍](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)을 참조하세요.
+또한 C++의 기능과 효율성을 .NET 프로그래밍과 결합할 수 있습니다. C#에서 사용자 인터페이스를 만들고 C++/CLI를 사용하여 응용 프로그램에서 네이티브 C++ 라이브러리를 사용할 수 있습니다. 자세한 내용은 [C++/CLI를 이용한 .NET 프로그래밍](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)을 참조하세요.
 
 ## <a name="com-components"></a>COM 구성 요소
 
-[구성 요소 개체 모델(COM)](/windows/win32/com/the-component-object-model)은 다른 언어로 작성된 프로그램 간에 서로 통신할 수 있게 해줍니다. 많은 Windows 구성 요소가 COM 개체로 구현 되며 개체 만들기, 인터페이스 검색 및 개체 소멸에 대 한 표준 COM 규칙을 따릅니다.  C++ 데스크톱 응용 프로그램에서 COM 개체를 사용하는 것은 비교적 간단하지만 고유한 COM 개체를 작성하는 것은 더 높은 수준의 지식이 필요 합니다. [라이브러리 ATL(액티브 템플릿)](../atl/atl-com-desktop-components.md)은 매크로 및 COM 개발을 간소화하는 도우미 함수를 제공합니다. 자세한 내용은 [ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)를 참조 하세요.
+[구성 요소 개체 모델(COM)](/windows/win32/com/the-component-object-model)은 다른 언어로 작성된 프로그램 간에 서로 통신할 수 있게 해줍니다. 많은 Windows 구성 요소가 COM 개체로 구현되며 개체 만들기, 인터페이스 검색 및 개체 소멸에 대한 표준 COM 규칙을 따릅니다.  C++ 데스크톱 응용 프로그램에서 COM 개체를 사용하는 것은 비교적 간단하지만 고유한 COM 개체를 작성하는 것에는 더 높은 수준의 지식이 필요합니다. [ATL(액티브 템플릿 라이브러리)](../atl/atl-com-desktop-components.md)은 COM 개발을 간소화하는 매크로 및 도우미 함수를 제공합니다. 자세한 내용은 [ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)를 참조하세요.
 
 ## <a name="universal-windows-platform-apps"></a>유니버설 Windows 플랫폼 앱
 
@@ -49,7 +49,7 @@ UWP에 C++ 대 한 원래 지원은 (1) C++/cx, 구문 확장이 C++ 포함 된 
 
 ## <a name="desktop-bridge"></a>데스크톱 브리지
 
-Windows 10에서는 기존 데스크톱 응용 프로그램 또는 COM 개체를 UWP 앱으로 패키지 하 고, 터치와 같은 UWP 기능을 추가 하거나, 최신 Windows API 집합에서 Api를 호출할 수 있습니다. 또한 Visual Studio의 데스크톱 솔루션에 UWP 응용 프로그램을 추가하고 단일 패키지로 함께 패키지화하고 Windows API를 사용하여 UWP 응용 프로그램간 통신이 가능합니다.
+Windows 10에서는 기존 데스크톱 응용 프로그램 또는 COM 개체를 UWP 앱으로 패키지하고, 터치와 같은 UWP 기능을 추가하거나, 최신 Windows API 집합에서 API를 호출할 수 있습니다. 또한 Visual Studio의 데스크톱 솔루션에 UWP 응용 프로그램을 추가하고 단일 패키지로 함께 패키지화하고 Windows API를 사용하여 UWP 응용 프로그램 간 통신이 가능합니다.
 
 Visual Studio 2017 버전 15.4 이상에서는 기존 데스크톱 응용 프로그램을 패키지 하는 작업을 크게 간소화할 수 있도록 Windows 응용 프로그램 패키지 프로젝트를 만들 수 있습니다. 데스크톱 응용 프로그램에서 사용할 수 있는 레지스트리 호출 또는 Api에는 몇 가지 제한 사항이 적용 됩니다. 그러나 대부분의 경우 응용 프로그램 패키지에서 실행 되는 동안 유사한 기능을 얻기 위해 대체 코드 경로를 만들 수 있습니다. 자세한 내용은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
 
