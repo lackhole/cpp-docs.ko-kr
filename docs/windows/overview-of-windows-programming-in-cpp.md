@@ -51,7 +51,7 @@ UWP에 C++ 대 한 원래 지원은 (1) C++/cx, 구문 확장이 C++ 포함 된 
 
 Windows 10에서는 기존 데스크톱 응용 프로그램 또는 COM 개체를 UWP 앱으로 패키지하고, 터치와 같은 UWP 기능을 추가하거나, 최신 Windows API 집합에서 API를 호출할 수 있습니다. 또한 Visual Studio의 데스크톱 솔루션에 UWP 응용 프로그램을 추가하고 단일 패키지로 함께 패키지화하고 Windows API를 사용하여 UWP 응용 프로그램 간 통신이 가능합니다.
 
-Visual Studio 2017 버전 15.4 이상에서는 기존 데스크톱 응용 프로그램을 패키지 하는 작업을 크게 간소화할 수 있도록 Windows 응용 프로그램 패키지 프로젝트를 만들 수 있습니다. 데스크톱 응용 프로그램에서 사용할 수 있는 레지스트리 호출 또는 Api에는 몇 가지 제한 사항이 적용 됩니다. 그러나 대부분의 경우 응용 프로그램 패키지에서 실행 되는 동안 유사한 기능을 얻기 위해 대체 코드 경로를 만들 수 있습니다. 자세한 내용은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
+Visual Studio 2017 버전 15.4 이상에서는 기존 데스크톱 응용 프로그램을 패키지하는 작업을 크게 간소화할 수 있도록 Windows 응용 프로그램 패키지 프로젝트를 만들 수 있습니다. 데스크톱 응용 프로그램에서 사용할 수 있는 레지스트리 호출 또는 API에는 몇 가지 제한 사항이 적용됩니다. 그러나 대부분의 경우 응용 프로그램 패키지에서 실행되는 동안 유사한 기능을 얻기 위해 대체 코드 경로를 만들 수 있습니다. 자세한 내용은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
 
 ## <a name="games"></a>게임
 
@@ -67,13 +67,13 @@ DirectX 게임은 PC 또는 Xbox에서 실행할 수 있습니다. 자세한 내
 
 ## <a name="windows-services"></a>Windows 서비스
 
-Windows *서비스* 는 사용자 상호 작용이 거의 또는 전혀 없이 백그라운드에서 실행할 수 있는 프로그램입니다. 이러한 프로그램을 UNIX 시스템의 *디먼* 이라고 합니다. 자세한 내용은 [서비스](/windows/win32/services/services)를 참조하세요.
+Windows *서비스* 는 사용자 상호 작용이 거의 또는 전혀 없이 백그라운드에서 실행할 수 있는 프로그램입니다. 이러한 프로그램을 UNIX 시스템의 *데몬* 이라고 합니다. 자세한 내용은 [서비스](/windows/win32/services/services)를 참조하세요.
 
 ## <a name="sdks-libraries-and-header-files"></a>SDK, 라이브러리 및 헤더 파일
 
 Visual Studio에는 C 런타임 라이브러리(CRT), C++ 표준 라이브러리 및 기타 Microsoft 전용 라이브러리가 포함되어 있습니다. 이러한 라이브러리에 대 한 헤더 파일을 포함 하는 대부분의 포함 폴더는 Visual Studio 설치 디렉터리의 \VC\ 폴더에 있습니다. Windows 및 CRT 헤더 파일은 Windows SDK 설치 폴더에 있습니다.
 
-[Vcpkg 패키지 관리자](../build/vcpkg.md) 를 사용 하면 Windows 용 수백 개의 타사 오픈 소스 라이브러리를 편리 하 게 설치할 수 있습니다.
+[vcpkg 패키지 관리자](../build/vcpkg.md)를 사용하면 Windows 용 수백 개의 타사 오픈 소스 라이브러리를 편리하게 설치할 수 있습니다.
 
 Microsoft 라이브러리에는 다음이 포함됩니다.
 
@@ -93,14 +93,14 @@ Xbox, Azure 등 다른 플랫폼은 설치가 필요한 고유의 SDK가 있습�
 
 ## <a name="development-tools"></a>개발 도구
 
-Visual Studio는 네이티브 코드에 대한 강력한 디버거, 정적 분석 도구, 그래픽 디버깅 도구, 완벽한 기능을 갖춘 코드 편집기, 유닛 테스트 지원 및 다른 많은 도구와 유틸리티를 포함합니다. 자세한 내용은 [Visual studio를 사용 하 여 개발 시작](/visualstudio/ide/get-started-developing-with-visual-studio)및 [visual Studio C++ 의 개발 개요](../overview/overview-of-cpp-development.md)를 참조 하세요.
+Visual Studio는 네이티브 코드에 대한 강력한 디버거, 정적 분석 도구, 그래픽 디버깅 도구, 완벽한 기능을 갖춘 코드 편집기, 유닛 테스트 지원 및 다른 많은 도구와 유틸리티를 포함합니다. 자세한 내용은 [Visual Studio를 사용하여 개발 시작](/visualstudio/ide/get-started-developing-with-visual-studio) 및 [visual Studio C++의 개발 개요](../overview/overview-of-cpp-development.md)를 참조하세요.
 
 ## <a name="in-this-section"></a>단원 내용
 |제목|설명|
 |-----------|-----------------|
 |[연습: 표준 C++ 프로그램 만들기](walkthrough-creating-a-standard-cpp-program-cpp.md)| Windows 콘솔 응용 프로그램을 만듭니다.|
 |[연습: Windows 데스크톱 애플리케이션 만들기(C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|네이티브 Windows 데스크톱 응용 프로그램을 만듭니다.|
-|[Windows 데스크톱 마법사](windows-desktop-wizard.md)|마법사를 사용 하 여 새 Windows 프로젝트를 만듭니다.|
+|[Windows 데스크톱 마법사](windows-desktop-wizard.md)|마법사를 사용하여 새 Windows 프로젝트를 만듭니다.|
 |[ATL(액티브 템플릿 라이브러리)](../atl/atl-com-desktop-components.md)|C++에서 COM 구성 요소를 만들려면 ATL 라이브러리를 사용합니다.|
 |[MFC(Microsoft Foundation Class)](../mfc/mfc-desktop-applications.md)|MFC를 사용하여 대화상자 및 컨트롤이 포함된 크고 작은 Windows 응용 프로그램을 만드는 방법입니다.|
 |[ATL 및 MFC 공유 클래스](../atl-mfc-shared/atl-mfc-shared-classes.md)|CString 같은 ATL 및 MFC에서 공유하는 클래스를 사용합니다.|
