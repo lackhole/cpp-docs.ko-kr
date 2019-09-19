@@ -39,13 +39,13 @@ unsigned char __vmx_vmwrite(
 
 ## <a name="return-value"></a>반환 값
 
-0
+0\
 작업에 성공했습니다.
 
-1(sp1)
+1\
 현재 VMCS의 `VM-instruction error field` 에서 사용할 수 있는 확장된 상태로 작업이 실패했습니다.
 
-sr-2
+2\
 사용 가능한 상태 없이 작업이 실패했습니다.
 
 ## <a name="remarks"></a>설명
