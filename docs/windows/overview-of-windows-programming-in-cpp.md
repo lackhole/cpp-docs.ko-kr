@@ -26,7 +26,7 @@ C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍
 
 ### <a name="c-or-net"></a>C++? .NET?
 
-일반적으로의 C# .NET 프로그래밍은 더 복잡하고 오류가 발생하기 쉬우며 WIN32 또는 MFC 보다 최신 개체 지향 API를 포함 합니다. 대부분의 상황에서 적합한 성능을 얻을 수 있기 때문입니다. .NET은 다양한 그래픽을 위한 Windows Presentation Foundation (WPF) 기능을 제공하며, Win32 및 최신 Windows 런타임 API를 모두 사용할 수 있습니다. 아래의 경우 일반적으로 데스크탑 응용 프로그램에 C++를 사용할 것을 권장합니다.
+일반적으로의 C# .NET 프로그래밍은 덜 복잡하고 오류가 덜 발생하며 WIN32 또는 MFC 보다 최신 객체 지향 API를 포함합니다. 대부분의 상황에서 적합 이상의 성능을 얻을 수 있기 때문입니다. .NET은 다양한 그래픽을 위한 Windows Presentation Foundation(WPF) 기능을 제공하며, Win32 및 최신 Windows 런타임 API를 모두 사용할 수 있습니다. 아래의 경우 일반적으로 데스크탑 응용 프로그램에 C++를 사용할 것을 권장합니다.
 
 - 메모리 사용량에 대한 정밀한 제어
 - 전력 소비 효율의 극대화
@@ -38,19 +38,19 @@ C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍
 
 ## <a name="com-components"></a>COM 구성 요소
 
-[구성 요소 개체 모델(COM)](/windows/win32/com/the-component-object-model)은 다른 언어로 작성된 프로그램 간에 서로 통신할 수 있게 해줍니다. 많은 Windows 구성 요소가 COM 개체로 구현되며 개체 만들기, 인터페이스 검색 및 개체 소멸에 대 한 표준 COM 규칙을 따릅니다.  C++ 데스크톱 응용 프로그램에서 COM 개체를 사용하는 것은 비교적 간단하지만 고유한 COM 개체를 작성하는 것은 더 높은 수준의 지식이 필요 합니다. [라이브러리 ATL(액티브 템플릿)](../atl/atl-com-desktop-components.md)은 매크로 및 COM 개발을 간소화하는 도우미 함수를 제공합니다. 자세한 내용은 [ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)를 참조 하세요.
+[구성 요소 개체 모델(COM)](/windows/win32/com/the-component-object-model)은 다른 언어로 작성된 프로그램 간에 서로 통신할 수 있게 해줍니다. 많은 Windows 구성 요소가 COM 개체로 구현되며 개체 만들기, 인터페이스 검색 및 개체 소멸에 대한 표준 COM 규칙을 따릅니다. C++ 데스크톱 응용 프로그램에서 COM 개체를 사용하는 것은 비교적 간단하지만 고유한 COM 개체를 작성하는 것에는 더 높은 수준의 지식이 필요합니다. [ATL(액티브 템플릿 라이브러리)](../atl/atl-com-desktop-components.md)은 COM 개발을 간소화하는 매크로 및 도우미 함수를 제공합니다. 자세한 내용은 [ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)를 참조하세요.
 
 ## <a name="universal-windows-platform-apps"></a>유니버설 Windows 플랫폼 앱
 
 유니버설 Windows 플랫폼(UWP)은 최신 Windows API입니다. UWP 응용 프로그램은 Windows 10이 설치된 장치라면 모두 실행 가능하며 사용자 인터페이스에 XAML을 사용하고, 터치 동작을 완전하게 지원합니다. UWP에 대한 자세한 내용은 [유니버설 Windows 플랫폼(UWP) 앱이란?](/windows/uwp/get-started/whats-a-uwp)과 [Windows 유니버설 앱 가이드](/windows/uwp/get-started/universal-application-platform-guide)를 참조하세요.
 
-UWP에 C++ 대한 원래 지원은 (1) C++/CX, 구문 확장이 C++ 포함 된 언어 또는 (2) 표준 C++ 및 COM을 기반으로 하는 WRL (Windows 런타임 라이브러리)로 구성 되었습니다. C++/CX와 WRL은 계속 사용할 수 있지만, 새 프로젝트의 경우 표준을 C++ 기반으로 하고 더 빠른 성능을 제공하는 [ C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt)를 사용 하는 것이 좋습니다.
+UWP에 대한 C++의 원래 지원은 (1) C++/CX, 구문 확장이 포함된 C++ 언어 또는 (2) 표준 C++ 및 COM을 기반으로 하는 WRL(Windows 런타임 라이브러리)로 구성되었습니다. C++/CX와 WRL은 계속 사용할 수 있지만, 새 프로젝트의 경우 전적으로 표준 C++를 기반으로 하고 더 빠른 성능을 제공하는 [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt)를 사용하는 것이 좋습니다.
 
 ## <a name="desktop-bridge"></a>데스크톱 브리지
 
-Windows 10에서는 기존 데스크톱 응용 프로그램 또는 COM 개체를 UWP 앱으로 패키지하고, 터치와 같은 UWP 기능을 추가 하거나, 최신 Windows API 집합에서 API를 호출할 수 있습니다. 또한 Visual Studio의 데스크톱 솔루션에 UWP 응용 프로그램을 추가하고 단일 패키지로 함께 패키지화하고 Windows API를 사용하여 UWP 응용 프로그램간 통신이 가능합니다.
+Windows 10에서는 기존 데스크톱 응용 프로그램 또는 COM 개체를 UWP 앱으로 패키지하고, 터치와 같은 UWP 기능을 추가하거나, 최신 Windows API 집합에서 API를 호출할 수 있습니다. 또한 Visual Studio의 데스크톱 솔루션에 UWP 응용 프로그램을 추가하고 단일 패키지로 함께 패키지화하고 Windows API를 사용하여 UWP 응용 프로그램 간 통신이 가능합니다.
 
-Visual Studio 2017 버전 15.4 이상에서는 기존 데스크톱 응용 프로그램을 패키지 하는 작업을 크게 간소화할 수 있도록 Windows 응용 프로그램 패키지 프로젝트를 만들 수 있습니다. 데스크톱 응용 프로그램에서 사용할 수 있는 레지스트리 호출 또는 API에는 몇 가지 제한 사항이 적용 됩니다. 그러나 대부분의 경우 응용 프로그램 패키지에서 실행되는 동안 유사한 기능을 얻기 위해 대체 코드 경로를 만들 수 있습니다. 자세한 내용은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
+Visual Studio 2017 버전 15.4 이상에서는 기존 데스크톱 응용 프로그램을 패키지하는 작업을 크게 간소화할 수 있도록 Windows 응용 프로그램 패키지 프로젝트를 만들 수 있습니다. 데스크톱 응용 프로그램에서 사용할 수 있는 레지스트리 호출 또는 API에는 몇 가지 제한 사항이 적용됩니다. 그러나 대부분의 경우 응용 프로그램 패키지에서 실행되는 동안 유사한 기능을 얻기 위해 대체 코드 경로를 만들 수 있습니다. 자세한 내용은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
 
 ## <a name="games"></a>게임
 
@@ -70,19 +70,19 @@ Windows *서비스* 는 사용자 상호 작용이 거의 또는 전혀 없이 �
 
 ## <a name="sdks-libraries-and-header-files"></a>SDK, 라이브러리 및 헤더 파일
 
-Visual Studio에는 C 런타임 라이브러리(CRT), C++ 표준 라이브러리 및 기타 Microsoft 전용 라이브러리가 포함되어 있습니다. 이러한 라이브러리에 대한 헤더 파일을 포함 하는 대부분의 포함 폴더는 Visual Studio 설치 디렉터리의 \VC\ 폴더에 있습니다. Windows 및 CRT 헤더 파일은 Windows SDK 설치 폴더에 있습니다.
+Visual Studio에는 C 런타임 라이브러리(CRT), C++ 표준 라이브러리 및 기타 Microsoft 전용 라이브러리가 포함되어 있습니다. 이러한 라이브러리에 대한 헤더 파일을 포함하는 대부분의 포함 폴더는 Visual Studio 설치 디렉터리의 \VC\ 폴더에 있습니다. Windows 및 CRT 헤더 파일은 Windows SDK 설치 폴더에 있습니다.
 
 [vcpkg 패키지 관리자](../build/vcpkg.md)를 사용하면 Windows 용 수백 개의 타사 오픈 소스 라이브러리를 편리하게 설치할 수 있습니다.
 
 Microsoft 라이브러리에는 다음이 포함됩니다.
 
-- Microsoft Foundation Classes (MFC): 단추, 목록 상자, 트리 뷰 및 기타 컨트롤을 포함하는 다양한 사용자 인터페이스가 있는 일반적인 Windows 프로그램, 특히 엔터프라이즈 응용 프로그램을 만들기 위한 개체지향 프레임워크입니다. 자세한 내용은 [MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)을 참조하세요.
+- Microsoft Foundation Classes (MFC): 단추, 목록 상자, 트리 뷰 및 기타 컨트롤을 포함하는 다양한 사용자 인터페이스가 있는 일반적인 Windows 프로그램, 특히 엔터프라이즈 응용 프로그램을 만들기 위한 개체 지향 프레임워크입니다. 자세한 내용은 [MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)을 참조하세요.
 
-- ATL(액티브 템플릿 라이브러리): COM 구성 요소를 만들기 위한 강력한 도우미 라이브러리입니다. 자세한 내용은 [ATL COM 데스크톱 구성요소](../atl/atl-com-desktop-components.md)를 참조하세요.
+- ATL(액티브 템플릿 라이브러리): COM 구성 요소를 만들기 위한 강력한 도우미 라이브러리입니다. 자세한 내용은 [ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)를 참조하세요.
 
 - C++AMP (C++ 대형 병렬 처리 가속화): GPU에서 고성능 일반 계산 작업을 수행할 수 있도록 하는 라이브러리입니다. 자세한 내용은 [C++ AMP(C++ Accelerated Massive Parallelism)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)를 참조하세요.
 
-- 동시성 런타임: 다중 코어 및 다중 코어 장치에 대한 병렬 및 비동기 프로그래밍 작업을 간소화 하는 라이브러리입니다. 자세한 내용은 [동시성 런타임](../parallel/concrt/concurrency-runtime.md)을 참조하세요.
+- 동시성 런타임: 다중 코어 및 다중 코어 장치에 대한 병렬 및 비동기 프로그래밍 작업을 간소화하는 라이브러리입니다. 자세한 내용은 [동시성 런타임](../parallel/concrt/concurrency-runtime.md)을 참조하세요.
 
 많은 Windows 프로그래밍 시나리오에는 Windows 운영체제 구성 요소에 액세스할 수 있는 헤더 파일을 포함하는 Windows SDK도 필요합니다. 기본적으로 Visual Studio는 유니버설 Windows 앱을 개발할 수 있도록 하는 C++ 데스크톱 워크로드의 구성 요소로 Windows SDK를 설치합니다. UWP 앱을 개발하려면 Windows 10 버전의 Windows SDK가 필요합니다. 자세한 내용은 [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)를 참조하세요. (이전 버전 Windows의 Windows SDK에 대한 자세한 내용은 [Windows SDK 아카이브](https://developer.microsoft.com/windows/downloads/sdk-archive)를 참조하세요.)
 
@@ -92,7 +92,7 @@ Xbox, Azure 등 다른 플랫폼은 설치가 필요한 고유의 SDK가 있습�
 
 ## <a name="development-tools"></a>개발 도구
 
-Visual Studio는 네이티브 코드에 대한 강력한 디버거, 정적 분석 도구, 그래픽 디버깅 도구, 완벽한 기능을 갖춘 코드 편집기, 유닛 테스트 지원 및 다른 많은 도구와 유틸리티를 포함합니다. 자세한 내용은 [Visual Studio를 사용하여 개발 시작](/visualstudio/ide/get-started-developing-with-visual-studio)및 [visual Studio C++ 의 개발 개요](../overview/overview-of-cpp-development.md)를 참조 하세요.
+Visual Studio는 네이티브 코드에 대한 강력한 디버거, 정적 분석 도구, 그래픽 디버깅 도구, 완벽한 기능을 갖춘 코드 편집기, 유닛 테스트 지원 및 다른 많은 도구와 유틸리티를 포함합니다. 자세한 내용은 [Visual Studio를 사용하여 개발 시작](/visualstudio/ide/get-started-developing-with-visual-studio) 및 [visual Studio C++의 개발 개요](../overview/overview-of-cpp-development.md)를 참조하세요.
 
 ## <a name="in-this-section"></a>단원 내용
 |제목|설명|
