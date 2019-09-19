@@ -1,6 +1,6 @@
 ---
 title: 클래스 라이브러리 개요
-ms.date: 11/04/2016
+ms.date: 09/17/2019
 f1_keywords:
 - vc.classes.mfc
 helpviewer_keywords:
@@ -10,18 +10,18 @@ helpviewer_keywords:
 - class libraries, MFC
 - class libraries
 ms.assetid: 9b0e3152-ac39-4f52-91b4-f20aa3a674aa
-ms.openlocfilehash: aec295ea93868ff1fe6e0d3d1d2370a344e47c73
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23097c0bf3399a4dced6640f41c0d46dba101b26
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327316"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095951"
 ---
 # <a name="class-library-overview"></a>클래스 라이브러리 개요
 
-이 개요는 분류 하 고 클래스에는 Microsoft Foundation 클래스 라이브러리 (MFC) 버전 9.0에 설명 합니다. 함께 사용 하는 MFC의 클래스는 응용 프로그램 프레임 워크 구성-Windows API에 대해 작성 된 응용 프로그램의 프레임 워크입니다. 프로그래밍 작업 응용 프로그램과 관련 된 코드를 입력 하는 것입니다.
+이 개요에서는 MFC (MFC 라이브러리) 버전 9.0의 클래스를 분류 하 고 설명 합니다. 응용 프로그램 프레임 워크를 구성 하는 MFC의 클래스는 Windows API 용으로 작성 된 응용 프로그램의 프레임 워크입니다. 응용 프로그램에 관련 된 코드를 작성 하는 것이 프로그래밍 작업입니다.
 
-라이브러리의 클래스는 다음 범주에서 여기에 표시 됩니다.
+라이브러리의 클래스는 다음 범주에 표시 됩니다.
 
 - [루트 클래스: CObject](../mfc/root-class-cobject.md)
 
@@ -71,7 +71,7 @@ ms.locfileid: "62327316"
 
 - [파일 및 데이터베이스 클래스](../mfc/file-and-database-classes.md)
 
-   - [파일 I/O 클래스](../mfc/file-i-o-classes.md)
+   - [파일 i/o 클래스](../mfc/file-i-o-classes.md)
 
    - [DAO 클래스](../mfc/dao-classes.md)
 
@@ -109,13 +109,13 @@ ms.locfileid: "62327316"
 
    - [예외 클래스](../mfc/exception-classes.md)
 
-섹션 [일반 클래스 디자인 원칙](../mfc/general-class-design-philosophy.md) MFC 라이브러리 설계 된 방식에 대해 설명 합니다.
+[일반 클래스 디자인 원칙](../mfc/general-class-design-philosophy.md) 섹션에서는 MFC 라이브러리가 디자인 된 방식을 설명 합니다.
 
-프레임 워크의 개요를 참조 하세요 [클래스를 사용 하 여 Windows에 대 한 응용 프로그램 작성을](../mfc/using-the-classes-to-write-applications-for-windows.md)입니다. 위에 나열 된 클래스 중 일부는 framework 외부에서 사용할 수 있으며 컬렉션, 예외, 파일 및 문자열과 같은 유용한 추상화를 제공 하는 범용 클래스입니다.
+프레임 워크에 대 한 개요는 [클래스를 사용 하 여 Windows 용 응용 프로그램 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)을 참조 하세요. 위에 나열 된 클래스 중 일부는 프레임 워크 외부에서 사용할 수 있고 컬렉션, 예외, 파일 및 문자열과 같은 유용한 추상화를 제공 하는 범용 클래스입니다.
 
-클래스의 상속을 확인 하려면 사용 합니다 [클래스 계층 구조 차트](../mfc/hierarchy-chart.md)합니다.
+클래스의 상속을 확인 하려면 [클래스 계층 구조 차트](../mfc/hierarchy-chart.md)를 사용 합니다.
 
-이 개요에 나열 된 클래스 외에도 MFC 라이브러리는 다양 한 전역 함수, 전역 변수 및 매크로 포함 합니다. 개요 및 자세한 목록은 항목에서 이러한 방법이 [MFC 매크로 및 전역](../mfc/reference/mfc-macros-and-globals.md)에 MFC 클래스에 대 한 사전순 참조를 따릅니다.
+이 개요에 나열 된 클래스 외에도 MFC 라이브러리에는 여러 전역 함수, 전역 변수 및 매크로가 포함 되어 있습니다. Mfc 클래스에 대 한 사전순 참조를 따르는 [Mfc 매크로 및 전역](../mfc/reference/mfc-macros-and-globals.md)항목에는이에 대 한 개요와 자세한 목록이 나와 있습니다.
 
 ## <a name="see-also"></a>참고자료
 
