@@ -1,27 +1,27 @@
 ---
 title: 컴파일러 오류 C2337
-ms.date: 11/04/2016
+ms.date: 09/19/2019
 f1_keywords:
 - C2337
 helpviewer_keywords:
 - C2337
 ms.assetid: eccc9178-a15e-42cd-bbd0-3cea7cf2d55b
-ms.openlocfilehash: 63f18a12ccd1962dd221324f5557c29be89eb04c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf9b3e782804add13aeaef0e6672d2dd66d193be
+ms.sourcegitcommit: f907b15f50a6b945d0b87c03af0050946157d701
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188277"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71158769"
 ---
 # <a name="compiler-error-c2337"></a>컴파일러 오류 C2337
 
-'attribute name': 특성을 찾을 수 없습니다.
+> '*attribute-name*': 특성을 찾을 수 없습니다.
 
-이 버전의 Visual C++에서 지원되지 않는 특성을 사용했습니다.
+코드가이 컨텍스트에서 지원 되지 않는 특성을 사용 합니다. 또는이 버전의 컴파일러에서는 특성을 사용할 수 없습니다. 이 문제를 해결 하려면 지원 되지 않는 특성을 제거 합니다.
 
 다음 샘플에서는 C2337을 생성합니다.
 
-```
+```cpp
 // C2337.cpp
 // compile with: /c
 [emitidl];
