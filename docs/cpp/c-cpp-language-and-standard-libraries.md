@@ -21,7 +21,7 @@ ms.locfileid: "70218410"
 [C 언어](../c-language/c-language-reference.md)\
 C 언어의 Microsoft 구현에 대한 참조 콘텐츠입니다.
 
-[C++언어도](../cpp/cpp-language-reference.md)\
+[C++언어](../cpp/cpp-language-reference.md)\
 C++ 언어의 Microsoft 구현에 대한 참조 콘텐츠입니다.
 
 [C/C++ 전처리기](../preprocessor/c-cpp-preprocessor-reference.md)\
@@ -56,7 +56,7 @@ MFC(Microsoft Foundation Classes) 및 ATL(액티브 템플릿 라이브러리) �
 
 ### <a name="additional-libraries"></a>추가 라이브러리
 
-[C++AMP (C++ 대형 병렬 처리 가속화)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)\
+[C++ AMP(C++ 가속화된 대규모 병렬 처리)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)\
 최신 그래픽 프로세서를 일반적인 목적으로 사용하기 위한 클래스입니다.
 
 [동시성 런타임](../parallel/concrt/concurrency-runtime.md)\
