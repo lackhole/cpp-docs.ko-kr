@@ -14,11 +14,11 @@ ms.locfileid: "64345171"
 
 모던 C++ 프로그래밍 적용을 위해 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)의 알고리즘을 사용하는 것을 권장합니다. 다음은 몇가지 주요 예를 보여줍니다.
 
-- **for_each**는 기본 탐색 알고리즘입니다.(또한 **transform**도 고려할 수 있습니다.)
+- 기본 탐색 알고리즘인 **for_each** (또한 **transform**도 고려할 수 있습니다.)
 
-- **find_if**은 기본 검색 알고리즘입니다.
+- 기본 검색 알고리즘인 **find_if**
 
-- **sort**, **lower_bound** 및 그 밖의 기본 정렬 및 검색 알고리즘.
+- **sort**, **lower_bound**와 그 밖의 기본 정렬 및 검색 알고리즘
 
 비교자를 만들기 위해 비교 연산자 **<**를 사용하고 가능한 경우 *이름있는 람다(named lambdas)*를 사용하세요.
 
@@ -35,7 +35,7 @@ auto i = lower_bound( v.begin(), v.end(), comp );
 
 가능한 경우 수작업으로 만든 루프를 사용하는 대신 범위 기반 **for**나 알고리즘을 호출하거나 혹은 두 가지를 모두 사용하세요. **copy**, **transform**, **count_if**, **remove_if** 등의 유형은 의도가 분명하고 보다 버그 없는 코드를 작성하기가 쉽기 때문에 수작업으로 작성한 루프보다 훨씬 좋습니다. 또한 많은 C++ 라이브러리 알고리즘에는 보다 효율적으로 구현된 최적화된 기능이 있습니다.
 
-대신 다음과 같은 이전 C++:
+올드 스타일의 C++:
 
 ```cpp
 for ( auto i = strings.begin(); i != strings.end(); ++i ) {
@@ -49,7 +49,7 @@ for ( ; i != v.end(); ++i ) {
 }
 ```
 
-다음과 같은 최신 C++를 사용 합니다.
+최신 C++을 다음과 같이 사용합니다.
 
 ```cpp
 for_each( begin(strings), end(strings), [](string& s) {
