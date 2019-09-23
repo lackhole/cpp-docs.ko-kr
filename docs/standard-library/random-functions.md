@@ -30,7 +30,7 @@ RealType generate_canonical(Generator& Gen);
 부동 소수점 정수 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)을 참조하세요.
 
 *비트씩*\
-사용할 임의의 비트수 입니다.
+사용할 임의의 비트 수입니다.
 
 *생성기*\
 난수 생성기 클래스입니다.
@@ -40,4 +40,4 @@ RealType generate_canonical(Generator& Gen);
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 *Gen*의 `operator()`를 반복해서 호출하고 반환된 값을 `x`에서 지정된 거짓수(mantissa) 비트수를 수집할 때까지 *RealType* 유형의 부동 소수점 값 `x`에 압축합니다. 지정된 숫자는 *Bits* 중 작은 숫자(0이 아니어야 함)와 *RealType*의 전체 거짓수 비트수입니다. 첫 번째 호출은 최하위 비트를 제공합니다. 이 함수는 `x`를 반환합니다.
+템플릿 함수는 *Gen*의 `operator()`를 반복해서 호출하고 반환된 값을 `x`에서 지정된 가수(mantissa) 비트 수를 수집할 때까지 *RealType* 유형의 부동 소수점 값 `x`에 압축합니다. 지정된 숫자는 *Bits* 중 작은 숫자(0이 아니어야 함)와 *RealType*의 전체 가수 비트 수입니다. 첫 번째 호출은 최하위 비트를 제공합니다. 이 함수는 `x`를 반환합니다.
