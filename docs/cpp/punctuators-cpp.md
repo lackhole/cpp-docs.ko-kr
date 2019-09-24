@@ -24,6 +24,6 @@ C++의 문장 부호는 컴파일러에서 구문 및 의미 체계를 의미하
 
 문장 부호 **[]** **()**, 및 **{}** 는 [변환 단계](../preprocessor/phases-of-translation.md) 4 뒤에 위치해야 합니
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 자료
 
 [어휘 규칙](../cpp/lexical-conventions.md)
