@@ -123,7 +123,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68447970"
 ---
-# <a name="basicstring-class"></a>basic_string 클래스
+# <a name="basic_string-class"></a>basic_string 클래스
 
 템플릿 클래스 `basic_string`의 개체에 의해 제어되는 시퀀스는 표준 C++ 문자열 클래스로 보통 문자열이라고 합니다. 이러한 문자열을 C++ 표준 라이브러리 전체에서 사용되는 null로 종료되는 C 스타일 문자열과 혼동해서는 안 됩니다. 표준 C++ 문자열은 비교/연결 작업, 반복기, C++ 표준 라이브러리 알고리즘, 클래스 할당자 관리 메모리 복사/할당 등의 일반 형식으로 문자열을 사용할 수 있는 컨테이너입니다. 표준 C++ 문자열을 null로 종료되는 C 스타일 문자열로 변환해야 하는 경우에는 [basic_string::c_str](#c_str) 멤버를 사용합니다.
 
@@ -137,7 +137,7 @@ class basic_string;
 ### <a name="parameters"></a>매개 변수
 
 *CharType*\
-문자열에 저장되는 단일 문자의 데이터 형식입니다. 표준 C++ 라이브러리는 **char**, [wstring](../standard-library/string-typedefs.md#wstring), **wchar_t**, [u16string](../standard-library/string-typedefs.md#u16string) for `char16_t`및 [](../standard-library/string-typedefs.md#string) [의 요소에 대 한 형식 정의 문자열을 사용 하 여이 템플릿 클래스의 특수화를 제공 합니다. ](../standard-library/string-typedefs.md#u32string) u32string`char32_t`
+문자열에 저장되는 단일 문자의 데이터 형식입니다. 표준 C++ 라이브러리는 **char**, [wstring](../standard-library/string-typedefs.md#wstring), **wchar_t**, [u16string](../standard-library/string-typedefs.md#u16string) for `char16_t`및 [u32string](../standard-library/string-typedefs.md#u32string) for `char32_t`의 요소에 대한 형식 정의 [문자열](../standard-library/string-typedefs.md#string)을 사용하여 이 템플릿 클래스의 특수화를 제공합니다.
 
 *특징이*\
 Basic_string 특수화의 `CharType` 요소에 대 한 다양 한 중요 속성은 클래스 `Traits`에서 설명 합니다. 기본값은 `char_traits`< `CharType`>입니다.
@@ -610,7 +610,7 @@ reference at(size_type _Off);
 
 ### <a name="remarks"></a>설명
 
-문자열의 첫 번째 요소는 인덱스가 0이 고 다음 요소는 양의 정수로 연속적으로 인덱싱됩니다. 따라서 길이가 *n* 인 문자열에는 *n 번째 요소가*n *-* 1로 인덱싱되는 요소가 있습니다.
+문자열의 첫 번째 요소는 인덱스가 0이 고 다음 요소는 양의 정수로 연속적으로 인덱싱됩니다. 따라서 길이가 *n* 인 문자열에는 *n 번째 요소가 n* *-* 1로 인덱싱되는 요소가 있습니다.
 
 멤버 [연산자&#91; ](#op_at) 는 문자열의 요소에 대 한 `at` 읽기 및 쓰기 권한을 제공 하기 위해 멤버 함수 보다 빠릅니다.
 
@@ -1030,7 +1030,7 @@ const_iterator cbegin() const;
 
 `cbegin` 반환 값을 사용하여 범위의 요소를 수정할 수 없습니다.
 
-`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cbegin()`
+`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다. `cbegin()`
 
 ```cpp
 auto i1 = Container.begin();
@@ -1056,7 +1056,7 @@ const_iterator cend() const;
 
 `cend`는 반복기가 범위 끝을 통과했는지 여부를 테스트하는 데 사용됩니다.
 
-`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cend()`
+`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다. `cend()`
 
 ```cpp
 auto i1 = Container.end();
@@ -3577,7 +3577,7 @@ typedef typename allocator_type::pointer pointer;
 
 이 형식은 `allocator_type::pointer`의 동의어입니다.
 
-형식의 `string`경우 <strong>char\*</strong>와 동일 합니다.
+형식의 `string`경우<strong>char\*</strong>와 동일 합니다.
 
 ### <a name="example"></a>예제
 

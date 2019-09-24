@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - ATL_DRAWINFO structure
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
-ms.openlocfilehash: 77ef56f73be1ed9ddfc63c459b6bab3ad4decb3f
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 728a7eed418a6600c9247b91ff7b777dd458e621
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503422"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498003"
 ---
-# <a name="atldrawinfo-structure"></a>ATL_DRAWINFO 구조체
+# <a name="atl_drawinfo-structure"></a>ATL_DRAWINFO 구조체
 
-프린터, 메타 파일 또는 ActiveX 컨트롤 같은 다양 한 대상에 렌더링에 사용 되는 정보를 포함 합니다.
+프린터, 메타 파일 또는 ActiveX 컨트롤과 같은 다양 한 대상으로 렌더링 하는 데 사용 되는 정보를 포함 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,56 +42,56 @@ struct ATL_DRAWINFO {
 ## <a name="members"></a>멤버
 
 `cbSize`<br/>
-크기 (바이트)에서 구조입니다.
+구조체의 크기 (바이트)입니다.
 
 `dwDrawAspect`<br/>
-대상 표시할 방법을 지정 합니다. 콘텐츠, 아이콘, 미리 보기, 또는 인쇄 된 문서 표현이 포함할 수 있습니다. 가능한 값 목록을 참조 하세요 [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) 하 고 [DVASPECT2](/windows/desktop/api/ocidl/ne-ocidl-tagdvaspect2)합니다.
+대상이 표시 되는 방법을 지정 합니다. 표현에는 콘텐츠, 아이콘, 축소판 그림 또는 인쇄 된 문서가 포함 될 수 있습니다. 가능한 값 목록은 [Dvaspect](/windows/win32/api/wtypes/ne-wtypes-dvaspect) 및 [DVASPECT2](/windows/win32/api/ocidl/ne-ocidl-dvaspect2)를 참조 하세요.
 
 `lindex`<br/>
-그리기 작업에 대 한 관심 있는 대상의 부분입니다. 값에 따라 해석이 달라는 `dwDrawAspect` 멤버입니다.
+그리기 작업에 관심이 있는 대상의 부분입니다. `dwDrawAspect` 멤버의 값에 따라 해석이 달라 집니다.
 
 `ptd`<br/>
-에 대 한 포인터를 [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) 모양 지정에 따른 그리기 최적화를 사용 하도록 설정 하는 구조입니다. 참고는 최신 개체 및 최적화 된 그리기 인터페이스를 지 원하는 컨테이너 에서도이 멤버를 지원 합니다. 이전 개체 및 컨테이너 항상 최적화 된 그리기 인터페이스 지원 하지 않는이 멤버에 대해 NULL을 지정 합니다.
+지정 된 측면에 따라 그리기 최적화를 사용 하도록 설정 하는 [DVTARGETDEVICE](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) 구조체에 대 한 포인터입니다. 최적화 된 그리기 인터페이스를 지 원하는 최신 개체 및 컨테이너도이 멤버를 지원 합니다. 최적화 된 그리기 인터페이스를 지원 하지 않는 오래 된 개체와 컨테이너는이 멤버에 대해 항상 NULL을 지정 합니다.
 
 `hicTargetDev`<br/>
-가리키는 대상 장치에 대 한 컨텍스트 정보 `ptd` 개체가 장치 메트릭을 추출 하 고 장치의 기능을 테스트 하는 합니다. 하는 경우 `ptd` 가 null 인 경우 개체의 값을 무시할지를 `hicTargetDev` 멤버입니다.
+개체가 장치 메트릭을 추출 하 고 장치 기능을 `ptd` 테스트할 수 있는가 가리키는 대상 장치에 대 한 정보 컨텍스트입니다. 가 `ptd` NULL 인 경우 개체는 `hicTargetDev` 멤버의 값을 무시 해야 합니다.
 
 `hdcDraw`<br/>
-그릴 디바이스 컨텍스트입니다. 창 없는 개체에 대 한 합니다 `hdcDraw` 멤버가 `MM_TEXT` 포함 하는 창의 클라이언트 좌표에 일치 하는 논리적 좌표를 사용 하 여 매핑 모드입니다. 장치 컨텍스트를 일반적으로 전달한 것과 동일한 상태 여야 합니다 또한을 `WM_PAINT` 메시지입니다.
+를 그릴 장치 컨텍스트입니다. 창 없는 개체의 경우 멤버 `hdcDraw` 는 포함 하는 `MM_TEXT` 창의 클라이언트 좌표와 일치 하는 논리적 좌표를 사용 하 여 매핑 모드에 있습니다. 또한 장치 컨텍스트는 일반적으로 `WM_PAINT` 메시지에서 전달 하는 것과 동일한 상태 여야 합니다.
 
 `prcBounds`<br/>
-에 대 한 포인터를 [RECTL](/previous-versions//dd162907\(v=vs.85\)) 에 사각형을 지정 하는 구조 `hdcDraw` 및 개체를 그립니다. 이 멤버는 위치 및 개체의 늘이기를 제어 합니다. 이 멤버에는 창 전체 활성 개체를 그릴 NULL 이어야 합니다. 다른 모든 상황에서 NULL은 올바른 값이 아닙니다 및 개가 수신 되어야는 `E_INVALIDARG` 오류 코드입니다. 창 없는 개체에 NULL이 아닌 값을 전달 하는 컨테이너를 개체는 사각형에 지정 된 디바이스 컨텍스트 요청한 측면을 렌더링 해야 합니다. 컨테이너 개체의 두 번째, 비활성 뷰를 렌더링 하거나 개체를 인쇄 합니다. 창 없는 개체에서이 요청할 수 있습니다.
+개체를 그릴 `hdcDraw`및 사각형을 지정하는 [RECTL](/previous-versions//dd162907\(v=vs.85\)) 구조체에 대한 포인터입니다. 이 멤버는 개체의 위치 지정 및 늘이기를 제어 합니다. 창 없는 내부 활성 개체를 그리려면이 멤버가 NULL 이어야 합니다. 다른 모든 상황에서 NULL은 올바른 값이 아니므로 `E_INVALIDARG` 오류 코드가 생성 됩니다. 컨테이너가 NULL이 아닌 값을 창 없는 개체에 전달 하는 경우 개체는 요청한 측면을 지정 된 장치 컨텍스트와 사각형에 렌더링 해야 합니다. 컨테이너는 창 없는 개체에서이를 요청 하 여 개체의 두 번째 비활성 뷰를 렌더링 하거나 개체를 인쇄할 수 있습니다.
 
 `prcWBounds`<br/>
-하는 경우 `hdcDraw` 메타 파일 장치 컨텍스트는 (참조 [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) Windows SDK에서),이에 대 한 포인터는를 `RECTL` 내부 메타 파일의 경계 사각형을 지정 하는 구조입니다. 창 크기와 창 원본 사각형 구조에 포함 되어 있습니다. 이러한 값은 메타 파일 그리기에 유용 합니다. 사각형에 나타난 `prcBounds` 이 중첩 `prcWBounds` 사각형의 동일한 좌표 공간에서.
+이 `hdcDraw` 메타 파일 장치 컨텍스트 (Windows SDK의 [GetDeviceCaps](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) 참조) 이면 기본 메타 파일의 경계 사각형을 지정 `RECTL` 하는 구조체에 대 한 포인터입니다. 사각형 구조에는 창 범위와 창 원점이 포함 됩니다. 이러한 값은 메타 파일을 그리는 데 유용 합니다. 에 의해 `prcBounds` 표시 된 사각형은이 `prcWBounds` 사각형 안에 중첩 되며 동일한 좌표 공간에 있습니다.
 
 `bOptimize`<br/>
-컨트롤의 그리기를 최적화 하 고 그렇지 않은 0 이면 0이 아닙니다. 완료 했으면 장치 컨텍스트의 상태는 자동으로 복원 그리기를 최적화 하는 경우 렌더링 합니다.
+컨트롤의 그리기를 최적화 하는 경우 0이 아니고, 그렇지 않으면 0입니다. 그리기가 최적화 된 경우 렌더링을 마치면 장치 컨텍스트의 상태가 자동으로 복원 됩니다.
 
 `bZoomed`<br/>
-이 속성을 0이 아닌 대상에 확대/축소 비율, 그렇지 않으면 0입니다. 확대/축소 비율에 저장 된 `ZoomNum`합니다.
+대상에 확대/축소 비율이 있으면 0이 아니고, 그렇지 않으면 0입니다. 확대/축소 비율은에 `ZoomNum`저장 됩니다.
 
 `bRectInHimetric`<br/>
-0이 아닌 값의 크기 `prcBounds` HIMETRIC, 그렇지 않으면 0에 있습니다.
+의 `prcBounds` 차원이 HIMETRIC에 있으면 0이 아닌 값이 고, 그렇지 않으면 0입니다.
 
 `ZoomNum`<br/>
-개체 렌더링 되는 사각형의 높이 너비입니다. X 축의 (현재 범위에 해당 개체의 기본 크기의 비율) 대상의 확대/축소 비율의 값인 `ZoomNum.cx` 의 값으로 나눈 `ZoomDen.cx`합니다. Y 축의 확대/축소 비율을 비슷한 방식으로 이루어집니다.
+개체가 렌더링 되는 사각형의 너비와 높이입니다. 대상 `ZoomNum.cx` 의 x 축 (개체의 기본 크기에 대 한 비율)을 따른 확대/축소 비율은의 값으로 `ZoomDen.cx`나눈 값입니다. Y 축을 따라 확대/축소 비율은 비슷한 방식으로 달성 됩니다.
 
 `ZoomDen`<br/>
-실제 너비와 높이의 대상입니다.
+대상의 실제 너비와 높이입니다.
 
 ## <a name="remarks"></a>설명
 
-이 구조체의 일반적인 사용 대상 개체의 렌더링 하는 동안 정보를 검색할 수 있습니다. 에 오버 로드 내에서 ATL_DRAWINFO 값을 검색할 수는 예를 들어 [CComControlBase::OnDrawAdvanced](ccomcontrolbase-class.md#ondrawadvanced)합니다.
+이 구조의 일반적인 사용법은 대상 개체를 렌더링 하는 동안 정보를 검색 하는 것입니다. 예를 들어 [CComControlBase:: OnDrawAdvanced](ccomcontrolbase-class.md#ondrawadvanced)의 오버 로드 내에서 ATL_DRAWINFO의 값을 검색할 수 있습니다.
 
-이 구조는 대상 장치에 대 한 개체의 모양을 렌더링 하는 데 사용 되는 관련 정보를 저장 합니다. 제공 된 정보는 화면, 프린터 또는 메타 파일 그리기에 사용할 수 있습니다.
+이 구조는 대상 장치에 대 한 개체의 모양을 렌더링 하는 데 사용 되는 관련 정보를 저장 합니다. 제공 된 정보는 화면, 프린터 또는 메타 파일에 그리는 데 사용할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlctl.h
+**헤더:** 없음 ctl. h
 
 ## <a name="see-also"></a>참고자료
 
 [클래스 및 구조체](../../atl/reference/atl-classes.md)<br/>
-[IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)<br/>
+[IViewObject::Draw](/windows/win32/api/oleidl/nf-oleidl-iviewobject-draw)<br/>
 [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)

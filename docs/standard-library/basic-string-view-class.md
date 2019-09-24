@@ -126,7 +126,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68447862"
 ---
-# <a name="basicstringview-class"></a>basic_string_view 클래스
+# <a name="basic_string_view-class"></a>basic_string_view 클래스
 
 클래스 템플릿은 `basic_string_view<charT>` 함수를 사용 하 여 해당 형식에 대 한 템플릿 화 필요가 없는 여러 관련 없는 문자열 형식을 허용 하는 안전 하 고 효율적인 방법으로 사용할 수 있도록 c + + 17에서 추가 되었습니다. 클래스는 문자 데이터의 연속 시퀀스에 대 한 소유 하지 않는 포인터와 시퀀스의 문자 수를 지정 하는 길이를 포함 합니다. 시퀀스가 null로 종결 되었는지 여부에 대 한 가정을 하지 않습니다.
 
@@ -283,9 +283,9 @@ constexpr const_reference at(size_type offset) const;
 
 ### <a name="remarks"></a>설명
 
-첫 번째 요소의 인덱스는 0이 고 다음 요소는 양의 정수로 연속적으로 인덱싱됩니다. 따라서 길이가 *n* 인 string_view의 *n 번째 요소*는 숫자 *n-* 1로 인덱싱됩니다. **에서** [연산자\[와는달리 잘못 된 인덱스에 대해 예외를 throw 합니다.\]](#op_at) 
+첫 번째 요소의 인덱스는 0이 고 다음 요소는 양의 정수로 연속적으로 인덱싱됩니다. 따라서 길이가 *n* 인 string_view의 *n 번째 요소는 숫자* *n-* 1로 인덱싱됩니다. **에서** [연산자\[와는달리 잘못 된 인덱스에 대해 예외를 throw 합니다.\]](#op_at) 
 
-일반적으로 `std::vector` 및 string_view와 같은 **시퀀스에는** 를 사용 하지 않는 것이 좋습니다. 시퀀스에 전달 된 잘못 된 인덱스는 개발 중에 검색 되 고 수정 되어야 하는 논리 오류입니다. 프로그램에서 해당 인덱스가 유효 하다는 확신이 없으면 ()에서 호출 하는 것이 아니라 테스트를 수행 하 고 부주의 프로그래밍 으로부터 보호 하는 예외를 사용 합니다.
+일반적으로 `std::vector` 및 string_view와 같은 **시퀀스에는를 사용** 하지 않는 것이 좋습니다. 시퀀스에 전달 된 잘못 된 인덱스는 개발 중에 검색 되 고 수정 되어야 하는 논리 오류입니다. 프로그램에서 해당 인덱스가 유효 하다는 확신이 없으면 ()에서 호출 하는 것이 아니라 테스트를 수행 하 고 부주의 프로그래밍 으로부터 보호 하는 예외를 사용 합니다.
 
 자세한 내용은 [basic_string_view::\[ operator\] ](#op_at) 를 참조 하세요.
 
@@ -893,7 +893,7 @@ String_view에 포함할 수 있는 최대 문자 수입니다.
 
 ### <a name="remarks"></a>설명
 
-작업에서 길이가 보다 [](../standard-library/length-error-class.md) `max_size()`큰 string_view를 생성 하는 경우 length_error 형식의 예외가 throw 됩니다.
+작업에서 길이가 `max_size()` 보다 큰 string_view를 생성 하는 경우 [length_error](../standard-library/length-error-class.md) 형식의 예외가 throw 됩니다.
 
 ## <a name="op_eq"></a>  basic_string_view::operator=
 
@@ -929,7 +929,7 @@ constexpr const_reference operator[](size_type offset) const;
 
 첫 번째 요소의 인덱스는 0이 고, 다음 요소는 양의 정수로 연속적으로 인덱싱됩니다. 따라서 길이가 *n* 인 string_view에는 숫자 *n* -1로 인덱싱된 *n*번째 요소가 있습니다.
 
-`operator[]`는 string_view의 요소에 대 한 읽기 권한을 제공 하기 위해의 [멤버 함수 보다](#at) 빠릅니다.
+`operator[]`는 string_view의 요소에 대 한 읽기 권한을 제공 하기 [위해의 멤버 함수 보다](#at) 빠릅니다.
 
 `operator[]`는 인수로 전달 된 인덱스가 유효한 지 여부를 확인 하지 않습니다. 에 `operator[]` 잘못 된 인덱스가 전달 되 면 정의 되지 않은 동작이 발생 합니다.
 

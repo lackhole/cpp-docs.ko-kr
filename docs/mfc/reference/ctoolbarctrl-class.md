@@ -182,12 +182,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-ms.openlocfilehash: 92f5adcea50e660ecfad131313247e118312e609
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6f15280943fce39bae4eebfb537f9a61d256d2e8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323767"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502284"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
 
@@ -203,7 +203,7 @@ class CToolBarCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CToolBarCtrl::CToolBarCtrl](#ctoolbarctrl)|`CToolBarCtrl` 개체를 생성합니다.|
 
@@ -211,135 +211,135 @@ class CToolBarCtrl : public CWnd
 
 |이름|설명|
 |----------|-----------------|
-|[CToolBarCtrl::AddBitmap](#addbitmap)|도구 모음 컨트롤에 대해 사용할 수 있는 단추 이미지 목록에 하나 이상의 비트맵 단추 이미지를 추가합니다.|
-|[CToolBarCtrl::AddButtons](#addbuttons)|Toolbar 컨트롤에 하나 이상의 단추를 추가합니다.|
-|[CToolBarCtrl::AddString](#addstring)|도구 모음에서의 내부 목록을 문자열 리소스 ID를 변수로 전달 된 새 문자열을 추가 합니다.|
-|[CToolBarCtrl::AddStrings](#addstrings)|새 문자열 또는 문자열의 도구 모음에서의 내부 목록에 null 구분 된 문자열 버퍼에 대 한 포인터로 전달 된 문자열을 추가 합니다.|
-|[CToolBarCtrl::AutoSize](#autosize)|도구 모음 컨트롤의 크기를 조정 합니다.|
-|[CToolBarCtrl::ChangeBitmap](#changebitmap)|현재 도구 모음 컨트롤에서 단추에 대 한 비트맵을 변경합니다.|
-|[CToolBarCtrl::CheckButton](#checkbutton)|확인 하거나 도구 모음 컨트롤에서 지정된 된 단추를 지웁니다.|
-|[CToolBarCtrl::CommandToIndex](#commandtoindex)|지정된 된 명령 식별자를 사용 하 여 연결 된 단추의 인덱스를 검색 합니다.|
-|[CToolBarCtrl::Create](#create)|도구 모음 컨트롤을 만들고 연결 하는 `CToolBarCtrl` 개체입니다.|
-|[CToolBarCtrl::CreateEx](#createex)|지정 된 Windows 확장된 스타일을 사용 하 여 도구 모음 컨트롤을 만들고 연결 하는 `CToolBarCtrl` 개체입니다.|
-|[CToolBarCtrl::Customize](#customize)|도구 모음 사용자 지정 대화 상자를 표시합니다.|
-|[CToolBarCtrl::DeleteButton](#deletebutton)|도구 모음 컨트롤에서 단추를 삭제합니다.|
-|[CToolBarCtrl::EnableButton](#enablebutton)|사용 하거나 도구 모음 컨트롤에서 지정 된 단추를 사용 하지 않도록 설정 합니다.|
-|[CToolBarCtrl::GetAnchorHighlight](#getanchorhighlight)|도구 모음에 대 한 설정 앵커 강조 표시를 검색 합니다.|
-|[CToolBarCtrl::GetBitmap](#getbitmap)|도구 모음 단추와 연결 된 비트맵의 인덱스를 검색 합니다.|
-|[CToolBarCtrl::GetBitmapFlags](#getbitmapflags)|도구 모음의 비트맵을 사용 하 여 연결 된 플래그를 가져옵니다.|
-|[CToolBarCtrl::GetButton](#getbutton)|도구 모음 컨트롤에서 지정 된 단추에 대 한 정보를 검색합니다.|
-|[CToolBarCtrl::GetButtonCount](#getbuttoncount)|도구 모음 컨트롤에서 현재 단추의 수를 검색합니다.|
-|[CToolBarCtrl::GetButtonInfo](#getbuttoninfo)|도구 모음에서 단추에 대 한 정보를 검색합니다.|
-|[CToolBarCtrl::GetButtonSize](#getbuttonsize)|현재 너비와 높이 (픽셀 단위)의 도구 모음 단추를 검색합니다.|
-|[CToolBarCtrl::GetColorScheme](#getcolorscheme)|현재 도구 모음 컨트롤의 색 구성표를 검색합니다.|
-|[CToolBarCtrl::GetDisabledImageList](#getdisabledimagelist)|도구 모음 컨트롤을 사용 하지 않도록 설정 하는 표시 단추를 사용 하는 이미지 목록을 검색 합니다.|
-|[CToolBarCtrl::GetDropTarget](#getdroptarget)|검색 된 [IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) 도구 모음 컨트롤에 대 한 인터페이스입니다.|
-|[CToolBarCtrl::GetExtendedStyle](#getextendedstyle)|도구 모음 컨트롤에 대 한 확장된 스타일을 검색합니다.|
-|[CToolBarCtrl::GetHotImageList](#gethotimagelist)|"핫" 단추를 표시 하려면 도구 모음 컨트롤을 사용 하는 이미지 목록을 검색 합니다. 마우스 포인터가 위에 있을 때 활성 단추를 강조 표시 됩니다.|
-|[CToolBarCtrl::GetHotItem](#gethotitem)|도구 모음에서 활성 항목의 인덱스를 검색합니다.|
-|[CToolBarCtrl::GetImageList](#getimagelist)|해당 기본 상태인 단추를 표시 하려면 도구 모음 컨트롤을 사용 하는 이미지 목록을 검색 합니다.|
-|[CToolBarCtrl::GetInsertMark](#getinsertmark)|도구 모음에 대 한 현재 삽입 표시를 검색합니다.|
+|[CToolBarCtrl::AddBitmap](#addbitmap)|도구 모음 컨트롤에 사용할 수 있는 단추 이미지 목록에 하나 이상의 비트맵 단추 이미지를 추가 합니다.|
+|[CToolBarCtrl::AddButtons](#addbuttons)|Toolbar 컨트롤에 단추를 하나 이상 추가 합니다.|
+|[CToolBarCtrl::AddString](#addstring)|리소스 ID로 전달 된 새 문자열을 도구 모음의 내부 문자열 목록에 추가 합니다.|
+|[CToolBarCtrl::AddStrings](#addstrings)|Null로 구분 된 문자열의 버퍼에 대 한 포인터로 전달 되는 새 문자열을 도구 모음의 내부 문자열 목록에 추가 합니다.|
+|[CToolBarCtrl::AutoSize](#autosize)|Toolbar 컨트롤의 크기를 조정 합니다.|
+|[CToolBarCtrl::ChangeBitmap](#changebitmap)|현재 도구 모음 컨트롤의 단추에 대 한 비트맵을 변경 합니다.|
+|[CToolBarCtrl::CheckButton](#checkbutton)|Toolbar 컨트롤에서 지정 된 단추를 확인 하거나 선택을 취소 합니다.|
+|[CToolBarCtrl::CommandToIndex](#commandtoindex)|지정 된 명령 식별자와 연결 된 단추에 대 한 0부터 시작 하는 인덱스를 검색 합니다.|
+|[CToolBarCtrl::Create](#create)|Toolbar 컨트롤을 만들고이를 `CToolBarCtrl` 개체에 연결 합니다.|
+|[CToolBarCtrl::CreateEx](#createex)|지정 된 Windows 확장 스타일을 사용 하 여 toolbar 컨트롤을 만들고이를 `CToolBarCtrl` 개체에 연결 합니다.|
+|[CToolBarCtrl::Customize](#customize)|사용자 지정 도구 모음 대화 상자를 표시 합니다.|
+|[CToolBarCtrl::DeleteButton](#deletebutton)|Toolbar 컨트롤에서 단추를 삭제 합니다.|
+|[CToolBarCtrl::EnableButton](#enablebutton)|Toolbar 컨트롤에서 지정 된 단추를 사용 하거나 사용 하지 않도록 설정 합니다.|
+|[CToolBarCtrl::GetAnchorHighlight](#getanchorhighlight)|도구 모음에 대 한 앵커 강조 표시 설정을 검색 합니다.|
+|[CToolBarCtrl::GetBitmap](#getbitmap)|도구 모음의 단추와 연결 된 비트맵의 인덱스를 검색 합니다.|
+|[CToolBarCtrl::GetBitmapFlags](#getbitmapflags)|도구 모음 비트맵과 연결 된 플래그를 가져옵니다.|
+|[CToolBarCtrl::GetButton](#getbutton)|Toolbar 컨트롤에서 지정 된 단추에 대 한 정보를 검색 합니다.|
+|[CToolBarCtrl::GetButtonCount](#getbuttoncount)|현재 toolbar 컨트롤에 있는 단추의 수를 검색 합니다.|
+|[CToolBarCtrl::GetButtonInfo](#getbuttoninfo)|도구 모음에서 단추에 대 한 정보를 검색 합니다.|
+|[CToolBarCtrl::GetButtonSize](#getbuttonsize)|도구 모음 단추의 현재 너비와 높이 (픽셀)를 검색 합니다.|
+|[CToolBarCtrl::GetColorScheme](#getcolorscheme)|현재 toolbar 컨트롤의 색 구성표를 검색 합니다.|
+|[CToolBarCtrl::GetDisabledImageList](#getdisabledimagelist)|Toolbar 컨트롤에서 사용 하지 않도록 설정 된 단추를 표시 하는 데 사용 하는 이미지 목록을 검색 합니다.|
+|[CToolBarCtrl::GetDropTarget](#getdroptarget)|Toolbar 컨트롤에 대 한 [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) 인터페이스를 검색 합니다.|
+|[CToolBarCtrl::GetExtendedStyle](#getextendedstyle)|Toolbar 컨트롤에 대 한 확장 스타일을 검색 합니다.|
+|[CToolBarCtrl::GetHotImageList](#gethotimagelist)|Toolbar 컨트롤에서 "핫" 단추를 표시 하는 데 사용 하는 이미지 목록을 검색 합니다. 마우스 포인터가 위로 가져가면 활성 단추가 강조 표시 됩니다.|
+|[CToolBarCtrl::GetHotItem](#gethotitem)|도구 모음에서 핫 항목의 인덱스를 검색 합니다.|
+|[CToolBarCtrl::GetImageList](#getimagelist)|Toolbar 컨트롤이 기본 상태로 단추를 표시 하는 데 사용 하는 이미지 목록을 검색 합니다.|
+|[CToolBarCtrl::GetInsertMark](#getinsertmark)|도구 모음에 대 한 현재 삽입 표시를 검색 합니다.|
 |[CToolBarCtrl::GetInsertMarkColor](#getinsertmarkcolor)|도구 모음에 대 한 삽입 표시를 그리는 데 사용 되는 색을 검색 합니다.|
-|[CToolBarCtrl::GetItemRect](#getitemrect)|도구 모음 컨트롤에 있는 단추의 경계 사각형을 검색 합니다.|
-|[CToolBarCtrl::GetMaxSize](#getmaxsize)|모든 표시 단추 및 도구 모음에서 구분 기호의 총 크기를 검색합니다.|
-|[CToolBarCtrl::GetMaxTextRows](#getmaxtextrows)|도구 모음 단추에 표시 되는 텍스트 열의 최대 수를 검색 합니다.|
-|[CToolBarCtrl::GetMetrics](#getmetrics)|도구 모음 컨트롤의 메트릭을 검색합니다.|
-|[CToolBarCtrl::GetPadding](#getpadding)|현재 도구 모음 컨트롤의 가로 및 세로 여백을 검색합니다.|
-|[CToolBarCtrl::GetPressedImageList](#getpressedimagelist)|현재 도구 모음 컨트롤에서 단추를 눌렀는지에서를 나타내는 데 사용 된 이미지 목록을 검색 합니다.|
-|[CToolBarCtrl::GetRect](#getrect)|지정 된 도구 모음 단추의 경계 사각형을 검색 합니다.|
-|[CToolBarCtrl::GetRows](#getrows)|도구 모음에서 현재 표시 되는 단추의 행의 수를 검색 합니다.|
-|[CToolBarCtrl::GetState](#getstate)|것, 누른 사용할지 검사와 같은 도구 모음 컨트롤에서 지정 된 단추의 상태에 대 한 정보를 검색 합니다.|
-|[CToolBarCtrl::GetString](#getstring)|도구 모음의 문자열을 검색 합니다.|
-|[CToolBarCtrl::GetStyle](#getstyle)|도구 모음 컨트롤에 대 한 사용 하 여 현재 스타일을 검색합니다.|
-|[CToolBarCtrl::GetToolTips](#gettooltips)|도구 모음 컨트롤을 사용 하 여 연결 하는 경우 도구 설명 컨트롤의 핸들을 검색 합니다.|
-|[CToolBarCtrl::HideButton](#hidebutton)|도구 모음 컨트롤에서 지정 된 단추를 표시 하거나 숨깁니다.|
-|[CToolBarCtrl::HitTest](#hittest)|도구 모음 컨트롤에서 한 지점이 위치를 결정 합니다.|
-|[CToolBarCtrl::Indeterminate](#indeterminate)|설정 하거나 도구 모음 컨트롤에서 단추 비활성화 (회색) 상태로 지웁니다.|
-|[CToolBarCtrl::InsertButton](#insertbutton)|도구 모음 컨트롤에 단추를 삽입합니다.|
-|[CToolBarCtrl::InsertMarkHitTest](#insertmarkhittest)|도구 모음에 대해 삽입 표시 정보를 검색 합니다.|
-|[CToolBarCtrl::IsButtonChecked](#isbuttonchecked)|도구 모음 컨트롤에서 지정 된 단추를 검사할지 여부를 알려 줍니다.|
-|[CToolBarCtrl::IsButtonEnabled](#isbuttonenabled)|도구 모음 컨트롤에서 지정 된 단추를 사용할 수 있는지 여부를 알려 줍니다.|
-|[CToolBarCtrl::IsButtonHidden](#isbuttonhidden)|도구 모음 컨트롤에서 지정 된 단추 숨겨지는지 여부를 알려 줍니다.|
-|[CToolBarCtrl::IsButtonHighlighted](#isbuttonhighlighted)|도구 모음 단추를 강조 표시 상태를 확인 합니다.|
-|[CToolBarCtrl::IsButtonIndeterminate](#isbuttonindeterminate)|도구 모음 컨트롤에서 지정 된 단추의 상태가 비활성화 (회색) 여부를 알려 줍니다.|
-|[CToolBarCtrl::IsButtonPressed](#isbuttonpressed)|도구 모음 컨트롤에서 지정 된 단추를 눌렀는지 여부를 알려 줍니다.|
-|[CToolBarCtrl::LoadImages](#loadimages)|도구 모음 컨트롤의 이미지 목록에 비트맵을 로드합니다.|
-|[CToolBarCtrl::MapAccelerator](#mapaccelerator)|도구 모음 단추 액셀러레이터 문자가 매핑합니다.|
-|[CToolBarCtrl::MarkButton](#markbutton)|도구 모음 컨트롤에서 지정 된 단추 강조 표시 상태를 설정합니다.|
-|[CToolBarCtrl::MoveButton](#movebutton)|다른 한 인덱스에서 단추를 이동합니다.|
-|[CToolBarCtrl::PressButton](#pressbutton)|키를 누르거나 도구 모음 컨트롤에서 지정 된 단추를 해제 합니다.|
-|[CToolBarCtrl::ReplaceBitmap](#replacebitmap)|현재 도구 모음 컨트롤에서 기존 비트맵 이미지를 새 비트맵을 바꿉니다.|
-|[CToolBarCtrl::RestoreState](#restorestate)|도구 모음 컨트롤의 상태를 복원합니다.|
-|[CToolBarCtrl::SaveState](#savestate)|도구 모음 컨트롤의 상태를 저장 합니다.|
-|[CToolBarCtrl::SetAnchorHighlight](#setanchorhighlight)|도구 모음에 대 한 설정 앵커 강조 표시를 설정 합니다.|
+|[CToolBarCtrl::GetItemRect](#getitemrect)|Toolbar 컨트롤에 있는 단추의 경계 사각형을 검색 합니다.|
+|[CToolBarCtrl::GetMaxSize](#getmaxsize)|도구 모음에서 표시 되는 모든 단추 및 구분 기호의 전체 크기를 검색 합니다.|
+|[CToolBarCtrl::GetMaxTextRows](#getmaxtextrows)|도구 모음 단추에 표시 되는 최대 텍스트 행 수를 검색 합니다.|
+|[CToolBarCtrl::GetMetrics](#getmetrics)|Toolbar 컨트롤의 메트릭을 검색 합니다.|
+|[CToolBarCtrl::GetPadding](#getpadding)|현재 도구 모음 컨트롤의 가로 및 세로 안쪽 여백을 검색 합니다.|
+|[CToolBarCtrl::GetPressedImageList](#getpressedimagelist)|현재 toolbar 컨트롤에서 누름 상태의 단추를 나타내는 데 사용 하는 이미지 목록을 검색 합니다.|
+|[CToolBarCtrl::GetRect](#getrect)|지정 된 도구 모음 단추에 대 한 경계 사각형을 검색 합니다.|
+|[CToolBarCtrl::GetRows](#getrows)|도구 모음에 현재 표시 되는 단추의 행 수를 검색 합니다.|
+|[CToolBarCtrl::GetState](#getstate)|사용, 누름 또는 선택 여부와 같은 도구 모음 컨트롤에서 지정 된 단추의 상태에 대 한 정보를 검색 합니다.|
+|[CToolBarCtrl::GetString](#getstring)|도구 모음 문자열을 검색 합니다.|
+|[CToolBarCtrl::GetStyle](#getstyle)|Toolbar 컨트롤에 현재 사용 중인 스타일을 검색 합니다.|
+|[CToolBarCtrl::GetToolTips](#gettooltips)|도구 모음 컨트롤과 연결 된 도구 설명 컨트롤 (있는 경우)의 핸들을 검색 합니다.|
+|[CToolBarCtrl::HideButton](#hidebutton)|Toolbar 컨트롤에서 지정 된 단추를 숨기 거 나 표시 합니다.|
+|[CToolBarCtrl::HitTest](#hittest)|도구 모음 컨트롤에서 점이 어디에 있는지를 결정 합니다.|
+|[CToolBarCtrl::Indeterminate](#indeterminate)|Toolbar 컨트롤에서 지정 된 단추의 비활성화 된 (회색) 상태를 설정 하거나 취소 합니다.|
+|[CToolBarCtrl::InsertButton](#insertbutton)|Toolbar 컨트롤에 단추를 삽입 합니다.|
+|[CToolBarCtrl::InsertMarkHitTest](#insertmarkhittest)|도구 모음에서 특정 지점에 대 한 삽입 표시 정보를 검색 합니다.|
+|[CToolBarCtrl::IsButtonChecked](#isbuttonchecked)|Toolbar 컨트롤의 지정 된 단추가 선택 되었는지 여부를 나타냅니다.|
+|[CToolBarCtrl::IsButtonEnabled](#isbuttonenabled)|Toolbar 컨트롤의 지정 된 단추가 활성화 되어 있는지 여부를 나타냅니다.|
+|[CToolBarCtrl::IsButtonHidden](#isbuttonhidden)|Toolbar 컨트롤의 지정 된 단추가 숨겨지는지 여부를 나타냅니다.|
+|[CToolBarCtrl::IsButtonHighlighted](#isbuttonhighlighted)|도구 모음 단추의 강조 상태를 확인 합니다.|
+|[CToolBarCtrl::IsButtonIndeterminate](#isbuttonindeterminate)|Toolbar 컨트롤에 있는 지정 된 단추의 상태가 비활성화 (회색) 되었는지 여부를 나타냅니다.|
+|[CToolBarCtrl::IsButtonPressed](#isbuttonpressed)|Toolbar 컨트롤의 지정 된 단추가 눌러져 있는지 여부를 나타냅니다.|
+|[CToolBarCtrl::LoadImages](#loadimages)|비트맵을 도구 모음 컨트롤의 이미지 목록에 로드 합니다.|
+|[CToolBarCtrl::MapAccelerator](#mapaccelerator)|액셀러레이터 키 문자를 도구 모음 단추에 매핑합니다.|
+|[CToolBarCtrl::MarkButton](#markbutton)|Toolbar 컨트롤에서 지정 된 단추의 강조 상태를 설정 합니다.|
+|[CToolBarCtrl::MoveButton](#movebutton)|한 인덱스에서 다른 인덱스로 단추를 이동 합니다.|
+|[CToolBarCtrl::PressButton](#pressbutton)|Toolbar 컨트롤에서 지정 된 단추를 누르거나 해제 합니다.|
+|[CToolBarCtrl::ReplaceBitmap](#replacebitmap)|현재 toolbar 컨트롤의 기존 비트맵을 새 비트맵으로 바꿉니다.|
+|[CToolBarCtrl::RestoreState](#restorestate)|Toolbar 컨트롤의 상태를 복원 합니다.|
+|[CToolBarCtrl::SaveState](#savestate)|Toolbar 컨트롤의 상태를 저장 합니다.|
+|[CToolBarCtrl::SetAnchorHighlight](#setanchorhighlight)|도구 모음에 대 한 앵커 강조 표시 설정을 설정 합니다.|
 |[CToolBarCtrl::SetBitmapSize](#setbitmapsize)|Toolbar 컨트롤에 추가할 비트맵 이미지의 크기를 설정 합니다.|
-|[CToolBarCtrl::SetButtonInfo](#setbuttoninfo)|도구 모음에서 기존 단추에 대 한 정보를 설정합니다.|
-|[CToolBarCtrl::SetButtonSize](#setbuttonsize)|도구 모음 컨트롤을 추가할 수 있는 단추의 크기를 설정 합니다.|
-|[CToolBarCtrl::SetButtonStructSize](#setbuttonstructsize)|크기를 지정 합니다 `TBBUTTON` 구조입니다.|
-|[CToolBarCtrl::SetButtonWidth](#setbuttonwidth)|도구 모음 컨트롤의 최소 및 최대 단추 너비를 설정합니다.|
-|[CToolBarCtrl::SetCmdID](#setcmdid)|지정 된 단추를 누를 때 소유자 창에 보낼 명령 식별자를 설정 합니다.|
-|[CToolBarCtrl::SetColorScheme](#setcolorscheme)|현재 도구 모음 컨트롤의 색 구성표를 설정합니다.|
-|[CToolBarCtrl::SetDisabledImageList](#setdisabledimagelist)|사용 하지 않도록 설정 하는 표시 단추를 도구 모음 컨트롤은 사용 된 이미지 목록을 설정 합니다.|
-|[CToolBarCtrl::SetDrawTextFlags](#setdrawtextflags)|Win32 함수에 플래그를 설정 합니다 [DrawText](/windows/desktop/api/winuser/nf-winuser-drawtext)에 설정 된 플래그에 따라 형식이 지정된 된 사각형에서 텍스트를 그리는 데 사용 됩니다.|
-|[CToolBarCtrl::SetExtendedStyle](#setextendedstyle)|도구 모음 컨트롤에 대 한 확장된 스타일을 설정합니다.|
-|[CToolBarCtrl::SetHotImageList](#sethotimagelist)|도구 모음 컨트롤에서 "핫" 단추가 표시에 사용 된 이미지 목록을 설정 합니다.|
-|[CToolBarCtrl::SetHotItem](#sethotitem)|도구 모음에서 활성 항목을 설정합니다.|
-|[CToolBarCtrl::SetImageList](#setimagelist)|도구 모음에서 해당 기본 상태인 단추 표시에 사용 된 이미지 목록을 설정 합니다.|
-|[CToolBarCtrl::SetIndent](#setindent)|도구 모음 컨트롤에서 첫 번째 단추에 대 한 들여쓰기를 설정합니다.|
-|[CToolBarCtrl::SetInsertMark](#setinsertmark)|도구 모음에 대 한 현재 삽입 표시를 설정합니다.|
+|[CToolBarCtrl::SetButtonInfo](#setbuttoninfo)|도구 모음에서 기존 단추에 대 한 정보를 설정 합니다.|
+|[CToolBarCtrl::SetButtonSize](#setbuttonsize)|Toolbar 컨트롤에 추가할 단추의 크기를 설정 합니다.|
+|[CToolBarCtrl::SetButtonStructSize](#setbuttonstructsize)|`TBBUTTON` 구조체의 크기를 지정 합니다.|
+|[CToolBarCtrl::SetButtonWidth](#setbuttonwidth)|Toolbar 컨트롤의 최소 및 최대 단추 너비를 설정 합니다.|
+|[CToolBarCtrl::SetCmdID](#setcmdid)|지정 된 단추를 누를 때 소유자 창으로 보낼 명령 식별자를 설정 합니다.|
+|[CToolBarCtrl::SetColorScheme](#setcolorscheme)|현재 toolbar 컨트롤의 색 구성표를 설정 합니다.|
+|[CToolBarCtrl::SetDisabledImageList](#setdisabledimagelist)|Toolbar 컨트롤이 비활성화 된 단추를 표시 하는 데 사용할 이미지 목록을 설정 합니다.|
+|[CToolBarCtrl::SetDrawTextFlags](#setdrawtextflags)|플래그가 설정 된 방식에 따라 형식이 지정 된 사각형에 텍스트를 그리는 데 사용 되는 Win32 함수 [DrawText](/windows/win32/api/winuser/nf-winuser-drawtext)에 플래그를 설정 합니다.|
+|[CToolBarCtrl::SetExtendedStyle](#setextendedstyle)|Toolbar 컨트롤에 대 한 확장 스타일을 설정 합니다.|
+|[CToolBarCtrl::SetHotImageList](#sethotimagelist)|도구 모음 컨트롤이 "핫" 단추를 표시 하는 데 사용할 이미지 목록을 설정 합니다.|
+|[CToolBarCtrl::SetHotItem](#sethotitem)|도구 모음에서 핫 항목을 설정 합니다.|
+|[CToolBarCtrl::SetImageList](#setimagelist)|도구 모음에서 기본 상태의 단추를 표시 하는 데 사용할 이미지 목록을 설정 합니다.|
+|[CToolBarCtrl::SetIndent](#setindent)|Toolbar 컨트롤의 첫 번째 단추에 대 한 들여쓰기를 설정 합니다.|
+|[CToolBarCtrl::SetInsertMark](#setinsertmark)|도구 모음에 대 한 현재 삽입 표시를 설정 합니다.|
 |[CToolBarCtrl::SetInsertMarkColor](#setinsertmarkcolor)|도구 모음에 대 한 삽입 표시를 그리는 데 사용 되는 색을 설정 합니다.|
-|[CToolBarCtrl::SetMaxTextRows](#setmaxtextrows)|도구 모음 단추에 표시 되는 텍스트 열의 최대 수를 설정 합니다.|
-|[CToolBarCtrl::SetMetrics](#setmetrics)|도구 모음 컨트롤의 메트릭을 설정합니다.|
-|[CToolBarCtrl::SetOwner](#setowner)|도구 모음 컨트롤에서 알림 메시지를 창을 설정입니다.|
-|[CToolBarCtrl::SetPadding](#setpadding)|현재 도구 모음 컨트롤의 가로 및 세로 여백을 설정합니다.|
-|[CToolBarCtrl::SetPressedImageList](#setpressedimagelist)|현재 도구 모음 컨트롤에서 단추를 눌렀는지에서를 나타내는 데 사용 된 이미지 목록을 설정 합니다.|
-|[CToolBarCtrl::SetRows](#setrows)|도구 모음에서 표시 되는 단추의 행 개수를 설정 합니다.|
-|[CToolBarCtrl::SetState](#setstate)|도구 모음 컨트롤에서 지정 된 단추의 상태를 설정합니다.|
-|[CToolBarCtrl::SetStyle](#setstyle)|도구 모음 컨트롤에 대 한 스타일을 설정합니다.|
-|[CToolBarCtrl::SetToolTips](#settooltips)|도구 모음 컨트롤을 사용 하 여 도구 설명 컨트롤을 연결합니다.|
-|[CToolBarCtrl::SetWindowTheme](#setwindowtheme)|도구 모음 컨트롤의 표시 스타일을 설정합니다.|
+|[CToolBarCtrl::SetMaxTextRows](#setmaxtextrows)|도구 모음 단추에 표시 되는 최대 텍스트 행 수를 설정 합니다.|
+|[CToolBarCtrl::SetMetrics](#setmetrics)|Toolbar 컨트롤의 메트릭을 설정 합니다.|
+|[CToolBarCtrl::SetOwner](#setowner)|도구 모음 컨트롤에서 알림 메시지를 받을 창을 설정 합니다.|
+|[CToolBarCtrl::SetPadding](#setpadding)|현재 도구 모음 컨트롤의 가로 및 세로 안쪽 여백을 설정 합니다.|
+|[CToolBarCtrl::SetPressedImageList](#setpressedimagelist)|현재 toolbar 컨트롤에서 누름 상태의 단추를 나타내는 데 사용 하는 이미지 목록을 설정 합니다.|
+|[CToolBarCtrl::SetRows](#setrows)|도구 모음에 표시 되는 단추의 행 수를 설정 합니다.|
+|[CToolBarCtrl::SetState](#setstate)|Toolbar 컨트롤에서 지정 된 단추의 상태를 설정 합니다.|
+|[CToolBarCtrl::SetStyle](#setstyle)|Toolbar 컨트롤의 스타일을 설정 합니다.|
+|[CToolBarCtrl::SetToolTips](#settooltips)|도구 설명 컨트롤을 도구 모음 컨트롤과 연결 합니다.|
+|[CToolBarCtrl::SetWindowTheme](#setwindowtheme)|Toolbar 컨트롤의 비주얼 스타일을 설정 합니다.|
 
 ## <a name="remarks"></a>설명
 
-이 컨트롤 (및 따라서는 `CToolBarCtrl` 클래스) 이상 Windows 95/98 및 Windows NT 버전 3.51에서 실행 중인 프로그램에만 사용할 수 있습니다.
+이 컨트롤 (및 `CToolBarCtrl` 클래스)은 windows 95/98 및 windows NT 버전 3.51 이상에서 실행 되는 프로그램에만 사용할 수 있습니다.
 
-Windows 도구 모음 공용 컨트롤에는 하나 이상의 단추를 포함 하는 사각형 자식 창입니다. 이러한 단추는 비트맵 이미지, 문자열 또는 둘 다 표시할 수 있습니다. 단추를 선택 하면 도구 모음의 소유자 창에 명령 메시지를 보냅니다. 일반적으로 도구 모음에서 단추 항목에에서 해당 하는 응용 프로그램의 메뉴 응용 프로그램의 명령에 액세스 하려면 사용자에 대 한 더 직접적인 방법을 제공 합니다.
+Windows 도구 모음 공용 컨트롤은 하나 이상의 단추를 포함 하는 사각형 자식 창입니다. 이러한 단추는 비트맵 이미지, 문자열 또는 둘 다를 표시할 수 있습니다. 사용자가 단추를 선택 하면 도구 모음의 소유자 창에 명령 메시지가 전송 됩니다. 일반적으로 도구 모음의 단추는 응용 프로그램 메뉴의 항목에 해당 합니다. 사용자가 응용 프로그램의 명령에 보다 직접적으로 액세스할 수 있는 방법을 제공 합니다.
 
-`CToolBarCtrl` 개체에 몇 가지 중요 한 내부 데이터 구조가 포함 될: 단추 이미지 비트맵의 목록을 또는 이미지 목록, 단추 레이블 문자열 목록이 및 목록은 `TBBUTTON` 이미지를 연결 하거나, 스타일, 위치를 사용 하 여 문자열는 구조, 상태 및 명령 ID 단추입니다. 각 이러한 데이터 구조의 요소의 0부터 시작 인덱스에 의해 참조 됩니다. 사용 하기 전에 `CToolBarCtrl` 개체를 이러한 데이터 구조를 설정 해야 합니다. 단추 레이블;에 대 한 문자열의 목록 에서만 사용할 수 있습니다. 도구 모음에서 문자열을 검색할 수 없습니다.
+`CToolBarCtrl`개체에는 단추 이미지 비트맵 또는 이미지 목록 목록, 단추 레이블 문자열 목록 및 이미지 및/또는 문자열을 위치, 스타일, 상태 및 명령 ID `TBBUTTON` 와 연결 하는 구조 목록이 포함 된 몇 가지 중요 한 내부 데이터 구조가 포함 되어 있습니다. 단추의입니다. 이러한 데이터 구조의 각 요소는 0부터 시작 하는 인덱스를 참조 합니다. `CToolBarCtrl` 개체를 사용 하려면 먼저 이러한 데이터 구조를 설정 해야 합니다. 문자열 목록은 단추 레이블에만 사용할 수 있습니다. 도구 모음에서 문자열을 검색할 수 없습니다.
 
 `CToolBarCtrl` 개체를 사용하려면, 일반적으로 다음 단계를 수행해야 합니다.
 
 1. `CToolBarCtrl` 개체를 생성합니다.
 
-1. 호출 [Create](#create) Windows 도구 모음 공용 컨트롤을 만들고 연결 하는 `CToolBarCtrl` 개체입니다. 투명 한 도구 모음에 대 한 TBSTYLE_TRANSPARENT 등 TBSTYLE_DROPDOWN 스타일 드롭다운 단추를 지 원하는 도구 모음에 대 한 스타일을 사용 하 여 도구 모음의 스타일을 나타냅니다.
+1. [Create](#create) 를 호출 하 여 Windows 도구 모음 공용 컨트롤을 만들고 `CToolBarCtrl` 개체에 연결 합니다. 스타일을 사용 하 여 도구 모음 스타일을 지정 합니다. 예를 들어 투명 도구 모음의 경우 TBSTYLE_TRANSPARENT, 드롭다운 스타일 단추를 지 원하는 도구 모음의 TBSTYLE_DROPDOWN입니다.
 
-1. 원하는 표시 도구 모음 단추를 식별 합니다.
+1. 도구 모음에서 단추가 표시 되는 방식을 확인 합니다.
 
-   - 단추에 대 한 비트맵 이미지를 사용 하려면 단추 비트맵 도구 모음을 호출 하 여 추가 [AddBitmap](#addbitmap)합니다.
+   - 단추에 비트맵 이미지를 사용 하려면 [Addbitmap](#addbitmap)을 호출 하 여 도구 모음에 단추 비트맵을 추가 합니다.
 
-   - 단추에 대 한 이미지 목록에서 표시 되는 이미지를 사용 하려면 호출 하 여 이미지 목록을 지정 [SetImageList](#setimagelist)하십시오 [SetHotImageList](#sethotimagelist), 또는 [SetDisabledImageList](#setdisabledimagelist)합니다.
+   - 단추에 대한 이미지 목록에서 표시된 이미지를 사용하려면 [SetImageList](#setimagelist), [SetHotImageList](#sethotimagelist), 또는 [SetDisabledImageList](#setdisabledimagelist)를 호출하여 이미지 목록을 지정합니다.
 
-   - 단추에 대 한 문자열 레이블을 사용 하려면 문자열을 도구 모음을 호출 하 여 추가 [AddString](#addstring) 및/또는 [AddStrings](#addstrings)합니다.
+   - 단추에 대 한 문자열 레이블을 사용 하려면 [Addstring](#addstring) 및/또는 [addstring](#addstrings)를 호출 하 여 도구 모음에 문자열을 추가 합니다.
 
-1. 호출 하 여 도구 모음에 단추 구조를 추가할 [AddButtons](#addbuttons)합니다.
+1. [Addbuttons](#addbuttons)를 호출 하 여 도구 모음에 단추 구조를 추가 합니다.
 
-1. 없는 소유자 창에서 도구 모음 단추에 대 한 도구 설명 하려는 경우는 `CFrameWnd`에 설명 된 대로 모음의 소유자 창에 있는 TTN_NEEDTEXT 메시지를 처리 해야 할 [도구 팁 알림 처리](../../mfc/handling-tool-tip-notifications.md)합니다. 도구 모음의 부모 창에서 파생 됩니다 `CFrameWnd`, 때문에 도구 설명에서 추가 작업 없이 표시 됩니다 `CFrameWnd` 기본 처리기를 제공 합니다.
+1. 이 아닌 `CFrameWnd`소유자 창에서 도구 모음 단추에 대 한 도구 설명을 원하는 경우 도구 [설명 알림 처리](../../mfc/handling-tool-tip-notifications.md)에 설명 된 대로 도구 모음의 소유자 창에서 TTN_NEEDTEXT 메시지를 처리 해야 합니다. 도구 모음의 부모 창이에서 `CFrameWnd`파생 되는 경우에서 기본 처리기를 제공 하므로 `CFrameWnd` 추가 작업 없이 도구 설명이 표시 됩니다.
 
-1. 사용자가 도구 모음을 사용자 지정할 수 있게 되기를 원하는 경우에 설명 된 대로 소유자 창에서 사용자 지정 알림 메시지를 처리 [사용자 지정 알림 처리](../../mfc/handling-customization-notifications.md)합니다.
+1. 사용자가 도구 모음을 사용자 지정할 수 있도록 하려면 사용자 [지정 알림 처리](../../mfc/handling-customization-notifications.md)에 설명 된 대로 소유자 창에서 사용자 지정 알림 메시지를 처리 합니다.
 
-사용할 수 있습니다 [SaveState](#savestate) 레지스트리에서 도구 모음 컨트롤의 현재 상태를 저장 하 고 [RestoreState](#restorestate) 이전에 레지스트리에 저장 된 정보를 기반으로 상태를 복원 하려면. 사용이 응용 프로그램 도구 모음 상태에 저장 하는 것 외에도 응용 프로그램 일반적으로 상태를 저장 하기 전에 사용자는 사용자가 나중에 도구 모음을 원래 상태로 복원 하려는 경우 도구 모음 사용자 지정 합니다.
+[Savestate](#savestate) 를 사용 하 여 레지스트리의 도구 모음 컨트롤의 현재 상태를 저장 하 고 이전에 레지스트리에 저장 된 정보에 따라 상태를 [RestoreState](#restorestate) 수 있습니다. 응용 프로그램은 응용 프로그램의 사용 사이에 도구 모음 상태를 저장 하는 것 외에도 사용자가 나중에 도구 모음을 원래 상태로 복원 하려는 경우 사용자가 도구 모음을 사용자 지정 하기 시작 하기 전에 상태를 저장 합니다.
 
 ## <a name="support-for-internet-explorer-version-40-and-later"></a>Internet Explorer 버전 4.0 이상에 대 한 지원
 
-Internet Explorer 4.0 이상 버전에서에서 도입 된 기능을 지원 하도록 MFC 도구 모음 컨트롤에 대 한 이미지 목록 지원 및 투명 하 고 플랫 스타일 제공 합니다.
+Internet Explorer 버전 4.0 이상에서 도입 된 기능을 지원 하기 위해 MFC는 toolbar 컨트롤에 대 한 이미지 목록 지원 및 투명 및 기본 스타일을 제공 합니다.
 
-투명 한 도구 모음 도구 모음에서 클라이언트를 통해 표시할 수 있습니다. 투명 한 도구 모음을 만들려면 TBSTYLE_FLAT와 TBSTYLE_TRANSPARENT 스타일을 사용 합니다. 핫 트래킹을; 투명 한 도구 모음 기능 즉, 도구 모음에서 핫 단추 위로 마우스 포인터 이동 단추의 모양을 변경 합니다. 도구 모음 바로 TBSTYLE_FLAT 스타일을 사용 하 여 만든 투명 하 게 나타나지 않는 단추가 포함 됩니다.
+투명 도구 모음을 사용 하면 클라이언트를 도구 모음에서 표시할 수 있습니다. 투명 도구 모음을 만들려면 TBSTYLE_FLAT 및 TBSTYLE_TRANSPARENT 스타일을 모두 사용 합니다. 투명 도구 모음 핫 트래킹을 위한 기능 즉, 도구 모음의 활성 단추 위로 마우스 포인터를 이동 하면 단추의 모양이 변합니다. TBSTYLE_FLAT 스타일만 사용 하 여 만든 도구 모음은 투명 하지 않은 단추를 포함 합니다.
 
-이미지 목록 지원을 통해 기본 동작, 핫 이미지 및 비활성된 이미지에 대 한 제어 융통성 수 있습니다. 사용 하 여 [GetImageList](#getimagelist)하십시오 [GetHotImageList](#gethotimagelist), 및 [GetDisabledImageList](#getdisabledimagelist) 해당 상태에 따라 이미지를 조작 하 여 투명 한 도구 모음과:
+이미지 목록 지원을 통해 기본 동작, 핫 이미지 및 비활성화 된 이미지의 유연성을 높일 수 있습니다. 투명 도구 모음 [GetImageList](#getimagelist), [GetHotImageList](#gethotimagelist), 및 [GetDisabledImageList](#getdisabledimagelist)을 사용하여 해당 상태에 따라 이미지를 조작합니다.
 
-사용 하 여 대 한 자세한 내용은 `CToolBarCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CToolBarCtrl 사용 하 여](../../mfc/using-ctoolbarctrl.md).
+사용 `CToolBarCtrl`에 대 한 자세한 내용은 [컨트롤](../../mfc/controls-mfc.md) 및 [CToolBarCtrl 사용](../../mfc/using-ctoolbarctrl.md)을 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -355,7 +355,7 @@ Internet Explorer 4.0 이상 버전에서에서 도입 된 기능을 지원 하�
 
 ##  <a name="addbitmap"></a>  CToolBarCtrl::AddBitmap
 
-도구 모음 컨트롤에서 저장 단추 이미지 목록에 하나 이상의 단추 이미지를 추가 합니다.
+Toolbar 컨트롤에 저장 된 단추 이미지 목록에 하나 이상의 단추 이미지를 추가 합니다.
 
 ```
 int AddBitmap(
@@ -370,25 +370,25 @@ int AddBitmap(
 ### <a name="parameters"></a>매개 변수
 
 *nNumButtons*<br/>
-비트맵의 단추 이미지의 수입니다.
+비트맵의 단추 이미지 수입니다.
 
 *nBitmapID*<br/>
-단추 이미지 또는 이미지 추가를 포함 하는 비트맵의 리소스 식별자입니다.
+추가할 단추 이미지를 포함 하는 비트맵의 리소스 식별자입니다.
 
 *pBitmap*<br/>
-에 대 한 포인터를 `CBitmap` 단추 이미지 또는 이미지 추가를 포함 하는 개체입니다.
+추가할 단추 이미지 `CBitmap` 를 포함 하는 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 첫 번째 새 이미지의 0 기반 인덱스 그렇지 않으면-1입니다.
+성공 하는 경우 첫 번째 새 이미지의 인덱스 (0부터 시작)입니다. 그렇지 않으면-1입니다.
 
 ### <a name="remarks"></a>설명
 
-Windows API를 사용할 수 있습니다 [CreateMappedBitmap](/windows/desktop/api/commctrl/nf-commctrl-createmappedbitmap) 색 비트맵을 도구 모음에 추가 하기 전에 매핑합니다. 에 대 한 포인터를 전달 하는 경우는 `CBitMap` 개체, 도구 모음에서 제거 되 면 비트맵까지 제거 되지 않습니다 확인 해야 합니다.
+Windows API [CreateMappedBitmap](/windows/win32/api/commctrl/nf-commctrl-createmappedbitmap) 을 사용 하 여 비트맵을 도구 모음에 추가 하기 전에 색을 매핑할 수 있습니다. `CBitMap` 개체에 대 한 포인터를 전달 하는 경우 도구 모음이 제거 될 때까지 비트맵이 제거 되지 않도록 해야 합니다.
 
 ##  <a name="addbuttons"></a>  CToolBarCtrl::AddButtons
 
-Toolbar 컨트롤에 하나 이상의 단추를 추가합니다.
+Toolbar 컨트롤에 단추를 하나 이상 추가 합니다.
 
 ```
 BOOL AddButtons(
@@ -399,10 +399,10 @@ BOOL AddButtons(
 ### <a name="parameters"></a>매개 변수
 
 *nNumButtons*<br/>
-여러 단추를 추가 합니다.
+추가할 단추 수입니다.
 
 *lpButtons*<br/>
-배열의 주소 `TBBUTTON` 추가 하는 단추에 대 한 정보를 포함 하는 구조입니다. 지정 된 단추와 수가 배열의 요소 여야 합니다 *nNumButtons*합니다.
+추가할 단추에 대 한 `TBBUTTON` 정보를 포함 하는 구조체 배열의 주소입니다. 배열의 요소 수는 *Nnumbuttons*에 지정 된 단추와 동일 해야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -410,7 +410,7 @@ BOOL AddButtons(
 
 ### <a name="remarks"></a>설명
 
-합니다 *lpButtons* 배열을 가리키는 포인터 `TBBUTTON` 구조입니다. 각 `TBBUTTON` 구조체 단추의 스타일, 이미지 및/또는 문자열, 명령 ID, 상태 및 사용자 정의 데이터를 사용 하 여 추가 단추를 연결 합니다.
+*Lpbuttons* 포인터는 구조체의 `TBBUTTON` 배열을 가리킵니다. 각 `TBBUTTON` 구조는 단추 스타일, 이미지 및/또는 문자열, 명령 ID, 상태 및 사용자 정의 데이터를 사용 하 여 추가 되는 단추를 연결 합니다.
 
 ```cpp
 typedef struct _TBBUTTON {
@@ -427,41 +427,41 @@ typedef struct _TBBUTTON {
 
 - `iBitmap`
 
-   이 단추에 대 한 이미지가 없는 경우-1 단추 이미지의 0부터 시작 인덱스입니다.
+   단추 이미지의 인덱스 (0부터 시작)입니다 .이 단추에 대 한 이미지가 없는 경우-1입니다.
 
 - `idCommand`
 
-   단추와 연결 된 명령 식별자입니다. 단추를 선택할 때이 식별자에 WM_COMMAND 메시지에 전송 됩니다. 경우는 `fsStyle` 멤버 TBSTYLE_SEP 값을 가진이 멤버는 0 이어야 합니다.
+   단추와 연결 된 명령 식별자입니다. 이 식별자는 단추를 선택 하면 WM_COMMAND 메시지에 전송 됩니다. 멤버에 `fsStyle` TBSTYLE_SEP 값이 있는 경우이 멤버는 0 이어야 합니다.
 
 - `fsState`
 
-   단추 상태 플래그입니다. 아래에 나열 된 값의 조합 수 있습니다.
+   단추 상태 플래그입니다. 아래에 나열 된 값을 조합 하 여 사용할 수 있습니다.
 
-   - TBSTATE_CHECKED 단추 TBSTYLE_CHECKED 스타일 있으며입니다.
+   - TBSTATE_CHECKED 단추가 TBSTYLE_CHECKED 스타일이 며 눌러져 있습니다.
 
-   - TBSTATE_ENABLED 단추 사용자 입력을 허용합니다. 이 상태 없는 단추 사용자 입력을 허용 하지 않습니다 및 회색으로 나타납니다.
+   - TBSTATE_ENABLED 사용자 입력을 허용 합니다. 이 상태가 없는 단추는 사용자 입력을 허용 하지 않으며 회색입니다.
 
-   - TBSTATE_HIDDEN 단추가 표시 되지 않으며 사용자 입력을 받을 수 없습니다.
+   - TBSTATE_HIDDEN 단추가 표시 되지 않고 사용자 입력을 받을 수 없습니다.
 
-   - TBSTATE_INDETERMINATE 단추가 흐리게 표시 됩니다.
+   - TBSTATE_INDETERMINATE 단추가 회색으로 표시 됩니다.
 
-   - 단추를 눌렀는지 TBSTATE_PRESSED 합니다.
+   - TBSTATE_PRESSED 단추가 눌러져 있습니다.
 
-   - 줄 바꿈을 TBSTATE_WRAP 단추는 다음과 같습니다. 단추는 TBSTATE_ENABLED 상태가 있어야 합니다.
+   - TBSTATE_WRAP 단추 뒤에 줄 바꿈이 있습니다. 단추에도 TBSTATE_ENABLED 상태가 있어야 합니다.
 
 - `fsStyle`
 
-   단추 스타일입니다. 아래에 나열 된 값의 조합 수 있습니다.
+   단추 스타일입니다. 아래에 나열 된 값을 조합 하 여 사용할 수 있습니다.
 
    - TBSTYLE_BUTTON 표준 누름 단추를 만듭니다.
 
-   - 사용자 누름 및 누르지 않은 상태로 될 때마다 상태 간에 전환 하는 단추 클릭 TBSTYLE_CHECK 만듭니다. 누름 상태의 경우 단추가 다른 배경색을 됩니다.
+   - TBSTYLE_CHECK 사용자가 클릭할 때마다 눌린 상태와 unpressed 상태 사이를 전환 하는 단추를 만듭니다. 단추는 누름 상태일 때 다른 배경색을 가집니다.
 
-   - TBSTYLE_CHECKGROUP 그룹의 다른 단추를 누를 때까지 유지 되는 확인 단추 누름을 만듭니다.
+   - TBSTYLE_CHECKGROUP 그룹의 다른 단추를 누를 때까지 누른 상태를 유지 하는 확인 단추를 만듭니다.
 
-   - TBSTYLE_GROUP 그룹의 다른 단추를 누를 때까지 유지 되는 단추 누름을 만듭니다.
+   - TBSTYLE_GROUP 그룹의 다른 단추를 누를 때까지 누름 상태를 유지 하는 단추를 만듭니다.
 
-   - TBSTYLE_SEP 단추 그룹 사이의 작은 간격을 제공 하는 구분 기호를 만듭니다. 이 스타일에 있는 단추는 사용자 입력을 받지 않습니다.
+   - TBSTYLE_SEP는 단추 그룹 사이에 작은 간격을 제공 하는 구분 기호를 만듭니다. 이 스타일이 있는 단추는 사용자 입력을 수신 하지 않습니다.
 
 - `dwData`
 
@@ -469,13 +469,13 @@ typedef struct _TBBUTTON {
 
 - `iString`
 
-   단추 label의 경우이 단추에 대 한 문자열이 없으면-1을 사용 하는 문자열의 0부터 시작 인덱스입니다.
+   단추의 레이블로 사용할 문자열의 인덱스 (0부터 시작)이 고,이 단추에 대 한 문자열이 없으면-1입니다.
 
-이미지 및/또는 제공한 인덱스가 반드시 이전에 추가 되어 있어야를 도구 모음 컨트롤의 문자열을 사용 하 여 목록을 [AddBitmap](#addbitmap)하십시오 [AddString](#addstring), 및/또는 [AddStrings](#addstrings)합니다.
+사용자가 제공 하는 인덱스를 포함 하는 이미지 및/또는 문자열은 [Addbitmap](#addbitmap), [addbitmap](#addstring)및/또는 [addbitmap](#addstrings)를 사용 하 여 도구 모음 컨트롤의 목록에 이전에 추가 되어야 합니다.
 
 ##  <a name="addstring"></a>  CToolBarCtrl::AddString
 
-도구 모음에서의 내부 목록을 문자열 리소스 ID를 변수로 전달 된 새 문자열을 추가 합니다.
+리소스 ID로 전달 된 새 문자열을 도구 모음의 내부 문자열 목록에 추가 합니다.
 
 ```
 int AddString(UINT nStringID);
@@ -484,15 +484,15 @@ int AddString(UINT nStringID);
 ### <a name="parameters"></a>매개 변수
 
 *nStringID*<br/>
-도구 모음 컨트롤의 문자열 목록에 추가할 문자열 리소스의 리소스 식별자입니다.
+Toolbar 컨트롤의 문자열 목록에 추가할 문자열 리소스의 리소스 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공할 경우 추가 되는 첫 번째 새 문자열의 0부터 시작 인덱스 그렇지 않으면-1입니다.
+성공 했을 때 추가 된 첫 번째 새 문자열의 인덱스 (0부터 시작)입니다. 그렇지 않으면-1입니다.
 
 ##  <a name="addstrings"></a>  CToolBarCtrl::AddStrings
 
-도구 모음 컨트롤에 사용할 수 있는 문자열 목록에 새 문자열 또는 문자열을 추가합니다.
+Toolbar 컨트롤에 사용할 수 있는 문자열 목록에 새 문자열을 추가 합니다.
 
 ```
 int AddStrings(LPCTSTR lpszStrings);
@@ -501,15 +501,15 @@ int AddStrings(LPCTSTR lpszStrings);
 ### <a name="parameters"></a>매개 변수
 
 *lpszStrings*<br/>
-하나 이상의 null로 끝나는 문자열을 포함 도구 모음의 문자열 목록에 추가 하는 버퍼의 주소입니다. 마지막 문자열 두 null 문자로 종료 해야 합니다.
+도구 모음의 문자열 목록에 추가할 null로 끝나는 문자열을 하나 이상 포함 하는 버퍼의 주소입니다. 마지막 문자열은 두 개의 null 문자로 끝나야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공할 경우 추가 되는 첫 번째 새 문자열의 0부터 시작 인덱스 그렇지 않으면-1입니다.
+성공 했을 때 추가 된 첫 번째 새 문자열의 인덱스 (0부터 시작)입니다. 그렇지 않으면-1입니다.
 
 ### <a name="remarks"></a>설명
 
-버퍼에서 문자열을 null 문자로 구분 되어야 합니다. 마지막 문자열에 두 개의 null 종결자에 있는지 확인 해야 합니다. 상수 문자열 형식을 제대로 작성할 수 있습니다.
+버퍼의 문자열은 null 문자로 구분 해야 합니다. 마지막 문자열에 두 개의 null 종결자가 있는지 확인 해야 합니다. 상수 문자열의 형식을 올바르게 지정 하기 위해 다음과 같이 작성할 수 있습니다.
 
 [!code-cpp[NVC_MFCControlLadenDialog#72](../../mfc/codesnippet/cpp/ctoolbarctrl-class_1.cpp)]
 
@@ -517,7 +517,7 @@ int AddStrings(LPCTSTR lpszStrings);
 
 [!code-cpp[NVC_MFCControlLadenDialog#73](../../mfc/codesnippet/cpp/ctoolbarctrl-class_2.cpp)]
 
-전달 해서는 안을 `CString` 개체에서 둘 이상의 null 문자를 가질 수 없기 때문에이 함수는 `CString`합니다.
+에 null 문자를 두 `CString` 개 이상 사용할 수 없기 때문에 개체를이 함수에 전달 하면 안 됩니다. `CString`
 
 ##  <a name="autosize"></a>  CToolBarCtrl::AutoSize
 
@@ -529,11 +529,11 @@ void AutoSize();
 
 ### <a name="remarks"></a>설명
 
-도구 모음 크기 변경 (예: 단추 또는 비트맵 크기를 설정 또는 문자열을 추가) 하는 경우 또는 부모 창의 크기가 변경 되 면이 함수를 호출 해야 합니다.
+부모 창의 크기가 변경 되거나 도구 모음의 크기가 변경 될 때 (예: 단추 또는 비트맵 크기를 설정 하거나 문자열을 추가 하는 경우)이 함수를 호출 해야 합니다.
 
 ##  <a name="changebitmap"></a>  CToolBarCtrl::ChangeBitmap
 
-현재 도구 모음 컨트롤에서 단추에 대 한 비트맵을 변경합니다.
+현재 도구 모음 컨트롤의 단추에 대 한 비트맵을 변경 합니다.
 
 ```
 BOOL ChangeBitmap(
@@ -545,28 +545,28 @@ BOOL ChangeBitmap(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*idButton*|[in] 새 비트맵을 수신 하는 단추의 명령 식별자입니다.|
-|*iBitmap*|[in] 현재 도구 모음 컨트롤의 이미지 목록의 이미지의 0부터 시작 인덱스입니다.|
+|*idButton*|진행 새 비트맵을 받는 단추의 명령 식별자입니다.|
+|*iBitmap*|진행 현재 도구 모음 컨트롤의 이미지 목록에 있는 이미지의 0부터 시작 하는 인덱스입니다.|
 
 ### <a name="return-value"></a>반환 값
 
-이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
+이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드가 성공적 이면 시스템에서 지정 된 단추를 지정된 된 이미지를 표시 합니다.
+이 메서드가 성공적으로 수행 되 면 시스템은 지정 된 단추에 지정 된 이미지를 표시 합니다.
 
-이 메서드는 전송 된 [TB_CHANGEBITMAP](/windows/desktop/Controls/tb-changebitmap) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [TB_CHANGEBITMAP](/windows/win32/Controls/tb-changebitmap) 메시지를 보냅니다.
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에 대 한 비트맵을 변경 합니다 **파일 저장** 단추에 대 한 비트맵에는 **에 대 한** 단추입니다.
+다음 코드 예제에서는 **파일 저장** 단추의 비트맵을 **정보** 단추에 대 한 비트맵으로 변경 합니다.
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_3.cpp)]
 
 ##  <a name="checkbutton"></a>  CToolBarCtrl::CheckButton
 
-확인 하거나 도구 모음 컨트롤에서 지정된 된 단추를 지웁니다.
+Toolbar 컨트롤에서 지정 된 단추를 확인 하거나 선택을 취소 합니다.
 
 ```
 BOOL CheckButton(
@@ -577,10 +577,10 @@ BOOL CheckButton(
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-단추를 선택 하거나 선택 취소의 명령 식별자입니다.
+선택 하거나 선택 취소할 단추의 명령 식별자입니다.
 
 *bCheck*<br/>
-확인 단추를 선택 취소 하려면 FALSE true로 설정 하면.
+단추를 선택 하려면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -588,11 +588,11 @@ BOOL CheckButton(
 
 ### <a name="remarks"></a>설명
 
-단추가 선택 되어 눌려진에 표시 됩니다. 둘 이상의 단추 상태를 변경 하려는 경우에 호출 해 보십시오 [SetState](#setstate) 대신 합니다.
+단추를 선택 하면 누른 것 처럼 보입니다. 둘 이상의 단추 상태를 변경 하려면 대신 [SetState](#setstate) 를 호출 하는 것이 좋습니다.
 
 ##  <a name="commandtoindex"></a>  CToolBarCtrl::CommandToIndex
 
-지정된 된 명령 식별자를 사용 하 여 연결 된 단추의 인덱스를 검색 합니다.
+지정 된 명령 식별자와 연결 된 단추에 대 한 0부터 시작 하는 인덱스를 검색 합니다.
 
 ```
 UINT CommandToIndex(UINT nID) const;
@@ -601,17 +601,17 @@ UINT CommandToIndex(UINT nID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-찾으려는 명령 ID 인 단추 인덱스 있습니다.
+단추 인덱스를 찾을 명령 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
-명령 ID와 연결 된 단추에 대 한 0부터 시작 인덱스
+명령 ID와 연결 된 단추에 대 한 0부터 시작 하는 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
 ##  <a name="create"></a>  CToolBarCtrl::Create
 
-도구 모음 컨트롤을 만들고 연결 하는 `CToolBarCtrl` 개체입니다.
+Toolbar 컨트롤을 만들고이를 `CToolBarCtrl` 개체에 연결 합니다.
 
 ```
 virtual BOOL Create(
@@ -624,16 +624,16 @@ virtual BOOL Create(
 ### <a name="parameters"></a>매개 변수
 
 *dwStyle*<br/>
-도구 모음 컨트롤의 스타일을 지정합니다. 도구 모음 WS_CHILD 스타일 항상 있어야 합니다. 또한 아래 설명 된 대로 toolbar 스타일 및 창 스타일의 조합을 지정할 수 있습니다 **주의**합니다.
+Toolbar 컨트롤의 스타일을 지정 합니다. 도구 모음에는 항상 WS_CHILD 스타일이 있어야 합니다. 또한 **설명**에 설명 된 대로 도구 모음 스타일과 창 스타일의 조합을 지정할 수 있습니다.
 
 *rect*<br/>
-필요에 따라 도구 모음 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
+선택적으로 toolbar 컨트롤의 크기와 위치를 지정 합니다. 이는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 일 수 있습니다.
 
 *pParentWnd*<br/>
-도구 모음 컨트롤의 부모 창을 지정합니다. NULL이 아니어야 합니다.
+Toolbar 컨트롤의 부모 창을 지정 합니다. NULL이 아니어야 합니다.
 
 *nID*<br/>
-도구 모음 컨트롤의 ID를 지정합니다.
+Toolbar 컨트롤의 ID를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -641,27 +641,27 @@ virtual BOOL Create(
 
 ### <a name="remarks"></a>설명
 
-생성 된 `CToolBarCtrl` 두 단계에서. 먼저 생성자를 호출 하 고 호출 `Create`, 도구 모음 컨트롤에서 생성 되 고에 연결 합니다 `CToolBarCtrl` 개체입니다. Toolbar 컨트롤에 창 스타일을 적용 합니다.
+두 단계로을 `CToolBarCtrl` 생성 합니다. 먼저 생성자를 호출한 다음을 호출 `Create`하 여 toolbar 컨트롤을 만들고이를 `CToolBarCtrl` 개체에 연결 합니다. 다음 창 스타일을 도구 모음 컨트롤에 적용 합니다.
 
-- WS_CHILD 항상
+- 항상 WS_CHILD
 
-- WS_VISIBLE 일반적으로
+- 일반적으로 WS_VISIBLE
 
-- WS_DISABLED 거의
+- 거의 WS_DISABLED
 
-참조 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) 창 스타일에 대 한 Windows SDK에 있습니다.
+창 스타일에 대 한 설명은 Windows SDK의 [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) 를 참조 하세요.
 
-필요에 따라 조합을 적용할 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles)Windows SDK에 설명 된 대로 합니다.
+필요에 따라 Windows SDK 설명 된 대로 [공용 컨트롤 스타일](/windows/win32/Controls/common-control-styles)의 조합을 적용 합니다.
 
-도구 모음 스타일의 조합을 컨트롤 또는 단추 자체에 적용 됩니다. 스타일 항목에 설명 되어 있습니다 [도구 모음 컨트롤 및 단추 스타일](/windows/desktop/Controls/toolbar-control-and-button-styles) Windows SDK에 있습니다.
+도구 모음 스타일의 조합을 컨트롤이 나 단추 자체에 적용 합니다. 스타일은 Windows SDK의 [도구 모음 컨트롤과 단추 스타일](/windows/win32/Controls/toolbar-control-and-button-styles) 에 설명 되어 있습니다.
 
-확장 된 도구 모음 스타일을 사용 하려면 호출 [SetExtendedStyle](#setextendedstyle) 호출한 후 `Create`합니다. 확장된 창 스타일을 사용 하 여 도구 모음을 만들려면, 호출 [CToolBarCtrl::CreateEx](#createex) 대신 `Create`합니다.
+확장된 도구 모음 스타일을 사용하려면 `Create`를 호출한 후 [SetExtendedStyle](#setextendedstyle)를 호출합니다. 확장 창 스타일을 사용 하 여 도구 모음을 만들려면 대신 `Create` [CToolBarCtrl:: createex](#createex) 를 호출 합니다.
 
-Toolbar 컨트롤에는 자동으로 크기와 도구 모음 창의 위치를 설정합니다. 높이의 도구 모음 단추 높이 기준으로 합니다. 너비를 부모 창의 클라이언트 영역의 너비와 같습니다. CCS_TOP 및 CCS_BOTTOM 스타일 도구 모음에서 위쪽 이나 아래쪽 클라이언트 영역의 위치가 있는지 여부를 결정 합니다. 기본적으로 도구 모음 CCS_TOP 스타일을 있습니다.
+Toolbar 컨트롤은 도구 모음 창의 크기와 위치를 자동으로 설정 합니다. 높이는 도구 모음의 단추 높이를 기준으로 합니다. 너비는 부모 창의 클라이언트 영역 너비와 같습니다. CCS_TOP 및 CCS_BOTTOM 스타일은 도구 모음이 클라이언트 영역의 맨 위 또는 아래에 배치 되는지 여부를 결정 합니다. 기본적으로 도구 모음에는 CCS_TOP 스타일이 있습니다.
 
 ##  <a name="createex"></a>  CToolBarCtrl::CreateEx
 
-컨트롤 (자식 창)을 만들고 사용 하 여 연결 된 `CToolBarCtrl` 개체입니다.
+컨트롤 (자식 창)을 만들고이 `CToolBarCtrl` 를 개체에 연결 합니다.
 
 ```
 virtual BOOL CreateEx(
@@ -675,19 +675,19 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>매개 변수
 
 *dwExStyle*<br/>
-만들려는 컨트롤의 확장된 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록은 참조 하세요. 합니다 *dwExStyle* 에 대 한 매개 변수 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK의 합니다.
+만들려는 컨트롤의 확장 스타일을 지정 합니다. 확장 된 Windows 스타일의 목록에 대해서는 Windows SDK의 [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) 에 대 한 *dwexstyle* 매개 변수를 참조 하세요.
 
 *dwStyle*<br/>
-도구 모음 컨트롤의 스타일을 지정합니다. 도구 모음 WS_CHILD 스타일 항상 있어야 합니다. 또한에 설명 된 대로 toolbar 스타일 및 창 스타일의 조합을 지정할 수 있습니다 합니다 **주의** 부분 [만들기](#create)합니다.
+Toolbar 컨트롤의 스타일을 지정 합니다. 도구 모음에는 항상 WS_CHILD 스타일이 있어야 합니다. 또한 [Create](#create)의 **설명** 섹션에 설명 된 대로 도구 모음 스타일과 창 스타일의 조합을 지정할 수 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+*PParentWnd*의 클라이언트 좌표에서 만들 창의 크기와 위치를 설명 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조체에 대 한 참조입니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
 
 *nID*<br/>
-컨트롤의 자식 창 id입니다.
+컨트롤의 자식 창 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -695,7 +695,7 @@ virtual BOOL CreateEx(
 
 ### <a name="remarks"></a>설명
 
-사용 하 여 `CreateEx` of [Create](#create) Windows 확장된 스타일 앞으로 지정 된 Windows 확장된 스타일을 적용할 **WS_EX_** 합니다. `CreateEx` 지정 된 Windows 확장된 스타일을 사용 하 여 컨트롤을 만듭니다 *dwExStyle*합니다. 스타일을 사용 하 여 컨트롤에 특정 확장 집합 [SetExtendedStyle](#setextendedstyle)합니다. 사용 예를 들어 `CreateEx` 이러한 스타일 WS_EX_CONTEXTHELP와 이지만 사용 하 여 `SetExtendedStyle` TBSTYLE_EX_DRAWDDARROWS로 이러한 스타일을 설정 하려면. 자세한 내용은 뒷부분에 있는 스타일을 참조 하세요 [도구 모음 확장 스타일](/windows/desktop/Controls/toolbar-extended-styles) Windows sdk에서입니다.
+`CreateEx` [Create](#create) 대신 **WS_EX_** 를 사용 하 여 windows 확장 스타일 앞에 지정 된 확장 된 windows 스타일을 적용 합니다. `CreateEx`*Dwexstyle*로 지정 된 확장 된 Windows 스타일을 사용 하 여 컨트롤을 만듭니다. [SetExtendedStyle](#setextendedstyle)를 사용 하 여 컨트롤과 관련 된 확장 스타일을 설정 합니다. 예를 들어를 `CreateEx` 사용 하 여 이러한 스타일을 WS_EX_CONTEXTHELP로 설정 `SetExtendedStyle` 하 고를 사용 하 여 이러한 스타일을 TBSTYLE_EX_DRAWDDARROWS로 설정 합니다. 자세한 내용은 Windows SDK의 [도구 모음 확장 스타일](/windows/win32/Controls/toolbar-extended-styles) 에서 설명 하는 스타일을 참조 하세요.
 
 ##  <a name="ctoolbarctrl"></a>  CToolBarCtrl::CToolBarCtrl
 
@@ -707,11 +707,11 @@ CToolBarCtrl();
 
 ### <a name="remarks"></a>설명
 
-호출 해야 합니다 [만들기](#create) 도구 모음을 사용할 수 있도록 합니다.
+도구 모음을 사용할 수 있도록 하려면 [Create](#create) 를 호출 해야 합니다.
 
 ##  <a name="customize"></a>  CToolBarCtrl::Customize
 
-도구 모음 사용자 지정 대화 상자를 표시합니다.
+사용자 지정 도구 모음 대화 상자를 표시 합니다.
 
 ```
 void Customize();
@@ -719,11 +719,11 @@ void Customize();
 
 ### <a name="remarks"></a>설명
 
-이 대화 상자에 사용자를 추가 단추를 삭제 하 여 도구 모음을 지정할 수 있습니다. 사용자 지정을 지원 하려면 도구 모음을의 부모 창에 설명 된 대로 사용자 지정 알림 메시지를 처리 해야 합니다 [사용자 지정 알림 처리](../../mfc/handling-customization-notifications.md)합니다. 도구 모음을도 만들어야 CCS_ADJUSTABLE 스타일을 사용 하 여에 설명 된 대로 [CToolBarCtrl::Create](#create)합니다.
+이 대화 상자를 사용 하 여 사용자는 단추를 추가 및 삭제 하 여 도구 모음을 사용자 지정할 수 있습니다. 사용자 지정을 지원 하려면 [사용자 지정 알림 처리](../../mfc/handling-customization-notifications.md)에 설명 된 대로 도구 모음의 부모 창에서 사용자 지정 알림 메시지를 처리 해야 합니다. [CToolBarCtrl:: Create](#create)에 설명 된 대로 CCS_ADJUSTABLE 스타일을 사용 하 여 도구 모음도 만들어야 합니다.
 
 ##  <a name="deletebutton"></a>  CToolBarCtrl::DeleteButton
 
-도구 모음 컨트롤에서 단추를 삭제합니다.
+Toolbar 컨트롤에서 단추를 삭제 합니다.
 
 ```
 BOOL DeleteButton(int nIndex);
@@ -732,7 +732,7 @@ BOOL DeleteButton(int nIndex);
 ### <a name="parameters"></a>매개 변수
 
 *nIndex*<br/>
-삭제 하는 단추의 인덱스 0부터 시작 합니다.
+삭제할 단추의 인덱스 (0부터 시작)입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -742,7 +742,7 @@ BOOL DeleteButton(int nIndex);
 
 ##  <a name="enablebutton"></a>  CToolBarCtrl::EnableButton
 
-사용 하거나 도구 모음 컨트롤에서 지정 된 단추를 사용 하지 않도록 설정 합니다.
+Toolbar 컨트롤에서 지정 된 단추를 사용 하거나 사용 하지 않도록 설정 합니다.
 
 ```
 BOOL EnableButton(
@@ -753,10 +753,10 @@ BOOL EnableButton(
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-사용 하도록 설정 하거나 사용 하지 않도록 하려면 단추의 명령 식별자입니다.
+사용 하거나 사용 하지 않도록 설정할 단추의 명령 식별자입니다.
 
 *bEnable*<br/>
-단추를 사용 하도록 설정 단추를 사용 하지 않도록 설정 하려면 FALSE입니다.
+단추를 사용 하려면 TRUE이 고, 그렇지 않으면입니다. FALSE 이면 단추를 사용 하지 않습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -764,11 +764,11 @@ BOOL EnableButton(
 
 ### <a name="remarks"></a>설명
 
-단추에서 사용할 수 있는 경우 누를 하 고 확인 될 수 있습니다. 둘 이상의 단추 상태를 변경 하려는 경우에 호출 해 보십시오 [SetState](#setstate) 대신 합니다.
+단추를 사용할 수 있게 되 면 단추를 누르고 선택할 수 있습니다. 둘 이상의 단추 상태를 변경 하려면 대신 [SetState](#setstate) 를 호출 하는 것이 좋습니다.
 
 ##  <a name="getanchorhighlight"></a>  CToolBarCtrl::GetAnchorHighlight
 
-도구 모음에 대 한 설정 앵커 강조 표시를 검색 합니다.
+도구 모음에 대 한 앵커 강조 표시 설정을 검색 합니다.
 
 ```
 BOOL GetAnchorHighlight() const;
@@ -776,15 +776,15 @@ BOOL GetAnchorHighlight() const;
 
 ### <a name="return-value"></a>반환 값
 
-0이 아닌 경우 앵커 강조 표시를 사용 합니다. 0 개, 앵커 강조 표시를 사용할 수 없습니다.
+0이 아니면 앵커 강조 표시를 사용 합니다. 0 인 경우 앵커 강조 표시를 사용할 수 없습니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETANCHORHIGHLIGHT](/windows/desktop/Controls/tb-getanchorhighlight)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETANCHORHIGHLIGHT](/windows/win32/Controls/tb-getanchorhighlight)의 동작을 구현 합니다.
 
 ##  <a name="getbitmap"></a>  CToolBarCtrl::GetBitmap
 
-도구 모음 단추와 연결 된 비트맵의 인덱스를 검색 합니다.
+도구 모음의 단추와 연결 된 비트맵의 인덱스를 검색 합니다.
 
 ```
 int GetBitmap(int nID) const;
@@ -793,19 +793,19 @@ int GetBitmap(int nID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-인 비트맵 인덱스 검색 해야 하는 단추의 명령 식별자입니다.
+비트맵 인덱스를 검색할 단추의 명령 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 비트맵 또는 0이 고 그렇지의 인덱스를 반환 합니다.
+성공 하면 비트맵의 인덱스를 반환 하 고 그렇지 않으면 0을 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-기능을 구현 [TB_GETBITMAP](/windows/desktop/Controls/tb-getbitmap) Windows SDK에 있습니다.
+Windows SDK에서 [TB_GETBITMAP](/windows/win32/Controls/tb-getbitmap) 의 기능을 구현 합니다.
 
 ##  <a name="getbitmapflags"></a>  CToolBarCtrl::GetBitmapFlags
 
-도구 모음에서 비트맵 플래그를 검색합니다.
+도구 모음에서 비트맵 플래그를 검색 합니다.
 
 ```
 UINT GetBitmapFlags() const;
@@ -813,15 +813,15 @@ UINT GetBitmapFlags() const;
 
 ### <a name="return-value"></a>반환 값
 
-표시할 큰 도구 모음 비트맵을 지원할 수 있으면 설정 TBBF_LARGE 플래그가 있는 UINT 그렇지 않으면 선택을 취소 합니다.
+디스플레이에서 많은 도구 모음 비트맵을 지원할 수 있는 경우 TBBF_LARGE 플래그가 설정 된 UINT입니다. 그렇지 않으면 선택을 취소 합니다.
 
 ### <a name="remarks"></a>설명
 
-도구 모음을 만든 후 있지만 도구 모음 비트맵을 추가 하기 전에 호출 해야 합니다. 반환 값은 표시 여부 큰 비트맵 지원 하는지 여부를 나타냅니다. 큰 비트맵 지원 되는 디스플레이 및 사용, 호출 하려는 경우 [SetBitmapSize](#setbitmapsize) 하 고 [SetButtonSize](#setbuttonsize) 사용 하 여 큰 비트맵을 추가 하기 전에 [AddBitmap](#addbitmap)합니다.
+도구 모음을 만든 후 도구 모음에 비트맵을 추가 하기 전에 호출 해야 합니다. 반환 값은 디스플레이에서 긴 비트맵이 지원 되는지 여부를 나타냅니다. 표시에서 큰 비트맵을 지원 하 고 사용 하도록 선택 하는 경우 [Addbitmap](#addbitmap)을 사용 하 여 큰 비트맵을 추가 하기 전에 [SetBitmapSize](#setbitmapsize) 및 [setbuttonsize](#setbuttonsize) 를 호출 합니다.
 
 ##  <a name="getbutton"></a>  CToolBarCtrl::GetButton
 
-도구 모음 컨트롤에서 지정 된 단추에 대 한 정보를 검색합니다.
+Toolbar 컨트롤에서 지정 된 단추에 대 한 정보를 검색 합니다.
 
 ```
 BOOL GetButton(
@@ -832,10 +832,10 @@ BOOL GetButton(
 ### <a name="parameters"></a>매개 변수
 
 *nIndex*<br/>
-정보를 검색 하는 단추의 인덱스 0부터 시작 합니다.
+정보를 검색할 단추의 인덱스 (0부터 시작)입니다.
 
 *lpButton*<br/>
-주소는 `TBBUTTON` 구조 단추 정보의 복사본을 수신 하는 것입니다. 참조 [CToolBarCtrl::AddButtons](#addbuttons) 에 대 한 자세한는 `TBBUTTON` 구조입니다.
+단추 정보의 복사본 `TBBUTTON` 을 받을 구조체의 주소입니다. `TBBUTTON` 구조체에 대 한 자세한 내용은 [CToolBarCtrl:: addbuttons](#addbuttons) 를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -843,7 +843,7 @@ BOOL GetButton(
 
 ##  <a name="getbuttoncount"></a>  CToolBarCtrl::GetButtonCount
 
-도구 모음 컨트롤에서 현재 단추의 수를 검색합니다.
+현재 toolbar 컨트롤에 있는 단추의 수를 검색 합니다.
 
 ```
 int GetButtonCount() const;
@@ -851,11 +851,11 @@ int GetButtonCount() const;
 
 ### <a name="return-value"></a>반환 값
 
-단추의 수입니다.
+단추의 개수입니다.
 
 ##  <a name="getbuttoninfo"></a>  CToolBarCtrl::GetButtonInfo
 
-도구 모음에서 단추에 대 한 정보를 검색합니다.
+도구 모음에서 단추에 대 한 정보를 검색 합니다.
 
 ```
 int GetButtonInfo(
@@ -869,15 +869,15 @@ int GetButtonInfo(
 단추 식별자입니다.
 
 *ptbbi*<br/>
-에 대 한 포인터를 [TBBUTTONINFO](/windows/desktop/api/commctrl/ns-commctrl-tbbuttoninfoa) 구조 단추 정보를 수신 합니다.
+단추 정보를 수신 하는 [TBBUTTONINFO](/windows/win32/api/commctrl/ns-commctrl-tbbuttoninfow) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공할 경우 단추의 인덱스 그렇지 않으면-1입니다.
+성공 하면 단추의 0부터 시작 하는 인덱스이 고, 그렇지 않으면입니다. 그렇지 않으면-1입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETBUTTONINFO](/windows/desktop/Controls/tb-getbuttoninfo)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETBUTTONINFO](/windows/win32/Controls/tb-getbuttoninfo)의 동작을 구현 합니다.
 
 ##  <a name="getbuttonsize"></a>  CToolBarCtrl::GetButtonSize
 
@@ -889,11 +889,11 @@ DWORD GetButtonSize() const;
 
 ### <a name="return-value"></a>반환 값
 
-각각 LOWORD 및 HIWORD, 너비 및 높이 값을 포함 하는 DWORD 값입니다.
+각각 LOWORD 및 WORD의 너비 및 높이 값을 포함 하는 DWORD 값입니다.
 
 ##  <a name="getbuttontext"></a>  CToolBarCtrl::GetButtonText
 
-현재 도구 모음 컨트롤에서 지정 된 단추의 표시 텍스트를 검색합니다.
+현재 toolbar 컨트롤에 있는 지정 된 단추의 표시 텍스트를 검색 합니다.
 
 ```
 CString GetButtonText(int idButton) const;
@@ -903,19 +903,19 @@ CString GetButtonText(int idButton) const;
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*idButton*|[in] 해당 표시 텍스트가 검색 되는 단추에 대 한 식별자입니다.|
+|*idButton*|진행 표시 텍스트가 검색 되는 단추의 식별자입니다.|
 
 ### <a name="return-value"></a>반환 값
 
-A [CString](../../atl-mfc-shared/using-cstring.md) 지정 된 단추의 표시 텍스트를 포함 하는 합니다.
+지정 된 단추의 표시 텍스트를 포함 하는 [CString](../../atl-mfc-shared/using-cstring.md) 입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [TB_GETBUTTONTEXT](/windows/desktop/Controls/tb-getbuttontext) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [TB_GETBUTTONTEXT](/windows/win32/Controls/tb-getbuttontext) 메시지를 보냅니다.
 
 ##  <a name="getcolorscheme"></a>  CToolBarCtrl::GetColorScheme
 
-현재 도구 모음 컨트롤의 색 구성표를 검색합니다.
+현재 toolbar 컨트롤의 색 구성표를 검색 합니다.
 
 ```
 BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
@@ -923,21 +923,21 @@ BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
-|*lpColorScheme*|[out] 에 대 한 포인터를 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) 색 구성표 정보를 수신 하는 구조입니다. 이 메서드는 반환 될 때 구조 강조 표시 색 및 도구 모음 컨트롤의 그림자 색에 설명 합니다.|
+|*lpColorScheme*|제한이 색 구성표 정보를 수신 하는 [COLORSCHEME](/windows/win32/api/commctrl/ns-commctrl-colorscheme) 구조체에 대 한 포인터입니다. 이 메서드가 반환 될 때 구조체는 toolbar 컨트롤의 강조 색 및 그림자 색을 설명 합니다.|
 
 ### <a name="return-value"></a>반환 값
 
-이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
+이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [TB_GETCOLORSCHEME](/windows/desktop/Controls/tb-getcolorscheme) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [TB_GETCOLORSCHEME](/windows/win32/Controls/tb-getcolorscheme) 메시지를 보냅니다.
 
 ##  <a name="getdisabledimagelist"></a>  CToolBarCtrl::GetDisabledImageList
 
-도구 모음 컨트롤을 사용 하지 않도록 설정 하는 표시 단추를 사용 하는 이미지 목록을 검색 합니다.
+Toolbar 컨트롤에서 사용 하지 않도록 설정 된 단추를 표시 하는 데 사용 하는 이미지 목록을 검색 합니다.
 
 ```
 CImageList* GetDisabledImageList() const;
@@ -945,15 +945,15 @@ CImageList* GetDisabledImageList() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 개체 또는 비활성된 이미지 목록이 없는 설정 된 경우 NULL입니다.
+[CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터 이거나, 사용 하지 않도록 설정 된 이미지 목록이 없는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETDISABLEDIMAGELIST](/windows/desktop/Controls/tb-getdisabledimagelist)Windows SDK에 설명 된 대로 합니다. MFC 구현 `GetDisabledImageList` 사용을 `CImageList` 도구 모음 컨트롤의 단추를 포함 하는 개체 이미지, 이미지 목록에 대 한 핸들 대신 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETDISABLEDIMAGELIST](/windows/win32/Controls/tb-getdisabledimagelist)의 동작을 구현 합니다. 의 `GetDisabledImageList` MFC 구현에서는 이미지 목록 `CImageList` 에 대 한 핸들이 아니라 toolbar 컨트롤의 단추 이미지를 포함 하는 개체를 사용 합니다.
 
 ##  <a name="getdroptarget"></a>  CToolBarCtrl::GetDropTarget
 
-검색 된 [IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) 도구 모음 컨트롤에 대 한 인터페이스입니다.
+Toolbar 컨트롤에 대 한 [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) 인터페이스를 검색 합니다.
 
 ```
 HRESULT GetDropTarget(IDropTarget** ppDropTarget) const;
@@ -962,7 +962,7 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget) const;
 ### <a name="parameters"></a>매개 변수
 
 *ppDropTarget*<br/>
-에 대 한 포인터를 [IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) 인터페이스 포인터입니다. 오류가 발생 하면 NULL 포인터가이 주소에 배치 됩니다.
+[IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) 인터페이스 포인터에 대 한 포인터입니다. 오류가 발생 하면이 주소에 NULL 포인터가 배치 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -970,11 +970,11 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget) const;
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETOBJECT](/windows/desktop/Controls/tb-getobject)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETOBJECT](/windows/win32/Controls/tb-getobject)의 동작을 구현 합니다.
 
 ##  <a name="getextendedstyle"></a>  CToolBarCtrl::GetExtendedStyle
 
-도구 모음 컨트롤에 대 한 확장된 스타일을 검색합니다.
+Toolbar 컨트롤에 대 한 확장 스타일을 검색 합니다.
 
 ```
 DWORD GetExtendedStyle() const;
@@ -982,15 +982,15 @@ DWORD GetExtendedStyle() const;
 
 ### <a name="return-value"></a>반환 값
 
-DWORD 사용 하 여 도구 모음 컨트롤에서 현재 확장된 스타일을 나타냅니다. 스타일의 목록은 참조 하세요 [도구 모음 확장 스타일](/windows/desktop/Controls/toolbar-extended-styles), Windows sdk에서입니다.
+Toolbar 컨트롤에 현재 사용 중인 확장 스타일을 나타내는 DWORD입니다. 스타일 목록은 Windows SDK의 [도구 모음 확장 스타일](/windows/win32/Controls/toolbar-extended-styles)을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETEXTENDEDSTYLE](/windows/desktop/Controls/tb-getextendedstyle)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETEXTENDEDSTYLE](/windows/win32/Controls/tb-getextendedstyle)의 동작을 구현 합니다.
 
 ##  <a name="gethotimagelist"></a>  CToolBarCtrl::GetHotImageList
 
-"핫" 단추를 표시 하려면 도구 모음 컨트롤을 사용 하는 이미지 목록을 검색 합니다. 마우스 포인터가 위에 있을 때 활성 단추를 강조 표시 됩니다.
+Toolbar 컨트롤에서 "핫" 단추를 표시 하는 데 사용 하는 이미지 목록을 검색 합니다. 마우스 포인터가 위로 가져가면 활성 단추가 강조 표시 됩니다.
 
 ```
 CImageList* GetHotImageList() const;
@@ -998,15 +998,15 @@ CImageList* GetHotImageList() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 개체 또는 비활성된 이미지 목록이 없는 설정 된 경우 NULL입니다.
+[CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터 이거나, 사용 하지 않도록 설정 된 이미지 목록이 없는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETHOTIMAGELIST](/windows/desktop/Controls/tb-gethotimagelist)Windows SDK에 설명 된 대로 합니다. 마우스 포인터가 위에 있을 때 활성 단추를 강조 표시 됩니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETHOTIMAGELIST](/windows/win32/Controls/tb-gethotimagelist)의 동작을 구현 합니다. 마우스 포인터가 위로 가져가면 활성 단추가 강조 표시 됩니다.
 
 ##  <a name="gethotitem"></a>  CToolBarCtrl::GetHotItem
 
-도구 모음에서 활성 항목의 인덱스를 검색합니다.
+도구 모음에서 핫 항목의 인덱스를 검색 합니다.
 
 ```
 int GetHotItem() const;
@@ -1014,15 +1014,15 @@ int GetHotItem() const;
 
 ### <a name="return-value"></a>반환 값
 
-도구 모음에서 활성 항목의 0부터 시작 하는 인덱스입니다.
+도구 모음에서 핫 항목의 인덱스 (0부터 시작)입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETHOTITEM](/windows/desktop/Controls/tb-gethotitem)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETHOTITEM](/windows/win32/Controls/tb-gethotitem)의 동작을 구현 합니다.
 
 ##  <a name="getimagelist"></a>  CToolBarCtrl::GetImageList
 
-해당 기본 상태인 단추를 표시 하려면 도구 모음 컨트롤을 사용 하는 이미지 목록을 검색 합니다.
+Toolbar 컨트롤이 기본 상태로 단추를 표시 하는 데 사용 하는 이미지 목록을 검색 합니다.
 
 ```
 CImageList* GetImageList() const;
@@ -1030,15 +1030,15 @@ CImageList* GetImageList() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 개체 또는 설정 된 이미지 목록이 없는 경우 NULL입니다.
+[CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터 이거나, 이미지 목록이 설정 되어 있지 않은 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETIMAGELIST](/windows/desktop/Controls/tb-getimagelist)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETIMAGELIST](/windows/win32/Controls/tb-getimagelist)의 동작을 구현 합니다.
 
 ##  <a name="getinsertmark"></a>  CToolBarCtrl::GetInsertMark
 
-도구 모음에 대 한 현재 삽입 표시를 검색합니다.
+도구 모음에 대 한 현재 삽입 표시를 검색 합니다.
 
 ```
 void GetInsertMark(TBINSERTMARK* ptbim) const;
@@ -1047,11 +1047,11 @@ void GetInsertMark(TBINSERTMARK* ptbim) const;
 ### <a name="parameters"></a>매개 변수
 
 *ptbim*<br/>
-에 대 한 포인터를 [TBINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-tbinsertmark) 삽입 표시를 수신 하는 구조입니다.
+삽입 표시를 받는 [TBINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-tbinsertmark) 구조체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETINSERTMARK](/windows/desktop/Controls/tb-getinsertmark)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETINSERTMARK](/windows/win32/Controls/tb-getinsertmark)의 동작을 구현 합니다.
 
 ##  <a name="getinsertmarkcolor"></a>  CToolBarCtrl::GetInsertMarkColor
 
@@ -1067,11 +1067,11 @@ COLORREF GetInsertMarkColor() const;
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETINSERTMARKCOLOR](/windows/desktop/Controls/tb-getinsertmarkcolor)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETINSERTMARKCOLOR](/windows/win32/Controls/tb-getinsertmarkcolor)의 동작을 구현 합니다.
 
 ##  <a name="getitemrect"></a>  CToolBarCtrl::GetItemRect
 
-도구 모음 컨트롤에 있는 단추의 경계 사각형을 검색 합니다.
+Toolbar 컨트롤에 있는 단추의 경계 사각형을 검색 합니다.
 
 ```
 BOOL GetItemRect(
@@ -1082,10 +1082,10 @@ BOOL GetItemRect(
 ### <a name="parameters"></a>매개 변수
 
 *nIndex*<br/>
-정보를 검색 하는 단추의 인덱스 0부터 시작 합니다.
+정보를 검색할 단추의 인덱스 (0부터 시작)입니다.
 
 *lpRect*<br/>
-주소를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 경계 사각형의 좌표를 받는 개체입니다.
+경계 사각형의 좌표를 받는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조체 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 개체의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1093,11 +1093,11 @@ BOOL GetItemRect(
 
 ### <a name="remarks"></a>설명
 
-이 함수는 해당 상태가 TBSTATE_HIDDEN로 설정 된 단추에 대 한 경계 사각형을 검색 하지 않습니다.
+이 함수는 상태가 TBSTATE_HIDDEN로 설정 된 단추의 경계 사각형을 검색 하지 않습니다.
 
 ##  <a name="getmaxsize"></a>  CToolBarCtrl::GetMaxSize
 
-모든 표시 단추 및 도구 모음에서 구분 기호의 총 크기를 검색합니다.
+도구 모음에서 표시 되는 모든 단추 및 구분 기호의 전체 크기를 검색 합니다.
 
 ```
 BOOL GetMaxSize(LPSIZE pSize) const;
@@ -1106,7 +1106,7 @@ BOOL GetMaxSize(LPSIZE pSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *pSize*<br/>
-에 대 한 포인터를 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체 항목의 크기입니다.
+항목의 크기를 받는 [크기](/windows/win32/api/windef/ns-windef-size) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1114,11 +1114,11 @@ BOOL GetMaxSize(LPSIZE pSize) const;
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETMAXSIZE](/windows/desktop/Controls/tb-getmaxsize)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETMAXSIZE](/windows/win32/Controls/tb-getmaxsize)의 동작을 구현 합니다.
 
 ##  <a name="getmaxtextrows"></a>  CToolBarCtrl::GetMaxTextRows
 
-도구 모음 단추에 표시 되는 텍스트 열의 최대 수를 검색 합니다.
+도구 모음 단추에 표시 되는 최대 텍스트 행 수를 검색 합니다.
 
 ```
 int GetMaxTextRows() const;
@@ -1126,11 +1126,11 @@ int GetMaxTextRows() const;
 
 ### <a name="return-value"></a>반환 값
 
-도구 모음 단추에 표시 되는 텍스트 열의 최대 수입니다.
+도구 모음 단추에 표시 되는 최대 텍스트 행 수입니다.
 
 ##  <a name="getmetrics"></a>  CToolBarCtrl::GetMetrics
 
-메트릭을 검색 합니다 `CToolBarCtrl` 개체입니다.
+`CToolBarCtrl` 개체의 메트릭을 검색 합니다.
 
 ```
 void GetMetrics(LPTBMETRICS ptbm) const;
@@ -1139,15 +1139,15 @@ void GetMetrics(LPTBMETRICS ptbm) const;
 ### <a name="parameters"></a>매개 변수
 
 *ptbm*<br/>
-에 대 한 포인터를 [TBMETRICS](/windows/desktop/api/commctrl/ns-commctrl-tbmetrics) 구조는 `CToolBarCtrl` 개체입니다.
+`CToolBarCtrl` 개체의 [TBMETRICS](/windows/win32/api/commctrl/ns-commctrl-tbmetrics) 구조에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는의 기능을 에뮬레이션 합니다 [TB_GETMETRICS](/windows/desktop/Controls/tb-getmetrics) Windows SDK에 설명 된 대로 메시지입니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 [TB_GETMETRICS](/windows/win32/Controls/tb-getmetrics) 메시지의 기능을 에뮬레이트합니다.
 
 ##  <a name="getpadding"></a>  CToolBarCtrl::GetPadding
 
-현재 도구 모음 컨트롤의 가로 및 세로 여백을 검색합니다.
+현재 도구 모음 컨트롤의 가로 및 세로 안쪽 여백을 검색 합니다.
 
 ```
 BOOL GetPadding(
@@ -1159,20 +1159,20 @@ BOOL GetPadding(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*pnHorzPadding*|[out] 도구 모음 컨트롤의 가로 안쪽 여백 (픽셀)에서 수신 하는 정수입니다.|
-|*pnVertPadding*|[out] 도구 모음 컨트롤의 세로 안쪽 여백 (픽셀)에서 수신 하는 정수입니다.|
+|*pnHorzPadding*|제한이 Toolbar 컨트롤의 가로 안쪽 여백을 픽셀 단위로 수신 하는 정수입니다.|
+|*pnVertPadding*|제한이 Toolbar 컨트롤의 세로 안쪽 여백을 픽셀 단위로 수신 하는 정수입니다.|
 
 ### <a name="return-value"></a>반환 값
 
-이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
+이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [TB_GETPADDING](/windows/desktop/Controls/tb-getpadding) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [TB_GETPADDING](/windows/win32/Controls/tb-getpadding) 메시지를 보냅니다.
 
 ##  <a name="getpressedimagelist"></a>  CToolBarCtrl::GetPressedImageList
 
-현재 도구 모음 컨트롤에서 단추를 눌렀는지에서를 나타내는 데 사용 된 이미지 목록을 검색 합니다.
+현재 toolbar 컨트롤에서 누름 상태의 단추를 나타내는 데 사용 하는 이미지 목록을 검색 합니다.
 
 ```
 CImageList* GetPressedImageList();
@@ -1180,15 +1180,15 @@ CImageList* GetPressedImageList();
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 이미지 목록이 없는 설정 된 경우 NULL을 현재 컨트롤에 대 한 이미지 목록이 들어 있는입니다.
+현재 컨트롤의 이미지 목록이 포함 된 [CImageList](../../mfc/reference/cimagelist-class.md) 에 대 한 포인터 이거나, 해당 이미지 목록이 설정 되어 있지 않으면 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [TB_GETPRESSEDIMAGELIST](/windows/desktop/Controls/tb-getpressedimagelist) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [TB_GETPRESSEDIMAGELIST](/windows/win32/Controls/tb-getpressedimagelist) 메시지를 보냅니다.
 
 ##  <a name="getrect"></a>  CToolBarCtrl::GetRect
 
-지정 된 도구 모음 단추의 경계 사각형을 검색 합니다.
+지정 된 도구 모음 단추에 대 한 경계 사각형을 검색 합니다.
 
 ```
 BOOL GetRect(
@@ -1202,7 +1202,7 @@ BOOL GetRect(
 단추 식별자입니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 경계 사각형 정보를 얻습니다.
+경계 사각형 정보를 받을 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1210,11 +1210,11 @@ BOOL GetRect(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETRECT](/windows/desktop/Controls/tb-getrect)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETRECT](/windows/win32/Controls/tb-getrect)의 동작을 구현 합니다.
 
 ##  <a name="getrows"></a>  CToolBarCtrl::GetRows
 
-도구 모음 컨트롤에서 현재 표시 되는 단추의 행의 수를 검색 합니다.
+Toolbar 컨트롤에서 현재 표시 되는 단추의 행 수를 검색 합니다.
 
 ```
 int GetRows() const;
@@ -1222,15 +1222,15 @@ int GetRows() const;
 
 ### <a name="return-value"></a>반환 값
 
-도구 모음에서 현재 표시 되는 단추의 행 수입니다.
+도구 모음에 현재 표시 되는 단추의 행 수입니다.
 
 ### <a name="remarks"></a>설명
 
-행 수가 항상 되도록 하나 TBSTYLE_WRAPABLE 스타일을 사용 하 여 도구 모음을 만든 경우가 아니면 참고 합니다.
+TBSTYLE_WRAPABLE 스타일을 사용 하 여 도구 모음을 만들지 않은 경우에는 행 수가 항상 1이 됩니다.
 
 ##  <a name="getstate"></a>  CToolBarCtrl::GetState
 
-것, 누른 사용할지 검사와 같은 도구 모음 컨트롤에서 지정 된 단추의 상태에 대 한 정보를 검색 합니다.
+사용, 누름 또는 선택 여부와 같은 도구 모음 컨트롤에서 지정 된 단추의 상태에 대 한 정보를 검색 합니다.
 
 ```
 int GetState(int nID) const;
@@ -1239,19 +1239,19 @@ int GetState(int nID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-정보를 검색 하는 단추의 명령 식별자입니다.
+정보를 검색할 단추의 명령 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 상태 정보 또는-1이 고 그렇지 합니다. 단추 상태 정보에 나열 된 값의 조합일 수 있습니다 [CToolBarCtrl::AddButtons](#addbuttons)합니다.
+성공 하면 단추 상태 정보이 고, 그렇지 않으면-1입니다. 단추 상태 정보는 [CToolBarCtrl:: AddButtons](#addbuttons)에 나열 된 값을 조합 하 여 사용할 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수는 둘 이상의 단추 상태를 검색 하려는 경우에 특히 유용 합니다. 방금 한 상태를 검색 하려면 다음 멤버 함수 중 하나를 사용 합니다. [IsButtonEnabled](#isbuttonenabled), [IsButtonChecked](#isbuttonchecked)합니다 [IsButtonPressed](#isbuttonpressed)를 [IsButtonHidden](#isbuttonhidden), 또는 [IsButtonIndeterminate](#isbuttonindeterminate)합니다. 그러나는 `GetState` 멤버 함수는 유일한 방법은 TBSTATE_WRAP 단추 상태를 감지할 수 있습니다.
+이 함수는 여러 단추 상태를 검색 하려는 경우에 특히 유용 합니다. 하나의 상태를 검색 하려면 다음 멤버 함수 중 하나를 사용 합니다. [Isbuttonenabled](#isbuttonenabled), [isbuttonenabled](#isbuttonchecked), [isbuttonenabled](#isbuttonpressed), [isbuttonenabled](#isbuttonhidden)또는 [isbuttonenabled](#isbuttonindeterminate). `GetState` 그러나 멤버 함수는 TBSTATE_WRAP 단추 상태를 검색 하는 유일한 방법입니다.
 
 ##  <a name="getstring"></a>  CToolBarCtrl::GetString
 
-도구 모음의 문자열을 검색 합니다.
+도구 모음 문자열을 검색 합니다.
 
 ```
 int GetString(
@@ -1270,21 +1270,21 @@ int GetString(
 문자열의 인덱스입니다.
 
 *lpstrString*<br/>
-문자열을 반환 하는 데 사용 하는 버퍼에 대 한 포인터입니다.
+문자열을 반환 하는 데 사용 되는 버퍼에 대 한 포인터입니다.
 
 *cchMaxLen*<br/>
-바이트 버퍼의 길이입니다.
+버퍼의 길이 (바이트)입니다.
 
 *str*<br/>
 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 문자열의 길이가 없으면-1입니다.
+성공 하면 문자열의 길이이 고, 그렇지 않으면-1입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_GETSTRING](/windows/desktop/Controls/tb-getstring)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_GETSTRING](/windows/win32/Controls/tb-getstring)의 동작을 구현 합니다.
 
 ##  <a name="getstyle"></a>  CToolBarCtrl::GetStyle
 
@@ -1296,11 +1296,11 @@ DWORD GetStyle() const;
 
 ### <a name="return-value"></a>반환 값
 
-조합을 포함 하는 DWORD [toolbar 컨트롤 스타일](/windows/desktop/Controls/toolbar-control-and-button-styles)Windows SDK에 설명 된 대로 합니다.
+Windows SDK에 설명 된 바와 같이 [toolbar 컨트롤 스타일](/windows/win32/Controls/toolbar-control-and-button-styles)의 조합을 포함 하는 DWORD입니다.
 
 ##  <a name="gettooltips"></a>  CToolBarCtrl::GetToolTips
 
-도구 모음 컨트롤을 사용 하 여 연결 하는 경우 도구 설명 컨트롤의 핸들을 검색 합니다.
+도구 모음 컨트롤과 연결 된 도구 설명 컨트롤 (있는 경우)의 핸들을 검색 합니다.
 
 ```
 CToolTipCtrl* GetToolTips() const;
@@ -1308,15 +1308,15 @@ CToolTipCtrl* GetToolTips() const;
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 도구 모음에 연결 된 도구 설명 컨트롤이 없는 경우이 도구 모음 또는 NULL을 사용 하 여 연결 된 개체입니다.
+이 도구 모음과 연결 된 [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 개체에 대 한 포인터 이거나, 도구 모음에 연결 된 도구 설명 컨트롤이 없으면 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-도구 모음 컨트롤에서는 일반적으로 만들고 자체 도구 설명 컨트롤을 유지 관리, 하므로 대부분의 프로그램이이 함수를 호출할 필요가 없습니다.
+Toolbar 컨트롤은 일반적으로 자체 도구 설명 컨트롤을 만들고 유지 관리 하기 때문에 대부분의 프로그램에서이 함수를 호출할 필요가 없습니다.
 
 ##  <a name="hittest"></a>  CToolBarCtrl::HitTest
 
-도구 모음 컨트롤에서 한 지점이 위치를 결정 합니다.
+도구 모음 컨트롤에서 점이 어디에 있는지를 결정 합니다.
 
 ```
 int HitTest(LPPOINT ppt) const;
@@ -1325,21 +1325,21 @@ int HitTest(LPPOINT ppt) const;
 ### <a name="parameters"></a>매개 변수
 
 *ppt*<br/>
-에 대 한 포인터를 [지점](/previous-versions/dd162805\(v=vs.85\)) 에서 적중 횟수 테스트의 x 좌표를 포함 하는 구조를 `x` 멤버와 y 좌표를 적중 횟수의 테스트는 `y` 멤버입니다. 좌표가 도구 모음에서의 클라이언트 영역을 기준으로 합니다.
+`x` 멤버의 적중 테스트에 대 한 x 좌표와 `y` 멤버의 적중 테스트에 대 한 y 좌표를 포함 하는 [POINT](/previous-versions/dd162805\(v=vs.85\)) 구조체에 대 한 포인터입니다. 좌표는 도구 모음의 클라이언트 영역을 기준으로 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-도구 모음에 있는 점의 위치를 나타내는 정수 값입니다. 값이 0 또는 양수 값 이면이 반환 값은 점이 있는 nonseparator 항목의 0부터 시작 인덱스입니다.
+도구 모음에 있는 점의 위치를 나타내는 정수 값입니다. 값이 0 또는 양수 값 이면이 반환 값은 점이 있는 비 구분 기호 항목의 인덱스 (0부터 시작)입니다.
 
-반환 값이 음수 이면 지점 단추 내에 포함 되지 않습니다. 반환 값의 절대 값에는 구분 기호 항목을 가장 가까운 nonseparator 항목의 인덱스입니다.
+반환 값이 음수 이면 점이 단추 안에 놓이지 않습니다. 반환 값의 절대값은 구분 기호 항목이 나 가장 가까운 비 구분 기호 항목의 인덱스입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_HITTEST](/windows/desktop/Controls/tb-hittest)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_HITTEST](/windows/win32/Controls/tb-hittest)의 동작을 구현 합니다.
 
 ##  <a name="hidebutton"></a>  CToolBarCtrl::HideButton
 
-도구 모음 컨트롤에서 지정 된 단추를 표시 하거나 숨깁니다.
+Toolbar 컨트롤에서 지정 된 단추를 숨기 거 나 표시 합니다.
 
 ```
 BOOL HideButton(
@@ -1350,10 +1350,10 @@ BOOL HideButton(
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-숨기 거 나 표시 하려면 단추의 명령 식별자입니다.
+숨기 거 나 표시할 단추의 명령 식별자입니다.
 
 *bHide*<br/>
-숨기기 단추를 표시 하려면 FALSE true로 설정 하면.
+단추를 숨기려면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1361,11 +1361,11 @@ BOOL HideButton(
 
 ### <a name="remarks"></a>설명
 
-둘 이상의 단추 상태를 변경 하려는 경우에 호출 해 보십시오 [SetState](#setstate) 대신 합니다.
+둘 이상의 단추 상태를 변경 하려면 대신 [SetState](#setstate) 를 호출 하는 것이 좋습니다.
 
 ##  <a name="indeterminate"></a>  CToolBarCtrl::Indeterminate
 
-설정 하거나 도구 모음 컨트롤에서 단추 비활성화 된 상태를 지웁니다.
+Toolbar 컨트롤에서 지정 된 단추의 비활성화 된 상태를 설정 하거나 해제 합니다.
 
 ```
 BOOL Indeterminate(
@@ -1376,10 +1376,10 @@ BOOL Indeterminate(
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-비활성화 된 상태 설정 하거나 선택을 취소 하는 단추의 명령 식별자입니다.
+결정 되지 않은 상태를 설정 하거나 취소할 단추의 명령 식별자입니다.
 
 *bIndeterminate*<br/>
-지정한 단추, 확인란의 선택을 취소 하려면 FALSE에 대 한 비활성화 된 상태를 설정 하려면 TRUE입니다.
+지정 된 단추에 대해 비활성화 된 상태를 설정 하려면 TRUE이 고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1387,11 +1387,11 @@ BOOL Indeterminate(
 
 ### <a name="remarks"></a>설명
 
-선택한 텍스트에 굵게 및 일반 문자가 포함 된 워드 프로세서의 방식으로 도구 모음에서 굵게 표시 된 단추 모양을 같은 회색, 결정 되지 않은 단추가 표시 됩니다. 둘 이상의 단추 상태를 변경 하려는 경우에 호출 해 보십시오 [SetState](#setstate) 대신 합니다.
+비활성화 된 단추는 강조 표시 됩니다. 예를 들어 워드 프로세서의 도구 모음에 있는 굵게 단추가 굵은 문자 및 일반 문자를 모두 포함 하는 경우에 표시 됩니다. 둘 이상의 단추 상태를 변경 하려면 대신 [SetState](#setstate) 를 호출 하는 것이 좋습니다.
 
 ##  <a name="insertbutton"></a>  CToolBarCtrl::InsertButton
 
-도구 모음 컨트롤에 단추를 삽입합니다.
+Toolbar 컨트롤에 단추를 삽입 합니다.
 
 ```
 BOOL InsertButton(
@@ -1402,10 +1402,10 @@ BOOL InsertButton(
 ### <a name="parameters"></a>매개 변수
 
 *nIndex*<br/>
-단추의 인덱스 0부터 시작 합니다. 이 함수는이 단추의 왼쪽에 새 단추를 삽입합니다.
+단추의 0부터 시작 하는 인덱스입니다. 이 함수는이 단추의 왼쪽에 새 단추를 삽입 합니다.
 
 *lpButton*<br/>
-주소는 `TBBUTTON` 삽입 단추에 대 한 정보가 포함 된 구조입니다. 참조 [CToolBarCtrl::AddButtons](#addbuttons) 에 대 한 설명은 `TBBUTTON` 구조입니다.
+삽입할 단추에 `TBBUTTON` 대 한 정보를 포함 하는 구조체의 주소입니다. `TBBUTTON` 구조체에 대 한 설명은 [CToolBarCtrl:: addbuttons](#addbuttons) 을 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1413,11 +1413,11 @@ BOOL InsertButton(
 
 ### <a name="remarks"></a>설명
 
-이미지 및/또는 제공한 인덱스가 반드시 이전에 추가 되어 있어야를 도구 모음 컨트롤의 문자열을 사용 하 여 목록을 [AddBitmap](#addbitmap)하십시오 [AddString](#addstring), 및/또는 [AddStrings](#addstrings)합니다.
+사용자가 제공 하는 인덱스를 포함 하는 이미지 및/또는 문자열은 [Addbitmap](#addbitmap), [addbitmap](#addstring)및/또는 [addbitmap](#addstrings)를 사용 하 여 도구 모음 컨트롤의 목록에 이전에 추가 되어야 합니다.
 
 ##  <a name="insertmarkhittest"></a>  CToolBarCtrl::InsertMarkHitTest
 
-도구 모음에 대해 삽입 표시 정보를 검색 합니다.
+도구 모음에서 특정 지점에 대 한 삽입 표시 정보를 검색 합니다.
 
 ```
 BOOL InsertMarkHitTest(
@@ -1428,10 +1428,10 @@ BOOL InsertMarkHitTest(
 ### <a name="parameters"></a>매개 변수
 
 *ppt*<br/>
-에 대 한 포인터를 [지점](/previous-versions/dd162805\(v=vs.85\)) 클라이언트 영역 도구 모음을 기준으로 적중 횟수 테스트를 포함 하는 구조를 조정 합니다.
+도구 모음의 클라이언트 영역을 기준으로 적중 횟수 테스트 좌표를 포함 하는 [점](/previous-versions/dd162805\(v=vs.85\)) 구조에 대 한 포인터입니다.
 
 *ptbim*<br/>
-에 대 한 포인터를 [TBINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-tbinsertmark) 삽입 표시 정보를 수신 하는 구조입니다.
+삽입 표시 정보를 수신 하는 [TBINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-tbinsertmark) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1439,11 +1439,11 @@ BOOL InsertMarkHitTest(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_INSERTMARKHITTEST](/windows/desktop/Controls/tb-insertmarkhittest)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_INSERTMARKHITTEST](/windows/win32/Controls/tb-insertmarkhittest)의 동작을 구현 합니다.
 
 ##  <a name="isbuttonchecked"></a>  CToolBarCtrl::IsButtonChecked
 
-도구 모음 컨트롤에서 지정 된 단추를 검사할지 여부를 결정 합니다.
+Toolbar 컨트롤의 지정 된 단추가 선택 되어 있는지 여부를 확인 합니다.
 
 ```
 BOOL IsButtonChecked(int nID) const;
@@ -1452,19 +1452,19 @@ BOOL IsButtonChecked(int nID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-도구 모음에서 단추 명령 식별자입니다.
+도구 모음에 있는 단추의 명령 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
 
-단추는 선택 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.
+단추가 선택 되어 있으면 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-호출을 고려해 야 [GetState](#getstate) 둘 이상의 단추 상태를 검색 하려는 경우.
+둘 이상의 단추 상태를 검색 하려면 [Getstate](#getstate) 를 호출 하는 것이 좋습니다.
 
 ##  <a name="isbuttonenabled"></a>  CToolBarCtrl::IsButtonEnabled
 
-도구 모음 컨트롤에서 지정 된 단추를 사용할 수 있는지 여부를 결정 합니다.
+Toolbar 컨트롤의 지정 된 단추가 활성화 되어 있는지 여부를 확인 합니다.
 
 ```
 BOOL IsButtonEnabled(int nID) const;
@@ -1473,19 +1473,19 @@ BOOL IsButtonEnabled(int nID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-도구 모음에서 단추 명령 식별자입니다.
+도구 모음에 있는 단추의 명령 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
 
-단추를 사용 하면 0이 아닌 값 그렇지 않으면 0입니다.
+단추를 사용할 수 있는 경우 0이 아닌 값입니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-호출을 고려해 야 [GetState](#getstate) 둘 이상의 단추 상태를 검색 하려는 경우.
+둘 이상의 단추 상태를 검색 하려면 [Getstate](#getstate) 를 호출 하는 것이 좋습니다.
 
 ##  <a name="isbuttonhidden"></a>  CToolBarCtrl::IsButtonHidden
 
-도구 모음 컨트롤에서 지정 된 단추 숨겨지는지 여부를 결정 합니다.
+Toolbar 컨트롤의 지정 된 단추가 숨겨지는지 여부를 결정 합니다.
 
 ```
 BOOL IsButtonHidden(int nID) const;
@@ -1494,19 +1494,19 @@ BOOL IsButtonHidden(int nID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-도구 모음에서 단추 명령 식별자입니다.
+도구 모음에 있는 단추의 명령 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
 
-0이 아닌 단추는 숨겨집니다. 그렇지 않으면 0입니다.
+단추가 숨겨진 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-호출을 고려해 야 [GetState](#getstate) 둘 이상의 단추 상태를 검색 하려는 경우.
+둘 이상의 단추 상태를 검색 하려면 [Getstate](#getstate) 를 호출 하는 것이 좋습니다.
 
 ##  <a name="isbuttonhighlighted"></a>  CToolBarCtrl::IsButtonHighlighted
 
-도구 모음 단추를 강조 표시 상태를 확인 합니다.
+도구 모음 단추의 강조 상태를 확인 합니다.
 
 ```
 BOOL IsButtonHighlighted(int nID) const;
@@ -1515,15 +1515,15 @@ BOOL IsButtonHighlighted(int nID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-[in] 도구 모음 단추의 명령 ID입니다.
+진행 도구 모음 단추의 명령 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
-양의 정수를 단추가 강조 표시 하는 경우 단추 강조 표시가 해제 되 면 0 또는-1 이면 오류가 발생 합니다.
+단추가 강조 표시 되 면 양의 정수이 고, 단추가 강조 표시 되지 않으면 0이 고, 오류가 발생 하면-1입니다.
 
 ##  <a name="isbuttonindeterminate"></a>  CToolBarCtrl::IsButtonIndeterminate
 
-도구 모음 컨트롤에서 지정 된 단추를 비활성화 되지 않았는지 여부를 결정 합니다.
+Toolbar 컨트롤의 지정 된 단추가 비활성화 되어 있는지 여부를 확인 합니다.
 
 ```
 BOOL IsButtonIndeterminate(int nID) const;
@@ -1532,19 +1532,19 @@ BOOL IsButtonIndeterminate(int nID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-[in] 도구 모음에서 단추 명령 식별자입니다.
+진행 도구 모음에 있는 단추의 명령 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
 
-양의 정수 단추 되지 않으며, 경우 0 단추를 비활성화, 아니거나-1 이면 오류가 발생 합니다.
+단추가 결정 되지 않은 경우 양의 정수이 고, 단추가 비활성화 되지 않으면 0이 고, 오류가 발생 하면-1입니다.
 
 ### <a name="remarks"></a>설명
 
-선택한 텍스트를 굵은 문자와 일반 문자를 포함 하는 경우 도구 모음에서 단추를 굵게 표시 된 방식으로 워드 프로세서의 보입니다 같은 흐리게 표시 되 면 비활성화 단추가 표시 됩니다. 호출을 고려해 야 [GetState](#getstate) 둘 이상의 단추 상태를 검색 하려는 경우.
+비활성화 된 단추는 강조 표시 됩니다. 예를 들어 워드 프로세서의 도구 모음에 있는 굵게 단추가 굵은 문자 및 일반 문자를 모두 포함 하는 경우에는이 단추가 흐리게 표시 됩니다. 둘 이상의 단추 상태를 검색 하려면 [Getstate](#getstate) 를 호출 하는 것이 좋습니다.
 
 ##  <a name="isbuttonpressed"></a>  CToolBarCtrl::IsButtonPressed
 
-도구 모음 컨트롤에서 지정 된 단추를 눌렀는지 여부를 결정 합니다.
+Toolbar 컨트롤의 지정 된 단추가 눌러져 있는지 여부를 확인 합니다.
 
 ```
 BOOL IsButtonPressed(int nID) const;
@@ -1553,19 +1553,19 @@ BOOL IsButtonPressed(int nID) const;
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-도구 모음에서 단추 명령 식별자입니다.
+도구 모음에 있는 단추의 명령 식별자입니다.
 
 ### <a name="return-value"></a>반환 값
 
-이 속성을 0이 아닌 단추를 누르는 경우, 그렇지 않으면 0입니다.
+단추를 누르면 0이 아닌 값이 고, 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
 
-호출을 고려해 야 [GetState](#getstate) 둘 이상의 단추 상태를 검색 하려는 경우.
+둘 이상의 단추 상태를 검색 하려면 [Getstate](#getstate) 를 호출 하는 것이 좋습니다.
 
 ##  <a name="loadimages"></a>  CToolBarCtrl::LoadImages
 
-도구 모음 컨트롤의 이미지 목록에 비트맵을 로드합니다.
+비트맵을 도구 모음 컨트롤의 이미지 목록에 로드 합니다.
 
 ```
 void LoadImages(
@@ -1576,27 +1576,27 @@ void LoadImages(
 ### <a name="parameters"></a>매개 변수
 
 *iBitmapID*<br/>
-로드할 이미지를 포함 하는 비트맵의 ID입니다. 사용자 고유의 비트맵 리소스를 지정 하려면이 매개 변수는 비트맵 리소스의 ID를 설정 및 설정 *hInst* NULL로 합니다. 비트맵 리소스를 단일 이미지로 이미지 목록에 추가 됩니다. 설정 하 여 표준, 시스템 정의 비트맵을 추가할 수 있습니다 *hinst* HINST_COMMCTRL 및 다음 Id 중 하나에이 매개 변수를 설정 합니다.
+로드할 이미지를 포함 하는 비트맵의 ID입니다. 사용자 고유의 비트맵 리소스를 지정 하려면이 매개 변수를 비트맵 리소스의 ID로 설정 하 고 *hInst* 를 NULL로 설정 합니다. 비트맵 리소스는 이미지 목록에 단일 이미지로 추가 됩니다. *Hinst* 를 HINST_COMMCTRL로 설정 하 고이 매개 변수를 다음 id 중 하나로 설정 하 여 표준 시스템 정의 비트맵을 추가할 수 있습니다.
 
-|비트맵 ID|설명|
+|비트맵 ID|Description|
 |---------------|-----------------|
-|IDB_HIST_LARGE_COLOR|큰 크기의 비트맵 탐색기|
-|IDB_HIST_SMALL_COLOR|작은 크기의 비트맵 탐색기|
-|IDB_STD_LARGE_COLOR|큰 크기의 표준 비트맵|
+|IDB_HIST_LARGE_COLOR|큰 크기의 탐색기 비트맵|
+|IDB_HIST_SMALL_COLOR|작은 크기로 탐색기 비트맵|
+|IDB_STD_LARGE_COLOR|표준 비트맵 (큰 크기)|
 |IDB_STD_SMALL_COLOR|작은 크기의 표준 비트맵|
-|IDB_VIEW_LARGE_COLOR|크게에서 보기 비트맵|
-|IDB_VIEW_SMALL_COLOR|작은 크기의 비트맵 보기|
+|IDB_VIEW_LARGE_COLOR|큰 크기로 비트맵 보기|
+|IDB_VIEW_SMALL_COLOR|작은 크기로 비트맵 보기|
 
 *hinst*<br/>
-호출 하는 응용 프로그램 인스턴스 핸들입니다. 이 매개 변수는 HINST_COMMCTRL 표준 이미지 목록을 로드할 수 있습니다.
+호출 하는 응용 프로그램에 대 한 프로그램 인스턴스 핸들입니다. 표준 이미지 목록을 로드 하기 위해이 매개 변수를 HINST_COMMCTRL 수 있습니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_LOADIMAGES](/windows/desktop/Controls/tb-loadimages)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_LOADIMAGES](/windows/win32/Controls/tb-loadimages)의 동작을 구현 합니다.
 
 ##  <a name="mapaccelerator"></a>  CToolBarCtrl::MapAccelerator
 
-도구 모음 단추 액셀러레이터 문자가 매핑합니다.
+액셀러레이터 키 문자를 도구 모음 단추에 매핑합니다.
 
 ```
 BOOL MapAccelerator(
@@ -1607,10 +1607,10 @@ BOOL MapAccelerator(
 ### <a name="parameters"></a>매개 변수
 
 *chAccel*<br/>
-매핑할 가속기 문자입니다. 이 문자는 단추의 텍스트에 밑줄이 표시 되는 동일한 문자입니다.
+매핑할 액셀러레이터 문자입니다. 이 문자는 단추의 텍스트에서 밑줄이 그어진 동일한 문자입니다.
 
 *pIDBtn*<br/>
-에 지정 된 액셀러레이터 키에 해당 하는 단추의 명령 식별자를 수신 하는 UINT에 대 한 포인터 *chAccel*합니다.
+*ChAccel*에 지정 된 액셀러레이터에 해당 하는 단추의 명령 식별자를 받는 UINT에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1618,11 +1618,11 @@ BOOL MapAccelerator(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_MAPACCELERATOR](/windows/desktop/Controls/tb-mapaccelerator)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_MAPACCELERATOR](/windows/win32/Controls/tb-mapaccelerator)의 동작을 구현 합니다.
 
 ##  <a name="markbutton"></a>  CToolBarCtrl::MarkButton
 
-도구 모음 컨트롤에서 지정 된 단추 강조 표시 상태를 설정합니다.
+Toolbar 컨트롤에서 지정 된 단추의 강조 상태를 설정 합니다.
 
 ```
 BOOL MarkButton(
@@ -1636,7 +1636,7 @@ BOOL MarkButton(
 단추 식별자입니다.
 
 *fHighlight*<br/>
-설정할 강조 표시 상태를 지정 합니다. 기본적으로 TRUE입니다. 단추를 FALSE로 설정 기본 상태로 설정 된 경우
+설정할 강조 표시 상태를 지정 합니다. 기본적으로 TRUE입니다. FALSE로 설정 하면 단추가 기본 상태로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1644,11 +1644,11 @@ BOOL MarkButton(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_MARKBUTTON](/windows/desktop/Controls/tb-markbutton)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_MARKBUTTON](/windows/win32/Controls/tb-markbutton)의 동작을 구현 합니다.
 
 ##  <a name="movebutton"></a>  CToolBarCtrl::MoveButton
 
-다른 한 인덱스에서 단추를 이동합니다.
+한 인덱스에서 다른 인덱스로 단추를 이동 합니다.
 
 ```
 BOOL MoveButton(
@@ -1659,10 +1659,10 @@ BOOL MoveButton(
 ### <a name="parameters"></a>매개 변수
 
 *nOldPos*<br/>
-이동할 단추의 0부터 시작 하는 인덱스입니다.
+이동할 단추의 인덱스 (0부터 시작)입니다.
 
 *nNewPos*<br/>
-단추의 대상의 0부터 시작 하는 인덱스입니다.
+단추 대상의 인덱스 (0부터 시작)입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1670,11 +1670,11 @@ BOOL MoveButton(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_MOVEBUTTON](/windows/desktop/Controls/tb-movebutton)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_MOVEBUTTON](/windows/win32/Controls/tb-movebutton)의 동작을 구현 합니다.
 
 ##  <a name="pressbutton"></a>  CToolBarCtrl::PressButton
 
-키를 누르거나 도구 모음 컨트롤에서 지정 된 단추를 해제 합니다.
+Toolbar 컨트롤에서 지정 된 단추를 누르거나 해제 합니다.
 
 ```
 BOOL PressButton(int nID, BOOL bPress = TRUE);
@@ -1683,24 +1683,24 @@ BOOL PressButton(int nID, BOOL bPress = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *nID*<br/>
-[in] 단추를 누르거나 놓을의 명령 식별자입니다.
+진행 누르거나 해제할 단추의 명령 식별자입니다.
 
 *bPress*<br/>
-[in] 지정 된 단추를 눌러 TRUE 지정 된 단추를 해제 하려면 FALSE입니다. 기본값은 TRUE입니다.
+진행 지정 된 단추를 누르면 TRUE이 고, FALSE 이면 지정 된 단추를 해제 합니다. 기본값은 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
 
-메서드가 성공 하면 TRUE입니다. 그렇지 않으면 FALSE입니다.
+메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-둘 이상의 단추 상태를 변경 하려는 경우에 호출 해 보십시오 [SetState](#setstate) 대신 합니다.
+둘 이상의 단추 상태를 변경 하려면 대신 [SetState](#setstate) 를 호출 하는 것이 좋습니다.
 
-이 메서드는 전송 된 [TB_PRESSBUTTON](/windows/desktop/Controls/tb-pressbutton) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [TB_PRESSBUTTON](/windows/win32/Controls/tb-pressbutton) 메시지를 보냅니다.
 
 ##  <a name="replacebitmap"></a>  CToolBarCtrl::ReplaceBitmap
 
-현재 도구 모음 컨트롤에서 기존 비트맵 이미지를 새 비트맵을 바꿉니다.
+현재 toolbar 컨트롤의 기존 비트맵을 새 비트맵으로 바꿉니다.
 
 ```
 BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
@@ -1708,27 +1708,27 @@ BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
-|*pReplaceBitmap*|[in] 에 대 한 포인터를 [TBREPLACEBITMAP](/windows/desktop/api/commctrl/ns-commctrl-tbreplacebitmap) 교체 비트맵 및 새로운 비트맵에 설명 하는 구조입니다.|
+|*pReplaceBitmap*|진행 대체할 비트맵 및 새 비트맵을 설명 하는 [TBREPLACEBITMAP](/windows/win32/api/commctrl/ns-commctrl-tbreplacebitmap) 구조체에 대 한 포인터입니다.|
 
 ### <a name="return-value"></a>반환 값
 
-이 메서드는 성공 하는 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
+이 메서드가 성공 하면 TRUE이 고, 그렇지 않으면입니다. 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [TB_REPLACEBITMAP](/windows/desktop/Controls/tb-replacebitmap) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [TB_REPLACEBITMAP](/windows/win32/Controls/tb-replacebitmap) 메시지를 보냅니다.
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 다른 비트맵을 사용 하 여 표준 도구 모음에 대 한 비트맵을 대체합니다.
+다음 코드 예제에서는 표준 도구 모음의 비트맵을 다른 비트맵으로 바꿉니다.
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_4.cpp)]
 
 ##  <a name="restorestate"></a>  CToolBarCtrl::RestoreState
 
-매개 변수로 지정 된 레지스트리 위치에서 도구 모음 컨트롤의 상태를 복원 합니다.
+매개 변수로 지정 된 레지스트리의 위치에서 toolbar 컨트롤의 상태를 복원 합니다.
 
 ```
 void RestoreState(
@@ -1740,7 +1740,7 @@ void RestoreState(
 ### <a name="parameters"></a>매개 변수
 
 *hKeyRoot*<br/>
-레지스트리 또는 다음 미리 정의 된 예약 된 핸들 값의 현재 열려 있는 키를 식별합니다.
+레지스트리에서 현재 열려 있는 키 또는 미리 정의 된 다음 예약 된 핸들 값을 식별 합니다.
 
 - HKEY_CLASSES_ROOT
 
@@ -1751,14 +1751,14 @@ void RestoreState(
 - HKEY_USERS
 
 *lpszSubKey*<br/>
-값에 연결 된 하위 키의 이름이 포함 된 null로 끝나는 문자열을 가리킵니다. 이 매개 변수는 null 또는 빈 문자열에 대 한 포인터 수 있습니다. 값으로 식별 된 키에 추가할 매개 변수가 NULL 인 경우는 *hKeyRoot* 매개 변수입니다.
+값이 연결 된 하위 키의 이름을 포함 하는 null로 끝나는 문자열을 가리킵니다. 이 매개 변수는 null 이거나 빈 문자열에 대 한 포인터 일 수 있습니다. 매개 변수가 NULL 인 경우 값은 *Hkeyroot* 매개 변수로 식별 되는 키에 추가 됩니다.
 
 *lpszValueName*<br/>
-검색할 값의 이름을 포함 하는 문자열을 가리킵니다. 이 이름의 값을 이미 키에 없는 경우 함수 키에 추가 됩니다.
+검색할 값의 이름을 포함 하는 문자열을 가리킵니다. 이 이름을 가진 값이 키에 아직 없으면 함수는 키에이를 추가 합니다.
 
 ##  <a name="savestate"></a>  CToolBarCtrl::SaveState
 
-매개 변수로 지정 된 레지스트리 위치에 도구 모음 컨트롤의 상태를 저장 합니다.
+매개 변수에서 지정한 레지스트리의 위치에 도구 모음 컨트롤의 상태를 저장 합니다.
 
 ```
 void SaveState(
@@ -1770,7 +1770,7 @@ void SaveState(
 ### <a name="parameters"></a>매개 변수
 
 *hKeyRoot*<br/>
-레지스트리 또는 다음 미리 정의 된 예약 된 핸들 값의 현재 열려 있는 키를 식별합니다.
+레지스트리에서 현재 열려 있는 키 또는 미리 정의 된 다음 예약 된 핸들 값을 식별 합니다.
 
 - HKEY_CLASSES_ROOT
 
@@ -1781,14 +1781,14 @@ void SaveState(
 - HKEY_USERS
 
 *lpszSubKey*<br/>
-값에 연결 된 하위 키의 이름이 포함 된 null로 끝나는 문자열을 가리킵니다. 이 매개 변수는 null 또는 빈 문자열에 대 한 포인터 수 있습니다. 값으로 식별 된 키에 추가할 매개 변수가 NULL 인 경우는 *hKeyRoot* 매개 변수입니다.
+값이 연결 된 하위 키의 이름을 포함 하는 null로 끝나는 문자열을 가리킵니다. 이 매개 변수는 null 이거나 빈 문자열에 대 한 포인터 일 수 있습니다. 매개 변수가 NULL 인 경우 값은 *Hkeyroot* 매개 변수로 식별 되는 키에 추가 됩니다.
 
 *lpszValueName*<br/>
-설정할 값의 이름을 포함 하는 문자열을 가리킵니다. 이 이름의 값을 이미 키에 없는 경우 함수 키에 추가 됩니다.
+설정할 값의 이름을 포함 하는 문자열을 가리킵니다. 이 이름을 가진 값이 키에 아직 없으면 함수는 키에이를 추가 합니다.
 
 ##  <a name="setanchorhighlight"></a>  CToolBarCtrl::SetAnchorHighlight
 
-도구 모음에 대 한 설정 앵커 강조 표시를 설정 합니다.
+도구 모음에 대 한 앵커 강조 표시 설정을 설정 합니다.
 
 ```
 BOOL SetAnchorHighlight(BOOL fAnchor = TRUE);
@@ -1797,19 +1797,19 @@ BOOL SetAnchorHighlight(BOOL fAnchor = TRUE);
 ### <a name="parameters"></a>매개 변수
 
 *fAnchor*<br/>
-[in] 경우 앵커 강조 표시 설정 여부를 지정 합니다. 이 값이 0이 아닌 값 이면 앵커 강조 표시 될 예정입니다. 이 값이 0 이면 앵커 강조 표시를 사용할 수 없습니다.
+진행 앵커 강조 표시를 사용 하거나 사용 하지 않을 지 여부를 지정 합니다. 이 값이 0이 아니면 앵커 강조 표시를 사용 하도록 설정 됩니다. 이 값이 0 이면 앵커 강조 표시를 사용 하지 않도록 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
-이전 앵커 설정입니다. 강조 표시를 사용 하는 경우이 값은 0이 아닌 값입니다. 강조 표시 된 사용할 수 없는 경우이 값이 0입니다.
+이전 앵커 설정입니다. 강조 표시를 사용 하는 경우이 값은 0이 아닙니다. 강조 표시를 사용 하도록 설정 하지 않은 경우이 값은 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 Win32 메시지의 동작을 구현 [TB_SETANCHORHIGHLIGHT](/windows/desktop/Controls/tb-setanchorhighlight)Windows SDK에 설명 된 대로 합니다.
+이 메서드는 Windows SDK 설명 된 대로 Win32 메시지 [TB_SETANCHORHIGHLIGHT](/windows/win32/Controls/tb-setanchorhighlight)의 동작을 구현 합니다.
 
 ##  <a name="setbitmapsize"></a>  CToolBarCtrl::SetBitmapSize
 
-Toolbar 컨트롤에 추가할 실제 비트맵 이미지의 크기를 설정 합니다.
+도구 모음 컨트롤에 추가할 실제 비트맵 이미지의 크기를 설정 합니다.
 
 ```
 BOOL SetBitmapSize(CSize size);
@@ -1818,7 +1818,7 @@ BOOL SetBitmapSize(CSize size);
 ### <a name="parameters"></a>매개 변수
 
 *size*<br/>
-너비 및 비트맵 이미지의 픽셀에서 높이입니다.
+비트맵 이미지의 너비와 높이 (픽셀)입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1826,11 +1826,11 @@ BOOL SetBitmapSize(CSize size);
 
 ### <a name="remarks"></a>설명
 
-도구 모음에 모든 비트맵을 추가 하기 전에이 함수를 호출 해야 합니다. 응용 프로그램은 비트맵 크기를 명시적으로 설정 하지 않으면, 해당 기본값은 16 x 15 픽셀입니다.
+도구 모음에 비트맵을 추가 하기 전에만이 함수를 호출 해야 합니다. 응용 프로그램에서 비트맵 크기를 명시적으로 설정 하지 않은 경우 기본값은 16 x 15 픽셀입니다.
 
 ##  <a name="setbuttoninfo"></a>  CToolBarCtrl::SetButtonInfo
 
-도구 모음에서 기존 단추에 대 한 정보를 설정합니다.
+도구 모음에서 기존 단추에 대 한 정보를 설정 합니다.
 
 ```
 BOOL SetButtonInfo(
@@ -1844,7 +1844,7 @@ BOOL SetButtonInfo(
 단추 식별자입니다.
 
 *ptbbi*<br/>
-에 대 한 포인터를 [TBBUTTONINFO](/windows/desktop/api/commctrl/ns-commctrl-tbbuttoninfoa) 구조 단추 정보를 수신 합니다.
+단추 정보를 수신 하는 [TBBUTTONINFO](/windows/win32/api/commctrl/ns-commctrl-tbbuttoninfow) 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1852,11 +1852,11 @@ BOOL SetButtonInfo(
 
 ### <a name="remarks"></a>설명
 
-Win32 메시지의 동작을 구현 하는 멤버 함수 [TB_SETBUTTONINFO](/windows/desktop/Controls/tb-setbuttoninfo)Windows SDK에 설명 된 대로 합니다.
+멤버 함수는 Windows SDK에 설명 된 대로 Win32 message [TB_SETBUTTONINFO](/windows/win32/Controls/tb-setbuttoninfo)의 동작을 구현 합니다.
 
 ##  <a name="setbuttonsize"></a>  CToolBarCtrl::SetButtonSize
 
-도구 모음 컨트롤의 단추 크기를 설정합니다.
+Toolbar 컨트롤에 있는 단추의 크기를 설정 합니다.
 
 ```
 BOOL SetButtonSize(CSize size);
@@ -1865,7 +1865,7 @@ BOOL SetButtonSize(CSize size);
 ### <a name="parameters"></a>매개 변수
 
 *size*<br/>
-너비 및 높이 픽셀 단추입니다.
+단추의 너비와 높이 (픽셀)입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1873,15 +1873,15 @@ BOOL SetButtonSize(CSize size);
 
 ### <a name="remarks"></a>설명
 
-단추 크기 이상 포함 하는 비트맵 크기 만큼 큰 여야 합니다. 도구 모음에 모든 비트맵을 추가 하기 전에이 함수를 호출 해야 합니다. 응용 프로그램 단추 크기를 명시적으로 설정 하지 않으면, 기본값으로 사용 하 여 24 x 22 픽셀로 됩니다.
+단추 크기는 항상 포함 하는 비트맵 크기 만큼 커야 합니다. 도구 모음에 비트맵을 추가 하기 전에만이 함수를 호출 해야 합니다. 응용 프로그램에서 단추 크기를 명시적으로 설정 하지 않은 경우 기본값은 24 x 22 픽셀입니다.
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CToolBar::GetToolBarCtrl](../../mfc/reference/ctoolbar-class.md#gettoolbarctrl)합니다.
+  [CToolBar:: GetToolBarCtrl](../../mfc/reference/ctoolbar-class.md#gettoolbarctrl)의 예제를 참조 하세요.
 
 ##  <a name="setbuttonstructsize"></a>  CToolBarCtrl::SetButtonStructSize
 
-크기를 지정 합니다 `TBBUTTON` 구조입니다.
+`TBBUTTON` 구조체의 크기를 지정 합니다.
 
 ```
 void SetButtonStructSize(int nSize);
@@ -1890,17 +1890,17 @@ void SetButtonStructSize(int nSize);
 ### <a name="parameters"></a>매개 변수
 
 *nSize*<br/>
-크기 (바이트)의 `TBBUTTON` 구조입니다.
+`TBBUTTON` 구조의 크기 (바이트)입니다.
 
 ### <a name="remarks"></a>설명
 
-추가 데이터를 저장 하려는 경우는 `TBBUTTON` 구조 수 파생에서 새 구조 `TBBUTTON`, 멤버를 추가 하면 필요한 또는 포함 하는 새 구조를 만들를 `TBBUTTON` 첫 번째 멤버로 구조체. 다음 도구 모음 컨트롤에서 새 구조체의 크기를이 함수를 호출 합니다.
+`TBBUTTON` 구조에 추가 데이터를 저장 하려는 경우에서 `TBBUTTON`새 구조를 파생 하거나 필요한 멤버를 추가 하거나 구조를 `TBBUTTON` 첫 번째 멤버로 포함 하는 새 구조체를 만들 수 있습니다. 그런 다음이 함수를 호출 하 여 도구 모음에서 새 구조체의 크기를 제어할 수 있습니다.
 
-참조 [CToolBarCtrl::AddButtons](#addbuttons) 대 한 자세한 내용은 `TBBUTTON` 구조입니다.
+`TBBUTTON` 구조체에 대 한 자세한 내용은 [CToolBarCtrl:: addbuttons](#addbuttons) 를 참조 하세요.
 
 ##  <a name="setbuttonwidth"></a>  CToolBarCtrl::SetButtonWidth
 
-도구 모음 컨트롤의 최소 및 최대 단추 너비를 설정합니다.
+Toolbar 컨트롤의 최소 및 최대 단추 너비를 설정 합니다.
 
 ```
 BOOL SetButtonWidth(
@@ -1911,10 +1911,10 @@ BOOL SetButtonWidth(
 ### <a name="parameters"></a>매개 변수
 
 *cxMin*<br/>
-최소 단추 너비 (픽셀)에서입니다. 도구 모음 단추는이 값 보다 더 작게 안 됩니다.
+최소 단추 너비 (픽셀)입니다. 도구 모음 단추는이 값 보다 작을 수 없습니다.
 
 *cxMax*<br/>
-최대 단추 너비 (픽셀)에서입니다. 단추 텍스트 너무 넓은 경우 컨트롤 줄임표 지점을 사용 하 여 표시 합니다.
+최대 단추 너비 (픽셀)입니다. 단추 텍스트가 너무 넓은 경우 컨트롤에는 줄임표 점이 표시 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1922,11 +1922,11 @@ BOOL SetButtonWidth(
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_SETBUTTONWIDTH](/windows/desktop/Controls/tb-setbuttonwidth)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_SETBUTTONWIDTH](/windows/win32/Controls/tb-setbuttonwidth)의 동작을 구현 합니다.
 
 ##  <a name="setcmdid"></a>  CToolBarCtrl::SetCmdID
 
-지정 된 단추를 누를 때 소유자 창에 보낼 명령 식별자를 설정 합니다.
+지정 된 단추를 누를 때 소유자 창에 전송 되는 명령 식별자를 설정 합니다.
 
 ```
 BOOL SetCmdID(
@@ -1937,18 +1937,18 @@ BOOL SetCmdID(
 ### <a name="parameters"></a>매개 변수
 
 *nIndex*<br/>
-단추 명령 ID가 설정의 0부터 시작 하는 인덱스입니다.
+해당 명령 ID를 설정할 단추의 인덱스 (0부터 시작)입니다.
 
 *nID*<br/>
-선택한 단추 설정 명령 ID입니다.
+선택한 단추를 설정할 명령 ID입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 0이 아닌 반환 그렇지 않으면 0입니다.
+성공 하면 0이 아닌 값을 반환 합니다. 그렇지 않으면 0입니다.
 
 ##  <a name="setcolorscheme"></a>  CToolBarCtrl::SetColorScheme
 
-현재 도구 모음 컨트롤의 색 구성표를 설정합니다.
+현재 toolbar 컨트롤의 색 구성표를 설정 합니다.
 
 ```
 void SetColorScheme(const COLORSCHEME* lpColorScheme);
@@ -1956,25 +1956,25 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
-|*lpColorScheme*|[in] 에 대 한 포인터를 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) 강조 표시 색 및 도구 모음 컨트롤의 그림자 색을 설명 하는 구조입니다.|
+|*lpColorScheme*|진행 Toolbar 컨트롤의 강조 색 및 그림자 색을 설명 하는 [COLORSCHEME](/windows/win32/api/commctrl/ns-commctrl-colorscheme) 구조체에 대 한 포인터입니다.|
 
 ### <a name="remarks"></a>설명
 
-Windows Vista 시각 테마 설정 된 경우 효과가 없습니다.
+Windows Vista 시각적 테마를 설정 하는 경우에는이 방법을 적용할 수 없습니다.
 
-이 메서드는 전송 된 [TB_SETCOLORSCHEME](/windows/desktop/Controls/tb-setcolorscheme) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [TB_SETCOLORSCHEME](/windows/win32/Controls/tb-setcolorscheme) 메시지를 보냅니다.
 
 ### <a name="example"></a>예제
 
-다음 코드 예제는 현재 도구 모음 컨트롤에 대 한 색 구성표를 설정합니다. 코드 예제에서는 빨간색 각 도구 단추의 왼쪽 및 위쪽 가장자리와 오른쪽 아래 모서리 파란색입니다. 사용자가 단추를 누를 때 단추의 빨간색 가장자리 파란색 켜고 파란색 가장자리 빨간색으로 바뀝니다.
+다음 코드 예제에서는 현재 toolbar 컨트롤에 대 한 색 구성표를 설정 합니다. 이 코드 예제에서는 각 도구 단추의 왼쪽과 위쪽 가장자리를 빨강 및 오른쪽 및 아래쪽 가장자리 파란색으로 만듭니다. 사용자가 단추를 누르면 단추의 빨간색 가장자리가 파란색으로 바뀌고 파란색 가장자리가 빨간색으로 바뀝니다.
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#3](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_5.cpp)]
 
 ##  <a name="setdisabledimagelist"></a>  CToolBarCtrl::SetDisabledImageList
 
-사용 하지 않도록 설정 하는 표시 단추를 도구 모음 컨트롤은 사용 된 이미지 목록을 설정 합니다.
+Toolbar 컨트롤이 비활성화 된 단추를 표시 하는 데 사용할 이미지 목록을 설정 합니다.
 
 ```
 CImageList* SetDisabledImageList(CImageList* pImageList);
@@ -1983,19 +1983,19 @@ CImageList* SetDisabledImageList(CImageList* pImageList);
 ### <a name="parameters"></a>매개 변수
 
 *pImageList*<br/>
-에 대 한 포인터를 `CImageList` 단추 이미지를 사용 하지 않도록 설정 하는 표시 하려면 도구 모음 컨트롤에서 사용할 이미지를 포함 하는 개체입니다.
+도구 모음 컨트롤에서 `CImageList` 비활성화 된 단추 이미지를 표시 하는 데 사용할 이미지를 포함 하는 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 단추 이미지를 사용 하지 않도록 설정 하는 표시 하려면 도구 모음 컨트롤에서 사용 했던 개체입니다.
+Toolbar 컨트롤에서 사용 하지 않도록 설정 된 단추 이미지를 표시 하기 위해 이전에 사용한 [CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_SETDISABLEDIMAGELIST](/windows/desktop/Controls/tb-setdisabledimagelist)Windows SDK에 설명 된 대로 합니다. MFC 구현 `SetDisabledImageList` 사용을 `CImageList` 도구 모음 컨트롤의 비활성화 된 단추를 포함 하는 개체 이미지, 이미지 목록에 대 한 핸들 대신 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_SETDISABLEDIMAGELIST](/windows/win32/Controls/tb-setdisabledimagelist)의 동작을 구현 합니다. 의 `SetDisabledImageList` MFC 구현에서는 이미지 목록 `CImageList` 에 대 한 핸들이 아니라 toolbar 컨트롤의 비활성화 된 단추 이미지를 포함 하는 개체를 사용 합니다.
 
 ##  <a name="setdrawtextflags"></a>  CToolBarCtrl::SetDrawTextFlags
 
-Win32 함수에 플래그를 설정 합니다 [DrawText](/windows/desktop/api/winuser/nf-winuser-drawtext)에 설정 된 플래그에 따라 형식이 지정된 된 사각형에서 텍스트를 그리는 데 사용 됩니다.
+플래그가 설정 된 방식에 따라 형식이 지정 된 사각형에 텍스트를 그리는 데 사용 되는 Win32 함수 [DrawText](/windows/win32/api/winuser/nf-winuser-drawtext)에 플래그를 설정 합니다.
 
 ```
 DWORD SetDrawTextFlags(
@@ -2006,22 +2006,22 @@ DWORD SetDrawTextFlags(
 ### <a name="parameters"></a>매개 변수
 
 *dwMask*<br/>
-하나 이상의 Win32 함수에 지정 된 된 DT_ 플래그의 조합을 [DrawText](/windows/desktop/api/winuser/nf-winuser-drawtext)에 있는 비트를 나타내는 *dwDTFlags* 는 텍스트를 그릴 때 사용 됩니다.
+Win32 함수 [DrawText](/windows/win32/api/winuser/nf-winuser-drawtext)에 지정 된 하나 이상의 DT_ 플래그의 조합으로, 텍스트를 그릴 때 사용 되는 *dwdtflags* 의 비트를 나타냅니다.
 
 *dwDTFlags*<br/>
-Win32 함수에 지정 된 된 DT_ 플래그 중 하나 이상을 조합 `DrawText`을 나타내는, 단추 텍스트를 그리는 방법입니다. 이 값이 전달 `DrawText` 단추 텍스트를 그릴 때.
+Win32 함수 `DrawText`에 지정 된 하나 이상의 DT_ 플래그를 조합 하 여 단추 텍스트를 그리는 방법을 표시 합니다. 이 값은 단추 텍스트 `DrawText` 를 그릴 때에 전달 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
-이전 텍스트 그리기를 포함 하는 DWORD 플래그를 지정 합니다.
+이전 텍스트 그리기 플래그를 포함 하는 DWORD입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_SETDRAWTEXTFLAGS](/windows/desktop/Controls/tb-setdrawtextflags)Windows SDK에 설명 된 대로 합니다. 이 멤버 함수는 Win32 함수에 플래그를 설정 합니다. `DrawText`에 설정 된 플래그에 따라 형식이 지정된 된 사각형에 텍스트를 그립니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_SETDRAWTEXTFLAGS](/windows/win32/Controls/tb-setdrawtextflags)의 동작을 구현 합니다. 이 멤버 함수는 플래그가 설정 된 방식에 따라 `DrawText`서식이 지정 된 사각형에 텍스트를 그리는 Win32 함수에서 플래그를 설정 합니다.
 
 ##  <a name="setextendedstyle"></a>  CToolBarCtrl::SetExtendedStyle
 
-도구 모음 컨트롤에 대 한 확장된 스타일을 설정합니다.
+Toolbar 컨트롤에 대 한 확장 스타일을 설정 합니다.
 
 ```
 DWORD SetExtendedStyle(DWORD dwExStyle);
@@ -2030,19 +2030,19 @@ DWORD SetExtendedStyle(DWORD dwExStyle);
 ### <a name="parameters"></a>매개 변수
 
 *dwExStyle*<br/>
-새로운 확장된 스타일을 지정 하는 값입니다. 이 매개 변수 스타일을 확장 하는 도구 모음에서의 조합일 수 있습니다.
+새 확장 스타일을 지정 하는 값입니다. 이 매개 변수는 도구 모음 확장 스타일의 조합일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
-이전 나타내는 DWORD 확장 스타일입니다. 스타일의 목록은 참조 하세요 [도구 모음 확장 스타일](/windows/desktop/Controls/toolbar-extended-styles), Windows sdk에서입니다.
+이전 확장 스타일을 나타내는 DWORD입니다. 스타일 목록은 Windows SDK의 [도구 모음 확장 스타일](/windows/win32/Controls/toolbar-extended-styles)을 참조 하세요.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_SETEXTENDEDSTYLE](/windows/desktop/Controls/tb-setextendedstyle)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_SETEXTENDEDSTYLE](/windows/win32/Controls/tb-setextendedstyle)의 동작을 구현 합니다.
 
 ##  <a name="sethotimagelist"></a>  CToolBarCtrl::SetHotImageList
 
-도구 모음 컨트롤에서 "핫" 단추가 표시에 사용 된 이미지 목록을 설정 합니다.
+도구 모음 컨트롤이 "핫" 단추를 표시 하는 데 사용할 이미지 목록을 설정 합니다.
 
 ```
 CImageList* SetHotImageList(CImageList* pImageList);
@@ -2051,21 +2051,21 @@ CImageList* SetHotImageList(CImageList* pImageList);
 ### <a name="parameters"></a>매개 변수
 
 *pImageList*<br/>
-에 대 한 포인터를 `CImageList` 핫 단추 이미지를 표시 하려면 도구 모음 컨트롤에서 사용할 이미지를 포함 하는 개체입니다.
+도구 모음 컨트롤에서 `CImageList` 핫 단추 이미지를 표시 하는 데 사용할 이미지를 포함 하는 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 핫 단추 이미지를 표시 하려면 도구 모음 컨트롤에서 이전에 사용 된 개체입니다.
+도구 모음 컨트롤에서 핫 단추 이미지를 표시 하기 위해 이전에 사용한 [CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_SETHOTIMAGELIST](/windows/desktop/Controls/tb-sethotimagelist)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_SETHOTIMAGELIST](/windows/win32/Controls/tb-sethotimagelist)의 동작을 구현 합니다.
 
-MFC 구현 `SetHotImageList` 사용을 `CImageList` 도구 모음 컨트롤의 핫 단추가 들어 있는 개체 이미지, 이미지 목록에 대 한 핸들 대신 합니다. 포인터 위에 때 활성 단추를 강조 표시 됩니다.
+의 `SetHotImageList` MFC 구현에서는 이미지 목록 `CImageList` 에 대 한 핸들이 아니라 toolbar 컨트롤의 핫 단추 이미지를 포함 하는 개체를 사용 합니다. 포인터가 위에 있을 때 바로 가기 단추가 강조 표시 됩니다.
 
 ##  <a name="sethotitem"></a>  CToolBarCtrl::SetHotItem
 
-도구 모음에서 활성 항목을 설정합니다.
+도구 모음에서 핫 항목을 설정 합니다.
 
 ```
 int SetHotItem(int nHot);
@@ -2074,19 +2074,19 @@ int SetHotItem(int nHot);
 ### <a name="parameters"></a>매개 변수
 
 *nHot*<br/>
-핫 변경 되는 항목의 0부터 시작 인덱스 번호입니다. 이 값이-1 이면 항목이 없는 핫 됩니다.
+핫으로 만들 항목의 인덱스 번호 (0부터 시작)입니다. 이 값이-1 이면 항목이 활성 상태로 되지 않습니다.
 
 ### <a name="return-value"></a>반환 값
 
-인덱스는 이전 바로 가기 항목 또는 핫 항목이 없는 경우-1입니다.
+이전 핫 항목의 인덱스 이거나, 활성 항목이 없으면-1입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_SETHOTITEM](/windows/desktop/Controls/tb-sethotitem)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_SETHOTITEM](/windows/win32/Controls/tb-sethotitem)의 동작을 구현 합니다.
 
 ##  <a name="setimagelist"></a>  CToolBarCtrl::SetImageList
 
-도구 모음에서 해당 기본 상태인 단추 표시에 사용 된 이미지 목록을 설정 합니다.
+도구 모음에서 기본 상태의 단추를 표시 하는 데 사용할 이미지 목록을 설정 합니다.
 
 ```
 CImageList* SetImageList(CImageList* pImageList);
@@ -2095,21 +2095,21 @@ CImageList* SetImageList(CImageList* pImageList);
 ### <a name="parameters"></a>매개 변수
 
 *pImageList*<br/>
-에 대 한 포인터를 `CImageList` 해당 기본 상태인 단추 이미지를 표시 하려면 도구 모음 컨트롤에서 사용할 이미지를 포함 하는 개체입니다.
+Toolbar 컨트롤에서 기본 `CImageList` 상태로 단추 이미지를 표시 하는 데 사용할 이미지를 포함 하는 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 해당 기본 상태인 단추 이미지를 표시 하려면 도구 모음 컨트롤에서 이전에 사용 된 개체입니다.
+Toolbar 컨트롤이 기본 상태로 단추 이미지를 표시 하기 위해 이전에 사용 했던 [CImageList](../../mfc/reference/cimagelist-class.md) 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_SETIMAGELIST](/windows/desktop/Controls/tb-setimagelist)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_SETIMAGELIST](/windows/win32/Controls/tb-setimagelist)의 동작을 구현 합니다.
 
-MFC 구현 `SetImageList` 사용을 `CImageList` 도구 모음 컨트롤의 단추를 포함 하는 개체 이미지, 이미지 목록에 대 한 핸들 대신 합니다.
+의 `SetImageList` MFC 구현에서는 이미지 목록 `CImageList` 에 대 한 핸들이 아니라 toolbar 컨트롤의 단추 이미지를 포함 하는 개체를 사용 합니다.
 
 ##  <a name="setindent"></a>  CToolBarCtrl::SetIndent
 
-도구 모음 컨트롤에서 첫 번째 단추에 대 한 들여쓰기를 설정합니다.
+Toolbar 컨트롤의 첫 번째 단추에 대 한 들여쓰기를 설정 합니다.
 
 ```
 BOOL SetIndent(int iIndent);
@@ -2118,7 +2118,7 @@ BOOL SetIndent(int iIndent);
 ### <a name="parameters"></a>매개 변수
 
 *iIndent*<br/>
-들여쓰기를 픽셀 단위로 지정 하는 값입니다.
+들여쓰기 (픽셀)를 지정 하는 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2126,7 +2126,7 @@ BOOL SetIndent(int iIndent);
 
 ##  <a name="setinsertmark"></a>  CToolBarCtrl::SetInsertMark
 
-도구 모음에 대 한 현재 삽입 표시를 설정합니다.
+도구 모음에 대 한 현재 삽입 표시를 설정 합니다.
 
 ```
 void SetInsertMark(TBINSERTMARK* ptbim);
@@ -2135,11 +2135,11 @@ void SetInsertMark(TBINSERTMARK* ptbim);
 ### <a name="parameters"></a>매개 변수
 
 *ptbim*<br/>
-에 대 한 포인터를 [TBINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-tbinsertmark) 삽입 표시를 포함 하는 구조입니다.
+삽입 표시를 포함 하는 [TBINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-tbinsertmark) 구조체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_SETINSERTMARK](/windows/desktop/Controls/tb-setinsertmark)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_SETINSERTMARK](/windows/win32/Controls/tb-setinsertmark)의 동작을 구현 합니다.
 
 ##  <a name="setinsertmarkcolor"></a>  CToolBarCtrl::SetInsertMarkColor
 
@@ -2160,11 +2160,11 @@ COLORREF SetInsertMarkColor(COLORREF clrNew);
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 Win32 메시지의 동작을 구현 [TB_SETINSERTMARKCOLOR](/windows/desktop/Controls/tb-setinsertmarkcolor)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 Windows SDK에 설명 된 대로 Win32 메시지 [TB_SETINSERTMARKCOLOR](/windows/win32/Controls/tb-setinsertmarkcolor)의 동작을 구현 합니다.
 
 ##  <a name="setmaxtextrows"></a>  CToolBarCtrl::SetMaxTextRows
 
-도구 모음 단추에 표시 되는 텍스트 열의 최대 수를 설정 합니다.
+도구 모음 단추에 표시 되는 최대 텍스트 행 수를 설정 합니다.
 
 ```
 BOOL SetMaxTextRows(int iMaxRows);
@@ -2173,7 +2173,7 @@ BOOL SetMaxTextRows(int iMaxRows);
 ### <a name="parameters"></a>매개 변수
 
 *iMaxRows*<br/>
-설정할 행의 최대 수입니다.
+설정할 최대 행 수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2181,7 +2181,7 @@ BOOL SetMaxTextRows(int iMaxRows);
 
 ##  <a name="setmetrics"></a>  CToolBarCtrl::SetMetrics
 
-메트릭을 설정 하 여 `CToolBarCtrl` 개체입니다.
+`CToolBarCtrl` 개체의 메트릭을 설정 합니다.
 
 ```
 void SetMetrics(LPTBMETRICS ptbm);
@@ -2190,15 +2190,15 @@ void SetMetrics(LPTBMETRICS ptbm);
 ### <a name="parameters"></a>매개 변수
 
 *ptbm*<br/>
-에 대 한 포인터를 [TBMETRICS](/windows/desktop/api/commctrl/ns-commctrl-tbmetrics) 구조는 `CToolBarCtrl` 개체입니다.
+`CToolBarCtrl` 개체의 [TBMETRICS](/windows/win32/api/commctrl/ns-commctrl-tbmetrics) 구조에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는의 기능을 에뮬레이션 합니다 [TB_SETMETRICS](/windows/desktop/Controls/tb-setmetrics) Windows SDK에 설명 된 대로 메시지입니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 [TB_SETMETRICS](/windows/win32/Controls/tb-setmetrics) 메시지의 기능을 에뮬레이트합니다.
 
 ##  <a name="setowner"></a>  CToolBarCtrl::SetOwner
 
-소유자 창 도구 모음 컨트롤에 대 한 설정입니다.
+Toolbar 컨트롤에 대 한 소유자 창을 설정 합니다.
 
 ```
 void SetOwner(CWnd* pWnd);
@@ -2207,15 +2207,15 @@ void SetOwner(CWnd* pWnd);
 ### <a name="parameters"></a>매개 변수
 
 *pWnd*<br/>
-에 대 한 포인터를 `CWnd` 또는 `CWnd`-도구 모음 컨트롤에 대 한 새 소유자 창 될 개체를 파생 합니다.
+Toolbar 컨트롤의 `CWnd` 새 `CWnd`소유자 창이 될 또는 파생 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
-소유자 창에 도구 모음에서 알림을 받는 창이입니다.
+소유자 창은 도구 모음에서 알림을 수신 하는 창입니다.
 
 ##  <a name="setpadding"></a>  CToolBarCtrl::SetPadding
 
-현재 도구 모음 컨트롤의 가로 및 세로 여백을 설정합니다.
+현재 도구 모음 컨트롤의 가로 및 세로 안쪽 여백을 설정 합니다.
 
 ```
 DWORD SetPadding(
@@ -2225,28 +2225,28 @@ DWORD SetPadding(
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
-|*nHorzPadding*|[in] 도구 모음 컨트롤의 가로 안쪽 여백을 픽셀 단위로 지정 합니다.|
-|*nVertPadding*|[in] 도구 모음 컨트롤의 세로 안쪽 여백을 픽셀 단위로 지정 합니다.|
+|*nHorzPadding*|진행 Toolbar 컨트롤의 가로 안쪽 여백을 픽셀 단위로 지정 합니다.|
+|*nVertPadding*|진행 Toolbar 컨트롤의 세로 안쪽 여백을 픽셀 단위로 지정 합니다.|
 
 ### <a name="return-value"></a>반환 값
 
-DWORD 하위 워드입니다 이전 가로 안쪽 여백 값을 포함 하며 이전 세로 안쪽 여백 값을을 포함 하는 상위 워드입니다. 안쪽 여백 값을 픽셀 단위로 측정 됩니다.
+낮은 단어가 이전 가로 안쪽 여백 값을 포함 하 고 그 상위 단어가 이전 세로 안쪽 여백 값을 포함 하는 DWORD입니다. 안쪽 여백 값은 픽셀로 측정 됩니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [TB_SETPADDING](/windows/desktop/Controls/tb-setpadding) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [TB_SETPADDING](/windows/win32/Controls/tb-setpadding) 메시지를 보냅니다.
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 20 현재 도구 모음 컨트롤의 가로 및 세로 여백을 설정합니다.
+다음 코드 예제에서는 현재 toolbar 컨트롤의 가로 및 세로 안쪽 여백을 20 픽셀로 설정 합니다.
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#4](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_6.cpp)]
 
 ##  <a name="setpressedimagelist"></a>  CToolBarCtrl::SetPressedImageList
 
-현재 도구 모음 컨트롤에서 단추를 눌렀는지에서를 나타내는 데 사용 된 이미지 목록을 설정 합니다.
+현재 toolbar 컨트롤에서 누름 상태의 단추를 나타내는 데 사용 하는 이미지 목록을 설정 합니다.
 
 ```
 CImagelist* SetPressedImageList(
@@ -2256,28 +2256,28 @@ CImagelist* SetPressedImageList(
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|설명|
+|매개 변수|Description|
 |---------------|-----------------|
-|*iImageID*|[in] 이미지 목록의 0부터 시작 하는 인덱스입니다. 하나의 이미지 목록을 사용 하는 경우이 매개 변수를 0으로 설정 합니다.|
-|*pImageList*|[in] 에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 새 이미지 목록을 포함 하는 합니다.|
+|*iImageID*|진행 이미지 목록의 인덱스 (0부터 시작)입니다. 하나의 이미지 목록만 사용 하는 경우이 매개 변수를 0으로 설정 합니다.|
+|*pImageList*|진행 새 이미지 목록이 포함 된 [CImageList](../../mfc/reference/cimagelist-class.md) 에 대 한 포인터입니다.|
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [CImageList](../../mfc/reference/cimagelist-class.md) 이미지 목록이 없는 설정 된 경우 NULL을 현재 컨트롤에 대 한 이전 이미지 목록이 들어 있는입니다.
+현재 컨트롤의 이전 이미지 목록이 포함 된 [CImageList](../../mfc/reference/cimagelist-class.md) 에 대 한 포인터 이거나, 해당 이미지 목록이 설정 되지 않은 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [TB_SETPRESSEDIMAGELIST](/windows/desktop/Controls/tb-setpressedimagelist) Windows SDK에 설명 된 메시지입니다.
+이 메서드는 Windows SDK에 설명 된 [TB_SETPRESSEDIMAGELIST](/windows/win32/Controls/tb-setpressedimagelist) 메시지를 보냅니다.
 
 ### <a name="example"></a>예제
 
-다음 코드 예제에서는 누름된 이미지 목록을 설정 합니다 기본 이미지 목록으로 동일 합니다.
+다음 코드 예제에서는 누른 이미지 목록을 기본 이미지 목록과 동일 하 게 설정 합니다.
 
 [!code-cpp[NVC_MFC_CToolBarCtrl_s1#5](../../mfc/reference/codesnippet/cpp/ctoolbarctrl-class_7.cpp)]
 
 ##  <a name="setrows"></a>  CToolBarCtrl::SetRows
 
-요청한 행의 개수를 자체 크기를 조정 하려면 도구 모음 컨트롤을 요청 합니다.
+도구 모음 컨트롤에 요청 된 수의 행으로 크기를 조정 하도록 요청 합니다.
 
 ```
 void SetRows(
@@ -2292,28 +2292,28 @@ void SetRows(
 요청 된 행 수입니다.
 
 *bLarger*<br/>
-요청한 행의 개수를 도구 모음 크기를 조정할 수 없는 경우 행이 더 또는 적은 수의 행을 사용할지 여부를 알려 줍니다.
+도구 모음의 크기를 요청 된 행 수로 조정할 수 없는 경우 행 수를 늘리거나 줄입니다.
 
 *lpRect*<br/>
-가리키는 합니다 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 도구 모음의 새 경계 사각형을 받을 구조입니다.
+는 도구 모음의 새 경계 사각형을 받는 [Crect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
-도구 모음은 요청된 수 또는 행 자체 크기를 조정할 수 없습니다, 하는 경우 크기가 조정 됩니다 자체에 다음 크거나 다음 작은 유효한 크기 값에 따라 *bLarger*합니다. 하는 경우 *bLarger* 가 TRUE 인 새 행 수가 요청 된 수보다 커야 합니다. 하는 경우 *bLarger* 은 FALSE, 새 행 수가 요청 된 수보다 작아야 합니다.
+도구 모음에서 요청 된 수로 크기를 조정할 수 없는 경우 *bLarger*의 값에 따라 크기가 다음으로 크거나 다음 보다 작은 유효한 크기로 조정 됩니다. *BLarger* 가 TRUE 이면 새 행 수가 요청 된 수보다 큽니다. *BLarger* 가 FALSE 이면 새 행 수가 요청 된 수보다 작습니다.
 
-지정 된 수의 행을 도구 모음에 대 한 유효한 경우는 (아마도 마지막 행)를 제외한 단추의 같은 수의 모든 행에는 단추를 정렬할 수 있습니다. 예를 들어, 네 개의 단추가 있는 도구 모음 수 없습니다 크기를 조정할 수 3 개의 행을 마지막 두 행을 더 짧게 해야 하기 때문에. 세 개의 행 크기를 조정 하려는 경우 경우 발생 하는 4 개의 행 *bLarger* 경우 TRUE이 고 두 개의 행을 되었습니다 *bLarger* FALSE 되었습니다.
+모든 행에 동일한 수의 단추가 있도록 단추를 정렬할 수 있는 경우 (마지막 행은 제외) 도구 모음에 대해 지정 된 수의 행이 유효 합니다. 예를 들어 네 개의 단추가 포함 된 도구 모음의 경우 마지막 두 행이 짧아야 하므로 세 개의 행으로 크기를 조정할 수 없습니다. 3 개의 행으로 크기를 조정 하려고 하면 *bLarger* 가 TRUE 인 경우 4 개의 행이 표시 되 고 *bLarger* 가 FALSE 인 경우 두 개의 행이 표시 됩니다.
 
-도구 모음에 구분 기호가 없으면 지정 된 수의 행을 유효 규칙은 더 복잡 합니다. 레이아웃 단추 그룹 (첫 번째 앞에 구분 기호가 단추) 및 그룹의 마지막 단추 되지 세분화 되 여러 행 그룹을 하나의 행에 맞지 않으면 되도록 계산 됩니다.
+도구 모음에 구분 기호가 있으면 지정 된 행 수가 유효한 시기에 대 한 규칙이 더 복잡해 집니다. 이 레이아웃은 그룹을 한 행에 맞출 수 없는 경우를 제외 하 고는 단추 그룹 (그룹의 첫 번째 및 마지막 단추 앞에 구분 기호가 있는 단추)은 여러 행에 포함 되지 않습니다.
 
-그룹을 하나의 행에 맞지 않으면, 다음 그룹 큰 그룹의 종료를 행에 맞게 하는 경우에 다음 행에서 시작 됩니다. 이 규칙의 목적은 눈에 더 큰 그룹 간의 분리를 확인 하는 것입니다. 결과 세로 구분 기호는 행으로 계산 됩니다.
+그룹이 한 행에 맞지 않는 경우에는 다음 행이 크거나 같은 행에 맞는 경우에도 다음 행에서 시작 됩니다. 이 규칙의 목적은 큰 그룹을 더 눈에 띄게 분리 하는 것입니다. 결과 세로 구분 기호는 행으로 계산 됩니다.
 
-또한는 `SetRows` 멤버 함수는 가장 작은 도구 모음 크기는 레이아웃을 선택한 항상 있습니다. 스타일 및 컨트롤은 위에 설명 된 메서드를 적용 하기만 하면 다음 크기 조정 컨트롤의 너비 지정는 TBSTYLE_WRAPABLE를 사용 하 여 도구 모음 만들기.
+또한 `SetRows` 멤버 함수는 항상 가장 작은 도구 모음 크기를 생성 하는 레이아웃을 선택 합니다. TBSTYLE_WRAPABLE 스타일을 사용 하 여 도구 모음을 만든 다음 컨트롤의 크기를 조정 하면 컨트롤의 너비가 지정 된 경우 위에 설명 된 메서드를 적용 하기만 하면 됩니다.
 
-이 함수는 TBSTYLE_WRAPABLE 스타일으로 생성 된 도구 모음에만 호출할 수 있습니다.
+이 함수는 TBSTYLE_WRAPABLE 스타일을 사용 하 여 만든 도구 모음에 대해서만 호출할 수 있습니다.
 
 ##  <a name="setstate"></a>  CToolBarCtrl::SetState
 
-도구 모음 컨트롤에서 지정 된 단추의 상태를 설정합니다.
+Toolbar 컨트롤에서 지정 된 단추의 상태를 설정 합니다.
 
 ```
 BOOL SetState(
@@ -2327,7 +2327,7 @@ BOOL SetState(
 단추의 명령 식별자입니다.
 
 *nState*<br/>
-상태 플래그입니다. 단추 상태에 대해 나열 된 값의 조합 수 [CToolBarCtrl::AddButtons](#addbuttons)합니다.
+상태 플래그입니다. [CToolBarCtrl:: addbuttons](#addbuttons)의 단추 상태에 대해 나열 된 값을 조합 하 여 사용할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2335,11 +2335,11 @@ BOOL SetState(
 
 ### <a name="remarks"></a>설명
 
-이 함수는 둘 이상의 단추 상태를 설정 하려는 경우에 특히 유용 합니다. 방금 한 상태를 설정 하려면 다음 멤버 함수 중 하나를 사용 합니다. [EnableButton](#enablebutton), [CheckButton](#checkbutton)를 [HideButton](#hidebutton)를 [비활성화](#indeterminate), 또는 [PressButton](#pressbutton)합니다.
+이 함수는 여러 단추 상태를 설정 하려는 경우에 특히 유용 합니다. 하나의 상태만 설정 하려면 다음 멤버 함수 중 하나를 사용 합니다. [Enablebutton](#enablebutton), [checkbutton](#checkbutton), [HideButton](#hidebutton), [비활성화](#indeterminate)또는 [보도 단추](#pressbutton)를 클릭 합니다.
 
 ##  <a name="setstyle"></a>  CToolBarCtrl::SetStyle
 
-도구 모음 컨트롤에 대 한 스타일을 설정합니다.
+Toolbar 컨트롤의 스타일을 설정 합니다.
 
 ```
 void SetStyle(DWORD dwStyle);
@@ -2348,11 +2348,11 @@ void SetStyle(DWORD dwStyle);
 ### <a name="parameters"></a>매개 변수
 
 *dwStyle*<br/>
-조합을 포함 하는 DWORD [toolbar 컨트롤 스타일](/windows/desktop/Controls/toolbar-control-and-button-styles)Windows SDK에 설명 된 대로 합니다.
+Windows SDK에 설명 된 바와 같이 [toolbar 컨트롤 스타일](/windows/win32/Controls/toolbar-control-and-button-styles)의 조합을 포함 하는 DWORD입니다.
 
 ##  <a name="settooltips"></a>  CToolBarCtrl::SetToolTips
 
-도구 모음 컨트롤을 사용 하 여 도구 설명 컨트롤을 연결합니다.
+도구 설명 컨트롤을 도구 모음 컨트롤과 연결 합니다.
 
 ```
 void SetToolTips(CToolTipCtrl* pTip);
@@ -2361,11 +2361,11 @@ void SetToolTips(CToolTipCtrl* pTip);
 ### <a name="parameters"></a>매개 변수
 
 *pTip*<br/>
-에 대 한 포인터를 [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 개체입니다.
+[CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) 개체에 대 한 포인터입니다.
 
 ##  <a name="setwindowtheme"></a>  CToolBarCtrl::SetWindowTheme
 
-비주얼 스타일을 설정 하는 `CToolBarCtrl` 개체입니다.
+`CToolBarCtrl` 개체의 비주얼 스타일을 설정 합니다.
 
 ```
 HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
@@ -2374,7 +2374,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 ### <a name="parameters"></a>매개 변수
 
 *pszSubAppName*<br/>
-설정 하려면 도구 모음 비주얼 스타일을 포함 하는 유니코드 문자열 포인터입니다.
+설정할 도구 모음 비주얼 스타일을 포함 하는 유니코드 문자열에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2382,7 +2382,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는의 기능을 에뮬레이션 합니다 [TB_SETWINDOWTHEME](/windows/desktop/Controls/tb-setwindowtheme) Windows SDK에 설명 된 대로 메시지입니다.
+이 멤버 함수는 Windows SDK 설명 된 대로 [TB_SETWINDOWTHEME](/windows/win32/Controls/tb-setwindowtheme) 메시지의 기능을 에뮬레이트합니다.
 
 ## <a name="see-also"></a>참고자료
 

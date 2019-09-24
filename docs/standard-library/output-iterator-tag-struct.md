@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68453012"
 ---
-# <a name="outputiteratortag-struct"></a>output_iterator_tag 구조체
+# <a name="output_iterator_tag-struct"></a>output_iterator_tag 구조체
 
 출력 반복기를 나타내는 `iterator_category` 함수의 반환 형식을 제공 하는 클래스입니다.
 
@@ -32,7 +32,7 @@ struct output_iterator_tag {};
 
 ## <a name="example"></a>예제
 
-S를 사용 [](../standard-library/random-access-iterator-tag-struct.md) `iterator_tag`하는 방법에 대 한 예제는 [iterator_traits](../standard-library/iterator-traits-struct.md) 또는 random_access_iterator_tag를 참조 하세요.
+`iterator_tag` S를 사용하는 방법에 대한 예제는 [iterator_traits](../standard-library/iterator-traits-struct.md) 또는 [random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -12,16 +12,16 @@ helpviewer_keywords:
 - CPaintDC [MFC], m_ps
 - CPaintDC [MFC], m_hWnd
 ms.assetid: 7e245baa-bf9b-403e-a637-7218adf28fab
-ms.openlocfilehash: df1db8a3e65d35f247df7d070119c66b02208815
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d587f1cfa6ec38dd564da196da8130bffac11302
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373276"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69503146"
 ---
 # <a name="cpaintdc-class"></a>CPaintDC 클래스
 
-파생 된 디바이스 컨텍스트 클래스 [CDC](../../mfc/reference/cdc-class.md)합니다.
+[CDC](../../mfc/reference/cdc-class.md)에서 파생 된 장치 컨텍스트 클래스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,31 +33,31 @@ class CPaintDC : public CDC
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CPaintDC::CPaintDC](#cpaintdc)|생성 된 `CPaintDC` 지정 된 연결 [CWnd](../../mfc/reference/cwnd-class.md)합니다.|
+|[CPaintDC::CPaintDC](#cpaintdc)|지정 된 `CPaintDC` [CWnd](../../mfc/reference/cwnd-class.md)에 연결 된을 생성 합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
-|[CPaintDC::m_ps](#m_ps)|포함 된 [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) 클라이언트 영역을 그리는 데 사용 합니다.|
+|[CPaintDC::m_ps](#m_ps)|클라이언트 영역을 그리는 데 사용 되는 [PAINTSTRUCT](/windows/win32/api/winuser/ns-winuser-paintstruct) 를 포함 합니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
 |이름|설명|
 |----------|-----------------|
-|[CPaintDC::m_hWnd](#m_hwnd)|이 HWND `CPaintDC` 개체를 연결 합니다.|
+|[CPaintDC::m_hWnd](#m_hwnd)|이 `CPaintDC` 개체가 연결 된 HWND입니다.|
 
 ## <a name="remarks"></a>설명
 
-수행 된 [cwnd:: Beginpaint](../../mfc/reference/cwnd-class.md#beginpaint) 생성 시 및 [CWnd::EndPaint](../../mfc/reference/cwnd-class.md#endpaint) 소멸 시.
+생성 시 [cwnd:: BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint) 를 수행 하 고 소멸 시 [Cwnd:: endpaint](../../mfc/reference/cwnd-class.md#endpaint) 를 수행 합니다.
 
-`CPaintDC` 개체에 응답 하는 경우에 사용 수를 [WM_PAINT](/windows/desktop/gdi/wm-paint) 에 일반적으로 메시지에 `OnPaint` 메시지 처리기 멤버 함수입니다.
+개체 `CPaintDC` 는 일반적으로 `OnPaint` 메시지 처리기 멤버 함수에서 [WM_PAINT](/windows/win32/gdi/wm-paint) 메시지에 응답 하는 경우에만 사용할 수 있습니다.
 
-사용 하 여 대 한 자세한 내용은 `CPaintDC`를 참조 하세요 [장치 컨텍스트](../../mfc/device-contexts.md)합니다.
+사용 `CPaintDC`에 대 한 자세한 내용은 [장치 컨텍스트](../../mfc/device-contexts.md)를 참조 하세요.
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -71,7 +71,7 @@ class CPaintDC : public CDC
 
 ##  <a name="cpaintdc"></a>  CPaintDC::CPaintDC
 
-생성를 `CPaintDC` 개체를 응용 프로그램 창 그리기를 준비 하 고 저장 합니다 [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) 구조를 [m_ps](#m_ps) 멤버 변수.
+`CPaintDC` 개체를 생성하고, 그리기를 위해 응용 프로그램 창을 준비하고, [m_ps](#m_ps) 멤버 변수에 [PAINTSTRUCT](/windows/win32/api/winuser/ns-winuser-paintstruct) 구조체를 저장합니다.
 
 ```
 explicit CPaintDC(CWnd* pWnd);
@@ -80,11 +80,11 @@ explicit CPaintDC(CWnd* pWnd);
 ### <a name="parameters"></a>매개 변수
 
 *pWnd*<br/>
-가리키는 합니다 `CWnd` 개체를 `CPaintDC` 개체가 속한.
+`CPaintDC` 개체가 속한 `CWnd` 개체를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
-예외 (형식의 `CResourceException`) 하는 경우 throw 되는 Windows [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) 호출이 실패 합니다. 장치 컨텍스트에 Windows에 이미 할당 모든 사용 가능한 장치 컨텍스트에서 사용할 수 있습니다. 응용 프로그램 Windows 아래에서 언제 든 지 사용할 수 있는 5 개의 일반적인 표시 컨텍스트에 대해 경합 합니다.
+Windows [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) 호출이 실패하면 예외 (`CResourceException`형식)가 throw됩니다. Windows에서 사용 가능한 모든 장치 컨텍스트를 이미 할당 한 경우 장치 컨텍스트를 사용 하지 못할 수 있습니다. 응용 프로그램은 지정 된 시간에 Windows에서 사용할 수 있는 5 가지 일반적인 표시 컨텍스트를 경합 합니다.
 
 ### <a name="example"></a>예제
 
@@ -92,7 +92,7 @@ explicit CPaintDC(CWnd* pWnd);
 
 ##  <a name="m_hwnd"></a>  CPaintDC::m_hWnd
 
-합니다 `HWND` 이 `CPaintDC` 개체를 연결 합니다.
+`HWND` 이`CPaintDC` 개체가 연결 된입니다.
 
 ```
 HWND m_hWnd;
@@ -100,7 +100,7 @@ HWND m_hWnd;
 
 ### <a name="remarks"></a>설명
 
-*m_hWnd* 보호 된 변수 형식 HWND입니다.
+*m_hWnd* 는 hWnd 형식의 보호 된 변수입니다.
 
 ### <a name="example"></a>예제
 
@@ -108,7 +108,7 @@ HWND m_hWnd;
 
 ##  <a name="m_ps"></a>  CPaintDC::m_ps
 
-`m_ps` 형식의 public 멤버 변수가 [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct)합니다.
+`m_ps`[PAINTSTRUCT](/windows/win32/api/winuser/ns-winuser-paintstruct)형식의 public 멤버 변수입니다.
 
 ```
 PAINTSTRUCT m_ps;
@@ -116,15 +116,15 @@ PAINTSTRUCT m_ps;
 
 ### <a name="remarks"></a>설명
 
-것은 `PAINTSTRUCT` 전달할을 작성 하 여 [cwnd:: Beginpaint](../../mfc/reference/cwnd-class.md#beginpaint)합니다.
+이는 [CWnd:: beginpaint](../../mfc/reference/cwnd-class.md#beginpaint)로 전달 되 고 채워진입니다. `PAINTSTRUCT`
 
-`PAINTSTRUCT` 응용 프로그램에 연결 된 창의 클라이언트 영역을 그리는 데 사용 하는 정보를 포함 한 `CPaintDC` 개체입니다.
+에 `PAINTSTRUCT` 는 응용 프로그램에서 `CPaintDC` 개체와 연결 된 창의 클라이언트 영역을 그리는 데 사용 하는 정보가 포함 되어 있습니다.
 
-통해 장치 컨텍스트 핸들에 액세스할 수 있는지 확인 합니다 `PAINTSTRUCT`합니다. 그러나 핸들을 통해 보다 직접 액세스할 수 있습니다 합니다 `m_hDC` 멤버 변수는 `CPaintDC` CDC에서 상속 합니다.
+를 `PAINTSTRUCT`통해 장치 컨텍스트 핸들에 액세스할 수 있습니다. 그러나 CDC에서 상속 되 `m_hDC` `CPaintDC` 는 멤버 변수를 통해 직접 핸들에 액세스할 수 있습니다.
 
 ### <a name="example"></a>예제
 
-  예를 참조 하세요 [CPaintDC::m_hWnd](#m_hwnd)합니다.
+  [CPaintDC:: m_hWnd](#m_hwnd)의 예제를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 
