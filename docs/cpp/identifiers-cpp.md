@@ -87,7 +87,7 @@ int main() {
 }
 ```
 
-식별자에서 허용되는 문자의 범위는 C++/CLI 코드를 컴파일하는 경우보다 덜 제한적입니다. /Clr을 사용 하 여 컴파일된 코드의 식별자 따라야 [표준 ECMA-335: Common Language Infrastructure (CLI)](https://www.ecma-international.org/publications/standards/Ecma-335.htm)합니다.
+식별자에서 허용되는 문자의 범위는 C++/CLI 코드를 컴파일하는 경우보다 덜 제한적입니다. /clr을 사용하여 컴파일된 코드의 식별자 따라야 [표준 ECMA-335: Common Language Infrastructure (CLI)](https://www.ecma-international.org/publications/standards/Ecma-335.htm)합니다.
 
 **Microsoft 전용 종료**
 
