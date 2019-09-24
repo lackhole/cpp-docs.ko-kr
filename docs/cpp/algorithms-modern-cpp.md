@@ -14,7 +14,7 @@ ms.locfileid: "64345171"
 
 모던 C++ 프로그래밍 적용을 위해 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)의 알고리즘을 사용하는 것을 권장합니다. 다음은 몇가지 주요 예를 보여줍니다.
 
-- **for_each**는 기본 탐색 알고리즘입니다. (또한 **transform**도 고려할 수 있습니다.)
+- 기본 탐색 알고리즘인 **for_each** (또한 **transform**도 고려할 수 있습니다.)
 
 - 기본 검색 알고리즘인 **find_if**
 
