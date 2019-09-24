@@ -13,7 +13,7 @@ ms.locfileid: "66450506"
 ---
 # <a name="string-and-io-formatting-modern-c"></a>문자열 및 I/O 서식 지정(모던 C++)
 
-C++[ \<iostream >](../standard-library/iostream.md) 클래스, 함수 및 연산자 서식된 문자열 I/O를 지원 합니다. 다음 코드를 설정 하는 방법을 표시 하는 예를 들어 `cout` 16 진수로 출력 정수 형식을 지정 합니다. 형식 상태는에 전달 하는 한 번 때문에 나중에 다시 설정 하려면 현재 상태를 저장 하는 먼저 `cout`를 이런 방식으로 변경 될 때까지 유지 합니다. 코드 한 줄으로 바로 적용 되지 않습니다.
+C++[ \<iostream >](../standard-library/iostream.md) 클래스, 함수 및 연산자는 서식이 지정된 문자열 I/O를 지원합니다. 예를 들어 다음 코드는 정수를 16진수로 출력하도록 `cout`을 설정하는 방법을 보여줍니다. 첫째, 서식 상태가 `cout`에 전달되면 변경될 때까지 그대로 유지되므로 나중에 다시 설정하기 위해 현재 상태를 저장합니다. 한 줄의 코드에만 적용되는 것은 아닙니다.
 
 ```cpp
 #include <iostream>
@@ -39,23 +39,23 @@ int main()
 }
 ```
 
-이 방법은 형식이 안전 하 고 확장 가능 하지만 복잡 하 고 자세한 정보 표시도 됩니다.
+이 방법은 형식이 안전하고 확장 가능하지만 복잡하고 자세한 정보 표시도 됩니다.
 
-## <a name="alternative-format-options"></a>다른 서식 옵션
+## <a name="alternative-format-options"></a>서식 옵션의 대안
 
-사용할 수 있습니다 `Boost.Format` Boost에서 C++ 라이브러리에도 표준이 아닙니다. [Boost](https://www.boost.org/) 웹 사이트에서 Boost 라이브러리를 다운로드할 수 있습니다.
+표준 방법은 아니지만, 대안으로 Boost C++ 라이브러리의 `Boost.Format`을 사용할 수 있습니다. Boost 라이브러리는 [Boost](https://www.boost.org/) 웹사이트에서 다운로드할 수 있습니다.
 
-몇 가지 이점은 `Boost.Format` 됩니다.
+`Boost.Format`의 장점은 다음과 같습니다.
 
-- 안전: 형식에 안전한 코드이며, 형식이 안전한 오류에 대 한 예외 사양 너무 적거나 너무 많은 항목의 예를 들어를 throw 합니다.
+- 안전: 형식에 안전한 코드이며, 오류 발생 시 예외를 통하여 처리합니다. 예를 들어 너무 적거나 많은 항목을 전달할 경우입니다.
 
-- 확장 가능: 스트리밍할 수 있는 모든 형식에 사용할 수 있습니다.
+- 확장 가능: 스트림(stream)할 수 있는 모든 형식에 사용할 수 있습니다.
 
 - 간편함: 표준 Posix와 유사한 형식 문자열입니다.
 
-하지만 `Boost.Format` 기반으로 하는 C++ [ \<iostream >](../standard-library/iostream-programming.md) 시설에 안전 하 고 확장할 수는 없는 성능 최적화. 성능 최적화가 필요하면 빠르고 사용하기 쉬운 C [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) 및 [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)를 고려하십시오. 그러나 확장 가능한 또는 취약성 으로부터 안전 하 게 되지 않습니다. (안전한 버전이 존재하지만 성능이 약간 저하됩니다. 자세한 내용은 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) 및 [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md))를 참조하십시오.
+`Boost.Format`은 안전하고 확장 가능한 C++ [ \<iostream >](../standard-library/iostream-programming.md) 기능을 기반으로 하고 있지만 성능 최적화가 되지는 않았습니다. 성능 최적화가 필요한 경우 빠르고 사용하기 쉬운 C [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)나 [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)를 고려하십시오. 그러나 취약점으로 인하여 확장 가능하거나 안전하지 않습니다. (안전한 버전이 존재하지만 성능이 약간 저하됩니다. 자세한 내용은 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) 및 [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md))를 참조하세요.
 
-다음 코드는 Boost 서식 기능 중 일부를 보여 줍니다.
+다음 코드는 Boost 서식 지정 기능 중 일부를 보여 줍니다.
 
 ```cpp
     string s = str( format("%2% %2% %1%\n") % "world" % "hello" );
