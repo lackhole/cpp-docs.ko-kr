@@ -39,13 +39,13 @@ int main()
 }
 ```
 
-이 방법은 형식이 안전 하 고 확장 가능 하지만 복잡 하 고 자세한 정보 표시도 됩니다.
+이 방법은 형식이 안전하고 확장 가능하지만 복잡하고 자세한 정보 표시도 됩니다.
 
-## <a name="alternative-format-options"></a>다른 서식 옵션
+## <a name="alternative-format-options"></a>서식 옵션의 대안
 
-사용할 수 있습니다 `Boost.Format` Boost에서 C++ 라이브러리에도 표준이 아닙니다. [Boost](https://www.boost.org/) 웹 사이트에서 Boost 라이브러리를 다운로드할 수 있습니다.
+표준 방법은 아니지만, 대안으로 Boost C++ 라이브러리의 `Boost.Format`을 사용할 수 있습니다. Boost 라이브러리는 [Boost](https://www.boost.org/) 웹사이트에서 다운로드할 수 있습니다.
 
-몇 가지 이점은 `Boost.Format` 됩니다.
+`Boost.Format`의 장점은 다음과 같습니다.
 
 - 안전: 형식에 안전한 코드이며, 형식이 안전한 오류에 대 한 예외 사양 너무 적거나 너무 많은 항목의 예를 들어를 throw 합니다.
 
@@ -55,7 +55,7 @@ int main()
 
 하지만 `Boost.Format` 기반으로 하는 C++ [ \<iostream >](../standard-library/iostream-programming.md) 시설에 안전 하 고 확장할 수는 없는 성능 최적화. 성능 최적화가 필요하면 빠르고 사용하기 쉬운 C [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) 및 [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)를 고려하십시오. 그러나 확장 가능한 또는 취약성 으로부터 안전 하 게 되지 않습니다. (안전한 버전이 존재하지만 성능이 약간 저하됩니다. 자세한 내용은 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) 및 [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md))를 참조하십시오.
 
-다음 코드는 Boost 서식 기능 중 일부를 보여 줍니다.
+다음 코드는 Boost 서식 지정 기능 중 일부를 보여 줍니다.
 
 ```cpp
     string s = str( format("%2% %2% %1%\n") % "world" % "hello" );
