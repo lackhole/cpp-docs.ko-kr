@@ -27,7 +27,7 @@ RealType generate_canonical(Generator& Gen);
 ### <a name="parameters"></a>매개 변수
 
 *RealType*\
-부동 소수점 정수 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+부동 소수점 정수 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)을 참조하세요.
 
 *비트씩*\
 사용할 임의의 비트 수입니다.
