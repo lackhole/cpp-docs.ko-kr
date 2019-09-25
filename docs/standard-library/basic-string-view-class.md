@@ -935,7 +935,7 @@ constexpr const_reference operator[](size_type offset) const;
 
 소유 하는 개체에서 기본 문자열 데이터를 수정 하거나 삭제 하는 경우 반환 되는 참조가 무효화 될 수 있습니다.
 
-[ \_반복기\_디버그수준을1또는2로설정하여컴파일할때string_view범위를벗어난요소에액세스하려고하면런타임\_](../standard-library/iterator-debug-level.md) 오류가 발생 합니다. 자세한 내용은 [Checked Iterators](../standard-library/checked-iterators.md)을 참조하세요.
+1 또는 2로 설정된 [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-level.md)로 컴파일하는 경우 문자열 경계 밖에서 요소에 액세스하려고 시도하면 런타임 오류가 발생합니다. 자세한 내용은 [Checked Iterators](../standard-library/checked-iterators.md)을 참조하세요.
 
 ## <a name="rbegin"></a>  basic_string_view::rbegin
 
