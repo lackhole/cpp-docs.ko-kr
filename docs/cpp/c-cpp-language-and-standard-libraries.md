@@ -2,13 +2,13 @@
 title: C/C++ 언어 및 표준 라이브러리 참조
 ms.date: 08/13/2019
 ms.assetid: c26a6682-961a-43ef-ad33-2adc612f69ac
-ms.topic: landing-page
-ms.openlocfilehash: 177bd01ec1564d3a0f3be4c66b9e528796c66e6f
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.topic: overview
+ms.openlocfilehash: 15285b2741167e8c873ac0a45514e7d05e259375
+ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218410"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274719"
 ---
 # <a name="cc-language-and-standard-libraries-reference"></a>C/C++ 언어 및 표준 라이브러리 참조
 
@@ -19,7 +19,7 @@ ms.locfileid: "70218410"
 ## <a name="language-reference"></a>언어 참조
 
 [C 언어](../c-language/c-language-reference.md)\
-C 언어의 Microsoft 구현에 대한 참조 콘텐츠입니다.
+C 언어의 Microsoft 구현에 대한 참조 콘텐츠.
 
 [C++언어](../cpp/cpp-language-reference.md)\
 C++ 언어의 Microsoft 구현에 대한 참조 콘텐츠입니다.
@@ -57,7 +57,7 @@ MFC(Microsoft Foundation Classes) 및 ATL(액티브 템플릿 라이브러리) �
 ### <a name="additional-libraries"></a>추가 라이브러리
 
 [C++ AMP(C++ 가속화된 대규모 병렬 처리)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)\
-최신 그래픽 프로세서를 일반적인 목적으로 사용하기 위한 클래스입니다.
+범용 프로그래밍에 대 한 최신 그래픽 프로세서를 사용할 수 있는 클래스입니다.
 
 [동시성 런타임](../parallel/concrt/concurrency-runtime.md)\
 데이터 병렬 처리 또는 작업 병렬 처리를 사용하는 프로그램의 작성을 단순화하는 클래스입니다.

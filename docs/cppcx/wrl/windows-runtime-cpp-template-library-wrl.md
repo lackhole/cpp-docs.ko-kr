@@ -1,14 +1,14 @@
 ---
 title: Windows 런타임 C++ 템플릿 라이브러리(WRL)
 ms.date: 11/04/2016
-ms.topic: landing-page
+ms.topic: overview
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 7a92676d198ed9ddffeae9a834ebd358c2c58e90
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 7b99f6429f620b56aec5adbc4b8f15d89cc54264
+ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740840"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274665"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows 런타임 C++ 템플릿 라이브러리(WRL)
 
@@ -36,7 +36,7 @@ Windows 런타임 C++ 템플릿 라이브러리와 C++/cx는 서로 다른 이�
 
 - Windows 런타임 C++ 템플릿 라이브러리의 목적과 디자인은 COM 개체의 프로그래밍을 간소화 하는 템플릿 기반 C++ 클래스 집합인 ATL (액티브 템플릿 라이브러리)에 의해 결정 됩니다. Windows 런타임 C++ 템플릿 라이브러리는 표준을 C++ 사용 하 여 WINDOWS 런타임를 래핑하여, ATL로 작성 된 많은 기존 COM 구성 요소를 Windows 런타임으로 보다 쉽게 이식 하 고 조작할 수 있습니다. ATL을 이미 알고 있는 경우 Windows 런타임 C++ 템플릿 라이브러리 프로그래밍이 더 쉬울 수 있습니다.
 
-## <a name="getting-started"></a>시작하기
+## <a name="getting-started"></a>시작
 
 다음은 Windows 런타임 C++ 템플릿 라이브러리를 즉시 사용 하는 데 도움이 되는 몇 가지 리소스입니다.
 

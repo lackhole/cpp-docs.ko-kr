@@ -8,10 +8,10 @@ helpviewer_keywords:
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
 ms.openlocfilehash: 7bc0cb58cbbe995aa9d74e3ccb627ddc442bd4fb
-ms.sourcegitcommit: ec524d1f87bcce2b26b02e6d297f42c94b3db36e
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70026070"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 자체 동적 연결 라이브러리 만들기 및 사용(C++)
@@ -439,7 +439,7 @@ DLL을 만들 때 클라이언트 앱에서 사용할 수 있는 방법을 생�
 
    ![클라이언트 프로젝트 이름 지정](media/mathclient-project-name.png "클라이언트 프로젝트 이름 지정")
 
-1. **확인** 단추를 선택하여 **새 프로젝트** 대화 상자를 닫고 **Win32 애플리케이션 마법사**를 시작합니다. **Win32 응용 프로그램 마법사** 대화 상자의 **개요** 페이지에서 **다음** 단추를 선택합니다.
+1. **확인** 단추를 선택하여 **새 프로젝트** 대화 상자를 닫고 **Win32 애플리케이션 마법사**를 시작합니다. **Win32 애플리케이션 마법사** 대화 상자의 **개요** 페이지에서 **다음** 단추를 선택합니다.
 
 1. **애플리케이션 설정** 페이지의 **애플리케이션 유형**에서 **콘솔 애플리케이션**이 아직 선택되어 있지 않으면 선택합니다.
 
@@ -587,6 +587,6 @@ int main()
 
 앱을 배포할 때 앱에 사용되는 DLL도 배포해야 합니다. 작성 하는 Dll을 만드는 가장 간단한 방법은 앱과 동일한 디렉터리에 배치 하는 것입니다. 이를 *응용 프로그램 로컬 배포*라고 합니다. 배포에 대한 자세한 내용은 [Deployment in Visual C++](../windows/deployment-in-visual-cpp.md)를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[Visual Basic 응용 프로그램에서 DLL 함수 호출](calling-dll-functions-from-visual-basic-applications.md)
+[Visual Basic 애플리케이션에서 DLL 함수 호출](calling-dll-functions-from-visual-basic-applications.md)

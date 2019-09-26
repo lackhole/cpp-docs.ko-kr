@@ -8,10 +8,10 @@ helpviewer_keywords:
 - debugging, C++ AMP
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
 ms.openlocfilehash: 0c9fb5588cfd44c83d8fe72c7c4aede0fedab672
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69631594"
 ---
 # <a name="walkthrough-debugging-a-c-amp-application"></a>연습: C++ AMP 응용 프로그램 디버깅
@@ -82,7 +82,7 @@ ms.locfileid: "69631594"
 
 ::: moniker-end
 
-그런
+다음:
 
 8. AMPMapReduce를 열고 해당 콘텐츠를 다음 코드로 바꿉니다.
 
@@ -409,7 +409,7 @@ ms.locfileid: "69631594"
 
    이전에 줄 21의 장벽에서 차단 된 24 개의 스레드가 32 줄로 진행 되었습니다. **GPU 스레드** 창에 표시 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C++ AMP 개요](../../parallel/amp/cpp-amp-overview.md)<br/>
 [GPU 코드 디버그](/visualstudio/debugger/debugging-gpu-code)<br/>

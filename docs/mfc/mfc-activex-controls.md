@@ -16,10 +16,10 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
 ms.openlocfilehash: a1c7bb070a75f4406556817163931f0707706c40
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69508120"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX 컨트롤
@@ -118,6 +118,6 @@ Visual C++를 설치할 때 설치에서 ActiveX 컨트롤을 선택한 경우(�
 
 MFC ActiveX 컨트롤에 대한 샘플도 있습니다. 이러한 샘플에 대 한 자세한 내용은 컨트롤 [샘플을 참조 하세요. MFC 기반 ActiveX 컨트롤](../overview/visual-cpp-samples.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)

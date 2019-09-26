@@ -50,10 +50,10 @@ helpviewer_keywords:
 - CPathT class
 ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
 ms.openlocfilehash: ba1c831d772deef34449d17adc2c8e7a6f90eaef
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69496614"
 ---
 # <a name="cpatht-class"></a>CPathT 클래스
@@ -79,7 +79,7 @@ class CPathT
 
 ### <a name="public-typedefs"></a>공용 Typedefs
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CPathT::PCXSTR](#pcxstr)|상수 문자열 형식입니다.|
 |[CPathT::PXSTR](#pxstr)|문자열 형식입니다.|
@@ -87,13 +87,13 @@ class CPathT
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CPathT::CPathT](#cpatht)|경로에 대 한 생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CPathT::AddBackslash](#addbackslash)|경로에 대 한 올바른 구문을 만들려면이 메서드를 호출 하 여 문자열 끝에 백슬래시를 추가 합니다.|
 |[CPathT::AddExtension](#addextension)|경로에 파일 확장명을 추가 하려면이 메서드를 호출 합니다.|
@@ -907,7 +907,7 @@ typedef StringType::XCHAR XCHAR;
 
 `StringType`는에 대 한 `CPathT`템플릿 매개 변수입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [클래스](../../atl/reference/atl-classes.md)<br/>
 [CStringT 클래스](../../atl-mfc-shared/reference/cstringt-class.md)

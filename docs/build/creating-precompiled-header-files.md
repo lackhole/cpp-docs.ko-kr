@@ -8,10 +8,10 @@ helpviewer_keywords:
 - .pch files, creating
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
 ms.openlocfilehash: 273d8cf996c2717339dd20dcbc7512f9c62afa8d
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69630508"
 ---
 # <a name="precompiled-header-files"></a>미리 컴파일된 헤더 파일
@@ -116,7 +116,7 @@ PCH 파일을 만드는 동안 처리 된 pragma는 일반적으로 PCH 파일�
 
 다음 표에서는 미리 컴파일된 헤더를 사용할 때 불일치 경고를 트리거할 수 있는 컴파일러 옵션을 보여 줍니다.
 
-|옵션|이름|규칙|
+|옵션|name|규칙|
 |------------|----------|----------|
 |/D|상수 및 매크로 정의|는 미리 컴파일된 헤더를 만든 컴파일과 현재 컴파일 사이에서 동일 해야 합니다. 정의 된 상수의 상태는 선택 되지 않지만 파일이 변경 된 상수의 값에 종속 되는 경우 예측할 수 없는 결과가 발생할 수 있습니다.|
 |/E 또는/EP|전처리기 출력을 표준 출력에 복사 합니다.|미리 컴파일된 헤더는/E 또는/EP 옵션과 함께 사용할 수 없습니다.|
@@ -305,7 +305,7 @@ int main( void )
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C/C++ 빌드 참조](reference/c-cpp-building-reference.md)<br/>
 [MSVC 컴파일러 옵션](reference/compiler-options.md)

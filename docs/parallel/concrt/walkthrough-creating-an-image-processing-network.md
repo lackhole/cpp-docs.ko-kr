@@ -6,10 +6,10 @@ helpviewer_keywords:
 - creating image-processing networks [Concurrency Runtime]
 ms.assetid: 78ccadc9-5ce2-46cc-bd62-ce0f99d356b8
 ms.openlocfilehash: 680037e0e14c3ebd9171cacf477520e025eecebe
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69512166"
 ---
 # <a name="walkthrough-creating-an-image-processing-network"></a>연습: 이미지 처리 네트워크 만들기
@@ -20,7 +20,7 @@ ms.locfileid: "69512166"
 
 데이터 흐름을 기반으로 하는 네트워크는 작업 *파이프라인* 을 만듭니다. 파이프라인의 각 단계는 전체 작업의 일부를 동시에 수행 합니다. 이는 자동차 제조 조립 라인에 비유될 수 있습니다. 각 차량이 어셈블리 라인을 통과 하면 한 스테이션은 프레임을 조립 하 고 다른 스테이션은 엔진을 설치 합니다. 여러 차량의 동시 어셈블을 가능 하 게 하 여 어셈블리 선은 한 번에 하나씩 전체 차량을 어셈블하는 것 보다 더 나은 처리량을 제공 합니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 이 연습을 시작 하기 전에 다음 문서를 읽어 보세요.
 
@@ -164,6 +164,6 @@ ms.locfileid: "69512166"
 
 **cl.exe /DUNICODE /EHsc image-processing-network.cpp /link gdiplus.lib**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [동시성 런타임 연습](../../parallel/concrt/concurrency-runtime-walkthroughs.md)

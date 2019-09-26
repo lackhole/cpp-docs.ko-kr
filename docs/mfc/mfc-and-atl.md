@@ -2,13 +2,13 @@
 title: MFC 및 ATL
 ms.date: 01/24/2018
 ms.assetid: 31b1a3a8-4154-4c4a-af10-fafc23ecdc5c
-ms.topic: landing-page
-ms.openlocfilehash: 3eba0731c01fe232334efb4a2ff7df7179747b3e
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.topic: overview
+ms.openlocfilehash: 87f4a9deb40d7c35498f5cbd66efb6bd976547c2
+ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218750"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274661"
 ---
 # <a name="mfc-and-atl"></a>MFC 및 ATL
 
@@ -24,8 +24,8 @@ Visual Studio 2017 및 이후 버전에서 MFC 및 ATL은 Visual Studio 설치 �
 
 |제목|설명|
 |-----------|-----------------|
-|[MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)|Microsoft Foundation Class는 Win32를 통해 경량 개체 지향 래퍼를 제공하여 C++에서 GUI 응용 프로그램을 신속하게 개발할 수 있도록 합니다.|
-|[ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)|ATL은 COM 개체 생성을 단순화하기 위한 클래스 템플릿 및 기타 사용 구문을 제공합니다.|
+|[MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)|Microsoft Foundation 클래스는 Win32를 통해 씬 개체 지향 래퍼를 제공하여 C++에서 GUI 애플리케이션을 신속하게 개발할 수 있도록 합니다.|
+|[ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)|ATL은 클래스 템플릿 및 기타 use 구문을 제공하여 C++에서 COM 개체 만들기를 간단하게 합니다.|
 |[ATL/MFC 공유 클래스](../atl-mfc-shared/atl-mfc-shared-classes.md)|MFC와 ATL에서 공유하는 [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md) 및 기타 클래스에 대한 참조입니다.|
 |[리소스 파일 작업](../windows/working-with-resource-files.md)|리소스 편집기를 사용하면 문자열, 이미지 및 대화 상자와 같은 UI 리소스를 편집할 수 있습니다.|
 |[Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)|MSDN 라이브러리의 모든 C++ 콘텐츠에 대한 부모 항목입니다.|
