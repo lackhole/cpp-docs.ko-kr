@@ -16,7 +16,7 @@ ms.locfileid: "62267678"
 
 ## <a name="how-to-flatten-a-class-for-c-portability"></a>C 이식성에 대한 클래스를 평면화하는 방법
 
-호출자의 다른 컴파일러/언어를 사용 하 여 컴파일할 수 있습니다 때 다음 "평면화"에 **extern "C"** 특정 호출 규칙을 사용 하는 API:
+호출자가 다른 컴파일러 및 언어를 사용하여 컴파일되는 경우 특정 호출 규칙인 **extern "C"** API로 "평면화"합니다.
 
 ```cpp
 // class widget {
