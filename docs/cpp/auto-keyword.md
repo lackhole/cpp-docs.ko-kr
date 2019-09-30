@@ -4,7 +4,7 @@ ms.date: 05/07/2019
 ms.assetid: 744a41c0-2510-4140-a1be-96257e722908
 ms.openlocfilehash: a695c33ab55601bb8d81b00f963646f6a48f09d5
 ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65222250"
@@ -30,6 +30,6 @@ auto declarator initializer;
 
 - [/Zc: auto(변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md)은 사용할 **auto** 키워드의 정의를 컴파일러에 알리는 컴파일러 옵션을 설명합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 자료
 
 [C++ 키워드](../cpp/keywords-cpp.md)

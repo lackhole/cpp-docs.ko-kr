@@ -46,13 +46,13 @@ ms.locfileid: "68341130"
 | 문자열 및 문자 데이터 | <sup></sup> [ \<](cwchar.md) [ cctype\<>, b >](cstdlib.md), [ \<cstring >](cstring.md), [ \<achar >](cuchar.md)11, cwchar >, cwctype [ \<](cctype.md) [ \< >](cwctype.md) [ ,\<regex >](regex.md)<sup>11</sup>, [ \<문자열 >](string.md), [ \<string_view >](string-view.md)<sup>17</sup> |
 | 시간 | chrono ><sup>11</sup>, [ ctime\<>](ctime.md) [ \<](chrono.md) |
 
-<sup>11</sup> c + + 11 표준에서 추가 되었습니다.
-<sup>14</sup> 는 c + + 14 표준에 추가 되었습니다.
-<sup>17</sup> c + + 17 표준에서 추가 되었습니다.
-<sup>20</sup> 은 초안 c + + 20 standard에서 추가 되었습니다.
-<sup>는</sup> c + + 17 standard에서 사용 되지 않습니다.
-<sup>b</sup> 는 초안 c + + 20 표준에서 제거 되었습니다.
-<sup>c</sup> c + + 98 표준에서 사용 되지 않습니다.
+<sup>11</sup> C++ 11 표준에서 추가되었습니다.
+<sup>14</sup> C++ 14 표준에서 추가되었습니다.
+<sup>17</sup> C++ 17 표준에서 추가되었습니다.
+<sup>20</sup> C++ 20 표준 초안에서 추가되었습니다.
+<sup>a</sup> C++ 17 표준에서 사용되지 않습니다.
+<sup>b</sup> C++ 20 표준 초안에서 제거되었습니다.
+<sup>c</sup> C++ 98 표준에서 사용되지 않습니다.
 
 ::: moniker-end
 

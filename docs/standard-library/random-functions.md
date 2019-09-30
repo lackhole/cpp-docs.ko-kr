@@ -36,7 +36,7 @@ RealType generate_canonical(Generator& Gen);
 난수 생성기 클래스입니다.
 
 *차세대*\
-*생성기* 형식의 난수 생성기 인스턴스에 대한 참조입니다.
+*Generator* 형식의 난수 생성기 인스턴스에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
