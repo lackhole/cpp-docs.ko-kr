@@ -8,12 +8,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], creating
 - MFC dialog boxes [MFC], displaying
 ms.assetid: 1c5219ee-8b46-44bc-9708-83705d4f248b
-ms.openlocfilehash: e0b7ff31576b345ac2911e62a6e10469845eecba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6d23e4d2c9249ce248eb8092963036f2ba5cacac
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175032"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685741"
 ---
 # <a name="creating-and-displaying-dialog-boxes"></a>대화 상자 만들기 및 표시
 
@@ -23,11 +23,11 @@ ms.locfileid: "62175032"
 
 |대화 상자 형식|대화 상자를 만드는 방법|
 |-----------------|----------------------|
-|[모덜리스](../mfc/creating-modeless-dialog-boxes.md)|`CDialog`를 구성한 다음 `Create` 멤버 함수를 호출합니다.|
-|[Modal](../mfc/creating-modal-dialog-boxes.md)|`CDialog`를 구성한 다음 `DoModal` 멤버 함수를 호출합니다.|
+|[무](../mfc/creating-modeless-dialog-boxes.md)|`CDialog`를 구성한 다음 `Create` 멤버 함수를 호출합니다.|
+|[A](../mfc/creating-modal-dialog-boxes.md)|`CDialog`를 구성한 다음 `DoModal` 멤버 함수를 호출합니다.|
 
-만들 수 있습니다 원한다 면에서 대화 상자는 [메모리 내 대화 상자 템플릿](../mfc/using-a-dialog-template-in-memory.md) 생성 하는 대신 대화 상자 템플릿 리소스에서. 그러나 이는 고급 항목입니다.
+원하는 경우 대화 상자 템플릿 리소스 대신 생성 한 [메모리 내 대화 상자 템플릿에서](../mfc/using-a-dialog-template-in-memory.md) 대화 상자를 만들 수 있습니다. 그러나 이는 고급 항목입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)
+[MFC에서 대화 상자 작업](../mfc/life-cycle-of-a-dialog-box.md)

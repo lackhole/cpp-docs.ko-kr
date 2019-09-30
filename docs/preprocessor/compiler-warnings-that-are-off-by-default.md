@@ -5,16 +5,16 @@ helpviewer_keywords:
 - warnings, compiler
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-ms.openlocfilehash: d497886b22c7a90ab7cda47e46dc13daf297b192
-ms.sourcegitcommit: b4572ffcc71e6bdb0ca23221f9476cfaf4528406
+ms.openlocfilehash: ac6ad3b5bbe5f3a738dc0019a43ff08a17cf27ca
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71314476"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685720"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>기본적으로 해제되어 있는 컴파일러 경고
 
-컴파일러는 기본적으로 해제 되어 있는 경고를 지원 합니다. 대부분의 개발자는 이러한 경고를 유용 하 게 찾을 수 없기 때문입니다. 일부 경우에는 스타일 선택 이나 이전 코드의 일반적인 관용구에 대해 경고 합니다. 다른 경고는 언어에 대 한 Microsoft 확장 사용에 대 한 것입니다. 다른 경우에는 프로그래머가 종종 잘못 된 가정을 만드는 영역을 나타내므로 예기치 않은 동작이 나 정의 되지 않은 동작이 발생할 수 있습니다. 사용 하도록 설정 하면 이러한 경고 중 일부가 라이브러리 헤더에 여러 번 나타날 수 있습니다. C 런타임 라이브러리와 C++ 표준 라이브러리는 경고 수준 [/W4](../build/reference/compiler-option-warning-level.md)경고를 표시 하지 않습니다.
+컴파일러는 기본적으로 해제 되어 있는 경고를 지원 합니다. 대부분의 개발자는 이러한 경고를 유용 하 게 찾을 수 없기 때문입니다. 일부 경우에는 스타일 선택 이나 이전 코드의 일반적인 관용구에 대해 경고 합니다. 다른 경고는 언어에 대 한 Microsoft 확장 사용에 대 한 것입니다. 일부 경고는 프로그래머가 종종 잘못 된 가정을 만드는 영역을 나타내므로 예기치 않은 동작이 나 정의 되지 않은 동작이 발생할 수 있습니다. 이러한 경고를 모두 사용 하는 경우 일부는 라이브러리 헤더에 여러 번 나타날 수 있습니다. C 런타임 라이브러리와 C++ 표준 라이브러리는 경고 수준 [/W4](../build/reference/compiler-option-warning-level.md)경고를 표시 하지 않습니다.
 
 ## <a name="enable-warnings-that-are-off-by-default"></a>기본적으로 해제 된 경고 사용
 
@@ -89,7 +89,7 @@ ms.locfileid: "71314476"
 |C4587 (수준 1)|'*anonymous_structure*': 동작 변경: 생성자가 더 이상 암시적으로 호출 되지 않습니다.|
 |않습니다 (수준 1)|'*anonymous_structure*': 동작 변경: 소멸자가 더 이상 암시적으로 호출 되지 않습니다.|
 |[C4596](../error-messages/compiler-warnings/c4596.md) (수준 4)|'*identifier*': 멤버 선언 <sup>14.3</sup> <sup>Perm</sup> 의 정규화 된 이름이 잘못 되었습니다.|
-|C4598 (수준 1 및 수준 3)|' #include "*헤더*" ': 미리 컴파일된 헤더의 헤더 번호 *번호가* <sup>14.3</sup> 위치에서 현재 컴파일과 일치 하지 않습니다.|
+|C4598 (수준 1 및 수준 3)|' #include "*헤더*" ': 미리 컴파일된 헤더의 헤더 번호 *헤더 번호가* <sup>14.3</sup> 위치에서 현재 컴파일과 일치 하지 않습니다.|
 |C4599 (수준 3)|'*option* *path*': 명령줄 인수 번호는 미리 컴파일된 헤더 <sup>14.3</sup> 과 일치 *하지 않습니다.*|
 |C4605 (수준 1)|'/D*macro*'은 (는) 현재 명령줄에서 지정 되었지만 미리 컴파일된 헤더를 빌드할 때 지정 되지 않았습니다.|
 |[C4608](../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md) (수준 3)|'*union_member*'는 이미 이니셜라이저 목록의 다른 공용 구조체 멤버 '*union_member*' <sup>Perm</sup> 에서 초기화 되었습니다.|
@@ -108,7 +108,7 @@ ms.locfileid: "71314476"
 |[C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) (수준 1)|'*function*': 전용이 아닌 멤버의 시그니처에 어셈블리 전용 네이티브 형식 '*native_type*'이 (가) 있습니다.|
 |[C4710](../error-messages/compiler-warnings/compiler-warning-level-4-c4710.md) (수준 4)|'*function*': 함수가 인라인되지 있지 않습니다.|
 |[C4738](../error-messages/compiler-warnings/compiler-warning-level-3-c4738.md) (수준 3)|32비트 float 결과를 메모리에 저장하면 성능이 저하될 수 있습니다.|
-|[C4746](../error-messages/compiler-warnings/compiler-warning-c4746.md)|'*expression*'의 volatile 액세스에는/volatile:\<iso&#124;ms > 설정이 적용 됩니다. __iso_volatile_load/store 내장 함수를 사용 하는 것이 좋습니다.|
+|[C4746](../error-messages/compiler-warnings/compiler-warning-c4746.md)|'*expression*'의 volatile 액세스에는/volatile: \<iso&#124;ms > 설정이 적용 됩니다. __iso_volatile_load/store 내장 함수 사용 고려|
 |C4749 (수준 4)|조건부로 지원 됨: 비표준 레이아웃 형식 '*type*'에 적용 된 offsetof|
 |C4767 (수준 4)|섹션 이름 '*symbol*'이 8 자 보다 길어 링커에서 잘립니다.|
 |C 4768 (수준 3)|링크 사양 앞의 __declspec 특성은 무시 됩니다.|
@@ -142,15 +142,22 @@ ms.locfileid: "71314476"
 |C5029 (수준 4)|비표준 확장이 사용 됨:의 C++ 맞춤 특성은 변수, 데이터 멤버 및 태그 형식에만 적용 됩니다.|
 |C5031 (수준 4)|#pragma 경고 (pop): 다른 파일 <sup>14.1</sup> 에 푸시된 경고 상태를 표시 하지 않을 수 있습니다.|
 |C5032 (수준 4)|해당 하는 #pragma 경고 (pop) <sup>14.1</sup> #pragma 경고 (push)가 발견 됨|
-|C5034|내장 '*내장*함수를 사용 하면 함수 *함수가* 게스트 코드 <sup>15.3</sup> 로 컴파일됩니다.|
-|C5035|'*feature*' 기능을 사용 하면 함수 *함수가* 게스트 코드 <sup>15.3</sup> 로 컴파일됩니다.|
+|C5034|내장 '*내장*함수를 사용 하면 함수 *함수 이름이* 게스트 코드 <sup>15.3</sup> 로 컴파일됩니다.|
+|C5035|'*feature*' 기능을 사용 하면 함수 *함수 이름이* 게스트 코드 <sup>15.3</sup> 로 컴파일됩니다.|
 |C5036 (수준 1)|/wks를 사용 하 여 컴파일할 때 varargs 함수 포인터 변환: x86arm64 '*type1*'에서 '*type2*' <sup>15.3</sup>|
 |[C5038](../error-messages/compiler-warnings/c5038.md) (수준 4)|데이터 멤버 '*member1*'는 데이터 멤버 '*member2*' <sup>15.3</sup> 다음에 초기화 됩니다.|
 |C5039 (수준 4)|'*function*': 잠재적으로 throw 되는 함수에 대 한 포인터 또는 참조는 EHc의 extern C 함수에 전달 됩니다. 이 함수가 예외를 throw 하는 경우 정의 되지 않은 동작이 발생할 수 있습니다. <sup>15.5</sup>|
 |C5042 (수준 3)|'*function*': 블록 범위에 있는 함수 선언을 표준 C++에서 ' inline '으로 지정할 수 없습니다. ' inline ' 지정자 <sup>15.5</sup> 제거|
 |[C5045](../error-messages/compiler-warnings/c5045.md)|컴파일러는/Qspectre 스위치가 지정 <sup>15.7</sup> 된 경우 메모리 로드를 위해 스펙터 완화를 삽입 합니다.|
 
-<sup>14.1</sup> Visual Studio 2015 업데이트 1부터이 경고를 사용할 수 있습니다.\\ <sup>14.3</sup> 이 경고는 Visual Studio 2015 업데이트 3부터 사용할 수 있습니다.\\ <sup>15.3</sup> 이 경고는 Visual Studio 2017 버전 15.3부터 사용할 수 있습니다.\\ <sup>15.5</sup> 이 경고는 Visual Studio 2017 버전 15.5부터 사용할 수 있습니다.\\ <sup>15.7</sup> 이 경고는 Visual Studio 2017 버전 15.7부터 사용할 수 있습니다.\\ <sup>15.8</sup> 이 경고는 Visual Studio 2017 버전 15.8부터 사용할 수 있습니다.\\ <sup>16.0</sup> 이 경고는 Visual STUDIO 2019 RTM부터 사용할 수 있습니다.\\ <sup>Perm</sup> 이 경고는 [/permissive-](../build/reference/permissive-standards-conformance.md) 컴파일러 옵션이 설정 되지 않은 경우 해제 됩니다.
+<sup>14.1</sup> Visual Studio 2015 업데이트 1부터이 경고를 사용할 수 있습니다. <br/>
+<sup>14.3</sup> 이 경고는 Visual Studio 2015 업데이트 3부터 사용할 수 있습니다. <br/>
+<sup>15.3</sup> 이 경고는 Visual Studio 2017 버전 15.3부터 사용할 수 있습니다. <br/>
+<sup>15.5</sup> 이 경고는 Visual Studio 2017 버전 15.5부터 사용할 수 있습니다. <br/>
+<sup>15.7</sup> 이 경고는 Visual Studio 2017 버전 15.7부터 사용할 수 있습니다. <br/>
+<sup>15.8</sup> 이 경고는 Visual Studio 2017 버전 15.8부터 사용할 수 있습니다. <br/>
+<sup>16.0</sup> 이 경고는 Visual STUDIO 2019 RTM부터 사용할 수 있습니다. <br/>
+<sup>Perm</sup> 이 경고는 [/permissive-](../build/reference/permissive-standards-conformance.md) 컴파일러 옵션이 설정 되지 않은 경우 해제 됩니다.
 
 ## <a name="warnings-off-by-default-in-earlier-versions"></a>이전 버전에서 기본적으로 발생 하는 경고
 

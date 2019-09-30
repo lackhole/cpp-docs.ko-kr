@@ -10,37 +10,37 @@ helpviewer_keywords:
 - dialog boxes [MFC], OLE
 - Insert object
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
-ms.openlocfilehash: fa3d87e2cc17e297c3e6387920c6d527d8ddbe39
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 997bfc0bda05f5a2520c102cb38777b533bcef95
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153413"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685783"
 ---
 # <a name="dialog-boxes-in-ole"></a>OLE의 대화 상자
 
-사용자가 OLE 지원 응용 프로그램을 실행 하는 동안 응용 프로그램에서 사용자 정보를에서 작업을 수행 하기 위해 필요한 시간이 있습니다. MFC OLE 클래스는 다양 한 필요한 정보를 수집 하려면 대화 상자를 제공 합니다. 이 항목에서는 OLE 대화 상자에서 처리 하는 작업 및 해당 대화 상자를 표시 하는 데 필요한 클래스를 나열 합니다. OLE 대화 상자 및 해당 동작을 사용자 지정 하는 데 사용 되는 구조에 대 한 세부 정보를 참조 하세요 [MFC 참조](../mfc/mfc-desktop-applications.md)합니다.
+사용자가 OLE 사용 응용 프로그램을 실행 하는 동안 작업을 수행 하기 위해 응용 프로그램에 사용자의 정보가 필요할 수 있습니다. MFC OLE 클래스는 필요한 정보를 수집할 수 있는 여러 대화 상자를 제공 합니다. 이 항목에서는 OLE 대화 상자에서 처리 되는 작업과 해당 대화 상자를 표시 하는 데 필요한 클래스를 나열 합니다. OLE 대화 상자와 해당 동작을 사용자 지정 하는 데 사용 되는 구조에 대 한 자세한 내용은 [MFC 참조](../mfc/mfc-desktop-applications.md)를 참조 하세요.
 
-*개체를 삽입 합니다.*<br/>
-이 대화 상자 복합 문서에 사용자가 새로 만든 삽입 하거나 기존 개체를 허용 합니다. 또한 아이콘으로 항목을 표시 하도록 선택할 수 있도록 하 고 아이콘 변경 명령 단추를 활성화 합니다. 편집 메뉴에서 개체 삽입을 선택 하면이 대화 상자를 표시 합니다. 사용 된 [COleInsertDialog](../mfc/reference/coleinsertdialog-class.md) 이 대화 상자를 표시 하는 클래스입니다. 참고 MDI 응용 프로그램 자체에 삽입할 수 있습니다. SDI 응용 프로그램 아닌 컨테이너/서버 응용 프로그램 자체에 삽입할 수 없습니다.
+*개체 삽입*<br/>
+이 대화 상자에서는 사용자가 새로 만들었거나 기존 개체를 복합 문서에 삽입할 수 있습니다. 또한 사용자가 항목을 아이콘으로 표시 하도록 선택 하 고 아이콘 변경 명령 단추를 사용 하도록 설정할 수 있습니다. 사용자가 편집 메뉴에서 개체 삽입을 선택 하면이 대화 상자가 표시 됩니다. [Coleinsertdialog](../mfc/reference/coleinsertdialog-class.md) 클래스를 사용 하 여이 대화 상자를 표시할 수 있습니다. MDI 응용 프로그램은 자체에 삽입할 수 없습니다. 컨테이너/서버 응용 프로그램은 SDI 응용 프로그램이 아닌 경우 자체에 삽입할 수 없습니다.
 
-*붙여넣기*<br/>
-이 대화 상자에 사용자를가 복합 문서에 데이터를 붙여 넣을 때 사용 하는 형식을 제어할 수 있습니다. 데이터의 형식을 포함 하거나 데이터를 연결할 것인지 및 아이콘으로 표시할지 여부를 선택할 수 있습니다. 편집 메뉴에서 선택 하 여 붙여넣기 선택 하면이 대화 상자를 표시 합니다. 사용 된 [COlePasteSpecialDialog](../mfc/reference/colepastespecialdialog-class.md) 이 대화 상자를 표시 하는 클래스입니다.
+*특수 붙여넣기*<br/>
+사용자는이 대화 상자를 사용 하 여 데이터를 복합 문서에 붙여넣을 때 사용 되는 형식을 제어할 수 있습니다. 사용자는 데이터의 형식을 선택 하 고, 데이터를 포함할지 아니면 연결할지를 선택 하 고, 데이터를 아이콘으로 표시할지 여부를 선택할 수 있습니다. 사용자가 편집 메뉴에서 선택 하 여 붙여넣기를 선택 하면이 대화 상자가 표시 됩니다. [COlePasteSpecialDialog](../mfc/reference/colepastespecialdialog-class.md) 클래스를 사용 하 여이 대화 상자를 표시 합니다.
 
 *아이콘 변경*<br/>
-이 대화 상자를 사용 하면 연결 되거나 포함 된 항목을 나타내는 아이콘은 표시를 선택 합니다. 사용자 편집 메뉴에서 변경 아이콘을 선택 하거나 선택 하 여 붙여넣기 또는 변환 대화 상자에서 변경 아이콘 단추를 선택 하면이 대화 상자를 표시 합니다. 또한 표시를 사용자 개체 삽입 대화 상자를 열고 아이콘으로 표시를 선택 합니다. 사용 된 [COleChangeIconDialog](../mfc/reference/colechangeicondialog-class.md) 이 대화 상자를 표시 하는 클래스입니다.
+이 대화 상자를 통해 사용자는 연결 된 항목 또는 포함 된 항목을 나타내기 위해 표시 되는 아이콘을 선택할 수 있습니다. 사용자가 편집 메뉴에서 변경 아이콘을 선택 하거나 붙여넣기 특수 또는 변환 대화 상자에서 아이콘 변경 단추를 선택 하면이 대화 상자를 표시 합니다. 사용자가 개체 삽입 대화 상자를 열고 아이콘으로 표시를 선택 하는 경우에도 표시 합니다. [COleChangeIconDialog](../mfc/reference/colechangeicondialog-class.md) 클래스를 사용 하 여이 대화 상자를 표시 합니다.
 
-*변환*<br/>
-이 대화 상자에 사용자를가 포함 되거나 연결 된 항목의 유형을 변경할 수 있습니다. 예를 들어, 복합 문서에는 메타 파일을 포함 하 고 나중에 다른 응용 프로그램을 사용 하 여 포함 된 메타 파일을 수정 하려면 변환 대화 상자를 사용할 수 있습니다. 이 대화 상자를 클릭 하 여 일반적으로 표시 됩니다 *항목 유형을* 개체 편집 메뉴에서 선택한 다음, 계단식 메뉴에서 변환을 클릭 하 합니다. 사용 된 [COleConvertDialog](../mfc/reference/coleconvertdialog-class.md) 이 대화 상자를 표시 하는 클래스입니다. 예를 들어 MFC OLE 샘플을 실행 [OCLIENT](../overview/visual-cpp-samples.md)합니다.
+*변환할지*<br/>
+이 대화 상자를 사용 하 여 포함 되거나 연결 된 항목의 형식을 변경할 수 있습니다. 예를 들어 복합 문서에 메타 파일을 포함 하 고 나중에 다른 응용 프로그램을 사용 하 여 포함 된 메타 파일을 수정 하려는 경우 변환 대화 상자를 사용할 수 있습니다. 이 대화 상자는 일반적으로 편집 메뉴에서 *항목 유형* 개체를 클릭 한 다음 계단식 메뉴에서 변환을 클릭 하 여 표시 됩니다. [COleConvertDialog](../mfc/reference/coleconvertdialog-class.md) 클래스를 사용 하 여이 대화 상자를 표시 합니다. 예제를 보려면 MFC OLE 샘플 [OCLIENT](../overview/visual-cpp-samples.md)를 실행 합니다.
 
-*편집 링크 또는 업데이트 링크*<br/>
-링크 편집 대화 상자에 사용자를가 연결된 된 개체의 원본에 대 한 정보를 변경할 수 있습니다. 업데이트 연결 대화 상자에서 현재 대화 상자에서 연결 된 모든 항목의 원본을 확인 하 고 필요한 경우 연결 편집 대화 상자를 표시 합니다. 편집 메뉴에서 링크를 선택 하면 링크 편집 대화 상자를 표시 합니다. 연결 업데이트 대화 상자는 일반적으로 복합 문서를 처음으로 열릴 때 표시 됩니다. 하나를 사용 합니다 [COleLinksDialog](../mfc/reference/colelinksdialog-class.md) 또는 [COleUpdateDialog](../mfc/reference/coleupdatedialog-class.md) 클래스를 표시 하려면 어떤 대화 상자에 따라 합니다.
+*링크 편집 또는 링크 업데이트*<br/>
+링크 편집 대화 상자를 사용 하 여 사용자는 연결 된 개체의 원본에 대 한 정보를 변경할 수 있습니다. 업데이트 링크 대화 상자는 현재 대화 상자에 있는 모든 연결 된 항목의 원본을 확인 하 고 필요한 경우 링크 편집 대화 상자를 표시 합니다. 사용자가 편집 메뉴에서 링크를 선택할 때 링크 편집 대화 상자를 표시 합니다. 업데이트 링크 대화 상자는 일반적으로 복합 문서를 처음 열 때 표시 됩니다. 표시 하려는 대화 상자에 따라 [COleLinksDialog](../mfc/reference/colelinksdialog-class.md) 또는 [coleupdatedialog](../mfc/reference/coleupdatedialog-class.md) 클래스 중 하나를 사용 합니다.
 
 *서버 작업 중 또는 서버가 응답 하지 않음*<br/>
-서버 작업 중 대화 상자는 사용자가 항목을 활성화 하려고 하 고 서버를 현재 요청을 처리, 일반적으로 서버가 이므로 다른 사용자에 의해 사용 또는 작업 수 없는 경우에 표시 됩니다. 서버 정품 인증 요청에 전혀 응답 하지 않으면 서버가 응답 하지 대화 상자가 표시 됩니다. 이러한 대화 상자를 통해 표시 됩니다 `COleMessageFilter`OLE 인터페이스의 구현에 따라 `IMessageFilter`, 사용자를 활성화 요청을 다시 시도할지 여부를 결정할 수 있습니다. 사용 된 [COleBusyDialog](../mfc/reference/colebusydialog-class.md) 이 대화 상자를 표시 하는 클래스입니다.
+서버 작업 중 대화 상자는 사용자가 항목을 활성화 하려고 할 때 서버에서 현재 요청을 처리할 수 없는 경우 (일반적으로 다른 사용자 또는 작업에서 서버를 사용 하 고 있기 때문에) 표시 됩니다. 서버가 활성화 요청에 응답 하지 않으면 서버가 응답 하지 않습니다. 대화 상자가 표시 됩니다. 이러한 대화 상자는-1 @no__t OLE 인터페이스의 구현에 따라 `COleMessageFilter`을 통해 표시 되며, 사용자는 활성화 요청을 다시 시도할지 여부를 결정할 수 있습니다. [COleBusyDialog](../mfc/reference/colebusydialog-class.md) 클래스를 사용 하 여이 대화 상자를 표시 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [대화 상자](../mfc/dialog-boxes.md)<br/>
-[대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[MFC에서 대화 상자 작업](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [OLE](../mfc/ole-in-mfc.md)
