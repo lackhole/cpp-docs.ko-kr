@@ -29,14 +29,14 @@ RealType generate_canonical(Generator& Gen);
 *RealType*\
 부동 소수점 정수 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-*비트씩*\
+*Bits*\
 사용할 임의의 비트 수입니다.
 
-*생성기*\
+*Generator*\
 난수 생성기 클래스입니다.
 
-*차세대*\
-*생성기* 형식의 난수 생성기 인스턴스에 대한 참조입니다.
+*Gen*\
+*Generator* 형식의 난수 생성기 인스턴스에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
