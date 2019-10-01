@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /LINKREPROTARGET linker option
 - -LINKREPROTARGET linker option
 - linker repro reporting
-ms.openlocfilehash: 4912e8bc64d31e3ecc97ea25783c7329e7d7861c
-ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
+ms.openlocfilehash: d629c4c2665239d03f38569677fa579b6c8d37e0
+ms.sourcegitcommit: a361362354f6ce51eda4ffdb016b81c24cd225cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686907"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71712673"
 ---
 # <a name="linkreprotarget-link-repro-file-name"></a>/LINKREPROTARGET (링크 재현 파일 이름)
 
@@ -38,6 +38,8 @@ ms.locfileid: "71686907"
 링크 재현을 만드는 방법 및 시기에 대 한 자세한 내용은 [Microsoft C++ 도구 집합의 문제를 보고 하는 방법](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md)에 대 한 자세한 [링크 링크](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md#link-repros) 를 참조 하세요.
 
 효과를 적용 하려면 **/LINKREPROTARGET** 옵션에 대해 **/LINKREPRO** 및 [/out](out-output-file-name.md) 옵션을 설정 해야 합니다.
+
+**/LINKREPROTARGET** 는 Visual Studio 2019 버전 16.1부터 사용할 수 있습니다.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 링커 옵션을 설정하려면
 

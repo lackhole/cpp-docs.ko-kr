@@ -10,12 +10,12 @@ helpviewer_keywords:
 - libraries [C++], linking to COFF
 - LINK tool [C++], linker options
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-ms.openlocfilehash: 23cd1c3ce767cf8046e3439432db795f032dc370
-ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
+ms.openlocfilehash: c7a44be5bb21bf83d621bd57c45713bd01e22cb6
+ms.sourcegitcommit: a361362354f6ce51eda4ffdb016b81c24cd225cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685591"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71712696"
 ---
 # <a name="linker-options"></a>링커 옵션
 
@@ -88,7 +88,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md)|컴파일러에 애플리케이션이 2GB를 넘는 주소를 지원한다고 알립니다.|
 |[/LIBPATH](libpath-additional-libpath.md)|환경 라이브러리 경로 앞을 검색할 경로를 지정합니다.|
 |[/LINKREPRO](linkrepro.md)|에서 링크 재현 아티팩트를 생성할 경로를 지정 합니다.|
-|[/LINKREPROTARGET](linkreprotarget.md)|지정 된 대상을 생성 하는 경우에만 링크 재현을 생성 합니다.|
+|[/LINKREPROTARGET](linkreprotarget.md)|지정 된 대상을 생성 하는 경우에만 링크 재현을 생성 합니다. <sup>16.1</sup>|
 |[/LTCG](ltcg-link-time-code-generation.md)|링크 타임 코드 생성을 지정합니다.|
 |[/MACHINE](machine-specify-target-platform.md)|대상 플랫폼을 지정합니다.|
 |[/MANIFEST](manifest-create-side-by-side-assembly-manifest.md)|side-by-side 매니페스트 파일을 만들고 선택적으로 이진에 포함합니다.|
@@ -137,7 +137,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/WINMDDELAYSIGN](winmddelaysign-partially-sign-a-winmd.md)|winmd 파일에 공개 키를 배치하여 Windows 런타임 메타데이터 파일(.winmd)에 부분적으로 서명합니다.|
 |[/WX](wx-treat-linker-warnings-as-errors.md)|링커 경고를 오류로 처리합니다.|
 
-자세한 내용은 [Compiler-Controlled LINK Options](compiler-controlled-link-options.md)을 참조하세요.
+<sup>16.1</sup> 이 옵션은 Visual Studio 2019 버전 16.1부터 사용할 수 있습니다.
 
 ## <a name="see-also"></a>참조
 

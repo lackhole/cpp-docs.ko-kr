@@ -5,12 +5,12 @@ helpviewer_keywords:
 - warnings, compiler
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-ms.openlocfilehash: ac6ad3b5bbe5f3a738dc0019a43ff08a17cf27ca
-ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
+ms.openlocfilehash: f74c413a81a1da6398666a0c15936cb76b5a7144
+ms.sourcegitcommit: a361362354f6ce51eda4ffdb016b81c24cd225cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685720"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71712672"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>기본적으로 해제되어 있는 컴파일러 경고
 
@@ -150,13 +150,13 @@ ms.locfileid: "71685720"
 |C5042 (수준 3)|'*function*': 블록 범위에 있는 함수 선언을 표준 C++에서 ' inline '으로 지정할 수 없습니다. ' inline ' 지정자 <sup>15.5</sup> 제거|
 |[C5045](../error-messages/compiler-warnings/c5045.md)|컴파일러는/Qspectre 스위치가 지정 <sup>15.7</sup> 된 경우 메모리 로드를 위해 스펙터 완화를 삽입 합니다.|
 
-<sup>14.1</sup> Visual Studio 2015 업데이트 1부터이 경고를 사용할 수 있습니다. <br/>
-<sup>14.3</sup> 이 경고는 Visual Studio 2015 업데이트 3부터 사용할 수 있습니다. <br/>
-<sup>15.3</sup> 이 경고는 Visual Studio 2017 버전 15.3부터 사용할 수 있습니다. <br/>
-<sup>15.5</sup> 이 경고는 Visual Studio 2017 버전 15.5부터 사용할 수 있습니다. <br/>
-<sup>15.7</sup> 이 경고는 Visual Studio 2017 버전 15.7부터 사용할 수 있습니다. <br/>
-<sup>15.8</sup> 이 경고는 Visual Studio 2017 버전 15.8부터 사용할 수 있습니다. <br/>
-<sup>16.0</sup> 이 경고는 Visual STUDIO 2019 RTM부터 사용할 수 있습니다. <br/>
+<sup>14.1</sup> Visual Studio 2015 업데이트 1부터이 경고를 사용할 수 있습니다.
+<sup>14.3</sup> 이 경고는 Visual Studio 2015 업데이트 3부터 사용할 수 있습니다.
+<sup>15.3</sup> 이 경고는 Visual Studio 2017 버전 15.3부터 사용할 수 있습니다.
+<sup>15.5</sup> 이 경고는 Visual Studio 2017 버전 15.5부터 사용할 수 있습니다.
+<sup>15.7</sup> 이 경고는 Visual Studio 2017 버전 15.7부터 사용할 수 있습니다.
+<sup>15.8</sup> 이 경고는 Visual Studio 2017 버전 15.8부터 사용할 수 있습니다.
+<sup>16.0</sup> 이 경고는 Visual STUDIO 2019 RTM부터 사용할 수 있습니다.
 <sup>Perm</sup> 이 경고는 [/permissive-](../build/reference/permissive-standards-conformance.md) 컴파일러 옵션이 설정 되지 않은 경우 해제 됩니다.
 
 ## <a name="warnings-off-by-default-in-earlier-versions"></a>이전 버전에서 기본적으로 발생 하는 경고
