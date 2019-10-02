@@ -23,6 +23,6 @@ ms.locfileid: "68460048"
 
 [다른 하나의 인수를 사용하는 출력 스트림 조작자](../standard-library/other-one-argument-output-stream-manipulators.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 자료
 
 [iostream 프로그래밍](../standard-library/iostream-programming.md)

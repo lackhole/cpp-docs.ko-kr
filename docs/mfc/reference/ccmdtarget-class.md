@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CCmdTarget [MFC], OnFinalRelease
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
-ms.openlocfilehash: e1b02da9914263017d637cb07b0f3b9f56cd6aa9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 583b685295bf77910ef134776c1c4fa39baf93ad
+ms.sourcegitcommit: 4517932a67bbf2db16cfb122d3bef57a43696242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507715"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71816346"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget 클래스
 
@@ -284,7 +284,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
 ### <a name="parameters"></a>매개 변수
 
 *pIID*<br/>
-인터페이스 ID ( [GUID](/previous-versions/aa373931\(v=vs.80\)))에 대 한 포인터입니다.
+인터페이스 ID ( [GUID](/previous-versions/cc317743(v%3dmsdn.10)))에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -350,7 +350,7 @@ HRESULT GetTypeInfoOfGuid(
 로캘 식별자 ( `LCID`)입니다.
 
 *guid*<br/>
-유형 설명의 [GUID](/previous-versions/aa373931\(v=vs.80\)) 입니다.
+유형 설명의 [GUID](/previous-versions/cc317743(v%3dmsdn.10)) 입니다.
 
 *ppTypeInfo*<br/>
 `ITypeInfo` 인터페이스에 대 한 포인터에 대 한 포인터입니다.
@@ -383,7 +383,7 @@ LCID(로캘 식별자)입니다.
 
 ### <a name="remarks"></a>설명
 
-파생 된 클래스는이 멤버 함수를 재정의 해야 합니다. `GetTypeLib` 재정의 되지 않으면 TYPE_E_CANTLOADLIBRARY가 반환 됩니다. `GetTypeInfoCount` 및 `GetTypeLibCache`도 구현하는 [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) 매크로를 사용합니다.
+파생 클래스는이 멤버 함수를 재정의 해야 합니다. 재정의 되지 않는 경우 `GetTypeLib`은 TYPE_E_CANTLOADLIBRARY를 반환 합니다. `GetTypeInfoCount` 및 `GetTypeLibCache`도 구현하는 [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) 매크로를 사용합니다.
 
 ##  <a name="gettypelibcache"></a>  CCmdTarget::GetTypeLibCache
 
@@ -420,7 +420,7 @@ virtual BOOL IsInvokeAllowed(DISPID dispid);
 
 ### <a name="remarks"></a>설명
 
-가 `IsInvokeAllowed` TRUE를 `Invoke` 반환 하 `Invoke` 는 경우는 메서드를 호출 합니다. 그렇지 않으면가 실패 하 고 E_UNEXPECTED를 반환 합니다.
+@No__t-0이 TRUE를 반환 하는 경우 `Invoke`은 메서드를 호출 합니다. 그렇지 않으면 `Invoke`가 실패 하 고 E_UNEXPECTED를 반환 합니다.
 
 파생 클래스는이 함수를 재정의 하 여 적절 한 값을 반환할 수 `IsInvokeAllowed` 있습니다 (재정의 되지 않은 경우 TRUE를 반환 함). 자세한 내용은 특정 [COleControl:: IsInvokeAllowed](../../mfc/reference/colecontrol-class.md#isinvokeallowed)를 참조 하세요.
 

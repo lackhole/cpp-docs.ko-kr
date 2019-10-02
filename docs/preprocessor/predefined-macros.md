@@ -1,12 +1,17 @@
 ---
 title: 미리 정의된 매크로
 ms.custom: update_every_version
-ms.date: 04/05/2019
+ms.date: 10/01/2019
 f1_keywords:
 - _ATL_VER
 - __ATOM__
 - __AVX__
 - __AVX2__
+- __AVX512BW__
+- __AVX512CD__
+- __AVX512DQ__
+- __AVX512F__
+- __AVX512VL__
 - _CHAR_UNSIGNED
 - __CLR_VER
 - _CONTROL_FLOW_GUARD
@@ -80,6 +85,11 @@ helpviewer_keywords:
 - __ATOM__ macro
 - __AVX__ macro
 - __AVX2__ macro
+- __AVX512BW__ macro
+- __AVX512CD__ macro
+- __AVX512DQ__ macro
+- __AVX512F__ macro
+- __AVX512VL__ macro
 - _CHAR_UNSIGNED macro
 - __CLR_VER macro
 - _CONTROL_FLOW_GUARD macro
@@ -143,12 +153,12 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-ms.openlocfilehash: 15b70b0292f671d99b320c8d23598e68b47adb0d
-ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
+ms.openlocfilehash: eb75273bc8cbe5ccbf62edc82a1e7deccc605757
+ms.sourcegitcommit: 4517932a67bbf2db16cfb122d3bef57a43696242
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70273813"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71816599"
 ---
 # <a name="predefined-macros"></a>미리 정의된 매크로
 
@@ -194,9 +204,19 @@ MSVC는 미리 정의 된 추가 매크로를 지원 합니다.
 
 - **&#95; ATOM &#95; &#95;** [/Favor: ATOM](../build/reference/favor-optimize-for-architecture-specifics.md) 컴파일러 옵션이 설정 되 고 컴파일러 대상이 x86 또는 x 64 인 경우 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
-- **&#95; AVX &#95; &#95;** [/Arch: AVX](../build/reference/arch-x86.md) 또는 [/arch: AVX2](../build/reference/arch-x86.md) 컴파일러 옵션을 설정 하 고 컴파일러 대상이 x86 또는 x 64 인 경우 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
+- **&#95; AVX &#95; &#95;** [/Arch: AVX](../build/reference/arch-x86.md), [/arch: AVX2](../build/reference/arch-x86.md) 또는 [/arch: AVX512](../build/reference/arch-x86.md) 컴파일러 옵션이 설정 되 고 컴파일러 대상이 x86 또는 x 64 인 경우 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
-- **&#95; AVX2 &#95; &#95;** [/Arch: AVX2](../build/reference/arch-x86.md) 컴파일러 옵션이 설정 되 고 컴파일러 대상이 x86 또는 x 64 인 경우 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
+- **&#95; AVX2 &#95; &#95;** [/Arch: AVX2](../build/reference/arch-x86.md) 또는 [/arch: AVX512](../build/reference/arch-x86.md) 컴파일러 옵션을 설정 하 고 컴파일러 대상이 x86 또는 x 64 인 경우 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
+
+- **&#95; AVX512BW &#95; &#95;** [/Arch: AVX512](../build/reference/arch-x86.md) 컴파일러 옵션이 설정 되 고 컴파일러 대상이 x86 또는 x 64 인 경우 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
+
+- **&#95; AVX512CD &#95; &#95;** [/Arch: AVX512](../build/reference/arch-x86.md) 컴파일러 옵션이 설정 되 고 컴파일러 대상이 x86 또는 x 64 인 경우 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
+
+- **&#95; AVX512DQ &#95; &#95;** [/Arch: AVX512](../build/reference/arch-x86.md) 컴파일러 옵션이 설정 되 고 컴파일러 대상이 x86 또는 x 64 인 경우 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
+
+- **&#95; AVX512F &#95; &#95;** [/Arch: AVX512](../build/reference/arch-x86.md) 컴파일러 옵션이 설정 되 고 컴파일러 대상이 x86 또는 x 64 인 경우 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
+
+- **&#95; AVX512VL &#95; &#95;** [/Arch: AVX512](../build/reference/arch-x86.md) 컴파일러 옵션이 설정 되 고 컴파일러 대상이 x86 또는 x 64 인 경우 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
 - **&#95;기본&#95;** **문자** 형식이 UNSIGNED 인 경우 1로 정의 된 부호 없는 문자입니다. 이 값은 [/j (기본 문자 형식이 Unsigned 인 경우)](../build/reference/j-default-char-type-is-unsigned.md) 컴파일러 옵션이 설정 된 경우에 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
@@ -346,7 +366,7 @@ MSVC는 미리 정의 된 추가 매크로를 지원 합니다.
 
   - `/arch:SSE` 컴파일러 옵션이 설정 된 경우 1입니다.
 
-  - `/arch:SSE2` ,`/arch:AVX`또는 컴파일러`/arch:AVX2` 옵션이 설정 된 경우 2입니다. 컴파일러 옵션이 지정 되지 않은 `/arch` 경우이 값은 기본값입니다. 을 `/arch:AVX` 지정 하면 **&#95; &#95;AVX&#95;** 매크로도 정의 됩니다. 을 `/arch:AVX2` 지정 하면 **&#95; &#95;AVX&#95;** **및 &#95;AVX2&#95; 모두 정의 &#95;** 됩니다.
+  - `/arch:SSE2`, `/arch:AVX`, `/arch:AVX2` 또는 `/arch:AVX512` 컴파일러 옵션이 설정 된 경우 2입니다. 컴파일러 옵션이 지정 되지 않은 `/arch` 경우이 값은 기본값입니다. 을 `/arch:AVX` 지정 하면 **&#95; &#95;AVX&#95;** 매크로도 정의 됩니다. 을 `/arch:AVX2` 지정 하면 **&#95; &#95;AVX&#95;** **및 &#95;AVX2&#95; 모두 정의 &#95;** 됩니다. @No__t-0이 지정  **&#95; &#95;된 경우 AVX&#95;** ,  **&#95; &#95;AVX2&#95;** ,  **&#95; &#95;AVX512BW&#95;** ,  **&#95; &#95;AVX512CD&#95;** **, &#95;AVX512DQ&#95;, &#95;** **AVX512F&#95; AVX512VL도 정의 됩니다. &#95; &#95;** **&#95; &#95;&#95;**
 
   - 자세한 내용은 [/arch(x86)](../build/reference/arch-x86.md)를 참조하세요.
 
@@ -446,7 +466,7 @@ ATL 또는 MFC 라이브러리 버전을 식별 하는 전처리기 매크로는
 
 - **&#95;Atl&#95;** 버전 번호를 \<인코딩하는 정수 리터럴로 >에 정의 된 atl VER입니다.
 
-- **&#95;Afxver_&#95;** 에\<정의 된 mfc VER는 mfc 버전 번호를 인코딩하는 정수 리터럴로 >.
+- **&#95;MFC&#95;VER** @No__t-3afxver_ >에 정의 되어 있으며, MFC 버전 번호를 인코딩하는 정수 리터럴로.
 
 ## <a name="see-also"></a>참고자료
 
