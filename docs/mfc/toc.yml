@@ -213,7 +213,7 @@
           items:
             - name: '메모리 관리: 힙 할당'
               href: memory-management-heap-allocation.md
-            - name: '메모리 관리: 예제'
+            - name: '메모리 관리: 예'
               href: memory-management-examples.md
             - name: '메모리 관리: 크기 조정 가능한 메모리 블록'
               href: memory-management-resizable-memory-blocks.md
@@ -1001,7 +1001,7 @@
           items:
             - name: 대화 상자
               href: dialog-boxes.md
-            - name: '예제: 메뉴 명령을 통해 대화 상자 표시'
+            - name: '예: 메뉴 명령을 통해 대화 상자 표시'
               href: example-displaying-a-dialog-box-via-a-menu-command.md
             - name: 대화 상자 샘플 목록
               href: dialog-sample-list.md
@@ -1023,7 +1023,7 @@
             - name: 대화 상자의 수명 주기
               expanded: false
               items:
-                - name: 대화 상자의 수명 주기
+                - name: MFC에서 대화 상자를 통해 작업
                   href: life-cycle-of-a-dialog-box.md
                 - name: 대화 상자 만들기 및 표시
                   href: creating-and-displaying-dialog-boxes.md
