@@ -46,13 +46,13 @@ ms.locfileid: "68341130"
 | 문자열 및 문자 데이터 | [\<cctype>](cctype.md), [\<cstdlib>](cstdlib.md), [\<cstring>](cstring.md), [\<cuchar>](cuchar.md)<sup>11</sup>, [\<cwchar>](cwchar.md), [\<cwctype>](cwctype.md), [\<regex>](regex.md)<sup>11</sup>, [\<string>](string.md), [\<string_view>](string-view.md)<sup>17</sup> |
 | 시간 | [\<chrono>](chrono.md)<sup>11</sup>, [\<ctime>](ctime.md) |
 
-<sup>11</sup>은 C++ 11 표준에서 추가 되었습니다.
-<sup>14</sup>는 C++ 14 표준에서 추가 되었습니다.
-<sup>17</sup>은 C++ 17 표준에서 추가 되었습니다.
-<sup>20</sup>은 C++ 20 표준 초안에서 추가 되었습니다.
-<sup>a</sup>는 C++ 17 표준에서 제거될 예정입니다.
-<sup>b</sup>는 C++ 20 표준 초안에서 제거 되었습니다.
-<sup>c</sup>는 C++ 98 표준에서 제거될 예정입니다.
+<sup>11</sup> C++ 11 표준에서 추가되었습니다.
+<sup>14</sup> C++ 14 표준에서 추가되었습니다.
+<sup>17</sup> C++ 17 표준에서 추가되었습니다.
+<sup>20</sup> C++ 20 표준 초안에서 추가되었습니다.
+<sup>a</sup> C++ 17 표준에서 사용되지 않습니다.
+<sup>b</sup> C++ 20 표준 초안에서 제거되었습니다.
+<sup>c</sup> C++ 98 표준에서 사용되지 않습니다.
 
 ::: moniker-end
 
