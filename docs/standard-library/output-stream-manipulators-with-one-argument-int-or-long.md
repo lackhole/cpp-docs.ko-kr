@@ -13,7 +13,7 @@ ms.locfileid: "68453004"
 ---
 # <a name="output-stream-manipulators-with-one-argument-int-or-long"></a>하나의 인수를 포함하는 출력 스트림 조작자(int 또는 long)
 
-iostream 클래스 라이브러리는 매개 변수가 있는 조작자를 만들기 위한 매크로 집합을 제공합니다. 단일 **int** 또는 **long** 인수를 사용 하는 조작자는 특수 한 경우입니다. 단일 **int** 또는 **long** 인수 (예 `setw`:)를 허용 하는 출력 스트림 조작자를 만들려면 iomanip >에 \<정의 된 _smcip 매크로를 사용 해야 합니다. 이 예제에서는 지정된 수의 공백을 스트림에 삽입하는 `fillblank` 조작자를 정의합니다.
+iostream 클래스 라이브러리는 매개변수가 있는 조작자를 만들기 위한 매크로 집합을 제공합니다. 단일 **int** 또는 **long** 인수를 사용 하는 조작자는 특별한 경우입니다. 단일 **int** 또는 **long** 인수(`setw`와 같은)를 허용하는 출력 스트림 조작자를 만들려면 \<iomanip>에 정의된 _Smanip 매크로를 사용해야 합니다. 이 예제에서는 지정된 수의 공백을 스트림에 삽입하는 `fillblank` 조작자를 정의합니다.
 
 ## <a name="example"></a>예제
 
