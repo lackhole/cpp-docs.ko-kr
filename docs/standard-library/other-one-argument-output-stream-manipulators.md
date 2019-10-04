@@ -13,7 +13,7 @@ ms.locfileid: "68453444"
 ---
 # <a name="other-one-argument-output-stream-manipulators"></a>기타 하나의 인수 출력 스트림 조작자
 
-다음 예제에서는 **long** 형식인 클래스 `money`를 사용 합니다. `setpic` 조작자는 클래스 `money`의 오버로드된 스트림 삽입 연산자가 사용할 수 있는 서식 지정 "picture" 문자열을 클래스에 연결합니다. picture 문자열은 스트림 클래스의 데이터 구성원이 아니라 `money` 클래스의 정적 변수로 저장되므로 새 출력 스트림 클래스를 파생하지 않아도 됩니다.
+다음 예제에서는 **long** 형식인 `money` 클래스를 사용합니다. `setpic` 조작자는 `money` 클래스의 오버로드된 스트림 삽입 연산자가 사용할 수 있는 서식 지정 "picture" 문자열을 클래스에 연결합니다. picture 문자열은 스트림 클래스의 데이터 구성원이 아니라 `money` 클래스의 정적 변수로 저장되므로 새 출력 스트림 클래스를 파생하지 않아도 됩니다.
 
 ## <a name="example"></a>예제
 
