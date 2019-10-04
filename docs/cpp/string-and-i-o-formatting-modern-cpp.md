@@ -13,7 +13,7 @@ ms.locfileid: "66450506"
 ---
 # <a name="string-and-io-formatting-modern-c"></a>문자열 및 I/O 서식 지정(모던 C++)
 
-C++[ \<iostream >](../standard-library/iostream.md) 클래스, 함수 및 연산자 서식된 문자열 I/O를 지원 합니다. 다음 코드를 설정 하는 방법을 표시 하는 예를 들어 `cout` 16 진수로 출력 정수 형식을 지정 합니다. 형식 상태는에 전달 하는 한 번 때문에 나중에 다시 설정 하려면 현재 상태를 저장 하는 먼저 `cout`를 이런 방식으로 변경 될 때까지 유지 합니다. 코드 한 줄으로 바로 적용 되지 않습니다.
+C++[ \<iostream >](../standard-library/iostream.md) 클래스, 함수 및 연산자는 서식이 지정된 문자열 I/O를 지원합니다. 예를 들어 다음 코드는 정수를 16진수로 출력하도록 `cout`을 설정하는 방법을 보여줍니다. 첫째, 서식 상태가 `cout`에 전달되면 변경될 때까지 그대로 유지되므로 나중에 다시 설정하기 위해 현재 상태를 저장합니다. 한 줄의 코드에만 적용되는 것은 아닙니다.
 
 ```cpp
 #include <iostream>
@@ -53,7 +53,7 @@ int main()
 
 - 간편함: 표준 Posix와 유사한 형식 문자열입니다.
 
-하지만 `Boost.Format` 기반으로 하는 C++ [ \<iostream >](../standard-library/iostream-programming.md) 시설에 안전 하 고 확장할 수는 없는 성능 최적화. 성능 최적화가 필요하면 빠르고 사용하기 쉬운 C [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) 및 [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)를 고려하십시오. 그러나 확장 가능한 또는 취약성 으로부터 안전 하 게 되지 않습니다. (안전한 버전이 존재하지만 성능이 약간 저하됩니다. 자세한 내용은 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) 및 [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md))를 참조하십시오.
+`Boost.Format`은 안전하고 확장 가능한 C++ [ \<iostream >](../standard-library/iostream-programming.md) 기능을 기반으로 하고 있지만 성능 최적화가 되지는 않았습니다. 성능 최적화가 필요한 경우 빠르고 사용하기 쉬운 C [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)나 [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)를 고려하십시오. 그러나 취약점으로 인하여 확장 가능하거나 안전하지 않습니다. 그러나 확장 가능한 또는 취약성 으로부터 안전 하 게 되지 않습니다. (안전한 버전이 존재하지만 성능이 약간 저하됩니다. 자세한 내용은 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) 및 [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md))를 참조하세요.
 
 다음 코드는 Boost 서식 지정 기능 중 일부를 보여 줍니다.
 
