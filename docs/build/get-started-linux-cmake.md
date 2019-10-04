@@ -4,12 +4,12 @@ description: 이 자습서에는 Linux 및 Windows를 대상으로 하는 Visual
 author: mikeblome
 ms.topic: tutorial
 ms.date: 03/05/2019
-ms.openlocfilehash: f184cc2ce3eaf3adcc936bd723019956b5b23dc9
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: cd01d5e389bda46fbb05d297ece8e68ef2265725
+ms.sourcegitcommit: c53a3efcc5d51fc55fa57ac83cca796b33ae888f
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220865"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71960722"
 ---
 # <a name="tutorial-create-c-cross-platform-projects-in-visual-studio"></a>자습서: Visual Studio에서 C++ 플랫폼 간 프로젝트 만들기 
 
@@ -24,16 +24,16 @@ Windows에서는 더 이상 Visual Studio C 및 C++ 개발을 지원하지 않�
 > * Linux 머신에 대한 연결 추가
 > * Linux에서 동일한 대상 빌드 및 디버그
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 - 플랫폼 간 C++ 개발용 Visual Studio 설정
     - 먼저 [Visual Studio가 설치](https://visualstudio.microsoft.com/vs/)되어야 합니다. 다음으로, **C++를 사용한 데스크톱 개발** 및 **C++를 사용한 Linux 개발 워크로드**가 설치되었는지를 확인합니다. 이 최소 설치만 3GB이며 다운로드 속도에 따라 설치는 10분 넘게 걸리지 않습니다.
 - 플랫폼 간 C++ 개발용 Linux 머신 설정
     - Visual Studio에는 특정 버전의 Linux가 필요하지 않습니다. OS는 Linux(WSL)용 VM, 클라우드 또는 Windows 하위 시스템에 있는 물리적 머신에서 실행될 수 있습니다. 하지만 이 자습서의 경우 그래픽 환경이 필수입니다. 따라서 WSL은 명령줄 작업에 주로 사용되므로 권장되지 않습니다.
-    - Linux 머신에서 Visual Studio에 필요한 도구는 다음과 같습니다. C++ 컴파일러, GDB, ssh 및 zip Debian 기반 시스템에서는 다음과 같은 종속성을 설치할 수 있습니다.
+    - Linux 머신에서 Visual Studio에 필요한 도구는 다음과 같습니다. C++컴파일러, GDB, ssh, rsync 및 zip이 있습니다. Debian 기반 시스템에서는 다음과 같은 종속성을 설치할 수 있습니다.
     
     ```cmd
-        sudo apt install -y openssh-server build-essential gdb zip
+        sudo apt install -y openssh-server build-essential gdb rsync zip
     ```
     - Visual Studio에서는 서버 모드를 사용하도록 설정(3.8 이상)한 최신 버전의 CMake가 Linux 머신에 설치되어야 합니다. Microsoft에서는 모든 Linux 배포판에 설치할 수 있는 CMake의 유니버설 빌드를 제공합니다. 이 빌드를 사용하여 최신 기능이 설치되어 있는지 확인하는 것이 좋습니다. GitHub의 [CMake 리포지토리의 Microsoft 포크](https://github.com/Microsoft/CMake/releases)에서 CMake 이진 파일을 가져올 수 있습니다. 해당 페이지로 이동하고, Linux 머신에 시스템 아키텍처와 일치하는 버전을 다운로드한 다음, 실행 파일로 표시합니다.
     
@@ -95,7 +95,21 @@ CMake를 사용하는 폴더를 열 때 Visual Studio에서는 자동으로 CMak
 
 3. 해당 파일이 디스크의 어디에 있든지에 관계 없이 CMake 대상 보기에서 노드를 확장하여 해당 소스 코드 파일을 확인하세요.
 
-## <a name="set-a-breakpoint-build-and-run"></a>중단점, 빌드 및 실행 설정
+## <a name="add-an-explicit-windows-x64-debug-configuration"></a>명시적 Windows x64-Debug 구성 추가
+
+Visual Studio는 Windows 용 기본 **X64 디버그** 구성을 만듭니다. 구성을 통해 Visual Studio가 CMake에서 사용하려는 대상 플랫폼을 이해할 수 있습니다. 기본 구성은 디스크에 표시되지 않습니다. 구성을 명시적으로 추가하면 Visual Studio에서는 지정된 모든 구성에 대한 설정이 포함된 CMakeSettings.json이라는 파일을 만듭니다. 
+
+1. 도구 모음에서 구성 드롭다운을 클릭하고 **구성 관리…** 를 선택하여 새 구성을 추가합니다.
+
+    ![구성 관리 드롭다운](media/cmake-bullet3-manage-configurations.png)
+
+    그러면 [Cmake 설정 편집기](customize-cmake-settings.md)가 열립니다. 편집기의 왼쪽에 있는 녹색 더하기 기호를 선택 하 여 새 구성을 추가 합니다. **CMakeSettings에 구성 추가** 대화 상자가 나타납니다.
+
+    ![CMakeSettings에 구성 추가 대화 상자](media/cmake-bullet3-add-configuration-x64-debug.png)
+
+    이 대화 상자에서는 만들 수 있는 모든 사용자 지정 구성뿐만 아니라 Visual Studio에서 제공되는 모든 구성을 보여줍니다. **X64 디버그** 구성을 계속 사용 하려는 경우에는 먼저 추가 해야 합니다. **x64-Debug**를 선택하고 **선택**을 클릭합니다. 그러면 **x64-Debug** 구성으로 CMakeSettings. json 파일이 생성 되 고 구성이 디스크에 저장 됩니다. CMakeSettings.json에서 직접 이름 매개 변수를 변경하여 구성에 대해 원하는 이름을 사용할 수 있습니다.
+
+## <a name="set-a-breakpoint-build-and-run-on-windows"></a>Windows에서 중단점 설정, 빌드 및 실행 
 
 이 단계에서는 글머리 기호 물리학 라이브러리를 보여주는 예제 프로그램을 디버깅합니다.
   
@@ -121,23 +135,9 @@ CMake를 사용하는 폴더를 열 때 Visual Studio에서는 자동으로 CMak
 
 6. 애플리케이션 창으로 마우스를 이동시킨 다음, 중단점을 트리거하는 단추를 클릭하세요. 그러면 실행이 일시 중지된 줄을 표시하는 편집기를 사용하여 Visual Studio를 전경으로 가져옵니다. 애플리케이션 변수, 개체, 스레드 및 메모리를 검사할 수 있습니다. 대화형으로 코드를 실행할 수 있습니다. **계속**을 클릭하여 애플리케이션을 다시 시작하고 정상적으로 종료하거나 중지 단추를 사용하여 Visual Studio 내에서 실행을 중단시킬 수 있습니다.
 
-## <a name="add-an-explicit-windows-x64-debug-configuration"></a>명시적 Windows x64-Debug 구성 추가
-
-지금까지는 Windows에서 기본 **x64-Debug** 구성을 사용했습니다. 구성을 통해 Visual Studio가 CMake에서 사용하려는 대상 플랫폼을 이해할 수 있습니다. 기본 구성은 디스크에 표시되지 않습니다. 구성을 명시적으로 추가하면 Visual Studio에서는 지정된 모든 구성에 대한 설정이 포함된 CMakeSettings.json이라는 파일을 만듭니다. 
-
-1. 도구 모음에서 구성 드롭다운을 클릭하고 **구성 관리…** 를 선택하여 새 구성을 추가합니다.
-
-    ![구성 관리 드롭다운](media/cmake-bullet3-manage-configurations.png)
-
-    **CMakeSettings에 구성 추가** 대화 상자가 나타납니다.
-
-    ![CMakeSettings에 구성 추가 대화 상자](media/cmake-bullet3-add-configuration-x64-debug.png)
-
-    이 대화 상자에서는 만들 수 있는 모든 사용자 지정 구성뿐만 아니라 Visual Studio에서 제공되는 모든 구성을 보여줍니다. 기본 **x64-Debug** 구성을 계속 사용하려는 경우 해당 구성이 추가된 첫 번째 구성이어야 합니다. 해당 구성을 추가하여 Windows와 Linux 구성을 전환할 수 있습니다. **x64-Debug**를 선택하고 **선택**을 클릭합니다. 그러면 **x64-Debug**의 구성을 사용하여 CMakeSettings.json 파일을 생성하고, 기본값 대신 해당 구성을 사용하도록 Visual Studio를 전환합니다. 구성 드롭다운이 더 이상 "(default)"를 이름의 일부로 표시하지 않습니다. CMakeSettings.json에서 직접 이름 매개 변수를 변경하여 구성에 대해 원하는 이름을 사용할 수 있습니다.
-
 ##  <a name="add-a-linux-configuration-and-connect-to-the-remote-machine"></a>Linux 구성 추가 및 원격 머신에 연결
 
-1. 이제 Linux 구성을 추가하세요. **솔루션 탐색기** 보기에서 CMakeSettings.json 파일을 마우스 오른쪽 단추로 클릭하고 **구성 추가**를 선택합니다. 이전과 동일한 CMakeSettings에 구성 추가 대화 상자가 표시됩니다. 이번에는 **Linux-Debug**를 선택한 다음, CMakeSettings.json 파일을 저장합니다. 
+1. 이제 Linux 구성을 추가하세요. **솔루션 탐색기** 보기에서 CMakeSettings.json 파일을 마우스 오른쪽 단추로 클릭하고 **구성 추가**를 선택합니다. 이전과 동일한 CMakeSettings에 구성 추가 대화 상자가 표시됩니다. **Linux-Debug** this time을 선택 하 고 CMakeSettings. json 파일을 저장 합니다 (ctrl + s). 
 2. 이제 구성 드롭다운 목록에서 **Linux-Debug**를 선택합니다.
 
     ![X64-Debug 및 Linux-Debug 옵션을 포함한 구성 시작 드롭다운](media/cmake-bullet3-linux-configuration-item.png)
@@ -148,7 +148,7 @@ CMake를 사용하는 폴더를 열 때 Visual Studio에서는 자동으로 CMak
 
     원격 연결을 이미 추가한 경우 **도구 > 옵션 > 플랫폼 간 > 연결 관리자**로 이동하여 이 창을 열 수 있습니다.
  
-3. Linux 머신에 연결 정보를 제공하고 **연결**을 클릭합니다. Visual Studio에서는 CMakeSettings.json처럼 **Linux-Debug**에 대한 기본값으로 해당 머신을 추가합니다. 또한 머신을 사용하면 해당 머신에 특정된 IntelliSense를 받을 수 있도록 원격 머신의 헤더를 끌어옵니다. 이제 Visual Studio에서는 원격 머신에 파일을 보낸 다음, 거기에서 CMake 캐시를 생성합니다. 작업이 완료되면 Visual Studio는 원격 Linux 머신과 동일한 원본 베이스를 사용하도록 구성됩니다. 이러한 단계는 네트워크 속도와 원격 머신의 기능에 따라 다소 시간이 걸릴 수 있습니다. CMake 출력 창에 "대상 정보 추출 완료" 메시지가 나타나면 이 작업이 완료되었음을 알 수 있습니다.
+3. [Linux 컴퓨터에 연결 정보] (computer.md)를 제공 하 고 **연결**을 클릭 합니다. Visual Studio는 **Linux 디버그**에 대 한 기본 연결로 CMakeSettings에 해당 컴퓨터를 추가 합니다. 또한 원격 컴퓨터에서 헤더를 끌어와 [해당 원격 연결과 관련 된 IntelliSense](https://docs.microsoft.com/en-us/cpp/linux/configure-a-linux-project?view=vs-2019#remote_intellisense)를 가져오도록 합니다. 이제 Visual Studio는 원격 컴퓨터에 파일을 보내고 원격 시스템에서 CMake cache를 생성 합니다. 이러한 단계는 네트워크 속도와 원격 머신의 기능에 따라 다소 시간이 걸릴 수 있습니다. CMake 출력 창에 "대상 정보 추출 완료" 메시지가 나타나면 이 작업이 완료되었음을 알 수 있습니다.
 
 ## <a name="set-a-breakpoint-build-and-run-on-linux"></a>Linux에서 중단점, 빌드 및 실행 설정
 
