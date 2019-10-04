@@ -4,12 +4,12 @@ ms.date: 10/01/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 52ca34ef8522ada1881e2f7f5df212167c64c919
-ms.sourcegitcommit: 4517932a67bbf2db16cfb122d3bef57a43696242
+ms.openlocfilehash: 168f5b0aac34757a9c2d73bcebc908a0d58721fe
+ms.sourcegitcommit: b85e1db6b7d4919852ac6843a086ba311ae97d40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816486"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71925580"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio의 CMake 프로젝트
 
@@ -58,12 +58,6 @@ Visual Studio에서는 **Cmakesettings. json** 이라는 파일을 사용 하 �
 
 > [!NOTE]
 > 다른 종류의 열려 있는 폴더 프로젝트의 경우 다음과 같은 두 개의 추가 JSON 파일이 사용 됩니다. **Cppproperties.json** 및 작업을 **비교**합니다. 이 두 가지 모두 CMake 프로젝트와 관련이 없습니다.
-
-## <a name="import-an-existing-cache"></a>기존 캐시 가져오기
-
-기존 CMakeCache.txt 파일을 가져오면 Visual Studio에서 자동으로 사용자 지정 변수를 추출하고 이에 따라 미리 채워진 **CMakeSettings.json** 파일을 만듭니다. 원래 캐시는 어떤 방식으로든 수정되지 않으며, 명령줄 또는 생성하는 데 사용된 도구 또는 IDE를 통해 계속 사용할 수 있습니다. 새 **Cmakesettings. json** 파일은 프로젝트의 루트 Cmakesettings .txt와 함께 배치 됩니다. Visual Studio에서는 설정 파일을 기반으로 하여 새 캐시를 생성합니다. **도구 > 옵션 > cmake 일반** 대화 상자에서 자동 캐시 생성을 재정의할 수 있습니다.
-
-캐시의 모든 항목을 가져오지는 않습니다. 생성기 및 컴파일러 위치와 같은 속성은 IDE에서 제대로 작동하는 것으로 알려진 기본값으로 대체됩니다.
 
 ## <a name="open-an-existing-cache"></a>기존 캐시 열기
 
