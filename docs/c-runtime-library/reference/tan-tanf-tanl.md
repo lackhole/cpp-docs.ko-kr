@@ -1,11 +1,11 @@
 ---
 title: tan, tanf, tanl
 ms.date: 04/10/2018
-apiname:
+api_name:
 - tan
 - tanf
 - tanl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - tan
 - tanf
@@ -32,12 +35,12 @@ helpviewer_keywords:
 - tanf function
 - trigonometric functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
-ms.openlocfilehash: 79a374142a914e8c2c7cf5c094d443b16e4bce88
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c79c56555e04c865b70d52a6b1a6e3da1ce94c87
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258628"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946895"
 ---
 # <a name="tan-tanf-tanl"></a>tan, tanf, tanl
 
@@ -63,16 +66,16 @@ long double tan( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **tan** 의 탄젠트를 반환 하는 함수 *x*합니다. 하는 경우 *x* 가 보다 큰 263 같거나 작거나 같거나-263, 결과에 중요 한 손실이 발생 합니다.
+**Tan** 함수는 *x*의 탄젠트를 반환 합니다. *X* 가 263 보다 크거나 같은 경우 또는-263 보다 작거나 같은 경우 결과에 중요 한 손실이 발생 합니다.
 
-|입력|SEH 예외|**Matherr** 예외|
+|입력|SEH 예외|**Matherr** 발생할|
 |-----------|-------------------|-------------------------|
 |± QNAN,IND|없음|_DOMAIN|
-|INF|**INVALID**|_DOMAIN|
+|± INF|**INVALID**|_DOMAIN|
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **tan** 및 반환 하는 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **tan** 항상 받아서 반환 **double**합니다.
+는 C++ 오버 로드를 허용 하므로 **float** 또는 **long** **double** 값을 사용 하 고 반환 하는 **tan** 오버 로드를 호출할 수 있습니다. C 프로그램에서 **tan** 은 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

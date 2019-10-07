@@ -1,9 +1,9 @@
 ---
 title: _fileno
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fileno
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _fileno
 helpviewer_keywords:
@@ -24,14 +27,14 @@ helpviewer_keywords:
 - _fileno function
 - streams, getting file handles
 ms.assetid: 86474174-2f17-4100-bcc4-352dd976c7b5
-ms.openlocfilehash: 682ab4b01a663bd9a6314138aa692b1c05b7437a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 586e390e100f5dc46a49b99c007016cf23ac68f0
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333770"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957212"
 ---
-# <a name="fileno"></a>_fileno
+# <a name="_fileno"></a>_fileno
 
 스트림에 연결된 파일 설명자를 가져옵니다.
 
@@ -50,16 +53,16 @@ int _fileno(
 
 ## <a name="return-value"></a>반환 값
 
-**_fileno** 파일 설명자를 반환 합니다. 반환되는 오류가 없습니다. 경우에 결과가 정의 되지 않습니다 *스트림을* 열려 있는 파일을 지정 하지 않습니다. 스트림이 **NULL**하십시오 **_fileno** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행이 함수는-1 반환 하 고 집합을 계속 하도록 허용 된 경우 **errno** 하 **EINVAL**합니다.
+**_fileno** 는 파일 설명자를 반환 합니다. 반환되는 오류가 없습니다. *스트림이* 열려 있는 파일을 지정 하지 않으면 결과가 정의 되지 않습니다. Stream이 **NULL**인 경우 **_Fileno** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속해서 실행하도록 허용된 경우 이 함수는 -1을 반환하고 **errno**를 **EINVAL**로 설정합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 > [!NOTE]
-> 하는 경우 **stdout** 하거나 **stderr** 연결 되어 있지 않습니다 (예를 들어 콘솔 창이 없는 Windows 응용 프로그램)에 출력 스트림을 사용 하 여 반환 된 파일 설명자는-2입니다. 이전 버전에서 반환된 파일 설명자는 -1이었습니다. 이렇게 변경되어 애플리케이션이 이 조건을 오류와 구분할 수 있습니다.
+> **Stdout** 또는 **stderr** 이 출력 스트림과 연결 되어 있지 않은 경우 (예: 콘솔 창이 없는 Windows 응용 프로그램에서) 반환 된 파일 설명자는-2입니다. 이전 버전에서 반환된 파일 설명자는 -1이었습니다. 이렇게 변경되어 애플리케이션이 이 조건을 오류와 구분할 수 있습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_fileno** 현재 연결 된 파일 설명자를 반환 하는 루틴 *스트림*합니다. 이 루틴은 함수 및 매크로로 구현됩니다. 구현 선택에 대한 자세한 내용은 [함수와 매크로 중 선택](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md)을 참조하세요.
+**_Fileno** 루틴은 현재 *스트림과*연결 된 파일 설명자를 반환 합니다. 이 루틴은 함수 및 매크로로 구현됩니다. 구현 선택에 대한 자세한 내용은 [함수와 매크로 중 선택](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

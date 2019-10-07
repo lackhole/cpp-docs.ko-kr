@@ -1,12 +1,12 @@
 ---
 title: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ungetch_nolock
 - _ungetwch_nolock
 - _ungetwch
 - _ungetch
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ungetch_nolock
 - ungetwch
@@ -44,14 +47,14 @@ helpviewer_keywords:
 - ungetwch_nolock function
 - _ungetwch function
 ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
-ms.openlocfilehash: 7407d26606bd5242c430961faa4f60090b83f036
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2f6b782334df710ac9fe6359fda77b40a31e060c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62268873"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945915"
 ---
-# <a name="ungetch-ungetwch-ungetchnolock-ungetwchnolock"></a>_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
+# <a name="_ungetch-_ungetwch-_ungetch_nolock-_ungetwch_nolock"></a>_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 
 콘솔에서 읽은 마지막 문자를 다시 푸시합니다.
 
@@ -82,11 +85,11 @@ wint_t _ungetwch_nolock(
 
 ## <a name="return-value"></a>반환 값
 
-문자를 반환 하는 두 함수 모두 *c* 성공 합니다. 오류가 발생 하는 경우 **_ungetch** 의 값을 반환 **EOF** 하 고 **_ungetwch** 반환 **WEOF**합니다.
+성공할 경우 두 함수는 모두 문자 *c* 를 반환 합니다. 오류가 발생 하면 **_ungetch** 는 **EOF** 값을 반환 하 고 **_Ungetwch** 는 **weof**를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 문자를 푸시 *c* 콘솔로 다시 발생 *c* 읽은 다음 문자가 되도록 **_getch** 또는 **_getche** (또는 **_getwch** 하거나 **_getwche**). **_ungetch** 하 고 **_ungetwch** 는 다음 읽기 이전 두 번 이상 호출 하는 경우 실패 합니다. 합니다 *c* 인수 되지 않을 수 있습니다 **EOF** (또는 **WEOF**).
+이러한 함수는 *c* 문자를 콘솔에 다시 푸시하여 *c* 가 **_getch** 또는 **_getche** (또는 **_getwch** 또는 **_getwche**)에서 읽은 다음 문자가 되도록 합니다. 다음 읽기 전에 두 번 이상 호출 되는 경우 **_ungetch** 및 **_ungetwch** fail이 실패 합니다. *C* 인수는 **EOF** (또는 **weof**) 일 수 없습니다.
 
 **_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 이러한 버전에서는 다른 스레드를 잠그는 오버헤드가 발생하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 

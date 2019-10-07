@@ -43,10 +43,10 @@ helpviewer_keywords:
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
 ms.openlocfilehash: 0f8fe228b804538b6a0d0377f05d79c34e787587
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69514226"
 ---
 # <a name="image-editor-for-icons-c"></a>아이콘 (C++)에 대 한 이미지 편집기
@@ -100,7 +100,7 @@ ms.locfileid: "69514226"
 |**Width**|각 타일 블록의 너비를 지정 합니다.<br/><br/>이 속성은 일정 한 간격으로 정렬 된 여러 이미지를 포함 하는 비트맵을 그릴 때 유용 합니다.|
 |**높이**|각 타일 블록의 높이를 지정 합니다.<br/><br/>이 속성은 일정 한 간격으로 정렬 된 여러 이미지를 포함 하는 비트맵을 그릴 때 유용 합니다.|
 
-## <a name="toolbar"></a>도구 모음
+## <a name="toolbar"></a>Toolbar
 
 **이미지 편집기** 도구 모음에는 그리기, 그리기, 텍스트 입력, 지우기 및 뷰 조작을 위한 도구가 포함 되어 있습니다. 또한 각 도구를 사용 하기 위한 옵션을 선택할 수 있는 옵션 선택 기가 포함 되어 있습니다. 예를 들어 다양 한 브러시 너비, 확대 비율 및 선 스타일에서 선택할 수 있습니다.
 
@@ -217,7 +217,7 @@ Windows 응용 프로그램의 아이콘에 텍스트를 추가 하 고 텍스�
 
 없음
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
 [아이콘](/windows/win32/menurc/icons)

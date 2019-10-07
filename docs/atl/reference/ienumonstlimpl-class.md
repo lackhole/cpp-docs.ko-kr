@@ -15,16 +15,16 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumOnSTLImpl class
 ms.assetid: 1789e77b-88b8-447d-a490-806b918912ce
-ms.openlocfilehash: 8ff29522351b542d0b674bc173040d4468d00f1c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7cf777f3ff0d298f224157735a06bf57a2c10cf5
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275271"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495868"
 ---
 # <a name="ienumonstlimpl-class"></a>IEnumOnSTLImpl 클래스
 
-이 클래스 정의 기반으로 하는 열거자 인터페이스는 C++ 표준 라이브러리 컬렉션입니다.
+이 클래스는 C++ 표준 라이브러리 컬렉션을 기반으로 하는 열거자 인터페이스를 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,8 +36,8 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 
 #### <a name="parameters"></a>매개 변수
 
-*Base*<br/>
-COM 열거자입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 예입니다.
+*하단*<br/>
+COM 열거자입니다. 예는 [IEnumString](/windows/win32/api/objidl/nn-objidl-ienumstring) 을 참조 하세요.
 
 *piid*<br/>
 열거자 인터페이스의 인터페이스 ID에 대 한 포인터입니다.
@@ -46,7 +46,7 @@ COM 열거자입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-obji
 열거자 인터페이스에 의해 노출 되는 항목의 형식입니다.
 
 *복사*<br/>
-A [복사 정책 클래스](../../atl/atl-copy-policy-classes.md)합니다.
+[복사 정책 클래스](../../atl/atl-copy-policy-classes.md)입니다.
 
 *CollType*<br/>
 C++ 표준 라이브러리 컨테이너 클래스입니다.
@@ -57,30 +57,30 @@ C++ 표준 라이브러리 컨테이너 클래스입니다.
 
 |이름|설명|
 |----------|-----------------|
-|[IEnumOnSTLImpl::Clone](#clone)|구현의 **복제**합니다.|
+|[IEnumOnSTLImpl::Clone](#clone)|**복제본**의 구현입니다.|
 |[IEnumOnSTLImpl::Init](#init)|열거자를 초기화합니다.|
-|[IEnumOnSTLImpl::Next](#next)|구현의 **다음**합니다.|
-|[IEnumOnSTLImpl::Reset](#reset)|구현의 **재설정**합니다.|
-|[IEnumOnSTLImpl::Skip](#skip)|구현의 **Skip**합니다.|
+|[IEnumOnSTLImpl::Next](#next)|**다음**의 구현입니다.|
+|[IEnumOnSTLImpl::Reset](#reset)|**Reset**의 구현입니다.|
+|[IEnumOnSTLImpl::Skip](#skip)|**Skip**의 구현입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
 |이름|설명|
 |----------|-----------------|
-|[IEnumOnSTLImpl::m_iter](#m_iter)|컬렉션에서 열거자의 현재 위치를 나타내는 반복기입니다.|
-|[IEnumOnSTLImpl::m_pcollection](#m_pcollection)|에 대 한 포인터를 C++ 항목을 열거할 수를 보유 하는 표준 라이브러리 컨테이너입니다.|
-|[IEnumOnSTLImpl::m_spUnk](#m_spunk)|`IUnknown` 컬렉션을 제공 하는 개체의 포인터입니다.|
+|[IEnumOnSTLImpl::m_iter](#m_iter)|컬렉션 내에서 열거자의 현재 위치를 나타내는 반복기입니다.|
+|[IEnumOnSTLImpl::m_pcollection](#m_pcollection)|열거할 항목을 보유 C++ 하는 표준 라이브러리 컨테이너에 대 한 포인터입니다.|
+|[IEnumOnSTLImpl::m_spUnk](#m_spunk)|컬렉션을 제공 하는 개체의 포인터입니다.`IUnknown`|
 
 ## <a name="remarks"></a>설명
 
-`IEnumOnSTLImpl` 열거 되 고 있는 항목에 저장 되어 있는 COM 열거자 인터페이스에 대 한 구현을 제공 된 C++ 호환 표준 라이브러리 컨테이너입니다. 이 클래스는 비슷합니다는 [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) 열거자 인터페이스에 대 한 구현을 제공 하는 클래스 배열을 기반으로 합니다.
+`IEnumOnSTLImpl`열거 되는 항목이 C++ 표준 라이브러리 호환 컨테이너에 저장 되는 COM 열거자 인터페이스에 대 한 구현을 제공 합니다. 이 클래스는 배열을 기반으로 하는 열거자 인터페이스에 대 한 구현을 제공 하는 [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) 클래스와 유사 합니다.
 
 > [!NOTE]
->  참조 [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#init) 간의 추가 차이점에 대 한 자세한 내용은 `CComEnumImpl` 고 `IEnumOnSTLImpl`입니다.
+>  `CComEnumImpl` 및 `IEnumOnSTLImpl` 간의 추가 차이점에 대한 자세한 내용은 [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#init)를 참조하십시오.
 
-일반적으로 *되지* 이 인터페이스 구현에서 파생 하 여 사용자 지정 열거자 클래스를 만들어야 합니다. ATL 제공한 열거자에 따라 사용 하려는 경우는 C++ 의 인스턴스를 만드는 일반적인 것이 표준 라이브러리 컨테이너 [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md), 에서파생하여열거자를반환하는컬렉션클래스를만들려면[ ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md)합니다.
+일반적으로이 인터페이스 구현에서 파생 하 여 사용자 고유의 열거자 클래스를 만들 필요는 *없습니다* . C++ 표준 라이브러리 컨테이너를 기반으로 ATL 제공 열거자를 사용 하려는 경우 [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)의 인스턴스를 만들거나 [ICollectionOnSTLImpl](../../atl/reference/icollectiononstlimpl-class.md)에서 파생 하 여 열거자를 반환 하는 컬렉션 클래스를 만드는 것이 더 일반적입니다.
 
-그러나 (예를 들어 하나 열거자 인터페이스 외에 인터페이스를 노출 하는) 사용자 지정 열거자를 제공 해야 수행 하는 경우이 클래스에서 파생할 수 있습니다. 이런에서 것을 재정의 해야 합니다 [복제](#clone) 고유한 구현을 제공 하는 방법입니다.
+그러나 사용자 지정 열거자를 제공 해야 하는 경우 (예: 열거자 인터페이스 외에 인터페이스를 노출 하는 경우)이 클래스에서 파생 될 수 있습니다. 이 경우 사용자 고유의 구현을 제공 하기 위해 [Clone](#clone) 메서드를 재정의 해야 할 가능성이 높습니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -90,7 +90,7 @@ C++ 표준 라이브러리 컨테이너 클래스입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlcom.h
+**헤더:**
 
 ##  <a name="init"></a>  IEnumOnSTLImpl::Init
 
@@ -105,10 +105,10 @@ HRESULT Init(
 ### <a name="parameters"></a>매개 변수
 
 *pUnkForRelease*<br/>
-[in] `IUnknown` 유지 해야 하는 활성 열거자의 수명 동안 개체의 포인터입니다. 이러한 개체가 없는 경우 NULL을 전달 합니다.
+진행 열거자의 수명 동안 유지 해야 하는 개체의 포인터입니다.`IUnknown` 이러한 개체가 없는 경우 NULL을 전달 합니다.
 
 *collection*<br/>
-에 대 한 참조는 C++ 항목을 열거할 수를 보유 하는 표준 라이브러리 컨테이너입니다.
+열거할 항목을 보유 C++ 하는 표준 라이브러리 컨테이너에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -116,13 +116,13 @@ HRESULT Init(
 
 ### <a name="remarks"></a>설명
 
-전달 하는 경우 `Init` 다른 개체에 저장 된 컬렉션에 대 한 참조를 사용할 수는 *pUnkForRelease* 매개 변수를 보유 하는 컬렉션 및 개체를 사용할 수 있는지에 대 한 열거자가 필요할 만큼 합니다.
+다른 개체에 `Init` 보관 된 컬렉션에 대 한 참조를 전달 하는 경우 *pUnkForRelease* 매개 변수를 사용 하 여 개체 및 개체를 포함 하는 컬렉션을 열거자가 필요로 하는 한에 사용할 수 있는지 확인할 수 있습니다.
 
-모든 클라이언트에 다시 열거자 인터페이스에 대 한 포인터를 전달 하기 전에이 메서드를 호출 해야 합니다.
+열거자 인터페이스에 대 한 포인터를 클라이언트에 다시 전달 하기 전에이 메서드를 호출 해야 합니다.
 
 ##  <a name="clone"></a>  IEnumOnSTLImpl::Clone
 
-이 방법의 구현을 제공 합니다 **복제** 형식의 개체를 만들어 메서드 `CComEnumOnSTL`, 동일한 컬렉션 및 현재 개체에서 사용 하는 반복기를 사용 하 여 초기화 하 고 인터페이스를 반환 합니다 새로 만든된 개체입니다.
+이 메서드는 형식의 `CComEnumOnSTL`개체를 만들고 현재 개체에서 사용 하는 것과 동일한 컬렉션과 반복기를 사용 하 여 초기화 한 다음 새로 만든 개체에서 인터페이스를 반환 하 여 **Clone** 메서드의 구현을 제공 합니다.
 
 ```
 STDMETHOD(Clone)(Base** ppEnum);
@@ -131,7 +131,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 ### <a name="parameters"></a>매개 변수
 
 *ppEnum*<br/>
-[out] 현재 열거자에서 복제는 새로 만든된 개체에서 열거자 인터페이스입니다.
+제한이 현재 열거자에서 복제 된 새로 만든 개체의 열거자 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -139,7 +139,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 
 ##  <a name="m_spunk"></a>  IEnumOnSTLImpl::m_spUnk
 
-`IUnknown` 컬렉션을 제공 하는 개체의 포인터입니다.
+컬렉션을 제공 하는 개체의 포인터입니다.`IUnknown`
 
 ```
 CComPtr<IUnknown> m_spUnk;
@@ -147,11 +147,11 @@ CComPtr<IUnknown> m_spUnk;
 
 ### <a name="remarks"></a>설명
 
-이 스마트 포인터에 전달 된 개체에 대 한 참조를 유지 관리 [IEnumOnSTLImpl::Init](#init), 열거자의 수명 동안 활성 상태로 그대로 확인 합니다.
+이 스마트 포인터는 [IEnumOnSTLImpl:: Init](#init)에 전달 된 개체에 대 한 참조를 유지 관리 하 여 열거자의 수명 동안 활성 상태로 유지 되도록 합니다.
 
 ##  <a name="m_pcollection"></a>  IEnumOnSTLImpl::m_pcollection
 
-이 멤버의 열거자 인터페이스 구현의 주행 데이터를 제공 하는 컬렉션을 가리킵니다.
+이 멤버는 열거자 인터페이스의 구현을 구동 하는 데이터를 제공 하는 컬렉션을 가리킵니다.
 
 ```
 CollType* m_pcollection;
@@ -159,11 +159,11 @@ CollType* m_pcollection;
 
 ### <a name="remarks"></a>설명
 
-이 멤버를 호출 하 여 인스턴스화될 [IEnumOnSTLImpl::Init](#init)합니다.
+이 멤버는 [IEnumOnSTLImpl:: Init](#init)를 호출 하 여 초기화 됩니다.
 
 ##  <a name="m_iter"></a>  IEnumOnSTLImpl::m_iter
 
-이 멤버는 컬렉션 내의 현재 위치를 표시 하 고 후속 요소를 이동 하는 데 사용 하는 반복기를 보유 합니다.
+이 멤버는 컬렉션 내의 현재 위치를 표시 하 고 후속 요소로 이동 하는 데 사용 되는 반복기를 보유 합니다.
 
 ```
 CollType::iterator m_iter;
@@ -171,7 +171,7 @@ CollType::iterator m_iter;
 
 ##  <a name="next"></a>  IEnumOnSTLImpl::Next
 
-이 메서드는 구현을 제공 합니다 **다음** 메서드.
+이 메서드는 **다음** 메서드의 구현을 제공 합니다.
 
 ```
 STDMETHOD(Next)(
@@ -183,13 +183,13 @@ STDMETHOD(Next)(
 ### <a name="parameters"></a>매개 변수
 
 *celt*<br/>
-[in] 요청 하는 요소의 수입니다.
+진행 요청 된 요소의 수입니다.
 
 *rgelt*<br/>
-[out] 요소로 채워질 배열입니다.
+제한이 요소로 채워질 배열입니다.
 
 *pceltFetched*<br/>
-[out] 에 실제로 반환 된 요소 수가 *rgelt*합니다. 일 수 있습니다 보다 작은 *celt* 개 보다 적으면 *celt* 요소 목록에 남아 있습니다.
+제한이 *Rgelt*에서 실제로 반환 된 요소의 수입니다. *Celt* 요소가 목록에 남아 있는 경우이 *celt* 보다 적을 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -197,7 +197,7 @@ STDMETHOD(Next)(
 
 ##  <a name="reset"></a>  IEnumOnSTLImpl::Reset
 
-이 메서드는 구현을 제공 합니다 **재설정** 메서드.
+이 메서드는 **Reset** 메서드의 구현을 제공 합니다.
 
 ```
 STDMETHOD(Reset)(void);
@@ -209,7 +209,7 @@ STDMETHOD(Reset)(void);
 
 ##  <a name="skip"></a>  IEnumOnSTLImpl::Skip
 
-이 메서드는 구현을 제공 합니다 **Skip** 메서드.
+이 메서드는 **Skip** 메서드의 구현을 제공 합니다.
 
 ```
 STDMETHOD(Skip)(ULONG celt);
@@ -218,7 +218,7 @@ STDMETHOD(Skip)(ULONG celt);
 ### <a name="parameters"></a>매개 변수
 
 *celt*<br/>
-[in] 건너뛸 요소 수입니다.
+진행 건너뛸 요소의 수입니다.
 
 ### <a name="return-value"></a>반환 값
 

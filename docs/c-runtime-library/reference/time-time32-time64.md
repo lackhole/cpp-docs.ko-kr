@@ -1,11 +1,11 @@
 ---
 title: time, _time32, _time64
 ms.date: 11/06/2018
-apiname:
+api_name:
 - time
 - _time64
 - _time32
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - time
 - _time64
@@ -33,14 +36,14 @@ helpviewer_keywords:
 - system time
 - time64 function
 ms.assetid: 280e00f2-2b93-4ece-94cd-e048484c6cc7
-ms.openlocfilehash: 693b70b3682876d7e6c3721f5d06aa13d31abb96
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 02dc7f250fe26d9ed7abfd89ca9a4c2163312e6d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155591"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946096"
 ---
-# <a name="time-time32-time64"></a>time, _time32, _time64
+# <a name="time-_time32-_time64"></a>time, _time32, _time64
 
 시스템 시간을 가져옵니다.
 
@@ -59,19 +62,19 @@ __time64_t _time64( __time64_t *destTime );
 
 ## <a name="return-value"></a>반환 값
 
-오류 발생 시-1 또는 1970 년 1 월 1 일 자정 이후 경과 된 시간 (초)로 시간을 반환 합니다.
+오류가 발생 한 경우 1970 년 1 월 1 일 자정 이후 경과 된 시간 (초)을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **시간** 함수 자정 이후 경과 된 시간 (초)을 반환 합니다 (00: 00:00) 1970 년 1 월 1, Utc (협정 세계시), 시스템 클록에 따라 합니다. 반환 값으로 지정 된 위치에 저장 됩니다 *destTime*합니다. 이 매개 변수가 **NULL**,이 경우 반환 값은 저장 되지 않습니다.
+**시간** 함수는 시스템 클록에 따라 자정 (00:00:00), 1970 년 1 월 1 일 Utc (협정 세계시) 이후 경과 된 시간 (초)을 반환 합니다. 반환 값은 *Desttime*에 지정 된 위치에 저장 됩니다. 이 매개 변수는 **NULL**일 수 있으며,이 경우 반환 값은 저장 되지 않습니다.
 
-**시간** 래퍼인 **_time64** 하 고 **time_t** 기본적으로 해당 하는 **__time64_t**합니다. 해석 하도록 컴파일러에 게 해야 하는 경우 **time_t** 이전 32 비트로 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**합니다. 2038년 1월 18일 후 애플리케이션이 실행되지 않을 수 있으므로 이 방법은 권장되지 않습니다. 이 매크로의 사용은 64비트 플랫폼에서 허용되지 않습니다.
+**time** 은 **_time64** 에 대 한 래퍼입니다. **time_t** 는 기본적으로 **__time64_t**와 동일 합니다. 컴파일러가 **time_t** 를 이전 32 비트 **time_t**해석 하도록 강제 해야 하는 경우 **_USE_32BIT_TIME_T**를 정의할 수 있습니다. 2038년 1월 18일 후 애플리케이션이 실행되지 않을 수 있으므로 이 방법은 권장되지 않습니다. 이 매크로의 사용은 64비트 플랫폼에서 허용되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴에서 반환된 값|필수 C 헤더|필수 C++ 헤더|
 |-------|------|---------------------|
-|**time**, **\_time32**, **\_time64**|\<time.h>|\<ctime > 또는 \<time.h >|
+|**time**, **\_time32**, **\_time64**|\<time.h>|\<ctime > 또는 \<시간 >|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

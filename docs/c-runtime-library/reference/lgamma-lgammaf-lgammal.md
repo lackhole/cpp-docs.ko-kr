@@ -1,11 +1,11 @@
 ---
 title: lgamma, lgammaf, lgammal
 ms.date: 04/05/2018
-apiname:
+api_name:
 - lgamma
 - lgammaf
 - lgammal
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - lgamma
 - lgammaf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - lgammal function
 - lgammaf function
 ms.assetid: 6e326c58-7077-481a-a329-c82ae56ae9e6
-ms.openlocfilehash: 43ce1599ab9161b9fadf5643ddd2ec739ab2d8b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9baf8f0fefb50cea6a5301aac9ffd48ff3cd5bde
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157308"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953368"
 ---
 # <a name="lgamma-lgammaf-lgammal"></a>lgamma, lgammaf, lgammal
 
@@ -61,24 +64,24 @@ long double lgamma( long double x ); //C++ only
 
 ## <a name="return-value"></a>반환 값
 
-성공한 경우의 감마 함수 절대 값의 자연 로그를 반환 *x*합니다.
+성공 하면 *x*의 감마 함수 절대 값의 자연 로그를 반환 합니다.
 
-|문제|반환|
+|문제점|반환|
 |-----------|------------|
 |*x* = NaN|NaN|
 |*x* = ±0|+INFINITY|
 |*x*= 음의 정수|+INFINITY|
-|±INFINITY|+INFINITY|
+|± INFINITY|+INFINITY|
 |극 오류|+HUGE_VAL, +HUGE_VALF 또는 +HUGE_VALL|
-|오버플로 범위 오류|±HUGE_VAL, ±HUGE_VALF, 또는 ±HUGE_VALL|
+|오버플로 범위 오류|± HUGE_VAL, ± HUGE_VALF 또는 ± HUGE_VALL|
 
 오류는 [_matherr](matherr.md)에 지정된 대로 보고됩니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **lgamma** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **lgamma** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 형식을 사용 하 고 반환 하는 **lgamma** 오버 로드를 호출할 수 있습니다. C 프로그램에서 **lgamma** 는 항상 **double**을 사용 하 고 반환 합니다.
 
-X가 유리수 인 경우이 함수는 (x-1)의 계승의 로그를 반환 합니다.
+X가 유리수 인 경우이 함수는 (x-1)의 계승값에 대 한 로그를 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

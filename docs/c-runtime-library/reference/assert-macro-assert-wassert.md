@@ -1,11 +1,11 @@
 ---
 title: assert Macro, _assert, _wassert
 ms.date: 11/04/2016
-apiname:
+api_name:
 - assert
 - _assert
 - _wassert
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - assert
 - _assert
@@ -28,12 +31,12 @@ helpviewer_keywords:
 - assert function
 - assert macro
 ms.assetid: a9ca031a-648b-47a6-bdf1-65fc7399dd40
-ms.openlocfilehash: a2cc780fbc93aa66bd7fd613c3e155cda27eb7f9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: badca46a0793e51602f0de87dfca21816dcd6295
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500333"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939615"
 ---
 # <a name="assert-macro-_assert-_wassert"></a>assert Macro, _assert, _wassert
 
@@ -73,7 +76,7 @@ void _wassert(
 
 ## <a name="remarks"></a>설명
 
-**Assert** 매크로는 일반적으로 프로그램을 개발 하는 동안 논리 오류를 식별 하는 데 사용 됩니다. 이를 사용 하 여 예기치 않은 조건이 발생할 때 프로그램 실행을 중지 합니다. **Ndebug**매크로를 정의 하 여 컴파일 타임에 어설션 검사를 해제할 수 있습니다. **/Dndebug** 명령줄 옵션을 사용 하 여 소스 파일을 수정 하지 않고 **assert** 매크로를 해제할 수 있습니다. Assert. h > 포함 하기 전에 \<지시문을 `#define NDEBUG` 사용 하 여 소스 코드에서 **assert** 매크로를 해제할 수 있습니다.
+**Assert** 매크로는 일반적으로 프로그램을 개발 하는 동안 논리 오류를 식별 하는 데 사용 됩니다. 이 **를 사용** 하 여 예기치 않은 조건이 발생할 때 프로그램 실행을 *중지 합니다.* **Ndebug**매크로를 정의 하 여 컴파일 타임에 어설션 검사를 해제할 수 있습니다. **/Dndebug** 명령줄 옵션을 사용 하 여 소스 파일을 수정 하지 않고 **assert** 매크로를 해제할 수 있습니다. Assert. h > 포함 하기 전에 \<지시문을 `#define NDEBUG` 사용 하 여 소스 코드에서 **assert** 매크로를 해제할 수 있습니다.
 
 **Assert** 매크로는 *expression* 이 **false** (0)로 계산 되 면 진단 메시지를 출력 하 고 [abort](abort.md) 를 호출 하 여 프로그램 실행을 종료 합니다. *Expression* 이 **true** (0이 아님) 이면 아무 작업도 수행 되지 않습니다. 진단 메시지에는 실패한 식, 소스 파일의 이름 및 어설션이 실패한 줄의 번호가 포함됩니다.
 

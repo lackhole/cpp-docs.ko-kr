@@ -1,9 +1,9 @@
 ---
 title: _set_output_format
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _set_output_format
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr120.dll
 - msvcr100.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcr90.dll
 - msvcr110.dll
 - msvcr80.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - set_output_format
 - _set_output_format
@@ -22,14 +25,14 @@ helpviewer_keywords:
 - _set_output_format function
 - set_output_format function
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
-ms.openlocfilehash: 173c1bbae3009ffb4ee10b7b32ec7751f47c56c8
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: b67abb58f4d62c7c54b61d1b1699f09c1bd51b40
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749232"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957306"
 ---
-# <a name="setoutputformat"></a>_set_output_format
+# <a name="_set_output_format"></a>_set_output_format
 
 형식이 지정된 I/O 함수에서 사용되는 출력 형식을 사용자 지정합니다.
 
@@ -53,7 +56,7 @@ unsigned int _set_output_format(
 
 이전 출력 형식입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `_set_output_format`은 [printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)와 같은 형식이 지정된 I/O 함수의 출력을 구성하는 데 사용됩니다. 현재, 이 함수에 의해 변경될 수 있는 형식 규칙은 부동 소수점 숫자의 출력에서 지수에 표시되는 자릿수뿐입니다.
 
@@ -69,7 +72,7 @@ unsigned int _set_output_format(
 
 호환성에 대한 자세한 내용은 소개 단원의 [호환성](../c-runtime-library/compatibility.md) 부분을 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```C
 // crt_set_output_format.c

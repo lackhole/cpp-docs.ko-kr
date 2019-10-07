@@ -1,9 +1,9 @@
 ---
 title: _CIexp
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CIexp
-apilocation:
+api_location:
 - msvcr120.dll
 - msvcr80.dll
 - msvcr110.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr90.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CIexp
 - _CIexp
@@ -20,14 +23,14 @@ helpviewer_keywords:
 - CIexp intrinsic
 - _CIexp intrinsic
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55
-ms.openlocfilehash: 5d51e8e542ffb14a77001d045903dccb1a091d53
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: c901442bc7874e75dc0be03c72953dbacb67add3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751341"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944695"
 ---
-# <a name="ciexp"></a>_CIexp
+# <a name="_ciexp"></a>_CIexp
 
 스택 상위 값의 지수를 계산합니다.
 
@@ -37,7 +40,7 @@ ms.locfileid: "57751341"
 void __cdecl _CIexp();
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 버전의 `exp` 함수는 컴파일러가 이해할 수 있는 특별한 호출 규칙을 가집니다. 복사본이 생성되지 않도록 하며 레지스터 할당을 돕기 때문에 실행 속도를 높입니다.
 

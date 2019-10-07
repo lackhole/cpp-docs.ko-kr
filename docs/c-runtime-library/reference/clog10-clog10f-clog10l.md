@@ -1,11 +1,11 @@
 ---
 title: clog10, clog10f, clog10l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - clog10
 - clog10f
 - clog10l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - clog10
 - clog10f
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - clog10f function
 - clog10l function
 ms.assetid: 2ddae00d-ef93-4441-add3-f4d58358401b
-ms.openlocfilehash: 195f4be80f0320e83cc9455a598185ce281bbf59
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a840494caf3c34f09d8c90970988e847be712cb4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335456"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939107"
 ---
 # <a name="clog10-clog10f-clog10l"></a>clog10, clog10f, clog10l
 
@@ -73,7 +76,7 @@ _Lcomplex clog10( _Lcomplex z );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **clog10** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **clog10** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **clog10** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **clog10** 는 항상 **_dcomplex** 를 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

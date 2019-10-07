@@ -1,12 +1,12 @@
 ---
 title: sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _sscanf_s_l
 - sscanf_s
 - _swscanf_s_l
 - swscanf_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _stscanf_s
 - sscanf_s
@@ -41,14 +44,14 @@ helpviewer_keywords:
 - strings [C++], reading
 - _sscanf_s_l function
 ms.assetid: 956e65c8-00a5-43e8-a2f2-0f547ac9e56c
-ms.openlocfilehash: 07911b7254e74c28310669a697c7492b69567b7f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14707b64a9c5c49837391be59d83ee39b79d5065
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354799"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957980"
 ---
-# <a name="sscanfs-sscanfsl-swscanfs-swscanfsl"></a>sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l
+# <a name="sscanf_s-_sscanf_s_l-swscanf_s-_swscanf_s_l"></a>sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l
 
 문자열에서 형식이 지정된 데이터를 읽습니다. 이러한 버전의 [sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 향상된 보안 기능이 포함되어 있습니다.
 
@@ -95,15 +98,15 @@ int _swscanf_s_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 반환 값은 **EOF** 오류에 대 한 첫 번째 변환 전에 문자열의 끝에 도달 하면 또는 합니다.
+이러한 각 함수는 모두 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다. 반환 값은 오류에 대 한 **EOF** 이거나, 첫 번째 변환 전에 문자열의 끝에 도달한 경우입니다.
 
-하는 경우 *버퍼* 또는 *형식* 되는 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이러한 함수는 계속 실행 하도록 허용,-1을 반환 하 고 설정 **errno** 에 **EINVAL**
+*버퍼* 또는 *형식이* **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는-1을 반환 하 고 **errno** 를 **EINVAL** 로 설정 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-합니다 **sscanf_s** 함수에서 데이터를 읽는 *버퍼* 각각 사용 하 여 지정 된 위치로 *인수*합니다. 형식 지정자에 해당 하는 형식의 변수에 대 한 포인터를 지정 하는 형식 문자열 뒤의 인수 *형식*합니다. 덜 안전한 버전을 달리 [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md), 버퍼 크기 매개 변수는 형식 필드 문자를 사용할 때 필요한 **c**, **C**, **s**, **S**, 또는 컨트롤 집합에 포함 된 문자열 **[]** 합니다. 문자의 버퍼 크기는 해당 크기를 필요로 하는 각 버퍼 매개 변수 바로 뒤에 추가 매개 변수로 제공해야 합니다. 예를 들어 문자열을 읽고 있는 경우 해당 문자열에 대한 버퍼 크기가 다음과 같이 전달됩니다.
+**Sscanf_s** 함수는 *버퍼* 에서 각 *인수*에 의해 지정 된 위치로 데이터를 읽습니다. 형식 문자열 뒤의 인수 *는 형식의 형식*지정자에 해당 하는 형식의 변수에 대 한 포인터를 지정 합니다. 덜 안전한 버전을 달리 [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md), 버퍼 크기 매개 변수는 형식 필드 문자를 사용할 때 필요한 **c**, **C**, **s**, **S**, 또는 컨트롤 집합에 포함 된 문자열 **[]** 합니다. 문자의 버퍼 크기는 해당 크기를 필요로 하는 각 버퍼 매개 변수 바로 뒤에 추가 매개 변수로 제공해야 합니다. 예를 들어 문자열을 읽고 있는 경우 해당 문자열에 대한 버퍼 크기가 다음과 같이 전달됩니다.
 
 ```C
 wchar_t ws[10];
@@ -129,13 +132,13 @@ sscanf_s(input, "%4c", &c, (unsigned)_countof(c)); // not null terminated
 자세한 내용은 참조 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) 및 [scanf 형식 필드 문자](../../c-runtime-library/scanf-type-field-characters.md)를 참조하세요.
 
 > [!NOTE]
-> 크기 매개 변수는 형식 **unsigned**가 아닌 **size_t**합니다. 를 64 비트 대상에 대해 컴파일할 때 사용 하 여 정적 캐스트를 변환할 **_countof** 또는 **sizeof** 를 정확한 크기로 결과입니다.
+> Size 매개 변수는 **size_t**가 아닌 **부호**있는 형식입니다. 64 비트 대상에 대해 컴파일하는 경우 정적 캐스트를 사용 하 여 **_countof** 또는 **sizeof** 결과를 올바른 크기로 변환 합니다.
 
-*형식* 인수 해석을 제어 하는 입력 필드 동일한 폼 및 함수는 *형식* 에 대 한 인수를 **scanf_s** 함수. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+*Format* 인수는 입력 필드의 해석을 제어 하 고 **scanf_s** 함수에 대 한 *format* 인수와 동일한 폼 및 함수를 포함 합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
-**swscanf_s** 의 와이드 문자 버전이 **sscanf_s**;에 대 한 인수 **swscanf_s** 는 와이드 문자 문자열입니다. **sscanf_s** 멀티 바이트 16 진수 문자를 처리 하지 않습니다. **swscanf_s** 유니코드 전자 16 진수 또는 "호환 영역" 문자를 처리 하지 않습니다. 그렇지 않으면 **swscanf_s** 하 고 **sscanf_s** 동일 하 게 작동 합니다.
+**swscanf_s** 는 **sscanf_s**의 와이드 문자 버전입니다. **swscanf_s** 에 대 한 인수는 와이드 문자 문자열입니다. **sscanf_s** 는 멀티 바이트 16 진수 문자를 처리 하지 않습니다. **swscanf_s** 는 유니코드 전자 16 진수 또는 "호환성 영역" 문자를 처리 하지 않습니다. 그렇지 않으면 **swscanf_s** 와 **sscanf_s** 가 동일 하 게 동작 합니다.
 
-접미사가 있는 이러한 함수 버전을 **_l** 접미사 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

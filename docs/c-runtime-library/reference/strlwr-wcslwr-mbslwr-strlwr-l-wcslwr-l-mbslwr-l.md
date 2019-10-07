@@ -1,14 +1,14 @@
 ---
 title: _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _strlwr_l
 - _strlwr
 - _wcslwr_l
 - _mbslwr_l
 - _wcslwr
 - _mbslwr
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -22,7 +22,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _strlwr
 - wcslwr_l
@@ -57,19 +60,19 @@ helpviewer_keywords:
 - strings [C++], converting case
 - _mbslwr_l function
 ms.assetid: d279181d-2e7d-401f-ab44-6e7c2786a046
-ms.openlocfilehash: c9749a319d28d869babdb54859a80fa7f1916394
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7393f634aeb7de0e8e65866dc11c6d41cc9de6b8
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210231"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947435"
 ---
-# <a name="strlwr-wcslwr-mbslwr-strlwrl-wcslwrl-mbslwrl"></a>_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
+# <a name="_strlwr-_wcslwr-_mbslwr-_strlwr_l-_wcslwr_l-_mbslwr_l"></a>_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
 
 문자열을 소문자로 변환합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md)을 참조하세요.
 
 > [!IMPORTANT]
-> **_mbslwr** 하 고 **_mbslwr_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbslwr** 및 **_mbslwr_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -138,11 +141,11 @@ unsigned char *_mbslwr_l(
 
 ## <a name="remarks"></a>설명
 
-**_strlwr** 함수 변환의 모든 대문자 *str* 기준으로 소문자로 합니다 **LC_CTYPE** 로캘 범주 설정 합니다. 다른 문자는 영향을 받지 않습니다. 에 대 한 자세한 **LC_CTYPE**를 참조 하십시오 [setlocale](setlocale-wsetlocale.md)합니다. 없는 이러한 함수 버전을 **_l** 은 로캘 종속 동작에 현재 로캘 접미사 사용 하며 사용 하 여 버전은 **_l** 전달 된 로캘을 사용 한다는 점을 제외 하면 접미사가 동일 합니다. 대신 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_Strlwr** 함수는 로캘의 **LC_CTYPE** category 설정에 따라 *str* 의 모든 대문자를 소문자로 변환 합니다. 다른 문자는 영향을 받지 않습니다. **LC_CTYPE**에 대 한 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조 하세요. **_L** 접미사가 없는 이러한 함수 버전은 로캘 종속 동작에 현재 로캘을 사용 합니다. **_l** 접미사가 있는 버전은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-합니다 **_wcslwr** 하 고 **_mbslwr** 함수는 와이드 문자 및 멀티 바이트 문자 버전입니다 **_strlwr**합니다. 인수 및 반환 값 **_wcslwr** 은 와이드 문자열이 고 **_mbslwr** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**_Wcslwr** 및 **_mbslwr** 함수는 **_strlwr**의 와이드 문자 및 멀티 바이트 문자 버전입니다. **_Wcslwr** 의 인수와 반환 값은 와이드 문자 문자열입니다. **_mbslwr** 의 해당 문자는 멀티 바이트 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
-하는 경우 *str* 되는 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 이러한 함수는 원래 문자열을 반환 하 고 집합을 계속 하려면 실행이 허용 하는 경우 **errno** 하 **EINVAL**합니다.
+*Str* 이 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 원래 문자열을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 

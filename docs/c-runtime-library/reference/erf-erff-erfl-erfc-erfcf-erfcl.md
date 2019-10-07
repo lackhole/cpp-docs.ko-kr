@@ -1,14 +1,14 @@
 ---
 title: erf, erff, erfl, erfc, erfcf, erfcl
 ms.date: 01/31/2019
-apiname:
+api_name:
 - erff
 - erfl
 - erf
 - erfc
 - erfcf
 - erfcl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - erfl
 - erf
@@ -36,12 +39,12 @@ helpviewer_keywords:
 - erfcf function
 - erfc function
 ms.assetid: 144d90d3-e437-41c2-a659-cd57596023b5
-ms.openlocfilehash: 4270d8366686ea282a4dd37741d9f8e37991b88f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df724ed056c02d79b5b51f97ae4aaf8ae267fde5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289213"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937615"
 ---
 # <a name="erf-erff-erfl-erfc-erfcf-erfcl"></a>erf, erff, erfl, erfc, erfcf, erfcl
 
@@ -89,17 +92,17 @@ long double erfcl(
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **erf** 함수는 가우스의 오류 함수는 반환 *x*합니다. 합니다 **erfc** 함수는 가우스의 오류 함수는 반환 *x*합니다.
+**Erf** 함수는 *x*의 가우스 오차 함수를 반환 합니다. **Erfc** 함수는 *x*의 보완 가우스 오차 함수를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**erf** 함수 계산의 가우스 오차 함수 *x*, 정의 됩니다.
+**Erf** 함수는 다음과 같이 정의 되는 *x*의 가우스 오차 함수를 계산 합니다.
 
-![X의 오차 함수](media/crt_erf_formula.PNG "x의 오차 함수")
+![X의 오류 함수](media/crt_erf_formula.PNG "X의 오류 함수")
 
-가우스 보상 오차 함수 란 1-erf (x). 합니다 **erf** 함수 1.0-1.0 범위의 값을 반환 합니다. 반환되는 오류가 없습니다. 합니다 **erfc** 함수는 0 ~ 2 범위에 값을 반환 합니다. 하는 경우 *x* 에 대해 너무 큽니다 **erfc**의 **errno** 변수로 설정 됩니다 **ERANGE**합니다.
+보완적인 가우스 오류 함수는 erf (x)로 정의 됩니다. **Erf** 함수는-1.0 ~ 1.0 범위의 값을 반환 합니다. 반환되는 오류가 없습니다. **Erfc** 함수는 0 ~ 2 범위의 값을 반환 합니다. *X* 가 **erfc**에 대해 너무 크면 **errno** 변수는 **ERANGE**로 설정 됩니다.
 
-때문에 C++ 오버 로드를 허용의 오버 로드를 호출할 수 있습니다 **erf** 하 고 **erfc** 및 반환 하는 **float** 하 고 **긴** **이중** 형식입니다. C 프로그램에서 **erf** 하 고 **erfc** 항상 하 고 반환을 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 형식을 사용 하 고 반환 하는 **erf** 및 **erfc** 오버 로드를 호출할 수 있습니다. C 프로그램에서 **erf** 및 **erfc** 는 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

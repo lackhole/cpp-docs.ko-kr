@@ -1,9 +1,9 @@
 ---
 title: _getdiskfree
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _getdiskfree
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - getdiskfree
 - _getdiskfree
@@ -26,16 +29,16 @@ helpviewer_keywords:
 - disk size
 - getdiskfree function
 ms.assetid: 47a3f6cf-4816-452a-8f3d-1c3ae02a0f2a
-ms.openlocfilehash: 03c39802301406bc4250328983c8cf8bad94497f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0feee21ee76d076263ea3750d00fd0142f26b7d9
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331768"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955105"
 ---
-# <a name="getdiskfree"></a>_getdiskfree
+# <a name="_getdiskfree"></a>_getdiskfree
 
-사용 하 여 디스크 드라이브에 대 한 정보를 **_diskfree_t** 구조입니다.
+디스크 드라이브에 대 한 정보를 사용 하 여 **_diskfree_t** 구조를 채웁니다.
 
 > [!IMPORTANT]
 > 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
@@ -55,15 +58,15 @@ unsigned _getdiskfree(
 정보를 표시할 디스크 드라이브입니다.
 
 *driveinfo*<br/>
-A **_diskfree_t** 구조는 드라이브에 대 한 정보로 채워집니다.
+드라이브에 대 한 정보로 채워질 **_diskfree_t** 구조체입니다.
 
 ## <a name="return-value"></a>반환 값
 
-함수가 성공할 경우 반환 값은 0입니다. 함수가 실패할 경우 반환 값은 오류 코드입니다. 값 **errno** 운영 체제에 의해 반환 되는 모든 오류에 대해 설정 됩니다. 으로 표시 된 오류 조건에 대 한 자세한 **errno**를 참조 하십시오 [errno 상수](../../c-runtime-library/errno-constants.md)합니다.
+함수가 성공할 경우 반환 값은 0입니다. 함수가 실패할 경우 반환 값은 오류 코드입니다. **Errno** 값은 운영 체제에서 반환 되는 모든 오류에 대해 설정 됩니다. **Errno**에 표시 되는 오류 조건에 대 한 자세한 내용은 [errno 상수](../../c-runtime-library/errno-constants.md)를 참조 하십시오.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_diskfree_t** 구조체는 Direct.h에에서 정의 합니다.
+**_Diskfree_t** 구조는 직접 .h에 정의 되어 있습니다.
 
 ```C
 struct _diskfree_t {
@@ -74,7 +77,7 @@ struct _diskfree_t {
 };
 ```
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우는 *driveinfo* 포인터가 **NULL** 또는 *드라이브* 잘못 된 드라이브를 지정 합니다.이 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **EINVAL** 설정 **errno** 하 **EINVAL**합니다. 올바른 드라이브의 범위는 0에서 26 사이입니다. A *드라이브* 현재 드라이브를 지정 하는 값이 0; 이후에 숫자 문자에 매핑됩니다 이러한 영어 알파벳 1 나타냅니다 드라이브에 3 C 드라이브를 나타냅니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *Driveinfo* 포인터가 **NULL** 이거나 *드라이브가* 잘못 된 드라이브를 지정 하는 경우이 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다. 올바른 드라이브의 범위는 0에서 26 사이입니다. *드라이브* 값 0은 현재 드라이브를 지정 합니다. 그 후에는 숫자가 A 드라이브를 나타내고 3은 C 드라이브를 의미 하는 것 처럼 숫자가 영어 알파벳 문자에 매핑됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

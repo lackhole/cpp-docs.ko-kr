@@ -3,12 +3,12 @@ title: 컴파일러 옵션 사전순 목록
 ms.date: 08/08/2019
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 90c7ee5637a5d1e0f9d48c0f128364ee0df73dab
-ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
+ms.openlocfilehash: 39dd11245ef88d1d59d3eda8cbeaa5fc4494b9a8
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70273643"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685329"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
@@ -99,7 +99,7 @@ ms.locfileid: "70273643"
 |[/Od](od-disable-debug.md)|최적화를 사용하지 않습니다.|
 |[/Og](og-global-optimizations.md)|더 이상 사용되지 않습니다. 전역 최적화를 사용합니다.|
 |[/Oi](oi-generate-intrinsic-functions.md)|내장 함수를 생성합니다.|
-|[/openmp](openmp-enable-openmp-2-0-support.md)|소스 코드 [`#pragma omp`](../../preprocessor/omp.md) 에서 지시문을 사용 하도록 설정 합니다.|
+|[/openmp](openmp-enable-openmp-2-0-support.md)|소스 코드에서 [`#pragma omp`](../../preprocessor/omp.md) 지시문을 사용 하도록 설정 합니다.|
 |[/Os](os-ot-favor-small-code-favor-fast-code.md)|코드 크기를 우선으로 합니다.|
 |[/Ot](os-ot-favor-small-code-favor-fast-code.md)|코드 속도를 우선으로 합니다.|
 |[/Ox](ox-full-optimization.md)|/GF 또는/Gy. 포함 하지 않는/O2의 하위 집합입니다.|
@@ -109,10 +109,10 @@ ms.locfileid: "70273643"
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|빠른 초월수를 생성합니다.|
 |[/QIfist](qifist-suppress-ftol.md)|더 이상 사용되지 않습니다. 부동 소수점 형식에서 정수 계열 형식으로 변환해야 할 때 `_ftol` 이 사용되지 않도록 합니다. x86 전용입니다.|
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|`fwait` 블록 내에 있는 `try` 명령을 제거합니다.|
-|[/Qpar(자동 평행화 도우미)](qpar-auto-parallelizer.md)|[#pragma loop()](../../preprocessor/loop.md) 지시문으로 표시되는 루프의 자동 병렬화를 사용하도록 설정합니다.|
+|[/Qpar(자동 병렬화 도우미)](qpar-auto-parallelizer.md)|[#pragma loop()](../../preprocessor/loop.md) 지시문으로 표시되는 루프의 자동 병렬화를 사용하도록 설정합니다.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|부동 소수점 값에 대한 정수 이동 명령을 사용하고 특정 부동 소수점 부하 최적화를 사용하지 않도록 설정합니다.|
 |[/Qspectre](qspectre.md)|특정 스펙터 변형 1 보안 취약성을 완화하기 위한 컴파일러 생성 지침을 지정합니다.|
-|[/Qvec-report(자동 벡터화 도우미 보고 수준)](qvec-report-auto-vectorizer-reporting-level.md)|자동 벡터화에 대한 보고 수준을 사용하도록 설정합니다.|
+|[/Qvec-report(자동 벡터화 도우미 보고 수준)](qvec-report-auto-vectorizer-reporting-level.md)|자동 벡터화에 보고 수준을 사용하도록 설정합니다.|
 |[/RTC](rtc-run-time-error-checks.md)|런타임 오류 검사를 사용합니다.|
 |[/sdl](sdl-enable-additional-security-checks.md)|추가 보안 기능 및 경고를 사용하도록 설정합니다.|
 |[/showIncludes](showincludes-list-include-files.md)|컴파일을 하는 동안 포함 파일 목록을 표시합니다.|
@@ -157,6 +157,7 @@ ms.locfileid: "70273643"
 |[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. 언어 확장을 사용합니다.|
 |[/Zf](zf.md)|병렬 빌드에서 PDB 생성 시간을 향상 시킵니다.|
 |[/Zg](zg-generate-function-prototypes.md)|Visual Studio 2015에서 제거 되었습니다. 함수 프로토타입을 생성합니다.|
+|[/ZH](zh.md)|디버그 정보에서 체크섬에 대해 MD5, SHA-1 또는 SHA-256을 지정 합니다.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|편집하며 계속하기와 호환되는 프로그램 데이터베이스에 디버깅 정보를 포함합니다.|
 |[/Zi](z7-zi-zi-debug-information-format.md)|완전한 디버깅 정보를 생성합니다.|
 |[/Zl](zl-omit-default-library-name.md)|.obj 파일에서 기본 라이브러리 이름을 제거합니다. x86 전용입니다.|
@@ -166,7 +167,7 @@ ms.locfileid: "70273643"
 |[/Zs](zs-syntax-check-only.md)|구문만 확인합니다.|
 |[/ZW](zw-windows-runtime-compilation.md)|Windows 런타임에서 실행할 출력 파일을 생성 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

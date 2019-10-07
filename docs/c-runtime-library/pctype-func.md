@@ -1,9 +1,9 @@
 ---
 title: __pctype_func
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __pctype_func
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr110_clr0400.dll
 - msvcr110.dll
@@ -11,20 +11,23 @@ apilocation:
 - msvcr90.dll
 - msvcr100.dll
 - msvcr80.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __pctype_func
 helpviewer_keywords:
 - __pctype_func
 ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
-ms.openlocfilehash: a152f3612373189c964aaca005fe3b989eec8694
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: f5dae74dd601df1dc737293a181eca60f5cd23f8
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57742028"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944036"
 ---
-# <a name="pctypefunc"></a>__pctype_func
+# <a name="__pctype_func"></a>__pctype_func
 
 문자 분류 정보 배열에 대한 포인터를 검색합니다.
 
@@ -35,11 +38,11 @@ const unsigned short *__pctype_func(
    )
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 문자 분류 정보 배열에 대한 포인터입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 문자 분류 테이블의 정보는 내부 전용이며, `char` 형식의 문자를 분류하는 다양한 함수에 사용됩니다. 자세한 내용은 [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)의 `Remarks` 섹션을 참조하세요.
 

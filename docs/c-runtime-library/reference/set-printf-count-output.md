@@ -1,9 +1,9 @@
 ---
 title: _set_printf_count_output
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _set_printf_count_output
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - set_printf_count_output
 - _set_printf_count_output
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - set_printf_count_output function
 - _set_printf_count_output function
 ms.assetid: d8259ec5-764e-42d0-9169-72172e95163b
-ms.openlocfilehash: 0d4847d850b39c7c03ea92a98499715b1e6a4913
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d53b4e4c56a69582a4eb517fa1a5c9e10cd7d2f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356526"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948413"
 ---
-# <a name="setprintfcountoutput"></a>_set_printf_count_output
+# <a name="_set_printf_count_output"></a>_set_printf_count_output
 
-지원을 설정 또는 해제 합니다 **%n** 형식의 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)-패밀리 함수입니다.
+[Printf, _printf_l, wprintf, _printf_l](printf-printf-l-wprintf-wprintf-l.md)함수에서 **% n** 형식의 지원을 사용 하거나 사용 하지 않도록 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -46,15 +49,15 @@ int _set_printf_count_output(
 ### <a name="parameters"></a>매개 변수
 
 *enable*<br/>
-사용 하도록 설정 하려면 0이 아닌 값 **%n** 를 지원 하지 않으려면 0 **%n** 지원 합니다.
+0이 아닌 값은 **% n** 지원을 사용 하도록 설정 하 고 0은 **% n** 지원을 사용 하지 않도록 설정 합니다.
 
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값
 
-상태의 **%n** 이 함수를 호출 하기 전에 지원할: 0이 아닌 경우 **%n** 지원이 활성화 된 경우 사용 하지 않도록 설정 된 경우에 0입니다.
+이 함수를 호출 하기 전에 **% n** 지원의 상태입니다. **% n** 지원이 사용 하도록 설정 된 경우 0이 아닌 값이 고, 사용 하지 않도록 설정 된 경우 0입니다.
 
 ## <a name="remarks"></a>설명
 
-보안상의 이유로 지원 합니다 **%n** 형식 지정자에는 기본적으로 비활성화 되어 **printf** 및 모든 해당 변형 항목입니다. 하는 경우 **%n** 에서 발견 되는 **printf** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 하는 형식 지정, 기본 동작 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 호출 **_set_printf_count_output** 0이 아닌 인수를 사용 하면 **printf**-해석 패밀리 함수가 **%n** 에 설명 된 대로 [형식 사양 구문: printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다.
+보안상의 이유로 **printf** 와 모든 변형에서 **% n** 서식 지정자에 대 한 지원은 기본적으로 사용 되지 않습니다. **Printf** 형식 사양에 **% n** 이 있으면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 하는 것이 기본 동작입니다. 0이 아닌 인수를 사용 하 여 **_set_printf_count_output** 를 호출 하면 [Format 사양 구문: Printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)에 설명 된 대로 **printf**제품군 함수가 **% n** 을 해석 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

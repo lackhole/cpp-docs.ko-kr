@@ -11,7 +11,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68451701"
 ---
-# <a name="recursivedirectoryiterator-class"></a>recursive_directory_iterator 클래스
+# <a name="recursive_directory_iterator-class"></a>recursive_directory_iterator 클래스
 
 디렉터리의 파일 이름을 통해 시퀀스 되는 입력 반복기에 대해 설명 합니다. 하위 디렉터리는 재귀적으로 내림차순으로 정렬 됩니다. 반복기 `X`의 경우 식은 `*X` 파일 이름 및 상태에 대해 알려진 모든 `directory_entry` 항목을 래핑하는 클래스의 개체로 계산 됩니다.
 
@@ -56,7 +56,7 @@ for (recursive_directory_iterator next(path("abc")), end; next != end; ++next)
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|Description|
+|멤버 함수|설명|
 |-|-|
 |[depth](#depth)|는 `mystack.size() - 1`를 반환 `pval` 하므로 깊이가 0입니다.|
 |[disable_recursion_pending](#disable_recursion_pending)|에 **true** 를 `no_push`저장 합니다.|
@@ -140,7 +140,7 @@ recursive_directory_iterator& operator=(recursive_directory_iterator&&) noexcept
 ### <a name="parameters"></a>매개 변수
 
 *recursive_directory_iterator*\
-에 [](../standard-library/recursive-directory-iterator-class.md) 복사 `recursive_directory_iterator`되는 recursive_directory_iterator입니다.
+`recursive_directory_iterator`에 복사되는 [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md)입니다.
 
 ## <a name="op_eq"></a> recursive_directory_iterator::operator==
 
@@ -254,7 +254,7 @@ recursive_directory_iterator(recursive_directory_iterator&&) noexcept = default;
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 시퀀스의 끝 반복기를 생성합니다. 두 번째와 세 번째 생성자는  `no_push` 및 `directory_options::none` `myoptions`에 false를 저장 한 다음 *pval* 를 디렉터리로 열고 읽습니다. 성공 하는 경우는 `mystack` 및 `myentry` 를 초기화 하 여 중첩 된 시퀀스에서 디렉터리가 아닌 첫 번째 파일 이름을 지정 합니다. 그렇지 않으면 시퀀스의 끝 반복기를 생성 합니다.
+첫 번째 생성자는 시퀀스의 끝 반복기를 생성합니다. 두 번째와 세 번째 생성자는 `no_push` 및 `directory_options::none` `myoptions`에 false를 저장 한 다음 *pval* 를 디렉터리로 열고 읽습니다. 성공 하는 경우는 `mystack` 및 `myentry` 를 초기화 하 여 중첩 된 시퀀스에서 디렉터리가 아닌 첫 번째 파일 이름을 지정 합니다. 그렇지 않으면 시퀀스의 끝 반복기를 생성 합니다.
 
 네 번째 및 다섯 번째 생성자는 먼저 *opts* 을에 `myoptions`저장 한다는 점을 제외 하 고 두 번째와 세 번째 생성자와 동일 하 게 동작 합니다. 기본 생성자는 예상대로 작동합니다.
 

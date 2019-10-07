@@ -1,10 +1,10 @@
 ---
 title: _getdcwd_nolock, _wgetdcwd_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wgetdcwd_nolock
 - _getdcwd_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _wgetdcwd_nolock
 - tgetdcwd_nolock
@@ -34,14 +37,14 @@ helpviewer_keywords:
 - _wgetdcwd_nolock function
 - directories [C++], current working
 ms.assetid: d9bdf712-43f8-4173-8f9a-844e82beaa97
-ms.openlocfilehash: 47938c387ba30d7bcba038145c2dff9c7b59b750
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cef2c39d3cfcb7690a644d9d2db68f25259b8162
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157710"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955198"
 ---
-# <a name="getdcwdnolock-wgetdcwdnolock"></a>_getdcwd_nolock, _wgetdcwd_nolock
+# <a name="_getdcwd_nolock-_wgetdcwd_nolock"></a>_getdcwd_nolock, _wgetdcwd_nolock
 
 지정한 드라이브의 현재 작업 디렉터리의 전체 경로를 가져옵니다.
 
@@ -72,7 +75,7 @@ wchar_t *_wgetdcwd_nolock(
 경로의 스토리지 위치입니다.
 
 *maxlen*<br/>
-문자에서 경로의 최대 길이: **char** 에 대 한 **_getdcwd** 하 고 **wchar_t** 에 대 한 **_wgetdcwd**합니다.
+경로의 최대 길이 (문자): **_getdcwd** 의 경우 **char** , **_wgetdcwd**의 경우 **wchar_t**
 
 ## <a name="return-value"></a>반환 값
 
@@ -80,7 +83,7 @@ wchar_t *_wgetdcwd_nolock(
 
 ## <a name="remarks"></a>설명
 
-**_getdcwd_nolock** 하 고 **_wgetdcwd_nolock** 동일 **_getdcwd** 하 고 **_wgetdcwd**각각에서 보호 되지 않는 점을 제외 하 고 다른 스레드의 방해 합니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**_getdcwd_nolock** 및 **_wgetdcwd_nolock** 은 다른 스레드의 간섭 으로부터 보호 되지 않는다는 점을 제외 하 고 각각 **_getdcwd** 및 **_wgetdcwd**와 동일 합니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 

@@ -1,9 +1,9 @@
 ---
 title: _setjmp3
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _setjmp3
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr90.dll
 - msvcr110.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr100.dll
 - msvcr120.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - setjmp3
 - _setjmp3
@@ -19,14 +22,14 @@ helpviewer_keywords:
 - _setjmp3 function
 - setjmp3 function
 ms.assetid: 6129c2f3-8bac-4fdb-a827-44e1eebba500
-ms.openlocfilehash: e2c89acf1de88b831d70a0f438cdf14148a48632
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: d7120ddd10322d0b7391608fd388d9f45c1600e8
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741810"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957808"
 ---
-# <a name="setjmp3"></a>_setjmp3
+# <a name="_setjmp3"></a>_setjmp3
 
 내부 CRT 함수입니다. `setjmp` 함수의 새로운 구현입니다.
 
@@ -48,14 +51,14 @@ int _setjmp3(
 *count*<br/>
 [in] `optional parameters`에 저장된 정보의 추가 `DWORD` 수입니다.
 
-선택적 매개 변수<br/>
+선택적 매개 변수 <br/>
 [in] `setjmp` 내장 함수가 적용한 추가 데이터입니다. 첫 번째 `DWORD`는 추가 데이터를 해제한 다음 비휘발성 등록 상태로 반환하는 데 사용되는 함수 포인터입니다. 두 번째 `DWORD`는 복원할 시도 수준입니다. 모든 추가 데이터는 `jmp_buf`의 제네릭 데이터 배열에 저장됩니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 항상 0을 반환합니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 함수는 C++ 프로그램에서는 사용하지 마세요. C++을 지원하지 않는 내장 함수입니다. `setjmp`를 사용하는 방법에 대한 자세한 내용은 [setjmp/longjmp 사용](../cpp/using-setjmp-longjmp.md)을 참조하세요.
 

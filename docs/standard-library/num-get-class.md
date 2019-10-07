@@ -21,7 +21,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68457650"
 ---
-# <a name="numget-class"></a>num_get 클래스
+# <a name="num_get-class"></a>num_get 클래스
 
 `CharType` 형식의 시퀀스에서 숫자 값으로 변환을 제어하는 로캘 패싯으로 사용 가능한 개체에 대해 설명하는 템플릿 클래스입니다.
 
@@ -59,7 +59,7 @@ class num_get : public locale::facet;
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|Description|
+|멤버 함수|설명|
 |-|-|
 |[do_get](#do_get)|문자 시퀀스에서 숫자 또는 부울 값을 추출하기 위해 호출하는 가상 함수입니다.|
 |[get](#get)|문자 시퀀스에서 숫자 또는 부울 값을 추출합니다.|
@@ -199,7 +199,7 @@ virtual iter_type do_get(
     long& val) const;
 ```
 
-는 비어 있지 않은 완전  한 정수 입력 필드 `[first, last)` 를 인식할 때까지 시퀀스의 처음부터 시작 하는 순차적 요소와 일치 합니다. 성공 하는 경우이 필드를 **long**형식으로 해당 하는 값으로 변환 하 고 결과를 *val*에 저장 합니다. 이 함수는 숫자 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않으면 함수는 *val* 에 아무 것도 저장 `ios_base::failbit` 하지 `state`않으며에는를 설정 합니다. 그리고 유효한 정수 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 `last`와 같으면 함수는 `state`에서 `ios_base::eofbit`를 설정합니다.
+는 비어 있지 않은 완전 한 정수 입력 필드 `[first, last)` 를 인식할 때까지 시퀀스의 처음부터 시작 하는 순차적 요소와 일치 합니다. 성공 하는 경우이 필드를 **long**형식으로 해당 하는 값으로 변환 하 고 결과를 *val*에 저장 합니다. 이 함수는 숫자 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않으면 함수는 *val* 에 아무 것도 저장 `ios_base::failbit` 하지 `state`않으며에는를 설정 합니다. 그리고 유효한 정수 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 `last`와 같으면 함수는 `state`에서 `ios_base::eofbit`를 설정합니다.
 
 정수 입력 필드는 파일에서 일련의 **char** 요소를 일치 및 변환 하기 위해 검색 함수에서 사용 하는 것과 동일한 규칙에 의해 변환 됩니다. 이러한 각 **char** 요소는 간단한 일대일 매핑을 통해 형식의 `Elem` 동등한 요소에 매핑되는 것으로 간주 됩니다. 동일한 스캔 변환 사양은 다음과 같이 결정됩니다.
 
@@ -441,7 +441,7 @@ iter_type get(
 
 정수 입력 필드는 파일에서 일련의 **char** 요소를 일치 및 변환 하기 위해 검색 함수에서 사용 하는 것과 동일한 규칙에 의해 변환 됩니다. 이러한 각 **char** 요소는 단순 하 고 일대일 매핑으로 형식의 `CharType` 동등한 요소에 매핑되는 것으로 간주 됩니다. 동일한 스캔 변환 사양은 다음과 같이 결정됩니다.
 
-- `iosbase`. [](../standard-library/ios-base-class.md#flags) & [oct](../standard-library/ios-functions.md#oct)에 플래그`ios_base::basefield`를 지정 합니다`lo`. 변환 사양은입니다. == `ios_base::`
+- `iosbase`. [oct에](../standard-library/ios-base-class.md#flags) & `ios_base::basefield` == `ios_base::`[ 플래그](../standard-library/ios-functions.md#oct)를 지정 합니다. 변환 사양은 `lo`입니다.
 
 - **Iosbase. flags** & **ios_base:: basefield** == `ios_base::`[hex](../standard-library/ios-functions.md#hex)인 경우 변환 사양은 `lx`입니다.
 

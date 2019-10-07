@@ -79,7 +79,7 @@ class CArchive
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CArchive::Abort](#abort)|예외를 throw 하지 않고 아카이브를 닫습니다.|
 |[CArchive::Close](#close)|기록 되지 않은 데이터를 플러시하고에서 `CFile`연결을 끊습니다.|
@@ -112,7 +112,7 @@ class CArchive
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|설명|
+|이름|Description|
 |----------|-----------------|
 |[CArchive::m_pDocument](#m_pdocument)||
 
@@ -126,7 +126,7 @@ class CArchive
 
 개체를 `CArchive` 만들려면 먼저 [CFile](../../mfc/reference/cfile-class.md) 개체를 만들어야 합니다. 또한 아카이브의 로드/저장소 상태가 파일의 열기 모드와 호환 되는지 확인 해야 합니다. 한 번에 하나의 활성 보관 파일로 제한 됩니다.
 
-`CArchive` 개체를 생성 하는 경우에는 열려 있는 파일을 나타내는 클래스 `CFile` 또는 파생 클래스의 개체에 개체를 연결 합니다. 또한 보관을 사용 하 여 로드 하거나 저장할 것인지 여부도 지정 합니다. 개체 `CArchive` 는 기본 형식 뿐만 아니라 serialization을 위해 설계 된 [CObject](../../mfc/reference/cobject-class.md)파생 클래스의 개체도 처리할 수 있습니다. Serializable 클래스 `Serialize` 는 일반적으로 멤버 함수를 포함 하며, 일반적으로 클래스 [](../../mfc/reference/run-time-object-model-services.md#declare_serial) `CObject`아래에 설명 된 대로 DECLARE_SERIAL 및 [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial) 매크로를 사용 합니다.
+`CArchive` 개체를 생성 하는 경우에는 열려 있는 파일을 나타내는 클래스 `CFile` 또는 파생 클래스의 개체에 개체를 연결 합니다. 또한 보관을 사용 하 여 로드 하거나 저장할 것인지 여부도 지정 합니다. 개체 `CArchive` 는 기본 형식 뿐만 아니라 serialization을 위해 설계 된 [CObject](../../mfc/reference/cobject-class.md)파생 클래스의 개체도 처리할 수 있습니다. Serializable 클래스는 일반적으로 `Serialize` 멤버 함수를 포함하며, 일반적으로 `CObject` 클래스 아래에 설명된 대로 [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) 및 [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial) 매크로를 사용합니다.
 
 오버 로드 된 추출 **>>** () 및 삽입 **<<** () 연산자는 기본 형식 및 `CObject`파생 클래스를 모두 지 원하는 편리한 보관 프로그래밍 인터페이스입니다.
 
@@ -296,7 +296,7 @@ BOOL IsBufferEmpty() const;
 
 이 함수는 MFC Windows 소켓 클래스 `CSocketFile`를 사용한 프로그래밍을 지원 하기 위해 제공 됩니다. `CFile` 개체와 연결 된 아카이브에는 사용할 필요가 없습니다.
 
-개체와 연결 된 `IsBufferEmpty` 보관 파일에를 사용 하는 이유는 보관의 버퍼에 둘 이상의 메시지나 레코드가 포함 될 수 있다는 것입니다. `CSocketFile` 메시지 하나를 받은 후를 사용 `IsBufferEmpty` 하 여 버퍼가 비어 있을 때까지 데이터를 계속 수신 하는 루프를 제어 해야 합니다. 자세한 내용은를 사용 `IsBufferEmpty`하는 [](../../mfc/reference/casyncsocket-class.md#receive) 방법을 보여 주는 클래스 `CAsyncSocket`의 Receive 멤버 함수를 참조 하세요.
+개체와 연결 된 `IsBufferEmpty` 보관 파일에를 사용 하는 이유는 보관의 버퍼에 둘 이상의 메시지나 레코드가 포함 될 수 있다는 것입니다. `CSocketFile` 메시지 하나를 받은 후를 사용 `IsBufferEmpty` 하 여 버퍼가 비어 있을 때까지 데이터를 계속 수신 하는 루프를 제어 해야 합니다. 자세한 내용은 `IsBufferEmpty`를 사용하는 방법을 보여 주는 클래스 `CAsyncSocket`의 [Receive](../../mfc/reference/casyncsocket-class.md#receive) 멤버 함수를 참조하세요.
 
 자세한 내용은 [Windows 소켓: 보관 파일](../../mfc/windows-sockets-using-sockets-with-archives.md)에 소켓 사용.
 
@@ -529,7 +529,7 @@ CArchive& operator>>(LONGLONG& dwdw);
 
 ### <a name="example"></a>예제
 
-이 예에서는 > > `CArchive` 추출 연산자를 사용 하는 방법을 보여  줍니다.
+이 예에서는 > > `CArchive` 추출 연산자를 사용 하는 방법을 보여 줍니다.
 
 [!code-cpp[NVC_MFCSerialization#33](../../mfc/codesnippet/cpp/carchive-class_14.cpp)]
 
@@ -601,9 +601,9 @@ CRuntimeClass* ReadClass(
 
 런타임 클래스는 [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) 및 [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial)를 사용 해야 합니다. 그렇지 않으면 [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md) 이throw`ReadClass` 됩니다.
 
-*Pschema* 가 NULL 인 경우에는 [CArchive:: GetObjectSchema](#getobjectschema);를 호출 하 여 저장 된 클래스의 스키마를 검색할 수 있습니다. 그렇지 않으면 pschema에 이전에 저장 한 런타임 클래스의 스키마가 포함 됩니다.  <strong>\*</strong>
+*Pschema* 가 NULL 인 경우에는 [CArchive:: GetObjectSchema](#getobjectschema);를 호출 하 여 저장 된 클래스의 스키마를 검색할 수 있습니다. 그렇지 않으면 pschema에 이전에 저장 한 런타임 클래스의 스키마가 포함 됩니다. <strong>\*</strong>
 
-클래스 참조의 [](#serializeclass) 읽기 및 쓰기 `ReadClass`를 모두 처리 하는 대신 SerializeClass를 사용할 수 있습니다.
+클래스 참조의 읽기 및 쓰기를 모두 처리 하는 `ReadClass` 대신 [SerializeClass](#serializeclass)를 사용할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -818,7 +818,7 @@ void WriteClass(const CRuntimeClass* pClassRef);
 
 런타임 클래스는 [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) 및 [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial)를 사용 해야 합니다. 그렇지 않으면 [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md) 이throw`WriteClass` 됩니다.
 
-클래스 참조의 [](#serializeclass) 읽기 및 쓰기 `WriteClass`를 모두 처리 하는 대신 SerializeClass를 사용할 수 있습니다.
+클래스 참조의 읽기 및 쓰기를 모두 처리 하는 `WriteClass` 대신 [SerializeClass](#serializeclass)를 사용할 수 있습니다.
 
 ### <a name="example"></a>예제
 

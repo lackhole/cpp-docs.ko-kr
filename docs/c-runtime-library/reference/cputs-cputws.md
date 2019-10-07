@@ -1,10 +1,10 @@
 ---
 title: _cputs, _cputws
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _cputws
 - _cputs
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cputws
 - _cputs
@@ -30,14 +33,14 @@ helpviewer_keywords:
 - console, sending strings to
 - cputws function
 ms.assetid: ec418484-0f8d-43ec-8d8b-198a556c659e
-ms.openlocfilehash: 81d2364cd1fc409ca3267bc416bd3cbd16c62a15
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 46fce16078b9ce289d45ee4e62bb4076eaf5795a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340243"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942639"
 ---
-# <a name="cputs-cputws"></a>_cputs, _cputws
+# <a name="_cputs-_cputws"></a>_cputs, _cputws
 
 콘솔에 문자열을 배치합니다.
 
@@ -62,13 +65,13 @@ int _cputws(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 **_cputs** 0을 반환 합니다. 함수가 실패하면 0이 아닌 값이 반환됩니다.
+성공 하면 **_cputs** 는 0을 반환 합니다. 함수가 실패하면 0이 아닌 값이 반환됩니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_cputs** 함수는이 가리키는 null로 끝나는 문자열을 씁니다 *str* 콘솔에 직접. CR-LF(캐리지 리턴-줄 바꿈) 조합은 문자열에 자동으로 추가되지 않습니다.
+**_Cputs** 함수는 *str* 에서 가리키는 null 종료 문자열을 콘솔에 직접 씁니다. CR-LF(캐리지 리턴-줄 바꿈) 조합은 문자열에 자동으로 추가되지 않습니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 *str* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고-1이 반환 됩니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. *Str* 이 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용 된 경우 **errno** 가 **EINVAL** 로 설정 되 고-1이 반환 됩니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

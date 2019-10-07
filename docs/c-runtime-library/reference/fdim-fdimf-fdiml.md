@@ -1,11 +1,11 @@
 ---
 title: fdim, fdimf, fdiml
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fdim
 - fdimf
 - fdiml
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fdim
 - fdimf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - fdimf function
 - fdiml function
 ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
-ms.openlocfilehash: 263635a32b21b01faa84405ab97bd5518f054ba5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 74935f724b678b08e39604d9916c7c5de5925aee
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334790"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941295"
 ---
 # <a name="fdim-fdimf-fdiml"></a>fdim, fdimf, fdiml
 
@@ -80,7 +83,7 @@ long double fdiml(
 
 ## <a name="return-value"></a>반환 값
 
-양의 차이 반환 *x* 하 고 *y*:
+*X* 와 *y*의 양수 차이를 반환 합니다.
 
 |반환 값|시나리오|
 |------------------|--------------|
@@ -89,19 +92,19 @@ long double fdiml(
 
 그렇지 않으면 다음 오류 중 하나를 반환할 수 있습니다.
 
-|문제|반환|
+|문제점|반환|
 |-----------|------------|
 |오버플로 범위 오류|+HUGE_VAL, +HUGE_VALF 또는 +HUGE_VALL|
 |언더플로 범위 오류|올바른 값(반올림 후)|
-|*x* 나 *y* 가 NaN|NaN|
+|*x* 또는 *y* 는 NaN입니다.|NaN|
 
 오류는 [_matherr](matherr.md)에 지정된 대로 보고됩니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **fdim** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **fdim** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 형식을 사용 하 고 반환 하는 **fdim** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **fdim** 은 항상 **double**을 사용 하 고 반환 합니다.
 
-NaN 처리를 제외 하 고이 함수는 동일 `fmax(x - y, 0)`합니다.
+NaN 처리를 제외 하 고이 함수는와 동일 `fmax(x - y, 0)`합니다.
 
 ## <a name="requirements"></a>요구 사항
 

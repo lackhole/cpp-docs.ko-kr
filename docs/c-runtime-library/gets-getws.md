@@ -1,10 +1,10 @@
 ---
 title: gets, _getws
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _getws
 - gets
-apilocation:
+api_location:
 - msvcr80.dll
 - msvcr90.dll
 - msvcr120.dll
@@ -13,7 +13,10 @@ apilocation:
 - msvcrt.dll
 - msvcr100.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _getts
 - gets
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - gets function
 - standard input, reading from
 ms.assetid: 1ec2dd4b-f801-48ea-97c2-892590f16024
-ms.openlocfilehash: bd5f4e885c0291be963320610942415fc7b61172
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 722d67336e11250f6a5459078dcea173f69bc2af
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738534"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944333"
 ---
-# <a name="gets-getws"></a>gets, _getws
+# <a name="gets-_getws"></a>gets, _getws
 
 `stdin` 스트림에서 줄을 가져옵니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)를 참조하세요.
 
@@ -69,11 +72,11 @@ wchar_t *_getws(
 *buffer*<br/>
 입력 문자열에 대한 스토리지 위치입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 성공하면 해당 인수를 반환합니다. **NULL** 포인터는 오류 또는 파일 끝 조건을 나타냅니다. 어떤 것이 발생했는지 확인하려면 [ferror](../c-runtime-library/reference/ferror.md) 또는 [feof](../c-runtime-library/reference/feof.md) 를 사용하십시오. `buffer`이 **NULL**인 경우 이러한 함수는 [매개 변수 유효성 검사](../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기를 호출합니다. 계속해서 실행하도록 허용된 경우 이러한 함수는 **NULL**을 반환하고 errno를 `EINVAL`로 설정합니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `gets` 함수는 표준 입력 스트림 `stdin`에서 줄을 읽고 `buffer`에 저장합니다. 줄은 첫 번째 줄 바꿈 문자('\n')까지 모든 문자로 구성됩니다. `gets` 는 줄을 반환하기 전에 줄 바꿈 문자를 null 문자('\0')로 대체합니다. 반대로 `fgets` 함수는 줄 바꿈 문자를 유지합니다. `_getws` 는 `gets`의 와이드 문자 버전입니다. 해당 인수 및 반환 값은 와이드 문자열입니다.
 
@@ -97,7 +100,7 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 호환성에 대한 자세한 내용은 [호환성](../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```
 // crt_gets.c

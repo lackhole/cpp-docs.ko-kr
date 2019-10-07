@@ -1,14 +1,14 @@
 ---
 title: strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - wcscoll
 - _mbscoll
 - _mbscoll_l
 - strcoll
 - _strcoll_l
 - _wcscoll_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -21,7 +21,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wcscoll
 - _mbscoll
@@ -43,19 +46,19 @@ helpviewer_keywords:
 - strcoll functions
 - strings [C++], comparing by code page
 ms.assetid: 900a7540-c7ec-4c2f-b292-7a85f63e3fe8
-ms.openlocfilehash: ae72b4cbb2b001a332d41a74883a0e2a9d20a181
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7519b8f41d77ed668bb7da1e8ced18ee13c0a5bf
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354212"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957884"
 ---
-# <a name="strcoll-wcscoll-mbscoll-strcolll-wcscolll-mbscolll"></a>strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
+# <a name="strcoll-wcscoll-_mbscoll-_strcoll_l-_wcscoll_l-_mbscoll_l"></a>strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
 
 현재 로캘 또는 지정된 LC_COLLAT 변환 상태 범주를 사용하여 문자열을 비교합니다.
 
 > [!IMPORTANT]
-> **_mbscoll** 하 고 **_mbscoll_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbscoll** 및 **_mbscoll_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -99,23 +102,23 @@ int _mbscoll_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수의 관계를 나타내는 값을 반환 *string1* 하 *string2*다음과 같이 합니다.
+이러한 각 함수는 다음과 같이 *문자열* 1과 *문자열 2*의 관계를 나타내는 값을 반환 합니다.
 
 |반환 값|문자열 1과 문자열 2의 관계|
 |------------------|----------------------------------------|
-|< 0|*string1* 보다 작거나 *string2*|
-|0|*string1* 동일 *string2*|
-|> 0|*string1* 보다 큰 *string2*|
+|< 0|*문자열* *2* 보다 작음|
+|0|*문자열* *2* 와 같음|
+|> 0|*문자열* *2* 보다 큼|
 
-이러한 각 함수 반환 **_NLSCMPERROR** 오류 발생 시. 사용 하도록 **_NLSCMPERROR**, 두 문자열 중 하나를 포함 합니다. H 또는 MBSTRING 합니다. 8. **wcscoll** 경우 실패할 수 있습니다 *string1* 또는 *string2* 됩니다 **NULL** 또는 정렬 순서 도메인을 외부 와이드 문자 코드가 포함 되어 있습니다. 오류가 발생 하는 경우 **wcscoll** 설정할 수 있습니다 **errno** 하 **EINVAL**합니다. 에 대 한 호출에서 오류를 확인 하려면 **wcscoll**설정 **errno** 0으로 확인 한 다음 **errno** 호출한 후 **wcscoll**합니다.
+이러한 각 함수는 오류 발생 시 **_NLSCMPERROR** 를 반환 합니다. **_NLSCMPERROR**를 사용 하려면 문자열을 포함 합니다. H 또는 MBSTRING. 넣기. *string1 또는 string1* 이 **NULL** 이거나 정렬 시퀀스의 도메인 외부에 있는 와이드 문자 코드를 포함 하는 경우 *에는* **wcscoll** 가 실패할 수 있습니다. 오류가 발생 하면 **wcscoll** 가 **errno** 를 **EINVAL**로 설정할 수 있습니다. **Wcscoll**에 대 한 호출에서 오류를 확인 하려면 **errno** 를 0으로 설정 하 고 **wcscoll**를 호출한 후 **errno** 를 확인 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수는 대/소문자 구분 비교를 수행 *string1* 하 고 *string2* 에서 현재 사용 중인 코드 페이지에 따라 합니다. 현재 코드 페이지에서 문자 집합 순서와 사전적 문자 순서가 다르며 이러한 차이가 문자열 비교 시 중요한 경우에만 이러한 함수를 사용해야 합니다.
+이러한 각 함수는 현재 사용 중인 코드 페이지에 따라 *문자열* 1과 *문자열* 1의 대/소문자를 구분 하는 비교를 수행 합니다. 현재 코드 페이지에서 문자 집합 순서와 사전적 문자 순서가 다르며 이러한 차이가 문자열 비교 시 중요한 경우에만 이러한 함수를 사용해야 합니다.
 
-이러한 모든 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 경우 *string1* 또는 *string2* 가 null 포인터 이거나 *개수* 보다 크면 **INT_MAX**, 잘못 된 매개 변수 처리기가 호출 됩니다 에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **_NLSCMPERROR** 설정 **errno** 하 **EINVAL**합니다.
+이러한 모든 함수는 해당 함수 매개 변수의 유효성을 검사합니다. String1 또는 *string1* 이 null *포인터 이거나* *count* 가 **INT_MAX**보다 큰 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **_NLSCMPERROR** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
-두 문자열의 비교는 로캘 종속 작업입니다. 각 로캘에서 문자의 순서를 지정하는 규칙은 서로 다르기 때문입니다. 없는 이러한 함수 버전을 **_l** 사용 하 여 접미사이 로캘 종속 동작에 대 한 현재 스레드의 로캘을; 버전을 사용 하 여는 **_l** 접미사는 해당 함수와 동일 점을 제외 하면 접미사가 없는 현재 로캘 대신 매개 변수로 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+두 문자열의 비교는 로캘 종속 작업입니다. 각 로캘에서 문자의 순서를 지정하는 규칙은 서로 다르기 때문입니다. **_L** 접미사가 없는 이러한 함수 버전은이 로캘 종속 동작에 현재 스레드의 로캘을 사용 합니다. **_l** 접미사가 있는 버전은 현재 로캘 대신 매개 변수로 전달 된 로캘을 사용 한다는 점을 제외 하 고는 접미사가 없는 해당 함수와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

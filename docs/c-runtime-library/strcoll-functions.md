@@ -1,14 +1,17 @@
 ---
 title: strcoll 함수
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcr120.dll
 - msvcr110_clr0400.dll
 - msvcr90.dll
 - msvcr80.dll
 - msvcr100.dll
 - msvcr110.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - strcoll
 helpviewer_keywords:
@@ -17,12 +20,12 @@ helpviewer_keywords:
 - strcoll functions
 - strings [C++], comparing by code page
 ms.assetid: c09eeff3-8aba-4cfb-a524-752436d85573
-ms.openlocfilehash: 2acfaafbe15f065dbac924ce72a5ca3a5275537b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: c63a130cee6913006fff2ed5568c41cc4fdeac3c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751390"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944893"
 ---
 # <a name="strcoll-functions"></a>strcoll 함수
 
@@ -37,7 +40,7 @@ ms.locfileid: "57751390"
 |[_strncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|[_wcsncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|[_mbsncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|두 문자열의 처음 `count`자를 비교합니다.|
 |[_strnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|[_wcsnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|[_mbsnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|두 문자열의 처음 `count`자를 비교합니다(대/소문자 구분 없음).|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이러한 함수(`strcoll`, `stricoll`, `_strncoll` 및 `_strnicoll`)의 SBCS(싱글바이트 문자) 버전은 현재 로캘의 `LC_COLLATE` 범주 설정에 따라 `string1` 및 `string2`를 비교합니다. 이러한 함수는 `strcoll` 함수가 데이터 정렬 시퀀스를 제공하는 로캘 코드 페이지 정보를 사용한다는 측면에서 해당 `strcmp` 함수와 다릅니다. 문자 집합 순서와 사전적 문자 순서가 다른 로캘에서 문자열을 비교하는 경우 해당 `strcmp` 함수가 아닌 `strcoll` 함수를 사용해야 합니다. `LC_COLLATE`에 대한 자세한 내용은 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)을 참조하세요.
 

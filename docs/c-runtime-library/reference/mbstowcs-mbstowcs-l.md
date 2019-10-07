@@ -1,10 +1,10 @@
 ---
 title: mbstowcs, _mbstowcs_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - mbstowcs
 - _mbstowcs_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - mbstowcs
 helpviewer_keywords:
@@ -26,12 +29,12 @@ helpviewer_keywords:
 - mbstowcs_l function
 - mbstowcs function
 ms.assetid: 96696b27-e068-4eeb-8006-3f7a0546ae6d
-ms.openlocfilehash: cae1034d0bcb9789f5cb709399d4992de44cae9d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 3df851b08edfa9dfe5bf9b42b9abfd45a8939606
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499776"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952027"
 ---
 # <a name="mbstowcs-_mbstowcs_l"></a>mbstowcs, _mbstowcs_l
 
@@ -85,11 +88,11 @@ null로 끝나는 멀티바이트 문자 시퀀스의 주소입니다.
 **Mbstowcs** 가 원본 문자열을 성공적으로 변환 하는 경우 변환 된 멀티 바이트 문자 수를 반환 합니다. *Wcstr* 인수가 **NULL**이면 함수는 대상 문자열의 필요한 크기 (와이드 문자)를 반환 합니다. **Mbstowcs** 가 잘못 된 멀티 바이트 문자를 발견 하면-1을 반환 합니다. 반환 값이 *count*이면 와이드 문자열이 null로 종료 되지 않습니다.
 
 > [!IMPORTANT]
-> *Wcstr* 및 *mbstr* 이 겹치지 않도록 하 고, 변환할 멀티 바이트 문자 수를 정확 하 게 반영 합니다.
+> *Wcstr* 및 *mbstr* 이 겹치지 않도록 하 고, 변환할 멀티 바이트 문자 수 *를 정확 하* 게 반영 합니다.
 
 ## <a name="remarks"></a>설명
 
-**Mbstowcs** 함수는 *mbstr* 가 가리키는 최대 개수의 멀티 바이트 문자를 현재 로캘에서 결정 되는 해당 와이드 문자의 문자열로 변환 합니다. *Wcstr*가 나타내는 주소에 결과 와이드 문자열을 저장 합니다. 결과는 [mbtowc](mbtowc-mbtowc-l.md)에 대 한 일련의 호출과 유사 합니다. **Mbstowcs** 가 전후에 단일 바이트 null 문자 (' \ 0 ')를 발견 하면 null 문자 를 와이드 문자 null 문자 (L ' \ 0 ')로 변환 하 고 중지 합니다. 따라서 *wcstr* 의 와이드 문자열은 변환 하는 동안 null 문자를 발견 하는 경우에만 null로 종결 됩니다. *Wcstr* 및 *mbstr* 가 가리키는 시퀀스가 겹치는 경우에는 동작이 정의 되지 않습니다.
+**Mbstowcs** 함수는 *mbstr* 가 가리키는 최대 *개수의 멀티 바이트* 문자를 현재 로캘에서 결정 되는 해당 와이드 문자의 문자열로 변환 합니다. *Wcstr*가 나타내는 주소에 결과 와이드 문자열을 저장 합니다. 결과는 [mbtowc](mbtowc-mbtowc-l.md)에 대 한 일련의 호출과 유사 합니다. **Mbstowcs** 가 전후에 단일 바이트 null 문자 (' \ 0 ')를 *발견 하면 null* 문자를 와이드 문자 null 문자 (L ' \ 0 ')로 변환 하 고 중지 합니다. 따라서 *wcstr* 의 와이드 문자열은 변환 하는 동안 null 문자를 발견 하는 경우에만 null로 종결 됩니다. *Wcstr* 및 *mbstr* 가 가리키는 시퀀스가 겹치는 경우에는 동작이 정의 되지 않습니다.
 
 *Wcstr* 인수가 **null**이면 **mbstowcs** 는 null 종결자를 포함 하지 않고 변환 결과로 발생 하는 와이드 문자 수를 반환 합니다. 올바른 값을 반환하려면 소스 문자열이 null로 끝나야 합니다. 결과 와이드 문자열이 null로 끝나야 하는 경우 반환된 값에 추가하세요.
 

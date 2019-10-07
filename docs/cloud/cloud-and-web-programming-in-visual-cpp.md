@@ -2,13 +2,13 @@
 title: Visual C++의 클라우드 및 웹 프로그래밍
 ms.date: 05/14/2019
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
-ms.topic: landing-page
-ms.openlocfilehash: cf638bb42985fd22f7befea02c1c893387ce98c8
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.topic: overview
+ms.openlocfilehash: 4e50557733d474d68b8e503d00b28b2ae8cb7f09
+ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218513"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274638"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++의 클라우드 및 웹 프로그래밍
 
@@ -57,7 +57,7 @@ C++에는 웹 및 클라우드에 연결하기 위한 다양한 옵션이 있습
 
   인터넷에 연결할 Windows 데스크톱 앱에서 사용할 수 있는 Windows API입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md) <br/>
 [Microsoft Azure C 및 C++ 개발자 센터](https://azure.microsoft.com/develop/cpp/) <br/>

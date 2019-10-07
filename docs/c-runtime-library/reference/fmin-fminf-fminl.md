@@ -1,11 +1,11 @@
 ---
 title: fmin, fminf, fminl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fmin
 - fminf
 - fminl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fmin
 - fminf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - fminf function
 - fminl function
 ms.assetid: 1916dfb5-99c1-4b0d-aefb-513525c3f2ac
-ms.openlocfilehash: f73853e18bd5d7f699cd2c3109fe5fb830859bf1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df01f2205291920b8c0519db622c93048278beb1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333380"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957084"
 ---
 # <a name="fmin-fminf-fminl"></a>fmin, fminf, fminl
 
@@ -80,19 +83,19 @@ long double fminl(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 반환 중 더 작은 *x* 하거나 *y*합니다.
+성공 하면 *x* 또는 *y*중 더 작은 값을 반환 합니다.
 
 |입력|결과|
 |-----------|------------|
-|*x* 가 NaN|*y*|
-|*y* 가 NaN|*x*|
-|*x* 하 고 *y* = nan|NaN|
+|*x* 는 NaN입니다.|*y*|
+|*y* 는 NaN입니다.|*x*|
+|*x* 및 *y* 는 NaN입니다.|NaN|
 
-함수는 발생 하지 않습니다 [_matherr](matherr.md) 를 호출 하려면 모든 부동 소수점 예외를 발생 시킬 또는 값을 변경 **errno**합니다.
+함수는 [_matherr](matherr.md) 를 호출 하거나, 부동 소수점 예외를 발생 시키거나, **errno**의 값을 변경 하지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **fmin** 및 반환 하는 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **fmin** 항상 받아서 반환 된 **double**합니다.
+는 C++ 오버 로드를 허용 하기 때문에 **float** 및 **long** **double** 형식을 사용 하 고 반환 하는 **fmin** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **fmin** 은 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,11 +1,11 @@
 ---
 title: sinh, sinhf, sinhl
 ms.date: 04/10/2018
-apiname:
+api_name:
 - sinhl
 - sinhf
 - sinhl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - sinh
 - sinhf
@@ -31,16 +34,16 @@ helpviewer_keywords:
 - sinhf function
 - sinhl function
 - hyperbolic functions
-ms.openlocfilehash: 7327809a20569c520aa799690203458d54e30fb5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ae500cf595707acf9022b1c52232314c36cfe4d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356279"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948099"
 ---
 # <a name="sinh-sinhf-sinhl"></a>sinh, sinhf, sinhl
 
-쌍 곡 사인을 계산합니다.
+하이퍼볼릭 사인을 계산 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -62,7 +65,7 @@ long double sinh(long double x);  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-합니다 **sinh** 의 쌍 곡 사인을 반환 하는 함수 *x*합니다. 기본적으로 결과 너무 크면 **sinh** 설정 **errno** 에 **ERANGE** 에서 반환 하 고**HUGE_VAL**합니다.
+**Sinh** 함수는 *x*의 하이퍼볼릭 사인을 반환 합니다. 기본적으로 결과가 너무 크면 **sinh** 는 **errno** 를 **ERANGE** 로 설정 하 고 ±**HUGE_VAL**를 반환 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
@@ -73,7 +76,7 @@ long double sinh(long double x);  // C++ only
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **sinh** 및 반환 하는 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **sinh** 항상 받아서 반환 **double**합니다.
+는 C++ 오버 로드를 허용 하므로 **float** 또는 **long** **double** 값을 사용 하 고 반환 하는 **sinh** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **sinh** 은 항상 **double**을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

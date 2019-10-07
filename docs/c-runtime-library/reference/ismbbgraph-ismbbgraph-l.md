@@ -1,10 +1,10 @@
 ---
 title: _ismbbgraph, _ismbbgraph_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbgraph_l
 - _ismbbgraph
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ismbbgraph
 - _ismbbgraph_l
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - _ismbbgraph function
 - ismbbgraph function
 ms.assetid: b60db718-134f-4796-acc1-592d0b9efbb7
-ms.openlocfilehash: d5b5dace39e674744148a1ddf0c692692fb889f8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 096450869f9a150585b3102cea155ecd948c5751
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286774"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954196"
 ---
-# <a name="ismbbgraph-ismbbgraphl"></a>_ismbbgraph, _ismbbgraph_l
+# <a name="_ismbbgraph-_ismbbgraph_l"></a>_ismbbgraph, _ismbbgraph_l
 
 특정 멀티바이트 문자가 그래픽 문자인지 여부를 결정합니다.
 
@@ -65,7 +68,7 @@ int _ismbbgraph_l (
 
 `isctype(c, ( _PUNCT | _UPPER | _LOWER | _DIGIT )) || _ismbbkprint(c)`
 
-이 대 한 아닌 *c*, 있지 않으면 0입니다. **_ismbbgraph** 모든 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbbgraph_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+*c*의 경우 0이 아니고, 그렇지 않으면 0입니다. **_ismbbgraph** 는 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_ismbbgraph_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

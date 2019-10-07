@@ -1,9 +1,9 @@
 ---
 title: _heapadd
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _heapadd
-apilocation:
+api_location:
 - msvcr100.dll
 - msvcr110_clr0400.dll
 - msvcr120.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcrt.dll
 - msvcr110.dll
 - msvcr90.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - heapadd
 - _heapadd
@@ -21,14 +24,14 @@ helpviewer_keywords:
 - heaps, adding memory
 - heapadd function
 ms.assetid: 4d691fe2-2763-49f4-afb1-62738b7cd3ff
-ms.openlocfilehash: 8cfd2a5a112a7a5b578f7b6dfcdcc3998596bc86
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 4be87710519c9a389adbaf41fefddb9ea8dfb1e6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738499"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940280"
 ---
-# <a name="heapadd"></a>_heapadd
+# <a name="_heapadd"></a>_heapadd
 
 힙에 메모리를 추가합니다.
 
@@ -52,13 +55,13 @@ int _heapadd(
 *size*<br/>
 추가할 메모리 크기(바이트)입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 성공하면 `_heapadd`에서 0을 반환합니다. 그렇지 않으면 함수에서 –1을 반환하고 `errno`를 `ENOSYS`로 설정합니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하십시오.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 Visual C++ 버전 4.0부터 새 디버깅 기능을 지원하기 위해 기본 힙 구조가 C 런타임 라이브러리로 이동되었습니다. 따라서 `_heapadd` 는 Win32 API를 기반으로 하는 플랫폼에서 더 이상 지원되지 않습니다.
 

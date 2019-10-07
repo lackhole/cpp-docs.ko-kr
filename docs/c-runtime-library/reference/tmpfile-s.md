@@ -1,9 +1,9 @@
 ---
 title: tmpfile_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - tmpfile_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - tmpfile_s
 helpviewer_keywords:
@@ -23,14 +26,14 @@ helpviewer_keywords:
 - tmpfile_s function
 - temporary files, creating
 ms.assetid: 50879c69-215e-425a-a2a3-8b5467121eae
-ms.openlocfilehash: 341e1c8ed6dd20ec7e6a3d71999fb365e45e614a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64107f26fa651739f4d5bdd7521b15d9d458df65
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155578"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946051"
 ---
-# <a name="tmpfiles"></a>tmpfile_s
+# <a name="tmpfile_s"></a>tmpfile_s
 
 임시 파일을 만듭니다. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 보안 기능이 향상된 [tmpfile](tmpfile.md) 버전입니다.
 
@@ -53,19 +56,19 @@ errno_t tmpfile_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*pFilePtr*|**반환 값**|**Contents of**  *pFilePtr*|
+|*pFilePtr*|**반환 값**|**내용** *pFilePtr*|
 |----------------|----------------------|---------------------------------|
 |**NULL**|**EINVAL**|변경되지 않음|
 
-위의 매개 변수 유효성 검사 오류가 발생하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 반환 값 이며 **EINVAL**합니다.
+위의 매개 변수 유효성 검사 오류가 발생하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 반환 값은 **EINVAL**입니다.
 
 ## <a name="remarks"></a>설명
 
-**tmpfile_s** 함수를 임시 파일을 만들고 해당 스트림에 대 한 포인터를 배치 합니다 *pFilePtr* 인수입니다. 임시 파일은 루트 디렉터리에 만들어집니다. 루트가 아닌 디렉터리에 임시 파일을 만들려면 [fopen](fopen-wfopen.md)과 함께 [tmpnam_s](tmpnam-s-wtmpnam-s.md) 또는 [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)을 사용합니다.
+**Tmpfile_s** 함수는 임시 파일을 만들고 해당 스트림에 대 한 포인터를 *pFilePtr* 인수에 배치 합니다. 임시 파일은 루트 디렉터리에 만들어집니다. 루트가 아닌 디렉터리에 임시 파일을 만들려면 [fopen](fopen-wfopen.md)과 함께 [tmpnam_s](tmpnam-s-wtmpnam-s.md) 또는 [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)을 사용합니다.
 
-파일을 열 수 없는 경우 **tmpfile_s** 씁니다 **NULL** 하는 *pFilePtr* 매개 변수입니다. 이 임시 파일은 때나 일반적으로 프로그램을 종료 하면 파일을 닫을 때 자동으로 삭제 됩니다 **_rmtmp** 현재 작업 디렉터리를 변경 하지 않습니다 가정 라고 합니다. 임시 파일에 열려 **w + b** (이진 읽기/쓰기) 모드입니다.
+파일을 열 수 없는 경우 **tmpfile_s** 는 *PFilePtr* 매개 변수에 **NULL** 을 씁니다. 이 임시 파일은 파일을 닫을 때, 프로그램이 정상적으로 종료 될 때 또는 **_rmtmp** 가 호출 될 때 (현재 작업 디렉터리가 변경 되지 않는다고 가정) 자동으로 삭제 됩니다. 임시 파일은 **w + b** (이진 읽기/쓰기) 모드에서 열립니다.
 
-시도 하면 오류가 발생할 수 있습니다 둘 **TMP_MAX_S** (STDIO 참조 합니다. H) 사용 하 여 호출 **tmpfile_s**합니다.
+**TMP_MAX_S** 이상을 시도 하면 오류가 발생할 수 있습니다 (stdio.h 참조). H)를 사용 하 여 **tmpfile_s**를 호출 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -78,7 +81,7 @@ errno_t tmpfile_s(
 ## <a name="example"></a>예제
 
 > [!NOTE]
-> 이 예제에서는 Windows에서 실행 하려면 관리자 권한이 필요할 수 있습니다.
+> 이 예에서는 Windows에서 실행 하기 위해 관리자 권한이 필요할 수 있습니다.
 
 ```C
 // crt_tmpfile_s.c

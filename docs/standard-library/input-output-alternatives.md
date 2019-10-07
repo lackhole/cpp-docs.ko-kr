@@ -13,7 +13,7 @@ ms.locfileid: "68455298"
 ---
 # <a name="inputoutput-alternatives"></a>입력/출력 대체
 
-Microsoft C++ 컴파일러는 i/o 프로그래밍에 대 한 여러 가지 대안을 제공 합니다.
+Microsoft C++ 컴파일러는 I/O 프로그래밍에 대한 여러 가지 대안을 제공합니다.
 
 - C 런타임 라이브러리 버퍼링되지 않은 직접 I/O
 

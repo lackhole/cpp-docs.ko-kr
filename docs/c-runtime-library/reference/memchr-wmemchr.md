@@ -1,10 +1,10 @@
 ---
 title: memchr, wmemchr
 ms.date: 03/31/2019
-apiname:
+api_name:
 - wmemchr
 - memchr
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - memchr
 - wmemchr
@@ -24,12 +27,12 @@ helpviewer_keywords:
 - memchr function
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-ms.openlocfilehash: 00a1f0d12047cc388b56074a657ffd739e986827
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c951716d623d900f975e9d6f8a1c762a155b1a7a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285263"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951939"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 
@@ -83,13 +86,13 @@ const wchar_t *wmemchr(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 포인터의 첫 번째 위치를 반환 *c* 에 *버퍼*합니다. 그렇지 않으면 NULL을 반환 합니다.
+성공 하면 *버퍼*에서 *c* 의 첫 번째 위치에 대 한 포인터를 반환 합니다. 그렇지 않으면 NULL을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-`memchr` 및 `wmemchr` 처음 검색할 *c* 첫 번째에서 *개수* 자의 *버퍼*합니다. 찾으면 중지 *c* 첫 번째 검사 하거나 *개수* 문자입니다.
+`memchr`버퍼의 첫 번째 *카운트* 문자에서 처음 발견 되는 *c* 를 찾습니다.`wmemchr` *C* 를 찾거나 첫 번째 *카운트* 문자를 확인 한 경우 중지 합니다.
 
-C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 번째 인수에 대 한 포인터입니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. 에 대 한 포인터를 갖는 오버 로드 **상수** 에 대 한 포인터를 반환 **const**;는 버전에 대 한 포인터를은 비**const** 에 대 한 포인터를 반환 하는 비-**const** . 매크로 \_CRT\_CONST\_올바름\_오버 로드 모두 정의 됩니다는 **const** 및 비-**const** 이러한 함수의 버전은 사용할 수 있습니다. 비-필요한 경우**const** 둘 다에 대 한 동작 C++ 의 오버 로드 C++, 기호를 정의 \_CONST\_를 반환 합니다.
+C에서 이러한 함수는 첫 번째 인수에 대 한 **const** 포인터를 사용 합니다. C++에서는 두 오버로드를 모두 사용할 수 있습니다. **Const** 에 대 한 포인터를 취하는 오버 로드는 **const**에 대 한 포인터를 반환 합니다. 비**const** 에 대 한 포인터를 사용 하는 버전은 비**const**에 대 한 포인터를 반환 합니다. 매크로 \_CRT\_const올바른\_ 오버 로드는 이러한 함수의 const 및 비 const 버전을 모두 사용할 수 있는 경우에 정의 됩니다.\_ 에서 두 C++ 오버 로드에 대 한 비**const** 동작이 필요한 경우 C++에는 const\_반환 \_기호를 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

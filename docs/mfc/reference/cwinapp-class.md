@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: c35cc01b352285402885587f6d0b91e2c2bdd4ae
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: e65ad8b5d8b14ff747adc55b517d9e695d9cbb66
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70741244"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095759"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -1036,7 +1036,7 @@ virtual void HtmlHelp(
 추가 데이터를 지정 합니다. 사용 되는 값은 *Ncmd* 매개 변수의 값에 따라 달라 집니다. `0x000F`기본값은 [HH_HELP_CONTEXT](/previous-versions/windows/desktop/htmlhelp/hh-help-context-command)입니다.
 
 *nCmd*<br/>
-요청한 도움말의 형식을 지정합니다. 사용할 수 있는 값 목록과 이러한 값이 *Dwdata* 매개 변수에 영향을 주는 방법에 대 한 자세한 내용은Windows SDK의 [HtmlHelpW](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpw) 및 [HtmlHelpA](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpa) API 함수 항목에서 설명 하는 *ucommand* 매개 변수를 참조하십시오.  
+요청한 도움말의 형식을 지정합니다. 사용할 수 있는 값 목록과 이러한 값이 *Dwdata* 매개 변수에 영향을 주는 방법에 대 한 자세한 내용은Windows SDK의 [HtmlHelpW](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpw) 및 [HtmlHelpA](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpa) API 함수 항목에서 설명 하는 *ucommand* 매개 변수를 참조하십시오. 
 
 ### <a name="remarks"></a>설명
 

@@ -403,10 +403,10 @@ helpviewer_keywords:
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
 ms.openlocfilehash: bae2f9a5a4f39c4eeffe68cc33e744e44c6800c8
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69507010"
 ---
 # <a name="cdc-class"></a>CDC 클래스
@@ -2049,7 +2049,7 @@ int EnumObjects(
 
 Microsoft 시각적 개체 C++ 의 새 기능을 사용 하면 일반 함수를에 `EnumObjects`전달 된 함수로 사용할 수 있습니다. 에 `EnumObjects` 전달 되는 주소는 **내보내기** 및 파스칼 호출 규칙을 사용 하 여 내보낸 함수에 대 한 포인터입니다. 보호 모드 응용 프로그램에서는 Windows MakeProcInstance 함수를 사용 하 여이 함수를 만들거나 FreeProcInstance Windows 함수와 함께 사용한 후 함수를 해제할 필요가 없습니다.
 
-또한 응용 프로그램의 모듈 정의 파일에서 내보내기 문의 함수 이름을 내보낼 필요가 없습니다. 대신 **EXPORT** 함수 한정자를 사용할 수 있습니다.
+또한 응용 프로그램의 모듈 정의 파일에서 **내보내기 문의 함수** 이름을 내보낼 필요가 없습니다. 대신 **EXPORT** 함수 한정자를 사용할 수 있습니다.
 
 **INT 콜백 내보내기** AFunction **(LPSTR**, **LPSTR);**
 
@@ -2250,7 +2250,7 @@ BOOL ExtFloodFill(
 
 ### <a name="return-value"></a>반환 값
 
-함수가 성공 하면 0이 아닌 값입니다. 그렇지 않으면 0으로 채우기를 완료할 수 없습니다. 지정 된 지점에 *crcolor* 로 지정 된 경계 색 (FLOODFILLBORDER가 요청 된 경우)이 있는 경우 지정 된 지점에 crcolor로 지정 된 색이 없으면 (FLOODFILLSURFACE가 요청 됨) 또는 지점이 클리핑 영역 외부에 있는 경우입니다.
+함수가 성공 하면 0이 아닌 값입니다. 그렇지 않으면 0으로 채우기를 완료할 수 없습니다. 지정 된 지점에 *crcolor* 로 지정 된 경계 색 (FLOODFILLBORDER가 요청 된 경우)이 있는 경우 지정 된 지점에 *crcolor* 로 지정 된 색이 없으면 (FLOODFILLSURFACE가 요청 됨) 또는 지점이 클리핑 영역 외부에 있는 경우입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2323,7 +2323,7 @@ BOOL ExtTextOut(
 
 사각형 영역은 불투명 (현재 배경색으로 채워짐) 될 수 있으며 클리핑 영역 일 수 있습니다.
 
-*NOptions* 가 0이 고 *lpRect* 가 NULL 인 경우 함수는 사각형 영역을 사용 하지 않고 장치 컨텍스트에 텍스트를 씁니다. 기본적으로 현재 위치는 함수에 의해 사용 또는 업데이트되지 않습니다. 응용 프로그램에서 `ExtTextOut`를 호출할 때 현재 위치를 업데이트 해야 하는 경우 응용 프로그램에서 `CDC` 멤버 함수 [SetTextAlign](#settextalign)를 호출할 수 있습니다. *nFlags* 을 TA_UPDATECP로 설정 합니다. 이 플래그가 설정 되 면 Windows는에 대 `ExtTextOut` 한 후속 호출에서 *x* 및 *y* 를 무시 하 고 대신 현재 위치를 사용 합니다. 응용 프로그램에서 TA_UPDATECP를 사용 하 여 현재 위치 `ExtTextOut` 를 업데이트 하는 경우 현재 위치를 텍스트의 이전 줄 끝 이나 lpdxwidths 가리키는 배열의 마지막 요소에 의해 지정 된 위치로 설정 합니다. 이상일.
+*NOptions* 가 0이 고 *lpRect* 가 NULL 인 경우 함수는 사각형 영역을 사용 하지 않고 장치 컨텍스트에 텍스트를 씁니다. 기본적으로 현재 위치는 함수에 의해 사용 또는 업데이트되지 않습니다. 응용 프로그램에서 `ExtTextOut`를 호출할 때 현재 위치를 업데이트 해야 하는 경우 응용 프로그램에서 `CDC` 멤버 함수 [SetTextAlign](#settextalign)를 호출할 수 있습니다. *nFlags* 을 TA_UPDATECP로 설정 합니다. 이 플래그가 설정 되 면 Windows는에 대 `ExtTextOut` 한 후속 호출에서 *x* 및 *y* 를 무시 하 고 대신 현재 위치를 사용 합니다. 응용 프로그램에서 TA_UPDATECP를 사용 하 여 현재 위치 `ExtTextOut` 를 업데이트 하는 경우 현재 위치를 텍스트의 이전 줄 끝 이나 *lpdxwidths*가리키는 배열의 마지막 요소에 의해 지정 된 위치로 설정 합니다. 이상일.
 
 ##  <a name="fillpath"></a>  CDC::FillPath
 
@@ -3518,11 +3518,11 @@ int GetPath(
 *lpTypes*<br/>
 는 꼭 짓 점 형식이 배치 되는 바이트 배열을 가리킵니다. 값은 다음 중 하나입니다.
 
-- PT_MOVETO는 Lppoints의 해당 지점 에서 분리 된 그림을 시작 하도록 지정 합니다.
+- PT_MOVETO는 *lppoints* 의 해당 지점에서 분리 된 그림을 시작 하도록 지정 합니다.
 
-- PT_LINETO는 Lppoints의 이전 지점과 해당 지점이 선의 끝점 임을 지정 합니다.
+- PT_LINETO는 *lppoints* 의 이전 지점과 해당 지점이 선의 끝점 임을 지정 합니다.
 
-- PT_BEZIERTO는 Lppoints의 해당 점이 Bzier 곡선의 제어점 또는 끝점 임을 지정 합니다.
+- PT_BEZIERTO는 *lppoints* 의 해당 점이 Bzier 곡선의 제어점 또는 끝점 임을 지정 합니다.
 
 PT_BEZIERTO 형식은 항상 3 집합에서 발생 합니다. 바로 앞의 경로에 있는 점은 Bzier 곡선의 시작점을 정의 합니다. 처음 두 PT_BEZIERTO 점은 제어점이 고, 세 번째 PT_BEZIERTO point는 끝점이 며 (하드 코드 된 경우)입니다.
 
@@ -4926,7 +4926,7 @@ PT_BEZIERTO 형식은 항상 3 집합에서 발생 합니다. 현재 위치는 B
 
 - PT_CLOSEFIGURE는이 시점에 대 한 PT_LINETO 또는 PT_BEZIERTO 형식이 완료 된 후에도 그림을 자동으로 닫도록 지정 합니다. 이 지점부터 가장 최근 PT_MOVETO 또는 `MoveTo` 지점까지 선이 그려집니다.
 
-   이 플래그는 비트 or 연산자를 사용 하 여 줄의 PT_LINETO 형식 또는 Bzier 스플라인의 끝점의 PT_BEZIERTO 형식으로 결합 됩니다. 현재 위치는 닫는 줄의 끝 지점으로 설정 됩니다.
+   이 플래그는 비트 or 연산자를 사용 하 여 줄의 PT_LINETO **형식 또는 Bzier** 스플라인의 끝점의 PT_BEZIERTO 형식으로 결합 됩니다. 현재 위치는 닫는 줄의 끝 지점으로 설정 됩니다.
 
 *nCount*<br/>
 Lppoints 배열의 총 요소 수를 지정 합니다 .이는 *lppoints* 배열의 바이트 수와 동일 합니다.
@@ -5027,7 +5027,7 @@ BOOL PolylineTo(
 
 ### <a name="remarks"></a>설명
 
-현재 펜을 사용 하 여 현재 위치에서 Lppoints 매개 변수로 지정 된 첫 번째 점으로 선을 그립니다. 함수는 각 추가 줄에 대해 이전 줄의 끝점부터 Lppoints로 지정 된 다음 지점까지 그립니다. `PolylineTo`현재 위치를 마지막 줄의 끝 지점으로 이동 합니다. 이 함수로 그려진 선 세그먼트가 폐쇄형 그림을 구성 하면 해당 그림은 채워지지 않습니다.
+현재 펜을 사용 하 여 현재 위치에서 *lppoints* 매개 변수로 지정 된 첫 번째 점으로 선을 그립니다. 함수는 각 추가 줄에 대해 이전 줄의 끝점부터 *lppoints*로 지정 된 다음 지점까지 그립니다. `PolylineTo`현재 위치를 마지막 줄의 끝 지점으로 이동 합니다. 이 함수로 그려진 선 세그먼트가 폐쇄형 그림을 구성 하면 해당 그림은 채워지지 않습니다.
 
 ##  <a name="polypolygon"></a>  CDC::PolyPolygon
 
@@ -5740,7 +5740,7 @@ Abort 프로시저로 설치할 abort 함수에 대 한 포인터입니다. 콜�
 
 Microsoft 시각적 개체 C++ 의 기능을 통해에 전달 된 콜백 함수를 간편 하 게 `SetAbortProc`만들 수 있습니다. `EnumObjects` 멤버 함수에 전달 되는 주소는 `__stdcall` 호출 규칙을 사용 하 여로 `__declspec(dllexport)` 내보낸 함수에 대 한 포인터입니다.
 
-또한 응용 프로그램의 모듈 정의 파일에서 내보내기 문의 함수 이름을 내보낼 필요가 없습니다. 대신 **EXPORT** 함수 한정자를 사용할 수 있습니다.
+또한 응용 프로그램의 모듈 정의 파일에서 **내보내기 문의 함수** 이름을 내보낼 필요가 없습니다. 대신 **EXPORT** 함수 한정자를 사용할 수 있습니다.
 
 **BOOL 콜백 내보내기** AFunction ( **HDC**, `int` **);**
 

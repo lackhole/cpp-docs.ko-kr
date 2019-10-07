@@ -1,11 +1,11 @@
 ---
 title: cacos, cacosf, cacosl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - cacos
 - cacosf
 - cacosl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cacos
 - cacosf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - cacosf function
 - cacosl function
 ms.assetid: 78118c00-0a07-49c1-8a13-4bf19ce3aea8
-ms.openlocfilehash: 18757ecd30f399ca3d1fdb77e8bff8213a265e74
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5b0751703b9b9cdcdb50e265a6b5d3c929d89ae1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348577"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939396"
 ---
 # <a name="cacos-cacosf-cacosl"></a>cacos, cacosf, cacosl
 
-실수 축 따라 [-1, + 1] 간격에서 벗어난 분기를 사용 하 여 복소수의 아크코사인 값을 검색합니다.
+실수 축을 따라 [-1, + 1] 간격 밖의 분기를 사용 하 여 복소수의 아크코사인을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -61,11 +64,11 @@ _Lcomplex cacos( _Lcomplex z );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-아크코사인 *z*, 라디안에서입니다. 결과는 허수 축에서는 제한이 없으며, 실수 축에서는 [0, π] 간격 내에 있습니다. 도메인 오류가 발생 *z* [-1, + 1] 간격에서 벗어난 합니다.
+*Z*의 아크코사인 (라디안)입니다. 결과는 허수 축에서는 제한이 없으며, 실수 축에서는 [0, π] 간격 내에 있습니다. *Z* 가 [-1, + 1] 간격을 벗어날 경우 도메인 오류가 발생 합니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **cacos** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **cacos** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **cacos** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **cacos** 는 항상 **_dcomplex** 를 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

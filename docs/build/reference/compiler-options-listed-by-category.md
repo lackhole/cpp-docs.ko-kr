@@ -4,12 +4,12 @@ ms.date: 08/08/2019
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: bfc9bb17100a3ee5c662062963c71ee532487239
-ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
+ms.openlocfilehash: 8c99b2dd60e6c2266d5095a477ee4a5b2e0c8bd0
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70273712"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685190"
 ---
 # <a name="compiler-options-listed-by-category"></a>컴파일러 옵션 범주별 목록
 
@@ -68,7 +68,7 @@ ms.locfileid: "70273712"
 |[/Qpar-report](qpar-report-auto-parallelizer-reporting-level.md)|자동 병렬화에 대한 보고 수준을 사용하도록 설정합니다.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|부동 소수점 값에 대한 정수 이동 명령을 사용하고 특정 부동 소수점 부하 최적화를 사용하지 않도록 설정합니다.|
 |[/Qspectre](qspectre.md)|스펙터 공격의 클래스에 대해 CVE 2017-5753에 대 한 완화를 사용 하도록 설정 합니다.|
-|[/Qvec-report](qvec-report-auto-vectorizer-reporting-level.md)|자동 벡터화에 대한 보고 수준을 사용하도록 설정합니다.|
+|[/Qvec-report](qvec-report-auto-vectorizer-reporting-level.md)|자동 벡터화에 보고 수준을 사용하도록 설정합니다.|
 |[/RTC](rtc-run-time-error-checks.md)|런타임 오류 검사를 사용합니다.|
 |[/volatile](volatile-volatile-keyword-interpretation.md)|volatile 키워드가 해석되는 방식을 선택합니다.|
 
@@ -122,6 +122,7 @@ ms.locfileid: "70273712"
 |[/Zc](zc-conformance.md)|[/Ze](za-ze-disable-language-extensions.md)에서 표준 동작을 지정합니다.|
 |[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. C89 언어 확장을 사용 합니다.|
 |[/Zf](zf.md)|병렬 빌드에서 PDB 생성 시간을 향상 시킵니다.|
+|[/ZH](zh.md)|디버그 정보에서 체크섬에 대해 MD5, SHA-1 또는 SHA-256을 지정 합니다.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|편집하며 계속하기와 호환되는 프로그램 데이터베이스에 디버깅 정보를 포함합니다. (x86 전용)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|완전한 디버깅 정보를 생성합니다.|
 |[/Zl](zl-omit-default-library-name.md)|.obj 파일에서 기본 라이브러리 이름을 제거합니다.|
@@ -224,7 +225,7 @@ ms.locfileid: "70273712"
 |[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. 언어 확장을 사용합니다.|
 |[/Zg](zg-generate-function-prototypes.md)|Visual Studio 2015에서 제거 되었습니다. 함수 프로토타입을 생성합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [C/C++ 빌드 참조](c-cpp-building-reference.md)<br/>
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>

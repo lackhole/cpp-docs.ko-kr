@@ -1,12 +1,12 @@
 ---
 title: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _cwprintf_l
 - _cprintf_l
 - _cwprintf
 - _cprintf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _cwprintf
 - cwprintf
@@ -45,14 +48,14 @@ helpviewer_keywords:
 - cwprintf_l function
 - _cprintf function
 ms.assetid: 67ffefd4-45b3-4be0-9833-d8d26ac7c4e2
-ms.openlocfilehash: ce1913012ee37b19e15602daaa4eea042a69a3de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa0dfe22312f5a4736a6bc1b7a52e90dfa425a14
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335336"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942656"
 ---
-# <a name="cprintf-cprintfl-cwprintf-cwprintfl"></a>_cprintf, _cprintf_l, _cwprintf, _cwprintf_l
+# <a name="_cprintf-_cprintf_l-_cwprintf-_cwprintf_l"></a>_cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 
 형식을 지정하고 콘솔에 출력합니다. 더 안전한 버전을 사용할 수 있습니다. [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md)을 참조하세요.
 
@@ -84,7 +87,7 @@ int _cwprintf_l(
 형식 컨트롤 문자열입니다.
 
 *argument_list*<br/>
-형식 문자열에 대 한 선택적 매개 변수입니다.
+서식 문자열에 대 한 선택적 매개 변수입니다.
 
 *locale*<br/>
 사용할 로캘입니다.
@@ -95,13 +98,13 @@ int _cwprintf_l(
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 형식 및 일련의 문자 및 값을 콘솔에 직접 인쇄를 사용 하는 **_putch** 함수 (**_putwch** 에 대 한 **_cwprintf**) 문자를 출력 . 각 인수 *argument_list* (있는 경우) 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. 합니다 *형식* 인수 사용 합니다 [형식 사양 구문 printf 및 wprintf 함수에 대 한](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다. 와 달리 합니다 **fprintf**를 **printf**, 및 **sprintf** 함수를 모두 **_cprintf** 나 **_cwprintf**줄 바꿈 문자를 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 변환 하면 출력 합니다.
+이 함수는 **_putch** 함수 ( **_putwch** for **_cwprintf**)를 사용 하 여 문자를 출력 하는 일련의 문자 및 값을 콘솔에 직접 포맷 하 고 인쇄 합니다. *Argument_list* 의 각 인수 (있는 경우)는 *형식*의 해당 형식 사양에 따라 변환 되 고 출력 됩니다. *Format* 인수는 [printf 및 wprintf 함수에 대 한 형식 지정 구문을](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)사용 합니다. **Fprintf**, **printf**및 **sprintf** 함수와 달리 출력 시 **_cprintf** 및 **_cwprintf** 는 줄 바꿈 문자를 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 변환 하지 않습니다.
 
-중요 한 차이점이 **_cwprintf** Windows에서 사용 될 때 유니코드 문자를 표시 합니다. 와 달리 **_cprintf**하십시오 **_cwprintf** 는 현재 콘솔 로캘 설정을 사용 합니다.
+중요 한 차이점은 **_cwprintf** 는 Windows에서 사용 될 때 유니코드 문자를 표시 한다는 것입니다. **_Cprintf**와 달리 **_cwprintf** 는 현재 콘솔 로캘 설정을 사용 합니다.
 
-포함 된 이러한 함수의 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
+**_L** 접미사가 있는 이러한 함수 버전은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하 고는 동일 합니다.
 
-**_cprintf** 의 유효성을 검사 합니다 *형식* 매개 변수입니다. 하는 경우 *형식* 가 null 포인터인 경우 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행 함수는-1 반환 하 고 집합을 계속 하도록 허용 된 경우 **errno** 하 **EINVAL**합니다.
+**_cprintf** 는 *format* 매개 변수의 유효성을 검사 합니다. *Format* 이 null 포인터인 경우 함수는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 함수는-1을 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 > [!IMPORTANT]
 > *format*이 사용자 정의 문자열이 아닌지 확인하세요.

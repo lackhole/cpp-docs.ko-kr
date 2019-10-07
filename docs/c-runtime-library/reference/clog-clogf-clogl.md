@@ -1,11 +1,11 @@
 ---
 title: clog, clogf, clogl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - clog
 - clogf
 - clogl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - clog
 - clogf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - clogf function
 - clogl function
 ms.assetid: 870b9b0b-6618-46f3-bfcf-da595cbd5e18
-ms.openlocfilehash: fcbc9ba7984898d51f7a3d0beb5ef7c8b6d6892c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76ee6e4e81c275c8cbed0f74914521c0b44499bb
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340640"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942918"
 ---
 # <a name="clog-clogf-clogl"></a>clog, clogf, clogl
 
@@ -68,7 +71,7 @@ _Lcomplex clogl(
 
 ## <a name="return-value"></a>반환 값
 
-자연 *z*입니다. 결과 간격에 실수 축을 따라 제한이 [-i π, + i π] 허수 축을 따라 합니다.
+*Z*의 자연 로그입니다. 결과는 실수 축을 따라 제한이 없으며, 허수 축을 따라 [-iπ, + iπ] 간격 내에 있습니다.
 
 가능한 반환 값은 다음과 같습니다.
 
@@ -82,7 +85,7 @@ _Lcomplex clogl(
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **clog** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **clog** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **clog** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **clog** 는 항상 **_dcomplex** 를 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

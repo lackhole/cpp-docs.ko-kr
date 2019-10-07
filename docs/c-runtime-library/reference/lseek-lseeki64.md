@@ -1,10 +1,10 @@
 ---
 title: _lseek, _lseeki64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _lseeki64
 - _lseek
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _lseeki64
 - _lseek
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - file pointers [C++], moving
 - seek file pointers
 ms.assetid: aba8a768-d40e-48c3-b38e-473dbd782f93
-ms.openlocfilehash: 4d0320b45cb8cd99f1d9f6494b7dcb17bc545a81
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67bcce2a9936cd09973e8ddf1828704944866439
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285928"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952982"
 ---
-# <a name="lseek-lseeki64"></a>_lseek, _lseeki64
+# <a name="_lseek-_lseeki64"></a>_lseek, _lseeki64
 
 지정된 위치로 파일 포인터를 이동합니다.
 
@@ -68,21 +71,21 @@ __int64 _lseeki64(
 
 ## <a name="return-value"></a>반환 값
 
-**_lseek** 파일의 새 위치부터에서의 바이트 오프셋을 반환 합니다. **_lseeki64** 64 비트 정수로 오프셋을 반환 합니다. 함수는 오류를 나타내기 위해-1l을 반환 합니다. 잘못된 파일 설명자와 같이 잘못된 매개 변수를 전달했거나, *origin*에 대한 값이 잘못되었거나, *offset*에 지정된 위치가 파일의 시작 이전인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EBADF** 고-1l을 반환 합니다. 검색을 수행할 수 없는 디바이스(예: 터미널 및 프린터)에서는 반환 값이 정의되지 않습니다.
+**_lseek** 는 파일의 시작 부분에서 새 위치의 오프셋 (바이트)을 반환 합니다. **_lseeki64** 는 64 비트 정수로 오프셋을 반환 합니다. 함수는 오류를 나타내기 위해-1L을 반환 합니다. 잘못된 파일 설명자와 같이 잘못된 매개 변수를 전달했거나, *origin*에 대한 값이 잘못되었거나, *offset*에 지정된 위치가 파일의 시작 이전인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **ebadf** 로 설정 하 고-1l을 반환 합니다. 검색을 수행할 수 없는 디바이스(예: 터미널 및 프린터)에서는 반환 값이 정의되지 않습니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_lseek** 와 연결 된 파일 포인터를 이동 하는 함수 *fd* 는 새 위치로 *오프셋* 바이트 *원본*합니다. 파일에 대한 다음 작업은 새 위치에서 수행됩니다. *origin* 인수는 Stdio.h에 정의된 다음 상수 중 하나여야 합니다.
+**_Lseek** 함수는 *fd* 와 연결 된 파일 포인터를 *원본*에서 *오프셋* 된 바이트의 새 위치로 이동 합니다. 파일에 대한 다음 작업은 새 위치에서 수행됩니다. *origin* 인수는 Stdio.h에 정의된 다음 상수 중 하나여야 합니다.
 
-|*원본* 값||
+|*원점* 값||
 |-|-|
 | **SEEK_SET** | 파일 시작 |
 | **SEEK_CUR** | 파일 포인터의 현재 위치 |
 | **SEEK_END** | 파일 끝 |
 
-사용할 수 있습니다 **_lseek** 위치를 변경 하려면 포인터가 아무 곳 이나 파일 또는 파일의 끝을 초과 합니다.
+**_Lseek** 를 사용 하 여 파일의 아무 위치나 파일의 끝을 넘어 포인터의 위치를 변경할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -149,7 +152,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crtlseekcinput"></a>입력: crt_lseek.c_input
+### <a name="input-crt_lseekc_input"></a>입력: crt_lseek.c_input
 
 ```Input
 Line one.

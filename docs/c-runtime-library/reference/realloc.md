@@ -1,9 +1,9 @@
 ---
 title: realloc
 ms.date: 11/04/2016
-apiname:
+api_name:
 - realloc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _brealloc
 - _nrealloc
@@ -32,12 +35,12 @@ helpviewer_keywords:
 - _frealloc function
 - reallocate memory blocks
 ms.assetid: 2b2239de-810b-4b11-9438-32ab0a244185
-ms.openlocfilehash: 0d61746365a8ded8d68072b1f398a18ba6ce7605
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6197b7bca3ec9f416696e1ded8ea5ca813392616
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357670"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949494"
 ---
 # <a name="realloc"></a>realloc
 
@@ -62,23 +65,23 @@ void *realloc(
 
 ## <a name="return-value"></a>반환 값
 
-**realloc** 반환 된 **void** 다시 할당 (그리고 이동 되었을 수 있는) 메모리 블록에 대 한 포인터입니다.
+**realloc** 는 다시 할당 된 (그리고 이동 가능한) 메모리 블록에 대 한 **void** 포인터를 반환 합니다.
 
-충분 한 사용 가능한 메모리 블록을 지정 된 크기로 확장할 수 없는 경우 원래 블록은 변경 되지 않습니다, 그리고 및 **NULL** 반환 됩니다.
+블록을 지정 된 크기로 확장 하는 데 사용할 수 있는 메모리가 충분 하지 않은 경우 원래 블록은 변경 되지 않은 상태로 유지 되 고 **NULL** 이 반환 됩니다.
 
-하는 경우 *크기* 이 0 이면에서 가리키는 블록이 *memblock* 해제 됩니다; 반환 값은 **NULL**, 및 *memblock* 가리키는 그대로 블록을 해제 합니다.
+*Size* 가 0 이면 *memblock* 이 가리키는 블록이 해제 됩니다. 반환 값은 **NULL**이 고 *memblock* 은 해제 된 블록을 가리키는 상태로 유지 됩니다.
 
-반환 값은 모든 형식의 개체 스토리지를 위해 적절하게 맞도록 보장되어 있는 스토리지 공간을 가리킵니다. 이외의 형식에 대 한 포인터를 가져오려면 **void**, 반환 값에 형식 캐스팅을 사용 합니다.
+반환 값은 모든 형식의 개체 스토리지를 위해 적절하게 맞도록 보장되어 있는 스토리지 공간을 가리킵니다. **Void**이외의 형식에 대 한 포인터를 가져오려면 반환 값에 형식 캐스팅을 사용 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **realloc** 함수는 할당 된 메모리 블록의 크기를 변경 합니다. 합니다 *memblock* 인수는 메모리 블록의 시작 부분을 가리킵니다. 하는 경우 *memblock* 됩니다 **NULL**를 **realloc** 동일한 방식으로 동작 **malloc** 새 블록을 할당 하 고 *크기*바이트입니다. 경우 *memblock* 아닙니다 **NULL**에 대 한 이전 호출에서 반환 된 포인터 여야 합니다 **calloc**를 **malloc**, 또는 **realloc** .
+**Realloc** 함수는 할당 된 메모리 블록의 크기를 변경 합니다. *Memblock* 인수는 메모리 블록의 시작 부분을 가리킵니다. *Memblock* 이 **NULL**인 경우 **realloc** 는 **malloc** 와 동일한 방식으로 동작 하며 *크기* 바이트의 새 블록을 할당 합니다. *Memblock* 이 **NULL**이 아닌 경우 **calloc**, **malloc**또는 **realloc**에 대 한 이전 호출에서 반환 된 포인터 여야 합니다.
 
-합니다 *크기* 인수는 바이트 블록의 새 크기를 제공 합니다. 블록의 내용은 새 크기와 이전 크기 중 더 짧은 쪽까지는 변경되지 않습니다. 그러나 새 블록은 다른 위치에 있을 수 있습니다. 포인터를 반환한 새 블록은 새 메모리 위치에 있을 수, 있으므로 **realloc** 포인터를 통해 전달 되도록 보장 되지 않습니다 합니다 *memblock* 인수입니다. **realloc** 는 0이 아니면 새로 할당 된 메모리는 버퍼가 증가 경우.
+*Size* 인수는 블록의 새 크기 (바이트)를 제공 합니다. 블록의 내용은 새 크기와 이전 크기 중 더 짧은 쪽까지는 변경되지 않습니다. 그러나 새 블록은 다른 위치에 있을 수 있습니다. 새 블록은 새 메모리 위치에 있을 수 있으므로 **realloc** 에서 반환 되는 포인터는 *memblock* 인수를 통해 전달 되는 포인터가 보장 되지 않습니다. 버퍼가 증가 하는 경우 **realloc** 은 새로 할당 된 메모리를 0으로 만들지 않습니다.
 
-**realloc** 설정 **errno** 하 **ENOMEM** 메모리 할당이 실패 하는 메모리 양을 초과 요청 아니면 **_HEAP_MAXREQ**합니다. 이 오류 코드 및 기타 오류 코드에 대한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
+**realloc** 는 메모리 할당이 실패 하거나 요청 된 메모리 양이 **_HEAP_MAXREQ**를 초과 하는 경우 **errno** 를 **enomem** 으로 설정 합니다. 이 오류 코드 및 기타 오류 코드에 대한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
-**realloc** 호출 **malloc** 사용 하려면를 C++ [_set_new_mode](set-new-mode.md) 함수를 새 처리기 모드를 설정 합니다. 새 처리기 모드를 나타내는 실패 하는지를 **malloc** 에서 설정한 대로 새 처리기 루틴을 호출 하는 것 [_set_new_handler](set-new-handler.md)합니다. 기본적으로 **malloc** 메모리 할당 실패 시 새 처리기 루틴을 호출 하지 않습니다. 이 기본 동작을 재정의할 수 있도록 때 **realloc** 메모리를 할당 하지 못했습니다 **malloc** 동일한 새 처리기 루틴을 호출 방식으로 **새** 연산자는 경우 이와 같은 이유로 실패 합니다. 기본값을 재정의하려면 다음을
+**realloc** 는 C++ [_set_new_mode](set-new-mode.md) 함수를 사용 하 여 새 처리기 모드를 설정 하기 위해 malloc를 호출 합니다. 새 처리기 모드는 실패 시 **malloc** 가 [_set_new_handler](set-new-handler.md)에서 설정한 대로 새 처리기 루틴을 호출 하는지 여부를 나타냅니다. 기본적으로 **malloc** 은 메모리 할당 실패 시 새 처리기 루틴을 호출 하지 않습니다. 이 기본 동작을 재정의 하 여 **realloc** 에서 메모리를 할당 하지 못할 때 **malloc** 이 새 연산자가 같은 이유로 실패 했을 때와 동일한 방식 **으로 새 처리기** 루틴을 호출 하도록 할 수 있습니다. 기본값을 재정의하려면 다음을
 
 ```C
 _set_new_mode(1);
@@ -86,9 +89,9 @@ _set_new_mode(1);
 
 프로그램에서 초기에 호출하거나, NEWMODE.OBJ를 사용하여 연결합니다([링크 옵션](../../c-runtime-library/link-options.md) 참조).
 
-응용 프로그램이 C 런타임 라이브러리의 디버그 버전과 연결 됩니다 **realloc** 로 확인 되 [_realloc_dbg](realloc-dbg.md)합니다. 디버깅 프로세스 동안 힙을 관리하는 방법에 대한 자세한 내용은 [CRT 디버그 힙](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
+응용 프로그램이 C 런타임 라이브러리의 디버그 버전에 연결 된 경우 **realloc** 는 [_realloc_dbg](realloc-dbg.md)로 확인 됩니다. 디버깅 프로세스 동안 힙을 관리하는 방법에 대한 자세한 내용은 [CRT 디버그 힙](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
 
-**realloc** 표시 됩니다 `__declspec(noalias)` 및 `__declspec(restrict)`, 즉는 함수가 전역 변수를 수정할 수 없도록 보장 되 고 반환 된 포인터는 별칭이 지정 되지 않습니다. 자세한 내용은 [noalias](../../cpp/noalias.md) 및 [restrict](../../cpp/restrict.md)를 참조하세요.
+**realloc** 는 및 `__declspec(noalias)` `__declspec(restrict)`로 표시 됩니다. 즉, 함수가 전역 변수를 수정 하지 않도록 보장 하 고 반환 된 포인터에 별칭이 지정 되지 않습니다. 자세한 내용은 [noalias](../../cpp/noalias.md) 및 [restrict](../../cpp/restrict.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

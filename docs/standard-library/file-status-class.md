@@ -19,7 +19,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68457746"
 ---
-# <a name="filestatus-class"></a>file_status 클래스
+# <a name="file_status-class"></a>file_status 클래스
 
 [file_type](../standard-library/filesystem-enumerations.md#file_type) 및 파일 [perms](../standard-library/filesystem-enumerations.md#perms)를 래핑합니다.
 
@@ -31,13 +31,13 @@ class file_status;
 
 ### <a name="constructors"></a>생성자
 
-|생성자|설명|
+|생성자|Description|
 |-|-|
 |[file_status](#file_status)|[File_type](../standard-library/filesystem-enumerations.md#file_type) 및 file [perms](../standard-library/filesystem-enumerations.md#perms)에 대 한 래퍼를 생성 합니다.|
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[type](#type)|`file_type`를 가져오거나 설정합니다.|
 |[permissions](#permissions)|파일 사용 권한을 가져오거나 설정합니다.|
@@ -93,7 +93,7 @@ file_status& operator=(file_status&&) nexcept = default;
 ### <a name="parameters"></a>매개 변수
 
 *file_status*\
-에 [](../standard-library/file-status-class.md) 복사 `file_status`되는 file_status입니다.
+`file_status`에 복사되는 [file_status](../standard-library/file-status-class.md)입니다.
 
 ## <a name="type"></a>입력할
 

@@ -1,10 +1,10 @@
 ---
 title: fgetc, fgetwc
 ms.date: 11/04/2016
-apiname:
+api_name:
 - fgetwc
 - fgetc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _fgettc
 - fgetwc
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - reading characters from streams
 - fgetwc function
 ms.assetid: 13348b7b-dc86-421c-9d6c-611ca79c8338
-ms.openlocfilehash: a853a46fc43106c9ea57be84b37fb46a18041ba8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92f44c65802f3baed37078574577bf108bbcd09a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334010"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940888"
 ---
 # <a name="fgetc-fgetwc"></a>fgetc, fgetwc
 
@@ -59,15 +62,15 @@ wint_t fgetwc(
 
 ## <a name="return-value"></a>반환 값
 
-**fgetc** 으로 읽은 문자를 반환 합니다.는 **int** 하거나 반환 **EOF** 오류 또는 파일의 끝을 나타냅니다. **fgetwc** 반환으로 [wint_t](../../c-runtime-library/standard-types.md), 읽은 문자에 해당 하거나 반환 하는 와이드 문자 **WEOF** 오류 또는 파일의 끝을 나타냅니다. 두 함수 모두 사용 하 여 **feof** 또는 **ferror** 오류와 파일 끝 조건을 구분 하려면. 읽기 오류가 발생하는 경우 스트림에 대한 오류 표시기가 설정됩니다. 경우 *스트림을* 됩니다 **NULL**, **fgetc** 하 고 **fgetwc** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 돌아와 **EOF**합니다.
+**fgetc** 는 **int** 로 읽은 문자를 반환 하거나 **EOF** 를 반환 하 여 오류 또는 파일의 끝을 표시 합니다. **fgetwc** 는 읽은 문자에 해당 하는 와이드 문자를 [wint_t](../../c-runtime-library/standard-types.md)로 반환 하거나, 오류 또는 파일의 끝을 나타내는 **weof** 를 반환 합니다. 두 함수 모두에서 **feof** **ferror** 를 사용 하 여 오류와 파일 끝 조건을 구분 합니다. 읽기 오류가 발생하는 경우 스트림에 대한 오류 표시기가 설정됩니다. *Stream* 이 **NULL**인 경우 **Fgetc** 및 **fgetwc** 는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EOF**를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수에 연결 된 파일의 현재 위치에서 단일 문자를 읽습니다 *스트림을*합니다. 그러고 나서 다음 문자를 가리킬 연결된 파일 포인터(정의된 경우)를 늘립니다. 스트림이 파일 끝에 있는 경우 스트림에 대한 파일 끝 표시기가 설정됩니다.
+이러한 각 함수는 *스트림과*연결 된 파일의 현재 위치에서 단일 문자를 읽습니다. 그러고 나서 다음 문자를 가리킬 연결된 파일 포인터(정의된 경우)를 늘립니다. 스트림이 파일 끝에 있는 경우 스트림에 대한 파일 끝 표시기가 설정됩니다.
 
-**fgetc** 같습니다 **getc**, 함수 및 매크로가 아닌 함수로 구현 됩니다.
+**fgetc** 는 **getc**와 동일 하지만 함수 및 매크로가 아닌 함수로만 구현 됩니다.
 
-**fgetwc** 의 와이드 문자 버전이 **fgetc**; 읽습니다 **c** 멀티 바이트 문자 또는 여부에 따라 와이드 문자로 *stream* 에서 열릴 텍스트 모드 또는 이진 모드로 합니다.
+**fgetwc** 는 **fgetc**의 와이드 문자 버전입니다. *스트림을* 텍스트 모드에서 열지 아니면 이진 모드로 열지에 따라 멀티 바이트 문자 또는 와이드 문자로 **c** 를 읽습니다.
 
 **_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다.
 
@@ -125,7 +128,7 @@ int main( void )
 }
 ```
 
-## <a name="input-crtfgetctxt"></a>입력: crt_fgetc.txt
+## <a name="input-crt_fgetctxt"></a>입력: crt_fgetc.txt
 
 ```Input
 Line one.

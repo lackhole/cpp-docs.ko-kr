@@ -1,11 +1,11 @@
 ---
 title: catan, catanf, catanl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - catan
 - catanf
 - catanl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - catan
 - catanf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - catanf function
 - catanl function
 ms.assetid: 8415ed9c-7909-4d08-b532-4630bafdc7e8
-ms.openlocfilehash: 99acdccca1b83be2fa667b5e5ef6e5181dc1ba81
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 204a05b4293fefa4378e54ce93a625bf890cf4d5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335518"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943361"
 ---
 # <a name="catan-catanf-catanl"></a>catan, catanf, catanl
 
-허수 축 따라 [-1; + 1] 간격에서 벗어난 분기를 사용 하 여 복소수의 아크탄젠트를 검색합니다.
+허수 축을 따라 [-1; + 1] 간격 밖의 분기 컷이 있는 복소수의 아크탄젠트를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -61,11 +64,11 @@ _Lcomplex catan( _Lcomplex z );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-아크탄젠트 *z*, 라디안에서입니다. 결과 허수 축을 따라 및 간격의 제한이 [-π/2; + π/2] 실수 축을 따라 합니다.
+*Z*의 아크탄젠트 (라디안)입니다. 결과는 허수 축을 따라 제한이 없으며, 실수 축을 따라 [-π/2; + π/2] 간격 내에 있습니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **catan** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **catan** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 **사용 하 고** 반환 하는 이상 값의 오버 로드를 호출할 수 있습니다. C 프로그램 **에서, ca는 항상** **_dcomplex** 를 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

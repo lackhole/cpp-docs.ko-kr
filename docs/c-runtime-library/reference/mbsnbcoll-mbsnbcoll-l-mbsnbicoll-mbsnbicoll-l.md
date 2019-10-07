@@ -1,12 +1,12 @@
 ---
 title: _mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbsnbicoll_l
 - _mbsnbcoll_l
 - _mbsnbcoll
 - _mbsnbicoll
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - mbsnbicoll
 - mbsnbcoll
@@ -42,16 +45,16 @@ helpviewer_keywords:
 - tcsncoll function
 - tcsnicoll function
 ms.assetid: d139ed63-ccba-4458-baa2-61cbcef03e94
-ms.openlocfilehash: c18faa3c93969a683b3ee3ef58dd02e1c1ae61f4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72c435060a6ac62213a50ba1d9fb9ef7d83fcb33
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156722"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952274"
 ---
-# <a name="mbsnbcoll-mbsnbcolll-mbsnbicoll-mbsnbicolll"></a>_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
+# <a name="_mbsnbcoll-_mbsnbcoll_l-_mbsnbicoll-_mbsnbicoll_l"></a>_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
 
-비교 *n* 바이트 멀티 바이트 코드 페이지 정보를 사용 하 여 두 멀티 바이트 문자 문자열입니다.
+멀티 바이트 코드 페이지 정보를 사용 하 여 *n* 바이트의 두 멀티 바이트 문자열을 비교 합니다.
 
 > [!IMPORTANT]
 > 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
@@ -96,23 +99,23 @@ int _mbsnbicoll_l(
 
 ## <a name="return-value"></a>반환 값
 
-반환 값의 부분 문자열 간 관계를 나타냅니다 *string1* 하 고 *string2*합니다.
+반환 값 *은 문자열 1과 문자열* *2*의 부분 문자열 관계를 나타냅니다.
 
 |반환 값|설명|
 |------------------|-----------------|
-|< 0|*string1* 부분 문자열 보다 작거나 *string2* 부분 문자열입니다.|
-|0|*string1* substring 동일 *string2* 부분 문자열입니다.|
-|> 0|*string1* 부분 문자열 보다 큰 *string2* 부분 문자열입니다.|
+|< 0|문자열 1 부분 문자열 *에서 문자열이* *아닌 부분 문자열* 보다 작음|
+|0|문자열 *1 부분 문자열이 문자열이 아닌* *부분 문자열과 같습니다* .|
+|> 0|*문자열이 아닌 부분* 문자열이 *문자열 문자열의 하위 문자열 보다 큽니다* .|
 
-경우 *string1* 또는 *string2* 됩니다 **NULL** 또는 *count* 보다 크면 **INT_MAX**, 잘못 된 에 설명 된 대로 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **_NLSCMPERROR** 설정 **errno** 하 **EINVAL**합니다. 사용 하도록 **_NLSCMPERROR**, String.h 또는 Mbstring.h를 포함 합니다.
+*String1* 또는 String1 이 **NULL** 이거나 *Count* 가 **INT_MAX**보다 큰 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **_NLSCMPERROR** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다. **_NLSCMPERROR**를 사용 하려면 String.format 또는 mbstring를 포함 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 함수 대조를 첫 번째 *개수* 바이트 *string1* 하 고 *string2* 결과 간의 관계를 나타내는 값을 반환 합니다 부분 *string1* 하 고 *string2*합니다. 경우 부분에서 최종 바이트가 *string1* 하거나 *string2* 선행 바이트 인지 이러한 함수는 부분 문자열의 전체 문자만 비교; 비교에 포함 되지 않습니다. **_mbsnbicoll** 의 대/소문자 버전이 **_mbsnbcoll**합니다. 와 같은 [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) 하 고 [_mbsnbicmp](mbsnbicmp-mbsnbicmp-l.md)를 **_mbsnbcoll** 및 **_mbsnbicoll** 에 따라 두 멀티 바이트 문자 문자열을 비교 합니다 멀티 바이트에 지정 된 사전적 순서 [코드 페이지](../../c-runtime-library/code-pages.md) 에서 현재 사용 합니다.
+이러한 각 함수는 가장 먼저 *문자열* 1과 *문자열 2* 의 첫 번째 *count* 바이트를 정렬 하 고, *문자열* 1과 *문자열 2*의 결과 부분 문자열 간 관계를 나타내는 값을 반환 합니다. *String1 또는 string1* 의 부분 문자열에 있는 최종 바이트가 선행 *바이트가 면 비교* 에 포함 되지 않습니다. 이러한 함수는 부분 문자열의 전체 문자만 비교 합니다. **_mbsnbicoll** 은 대/소문자를 구분 하지 않는 버전의 **_mbsnbcoll**입니다. [_Mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) 및 [_mbsnbicmp](mbsnbicmp-mbsnbicmp-l.md)와 마찬가지로 **_mbsnbcoll** 및 **_mbsnbicoll** 는 현재 사용 중인 멀티 바이트 [코드 페이지](../../c-runtime-library/code-pages.md) 에 지정 된 사전적 순서에 따라 두 개의 멀티 바이트 문자열을 대조 합니다.
 
-일부 코드 페이지와 해당 문자 집합의 경우 문자 집합의 문자 순서가 사전적 문자 순서와 다를 수 있습니다. "C" 로캘에서는 해당되지 않습니다. 즉, ASCII 문자 집합에서 문자의 순서는 문자의 사전적 순서와 동일합니다. 예를 들어 특정 유럽 코드 페이지의 문자 집합에서 문자 'a'(값 0x61)는 문자 'ä'(값 0xE4) 앞에 오지만 사전적으로는 문자 'ä'가 'a' 앞에 옵니다. 이러한 상황에서 바이트로 문자열의 사전적 비교를 수행 하려면 사용 **_mbsnbcoll** 대신 **_mbsnbcmp**문자열이 같은지 여부만 확인을 사용 하려면 **_mbsnbcmp**.
+일부 코드 페이지와 해당 문자 집합의 경우 문자 집합의 문자 순서가 사전적 문자 순서와 다를 수 있습니다. "C" 로캘에서는 해당되지 않습니다. 즉, ASCII 문자 집합에서 문자의 순서는 문자의 사전적 순서와 동일합니다. 예를 들어 특정 유럽 코드 페이지의 문자 집합에서 문자 'a'(값 0x61)는 문자 'ä'(값 0xE4) 앞에 오지만 사전적으로는 문자 'ä'가 'a' 앞에 옵니다. 이러한 인스턴스의 사전적 문자열 비교를 수행 하려면 **_mbsnbcmp**대신 **_mbsnbcoll** 를 사용 합니다. 문자열 동일성만 확인 하려면 **_mbsnbcmp**를 사용 합니다.
 
-때문에 **coll** 함수 반면 사전순으로 비교를 위해 문자열을 비교 합니다 합니다 **cmp** 함수는 문자열이 같은지 여부만 테스트 합니다 **coll** 함수는 해당 하는 보다 훨씬 더 느립니다 **cmp** 버전입니다. 따라서 합니다 **coll** 함수를 현재 코드 페이지에 있는 문자 집합 순서와 사전적 문자 순서 간의 차이 다르며 이러한 차이가 비교에 대 한 관심 있는 경우에 사용 해야 합니다.
+**Coll** 함수는 문자열을 비교 하 여 사전순으로 하는 반면, **.cmp** 함수는 단순히 문자열 같음을 테스트 하는 반면 **coll** 함수는 해당 하는 **.cmp** 버전 보다 훨씬 느립니다. 따라서 **coll** 함수는 현재 코드 페이지에서 문자 집합 순서와 사전적 문자 순서가 차이가 있는 경우에만 사용 해야 하며, 비교 시에는이 차이가 중요 합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 

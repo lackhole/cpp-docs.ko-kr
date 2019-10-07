@@ -25,7 +25,7 @@ ms.locfileid: "70216308"
 
 ## <a name="remarks"></a>설명
 
-**Auto_inline** pragma를 사용 하려면 함수 정의 앞과 뒤에를 추가 합니다. Pragma는 pragma가 표시 된 후 첫 번째 함수 정의가 즉시 적용 됩니다.
+**auto_inline** pragma를 사용하려면 함수 정의 내부가 아닌 앞과 뒤에 배치합니다. pragma는 pragma가 표시된 후 첫 번째 함수 정의가 표시되는 즉시 적용됩니다.
 
 ## <a name="see-also"></a>참고자료
 

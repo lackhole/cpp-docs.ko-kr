@@ -1,9 +1,9 @@
 ---
 title: _set_controlfp
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _set_controlfp
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - set_controlfp
 - _set_controlfp
@@ -24,14 +27,14 @@ helpviewer_keywords:
 - floating-point functions, setting control word
 - _set_controlfp function
 ms.assetid: e0689d50-f68a-4028-a9c1-fb23eedee4ad
-ms.openlocfilehash: 1187502f09849d7ca4d8e595c237cfa511d00c6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d39406db0f4c9ba6374776da62aea2dbb61e23d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356688"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948679"
 ---
-# <a name="setcontrolfp"></a>_set_controlfp
+# <a name="_set_controlfp"></a>_set_controlfp
 
 부동 소수점 제어 단어를 설정합니다.
 
@@ -58,9 +61,9 @@ void __cdecl _set_controlfp(
 
 ## <a name="remarks"></a>설명
 
-**_set_controlfp** 함수는 비슷합니다 **_control87**를 부동 소수점 제어 단어를만 설정 하지만 *newControl*합니다. 값의 비트는 부동 소수점 제어 상태를 나타냅니다. 부동 소수점 제어 상태를 사용하면 프로그램이 부동 소수점 연산 패키지에서 정밀도, 반올림 및 무한대 모드를 변경할 수 있습니다. 마스크 또는 사용 하 여 부동 소수점 예외를 마스크 해제할 수도 있습니다 **_set_controlfp**합니다. 자세한 내용은 [_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)를 참조하세요.
+**_Set_controlfp** 함수는 **_control87**과 유사 하지만 부동 소수점 제어 단어를 *newcontrol*로 설정 합니다. 값의 비트는 부동 소수점 제어 상태를 나타냅니다. 부동 소수점 제어 상태를 사용하면 프로그램이 부동 소수점 연산 패키지에서 정밀도, 반올림 및 무한대 모드를 변경할 수 있습니다. **_Set_controlfp**를 사용 하 여 부동 소수점 예외를 마스킹 또는 마스크 해제할 수도 있습니다. 자세한 내용은 [_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)를 참조하세요.
 
-로 컴파일하는 경우이 함수는 사용 되지 않습니다 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 공용 언어 런타임은 기본 부동 소수점 정밀도만 지원 하기 때문입니다.
+공용 언어 런타임이 기본 부동 소수점 전체 자릿수를 지원 하기 때문에 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 을 사용 하 여 컴파일할 때이 함수는 사용 되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -134,12 +134,12 @@ helpviewer_keywords:
 - C4594
 - C4595
 ms.assetid: b07850a5-ae89-48ea-bf9a-f0e30939f9b9
-ms.openlocfilehash: 9f7886a88ebd98d5d7ab1848ea7a788967362ad7
-ms.sourcegitcommit: d3829ae0c3db909f96057755a80665f5ea4896ea
+ms.openlocfilehash: d1a4da3d5e721c85879441a53ef4bc00549b587d
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550448"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230492"
 ---
 # <a name="compiler-warnings-c4400-through-c4599"></a>컴파일러 경고 C4400 ~ C4599
 
@@ -149,7 +149,7 @@ ms.locfileid: "69550448"
 
 ## <a name="warning-messages"></a>경고 메시지
 
-|경고|메시지|
+|Warning|메시지|
 |-------------|-------------|
 |[컴파일러 경고 (수준 1) C4600](compiler-warning-level-1-c4600.md)|'*macro name*' #pragma: 비어 있지 않은 유효한 문자열이 필요 합니다.|
 |[컴파일러 경고 (수준 4) C4400](../../error-messages/compiler-warnings/compiler-warning-level-4-c4400.md)|'*type*':이 형식에는 const/volatile 한정자를 사용할 수 없습니다.|
@@ -194,7 +194,7 @@ ms.locfileid: "69550448"
 |컴파일러 경고 (수준 1) C4443|pragma 매개 변수는 ' 0 ', ' 1 ' 또는 ' 2 ' 여야 합니다.|
 |컴파일러 경고 (수준 3) C4444|'*identifier*':이 컨텍스트에서는 최상위 ' __unaligned e d '가 구현 되지 않았습니다.|
 |[컴파일러 경고 (수준 1) C4445](../../error-messages/compiler-warnings/compiler-warning-level-1-c4445.md)|'*function*': ' WinRT&#124;관리 ' 형식에서 가상 메서드는 private 일 수 없습니다.|
-|컴파일러 경고 (수준 1) C4446|'*type*': 형식 이름과 충돌 하기 때문에 '*name1*' 멤버를이 형식에 매핑할 수 없습니다. 메서드의 이름이 ' t r ue '로 바뀌었습니다.|
+|컴파일러 경고 (수준 1) C4446|'*type*': 형식 이름과 충돌 하기 때문에 '*name1*' 멤버를이 형식에 매핑할 수 없습니다. 메서드의*이름이 ' t r u*e '로 바뀌었습니다.|
 |컴파일러 경고 (수준 1) C4447|스레딩 모델이 없는 ' main ' 시그니처를 찾았습니다. ' Int main (platform:: Array\<platform:: String ^ > ^ args) '를 사용 하는 것이 좋습니다.|
 |컴파일러 경고 C4448|'*type*1 '에 메타 데이터에 지정 된 기본 인터페이스가 없습니다. 선택: '*type2*', 런타임에 실패할 수 있습니다.|
 |컴파일러 경고 C4449|'*type*' 봉인 되지 않은 형식은 ' [WebHostHidden] '으로 표시 되어야 합니다.|
@@ -261,12 +261,12 @@ ms.locfileid: "69550448"
 |[컴파일러 경고 (수준 3) C4521](../../error-messages/compiler-warnings/compiler-warning-level-3-c4521.md)|'*class*': 복사 생성자를 여러 개 지정 했습니다.|
 |[컴파일러 경고 (수준 3) C4522](../../error-messages/compiler-warnings/compiler-warning-level-3-c4522.md)|'*class*': 할당 연산자를 여러 개 지정 했습니다.|
 |[컴파일러 경고 (수준 3) C4523](../../error-messages/compiler-warnings/compiler-warning-level-3-c4523.md)|'*class*': 소멸자를 여러 개 지정 했습니다.|
-|[컴파일러 경고 (수준 1) C4526](../../error-messages/compiler-warnings/compiler-warning-level-1-c4526.md)|'*function*': 정적 멤버 함수는 ' 가상 함수 '가상 함수 재정의 재정의를 재정의할 수 없습니다. 가상 함수는 숨겨집니다.|
+|[컴파일러 경고 (수준 1) C4526](../../error-messages/compiler-warnings/compiler-warning-level-1-c4526.md)|'*function*': 정적 멤버 함수*는 ' 가상 함수 ' 가상 함수*재정의 재정의를 재정의할 수 없습니다. 가상 함수는 숨겨집니다.|
 |[컴파일러 경고 (수준 1) C4530](../../error-messages/compiler-warnings/compiler-warning-level-1-c4530.md)|C++예외 처리기를 사용 했지만 해제 의미 체계가 활성화 되지 않았습니다. /EHsc 지정|
 |컴파일러 경고 (수준 1) C4531|C++Windows CE에서 예외 처리를 사용할 수 없습니다. 구조적 예외 처리 사용|
 |[컴파일러 경고 (수준 1) C4532](../../error-messages/compiler-warnings/compiler-warning-level-1-c4532.md)|' continue ': 종료 처리 중 ' __finally/finally ' 블록 밖으로 점프 하면 정의 되지 않은 동작이 발생 합니다.|
 |[컴파일러 경고 (수준 1) C4533](../../error-messages/compiler-warnings/compiler-warning-level-1-c4533.md)|'*variable*' 초기화는 '*goto 레이블*'에 의해 생략 됩니다.|
-|[컴파일러 경고 (수준 3) C4534](../../error-messages/compiler-warnings/compiler-warning-level-3-c4534.md)|'n a m e '은 기본 인수로 인해 ' 클래스/구조체 ' '*identifier*'의 기본 생성자가 되지 않습니다.|
+|[컴파일러 경고 (수준 3) C4534](../../error-messages/compiler-warnings/compiler-warning-level-3-c4534.md)|'*n a m e '* 은 기본 인수로 인해 ' 클래스/구조체 ' '*identifier*'의 기본 생성자가 되지 않습니다.|
 |[컴파일러 경고 (수준 3) C4535](../../error-messages/compiler-warnings/compiler-warning-level-3-c4535.md)|_set_se_translator ()를 호출 하려면/EHa를 사용 해야 합니다.|
 |[컴파일러 경고 (수준 4) C4536](../../error-messages/compiler-warnings/compiler-warning-level-4-c4536.md)|'*typename*': 형식-이름이 메타 데이터 한계인 '*character_limit*' 자를 초과 합니다.|
 |[컴파일러 경고 (수준 1) C4537](../../error-messages/compiler-warnings/compiler-warning-level-1-c4537.md)|'*object*': '. '이 (가) UDT가 아닌 형식에 적용 되었습니다.|
@@ -287,7 +287,7 @@ ms.locfileid: "69550448"
 |[컴파일러 경고 (수준 1) C4553](../../error-messages/compiler-warnings/compiler-warning-level-1-c4553.md)|'*operator*': 연산자는 영향을 주지 않습니다. 연산자를 의도 했습니까?|
 |[컴파일러 경고 (수준 3) C4554](../../error-messages/compiler-warnings/compiler-warning-level-3-c4554.md) C4554|'*operator*': 연산자 우선 순위를 검사 하 여 가능한 오류를 확인 하십시오. 괄호를 사용 하 여 우선 순위를 명확 하 게 설명|
 |[컴파일러 경고 (수준 1) C4555](../../error-messages/compiler-warnings/compiler-warning-level-1-c4555.md)|식이 효과가 없습니다. 파생 작업이 있는 식이어야 합니다.|
-|[컴파일러 경고 (수준 1) C4556](../../error-messages/compiler-warnings/compiler-warning-level-1-c4556.md)|내장 직접 인수 ' s al e '의 값이 '*lower_bound* - *upper_bound*' 범위를 벗어났습니다.|
+|[컴파일러 경고 (수준 1) C4556](../../error-messages/compiler-warnings/compiler-warning-level-1-c4556.md)|내장 직접 인수 *' s a l e*'의 값이 '*lower_bound* - *upper_bound*' 범위를 벗어났습니다.|
 |[컴파일러 경고 (수준 3) C4557](../../error-messages/compiler-warnings/compiler-warning-level-3-c4557.md)|' __assume '에 '*효과*' 효과가 있습니다.|
 |[컴파일러 경고 (수준 1) C4558](../../error-messages/compiler-warnings/compiler-warning-level-1-c4558.md)|'*value*' 피연산자의 값이 '*lower_bound* - *upper_bound*' 범위를 벗어났습니다.|
 |[컴파일러 경고 (수준 4) C4559](../../error-messages/compiler-warnings/compiler-warning-level-4-c4559.md)|'*function*': 재정의 함수는 __declspec (modifier)를 얻습니다.|
@@ -305,7 +305,7 @@ ms.locfileid: "69550448"
 |컴파일러 경고 (수준 4) C4574|'*Identifier*'가 ' 0 '이 되도록 정의 되어 있습니다. ' #if Identifier '를 사용 하 시겠습니까?|
 |컴파일러 경고 (수준 1) C4575|' __vectorcall '이 '/clr ' 옵션과 호환 되지 않습니다. ' __stdcall '으로 변환 합니다.|
 |컴파일러 경고 (수준 1, 오류) C4576|이니셜라이저 목록 뒤에 오는 괄호로 묶은 형식은 비표준 명시적 형식 변환 구문입니다.|
-|컴파일러 경고 (수준 1, 꺼짐) C4577|예외 처리 모드를 지정 하지 않고 ' noexcept '을 사용 했습니다. 예외에서 종료는 보장 되지 않습니다. /EHsc 지정|
+|[컴파일러 경고 (수준 1, 꺼짐) C4577](../../error-messages/compiler-warnings/compiler-warning-level-1-c4577.md)|예외 처리 모드를 지정 하지 않고 ' noexcept '을 사용 했습니다. 예외에서 종료는 보장 되지 않습니다. /EHsc 지정|
 |컴파일러 경고 (수준 1, 오류) C4578|' abs ': '*type1*'에서 '*type2*' (으)로의 변환으로 인해 데이터가 손실 될 수 있습니다. '*function*'을 호출 \<하거나 cmath >를 #include 하 시겠습니까?|
 |[컴파일러 경고 (수준 3) C4580](../../error-messages/compiler-warnings/compiler-warning-level-3-c4580.md)|[attribute]는 사용되지 않습니다. 대신 System::Attribute or Platform::Metadata를 기본 클래스로 지정합니다.|
 |[컴파일러 경고 (수준 1) C4581](../../error-messages/compiler-warnings/compiler-warning-level-1-c4581.md)|사용 되지 않는 동작: ' "*문자열*" '이 (가) '*string*'으로 바뀌어 특성을 처리 합니다.|
@@ -326,7 +326,7 @@ ms.locfileid: "69550448"
 |컴파일러 경고 (수준 1 및 수준 3) C4598|' #include "*헤더*" ': 미리 컴파일된 헤더의 헤더 번호 *번호가* 해당 위치의 현재 컴파일과 일치 하지 않습니다.|
 |컴파일러 경고 (수준 3) C4599|'*플래그* *경로*': 명령줄 인수 번호 *번호가* 미리 컴파일된 헤더와 일치 하지 않습니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C/C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
 [컴파일러 경고 C4000-C5999](compiler-warnings-c4000-c5999.md)

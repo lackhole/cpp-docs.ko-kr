@@ -1,7 +1,7 @@
 ---
 title: _ismbb 루틴
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcr110.dll
 - msvcrt.dll
 - msvcr80.dll
@@ -9,7 +9,10 @@ apilocation:
 - msvcr120.dll
 - msvcr90.dll
 - msvcr100.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ismbb
 - ismbb
@@ -17,14 +20,14 @@ helpviewer_keywords:
 - ismbb routines
 - _ismbb routines
 ms.assetid: d63c232e-3fe4-4844-aafd-2133846ece4b
-ms.openlocfilehash: d70604ce71d74bd73a3fea1b99beaf93f052e344
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 374c78ca222f9c63f6b37f26d4cf3a00f48f845e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750509"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944538"
 ---
-# <a name="ismbb-routines"></a>_ismbb 루틴
+# <a name="_ismbb-routines"></a>_ismbb 루틴
 
 현재 로캘 또는 지정된 LC_CTYPE 변환 상태 범주를 사용하여 지정된 정수 값 `c` 를 특정 조건에 대해 테스트합니다.
 
@@ -37,7 +40,7 @@ ms.locfileid: "57750509"
 |[_ismbbkalnum, _ismbbkalnum_l](../c-runtime-library/reference/ismbbkalnum-ismbbkalnum-l.md)|[_ismbbpunct, _ismbbpunct_l](../c-runtime-library/reference/ismbbpunct-ismbbpunct-l.md)|
 |[_ismbbkana, _ismbbkana_l](../c-runtime-library/reference/ismbbkana-ismbbkana-l.md)|[_ismbbtrail, _ismbbtrail_l](../c-runtime-library/reference/ismbbtrail-ismbbtrail-l.md)|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `_ismbb` 패밀리의 모든 루틴은 지정된 정수 값 `c` 를 특정 조건에 대해 테스트합니다. 테스트 결과는 적용되는 멀티바이트 코드 페이지에 따라 다릅니다. 기본적으로 멀티바이트 코드 페이지는 프로그램 시작 시 운영 체제에서 가져온 ANSI 코드 페이지로 설정됩니다. [_getmbcp](../c-runtime-library/reference/getmbcp.md)를 사용하여 사용 중인 멀티바이트 코드 페이지를 쿼리하거나 [_setmbcp](../c-runtime-library/reference/setmbcp.md)를 사용하여 변경합니다.
 

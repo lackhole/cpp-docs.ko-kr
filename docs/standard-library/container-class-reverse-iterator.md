@@ -11,7 +11,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68450789"
 ---
-# <a name="container-classreverseiterator"></a>Container Class::reverse_iterator
+# <a name="container-classreverse_iterator"></a>Container Class::reverse_iterator
 
 > [!NOTE]
 > 이 항목은 Microsoft C++ 설명서에서 C++ 표준 라이브러리에 사용 되는 컨테이너의 작동 하지 않는 예제로 작성 되었습니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
@@ -27,7 +27,7 @@ typedef T7 reverse_iterator;
 
 ## <a name="remarks"></a>설명
 
-여기서는 지정 되지 `T7` 않은 형식 (일반적으로 [](../standard-library/container-class-iterator.md) **>** `reverse_iterator` **\<** iterator)의 동의어로 설명 됩니다.
+여기서는 지정되지 않은 `T7`형식(일반적으로 `reverse_iterator` **\<** [iterator](../standard-library/container-class-iterator.md) **>** )의 동의어로 설명됩니다.
 
 ## <a name="see-also"></a>참고자료
 

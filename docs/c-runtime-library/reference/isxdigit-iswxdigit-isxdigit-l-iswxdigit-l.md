@@ -1,12 +1,12 @@
 ---
 title: isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _iswxdigit_l
 - iswxdigit
 - isxdigit
 - _isxdigit_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -19,7 +19,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - iswxdigit
 - isxdigit
@@ -35,14 +38,14 @@ helpviewer_keywords:
 - hexadecimal characters
 - iswxdigit function
 ms.assetid: c8bc5146-0b58-4e3f-bee3-f2318dd0f829
-ms.openlocfilehash: 29429aa636d3a06b0ee6ceddfcc8a91a7db0e009
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18f360e66583dfbf5033f813deed0b56abc71260
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157359"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953583"
 ---
-# <a name="isxdigit-iswxdigit-isxdigitl-iswxdigitl"></a>isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
+# <a name="isxdigit-iswxdigit-_isxdigit_l-_iswxdigit_l"></a>isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 
 정수가 16진수인 문자를 나타내는지 여부를 확인합니다.
 
@@ -75,13 +78,13 @@ int _iswxdigit_l(
 
 ## <a name="return-value"></a>반환 값
 
-각 이러한 루틴 0이 아닌 경우 반환 *c* 는 특정 16 진수 표현입니다. **isxdigit** 이면 0이 아닌 값을 반환 *c* 는 16 진수 (A-F, a-f 또는 0-9). **iswxdigit** 이면 0이 아닌 값을 반환 *c* 16 진수 문자에 해당 하는 와이드 문자입니다. 이러한 루틴은 각각 0을 반환 *c* 테스트 조건을 충족 하지 않습니다.
+*C* 가 16 진수의 특정 표현인 경우 이러한 각 루틴은 0이 아닌 값을 반환 합니다. *c* 가 16 진수 (a-f, a-f 또는 0-9) 인 경우 **isxdigit** 는 0이 아닌 값을 반환 합니다. **iswxdigit** 는 *c* 가 16 진수 문자에 해당 하는 와이드 문자인 경우 0이 아닌 값을 반환 합니다. *C* 가 테스트 조건을 충족 하지 않는 경우 이러한 루틴은 각각 0을 반환 합니다.
 
-"C" 로캘의 합니다 **iswxdigit** 함수는 유니코드 전자 16 진수 문자를 지원 하지 않습니다.
+"C" 로캘의 경우 **iswxdigit** 함수는 유니코드 전자 16 진수 문자를 지원 하지 않습니다.
 
-접미사가 있는 이러한 함수 버전은 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_L** 접미사가 있는 이러한 함수 버전은 로캘 종속 동작에 대해 현재 로캘 대신 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-동작 **isxdigit** 하 고 **_isxdigit_l** 경우 정의 되지 않습니다 *c* EOF가 범위인 0부터 0xff까지 포괄 합니다. 디버그 CRT 라이브러리가 사용 되는 경우 및 *c* 함수 raise 이러한 값 중 하나가 아닌 한 어설션입니다.
+**Isxdigit** 및 **_isxdigit_l** 의 동작은 *c* 가 EOF가 아니거나 0에서 0xff 사이 (포함) 범위 내에 있는 경우 정의 되지 않습니다. 디버그 CRT 라이브러리가 사용 되 고 *c* 가 이러한 값 중 하나가 아니면 함수는 어설션을 발생 시킵니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

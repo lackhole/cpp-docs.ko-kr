@@ -11,16 +11,16 @@ helpviewer_keywords:
 - dimensions
 - CSize class
 ms.assetid: fb2cf85a-0bc1-46f8-892b-309c108b52ae
-ms.openlocfilehash: 5e19ab9b9339f3e6f61abf7731a40ed3832b50c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 26bb43355f4dff3f77a905068bea83dd1ceaf79c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252690"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491652"
 ---
 # <a name="csize-class"></a>CSize 클래스
 
-상대 좌표 또는 위치를 구현하는 Windows [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) 구조체와 유사합니다.
+상대 좌표 또는 위치를 구현하는 Windows [SIZE](/windows/win32/api/windef/ns-windef-size) 구조체와 유사합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,21 +40,21 @@ class CSize : public tagSIZE
 
 |이름|설명|
 |----------|-----------------|
-|[CSize::operator -](#operator_-)|두 가지 크기를 뺍니다.|
-|[CSize::operator !=](#operator_neq)|이 다른 지 확인 `CSize` 및 크기입니다.|
-|[CSize::operator +](#operator_add)|두 가지 크기를 추가합니다.|
-|[CSize::operator +=](#operator_add_eq)|추가 크기 `CSize`합니다.|
-|[CSize::operator -=](#operator_-_eq)|크기를 뺍니다 `CSize`합니다.|
-|[CSize::operator ==](#operator_eq_eq)|같은지 확인 `CSize` 및 크기입니다.|
+|[CSize:: operator-](#operator_-)|두 크기를 뺍니다.|
+|[CSize::operator !=](#operator_neq)|`CSize` 과 크기가 같지 않은지 확인 합니다.|
+|[CSize:: operator +](#operator_add)|두 크기를 더 합니다.|
+|[CSize:: operator + =](#operator_add_eq)|에 `CSize`크기를 추가 합니다.|
+|[CSize::operator -=](#operator_-_eq)|에서 `CSize`크기를 뺍니다.|
+|[CSize::operator ==](#operator_eq_eq)|`CSize` 과 크기가 같은지 여부를 확인 합니다.|
 
 ## <a name="remarks"></a>설명
 
-이 클래스에서 파생 되는 `SIZE` 구조입니다. 즉, 전달할 수 있습니다는 `CSize` 필요로 하는 매개 변수를 `SIZE` 하 고의 데이터 멤버를 `SIZE` 구조는 액세스할 수 있는 데이터 멤버의 `CSize`합니다.
+이 클래스는 `SIZE` 구조체에서 파생 됩니다. 즉,을 `SIZE` 호출 하는 `CSize` 매개 변수에서 `SIZE` 구조체의 데이터 멤버에 액세스할 수 있는 데이터 멤버가 `CSize`있는를 전달할 수 있습니다.
 
-`cx` 하 고 `cy` 멤버인 `SIZE` (및 `CSize`)는 공용입니다. 또한 `CSize` 조작 하는 멤버 함수를 구현 하는 `SIZE` 구조입니다.
+및의 `cx` 및멤버`SIZE`는공용입니다. `cy` `CSize` 또한 `CSize` 는 구조체를 조작 하는 `SIZE` 멤버 함수를 구현 합니다.
 
 > [!NOTE]
-> 공유 유틸리티 클래스에 대 한 자세한 (같은 `CSize`)를 참조 하세요 [공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)합니다.
+> 공유 유틸리티 클래스 (예 `CSize`:)에 대 한 자세한 내용은 [공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)를 참조 하세요.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
@@ -64,7 +64,7 @@ class CSize : public tagSIZE
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atltypes.h
+**헤더:** 이 형식 .h
 
 ##  <a name="csize"></a>  CSize::CSize
 
@@ -81,23 +81,23 @@ CSize( DWORD dwSize) throw();
 ### <a name="parameters"></a>매개 변수
 
 *initCX*<br/>
-집합의 `cx` 에 대 한 멤버는 `CSize`합니다.
+에 대 `cx` 한 멤버를 설정 합니다.`CSize`
 
 *initCY*<br/>
-집합의 `cy` 에 대 한 멤버는 `CSize`합니다.
+에 대 `cy` 한 멤버를 설정 합니다.`CSize`
 
 *initSize*<br/>
-[크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 나 `CSize` 개체를 초기화 하는 데 `CSize`합니다.
+`CSize`를 초기화하는 데 사용되는 [크기](/windows/win32/api/windef/ns-windef-size) 구조 또는 `CSize`개체입니다.
 
 *initPt*<br/>
-[지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 나 `CPoint` 개체를 초기화 하는 데 `CSize`합니다.
+`CSize`를 초기화 하는 데 사용되는 [요소](/windows/win32/api/windef/ns-windef-point) 구조 또는 `CPoint`개체입니다.
 
 *dwSize*<br/>
-DWORD 초기화 하는 데 `CSize`합니다. 하위 단어를 `cx` 멤버 이며 상위 단어를 `cy` 멤버입니다.
+초기화 `CSize`하는 데 사용 되는 DWORD입니다. 하위 단어가 `cx` 멤버이 고 고차 단어가 `cy` 멤버입니다.
 
 ### <a name="remarks"></a>설명
 
-인수 없이 지정 된 경우 `cx` 고 `cy` 0으로 초기화 됩니다.
+인수를 `cx` 지정 하지 않으면 및 `cy` 는 0으로 초기화 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -113,7 +113,7 @@ BOOL operator==(SIZE size) const throw();
 
 ### <a name="remarks"></a>설명
 
-크기가 같으면 0이 아닌 반환 하 고, otherwize 0입니다.
+크기가 동일 하면 0이 아닌 값을 반환 하 고, otherwize 0을 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -121,7 +121,7 @@ BOOL operator==(SIZE size) const throw();
 
 ##  <a name="operator_neq"></a>  CSize::operator !=
 
-두 크기가 같지 확인 합니다.
+두 크기가 같지 않은지 확인 합니다.
 
 ```
 BOOL operator!=(SIZE size) const throw();
@@ -129,7 +129,7 @@ BOOL operator!=(SIZE size) const throw();
 
 ### <a name="remarks"></a>설명
 
-크기가 같지 않은 경우 0이 아닌 반환 그렇지 않으면 0입니다.
+크기가 같지 않으면 0이 아닌 값을 반환 하 고, 그렇지 않으면 0을 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -137,7 +137,7 @@ BOOL operator!=(SIZE size) const throw();
 
 ##  <a name="operator_add_eq"></a>  CSize::operator +=
 
-이 크기를 추가 `CSize`합니다.
+이 `CSize`에 크기를 추가 합니다.
 
 ```
 void operator+=(SIZE size) throw();
@@ -149,7 +149,7 @@ void operator+=(SIZE size) throw();
 
 ##  <a name="operator_-_eq"></a>  CSize::operator -=
 
-이 크기를 뺍니다 `CSize`합니다.
+이 `CSize`에서 크기를 뺍니다.
 
 ```
 void operator-=(SIZE size) throw();
@@ -161,7 +161,7 @@ void operator-=(SIZE size) throw();
 
 ##  <a name="operator_add"></a>  CSize::operator +
 
-이러한 연산자는이 추가 `CSize` 매개 변수의 값입니다.
+이러한 연산자는 매개 `CSize` 변수 값에이 값을 추가 합니다.
 
 ```
 CSize operator+(SIZE size) const throw();
@@ -171,19 +171,19 @@ CRect operator+(const RECT* lpRect) const throw();
 
 ### <a name="remarks"></a>설명
 
-개별 연산자의 다음 설명을 참조 하세요.
+개별 연산자에 대 한 다음 설명을 참조 하십시오.
 
 - **operator +(** *size* **)**
 
-  이 작업은 두 개의 추가 `CSize` 값입니다.
+  이 작업은 두 `CSize` 개의 값을 추가 합니다.
 
 - **operator +(** *point* **)**
 
-  이 작업 (이동) 오프셋을 [지점](/previous-versions/dd162805\(v=vs.85\)) (또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) 값이 `CSize` 값입니다. `cx` 및 `cy` 이 멤버인 `CSize` 값에 추가 됩니다는 `x` 및 `y` 의 데이터 멤버는 `POINT` 값. 버전의 유사 [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
+  이 작업은 [점](/previous-versions/dd162805\(v=vs.85\)) (또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md)) 값을이 `CSize` 값으로 오프셋 (이동) 합니다. `cy` `x` 이 `cx` `POINT` 값의 및 멤버는 값의 및 `y` 데이터 멤버에 추가 됩니다. `CSize` [크기](/windows/win32/api/windef/ns-windef-size) 매개 변수를 사용 하는 [cpoint:: operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) 의 버전과 유사 합니다.
 
 - **operator +(** *lpRect* **)**
 
-   이 작업 (이동) 오프셋을 [RECT](/previous-versions/dd162897\(v=vs.85\)) (또는 [CRect](../../atl-mfc-shared/reference/crect-class.md)) 값이 `CSize` 값입니다. `cx` 및 `cy` 이 멤버 `CSize` 값에 추가 됩니다는 `left`, `top`, `right`, 및 `bottom` 의 데이터 멤버는 `RECT` 값입니다. 버전의 유사 [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
+   이 연산은 [RECT](/previous-versions/dd162897\(v=vs.85\)) (또는 [crect](../../atl-mfc-shared/reference/crect-class.md)) 값을이 `CSize` 값으로 오프셋 (이동) 합니다. `cy` `left` `top`이 값의`right`및 멤버는 값`RECT` 의,, 및`bottom` 데이터 멤버에 추가 됩니다. `cx` `CSize` 이는 [SIZE](/windows/win32/api/windef/ns-windef-size) 매개 변수를 사용 하는 [crect:: operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) 버전과 유사 합니다.
 
 ### <a name="example"></a>예제
 
@@ -191,7 +191,7 @@ CRect operator+(const RECT* lpRect) const throw();
 
 ##  <a name="operator_-"></a>  CSize::operator -
 
-이러한 연산자의 처음 3 개를 뺄이 `CSize` 매개 변수의 값입니다.
+이러한 연산자 중 처음 세 개는이 `CSize` 값을 매개 변수의 값으로 뺍니다.
 
 ```
 CSize operator-(SIZE size) const throw();
@@ -202,23 +202,23 @@ CSize operator-() const throw();
 
 ### <a name="remarks"></a>설명
 
-부호를 변경 하는 단항 빼기, 네 번째 연산자는 `CSize` 값입니다. 개별 연산자의 다음 설명을 참조 하세요.
+네 번째 연산자 인 단항 마이너스는 `CSize` 값의 부호를 변경 합니다. 개별 연산자에 대 한 다음 설명을 참조 하십시오.
 
 - **operator -(** *size* **)**
 
-  이 작업을 뺍니다 두 `CSize` 값입니다.
+  이 작업은 두 `CSize` 값을 뺍니다.
 
 - **operator -(** *point* **)**
 
-  이 작업 (이동) 오프셋을 [지점](/previous-versions/dd162805\(v=vs.85\)) 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 값이 덧셈 역으로 `CSize` 값입니다. `cx` 및 `cy` 이 `CSize` 값에서 뺀 합니다 `x` 및 `y` 의 데이터 멤버는 `POINT` 값. 버전의 유사 [CPoint::operator-](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
+  이 연산은 [POINT](/previous-versions/dd162805\(v=vs.85\)) 또는 [cpoint](../../atl-mfc-shared/reference/cpoint-class.md) 값을이 `CSize` 값의 덧셈 역으로 오프셋 (이동) 합니다. 이 `cx` `cy` 값의 및는 `POINT` 값의 `x` 및 `y` 데이터 멤버에서 뺍니다. `CSize` [SIZE](/windows/win32/api/windef/ns-windef-size) 매개 변수를 사용 하는 [cpoint:: operator](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) 의 버전과 유사 합니다.
 
 - **operator -(** *lpRect* **)**
 
-  이 작업 (이동) 오프셋을 [RECT](/previous-versions/dd162897\(v=vs.85\)) 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 값이 덧셈 역으로 `CSize` 값입니다. `cx` 및 `cy` 이 멤버 `CSize` 값에서 뺀를 `left`, `top`, `right`, 및 `bottom` 의 데이터 멤버는 `RECT` 값입니다. 버전의 유사 [CRect::operator-](../../atl-mfc-shared/reference/crect-class.md#operator_-) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
+  이 연산은 [RECT](/previous-versions/dd162897\(v=vs.85\)) 또는 [crect](../../atl-mfc-shared/reference/crect-class.md) 값을이 `CSize` 값의 가감 역함수로 오프셋 (이동) 합니다. `cy` `left` `top`이 값의`right`및 멤버를 값`RECT` 의,, 및`bottom` 데이터 멤버에서 뺍니다. `cx` `CSize` 이는 [SIZE](/windows/win32/api/windef/ns-windef-size) 매개 변수를 사용 하는 [crect:: operator](../../atl-mfc-shared/reference/crect-class.md#operator_-) 의 버전과 유사 합니다.
 
 - **operator -()**
 
-  이 작업의 덧셈 역 원을 반환 `CSize` 값입니다.
+  이 작업은이 `CSize` 값의 덧셈 역을 반환 합니다.
 
 ### <a name="example"></a>예제
 

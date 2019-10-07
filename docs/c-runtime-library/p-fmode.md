@@ -1,9 +1,9 @@
 ---
 title: __p__fmode
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __p__fmode
-apilocation:
+api_location:
 - msvcr80.dll
 - msvcr120.dll
 - msvcr90.dll
@@ -12,20 +12,23 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr100.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __p__fmode
 helpviewer_keywords:
 - __p__fmode
 ms.assetid: 1daa1394-81eb-43aa-a71b-4cc6acf3207b
-ms.openlocfilehash: bdb390ef5ae7254c463a3abd66860559cebeeeb9
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: 6f7676fc5c9958be3d0567e6bf22a11367094150
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703053"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939980"
 ---
-# <a name="pfmode"></a>__p__fmode
+# <a name="__p__fmode"></a>__p__fmode
 
 파일 I/O 연산에 대한 기본 *파일 변환 모드*를 지정하는 `_fmode` 전역 변수에 대한 포인터입니다.
 
@@ -36,11 +39,11 @@ int* __p__fmode(
    );
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 `_fmode` 전역 변수에 대한 포인터입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `__p__fmode` 함수는 내부용이며 사용자 코드에서 호출할 수 없습니다.
 

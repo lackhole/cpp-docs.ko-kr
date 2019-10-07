@@ -1,12 +1,12 @@
 ---
 title: strtod, _strtod_l, wcstod, _wcstod_l
 ms.date: 10/20/2017
-apiname:
+api_name:
 - wcstod
 - _wcstod_l
 - _strtod_l
 - strtod
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tcstod
 - strtod
@@ -42,14 +45,14 @@ helpviewer_keywords:
 - _strtod_l function
 - string conversion, to floating point values
 ms.assetid: 0444f74a-ba2a-4973-b7f0-1d77ba88c6ed
-ms.openlocfilehash: c8c2b3b491e2e7265829fa88580529dc757ace8c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5372525eb99dc9d39e31b10def0377c9aad5296c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376473"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946499"
 ---
-# <a name="strtod-strtodl-wcstod-wcstodl"></a>strtod, _strtod_l, wcstod, _wcstod_l
+# <a name="strtod-_strtod_l-wcstod-_wcstod_l"></a>strtod, _strtod_l, wcstod, _wcstod_l
 
 문자열을 배정밀도 값으로 변환합니다.
 
@@ -89,13 +92,13 @@ double wcstod_l(
 
 ## <a name="return-value"></a>반환 값
 
-**strtod** 표현을 인해 오버플로가 발생 + /-경우 함수 반환 하는 경우 제외 된 부동 소수점 숫자의 값을 반환**HUGE_VAL**합니다. 부호 **HUGE_VAL** 표현할 수 없는 값의 부호와 일치 합니다. **strtod** 변환을 수행할 수 없거나 언더플로가 발생 하는 경우 0을 반환 합니다.
+**strtod** 는 표현이 오버플로를 발생 시키는 경우를 제외 하 고 부동 소수점 숫자의 값을 반환 합니다 .이 경우 함수는 +/-**HUGE_VAL**를 반환 합니다. **HUGE_VAL** 의 부호는 표현할 수 없는 값의 부호와 일치 합니다. **strtod** 는 변환을 수행할 수 없거나 언더플로가 발생 하는 경우 0을 반환 합니다.
 
-**wcstod** 와 동일한 값을 반환 **strtod**합니다. 두 함수 모두에 대 한 **errno** 로 설정 된 **ERANGE** 오버플로 또는 언더플로가 발생 하에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
+**wcstod** 는와 유사 값을 **strtod**로 반환 합니다. 두 함수 모두 오버플로 또는 언더플로가 발생 하면 **errno** 가 **ERANGE** 로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-각 함수는 입력된 문자열을 변환 *strSource* 에 **double**합니다. 합니다 **strtod** 변환 함수 *strSource* 배정밀도 값으로. **strtod** 문자열 읽기를 중지 *strSource* 숫자의 일부분으로 인식할 수 없는 첫 문자에서 합니다. 이 문자는 종료 null 문자일 수 있습니다. **wcstod** 의 와이드 문자 버전이 **strtod**; 해당 *strSource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+각 함수는 입력 문자열 *Strsource* 를 **double**로 변환 합니다. **Strtod** 함수는 *strsource* 를 배정밀도 값으로 변환 합니다. **strtod** 는 숫자의 일부분으로 인식할 수 없는 첫 번째 문자에서 문자열 *strsource* 의 읽기를 중지 합니다. 이 문자는 종료 null 문자일 수 있습니다. **wcstod** 은 **strtod**;의 와이드 문자 버전입니다. *Strsource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -104,17 +107,17 @@ double wcstod_l(
 |**_tcstod**|**strtod**|**strtod**|**wcstod**|
 |**_tcstod_l**|**_strtod_l**|**_strtod_l**|**_wcstod_l**|
 
-합니다 **LC_NUMERIC** 현재 로캘 범주 설정에서 지점 기 수 문자 인식이 결정 *strSource*합니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 없는 함수는 **_l** 접미사는 현재 로캘을 사용 **_strtod_l** 동일 **_strtod_l** 를 사용 하는 점을 제외 하 고는 *로캘* 대신 전달 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+현재 로캘의 **LC_NUMERIC** Category 설정은 *strsource*의 기 하 점 문자 인식 여부를 결정 합니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_L** 접미사가 없는 함수는 현재 로캘을 사용 합니다. **_strtol_l** 은 전달 된 *로캘을* 대신 사용 한다는 점을 제외 하 고 **_strtol_l** 와 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-하는 경우 *endptr* 아닙니다 **NULL**, 검색을 중지 한 문자에 대 한 포인터에서 가리키는 위치에 저장 됩니다 *endptr*합니다. 변환 작업 없이 수행할 수 있으면 (올바른 숫자를 찾을 수 없거나 잘못 된 자료를 지정 된), 값 *strSource* 가리키는 위치에 저장 된 *endptr*합니다.
+*Endptr* 이 **NULL**이 아닌 경우 검색을 중지 한 문자에 대 한 포인터는 *endptr*에서 가리키는 위치에 저장 됩니다. 올바른 숫자를 찾을 수 없거나 잘못 된 밑을 지정 하 여 변환을 수행할 수 없는 경우 *Strsource* 의 값은 *endptr*에서 가리키는 위치에 저장 됩니다.
 
-**strtod** 예상 *strSource* 문자열을 다음 형식 중 하나를 가리키도록 합니다.
+**strtod** 는 다음 형식 중 하나의 문자열을 가리키는 *strsource* 가 필요 합니다.
 
-[*공백을*] [*기호*] {*자릿수* [*기* *자리*] &#124;  *기 수* *자리*} [{**e** &#124; **E**} [*기호*] *자리*] [*공백을*] [*sign*] {**0x** &#124; **0x**} {*hexdigits* [ *기* *hexdigits*] &#124; *기* *hexdigits*} [{**p** &#124; **P**} [*sign*] *hexdigits*] [*공백*] [*로그인*] { **INF** &#124; **무한대**} [*공백*] [*로그인*]  **NAN** [*시퀀스*]
+[*공백*] [*sign*] {*숫자* [*기* 하 *자릿수*] &#124; *기* *숫자 숫자*} [{**e** &#124; **e**} [*sign*] *digits*] [*공백*] [*sign*] {**0x** &#124; **0x**} {*hexdigits* [ *hexdigits*] &#124;  *기* 하 *hexdigits*} [{**p** &#124; **p**} [*sign*] *hexdigits*] *[공백*] [*sign*] {**INF** &#124; **INFINITY**} [*공백*] [ *sign*] **NAN** [*sequence*]
 
-선택적 선행 *공백* 공백 및 탭 문자가 무시 되는 구성 될 수 있습니다 *기호* 은 더하기 (+) 또는 빼기 (-) 이며 *자릿수* 는 하나 이상의 10 진수입니다. *hexdigits* 는 하나 이상의 16 진수입니다. *기* 됨 지점 기 수 문자, 마침표 (.) 기본 "C" 로캘에서 또는 현재 로캘이 다른 경우에 로캘별 값 *로캘* 지정 되어 있으면을 *시퀀스* 는 일련의 영숫자 또는 밑줄 문자입니다. 10 진수 및 16 진수 숫자 형식의 기 수 지점 문자 앞에 숫자가 있으면 하나 이상의 뒤에 나타나야 지점 기 수 문자입니다. 10 진수 형식, 소수 자릿수 올 수 있습니다는 소개 문자 구성 된 지 수 (**e** 하거나 **E**) 및 선택적으로 부호 있는 정수입니다. 16 진수 형식, 16 진수는 소개 문자 구성 된 지 수가 올 수 있습니다 (**p** 하거나 **P**)을 나타내는 부호 있는 16 진수 정수는 2의 거듭제곱으로 지 수입니다. 둘 중 하나의 형태로 지 수 부분을 아니고 지점 기 수 문자 표시 지점 기 수 문자 문자열의 마지막 숫자임을 수행 하려면 간주 됩니다. 둘 다에서 대/소문자를 무시할지를 **INF** 하 고 **NAN** forms 합니다. 이러한 형식 중 하나로 맞지 않는 첫 번째 문자는 검색을 중지 합니다.
+선행 *공백* (옵션)은 공백과 탭 문자로 구성 될 수 있으며,이는 무시 됩니다. *sign* 은 더하기 (+) 또는 빼기 (-) 중 하나입니다. *숫자* 는 하나 이상의 10 진수입니다. *hexdigits* 는 하나 이상의 16 진수입니다. *기* 수는 기 수 점 문자입니다. 기본 "C" 로캘의 마침표 (.) 이거나, 현재 로캘이 다르거나 *로캘이* 지정 된 경우 로캘별 값입니다. *시퀀스* 는 영숫자 또는 밑줄 문자의 시퀀스입니다. 10 진수 및 16 진수 형식 모두에서 기 수 지점 문자 앞에 숫자가 표시 되지 않으면 하나 이상이 기 수 점 문자 뒤에와 야 합니다. Decimal 형식에서 10 진수 뒤에는 기본 문자 (**e** 또는 **e**)와 선택적으로 부호 있는 정수로 구성 된 지수가 올 수 있습니다. 16 진수 형식에서는 16 진수 뒤에 지수가 올 수 있습니다. 여기에는 소개 문자 (**p** 또는 **p**)와 지 수를 2의 거듭제곱으로 나타내는 선택적으로 서명 된 16 진수 정수로 구성 됩니다. 두 형태 모두에서 지 수 부분이 나 기 수 지점 이외의 문자를 표시 하지 않는 경우 기 수 점 문자는 문자열의 마지막 숫자를 따르는 것으로 간주 됩니다. Case는 **INF** 및 **NAN** 형식 모두에서 무시 됩니다. 이러한 형식 중 하나에 맞지 않는 첫 번째 문자는 검색을 중지 합니다.
 
-이러한 함수의 UCRT 버전은 Fortran 스타일의 변환을 지원 하지 않습니다 (**d** 하거나 **D**) 지 수 문자의 합니다. 이러한 비표준 확장은 CRT의 이전 버전에서 지원되었으므로 코드에 대한 중요한 변경 사항일 수 있습니다. UCRT 버전은 16 진수 문자열 및 이전 버전에서 지원 되지 않았습니다 INF 및 NAN 값의 라운드트립을 지원 합니다. 코드에서 주요 변경 사항이 발생할 수 있습니다. 문자열 "0x1a"는 해석 하는 예를 들어 **strtod** UCRT 버전에서 26.0가 아니라 이전 버전에서는 0.0.
+이러한 함수의 버전 간 RT 버전은 포트란 스타일 (**d** 또는 **d**) 지 수 문자의 변환을 지원 하지 않습니다. 이러한 비표준 확장은 CRT의 이전 버전에서 지원되었으므로 코드에 대한 중요한 변경 사항일 수 있습니다. 버전 간 RT 버전은 이전 버전에서 지원 되지 않는 16 진수 문자열 및 INF 및 NAN 값의 라운드트립을 지원 합니다. 이로 인해 코드의 주요 변경 사항이 발생할 수도 있습니다. 예를 들어 문자열 "0x1a"는 이전 버전에서 0.0으로 **strtod** 에 의해 해석 되지만, 이전 버전에서는 26.0로 해석 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

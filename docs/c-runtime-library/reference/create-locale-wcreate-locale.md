@@ -1,11 +1,11 @@
 ---
 title: _create_locale, _wcreate_locale
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _create_locale
 - __create_locale
 - _wcreate_locale
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-locale-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - create_locale
 - _create_locale
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - create_locale function
 - __create_locale function
 ms.assetid: ca362464-9f4a-4ec6-ab03-316c55c5be81
-ms.openlocfilehash: 109a1d93692d0c65269b40fd0559381907ce1cab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a7098dc572ecdbefd891efc8443e977b01850fa4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340367"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70938845"
 ---
-# <a name="createlocale-wcreatelocale"></a>_create_locale, _wcreate_locale
+# <a name="_create_locale-_wcreate_locale"></a>_create_locale, _wcreate_locale
 
 로캘 개체를 만듭니다.
 
@@ -62,34 +65,34 @@ _locale_t _wcreate_locale(
 
 ## <a name="return-value"></a>반환 값
 
-유효한 경우 *로캘* 하 고 *범주* 된,으로 지정 된 로캘 설정을 반환 합니다.는 **_locale_t** 개체입니다. 프로그램의 현재 로캘 설정은 변경되지 않습니다.
+유효한 *로캘* 및 *범주가* 지정 된 경우는 지정 된 로캘 설정을 **_locale_t** 개체로 반환 합니다. 프로그램의 현재 로캘 설정은 변경되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_create_locale** 함수를 사용 하면 로캘별 버전의 많은 CRT 함수에서 사용 하기 위해 특정 지역별 설정을 나타내는 개체를 만들 수 있습니다 (함수는 **_l** 접미사 ). 동작은 유사 **setlocale**지정 된 로캘 설정을 현재 환경에 적용 하는 대신 설정은에 저장 한다는 점을 제외 하면는 **_locale_t** 반환 되는 구조입니다. 합니다 **_locale_t** 구조를 사용 하 여 해제 해야 [_free_locale](free-locale.md) 더 이상 필요 없는 경우.
+**_Create_localf** 함수를 사용 하면 다양 한 CRT 함수 ( **_l** 접미사가 있는 함수)의 로캘별 버전에서 사용 하기 위해 특정 지역 특정 설정을 나타내는 개체를 만들 수 있습니다. 이 동작은 지정 된 로캘 설정을 현재 환경에 적용 하는 대신 설정이 반환 되는 **_locale_t** 구조체에 저장 된다는 점을 제외 하 고 **setlocale**과 비슷합니다. 더 이상 필요 하지 않은 경우 [_free_locale](free-locale.md) 를 사용 하 여 **_locale_t** 구조를 해제 해야 합니다.
 
-**_wcreate_locale** 의 와이드 문자 버전이 **_create_locale**; *로캘* 인수 **_wcreate_locale** 는 와이드 문자 문자열입니다. **_wcreate_locale** 하 고 **_create_locale** 동일 하 게 작동 합니다.
+**_wcreate_locala** **의 와이드 문자 버전입니다.** **_wcreate_local의** *locale* 인수는 와이드 문자열입니다. _wcreate_ststststststststststststststststststat
 
-합니다 *범주* 인수 영향을 받는 로캘별 동작의 일부를 지정 합니다. 에 사용 되는 플래그 *범주* 이 테이블에 표시 된 대로 영향을 주는 프로그램의 일부 이며:
+*Category* 인수는 영향을 받는 로캘별 동작의 부분을 지정 합니다. *범주* 에 사용 되는 플래그와 이러한 플래그는 영향을 주는 프로그램의 일부에 대 한 것입니다.
 
 | *범주* 플래그 | 미치는 영향 |
 |-----------------|---------|
 | **LC_ALL** |아래에 나열된 모든 범주입니다. |
-| **LC_COLLATE** |합니다 **strcoll**, **_stricoll**를 **wcscoll**를 **_wcsicoll**를 **strxfrm**, **_ strncoll**, **_strnicoll**를 **_wcsncoll**를 **_wcsnicoll**, 및 **wcsxfrm** 함수입니다. |
-| **LC_CTYPE** | 문자 처리 함수 (제외한 **isdigit**, **isxdigit**를 **mbstowcs**, 및 **mbtowc**, 영향을 받지 않습니다). |
-| **LC_MONETARY** | 반환 되는 통화 서식 정보를 **localeconv** 함수입니다. |
-| **LC_NUMERIC** | 소수점 문자 형식이 지정 된 출력 루틴 (같은 **printf**), 데이터 변환 루틴 및 반환 하는 비 통화 서식 지정 정보에 대 한 **localeconv**합니다. 소수점 문자 이외에 **LC_NUMERIC** 제어에서 반환 된 문자열 집합 1000 단위 구분 기호 및 그룹화 [localeconv](localeconv.md)합니다. |
-| **LC_TIME** | 합니다 **strftime** 하 고 **wcsftime** 함수입니다. |
+| **LC_COLLATE** |**Strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**및 **wcsxfrm** 함수입니다. |
+| **LC_CTYPE** | 문자 처리 함수 ( **isdigit**, **isxdigit**, **mbstowcs**및 **mbtowc**는 영향을 받지 않음)입니다. |
+| **LC_MONETARY** | **Localeconv** 함수에서 반환 된 통화 형식 정보입니다. |
+| **LC_NUMERIC** | 형식이 지정 된 출력 루틴 (예: **printf**), 데이터 변환 루틴 및 **localeconv**에서 반환 하는 비 통화 서식 지정 정보에 대 한 소수점 문자입니다. **LC_NUMERIC** 는 소수점 문자 외에도 천 단위 구분 기호와 [localeconv](localeconv.md)에서 반환 하는 그룹화 컨트롤 문자열을 설정 합니다. |
+| **LC_TIME** | **Strftime** 및 **wcsftime** 함수 |
 
-이 함수는 유효성을 검사 합니다 *범주* 하 고 *로캘* 매개 변수입니다. 범주 매개 변수가 이전 표에 지정 된 값 중 하나가 아닌 경우 또는 경우 *로캘* 됩니다 **NULL**를 반환 **NULL**합니다.
+이 함수는 *범주* 및 *로캘* 매개 변수의 유효성을 검사 합니다. Category 매개 변수가 이전 표에 지정 된 값 중 하나가 아니거나 *로캘이* **null**인 경우이 함수는 **null**을 반환 합니다.
 
-합니다 *로캘* 인수는 로캘을 지정 하는 문자열에 대 한 포인터입니다. 형식에 대 한 자세한 합니다 *로캘* 인수를 참조 하십시오 [로캘 이름, 언어 및 국가/지역 문자열](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)합니다.
+*Locale* 인수는 로캘을 지정 하는 문자열에 대 한 포인터입니다. *로캘* 인수의 형식에 대 한 자세한 내용은 [로캘 이름, 언어 및 국가/지역 문자열](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)을 참조 하세요.
 
-합니다 *로캘* 인수는 로캘 이름, 언어 문자열, 언어 문자열 및 국가/지역 코드, 코드 페이지 또는 언어 문자열, 국가/지역 코드 및 코드 페이지에 사용할 수 있습니다. 사용 가능한 로캘 이름, 언어, 국가/지역 코드 및 코드 페이지의 집합에는 문자당 3바이트 이상이 필요한 코드 페이지(예: UTF-7 및 UTF-8)를 제외하고, Windows NLS API에서 지원하는 모든 항목이 포함됩니다. Utf-7 또는 u t F-8과 같은 코드 페이지를 제공 하는 경우 **_create_locale** 실패 하 고 반환 됩니다 **NULL**합니다. 지 원하는 로캘 이름 집합이 **_create_locale** 에 설명 되어 있습니다 [로캘 이름, 언어 및 국가/지역 문자열](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)합니다. 지 원하는 언어 및 국가/지역 문자열 집합이 **_create_locale** 에 나와 [언어 문자열](../../c-runtime-library/language-strings.md) 하 고 [국가/지역 문자열](../../c-runtime-library/country-region-strings.md)합니다.
+*로캘* 인수는 로캘 이름, 언어 문자열, 언어 문자열 및 국가/지역 코드, 코드 페이지, 언어 문자열, 국가/지역 코드 및 코드 페이지를 사용할 수 있습니다. 사용 가능한 로캘 이름, 언어, 국가/지역 코드 및 코드 페이지의 집합에는 문자당 3바이트 이상이 필요한 코드 페이지(예: UTF-7 및 UTF-8)를 제외하고, Windows NLS API에서 지원하는 모든 항목이 포함됩니다. UTF-8 또는 u t f-8과 같은 코드 페이지를 제공 하는 경우 **_create_locala** 가 실패 하 고 **NULL**을 반환 합니다. **_Create_locale** 에서 지 원하는 로캘 이름 집합은 [로캘 이름, 언어 및 국가/지역 문자열](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)에 설명 되어 있습니다. **_Create_locale** 에서 지 원하는 언어 및 국가/지역 문자열 집합은 [언어 문자열](../../c-runtime-library/language-strings.md) 및 [국가/지역 문자열](../../c-runtime-library/country-region-strings.md)에 나열 됩니다.
 
 로캘 설정에 대한 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)을 참조하세요.
 
-이 함수의 이전 이름인 **__create_locale** (두 개의 선행 밑줄로)가 사용 되지 않습니다.
+이 함수의 이전 이름인 **__create_locale** (두 개의 선행 밑줄이 있음)은 더 이상 사용 되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 

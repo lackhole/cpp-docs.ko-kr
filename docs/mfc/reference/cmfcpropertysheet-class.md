@@ -41,10 +41,10 @@ helpviewer_keywords:
 - CMFCPropertySheet [MFC], SetLook
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
 ms.openlocfilehash: f7c9d2b472a443d8bf556d0b12dfe202ea8607a1
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69505084"
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet 클래스
@@ -68,7 +68,7 @@ class CMFCPropertySheet : public CPropertySheet
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCPropertySheet::AddPage](#addpage)|속성 시트에 페이지를 추가합니다.|
 |[CMFCPropertySheet::AddPageToTree](#addpagetotree)|트리 컨트롤에 새 속성 페이지를 추가합니다.|
@@ -122,7 +122,7 @@ class CMFCPropertySheet : public CPropertySheet
 
 ![속성 트리](../../mfc/reference/media/proptree.png "속성 트리")
 
-## <a name="inheritance-hierarchy"></a>상속 계층 구조
+## <a name="inheritance-hierarchy"></a>상속 계층
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -185,7 +185,7 @@ void AddPageToTree(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 속성 페이지를 트리 컨트롤의 리프로 추가 합니다. 속성 페이지를 추가 하려면 `CMFCPropertySheet` 개체를 만들고, 매개 변수를로 `CMFCPropertySheet::PropSheetLook_Tree`설정 하 여 [CMFCPropertySheet:: setlook](#setlook) 메서드를 호출한 후이 메서드를 사용 하 여 속성 페이지를 추가 합니다.
+이 메서드는 속성 페이지를 트리 컨트롤의 리프로 추가 합니다. 속성 페이지를 `CMFCPropertySheet` 추가 하려면 개체를 만들고, 매개 변수를로 `CMFCPropertySheet::PropSheetLook_Tree`설정 하 여 [CMFCPropertySheet:: setlook](#setlook) 메서드를 호출한 후이 메서드를 사용 하 여 속성 페이지를 추가 합니다.
 
 ##  <a name="addtreecategory"></a>  CMFCPropertySheet::AddTreeCategory
 
@@ -516,7 +516,7 @@ void SetLook(
 |`CMFCPropertySheet::PropSheetLook_OneNoteTabs`|Microsoft OneNote 스타일에서 각 속성 페이지에 대 한 탭을 표시 합니다. 프레임 워크는 속성 시트의 위쪽에 탭을 표시 하 고, 한 행에 맞는 탭이 더 있으면 스크롤 화살표를 표시 합니다.|
 |`CMFCPropertySheet::PropSheetLook_List`|속성 시트의 왼쪽에 목록을 표시 합니다. 각 목록 항목은 속성 페이지에 해당 합니다. 목록의 표시 영역에 맞는 것 보다 많은 목록 항목이 있는 경우 프레임 워크는 스크롤 화살표를 표시 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

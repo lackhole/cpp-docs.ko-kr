@@ -1,9 +1,9 @@
 ---
 title: _CIlog10
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CIlog10
-apilocation:
+api_location:
 - msvcr100.dll
 - msvcr120.dll
 - msvcr80.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcrt.dll
 - msvcr110.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CIlog10
 - _CIlog10
@@ -20,14 +23,14 @@ helpviewer_keywords:
 - _CIlog10 intrinsic
 - CIlog10 intrinsic
 ms.assetid: 05d7fcaa-3cff-4cc5-8d44-015e7cacba24
-ms.openlocfilehash: 771ed103c8ab0fe29061086923189cc90eb047d9
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: c99fdab859acf280afc8a595696a17b2d03a47e4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746333"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944608"
 ---
-# <a name="cilog10"></a>_CIlog10
+# <a name="_cilog10"></a>_CIlog10
 
 스택의 상위 값에 대해 `log10` 작업을 수행합니다.
 
@@ -37,7 +40,7 @@ ms.locfileid: "57746333"
 void __cdecl _CIlog10();
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 버전의 `log10` 함수는 컴파일러가 이해할 수 있는 특별한 호출 규칙을 가집니다. 이 함수는 복사본이 생성되지 않도록 하며 레지스터 할당을 돕기 때문에 실행 속도를 높입니다.
 

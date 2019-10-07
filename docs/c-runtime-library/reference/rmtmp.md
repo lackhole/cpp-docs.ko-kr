@@ -1,9 +1,9 @@
 ---
 title: _rmtmp
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _rmtmp
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - rmtmp
 - _rmtmp
@@ -27,14 +30,14 @@ helpviewer_keywords:
 - files [C++], removing
 - temporary files [C++], removing
 ms.assetid: 7419501e-2587-4f2a-b469-0dca07f84736
-ms.openlocfilehash: bf4f2cff48e8660682fc8a00d10d9a1fe960a6a7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 314399cf174974132a3635631162a7ffa89342c4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357425"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949157"
 ---
-# <a name="rmtmp"></a>_rmtmp
+# <a name="_rmtmp"></a>_rmtmp
 
 임시 파일을 제거합니다.
 
@@ -47,11 +50,11 @@ int _rmtmp( void );
 
 ## <a name="return-value"></a>반환 값
 
-**_rmtmp** 닫히고 삭제 된 임시 파일의 수를 반환 합니다.
+**_rmtmp** 는 닫히고 삭제 된 임시 파일의 수를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_rmtmp** 함수는 현재 디렉터리에 있는 모든 임시 파일을 정리 합니다. 함수에서 만든 파일에만 제거 **tmpfile**; 임시 파일을 만든 동일한 디렉터리에만 사용 합니다.
+**_Rmtmp** 함수는 현재 디렉터리에 있는 모든 임시 파일을 정리 합니다. 함수는 **tmpfile**에 의해 생성 된 파일만 제거 합니다. 임시 파일을 만든 디렉터리와 동일한 디렉터리 에서만 사용 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

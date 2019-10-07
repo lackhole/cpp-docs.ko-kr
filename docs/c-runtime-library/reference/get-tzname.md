@@ -1,9 +1,9 @@
 ---
 title: _get_tzname
 ms.date: 10/22/2018
-apiname:
+api_name:
 - _get_tzname
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _get_tzname
 - get_tzname
@@ -24,14 +27,14 @@ helpviewer_keywords:
 - time zones
 - get_tzname function
 ms.assetid: df0065ff-095f-4237-832c-2fe9ab913875
-ms.openlocfilehash: c173832efb866eed133a908b5f2b72266fd3798a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f86a4997c328e86597e3bad8a7f7a3a5f5f50b6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332042"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955621"
 ---
-# <a name="gettzname"></a>_get_tzname
+# <a name="_get_tzname"></a>_get_tzname
 
 표준 시간대 이름 또는 일광 표준 시간대 이름(DST)의 문자열 표현을 검색합니다.
 
@@ -49,34 +52,34 @@ errno_t _get_tzname(
 ### <a name="parameters"></a>매개 변수
 
 *pReturnValue*<br/>
-문자열 길이 *표준 시간대 이름* null 종결자를 포함 합니다.
+Null 종결자를 포함 하는 *Timezonename* 의 문자열 길이입니다.
 
 *timeZoneName*<br/>
-에 따라 표준 시간대 이름 또는 일광 표준 시간대 이름 (DST)의 표현에 대 한 문자에 대 한 문자열의 주소 *인덱스*합니다.
+*인덱스*에 따라 표준 시간대 이름 또는 일광 표준 시간대 이름 (DST) 표현에 대 한 문자열의 주소입니다.
 
 *sizeInBytes*<br/>
-크기를 *표준 시간대 이름* 바이트 문자열입니다.
+*Timezonename* 문자열의 크기 (바이트)입니다.
 
 *index*<br/>
 검색할 두 표준 시간대 이름 중 하나의 인덱스입니다.
 
-|*index*|내용을 *표준 시간대 이름*|*표준 시간대 이름* 기본값|
+|*index*|*Timezonename* 의 내용|*Timezonename* 기본값|
 |-|-|-|
 |0|표준 시간대 이름|"PST"|
 |1|일광 표준 시간대 이름|"PDT"|
-|> 1 또는 < 0|**errno** 로 **EINVAL**|수정 안 됨|
+|> 1 또는 < 0|**errno** 를 **EINVAL** 로 설정|수정 안 됨|
 
 런타임에 값을 명시적으로 변경하는 경우가 아니면 기본값은 각각 "PST" 및 "PDT"입니다.
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 0이 고, 그렇지는 **errno** 값을 입력 합니다.
+성공 하면 0이 고, 그렇지 않으면 **errno** 형식 값입니다.
 
-이면 *표준 시간대 이름* 됩니다 **NULL**, 또는 *sizeInBytes* 0 또는 0 (하지만 둘 다가 아닌) 보다 작으면는 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **EINVAL**합니다.
+*Timezonename* 이 **NULL**이거나 *sizeinbytes* 가 0 이거나 0 보다 작은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*pReturnValue*|*timeZoneName*|*sizeInBytes*|*index*|반환 값|내용을 *표준 시간대 이름*|
+|*pReturnValue*|*timeZoneName*|*sizeInBytes*|*index*|반환 값|*Timezonename* 의 내용|
 |--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
 |TZ 이름의 크기|**NULL**|0|0 또는 1|0|수정 안 됨|
 |TZ 이름의 크기|any|> 0|0 또는 1|0|TZ 이름|
@@ -86,11 +89,11 @@ errno_t _get_tzname(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_get_tzname** 함수는 문자열 표현을 현재 표준 시간대 이름 또는 일광 표준 시간대 이름 (DST)의 주소로 검색 *표준 시간대 이름* 따라는 인덱스 값에서 문자열의 크기와 함께 *pReturnValue*합니다. 하는 경우 *표준 시간대 이름* 됩니다 **NULL** 하 고 *sizeInBytes* 0으로 지정된 된 표준 시간대를 포함 하는 데 필요한 문자열의 크기 이며 에바이트에서종결null이반환*pReturnValue*합니다. 인덱스 값을 표준 시간대에 대해 0 또는 일광 표준 시간대는 1 이어야 합니다. 다른 모든 값 *인덱스* 가 지정 되지 않은 결과입니다.
+**_Get_tzname** 함수는 현재 표준 시간대 이름 또는 일광 표준 시간대 이름 (DST)의 문자열 표현을 인덱스 값에 따라 *timezonename* 의 주소로 검색 하 고,에 있는 문자열의 크기를 검색 합니다. *pReturnValue*. *Timezonename* 이 **NULL** 이 고 *sizeinbytes* 가 0 인 경우에는 지정 된 표준 시간대를 보유 하는 데 필요한 문자열의 크기와 *pReturnValue*에서 종료 NULL을 바이트 단위로 반환 합니다. 인덱스 값은 표준 시간대의 경우 0 또는 일광 표준 시간대의 경우 1 이어야 합니다. *인덱스* 의 다른 값은 결과를 결정 하지 않습니다.
 
 ## <a name="example"></a>예제
 
-이 샘플에서는 호출 **_get_tzname** 필요한 버퍼 크기를 현재 일광 표준 시간대 이름에 표시할 호출 해당 크기의 버퍼를 할당 **_get_tzname** 다시 이름을 로드 하는 를 버퍼링 하 고 콘솔에 출력 합니다.
+이 샘플에서는 **_get_tzname** 를 호출 하 여 현재 일광 표준 시간대 이름을 표시 하는 데 필요한 버퍼 크기를 가져오고, 해당 크기의 버퍼를 할당 하 고, **_get_tzname** 를 다시 호출 하 여 버퍼에 이름을 로드 하 고 콘솔에 출력 합니다.
 
 ```C
 // crt_get_tzname.c

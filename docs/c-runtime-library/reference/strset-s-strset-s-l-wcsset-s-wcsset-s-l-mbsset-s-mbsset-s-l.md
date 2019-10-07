@@ -1,14 +1,14 @@
 ---
 title: _strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wcsset_s
 - _wcsset_s_l
 - _strset_s
 - _mbsset_s_l
 - _strset_s_l
 - _mbsset_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -22,7 +22,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _wcsset_s_l
 - strset_s
@@ -58,19 +61,19 @@ helpviewer_keywords:
 - _tcsset_s function
 - mbsset_s function
 ms.assetid: dceb2909-6b41-4792-acb7-888e45bb8b35
-ms.openlocfilehash: 031678f75dacd8112ac897053066216e7b3b2450
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7d959a1b8856fda6abc17c77e0c0f8c0679883a7
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368801"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946786"
 ---
-# <a name="strsets-strsetsl-wcssets-wcssetsl-mbssets-mbssetsl"></a>_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l
+# <a name="_strset_s-_strset_s_l-_wcsset_s-_wcsset_s_l-_mbsset_s-_mbsset_s_l"></a>_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l
 
 문자열의 문자를 특정 문자로 설정합니다. 이러한 버전의 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 향상된 보안 기능이 포함되어 있습니다.
 
 > [!IMPORTANT]
-> **_mbsset_s** 하 고 **_mbsset_s_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsset_s** 및 **_mbsset_s_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -116,7 +119,7 @@ errno_t _mbsset_s_l(
 설정할 Null 종료 문자열입니다.
 
 *numberOfElements*<br/>
-크기를 *str* 버퍼입니다.
+*Str* 버퍼의 크기입니다.
 
 *c*<br/>
 문자 설정입니다.
@@ -128,11 +131,11 @@ errno_t _mbsset_s_l(
 
 정상적으로 실행되는 경우 0이고 그렇지 않으면 오류 코드입니다.
 
-이러한 함수는 해당 인수의 유효성을 검사합니다. 하는 경우 *str* 가 null 포인터인 경우 또는 *numberOfElements* 인수는 0 보다 작거나 또는 전달 된 블록이 null로 종료 되었습니다 다음 에설명된대로잘못된매개변수처리기가호출[ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **EINVAL** 설정 **errno** 하 **EINVAL**합니다.
+이러한 함수는 해당 인수의 유효성을 검사합니다. *Str* 가 null 포인터 이거나 *numberofelements* 인수가 0 보다 작거나 같거나, 전달 된 블록이 null로 끝나지 않은 경우에는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 **EINVAL** 를 반환 하 고 **errno** 를 **EINVAL**로 설정 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_strset_s** 의 모든 문자를 설정 하는 함수 *str* 에 *c* (변환할 **char**), null 종결 문자를 제외 하 고 있습니다. **_wcsset_s** 하 고 **_mbsset_s** 와이드 문자 및 멀티 바이트 문자 버전입니다 **_strset_s**합니다. 인수 및 반환 값의 데이터 형식은 버전에 따라 달라집니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**_Strset_s** 함수는 null 종결 문자를 제외 하 고 *str* 의 모든 문자를 *c* ( **char**로 변환)로 설정 합니다. **_wcsset_s** 및 **_mbsset_s** 는 **_strset_s**의 와이드 문자 및 멀티 바이트 문자 버전입니다. 인수 및 반환 값의 데이터 형식은 버전에 따라 달라집니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 

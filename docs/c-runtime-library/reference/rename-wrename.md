@@ -1,10 +1,10 @@
 ---
 title: rename, _wrename
 ms.date: 11/04/2016
-apiname:
+api_name:
 - rename
 - _wrename
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _wrename
 - _trename
@@ -34,14 +37,14 @@ helpviewer_keywords:
 - names [C++], changing directory
 - renaming files
 ms.assetid: 9f0a6103-26a2-4dda-b14b-79a48946266a
-ms.openlocfilehash: 3536bfb6c38c99a8d6d943102fb9303dd4d85b7b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d3d88c46fc055fb173264b40a56c755c360c7adf
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357502"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949297"
 ---
-# <a name="rename-wrename"></a>rename, _wrename
+# <a name="rename-_wrename"></a>rename, _wrename
 
 파일 또는 디렉터리의 이름을 바꿉니다.
 
@@ -68,7 +71,7 @@ int _wrename(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 정상적으로 실행되는 경우 0을 반환합니다. 오류 발생 시 함수는 0이 아닌 값을 반환 하 고 설정 **errno** 다음 값 중 하나에:
+이러한 각 함수는 정상적으로 실행되는 경우 0을 반환합니다. 오류가 발생 하면 함수는 0이 아닌 값을 반환 하 고 **errno** 을 다음 값 중 하나로 설정 합니다.
 
 |errno 값|조건|
 |-|-|
@@ -82,7 +85,7 @@ int _wrename(
 
 **rename** 함수는 *oldname*으로 지정된 파일이나 디렉터리의 이름을 *newname*으로 지정된 이름으로 바꿉니다. 이전 이름은 기존 파일이나 디렉터리의 경로여야 합니다. 새 이름은 기존 파일 또는 디렉터리의 이름이 아니어야 합니다. **rename**을 사용하면 *newname* 인수에 다른 경로를 제공하여 디렉터리나 디바이스 간에 파일을 이동할 수 있습니다. 그러나 **rename**을 사용하여 디렉터리를 이동할 수는 없습니다. 디렉터리는 이름을 바꿀 수는 있지만 이동할 수는 없습니다.
 
-**_wrename** 의 와이드 문자 버전이 **_rename**;에 대 한 인수 **_wrename** 는 와이드 문자 문자열입니다. **_wrename** 하 고 **_rename** 동일 하 게 작동 합니다.
+**_awrename** 은 **(는) _rename**의 와이드 문자 버전입니다. **_wa\_we** 에 대 한 인수는 와이드 문자 문자열입니다. **_wrename** 및 **_rename** 은 동일 하 게 작동 하지 않습니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

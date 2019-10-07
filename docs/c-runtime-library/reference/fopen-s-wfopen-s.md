@@ -1,10 +1,10 @@
 ---
 title: fopen_s, _wfopen_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wfopen_s
 - fopen_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fopen_s
 - _tfopen_s
@@ -33,14 +36,14 @@ helpviewer_keywords:
 - files [C++], opening
 - Unicode [C++], files
 ms.assetid: c534857e-39ee-4a3f-bd26-dfe551ac96c3
-ms.openlocfilehash: e4ccce3c4a4fe1e327b7830ef03f6ab69f2d7814
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: 2a400918a171c0009e40be8a20b814e8ded336ce
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376222"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957131"
 ---
-# <a name="fopens-wfopens"></a>fopen_s, _wfopen_s
+# <a name="fopen_s-_wfopen_s"></a>fopen_s, _wfopen_s
 
 파일을 엽니다. 이러한 버전의 [fopen, _wfopen](fopen-wfopen.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 포함되어 있습니다.
 
@@ -67,7 +70,7 @@ errno_t _wfopen_s(
 *filename*<br/>
 파일 이름입니다.
 
-*모드*<br/>
+*mode*<br/>
 허용되는 액세스 형식입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -76,7 +79,7 @@ errno_t _wfopen_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*pFile*|*filename*|*모드*|반환 값|*Pfile* 의 내용|
+|*pFile*|*filename*|*mode*|반환 값|*Pfile* 의 내용|
 |-------------|----------------|------------|------------------|------------------------|
 |**NULL**|any|any|**EINVAL**|변경 안 됨|
 |any|**NULL**|any|**EINVAL**|변경 안 됨|
@@ -129,7 +132,7 @@ errno_t _wfopen_s(
 
 문자열 *모드* 는 다음과 같이 파일에 대해 요청 되는 액세스의 종류를 지정 합니다.
 
-|*모드*|액세스|
+|*mode*|액세스|
 |-|-|
 | **"r"** | 읽기 위해 엽니다. 파일이 없거나 찾을 수 없는 경우 **fopen_s** 호출이 실패 합니다. |
 | **"w"** | 쓰기 위해 빈 파일을 엽니다. 지정한 파일이 있으면 이 파일의 내용은 삭제됩니다. |

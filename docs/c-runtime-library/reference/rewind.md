@@ -1,9 +1,9 @@
 ---
 title: rewind
 ms.date: 11/04/2016
-apiname:
+api_name:
 - rewind
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - rewind
 helpviewer_keywords:
@@ -24,12 +27,12 @@ helpviewer_keywords:
 - file pointers [C++], repositioning
 - file pointers [C++]
 ms.assetid: 1a460ce1-28d8-4b5e-83a6-633dca29c28a
-ms.openlocfilehash: d2e50c34d48b5a9570691a8a702cd05c1a48242d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 084a6f3d7e817498bffb510d865f4a32021e4ce8
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357566"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949282"
 ---
 # <a name="rewind"></a>rewind
 
@@ -50,15 +53,15 @@ void rewind(
 
 ## <a name="remarks"></a>설명
 
-합니다 **rewind** 함수에 연결 된 파일 포인터 위치를 변경 *스트림* 파일의 시작 부분에 있습니다. **rewind**에 대한 호출은 다음과 유사합니다.
+**되감기** 함수는 *스트림과* 연결 된 파일 포인터의 위치를 파일의 시작 부분으로 다시 바꿉니다. **rewind**에 대한 호출은 다음과 유사합니다.
 
-**(void) fseek(** _stream_**, 0L, SEEK_SET );**
+**(void) fseek(** _stream_ **, 0L, SEEK_SET );**
 
-그러나와 달리 [fseek](fseek-fseeki64.md)하십시오 **rewind** 스트림에 대 한 오류 표시기는 물론 파일 끝 표시기도 지웁니다. 또한 달리 [fseek](fseek-fseeki64.md)를 **rewind** 포인터가 성공적으로 이동 하는지 여부를 나타내는 값을 반환 하지 않습니다.
+그러나 [fseek](fseek-fseeki64.md)와는 달리 **되감기** 는 파일의 끝 표시기 뿐만 아니라 스트림의 오류 표시기를 지웁니다. 또한 [fseek](fseek-fseeki64.md)와 달리 **되감기** 는 포인터가 성공적으로 이동 했는지 여부를 나타내는 값을 반환 하지 않습니다.
 
-사용 하 여 키보드 버퍼를 지우려면 **rewind** 스트림을 사용 하 여 **stdin**, 기본적으로 키보드와 연결 되는 합니다.
+키보드 버퍼를 지우려면 기본적으로 키보드와 연결 되는 stream **stdin**과 함께 **되감기** 를 사용 합니다.
 
-스트림이 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우이 함수를 반환 하 고 **errno** 로 설정 된 **EINVAL**합니다.
+Stream이 **NULL** 포인터인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는를 반환 하 고 **errno** 는 **EINVAL**로 설정 됩니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 

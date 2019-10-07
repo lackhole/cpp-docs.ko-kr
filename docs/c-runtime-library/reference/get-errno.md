@@ -1,9 +1,9 @@
 ---
 title: _get_errno
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_errno
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _get_errno
 helpviewer_keywords:
@@ -23,14 +26,14 @@ helpviewer_keywords:
 - errno global variable
 - _get_errno function
 ms.assetid: b3fd5ebc-f41b-4314-a2f4-2f2d79d6e740
-ms.openlocfilehash: fb0897451c72020cd72a821ec9928ed655d84b7e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d60f7ea7a36b4a8c4be678d26c0b0c59e5ec534
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287735"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955969"
 ---
-# <a name="geterrno"></a>_get_errno
+# <a name="_get_errno"></a>_get_errno
 
 errno 전역 변수의 현재 값을 가져옵니다.
 
@@ -45,15 +48,15 @@ errno_t _get_errno(
 ### <a name="parameters"></a>매개 변수
 
 *pValue*<br/>
-현재 값으로 채워지는 정수에 대 한 포인터를 **errno** 변수입니다.
+**Errno** 변수의 현재 값으로 채워질 정수에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-성공하는 경우 0을 반환하고, 실패하는 경우 오류 코드를 반환합니다. 하는 경우 *pValue* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **EINVAL**합니다.
+성공하는 경우 0을 반환하고, 실패하는 경우 오류 코드를 반환합니다. *Pvalue* 가 **NULL**인 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우이 함수는 **errno** 를 **EINVAL** 로 설정 하 고 **EINVAL**를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-가능한 값 **errno** Errno.h에 정의 됩니다. [errno 상수](../../c-runtime-library/errno-constants.md)를 참조하세요.
+**Errno** 의 가능한 값은 errno에 정의 되어 있습니다. [errno 상수](../../c-runtime-library/errno-constants.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 

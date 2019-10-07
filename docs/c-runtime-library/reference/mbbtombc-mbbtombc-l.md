@@ -1,10 +1,10 @@
 ---
 title: _mbbtombc, _mbbtombc_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbbtombc_l
 - _mbbtombc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _mbbtombc_l
 - _mbbtombc
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - _mbbtombc_l function
 - _mbbtombc function
 ms.assetid: 78593389-b0fc-43b6-8c1f-2a6bf702d64e
-ms.openlocfilehash: 63b5dd33399201cd6ead7dbd1f710c8bebe53c69
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 244e603a3234b755d19a1c1d0738e8c22d74b8e2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156910"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952729"
 ---
-# <a name="mbbtombc-mbbtombcl"></a>_mbbtombc, _mbbtombc_l
+# <a name="_mbbtombc-_mbbtombc_l"></a>_mbbtombc, _mbbtombc_l
 
 싱글바이트 멀티바이트 문자를 해당 더블바이트 멀티바이트 문자로 변환합니다.
 
@@ -64,15 +67,15 @@ unsigned int _mbbtombc_l(
 
 ## <a name="return-value"></a>반환 값
 
-하는 경우 **_mbbtombc** 성공적으로 변환 *c*, 멀티 바이트 문자를 반환, 그렇지 않으면 반환 *c*합니다.
+**_Mbbtombc** 가 *c*를 성공적으로 변환 하는 경우 멀티 바이트 문자를 반환 합니다. 그렇지 않으면 *c*를 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **_mbbtombc** 함수는 지정 된 싱글바이트 멀티 바이트 문자를 해당 더블 바이트 멀티 바이트 문자로 변환 합니다. 문자 변환할 0xDF 0x20-0x7E 또는 0xA1-사이 여야 합니다.
+**_Mbbtombc** 함수는 지정 된 싱글바이트 멀티 바이트 문자를 해당 더블 바이트 멀티 바이트 문자로 변환 합니다. 문자는 변환 될 0x20-0x7E 또는 0xA1-0Xa1 범위 내에 있어야 합니다.
 
-출력 값의 설정이 적용 됩니다는 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 내용은 합니다. 이 함수의 버전은 동일 한다는 **_mbbtombc** 이 로캘 종속 동작에 현재 로캘을 사용 하 고 **_mbbtombc_l** 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 영향을 받습니다. 자세한 내용은 [setlocale, _wsetlocale을](setlocale-wsetlocale.md) 참조 하세요. **_Mbbtombc** 는이 로캘 종속 동작에 현재 로캘을 사용 하 고 **_mbbtombc_l** 는 전달 된 로캘 매개 변수를 대신 사용 한다는 점을 제외 하 고이 함수의 버전은 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이전 버전에서는 **_mbbtombc** 이름이 **hantozen**합니다. 새 코드를 사용 하 여 **_mbbtombc**합니다.
+이전 버전에서 **_mbbtombc** 의 이름은 **hantozen**입니다. 새 코드의 경우 **_mbbtombc**를 사용 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

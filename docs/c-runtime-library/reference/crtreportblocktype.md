@@ -1,9 +1,9 @@
 ---
 title: _CrtReportBlockType
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtReportBlockType
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _CrtReportBlockType
 - CrtReportBlockType
@@ -26,14 +29,14 @@ helpviewer_keywords:
 - _BLOCK_SUBTYPE macro
 - BLOCK_TYPE macro
 ms.assetid: 0f4b9da7-bebb-4956-9541-b2581640ec6b
-ms.openlocfilehash: 186c63ce1619d6427436ff1458ca551e464d0bce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd50de1d1ade1d83b97bc465ff7e4c73b52fba2d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347417"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942332"
 ---
-# <a name="crtreportblocktype"></a>_CrtReportBlockType
+# <a name="_crtreportblocktype"></a>_CrtReportBlockType
 
 지정된 디버그 힙 블록 포인터와 연결된 블록 형식/하위 형식을 반환합니다.
 
@@ -52,11 +55,11 @@ int _CrtReportBlockType(
 
 ## <a name="return-value"></a>반환 값
 
-유효한 디버그 힙 포인터를 전달 하는 경우는 **_CrtReportBlockType** 형태로 블록 형식과 하위를 반환 하는 함수는 **int**합니다. 잘못된 포인터를 전달한 경우 함수는 -1을 반환합니다.
+유효한 디버그 힙 포인터가 전달 되 면 **_CrtReportBlockType** 함수는 **int**형식의 블록 형식과 하위 형식을 반환 합니다. 잘못된 포인터를 전달한 경우 함수는 -1을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-유형 및 하위 반환한 추출할 **_CrtReportBlockType**, 매크로 사용 하 여 **_BLOCK_TYPE** 및 **_BLOCK_SUBTYPE** (둘 다 Crtdbg.h에 정의 된) 반환 값에 합니다.
+**_CrtReportBlockType**에서 반환 하는 형식 및 하위 형식을 추출 하려면 반환 값에 **_BLOCK_TYPE** 및 **_block_ubm** (모두 crtdbg.h에 정의 됨)을 사용 합니다.
 
 할당 블록 형식과 이러한 형식의 사용 방법에 대한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
 

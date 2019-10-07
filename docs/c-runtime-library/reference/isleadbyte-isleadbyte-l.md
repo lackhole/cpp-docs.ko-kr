@@ -1,10 +1,10 @@
 ---
 title: isleadbyte, _isleadbyte_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _isleadbyte_l
 - isleadbyte
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _istleadbyte
 - _isleadbyte_l
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - istleadbyte function
 - isleadbyte function
 ms.assetid: 3b2bcf09-d82b-4803-9e80-59d04942802a
-ms.openlocfilehash: 1a3f427e49e53bb553020da100b0e713350fab3f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6b853dcea82c2afea91b2e0545d253786c88ae5e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286920"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954308"
 ---
-# <a name="isleadbyte-isleadbytel"></a>isleadbyte, _isleadbyte_l
+# <a name="isleadbyte-_isleadbyte_l"></a>isleadbyte, _isleadbyte_l
 
 문자가 멀티바이트 문자의 선행 바이트인지 여부를 결정합니다.
 
@@ -56,15 +59,15 @@ int _isleadbyte_l( int c );
 
 ## <a name="return-value"></a>반환 값
 
-**isleadbyte** 없으면 인수 0 또는 테스트 조건을 충족 하는 경우 0이 아닌 값을 반환 합니다. 문자 집합 (SBCS) 로캘에서 싱글바이트 및 "C" 로캘에서 **isleadbyte** 항상 0을 반환 합니다.
+**isleadbyte** 는 인수가 테스트 조건을 충족 하는 경우 0이 아닌 값을 반환 하 고 그렇지 않으면 0을 반환 합니다. "C" 로캘과 SBCS (싱글바이트 문자 집합) 로캘에서 **isleadbyte** 는 항상 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-합니다 **isleadbyte** 매크로 인수가 멀티 바이트 문자의 첫 번째 바이트 이면 0이 아닌 값을 반환 합니다. **isleadbyte** -1에서 모든 정수 인수에 대 한 의미 있는 결과 생성 (**EOF**)를 **UCHAR_MAX** (0xFF)를 포함 합니다.
+**Isleadbyte** 매크로는 인수가 멀티 바이트 문자의 첫 번째 바이트인 경우 0이 아닌 값을 반환 합니다. **isleadbyte** 는-1 (**EOF**)에서 **UCHAR_MAX** (0xff) (포함) 사이의 모든 정수 인수에 대해 의미 있는 결과를 생성 합니다.
 
-예상된 인수 형식은 **isleadbyte** 됩니다 **int**부호 있는 문자를 전달 하는 경우 컴파일러가 부호 확장을 예측할 수 없는 결과 생성 하 여 정수로 것으로 변환할 수 있습니다.
+**Isleadbyte** 의 예상 인수 형식은 **int**입니다. 부호 있는 문자가 전달 되는 경우 컴파일러는 부호 확장을 통해 정수로 변환 하 여 예측할 수 없는 결과를 생성 합니다.
 
-버전을 사용 하 여이 함수는 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다.
+**_L** 접미사가 있는이 함수의 버전은 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 

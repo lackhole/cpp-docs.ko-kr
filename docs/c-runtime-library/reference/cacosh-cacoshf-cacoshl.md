@@ -1,11 +1,11 @@
 ---
 title: cacosh, cacoshf, cacoshl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - cacosh
 - cacoshf
 - cacoshl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cacosh
 - cacoshf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - cacoshf function
 - cacoshl function
 ms.assetid: 83fd05eb-3587-4741-9be6-589a830a1703
-ms.openlocfilehash: aa31dfa1b29eda18d34528fc8aa9544e58a5a082
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 05ba0b37540e9f1b2dbb4d255e0fa033b54762d1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340731"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943401"
 ---
 # <a name="cacosh-cacoshf-cacoshl"></a>cacosh, cacoshf, cacoshl
 
@@ -68,11 +71,11 @@ _Lcomplex cacoshl(
 
 ## <a name="return-value"></a>반환 값
 
-역 쌍 곡 코사인 *z*, 라디안에서입니다. 결과 제한이 없고 음수가 아닌 간격에 실수 축을 따라 [-i π, + i π] 허수 축을 따라 합니다.
+*Z*의 역 하이퍼볼릭 코사인 (라디안)입니다. 결과는 실수 축을 따라 제한이 없으며 음수가 아니고 허수 축을 따라 [-iπ, + iπ] 간격에 있습니다.
 
 ## <a name="remarks"></a>설명
 
-때문에 C++ 오버 로드를 사용 하면 오버 로드를 호출할 수 있습니다 **cacosh** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **cacosh** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
+는 C++ 오버 로드를 허용 하므로 **_Fcomplex** 및 **_fcomplex** 값을 사용 하 고 반환 하는 **cacosh** 의 오버 로드를 호출할 수 있습니다. C 프로그램에서 **cacosh** 는 항상 **_dcomplex** 값을 사용 하 고 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,10 +1,10 @@
 ---
 title: remove, _wremove
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wremove
 - remove
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - remove
 - _wremove
@@ -30,14 +33,14 @@ helpviewer_keywords:
 - wremove function
 - remove function
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-ms.openlocfilehash: 05f1c5b6760520e5a982777faa903b3c5116ad05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2ceedcf9d3cc2b26a8d91ca923f81f0ce539b64a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357698"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949429"
 ---
-# <a name="remove-wremove"></a>remove, _wremove
+# <a name="remove-_wremove"></a>remove, _wremove
 
 파일을 삭제합니다.
 
@@ -59,13 +62,13 @@ int _wremove(
 
 ## <a name="return-value"></a>반환 값
 
-파일이 삭제되면 이러한 함수 각각이 0을 반환합니다. 그렇지 않으면-1을 반환 하 고 설정 **errno** 하거나 **EACCES** 경로가 지정 읽기 전용 파일을 나타내기 위해 디렉터리를 지정 하거나 파일이 열려 또는 **ENOENT** 파일 이름 또는 경로 찾지 못했음을 나타냅니다.
+파일이 삭제되면 이러한 함수 각각이 0을 반환합니다. 그렇지 않으면-1을 반환 하 고 **errno** 를 **eacces** 로 설정 하 여 경로가 읽기 전용 파일을 지정 하거나, 디렉터리를 지정 하거나, 파일이 열려 있거나, **enoent (** 를 지정 하 여 파일 이름 또는 경로를 찾을 수 없음을 나타냅니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은  [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**remove** 함수는 *path*로 지정된 파일을 삭제합니다. **_wremove** 의 와이드 문자 버전이 **제거 (_r)**; *경로* 인수 **_wremove** 는 와이드 문자 문자열입니다. **_wremove** 하 고 **제거 (_r)** 동일 하 게 작동 합니다. 삭제하기 전에 파일에 대한 모든 핸들을 닫아야 합니다.
+**remove** 함수는 *path*로 지정된 파일을 삭제합니다. **_wremove** 는 **_remove**의 와이드 문자 버전입니다. **_wremove** 의 *path* 인수는 와이드 문자열입니다. **_wremove** 및 **_remove** 는 동일 하 게 작동 하지 않습니다. 삭제하기 전에 파일에 대한 모든 핸들을 닫아야 합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -103,7 +106,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crtremovetxt"></a>입력: crt_remove.txt
+### <a name="input-crt_removetxt"></a>입력: crt_remove.txt
 
 ```Input
 This file will be deleted.

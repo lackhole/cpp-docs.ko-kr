@@ -95,7 +95,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68448793"
 ---
-# <a name="hashmap-class"></a>hash_map 클래스
+# <a name="hash_map-class"></a>hash_map 클래스
 
 > [!NOTE]
 > 이 API는 더 이상 사용되지 않습니다. [unordered_map 클래스](../standard-library/unordered-map-class.md)를 대신 사용하는 것이 좋습니다.
@@ -897,7 +897,7 @@ emplace(
 
 `emplace` 멤버 함수는 해당 부울 구성 요소가 삽입이 수행된 경우 true를 반환하고, 해당 키가 순서 지정 시 동일한 값을 가지고 해당 반복기 구성 요소에서 새 요소가 삽입되었거나 요소가 이미 있었던 주소를 반환하는 요소가 `hash_map`에 이미 들어 있었던 경우에는 false를 반환합니다.
 
-이 구성원 함수가 반환하는 `pr` 쌍의 반복기 구성 요소에 액세스하려면 `pr.first`를 사용하고 해당 구성 요소를 역참조하려면 `*(pr.first)`를 사용합니다. 이 멤버 함수가  반환 하는 쌍 `pr` 의 bool 구성 요소에 액세스 하려면를 `pr.second`사용 하 고이를 역참조 하려면 `*(pr.second)`를 사용 합니다.
+이 구성원 함수가 반환하는 `pr` 쌍의 반복기 구성 요소에 액세스하려면 `pr.first`를 사용하고 해당 구성 요소를 역참조하려면 `*(pr.first)`를 사용합니다. 이 멤버 함수가 반환 하는 쌍 `pr` 의 bool 구성 요소에 액세스 하려면를 `pr.second`사용 하 고이를 역참조 하려면 `*(pr.second)`를 사용 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1602,7 +1602,7 @@ iterator insert(
 
 첫 번째 `insert` 멤버 함수는 부울 구성 요소가 삽입이 수행 된 경우 true를 반환 하 고, hash_map에 해당 키에 동일한 값이 있는 요소가 이미 포함 되어 있고 반복기 구성 요소가 새 요소가 삽입 되었거나 요소가 이미 있는 위치에 대 한 주소입니다.
 
-이 멤버 함수가 반환하는 `pr` 쌍의 반복기 구성 요소에 액세스하려면 `pr`. **first**를 사용하고 이를 역참조하려면 \*(`pr`. **first**)를 사용합니다. 이 멤버 함수가  반환 하는 쌍 `pr` 의 bool 구성 요소에 액세스 하려면를 `pr`사용 합니다. **second**를 사용하고 이를 역참조하려면 \*( `pr`. **second**)를 사용합니다.
+이 멤버 함수가 반환하는 `pr` 쌍의 반복기 구성 요소에 액세스하려면 `pr`. **first**를 사용하고 이를 역참조하려면 \*(`pr`. **first**)를 사용합니다. 이 멤버 함수가 반환 하는 쌍 `pr` 의 bool 구성 요소에 액세스 하려면를 `pr`사용 합니다. **second**를 사용하고 이를 역참조하려면 \*( `pr`. **second**)를 사용합니다.
 
 두 번째 `insert` 멤버 함수 힌트 버전은 새 요소가 hash_map에 삽입 된 위치를 가리키는 반복기를 반환 합니다.
 
@@ -1747,7 +1747,7 @@ Multimap의 요소를 가리키는 **반복기** `Iter` 를 역참조 하려면 
 
 ### <a name="example"></a>예제
 
-을 선언 하 [](#begin) 고 사용 `iterator`하는 방법에 대 한 예제는 begin의 예제를 참조 하세요.
+`iterator`을 선언하고 사용하는 방법에 대한 예제는 [begin](#begin)의 예제를 참조하세요.
 
 ## <a name="key_comp"></a>  hash_map::key_comp
 
@@ -2122,7 +2122,7 @@ hash_map& operator=(hash_map&& right);
 
 ### <a name="remarks"></a>설명
 
-에서 `hash_map`기존 요소를 `operator=` 지운 후에는의 `hash_map` *내용을로 복사* 하거나 이동 합니다.
+에서 `hash_map`기존 요소를 `operator=` 지운 *후에는의* `hash_map`내용을로 복사 하거나 이동 합니다.
 
 ### <a name="example"></a>예제
 
@@ -2677,7 +2677,7 @@ hash_map이 요소의 순서를 지정하는 데 사용하는 비교 함수 개�
 
 ### <a name="remarks"></a>설명
 
-Hash_map *m*의 경우 두 요소 *e1* (*k1*, *d1*) 및 *e2* (*k2*, *d2*)는 [value_type](#value_type)형식의 개체입니다. 여기서 *k1* 및 *k2* 은 [key_type](#key_type) 및 d1 형식의 키입니다. 그리고 *d2* 는 `m.key_comp()(k1, k2)` [mapped_type 형식의](#mapped_type)데이터 이며, 는와동일합니다.`m.value_comp()(e1, e2)` 저장된 개체는 멤버 함수
+Hash_map *m*의 경우 두 요소 *e1* (*k1*, *d1*) 및 *e2* (*k2*, *d2*)는 [value_type](#value_type)형식의 개체입니다. 여기서 *k1* 및 *k2* 은 [key_type](#key_type) 및 d1 형식의 키입니다.그리고 *d2* 는 `m.key_comp()(k1, k2)` [mapped_type 형식의](#mapped_type)데이터 이며, 는와동일합니다.`m.value_comp()(e1, e2)` 저장된 개체는 멤버 함수
 
 `bool operator(value_type& left, value_type& right);`
 

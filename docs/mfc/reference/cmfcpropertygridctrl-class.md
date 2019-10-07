@@ -151,10 +151,10 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
 ms.openlocfilehash: 20b3bafcdbaf02b0f7e40f0092d7f6661855114d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69505167"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl 클래스
@@ -173,7 +173,7 @@ class CMFCPropertyGridCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl)|`CMFCPropertyGridCtrl` 개체를 생성합니다.|
 |`CMFCPropertyGridCtrl::~CMFCPropertyGridCtrl`|소멸자|
@@ -251,9 +251,9 @@ class CMFCPropertyGridCtrl : public CWnd
 |[CMFCPropertyGridCtrl::SetVSDotNetLook](#setvsdotnetlook)|속성 표 컨트롤의 모양을 VS .NET에 사용 되는 스타일로 설정 합니다.|
 |[CMFCPropertyGridCtrl::UpdateColor](#updatecolor)|현재 선택 된 색 속성의 색 값을 설정 합니다.|
 
-### <a name="protected-methods"></a>Protected 메서드
+### <a name="protected-methods"></a>보호된 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CMFCPropertyGridCtrl::AdjustLayout](#adjustlayout)|속성 표 컨트롤 및 해당 속성을 다시 그립니다.|
 |[CMFCPropertyGridCtrl::CompareProps](#compareprops)|속성을 정렬 하기 위해 속성 그리드 컨트롤에서 호출 됩니다.|
@@ -282,7 +282,7 @@ class CMFCPropertyGridCtrl : public CWnd
 
 다음 표에서는 네 개의 선택 속성 유형을 보여 줍니다.
 
-|클래스|Description|
+|클래스|설명|
 |-----------|-----------------|
 |[CMFCPropertyGridProperty 클래스](../../mfc/reference/cmfcpropertygridproperty-class.md)|문자열, 부울, 날짜 등의 값을 지정 하는 데 사용 되는 범용 속성입니다.|
 |[CMFCPropertyGridColorProperty 클래스](../../mfc/reference/cmfcpropertygridcolorproperty-class.md)|색 값을 선택 하는 데 사용 되는 속성입니다.|
@@ -1625,7 +1625,7 @@ virtual BOOL ValidateItemData(CMFCPropertyGridProperty* pProp);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |*pProp*|진행 속성에 대 한 포인터입니다. 이 매개 변수는 사용되지 않습니다.|
 
@@ -1639,7 +1639,7 @@ virtual BOOL ValidateItemData(CMFCPropertyGridProperty* pProp);
 
 이 메서드를 재정의 하는 경우 지정 된 속성 데이터가 올바르면 TRUE를 반환 합니다. 그렇지 않으면 FALSE를 반환 합니다 .이 경우 프레임 워크는 속성을 업데이트 하지 않습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

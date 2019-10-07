@@ -51,10 +51,10 @@ helpviewer_keywords:
 - Toolbar editor [C++], creating tool tips
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
 ms.openlocfilehash: 72c42a06da8276d118c6c204f838ed4b31d142b9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69514685"
 ---
 # <a name="toolbar-editor-c"></a>도구 모음 편집기C++()
@@ -76,7 +76,7 @@ ms.locfileid: "69514685"
 
 **새 도구 모음 리소스** 대화 상자에는 다음과 같은 속성이 있습니다.
 
-|속성|Description|
+|속성|설명|
 |---|---------------|
 |**단추 너비**|비트맵 리소스에서 도구 모음 리소스로 변환 하는 도구 모음 단추의 너비를 입력할 수 있는 공간을 제공 합니다.|
 |**단추 높이**|비트맵 리소스에서 도구 모음 리소스로 변환 하는 도구 모음 단추의 높이를 입력할 수 있는 공간을 제공 합니다.|
@@ -163,7 +163,7 @@ ms.locfileid: "69514685"
 
 - 도구 모음에서 단추 사이에 공백을 삽입 하거나 제거 하려면 도구 모음에서 단추를 다른 위치로 끌어 놓습니다.
 
-|동작|단계|
+|작업|단계|
 |------|------|
 |공백이 아닌 단추 앞에 공백을 삽입 하려면|단추를 오른쪽으로 끌고 다음 단추 중간에 겹쳐질 때까지 아래로 끕니다.|
 |공백 뒤에 공백이 오고 후행 공백을 유지 하는 단추 앞에 공백을 삽입 하려면|오른쪽 또는 아래쪽 가장자리가 다음 단추와만 접촉 하거나 겹쳐 놓을 때까지 단추를 끕니다.|
@@ -201,7 +201,7 @@ ms.locfileid: "69514685"
 
 MFC 또는 ATL
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [리소스 편집기](../windows/resource-editors.md)
 [메뉴 및 기타 리소스](/windows/win32/menurc/resources)<br/>
