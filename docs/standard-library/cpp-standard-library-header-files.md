@@ -1,4 +1,4 @@
----
+﻿---
 title: C++표준 라이브러리 헤더 파일
 ms.date: 07/12/2019
 helpviewer_keywords:
@@ -22,7 +22,7 @@ ms.locfileid: "68341130"
 
 | 범주 | 헤더 |
 | - | - |
-| [알고리즘](../cpp/algorithms-modern-cpp.md) | [\<algorithm](algorithm.md), [\<cstdlib>](cstdlib.md), [\<numeric>](numeric.md) |
+| [알고리즘](../cpp/algorithms-modern-cpp.md) | [\<algorithm>](algorithm.md), [\<cstdlib>](cstdlib.md), [\<numeric>](numeric.md) |
 | 원자 단위 연산 |  [\<atomic>](atomic.md)<sup>11</sup> |
 | C 라이브러리 래퍼 | [\<cassert>](cassert.md), [\<ccomplex>](ccomplex.md)<sup>11 a b</sup>, [\<cctype>](cctype.md), [\<cerrno>](cerrno.md), [\<cfenv>](cfenv.md)<sup>11</sup>, [\<cfloat>](cfloat.md), [\<cinttypes>](cinttypes.md)<sup>11</sup>, [\<ciso646>](ciso646.md)<sup>b</sup>, [\<climits>](climits.md), [\<clocale>](clocale.md), [\<cmath>](cmath.md), [\<csetjmp>](csetjmp.md), [\<csignal>](csignal.md), [\<cstdalign>](cstdalign.md)<sup>11 a b</sup>, [\<cstdarg>](cstdarg.md), [\<cstdbool>](cstdbool.md)<sup>11 a b</sup>, [\<cstddef>](cstddef.md), [\<cstdint>](cstdint.md)<sup>11</sup>, [\<cstdio>](cstdio.md), [\<cstdlib>](cstdlib.md), [\<cstring>](cstring.md), [\<ctgmath>](ctgmath.md)<sup>11 a b</sup>, [\<ctime>](ctime.md), [\<cuchar>](cuchar.md)<sup>11</sup>, [\<cwchar>](cwchar.md), [\<cwctype>](cwctype.md) |
 | 개념 | \<concepts><sup>20</sup> |
@@ -36,7 +36,7 @@ ms.locfileid: "68341130"
 | 일반 유틸리티 | \<any><sup>17</sup>, [\<bitset>](bitset.md), \<charconv><sup>17</sup>, [\<cstdlib>](cstdlib.md), \<execution><sup>17</sup>, [\<functional>](functional.md), [\<memory>](memory.md), \<memory_resource><sup>17</sup>, \<optional><sup>17</sup>, [\<ratio>](ratio.md)<sup>11</sup>, [\<scoped_allocator>](scoped-allocator.md)<sup>11</sup>, [\<tuple>](tuple.md)<sup>11</sup>, [\<ype_traits>](type-traits.md)<sup>11</sup>, [\<typeindex>](typeindex.md)<sup>11</sup>, [\<utility>](utility.md), \<variant><sup>17</sup> |
 | [I/O 및 서식 지정](../cpp/string-and-i-o-formatting-modern-cpp.md) | [\<cinttypes>](cinttypes.md)<sup>11</sup>, [\<cstdio>](cstdio.md), [\<filesystem>](filesystem.md)<sup>17</sup>, [\<fstream>](fstream.md), [\<iomanip>](iomanip.md), [\<ios>](ios.md), [\<iosfwd>](iosfwd.md), [\<iostream>](iostream.md), [\<istream>](istream.md), [\<ostream>](ostream.md), [\<sstream>](sstream.md), [\<streambuf>](streambuf.md), [\<strstream>](strstream.md)<sup>c</sup>, \<syncstream><sup>20</sup> |
 | 반복기 | [\<iterator>](iterator.md) |
-| 언어 지원 | \< \<<sup></sup> \< <sup></sup><sup></sup> [ cfloat\<>, climits >](climits.md), [ \<codecvt >](codecvt.md)11 a, 비교 > 20, 계약 > 20, [ \<](cfloat.md) 코 루틴 ><sup>20</sup>, [ \<csetjmp >](csetjmp.md), [ \<csignal >](csignal.md), [ \<cstdarg >](cstdarg.md), [ \<cstddef >](cstddef.md), [ \<cstdint > ](cstdint.md) <sup>11</sup><sup></sup> [, b\<>](cstdlib.md) [, exception\<>](exception.md) [, initializer_list\<>](initializer-list.md)11 [, 제한>\<](limits.md) [ \< 새 >](new.md), [ \<typeinfo >](typeinfo.md), \<버전 ><sup>20</sup> |
+| 언어 지원 | [\<cfloat>](cfloat.md), [\<climits>](climits.md), [\<codecvt>](codecvt.md)<sup>11 a</sup>, \<compare><sup>20</sup>, \<contract><sup>20</sup>, \<coroutine><sup>20</sup>, [\<csetjmp>](csetjmp.md), [\<csignal>](csignal.md), [\<cstdarg>](cstdarg.md), [\<cstddef>](cstddef.md), [\<cstdint>](cstdint.md)<sup>11</sup>, [\<cstdlib>](cstdlib.md), [\<exception>](exception.md), [\<initializer_list>](initializer-list.md)<sup>11</sup>, [\<limits>](limits.md), [\<new>](new.md), [\<typeinfo>](typeinfo.md), \<version><sup>20</sup> |
 | 지역화 | [\<clocale>](clocale.md), [\<codecvt>](codecvt.md)<sup>11 a</sup>, [\<cvt/wbuffer>](cvt-wbuffer.md), [\<cvt/wstring>](cvt-wstring.md), [\<locale>](locale.md) |
 | 수학 및 숫자 | \<bit><sup>20</sup>, [\<cfenv>](cfenv.md)<sup>11</sup>, [\<cmath>](cmath.md), [\<complex>](complex.md), [\<cstdlib>](cstdlib.md), [\<limits>](limits.md), [\<numeric>](numeric.md), [\<random>](random.md)<sup>11</sup>, [\<ratio>](ratio.md)<sup>11</sup>, [\<valarray>](valarray.md) |
 | [메모리 관리](../cpp/smart-pointers-modern-cpp.md) | [\<allocators>](allocators-header.md), [\<memory>](memory.md), \<memory_resource><sup>17</sup>, [\<new>](new.md), [\<scoped_allocator>](scoped-allocator.md)<sup>11</sup> |
