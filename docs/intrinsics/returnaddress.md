@@ -1,30 +1,30 @@
 ---
 title: _ReturnAddress
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _ReturnAddress
 helpviewer_keywords:
 - _ReturnAddress intrinsic
 - ReturnAddress intrinsic
 ms.assetid: 7f4a5811-35e6-4f64-ba7c-21203380eeda
-ms.openlocfilehash: e5013b20f9e7ed0349d940d9be61cc1b4afc95d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2a830ff1e8a2c9551dec52cf10a3d5cf126bde3b
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390453"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218051"
 ---
-# <a name="returnaddress"></a>_ReturnAddress
+# <a name="_returnaddress"></a>_ReturnAddress
 
-## <a name="microsoft-specific"></a>Microsoft 전용
+**Microsoft 전용**
 
-`_ReturnAddress` 내장 컨트롤 호출자에 게 반환 된 후 실행 되는 함수 호출에서 명령의 주소를 제공 합니다.
+`_ReturnAddress` 내장 함수는 컨트롤이 호출자에 게 반환 된 후 실행 되는 호출 함수에 있는 명령의 주소를 제공 합니다.
 
-다음 프로그램 및 디버거에서 단계별로 진행을 빌드하십시오. 프로그램을 단계별로 확인에서 반환 되는 주소 `_ReturnAddress`합니다. 함수에서 반환 된 후 즉시 다음 여기서 `_ReturnAddress` 사용 되는, 열기를 [방법: 디스어셈블리 창 사용](/visualstudio/debugger/how-to-use-the-disassembly-window) 실행할 다음 명령의 주소에서 반환 하는 주소와 일치 하는지 확인 하 고 `_ReturnAddress`입니다.
+다음 프로그램을 빌드하고 디버거에서 단계별로 실행 합니다. 프로그램을 단계별로 실행 하는 동안에서 `_ReturnAddress`반환 된 주소를 확인 합니다. 그런 다음를 사용 `_ReturnAddress` [하는 함수에서 반환 된 직후에는 방법: 디스어셈블리 창을](/visualstudio/debugger/how-to-use-the-disassembly-window) 사용 하 여 실행할 다음 명령의 주소가에서 `_ReturnAddress`반환 된 주소와 일치 하는지 확인 합니다.
 
-인라인 월 같은 최적화 반송 주소에 영향을 줍니다. 예를 들어 아래 샘플 프로그램을 사용 하 여 컴파일된 [/Ob1](../build/reference/ob-inline-function-expansion.md)를 `inline_func` 호출 하는 함수를 인라인 처리 되지 `main`합니다. 따라서 호출 `_ReturnAddress` 에서 `inline_func` 고 `main` 동일한 값이 각 생성 됩니다.
+인라인 등의 최적화는 반환 주소에 영향을 줄 수 있습니다. 예를 들어 아래 샘플 프로그램이 [/ost1](../build/reference/ob-inline-function-expansion.md) `inline_func` 로 컴파일된 경우는 호출 함수 `main`에 인라인 됩니다. 따라서 및 `_ReturnAddress` 에서`main` 를 호출 하면 각각 동일한 값이 생성 됩니다. `inline_func`
 
-때 `_ReturnAddress` 로 컴파일된 프로그램에서 사용 됩니다 [/clr](../build/reference/clr-common-language-runtime-compilation.md)를 포함 하는 함수는 `_ReturnAddress` 네이티브 함수로 호출 컴파일됩니다. 포함 하는 함수에 대 한 호출은 관리 되는 함수를 컴파일할 때 `_ReturnAddress`, `_ReturnAddress` 예상 대로 작동 하지 않을 수 있습니다.
+[/Clr](../build/reference/clr-common-language-runtime-compilation.md) 을 사용하여 컴파일된 프로그램에서 `_ReturnAddress`을 사용하는 경우 호출 `_ReturnAddress`을 포함하는 함수가 네이티브 함수로 컴파일됩니다. 관리 되는 함수로 컴파일된 함수가를 포함 하 `_ReturnAddress`는 함수를 호출 하면가 `_ReturnAddress` 예상 대로 작동 하지 않을 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -32,7 +32,7 @@ ms.locfileid: "62390453"
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // compiler_intrinsics__ReturnAddress.cpp
 #include <stdio.h>
 #include <intrin.h>
@@ -65,6 +65,6 @@ int main(void)
 
 ## <a name="see-also"></a>참고자료
 
-[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)<br/>
-[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
+[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)\
+[컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [C++ 키워드](../cpp/keywords-cpp.md)

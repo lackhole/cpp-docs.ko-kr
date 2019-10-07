@@ -1,38 +1,38 @@
 ---
-title: MFC와 ATL에서 공유 하는 클래스
+title: MFC와 ATL에서 공유되는 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - shared classes, classes
 ms.assetid: ca8b4b6b-744d-430b-b31f-d5b2f17bf210
-ms.openlocfilehash: 5376a87aac2b82615cd48f80e0e95208b8132bf0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3e4b35721e84e289aed586c4d010a6986dcc61c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62235148"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491454"
 ---
-# <a name="classes-shared-by-mfc-and-atl"></a>MFC와 ATL에서 공유 하는 클래스
+# <a name="classes-shared-by-mfc-and-atl"></a>MFC와 ATL에서 공유되는 클래스
 
-다음 표에서 MFC 및 ATL. 공유할 클래스를 보여 줍니다.
+다음 표에서는 MFC와 ATL 간에 공유 되는 클래스를 보여 줍니다.
 
-|클래스|설명|헤더 파일|
+|클래스|Description|헤더 파일|
 |-----------|-----------------|-----------------|
 |[CFileTime](../../atl-mfc-shared/reference/cfiletime-class.md)|파일과 연결 된 날짜 및 시간 값을 관리 하기 위한 메서드를 제공 합니다.|atltime.h|
-|[CFileTimeSpan](../../atl-mfc-shared/reference/cfiletimespan-class.md)|상대 날짜 및 시간 값을 파일에 연결 된 관리 하기 위한 메서드를 제공 합니다.|atltime.h|
-|[CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md)|고정된 문자 버퍼를 사용 하 여 문자열 개체를 나타냅니다.|cstringt.h|
-|[CImage](../../atl-mfc-shared/reference/cimage-class.md)|향상 된 비트맵 지원, 로드 및 JPEG, GIF, BMP, 및 PNG 이동식 네트워크 그래픽 () 형식 이미지를 저장 하는 기능을 포함 하 여 제공 합니다.|atlimage.h|
+|[CFileTimeSpan](../../atl-mfc-shared/reference/cfiletimespan-class.md)|파일과 연결 된 상대 날짜 및 시간 값을 관리 하기 위한 메서드를 제공 합니다.|atltime.h|
+|[CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md)|고정 문자 버퍼를 사용 하는 문자열 개체를 나타냅니다.|cstringt.h|
+|[CImage](../../atl-mfc-shared/reference/cimage-class.md)|JPEG, GIF, BMP 및 PNG (이동식 네트워크 그래픽) 형식으로 이미지를 로드 하 고 저장 하는 기능을 포함 하 여 향상 된 비트맵 지원 기능을 제공 합니다.|atlimage.h|
 |[COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md)|OLE 자동화에 사용 되는 날짜 데이터 형식을 캡슐화 합니다.|atlcomtime.h|
-|[COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md)|상대 시간을 시간 범위를 나타냅니다.|atlcomtime.h|
-|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|클래스는 Windows 비슷합니다 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 도 조작 하는 멤버 함수를 포함 하는 구조 `CPoint` 및 `POINT` 구조입니다.|atltypes.h|
-|[CRect](../../atl-mfc-shared/reference/crect-class.md)|클래스는 Windows 비슷합니다 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 도 조작 하는 멤버 함수를 포함 하는 구조 `CRect` 개체 및 Windows `RECT` 구조입니다.|atltypes.h|
-|[CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)|나타냅니다는 `CSimpleStringT` 개체입니다.|atlsimpstr.h|
-|[CSize](../../atl-mfc-shared/reference/csize-class.md)|클래스는 Windows 비슷합니다 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 상대 좌표 또는 위치를 구현 하는 구조입니다.|atltypes.h|
-|[CStrBufT](../../atl-mfc-shared/reference/cstrbuft-class.md)|자동 리소스 정리를 제공 `GetBuffer` 하 고 `ReleaseBuffer` 호출을 기존 `CStringT` 개체입니다.|atlsimpstr.h|
+|[COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md)|시간 범위에 상대적인 시간을 나타냅니다.|atlcomtime.h|
+|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|`CPoint` 및 `POINT` 구조체를 조작하는 멤버함수도 포함하는 Windows [POINT](/windows/win32/api/windef/ns-windef-point) 구조체와 유사한 클래스입니다.|atltypes.h|
+|[CRect](../../atl-mfc-shared/reference/crect-class.md)|개체와 windows `CRect` `RECT` 구조를 조작 하는 멤버 함수도 포함 하는 Windows [RECT](/windows/win32/api/windef/ns-windef-rect) 구조와 비슷한 클래스입니다.|atltypes.h|
+|[CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)|개체를 `CSimpleStringT` 나타냅니다.|atlsimpstr.h|
+|[CSize](../../atl-mfc-shared/reference/csize-class.md)|상대 좌표 또는 위치를 구현 하는 Windows [SIZE](/windows/win32/api/windef/ns-windef-size) 구조체와 유사한 클래스입니다.|atltypes.h|
+|[CStrBufT](../../atl-mfc-shared/reference/cstrbuft-class.md)|기존 `ReleaseBuffer` `GetBuffer` 개체`CStringT` 에 대 한 및 호출에 대 한 자동 리소스 정리 기능을 제공 합니다.|atlsimpstr.h|
 |[CStringData](../../atl-mfc-shared/reference/cstringdata-class.md)|문자열 개체의 데이터를 나타냅니다.|atlsimpstr.h|
-|[CStringT](../../atl-mfc-shared/reference/cstringt-class.md)|나타냅니다는 `CStringT` 개체입니다.|(MFC 종속) cstringt.h atlstr.h (MFC 독립적)|
-|[CTime](../../atl-mfc-shared/reference/ctime-class.md)|절대 시간 및 날짜를 나타냅니다.|atltime.h|
-|[CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)|되는 시간 기간 시간 (초)의 숫자와 내부적으로 저장 됩니다.|atltime.h|
-|[IAtlStringMgr](../../atl-mfc-shared/reference/iatlstringmgr-class.md)|인터페이스를 나타내는 `CStringT` 메모리 관리자입니다.|atlsimpstr.h|
+|[CStringT](../../atl-mfc-shared/reference/cstringt-class.md)|개체를 `CStringT` 나타냅니다.|cstringt (MFC 종속). m n. h (MFC 독립적)|
+|[CTime](../../atl-mfc-shared/reference/ctime-class.md)|절대 시간과 날짜를 나타냅니다.|atltime.h|
+|[CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)|시간 범위의 초 수로 내부적으로 저장 되는 시간 간격입니다.|atltime.h|
+|[IAtlStringMgr](../../atl-mfc-shared/reference/iatlstringmgr-class.md)|메모리 관리자에 대 한 `CStringT` 인터페이스를 나타냅니다.|atlsimpstr.h|
 
 ## <a name="see-also"></a>참고자료
 

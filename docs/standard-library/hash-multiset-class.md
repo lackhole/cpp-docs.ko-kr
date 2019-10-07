@@ -93,7 +93,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68448689"
 ---
-# <a name="hashmultiset-class"></a>hash_multiset 클래스
+# <a name="hash_multiset-class"></a>hash_multiset 클래스
 
 > [!NOTE]
 > 이 API는 더 이상 사용되지 않습니다. [unordered_multiset 클래스](../standard-library/unordered-multiset-class.md)를 대신 사용하는 것이 좋습니다.
@@ -1517,7 +1517,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 
 ### <a name="example"></a>예제
 
-을 선언 하 [](#begin) 고 사용 `iterator`하는 방법에 대 한 예제는 begin의 예제를 참조 하세요.
+`iterator`을 선언하고 사용하는 방법에 대한 예제는 [begin](#begin)의 예제를 참조하세요.
 
 ## <a name="key_comp"></a>  hash_multiset::key_comp
 
@@ -1767,7 +1767,7 @@ hash_multiset& operator=(hash_multiset&& right);
 
 ### <a name="remarks"></a>설명
 
-에서 `hash_multiset`기존 요소를 `operator=` 지운 후에는의 `hash_multiset` *내용을로 복사* 하거나 이동 합니다.
+에서 `hash_multiset`기존 요소를 `operator=` 지운 *후에는의* `hash_multiset`내용을로 복사 하거나 이동 합니다.
 
 ### <a name="example"></a>예제
 

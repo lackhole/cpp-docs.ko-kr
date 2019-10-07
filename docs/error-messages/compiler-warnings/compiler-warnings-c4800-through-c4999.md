@@ -63,8 +63,6 @@ f1_keywords:
 - C5042
 - C5043
 - C5044
-- C5045
-- C5046
 - C5047
 - C5048
 - C5049
@@ -74,7 +72,6 @@ f1_keywords:
 - C5102
 - C5103
 - C5104
-- C5105
 - C5106
 - C5107
 helpviewer_keywords:
@@ -139,8 +136,6 @@ helpviewer_keywords:
 - C5042
 - C5043
 - C5044
-- C5045
-- C5046
 - C5047
 - C5048
 - C5049
@@ -150,15 +145,14 @@ helpviewer_keywords:
 - C5102
 - C5103
 - C5104
-- C5105
 - C5106
 - C5107
-ms.openlocfilehash: ae73d4ba503dfbbc27f91040c31beb91da3b7e54
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 7e715dcbac9dc59fe09ee1f917c02a23b3c4db14
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69631546"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230471"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>컴파일러 경고 C4800 ~ C5999
 
@@ -168,13 +162,13 @@ ms.locfileid: "69631546"
 
 ## <a name="warning-messages"></a>경고 메시지
 
-|경고|메시지|
+|Warning|메시지|
 |-------------|------------|
 |[컴파일러 경고 (수준 4) C4800](compiler-warning-level-3-c4800.md)| '*Type*'에서 bool로의 암시적 변환입니다. 가능한 정보 손실 |
 |[컴파일러 경고 (수준 1) C4803](compiler-warning-level-1-c4803.md)|'*method*': raise 메서드에 이벤트 '*event*'의 저장소 클래스와 다른 저장소 클래스가 있습니다.|
 |[컴파일러 경고 (수준 1) C4804](compiler-warning-level-1-c4804.md)|'*operation*': 연산에 ' bool ' 형식을 안전 하 게 사용 하지 않습니다.|
 |[컴파일러 경고 (수준 1) C4805](compiler-warning-level-1-c4805.md)|'*operation*': 연산에 '*type1*' 형식 및 '*type2*' 형식의 안전 하지 않은 조합이 있습니다.|
-|[컴파일러 경고 (수준 1) C4806](compiler-warning-level-1-c4806.md)|'*operation*': 안전 하지 않은 작업입니다. '*type1*' 형식의 값이 지정 된상수와 같을 수 없습니다.|
+|[컴파일러 경고 (수준 1) C4806](compiler-warning-level-1-c4806.md)|'*operation*': 안전 하지 않은 작업입니다 *. '* *type1*' 형식의 값이 지정 된 상수와 같을 수 없습니다.|
 |[컴파일러 경고 (수준 1) C4807](compiler-warning-level-1-c4807.md)|'*operation*': '*type1*' 형식 및 '*type2*' 형식의 부호 있는 비트 필드를 안전 하 게 혼합 합니다.|
 |컴파일러 경고 (수준 1) C4808|'*value*' case는 ' bool ' 형식의 switch 조건에 대 한 올바른 값이 아닙니다.|
 |컴파일러 경고 (수준 1) C4809|switch 문에 중복 ' default ' 레이블이 있습니다. 가능한 모든 ' case ' 레이블이 제공 됩니다.|
@@ -193,7 +187,7 @@ ms.locfileid: "69631546"
 |컴파일러 경고 (수준 3) C4827|매개 변수가 0 인 public ' ToString ' 메서드는 virtual 및 override로 표시 되어야 합니다.|
 |[컴파일러 경고 (수준 1) C4829](compiler-warning-level-1-c4829.md)|main 함수에 대한 매개 변수가 잘못된 것 같습니다. ' Int main (platform:: Array\<platform:: String ^ > ^ argv) '을 고려 하십시오.|
 |[컴파일러 경고 (수준 1) C4835](compiler-warning-level-1-c4835.md)|'*variable*': 내보낸 데이터의 이니셜라이저는 관리 코드가 호스트 어셈블리에서 먼저 실행 될 때까지 실행 되지 않습니다.|
-|컴파일러 경고 (수준 4) C4837|검색 된 삼중 자: '?? ' character '로 바뀐 *문자*|
+|컴파일러 경고 (수준 4) C4837|검색 된 삼중 자: '?? '*character '로*바뀐 *문자*|
 |[컴파일러 경고 (수준 1) C4838](compiler-warning-level-1-c4838.md)|'*규격이*'에서 '*type_2*'로 변환 하려면 축소 변환이 필요 합니다.|
 |[컴파일러 경고 (수준 3) C4839](compiler-warning-level-3-c4839.md)|variadic 함수에 대 한 인수로 '*type*' 클래스의 비표준 사용|
 |[컴파일러 경고 (수준 4) C4840](compiler-warning-level-4-c4840.md)|variadic 함수의 인수로 서 '*type*' 클래스를 이식 불가능 하 게 사용 합니다.|
@@ -234,7 +228,7 @@ ms.locfileid: "69631546"
 |컴파일러 경고 (수준 1) C4934|' __delegate (multicast) '는 사용 되지 않습니다.\_대신 ' _delegate '를 사용 하세요.|
 |[컴파일러 경고 (수준 1) C 4935](compiler-warning-level-1-c4935.md)|어셈블리 액세스 지정 자가 '*access*'에서 수정 되었습니다.|
 |[컴파일러 경고 (수준 1, 오류) C 4936](compiler-warning-c4936.md)|/clr 또는 /clr:pure를 지정하여 컴파일한 경우에만 이 __declspec를 사용할 수 있습니다.|
-|[컴파일러 경고 (수준 4) C4937](compiler-warning-level-4-c4937.md)|'*text1*' 및 'x n s '는 '*지시어*'에 대 한 인수로 구분할 수 없습니다.|
+|[컴파일러 경고 (수준 4) C4937](compiler-warning-level-4-c4937.md)|'*text1* *' 및 ' x*n s '는 '*지시어*'에 대 한 인수로 구분할 수 없습니다.|
 |[컴파일러 경고 (수준 4) C4938](compiler-warning-level-4-c4938.md)|'*var*': 부동 소수점 감소 변수가/fp: strict 또는 #pragma fenv_access에서 일치 하지 않는 결과를 일으킬 수 있습니다.|
 |[컴파일러 경고 C4939](compiler-warning-level-1-c4939.md)|#pragma vtordisp는 사용되지 않으므로 이후 Visual C++ 릴리스에서 제거될 예정입니다.|
 |[컴파일러 경고 (수준 1) C4944](compiler-warning-level-1-c4944.md)|'*symbol*': '*symbol*'이 현재 범위에 이미 있으므로 '*assembly1*'에서 기호를 가져올 수 없습니다.|
@@ -302,9 +296,9 @@ ms.locfileid: "69631546"
 |컴파일러 경고 (수준 1) C5041|'*정의*': constexpr 정적 데이터 멤버에 대 한 아웃오브 라인 정의는 필요 하지 않으며 c + + 17에서 사용 되지 않습니다.|
 |컴파일러 경고 (수준 3) C5042|'*선언*': 블록 범위에 있는 함수 선언을 표준 C++에서 ' inline '으로 지정할 수 없습니다. ' inline ' 지정자 제거|
 |컴파일러 경고 (수준 2) C5043|'*specification*': 예외 사양이 이전 선언과 일치 하지 않습니다.|
-|컴파일러 경고 (수준 4) C5044|명령줄 옵션에 대 한 인수가 존재 하지 않는 '*path*' 경로를 가리킵니다.|
-|[컴파일러 경고 C5045](c5045.md)|컴파일러가/Qspectre 스위치가 지정 된 경우 메모리 로드를 위해 스펙터 완화를 삽입 합니다.|
-|[컴파일러 경고 (수준 2) C5046](c5046.md)|'*function*': 내부 링크를 포함 하는 형식과 관련 된 기호가 정의 되지 않았습니다.|
+|컴파일러 경고 (수준 4) C5044|명령줄 옵션에 대 한 인수가 존재 하지 않는 '*path*' 경로 *를 가리킵니다.*|
+| [컴파일러 경고 C5045](c5045.md) | 컴파일러가/Qspectre 스위치가 지정 된 경우 메모리 로드를 위해 스펙터 완화를 삽입 합니다. |
+| [컴파일러 경고 (수준 2) C5046](c5046.md) | '*function*': 내부 링크를 포함 하는 형식과 관련 된 기호가 정의 되지 않았습니다. |
 | 컴파일러 경고 (수준 1) C5047 | 모듈에 존재 \_하지\_않는 경우 비표준 \_를 사용 하는 것은 지원 되지 않습니다. |
 | 컴파일러 경고 (수준 1) C5048 | '*Macroname*' 매크로를 사용 하면 확정적이 지 않은 출력이 발생할 수 있습니다. |
 | 컴파일러 경고 (수준 1) C5049 | '*string*': 전체 경로를 포함 하면 컴퓨터 종속적 출력이 발생할 수 있습니다. |
@@ -313,12 +307,12 @@ ms.locfileid: "69631546"
 | 컴파일러 경고 (수준 1) C5101 | 함수 같은 매크로 인수 목록에서 전처리기 지시문을 사용 하는 것은 정의 되지 않은 동작입니다. |
 | 컴파일러 경고 (수준 1) C5102 | 잘못 된 명령줄 매크로 정의 '*value*'를 무시 합니다. |
 | 컴파일러 경고 (수준 1) C5103 | '*token1*' 및 '*token2*'를 붙여넣으면 유효한 전처리 토큰이 생성 되지 않습니다. |
-| 컴파일러 경고 (수준 1) C5104 | 매크로 대체 목록에서 '*string1*#s e l l e n t '가 발견 되었습니다.' string1 "" #*string1*'을 의미 합니다. |
-| 컴파일러 경고 (수준 1) C5105 | ' defined '를 생성 하는 매크로 확장에 정의 되지 않은 동작이 있습니다. |
+| 컴파일러 경고 (수준 1) C5104 | 매크로 대체 목록에서 '*string1*#s e*l l e*n*t '가*발견 되었습니다. ' string1 "" #*string1*'을 의미 합니다. |
+| [컴파일러 경고 (수준 1) C5105](c5105.md) | ' defined '를 생성 하는 매크로 확장에 정의 되지 않은 동작이 있습니다. |
 | 컴파일러 경고 (수준 1) C5106 | 매크로가 다른 매개 변수 이름으로 재정의 되었습니다. |
 | 컴파일러 경고 (수준 1) C5107 | 종료 '*char*' 문자가 없습니다. |
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C/C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md) \
 [컴파일러 경고 C4000-C5999](compiler-warnings-c4000-c5999.md)

@@ -19,7 +19,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68447802"
 ---
-# <a name="basicstringstream-class"></a>basic_stringstream 클래스
+# <a name="basic_stringstream-class"></a>basic_stringstream 클래스
 
 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`> 클래스의 스트림 버퍼를 사용하여 요소 및 인코드된 개체의 삽입 및 추출을 제어하는 개체에 대해 설명합니다.
 
@@ -43,7 +43,7 @@ class basic_stringstream : public basic_iostream<Elem, Tr>
 
 ## <a name="remarks"></a>설명
 
-이 템플릿 클래스는 형식의 `Alloc`<  [](../standard-library/basic-stringbuf-class.md)  요소가있는basic_stringbufElem,Tr,>클래스의스트림버퍼를사용하여요소및인코드된개체의삽입및추출을제어하는개체를설명합니다.`Elem`문자 특성이 클래스 `Tr`에 의해 결정 되 고 해당 요소가 클래스 `Alloc`의 할당자에 의해 할당 되는입니다. 이 개체는 basic_stringbuf< **Elem**, **Tr**, `Alloc`> 클래스의 개체를 저장합니다.
+이 템플릿 클래스는 `Elem` 형식의 요소가 있는 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`> 클래스의 스트림 버퍼를 사용하여 요소 및 인코드된 개체의 삽입 및 추출을 제어하는 개체를 설명합니다. 문자 특성이 클래스 `Tr`에 의해 결정되고 해당 요소가 클래스 `Alloc`의 할당자에 의해 할당됩니다. 이 개체는 basic_stringbuf< **Elem**, **Tr**, `Alloc`> 클래스의 개체를 저장합니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -59,7 +59,7 @@ class basic_stringstream : public basic_iostream<Elem, Tr>
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|설명|
+|멤버 함수|Description|
 |-|-|
 |[rdbuf](#rdbuf)|`pointer` 형식의 저장된 스트림 버퍼 주소를 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>로 반환합니다.|
 |[str](#str)|쓰기 위치를 변경하지 않고 문자열 버퍼에서 텍스트를 설정하거나 가져옵니다.|

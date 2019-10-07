@@ -4,12 +4,12 @@ ms.date: 05/14/2019
 helpviewer_keywords:
 - code wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-ms.openlocfilehash: efced3be3a0bcc7efe16aef1061c4cd9ec1ed21c
-ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
+ms.openlocfilehash: 360f206ff4dae0b49650e131ccd86ecf9a0ed87d
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66741634"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907485"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>코드 마법사로 기능 추가(C++)
 
@@ -29,13 +29,13 @@ ms.locfileid: "66741634"
 
 
 > [!NOTE]
->  이제 메시지 처리기를 추가하고, 메시지를 이러한 메시지에 매핑하고, [속성 창](/visualstudio/ide/reference/properties-window)을 사용하여 MFC 가상 함수를 재정의할 수 있습니다.
+>  메시지 처리기를 추가하고, 메시지를 이러한 메시지에 매핑하고, [MFC 클래스 마법사](../mfc/reference/mfc-class-wizard.md)를 사용하여 MFC 가상 함수를 재정의할 수 있습니다.
 
 ## <a name="accessing-c-code-wizards"></a>C++ 코드 마법사 액세스
 
 C++ 코드 마법사에 액세스할 수 있는 세 가지 위치가 있습니다.
 
-- **프로젝트** 메뉴에서 **새 항목 추가** 명령을 사용하면 프로젝트에 새 파일을 추가하는 데 유용한 `Add New Item` 대화 상자를 표시할 수 있습니다. **클래스 추가** 명령은 프로젝트에 추가할 수 있는 각 클래스 유형에 대한 마법사를 여는 [클래스 추가](../ide/add-class-dialog-box.md) 대화 상자를 표시합니다. **리소스 추가** 명령은 프로젝트에 추가할 리소스를 만들거나 선택할 수 있는 [리소스 추가](../windows/add-resource-dialog-box.md) 대화 상자를 표시합니다.
+- **프로젝트** 메뉴에서 **새 항목 추가** 명령을 사용하면 프로젝트에 새 파일을 추가하는 데 유용한 `Add New Item` 대화 상자를 표시할 수 있습니다. **클래스 추가** 명령은 프로젝트에 추가할 수 있는 각 클래스 유형에 대한 마법사를 여는 [클래스 추가](../ide/add-class-dialog-box.md) 대화 상자를 표시합니다. MFC 클래스의 경우 [MFC 클래스 마법사](../mfc/reference/mfc-class-wizard.md)를 사용합니다. **리소스 추가** 명령은 프로젝트에 추가할 리소스를 만들거나 선택할 수 있는 [리소스 추가](../windows/add-resource-dialog-box.md) 대화 상자를 표시합니다.
 
    [클래스 뷰]에서 프로젝트의 클래스 또는 인터페이스를 강조 표시하는 경우 표시되는 **프로젝트** 메뉴의 명령은 다음과 같습니다.
 

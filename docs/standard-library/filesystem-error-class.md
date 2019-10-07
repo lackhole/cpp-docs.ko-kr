@@ -4,14 +4,14 @@ ms.date: 09/10/2018
 f1_keywords:
 - filesystem/std::experimental::filesystem::filesystem_error
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
-ms.openlocfilehash: c3dbfc080f0a1494950016f42189d932be05b0f1
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 7bd6b2d3d716ba25999388d44e7bd5a8d0750eb5
+ms.sourcegitcommit: 76cc69b482ada8ebf0837e8cdfd4459661f996dd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240739"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71127208"
 ---
-# <a name="filesystemerror-class"></a>filesystem_error 클래스
+# <a name="filesystem_error-class"></a>filesystem_error 클래스
 
 하위 수준 시스템 오버플로를 보고하기 위해 throw되는 모든 예외에 대한 기본 클래스입니다.
 
@@ -23,7 +23,7 @@ class filesystem_error    : public system_error;
 
 ## <a name="remarks"></a>설명
 
-이 클래스는 \<filesystem> 함수의 오류를 보고하기 위해 throw된 모든 예외에 대한 기본 클래스로 사용됩니다. 형식의 개체를 저장 하며 `string`라는 `mymesg` 표시를 위해 여기 있습니다. 형식의 두 개체도 저장 `path`라는 `mypval1` 고 `mypval2`입니다.
+이 클래스는 \<filesystem> 함수의 오류를 보고하기 위해 throw된 모든 예외에 대한 기본 클래스로 사용됩니다. 표시의 목적 `mymesg` 으로 여기에 `string`해당 하는 형식의 개체를 저장 합니다. 또한 및 `path` 이라는`mypval2`두 가지 형식의 개체를 저장 합니다. `mypval1`
 
 ## <a name="members"></a>멤버
 
@@ -31,7 +31,7 @@ class filesystem_error    : public system_error;
 
 |||
 |-|-|
-|[filesystem_error](#filesystem_error)|생성 된 `filesystem_error` 메시지입니다.|
+|[filesystem_error](#filesystem_error)|메시지를 `filesystem_error` 생성 합니다.|
 
 ### <a name="functions"></a>함수
 
@@ -47,9 +47,9 @@ class filesystem_error    : public system_error;
 
 **네임스페이스:** std::experimental::filesystem
 
-## <a name="filesystem_error"></a> filesystem_error
+## <a name="filesystem_error"></a>filesystem_error
 
-메시지를 생성 하는 첫 번째 생성자는 *what_arg* 하 고 *ec*합니다. 두 번째 생성자는 또한에서 해당 메시지를 생성 *pval1*에 저장 되 `mypval1`합니다. 세 번째 생성자 또한에서 해당 메시지를 생성 *pval1*에 저장 되 `mypval1`, 및 *pval2*에 저장 되 `mypval2`합니다.
+첫 번째 생성자는 *what_arg* 및 *ec*에서 해당 메시지를 생성 합니다. 또한 두 번째 생성자는 *pval1*에서 해당 메시지를 생성 하 여에 `mypval1`저장 합니다. 세 번째 생성자는 *pval1* `mypval1`에서 해당 메시지를 생성 하 고에 `mypval2`저장 되는 *pval1*에서 해당 메시지를 생성 합니다.
 
 ```cpp
 filesystem_error(const string& what_arg,
@@ -74,12 +74,12 @@ filesystem_error(const string& what_arg,
 지정 된 오류 코드입니다.
 
 *mypval1*\
-추가로 지정한 메시지 매개 변수입니다.
+지정 된 추가 메시지 매개 변수입니다.
 
 *mypval2*\
-추가로 지정한 메시지 매개 변수입니다.
+지정 된 추가 메시지 매개 변수입니다.
 
-## <a name="path1"></a> 1 번 경로 입구
+## <a name="path1"></a>path1
 
 구성원 함수는 `mypval1`을 반환합니다.
 
@@ -87,7 +87,7 @@ filesystem_error(const string& what_arg,
 const path& path1() const noexcept;
 ```
 
-## <a name="path2"></a> 2 번 경로 입구
+## <a name="path2"></a>path2
 
 구성원 함수는 `mypval2`을 반환합니다.
 
@@ -95,9 +95,9 @@ const path& path1() const noexcept;
 const path& path2() const noexcept;
 ```
 
-## <a name="what"></a> 새로운
+## <a name="what"></a>이며
 
-멤버 함수에 대 한 포인터를 반환 합니다.는 `NTBS`에서으로 구성 된 것이 좋습니다 `runtime_error::what()`, `system_error::what()`, `mymesg`를 `mypval1.native_string()`, 및 `mypval2.native_string()`합니다.
+멤버 함수는, `NTBS` `system_error::what()` `runtime_error::what()` ,`mymesg`, 및`mypval2.native_string()`에서 구성 된에 대 한 포인터를 반환 합니다. `mypval1.native_string()`
 
 ```cpp
 const char *what() const noexcept;

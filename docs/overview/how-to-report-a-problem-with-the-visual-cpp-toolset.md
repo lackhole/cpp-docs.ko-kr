@@ -1,15 +1,16 @@
 ---
 title: Microsoft C++ 도구 집합의 문제를 보고하는 방법
-ms.date: 06/21/2019
+description: Microsoft C++ 도구 집합에 대한 좋은 문제 보고서 및 재현 정보를 만드는 방법입니다.
+ms.date: 09/24/2019
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 13826349836e4c58b7d6a7ce8936186930bc7100
-ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
+ms.openlocfilehash: 350e902501aca5cbe2b4022ec1f977719844644b
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344379"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685706"
 ---
 # <a name="how-to-report-a-problem-with-the-microsoft-c-toolset-or-documentation"></a>Microsoft C++ 도구 집합 또는 문서의 문제를 보고하는 방법
 
@@ -317,9 +318,9 @@ C++ 컴파일러의 모듈 기능을 사용하는 경우 전처리된 재현을 
 
 ### <a name="link-repros"></a>링크 재현
 
-‘링크 재현’은 **link\_repro** 환경 변수를 통해 지정되는 디렉터리의 링커 생성 콘텐츠입니다.  링크 타임에 발생하는 문제를 전체적으로 보여주는 빌드 아티팩트를 포함하고 있습니다. 예를 들어 LTCG(링크 타임 코드 생성)와 관련된 백 엔드 크래시 또는 링커 크래시가 있습니다. 이러한 빌드 아티팩트는 문제를 재현할 수 있도록 링커 입력으로 필요합니다. 이 환경 변수를 사용하면 링크 재현을 쉽게 만들 수 있습니다. 이 변수를 통해 링커의 기본 재현 생성 기능을 사용할 수 있습니다.
+*link repro*는 **link\_repro** 환경 변수에 의해서 또는 [/LINKREPRO](../build/reference/linkrepro.md) 링커 옵션에 대한 인수로 지정되는 디렉터리의 링커 생성 콘텐츠입니다. 링크 타임에 발생하는 문제를 전체적으로 보여주는 빌드 아티팩트를 포함하고 있습니다. 예를 들어 LTCG(링크 타임 코드 생성)와 관련된 백 엔드 크래시 또는 링커 크래시가 있습니다. 이러한 빌드 아티팩트는 문제를 재현할 수 있도록 링커 입력으로 필요합니다. 이 환경 변수를 사용하면 링크 재현을 쉽게 만들 수 있습니다. 이 변수를 통해 링커의 기본 재현 생성 기능을 사용할 수 있습니다.
 
-#### <a name="to-generate-a-link-repro"></a>링크 재현을 생성하려면
+#### <a name="to-generate-a-link-repro-using-the-link_repro-environment-variable"></a>Link_repro 환경 변수를 사용하여 링크 재현을 생성하려면
 
 1. [명령줄의 내용을 보고하려면](#to-report-the-contents-of-the-command-line)에 설명된 대로 재현을 빌드하는 데 사용된 명령줄 인수를 캡처합니다.
 
@@ -327,9 +328,9 @@ C++ 컴파일러의 모듈 기능을 사용하는 경우 전처리된 재현을 
 
 1. 개발자 명령 프롬프트 콘솔 창에서 재현 프로젝트가 포함된 디렉터리로 변경합니다.
 
-1. **mkdir linkrepro**를 입력하여 링크 재현에 사용할 디렉터리를 만듭니다.
+1. **mkdir linkrepro**를 입력하여 링크 재현에 사용할 *linkrepro* 디렉터리를 만듭니다. 다른 이름을 사용하여 다른 링크 재현을 캡처할 수 있습니다.
 
-1. **set link\_repro=linkrepro** 명령을 입력하여 **link\_repro** 환경 변수를 생성된 디렉터리로 설정합니다. 다른 디렉터리에서 빌드가 실행된 경우 더 복잡한 프로젝트와 마찬가지로 대신 **link\_repro**를 linkrepro 디렉터리 전체 경로로 설정합니다.
+1. **set link\_repro=linkrepro** 명령을 입력하여 **link\_repro** 환경 변수를 생성된 디렉터리로 설정합니다. 다른 디렉터리에서 빌드가 실행된 경우 더 복잡한 프로젝트와 마찬가지로 대신 **link\_repro**를 링크 재현 디렉터리 전체 경로로 설정합니다.
 
 1. Visual Studio에서 재현 프로젝트를 빌드하려면 개발자 명령 프롬프트 콘솔 창에서 **devenv** 명령을 입력합니다. 이렇게 하면 **link\_repro** 환경 변수의 값이 Visual Studio에 표시됩니다. 명령줄에서 프로젝트를 빌드하려면 위에서 캡처한 명령줄 인수를 사용하여 재현 빌드를 복제합니다.
 
@@ -340,6 +341,18 @@ C++ 컴파일러의 모듈 기능을 사용하는 경우 전처리된 재현을 
 1. 개발자 명령 프롬프트 콘솔 창에서 **set link\_repro=** 명령을 입력하여 **link\_repro** 환경 변수를 지웁니다.
 
 마지막으로, 전체 linkrepro 디렉터리를 .zip 파일 등으로 압축하여 재현을 패키징하고 보고서에 첨부합니다.
+
+**/LINKREPRO** 링커 옵션은 **link\_repro** 환경 변수와 동일한 효과를 가집니다. [/LINKREPROTARGET](../build/reference/linkreprotarget.md) 옵션을 사용하여 생성된 링크 재현에 대해 필터링할 이름을 지정할 수 있습니다. **/LINKREPROTARGET**를 사용하려면 **/OUT** 링커 옵션도 지정해야 합니다.
+
+#### <a name="to-generate-a-link-repro-using-the-linkrepro-option"></a>/LINKREPRO 옵션을 사용하여 링크 재현을 생성하려면
+
+1. 링크 재현을 저장할 디렉터리를 만듭니다. 사용자가 만든 전체 디렉터리 경로를 _directory-path_로 지칭합니다. 공백을 포함하는 경우 경로 앞뒤에 큰따옴표를 사용합니다.
+
+1. **/LINKREPRO:** _directory-path_ 명령을 링커 명령줄에 추가합니다. Visual Studio에서 프로젝트에 대한 **속성 페이지** 대화 상자를 엽니다. **구성 속성** > **링커** > **명령줄** 속성 페이지를 선택합니다. 그런 다음 **추가 옵션** 상자에 **/LINKREPRO:** _directory-path_ 옵션을 입력합니다. **확인**을 선택하여 변경 내용을 저장합니다.
+
+1. 재현 프로젝트를 빌드하고 예상한 문제가 발생하는지 확인합니다.
+
+마지막으로, 전체 _directory-path_ 링크 재현 디렉터리를 .zip 파일 등으로 압축하여 재현을 패키징하고 보고서에 첨부합니다.
 
 ### <a name="other-repros"></a>기타 재현
 

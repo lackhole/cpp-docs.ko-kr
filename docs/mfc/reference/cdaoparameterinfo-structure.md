@@ -1,22 +1,24 @@
 ---
 title: CDaoParameterInfo 구조체
-ms.date: 11/04/2016
+ms.date: 09/17/2019
 f1_keywords:
 - CDaoParameterInfo
 helpviewer_keywords:
 - CDaoParameterInfo structure [MFC]
 - DAO (Data Access Objects), Parameters collection
 ms.assetid: 45fd53cd-cb84-4e12-b48d-7f2979f898ad
-ms.openlocfilehash: 62addd44f8aa8fceafef6a27244994a2ec6b766b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4f0ee7ebe1d5d4eff50194c2d5c5cccf8f373c61
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399787"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71096074"
 ---
 # <a name="cdaoparameterinfo-structure"></a>CDaoParameterInfo 구조체
 
-`CDaoParameterInfo` 구조 데이터 액세스 개체 (DAO)에 대해 정의 된 매개 변수 개체에 대 한 정보가 들어 있습니다.
+구조 `CDaoParameterInfo` 에는 DAO (data access objects)에 대해 정의 된 매개 변수 개체에 대 한 정보가 포함 되어 있습니다.
+DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다.
+
 
 ## <a name="syntax"></a>구문
 
@@ -32,30 +34,30 @@ struct CDaoParameterInfo
 #### <a name="parameters"></a>매개 변수
 
 *m_strName*<br/>
-매개 변수 개체의 고유 이름을 지정 합니다. 자세한 내용은 DAO 도움말의 "Name 속성" 항목을 참조 합니다.
+매개 변수 개체의 이름을 고유 하 게 합니다. 자세한 내용은 DAO 도움말의 "이름 속성" 항목을 참조 하십시오.
 
 *m_nType*<br/>
-매개 변수 개체의 데이터 형식을 나타내는 값입니다. 가능한 값 목록을 참조 하세요. 합니다 *m_nType* 의 멤버는 [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) 구조입니다. 자세한 내용은 DAO 도움말의 "형식 속성" 항목을 참조 하세요.
+매개 변수 개체의 데이터 형식을 나타내는 값입니다. 가능한 값 목록은 [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) 구조체의 *m_nType* 멤버를 참조 하세요. 자세한 내용은 DAO 도움말의 "형식 속성" 항목을 참조 하십시오.
 
 *m_varValue*<br/>
-에 저장 된 매개 변수의 값을 [COleVariant](../../mfc/reference/colevariant-class.md) 개체입니다.
+[COleVariant](../../mfc/reference/colevariant-class.md) 개체에 저장 된 매개 변수의 값입니다.
 
 ## <a name="remarks"></a>설명
 
-기본 및 보조 위의에 대 한 참조 정보에서 반환 되는 방법을 나타내는 합니다 [GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) 클래스 멤버 함수 `CDaoQueryDef`합니다.
+위의 주 및 보조에 대 한 참조는 클래스 `CDaoQueryDef`의 [GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) 멤버 함수에서 정보를 반환 하는 방법을 표시 합니다.
 
-MFC는 클래스에서 DAO 매개 변수 개체를 캡슐화 하지 않습니다. 쿼리 정의 DAO MFC 기본 개체 `CDaoQueryDef` 개체는 해당 매개 변수 컬렉션에서 매개 변수를 저장 합니다. 매개 변수 개체에 액세스 하는 [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) 개체, 쿼리 정의 개체의 호출 `GetParameterInfo` 특정 매개 변수 이름 또는 매개 변수 컬렉션에 대 한 인덱스에 대 한 멤버 함수입니다. 사용할 수는 [CDaoQueryDef::GetParameterCount](../../mfc/reference/cdaoquerydef-class.md#getparametercount) 멤버 함수를 함께 `GetParameterInfo` 매개 변수 컬렉션을 반복 합니다.
+MFC는 클래스의 DAO 매개 변수 개체를 캡슐화 하지 않습니다. DAO querydef 개체 기본 MFC `CDaoQueryDef` 개체는 매개 변수 컬렉션에 매개 변수를 저장 합니다. [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) 개체의 매개 변수 개체에 액세스 하려면 특정 매개 변수 이름 또는 인덱스 `GetParameterInfo` 에 대 한 querydef 개체의 멤버 함수를 Parameters 컬렉션에 호출 합니다. 와`GetParameterInfo` 함께 [CDaoQueryDef:: getparametercount](../../mfc/reference/cdaoquerydef-class.md#getparametercount) 멤버 함수를 사용 하 여 Parameters 컬렉션을 반복할 수 있습니다.
 
-검색 되는 정보는 [CDaoQueryDef::GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) 멤버 함수에 저장 되는 `CDaoParameterInfo` 구조입니다. 호출 `GetParameterInfo` 해당 매개 변수 컬렉션 매개 변수 개체에 저장 된 쿼리 정의 개체에 대 한 합니다.
+[CDaoQueryDef:: GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) 멤버 함수에서 검색 된 정보는 `CDaoParameterInfo` 구조체에 저장 됩니다. 매개 `GetParameterInfo` 변수 컬렉션에서 매개 변수 개체가 저장 된의 querydef 개체에 대해를 호출 합니다.
 
 > [!NOTE]
->  가져오기 또는 설정 매개 변수의 값만, 사용 하려는 경우는 [GetParamValue](../../mfc/reference/cdaorecordset-class.md#getparamvalue) 하 고 [SetParamValue](../../mfc/reference/cdaorecordset-class.md#setparamvalue) 클래스의 멤버 함수 `CDaoRecordset`합니다.
+>  매개 변수의 값만 가져오거나 설정 하려면 클래스 `CDaoRecordset`의 [GetParamValue](../../mfc/reference/cdaorecordset-class.md#getparamvalue) 및 [SetParamValue](../../mfc/reference/cdaorecordset-class.md#setparamvalue) 멤버 함수를 사용 합니다.
 
-`CDaoParameterInfo` 또한 정의 `Dump` 디버그 멤버 함수를 만듭니다. 사용할 수 있습니다 `Dump` 의 내용을 덤프 하는 데는 `CDaoParameterInfo` 개체입니다.
+`CDaoParameterInfo`또한 디버그 빌드에서 `Dump` 멤버 함수를 정의 합니다. 를 사용 `Dump` 하 여 `CDaoParameterInfo` 개체의 콘텐츠를 덤프할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdao.h
+**헤더:** afxdao
 
 ## <a name="see-also"></a>참고자료
 

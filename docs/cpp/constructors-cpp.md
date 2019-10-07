@@ -1,17 +1,17 @@
 ---
 title: 생성자 (C++)
-ms.date: 07/02/2019
+ms.date: 09/05/2019
 helpviewer_keywords:
 - constructors [C++]
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: a2afa605fe110f7dc84d528330417ef3a1fc47e7
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 0e2e3536c8eb0a5b111ff18e43044783ea684f1f
+ms.sourcegitcommit: bf724dfc639b16d5410fab72183f8e6b781338bc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70926268"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062024"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -518,47 +518,6 @@ BaseClass1 ctor
 BaseClass2 ctor
 BaseClass3 ctor
 DerivedClass ctor
-```
-
-## <a name="virtual_functions_in_constructors"></a>생성자의 가상 함수
-
-생성자에서 가상 함수를 호출할 경우 주의하시기 바랍니다. 기본 클래스 생성자가 파생 클래스 생성자보다 항상 먼저 호출되므로, 기본 생성자에서 호출되는 함수는 파생 클래스 버전이 아닌 기본 클래스 버전입니다. 다음 예제에서 `DerivedClass`를 생성하면 `BaseClass` 생성자에 의해 `print_it()`의 `DerivedClass` 구현이 실행되기 이전에 `DerivedClass`의 `print_it()` 구현이 실행됩니다.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-class BaseClass{
-public:
-    BaseClass(){
-        print_it();
-    }
-    virtual void print_it() {
-        cout << "BaseClass print_it" << endl;
-    }
-};
-
-class DerivedClass : public BaseClass {
-public:
-    DerivedClass() {
-        print_it();
-    }
-    virtual void print_it(){
-        cout << "Derived Class print_it" << endl;
-    }
-};
-
-int main() {
-
-    DerivedClass dc;
-}
-```
-
-출력은 다음과 같습니다.
-
-```Output
-BaseClass print_it
-Derived Class print_it
 ```
 
 ## <a name="delegating_constructors"></a>생성자 위임

@@ -2,12 +2,12 @@
 title: Address Sanitizer를 사용하도록 Linux 프로젝트 구성
 description: Visual Studio에서 Address Sanitizer를 사용하도록 C++ Linux 프로젝트를 구성하는 방법을 설명합니다.
 ms.date: 06/07/2019
-ms.openlocfilehash: 2415e8971614de35f046b699ce99c3822faf9372
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: da7197981a431becfc1231dae96f7542062de675
+ms.sourcegitcommit: b3d19b5f59f3a5d90c24f9f16c73bad4c5eb6944
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66824183"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195885"
 ---
 # <a name="configure-linux-projects-to-use-address-sanitizer"></a>Address Sanitizer를 사용하도록 Linux 프로젝트 구성
 
@@ -31,6 +31,9 @@ ASan에서 오류를 감지하면 실행이 즉시 중지됩니다. 디버거에
 출력 창의 디버그 창에서 전체 ASan 출력(손상된 메모리가 할당/할당 취소된 위치 포함)을 볼 수도 있습니다.
 
 ## <a name="enable-asan-for-msbuild-based-linux-projects"></a>MSBuild 기반 Linux 프로젝트에 ASan 사용
+
+> [!NOTE]
+> Visual Studio 2019 버전 16.4부터 Linux 프로젝트용 AddressSanitizer는 **구성 속성** > **C/C++**  > **Address Sanitizer 사용**을 통해 사용하도록 설정됩니다.
 
 MSBuild 기반 Linux 프로젝트에 ASan을 사용하려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 다음으로 **구성 속성** > **C/C++**  > **Sanitizers**로 이동합니다. ASan은 컴파일러 및 링커 플래그를 통해 활성화되며, 작동하려면 프로젝트를 다시 컴파일해야 합니다.
 

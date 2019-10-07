@@ -1,11 +1,11 @@
 ---
 title: _outp, _outpw, _outpd
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _outpd
 - _outp
 - _outpw
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr100.dll
 - msvcr120.dll
@@ -13,7 +13,10 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr110.dll
 - msvcr80.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _outpw
 - _outpd
@@ -33,14 +36,14 @@ helpviewer_keywords:
 - _outpw function
 - _outp function
 ms.assetid: c200fe22-41f6-46fd-b0be-ebb805b35181
-ms.openlocfilehash: 1a507f4115a48372706590eb61f9e3e77a0e3548
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: d1e7028ae833e1358ce3199b7e7079535c84d135
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57752066"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944126"
 ---
-# <a name="outp-outpw-outpd"></a>_outp, _outpw, _outpd
+# <a name="_outp-_outpw-_outpd"></a>_outp, _outpw, _outpd
 
 포트에서 바이트(`_outp`), 워드(`_outpw`) 또는 2배 워드(`_outpd`)를 출력합니다.
 
@@ -75,11 +78,11 @@ unsigned long dataword
 *databyte, dataword*<br/>
 출력 값입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 함수는 데이터 출력을 반환합니다. 반환되는 오류가 없습니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `_outp`, `_outpw`및 `_outpd` 함수는 바이트, 워드 및 2배 워드를 각각 지정된 출력 포트에 씁니다. *port* 인수는 0-65,535 범위에 속한 임의의 부호 없는 정수일 수 있고 *databyte*는 0–255 범위에 속한 임의의 정수일 수 있으며 *dataword*는 각각 정수, 부호 없는 정수(Short) 및 부호 없는 정수(Long) 범위에 속한 임의의 값일 수 있습니다.
 

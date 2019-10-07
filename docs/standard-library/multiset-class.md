@@ -298,7 +298,7 @@ const_iterator cbegin() const;
 
 `cbegin` 반환 값을 사용하여 범위의 요소를 수정할 수 없습니다.
 
-`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cbegin()`
+`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다. `cbegin()`
 
 ```cpp
 auto i1 = Container.begin();
@@ -324,7 +324,7 @@ const_iterator cend() const;
 
 `cend`는 반복기가 범위 끝을 통과했는지 여부를 테스트하는 데 사용됩니다.
 
-`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cend()`
+`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다. `cend()`
 
 ```cpp
 auto i1 = Container.end();
@@ -774,7 +774,7 @@ iterator emplace_hint(
 |매개 변수|설명|
 |-|-|
 |*args*|multiset에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
-|*where*|올바른 삽입 지점 검색을 시작할 위치입니다. 이 지점이 *바로 앞에*오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.|
+|*where*|올바른 삽입 지점 검색을 시작할 위치입니다. *이 지점이 바로 앞에*오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -1169,7 +1169,7 @@ IList);
 |매개 변수|설명|
 |-|-|
 |*Val*|multiset에 삽입할 요소의 값입니다.|
-|*Where*|올바른 삽입 지점 검색을 시작할 위치입니다. 이 지점이 *바로 앞에*오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.|
+|*Where*|올바른 삽입 지점 검색을 시작할 위치입니다. *이 지점이 바로 앞에*오면 로그 시간 대신 분할 상환 상수 시간에 삽입이 발생할 수 있습니다.|
 |*ValTy*|Multiset가 [value_type](../standard-library/map-class.md#value_type)의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하 고 *Val* 을 인수로 사용 하는 템플릿 매개 변수입니다.|
 |*첫째*|복사할 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 마지막 요소 바로 다음 위치입니다.|
@@ -1296,7 +1296,7 @@ typedef implementation-defined iterator;
 
 ### <a name="example"></a>예제
 
-을 선언 하 고 [](#begin) 사용 `iterator`하는 방법에 대 한 예제는 begin의 예제를 참조 하세요.
+`iterator`을 선언하고 사용하는 방법에 대한 예제는 [begin](#begin)의 예제를 참조하세요.
 
 ## <a name="key_comp"></a>  multiset::key_comp
 
@@ -1579,7 +1579,7 @@ multiset (
 
 모든 생성자는 multiset의 키 간 순서를 설정하는 데 사용되며 나중에 [key_comp](#key_comp)를 호출하여 반환할 수 있는 Compare 형식의 함수 개체를 저장합니다.
 
-처음 세 생성자는 빈 초기 multiset를 지정 하 고, 두 번째 생성자는 요소의 순서를 설정 하는 데 사용할 비교 함수 (*Comp*)의 형식을 지정 하며, 세 번째 생성자는 됩니다. **explicit** 키워드를 사용하는 경우 특정 종류의 자동 형식 변환이 수행되지 않습니다.
+처음 세 생성자는 빈 초기 multiset를 지정 하 고, 두 번째 생성자는 요소의 순서를 설정 하는 데 사용할 비교 함수 (*Comp* *)의*형식을 지정 하며, 세 번째 생성자는 됩니다. **explicit** 키워드를 사용하는 경우 특정 종류의 자동 형식 변환이 수행되지 않습니다.
 
 네 번째 생성자는 multiset *오른쪽*의 복사본을 지정 합니다.
 
@@ -1708,7 +1708,7 @@ multiset& operator=(multiset&& right);
 
 ### <a name="remarks"></a>설명
 
-`operator=`사용 된 참조 형식 (lvalue  또는 rvalue) `multiset`에 따라 오른쪽의 요소를이에 복사 하거나 이동 합니다. `operator=`가 실행되기 전에 이 `multiset`에 있는 요소가 삭제됩니다.
+`operator=`사용 된 참조 형식 (lvalue 또는 rvalue) `multiset`에 따라 오른쪽의 요소를이에 복사 하거나 이동 합니다. `operator=`가 실행되기 전에 이 `multiset`에 있는 요소가 삭제됩니다.
 
 ### <a name="example"></a>예제
 

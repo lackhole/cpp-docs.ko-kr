@@ -7,12 +7,12 @@ helpviewer_keywords:
 - stack, stack header
 - stack header
 ms.assetid: 89d8999e-c773-46f2-86c1-4b3b5aedb1c1
-ms.openlocfilehash: 8a31ccd553638b9b548db89a191da40bc513a05f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f6c51d85aa4a9f5516fe08dad163274051d94c13
+ms.sourcegitcommit: b3d19b5f59f3a5d90c24f9f16c73bad4c5eb6944
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68453768"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195821"
 ---
 # <a name="ltstackgt"></a>&lt;stack&gt;
 
@@ -40,19 +40,13 @@ ms.locfileid: "68453768"
 |[operator>](../standard-library/stack-operators.md#op_gt)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 큰지 테스트합니다.|
 |[operator>=](../standard-library/stack-operators.md#op_gt_eq)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 크거나 같은지 테스트합니다.|
 
-### <a name="functions"></a>함수
-
-|||
-|-|-|
-|[swap]()||
-
 ### <a name="classes"></a>클래스
 
 |||
 |-|-|
 |[stack 클래스](../standard-library/stack-class.md)|최근에 일부 기본 컨테이너 형식에 추가된 요소로만 액세스를 제한하는 템플릿 컨테이너 어댑터 클래스입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

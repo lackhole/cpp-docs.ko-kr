@@ -8,10 +8,10 @@ helpviewer_keywords:
 - MFC Ribbon Designer
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
 ms.openlocfilehash: a39a3a69b43eb06d67fc806e2d4fa9aec323b650
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70907818"
 ---
 # <a name="ribbon-designer-mfc"></a>리본 디자이너(MFC)
@@ -109,7 +109,7 @@ MFC 응용 프로그램에서 리본 리소스를 사용 하려면 [Cmfcribbon b
 
 - **리본 요소:** 패널의 컨트롤 (예: 단추 및 콤보 상자) 리본에서 호스팅할 수 있는 다양 한 컨트롤을 확인 하려면 보려면 ribbongadgets 샘플을 [참조 하세요. 리본 가젯 응용](../overview/visual-cpp-samples.md)프로그램입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)<br/>
 [리소스 파일 작업](../windows/working-with-resource-files.md)

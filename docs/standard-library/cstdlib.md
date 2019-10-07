@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - cstdlib header
 ms.assetid: 0a6aaebf-84e9-4b60-ae90-17e11981cf54
-ms.openlocfilehash: 298d6a512b2863a326bda0670f33fe8f1bda0688
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0b4f24f50c78d9a079e2c7d0c8e3d3c5bfe952c2
+ms.sourcegitcommit: 76cc69b482ada8ebf0837e8cdfd4459661f996dd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449404"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71127214"
 ---
 # <a name="ltcstdlibgt"></a>&lt;cstdlib&gt;
 
@@ -54,7 +54,7 @@ extern "C++" using compare-pred = int(const void*, const void*);
 
 ## <a name="start-and-termination-functions"></a>시작 및 종료 함수
 
-|함수|Description|
+|함수|설명|
 |-|-|
 |[_Exit](#_exit)|소멸자 또는 등록 된 함수를 사용 하지 않고 프로그램을 종료 합니다.|
 |[abort](#abort)|소멸자를 사용 하지 않고 프로그램을 종료 합니다.|
@@ -98,7 +98,7 @@ int at_quick_exit(atexit-handler * func) noexcept;
 
 #### <a name="remarks"></a>설명
 
-함수는를 호출할 때 `quick_exit` func가 가리키는 함수를 인수 없이 호출 하도록 등록 합니다.  `at_quick_exit()` `at_quick_exit()` 에 `at_quick_exit()` 대한호출이성공하고함수에서데이터경합을발생시지않습니다.`quick_exit` 두 개 이상의 스레드에서 `atexit` `at_quick_exit` `at_quick_exit` 가 호출 되 고 등록이 등록과 다르므로 응용 프로그램에서 두 등록 함수를 호출 해야 할 수 있습니다. 동일한 인수입니다. 구현은 32 이상의 함수 등록을 지원 해야 합니다.
+함수 `at_quick_exit()` 는를 호출할 때 `quick_exit` 인수 없이 호출 되는 함수 func를 등록 합니다. 에 대 한 `at_quick_exit()` 호출이 `quick_exit` 성공 하지 못할 수 있습니다. 함수 `at_quick_exit()` 는 데이터 레이스를 도입 하지 않습니다. 둘 이상의 스레드에서가 호출 된 경우 `at_quick_exit` 등록 순서는 결정 되지 않을 수 있습니다. 등록 `at_quick_exit` 은`atexit` 등록과 다르므로 응용 프로그램은 동일한 인수를 사용 하 여 두 등록 함수를 호출 해야 할 수도 있습니다. MSVC은 32 이상의 함수 등록을 지원 합니다.
 
 ### <a name="atexit"></a>atexit
 
@@ -109,7 +109,7 @@ int atexit(atexit-handler * func) noexcept;
 
 #### <a name="remarks"></a>설명
 
-함수 `atexit()` 는 함수 *에 의해 가리키는* 함수를 정상적으로 프로그램 종료 시 인수 없이 호출 되도록 등록 합니다. 를 `atexit()` `atexit()` 호출 하기 전에 발생 하지 않는에 대 한 호출이 성공 하 고 함수에서 데이터 경합을 발생 시 지 여부를 지정 하지 않습니다. `exit()` 구현은 32 이상의 함수 등록을 지원 해야 합니다.
+함수 `atexit()` 는 함수에 의해 가리키는 함수를 정상적으로 프로그램 종료 시 인수 없이 *호출 되도록 등록* 합니다. 에 대 한 호출이 성공 하지 못할수있습니다.`exit()` `atexit()` 함수 `atexit()` 는 데이터 레이스를 도입 하지 않습니다.
 
 #### <a name="return-value"></a>반환 값
 
@@ -125,11 +125,11 @@ int atexit(atexit-handler * func) noexcept;
 
 첫째, 스레드 저장 기간이 있는 개체와 현재 스레드와 연결 된 개체가 제거 됩니다.
 
-그런 다음 정적 저장 기간이 있는 개체가 제거 되 고를 호출 `atexit` 하 여 등록 된 함수가 호출 됩니다. 를 호출한 `exit()`결과로 자동 개체가 소멸 되지 않습니다. 함수가 throw 된 `std::terminate()` 예외에 대 한 처리기 `exit` 를 제공 하지 않기 때문에에서 호출 된 등록 된 함수를 벗어나면이 호출 됩니다. 함수는 등록 될 때마다 호출 됩니다. 자동 저장 기간이 있는 개체는 모두 주 함수에 자동 개체가 없고에 대 `exit()`한 호출을 실행 하는 프로그램에서 모두 제거 됩니다. Main에서 catch 된 예외를 throw 하 여 이러한 main 함수로 컨트롤을 직접 전송할 수 있습니다.
+그런 다음 정적 저장 기간이 있는 개체가 제거 되 고를 호출 `atexit` 하 여 등록 된 함수가 호출 됩니다. 자동 개체는가 호출 `exit()` 될 때 소멸 되지 않습니다. 함수가 throw 된 `std::terminate()` 예외에 대 한 처리기 `exit` 를 제공 하지 않기 때문에에서 호출 된 등록 된 함수를 벗어나면가 호출 됩니다. 함수는 등록 될 때마다 한 번씩 호출 됩니다. 자동 저장 기간이 포함 된 개체는 모두 `main` 함수에 자동 개체가 없고에 대 `exit()`한 호출을 실행 하는 프로그램에서 모두 제거 됩니다. `main` 에서`main`catch 된 예외를 throw 하 여 컨트롤을 이러한 함수로 직접 전송할 수 있습니다.
 
-그런 다음, 기록 되지 않은 버퍼링 된 데이터를 사용 하 여 열려 있는 모든 c <cstdio>스트림 (에 선언 된 함수 서명에서 조정)이 플러시되고, 모든 열린 c 스트림이 닫히고,를 호출 `tmpfile()` 하 여 만든 모든 파일이 제거 됩니다.
+그런 다음 기록 되지 않은 버퍼링 된 데이터를 사용 하 여 열려 있는 모든 c 스트림 \<(cstdio> >에 선언 된 함수 서명에 의해 조정)이 플러시되고, 모든 열린 c 스트림이 닫히고,를 호출 `tmpfile()` 하 여 만든 모든 파일이 제거 됩니다.
 
-마지막으로 컨트롤이 호스트 환경으로 반환 됩니다. Status가 0 또는 EXIT_SUCCESS 인 경우 성공적인 종료 상태의 구현에 정의 된 형식이 반환 됩니다. Status가 EXIT_FAILURE 이면 구현이 정의 된 상태 종료 성공 상태가 반환 됩니다. 그렇지 않으면 반환 된 상태는 구현에서 정의 됩니다.
+마지막으로 컨트롤이 호스트 환경으로 반환 됩니다. *Status* 가 0 또는 EXIT_SUCCESS 인 경우 성공적인 종료 상태의 구현에 정의 된 형식이 반환 됩니다. MSVC는 값 0을 반환 합니다. *Status* 가 EXIT_FAILURE 이면 MSVC는 값 3을 반환 합니다. 그렇지 않으면 MSVC는 *상태* 매개 변수 값을 반환 합니다.
 
 ### <a name="getenv"></a>getenv
 
@@ -145,7 +145,7 @@ char* getenv(const char* name);
 
 #### <a name="remarks"></a>설명
 
-에 대 `at_quick_exit` 한 호출로 등록 된 함수는 등록 시 이미 호출 된 이전에 등록 된 함수가 호출 된 후 함수를 호출 해야 한다는 점을 제외 하 고는 등록의 반대 순서로 호출 됩니다. 를 호출한 `quick_exit`결과로 개체가 제거 되지 않아야 합니다. 함수가 throw 된 `std::terminate()` 예외에 대 한 처리기 `quick_exit` 를 제공 하지 않기 때문에에서 호출 된 등록 된 함수를 벗어나면이 호출 됩니다. 를 통해 `at_quick_exit` 등록 된 함수는를 호출 `quick_exit`하는 스레드에 의해 호출 됩니다 .이 스레드는 등록 된 것과 다른 스레드가 될 수 있으므로 등록 된 함수는 스레드 저장 기간이 있는 개체의 id를 사용 하지 않아야 합니다. 등록 된 함수를 호출한 `quick_exit` 후는 `_Exit(status)`를 호출 해야 합니다. 표준 파일 버퍼는 플러시되지 않습니다. 에 등록 `quick_exit` 된 함수가 인 경우 함수는 신호를 안전 `at_quick_exit` 하 게 보호 합니다.
+일반적으로에 대 `at_quick_exit` 한 호출로 등록 된 함수는 해당 등록의 반대 순서로 호출 됩니다. 이 순서는 다른 등록 된 함수가 이미 호출 된 후에 등록 된 함수에는 적용 되지 않습니다. 가 호출 되 면 `quick_exit` 개체가 제거 되지 않습니다. 함수가 throw 된 `std::terminate()` 예외에 대 한 처리기 `quick_exit` 를 제공 하지 않기 때문에에서 호출 된 등록 된 함수를 벗어나면가 호출 됩니다. 를 통해 `at_quick_exit` 등록 된 함수는를 호출 `quick_exit`하는 스레드에서 호출 됩니다 .이 함수는 해당 함수를 등록 한 스레드와 다른 스레드가 될 수 있습니다. 즉, 등록 된 함수는 스레드 저장 기간이 있는 개체의 id를 사용 하지 않아야 합니다. 등록 된 함수를 호출한 `quick_exit` 후 `_Exit(status)`에는를 호출 합니다. 표준 파일 버퍼는 플러시되지 않습니다. 에 등록 `quick_exit` 된 함수가 인 경우 함수는 신호를 안전 `at_quick_exit` 하 게 보호 합니다.
 
 ### <a name="system"></a>컴퓨터
 
@@ -156,11 +156,20 @@ int system(const char* string);
 ## <a name="memory-allocation-functions"></a>메모리 할당 함수
 
 ```cpp
-void* aligned_alloc(size_t alignment, size_t size);
+// void* aligned_alloc(size_t alignment, size_t size); // Unsupported in MSVC
 void* calloc(size_t nmemb, size_t size);
 void free(void* ptr);
 void* malloc(size_t size);
 void* realloc(void* ptr, size_t size);
+```
+
+### <a name="remarks"></a>설명
+
+이러한 함수는 C 표준 라이브러리에 지정 된 의미 체계를 가집니다. MSVC는 함수를 `aligned_alloc` 지원 하지 않습니다. C11는 `aligned_alloc()` 의 `free()`Microsoft 구현과 호환 되지 않는 방식으로 지정 됩니다. 즉, `free()` 매우 정렬 된 할당을 처리할 수 있어야 합니다.
+
+## <a name="numeric-string-conversions"></a>숫자 문자열 변환
+
+```cpp
 double atof(const char* nptr);
 int atoi(const char* nptr);
 long int atol(const char* nptr);
@@ -174,11 +183,11 @@ unsigned long int strtoul(const char* nptr, char** endptr, int base);
 unsigned long long int strtoull(const char* nptr, char** endptr, int base);
 ```
 
-#### <a name="remarks"></a>설명
+### <a name="remarks"></a>설명
 
 이러한 함수는 C 표준 라이브러리에 지정 된 의미 체계를 가집니다.
 
-##  <a name="multibyte--wide-string-and-character-conversion-functions"></a>멀티 바이트/와이드 문자열 및 문자 변환 함수
+## <a name="multibyte--wide-string-and-character-conversion-functions"></a>멀티 바이트/와이드 문자열 및 문자 변환 함수
 
 ```cpp
 int mblen(const char* s, size_t n);
@@ -227,6 +236,15 @@ double abs(double j);
 long double abs(long double j);
 long int labs(long int j);
 long long int llabs(long long int j);
+```
+
+### <a name="remarks"></a>설명
+
+이러한 함수는 C 표준 라이브러리에 지정 된 의미 체계를 가집니다.
+
+## <a name="integer-division"></a>정수 나누기
+
+```cpp
 div_t div(int numer, int denom);
 ldiv_t div(long int numer, long int denom);
 lldiv_t div(long long int numer, long long int denom);
@@ -238,18 +256,7 @@ lldiv_t lldiv(long long int numer, long long int denom);
 
 이러한 함수는 C 표준 라이브러리에 지정 된 의미 체계를 가집니다.
 
-## <a name="functions"></a>함수
-
-```cpp
-void* bsearch(const void* key, const void* base, size_t nmemb, size_t size,
-c-compare-pred * compar);
-void* bsearch(const void* key, const void* base, size_t nmemb, size_t size,
-compare-pred * compar);
-void qsort(void* base, size_t nmemb, size_t size, c-compare-pred * compar);
-void qsort(void* base, size_t nmemb, size_t size, compare-pred * compar);
-```
-
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리 개요](../standard-library/cpp-standard-library-overview.md)\

@@ -1,9 +1,9 @@
 ---
 title: _abnormal_termination
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _abnormal_termination
-apilocation:
+api_location:
 - msvcr110.dll
 - msvcr110_clr0400.dll
 - msvcr90.dll
@@ -11,20 +11,23 @@ apilocation:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr100.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _abnormal_termination
 helpviewer_keywords:
 - _abnormal_termination
 ms.assetid: 952970a4-9586-4c3d-807a-db729448c91c
-ms.openlocfilehash: 213938fa830f0a924fa954d4a36a39b544473dd4
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: b66cf0df998b4e33a9f3425fdf0f260d163f423b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741293"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944717"
 ---
-# <a name="abnormaltermination"></a>_abnormal_termination
+# <a name="_abnormal_termination"></a>_abnormal_termination
 
 시스템이 종료 처리기의 내부 목록을 실행하는 동안 [try-finally](../cpp/try-finally-statement.md) 문의 `__finally` 블록이 입력되었는지 여부를 나타냅니다.
 
@@ -35,11 +38,11 @@ int   _abnormal_termination(
    );
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 시스템이 스택을 *해제*하면 **true**이고, 해제하지 않으면 **false**입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 해제 예외를 관리하기 위해 사용되는 내부 함수이며 사용자 코드에서 호출할 수 없습니다.
 

@@ -10,10 +10,10 @@ helpviewer_keywords:
 - canceling parallel tasks [Concurrency Runtime]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
 ms.openlocfilehash: 3a7f9c5720c4bd6a43a1a95f9bc19680ba0a9c1e
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69631721"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL에서의 취소
@@ -23,7 +23,7 @@ ms.locfileid: "69631721"
 > [!NOTE]
 >  런타임에서는 예외 처리를 사용하여 취소를 구현합니다. 코드에서 이들 예외를 catch 또는 처리하지 마세요. 또한 작업에 대한 함수 본문에 예외로부터 안전한 코드를 작성하는 것이 좋습니다. 예를 들어 작업 본문에서 예외가 throw 될 때 리소스를 올바르게 처리 하기 위해 RAII ( *Resource Instance Initialization* ) 패턴을 사용할 수 있습니다. RAII 패턴을 사용 하 여 취소할 수 있는 작업에서 리소스를 정리 하는 전체 예제를 보려면 [연습: 사용자 인터페이스 스레드에서](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)작업 제거
 
-## <a name="key-points"></a>요점
+## <a name="key-points"></a>주요 사항
 
 - 취소는 공동 작업이고 취소를 요청하는 코드와 취소에 응답하는 작업 간의 조정을 포함합니다.
 

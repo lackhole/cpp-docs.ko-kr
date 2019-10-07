@@ -10,19 +10,19 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], destroying
 - modal dialog boxes [MFC], destroying
 ms.assetid: dabceee7-3639-4d85-bf34-73515441b3d0
-ms.openlocfilehash: 84ae5b336bb8eeac4f8ab7b6e5b9f00246f9ca15
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b407c6e832dde7a5865146e7cc12d1840d3234a
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254308"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685848"
 ---
 # <a name="destroying-the-dialog-box"></a>대화 상자 소멸시키기
 
-일반적으로 모달 대화 상자 스택 프레임에 생성 되어를 만든 함수가 종료 될 때 소멸 합니다. 대화 상자 개체의 소멸자는 개체 범위를 벗어날 때 호출 됩니다.
+모달 대화 상자는 일반적으로 스택 프레임에서 만들어지고 해당 대화 상자를 만든 함수가 종료 될 때 소멸 됩니다. 대화 상자 개체의 소멸자는 개체가 범위를 벗어날 때 호출 됩니다.
 
-모덜리스 대화 상자는 일반적으로 만들고 부모 뷰나 프레임 창을 소유-응용 프로그램의 주 프레임 창 또는 문서 프레임 창입니다. 기본값 [OnClose](../mfc/reference/cwnd-class.md#onclose) 처리기 호출 [DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow), 대화 상자 창에는 제거 합니다. 대화 상자를 독립적으로 또는 기타 특수 소유권 의미 체계에 없는 대 한 포인터를 사용 하 여 실행을 하는 경우를 재정의 해야 [PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy) 제거 하는 C++ 대화 상자 개체입니다. 또한 재정의 해야 [OnCancel](../mfc/reference/cdialog-class.md#oncancel) 호출 `DestroyWindow` 에서 그 합니다. 하는 경우, 대화 상자의 소유자는 제거 하지는 C++ 더 이상 필요한 경우 개체입니다.
+모덜리스 대화 상자는 일반적으로 부모 뷰나 프레임 창 (응용 프로그램의 주 프레임 창 또는 문서 프레임 창)에서 만들고 소유 합니다. 기본 [OnClose](../mfc/reference/cwnd-class.md#onclose) 처리기는 대화 상자 창을 소멸 시키는 [DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow)를 호출 합니다. 대화 상자가 단독으로 사용 되는 경우이 대화 상자에 대 한 포인터 또는 다른 특별 한 소유권 의미 체계가 없으면 [PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy) 를 C++ 재정의 하 여 대화 상자 개체를 제거 해야 합니다. 또한 [OnCancel](../mfc/reference/cdialog-class.md#oncancel) 를 재정의 하 고 내부에서 `DestroyWindow`을 호출 해야 합니다. 그렇지 않으면 대화 상자의 소유자가 개체가 더 이상 필요 하지 않을 C++ 때 해당 개체를 삭제 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)
+[MFC에서 대화 상자 작업](../mfc/life-cycle-of-a-dialog-box.md)

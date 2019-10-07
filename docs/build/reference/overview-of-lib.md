@@ -1,57 +1,60 @@
 ---
 title: LIB 개요
-ms.date: 11/04/2016
+description: 라이브러리 도구인 lib.exe의 사용 및 옵션에 대 한 개요입니다.
+ms.date: 09/25/2019
 f1_keywords:
 - Lib
 helpviewer_keywords:
 - LIB [C++], modes
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
-ms.openlocfilehash: 97d7b8892574fbe485a8d6c5e344e4a77aaf8519
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7223ef0a624cf15c43bd067db8a7919efd27df17
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320281"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685498"
 ---
 # <a name="overview-of-lib"></a>LIB 개요
 
-LIB에서 만드는 표준 라이브러리, 라이브러리, 파일 가져오기 및 내보내기에 사용할 수 [링크](linker-options.md) 는 프로그램을 빌드할 때입니다. LIB 명령 프롬프트에서 실행 됩니다.
+LIB (lib.exe)는 프로그램을 빌드할 때 [링크](linker-options.md) 와 함께 사용할 수 있는 표준 라이브러리, 가져오기 라이브러리 및 내보내기 파일을 만듭니다. LIB는 명령 프롬프트에서 실행 됩니다.
 
-다음과 같은 모드로 LIB를 사용할 수 있습니다.
+LIB는 다음 모드에서 사용할 수 있습니다.
 
-- [빌드 또는 COFF 라이브러리 수정](managing-a-library.md)
+- [COFF 라이브러리 빌드 또는 수정](managing-a-library.md)
 
-- [멤버 개체를 파일에 추출합니다.](extracting-a-library-member.md)
+- [파일에 대 한 멤버 개체 추출](extracting-a-library-member.md)
 
-- [가져오기 라이브러리 및 내보내기 파일 만들기](working-with-import-libraries-and-export-files.md)
+- [내보내기 파일 및 가져오기 라이브러리 만들기](working-with-import-libraries-and-export-files.md)
 
-이러한 모드는 함께 사용할 수 없습니다. LIB를 한 번에 하나의 모드 에서만 사용할 수 있습니다.
+이러한 모드는 함께 사용할 수 없습니다. LIB는 한 번에 하나의 모드 에서만 사용할 수 있습니다.
 
-## <a name="lib-options"></a>Lib 옵션
+## <a name="lib-options"></a>LIB 옵션
 
-다음 표에서 자세한 정보에 대 한 링크를 사용 하 여 lib.exe 옵션을 나열합니다.
+다음 표에서는 lib.exe의 옵션을 나열 하 고 자세한 정보에 대 한 링크를 제공 합니다.
 
 |옵션|설명|
 |-|-|
-|**/DEF**|가져오기 라이브러리 및 내보내기 파일을 만듭니다.<br/><br/>자세한 내용은 참조 [가져오기 라이브러리 및 내보내기 파일 빌드](building-an-import-library-and-export-file.md)합니다.|
-|**/ERRORREPORT**|   Lib.exe 사용 하 여 내부 오류에 대 한 Microsoft로 정보를 보냅니다.<br/><br/>자세한 내용은 참조 [LIB 실행](running-lib.md)합니다.|
-|**/EXPORT**|   프로그램에서 함수를 내보냅니다.<br/><br/>자세한 내용은 참조 [가져오기 라이브러리 및 내보내기 파일 빌드](building-an-import-library-and-export-file.md)합니다.|
-|**/EXTRACT**|   기존 라이브러리 멤버의 복사본을 포함 하는 개체 (.obj) 파일을 만듭니다.<br/><br/>자세한 내용은 참조 [라이브러리 멤버 추출](extracting-a-library-member.md)합니다.|
-|**/INCLUDE**|   기호를 기호 테이블에 추가합니다.<br/><br/>자세한 내용은 참조 [가져오기 라이브러리 및 내보내기 파일 빌드](building-an-import-library-and-export-file.md)합니다.|
-|**/LIBPATH**|   환경 라이브러리 경로를 재정의합니다.<br/><br/>자세한 내용은 참조 [라이브러리 관리](managing-a-library.md)합니다.|
-|**/LIST**|   표준 출력으로 출력 라이브러리에 대 한 정보를 표시합니다.<br/><br/>자세한 내용은 참조 [라이브러리 관리](managing-a-library.md)합니다.|
-|**/LTCG**|   링크 타임 코드 생성을 사용 하 여 빌드될 라이브러리를 하면 됩니다.<br/><br/>자세한 내용은 참조 [LIB 실행](running-lib.md)합니다.|
-|**/MACHINE**|   프로그램에 대 한 대상 플랫폼을 지정합니다.<br/><br/>자세한 내용은 참조 [LIB 실행](running-lib.md)합니다.|
-|**/NAME**|   가져오기 라이브러리를 빌드할 때 작성 중인 가져오기 라이브러리 DLL의 이름을 지정 합니다.<br/><br/>자세한 내용은 참조 [라이브러리 관리](managing-a-library.md)합니다.|
-|**/NODEFAULTLIB**|   외부 참조를 확인할 때 검색 하는 라이브러리 목록에서 하나 이상의 기본 라이브러리를 제거 합니다.<br/><br/>자세한 내용은 참조 [라이브러리 관리](managing-a-library.md)합니다.|
-|**/NOLOGO**|   LIB 저작권 메시지 및 버전 번호를 표시 하지 않습니다 하 고 명령 파일의 에코를 방지 합니다.<br/><br/>자세한 내용은 참조 [LIB 실행](running-lib.md)합니다.|
-|**/OUT**|   기본 출력 파일 이름을 재정의합니다.<br/><br/>자세한 내용은 참조 [라이브러리 관리](managing-a-library.md)합니다.|
-|**/REMOVE**|   출력 라이브러리에서 개체를 제거 합니다.<br/><br/>자세한 내용은 참조 [라이브러리 관리](managing-a-library.md)합니다.|
-|**/SUBSYSTEM**|   운영 시스템에 연결 하 여 출력 라이브러리를 생성 하는 프로그램을 실행 하는 방법을 알려줍니다.<br/><br/>자세한 내용은 참조 [라이브러리 관리](managing-a-library.md)합니다.|
-|**/VERBOSE**|   추가 하려는.obj 파일의 이름을 비롯 하 여 세션의 진행률에 대 한 세부 정보를 표시 합니다.<br/><br/>자세한 내용은 참조 [LIB 실행](running-lib.md)합니다.|
-|**/WX**|   경고를 오류로 처리 합니다.<br/><br/>자세한 내용은 참조 [LIB 실행](running-lib.md)합니다.|
+|**/DEF**|가져오기 라이브러리 및 내보내기 파일을 만듭니다.<br/><br/>자세한 내용은 [가져오기 라이브러리 및 내보내기 파일 작성](building-an-import-library-and-export-file.md)을 참조 하세요.|
+|**/ERRORREPORT**|   Lib.exe를 사용 하 여 내부 오류에 대 한 정보를 Microsoft에 보냅니다.<br/><br/>자세한 내용은 [LIB 실행](running-lib.md)을 참조하세요.|
+|**/EXPORT**|   프로그램에서 함수를 내보냅니다.<br/><br/>자세한 내용은 [가져오기 라이브러리 및 내보내기 파일 작성](building-an-import-library-and-export-file.md)을 참조 하세요.|
+|**/EXTRACT**|   기존 라이브러리의 멤버 복사본을 포함 하는 개체 (.obj) 파일을 만듭니다.<br/><br/>자세한 내용은 [라이브러리 멤버 추출](extracting-a-library-member.md)을 참조 하세요.|
+|**/INCLUDE**|   기호 테이블에 기호를 추가 합니다.<br/><br/>자세한 내용은 [가져오기 라이브러리 및 내보내기 파일 작성](building-an-import-library-and-export-file.md)을 참조 하세요.|
+|**/LIBPATH**|   환경 라이브러리 경로를 재정의합니다.<br/><br/>자세한 내용은 [라이브러리 관리](managing-a-library.md)를 참조 하세요.|
+|**/LINKREPRO**|   Lib.exe 충돌 또는 내부 오류를 재현 하는 데 필요한 아티팩트를 만듭니다.<br/><br/>자세한 내용은 [LIB 실행](running-lib.md)을 참조하세요.|
+|**/LINKREPROTARGET**|   지정 된 파일과 함께 lib.exe를 사용 하는 경우에만 **/LINKREPRO** 아티팩트를 생성 합니다.<br/><br/>자세한 내용은 [LIB 실행](running-lib.md)을 참조하세요.|
+|**/LIST**|   출력 라이브러리에 대 한 정보를 표준 출력에 표시 합니다.<br/><br/>자세한 내용은 [라이브러리 관리](managing-a-library.md)를 참조 하세요.|
+|**/LTCG**|   링크 타임 코드 생성을 사용 하 여 라이브러리를 빌드 합니다.<br/><br/>자세한 내용은 [LIB 실행](running-lib.md)을 참조하세요.|
+|**/MACHINE**|   프로그램의 대상 플랫폼을 지정 합니다.<br/><br/>자세한 내용은 [LIB 실행](running-lib.md)을 참조하세요.|
+|**/NAME**|   가져오기 라이브러리를 빌드할 때 가져오기 라이브러리를 빌드할 DLL의 이름을 지정 합니다.<br/><br/>자세한 내용은 [라이브러리 관리](managing-a-library.md)를 참조 하세요.|
+|**/NODEFAULTLIB**|   외부 참조를 확인할 때 검색 하는 라이브러리 목록에서 하나 이상의 기본 라이브러리를 제거 합니다.<br/><br/>자세한 내용은 [라이브러리 관리](managing-a-library.md)를 참조 하세요.|
+|**/NOLOGO**|   LIB 저작권 메시지 및 버전 번호의 표시를 억제 하 고 명령 파일의 에코를 방지 합니다.<br/><br/>자세한 내용은 [LIB 실행](running-lib.md)을 참조하세요.|
+|**/OUT**|   기본 출력 파일 이름을 재정의 합니다.<br/><br/>자세한 내용은 [라이브러리 관리](managing-a-library.md)를 참조 하세요.|
+|**/REMOVE**|   출력 라이브러리에서 개체를 생략 합니다.<br/><br/>자세한 내용은 [라이브러리 관리](managing-a-library.md)를 참조 하세요.|
+|**/SUBSYSTEM**|   운영 체제에서 출력 라이브러리에 연결 하 여 만든 프로그램을 실행 하는 방법을 알려 줍니다.<br/><br/>자세한 내용은 [라이브러리 관리](managing-a-library.md)를 참조 하세요.|
+|**/VERBOSE**|   추가 되는 .obj 파일의 이름을 포함 하 여 세션 진행률에 대 한 세부 정보를 표시 합니다.<br/><br/>자세한 내용은 [LIB 실행](running-lib.md)을 참조하세요.|
+|**/WX**|   경고를 오류로 처리 합니다.<br/><br/>자세한 내용은 [LIB 실행](running-lib.md)을 참조하세요.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [LIB 참조](lib-reference.md)<br/>
 [LIB 입력 파일](lib-input-files.md)<br/>

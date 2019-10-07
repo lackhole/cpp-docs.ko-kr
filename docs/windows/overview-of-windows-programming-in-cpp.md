@@ -1,23 +1,23 @@
 ﻿---
 title: C++를 이용한 Windows 프로그래밍 개요
-ms.date: 07/28/2019
+ms.date: 09/17/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 10ef9698e27099d5856c1ed5f8ed2f21cea72c24
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 96a03194059f59f57780bfd70cab3065d6a1aff0
+ms.sourcegitcommit: 76cc69b482ada8ebf0837e8cdfd4459661f996dd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514800"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71127190"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++를 이용한 Windows 프로그래밍 개요
 
 C++를 사용하면 다양한 종류의 Windows 응용 프로그램을 만들 수 있습니다. 각각 고유한 프로그래밍 모델과 Windows 관련 라이브러리 집합이 있지만 C++ 표준 라이브러리나 타사 C++ 라이브러리도 사용할 수 있습니다. 
 
-이 섹션에서는 Visual Studio 및 MFC/ATL 래퍼 라이브러리를 사용하여 Windows 프로그램을 만드는 방법을 설명 합니다. Windows 플랫폼 자체에 대한 설명서는 [Windows 설명서](/windows/index)를 참조하세요.
+이 섹션에서는 Visual Studio 및 MFC/ATL 래퍼 라이브러리를 사용하여 Windows 프로그램을 만드는 방법을 설명합니다. Windows 플랫폼 자체에 대한 설명서는 [Windows 설명서](/windows/index)를 참조하세요.
 
 ## <a name="command-line-console-applications"></a>명령줄(콘솔) 응용 프로그램
 
-C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍스트 출력만 표시할 수 있습니다. 자세한 내용은 [콘솔 응용 프로그램](console-applications-in-visual-cpp.md)을 참조하세요.
+C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍스트 출력만 표시할 수 있습니다. 자세한 내용은 [ C++ 콘솔 응용 프로그램 프로젝트 만들기](../get-started/tutorial-console-cpp.md)를 참조 하세요.
 
 ## <a name="native-desktop-CLIent-applications"></a>네이티브 데스크톱 클라이언트 응용 프로그램
 
@@ -34,11 +34,11 @@ C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍
 - DirectX에 대한 액세스
 - 표준 C++ 라이브러리의 대량 사용
 
-또한 C++의 기능과 효율성을 .NET 프로그래밍과 결합할 수 있습니다. C#에서 사용자 인터페이스를 만들고 C++/CLI를 사용하여 응용 프로그램에서 네이티브 C++ 라이브러리를 사용할 수 있습니다. 자세한 내용은 [C++/CLI를 이용한 .NET 프로그래밍](../dotnet/dotnet-programming-with-cpp-CLI-visual-cpp.md)을 참조하세요.
+또한 C++의 기능과 효율성을 .NET 프로그래밍과 결합할 수 있습니다. C#에서 사용자 인터페이스를 만들고 C++/CLI를 사용하여 응용 프로그램에서 네이티브 C++ 라이브러리를 사용할 수 있습니다. 자세한 내용은 [C++/CLI를 이용한 .NET 프로그래밍](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)을 참조하세요.
 
 ## <a name="com-components"></a>COM 구성 요소
 
-[구성 요소 개체 모델(COM)](/windows/win32/com/the-component-object-model)은 다른 언어로 작성된 프로그램 간에 서로 통신할 수 있게 해줍니다. 많은 Windows 구성 요소가 COM 개체로 구현되며 개체 만들기, 인터페이스 검색 및 개체 소멸에 대한 표준 COM 규칙을 따릅니다. C++ 데스크톱 응용 프로그램에서 COM 개체를 사용하는 것은 비교적 간단하지만 고유한 COM 개체를 작성하는 것에는 더 높은 수준의 지식이 필요합니다. [ATL(액티브 템플릿 라이브러리)](../atl/atl-com-desktop-components.md)은 COM 개발을 간소화하는 매크로 및 도우미 함수를 제공합니다. 자세한 내용은 [ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)를 참조하세요.
+[구성 요소 개체 모델(COM)](/windows/win32/com/the-component-object-model)은 다른 언어로 작성된 프로그램 간에 서로 통신을 가능하게 해줍니다. 많은 Windows 구성 요소가 COM 개체로 구현되며 개체 만들기, 인터페이스 검색 및 개체 소멸에 대한 표준 COM 규칙을 따릅니다.  C++ 데스크톱 응용 프로그램에서 COM 개체를 사용하는 것은 비교적 간단하지만 고유한 COM 개체를 작성하는 것에는 더 높은 수준의 지식이 필요합니다. [ATL(액티브 템플릿 라이브러리)](../atl/atl-com-desktop-components.md)은 COM 개발을 간소화하는 매크로 및 도우미 함수를 제공합니다. 자세한 내용은 [ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)를 참조하세요.
 
 ## <a name="universal-windows-platform-apps"></a>유니버설 Windows 플랫폼 앱
 
@@ -76,13 +76,13 @@ Visual Studio에는 C 런타임 라이브러리(CRT), C++ 표준 라이브러리
 
 Microsoft 라이브러리에는 다음이 포함됩니다.
 
-- Microsoft Foundation Classes (MFC): 단추, 목록 상자, 트리 뷰 및 기타 컨트롤을 포함하는 다양한 사용자 인터페이스가 있는 일반적인 Windows 프로그램, 특히 엔터프라이즈 응용 프로그램을 만들기 위한 개체 지향 프레임워크입니다. 자세한 내용은 [MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)을 참조하세요.
+- Microsoft Foundation Classes (MFC): 단추, 목록 상자, 트리 뷰 및 기타 컨트롤을 포함 하는 다양 한 사용자 인터페이스가 있는 일반적인 Windows 프로그램, 특히 엔터프라이즈 응용 프로그램을 만들기 위한 개체 지향 프레임 워크입니다. 자세한 내용은 [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)을 참조하세요.
 
-- ATL(액티브 템플릿 라이브러리): COM 구성 요소를 만들기 위한 강력한 도우미 라이브러리입니다. 자세한 내용은 [ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)를 참조하세요.
+- ATL (액티브 템플릿 라이브러리): COM 구성 요소를 만들기 위한 강력한 도우미 라이브러리입니다. 자세한 내용은 [ATL COM Desktop Components](../atl/atl-com-desktop-components.md)을 참조하세요.
 
-- C++AMP (C++ 대형 병렬 처리 가속화): GPU에서 고성능 일반 계산 작업을 수행할 수 있도록 하는 라이브러리입니다. 자세한 내용은 [C++ AMP(C++ Accelerated Massive Parallelism)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)를 참조하세요.
+- C++AMP (C++ 대형 병렬 처리 가속화): GPU에서 고성능 일반 계산 작업을 수행할 수 있도록 하는 라이브러리입니다. 자세한 내용은 [C++ AMP (C++ Accelerated Massive Parallelism)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)을 참조하세요.
 
-- 동시성 런타임: 다중 코어 및 다중 코어 장치에 대한 병렬 및 비동기 프로그래밍 작업을 간소화하는 라이브러리입니다. 자세한 내용은 [동시성 런타임](../parallel/concrt/concurrency-runtime.md)을 참조하세요.
+- 동시성 런타임: 다중 코어 및 다중 코어 장치에 대 한 병렬 및 비동기 프로그래밍 작업을 간소화 하는 라이브러리입니다. 자세한 내용은 [Concurrency Runtime](../parallel/concrt/concurrency-runtime.md)을 참조하세요.
 
 많은 Windows 프로그래밍 시나리오에는 Windows 운영체제 구성 요소에 액세스할 수 있는 헤더 파일을 포함하는 Windows SDK도 필요합니다. 기본적으로 Visual Studio는 유니버설 Windows 앱을 개발할 수 있도록 하는 C++ 데스크톱 워크로드의 구성 요소로 Windows SDK를 설치합니다. UWP 앱을 개발하려면 Windows 10 버전의 Windows SDK가 필요합니다. 자세한 내용은 [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)를 참조하세요. (이전 버전 Windows의 Windows SDK에 대한 자세한 내용은 [Windows SDK 아카이브](https://developer.microsoft.com/windows/downloads/sdk-archive)를 참조하세요.)
 
@@ -108,16 +108,16 @@ Visual Studio는 네이티브 코드에 대한 강력한 디버거, 정적 분�
 |[DirectX를 사용하여 게임을 만들기 위한 리소스](resources-for-creating-a-game-using-directx.md)
 |[방법: Windows 데스크톱 애플리케이션에서 Windows 10 SDK 사용](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows SDK|
 |[리소스 파일 작업](working-with-resource-files.md)|데스크톱 응용 프로그램에 이미지, 아이콘, 문자열 테이블 및 기타 리소스를 추가 하는 방법입니다.|
-|[DirectX (C++)를 사용하여 게임을 만들기 위한 리소스](resources-for-creating-a-game-using-directx.md)|C++을 이용한 게임 만들기에 대한 콘텐츠가 연결되어 있습니다.|
+|[DirectX를 사용 하 여 게임을 만들기C++위한 리소스 ()](resources-for-creating-a-game-using-directx.md)|에서 C++게임을 만들기 위한 콘텐츠에 대 한 링크입니다.|
 |[방법: Windows 데스크톱 애플리케이션에서 Windows 10 SDK 사용](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK를 사용하여 빌드할 프로젝트를 설정하는 단계를 설명합니다.|
 |[네이티브 데스크톱 애플리케이션 배포](deploying-native-desktop-applications-visual-cpp.md)|Windows에서 네이티브 응용 프로그램을 배포 합니다.|
 
 ## <a name="related-articles"></a>관련 문서
 
-|제목|Description|
+|제목|설명|
 |-----------|-----------------|
 |[Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)|Visual C++ 개발자 콘텐츠에 대한 부모 항목입니다.|
-[C++/CLI를 사용한 .NET 개발](../dotnet/dotnet-programming-with-cpp-CLI-visual-cpp.md)|.NET 응용 프로그램 및 구성 요소와의 상호운용이 가능하도록 네이티브 C++ 라이브러리의 래퍼를 만듭니다.|
+[C++/CLI를 사용한 .NET 개발](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|.NET 응용 프로그램 및 구성 요소와의 상호 운용이 가능하도록 네이티브 C++ 라이브러리의 래퍼를 만듭니다.|
 |[.NET 및 UWP용 구성 요소 확장](../extensions/component-extensions-for-runtime-platforms.md)|C++/CX 및 C++/CLI에서 공유하는 구문요소에 대한 참조입니다.|
 |[유니버설 Windows 앱(C++)](../cppcx/universal-windows-apps-cpp.md)|C++/CX 또는 Windows 런타임 템플릿 라이브러리(WRL)를 이용한 UWP 응용 프로그램 개발하기.|
 |[COM 및 .NET에 대한 C++ 특성](attributes/cpp-attributes-com-net.md)|.NET 또는 COM을 사용할 때의 Windows 전용 프로그래밍용 비표준 특성|

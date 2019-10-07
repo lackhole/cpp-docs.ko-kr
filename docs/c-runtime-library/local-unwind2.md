@@ -1,9 +1,9 @@
 ---
 title: _local_unwind2
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _local_unwind2
-apilocation:
+api_location:
 - msvcr110_clr0400.dll
 - msvcrt.dll
 - msvcr100.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcr80.dll
 - msvcr90.dll
 - msvcr120.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _local_unwind2
 - local_unwind2
@@ -19,14 +22,14 @@ helpviewer_keywords:
 - _local_unwind2 function
 - local_unwind2 function
 ms.assetid: 44f1fa82-e01e-490f-a6e6-18fc6811c28c
-ms.openlocfilehash: c62763ecbdd2c05e8cd7b6733ec1df4254362527
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 64ed92af32caaf579e7c6951250e3bf692d1cf43
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744002"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944204"
 ---
-# <a name="localunwind2"></a>_local_unwind2
+# <a name="_local_unwind2"></a>_local_unwind2
 
 내부 CRT 함수입니다. 지정된 범위 테이블에 나열된 모든 종료 처리기를 실행합니다.
 
@@ -47,7 +50,7 @@ void _local_unwind2(
 *stop*<br/>
 [in] `_local_unwind2`가 정지해야 하는 위치를 나타내는 어휘 수준입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 메서드는 런타임 환경에서 사용됩니다. 이 메서드를 사용자의 코드에서 호출하지 마세요.
 

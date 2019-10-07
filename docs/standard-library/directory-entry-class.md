@@ -41,7 +41,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68458954"
 ---
-# <a name="directoryentry-class"></a>directory_entry 클래스
+# <a name="directory_entry-class"></a>directory_entry 클래스
 
 `*X`에서 반환하는 개체에 대해 설명합니다. 여기서 *X* 는 [directory_iterator](../standard-library/directory-iterator-class.md) 또는 [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md)입니다.
 
@@ -67,7 +67,7 @@ class directory_entry;
 
 |멤버 함수|설명|
 |-|-|
-|[assign](#assign)|멤버 함수는에 *pval* `mypath`  `mystat`를 할당 *하 고* `mysymstat`를에 할당 합니다.|
+|[assign](#assign)|멤버 함수는에 *pval* `mypath` `mystat`를 할당 하 `mysymstat` *고를에* 할당 합니다.|
 |[path](#path)|멤버 함수는 `mypath`를 반환합니다.|
 |[replace_filename](#replace_filename)|멤버 함수는 `mypath` *pval*, `mypath.parent_path()` *stat_arg 및*  /  *symstat_arg로* 대체 합니다. `mysymstat` `mystat`|
 |[상태](#status)|두 멤버 함수 `mystat` 는 처음 변경 될 수 있습니다.|
@@ -148,7 +148,7 @@ bool operator!=(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
+`directory_entry`와 비교할 [directory_entry](../standard-library/directory-entry-class.md)입니다.
 
 ## <a name="op_as"></a>연산자 =
 
@@ -162,7 +162,7 @@ directory_entry& operator=(directory_entry&&) noexcept = default;
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-에 [](../standard-library/directory-entry-class.md) 복사 `directory_entry`되는 directory_entry입니다.
+`directory_entry`에 복사되는 [directory_entry](../standard-library/directory-entry-class.md)입니다.
 
 ## <a name="op_eq"></a>연산자 = =
 
@@ -175,7 +175,7 @@ bool operator==(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
+`directory_entry`와 비교할 [directory_entry](../standard-library/directory-entry-class.md)입니다.
 
 ## <a name="op_lt"></a> 연산자&lt;
 
@@ -188,7 +188,7 @@ bool operator<(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
+`directory_entry`와 비교할 [directory_entry](../standard-library/directory-entry-class.md)입니다.
 
 ## <a name="op_lteq"></a>연산자&lt;=
 
@@ -201,7 +201,7 @@ bool operator&lt;=(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
+`directory_entry`와 비교할 [directory_entry](../standard-library/directory-entry-class.md)입니다.
 
 ## <a name="op_gt"></a> 연산자&gt;
 
@@ -214,7 +214,7 @@ bool operator&gt;(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
+`directory_entry`와 비교할 [directory_entry](../standard-library/directory-entry-class.md)입니다.
 
 ## <a name="op_gteq"></a>연산자&gt;=
 
@@ -227,7 +227,7 @@ bool operator&gt;=(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-와 [](../standard-library/directory-entry-class.md) 비교할 `directory_entry`directory_entry입니다.
+`directory_entry`와 비교할 [directory_entry](../standard-library/directory-entry-class.md)입니다.
 
 ## <a name="path_type"></a>연산자 const path_type &
 

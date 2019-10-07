@@ -1,9 +1,9 @@
 ---
 title: _get_output_format
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_output_format
-apilocation:
+api_location:
 - msvcr110_clr0400.dll
 - msvcr100.dll
 - msvcr80.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcr90.dll
 - msvcr120.dll
 - msvcr110.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - get_output_format
 - _get_output_format
@@ -20,14 +23,14 @@ helpviewer_keywords:
 - get_output_format function
 - _get_output_format function
 ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
-ms.openlocfilehash: 60e209f6f8b723bfae1a4b434750b6237dc6479d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 20afa988bc4fdf3bc3a6ff073a48a1cc00ff84c5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751429"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944362"
 ---
-# <a name="getoutputformat"></a>_get_output_format
+# <a name="_get_output_format"></a>_get_output_format
 
 출력 형식 플래그의 현재 값을 가져옵니다.
 
@@ -40,11 +43,11 @@ ms.locfileid: "57751429"
 unsigned int _get_output_format();
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 출력 형식 플래그의 현재 값입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 출력 형식 플래그는 형식이 지정된 I/O의 기능을 제어합니다. 현재 플래그는 두 가지 가능한 값인 0과 `_TWO_DIGIT_EXPONENT`를 사용합니다. `_TWO_DIGIT_EXPONENT` 가 설정된 경우 부동 소수점 숫자는 세 번째 숫자가 지수의 크기에 따라 필요한 경우가 아닌 한 지수에 두 자리 숫자로 인쇄됩니다. 플래그가 0이면 부동 소수점 출력은 필요한 경우 0을 사용하여 세 자리에 값을 채워 지수의 세 자리를 표시합니다.
 

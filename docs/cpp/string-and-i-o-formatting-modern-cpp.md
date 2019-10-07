@@ -1,4 +1,4 @@
----
+﻿---
 title: 문자열 및 I/O 서식 지정(모던 C++)
 description: Modern의 서식된 문자열 I/O 사용할 수 있는 선택 C++입니다.
 ms.date: 05/30/2019
@@ -53,7 +53,7 @@ int main()
 
 - 간편함: 표준 Posix와 유사한 형식 문자열입니다.
 
-`Boost.Format`은 안전하고 확장 가능한 C++ [ \<iostream >](../standard-library/iostream-programming.md) 기능을 기반으로 하고 있지만 성능 최적화가 되지는 않았습니다. 성능 최적화가 필요한 경우 빠르고 사용하기 쉬운 C [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)나 [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)를 고려하십시오. 그러나 취약점으로 인하여 확장 가능하거나 안전하지 않습니다. (안전한 버전이 존재하지만 성능이 약간 저하됩니다. 자세한 내용은 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) 및 [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md))를 참조하세요.
+`Boost.Format`은 안전하고 확장 가능한 C++ [ \<iostream >](../standard-library/iostream-programming.md) 기능을 기반으로 하고 있지만 성능 최적화가 되지는 않았습니다. 성능 최적화가 필요한 경우 빠르고 사용하기 쉬운 C [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)나 [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)를 고려하십시오. 그러나 취약점으로 인하여 확장 가능하거나 안전하지 않습니다. 그러나 확장 가능한 또는 취약성 으로부터 안전 하 게 되지 않습니다. (안전한 버전이 존재하지만 성능이 약간 저하됩니다. 자세한 내용은 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) 및 [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md))를 참조하세요.
 
 다음 코드는 Boost 서식 지정 기능 중 일부를 보여 줍니다.
 

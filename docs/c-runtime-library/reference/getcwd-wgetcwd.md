@@ -1,6 +1,7 @@
 ---
 title: _getcwd, _wgetcwd
-ms.date: 11/04/2016
+description: C 런타임 라이브러리 함수 _getcwd, _wgetcwd은 현재 작업 디렉터리를 가져옵니다.
+ms.date: 09/24/2019
 api_name:
 - _wgetcwd
 - _getcwd
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - wgetcwd function
 - directories [C++], current working
 ms.assetid: 888dc8c6-5595-4071-be55-816b38e3e739
-ms.openlocfilehash: 78b02871aafca85db50df2eea74a2210c578c204
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 27cfdc1eb59c2de788bbe5963a6fccffcb62cba0
+ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955244"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274629"
 ---
 # <a name="_getcwd-_wgetcwd"></a>_getcwd, _wgetcwd
 
@@ -62,10 +63,10 @@ wchar_t *_wgetcwd(
 
 ### <a name="parameters"></a>매개 변수
 
-*buffer*<br/>
+*버퍼*\
 경로의 스토리지 위치입니다.
 
-*maxlen*<br/>
+*maxlen*\
 경로의 최대 길이 (문자: **_getcwd** 의 경우 **char** , **_wgetcwd**의 경우 **wchar_t** )입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -78,7 +79,7 @@ wchar_t *_wgetcwd(
 
 **_Getcwd** 함수는 기본 드라이브에 대 한 현재 작업 디렉터리의 전체 경로를 가져오고이를 *버퍼*에 저장 합니다. 정수 인수 *maxlen* 는 경로에 대 한 최대 길이를 지정 합니다. 경로의 길이 (null 종결 문자 포함)가 *maxlen*를 초과 하면 오류가 발생 합니다. *Buffer* 인수는 **NULL**일 수 있습니다. **malloc**를 사용 하 여 경로를 저장 하는 최소 크기의 *maxlen* (필요한 경우에만) 버퍼가 자동으로 할당 됩니다. 이 버퍼는 나중에 **free** 를 호출 하 고 **_getcwd** 반환 값 (할당 된 버퍼에 대 한 포인터)을 전달 하 여 해제할 수 있습니다.
 
-**_getcwd** 은 현재 작업 디렉터리의 경로를 나타내는 문자열을 반환 합니다. 현재 작업 디렉터리가 루트 이면 문자열이 백슬래시 ( **\\** )로 끝납니다. 현재 작업 디렉터리가 루트 이외의 디렉터리이면 문자열은 백슬래시가 아닌 디렉터리 이름으로 끝납니다.
+**_getcwd** 은 현재 작업 디렉터리의 경로를 나타내는 문자열을 반환 합니다. 현재 작업 디렉터리가 루트 이면 문자열이 백슬래시 (`\`)로 끝납니다. 현재 작업 디렉터리가 루트 이외의 디렉터리이면 문자열은 백슬래시가 아닌 디렉터리 이름으로 끝납니다.
 
 **_wgetcwd** 는 **_getcwd**의 와이드 문자 버전입니다. **_wgetcwd** 의 *buffer* 인수와 반환 값은 와이드 문자 문자열입니다. **_wgetcwd** 및 **_getcwd** 는 동일 하 게 동작 합니다.
 
@@ -103,26 +104,28 @@ wchar_t *_wgetcwd(
 
 ```C
 // crt_getcwd.c
+// Compile with: cl /W4 crt_getcwd.c
 // This program places the name of the current directory in the
 // buffer array, then displays the name of the current directory
 // on the screen. Passing NULL as the buffer forces getcwd to allocate
 // memory for the path, which allows the code to support file paths
 // longer than _MAX_PATH, which are supported by NTFS.
 
-#include <direct.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include <direct.h> // _getcwd
+#include <stdlib.h> // free, perror
+#include <stdio.h>  // printf
+#include <string.h> // strlen
 
 int main( void )
 {
    char* buffer;
 
    // Get the current working directory:
-   if( (buffer = _getcwd( NULL, 0 )) == NULL )
+   if ( (buffer = _getcwd( NULL, 0 )) == NULL )
       perror( "_getcwd error" );
    else
    {
-      printf( "%s \nLength: %d\n", buffer, strnlen(buffer) );
+      printf( "%s \nLength: %zu\n", buffer, strlen(buffer) );
       free(buffer);
    }
 }
@@ -132,9 +135,9 @@ int main( void )
 C:\Code
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[디렉터리 제어](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](chdir-wchdir.md)<br/>
-[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>
+[디렉터리 제어](../../c-runtime-library/directory-control.md)\
+[_chdir, _wchdir](chdir-wchdir.md)\
+[_mkdir, _wmkdir](mkdir-wmkdir.md)\
+[_rmdir, _wrmdir](rmdir-wrmdir.md)

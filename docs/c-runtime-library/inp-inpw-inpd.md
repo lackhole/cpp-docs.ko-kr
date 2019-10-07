@@ -1,11 +1,11 @@
 ---
 title: _inp, _inpw, _inpd
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _inp
 - _inpw
 - _inpd
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr120.dll
 - msvcr110_clr0400.dll
@@ -13,7 +13,10 @@ apilocation:
 - msvcr80.dll
 - msvcr100.dll
 - msvcr90.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - inpd
 - _inp
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - I/O [CRT], port
 - _inpw function
 ms.assetid: 5d9c2e38-fc85-4294-86d5-7282cc02d1b3
-ms.openlocfilehash: 0915b7a98b10137b37025eb59161bc98c27ae7b3
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 4668002fdf709e3e425ac379f136e228250896d4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748348"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944988"
 ---
-# <a name="inp-inpw-inpd"></a>_inp, _inpw, _inpd
+# <a name="_inp-_inpw-_inpd"></a>_inp, _inpw, _inpd
 
 포트에서의 입력으로, 바이트(`_inp`), 워드(`_inpw`), 또는 2배 워드(`_inpd`)입니다.
 
@@ -65,11 +68,11 @@ unsigned long _inpd(
 *포트*<br/>
 I/O 포트 번호입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 함수가 `port`에서 바이트, 워드 또는 2배 워드를 반환합니다. 반환되는 오류가 없습니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `_inp`, `_inpw`및 `_inpd` 함수는 바이트, 워드 및 2배 워드를 각각 지정된 된 입력 포트로부터 읽습니다. 입력 값은 0 - 65,535 범위의 부호 없는 정수(Short)입니다.
 

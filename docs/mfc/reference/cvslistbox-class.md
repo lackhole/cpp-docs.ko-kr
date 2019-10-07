@@ -29,10 +29,10 @@ helpviewer_keywords:
 - CVSListBox [MFC], GetListHwnd
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
 ms.openlocfilehash: 6a33f5b64c5094bfe2ca2ff259b5cd8654058ed3
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69502225"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox 클래스
@@ -49,7 +49,7 @@ class CVSListBox : public CVSListBoxBase
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CVSListBox::CVSListBox](#cvslistbox)|`CVSListBox` 개체를 생성합니다.|
 |`CVSListBox::~CVSListBox`|소멸자|
@@ -69,9 +69,9 @@ class CVSListBox : public CVSListBoxBase
 |[CVSListBox::SelectItem](#selectitem)|편집 가능한 목록 컨트롤 문자열을 선택 합니다. ( `CVSListBoxBase::SelectItem`을 재정의합니다.)|
 |[CVSListBox::SetItemData](#setitemdata)|응용 프로그램별 32 비트 값을 편집 가능한 목록 컨트롤 항목과 연결 합니다. ( `CVSListBoxBase::SetItemData`을 재정의합니다.)|
 
-### <a name="protected-methods"></a>Protected 메서드
+### <a name="protected-methods"></a>보호된 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CVSListBox::GetListHwnd](#getlisthwnd)|현재 포함 된 목록 뷰 컨트롤에 대 한 핸들을 반환 합니다.|
 

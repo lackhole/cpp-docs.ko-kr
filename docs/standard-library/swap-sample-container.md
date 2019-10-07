@@ -20,7 +20,7 @@ ms.locfileid: "68450346"
 > [!NOTE]
 > 이 항목은 Microsoft C++ 설명서에서 C++ 표준 라이브러리에 사용 되는 컨테이너의 작동 하지 않는 예제로 작성 되었습니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
 
-Swap `left.`을`(right)`실행 합니다. [](../standard-library/container-class-swap.md)
+`left.`[Swap](../standard-library/container-class-swap.md)`(right)`을 실행합니다.
 
 ## <a name="syntax"></a>구문
 

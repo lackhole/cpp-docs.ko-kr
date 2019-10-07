@@ -7,10 +7,10 @@ helpviewer_keywords:
 - IXHR2 and tasks, example
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
 ms.openlocfilehash: b11b56578cadc4b3bd037acf84014a718f9fad84
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69512142"
 ---
 # <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>연습: 작업 및 XML HTTP 요청을 사용 하 여 연결
@@ -29,7 +29,7 @@ ms.locfileid: "69512142"
 > [!TIP]
 >  `IXMLHTTPRequest2`및 `IXMLHTTPRequest2Callback` 는 UWP 앱에서 사용 하기 위해 권장 되는 인터페이스입니다. 데스크톱 응용 프로그램에서 사용할 수 있도록 이 예제를 조정할 수도 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 UWP 지원은 Visual Studio 2017 이상에서 선택 사항입니다. 설치 하려면 Windows 시작 메뉴에서 Visual Studio 설치 관리자 열고 사용 중인 Visual Studio 버전을 선택 합니다. **수정** 단추를 클릭 하 고 **UWP 개발** 타일이 선택 되어 있는지 확인 합니다. **선택적 구성 요소** 에서  **C++ UWP 도구가** 선택 되어 있는지 확인 합니다. Visual studio 2017 용 v141 또는 Visual Studio 2019 용 v142를 사용 합니다.
 
@@ -110,7 +110,7 @@ UWP 지원은 Visual Studio 2017 이상에서 선택 사항입니다. 설치 하
 
 [동시성 런타임 연습](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [PPL에서의 취소](cancellation-in-the-ppl.md)<br/>

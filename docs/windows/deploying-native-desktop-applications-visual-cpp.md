@@ -9,13 +9,13 @@ helpviewer_keywords:
 - deploying applications [C++], about deploying applications
 - distributing applications [C++]
 ms.assetid: 37f1691e-d67c-41e4-926e-528a237a9bac
-ms.topic: landing-page
-ms.openlocfilehash: d9500d14fdc70afd2f1d3f67420bb96347b6d71c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.topic: overview
+ms.openlocfilehash: af3141a8fd626a909de93b219bf3b6d8186f0623
+ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70215958"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274752"
 ---
 # <a name="deploying-native-desktop-applications-visual-c"></a>네이티브 데스크톱 애플리케이션 배포(Visual C++)
 
@@ -55,8 +55,8 @@ Visual Studio는 Windows 애플리케이션을 배포하는 다양한 기술을 
 
 ## <a name="related-sections"></a>관련 단원
 
-- [C/C++ 격리된 응용 프로그램 및 side-by-side 어셈블리 빌드](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+- [C/C++ 격리된 애플리케이션 및 side-by-side 어셈블리 빌드](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 
 - [배포](/dotnet/framework/deployment/index)
 
-- [ 격리된 응용 프로그램 및 side-by-side 어셈블리 문제 해결](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+- [ 격리된 애플리케이션 및 side-by-side 어셈블리 문제 해결](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

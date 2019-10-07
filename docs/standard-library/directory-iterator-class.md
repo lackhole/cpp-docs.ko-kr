@@ -32,7 +32,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68454421"
 ---
-# <a name="directoryiterator-class"></a>directory_iterator 클래스
+# <a name="directory_iterator-class"></a>directory_iterator 클래스
 
 디렉터리에서 파일 이름을 통해 시퀀스되는 입력 반복기에 대해 설명합니다. 반복기 `X`의 경우 식은 `*X` 파일 이름 및 상태에 대해 알려진 모든 `directory_entry` 항목을 래핑하는 클래스의 개체로 계산 됩니다.
 
@@ -83,7 +83,7 @@ class directory_iterator;
 
 ## <a name="directory_iterator"></a> directory_iterator::directory_iterator
 
-첫 번째 생성자는 시퀀스의 끝 반복기를 생성합니다. 두 번째 및 세 번째 생성자  는 pval `mydir`에를 저장 한 다음 디렉터리로 열고 `mydir` 읽으려고 시도 합니다. 성공 하면 첫 번째 파일 이름을의 `myentry`디렉터리에 저장 하 고, 그렇지 않으면 시퀀스의 끝 반복기를 생성 합니다.
+첫 번째 생성자는 시퀀스의 끝 반복기를 생성합니다. 두 번째 및 세 번째 생성자 는 pval `mydir`에를 저장 한 다음 디렉터리로 열고 `mydir` 읽으려고 시도 합니다. 성공 하면 첫 번째 파일 이름을의 `myentry`디렉터리에 저장 하 고, 그렇지 않으면 시퀀스의 끝 반복기를 생성 합니다.
 
 기본 생성자는 예상대로 작동합니다.
 
@@ -126,7 +126,7 @@ bool operator!=(const directory_iterator& right) const;
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-와 [](../standard-library/directory-iterator-class.md) 비교할 `directory_iterator`directory_iterator입니다.
+`directory_iterator`와 비교할 [directory_iterator](../standard-library/directory-iterator-class.md)입니다.
 
 ## <a name="op_as"></a> directory_iterator::operator=
 
@@ -140,7 +140,7 @@ directory_iterator& operator=(directory_iterator&&) noexcept = default;
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-에 [](../standard-library/directory-iterator-class.md) 복사 `directory_iterator`되는 directory_iterator입니다.
+`directory_iterator`에 복사되는 [directory_iterator](../standard-library/directory-iterator-class.md)입니다.
 
 ## <a name="op_eq"></a> directory_iterator::operator==
 
@@ -153,7 +153,7 @@ bool operator==(const directory_iterator& right) const;
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-와 [](../standard-library/directory-iterator-class.md) 비교할 `directory_iterator`directory_iterator입니다.
+`directory_iterator`와 비교할 [directory_iterator](../standard-library/directory-iterator-class.md)입니다.
 
 ## <a name="op_star"></a> directory_iterator::operator*
 

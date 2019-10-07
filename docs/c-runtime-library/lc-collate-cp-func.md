@@ -1,9 +1,9 @@
 ---
 title: ___lc_collate_cp_func
 ms.date: 11/04/2016
-apiname:
+api_name:
 - ___lc_collate_cp_func
-apilocation:
+api_location:
 - msvcr120.dll
 - msvcrt.dll
 - msvcr100.dll
@@ -11,20 +11,23 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr110.dll
 - msvcr90.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ___lc_collate_cp_func
 helpviewer_keywords:
 - ___lc_collate_cp_func
 ms.assetid: 46ccc084-7ac9-4e5d-9138-e12cb5845615
-ms.openlocfilehash: fac8b7ba2e9568dd53509e5cccbb96a6b2f1df8d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: d6a857760bf3b76481cc608ef8f015bca207f35f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738888"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940149"
 ---
-# <a name="lccollatecpfunc"></a>___lc_collate_cp_func
+# <a name="___lc_collate_cp_func"></a>___lc_collate_cp_func
 
 내부 CRT 함수입니다. 스레드의 현재 데이터 정렬 코드 페이지를 검색합니다.
 
@@ -34,11 +37,11 @@ ms.locfileid: "57738888"
 UINT ___lc_codepage_func(void);
 ```
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 스레드의 현재 데이터 정렬 코드 페이지입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `___lc_collate_cp_func`는 다른 CRT 함수가 CRT 데이터의 스레드 로컬 스토리지에서 현재 데이터 정렬 코드 페이지를 가져오기 위해 사용하는 내부 CRT 함수입니다. [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) 함수를 사용하면 이 정보를 사용할 수 있습니다.
 
