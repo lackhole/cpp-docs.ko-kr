@@ -47,7 +47,7 @@ ms.locfileid: "69511341"
 
 `RegisterShellFileTypes`는 사용자의 애플리케이션 문서 형식을 파일 탐색기 또는 파일 관리자에 등록합니다. 이 함수는 Windows에서 유지 관리되는 등록 데이터베이스에 항목을 추가합니다. 항목은 각 문서 유형을 등록하고, 파일 확장자를 해당 파일 형식과 연결하고, 애플리케이션을 열기 위한 명령줄을 지정하고, 해당 형식의 문서를 열기 위해 DDE(동적 데이터 교환) 명령을 지정합니다.
 
-`EnableShellOpen`은 파일 탐색기 또는 파일 관리자에서 DDE 명령을 수신하도록 허용하여 프로세스를 완료하고 사용자가 선택한 파일을 엽니다.
+`EnableShellOpen`은 파일 탐색기 또는 파일 관리자로부터 DDE 명령을 수신하도록 허용하여 사용자가 선택한 파일을 열 수 있도록 하여 프로세스를 완료합니다.
 
 `CWinApp`의 이러한 자동 등록 지원 덕분에 애플리케이션에 .reg 파일을 포함하거나 특별한 설치 작업을 수행할 필요가 없습니다.
 
@@ -68,9 +68,9 @@ ms.locfileid: "69511341"
 > [!NOTE]
 >  또한 OLE를 사용하면 문서 간 또는 문서 내에서의 데이터 끌기와 같은 보다 일반적인 끌어서 놓기 기능을 구현할 수도 있습니다. 자세한 내용은 [끌어서 놓기 (OLE)](../mfc/drag-and-drop-ole.md)문서를 참조 하세요.
 
-##  <a name="_core_keeping_track_of_the_most_recently_used_documents"></a>가장 최근에 사용한 문서 추적
+##  <a name="_core_keeping_track_of_the_most_recently_used_documents"></a> 가장 최근에 사용한 문서 추적
 
-사용자가 파일을 열고 닫을 때 애플리케이션 개체는 최근에 사용된 4개 파일에 대한 추적을 유지합니다. 이러한 파일의 이름은 파일 메뉴에 추가되며 변경될 경우 업데이트됩니다. 프레임워크는 레지스트리 또는 .ini 파일에 프로젝트와 동일한 이름을 사용해서 이러한 파일 이름을 저장하고, 응용 프로그램이 시작될 때 파일에서 이를 읽어옵니다. MFC 응용 프로그램 마법사에서 생성하는 `InitInstance` 재정의에는 먼저 가장 최근에 사용한 파일 이름을 포함하여 레지스트리 또는 .ini 파일에서 정보를 로드하는 [CWinApp](../mfc/reference/cwinapp-class.md) 멤버 함수 [loadstdprofilesettings](../mfc/reference/cwinapp-class.md#loadstdprofilesettings)에 대한 호출이 포함됩니다.
+사용자가 파일을 열고 닫을 때 애플리케이션 개체는 최근에 사용된 4개 파일에 대한 추적을 유지합니다. 이러한 파일의 이름은 파일 메뉴에 추가되며 변경될 경우 업데이트됩니다. 프레임워크는 레지스트리 또는 .ini 파일에 프로젝트와 동일한 이름을 사용해서 이러한 파일 이름을 저장하고, 응용 프로그램이 시작될 때 파일에서 이를 읽어옵니다. MFC 응용 프로그램 마법사에서 생성한 `InitInstance` 재정의에는 [CWinApp](../mfc/reference/cwinapp-class.md) 멤버 함수 [LoadStdProfileSettings](../mfc/reference/cwinapp-class.md#loadstdprofilesettings)에 대한 호출이 포함되어 있습니다. 이 함수는 가장 최근에 사용한 파일 이름을 포함하여 레지스트리 또는.ini에서 정보를 로드합니다.
 
 이러한 항목은 다음과 같이 저장됩니다.
 
