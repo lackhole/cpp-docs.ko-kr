@@ -70,7 +70,7 @@ ms.locfileid: "69511341"
 
 ##  <a name="_core_keeping_track_of_the_most_recently_used_documents"></a>가장 최근에 사용한 문서 추적
 
-사용자가 파일을 열고 닫을 때 애플리케이션 개체는 최근에 사용된 4개 파일에 대한 추적을 유지합니다. 이러한 파일의 이름은 파일 메뉴에 추가되며 변경될 경우 업데이트됩니다. 프레임워크는 레지스트리 또는 .ini 파일에서 프로젝트와 동일한 이름을 사용해서 이러한 파일 이름을 저장하고, 애플리케이션이 시작될 때 파일에서 이를 읽어옵니다. MFC 응용 프로그램 마법사에서 생성하는 `InitInstance` 재정의에는 먼저 가장 최근에 사용한 파일 이름을 포함하여 레지스트리 또는 .ini 파일에서 정보를 로드하는 [CWinApp](../mfc/reference/cwinapp-class.md) 멤버 함수 [loadstdprofilesettings](../mfc/reference/cwinapp-class.md#loadstdprofilesettings)에 대한 호출이 포함됩니다.
+사용자가 파일을 열고 닫을 때 애플리케이션 개체는 최근에 사용된 4개 파일에 대한 추적을 유지합니다. 이러한 파일의 이름은 파일 메뉴에 추가되며 변경될 경우 업데이트됩니다. 프레임워크는 레지스트리 또는 .ini 파일에 프로젝트와 동일한 이름을 사용해서 이러한 파일 이름을 저장하고, 응용 프로그램이 시작될 때 파일에서 이를 읽어옵니다. MFC 응용 프로그램 마법사에서 생성하는 `InitInstance` 재정의에는 먼저 가장 최근에 사용한 파일 이름을 포함하여 레지스트리 또는 .ini 파일에서 정보를 로드하는 [CWinApp](../mfc/reference/cwinapp-class.md) 멤버 함수 [loadstdprofilesettings](../mfc/reference/cwinapp-class.md#loadstdprofilesettings)에 대한 호출이 포함됩니다.
 
 이러한 항목은 다음과 같이 저장됩니다.
 
@@ -78,7 +78,7 @@ ms.locfileid: "69511341"
 
 - Windows 3.x에서 값은 WIN.INI 파일에 저장됩니다.
 
-- Windows 95 이상에서 값은 WIN.INI 의 캐시된 버전에 저장됩니다.
+- Windows 95 이상에서 값은 WIN.INI의 캐시된 버전에 저장됩니다.
 
 ## <a name="see-also"></a>참고자료
 
