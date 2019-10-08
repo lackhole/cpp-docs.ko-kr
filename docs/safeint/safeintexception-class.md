@@ -67,7 +67,7 @@ SafeIntException(
 
 ### <a name="parameters"></a>매개 변수
 
-*코드*<br/>
+*code*<br/>
 [in] 발생한 오류를 설명하는 열거형 데이터 값입니다.
 
 ### <a name="remarks"></a>주의
