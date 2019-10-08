@@ -39,11 +39,11 @@ ms.locfileid: "69511341"
 ---
 # <a name="special-cwinapp-services"></a>특수 CWinApp 서비스
 
-메시지 루프를 실행 하 고 응용 프로그램을 초기화 하 고 그 후에 정리 하는 기회를 제공 하는 것 외에도 [CWinApp](../mfc/reference/cwinapp-class.md) 는 여러 다른 서비스를 제공 합니다.
+메시지 루프를 실행하고 응용 프로그램을 초기화하며 그 후에 정리할 기회를 제공하는 것 이외에도 [CWinApp](../mfc/reference/cwinapp-class.md)은 다른 여러 가지 서비스를 제공합니다.
 
 ##  <a name="_core_shell_registration"></a>셸 등록
 
-기본적으로 MFC 애플리케이션 마법사를 사용하면 파일 탐색기 또는 파일 관리자에서 두 번 클릭하여 애플리케이션에서 생성된 데이터 파일을 열 수 있습니다. 응용 프로그램이 MDI 응용 프로그램이 고 응용 프로그램이 만드는 파일에 대 한 확장을 지정 하는 경우 MFC 응용 프로그램 마법사는 [CWinApp](../mfc/reference/cwinapp-class.md) 의 [RegisterShellFileTypes](../mfc/reference/cwinapp-class.md#registershellfiletypes) 및 [EnableShellOpen](../mfc/reference/cwinapp-class.md#enableshellopen) 멤버 함수에 대 한 호출을 추가 합니다. 작성 하는 재정의입니다. `InitInstance`
+기본적으로 MFC 애플리케이션 마법사를 사용하면 파일 탐색기 또는 파일 관리자에서 두 번 클릭하여 애플리케이션에서 생성된 데이터 파일을 열 수 있습니다. 응용 프로그램이 MDI 응용 프로그램이고 응용 프로그램에서 만든 파일의 확장명을 지정하면, MFC 응용 프로그램 마법사는 [CWinApp](../mfc/reference/cwinapp-class.md#registershellfiletypes)의 [RegisterShellFileTypes](../mfc/reference/cwinapp-class.md#enableshellopen) 및 [EnableShellOpen](../mfc/reference/cwinapp-class.md) 멤버 함수에 대한 호출을 마법사가 작성하는 `InitInstance` 재정의에 추가합니다.
 
 `RegisterShellFileTypes`는 사용자의 애플리케이션 문서 형식을 파일 탐색기 또는 파일 관리자에 등록합니다. 이 함수는 Windows에서 유지 관리되는 등록 데이터베이스에 항목을 추가합니다. 항목은 각 문서 유형을 등록하고, 파일 확장자를 해당 파일 형식과 연결하고, 애플리케이션을 열기 위한 명령줄을 지정하고, 해당 형식의 문서를 열기 위해 DDE(동적 데이터 교환) 명령을 지정합니다.
 
