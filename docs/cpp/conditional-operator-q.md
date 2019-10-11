@@ -1,5 +1,5 @@
 ---
-title: '조건부 연산자:? :'
+title: '조건 연산자: &quest;:'
 ms.date: 11/04/2016
 f1_keywords:
 - '?:'
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - conditional operators [C++]
 - '? : operator'
 ms.assetid: 88643ee8-7100-4f86-880a-705ec22b6271
-ms.openlocfilehash: 8744ca8546d48e9283cc0dfa9d80babf5076f8b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0a66b82682f90345518a2d520945e3aff1f78f89
+ms.sourcegitcommit: 170f5de63b0fec8e38c252b6afdc08343f4243a6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399150"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72276813"
 ---
-# <a name="conditional-operator--"></a>조건부 연산자:? :
+# <a name="conditional-operator-quest-"></a>조건 연산자: &quest;:
 
 ## <a name="syntax"></a>구문
 
@@ -25,13 +25,13 @@ expression ? expression : expression
 
 ## <a name="remarks"></a>설명
 
-조건부 연산자 (**?:**)는 삼항 연산자 (걸리는 피연산자 3 개). 조건 연산자는 다음과 같이 사용됩니다.
+조건 연산자 ( **?:** )는 3 개의 피연산자를 사용 하는 삼항 연산자입니다. 조건 연산자는 다음과 같이 사용됩니다.
 
-- 첫 번째 피연산자는 암시적으로 변환할 **bool**합니다. 계속하기 전에 피연산자가 계산되고 의도하지 않은 모든 결과가 완료됩니다.
+- 첫 번째 피연산자는 암시적으로 **bool**로 변환 됩니다. 계속하기 전에 피연산자가 계산되고 의도하지 않은 모든 결과가 완료됩니다.
 
-- 첫 번째 피연산자가 **true** (1), 두 번째 피연산자는 평가 합니다.
+- 첫 번째 피연산자가 **true** (1)로 계산 되는 경우 두 번째 피연산자가 계산 됩니다.
 
-- 첫 번째 피연산자가 **false** (0), 세 번째 피연산자는 평가 합니다.
+- 첫 번째 피연산자가 **false** (0)로 계산 되 면 세 번째 피연산자가 계산 됩니다.
 
 조건 연산자의 결과는 두 번째 또는 세 번째 피연산자가 계산된 결과입니다. 마지막 피연산자 2개 중 1개만 조건식에서 계산됩니다.
 
@@ -39,7 +39,7 @@ expression ? expression : expression
 
 - 두 피연산자의 형식이 동일할 경우 결과도 해당 형식입니다.
 
-- 피연산자가 모두 일반적인 산술 변환은 산술 또는 열거형 형식일 경우 (에서 다루는 [표준 변환](standard-conversions.md)) 공용 형식으로 변환 하기 위해 수행 됩니다.
+- 두 피연산자가 모두 산술 또는 열거형 형식이 면 일반적인 산술 변환 ( [표준 변환](standard-conversions.md)에 포함 됨)이 공통 형식으로 변환 됩니다.
 
 - 두 피연산자가 모두 포인터 형식이거나 하나는 포인터 형식이고 나머지 하나는 0으로 계산된 상수 식일 경우 공용 형식으로 변환하기 위해 포인터 변환이 수행됩니다.
 
