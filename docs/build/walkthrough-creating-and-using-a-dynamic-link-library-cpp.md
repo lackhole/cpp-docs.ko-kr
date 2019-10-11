@@ -194,7 +194,8 @@ DLL에 대한 자세한 내용의 링크는 [Visual Studio에서 C/C++ DLL 만�
 
 이 헤더 파일은 두 개의 초기 값이 지정된 일반화된 피보나치 시퀀스를 생성하는 몇 가지 함수를 선언합니다. `fibonacci_init(1, 1)` 호출은 친숙한 피보나치 수열을 생성합니다.
 
-파일 맨 위의 전처리기 문을 확인합니다. DLL 프로젝트용 새 프로젝트 템플릿은 정의 된 전처리기 매크로에 ** _PROJECTNAME_&#95;내보내기를 추가 합니다. 이 예에서 Visual Studio는 MathLibrary DLL 프로젝트가 빌드될 때 **MATHLIBRARY&#95;EXPORTS**를 정의합니다.
+파일 맨 위의 전처리기 문을 확인합니다. DLL 프로젝트용 새 프로젝트 템플릿은 정의 된 전처리기 매크로에 ** _PROJECTNAME_&#95;
+수출** 내보내기를 추가 합니다. 이 예에서 Visual Studio는 MathLibrary DLL 프로젝트가 빌드될 때 **MATHLIBRARY&#95;EXPORTS**를 정의합니다.
 
 **MATHLIBRARY&#95;EXPORTS** 매크로가 정의되면 **MATHLIBRARY&#95;API** 매크로는 함수 선언에서 `__declspec(dllexport)` 한정자를 설정합니다. 이 한정자는 다른 응용 프로그램에서 사용할 수 있도록 DLL에서 함수 또는 변수를 내보내도록 컴파일러와 링커에 지시 합니다. **MATHLIBRARY&#95;EXPORTS**가 정의되지 않은 경우(예: 헤더 파일이 클라이언트 애플리케이션에 의해 포함되는 경우) **MATHLIBRARY&#95;API**는 선언에 `__declspec(dllimport)` 한정자를 적용합니다. 이 한정자는 애플리케이션에서 함수 또는 변수의 가져오기를 최적화합니다. 자세한 내용은 [dllexport, dllimport](../cpp/dllexport-dllimport.md)를 참조하세요.
 

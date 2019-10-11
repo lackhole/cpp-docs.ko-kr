@@ -106,7 +106,7 @@ constexpr pair<ForwardIterator2, ForwardIterator2> operator()(
 
 `std::search( first, last, pat_first, pat_last, pred )`.
 
-*I**가 *last*인 경우 쌍의 두 번째 반복기는 *마지막* 입니다. 그렇지 않으면 다음의 효과적인 결과입니다.
+*I* * 가 *last*인 경우 쌍의 두 번째 반복기는 *마지막* 입니다. 그렇지 않으면 다음의 효과적인 결과입니다.
 
 `std::next( i, std::distance( pat_first, pat_last ))`.
 
