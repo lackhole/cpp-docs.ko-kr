@@ -3,13 +3,13 @@ title: Visual Studio에서 C++ 코드 편집 및 리팩터링
 description: Visual Studio의 C++ 코드 편집기를 사용하여 코드를 서식 지정, 탐색, 이해 및 리팩터링합니다.
 ms.date: 05/31/2019
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
-ms.topic: landing-page
-ms.openlocfilehash: 255576bfc4a7eb78a660e5bfb05b0a97a7eb4c34
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
-ms.translationtype: HT
+ms.topic: overview
+ms.openlocfilehash: 2da1b38d2f5bb61edb473e5909b76225f214a116
+ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221604"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274783"
 ---
 # <a name="edit-and-refactor-c-code-in-visual-studio"></a>Visual Studio에서 C++ 코드 편집 및 리팩터링
 
@@ -183,7 +183,7 @@ C++ 관련 편집 기능을 사용하고 구성하기 위한 옵션은 **도구*
 
 향후 버전의 Visual Studio에 포함될 수도 포함되지 않을 수 있는 실험적 기능은 [텍스트 편집기 C++ 실험적](/visualstudio/ide/reference/options-text-editor-c-cpp-experimental) 대화 상자에 있습니다. Visual Studio 2017 이상에서는 이 대화 상자에서 **예측 IntelliSense**를 사용하도록 설정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 [C++ 코드 읽기 및 이해](read-and-understand-code-cpp.md)</br>
 [Visual Studio에서 C++ 코드 베이스 탐색](navigate-code-cpp.md)</br>

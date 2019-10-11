@@ -3,12 +3,12 @@ title: Visual Studio에서 대상 Linux 시스템에 연결
 description: Visual Studio C++ 프로젝트 내에서 원격 Linux 머신 또는 WSL에 연결하는 방법입니다.
 ms.date: 09/04/2019
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: 75d8b3db64d9b1f3562d6730685b7c29fe4982f4
-ms.sourcegitcommit: a42d3b0408f02138dcd6fabcb98d50b0cb159191
+ms.openlocfilehash: 2f4e6311493f2b29ba6911ec1b76225b6c7abe6d
+ms.sourcegitcommit: b85e1db6b7d4919852ac6843a086ba311ae97d40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383399"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71925565"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio에서 대상 Linux 시스템에 연결
 
@@ -94,11 +94,12 @@ Visual Studio 2017에서는, 이 문서의 앞부분에 설명된 대로 원격 
 
 Visual Studio 2019 버전 16.1에서는 [WSL(Linux용 Windows 하위 시스템)](https://docs.microsoft.com/windows/wsl/about)과 함께 C++를 사용하기 위한 기본 지원을 추가했습니다.  즉, 로컬 WSL 설치에서 빌드하고 디버그하기 위해 더 이상 원격 연결을 추가하거나 SSH를 구성할 필요가 없습니다. 자세한 내용은 여기서 [WSL 설치 방법](https://docs.microsoft.com/windows/wsl/install-win10)을 참조하세요.
 
-Visual Studio에서 작동하도록 WSL 설치를 구성하려면 gcc, gdb, make, rsync 및 zip 도구를 설치해야 합니다. 다음 명령을 실행하여 apt를 사용하는 배포판에 설치할 수 있습니다. 
+Visual Studio에서 작동하도록 WSL 설치를 구성하려면 gcc 또는 clang, gdb, make, rsync 및 zip 도구를 설치해야 합니다. g++ 컴파일러도 설치하는 이 명령을 사용하여 APT를 사용하는 배포판에 설치할 수 있습니다. 
 
 ```bash
 sudo apt install g++ gdb make rsync zip
 ```
+자세한 내용은 [Linux 작업 다운로드, 설치, 설정](download-install-and-setup-the-linux-development-workload.md)을 참조하세요.
 
 WSL에 대해 프로젝트를 구성하려면 프로젝트 종류에 따라 [Linux 프로젝트 구성](configure-a-linux-project.md) 또는 [Linux CMake 프로젝트 구성](cmake-linux-project.md)을 참조하세요. WSL을 사용하여 간단한 콘솔 애플리케이션을 만드는 단계별 지침을 따르려면 [Visual Studio 2019 및 WSL(Linux용 Windows 하위 시스템)의 C++](https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/)에 대한 소개 블로그 게시물을 참조하세요.
 

@@ -1,16 +1,16 @@
 ---
 title: C++ 규칙 향상
-ms.date: 09/25/2019
+ms.date: 10/04/2019
 description: Visual Studio의 Microsoft C++는 C++20 언어 표준을 완전하게 준수하기 위해 점점 향상되고 있습니다.
 ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 4825317b07535d98b1b5db4442f935e9b2cfb632
-ms.sourcegitcommit: b4572ffcc71e6bdb0ca23221f9476cfaf4528406
+ms.openlocfilehash: d313a9a1f9f2bc1aa091935658ca1214f929c048
+ms.sourcegitcommit: c51b2c665849479fa995bc3323a22ebe79d9d7ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71314468"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71998892"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio의 C++ 규칙 향상
 
@@ -392,7 +392,7 @@ bool neq(const S& lhs, const S& rhs) {
 
 ### <a name="stream-extraction-operators-for-char-removed"></a>Char*의 스트림 추출 연산자가 제거됨
 
-포인터와 문자 간에 대한 스트림 추출 연산자가 제거되고 문자 배열에 대한 추출 연산자로 바뀌었습니다([P0487R1](http://http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0487r1.html)에 따라). WG21은 제거된 오버로드를 안전하지 않은 것으로 간주합니다. [/std:c++latest](../build/reference/std-specify-language-standard-version.md) 모드에서 다음 예제는 이제 *C2679: binary '>>': 'char\*' 형식의 오른쪽 피연산자를 사용하는 연산자를 찾을 수 없음(또는 허용되는 변환이 없음)* 을 생성합니다.
+포인터와 문자 간에 대한 스트림 추출 연산자가 제거되고 문자 배열에 대한 추출 연산자로 바뀌었습니다([P0487R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0487r1.html)에 따라). WG21은 제거된 오버로드를 안전하지 않은 것으로 간주합니다. [/std:c++latest](../build/reference/std-specify-language-standard-version.md) 모드에서 다음 예제는 이제 *C2679: binary '>>': 'char\*' 형식의 오른쪽 피연산자를 사용하는 연산자를 찾을 수 없음(또는 허용되는 변환이 없음)* 을 생성합니다.
 
 ```cpp
    char x[42];
@@ -456,6 +456,10 @@ extern "C" void f(int, int, int, BOOL){}
 ```
 
 앞의 예제에서 오류를 방지하려면 두 `f` 선언 모두에서 일관적으로 **BOOL** 대신 **bool**을 사용합니다.
+
+### <a name="standard-library-improvements"></a>표준 라이브러리 향상
+
+비표준 헤더 \<stdexcpt.h> 및 \<typeinfo.h>가 제거되었습니다. 이러한 비표준 헤더를 포함하는 코드는 대신 표준 헤더 \<exception> 및 \<typeinfo>를 각각 포함해야 합니다.
 
 ## <a name="update_160"></a> Visual Studio 2019의 버그 수정 및 동작 변경
 
@@ -722,7 +726,7 @@ C++ 팀 블로그 문서 [STL Features and Fixes in VS 2017 15.8](https://devblo
 
 - 이전에는 동시성 라이브러리에 전달된 일부 시간 값이 오버플로되었습니다(예: `condition_variable::wait_for(seconds::max())`). 현재 수정된 이 오버플로는 임의의 29일 주기로 동작을 변경했습니다(기본 Win32 API에서 허용된 uint32_t 밀리초가 오버플로된 경우).
 
-- 이제 <ctime> 헤더가 전역 네임스페이스에서 선언하는 것 외에 `std` 네임스페이스에서도 `timespec` 및 `timespec_get`을 올바르게 선언합니다.
+- 이제 \<ctime> 헤더가 전역 네임스페이스에서 선언하는 것 외에 `std` 네임스페이스에서도 `timespec` 및 `timespec_get`을(를) 올바르게 선언합니다.
 
 ### <a name="various-fixes-for-containers"></a>컨테이너에 대한 다양한 수정
 
