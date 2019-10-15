@@ -1,10 +1,10 @@
 ---
 title: _fgetchar, _fgetwchar
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fgetchar
 - _fgetwchar
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fgetwchar
 - _fgettchar
@@ -32,16 +35,16 @@ helpviewer_keywords:
 - standard input, reading from
 - fgetchar function
 ms.assetid: 8bce874c-701a-41a3-b1b2-feff266fb5b9
-ms.openlocfilehash: c74618fa0be5392062d13618ff73e2ef45bf7c2a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90a97308b8c60776d52e58feb84c5398456f26d5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333958"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940872"
 ---
-# <a name="fgetchar-fgetwchar"></a>_fgetchar, _fgetwchar
+# <a name="_fgetchar-_fgetwchar"></a>_fgetchar, _fgetwchar
 
-문자를 읽고 **stdin**합니다.
+**Stdin**에서 문자를 읽습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -52,13 +55,13 @@ wint_t _fgetwchar( void );
 
 ## <a name="return-value"></a>반환 값
 
-**\_fgetchar** 으로 읽은 문자를 반환 합니다.는 **int** 반환 또는 `EOF` 오류 또는 파일의 끝을 나타냅니다. **\_fgetwchar** 반환으로 [wint_t](../../c-runtime-library/standard-types.md), 읽은 문자에 해당 하거나 반환 하는 와이드 문자 `WEOF` 오류 또는 파일의 끝을 나타냅니다. 두 함수 모두 사용 하 여 **feof** 또는 **ferror** 오류와 파일 끝 조건을 구분 하려면.
+fgetchar는 읽은 문자를 **int** 로 반환 하거나 오류 `EOF` 또는 파일의 끝을 나타내기 위해를 반환 합니다.  **\_** **\_fgetwchar**는 읽기 또는 파일 끝을 나타내기 위해를 반환하는 문자에 해당하는 와이드 문자를 [wint_t](../../c-runtime-library/standard-types.md)로 반환하거나 오류 또는 파일의 끝을 확인하는 `WEOF`을 반환합니다. 두 함수 모두에서 **feof** **ferror** 를 사용 하 여 오류와 파일 끝 조건을 구분 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수에서 단일 문자를 읽습니다 **stdin**합니다. 그러고 나서 다음 문자를 가리킬 연결된 파일 포인터(정의된 경우)를 늘립니다. 스트림이 파일 끝에 있는 경우 스트림에 대한 파일 끝 표시기가 설정됩니다.
+이러한 함수는 **stdin**에서 단일 문자를 읽습니다. 그러고 나서 다음 문자를 가리킬 연결된 파일 포인터(정의된 경우)를 늘립니다. 스트림이 파일 끝에 있는 경우 스트림에 대한 파일 끝 표시기가 설정됩니다.
 
-**_fgetchar** 같습니다 `fgetc( stdin )`합니다. 에 해당 하는 것도 **getchar**, 함수 및 매크로가 아닌 함수로 구현 합니다. **_fgetwchar** 의 와이드 문자 버전이 **_fgetchar**합니다.
+**_fgetchar** 은와 동일 `fgetc( stdin )`합니다. **Getchar**와 동일 하지만 함수 및 매크로가 아닌 함수로만 구현 됩니다. **_fgetwchar** 는 **_fgetchar**의 와이드 문자 버전입니다.
 
 이러한 함수는 ANSI 표준과 호환되지 않습니다.
 
@@ -75,7 +78,7 @@ wint_t _fgetwchar( void );
 |**_fgetchar**|\<stdio.h>|
 |**_fgetwchar**|\<stdio.h> 또는 \<wchar.h>|
 
-콘솔 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 콘솔을 사용 하 여 연결 된 표준 스트림 핸들 —**stdin**를 **stdout**, 및 **stderr**-C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔에 연결 된 표준 스트림 핸들 (**stdin**, **stdout**및 **stderr**)은 C 런타임 함수가 UWP 앱에서 사용할 수 있도록 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

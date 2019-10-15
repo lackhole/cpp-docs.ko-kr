@@ -16,11 +16,11 @@ ms.locfileid: "62362948"
 
 ## <a name="c1-notation"></a>C.1 표기법
 
-문법 규칙을 비 단말에 대 한 이름의 구성 뒤에 콜론, 별도 줄에 대체 대안, 합니다.
+문법 규칙은 비 단말 이름, 콜론, 개별 줄의 대체 대안으로 구성됩니다.
 
-구문상 식의 항이<sub>opt</sub> 용어 대신 내의 옵션 임을 나타냅니다.
+term<sub>opt</sub> 구문 표현은 해당 용어가 대체 내의 선택사항임을 나타냅니다.
 
-식 구문 *용어*<sub>optseq</sub> 동일 *용어 seq*<sub>opt</sub> 다음 추가 규칙을 사용 하 여:
+*term*<sub>optseq</sub> 구문 표현은 다음 추가 규칙이 있는 *term-seq*<sub>opt</sub>와 동일합니다.
 
 *term-seq*:  
 &nbsp;&nbsp;&nbsp;&nbsp;*term*<br/>
@@ -29,7 +29,7 @@ ms.locfileid: "62362948"
 
 ## <a name="c2-rules"></a>C.2 규칙
 
-표기법은 6.1 C 표준의 섹션에 설명 되어 있습니다. 이 문법 부록 OpenMP C에 대 한 기본 언어 문법에 대 한 확장을 표시 하 고 C++ 지시문입니다.
+표기법은 C 표준의 섹션 6.1에 설명되어 있습니다. 이 문법 부록은 OpenMP C 및 C++ 지시문에 대한 기본 언어 분법의 확장을 보여줍니다.
 
 **/\* C++ (ISO/IEC 14882:1998) \*/**
 
@@ -93,7 +93,7 @@ ms.locfileid: "62362948"
 &nbsp;&nbsp;&nbsp;&nbsp;  `num_threads (` *expression*   `)`
 
 *for-construct*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*지시문에 대 한 반복 문*
+&nbsp;&nbsp;&nbsp;&nbsp;*지시문에 대한 반복문*
 
 *for-directive*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp for` *for-clause*<sub>optseq</sub> *new-line*
@@ -125,7 +125,7 @@ ms.locfileid: "62362948"
 &nbsp;&nbsp;&nbsp;&nbsp;  `nowait`
 
 *section-scope*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*{0} 섹션 시퀀스}*
+&nbsp;&nbsp;&nbsp;&nbsp; *{0} 섹션 시퀀스}*
 
 *section-sequence*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*section-directive*<sub>opt</sub> *structured-block*<br/>
@@ -145,7 +145,7 @@ ms.locfileid: "62362948"
 &nbsp;&nbsp;&nbsp;&nbsp;  `nowait`
 
 *parallel-for-construct*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*지시문에 대 한 병렬 반복 문*
+&nbsp;&nbsp;&nbsp;&nbsp;*지시문에 대한 병렬 반복문*
 
 *parallel-for-directive*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel for` *parallel-for-clause*<sub>optseq</sub> *new-line*
@@ -178,7 +178,7 @@ ms.locfileid: "62362948"
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp critical` *region-phrase*<sub>opt</sub> *new-line*
 
 *region-phrase*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*(identifier)*
+&nbsp;&nbsp;&nbsp;&nbsp; *(identifier)*
 
 *barrier-directive*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp barrier` *new-line*
@@ -193,10 +193,10 @@ ms.locfileid: "62362948"
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp flush` *flush-vars*<sub>opt</sub> *new-line*
 
 *flush-vars*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*(variable-list)*
+&nbsp;&nbsp;&nbsp;&nbsp; *(variable-list)*
 
 *ordered-construct*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*순서가 지정 된 지시문 구조화 된 블록*
+&nbsp;&nbsp;&nbsp;&nbsp;*순서가 지정된 지시문 구조화된 블록*
 
 *ordered-directive*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp ordered` *new-line*
