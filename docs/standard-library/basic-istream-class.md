@@ -41,7 +41,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68452547"
 ---
-# <a name="basicistream-class"></a>basic_istream 클래스
+# <a name="basic_istream-class"></a>basic_istream 클래스
 
 이 템플릿 클래스는 문자 특성이 *Tr*([traits_type](../standard-library/basic-ios-class.md#traits_type)이라고도 함) 클래스에 의해 결정되는 `Elem`([char_type](../standard-library/basic-ios-class.md#char_type)이라고도 함) 형식의 요소가 있는 스트림 버퍼에서 요소 및 인코드된 개체의 추출을 제어하는 개체를 설명합니다.
 
@@ -119,7 +119,7 @@ if (ok)
 setstate(state);
 ```
 
-두 함수 그룹은 요소 [](../standard-library/basic-ios-class.md#setstate)를 추출`eofbit`하는 동안 파일 끝에 도달 하는 경우 setstate ()를 호출 합니다.
+두 함수 그룹은 요소를 추출하는 동안 파일 끝에 도달 하는 경우 [setstate](../standard-library/basic-ios-class.md#setstate)(`eofbit`)를 호출합니다.
 
 `basic_istream`< `Elem`, *Tr*> 클래스의 개체는 다음을 저장합니다.
 
@@ -374,7 +374,7 @@ basic_istream<Elem, Tr>& getline(
 
 - 함수는 *count* -1 요소를 추출 합니다.
 
-요소가 요소를 추출 하지 않거나 *count* -1 요소를 추출 하는 [](../standard-library/basic-ios-class.md#setstate)경우 setstate`failbit`()를 호출 합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
+요소가 요소를 추출하지 않거나 *count* -1 요소를 추출하는 경우 [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`)를 호출합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -533,7 +533,7 @@ basic_istream& operator>>(double& val);
 basic_istream& operator>>(long double& val);
 ```
 
-각각 필드를 추출하고 다음을 호출하여 숫자 값으로 변환합니다. `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). **get**( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). \< `istreambuf_iterator`  `val`    여기서는 Elem, Tr >로 정의 되며 필요에 따라 double 또는 long double 형식을 갖습니다. `InIt`
+각각 필드를 추출하고 다음을 호출하여 숫자 값으로 변환합니다. `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). **get**( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). \< `istreambuf_iterator` `val` 여기서는 Elem, Tr >로 정의 되며 필요에 따라 double 또는 long double 형식을 갖습니다. `InIt`
 
 변환된 값을 `val`의 형식으로 나타낼 수 없는 경우 함수는 `setstate`( **failbit**)를 호출합니다. 어떤 경우든 함수는 **\*this**를 반환합니다.
 
@@ -838,7 +838,7 @@ basic_istream<Elem, Tr>& seekg(off_type off, ios_base::seekdir way);
 > [!NOTE]
 > 표준 C++는 텍스트 파일에서 상대 검색을 지원하지 않으므로 두 번째 멤버 함수를 텍스트 파일과 함께 사용하지 마세요.
 
-[Fail](../standard-library/basic-ios-class.md#fail) 이 false 이면 첫 번째 멤버 함수는 일부 =  ->  `pos`[](../standard-library/basic-streambuf-class.md#pubseekpos) `pos_type` 임시 개체`newpos`에 대해 **newpos**[rdbuf](../standard-library/basic-ios-class.md#rdbuf)pubseekpos ()를 호출 합니다. 가 `fail` false 인 경우 두 번째 함수는 **newpos** = **rdbuf** -> [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff)( `off`, `way`)를 호출 합니다. 어떤 경우 든 `off_type`() **newpos** = = ( `off_type`) (-1) (위치 지정 작업 실패) 이면 함수는를 호출 `istr`합니다. [setstate](../standard-library/basic-ios-class.md#setstate) (`failbit`). 두 함수 모두 **\*this**를 반환합니다.
+[Fail](../standard-library/basic-ios-class.md#fail) 이 false 이면 첫 번째 멤버 함수는 일부`pos_type`임시 개체`newpos`에 대해 **newpos** = [rdbuf](../standard-library/basic-ios-class.md#rdbuf) -> [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos)(`pos`)를 호출합니다. 가 `fail` false 인 경우 두 번째 함수는 **newpos** = **rdbuf** -> [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff)( `off`, `way`)를 호출 합니다. 어떤 경우 든 `off_type`() **newpos** = = ( `off_type`) (-1) (위치 지정 작업 실패) 이면 함수는를 호출 `istr`합니다. [setstate](../standard-library/basic-ios-class.md#setstate) (`failbit`). 두 함수 모두 **\*this**를 반환합니다.
 
 [fail](../standard-library/basic-ios-class.md#fail)이 true인 경우 멤버 함수는 아무 작업도 수행하지 않습니다.
 

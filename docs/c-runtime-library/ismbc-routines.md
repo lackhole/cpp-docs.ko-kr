@@ -1,7 +1,7 @@
 ---
 title: _ismbc 루틴
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcr110.dll
 - msvcr110_clr0400.dll
 - msvcr100.dll
@@ -9,21 +9,24 @@ apilocation:
 - msvcr90.dll
 - msvcr120.dll
 - msvcr80.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ismbc
 helpviewer_keywords:
 - ismbc routines
 - _ismbc routines
 ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
-ms.openlocfilehash: dd187be93b5df0160686fe765f65c25e14800b75
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 6dc14f269cafa8ccc343c5403ab0e23d319c71c3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57748686"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940161"
 ---
-# <a name="ismbc-routines"></a>_ismbc 루틴
+# <a name="_ismbc-routines"></a>_ismbc 루틴
 
 각 **_ismbc** 루틴은 특정 조건에 대해 지정된 멀티바이트 문자 `c`를 테스트합니다.
 
@@ -33,7 +36,7 @@ ms.locfileid: "57748686"
 |[_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l](../c-runtime-library/reference/ismbcgraph-functions.md)|[_ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l](../c-runtime-library/reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|
 |[_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l](../c-runtime-library/reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|[_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l](../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 각 **_ismbc** 루틴의 테스트 결과는 적용되는 멀티바이트 코드 페이지에 따라 다릅니다. 멀티바이트 코드 페이지는 싱글바이트 알파벳 문자를 포함합니다. 기본적으로 멀티바이트 코드 페이지는 프로그램 시작 시 운영 체제에서 가져온 system-default ANSI 코드 페이지로 설정됩니다. [_getmbcp](../c-runtime-library/reference/getmbcp.md) 또는 [_setmbcp](../c-runtime-library/reference/setmbcp.md)를 각각 사용하여 사용 중인 멀티바이트 코드 페이지를 변경하거나 쿼리할 수 있습니다.
 

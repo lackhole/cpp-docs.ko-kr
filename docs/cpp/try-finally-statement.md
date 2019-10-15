@@ -21,10 +21,10 @@ helpviewer_keywords:
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
 ms.openlocfilehash: c26b72f7c675a4130f38c515cf71ecc290328ccc
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69498600"
 ---
 # <a name="try-finally-statement"></a>try-finally 문
@@ -92,7 +92,7 @@ Try [jmp](../c-runtime-library/reference/longjmp.md) 런타임 함수를 사용 
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [종료 처리기 작성](../cpp/writing-a-termination-handler.md)<br/>
 [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>

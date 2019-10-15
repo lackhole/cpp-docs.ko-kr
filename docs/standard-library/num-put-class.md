@@ -21,7 +21,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68457696"
 ---
-# <a name="numput-class"></a>num_put 클래스
+# <a name="num_put-class"></a>num_put 클래스
 
 숫자 값에서 `CharType` 형식의 시퀀스로 변환을 제어하는 로캘 패싯으로 사용 가능한 개체에 대해 설명하는 템플릿 클래스입니다.
 
@@ -161,7 +161,7 @@ virtual iter_type do_put(
 
 정수 출력 필드는 일련의 **char** 요소를 파일에 생성 하기 위해 인쇄 함수에서 사용 하는 것과 동일한 규칙에 의해 생성 됩니다. 이러한 각 char 요소는 단순 하 고 일대일 매핑으로 형식의 `CharType` 동등한 요소에 매핑되는 것으로 간주 됩니다. 그러나 print 함수는 공백이 나 숫자 0으로 필드를 채웁니다. 대신는를 `do_put` 사용 `fill`합니다. 동일한 인쇄 변환 사양은 다음과 같이 결정됩니다.
 
-- **iosbase**. [](../standard-library/ios-base-class.md#flags) & [oct](../standard-library/ios-functions.md#oct)에 플래그`ios_base::basefield`를 지정 합니다`lo`. 변환 사양은입니다. == `ios_base::`
+- **iosbase**. [oct에 ](../standard-library/ios-base-class.md#flags) & `ios_base::basefield` == `ios_base::`[플래그](../standard-library/ios-functions.md#oct)를 지정 합니다. 변환 사양은 `lo`입니다.
 
 - **Iosbase. flags** & **ios_base:: basefield** == `ios_base::`[hex](../standard-library/ios-functions.md#hex)인 경우 변환 사양은 `lx`입니다.
 
@@ -171,7 +171,7 @@ virtual iter_type do_put(
 
 출력 필드를 지정하는 데 필요한 최소 요소 수 *N*이 **iosbase**. [width](../standard-library/ios-base-class.md#width)보다 작은 경우에만 채우기가 수행됩니다. 이러한 패딩은 **채우기**의 *N* - **너비** 복사본 시퀀스로 구성 됩니다. 그런 후에 다음과 같이 채우기가 수행됩니다.
 
-- **iosbase**. **플래그 왼쪽**[](../standard-library/ios-functions.md#left)에 **플래그-** 를 앞에 붙습니다. & `ios_base::adjustfield` == `ios_base::` 채우기는 생성된 텍스트 뒤에서 수행됩니다.
+- **iosbase**. **왼쪽에**  & `ios_base::adjustfield` == `ios_base::`[플래그](../standard-library/ios-functions.md#left)를 지정합니다. **-** 플래그를 앞에 붙입니다. 채우기는 생성된 텍스트 뒤에서 수행됩니다.
 
 - **iosbase.flags** & **ios_base::adjustfield** == `ios_base::`[internal](../standard-library/ios-functions.md#internal)인 경우에는 플래그 **0**이 앞에 추가됩니다. 숫자 출력 필드의 경우에는 print 함수가 0으로 채우는 위치에서 채우기가 수행됩니다.
 
@@ -213,9 +213,9 @@ virtual iter_type do_put(iter_type next,
 
 이 함수는 **val**. **fac**. [decimal_point](../standard-library/numpunct-class.md#decimal_point)의 값에서 부동 소수점 출력 필드를 생성하며 정수 자릿수와 소수 자릿수를 구분하는 시퀀스를 결정한다는 점을 제외하면 첫 번째 함수와 동일하게 동작합니다. 동일한 인쇄 변환 사양은 다음과 같이 결정됩니다.
 
-- **iosbase**. **플래그가** & 수정되었습니다.변환사양은[](../standard-library/ios-functions.md#fixed)입니다.`ios_base::floatfield` == `ios_base::` `lf`
+- **iosbase**. **플래그가** & `ios_base::floatfield` == `ios_base::`[수정](../standard-library/ios-functions.md#fixed)되었습니다. 변환사양은 `lf`입니다.
 
-- **iosbase**. **flags** & **ios_base::floatfield** == `ios_base::`[scientific](../standard-library/ios-functions.md#scientific)이면 변환 사양은 `le`입니다. **iosbase**. **플래그** &  의대문자는`e` 0이 아닌 값으로 바꿉니다.[](../standard-library/ios-functions.md#uppercase) `E``ios_base::`
+- **iosbase**. **flags** & **ios_base::floatfield** == `ios_base::`[scientific](../standard-library/ios-functions.md#scientific)이면 변환 사양은 `le`입니다. **iosbase**. **플래그** & `ios_base::`[의 대문자](../standard-library/ios-functions.md#uppercase)는 0이 아닙니다. `e`이 `E`값으로 바뀝니다.
 
 - 그렇지 않으면 변환 사양은 **lg**입니다. **iosbase**. **flags** & **ios_base::** `g` 대문자 는`G`0이 아닌 값으로 대체 됩니다.
 

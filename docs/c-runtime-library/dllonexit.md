@@ -1,9 +1,9 @@
 ---
 title: __dllonexit
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __dllonexit
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr110.dll
 - msvcr110_clr0400.dll
@@ -12,20 +12,23 @@ apilocation:
 - msvcr120.dll
 - msvcr90.dll
 - msvcr120_clr0400.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __dllonexit
 helpviewer_keywords:
 - __dllonexit
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
-ms.openlocfilehash: a6c077ac010c0b5d94ba21ba823441ea6ac932b9
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 61d63c751dd755bf8a7680c674681e114945814b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57739382"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940443"
 ---
-# <a name="dllonexit"></a>__dllonexit
+# <a name="__dllonexit"></a>__dllonexit
 
 종료 시 호출할 루틴을 등록합니다.
 
@@ -49,11 +52,11 @@ _onexit_t __dllonexit(   _onexit_t func,
 *pend*<br/>
 삭제 시 실행할 함수 목록의 끝 부분을 가리키는 변수에 대한 포인터입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 성공할 경우 사용자 함수에 대한 포인터입니다. 그렇지 않으면 **NULL** 포인터입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 `__dllonexit` 함수는 [_onexit](../c-runtime-library/reference/onexit-onexit-m.md) 함수에서 사용되는 전역 변수가 이 루틴에 표시되지 않는다는 점을 제외하고 해당 함수와 비슷합니다. 이 함수는 전역 변수 대신 `pbegin` 및 `pend` 매개 변수를 사용합니다.
 

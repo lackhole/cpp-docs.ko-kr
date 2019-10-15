@@ -462,7 +462,7 @@ path& operator=(const Source& source);
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-에 [](../standard-library/path-class.md) 복사할 `path`경로입니다.
+`path`에 복사할 [경로](../standard-library/path-class.md)입니다.
 
 *원본*\
 원본 경로입니다.

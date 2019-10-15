@@ -39,4 +39,6 @@ C++AMP(C++ Accelerated Massive Parallelism)는 개별 그래픽 카드에서 일
 
 [네이티브 코드 블로그의 병렬 프로그래밍](https://go.microsoft.com/fwlink/p/?linkid=238472)<br/>
 [C++AMP 샘플 프로젝트 다운로드](https://go.microsoft.com/fwlink/p/?linkid=248508)<br/>
+
 [동시성 시각화 도구를 사용한 C++ AMP 코드 분석](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)
+

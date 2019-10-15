@@ -1,9 +1,9 @@
 ---
 title: _CIatan2
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CIatan2
-apilocation:
+api_location:
 - msvcr80.dll
 - msvcrt.dll
 - msvcr120.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr100.dll
 - msvcr90.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CIatan2
 - _CIatan2
@@ -20,14 +23,14 @@ helpviewer_keywords:
 - _CIatan2 intrinsic
 - CIatan2 intrinsic
 ms.assetid: 31f8cc78-b79f-4576-b73b-8add18e08680
-ms.openlocfilehash: 914af27921d5fe023a101c4aeec3a808241dcb79
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: dee536b41ccb4c45284fa418e92b99807e51c53a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749180"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940526"
 ---
-# <a name="ciatan2"></a>_CIatan2
+# <a name="_ciatan2"></a>_CIatan2
 
 *x* 및 *y*가 스택의 맨 위에 있는 값인 경우 *x* / *y*의 아크탄젠트를 계산합니다.
 
@@ -37,7 +40,7 @@ ms.locfileid: "57749180"
 void __cdecl _CIatan2();
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 버전의 `atan2` 함수는 컴파일러가 이해할 수 있는 특별한 호출 규칙을 가집니다. 복사본이 생성되지 않도록 하며 레지스터 할당을 돕기 때문에 실행 속도를 높입니다.
 

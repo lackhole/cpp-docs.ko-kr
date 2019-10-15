@@ -26,7 +26,7 @@ ms.locfileid: "68449214"
 
 ## <a name="remarks"></a>설명
 
-이러한 각 조작자 `T1` 는 **Elem**, **Tr**[](../standard-library/istream-operators.md#op_gt_gt) `T10` \< `basic_istream`연산자>>를모두오버로드하는를통해호출되는지정되지않은형식을반환합니다.>`::` `basic_ostream` **Elem**, Tr연산자`::`<[<](../standard-library/ostream-operators.md#op_lt_lt). \<>
+이러한 각 조작자 `basic_istream`\< **Elem**, **Tr**>`::`[연산자>>](../standard-library/istream-operators.md#op_gt_gt) 및 `basic_ostream`\<**Elem**, **Tr**>`::`[연산자<<](../standard-library/ostream-operators.md#op_lt_lt)를 모두 오버로드하는 `T1`이라 불리는 `T10`를 통해 호출되는 지정되지 않은 형식을 반환합니다.
 
 ### <a name="manipulators"></a>조작자
 

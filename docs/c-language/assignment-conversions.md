@@ -5,12 +5,12 @@ helpviewer_keywords:
 - conversions, assignment
 - assignment conversions
 ms.assetid: 4ee01013-de32-4aae-b12e-0051d0cde927
-ms.openlocfilehash: 6caed3d7a8079bc6b02e9ad17859cd4062cbee7f
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
-ms.translationtype: HT
+ms.openlocfilehash: f118c4a7fee493793b1410cb26f6a0af571c5fcc
+ms.sourcegitcommit: c51b2c665849479fa995bc3323a22ebe79d9d7ce
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152718"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71998693"
 ---
 # <a name="assignment-conversions"></a>할당 변환
 
@@ -28,6 +28,6 @@ ms.locfileid: "56152718"
 
 **const** I-value는 할당의 왼쪽에 사용할 수 없지만, 형식 한정자는 변환 허용 가능성에 영향을 주지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [형식 변환](../c-language/type-conversions-c.md)

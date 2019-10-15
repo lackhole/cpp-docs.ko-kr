@@ -21,7 +21,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68456707"
 ---
-# <a name="autoptr-class"></a>auto_ptr 클래스
+# <a name="auto_ptr-class"></a>auto_ptr 클래스
 
 제어가 블록을 나갈 때 리소스가 자동으로 제거되도록 리소스를 스마트 포인터로 래핑합니다.
 
@@ -124,7 +124,7 @@ auto _ptr(auto _ptr<Other>& right) throw();
 
 #### <a name="remarks"></a>설명
 
-첫 번째 생성자는  할당 된 `myptr`개체에 대 한 저장 된 포인터인 ptr를 저장 합니다. 두 번째 생성자는 right를 저장 하 여 *오른쪽*에 저장 된 포인터의 소유권을 전송 *합니다.* [](#release) 에서`myptr`릴리스.
+첫 번째 생성자는 할당 된 `myptr`개체에 대 한 저장 된 포인터인 ptr를 저장 합니다. 두 번째 생성자 *는 right를*저장 하 여 *오른쪽*에 저장 된 포인터의 소유권을 전송 합니다. `myptr`에서 [릴리스](#release).
 
 세 번째 생성자는를 저장 `right`한다는 점을 제외 하 고 두 번째 생성자와 동일 하 게 동작 합니다. `ref`. `release`에서는 에`right`저장 된 참조입니다. `ref` `myptr`
 
@@ -278,7 +278,7 @@ auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 
 #### <a name="remarks"></a>설명
 
-할당은 식을 `delete myptr`평가 하지만 저장 된 포인터가 `myptr` 할당의 결과로 변경 되는 경우에만 적용 됩니다. 그런 다음 right를 저장 하 여 *오른쪽*에 저장 된 포인터의 소유권을 *전송 합니다.* [](#release) 에서`myptr`릴리스. 함수는 __\*this__를 반환합니다.
+할당은 식을 `delete myptr`평가 하지만 저장 된 포인터가 `myptr` 할당의 결과로 변경 되는 경우에만 적용 됩니다. 그런 다음 *right*를 저장하여 *오른쪽*에 저장된 포인터의 소유권을 전송합니다. `myptr`에서 [릴리스](#release). 함수는 __\*this__를 반환합니다.
 
 #### <a name="example"></a>예제
 

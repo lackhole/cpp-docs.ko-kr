@@ -2,16 +2,16 @@
 title: Array 및 WriteOnlyArray(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
-ms.openlocfilehash: fd616487bd3c11544f12e84a7dc64f41e63d501a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2ade7981d391288edd78f622b4753d546c5eaa04
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209418"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740685"
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Array 및 WriteOnlyArray(C++/CX)
 
-일반 C 스타일 배열을 자유롭게 사용할 수 있습니다 또는 [std:: array](../standard-library/array-class-stl.md) 에 C++/CX 프로그램 (있지만 [std:: vector](../standard-library/vector-class.md) 낫습니다 경우가), 메타 데이터에 게시 된 모든 api에서 변환 해야 하지만 C 스타일 배열이 나 벡터를 [platform:: array](../cppcx/platform-array-class.md) 또는 [platform:: writeonlyarray](../cppcx/platform-writeonlyarray-class.md) 사용 방법에 따라 형식입니다. [Platform::Array](../cppcx/platform-array-class.md) 형식은 [std::vector](../standard-library/vector-class.md)만큼 효율적이지도 않고 강력하지도 않으므로 배열 요소에 대한 많은 작업을 수행하는 내부 코드에서는 사용하지 않아야 합니다.
+/Cx 프로그램에서 일반 C 스타일 배열 또는 [std:: array](../standard-library/array-class-stl.md) 를 자유롭게 사용할 수 있지만 ( [std:: vector](../standard-library/vector-class.md) 를 선택 하는 것이 더 나은 경우도 있지만) 메타 데이터에 게시 된 모든 API에서는 C 스타일 배열 또는 벡터를 [Platform:: array](../cppcx/platform-array-class.md)로 변환 해야 합니다. C++ 또는 [Platform:: WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) 는 사용 방법에 따라 형식이 결정 됩니다. [Platform::Array](../cppcx/platform-array-class.md) 형식은 [std::vector](../standard-library/vector-class.md)만큼 효율적이지도 않고 강력하지도 않으므로 배열 요소에 대한 많은 작업을 수행하는 내부 코드에서는 사용하지 않아야 합니다.
 
 다음 배열 형식은 ABI 너머로 전달될 수 있습니다.
 
@@ -23,17 +23,17 @@ ms.locfileid: "62209418"
 
 1. Platform::Array^의 반환 값
 
-다음 배열 형식을 사용 하 여 세 가지 Windows 런타임에서 정의 된 배열 패턴을 구현 합니다.
+이러한 배열 형식을 사용 하 여 Windows 런타임에서 정의 된 세 가지 배열 패턴을 구현 합니다.
 
-PassArray 호출자가 메서드에 배열을 전달할 때 사용 됩니다. C++ 입력된 매개 변수 형식은 `const` [platform:: array](../cppcx/platform-array-class.md)\<T >입니다.
+호출자가 메서드에 배열을 전달할 때 사용 되는 PassArray입니다. C++ 입력 매개 변수 형식은 `const` [Platform:: Array](../cppcx/platform-array-class.md)\<T >입니다.
 
-FillArray 호출자가 메서드에서 채울 배열을 전달할 때 사용 됩니다. C++ 입력된 매개 변수 형식은 [platform:: writeonlyarray](../cppcx/platform-writeonlyarray-class.md)\<T >입니다.
+호출자가 채울 메서드에 대해 배열을 전달할 때 사용 되는 FillArray입니다. C++ 입력 매개 변수 형식은 [Platform:: WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md)\<T >입니다.
 
-ReceiveArray 호출자가 메서드가 할당 하는 배열의 받을 때 사용 됩니다. C++/CX에서는 반환 값에서 배열을 Array^로 반환하거나 Array^* 형식의 out 매개 변수로 반환할 수 있습니다.
+호출자가 메서드가 할당 하는 배열을 받을 때 사용 되는 ReceiveArray입니다. C++/CX에서는 반환 값에서 배열을 Array^로 반환하거나 Array^* 형식의 out 매개 변수로 반환할 수 있습니다.
 
 ## <a name="passarray-pattern"></a>PassArray 패턴
 
-클라이언트 코드에서 C++ 메서드에 배열을 전달하고 이 메서드가 해당 배열을 수정하지 않는 경우 이 메서드는 배열을 const Array^로 받습니다. Windows 런타임 응용 프로그램 이진 인터페이스 (ABI) 수준에서이 PassArray로 알려져 있습니다. 다음 예제에서는 JavaScript에서 할당된 배열을 이 배열을 읽는 C++ 함수에 전달하는 방법을 보여 줍니다.
+클라이언트 코드에서 C++ 메서드에 배열을 전달하고 이 메서드가 해당 배열을 수정하지 않는 경우 이 메서드는 배열을 const Array^로 받습니다. ABI (Windows 런타임 응용 프로그램 이진 인터페이스) 수준에서이를 PassArray 이라고 합니다. 다음 예제에서는 JavaScript에서 할당된 배열을 이 배열을 읽는 C++ 함수에 전달하는 방법을 보여 줍니다.
 
 [!code-javascript[cx_arrays#101](../cppcx/codesnippet/JavaScript/array-and-writeonlyarray-c-_1.js)]
 
@@ -43,7 +43,7 @@ ReceiveArray 호출자가 메서드가 할당 하는 배열의 받을 때 사용
 
 ## <a name="receivearray-pattern"></a>ReceiveArray 패턴
 
-ReceiveArray 패턴에서 클라이언트 코드는 배열을 선언하며, 배열의 메모리를 할당하고 배열을 초기화하는 메서드에 배열을 전달합니다. C++ 입력된 매개 변수 형식은 포인터-hat: `Array<T>^*`합니다. 다음 예제에서는 JavaScript에서 배열 개체를 선언한 다음, 메모리를 할당하고 요소를 초기화하여 JavaScript에 반환하는 C++ 함수에 이 개체를 전달하는 방법을 보여 줍니다. JavaScript는 할당된 배열을 반환 값으로 처리하지만 C++ 함수는 이 배열을 출력 매개 변수로 처리합니다.
+ReceiveArray 패턴에서 클라이언트 코드는 배열을 선언하며, 배열의 메모리를 할당하고 배열을 초기화하는 메서드에 배열을 전달합니다. C++ 입력 매개 변수 형식은 hat `Array<T>^*`에 대 한 포인터입니다. 다음 예제에서는 JavaScript에서 배열 개체를 선언한 다음, 메모리를 할당하고 요소를 초기화하여 JavaScript에 반환하는 C++ 함수에 이 개체를 전달하는 방법을 보여 줍니다. JavaScript는 할당된 배열을 반환 값으로 처리하지만 C++ 함수는 이 배열을 출력 매개 변수로 처리합니다.
 
 [!code-javascript[cx_arrays#102](../cppcx/codesnippet/JavaScript/array-and-writeonlyarray-c-_3.js)]
 
@@ -90,5 +90,5 @@ Windows 런타임 형식 시스템에서는 가변 배열의 개념이 지원되
 ## <a name="see-also"></a>참고자료
 
 [형식 시스템](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX 언어 참조](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [네임스페이스 참조](../cppcx/namespaces-reference-c-cx.md)

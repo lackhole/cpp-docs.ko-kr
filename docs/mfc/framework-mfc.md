@@ -1,6 +1,6 @@
 ---
 title: 프레임워크(MFC)
-ms.date: 11/04/2016
+ms.date: 09/17/2019
 helpviewer_keywords:
 - encapsulation [MFC], Win32 API
 - MFC, application framework
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - Windows API [MFC], encapsulation by MFC
 - encapsulated Win32 API [MFC]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-ms.openlocfilehash: 933fcf97c24ed0903395e2c718f8c89d42473494
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d93d2d50bab4b63258a3e0fe4cd2f24c2fcde4f3
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62219771"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095797"
 ---
 # <a name="framework-mfc"></a>프레임워크(MFC)
 
-Microsoft Foundation 클래스 (MFC) 라이브러리 프레임 워크를 사용 하 여 회사는 기반으로 몇 가지 주요 클래스 및 여러 시각적 개체 C++ 도구입니다. 일부 클래스는 Win32 API (응용 프로그래밍 인터페이스)의 많은 부분을 캡슐화합니다. 다른 클래스는 문서, 뷰 및 응용 프로그램 자체와 같은 응용 프로그램 개념을 캡슐화합니다. 여전히 다른 OLE 기능이 및 ODBC 및 DAO 데이터 액세스 기능 캡슐화합니다.
+MFC (Microsoft Foundation Class) 라이브러리 프레임 워크를 사용 하는 작업은 주로 몇 가지 주요 클래스와 여러 시각적 C++ 도구를 기반으로 합니다. 일부 클래스는 Win32 API (응용 프로그래밍 인터페이스)의 많은 부분을 캡슐화 합니다. 다른 클래스는 문서, 뷰 및 응용 프로그램 자체와 같은 응용 프로그램 개념을 캡슐화 합니다. OLE 기능과 ODBC 및 DAO 데이터 액세스 기능을 캡슐화 하는 경우도 있습니다.  (DAO는 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다.)
 
 예를 들어 Win32의 창 개념은 MFC 클래스의 `CWnd`에 의해 캡슐화됩니다. 즉, `CWnd`라는 C++ 클래스는 Windows 창을 나타내는`HWND` 핸들을 캡슐화 또는 "래핑"합니다. 마찬가지로 `CDialog` 클래스는 Win32 대화 상자를 캡슐화합니다.
 

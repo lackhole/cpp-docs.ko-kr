@@ -8,10 +8,10 @@ helpviewer_keywords:
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
 ms.openlocfilehash: 7bc0cb58cbbe995aa9d74e3ccb627ddc442bd4fb
-ms.sourcegitcommit: ec524d1f87bcce2b26b02e6d297f42c94b3db36e
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70026070"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>연습: 자체 동적 연결 라이브러리 만들기 및 사용(C++)
@@ -194,7 +194,8 @@ DLL에 대한 자세한 내용의 링크는 [Visual Studio에서 C/C++ DLL 만�
 
 이 헤더 파일은 두 개의 초기 값이 지정된 일반화된 피보나치 시퀀스를 생성하는 몇 가지 함수를 선언합니다. `fibonacci_init(1, 1)` 호출은 친숙한 피보나치 수열을 생성합니다.
 
-파일 맨 위의 전처리기 문을 확인합니다. DLL 프로젝트용 새 프로젝트 템플릿은 정의 된 전처리기 매크로에 ** _PROJECTNAME_&#95;내보내기를 추가 합니다. 이 예에서 Visual Studio는 MathLibrary DLL 프로젝트가 빌드될 때 **MATHLIBRARY&#95;EXPORTS**를 정의합니다.
+파일 맨 위의 전처리기 문을 확인합니다. DLL 프로젝트용 새 프로젝트 템플릿은 정의 된 전처리기 매크로에 ** _PROJECTNAME_&#95;
+수출** 내보내기를 추가 합니다. 이 예에서 Visual Studio는 MathLibrary DLL 프로젝트가 빌드될 때 **MATHLIBRARY&#95;EXPORTS**를 정의합니다.
 
 **MATHLIBRARY&#95;EXPORTS** 매크로가 정의되면 **MATHLIBRARY&#95;API** 매크로는 함수 선언에서 `__declspec(dllexport)` 한정자를 설정합니다. 이 한정자는 다른 응용 프로그램에서 사용할 수 있도록 DLL에서 함수 또는 변수를 내보내도록 컴파일러와 링커에 지시 합니다. **MATHLIBRARY&#95;EXPORTS**가 정의되지 않은 경우(예: 헤더 파일이 클라이언트 애플리케이션에 의해 포함되는 경우) **MATHLIBRARY&#95;API**는 선언에 `__declspec(dllimport)` 한정자를 적용합니다. 이 한정자는 애플리케이션에서 함수 또는 변수의 가져오기를 최적화합니다. 자세한 내용은 [dllexport, dllimport](../cpp/dllexport-dllimport.md)를 참조하세요.
 
@@ -439,7 +440,7 @@ DLL을 만들 때 클라이언트 앱에서 사용할 수 있는 방법을 생�
 
    ![클라이언트 프로젝트 이름 지정](media/mathclient-project-name.png "클라이언트 프로젝트 이름 지정")
 
-1. **확인** 단추를 선택하여 **새 프로젝트** 대화 상자를 닫고 **Win32 애플리케이션 마법사**를 시작합니다. **Win32 응용 프로그램 마법사** 대화 상자의 **개요** 페이지에서 **다음** 단추를 선택합니다.
+1. **확인** 단추를 선택하여 **새 프로젝트** 대화 상자를 닫고 **Win32 애플리케이션 마법사**를 시작합니다. **Win32 애플리케이션 마법사** 대화 상자의 **개요** 페이지에서 **다음** 단추를 선택합니다.
 
 1. **애플리케이션 설정** 페이지의 **애플리케이션 유형**에서 **콘솔 애플리케이션**이 아직 선택되어 있지 않으면 선택합니다.
 
@@ -587,6 +588,6 @@ int main()
 
 앱을 배포할 때 앱에 사용되는 DLL도 배포해야 합니다. 작성 하는 Dll을 만드는 가장 간단한 방법은 앱과 동일한 디렉터리에 배치 하는 것입니다. 이를 *응용 프로그램 로컬 배포*라고 합니다. 배포에 대한 자세한 내용은 [Deployment in Visual C++](../windows/deployment-in-visual-cpp.md)를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[Visual Basic 응용 프로그램에서 DLL 함수 호출](calling-dll-functions-from-visual-basic-applications.md)
+[Visual Basic 애플리케이션에서 DLL 함수 호출](calling-dll-functions-from-visual-basic-applications.md)

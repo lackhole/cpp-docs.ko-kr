@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.assetid: a6c111d0-24f9-4bbb-997d-3db4569761b7
 ms.openlocfilehash: bb27a92347b327e22afc4f6bb2fb248c12290cae
 ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65222150"
@@ -60,7 +60,7 @@ int main()
 }
 ```
 
-C++에서 예외 사용은 C# 및 Java와 같은 언어에서의 예외와  비슷합니다. **try** 블록에서 예외가 *발생*하면 해당 예외의 유형과 일치하는 첫 번째 연관된 **catch** 블록에 의해 포착됩니다. 즉, 실행은 **throw** 문에서 **catch** 문으로 이동합니다. 사용할 수 있는 catch 블록이 없으면 `std::terminate`가 호출되고 프로그램이 종료됩니다. C++에서는 모든 유형이 throw될 수 있습니다. 하지만 `std :: exception`에서 직접 또는 간접적으로 파생되는 유형을 throw하는 것이 좋습니다. 이전 예제에서 예외 유형 [invalid_argument](../standard-library/invalid-argument-class.md)는 표준 라이브러리의 [\<stdexcept >](../standard-library/stdexcept.md) 헤더 파일에 정의되어 있습니다. C++은 예외가 발생하면 모든 리소스가 해제되는 **finally** 블록을 제공하지 않으며 필요하지도 않습니다. 스마트 포인터를 사용하는 리소스 획득 초기화(RAII) 관용구는 리소스 정리에 필요한 기능을 제공합니다. 자세한 내용은 [방법: 예외 안전성을 위한 디자인](../cpp/how-to-design-for-exception-safety.md)을 참조합니다. C++ 스택 언와인딩 메커니즘에 대한 자세한 내용은 [예외 및 스택 언와인딩](../cpp/exceptions-and-stack-unwinding-in-cpp.md)을 참조합니다.
+C++에서 예외 사용은 C# 및 Java와 같은 언어에서의 예외와 비슷합니다. **try** 블록에서 예외가 *발생*하면 해당 예외의 유형과 일치하는 첫 번째 연관된 **catch** 블록에 의해 포착됩니다. 즉, 실행은 **throw** 문에서 **catch** 문으로 이동합니다. 사용할 수 있는 catch 블록이 없으면 `std::terminate`가 호출되고 프로그램이 종료됩니다. C++에서는 모든 유형이 throw될 수 있습니다. 하지만 `std::exception`에서 직접 또는 간접적으로 파생되는 유형을 throw하는 것이 좋습니다. 이전 예제에서 예외 유형 [invalid_argument](../standard-library/invalid-argument-class.md)는 표준 라이브러리의 [\<stdexcept>](../standard-library/stdexcept.md) 헤더 파일에 정의되어 있습니다. C++은 예외가 발생하면 모든 리소스가 해제되는 **finally** 블록을 제공하지 않으며 필요하지도 않습니다. 스마트 포인터를 사용하는 리소스 획득 초기화(RAII) 관용구는 리소스 정리에 필요한 기능을 제공합니다. 자세한 내용은 [방법: 예외 안전성을 위한 디자인](../cpp/how-to-design-for-exception-safety.md)을 참조합니다. C++ 스택 언와인딩 메커니즘에 대한 자세한 내용은 [예외 및 스택 언와인딩](../cpp/exceptions-and-stack-unwinding-in-cpp.md)을 참조합니다.
 
 ## <a name="basic-guidelines"></a>기본 지침
 
@@ -92,7 +92,7 @@ C++에서 예외 사용은 C# 및 Java와 같은 언어에서의 예외와  비�
 
 C 및 C++ 프로그램 모두 Windows 운영 체제에서 구조적 예외 처리(SEH) 메커니즘을 사용할 수 있습니다. SEH의 개념은 SEH는 **try** 및 **catch** 대신 **__try**, **__except** 및 **__finally** 구문을 사용한다는 점을 제외하고는 C++ 예외의 개념과 유사합니다. Microsoft C++ 컴파일러(MSVC)에서는 SEH에 대해 C++ 예외가 구현됩니다. 그러나 C++ 코드를 작성할 때는 C++ 예외 구문을 사용하세요.
 
-SEH에 대한 자세한 내용은 [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)를 참조합니다.
+SEH에 대한 자세한 내용은 참조 하세요. [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)를 참조합니다.
 
 ## <a name="exception-specifications-and-noexcept"></a>예외 사양 및 noexcept
 

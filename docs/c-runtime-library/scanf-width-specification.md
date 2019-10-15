@@ -1,25 +1,28 @@
 ---
 title: scanf 너비 사양
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcr100.dll
 - msvcr120.dll
 - msvcr80.dll
 - msvcr110_clr0400.dll
 - msvcr110.dll
 - msvcr90.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - scanf
 helpviewer_keywords:
 - scanf function, width specification
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c
-ms.openlocfilehash: 1431002a7e7d0054ac20c05c76b05cabc96177c5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 3b00996f3a17ab9298b1edba5a8e60826e19fdcc
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743269"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957356"
 ---
 # <a name="scanf-width-specification"></a>scanf 너비 사양
 
@@ -79,13 +82,13 @@ wscanf_s(L"%hC", &x, 2);    // Read a single-byte character
 
 ## <a name="reading-undelimited-strings"></a>구분되지 않은 문자열 읽기
 
-공백 문자로 구분되지 않은 문자열을 읽으려면 대괄호(**[ ]**)로 둘러싸인 문자 집합이 **s**(문자열) 형식 문자를 대신할 수 있습니다. 대괄호로 둘러싸인 문자 집합을 제어 문자열이라고 합니다. 해당 입력된 필드는 제어 문자열에 나타나지 않는 첫 번째 문자까지 읽힙니다. 세트의 첫 번째 문자가 캐럿(**^**)이면 영향이 취소됩니다. 입력 필드는 나머지 문자 세트에 나타나는 첫 번째 문자까지 읽힙니다.
+공백 문자로 구분되지 않은 문자열을 읽으려면 대괄호( **[ ]** )로 둘러싸인 문자 집합이 **s**(문자열) 형식 문자를 대신할 수 있습니다. 대괄호로 둘러싸인 문자 집합을 제어 문자열이라고 합니다. 해당 입력된 필드는 제어 문자열에 나타나지 않는 첫 번째 문자까지 읽힙니다. 세트의 첫 번째 문자가 캐럿( **^** )이면 영향이 취소됩니다. 입력 필드는 나머지 문자 세트에 나타나는 첫 번째 문자까지 읽힙니다.
 
 **%[a-z]** 및 **%[z-a]** 는 **%[abcde...z]** 와 동일한 것으로 해석됩니다. 이는 공통 `scanf` 함수 확장이지만 ANSI 표준에는 이러한 확장이 필요하지 않습니다.
 
 ## <a name="reading-unterminated-strings"></a>종결되지 않은 문자열 읽기
 
-null 종결 문자('\0')를 저장하지 않고 문자열을 저장하려면 사양 **%**<em>n</em>**c**를 사용합니다. 여기서 *n*은 10진수입니다. 이 경우에 **c** 형식 문자는 인수가 문자 배열에 대한 포인터임을 나타냅니다. 입력 스트림에서 지정된 위치로 다음 *n*개 문자를 읽고 null 문자('\0')는 추가되지 않습니다. *n*이 지정되어 있지 않으면 기본값은 1입니다.
+null 종결 문자('\0')를 저장하지 않고 문자열을 저장하려면 사양 **%** <em>n</em>**c**를 사용합니다. 여기서 *n*은 10진수입니다. 이 경우에 **c** 형식 문자는 인수가 문자 배열에 대한 포인터임을 나타냅니다. 입력 스트림에서 지정된 위치로 다음 *n*개 문자를 읽고 null 문자('\0')는 추가되지 않습니다. *n*이 지정되어 있지 않으면 기본값은 1입니다.
 
 ## <a name="when-scanf-stops-reading-a-field"></a>scanf가 필드 읽기를 중지하는 경우
 

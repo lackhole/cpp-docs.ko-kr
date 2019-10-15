@@ -40,10 +40,10 @@ helpviewer_keywords:
 - menus [C++], deleting
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
 ms.openlocfilehash: f2a5f1ac63007bf44dc331e2104c6e9e5cac23da
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69514820"
 ---
 # <a name="menu-editor-c"></a>메뉴 편집기 (C++)
@@ -194,7 +194,7 @@ ms.locfileid: "69514820"
 
 Win32
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
 [메뉴 명령](../windows/menu-command-properties.md)<br/>

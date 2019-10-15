@@ -1,9 +1,9 @@
 ---
 title: __CxxFrameHandler
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __CxxFrameHandler
-apilocation:
+api_location:
 - msvcr110.dll
 - msvcrt.dll
 - msvcr80.dll
@@ -11,20 +11,23 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr90.dll
 - msvcr120.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __CxxFrameHandler
 helpviewer_keywords:
 - __CxxFrameHandler
 ms.assetid: b79ac97f-425a-42ae-9b91-8beaef935333
-ms.openlocfilehash: d059df597826c68f4f51eb85f592b7eb44ac7d1f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4cb5ae10d4281c4a7167db7adf4ea6788ad3e3c0
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432126"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944508"
 ---
-# <a name="cxxframehandler"></a>__CxxFrameHandler
+# <a name="__cxxframehandler"></a>__CxxFrameHandler
 
 내부 CRT 함수입니다. CRT에서 구조화된 예외 프레임을 처리하는 데 사용됩니다.
 
@@ -53,7 +56,7 @@ EXCEPTION_DISPOSITION __CxxFrameHandler(
 *pDC*<br/>
 함수 시작 및 스택 프레임에 대한 추가 정보입니다.
 
-## <a name="return-value"></a>반환 값
+## <a name="return-value"></a>Return Value
 
 [try-except Statement](../cpp/try-except-statement.md)에서 사용하는 *필터 식* 값 중 하나입니다.
 

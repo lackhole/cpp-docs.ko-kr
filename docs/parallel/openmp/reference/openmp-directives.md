@@ -29,48 +29,48 @@ helpviewer_keywords:
 - single OpenMP directive
 - threadprivate OpenMP directive
 ms.assetid: 0562c263-344c-466d-843e-de830d918940
-ms.openlocfilehash: d644b612c0c326692786c94046d799163dfbce8d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 108e23a91b2bd0041d95a2262007ce4f684fc671
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362688"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69512186"
 ---
 # <a name="openmp-directives"></a>OpenMP 지시문
 
 OpenMP API에서 사용 되는 지시문에 대 한 링크를 제공 합니다.
 
-Visual C++ 다음 OpenMP 지시문을 지원 합니다.
+시각적 C++ 개체는 다음 OpenMP 지시문을 지원 합니다.
 
-병렬 작업-공유:
+병렬 작업 공유:
+
+|지시문|Description|
+|---------|-----------|
+|[parallel](#parallel)|여러 스레드에서 동시에 실행 되는 코드 인 병렬 영역을 정의 합니다.|
+|[for](#for-openmp)|병렬 영역 내의 `for` 루프에서 수행 되는 작업을 스레드 간에 분할할 수 있습니다.|
+|[섹션이](#sections-openmp)|모든 스레드 간에 나눌 코드 섹션을 식별 합니다.|
+|[single](#single)|코드의 섹션이 마스터 스레드가 아닌 단일 스레드에서 실행 되도록 지정할 수 있습니다.|
+
+Master 및 synchronization의 경우:
 
 |지시문|설명|
 |---------|-----------|
-|[parallel](#parallel)|병렬로 여러 스레드에서 실행 될 코드는 병렬 영역을 정의 합니다.|
-|[for](#for-openmp)|수행 된 작업을 하면는 `for` 여러 스레드로 분배 하는 병렬 영역 내부 루프입니다.|
-|[sections](#sections-openmp)|모든 스레드 간에 나눌 코드 섹션을 식별 합니다.|
-|[single](#single)|코드의 섹션 마스터 스레드 반드시 단일 스레드에서 실행할지를 지정할 수 있습니다.|
+|[master](#master)|마스터 스레드만 프로그램의 특정 섹션을 실행 하도록 지정 합니다.|
+|[critical](#critical)|코드를 한 번에 하나의 스레드에서만 실행 하도록 지정 합니다.|
+|[barrier](#barrier)|팀의 모든 스레드를 동기화 합니다. 모든 스레드는 모든 스레드가 장벽을 실행할 때까지 장벽에서 일시 중지 됩니다.|
+|[atomic](#atomic)|원자 단위로 업데이트 되는 메모리 위치를 지정 합니다.|
+|[flush](#flush-openmp)|모든 스레드가 모든 공유 개체에 대해 동일한 메모리 뷰를 갖도록 지정 합니다.|
+|[ordered](#ordered-openmp-directives)|병렬화 `for` 된 루프의 코드를 순차 루프 처럼 실행 하도록 지정 합니다.|
 
-마스터 및 동기화:
+데이터 환경:
 
-|지시문|설명|
+|지시문|Description|
 |---------|-----------|
-|[master](#master)|마스터 스레드만 프로그램의 섹션을 실행할지를 지정 합니다.|
-|[critical](#critical)|한 번에 코드 한 스레드에서 실행만 되는지 지정 합니다.|
-|[barrier](#barrier)|팀;의 모든 스레드를 동기화합니다. 모든 스레드가 장애물 모든 스레드가 장애물을 실행할 때까지 일시 중지 합니다.|
-|[atomic](#atomic)|지정 하는 원자 단위로 업데이트 되는 메모리 위치입니다.|
-|[flush](#flush-openmp)|모든 스레드 모든 공유 개체에 대 한 메모리의 동일한 보기를 지정 합니다.|
-|[ordered](#ordered-openmp-directives)|해당 코드를 병렬화 된 아래 지정 `for` 순차 루프와 같은 루프를 실행 해야 합니다.|
-
-데이터 환경의 경우:
-
-|지시문|설명|
-|---------|-----------|
-|[threadprivate](#threadprivate)|변수는 스레드에 private 임을 지정 합니다.|
+|[threadprivate](#threadprivate)|변수가 스레드에 전용 임을 지정 합니다.|
 
 ## <a name="atomic"></a>atomic
 
-지정 하는 원자 단위로 업데이트 되는 메모리 위치입니다.
+원자 단위로 업데이트 되는 메모리 위치를 지정 합니다.
 
 ```
 #pragma omp atomic
@@ -80,13 +80,13 @@ Visual C++ 다음 OpenMP 지시문을 지원 합니다.
 ### <a name="parameters"></a>매개 변수
 
 *expression*<br/>
-에 문의 합니다 *lvalue*, 메모리 위치가 둘 이상의 쓰기를 방지 하려면.
+하나 이상의 쓰기 로부터 보호 하려는 메모리 위치를 포함 하는 *lvalue*를 포함 하는 문입니다.
 
 ### <a name="remarks"></a>설명
 
-`atomic` 지시문 절을 지원 합니다.
+지시문 `atomic` 은 절을 지원 하지 않습니다.
 
-자세한 내용은 [2.6.4 atomic 생성](../../../parallel/openmp/2-6-4-atomic-construct.md)합니다.
+자세한 내용은 [2.6.4 atomic 구문](../../../parallel/openmp/2-6-4-atomic-construct.md)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -115,7 +115,7 @@ Number of threads: 10
 
 ## <a name="barrier"></a>barrier
 
-팀;의 모든 스레드를 동기화합니다. 모든 스레드가 장애물 모든 스레드가 장애물을 실행할 때까지 일시 중지 합니다.
+팀의 모든 스레드를 동기화 합니다. 모든 스레드는 모든 스레드가 장벽을 실행할 때까지 장벽에서 일시 중지 됩니다.
 
 ```
 #pragma omp barrier
@@ -123,17 +123,17 @@ Number of threads: 10
 
 ### <a name="remarks"></a>설명
 
-`barrier` 지시문 절을 지원 합니다.
+지시문 `barrier` 은 절을 지원 하지 않습니다.
 
-자세한 내용은 [2.6.3 barrier 지시문](../../../parallel/openmp/2-6-3-barrier-directive.md)합니다.
+자세한 내용은 [2.6.3 장벽 지시어](../../../parallel/openmp/2-6-3-barrier-directive.md)를 참조 하세요.
 
 ### <a name="example"></a>예제
 
-샘플을 사용 하는 방법에 대 한 `barrier`를 참조 하세요 [마스터](#master)합니다.
+를 사용 `barrier`하는 방법에 대 한 샘플은 [master](#master)를 참조 하세요.
 
-## <a name="critical"></a>critical
+## <a name="critical"></a>업무용
 
-한 번에 하나의 스레드에서 코드는만 실행 됩니다 지정 합니다.
+코드를 한 번에 하나의 스레드에서만 실행 하도록 지정 합니다.
 
 ```
 #pragma omp critical [(name)]
@@ -145,13 +145,13 @@ Number of threads: 10
 ### <a name="parameters"></a>매개 변수
 
 *name*<br/>
-(선택 사항) 중요 한 코드를 식별 하는 이름입니다. 이름은 괄호로 묶어야 합니다.
+필드 중요 한 코드를 식별 하는 이름입니다. 이름은 괄호로 묶어야 합니다.
 
 ### <a name="remarks"></a>설명
 
-`critical` 지시문 절을 지원 합니다.
+지시문 `critical` 은 절을 지원 하지 않습니다.
 
-자세한 내용은 [중요 한 2.6.2 생성](../../../parallel/openmp/2-6-2-critical-construct.md)합니다.
+자세한 내용은 [2.6.2 critical critical 구문](../../../parallel/openmp/2-6-2-critical-construct.md)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -213,7 +213,7 @@ max = 29358
 
 ## <a name="flush-openmp"></a>flush
 
-모든 스레드 모든 공유 개체에 대 한 메모리의 동일한 보기를 지정 합니다.
+모든 스레드가 모든 공유 개체에 대해 동일한 메모리 뷰를 갖도록 지정 합니다.
 
 ```
 #pragma omp flush [(var)]
@@ -222,13 +222,13 @@ max = 29358
 ### <a name="parameters"></a>매개 변수
 
 *var*<br/>
-(선택 사항) 동기화 할 개체를 나타내는 변수의 쉼표로 구분 된 목록입니다. 하는 경우 *var* 지정 하지 않으면 모든 메모리는 플러시됩니다.
+필드 동기화 할 개체를 나타내는 쉼표로 구분 된 변수 목록입니다. *Var* 을 지정 하지 않으면 모든 메모리가 플러시됩니다.
 
 ### <a name="remarks"></a>설명
 
-`flush` 지시문 절을 지원 합니다.
+지시문 `flush` 은 절을 지원 하지 않습니다.
 
-자세한 내용은 [2.6.5 flush 지시문](../../../parallel/openmp/2-6-5-flush-directive.md)합니다.
+자세한 내용은 [2.6.5 flush 지시문](../../../parallel/openmp/2-6-5-flush-directive.md)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -289,7 +289,7 @@ data = 2
 
 ## <a name="for-openmp"></a>for
 
-수행 된 작업을 하면는 `for` 여러 스레드로 분배 하는 병렬 영역 내부 루프입니다.
+병렬 영역 내의 `for` 루프에서 수행 되는 작업을 스레드 간에 분할할 수 있습니다.
 
 ```
 #pragma omp [parallel] for [clauses]
@@ -299,14 +299,14 @@ data = 2
 ### <a name="parameters"></a>매개 변수
 
 *절*<br/>
-(선택 사항) 0 개 이상의 절을 참조 합니다 **주의** 섹션입니다.
+필드 절이 0 개 이상 있습니다. **설명** 부분을 참조 하십시오.
 
 *for_statement*<br/>
-`for` 루프입니다. 사용자 코드에서 하는 경우 정의 되지 않은 동작이 발생할는 `for` 루프 인덱스 변수를 변경 합니다.
+`for` 루프입니다. `for` 루프의 사용자 코드가 인덱스 변수를 변경 하면 정의 되지 않은 동작이 발생 합니다.
 
 ### <a name="remarks"></a>설명
 
-`for` 지시문 다음 절을 지원 합니다.
+지시문 `for` 은 다음 절을 지원 합니다.
 
 - [private](openmp-clauses.md#private-openmp)
 - [firstprivate](openmp-clauses.md#firstprivate)
@@ -316,9 +316,9 @@ data = 2
 - [schedule](openmp-clauses.md#schedule)
 - [nowait](openmp-clauses.md#nowait)
 
-하는 경우 `parallel` 도 지정 되어 `clauses` 절에서 사용할 수는 `parallel` 또는 `for` 지시문을 제외한 `nowait`합니다.
+도 `parallel` 지정 된 경우를 `clauses` 제외 `for` `parallel` 하`nowait`고는 또는 지시문에서 허용 하는 모든 절이 될 수 있습니다.
 
-자세한 내용은 [2.4.1 for 구문](../../../parallel/openmp/2-4-1-for-construct.md)합니다.
+자세한 내용은 [2.4.1 for 구문](../../../parallel/openmp/2-4-1-for-construct.md)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -384,9 +384,9 @@ int main() {
 The sum of 1 through 10 is 55
 ```
 
-## <a name="master"></a>master
+## <a name="master"></a>마스터나
 
-마스터 스레드만 프로그램의 섹션을 실행할지를 지정 합니다.
+마스터 스레드만 프로그램의 특정 섹션을 실행 하도록 지정 합니다.
 
 ```
 #pragma omp master
@@ -397,11 +397,11 @@ The sum of 1 through 10 is 55
 
 ### <a name="remarks"></a>설명
 
-`master` 지시문 절을 지원 합니다.
+지시문 `master` 은 절을 지원 하지 않습니다.
 
-합니다 [단일](#single) 지시어를 사용 하면 코드 섹션을 마스터 스레드 반드시 단일 스레드에서 실행할지를 지정 합니다.
+[단일](#single) 지시문을 사용 하면 코드 섹션을 마스터 스레드가 아닌 단일 스레드에서 실행 하도록 지정할 수 있습니다.
 
-자세한 내용은 [2.6.1 master 구문](../../../parallel/openmp/2-6-1-master-construct.md)합니다.
+자세한 내용은 [2.6.1 master 구문을](../../../parallel/openmp/2-6-1-master-construct.md)참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -448,7 +448,7 @@ a[4] = 16
 
 ## <a name="ordered-openmp-directives"></a>ordered
 
-해당 코드를 병렬화 된 아래 지정 `for` 순차 루프와 같은 루프를 실행 해야 합니다.
+병렬화 `for` 된 루프의 코드를 순차 루프 처럼 실행 하도록 지정 합니다.
 
 ```
 #pragma omp ordered
@@ -457,11 +457,11 @@ a[4] = 16
 
 ### <a name="remarks"></a>설명
 
-합니다 `ordered` 지시문은 동적 범위 내에 있어야 합니다.는 [에 대 한](#for-openmp) 또는 `parallel for` 사용 하 여 생성을 `ordered` 절.
+지시문 `ordered` 은 `ordered` 절을 사용 하 여 [에 대 한](#for-openmp) 의 동적 `parallel for` 범위 내에 있어야 합니다.
 
-`ordered` 지시문 절을 지원 합니다.
+지시문 `ordered` 은 절을 지원 하지 않습니다.
 
-자세한 내용은 [2.6.6 ordered 구문](../../../parallel/openmp/2-6-6-ordered-construct.md)합니다.
+자세한 내용은 [2.6.6 정렬 된 구문](../../../parallel/openmp/2-6-6-ordered-construct.md)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -517,9 +517,9 @@ test2() iteration 3
 test2() iteration 4
 ```
 
-## <a name="parallel"></a>병렬
+## <a name="parallel"></a>평행선
 
-병렬로 여러 스레드에서 실행 될 코드는 병렬 영역을 정의 합니다.
+여러 스레드에서 동시에 실행 되는 코드 인 병렬 영역을 정의 합니다.
 
 ```
 #pragma omp parallel [clauses]
@@ -531,11 +531,11 @@ test2() iteration 4
 ### <a name="parameters"></a>매개 변수
 
 *절*<br/>
-(선택 사항) 0 개 이상의 절을 참조 합니다 **주의** 섹션입니다.
+필드 절이 0 개 이상 있습니다. **설명** 부분을 참조 하십시오.
 
 ### <a name="remarks"></a>설명
 
-`parallel` 지시문 다음 절을 지원 합니다.
+지시문 `parallel` 은 다음 절을 지원 합니다.
 
 - [if](openmp-clauses.md#if-openmp)
 - [private](openmp-clauses.md#private-openmp)
@@ -546,13 +546,13 @@ test2() iteration 4
 - [reduction](openmp-clauses.md#reduction)
 - [num_threads](openmp-clauses.md#num-threads)
 
-`parallel` 사용 하 여 사용할 수도 있습니다는 [에 대 한](#for-openmp) 하 고 [섹션](#sections-openmp) 지시문입니다.
+`parallel`[for](#for-openmp) 및 [sections](#sections-openmp) 지시문과 함께 사용할 수도 있습니다.
 
-자세한 내용은 [2.3 parallel 구문](../../../parallel/openmp/2-3-parallel-construct.md)합니다.
+자세한 내용은 [2.3 병렬 구문](../../../parallel/openmp/2-3-parallel-construct.md)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
-다음 샘플에는 스레드 수를 설정 하 고 병렬 영역을 정의 하는 방법을 보여 줍니다. 스레드 수가 같은지 기본적으로 컴퓨터의 논리 프로세서의 수입니다. 예를 들어, 하이퍼 스레딩을 사용에 실제 프로세서가 있는 컴퓨터에 있는 경우 됩니다 것 두 개의 논리 프로세서와 두 개의 스레드입니다. 출력의 순서는 서로 다른 컴퓨터에서 달라질 수 있습니다.
+다음 샘플에서는 스레드 수를 설정 하 고 병렬 영역을 정의 하는 방법을 보여 줍니다. 스레드 수는 기본적으로 컴퓨터의 논리적 프로세서 수와 동일 합니다. 예를 들어 하이퍼스레딩을 사용 하도록 설정 된 하나의 실제 프로세서를 포함 하는 컴퓨터가 있는 경우 두 개의 논리적 프로세서와 두 개의 스레드가 포함 됩니다. 출력 순서는 컴퓨터 마다 다를 수 있습니다.
 
 ```cpp
 // omp_parallel.cpp
@@ -576,7 +576,7 @@ Hello from thread 2
 Hello from thread 3
 ```
 
-## <a name="sections-openmp"></a>sections
+## <a name="sections-openmp"></a>섹션이
 
 모든 스레드 간에 나눌 코드 섹션을 식별 합니다.
 
@@ -593,13 +593,13 @@ Hello from thread 3
 ### <a name="parameters"></a>매개 변수
 
 *절*<br/>
-(선택 사항) 0 개 이상의 절을 참조 합니다 **주의** 섹션입니다.
+필드 절이 0 개 이상 있습니다. **설명** 부분을 참조 하십시오.
 
 ### <a name="remarks"></a>설명
 
-합니다 `sections` 지시문에는 0 개 이상 포함 될 수 있습니다 `section` 지시문입니다.
+지시문 `sections` 은 0 개 `section` 이상의 지시문을 포함할 수 있습니다.
 
-`sections` 지시문 다음 절을 지원 합니다.
+지시문 `sections` 은 다음 절을 지원 합니다.
 
 - [private](openmp-clauses.md#private-openmp)
 - [firstprivate](openmp-clauses.md#firstprivate)
@@ -607,9 +607,9 @@ Hello from thread 3
 - [reduction](openmp-clauses.md#reduction)
 - [nowait](openmp-clauses.md#nowait)
 
-하는 경우 `parallel` 도 지정 되어 `clauses` 절에서 사용할 수는 `parallel` 또는 `sections` 지시문을 제외한 `nowait`합니다.
+도 `parallel` 지정 된 경우를 `clauses` 제외 `sections` `parallel` 하`nowait`고는 또는 지시문에서 허용 하는 모든 절이 될 수 있습니다.
 
-자세한 내용은 [2.4.2 sections 구문](../../../parallel/openmp/2-4-2-sections-construct.md)합니다.
+자세한 내용은 [2.4.2 sections sections 구문](../../../parallel/openmp/2-4-2-sections-construct.md)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -634,9 +634,9 @@ Hello from thread 0
 Hello from thread 0
 ```
 
-## <a name="single"></a>single
+## <a name="single"></a>단
 
-코드의 섹션 마스터 스레드 반드시 단일 스레드에서 실행할지를 지정할 수 있습니다.
+코드의 섹션이 마스터 스레드가 아닌 단일 스레드에서 실행 되도록 지정할 수 있습니다.
 
 ```
 #pragma omp single [clauses]
@@ -648,20 +648,20 @@ Hello from thread 0
 ### <a name="parameters"></a>매개 변수
 
 *절*<br/>
-(선택 사항) 0 개 이상의 절을 참조 합니다 **주의** 섹션입니다.
+필드 절이 0 개 이상 있습니다. **설명** 부분을 참조 하십시오.
 
 ### <a name="remarks"></a>설명
 
-`single` 지시문 다음 절을 지원 합니다.
+지시문 `single` 은 다음 절을 지원 합니다.
 
 - [private](openmp-clauses.md#private-openmp)
 - [firstprivate](openmp-clauses.md#firstprivate)
 - [copyprivate](openmp-clauses.md#copyprivate)
 - [nowait](openmp-clauses.md#nowait)
 
-합니다 [마스터](#master) 지시어를 사용 하면 코드의 섹션은 마스터 스레드에서만 실행 되도록 지정 합니다.
+[Master](#master) 지시어를 사용 하면 코드 섹션을 마스터 스레드에서만 실행 하도록 지정할 수 있습니다.
 
-자세한 내용은 [2.4.3 single 생성](../../../parallel/openmp/2-4-3-single-construct.md)합니다.
+자세한 내용은 [2.4.3 single 구문](../../../parallel/openmp/2-4-3-single-construct.md)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
@@ -697,7 +697,7 @@ write output
 
 ## <a name="threadprivate"></a>threadprivate
 
-변수는 스레드에 private 임을 지정 합니다.
+변수가 스레드에 전용 임을 지정 합니다.
 
 ```
 #pragma omp threadprivate(var)
@@ -706,17 +706,17 @@ write output
 ### <a name="parameters"></a>매개 변수
 
 *var*<br/>
-스레드를 비공개로 하려는 변수의 쉼표로 구분 된 목록입니다. *var* 전역 또는 네임 스페이스-범위 변수 또는 로컬 정적 변수 여야 합니다.
+스레드에 전용으로 지정할 변수를 쉼표로 구분한 목록입니다. *var* 은 전역 또는 네임 스페이스 범위 변수 또는 로컬 정적 변수 여야 합니다.
 
 ### <a name="remarks"></a>설명
 
-`threadprivate` 지시문 절을 지원 합니다.
+지시문 `threadprivate` 은 절을 지원 하지 않습니다.
 
-`threadprivate` 지시문 기반으로 [스레드](../../../cpp/thread.md) 를 사용 하 여 특성을 [__declspec](../../../cpp/declspec.md) 키워드;에 대 한 제한 `__declspec(thread)` 적용할 `threadprivate`합니다. 예를 들어, 한 `threadprivate` 변수는 모든 스레드를 병렬 영역에 의해 생성 된 스레드 팀의 일부인 스레드 뿐 아니라 프로세스에서 시작에 존재 합니다. 이 구현 세부 정보에 주의 알 수 있습니다에 대 한 생성자는 `threadprivate` 사용자 정의 형식을 예상 하는 다음에 종종 자세한 라고 합니다.
+`threadprivate` 지시어는 [__declspec](../../../cpp/declspec.md) 키워드를 사용하는 [thread](../../../cpp/thread.md) 특성을 기반으로 합니다 .`__declspec(thread)`에 대한 제한은 `threadprivate`에 적용됩니다. 예를 들어, `threadprivate` 병렬 지역에서 생성 된 스레드 팀의 일부인 스레드만이 아니라 프로세스에서 시작 된 모든 스레드에 변수가 존재 합니다. 이 구현에 대해 자세히 알고 있어야 합니다. `threadprivate` 사용자 정의 형식에 대 한 생성자가 예상 보다 더 자주 호출 될 수 있습니다.
 
-하지만 사용할 수 있습니다 `threadprivate` 프로세스를 시작할 때 정적으로 로드 된 DLL을 사용할 수 없습니다 `threadprivate` 를 통해 로드 되는 모든 dll [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) 사용 하 여 로드 되는 Dll 등 [/DELAYLOAD (지연 로드 가져오기가)](../../../build/reference/delayload-delay-load-import.md)를 사용 하 여 `LoadLibrary`입니다.
+프로세스 시작 시 `threadprivate` 정적으로 로드 되는 dll에서는를 사용할 수 있지만/DELAYLOAD를 사용 하 `threadprivate` 여 로드 되는 dll (예: [로드 지연 가져오기)](../../../build/reference/delayload-delay-load-import.md)과 같이 [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw) 를 통해 로드 되는 dll에서는를 사용할 수 없습니다. `LoadLibrary`.
 
-A `threadprivate` 변수를 *소멸 가능한* 형식 이라는 해당 소멸자가 보장 되지 않습니다. 예를 들어:
+소멸 가능한 `threadprivate` 형식의 변수는 해당 소멸자를 호출 하는 것이 보장 되지 않습니다. 예:
 
 ```
 struct MyType
@@ -733,10 +733,10 @@ int main()
 }
 ```
 
-사용자가 병렬 영역을 구성 하는 스레드를 종료 하는 경우에 대 한 제어 하지 않습니다. 프로세스가 종료, 스레드가 프로세스 종료에 대 한 알림이 발송 되지 않습니다 및 소멸자에 대 한 호출 되지 않습니다 하는 경우 해당 스레드에 있으면 `threaded_var` 끝내는 것을 제외 하 고 모든 스레드에서 (여기, 기본 스레드). 코드의 적절 한 소멸은 기대 하지 있도록 `threadprivate` 변수입니다.
+사용자는 병렬 지역이 백업을 위해 스레드가 종료 될 때를 제어 하지 않습니다. 프로세스가 종료 될 때 이러한 스레드가 있으면 스레드에 프로세스가 종료 되었다는 알림이 표시 되지 않고 종료 된 스레드 (여기서는 주 스레드)를 제외한 `threaded_var` 모든 스레드에서 소멸자가 호출 되지 않습니다. 따라서 코드를 적절 하 게 소멸 `threadprivate` 시 코드를 계산 해서는 안 됩니다.
 
-자세한 내용은 [2.7.1 threadprivate 지시문](../../../parallel/openmp/2-7-1-threadprivate-directive.md)합니다.
+자세한 내용은 [2.7.1 threadprivate 지시문](../../../parallel/openmp/2-7-1-threadprivate-directive.md)을 참조 하세요.
 
 ### <a name="example"></a>예제
 
-사용 하는 예제에 대 한 `threadprivate`를 참조 하세요 [개인](openmp-clauses.md#private-openmp)합니다.
+사용 `threadprivate`에 대 한 샘플은 [private](openmp-clauses.md#private-openmp)를 참조 하세요.

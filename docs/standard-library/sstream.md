@@ -70,7 +70,7 @@ void swap (
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |*left*|`sstream` 개체에 대한 참조입니다.|
 |*right*|`sstream` 개체에 대한 참조입니다.|
@@ -83,14 +83,14 @@ void swap (
 
 |형식 이름|Description|
 |-|-|
-|[istringstream](../standard-library/sstream-typedefs.md#istringstream)|Char 템플릿 매개 `basic_istringstream` 변수에서 특수화  된 형식을 만듭니다.|
-|[ostringstream](../standard-library/sstream-typedefs.md#ostringstream)|Char 템플릿 매개 `basic_ostringstream` 변수에서 특수화  된 형식을 만듭니다.|
-|[stringbuf](../standard-library/sstream-typedefs.md#stringbuf)|Char 템플릿 매개 `basic_stringbuf` 변수에서 특수화  된 형식을 만듭니다.|
-|[stringstream](../standard-library/sstream-typedefs.md#stringstream)|Char 템플릿 매개 `basic_stringstream` 변수에서 특수화  된 형식을 만듭니다.|
-|[wistringstream](../standard-library/sstream-typedefs.md#wistringstream)|Wchar_t 템플릿 매개 `basic_istringstream` 변수에서 특수화  된 형식을 만듭니다.|
-|[wostringstream](../standard-library/sstream-typedefs.md#wostringstream)|Wchar_t 템플릿 매개 `basic_ostringstream` 변수에서 특수화  된 형식을 만듭니다.|
-|[wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf)|Wchar_t 템플릿 매개 `basic_stringbuf` 변수에서 특수화  된 형식을 만듭니다.|
-|[wstringstream](../standard-library/sstream-typedefs.md#wstringstream)|Wchar_t 템플릿 매개 `basic_stringstream` 변수에서 특수화  된 형식을 만듭니다.|
+|[istringstream](../standard-library/sstream-typedefs.md#istringstream)|Char 템플릿 매개 `basic_istringstream` 변수에서 특수화 된 형식을 만듭니다.|
+|[ostringstream](../standard-library/sstream-typedefs.md#ostringstream)|Char 템플릿 매개 `basic_ostringstream` 변수에서 특수화 된 형식을 만듭니다.|
+|[stringbuf](../standard-library/sstream-typedefs.md#stringbuf)|Char 템플릿 매개 `basic_stringbuf` 변수에서 특수화 된 형식을 만듭니다.|
+|[stringstream](../standard-library/sstream-typedefs.md#stringstream)|Char 템플릿 매개 `basic_stringstream` 변수에서 특수화 된 형식을 만듭니다.|
+|[wistringstream](../standard-library/sstream-typedefs.md#wistringstream)|Wchar_t 템플릿 매개 `basic_istringstream` 변수에서 특수화 된 형식을 만듭니다.|
+|[wostringstream](../standard-library/sstream-typedefs.md#wostringstream)|Wchar_t 템플릿 매개 `basic_ostringstream` 변수에서 특수화 된 형식을 만듭니다.|
+|[wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf)|Wchar_t 템플릿 매개 `basic_stringbuf` 변수에서 특수화 된 형식을 만듭니다.|
+|[wstringstream](../standard-library/sstream-typedefs.md#wstringstream)|Wchar_t 템플릿 매개 `basic_stringstream` 변수에서 특수화 된 형식을 만듭니다.|
 
 ### <a name="manipulators"></a>조작자
 
@@ -103,9 +103,9 @@ void swap (
 |클래스|Description|
 |-|-|
 |[basic_stringbuf](../standard-library/basic-stringbuf-class.md)|배열 개체에 저장된 요소의 시퀀스에서 문자 특성이 `Tr` 클래스에 의해 결정되는 `Elem` 형식 요소의 전송을 제어하는 스트림 버퍼에 대해 설명합니다.|
-|[basic_istringstream](../standard-library/basic-istringstream-class.md)|`Elem` [](../standard-library/basic-stringbuf-class.md)Basic_stringbuf<**Elem**, **Tr** ,`Alloc`> 클래스의 스트림 버퍼에서 문자를 형식의 요소로 사용 하 여 요소 및 인코드된 개체의 추출을 제어 하는 개체를 설명 합니다. 특성은 클래스 `Tr`에 의해 결정 되며 해당 요소는 클래스 `Alloc`의 할당자에 의해 할당 됩니다.|
-|[basic_ostringstream](../standard-library/basic-ostringstream-class.md)|문자 특성이 있는<형식의 `Alloc` [](../standard-library/basic-stringbuf-class.md) 요소가`Elem`있는 basic_stringbuf Elem, **Tr**, > 클래스의 스트림 버퍼에 요소 및 인코드된 개체 삽입을 제어 하는 개체에 대해 설명 합니다. 클래스 `Tr`에 의해 결정 되 고 해당 요소가 클래스 `Alloc`의 할당자에 의해 할당 됩니다.|
-|[basic_stringstream](../standard-library/basic-stringstream-class.md)|`Alloc`형식의<  [](../standard-library/basic-stringbuf-class.md) 요소가`Elem`있는 basic_stringbuf**Elem**, Tr, > 클래스의 스트림 버퍼를 사용 하 여 요소 및 인코드된 개체의 삽입 및 추출을 제어 하는 개체를 설명 합니다. 문자 특성은 클래스 `Tr`에 의해 결정 되 고 해당 요소가 클래스 `Alloc`의 할당자에 의해 할당 됩니다.|
+|[basic_istringstream](../standard-library/basic-istringstream-class.md)|[Basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`> 클래스의 스트림 버퍼에서 문자를 `Elem`형식의 요소로 사용하여 요소 및 인코드된 개체의 추출을 제어하는 개체를 설명합니다. 특성은 클래스 `Tr`에 의해 결정되며 해당 요소는 클래스 `Alloc`의 할당자에 의해 할당됩니다.|
+|[basic_ostringstream](../standard-library/basic-ostringstream-class.md)|문자 특성이 있는 `Elem`형식의 요소가 있는 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`> 클래스의 스트림 버퍼에 요소 및 인코드된 개체 삽입을 제어하는 개체에 대해 설명합니다. 클래스 `Tr`에 의해 결정되고 해당 요소가 클래스 `Alloc`의 할당자에 의해 할당됩니다.|
+|[basic_stringstream](../standard-library/basic-stringstream-class.md)|`Elem` 형식의 요소가 있는 [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`> 클래스의 스트림 버퍼를 사용하여 요소 및 인코드된 개체의 삽입 및 추출을 제어하는 개체를 설명합니다. 문자 특성은 클래스 `Tr`에 의해 결정되고 해당 요소가 클래스 `Alloc`의 할당자에 의해 할당됩니다.|
 
 ## <a name="requirements"></a>요구 사항
 

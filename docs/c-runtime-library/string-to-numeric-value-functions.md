@@ -1,14 +1,17 @@
 ---
 title: 문자열을 숫자 값으로 변환하는 함수
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcr80.dll
 - msvcr110.dll
 - msvcr120.dll
 - msvcr100.dll
 - msvcr110_clr0400.dll
 - msvcr90.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tcstoui64
 - _tcstoi64
@@ -16,12 +19,12 @@ helpviewer_keywords:
 - parsing, numeric strings
 - string conversion, to numeric values
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
-ms.openlocfilehash: 3f24b75c2fdb3aa0d84b16874d2d01f1cb96d4b9
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: b9d8218bd5a3151e17b7ac380bb86c85dac3e6a3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743893"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944733"
 ---
 # <a name="string-to-numeric-value-functions"></a>문자열을 숫자 값으로 변환하는 함수
 
@@ -35,7 +38,7 @@ ms.locfileid: "57743893"
 
 - [_strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l](../c-runtime-library/reference/strtoui64-wcstoui64-strtoui64-l-wcstoui64-l.md)
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 **strtod** 패밀리의 각 함수는 null로 끝나는 문자열을 숫자 값으로 변환합니다. 사용할 수 있는 함수는 다음 표에 나와 있습니다.
 
@@ -57,15 +60,15 @@ ms.locfileid: "57743893"
 
 `strtod`는 다음 형식의 문자열이 필요합니다.
 
-[*whitespace*] [*sign*] [`digits`] [**.**`digits`] [ {**d** &#124; **D** &#124; **e** &#124; **E**}[*sign*]`digits`]
+[*whitespace*] [*sign*] [`digits`] [ **.** `digits`] [ {**d** &#124; **D** &#124; **e** &#124; **E**}[*sign*]`digits`]
 
-*whitespace*는 공백 또는 탭 문자(무시됨)로 구성될 수 있습니다. *sign*은 더하기 기호(**+**) 또는 빼기 기호(**-**)이고 `digits`는 하나 이상의 10진수입니다. 기수 문자 앞에 숫자가 없는 경우 기수 문자 뒤에는 숫자가 하나 이상 있어야 합니다. 10진수 뒤에 지수가 올 수 있습니다. 지수는 소개 문자(**d**, **D**, **e** 또는 **E**) 및 부호 있는 정수(선택 사항)로 구성됩니다. 지수 부분과 기수 문자가 모두 없으면 기수 문자는 문자열의 마지막 숫자를 따르는 것으로 간주합니다. 이 형식에 맞지 않는 첫 번째 문자가 발견되면 검색이 중지됩니다.
+*whitespace*는 공백 또는 탭 문자(무시됨)로 구성될 수 있습니다. *sign*은 더하기 기호( **+** ) 또는 빼기 기호( **-** )이고 `digits`는 하나 이상의 10진수입니다. 기수 문자 앞에 숫자가 없는 경우 기수 문자 뒤에는 숫자가 하나 이상 있어야 합니다. 10진수 뒤에 지수가 올 수 있습니다. 지수는 소개 문자(**d**, **D**, **e** 또는 **E**) 및 부호 있는 정수(선택 사항)로 구성됩니다. 지수 부분과 기수 문자가 모두 없으면 기수 문자는 문자열의 마지막 숫자를 따르는 것으로 간주합니다. 이 형식에 맞지 않는 첫 번째 문자가 발견되면 검색이 중지됩니다.
 
 `strtol`, `strtoul`, `_strtoi64`, 및 `_strtoui64` 함수는 다음과 같은 형식의 문자열을 필요로 합니다.
 
-[*whitespace*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [`digits`]
+[*whitespace*] [{ **+** &#124; **-** }] [**0** [{ **x** &#124; **X** }]] [`digits`]
 
-기본 인수는 2와 36 사이인 경우 숫자의 밑으로 사용됩니다. 0인 경우 변환 종료 포인터에서 참조하는 시작 문자가 밑을 결정하는 데 사용됩니다. 첫 번째 문자가 0이고 두 번째 문자가 'x' 또는 'X'가 아니면 문자열은 8진수 정수로 해석됩니다. 그렇지 않은 경우 10진수로 해석됩니다. 첫 번째 문자가 '0'이고 두 번째 문자가 'x' 또는 'X'이면 문자열은 16진수 정수로 해석됩니다. 첫 번째 문자가 '1'~'9' 이면 문자열은 10진수 정수로 해석됩니다. 문자 'a'~'z' 또는 'A'~'Z'에는 값 10~35가 할당됩니다. 할당된 값이 *밑*보다 작은 문자만 사용할 수 있습니다. `strtoul` 및 `_strtoui64`에서는 더하기 기호(**+**) 또는 빼기 기호(**-**) 접두사를 사용할 수 있습니다. 선행 빼기 기호는 반환 값이 부정됨을 나타냅니다.
+기본 인수는 2와 36 사이인 경우 숫자의 밑으로 사용됩니다. 0인 경우 변환 종료 포인터에서 참조하는 시작 문자가 밑을 결정하는 데 사용됩니다. 첫 번째 문자가 0이고 두 번째 문자가 'x' 또는 'X'가 아니면 문자열은 8진수 정수로 해석됩니다. 그렇지 않은 경우 10진수로 해석됩니다. 첫 번째 문자가 '0'이고 두 번째 문자가 'x' 또는 'X'이면 문자열은 16진수 정수로 해석됩니다. 첫 번째 문자가 '1'~'9' 이면 문자열은 10진수 정수로 해석됩니다. 문자 'a'~'z' 또는 'A'~'Z'에는 값 10~35가 할당됩니다. 할당된 값이 *밑*보다 작은 문자만 사용할 수 있습니다. `strtoul` 및 `_strtoui64`에서는 더하기 기호( **+** ) 또는 빼기 기호( **-** ) 접두사를 사용할 수 있습니다. 선행 빼기 기호는 반환 값이 부정됨을 나타냅니다.
 
 출력값은 로캘의 `LC_NUMERIC` 범주 설정에 영향을 받습니다. 자세한 내용은 [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다.
 

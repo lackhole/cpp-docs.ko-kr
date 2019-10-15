@@ -61,7 +61,7 @@ ms.locfileid: "70222267"
 &nbsp;&nbsp;&nbsp;&nbsp;*분모*\
 &nbsp;&nbsp;&nbsp;&nbsp;*digit-sequence* *digit*
 
-*digit*: \ 중 하나
+*digit*: \ 중 하나\
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
 
 *토큰 문자열*: \

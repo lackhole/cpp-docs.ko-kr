@@ -1,6 +1,6 @@
 ---
-title: 'TN055: MFC ODBC 데이터베이스 클래스 응용 프로그램 마이그레이션을 MFC DAO 클래스로 마이그레이션'
-ms.date: 06/20/2018
+title: 'TN055: Mfc ODBC 데이터베이스 클래스 응용 프로그램을 MFC DAO 클래스로 마이그레이션'
+ms.date: 09/17/2019
 helpviewer_keywords:
 - DAO [MFC], migration
 - TN055
@@ -12,23 +12,23 @@ helpviewer_keywords:
 - porting ODBC database applications to DAO
 - migrating database applications [MFC]
 ms.assetid: 0f858bd1-e168-4e2e-bcd1-8debd82856e4
-ms.openlocfilehash: 7a1d3436a9b19c40df2a08576d797de49833f14f
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 7107964cc894a0aa45be5de362c9edd166dc0af1
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611239"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095966"
 ---
-# <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: MFC ODBC 데이터베이스 클래스 응용 프로그램 마이그레이션을 MFC DAO 클래스로 마이그레이션
+# <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: Mfc ODBC 데이터베이스 클래스 응용 프로그램을 MFC DAO 클래스로 마이그레이션
 
 > [!NOTE]
-> 시각적 개체 C++ 환경 및 마법사 지원 하지 않습니다 DAO (하지만 DAO 클래스에 포함 되어 있으며 계속 사용할 수 있습니다). 사용 하는 것이 좋습니다 [OLE DB Templates](../data/oledb/ole-db-templates.md) 하거나 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 새 프로젝트에 대 한 합니다. DAO 기존 응용 프로그램 유지 관리에 사용 해야 합니다.
+> DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 됩니다. 3.6는 최종 버전 이며 더 이상 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). 새 프로젝트에 [OLE DB 템플릿](../data/oledb/ole-db-templates.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 를 사용 하는 것이 좋습니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
 
 ## <a name="overview"></a>개요
 
 대부분의 경우에는 MFC의 ODBC 데이터베이스 클래스를 사용하는 애플리케이션을 MFC의 DAO 데이터베이스 클래스로 변경하는 것이 바람직할 수 있습니다. 이 기술 노트에서는 MFC ODBC와 DAO 클래스 사이의 차이점에 대해 자세히 설명합니다. 이러한 차이점을 고려하면, 필요에 따라 ODBC 클래스에서 MFC 클래스로 애플리케이션을 마이그레이션하는 것이 너무 어렵지 않을 것입니다.
 
-## <a name="why-migrate-from-odbc-to-dao"></a>DAO로 ODBC에서 마이그레이션하는 이유
+## <a name="why-migrate-from-odbc-to-dao"></a>ODBC에서 DAO로 마이그레이션해야 하는 이유
 
 애플리케이션을 ODBC 데이터베이스 클래스에서 DAO 데이터베이스 클래스로 변경해야 하는 이유는 다양할 수 있지만 그러한 결정에 대한 이유가 반드시 간단하거나 명백한 것은 아닙니다. 한 가지 고려할 점은 DAO에서 사용되는 Microsoft Jet 데이터베이스 엔진은 ODBC 드라이버가 있는 모든 ODDB 데이터 소스를 읽을 수 있다는 점입니다. ODBC 데이터베이스 클래스를 사용하거나 ODBC를 사용자가 직접 호출하는 것이 더 효율적일 수 있지만, Microsoft Jet 데이터베이스 엔진은 ODBC 데이터를 읽을 수 있습니다.
 
@@ -74,12 +74,12 @@ DAO 클래스에는 더 많은 개체와 다양한 메서드 집합이 포함되
 ||`DFX_Currency`|
 |`RFX_Single`|`DFX_Single`|
 |`RFX_Double`|`DFX_Double`|
-|`RFX_Date`<sup>1</sup>|`DFX_Date` (`COleDateTime`-기반)|
+|`RFX_Date`<sup>1</sup>|`DFX_Date`(`COleDateTime`-기반)|
 |`RFX_Text`|`DFX_Text`|
 |`RFX_Binary`|`DFX_Binary`|
 |`RFX_LongBinary`|`DFX_LongBinary`|
 
-<sup>1</sup> 는 `RFX_Date` 함수를 기반으로 `CTime` 고 `TIMESTAMP_STRUCT`입니다.
+<sup>1</sup> `RFX_Date` 함수는`TIMESTAMP_STRUCT`및를기반으로 합니다. `CTime`
 
 사용자 애플리케이션에 영향을 주거나 단순한 이름 차이 이상의 설명이 필요한 주요 기능 상의 차이는 아래에 나열되어 있습니다.
 
@@ -87,9 +87,9 @@ DAO 클래스에는 더 많은 개체와 다양한 메서드 집합이 포함되
 
    ODBC 클래스의 경우 MFC에서는 매크로 또는 열거 형식을 통해 이러한 옵션을 정의해야 합니다.
 
-   DAO 클래스의 경우, DAO는 헤더 파일(DBDAOINT.H)에서 이러한 옵션의 정의를 제공합니다. 따라서 레코드 집합 형식이 `CRecordset`의 열거된 멤버이지만 DAO에서는 상수입니다. 사용 예를 들어 **스냅숏** 의 형식을 지정할 때는 `CRecordset` ODBC에서 하지만 **DB_OPEN_SNAPSHOT** 의 형식을 지정 하는 경우 `CDaoRecordset`합니다.
+   DAO 클래스의 경우, DAO는 헤더 파일(DBDAOINT.H)에서 이러한 옵션의 정의를 제공합니다. 따라서 레코드 집합 형식이 `CRecordset`의 열거된 멤버이지만 DAO에서는 상수입니다. 예를 들어 ODBC `CRecordset` 에서 유형을 지정할 때 **snapshot** 을 사용 하지만의 `CDaoRecordset`유형을 지정할 때 **DB_OPEN_SNAPSHOT** 을 사용 합니다.
 
-- 기본 레코드 집합 형식 `CRecordset` 됩니다 **스냅숏** 기본 레코드 집합 형식에 대 한 `CDaoRecordset` 은 **다이너셋** (ODBC 클래스 스냅숏에 대 한 추가 문제에 대 한 아래 참고 참조).
+- 의 기본 레코드 집합 형식은 **snapshot** 이지만의 `CDaoRecordset` 기본 레코드 집합 형식은 다이너셋입니다 (ODBC 클래스 스냅숏에 대 한 추가 문제는 아래 참고 참조). `CRecordset`
 
 - ODBC `CRecordset` 클래스에는 전달 전용 레코드 집합 형식을 생성하는 옵션이 포함됩니다. `CDaoRecordset` 클래스에서 전달 전용은 레코드 집합 형식이 아니고, 특정 유형의 레코드 집합이 갖는 속성(또는 옵션)입니다.
 
@@ -97,12 +97,12 @@ DAO 클래스에는 더 많은 개체와 다양한 메서드 집합이 포함되
 
 - ODBC 클래스의 트랜잭션 멤버 함수는 `CDatabase`의 멤버이고 데이터베이스 수준에서 작동합니다. DAO 클래스의 경우 트랜잭션 멤버 함수는 더 높은 수준의 클래스 멤버이고(`CDaoWorkspace`) 따라서 동일한 작업 공간(트랜잭션 공간)을 공유하는 여러 `CDaoDatabase` 개체에 영향을 줄 수 있습니다.
 
-- 예외 클래스가 변경되었습니다. `CDBExceptions` ODBC 클래스에서 throw 되 고 `CDaoExceptions` DAO 클래스에서입니다.
+- 예외 클래스가 변경되었습니다. `CDBExceptions`는 ODBC 클래스 및 `CDaoExceptions` DAO 클래스에서 throw 됩니다.
 
-- `RFX_Date` 사용 하 여 `CTime` 하 고 `TIMESTAMP_STRUCT` 하는 동안 개체 `DFX_Date` 사용 하 여 `COleDateTime`입니다. 합니다 `COleDateTime` 거의 동일 `CTime`, 있지만 기반으로 8 바이트 OLE **날짜** 4 바이트 대신 **time_t** 를 훨씬 더 큰 범위의 데이터를 보유할 수 있도록 합니다.
+- `RFX_Date`는 `CTime` 를 `TIMESTAMP_STRUCT` `DFX_Date` 사용 하는동안및개체를사용합니다`COleDateTime`. 는 `COleDateTime` `CTime`와 거의 동일 하지만, 4 바이트 **time_t** 이 아닌 8 바이트 OLE **날짜** 를 기반으로 하므로 훨씬 더 큰 범위의 데이터를 보유할 수 있습니다.
 
    > [!NOTE]
-   > DAO(`CDaoRecordset`) 스냅샷은 읽기 전용이지만 ODBC(`CRecordset`) 스냅샷은 드라이버 및 ODBC 커서 라이브러리 사용에 따라 업데이트가 가능할 수 있습니다. 커서 라이브러리를 사용하는 경우 `CRecordset` 스냅샷을 업데이트할 수 있습니다. ODBC 커서 라이브러리 없이 Microsoft Desktop Driver Pack 3.0 드라이버를 사용 중이면 `CRecordset` 스냅샷이 읽기 전용입니다. 드라이버의 설명서 있는지를 확인 하는 다른 드라이버를 사용 하는 경우 스냅숏 (`STATIC_CURSORS`)는 읽기 전용입니다.
+   > DAO(`CDaoRecordset`) 스냅샷은 읽기 전용이지만 ODBC(`CRecordset`) 스냅샷은 드라이버 및 ODBC 커서 라이브러리 사용에 따라 업데이트가 가능할 수 있습니다. 커서 라이브러리를 사용하는 경우 `CRecordset` 스냅샷을 업데이트할 수 있습니다. ODBC 커서 라이브러리 없이 Microsoft Desktop Driver Pack 3.0 드라이버를 사용 중이면 `CRecordset` 스냅샷이 읽기 전용입니다. 다른 드라이버를 사용 하는 경우에는 드라이버의 설명서를 확인 하 여 스냅숏`STATIC_CURSORS`()이 읽기 전용인 지 확인 합니다.
 
 ## <a name="see-also"></a>참고자료
 

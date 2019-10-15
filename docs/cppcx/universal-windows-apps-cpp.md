@@ -2,13 +2,13 @@
 title: 유니버설 Windows 앱(C++)
 ms.date: 03/30/2018
 ms.assetid: 357121cc-d390-4bae-b34a-39614861a9f4
-ms.topic: landing-page
-ms.openlocfilehash: 68952e93e4f91ac3653a9991802ad42854d9d25a
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.topic: overview
+ms.openlocfilehash: 11a32504dfdd380f621c380994f4f53073547a57
+ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70741027"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274697"
 ---
 # <a name="universal-windows-apps-c"></a>유니버설 Windows 앱(C++)
 
@@ -34,7 +34,7 @@ UWP (유니버설 Windows 플랫폼)는 Windows 용 최신 프로그래밍 인�
 
 Windows 런타임 C++ 템플릿 라이브러리는 ISO C++ 코드가 예외 없는 환경에서 Windows 런타임에 액세스할 수 있는 하위 수준 COM 인터페이스를 제공 합니다. 대부분의 경우 UWP 앱 개발용 Windows 런타임 C++ C++ C++ 템플릿 라이브러리 대신/winrt 또는/cx를 사용 하는 것이 좋습니다. Windows 런타임 C++ 템플릿 라이브러리에 대 한 자세한 내용은 [Windows 런타임 C++ 템플릿 라이브러리 (WRL)](wrl/windows-runtime-cpp-template-library-wrl.md)를 참조 하십시오.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Visual Studio의 C++](../overview/visual-cpp-in-visual-studio.md)<br/>
 [C++의 Windows 프로그래밍 개요](../windows/overview-of-windows-programming-in-cpp.md)<br/>

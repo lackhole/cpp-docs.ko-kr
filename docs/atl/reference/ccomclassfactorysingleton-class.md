@@ -9,19 +9,19 @@ f1_keywords:
 helpviewer_keywords:
 - CComClassFactorySingleton class
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
-ms.openlocfilehash: c415da15341f7800a706379d991cb753f5991170
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: 71705d02140f0392a9ce023c64e7b4125c14443f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221168"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497394"
 ---
 # <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton 클래스
 
-이 클래스에서 파생 됩니다 [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 사용 하 여 [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) 단일 개체를 생성 하 합니다.
+이 클래스는 [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 에서 파생 되며 [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) 를 사용 하 여 단일 개체를 생성 합니다.
 
 > [!IMPORTANT]
->  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
+>  이 클래스와 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,7 +35,7 @@ class CComClassFactorySingleton : public CComClassFactory
 *T*<br/>
 클래스입니다.
 
-`CComClassFactorySingleton` 파생 되 [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 사용 하 여 [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) 단일 개체를 생성 합니다. 각 호출에는 `CreateInstance` 메서드는 단순히이 개체에 대 한 인터페이스 포인터를 쿼리 합니다.
+`CComClassFactorySingleton`[CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 에서 파생 되 고 [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) 를 사용 하 여 단일 개체를 생성 합니다. `CreateInstance` 메서드를 호출할 때마다 인터페이스 포인터에 대해이 개체를 쿼리 하기만 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -43,17 +43,17 @@ class CComClassFactorySingleton : public CComClassFactory
 
 |이름|설명|
 |----------|-----------------|
-|[CComClassFactorySingleton::CreateInstance](#createinstance)|쿼리 `m_spObj` 인터페이스 포인터에 대 한 합니다.|
+|[CComClassFactorySingleton::CreateInstance](#createinstance)|인터페이스 `m_spObj` 포인터에 대 한 쿼리입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
 |이름|설명|
 |----------|-----------------|
-|[CComClassFactorySingleton::m_spObj](#m_spobj)|합니다 [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) 하 여 생성 된 개체 `CComClassFactorySingleton`합니다.|
+|[CComClassFactorySingleton::m_spObj](#m_spobj)|`CComClassFactorySingleton`에 의해 생성된 [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) 개체입니다.|
 
 ## <a name="remarks"></a>설명
 
-ATL 개체에서 파생 하 여 일반적으로 클래스 팩터리를 획득 [CComCoClass](../../atl/reference/ccomcoclass-class.md)합니다. 이 클래스는 매크로 포함 [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory)를 선언 하는 `CComClassFactory` 기본 클래스 팩터리로 합니다. 사용 하 `CComClassFactorySingleton`를 지정 합니다 [DECLARE_CLASSFACTORY_SINGLETON](aggregation-and-class-factory-macros.md#declare_classfactory_singleton) 개체의 클래스 정의에 매크로입니다. 예를 들어:
+ATL 개체는 일반적으로 [CComCoClass](../../atl/reference/ccomcoclass-class.md)에서 파생 하 여 클래스 팩터리를 가져옵니다. 이 클래스에는 `CComClassFactory`를 기본 클래스 팩터리로 선언하는 매크로 [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory) 포함되어 있습니다. 을 사용 `CComClassFactorySingleton`하려면 개체의 클래스 정의에 [DECLARE_CLASSFACTORY_SINGLETON](aggregation-and-class-factory-macros.md#declare_classfactory_singleton) 매크로를 지정 합니다. 예를 들어:
 
 [!code-cpp[NVC_ATL_COM#10](../../atl/codesnippet/cpp/ccomclassfactorysingleton-class_1.h)]
 
@@ -71,11 +71,11 @@ ATL 개체에서 파생 하 여 일반적으로 클래스 팩터리를 획득 [C
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atlcom.h
+**헤더:**
 
 ##  <a name="createinstance"></a>  CComClassFactorySingleton::CreateInstance
 
-호출 `QueryInterface` 를 통해 [m_spObj](#m_spobj) 는 인터페이스 포인터를 검색 합니다.
+[M_spObj](#m_spobj)를 통해 `QueryInterface`를 호출하여 인터페이스 포인터를 검색합니다.
 
 ```
 STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
@@ -84,13 +84,13 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ### <a name="parameters"></a>매개 변수
 
 *pUnkOuter*<br/>
-[in] 개체를 만드는 경우 집계의 일부로 다음 *pUnkOuter* 알 수 없는 외부 이어야 합니다. 그렇지 않으면 *pUnkOuter* NULL 이어야 합니다.
+진행 개체가 집계의 일부로 생성 되는 경우 *pUnkOuter* 은 알 수 없는 외부 여야 합니다. 그렇지 않으면 *pUnkOuter* 가 NULL 이어야 합니다.
 
 *riid*<br/>
-[in] 요청된 된 인터페이스의 IID입니다. 하는 경우 *pUnkOuter* 가 NULL이 아닌 *riid* 있어야 `IID_IUnknown`합니다.
+진행 요청 된 인터페이스의 IID입니다. *PUnkOuter* 가 NULL이 아닌 경우 *riid* 는 여야 `IID_IUnknown`합니다.
 
 *ppvObj*<br/>
-[out] 로 식별 되는 인터페이스 포인터에 대 한 포인터 *riid*합니다. 개체는이 인터페이스를 지원 하지 않는 경우 *ppvObj* NULL로 설정 됩니다.
+제한이 *Riid*로 식별 되는 인터페이스 포인터에 대 한 포인터입니다. 개체가이 인터페이스를 지원 하지 않으면 *Ppvobj* 가 NULL로 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -98,7 +98,7 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 
 ##  <a name="m_spobj"></a>  CComClassFactorySingleton::m_spObj
 
-합니다 [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) 하 여 생성 된 개체 `CComClassFactorySingleton`합니다.
+`CComClassFactorySingleton`에 의해 생성된 [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) 개체입니다.
 
 ```
 CComPtr<IUnknown> m_spObj;
@@ -106,13 +106,13 @@ CComPtr<IUnknown> m_spObj;
 
 ### <a name="remarks"></a>설명
 
-각 호출에는 [CreateInstance](#createinstance) 메서드는 단순히이 개체에 대 한 인터페이스 포인터를 쿼리 합니다.
+[CreateInstance](#createinstance) 메서드를 호출할 때마다 인터페이스 포인터에 대해이 개체를 쿼리 합니다.
 
-현재 형태로 `m_spObj` 주요 변경 내용 방식에서 제공 하는 `CComClassFactorySingleton` ATL.의 이전 버전에서 작동 이전 버전에서의 `CComClassFactorySingleton` 클래스 팩터리로 동시에 서버를 초기화 하는 동안 개체를 만든 합니다. 시각적 개체의 C++.NET 2003 이상에서는 개체가 만들어진 느리게 첫 번째 요청 시. 이 변경에는 초기 초기화를 사용 하는 프로그램에서 오류가 발생할 수 있습니다.
+의 `m_spObj` 현재 형태는 이전 버전의 ATL에서 작동 하 던 것 `CComClassFactorySingleton` 과 같은 주요 변경 내용을 제공 합니다. 이전 버전에서는 서버 `CComClassFactorySingleton` 를 초기화 하는 동안 개체를 클래스 팩터리와 동시에 만들었습니다. Visual C++.net 2003 이상에서는 첫 번째 요청에서 개체가 지연 되어 생성 됩니다. 이러한 변경으로 인해 초기 초기화를 사용 하는 프로그램에서 오류가 발생할 수 있습니다.
 
 ## <a name="see-also"></a>참고자료
 
-[IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
+[IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
 [CComClassFactory2 클래스](../../atl/reference/ccomclassfactory2-class.md)<br/>
 [CComClassFactoryAutoThread 클래스](../../atl/reference/ccomclassfactoryautothread-class.md)<br/>
 [CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)<br/>

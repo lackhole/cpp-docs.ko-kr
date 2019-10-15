@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: bd511cf574d0f710134de4768ac27a8be1248e95
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
-ms.translationtype: HT
+ms.openlocfilehash: c8f1b8a9ed0ca8437ba40e77b47448d1bb209d20
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505624"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927926"
 ---
 # <a name="clistctrl-class"></a>CListCtrl 클래스
 
@@ -1003,7 +1003,7 @@ BOOL GetBkImage(LVBKIMAGE* plvbkImage) const;
         if (m_myListCtrl.GetBkImage(&bki) && (bki.ulFlags == LVBKIF_SOURCE_NONE))
         {
             m_myListCtrl.SetBkImage(
-                _T("http://www.microsoft.com/library/images/gifs/homepage/microsoft.gif"),
+                _T("https://www.microsoft.com/library/images/gifs/homepage/microsoft.gif"),
                 TRUE);
         }
 ```
@@ -1784,7 +1784,7 @@ BOOL GetItemIndexRect(
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |*pItemIndex*|진행 하위 항목의 부모 항목에 대 한 [Lvitemindex](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) 구조에 대 한 포인터입니다.<br /><br /> 호출자는 [Lvitemindex](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) 구조체의 멤버를 할당 하 고 설정 해야 합니다. 이 매개 변수는 NULL 일 수 없습니다.|
 |*iColumn*|진행 컨트롤에 있는 열의 인덱스 (0부터 시작)입니다.|
@@ -2608,7 +2608,7 @@ int HitTest(
 테스트할 점입니다.
 
 *pFlags*<br/>
-테스트 결과에 대 한 정보를 수신 하는 정수에 대 한 포인터입니다. Windows SDK에서 [LVHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo) 구조체의 `flags` 멤버에 대 한 설명을 참조 하세요.
+테스트 결과에 대 한 정보를 수신 하는 정수에 대 한 포인터입니다. Windows SDK에서 [LVHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo) 구조체의 `flags` 멤버에 대한 설명을 참조하세요.
 
 ### <a name="return-value"></a>반환 값
 

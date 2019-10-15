@@ -11,30 +11,30 @@ f1_keywords:
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-ms.openlocfilehash: a243351ff337cb517f8a8231c18c495c8d2ca302
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: b666ba3debe164118c9b40b90313646592b04876
+ms.sourcegitcommit: bf724dfc639b16d5410fab72183f8e6b781338bc
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221083"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062047"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>디버깅 및 오류 보고 매크로
 
-이러한 매크로 유용한 디버깅 및 추적 기능을 제공합니다.
+이러한 매크로는 유용한 디버깅 및 추적 기능을 제공 합니다.
 
 |||
 |-|-|
-|[_ATL_DEBUG_INTERFACES](#_atl_debug_interfaces)|모든 인터페이스는 누수 출력 창에 씁니다 때 검색 된 `_Module.Term` 라고 합니다.|
-|[_ATL_DEBUG_QI](#_atl_debug_qi)|에 대 한 모든 호출을 기록 `QueryInterface` 출력 합니다.|
-|[ATLASSERT](#atlassert)|동일한 기능을 수행 합니다 [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) 매크로 C 런타임 라이브러리에서 찾을 수 합니다.|
-|[ATLENSURE](#atlensure)|매개 변수 유효성 검사를 수행합니다. 호출 `AtlThrow` 필요한 경우|
-|[ATLTRACENOTIMPL](#atltracenotimpl)|지정된 된 함수 구현 되지 않았음을 덤프 장치에 메시지를 보냅니다.|
-|[ATLTRACE](#atltrace)|지정 된 플래그 및 수준에 따라 디버거 창 같은 출력 장치에 경고를 보고합니다. 이전 버전과 호환성을 위해 포함 되어 있습니다.|
-|[ATLTRACE2](#atltrace2)|지정 된 플래그 및 수준에 따라 디버거 창 같은 출력 장치에 경고를 보고합니다.|
+|[_ATL_DEBUG_INTERFACES](#_atl_debug_interfaces)|가 호출 될 때 `_Module.Term` 검색 되는 인터페이스 누수를 출력 창에 씁니다.|
+|[_ATL_DEBUG_QI](#_atl_debug_qi)|모든 호출을 `QueryInterface` 출력 창에 씁니다.|
+|[ATLASSERT](#atlassert)|C 런타임 라이브러리에 있는 [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) 매크로와 동일한 기능을 수행 합니다.|
+|[IT 확인](#atlensure)|매개 변수 유효성 검사를 수행 합니다. 필요한 `AtlThrow` 경우 호출|
+|[ATLTRACENOTIMPL](#atltracenotimpl)|지정 된 함수가 구현 되지 않은 메시지를 덤프 장치로 보냅니다.|
+|[ATLTRACE](#atltrace)|표시 된 플래그 및 수준에 따라 디버거 창과 같은 출력 장치에 대 한 경고를 보고 합니다. 이전 버전과의 호환성을 위해 포함 되었습니다.|
+|[ATLTRACE2](#atltrace2)|표시 된 플래그 및 수준에 따라 디버거 창과 같은 출력 장치에 대 한 경고를 보고 합니다.|
 
 ##  <a name="_atl_debug_interfaces"></a>  _ATL_DEBUG_INTERFACES
 
-모든 추적 하려면 모든 ATL 헤더 파일을 포함 하기 전에이 매크로 정의할 `AddRef` 및 `Release` 출력 창에 프로그램 구성 요소 인터페이스에서 호출 합니다.
+출력 창에 대 한 구성 요소 인터페이스에 대 한 모든 `AddRef` 및 `Release` 호출을 추적 하려면 ATL 헤더 파일을 포함 하기 전에이 매크로를 정의 합니다.
 
 ```
 #define _ATL_DEBUG_INTERFACES
@@ -46,26 +46,26 @@ ms.locfileid: "65221083"
 
 `ATL: QIThunk - 2008         AddRef  :   Object = 0x00d81ba0   Refcount = 1   CBug - IBug`
 
-첫 번째 부분은 각 추적은 항상 `ATL: QIThunk`합니다. 다음은 특정을 식별 하는 값 *썽크 인터페이스* 사용 합니다. 인터페이스 썽크는 참조 횟수를 유지 관리 하 고 여기에 추적 기능을 제공 하는 데는 개체입니다. 새 인터페이스 썽크를 호출할 때마다 만들어집니다 `QueryInterface` 에 대 한 요청 제외 하 고는 `IUnknown` 인터페이스 (이 경우 동일한 썽크 반환 됨 때마다 COM identity 규칙을 준수 하기 위해).
+각 추적의 첫 번째 부분은 항상 `ATL: QIThunk`입니다. 다음은 사용 되는 특정 *인터페이스 썽크* 를 식별 하는 값입니다. 인터페이스 썽크는 참조 횟수를 유지 관리 하 고 여기에 사용 되는 추적 기능을 제공 하는 데 사용 되는 개체입니다. 인터페이스에 대 한 요청을 제외 하 고에 `QueryInterface` 대 한 모든 호출에 새 인터페이스 썽크를 만듭니다 .이 경우에는 COM의 id 규칙을 준수할 때마다 동일한 썽크를 반환 합니다. `IUnknown`
 
-다음 보면 `AddRef` 또는 `Release` 호출 된 메서드를 나타내는입니다. 그런 다음, 해당 인터페이스 참조 횟수가 변경 된 개체를 식별 하는 값을 볼 수 있습니다. 추적 값을 **이** 개체의 포인터입니다.
+다음으로 호출 된 `AddRef` 메서드 `Release` 를 표시 하거나 표시 합니다. 다음에는 인터페이스 참조 개수가 변경 된 개체를 식별 하는 값이 표시 됩니다. 추적 되는 값은 개체의 **this** 포인터입니다.
 
-추적 되는 참조 개수는 해당 썽크 후의 참조 횟수가 `AddRef` 또는 `Release` 호출 되었습니다. 참고가 참조 카운트는 개체에 대 한 참조 횟수를 일치 하지 않을 수 있습니다. 각 썽크 완전히 COM의 참조 횟수 규칙을 준수 하는 데 자체 참조 횟수를 유지 관리 합니다.
+추적 되는 참조 횟수는 또는 `AddRef` `Release` 가 호출 된 후 해당 썽크의 참조 횟수입니다. 이 참조 수는 개체에 대 한 참조 횟수와 일치 하지 않을 수 있습니다. 각 썽크는 COM의 참조 횟수 규칙을 완벽 하 게 준수할 수 있도록 자체 참조 횟수를 유지 관리 합니다.
 
-추적 정보의 마지막 부분이 개체와 영향을 받지 않도록 하는 인터페이스의 이름인 합니다 `AddRef` 또는 `Release` 호출 합니다.
+마지막으로 추적 되는 정보는 개체의 이름과 `AddRef` 또는 `Release` 호출의 영향을 받는 인터페이스입니다.
 
-누수 서버 종료 될 때 검색 되는 모든 인터페이스 및 `_Module.Term` 는 이라고 같이 기록:
+서버가 종료 되 고 `_Module.Term` 가 호출 될 때 검색 되는 모든 인터페이스 누수는 다음과 같이 기록 됩니다.
 
 `ATL: QIThunk - 2005         LEAK    :   Object = 0x00d81ca0   Refcount = 1   MaxRefCount = 1   CBug - IBug`
 
-정보를 여기에 제공 된 이전 추적 문에 제공 하는 정보에 직접 매핑됩니다, 인터페이스 썽크를의 전체 수명 동안에 참조 횟수를 검사할 수 있도록 합니다. 또한 해당 인터페이스 썽크에서 최대 참조 횟수를 나타내는 값을 가져옵니다.
+여기에 제공 된 정보는 이전 추적 문에 제공 된 정보에 직접 매핑되므로 인터페이스 썽크의 전체 수명 동안 참조 횟수를 검사할 수 있습니다. 또한 해당 인터페이스 썽크의 최대 참조 수를 나타냅니다.
 
 > [!NOTE]
-> _ATL_DEBUG_INTERFACES 정품 빌드에 사용할 수 있습니다.
+> _ATL_DEBUG_INTERFACES는 소매 빌드에서 사용할 수 있습니다.
 
 ##  <a name="_atl_debug_qi"></a>  _ATL_DEBUG_QI
 
-에 대 한 모든 호출을 기록 `QueryInterface` 출력 합니다.
+모든 호출을 `QueryInterface` 출력 창에 씁니다.
 
 ```
 #define _ATL_DEBUG_QI
@@ -73,13 +73,13 @@ ms.locfileid: "65221083"
 
 ### <a name="remarks"></a>설명
 
-호출 하는 경우 `QueryInterface` 실패, 출력 창 표시 됩니다.
+에 대 `QueryInterface` 한 호출이 실패 하면 출력 창에 다음이 표시 됩니다.
 
 *인터페이스 이름* - `failed`
 
 ##  <a name="atlassert"></a>  ATLASSERT
 
-ATLASSERT 매크로와 동일한 기능을 수행 합니다 [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) 매크로 C 런타임 라이브러리에서 찾을 수 있습니다.
+[_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) assert 매크로는 C 런타임 라이브러리에 있는 것과 동일한 기능을 수행 합니다.
 
 ```
 ATLASSERT(booleanExpression);
@@ -92,15 +92,15 @@ ATLASSERT(booleanExpression);
 
 ### <a name="remarks"></a>설명
 
-디버그 빌드에서 ATLASSERT 평가 *booleanExpression* 결과가 false 인 경우 디버그 보고서를 생성 합니다.
+디버그 빌드에서 *booleanExpression* 는 결과가 false 인 경우 디버그 보고서를 생성 하 고 생성 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atldef.h
+**헤더:**
 
-##  <a name="atlensure"></a>  ATLENSURE
+##  <a name="atlensure"></a>IT 확인
 
-이 매크로 함수에 전달 하는 매개 변수 유효성 검사에 사용 됩니다.
+이 매크로는 함수에 전달 된 매개 변수의 유효성을 검사 하는 데 사용 됩니다.
 
 ```
 ATLENSURE(booleanExpression);
@@ -117,15 +117,15 @@ ATLENSURE_THROW(booleanExpression, hr);
 
 ### <a name="remarks"></a>설명
 
-이러한 매크로 검색 하 여 잘못 된 매개 변수 사용의 사용자에 게 알림 메커니즘을 제공 합니다.
+이러한 매크로는 잘못 된 매개 변수 사용을 검색 하 고 사용자에 게 알리는 메커니즘을 제공 합니다.
 
-매크로가 호출 ATLASSERT 및 호출의 조건이 실패 하는 경우 `AtlThrow`합니다.
+매크로가 호출 `AtlThrow`에 실패 하는 경우 매크로는이를 호출 합니다.
 
-ATLENSURE 경우에서 `AtlThrow` E_FAIL을 사용 하 여 호출 됩니다.
+이 경우의 경우는 E_FAIL `AtlThrow` 을 사용 하 여 호출 됩니다.
 
-ATLENSURE_THROW 경우에서 `AtlThrow` 지정된 된 HRESULT를 사용 하 여 호출 됩니다.
+ATLENSURE_THROW 경우 `AtlThrow` 에는 지정 된 HRESULT를 사용 하 여가 호출 됩니다.
 
-ATLENSURE ATLASSERT 사이의 차이점은 ATLENSURE 빌드에서 릴리스도 디버그 빌드에서 같이 예외를 throw 합니다.
+이에 대 한 두 번째 ASSERT의 차이점은,이는 디버그 빌드에서 뿐만 아니라 릴리스 빌드에서 예외를 throw 한다는 것입니다.
 
 ### <a name="example"></a>예제
 
@@ -135,9 +135,9 @@ ATLENSURE ATLASSERT 사이의 차이점은 ATLENSURE 빌드에서 릴리스도 �
 
 **헤더:** afx.h
 
-##  <a name="atltracenotimpl"></a>  ATLTRACENOTIMPL
+##  <a name="atltracenotimpl"></a>ATLTRACENOTIMPL
 
-ATL의 디버그 빌드에서 문자열을 보내는 " *funcname* 구현 되지 않음" 덤프 장치 및 E_NOTIMPL 반환 합니다.
+ATL의 디버그 빌드에서는 덤프 장치에 " *funcname* 이 구현 되지 않았습니다" 라는 문자열을 보내고 E_NOTIMPL을 반환 합니다.
 
 ```
 ATLTRACENOTIMPL(funcname);
@@ -146,11 +146,11 @@ ATLTRACENOTIMPL(funcname);
 ### <a name="parameters"></a>매개 변수
 
 *funcname*<br/>
-[in] 구현 되지 않는 함수의 이름을 포함 하는 문자열입니다.
+진행 구현 되지 않은 함수의 이름을 포함 하는 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
-릴리스 빌드에서 단순히 E_NOTIMPL을 반환합니다.
+릴리스 빌드에서는 E_NOTIMPL만 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -158,11 +158,11 @@ ATLTRACENOTIMPL(funcname);
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** atltrace.h
+**헤더:**
 
 ##  <a name="atltrace"></a>  ATLTRACE
 
-지정 된 플래그 및 수준에 따라 디버거 창 같은 출력 장치에 경고를 보고합니다. 이전 버전과 호환성을 위해 포함 되어 있습니다.
+표시 된 플래그 및 수준에 따라 디버거 창과 같은 출력 장치에 대 한 경고를 보고 합니다. 이전 버전과의 호환성을 위해 포함 되었습니다.
 
 ```
 ATLTRACE(exp);
@@ -176,24 +176,24 @@ ATLTRACE(
 ### <a name="parameters"></a>매개 변수
 
 *exp*<br/>
-[in] 문자열 및 출력 창이 나 이러한 메시지를 트래핑 하는 모든 응용 프로그램에 보낼 변수입니다.
+진행 출력 창 또는 이러한 메시지를 트래핑 하는 응용 프로그램에 보낼 문자열 및 변수입니다.
 
 *category*<br/>
-[in] 보고서에는 메서드 또는 이벤트의 형식입니다. 범주 목록에 대 한 설명을 참조 하세요.
+진행 보고할 이벤트 또는 메서드의 유형입니다. 범주 목록은 설명 부분을 참조 하십시오.
 
 *level*<br/>
-[in] 보고서에 대 한 추적의 수준입니다. 자세한 내용은 설명 부분을 참조 하세요.
+진행 보고할 추적 수준입니다. 자세한 내용은 설명 부분을 참조 하십시오.
 
 *lpszFormat*<br/>
-[in] 덤프 장치에 보낼 서식이 지정 된 문자열입니다.
+진행 덤프 장치로 보낼 형식이 지정 된 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
-참조 [ATLTRACE2](#atltrace2) ATLTRACE에 대 한 합니다. ATLTRACE 및 ATLTRACE2 동일 하 게 동작, ATLTRACE 이전 버전과 호환성을 위해 포함 되었습니다.
+정보 추적에 대 한 설명은 [ATLTRACE2](#atltrace2) 를 참조 하십시오. 가 나 추적과 ATLTRACE2는 동일한 동작을 가지 며, 이전 버전과의 호환성을 위해이 추적 기능이 포함 되어 있습니다.
 
 ##  <a name="atltrace2"></a>  ATLTRACE2
 
-지정 된 플래그 및 수준에 따라 디버거 창 같은 출력 장치에 경고를 보고합니다.
+표시 된 플래그 및 수준에 따라 디버거 창과 같은 출력 장치에 대 한 경고를 보고 합니다.
 
 ```
 ATLTRACE2(exp);
@@ -201,83 +201,83 @@ ATLTRACE2(exp);
 ATLTRACE2(
     DWORD category,
     UINT level,
-    LPCSTRlpszFormat,  ...);
+    LPCSTR lpszFormat,  ...);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
 *exp*<br/>
-[in] 출력 창이 나 이러한 메시지를 트래핑 하는 모든 응용 프로그램에 보낼 문자열입니다.
+진행 출력 창 또는 이러한 메시지를 트래핑 하는 응용 프로그램에 보낼 문자열입니다.
 
 *category*<br/>
-[in] 보고서에는 메서드 또는 이벤트의 형식입니다. 범주 목록에 대 한 설명을 참조 하세요.
+진행 보고할 이벤트 또는 메서드의 유형입니다. 범주 목록은 설명 부분을 참조 하십시오.
 
 *level*<br/>
-[in] 보고서에 대 한 추적의 수준입니다. 자세한 내용은 설명 부분을 참조 하세요.
+진행 보고할 추적 수준입니다. 자세한 내용은 설명 부분을 참조 하십시오.
 
 *lpszFormat*<br/>
-[in] `printf`-덤프 장치에 보낼 문자열을 만드는 데 사용할 형식 문자열 스타일입니다.
+진행 `printf`덤프 장치로 보낼 문자열을 만드는 데 사용할 스타일 서식 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
-ATLTRACE2의 약식 형태는 디버거의 출력 창에 문자열을 씁니다. ATLTRACE2의 두 번째 형태도 디버거의 출력 창에 출력 쓰기 이지만 ATL/MFC 추적 도구의 설정을 따릅니다 (참조 [ATLTraceTool 샘플](../../overview/visual-cpp-samples.md)). 예를 들어 설정한 *수준* 4를 수준 0으로 ATL/MFC 추적 도구가 표시 되지 것입니다 메시지입니다. *수준* 0, 1, 2, 3 또는 4 일 수 있습니다. 기본적으로 0의 가장 심각한 문제만 보고합니다.
+ATLTRACE2의 약식 형태는 디버거의 출력 창에 문자열을 씁니다. 또한 두 번째 형식의 ATLTRACE2는 디버거의 출력 창에 출력을 작성 하지만 ATL/MFC 추적 도구의 설정이 적용 됩니다 ( [ATLTraceTool 샘플](../../overview/visual-cpp-samples.md)참조). 예를 들어 *수준* 을 4로 설정 하 고 ATL/MFC 추적 도구를 수준 0으로 설정 하면 메시지가 표시 되지 않습니다. *수준은* 0, 1, 2, 3 또는 4가 될 수 있습니다. 기본값인 0은 가장 심각한 문제만 보고 합니다.
 
-합니다 *범주* 매개 변수는 설정 하는 추적 플래그를 나열 합니다. 이러한 플래그를 보고 하려는 메서드의 유형에 해당 합니다. 아래 표에 나열 되어 사용할 수 있습니다 올바른 추적 플래그를 *범주* 매개 변수입니다.
+*Category* 매개 변수는 설정할 추적 플래그를 나열 합니다. 이러한 플래그는 보고 하려는 메서드의 유형에 해당 합니다. 아래 표에서는 *category* 매개 변수에 사용할 수 있는 유효한 추적 플래그를 나열 합니다.
 
 ### <a name="atl-trace-flags"></a>ATL 추적 플래그
 
 |ATL 범주|설명|
 |------------------|-----------------|
-|`atlTraceGeneral`|ATL에 대 한 응용 프로그램을 모두 보고 합니다. 기본값입니다.|
+|`atlTraceGeneral`|모든 ATL 응용 프로그램에 대 한 보고서입니다. 기본값입니다.|
 |`atlTraceCOM`|COM 메서드를 보고 합니다.|
 |`atlTraceQI`|QueryInterface 호출을 보고 합니다.|
-|`atlTraceRegistrar`|개체의 등록에 보고 합니다.|
-|`atlTraceRefcount`|보고 참조 횟수를 변경 합니다.|
-|`atlTraceWindowing`|Windows 메서드;에 대 한 보고서 예를 들어 잘못 된 메시지 맵 ID를 보고|
-|`atlTraceControls`|컨트롤에 대 한 보고서 예를 들어, 컨트롤 또는 해당 창을 소멸 될 때 보고 합니다.|
-|`atlTraceHosting`|메시지를 호스트 하는 보고서 예를 들어, 컨테이너에서 클라이언트가 활성화 될 때 보고 합니다.|
-|`atlTraceDBClient`|OLE DB 소비자 템플릿;에 대 한 보고서 예를 들어, GetData 실패 호출, 출력 HRESULT를 포함할 수 있습니다.|
-|`atlTraceDBProvider`|OLE DB 공급자 템플릿;에 대 한 보고서 예를 들어 열 생성에 실패 하는 경우 보고 합니다.|
-|`atlTraceSnapin`|MMC 스냅인 응용 프로그램에 대해 보고 합니다.|
-|`atlTraceNotImpl`|표시 된 함수 구현 되지 않았음을 보고 합니다.|
-|`atlTraceAllocation`|디버깅 도구 atldbgmem.h에서 메모리에 의해 인쇄 되는 메시지를 보고 합니다.|
+|`atlTraceRegistrar`|개체의 등록에 대 한 보고서입니다.|
+|`atlTraceRefcount`|참조 횟수 변경에 대 한 보고서입니다.|
+|`atlTraceWindowing`|Windows 메서드에 대 한 보고서 예를 들어는 잘못 된 메시지 맵 ID를 보고 합니다.|
+|`atlTraceControls`|컨트롤에 대 한 보고서 예를 들어, 컨트롤 또는 해당 창이 소멸 되는 경우를 보고 합니다.|
+|`atlTraceHosting`|메시지를 호스트 하는 보고서 예를 들어, 컨테이너의 클라이언트가 활성화 되는 경우를 보고 합니다.|
+|`atlTraceDBClient`|OLE DB Consumer Template에 대 한 보고서 예를 들어 GetData에 대 한 호출이 실패 하면 출력에 HRESULT가 포함 될 수 있습니다.|
+|`atlTraceDBProvider`|OLE DB 공급자 템플릿에 대 한 보고서 예를 들어 열 생성이 실패 한 경우를 보고 합니다.|
+|`atlTraceSnapin`|MMC 스냅인 응용 프로그램에 대 한 보고서입니다.|
+|`atlTraceNotImpl`|표시 된 함수가 구현 되지 않은 것을 보고 합니다.|
+|`atlTraceAllocation`|Atldbgmem의 메모리 디버깅 도구에서 인쇄 한 메시지를 보고 합니다.|
 
 ### <a name="mfc-trace-flags"></a>MFC 추적 플래그
 
 |MFC 범주|설명|
 |------------------|-----------------|
-|`traceAppMsg`|범용, MFC 메시지입니다. 좋습니다.|
-|`traceDumpContext`|메시지 [CDumpContext](../../mfc/reference/cdumpcontext-class.md)합니다.|
-|`traceWinMsg`|코드를 처리 하는 MFC의 메시지에서 메시지입니다.|
-|`traceMemory`|MFC의 메모리 관리 코드에서 메시지입니다.|
-|`traceCmdRouting`|MFC의 Windows에서 메시지 라우팅 코드를 명령입니다.|
-|`traceHtml`|MFC의 DHTML 대화 지원 메시지입니다.|
+|`traceAppMsg`|일반적인 목적의 MFC 메시지입니다. 항상 권장 됩니다.|
+|`traceDumpContext`|[CDumpContext](../../mfc/reference/cdumpcontext-class.md)의 메시지입니다.|
+|`traceWinMsg`|MFC 메시지 처리 코드의 메시지입니다.|
+|`traceMemory`|MFC의 메모리 관리 코드의 메시지입니다.|
+|`traceCmdRouting`|MFC의 Windows 명령 라우팅 코드의 메시지입니다.|
+|`traceHtml`|MFC의 DHTML 대화 상자에서 메시지를 지원 합니다.|
 |`traceSocket`|MFC의 소켓 지원 메시지입니다.|
-|`traceOle`|MFC의 OLE 지원에서 메시지입니다.|
-|`traceDatabase`|MFC 데이터베이스 지원에서 메시지입니다.|
-|`traceInternet`|MFC의 인터넷에서 메시지를 지원 합니다.|
+|`traceOle`|MFC의 OLE 지원 메시지입니다.|
+|`traceDatabase`|MFC 데이터베이스 지원의 메시지입니다.|
+|`traceInternet`|MFC의 인터넷 지원 메시지입니다.|
 
-사용자 지정 추적 범주를 선언 하려면의 전역 인스턴스를 선언 합니다 `CTraceCategory` 다음과 같이 클래스:
+사용자 지정 추적 범주를 선언 하려면 `CTraceCategory` 클래스의 전역 인스턴스를 다음과 같이 선언 합니다.
 
 [!code-cpp[NVC_ATL_Utilities#109](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_3.cpp)]
 
-이 예제에서는 MY_CATEGORY 범주 이름에 지정할 이름인 합니다 *범주* 매개 변수입니다. 첫 번째 매개 변수는 ATL/MFC 추적 도구에서 표시 되는 범주 이름입니다. 두 번째 매개 변수는 기본 추적 수준입니다. 이 매개 변수는 선택적 이며 기본 추적 수준을 0입니다.
+이 예제에서 MY_CATEGORY 범주 이름은 *category* 매개 변수에 지정 하는 이름입니다. 첫 번째 매개 변수는 ATL/MFC 추적 도구에 표시 되는 범주 이름입니다. 두 번째 매개 변수는 기본 추적 수준입니다. 이 매개 변수는 선택 사항이 며 기본 추적 수준은 0입니다.
 
-사용 하려면 사용자 정의 범주:
+사용자 정의 범주를 사용 하려면 다음을 수행 합니다.
 
 [!code-cpp[NVC_ATL_Utilities#110](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_4.cpp)]
 
-추적 메시지를 필터링 하려면를 지정 하려면 이러한 매크로 대 한 정의 하기 전에 Stdafx.h에 삽입 된 `#include <atlbase.h>` 문입니다.
+추적 메시지를 필터링 하도록 지정 하려면 `#include <atlbase.h>` 문 앞의 stdafx.h에 이러한 매크로에 대 한 정의를 삽입 합니다.
 
-또는의 전처리기 지시문에서 필터를 설정할 수 있습니다 합니다 **속성 페이지** 대화 상자. 클릭 합니다 **전처리기** 탭 한 다음에 전역를 삽입 합니다 **전처리기 정의** 편집 상자입니다.
+또는 **속성 페이지** 대화 상자의 전처리기 지시문에서 필터를 설정할 수 있습니다. **전처리기** 탭을 클릭 한 다음 **전처리기 정의** 편집 상자에 전역을 삽입 합니다.
 
-ATLTRACE2 매크로의 기본 정의 포함 하는 Atlbase.h 및 atlbase.h가 처리 되기 전에 이러한 기호를 정의 하지 않으면 하는 경우 이러한 정의 사용 됩니다.
+이 기본 .h에는 ATLTRACE2 매크로의 기본 정의가 포함 되어 있으며,이 정의를 사용 하 여 이러한 기호를 정의 하지 않으면 해당 정의가 사용 됩니다.
 
-릴리스 빌드에서 ATLTRACE2 컴파일함으로써 `(void) 0`합니다.
+릴리스 빌드에서는 ATLTRACE2를로 `(void) 0`컴파일합니다.
 
-ATLTRACE2 서식 지정 후 1,024 개 이상의 문자, 덤프 장치에 보낼 문자열의 내용을 제한 합니다.
+ATLTRACE2는 서식 지정 후 덤프 장치로 보낼 문자열의 내용을 1023 자 이하로 제한 합니다.
 
-ATLTRACE 및 ATLTRACE2 동일 하 게 동작, ATLTRACE 이전 버전과 호환성을 위해 포함 되었습니다.
+가 나 추적과 ATLTRACE2는 동일한 동작을 가지 며, 이전 버전과의 호환성을 위해이 추적 기능이 포함 되어 있습니다.
 
 ### <a name="example"></a>예제
 

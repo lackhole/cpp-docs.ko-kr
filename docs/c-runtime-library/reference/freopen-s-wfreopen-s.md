@@ -1,10 +1,10 @@
 ---
 title: freopen_s, _wfreopen_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wfreopen_s
 - freopen_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - freopen_s
 - _tfreopen_s
@@ -29,12 +32,12 @@ helpviewer_keywords:
 - wfreopen_s function
 - freopen_s function
 ms.assetid: ad25a4da-6ad4-476b-a86d-660b221ca84d
-ms.openlocfilehash: 6efe858713bf8c315536098f1b6dabdbcba01bfa
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: 30cd1612045a9f9a69e6ac856a601bac3101467f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376119"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956694"
 ---
 # <a name="freopen_s-_wfreopen_s"></a>freopen_s, _wfreopen_s
 
@@ -111,7 +114,7 @@ errno_t _wfreopen(
 | **t** | 텍스트(변환됨) 모드에서 엽니다. |
 | **b** | 이진 (변환 되지 않음) 모드에서 열기 캐리지 리턴 및 줄 바꿈 문자를 포함 하는 변환은 표시 되지 않습니다. |
 
-텍스트 (변환 됨) 모드에서 캐리지 리턴-줄 바꿈 (CR-LF) 조합은 입력 시 LF (단일 줄 바꿈) 문자로 변환 됩니다. LF 문자는 출력에서 CR-LF 조합으로 변환 됩니다. 또한 CTRL+Z는 입력 시 파일 끝 문자로 변환됩니다. **"A +"** 를 사용 하 여 읽거나 쓰고 쓰기 위해 열린 파일에서 런타임 라이브러리는 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능한 경우이를 제거 합니다. 이는 [fseek](fseek-fseeki64.md) 및 [fseek](ftell-ftelli64.md) 를 사용 하 여 파일 내에서 이동 하면 파일의 끝 부분에서 [fseek](fseek-fseeki64.md) 가 제대로 동작 하지 않을 수 있기 때문입니다. **T** 옵션은 ANSI 이식성이 필요한 곳에 사용 하면 안 되는 Microsoft 확장입니다.
+텍스트 (변환 됨) 모드에서 캐리지 리턴-줄 바꿈 (CR-LF) 조합은 입력 시 LF (단일 줄 바꿈) 문자로 변환 됩니다. LF 문자는 출력에서 CR-LF 조합으로 변환 됩니다. 또한 CTRL+Z는 입력 시 파일 끝 문자로 변환됩니다. **"A +"** 를 사용 하 여 읽거나 쓰고 쓰기 위해 열린 파일에서 런타임 라이브러리는 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능한 경우이를 제거 합니다. 이는 [fseek](fseek-fseeki64.md) 및 [ftell](ftell-ftelli64.md)를 사용하여 파일 내에서 이동하면 파일의 끝 부분에서 [fseek](fseek-fseeki64.md)가 제대로 동작하지 않을 수 있기 때문입니다. **T** 옵션은 ANSI 이식성이 필요한 곳에 사용 하면 안 되는 Microsoft 확장입니다.
 
 *모드*에서 **t** 또는 **b** 를 지정 하지 않은 경우 기본 변환 모드는 전역 변수 [_fmode](../../c-runtime-library/fmode.md)에 의해 정의 됩니다. **T** 또는 **b** 가 인수 앞에 있으면 함수가 실패 하 고 **NULL**을 반환 합니다.
 
