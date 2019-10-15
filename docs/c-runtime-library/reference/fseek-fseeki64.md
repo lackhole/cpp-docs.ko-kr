@@ -1,10 +1,10 @@
 ---
 title: fseek, _fseeki64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fseeki64
 - fseek
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fseek
 - _fseeki64
@@ -28,12 +31,12 @@ helpviewer_keywords:
 - file pointers [C++]
 - seek file pointers
 ms.assetid: f6bb1f8b-891c-426e-9e14-0e7e5c62df70
-ms.openlocfilehash: 4cfb4bcea4a110cf8a9c9db664c42d6603328cf0
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: e3da603c3c7f1b083ddb7f7f9577adae9be5e4f1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376092"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956570"
 ---
 # <a name="fseek-_fseeki64"></a>fseek, _fseeki64
 
@@ -91,7 +94,7 @@ int _fseeki64(
 
 또한 텍스트 모드에서 Ctrl+Z는 입력 시 파일 끝 문자로 해석됩니다. 읽기/쓰기용으로 열려 있는 파일에서 [fopen](fopen-wfopen.md) 및 모든 관련 루틴은 파일 끝에 CTRL + Z가 있는지 확인 하 고 가능 하면 제거 합니다. 이 작업은 **fseek** 와 [fseek](ftell-ftelli64.md) 및 [_ftelli64](ftell-ftelli64.md)의 조합을 사용 하 여 CTRL + Z로 끝나는 파일 내에서 이동 하면 **fseek** 또는 **_fseeki64** 가의 끝 부분에서 제대로 동작 하지 않을 수 있기 때문입니다. 파일과.
 
-CRT가 BOM(바이트 순서 표시)으로 시작되는 파일을 열면 파일 포인터는 BOM 뒤(파일 실제 콘텐츠의 시작)에 배치됩니다. 파일의 시작 부분을 **검색** 해야 하는 경우 [fseek](ftell-ftelli64.md) 을 사용 하 여 위치 0이 아닌 초기 위치와 **fseek** 를 가져옵니다.
+CRT가 BOM(바이트 순서 표시)으로 시작되는 파일을 열면 파일 포인터는 BOM 뒤(파일 실제 콘텐츠의 시작)에 배치됩니다. 파일의 시작 부분을 **fseek**해야 하는 경우 [ftell](ftell-ftelli64.md)을 사용하여 위치 0이 아닌 초기 위치와 **fseek**를 가져옵니다.
 
 이 함수는 실행 중에 다른 스레드를 잠그므로 스레드로부터 안전합니다. 잠기지 않는 버전의 경우 [_fseek_nolock, _fseeki64_nolock](fseek-nolock-fseeki64-nolock.md)을 참조하세요.
 
