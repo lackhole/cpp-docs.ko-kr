@@ -196,7 +196,7 @@ term<sub>opt</sub> 구문 표현은 해당 용어가 대체 내의 선택사항�
 &nbsp;&nbsp;&nbsp;&nbsp;*(variable-list)*
 
 *ordered-construct*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*순서가 지정된 지시문 구조화 된 블록*
+&nbsp;&nbsp;&nbsp;&nbsp;*순서가 지정된 지시문 구조화된 블록*
 
 *ordered-directive*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp ordered` *new-line*
