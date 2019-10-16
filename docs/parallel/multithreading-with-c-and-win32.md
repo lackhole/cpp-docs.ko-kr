@@ -1,5 +1,5 @@
 ---
-title: C 및 Wind32를 사용한 다중 스레딩
+title: C 및 Win32를 사용한 다중 스레딩
 ms.date: 08/09/2019
 helpviewer_keywords:
 - Windows API [C++], multithreading
@@ -17,7 +17,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 08/15/2019
 ms.locfileid: "69511838"
 ---
-# <a name="multithreading-with-c-and-win32"></a>C 및 Wind32를 사용한 다중 스레딩
+# <a name="multithreading-with-c-and-win32"></a>C 및 Win32를 사용한 다중 스레딩
 
 Microsoft C/C++ 컴파일러 (MSVC)는 다중 스레드 응용 프로그램을 만들기 위한 지원을 제공 합니다. 응용 프로그램에서 사용자 인터페이스가 응답 하지 않게 하는 부담이 큰 작업을 수행 해야 하는 경우 둘 이상의 스레드를 사용 하는 것이 좋습니다.
 
@@ -33,22 +33,22 @@ MSVC를 사용 하면 여러 가지 방법으로 여러 스레드를 프로그�
 
 ## <a name="library-support-for-multithreading"></a>다중 스레딩을 위한 라이브러리 지원
 
-모든 버전의 CRT는 이제 일부 함수의 잠기지 않은 버전을 제외 하 고 다중 스레딩을 지원 합니다. 자세한 내용은 [다중 스레드 라이브러리 성능](../c-runtime-library/multithreaded-libraries-performance.md)을 참조 하세요. 코드와 연결 하는 데 사용할 수 있는 CRT 버전에 대 한 자세한 내용은 [crt 라이브러리 기능](../c-runtime-library/crt-library-features.md)을 참조 하세요.
+모든 버전의 CRT는 이제 일부 함수의 잠기지 않은 버전을 제외하고 다중 스레딩을 지원합니다. 자세한 내용은 [다중 스레드 라이브러리 성능](../c-runtime-library/multithreaded-libraries-performance.md)을 참조하세요. 코드와 연결하는 데 사용할 수 있는 CRT 버전에 대한 자세한 내용은 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)을 참조하세요.
 
 ## <a name="include-files-for-multithreading"></a>다중 스레딩을 위한 포함 파일
 
-표준 CRT 포함 파일은 라이브러리에서 구현 되는 C 런타임 라이브러리 함수를 선언 합니다. 컴파일러 옵션에서 [__fastcall 또는 __vectorcall](../build/reference/gd-gr-gv-gz-calling-convention.md) 호출 규칙을 지정 하는 경우 컴파일러는 register 호출 규칙을 사용 하 여 모든 함수를 호출 한다고 가정 합니다. 런타임 라이브러리 함수는 C 호출 규칙을 사용 하 고 표준 포함 파일의 선언은 이러한 함수에 대 한 올바른 외부 참조를 생성 하도록 컴파일러에 지시 합니다.
+표준 CRT 포함 파일은 라이브러리에서 구현되는 C 런타임 라이브러리 함수를 선언합니다. 컴파일러 옵션에서 [__fastcall 또는 __vectorcall](../build/reference/gd-gr-gv-gz-calling-convention.md) 호출 규칙을 지정하는 경우 컴파일러는 register 호출 규칙을 사용하여 모든 함수를 호출한다고 가정합니다. 런타임 라이브러리 함수는 C 호출 규칙을 사용하고 표준 포함 파일의 선언은 이러한 함수에 대한 올바른 외부 참조를 생성하도록 컴파일러에 지시합니다.
 
-## <a name="crt-functions-for-thread-control"></a>스레드 컨트롤에 대 한 CRT 함수
+## <a name="crt-functions-for-thread-control"></a>스레드 컨트롤에 대한 CRT 함수
 
 모든 Win32 프로그램에는 하나 이상의 스레드가 있습니다. 모든 스레드는 추가 스레드를 만들 수 있습니다. 스레드는 작업을 신속 하 게 완료 한 후 종료 하거나 프로그램의 수명 동안 활성 상태로 유지할 수 있습니다.
 
 CRT 라이브러리는 스레드를 만들고 종료 하기 위해 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md), [_endthread 및 _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md)함수를 제공 합니다.
 
-`_beginthread` 및`_beginthreadex` 함수는 새 스레드를 만들고 작업이 성공한 경우 스레드 식별자를 반환 합니다. 스레드는 실행이 완료 되 면 자동으로 종료 됩니다. 또는 또는 `_endthread` `_endthreadex`에 대 한 호출을 사용 하 여 자신을 종료할 수 있습니다.
+`_beginthread` 및`_beginthreadex` 함수는 새 스레드를 만들고 작업이 성공한 경우 스레드 식별자를 반환합니다. 스레드는 실행이 완료되면 자동으로 종료됩니다. 또는 `_endthread`나 `_endthreadex`에 대한 호출을 사용하여 자신을 종료할 수 있습니다.
 
 > [!NOTE]
-> Libcmt.lib를 사용 하 여 빌드된 프로그램에서 C 런타임 루틴을 호출 하는 경우 `_beginthread` 또는 `_beginthreadex` 함수를 사용 하 여 스레드를 시작 해야 합니다. Win32 함수 `ExitThread` 및 `CreateThread`를 사용 하지 마십시오. 를 `SuspendThread` 사용 하면 일시 중단 된 스레드가 C 런타임 데이터 구조에 대 한 액세스를 완료할 때까지 대기 하는 두 개 이상의 스레드가 차단 될 때 교착 상태가 발생할 수 있습니다.
+> Libcmt.lib를 사용하여 빌드된 프로그램에서 C 런타임 루틴을 호출하는 경우 `_beginthread` 또는 `_beginthreadex` 함수를 사용하여 스레드를 시작해야 합니다. Win32 함수 `ExitThread` 및 `CreateThread`를 사용하지 마세요. `SuspendThread` 사용하면 일시 중단된 스레드가 C 런타임 데이터 구조에 대한 액세스를 완료할 때까지 대기하는 두 개 이상의 스레드가 차단될 때 교착 상태가 발생할 수 있습니다.
 
 ###  <a name="_core_the__beginthread_function"></a>_Beginthread 및 _beginthreadex 함수
 
@@ -58,9 +58,9 @@ CRT 라이브러리는 스레드를 만들고 종료 하기 위해 [_beginthread
 
 - 특정 C 런타임 라이브러리 변수를 초기화 합니다. 이는 스레드에서 C 런타임 라이브러리를 사용 하는 경우에만 중요 합니다.
 
-- `CreateThread`보안 특성에 대 한 제어를 제공 합니다. 이 함수를 사용 하 여 일시 중단 된 상태의 스레드를 시작할 수 있습니다.
+- `CreateThread`는 보안 특성에 대한 제어를 제공합니다. 이 함수를 사용하여 일시 중단된 상태의 스레드를 시작할 수 있습니다.
 
-`_beginthread`는 `_beginthreadex` 성공 하면 새 스레드에 대 한 핸들을 반환 하 고 오류가 발생 한 경우 오류 코드를 반환 합니다.
+`_beginthread` 및 `_beginthreadex`는 성공하면 새 스레드에 대한 핸들을 반환하고 오류가 발생한 경우 오류 코드를 반환합니다.
 
 ###  <a name="_core_the__endthread_function"></a>_Endthread 및 _endthreadex 함수
 
