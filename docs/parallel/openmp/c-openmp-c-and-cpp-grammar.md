@@ -229,7 +229,7 @@ term<sub>opt</sub> 구문 표현은 해당 용어가 대체 내의 선택사항�
 &nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*variable-list*   `,` *identifier*
 
-**/\* 에서C++ \*/**
+**/\* C++의 경우 \*/**
 
 *variable-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*id-expression*<br/>
