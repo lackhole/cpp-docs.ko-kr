@@ -51,7 +51,7 @@ void _lock_file( FILE* file );
 
 ## <a name="remarks"></a>설명
 
-**_Lockrxa** 함수는 *file*로 지정 된 **파일** 개체를 잠급니다. 기본 파일은 **_lockrla**에 의해 잠겨 있지 않습니다. 파일에 대한 잠금을 해제하려면 [_unlock_file](unlock-file.md)을 사용합니다. **_Lock\\unununununununununununununununununununununun\**
+**_Lockrxa** 함수는 *file*로 지정 된 **파일** 개체를 잠급니다. 기본 파일은 **_lockrla**에 의해 잠겨 있지 않습니다. 파일에 대한 잠금을 해제하려면 [_unlock_file](unlock-file.md)을 사용합니다. **_Lock **\\u**nununununununununununununununununununununun**\
 
 ## <a name="requirements"></a>요구 사항
 
