@@ -69,7 +69,7 @@ taglib      1.11.1-2   TagLib Audio Meta-Data Library
 
 Linux 라이브러리의 경우 vcpkg는 gcc가 로컬 시스템에 설치되어 있는지 여부에 따라 다릅니다. MacOS에서는 vcpkg가 Clang을 사용합니다.
 
-포트 파일이 종속성을 지정하는 경우 vcpkg도 해당 항목을 다운로드하고 설치합니다. 다운로드 후 vcpkg는 라이브러리가 사용하는 빌드 시스템이면 무엇이든 사용하여 라이브러리를 빌드합니다. CMake 및 MSBuild 프로젝트(Windows)이 선호되지만 MAKE도 다른 빌드 시스템과 함께 지원됩니다. vcpkg가 로컬 컴퓨터에서 지정된 빌드 시스템을 찾을 수 없으면 다운로드하여 설치합니다.
+포트 파일이 종속성을 지정하는 경우 vcpkg도 해당 항목을 다운로드하고 설치합니다. 다운로드 후 vcpkg는 라이브러리가 사용하는 빌드 시스템이면 무엇이든 사용하여 라이브러리를 빌드합니다. CMake 및 MSBuild 프로젝트(Windows)가 선호되지만 MAKE도 다른 빌드 시스템과 함께 지원됩니다. vcpkg가 로컬 컴퓨터에서 지정된 빌드 시스템을 찾을 수 없으면 다운로드하여 설치합니다.
 
 ```cmd
 > vcpkg install boost:x86-windows
@@ -117,8 +117,8 @@ zlib:x86-windows        1.2.11   A compression library
 
 활성 vcpkg 인스턴스에서 버전과 다른 라이브러리의 특정 버전을 사용해야 하는 경우 다음 단계를 따르세요.
 
-1. vcpkg의 새 클론 생성
-1. 필요한 버전을 가져오도록 라이브러리의 프로필 수정
+1. vcpkg의 새 클론을 생성합니다.
+1. 필요한 버전을 가져오도록 라이브러리의 프로필을 수정합니다.
 1. **vcpkg install \<library>** 를 실행합니다.
 1. **vcpkg integrate project**를 사용하여 프로젝트 단위로 해당 라이브러리를 참조하는 NuGet 패키지를 만듭니다.
 
@@ -172,7 +172,7 @@ If you are sure you want to rebuild the above packages, run this command with th
 
 원하는 모든 라이브러리를 개인 포트 컬렉션에 포함할 수 있습니다. 공용 카탈로그에 대한 새 라이브러리를 제안하려면 [GitHub vcpkg 문제 페이지](https://github.com/Microsoft/vcpkg/issues)에서 문제를 엽니다.
 
-## <a name="remove-a-library"></a>라이브러리를 제거합니다.
+## <a name="remove-a-library"></a>라이브러리 제거
 
 **vcpkg remove**를 입력하여 설치된 라이브러리를 제거합니다. 종속된 라이브러리가 있는 경우 모든 다운스트림 라이브러리가 제거되는 **--recurse**를 사용하여 명령을 다시 실행하라는 메시지가 표시됩니다.
 
@@ -204,7 +204,7 @@ Vcpkg 인스턴스의 내용:
 - toolsrc -- vcpkg 및 관련 구성 요소에 대한 C++ 소스 코드
 - triplets -- 지원되는 각 대상 플랫폼(예: x86-windows 또는 x64-uwp)에 대한 설정을 포함합니다.
 
-## <a name="command-line-reference"></a>명령줄 참조 
+## <a name="command-line-reference"></a>명령줄 참조
 
 |명령|설명|
 |---------|---------|
