@@ -26,7 +26,7 @@ ms.locfileid: "68456496"
 ```
 
 > [!NOTE]
-> 또한 \<알고리즘 > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
+> \<algorithm> 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -87,7 +87,7 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 |[max](../standard-library/algorithm-functions.md#max)|두 개체를 비교하고 둘 중 큰 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[max_element](../standard-library/algorithm-functions.md#max_element)|지정된 범위에서 가장 큰 첫 번째 요소를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[merge](../standard-library/algorithm-functions.md#merge)|정렬된 두 소스 범위의 모든 요소를 정렬된 단일 대상 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
-|[분](../standard-library/algorithm-functions.md#min)|두 개체를 비교하고 둘 중 작은 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
+|[min](../standard-library/algorithm-functions.md#min)|두 개체를 비교하고 둘 중 작은 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[min_element](../standard-library/algorithm-functions.md#min_element)|지정된 범위에서 가장 작은 첫 번째 요소를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[minmax](../standard-library/algorithm-functions.md#minmax)|두 개의 입력된 매개 변수를 비교하여 작은 수와 큰 수의 순서로 구성된 한 쌍을 반환합니다.|
 |[minmax_element](../standard-library/algorithm-functions.md#minmax_element)|한 번의 호출로 [min_element](../standard-library/algorithm-functions.md#min_element) 및 [max_element](../standard-library/algorithm-functions.md#max_element)에서 수행하는 작업을 수행합니다.|
