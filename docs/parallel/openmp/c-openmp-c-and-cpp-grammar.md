@@ -125,7 +125,7 @@ term<sub>opt</sub> 구문 표현은 해당 용어가 대체 내의 선택사항�
 &nbsp;&nbsp;&nbsp;&nbsp;  `nowait`
 
 *section-scope*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *{0} 섹션 시퀀스}*
+&nbsp;&nbsp;&nbsp;&nbsp;*{0} 섹션 시퀀스}*
 
 *section-sequence*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*section-directive*<sub>opt</sub> *structured-block*<br/>
@@ -178,7 +178,7 @@ term<sub>opt</sub> 구문 표현은 해당 용어가 대체 내의 선택사항�
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp critical` *region-phrase*<sub>opt</sub> *new-line*
 
 *region-phrase*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *(identifier)*
+&nbsp;&nbsp;&nbsp;&nbsp;*(identifier)*
 
 *barrier-directive*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp barrier` *new-line*
@@ -193,7 +193,7 @@ term<sub>opt</sub> 구문 표현은 해당 용어가 대체 내의 선택사항�
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp flush` *flush-vars*<sub>opt</sub> *new-line*
 
 *flush-vars*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *(variable-list)*
+&nbsp;&nbsp;&nbsp;&nbsp;*(variable-list)*
 
 *ordered-construct*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*순서가 지정된 지시문 구조화된 블록*
@@ -229,7 +229,7 @@ term<sub>opt</sub> 구문 표현은 해당 용어가 대체 내의 선택사항�
 &nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*variable-list*   `,` *identifier*
 
-**/\* 에서C++ \*/**
+**/\*C++의 경우\*/**
 
 *variable-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*id-expression*<br/>
