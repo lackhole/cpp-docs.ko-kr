@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - money_base class
 ms.assetid: 1a303c15-9272-4f26-ae16-dcf43a0fd38a
-ms.openlocfilehash: 5b19635cf4d2cce58ec50226c463a075cfac5b0f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: c614832b0cbb1cc23e42ecb3a939ccf1334a5cea
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455570"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689319"
 ---
-# <a name="moneybase-class"></a>money_base 클래스
+# <a name="money_base-class"></a>money_base 클래스
 
-이 클래스는 템플릿 클래스 [moneypunct](../standard-library/moneypunct-class.md)의 모든 특수화에 공통적인 열거형과 구조체를 설명합니다.
+이 클래스는 클래스 템플릿 [moneypunct](../standard-library/moneypunct-class.md)의 모든 특수화에 공통 된 열거형 및 구조체를 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,19 +26,19 @@ struct pattern
 };
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-열거형 `part` 은 구조체 패턴의 배열 필드 요소에서 가능한 값을 설명 합니다. 의 `part` 값은 다음과 같습니다.
+구조체 패턴의 배열 필드 요소에서 가능한 값을 설명 하는 열거형 `part`입니다. @No__t_0 값은 다음과 같습니다.
 
-- `none`0 개 이상의 공백을 찾거나 아무것도 생성 하지 않습니다.
+- `none`는 0 개 이상의 공백을 찾거나 아무것도 생성 하지 않습니다.
 
-- `sign`양수 또는 음수 기호를 일치 또는 생성 합니다.
+- 양수 또는 음수 기호를 일치 또는 생성 `sign` 합니다.
 
-- `space`0 개 이상의 공백을 찾거나 공백을 생성 하려면입니다.
+- 0 개 이상의 공백과 일치 하거나 공백을 생성 하는 `space` 합니다.
 
-- `symbol`통화 기호를 일치 또는 생성 하려면입니다.
+- 통화 기호를 일치 또는 생성 `symbol` 합니다.
 
-- `value`통화 값을 일치 하거나 생성 하려면입니다.
+- 통화 값을 일치 또는 생성 `value` 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -46,6 +46,6 @@ struct pattern
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
