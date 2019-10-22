@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - <forward_list>
 ms.assetid: 8b4ab09e-1475-434a-b4e0-fdbc07a08b5b
-ms.openlocfilehash: a8b343fbe5e175828b4b8470da486a6dea9f3455
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 708e16cb4b8a1640f4978b806bc52beed24decd4
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457004"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688056"
 ---
-# <a name="ltforwardlistgt"></a>&lt;forward_list&gt;
+# <a name="ltforward_listgt"></a>&lt;forward_list&gt;
 
-컨테이너 템플릿 클래스 forward_list 및 다양한 지원 템플릿을 정의합니다.
+컨테이너 클래스 템플릿 forward_list 및 여러 지원 템플릿을 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -24,7 +24,7 @@ ms.locfileid: "68457004"
 **네임스페이스:** std
 
 > [!NOTE]
-> Forward_list \<> 라이브러리는 `#include <initializer_list>` 문을 사용 하기도 합니다.
+> 또한 \<forward_list > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -51,6 +51,6 @@ ms.locfileid: "68457004"
 |-|-|
 |[forward_list](../standard-library/forward-list-class.md)|다양한 길이의 요소 시퀀스를 제어하는 개체를 설명합니다. 각각 `Type` 형식의 멤버를 포함하는 요소의 단일 연결 목록으로 시퀀스가 저장됩니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

@@ -1,20 +1,20 @@
 ---
-title: '&lt;memory_resource&gt;'
+title: '&lt;memory_resource &gt;'
 ms.date: 04/04/2019
 f1_keywords:
 - <memory_resource>
 helpviewer_keywords:
 - memory_resource header
-ms.openlocfilehash: d4b25c6ee575191f1e17b0202d33298e2e9e67f0
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 752396bb06b292ce29b7c6cd292287955b6066a7
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451899"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687706"
 ---
-# <a name="ltmemoryresourcegt"></a>&lt;memory_resource&gt;
+# <a name="ltmemory_resourcegt"></a>&lt;memory_resource &gt;
 
-컨테이너 템플릿 클래스 memory_resource 및 해당 지원 템플릿을 정의 합니다.
+컨테이너 클래스 템플릿 memory_resource 및 해당 지원 템플릿을 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -56,7 +56,7 @@ ms.locfileid: "68451899"
 |[synchronized_pool_resource 클래스](../standard-library/synchronized-pool-resource-class.md)||
 |[unsynchronized_pool_resource 클래스](../standard-library/unsynchronized-pool-resource-class.md)||
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

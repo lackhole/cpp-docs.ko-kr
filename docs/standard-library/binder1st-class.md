@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - binder1st class
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
-ms.openlocfilehash: 384a870a10c9f806684443d8c67647e924b6b2aa
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 15b704134d47b7bf7d8857bf380c756b0b03a1b0
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243378"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688381"
 ---
 # <a name="binder1st-class"></a>binder1st 클래스
 
-이항 함수의 첫 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 생성자를 제공하는 템플릿 클래스입니다. C + + 11 위해에서 사용 되지 않는 [바인딩](functional-functions.md#bind), c++17에서 제거 합니다.
+이항 함수의 첫 번째 인수를 지정 된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환 하는 생성자를 제공 하는 클래스 템플릿입니다. C + + 11에서 사용 되지 않고 [바인딩](functional-functions.md#bind)및 c + + 17에서 제거 되었습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,24 +43,24 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*binary_fn*\
+*binary_fn* \
 단항 함수 개체로 변환할 이항 함수 개체입니다.
 
-*왼쪽*\
+*왼쪽* \
 이항 함수 개체의 첫 번째 인수가 바인딩되는 값입니다.
 
-*오른쪽*\
+*오른쪽* \
 수정된 이진 개체를 두 번째 인수의 고정 값과 비교하는 인수의 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
-이항 함수 개체의 첫 번째 인수 값에 바인딩할 결과로 생성 되는 단항 함수 개체로 *왼쪽*합니다.
+이항 함수 개체의 첫 번째 인수를 *왼쪽*값에 바인딩하여 생성 되는 단항 함수 개체입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-이항 함수 개체의 복사본을 저장 하는 템플릿 클래스 *binary_fn* 에서 `op`, 및 사본을 *왼쪽* 에서 `value`합니다. 해당 멤버 함수 정의 `operator()` 반환 `op(value, right)`합니다.
+클래스 템플릿은 `op`에 이진 함수 개체 *binary_fn* 복사본을 저장 하 고 `value`에 *왼쪽* 의 복사본을 저장 합니다. @No__t_1 반환 하는 것 처럼 `operator()` 멤버 함수를 정의 합니다.
 
-경우 *binary_fn* 형식의 개체인 `Operation` 하 고 `c` 상수 이면 `bind1st(binary_fn, c)` 더 편리 하 게 해당 하는 `binder1st<Operation>(binary_fn, c)`합니다. 자세한 내용은 [bind1st](../standard-library/functional-functions.md#bind1st)합니다.
+*Binary_fn* 가 `Operation` 형식의 개체이 고 `c` 상수인 경우 `bind1st(binary_fn, c)`는 `binder1st<Operation>(binary_fn, c)` 하는 것 보다 더 편리 합니다. 자세한 내용은 [bind1st](../standard-library/functional-functions.md#bind1st)를 참조 하세요.
 
 ## <a name="example"></a>예제
 

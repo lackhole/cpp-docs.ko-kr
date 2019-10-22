@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - ostream header
 ms.assetid: 90c3b6fb-57cd-4ae7-99b8-8512f24a67d2
-ms.openlocfilehash: 8de66718dab10b5c95e8c1ab7fd0bd17e9b4ee5e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3838e215ffac42ec6902ab6a9837f638153cf184
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448166"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689159"
 ---
 # <a name="ltostreamgt"></a>&lt;ostream&gt;
 
-iostreams에 대한 삽입을 중재하는 템플릿 클래스 [basic_ostream](../standard-library/basic-ostream-class.md)을 정의합니다. 헤더에서 여러 관련 조작자도 정의합니다. 이 헤더는 일반적으로 다른 iostreams 헤더에 의해 포함되며, 직접 포함해야 하는 경우는 거의 없습니다.
+Iostreams에 대 한 삽입을 중재 하는 클래스 템플릿 [basic_ostream](../standard-library/basic-ostream-class.md)를 정의 합니다. 헤더에서 여러 관련 조작자도 정의합니다. 이 헤더는 일반적으로 다른 iostreams 헤더에 의해 포함되며, 직접 포함해야 하는 경우는 거의 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -27,10 +27,10 @@ iostreams에 대한 삽입을 중재하는 템플릿 클래스 [basic_ostream](.
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|Description|
+|형식 이름|설명|
 |-|-|
-|[ostream](../standard-library/ostream-typedefs.md#ostream)|Char에서 특수화 되 `basic_ostream` **고** `char_traits` **char**에서 특수화 된 형식을 만듭니다.|
-|[wostream](../standard-library/ostream-typedefs.md#wostream)|Wchar_t에서 특수화 되 `basic_ostream` **고** `char_traits` **wchar_t**에서 특수화 된 형식을 만듭니다.|
+|[ostream](../standard-library/ostream-typedefs.md#ostream)|Char에서 특수화 된 `basic_ostream`에서 **문자 및 `char_traits`** 특수화 된 형식을 **만듭니다.**|
+|[wostream](../standard-library/ostream-typedefs.md#wostream)|**Wchar_t 및** **wchar_t**에서 특수화 된 `char_traits` `basic_ostream`에서 형식을 만듭니다.|
 
 ### <a name="manipulators"></a>조작자
 
@@ -43,17 +43,17 @@ iostreams에 대한 삽입을 중재하는 템플릿 클래스 [basic_ostream](.
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[operator<<](../standard-library/ostream-operators.md#op_lt_lt)|스트림에 다양한 형식을 씁니다.|
 
 ### <a name="classes"></a>클래스
 
-|클래스|Description|
+|인스턴스|설명|
 |-|-|
-|[basic_ostream](../standard-library/basic-ostream-class.md)|이 템플릿 클래스는 스트림 버퍼에 요소 및 인코드된 개체 삽입을 제어하는 개체를 설명합니다.|
+|[basic_ostream](../standard-library/basic-ostream-class.md)|클래스 템플릿은 스트림 버퍼에 요소 및 인코드된 개체 삽입을 제어 하는 개체를 설명 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

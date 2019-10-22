@@ -26,14 +26,14 @@ helpviewer_keywords:
 - std::gamma_distribution [C++], param_type
 - std::gamma_distribution [C++], param_type
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
-ms.openlocfilehash: ac6a82cc7f342f6a96b5f79f36b23d23a1d27097
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: ab71ada5b1fb8b604b94ed098a46820b86a65c63
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68453947"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689614"
 ---
-# <a name="gammadistribution-class"></a>gamma_distribution 클래스
+# <a name="gamma_distribution-class"></a>gamma_distribution 클래스
 
 감마 분포를 생성합니다.
 
@@ -70,15 +70,15 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType*\
+*RealType* \
 부동 소수점 결과 형식으로, 기본적으로 **double**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*URNG*\
+*Urng* \
 단일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-감마 분포에 따라 분포 된 경우 템플릿 클래스는 사용자 지정 부동 소수점 형식의 값을 생성 하는 분포 나 아무것도 제공 되지 않은 경우 **double** 형식을 나타냅니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
+감마 분포에 따라 분포 된 경우 클래스 템플릿은 사용자 지정 부동 소수점 형식의 값을 생성 하는 분포를 설명 하 고, 아무것도 제공 되지 않은 경우 **double** 형식으로 지정 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
 
 ||||
 |-|-|-|
@@ -87,7 +87,7 @@ public:
 
 속성 함수 `alpha()` 및 `beta()`는 저장된 분포 매개 변수인 *alpha* 및 *beta* 각각에 대한 값을 반환합니다.
 
-속성 구성원 `param()`은 `param_type`으로 저장된 분포 매개 변수 패키지를 설정하거나 반환합니다.
+속성 멤버 `param()`은 `param_type`으로 저장된 분포 매개 변수 패키지를 설정하거나 반환합니다.
 
 `min()` 및 `max()` 구성원 함수는 각각 가능한 가장 작은 결과 및 가능한 가장 큰 결과를 반환합니다.
 
@@ -95,7 +95,7 @@ public:
 
 `operator()` 구성원 함수는 현재 매개 변수 패키지 또는 지정된 매개 변수 패키지에서 URNG 엔진을 기반으로 하여 다음에 생성된 값을 반환합니다.
 
-분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
+분포 클래스 및 이러한 클래스의 멤버에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
 감마 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [Gamma Distribution](https://go.microsoft.com/fwlink/p/?linkid=401111)(감마 분포)을 참조하세요.
 
@@ -199,16 +199,16 @@ explicit gamma_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*채널*\
+*알파* \
 `alpha` 분포 매개 변수입니다.
 
-*Beta*\
+*베타* \
 `beta` 분포 매개 변수입니다.
 
-*parm*\
+*parm* \
 분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 **사전 조건:** `0.0 < alpha` 및 `0.0 < beta`
 
@@ -234,21 +234,21 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*채널*\
+*알파* \
 `alpha` 분포 매개 변수입니다.
 
-*Beta*\
+*베타* \
 `beta` 분포 매개 변수입니다.
 
-*오른쪽*\
+*오른쪽* \
 이것과 비교할 `param_type` 인스턴스입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 **사전 조건:** `0.0 < alpha` 및 `0.0 < beta`
 
 이 구조를 인스턴스화 시에는 분포의 클래스 생성자로, 기존 분포의 저장된 매개 변수를 설정하기 위해서는 `param()` 멤버 함수로, 저장된 매개 변수 대신 사용하기 위해서는 `operator()`로 전달할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<random>](../standard-library/random.md)

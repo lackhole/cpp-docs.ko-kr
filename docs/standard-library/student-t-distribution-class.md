@@ -21,14 +21,14 @@ helpviewer_keywords:
 - std::student_t_distribution [C++], max
 - std::student_t_distribution [C++], param_type
 ms.assetid: 87b48127-9311-4d07-95df-833ed46bf0b1
-ms.openlocfilehash: 42e7337a2a0803af51e7dd11f53c482dbfc2aa0f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: ebf9324d478a12476b548dc62455e205b9261430
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458997"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72685864"
 ---
-# <a name="studenttdistribution-class"></a>student_t_distribution 클래스
+# <a name="student_t_distribution-class"></a>student_t_distribution 클래스
 
 Student의 *t* 분포를 생성합니다.
 
@@ -64,12 +64,12 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType*\
+*RealType* \
 부동 소수점 결과 형식으로, 기본적으로 **double**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-스튜던트 *t*분포에 따라 분포 된 경우 템플릿 클래스는 사용자 지정 정수 형식의 값을 생성 하는 분포를 설명 하 고, 아무것도 제공 되지 않은 경우 **double** 형식을 제공 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
+스튜던트 *t*분포에 따라 분포 된 경우 클래스 템플릿은 사용자 지정 정수 형식의 값을 생성 하는 분포를 설명 하 고, 아무것도 제공 되지 않은 경우 **double** 형식을 제공 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
 
 ||||
 |-|-|-|
@@ -78,7 +78,7 @@ public:
 
 속성 함수 `n()`은 저장된 분포 매개 변수 `n`의 값을 반환합니다.
 
-분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
+분포 클래스 및 이러한 클래스의 멤버에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
 Student의 *t* 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [Student의 t 분포](http://mathworld.wolfram.com/Studentst-Distribution.html)를 참조하세요.
 
@@ -177,10 +177,10 @@ explicit student_t_distribution(const param_type& parm);
 *n*\
 `n` 분포 매개 변수입니다.
 
-*parm*\
+*parm* \
 분포를 생성하는 데 사용되는 매개 변수 패키지입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 **사전 조건:** `0.0 < n`
 
@@ -208,15 +208,15 @@ struct param_type {
 *n*\
 `n` 분포 매개 변수입니다.
 
-*오른쪽*\
+*오른쪽* \
 이 매개 변수와 비교할 `param_type` 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 **사전 조건:** `0.0 < n`
 
 이 구조를 인스턴스화 시에는 분포의 클래스 생성자로, 기존 분포의 저장된 매개 변수를 설정하기 위해서는 `param()` 멤버 함수로, 저장된 매개 변수 대신 사용하기 위해서는 `operator()`로 전달할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<random>](../standard-library/random.md)

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt_base class
 ms.assetid: 7e95c083-91b4-4b3f-8918-0d4ea244a040
-ms.openlocfilehash: 1a32ba5e583fdb20118a3397f1ddb326302f2de1
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 6fca9b2130407b165a7a7bfb1fb2a9ec81774e20
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459384"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689882"
 ---
-# <a name="codecvtbase-class"></a>codecvt_base 클래스
+# <a name="codecvt_base-class"></a>codecvt_base 클래스
 
-로 `result`참조 되는 열거형을 정의 하는 데 사용 되는 codecvt 클래스에 대 한 기본 클래스입니다 .이 클래스는 변환 결과를 나타내기 위해 패싯 멤버 함수에 대 한 반환 형식으로 사용 됩니다.
+변환 결과를 나타내기 위해 패싯 멤버 함수에 대 한 반환 형식으로 사용 되는 `result` 이라고 하는 열거형 형식을 정의 하는 데 사용 되는 codecvt 클래스에 대 한 기본 클래스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,15 +36,15 @@ protected:
 };
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-이 클래스는 템플릿 클래스 [codecvt](../standard-library/codecvt-class.md)의 모든 특수화에 공통적인 열거형을 설명합니다. 열거형 결과는 다음과 같이 [do_in](../standard-library/codecvt-class.md#do_in) 또는 [do_out](../standard-library/codecvt-class.md#do_out)의 가능한 반환 값을 설명합니다.
+클래스는 클래스 템플릿 [codecvt](../standard-library/codecvt-class.md)의 모든 특수화에 공통적인 열거형을 설명 합니다. 열거형 결과는 다음과 같이 [do_in](../standard-library/codecvt-class.md#do_in) 또는 [do_out](../standard-library/codecvt-class.md#do_out)의 가능한 반환 값을 설명합니다.
 
-- `ok`내부 및 외부 문자 인코딩 간의 변환이 성공 하면입니다.
+- 내부 및 외부 문자 인코딩 간의 변환이 성공 하면 `ok` 합니다.
 
-- `partial`변환이 성공 하기에는 대상이 충분히 크지 않은 경우
+- 변환이 성공 하기에는 대상이 충분히 크지 않은 경우 `partial` 합니다.
 
-- `error`소스 시퀀스의 형식이 잘못 된 경우
+- 소스 시퀀스의 형식이 잘못 된 경우 `error` 합니다.
 
 - 함수가 변환을 수행하지 않은 경우 `noconv`
 
@@ -54,6 +54,6 @@ protected:
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

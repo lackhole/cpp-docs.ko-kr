@@ -23,14 +23,14 @@ helpviewer_keywords:
 - std::chi_squared_distribution [C++], param_type
 - std::chi_squared_distribution [C++], param_type
 ms.assetid: 9b603fbe-cafd-4a92-b8c5-a434d60b8122
-ms.openlocfilehash: 2eac3324516cf88a114064cf0145593c7bf4806b
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f7f6f038c0e8bc922874388065ce06d76854bc1b
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459462"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688312"
 ---
-# <a name="chisquareddistribution-class"></a>chi_squared_distribution 클래스
+# <a name="chi_squared_distribution-class"></a>chi_squared_distribution 클래스
 
 카이 제곱 분포를 생성합니다.
 
@@ -66,15 +66,15 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*RealType*\
+*RealType* \
 부동 소수점 결과 형식으로, 기본적으로 **double**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*URNG*\
+*Urng* \
 단일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-카이 제곱 분포에 따라 분포 된 경우 템플릿 클래스는 사용자 지정 부동 소수점 형식의 값을 생성 하는 분포 나 아무것도 제공 되지 않은 경우 **double** 형식을 설명 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
+클래스 템플릿에서는 카이 제곱 분포에 따라 분포 된 경우 사용자 지정 부동 소수점 형식의 값을 생성 하는 분포 나 아무것도 제공 되지 않은 경우 **double** 형식을 설명 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
 
 ||||
 |-|-|-|
@@ -83,7 +83,7 @@ public:
 
 속성 함수 `n()`은 저장된 분포 매개 변수 `n`의 값을 반환합니다.
 
-속성 구성원 `param()`은 `param_type`으로 저장된 분포 매개 변수 패키지를 설정하거나 반환합니다.
+속성 멤버 `param()`은 `param_type`으로 저장된 분포 매개 변수 패키지를 설정하거나 반환합니다.
 
 `min()` 및 `max()` 구성원 함수는 각각 가능한 가장 작은 결과 및 가능한 가장 큰 결과를 반환합니다.
 
@@ -91,7 +91,7 @@ public:
 
 `operator()` 구성원 함수는 현재 매개 변수 패키지 또는 지정된 매개 변수 패키지에서 URNG 엔진을 기반으로 하여 다음에 생성된 값을 반환합니다.
 
-분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
+분포 클래스 및 이러한 클래스의 멤버에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
 카이 제곱 분포에 대한 자세한 내용은 Wolfram MathWorld 문서 [Chi-Squared Distribution](https://go.microsoft.com/fwlink/p/?linkid=400528)(카이 제곱 분포)을 참조하세요.
 
@@ -238,10 +238,10 @@ explicit chi_squared_distribution(const param_type& parm);
 *n*\
 `n` 분포 매개 변수입니다.
 
-*parm*\
+*parm* \
 분포를 생성하는 데 사용되는 매개 변수 구조입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 **사전 조건:** `0.0 < n`
 
@@ -269,15 +269,15 @@ struct param_type {
 *n*\
 `n` 분포 매개 변수입니다.
 
-*오른쪽*\
+*오른쪽* \
 이 매개 변수와 비교할 `param_type` 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 **사전 조건:** `0.0 < n`
 
 이 구조를 인스턴스화 시에는 분포의 클래스 생성자로, 기존 분포의 저장된 매개 변수를 설정하기 위해서는 `param()` 멤버 함수로, 저장된 매개 변수 대신 사용하기 위해서는 `operator()`로 전달할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<random>](../standard-library/random.md)

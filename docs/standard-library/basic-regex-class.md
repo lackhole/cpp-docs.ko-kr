@@ -6,14 +6,14 @@ f1_keywords:
 helpviewer_keywords:
 - basic_regex class
 ms.assetid: 8a18c6b4-f22a-4cfd-bc16-b4267867ebc3
-ms.openlocfilehash: 8df9e927c430f3b94f5857bf18f575e79d6b922a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 45776754bd0854aeb85382eda95891a6832ca09e
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68453431"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689959"
 ---
-# <a name="basicregex-class"></a>basic_regex 클래스
+# <a name="basic_regex-class"></a>basic_regex 클래스
 
 정규식을 래핑합니다.
 
@@ -26,21 +26,21 @@ class basic_regex
 
 ## <a name="parameters"></a>매개 변수
 
-*E*\
+*Elem* \
 일치 항목을 찾을 요소의 형식입니다.
 
-*RXtraits*\
+*Rxtraits* \
 요소에 대한 특성 클래스입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-템플릿 클래스는 정규식을 포함하는 개체에 대해 설명합니다. 이 템플릿 클래스의 개체는 적절 한 텍스트 문자열 인수와 함께 [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search)및 [regex_replace](../standard-library/regex-functions.md#regex_replace)템플릿 함수에 전달 하 여 정규식과 일치 하는 텍스트를 검색할 수 있습니다. 이 템플릿 클래스에는 **char**형식의 요소에 대 한 형식 정의 [regex](../standard-library/regex-typedefs.md#regex) 와 **wchar_t**형식의 요소에 대 한 [wregex](../standard-library/regex-typedefs.md#wregex) 가 있습니다.
+클래스 템플릿은 정규식을 포함 하는 개체를 설명 합니다. 이 클래스 템플릿의 개체는 적절 한 텍스트 문자열 인수와 함께 [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search)및 [regex_replace](../standard-library/regex-functions.md#regex_replace)템플릿 함수에 전달 하 여 정규식과 일치 하는 텍스트를 검색할 수 있습니다. 이 클래스 템플릿에는 두 가지 특수화, 즉 **char**형식의 요소에 대 한 형식 정의 [regex](../standard-library/regex-typedefs.md#regex) 와 **wchar_t**형식의 요소에 대 한 [wregex](../standard-library/regex-typedefs.md#wregex) 가 있습니다.
 
-템플릿 인수 *Rxtraits* 은 템플릿 클래스에서 지 원하는 정규식 구문의 다양 한 중요 속성을 설명 합니다. 이러한 정규식 특성을 지정하는 클래스는 템플릿 클래스 [regex_traits 클래스](../standard-library/regex-traits-class.md)의 개체와 외부 인터페이스가 동일해야 합니다.
+템플릿 인수 *Rxtraits* 은 클래스 템플릿에서 지 원하는 정규식 구문에 대 한 다양 한 중요 속성을 설명 합니다. 이러한 정규식 특성을 지정 하는 클래스에는 [Regex_traits class](../standard-library/regex-traits-class.md)형식의 개체와 동일한 외부 인터페이스가 있어야 합니다.
 
 일부 함수는 정규식을 정의하는 피연산자 시퀀스를 사용합니다. 그러한 피연산자 시퀀스를 여러 방법으로 지정할 수 있습니다.
 
-`ptr`--(null 포인터는 안 됨) 에서 `ptr` 시작 하는 null로  끝나는 시퀀스 (예: null 포인터가 아니어야 하는 C 문자열)입니다. 여기서 종료 요소는 값 `value_type()` 이며 피연산자 시퀀스의 일부가 아닙니다.
+`ptr`--`ptr` (null 포인터가 아니어야 **함)부터**시작 하 여 null로 끝나는 시퀀스 *(예:* C 문자열은 null 포인터가 아니어야 함)입니다. 여기서 종료 요소는 `value_type()` 값이 고 피연산자 시퀀스의 일부가 아닙니다.
 
 `ptr`, `count` -- `count`(null 포인터는 안 됨)에서 시작하는 `ptr` 요소의 시퀀스
 
@@ -50,22 +50,22 @@ class basic_regex
 
 `right` -- `basic_regex` 개체 `right`
 
-이러한 멤버 함수는 `flags` *rxtraits* 형식에서 설명 하는 것 외에도 정규식 해석을 위한 다양 한 옵션을 지정 하는 인수를 사용 합니다.
+이러한 멤버 함수는 *Rxtraits* 형식에서 설명 하는 것 외에도 정규식 해석을 위한 다양 한 옵션을 지정 하는 `flags` 인수를 사용 합니다.
 
 ### <a name="members"></a>멤버
 
 |멤버|기본값|
 |-|-|
-|public static const flag_type icase|regex_constants::icase|
-|public static const flag_type nosubs|regex_constants::nosubs|
-|public static const flag_type optimize|regex_constants::optimize|
-|public static const flag_type collate|regex_constants::collate|
-|public static const flag_type ECMAScript|regex_constants::ECMAScript|
-|public static const flag_type basic|regex_constants::basic|
-|public static const flag_type 확장|regex_constants::extended|
-|public static const flag_type awk|regex_constants::awk|
-|public static const flag_type grep|regex_constants::grep|
-|public static const flag_type egrep|regex_constants::egrep|
+|public static const flag_type icase|regex_constants:: icase|
+|public static const flag_type nosubs|regex_constants:: nosubs|
+|public static const flag_type optimize|regex_constants:: optimize|
+|public static const flag_type collate|regex_constants:: collate|
+|public static const flag_type ECMAScript|regex_constants:: ECMAScript|
+|public static const flag_type basic|regex_constants:: basic|
+|public static const flag_type 확장|regex_constants:: extended|
+|public static const flag_type awk|regex_constants:: awk|
+|public static const flag_type grep|regex_constants:: grep|
+|public static const flag_type egrep|regex_constants:: egrep|
 |개인 RXtraits 특성||
 
 ### <a name="constructors"></a>생성자
@@ -230,40 +230,40 @@ basic_regex& assign(
 
 ### <a name="parameters"></a>매개 변수
 
-*STtraits*\
+*Sttraits* \
 문자열 소스에 대한 특성 클래스입니다.
 
-*STalloc*\
+*Stalloc* \
 문자열 소스에 대한 할당자 클래스입니다.
 
-*Cloud-init*\
+*InIt* \
 범위 소스에 대한 입력 반복기 형식입니다.
 
-*오른쪽*\
+*오른쪽* \
 복사할 Regex 소스입니다.
 
-*ptr*\
+*ptr* \
 복사할 시퀀스의 시작에 대한 포인터입니다.
 
-*flags*\
+*플래그* \
 복사하는 동안 추가할 구문 옵션 플래그입니다.
 
 *len/TD >* \
 복사할 시퀀스의 길이입니다.
 
-*문자열*\
+*str* \
 복사할 문자열입니다.
 
-*기본*\
+*첫 번째* \
 복사할 시퀀스의 시작입니다.
 
-*최신*\
+*마지막* \
 복사할 시퀀스의 끝입니다.
 
-*IList*\
+*IList* \
 복사할 initializer_list입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 각 멤버 함수는 `*this`에 보유된 정규식을 피연산자 시퀀스에 설명된 정규식으로 대체한 후 `*this`를 반환합니다.
 
@@ -304,40 +304,40 @@ explicit basic_regex(
 
 ### <a name="parameters"></a>매개 변수
 
-*STtraits*\
+*Sttraits* \
 문자열 소스에 대한 특성 클래스입니다.
 
-*STalloc*\
+*Stalloc* \
 문자열 소스에 대한 할당자 클래스입니다.
 
-*Cloud-init*\
+*InIt* \
 범위 소스에 대한 입력 반복기 형식입니다.
 
-*오른쪽*\
+*오른쪽* \
 복사할 Regex 소스입니다.
 
-*ptr*\
+*ptr* \
 복사할 시퀀스의 시작에 대한 포인터입니다.
 
-*flags*\
+*플래그* \
 복사하는 동안 추가할 구문 옵션 플래그입니다.
 
 *len/TD >* \
 복사할 시퀀스의 길이입니다.
 
-*문자열*\
+*str* \
 복사할 문자열입니다.
 
-*기본*\
+*첫 번째* \
 복사할 시퀀스의 시작입니다.
 
-*최신*\
+*마지막* \
 복사할 시퀀스의 끝입니다.
 
-*IList*\
+*IList* \
 복사할 initializer_list입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 모든 생성자가 `RXtraits` 형식의 기본 생성된 개체를 저장합니다.
 
@@ -353,7 +353,7 @@ explicit basic_regex(
 typedef regex_constants::syntax_option_type flag_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 [regex_constants::syntax_option_type](../standard-library/regex-constants-class.md#syntax_option_type)의 동의어입니다.
 
@@ -365,7 +365,7 @@ typedef regex_constants::syntax_option_type flag_type;
 flag_type flags() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 [basic_regex::assign](#assign) 멤버 함수 중 하나에 대한 최근 호출에 전달된 `flag_type` 인수의 값을 반환하거나, 이러한 호출이 수행되지 않은 경우 생성자에 전달된 값을 반환합니다.
 
@@ -377,7 +377,7 @@ flag_type flags() const;
 locale_type getloc() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 `traits.`[regex_traits::getloc](../standard-library/regex-traits-class.md#getloc)`()`을 반환합니다.
 
@@ -391,10 +391,10 @@ locale_type imbue(locale_type loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*loc*\
+*loc* \
 저장할 로캘 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 `*this`를 비우고 `traits.`[regex_traits::imbue](../standard-library/regex-traits-class.md#imbue)`(loc)`를 반환합니다.
 
@@ -406,7 +406,7 @@ locale_type imbue(locale_type loc);
 typedef typename RXtraits::locale_type locale_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 [regex_traits::locale_type](../standard-library/regex-traits-class.md#locale_type)의 동의어입니다.
 
@@ -418,7 +418,7 @@ typedef typename RXtraits::locale_type locale_type;
 unsigned mark_count() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 정규식의 캡처 그룹 수를 반환합니다.
 
@@ -437,19 +437,19 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
 
 ### <a name="parameters"></a>매개 변수
 
-*STtraits*\
+*Sttraits* \
 문자열 소스에 대한 특성 클래스입니다.
 
-*STalloc*\
+*Stalloc* \
 문자열 소스에 대한 할당자 클래스입니다.
 
-*오른쪽*\
+*오른쪽* \
 복사할 Regex 소스입니다.
 
-*문자열*\
+*str* \
 복사할 문자열입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 각 연산자는 `*this` 에 보유된 정규식을 피연산자 시퀀스에 설명된 정규식으로 대체한 후 `*this`를 반환합니다.
 
@@ -463,12 +463,12 @@ void swap(basic_regex& right) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*\
+*오른쪽* \
 바꾸려는 정규식 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수는 정규식 `*this` 을와 *오른쪽*으로 바꿉니다. 일정한 시간에 이 작업을 수행하고 예외를 throw하지 않습니다.
+멤버 함수는 `*this`와 *right*사이에서 정규식을 바꿉니다. 일정한 시간에 이 작업을 수행하고 예외를 throw하지 않습니다.
 
 ## <a name="value_type"></a>  basic_regex::value_type
 
@@ -478,16 +478,16 @@ void swap(basic_regex& right) throw();
 typedef Elem value_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 템플릿 매개 변수 *Elem*의 동의어입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<regex>](../standard-library/regex.md)\
-[regex_match](../standard-library/regex-functions.md#regex_match)\
-[regex_search](../standard-library/regex-functions.md#regex_search)\
-[regex_replace](../standard-library/regex-functions.md#regex_replace)\
+[regex_match](../standard-library/regex-functions.md#regex_match) \
+[regex_search](../standard-library/regex-functions.md#regex_search) \
+[regex_replace](../standard-library/regex-functions.md#regex_replace) \
 [regex](../standard-library/regex-typedefs.md#regex)\
 [wregex](../standard-library/regex-typedefs.md#wregex)\
 [regex_traits 클래스](../standard-library/regex-traits-class.md)

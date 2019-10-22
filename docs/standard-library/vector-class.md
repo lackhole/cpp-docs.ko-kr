@@ -86,16 +86,16 @@ helpviewer_keywords:
 - std::vector [C++], size
 - std::vector [C++], swap
 ms.assetid: a3e0a8f8-7565-4fe0-93e4-e4d74ae1b70d
-ms.openlocfilehash: 887f41d4dc3eac728b70ac653964903957d78930
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 5afcaddeb4b7a87b3f8845ce51752c6a77b12862
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454564"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688724"
 ---
 # <a name="vector-class"></a>vector 클래스
 
-C++ 표준 라이브러리 벡터 클래스는 선형 정렬에서 지정된 형식의 요소를 정렬하고 모든 요소에 대한 빠른 임의 액세스를 허용하는 시퀀스 컨테이너의 템플릿 클래스입니다. 임의 액세스 성능이 가장 중요할 때 시퀀스에 대한 기본 컨테이너로 사용해야 합니다.
+C++ 표준 라이브러리 벡터 클래스는 선형 정렬에서 지정 된 형식의 요소를 정렬 하 고 모든 요소에 대 한 빠른 임의 액세스를 허용 하는 시퀀스 컨테이너의 클래스 템플릿입니다. 임의 액세스 성능이 가장 중요할 때 시퀀스에 대한 기본 컨테이너로 사용해야 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -106,19 +106,19 @@ class vector
 
 ### <a name="parameters"></a>매개 변수
 
-*입력할*\
+*형식* \
 벡터에 저장되는 요소 데이터 형식입니다.
 
-*할당자*\
+*할당자* \
 벡터의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이며 기본값은 `allocator<Type>`입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 벡터를 사용하면 시퀀스 끝에서 상수 시간 삽입 및 삭제할 수 있습니다. 벡터 중간에 요소를 삽입하거나 삭제하려면 선형 시간이 필요합니다. 시퀀스의 시작과 끝에서 수행하는 삽입 및 삭제의 경우에는 [deque 클래스](../standard-library/deque-class.md) 컨테이너의 성능이 더 우수합니다. 그리고 시퀀스 내 임의의 위치에서 수행하는 삽입 및 삭제의 경우에는 [list 클래스](../standard-library/list-class.md) 컨테이너의 성능이 뛰어납니다.
 
 멤버 함수가 벡터 개체에 포함되는 시퀀스를 현재 스토리지 용량보다 더 크게 늘려야 할 때 벡터 다시 할당이 수행됩니다. 다른 삽입 및 지우기에서 시퀀스 내의 여러 스토리지 주소가 변경될 수 있습니다. 이러한 모든 경우 시퀀스의 변경되는 부분을 가리키는 반복기 또는 참조가 올바르지 않은 상태가 됩니다. 재할당이 수행되지 않으면 삽입/삭제 지점 앞의 반복기와 참조만 올바른 상태로 유지됩니다.
 
-[vector\<bool> 클래스](../standard-library/vector-bool-class.md)는 bool 유형 요소에 대한 템플릿 클래스 벡터의 전체 특수화로, 특수화에 사용되는 기본 유형에 대한 할당자를 포함합니다.
+[Vector \<bool > 클래스](../standard-library/vector-bool-class.md) 는 bool 형식의 요소에 대 한 클래스 템플릿 벡터의 전체 특수화로, 특수화에 사용 되는 기본 형식에 대 한 할당자를 포함 합니다.
 
 The [vector\<bool> reference 클래스](../standard-library/vector-bool-class.md#reference_class)는 해당 개체가 벡터\<bool> 개체 내의 요소(단일 비트)에 대한 참조를 제공할 수 있는 중첩 클래스입니다.
 
@@ -196,9 +196,9 @@ The [vector\<bool> reference 클래스](../standard-library/vector-bool-class.md
 typedef Allocator allocator_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-`allocator_type`은 템플릿 매개 변수 `Allocator`의 동의어입니다.
+`allocator_type`는 템플릿 매개 변수 `Allocator`의 동의어입니다.
 
 ### <a name="example"></a>예제
 
@@ -218,22 +218,22 @@ void assign(InputIterator First, InputIterator Last);
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*최신*\
+*마지막* \
 복사할 요소의 범위를 벗어난 첫 번째 요소의 위치입니다.
 
-*수*\
+*개수* \
 벡터에 삽입되는 요소의 복사본 수입니다.
 
-*짧은*\
+*Val* \
 벡터에 삽입되는 요소의 값입니다.
 
-*IList*\
+*IList* \
 삽입할 요소를 포함하는 initializer_list입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 벡터에서 기존 요소를 지운 후 원래 벡터의 지정한 요소 범위를 벡터에 삽입하거나 지정한 값의 새 요소 복사본을 벡터에 삽입합니다.
 
@@ -296,14 +296,14 @@ const_reference at(size_type _Pos) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*_Pos*\
+*_Pos* \
 벡터에서 참조할 요소의 아래 첨자 또는 위치 번호입니다.
 
 ### <a name="return-value"></a>반환 값
 
-인수에서 아래 첨자로 설정된 요소에 대한 참조입니다. 가 벡터 크기 보다 크면에서 `at` 예외를 throw 합니다. `_Off`
+인수에서 아래 첨자로 설정된 요소에 대한 참조입니다. @No__t_0 벡터 크기 보다 크면 `at`는 예외를 throw 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `at`의 반환 값이 `const_reference`로 할당되는 경우, 벡터 개체는 수정할 수 없습니다. `at`의 반환 값이 `reference`에 할당되는 경우에는 vector 개체를 수정할 수 있습니다.
 
@@ -349,7 +349,7 @@ const_reference back() const;
 
 벡터의 마지막 요소입니다. 벡터가 비어 있으면 반환 값이 정의되지 않습니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `back`의 반환 값이 `const_reference`로 할당되는 경우, 벡터 개체는 수정할 수 없습니다. `back`의 반환 값이 `reference`에 할당되는 경우에는 vector 개체를 수정할 수 있습니다.
 
@@ -393,7 +393,7 @@ iterator begin();
 
 `vector`의 첫 번째 요소 또는 빈 `vector` 다음의 위치 주소를 지정하는 임의 액세스 반복기입니다. 항상 [vector::end](#end)에서 반환되는 값을 비교하여 유효한지 확인해야 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `begin`의 반환 값이 [vector::const_iterator](#const_iterator)에 할당되는 경우 `vector` 개체는 수정할 수 없습니다. `begin`의 반환 값이 [vector::iterator](#iterator)에 할당되는 경우에는 `vector` 개체를 수정할 수 있습니다.
 
@@ -454,7 +454,7 @@ size_type capacity() const;
 
 벡터에 할당된 스토리지의 현재 길이입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 [resize](#resize) 구성원 함수를 포함할 수 있도록 충분한 메모리를 할당하면 해당 함수의 효율성이 높아집니다. 할당되는 메모리의 양을 지정하려면 [reserve](#reserve) 구성원 함수를 사용합니다.
 
@@ -496,13 +496,13 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>반환 값
 
-범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 **상수** 임의 액세스 반복기입니다 (빈 범위의 `cbegin() == cend()`경우).
+범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 **상수** 임의 액세스 반복기입니다 (빈 범위의 경우 `cbegin() == cend()`).
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `cbegin` 반환 값을 사용하여 범위의 요소를 수정할 수 없습니다.
 
-`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cbegin()`
+`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 `begin()` 및 `cbegin()`를 지 원하는 모든 종류의 수정 가능 (비 **const**) 컨테이너로 `Container` 하는 것이 좋습니다.
 
 ```cpp
 auto i1 = Container.begin();
@@ -524,11 +524,11 @@ const_iterator cend() const;
 
 범위 끝의 바로 다음을 가리키는 **const** 임의 액세스 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `cend`는 반복기가 범위 끝을 통과했는지 여부를 테스트하는 데 사용됩니다.
 
-`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cend()`
+`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 `end()` 및 `cend()`를 지 원하는 모든 종류의 수정 가능 (비 **const**) 컨테이너로 `Container` 하는 것이 좋습니다.
 
 ```cpp
 auto i1 = Container.end();
@@ -584,7 +584,7 @@ The size of v1 after clearing is 0
 typedef implementation-defined const_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `const_iterator` 형식을 사용하여 요소의 값을 수정할 수는 없습니다.
 
@@ -600,7 +600,7 @@ typedef implementation-defined const_iterator;
 typedef typename Allocator::const_pointer const_pointer;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `const_pointer` 형식을 사용하여 요소의 값을 수정할 수는 없습니다.
 
@@ -614,7 +614,7 @@ typedef typename Allocator::const_pointer const_pointer;
 typedef typename Allocator::const_reference const_reference;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `const_reference` 형식을 사용하여 요소의 값을 수정할 수는 없습니다.
 
@@ -658,7 +658,7 @@ The second element is 20
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `const_reverse_iterator` 형식은 요소값을 수정할 수 없으며 벡터를 역방향으로 반복하는 데 사용됩니다.
 
@@ -678,7 +678,7 @@ const_reverse_iterator crbegin() const;
 
 역방향 [vector](../standard-library/vector-class.md)에서 첫 번째 요소의 주소를 지정하거나 정방향 `vector`에서 마지막 요소의 주소를 지정하는 const 역방향 임의 액세스 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 반환 값이 `crbegin`이면 `vector` 개체를 수정할 수 없습니다.
 
@@ -727,7 +727,7 @@ const_reverse_iterator crend() const;
 
 역방향 [vector](../standard-library/vector-class.md)에서 마지막 요소 다음의 위치(정방향 `vector`의 첫 번째 요소 앞의 위치) 주소를 지정하는 const 역방향 임의 액세스 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `crend`는 [vector::cend](#cend)가 `vector`에 사용되는 것처럼 역방향 `vector`에 사용됩니다.
 
@@ -828,7 +828,7 @@ The vector c1 now contains elements: 20 2
 typedef typename Allocator::difference_type difference_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 요소에 대한 포인터는 요소의 주소를 포함하므로, `difference_type`은 두 포인터 사이의 요소 수로도 설명할 수 있습니다.
 
@@ -889,17 +889,17 @@ iterator emplace(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Where*\
+*_Where* \
 [vector](../standard-library/vector-class.md)에서 첫 번째 요소를 삽입하는 위치입니다.
 
-*짧은*\
+*val* \
 `vector`에 삽입되는 요소의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
 이 함수는 새 요소를 `vector`에 삽입한 위치를 가리키는 반복기를 반환합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 모든 삽입 작업에서는 많은 계산을 수행해야 할 수 있습니다. `vector` 성능에 대한 설명은 [vector 클래스](../standard-library/vector-class.md)를 참조하세요.
 
@@ -956,7 +956,7 @@ void emplace_back(Types&&... _Args);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Args*\
+*_Args* \
 생성자 인수입니다. 이 함수는 제공되는 인수에 따라 호출할 생성자 오버로드를 유추합니다.
 
 ### <a name="example"></a>예제
@@ -1027,9 +1027,9 @@ const_iterator end() const;
 
 벡터의 마지막 바로 다음 반복기입니다. 벡터가 비어 있으면 `vector::end() == vector::begin()`입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-의 `end` 반환 값이 형식의 `const_iterator`변수에 할당 되는 경우에는 vector 개체를 수정할 수 없습니다. 의 `end` 반환 값이 형식의 `iterator`변수에 할당 되는 경우 vector 개체를 수정할 수 있습니다.
+@No__t_0의 반환 값이 `const_iterator` 형식의 변수에 할당 되는 경우에는 vector 개체를 수정할 수 없습니다. @No__t_0의 반환 값이 `iterator` 형식의 변수에 할당 되는 경우 vector 개체를 수정할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1072,13 +1072,13 @@ iterator erase(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Where*\
+*_Where* \
 벡터에서 제거할 요소의 위치입니다.
 
-*기본*\
+*첫 번째* \
 벡터에서 제거되는 첫 번째 요소의 위치입니다.
 
-*최신*\
+*마지막* \
 벡터에서 제거되는 마지막 요소 바로 뒤의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1144,7 +1144,7 @@ const_reference front() const;
 
 벡터 개체의 첫 번째 요소에 대한 참조입니다. 벡터가 비어 있으면 반환이 정의되지 않습니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `front`의 반환 값이 `const_reference`로 할당되는 경우, 벡터 개체는 수정할 수 없습니다. `front`의 반환 값이 **reference**에 할당되는 경우에는 vector 개체를 수정할 수 있습니다.
 
@@ -1188,7 +1188,7 @@ Allocator get_allocator() const;
 
 벡터에서 사용되는 할당자입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 벡터 클래스의 할당자는 클래스가 스토리지를 관리하는 방법을 지정합니다. C++ 표준 라이브러리 컨테이너 클래스와 함께 제공되는 기본 할당자를 사용하면 대부분의 프로그래밍 요구 사항을 충족할 수 있습니다. 할당자 클래스를 직접 작성하고 사용하는 방법에 대해서는 고급 C++ 항목에서 다룹니다.
 
@@ -1242,26 +1242,26 @@ void insert(
 
 ### <a name="parameters"></a>매개 변수
 
-*_Where*\
+*_Where* \
 벡터에서 첫 번째 요소를 삽입하는 위치입니다.
 
-*짧은*\
+*val* \
 벡터에 삽입되는 요소의 값입니다.
 
-*수*\
+*개수* \
 벡터에 삽입되는 요소의 수입니다.
 
-*기본*\
+*첫 번째* \
 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*최신*\
+*마지막* \
 복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
 
 처음 두 `insert` 함수는 새 요소가 벡터에 삽입된 위치를 가리키는 반복기를 반환합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 사전 조건으로, *first* 및 *last* 는 vector의 반복기가 아니어야 하며, 그렇지 않은 경우 동작이 정의 되지 않습니다. 모든 삽입 작업에서는 많은 계산을 수행해야 할 수 있습니다. `vector` 성능에 대한 설명은 [vector 클래스](../standard-library/vector-class.md)를 참조하세요.
 
@@ -1337,7 +1337,7 @@ vv1[0] = 10 50 50 40 50 50 50 50 20 30
 typedef implementation-defined iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 **iterator** 형식은 요소값을 수정할 때 사용할 수 있습니다.
 
@@ -1388,14 +1388,14 @@ const_reference operator[](size_type Pos) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*Pos*\
+*Pos* \
 벡터 요소의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
 
 지정된 위치가 컨테이너의 크기보다 크거나 같을 경우 결과가 정의되지 않습니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `operator[]`의 반환 값이 `const_reference`로 할당되는 경우, 벡터 개체는 수정할 수 없습니다. `operator[]`의 반환 값이 참조로 할당되는 경우는 벡터 개체를 수정할 수 있습니다.
 
@@ -1434,12 +1434,12 @@ vector& operator=(vector&& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*\
+*오른쪽* \
 `vector`에 복사되는 [vector](../standard-library/vector-class.md)입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-에서 `vector`기존 요소를 `operator=` 지운 후에는의 `vector` *내용을로 복사* 하거나 이동 합니다.
+@No__t_0의 기존 요소를 지운 후에 *는의 내용을* `vector` 복사 하거나 이동 `operator=`.
 
 ### <a name="example"></a>예제
 
@@ -1490,9 +1490,9 @@ int main( )
 typedef typename Allocator::pointer pointer;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-**pointer** 형식은 요소값을 수정할 때 사용할 수 있습니다.
+형식 **pointer**는 요소값을 수정할 때 사용할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1532,11 +1532,11 @@ int main( )
 void pop_back();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 코드 예제를 보려면 [vector::push_back()](#push_back)을 참조하세요.
 
-## <a name="push_back"></a> push_back
+## <a name="push_back"></a>push_back
 
 벡터 끝에 요소를 추가합니다.
 
@@ -1548,7 +1548,7 @@ void push_back(T&& Val);
 
 ### <a name="parameters"></a>매개 변수
 
-*짧은*\
+*Val* \
 벡터의 끝에 추가된 요소에 할당할 값입니다.
 
 ### <a name="example"></a>예제
@@ -1604,7 +1604,7 @@ const_reverse_iterator rbegin() const;
 
 역방향 벡터에서 첫 번째 요소의 주소를 지정하거나 정방향 벡터에서 마지막 요소의 주소를 지정하는 역방향 임의 액세스 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `rbegin`의 반환 값이 `const_reverse_iterator`로 할당되는 경우, 벡터 개체는 수정할 수 없습니다. `rbegin`의 반환 값이 `reverse_iterator`에 할당되는 경우에는 vector 개체를 수정할 수 있습니다.
 
@@ -1666,7 +1666,7 @@ reverse_iterator rend();
 
 역방향 벡터에서 마지막 요소 다음의 위치(정방향 벡터의 첫 번째 요소 앞의 위치) 주소를 지정하는 역방향 임의 액세스 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `rend`는 벡터에서 [end](#end)가 사용되는 것처럼 역방향 벡터에 사용됩니다.
 
@@ -1713,7 +1713,7 @@ void reserve(size_type count);
 
 ### <a name="parameters"></a>매개 변수
 
-*수*\
+*개수* \
 벡터에 대해 할당할 최소 스토리지 길이입니다.
 
 ### <a name="example"></a>예제
@@ -1755,13 +1755,13 @@ void resize(size_type Newsize, Type Val);
 
 ### <a name="parameters"></a>매개 변수
 
-*Newsize*\
+*Newsize* \
 벡터의 새 크기입니다.
 
-*짧은*\
+*Val* \
 새 크기가 원래 크기보다 큰 경우 벡터에 추가된 새 요소의 초기화 값입니다. 이 값이 생략되면 새 개체는 기본 생성자를 사용합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 컨테이너의 크기가 요청 된 크기 보다 작은 경우 *Newsize*는 요청 된 크기에 도달할 때까지 벡터에 추가 됩니다. 컨테이너의 크기가 요청 된 크기 보다 크면 컨테이너가 *Newsize*크기에 도달할 때까지 컨테이너 끝에 가장 가까운 요소가 삭제 됩니다. 컨테이너의 현재 크기와 요청된 크기가 동일하면 아무런 작업도 실행되지 않습니다.
 
@@ -1881,7 +1881,7 @@ int main()
 typedef std::reverse_iterator<iterator> reverse_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `reverse_iterator` 형식은 벡터를 역방향으로 반복하는 데 사용됩니다.
 
@@ -1889,7 +1889,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 [rbegin](#rbegin)의 예제를 참조하세요.
 
-## <a name="shrink_to_fit"></a> shrink_to_fit
+## <a name="shrink_to_fit"></a>shrink_to_fit
 
 여분의 용량을 삭제합니다.
 
@@ -1997,10 +1997,10 @@ friend void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*\
+*오른쪽* \
 교환할 요소를 제공 하는 벡터 또는 해당 요소를 *왼쪽*벡터의 요소와 교환할 벡터입니다.
 
-*비어*\
+*왼쪽* \
 해당 요소를 벡터 *오른쪽*벡터와 교환할 벡터입니다.
 
 ### <a name="example"></a>예제
@@ -2050,9 +2050,9 @@ The number of elements in v2 = 3
 typedef typename Allocator::value_type value_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-`value_type`은 템플릿 매개 변수 `Type`의 동의어입니다.
+`value_type`는 템플릿 매개 변수 `Type`의 동의어입니다.
 
 ### <a name="example"></a>예제
 
@@ -2098,38 +2098,38 @@ vector(InputIterator First, InputIterator Last, const Allocator& Al);
 
 ### <a name="parameters"></a>매개 변수
 
-*항상*\
+*Al* \
 이 개체에 사용할 할당자 클래스입니다. [get_allocator](#get_allocator)는 개체에 대한 할당자 클래스를 반환합니다.
 
-*수*\
+*개수* \
 생성된 벡터에 있는 요소의 수입니다.
 
-*짧은*\
+*Val* \
 생성된 벡터에 있는 요소의 값입니다.
 
-*오른쪽*\
+*오른쪽* \
 해당 복사본으로 벡터를 생성할 벡터입니다.
 
-*기본*\
+*첫 번째* \
 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*최신*\
+*마지막* \
 복사할 요소의 범위를 벗어난 첫 번째 요소의 위치입니다.
 
-*IList*\
+*IList* \
 복사할 요소를 포함하는 initializer_list입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 모든 생성자는 할당자 개체 (*Al*)를 저장 하 고 벡터를 초기화 합니다.
 
 처음 두 생성자는 빈 초기 벡터를 지정합니다. 두 번째는 사용할 할당자 형식 (*Al*)을 명시적으로 지정 합니다.
 
-세 번째 생성자는 클래스 `Type`에 대 한 기본값의 요소에 대해 지정 된 수 (*개수*)의 반복을 지정 합니다.
+세 번째 생성자는 `Type` 클래스에 대 한 기본값 요소의 지정 된 수 (*개수*)를 반복 하 여 지정 합니다.
 
 네 번째 및 다섯 번째 생성자는 값 *Val*의 (*Count*) 요소 반복을 지정 합니다.
 
-여섯 번째 생성자 *는 벡터의*복사본을 지정 합니다.
+여섯 번째 생성자는 벡터의 복사본을 지정 *합니다.*
 
 일곱 번째 생성자는 벡터를 *오른쪽*으로 이동 합니다.
 
@@ -2232,7 +2232,7 @@ int main()
 v1 = 0 0 0v2 = 2 2 2 2 2v3 = 1 1 1v4 = 2 2 2 2 2v5 = 0 1 2 3 4v6 = 1 2v7 = 2 2 2 2 21 2 3 4
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

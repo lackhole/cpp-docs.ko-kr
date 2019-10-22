@@ -22,16 +22,16 @@ helpviewer_keywords:
 - std::collate [C++], hash
 - std::collate [C++], transform
 ms.assetid: 92168798-9628-4a2e-be6e-fa62dcd4d6a6
-ms.openlocfilehash: c506a6a2e1e2c0610f8a6129d2bfb42f762e998a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 88b04ad4f14faf4d152c0ce2b9c3477928263c52
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458596"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689818"
 ---
 # <a name="collate-class"></a>collate 클래스
 
-문자열 내 문자의 정렬 및 그룹화, 문자열 간의 비교, 문자열 해싱을 제어하는 로캘 패싯으로 사용할 수 있는 개체를 설명하는 템플릿 클래스입니다.
+문자열 내의 문자 순서 지정 및 그룹화, 문자열 간의 비교, 문자열 해시 등을 제어 하기 위해 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,16 +42,16 @@ class collate : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*\
+*Chartype* \
 문자를 인코딩하기 위해 프로그램 내 사용하는 형식
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 모든 로캘 패싯과 마찬가지로, 고정 개체 ID에는 초기값 0이 저장되어 있습니다. 저장된 값에 액세스를 처음 시도하면 `id`에 고유한 양수 값이 저장됩니다. 일부 언어에서는 문자가 그룹화되고 단일 문자로 취급되며, 다른 언어에서는 개별 문자가 두 문자인 것처럼 취급됩니다. collate 클래스에서 제공하는 데이터 정렬 서비스는 이러한 경우를 정렬하는 방법을 제공합니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|Description|
+|생성자|설명|
 |-|-|
 |[collate](#collate)|문자열 정렬 규칙을 처리할 로캘 패싯으로 사용할 `collate` 클래스 개체의 생성자입니다.|
 
@@ -64,7 +64,7 @@ class collate : public locale::facet;
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|Description|
+|멤버 함수|설명|
 |-|-|
 |[compare](#compare)|패싯별 규칙에 따라 두 문자 시퀀스의 같음 또는 동등성을 비교합니다.|
 |[do_compare](#do_compare)|패싯별 규칙에 따라 두 문자 시퀀스를 비교하기 위해 가상 함수를 호출하여 두 문자 시퀀스의 같음 또는 동등성을 비교합니다.|
@@ -87,7 +87,7 @@ class collate : public locale::facet;
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 템플릿 매개 변수 `CharType`의 동의어입니다.
 
@@ -111,18 +111,18 @@ const char* _Locname,
 *참조 (_s)* \
 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
-*_Locname*\
+*_Locname* \
 로캘 이름입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 *_Refs* 매개 변수에 사용할 수 있는 값은 다음과 같습니다.
 
-- 0: 개체의 수명은이를 포함 하는 로캘로 관리 됩니다.
+- 0: 개체를 포함하는 로캘에 의해 개체의 수명이 관리됩니다.
 
-- 1: 개체의 수명은 수동으로 관리 해야 합니다.
+- 1: 개체의 수명을 수동으로 관리해야 합니다.
 
-- \> 1: 이러한 값은 정의 되지 않습니다.
+- \> 1: 이러한 값이 정의 되어 있지 않습니다.
 
 생성자는 **locale::** [facet](../standard-library/locale-class.md#facet_class)(`_Refs`)를 사용 하 여 해당 기본 개체를 초기화 합니다.
 
@@ -139,16 +139,16 @@ int compare(const CharType* first1,
 
 ### <a name="parameters"></a>매개 변수
 
-*first1*\
+*first1* \
 비교할 첫 번째 시퀀스의 첫 번째 요소에 대한 포인터입니다.
 
-*last1*\
+*last1* \
 비교할 첫 번째 시퀀스의 마지막 요소에 대한 포인터입니다.
 
-*first2*\
+*first2* \
 비교할 두 번째 시퀀스의 첫 번째 요소에 대한 포인터입니다.
 
-*last2*\
+*last2* \
 비교할 두 번째 시퀀스의 마지막 요소에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -161,7 +161,7 @@ int compare(const CharType* first1,
 
 - 시퀀스가 같은 경우, 0
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 시퀀스 내에서 가장 앞의 서로 다른 쌍에 더 작은 요소가 있는 경우 또는 서로 다른 쌍이 없지만 첫 번째 시퀀스가 더 짧은 경우 첫 번째 시퀀스는 더 작은 것으로 비교됩니다.
 
@@ -205,16 +205,16 @@ virtual int do_compare(const CharType* first1,
 
 ### <a name="parameters"></a>매개 변수
 
-*first1*\
+*first1* \
 비교할 첫 번째 시퀀스의 첫 번째 요소에 대한 포인터입니다.
 
-*last1*\
+*last1* \
 비교할 첫 번째 시퀀스의 마지막 요소에 대한 포인터입니다.
 
-*first2*\
+*first2* \
 비교할 두 번째 시퀀스의 첫 번째 요소에 대한 포인터입니다.
 
-*last2*\
+*last2* \
 비교할 두 번째 시퀀스의 마지막 요소에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -227,9 +227,9 @@ virtual int do_compare(const CharType* first1,
 
 - 시퀀스가 같은 경우, 0
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-보호 된 가상 멤버 함수는 [* first1, Last1) *의 시퀀스를 *[first2, last2*)의 시퀀스와 비교 합니다. `operator<` 형식`CharType`의 해당 요소 쌍 사이에를 적용 하 여 값을 비교 합니다. 시퀀스 내에서 가장 앞의 서로 다른 쌍에 더 작은 요소가 있는 경우 또는 서로 다른 쌍이 없지만 첫 번째 시퀀스가 더 짧은 경우 첫 번째 시퀀스는 더 작은 것으로 비교됩니다.
+보호 된 가상 멤버 함수는 [* first1, Last1) *의 시퀀스를 *[first2, last2*)의 시퀀스와 비교 합니다. @No__t_1 형식의 해당 요소 쌍 사이에 `operator<`를 적용 하 여 값을 비교 합니다. 시퀀스 내에서 가장 앞의 서로 다른 쌍에 더 작은 요소가 있는 경우 또는 서로 다른 쌍이 없지만 첫 번째 시퀀스가 더 짧은 경우 첫 번째 시퀀스는 더 작은 것으로 비교됩니다.
 
 ### <a name="example"></a>예제
 
@@ -245,17 +245,17 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 결정할 값이 있는 시퀀스의 첫 번째 문자에 대한 포인터입니다.
 
-*최신*\
+*마지막* \
 결정할 값이 있는 시퀀스의 마지막 문자에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
 시퀀스에 대한 **long** 형식의 해시 값입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 해시 값은 목록의 배열에 의사(pseudo) 임의로 시퀀스를 분산하는 경우 등에 유용할 수 있습니다.
 
@@ -273,17 +273,17 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 변환할 시퀀스의 첫 번째 문자에 대한 포인터입니다.
 
-*최신*\
+*마지막* \
 변환할 시퀀스의 마지막 문자에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
 변환된 문자 시퀀스인 문자열입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 보호된 가상 멤버 함수는 제어된 시퀀스가 시퀀스 [`first`, `last`)의 복사본인 [string_type](#string_type) 클래스의 개체를 반환합니다. collate\< **CharType**>에서 파생된 클래스가 [do_compare](#do_compare)를 재정의하는 경우 `do_transform`도 일치하도록 재정의해야 합니다. `collate::compare`에 전달된 경우 두 개의 변형된 문자열은 파생된 클래스에서 비교할 변환되지 않은 문자열을 전달하여 얻을 수 있는 것과 동일한 결과를 생성해야 합니다.
 
@@ -301,17 +301,17 @@ long hash(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 결정할 값이 있는 시퀀스의 첫 번째 문자에 대한 포인터입니다.
 
-*최신*\
+*마지막* \
 결정할 값이 있는 시퀀스의 마지막 문자에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
 시퀀스에 대한 **long** 형식의 해시 값입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 [do_hash](#do_hash)(`first`, `last`)를 반환합니다.
 
@@ -353,9 +353,9 @@ int main( )
 typedef basic_string<CharType> string_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 개체가 소스 시퀀스의 복사본을 저장할 수 있는 템플릿 클래스 [basic_string](../standard-library/basic-string-class.md)의 특수화를 설명합니다.
+이 형식은 개체가 소스 시퀀스의 복사본을 저장할 수 있는 클래스 템플릿 [basic_string](../standard-library/basic-string-class.md) 의 특수화를 설명 합니다.
 
 ### <a name="example"></a>예제
 
@@ -371,19 +371,19 @@ string_type transform(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 변환할 시퀀스의 첫 번째 문자에 대한 포인터입니다.
 
-*최신*\
+*마지막* \
 변환할 시퀀스의 마지막 문자에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
 변환된 문자 시퀀스가 포함된 문자열입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수는 [do_transform](#do_transform)(`first`, `last`)를 반환 합니다.
+멤버 함수는 [do_transform](#do_transform)(`first`, `last`)을 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -427,7 +427,7 @@ int main( )
 -1-11
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<locale>](../standard-library/locale.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

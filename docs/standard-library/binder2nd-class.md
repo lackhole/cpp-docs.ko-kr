@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - binder2nd class
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
-ms.openlocfilehash: 5f59887e6c9d2965a6c8680f17a40c5bd93869c0
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 46c8bb2ae450b3ef56f2729717fb9b5563a7c139
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243351"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689943"
 ---
 # <a name="binder2nd-class"></a>binder2nd 클래스
 
-이항 함수의 두 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 생성자를 제공하는 템플릿 클래스입니다. C++17에서 제거 하는 C + + 11에서 사용 되지 않습니다.
+이항 함수의 두 번째 인수를 지정 된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환 하는 생성자를 제공 하는 클래스 템플릿입니다. C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,24 +38,24 @@ class binder2nd
 
 ### <a name="parameters"></a>매개 변수
 
-*Func*\
+*Func* \
 단항 함수 개체로 변환할 이항 함수 개체입니다.
 
-*오른쪽*\
+*오른쪽* \
 이항 함수 개체의 두 번째 인수가 바인딩되는 값입니다.
 
-*왼쪽*\
+*왼쪽* \
 수정된 이진 개체를 두 번째 인수의 고정 값과 비교하는 인수의 값입니다.
 
 ## <a name="return-value"></a>반환 값
 
-두 번째 인수에 바인딩할 때 이항 함수 개체의 값을 결과로 생성 되는 단항 함수 개체로 *오른쪽*합니다.
+이항 함수 개체의 두 번째 인수를 값 *오른쪽*에 바인딩하여 생성 되는 단항 함수 개체입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-이항 함수 개체 _의 복사본을 저장 하는 템플릿 클래스 *Func* 에서 `op`, 및 사본을 *오른쪽* 에서 `value`합니다. 해당 멤버 함수를 정의 `operator()` 반환 **op**(`left`하십시오 **값**).
+클래스 템플릿은 `op`에 이진 함수 개체 _ *Func* 의 복사본을 저장 하 고 `value`에 *right* 의 복사본을 저장 합니다. 이 함수는 **op**(`left`, **value**)를 반환 하는 `operator()` 멤버 함수를 정의 합니다.
 
-경우 `Func` 형식의 개체인 `Operation` c가 상수 이면 및 [bind2nd](../standard-library/functional-functions.md#bind2nd) (`Func`를 `c`) 해당 하는 `binder2nd` 클래스 생성자 `binder2nd` \<  **작업이**> (`Func`, `c`)이 고 더 편리 합니다.
+@No__t_0이 `Operation` 형식의 개체이 고 c가 상수인 경우 [bind2nd](../standard-library/functional-functions.md#bind2nd) (`Func`, `c`)는 `binder2nd` class 생성자 **`binder2nd` \< (** >) `Func`)와 동일 합니다.
 
 ## <a name="example"></a>예제
 

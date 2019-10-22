@@ -38,14 +38,14 @@ helpviewer_keywords:
 - std::regex_traits [C++], imbue
 - std::regex_traits [C++], getloc
 ms.assetid: bc5a5eed-32fc-4eb7-913d-71c42e729e81
-ms.openlocfilehash: a34346b4fc15beb605836037ef8a05a541562f33
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 2a04e0f1c202717bb6d40a10f07475d78453ffd7
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451516"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689041"
 ---
-# <a name="regextraits-class"></a>regex_traits 클래스
+# <a name="regex_traits-class"></a>regex_traits 클래스
 
 일치를 위해 요소의 특징을 설명합니다.
 
@@ -58,18 +58,18 @@ class regex_traits
 
 ## <a name="parameters"></a>매개 변수
 
-*E*\
+*Elem* \
 설명할 문자 요소 형식입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-템플릿 클래스는 *Elem*형식에 대 한 다양 한 정규식 특성을 설명 합니다. 템플릿 클래스 [Basic_regex 클래스](../standard-library/basic-regex-class.md) 는이 정보를 사용 하 여 *Elem*형식의 요소를 조작 합니다.
+클래스 템플릿은 *Elem*형식에 대 한 다양 한 정규식 특성을 설명 합니다. 클래스 템플릿 [Basic_regex 클래스](../standard-library/basic-regex-class.md) 는이 정보를 사용 하 여 *Elem*형식의 요소를 조작 합니다.
 
 각 `regex_traits` 개체는 일부 멤버 함수에서 사용되는 `regex_traits::locale` 형식의 개체를 보유합니다. 기본 로캘은 `regex_traits::locale()`의 복사본입니다. 멤버 함수 `imbue` 는 로캘 개체를 대체하고, 멤버 함수 `getloc` 는 로캘 개체의 복사본을 반환합니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|Description|
+|생성자|설명|
 |-|-|
 |[regex_traits](#regex_traits)|개체를 생성합니다.|
 
@@ -95,7 +95,7 @@ class regex_traits
 |[lookup_collatename](#lookup_collatename)|데이터 정렬 요소에 시퀀스를 매핑합니다.|
 |[transform](#transform)|정렬된 해당 시퀀스로 변환합니다.|
 |[transform_primary](#transform_primary)|정렬된 해당 caseless 시퀀스로 변환합니다.|
-|[translate](#translate)|일치하는 해당 요소로 변환합니다.|
+|[번역하기](#translate)|일치하는 해당 요소로 변환합니다.|
 |[translate_nocase](#translate_nocase)|해당 caseless 일치하는 요소로 변환합니다.|
 |[value](#value)|요소를 숫자 값으로 변환합니다.|
 
@@ -183,7 +183,7 @@ hex C == 12
 typedef T8 char_class_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 형식은 문자 클래스를 지정하는 지정되지 않은 형식의 동의어입니다. `|` 연산자를 사용하여 이 형식의 값을 결합하면 피연산자가 지정한 클래스의 합집합인 문자 클래스를 지정할 수 있습니다.
 
@@ -195,7 +195,7 @@ typedef T8 char_class_type;
 typedef Elem char_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 typedef는 템플릿 인수 `Elem`의 동의어입니다.
 
@@ -207,7 +207,7 @@ typedef는 템플릿 인수 `Elem`의 동의어입니다.
 locale_type getloc() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 저장된 `locale` 개체를 반환합니다.
 
@@ -221,12 +221,12 @@ locale_type imbue(locale_type loc);
 
 ### <a name="parameters"></a>매개 변수
 
-*loc*\
+*loc* \
 저장할 로캘 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수는 저장  `locale` 된 개체에 loc를 복사 하 고 저장 `locale` 된 개체의 이전 값의 복사본을 반환 합니다.
+멤버 함수는 저장 된 `locale` 개체에 *loc* 를 복사 하 고 저장 된 `locale` 개체의 이전 값의 복사본을 반환 합니다.
 
 ## <a name="isctype"></a>  regex_traits::isctype
 
@@ -238,13 +238,13 @@ bool isctype(char_type ch, char_class_type cls) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*\
+*ch* \
 테스트할 요소입니다.
 
-*ls*\
+*cls* \
 테스트할 클래스입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 문자 *ch* 가 *cls*로 지정 된 문자 클래스에 있는 경우에만 true를 반환 합니다.
 
@@ -258,10 +258,10 @@ static size_type length(const char_type *str);
 
 ### <a name="parameters"></a>매개 변수
 
-*문자열*\
+*str* \
 Null로 끝나는 시퀀스입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 정적 멤버 함수는 `std::char_traits<char_type>::length(str)`를 반환합니다.
 
@@ -273,9 +273,9 @@ Null로 끝나는 시퀀스입니다.
 typedef T7 locale_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-typedef는 로캘을 캡슐화하는 형식의 동의어입니다. 특수화 `regex_traits<char>` 및 `regex_traits<wchar_t>`에서 `std::locale`의 동의어입니다.
+typedef는 로캘을 캡슐화하는 형식의 동의어입니다. 특수화 `regex_traits<char>` 및 `regex_traits<wchar_t>` 에서 `std::locale`의 동의어입니다.
 
 ## <a name="lookup_classname"></a>  regex_traits::lookup_classname
 
@@ -288,13 +288,13 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 조회할 시퀀스의 시작입니다.
 
-*최신*\
+*마지막* \
 조회할 시퀀스의 끝입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 해당 인수가 가리키는 문자 시퀀스로 이름이 지정된 문자 클래스를 지정하는 값을 반환합니다. 값은 시퀀스에 있는 문자의 대/소문자에 따라 달라지지 않습니다.
 
@@ -313,13 +313,13 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 조회할 시퀀스의 시작입니다.
 
-*최신*\
+*마지막* \
 조회할 시퀀스의 끝입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 `[first, last)`시퀀스에 해당하는 데이터 정렬 요소를 포함하는 문자열 개체를 반환하거나, 시퀀스가 유효한 데이터 정렬 요소가 아닌 경우 빈 문자열을 반환합니다.
 
@@ -331,7 +331,7 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 regex_traits();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 생성자는 저장된 `locale` 개체가 기본 로캘로 초기화되는 개체를 생성합니다.
 
@@ -343,9 +343,9 @@ regex_traits();
 typedef T6 size_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-typedef는 부호 없는 정수 형식의 동의어입니다. 특수화 `regex_traits<char>` 및 `regex_traits<wchar_t>`에서 `std::size_t`의 동의어입니다.
+typedef는 부호 없는 정수 형식의 동의어입니다. 특수화 `regex_traits<char>` 및 `regex_traits<wchar_t>` 에서 `std::size_t`의 동의어입니다.
 
 typedef는 `std::size_t`의 동의어입니다.
 
@@ -357,7 +357,7 @@ typedef는 `std::size_t`의 동의어입니다.
 typedef basic_string<Elem> string_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 typedef는 `basic_string<Elem>`의 동의어입니다.
 
@@ -372,13 +372,13 @@ string_type transform(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 변환할 시퀀스의 시작입니다.
 
-*최신*\
+*마지막* \
 변환할 시퀀스의 끝입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 저장된 `locale` 개체에 따라 달라지는 변환 규칙을 사용하여 생성하는 문자열을 반환합니다. 반복기 범위 `[first1, last1)` 및 `[first2, last2)`로 지정된 두 문자 시퀀스에 대해, 반복기 범위 `transform(first1, last1) < transform(first2, last2)` 로 지정된 문자 시퀀스가 반복기 범위 `[first1, last1)` 로 지정된 문자 시퀀스보다 먼저 정렬되면 `[first2, last2)`입니다.
 
@@ -393,13 +393,13 @@ string_type transform_primary(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 변환할 시퀀스의 시작입니다.
 
-*최신*\
+*마지막* \
 변환할 시퀀스의 끝입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 저장된 `locale` 개체에 따라 달라지는 변환 규칙을 사용하여 생성하는 문자열을 반환합니다. 반복기 범위 `[first1, last1)` 및 `[first2, last2)`로 지정된 두 문자 시퀀스에 대해, 반복기 범위 `transform_primary(first1, last1) < transform_primary(first2, last2)` 로 지정된 문자 시퀀스가 대/소문자 또는 악센트에 관계없이 반복기 범위 `[first1, last1)` 로 지정된 문자 시퀀스보다 먼저 정렬되면 `[first2, last2)` 입니다.
 
@@ -413,10 +413,10 @@ char_type translate(char_type ch) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*\
+*ch* \
 변환할 요소입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 저장된 `locale` 개체에 따라 달라지는 변환 규칙을 사용하여 생성하는 문자를 반환합니다. 두 `char_type` 개체 `ch1` 및 `ch2`의 경우 하나는 정규식 정의에 나타나고 다른 하나는 대/소문자를 구분하는 일치에 대한 대상 시퀀스의 해당 위치에 나타날 때 `translate(ch1) == translate(ch2)` 및 `ch1` 가 일치해야 하는 경우에만 `ch2` 입니다.
 
@@ -430,10 +430,10 @@ char_type translate_nocase(char_type ch) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*\
+*ch* \
 변환할 요소입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 저장된 `locale` 개체에 따라 달라지는 변환 규칙을 사용하여 생성하는 문자를 반환합니다. 두 `char_type` 개체 `ch1` 및 `ch2`의 경우 하나는 정규식 정의에 나타나고 다른 하나는 대/소문자를 구분하지 않는 일치에 대한 대상 시퀀스의 해당 위치에 나타날 때 `translate_nocase(ch1) == translate_nocase(ch2)` 및 `ch1` 가 일치해야 하는 경우에만 `ch2` 입니다.
 
@@ -447,25 +447,25 @@ int value(Elem ch, int radix) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*ch*\
+*ch* \
 변환할 요소입니다.
 
-*기 수*\
+*기* \
 사용할 기본 산술입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 기본 *기*수에서 *ch* 문자로 표시 되는 값을 반환 하거나, *ch* 가 기본 *기*수의 유효한 숫자가 아닌 경우-1을 반환 합니다. 함수는 8, 10 또는 16의 *기* 수 인수로만 호출 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<regex>](../standard-library/regex.md)\
-[regex_constants 클래스](../standard-library/regex-constants-class.md)\
-[regex_error 클래스](../standard-library/regex-error-class.md)\
-[\<regex > 함수](../standard-library/regex-functions.md)\
-[regex_iterator 클래스](../standard-library/regex-iterator-class.md)\
-[\<regex > 연산자](../standard-library/regex-operators.md)\
-[regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md)\
-[\<regex > typedef](../standard-library/regex-typedefs.md)\
+[Regex_constants 클래스](../standard-library/regex-constants-class.md) \
+[Regex_error 클래스](../standard-library/regex-error-class.md) \
+[> 함수를 \<regex](../standard-library/regex-functions.md) \
+[Regex_iterator 클래스](../standard-library/regex-iterator-class.md) \
+[> 연산자를 \<regex](../standard-library/regex-operators.md) \
+[Regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md) \
+[\<regex > typedef](../standard-library/regex-typedefs.md) \
 [regex_traits\<char> 클래스](../standard-library/regex-traits-char-class.md)\
 [regex_traits\<wchar_t> 클래스](../standard-library/regex-traits-wchar-t-class.md)
