@@ -1,4 +1,4 @@
----
+﻿---
 title: '&lt;algorithm&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
@@ -241,13 +241,13 @@ ForwardIterator adjacent_find(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
 *pred*\
@@ -348,13 +348,13 @@ bool all_of(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 조건 검사의 시작 위치를 나타내는 입력 반복기입니다. 반복기는 요소 범위의 시작 위치를 표시합니다.
 
-*최신*\
+*last*\
 조건을 검사할 요소 범위의 끝을 나타내는 입력 반복기입니다.
 
 *pred*\
@@ -424,13 +424,13 @@ bool any_of(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 조건에 대한 요소 범위 확인의 시작 위치를 나타내는 입력 반복기입니다.
 
-*최신*\
+*last*\
 조건을 검사할 요소 범위의 끝을 나타내는 입력 반복기입니다.
 
 *pred*\
@@ -501,10 +501,10 @@ bool binary_search(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
 *value*\
@@ -619,7 +619,7 @@ Ordered using mod_lesser, vector v1 = ( 0 -1 1 -2 2 3 4 )
 There is an element with a value equivalent to -3 under mod_lesser.
 ```
 
-## <a name="clamp"></a>클램프
+## <a name="clamp"></a>clamp
 
 값을 상한 및 하 한과 비교 하 고, 범위 사이에 있는 경우 값에 대 한 참조를 반환 하 고, 값이 각각 위나 아래에 있는 경우에는 상한 또는 하 한에 대 한 참조를 반환 합니다.
 
@@ -643,10 +643,10 @@ constexpr const Type& clamp(
 *value*\
 *위와* *아래*와 비교할 값입니다.
 
-*작을*\
+*lower*\
 clamp *값* 에 대 한 값의 하 한입니다.
 
-*위의*\
+*upper*\
 clamp *값* 에 대 한 값의 상한입니다.
 
 *pred*\
@@ -660,7 +660,7 @@ clamp *값* 에 대 한 값의 상한입니다.
 
 *Upper* 가 *lower*보다 작으면 동작이 정의 되지 않습니다.
 
-## <a name="copy"></a>복사
+## <a name="copy"></a>copy
 
 소스 범위의 요소를 대상 범위에 할당하여 요소의 소스 시퀀스 전체에서 반복하고 정방향으로 새 위치를 할당합니다.
 
@@ -681,13 +681,13 @@ ForwardIterator2 copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 원본 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*최신*\
+*last*\
 소스 범위에 있는 마지막 요소의 하나 다음 위치를 가리키는 입력 반복기입니다.
 
 *destBeg*\
@@ -777,10 +777,10 @@ BidirectionalIterator2 copy_backward(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 소스 범위의 첫 번째 요소의 위치를 주소 지정하는 양방향 반복기입니다.
 
-*최신*\
+*last*\
 소스 범위에 있는 마지막 요소의 하나 다음 위치를 가리키는 양방향 반복기입니다.
 
 *destEnd*\
@@ -883,13 +883,13 @@ ForwardIterator2 copy_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 조건을 검사할 범위의 시작을 나타내는 입력 반복기입니다.
 
-*최신*\
+*last*\
 범위의 끝을 나타내는 입력 반복기입니다.
 
 *dest*\
@@ -986,13 +986,13 @@ ForwardIterator2 copy_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 요소를 복사할 원본 위치를 나타내는 입력 반복기입니다.
 
-*수*\
+*count*\
 복사할 요소의 수를 지정하는 부호 있는/부호 없는 정수 형식입니다.
 
 *dest*\
@@ -1035,7 +1035,7 @@ int main()
 dandelion + badger = danger
 ```
 
-## <a name="count"></a>수
+## <a name="count"></a>count
 
 해당 값이 지정된 값과 일치하는 요소의 개수를 반환합니다.
 
@@ -1057,13 +1057,13 @@ count(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 트래버스할 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*최신*\
+*last*\
 트래버스할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
 *value*\
@@ -1138,13 +1138,13 @@ count_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*최신*\
+*last*\
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 입력 반복기입니다.
 
 *pred*\
@@ -1201,7 +1201,7 @@ v1 = ( 10 20 10 40 10 )
 The number of elements in v1 greater than 10 is: 2.
 ```
 
-## <a name="equal"></a>다릅니다
+## <a name="equal"></a>equal
 
 두 범위를 요소별로 비교하여 같음 여부 또는 이진 조건자가 지정한 의미의 동등성을 확인합니다.
 
@@ -1273,7 +1273,7 @@ bool equal(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -1357,10 +1357,10 @@ pair<ForwardIterator, ForwardIterator> equal_range(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
 *value*\
@@ -1502,7 +1502,7 @@ int main()
 }
 ```
 
-## <a name="fill"></a>칠할
+## <a name="fill"></a>fill
 
 지정한 범위의 모든 요소에 동일한 새 값을 할당합니다.
 
@@ -1523,13 +1523,13 @@ void fill(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 트래버스할 범위 내 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 트래버스할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 정방향 반복기입니다.
 
 *value*\
@@ -1601,13 +1601,13 @@ ForwardIterator fill_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 값 *값*을 할당할 범위 내 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기입니다.
 
-*수*\
+*count*\
 값을 할당할 요소의 수를 지정하는 부호 있는/부호 없는 정수 형식입니다.
 
 *value*\
@@ -1669,7 +1669,7 @@ int main()
 }
 ```
 
-## <a name="find"></a>찾아낼
+## <a name="find"></a>find
 
 범위에서 지정된 값을 가진 요소가 첫 번째로 나타나는 위치를 찾습니다.
 
@@ -1690,13 +1690,13 @@ ForwardIterator find(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 지정된 값을 검색할 범위 내 첫 번째 요소의 위치 주소를 지정하는 입력 반복기입니다
 
-*최신*\
+*last*\
 지정된 값을 검색할 범위 내 마지막 요소 하나 다음의 위치 주소를 지정하는 입력 반복기입니다.
 
 *value*\
@@ -2063,10 +2063,10 @@ ForwardIterator find_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*최신*\
+*last*\
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 입력 반복기입니다.
 
 *pred*\
@@ -2185,10 +2185,10 @@ ForwardIterator find_if_not(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*최신*\
+*last*\
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 입력 반복기입니다.
 
 *pred*\
@@ -2225,10 +2225,10 @@ void for_each(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 작업을 수행할 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*최신*\
+*last*\
 작업을 수행할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
 *func*\
@@ -2376,7 +2376,7 @@ ForwardIterator for_each_n(
     Function f);
 ```
 
-## <a name="generate"></a>만드는
+## <a name="generate"></a>generate
 
 범위에 있는 각 요소에 함수 개체에 의해 생성된 값을 할당합니다.
 
@@ -2396,13 +2396,13 @@ void generate(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 값을 할당할 범위에서 첫 번째 요소의 주소를 지정하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 값을 할당할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*차세대*\
+*gen*\
 인수 없이 호출되는 함수 개체로, 범위 내 각 요소에 할당되는 값을 생성하는 데 사용됩니다.
 
 ### <a name="remarks"></a>설명
@@ -2477,16 +2477,16 @@ ForwardIterator generate_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 값이 할당된 범위 내 첫 번째 요소의 주소를 지정하는 출력 반복기입니다
 
-*수*\
+*count*\
 생성기 함수를 통해 값이 할당되는 요소 수를 지정하는 부호가 있거나 없는 정수 형식입니다.
 
-*차세대*\
+*gen*\
 인수 없이 호출되는 함수 개체로, 범위 내 각 요소에 할당되는 값을 생성하는 데 사용됩니다.
 
 ### <a name="remarks"></a>설명
@@ -2542,7 +2542,7 @@ int main()
 }
 ```
 
-## <a name="includes"></a>내용이
+## <a name="includes"></a>includes
 
 요소 간 순서 지정 또는 동등성 기준을 이진 조건자로 지정할 수 있을 경우 하나의 정렬된 범위가 두 번째 정렬된 범위에 포함된 모든 요소를 포함할 수 있는지 여부를 테스트합니다.
 
@@ -2582,7 +2582,7 @@ bool includes(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -2803,16 +2803,16 @@ void inplace_merge(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 단일 범위로 결합하고 정렬할 두 개의 정렬된 연속 소스 범위 중 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*중간*\
+*middle*\
 단일 범위로 결합하고 정렬할 두 개의 정렬된 연속 소스 범위 중 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*최신*\
+*last*\
 단일 범위로 결합하고 정렬할 두 개의 정렬된 연속 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 양방향 반복기입니다.
 
 *pred*\
@@ -2969,13 +2969,13 @@ bool is_heap(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 힙을 검사할 범위의 시작을 나타내는 임의 액세스 반복기입니다.
 
-*최신*\
+*last*\
 범위의 끝을 나타내는 임의 액세스 반복기입니다.
 
 *pred*\
@@ -3025,13 +3025,13 @@ RandomAccessIterator is_heap_until(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 힙에 대해 확인할 범위의 첫 번째 요소를 지정하는 임의 액세스 반복기입니다.
 
-*최신*\
+*last*\
 힙에 대해 확인할 범위의 끝을 지정하는 임의 액세스 반복기입니다.
 
 *pred*\
@@ -3068,13 +3068,13 @@ bool is_partitioned(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 범위에서 조건 검사의 시작 위치를 나타내는 입력 반복기입니다.
 
-*최신*\
+*last*\
 범위의 끝을 나타내는 입력 반복기입니다.
 
 *pred*\
@@ -3240,13 +3240,13 @@ bool is_sorted(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 검사할 범위가 시작되는 위치를 나타내는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 범위의 끝을 나타내는 정방향 반복기입니다.
 
 *pred*\
@@ -3292,13 +3292,13 @@ ForwardIterator is_sorted_until(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 검사할 범위가 시작되는 위치를 나타내는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 범위의 끝을 나타내는 정방향 반복기입니다.
 
 *pred*\
@@ -3325,10 +3325,10 @@ void iter_swap( ForwardIterator1 left, ForwardIterator2 right );
 
 ### <a name="parameters"></a>매개 변수
 
-*비어*\
+*left*\
 값을 교환할 정방향 반복기 중 하나입니다.
 
-*오른쪽*\
+*right*\
 값을 교환할 정방향 반복기 중 두 번째입니다.
 
 ### <a name="remarks"></a>설명
@@ -3510,7 +3510,7 @@ bool lexicographical_compare(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -3658,10 +3658,10 @@ ForwardIterator lower_bound(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
 *value*\
@@ -3795,10 +3795,10 @@ void make_heap(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 힙으로 변환할 범위에서 첫 번째 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*최신*\
+*last*\
 힙으로 변환할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
 *pred*\
@@ -3858,7 +3858,7 @@ int main() {
 }
 ```
 
-## <a name="max"></a>최대값
+## <a name="max"></a>max
 
 두 개체를 비교하고 둘 중 큰 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -3883,10 +3883,10 @@ constexpr Type& max(
 
 ### <a name="parameters"></a>매개 변수
 
-*비어*\
+*left*\
 비교되는 두 개체 중 첫 번째입니다.
 
-*오른쪽*\
+*right*\
 비교되는 두 개체 중 두 번째입니다.
 
 *pred*\
@@ -4103,13 +4103,13 @@ ForwardIterator max_element(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 최대 요소를 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 최대 요소를 검색할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 정방향 반복기입니다.
 
 *pred*\
@@ -4225,7 +4225,7 @@ int main()
 }
 ```
 
-## <a name="merge"></a>결합
+## <a name="merge"></a>merge
 
 정렬된 두 소스 범위의 모든 요소를 정렬된 단일 대상 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -4269,7 +4269,7 @@ ForwardIterator merge(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -4284,7 +4284,7 @@ ForwardIterator merge(
 *last2*\
 단일 범위로 결합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*만들어집니다*\
+*result*\
 두 개의 소스 범위가 정렬된 단일 범위로 결합되는 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
 *pred*\
@@ -4420,7 +4420,7 @@ int main() {
 }
 ```
 
-## <a name="min"></a>일별
+## <a name="min"></a>min
 
 두 개체를 비교하고 둘 중 작은 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.
 
@@ -4448,10 +4448,10 @@ constexpr Type min(
 
 ### <a name="parameters"></a>매개 변수
 
-*비어*\
+*left*\
 비교되는 두 개체 중 첫 번째입니다.
 
-*오른쪽*\
+*right*\
 비교되는 두 개체 중 두 번째입니다.
 
 *pred*\
@@ -4667,13 +4667,13 @@ ForwardIterator min_element(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 최소 요소를 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 최소 요소를 검색할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 정방향 반복기입니다.
 
 *pred*\
@@ -4831,13 +4831,13 @@ pair<ForwardIterator, ForwardIterator> minmax_element(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 범위의 시작을 나타내는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 범위의 끝을 나타내는 정방향 반복기입니다.
 
 *pred*\
@@ -4887,10 +4887,10 @@ constexpr pair<Type&, Type&> minmax(
 
 ### <a name="parameters"></a>매개 변수
 
-*비어*\
+*left*\
 비교되는 두 개체 중 첫 번째입니다.
 
-*오른쪽*\
+*right*\
 비교되는 두 개체 중 두 번째입니다.
 
 *pred*\
@@ -4909,7 +4909,7 @@ constexpr pair<Type&, Type&> minmax(
 
 함수는 정확히 하나의 비교를 수행합니다.
 
-## <a name="mismatch"></a>않거나
+## <a name="mismatch"></a>mismatch
 
 두 범위를 요소별로 비교하고 차이가 발생한 첫 번째 위치를 찾습니다.
 
@@ -4987,7 +4987,7 @@ mismatch(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -5114,7 +5114,7 @@ C++14: vec_1 and list_1 are a mismatch: false
 Press a key
 ```
 
-## <a name="alg_move"></a>&lt;alg이동&gt;
+## <a name="alg_move"></a>&lt;alg&gt move;
 
 지정된 범위와 연결된 요소를 이동합니다.
 
@@ -5135,13 +5135,13 @@ ForwardIterator2 move(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 이동할 요소 범위의 시작 위치를 나타내는 입력 반복기입니다.
 
-*최신*\
+*last*\
 이동할 요소 범위의 끝을 나타내는 입력 반복기입니다.
 
 *dest*\
@@ -5165,10 +5165,10 @@ BidirectionalIterator2 move_backward(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 요소를 이동할 범위의 시작을 나타내는 반복기입니다.
 
-*최신*\
+*last*\
 요소를 이동할 범위의 끝을 나타내는 반복기입니다. 이 요소를 이동하지 않습니다.
 
 *destEnd*\
@@ -5199,10 +5199,10 @@ bool next_permutation(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 순열할 범위의 첫 번째 요소 위치의 주소를 가리키는 양방향 반복기입니다.
 
-*최신*\
+*last*\
 순열할 범위의 마지막 요소 하나 다음 위치의 주소를 가리키는 양방향 반복기입니다.
 
 *pred*\
@@ -5395,16 +5395,16 @@ void nth_element(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 파티셔닝할 범위에서 첫 번째 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*제곱근*\
+*nth*\
 파티션 경계에서 올바른 정렬을 위해 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*최신*\
+*last*\
 파티셔닝할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
 *pred*\
@@ -5507,13 +5507,13 @@ bool none_of(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 조건에 대한 요소 범위 확인의 시작 위치를 나타내는 입력 반복기입니다.
 
-*최신*\
+*last*\
 요소 범위의 끝을 나타내는 입력 반복기입니다.
 
 *pred*\
@@ -5563,16 +5563,16 @@ void partial_sort(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 저장할 범위의 첫 번째 요소 위치를 주소 지정하는 임의 액세스 반복기입니다.
 
-*sortEnd 있습니다.* \
+*sortEnd*\
 정렬할 하위 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*최신*\
+*last*\
 부분적으로 정렬할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
 *pred*\
@@ -5698,7 +5698,7 @@ RandomAccessIterator partial_sort_copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -5802,7 +5802,7 @@ int main() {
 }
 ```
 
-## <a name="partition"></a>파티션마다
+## <a name="partition"></a>partition
 
 범위의 요소를 두 개의 연결되지 않은 집합으로 분류하고, 단항 조건자를 만족하는 요소는 만족하지 않는 요소보다 앞에 오도록 합니다.
 
@@ -5823,13 +5823,13 @@ ForwardIterator partition(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 파티셔닝할 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*최신*\
+*last*\
 파티셔닝할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 양방향 반복기입니다.
 
 *pred*\
@@ -5913,13 +5913,13 @@ pair<ForwardIterator1, ForwardIterator2> partition_copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 조건을 검사할 범위의 시작을 나타내는 입력 반복기입니다.
 
-*최신*\
+*last*\
 범위의 끝을 나타내는 입력 반복기입니다.
 
 *dest1*\
@@ -5949,10 +5949,10 @@ ForwardIterator partition_point(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 조건을 검사할 범위의 시작을 나타내는 입력 `ForwardIterator`입니다.
 
-*최신*\
+*last*\
 범위의 끝을 나타내는 `ForwardIterator`입니다.
 
 *pred*\
@@ -5985,10 +5985,10 @@ void pop_heap(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 힙에서 첫 번째 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*최신*\
+*last*\
 힙의 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
 *pred*\
@@ -6094,10 +6094,10 @@ bool prev_permutation(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 순열할 범위의 첫 번째 요소 위치의 주소를 가리키는 양방향 반복기입니다.
 
-*최신*\
+*last*\
 순열할 범위의 마지막 요소 하나 다음 위치의 주소를 가리키는 양방향 반복기입니다.
 
 *pred*\
@@ -6269,10 +6269,10 @@ void push_heap(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 힙에서 첫 번째 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*최신*\
+*last*\
 힙으로 변환할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
 *pred*\
@@ -6367,7 +6367,7 @@ int main() {
 
 Std:: random_shuffle () 함수는 사용 되지 않으며 [std:: 무작위](../standard-library/algorithm-functions.md#shuffle)로 대체 되었습니다. 코드 예제 및 자세한 내용은 [ \<임의 >](../standard-library/random.md) 및 Stack Overflow을 참조 하세요. [c + + 14에서 std:: random_shuffle 메서드가 사용 되지 않는 이유는 무엇 인가요?](https://go.microsoft.com/fwlink/p/?linkid=397954)
 
-## <a name="remove"></a>삭제
+## <a name="remove"></a>remove
 
 나머지 요소의 순서에 영향을 미치거나 지정된 값이 없는 새 범위의 끝을 반환하지 않고 지정된 범위에서 지정된 값을 제거합니다.
 
@@ -6388,13 +6388,13 @@ ForwardIterator remove(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 요소가 제거되는 범위의 첫 번째 요소 위치에 주소를 지정하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 요소가 제거되는 범위의 첫 번째 요소를 벗어난 위치에 주소를 지정하는 정방향 반복기입니다.
 
 *value*\
@@ -6486,16 +6486,16 @@ ForwardIterator2 remove_copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 요소가 제거되는 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*최신*\
+*last*\
 요소가 제거되는 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*만들어집니다*\
+*result*\
 요소가 제거되는 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
 *value*\
@@ -6584,16 +6584,16 @@ ForwardIterator2 remove_copy_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 요소가 제거되는 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*최신*\
+*last*\
 요소가 제거되는 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*만들어집니다*\
+*result*\
 요소가 제거되는 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
 *pred*\
@@ -6689,13 +6689,13 @@ ForwardIterator remove_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 요소가 제거되는 범위에서 첫 번째 요소의 위치를 가리키는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 요소가 제거되는 범위에서 마지막 요소 하나 다음의 위치를 가리키는 정방향 반복기입니다.
 
 *pred*\
@@ -6769,7 +6769,7 @@ int main()
 }
 ```
 
-## <a name="replace"></a>바꾸십시오
+## <a name="replace"></a>replace
 
 범위의 각 요소를 검사하고 요소가 지정된 값과 일치하면 대체합니다.
 
@@ -6792,13 +6792,13 @@ void replace(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 요소가 대체되는 범위에서 첫 번째 요소의 위치를 가리키는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 요소가 대체되는 범위에서 마지막 요소 하나 다음의 위치를 가리키는 입력 반복기입니다.
 
 *oldVal*\
@@ -6881,16 +6881,16 @@ ForwardIterator2 replace_copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 요소가 대체되는 범위의 첫 번째 요소에 대한 위치를 가리키는 입력 반복기입니다.
 
-*최신*\
+*last*\
 요소가 대체되는 범위의 마지막 요소 하나 다음에 대한 위치를 가리키는 입력 반복기입니다.
 
-*만들어집니다*\
+*result*\
 변경된 요소 시퀀스를 복사할 대상 범위의 첫 번째 요소를 가리키는 출력 반복기입니다.
 
 *oldVal*\
@@ -6996,16 +6996,16 @@ ForwardIterator2 replace_copy_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 요소가 대체되는 범위의 첫 번째 요소에 대한 위치를 가리키는 입력 반복기입니다.
 
-*최신*\
+*last*\
 요소가 대체되는 범위의 마지막 요소 하나 다음에 대한 위치를 가리키는 입력 반복기입니다.
 
-*만들어집니다*\
+*result*\
 요소가 복사되는 대상 범위에서 첫 번째 요소의 위치를 가리키는 출력 반복기입니다.
 
 *pred*\
@@ -7117,13 +7117,13 @@ void replace_if(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 요소가 대체되는 범위에서 첫 번째 요소의 위치를 가리키는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 요소가 대체되는 범위에서 마지막 요소 하나 다음의 위치를 가리키는 반복기입니다.
 
 *pred*\
@@ -7190,7 +7190,7 @@ int main()
 }
 ```
 
-## <a name="reverse"></a>되돌립니다
+## <a name="reverse"></a>reverse
 
 범위 내에서 요소의 순서를 반대로 바꿉니다.
 
@@ -7209,13 +7209,13 @@ void reverse(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 요소가 순열되는 범위에서 첫 번째 요소의 위치를 가리키는 양방향 반복기입니다.
 
-*최신*\
+*last*\
 요소가 순열되는 범위에서 마지막 요소 하나 다음의 위치를 가리키는 양방향 반복기입니다.
 
 ### <a name="remarks"></a>설명
@@ -7286,16 +7286,16 @@ ForwardIterator reverse_copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 요소가 순열되는 소스 범위의 첫 번째 요소 위치를 가리키는 양방향 반복기입니다.
 
-*최신*\
+*last*\
 요소가 순열되는 소스 범위의 마지막 요소 하나 다음 위치를 가리키는 양방향 반복기입니다.
 
-*만들어집니다*\
+*result*\
 요소가 복사되는 대상 범위에서 첫 번째 요소의 위치를 가리키는 출력 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -7347,7 +7347,7 @@ int main()
 }
 ```
 
-## <a name="rotate"></a>시키거나
+## <a name="rotate"></a>rotate
 
 인접한 두 범위에 있는 요소를 교환합니다.
 
@@ -7368,16 +7368,16 @@ ForwardIterator rotate(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 회전할 범위 내 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*중간*\
+*middle*\
 해당 요소를 범위의 첫 번째 부분에 있는 요소와 교환해야 하는 범위의 두 번째 부분에서 첫 번째 요소의 위치를 지정하는 범위 내 경계를 정의하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 회전할 범위 내 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
 ### <a name="remarks"></a>설명
@@ -7484,19 +7484,19 @@ ForwardIterator2 rotate_copy(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 회전할 범위 내 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*중간*\
+*middle*\
 해당 요소를 범위의 첫 번째 부분에 있는 요소와 교환해야 하는 범위의 두 번째 부분에서 첫 번째 요소의 위치를 지정하는 범위 내 경계를 정의하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 회전할 범위 내 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*만들어집니다*\
+*result*\
 대상 범위의 첫 번째 요소의 위치를 주소 지정하는 출력 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -7569,7 +7569,7 @@ int main()
 }
 ```
 
-## <a name="sample"></a>샘플이
+## <a name="sample"></a>sample
 
 ```cpp
 template<class PopulationIterator, class SampleIterator, class Distance, class UniformRandomBitGenerator>
@@ -7581,7 +7581,7 @@ SampleIterator sample(
     UniformRandomBitGenerator&& g);
 ```
 
-## <a name="search"></a>조건을
+## <a name="search"></a>search
 
 대상 범위 내에서 시퀀스의 요소가 지정된 요소 시퀀스와 동일하거나 이진 조건자가 지정한 의미에 따라 지정된 시퀀스의 요소와 동일한 첫 번째 시퀀스를 검색합니다.
 
@@ -7627,7 +7627,7 @@ ForwardIterator search(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -7799,7 +7799,7 @@ ForwardIterator search_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -7808,7 +7808,7 @@ ForwardIterator search_n(
 *last1*\
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*수*\
+*count*\
 검색하는 하위 시퀀스의 크기입니다.
 
 *value*\
@@ -7956,7 +7956,7 @@ ForwardIterator set_difference(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -7971,7 +7971,7 @@ ForwardIterator set_difference(
 *last2*\
 두 소스 범위의 차이를 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*만들어집니다*\
+*result*\
 두 소스 범위의 차이를 나타내는 정렬된 단일 범위로 두 개의 소스 범위를 통합할 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
 *pred*\
@@ -8158,7 +8158,7 @@ ForwardIterator set_intersection(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -8173,7 +8173,7 @@ ForwardIterator set_intersection(
 *last2*\
 두 소스 범위의 교집합을 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*만들어집니다*\
+*result*\
 두 소스 범위의 교집합을 나타내는 정렬된 단일 범위로 두 개의 소스 범위를 통합할 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
 *pred*\
@@ -8356,7 +8356,7 @@ ForwardIterator set_symmetric_difference(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -8371,7 +8371,7 @@ ForwardIterator set_symmetric_difference(
 *last2*\
 두 소스 범위의 대칭차를 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*만들어집니다*\
+*result*\
 두 소스 범위의 대칭차를 나타내는 정렬된 단일 범위로 두 개의 소스 범위를 통합할 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
 *pred*\
@@ -8558,7 +8558,7 @@ ForwardIterator set_union(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -8573,7 +8573,7 @@ ForwardIterator set_union(
 *last2*\
 두 소스 범위의 합집합을 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*만들어집니다*\
+*result*\
 두 소스 범위의 합집합을 나타내는 정렬된 단일 범위로 두 개의 소스 범위를 통합할 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
 *pred*\
@@ -8716,7 +8716,7 @@ int main()
 }
 ```
 
-## <a name="shuffle"></a>섞기
+## <a name="shuffle"></a>shuffle
 
 난수 생성기를 사용하여 지정된 범위 내 요소의 순서를 섞습니다(다시 정렬).
 
@@ -8730,20 +8730,20 @@ void shuffle(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 순서를 섞으려는 범위 내 첫 번째 요소에 대한 반복기로, 이 요소를 포함합니다. `RandomAccessIterator` 및 `ValueSwappable`의 요구 사항을 충족해야 합니다.
 
-*최신*\
+*last*\
 순서를 섞으려는 범위 내 마지막 요소에 대한 반복기로, 이 요소는 제외됩니다. `RandomAccessIterator` 및 `ValueSwappable`의 요구 사항을 충족해야 합니다.
 
-*차세대*\
+*gen*\
 `shuffle()` 함수가 연산에 사용하는 난수 생성기입니다. `UniformRandomNumberGenerator`의 요구 사항을 충족해야 합니다.
 
 ### <a name="remarks"></a>설명
 
 자세한 내용과 `shuffle()`을 사용하는 코드 샘플은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-## <a name="sort"></a>정렬
+## <a name="sort"></a>sort
 
 지정된 범위에 있는 요소를 비내림차순 또는 이진 조건자로 지정한 정렬 기준에 따라 정렬합니다.
 
@@ -8775,13 +8775,13 @@ void sort(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 저장할 범위의 첫 번째 요소 위치를 주소 지정하는 임의 액세스 반복기입니다.
 
-*최신*\
+*last*\
 저장할 범위의 마지막 요소 하나 다음 위치를 주소 지정하는 임의 액세스 반복기입니다.
 
 *pred*\
@@ -8882,10 +8882,10 @@ void sort_heap(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 대상 힙에서 첫 번째 요소 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
-*최신*\
+*last*\
 대상 힙의 마지막 요소 하나 다음 위치의 주소를 지정하는 임의 액세스 반복기입니다.
 
 *pred*\
@@ -8984,13 +8984,13 @@ BidirectionalIterator stable_partition(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 파티셔닝할 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*최신*\
+*last*\
 파티셔닝할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 양방향 반복기입니다.
 
 *pred*\
@@ -9085,13 +9085,13 @@ void stable_sort(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 정렬할 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*최신*\
+*last*\
 정렬할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 양방향 반복기입니다.
 
 *pred*\
@@ -9172,7 +9172,7 @@ Resorted (greater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 Resorted (UDgreater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 ```
 
-## <a name="swap"></a>스왑을
+## <a name="swap"></a>swap
 
 첫 번째 재정의는 두 개체의 값을 교환합니다. 두 번째 재정의는 두 개체 배열 간에 값을 교환합니다.
 
@@ -9189,10 +9189,10 @@ void swap(
 
 ### <a name="parameters"></a>매개 변수
 
-*비어*\
+*left*\
 첫 번째 재정의에서는 내용이 있는 첫 번째 개체가 교환됩니다. 두 번째 재정의에서는 내용이 있는 첫 번째 개체 배열이 교환됩니다.
 
-*오른쪽*\
+*right*\
 첫 번째 재정의에서는 내용이 있는 두 번째 개체가 교환됩니다. 두 번째 재정의에서는 내용이 있는 두 번째 개체 배열이 교환됩니다.
 
 ### <a name="remarks"></a>설명
@@ -9276,7 +9276,7 @@ ForwardIterator2 swap_ranges(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -9359,7 +9359,7 @@ After the swap_range, vector v1 is ( 6 6 6 6 6 6 ).
 After the swap_range deque d1 is   ( 0 1 2 3 4 5 ).
 ```
 
-## <a name="transform"></a>변환
+## <a name="transform"></a>transform
 
 두 소스 범위에서 요소 쌍에 또는 소스 범위에 있는 각 요소에 지정된 함수 개체를 적용하고 대상 범위에 함수 개체의 반환 값을 복사합니다.
 
@@ -9399,7 +9399,7 @@ ForwardIterator transform(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
 *first1*\
@@ -9411,7 +9411,7 @@ ForwardIterator transform(
 *first2*\
 작업을 수행할 두 번째 소스 범위에서 첫 번째 요소의 위치를 주소 지정하는 입력 반복기입니다.
 
-*만들어집니다*\
+*result*\
 대상 범위의 첫 번째 요소의 위치를 주소 지정하는 출력 반복기입니다.
 
 *func*\
@@ -9515,7 +9515,7 @@ Multiplying elements of the vectors v1mod and v2 pairwise gives:
 v3 = ( 320 180 80 20 0 20 80 ).
 ```
 
-## <a name="unique"></a>고유
+## <a name="unique"></a>unique
 
 지정된 범위에서 서로 인접한 중복 요소를 제거합니다.
 
@@ -9547,13 +9547,13 @@ ForwardIterator unique(
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 중복 제거를 위해 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 중복 제거를 위해 검색할 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 정방향 반복기입니다.
 
 *pred*\
@@ -9700,16 +9700,16 @@ ForwardIterator2 unique_copy(ExecutionPolicy&& exec,
 
 ### <a name="parameters"></a>매개 변수
 
-*재시도*\
+*exec*\
 사용할 실행 정책입니다.
 
-*기본*\
+*first*\
 복사할 소스 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*최신*\
+*last*\
 복사할 소스 범위 내 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*만들어집니다*\
+*result*\
 연속 중복 항목이 제거된 복사본을 수신하는 대상 범위에서 첫 번째 요소 위치의 주소 지정하는 출력 반복기입니다.
 
 *pred*\
@@ -9822,10 +9822,10 @@ ForwardIterator upper_bound(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*first*\
 검색할 범위에서 첫 번째 요소의 위치입니다.
 
-*최신*\
+*last*\
 검색할 범위에서 마지막 요소 하나 다음의 위치입니다.
 
 *value*\

@@ -1,4 +1,4 @@
----
+﻿---
 title: C 및 Win32를 사용한 다중 스레딩
 ms.date: 08/09/2019
 helpviewer_keywords:
@@ -21,7 +21,7 @@ ms.locfileid: "69511838"
 
 Microsoft C/C++ 컴파일러 (MSVC)는 다중 스레드 응용 프로그램을 만들기 위한 지원을 제공 합니다. 응용 프로그램에서 사용자 인터페이스가 응답 하지 않게 하는 부담이 큰 작업을 수행 해야 하는 경우 둘 이상의 스레드를 사용 하는 것이 좋습니다.
 
-MSVC를 사용 하면 여러 가지 방법으로 여러 스레드를 프로그래밍할 수 있습니다. /Winrt 및 C++Windows 런타임 라이브러리, MFC (Microsoft Foundation Class) 라이브러리, C++/cli 및 .net 런타임, C 런타임 라이브러리 및 Win32 API를 사용할 수 있습니다. 이 문서는 C의 다중 스레딩에 대 한 것입니다. 예제 코드는 [C에서 샘플 다중 스레드 프로그램](sample-multithread-c-program.md)을 참조 하세요.
+MSVC를 사용하면 여러 가지 방법으로 다중 스레드를 프로그래밍할 수 있습니다. C++/WinRT 및 Windows 런타임 라이브러리, MFC (Microsoft Foundation Class) 라이브러리, C++/CLI 및 .NET 런타임, C 런타임 라이브러리 및 Win32 API를 사용할 수 있습니다. 이 문서는 C의 다중 스레딩에 대한 것입니다. 예제 코드는 [C로 작성된 샘플 다중 스레드 프로그램](sample-multithread-c-program.md)을 참조하세요.
 
 ## <a name="multithread-programs"></a>다중 스레드 프로그램
 
@@ -50,7 +50,7 @@ CRT 라이브러리는 스레드를 만들고 종료 하기 위해 [_beginthread
 > [!NOTE]
 > Libcmt.lib를 사용하여 빌드된 프로그램에서 C 런타임 루틴을 호출하는 경우 `_beginthread` 또는 `_beginthreadex` 함수를 사용하여 스레드를 시작해야 합니다. Win32 함수 `ExitThread` 및 `CreateThread`를 사용하지 마세요. `SuspendThread` 사용하면 일시 중단된 스레드가 C 런타임 데이터 구조에 대한 액세스를 완료할 때까지 대기하는 두 개 이상의 스레드가 차단될 때 교착 상태가 발생할 수 있습니다.
 
-###  <a name="_core_the__beginthread_function"></a>_Beginthread 및 _beginthreadex 함수
+###  <a name="_core_the__beginthread_function"></a>_beginthread 및 _beginthreadex 함수
 
 `_beginthread` 및`_beginthreadex` 함수는 새 스레드를 만듭니다. 스레드는 프로세스의 코드 및 데이터 세그먼트를 프로세스의 다른 스레드와 공유 하지만 고유한 레지스터 값, 스택 공간 및 현재 명령 주소를 포함 합니다. 시스템은 프로세스의 모든 스레드가 동시에 실행 될 수 있도록 각 스레드에 CPU 시간을 제공 합니다.
 
@@ -62,7 +62,7 @@ CRT 라이브러리는 스레드를 만들고 종료 하기 위해 [_beginthread
 
 `_beginthread` 및 `_beginthreadex`는 성공하면 새 스레드에 대한 핸들을 반환하고 오류가 발생한 경우 오류 코드를 반환합니다.
 
-###  <a name="_core_the__endthread_function"></a>_Endthread 및 _endthreadex 함수
+###  <a name="_core_the__endthread_function"></a>_endthread 및 _endthreadex 함수
 
 [_Endthread](../c-runtime-library/reference/endthread-endthreadex.md) 함수는에서 `_beginthread` 만든 스레드를 종료 하 고 마찬가지로 `_endthreadex` 에서 만든 `_beginthreadex`스레드를 종료 합니다. 스레드는 완료 될 때 자동으로 종료 됩니다. `_endthread`및 `_endthreadex` 는 스레드 내에서 조건부 종료에 유용 합니다. 통신 포트의 제어를 받을 수 없는 경우와 같이 통신 처리 전용 스레드를 종료할 수 있습니다.
 
@@ -79,9 +79,9 @@ CRT 라이브러리는 스레드를 만들고 종료 하기 위해 [_beginthread
 
 여러 스레드가 정적 데이터에 액세스하는 경우에는 프로그램에서 가능한 리소스 충돌을 제공해야 합니다. 한 스레드가 다른 스레드에 표시되는 항목에 대한 *x*, *y* 좌표를 포함하는 정적 데이터 구조를 업데이트하는 프로그램을 고려해 봅니다. 업데이트 스레드가 *x* 좌표를 변경하고 *y* 좌표를 변경하기 전에 선점되는 경우 *y* 좌표를 업데이트하기 전에 표시 스레드를 예약할 수 있습니다. 항목이 잘못된 위치에 표시되게 됩니다. 세마포를 사용하여 구조에 대한 액세스를 제어하면 이 문제를 방지할 수 있습니다.
 
-뮤텍스 (short *mut*ual *ex*clusion)는 서로 비동기적으로 실행 되는 스레드나 프로세스 간에 통신 하는 방법입니다. 이 통신은 일반적으로 리소스를 잠그고 잠금 해제 하 여 공유 리소스에 대 한 액세스를 제어 함으로써 여러 스레드 또는 프로세스의 작업을 조정 하는 데 사용할 수 있습니다. 이 *x*,*y* 좌표 업데이트 문제를 해결 하기 위해 업데이트 스레드는 업데이트를 수행 하기 전에 데이터 구조가 사용 중임을 나타내는 뮤텍스를 설정 합니다. 두 좌표가 모두 처리 된 후에 뮤텍스를 지웁니다. 디스플레이 스레드는 표시를 업데이트 하기 전에 뮤텍스를 지울 때까지 기다려야 합니다. 뮤텍스를 대기 하는이 프로세스를 종종 뮤텍스를 *차단* 이라고 합니다 .이 프로세스는 중단 되 고 뮤텍스를 지울 때까지 계속할 수 없기 때문입니다.
+뮤텍스(short *mut*ual *ex*clusion)는 서로 비동기적으로 실행되는 스레드나 프로세스 간에 통신하는 방법입니다. 이 통신은 일반적으로 리소스를 잠그고 잠금 해제하여 공유 리소스에 대한 액세스를 제어함으로써 여러 스레드 또는 프로세스의 작업을 조정하는 데 사용할 수 있습니다. 이 *x*, *y* 좌표 업데이트 문제를 해결하기 위해 업데이트 스레드는 업데이트를 수행하기 전에 데이터 구조가 사용 중임을 나타내는 뮤텍스를 설정합니다. 두 좌표가 모두 처리된 후에 뮤텍스를 지웁니다. 디스플레이 스레드는 표시를 업데이트하기 전에 뮤텍스를 지울 때까지 기다려야 합니다. 뮤텍스를 대기하는 이 프로세스를 종종 뮤텍스 *차단*이라고 합니다. 이 프로세스는 중단되고 뮤텍스를 지울 때까지 계속할 수 없기 때문입니다.
 
-[샘플 다중 스레드 C 프로그램](sample-multithread-c-program.md)에 표시된 Bounce.c 프로그램은  `ScreenMutex` 라는 뮤텍스를 사용하여 화면 업데이트를 조정합니다. 표시 스레드 중 하나를 화면에 쓸 준비가 될 때마다 `ScreenMutex` 에 대한 핸들과 INFINITE 상수를 사용하여 `WaitForSingleObject`를 호출하여 `WaitForSingleObject` 호출이 뮤텍스를 차단하고 시간 제한이 없음을 나타냅니다. `ScreenMutex`가 지워지면 wait 함수는 다른 스레드가 표시를 방해할 수 없도록 뮤텍스를 설정하고 스레드 실행을 계속합니다. 그렇지 않으면 뮤텍스가 지워질 때까지 스레드가 차단됩니다. 이는 스레드가 표시 업데이트를 완료하면 `ReleaseMutex`를 호출하여 뮤텍스를 해제합니다.
+[샘플 다중 스레드 C 프로그램](sample-multithread-c-program.md)에 표시된 Bounce.c 프로그램은 `ScreenMutex` 라는 뮤텍스를 사용하여 화면 업데이트를 조정합니다. 표시 스레드 중 하나를 화면에 쓸 준비가 될 때마다 `ScreenMutex` 에 대한 핸들과 INFINITE 상수를 사용하여 `WaitForSingleObject`를 호출하여 `WaitForSingleObject` 호출이 뮤텍스를 차단하고 시간 제한이 없음을 나타냅니다. `ScreenMutex`가 지워지면 wait 함수는 다른 스레드가 표시를 방해할 수 없도록 뮤텍스를 설정하고 스레드 실행을 계속합니다. 그렇지 않으면 뮤텍스가 지워질 때까지 스레드가 차단됩니다. 이는 스레드가 표시 업데이트를 완료하면 `ReleaseMutex`를 호출하여 뮤텍스를 해제합니다.
 
 화면 표시와 정적 데이터는 신중하게 관리해야 하는 두 가지 리소스입니다. 예를 들어 프로그램에 동일한 파일에 액세스하는 스레드가 여러 개 있을 수 있습니다. 다른 스레드가 파일 포인터를 이동했을 수 있으므로 각 스레드는 읽기 또는 쓰기 전에 파일 포인터를 다시 설정해야 합니다. 또한 각 스레드는 포인터가 배치된 시간과 파일에 액세스하는 시간 사이에 선점되지 않도록 해야 합니다. 이 스레드는 세마포를 사용하여 각 파일 액세스를 `WaitForSingleObject` 및 `ReleaseMutex` 호출로 묶어 파일에 대한 액세스를 조정해야 합니다. 다음 코드 예제에서는 이 방법을 보여줍니다.
 
@@ -117,8 +117,8 @@ C 런타임 라이브러리 또는 Win32 API에 대한 호출을 수행하는 �
 
 ## <a name="see-also"></a>참고자료
 
-[이전 코드에 대 한 다중 스레딩 C++지원 (시각적 개체)](multithreading-support-for-older-code-visual-cpp.md)\
+[이전 코드에 대한 다중 스레딩 지원(Visual C++)](multithreading-support-for-older-code-visual-cpp.md)\
 [C의 샘플 다중 스레드 프로그램](sample-multithread-c-program.md)\
 [TLS (스레드 로컬 저장소)](thread-local-storage-tls.md)\
-[/WinRT를 사용한 C++동시성 및 비동기 작업](/windows/uwp/cpp-and-winrt-apis/concurrency)\
+[C++/WinRT를 사용한 동시성 및 비동기 작업](/windows/uwp/cpp-and-winrt-apis/concurrency)\
 [C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)

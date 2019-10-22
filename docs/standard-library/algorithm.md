@@ -26,7 +26,7 @@ ms.locfileid: "68456496"
 ```
 
 > [!NOTE]
-> 또한 \<알고리즘 > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
+> \<algorithm> 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
 
 ## <a name="remarks"></a>설명
 

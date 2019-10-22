@@ -31,4 +31,5 @@ OpenMP 아키텍처 심사 위원회의 버전 2.0 사양에 설명된 대로 Op
 컴파일러에서 `#pragma omp`를 처리하도록 합니다.
 
 [미리 정의된 매크로](../../preprocessor/predefined-macros.md)<br/>
+
 미리 정의된 ANSI C 및 Microsoft C++ 구현 매크로의 이름을 지정합니다. _OPENMP 매크로를 참조하세요.

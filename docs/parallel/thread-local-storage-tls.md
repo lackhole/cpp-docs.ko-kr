@@ -1,4 +1,4 @@
----
+﻿---
 title: TLS
 ms.date: 08/09/2019
 helpviewer_keywords:
@@ -20,9 +20,9 @@ ms.locfileid: "69510398"
 
 TLS(스레드 로컬 스토리지)는 지정된 다중 스레드 프로세스의 각 스레드에서 스레드별 데이터를 저장하는 위치를 할당하는 방법입니다. 동적으로 바인딩된(런타임) 스레드별 데이터는 TLS API ([TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc))를 통해 지원됩니다. 이제 Win32 및 Microsoft C++ 컴파일러는 기존 API 구현 뿐만 아니라 스레드 단위 데이터에 대한 정적 바인딩(로드 시간)을 지원합니다.
 
-## <a name="_core_compiler_implementation_for_tls"></a>TLS에 대 한 컴파일러 구현
+## <a name="_core_compiler_implementation_for_tls"></a>TLS에 대한 컴파일러 구현
 
-**C++11:**  `thread_local` 저장소 클래스 지정자는 개체 및 클래스 멤버에 대 한 스레드 로컬 저장소를 지정 하는 데 권장 되는 방법입니다. 자세한 내용은 [저장소 클래스 (C++)](../cpp/storage-classes-cpp.md)를 참조 하세요.
+**C++11:** `thread_local` 저장소 클래스 지정자는 개체 및 클래스 멤버에 대한 스레드 로컬 저장소를 지정하는 데 권장되는 방법입니다. 자세한 내용은 [저장소 클래스(C++)](../cpp/storage-classes-cpp.md)를 참조하세요.
 
 또한 MSVC는 확장 저장소 클래스 한정자로서의 Microsoft 전용 특성 [스레드](../cpp/thread.md)를 제공합니다. **__declspec** 키워드를 사용하여 **스레드** 변수를 선언합니다. 예를 들어, 다음 코드는 정수 스레드 로컬 변수를 선언한 다음 값으로 초기화합니다.
 
@@ -68,7 +68,7 @@ __declspec( thread ) int tls_i = 1;
     char __declspec( thread ) *ch;        // Error
     ```
 
-- Thread 특성을 사용 C++ 하는 개체의 선언이 허용 되기 때문에 다음 두 예제는 의미상 동일 합니다.
+- thread 특성을 사용하는 C++ 개체의 선언이 허용되기 때문에 다음 두 예제는 의미상 동일합니다.
 
     ```cpp
     __declspec( thread ) class B
@@ -103,7 +103,7 @@ __declspec( thread ) int tls_i = 1;
    초기화되는 개체를 포함하는 `sizeof` 표현식은 자신에 대한 참조를 나타내지 않으며 C와 C++ 모두에서 사용할 수 있습니다.
 
    C++에서는 스레드 로컬 저장소 기능의 향후 향상된 기능으로 인해 스레드 데이터를 동적으로 초기화할 수 없습니다.
-
+   
 - Windows Vista `__declspec( thread )` 이전의 windows 운영 체제에는 몇 가지 제한 사항이 있습니다. DLL에서 데이터 또는 개체를 `__declspec( thread )`로 선언하는 경우, 동적으로 로드되는 경우 보호 오류가 발생할 수 있습니다. DLL이 [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw)로 로드된 후에는 코드에서 `__declspec( thread )` 데이터를 참조할 때마다 시스템 오류가 발생합니다. 런타임에 스레드에 대한 전역 변수 공간이 할당되기 때문에, 이 공간의 크기는 애플리케이션의 요구 사항과 정적으로 연결되는 모든 DLL의 요구 사항을 계산하여 결정됩니다. `LoadLibrary`를 사용하는 경우 `__declspec( thread )`로 선언된 스레드 지역 변수를 허용하도록 이 공간을 확장할 수 없습니다. `LoadLibrary`로 로드될 수 있는 DLL의 경우 DLL에서 [TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc)와 같은 TLS API를 사용하여 TLS를 할당합니다.
 
 ## <a name="see-also"></a>참고자료
