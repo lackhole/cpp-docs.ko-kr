@@ -14,11 +14,11 @@ ms.locfileid: "62377897"
 ---
 # <a name="ltallocatorsgt-operators"></a>&lt;allocators&gt; 연산자
 
-에 정의 된 전역 템플릿 연산자 함수를 이들은 &lt;할당자&gt;합니다. 클래스 멤버 연산자 함수를 클래스 설명서를 참조 하십시오.
+&lt;allocators&gt;에 정의된 전역 템플릿 연산자 함수입니다. 클래스 멤버 연산자 함수에 대해서는 클래스 설명서를 참조하십시오.
 
 |||
 |-|-|
-|[operator!=](#op_neq)|[연산자==](#op_eq_eq)|
+|[operator!=](#op_neq)|[operator==](#op_eq_eq)|
 
 ## <a name="op_neq"></a>  operator!=
 
