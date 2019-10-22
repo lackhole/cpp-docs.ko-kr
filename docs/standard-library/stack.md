@@ -7,16 +7,16 @@ helpviewer_keywords:
 - stack, stack header
 - stack header
 ms.assetid: 89d8999e-c773-46f2-86c1-4b3b5aedb1c1
-ms.openlocfilehash: f6c51d85aa4a9f5516fe08dad163274051d94c13
-ms.sourcegitcommit: b3d19b5f59f3a5d90c24f9f16c73bad4c5eb6944
+ms.openlocfilehash: e8c468da35ae23e5a37c2dfc5ac3fbdf47408c71
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195821"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72686090"
 ---
 # <a name="ltstackgt"></a>&lt;stack&gt;
 
-템플릿 클래스 스택 및 두 개의 지원 템플릿을 정의합니다.
+클래스 템플릿 스택과 두 개의 지원 템플릿을 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -25,7 +25,7 @@ ms.locfileid: "71195821"
 **네임스페이스:** std
 
 > [!NOTE]
-> 스택 \<> 라이브러리에도 `#include <initializer_list>` 문이 사용 됩니다.
+> 또한 \<stack > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -46,7 +46,7 @@ ms.locfileid: "71195821"
 |-|-|
 |[stack 클래스](../standard-library/stack-class.md)|최근에 일부 기본 컨테이너 형식에 추가된 요소로만 액세스를 제한하는 템플릿 컨테이너 어댑터 클래스입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

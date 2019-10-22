@@ -5,20 +5,20 @@ f1_keywords:
 - <optional>
 helpviewer_keywords:
 - <optional>
-ms.openlocfilehash: f3b4896a3cb4774e46b36480dd9769fa131fc287
-ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
+ms.openlocfilehash: bce31811c98d351f3c561b3136d41f7ed23d13e0
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957172"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687253"
 ---
 # <a name="ltoptionalgt"></a>&lt;optional&gt;
 
-컨테이너 템플릿 클래스 `optional` 및 다양한 지원 템플릿을 정의합니다.
+컨테이너 클래스 템플릿 `optional`와 여러 지원 템플릿을 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<선택적 >
+**헤더:** \<optional >
 
 **네임스페이스:** std
 
@@ -36,7 +36,7 @@ ms.locfileid: "68957172"
 |[operator>=](../standard-library/optional-operators.md#op_lt_eq)|왼쪽의 개체가 오른쪽에 있는 개체 보다 크거나 같은지 테스트 합니다.|
 
 > [!NOTE]
-> 선택적 > 연산자는 \<관계형 비교 외에도 **nullopt** 및 `T`와의 비교를 지원 합니다.
+> @No__t_0optional > 연산자는 관계형 비교 외에도 **nullopt** 및 `T` 비교를 지원 합니다.
 
 ### <a name="functions"></a>함수
 
@@ -58,8 +58,8 @@ ms.locfileid: "68957172"
 
 |||
 |-|-|
-|[nullopt](../standard-library/optional-functions.md#nullopt)|비교할의 `nullopt_t` 인스턴스입니다.|
+|[nullopt](../standard-library/optional-functions.md#nullopt)|비교를 위한 `nullopt_t`의 인스턴스입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

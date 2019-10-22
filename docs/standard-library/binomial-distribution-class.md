@@ -26,14 +26,14 @@ helpviewer_keywords:
 - std::binomial_distribution [C++], param_type
 - std::binomial_distribution [C++], param_type
 ms.assetid: b7c8a26a-da8c-45a5-a3a8-208f7a3609ce
-ms.openlocfilehash: 525e448a130f33df478627f7ae7ca682ff4a556d
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: e3d2d02bc6781ed447d7583ce15a60e983251350
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448057"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688378"
 ---
-# <a name="binomialdistribution-class"></a>binomial_distribution 클래스
+# <a name="binomial_distribution-class"></a>binomial_distribution 클래스
 
 이항 분포를 생성합니다.
 
@@ -71,24 +71,24 @@ public:
 
 ### <a name="parameters"></a>매개 변수
 
-*IntType*\
-정수 결과 형식으로, 기본적으로 **int**로 설정 됩니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
+*Inttype* \
+정수 결과 형식으로, 기본적으로 **int**로 설정 됩니다. 가능한 형식은 [\<random >](../standard-library/random.md)를 참조 하세요.
 
-*URNG*\
+*Urng* \
 단일 난수 생성기 엔진입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-이항 분포 불연속 확률 함수에 따라 분포 된 경우 템플릿 클래스는 사용자 지정 정수 형식의 값을 생성 하는 분포를 설명 하 고, 아무것도 제공 되지 않은 경우 **int** 형식을 제공 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
+이항 분포 불연속 확률 함수에 따라 분포 된 경우 클래스 템플릿은 사용자 지정 정수 형식의 값을 생성 하는 분포를 설명 하 고, 아무것도 제공 되지 않은 경우 **int** 형식을 제공 합니다. 다음 테이블은 개별 멤버에 대한 문서와 연결되어 있습니다.
 
 ||||
 |-|-|-|
 |[binomial_distribution](#binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|
 |`binomial_distribution::operator()`|`binomial_distribution::p`|[param_type](#param_type)|
 
-속성 멤버 `t()` 및 `p()` 는 각각 현재 저장 된 분포 매개 변수 값 *t* 및 *p* 를 반환 합니다.
+속성 멤버 `t()` 및 `p()`는 각각 현재 저장 된 분포 매개 변수 값 *t* 와 *p* 를 반환 합니다.
 
-속성 구성원 `param()`은 `param_type`으로 저장된 분포 매개 변수 패키지를 설정하거나 반환합니다.
+속성 멤버 `param()`은 `param_type`으로 저장된 분포 매개 변수 패키지를 설정하거나 반환합니다.
 
 `min()` 및 `max()` 구성원 함수는 각각 가능한 가장 작은 결과 및 가능한 가장 큰 결과를 반환합니다.
 
@@ -96,7 +96,7 @@ public:
 
 `operator()` 구성원 함수는 현재 매개 변수 패키지 또는 지정된 매개 변수 패키지에서 URNG 엔진을 기반으로 하여 다음에 생성된 값을 반환합니다.
 
-분포 클래스 및 이러한 클래스의 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
+분포 클래스 및 이러한 클래스의 멤버에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
 이항 분포 이산 확률 함수에 대한 자세한 내용은 Wolfram MathWorld 문서 [이항 분포](https://go.microsoft.com/fwlink/p/?linkid=398469)를 참조하세요.
 
@@ -242,16 +242,16 @@ explicit binomial_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>매개 변수
 
-*트*\
+*t* \
 `t` 분포 매개 변수입니다.
 
-*®*\
+*p* \
 `p` 분포 매개 변수입니다.
 
-*parm*\
+*parm* \
 분포를 생성하는 데 사용되는 `param_type` 구조체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 **사전 조건:** `0 ≤ t` 및 `0.0 ≤ p ≤ 1.0`
 
@@ -277,21 +277,21 @@ struct param_type {
 
 ### <a name="parameters"></a>매개 변수
 
-*트*\
+*t* \
 `t` 분포 매개 변수입니다.
 
-*®*\
+*p* \
 `p` 분포 매개 변수입니다.
 
-*오른쪽*\
+*오른쪽* \
 이 매개 변수와 비교할 `param_type` 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 **사전 조건:** `0 ≤ t` 및 `0.0 ≤ p ≤ 1.0`
 
 이 구조를 인스턴스화 시에는 분포의 클래스 생성자로, 기존 분포의 저장된 매개 변수를 설정하기 위해서는 `param()` 멤버 함수로, 저장된 매개 변수 대신 사용하기 위해서는 `operator()`로 전달할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<random>](../standard-library/random.md)

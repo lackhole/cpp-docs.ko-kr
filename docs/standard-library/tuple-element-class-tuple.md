@@ -6,14 +6,14 @@ f1_keywords:
 helpviewer_keywords:
 - std::tuple_element
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c
-ms.openlocfilehash: 0836ed683b398981e95e401a73ded6367c7ab472
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 21efed39fdaabe0f95f83e9dc5cdfcc508a147c5
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68241815"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684456"
 ---
-# <a name="tupleelement-class"></a>tuple_element 클래스
+# <a name="tuple_element-class"></a>tuple_element 클래스
 
 `tuple` 요소를 래핑합니다. 특수화는 `array` 요소 및 `pair` 요소를 래핑합니다.
 
@@ -56,35 +56,35 @@ template <class T1, class T2>
 
 ### <a name="parameters"></a>매개 변수
 
-*인덱스*\
+*인덱스* \
 지정된 요소의 인덱스입니다.
 
-*튜플*\
+*튜플* \
 튜플의 형식입니다.
 
-*Elem*\
+*Elem* \
 배열 요소의 형식입니다.
 
-*크기*\
+*크기* \
 배열의 크기입니다.
 
-*T1*\
-쌍의 첫 번째 요소의 형식입니다.
+*T1* \
+한 쌍의 첫 번째 요소 형식입니다.
 
-*T2*\
+*T2* \
 쌍의 두 번째 요소 형식입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-템플릿 클래스 `tuple_element` 중첩 된 typedef `type` 인덱스에 있는 형식의 동의어인 *인덱스* 튜플 형식의 *튜플*합니다.
+클래스 템플릿 `tuple_element`에는 튜플 형식 *튜플의*인덱스 *인덱스* 에 있는 형식에 대 한 동의어 인 중첩 된 typedef `type` 있습니다.
 
 `tuple_element_t` 형식 정의는 `tuple_element<Index, Tuple>::type`에 사용할 수 있는 편리한 별칭입니다.
 
-배열의 템플릿 클래스 특수화는 `array`에 대한 인터페이스를 각각 형식이 동일한 `Size` 요소의 튜플로 제공합니다. 각 특수화에 중첩 된 typedef `type` 형식의 동의어입니다 합니다 *인덱스* 의 요소를 `array`, 모든 const volatile 한정자가 유지 합니다.
+배열의 클래스 템플릿 특수화는 `array`에 대 한 인터페이스를 각각 동일한 형식을 갖는 `Size` 요소의 튜플로 제공 합니다. 각 특수화에는 `array`의 *Index* 요소 형식에 대 한 동의어 인 중첩 된 typedef `type` 있으며, 모든 const 휘발성 한정자가 유지 됩니다.
 
 `pair` 형식의 템플릿 특수화는 각각 단일 구성원 형식 정의 `type`를 제공합니다. 이 형식 정의는 쌍의 지정된 위치에 있는 요소 형식과 동일한 의미이며, 모든 const 및/또는 volatile 한정자가 유지됩니다. `tuple_element_t` 형식 정의는 `tuple_element<N, pair<T1, T2>>::type`에 사용할 수 있는 편리한 별칭입니다.
 
-사용 된 [get 함수 &lt;유틸리티&gt; ](../standard-library/utility-functions.md#get) 지정 된 위치 또는 지정 된 형식의 요소를 반환 합니다.
+[Get 함수 &lt;utility &gt;](../standard-library/utility-functions.md#get) 를 사용 하 여 지정 된 위치 또는 지정 된 형식의 요소를 반환할 수 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -178,6 +178,6 @@ int main() {
 
 **헤더:** \<array>(배열 특수화용)
 
-**헤더:** \<유틸리티 > (쌍 특수화의 경우)에 대 한
+**헤더:** \<utility > (쌍 특수화의 경우)
 
 **네임스페이스:** std

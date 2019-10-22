@@ -38,14 +38,14 @@ helpviewer_keywords:
 - stdext::allocator_base [C++], destroy
 - stdext::allocator_base [C++], max_size
 ms.assetid: f920b45f-2a88-4bb0-8ead-b6126b426ed4
-ms.openlocfilehash: 115f5ad4461b98f24e3aa6756e501b91ae3a1566
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: cbc1a9eb9432a454ca5dc04205b9d0c7b631a430
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456443"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72690099"
 ---
-# <a name="allocatorbase-class"></a>allocator_base 클래스
+# <a name="allocator_base-class"></a>allocator_base 클래스
 
 동기화 필터에서 사용자 정의 할당자를 만드는 데 필요한 기본 클래스 및 일반 함수를 정의합니다.
 
@@ -78,7 +78,7 @@ class allocator_base
 |[difference_type](#difference_type)|할당자에 의해 관리되는 개체 형식에 대한 포인터 값의 차이를 나타낼 수 있는 부호 있는 정수 형식입니다.|
 |[pointer](#pointer)|할당자에 의해 관리되는 개체 형식에 대한 포인터를 제공하는 형식입니다.|
 |[reference](#reference)|할당자에 의해 관리되는 개체 형식에 대한 참조를 제공하는 형식입니다.|
-|[size_type](#size_type)|템플릿 클래스 `allocator_base`의 개체가 할당할 수 있는 시퀀스의 길이를 나타내는 부호 없는 정수 형식입니다.|
+|[size_type](#size_type)|@No__t_0 형식의 개체가 할당할 수 있는 시퀀스의 길이를 나타낼 수 있는 부호 없는 정수 형식입니다.|
 |[value_type](#value_type)|할당자에 의해 관리되는 형식입니다.|
 
 ### <a name="member-functions"></a>멤버 함수
@@ -118,7 +118,7 @@ char *_Charalloc(size_type count);
 
 할당된 개체에 대한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 멤버 함수는 rebind를 컴파일할 수 없는 컴파일러로 컴파일할 때 컨테이너에 의해 사용됩니다. 동기화 필터의 `allocate` 함수에 대한 호출 결과를 반환하여 사용자 정의 할당자에 대해 `_Charalloc`를 구현합니다.
 
@@ -137,7 +137,7 @@ void _Chardealloc(void* ptr, size_type count);
 |*ptr*|스토리지에서 할당을 취소할 첫 번째 개체에 대한 포인터입니다.|
 |*count*|스토리지에서 할당을 취소할 개체의 수입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 멤버 함수는 rebind를 컴파일할 수 없는 컴파일러로 컴파일할 때 컨테이너에 의해 사용됩니다. 동기화 필터의 `deallocate` 함수를 호출하여 사용자 정의 할당자에 대해 `_Chardealloc`를 구현합니다. `*this`와 같은지를 비교하여 같은 크기와 형식의 배열 개체를 할당하는 할당자 개체에 대해 `_Charalloc`를 호출함으로써 포인터 ptr이 이미 반환된 상태여야 합니다. `_Chardealloc`은 예외를 throw할 수 없습니다.
 
@@ -153,14 +153,14 @@ const_pointer address(const_reference val);
 
 ### <a name="parameters"></a>매개 변수
 
-*짧은*\
+*val* \
 주소를 검색하는 개체의 const 또는 nonconst 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
 각각 const 또는 nonconst 값으로 발견된 개체에 대한 const 또는 nonconst 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 멤버 함수는 `&val`을 반환함으로써 사용자 정의 할당자에 대해 구현됩니다.
 
@@ -179,14 +179,14 @@ pointer allocate(size_type _Nx);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*_Nx*|할당할 배열의 요소 수입니다.|
+|*_ Nx*|할당할 배열의 요소 수입니다.|
 |*_Hint*|이 매개 변수는 무시됩니다.|
 
 ### <a name="return-value"></a>반환 값
 
 할당된 개체에 대한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `_Nx == 1`인 경우 멤버 함수는 Type `*` 형식의 동기화 필터의 `allocate` 함수에 대한 호출 결과를 반환하여 사용자 정의 할당자에 대한 메모리 할당을 구현합니다. 아닌 경우 호출 결과를 `operator new(_Nx * sizeof(Type))`으로 반환하여 Type `*` 형식으로 캐스팅합니다.
 
@@ -207,7 +207,7 @@ allocator_base(const allocator_base<Other, Sync>& right);
 |---------------|-----------------|
 |*right*|복사할 할당자 개체입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 첫 번째 생성자는 [allocator_base](../standard-library/allocator-base-class.md) 인스턴스를 생성합니다. 두 번째 생성자는 임의의 `allocator_base<Type, _Sync>` 인스턴스 `a`, `allocator_base<Type, Sync>(allocator_base<Other, Sync>(a)) == a`에 대해 `allocator_base` 인스턴스를 생성합니다.
 
@@ -242,7 +242,7 @@ void construct(pointer ptr, const Type& val);
 |*ptr*|개체를 생성할 위치에 대한 포인터입니다.|
 |*val*|생성되는 개체를 초기화할 값입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 멤버 함수는 `new((void*)ptr Type(val)`을 호출함으로써 사용자 정의 할당자에 대해 구현됩니다.
 
@@ -259,9 +259,9 @@ void deallocate(pointer ptr, size_type _Nx);
 |매개 변수|설명|
 |---------------|-----------------|
 |*ptr*|스토리지에서 할당을 취소할 첫 번째 개체에 대한 포인터입니다.|
-|*_Nx*|스토리지에서 할당을 취소할 개체의 수입니다.|
+|*_ Nx*|스토리지에서 할당을 취소할 개체의 수입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 멤버 함수는 `_Nx == 1`인 경우 동기화 필터 `Sync`에서 `deallocate(ptr)`를 호출하고, 아닌 경우 `operator delete(_Nx * ptr)`를 호출함으로써 사용자 정의 할당자에 대해 구현됩니다.
 
@@ -279,7 +279,7 @@ void destroy(pointer ptr);
 |---------------|-----------------|
 |*ptr*|소멸될 개체의 주소를 지정하는 포인터입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 멤버 함수는 `ptr->~Type()`을 호출함으로써 사용자 정의 할당자에 대해 구현됩니다.
 
@@ -303,7 +303,7 @@ size_type max_size() const;
 
 할당할 수 있는 요소의 수입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 멤버 함수는 `0 < (size_t)-1 / sizeof(Type)`인 경우 `(size_t)-1 / sizeof(Type)`, 아닌 경우 `1`을 반환함으로써 사용자 정의 할당자에 대해 구현됩니다.
 
@@ -325,7 +325,7 @@ typedef Type& reference;
 
 ## <a name="size_type"></a>  allocator_base::size_type
 
-템플릿 클래스 `allocator_base` 의 개체가 할당할 수 있는 시퀀스의 길이를 나타내는 부호 없는 정수 형식입니다.
+@No__t_0 형식의 개체가 할당할 수 있는 시퀀스의 길이를 나타낼 수 있는 부호 없는 정수 형식입니다.
 
 ```cpp
 typedef std::size_t size_type;
@@ -339,6 +339,6 @@ typedef std::size_t size_type;
 typedef Type value_type;
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<allocators>](../standard-library/allocators-header.md)

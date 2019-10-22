@@ -6,14 +6,14 @@ f1_keywords:
 helpviewer_keywords:
 - mersenne_twister_engine class
 ms.assetid: 7ee968fa-a1cc-450f-890f-7305de062685
-ms.openlocfilehash: ed5380e36e71d7366d2b4b84528bbd35b87cc775
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 79613c76b3ea6dc15643e83a15d5bd6d90b60c6a
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451856"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687695"
 ---
-# <a name="mersennetwisterengine-class"></a>mersenne_twister_engine 클래스
+# <a name="mersenne_twister_engine-class"></a>mersenne_twister_engine 클래스
 
 메르센 트위스터 알고리즘을 기반으로 정수의 고품질 임의 시퀀스를 생성합니다.
 
@@ -29,31 +29,31 @@ class mersenne_twister_engine;
 
 ### <a name="parameters"></a>매개 변수
 
-*UIntType*\
+*Uinttype* \
 부호가 없는 정수 결과 형식입니다. 가능한 형식은 [\<random>](../standard-library/random.md)를 참조하세요.
 
-*W*\
+*W* \
 **단어 크기**. 상태 시퀀스의 각 단어 크기입니다(비트). **사전 조건**: `2u < W ≤ numeric_limits<UIntType>::digits`
 
-*개의*\
+*N* \
 **상태 크기**. 상태 시퀀스의 요소(값) 수입니다.
 
-*매*\
+*M* \
 **시프트 크기**. 각 트위스트 중 건너 뛸 요소의 수입니다. **사전 조건**: `0 < M ≤ N`
 
 *R*\
 **마스크 비트**. **사전 조건**: `R ≤ W`
 
-*은*\
+*@No__t_1*
 **XOR 마스크**. **사전 조건**: `A ≤ (1u<<W) - 1u`
 
-*U*, *S*, *T*, *L*\
+*U*, *S*, *T*, *L* \
 **시프트 조작 매개 변수**. 암호화(조작)할 때 시프트 값으로 사용됩니다. 사전 조건: `U,S,T,L ≤ W`
 
-*D*, *B*, *C*\
+*D*, *B*, *C* \
 **비트 마스크 조작 매개 변수**. 암호화(조작)할 때 비트 마스크 값으로 사용됩니다. 사전 조건: `D,B,C ≤ (1u<<W) - 1u`
 
-*350*\
+*F* \
 **초기화 승수**. 시퀀스 초기화를 지원하는 데 사용됩니다. 사전 조건: `F ≤ (1u<<W) - 1u`
 
 ## <a name="members"></a>멤버
@@ -67,9 +67,9 @@ class mersenne_twister_engine;
 
 엔진 구성원에 대한 자세한 내용은 [\<random>](../standard-library/random.md)을 참조하세요.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-이 템플릿 클래스는 닫힌 간격 [ `0`, `2`<sup>W</sup> - `1`]에 대한 값을 반환하는 난수 엔진을 설명합니다. 여기에는 `W * (N - 1) + R`비트의 큰 정수 값이 들어 있습니다. 이 값에서 한 번에 *W* 비트를 추출 하 고 모든 비트를 사용 하는 경우 추출할 새 비트 집합이 있도록 비트를 이동 하 고 혼합 하 여 많은 값을 트위스트 합니다. 엔진의 상태는가 `N` 적어도 *N* 번 `M` `operator()` `W` 호출된경우사용`N - M` 된 마지막 비트 값이 고, 그렇지 않으면 사용된비트값과의마지막값입니다.`W` 시드는.
+이 클래스 템플릿은 종결 된 간격 [`0`, `2`<sup>W</sup>  -  `1`]에 대 한 값을 반환 하는 난수 엔진을 설명 합니다. 여기에는 `W * (N - 1) + R`비트의 큰 정수 값이 들어 있습니다. 이 값에서 한 번에 *W* 비트를 추출 하 고 모든 비트를 사용 하는 경우 추출할 새 비트 집합이 있도록 비트를 이동 하 고 혼합 하 여 많은 값을 트위스트 합니다. 엔진의 상태는 `operator()`가 *N* 번 이상 호출 된 경우 사용 되는 마지막 `N` `W` 비트 값이 고, 그렇지 않으면 사용 된 `M` `W` 비트 값과 초기값의 마지막 `N - M` 값입니다.
 
 생성기는 이동 값 *N* 및 *M*, 비틀기 값 *R*및 조건부 XOR 마스크 *a*로 정의 된 꼬인 일반화 된 사용자 의견 이동 레지스터를 사용 하 여 보유 한 트위스트 큼 값을 사용 합니다. 또한 *U*, *D*, *S*, *B*, *T*, *C*및 *L*값으로 정의 된 비트 암호화 매트릭스에 따라 원시 시프트 레지스터의 비트 (변조)가 스크램블 됩니다.
 
@@ -111,6 +111,6 @@ typedef mersenne_twister_engine<unsigned long long, 64, 312, 156,
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<random>](../standard-library/random.md)

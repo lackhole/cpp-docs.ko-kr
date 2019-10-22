@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - queue header
 ms.assetid: 24fcf350-eb0e-48cf-9fef-978be1aeda1f
-ms.openlocfilehash: 506ab5fccd44ad37a08a9f741f44f24d3a85b87d
-ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
+ms.openlocfilehash: ee35f880ddf40561cacb5c4d519f2e6291ad77a8
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956992"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689107"
 ---
 # <a name="ltqueuegt"></a>&lt;queue&gt;
 
-템플릿 클래스 priority_queue와 큐 및 여러 지원 템플릿을 정의합니다.
+클래스 템플릿 priority_queue 및 큐와 여러 지원 템플릿을 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -24,7 +24,7 @@ ms.locfileid: "68956992"
 **네임스페이스:** std
 
 > [!NOTE]
-> 큐 \<> 라이브러리에도 `#include <initializer_list>` 문이 사용 됩니다.
+> 또한 \<queue > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -46,7 +46,7 @@ ms.locfileid: "68956992"
 |[queue 클래스](../standard-library/queue-class.md)|일부 기본 컨테이너 형식의 앞과 뒤 요소에 대한 액세스를 제한하는 기능 제한을 제공하는 템플릿 컨테이너 어댑터 클래스입니다.|
 |[priority_queue 클래스](../standard-library/priority-queue-class.md)|항상 가장 큰 일부 기본 컨테이너 형식의 최상위 요소에 대한 액세스를 제한하는 기능 제한을 제공하는 템플릿 컨테이너 어댑터 클래스입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

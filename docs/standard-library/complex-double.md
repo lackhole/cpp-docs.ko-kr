@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - complex<double> function
 ms.assetid: 0d0b9d2a-9b9b-410b-82a0-86b6df127e47
-ms.openlocfilehash: 565a2e6b5ee4eb495cb4cc3241bb8ce72de538a2
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 8955669f4bc6fd7b3b373751e0e5134205dd1657
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68453147"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689787"
 ---
 # <a name="complexltdoublegt"></a>complex&lt;double&gt;
 
@@ -30,7 +30,7 @@ public:
 constexpr complex(const complex<double>& complexNum);
 
 constexpr explicit complex(const complex<long double>& complexNum);
-// rest same as template class complex
+// rest same as class template complex
 };
 ```
 
@@ -39,21 +39,21 @@ constexpr explicit complex(const complex<long double>& complexNum);
 *Realval로,* \
 생성되는 복소수의 실수부에 대한 **double** 형식의 값입니다.
 
-*Imagval로 초기화*\
+*Imagval* \
 생성되는 복소수의 허수부에 대한 **double** 형식의 값입니다.
 
-*complexNum*\
+*Complexnum* \
 실수 및 허수 부분을 생성 하는 **double** 형식의 복소수를 초기화 하는 데 사용 되는 실수 및 허수 부분을 포함 하는 **long double** 형식 또는 **float** 형식의 복소수입니다.
 
 ## <a name="return-value"></a>반환 값
 
 **double** 형식의 복소수입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-**double** 형식의 complex 클래스에 대한 템플릿 클래스 complex의 명시적 특수화는 해당 특수화가 정의하는 생성자에서만 템플릿 클래스와 다릅니다. **Float** 에서 **double** 로의 변환은 암시적 일 수 있지만 **long double** 에서 **double** 로의 변환은 **명시적**이어야 합니다. **명시적**의 사용은 할당 구문을 사용하는 형식 변환의 시작을 배제합니다.
+**Double** 형식의 복합 클래스에 대 한 클래스 템플릿 복합의 명시적 특수화는 정의 하는 생성자 에서만 클래스 템플릿과 다릅니다. **Float** 에서 **double** 로의 변환은 암시적 일 수 있지만 **long double** 에서 **double** 로의 변환은 **명시적**이어야 합니다. **명시적**의 사용은 할당 구문을 사용하는 형식 변환의 시작을 배제합니다.
 
-템플릿 클래스 `complex`에 대한 자세한 내용은 [complex 클래스](../standard-library/complex-class.md)를 참조하세요. 템플릿 클래스 `complex`의 멤버 목록은 다음을 참조하세요.
+클래스 템플릿 `complex`에 대 한 자세한 내용은 [Complex 클래스](../standard-library/complex-class.md)를 참조 하세요. @No__t_0 클래스 템플릿 멤버 목록은를 참조 하십시오.
 
 ## <a name="example"></a>예제
 
@@ -116,7 +116,7 @@ arg ( c3 ) = 0.896055 radians, which is 51.3402 degrees.
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [complex 클래스](../standard-library/complex-class.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

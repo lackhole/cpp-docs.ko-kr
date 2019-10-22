@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - mem_fun_ref_t class
 ms.assetid: 7dadcac3-8d33-4e4b-a792-81bd53d3df39
-ms.openlocfilehash: 0879736863a9b8052d19cc86dc5636ba14bcf993
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: d8f5ef05d1bdeec694cdf22d7e7a163478127dfc
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240604"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687765"
 ---
-# <a name="memfunreft-class"></a>mem_fun_ref_t 클래스
+# <a name="mem_fun_ref_t-class"></a>mem_fun_ref_t 클래스
 
-허용 하는 어댑터 클래스를 `non_const` 멤버 함수는 인수 없이 참조 인수를 사용 하 여 초기화할 때 단항 함수 개체로 호출할 수 있습니다. C++17에서 제거 하는 C + + 11에서 사용 되지 않습니다.
+참조 인수를 사용 하 여 초기화할 때 인수를 사용 하지 않는 `non_const` 멤버 함수를 단항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다. C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -31,19 +31,19 @@ class mem_fun_ref_t : public unary_function<Type, Result> {
 
 ### <a name="parameters"></a>매개 변수
 
-*_Pm*\
+*Pm \ (_e)*
 함수 개체로 변환할 `Type` 클래스의 멤버 함수 포인터입니다.
 
-*왼쪽*\
-개체는 합니다 *_Pm* 멤버 함수가 호출 됩니다.
+*왼쪽* \
+*_Pm* 멤버 함수가 호출 되는 개체입니다.
 
 ## <a name="return-value"></a>반환 값
 
 조정 가능한 단항 함수입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-복사본을 저장 하는 템플릿 클래스 *_Pm*, 클래스의 멤버 함수에 대 한 포인터 여야 `Type`, 전용 멤버 개체에 있습니다. 해당 멤버 함수 정의 `operator()` 반환 (**왼쪽**합니다. * `_Pm`) ().
+클래스 템플릿은 전용 멤버 개체에서 `Type` 클래스의 멤버 함수에 대 한 포인터 여야 하는 *_Pm*의 복사본을 저장 합니다. @No__t_0 (**left**. * `_Pm`) ()를 반환 하는 것과 같은 멤버 함수를 정의 합니다.
 
 ## <a name="example"></a>예제
 

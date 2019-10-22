@@ -16,16 +16,16 @@ helpviewer_keywords:
 - std::money_put [C++], do_put
 - std::money_put [C++], put
 ms.assetid: f439fd56-c9b1-414c-95e1-66c918c6eee6
-ms.openlocfilehash: b9dff8a871895eee6774b75ca1c83dca6fd42ff3
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: aafa6f9498ee315c25e73833baf3c13d99d36743
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460227"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689313"
 ---
-# <a name="moneyput-class"></a>money_put 클래스
+# <a name="money_put-class"></a>money_put 클래스
 
-통화 값에서 `CharType` 형식의 시퀀스로 변환을 제어하는 로캘 패싯으로 사용 가능한 개체에 대해 설명하는 템플릿 클래스입니다.
+클래스 템플릿은 통화 값을 `CharType` 형식의 시퀀스로 변환 하는 것을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,13 +37,13 @@ class money_put : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*\
+*Chartype* \
 로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
-*OutputIterator*\
+*Outputiterator* \
 통화 put 함수가 출력을 쓰는 반복기의 형식입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 모든 로캘 패싯과 마찬가지로, 고정 개체 ID에는 초기값 0이 저장되어 있습니다. 저장된 값에 액세스를 처음 시도하면 **id**에 고유한 양수 값이 저장됩니다.
 
@@ -63,7 +63,7 @@ class money_put : public locale::facet;
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|Description|
+|멤버 함수|설명|
 |-|-|
 |[do_put](#do_put)|숫자 또는 문자열을 통화 값을 나타내는 문자 시퀀스로 변환하기 위해 호출하는 가상 함수입니다.|
 |[put](#put)|숫자 또는 문자열을 통화 값을 나타내는 문자 시퀀스로 변환합니다.|
@@ -82,9 +82,9 @@ class money_put : public locale::facet;
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 템플릿 매개 변수 **CharType**의 동의어입니다.
+이 형식은 템플릿 매개 변수 **CharType**과 동일한 의미입니다.
 
 ## <a name="do_put"></a>  money_put::do_put
 
@@ -108,32 +108,32 @@ virtual iter_type do_put(
 
 ### <a name="parameters"></a>매개 변수
 
-*그런*\
+*다음* \
 삽입된 문자열의 첫 번째 요소 주소를 지정하는 반복기입니다.
 
-*_Intl*\
+*국제 \ (_e)*
 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*_Iosbase*\
+*_Iosbase* \
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*채우기 (_s)* \
+*채우기 \ (_s)*
 간격에 사용되는 문자입니다.
 
-*짧은*\
+*val* \
 변환할 문자열 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 생성된 마지막 요소에서 한 위치 다음의 위치 주소를 지정하는 출력 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 첫 번째 보호 된 가상 멤버 함수는 [string_type](#string_type) 개체 *val*에서 통화 출력 필드를 생성 하기 위해 *다음* 부터 시작 하 여 순차 요소를 생성 합니다. *Val* 에 의해 제어 되는 시퀀스는 하나 이상의 10 진수 숫자로 시작 해야 하 고, 필요에 따라 빼기 기호 (-)로 시작 하 여 크기를 나타냅니다. 함수는 생성된 통화 출력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다.
 
 두 번째 보호 된 멤버 함수는 첫 번째 값과 동일 하 게 동작 합니다. 단, 실제로는 *val* 을 10 진수의 시퀀스로 변환 합니다.
 
-통화 출력 필드의 형식은 [locale facet](../standard-library/locale-class.md#facet_class) fac에 의해 결정됩니다. 이 항목은 유효 호출 [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc))에서 반환됩니다.
+통화 출력 필드의 형식은 [locale facet](../standard-library/locale-class.md#facet_class) fac에 의해 결정됩니다. 이 항목은 유효 호출 [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)) 호출에서 반환됩니다.
 
 구체적으로는 다음과 같습니다.
 
@@ -177,7 +177,7 @@ virtual iter_type do_put(
 typedef OutputIterator iter_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 템플릿 매개 변수 **OutputIterator**와 동일한 의미입니다.
 
@@ -194,7 +194,7 @@ explicit money_put(size_t _Refs = 0);
 *참조 (_s)* \
 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 *_Refs* 매개 변수에 사용할 수 있는 값은 다음과 같습니다.
 
@@ -202,7 +202,7 @@ explicit money_put(size_t _Refs = 0);
 
 - 1: 개체의 수명을 수동으로 관리해야 합니다.
 
-- \>1: 이러한 값은 정의 되지 않습니다.
+- \> 1: 이러한 값이 정의 되어 있지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
@@ -230,26 +230,26 @@ iter_type put(
 
 ### <a name="parameters"></a>매개 변수
 
-*그런*\
+*다음* \
 삽입된 문자열의 첫 번째 요소 주소를 지정하는 반복기입니다.
 
-*_Intl*\
+*국제 \ (_e)*
 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*_Iosbase*\
+*_Iosbase* \
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*채우기 (_s)* \
+*채우기 \ (_s)*
 간격에 사용되는 문자입니다.
 
-*짧은*\
+*val* \
 변환할 문자열 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 생성된 마지막 요소에서 한 위치 다음의 위치 주소를 지정하는 출력 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 두 구성원 함수는 모두 [do_put](#do_put)( `next`, `_Intl`, `_Iosbase`, `_Fill`, `val`)을 반환합니다.
 
@@ -289,11 +289,11 @@ money_put() = "EUR1.000,12"
 typedef basic_string<CharType, Traits, Allocator> string_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 개체가 소스 시퀀스의 요소 시퀀스를 저장할 수 있는 템플릿 클래스 [basic_string](../standard-library/basic-string-class.md)의 특수화를 설명합니다.
+이 형식은 개체가 소스 시퀀스의 요소 시퀀스를 저장할 수 있는 클래스 템플릿 [basic_string](../standard-library/basic-string-class.md) 의 특수화를 설명 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<locale>](../standard-library/locale.md)\
 [facet 클래스](../standard-library/locale-class.md#facet_class)\
