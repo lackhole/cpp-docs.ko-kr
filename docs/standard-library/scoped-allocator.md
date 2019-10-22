@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - scoped_allocator Header
 ms.assetid: d20175b8-96be-4896-8141-3faba45e0005
-ms.openlocfilehash: 8e1a51f1f9f5693b422ec1e680784a199541bb4a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 403a05a75fe3ce7bc006c903af00e7536f4a6ea2
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451793"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72686472"
 ---
-# <a name="ltscopedallocatorgt"></a>&lt;scoped_allocator&gt;
+# <a name="ltscoped_allocatorgt"></a>&lt;scoped_allocator&gt;
 
-컨테이너 템플릿 클래스 scoped_allocator를 정의합니다.
+컨테이너 클래스 템플릿 scoped_allocator를 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,11 +32,11 @@ ms.locfileid: "68451793"
 
 ### <a name="classes"></a>클래스
 
-|클래스|Description|
+|인스턴스|설명|
 |-|-|
-|[scoped_allocator_adaptor 클래스](../standard-library/scoped-allocator-adaptor-class.md)|할당자 하나 이상의 중첩을 캡슐화하는 템플릿 클래스입니다.|
+|[scoped_allocator_adaptor 클래스](../standard-library/scoped-allocator-adaptor-class.md)|하나 이상의 할당자의 중첩을 캡슐화 하는 클래스 템플릿입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

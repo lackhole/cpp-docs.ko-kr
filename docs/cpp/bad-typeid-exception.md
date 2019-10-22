@@ -1,6 +1,6 @@
 ---
 title: bad_typeid 예외
-ms.date: 11/04/2016
+ms.date: 10/04/2019
 f1_keywords:
 - bad_typeid
 - bad_typeid_cpp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - bad_typeid exception
 - exceptions [C++], bad_typeid
 ms.assetid: 5963ed58-4ede-4597-957d-f7bbd06299c2
-ms.openlocfilehash: 2ff7339b02cfe8c21cebfa7d9bb0cc98b3e08799
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 6410f27342ed40300ff236ee1c47ada740255f84
+ms.sourcegitcommit: c51b2c665849479fa995bc3323a22ebe79d9d7ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68242270"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71998805"
 ---
-# <a name="badtypeid-exception"></a>bad_typeid 예외
+# <a name="bad_typeid-exception"></a>bad_typeid 예외
 
 **typeid**의 피연산자가 NULL 포인터인 경우 [typeid 연산자](../cpp/typeid-operator.md)가 **bad_typeid** 예외를 throw합니다.
 
@@ -49,7 +49,7 @@ public:
 ```cpp
 // expre_bad_typeid.cpp
 // compile with: /EHsc /GR
-#include <typeinfo.h>
+#include <typeinfo>
 #include <iostream>
 
 class A{
@@ -78,7 +78,7 @@ catch (bad_typeid){
 Object is NULL
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[런타임 형식 정보](../cpp/run-time-type-information.md)<br/>
-[키워드(C++)](../cpp/keywords-cpp.md)
+[런타임 형식 정보](../cpp/run-time-type-information.md)\
+[C++ 키워드](../cpp/keywords-cpp.md)

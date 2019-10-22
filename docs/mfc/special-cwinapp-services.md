@@ -39,11 +39,11 @@ ms.locfileid: "69511341"
 ---
 # <a name="special-cwinapp-services"></a>특수 CWinApp 서비스
 
-메시지 루프를 실행 하 고 응용 프로그램을 초기화 하 고 그 후에 정리 하는 기회를 제공 하는 것 외에도 [CWinApp](../mfc/reference/cwinapp-class.md) 는 여러 다른 서비스를 제공 합니다.
+메시지 루프를 실행하고 응용 프로그램을 초기화하며 그 후에 정리할 기회를 제공하는 것 이외에도 [CWinApp](../mfc/reference/cwinapp-class.md)은 다른 여러 가지 서비스를 제공합니다.
 
 ##  <a name="_core_shell_registration"></a>셸 등록
 
-기본적으로 MFC 애플리케이션 마법사를 사용하면 파일 탐색기 또는 파일 관리자에서 두 번 클릭하여 애플리케이션에서 생성된 데이터 파일을 열 수 있습니다. 응용 프로그램이 MDI 응용 프로그램이 고 응용 프로그램이 만드는 파일에 대 한 확장을 지정 하는 경우 MFC 응용 프로그램 마법사는 [CWinApp](../mfc/reference/cwinapp-class.md) 의 [RegisterShellFileTypes](../mfc/reference/cwinapp-class.md#registershellfiletypes) 및 [EnableShellOpen](../mfc/reference/cwinapp-class.md#enableshellopen) 멤버 함수에 대 한 호출을 추가 합니다. 작성 하는 재정의입니다. `InitInstance`
+기본적으로 MFC 애플리케이션 마법사를 사용하면 파일 탐색기 또는 파일 관리자에서 두 번 클릭하여 애플리케이션에서 생성된 데이터 파일을 열 수 있습니다. 응용 프로그램이 MDI 응용 프로그램이고 응용 프로그램에서 만든 파일의 확장명을 지정하면, MFC 응용 프로그램 마법사는 [CWinApp](../mfc/reference/cwinapp-class.md#registershellfiletypes)의 [RegisterShellFileTypes](../mfc/reference/cwinapp-class.md#enableshellopen) 및 [EnableShellOpen](../mfc/reference/cwinapp-class.md) 멤버 함수에 대한 호출을 마법사가 작성하는 `InitInstance` 재정의에 추가합니다.
 
 `RegisterShellFileTypes`는 사용자의 애플리케이션 문서 형식을 파일 탐색기 또는 파일 관리자에 등록합니다. 이 함수는 Windows에서 유지 관리되는 등록 데이터베이스에 항목을 추가합니다. 항목은 각 문서 유형을 등록하고, 파일 확장자를 해당 파일 형식과 연결하고, 애플리케이션을 열기 위한 명령줄을 지정하고, 해당 형식의 문서를 열기 위해 DDE(동적 데이터 교환) 명령을 지정합니다.
 
@@ -51,9 +51,9 @@ ms.locfileid: "69511341"
 
 `CWinApp`의 이러한 자동 등록 지원 덕분에 애플리케이션에 .reg 파일을 포함하거나 특별한 설치 작업을 수행할 필요가 없습니다.
 
-[InitInstance](../mfc/reference/cwinapp-class.md#initinstance) 함수에서 [GdiplusStartup](/windows/win32/api/gdiplusinit/nf-gdiplusinit-gdiplusstartup) 를 호출 하 여 응용 프로그램에 대 한 gdi +를 초기화 하려면 gdi + 백그라운드 스레드를 표시 하지 않아야 합니다.
+응용 프로그램을 위해 GDI+를 초기화하려는 경우 ([InitInstance](../mfc/reference/cwinapp-class.md#initinstance) 함수에서 [GdiplusStartup](/windows/win32/api/gdiplusinit/nf-gdiplusinit-gdiplusstartup)를 호출하는 경우) GDI+ 백그라운드 스레드를 중지해야 합니다.
 
-`SuppressBackgroundThread` [GdiplusStartupInput](/windows/win32/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupinput) 구조체의 멤버를 **TRUE**로 설정 하 여이 작업을 수행할 수 있습니다. Gdi + 백그라운드 스레드 `NotificationHook` 를 표시 하지 않는 경우 및 `NotificationUnhook` 호출은 응용 프로그램의 메시지 루프를 시작 하기 직전에 수행 해야 합니다. 이러한 호출에 대 한 자세한 내용은 [GdiplusStartupOutput](/windows/win32/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupoutput)를 참조 하세요. 따라서 호출 `GdiplusStartup` 하는 데 적합 한 위치와 후크 알림 함수는 아래와 같이 virtual function [CWinApp:: Run](../mfc/reference/cwinapp-class.md#run)의 재정의에 있습니다.
+이 작업은 [GdiplusStartupInput](/windows/win32/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupinput) 구조체의 `SuppressBackgroundThread` 멤버를 **TRUE**로 설정하여 수행할 수 있습니다. GDI+ 백그라운드 스레드를 중지할 때 응용 프로그램의 메시지 루프를 시작하고 종료하기 전에 `NotificationHook`과 `NotificationUnhook`을 호출합니다. 이러한 호출에 대한 자세한 내용은 [GdiplusStartupOutput](/windows/win32/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupoutput)를 참조합니다. 아래와 같이 `GdiplusStartup` 및 후크 알림 함수를 호출하기에 좋은 위치는 가상 함수 [CWinApp:: Run](../mfc/reference/cwinapp-class.md#run)의 재정의 내에서입니다.
 
 [!code-cpp[NVC_MFCDocView#6](../mfc/codesnippet/cpp/special-cwinapp-services_1.cpp)]
 
@@ -63,7 +63,7 @@ ms.locfileid: "69511341"
 
 파일은 파일 관리자 또는 파일 탐색기의 파일 보기 창에서 애플리케이션의 창으로 끌어 놓을 수 있습니다. 예를 들어 MDI 애플리케이션의 기본 창에 하나 이상의 파일을 끌어 놓을 수 있도록 설정해야 할 수 있습니다. 여기에서 애플리케이션은 해당 파일에 대한 파일 이름을 검색하고 MDI 자식 창을 열 수 있습니다.
 
-응용 프로그램에서 파일 끌어서 놓기를 사용 하기 위해 MFC 응용 프로그램 마법사는의 주 프레임 `InitInstance`창에 대 한 [CWnd](../mfc/reference/cwnd-class.md) 멤버 함수 [dragacceptfiles](../mfc/reference/cwnd-class.md#dragacceptfiles) 에 대 한 호출을 작성 합니다. 끌어서 놓기 기능을 구현할 필요가 없으면 이 호출을 제거할 수 있습니다.
+응용 프로그램에서 파일 끌어서 놓기를 활성화하기 위해 MFC 응용 프로그램 마법사는 `InitInstance`의 기본 프레임 창에 대하여 [CWnd](../mfc/reference/cwnd-class.md) 멤버 함수 [DragAcceptFiles](../mfc/reference/cwnd-class.md#dragacceptfiles)를 호출합니다. 끌어서 놓기 기능을 구현할 필요가 없으면 이 호출을 제거할 수 있습니다.
 
 > [!NOTE]
 >  또한 OLE를 사용하면 문서 간 또는 문서 내에서의 데이터 끌기와 같은 보다 일반적인 끌어서 놓기 기능을 구현할 수도 있습니다. 자세한 내용은 [끌어서 놓기 (OLE)](../mfc/drag-and-drop-ole.md)문서를 참조 하세요.

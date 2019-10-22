@@ -6,14 +6,14 @@ f1_keywords:
 helpviewer_keywords:
 - match_results class
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
-ms.openlocfilehash: 72a948c7f8422b36b94a16cdb2c815bca92d20c7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: c282791fb0ff85c0c8818c6905c51703614f4675
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456383"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689393"
 ---
-# <a name="matchresults-class"></a>match_results 클래스
+# <a name="match_results-class"></a>match_results 클래스
 
 부분 일치 시퀀스를 보유합니다.
 
@@ -26,15 +26,15 @@ class match_results
 
 ## <a name="parameters"></a>매개 변수
 
-*BidIt*\
+*Bidit* \
 부분 일치에 대한 반복기 형식입니다.
 
-*#C4*\
+*할당* \
 스토리지 관리를 위한 할당자의 형식입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-템플릿 클래스는 정규식 검색에서 생성된 `sub_match<BidIt>` 형식의 수정할 수 없는 요소 시퀀스를 제어하는 개체에 대해 설명합니다. 각 요소는 해당 요소에 해당하는 캡처 그룹과 일치하는 하위 시퀀스를 가리킵니다.
+클래스 템플릿은 정규식 검색에 의해 생성 된 `sub_match<BidIt>` 형식 요소의 수정할 수가 없는 시퀀스를 제어 하는 개체를 설명 합니다. 각 요소는 해당 요소에 해당하는 캡처 그룹과 일치하는 하위 시퀀스를 가리킵니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -68,11 +68,11 @@ class match_results
 |[get_allocator](#get_allocator)|저장된 할당자를 반환합니다.|
 |[length](#length)|부분 일치의 길이를 반환합니다.|
 |[max_size](#max_size)|부분 일치의 최대 수를 가져옵니다.|
-|[position](#position)|하위 그룹의 시작 오프셋을 가져옵니다.|
-|[prefix](#prefix)|첫 번째 부분 일치 전의 시퀀스를 가져옵니다.|
+|[놓을](#position)|하위 그룹의 시작 오프셋을 가져옵니다.|
+|[접두사](#prefix)|첫 번째 부분 일치 전의 시퀀스를 가져옵니다.|
 |[size](#size)|부분 일치 수를 계산합니다.|
 |[str](#str)|부분 일치 항목을 반환합니다.|
-|[suffix](#suffix)|마지막 부분 일치 후 시퀀스를 가져옵니다.|
+|[접미어](#suffix)|마지막 부분 일치 후 시퀀스를 가져옵니다.|
 |[swap](#swap)|두 match_results 개체를 바꿉니다.|
 
 ### <a name="operators"></a>연산자
@@ -196,7 +196,7 @@ empty == false
 typedef Alloc allocator_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 Typedef는 템플릿 인수 *할당*의 동의어입니다.
 
@@ -208,7 +208,7 @@ Typedef는 템플릿 인수 *할당*의 동의어입니다.
 const_iterator begin() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 임의 액세스 반복기를 반환합니다.
 
@@ -220,7 +220,7 @@ const_iterator begin() const;
 typedef typename iterator_traits<BidIt>::value_type char_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 typedef는 `iterator_traits<BidIt>::value_type`형식의 동의어로, 검색된 문자 시퀀스의 요소 형식입니다.
 
@@ -232,7 +232,7 @@ typedef는 `iterator_traits<BidIt>::value_type`형식의 동의어로, 검색된
 typedef T0 const_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 typedef는 제어되는 시퀀스의 상수 임의 액세스 반복기로 사용될 수 있는 개체를 설명합니다.
 
@@ -244,7 +244,7 @@ typedef는 제어되는 시퀀스의 상수 임의 액세스 반복기로 사용
 typedef const typename Alloc::const_reference const_reference;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 typedef는 제어되는 시퀀스의 요소에 대한 상수 참조로 사용될 수 있는 개체를 설명합니다.
 
@@ -256,7 +256,7 @@ typedef는 제어되는 시퀀스의 요소에 대한 상수 참조로 사용될
 typedef typename iterator_traits<BidIt>::difference_type difference_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 typedef는 `iterator_traits<BidIt>::difference_type`형식의 동의어이며, 제어되는 시퀀스의 요소를 가리키는 두 반복기 사이의 차이를 나타낼 수 있는 개체에 대해 설명합니다.
 
@@ -268,7 +268,7 @@ typedef는 `iterator_traits<BidIt>::difference_type`형식의 동의어이며, �
 bool empty() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 정규식 검색에 실패한 경우에만 true를 반환합니다.
 
@@ -280,7 +280,7 @@ bool empty() const;
 const_iterator end() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 반복기를 반환합니다.
 
@@ -298,21 +298,21 @@ string_type format(const string_type& fmt, match_flag_type flags = format_defaul
 
 ### <a name="parameters"></a>매개 변수
 
-*OutIt*\
+*OutIt* \
 출력 반복기 형식입니다.
 
 *out*\
 쓸 출력 스트림입니다.
 
-*bcp.fmt*\
+*fmt* \
 서식 문자열입니다.
 
-*flags*\
+*플래그* \
 서식 플래그입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-각 멤버 함수는 *fmt*형식의 컨트롤 아래에 서식 있는 텍스트를 생성 합니다. 첫 번째 멤버 함수는 *해당 인수에* 의해 정의 된 시퀀스에 서식 있는 텍스트를 쓰고 *를 반환 합니다*. 두 번째 멤버 함수는 서식 지정된 텍스트의 복사본이 보관된 문자열 개체를 반환합니다.
+각 멤버 함수는 *fmt*형식의 컨트롤 아래에 서식 있는 텍스트를 생성 합니다. 첫 번째 멤버 함수는 해당 인수에 의해 정의 된 시퀀스에 서식 있는 텍스트를 *쓰고를 반환* *합니다.* 두 번째 멤버 함수는 서식 있는 텍스트의 복사본을 포함 하는 문자열 개체를 반환 합니다.
 
 서식 있는 텍스트를 생성하려면 서식 문자열의 리터럴 텍스트를 일반적으로 대상 시퀀스로 복사합니다. 서식 문자열의 각 이스케이프 시퀀스가 대표 텍스트로 대체됩니다. 복사 및 교체 정보는 함수에 전달된 서식 플래그에서 제어합니다.
 
@@ -324,7 +324,7 @@ string_type format(const string_type& fmt, match_flag_type flags = format_defaul
 allocator_type get_allocator() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 `*this`에서 사용된 할당자 개체의 복사본을 반환하여 해당 `sub_match` 개체를 할당합니다.
 
@@ -336,7 +336,7 @@ allocator_type get_allocator() const;
 typedef const_iterator iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 제어되는 시퀀스의 임의 액세스 반복기로 사용될 수 있는 개체를 설명합니다.
 
@@ -350,10 +350,10 @@ difference_type length(size_type sub = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*부분*\
+*sub* \
 부분 일치 항목의 인덱스입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 `(*this)[sub].length()`를 반환합니다.
 
@@ -369,15 +369,15 @@ match_results(const match_results& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*#c4*\
+*할당* \
 저장할 할당자 개체입니다.
 
-*오른쪽*\
+*오른쪽* \
 복사할 match_results 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-첫 번째 생성자는 부분 일치 항목을 보유하지 않는 `match_results` 개체를 구성합니다. 두 번째 생성자는 `match_results` *오른쪽*의 복사본 인 개체를 생성 합니다.
+첫 번째 생성자는 부분 일치 항목을 보유하지 않는 `match_results` 개체를 구성합니다. 두 번째 생성자는 *오른쪽*의 복사본 인 `match_results` 개체를 생성 합니다.
 
 ## <a name="max_size"></a>  match_results::max_size
 
@@ -387,7 +387,7 @@ match_results(const match_results& right);
 size_type max_size() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 개체가 제어할 수 있는 가장 긴 시퀀스의 길이를 반환합니다.
 
@@ -401,12 +401,12 @@ match_results& operator=(const match_results& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*\
+*오른쪽* \
 복사할 match_results 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 연산자는로 제어 되 `*this` 는 시퀀스를 *right*로 제어 되는 시퀀스의 복사본으로 바꿉니다.
+멤버 연산자는 `*this`로 제어 되는 시퀀스를 *right*로 제어 되는 시퀀스의 복사본으로 바꿉니다.
 
 ## <a name="op_at"></a>  match_results::operator[]
 
@@ -421,9 +421,9 @@ const_reference operator[](size_type n) const;
 *n*\
 부분 일치 항목의 인덱스입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수는 제어 되는 시퀀스의 요소 *n* 에 대 한 참조를 반환 하거나, 캡처 그룹 `sub_match` *n* 이 일치 항목의 일부가 아닌 경우 `size() <= n` 빈 개체에 대 한 참조를 반환 합니다.
+멤버 함수는 제어 되는 시퀀스의 요소 *n* 에 대 한 참조를 반환 하거나, `size() <= n` 또는 캡처 그룹 *n* 이 일치 항목의 일부가 아닌 경우 빈 `sub_match` 개체에 대 한 참조를 반환 합니다.
 
 ## <a name="position"></a>  match_results::position
 
@@ -435,10 +435,10 @@ difference_type position(size_type sub = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*부분*\
+*sub* \
 부분 일치 항목의 인덱스입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 `std::distance(prefix().first, (*this)[sub].first)`, 즉 대상 시퀀스의 첫 번째 문자부터 제어되는 시퀀스의 `n` 요소가 가리키는 부분 일치의 첫 번째 문자까지 거리를 반환합니다.
 
@@ -450,7 +450,7 @@ difference_type position(size_type sub = 0) const;
 const_reference prefix() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 대상 시퀀스의 시작에서 시작되고 `sub_match<BidIt>` 에서 끝나는 문자 시퀀스 즉, 일치하는 하위 시퀀스 앞에 오는 텍스트를 가리키는 `(*this)[0].first`형식의 개체에 대한 참조를 반환합니다.
 
@@ -462,7 +462,7 @@ const_reference prefix() const;
 typedef const_reference reference;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 `const_reference`형식의 동의어입니다.
 
@@ -474,7 +474,7 @@ typedef const_reference reference;
 size_type size() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 검색에 사용된 정규식에서 캡처 그룹 수보다 1이 큰 수를 반환하고, 검색되지 않은 경우 0을 반환합니다.
 
@@ -486,7 +486,7 @@ size_type size() const;
 typedef typename Alloc::size_type size_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 `Alloc::size_type`형식의 동의어입니다.
 
@@ -500,10 +500,10 @@ string_type str(size_type sub = 0) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*부분*\
+*sub* \
 부분 일치 항목의 인덱스입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 `string_type((*this)[sub])`를 반환합니다.
 
@@ -515,7 +515,7 @@ string_type str(size_type sub = 0) const;
 typedef basic_string<char_type> string_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 `basic_string<char_type>`형식의 동의어입니다.
 
@@ -527,7 +527,7 @@ typedef basic_string<char_type> string_type;
 const_reference suffix() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 `sub_match<BidIt>` 에서 시작되고 대상 시퀀스의 끝에서 끝나는 문자 시퀀스 즉, 일치하는 하위 시퀀스 뒤에 오는 텍스트를 가리키는 `(*this)[size() - 1].second` 형식의 개체에 대한 참조를 반환합니다.
 
@@ -541,12 +541,12 @@ void swap(const match_results& right) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*\
+*오른쪽* \
 바꾸려는 match_results 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수는 및의 `*this` 내용을 일정 한 *시간 내에* 교환 하 고 예외를 throw 하지 않습니다.
+멤버 함수는 `*this`의 내용을 *일정 한 시간 내에* 교환 하 고 예외를 throw 하지 않습니다.
 
 ## <a name="value_type"></a>  match_results::value_type
 
@@ -556,10 +556,10 @@ void swap(const match_results& right) throw();
 typedef sub_match<BidIt> value_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 typedef는 `sub_match<BidIt>`형식의 동의어입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [\<regex>](../standard-library/regex.md)

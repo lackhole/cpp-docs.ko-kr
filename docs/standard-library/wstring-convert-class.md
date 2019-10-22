@@ -22,16 +22,16 @@ helpviewer_keywords:
 - std::wstring_convert [C++], converted
 - std::wstring_convert [C++], state
 ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
-ms.openlocfilehash: 35689f79f8987cb55c4578869369f35d8656faec
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: ce03510bec05f3e5e770e930759648c9add0387f
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450894"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684048"
 ---
-# <a name="wstringconvert-class"></a>wstring_convert 클래스
+# <a name="wstring_convert-class"></a>wstring_convert 클래스
 
-템플릿 클래스 `wstring_convert`는 와이드 문자열과 바이트 문자열 간의 변환을 수행합니다.
+클래스 템플릿 `wstring_convert` 와이드 문자열과 바이트 문자열 간의 변환을 수행 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,17 +42,17 @@ class wstring_convert
 
 ### <a name="parameters"></a>매개 변수
 
-*Codecvt*\
+*Codecvt* \
 변환 개체를 나타내는 [locale](../standard-library/locale-class.md) 패싯입니다.
 
-*E*\
+*Elem* \
 와이드 문자 요소 형식입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-템플릿 클래스는 `std::basic_string<Elem>` 클래스의 와이드 문자열 개체와 `std::basic_string<char>` 클래스(`std::string`이라고도 함)의 바이트 문자열 개체 간 변환을 제어하는 개체를 설명합니다. 템플릿 클래스는 `wide_string` 및 `byte_string` 형식을 이러한 두 형식의 동의어로 정의합니다. `Elem` 값(`wide_string` 개체에 저장) 시퀀스와 멀티바이트 시퀀스(`byte_string` 개체에 저장) 간의 변환은 표준 코드 변환 패싯 `std::codecvt<Elem, char, std::mbstate_t>`의 요구 사항을 충족하는 `Codecvt<Elem, char, std::mbstate_t>` 클래스의 개체에 의해 수행됩니다.
+클래스 템플릿에서는 클래스 `std::basic_string<Elem>`의 와이드 문자열 개체와 `std::basic_string<char>` 클래스 (`std::string` 라고도 함)의 바이트 문자열 개체 간 변환을 제어 하는 개체에 대해 설명 합니다. 클래스 템플릿은 이러한 두 형식에 대 한 `wide_string` 및 `byte_string` 형식을 동의어로 정의 합니다. `Elem` 값(`wide_string` 개체에 저장) 시퀀스와 멀티바이트 시퀀스(`byte_string` 개체에 저장) 간의 변환은 표준 코드 변환 패싯 `std::codecvt<Elem, char, std::mbstate_t>`의 요구 사항을 충족하는 `Codecvt<Elem, char, std::mbstate_t>` 클래스의 개체에 의해 수행됩니다.
 
-이 템플릿 클래스의 개체는 다음을 저장합니다.
+이 클래스 템플릿의 개체는 다음을 저장 합니다.
 
 - 오류 발생 시 표시할 바이트 문자열
 
@@ -66,13 +66,13 @@ class wstring_convert
 
 ### <a name="constructors"></a>생성자
 
-|생성자|Description|
+|생성자|설명|
 |-|-|
 |[wstring_convert](#wstring_convert)|`wstring_convert` 형식의 개체를 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|Description|
+|형식 이름|설명|
 |-|-|
 |[byte_string](#byte_string)|바이트 문자열을 나타내는 형식입니다.|
 |[wide_string](#wide_string)|와이드 문자열을 나타내는 형식입니다.|
@@ -102,7 +102,7 @@ class wstring_convert
 typedef std::basic_string<char> byte_string;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 `std::basic_string<char>`의 동의어입니다.
 
@@ -118,7 +118,7 @@ size_t converted() const;
 
 성공적인 변환 수입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 성공적인 변환 수가 변환 개수 개체에 저장됩니다.
 
@@ -147,7 +147,7 @@ wide_string from_bytes(const char* first, const char* last);
 
 변환에서 생성되는 와이드 문자열 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 [변환 상태](../standard-library/wstring-convert-class.md) 개체가 명시적 값을 사용 하 여 생성 *되지 않은* 경우 변환이 시작 되기 전의 기본값 (초기 변환 상태)으로 설정 됩니다. 그렇지 않으면 변경되지 않습니다.
 
@@ -161,7 +161,7 @@ wide_string from_bytes(const char* first, const char* last);
 typedef typename wide_string::traits_type::int_type int_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 `wide_string::traits_type::int_type`의 동의어입니다.
 
@@ -177,7 +177,7 @@ state_type state() const;
 
 변환 상태를 나타내는 [변환 상태](../standard-library/wstring-convert-class.md) 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 ## <a name="state_type"></a>  wstring_convert::state_type
 
@@ -187,7 +187,7 @@ state_type state() const;
 typedef typename Codecvt::state_type state_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 형식은 변환 상태를 나타낼 수 있는 개체에 대해 설명합니다. 이 형식은 `Codecvt::state_type`의 동의어입니다.
 
@@ -204,7 +204,7 @@ byte_string to_bytes(const Elem* first, const Elem* last);
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|Description|
+|매개 변수|설명|
 |---------------|-----------------|
 |*Char*|변환할 와이드 문자입니다.|
 |*Wptr*|변환할 null로 끝나는 시퀀스로, `wptr`에서 시작되며 C 스타일입니다.|
@@ -212,7 +212,7 @@ byte_string to_bytes(const Elem* first, const Elem* last);
 |*first*|변환할 요소의 범위에서 첫 번째 요소입니다.|
 |*last*|변환할 요소의 범위에서 마지막 요소입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 [변환 상태](../standard-library/wstring-convert-class.md) 개체가 명시적 값을 사용 하 여 생성 *되지 않은* 경우 변환이 시작 되기 전의 기본값 (초기 변환 상태)으로 설정 됩니다. 그렇지 않으면 변경되지 않습니다.
 
@@ -226,7 +226,7 @@ byte_string to_bytes(const Elem* first, const Elem* last);
 typedef std::basic_string<Elem> wide_string;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 `std::basic_string<Elem>`의 동의어입니다.
 
@@ -249,6 +249,6 @@ wstring_convert(const byte_string& _Berr, const wide_string& Werr = wide_string(
 |*_Berr*|오류 시에 표시할 [byte_string](#byte_string)입니다.|
 |*Werr*|오류 시에 표시할 [wide_string](#wide_string)입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 첫 번째 생성자는 [변환 개체](../standard-library/wstring-convert-class.md)에 *Pcvt_arg*를 저장합니다.

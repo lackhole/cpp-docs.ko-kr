@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - collate_byname class
 ms.assetid: 3dc380df-867c-4763-b60e-ba62a8e63ca7
-ms.openlocfilehash: b8ed428da05e706796a981b8ca9d601033156c6f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3e9a256ac7bdb5f6d077746fe2a08990ed41e931
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458619"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688264"
 ---
-# <a name="collatebyname-class"></a>collate_byname 클래스
+# <a name="collate_byname-class"></a>collate_byname 클래스
 
-지정된 로캘의 데이터 정렬 패싯으로 사용할 수 있는 개체를 설명하는 파생된 템플릿 클래스입니다. 이 클래스를 사용하여 문자열 정렬 규약과 관련된 문화 영역별 정보를 검색할 수 있습니다.
+지정 된 로캘의 collate 패싯으로 사용할 수 있는 개체를 설명 하는 파생 된 클래스 템플릿으로, 문자열 정렬 규칙에 대 한 문화권 영역과 관련 된 정보를 검색할 수 있도록 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,15 +39,15 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*_Locname*\
+*_Locname* \
 명명된 로캘입니다.
 
 *참조 (_s)* \
-초기 참조 개수입니다.
+초기 참조 횟수
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-이 템플릿 클래스는 [collate](../standard-library/collate-class.md#collate)\<CharType> 형식의 [로캘 패싯](../standard-library/locale-class.md#facet_class)으로 사용할 수 있는 개체를 설명합니다. 해당 동작은 [명명](../standard-library/locale-class.md#name) 된 로캘 *_locname*에 의해 결정 됩니다. 각 생성자는 [collate](../standard-library/collate-class.md#collate)\<CharType>( `_Refs`)를 통해 해당 기본 개체를 초기화합니다.
+클래스 템플릿은 > \<CharType [collate](../standard-library/collate-class.md#collate) 형식의 [로캘 패싯](../standard-library/locale-class.md#facet_class) 으로 사용할 수 있는 개체를 설명 합니다. 해당 동작은 [명명](../standard-library/locale-class.md#name) 된 로캘 *_locname*에 의해 결정 됩니다. 각 생성자는 [collate](../standard-library/collate-class.md#collate)\<CharType>( `_Refs`)를 통해 해당 기본 개체를 초기화합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -55,6 +55,6 @@ protected:
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

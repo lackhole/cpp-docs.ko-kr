@@ -8,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - std::tuple_size
 ms.assetid: 73852fc5-eb68-41f1-8379-465cedc2314a
-ms.openlocfilehash: 1c03c02dde3178a257a83720ff437f7981f5f7ed
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 361545bee020d6c3624d1d45743abcb9c2b4ac85
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68241549"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688848"
 ---
-# <a name="tuplesize-class"></a>tuple_size 클래스
+# <a name="tuple_size-class"></a>tuple_size 클래스
 
 `tuple` 에 포함된 요소 수를 보관합니다.
 
@@ -60,29 +60,29 @@ template <class T> inline constexpr size_t tuple_size_v = tuple_size<T>::value;
 
 ### <a name="parameters"></a>매개 변수
 
-*튜플*\
+*튜플* \
 튜플의 형식입니다.
 
-*Elem*\
+*Elem* \
 배열 요소의 형식입니다.
 
-*크기*\
+*크기* \
 배열의 크기입니다.
 
-*T1*\
+*T1* \
 쌍의 첫 번째 구성원 형식입니다.
 
-*T2*\
+*T2* \
 쌍의 두 번째 구성원 형식입니다.
 
 *형식*\
 튜플 요소의 형식입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-템플릿 클래스에 멤버가 `value` 는 정수 계열 상수 식 값은 튜플 형식의 범위로 *튜플*합니다.
+클래스 템플릿에는 값이 튜플 형식 *튜플의*범위를 갖는 정수 계열 상수 식인 멤버가 `value` 있습니다.
 
-배열에 대 한 템플릿 특수화에 멤버가 `value` 는 정수 계열 상수 식 값인 *크기*, 배열의 크기는 합니다.
+배열의 템플릿 특수화에는 값이 *size*(배열의 크기인) 인 정수 계열 상수 식인 멤버가 `value` 있습니다.
 
 쌍의 템플릿 특수화에는 해당 값이 2인 정수 계열 상수 식 `value` 구성원이 있습니다.
 

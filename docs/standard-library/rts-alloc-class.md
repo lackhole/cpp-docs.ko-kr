@@ -12,16 +12,16 @@ helpviewer_keywords:
 - stdext::rts_alloc [C++], deallocate
 - stdext::rts_alloc [C++], equals
 ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f
-ms.openlocfilehash: 065c0eaf936a438f48dbb8aa28704e0f53926a03
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b0ec7d4d3dbe5ef1334bf3c394819a4f5235c28c
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451133"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688990"
 ---
-# <a name="rtsalloc-class"></a>rts_alloc 클래스
+# <a name="rts_alloc-class"></a>rts_alloc 클래스
 
-rts_alloc 템플릿 클래스는 캐시 인스턴스의 배열을 보유하고 컴파일 시간 대신 런타임에 할당 및 할당 취소에 사용할 인스턴스를 결정하는 [filter](../standard-library/allocators-header.md)를 설명합니다.
+Rts_alloc 클래스 템플릿에서는 캐시 인스턴스의 배열을 보유 하 고 컴파일 시간 대신 런타임에 할당 및 할당 취소에 사용할 인스턴스를 결정 하는 [필터](../standard-library/allocators-header.md) 에 대해 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,9 +36,9 @@ class rts_alloc
 |---------------|-----------------|
 |*캐시*|배열에 포함된 캐시 인스턴스의 형식입니다. [cache_chunklist Class](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md) 또는 [cache_suballoc](../standard-library/cache-suballoc-class.md)일 수 있습니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-이 템플릿 클래스는 여러 개의 블록 할당자 인스턴스를 보유하고 컴파일 시간 대신 런타임에 할당 또는 할당 취소에 사용할 인스턴스를 결정합니다. rebind를 컴파일할 수 없는 컴파일러에서 사용됩니다.
+이 클래스 템플릿은 여러 개의 블록 할당자 인스턴스를 보유 하 고 컴파일 시간 대신 런타임에 할당 또는 할당 취소에 사용할 인스턴스를 결정 합니다. rebind를 컴파일할 수 없는 컴파일러에서 사용됩니다.
 
 ### <a name="member-functions"></a>멤버 함수
 
@@ -72,9 +72,9 @@ void *allocate(std::size_t count);
 
 할당된 개체에 대한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수는를 `caches[_IDX].allocate(count)`반환 합니다. 여기서 `_IDX` 인덱스는 요청 된 블록 크기 *수*에 의해 결정 되거나, *개수가* 너무 크면를 반환 `operator new(count)`합니다. `cache`를 반환합니다.
+멤버 함수는 `caches[_IDX].allocate(count)`를 반환 합니다. 여기서 인덱스 `_IDX` 요청 된 블록 크기 *수*에 따라 결정 되거나, *개수가* 너무 크면 `operator new(count)` 반환 됩니다. `cache`를 반환합니다.
 
 ## <a name="deallocate"></a>  rts_alloc::deallocate
 
@@ -91,9 +91,9 @@ void deallocate(void* ptr, std::size_t count);
 |*ptr*|스토리지에서 할당을 취소할 첫 번째 개체에 대한 포인터입니다.|
 |*count*|스토리지에서 할당을 취소할 개체의 수입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수는를 `caches[_IDX].deallocate(ptr, count)`호출 합니다. 여기서 `_IDX` 인덱스는 요청 된 블록 크기 *수*에 의해 결정 되거나, *개수가* 너무 크면를 반환 `operator delete(ptr)`합니다.
+멤버 함수는 `caches[_IDX].deallocate(ptr, count)`를 호출 합니다. 여기서 인덱스 `_IDX` 요청 된 블록 크기 *수*에 따라 결정 되거나, *개수가* 너무 크면 `operator delete(ptr)`을 반환 합니다.
 
 ## <a name="equals"></a>  rts_alloc::equals
 
@@ -107,14 +107,14 @@ bool equals(const sync<_Cache>& _Other) const;
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*_Cache*|필터와 연결된 캐시 개체입니다.|
-|*_Other*|같은지 비교할 캐시 개체입니다.|
+|*캐시 (_s)*|필터와 연결된 캐시 개체입니다.|
+|*_ 기타*|같은지 비교할 캐시 개체입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-의`caches[0].equals(other.caches[0])`결과 이면 true이 고, 그렇지 않으면 **false**입니다. `caches`는 캐시 개체의 배열을 나타냅니다.
+`caches[0].equals(other.caches[0])`의 결과 이면 **true** 입니다. 그렇지 않으면 **false**입니다. `caches`는 캐시 개체의 배열을 나타냅니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)\
 [\<allocators>](../standard-library/allocators-header.md)

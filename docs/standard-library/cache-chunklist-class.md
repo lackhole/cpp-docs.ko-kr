@@ -10,14 +10,14 @@ helpviewer_keywords:
 - stdext::cache_chunklist [C++], allocate
 - stdext::cache_chunklist [C++], deallocate
 ms.assetid: af19eccc-4ae7-4a34-bbb2-81e397424cb9
-ms.openlocfilehash: 73730e0a4a22e7f5e63809cc2c1603cbda1ab596
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 035e5153b4e4c84743a64bcc9cec24920a6a0336
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449668"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688358"
 ---
-# <a name="cachechunklist-class"></a>cache_chunklist 클래스
+# <a name="cache_chunklist-class"></a>cache_chunklist 클래스
 
 단일 크기의 메모리 블록을 할당하고 할당 취소하는 [블록 할당자](../standard-library/allocators-header.md)를 정의합니다.
 
@@ -34,11 +34,11 @@ class cache_chunklist
 |---------------|-----------------|
 |*Sz*|할당할 배열의 요소 수입니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-이 템플릿 클래스는 **new 연산자** 를 사용 하 여 원시 메모리의 청크를 할당 하 고, 필요한 경우 메모리 블록에 대 한 저장소를 할당 하는 블록을 할당 합니다. 각 청크에 대 한 별도의 사용 가능한 목록에 할당 취소 된 메모리 블록을 저장 하 고, **delete 연산자** 를 사용 하 여 메모리 블록을 사용 하 고 있지 않은 경우 청크의 할당을 취소 합니다.
+이 클래스 템플릿은 **operator new** 를 사용 하 여 원시 메모리의 청크를 할당 하 고, 필요한 경우 메모리 블록에 대 한 저장소를 할당 하는 블록을 할당 합니다. 각 청크에 대 한 별도의 사용 가능한 목록에 할당 취소 된 메모리 블록을 저장 하 고, **delete 연산자** 를 사용 하 여 메모리 블록을 사용 하 고 있지 않은 경우 청크의 할당을 취소 합니다.
 
-각 메모리 블록은 사용 가능한 메모리의 *Sz* 바이트와 해당 메모리가 속한 청크에 대 한 포인터를 포함 합니다. 각 청크는 `Nelts` 메모리 블록, 세 개의 포인터, int 및 **operator new** 및 **operator delete** 가 필요한 데이터를 보유 합니다.
+각 메모리 블록은 사용 가능한 메모리의 *Sz* 바이트와 해당 메모리가 속한 청크에 대 한 포인터를 포함 합니다. 각 청크는 `Nelts` 메모리 블록, 3 개의 포인터, int, **operator new** 및 **operator delete** 에 필요한 데이터를 포함 합니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -77,7 +77,7 @@ void *allocate(std::size_t count);
 
 할당된 개체에 대한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 ## <a name="cache_chunklist"></a>  cache_chunklist::cache_chunklist
 
@@ -87,7 +87,7 @@ void *allocate(std::size_t count);
 cache_chunklist();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 ## <a name="deallocate"></a>  cache_chunklist::deallocate
 
@@ -104,8 +104,8 @@ void deallocate(void* ptr, std::size_t count);
 |*ptr*|스토리지에서 할당을 취소할 첫 번째 개체에 대한 포인터입니다.|
 |*count*|스토리지에서 할당을 취소할 개체의 수입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<allocators>](../standard-library/allocators-header.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - decay class
 ms.assetid: 96baa2fd-c8e0-49af-be91-ba375ba7f9dc
-ms.openlocfilehash: 73b9e2d8ef9a14830c13ee3f6566137bb51e939d
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3b22dfecb1162ce67a0d648197465115acb044ba
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450635"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688109"
 ---
 # <a name="decay-class"></a>decay 클래스
 
@@ -29,12 +29,12 @@ using decay_t = typename decay<T>::type;
 
 ### <a name="parameters"></a>매개 변수
 
-*트*\
+*T* \
 수정할 형식입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-decay 템플릿을 사용하여 형식이 값을 통해 인수로 전달된 것처럼 결과 형식을 생성합니다. 템플릿 클래스 멤버 typedef `type`은 다음 단계에서 정의되는 수정된 형식을 포함합니다.
+decay 템플릿을 사용하여 형식이 값을 통해 인수로 전달된 것처럼 결과 형식을 생성합니다. 클래스 템플릿 멤버 typedef `type`에는 다음 단계에서 정의 된 수정 된 형식이 포함 되어 있습니다.
 
 - `U` 형식은 `remove_reference<T>::type`으로 정의되어 있습니다.
 
@@ -50,6 +50,6 @@ decay 템플릿을 사용하여 형식이 값을 통해 인수로 전달된 것�
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [<type_traits>](../standard-library/type-traits.md)

@@ -14,16 +14,16 @@ f1_keywords:
 - xmemory0/std::pointer_traits::rebind
 - memory/std::pointer_traits::pointer_to
 ms.assetid: 545aecf1-3561-4859-8b34-603c079fe1b3
-ms.openlocfilehash: 109e51ad9eba54f31b90da9b8b85bec105c7dce6
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 6d89348867982bfb86c0bf2404a017f6a448d1a1
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240408"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687133"
 ---
-# <a name="pointertraits-struct"></a>pointer_traits 구조체
+# <a name="pointer_traits-struct"></a>pointer_traits 구조체
 
-포인터 형식 `allocator_traits`를 사용하여 할당자를 설명하기 위해 템플릿 클래스 `Ptr`의 개체에 필요한 정보를 제공합니다.
+포인터 형식이 `Ptr` 인 할당자를 설명 하기 위해 `allocator_traits` 형식의 개체에 필요한 정보를 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,7 +32,7 @@ template <class Ptr>
     struct pointer_traits;
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 Ptr은 `Ty *` 형식의 원시 포인터 또는 다음 속성을 포함하는 클래스일 수 있습니다.
 
@@ -58,7 +58,7 @@ struct Ptr
 |`typedef T1 element_type`|`T1` 형식은 해당 형식이 있으면 `Ptr::element_type`이고 그렇지 않으면 `Ty`입니다. `Ptr`이 원시 포인터이면 형식은 `Ty`입니다.|
 |`typedef Ptr pointer`|형식은 `Ptr`입니다.|
 
-### <a name="structs"></a>구조체
+### <a name="structs"></a>Structs
 
 |||
 |-|-|
@@ -66,11 +66,11 @@ struct Ptr
 
 ### <a name="methods"></a>메서드
 
-|이름|Description|
+|name|설명|
 |----------|-----------------|
 |[pointer_to](#pointer_to)|클래스 `Ptr`의 개체에 대한 임의 참조를 변환합니다.|
 
-### <a name="pointer_to"></a> pointer_to
+### <a name="pointer_to"></a>pointer_to
 
 해당 함수가 있는 경우 `Ptr::pointer_to(obj)`를 반환하는 정적 메서드입니다. 그렇지 않으면 클래스 `Ptr`의 개체에 대한 임의 참조를 변환할 수 없습니다. `Ptr`이 원시 포인터이면 이 메서드는 `addressof(obj)`를 반환합니다.
 

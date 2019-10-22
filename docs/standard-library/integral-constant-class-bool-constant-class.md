@@ -10,14 +10,14 @@ helpviewer_keywords:
 - std::integral_constant [C++]
 - std::bool_constant [C++]
 ms.assetid: 11c002c6-4d31-4042-9341-f2543f43e108
-ms.openlocfilehash: c85da1f3be7821f8d82cd2b19dab2a5864426a5a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 9577ce51d4b0773f7b309fe3dc6dcb5820693dcb
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452039"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689530"
 ---
-# <a name="integralconstant-class-boolconstant-class"></a>integral_constant 클래스, bool_constant 클래스
+# <a name="integral_constant-class-bool_constant-class"></a>integral_constant 클래스, bool_constant 클래스
 
 형식 및 값에서 정수 계열 상수를 만듭니다.
 
@@ -36,17 +36,17 @@ struct integral_constant {
 
 ### <a name="parameters"></a>매개 변수
 
-*트*\
+*T* \
 상수의 형식입니다.
 
-*hyper-v*\
+*v* \
 상수의 값입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-정수 계열 형식 *T* 및 해당 형식의 *v* 값으로 특수화된 경우 `integral_constant` 템플릿 클래스는 지정된 값이 있는 해당 정수 계열 형식의 상수를 포함하는 개체를 나타냅니다. `type`이라는 멤버는 생성된 템플릿 특수화 형식에 대한 별칭이고, `value` 멤버는 특수화를 만드는 데 사용되는 *v* 값을 포함합니다.
+정수 계열 형식 *t* 와 해당 형식의 값 *v* 를 사용 하 여 특수화 된 경우 `integral_constant` 클래스 템플릿은 지정 된 값을 사용 하 여 해당 정수 계열 형식의 상수를 보유 하는 개체를 나타냅니다. `type`이라는 멤버는 생성된 템플릿 특수화 형식에 대한 별칭이고, `value` 멤버는 특수화를 만드는 데 사용되는 *v* 값을 포함합니다.
 
-템플릿 클래스는 **bool** 을 T 인수로 사용 하 `integral_constant` 는의 명시적 부분 특수화입니다.  `bool_constant`
+@No__t_0 클래스 템플릿은 **bool** 을 *t* 인수로 사용 하는 `integral_constant`의 명시적 부분 특수화입니다.
 
 ## <a name="example"></a>예제
 
@@ -78,8 +78,8 @@ integral_constant<bool, false> == false
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [<type_traits>](../standard-library/type-traits.md)\
-[false_type](../standard-library/type-traits-typedefs.md#false_type)\
+[false_type](../standard-library/type-traits-typedefs.md#false_type) \
 [true_type](../standard-library/type-traits-typedefs.md#true_type)

@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - limits header
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
-ms.openlocfilehash: de8f815cd59b84a1e63c231e18e4882d0b5d6f09
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3ad740975cfff4f65f9e1c800a709cfaca3367db
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447567"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687816"
 ---
 # <a name="ltlimitsgt"></a>&lt;limits&gt;
 
-템플릿 클래스 `numeric_limits`와 부동 소수점 표현 및 반올림과 관련된 두 개의 열거형을 정의합니다.
+클래스 템플릿 `numeric_limits`와 부동 소수점 표현 및 반올림과 관련 된 두 개의 열거형을 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -24,9 +24,9 @@ ms.locfileid: "68447567"
 
 **네임스페이스:** std
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-`numeric_limits` 클래스의 명시적 특수화는 문자, 정수, 부동 소수점 형식 및 **bool** C++언어. \<limits>에 설명된 속성에는 정확도, 최소 및 최대 크기 표현, 반올림 및 신호 형식 오류가 포함됩니다.
+@No__t_0 클래스의 명시적 특수화는 문자, 정수, 부동 소수점 형식 및 **bool** C++ 을 포함 하 여 기본 형식의 많은 속성을 설명 합니다. 언어도. \<limits>에 설명된 속성에는 정확도, 최소 및 최대 크기 표현, 반올림 및 신호 형식 오류가 포함됩니다.
 
 ## <a name="members"></a>멤버
 
@@ -41,9 +41,9 @@ ms.locfileid: "68447567"
 
 |||
 |-|-|
-|[numeric_limits 클래스](../standard-library/numeric-limits-class.md)|이 템플릿 클래스는 기본 제공 숫자 형식의 산술 속성을 설명합니다.|
+|[numeric_limits 클래스](../standard-library/numeric-limits-class.md)|클래스 템플릿은 기본 제공 숫자 형식의 산술 속성을 설명 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

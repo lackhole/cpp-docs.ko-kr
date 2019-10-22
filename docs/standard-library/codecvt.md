@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt header
 ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d
-ms.openlocfilehash: fc711b14a2d30041b4585a9515a95e42280f5306
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 972672e80ce4f82402296317c75e35dcd10c9e93
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458601"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688279"
 ---
 # <a name="ltcodecvtgt"></a>&lt;codecvt&gt;
 
-템플릿 클래스 [codecvt](../standard-library/codecvt-class.md)를 기반으로 하는 개체를 설명하는 여러 템플릿 클래스를 정의합니다. 이러한 개체는 형식의 `Elem` 값 시퀀스와 **char**형식의 값 시퀀스 간의 변환을 제어 하는 [로캘 패싯](../standard-library/locale-class.md#facet_class) 으로 사용할 수 있습니다.
+클래스 템플릿 [codecvt](../standard-library/codecvt-class.md)를 기반으로 개체를 설명 하는 여러 클래스 템플릿을 정의 합니다. 이러한 개체는 `Elem` 형식의 값 시퀀스와 **char**형식의 값 시퀀스 간의 변환을 제어 하는 [로캘 패싯](../standard-library/locale-class.md#facet_class) 으로 사용할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -24,7 +24,7 @@ ms.locfileid: "68458601"
 #include <codecvt>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 헤더에 선언된 로캘 패싯은 여러 문자 인코딩 간에 변환됩니다. 와이드 문자의 경우(프로그램 내에서 고정 크기의 정수로 저장됨):
 
@@ -50,7 +50,7 @@ ms.locfileid: "68458601"
 
 ### <a name="classes"></a>클래스
 
-|클래스|Description|
+|인스턴스|설명|
 |-|-|
 |[codecvt_utf8](codecvt-utf8-class.md)|UCS-2 또는 UCS-4로 인코드된 와이드 문자와 UTF-8로 인코드된 바이트 스트림 간에 변환되는 로캘 패싯을 나타냅니다.|
 |[codecvt_utf8_utf16](codecvt-utf8-utf16-class.md)|UTF-16으로 인코드된 와이드 문자와 UTF-8로 인코드된 바이트 스트림 간에 변환되는 로캘 패싯을 나타냅니다.|
@@ -62,6 +62,6 @@ ms.locfileid: "68458601"
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

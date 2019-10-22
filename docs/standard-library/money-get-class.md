@@ -16,16 +16,16 @@ helpviewer_keywords:
 - std::money_get [C++], do_get
 - std::money_get [C++], get
 ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
-ms.openlocfilehash: eb5e1a7b83db561687f83be96c79add8b54589e8
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: d882edd5ce55b15d03512ca9a55a49bc3424ee7a
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455550"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687676"
 ---
-# <a name="moneyget-class"></a>money_get 클래스
+# <a name="money_get-class"></a>money_get 클래스
 
-`CharType` 형식의 시퀀스에서 통화 값으로 변환을 제어하는 로캘 패싯으로 사용 가능한 개체에 대해 설명하는 템플릿 클래스입니다.
+클래스 템플릿은 `CharType` 형식의 시퀀스에서 통화 값으로의 변환을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,19 +36,19 @@ class money_get : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*\
+*Chartype* \
 로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
-*InputIterator*\
+*Inputiterator* \
 get 함수가 입력을 읽어올 반복기의 형식입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 모든 로캘 패싯과 마찬가지로, 고정 개체 ID에는 초기값 0이 저장되어 있습니다. 저장된 값에 액세스를 처음 시도하면 **id**에 고유한 양수 값이 저장됩니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|Description|
+|생성자|설명|
 |-|-|
 |[money_get](#money_get)|통화 값을 나타내는 시퀀스에서 숫자 값을 추출하는 데 사용되는 `money_get` 형식의 개체에 대한 생성자입니다.|
 
@@ -62,7 +62,7 @@ get 함수가 입력을 읽어올 반복기의 형식입니다.
 
 ### <a name="member-functions"></a>멤버 함수
 
-|멤버 함수|Description|
+|멤버 함수|설명|
 |-|-|
 |[do_get](#do_get)|통화 값을 나타내는 문자 시퀀스에서 숫자 값을 추출하기 위해 호출하는 가상 함수입니다.|
 |[get](#get)|통화 값을 나타내는 문자 시퀀스에서 숫자 값을 추출합니다.|
@@ -81,9 +81,9 @@ get 함수가 입력을 읽어올 반복기의 형식입니다.
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 템플릿 매개 변수 *CharType*의 동의어입니다.
+이 형식은 템플릿 매개 변수 *CharType*과 동일한 의미입니다.
 
 ## <a name="do_get"></a>  money_get::do_get
 
@@ -105,35 +105,35 @@ virtual iter_type do_get(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*최신*\
+*마지막* \
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*전화*\
+*국제* \
 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*Iosbase*\
+*Iosbase* \
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*상태일*\
+*상태* \
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*짧은*\
+*val* \
 변환된 시퀀스를 저장하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
 통화 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 주소 지정하는 입력 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-첫 번째 보호된 가상 구성원 함수는 비어 있지 않은 완전한 통화 입력 필드를 인식할 때까지 시퀀스 [ `first`, `last`)에서 처음 시작되는 순차 요소 일치를 시도합니다. 성공 하는 경우이 필드를 하나 이상의 10 진수의 시퀀스로 변환 하 고, 필요에 따라 빼기 기호 () `-`뒤에 빼기 기호 ()를 표시 하 고 결과를 [string_type](#string_type) 개체 *val*에 저장 합니다. 이 함수는 통화 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않으면 함수는 비어 있는 시퀀스를 *val* 에 저장 하 `ios_base::failbit` 고 *상태*를 설정 합니다. 그리고 유효한 통화 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 `last`와 같으면 함수는 `State`에서 `ios_base::eofbit`를 설정합니다.
+첫 번째 보호된 가상 구성원 함수는 비어 있지 않은 완전한 통화 입력 필드를 인식할 때까지 시퀀스 [ `first`, `last`)에서 처음 시작되는 순차 요소 일치를 시도합니다. 성공 하는 경우이 필드를 하나 이상의 10 진수의 시퀀스로 변환 하 고, 필요에 따라 빼기 기호 (`-`) 뒤에 크기를 표시 하 고 결과를 [string_type](#string_type) 개체 *val*에 저장 합니다. 이 함수는 통화 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않으면 함수는 비어 있는 시퀀스를 *val* 에 저장 하 고 *상태*`ios_base::failbit`를 설정 합니다. 그리고 유효한 통화 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 `last`와 같으면 함수는 `State`에서 `ios_base::eofbit`를 설정합니다.
 
 성공 하면 선택적으로 서명 된 숫자 시퀀스를 **long double** 형식의 값으로 변환 하 고 해당 값을 *val*에 저장 한다는 점을 제외 하면 두 번째 가상 보호 된 멤버 함수는 첫 번째 함수와 동일 하 게 동작 합니다.
 
-통화 출력 필드의 형식은 [locale facet](../standard-library/locale-class.md#facet_class)**fac**에 의해 결정됩니다. 이 항목은 유효 호출 [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**>>( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)).
+통화 출력 필드의 형식은 [locale facet](../standard-library/locale-class.md#facet_class)**fac**에 의해 결정됩니다. 이 항목은 유효 호출 [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**>>( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)) 호출에서 반환됩니다.
 
 구체적으로는 다음과 같습니다.
 
@@ -157,9 +157,9 @@ virtual iter_type do_get(iter_type first,
 
 **iosbase**. [flags](../standard-library/ios-base-class.md#flags) & [showbase](../standard-library/ios-functions.md#showbase)가 0이 아니면 문자열 **fac**. `curr_symbol`이 일치해야 하며, **money_base::symbol**과 동일한 요소가 형식 패턴에 나타납니다. 그렇지 않고 **money_base::symbol**이 형식 패턴 끝에 나오며 부호 문자열에서 일치 여부를 확인할 요소가 남아 있지 않으면 통화 기호의 일치 여부를 확인하지 않습니다. 그 외의 경우에는 필요에 따라 통화 기호의 일치 여부를 확인합니다.
 
-통화 입력 필드의 값 부분에 **fac**. `thousands_sep`의 인스턴스가 나오지 않으면(**money_base::value**와 동일한 요소가 형식 패턴에 나타남) 그룹화 제양ㄱ 조건이 적용되지 않습니다. 그렇지 않으면 **fac**. **grouping**에서 적용하는 모든 그룹화 제약 조건이 적용됩니다. 결과 숫자 시퀀스는 하위 순서 **fac**. `frac_digits` 소수 자릿수가 소수점 오른쪽에 있는 것으로 간주하는 정수를 나타냅니다.
+숫자 입력 필드에 **fac**. `thousands_sep`의 인스턴스가 나오지 않으면(**money_base::value**와 동일한 요소가 형식 패턴에 나타남) 그룹화 제양ㄱ 조건이 적용되지 않습니다. 그렇지 않으면 **fac**. **grouping**에서 적용하는 모든 그룹화 제약 조건이 적용됩니다. 결과 숫자 시퀀스는 하위 순서 **fac**. `frac_digits` 소수 자릿수가 소수점 오른쪽에 있는 것으로 간주하는 정수를 나타냅니다.
 
-**money_base::space**와 동일한 요소가 형식 패턴에 나타나는 위치(해당 요소가 형식 패턴의 끝이 아닌 위치에 나타나는 경우)에서 임의의 공백 일치 여부를 확인합니다. 그렇지 않으면 내부 공백 일치 여부를 확인하지 않습니다. 요소 *ch*는 [use_facet](../standard-library/locale-functions.md#use_facet) < [ctype](../standard-library/ctype-class.md)\< **CharType**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)). [is](../standard-library/ctype-class.md#is)( **ctype_base::space**, *ch*)가 **true**이면 공백으로 간주합니다.
+**money_base::space**와 동일한 요소가 형식 패턴에 나타나는 위치(해당 요소가 형식 패턴의 끝이 아닌 위치에 나타나는 경우)에서 임의의 공백 일치 여부를 확인합니다. 그렇지 않으면 내부 공백 일치 여부를 확인하지 않습니다. 요소 *ch*는 [use_facet](../standard-library/locale-functions.md#use_facet) < [ctype](../standard-library/ctype-class.md)\< **CharType**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)) 호출에서 반환됩니다. [is](../standard-library/ctype-class.md#is)( **ctype_base::space**, *ch*)가 **true**이면 공백으로 간주합니다.
 
 ### <a name="example"></a>예제
 
@@ -187,31 +187,31 @@ iter_type get(iter_type first,
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 변환할 시퀀스의 시작 부분 주소를 지정하는 입력 반복기입니다.
 
-*최신*\
+*마지막* \
 변환할 시퀀스의 끝부분 주소를 지정하는 입력 반복기입니다.
 
-*전화*\
+*국제* \
 시퀀스에서 필요한 통화 기호 유형을 나타내는 부울 값입니다. 국제의 경우 **true**이고 국내의 경우 **false**입니다.
 
-*Iosbase*\
+*Iosbase* \
 집합이 통화 기호가 선택 사항임을 나타낼 때 사용하는 형식 플래그입니다. 그 외의 경우 통화 기호는 필수 항목입니다.
 
-*상태일*\
+*상태* \
 작업 성공 여부에 따라 스트림 상태에 대해 적절한 비트 마스크 요소를 설정합니다.
 
-*짧은*\
+*val* \
 변환된 시퀀스를 저장하는 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
 
 통화 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 주소 지정하는 입력 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-두 멤버 함수는 모두 [do_get](#do_get)`(first, last, Intl, Iosbase, State, val)`를 반환 합니다.
+두 멤버 함수는 모두 [do_get](#do_get) `(first, last, Intl, Iosbase, State, val)`를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -270,7 +270,7 @@ int main( )
 typedef InputIterator iter_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 템플릿 매개 변수 **InputIterator**와 동일한 의미입니다.
 
@@ -287,15 +287,15 @@ explicit money_get(size_t _Refs = 0);
 *참조 (_s)* \
 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 *_Refs* 매개 변수에 사용할 수 있는 값은 다음과 같습니다.
 
-- 0: 개체의 수명은이를 포함 하는 로캘로 관리 됩니다.
+- 0: 개체를 포함하는 로캘에 의해 개체의 수명이 관리됩니다.
 
-- 1: 개체의 수명은 수동으로 관리 해야 합니다.
+- 1: 개체의 수명을 수동으로 관리해야 합니다.
 
-- \> 1: 이러한 값은 정의 되지 않습니다.
+- \> 1: 이러한 값이 정의 되어 있지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
@@ -309,11 +309,11 @@ explicit money_get(size_t _Refs = 0);
 typedef basic_string<CharType, Traits, Allocator> string_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 템플릿 클래스 [basic_string](../standard-library/basic-string-class.md)의 특수화를 설명합니다.
+이 형식은 클래스 템플릿 [basic_string](../standard-library/basic-string-class.md)의 특수화를 설명 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<locale>](../standard-library/locale.md)\
 [facet 클래스](../standard-library/locale-class.md#facet_class)\

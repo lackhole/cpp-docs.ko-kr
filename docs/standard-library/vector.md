@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - vector header
 ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f
-ms.openlocfilehash: 59424a9f6a9434b5d7d3f4298cbb0bc03926621c
-ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
+ms.openlocfilehash: 19068de41cfdcb17ae624858c137bf624851479f
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957059"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684062"
 ---
 # <a name="ltvectorgt"></a>&lt;vector&gt;
 
-컨테이너 템플릿 클래스 벡터 및 다양한 지원 템플릿을 정의합니다.
+컨테이너 클래스 템플릿 벡터와 여러 지원 템플릿을 정의 합니다.
 
 `vector`는 선형 시퀀스에서 지정된 유형의 요소를 구성하는 컨테이너입니다. 이 컨테이너를 사용하면 모든 요소에 빠르게 임의 액세스할 수 있으며 시퀀스에 대한 동적 추가와 제거를 수행할 수 있습니다. 임의 액세스 성능이 가장 중요할 때는 `vector`를 시퀀스에 대한 기본 컨테이너로 사용합니다.
 
@@ -77,16 +77,16 @@ void swap (
 
 ### <a name="parameters"></a>매개 변수
 
-*입력할*\
+*형식* \
 벡터에 저장되는 데이터 형식에 대한 템플릿 매개 변수입니다.
 
-*할당자*\
+*할당자* \
 메모리 할당 및 할당 취소를 수행하는 저장된 할당자 개체에 대한 템플릿 매개 변수입니다.
 
-*비어*\
+*왼쪽* \
 비교 작업의 첫 번째(왼쪽) 벡터입니다.
 
-*오른쪽*\
+*오른쪽* \
 비교 작업의 두 번째(오른쪽) 벡터입니다.
 
 ## <a name="members"></a>멤버
@@ -106,14 +106,14 @@ void swap (
 
 |||
 |-|-|
-|[vector 클래스](../standard-library/vector-class.md)|선형 정렬에서 지정된 형식의 요소를 정렬하고 모든 요소에 대한 빠른 임의 액세스를 허용하는 시퀀스 컨테이너의 템플릿 클래스입니다.|
+|[vector 클래스](../standard-library/vector-class.md)|선형 정렬에서 지정된 형식의 요소를 정렬하고 모든 요소에 대한 빠른 임의 액세스를 허용하는 시퀀스 컨테이너의 클래스 템플릿입니다.|
 
 ### <a name="specializations"></a>특수화
 
 |||
 |-|-|
 |hash|벡터의 해시를 반환 합니다.|
-|[vector\<bool> 클래스](../standard-library/vector-bool-class.md)|`bool` 유형 요소에 대한 템플릿 클래스 벡터의 전체 특수화로, 특수화에 사용되는 기본 유형에 대한 할당자를 포함합니다.|
+|[vector\<bool> 클래스](../standard-library/vector-bool-class.md)|형식 요소에 대 한 클래스 템플릿 벡터의 전체 특수화로, 특수화에 사용 되는 기본 형식에 대 한 할당자를 사용 하 여 `bool` 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -121,7 +121,7 @@ void swap (
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

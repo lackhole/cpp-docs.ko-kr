@@ -39,12 +39,12 @@ helpviewer_keywords:
 - commands [C++], deleting from menus
 - menus [C++], deleting
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
-ms.openlocfilehash: f2a5f1ac63007bf44dc331e2104c6e9e5cac23da
-ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
+ms.openlocfilehash: a21ff3ba736bd345e4b8399a761b5a8d9db531ac
+ms.sourcegitcommit: 9aab425662a66825772f091112986952f341f7c8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "69514820"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444980"
 ---
 # <a name="menu-editor-c"></a>메뉴 편집기 (C++)
 
@@ -59,11 +59,11 @@ ms.locfileid: "69514820"
 
 ### <a name="to-create-a-standard-menu"></a>표준 메뉴를 만들려면
 
-1. 메뉴 **뷰** > **리소스 뷰** 로 이동 하 고 **메뉴** 머리글을 마우스 오른쪽 단추로 클릭 합니다. **리소스 추가**를 선택 하 고 **메뉴**를 선택 합니다.
+1. 메뉴 **보기**@no__t**다른 Windows** > **리소스 뷰** 로 이동 하 고 **메뉴** 머리글을 마우스 오른쪽 단추로 클릭 합니다. **리소스 추가**를 선택 하 고 **메뉴**를 선택 합니다.
 
 1. 메뉴 모음에서 **새 항목** 상자 ( *여기에 형식이*포함 된 사각형)를 선택 합니다.
 
-   ![메뉴 편집기의 새 항목 상자](../windows/media/vcmenueditornewitembox.gif "Vcmenueditornewitembox")<br/>
+   ![메뉴 편집기의 새 항목 상자](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")<br/>
    **새 항목** 상자
 
 1. 새 메뉴의 이름 (예: *File*)을 입력 합니다.
@@ -72,7 +72,7 @@ ms.locfileid: "69514820"
 
    메뉴 모음에서 새 메뉴에 이름을 지정하면 새 항목 상자가 오른쪽으로 이동하고(다른 메뉴를 추가할 수 있도록), 메뉴 명령을 추가할 수 있도록 또 다른 새 항목 상자가 첫 번째 메뉴 아래에 열립니다.
 
-   ![확장 된 새 항목 상자](../windows/media/vcmenueditornewitemboxexpanded.gif "Vcmenueditornewitemboxexpanded") 됨<br/>
+   ![확장 된 새 항목 상자](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded 됨")<br/>
    메뉴 이름을 입력 한 후 포커스가 이동 된 **새 항목** 상자
 
    > [!NOTE]
@@ -104,7 +104,7 @@ ms.locfileid: "69514820"
    > 입력 한 텍스트는 **메뉴 편집기** 와 [속성 창의](/visualstudio/ide/reference/properties-window) **캡션** 상자에 모두 나타납니다. 한 위치에서 새 메뉴에 대한 속성을 편집할 수 있습니다.
 
    > [!TIP]
-   > 사용자가 메뉴 명령을 선택할 수 있도록 니모닉 키(바로 가기 키)를 정의할 수 있습니다. 문자 앞에 앰퍼샌드`&`()를 입력 하 여 니모닉으로 지정 합니다. 사용자는 해당 문자를 입력하여 메뉴 명령을 선택할 수 있습니다.
+   > 사용자가 메뉴 명령을 선택할 수 있도록 니모닉 키(바로 가기 키)를 정의할 수 있습니다. 문자 앞에 앰퍼샌드 (`&`)를 입력 하 여 니모닉으로 지정 합니다. 사용자는 해당 문자를 입력하여 메뉴 명령을 선택할 수 있습니다.
 
 1. **속성** 창에서 적용 되는 메뉴 명령 속성을 선택 합니다. 자세한 내용은 [메뉴 명령 속성](../windows/menu-command-properties.md)을 참조 하세요.
 
@@ -194,7 +194,7 @@ ms.locfileid: "69514820"
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
 [메뉴 명령](../windows/menu-command-properties.md)<br/>

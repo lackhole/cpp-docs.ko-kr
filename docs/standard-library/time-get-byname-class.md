@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - time_get_byname class
 ms.assetid: 6e54153e-da40-4bb9-a942-1a6ce57b30c9
-ms.openlocfilehash: b466f8a893a14f7a94ee7b9e54b72e43aa6cf6e3
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 9df3831e085f1dea1df45ff9368479fa516b944e
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460024"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72685766"
 ---
-# <a name="timegetbyname-class"></a>time_get_byname 클래스
+# <a name="time_get_byname-class"></a>time_get_byname 클래스
 
-`time_get`\<CharType, InputIterator> 형식의 로캘 패싯으로 사용할 수 있는 개체에 대해 설명하는 파생된 템플릿 클래스입니다.
+파생 된 클래스 템플릿은 형식의 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 `time_get` \<CharType, InputIterator >입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,11 +40,11 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*_Locname*\
+*_Locname* \
 명명된 로캘입니다.
 
 *참조 (_s)* \
-초기 참조 개수입니다.
+초기 참조 횟수
 
 ## <a name="requirements"></a>요구 사항
 
@@ -56,6 +56,6 @@ protected:
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)
