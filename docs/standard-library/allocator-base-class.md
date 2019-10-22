@@ -1,5 +1,3 @@
-https://docs.microsoft.com/ko-kr/cpp/standard-library/allocator-base-class?view=vs-2019
-
 ---
 title: allocator_base 클래스
 ms.date: 11/04/2016
