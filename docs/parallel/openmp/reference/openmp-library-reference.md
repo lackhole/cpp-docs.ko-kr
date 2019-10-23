@@ -11,7 +11,7 @@ ms.locfileid: "72348219"
 ---
 # <a name="openmp-library-reference"></a>OpenMP 라이브러리 참조
 
-OpenMP API에서 사용 되는 생성자에 대 한 링크를 제공 합니다.
+OpenMP API에서 사용되는 구문에 대한 링크를 제공합니다.
 
 OpenMP 표준의 Visual C++ 구현에는 다음 구문이 포함됩니다.
 
