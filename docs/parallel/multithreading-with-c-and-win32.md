@@ -117,8 +117,8 @@ C 런타임 라이브러리 또는 Win32 API에 대한 호출을 수행하는 �
 
 ## <a name="see-also"></a>참고자료
 
-[이전 코드에 대 한 다중 스레딩 C++지원 (시각적 개체)](multithreading-support-for-older-code-visual-cpp.md)\
+[이전 코드에 대한 다중 스레딩 지원(Visual C++)](multithreading-support-for-older-code-visual-cpp.md)\
 [C의 샘플 다중 스레드 프로그램](sample-multithread-c-program.md)\
 [TLS (스레드 로컬 저장소)](thread-local-storage-tls.md)\
-[/WinRT를 사용한 C++동시성 및 비동기 작업](/windows/uwp/cpp-and-winrt-apis/concurrency)\
+[C++/WinRT를 사용한 동시성 및 비동기 작업](/windows/uwp/cpp-and-winrt-apis/concurrency)\
 [C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)
