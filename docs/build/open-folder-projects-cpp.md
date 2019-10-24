@@ -1,15 +1,15 @@
 ---
 title: Visual Studio에서 C++ 빌드 시스템에 대해 폴더 열기 지원
-ms.date: 08/20/2019
+ms.date: 10/21/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual Studio
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 78b1c00b07423e9d02f585c707156a1c843bea6f
-ms.sourcegitcommit: ace42fa67e704d56d03c03745b0b17d2a5afeba4
+ms.openlocfilehash: 0eed40430050655f8fd9bdc83144adc7aa8c32e7
+ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69975992"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72778333"
 ---
 # <a name="open-folder-support-for-c-build-systems-in-visual-studio"></a>Visual Studio에서 C++ 빌드 시스템에 대해 폴더 열기 지원
 
@@ -73,7 +73,10 @@ Cto는 C++ 데스크톱 워크 로드의 구성 요소로 VISUAL Studio IDE에 �
 }
 ```
 
-이 구성은 Visual Studio [x64 개발자 명령 프롬프트](building-on-the-command-line.md)의 환경 변수를 "상속" 합니다. 이러한 변수 중 하나는 `INCLUDE` 이며 `${env.INCLUDE}` 매크로를 사용 하 여 여기에서 참조할 수 있습니다. 속성 `includePath` 은 Visual Studio에 IntelliSense에 필요한 모든 원본을 찾을 수 있는 위치를 알려 줍니다. 이 경우 "INCLUDE 환경 변수에 지정 된 모든 디렉터리와 현재 작업 폴더 트리의 모든 디렉터리를 확인 합니다." 라고 표시 됩니다. `name` 속성은 드롭다운에 표시 되는 이름이 며 원하는 모든 이름일 수 있습니다. 속성 `defines` 은 조건부 컴파일 블록이 발견 되 면 IntelliSense에 힌트를 제공 합니다. 속성 `intelliSenseMode` 은 컴파일러 유형에 따라 몇 가지 힌트를 추가로 제공 합니다. MSVC, GCC 및 Clang에 대 한 몇 가지 옵션을 사용할 수 있습니다.
+이 구성은 Visual Studio [x64 개발자 명령 프롬프트](building-on-the-command-line.md)의 환경 변수를 "상속" 합니다. 이러한 변수 중 하나가 `INCLUDE` 되며, `${env.INCLUDE}` 매크로를 사용 하 여 여기에서 참조할 수 있습니다. @No__t_0 속성은 Visual Studio에 IntelliSense에 필요한 모든 원본을 찾을 수 있는 위치를 알려 줍니다. 이 경우 "INCLUDE 환경 변수에 지정 된 모든 디렉터리와 현재 작업 폴더 트리의 모든 디렉터리를 확인 합니다." 라고 표시 됩니다. @No__t_0 속성은 드롭다운에 표시 되는 이름이 며 원하는 모든 이름이 될 수 있습니다. @No__t_0 속성은 조건부 컴파일 블록이 발견 될 때 IntelliSense에 힌트를 제공 합니다. @No__t_0 속성은 컴파일러 유형에 따라 몇 가지 힌트를 추가로 제공 합니다. MSVC, GCC 및 Clang에 대 한 몇 가지 옵션을 사용할 수 있습니다.
+
+> [!NOTE]
+> Visual Studio가 *cppproperties.json*에서 설정을 무시 하는 것으로 보이면 `!/CppProperties.json` 다음과 같이 *.gitignore* 파일에 예외를 추가 해 보세요.
 
 ## <a name="example-configuration-for-gcc"></a>GCC 구성 예제
 
@@ -107,12 +110,12 @@ Microsoft C++이외의 컴파일러를 사용 하는 경우 *cppproperties.json*
 }
 ```
 
-블록을 `environments` 확인 합니다. 이 클래스는 환경 변수 처럼 동작 하는 속성을 정의 하 고 *cppproperties.json* 파일 뿐만 아니라 다른 구성 파일 *작업 (json* 및 *시작*및 json) 에서도 사용할 수 있습니다. 구성은 환경을 상속 하 고 해당 `INCLUDE` 속성을 사용 하 여의 `includePath`값을 지정 합니다. `mingw_w64` `Mingw64` 필요에 따라이 배열 속성에 다른 경로를 추가할 수 있습니다.
+@No__t_0 블록을 확인 합니다. 이 클래스는 환경 변수 처럼 동작 하는 속성을 정의 하 고 *cppproperties.json* 파일 뿐만 아니라 다른 구성 파일 *작업 (json* 및 *시작*및 json) 에서도 사용할 수 있습니다. @No__t_0 구성은 `mingw_w64` 환경을 상속 하 고 `INCLUDE` 속성을 사용 하 여 `includePath`에 대 한 값을 지정 합니다. 필요에 따라이 배열 속성에 다른 경로를 추가할 수 있습니다.
 
 > [!WARNING]
-> 현재에 `INCLUDE` `environments` 지정 된 값이 `includePath` 속성에 올바르게 전달 되지 않는 알려진 문제가 있습니다. `includePath` 배열에 전체 리터럴 포함 경로를 추가 하 여 문제를 해결할 수 있습니다.
+> 현재 `environments`에 지정 된 `INCLUDE` 값이 `includePath` 속성에 올바르게 전달 되지 않는 알려진 문제가 있습니다. @No__t_0 배열에 전체 리터럴 포함 경로를 추가 하 여 문제를 해결할 수 있습니다.
 
-`intelliSenseMode` 속성은 GCC에 적절 한 값으로 설정 됩니다. 이러한 속성에 대 한 자세한 내용은 [cppproperties.json 스키마 참조](cppproperties-schema-reference.md)를 참조 하세요.
+@No__t_0 속성은 GCC에 적절 한 값으로 설정 됩니다. 이러한 속성에 대 한 자세한 내용은 [cppproperties.json 스키마 참조](cppproperties-schema-reference.md)를 참조 하세요.
 
 모든 것이 제대로 작동 하는 경우 형식 위로 마우스를 가져가면 GCC 헤더에서 IntelliSense가 표시 됩니다.
 
@@ -120,11 +123,11 @@ Microsoft C++이외의 컴파일러를 사용 하는 경우 *cppproperties.json*
 
 ## <a name="enable-intellisense-diagnostics"></a>IntelliSense 진단 사용
 
-원하는 IntelliSense가 표시 되지 않으면 **도구** > **옵션** > **텍스트 편집기** >  > **C/C++** **고급** 으로 이동 하 여 문제를 해결할 수 있습니다. **로깅 사용** 을 **true**로 설정 합니다. 먼저 **로깅 수준을** 5로 설정 하 고 **필터** 를 8로 설정 해 봅니다.
+원하는 IntelliSense가 표시 되지 않는 경우 **도구**  > **옵션**  > **텍스트 편집기**  > **C/C++**   > **고급** 으로 이동 하 고 **로깅을 사용 하도록** 설정 하 여 문제를 해결할 수 있습니다. **true로 설정**합니다. 먼저 **로깅 수준을** 5로 설정 하 고 **필터** 를 8로 설정 해 봅니다.
 
 ![진단 로깅](media/diagnostic-logging.png)
 
-출력은 **출력 창** 로 파이프 되며, 다음에서 출력*표시를 선택할 때 표시 됩니다. 표시 C++* 출력에는 IntelliSense에서 사용 하려는 실제 포함 경로 목록이 포함 됩니다. 경로가 *cppproperties.json*의 경로와 일치 하지 않으면 폴더를 닫고 캐시 된 검색 데이터를 포함 하는 *vs* 하위 폴더를 삭제 합니다.
+출력은 **출력 창** 로 파이프 되며, **출력에서 표시: Visual C++ Log*를 선택 하면 표시 됩니다. 출력에는 IntelliSense에서 사용 하려는 실제 포함 경로 목록이 포함 됩니다. 경로가 *cppproperties.json*의 경로와 일치 하지 않으면 폴더를 닫고 캐시 된 검색 데이터를 포함 하는 *vs* 하위 폴더를 삭제 합니다.
 
 ### <a name="define-build-tasks-with-tasksvsjson"></a>tasks.vs.json으로 빌드 작업 정의
 
@@ -157,7 +160,7 @@ Microsoft C++이외의 컴파일러를 사용 하는 경우 *cppproperties.json*
 
 JSON 파일은 **솔루션 탐색기**위쪽의 **모든 파일 표시** 단추를 클릭 하면 볼 수 있는 vs 하위 폴더에 배치 됩니다 *.* **솔루션 탐색기** 에서 루트 노드를 마우스 오른쪽 단추로 클릭 하 고 **hello 빌드**를 선택 하 여이 작업을 실행할 수 있습니다. 작업이 완료 되 면 **솔루션 탐색기**에서 *hello.exe* 라는 새 파일이 표시 됩니다.
 
-여러 종류의 작업을 정의할 수 있습니다. 다음 예제에서는 단일 작업을 정의 하는 *작업 및 json 파일* 을 보여 줍니다. `taskLabel`은 상황에 맞는 메뉴에 표시되는 이름을 정의합니다. `appliesTo`는 명령을 수행할 수 있는 파일을 정의합니다. 속성 `command` 은 콘솔 (Windows의 경우*cmd.exe* )의 경로를 식별 하는 COMSPEC 환경 변수를 참조 합니다. CppProperties.json 또는 CMakeSettings.json에 선언된 환경 변수를 참조할 수도 있습니다. `args` 속성은 호출할 명령줄을 지정합니다. `${file}` 매크로는 **솔루션 탐색기**에서 선택한 파일을 검색합니다. 다음 예제에서는 현재 선택된 .cpp 파일의 파일 이름을 표시합니다.
+여러 종류의 작업을 정의할 수 있습니다. 다음 예제에서는 단일 작업을 정의 하는 *작업 및 json 파일* 을 보여 줍니다. `taskLabel`은 상황에 맞는 메뉴에 표시되는 이름을 정의합니다. `appliesTo`는 명령을 수행할 수 있는 파일을 정의합니다. @No__t_0 속성은 콘솔 (Windows의 경우*cmd.exe* )의 경로를 식별 하는 COMSPEC 환경 변수를 참조 합니다. CppProperties.json 또는 CMakeSettings.json에 선언된 환경 변수를 참조할 수도 있습니다. `args` 속성은 호출할 명령줄을 지정합니다. `${file}` 매크로는 **솔루션 탐색기**에서 선택한 파일을 검색합니다. 다음 예제에서는 현재 선택된 .cpp 파일의 파일 이름을 표시합니다.
 
 ```json
 {
@@ -180,7 +183,7 @@ JSON 파일은 **솔루션 탐색기**위쪽의 **모든 파일 표시** 단추�
 
 ### <a name="configure-debugging-parameters-with-launchvsjson"></a>launch.vs.json으로 디버깅 매개 변수 구성
 
-프로그램의 명령줄 인수 및 디버깅 지침을 사용자 지정 하려면 **솔루션 탐색기** 에서 실행 파일을 마우스 오른쪽 단추로 클릭 하 고 **디버그 및 시작 설정**을 선택 합니다. 이렇게 하면 기존 *시작 및 json* 파일이 열리며, 없는 경우에는 최소 시작 설정 집합을 사용 하 여 새 파일을 만듭니다. 먼저 구성 하려는 디버그 세션의 종류를 선택할 수 있습니다. MinGw-전환 하거나 mingw-w64 프로젝트를 디버깅 하는 경우 **MinGGW/CygwinC++ (gdb)에 대해 C/Launch**를 선택 합니다. 이렇게 하면 기본 값에 대 한 몇 가지 추측을 *gdb* 사용 하기 위한 시작 구성이 생성 됩니다. 이러한 기본값 중 하나는 `MINGW_PREFIX`입니다. 다음과 같이 리터럴 경로를 대체 하거나 `MINGW_PREFIX` *cppproperties.json*에서 속성을 정의할 수 있습니다.
+프로그램의 명령줄 인수 및 디버깅 지침을 사용자 지정 하려면 **솔루션 탐색기** 에서 실행 파일을 마우스 오른쪽 단추로 클릭 하 고 **디버그 및 시작 설정**을 선택 합니다. 이렇게 하면 기존 *시작 및 json* 파일이 열리며, 없는 경우에는 최소 시작 설정 집합을 사용 하 여 새 파일을 만듭니다. 먼저 구성 하려는 디버그 세션의 종류를 선택할 수 있습니다. MinGw-전환 하거나 mingw-w64 프로젝트를 디버깅 하는 경우 **MinGGW/CygwinC++ (gdb)에 대해 C/Launch**를 선택 합니다. 이렇게 하면 기본 값에 대 한 몇 가지 추측을 *gdb* 사용 하기 위한 시작 구성이 생성 됩니다. 이러한 기본값 중 하나는 `MINGW_PREFIX`입니다. 다음과 같이 리터럴 경로를 대체 하거나 *cppproperties.json*에서 `MINGW_PREFIX` 속성을 정의할 수 있습니다.
 
 ```json
 {
@@ -212,7 +215,7 @@ JSON 파일은 **솔루션 탐색기**위쪽의 **모든 파일 표시** 단추�
 
 ## <a name="launching-other-executables"></a>다른 실행 파일 시작
 
-컴퓨터의 모든 실행 파일에 대 한 시작 설정을 정의할 수 있습니다. 다음 예제에서는 *7za* 를 시작 하 고 `args` JSON 배열에 추가 하 여 추가 인수를 지정 합니다.
+컴퓨터의 모든 실행 파일에 대 한 시작 설정을 정의할 수 있습니다. 다음 예제에서는 *7za* 를 시작 하 고 추가 인수를 `args` JSON 배열에 추가 하 여 지정 합니다.
 
 ```json
 {
