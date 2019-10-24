@@ -1,23 +1,25 @@
 ---
-title: C++ 정수 제한
-ms.date: 01/29/2018
+title: C 및 C++ 정수 제한
+ms.date: 10/21/2019
 helpviewer_keywords:
 - limits, integer
 - limits, integer constants
 - integer limits
 ms.assetid: 0c23cbd6-29fb-4d9c-b689-5984e19748de
-ms.openlocfilehash: 057da1ac8e4549a05d10a01cc3aead678045d9c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: HT
+ms.openlocfilehash: 6940f36e37ec58ca8fe23c9062928cbf90b125bd
+ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548293"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72778369"
 ---
-# <a name="c-integer-limits"></a>C++ 정수 제한
+# <a name="c-and-c-integer-limits"></a>C 및 C++ 정수 제한
 
 **Microsoft 전용**
 
-다음 표에서는 정수 형식에 대한 제한 사항을 보여 줍니다. 이 제한 사항은 표준 헤더 파일 LIMITS.H에도 정의되어 있습니다. Microsoft C에서는 정수 변수를 8비트, 16비트 또는 32비트의 정수 계열 형식으로 크기를 지정하여 선언할 수 있습니다. 크기가 지정된 정수에 대한 자세한 내용은 [크기 지정 정수 형식](../c-language/c-sized-integer-types.md)을 참조하세요.
+다음 표에는 C 및 C++ 의 정수 형식에 대 한 제한이 나와 있습니다. 이러한 제한은 C 표준 헤더 파일 `<limits.h>`에 정의 되어 있습니다. C++ 표준 라이브러리 헤더 `<limits>`에는 `<limits.h>`를 포함 하는 `<climits>` 포함 되어 있습니다.
+
+Microsoft C에서는 크기가 8-, 16-, 32 또는 64 비트 인 정수 형식의 정수 변수도 선언할 수 있습니다. C에서 크기가 지정 되는 정수에 대 한 자세한 내용은 [크기 지정 정수 형식](../c-language/c-sized-integer-types.md)을 참조 하세요.
 
 ## <a name="limits-on-integer-constants"></a>정수 상수에 대한 제한
 
@@ -39,11 +41,14 @@ ms.locfileid: "50548293"
 |**LONG_MIN**|**long** 형식 변수의 최소값입니다.|-2147483647 - 1|
 |**LONG_MAX**|**long** 형식 변수의 최대값입니다.|2147483647|
 |**ULONG_MAX**|**unsigned long** 형식 변수의 최대값입니다.|4294967295(0xffffffff)|
+|**LLONG_MIN**|**Long long**형식의 변수에 대 한 최소값입니다.|-9223372036854775807-1|
+|**LLONG_MAX**|**Long long**형식의 변수에 대 한 최대값입니다.|9,223,372,036,854,775,807|
+|**ULLONG_MAX**|**Unsigned long long**형식의 변수에 대 한 최대값입니다.|18446744073709551615 (0xffffffffffffffff)|
 
 값이 최대 정수 표현을 초과하는 경우 Microsoft 컴파일러에서 오류가 발생합니다.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [C 정수 상수](../c-language/c-integer-constants.md)
