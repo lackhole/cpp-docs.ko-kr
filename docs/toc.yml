@@ -2969,7 +2969,7 @@
                           href: c-language/c-integer-constants.md
                         - name: 정수 형식
                           href: c-language/integer-types.md
-                        - name: C++ 정수 제한
+                        - name: C 및 C++ 정수 제한
                           href: c-language/cpp-integer-limits.md
                     - name: C 문자 상수
                       expanded: false
@@ -3963,10 +3963,10 @@
                   href: cpp/typeid-operator.md
                 - name: '단항 더하기 및 부정 연산자: + 및 -'
                   href: cpp/unary-plus-and-negation-operators-plus-and.md
-            - name: 식
+            - name: 표현식
               expanded: false
               items:
-                - name: 식
+                - name: 표현식
                   href: cpp/expressions-cpp.md
                 - name: 식의 형식
                   expanded: false
