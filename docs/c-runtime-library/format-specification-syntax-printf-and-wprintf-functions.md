@@ -1,6 +1,6 @@
 ---
 title: '형식 사양 구문: printf 및 wprintf 함수'
-ms.date: 07/30/2019
+ms.date: 10/21/2019
 helpviewer_keywords:
 - format specification fields for printf function
 - printf function format specification fields
@@ -9,16 +9,16 @@ helpviewer_keywords:
 - width fields, printf function
 - precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
-ms.openlocfilehash: db144703a89fe1a6a76ed15f1cf77395c4565fab
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
-ms.translationtype: HT
+ms.openlocfilehash: e4def787dc5792921298999eb643ff56dd2c9f3d
+ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500085"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72778385"
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>형식 사양 구문: printf 및 wprintf 함수
 
-다양한 `printf` 및 `wprintf` 함수는 형식 문자열 및 선택적 인수를 사용하고 출력에 대해 형식이 지정된 시퀀스를 생성합니다. 형식 문자열에는 출력용 리터럴 문자이거나 출력에서 인수에 형식을 지정하는 방법을 설명하는 인코드된 *변환 사양*인 *지시문*이 없거나 하나 이상 포함되어 있습니다. 이 문서에서는 형식 문자열에서 변환 사양을 인코딩하는 데 사용되는 구문을 설명합니다. 이러한 함수의 목록을 보려면 [스트림 I/O](../c-runtime-library/stream-i-o.md)를 참조하세요.
+다양한 `printf` 및 `wprintf` 함수는 형식 문자열 및 선택적 인수를 사용하고 출력에 대해 형식이 지정된 시퀀스를 생성합니다. 형식 문자열에는 출력용 리터럴 문자이거나 출력에서 인수에 형식을 지정하는 방법을 설명하는 인코드된 *변환 사양*인 *지시문*이 없거나 하나 이상 포함되어 있습니다. 이 문서에서는 형식 문자열에서 변환 사양을 인코딩하는 데 사용되는 구문을 설명합니다. 이러한 함수의 목록을 보려면 [스트림 I/O](../c-runtime-library/stream-i-o.md)를 참조하세요. 
 
 다음 양식에서 변환 사양은 선택적 필드 및 필수 필드로 이루어져 있습니다.
 
@@ -39,13 +39,16 @@ ms.locfileid: "69500085"
 
 <a name="type"></a>
 
+> [!NOTE] 
+> Visual Studio 2015에서는 `printf` 및 `scanf` 함수 패밀리가 **인라인으로** 선언 되었으며 `<stdio.h>` 및 `<conio.h>` 헤더로 이동 했습니다. 이전 코드를 마이그레이션하는 경우 이러한 함수와의 연결에 *LNK2019* 가 표시 될 수 있습니다. 자세한 내용은 [Visual C++ change history 2003-2015](../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio)를 참조 하세요.
+
 ## <a name="type-conversion-specifier"></a>형식 변환 지정자
 
 *type* 변환 지정자 문자는 문자, 문자열, 포인터, 정수 또는 부동 소수점 숫자와 같은 해당 인수를 해석하는지 여부를 지정합니다. *형식* 문자는 유일하게 요구되는 변환 사양 필드이며 선택적 필드 뒤에 표시됩니다.
 
 형식 문자열 뒤에 나오는 인수는 해당 *type* 문자 및 선택적인 [size](#size) 접두사에 따라 해석됩니다. 문자 형식 `char` 및 `wchar_t`에 대한 변환은 **c** 또는 **C**를 사용하여 지정되고, 싱글바이트/멀티바이트 또는 와이드 문자의 문자열은 사용 중인 형식 지정 함수에 따라 **s** 또는 **S**를 사용하여 지정됩니다. **c** 및 **s**를 사용하여 지정된 문자 및 문자열 인수는 `printf` 패밀리 함수에서는 `char` 및 `char*`로 해석되고 `wprintf` 패밀리 함수에서는 `wchar_t` 및 `wchar_t*`로 해석됩니다. **C** 및 **S**를 사용하여 지정된 문자 및 문자열 인수는 `printf` 패밀리 함수에서는 `wchar_t` 및 `wchar_t*`로 해석되고 `wprintf` 패밀리 함수에서는 `char` 및 `char*`로 해석됩니다. 이 동작은 Microsoft 전용입니다.
 
-`short`, `int`, `long`, `long long` 등의 정수 형식 및 그 `unsigned` 변형은 **d**, **i**, **o**, **u**, **x** 및 **X**를 사용하여 지정됩니다. `float`, `double`, `long double` 등의 부동 소수점 형식은 **a**, **A**, **e**, **E**, **f**, **F**, **g** 및 **G**를 사용하여 지정됩니다. *size* 접두사에 의해 수정되지 않는 한, 기본적으로 정수 인수는 `int` 형식으로 강제 변환되고 부동 소수점 인수는 `double`로 강제 변환됩니다. 64비트 시스템에서, `int`는 32비트 값이므로 **ll** 또는 **I64**의 *size* 접두사가 사용되지 않는 경우 64비트 정수는 출력을 위해 형식이 지정될 때 잘립니다. **p**로 지정되는 포인터 형식은 플랫폼에 대해 기본 포인터 크기를 사용합니다.
+@No__t_0, `int`, `long`, `long long` 및 해당 `unsigned` variant와 같은 정수 형식은 **d**, **i**, **o**, **u**, **x**및 **x**를 사용 하 여 지정 합니다. @No__t_11, 2 및 3와 같은 부동 소수점 형식은 **a**, **a**, **e**, **e**, **f**, **f**, **g**및 **g**를 사용 하 여 지정 됩니다. 기본적으로 *크기* 접두사에 의해 수정 되지 않는 한 정수 인수는 3 형식으로 강제 변환 되 고 부동 소수점 인수는 4로 강제 변환 됩니다. 64비트 시스템에서, `int`는 32비트 값이므로 **ll** 또는 **I64**의 *size* 접두사가 사용되지 않는 경우 64비트 정수는 출력을 위해 형식이 지정될 때 잘립니다. **p**로 지정되는 포인터 형식은 플랫폼에 대해 기본 포인터 크기를 사용합니다.
 
 > [!NOTE]
 > **Microsoft 특정** **Z** 형식 문자와 **c**, **C**, **s** 및 **S** 형식 문자가 `printf` 및 `wprintf` 함수와 함께 사용될 때의 동작은 Microsoft 확장입니다. ISO C 표준에서는 모든 형식 지정 함수에서 반각 문자 및 문자열에 대해 일관되게 **c** 및 **s**를 사용하고 와이드 문자 및 문자열에 대해 **C** 및 **S**를 사용합니다.
@@ -72,8 +75,8 @@ ms.locfileid: "69500085"
 |**A**|부동 소수점|형식이 [−]0X*h.hhhh*__P±__*dd*인 부호 있는 16진수 배정밀도 부동 소수점 값입니다. 여기서 *h.hhhh*는 가수의 16진수(대문자 사용)이며 *dd*는 지수의 하나 이상의 숫자입니다. 정밀도는 소수점 뒤의 자릿수를 지정합니다.|
 |**n**|정수 포인터|지금까지 성공적으로 스트림 또는 버퍼에 쓴 문자의 수입니다. 이 값은 주소가 인수로 지정된 정수에 저장됩니다. 가리키는 대상의 정수 크기는 인수 크기의 사양 접두사로 컨트롤할 수 있습니다. **n** 지정자는 기본적으로 사용되지 않습니다. 자세한 내용은 중요 보안 정보를 참조하세요.|
 |**p**|포인터 유형|인수를 16진수로 된 주소로 표시합니다.|
-|**s**|문자열|`printf` 함수와 함께 사용될 때 단일 바이트 또는 멀티바이트 문자열을 지정하고, `wprintf` 함수와 함께 사용될 때는 와이드 문자열을 지정합니다. 첫 번째 null 문자 직전까지 또는 *precision* 값에 도달할 때까지 문자가 표시됩니다.|
-|**S**|문자열|`printf` 함수와 함께 사용될 때 와이드 문자열을 지정하고, `wprintf` 함수와 함께 사용될 때는 단일 바이트 또는 멀티바이트 문자열을 지정합니다. 첫 번째 null 문자 직전까지 또는 *precision* 값에 도달할 때까지 문자가 표시됩니다.|
+|**s**|String|`printf` 함수와 함께 사용될 때 단일 바이트 또는 멀티바이트 문자열을 지정하고, `wprintf` 함수와 함께 사용될 때는 와이드 문자열을 지정합니다. 첫 번째 null 문자 직전까지 또는 *precision* 값에 도달할 때까지 문자가 표시됩니다.|
+|**S**|String|`printf` 함수와 함께 사용될 때 와이드 문자열을 지정하고, `wprintf` 함수와 함께 사용될 때는 단일 바이트 또는 멀티바이트 문자열을 지정합니다. 첫 번째 null 문자 직전까지 또는 *precision* 값에 도달할 때까지 문자가 표시됩니다.|
 |**Z**|`ANSI_STRING` 또는 `UNICODE_STRING` 구조체|[ANSI_STRING](/windows/win32/api/ntdef/ns-ntdef-string) 또는 [UNICODE_STRING](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) 구조체의 주소가 인수로 전달될 때 구조체의 `Buffer` 필드에서 가리키는 버퍼에 포함되는 문자열을 표시합니다. **w**의 *size* 한정자 접두사를 사용하여 `UNICODE_STRING` 인수를 지정합니다(예: `%wZ`). 구조체의 `Length` 필드를 문자열의 길이(바이트 단위)로 설정해야 합니다. 구조체의 `MaximumLength` 필드를 버퍼의 길이(바이트 단위)로 설정해야 합니다.<br /><br /> 일반적으로 **Z** 형식 문자는 `dbgPrint` 및 `kdPrint` 등의 변환 사양을 사용하는 드라이버 디버깅 함수에서만 사용됩니다.|
 
 Visual Studio 2015부터 부동 소수점 변환 지정자(**a**, **A**, **e**, **E**, **f**, **F**, **g**, **G**)에 해당하는 인수가 제한 없음, 무한 또는 NAN인 경우 형식이 지정된 출력은 C99 표준을 따릅니다. 이 표에는 형식이 지정된 출력이 나와 있습니다.
@@ -115,7 +118,7 @@ Visual Studio 2015 이전에는 CRT에서 제한 없음, 무한 및 NAN 값의 �
 
 ### <a name="flag-characters"></a>플래그 문자
 
-|플래그|의미|기본값|
+|플래그|의미|기본|
 |----------|-------------|-------------|
 |**-**|지정한 필드 너비 내에서 결과를 왼쪽에 맞춰 표시합니다.|오른쪽에 맞춰 표시합니다.|
 |**+**|부호 있는 형식에는 기호(+ 또는 –)를 사용하여 출력 값에 접두사를 추가합니다.|부호 있는 음수 값(-)에 대해서만 기호가 표시됩니다.|
@@ -157,7 +160,7 @@ Visual Studio 2015 이전에는 CRT에서 제한 없음, 무한 및 NAN 값의 �
 
 ### <a name="how-precision-values-affect-type"></a>전체 자릿수 값이 형식에 영향을 주는 방식
 
-|형식|의미|기본값|
+|Type|의미|기본|
 |----------|-------------|-------------|
 |**a**, **A**|정밀도는 소수점 뒤의 자릿수를 지정합니다.|기본 전체 자릿수는 13입니다. 전체 자릿수가 0인 경우 **#** 플래그를 사용하지 않으면 소수점이 인쇄되지 않습니다.|
 |**c**, **C**|전체 자릿수가 적용되지 않습니다.|문자가 출력됩니다.|
@@ -203,7 +206,7 @@ Visual C++에서 `long double`은 고유한 형식이지만 내부 표현은 `do
 > [!NOTE]
 > **Microsoft 특정** **I**(대문자 i), **I32**, **I64** 및 **w** 인수 크기 한정자 접두사는 Microsoft 확장이며 ISO C와 호환되지 않습니다. `char` 형식의 데이터와 함께 사용되는 **h** 접두사 및 `double` 형식의 데이터와 함께 사용되는 **l**(소문자 L) 접두사는 Microsoft 확장입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
