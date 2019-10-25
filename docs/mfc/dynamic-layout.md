@@ -3,10 +3,10 @@ title: 동적 레이아웃
 ms.date: 09/09/2019
 ms.assetid: 8598cfb2-c8d4-4f5a-bf2b-59dc4653e042
 ms.openlocfilehash: 1b0d035d3c551fd309d515ccb8b22159218c1b0a
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.sourcegitcommit: 8178d22701047d24f69f10d01ba37490e3d67241
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "70907557"
 ---
 # <a name="dynamic-layout"></a>동적 레이아웃
@@ -17,13 +17,13 @@ Visual Studio 2015의 MFC를 사용 하 여 사용자가 크기를 조정할 수
 
 사용자가 대화 상자의 크기를 조정하는 경우 대화 상자의 컨트롤 크기가 조정되거나 X 및 Y 방향으로 이동할 수 있습니다. 사용자가 대화 상자의 크기를 조정할 때 컨트롤의 크기 또는 위치 변경을 동적 레이아웃이라고 합니다. 예를 들어 다음은 크기가 조정되기 전의 대화 상자입니다.
 
-![크기를 조정 하기 전의 대화 상자입니다.](../mfc/media/mfcdynamiclayout4.png "크기를 조정 하기 전의 대화 상자입니다.")
+![크기를 조정 하기 전의 대화 상자입니다.](../mfc/media/mfcdynamiclayout4.png "크기가 조정되기 전 대화 상자입니다.")
 
 크기를 조정하면 ListBox 영역이 증가하여 더 많은 항목을 표시하고 단추가 오른쪽 아래 모서리를 따라 이동합니다.
 
-![크기를 조정한 후의 대화 상자입니다.](../mfc/media/mfcdynamiclayout5.png "크기를 조정한 후의 대화 상자입니다.")
+![크기를 조정한 후의 대화 상자입니다.](../mfc/media/mfcdynamiclayout5.png "크기가 조정된 후 대화 상자입니다.")
 
-IDE에서 리소스 편집기의 각 컨트롤에 대 한 세부 정보를 지정 하 여 동적 레이아웃을 제어 하거나, 특정 컨트롤에 대 한 `CMFCDynamicLayout` 개체에 액세스 하 고 속성을 설정 하 여 프로그래밍 방식으로이 작업을 수행할 수 있습니다.
+IDE에서 리소스 편집기의 각 컨트롤에 대 한 세부 정보를 지정 하 여 동적 레이아웃을 제어 하거나, 특정 컨트롤에 대 한 `CMFCDynamicLayout` 개체에 액세스 하 고 속성을 설정 하 여 프로그래밍 방식으로이를 수행할 수 있습니다.
 
 ### <a name="setting-dynamic-layout-properties-in-the-resource-editor"></a>리소스 편집기에서 동적 레이아웃 속성 설정
 
@@ -55,13 +55,13 @@ IDE에서 리소스 편집기의 각 컨트롤에 대 한 세부 정보를 지�
 
 1. 대화 상자 클래스의 구현 코드에서 대화 상자에 대한 동적 레이아웃을 지정할 위치를 찾거나 만듭니다. 예를 들어 대화 상자에 `AdjustLayout`과 같은 메서드를 추가하고 레이아웃을 변경해야 하는 위치에서 호출할 수 있습니다. 생성자에서 이 메서드를 처음 호출하거나 대화 상자를 변경한 후 호출할 수 있습니다.
 
-1. 대화 상자에서 `CWnd` 클래스의 메서드인 [getdynamiclayout](../mfc/reference/cwnd-class.md#getdynamiclayout)을 호출 합니다. `GetDynamicLayout` 는 `CMFCDynamicLayout` 개체에 대한 포인터를 반환합니다.
+1. 대화 상자에서 `CWnd` 클래스의 메서드인 [Getdynamiclayout](../mfc/reference/cwnd-class.md#getdynamiclayout)을 호출 합니다. `GetDynamicLayout` 는 `CMFCDynamicLayout` 개체에 대한 포인터를 반환합니다.
 
     ```cpp
     CMFCDynamicLayout* dynamicLayout = pDialog->GetDynamicLayout();
     ```
 
-1. 동적 동작을 추가 하려는 첫 번째 컨트롤의 경우 동적 레이아웃 클래스의 정적 메서드를 사용 하 여 컨트롤을 조정 해야 하는 방법을 인코딩하는 [Movesettings](../mfc/reference/cmfcdynamiclayout-class.md#movesettings_structure) 구조체를 만듭니다. 이렇게 하려면 먼저 적절 한 정적 메서드를 선택 합니다. [Cmfcdynamiclayout:: MoveHorizontal](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontal), [Cmfcdynamiclayout:: movehorizontal](../mfc/reference/cmfcdynamiclayout-class.md#movevertical), [Cmfcdynamiclayout:: Movenone](../mfc/reference/cmfcdynamiclayout-class.md#movenone)또는 [cmfcdynamiclayout:: MoveHorizontalAndVertical](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontalandvertical). 이동의 가로 및/또는 세로 측면에 대한 백분율을 전달합니다. 이러한 정적 메서드는 모두 컨트롤의 이동 동작을 지정하는 데 사용할 수 있는 새로 만든 MoveSettings 개체를 반환합니다.
+1. 동적 동작을 추가 하려는 첫 번째 컨트롤의 경우 동적 레이아웃 클래스의 정적 메서드를 사용 하 여 컨트롤을 조정 해야 하는 방법을 인코딩하는 [Movesettings](../mfc/reference/cmfcdynamiclayout-class.md#movesettings_structure) 구조체를 만듭니다. 이렇게 하려면 먼저 적절 한 정적 메서드 ( [Cmfcdynamiclayout:: MoveHorizontal](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontal), [Cmfcdynamiclayout:: movehorizontal](../mfc/reference/cmfcdynamiclayout-class.md#movevertical), [Cmfcdynamiclayout:: Movenone](../mfc/reference/cmfcdynamiclayout-class.md#movenone)또는 [cmfcdynamiclayout:: MoveHorizontalAndVertical)를 선택 합니다. ](../mfc/reference/cmfcdynamiclayout-class.md#movehorizontalandvertical). 이동의 가로 및/또는 세로 측면에 대한 백분율을 전달합니다. 이러한 정적 메서드는 모두 컨트롤의 이동 동작을 지정하는 데 사용할 수 있는 새로 만든 MoveSettings 개체를 반환합니다.
 
    100은 대화 상자의 크기가 변경된 만큼 이동하는 것을 의미하며 컨트롤의 가장자리가 새 테두리에서 고정된 거리를 유지합니다.
 
@@ -141,7 +141,7 @@ IDE에서 리소스 편집기의 각 컨트롤에 대 한 세부 정보를 지�
     END
     ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [CMFCDynamicLayout 클래스](../mfc/reference/cmfcdynamiclayout-class.md)<br/>
 [컨트롤 클래스](../mfc/control-classes.md)<br/>

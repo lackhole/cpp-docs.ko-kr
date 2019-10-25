@@ -4,14 +4,14 @@ ms.date: 11/04/2016
 f1_keywords:
 - chrono/std::chrono::treat_as_floating_point
 ms.assetid: d0a2161c-bbb2-4924-8961-7568d5ad5434
-ms.openlocfilehash: 4cf3ac5be972d8636f1d3dbda3b195f4012517be
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: add69179b23a953a937458cbfa55254b21c5ea37
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459876"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72685106"
 ---
-# <a name="treatasfloatingpoint-structure"></a>treat_as_floating_point 구조체
+# <a name="treat_as_floating_point-structure"></a>treat_as_floating_point 구조체
 
 `Rep`가 부동 소수점 형식으로 처리될 수 있는지를 지정합니다.
 
@@ -22,9 +22,9 @@ template <class Rep>
 struct treat_as_floating_point : is_floating_point<Rep>;
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-특수화 `treat_as_floating_point<Rep>`가 [true_type](../standard-library/type-traits-typedefs.md#true_type)에서 파생되는 경우에만 `Rep`를 부동 소수점 형식으로 처리할 수 있습니다. 사용자 형식 정의에 대해 템플릿 클래스를 특수화할 수 있습니다.
+특수화 `treat_as_floating_point<Rep>`가 [true_type](../standard-library/type-traits-typedefs.md#true_type)에서 파생되는 경우에만 `Rep`를 부동 소수점 형식으로 처리할 수 있습니다. 클래스 템플릿은 사용자 정의 형식에 대해 특수화 될 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -32,7 +32,7 @@ struct treat_as_floating_point : is_floating_point<Rep>;
 
 **네임스페이스:** std::chrono
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [\<chrono>](../standard-library/chrono.md)

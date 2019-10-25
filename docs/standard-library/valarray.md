@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - valarray header
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-ms.openlocfilehash: c18b72017e4999e377bf8575f624f8fdda5b0caf
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: ed90273fe293ae2e08c3c91762c12c42bb368c16
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448346"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688771"
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 
-템플릿 클래스 valarray 및 다양한 지원 템플릿 클래스와 함수를 정의합니다.
+클래스 템플릿 valarray와 다양 한 지원 클래스 템플릿 및 함수를 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -24,11 +24,11 @@ ms.locfileid: "68448346"
 **네임스페이스:** std
 
 > [!NOTE]
-> Valarray > 라이브러리는 \<' #include < initializer_list > ' 문을 사용 합니다.
+> @No__t_0valarray > 라이브러리는 ' #include < initializer_list > ' 문을 사용 합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-이러한 템플릿 클래스와 함수는 향상된 성능을 위해 특이한 방식으로 허용됩니다. 특히 형식을 `valarray<T1>` 반환 하는 모든 함수는 다른 형식 t 2의 개체를 반환할 수 있습니다. 이 경우 형식의 `valarray<T2>` 인수를 하나 이상 허용 하는 함수에는 각각 T2 형식의 인수로 대체 된 인수의 임의 조합을 허용 하는 오버 로드가 있어야 합니다.
+이러한 클래스 템플릿 및 함수는 향상 된 성능을 위해 특이 한 위도를 사용할 수 있습니다. 특히 `valarray<T1>` 형식을 반환 하는 모든 함수는 다른 형식 t 2의 개체를 반환할 수 있습니다. 이 경우 `valarray<T2>` 형식의 인수를 하나 이상 허용 하는 함수에는 각각 T2 형식의 인수로 대체 된 인수의 임의 조합을 허용 하는 오버 로드가 있어야 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -84,20 +84,20 @@ ms.locfileid: "68448346"
 |||
 |-|-|
 |[gslice 클래스](../standard-library/gslice-class.md)|valarray의 다차원 조각을 정의하는 데 사용되는 valarray에 대한 유틸리티 클래스입니다.|
-|[gslice_array 클래스](../standard-library/gslice-array-class.md)|valarray의 일반 조각으로 정의된 하위 집합 배열 간의 작업을 제공하여 일반 조각 개체를 지원하는 내부 보조 템플릿 클래스입니다.|
-|[indirect_array 클래스](../standard-library/indirect-array-class.md)|부모 valarray의 인덱스 하위 집합을 지정하여 정의된 하위 집합 배열 간의 작업을 제공하여 valarray의 하위 집합인 개체를 지원하는 내부 보조 템플릿 클래스입니다.|
-|[mask_array 클래스](../standard-library/mask-array-class.md)|하위 집합 배열 간의 작업을 제공하여 부울 식으로 지정된 부모 valarray의 하위 집합인 개체를 지원하는 내부 보조 템플릿 클래스입니다.|
+|[gslice_array 클래스](../standard-library/gslice-array-class.md)|Valarray의 일반 조각으로 정의 된 하위 집합 배열 간의 작업을 제공 하 여 일반 조각 개체를 지 원하는 내부 보조 클래스 템플릿입니다.|
+|[indirect_array 클래스](../standard-library/indirect-array-class.md)|부모 valarray의 인덱스 하위 집합을 지정 하 여 정의 된 하위 집합 배열 간의 작업을 제공 하 여 valarray의 하위 집합인 개체를 지 원하는 내부 보조 클래스 템플릿입니다.|
+|[mask_array 클래스](../standard-library/mask-array-class.md)|하위 집합 배열 간의 작업을 제공 하 여 부울 식으로 지정 되는 부모 valarrays의 하위 집합인 개체를 지 원하는 내부 보조 클래스 템플릿입니다.|
 |[slice 클래스](../standard-library/slice-class.md)|valarray의 벡터와 유사한 1차원 하위 집합을 정의하는 데 사용되는 valarray에 대한 유틸리티 클래스입니다.|
-|[slice_array 클래스](../standard-library/slice-array-class.md)|valarray의 조각으로 정의된 하위 집합 배열 간의 작업을 제공하여 조각 개체를 지원하는 내부 보조 템플릿 클래스입니다.|
-|[valarray 클래스](../standard-library/valarray-class.md)|이 템플릿 클래스는 배열로 저장 되어 고속 수치 연산을 수행 하도록 설계 된 `Type` 형식의 요소 시퀀스를 제어 하는 개체를 설명 합니다 .이 개체는 계산 성능에 최적화 되어 있습니다.|
+|[slice_array 클래스](../standard-library/slice-array-class.md)|Valarray의 조각으로 정의 된 하위 집합 배열 간의 작업을 제공 하 여 조각 개체를 지 원하는 내부 보조 클래스 템플릿입니다.|
+|[valarray 클래스](../standard-library/valarray-class.md)|클래스 템플릿은 배열로 저장 되 고 고속 수치 연산을 수행 하도록 설계 된 `Type` 형식의 요소 시퀀스를 제어 하는 개체를 설명 하며 계산 성능에 최적화 되어 있습니다.|
 
 ### <a name="specializations"></a>특수화
 
 |||
 |-|-|
-|[valarray\<bool> 클래스](../standard-library/valarray-bool-class.md)|템플릿 클래스 valarray\<**형식의**특수 버전은 **bool**형식의 요소에 > 합니다.|
+|[valarray\<bool> 클래스](../standard-library/valarray-bool-class.md)|클래스 템플릿 valarray \<**형식의**특수 버전은 **bool**형식의 요소에 > 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -14,16 +14,16 @@ helpviewer_keywords:
 - std::num_get [C++], do_get
 - std::num_get [C++], get
 ms.assetid: 9933735d-3918-4b17-abad-5fca2adc62d7
-ms.openlocfilehash: 67aef1ce52b6717ce6d6381429982cf660aa5e20
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 5c6fec7002541b519d7cf7d043eed3e5c932bcb9
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457650"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689224"
 ---
 # <a name="num_get-class"></a>num_get 클래스
 
-`CharType` 형식의 시퀀스에서 숫자 값으로 변환을 제어하는 로캘 패싯으로 사용 가능한 개체에 대해 설명하는 템플릿 클래스입니다.
+@No__t_0 형식의 시퀀스를 숫자 값으로 변환 하는 것을 제어 하는 로캘 패싯으로 사용할 수 있는 개체를 설명 하는 클래스 템플릿입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,19 +34,19 @@ class num_get : public locale::facet;
 
 ### <a name="parameters"></a>매개 변수
 
-*CharType*\
+*Chartype* \
 로캘의 문자를 인코딩하기 위해 프로그램 내 사용하는 형식입니다.
 
-*InputIterator*\
+*Inputiterator* \
 숫자 get 함수가 입력을 읽어올 반복기의 형식입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 모든 로캘 패싯과 마찬가지로, 고정 개체 ID에는 초기값 0이 저장되어 있습니다. 저장된 값에 액세스를 처음 시도하면 **id**에 고유한 양수 값이 저장됩니다.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|Description|
+|생성자|설명|
 |-|-|
 |[num_get](#num_get)|시퀀스에서 숫자 값을 추출하는 데 사용되는 `num_get` 형식의 개체에 대한 생성자입니다.|
 
@@ -78,9 +78,9 @@ class num_get : public locale::facet;
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 템플릿 매개 변수 **CharType**의 동의어입니다.
+이 형식은 템플릿 매개 변수 **CharType**과 동일한 의미입니다.
 
 ## <a name="do_get"></a>  num_get::do_get
 
@@ -167,26 +167,26 @@ virtual iter_type do_get(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 숫자를 읽을 문자 범위의 시작 부분입니다.
 
-*최신*\
+*마지막* \
 숫자를 읽을 문자 범위의 끝부분입니다.
 
-*_Iosbase*\
+*_Iosbase* \
 해당 플래그가 변환에 사용되는 [ios_base](../standard-library/ios-base-class.md)입니다.
 
-*_State*\
+*_State* \
 오류 시 failbit가 추가되는 상태([ios_base::iostate](../standard-library/ios-base-class.md#iostate) 참조)입니다.
 
-*짧은*\
+*val* \
 읽은 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
 값을 읽은 후의 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 첫 번째 보호된 가상 구성원 함수는 다음 코드와 같습니다.
 
@@ -199,9 +199,9 @@ virtual iter_type do_get(
     long& val) const;
 ```
 
-는 비어 있지 않은 완전 한 정수 입력 필드 `[first, last)` 를 인식할 때까지 시퀀스의 처음부터 시작 하는 순차적 요소와 일치 합니다. 성공 하는 경우이 필드를 **long**형식으로 해당 하는 값으로 변환 하 고 결과를 *val*에 저장 합니다. 이 함수는 숫자 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않으면 함수는 *val* 에 아무 것도 저장 `ios_base::failbit` 하지 `state`않으며에는를 설정 합니다. 그리고 유효한 정수 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 `last`와 같으면 함수는 `state`에서 `ios_base::eofbit`를 설정합니다.
+는 비어 있지 않은 완전 한 정수 입력 필드를 인식할 때까지 시퀀스의 *처음* 부터 시작 하 여 순차적 요소와 일치 `[first, last)` 합니다. 성공 하는 경우이 필드를 **long**형식으로 해당 하는 값으로 변환 하 고 결과를 *val*에 저장 합니다. 이 함수는 숫자 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않으면 함수가 *val* 에 아무 것도 저장 하지 않고 `state` `ios_base::failbit`을 설정 합니다. 그리고 유효한 정수 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 `last`와 같으면 함수는 `state`에서 `ios_base::eofbit`를 설정합니다.
 
-정수 입력 필드는 파일에서 일련의 **char** 요소를 일치 및 변환 하기 위해 검색 함수에서 사용 하는 것과 동일한 규칙에 의해 변환 됩니다. 이러한 각 **char** 요소는 간단한 일대일 매핑을 통해 형식의 `Elem` 동등한 요소에 매핑되는 것으로 간주 됩니다. 동일한 스캔 변환 사양은 다음과 같이 결정됩니다.
+정수 입력 필드는 파일에서 일련의 **char** 요소를 일치 및 변환 하기 위해 검색 함수에서 사용 하는 것과 동일한 규칙에 의해 변환 됩니다. 이러한 각 **char** 요소는 단순 하 고 일대일 매핑으로 `Elem` 형식의 동등한 요소에 매핑되도록 가정 됩니다.) 해당 하는 검색 변환 사양은 다음과 같이 결정 됩니다.
 
 `iosbase.`[ios_base::flags](../standard-library/ios-base-class.md#flags)`() & ios_base::basefield == ios_base::`[oct](../standard-library/ios-functions.md#oct)이면 변환 사양은 `lo`입니다.
 
@@ -414,36 +414,36 @@ iter_type get(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본*\
+*첫 번째* \
 숫자를 읽을 문자 범위의 시작 부분입니다.
 
-*최신*\
+*마지막* \
 숫자를 읽을 문자 범위의 끝부분입니다.
 
-*_Iosbase*\
+*_Iosbase* \
 해당 플래그가 변환에 사용되는 [ios_base](../standard-library/ios-base-class.md)입니다.
 
-*_State*\
+*_State* \
 오류 시 failbit가 추가되는 상태([ios_base::iostate](../standard-library/ios-base-class.md#iostate) 참조)입니다.
 
-*짧은*\
+*val* \
 읽은 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
 값을 읽은 후의 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 모든 구성원 함수는 [do_get](#do_get)( `first`, `last`, `_Iosbase`, `_State`, `val`)을 반환합니다.
 
-첫 번째 보호된 가상 구성원 함수는 비어 있지 않은 완전한 정수 입력 필드를 인식할 때까지 시퀀스 [ `first`, `last`)에서 처음 시작되는 순차 요소 일치를 시도합니다. 성공 하는 경우이 필드를 **long** 형식으로 해당 하는 값으로 변환 하 고 결과를 *val*에 저장 합니다. 이 함수는 숫자 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않은 경우 함수는 *val* 에 아무 것도 `ios_base::failbit` 저장 하지 않으며 _ *상태*를 설정 합니다. 그리고 유효한 정수 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 *last*와 같으면 함수는 *_State*에서를 `ios_base::eofbit` 설정 합니다.
+첫 번째 보호된 가상 구성원 함수는 비어 있지 않은 완전한 정수 입력 필드를 인식할 때까지 시퀀스 [ `first`, `last`)에서 처음 시작되는 순차 요소 일치를 시도합니다. 성공 하는 경우이 필드를 **long** 형식으로 해당 하는 값으로 변환 하 고 결과를 *val*에 저장 합니다. 이 함수는 숫자 입력 필드를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 그렇지 않은 경우 함수는 *val* 에 아무 것도 저장 하지 않으며 _ *상태*에서 `ios_base::failbit`를 설정 합니다. 그리고 유효한 정수 입력 필드의 접두사를 벗어난 범위에 있는 첫 번째 요소를 지정하는 반복기를 반환합니다. 두 경우 모두 반환 값이 *last*와 같으면 함수는 *_State*에서 `ios_base::eofbit`를 설정 합니다.
 
-정수 입력 필드는 파일에서 일련의 **char** 요소를 일치 및 변환 하기 위해 검색 함수에서 사용 하는 것과 동일한 규칙에 의해 변환 됩니다. 이러한 각 **char** 요소는 단순 하 고 일대일 매핑으로 형식의 `CharType` 동등한 요소에 매핑되는 것으로 간주 됩니다. 동일한 스캔 변환 사양은 다음과 같이 결정됩니다.
+정수 입력 필드는 파일에서 일련의 **char** 요소를 일치 및 변환 하기 위해 검색 함수에서 사용 하는 것과 동일한 규칙에 의해 변환 됩니다. 이러한 각 **char** 요소는 단순 하 고 일대일 매핑으로 `CharType` 형식의 동등한 요소로 매핑됩니다. 동일한 스캔 변환 사양은 다음과 같이 결정됩니다.
 
 - `iosbase`. [oct에](../standard-library/ios-base-class.md#flags) & `ios_base::basefield` == `ios_base::`[ 플래그](../standard-library/ios-functions.md#oct)를 지정 합니다. 변환 사양은 `lo`입니다.
 
-- **Iosbase. flags** & **ios_base:: basefield** == `ios_base::`[hex](../standard-library/ios-functions.md#hex)인 경우 변환 사양은 `lx`입니다.
+- **Iosbase. flags**  & **ios_base:: basefield**  ==  `ios_base::`[hex](../standard-library/ios-functions.md#hex)인 경우 변환 사양은 `lx`입니다.
 
 - **iosbase.flags** & **ios_base::basefield** == 0이면 변환 사양은 `li`입니다.
 
@@ -491,7 +491,7 @@ virtual iter_type do_get(iter_type first,
     long double& val) const;
 ```
 
-동일한 검색 변환 지정 자가 `Lf`라는 점을 제외 하 고 세 번째와 동일한 동작을 수행 합니다.
+동일 하 게 동작 합니다. 단, 동일한 스캔 변환 지정자를 `Lf` 합니다.
 
 다섯 번째 보호된 가상 구성원 함수는 다음 코드와 같습니다.
 
@@ -559,7 +559,7 @@ int main( )
 typedef InputIterator iter_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 템플릿 매개 변수 `InputIterator`의 동의어입니다.
 
@@ -576,21 +576,21 @@ explicit num_get(size_t _Refs = 0);
 *참조 (_s)* \
 개체에 대한 메모리 관리 형식을 지정하는 데 사용하는 정수값입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 *_Refs* 매개 변수에 사용할 수 있는 값은 다음과 같습니다.
 
-- 0: 개체의 수명은이를 포함 하는 로캘로 관리 됩니다.
+- 0: 개체를 포함하는 로캘에 의해 개체의 수명이 관리됩니다.
 
-- 1: 개체의 수명은 수동으로 관리 해야 합니다.
+- 1: 개체의 수명을 수동으로 관리해야 합니다.
 
-- \> 1: 이러한 값은 정의 되지 않습니다.
+- \> 1: 이러한 값이 정의 되어 있지 않습니다.
 
 소멸자는 보호되므로 직접적인 예제는 확인할 수 없습니다.
 
 생성자는 **locale::** [facet](../standard-library/locale-class.md#facet_class)( `_Refs`)를 통해 해당 기준 개체를 초기화합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<locale>](../standard-library/locale.md)\
 [facet 클래스](../standard-library/locale-class.md#facet_class)\

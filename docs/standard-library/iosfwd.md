@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - iosfwd header
 ms.assetid: 964442eb-17f1-43ef-a0e0-c5bb77f9c187
-ms.openlocfilehash: e66c3e869f01775512419c877cd52c7f0e0fa2c4
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 8d257a57100615e592f6ebd62b5c91c6c59df408
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449079"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687863"
 ---
 # <a name="ltiosfwdgt"></a>&lt;iosfwd&gt;
 
-iostreams 전체에서 사용되는 여러 템플릿 클래스에 대한 전방 참조를 선언합니다. 이러한 템플릿 클래스는 모두 다른 표준 헤더에 정의되어 있습니다. 이 헤더는 해당 정의가 아니라 해당 선언 중 하나가 필요한 경우에만 명시적으로 포함합니다.
+Iostreams 전체에서 사용 되는 여러 클래스 템플릿에 대 한 전방 참조를 선언 합니다. 이러한 모든 클래스 템플릿은 다른 표준 헤더에 정의 됩니다. 이 헤더는 해당 정의가 아니라 해당 선언 중 하나가 필요한 경우에만 명시적으로 포함합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -62,7 +62,7 @@ typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
 };
 ```
 
-## <a name="forward-declarationstemplate-classes"></a>정방향 선언/템플릿 클래스
+## <a name="forward-declarations-and-class-templates"></a>전방 선언 및 클래스 템플릿
 
 ```cpp
 template <class _Statetype>
@@ -126,7 +126,7 @@ template <class Elem, class Tr = char_traits<Elem>>
 class basic_fstream;
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

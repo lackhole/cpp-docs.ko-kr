@@ -7,14 +7,14 @@ helpviewer_keywords:
 - iterator_traits struct
 - iterator_traits class
 ms.assetid: 8b92c2c5-f658-402f-8ca1-e7ae301b8514
-ms.openlocfilehash: 9d2f9d79d200579f539f7d9edc49d4a907e6cdb2
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 924ca5ae1d32753bbe315252d942425712962639
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455576"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689459"
 ---
-# <a name="iteratortraits-struct"></a>iterator_traits 구조체
+# <a name="iterator_traits-struct"></a>iterator_traits 구조체
 
 반복기에 포함되어야 하는 모든 중요한 형식 정의를 지정하는 데 사용되는 템플릿 도우미 구조체입니다.
 
@@ -31,23 +31,23 @@ struct iterator_traits {
    };
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 템플릿 구조체는 멤버 형식을 정의합니다.
 
-- `iterator_category`:의 `Iterator::iterator_category`동의어입니다.
+- `iterator_category`: `Iterator::iterator_category`의 동의어입니다.
 
-- `value_type`:의 `Iterator::value_type`동의어입니다.
+- `value_type`: `Iterator::value_type`의 동의어입니다.
 
-- `difference_type`:의 `Iterator::difference_type`동의어입니다.
+- `difference_type`: `Iterator::difference_type`의 동의어입니다.
 
-- `distance_type`:의 동의어`Iterator::difference_type.`
+- `distance_type`: `Iterator::difference_type.`의 동의어
 
-- `pointer`:의 `Iterator::pointer`동의어입니다.
+- `pointer`: `Iterator::pointer`의 동의어입니다.
 
-- `reference`:의 `Iterator::reference`동의어입니다.
+- `reference`: `Iterator::reference`의 동의어입니다.
 
-부분 특수화는 **형식** <strong>\*</strong> 또는 **const 형식의** <strong>\*</strong>개체 포인터와 관련 된 중요 한 형식을 결정 합니다.
+부분 특수화는 형식 <strong>\*</strong> **형식 또는** **const 형식** <strong>\*</strong>개체 포인터와 관련 된 중요 한 형식을 결정 합니다.
 
 이 구현에서는 부분 특수화를 사용하지 않는 여러 가지 템플릿 함수를 사용할 수도 있습니다.
 
@@ -71,7 +71,7 @@ template <class Ty>
 ptrdiff_t *_Dist_type(const Ty *);
 ```
 
-이러한 함수는 여러 가지 동일한 형식을 보다 간접적으로 결정합니다. 함수 호출에서 인수로 이러한 함수를 사용합니다. 또한 호출된 함수에 유용한 템플릿 클래스 매개 변수를 제공하려는 용도로만 사용됩니다.
+이러한 함수는 여러 가지 동일한 형식을 보다 간접적으로 결정합니다. 함수 호출에서 인수로 이러한 함수를 사용합니다. 유일한 용도는 호출 된 함수에 유용한 클래스 템플릿 매개 변수를 제공 하는 것입니다.
 
 ## <a name="example"></a>예제
 
@@ -122,7 +122,7 @@ struct std::bidirectional_iterator_tag
 
 **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<iterator>](../standard-library/iterator.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

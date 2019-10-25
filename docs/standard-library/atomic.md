@@ -48,16 +48,16 @@ f1_keywords:
 - atomic/std::atomic_int64_t
 - atomic/std::atomic_uint_least64_t
 ms.assetid: e79a6b9f-52ff-48da-9554-654c4e1999f6
-ms.openlocfilehash: 4c46eb2b9bea30bf37800b33ce0dcf44c0d807f0
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b33ec1e7fdc7f93062248a9ad42c78c3b30801fe
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456717"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688457"
 ---
 # <a name="ltatomicgt"></a>&lt;atomic&gt;
 
-원자 연산을 지원하는 형식을 위한 클래스 및 템플릿 클래스를 정의합니다.
+원자 단위 연산을 지 원하는 형식을 만드는 데 사용할 클래스 및 클래스 템플릿을 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -65,7 +65,7 @@ ms.locfileid: "68456717"
 #include <atomic>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 > [!NOTE]
 > **/Clr**을 사용 하 여 컴파일된 코드에서이 헤더는 차단 됩니다.
@@ -78,11 +78,11 @@ ms.locfileid: "68456717"
 
 일부 플랫폼에서는 `mutex` 잠금을 사용하지 않고서는 몇몇 형식의 원자 연산을 효율적으로 구현하지 못할 수 있습니다. 원자 형식의 어떤 원자 연산도 잠금을 사용하지 않는 경우 해당 원자 형식은 *잠금 해제*입니다.
 
-**C++11**: 신호 처리기에서 또는 `obj` `atomic_is_lock_free(x)` 가 true 인 경우 `obj.is_lock_free()` 개체에 대해 원자 단위 작업을 수행할 수 있습니다.
+**C++11**: `obj.is_lock_free()` 또는 `atomic_is_lock_free(x)`가 true인 경우 일부 신호 처리기에서 `obj` 개체에 대한 원자 연산을 수행할 수 없습니다.
 
 [Atomic_flag](../standard-library/atomic-flag-structure.md) 클래스는 **bool** 플래그를 포함 하는 최소 원자성 형식을 제공 합니다. 해당 연산은 항상 잠금 해제입니다.
 
-`atomic<T>` 템플릿 클래스는 `T` 인수 형식의 개체를 저장하고 저장된 값에 대한 원자성 액세스를 제공합니다. [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md)를 사용하여 복사할 수 있고 [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md)를 사용하여 같음을 테스트할 수 있는 모든 형식을 사용하여 인스턴스화할 수 있습니다. 특히 이 클래스는 이러한 요구 사항을 충족하는 사용자 정의 형식과 함께, 그리고 많은 경우 부동 소수점 형식과 함께 사용할 수 있습니다.
+클래스 템플릿 `atomic<T>` 인수 형식 `T`의 개체를 저장 하 고 저장 된 값에 대 한 원자성 액세스를 제공 합니다. [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md)를 사용하여 복사할 수 있고 [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md)를 사용하여 같음을 테스트할 수 있는 모든 형식을 사용하여 인스턴스화할 수 있습니다. 특히 이 클래스는 이러한 요구 사항을 충족하는 사용자 정의 형식과 함께, 그리고 많은 경우 부동 소수점 형식과 함께 사용할 수 있습니다.
 
 템플릿에는 또한 정수 형식에 대한 특수화 집합 및 포인터에 대한 부분 특수화가 포함됩니다. 이러한 특수화는 기본 템플릿을 통해 사용할 수 없는 추가 작업을 제공합니다.
 
@@ -101,7 +101,7 @@ ms.locfileid: "68456717"
 |`atomic_integral` 형식|정수 형식|`atomic_is_lock_free` 매크로|
 |----------------------------|-------------------|---------------------------------|
 |`atomic_char`|**char**|ATOMIC_CHAR_LOCK_FREE|
-|`atomic_schar`|**signed) char**|ATOMIC_CHAR_LOCK_FREE|
+|`atomic_schar`|**부호 있는 문자**|ATOMIC_CHAR_LOCK_FREE|
 |`atomic_uchar`|**unsigned char**|ATOMIC_CHAR_LOCK_FREE|
 |`atomic_char16_t`|`char16_t`|ATOMIC_CHAR16_T_LOCK_FREE|
 |`atomic_char32_t`|`char32_t`|ATOMIC_CHAR32_T_LOCK_FREE|
@@ -150,16 +150,16 @@ Typedef 이름은 \<inttypes.h> 헤더에 정의된 일부 형식에 대한 원�
 |`atomic_intmax_t`|`atomic<intmax_t>`|
 |`atomic_uintmax_t`|`atomic<uintmax_t>`|
 
-## <a name="structs"></a>구조체
+## <a name="structs"></a>Structs
 
-|이름|설명|
+|name|설명|
 |----------|-----------------|
 |[atomic 구조체](../standard-library/atomic-structure.md)|저장된 값에 대해 원자 연산을 수행하는 개체를 설명합니다.|
 |[atomic_flag 구조체](../standard-library/atomic-flag-structure.md)|**Bool** 플래그를 원자 단위로 설정 하 고 지우는 개체를 설명 합니다.|
 
 ## <a name="enums"></a>열거형
 
-|이름|설명|
+|name|설명|
 |----------|-----------------|
 |[memory_order 열거형](../standard-library/atomic-enums.md#memory_order_enum)|메모리 위치에서 동기화 연산에 대한 기호 이름을 제공합니다. 이러한 연산은 하나의 스레드의 할당이 다른 스레드에 표시될 방법에 영향을 미칩니다.|
 
@@ -167,7 +167,7 @@ Typedef 이름은 \<inttypes.h> 헤더에 정의된 일부 형식에 대한 원�
 
 다음 목록에서 `_explicit`로 끝나지 않는 함수는, `memory_order_seq_cst`의 암시적 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 인수를 가지고 있다는 점을 제외하고, 해당 `_explicit`의 의미 체계를 가지고 있습니다.
 
-|이름|Description|
+|name|설명|
 |----------|-----------------|
 |[atomic_compare_exchange_strong](../standard-library/atomic-functions.md#atomic_compare_exchange_strong)|*원자 비교 및 교환* 작업을 수행합니다.|
 |[atomic_compare_exchange_strong_explicit](../standard-library/atomic-functions.md#atomic_compare_exchange_strong_explicit)|*원자 비교 및 교환* 작업을 수행합니다.|
@@ -185,10 +185,10 @@ Typedef 이름은 \<inttypes.h> 헤더에 정의된 일부 형식에 대한 원�
 |[atomic_fetch_sub_explicit](../standard-library/atomic-functions.md#atomic_fetch_sub_explicit)|기존의 저장된 값에서 지정된 값을 뺍니다.|
 |[atomic_fetch_xor](../standard-library/atomic-functions.md#atomic_fetch_xor)|지정된 값 및 기존의 저장된 값에 대해 비트 `exclusive or`를 수행합니다.|
 |[atomic_fetch_xor_explicit](../standard-library/atomic-functions.md#atomic_fetch_xor_explicit)|지정된 값 및 기존의 저장된 값에 대해 비트 `exclusive or`를 수행합니다.|
-|[atomic_flag_clear](../standard-library/atomic-functions.md#atomic_flag_clear)|`atomic_flag` 개체의 플래그를 **false**로 설정 합니다.|
-|[atomic_flag_clear_explicit](../standard-library/atomic-functions.md#atomic_flag_clear_explicit)|`atomic_flag` 개체의 플래그를 **false**로 설정 합니다.|
-|[atomic_flag_test_and_set](../standard-library/atomic-functions.md#atomic_flag_test_and_set)|`atomic_flag` 개체의 플래그를 **true**로 설정 합니다.|
-|[atomic_flag_test_and_set_explicit](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit)|`atomic_flag` 개체의 플래그를 **true**로 설정 합니다.|
+|[atomic_flag_clear](../standard-library/atomic-functions.md#atomic_flag_clear)|@No__t_0 개체의 플래그를 **false**로 설정 합니다.|
+|[atomic_flag_clear_explicit](../standard-library/atomic-functions.md#atomic_flag_clear_explicit)|@No__t_0 개체의 플래그를 **false**로 설정 합니다.|
+|[atomic_flag_test_and_set](../standard-library/atomic-functions.md#atomic_flag_test_and_set)|@No__t_0 개체의 플래그를 **true**로 설정 합니다.|
+|[atomic_flag_test_and_set_explicit](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit)|@No__t_0 개체의 플래그를 **true**로 설정 합니다.|
 |[atomic_init](../standard-library/atomic-functions.md#atomic_init)|`atomic` 개체에서 저장된 값을 설정합니다.|
 |[atomic_is_lock_free](../standard-library/atomic-functions.md#atomic_is_lock_free)|지정된 개체에 대한 원자 연산이 잠금 해제인지를 지정합니다.|
 |[atomic_load](../standard-library/atomic-functions.md#atomic_load)|값을 원자 단위로 검색합니다.|
@@ -199,7 +199,7 @@ Typedef 이름은 \<inttypes.h> 헤더에 정의된 일부 형식에 대한 원�
 |[atomic_thread_fence](../standard-library/atomic-functions.md#atomic_thread_fence)|다른 fence와 관련하여 메모리 순서 요구 사항을 설정하는 *fence* 역할을 수행합니다.|
 |[kill_dependency](../standard-library/atomic-functions.md#kill_dependency)|가능한 종속성 체인을 중단합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md)

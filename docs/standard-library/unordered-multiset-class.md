@@ -134,16 +134,16 @@ helpviewer_keywords:
 - std::unordered_multiset::size
 - std::unordered_multiset::swap
 ms.assetid: 70c8dfc5-492a-4af2-84f5-1aa9cb04b71c
-ms.openlocfilehash: 836b7f9b0116b41dad57c150f87faf2d41f8f8b9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0c4ea79165f31de32645c2258f699f3a03f24877
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454733"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688801"
 ---
-# <a name="unorderedmultiset-class"></a>unordered_multiset 클래스
+# <a name="unordered_multiset-class"></a>unordered_multiset 클래스
 
-템플릿 클래스는 `const Key` 형식의 다양한 길이의 요소 시퀀스를 제어하는 개체를 설명합니다. 시퀀스는 해시 함수로 약하게 정렬됩니다. 즉, 시퀀스를 버킷이라고 하는 하위 시퀀스의 정렬된 집합으로 분할합니다. 비교 함수는 각 버킷 내에서 요소 쌍이 동일하게 정렬되었는지 여부를 확인합니다. 각 요소는 정렬 키와 값으로 사용됩니다. 시퀀스는 최소한 모든 버킷이 대략 동일한 크기일 경우 시퀀스의 요소 수와 상관없이 작업 수를 사용하여 임의 요소를 조회, 삽입, 제거하는 방식으로 나타냅니다(일정 시간). 모든 요소가 하나의 버킷에 있는 최악의 경우에는 작업 수가 시퀀스의 요소 수에 비례합니다(선형 시간). 또한, 요소를 삽입할 경우 어떤 반복기도 무효화되지 않으며, 요소를 제거할 경우 제거된 요소를 가리키고 있는 반복기만 무효화됩니다.
+클래스 템플릿은 `const Key` 형식의 다양 한 길이 요소 시퀀스를 제어 하는 개체를 설명 합니다. 시퀀스는 해시 함수로 약하게 정렬됩니다. 즉, 시퀀스를 버킷이라고 하는 하위 시퀀스의 정렬된 집합으로 분할합니다. 비교 함수는 각 버킷 내에서 요소 쌍이 동일하게 정렬되었는지 여부를 확인합니다. 각 요소는 정렬 키와 값으로 사용됩니다. 시퀀스는 최소한 모든 버킷이 대략 동일한 크기일 경우 시퀀스의 요소 수와 상관없이 작업 수를 사용하여 임의 요소를 조회, 삽입, 제거하는 방식으로 나타냅니다(일정 시간). 모든 요소가 하나의 버킷에 있는 최악의 경우에는 작업 수가 시퀀스의 요소 수에 비례합니다(선형 시간). 또한, 요소를 삽입할 경우 어떤 반복기도 무효화되지 않으며, 요소를 제거할 경우 제거된 요소를 가리키고 있는 반복기만 무효화됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -176,7 +176,7 @@ class unordered_multiset;
 |[difference_type](#difference_type)|두 요소 사이의 부호가 있는 거리의 형식입니다.|
 |[hasher](#hasher)|해시 함수의 형식입니다.|
 |[iterator](#iterator)|제어되는 시퀀스에 대한 반복기의 형식입니다.|
-|[key_equal](#key_equal)|비교 함수의 형식입니다.|
+|[hasher 형식의](#key_equal)|비교 함수의 형식입니다.|
 |[key_type](#key_type)|정렬 키의 형식입니다.|
 |[local_iterator](#local_iterator)|제어되는 시퀀스에 대한 버킷 반복기의 형식입니다.|
 |[pointer](#pointer)|요소에 대한 포인터의 형식입니다.|
@@ -187,7 +187,7 @@ class unordered_multiset;
 |멤버 함수|설명|
 |-|-|
 |[begin](#begin)|제어되는 시퀀스의 시작을 지정합니다.|
-|[bucket](#bucket)|키 값에 대한 버킷 개수를 가져옵니다.|
+|[버킷](#bucket)|키 값에 대한 버킷 개수를 가져옵니다.|
 |[bucket_count](#bucket_count)|버킷 개수를 가져옵니다.|
 |[bucket_size](#bucket_size)|버킷의 크기를 가져옵니다.|
 |[cbegin](#cbegin)|제어되는 시퀀스의 시작을 지정합니다.|
@@ -218,15 +218,15 @@ class unordered_multiset;
 |-|-|
 |[unordered_multiset::operator=](#op_eq)|해시 테이블을 복사합니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-개체는 저장된 두 개체, [unordered_multiset::key_equal](#key_equal) 형식의 비교 함수 개체, [unordered_multiset::hasher](#hasher) 형식의 해시 함수 개체를 호출하여 제어하는 시퀀스를 정렬합니다. 첫 번째 저장된 개체는 구성원 함수 [unordered_multiset::key_eq](#key_eq)`()`를 호출하여 액세스하며, 두 번째 저장된 개체는 구성원 함수 [unordered_multiset::hash_function](#hash)`()`을 호출하여 액세스합니다. 특히 `X` 형식의 모든 값 `Y` 및 `Key`의 경우 두 인수 값이 순서 지정이 동일할 경우 호출 `key_eq()(X, Y)`에서 true를 반환하며, 호출 `hash_function()(keyval)`은 형식 `size_t`의 값 분포를 생성합니다. 템플릿 클래스 [unordered_set 클래스](../standard-library/unordered-set-class.md)와 달리, 템플릿 클래스 `unordered_multiset`의 개체는 `key_eq()(X, Y)`가 제어된 시퀀스의 두 요소에 대해 항상 false라는 점에 대해 보장하지 않습니다. (키는 고유할 필요가 없습니다.)
+개체는 저장된 두 개체, [unordered_multiset::key_equal](#key_equal) 형식의 비교 함수 개체, [unordered_multiset::hasher](#hasher) 형식의 해시 함수 개체를 호출하여 제어하는 시퀀스를 정렬합니다. 첫 번째 저장된 개체는 구성원 함수 [unordered_multiset::key_eq](#key_eq)`()`를 호출하여 액세스하며, 두 번째 저장된 개체는 구성원 함수 [unordered_multiset::hash_function](#hash)`()`을 호출하여 액세스합니다. 특히 `X` 형식의 모든 값 `Y` 및 `Key`의 경우 두 인수 값이 순서 지정이 동일할 경우 호출 `key_eq()(X, Y)`에서 true를 반환하며, 호출 `hash_function()(keyval)`은 형식 `size_t`의 값 분포를 생성합니다. 클래스 템플릿 [Unordered_set 클래스](../standard-library/unordered-set-class.md)와 달리 `unordered_multiset` 형식의 개체는 제어 되는 시퀀스의 두 요소에 대해 `key_eq()(X, Y)` 항상 false가 되도록 보장 하지 않습니다. (키는 고유할 필요가 없습니다.)
 
 개체는 또한 최대 로드 비율(버킷당 최대 평균 요소 수를 원하는 대로 지정)를 저장합니다. 요소를 삽입할 때 [unordered_multiset::load_factor](#load_factor)`()`에서 최대 로드 비율이 초과될 경우 컨테이너는 버킷 수를 증가시키고 필요에 따라 해시 테이블을 다시 빌드합니다.
 
 제어된 시퀀스의 실제 요소 순서는 해시 함수, 비교 함수, 삽입 순서, 최대 로드 비율, 현재 버킷 수에 따라 달라집니다. 제어된 시퀀스의 요소 순서는 일반적으로 예측할 수 없습니다. 하지만 동일하게 정렬된 요소의 하위 집합은 제어된 시퀀스에서 항상 인접해 있습니다.
 
-개체는 [unordered_multiset::allocator_type](#allocator_type) 형식의 저장된 할당자 개체를 통해 제어하는 시퀀스에 대한 스토리지를 할당하고 해제합니다. 그러한 할당자 개체는 템플릿 클래스 `allocator`의 개체와 같은 외부 인터페이스가 있어야 합니다. 컨테이너 개체를 할당하는 경우 저장된 할당자 개체는 복사되지 않습니다.
+개체는 [unordered_multiset::allocator_type](#allocator_type) 형식의 저장된 할당자 개체를 통해 제어하는 시퀀스에 대한 스토리지를 할당하고 해제합니다. 이러한 할당자 개체에는 `allocator` 형식의 개체와 동일한 외부 인터페이스가 있어야 합니다. 컨테이너 개체를 할당하는 경우 저장된 할당자 개체는 복사되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -242,7 +242,7 @@ class unordered_multiset;
 typedef Alloc allocator_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 템플릿 매개 변수 `Alloc`의 동의어입니다.
 
@@ -292,7 +292,7 @@ const_local_iterator begin(size_type nbucket) const;
 |-|-|
 |*nbucket*|버킷 번호입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 처음 두 개의 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷 *nbucket* 첫 번째 요소 (또는 빈 버킷의 끝 바로 다음)를 가리키는 전방 반복기를 반환 합니다.
 
@@ -350,10 +350,10 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*\
+*keyval* \
 매핑할 키 값입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 현재 키 값 `keyval`에 해당하는 버킷 번호를 반환합니다.
 
@@ -404,7 +404,7 @@ bucket_size(7) == 1
 size_type bucket_count() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 현재 버킷 수를 반환합니다.
 
@@ -491,10 +491,10 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nbucket*\
+*nbucket* \
 버킷 번호입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 버킷 번호 *nbucket*크기를 반환 합니다.
 
@@ -547,13 +547,13 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>반환 값
 
-범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 **const** 전방 액세스 반복기입니다 (빈 범위의 `cbegin() == cend()`경우).
+범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 **const** 전방 액세스 반복기입니다 (빈 범위의 경우 `cbegin() == cend()`).
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `cbegin` 반환 값을 사용하여 범위의 요소를 수정할 수 없습니다.
 
-`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cbegin()`
+`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 `begin()` 및 `cbegin()`를 지 원하는 모든 종류의 수정 가능 (비 **const**) 컨테이너로 `Container` 하는 것이 좋습니다.
 
 ```cpp
 auto i1 = Container.begin();
@@ -575,11 +575,11 @@ const_iterator cend() const;
 
 범위 끝의 바로 다음을 가리키는 **const** 전방 액세스 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `cend`는 반복기가 범위 끝을 통과했는지 여부를 테스트하는 데 사용됩니다.
 
-`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cend()`
+`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 `end()` 및 `cend()`를 지 원하는 모든 종류의 수정 가능 (비 **const**) 컨테이너로 `Container` 하는 것이 좋습니다.
 
 ```cpp
 auto i1 = Container.end();
@@ -599,7 +599,7 @@ auto i2 = Container.cend();
 void clear();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 구성원 함수는 [unordered_multiset::erase](#erase)`(` [unordered_multiset::begin](#begin)`(),` [unordered_multiset::end](#end)`())`를 호출합니다.
 
@@ -666,7 +666,7 @@ empty() == false
 typedef T1 const_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 제어되는 시퀀스의 상수 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T1`의 동의어로 설명됩니다.
 
@@ -709,7 +709,7 @@ int main()
 typedef T5 const_local_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 형식은 버킷의 상수 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T5`의 동의어로 설명됩니다.
 
@@ -757,7 +757,7 @@ int main()
 typedef Alloc::const_pointer const_pointer;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 제어되는 시퀀스의 요소에 대한 상수 포인터로 사용될 수 있는 개체를 설명합니다.
 
@@ -803,7 +803,7 @@ int main()
 typedef Alloc::const_reference const_reference;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 제어되는 시퀀스의 요소에 대한 상수 참조로 사용될 수 있는 개체를 설명합니다.
 
@@ -851,10 +851,10 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*\
+*keyval* \
 검색할 키 값입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 구성원 함수는 [unordered_multiset::equal_range](#equal_range)`(keyval)`로 구분된 범위의 요소 수를 반환합니다.
 
@@ -904,7 +904,7 @@ count('C') == 0
 typedef T3 difference_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 부호 있는 정수 형식은 제어되는 시퀀스에서 두 요소의 주소 간 차이점을 나타낼 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T3`의 동의어로 설명됩니다.
 
@@ -974,7 +974,7 @@ iterator emplace(Args&&... args);
 
 새로 삽입된 요소에 대한 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 함수는 컨테이너 요소에 대한 참조는 무효화하지 않지만 컨테이너에 대한 모든 반복기는 무효화할 수 있습니다.
 
@@ -984,7 +984,7 @@ iterator emplace(Args&&... args);
 
 ## <a name="emplace_hint"></a>  unordered_multiset::emplace_hint
 
-배치 힌트를 사용하여 생성된 요소를 삽입합니다. 복사 또는 이동 작업은 수행되지 않습니다.
+배치 힌트를 사용하여 생성된 요소를 제 위치에 삽입합니다. 복사 또는 이동 작업은 수행되지 않습니다.
 
 ```cpp
 template <class... Args>
@@ -1004,7 +1004,7 @@ iterator emplace_hint(
 
 새로 삽입된 요소에 대한 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 함수는 컨테이너 요소에 대한 참조는 무효화하지 않지만 컨테이너에 대한 모든 반복기는 무효화할 수 있습니다.
 
@@ -1020,7 +1020,7 @@ iterator emplace_hint(
 bool empty() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 빈 제어되는 시퀀스에 대해 true를 반환합니다.
 
@@ -1092,10 +1092,10 @@ const_local_iterator end(size_type nbucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nbucket*\
+*nbucket* \
 버킷 번호입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 처음 두 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 정방향 반복기를 반환합니다. 마지막 두 멤버 함수는 버킷 *n 버킷의*끝 바로 다음을 가리키는 전방 반복기를 반환 합니다.
 
@@ -1159,12 +1159,12 @@ std::pair<const_iterator, const_iterator>
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*\
+*keyval* \
 검색할 키 값입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수는 *keyval*와 동일한 순서로 정렬 `X` 된 제어 `[X.first, X.second)` 되는 시퀀스의 요소만 구분 하는 반복기 쌍을 반환 합니다. 이러한 요소가 없는 경우 두 반복기는 `end()`입니다.
+멤버 함수는 *keyval*을 사용 하 여 동일한 순서로 정렬 된 제어 되는 시퀀스의 요소만 구분 `[X.first, X.second)`는 `X` 반복기 쌍을 반환 합니다. 이러한 요소가 없는 경우 두 반복기는 `end()`입니다.
 
 ### <a name="example"></a>예제
 
@@ -1232,16 +1232,16 @@ size_type erase(
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*\
+*Where* \
 제거할 요소의 위치입니다.
 
-*기본*\
+*첫 번째* \
 제거할 첫 번째 요소의 위치입니다.
 
-*최신*\
+*마지막* \
 제거할 마지막 요소 바로 다음 위치입니다.
 
-*키인지*\
+*키* \
 제거할 요소의 키 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1250,7 +1250,7 @@ size_type erase(
 
 세 번째 구성원 함수의 경우 unordered_multiset에서 제거된 요소의 수를 반환합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 코드 예제를 보려면 [set::erase](../standard-library/set-class.md#erase)를 참조하세요.
 
@@ -1264,10 +1264,10 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*keyval*\
+*keyval* \
 검색할 키 값입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 구성원 함수는 [unordered_multiset::equal_range](#equal_range)`(keyval).first`를 반환합니다.
 
@@ -1322,7 +1322,7 @@ find('b') == true: [b]
 Alloc get_allocator() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 저장된 할당자 개체를 반환합니다.
 
@@ -1360,7 +1360,7 @@ al == std::allocator() is true
 Hash hash_function() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 저장된 해시 함수 개체를 반환합니다.
 
@@ -1398,7 +1398,7 @@ hfn('b') == 1647086
 typedef Hash hasher;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 템플릿 매개 변수 `Hash`의 동의어입니다.
 
@@ -1484,15 +1484,15 @@ IList);
 
 힌트가 있는 단일 요소 멤버 함수 (3) 및 (4)는 unordered_multiset에 새 요소를 삽입한 위치를 가리키는 반복기를 반환합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 함수는 어떠한 포인터 또는 참조를 무효화하지 않지만 컨테이너에 대한 모든 반복기를 무효화할 수 있습니다.
 
 요소를 하나만 삽입하는 중 예외가 throw되었으나 컨테이너의 해시 함수에서 발생하지 않은 경우에는 컨테이너의 상태가 수정되지 않습니다. 예외가 해시 함수에서 throw된 경우 결과는 정의되어 있지 않습니다. 여러 요소를 삽입하는 중 예외가 throw되면 컨테이너는 지정되지 않았으나 유효한 상태로 남아 있습니다.
 
-컨테이너의 [value_type](../standard-library/map-class.md#value_type)은 컨테이너에 속한 형식 정의이고 set의 경우 `unordered_multiset<V>::value_type`은 `const V`입니다.
+컨테이너의 [value_type](../standard-library/map-class.md#value_type)은 컨테이너에 속한 형식 정의이고 set의 경우 `unordered_multiset<V>::value_type`은 `const V` 형식입니다.
 
-범위 멤버 함수 (5)는 범위 `[First, Last)`에서 반복기가 주소를 지정 하는 각 요소에 해당 하는 unordered_multiset에 요소 값의 시퀀스를 삽입 합니다. 따라서 *Last* 는 삽입 되지 않습니다. 컨테이너 멤버 함수 `end()`는 컨테이너의 마지막 요소 바로 뒤에 있는 위치를 참조합니다. 예를 들어 `m.insert(v.begin(), v.end());` 문은 `v`의 모든 요소를 `m`에 삽입합니다.
+범위 멤버 함수 (5)는 `[First, Last)` 범위에서 반복기가 주소를 지정 하는 각 요소에 해당 하는 unordered_multiset에 요소 값의 시퀀스를 삽입 합니다. 따라서 *Last* 는 삽입 되지 않습니다. 컨테이너 멤버 함수 `end()`는 컨테이너의 마지막 요소 바로 뒤에 있는 위치를 참조합니다. 예를 들어 `m.insert(v.begin(), v.end());` 문은 `v`의 모든 요소를 `m`에 삽입합니다.
 
 이니셜라이저 목록 구성원 함수 (6)은 [initializer_list](../standard-library/initializer-list.md)를 사용하여 요소를 unordered_multiset로 복사합니다.
 
@@ -1520,7 +1520,7 @@ typedef implementation-defined iterator;
 Pred key_eq() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 저장된 비교 함수 개체를 반환합니다.
 
@@ -1560,7 +1560,7 @@ cmpfn('a', 'b') == false
 typedef Pred key_equal;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 템플릿 매개 변수 `Pred`의 동의어입니다.
 
@@ -1600,7 +1600,7 @@ cmpfn('a', 'b') == false
 typedef Key key_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 템플릿 매개 변수 `Key`의 동의어입니다.
 
@@ -1654,7 +1654,7 @@ int main()
 float load_factor() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 구성원 함수는 `(float)`[unordered_multiset::size](#size)`() / (float)`[unordered_multiset::bucket_count](#bucket_count)`()`(버킷당 평균 요소 수)를 반환합니다.
 
@@ -1722,7 +1722,7 @@ int main()
 typedef T4 local_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 형식은 버킷의 정방향 반복기로 사용될 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T4`의 동의어로 설명됩니다.
 
@@ -1770,7 +1770,7 @@ int main()
 size_type max_bucket_count() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 현재 허용된 최대 버킷 개수를 반환합니다.
 
@@ -1860,10 +1860,10 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>매개 변수
 
-*이용한*\
+*요소* \
 새로운 최대 로드 비율입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 첫 번째 멤버 함수는 저장된 최대 로드 비율을 반환합니다. 두 번째 멤버 함수는 저장 된 최대 로드 비율을 *인수로*바꿉니다.
 
@@ -1949,7 +1949,7 @@ max_load_factor() == 0.1
 size_type max_size() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 개체가 제어할 수 있는 가장 긴 시퀀스의 길이를 반환합니다.
 
@@ -1992,9 +1992,9 @@ unordered_multiset& operator=(unordered_multiset&& right);
 |-|-|
 |*right*|`unordered_multiset`에 복사되는 [unordered_multiset](../standard-library/unordered-multiset-class.md)입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-에서 `unordered_multiset`기존 요소를 `operator=` 지운 후에는의 `unordered_multiset` *내용을로 복사* 하거나 이동 합니다.
+@No__t_0의 기존 요소를 지운 후에 *는의 내용을* `unordered_multiset` 복사 하거나 이동 `operator=`.
 
 ### <a name="example"></a>예제
 
@@ -2041,7 +2041,7 @@ int main( )
 typedef Alloc::pointer pointer;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 제어되는 시퀀스의 요소에 대한 포인터로 사용될 수 있는 개체를 설명합니다.
 
@@ -2088,7 +2088,7 @@ int main()
 typedef Alloc::reference reference;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 제어되는 시퀀스의 요소에 대한 참조로 사용될 수 있는 개체를 설명합니다.
 
@@ -2137,10 +2137,10 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>매개 변수
 
-*nbuckets*\
+*nbuckets* \
 요청된 버킷 수입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 버킷 수를 최소한 *nbuckets* 변경 하 고 필요에 따라 해시 테이블을 다시 빌드합니다.
 
@@ -2213,7 +2213,7 @@ max_load_factor() == 0.1
 size_type size() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 제어되는 시퀀스의 길이를 반환합니다.
 
@@ -2280,7 +2280,7 @@ empty() == false
 typedef T2 size_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 부호 없는 정수 형식은 제어되는 시퀀스의 길이를 나타낼 수 있는 개체를 설명합니다. 여기서는 구현에서 정의된 형식 `T2`의 동의어로 설명됩니다.
 
@@ -2318,12 +2318,12 @@ void swap(unordered_multiset& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*\
+*오른쪽* \
 교환할 컨테이너입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수는 제어 되는 시퀀스 `*this` 를과 *오른쪽*으로 바꿉니다. [unordered_multiset::get_allocator](#get_allocator)`() == right.get_allocator()`인 경우 일정 시간에 이 작업을 수행하고 `Tr` 형식의 저장된 특성 개체를 복사한 결과로만 예외를 throw하며 두 개의 제어되는 시퀀스에서 요소를 지정하는 참조, 포인터 또는 반복기를 무효화하지 않습니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
+멤버 함수는 `*this`와 *right*사이에서 제어 되는 시퀀스를 바꿉니다. [unordered_multiset::get_allocator](#get_allocator)`() == right.get_allocator()`인 경우 일정 시간에 이 작업을 수행하고 `Tr` 형식의 저장된 특성 개체를 복사한 결과로만 예외를 throw하며 두 개의 제어되는 시퀀스에서 요소를 지정하는 참조, 포인터 또는 반복기를 무효화하지 않습니다. 그렇지 않으면 두 개의 제어되는 시퀀스에 있는 요소 수에 비례하여 많은 요소 할당 및 생성자 호출을 수행합니다.
 
 ### <a name="example"></a>예제
 
@@ -2444,19 +2444,19 @@ unordered_multiset(
 |*오른쪽*|복사할 컨테이너입니다.|
 |*IList*|복사할 initializer_list입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 첫 번째 생성자는 *Right*로 제어 되는 시퀀스의 복사본을 지정 합니다. 두 번째 생성자는 빈 제어 시퀀스를 지정합니다. 세 번째 생성자는 `[First, Last)` 요소 값의 시퀀스를 삽입합니다. 네 번째 생성자는 *오른쪽*으로 이동 하 여 시퀀스의 복사본을 지정 합니다.
 
 모든 생성자는 또한 여러 개의 저장된 값을 초기화합니다. 복사 생성자의 경우 값은 *오른쪽*에서 가져옵니다. 그렇지 않은 경우는 다음과 같습니다.
 
-최소 버킷 수는 *Bucket_count*인수입니다 (있는 경우). 그렇지 않으면 여기에 구현 정의 값 `N0`으로 설명 된 기본값입니다.
+최소 버킷 수는 *Bucket_count*인수입니다 (있는 경우). 그렇지 않으면 여기에 설명 된 기본값은 `N0` 구현 정의 값으로 설명 됩니다.
 
-해시 함수 개체는 인수 *해시*(있는 경우)입니다. 그렇지 않으면입니다 `Hash()`.
+해시 함수 개체는 인수 *해시*(있는 경우)입니다. 그렇지 않으면 `Hash()` 합니다.
 
-비교 함수 개체는 인수 *Comp*(있는 경우)입니다. 그렇지 않으면입니다 `Comp()`.
+비교 함수 개체는 인수 *Comp*(있는 경우)입니다. 그렇지 않으면 `Comp()` 합니다.
 
-할당자 개체는 *Al*인수입니다 (있는 경우). 그렇지 않으면 `Alloc()`입니다.
+할당자 개체는 *Al*인수입니다 (있는 경우). 그렇지 않으면 `Alloc()` 됩니다.
 
 ## <a name="value_type"></a>  unordered_multiset::value_type
 
@@ -2466,7 +2466,7 @@ unordered_multiset(
 typedef Key value_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 형식은 제어되는 시퀀스의 요소를 설명합니다.
 
@@ -2512,7 +2512,7 @@ int main()
 [d] [c] [b] [a]
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [<unordered_set>](../standard-library/unordered-set.md)\
 [컨테이너](../cpp/containers-modern-cpp.md)\

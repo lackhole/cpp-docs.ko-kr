@@ -9,16 +9,16 @@ helpviewer_keywords:
 - functors
 - functional header
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
-ms.openlocfilehash: 2f8ef031731e4213ce8cda326d05f1241cd03625
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 67b2ccf70b4d3045cecd13d9096875f77c4cde9a
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447383"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689628"
 ---
 # <a name="ltfunctionalgt"></a>&lt;functional&gt;
 
-함수 C++ 라고도 하는 *함수 개체*를 생성 하는 데 도움이 되 는 표준 라이브러리 함수를 정의 하 고 해당 바인더를 정의 합니다. 함수 개체는 `operator()`를 정의하는 형식의 개체입니다. 함수 개체는 함수 포인터일 수 있지만, 개체를 사용하여 함수 호출 중에 액세스할 수 있는 추가 정보를 저장하는 것이 더 일반적입니다.
+함수 C++ 라고도 하는 *함수 개체*를 생성 하는 데 도움이 되는 표준 라이브러리 함수를 정의 하 고 해당 바인더를 정의 합니다. 함수 개체는 `operator()`를 정의하는 형식의 개체입니다. 함수 개체는 함수 포인터일 수 있지만, 개체를 사용하여 함수 호출 중에 액세스할 수 있는 추가 정보를 저장하는 것이 더 일반적입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -26,11 +26,11 @@ ms.locfileid: "68447383"
 
 **네임스페이스:** std
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 알고리즘에는 *단항* 및 *binary*의 두 가지 함수 개체 형식이 필요 합니다. 단항 함수 개체에는 인수가 하나 필요하고 이항 함수 개체에는 인수가 두 개 필요합니다. 함수 개체 및 함수 포인터는 알고리즘 조건자로 전달할 수 있지만 함수 개체는 조정 가능하며 C++ 표준 라이브러리의 범위, 유연성 및 효율성을 높입니다. 예를 들어 값이 알고리즘에 전달되기 전에 함수에 바인딩되어야 하는 경우 함수 포인터를 사용할 수 없습니다. 함수 어댑터는 함수 포인터를 값에 바인딩될 수 있는 조정 가능한 함수 개체로 변환합니다. \<functional> 헤더에는 멤버 함수를 조정 가능한 함수 개체로 호출할 수 있도록 하는 멤버 함수 어댑터도 포함되어 있습니다. 함수는 해당 인수 및 반환 형식을 지정하는 중첩 형식 선언을 포함하는 경우 조정 가능합니다. 함수 개체와 해당 어댑터는 C++ 표준 라이브러리가 기존 애플리케이션을 업그레이드할 수 있도록 하며 라이브러리를 C++ 프로그래밍 환경으로 통합하는 데 도움이 됩니다.
 
-함수 >의 함수 개체 \<구현에는 *투명 연산자 함수*가 포함 됩니다. 표준 함수 개체의 특수화 이며 템플릿 매개 변수를 사용 하지 않고 함수 인수의 완벽 한 전달 및 결과의 완벽 한 반환을 수행 합니다. 이러한 템플릿 특수화는 산술, 비교, 논리 및 비트 연산자 함수를 호출할 때 인수 형식을 지정할 필요가 없습니다. 사용자 고유의 형식 또는 다른 유형의 형식 조합에 대해 산술, 비교, 논리 또는 비트 연산자를 오버로드할 수 있으며 투명 연산자 함수를 함수 인수로 사용할 수 있습니다. 예를 들어 *MyType* 형식이 `operator<`를 구현하는 경우 `sort(my_collection.begin(), my_collection.end(), less<MyType>())` 형식을 명시적으로 지정하는 대신 `sort(my_collection.begin(), my_collection.end(), less<>())`를 호출할 수 있습니다.
+@No__t_0functional >에서 함수 개체의 구현에는 *투명 연산자 함수*가 포함 됩니다. 표준 함수 개체의 특수화 이며 템플릿 매개 변수를 사용 하지 않고 함수 인수의 완벽 한 전달 및 결과의 완벽 한 반환을 수행 합니다. 이러한 템플릿 특수화는 산술, 비교, 논리 및 비트 연산자 함수를 호출할 때 인수 형식을 지정할 필요가 없습니다. 사용자 고유의 형식 또는 다른 유형의 형식 조합에 대해 산술, 비교, 논리 또는 비트 연산자를 오버로드할 수 있으며 투명 연산자 함수를 함수 인수로 사용할 수 있습니다. 예를 들어 *MyType* 형식이 `operator<`를 구현하는 경우 `sort(my_collection.begin(), my_collection.end(), less<MyType>())` 형식을 명시적으로 지정하는 대신 `sort(my_collection.begin(), my_collection.end(), less<>())`를 호출할 수 있습니다.
 
 C + + 11, c + + 14 및 c + + 17에 추가 된 기능은 다음과 같습니다.
 
@@ -79,9 +79,9 @@ C + + 11, c + + 14 및 c + + 17에 추가 된 기능은 다음과 같습니다.
 |||
 |-|-|
 |[bad_function_call](../standard-library/bad-function-call-class.md)|개체가 비어 있어서 [function](../standard-library/function-class.md) 개체에 대한 `operator()` 호출이 실패했음을 나타내기 위해 발생한 예외를 설명하는 클래스입니다.|
-|[binary_negate](../standard-library/binary-negate-class.md)|지정된 이항 함수의 반환 값을 부정하는 멤버 함수를 제공하는 템플릿 클래스입니다.<br/> C + + 17에서 사용 되지 않습니다. |
-|[binder1st](../standard-library/binder1st-class.md)|이항 함수의 첫 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 생성자를 제공하는 템플릿 클래스입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
-|[binder2nd](../standard-library/binder2nd-class.md)|이항 함수의 두 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 생성자를 제공하는 템플릿 클래스입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
+|[binary_negate](../standard-library/binary-negate-class.md)|지정 된 이항 함수의 반환 값을 부정 하는 멤버 함수를 제공 하는 클래스 템플릿입니다.<br/> C + + 17에서 사용 되지 않습니다. |
+|[binder1st](../standard-library/binder1st-class.md)|이항 함수의 첫 번째 인수를 지정 된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환 하는 생성자를 제공 하는 클래스 템플릿입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
+|[binder2nd](../standard-library/binder2nd-class.md)|이항 함수의 두 번째 인수를 지정 된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환 하는 생성자를 제공 하는 클래스 템플릿입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
 |[boyer_moore_horspool_searcher](../standard-library/boyer-moore-horspool-searcher-class.md)||
 |[boyer_moore_searcher](../standard-library/boyer-moore-searcher-class.md)||
 |[const_mem_fun_ref_t](../standard-library/const-mem-fun-ref-t-class.md)|참조 인수를 사용하여 초기화할 때 인수를 사용하지 않는 const 멤버 함수를 단항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
@@ -93,14 +93,14 @@ C + + 11, c + + 14 및 c + + 17에 추가 된 기능은 다음과 같습니다.
 |[hash](../standard-library/hash-class.md)|값에 대한 해시 코드를 계산하는 클래스입니다.|
 |[is_bind_expression](../standard-library/is-bind-expression-class.md)|`bind`를 호출하여 특정 형식이 생성되었는지 테스트하는 클래스입니다.|
 |[is_placeholder](../standard-library/is-placeholder-class.md)|특정 형식이 자리 표시자인지 테스트하는 클래스입니다.|
-|[mem_fun_ref_t](../standard-library/mem-fun-ref-t-class.md)|참조 인수를 사용 하 여 `non_const` 초기화할 때 인수를 사용 하지 않는 멤버 함수를 단항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
-|[mem_fun_t](../standard-library/mem-fun-t-class.md)|포인터 인수를 사용 하 여 `non_const` 초기화할 때 인수를 사용 하지 않는 멤버 함수를 단항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
-|[mem_fun1_ref_t](../standard-library/mem-fun1-ref-t-class.md)|참조 인수를 사용 하 여 `non_const` 초기화할 때 단일 인수를 사용 하는 멤버 함수를 이항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
-|[mem_fun1_t](../standard-library/mem-fun1-t-class.md)|포인터 인수를 사용 하 여 `non_const` 초기화할 때 단일 인수를 사용 하는 멤버 함수를 이항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
+|[mem_fun_ref_t](../standard-library/mem-fun-ref-t-class.md)|참조 인수를 사용 하 여 초기화할 때 인수를 사용 하지 않는 `non_const` 멤버 함수를 단항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
+|[mem_fun_t](../standard-library/mem-fun-t-class.md)|포인터 인수를 사용 하 여 초기화할 때 인수를 사용 하지 않는 `non_const` 멤버 함수를 단항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
+|[mem_fun1_ref_t](../standard-library/mem-fun1-ref-t-class.md)|참조 인수를 사용 하 여 초기화할 때 단일 인수를 사용 하는 `non_const` 멤버 함수를 이항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
+|[mem_fun1_t](../standard-library/mem-fun1-t-class.md)|포인터 인수를 사용 하 여 초기화할 때 단일 인수를 사용 하는 `non_const` 멤버 함수를 이항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
 |[pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md)|이항 함수 포인터를 조정 가능한 이항 함수로 변환합니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
 |[pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md)|단항 함수 포인터를 조정 가능한 단항 함수로 변환합니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
 |[reference_wrapper](../standard-library/reference-wrapper-class.md)|참조를 래핑하는 클래스입니다.|
-|[unary_negate](../standard-library/unary-negate-class.md)|지정된 단항 함수의 반환 값을 부정하는 멤버 함수를 제공하는 템플릿 클래스입니다.<br/> C + + 17에서 사용 되지 않습니다.  |
+|[unary_negate](../standard-library/unary-negate-class.md)|지정 된 단항 함수의 반환 값을 부정 하는 멤버 함수를 제공 하는 클래스 템플릿입니다.<br/> C + + 17에서 사용 되지 않습니다.  |
 
 ### <a name="functions"></a>함수
 
@@ -114,7 +114,7 @@ C + + 11, c + + 14 및 c + + 17에 추가 된 기능은 다음과 같습니다.
 |[bit_or](../standard-library/functional-functions.md#bit_or)|두 매개 변수의 비트 논리적 OR(operator&#124;)를 반환합니다.|
 |[bit_xor](../standard-library/functional-functions.md#bit_xor)|두 매개 변수의 비트 논리적 XOR(operator^)을 반환합니다.|
 |[cref](../standard-library/functional-functions.md#cref)|인수에서 const `reference_wrapper`를 생성합니다.|
-|[invoke](../standard-library/functional-functions.md#invoke)||
+|[호출](../standard-library/functional-functions.md#invoke)||
 |[mem_fn](../standard-library/functional-functions.md#mem_fn)|단순 호출 래퍼를 생성합니다.|
 |[mem_fun](../standard-library/functional-functions.md#mem_fun)|포인터 인수를 사용하여 초기화할 때 멤버 함수에 대한 함수 개체 어댑터를 생성하는 데 사용되는 도우미 템플릿 함수입니다.<br/> C + + 11에서 사용 되지 않으며 c + + 17에서 제거 되었습니다. |
 |[mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref)|참조 인수를 사용하여 초기화할 때 멤버 함수에 대한 함수 개체 어댑터를 생성하는 데 사용되는 도우미 템플릿 함수입니다.|
@@ -125,7 +125,7 @@ C + + 11, c + + 14 및 c + + 17에 추가 된 기능은 다음과 같습니다.
 |[ref](../standard-library/functional-functions.md#ref)|인수에서 `reference_wrapper` 를 생성합니다.|
 |[swap](../standard-library/functional-functions.md#swap)|두 `function` 개체를 교환합니다.|
 
-### <a name="structs"></a>구조체
+### <a name="structs"></a>Structs
 
 |||
 |-|-|
@@ -160,7 +160,7 @@ C + + 11, c + + 14 및 c + + 17에 추가 된 기능은 다음과 같습니다.
 |[연산자==](../standard-library/functional-operators.md#op_eq_eq)|호출 가능 개체의 같음 비교를 허용하지 않습니다.|
 |[operator!=](../standard-library/functional-operators.md#op_neq)|호출 가능 개체의 같지 않음 비교를 허용하지 않습니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

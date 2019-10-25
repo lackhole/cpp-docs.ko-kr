@@ -7,16 +7,16 @@ helpviewer_keywords:
 - <bitset> header
 - bitset header
 ms.assetid: af30a9b9-489e-46e3-9d29-5f3ea07ae6dc
-ms.openlocfilehash: 5de13e66523ee5a5dbcb4c2c54d38037909a4c95
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: e017cad251f57cb477b0bf711cdd6243d7fd9893
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449700"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689923"
 ---
 # <a name="ltbitsetgt"></a>&lt;bitset&gt;
 
-템플릿 클래스 bitset 및 고정 크기 비트 시퀀스를 나타내고 조작하기 위한 두 개의 지원 템플릿 함수를 정의합니다.
+클래스 템플릿 bitset 및 고정 크기 비트 시퀀스를 나타내고 조작 하기 위한 두 개의 지원 템플릿 함수를 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -40,9 +40,9 @@ ms.locfileid: "68449700"
 
 |||
 |-|-|
-|[bitset](../standard-library/bitset-class.md)|이 템플릿 클래스는 일련의 항목 또는 조건에 대한 플래그를 유지하기 위한 간단한 방법으로 제공하는 고정된 비트 수로 구성된 시퀀스를 저장하는 개체 형식을 설명합니다.|
+|[bitset](../standard-library/bitset-class.md)|클래스 템플릿은 일련의 항목 또는 조건에 대 한 플래그를 유지 하는 간단한 방법을 제공 하는 고정 된 비트 수로 구성 된 시퀀스를 저장 하는 개체의 형식을 설명 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

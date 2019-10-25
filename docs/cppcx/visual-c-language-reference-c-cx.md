@@ -14,7 +14,7 @@ ms.locfileid: "70740860"
 C++/CX는 Windows 앱을 만들 수 있도록 C++ 하는 언어에 대 한 확장 집합으로, 최신 C++상태로 최대한 가까운 방법으로 구성 요소를 Windows 런타임 합니다. /Cx C++를 사용 하 여 Visual C#, Visual Basic, JavaScript 및 Windows 런타임를 지 원하는 다른 언어와 쉽게 상호 작용 하는 네이티브 코드로 Windows 앱 및 구성 요소를 작성할 수 있습니다. 드물지만 원시 COM 인터페이스 또는 비 예외 코드에 직접 액세스 해야 하는 경우에는 [WRL (Windows 런타임 C++ 템플릿 라이브러리)](../windows/windows-runtime-cpp-template-library-wrl.md)를 사용할 수 있습니다.
 
 > [!NOTE]
-> **/Winrt는 C++/cx의 권장 되는 대안입니다. [ C++](/windows/uwp/cpp-and-winrt-apis/index) 최신 Windows 10 SDK 버전 1803부터 사용할 수 있는 Windows 런타임 Api에 대 한 새로운 표준 c + + 17 언어 프로젝션입니다. C++/WinRT는 헤더 파일에 완전히 구현 되며 최신 Windows API에 대 한 최고 수준의 액세스를 제공 하도록 설계 되었습니다.
+> **[/Winrt는 C++/cx의 권장 되는 대안입니다. C++](/windows/uwp/cpp-and-winrt-apis/index)** 최신 Windows 10 SDK 버전 1803부터 사용할 수 있는 Windows 런타임 Api에 대 한 새로운 표준 c + + 17 언어 프로젝션입니다. C++/WinRT는 헤더 파일에 완전히 구현 되며 최신 Windows API에 대 한 최고 수준의 액세스를 제공 하도록 설계 되었습니다.
 >
 > C++/Winrt를 사용 하면 표준 규격 c + + 17 컴파일러를 사용 하 여 Windows 런타임 api를 사용 하 고 제작할 수 있습니다. C++/WinRT는 일반적으로 더 잘 수행 되며 Windows 런타임에 대 한 다른 언어 옵션 보다 작은 이진 파일을 생성 합니다. C++/CX와 WRL도 계속 지원되지만, 새 애플리케이션에서는 C++/WinRT를 사용하는 것이 좋습니다. 자세한 내용은 [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/index) 참조하세요.
 

@@ -11,12 +11,12 @@ f1_keywords:
 - fstream/std::wifstream
 - fstream/std::wofstream
 ms.assetid: 8dddef2d-7f17-42a6-ba08-6f6f20597d23
-ms.openlocfilehash: 6144826254c6acc509db2c0285b21811fe37bd4e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3f4104b28f5becfdbf62ede16faa81e855fcac8c
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454045"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689648"
 ---
 # <a name="ltfstreamgt-typedefs"></a>&lt;fstream&gt; 형식 정의
 
@@ -28,41 +28,41 @@ ms.locfileid: "68454045"
 
 ## <a name="filebuf"></a>  filebuf
 
-Char 템플릿 `basic_filebuf` 매개 변수  에서 특수화 된 형식입니다.
+**문자** 템플릿 매개 변수에서 특수화 된 형식 `basic_filebuf` 합니다.
 
 ```cpp
 typedef basic_filebuf<char, char_traits<char>> filebuf;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 기본 문자 특성을 포함 하는 **char** 형식의 요소에 대해 특수화 된 [basic_filebuf](../standard-library/basic-filebuf-class.md)템플릿 클래스의 동의어입니다.
+이 형식은 기본 문자 특성을 포함 하는 **char** 형식의 요소에 대해 특수화 된 클래스 템플릿 [basic_filebuf](../standard-library/basic-filebuf-class.md)의 동의어입니다.
 
 ## <a name="fstream"></a>  fstream
 
-Char 템플릿 `basic_fstream` 매개 변수  에서 특수화 된 형식입니다.
+**문자** 템플릿 매개 변수에서 특수화 된 형식 `basic_fstream` 합니다.
 
 ```cpp
 typedef basic_fstream<char, char_traits<char>> fstream;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 기본 문자 특성을 포함 하는 **char** 형식의 요소에 대해 특수화 된 [basic_fstream](../standard-library/basic-fstream-class.md)템플릿 클래스의 동의어입니다.
+이 형식은 기본 문자 특성을 포함 하는 **char** 형식의 요소에 대해 특수화 된 클래스 템플릿 [basic_fstream](../standard-library/basic-fstream-class.md)의 동의어입니다.
 
 ## <a name="ifstream"></a>  ifstream
 
-파일에서 직렬로 싱글바이트 문자 데이터를 읽는 데 사용할 스트림을 정의합니다. `ifstream`는 `basic_ifstream` **char**에 대 한 템플릿 클래스를 특수화 하는 typedef입니다.
+파일에서 직렬로 싱글바이트 문자 데이터를 읽는 데 사용할 스트림을 정의합니다. `ifstream`은 **char**에 대 한 클래스 템플릿 `basic_ifstream`를 특수화 하는 typedef입니다.
 
-또한 `wifstream` **wchar_t** 더블 와이드 문자를 읽도록 특수화 `basic_ifstream` 된 typedef가 있습니다. 자세한 내용은 [wifstream](../standard-library/fstream-typedefs.md#wifstream)을 참조하세요.
+또한 **wchar_t** 더블 와이드 문자를 읽을 `basic_ifstream` 특수화 하는 typedef 인 `wifstream` 있습니다. 자세한 내용은 [wifstream](../standard-library/fstream-typedefs.md#wifstream)을 참조하세요.
 
 ```cpp
 typedef basic_ifstream<char, char_traits<char>> ifstream;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 기본 문자 특성을 포함 하는 char 형식의 요소에 대해 특수화 된 [basic_ifstream](../standard-library/basic-ifstream-class.md)템플릿 클래스의 동의어입니다. 예제는 다음과 같습니다.
+이 형식은 기본 문자 특성을 포함 하는 char 형식의 요소에 대해 특수화 된 클래스 템플릿 [basic_ifstream](../standard-library/basic-ifstream-class.md)의 동의어입니다. 예제는 다음과 같습니다.
 
 ```cpp
 using namespace std;
@@ -78,64 +78,64 @@ if (!infile.bad())
 
 ## <a name="ofstream"></a>  ofstream
 
-Char 템플릿 `basic_ofstream` 매개 변수  에서 특수화 된 형식입니다.
+**문자** 템플릿 매개 변수에서 특수화 된 형식 `basic_ofstream` 합니다.
 
 ```cpp
 typedef basic_ofstream<char, char_traits<char>> ofstream;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 기본 문자 특성을 포함 하는 **char** 형식의 요소에 대해 특수화 된 [basic_ofstream](../standard-library/basic-ofstream-class.md)템플릿 클래스의 동의어입니다.
+이 형식은 기본 문자 특성을 포함 하는 **char** 형식의 요소에 대해 특수화 된 클래스 템플릿 [basic_ofstream](../standard-library/basic-ofstream-class.md)의 동의어입니다.
 
 ## <a name="wfstream"></a>  wfstream
 
-Wchar_t 템플릿 `basic_fstream` 매개 변수  에서 특수화 된 형식입니다.
+**Wchar_t** 템플릿 매개 변수에서 특수화 된 형식 `basic_fstream` 합니다.
 
 ```cpp
 typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 기본 문자 특성을 포함 하는 **wchar_t** 형식의 요소에 대해 특수화 된 [basic_fstream](../standard-library/basic-fstream-class.md)템플릿 클래스의 동의어입니다.
+이 형식은 기본 문자 특성을 포함 하는 **wchar_t** 형식의 요소에 대해 특수화 된 클래스 템플릿 [basic_fstream](../standard-library/basic-fstream-class.md)의 동의어입니다.
 
 ## <a name="wifstream"></a>  wifstream
 
-Wchar_t 템플릿 `basic_ifstream` 매개 변수  에서 특수화 된 형식입니다.
+**Wchar_t** 템플릿 매개 변수에서 특수화 된 형식 `basic_ifstream` 합니다.
 
 ```cpp
 typedef basic_ifstream<wchar_t, char_traits<wchar_t>> wifstream;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 기본 문자 특성을 포함 하는 **wchar_t** 형식의 요소에 대해 특수화 된 [basic_ifstream](../standard-library/basic-ifstream-class.md)템플릿 클래스의 동의어입니다.
+이 형식은 기본 문자 특성을 포함 하는 **wchar_t** 형식의 요소에 대해 특수화 된 클래스 템플릿 [basic_ifstream](../standard-library/basic-ifstream-class.md)의 동의어입니다.
 
 ## <a name="wofstream"></a>  wofstream
 
-Wchar_t 템플릿 `basic_ofstream` 매개 변수  에서 특수화 된 형식입니다.
+**Wchar_t** 템플릿 매개 변수에서 특수화 된 형식 `basic_ofstream` 합니다.
 
 ```cpp
 typedef basic_ofstream<wchar_t, char_traits<wchar_t>> wofstream;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 기본 문자 특성을 포함 하는 **wchar_t** 형식의 요소에 대해 특수화 된 [basic_ofstream](../standard-library/basic-ofstream-class.md)템플릿 클래스의 동의어입니다.
+이 형식은 기본 문자 특성을 포함 하는 **wchar_t** 형식의 요소에 대해 특수화 된 클래스 템플릿 [basic_ofstream](../standard-library/basic-ofstream-class.md)의 동의어입니다.
 
 ## <a name="wfilebuf"></a>  wfilebuf
 
-Wchar_t 템플릿 `basic_filebuf` 매개 변수  에서 특수화 된 형식입니다.
+**Wchar_t** 템플릿 매개 변수에서 특수화 된 형식 `basic_filebuf` 합니다.
 
 ```cpp
 typedef basic_filebuf<wchar_t, char_traits<wchar_t>> wfilebuf;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 형식은 기본 문자 특성을 포함 하는 **wchar_t** 형식의 요소에 대해 특수화 된 [basic_filebuf](../standard-library/basic-filebuf-class.md)템플릿 클래스의 동의어입니다.
+이 형식은 기본 문자 특성을 포함 하는 **wchar_t** 형식의 요소에 대해 특수화 된 클래스 템플릿 [basic_filebuf](../standard-library/basic-filebuf-class.md)의 동의어입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<fstream>](../standard-library/fstream.md)

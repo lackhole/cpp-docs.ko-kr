@@ -21,10 +21,10 @@ helpviewer_keywords:
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
 ms.openlocfilehash: c26b72f7c675a4130f38c515cf71ecc290328ccc
-ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
+ms.sourcegitcommit: 8178d22701047d24f69f10d01ba37490e3d67241
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "69498600"
 ---
 # <a name="try-finally-statement"></a>try-finally 문
@@ -33,19 +33,19 @@ ms.locfileid: "69498600"
 
 다음 구문에서는 **try-finally** 문을 설명 합니다.
 
-> **\_\_try**<br/>
+> **\_ \_try**<br/>
 > {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;보호 된 코드<br/>
+> &nbsp; &nbsp; &nbsp; &nbsp;//보호 코드<br/>
 > }<br/>
-> **\_\_finally**<br/>
+> **\_ \_finally**<br/>
 > {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;종료 코드<br/>
+> &nbsp; &nbsp; &nbsp; &nbsp;//종료 코드<br/>
 > }
 
 ## <a name="grammar"></a>문법
 
 *try-finally-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **\_\_try** *compound-statement* **\_\_finally** *compound-statement*
+&nbsp; &nbsp; &nbsp; &nbsp; **\_** **\_try 복합** *문 \_*
 
 **Try finally** 문은 코드 블록 실행이 중단 될 때 대상 응용 프로그램이 C++ 정리 코드의 실행을 보장할 수 있도록 하는 C 및 언어의 Microsoft 확장입니다. 정리는 메모리 할당 해제, 파일 닫기 및 파일 핸들 해제와 같은 작업으로 구성됩니다. **Try finally** 문은 루틴에서 중간에 반환 될 수 있는 오류에 대 한 검사가 수행 되는 여러 위치가 있는 루틴에 특히 유용 합니다.
 
@@ -66,15 +66,15 @@ ms.locfileid: "69498600"
 
 **__Try** 블록에서 예외가 발생 하면 운영 체제에서 예외에 대 한 처리기를 찾아야 합니다. 그렇지 않으면 프로그램에서 오류가 발생 합니다. 처리기가 있는 경우 모든 **__finally** 블록이 실행 되 고 처리기에서 실행이 다시 시작 됩니다.
 
-예를 들어, 일련의 함수 호출 링크에서는 함수 A를 D에 연결한다고 가정합니다(아래 그림 참조). 각 함수에는 종료 처리기가 하나씩 있습니다. 함수 D에서 예외가 발생 하 고에서 처리 되는 경우 시스템에서 스택을 해제 하면 종료 처리기가이 순서로 호출 됩니다. D, C, B.
+예를 들어, 일련의 함수 호출 링크에서는 함수 A를 D에 연결한다고 가정합니다(아래 그림 참조). 각 함수에는 종료 처리기가 하나씩 있습니다. 예외가 D 함수에서 발생하고 A에서 처리될 경우 시스템이 스택 D, C, B를 해제하면 그 순서대로 종료 처리기가 호출됩니다.
 
-![&#45;]종료 처리기 실행(../cpp/media/vc38cx1.gif "의&#45;") 종료 처리기 실행 순서 <br/>
+![종료&#45;처리기 실행 순서](../cpp/media/vc38cx1.gif "종료&#45;처리기 실행 순서") <br/>
 종료 처리기 실행 순서
 
 > [!NOTE]
 > Try-finally의 동작은와 C#같이 **마지막**사용을 지 원하는 다른 언어와는 다릅니다.  단일 **__try** 는 **__finally** 와 **__except**중 하나만 있을 수 있습니다.  모두 함께 사용되는 경우 외부 try-except 문은 내부 try-finally 문을 포함해야 합니다.  또한 각 블록을 실행할 때 지정되는 규칙은 서로 다릅니다.
 
-이전 버전과의 호환성을 위해 **_try**, **_try**및 _ _ **leave** 는 **__try**, **__finally**및 **__leave** 의 동의어입니다 (컴파일러 옵션 [/za \(언어 확장을 사용 하지 않는 경우). ](../build/reference/za-ze-disable-language-extensions.md)이 지정 되었습니다.
+이전 버전과의 호환성을 위해 **_try**, **_try**및 _ _ **leave** 는 컴파일러 옵션 [/za \(Disable 언어 확장)](../build/reference/za-ze-disable-language-extensions.md) 이 아닌 한 **__try**, **__finally**및 **__leave** 의 동의어입니다. 지정.
 
 ## <a name="the-__leave-keyword"></a>__leave 키워드
 
@@ -92,7 +92,7 @@ Try [jmp](../c-runtime-library/reference/longjmp.md) 런타임 함수를 사용 
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [종료 처리기 작성](../cpp/writing-a-termination-handler.md)<br/>
 [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>

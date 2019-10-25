@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - string header
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-ms.openlocfilehash: 80d5d297cc28cfb019dae99e9e9736e4b2eb654f
-ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
+ms.openlocfilehash: 0b8ca5744418860cc6b4868dda9174ae2eb68a98
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957121"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72685888"
 ---
 # <a name="ltstringgt"></a>&lt;string&gt;
 
-컨테이너 클래스 템플릿 `basic_string` 및 다양한 지원 템플릿을 정의합니다.
+컨테이너 클래스 템플릿 `basic_string`와 다양 한 지원 템플릿을 정의 합니다.
 
 `basic_string`에 대한 자세한 내용은 [basic_string 클래스](../standard-library/basic-string-class.md)를 참조하세요.
 
@@ -26,26 +26,26 @@ ms.locfileid: "68957121"
 #include <string>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 C++ 언어와 C++ 표준 라이브러리는 두 가지 문자열 형식을 지원합니다.
 
 - Null로 종료되는 문자 배열은 보통 C 문자열이라고 합니다.
 
-- 모든 문자 형식 템플릿 인수를 `basic_string`처리 하는 형식의템플릿 클래스 개체입니다.
+- 모든 **문자**형식 템플릿 인수를 처리 하는 `basic_string` 형식의 클래스 템플릿 개체입니다.
 
 ### <a name="typedefs"></a>형식 정의
 
-|형식 이름|Description|
+|형식 이름|설명|
 |-|-|
-|[string](../standard-library/string-typedefs.md#string)|Char 형식의 요소가로 포함 된 템플릿 클래스 `basic_string` 의 특수화를 설명 하는 형식입니다. `string`|
-|[wstring](../standard-library/string-typedefs.md#wstring)|Wchar_t 형식의 요소가로 포함 된 템플릿 클래스 `basic_string` 의 특수화를 설명 하는 형식입니다. `wstring`|
-|[u16string](../standard-library/string-typedefs.md#u16string)|`basic_string` 형식 요소를 기준으로 템플릿 클래스 `char16_t`의 특수화를 설명하는 형식입니다.|
-|[u32string](../standard-library/string-typedefs.md#u32string)|`basic_string` 형식 요소를 기준으로 템플릿 클래스 `char32_t`의 특수화를 설명하는 형식입니다.|
+|[string](../standard-library/string-typedefs.md#string)|**Char** 형식의 요소가 `string`로 `basic_string` 클래스 템플릿의 특수화를 설명 하는 형식입니다.|
+|[wstring](../standard-library/string-typedefs.md#wstring)|**Wchar_t** 형식의 요소가 `wstring`로 `basic_string` 클래스 템플릿의 특수화를 설명 하는 형식입니다.|
+|[u16string](../standard-library/string-typedefs.md#u16string)|@No__t_1 형식의 요소를 기준으로 `basic_string` 클래스 템플릿의 특수화를 설명 하는 형식입니다.|
+|[u32string](../standard-library/string-typedefs.md#u32string)|@No__t_1 형식의 요소를 기준으로 `basic_string` 클래스 템플릿의 특수화를 설명 하는 형식입니다.|
 
 ### <a name="operators"></a>연산자
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[operator+](../standard-library/string-operators.md#op_add)|두 문자열 개체를 연결합니다.|
 |[operator!=](../standard-library/string-operators.md#op_neq)|연산자의 좌변에 있는 문자열 개체가 우변에 있는 문자열 개체와 같지 않은지 테스트합니다.|
@@ -81,10 +81,10 @@ C++ 언어와 C++ 표준 라이브러리는 두 가지 문자열 형식을 지�
 
 ### <a name="classes"></a>클래스
 
-|클래스|Description|
+|인스턴스|설명|
 |-|-|
-|[basic_string 클래스](../standard-library/basic-string-class.md)|임의의 문자 형식 개체 시퀀스를 저장할 수 있는 개체를 설명하는 템플릿 클래스입니다.|
-|[char_traits 구조체](../standard-library/char-traits-struct.md)|CharType 형식 문자와 관련된 특성을 설명하는 템플릿 클래스입니다.|
+|[basic_string 클래스](../standard-library/basic-string-class.md)|임의의 문자 형식 개체 시퀀스를 저장할 수 있는 개체를 설명 하는 클래스 템플릿입니다.|
+|[char_traits 구조체](../standard-library/char-traits-struct.md)|CharType 형식의 문자와 연결 된 특성을 설명 하는 클래스 템플릿입니다.|
 
 ### <a name="specializations"></a>특수화
 
@@ -101,7 +101,7 @@ C++ 언어와 C++ 표준 라이브러리는 두 가지 문자열 형식을 지�
 
 - **네임스페이스:** std
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)

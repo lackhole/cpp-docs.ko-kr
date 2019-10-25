@@ -10,12 +10,12 @@ f1_keywords:
 - regex/std::operator==
 - regex/std::operator<<
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
-ms.openlocfilehash: 829b4cf50b02db0a88d61a8801c1e21ddb470344
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 8795d0f1c387fb87c44f2d68c45aa27d1edbfb79
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460130"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689068"
 ---
 # <a name="ltregexgt-operators"></a>&lt;regex&gt; 연산자
 
@@ -66,22 +66,22 @@ bool operator!=(const match_results<BidIt, Alloc>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*\
+*Bidit* \
 반복기 형식입니다.
 
-*IOtraits*\
+*Iotraits* \
 문자열 특성 클래스입니다.
 
-*#C4*\
+*할당* \
 할당자 클래스입니다.
 
-*비어*\
+*왼쪽* \
 비교할 왼쪽 개체입니다.
 
-*오른쪽*\
+*오른쪽* \
 비교할 오른쪽 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 각 템플릿 연산자는 `!(left == right)`를 반환합니다.
 
@@ -181,22 +181,22 @@ bool operator<(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*\
+*Bidit* \
 반복기 형식입니다.
 
-*IOtraits*\
+*Iotraits* \
 문자열 특성 클래스입니다.
 
-*#C4*\
+*할당* \
 할당자 클래스입니다.
 
-*비어*\
+*왼쪽* \
 비교할 왼쪽 개체입니다.
 
-*오른쪽*\
+*오른쪽* \
 비교할 오른쪽 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 각 템플릿 연산자는 해당 인수를 문자열 형식으로 변환 하 고, *왼쪽* 의 변환 된 값이 *오른쪽*의 변환 된 값 보다 작음을 비교 하는 경우에만 true를 반환 합니다.
 
@@ -266,25 +266,25 @@ basic_ostream<Elem, IOtraits>& operator<<(basic_ostream<Elem, IOtraits>& os,
 
 ### <a name="parameters"></a>매개 변수
 
-*E*\
+*Elem* \
 요소 형식입니다.
 
-*IOtraits*\
+*Iotraits* \
 문자열 특성 클래스입니다.
 
-*#C4*\
+*할당* \
 할당자 클래스입니다.
 
-*BidIt*\
+*Bidit* \
 반복기 형식입니다.
 
-*부팅*\
+*os* \
 출력 스트림입니다.
 
-*오른쪽*\
+*오른쪽* \
 삽입할 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 템플릿 연산자는 `os << right.str()`을 반환합니다.
 
@@ -351,22 +351,22 @@ bool operator<=(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*\
+*Bidit* \
 반복기 형식입니다.
 
-*IOtraits*\
+*Iotraits* \
 문자열 특성 클래스입니다.
 
-*#C4*\
+*할당* \
 할당자 클래스입니다.
 
-*비어*\
+*왼쪽* \
 비교할 왼쪽 개체입니다.
 
-*오른쪽*\
+*오른쪽* \
 비교할 오른쪽 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 각 템플릿 연산자는 `!(right < left)`를 반환합니다.
 
@@ -465,32 +465,32 @@ bool operator==(const match_results<BidIt, Alloc>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*\
+*Bidit* \
 반복기 형식입니다.
 
-*IOtraits*\
+*Iotraits* \
 문자열 특성 클래스입니다.
 
-*#C4*\
+*할당* \
 할당자 클래스입니다.
 
-*비어*\
+*왼쪽* \
 비교할 왼쪽 개체입니다.
 
-*오른쪽*\
+*오른쪽* \
 비교할 오른쪽 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 각 템플릿 연산자는 해당 인수를 각각 문자열 형식으로 변환하고 변환된 개체가 같은지를 비교한 결과를 반환합니다.
 
 템플릿 연산자는 해당 인수를 문자열 형식으로 변환할 때 적용되는 다음 변환 중 첫 번째 변환을 사용합니다.
 
-형식이 템플릿 클래스 `match_results` 또는 `sub_match`의 특수화인 인수는 `str` 구성원 함수를 호출하여 변환합니다.
+형식이 클래스 템플릿 `match_results` 또는 `sub_match`의 특수화 인 인수는 `str` 멤버 함수를 호출 하 여 변환 됩니다.
 
-형식이 템플릿 클래스 `basic_string`의 특수화인 인수는 변경되지 않습니다.
+형식이 클래스 템플릿 `basic_string`의 특수화 인 인수는 변경 되지 않습니다.
 
-그 외의 모든 인수 형식은 템플릿 클래스 `basic_string`의 적절한 특수화를 위한 생성자로 인수 값을 전달하여 변환합니다.
+다른 모든 인수 형식은 `basic_string` 클래스 템플릿의 적절 한 특수화에 대 한 생성자에 인수 값을 전달 하 여 변환 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -588,22 +588,22 @@ bool operator>(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*\
+*Bidit* \
 반복기 형식입니다.
 
-*IOtraits*\
+*Iotraits* \
 문자열 특성 클래스입니다.
 
-*#C4*\
+*할당* \
 할당자 클래스입니다.
 
-*비어*\
+*왼쪽* \
 비교할 왼쪽 개체입니다.
 
-*오른쪽*\
+*오른쪽* \
 비교할 오른쪽 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 각 템플릿 연산자는 `right < left`를 반환합니다.
 
@@ -698,22 +698,22 @@ bool operator>=(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>매개 변수
 
-*BidIt*\
+*Bidit* \
 반복기 형식입니다.
 
-*IOtraits*\
+*Iotraits* \
 문자열 특성 클래스입니다.
 
-*#C4*\
+*할당* \
 할당자 클래스입니다.
 
-*비어*\
+*왼쪽* \
 비교할 왼쪽 개체입니다.
 
-*오른쪽*\
+*오른쪽* \
 비교할 오른쪽 개체입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 각 템플릿 연산자는 `!(left < right)`를 반환합니다.
 
@@ -771,13 +771,13 @@ sub >= "aab" == false
 sub >= 'a' == true
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<regex>](../standard-library/regex.md)\
-[regex_constants 클래스](../standard-library/regex-constants-class.md)\
-[regex_error 클래스](../standard-library/regex-error-class.md)\
-[\<regex > 함수](../standard-library/regex-functions.md)\
-[regex_iterator 클래스](../standard-library/regex-iterator-class.md)\
-[regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md)\
-[regex_traits 클래스](../standard-library/regex-traits-class.md)\
+[Regex_constants 클래스](../standard-library/regex-constants-class.md) \
+[Regex_error 클래스](../standard-library/regex-error-class.md) \
+[> 함수를 \<regex](../standard-library/regex-functions.md) \
+[Regex_iterator 클래스](../standard-library/regex-iterator-class.md) \
+[Regex_token_iterator 클래스](../standard-library/regex-token-iterator-class.md) \
+[Regex_traits 클래스](../standard-library/regex-traits-class.md) \
 [\<regex> 형식 정의](../standard-library/regex-typedefs.md)

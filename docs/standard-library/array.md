@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - array header
 ms.assetid: 084147c1-e805-478e-8201-76846020f187
-ms.openlocfilehash: 4c35d34c9c51c8ebd6885b1a1cd07c28bcb61d1b
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: bdf9209b18328735f15393687528a40a94198730
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456744"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72690047"
 ---
 # <a name="ltarraygt"></a>&lt;array&gt;
 
-컨테이너 템플릿 클래스 **배열과** 여러 지원 템플릿을 정의 합니다.
+컨테이너 클래스 템플릿 **배열과** 여러 지원 템플릿을 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -24,7 +24,7 @@ ms.locfileid: "68456744"
 **네임스페이스:** std
 
 > [!NOTE]
-> 배열 \<> 라이브러리에도 `#include <initializer_list>` 문이 사용 됩니다.
+> 또한 \<array > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -54,7 +54,7 @@ ms.locfileid: "68456744"
 |[get](../standard-library/array-functions.md#get)|지정된 배열 요소를 가져옵니다.|
 |[swap](../standard-library/array-functions.md#swap)|한 배열의 내용을 다른 배열의 내용과 교환합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<tuple>](../standard-library/tuple.md)\
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

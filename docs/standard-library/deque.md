@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - deque header
 ms.assetid: 4521fe92-5a91-4853-9e9f-59600bf9e46f
-ms.openlocfilehash: 145ce22091ea1a42619ad7b1fd25507c6315a9ec
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: a5fea8f4a1bc1612a35db71cc515ba4799e95da6
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454493"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689721"
 ---
 # <a name="ltdequegt"></a>&lt;deque&gt;
 
-컨테이너 템플릿 클래스 deque 및 다양한 지원 템플릿을 정의합니다.
+컨테이너 클래스 템플릿 deque 및 여러 지원 템플릿을 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 **헤더**: \<deque>
 
 > [!NOTE]
-> Deque \<> 라이브러리는 `#include <initializer_list>` 문을 사용 하기도 합니다.
+> 또한 \<deque > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -47,9 +47,9 @@ ms.locfileid: "68454493"
 
 |||
 |-|-|
-|[deque 클래스](../standard-library/deque-class.md)|선형 정렬에서 지정된 형식의 요소를 정렬하고 벡터처럼 모든 요소에 대한 빠른 임의 액세스와 컨테이너 뒤쪽에서 효율적인 삽입 및 삭제를 허용하는 시퀀스 컨테이너의 템플릿 클래스입니다.|
+|[deque 클래스](../standard-library/deque-class.md)|선형 정렬에서 지정 된 형식의 요소를 정렬 하 고 벡터와 같이 요소에 대 한 빠른 임의 액세스와 컨테이너 뒤쪽에서 효율적인 삽입 및 삭제를 허용 하는 시퀀스 컨테이너의 클래스 템플릿입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

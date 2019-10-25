@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - map header
 ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
-ms.openlocfilehash: 3c3c7fc34e75772c10ba39ecc51f6d2ac59d7ad5
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 2e861d2250585fbcdf3e1ef63d92f18185fc7f1c
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456299"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687772"
 ---
 # <a name="ltmapgt"></a>&lt;map&gt;
 
-컨테이너 템플릿 클래스 map 및 multimap과 지원 템플릿을 정의합니다.
+컨테이너 클래스 템플릿 맵과 multimap 및 해당 지원 템플릿을 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -24,7 +24,7 @@ ms.locfileid: "68456299"
 **네임스페이스:** std
 
 > [!NOTE]
-> 지도 \<> 라이브러리에도 `#include <initializer_list>` 문이 사용 됩니다.
+> 또한 \<map > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
 
 ## <a name="members"></a>멤버
 
@@ -43,7 +43,7 @@ ms.locfileid: "68456299"
 
 |map 버전|multimap 버전|설명|
 |-----------------|----------------------|-----------------|
-|[swap (map)](../standard-library/map-functions.md#swap)|[swap (multimap)](../standard-library/map-functions.md#swap_multimap)|두 map 또는 multimap의 요소를 교환합니다.|
+|[swap(map)](../standard-library/map-functions.md#swap)|[swap (multimap)](../standard-library/map-functions.md#swap_multimap)|두 map 또는 multimap의 요소를 교환합니다.|
 
 ### <a name="classes"></a>클래스
 
@@ -53,7 +53,7 @@ ms.locfileid: "68456299"
 |[map 클래스](../standard-library/map-class.md)|각 요소에 데이터가 자동 정렬되는 기준인 고유한 키가 있는 컬렉션에서 데이터를 스토리지하고 검색하는 데 사용됩니다.|
 |[multimap 클래스](../standard-library/multimap-class.md)|각 요소에 데이터가 자동 정렬되는 기준인 키가 있고 키 값이 고유하지 않아도 되는 컬렉션에서 데이터를 스토리지하고 검색하는 데 사용됩니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\

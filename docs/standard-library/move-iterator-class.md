@@ -20,14 +20,14 @@ helpviewer_keywords:
 - std::move_iterator [C++], reference
 - std::move_iterator [C++], base
 ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
-ms.openlocfilehash: 4a173ea022f21c454d8edd66f94d2d9b14faa4e1
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 9e8334db52e05f4a61adb7256e87ed611f0d3ecb
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460216"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689277"
 ---
-# <a name="moveiterator-class"></a>move_iterator 클래스
+# <a name="move_iterator-class"></a>move_iterator 클래스
 
 클래스 템플릿 `move_iterator`는 반복기에 대한 래퍼입니다. move_iterator는 저장된 반복기의 역참조 연산자를 rvalue 참조로 전환하여 복사본을 이동으로 전환하는 것을 제외하고, 래핑(저장)하는 반복기와 동일한 동작을 제공합니다. rvalue에 대한 자세한 내용은 [Rvalue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
@@ -37,15 +37,15 @@ ms.locfileid: "68460216"
 class move_iterator;
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-템플릿 클래스는 역참조된 경우를 제외하고 반복기와 유사하게 동작합니다. 이 클래스는 구성원 함수 `base()`로 액세스하는 `Iterator` 형식의 임의 액세스 반복기를 저장합니다. `move_iterator`에 대한 모든 작업은 `operator*` 결과가 `value_type&&`으로 묵시적으로 캐스팅되어 rvalue 참조를 만드는 것을 제외하고, 저장된 반복기에서 직접 수행됩니다.
+클래스 템플릿은 역참조 될 때를 제외 하 고 반복기 처럼 동작 하는 개체를 설명 합니다. 이 클래스는 구성원 함수 `base()`로 액세스하는 `Iterator` 형식의 임의 액세스 반복기를 저장합니다. `move_iterator`에 대한 모든 작업은 `operator*` 결과가 `value_type&&`으로 묵시적으로 캐스팅되어 rvalue 참조를 만드는 것을 제외하고, 저장된 반복기에서 직접 수행됩니다.
 
 `move_iterator`는 래핑된 반복기에서 정의하지 않은 작업을 수행할 수 있습니다. 이러한 작업을 사용하지 마십시오.
 
 ### <a name="constructors"></a>생성자
 
-|생성자|Description|
+|생성자|설명|
 |-|-|
 |[move_iterator](#move_iterator)|`move_iterator` 형식의 개체에 대한 생성자입니다.|
 
@@ -54,9 +54,9 @@ class move_iterator;
 |형식 이름|설명|
 |-|-|
 |[iterator_type](#iterator_type)|템플릿 매개 변수 `RandomIterator`의 동의어.|
-|[iterator_category](#iterator_category)|동일한 이름의 긴 **typename** 식에 대 한 동의어는 반복기의 `iterator_category` 일반 기능을 식별 합니다.|
-|[value_type](#value_type)|동일한 이름의 `value_type` 긴 **typename** 식에 대 한 동의어는 반복기 요소의 형식에 대해 설명 합니다.|
-|[difference_type](#difference_type)|동일한 이름의 `difference_type` 긴 **typename** 식에 대 한 동의어는 요소 간 차이 값을 표현 하는 데 필요한 정수 계열 형식을 설명 합니다.|
+|[iterator_category](#iterator_category)|동일한 이름의 긴 **typename** 식에 대 한 동의어로, `iterator_category`는 반복기의 일반 기능을 식별 합니다.|
+|[value_type](#value_type)|동일한 이름의 긴 **typename** 식에 대 한 동의어로, `value_type` 반복기 요소의 형식에 대해 설명 합니다.|
+|[difference_type](#difference_type)|동일한 이름의 긴 **typename** 식에 대 한 동의어로, 요소 간의 차이 값을 표현 하는 데 필요한 정수 계열 형식 `difference_type` 설명 합니다.|
 |[pointer](#pointer)|템플릿 매개 변수 `RandomIterator`에 대한 동의어.|
 |[reference](#reference)|`rvalue` 참조 `value_type&&`에 대한 동의어.|
 
@@ -73,9 +73,9 @@ class move_iterator;
 |[move_iterator::operator*](#op_star)|`(reference)*base().`를 반환합니다.|
 |[move_iterator::operator++](#op_add_add)|저장된 반복기를 증가시킵니다. 정확한 동작은 사전 증가인지 또는 사후 증가인지에 따라 다릅니다.|
 |[move_iterator::operator--](#operator--)|저장된 반복기를 감소시킵니다. 정확한 동작은 사전 감소인지 또는 사후 감소인지에 따라 다릅니다.|
-|[move_iterator::operator-&gt;](#op_arrow)|`&**this`를 반환합니다.|
+|[move_iterator::operator-&gt;](#op_arrow)|`&**this`을 반환합니다.|
 |[move_iterator::operator-](#operator-)|현재 위치에서 오른쪽 값을 차감하여 `move_iterator(*this) -=`를 반환합니다.|
-|[move_iterator::operator[]](#op_at)|`(reference)*(*this + off)`를 반환합니다. 현재 기준에서 해당 위치의 값을 얻기 위한 오프셋을 지정할 수 있습니다.|
+|[move_iterator::operator[]](#op_at)|`(reference)*(*this + off)`을 반환합니다. 현재 기준에서 해당 위치의 값을 얻기 위한 오프셋을 지정할 수 있습니다.|
 |[move_iterator::operator+](#op_add)|`move_iterator(*this) +=` 값을 반환합니다. 기준에 오프셋을 추가하여 해당 위치의 값을 얻을 수 있습니다.|
 |[move_iterator::operator+=](#op_add_eq)|저장된 반복기에 오른쪽 값을 더하고 `*this`를 반환합니다.|
 |[move_iterator::operator-=](#operator-_eq)|저장된 반복기에서 오른쪽 값을 빼고 `*this`를 반환합니다.|
@@ -94,7 +94,7 @@ class move_iterator;
 RandomIterator base() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 멤버 함수는 저장된 반복기를 반환합니다.
 
@@ -106,7 +106,7 @@ RandomIterator base() const;
 typedef typename iterator_traits<RandomIterator>::difference_type difference_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 반복기 특성 `typename iterator_traits<RandomIterator>::pointer`의 동의어입니다.
 
@@ -118,7 +118,7 @@ typedef typename iterator_traits<RandomIterator>::difference_type difference_typ
 typedef typename iterator_traits<RandomIterator>::iterator_category  iterator_category;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 반복기 특성 `typename iterator_traits<RandomIterator>::iterator_category`의 동의어입니다.
 
@@ -130,7 +130,7 @@ typedef typename iterator_traits<RandomIterator>::iterator_category  iterator_ca
 typedef RandomIterator iterator_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 템플릿 매개 변수 `RandomIterator`의 동의어입니다.
 
@@ -147,10 +147,10 @@ move_iterator(const move_iterator<Type>& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*\
+*오른쪽* \
 저장된 반복기로 사용할 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 첫 번째 생성자는 기본 생성자를 사용하여 저장된 반복기를 초기화합니다. 나머지 생성자는 `base.base()`를 사용하여 저장된 반복기를 초기화합니다.
 
@@ -164,14 +164,14 @@ move_iterator& operator+=(difference_type _Off);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Off*\
+*_Off* \
 새 현재 위치를 알기 위해 현재 위치에 추가하는 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
 
 새 현재 요소를 반환합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 연산자는 저장 된 반복기에 *_Off* 를 추가 합니다. 그런 다음 `*this`를 반환합니다.
 
@@ -185,7 +185,7 @@ move_iterator& operator-=(difference_type _Off);
 
 ### <a name="parameters"></a>매개 변수
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 연산자가 `*this += -_Off`를 평가합니다. 그런 다음 `*this`를 반환합니다.
 
@@ -200,7 +200,7 @@ move_iterator operator++(int);
 
 ### <a name="parameters"></a>매개 변수
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 첫 번째(사전 증가) 연산자는 저장된 반복기를 단계적으로 증가시킵니다. 그런 다음 `*this`를 반환합니다.
 
@@ -216,7 +216,7 @@ move_iterator operator+(difference_type _Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 연산자는 `move_iterator(*this) +=` `_Off`를 반환합니다.
 
@@ -230,7 +230,7 @@ reference operator[](difference_type _Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 연산자가 `(reference)*(*this + _Off)`를 반환합니다.
 
@@ -245,7 +245,7 @@ move_iterator operator--();
 
 ### <a name="parameters"></a>매개 변수
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 첫 번째 멤버 연산자(사전 감소)가 저장된 반복기를 감소시킵니다. 그런 다음 `*this`를 반환합니다.
 
@@ -261,7 +261,7 @@ move_iterator operator-(difference_type _Off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 연산자가 `move_iterator(*this) -= _Off`를 반환합니다.
 
@@ -273,7 +273,7 @@ move_iterator operator-(difference_type _Off) const;
 reference operator*() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 연산자가 `(reference)*base()`를 반환합니다.
 
@@ -285,31 +285,31 @@ reference operator*() const;
 pointer operator->() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 연산자가 `&**this`를 반환합니다.
 
 ## <a name="pointer"></a>  move_iterator::pointer
 
-형식은 `pointer` 에 대 한  `RandomIterator` 임의반복기를기반으로하는typedef이며교대로사용할수`move_iterator`있습니다.
+형식 `pointer`는 `move_iterator`에 대 한 임의 반복기 `RandomIterator`를 기반으로 하는 **typedef** 이며 교대로 사용할 수 있습니다.
 
 ```cpp
 typedef RandomIterator  pointer;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 `RandomIterator`의 동의어입니다.
 
 ## <a name="reference"></a>  move_iterator::reference
 
-형식은 `reference` `value_type&&` `value_type&&`for 를`move_iterator`기반으로 하는 **typedef** 이며과 함께 사용할 수 있습니다.
+형식 `reference`는 `move_iterator`에 대 한 `value_type&&`를 기반으로 하는 **typedef** 이며 `value_type&&`과 같은 의미로 사용할 수 있습니다.
 
 ```cpp
 typedef value_type&& reference;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 rvalue 참조인 `value_type&&`과 동일한 의미입니다.
 
@@ -321,11 +321,11 @@ typedef value_type&& reference;
 typedef typename iterator_traits<RandomIterator>::value_type   value_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 반복기 특성 `typename iterator_traits<RandomIterator>::value_type`의 동의어입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<iterator>](../standard-library/iterator.md)\
 [Lvalue 및 Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)\

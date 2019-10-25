@@ -1,5 +1,5 @@
 ---
-title: 샘플 다중 스레드 C 프로그램
+title: 다중 스레드 C 프로그램 샘플
 ms.date: 08/09/2019
 ms.assetid: 4706f6cd-ff9c-4dbf-99a2-1c999b568f17
 ms.openlocfilehash: eb1a07558dd9446e167c27ad08891f88c37fb4ec
