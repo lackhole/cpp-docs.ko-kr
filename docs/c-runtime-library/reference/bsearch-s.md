@@ -1,6 +1,6 @@
 ---
 title: bsearch_s
-ms.date: 11/04/2016
+ms.date: 10/22/2019
 api_name:
 - bsearch_s
 api_location:
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch_s function
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
-ms.openlocfilehash: 9bcd18add216bb0fc2f203183d82e37ede65dba5
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: fc86576dbbe73f63da6bf0e28e7166ef7c552e55
+ms.sourcegitcommit: 0a5518fdb9d87fcc326a8507ac755936285fcb94
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943480"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72811148"
 ---
 # <a name="bsearch_s"></a>bsearch_s
 
-정렬된 배열의 이진 검색을 수행합니다. [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 보안 기능이 향상된 [bsearch](bsearch.md) 버전입니다.
+정렬된 배열의 이진 검색을 수행합니다. 이 함수는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명 된 대로 보안 기능이 [향상 된 검색 버전입니다.](bsearch.md)
 
 ## <a name="syntax"></a>구문
 
@@ -52,29 +52,29 @@ void *bsearch_s(
 
 ### <a name="parameters"></a>매개 변수
 
-*key*<br/>
-검색할 개체입니다.
+*키* \
+검색할 키에 대 한 포인터입니다.
 
-*base*<br/>
-검색 데이터 기준에 대한 포인터입니다.
+*base*\
+검색 데이터의 기준에 대 한 포인터입니다.
 
-*number*<br/>
+*숫자*\
 요소의 수입니다.
 
-*width*<br/>
+*너비*\
 요소의 너비입니다.
 
-*compare*<br/>
+\ *비교*
 두 요소를 비교하는 콜백 함수입니다. 첫 번째 인수는 *컨텍스트* 포인터입니다. 두 번째 인수는 검색 *키* 에 대 한 포인터입니다. 세 번째 인수는 *키*와 비교할 배열 요소에 대 한 포인터입니다.
 
-*context*<br/>
+*컨텍스트*\
 비교 함수에서 액세스할 수 있는 개체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
 **bsearch_s** 는 *base*에서 가리키는 배열의 *키* 발생에 대 한 포인터를 반환 합니다. *키* 를 찾을 수 없는 경우이 함수는 **NULL**을 반환 합니다. 배열이 오름차순 정렬이 아니거나 동일한 키를 가진 중복 레코드를 포함하는 경우에는 결과를 예측할 수 없습니다.
 
-함수에 잘못된 매개 변수를 전달하면 [Parameter Validation](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **NULL**을 반환 합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
+잘못 된 매개 변수가 함수에 전달 되 면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 은 **EINVAL** 로 설정 되 고 함수는 **NULL**을 반환 합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ### <a name="error-conditions"></a>오류 조건
 
@@ -86,7 +86,7 @@ void *bsearch_s(
 |any|any|any|any|= 0|**EINVAL**|
 |any|any|**NULL**|an|any|**EINVAL**|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **Bsearch_s** 함수는 각 *너비가* 바이트 인 *number* 요소의 정렬 된 배열에 대해 이진 검색을 수행 합니다. *기준* 값은 검색할 배열 기준에 대 한 포인터이 고 *key* 는 검색 중인 값입니다. *Compare* 매개 변수는 요청 된 키를 배열 요소와 비교 하 고 해당 관계를 지정 하는 다음 값 중 하나를 반환 하는 사용자 제공 루틴에 대 한 포인터입니다.
 
@@ -104,7 +104,7 @@ void *bsearch_s(
 |-------------|---------------------|
 |**bsearch_s**|\<stdlib.h> 및 \<search.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -192,9 +192,9 @@ cat cow dog goat horse human pig rat
 cat found at 002F0F04
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[검색 및 정렬](../../c-runtime-library/searching-and-sorting.md)<br/>
-[_lfind](lfind.md)<br/>
-[_lsearch](lsearch.md)<br/>
-[qsort](qsort.md)<br/>
+[검색 및 정렬](../../c-runtime-library/searching-and-sorting.md)\
+[_lfind](lfind.md)\
+[_lsearch](lsearch.md)\
+[qsort](qsort.md)
