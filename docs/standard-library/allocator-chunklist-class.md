@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68456421"
 ---
-# <a name="allocatorchunklist-class"></a>allocator_chunklist 클래스
+# <a name="allocator_chunklist-class"></a>allocator_chunklist 클래스
 
 [cache_chunklist](../standard-library/cache-chunklist-class.md) 유형의 캐시를 사용하여 개체에 대한 스토리지 할당 및 해제를 관리하는 개체를 설명합니다.
 
@@ -34,7 +34,7 @@ class allocator_chunklist;
 
 ## <a name="remarks"></a>설명
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 문에서이 클래스를 *name* 매개 변수로 전달 합니다.`ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 문에서 이 클래스를 *name* 매개 변수로 전달합니다:`ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`
 
 ## <a name="requirements"></a>요구 사항
 

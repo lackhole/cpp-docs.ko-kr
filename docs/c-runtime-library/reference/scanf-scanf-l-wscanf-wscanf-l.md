@@ -1,6 +1,6 @@
 ---
 title: scanf, _scanf_l, wscanf, _wscanf_l
-ms.date: 11/04/2016
+ms.date: 10/21/2019
 api_name:
 - _wscanf_l
 - scanf
@@ -43,16 +43,19 @@ helpviewer_keywords:
 - wscanf_l function
 - _wscanf_l function
 ms.assetid: 73eac607-117f-4be4-9ff0-4afd9cf3c848
-ms.openlocfilehash: 5c3b0f73561dcd41ef1643042baeac7fff0728b4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: acb336827a669a867b937806a6cdb9aa51d75cbe
+ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948840"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72778329"
 ---
 # <a name="scanf-_scanf_l-wscanf-_wscanf_l"></a>scanf, _scanf_l, wscanf, _wscanf_l
 
 표준 입력 스트림에서 형식이 지정된 데이터를 읽습니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)을 참조하세요.
+
+> [!NOTE] 
+> Visual Studio 2015에서는 `printf` 및 `scanf` 함수 패밀리가 **인라인으로** 선언 되었으며 `<stdio.h>` 및 `<conio.h>` 헤더로 이동 했습니다. 이전 코드를 마이그레이션하는 경우 이러한 함수와의 연결에 *LNK2019* 가 표시 될 수 있습니다. 자세한 내용은 [Visual C++ change history 2003-2015](../../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio)를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -96,7 +99,7 @@ int _wscanf_l(
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **Scanf** 함수는 표준 입력 스트림 **stdin** 에서 데이터를 읽고 *인수*에 지정 된 위치에 데이터를 씁니다. 각 *인수* 는 *형식의 형식*지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
@@ -123,7 +126,7 @@ int _wscanf_l(
 |**scanf**, **_scanf_l**|\<stdio.h>|
 |**wscanf**, **_wscanf_l**|\<stdio.h> 또는 \<wchar.h>|
 
-이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout**및 **stderr**에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+이 콘솔은 UWP (유니버설 Windows 플랫폼) 앱에서 지원 되지 않습니다. 콘솔, **stdin**, **stdout**및 **stderr**에 연결 된 표준 스트림 핸들은 C 런타임 함수가 UWP 앱에서 사용할 수 있으려면 먼저 리디렉션해야 합니다. 호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -163,7 +166,7 @@ The number of fields input is 6
 The contents are: 36 92.300003 y n Wide characters
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
