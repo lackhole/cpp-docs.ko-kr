@@ -47,7 +47,7 @@ ms.locfileid: "68456443"
 ---
 # <a name="allocatorbase-class"></a>allocator_base 클래스
 
-동기화 필터에서 사용자 정의 할당자를 만드는데 필요한 기본 클래스 및 일반 함수를 정의합니다.
+동기화 필터에서 사용자 정의 할당자를 만드는 데 필요한 기본 클래스 및 일반 함수를 정의합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -85,8 +85,8 @@ class allocator_base
 
 |멤버 함수|설명|
 |-|-|
-|[_Charalloc](#charalloc)|**Char**형식의 배열에 대한 저장소를 할당 합니다.|
-|[_Chardealloc](#chardealloc)|**Char**형식의 요소가 포함된 배열에 대한 저장소를 해제 합니다.|
+|[_Charalloc](#charalloc)|**Char** 형식의 배열에 대한 저장소를 할당합니다.|
+|[_Chardealloc](#chardealloc)|**Char** 형식의 요소가 포함된 배열에 대한 저장소를 해제합니다.|
 |[address](#address)|값이 지정된 개체의 주소를 찾습니다.|
 |[allocate](#allocate)|적어도 지정된 개수의 요소를 저장할 수 있을 만큼 큰 메모리 블록을 할당합니다.|
 |[construct](#construct)|지정된 값으로 초기화된 특정 형식의 개체를 지정된 주소에 생성합니다.|
@@ -102,7 +102,7 @@ class allocator_base
 
 ## <a name="charalloc"></a>  allocator_base::_Charalloc
 
-**Char**형식의 배열에 대한 저장소를 할당 합니다.
+**Char** 형식의 배열에 대한 저장소를 할당합니다.
 
 ```cpp
 char *_Charalloc(size_type count);
@@ -124,7 +124,7 @@ char *_Charalloc(size_type count);
 
 ## <a name="chardealloc"></a>  allocator_base::_Chardealloc
 
-**Char**형식의 요소가 포함된 배열에 대한 저장소를 해제 합니다.
+**Char** 형식의 요소가 포함된 배열에 대한 저장소를 해제합니다.
 
 ```cpp
 void _Chardealloc(void* ptr, size_type count);
