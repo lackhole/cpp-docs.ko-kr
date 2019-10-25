@@ -24,7 +24,7 @@ Visual Studio 2015 및 Windows 10 SDK부터는 CRT 라이브러리가 두 부분
 
 2. 프로젝트 노드에 대한 바로 가기 메뉴를 열고 **SDK 버전 대상 다시 지정**을 선택합니다.
 
-   ![SDK 버전] 대상 변경 (../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")
+   ![SDK 버전 대상 변경 ](../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")
 
    **솔루션 작업 검토** 대화 상자가 나타납니다.
 
