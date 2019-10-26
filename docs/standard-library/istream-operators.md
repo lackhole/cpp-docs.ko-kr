@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - istream/std::operator&gt;&gt;
 ms.assetid: 7174da41-f301-4a34-b631-0ab918b188d2
-ms.openlocfilehash: f5da7c6805d10e919255ce301dae5618ef58e76d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 5ac5c61488530f99cdad38ca1bfca365b6ac0f8c
+ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501920"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72890170"
 ---
 # <a name="ltistreamgt-operators"></a>&lt;istream&gt; 연산자
 
@@ -56,27 +56,27 @@ basic_istream<Elem, Tr>& operator>>(
 
 ### <a name="parameters"></a>매개 변수
 
-*Ch*\
+*Ch* \
 단일 문자입니다.
 
 *Istr*\
 스트림입니다.
 
-*문자열*\
+*str* \
 문자열
 
-*짧은*\
+*val* \
 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
 스트림
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `basic_istream` 클래스도 여러 가지 추출 연산자를 정의합니다. 자세한 내용은 [basic_istream::operator>>](../standard-library/basic-istream-class.md#op_gt_gt)를 참조하세요.
 
-다음 템플릿 함수는
+함수 템플릿:
 
 ```cpp
 template <class Elem, class Tr>
@@ -84,11 +84,11 @@ basic_istream<Elem, Tr>& operator>>(
     basic_istream<Elem, Tr>& Istr, Elem* str);
 ```
 
-이 함수는 최대 *N* - 1개 요소를 추출하여 _ *Str*에서 시작하는 배열에 저장합니다. `Istr`. [width](../standard-library/ios-base-class.md#width)가 0보다 큰 경우 *N*은 `Istr`. **너비**; 그렇지 않으면 선언할 수 있는의 `Elem` 가장 큰 배열 크기입니다. 함수는 저장 되는 모든 `Elem()` 추출 된 요소 뒤에 값을 저장 합니다. 추출은 파일의 끝, **Elem**(0) 값을 갖는 문자(추출되지 않음) 또는 [ws](../standard-library/istream-functions.md#ws)에 의해 삭제될 모든 요소(추출되지 않음)에서 미리 중지됩니다. 함수가 요소를 추출하지 않는 경우 `Istr`. [setstate](../standard-library/basic-ios-class.md#setstate) (**failbit**). 어떤 경우든 `Istr`. **너비** (0) 및는 *Istr*을 반환 합니다.
+`N - 1` 요소를 추출 하 여 *str*에서 시작 하는 배열에 저장 합니다. `Istr.`[너비가](../standard-library/ios-base-class.md#width) 0 보다 크면 *N* 은 `Istr.width`; 그렇지 않으면 선언할 수 있는 `Elem`의 가장 큰 배열 크기입니다. 함수는 저장 되는 모든 추출 된 요소 후 `Elem()` 값을 항상 저장 합니다. 추출은 파일의 끝, 값 `Elem(0)` (추출 되지 않음) 또는 [ws](../standard-library/istream-functions.md#ws)에서 삭제 되는 모든 요소 (추출 되지 않음)에서 일찍 중지 됩니다. 함수가 요소를 추출 하지 않는 경우 `Istr.`[`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`를 호출 합니다. 어떤 경우 든 `Istr.width(0)`를 호출 하 고 *Istr*을 반환 합니다.
 
 **보안 정보** 입력 스트림에서 추출 되는 null로 끝나는 문자열은 대상 버퍼 *str*의 크기를 초과 하면 안 됩니다. 자세한 내용은 [버퍼 오버런 방지](/windows/win32/SecBP/avoiding-buffer-overruns)를 참조하세요.
 
-다음 템플릿 함수는
+함수 템플릿:
 
 ```cpp
 template <class Elem, class Tr>
@@ -96,9 +96,9 @@ basic_istream<Elem, Tr>& operator>>(
     basic_istream<Elem, Tr>& Istr, Elem& Ch);
 ```
 
-가능 하면 요소를 추출 하 여 *Ch*에 저장 합니다. 그렇지 않으면 **is**. [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**)를 호출합니다. 어떤 경우 든 *Istr*을 반환 합니다.
+가능 하면 요소를 추출 하 여 *Ch*에 저장 합니다. 그렇지 않으면 `is.`[`setstate`](../standard-library/basic-ios-class.md#setstate)`(failbit)`를 호출 합니다. 어떤 경우 든 *Istr*을 반환 합니다.
 
-다음 템플릿 함수는
+함수 템플릿:
 
 ```cpp
 template <class Tr>
@@ -108,7 +108,7 @@ basic_istream<char, Tr>& operator>>(
 
 `Istr >> ( char * ) str`를 반환합니다.
 
-다음 템플릿 함수는
+함수 템플릿:
 
 ```cpp
 template <class Tr>
@@ -118,7 +118,7 @@ basic_istream<char, Tr>& operator>>(
 
 `Istr >> ( char& ) Ch`를 반환합니다.
 
-다음 템플릿 함수는
+함수 템플릿:
 
 ```cpp
 template <class Tr>
@@ -128,7 +128,7 @@ basic_istream<char, Tr>& operator>>(
 
 `Istr >> ( char * ) str`를 반환합니다.
 
-다음 템플릿 함수는
+함수 템플릿:
 
 ```cpp
 template <class Tr>
@@ -138,7 +138,7 @@ basic_istream<char, Tr>& operator>>(
 
 `Istr >> ( char& ) Ch`를 반환합니다.
 
-다음 템플릿 함수는
+함수 템플릿:
 
 ```cpp
 template <class Elem, class Tr, class Type>
@@ -147,7 +147,7 @@ basic_istream<Elem, Tr>& operator>>(
     Type& val);
 ```
 
-을 `Istr >> val` 반환 하 고 rvalue 참조를 `Istr` 프로세스의 lvalue로 변환 합니다.
+`Istr >> val`를 반환 하 고 rvalue 참조를 `Istr` 하 여 프로세스의 lvalue로 변환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -168,6 +168,6 @@ int main( )
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<istream>](../standard-library/istream.md)

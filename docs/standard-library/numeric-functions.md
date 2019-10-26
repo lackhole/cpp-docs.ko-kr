@@ -22,16 +22,16 @@ helpviewer_keywords:
 - std::transform_exclusive_scan [C++]
 - std::transform_inclusive_scan [C++]
 - std::transform_reduce [C++]
-ms.openlocfilehash: 0a9d0ce34b1dcd2dd9252f4b243db85118deabe6
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: ab1e2942cbcfe568dd4c280c059fe0768493794c
+ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246716"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889961"
 ---
 # <a name="ltnumericgt-functions"></a>&lt;numeric&gt; 함수
 
-## <a name="accumulate"></a> 누적
+## <a name="accumulate"></a>누적
 
 연속적 부분 합계를 계산하여 일부 초기값을 비롯한 지정된 범위 내 모든 요소의 합계를 계산하거나, 합계 대신 지정된 이진 연산을 사용하여 유사하게 구한 연속적 부분 결과의 결과를 계산합니다.
 
@@ -49,13 +49,13 @@ Type accumulate(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*\
+*첫 번째* \
 지정된 이진 연산에 따라 합을 계산하거나 결합할 범위의 첫 번째 요소를 주소 지정하는 입력 반복기입니다.
 
-*마지막*\
+*마지막* \
 반복된 누적에 실제로 포함된 마지막 요소 하나 다음 위치의 지정된 이진 연산에 따라 합을 계산하거나 결합할 범위의 마지막 요소를 주소 지정하는 입력 반복기입니다.
 
-*val*\
+*val* \
 지정된 이진 연산에 따라 각 요소가 차례로 추가되거나 결합되는 초기값입니다.
 
 *binary_op*\
@@ -63,11 +63,11 @@ Type accumulate(
 
 ### <a name="return-value"></a>반환 값
 
-합한 *val* 및 첫 번째 템플릿 함수의 경우, 두 번째 템플릿 함수를 지정 된 합계 연산 대신 이항 연산에 적용 한 결과 대 한 지정 된 범위의 모든 요소 ( *PartialResult, \*Iter*), 여기서 *PartialResult* 작업의 이전 응용 프로그램의 결과인 및 `Iter` 가 범위에서 요소를 가리키는 반복기입니다.
+첫 번째 템플릿 함수의 지정 된 범위에 있는 *val* 및 모든 요소의 합계 이거나, 두 번째 템플릿 함수의 경우 sum 연산 대신 지정 된 이진 연산을 적용 한 결과 (*partialresult, \*Iter)입니다.* ). 여기서 *partialresult* 는 이전 작업 응용 프로그램의 결과이 고 `Iter`는 범위의 요소를 가리키는 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-초기값 것 잘 정의 된 결과 비어 있는 경우 범위, 이때 *val* 반환 됩니다. 결합형 또는 가환 적 이항 연산 필요 하지 않습니다. 결과 초기 값으로 초기화 됩니다 *val* 차례로 *결과*  =  `binary_op` (*결과*하십시오 <strong>\*</strong> `Iter`) 범위를 통해 반복적으로 계산 되는 `Iter` 은 범위의 연속 요소를 가리키는 반복기입니다. 범위는 유효해야 하며 복잡성은 범위의 크기에 비례해야 합니다. 반복 중에 닫기가 가능하도록 하려면 이진 연산자의 반환 형식을 **Type**으로 변환할 수 있어야 합니다.
+초기 값은 범위가 비어 있을 때 잘 정의 된 결과가 있음을 보장 하며,이 경우 *val* 이 반환 됩니다. 이항 연산은 연관성이 나 비가 환 일 필요가 없습니다. 결과가 초기 값 *val* 로 초기화 *된 다음 결과* = `binary_op` (*결과*, <strong>\*</strong>`Iter`)는 범위를 통해 반복적으로 계산 됩니다. 여기서 `Iter`은 연속을 가리키는 반복기입니다. 범위에 있는 요소입니다. 범위는 유효해야 하며 복잡성은 범위의 크기에 비례해야 합니다. 반복 중에 닫기가 가능하도록 하려면 이진 연산자의 반환 형식을 **Type**으로 변환할 수 있어야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -168,7 +168,7 @@ The vector of partial products is:
 ( 1 2 6 24 120 720 5040 40320 362880 3628800 ).
 ```
 
-## <a name="adjacent_difference"></a> adjacent_difference
+## <a name="adjacent_difference"></a>adjacent_difference
 
 각 요소와 입력 범위의 해당 선행 작업간 연속 차이를 계산하고 결과를 대상 범위로 출력하거나 차이 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차 결과를 계산합니다.
 
@@ -205,10 +205,10 @@ ForwardIterator2 adjacent_difference(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*\
+*첫 번째* \
 입력 범위에서 해당 선행 작업과 차별화해야 하거나 지정된 다른 이진 작업에서 값 쌍을 처리해야 하는 첫 번째 요소를 주소 지정하는 입력 반복기입니다.
 
-*마지막*\
+*마지막* \
 입력 범위에서 해당 선행 작업과 차별화해야 하거나 지정된 다른 이진 작업에서 값 쌍을 처리해야 하는 마지막 요소를 주소 지정하는 입력 반복기입니다.
 
 *결과*\
@@ -219,17 +219,17 @@ ForwardIterator2 adjacent_difference(
 
 ### <a name="return-value"></a>반환 값
 
-대상 범위의 끝을 지정 하는 출력 반복기: `result` + (`last` - `first`).
+대상 범위 끝을 주소 지정 하는 출력 반복기입니다. `result` + (`last` - `first`).
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-출력 반복기 _ *결과* 입력된 반복기와 동일한 반복기 일 수 * 먼저 * 있도록 `adjacent_difference`s 계산할 수 있습니다.
+출력 반복기 *결과* 는 *입력 반복기와*동일한 반복기 일 수 있으므로 `adjacent_difference` 값이 현재 위치의 계산 될 수 있습니다.
 
-값의 시퀀스에 대 한 *를*1 *를*2 *를*입력된 범위에서 첫 번째 템플릿 함수에서 3 저장 연속 `partial_difference`s *를*1 *를*2- *는*1, a3- *는*2를 대상 범위입니다.
+입력 범위에서 *1,* *a*2, 3의 값 시퀀스에 대해 첫 번째 템플릿 함수는 대상 범위에 연속 `partial_difference` *값 1,* 2- *a* *1,* a3- *a* *2를 저장*합니다.
 
-값의 시퀀스에 대 한 *를*1 *를*2 *를*3, 두 번째 템플릿 함수는 입력된 범위에서 저장 연속 `partial_difference`s *를* 1 *는*2 `binary_op` *는*1 *를*3 `binary_op` *를*대상 범위에서 2.
+입력 범위에서 1, *a*2, 3의 값시퀀스에 대해 두 번째 템플릿 *함수는 연속*`partial_difference` *값 1,* *2 `binary_op` 1, 3* *`binary_op`* *2를 대상*에 저장 합니다. 벗어납니다.
 
-이항 연산 `binary_op` 결합형 또는 가환 적으로 필요 하지 않습니다, 작업 순서에 적용 되기 때문에 지정 됩니다.
+적용 되는 작업의 순서가 지정 되어 있으므로 이항 연산 `binary_op`는 결합형 또는 교환 일 필요가 없습니다.
 
 ### <a name="example"></a>예제
 
@@ -292,7 +292,7 @@ int main( )
 }
 ```
 
-## <a name="exclusive_scan"></a> exclusive_scan
+## <a name="exclusive_scan"></a>exclusive_scan
 
 ```cpp
 template<class InputIterator, class OutputIterator, class T>
@@ -316,14 +316,14 @@ ForwardIterator2 result,
 T init, BinaryOperation binary_op);
 ```
 
-## <a name="gcd"></a> gcd
+## <a name="gcd"></a>gcd
 
 ```cpp
 template <class M, class N>
 constexpr common_type_t<M,N> gcd(M m, N n);
 ```
 
-## <a name="inclusive_scan"></a> inclusive_scan
+## <a name="inclusive_scan"></a>inclusive_scan
 
 ```cpp
 template<class InputIterator, class OutputIterator>
@@ -355,7 +355,7 @@ ForwardIterator2 result,
 BinaryOperation binary_op, T init);
 ```
 
-## <a name="inner_product"></a> inner_product
+## <a name="inner_product"></a>inner_product
 
 두 범위의 요소 전체의 곱의 합을 계산하여 지정된 초기값에 추가하거나 합 및 곱 이진 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차의 결과를 계산합니다.
 
@@ -379,16 +379,16 @@ Type inner_product(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1*\
+*first1* \
 두 번째 범위와의 일반화된 내부 곱 또는 내부 곱을 계산할 첫 번째 범위의 첫 번째 요소 주소를 지정하는 입력 반복기입니다.
 
-*last1*\
+*last1* \
 두 번째 범위와의 일반화된 내부 곱 또는 내부 곱을 계산할 첫 번째 범위의 마지막 번째 요소 주소를 지정하는 입력 반복기입니다.
 
-*first2*\
+*first2* \
 첫 번째 범위와의 일반화된 내부 곱 또는 내부 곱을 계산할 두 번째 범위의 첫 번째 요소 주소를 지정하는 입력 반복기입니다.
 
-*val*\
+*val* \
 범위 간의 내부 곱 또는 일반화된 내부 곱을 더할 초기값입니다.
 
 *binary_op1*\
@@ -401,19 +401,19 @@ Type inner_product(
 
 첫 번째 구성원 함수는 요소별 곱의 합을 반환하고 해당 합을 지정된 초기값에 더합니다. 따라서 값 *a*i 및 *b*i의 범위에 대해 이 함수는 다음 결과를 반환합니다.
 
-`val` + (*는*1 \* *b*1) + (*는*2 \* *b*2) +... + (*를* n\* *b*n)
+`val` + (*a*1 \* *b*1) + (*a*2 \* *b*2) + ... + (*a*n \* *b*n)
 
-반복적으로 바꿔 *val* 사용 하 여 `val` + (*는*있나요 \* *b*i).
+*val* 을 `val` + (*a*i \* *b*i)로 반복적으로 바꿉니다.
 
 두 번째 구성원 함수는 다음 결과를 반환합니다.
 
-`val` *binary_op1* (*는*1 *binary_op2* *b*1) *binary_op1* (*를* 2*binary_op2* *b*2) *binary_op1* ... *binary_op1* (*는*n *binary_op2* *b*n)
+`val` *binary_op1* (*a*1 *binary_op2* *b*1) *binary_op1* (*a*2 *binary_op2* *b*2) *binary_op1* ... *binary_op1* (*a*n *binary_op2* *b*n)
 
-반복적으로 바꿔 *val* 사용 하 여 `val` *binary_op1* (*는*i *binary_op2* *b* i)입니다.
+*val* 을 `val` *binary_op1* (*a*i *binary_op2* *b*i)로 반복적으로 바꿉니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-초기 값을 하면 것 잘 정의 된 결과 비어 있는 경우 범위, 이때 *val* 반환 됩니다. 이진 연산은 결합 법칙이 나 교환 법칙이 성립 할 필요 하지 않습니다. 범위는 유효해야 하며 복잡성은 범위의 크기에 비례해야 합니다. 반복 중에 닫기가 가능하도록 하려면 이진 연산자의 반환 형식을 **Type**으로 변환할 수 있어야 합니다.
+초기 값은 범위가 비어 있을 때 잘 정의 된 결과가 있는지 확인 합니다 .이 경우 *val* 이 반환 됩니다. 이항 연산은 연관성이 나 비가 환 필요가 없습니다. 범위는 유효해야 하며 복잡성은 범위의 크기에 비례해야 합니다. 반복 중에 닫기가 가능하도록 하려면 이진 연산자의 반환 형식을 **Type**으로 변환할 수 있어야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -505,9 +505,9 @@ int main()
 }
 ```
 
-## <a name="iota"></a> iota
+## <a name="iota"></a>iota
 
-첫 번째 요소를 사용 하 여 시작 하 고 해당 값의 연속적 증분을 사용 하 여 채우기 시작 값을 저장 (` value++`)의 각 간격의 요소에서 `[first,  last)`합니다.
+시작 값을 저장 하 고, 첫 번째 요소부터 시작 하 여 간격 `[first,  last)`간격의 각 요소에서 해당 값의 연속 증가값 (` value++`)을 채웁니다.
 
 ```cpp
 template <class ForwardIterator, class Type>
@@ -516,14 +516,14 @@ void iota(ForwardIterator first, ForwardIterator last, Type value);
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*\
+*첫 번째* \
 채울 범위의 첫 번째 요소를 주소 지정하는 입력 반복기입니다.
 
-*마지막*\
+*마지막* \
 채울 범위의 마지막 요소를 주소 지정하는 입력 반복기입니다.
 
 *value*\
-연속적으로 증분할 뒷부분에 나오는 요소에 대 한 첫 번째 요소에 저장 합니다. 시작 값입니다.
+첫 번째 요소에 저장 하 고 이후 요소에 대해 연속적으로 증가 하는 시작 값입니다.
 
 ### <a name="example"></a>예제
 
@@ -567,14 +567,14 @@ int main(void)
 }
 ```
 
-## <a name="lcm"></a> lcm
+## <a name="lcm"></a>lcm
 
 ```cpp
 template <class M, class N>
 constexpr common_type_t<M,N> lcm(M m, N n);
 ```
 
-## <a name="partial_sum"></a> partial_sum
+## <a name="partial_sum"></a>partial_sum
 
 첫 번째 요소부터 *i*번째 요소까지 입력 범위에서 일련의 합계를 계산하고 각 합계의 결과를 대상 범위의 *i*번째 요소에 저장하거나 합 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차 결과를 계산합니다.
 
@@ -595,10 +595,10 @@ OutputIterator partial_sum(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*\
+*첫 번째* \
 지정된 이진 연산에 따라 부분적으로 합을 계산하거나 결합할 범위의 첫 번째 요소를 주소 지정하는 입력 반복기입니다.
 
-*마지막*\
+*마지막* \
 반복된 누적에 실제로 포함된 마지막 요소 하나 다음 위치의 지정된 이진 연산에 따라 부분적으로 합을 계산하거나 결합할 범위의 마지막 요소를 주소 지정하는 입력 반복기입니다.
 
 *결과*\
@@ -609,17 +609,17 @@ OutputIterator partial_sum(
 
 ### <a name="return-value"></a>반환 값
 
-대상 범위의 끝을 지정 하는 출력 반복기: `result` + (`last` - `first`),
+대상 범위 끝을 주소 지정 하는 출력 반복기: `result` + (`last` - `first`)
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-출력 반복기 *결과* 입력된 반복기와 동일한 반복기 일 수 *첫 번째*준비에서 부분 합계를 계산 될 수 있도록 합니다.
+출력 반복기 *결과* 는 입력 반복기와 동일한 반복기 일 수 있으므로 부분 *합계를 계산*하는 데 사용할 수 있습니다.
 
-값의 시퀀스에 대 한 *를*1 *는*2 *는*3, 첫 번째 템플릿 함수는 입력된 범위, 대상 범위에서 연속적 부분 합계를 저장 위치 합니다 *하나요*번째 요소를 지정 하 여 (((*는*1 + *는*2) + *를*3) *를*있나요).
+입력 범위 *에서 1,* *a*2 *, 3의*값 시퀀스에 대해 첫 번째 템플릿 함수는 대상 범위에 연속 부분 합계를 저장 합니다. 여기서 *i*번째 요소는 *(((1 +* *a*2) + *a*3)로 지정 됩니다.i).
 
-값의 시퀀스에 대 한 *는*1 *는*2 *는*3 입력된 범위의 두 번째 템플릿 함수는 저장 여기서 i 번째 요소는 대상 범위에서 연속적 부분 합계 지정 된 (((*를*1 `binary_op` *는*2) `binary_op` *를*3) *를*i).
+입력 범위에서 *1,* *a*2, 3 *의 값 시퀀스*에 대해 두 번째 템플릿 함수는 대상 범위에 연속 부분 합계를 저장 합니다. 여기서 i 번째 요소는 *(((1 `binary_op`* *a*2 `binary_op`)에 의해 지정 됩니다.3) *a*).
 
-이항 연산 *binary_op* 결합형 또는 가환 적으로 필요 하지 않습니다, 작업 순서에 적용 되기 때문에 지정 됩니다.
+작업 순서가 지정 되어 있으므로 이항 연산 *binary_op* 는 결합형 또는 교환 일 필요가 없습니다.
 
 ### <a name="example"></a>예제
 
@@ -681,7 +681,7 @@ int main( )
 }
 ```
 
-## <a name="reduce"></a> 줄이기
+## <a name="reduce"></a>줄이십시오
 
 ```cpp
 template<class InputIterator>
@@ -705,7 +705,7 @@ ForwardIterator first, ForwardIterator last, T init,
 BinaryOperation binary_op);
 ```
 
-## <a name="transform_exclusive_scan"></a> transform_exclusive_scan
+## <a name="transform_exclusive_scan"></a>transform_exclusive_scan
 
 ```cpp
 template<class InputIterator, class OutputIterator, class T,
@@ -726,7 +726,7 @@ BinaryOperation binary_op,
 UnaryOperation unary_op);
 ```
 
-## <a name="transform_inclusive_scan"></a> transform_inclusive_scan
+## <a name="transform_inclusive_scan"></a>transform_inclusive_scan
 
 ```cpp
 template<class InputIterator, class OutputIterator,
@@ -761,7 +761,7 @@ UnaryOperation unary_op,
 T init);
 ```
 
-## <a name="transform_reduce"></a> transform_reduce
+## <a name="transform_reduce"></a>transform_reduce
 
 ```cpp
 template<class InputIterator1, class InputIterator2, class T>
