@@ -1673,7 +1673,7 @@
                       href: atl-mfc-shared/cstring-argument-passing.md
                     - name: 유니코드 및 MBCS(멀티바이트 문자 집합) 지원
                       href: atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md
-        - name: 참조
+        - name: 참고
           expanded: false
           items:
             - name: CSize 클래스
@@ -10257,7 +10257,7 @@
                       href: parallel/concrt/best-practices-in-the-asynchronous-agents-library.md
                     - name: 동시성 런타임의 유용한 일반 정보
                       href: parallel/concrt/general-best-practices-in-the-concurrency-runtime.md
-                - name: 참조
+                - name: 참고
                   expanded: false
                   items:
                     - name: 참조(동시성 런타임)
