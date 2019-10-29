@@ -18,7 +18,7 @@ ms.locfileid: "68448318"
 ---
 # <a name="allocatornewdel-class"></a>allocator_newdel 클래스
 
-는 **operator delete** 를 사용 하 여 메모리 블록을 할당 취소 하 고 **new 연산자** 를 사용 하 여 메모리 블록을 할당 하는 할당자를 구현 합니다.
+**delete 연산자**를 사용하여 메모리 블록 할당을 해제하고 **new 연산자**를 사용하여 메모리 블록을 할당하는 할당자를 구현합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,7 +35,7 @@ class allocator_newdel;
 
 ## <a name="remarks"></a>설명
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 문에서이 클래스를 *name* 매개 변수로 전달 합니다.`ALLOCATOR_DECL(CACHE_FREELIST stdext::allocators::max_none), SYNC_DEFAULT, allocator_newdel);`
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 명령문에서 이 클래스를 *name* 매개 변수로 전달합니다.`ALLOCATOR_DECL(CACHE_FREELIST stdext::allocators::max_none), SYNC_DEFAULT, allocator_newdel);`
 
 ## <a name="requirements"></a>요구 사항
 
