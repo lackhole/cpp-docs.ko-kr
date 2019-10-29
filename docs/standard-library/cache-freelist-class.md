@@ -32,14 +32,14 @@ class cache_freelist
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*Sz*|할당할 배열의 요소 수입니다.|
+|*Sz*|할당할 배열의 요소수 입니다.|
 |*Max*|사용 가능한 목록의 최대 크기를 나타내는 최대 클래스입니다. [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md) 또는 [max_variable_size](../standard-library/max-variable-size-class.md)일 수 있습니다.|
 
 ## <a name="remarks"></a>주의
 
-Cache_freelist 클래스 템플릿은 *Sz*크기의 메모리 블록에 대 한 무료 목록을 유지 관리 합니다. 사용 가능한 목록이 꽉 차면 **operator delete** 를 사용 하 여 메모리 블록의 할당을 취소 합니다. 사용 가능한 목록이 비어 있는 경우 **operator new** 를 사용 하 여 새 메모리 블록을 할당 합니다. 사용 가능한 목록의 최대 크기는 *max* 매개 변수에 전달 된 최대 클래스 클래스에 의해 결정 됩니다.
+cache_freelist 클래스 템플릿은 *Sz*크기 메모리 블록의 해제가 필요한 목록을 유지 관리 합니다. 사용 가능한 목록이 꽉 차면 **delete 연산자**를 사용하여 메모리 블록의 할당을 취소 합니다. 사용 가능한 목록이 비어 있는 경우 **new 연산자**를 사용하여 새 메모리 블록을 할당 합니다. 사용 가능한 목록의 최대 크기는 매개 변수에 전달된 클래스인 *Max* 클래스에 의해 결정됩니다.
 
-각 메모리 블록은 사용 가능한 메모리의 *Sz* 바이트와 **operator new** 및 **operator delete** 에 필요한 데이터를 포함 합니다.
+각 메모리 블록은 사용 가능한 메모리의 *Sz* 바이트와 **new 연산자** 및 **delete 연산자**에 필요한 데이터를 포함 합니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -72,7 +72,7 @@ void *allocate(std::size_t count);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*count*|할당할 배열의 요소 수입니다.|
+|*count*|할당할 배열의 요소수 입니다.|
 
 ### <a name="return-value"></a>반환 값
 
