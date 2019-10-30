@@ -14,9 +14,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68448296"
 ---
-# <a name="allocatorunbounded-class"></a>allocator_unbounded 클래스
+# <a name="allocator_unbounded-class"></a>allocator_unbounded 클래스
 
-[Max_unbounded](../standard-library/max-unbounded-class.md)에서 관리 하는 길이를 사용 하는 [cache_freelist](../standard-library/cache-freelist-class.md) 형식의 캐시 *를 사용 하* 여 형식 형식의 개체에 대 한 저장소 할당 및 해제를 관리 하는 개체에 대해 설명 합니다.
+[max_unbounded](../standard-library/max-unbounded-class.md)에서 관리되는 길이를 사용하는 [cache_freelist](../standard-library/cache-freelist-class.md) 형식의 캐시를 사용하여 *Type* 형식인 개체에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +33,7 @@ class allocator_unbounded;
 
 ## <a name="remarks"></a>설명
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 문에서이 클래스를 *name* 매개 변수로 전달 합니다.`ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_unbounded), SYNC_DEFAULT, allocator_unbounded);`
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 명령문에서 이 클래스를 *name* 매개 변수로 전달합니다.`ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_unbounded), SYNC_DEFAULT, allocator_unbounded);`
 
 ## <a name="requirements"></a>요구 사항
 

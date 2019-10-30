@@ -16,9 +16,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68458151"
 ---
-# <a name="allocatorvariablesize-class"></a>allocator_variable_size 클래스
+# <a name="allocator_variable_size-class"></a>allocator_variable_size 클래스
 
-[Max_variable_size](../standard-library/max-variable-size-class.md)에서 관리 하는 길이를 사용 하는 [cache_freelist](../standard-library/cache-freelist-class.md) 형식의 캐시 *를 사용 하* 여 형식 형식의 개체에 대 한 저장소 할당 및 해제를 관리 하는 개체에 대해 설명 합니다.
+[max_variable_size](../standard-library/max-variable-size-class.md)에서 관리되는 길이를 사용하는 [cache_freelist](../standard-library/cache-freelist-class.md) 형식의 캐시를 사용하여 *Type* 형식의 개체에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,7 +35,7 @@ class allocator_variable_size;
 
 ## <a name="remarks"></a>설명
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 문에서이 클래스를 *name* 매개 변수로 전달 합니다.`ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_variable_size), SYNC_DEFAULT, allocator_variable_size);`
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 명령문에서 이 클래스를 *name* 매개 변수로 전달합니다.`ALLOCATOR_DECL(CACHE_FREELIST(stdext::allocators::max_variable_size), SYNC_DEFAULT, allocator_variable_size);`
 
 ## <a name="requirements"></a>요구 사항
 
