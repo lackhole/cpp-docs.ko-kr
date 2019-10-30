@@ -21,7 +21,7 @@ ms.locfileid: "69511838"
 
 Microsoft C/C++ 컴파일러 (MSVC)는 다중 스레드 응용 프로그램을 만들기 위한 지원을 제공 합니다. 응용 프로그램에서 사용자 인터페이스가 응답 하지 않게 하는 부담이 큰 작업을 수행 해야 하는 경우 둘 이상의 스레드를 사용 하는 것이 좋습니다.
 
-MSVC를 사용 하면 여러 가지 방법으로 여러 스레드를 프로그래밍할 수 있습니다. /Winrt 및 C++Windows 런타임 라이브러리, MFC (Microsoft Foundation Class) 라이브러리, C++/cli 및 .net 런타임, C 런타임 라이브러리 및 Win32 API를 사용할 수 있습니다. 이 문서는 C의 다중 스레딩에 대 한 것입니다. 예제 코드는 [C에서 샘플 다중 스레드 프로그램](sample-multithread-c-program.md)을 참조 하세요.
+MSVC를 사용하면 여러 가지 방법으로 다중 스레드를 프로그래밍할 수 있습니다. C++/WinRT 및 Windows 런타임 라이브러리, MFC (Microsoft Foundation Class) 라이브러리, C++/CLI 및 .NET 런타임, C 런타임 라이브러리 및 Win32 API를 사용할 수 있습니다. 이 문서는 C의 다중 스레딩에 대 한 것입니다. 예제 코드는 [C로 작성된 샘플 다중 스레드 프로그램](sample-multithread-c-program.md)을 참조하세요.
 
 ## <a name="multithread-programs"></a>다중 스레드 프로그램
 
