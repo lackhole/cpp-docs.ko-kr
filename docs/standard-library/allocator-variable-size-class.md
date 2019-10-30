@@ -16,7 +16,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68458151"
 ---
-# <a name="allocatorvariablesize-class"></a>allocator_variable_size 클래스
+# <a name="allocator_variable_size-class"></a>allocator_variable_size 클래스
 
 [max_variable_size](../standard-library/max-variable-size-class.md)에서 관리되는 길이를 사용하는 [cache_freelist](../standard-library/cache-freelist-class.md) 형식의 캐시를 사용하여 *Type* 형식의 개체에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.
 

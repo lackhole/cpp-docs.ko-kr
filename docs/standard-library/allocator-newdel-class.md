@@ -16,7 +16,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68448318"
 ---
-# <a name="allocatornewdel-class"></a>allocator_newdel 클래스
+# <a name="allocator_newdel-class"></a>allocator_newdel 클래스
 
 **delete 연산자**를 사용하여 메모리 블록 할당을 해제하고 **new 연산자**를 사용하여 메모리 블록을 할당하는 할당자를 구현합니다.
 

@@ -98,16 +98,16 @@ helpviewer_keywords:
 - std::list [C++], swap
 - std::list [C++], unique
 ms.assetid: d3707f4a-10fd-444f-b856-f9ca2077c1cd
-ms.openlocfilehash: c38c6823f48d61cf616f7b91a96dfcc040d666ed
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: d5f64f44ec62a8bd1862af2b8f9cb72b2d0210e4
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246492"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687832"
 ---
 # <a name="list-class"></a>list 클래스
 
-C++ 표준 라이브러리 list 클래스는 선형 배열에서 해당 요소를 유지 관리하고 시퀀스 내 모든 위치에서 효율적인 삽입과 삭제를 수행할 수 있도록 하는 시퀀스 컨테이너의 템플릿 클래스입니다. 시퀀스는 양방향으로 링크된 요소의 목록으로 저장됩니다. 이러한 요소는 각각 특정 *Type* 형식의 멤버를 포함합니다.
+C++ 표준 라이브러리 목록 클래스는 선형 배열에서 해당 요소를 유지 관리 하 고 시퀀스 내의 모든 위치에서 효율적인 삽입 및 삭제를 허용 하는 시퀀스 컨테이너의 클래스 템플릿입니다. 시퀀스는 양방향으로 링크된 요소의 목록으로 저장됩니다. 이러한 요소는 각각 특정 *Type* 형식의 멤버를 포함합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -122,9 +122,9 @@ class list
 목록에 저장되는 요소 데이터 형식입니다.
 
 *할당자*\
-목록의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수 선택 사항이 며 기본값은 **할당자**\<*형식*>.
+목록의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 이 인수는 선택 사항이 며 기본값은 **할당자**\<*형식*>입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 컨테이너 형식은 일반적으로 애플리케이션에서 필요한 검색과 삽입의 형식을 기준으로 선택해야 합니다. 요소에 대한 임의 액세스는 거의 발생하지 않으며 요소 삽입 또는 삭제는 시퀀스 끝에서만 수행하면 되는 시퀀스를 관리할 때는 벡터를 기본 컨테이너로 사용해야 합니다. 임의 액세스가 필요하며 시퀀스 시작과 끝의 삽입 및 삭제는 거의 수행되지 않는 경우에는 deque 클래스 컨테이너의 성능이 보다 뛰어납니다.
 
@@ -148,7 +148,7 @@ class list
 |-|-|
 |[allocator_type](#allocator_type)|목록 개체의 `allocator` 클래스를 나타내는 형식입니다.|
 |[const_iterator](#const_iterator)|목록의 **const** 요소 하나를 읽을 수 있는 양방향 반복기를 제공하는 형식입니다.|
-|[const_pointer](#const_pointer)|에 대 한 포인터를 제공 하는 형식에 **const** 목록의 요소입니다.|
+|[const_pointer](#const_pointer)|목록의 **const** 요소에 대 한 포인터를 제공 하는 형식입니다.|
 |[const_reference](#const_reference)|**const** 작업을 읽고 수행하기 위해 목록에 저장된 **const** 요소에 대한 참조를 제공하는 형식입니다.|
 |[const_reverse_iterator](#const_reverse_iterator)|목록의 모든 **const** 요소를 읽을 수 있는 양방향 반복기를 제공하는 형식입니다.|
 |[difference_type](#difference_type)|동일한 목록 내의 요소를 참조하는 두 반복기 사이의 차이를 제공하는 형식입니다.|
@@ -208,7 +208,7 @@ class list
 
 **헤더**: \<list>
 
-## <a name="allocator_type"></a> allocator_type
+## <a name="allocator_type"></a>allocator_type
 
 목록 개체의 할당자 클래스를 나타내는 형식입니다.
 
@@ -216,15 +216,15 @@ class list
 typedef Allocator allocator_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-`allocator_type` 템플릿 매개 변수에 대 한 동의어가 *할당자*합니다.
+`allocator_type`은 템플릿 매개 변수 *할당자*의 동의어입니다.
 
 ### <a name="example"></a>예제
 
 [get_allocator](#get_allocator)의 예제를 참조하세요.
 
-## <a name="assign"></a> 할당
+## <a name="assign"></a>할당
 
 목록에서 요소를 삭제하고 대상 목록에서 요소의 새 집합을 복사합니다.
 
@@ -253,13 +253,13 @@ void assign(
 *개수*\
 목록에 삽입되는 요소의 복사본의 수입니다.
 
-*val*\
+*Val*\
 목록에 삽입되는 요소의 값입니다.
 
 *IList*\
 삽입할 요소를 포함하는 initializer_list입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 대상 목록에서 기존 요소를 지운 다음 원본 목록이나 일부 다른 목록에서 지정된 범위의 요소를 대상 목록에 삽입하거나, 지정한 값의 새 요소 복사본을 대상 목록에 삽입하도록 지정합니다.
 
@@ -313,7 +313,7 @@ int main()
 c1 = 10 20 30c1 = 50 60c1 = 4 4 4 4 4 4 4c1 = 10 20 30 40
 ```
 
-## <a name="back"></a> 뒤로
+## <a name="back"></a>뒤로
 
 목록의 마지막 요소에 대한 참조를 반환합니다.
 
@@ -327,7 +327,7 @@ const_reference back() const;
 
 목록의 마지막 요소입니다. 목록이 비어 있으면 반환 값은 정의되지 않습니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `back`의 반환 값이 `const_reference`에 할당된 경우 목록 개체는 수정할 수 없습니다. `back`의 반환 값이 `reference`에 할당된 경우 목록 개체는 수정할 수 있습니다.
 
@@ -363,7 +363,7 @@ The last integer of c1 is 11
 The next-to-last integer of c1 is 10
 ```
 
-## <a name="begin"></a> 시작
+## <a name="begin"></a>시작
 
 목록에서 첫 번째 요소의 주소를 지정하는 반복기를 반환합니다.
 
@@ -377,9 +377,9 @@ iterator begin();
 
 목록의 첫 번째 요소 또는 빈 목록 다음의 위치 주소를 지정하는 양방향 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-하는 경우의 반환 값 `begin` 에 할당 되는 `const_iterator`, 목록 개체의 요소를 수정할 수 없습니다. 하는 경우의 반환 값 `begin` 에 할당 되는 `iterator`, 목록 개체의 요소를 수정할 수 있습니다.
+`begin`의 반환 값이 `const_iterator`에 할당 된 경우 목록 개체의 요소는 수정할 수 없습니다. `begin`의 반환 값이 `iterator`에 할당 된 경우 목록 개체의 요소를 수정할 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -416,9 +416,9 @@ The first element of c1 is 1
 The first element of c1 is now 20
 ```
 
-## <a name="cbegin"></a> cbegin
+## <a name="cbegin"></a>cbegin
 
-반환 된 **const** 반복기 범위에서 첫 번째 요소를 주소입니다.
+범위의 첫 번째 요소를 주소 처리 하는 **const** 반복기를 반환 합니다.
 
 ```cpp
 const_iterator cbegin() const;
@@ -426,13 +426,13 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>반환 값
 
-A **상수** 범위 또는 빈 범위의 끝 바로 다음 위치 중 첫 번째 요소를 가리키는 양방향 액세스 반복기 (빈 범위의 경우 `cbegin() == cend()`).
+범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 **const** 양방향 액세스 반복기입니다 (빈 범위의 경우 `cbegin() == cend()`).
 
 ### <a name="remarks"></a>설명
 
 `cbegin` 반환 값을 사용하여 범위의 요소를 수정할 수 없습니다.
 
-`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 예에서 고려 `Container` 수정 되도록 (비 **const**)를 지 원하는 모든 종류의 컨테이너 `begin()` 및 `cbegin()`합니다.
+`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 `begin()` 및 `cbegin()`를 지 원하는 모든 종류의 수정 가능 (비 **const**) 컨테이너로 `Container` 하는 것이 좋습니다.
 
 ```cpp
 auto i1 = Container.begin();
@@ -442,7 +442,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a> cend
+## <a name="cend"></a>cend
 
 범위에서 마지막 요소 바로 다음의 위치를 주소 지정하는 `const` 반복기를 반환합니다.
 
@@ -454,11 +454,11 @@ const_iterator cend() const;
 
 범위 끝의 바로 다음을 가리키는 `const` 양방향 액세스 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `cend`는 반복기가 범위 끝을 통과했는지 여부를 테스트하는 데 사용됩니다.
 
-`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 예에서 고려 `Container` 수정 되도록 (비 **const**)를 지 원하는 모든 종류의 컨테이너 `end()` 및 `cend()`합니다.
+`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 `end()` 및 `cend()`를 지 원하는 모든 종류의 수정 가능 (비 **const**) 컨테이너로 `Container` 하는 것이 좋습니다.
 
 ```cpp
 auto i1 = Container.end();
@@ -470,7 +470,7 @@ auto i2 = Container.cend();
 
 `cend`에서 반환한 값은 역참조되지 않아야 합니다.
 
-## <a name="clear"></a> 지우기
+## <a name="clear"></a>해제
 
 목록의 모든 요소를 지웁니다.
 
@@ -505,7 +505,7 @@ The size of the list is initially 3
 The size of list after clearing is 0
 ```
 
-## <a name="const_iterator"></a> const_iterator
+## <a name="const_iterator"></a>const_iterator
 
 목록의 **const** 요소 하나를 읽을 수 있는 양방향 반복기를 제공하는 형식입니다.
 
@@ -513,7 +513,7 @@ The size of list after clearing is 0
 typedef implementation-defined const_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `const_iterator` 형식을 사용하여 요소의 값을 수정할 수는 없습니다.
 
@@ -521,21 +521,21 @@ typedef implementation-defined const_iterator;
 
 [back](#back)의 예제를 참조하세요.
 
-## <a name="const_pointer"></a> const_pointer
+## <a name="const_pointer"></a>const_pointer
 
-에 대 한 포인터를 제공 된 **const** 목록의 요소.
+목록의 **const** 요소에 대 한 포인터를 제공 합니다.
 
 ```cpp
 typedef typename Allocator::const_pointer const_pointer;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `const_pointer` 형식을 사용하여 요소의 값을 수정할 수는 없습니다.
 
 대부분의 경우 [iterator](#iterator)를 사용하여 목록 개체의 요소에 액세스해야 합니다.
 
-## <a name="const_reference"></a> const_reference
+## <a name="const_reference"></a>const_reference
 
 **const** 작업을 읽고 수행하기 위해 목록에 저장된 **const** 요소에 대한 참조를 제공하는 형식입니다.
 
@@ -543,7 +543,7 @@ typedef typename Allocator::const_pointer const_pointer;
 typedef typename Allocator::const_reference const_reference;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `const_reference` 형식을 사용하여 요소의 값을 수정할 수는 없습니다.
 
@@ -579,7 +579,7 @@ The first element is 10
 The second element is 20
 ```
 
-## <a name="const_reverse_iterator"></a> const_reverse_iterator
+## <a name="const_reverse_iterator"></a>const_reverse_iterator
 
 목록의 모든 **const** 요소를 읽을 수 있는 양방향 반복기를 제공하는 형식입니다.
 
@@ -587,15 +587,15 @@ The second element is 20
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `const_reverse_iterator` 형식은 요소 값을 수정할 수 없으며 목록을 역방향으로 반복하는 데 사용됩니다.
 
 ### <a name="example"></a>예제
 
-[rbegin](#rbegin)의 예제를 참조하세요.
+[rbegin](#rbegin)에 대한 예제를 참조하세요.
 
-## <a name="crbegin"></a> crbegin
+## <a name="crbegin"></a>crbegin
 
 역방향 목록에서 첫 번째 요소의 주소를 지정하는 const 반복기를 반환합니다.
 
@@ -607,7 +607,7 @@ const_reverse_iterator rbegin() const;
 
 역방향 목록에서 첫 번째 요소의 주소를 지정하거나 역방향이 해제된 `list`에서 마지막 요소의 주소를 지정하는 const 역방향 양방향 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `crbegin`은 `list`에서 [list::begin](#begin)이 사용되는 것처럼 역방향 목록에서 사용됩니다.
 
@@ -639,7 +639,7 @@ int main( )
 The last element in the list is 30.
 ```
 
-## <a name="crend"></a> crend
+## <a name="crend"></a>crend
 
 역방향 목록에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 상수 반복기를 반환합니다.
 
@@ -651,7 +651,7 @@ const_reverse_iterator rend() const;
 
 역방향 [list](../standard-library/list-class.md)에서 마지막 요소 다음 위치(역방향이 해제된 `list`에서 첫 번째 요소 앞의 위치)의 주소를 지정하는 const 역방향 양방향 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `crend`는 `list`에서 [list::end](#end)가 사용되는 것처럼 역방향 목록에서 사용됩니다.
 
@@ -690,7 +690,7 @@ int main( )
 The first element in the list is: 10
 ```
 
-## <a name="difference_type"></a> difference_type
+## <a name="difference_type"></a>difference_type
 
 반복기가 가리키는 요소 사이의 범위에 있는 목록의 요소 수를 나타내는 데 사용할 수 있는 부호 있는 정수 형식입니다.
 
@@ -698,7 +698,7 @@ The first element in the list is: 10
 typedef typename Allocator::difference_type difference_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `difference_type`은 컨테이너의 반복기를 빼거나 더할 때 반환되는 형식입니다. `difference_type`은 일반적으로 `first` 및 `last` 반복기 사이의 [ `first`, `last`) 범위 내 요소 수를 나타내는 데 사용됩니다. 여기에는 `first`가 가리키는 요소와 `last`가 가리키는 요소까지의 요소 범위가 포함됩니다(마지막 요소는 포함되지 않음).
 
@@ -747,7 +747,7 @@ The number '20' is in c1 collection 2 times.
 The number '30' is in c1 collection 3 times.
 ```
 
-## <a name="emplace"></a> emplace
+## <a name="emplace"></a>emplace
 
 생성된 요소를 목록의 지정된 위치에 삽입합니다.
 
@@ -757,13 +757,13 @@ void emplace(iterator Where, Type&& val);
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*\
+*Where*\
 대상 [list](../standard-library/list-class.md)에서 첫 번째 요소를 삽입하는 위치입니다.
 
 *val*\
 `list` 끝에 추가되는 요소입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 예외가 throw되면 `list`는 변경되지 않은 상태로 유지되며 예외가 다시 throw됩니다.
 
@@ -791,7 +791,7 @@ int main( )
 Moved first element: a
 ```
 
-## <a name="emplace_back"></a> emplace_back
+## <a name="emplace_back"></a>emplace_back
 
 생성된 요소를 목록 끝부분에 추가합니다.
 
@@ -804,7 +804,7 @@ void emplace_back(Type&& val);
 *val*\
 [list](../standard-library/list-class.md) 끝에 추가되는 요소입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 예외가 throw되면 `list`는 변경되지 않은 상태로 유지되며 예외가 다시 throw됩니다.
 
@@ -832,7 +832,7 @@ int main( )
 Moved first element: a
 ```
 
-## <a name="emplace_front"></a> emplace_front
+## <a name="emplace_front"></a>emplace_front
 
 생성된 요소를 목록 시작 부분에 추가합니다.
 
@@ -845,7 +845,7 @@ void emplace_front(Type&& val);
 *val*\
 [list](../standard-library/list-class.md)의 시작 부분에 추가할 요소입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 예외가 throw되면 `list`는 변경되지 않은 상태로 유지되며 예외가 다시 throw됩니다.
 
@@ -910,7 +910,7 @@ int main( )
 The list is not empty.
 ```
 
-## <a name="end"></a> 끝
+## <a name="end"></a>종단
 
 목록에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 반복기를 반환합니다.
 
@@ -923,9 +923,9 @@ iterator end();
 
 목록에서 마지막 요소 다음에 나오는 위치의 주소를 지정하는 양방향 반복기입니다. 목록이 비어 있으면 `list::end == list::begin`입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-`end` 반복기가 목록의 끝에 도달 했는지 여부를 테스트 하는 데 사용 됩니다.
+`end`는 반복기가 목록의 끝에 도달 했는지 여부를 테스트 하는 데 사용 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -970,7 +970,7 @@ The new next-to-last integer of c1 is 400
 The list is now: 10 400 30
 ```
 
-## <a name="erase"></a> 지우기
+## <a name="erase"></a>지우는
 
 목록의 지정된 위치에서 요소 또는 요소 범위를 제거합니다.
 
@@ -981,7 +981,7 @@ iterator erase(iterator first, iterator last);
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*\
+*Where*\
 목록에서 제거할 요소의 위치입니다.
 
 *첫 번째*\
@@ -994,7 +994,7 @@ iterator erase(iterator first, iterator last);
 
 제거되는 요소 뒤에 남아 있는 첫 번째 요소를 지정하는 양방향 반복기이거나, 남아 있는 요소가 없는 경우에는 목록 끝에 대한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 다시 할당은 수행되지 않으므로 반복기와 참조는 지워진 요소에 대해서만 유효하지 않게 됩니다.
 
@@ -1045,7 +1045,7 @@ After erasing the first element, the list becomes: 20 30 40 50
 After erasing all elements but the first, the list becomes:  20
 ```
 
-## <a name="front"></a> front
+## <a name="front"></a>앞뒤
 
 목록의 첫 번째 요소에 대한 참조를 반환합니다.
 
@@ -1058,7 +1058,7 @@ const_reference front() const;
 
 목록이 비어 있으면 반환이 정의되지 않습니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `front`의 반환 값이 `const_reference`에 할당된 경우 목록 개체는 수정할 수 없습니다. `front`의 반환 값이 `reference`에 할당된 경우 목록 개체는 수정할 수 있습니다.
 
@@ -1104,7 +1104,7 @@ Allocator get_allocator() const;
 
 목록에서 사용되는 할당자입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 목록 클래스의 할당자는 클래스가 스토리지를 관리하는 방법을 지정합니다. C++ 표준 라이브러리 컨테이너 클래스와 함께 제공되는 기본 할당자를 사용하면 대부분의 프로그래밍 요구 사항을 충족할 수 있습니다. 할당자 클래스를 직접 작성하고 사용하는 방법에 대해서는 고급 C++ 항목에서 다룹니다.
 
@@ -1132,7 +1132,7 @@ int main( )
 }
 ```
 
-## <a name="insert"></a> 삽입
+## <a name="insert"></a>넣거나
 
 요소 하나 또는 여러 개나 요소의 범위를 목록의 지정된 위치에 삽입합니다.
 
@@ -1149,10 +1149,10 @@ void insert(iterator Where, InputIterator First, InputIterator Last);
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*\
+*Where*\
 대상 목록에서 첫 번째 요소를 삽입하는 위치입니다.
 
-*val*\
+*Val*\
 목록에 삽입되는 요소의 값입니다.
 
 *개수*\
@@ -1238,7 +1238,7 @@ int main()
 }
 ```
 
-## <a name="iterator"></a> 반복기
+## <a name="iterator"></a>반복
 
 목록에 있는 모든 요소를 읽거나 수정할 수 있는 양방향 반복기를 제공하는 형식입니다.
 
@@ -1246,15 +1246,15 @@ int main()
 typedef implementation-defined iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-형식 `iterator` 요소의 값을 수정 하려면 사용할 수 있습니다.
+`iterator` 형식을 사용 하 여 요소의 값을 수정할 수 있습니다.
 
 ### <a name="example"></a>예제
 
 [begin](#begin)의 예제를 참조하세요.
 
-## <a name="list"></a> 목록
+## <a name="list"></a>은
 
 특정 크기의 목록 또는 특정 값의 요소나 특정 할당자가 포함된 목록을 다른 목록 일부 또는 전체의 복사본으로 생성합니다.
 
@@ -1284,7 +1284,7 @@ list(InputIterator First, InputIterator Last, const Allocator& Al);
 *개수*\
 생성된 목록의 요소 수입니다.
 
-*val*\
+*Val*\
 목록에 있는 요소의 값입니다.
 
 *오른쪽*\
@@ -1299,21 +1299,21 @@ list(InputIterator First, InputIterator Last, const Allocator& Al);
 *IList*\
 복사할 요소가 포함된 initializer_list입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-모든 생성자는 할당자 개체를 저장 합니다 (*Al*) 고 목록을 초기화 합니다.
+모든 생성자는 할당자 개체 (*Al*)를 저장 하 고 목록을 초기화 합니다.
 
 [get_allocator](#get_allocator)는 목록을 생성하는 데 사용되는 할당자 개체의 복사본을 반환합니다.
 
-처음 두 생성자는 빈 초기 목록을 지정, 두 번째 할당자 형식 지정 (*Al*) 사용할 수 있습니다.
+처음 두 생성자는 빈 초기 목록을 지정 하 고, 두 번째 생성자는 사용할 할당자 형식 (*Al*)을 지정 합니다.
 
-세 번째 생성자는 지정된 된 수의 반복을 지정 (*개수*) 클래스에 대 한 기본값 요소의 `Type`합니다.
+세 번째 생성자는 `Type`클래스에 대 한 기본값 요소의 지정 된 수 (*개수*)를 반복 하 여 지정 합니다.
 
-네 번째와 다섯 번째 생성자는 반복을 지정 (*개수*) 값의 요소나 *Val*합니다.
+네 번째 및 다섯 번째 생성자는 값 *Val*의 (*Count*) 요소 반복을 지정 합니다.
 
-여섯 번째 생성자는 목록의 복사본을 지정 *오른쪽*합니다.
+여섯 번째 생성자 *는 목록의 복사본을 지정 합니다.*
 
-일곱 번째 생성자는 목록을 이동 *오른쪽*합니다.
+일곱 번째 생성자는 목록을 *오른쪽*으로 이동 합니다.
 
 여덟 번째 생성자는 initializer_list를 사용하여 요소를 지정합니다.
 
@@ -1443,7 +1443,7 @@ int main( )
 }
 ```
 
-## <a name="merge"></a> 병합
+## <a name="merge"></a>결합
 
 요소를 인수 목록에서 제거하고 대상 목록에 삽입한 다음 새로 조합된 요소 집합을 오름차순 또는 기타 지정된 순서로 정렬합니다.
 
@@ -1459,14 +1459,14 @@ void merge(list<Type, Allocator>& right, Traits comp);
 *오른쪽*\
 대상 목록과 병합할 인수 목록입니다.
 
-*구성 요소*\
+*comp*\
 대상 목록의 요소를 정렬하는 데 사용되는 비교 연산자입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-인수 목록의 *오른쪽* 대상 목록과 병합 됩니다.
+인수 목록 *오른쪽* 이 대상 목록과 병합 됩니다.
 
-인수 목록과 대상 목록은 모두 결과 시퀀스 정렬의 기준으로 사용할 같은 비교 관계로 정렬되어야 합니다. 첫 번째 멤버 함수의 기본 순서는 오름차순입니다. 두 번째 멤버 함수는 사용자 지정 비교 연산 *comp* 클래스의 `Traits`합니다.
+인수 목록과 대상 목록은 모두 결과 시퀀스 정렬의 기준으로 사용할 같은 비교 관계로 정렬되어야 합니다. 첫 번째 멤버 함수의 기본 순서는 오름차순입니다. 두 번째 멤버 함수는 `Traits`클래스의 사용자 지정 비교 *작업을 적용* 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1527,7 +1527,7 @@ c3 = 5 1
 After merging c3 with c2 according to the '>' comparison relation: c2 = 6 5 4 3 2 1
 ```
 
-## <a name="op_eq"></a> 연산자 =
+## <a name="op_eq"></a>연산자 =
 
 목록의 요소를 다른 목록의 복사본으로 바꿉니다.
 
@@ -1541,9 +1541,9 @@ list& operator=(list&& right);
 *오른쪽*\
 `list`에 복사되는 [list](../standard-library/list-class.md)입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-기존 요소를 지운 후는 `list`, 연산자 복사 하거나 이동 내용의 *오른쪽* 에 `list`합니다.
+`list`의 기존 요소를 지운 후 연산자 *는의 내용을 `list`에 복사* 하거나 이동 합니다.
 
 ### <a name="example"></a>예제
 
@@ -1586,7 +1586,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a> 포인터
+## <a name="pointer"></a>놓고
 
 목록에 있는 요소에 대한 포인터를 제공합니다.
 
@@ -1594,13 +1594,13 @@ int main( )
 typedef typename Allocator::pointer pointer;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-형식 `pointer` 요소의 값을 수정 하려면 사용할 수 있습니다.
+`pointer` 형식을 사용 하 여 요소의 값을 수정할 수 있습니다.
 
 대부분의 경우 [iterator](#iterator)를 사용하여 목록 개체의 요소에 액세스해야 합니다.
 
-## <a name="pop_back"></a> pop_back
+## <a name="pop_back"></a>pop_back
 
 목록의 끝에 있는 요소를 삭제합니다.
 
@@ -1608,7 +1608,7 @@ typedef typename Allocator::pointer pointer;
 void pop_back();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 마지막 요소는 비워 둘 수 없습니다. `pop_back`은 예외를 throw할 수 없습니다.
 
@@ -1642,7 +1642,7 @@ The last element is: 2
 After deleting the element at the end of the list, the last element is: 1
 ```
 
-## <a name="pop_front"></a> pop_front
+## <a name="pop_front"></a>pop_front
 
 목록의 시작 부분에 있는 요소를 삭제합니다.
 
@@ -1650,7 +1650,7 @@ After deleting the element at the end of the list, the last element is: 1
 void pop_front();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 첫 번째 요소는 비워 둘 수 없습니다. `pop_front`은 예외를 throw할 수 없습니다.
 
@@ -1684,7 +1684,7 @@ The second element is: 2
 After deleting the element at the beginning of the list, the first element is: 2
 ```
 
-## <a name="push_back"></a> push_back
+## <a name="push_back"></a>push_back
 
 목록의 끝에 요소를 추가합니다.
 
@@ -1697,7 +1697,7 @@ void push_back(void push_back(Type&& val);
 *val*\
 목록 끝에 추가되는 요소입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 예외가 throw되면 목록은 변경되지 않은 상태로 유지되며 예외가 다시 throw됩니다.
 
@@ -1738,7 +1738,7 @@ New last element: 2
 Moved first element: a
 ```
 
-## <a name="push_front"></a> push_front
+## <a name="push_front"></a>push_front
 
 목록의 시작 부분에 요소를 추가합니다.
 
@@ -1752,7 +1752,7 @@ void push_front(Type&& val);
 *val*\
 목록의 시작 부분에 추가할 요소입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 예외가 throw되면 목록은 변경되지 않은 상태로 유지되며 예외가 다시 throw됩니다.
 
@@ -1793,7 +1793,7 @@ New first element: 2
 Moved first element: a
 ```
 
-## <a name="rbegin"></a> rbegin
+## <a name="rbegin"></a>rbegin
 
 반전된 목록에서 첫 번째 요소의 주소를 지정하는 반복기를 반환합니다.
 
@@ -1806,7 +1806,7 @@ reverse_iterator rbegin();
 
 반전된 목록에서 첫 번째 요소 또는 반전 해제된 목록에서 마지막 요소의 주소를 지정하는 역방향 양방향 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `rbegin`은 목록에서 [begin](#begin)이 사용되는 것처럼 반전된 목록에서 사용됩니다.
 
@@ -1864,7 +1864,7 @@ The reversed list is: 30 20 10
 The last element in the list is now 40.
 ```
 
-## <a name="reference"></a> 참조
+## <a name="reference"></a>참조일
 
 목록에 저장된 요소에 대한 참조를 제공하는 형식입니다.
 
@@ -1900,7 +1900,7 @@ The first element is 10
 The second element is 20
 ```
 
-## <a name="remove"></a> 제거
+## <a name="remove"></a>삭제
 
 목록에서 지정된 값과 일치하는 요소를 지웁니다.
 
@@ -1913,7 +1913,7 @@ void remove(const Type& val);
 *val*\
 요소에 값이 있는 경우 목록에서 해당 요소가 제거됩니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 남은 요소의 순서에는 영향을 주지 않습니다.
 
@@ -1957,7 +1957,7 @@ The initial list is c1 = 5 100 5 200 5 300
 After removing elements with value 5, the list becomes c2 = 100 200 300
 ```
 
-## <a name="remove_if"></a> remove_if
+## <a name="remove_if"></a>remove_if
 
 지정된 조건자를 충족하는 요소를 목록에서 지웁니다.
 
@@ -2022,7 +2022,7 @@ The initial list is c1 = 3 4 5 6 7 8
 After removing the odd elements, the list becomes c2 = 4 6 8
 ```
 
-## <a name="rend"></a> rend
+## <a name="rend"></a>rend
 
 역방향 목록에서 마지막 요소 다음 위치의 주소를 지정하는 반복기를 반환합니다.
 
@@ -2035,7 +2035,7 @@ reverse_iterator rend();
 
 역방향 목록에서 마지막 요소 다음 위치(역방향이 해제된 목록에서 첫 번째 요소 앞의 위치)의 주소를 지정하는 const 역방향 양방향 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `rend`는 목록에서 [end](#end)가 사용되는 것처럼 반전된 목록에서 사용됩니다.
 
@@ -2108,7 +2108,7 @@ The reversed list is: 30 20 10
 The modified reversed list is: 30 20 40
 ```
 
-## <a name="resize"></a> 크기 조정
+## <a name="resize"></a>조정해
 
 목록의 새 크기를 지정합니다.
 
@@ -2125,11 +2125,11 @@ void resize(size_type _Newsize, Type val);
 *val*\
 새 크기가 원래 크기보다 클 경우 목록에 추가되는 새 요소의 값입니다. 값을 생략하면 새 요소에 클래스의 기본값이 할당됩니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-목록의 크기가 요청한 크기를 보다 작은 경우 *_Newsize*, 요청된 된 크기에 도달할 때까지 목록에 요소가 추가 됩니다.
+목록의 크기가 요청 된 크기 보다 작은 경우 *_Newsize*는 요청 된 크기에 도달할 때까지 목록에 추가 됩니다.
 
-목록의 크기가 요청한 크기 보다 큰 경우 목록 크기에 도달할 때까지 목록의 끝에서 가장 가까운 요소가 삭제 됩니다 *_Newsize*합니다.
+목록의 크기가 요청 된 크기 보다 크면 목록이 *_Newsize*크기에 도달할 때까지 목록의 끝에 가장 가까운 요소가 삭제 됩니다.
 
 목록의 현재 크기가 요청한 크기와 동일하면 아무런 작업도 수행되지 않습니다.
 
@@ -2175,7 +2175,7 @@ The reduced size of c1 is: 2
 The value of the last element is now 20
 ```
 
-## <a name="reverse"></a> 역방향
+## <a name="reverse"></a>되돌립니다
 
 목록에 요소가 나타나는 순서를 반대로 바꿉니다.
 
@@ -2219,7 +2219,7 @@ c1 = 10 20 30
 Reversed c1 = 30 20 10
 ```
 
-## <a name="reverse_iterator"></a> reverse_iterator
+## <a name="reverse_iterator"></a>reverse_iterator
 
 역방향 목록의 요소를 읽거나 수정할 수 있는 양방향 반복기를 제공하는 형식입니다.
 
@@ -2227,15 +2227,15 @@ Reversed c1 = 30 20 10
 typedef std::reverse_iterator<iterator> reverse_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `reverse_iterator` 형식은 목록을 역방향으로 반복하는 데 사용됩니다.
 
 ### <a name="example"></a>예제
 
-[rbegin](#rbegin)의 예제를 참조하세요.
+[rbegin](#rbegin)에 대한 예제를 참조하세요.
 
-## <a name="size"></a> 크기
+## <a name="size"></a>크기가
 
 목록에 있는 요소 수를 반환합니다.
 
@@ -2276,7 +2276,7 @@ List length is 1.
 List length is now 2.
 ```
 
-## <a name="size_type"></a> size_type
+## <a name="size_type"></a>size_type
 
 목록의 요소 수를 계산하는 형식입니다.
 
@@ -2288,7 +2288,7 @@ typedef typename Allocator::size_type size_type;
 
 [size](#size)의 예제를 참조하세요.
 
-## <a name="sort"></a> 정렬
+## <a name="sort"></a>정렬
 
 오름차순 또는 다른 사용자 지정한 순서를 기준으로 목록의 요소를 정렬합니다.
 
@@ -2301,14 +2301,14 @@ template <class Traits>
 
 ### <a name="parameters"></a>매개 변수
 
-*구성 요소*\
+*comp*\
 연속된 요소를 정렬하는 데 사용되는 비교 연산자입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 첫 번째 멤버 함수는 기본적으로 오름차순으로 요소를 배치합니다.
 
-사용자 지정 비교 연산에 따라 요소를 정렬 하는 멤버 템플릿 함수 *comp* 클래스의 `Traits`합니다.
+멤버 템플릿 함수는 `Traits`*클래스의 사용자* 지정 비교 연산에 따라 요소를 정렬 합니다.
 
 ### <a name="example"></a>예제
 
@@ -2353,7 +2353,7 @@ After sorting c1 = 10 20 30
 After sorting with 'greater than' operation, c1 = 30 20 10
 ```
 
-## <a name="splice"></a> splice
+## <a name="splice"></a>제외
 
 요소를 원본 목록에서 제거한 다음 대상 목록에 삽입합니다.
 
@@ -2373,7 +2373,7 @@ void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*\
+*Where*\
 대상 목록의 위치로, 이 위치 앞에서 삽입합니다.
 
 *Source*\
@@ -2388,13 +2388,13 @@ void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator
 *마지막*\
 원본 목록에서 삽입할 범위 내 마지막 요소 다음의 첫 번째 위치입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수의 첫 번째 쌍은 원본 목록에서에서 참조 하는 위치 앞의 대상 목록에 모든 요소를 삽입 *여기서* 하 고 원본 목록에서 모든 요소를 제거 합니다. (`&Source` 과 같지 않아야 `this`.)
+멤버 함수의 첫 번째 쌍은 원본 목록의 모든 요소를 대상 목록에 삽입 합니다. *여기서* 참조 하는 위치 앞에는 소스 목록에서 모든 요소가 제거 됩니다. `&Source` `this`같지 않아야 합니다.
 
-참조 하는 요소를 삽입 하는 두 번째 멤버 함수 쌍 *Iter* 에서 참조 하는 대상 목록의 위치 앞 *여기서* 제거 *Iter* 에서 원본 목록입니다. `Where == Iter || Where == ++Iter`인 경우 아무 것도 변경되지 않습니다.
+멤버 함수의 두 번째 쌍은 *Iter* 에서 참조 하는 요소를 대상 *목록의 위치 앞* 에 삽입 하 고 원본 목록에서 *Iter* 를 제거 합니다. `Where == Iter || Where == ++Iter`인 경우 아무 것도 변경되지 않습니다.
 
-로 지정 된 범위를 삽입 하는 멤버 함수의 세 번째 쌍은 [ `First`, `Last`)에서 참조 하는 대상 목록의 요소 앞 *여기서* 하 고 원본 목록에서 해당 요소의 범위를 제거 합니다. (경우 `&Source == this`, 범위 `[First, Last)` 가리키는 요소를 포함 하지 않아야 *여기서*.)
+멤버 함수의 세 번째 쌍은 [`First`, `Last`)로 지정 된 범위를 *Where* 가 참조 하는 대상 목록의 요소 앞에 삽입 하 고 원본 목록에서 해당 요소 범위를 제거 합니다. `&Source == this`경우 `[First, Last)` 범위는 *Where*가 가리키는 요소를 포함 하지 않아야 합니다.
 
 범위가 지정된 스플라이스가 `N`개 요소 및 `&Source != this`를 삽입하면 [iterator](../standard-library/forward-list-class.md#iterator) 클래스의 개체가 `N`배 증분됩니다.
 
@@ -2476,7 +2476,7 @@ int main()
 Beginning state of lists:c1 = 2 elements: (10) (11)c2 = 3 elements: (20) (21) (22)c3 = 2 elements: (30) (31)c4 = 4 elements: (40) (41) (42) (43)After splicing c1 into c2:c1 = 0 elements:c2 = 5 elements: (20) (10) (11) (21) (22)After splicing the first element of c3 into c2:c3 = 1 elements: (31)c2 = 6 elements: (20) (10) (11) (30) (21) (22)After splicing a range of c4 into c2:c4 = 2 elements: (40) (43)c2 = 8 elements: (20) (10) (11) (30) (41) (42) (21) (22)
 ```
 
-## <a name="swap"></a> 교환
+## <a name="swap"></a>스왑을
 
 두 목록의 요소를 교환합니다.
 
@@ -2488,10 +2488,10 @@ friend void swap(list<Type, Allocator>& left, list<Type, Allocator>& right)
 ### <a name="parameters"></a>매개 변수
 
 *오른쪽*\
-교환할 요소를 제공 하는 목록 또는 목록 요소를 교환할 목록입니다 *왼쪽*합니다.
+교환할 요소를 제공 하는 목록 또는 요소를 *왼쪽*목록과 교환할 목록입니다.
 
 *왼쪽*\
-목록의 교환할 요소가 들어 있는 목록을 *오른쪽*합니다.
+목록 *오른쪽*에 있는 요소를 교환할 목록입니다.
 
 ### <a name="example"></a>예제
 
@@ -2541,7 +2541,7 @@ After swapping with c2, list c1 is: 10 20
 After swapping with c3, list c1 is: 100
 ```
 
-## <a name="unique"></a> 고유
+## <a name="unique"></a>고유
 
 목록에서 인접하는 중복 요소 또는 기타 이진 조건자를 충족하는 인접 요소를 제거합니다.
 
@@ -2557,13 +2557,13 @@ void unique(BinaryPredicate pred);
 *pred*\
 연속 요소를 비교하는 데 사용되는 이진 조건자입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 함수는 목록이 정렬되어 있다고 가정하므로 모든 중복 요소는 인접합니다. 인접하지 않은 중복 항목은 삭제되지 않습니다.
 
 첫 번째 멤버 함수는 이전 요소와 같은 것으로 확인된 모든 요소를 제거합니다.
 
-두 번째 멤버 함수는 조건자 함수를 충족 하는 모든 요소를 제거 *pred* 는 이전 요소와 비교 했을 때. 에 선언 된 이항 함수 개체 중 하나를 사용할 수 있습니다 합니다 \<기능 > 인수에 대 한 헤더 *pred* 하거나 직접 만들 수 있습니다.
+두 번째 멤버 함수는 이전 요소와 비교할 때 *pred* 조건자 함수를 충족 하는 모든 요소를 제거 합니다. *Pred* 인수에 \<함수 > 헤더에 선언 된 이항 함수 개체 중 하나를 사용 하거나 직접 만들 수 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2622,7 +2622,7 @@ After removing successive unequal elements, c3 = -10 -10
 typedef typename Allocator::value_type value_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `value_type`은 템플릿 매개 변수 *Type*의 동의어입니다.
 

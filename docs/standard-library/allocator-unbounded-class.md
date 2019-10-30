@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68448296"
 ---
-# <a name="allocatorunbounded-class"></a>allocator_unbounded 클래스
+# <a name="allocator_unbounded-class"></a>allocator_unbounded 클래스
 
 [max_unbounded](../standard-library/max-unbounded-class.md)에서 관리되는 길이를 사용하는 [cache_freelist](../standard-library/cache-freelist-class.md) 형식의 캐시를 사용하여 *Type* 형식인 개체에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.
 
