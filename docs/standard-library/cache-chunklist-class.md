@@ -19,7 +19,7 @@ ms.locfileid: "72688358"
 ---
 # <a name="cache_chunklist-class"></a>cache_chunklist 클래스
 
-단일 크기의 메모리 블록을 할당하고 할당 취소하는 [블록 할당자](../standard-library/allocators-header.md)를 정의합니다.
+단일 크기의 메모리 블록을 할당하고 할당을 취소하는 [블록 할당자](../standard-library/allocators-header.md)를 정의합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,7 +38,7 @@ class cache_chunklist
 
 이 클래스 템플릿은 **operator new** 를 사용 하 여 원시 메모리의 청크를 할당 하 고, 필요한 경우 메모리 블록에 대 한 저장소를 할당 하는 블록을 할당 합니다. 각 청크에 대 한 별도의 사용 가능한 목록에 할당 취소 된 메모리 블록을 저장 하 고, **delete 연산자** 를 사용 하 여 메모리 블록을 사용 하 고 있지 않은 경우 청크의 할당을 취소 합니다.
 
-각 메모리 블록은 사용 가능한 메모리의 *Sz* 바이트와 해당 메모리가 속한 청크에 대 한 포인터를 포함 합니다. 각 청크는 `Nelts` 메모리 블록, 3 개의 포인터, int, **operator new** 및 **operator delete** 에 필요한 데이터를 포함 합니다.
+각 메모리 블록은 사용 가능한 메모리의 *Sz* 바이트와 해당 메모리가 속한 청크에 대한 포인터를 포함합니다. 각 청크는 `Nelts` 메모리 블록, 3 개의 포인터, int, 그리고 **new 연산자** 및 **delete 연산자**에 필요한 데이터를 포함합니다.
 
 ### <a name="constructors"></a>생성자
 

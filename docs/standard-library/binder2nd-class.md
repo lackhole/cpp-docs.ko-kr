@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - binder2nd class
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
-ms.openlocfilehash: 46c8bb2ae450b3ef56f2729717fb9b5563a7c139
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 297f91dd9283b9f004247d2d1814b30a17e7ffa2
+ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689943"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72890099"
 ---
 # <a name="binder2nd-class"></a>binder2nd 클래스
 
@@ -28,7 +28,7 @@ class binder2nd
     typedef typename Operation::argument_type argument_type;
     typedef typename Operation::result_type result_type;
     binder2nd(
-        const Operation& Func,
+        const Operation& func,
         const typename Operation::second_argument_type& right);
 
     result_type operator()(const argument_type& left) const;
@@ -38,7 +38,7 @@ class binder2nd
 
 ### <a name="parameters"></a>매개 변수
 
-*Func* \
+*func*\
 단항 함수 개체로 변환할 이항 함수 개체입니다.
 
 *오른쪽* \
@@ -53,9 +53,9 @@ class binder2nd
 
 ## <a name="remarks"></a>주의
 
-클래스 템플릿은 `op`에 이진 함수 개체 _ *Func* 의 복사본을 저장 하 고 `value`에 *right* 의 복사본을 저장 합니다. 이 함수는 **op**(`left`, **value**)를 반환 하는 `operator()` 멤버 함수를 정의 합니다.
+클래스 템플릿은 `op`에 이진 함수 개체 *func* 의 복사본을 저장 하 고 `value`에 *right* 의 복사본을 저장 합니다. `op(left, value)`반환 하는 것 처럼 `operator()` 멤버 함수를 정의 합니다.
 
-@No__t_0이 `Operation` 형식의 개체이 고 c가 상수인 경우 [bind2nd](../standard-library/functional-functions.md#bind2nd) (`Func`, `c`)는 `binder2nd` class 생성자 **`binder2nd` \< (** >) `Func`)와 동일 합니다.
+*Func* 가 `Operation` 형식의 개체이 고 c가 상수인 경우 [bind2nd](../standard-library/functional-functions.md#bind2nd)`(func, c)`는 `binder2nd` 클래스 생성자 `binder2nd<Operation>(func, c)`와 같으며 더 편리 합니다.
 
 ## <a name="example"></a>예제
 

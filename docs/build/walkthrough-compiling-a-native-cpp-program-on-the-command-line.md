@@ -20,7 +20,7 @@ ms.locfileid: "71960710"
 
 Visual Studio에는 기본 콘솔 앱 C++ 에서 유니버설 Windows 플랫폼 앱, 데스크톱 앱, 장치 드라이버 및 .net 구성 요소에 이르기까지 모든 항목을 만드는 데 사용할 수 있는 명령줄 컴파일러가 포함 되어 있습니다.
 
-이 연습에서는 basic, "Hello, World" 만든-편집기에서 텍스트를 사용 하 여 C++ 프로그램을 스타일 및 다음 명령줄에서 컴파일합니다. 명령줄을 사용 하는 대신 Visual Studio IDE를 사용 하려는 경우 [ 연습을 참조 하세요. 프로젝트 및 솔루션 (C++)을 사용 하 여 작업 하는 경우-1 @no__t 하거나 [Visual Studio IDE를 사용 하 여 데스크톱 개발을 C++ ](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)수행 합니다.
+이 연습에서는 basic, "Hello, World" 만든-편집기에서 텍스트를 사용 하 여 C++ 프로그램을 스타일 및 다음 명령줄에서 컴파일합니다. 명령줄을 사용 하는 대신 Visual Studio IDE를 사용 하려는 경우 [ 연습을 참조 하세요. 프로젝트 및 솔루션 (C++)을 사용 하 여 작업 하는 경우-1 ](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) 하거나 [Visual Studio IDE를 사용 하 여 데스크톱 개발을 C++ ](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)수행 합니다.
 
 이 연습에서는 표시되는 내용을 입력하는 대신 Visual C++ 프로그램을 사용하거나 다른 도움말 문서의 Visual C++ 코드 샘플을 사용할 수 있습니다.
 
