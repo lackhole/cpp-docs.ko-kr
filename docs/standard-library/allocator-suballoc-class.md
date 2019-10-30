@@ -16,7 +16,7 @@ ms.locfileid: "68458135"
 ---
 # <a name="allocatorsuballoc-class"></a>allocator_suballoc 클래스
 
-[Cache_suballoc](../standard-library/cache-suballoc-class.md)형식의 캐시 *를 사용 하* 여 형식 형식의 개체에 대 한 저장소 할당 및 해제를 관리 하는 개체에 대해 설명 합니다.
+[cache_suballoc](../standard-library/cache-suballoc-class.md)형식의 캐시를 사용하여 *Type* 형식의 개체에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +33,7 @@ class allocator_suballoc;
 
 ## <a name="remarks"></a>설명
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 문에서이 클래스를 *name* 매개 변수로 전달 합니다.`ALLOCATOR_DECL(CACHE_SUBALLOC, SYNC_DEFAULT, allocator_suballoc);`
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) 매크로는 다음 명령문에서 이 클래스를 *name* 매개변수로 전달합니다.`ALLOCATOR_DECL(CACHE_SUBALLOC, SYNC_DEFAULT, allocator_suballoc);`
 
 ## <a name="requirements"></a>요구 사항
 
