@@ -1157,34 +1157,7 @@
                     - name: 샘플 메이크파일
                       href: build/reference/sample-makefile.md
                 - name: 설명 블록
-                  expanded: false
-                  items:
-                    - name: 설명 블록
-                      href: build/reference/description-blocks.md
-                    - name: 대상
-                      expanded: false
-                      items:
-                        - name: 대상
-                          href: build/reference/targets.md
-                        - name: 의사 대상
-                          href: build/reference/pseudotargets.md
-                        - name: 대상이 여러 개인 경우
-                          href: build/reference/multiple-targets.md
-                        - name: 누적되는 종속 줄
-                          href: build/reference/cumulative-dependencies.md
-                        - name: 여러 개의 설명 블록에 포함된 대상
-                          href: build/reference/targets-in-multiple-description-blocks.md
-                        - name: 종속 줄의 부수적 효과
-                          href: build/reference/dependency-side-effects.md
-                    - name: 종속 파일
-                      expanded: false
-                      items:
-                        - name: 종속 파일
-                          href: build/reference/dependents.md
-                        - name: 유추된 종속 파일
-                          href: build/reference/inferred-dependents.md
-                        - name: 종속 파일의 경로 검색
-                          href: build/reference/search-paths-for-dependents.md
+                  href: build/reference/description-blocks.md
                 - name: 메이크파일의 명령
                   expanded: false
                   items:
@@ -1410,6 +1383,8 @@
                       href: build/reference/linkermember.md
                     - name: /LOADCONFIG
                       href: build/reference/loadconfig.md
+                    - name: /NOPDB
+                      href: build/reference/nopdb.md
                     - name: /OUT(DUMPBIN)
                       href: build/reference/out-dumpbin.md
                     - name: /PDATA
