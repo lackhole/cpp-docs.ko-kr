@@ -78,7 +78,7 @@ void allocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는의 각 호출이 `cache_freelist::allocate` 성공한 후에 호출 됩니다 **.** 인수 *_Nx* 는 operator **new**에 의해 할당 된 청크의 메모리 블록 수입니다.
+멤버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는의 각 호출이 `cache_freelist::allocate` 성공한 후에 호출 됩니다 **.** 인수 *_Nx* 는 **new** 연산자에 의해 할당된 청크의 메모리 블록 수입니다.
 
 ## <a name="deallocated"></a>  max_fixed_size::deallocated
 
@@ -96,7 +96,7 @@ void deallocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는 `cache_freelist::deallocate` 에 대 한 각 호출 후 operator **delete**를 호출 하 여 호출 됩니다. *_Nx* 인수는 operator **delete**에 의해 할당 취소 된 청크의 메모리 블록 수입니다.
+멤버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는 `cache_freelist::deallocate` 에 대한 각 호출 후 **delete** 연산자를 호출하여 호출 됩니다. *_Nx* 인수는 **delete** 연산자에 의해 할당 취소 된 청크의 메모리 블록 수입니다.
 
 ## <a name="full"></a>  max_fixed_size::full
 
@@ -108,11 +108,11 @@ bool full();
 
 ### <a name="return-value"></a>반환 값
 
-이면`Max <= _Nblocks`true이 고, 그렇지 않으면 **false**입니다.
+`Max <= _Nblocks` 이면 **true** 이고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 `cache_freelist::deallocate`에서 호출됩니다. 호출에서 **true**를 `deallocate` 반환 하면는 사용 가능한 목록에 메모리 블록을 저장 하 고 false를 `deallocate` 반환 하면 **delete** 연산자를 호출 하 여 블록의 할당을 취소 합니다.
+이 멤버 함수는 `cache_freelist::deallocate`에서 호출됩니다. 호출에서 **true**를 `deallocate` 반환하면는 사용 가능한 목록에 메모리 블록을 저장 하 고 false를 `deallocate` 반환하면 **delete** 연산자를 호출하여 블록의 할당을 취소 합니다.
 
 ## <a name="max_fixed_size"></a>  max_fixed_size::max_fixed_size
 
