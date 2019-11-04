@@ -25,7 +25,7 @@ ms.locfileid: "68460166"
 ---
 # <a name="maxnone-class"></a>max_none 클래스
 
-[freelist](../standard-library/freelist-class.md) 개체를 최대 길이 0으로 제한하는 [max 클래스](../standard-library/allocators-header.md) 개체를 설명합니다.
+[freelist](../standard-library/freelist-class.md) 개체를 최대 길이를 0으로 제한하는 [max 클래스](../standard-library/allocators-header.md) 개체를 설명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,11 +38,11 @@ class max_none
 
 |매개 변수|Description|
 |---------------|-----------------|
-|*Max*|`freelist`에 저장할 요소의 최대 수를 결정하는 max 클래스입니다.|
+|*Max*|`freelist`에 저장할 요소의 최대수를 결정하는 max 클래스입니다.|
 
-### <a name="member-functions"></a>멤버 함수
+### <a name="member-functions"></a>맴버함수
 
-|멤버 함수|Description|
+|맴버함수|Description|
 |-|-|
 |[allocated](#allocated)|할당된 메모리 블록의 수를 늘립니다.|
 |[deallocated](#deallocated)|할당된 메모리 블록의 수를 줄입니다.|
@@ -72,7 +72,7 @@ void allocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 아무 작업도 수행하지 않습니다. 이 메서드는의 각 호출이 `cache_freelist::allocate` 성공한 후에 호출 **됩니다.** 인수 *_Nx* 는 operator **new**에 의해 할당 된 청크의 메모리 블록 수입니다.
+이 맴버함수는 아무 작업도 수행하지 않습니다. 이 메서드 각 호출이  **new** 연산자를 호출하는 `cache_freelist::allocate`가 성공한 후에 호출됩니다. 인수 *_Nx* 는 **new** 연산자에 의해 할당된 청크의 메모리 블록수 입니다.
 
 ## <a name="deallocated"></a>  max_none::deallocated
 
@@ -90,7 +90,7 @@ void deallocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는 `cache_freelist::deallocate` 에 대 한 각 호출 후 operator **delete**를 호출 하 여 호출 됩니다. *_Nx* 인수는 operator **delete**에 의해 할당 취소 된 청크의 메모리 블록 수입니다.
+맴버함수는 아무 작업도 수행하지 않습니다. 이 맴버함수는 `cache_freelist::deallocate`에 대한 각 호출한 후 **delete** 연산자를 수행하여 호출됩니다. *_Nx* 인수는 **delete** 연산자에 의해 할당 취소된 청크의 메모리 블록수 입니다.
 
 ## <a name="full"></a>  max_none::full
 
@@ -102,11 +102,11 @@ bool full();
 
 ### <a name="return-value"></a>반환 값
 
-이 멤버 함수는 항상 **true**를 반환 합니다.
+이 맴버함수는 항상 **true**를 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 `cache_freelist::deallocate`에서 호출됩니다. 호출에서 **true**를 `deallocate` 반환 하면는 사용 가능한 목록에 메모리 블록을 저장 하 고 false를 `deallocate` 반환 하면 **delete** 연산자를 호출 하 여 블록의 할당을 취소 합니다.
+이 맴버함수는 `cache_freelist::deallocate`에서 호출됩니다. 호출에서 **true**를 반환하면 `deallocate`는 사용 가능한 목록에 메모리 블록을 저장하고 **false**를 반환하면 **delete** 연산자를 호출하여 블록의 할당을 취소합니다.
 
 ## <a name="released"></a>  max_none::released
 
@@ -118,7 +118,7 @@ void released();
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 아무 작업도 수행하지 않습니다. 현재 max 클래스의 `released` 멤버 함수는 사용 가능한 목록에서 메모리 블록을 제거할 때마다 `cache_freelist::allocate`에서 호출됩니다.
+이 맴버함수는 아무 작업도 수행하지 않습니다. 현재 max 클래스의 `released` 맴버함수는 사용 가능한 목록에서 메모리 블록을 제거할 때마다 `cache_freelist::allocate`에서 호출됩니다.
 
 ## <a name="saved"></a>  max_none::saved
 
@@ -130,7 +130,7 @@ void saved();
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는 사용 가능한 목록에 메모리 블록을 넣을 때마다 `cache_freelist::deallocate`에서 호출됩니다.
+이 맴버함수는 아무 작업도 수행하지 않습니다. 이 맴버함수는 사용 가능한 목록에 메모리 블록을 넣을 때마다 `cache_freelist::deallocate`에서 호출됩니다.
 
 ## <a name="see-also"></a>참고자료
 
