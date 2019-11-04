@@ -37,7 +37,7 @@ class freelist : public Max
 
 ## <a name="remarks"></a>주의
 
-이 클래스 템플릿은 *max*로 전달 된 최대 클래스에 의해 결정 되는 목록의 최대 길이를 사용 하 여 *Sz* 크기의 메모리 블록 목록을 관리 합니다.
+이 클래스 템플릿은 *Max*로 전달된 max 클래스에 의해 결정되는 목록의 최대 길이를 사용하여 *Sz* 크기의 메모리 블록 목록을 관리합니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -100,7 +100,7 @@ bool push(void* ptr);
 
 ### <a name="return-value"></a>반환 값
 
-max 클래스의 `full` 함수가 **false**를 반환 하면 **true** 입니다. 그렇지 않으면 `push` 함수는 **false**를 반환 합니다.
+max 클래스의 `full` 함수가 **false**를 반환하면 **true**입니다. 그렇지 않으면 `push` 함수는 **false**를 반환합니다.
 
 ### <a name="remarks"></a>주의
 
