@@ -12,11 +12,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/16/2019
 ms.locfileid: "68268745"
 ---
-# <a name="ltanygt-functions"></a>&lt;모든&gt; 함수
+# <a name="ltanygt-functions"></a>&lt;any&gt; 함수
 
 ## <a name="any_cast"></a> any_cast
 
-에 모든 개체를 만듭니다.
+개체를 any로 만듭니다.
 
 ```cpp
 template<class T>
@@ -33,7 +33,7 @@ template<class T>
 
 ## <a name="make_any"></a> make_any
 
-값을 사용 하 고 모든 개체를 만듭니다.
+값을 사용하여 any 개체를 만듭니다.
 
 ```cpp
 template <class T, class... Args>
@@ -52,8 +52,8 @@ void swap(any& left, any& right) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*left*\
 `any` 형식의 개체입니다.
 
-*오른쪽*\
+*right*\
 `any` 형식의 개체입니다.
