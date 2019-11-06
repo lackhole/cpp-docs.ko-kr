@@ -72,7 +72,7 @@ void allocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>주의
 
-이 멤버 함수는 아무 작업도 수행하지 않습니다. `cache_freelist::allocate`는 **new**연산자를 호출 하 여 각 호출이 성공한 후에 호출 됩니다. 인수 *_Nx* 는 operator **new**에 의해 할당 된 청크의 메모리 블록 수입니다.
+이 맴버 함수는 아무 작업도 수행하지 않습니다. `cache_freelist::allocate`는 **new**연산자를 호출 하 여 각 호출이 성공한 후에 호출 됩니다. 인수 *_Nx*는 **new** 연산자에 의해 할당된 청크의 메모리 블록 수입니다.
 
 ## <a name="deallocated"></a>  max_none::deallocated
 
@@ -90,7 +90,7 @@ void deallocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>주의
 
-멤버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는 각 호출에서 operator **delete**로 `cache_freelist::deallocate` 호출 된 후에 호출 됩니다. *_Nx* 인수는 operator **delete**에 의해 할당 취소 된 청크의 메모리 블록 수입니다.
+이 맴버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는 각 호출에서 operator **delete**로 `cache_freelist::deallocate` 호출 된 후에 호출 됩니다. *_Nx* 인수는 **delete** 연산자에 의해 할당 취소된 청크의 메모리 블록 수입니다.
 
 ## <a name="full"></a>  max_none::full
 
@@ -102,11 +102,11 @@ bool full();
 
 ### <a name="return-value"></a>반환 값
 
-이 멤버 함수는 항상 **true**를 반환 합니다.
+이 맴버 함수는 항상 **true**를 반환합니다.
 
 ### <a name="remarks"></a>주의
 
-이 멤버 함수는 `cache_freelist::deallocate`에서 호출됩니다. 호출에서 **true**를 반환 하는 경우 `deallocate`는 사용 가능한 목록에 메모리 블록을 배치 합니다. **false**를 반환 하는 경우 **delete** 연산자를 호출 하 여 블록의 할당을 취소 `deallocate`.
+이 맴버 함수는 `cache_freelist::deallocate`에서 호출됩니다. 호출에서 **true**를 반환 하는 경우 `deallocate`는 사용 가능한 목록에 메모리 블록을 배치 합니다. **false**를 반환 하는 경우 **delete** 연산자를 호출 하 여 블록의 할당을 취소 `deallocate`.
 
 ## <a name="released"></a>  max_none::released
 
@@ -118,7 +118,7 @@ void released();
 
 ### <a name="remarks"></a>주의
 
-이 멤버 함수는 아무 작업도 수행하지 않습니다. 현재 max 클래스의 `released` 멤버 함수는 사용 가능한 목록에서 메모리 블록을 제거할 때마다 `cache_freelist::allocate`에서 호출됩니다.
+이 맴버 함수는 아무 작업도 수행하지 않습니다. 현재 max 클래스의 `released` 멤버 함수는 사용 가능한 목록에서 메모리 블록을 제거할 때마다 `cache_freelist::allocate`에서 호출됩니다.
 
 ## <a name="saved"></a>  max_none::saved
 
@@ -130,7 +130,7 @@ void saved();
 
 ### <a name="remarks"></a>주의
 
-이 멤버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는 사용 가능한 목록에 메모리 블록을 넣을 때마다 `cache_freelist::deallocate`에서 호출됩니다.
+이 맴버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는 사용 가능한 목록에 메모리 블록을 넣을 때마다 `cache_freelist::deallocate`에서 호출됩니다.
 
 ## <a name="see-also"></a>참조
 

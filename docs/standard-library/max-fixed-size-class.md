@@ -23,7 +23,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68456373"
 ---
-# <a name="maxfixedsize-class"></a>max_fixed_size 클래스
+# <a name="max_fixed_size-class"></a>max_fixed_size 클래스
 
 [freelist](../standard-library/freelist-class.md) 개체를 고정된 최대 길이로 제한하는 [max 클래스](../standard-library/allocators-header.md) 개체에 대해 설명합니다.
 
@@ -78,7 +78,7 @@ void allocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는의 각 호출이 `cache_freelist::allocate` 성공한 후에 호출 됩니다 **.** 인수 *_Nx* 는 operator **new**에 의해 할당 된 청크의 메모리 블록 수입니다.
+이 멤버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는의 각 호출이 `cache_freelist::allocate` 성공한 후에 호출 됩니다 **.** 인수 *_Nx* 는 operator **new**에 의해 할당 된 청크의 메모리 블록 수입니다.
 
 ## <a name="deallocated"></a>  max_fixed_size::deallocated
 
@@ -96,7 +96,7 @@ void deallocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 아무 작업도 수행하지 않습니다. 이 멤버 함수는 `cache_freelist::deallocate` 에 대 한 각 호출 후 operator **delete**를 호출 하 여 호출 됩니다. *_Nx* 인수는 operator **delete**에 의해 할당 취소 된 청크의 메모리 블록 수입니다.
+이 멤버 함수는 아무 작업도 수행하지 않습니다. 해당 멤버 함수는 `cache_freelist::deallocate`을 각각 호출한 후 **delete** 연산자로 호출됩니다. *_Nx* 인수는 **delete** 연산자에 의해 할당 취소된 청크의 메모리 블록 수입니다.
 
 ## <a name="full"></a>  max_fixed_size::full
 
