@@ -1,22 +1,26 @@
 ---
 title: 링커 도구 오류 LNK1120
-ms.date: 05/17/2017
+description: 링크에서 확인 되지 않은 외부 기호 오류의 수를 보고 하는 LNK1120 링커 오류에 대해 설명 합니다.
+ms.date: 10/31/2019
 f1_keywords:
 - LNK1120
 helpviewer_keywords:
 - LNK1120
 ms.assetid: 56aa7d36-921f-4daf-b44d-cca0d4fb1b51
-ms.openlocfilehash: b11318dcffb665d3b422fffcbd7e6275f35984dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 21a1ede07a69cdc065dd897715e243115529600d
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255107"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626576"
 ---
 # <a name="linker-tools-error-lnk1120"></a>링커 도구 오류 LNK1120
 
-> *번호* 외부 참조를 확인할 수 없는
+> 확인 되지 않은 외부 *수*
 
-개수를 보고 하는 오류 LNK1120 (*수*)이 링크 작업에 대 한 확인 되지 않은 외부 기호 오류가 있습니다. 대부분 외부 기호 오류가 의해 개별적으로 보고 하는 확인 되지 않은 [링커 도구 오류 LNK2001](../../error-messages/tool-errors/linker-tools-error-lnk2001.md) 하 고 [링커 도구 오류 LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md), 확인 되지 않은 각 외부에 한 번씩이 오류 메시지를 앞에 기호 오류가 발생 했습니다.
+오류 LNK1120 현재 링크에서 확인 되지 [않은 외부 기호](linker-tools-error-lnk2001.md#what-is-an-unresolved-external-symbol) 오류 수를 보고 합니다.
 
-이 오류를 해결 하려면 모든 다른 확인 되지 않은 외부 오류 또는 빌드 출력에 앞에 있는 다른 링커 오류를 수정 합니다. 확인 되지 않은 외부 오류가 없으면이 오류가 보고 되지 않습니다.
+확인 되지 않은 각 외부 기호는 먼저 [LNK2001](linker-tools-error-lnk2001.md) 또는 [LNK2019](linker-tools-error-lnk2019.md) 오류로 보고 됩니다. LNK1120 메시지는 마지막으로 제공 되며 확인 되지 않은 기호 오류 수를 표시 합니다.
+
+> [!IMPORTANT]
+> **이 오류는 해결할 필요가 없습니다.** 이 오류는 빌드 출력에 앞서 모든 LNK2001 및 LNK2019 링커 오류를 수정할 때 사라집니다. 항상 첫 번째 보고 된 오류에서 시작 하 여 문제를 해결 합니다. 이후 오류는 이전에 발생 한 오류 때문일 수 있습니다.

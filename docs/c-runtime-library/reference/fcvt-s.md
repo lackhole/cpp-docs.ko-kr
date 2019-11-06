@@ -28,12 +28,12 @@ helpviewer_keywords:
 - floating-point functions, converting number to string
 - _fcvt_s function
 ms.assetid: 48671197-1d29-4c2b-a5d8-d2368f5f68a1
-ms.openlocfilehash: a63b542333717a57097da455fb514eeef80344b4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a7dcb9b7acc462d9570ee2cb7adb0dbd06df77c9
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941343"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73623843"
 ---
 # <a name="_fcvt_s"></a>_fcvt_s
 
@@ -66,7 +66,7 @@ errno_t _fcvt_s(
 변환 결과를 포함할 제공된 버퍼입니다.
 
 *sizeInBytes*<br/>
-버퍼의 크기(바이트)입니다.
+버퍼 크기(바이트)입니다.
 
 *value*<br/>
 변환할 숫자입니다.
@@ -88,7 +88,7 @@ errno_t _fcvt_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*buffer*|*sizeInBytes*|value|count|dec|sign|반환|*버퍼* 의 값|
+|*buffer*|*sizeInBytes*|값|count|dec|sign|반환|*버퍼* 의 값|
 |--------------|-------------------|-----------|-----------|---------|----------|------------|-----------------------|
 |**NULL**|any|any|any|any|any|**EINVAL**|수정되지 않습니다.|
 |Not **NULL** (유효한 메모리를 가리킴)|<=0|any|any|any|any|**EINVAL**|수정되지 않습니다.|
@@ -99,7 +99,7 @@ errno_t _fcvt_s(
 
 **_fcvt_s** 는 *버퍼가* 유효한 메모리를 가리키지 않고 **NULL**이 아닌 경우 액세스 위반을 생성할 수 있습니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **_Fcvt_s** 함수는 부동 소수점 숫자를 null로 끝나는 문자열로 변환 합니다. *값* 매개 변수는 변환할 부동 소수점 숫자입니다. **_fcvt_s** 는 *값* 의 숫자를 문자열로 저장 하 고 null 문자 (' \ 0 ')를 추가 합니다. *Count* 매개 변수는 소수점 뒤에 저장할 자릿수를 지정 합니다. 자릿수를 *계산* 하기 위해 초과 하는 숫자가 반올림 됩니다. 정밀도의 *자릿수가 보다 적으면* 문자열은 0으로 채워집니다.
 
@@ -109,9 +109,9 @@ errno_t _fcvt_s(
 
 **_Ecvt_s** 와 **_fcvt_s** 의 차이는 *count* 매개 변수를 해석 하는 것입니다. **_ecvt_s** 는 *개수* 를 출력 문자열의 총 자릿수로 해석 하 고, **_fcvt_s** 는 *카운트* 를 소수점 뒤의 자릿수로 해석 합니다.
 
-C++에서는 템플릿 오버로드로 인해 이 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
+C++에서는 템플릿 오버로드로 인해 이 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
-이 함수의 디버그 버전은 우선 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
+이 함수의 디버그 버전은 먼저 0xFE를 사용 하 여 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -119,9 +119,9 @@ C++에서는 템플릿 오버로드로 인해 이 함수를 사용하는 것이 
 |--------------|---------------------|---------------------|
 |**_fcvt_s**|\<stdlib.h>|\<errno.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-**라이브러리인** 모든 버전의 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)입니다.
+**라이브러리:** 모든 버전의 [CRT 라이브러리 기능](../../c-runtime-library/crt-library-features.md)입니다.
 
 ## <a name="example"></a>예제
 
@@ -155,7 +155,7 @@ int main()
 Converted value: 120000
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>

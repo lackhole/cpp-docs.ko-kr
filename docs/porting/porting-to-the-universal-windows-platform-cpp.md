@@ -1,19 +1,19 @@
 ---
 title: 유니버설 Windows 플랫폼으로 포팅(C++)
-ms.date: 11/04/2016
+ms.date: 10/23/2019
 ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
-ms.openlocfilehash: 6bda600abfea04e1158f6ff993e04e5076e4c24b
-ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
-ms.translationtype: HT
+ms.openlocfilehash: 9314cb564e792a7d4949d422a3942e9d46a23cb2
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58278465"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627197"
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>유니버설 Windows 플랫폼으로 포팅(C++)
 
-이 항목에서는 Windows 10 앱 플랫폼인 유니버설 Windows 플랫폼에 기존 C++ 코드를 이식하는 방법에 대한 정보를 찾을 수 있습니다. *유니버설* 이라는 용어는 코드가 데스크톱, 휴대폰, 태블릿 및 앞으로 제공될 디바이스(Windows 10 실행)를 비롯하여 Windows 10을 실행하는 모든 디바이스에서 실행될 수 있음을 의미합니다. Windows 10을 실행하는 모든 디바이스에서 제대로 작동하는 단일 XAML 기반 사용자 인터페이스 및 단일 프로젝트를 만듭니다. XAML의 동적 레이아웃 기능을 사용하여 앱 UI를 다른 디스플레이 크기에 맞출 수 있습니다.
+이 항목에서는 Windows 10 앱 플랫폼인 유니버설 Windows 플랫폼에 기존 C++ 코드를 이식하는 방법에 대한 정보를 찾을 수 있습니다. *유니버설* 이라는 용어는 Windows 10을 실행 하는 모든 장치에서 코드를 실행할 수 있다는 것입니다. Windows 10을 실행하는 모든 디바이스에서 제대로 작동하는 단일 XAML 기반 사용자 인터페이스 및 단일 프로젝트를 만듭니다. XAML의 동적 레이아웃 기능을 사용하여 앱 UI를 다른 디스플레이 크기에 맞출 수 있습니다.
 
-Windows 개발자 센터 설명서에는 유니버설 Windows 플랫폼으로 Windows 8.1 앱을 포팅하기 위한 가이드가 포함되어 있습니다. [Windows 런타임 8에서 UWP로 이동](/windows/uwp/porting/w8x-to-uwp-root)을 참조하세요. 이 가이드는 C# 코드에 주로 초점을 맞추고 있지만 대부분의 지침이 C++에도 적용됩니다. 다음 절차에는 보다 자세한 정보가 포함되어 있습니다.
+Windows 개발자 센터 설명서에는 유니버설 Windows 플랫폼으로 Windows 8.1 앱을 포팅하기 위한 가이드가 포함되어 있습니다. [Windows 런타임 8에서 UWP로 이동](/windows/uwp/porting/w8x-to-uwp-root)을 참조하세요. 이 가이드는 C# 코드에 주로 초점을 맞추고 있지만 대부분의 지침이 C++에도 적용됩니다. 다음 절차에는 보다 자세한 정보가 포함되어 있습니다. 또한 [데스크톱 응용 프로그램에서 UWP로 이동을](/windows/uwp/porting/desktop-to-uwp-migrate)참조 하세요.
 
 이 항목에는 코드를 UWP로 포팅하기 위한 다음 절차가 포함되어 있습니다.
 
@@ -21,11 +21,11 @@ Windows 개발자 센터 설명서에는 유니버설 Windows 플랫폼으로 Wi
 
 - [Windows 8.1 런타임 구성 요소를 UWP에 이식](#BK_81Component)
 
-클래식 데스크톱 Win32 DLL이 있는 상태에서 UWP 애플리케이션에서 이 파일을 호출하려는 경우에도 이 작업을 수행할 수 있습니다. 이러한 절차를 사용하여 기존 클래식 Windows 데스크톱 C++ 애플리케이션에 대한 UWP 사용자 인터페이스 레이어 또는 플랫폼 간 표준 C++ 코드를 만들 수 있습니다. [방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md)을 참조하세요.
+클래식 데스크톱 Win32 DLL이 있는 상태에서 UWP 애플리케이션에서 이 파일을 호출하려는 경우에도 이 작업을 수행할 수 있습니다. 이러한 절차를 사용하여 기존 클래식 Windows 데스크톱 C++ 애플리케이션에 대한 UWP 사용자 인터페이스 레이어 또는 플랫폼 간 표준 C++ 코드를 만들 수 있습니다. [방법: 유니버설 Windows 플랫폼 앱에서 기존 C++ 코드 사용](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md)을 참조하세요. 
 
 ## <a name="BK_81StoreApp"></a> Windows 8.1 스토어 앱을 UWP에 이식
 
-Windows 8.1 스토어 앱을 사용하는 경우 이러한 작업을 위해 UWP 및 Windows 10을 실행하는 모든 디바이스에서 다음 절차를 사용할 수 있습니다.  컴파일러 및 라이브러리 변경으로 인해 발생하는 모든 문제를 제거하려면 먼저 Visual Studio 2017에서 Windows 8.1 프로젝트로 빌드하는 것이 좋습니다. 작업을 완료한 후 이 작업을 Windows 10 UWP 프로젝트로 변환하는 두 가지 방법이 있습니다. 가장 쉬운 방법은(다음 절차에서 설명) 유니버설 Windows 프로젝트를 만들고 기존 코드를 복사하는 것입니다. Windows 8.1 데스크톱 및 Windows 8.1 Phone용 유니버설 프로젝트를 사용한 경우 프로젝트는 XAML의 두 개의 다른 레이아웃으로 시작되지만 디스플레이 크기에 맞게 조정되는 단일 동적 레이아웃으로 끝납니다.
+Windows 8.1 스토어 앱을 사용하는 경우 이러한 작업을 위해 UWP 및 Windows 10을 실행하는 모든 디바이스에서 다음 절차를 사용할 수 있습니다.  먼저 Visual Studio 2019을 사용 하 여 프로젝트를 Windows 8.1 프로젝트로 빌드하여 컴파일러 및 라이브러리의 변경 내용으로 인해 발생 하는 모든 문제를 제거 하는 것이 좋습니다. 작업을 완료한 후 이 작업을 Windows 10 UWP 프로젝트로 변환하는 두 가지 방법이 있습니다. 가장 쉬운 방법은(다음 절차에서 설명) 유니버설 Windows 프로젝트를 만들고 기존 코드를 복사하는 것입니다. Windows 8.1 데스크톱 및 Windows 8.1 Phone용 유니버설 프로젝트를 사용한 경우 프로젝트는 XAML의 두 개의 다른 레이아웃으로 시작되지만 디스플레이 크기에 맞게 조정되는 단일 동적 레이아웃으로 끝납니다.
 
 ### <a name="to-port-a-windows-81-store-app-to-the-uwp"></a>Windows 8.1 스토어 앱을 UWP에 이식하려면
 
@@ -33,7 +33,7 @@ Windows 8.1 스토어 앱을 사용하는 경우 이러한 작업을 위해 UWP 
 
    **Visual Studio 설정에서 Windows 8.1 도구**를 설치해야 합니다. 이러한 도구를 설치하지 않은 경우 **프로그램 및 기능** 창에서 **Visual Studio** 설치를 시작하고 **Visual Studio 2017**을 선택하고 설정 창에서 **수정**을 선택합니다. **Windows 8.1 도구**를 찾아 선택되어 있는지 확인하고 **확인**을 선택합니다.
 
-1. **프로젝트 속성** 창을 열고 **C++** > **일반**에서 **플랫폼 도구 집합**을 Visual Studio 2017용 도구 집합인 **v141**로 설정합니다.
+1. **프로젝트 속성** 창을 열고 **C++**  > **일반**에서 **플랫폼 도구 집합**을 Visual Studio 2017용 도구 집합인 **v141**로 설정합니다.
 
 1. 프로젝트를 Windows 8.1 프로젝트로 빌드하고 빌드 오류를 해결합니다. 이 단계에서 발생하는 모든 오류는 빌드 도구 및 라이브러리의 주요 변경 내용 때문일 수 있습니다. 코드에 영향을 줄 수 있는 변경 내용에 대한 자세한 내용은 [Visual C++ 변경 기록 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)을 참조하세요.
 
@@ -106,7 +106,7 @@ could not find assembly 'platform.winmd': please specify the assembly search pat
 
 Visual Studio를 사용하여 새 UWP 프로젝트를 만든 경우 이 오류가 나타나지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Visual C++ 포팅 가이드](../porting/porting-to-the-universal-windows-platform-cpp.md)<br/>
 [UWP(유니버설 Windows 플랫폼)용 앱 개발](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)

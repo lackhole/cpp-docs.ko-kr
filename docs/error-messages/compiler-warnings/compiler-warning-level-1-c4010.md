@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4010
 ms.assetid: d607a9ff-8f8f-45c0-b07b-3b2f439e5485
-ms.openlocfilehash: 40c6724daf17c1c0b546bb7bc64bb704f732e8d6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 045b3f6e615e11c24caa9a088baf6ea9f6448efb
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386553"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627326"
 ---
 # <a name="compiler-warning-level-1-c4010"></a>컴파일러 경고 (수준 1) C4010
 
-줄으로 된 주석 줄 연속 문자를 포함합니다.
+한 줄로 된 주석에 줄 연속 문자가 있습니다.
 
-도입 된 한 줄으로 된 주석, / / 백슬래시를 포함 (\\) 줄 연속 문자는 역할을 합니다. 컴파일러는 연속으로 다음 줄을 고려 하 고 주석으로 처리 합니다.
+//에 의해 도입 된 한 줄로 된 주석에는 줄 연속 문자를 사용 하는 백슬래시 (\\)가 포함 되어 있습니다. 컴파일러는 다음 줄을 연속 하는 것으로 간주 하 여 주석으로 처리 합니다.
 
-일부 구문 지향 편집기 주석으로 연속 문자를 다음 줄을 나타내지 않습니다. 이 경고를 발생 시키는 줄에 대 한 구문 색을 무시 합니다.
+일부 구문 전달 편집기는 연속 문자 다음의 줄을 주석으로 나타내지 않습니다. 이 경고를 발생 시키는 줄에서 구문 색 지정을 무시 합니다.
 
-다음 샘플에서는 C4010 오류가 생성 됩니다.
+다음 샘플에서는 C4010를 생성 합니다.
 
-```
+```cpp
 // C4010.cpp
 // compile with: /WX
 int main() {

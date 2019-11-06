@@ -1,17 +1,18 @@
 ---
 title: '연습: 기존 Windows 데스크톱 응용 프로그램 만들기 (C++)'
+description: Visual Studio, C++및를 사용 하 여 최소, 기존 Windows 데스크톱 응용 프로그램을 만드는 방법 Win32 API
 ms.custom: get-started-article
-ms.date: 10/21/2019
+ms.date: 11/03/2019
 helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: 080c4cd9612058a0a54f19e5d0f4b8add4a03bce
-ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
+ms.openlocfilehash: 6f219a0c199971b563b1c0ff291f2f5d12803023
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72778544"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627474"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램 만들기 (C++)
 
@@ -76,9 +77,7 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
 
    ![DesktopApp 프로젝트 이름](../build/media/desktop-app-new-project-name-153.png "DesktopApp 프로젝트 이름")
 
-1. **Windows 데스크톱 프로젝트** 대화 상자의 **응용 프로그램 종류**아래에서 **windows 응용 프로그램 (.exe)** 을 선택 합니다. **추가 옵션**에서 **빈 프로젝트**를 선택합니다. **확인** 을 선택 하 여 프로젝트를 만듭니다.
-
-   ![Windows 데스크톱 프로젝트 마법사에서 DesktopApp 만들기](../build/media/desktop-app-new-project-wizard-153.png "Windows 데스크톱 프로젝트 마법사에서 DesktopApp 만들기")
+1. **Windows 데스크톱 프로젝트** 대화 상자의 **응용 프로그램 종류**아래에서 **windows 응용 프로그램 (.exe)** 을 선택 합니다. **추가 옵션**에서 **빈 프로젝트**를 선택합니다. **미리 컴파일된 헤더** 를 선택 하지 않았는지 확인 합니다. **확인** 을 선택 하 여 프로젝트를 만듭니다.
 
 1. **솔루션 탐색기**에서 **desktopapp** 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
 
@@ -108,9 +107,7 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
 
    ![Win32 응용 프로그램에서 DesktopApp 만들기 마법사 개요](../build/media/desktop-app-win32-wizard-overview-150.png "Win32 응용 프로그램에서 DesktopApp 만들기 마법사 개요")
 
-1. 응용 프로그램 **설정** 페이지의 **응용 프로그램 종류**아래에서 **Windows 응용 프로그램**을 선택 합니다. **추가 옵션**에서 **빈 프로젝트**를 선택합니다. **마침** 을 선택 하 여 프로젝트를 만듭니다.
-
-   ![Win32 응용 프로그램 마법사 설정에서 DesktopApp 만들기](../build/media/desktop-app-win32-wizard-settings-150.png "Win32 응용 프로그램 마법사 설정에서 DesktopApp 만들기")
+1. 응용 프로그램 **설정** 페이지의 **응용 프로그램 종류**아래에서 **Windows 응용 프로그램**을 선택 합니다. **추가 옵션**에서 **미리 컴파일된 헤더**를 선택 취소 하 고 **빈 프로젝트**를 선택 합니다. **마침** 을 선택 하 여 프로젝트를 만듭니다.
 
 1. **솔루션 탐색기**에서 desktopapp 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
 
@@ -144,16 +141,16 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
    이 함수의 매개 변수 및 반환 값에 대 한 자세한 내용은 [WinMain 진입점](/windows/win32/api/winbase/nf-winbase-winmain)을 참조 하십시오.
 
    > [!NOTE]
-   > @No__t_0, `HINSTANCE`, `_In_` 등의 추가 단어는 무엇 인가요? 기존 Windows API는 typedef 및 전처리기 매크로를 광범위 하 게 사용 하 여 호출 규칙, **__declspec** 선언 및 컴파일러 pragma와 같은 플랫폼별 코드와 형식에 대 한 일부 세부 정보를 추상화 합니다. Visual Studio에서는 IntelliSense [요약 정보](/visualstudio/ide/using-intellisense#quick-info) 기능을 사용 하 여 이러한 형식 정의 및 매크로가 정의 하는 내용을 확인할 수 있습니다. 관심 있는 단어 위에 마우스를 가리키거나 선택 하 고 **ctrl** +**K**, **ctrl** +**I** 를 눌러 정의가 포함 된 작은 팝업 창으로 이동 합니다. 자세한 내용은 [IntelliSense 사용](/visualstudio/ide/using-intellisense)을 참조하세요. 매개 변수 및 반환 형식은 종종 *SAL 주석을* 사용 하 여 프로그래밍 오류를 파악 하는 데 도움이 됩니다. 자세한 내용은 [SAL 주석을 사용 하 여 C/C++ 코드 오류 줄이기](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)를 참조 하세요.
+   > `CALLBACK`, `HINSTANCE`, `_In_`등의 추가 단어는 무엇 인가요? 기존 Windows API는 typedef 및 전처리기 매크로를 광범위 하 게 사용 하 여 호출 규칙, **__declspec** 선언 및 컴파일러 pragma와 같은 플랫폼별 코드와 형식에 대 한 일부 세부 정보를 추상화 합니다. Visual Studio에서는 IntelliSense [요약 정보](/visualstudio/ide/using-intellisense#quick-info) 기능을 사용 하 여 이러한 형식 정의 및 매크로가 정의 하는 내용을 확인할 수 있습니다. 관심 있는 단어 위에 마우스를 가리키거나 선택 하 고 **ctrl** +**K**, **ctrl** +**I** 를 눌러 정의가 포함 된 작은 팝업 창으로 이동 합니다. 자세한 내용은 [IntelliSense 사용](/visualstudio/ide/using-intellisense)을 참조하세요. 매개 변수 및 반환 형식은 종종 *SAL 주석을* 사용 하 여 프로그래밍 오류를 파악 하는 데 도움이 됩니다. 자세한 내용은 [SAL 주석을 사용 하 여 C/C++ 코드 오류 줄이기](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)를 참조 하세요.
 
-1. Windows 데스크톱 프로그램에는 &lt;windows > 필요 합니다. &lt;tchar >는 유니코드 기호가 프로젝트에 정의 되어 있는 경우 최종적으로 **wchar_t** 로 확인 되는 `TCHAR` 매크로를 정의 합니다. 그렇지 않으면 **char**로 확인 됩니다.  항상 유니코드를 사용 하 여 빌드하는 경우에는 TCHAR.H가 필요 하지 않으며 **wchar_t** 만 직접 사용할 수 있습니다.
+1. Windows 데스크톱 프로그램에는 &lt;windows > 필요 합니다. &lt;tchar.h >는 프로젝트에 유니코드 기호가 정의 된 경우 최종적으로 **wchar_t** 로 확인 되는 `TCHAR` 매크로를 정의 합니다. 그렇지 않으면 **char**로 확인 됩니다.  항상 유니코드를 사용 하 여 빌드하는 경우에는 TCHAR.H가 필요 하지 않으며 **wchar_t** 만 직접 사용할 수 있습니다.
 
    ```cpp
    #include <windows.h>
    #include <tchar.h>
    ```
 
-1. @No__t_0 함수와 함께 모든 Windows 데스크톱 응용 프로그램에는 창 프로시저 함수도 있어야 합니다. 이 함수는 일반적으로 `WndProc` 이름이 지정 되어 있지만 원하는 이름을 지정할 수 있습니다. `WndProc` 에는 다음 구문이 있습니다.
+1. `WinMain` 함수와 함께 모든 Windows 데스크톱 응용 프로그램에는 창 프로시저 함수도 있어야 합니다. 이 함수는 일반적으로 `WndProc` 이름이 지정 되어 있지만 원하는 이름을 지정할 수 있습니다. `WndProc` 에는 다음 구문이 있습니다.
 
    ```cpp
    LRESULT CALLBACK WndProc(
@@ -170,7 +167,7 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
 
 ### <a name="to-add-functionality-to-the-winmain-function"></a>WinMain 함수에 기능을 추가하려면
 
-1. @No__t_0 함수에서 [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw)형식의 구조를 채웁니다. 구조에는 창에 대 한 정보 (응용 프로그램 아이콘, 창의 배경색, 제목 표시줄에 표시할 이름) 등이 포함 되어 있습니다. 중요 한 점은 창 프로시저에 대 한 함수 포인터를 포함 하는 것입니다. 다음 예제에서는 일반적인 `WNDCLASSEX` 구조를 보여 줍니다.
+1. `WinMain` 함수에서 [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw)형식의 구조를 채웁니다. 구조에는 창에 대 한 정보 (응용 프로그램 아이콘, 창의 배경색, 제목 표시줄에 표시할 이름) 등이 포함 되어 있습니다. 중요 한 점은 창 프로시저에 대 한 함수 포인터를 포함 하는 것입니다. 다음 예제에서는 일반적인 `WNDCLASSEX` 구조를 보여 줍니다.
 
    ```cpp
    WNDCLASSEX wcex;
@@ -191,7 +188,7 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
 
    위의 구조 필드에 대 한 자세한 내용은 [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw)를 참조 하세요.
 
-1. 창에 대 한 내용과 메시지를 보내는 방법을 알 수 있도록 Windows에 `WNDCLASSEX`를 등록 합니다. [RegisterClassEx](/windows/win32/api/winuser/nf-winuser-registerclassexw) 함수를 사용하고 창 클래스 구조를 인수로 전달합니다. @No__t_1 형식을 사용 하기 때문에 `_T` 매크로가 사용 됩니다.
+1. 창에 대 한 내용과 메시지를 보내는 방법을 알 수 있도록 Windows에 `WNDCLASSEX`를 등록 합니다. [RegisterClassEx](/windows/win32/api/winuser/nf-winuser-registerclassexw) 함수를 사용하고 창 클래스 구조를 인수로 전달합니다. `TCHAR` 형식을 사용 하기 때문에 `_T` 매크로가 사용 됩니다.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -256,7 +253,7 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
    UpdateWindow(hWnd);
    ```
 
-   @No__t_0 함수를 아직 구현 하지 않았으므로 표시 된 창에는 많은 내용이 없습니다. 즉, 응용 프로그램이 아직 Windows에서 메시지를 전송 하는 메시지를 처리 하지 않습니다.
+   `WndProc` 함수를 아직 구현 하지 않았으므로 표시 된 창에는 많은 내용이 없습니다. 즉, 응용 프로그램이 아직 Windows에서 메시지를 전송 하는 메시지를 처리 하지 않습니다.
 
 1. 메시지를 처리 하려면 먼저 Windows에서 전송 하는 메시지를 수신 하는 메시지 루프를 추가 합니다. 응용 프로그램에서 메시지를 받으면이 루프는 처리할 `WndProc` 함수에이를 디스패치합니다. 메시지 루프는 다음 코드와 유사합니다.
 
@@ -391,7 +388,7 @@ Windows API (Win32 API, Windows Desktop API 및 Windows Classic API 라고도 �
    }
    ```
 
-   코드의 `HDC`은 Windows에서 응용 프로그램이 그래픽 하위 시스템과 통신할 수 있도록 하는 데 사용 하는 데이터 구조인 장치 컨텍스트에 대 한 핸들입니다. @No__t_0 및 `EndPaint` 함수는 응용 프로그램이 좋은 시민 처럼 동작 하 게 하 고, 필요한 것 보다 더 긴 장치 컨텍스트를 사용 하지 않습니다. 함수는 다른 응용 프로그램에서 그래픽 하위 시스템을 사용할 수 있도록 하는 데 도움이 됩니다.
+   코드의 `HDC`은 Windows에서 응용 프로그램이 그래픽 하위 시스템과 통신할 수 있도록 하는 데 사용 하는 데이터 구조인 장치 컨텍스트에 대 한 핸들입니다. `BeginPaint` 및 `EndPaint` 함수는 응용 프로그램이 좋은 시민 처럼 동작 하 게 하 고, 필요한 것 보다 더 긴 장치 컨텍스트를 사용 하지 않습니다. 함수는 다른 응용 프로그램에서 그래픽 하위 시스템을 사용할 수 있도록 하는 데 도움이 됩니다.
 
 1. 응용 프로그램은 일반적으로 다른 여러 메시지를 처리 합니다. 예를 들어 창을 처음 만들 때 [WM_CREATE](/windows/win32/winmsg/wm-create) 창을 닫을 때를 [WM_DESTROY](/windows/win32/winmsg/wm-destroy) 합니다. 다음 코드에서는 기본적인 전체 `WndProc` 함수를 보여 줍니다.
 

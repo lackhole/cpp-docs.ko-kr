@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4484
 ms.assetid: 3d30e5b3-2297-45b7-a37a-1360056fdd0e
-ms.openlocfilehash: 29e99da02aa0144699d3c20e523b5e5e4b6b8f72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d3f72ddf7675ea7ad73022dc55a60fdc74d4390
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363533"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73623626"
 ---
 # <a name="compiler-warning-c4484"></a>컴파일러 경고 C4484
 
-'override_function': 기본 ref 클래스 메서드 'base_class_function'는 일치 하지만 'virtual', 'new' 또는 'override'; 표시 되어 있지 않습니다 'new' (및 'virtual' 아님) 가정
+' override_function ': 기본 ref 클래스 메서드 ' base_class_function '를 찾지만 ' virtual ', ' new ' 또는 ' override '로 표시 되어 있지 않습니다. ' new ' (및 ' virtual ' 아님)를 가정 합니다.
 
-사용 하 여 컴파일하면 **/clr**는 컴파일러가 함수 vtable의 new 슬롯 받을 것을 의미 하는 기본 클래스 함수를 암시적으로 재정의 되지 않습니다. 를 해결 하려면 명시적으로 함수를 재정의 인지 여부를 지정 합니다.
+**/Clr**을 사용 하 여 컴파일하는 경우 컴파일러는 기본 클래스 함수를 암시적으로 재정의 하지 않습니다. 즉, 함수가 vtable에서 새 슬롯을 가져옵니다. 이 문제를 해결 하려면 함수가 재정의 인지 여부를 명시적으로 지정 합니다.
 
-자세한 내용은 다음을 참조하세요.
+자세한 내용은 다음을 참조하십시오.
 
 - [/clr(공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md)
 
@@ -27,13 +27,13 @@ ms.locfileid: "62363533"
 
 - [new(vtable의 new 슬롯)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
 
-C4484은 항상 오류로 실행 됩니다. 사용 된 [경고](../../preprocessor/warning.md) C4484 표시 하지 않으려면 pragma입니다.
+C4484는 항상 오류로 실행 됩니다. C4484를 표시 하지 않으려면 [warning](../../preprocessor/warning.md) pragma를 사용 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C4484를 생성합니다.
+다음 샘플에서는 C4484를 생성 합니다.
 
-```
+```cpp
 // C4484.cpp
 // compile with: /clr
 ref struct A {

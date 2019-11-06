@@ -42,12 +42,12 @@ helpviewer_keywords:
 - wcserror_s function
 - error messages, getting
 ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
-ms.openlocfilehash: f8d461566f748ce5af3d4b2aab443b5966c27dd7
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 74caba0398fdb5cdd0f9c80270a42d2903200a5d
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70958156"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625818"
 ---
 # <a name="strerror_s-_strerror_s-_wcserror_s-__wcserror_s"></a>strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 
@@ -107,7 +107,7 @@ errno_t __wcserror_s(
 버퍼의 크기입니다.
 
 *errnum*<br/>
-오류 번호입니다.
+오류 번호
 
 *strErrMsg*<br/>
 사용자 제공 메시지
@@ -120,12 +120,12 @@ errno_t __wcserror_s(
 
 |*buffer*|*numberOfElements*|*strErrMsg*|*버퍼* 의 내용|
 |--------------|------------------------|-----------------|--------------------------|
-|**NULL**|any|any|n/a|
+|**NULL**|any|any|N/A|
 |any|0|any|수정 안 됨|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-**Strerror_s** 함수는 *errnum* 을 오류 메시지 문자열로 매핑하여 *버퍼*에서 문자열을 반환 합니다. **_strerror_s** 는 오류 번호를 사용 하지 않습니다. **errno** 의 현재 값을 사용 하 여 적절 한 메시지를 확인 합니다. **Strerror_s** 및 **_strerror_s** 모두 실제로 메시지를 인쇄 하지 않습니다. 이렇게 하려면 [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)와 같은 출력 함수를 호출 해야 합니다.
+**Strerror_s** 함수는 *errnum* 을 오류 메시지 문자열로 매핑하여 *버퍼*에서 문자열을 반환 합니다. **_strerror_s** 는 오류 번호를 사용 하지 않습니다. **errno** 의 현재 값을 사용 하 여 적절 한 메시지를 확인 합니다. **Strerror_s** 와 **_strerror_s** 모두 실제로 메시지를 인쇄 하지 않습니다. 즉, [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)와 같은 출력 함수를 호출 해야 합니다.
 
 ```C
 if (( _access( "datafile",2 )) == -1 )
@@ -147,9 +147,9 @@ if (( _access( "datafile",2 )) == -1 )
 
 **_strerror_s**, **_wcserror_s**및 **__wcserror_s** 는 ANSI 정의의 일부가 아니지만 대신 Microsoft 확장입니다. 이식성이 필요한 경우에는 사용 하지 마십시오. ANSI 호환성을 위해 **strerror_s** 를 대신 사용 합니다.
 
-C++에서는 템플릿 오버로드를 통해 이러한 함수를 사용하는 것이 더욱 간단해집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
+C++에서는 템플릿 오버로드를 통해 이러한 함수를 사용하는 것이 더욱 간단해집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
-이러한 함수의 디버그 버전은 우선 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
+이러한 함수의 디버그 라이브러리 버전은 먼저 0xFE를 사용 하 여 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -164,13 +164,13 @@ C++에서는 템플릿 오버로드를 통해 이러한 함수를 사용하는 �
 |**strerror_s**, **_strerror_s**|\<string.h>|
 |**_wcserror_s**, **__wcserror_s**|\<string.h> 또는 \<wchar.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
 [perror](perror-wperror.md)의 예를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [clearerr](clearerr.md)<br/>
