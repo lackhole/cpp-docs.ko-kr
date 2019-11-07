@@ -1,26 +1,26 @@
 ---
 title: .CONTINUE
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - .CONTINUE
 helpviewer_keywords:
 - .CONTINUE directive
 ms.assetid: 60a6e46d-49e6-4d65-97d0-cbe8c47b3fab
-ms.openlocfilehash: ac6d76247499c715ede0be6f7e426435e72bdf3c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a74fac7e00a801b0b58b8c49694da70f6f779fed
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62204521"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73703467"
 ---
-# <a name="continue"></a>.CONTINUE
+# <a name="continue-32-bit-masm"></a>. CONTINUE (32 비트 MASM)
 
-맨 위로 이동 하는 코드를 생성 한 [합니다. 하는 동안](../../assembler/masm/dot-while.md) 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md) 되 면 차단 `condition` 그렇습니다.
+의 맨 위로 이동 하는 코드를 생성 [합니다. 또는 중](../../assembler/masm/dot-while.md) 하나 [입니다. ](../../assembler/masm/dot-repeat.md)`condition` true 이면 블록을 반복 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> . 계속 [[합니다. IF 조건]]
+> . 계속 [[. IF condition]]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [지시문 참조](../../assembler/masm/directives-reference.md)<br/>

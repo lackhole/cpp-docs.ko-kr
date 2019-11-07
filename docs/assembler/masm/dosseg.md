@@ -1,26 +1,26 @@
 ---
 title: DOSSEG
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - DOSSEG
 helpviewer_keywords:
 - DOSSEG directive
 ms.assetid: 4312826a-1547-4d48-bfd7-cfaf6d037609
-ms.openlocfilehash: 889533a775829d8751e64ce38c712491df97e32e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 89f55038c326fb1df26c9f3371976763c1395642
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178728"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73703273"
 ---
-# <a name="dosseg"></a>DOSSEG
+# <a name="dosseg-32-bit-masm"></a>.DOSSEG (32 비트 MASM)
 
-동일한 [입니다. DOSSEG](../../assembler/masm/dot-dosseg.md), 기본 양식입니다.
+와 동일 [합니다. ](../../assembler/masm/dot-dosseg.md)기본 형식인 .dosseg. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
 > DOSSEG
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [지시문 참조](../../assembler/masm/directives-reference.md)<br/>

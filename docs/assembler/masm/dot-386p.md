@@ -1,30 +1,30 @@
 ---
 title: .386P
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - .386P
 helpviewer_keywords:
 - .386P directive
 ms.assetid: 15199091-3bb7-4270-bb9b-878c1c2f2146
-ms.openlocfilehash: 98b0b5d40f9c9ae47995698a53d3f16c14850071
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4b969d509e18b53fa08c8329027dbd6b7a6a5b3
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185668"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73703000"
 ---
-# <a name="386p"></a>.386P
+# <a name="386p-32-bit-masm"></a>.386P (32 비트 MASM)
 
-80386 프로세서;에 대 한 모든 지침 (권한 포함)의 어셈블리를 사용 하도록 설정 이후 프로세서를 사용 하 여 도입 지침의 어셈블리를 사용 하지 않도록 설정 합니다.
+80386 프로세서에 대 한 모든 명령 (권한 포함)의 어셈블리를 사용 하도록 설정 합니다. 이후 프로세서에 도입 된 명령의 어셈블리를 사용 하지 않도록 설정 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
 > .386P
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-80387 지침이 있습니다.
+80387 명령도 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [지시문 참조](../../assembler/masm/directives-reference.md)<br/>
