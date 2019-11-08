@@ -15,7 +15,7 @@ ms.locfileid: "72690047"
 ---
 # <a name="ltarraygt"></a>&lt;array&gt;
 
-컨테이너 클래스 템플릿 **배열과** 여러 지원 템플릿을 정의 합니다.
+컨테이너 템플릿 클래스 **array**와 여러 지원 템플릿을 정의 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -24,7 +24,7 @@ ms.locfileid: "72690047"
 **네임스페이스:** std
 
 > [!NOTE]
-> 또한 \<array > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
+> \<array > 라이브러리는 `#include <initializer_list>` 문을 사용합니다.
 
 ## <a name="members"></a>멤버
 
