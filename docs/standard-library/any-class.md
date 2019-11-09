@@ -1,5 +1,5 @@
 ---
-title: 모든 클래스
+title: any 클래스
 ms.date: 04/04/2019
 f1_keywords:
 - any/std::any
@@ -22,7 +22,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/16/2019
 ms.locfileid: "68268755"
 ---
-# <a name="any-class"></a>모든 클래스
+# <a name="any-class"></a>any 클래스
 
 모든 개체 클래스의 상태 라는 이거나 생성자 요구 사항을 충족 하는 모든 형식의 인스턴스 값이 없는 경우는 저장소입니다.
 
@@ -46,17 +46,17 @@ class any
 
 |||
 |-|-|
-|[emplace](#emplace)|모든 값을 설정합니다.|
-|[has_value](#has_value)|반환 **true** 값이 있는 경우.|
-|[reset](#reset)|Any를 다시 설정합니다.|
-|[swap](#swap)|두 개의 교환 개체입니다.|
-|[type](#type)|모든 형식을 반환합니다.|
+|[emplace](#emplace)|any에 값을 설정합니다.|
+|[has_value](#has_value)|any에 값이 있는 경우 **true**를 반환합니다.|
+|[reset](#reset)|any를 다시 설정합니다.|
+|[swap](#swap)|두 개의 any 개체를 교환합니다.|
+|[type](#type)|any 형식을 반환합니다.|
 
 ### <a name="operators"></a>연산자
 
 |||
 |-|-|
-|[operator=](#op_eq)|모든 다른 복사본을 사용 하 여 하나를 바꿉니다.|
+|[operator=](#op_eq)|다른 any 복사본을 사용하여 any를 바꿉니다.|
 
 ## <a name="any"></a> 모든
 
@@ -78,7 +78,7 @@ template <class T, class U, class... Args>
 
 ## <a name="emplace"></a> emplace
 
-모든 값을 설정합니다.
+any에 값을 설정합니다.
 
 ```cpp
 template <class T, class... Args>
@@ -89,7 +89,7 @@ template <class T, class U, class... Args>
 
 ## <a name="has_value"></a> has_value
 
-반환 **true** 값이 있는 경우.
+any에 값이 있는 경우 **true**를 반환합니다.
 
 ```cpp
 bool has_value() const noexcept;
@@ -97,7 +97,7 @@ bool has_value() const noexcept;
 
 ## <a name="op_eq"></a> 연산자 =
 
-모든 다른 복사본을 사용 하 여 하나를 바꿉니다.
+다른 any 복사본을 사용하여 any를 바꿉니다.
 
 ```cpp
 any& operator=(const any& right);
@@ -113,7 +113,7 @@ template <class T>
 
 ## <a name="reset"></a> 다시 설정
 
-Any를 다시 설정합니다.
+any를 다시 설정합니다.
 
 ```cpp
 void reset() noexcept;
@@ -121,7 +121,7 @@ void reset() noexcept;
 
 ## <a name="swap"></a> 교환
 
-두 개의 교환 개체입니다.
+두 개의 any 개체를 교환합니다.
 
 ```cpp
 void swap(any& rhs) noexcept;
@@ -129,7 +129,7 @@ void swap(any& rhs) noexcept;
 
 ## <a name="type"></a> 형식
 
-모든 형식을 반환합니다.
+any 형식을 반환합니다.
 
 ```cpp
 const type_info& type() const noexcept;
